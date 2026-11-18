@@ -14,20 +14,21 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
 import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** The second block: the old page's coaching, consulting, and writing offers. */
 const ALONGSIDE = [
   {
     title: "Pastoral coaching",
-    desc: "One-on-one with a pastor who is still doing the work. Burnout, a church in conflict, an elder board that has stopped trusting you, the doubts you cannot say from the pulpit.",
+    desc: "One-on-one time with a pastor who is still doing the work, for burnout, a church in conflict, an elder board that has stopped trusting you, or the doubts you can't say from the pulpit.",
   },
   {
     title: "Church consulting",
-    desc: "For a church that has stalled, or is quietly dying and has not said so. An honest reading of where it actually is, what has to change, and how to change it without losing the people you are there to serve. A network of pastors who have been through the same.",
+    desc: "For a church that has stalled, or is quietly dying and hasn't said so. You get a plain reading of where the church is, what has to change, and how to change it without losing the people you are there to serve.",
   },
   {
     title: "Writing and ghostwriting",
@@ -39,8 +40,8 @@ export default function Speaking() {
   return (
     <Layout>
       <SEOMeta
-        title="Speaking — James Bell"
-        description="Invite James Bell to preach or speak: conferences, retreats, revivals, and pulpit supply. Pastoral coaching and church consulting too, with a form that reaches him directly."
+        title="Invite James Bell to Speak or Preach"
+        description="Invite James Bell to preach or speak: conferences, retreats, revivals, and pulpit supply. Pastoral coaching and church consulting too, with a form that is saved for him to read."
         url="https://www.livewellbyjamesbell.co/speaking"
         structuredData={{
           "@context": "https://schema.org",
@@ -50,31 +51,23 @@ export default function Speaking() {
         }}
       />
 
-      <section style={{ background: "var(--charcoal)", padding: `var(--s-6) ${gutter} var(--s-5)` }}>
-        <div style={wrap}>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(40px, 5.6vw, 68px)",
-              fontWeight: 400,
-              lineHeight: 1.04,
-              letterSpacing: "-0.02em",
-              color: "var(--charcoal-fg)",
-              margin: "0 0 18px",
-            }}
-          >
-            Speaking and preaching
-          </h1>
-          <p style={{ fontFamily: "var(--F)", fontSize: "clamp(21px, 2.2vw, 27px)", lineHeight: 1.45, color: "var(--charcoal-fg)", maxWidth: "40ch", margin: "0 0 var(--s-3)" }}>
-            Conferences, retreats, revivals, and pulpit supply. Serious theology, preached like it matters on a Tuesday.
-          </p>
-          <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "15px" }}>
-            <Link href="/about" style={{ color: "var(--charcoal-fg-muted)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
+      <PageHead
+        door="About"
+        doorHref="/about"
+        title="Speaking and preaching"
+        line="Conferences, retreats, revivals, and pulpit supply. Serious theology, preached plainly."
+        plate="lectern"
+        action={
+          <>
+            <a href="#speaking-ask" className="btn">
+              Ask James to speak
+            </a>
+            <Link href="/about" className="btn btn--quiet">
               Who James is
             </Link>
-          </p>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       <section aria-labelledby="speaking-ask" style={{ background: "var(--bone)", padding: `var(--s-6) ${gutter}` }}>
         <div style={wrap} className="speak-grid">
@@ -83,7 +76,7 @@ export default function Speaking() {
               Ask James to speak
             </h2>
             <p className="speak-p">
-              Tell him the occasion, the date, and the place. The form reaches James directly.
+              Tell him the occasion, the date, and the place. The form is saved for James to read.
             </p>
             <p className="speak-p">
               You can also email{" "}
@@ -137,6 +130,7 @@ export default function Speaking() {
 
 const SPEAKING_CSS = `
 .speak-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:var(--s-4) var(--s-5);align-items:start}
+#speaking-ask{scroll-margin-top:96px}
 .speak-h2{font-family:var(--F);font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
 .speak-h3{font-family:var(--F);font-weight:500;font-size:24px;line-height:1.2;color:var(--ink);margin:0 0 6px}
 .speak-p{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink-muted);margin:0 0 var(--s-2)}

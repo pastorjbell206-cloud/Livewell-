@@ -8,7 +8,7 @@
 import { useMemo, useState, type CSSProperties } from "react";
 import { Link } from "wouter";
 
-import type { BibleBook, BibleChapter, BibleVerse, BibleWord } from "@/lib/bible";
+import { plainGloss, type BibleBook, type BibleChapter, type BibleVerse, type BibleWord } from "@/lib/bible";
 import { paragraphs, verseRange, type Doctrine, type VerseNote } from "@/lib/bible-notes";
 import { refHref } from "@/lib/scripture-ref";
 import { kicker, quietLink } from "@/pages/study-bible/shared";
@@ -17,7 +17,7 @@ const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Fran
 const GRK: CSSProperties = { fontFamily: '"SBL Greek", "Gentium Plus", "Times New Roman", serif' };
 
 const label: CSSProperties = { ...kicker, fontSize: "10.5px", margin: "12px 0 4px" };
-const body: CSSProperties = { fontFamily: "var(--B)", fontSize: "15.5px", lineHeight: 1.7, color: "var(--ink)", margin: "0 0 8px" };
+const body: CSSProperties = { fontFamily: "var(--font-reading)", fontSize: "16.5px", lineHeight: 1.6, color: "var(--ink)", margin: "0 0 8px" };
 
 export type Layer = "all" | "grammar" | "history" | "theology" | "text";
 export const LAYERS: { id: Layer; name: string }[] = [
@@ -72,8 +72,8 @@ export function VerseEntry(props: {
                   type="button"
                   disabled={!onWord}
                   onClick={() => onWord?.(c.verse, c.index)}
-                  aria-label={`${c.w[1]}, ${c.w[2]}: open the word study`}
-                  style={{ display: "inline-flex", alignItems: "baseline", gap: "6px", minHeight: "36px", padding: "4px 10px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: onWord ? "pointer" : "default", color: "var(--ink)" }}
+                  aria-label={`${c.w[1]}, ${plainGloss(c.w[2])}: open the word study`}
+                  style={{ display: "inline-flex", alignItems: "baseline", gap: "6px", minHeight: "44px", padding: "4px 10px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: onWord ? "pointer" : "default", color: "var(--ink)" }}
                 >
                   <span lang={lang === "H" ? "he" : "grc"} style={{ ...script, fontSize: "17px" }}>{c.w[0]}</span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontStyle: "italic", color: "var(--ink-muted)" }}>{c.w[1]}</span>
@@ -178,7 +178,7 @@ export function VerseByVerse(props: {
           if (l.id !== "all" && n === 0) return null;
           const on = layer === l.id;
           return (
-            <button key={l.id} type="button" aria-pressed={on} onClick={() => setLayer(l.id)} style={{ minHeight: "36px", padding: "0 14px", borderRadius: "999px", border: `1px solid ${on ? "var(--ink)" : "var(--border)"}`, background: on ? "var(--ink)" : "var(--card)", color: on ? "var(--bone)" : "var(--ink)", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600 }}>
+            <button key={l.id} type="button" aria-pressed={on} onClick={() => setLayer(l.id)} style={{ minHeight: "44px", padding: "0 14px", borderRadius: "999px", border: `1px solid ${on ? "var(--ink)" : "var(--border)"}`, background: on ? "var(--ink)" : "var(--card)", color: on ? "var(--bone)" : "var(--ink)", cursor: "pointer", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600 }}>
               {l.name}{l.id === "all" ? "" : ` (${n})`}
             </button>
           );

@@ -1,0 +1,75 @@
+{
+  "piece": "did-god-command-genocide",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean, and it reads like a person. No forbidden word, no em-dash, every exclamation inside quoted Scripture, no title, tenure, book count or denomination, and the only biography is one plain 'I have five sons'. The argument is patient and concedes more to the skeptic than most Christian treatments do. Seven small findings, none a must: a help line that reads as dropped in, a coy book reference, one box-ticking right-and-left sentence, and four minor tightenings. What keeps voice below a 9 is that the mirror turns on 'we' and never once on 'I' with something only James could supply.",
+  "findings": [
+    {
+      "quote": "If these chapters have shaken your own faith and it's weighing on you, you don't have to carry that by yourself. [Find Help](/help) has real people you can call.",
+      "tell": "Stock counseling line; a seam where a compliance sentence was inserted",
+      "why": "The paragraph is stating the skeptic's argument about what we can know, in the third person, and then swerves in its last two sentences into second-person care language. 'You don't have to carry that by yourself' is the phrase every helpline page uses, and its position at the tail of an epistemology paragraph makes it read as added by a checklist. The path to help should stay; it needs to sound like him and stand on its own.",
+      "replacement": "Set as its own short paragraph directly after 'which is what the church tells people to do.': If these chapters have shaken your own faith, talk it through with someone. [Find Help](/help) has real people you can call.",
+      "severity": "should"
+    },
+    {
+      "quote": "Paul Copan and Matthew Flannagan made that reading of Joshua central to a book under nearly the same title as this essay.",
+      "tell": "Coy circumlocution where a plain name belongs",
+      "why": "A person just names the book. Talking around the title reads like a writer obeying a rule against the 'In Title (YEAR), X argued' pattern, and it makes the reader work out what the book is called. The title is in the ledger as verified (Baker's page); no year or subtitle is needed.",
+      "replacement": "Paul Copan and Matthew Flannagan made that reading of Joshua central to their book *Did God Really Command Genocide?*",
+      "severity": "should"
+    },
+    {
+      "quote": "Believers on the right and on the left both know how to do it.",
+      "tell": "Symmetry asserted with no concrete case; rulebook compliance",
+      "why": "It is the one sentence in the essay that sounds like it exists to satisfy 'criticize right and left'. It names no instance on either side, so a skeptic hears a disclaimer. The sentences around it are specific and good, which makes this one stand out.",
+      "replacement": "Christians on the right do it and Christians on the left do it, and each side spots it faster in the other.",
+      "severity": "consider"
+    },
+    {
+      "quote": "These are arguments among people who confess the same creeds, and faithful churches and careful scholars still come down in different places. I won't pretend the question is settled.",
+      "tell": "Restatement plus a self-certifying honesty line",
+      "why": "Two paragraphs earlier the essay already said 'Christians who hold the whole Bible to be the word of God still divide over these chapters.' Saying it again in the paired phrase 'faithful churches and careful scholars' echoes the brief's own wording for contested questions, and 'I won't pretend' announces candor instead of just being candid.",
+      "replacement": "These are arguments among people who confess the same creeds, and the question isn't settled.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The name Jesus is the Greek form of Joshua. The Greek translation of the Old Testament spells Joshua's name exactly as the Gospels spell the name of Jesus.",
+      "tell": "Same point made twice in consecutive sentences (then a third time in the Hebrews sentence)",
+      "why": "The paragraph tells the reader three times that the two names are one name. The Hebrews 4:8 and King James detail is the interesting part; the first two sentences can be one.",
+      "replacement": "The name Jesus is the Greek form of Joshua, and the Greek translation of the Old Testament spells Joshua's name exactly as the Gospels spell his.",
+      "severity": "consider"
+    },
+    {
+      "quote": "So did God command genocide? The Bible says he commanded Israel to destroy the peoples of Canaan",
+      "tell": "Title restated as a closing question; recap opener",
+      "why": "'So, [the title]?' followed by the answer is the template way to begin a conclusion, and the answer repeats what the second paragraph already gave ('The plain answer is that the Bible says God commanded it'). The paragraph's real work is its last sentence about Underhill, and it gets there faster without the question.",
+      "replacement": "The Bible says God commanded Israel to destroy the peoples of Canaan",
+      "severity": "consider"
+    },
+    {
+      "quote": "whom we have quietly cast as Canaanites ourselves",
+      "tell": "Misplaced 'ourselves' in the essay's most important sentence",
+      "why": "Not an AI tell, a stumble: on first read 'cast as Canaanites ourselves' sounds like we are the ones cast as Canaanites. The closing mirror should not need a second read.",
+      "replacement": "whom we ourselves have quietly cast as Canaanites",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Opens on a dated, sourced event (Mystic, May 26, 1637, Underhill's own words) and returns to Underhill three times, so the essay has a spine and not a motif.",
+    "Concedes the hard thing early and without cushioning: 'If a government gave that order today, we would know what to call it.' A skeptic stops bracing after that line.",
+    "States the objection as the objector would ('We are more sure that it's wrong to kill children...') and grants that those who left 'weren't looking for an excuse'.",
+    "Each defense is followed by its limit ('an exaggerated report of a massacre is still a report of a massacre'; 'a baby in Jericho had never offered anyone to Molech'), which is what keeps it from sounding like apologetics.",
+    "The three readings are given in their defenders' terms, critics and reply included, and the author's own position is not asserted.",
+    "The one biographical line ('I have five sons') does moral work and is not a credential.",
+    "Contractions and plain words throughout; paragraph lengths vary from about 40 to 150 words; verdict lines are rationed to roughly one per section.",
+    "'That silence is a small Marcionism' and 'has to walk past Jesus to get there' are earned by the paragraphs before them.",
+    "The ending lands on the cross through Abraham's question from the fourth paragraph, so it closes the argument instead of attaching hope to it."
+  ],
+  "for_james": [
+    "The essay implicates 'we' but never 'I'. One true sentence from you would make it only yours: in the paragraph that says lifelong churchgoers have never heard a sermon on 1 Samuel 15:3, have you preached that verse, or avoided it? Say which, in a line. I did not write one because it would be inventing your history.",
+    "The sentence about the right and the left doing what Underhill did names no case. If you have a real example from each side that you've heard (or said), one clause each would replace the generic line better than my suggested wording.",
+    "'Anything we say about these verses should be something we could say aloud with a parent listening' is close to Irving Greenberg's well-known rule about not saying anything that would not be credible in the presence of the burning children. If that is where the thought came from, consider crediting him; I have not verified his exact wording or source, so I proposed no change.",
+    "Your saved Substack profile and the governing voice standard disagree here, and I judged by the governing standard: the profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, one screenshot line, and a 'Monday morning' block of three questions and a practice. This essay runs about 3,840 words in developed paragraphs with no application list, which is what VOICE-JAMES-BELL.md asks for. I did not push it toward the profile.",
+    "The withheld sentence linking to the Doctrine of Discovery essay is still out (per the ledger); the paragraph reads fine without it, and it should go back word for word when that essay is public."
+  ]
+}

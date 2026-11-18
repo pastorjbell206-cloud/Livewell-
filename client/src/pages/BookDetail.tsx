@@ -9,6 +9,7 @@ import BookPreview from "@/components/BookPreview";
 import BookRecommendations from "@/components/BookRecommendations";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { bookUrl, SITE_URL } from "@/lib/site";
+import { isShelfBookHref } from "@/lib/bookShelf";
 import { readSlugFor } from "@/lib/readableBooks";
 
 export default function BookDetail() {
@@ -117,6 +118,7 @@ export default function BookDetail() {
         image={book.coverImage || undefined}
         url={canonical}
         type="book"
+        noindex={!isShelfBookHref(`/books/${book.slug ?? ""}`)}
         structuredData={[
           getBookSchema(
             book.title,
@@ -250,7 +252,7 @@ export default function BookDetail() {
             <NewsletterSignup
               variant="inline"
               title="If this book is your kind of reading"
-              description="One serious essay a week in the same vein — theology that meets the weight of everyday life. No spam, ever."
+              description="New essays in the same vein, by email through Substack. Leave your email here and finish there."
               source={`book-${book.slug ?? "detail"}`}
             />
           </div>

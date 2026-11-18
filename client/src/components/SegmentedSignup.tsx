@@ -22,7 +22,7 @@ const AUDIENCES: { value: Audience; label: string; helper: string }[] = [
   {
     value: "skeptic",
     label: "I'm a skeptic",
-    helper: "Hand me the essays that take the questions seriously.",
+    helper: "I have questions, and I want them taken seriously.",
   },
   {
     value: "christian",
@@ -32,12 +32,12 @@ const AUDIENCES: { value: Audience; label: string; helper: string }[] = [
   {
     value: "pastor",
     label: "I'm a pastor",
-    helper: "Send the pastoral letter and the resources for the work.",
+    helper: "I carry a church along with my own faith.",
   },
   {
     value: "exploring",
     label: "I'm just exploring",
-    helper: "Surprise me. Start me at the beginning.",
+    helper: "I am looking around and have not decided anything.",
   },
 ];
 
@@ -50,8 +50,8 @@ interface SegmentedSignupProps {
 }
 
 export function SegmentedSignup({
-  title = "Subscribe — and choose what you'll get",
-  description = "One essay a week. Different lead essay depending on who you are.",
+  title = "Subscribe on Substack",
+  description = "New essays by email. Pick the line closest to where you stand. It tells James who is reading, and everyone gets the same essays.",
   variant = "card",
   source,
 }: SegmentedSignupProps) {

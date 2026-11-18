@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
-import { useLocation } from "wouter";
+import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
 import { LoadFailed } from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { Link } from "wouter";
-import { ArrowLeft, Search as SearchIcon } from "lucide-react";
+import { Search as SearchIcon } from "lucide-react";
 
 import { LIBRARY_SOURCES, type LibrarySource } from "@/lib/catalog";
 import { ESSAY_OVERRIDES } from "@/lib/essayOverrides.generated";
@@ -21,7 +21,11 @@ import {
   type SearchEntry,
 } from "@/lib/siteSearch";
 import { CrisisBlock } from "@/components/CrisisBlock";
-import { TOOLS } from "@/pages/ToolsHub";
+import { TOOLS, foldedInto } from "@/lib/toolsList";
+
+// The verses that hold the words typed ("born again"). The Bible's words are
+// a large download, so the code and the text both wait for a query.
+const BibleMatchesPreview = lazy(() => import("@/pages/study-bible/BibleSearchResults"));
 
 // --- Library manifest search (static JSON content libraries) ---
 // The source registry lives in @/lib/catalog so search and the unified
@@ -33,9 +37,11 @@ import { TOOLS } from "@/pages/ToolsHub";
 const LIBRARY_RESULT_CAP = 16;
 
 // The tools, from the /tools registry, so "worry journal" finds the Worry Journal.
+// A folded tool is found under the tool that took it in (its old name is a keyword).
 const TOOL_ENTRIES: SearchEntry[] = TOOLS.map((t) => ({
-  title: t.title,
-  blurb: t.description,
+  title: t.name,
+  blurb: t.job,
+  keywords: foldedInto(t.id).map((f) => f.name).join(" "),
   facet: "Tool",
   sourceLabel: "Tools",
   href: t.href,
@@ -60,7 +66,6 @@ async function fetchEntries(url: string, read: (data: unknown) => SearchEntry[])
 const fetchLibrarySource = (source: LibrarySource) => fetchEntries(source.url, (data) => libraryEntries(source, data));
 
 export default function SearchPage() {
-  const [, navigate] = useLocation();
   // A deep link (/search?q=Genesis 1, from the Study Bible) opens on its query.
   const [query, setQuery] = useState(() =>
     typeof window === "undefined" ? "" : new URLSearchParams(window.location.search).get("q") ?? ""
@@ -99,6 +104,15 @@ export default function SearchPage() {
     return () => { live = false; };
   }, []);
   const passage = useMemo(() => (parser && query.trim() ? passageFor(query, parser) : null), [parser, query]);
+
+  // The Bible is searched once the typing has paused, so a half-typed word
+  // does not start the download.
+  const [settledQuery, setSettledQuery] = useState("");
+  useEffect(() => {
+    const t = setTimeout(() => setSettledQuery(query.trim()), 500);
+    return () => clearTimeout(t);
+  }, [query]);
+  const bibleQuery = settledQuery.length >= 3 && settledQuery === query.trim() && parser && !passage ? settledQuery : "";
 
   const libraryMatches = useMemo(() => {
     if (query.trim().length === 0) return [];
@@ -197,70 +211,37 @@ export default function SearchPage() {
   return (
     <Layout>
       <SEOMeta title="Search" description="Search the essays, libraries, tools, and books on LiveWell." />
-      <div className="container px-4 py-16 max-w-4xl mx-auto">
-        {/* Back button */}
-        <button
-          onClick={() => navigate("/")}
-          className="flex items-center gap-2 mb-8 font-ui text-sm font-medium uppercase tracking-wider hover:opacity-70 transition-opacity"
-          style={{ color: "var(--gold)" }}
-        >
-          <ArrowLeft size={20} />
-          Back
-        </button>
+      <InnerHead path="/search" title="Search LiveWell" plate="lens" />
 
-        {/* Search header */}
-        <div className="mb-12">
-          <h1
-            className="font-display font-bold mb-6"
-            style={{
-              color: "var(--ink)",
-              fontSize: "clamp(2rem, 4vw, 3rem)",
-              lineHeight: 1.2,
-            }}
-          >
-            Search LiveWell
-          </h1>
-
-          {/* Search input */}
-          <div className="relative mb-8">
-            <SearchIcon
-              size={20}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 pointer-events-none"
-              style={{ color: "var(--ink-muted)" }}
-            />
-            <input
-              type="text"
-              aria-label="Search the site, or look up a passage"
-              placeholder="Look up a passage or ask a question"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
-              style={{
-                borderColor: "var(--border)",
-                backgroundColor: "var(--bone)",
-                color: "var(--ink)",
-              }}
-            />
+      {/* FIRST: the search box. */}
+      <section className="home-sec home-sec--dark lw-band-tight" aria-labelledby="search-box-title">
+        <div className="home-wrap">
+          <h2 id="search-box-title" className="sr-only">
+            Search the site
+          </h2>
+          <div className="lw-find" style={{ maxWidth: "720px" }}>
+            <div className="lw-find__field">
+              <SearchIcon size={20} strokeWidth={1.75} aria-hidden="true" />
+              <input
+                type="text"
+                aria-label="Search the site, or look up a passage"
+                placeholder="Look up a passage or ask a question"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+            </div>
           </div>
-
-          {/* Filter buttons */}
-          <div className="flex gap-3 flex-wrap">
+          <div className="lw-chips">
             {(["all", "articles", "resources"] as const).map((type) => (
-              <button
-                key={type}
-                onClick={() => setSearchType(type)}
-                aria-pressed={searchType === type}
-                className="px-4 py-2 rounded-full font-ui text-sm font-medium uppercase tracking-wider transition-all"
-                style={{
-                  backgroundColor: searchType === type ? "var(--gold)" : "var(--bone-muted)",
-                  color: searchType === type ? "var(--bone)" : "var(--ink)",
-                }}
-              >
+              <button key={type} type="button" onClick={() => setSearchType(type)} aria-pressed={searchType === type} className="lw-chip">
                 {type === "all" ? "All" : type === "articles" ? "Articles" : "Resources"}
               </button>
             ))}
           </div>
         </div>
+      </section>
+
+      <div className="container px-4 py-16 max-w-4xl mx-auto">
 
         {/* Results */}
         <div>
@@ -308,12 +289,20 @@ export default function SearchPage() {
                   </Link>
                 </div>
               )}
+              {/* The verses that hold these words, ahead of pages about them. A
+                  reader who typed their own danger gets the help above, and no
+                  list of verses that happen to share its words. */}
+              {bibleQuery && crisisTopics.length === 0 && (
+                <Suspense fallback={null}>
+                  <BibleMatchesPreview query={bibleQuery} />
+                </Suspense>
+              )}
               {/* Library results from the static JSON manifests */}
               {visibleLibraryMatches.length > 0 && (
                 <div className="mb-12">
                   <p
                     className="font-ui text-xs font-medium uppercase mb-6"
-                    style={{ color: "var(--gold)", letterSpacing: "0.18em" }}
+                    style={{ color: "var(--mustard-text)", letterSpacing: "0.18em" }}
                   >
                     Across the site
                   </p>
@@ -331,7 +320,7 @@ export default function SearchPage() {
                       >
                         <p
                           className="text-xs font-ui mb-2 uppercase tracking-wider"
-                          style={{ color: "var(--gold)" }}
+                          style={{ color: "var(--mustard-text)" }}
                         >
                           {entry.sourceLabel}
                         </p>
@@ -359,7 +348,7 @@ export default function SearchPage() {
                           <Link
                             href={entry.indexHref}
                             className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             See all in {entry.sourceLabel} →
                           </Link>
@@ -393,7 +382,7 @@ export default function SearchPage() {
                           <Link
                             href="/writing"
                             className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             essays
                           </Link>{" "}
@@ -401,7 +390,7 @@ export default function SearchPage() {
                           <Link
                             href="/tools"
                             className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             tools
                           </Link>
@@ -451,7 +440,7 @@ export default function SearchPage() {
                         {result.category && (
                           <p
                             className="text-xs font-ui mt-2 uppercase tracking-wider"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             {result.category}
                           </p>

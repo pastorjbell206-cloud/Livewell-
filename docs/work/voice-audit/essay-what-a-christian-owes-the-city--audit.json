@@ -1,0 +1,80 @@
+{
+  "piece": "what-a-christian-owes-the-city",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean and close to the approved pilots. Literal searches found no Forbidden Language, no em-dash, and no exclamation point outside Psalm 122:6 and Daniel 4:19. Headings are plain, the right and the left are both criticized, the one piece of biography (\"I pastor a Baptist church too\") is confirmed and used to implicate him, and the ending leaves weight on Jonah and the cross. What remains is small: one connective filler, two colon-then-reveal sentences in the last section, a lecture-style imperative, one list-step opener, one stock image, one decorative attribution, and one vague pronoun. Two should-fix, six to consider. The essay is even-tempered history for its first two thirds, and one real detail from James would lift the voice score more than any edit here.",
+  "findings": [
+    {
+      "quote": "Their care, in other words, could not stop at the church door.",
+      "tell": "Connective filler (\"in other words\") and a paragraph point restated as a gloss",
+      "why": "The two sentences before it already say this through Pontius. \"In other words\" is the listed AI connective, and it marks the sentence as the writer explaining his own paraphrase.",
+      "replacement": "Their care could not stop at the church door.",
+      "severity": "should"
+    },
+    {
+      "quote": "Daniel also shows how to say the hard word: as a man who wants the king to prosper.",
+      "tell": "Colon-then-reveal sentence",
+      "why": "The colon stages the answer like a punchline, and it is the second colon reveal in four paragraphs (after the Shemaiah line). Spoken across a table it would be two plain sentences.",
+      "replacement": "Daniel also shows how to say the hard word. He said it as a man who wanted the king to prosper.",
+      "severity": "should"
+    },
+    {
+      "quote": "Shemaiah got one thing right about the letter: the exiles would be in Babylon a long time.",
+      "tell": "Colon-then-reveal sentence",
+      "why": "Fine alone, but paired with the Daniel colon in the same section the construction starts to repeat. Fix this one only if the Daniel line stays as it is.",
+      "replacement": "Shemaiah got one thing right about the letter. The exiles would be in Babylon a long time.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Start with a word the exiles already knew.",
+      "tell": "Announced turn in the imperative, lecture voice",
+      "why": "It is the same family as the \"Consider ...\" stamp the brief lists. It tells the reader how the paragraph will proceed instead of proceeding.",
+      "replacement": "The exiles already knew the word Jeremiah used.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Daniel adds the work itself.",
+      "tell": "Announced list step",
+      "why": "It reads like an outline item (\"next point: work\") in a section that otherwise moves by \"It is owed...\" and \"We owe...\". Tying it to that thread makes it prose again.",
+      "replacement": "The city is also owed our work, as Babylon was owed Daniel's.",
+      "severity": "consider"
+    },
+    {
+      "quote": "It looks like the family that stays when it could afford to leave, and the church that keeps its doors open on a Tuesday night.",
+      "tell": "Stock image with no concrete case; generic church content",
+      "why": "\"Doors open on a Tuesday night\" could run on any church's page, and \"Tuesday\" is a house motif from the brand documents showing through. The family that stays is specific enough to stand alone. A real weeknight detail from James would be better than either (see for_james).",
+      "replacement": "It looks like the family that stays when it could afford to leave.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Historians call what followed the Great Reversal, a phrase Timothy Smith used and the sociologist David Moberg made the title of a book.",
+      "tell": "Scholar parade: names as decoration",
+      "why": "Remove the two names and the sentence says the same thing. They sit in a run of four paragraphs built on name, year and title (Rauschenbusch 1907, Henry 1947, Falwell 1979, Hunter 2010), which is the pattern the brief warns about. The attribution is accurate per the ledger, so this is a cut, not a correction.",
+      "replacement": "Historians call what followed the Great Reversal.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Many of us reach for the same verse to explain it.",
+      "tell": "Vague framing sentence",
+      "why": "\"It\" has no clear antecedent after three different choices, so the sentence that hands off to Jeremiah 29:7 is the blurriest one in the opening.",
+      "replacement": "Whichever we choose, many of us reach for the same verse.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "\"I'd like to think I would have seen what King saw. I know myself well enough to doubt it.\" He implicates himself by doing it, in contractions, with no announcement.",
+    "\"We tend to treat Jeremiah 29:7 as a gentle verse. Its first readers didn't.\" One short verdict placed after the Shemaiah evidence, not before it.",
+    "The Stallings paragraph gives the eight clergymen their real goods and their real cost before the judgment lands, and \"Often it has been closer to Babylon\" turns the mirror on the majority church.",
+    "Scripture carries the argument: Jeremiah 22 defines welfare, Jeremiah 51 sets judgment beside prayer, Daniel 4 models the hard word. No verse is tacked on.",
+    "The contested question (how far to shape the culture) is named as one Anabaptists, Lutherans and the Reformed divide on and is left open.",
+    "\"Contempt is the easiest sin in American public life, and both parties reward it.\" The criticism fires in both directions.",
+    "The ending does not recap. It goes from Jonah outside the city to the cross to John 20:21 in plain lines."
+  ],
+  "for_james": [
+    "The essay has one first-person moment (the Stallings paragraph). If you have a real memory of wanting your own town quiet when it cost someone else, one sentence of it there would make that paragraph unmistakably yours. Nothing was invented, and nothing should be.",
+    "The line about \"the church that keeps its doors open on a Tuesday night\" is generic. If your church does something specific on a weeknight for your town, name it in a clause. Otherwise the audit recommends cutting the image.",
+    "The right gets a name and a date (Falwell, the Moral Majority, 1979). The left gets one general sentence and a link. Both are criticized, but not at the same level of detail. If you want them matched, you would need to supply a named example you stand behind.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree, and the essay follows VOICE-JAMES-BELL.md, which governs. The profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a Hebrew or Greek word, a real person's story, \"three specific questions, one concrete practice,\" a line built to be screenshotted, and no exclamation marks ever. The essay runs about 3,400 words in developed paragraphs, uses shalom, asks its questions inside the prose, and keeps the exclamation points that are in the ESV text of Psalm 122:6 and Daniel 4:19. The profile also gives the domain as .com; the site is .co. No change was made toward the profile.",
+    "This audit was read-only. Nothing in the published JSON, the draft or the ledger was changed, and none of the proposed replacements touches a quotation, date, name or reference the ledger records as checked."
+  ]
+}

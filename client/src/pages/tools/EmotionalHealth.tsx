@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { ToolActions } from "@/components/ToolActions";
 import { useState } from "react";
@@ -368,7 +369,7 @@ const AREA_GUIDES: Record<string, AreaGuide> = {
         ],
         next: [
           { kind: "Find help", title: "I can't forgive them", href: "/help/cant-forgive" },
-          { kind: "Care plan", title: "Eight Weeks Toward Setting Down the Debt", href: "/plans/forgiveness" },
+          { kind: "Care plan", title: "Eight Weeks Toward Forgiving Someone", href: "/plans/forgiveness" },
         ],
       },
     },
@@ -515,7 +516,7 @@ function getOverallInterpretation(totalScore: number): OverallBand {
       seekHelp: true,
       next: {
         lead: "For a season like this, there's an eight-week plan that starts where God started with Elijah, with bread and sleep, then moves to telling one person, letting a doctor look, and praying in the dark. Walking it alongside a counselor is wisdom, not weakness.",
-        cta: "Eight Weeks of Small Mercies",
+        cta: "Eight Weeks for When You Feel Empty",
         href: "/plans/empty",
       },
     };
@@ -536,7 +537,7 @@ function getOverallInterpretation(totalScore: number): OverallBand {
     },
     later: {
       lead: "Later, when you're ready for something slower, there's an eight-week plan for this season:",
-      title: "Eight Weeks of Small Mercies",
+      title: "Eight Weeks for When You Feel Empty",
       href: "/plans/empty",
     },
   };
@@ -641,7 +642,7 @@ export default function EmotionalHealth() {
   return (
     <Layout>
       <SEOMeta
-        title="Emotional Health Self-Check: An Honest Look at Your Inner Life"
+        title="Emotional Health Self-Check (15 Questions)"
         description="A 15-question self-check on emotional and spiritual health: self-awareness, boundaries, grief, forgiveness, and rest. Not a diagnosis. Honest results, practical steps."
         keywords="emotional health assessment, emotional health self-check, spiritual health check, self-awareness, boundaries, grief, forgiveness, sabbath rest, Christian mental health"
         structuredData={{
@@ -656,68 +657,9 @@ export default function EmotionalHealth() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-            }}
-          >
-            Emotional Health{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Self-Check
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-            }}
-          >
-            Fifteen statements about five parts of the inner life:
-            self-awareness, boundaries, grief, forgiveness, and rest. It takes a
-            few minutes. Answer for how things have really been lately, not how
-            you wish they were.
-          </p>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              fontFamily: "var(--B)",
-              margin: "12px 0 0",
-            }}
-          >
-            This is a self-check for reflection, not a test or a diagnosis, and
-            your answers stay on this device.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/emotional-health" title="Emotional Health Self-Check" line="Fifteen statements about five parts of the inner life: self-awareness, boundaries, grief, forgiveness, and rest. It takes a few minutes. Answer for how things have really been lately, not how you wish they were." plate="compass">
+        <p className="pg-head__lede">This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device.</p>
+      </InnerHead>
 
       {/* Content */}
       <section style={{ padding: "48px 32px", background: "var(--bone)" }}>

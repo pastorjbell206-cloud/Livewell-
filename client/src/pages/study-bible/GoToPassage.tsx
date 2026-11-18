@@ -2,7 +2,9 @@
  * "Go to" on the Study Bible's front door and in the reader (master plan 7.1,
  * U15). A reference ("John 3:16", "jn 3 16", "Romans 8", "Ps 23:1-3") opens
  * at its verse or chapter, and a book named on its own ("Romans", "1 John")
- * opens the book. Anything else says so plainly and offers the site search.
+ * opens the book. Anything else is taken as words to find ("born again") and
+ * opens the Bible search with the verses that hold them. A verse the chapter
+ * on screen does not have ("John 3:99") is said plainly, in place.
  *
  * The reference parser already travels with the Study Bible (lib/bible-notes
  * reads catalogue lines through it), so it is imported here, not fetched.
@@ -13,6 +15,8 @@ import { Link, useLocation } from "wouter";
 import * as scriptureRef from "@/lib/scripture-ref";
 import { passageFor } from "@/lib/siteSearch";
 import { quietLink } from "@/pages/study-bible/shared";
+
+const bibleSearchHref = (q: string) => `/study/bible/search?q=${encodeURIComponent(q)}`;
 
 export function GoToPassage({ here, onVerse }: {
   /** The chapter on screen ("/study/bible/john/3"), so a verse in it is shown in place. */
@@ -30,7 +34,9 @@ export function GoToPassage({ here, onVerse }: {
     if (!q) return;
     const match = passageFor(q, scriptureRef);
     if (!match) {
-      setMissed(q);
+      // Not a reference: words to look for in the Bible itself.
+      setMissed(null);
+      navigate(bibleSearchHref(q));
       return;
     }
     setMissed(null);
@@ -53,7 +59,7 @@ export function GoToPassage({ here, onVerse }: {
     <form role="search" aria-label="Go to a passage" onSubmit={submit} style={{ display: "grid", gap: "8px", maxWidth: "420px", width: "100%" }}>
       <div style={{ display: "flex", gap: "8px" }}>
         <label htmlFor="study-bible-goto" style={{ position: "absolute", width: "1px", height: "1px", overflow: "hidden", clip: "rect(0,0,0,0)" }}>
-          Go to a passage
+          Go to a passage, or find a word
         </label>
         <input
           id="study-bible-goto"
@@ -61,7 +67,7 @@ export function GoToPassage({ here, onVerse }: {
           inputMode="text"
           autoComplete="off"
           spellCheck={false}
-          placeholder="Go to: John 3:16, Romans 8"
+          placeholder="John 3:16, or a word to find"
           value={value}
           onChange={(e) => { setValue(e.target.value); setMissed(null); }}
           style={{ flex: "1 1 auto", minWidth: 0, minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "16px" }}
@@ -74,7 +80,7 @@ export function GoToPassage({ here, onVerse }: {
         {missed && (
           <>
             “{missed}” isn’t a passage this can open. Try John 3:16, Romans 8, or Psalm 23, or{" "}
-            <Link href={`/search?q=${encodeURIComponent(missed)}`} style={quietLink}>search the site for it</Link>.
+            <Link href={bibleSearchHref(missed)} style={quietLink}>search the Bible for those words</Link>.
           </>
         )}
       </p>

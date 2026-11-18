@@ -3467,7 +3467,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   {
     text: "Patriotism loves a country and can repent. Nationalism has made the nation the thing that judges, so it cannot.",
     articleSlug: "christian-nationalism",
-    articleTitle: "Christian Nationalism: An 8-Week Study",
+    articleTitle: "Christian Nationalism: A Five-Session Bible Study",
     pillar: "Prophetic Disruption",
     category: "conviction",
     sourceType: "studyguide",
@@ -3476,7 +3476,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   {
     text: "The covenant many assume is ancient was legislated in living memory, one nation under God added in 1954, in God we trust in 1956.",
     articleSlug: "christian-nationalism",
-    articleTitle: "Christian Nationalism: An 8-Week Study",
+    articleTitle: "Christian Nationalism: A Five-Session Bible Study",
     pillar: "Prophetic Disruption",
     category: "history",
     sourceType: "studyguide",
@@ -3485,7 +3485,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   {
     text: "There is a generosity that costs the giver nothing he cannot spare and changes nothing he does not wish to change. We have perfected it.",
     articleSlug: "economic-justice",
-    articleTitle: "Economic Justice: An 8-Week Study",
+    articleTitle: "Money, Work and the Poor: A Five-Session Bible Study",
     pillar: "Prophetic Justice",
     category: "conviction",
     sourceType: "studyguide",
@@ -3494,7 +3494,7 @@ export const SOCIAL_QUOTES: SocialQuote[] = [
   {
     text: "Wealth is the idol that does not feel like one, hiding inside prudence and responsibility and love of family.",
     articleSlug: "economic-justice",
-    articleTitle: "Economic Justice: An 8-Week Study",
+    articleTitle: "Money, Work and the Poor: A Five-Session Bible Study",
     pillar: "Prophetic Justice",
     category: "wisdom",
     sourceType: "studyguide",

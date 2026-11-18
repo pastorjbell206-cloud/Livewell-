@@ -1,0 +1,2 @@
+# Stored texts are kept byte for byte as fetched; their sha256 is in manifest.json.
+texts/** -text

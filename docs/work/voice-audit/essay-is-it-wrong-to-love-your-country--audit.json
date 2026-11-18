@@ -1,0 +1,63 @@
+{
+  "piece": "is-it-wrong-to-love-your-country",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean on every literal check (no em-dash, no forbidden word, every exclamation inside quoted Scripture, criticism of right and left with the same instrument, biography limited to the five sons). It reads as a person arguing patiently. What a careful reader could still hear as machine polish is a habit of closing paragraphs with a balanced two-beat line, heaviest in the section on worship and contempt, plus one restated-quotation slogan and one announced turn. Six small edits; nothing structural.",
+  "findings": [
+    {
+      "quote": "Love comes first, and the improvement follows. That is how Nehemiah loved a city in ruins.",
+      "tell": "Paragraph restates itself as a slogan",
+      "why": "Chesterton's own line (\"She was great because they had loved her\") has just said exactly this; the gloss repeats it in a tidy two-beat form, the pattern the brief names as an aphoristic closer.",
+      "replacement": "That is how Nehemiah loved a city in ruins.",
+      "severity": "should"
+    },
+    {
+      "quote": "Scripture keeps that verse, and it isn't there as a model. It is there because it is true to the human heart.",
+      "tell": "\"It is not X. It is Y.\" antithesis used as a habit",
+      "why": "The same hinge appears in most sections (\"hasn't risen above... He has only lost\", \"It would be easy to hear that speech as contempt. It wasn't.\", \"Chesterton wasn't mocking loyalty\"). This instance is the most formulaic and the easiest to fold into one spoken sentence.",
+      "replacement": "Scripture keeps that verse, though not as a model. It's there because it is true to the human heart.",
+      "severity": "should"
+    },
+    {
+      "quote": "The worshiper believes it nearly is. The despiser never quite forgives the country for being only a country, a mixed and mortal thing.",
+      "tell": "Symmetrical sentence pair with a literary tag",
+      "why": "This section already runs on matched pairs (worship/contempt, right/left, rose/fell). The alliterative appositive \"a mixed and mortal thing\" is ornament where he would stop on the plain phrase.",
+      "replacement": "The worshiper believes it nearly is. The despiser never quite forgives the country for being only a country.",
+      "severity": "should"
+    },
+    {
+      "quote": "Contempt feels like moral seriousness. More often than its owners suspect, it is pride, and underneath the pride is ingratitude.",
+      "tell": "Aphoristic two-beat paragraph closer",
+      "why": "Third epigram-shaped closer in one section (with the election line and the despiser line). The election line is the earned verdict; this one should read as a continuing thought, not a second slogan.",
+      "replacement": "Contempt feels like moral seriousness, but more often than its owners suspect it's pride, and under the pride is ingratitude.",
+      "severity": "consider"
+    },
+    {
+      "quote": "What he did next sets the pattern for a Christian love of country: \"As soon as I heard these words",
+      "tell": "Announced turn with colon-then-reveal",
+      "why": "The sentence tells the reader what the passage will mean before he has read it; the paragraph's own last sentence (\"Nehemiah grieved his people's ruin and told the truth about its cause\") already draws the point.",
+      "replacement": "He writes, \"As soon as I heard these words",
+      "severity": "consider"
+    },
+    {
+      "quote": "The Christian question is whether Scripture sorts it the same way, and I don't think it does.",
+      "tell": "Hedge (\"I think\")",
+      "why": "The revision pass says delete or commit, and the next paragraph commits (\"The short answer is yes\"). It does sound spoken, so this is a judgment call for James.",
+      "replacement": "The Christian question is whether Scripture sorts it the same way, and it doesn't.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Both readers in the opening are concrete people (the anthem, the grandchildren, the stage in red, white and blue), and the essay keeps returning to them by name instead of to an abstraction.",
+    "Sources do work: Chesterton's drunk mother, Barth reading the signatures, Douglass's \"I do not despair of this country\" each move the argument, and removing any name would change the sentence.",
+    "Asymmetry is stated without false balance (\"Contempt has far fewer dead to its name. But it does its own harm.\") and the writer goes inside it plainly: \"I know that's true of me.\"",
+    "The five-sons paragraph ends on an admission, not a credential: \"I'm more sure that this is the right love than I am that I know how to teach it.\"",
+    "Psalm 137:9 is faced rather than skipped, and the ending lands on Revelation 21:23 instead of a recap."
+  ],
+  "for_james": [
+    "The five-sons paragraph is the most human moment in the piece and it is general (songs, stories, gratitude). One real detail only you have (a particular song, a place you took them, a question one of them asked) would lift it further. I have not invented one.",
+    "\"Perhaps you served, or your father did\" is addressed to the reader, not about you, so it stays inside the confirmed biography. Confirm you are comfortable with it given your own story.",
+    "Your saved Substack profile and VOICE-JAMES-BELL.md disagree here: the profile asks for 1,500 to 2,500 words, two-to-four-sentence paragraphs, a Greek or Hebrew word, a screenshot line, and three Monday-morning questions with one practice. This essay runs about 3,850 words in developed paragraphs with no word study or question list, which is what the governing voice file asks for. I judged it by the voice file and did not push it toward the profile.",
+    "The ledger notes the closing line \"He was never ashamed of His nation, and He never worshiped it\" was deliberately kept as the one thesis line. I agree; it is the antithesis that has earned its place, which is why I suggest thinning the others."
+  ]
+}

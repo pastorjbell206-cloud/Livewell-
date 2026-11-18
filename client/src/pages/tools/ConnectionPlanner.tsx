@@ -28,6 +28,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { ToolActions } from "@/components/ToolActions";
 import { RemindMe } from "@/components/RemindMe";
 import ScriptureNote from "@/components/ScriptureNote";
@@ -211,7 +212,7 @@ const PRINT_CSS = `
   @media print{
     nav, footer, .skip-link, .cp-screen{display:none !important}
     .cp-print{display:block !important;font-family:var(--B);font-size:11pt;line-height:1.55}
-    .cp-print h1{font-family:var(--F);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
+    .cp-print .cp-title{font-family:var(--F);font-weight:400;font-size:22pt;letter-spacing:-0.02em;margin:0 0 4pt}
     .cp-print h2{font-family:var(--F);font-weight:500;font-size:14pt;margin:14pt 0 4pt;page-break-after:avoid}
     .cp-print p{margin:0 0 6pt;max-width:none}
     .cp-print .cp-meta{font-size:9.5pt;margin-bottom:8pt}
@@ -311,7 +312,7 @@ export default function ConnectionPlanner() {
   return (
     <Layout>
       <SEOMeta
-        title="The Connection Planner: Small Steps When You Feel Alone"
+        title="A Weekly Plan for When You Feel Lonely"
         description="A private weekly planner for loneliness: name a few people, choose one small step toward each, keep one place to belong, and see how the week went."
         url="https://www.livewellbyjamesbell.co/tools/connection-planner"
       />
@@ -320,40 +321,35 @@ export default function ConnectionPlanner() {
       <div className="cp-screen">
         {/* Inside the screen-only wrapper, so the pill stays off the printed page. */}
         <QuickExit />
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-          <div style={wrap}>
-            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
-              <Link href="/help/loneliness" style={{ color: "inherit" }}>Find help: loneliness</Link> · A companion tool
-            </div>
-            <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px" }}>
-              The Connection Planner
-            </h1>
-            <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, margin: "0 0 12px", maxWidth: "60ch" }}>
-              Loneliness rarely gives way to one big connection. It yields to small steps toward the same few people, taken again and again. Name up to five people, choose one small step toward each for this week, and keep one place where the same faces gather every week. As the week goes, check off what happened, then start the next one.
-            </p>
-            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: "0 0 12px", maxWidth: "60ch", opacity: 0.85 }}>
-              It takes about five minutes a week. Everything you write stays in this browser and is never sent anywhere. This is a planner, not counseling: if the loneliness has settled into a hopelessness that won't lift, talk with a doctor or a counselor as well as your church.
-            </p>
-            <div style={{ margin: "0 0 16px" }}>
-              <RemindMe
-                title="The Connection Planner"
-                details="Five minutes: check off this week's small steps toward your people, and choose next week's."
-                href="/tools/connection-planner"
-                freq="WEEKLY"
-                count={8}
-                schedule="once a week for eight weeks"
-                defaultTime="evening"
-                onDark
-              />
-            </div>
-            <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: 0, maxWidth: "60ch" }}>
-              If the loneliness has turned into thoughts of not wanting to be alive, don't wait for the end of the week. Please reach someone tonight: call or text{" "}
-              <a href="tel:988" style={{ color: "inherit", fontWeight: 700 }}>988</a>, or call{" "}
-              <a href="tel:911" style={{ color: "inherit", fontWeight: 700 }}>911</a> if you're in danger.{" "}
-              <a href="#help-now" style={{ color: "inherit", fontWeight: 600 }}>Every line is at the foot of this page.</a>
-            </p>
+        <InnerHead path="/tools/connection-planner" title="A plan for when you feel alone" line="The Connection Planner." plate="sundial">
+          <p className="pg-head__lede">
+            Loneliness rarely gives way to one big connection. It yields to small steps toward the same few people, taken again and again. Name up to five people, choose one small step toward each for this week, and keep one place where the same faces gather every week. As the week goes, check off what happened, then start the next one.
+          </p>
+          <p className="pg-head__lede">
+            It takes about five minutes a week. Everything you write stays in this browser and is never sent anywhere. This is a planner, not counseling: if the loneliness has settled into a hopelessness that won't lift, talk with a doctor or a counselor as well as your church.
+          </p>
+          <div style={{ margin: "var(--s-2) 0 0" }}>
+            <RemindMe
+              title="The Connection Planner"
+              details="Five minutes: check off this week's small steps toward your people, and choose next week's."
+              href="/tools/connection-planner"
+              freq="WEEKLY"
+              count={8}
+              schedule="once a week for eight weeks"
+              defaultTime="evening"
+            />
           </div>
-        </section>
+          <p className="pg-head__lede pg-head__crisis">
+            If the loneliness has turned into thoughts of not wanting to be alive, don't wait for the end of the week. Please reach someone tonight: call or text{" "}
+            <a href="tel:988">988</a>, or call <a href="tel:911">911</a> if you're in danger.{" "}
+            <a href="#help-now">Every line is at the foot of this page.</a>
+          </p>
+          <p className="pg-head__lede">
+            <Link href="/help/loneliness" className="btn--text">
+              Find help: loneliness
+            </Link>
+          </p>
+        </InnerHead>
 
         <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }} aria-labelledby="this-week">
           <div style={wrap}>
@@ -540,7 +536,7 @@ export default function ConnectionPlanner() {
       </div>
 
       <div className="cp-print" aria-hidden="true">
-        <h1>The Connection Planner</h1>
+        <p className="cp-title">The Connection Planner</p>
         <p className="cp-meta">Week of {dateLabel(state.weekOf)}. One small step toward each person; a step counts when you take it, whatever the answer.</p>
         <h2>This week</h2>
         {Array.from({ length: MAX_PEOPLE }, (_, i) => state.people[i]).map((p, i) =>

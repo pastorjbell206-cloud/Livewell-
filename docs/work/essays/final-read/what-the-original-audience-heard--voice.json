@@ -1,0 +1,117 @@
+{
+ "slug": "what-the-original-audience-heard",
+ "lens": "Voice read, last reader before publishing. I read /home/user/livewell-land/client/public/essays/what-the-original-audience-heard.json (title, excerpt as standfirst, Markdown body) against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched literally for every word and phrase on that list. I also checked the shelf for sentences and stamps repeated across the published essays in /home/user/livewell-land/client/public/essays/. Then I read it once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I edited nothing. Every old string below occurs exactly once in the published text, and I applied all of them together to a scratch copy to confirm they fit: no forbidden words, no em-dashes, 35 paragraphs averaging 89 words, mean sentence 18.9 words, 16 percent of sentences at 8 words or fewer. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "Amos section, end of the paragraph beginning \"Amos went on to tell them\": \"[The Bible expects God's own people to go wrong](/writing/the-bible-assumes-you-will-be-wrong), and it sends prophets like Amos to say so to their faces.\"",
+   "problem": "This sentence repeats one already on the shelf. why-trust-the-bible makes the same claim in the same shape, with the same link: \"Scripture itself expects its readers to get it wrong, which is why it keeps sending prophets to people who already have the Scriptures. That is the argument of [The Bible Assumes You Will Be Wrong]\". A reader going from one essay to the other meets the same line twice. The brief exists to stop exactly this kind of shelf-wide stamp.",
+   "fix": "Replace the sentence with: \"He was one of many prophets sent to tell [the people who already had God's law](/writing/the-bible-assumes-you-will-be-wrong) the same thing to their faces.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Verses Taken Out of Their Chapters, last sentence of the Progressive churches paragraph: \"I've written elsewhere about how [the church you belong to translates the Bible for you](/writing/how-the-bible-gets-translated-by) before you open it.\"",
+   "problem": "\"I've written elsewhere about\" is now a shelf stamp. It opens a sentence in three other published essays (the-children-rome-threw-away, the-rise-of-the-nones, why-does-god-feel-far-away), and this would be the fourth. It also points the reader to the author's back catalogue one sentence before the essay's only real self-implication (\"and I have built one too\"), so the first \"I\" a reader meets is a plug, not a confession.",
+   "fix": "Replace with: \"The church you belong to has usually [translated the Bible for you](/writing/how-the-bible-gets-translated-by) before you open it.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Verses Taken Out of Their Chapters, the paired Conservative churches and Progressive churches paragraphs: \"They pass more quickly over the end of Micah's sentence, \"to walk humbly with your God,\" and over the New Testament's teaching on sexual holiness.\"",
+   "problem": "The criticism does fire in both directions, but the instrument is not the same. The conservative paragraph quotes two skipped texts in full (Romans 13:8 and Leviticus 19:34). The progressive paragraph quotes one half-line and then only gestures at a topic. A conservative pastor would notice that his side got verses and the other side got a summary. CLAUDE.md asks for the right and the left to be criticized with the same instrument.",
+   "fix": "Replace \"and over the New Testament's teaching on sexual holiness.\" with \"and over Paul's word to the Thessalonians, \"For this is the will of God, your sanctification: that you abstain from sexual immorality\" (1 Thessalonians 4:3).\" The integrity lens should confirm the ESV wording before it lands. I believe this is verbatim; the ESV verse ends with a semicolon, which the quotation drops.",
+   "severity": "should"
+  },
+  {
+   "where": "Can Ordinary Christians Still Read the Bible?, paragraph 2, first sentence: \"The worry rests on something true.\"",
+   "problem": "This is rulebook leakage. It announces the concession instead of making it, the same move as the judges' examples \"The fair place to begin is with what they have right\" and \"The skeptic has a point that deserves to be granted plainly\". The next sentence already makes the concession.",
+   "fix": "Delete the sentence. The paragraph then begins: \"The heart of Scripture is plain.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, the one-line paragraph \"It should also give us hope.\" (it comes right after \"That should make us slower readers, and humbler ones.\")",
+   "problem": "This is an announced turn into hope, and with the line before it, it makes a \"should ... should also\" formula. The next sentence delivers the hope in Christ without needing to be introduced. VOICE-JAMES-BELL.md asks for earned hope, not hope that is labeled.",
+   "fix": "Delete \"It should also give us hope.\" so the paragraph begins: \"The Son through whom God has spoken is the same Jesus who told the synagogue at Nazareth that the Scripture had been fulfilled in their hearing.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, paragraph beginning \"We come to the Bible late.\": \"A crowd in a square in Jerusalem, the towns of Israel in Jeroboam's day, a synagogue in Nazareth and a handful of house churches around the Mediterranean heard it before we did. Most of them heard something harder than we usually let ourselves hear.\"",
+   "problem": "This is a recap in the ending. It is the third time the essay calls the roll of its own examples, after \"the hometown congregation, the lawyer, the towns of Israel in Jeroboam's good years\" and the list in the confession section (\"The tears before ... Paul's chains are in the first chapter of Philippians\"). The brief asks for an ending that leaves weight, not one that summarizes, and the mirror line underneath does the work by itself.",
+   "fix": "Replace the two sentences with: \"Most of those who received it before us heard something harder than we usually let ourselves hear.\" The paragraph then reads: \"We come to the Bible late. Most of those who received it before us heard something harder than we usually let ourselves hear.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Can Ordinary Christians Still Read the Bible?, paragraph 1, first sentence: \"All of this raises an obvious worry.\"",
+   "problem": "This is a stock transition that announces the turn the heading has already asked. Without it, the paragraph opens straight onto the worry itself.",
+   "fix": "Delete the sentence. The paragraph then begins: \"If reading the Bible well means knowing about Samaritan temples and the reign of Jeroboam and ancient literacy, it sounds as if the Bible belongs to scholars again.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Opening, paragraph 3: \"That loss is the subject of this essay.\"",
+   "problem": "This is a meta signpost: the essay announcing its own subject. The sentence after it states the thesis plainly, so this one only adds scaffolding. The brief does allow plain signposting, so this is minor.",
+   "fix": "Delete the sentence. The paragraph then runs: \"... which was a word from God that had brought them low before it lifted them up. When we hear a verse without the people it was first spoken to, it tends to drift toward whatever we already wanted it to mean.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Can Ordinary Christians Still Read the Bible?, paragraph 2: \"Nearly everything this essay has said about the first audience comes from the pages around the verses we know.\"",
+   "problem": "This is the essay referring to itself a second time (see the finding above), and it makes the essay the subject rather than the reader.",
+   "fix": "Replace \"Nearly everything this essay has said about the first audience\" with \"Nearly everything we have seen about the first audience\".",
+   "severity": "consider"
+  },
+  {
+   "where": "Good Samaritan, end of the paragraph beginning \"So when the lawyer\": \"Readers have long noticed that he answered without saying the word Samaritan.\"",
+   "problem": "\"Readers have long noticed\" is vague, uncredited authority, the kind of framing the brief lists among AI tells. The observation stands on the text the essay has just quoted. It doesn't need anyone else to vouch for it.",
+   "fix": "Replace with: \"He did not say the word Samaritan.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Reading With the First Hearers, end of paragraph 1: \"And pay attention when you find yourself sitting comfortably in the hero's seat. The first hearers seldom did.\"",
+   "problem": "This is a two-beat kicker at a paragraph end. The final section already carries three verdict lines (\"That should make us slower readers\", \"It is fulfilled in ours as well\", \"The joy of the LORD is strength\"), and the hero's-seat point was already made in \"We take the Samaritan's side and the prophet's side\". The instruction lands without the tag.",
+   "fix": "Delete \"The first hearers seldom did.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Verses Taken Out of Their Chapters, the Miletus paragraph: \"They were the first to hear that sentence, and they wept as they walked him to the ship (Acts 20:37–38).\"",
+   "problem": "The essay's key phrase is stamped where it does no work. Some form of \"first hear\" or \"first audience\" appears about sixteen times, which is natural for the subject. Here, though, it only restates the scene. The weeping, which ties back to the Water Gate, is what carries the line.",
+   "fix": "Replace \"They were the first to hear that sentence, and they wept as they walked him to the ship\" with \"The elders wept as they walked him to the ship\".",
+   "severity": "consider"
+  },
+  {
+   "where": "Good Samaritan, the paragraph beginning \"We name hospitals\": \"The lawyer heard a hero drawn from a people his own people despised\"",
+   "problem": "Read aloud, \"a people his own people\" is a stumble.",
+   "fix": "Replace \"a hero drawn from a people his own people despised\" with \"a hero drawn from a people his own nation despised\".",
+   "severity": "consider"
+  },
+  {
+   "where": "Standfirst (excerpt): \"Every book of the Bible was first heard aloud by particular people in a particular place, and reading it well begins with hearing what they heard.\"",
+   "problem": "It is not a balanced antithesis; it is one plain declarative sentence, so the standfirst rule is met. But \"Every book ... was first heard aloud\" claims more than the body does. The body says \"for most of history that is how God's people met the Bible\" and argues only from Moses in the synagogue, Paul's letters and Revelation. A skeptic will test the \"every\". Saying \"written first to\" matches the essay's own first heading and Walton's line.",
+   "fix": "Replace \"was first heard aloud by particular people in a particular place\" with \"was written first to particular people in a particular place\". The full standfirst then reads: \"Every book of the Bible was written first to particular people in a particular place, and reading it well begins with hearing what they heard.\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic). Zero hits for the phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), the therapy-speak (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and the signposting phrases (here is what I mean, let me explain). \"Blessing\" appears once, as a noun (\"opens with a blessing on\", Revelation 1:3). It is not \"blessed\" used as an adjective.",
+  "Em-dash: no U+2014 anywhere. En-dashes appear only in the 12 verse ranges.",
+  "Exclamation points: none, inside or outside Scripture.",
+  "Semicolons: two, both inside verbatim Scripture (Nehemiah 8:9 and Amos 3:2).",
+  "Stamps: none of the brief's seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\"). The shelf-level repeats, \"I've written elsewhere\" and the prophets sentence shared with why-trust-the-bible, are flagged above.",
+  "\"Honest\" and \"fair\": zero uses. The rulebook words (steelman, verdict, indictment, self-implication): zero uses. The one announced concession (\"The worry rests on something true\") is flagged above.",
+  "No scholar parade. Walton gets one paragraph, and his year (2020) does work because the Festschrift took his saying as its title. Harris gets one sentence and one year. Langton, Estienne and the Geneva Bible are the history of chapter and verse numbering, not witnesses lined up. Hyrcanus, Coponius and Josephus are events. Nothing follows the \"In *Title* (YEAR), X argued\" pattern, and no titles are italicized.",
+  "Biography: within the confirmed facts and never used as a credential. The only first-person lines are \"I have built one too\" (he preaches; he is confirmed as a pastor) and \"I've written elsewhere\" (flagged as a stamp, not a biography problem). Nothing states his title, years in ministry or book count, and nothing implies Southern Baptist membership. The 1677/1689 confession is cited historically as \"English Baptists\", not as his church.",
+  "Headings: all five are plain and descriptive (\"Who the Bible Was First Written To\", \"When the Text Confronted Its First Hearers\", \"Verses Taken Out of Their Chapters\", \"Can Ordinary Christians Still Read the Bible?\", \"Reading With the First Hearers\"). None is literary or a formula.",
+  "Standfirst: one plain declarative sentence, not a balanced antithesis. Only its \"every book ... heard aloud\" overclaim is flagged, as a consider.",
+  "Political criticism fires in both directions. The Amos paragraph says \"each side preaching the half that troubles the other\", and the paired Conservative churches and Progressive churches paragraphs each name what that side skips. Both close on \"On both sides\" and then on the writer's own confession. Only the difference in instrument is flagged.",
+  "No contested second-order question has James's position asserted. The clarity of Scripture is stated through the 1689 confession, in its own words and with its own qualification (\"All things in Scripture are not alike plain\"). Baptism, the Supper, church office, the millennium and similar questions are not in view. needs_james: false.",
+  "First-order matters are confessed plainly: \"God made us, that we have turned from him, and that Christ died and rose for sinners\". The ending lands on the Son through whom God has spoken.",
+  "Self-implication is done, not announced. \"We\" carries the opening, the Nathan move works (\"We take the Samaritan's side and the prophet's side, and we wonder how the people of Nazareth could have been so blind\"), and \"Preachers build those lists one sermon at a time, and I have built one too\" puts the writer inside the charge.",
+  "Crisis path: this is not a crisis-facing piece. It doesn't touch grief, abuse by a leader, self-harm or a marriage in trouble, so no Find Help link or 988 line is needed. The Amos 2:7 charge is a paraphrase of Scripture, not pastoral content about abuse.",
+  "Ending: a short stack of plain lines that turns the mirror on the reader (\"slower readers, and humbler ones\"), lands on Christ fulfilling Scripture \"in ours as well\", and closes on the Water Gate weeping that comes before joy. That leaves weight rather than resolving it. Only the recap list and the announced \"It should also give us hope\" are flagged.",
+  "Closing Texts: three verses in the right form, *\"Quote.\"* (Reference), one per line, with no heading. All three are already quoted in the body, which is allowed and matches the pilots.",
+  "Links: three essay links (the-bible-assumes-you-will-be-wrong and how-the-bible-gets-translated-by are live; why-didnt-the-bible-ban-slavery is pending, with its rewrite present in client/public/essays), all in link-targets.json, plus /study/bible. That is within the two-to-four limit. The fixes above keep all three.",
+  "Register as published: 35 body paragraphs averaging 90 words; 170 sentences with a mean of 18.6 words; 18 percent at 8 words or fewer. That is on the developed side of the quarter target, with no fragment stacks and no walls. Contractions are light and natural.",
+  "\"Not X. Y.\" appears only twice, in different sections (\"we don't read the text neutrally. We quietly take their seats\"; \"The charges that follow aren't war crimes. They are the sins of a comfortable people\"). No antithesis tic.",
+  "Triplets are genuine. \"Language, enemies and fears\", the creation, fall and redemption summary, and \"who first heard it, what they feared, and what it asked of them\" each list three real items. The Nehemiah 8:10 and Amos 2:7–8 lists come from the text itself.",
+  "Scripture is used inside the argument and read in context, never as a decorative closer: Nehemiah 8 as the controlling image held from first line to last, Luke 4 and Luke 9 to 10, Amos 1 to 3, Philippians 1 and 4, Matthew 7:1–16, Acts 20, Hebrews 1:1–2 and 2:1. ESV wording was verified by the integrity ledger, not re-checked here, apart from the one quotation the fix above would add (1 Thessalonians 4:3), which needs that check.",
+  "Pilot reuse: the slavery-pilot phrasing in \"explained away the passages that condemned them\" is used as the anchor text for a link to that pilot, which is a fair summary, not a copied sentence. Philippians 4:13 and \"Judge not\" are familiar examples, but each is handled with specific context (Epaphroditus and the thank-you note; Matthew 7:5 and 7:16), not stock lines.",
+  "Skeptic read: the essay concedes what he would say (\"a verse lifted out of its chapter will carry almost any meaning we need\"). It gives church people the same \"Judge not\" charge it gives outsiders, and it has no altar call or manufactured urgency.",
+  "Pastor read: it can be handed to a congregation. It is generous to ordinary readers (\"A child can understand\"), names study Bibles and teaching churches as helps that serve the text, and implicates preachers first."
+ ]
+}

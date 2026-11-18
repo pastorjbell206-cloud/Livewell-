@@ -1,135 +1,102 @@
 /**
- * Answers (/answers) — the search-shaped front door for hard questions.
- * Each H2 is the reader's actual query; each answer is three tight paragraphs
- * distilled from the essay that carries the full argument, laddering
- * short answer → the essay → the book. The depth ladder in one page: nobody is
- * forced through 2,500 words to get help, and nobody who wants the 2,500 words
- * is denied them. Data lives in client/src/data/answers.ts; FAQPage JSON-LD is
- * built from the same array so search and the page can never disagree.
+ * /answers: the index of the Honest Answers. Each answer has its own page
+ * (/answers/<slug>, pages/AnswerPage.tsx); this page is the way to them: the
+ * page top, a find box that narrows the questions as you type
+ * (lib/findAnswers), and every question as a short link, grouped by what
+ * people ask (data/questionGroups.ts).
+ *
+ * Old links keep working. /answers#<slug> opens that answer's own page. With
+ * scripts off, the prerendered list (scripts/prerender-heads.mjs) gives each
+ * question's row the answer's slug as its id, so the anchor still lands on a
+ * link to it.
  */
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { Link, useLocation } from "wouter";
+import { ArrowRight, Search } from "lucide-react";
+
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import PageHead from "@/components/art/PageHead";
+import QuestionGroups from "@/components/questions/QuestionGroups";
 import { ANSWERS } from "@/data/answers";
-import { Link } from "wouter";
-import { isPublicEssay } from "@/lib/shelf";
-
-const wrap = { maxWidth: "var(--w-content)", margin: "0 auto" } as const;
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: ANSWERS.map(a => ({
-    "@type": "Question",
-    name: a.question,
-    acceptedAnswer: { "@type": "Answer", text: a.paragraphs.join(" ") },
-  })),
-};
+import { findAnswers } from "@/lib/findAnswers";
+import { answerHref } from "@/lib/askQuestion";
+import "./home/home.css";
 
 export default function Answers() {
-  // A search result or a shared link (/answers#<slug>) opens on its answer;
-  // the page arrives after the address does, so the browser cannot do it.
+  const [, navigate] = useLocation();
+  // An old link to one answer (/answers#<slug>) opens that answer's own page.
   useEffect(() => {
-    const id = window.location.hash.slice(1);
-    if (id) requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "start" }));
-  }, []);
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    if (id && ANSWERS.some((a) => a.slug === id)) navigate(answerHref(id), { replace: true });
+  }, [navigate]);
+
+  const [query, setQuery] = useState("");
+  const typed = query.trim() !== "";
+  const found = useMemo(() => (typed ? findAnswers(query).map((slug) => ANSWERS.find((a) => a.slug === slug)!) : []), [query, typed]);
 
   return (
     <Layout>
       <SEOMeta
-        title="Honest Answers to Hard Questions About Christianity"
-        description="Did the resurrection happen? Why trust the Bible? If God is good, why suffering? Straight answers from a pastor who was an atheist first, with the essay or book that goes further where one is on the site."
+        title="Hard Questions About Christianity, Answered"
+        description="Did the resurrection happen? Can you trust the Bible? Why does God allow suffering? Straight answers from a pastor who was an atheist first."
         url="https://www.livewellbyjamesbell.co/answers"
-        structuredData={faqSchema}
       />
 
-      {/* HERO */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Answers</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "22ch" }}>
-            The questions people actually ask.
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
-            Straight answers first, two minutes each. Where the full essay is on
-            the site, or a book takes the question further, it is linked beneath
-            the answer. Written by a pastor who was an atheist first, so the
-            questions get taken seriously, not managed.
-          </p>
-        </div>
-      </section>
+      <PageHead
+        door="Questions"
+        doorHref="/topics"
+        title="Honest answers to hard questions"
+        line={`${ANSWERS.length} questions people actually ask. A straight answer to each, about two minutes long.`}
+        plate="tomb"
+        width="var(--w-default)"
+      />
 
-      {/* QUESTION INDEX */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-4) var(--s-4)", borderBottom: "1px solid var(--border)" }}>
-        <div style={wrap}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-            {ANSWERS.map(a => (
-              <a
-                key={a.slug}
-                href={`#${a.slug}`}
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "13px",
-                  fontWeight: 500,
-                  color: "var(--ink)",
-                  background: "var(--card)",
-                  border: "1px solid var(--border)",
-                  borderRadius: "999px",
-                  padding: "8px 16px",
-                  textDecoration: "none",
-                }}
-              >
-                {a.question}
-              </a>
-            ))}
+      <section className="home-sec qa-index" aria-labelledby="qa-index-title">
+        <div className="home-wrap">
+          <h2 id="qa-index-title" className="sr-only">
+            The questions
+          </h2>
+          <div className="hq-find qa-index__find">
+            <label htmlFor="answers-find" className="sr-only">
+              Find a question
+            </label>
+            <input
+              id="answers-find"
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Find a question: suffering, hell"
+              autoComplete="off"
+              enterKeyHint="search"
+            />
+            <span aria-hidden="true">
+              <Search size={20} strokeWidth={1.75} />
+            </span>
           </div>
-        </div>
-      </section>
-
-      {/* THE ANSWERS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          {ANSWERS.map((a, i) => (
-            <article key={a.slug} id={a.slug} style={{ paddingTop: i === 0 ? 0 : "var(--s-5)", marginTop: i === 0 ? 0 : "var(--s-5)", borderTop: i === 0 ? "none" : "1px solid var(--border)", scrollMarginTop: "84px" }}>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.15, color: "var(--ink)", marginBottom: "18px" }}>
-                {a.question}
-              </h2>
-              {a.paragraphs.map((p, j) => (
-                <p key={j} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "14px", opacity: j === 0 ? 1 : 0.92 }}>
-                  {p}
-                </p>
-              ))}
-              {/* The depth ladder: the essay only while it is on the public
-                  shelf (lib/shelf.ts), the book when one takes the question up. */}
-              {(isPublicEssay(a.essaySlug) || (a.bookHref && a.bookTitle)) && (
-                <div style={{ background: "var(--card)", border: "1px solid var(--line)", borderLeft: "2px solid var(--mustard)", padding: "16px 20px", marginTop: "18px", display: "flex", flexDirection: "column", gap: "6px" }}>
-                  {isPublicEssay(a.essaySlug) && (
-                    <Link href={`/writing/${a.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
-                      The full essay: {a.essayTitle} →
-                    </Link>
-                  )}
-                  {a.bookHref && a.bookTitle && (
-                    <Link href={a.bookHref} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 500, color: "var(--ink-muted)", textDecoration: "none" }}>
-                      The book behind it: {a.bookTitle}
-                    </Link>
-                  )}
-                </div>
-              )}
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 28px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)", marginBottom: "18px" }}>
-            Your question is not on this page? Someone has probably asked it before,
-            and it was answered at length.
+          <p className="qa-index__count" role="status">
+            {!typed ? "" : found.length === 0 ? "No question here uses those words. Try one word." : `${found.length} of ${ANSWERS.length} questions match.`}
           </p>
-          <Link href="/theology/questions" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-            Browse every question →
-          </Link>
+          {typed ? (
+            <ul className="qa-found" aria-label="Matching questions">
+              {found.map((a) => (
+                <li key={a.slug}>
+                  <Link href={answerHref(a.slug)}>
+                    <span>{a.question}</span>
+                    <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <QuestionGroups rows={[]} all />
+          )}
+          <p className="lw-newline">
+            <Search aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              Not here? <Link href="/topics">Ask it on Hard questions</Link>, or <Link href="/theology/questions">browse every question</Link>.
+            </span>
+          </p>
         </div>
       </section>
     </Layout>

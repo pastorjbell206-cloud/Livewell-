@@ -1,6 +1,6 @@
 /**
  * The Study Bible's "Go to" field: a reference or a book opens in place, and
- * anything else says so and offers the site search.
+ * anything else is searched for in the Bible's own words.
  */
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen } from "@testing-library/react";
@@ -8,7 +8,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { GoToPassage } from "./GoToPassage";
 
 function go(q: string) {
-  fireEvent.change(screen.getByRole("textbox", { name: "Go to a passage" }), { target: { value: q } });
+  fireEvent.change(screen.getByRole("textbox", { name: "Go to a passage, or find a word" }), { target: { value: q } });
   fireEvent.click(screen.getByRole("button", { name: "Go" }));
 }
 
@@ -44,11 +44,9 @@ describe("GoToPassage", () => {
     expect(window.location.pathname + window.location.hash).toBe("/study/bible/john/3");
   });
 
-  it("says plainly when it cannot open something, and offers the site search", () => {
+  it("takes anything that is not a reference as words to find in the Bible", () => {
     render(<GoToPassage />);
-    go("grace");
-    expect(screen.getByRole("status")).toHaveTextContent("“grace” isn’t a passage this can open.");
-    expect(screen.getByRole("link", { name: "search the site for it" })).toHaveAttribute("href", "/search?q=grace");
-    expect(window.location.pathname).toBe("/");
+    go("born again");
+    expect(window.location.pathname + window.location.search).toBe("/study/bible/search?q=born%20again");
   });
 });

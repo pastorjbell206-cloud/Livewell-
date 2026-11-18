@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
+import { toolName } from "@/lib/toolsList";
 import { ToolActions } from "@/components/ToolActions";
 import { useState, useRef } from "react";
 import { Link } from "wouter";
@@ -10,6 +12,7 @@ import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 
+import FoldedNote from "@/components/FoldedNote";
 /* ── Types ─────────────────────────────────────────────────────── */
 
 interface Question {
@@ -178,7 +181,7 @@ const CATEGORIES: Category[] = [
         ],
         next: [
           { kind: "Self-check", title: "Marriage Health Self-Check", href: "/tools/marriage-assessment" },
-          { kind: "Care plan", title: "Eight Weeks Toward Each Other", href: "/plans/marriage" },
+          { kind: "Care plan", title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage" },
           { kind: "How-to", title: "How to Repair After a Blowup", href: "/how-tos/marriage-how-to-repair-after-blowup" },
         ],
       },
@@ -231,7 +234,7 @@ const CATEGORIES: Category[] = [
         ],
         next: [
           { kind: "How-to", title: "How to Raise Kids Who Own Their Faith", href: "/how-tos/parenting-how-to-raise-kids-who-own-their-faith" },
-          { kind: "Tool", title: "Parenting Stage Guide", href: "/tools/parenting-guide" },
+          { kind: "Tool", title: toolName("parenting-guide"), href: "/tools/parenting-guide" },
         ],
       },
       mid: {
@@ -245,7 +248,7 @@ const CATEGORIES: Category[] = [
         next: [
           { kind: "How-to", title: "How to Pray With Your Kids at Bedtime", href: "/how-tos/fam-how-to-pray-with-your-kids-at-bedtime" },
           { kind: "How-to", title: "How to Eat Dinner Together Again", href: "/how-tos/fam-how-to-eat-dinner-together-again" },
-          { kind: "Tool", title: "Parenting Stage Guide", href: "/tools/parenting-guide" },
+          { kind: "Tool", title: toolName("parenting-guide"), href: "/tools/parenting-guide" },
         ],
       },
       low: {
@@ -358,7 +361,7 @@ const CATEGORIES: Category[] = [
           "Make sure a will and the documents your family would need are in place, and that someone you trust knows where to find them.",
         ],
         next: [
-          { kind: "Self-check", title: "Financial Health Check", href: "/tools/financial-health" },
+          { kind: "Self-check", title: "Financial Health Self-Check", href: "/tools/financial-health" },
           { kind: "Life", title: "Why Should Christians Give Their Money Away?", href: "/life/generosity-and-the-open-hand" },
         ],
       },
@@ -371,7 +374,7 @@ const CATEGORIES: Category[] = [
           "Pick the money task you've been putting off, such as an emergency fund, a plan to pay down debt, or a will, and give it one hour this month.",
         ],
         next: [
-          { kind: "Self-check", title: "Financial Health Check", href: "/tools/financial-health" },
+          { kind: "Self-check", title: "Financial Health Self-Check", href: "/tools/financial-health" },
           { kind: "How-to", title: "How to Make a Budget That Honors God", href: "/how-tos/wm-how-to-make-a-budget-that-honors-god" },
           { kind: "How-to", title: "How to Start Giving Generously", href: "/how-tos/wm-how-to-start-giving-generously" },
         ],
@@ -880,7 +883,7 @@ export default function LifeAudit() {
   return (
     <Layout>
       <SEOMeta
-        title="Life Audit: A Self-Check Across Eight Areas of Life"
+        title="Life Self-Check: Eight Areas, 24 Questions"
         description="Twenty-four questions across eight areas of life: faith, marriage, parenting, health, money, emotions, work, and friendship. A self-check for reflection, not a diagnosis, with honest results and next steps."
         keywords="life audit, life self-check, life assessment, spiritual health, marriage, parenting, physical health, financial health, emotional health, vocation, community, Christian life"
         structuredData={{
@@ -894,75 +897,11 @@ export default function LifeAudit() {
           offers: { "@type": "Offer", price: "0" },
         }}
       />
+      <FoldedNote id="life-audit" />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Life{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Audit
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Twenty-four statements about eight parts of your life, from prayer
-            and marriage to money, work, and friendship. It takes about ten
-            minutes. Answer for how things have really been lately, not how you
-            wish they were, and if a part doesn't fit your life, such as
-            parenting when you have no children, you can set it aside.
-          </p>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "12px auto 0",
-            }}
-          >
-            This is a self-check for reflection, not a test or a diagnosis, and
-            your answers stay on this device unless you choose to leave a copy
-            with us at the end.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/life-audit" title="A quick check on eight areas of life" line="Twenty-four statements about eight parts of your life, from prayer and marriage to money, work, and friendship. It takes about ten minutes. Answer for how things have really been lately, not how you wish they were, and if a part doesn't fit your life, such as parenting when you have no children, you can set it aside." plate="compass">
+        <p className="pg-head__lede">This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device unless you choose to leave a copy with us at the end.</p>
+      </InnerHead>
 
       {/* Progress Bar */}
       {!showResults && (

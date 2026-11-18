@@ -10,6 +10,11 @@
  * the row, then the one library file that holds the devotion. Position on
  * this device (lib/familyTable): where the devotion sits in its set, the week
  * of the year when it is tonight's, and the last one done; never a streak.
+ *
+ * Part two (U21): Ask offers the age bands where a devotion has them (the
+ * choice kept on this device); a weekly devotion suggests three short nights,
+ * each a door into table mode at its first step; and some weeks end with a
+ * line for the grown-ups and the page behind tonight.
  */
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Link, useLocation, useParams, useSearch } from "wouter";
@@ -21,31 +26,35 @@ import LoadFailed from "@/components/LoadFailed";
 import { SAVE_FAILED, TakeItWithYou } from "@/components/TakeItWithYou";
 import { Position } from "@/components/study/Position";
 import { localISODate } from "@/lib/familyYear";
+import { readCatechismPlace } from "@/lib/familyCatechism";
 import {
-  catechismThisWeek,
+  catechismFor,
   devotionHref,
   lastDone,
+  nightLabel,
   placeOf,
   readFamilyProgress,
   recordDevotionDone,
+  strandOf,
   tableHref,
   tonightOn,
   weekOfYear,
   whenSaid,
+  type CatechismLine,
   type FamilyIndex,
   type FamilyIndexRow,
   type FamilyProgress,
 } from "@/lib/familyTable";
 import { trackFamilyDevotionComplete } from "@/lib/telemetry";
 import TableMode, { TableFrame } from "./TableMode";
-import { PartBody, partsOf } from "./DevotionParts";
-import { useDevotion, type Devotion } from "./useFamilyData";
+import { PartBody, nightsOf, partsOf, type AskChoice } from "./DevotionParts";
+import { useDevotion, useFamilyBand, type Devotion } from "./useFamilyData";
 
 const SITE = "https://www.livewellbyjamesbell.co";
 
-/** The devotion before and after this one in its own set. */
+/** The devotion before and after this one in its own set (or strand). */
 function neighbours(row: FamilyIndexRow, index: FamilyIndex): { prev?: FamilyIndexRow; next?: FamilyIndexRow } {
-  const same = index.devotions.filter((r) => r.kind === row.kind && r.set === row.set);
+  const same = index.devotions.filter((r) => r.kind === row.kind && r.set === row.set && strandOf(r, index)?.key === strandOf(row, index)?.key);
   const at = same.findIndex((r) => r.id === row.id);
   return { prev: same[at - 1], next: same[at + 1] };
 }
@@ -66,6 +75,7 @@ export default function DevotionPage() {
   const step = Math.max(1, Math.floor(Number(query.get("step")) || 1)) - 1;
   const [, navigate] = useLocation();
   const { state, retry } = useDevotion(id);
+  const ask = useFamilyBand();
 
   // "Before this" and "Next" keep this page mounted and only change the id:
   // start the new devotion at its top, not at the bottom where the link was.
@@ -80,6 +90,8 @@ export default function DevotionPage() {
   // server render to agree with, so both are read as the page first renders.
   const [today] = useState(() => localISODate());
   const [progress, setProgress] = useState<FamilyProgress>(() => readFamilyProgress());
+  // Remember asks the question this family is on (its own place, from question 1), not the calendar's.
+  const [place] = useState(() => readCatechismPlace());
   const [finished, setFinished] = useState<{ key: string; ok: boolean } | null>(null);
   const finishKey = `${id}|${table ? "table" : "page"}`;
   const done = finished?.key === finishKey ? { ok: finished.ok } : null;
@@ -120,7 +132,9 @@ export default function DevotionPage() {
 
   const { index, devotion } = state;
   const { row } = devotion;
-  const catechism = catechismThisWeek(index.catechism);
+  const mine = catechismFor(index.catechism, place);
+  const catechism = mine?.line ?? null;
+  const own = mine?.own ?? false;
   const meta = (
     <SEOMeta title={`${row.title}: A Family Devotion`} description={row.description} url={`${SITE}/family/devotions/${row.id}`} type="article" />
   );
@@ -132,6 +146,8 @@ export default function DevotionPage() {
         <TableMode
           devotion={devotion}
           catechism={catechism}
+          own={own}
+          ask={ask}
           step={step}
           onStepChange={(i) => navigate(`${devotionHref(row.id)}?mode=table&step=${i + 1}`, { replace: true })}
           onFinish={finish}
@@ -144,7 +160,7 @@ export default function DevotionPage() {
   return (
     <Layout>
       {meta}
-      <DevotionView devotion={devotion} index={index} catechism={catechism} today={today} progress={progress} done={done} onFinish={finish} />
+      <DevotionView devotion={devotion} index={index} catechism={catechism} own={own} ask={ask} today={today} progress={progress} done={done} onFinish={finish} />
     </Layout>
   );
 }
@@ -153,6 +169,8 @@ function DevotionView({
   devotion,
   index,
   catechism,
+  own,
+  ask,
   today,
   progress,
   done,
@@ -160,7 +178,9 @@ function DevotionView({
 }: {
   devotion: Devotion;
   index: FamilyIndex;
-  catechism: ReturnType<typeof catechismThisWeek>;
+  catechism: CatechismLine | null;
+  own: boolean;
+  ask: AskChoice;
   today: string;
   progress: FamilyProgress;
   done: { ok: boolean } | null;
@@ -176,6 +196,8 @@ function DevotionView({
   const doneTonight = progress.done.some((d) => d.id === row.id && d.date === today);
   const { prev, next } = neighbours(row, index);
   const parts = partsOf(devotion, catechism);
+  // Three short nights suit a weekly devotion; a day of a daily set is already short.
+  const nights = row.kind === "weekly" ? nightsOf(parts) : [];
 
   return (
     <div className="tb-page">
@@ -189,7 +211,7 @@ function DevotionView({
           </>
         }
         title={row.title}
-        lede={[row.label, row.passage, row.kind === "weekly" ? "About ten minutes" : null].filter(Boolean).join(" · ")}
+        lede={[nightLabel(row, today), row.passage, row.kind === "weekly" ? "About ten minutes" : null].filter(Boolean).join(" · ")}
         actions={
           <Link href={tableHref(row.id)} className="pg-action no-print">
             Start at the table
@@ -200,7 +222,7 @@ function DevotionView({
       <section className="tb-page__body" style={{ background: "var(--bone)", padding: "var(--s-3) 16px var(--s-7)" }}>
         <article className="tb-devotion print-paper">
           <p className="tb-line" style={{ margin: "0 0 var(--s-3)" }}>
-            {place && <Position current={place.current} total={place.total} unit={place.unit} of={row.kind === "weekly" ? "Weekly devotions" : setInfo?.label} />}
+            {place && <Position current={place.current} total={place.total} unit={place.unit} of={row.kind === "weekly" ? index.strands?.find((s) => s.key === row.strand)?.label ?? "Weekly devotions" : setInfo?.label} />}
             {tonight && row.kind === "weekly" && <span> · Week {weekOfYear(today)} of the year</span>}
             {lastRow && last && (
               <>
@@ -210,15 +232,40 @@ function DevotionView({
             )}
           </p>
           <TakeItWithYou title={row.title} kind="Family devotion" href={devotionHref(row.id)} summary={row.description} print />
+          {nights.length === 3 && (
+            <p className="tb-nights no-print">
+              <span>Three short nights instead of one:</span>{" "}
+              {nights.map((night, i) => (
+                <span key={night.step}>
+                  {i > 0 && "; "}
+                  <Link href={`${tableHref(row.id)}&step=${night.step}`} className="tb-nights__link">
+                    {night.label}
+                  </Link>
+                </span>
+              ))}
+              .
+            </p>
+          )}
           {parts.map((part) => (
             <section key={part.id} className="tb-section" aria-labelledby={`tb-${part.id}`}>
               <h2 id={`tb-${part.id}`} className="tb-section__title">
                 {part.title}
               </h2>
-              <PartBody part={part} devotion={devotion} catechism={catechism} />
+              <PartBody part={part} devotion={devotion} catechism={catechism} ask={ask} own={own} />
               {part.id === "read" && <ScriptureNote rendering={devotion.rendering === "bsb" ? "bsb" : "paraphrase"} />}
             </section>
           ))}
+          {row.grownups && (
+            <aside className="tb-grownups no-print" aria-labelledby="tb-grownups">
+              <p id="tb-grownups" className="tb-label">
+                For the grown-ups
+              </p>
+              <p className="tb-grownups__line">{row.grownups.line}</p>
+              <Link href={row.grownups.href} className="tb-link">
+                {row.grownups.title}
+              </Link>
+            </aside>
+          )}
           <div className="tb-done no-print">
             <button type="button" className="pg-action" onClick={onFinish}>
               We did this tonight
@@ -226,6 +273,11 @@ function DevotionView({
             <p className="tb-done__note" aria-live="polite">
               {done ? (done.ok ? "Done. This device will remember that you did this one tonight." : SAVE_FAILED) : doneTonight ? "Done tonight, on this device." : ""}
             </p>
+            {(done || doneTonight) && (
+              <Link href="/family/tonight" className="tb-link">
+                What the other nights this week hold
+              </Link>
+            )}
           </div>
           <nav className="tb-more no-print" aria-label="More family devotions">
             {prev ? (

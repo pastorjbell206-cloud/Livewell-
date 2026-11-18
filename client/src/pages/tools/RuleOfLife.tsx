@@ -8,6 +8,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { useState } from "react";
 import { Link } from "wouter";
 import { Copy, Check, RotateCcw, Sunrise, BookOpen, Moon, Users, HandHeart, HeartPulse } from "lucide-react";
@@ -210,22 +211,12 @@ export default function RuleOfLife() {
   return (
     <Layout>
       <SEOMeta
-        title="Rule of Life Builder — Build a Sustainable Rhythm of Grace"
+        title="Build a Weekly Rhythm of Prayer and Rest"
         description="A rule of life is a trellis, a few rhythms you return to so grace can reach you. Choose practices across prayer, rest, and more, and build one to keep."
         url="https://www.livewellbyjamesbell.co/tools/rule-of-life"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>A tool · Integrated Life</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "16ch" }}>
-            Build a rule of life
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            You are formed by what you repeatedly do. A rule of life is not a list of demands to fail at. It is a trellis, a few chosen rhythms you keep returning to, so that the life of God can grow up them. Choose what you can actually sustain. Begin small.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/rule-of-life" title="Build a rule of life" line="You are formed by what you repeatedly do. A rule of life is not a list of demands to fail at. It is a trellis, a few chosen rhythms you keep returning to, so that the life of God can grow up them. Choose what you can actually sustain. Begin small." plate="sundial" />
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={{ ...wrap, maxWidth: "820px" }}>

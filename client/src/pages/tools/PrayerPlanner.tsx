@@ -16,6 +16,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { ToolActions } from "@/components/ToolActions";
 import { RemindMe } from "@/components/RemindMe";
 import ScriptureNote from "@/components/ScriptureNote";
@@ -121,37 +122,23 @@ export default function PrayerPlanner() {
   return (
     <Layout>
       <SEOMeta
-        title="The Prayer Planner: Your People, Through the Week"
+        title="A Weekly Prayer List You Can Keep"
         description="A private prayer list: give each person or concern a day, see today's names, and keep a dated record of answered prayer. Stays in your browser."
         url="https://www.livewellbyjamesbell.co/tools/prayer-planner"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
-            <Link href="/help/prayer" style={{ color: "inherit" }}>Find help: prayer</Link> · A companion tool
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.4vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px" }}>
-            The Prayer Planner
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, margin: "0 0 12px", maxWidth: "60ch" }}>
-            Most of us promise to pray for someone and then forget by Thursday. Write down the people and the needs you mean to carry, give each one a day, and each day this page will hand you that day's names. When a prayer is answered, mark it, and keep the record.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.65, margin: 0, maxWidth: "60ch", opacity: 0.85 }}>
-            Everything stays in this browser and is never sent anywhere.
-          </p>
-          <RemindMe
-            title="The Prayer Planner"
-            details="Today's names are waiting on the Prayer Planner."
-            href="/tools/prayer-planner"
-            freq="DAILY"
-            count={30}
-            schedule="every day for thirty days"
-            defaultTime="morning"
-            onDark
-          />
-        </div>
-      </section>
+      <InnerHead path="/tools/prayer-planner" title="The Prayer Planner" line="Most of us promise to pray for someone and then forget by Thursday. Write down the people and the needs you mean to carry, give each one a day, and each day this page will hand you that day's names. When a prayer is answered, mark it, and keep the record." plate="sundial">
+        <p className="pg-head__lede">Everything stays in this browser and is never sent anywhere.</p>
+        <RemindMe
+          title="The Prayer Planner"
+          details="Today's names are waiting on the Prayer Planner."
+          href="/tools/prayer-planner"
+          freq="DAILY"
+          count={30}
+          schedule="every day for thirty days"
+          defaultTime="morning"
+        />
+      </InnerHead>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }} aria-labelledby="today">
         <div style={wrap}>

@@ -12,17 +12,22 @@ import path from "node:path";
 import {
   INDEX,
   ROOT,
+  bsbReading,
   buildFamilyIndex,
   opening,
   renderFamilyIndex,
   // @ts-expect-error: a plain .mjs build module without types
 } from "../scripts/lib/family-index.mjs";
 
+// @ts-expect-error: a plain .mjs build module without types
+import { quotesPassage } from "../scripts/lib/bsb.mjs";
+
 const pub = (name: string) => JSON.parse(fs.readFileSync(path.join(ROOT, "client/public", name), "utf8"));
 
 interface Row {
   id: string;
   kind: string;
+  strand?: string;
   set?: string;
   day?: number;
   href: string;
@@ -37,6 +42,8 @@ function seeded(change: (dir: string) => void): string {
   for (const f of ["family-devotions.json", "family-devotions-2.json", "family-seasonal.json", "family-catechism.json"]) {
     fs.copyFileSync(path.join(ROOT, "client/public", f), path.join(dir, f));
   }
+  // The care pages the grown-ups lines link (U21).
+  fs.cpSync(path.join(ROOT, "client/public/needs"), path.join(dir, "needs"), { recursive: true });
   change(dir);
   return root;
 }
@@ -52,7 +59,8 @@ describe("build-family-index", () => {
   it("has a row for every weekly devotion, by its frozen id, and every day of every set", () => {
     const weekly = [...pub("family-devotions.json"), ...pub("family-devotions-2.json")].map((d: { id: string }) => d.id);
     const rows: Row[] = index.devotions;
-    expect(rows.filter((r) => r.kind === "weekly").map((r) => r.id)).toEqual(weekly);
+    // The 72 Foundations rows; a live strand beside them (family-devotions-world.json) adds its own.
+    expect(rows.filter((r) => r.kind === "weekly" && (r.strand ?? "foundations") === "foundations").map((r) => r.id)).toEqual(weekly);
     const frozen: string[] = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/data/family-devotion-ids.json"), "utf8")).ids;
     for (const id of weekly) expect(frozen).toContain(id);
     const seasonal = pub("family-seasonal.json");
@@ -85,6 +93,92 @@ describe("build-family-index", () => {
     expect(opening("One short line. Two short lines here. Three is the sentence that carries the opening past ninety characters. Four.")).toBe(
       "One short line. Two short lines here. Three is the sentence that carries the opening past ninety characters.",
     );
+  });
+
+  it("names each weekly row's strand and theme group, and counts them for the library (U21)", () => {
+    const weekly = (index.devotions as Array<Row & { strand?: string; group?: string }>).filter((r) => r.kind === "weekly");
+    // Foundations first; another strand is listed only once its file is live
+    // (U11's world strand), so this holds whichever way that flag is committed.
+    const strands: Array<{ key: string; label: string; count: number }> = index.strands;
+    expect(strands[0]).toEqual({ key: "foundations", label: "Foundations", count: 72 });
+    for (const st of strands) expect(weekly.filter((r) => r.strand === st.key), st.key).toHaveLength(st.count);
+    expect(weekly.every((r) => strands.some((st) => st.key === r.strand))).toBe(true);
+    const foundations = weekly.filter((r) => r.strand === "foundations");
+    const groups: Array<{ key: string; count: number }> = index.groups;
+    expect(groups.reduce((n, g) => n + g.count, 0)).toBe(foundations.length);
+    for (const g of groups) expect(foundations.filter((r) => r.group === g.key)).toHaveLength(g.count);
+    expect(index.weekly).toBe(72);
+  });
+
+  it("carries each line for the grown-ups with the title of the care page it links", () => {
+    const withLine = (index.devotions as Array<Row & { grownups?: { line: string; href: string; title: string } }>).filter((r) => r.grownups);
+    expect(withLine.length).toBeGreaterThan(0);
+    for (const r of withLine) {
+      const slug = r.grownups!.href.replace(/^\/help\//, "");
+      const need = pub(`needs/${slug}.json`);
+      expect(need.page, r.id).toBe(true);
+      expect(r.grownups!.title, r.id).toBe(need.title);
+    }
+    expect(withLine.find((r) => r.id === "fear-and-anxiety")?.grownups?.title).toBe("I can't stop worrying");
+  });
+
+  it("refuses an unknown theme group, a grown-ups link to no page, and a devotion file no strand reads", () => {
+    const root = seeded((dir) => {
+      const list = JSON.parse(fs.readFileSync(path.join(dir, "family-devotions.json"), "utf8"));
+      list[0].group = "nowhere";
+      list[1].grownups = { line: "If this is you, start here.", href: "/help/not-a-page" };
+      fs.writeFileSync(path.join(dir, "family-devotions.json"), JSON.stringify(list));
+      fs.writeFileSync(path.join(dir, "family-devotions-recipes.json"), "[]");
+    });
+    const problems = buildFamilyIndex(root).problems.join("\n");
+    expect(problems).toMatch(/identity: group "nowhere" is not one of the library's groups/);
+    expect(problems).toMatch(/fear-and-anxiety: grownups link "\/help\/not-a-page" has no care page/);
+    expect(problems).toMatch(/family-devotions-recipes\.json: no strand reads this file/);
+  });
+
+  it("adds a new strand as its own shelf, numbered within it, and leaves out one held back", () => {
+    const first = pub("family-devotions.json")[0];
+    const world = [
+      { ...first, id: "only-christian-in-class", title: "The Only Christian in Class", group: undefined, grownups: undefined },
+      { ...first, id: "praying-for-leaders", title: "Praying for Leaders", group: undefined, grownups: undefined },
+    ];
+    const held = buildFamilyIndex(seeded((dir) => fs.writeFileSync(path.join(dir, "family-devotions-world.json"), JSON.stringify({ live: false, devotions: world }))));
+    expect(held.problems).toEqual([]);
+    expect(held.index.strands.map((s: { key: string }) => s.key)).toEqual(["foundations"]);
+    expect(held.index.devotions.some((r: Row) => r.id === "praying-for-leaders")).toBe(false);
+
+    const live = buildFamilyIndex(seeded((dir) => fs.writeFileSync(path.join(dir, "family-devotions-world.json"), JSON.stringify(world))));
+    expect(live.problems).toEqual([]);
+    expect(live.index.strands).toEqual([
+      { key: "foundations", label: "Foundations", count: 72 },
+      { key: "world", label: "The world we live in", count: 2 },
+    ]);
+    const row = live.index.devotions.find((r: Row) => r.id === "praying-for-leaders");
+    expect(row).toMatchObject({ kind: "weekly", strand: "world", n: 2 });
+    expect(live.index.weekly).toBe(72);
+  });
+
+  it("gives every day of a daily set its passage word for word from the Berean Standard Bible", () => {
+    const { index } = buildFamilyIndex();
+    const seasonal = (index.devotions as (Row & { passage: string; bsb?: string })[]).filter((r) => r.kind === "seasonal");
+    expect(seasonal.length).toBeGreaterThan(0);
+    for (const r of seasonal) {
+      expect(r.bsb, r.id).toBeTruthy();
+      expect(quotesPassage(r.bsb, r.passage), `${r.id} ${r.passage}`).toBe(true);
+      // Marks open before they close and none is left open, and no psalm heading is read aloud.
+      let depth = 0;
+      for (const ch of r.bsb!) {
+        if (ch === "“") depth++;
+        if (ch === "”") expect(--depth, r.id).toBeGreaterThanOrEqual(0);
+      }
+      expect(depth, r.id).toBe(0);
+      expect(r.bsb).not.toMatch(/^For the choirmaster/);
+    }
+    // A weekly devotion carries its Bible text in its own file, not here.
+    expect((index.devotions as (Row & { bsb?: string })[]).filter((r) => r.kind === "weekly" && r.bsb)).toEqual([]);
+    // A passage that leaves a speech open is closed where it stops; one that cannot be read gives nothing.
+    expect(bsbReading("Isaiah 40:1-3")).toMatch(/^“Comfort, comfort My people,” says your God\..*in the desert\.”$/);
+    expect(bsbReading("Hezekiah 3:16")).toBeNull();
   });
 
   it("refuses a daily set it has no address for", () => {

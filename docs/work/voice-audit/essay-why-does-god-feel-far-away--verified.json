@@ -1,0 +1,57 @@
+{
+  "piece": "why-does-god-feel-far-away",
+  "human_score": 9,
+  "voice_score": 7.5,
+  "verdict": "Second read confirms the first reader's literal checks: no forbidden language, no em-dash, no exclamation point, no hedge outside Paul's own 'perhaps', no biography or credential, and the crisis passage carries 988 and Find Help. Six small edits survive; four findings are dropped as over-editing. Nothing new was found on the second pass.",
+  "keep": [
+    {
+      "quote": "which a great many people have had",
+      "tell": "Verbal tic: one vague quantifier family ('a great many', 'a good many', 'a good deal', 'a great deal') used five times",
+      "replacement": "which plenty of people have had",
+      "severity": "should"
+    },
+    {
+      "quote": "A great deal of what got in was fear.",
+      "tell": "Same quantifier tic, fifth instance",
+      "replacement": "Much of what got in was fear.",
+      "severity": "should"
+    },
+    {
+      "quote": "and he was beside them every step of the way.",
+      "tell": "Stock devotional phrase at the essay's most important moment",
+      "replacement": "and he had been beside them all along.",
+      "severity": "should"
+    },
+    {
+      "quote": "The sense that the sky is empty is partly something we inherited, and an inheritance can be examined instead of simply obeyed.",
+      "tell": "Balanced epigram closing a paragraph that had already made its point",
+      "replacement": "The sense that the sky is empty is partly something we inherited, and we can examine it instead of simply obeying it.",
+      "severity": "should"
+    },
+    {
+      "quote": "A sixteenth-century friar, in other words, refused to spiritualize everything.",
+      "tell": "Connective filler announcing a restatement",
+      "replacement": "A sixteenth-century friar refused to spiritualize everything.",
+      "severity": "should"
+    },
+    {
+      "quote": "That event was preceded by the darkest hour in the Gospels.",
+      "tell": "Passive, Latinate essay voice opening the central section",
+      "replacement": "Before that event came the darkest hour in the Gospels.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "Schellenberg opener ('The philosopher J. L. Schellenberg has turned the skeptic's answer into a formal argument...'): naming a philosopher plainly twice in 3,700 words is not a parade; each name carries an idea, and the sentence was set by ledger correction 19. The replacement reorders for no gain.",
+    "Closing one-line paragraph ('When we leave no room for those words in our churches, we fail the people sitting in them.'): the brief asks for a short stack of plain lines at the end that turn the mirror on the reader; this is the essay's 'we' turn and it belongs where it is. Folding it into the previous line buries it.",
+    "'a marriage or a child or a diagnosis': the three items are three real kinds of unanswered prayer; cutting 'a diagnosis' removes content to fix a rhythm no reader would hear as machine-made.",
+    "'with real care': two uses of 'real' in 3,700 words is ordinary speech, not filler."
+  ],
+  "added": [],
+  "for_james": [
+    "The essay has no first-person experience in it. That is why voice scores below human: it reads as a careful pastor, not unmistakably you. One true sentence only you can supply would close the gap, most naturally at 'Anyone who has sat with a person who prayed for years to believe and could not knows it.' None was written, because it would have to be invented.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree here, and the voice document governs. The profile asks for 1,500 to 2,500 words, paragraphs of 2 to 4 sentences, a line built to be screenshotted, and a 'Monday Morning' block of three questions and one practice. This essay runs about 3,750 words in developed paragraphs with no takeaway block, which is what the voice document asks for. Nothing was edited toward the profile.",
+    "Three of the five 'a great many / a good many / a good deal' phrases stay ('A great many people who have never read Lewis', 'a good many churches', 'a good deal of evangelical church life'). If you hear them as a habit you don't have, change any of them to the word you would say.",
+    "Whether all unbelief involves suppression of the truth (Romans 1:18) and what passed between Father and Son at the cry from the cross are both left open. Both are your call."
+  ]
+}

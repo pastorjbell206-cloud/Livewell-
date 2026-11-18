@@ -1,0 +1,802 @@
+{
+ "piece": "study-guides",
+ "library": "/home/user/Livewell-/client/public/studyguides/",
+ "guides": 68,
+ "words_approx": 1630000,
+ "human_score": 4,
+ "voice_score": 4,
+ "verdict": "Two libraries share this folder. Six newer guides (youth-who-am-i, forty-days, when-our-parents-grow-old, divorce-and-blended-families, waiting-for-the-light, addiction-and-recovery) are in the mature register: contractions, paragraphs, Scripture quoted with its reference, no third-person 'Bell', help lines present. The other sixty-two were built from one template and read as machine-made in bulk: a narrator describing 'Bell' inside his own teaching (1,873 times), the editorial rulebook written into the prose (steelman, verdict, indictment, 'this platform'), his biography stamped as a credential on 49 guides, 'It is not X. It is Y.' about 1,850 times, 'honest' about 3,350 times, zero contractions, and every teaching one unbroken paragraph of 750 to 1,570 words. Mechanically the library is clean: no em-dashes, no exclamation points outside Scripture, no live Forbidden Language beyond 'the blessed life'.",
+ "what_was_read": {
+  "in_full": [
+   "money"
+  ],
+  "read_in_substantial_part": [
+   "grief",
+   "mental-health",
+   "christian-nationalism",
+   "womanhood",
+   "fatherhood",
+   "doubt",
+   "skeptic",
+   "deconstruction",
+   "economic-justice",
+   "mishpat",
+   "pastoral-health",
+   "marriage",
+   "youth-who-am-i",
+   "forty-days",
+   "when-our-parents-grow-old",
+   "divorce-and-blended-families",
+   "waiting-for-the-light",
+   "addiction-and-recovery",
+   "the-creeds",
+   "the-captive-church",
+   "manhood",
+   "anxiety",
+   "prayer",
+   "end-times",
+   "witness",
+   "identity",
+   "new-believer",
+   "the-undivided-life",
+   "sermon-on-the-mount"
+  ],
+  "note": "The brief asked for twenty guides read in full. Each guide is 20,000 to 28,000 words (the folder is about 1.6 million words), so twenty in full was more than one pass could hold. One guide was read end to end; for the other twenty-nine I read the summary, leader primer, one full or head-and-tail teaching, case study, going-deeper, an objection, the facilitator script and the promo kit. All 68 were scanned by script for every pattern below, and the counts are from all 68."
+ },
+ "pattern_counts": {
+  "third-person Bell": "1,873 uses, all 68 files; 118 of ~340 teaching fields",
+  "biography stamp (atheism / no father / five sons)": "297 mentions in 49 guides; 71 in FAQ answers, 60 in summaries, 45 in leader primers, 31 in facilitator openings, 38 in promo copy",
+  "rulebook words (steelman, verdict, indictment, self-implication, even-handed, at full strength, strongest form)": "about 950; verdict 485, at full strength 161, steelman 80, inside the indictment 66",
+  "\"is not X. It is Y.\"": "about 1,858 (27 per guide); 309 of 549 quote cards are built on a negation contrast",
+  "honest / honestly / honesty": "3,353",
+  "contractions": "zero in 60 guides",
+  "teaching as one paragraph": "61 guides; 750 to 1,570 words per paragraph",
+  "\"Come honest, not finished.\"": "77 uses in 40 guides",
+  "\"Grant all of it.\" / \"Grant the...\"": "45 / 169",
+  "\"Then the turn.\" / \"Then the reversal.\" / \"This is the hinge.\"": "48 / 49 / 21",
+  "\"Leader to confirm...\" in public bibliography": "300",
+  "em-dashes": "0",
+  "exclamation points outside Scripture": "0 (86 found, all in quoted Scripture or memory verses)",
+  "forbidden words": "0 live (\"authenticate\" and \"journeyed\" are different words or Scripture; \"the blessed life\" 4 times outside the Beatitudes guide)"
+ },
+ "most_machine_sounding": [
+  "witness",
+  "deconstruction",
+  "identity",
+  "the-undivided-life",
+  "character-before-competence",
+  "economic-justice",
+  "womanhood (session 4 teaching)",
+  "baptism-and-communion",
+  "doubt",
+  "aging-and-legacy",
+  "mishpat",
+  "resurrection"
+ ],
+ "most_his": [
+  "youth-who-am-i",
+  "forty-days",
+  "when-our-parents-grow-old",
+  "divorce-and-blended-families",
+  "waiting-for-the-light",
+  "addiction-and-recovery",
+  "fatherhood (first person, paragraphed, but no contractions and \"So here is the verdict\")"
+ ],
+ "library_wide_rules_for_the_fixer": [
+  "Never 'Bell' inside summary, teaching, objections, FAQ or scripts. In teaching, James speaks as 'I' or 'we'. In leader notes, say 'the study' or 'this session', or just say the thing.",
+  "Keep the biography in at most one place per guide (the one teaching where it bears on the subject, e.g. fatherhood session 1, prayer session 1), in his own first person, one plain sentence. Delete it from summaries, primers, FAQ, facilitator openings and all promo copy.",
+  "Delete every use of steelman/steel-man, 'inside the indictment', 'self-implication', 'even-handedness', 'this platform', 'the method is the message/mercy', and 'verdict' used of the study's own conclusion. Do the fair thing; don't name it.",
+  "Cut announced turns: 'Then the turn.', 'Then the reversal.', 'This is the hinge.', 'Grant all of it.', 'But here is what the objection misses', 'Now the verdict...'. Say the next thing.",
+  "Leave one 'not X, it is Y' per session at the real hinge; turn the rest into plain positive statements. Rebuild quote cards so most are not antithesis pairs.",
+  "'Honest' once per session at most.",
+  "Add contractions wherever the line is spoken or addressed to 'you' (facilitator script first, then teaching). Leave Scripture and prayers alone.",
+  "Break each teaching into paragraphs of roughly 100 to 160 words at its existing turns. Do not reorder.",
+  "Vary or drop the shared stamps ('Come honest, not finished.', 'Every question carries the answer behind it...', 'No, and the study is careful here.', 'It will not do that, and the leader must never let it.').",
+  "Verify each bibliography entry, then delete every 'Leader to confirm...' note.",
+  "Use the six newer guides as the model for all of the above."
+ ],
+ "ten_worst": [
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/womanhood.json",
+   "key": "sessions[3].teaching",
+   "quote": "Now let me do the thing this platform requires, which is to state each position in its strongest form, the form its own best defenders would sign, so that you cannot tell from the steelman alone where I land.",
+   "tell": "Rulebook leakage, near-verbatim from CLAUDE.md",
+   "why": "This is the editorial standard pasted into a pastor's mouth: 'this platform', 'steelman', 'the form its own defenders would sign'. No one talks to a small group this way.",
+   "replacement": "Let me state each position the way its best defenders would.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/baptism-and-communion.json",
+   "key": "sessions[1].teaching",
+   "quote": "I want to state both cases so honestly that you could not tell, from the steelman alone, where I land, and only then will I tell you, and only then will I tell you why it matters far less for our fellowship than the volume of the argument would suggest.",
+   "tell": "Rulebook leakage; 'honestly' self-certifying; doubled 'and only then will I tell you'",
+   "why": "The CLAUDE.md test for a steelman is recited as a promise to the room.",
+   "replacement": "I want to state both cases the way their own defenders would, and only then tell you where I land and why it matters far less for our fellowship than the volume of the argument would suggest.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/after-christendom.json",
+   "key": "sessions[0].teaching",
+   "quote": "So here is the verdict, and the leader must hold it cleanly all the way through the study.",
+   "tell": "Rulebook word 'verdict' plus a stage direction to the leader inside the teaching",
+   "why": "The teaching is meant to be James talking. Mid-paragraph it turns and instructs the leader. The same sentence sits in alone-in-a-crowded-church and anxiety session 1.",
+   "replacement": "So here is where this study stands.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/manhood.json",
+   "key": "sessions[1].teaching",
+   "quote": "Bell writes this session from the inside, and he says so plainly, because he was raised without a father, and a man should tell you where he is standing before he talks about a thing like this.",
+   "tell": "Third-person narrator plus biography as credential",
+   "why": "The teaching field is James speaking, yet a narrator announces what 'Bell' does and why. A human pastor says it once in his own voice and moves on.",
+   "replacement": "I was raised without a father, and you should know that before I say anything about this.",
+   "severity": "must",
+   "pattern": "P1 third-person \"Bell\" narrating James's own teaching"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/aging-and-legacy.json",
+   "key": "summary",
+   "quote": " He has five sons who will one day stand at his grave, and he writes toward that grave, not around it.",
+   "tell": "Biography dramatized into a scene; aphoristic closer",
+   "why": "Takes a confirmed fact (five sons) and builds an imagined graveside on it, then ends on a 'toward, not around' epigram. Only James can decide whether he wants his sons' future grief used as copy.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/grief.json",
+   "key": "facilitatorScript.open",
+   "quote": "I have stood at gravesides and said the right words and driven home undone.",
+   "tell": "First-person pastoral memory scripted for a volunteer to read aloud",
+   "why": "The volunteer leader is handed a pastor's experience to claim as his own. It is untrue in most mouths and sounds scripted.",
+   "replacement": "Most of us have stood at a graveside with no idea what to say.",
+   "severity": "must",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "faq[10].a",
+   "quote": "Because that is the method, and the method is the message. Bell does not stand outside this. He does not exempt himself from the arithmetic called prudence",
+   "tell": "Rulebook leakage; chiasmus slogan; third-person Bell",
+   "why": "'The method is the message' (or 'the mercy') opens the same FAQ answer in thirty-four places. It is a slogan about the editorial method.",
+   "replacement": "Because the writer does not exempt himself from the arithmetic called prudence",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/christian-nationalism.json",
+   "key": "sessions[4].teaching",
+   "quote": "Be careful and fair here. This is a contested thesis, not a closed verdict.",
+   "tell": "Self-instruction left in the prose; 'fair' self-certifying; 'verdict'",
+   "why": "'Be careful and fair here' is a note to the writer. The next sentence shows the care without it.",
+   "replacement": "This is a contested thesis.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/mishpat.json",
+   "key": "sessions[4].teaching",
+   "quote": "Not guilt, which burns out. Not politics, which corrupts. Memory.",
+   "tell": "Fragment stack",
+   "why": "'Not X. Not Y. Z.' in three fragments, followed five lines later by another ('Not because you are good. Because He was').",
+   "replacement": "Guilt burns out and politics corrupts, but memory holds.",
+   "severity": "should",
+   "pattern": "P6 aphoristic closers and fragment stacks"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/skeptic.json",
+   "key": "sessions[4].objections[1].response",
+   "quote": "This is the most honest objection of all and it deserves the most honest answer, which is to grant it almost entirely.",
+   "tell": "'Honest' twice in one sentence; announced concession",
+   "why": "The word appears about 3,350 times (deconstruction 133, witness 122). BRIEF allows one self-certifying use per piece.",
+   "replacement": "This objection is mostly right, and I'll say so.",
+   "severity": "must",
+   "pattern": "P8 \"honest\" as a self-certifying adjective"
+  }
+ ],
+ "findings": [
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/manhood.json",
+   "key": "sessions[1].teaching",
+   "quote": "Bell writes this session from the inside, and he says so plainly, because he was raised without a father, and a man should tell you where he is standing before he talks about a thing like this.",
+   "tell": "Third-person narrator plus biography as credential",
+   "why": "The teaching field is James speaking, yet a narrator announces what 'Bell' does and why. A human pastor says it once in his own voice and moves on.",
+   "replacement": "I was raised without a father, and you should know that before I say anything about this.",
+   "severity": "must",
+   "pattern": "P1 third-person \"Bell\" narrating James's own teaching"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/grief.json",
+   "key": "sessions[1].objections[0].response",
+   "quote": "Bell grants the danger is real, because there is a complaining",
+   "tell": "Third-person narrator; rulebook verb 'grants'",
+   "why": "Reads as a summary of an essay written by someone else. The leader note should just say the true thing.",
+   "replacement": "The danger is real, because there is a complaining",
+   "severity": "must",
+   "pattern": "P1 third-person \"Bell\" narrating James's own teaching"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/doubt.json",
+   "key": "sessions[1].teaching",
+   "quote": "Bell takes the atheist's conclusion seriously here and will not wave it off, because it is a real argument made by serious people.",
+   "tell": "Third-person narrator inside first-person teaching",
+   "why": "Two sentences earlier this same paragraph says 'I will not insult anyone in this room'. The voice switches from James to a commentator on James.",
+   "replacement": "I take the atheist's conclusion seriously here, because it's a real argument made by serious people.",
+   "severity": "must",
+   "pattern": "P1 third-person \"Bell\" narrating James's own teaching"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/marriage.json",
+   "key": "sessions[2].teaching",
+   "quote": "and Bell means abused in both directions at once",
+   "tell": "Third-person narrator",
+   "why": "Same switch of speaker in the first sentence of the teaching.",
+   "replacement": "and I mean abused in both directions at once",
+   "severity": "must",
+   "pattern": "P1 third-person \"Bell\" narrating James's own teaching"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/pastoral-health.json",
+   "key": "sessions[2].teaching",
+   "quote": "Bell does not write about it as a pastor immune to it.",
+   "tell": "Third-person narrator; self-implication announced, not done",
+   "why": "Announces the humility instead of showing it.",
+   "replacement": "I'm not immune to it.",
+   "severity": "must",
+   "pattern": "P1 third-person \"Bell\" narrating James's own teaching"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/the-undivided-life.json",
+   "key": "sessions[0].teaching",
+   "quote": "Start where Bell starts, with a man who believes everything",
+   "tell": "Third-person narrator",
+   "why": "Stage direction about the author inside the author's own teaching.",
+   "replacement": "Start with a man who believes everything",
+   "severity": "should",
+   "pattern": "P1 third-person \"Bell\" narrating James's own teaching"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/anger.json",
+   "key": "promoKit.inviteCaption",
+   "quote": " Written from inside the struggle, by a man who came to faith from atheism and is raising five sons, not from a safe distance above it.",
+   "tell": "Biography used as a selling point in promo copy",
+   "why": "BRIEF: use rarely, plainly, never as a credential. Here it is the sales line, and the same sentence is stamped on about forty guides.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/believe.json",
+   "key": "promoKit.bulletinBlurb",
+   "quote": " Written by a man who came to faith out of atheism.",
+   "tell": "Biography as credential",
+   "why": "The conversion is used as the reason to trust the study.",
+   "replacement": "",
+   "severity": "should",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/the-creeds.json",
+   "key": "promoKit.inviteCaption",
+   "quote": " Written by a former atheist who knows how the creeds can sound from the outside.",
+   "tell": "Biography as credential",
+   "why": "Same stamp. 'Former atheist' as a byline is a credential by definition.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/aging-and-legacy.json",
+   "key": "summary",
+   "quote": " He has five sons who will one day stand at his grave, and he writes toward that grave, not around it.",
+   "tell": "Biography dramatized into a scene; aphoristic closer",
+   "why": "Takes a confirmed fact (five sons) and builds an imagined graveside on it, then ends on a 'toward, not around' epigram. Only James can decide whether he wants his sons' future grief used as copy.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/grief.json",
+   "key": "facilitatorScript.open",
+   "quote": "I have stood at gravesides and said the right words and driven home undone.",
+   "tell": "First-person pastoral memory scripted for a volunteer to read aloud",
+   "why": "The volunteer leader is handed a pastor's experience to claim as his own. It is untrue in most mouths and sounds scripted.",
+   "replacement": "Most of us have stood at a graveside with no idea what to say.",
+   "severity": "must",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/contentment.json",
+   "key": "facilitatorScript.open",
+   "quote": "Third, the writer puts himself inside all of it, an atheist who came to faith, a man raised without a father, raising five sons, and so will we.",
+   "tell": "Biography recited as a ground rule",
+   "why": "A leader reading the author's life story as rule three of a meeting is the credential move at its plainest. Twenty-three guides open with a version of this line.",
+   "replacement": "Third, nobody here is talking about other people. We're talking about ourselves.",
+   "severity": "should",
+   "pattern": "P2 biography stamped as a credential"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/womanhood.json",
+   "key": "sessions[3].teaching",
+   "quote": "Now let me do the thing this platform requires, which is to state each position in its strongest form, the form its own best defenders would sign, so that you cannot tell from the steelman alone where I land.",
+   "tell": "Rulebook leakage, near-verbatim from CLAUDE.md",
+   "why": "This is the editorial standard pasted into a pastor's mouth: 'this platform', 'steelman', 'the form its own defenders would sign'. No one talks to a small group this way.",
+   "replacement": "Let me state each position the way its best defenders would.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/womanhood.json",
+   "key": "sessions[3].teaching",
+   "quote": "Now, where do I land, because the standard of this platform is that I tell you.",
+   "tell": "Rulebook leakage",
+   "why": "Names the rule that requires the next sentence.",
+   "replacement": "Now, where do I land.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/womanhood.json",
+   "key": "sessions[3].teaching",
+   "quote": "And now the last thing, the thing the standard of this platform demands and the thing that costs me something to write.",
+   "tell": "Rulebook leakage",
+   "why": "Same leak a third time in one teaching.",
+   "replacement": "And now the last thing, and it costs me something to write.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/baptism-and-communion.json",
+   "key": "sessions[1].teaching",
+   "quote": "I want to state both cases so honestly that you could not tell, from the steelman alone, where I land, and only then will I tell you, and only then will I tell you why it matters far less for our fellowship than the volume of the argument would suggest.",
+   "tell": "Rulebook leakage; 'honestly' self-certifying; doubled 'and only then will I tell you'",
+   "why": "The CLAUDE.md test for a steelman is recited as a promise to the room.",
+   "replacement": "I want to state both cases the way their own defenders would, and only then tell you where I land and why it matters far less for our fellowship than the volume of the argument would suggest.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/after-christendom.json",
+   "key": "sessions[0].teaching",
+   "quote": "So here is the verdict, and the leader must hold it cleanly all the way through the study.",
+   "tell": "Rulebook word 'verdict' plus a stage direction to the leader inside the teaching",
+   "why": "The teaching is meant to be James talking. Mid-paragraph it turns and instructs the leader. The same sentence sits in alone-in-a-crowded-church and anxiety session 1.",
+   "replacement": "So here is where this study stands.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/pastoral-health.json",
+   "key": "sessions[2].teaching",
+   "quote": "Now steel-man the resistance, because there is a real and good objection.",
+   "tell": "Rulebook leakage",
+   "why": "'Steel-man' is workshop jargon; it appears about eighty times across the library, including in public summaries.",
+   "replacement": "There's a real and good objection, and it should be heard first.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "faq[10].a",
+   "quote": "Because that is the method, and the method is the message. Bell does not stand outside this. He does not exempt himself from the arithmetic called prudence",
+   "tell": "Rulebook leakage; chiasmus slogan; third-person Bell",
+   "why": "'The method is the message' (or 'the mercy') opens the same FAQ answer in thirty-four places. It is a slogan about the editorial method.",
+   "replacement": "Because the writer does not exempt himself from the arithmetic called prudence",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "summary",
+   "quote": "Most of all it implicates the writer. Bell does not stand outside this.",
+   "tell": "Self-implication announced; stamp",
+   "why": "'Bell does not stand outside this' is in fifteen guides and 'inside the indictment' in sixty-six places. The next sentence ('Many of us have lain awake...') already does the work.",
+   "replacement": "None of us stands outside this.",
+   "severity": "should",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "summary",
+   "quote": " He writes from inside the indictment about money, not above it. So will you.",
+   "tell": "Rulebook word 'indictment'; stamped two-beat closer",
+   "why": "'He writes from inside the indictment. So will you.' closes the summary of guide after guide.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/fatherhood.json",
+   "key": "sessions[1].goingDeeper",
+   "quote": ", which is the discipline this platform asks for",
+   "tell": "Rulebook leakage",
+   "why": "Brand talk inside a study note.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/habits-and-formation.json",
+   "key": "sessions[1].goingDeeper",
+   "quote": "and treat it the way this platform treats all secular findings, granting that it names the symptom accurately",
+   "tell": "Rulebook leakage",
+   "why": "States the Scholarship Standard instead of applying it.",
+   "replacement": "and grant that it names the symptom accurately",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/parenting-formation.json",
+   "key": "sessions[3].goingDeeper",
+   "quote": "while doing what this platform always does with a secular source, receiving it as real common grace",
+   "tell": "Rulebook leakage",
+   "why": "Same.",
+   "replacement": "while receiving it as real common grace",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/christian-nationalism.json",
+   "key": "sessions[4].teaching",
+   "quote": "Be careful and fair here. This is a contested thesis, not a closed verdict.",
+   "tell": "Self-instruction left in the prose; 'fair' self-certifying; 'verdict'",
+   "why": "'Be careful and fair here' is a note to the writer. The next sentence shows the care without it.",
+   "replacement": "This is a contested thesis.",
+   "severity": "must",
+   "pattern": "P3 rulebook leakage (the prose describing its own method)"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[0].teaching",
+   "quote": "And then the hinge. For where your treasure is",
+   "tell": "Announced turn",
+   "why": "'Then the turn.' 'Then the reversal.' 'This is the hinge.' appear over a hundred times as one-line signposts.",
+   "replacement": "Then he says, For where your treasure is",
+   "severity": "should",
+   "pattern": "P4 announced turns and hinges"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[0].teaching",
+   "quote": "Now the verdict Jesus will not let us soften. No one can serve two masters,",
+   "tell": "Announced turn; 'verdict'",
+   "why": "Every session in this guide introduces its last Scripture with 'Then the verdict that...'. By the third it is a formula.",
+   "replacement": "Then Jesus says it flatly. No one can serve two masters,",
+   "severity": "should",
+   "pattern": "P4 announced turns and hinges"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/doubt.json",
+   "key": "sessions[1].teaching",
+   "quote": "Grant all of it. Then turn to the second face of the same problem, which is in some ways worse,",
+   "tell": "Announced concession and announced turn",
+   "why": "'Grant all of it.' is in twenty-three guides (forty-five times) and 'Grant the...' 169 times. It is the instruction to concede, not the concession.",
+   "replacement": "All of that is true. And there's a second face of the same problem, which is in some ways worse,",
+   "severity": "should",
+   "pattern": "P4 announced turns and hinges"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/end-times.json",
+   "key": "sessions[4].teaching",
+   "quote": "Hold that as true. But here is the turn, and it is everything. Being with Christ at death",
+   "tell": "Announced turn with intensifier",
+   "why": "'But here is what/where...' opens the pivot in about seventy teachings.",
+   "replacement": "That's true. But being with Christ at death",
+   "severity": "should",
+   "pattern": "P4 announced turns and hinges"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/mental-health.json",
+   "key": "sessions[0].teaching",
+   "quote": "Now watch what heaven does, because everything hinges on it.",
+   "tell": "Announced turn",
+   "why": "Tells the reader the next sentence matters. The next sentence ('God does not rebuke him.') proves it unaided.",
+   "replacement": "Look at what God does.",
+   "severity": "should",
+   "pattern": "P4 announced turns and hinges"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/grief.json",
+   "key": "sessions[1].teaching",
+   "quote": " Take the objection at full strength, because it is the pious one and it sounds right.",
+   "tell": "Rulebook leakage and announced move; also the place this 900-word single paragraph should break",
+   "why": "'At full strength' appears 161 times. The teaching is one unbroken paragraph; this is a natural break.",
+   "replacement": "\n\nThe objection is the pious one, and it sounds right.",
+   "severity": "should",
+   "pattern": "P4 announced turns and hinges"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[0].summary",
+   "quote": "The session is not about your budget. It is about the leash, and where it has already pulled your heart while you were not watching.",
+   "tell": "Third antithesis in five sentences",
+   "why": "This summary already has 'The warning is not against having treasure. It is against...' and 'Not should not. Cannot.' The pattern runs about 1,850 times in the library, five or six per session.",
+   "replacement": "The session is about the leash, and where it has already pulled your heart while you weren't watching.",
+   "severity": "should",
+   "pattern": "P5 \"It is not X. It is Y.\" as the default gait"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[3].teaching",
+   "quote": "The cure for money-anxiety is not a better spreadsheet, because the wound was never a planning failure. It was a trust failure, a forgetting of whose child you are.",
+   "tell": "Antithesis pair restating the paragraph",
+   "why": "The paragraph has made this contrast twice already.",
+   "replacement": "A better spreadsheet won't cure money-anxiety, because the wound is a failure of trust, a forgetting of whose child you are.",
+   "severity": "should",
+   "pattern": "P5 \"It is not X. It is Y.\" as the default gait"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[4].teaching",
+   "quote": " The open hand is not the cost of following Christ. It is the proof that you finally have.",
+   "tell": "Antithesis slogan as the last line of the study",
+   "why": "The long sentence before it lands the whole study on the cross. This adds a pillow line on top.",
+   "replacement": "",
+   "severity": "should",
+   "pattern": "P5 \"It is not X. It is Y.\" as the default gait"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/mental-health.json",
+   "key": "sessions[0].teaching",
+   "quote": "It is not faith. It is cruelty wearing faith's clothes, and it needs to be named as such and buried.",
+   "tell": "Antithesis plus costume metaphor",
+   "why": "'Wearing the costume of' / 'dressed as' is used 86+ times; the same line is repeated in the objection response of this session.",
+   "replacement": "That's cruelty wearing faith's clothes, and it needs to be buried.",
+   "severity": "consider",
+   "pattern": "P5 \"It is not X. It is Y.\" as the default gait"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/pastoral-health.json",
+   "key": "sessions[2].teaching",
+   "quote": " The cure for a candle is not less burning. It is becoming a branch.",
+   "tell": "Pillow-ready closer",
+   "why": "Epigram on a mixed metaphor, placed last. The sentence before it ends on the vine and the branch at rest, which is the Scripture's own image.",
+   "replacement": "",
+   "severity": "should",
+   "pattern": "P6 aphoristic closers and fragment stacks"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[2].objections[0].response",
+   "quote": " Plan for your future. Just do not forget which future is longer.",
+   "tell": "Two-beat kicker",
+   "why": "A quip ending a leader note about a man called a fool by God.",
+   "replacement": "",
+   "severity": "consider",
+   "pattern": "P6 aphoristic closers and fragment stacks"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/mishpat.json",
+   "key": "sessions[4].teaching",
+   "quote": "Not guilt, which burns out. Not politics, which corrupts. Memory.",
+   "tell": "Fragment stack",
+   "why": "'Not X. Not Y. Z.' in three fragments, followed five lines later by another ('Not because you are good. Because He was').",
+   "replacement": "Guilt burns out and politics corrupts, but memory holds.",
+   "severity": "should",
+   "pattern": "P6 aphoristic closers and fragment stacks"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/mishpat.json",
+   "key": "sessions[4].teaching",
+   "quote": "Now go do justice. Not because you are good. Because He was, and the widow is still waiting, and you know the way to the gate.",
+   "tell": "Fragment stack as the study's last line",
+   "why": "Second fragment antithesis in the same closing passage.",
+   "replacement": "Now go do justice, because He was good to you, and the widow is still waiting, and you know the way to the gate.",
+   "severity": "should",
+   "pattern": "P6 aphoristic closers and fragment stacks"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "facilitatorScript.close",
+   "quote": "We are going to stop there, even though it is not resolved, because Bell does not resolve it either and neither should we.",
+   "tell": "Read-aloud script with no contractions; third-person Bell",
+   "why": "Sixty of sixty-eight guides contain no contractions at all in roughly 1.4 million words. This line is meant to be spoken by a volunteer in a living room.",
+   "replacement": "We're going to stop there, even though it isn't resolved.",
+   "severity": "must",
+   "pattern": "P7 no contractions where a person would speak them"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/christian-nationalism.json",
+   "key": "facilitatorScript.open",
+   "quote": "We are not pointing from a safe distance. We are standing in it.",
+   "tell": "Stamp; no contractions in speech",
+   "why": "'Safe distance' appears 125 times in the library.",
+   "replacement": "We're not here to talk about other people. We're in this too.",
+   "severity": "should",
+   "pattern": "P7 no contractions where a person would speak them"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "facilitatorScript.close",
+   "quote": "Let me pray for us before we go, and then I will see you next time.",
+   "tell": "No contraction in speech",
+   "why": "Shared boilerplate in nineteen guides.",
+   "replacement": "Let me pray for us before we go, and then I'll see you next time.",
+   "severity": "should",
+   "pattern": "P7 no contractions where a person would speak them"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/skeptic.json",
+   "key": "sessions[4].objections[1].response",
+   "quote": "This is the most honest objection of all and it deserves the most honest answer, which is to grant it almost entirely.",
+   "tell": "'Honest' twice in one sentence; announced concession",
+   "why": "The word appears about 3,350 times (deconstruction 133, witness 122). BRIEF allows one self-certifying use per piece.",
+   "replacement": "This objection is mostly right, and I'll say so.",
+   "severity": "must",
+   "pattern": "P8 \"honest\" as a self-certifying adjective"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/prayer.json",
+   "key": "promoKit.inviteCaption",
+   "quote": "honest about the word Father being hard, honest about prayers that go unanswered, and it never makes prayer a performance to fail at",
+   "tell": "Self-certifying 'honest' in anaphora",
+   "why": "Promo copy that vouches for its own honesty; the same 'Honest about X, honest about Y' frame is in witness, identity and womanhood.",
+   "replacement": "for people who find the word Father hard and for people whose prayers have gone unanswered",
+   "severity": "should",
+   "pattern": "P8 \"honest\" as a self-certifying adjective"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/witness.json",
+   "key": "promoKit.inviteCaption",
+   "quote": " Honest about the fear, honest about how often the church got this wrong, and never a guilt-driven push.",
+   "tell": "Self-certifying 'honest' in anaphora",
+   "why": "Same frame.",
+   "replacement": "",
+   "severity": "should",
+   "pattern": "P8 \"honest\" as a self-certifying adjective"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/prayer.json",
+   "key": "promoKit.inviteCaption",
+   "quote": " Come honest, not finished.",
+   "tell": "Slogan stamp",
+   "why": "Seventy-seven uses in forty guides, usually twice per guide. A two-beat antithesis used as a brand tag.",
+   "replacement": "",
+   "severity": "should",
+   "pattern": "P9 identical stamps across the library"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "faq[3].a",
+   "quote": "No, and the study is careful here. Paul does not say",
+   "tell": "Stamped FAQ opener; the study praising itself",
+   "why": "The identical sentence opens faq[1] in the same guide and eleven guides in all.",
+   "replacement": "No. Paul does not say",
+   "severity": "should",
+   "pattern": "P9 identical stamps across the library"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "summary",
+   "quote": "Every question carries the answer behind it, every silence has a backup, and every session ends in prayer rather than argument.",
+   "tell": "Triplet stamp",
+   "why": "Word-for-word in most of the sixty older guides.",
+   "replacement": "Each question comes with a note for the leader, and every session ends in prayer.",
+   "severity": "consider",
+   "pattern": "P9 identical stamps across the library"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "bibliography[1].note",
+   "quote": " Leader to confirm specific claims before attributing them to the study.",
+   "tell": "Unverified-citation flag shown to readers",
+   "why": "About 300 bibliography and further-reading entries carry 'Leader to confirm...'. It tells the reader the citation was not checked. Verify the book, then remove the note.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P10 production notes left in reader-facing text"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "furtherReading[1]",
+   "quote": ", leader to confirm specific claims",
+   "tell": "Unverified-citation flag shown to readers",
+   "why": "Same.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P10 production notes left in reader-facing text"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/after-christendom.json",
+   "key": "bibliography[5].note",
+   "quote": " Leader to confirm specifics before attributing them to Bell.",
+   "tell": "Unverified-citation flag shown to readers",
+   "why": "Same.",
+   "replacement": "",
+   "severity": "must",
+   "pattern": "P10 production notes left in reader-facing text"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[1].discussion[4].behind",
+   "quote": "Close on self-implication.",
+   "tell": "Rulebook term as an instruction",
+   "why": "'Close with self-implication' 31 times, 'Move to self-implication' and variants 40 more. A volunteer does not know the term.",
+   "replacement": "End by turning the question on yourself.",
+   "severity": "should",
+   "pattern": "P11 leader-note jargon stamps"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[1].discussion[3].behind",
+   "quote": "Protect the even-handedness.",
+   "tell": "Rulebook term",
+   "why": "Thirty-plus uses.",
+   "replacement": "Keep this fair to both groups.",
+   "severity": "should",
+   "pattern": "P11 leader-note jargon stamps"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/money.json",
+   "key": "sessions[0].discussion[0].behind",
+   "quote": "Surface the default before defining anything.",
+   "tell": "Workshop jargon",
+   "why": "Opens the first leader note in most guides.",
+   "replacement": "Find out what people already assume before you define anything.",
+   "severity": "consider",
+   "pattern": "P11 leader-note jargon stamps"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/grief.json",
+   "key": "leaderPrimer",
+   "quote": "get that person to real help that same day, because a counselor is not a defeat of this study.",
+   "tell": "Crisis-facing passage with no named help line",
+   "why": "The primer names 'the despair that speaks of not wanting to live' and gives no number. BRIEF requires the 988 line where self-harm is in view. mental-health, pastoral-health and the six newer guides carry it; grief, lament, suffering, aging-and-legacy and anxiety do not.",
+   "replacement": "get that person to real help that same day (in the US, call or text 988 for the Suicide and Crisis Lifeline), because a counselor is not a defeat of this study.",
+   "severity": "must",
+   "pattern": "Crisis passages without the named path to help"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/deconstruction.json",
+   "key": "sessions[2].teaching",
+   "quote": "getting that help is not a detour from faith, it is wisdom.",
+   "tell": "Abuse by church leaders in view, no line about reporting",
+   "why": "The session describes a pastor who 'knew what a man was doing to children'. BRIEF: where abuse is in view, say abuse by a church leader should be reported to the authorities. The guide never says it.",
+   "replacement": "getting that help is not a detour from faith, it is wisdom. And abuse by a church leader should be reported to the authorities.",
+   "severity": "must",
+   "pattern": "Crisis passages without the named path to help"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/providence.json",
+   "key": "faq[9].a",
+   "quote": "That said, the study refuses at every turn",
+   "tell": "Connective filler",
+   "why": "One of three filler connectives in the library; easy to drop.",
+   "replacement": "The study refuses at every turn",
+   "severity": "consider",
+   "pattern": "Small mechanics"
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/studyguides/attention.json",
+   "key": "sessions[0].scriptureStudy[2].note",
+   "quote": "The blessed life is marked by",
+   "tell": "Forbidden Language: 'blessed' as adjective",
+   "why": "Literal-list hit (three times in attention, once in habits-and-formation). In the-beatitudes the phrase is the subject itself and can stay.",
+   "replacement": "The life Psalm 1 describes is marked by",
+   "severity": "consider",
+   "pattern": "Small mechanics"
+  }
+ ],
+ "for_james": [
+  "womanhood session 4 says in your voice, 'I land as a complementarian, but a chastened one,' and baptism-and-communion session 2 says where you land on baptism. Your own essay brief says contested second-order questions are left open and your position is not asserted. Do you want these two statements kept, reworded, or removed?",
+  "Eleven guides call themselves companions to books by you: Where Your Treasure Is, After Christendom, Alone in a Crowded Church, Consider the Birds, Character Before Competence, Deep Roots, Mishpat, Raising Believers, The Captive Church, The Undivided Life, Believe. The site's book shelf lists three titles (When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, Believe). If the other ten are not available to a reader, the tie-in lines should come out.",
+  "Your biography (came to faith from atheism, raised without a father, five sons) is on 49 guides, 297 times, mostly as a reason to trust the study. I recommend one first-person sentence in the one session where it bears on the subject and nowhere else. aging-and-legacy also imagines your sons at your grave ('five sons who will one day stand at his grave', 'who will one day bury him') in the summary, primer, facilitator script and invite caption. Only you can say whether that stays.",
+  "Three leader primers call you 'a Michigan pastor' / 'a pastor in Michigan' (christian-nationalism, church-and-empire, economic-justice). True, but outside the confirmed biography list. Keep or cut?",
+  "grief and lament give the volunteer leader first-person lines to read aloud as their own ('I have stood at gravesides and said the right words and driven home undone', 'I have prayed prayers that got no answer I could see'). Those are your memories, not theirs. If you want them in, they belong in your teaching in your voice.",
+  "About 300 bibliography and further-reading notes end 'Leader to confirm specific claims'. That means the citations were never checked. Someone needs to verify each book and what it is said to argue before the note is removed; I did not verify them.",
+  "Several case studies tell a specific story as if it happened ('A man whose daughter had died of an overdose told his grief group...', skeptic's 'a quiet woman named Helen'). The six newer guides frame theirs as 'Suppose...'. If the older ones are composites, they should say 'Suppose' too; if any are real, they need permission and disguise.",
+  "grief, lament, suffering, aging-and-legacy and anxiety speak of despair or 'not wanting to live' and point to 'real help' or 'a crisis line' without the 988 number. deconstruction, the-church and marriage discuss abuse without the line that abuse by a church leader should be reported to the authorities. I gave exact fixes for grief and deconstruction; the rest need the same line added.",
+  "Your saved Substack profile and VOICE-JAMES-BELL.md disagree in three places, and I followed VOICE-JAMES-BELL.md: the profile wants 2 to 4 sentence paragraphs and 'stacked landing lines' (the standard wants developed paragraphs and warns against one-sentence stacks); the profile wants a 'memorable line the reader screenshots' in every piece (the standard wants one earned verdict, not several attempted slogans, and the quote cards show what the first rule produces at scale); and the profile bans exclamation marks 'ever' and em-dashes only in social writing (the site allows exclamation points inside quoted Scripture and bans em-dashes everywhere).",
+  "The sixty-two older guides share one skeleton so closely that sentence fixes will not make them sound like a person. The six newer guides already do. The real decision is whether to rewrite the older sixty-two to that model a few at a time (starting with the crisis-facing ones) or to shelve the weakest until they are rewritten."
+ ],
+ "strengths": [
+  "No em-dashes anywhere, no exclamation point outside quoted Scripture, and the Forbidden Language list is effectively clean across 1.6 million words.",
+  "Political criticism runs both ways with the same instrument (christian-nationalism, the-captive-church, mishpat, economic-justice each name right and left).",
+  "The six newer guides are in the mature register and could sit beside the approved essays.",
+  "Real exegetical content under the tics: the 'therefore' linking Matthew 6:24 and 6:25 in money, Elijah fed before he is spoken to in mental-health, the order of Ephesians 5 in marriage.",
+  "The crisis lines in mental-health, pastoral-health, youth-who-am-i, when-our-parents-grow-old and addiction-and-recovery are plain and correct.",
+  "Leader primers often open with a concrete, observed hazard of the room (money: 'People in a money group do not go silent. They deflect.'), the most human writing in the older guides."
+ ]
+}

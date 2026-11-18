@@ -1,5 +1,5 @@
 /**
- * /writing on a phone: the search box sits above "Start with these" so it
+ * /writing on a phone: the search box sits above "Start with this one" so it
  * does not move while the reader types; every essay row carries the reader's
  * own Read and Saved marks; a search that finds no essay points on to the
  * site-wide search.
@@ -30,15 +30,15 @@ function row(title: string): HTMLElement {
 }
 
 describe("/writing", () => {
-  it("puts the search box above Start with these, so typing does not move it", () => {
+  it("puts the search box above the essay to start with, so typing does not move it", () => {
     renderWithProviders(<Writing />);
     const box = screen.getByRole("searchbox", { name: "Search the essays" });
-    const start = screen.getByText("Start with these");
+    const start = screen.getByText("Start with this one");
     expect(box.compareDocumentPosition(start) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
 
     const before = box.closest("section");
     fireEvent.change(box, { target: { value: "empire" } });
-    expect(screen.queryByText("Start with these")).not.toBeInTheDocument();
+    expect(screen.queryByText("Start with this one")).not.toBeInTheDocument();
     // Same box, same place: the hero it sits in did not change.
     expect(screen.getByRole("searchbox", { name: "Search the essays" })).toBe(box);
     expect(box.closest("section")).toBe(before);

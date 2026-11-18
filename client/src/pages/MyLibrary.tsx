@@ -19,6 +19,7 @@ import { Link } from "wouter";
 import { ArrowRight, Mail, Trash2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { AddToHomeScreen } from "@/components/AddToHomeScreen";
 import { SAVE_FAILED, SendButton, absoluteUrl } from "@/components/TakeItWithYou";
 import { removeFromLibrary, useLibrary, type LibraryItem } from "@/lib/library";
@@ -105,24 +106,21 @@ export default function MyLibrary() {
         noindex
       />
 
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
-            <Link href="/resources" style={{ color: "inherit" }}>Resources</Link> · My Library
-          </div>
-          <h1 ref={titleRef} tabIndex={-1} style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 20px", maxWidth: "20ch", outline: "none" }}>
-            My Library
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "60ch", margin: 0 }}>
-            Everything you've saved or started here, in one place. It lives in this browser on this device: LiveWell keeps no account and sees none of it.
-          </p>
-          {items.length > 0 && (
-            <a href={listEmail(items)} style={{ ...iconButton, marginTop: "var(--s-4)", padding: "10px 16px", border: "1px solid var(--charcoal-line)", background: "transparent", color: "var(--charcoal-fg)" }}>
+      <InnerHead
+        path="/my-library"
+        place={{ door: { name: "Tools", href: "/tools" } }}
+        title="My Library"
+        titleRef={titleRef}
+        line="Everything you've saved or started here, in one place. It lives in this browser on this device: LiveWell keeps no account and sees none of it."
+        plate="books"
+        action={
+          items.length > 0 ? (
+            <a href={listEmail(items)} className="btn btn--quiet" style={{ gap: "8px" }}>
               <Mail size={16} aria-hidden /> Email my saved list to myself
             </a>
-          )}
-        </div>
-      </section>
+          ) : undefined
+        }
+      />
 
       {nothingYet && (
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>

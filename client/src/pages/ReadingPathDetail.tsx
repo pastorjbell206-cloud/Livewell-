@@ -16,6 +16,7 @@ import { Link, Redirect, useRoute } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { getReadingPathBySlug, availableCount } from "@/lib/readingPaths";
 import { getReadEssays } from "@/lib/readProgress";
+import GuidePath, { GUIDE_PATH_SLUGS } from "@/pages/reading-paths/GuidePath";
 
 export function ReadingPathDetail() {
   const [, params] = useRoute("/reading-paths/:slug");
@@ -27,6 +28,10 @@ export function ReadingPathDetail() {
 
   // The book-guide path is a pointer to /start, not a detail page of its own.
   if (path?.externalHref) return <Redirect to={path.externalHref} />;
+
+  // The four paths of study guides (Tools, Small group study guides) live in
+  // client/public/reading-paths/index.json, not among the essay paths.
+  if (!path && (GUIDE_PATH_SLUGS as readonly string[]).includes(params?.slug ?? "")) return <GuidePath slug={params!.slug} />;
 
   if (!path) {
     return (

@@ -1,0 +1,223 @@
+{
+ "slug": "why-didnt-the-bible-ban-slavery",
+ "reads": [
+  {
+   "lens": "Last reader before publishing. I checked /home/user/livewell-land/client/public/essays/why-didnt-the-bible-ban-slavery.json against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-",
+   "findings": [
+    {
+     "where": "The Law Against Stealing People, paragraph 4 (opening sentences)",
+     "problem": "This is a plug for his own book, and it says things about the book that nobody has checked. A book tie-in is one of the tells the judges caught, and authorship of this title is not on the BRIEF/NOTES list of confirmed biography. The ledger confirms only that the book's figure 'kept a Bible on his desk' and 'believed Scripture sanctioned it'. The full manuscript is not in the repo, so nobody has seen the figure cite Exodus 21 for a master's rights or 1 Timothy for a slave's duty. Saying 'he cited' both, about a character in James's own book, breaks the integrity rule 'if unsure, leave it out or state it generally.' Quoted text: \"The slaveholder I wrote about in *The Monster in the Mirror* kept a Bible on his desk. He was a sincere man inside a community that had wrapped its conclusions in Scripture until he couldn't see what he was doing.\" ... \"in the same chapter of Exodus he cited for a master's rights. And Paul's word for menstealers sat in the same letter he cited for a slave's duty\"",
+     "fix": "Replace the first two sentences with: \"A slaveholder could keep a Bible on his desk and be sincere about it, inside a community that had wrapped its conclusions in Scripture until he couldn't see what he was doing.\" Change the later span to: \"in the same chapter of Exodus his preachers cited for a master's rights. And Paul's word for menstealers sat in the same letter they cited for a slave's duty\". The rest of the paragraph stays as written.",
+     "severity": "must"
+    },
+    {
+     "where": "The Law Against Stealing People, paragraph 3 (end)",
+     "problem": "The chronology is wrong in a way a skeptic will catch. The essay itself says only the ESV's rendering makes Exodus 21:16 reach the person who holds a stolen man. Nineteenth-century defenders read the King James text ('or if he be found in his hand'), which reads naturally as the kidnapper. Charging them with reading past the ESV's wording blames them for a translation they never had. Quoted text: \"But on the ESV's reading the verse had already answered them when it named \"anyone found in possession of him.\" They read past it.\"",
+     "fix": "On the ESV's reading, which names \"anyone found in possession of him,\" the verse had already answered them. Their own King James text was less plain on that point, and they took the narrowest reading it would bear.",
+     "severity": "should"
+    },
+    {
+     "where": "How Abolition Actually Happened, paragraph 3",
+     "problem": "This is an overclaim the ledger never checked ('general characterization, not checked'). The well-attested pattern is that preachers sent to teach slaves obedience leaned on Ephesians 6, Colossians 3 and 1 Timothy 6 and steered away from Exodus. 'Often' credits them with reading the very book the enslaved took for their own story. A historian of slave religion would object. Quoted text: \"who heard Exodus read, often by preachers hired to teach them obedience, and knew whose story it was.\"",
+     "fix": "who heard Exodus read and knew whose story it was.",
+     "severity": "should"
+    },
+    {
+     "where": "Opening section, paragraph 7",
+     "problem": "Taken together, these sentences imply Southern Baptist membership. 'I pastor a Baptist church, and Baptists don't get to...' runs straight into the 1995 SBC resolution and ends on the skeptic 'describing his own family.' A reader will take James to be Southern Baptist, which NOTES says must never be implied because it is unconfirmed. Quoted text: \"I pastor a Baptist church, and Baptists don't get to tell this story from a safe distance.\"",
+     "fix": "I pastor a Baptist church, and the men at Augusta were Baptists, so I don't get to tell this story from a safe distance.",
+     "severity": "should"
+    },
+    {
+     "where": "Opening section, paragraph 2 (last two sentences)",
+     "problem": "This is an aphoristic two-beat closer of the 'Not X. Y.' kind. It comes right after the paragraph has already landed a quip ('the church supplied both'), and 'accusation' brushes against the banned rulebook word 'indictment.' Quoted text: \"The skeptic doesn't have to invent the accusation. He only has to read.\"",
+     "fix": "Delete both sentences so the paragraph ends on \"...some of its most confident defenders were preachers with open Bibles.\"",
+     "severity": "should"
+    },
+    {
+     "where": "What We Owe the Person Asking, paragraph 1 (last sentence)",
+     "problem": "This announces the self-implication instead of doing it, which the BRIEF says he never does: 'by doing it, not by announcing it.' It is also a chiastic 'falls on X before it falls on Y' closer, and 'the charge' is a second use of the phrase after 'The New Testament repeats the charge.' The next paragraph ('Every congregation, mine included') already does the implicating. Quoted text: \"That is the charge, and it falls on us before it falls on the book.\"",
+     "fix": "Delete the sentence so the paragraph ends on \"The church had both and looked past them for a very long time.\"",
+     "severity": "should"
+    },
+    {
+     "where": "The Law Against Stealing People, paragraph 1",
+     "problem": "This is an announced turn of the same kind as the judges' 'There is one more lesson.' It also points back to a 'first problem' the essay never named as one. Quoted text: \"There's a second problem with the skeptic's question, and it does the church no credit. The question assumes that one plain sentence would have settled the matter.\"",
+     "fix": "The skeptic's question also assumes that one plain sentence would have settled the matter.",
+     "severity": "should"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 1",
+     "problem": "An announced turn, close to the caught 'Then comes the charge that stings most.' The questions that follow do the work by themselves. Quoted text: \"That still leaves the hardest form of the question standing. Granting all of this,\"",
+     "fix": "Delete the first sentence, so the section opens: \"Granting all of this, why give Israel a law that regulated slavery at all?\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 2",
+     "problem": "An announced turn ('Christians tend to forget what that sentence establishes') followed by an inverted epigram. Quoted text: \"Christians tend to forget what that sentence establishes. Not everything the law permits, God approves.\"",
+     "fix": "That sentence establishes that God doesn't approve everything the law permits.",
+     "severity": "consider"
+    },
+    {
+     "where": "Brother and Foreigner in Leviticus 25, paragraph 3",
+     "problem": "Two 'Not X. Y.' ground-clearings sit in one paragraph ('Paul doesn't issue an order there. ...' and 'This isn't a modern sensibility... It's the canon...'). CLAUDE.md allows one per movement. Keep the second, which answers the skeptic, and soften the first. Quoted text: \"Paul doesn't issue an order there. In the categories of Leviticus 25 he does something that reaches further.\"",
+     "fix": "Without issuing an order, Paul does something that reaches further in the categories of Leviticus 25.",
+     "severity": "consider"
+    },
+    {
+     "where": "Opening section, paragraph 1 (last sentence)",
+     "problem": "A Both/Both pair used as a paragraph-end closer. Quoted text: \"Both sides had Bibles, and both believed they were reading them faithfully.\"",
+     "fix": "Each side believed it was reading the Bible faithfully.",
+     "severity": "consider"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 7 (opening)",
+     "problem": "It opens with a vague framing sentence ('the pattern' has no antecedent) and then makes a sweeping 'through the whole of Scripture, God's way is' claim. Quoted text: \"But the pattern is consistent. Through the whole of Scripture, God's way is to form a people whose central story will eventually make certain things unbearable to them.\"",
+     "fix": "Again and again in Scripture, God forms a people whose central story will eventually make certain things unbearable to them.",
+     "severity": "consider"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 7",
+     "problem": "A tidy triplet whose first member doesn't fit: readers can't repeal a divine decree. A true pair is better. Quoted text: \"A decree can be repealed, ignored, or explained away, as Exodus 21:16 was.\"",
+     "fix": "A decree can be ignored or explained away, as Exodus 21:16 was.",
+     "severity": "consider"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 6 (opening)",
+     "problem": "Three stacked 'doesn't' sentences ('doesn't make the question easy... doesn't make the permission painless... doesn't give back') make an anaphora the voice standard puts on its avoid list. The first adds nothing the next two don't already say. Quoted text: \"This doesn't make the question easy. \\\"Hardness of heart\\\" explains\"",
+     "fix": "Delete \"This doesn't make the question easy.\" so the paragraph opens: \"\\\"Hardness of heart\\\" explains how a law can permit what God doesn't love.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Heading of the final section",
+     "problem": "The heading is literary rather than plain ('owe'). The BRIEF wants plain, descriptive headings. Quoted text: \"## What We Owe the Person Asking\"",
+     "fix": "## How to Answer the Question",
+     "severity": "consider"
+    },
+    {
+     "where": "Final section, second-to-last line",
+     "problem": "The pronouns are ambiguous. This line stands as its own paragraph, the skeptic is 'he' everywhere else, and 'their faith' / 'they read' can easily be taken as a singular 'they' meaning the skeptic. The antecedent (the enslaved worshipers) sits in the previous paragraph. Quoted text: \"A skeptic doesn't have to share their faith to notice that they read the book more truly than the men who owned them did.\"",
+     "fix": "A skeptic doesn't have to share the faith of those enslaved believers to notice that they read the book more truly than the men who owned them did.",
+     "severity": "consider"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 4",
+     "problem": "Read as the skeptic: Deuteronomy 23:15\u201316 is widely read as a law about slaves fleeing into Israel from foreign masters. Setting it against Hammurabi with no qualification is the very apologetic shortcut the essay warned about earlier ('this is exactly where a great deal of Christian apologetics likes to stop'). Quoted text: \"Israel's law turned that around:\"",
+     "fix": "Israel's law, which many interpreters take to mean a slave fleeing into Israel from a foreign master, turned that around:",
+     "severity": "consider"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 5",
+     "problem": "The chronology is ambiguous. The sentence sets Aristotle (4th century BC) beside the Mosaic law as if they were contemporaries. Quoted text: \"In a world where Aristotle could argue that some human beings are slaves by nature\"",
+     "fix": "In a world where, centuries later, Aristotle could still argue that some human beings are slaves by nature",
+     "severity": "consider"
+    },
+    {
+     "where": "Why the Law Permitted Slavery, paragraph 3 (after the Job 31:15 quotation)",
+     "problem": "Read as the skeptic: the brother/stranger argument in the Leviticus 25 section only stops Christians owning fellow Christians. The obvious follow-up is 'then the unbaptized could still be held,' and colonial law said exactly that. Job 31:15 closes the gap, but the essay never says so. Quoted text: \"And did not one fashion us in the womb?\\\" (Job 31:15).\"",
+     "fix": "After \"(Job 31:15).\" add one sentence: \"Job's reason doesn't depend on whether the servant is a countryman or a fellow believer.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "The Law Against Stealing People, paragraph 5",
+     "problem": "The phrase 'from the beginning' is in quotation marks with no reference attached. Its source (Matthew 19:8) only appears in the next section, and the Scholarship Standard says the reference travels with the quote. Quoted text: \"what God intended \\\"from the beginning\\\" and against\"",
+     "fix": "what God intended \"from the beginning\" (Matthew 19:8) and against",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "Forbidden words, searched literally in title, standfirst and body: delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic. Stems were included (navigat-, leverag-, transformativ-). Zero hits.",
+    "Forbidden phrases: in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community. Zero hits.",
+    "Therapy-speak: hold space, your truth, do the work, your feelings are valid / valid, lean into, showing up / show up. Zero hits.",
+    "Stamps from the BRIEF and NOTES: Those of us who preach, pastors like me, This is not both-sidesism, Consider, none of this, the record, I don't exempt myself. Zero hits. Phrases from the voice standard's own list appear once each: 'I have to be careful here' and 'Most of that is true'.",
+    "Rulebook leakage: steelman, verdict, indict-, self-implicat-, both-sides-ism. Zero hits. 'Honest' and 'fair' never appear. The one near-leak ('That is the charge... falls on us') is listed as a finding above.",
+    "Exclamation points: none anywhere.",
+    "Em-dashes: exactly one, inside the verbatim ESV quotation of Philemon 16 ('beloved brother\u2014especially'), which is allowed. En-dashes appear only in verse ranges. Semicolons appear only inside quoted Scripture. validate-no-emdash reports clean.",
+    "scripts/validate-essays.mjs, run read-only in /home/user/livewell-land, reports 'Essays: clean (5 files).'",
+    "Title is plain, in the words people search: \"Why Didn't the Bible Just Ban Slavery?\"",
+    "Standfirst/excerpt is one declarative compound sentence in the same 'X, and Y' shape as the other approved pilots' standfirsts. It is not a balanced antithesis or a template.",
+    "Headings: five of six are plain and descriptive (The Usual Answer; Brother and Foreigner in Leviticus 25; The Law Against Stealing People; Why the Law Permitted Slavery; How Abolition Actually Happened). The sixth is listed as a finding.",
+    "Biography: no title, no years in ministry, no book count, no explicit Southern Baptist membership. 'I pastor a Baptist church' and 'mine included' are confirmed facts used plainly, not as credentials. The SBC implication and the book tie-in are listed as findings.",
+    "No scholar parade. Mark Noll is the only modern scholar named with a book title, and he gets no year. Douglass, Whitefield, Edwards, Newton, Stringfellow, Gregory of Nyssa, Wilberforce and Aristotle each appear as actors in the history, not as name-drops.",
+    "Political criticism: the essay makes no contemporary partisan criticism. The historical criticism of slaveholding Christians and of minimizing apologetics comes with credit given to Enlightenment, Haitian, economic and military causes, and false symmetry is refused honestly ('on the wrong side first and for longest').",
+    "Contested second-order questions: the essay asserts none. Onesimus as a runaway is hedged ('most readers have taken'), Paul's intent in Philemon is left as a request rather than an order, and nothing needs needs_james.",
+    "Crisis-facing: not a crisis piece, so no Find Help, 988 or abuse-reporting line is required.",
+    "Ending: the final section moves from the thesis to a mirror on 'every congregation, mine included' and the questions 'Which verses does our preaching skip? And whose comfort does the skipping protect?' It then lands on Scripture (Exodus 3:7, the God who heard their cry) and the enslaved church's reading. That leaves weight rather than recapping. The one announced line is listed as a finding.",
+    "Closing Texts: three lines, each written as *\"Quote.\"* (Reference) on one line (Exodus 21:16, Job 31:15, Philemon 16), matching the house convention used in the other published essays.",
+    "Scripture: the 27 quotations were matched against an ESV copy in the ledger. I spot-checked wording against the ledger, and the published body matches the approved pilot except for two ledger-consistent wording changes ('best known'; 'Israel's neighbors, from Egypt to Mesopotamia').",
+    "Shape: 3,489 words, 35 paragraphs averaging about 95 words, mean sentence about 20 words, about 20% of sentences at 8 words or fewer. All are within or just past the BRIEF's targets, and no fragment stacks.",
+    "Links: none, which is within the BRIEF's 'two to four at most' (a ceiling, not a requirement)."
+   ]
+  },
+  {
+   "lens": "Fact audit: every checkable claim in the published essay (client/public/essays/why-didnt-the-bible-ban-slavery.json) checked against its claims ledger, the ESV copy, the site BSB, and the primary text",
+   "findings": [
+    {
+     "where": "What We Owe the Person Asking, paragraph 2: \"The slaveholders' preachers skipped Exodus 21:16.\"",
+     "problem": "(c) This is stated as fact, but primary texts the ledger's own sources contain say otherwise. Thornton Stringfellow is the Baptist defender the essay names. In \"An Examination of Elder Galusha's Reply to Dr. Richard Fuller\" (Cotton is King, GITenberg #28148, local text lines 20442 to 21108, signed by Stringfellow), he quotes the verse as the abolitionists' \"9th reference\" (\"He that stealeth a man, and selleth him, or if he be found in his hand, he shall surely be put to death.\") and then answers it. Fred. A. Ross, Slavery Ordained of God (#9171), has a section \"The Difference between Man-Stealing and Slave-Holding, as set forth in the Bible\" that opens \"The Bible reads thus: (Exodus xxi. 16:)\". They explained the verse away rather than skipping it. The essay already says this twice: \"Defenders of slavery had an answer ready\" and \"explained away, as Exodus 21:16 was\". The ledger line for this sentence is only \"Interpretive summary of the section above\", which does not support \"skipped\".",
+     "fix": "Replace with: \"The slaveholders' preachers explained Exodus 21:16 away.\" To keep the next question parallel, it may read: \"Which verses does our preaching skip or explain away?\" Add a ledger line citing Stringfellow (#28148, the Galusha examination) and Ross (#9171, the man-stealing section).",
+     "severity": "must"
+    },
+    {
+     "where": "The Law Against Stealing People, paragraph on The Monster in the Mirror: \"in the same chapter of Exodus he cited for a master's rights ... sat in the same letter he cited for a slave's duty\"",
+     "problem": "(c) The essay says the slaveholder in James's book himself cited Exodus 21 and 1 Timothy 6. The ledger does not support that. Its line 174 says only that Exodus 21 \"was cited\". The repo sources (docs/kdp/monster.md, TheMonsterInTheMirror.tsx, content/full/the-monster-in-the-mirror.md) confirm the Bible on his desk and his sincere belief that Scripture sanctioned slavery. None of them shows him citing either passage, and the manuscript is not in the repo. The general claim is sound: Stringfellow's \"The Bible Argument\" (#28148) cites \"for he is his money.\"--Exod. xxi: 20 and \"count their masters worthy of all honor\"--1 Tim. vi: 1, and Ross (#9171) cites Exodus 21:20-21.",
+     "fix": "Unless James confirms both citations from his manuscript, change the two sentences to: \"He had one, carrying the death penalty, in the same chapter of Exodus his preachers cited for a master's rights. And Paul's word for menstealers sat in the same letter they cited for a slave's duty to \"regard their own masters as worthy of all honor\" (1 Timothy 6:1).\" Add the Stringfellow and Ross citations to the ledger.",
+     "severity": "should"
+    },
+    {
+     "where": "Brother and Foreigner in Leviticus 25, paragraph 1: \"An Israelite couldn't be owned by another Israelite because he already belonged to the God who had bought him out of Egypt.\"",
+     "problem": "(a) No ledger line covers this sentence, and as worded it overstates the law. The essay itself quotes Exodus 21:2 (\"When you buy a Hebrew slave\"). Exodus 21:5-6 (ESV copy) lets a Hebrew slave become \"his slave forever\", and Deuteronomy 15:12-17 says the same. What Leviticus 25:39-40 forbids is making the brother \"serve as a slave\": he serves as a hired worker until the jubilee. A skeptic who knows Exodus 21 would catch this.",
+     "fix": "Replace with: \"Under this chapter an Israelite who sold himself to another Israelite couldn't be made to serve as a slave, because he already belonged to the God who had bought him out of Egypt.\" Add a ledger line citing ESV Leviticus 25:39-40 and 42, with Exodus 21:2-6 noted.",
+     "severity": "should"
+    },
+    {
+     "where": "The Usual Answer, paragraph 1: \"It was debt servitude in an economy with no bankruptcy court and no public relief\"",
+     "problem": "(a) The ledger records this phrase as the writer's own gloss, with no source. \"No public relief\" can be contested from the Torah itself: the gleaning laws (Leviticus 19:9-10; Deuteronomy 24:19-21), the third-year tithe for the sojourner, the fatherless and the widow (Deuteronomy 14:28-29), and the seventh-year release of debts (Deuteronomy 15:1-2).",
+     "fix": "Cut \"and no public relief\": \"It was debt servitude in an economy with no bankruptcy court, where a man who had lost everything could sell his labor to stay alive.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "The Law Against Stealing People, last paragraph: \"measured against what God intended \"from the beginning\"\"",
+     "problem": "(e) This Scripture fragment is in quotation marks but has no reference beside it. The brief requires the reference with every quotation. Matthew 19:8 is cited only in the next section. The ledger line points to it with \"see below\".",
+     "fix": "Write \"measured against what God intended \"from the beginning\" (Matthew 19:8)\", or drop the quotation marks here, since the next section quotes the verse in full with its reference.",
+     "severity": "consider"
+    },
+    {
+     "where": "Opening section, paragraph 6: \"The historian Mark Noll makes an uncomfortable point in The Civil War as a Theological Crisis ...\" (two sentences of paraphrase)",
+     "problem": "(b)/(f) Noll is a living person, and the ledger checks this paraphrase only against reviews and an interview summary, never his own pages. That falls short of CLAUDE.md's \"No secondhand authority\" rule. My three searches still did not reach his text. They returned more summaries saying the same thing, including summaries of his 1998 essay \"The Bible and Slavery\" in Religion and the American Civil War (Oxford): both sides shared a \"Reformed literalist\" reading, which gave the proslavery side the upper hand, while abolitionists moved toward \"spirit not letter\". The paraphrase is fair to him and has no quotation marks.",
+     "fix": "No text change is needed if James checks the paraphrase against Noll's chapter on the Bible in The Civil War as a Theological Crisis before publication. If he cannot, leave the paraphrase as it is, with no quotation marks added. Record the 1998 essay summaries in the ledger.",
+     "severity": "consider"
+    },
+    {
+     "where": "Excerpt/standfirst: \"the American Christians who defended slavery passed over the texts in that same Bible that condemned what they were doing.\"",
+     "problem": "(a)/(c) The standfirst has no ledger line, and \"passed over\" suggests they ignored the texts. In fact Stringfellow and Ross dealt with Exodus 21:16, and Bledsoe dealt with 1 Timothy 1:10 (Cotton is King: \"we have not undertaken to defend 'manstealers'\"). Each of them argued the verse away.",
+     "fix": "\"The Bible never bans slavery outright, and the American Christians who defended slavery explained away the texts in that same Bible that condemned what they were doing.\" Make the same change to the markdown standfirst.",
+     "severity": "consider"
+    },
+    {
+     "where": "The Law Against Stealing People: \"from the raid on the village to the auction in Charleston\" and \"bought them in Richmond from another churchgoer\"",
+     "problem": "(a) Neither place name has a ledger line. Both are now checked. Charleston: Phillips, American Negro Slavery (GITenberg #11490, local) describes slave sales \"whether by private sale or at auction\" at Charleston and quotes a 1785 Charleston advertisement for \"GOLD COAST NEGROES ... exposed to public sale\". Richmond: a web search returned Wikipedia's \"Richmond, Virginia slave market\" (the largest slave market in the Upper South in the 1840s and 1850s) and \"Shockoe Bottom\" (second only to New Orleans).",
+     "fix": "No change to the essay. Add two ledger lines with the sources above.",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "The published JSON body matches docs/work/essays/why-didnt-the-bible-ban-slavery.md word for word; only the markdown's title and standfirst header differ.",
+    "Scripture: I re-extracted every quotation followed by a reference from the published body and compared it with the ESV copy (lguenth/mdbible fd66568), both loosely and with punctuation kept. All 23 instances found that way match: Lev 25:44-46, 25:10, 25:39, 25:42, 25:46; Eph 6:5, 2:19; Exod 21:2, 21:16 (twice), 21:21, 3:7; 1 Cor 7:23; Col 3:11; 1 Tim 1:10, 6:1; Matt 19:8; Gen 1:27; Job 31:15 (twice); Deut 23:15-16, 5:14-15; Eccl 2:7. I checked Philemon 16 (body and Closing Texts), Philemon 21 and 'as well as you' (Deut 5:14) by eye; all match. The only em-dash is the ESV's own, inside Philemon 16.",
+    "Every reference points to a verse with the right sense in the site BSB (client/public/bible/ch). The paraphrased references (Lev 19:19, Deut 14:21, Deut 15:13-14, Exod 21:20, 21:26-27, Job 31:13-14) also match their verses.",
+    "Douglass: all three quotations match Gutenberg #23 word for word ('the slaveholding religion of this land' / 'no possible reference to Christianity proper'; 'We have men-stealers for ministers...'; 'impartial Christianity of Christ: I therefore hate...', colon included). All three are in the Appendix, so 'that same 1845 appendix' is correct. The only difference is that the essay drops the source's italics on 'slaveholding religion', which is acceptable.",
+    "Opening facts match the ledger: 1845 Boston imprint; seven years out of slavery in Maryland; SBC organized at Augusta in 1845; the mission boards' refusal to appoint slaveholders (Reeve, December 1844); the 1995 resolution, 150 years after Augusta.",
+    "Whitefield (Georgia campaign, Bethesda slaves, 'best-known'), Edwards (Venus, 1731) and Newton (converted 1748; mate, then captain; last voyage 1754; Thoughts, 1788) all match verified ledger lines.",
+    "Stringfellow ('best known', Virginia Baptist, building on Abraham, Leviticus 25 and Paul) matches the ledger, and the essay keeps the corrected wording from change 6.",
+    "Liberty Bell (KJV Lev 25:10 inscription; named by abolitionists in the 1830s), andrapodistes / KJV 'menstealers', Grimke's use of it, the ESV 'possession' hedge on Exod 21:16, the 1808 import ban, and the defenders who conceded the African trade (Ross, Bledsoe) all match.",
+    "Hammurabi sections 15, 16 and 19 (capital crime; eighteenth century BC), 'Israel's neighbors, from Egypt to Mesopotamia' (change 7 kept), Fugitive Slave Act section 5, Child's 'favorite New Testament argument' about Onesimus, and Aristotle's 'slaves by nature' all match.",
+    "Gregory of Nyssa ('first ... we know of', late fourth century, Eccl 2:7 homily, the price paraphrase without quotation marks), Germantown 1688 and the Golden Rule, Newton's forty years, Wilberforce (1785 conversion; 1787 diary entry as a marked paraphrase; 1789 to 1807 described as 'nearly twenty years'; July 1833 and 'three days later', change 5 kept; 'most of the British Empire'), 'Go Down, Moses', Saint-Domingue 1791 to Haiti, and the other engines of abolition all match.",
+    "Biography: 'I pastor a Baptist church' is within the NOTES rules. No title, years in ministry or book count is given, and no Southern Baptist membership is implied. The Monster in the Mirror detail (Bible on his desk, sincere) matches the repo description; the 'he cited' wording is the separate finding above.",
+    "Living persons: Mark Noll is the only one named. The paraphrase is fair to him and has no quotation marks; it is listed above only for the sourcing caveat.",
+    "Mechanics: no exclamation point anywhere, and none of the forbidden words appears.",
+    "Restorations (g): none proposed. My two searches on the Wilberforce diary wording ('God Almighty has set before me two great objects...') returned only secondary sources (sacred.omeka.net, Churchman/Bayes, comment.org, BreakPoint, Piper's 2006 book on archive.org). The 1838 Life was not reachable: archive.org, hathitrust, wikisource and gutenberg.org all failed through the proxy, and the Gutenberg catalogue has no copy. The marked paraphrase stays. No source I saw supports restoring 'most widely read' (Stringfellow) or 'Every society in the ancient Near East held slaves', so neither was reopened.",
+    "Searches used: 6 (Noll x3, Wilberforce x2, Richmond x1)."
+   ]
+  }
+ ]
+}

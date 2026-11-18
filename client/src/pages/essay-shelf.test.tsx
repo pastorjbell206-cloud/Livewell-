@@ -9,6 +9,7 @@ import { Route, Switch } from "wouter";
 import superjson from "superjson";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
+import { SHELF_ESSAYS, essayVisibility, shelfListingInput } from "@/lib/shelf";
 import Writing from "./Writing";
 import ArticleDetail from "./ArticleDetail";
 import Search from "./Search";
@@ -64,13 +65,13 @@ const row = (slug: string, title: string, createdAt: string, extra: Record<strin
 });
 
 describe("/writing", () => {
-  it("shows the shelf from the committed list before the API answers, with three to start", async () => {
+  it("shows the shelf from the committed list before the API answers, with one to start", async () => {
     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
     at("/writing");
     renderWithProviders(<Writing />);
 
     expect(screen.getByRole("heading", { level: 1, name: "Essays" })).toBeInTheDocument();
-    expect(screen.getByText("Start with these")).toBeInTheDocument();
+    expect(screen.getByText("Start with this one")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "The Mirror: How Sincere Believers Go Wrong" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "Faith and Power: Christian Nationalism and Politics" })).toBeInTheDocument();
     // Sections with nothing public yet stay hidden.
@@ -99,7 +100,7 @@ describe("/writing", () => {
     expect(await screen.findByRole("heading", { level: 2, name: "Latest" })).toBeInTheDocument();
     expect(screen.getByText("A New Essay From the Admin")).toBeInTheDocument();
     expect(screen.queryByText("The Atheist in the Pulpit")).not.toBeInTheDocument();
-    expect(screen.getByText("Why a Frightened Church Wants a King")).toBeInTheDocument();
+    expect(screen.getAllByText("Why a Frightened Church Wants a King").length).toBeGreaterThan(0);
   });
 
   it("counts a draft begun before the cutoff and published after it as Latest", async () => {
@@ -122,6 +123,34 @@ describe("/writing", () => {
     expect(screen.getByText("A Draft Finished Later")).toBeInTheDocument();
   });
 
+  it("asks the API for the shelf only, not every published row", async () => {
+    const fetchSpy = vi.fn(trpcFetch({ "posts.listPublished": [] }));
+    vi.stubGlobal("fetch", fetchSpy);
+    at("/writing");
+    renderWithProviders(<Writing />);
+
+    await waitFor(() =>
+      expect(fetchSpy.mock.calls.some(([u]) => String(u).includes("posts.listPublished"))).toBe(true)
+    );
+    const url = new URL(
+      String(fetchSpy.mock.calls.find(([u]) => String(u).includes("posts.listPublished"))![0]),
+      "http://localhost"
+    );
+    const procs = decodeURIComponent(url.pathname.slice("/api/trpc/".length)).split(",");
+    const sent = JSON.parse(url.searchParams.get("input") ?? "{}")[String(procs.indexOf("posts.listPublished"))];
+    const asked = superjson.deserialize(sent) as { slugs: string[]; since: string };
+    expect(asked).toEqual(shelfListingInput());
+    // The public shelf by slug, nothing pending or retired, and the Latest cutoff.
+    // The pending essay is read from the shelf, not named, because landing a
+    // rewrite makes a named one public.
+    const pending = SHELF_ESSAYS.filter((e) => essayVisibility(e.slug) === "pending").map((e) => e.slug);
+    expect(pending.length).toBeGreaterThan(0);
+    expect(asked.slugs).toContain("when-the-church-married-empire");
+    for (const slug of pending) expect(asked.slugs).not.toContain(slug);
+    expect(asked.slugs).not.toContain("the-atheist-in-the-pulpit");
+    expect(asked.since).toBe("2026-10-13T00:00:00.000Z");
+  });
+
   it("narrows to one section with ?section=", () => {
     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
     at("/writing?section=ancient-church");
@@ -129,7 +158,7 @@ describe("/writing", () => {
 
     expect(screen.getByRole("heading", { level: 1, name: "The Ancient Church" })).toBeInTheDocument();
     expect(screen.getByText("Women in Church History: The Voices They Silenced")).toBeInTheDocument();
-    expect(screen.queryByText("Start with these")).not.toBeInTheDocument();
+    expect(screen.queryByText("Start with this one")).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: "All essays" })).toHaveAttribute("href", "/writing");
   });
 

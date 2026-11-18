@@ -1,0 +1,65 @@
+{
+  "piece": "the-council-of-nicaea-what-was-decided-in-325",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Clean. Reads as a person who has read the sources and is thinking about them, not as a machine. Literal checks pass: no forbidden word or phrase, no em-dash, both exclamation points are inside John 20:28, no title, years, book count or denomination claim beyond the allowed 'I pastor a Baptist church', criticism lands on right and left in the same paragraph, headings are plain. Six small findings, none 'must': one muddled comparison in the opening, one slogan closer, one stock metaphor, one reply to an objection the essay never voiced, one loose 'Arius sounds sensible', and a date-led chronicle run. Voice is 8 rather than 10 only because the long historical middle could be any careful historian; it becomes unmistakably his from the banquet scene on.",
+  "findings": [
+    {
+      "quote": "That question matters to ordinary faith more than most people expect, and Constantine's first instinct, that this was a quarrel over words, sounds a good deal more like many American Christians than anything the bishops said.",
+      "tell": "Vague framing sentence with a comparison that does not parse",
+      "why": "An instinct is compared to 'many American Christians' and then to 'anything the bishops said'; the two halves of the comparison are different kinds of thing. A reader has to rebuild the sentence to get the point, which is the essay's thesis.",
+      "replacement": "That question matters to ordinary faith more than most people expect. And many American Christians sound a good deal more like Constantine, who took it for a quarrel over words, than like the bishops.",
+      "severity": "should"
+    },
+    {
+      "quote": "Some resisted *homoousios* because they feared it erased the difference between the Father and the Son. The history is messier than the Sunday school version.",
+      "tell": "Paragraph ends by restating itself as a slogan",
+      "why": "The paragraph has just shown the mess with Hanson and the non-Arian 'Arians'. The closer adds nothing and 'the Sunday school version' is a stock phrase.",
+      "replacement": "Some resisted *homoousios* because they feared it erased the difference between the Father and the Son.",
+      "severity": "should"
+    },
+    {
+      "quote": "And if anyone bent the gospel to fit Greek philosophy, Arius is at least as easy to accuse.",
+      "tell": "Answers an objection the essay never stated",
+      "why": "The Case Against section raises the emperor, the unscriptural word, the lost writings, the winners' histories and Ehrman. It never raises Greek philosophy, so this paragraph answers a charge out of nowhere; it reads like a point carried in from an outline.",
+      "replacement": "People also say a Greek word like that bent the gospel to fit philosophy. If anyone did that, Arius is at least as easy to accuse.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The tide turned with Theodosius.",
+      "tell": "Stock metaphor where he would use a plain phrase",
+      "why": "The surrounding prose is plain ('The emperor's favor did not stay put'); 'the tide turned' is the one ready-made phrase in the section.",
+      "replacement": "Theodosius changed that.",
+      "severity": "consider"
+    },
+    {
+      "quote": "To them Arius sounds sensible. In the 320s plenty of bishops thought so too.",
+      "tell": "Loose logic and repeated wording",
+      "why": "The Americans just described have never heard of Arius, so he cannot sound like anything to them; and 'sounds sensible' follows 'still sounds reasonable' four sentences earlier.",
+      "replacement": "Arius would make sense to them. In the 320s he made sense to plenty of bishops too.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Athanasius became bishop of Alexandria in 328. In 335 a council at Tyre deposed him, and Constantine sent him into exile at Trier, in Gaul.",
+      "tell": "Run of date-led sentences of the same medium length",
+      "why": "The paragraph is six chronicle sentences in a row, each opening on a date or a name. It is the one place the essay reads like a reference entry.",
+      "replacement": "Athanasius became bishop of Alexandria in 328, and in 335 a council at Tyre deposed him and Constantine sent him into exile at Trier, in Gaul.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The frame is earned: Constantine's 'truly idle question' opens the essay and returns as 'Of all the documents in this story, Constantine's letter sounds most like us.'",
+    "Arius gets his real case, in his own words and with his own proof texts, before anyone answers him.",
+    "'Most of those charges hold.' The concession to the skeptic is plain and specific, and the reply uses evidence (the palace favored Nicaea's opponents for decades).",
+    "The essay refuses the triumphant version twice: the emperor's letter on the Jews, and 'The law that enforced it was something else.'",
+    "Self-implication is done, not announced: 'Jesus the example is easier to preach than God come down to save us, because an example asks only for effort.'",
+    "Sources work as witnesses; each historian is dated and placed (Socrates a century later, Philostorgius on Arius's side), and Hanson and Ehrman each carry an idea.",
+    "Contractions appear where speech would have them (isn't, shouldn't, hasn't), and the ending lands on John 1 without a recap."
+  ],
+  "for_james": [
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree, and I followed VOICE-JAMES-BELL.md. The profile asks for 1,500 to 2,500 words, paragraphs of two to four sentences, a 'Monday Morning' block of three questions and one practice, a screenshot line, and no exclamation marks ever. This essay runs about 3,700 words in developed paragraphs, ends without an application box, and keeps the exclamation in Thomas's words (John 20:28) because it is verbatim Scripture.",
+    "The essay is yours from the banquet scene onward; the historical middle could be any careful historian. The one thing that would close that gap is a real memory only you can supply. The Case Against Nicaea section is the natural place: if, as an atheist, you once believed that Constantine invented the divinity of Jesus, one plain sentence saying so would do it. Nothing has been invented, and nothing should be.",
+    "'A carpenter makes a table ... A father begets a son' follows the making-and-begetting illustration C. S. Lewis uses in Mere Christianity (his example is a statue, not a table). The wording is not his, but you may want to credit him or keep it as is.",
+    "'I pastor a Baptist church' is the essay's only biographical line. It is used to put your own tradition under the argument, not as a credential, so I left it."
+  ]
+}

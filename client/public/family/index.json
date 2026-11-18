@@ -1,6 +1,50 @@
 {
   "about": "Written by scripts/build-family-index.mjs from the family libraries in client/public. Do not edit by hand.",
   "weekly": 72,
+  "strands": [
+    {
+      "key": "foundations",
+      "label": "Foundations",
+      "count": 72
+    }
+  ],
+  "groups": [
+    {
+      "key": "god",
+      "label": "Who God is",
+      "count": 9
+    },
+    {
+      "key": "story",
+      "label": "The big story",
+      "count": 9
+    },
+    {
+      "key": "following",
+      "label": "Following Jesus",
+      "count": 13
+    },
+    {
+      "key": "character",
+      "label": "Growing in character",
+      "count": 14
+    },
+    {
+      "key": "others",
+      "label": "Living with other people",
+      "count": 10
+    },
+    {
+      "key": "feelings",
+      "label": "Hard days and big feelings",
+      "count": 9
+    },
+    {
+      "key": "everyday",
+      "label": "Work, rest, and what we have",
+      "count": 8
+    }
+  ],
   "sets": {
     "thanksgiving": {
       "slug": "thanksgiving",
@@ -23,8 +67,10 @@
       "id": "identity",
       "kind": "weekly",
       "n": 1,
-      "title": "Made On Purpose",
+      "strand": "foundations",
+      "title": "Made on Purpose",
       "theme": "Who God Says You Are",
+      "group": "feelings",
       "passage": "Psalm 139:13-14",
       "href": "/study/bible/psalms/139#v13",
       "file": "/family-devotions.json",
@@ -34,41 +80,54 @@
       "id": "fear-and-anxiety",
       "kind": "weekly",
       "n": 2,
-      "title": "When The Lights Go Out",
+      "strand": "foundations",
+      "title": "When the Lights Go Out",
       "theme": "Fear And Anxiety",
+      "group": "feelings",
       "passage": "Psalm 56:3-4",
       "href": "/study/bible/psalms/56#v3",
       "file": "/family-devotions.json",
-      "description": "Being scared is not a sin or a failure. The verse does not say if I am afraid, it says when."
+      "description": "Being scared is not a sin or a failure. The verse doesn't say if I am afraid, it says when.",
+      "grownups": {
+        "line": "If worry keeps you awake after the children are asleep, start here.",
+        "href": "/help/anxiety",
+        "title": "I can't stop worrying"
+      }
     },
     {
       "id": "forgiveness",
       "kind": "weekly",
       "n": 3,
+      "strand": "foundations",
       "title": "The Weight You Put Down",
       "theme": "Forgiveness",
+      "group": "others",
       "passage": "Ephesians 4:32",
       "href": "/study/bible/ephesians/4#v32",
       "file": "/family-devotions.json",
-      "description": "Forgiving someone is not saying what they did was okay. It is choosing to stop making them pay for it."
+      "description": "Forgiving someone is not saying what they did was okay. It's choosing to stop making them pay for it."
     },
     {
       "id": "gratitude",
       "kind": "weekly",
       "n": 4,
+      "strand": "foundations",
       "title": "Counting What You Already Have",
       "theme": "Gratitude",
+      "group": "everyday",
       "passage": "1 Thessalonians 5:18",
       "href": "/study/bible/1-thessalonians/5#v18",
       "file": "/family-devotions.json",
-      "description": "Thankful people are not the ones with the most stuff. They are the ones who actually notice what they have."
+      "description": "Thankful people aren't the ones with the most stuff. They're the ones who notice what they have."
     },
     {
       "id": "kindness-to-the-outsider",
       "kind": "weekly",
       "n": 5,
+      "strand": "foundations",
       "title": "The Empty Seat",
       "theme": "Kindness To Outsiders",
+      "group": "others",
       "passage": "Luke 14:13-14",
       "href": "/study/bible/luke/14#v13",
       "file": "/family-devotions.json",
@@ -78,8 +137,10 @@
       "id": "obedience",
       "kind": "weekly",
       "n": 6,
+      "strand": "foundations",
       "title": "Why, Not Just What",
       "theme": "Obedience And Heart",
+      "group": "following",
       "passage": "1 Samuel 16:7",
       "href": "/study/bible/1-samuel/16#v7",
       "file": "/family-devotions.json",
@@ -89,52 +150,77 @@
       "id": "who-is-jesus",
       "kind": "weekly",
       "n": 7,
-      "title": "More Than A Good Teacher",
+      "strand": "foundations",
+      "title": "More Than a Good Teacher",
       "theme": "Who Jesus Is",
+      "group": "god",
       "passage": "Colossians 1:15-16",
       "href": "/study/bible/colossians/1#v15",
       "file": "/family-devotions.json",
-      "description": "Jesus is not just a kind man from history. He is God you can actually see."
+      "description": "Jesus is more than a kind man from history. He is God you can see."
     },
     {
       "id": "why-we-pray",
       "kind": "weekly",
       "n": 8,
-      "title": "Talking To Someone Who Is There",
+      "strand": "foundations",
+      "title": "Talking to Someone Who Is There",
       "theme": "Why We Pray",
+      "group": "following",
       "passage": "Matthew 6:6",
       "href": "/study/bible/matthew/6#v6",
       "file": "/family-devotions.json",
-      "description": "Prayer is not magic words. It is talking to a Father who is actually listening."
+      "description": "When you pray, you're talking to a Father who is listening.",
+      "grownups": {
+        "line": "If praying with your children comes easier than praying on your own, start here.",
+        "href": "/help/prayer",
+        "title": "I don't know how to pray"
+      }
     },
     {
       "id": "is-the-bible-true",
       "kind": "weekly",
       "n": 9,
-      "title": "Can We Trust This Book",
+      "strand": "foundations",
+      "title": "Can We Trust This Book?",
       "theme": "Is The Bible True",
+      "group": "following",
       "passage": "2 Timothy 3:16-17",
       "href": "/study/bible/2-timothy/3#v16",
       "file": "/family-devotions.json",
-      "description": "The Bible is not a book of made up stories. It is one long true story that has held up under hard questions for a very long time."
+      "description": "The Bible is one long true story that has held up under hard questions for a very long time.",
+      "grownups": {
+        "line": "If you're not sure how you would answer tonight's question yourself, start here.",
+        "href": "/help/trust-the-bible",
+        "title": "Can I trust the Bible?"
+      }
     },
     {
       "id": "handling-anger",
       "kind": "weekly",
       "n": 10,
-      "title": "What To Do With The Fire",
+      "strand": "foundations",
+      "title": "What to Do with the Fire",
       "theme": "Handling Anger",
+      "group": "feelings",
       "passage": "James 1:19-20",
       "href": "/study/bible/james/1#v19",
       "file": "/family-devotions.json",
-      "description": "Anger is not always wrong, but it makes a terrible boss."
+      "description": "Anger isn't always wrong, but it makes a terrible boss.",
+      "grownups": {
+        "line": "If your own temper frightens you or the people you live with, start here.",
+        "href": "/help/anger",
+        "title": "I can't control my anger"
+      }
     },
     {
       "id": "screens-and-attention",
       "kind": "weekly",
       "n": 11,
+      "strand": "foundations",
       "title": "Where Your Eyes Go",
       "theme": "Screens And Attention",
+      "group": "feelings",
       "passage": "Philippians 4:8",
       "href": "/study/bible/philippians/4#v8",
       "file": "/family-devotions.json",
@@ -144,30 +230,41 @@
       "id": "serving-others",
       "kind": "weekly",
       "n": 12,
-      "title": "The Towel And The Basin",
+      "strand": "foundations",
+      "title": "The Towel and the Basin",
       "theme": "Serving Others",
+      "group": "others",
       "passage": "Mark 10:45",
       "href": "/study/bible/mark/10#v45",
       "file": "/family-devotions.json",
-      "description": "In God's family, the great ones are not the ones being waited on. They are the ones doing the serving."
+      "description": "In God's family, the great ones aren't the ones being waited on. They're the ones doing the serving."
     },
     {
       "id": "faith",
       "kind": "weekly",
       "n": 13,
+      "strand": "foundations",
       "title": "Walking Before You See",
       "theme": "Faith",
+      "group": "following",
       "passage": "Hebrews 11:1",
       "href": "/study/bible/hebrews/11#v1",
       "file": "/family-devotions-2.json",
-      "description": "Faith is trusting Someone enough to take the next step before you can see the whole staircase."
+      "description": "Faith is trusting Someone enough to take the next step before you can see the whole staircase.",
+      "grownups": {
+        "line": "If you're leading your family while carrying doubts of your own, start here.",
+        "href": "/help/doubt",
+        "title": "I'm not sure I believe anymore"
+      }
     },
     {
       "id": "hope",
       "kind": "weekly",
       "n": 14,
-      "title": "An Anchor In The Storm",
+      "strand": "foundations",
+      "title": "An Anchor in the Storm",
       "theme": "Hope",
+      "group": "feelings",
       "passage": "Hebrews 6:19",
       "href": "/study/bible/hebrews/6#v19",
       "file": "/family-devotions-2.json",
@@ -177,8 +274,10 @@
       "id": "love",
       "kind": "weekly",
       "n": 15,
+      "strand": "foundations",
       "title": "Love That Costs Something",
       "theme": "Love",
+      "group": "character",
       "passage": "1 John 3:18",
       "href": "/study/bible/1-john/3#v18",
       "file": "/family-devotions-2.json",
@@ -188,8 +287,10 @@
       "id": "patience",
       "kind": "weekly",
       "n": 16,
+      "strand": "foundations",
       "title": "The Slow Growing Things",
       "theme": "Patience",
+      "group": "character",
       "passage": "James 5:7",
       "href": "/study/bible/james/5#v7",
       "file": "/family-devotions-2.json",
@@ -199,19 +300,23 @@
       "id": "self-control",
       "kind": "weekly",
       "n": 17,
-      "title": "The City With No Walls",
+      "strand": "foundations",
+      "title": "The City with No Walls",
       "theme": "Self Control",
+      "group": "character",
       "passage": "Proverbs 25:28",
       "href": "/study/bible/proverbs/25#v28",
       "file": "/family-devotions-2.json",
-      "description": "Self control is being strong enough to choose what you do instead of just reacting, and there is nothing boring about that kind of strength."
+      "description": "Self-control is being strong enough to choose what you do instead of just reacting."
     },
     {
       "id": "honesty",
       "kind": "weekly",
       "n": 18,
-      "title": "Nothing To Hide",
+      "strand": "foundations",
+      "title": "Nothing to Hide",
       "theme": "Honesty",
+      "group": "character",
       "passage": "Proverbs 12:22",
       "href": "/study/bible/proverbs/12#v22",
       "file": "/family-devotions-2.json",
@@ -221,8 +326,10 @@
       "id": "generosity",
       "kind": "weekly",
       "n": 19,
+      "strand": "foundations",
       "title": "Open Hands",
       "theme": "Generosity",
+      "group": "everyday",
       "passage": "2 Corinthians 9:7",
       "href": "/study/bible/2-corinthians/9#v7",
       "file": "/family-devotions-2.json",
@@ -232,41 +339,49 @@
       "id": "humility",
       "kind": "weekly",
       "n": 20,
+      "strand": "foundations",
       "title": "The Lowest Seat",
       "theme": "Humility",
+      "group": "character",
       "passage": "Philippians 2:3",
       "href": "/study/bible/philippians/2#v3",
       "file": "/family-devotions-2.json",
-      "description": "A humble person does not need to be noticed, which leaves them free to notice everyone else."
+      "description": "A humble person doesn't need to be noticed, which leaves them free to notice everyone else."
     },
     {
       "id": "courage",
       "kind": "weekly",
       "n": 21,
+      "strand": "foundations",
       "title": "Brave Is Not Fearless",
       "theme": "Courage",
+      "group": "character",
       "passage": "Joshua 1:9",
       "href": "/study/bible/joshua/1#v9",
       "file": "/family-devotions-2.json",
-      "description": "You can be afraid and still do the right thing, because God goes with you. That is what courage is."
+      "description": "You can be afraid and still do the right thing, because God goes with you. That's what courage is."
     },
     {
       "id": "contentment",
       "kind": "weekly",
       "n": 22,
+      "strand": "foundations",
       "title": "Enough Right Here",
       "theme": "Contentment",
+      "group": "everyday",
       "passage": "Philippians 4:11-12",
       "href": "/study/bible/philippians/4#v11",
       "file": "/family-devotions-2.json",
-      "description": "Contentment is a thing you learn, not a thing you are born with."
+      "description": "Contentment is a thing you learn, not a thing you're born with."
     },
     {
       "id": "friendship",
       "kind": "weekly",
       "n": 23,
+      "strand": "foundations",
       "title": "The Friend Who Stays",
       "theme": "Friendship",
+      "group": "others",
       "passage": "Proverbs 17:17",
       "href": "/study/bible/proverbs/17#v17",
       "file": "/family-devotions-2.json",
@@ -276,8 +391,10 @@
       "id": "work",
       "kind": "weekly",
       "n": 24,
-      "title": "Working For The Right Boss",
+      "strand": "foundations",
+      "title": "Working for the Right Boss",
       "theme": "Work",
+      "group": "everyday",
       "passage": "Colossians 3:23-24",
       "href": "/study/bible/colossians/3#v23",
       "file": "/family-devotions-2.json",
@@ -287,19 +404,28 @@
       "id": "rest-and-sabbath",
       "kind": "weekly",
       "n": 25,
-      "title": "Permission To Stop",
+      "strand": "foundations",
+      "title": "Permission to Stop",
       "theme": "Rest And Sabbath",
+      "group": "everyday",
       "passage": "Mark 2:27",
       "href": "/study/bible/mark/2#v27",
       "file": "/family-devotions-2.json",
-      "description": "God built rest into the week on purpose, because He made us to need it."
+      "description": "God built rest into the week on purpose, because He made us to need it.",
+      "grownups": {
+        "line": "If you're the one in your house who never stops, start here.",
+        "href": "/help/work-burnout",
+        "title": "I'm burned out at work"
+      }
     },
     {
       "id": "caring-for-creation",
       "kind": "weekly",
       "n": 26,
-      "title": "Taking Care Of The Garden",
+      "strand": "foundations",
+      "title": "Taking Care of the Garden",
       "theme": "Caring For Creation",
+      "group": "everyday",
       "passage": "Genesis 2:15",
       "href": "/study/bible/genesis/2#v15",
       "file": "/family-devotions-2.json",
@@ -309,19 +435,28 @@
       "id": "the-church",
       "kind": "weekly",
       "n": 27,
-      "title": "Not A Building",
+      "strand": "foundations",
+      "title": "Not a Building",
       "theme": "The Church",
+      "group": "following",
       "passage": "1 Corinthians 12:27",
       "href": "/study/bible/1-corinthians/12#v27",
       "file": "/family-devotions-2.json",
-      "description": "The church is people who belong to each other, long before it is a building you go to."
+      "description": "The church is people who belong to each other, long before it's a building you go to.",
+      "grownups": {
+        "line": "If a church has hurt you and it's hard to bring your children back, start here.",
+        "href": "/help/church-hurt",
+        "title": "The church hurt me"
+      }
     },
     {
       "id": "the-lords-supper",
       "kind": "weekly",
       "n": 28,
+      "strand": "foundations",
       "title": "The Meal That Remembers",
       "theme": "The Lord's Supper",
+      "group": "following",
       "passage": "Luke 22:19",
       "href": "/study/bible/luke/22#v19",
       "file": "/family-devotions-2.json",
@@ -331,19 +466,28 @@
       "id": "heaven",
       "kind": "weekly",
       "n": 29,
+      "strand": "foundations",
       "title": "Every Sad Thing Undone",
       "theme": "Heaven",
+      "group": "story",
       "passage": "Revelation 21:4",
       "href": "/study/bible/revelation/21#v4",
       "file": "/family-devotions-2.json",
-      "description": "Heaven is not floating on clouds. It is the day God makes everything that is broken right again."
+      "description": "Heaven isn't floating on clouds. It's the day God makes everything that is broken right again.",
+      "grownups": {
+        "line": "If you're grieving someone you love, start here.",
+        "href": "/help/grief",
+        "title": "Someone I love has died"
+      }
     },
     {
       "id": "the-cross",
       "kind": "weekly",
       "n": 30,
-      "title": "What Love Was Willing To Do",
+      "strand": "foundations",
+      "title": "What Love Was Willing to Do",
       "theme": "The Cross",
+      "group": "story",
       "passage": "Romans 5:8",
       "href": "/study/bible/romans/5#v8",
       "file": "/family-devotions-2.json",
@@ -353,8 +497,10 @@
       "id": "the-empty-tomb",
       "kind": "weekly",
       "n": 31,
+      "strand": "foundations",
       "title": "The Stone Was Moved",
       "theme": "The Empty Tomb",
+      "group": "story",
       "passage": "Matthew 28:6",
       "href": "/study/bible/matthew/28#v6",
       "file": "/family-devotions-2.json",
@@ -364,8 +510,10 @@
       "id": "the-holy-spirit",
       "kind": "weekly",
       "n": 32,
+      "strand": "foundations",
       "title": "God Who Lives Close",
       "theme": "The Holy Spirit",
+      "group": "god",
       "passage": "John 14:16-17",
       "href": "/study/bible/john/14#v16",
       "file": "/family-devotions-2.json",
@@ -375,8 +523,10 @@
       "id": "worship",
       "kind": "weekly",
       "n": 33,
+      "strand": "foundations",
       "title": "What You Are Made Of",
       "theme": "Worship",
+      "group": "following",
       "passage": "Psalm 95:6",
       "href": "/study/bible/psalms/95#v6",
       "file": "/family-devotions-2.json",
@@ -386,8 +536,10 @@
       "id": "grace",
       "kind": "weekly",
       "n": 34,
+      "strand": "foundations",
       "title": "The Gift You Cannot Earn",
       "theme": "Grace",
+      "group": "god",
       "passage": "Ephesians 2:8-9",
       "href": "/study/bible/ephesians/2#v8",
       "file": "/family-devotions-2.json",
@@ -397,8 +549,10 @@
       "id": "repentance",
       "kind": "weekly",
       "n": 35,
+      "strand": "foundations",
       "title": "Turning Around",
       "theme": "Repentance",
+      "group": "following",
       "passage": "Acts 3:19-20",
       "href": "/study/bible/acts/3#v19",
       "file": "/family-devotions-2.json",
@@ -408,8 +562,10 @@
       "id": "mercy",
       "kind": "weekly",
       "n": 36,
+      "strand": "foundations",
       "title": "Not Getting What You Deserve",
       "theme": "Mercy",
+      "group": "others",
       "passage": "Micah 6:8",
       "href": "/study/bible/micah/6#v8",
       "file": "/family-devotions-2.json",
@@ -419,8 +575,10 @@
       "id": "justice-and-the-poor",
       "kind": "weekly",
       "n": 37,
+      "strand": "foundations",
       "title": "Whose Voice Gets Heard",
       "theme": "Justice And The Poor",
+      "group": "others",
       "passage": "Proverbs 31:8-9",
       "href": "/study/bible/proverbs/31#v8",
       "file": "/family-devotions-2.json",
@@ -430,19 +588,23 @@
       "id": "loving-your-enemies",
       "kind": "weekly",
       "n": 38,
+      "strand": "foundations",
       "title": "The Hardest Love",
       "theme": "Loving Your Enemies",
+      "group": "others",
       "passage": "Matthew 5:44-45",
       "href": "/study/bible/matthew/5#v44",
       "file": "/family-devotions-2.json",
-      "description": "Anyone can love the people who are nice to them. Jesus calls us to love even the people who are not."
+      "description": "Anyone can love the people who are nice to them. Jesus calls us to love even the people who aren't."
     },
     {
       "id": "the-words-we-say",
       "kind": "weekly",
       "n": 39,
-      "title": "Small But Powerful",
+      "strand": "foundations",
+      "title": "Small but Powerful",
       "theme": "The Words We Say",
+      "group": "others",
       "passage": "James 3:5",
       "href": "/study/bible/james/3#v5",
       "file": "/family-devotions-2.json",
@@ -452,8 +614,10 @@
       "id": "jealousy-and-comparison",
       "kind": "weekly",
       "n": 40,
-      "title": "The Thief Of Glad",
+      "strand": "foundations",
+      "title": "The Thief of Glad",
       "theme": "Jealousy And Comparison",
+      "group": "feelings",
       "passage": "Galatians 6:4",
       "href": "/study/bible/galatians/6#v4",
       "file": "/family-devotions-2.json",
@@ -463,8 +627,10 @@
       "id": "the-fear-of-the-lord",
       "kind": "weekly",
       "n": 41,
-      "title": "The Right Kind Of Awe",
+      "strand": "foundations",
+      "title": "The Right Kind of Awe",
       "theme": "The Fear Of The Lord",
+      "group": "god",
       "passage": "Proverbs 9:10",
       "href": "/study/bible/proverbs/9#v10",
       "file": "/family-devotions-2.json",
@@ -474,8 +640,10 @@
       "id": "wisdom",
       "kind": "weekly",
       "n": 42,
+      "strand": "foundations",
       "title": "More Than Being Smart",
       "theme": "Wisdom",
+      "group": "character",
       "passage": "James 1:5",
       "href": "/study/bible/james/1#v5",
       "file": "/family-devotions-2.json",
@@ -485,19 +653,28 @@
       "id": "suffering",
       "kind": "weekly",
       "n": 43,
+      "strand": "foundations",
       "title": "When It Really Hurts",
       "theme": "Suffering",
+      "group": "feelings",
       "passage": "Romans 8:28",
       "href": "/study/bible/romans/8#v28",
       "file": "/family-devotions-2.json",
-      "description": "God does not waste our pain. He can bring good even out of the hard things."
+      "description": "God does not waste our pain. He can bring good even out of the hard things.",
+      "grownups": {
+        "line": "If your children's questions about pain are your questions too, start here.",
+        "href": "/help/suffering",
+        "title": "Why would God let this happen?"
+      }
     },
     {
       "id": "waiting-on-god",
       "kind": "weekly",
       "n": 44,
-      "title": "Strength In The Waiting",
+      "strand": "foundations",
+      "title": "Strength in the Waiting",
       "theme": "Waiting On God",
+      "group": "feelings",
       "passage": "Isaiah 40:31",
       "href": "/study/bible/isaiah/40#v31",
       "file": "/family-devotions-2.json",
@@ -507,41 +684,49 @@
       "id": "gods-faithfulness",
       "kind": "weekly",
       "n": 45,
+      "strand": "foundations",
       "title": "He Keeps His Word",
       "theme": "God's Faithfulness",
+      "group": "god",
       "passage": "Lamentations 3:22-23",
       "href": "/study/bible/lamentations/3#v22",
       "file": "/family-devotions-2.json",
-      "description": "God's love does not run out, and His mercy is new every single morning."
+      "description": "God's love does not run out, and His mercy is new every morning."
     },
     {
       "id": "the-armor-of-god",
       "kind": "weekly",
       "n": 46,
-      "title": "Dressed For The Day",
+      "strand": "foundations",
+      "title": "Dressed for the Day",
       "theme": "The Armor Of God",
+      "group": "following",
       "passage": "Ephesians 6:11",
       "href": "/study/bible/ephesians/6#v11",
       "file": "/family-devotions-2.json",
-      "description": "There is a real struggle between good and evil, and God gives us everything we need to stand strong."
+      "description": "There's a real struggle between good and evil, and God gives us everything we need to stand strong."
     },
     {
       "id": "the-fruit-of-the-spirit",
       "kind": "weekly",
       "n": 47,
-      "title": "What Grows On The Tree",
+      "strand": "foundations",
+      "title": "What Grows on the Tree",
       "theme": "The Fruit Of The Spirit",
+      "group": "character",
       "passage": "Galatians 5:22-23",
       "href": "/study/bible/galatians/5#v22",
       "file": "/family-devotions-2.json",
-      "description": "Good character grows in you when the Spirit is at work, like fruit on a tree, and no one has ever forced a tree to bear."
+      "description": "Good character grows in you when the Spirit is at work, like fruit on a tree."
     },
     {
       "id": "the-beatitudes",
       "kind": "weekly",
       "n": 48,
+      "strand": "foundations",
       "title": "Upside Down Happy",
       "theme": "The Beatitudes",
+      "group": "character",
       "passage": "Matthew 5:3-4",
       "href": "/study/bible/matthew/5#v3",
       "file": "/family-devotions-2.json",
@@ -551,63 +736,80 @@
       "id": "the-good-shepherd",
       "kind": "weekly",
       "n": 49,
+      "strand": "foundations",
       "title": "The One Who Comes Looking",
       "theme": "The Good Shepherd",
+      "group": "god",
       "passage": "John 10:11",
       "href": "/study/bible/john/10#v11",
       "file": "/family-devotions-2.json",
-      "description": "Jesus is a shepherd who leads us and would die to keep us safe, and a shepherd does not drive his sheep from behind."
+      "description": "Jesus is a shepherd who leads us and would die to keep us safe."
     },
     {
       "id": "the-prodigal-son",
       "kind": "weekly",
       "n": 50,
+      "strand": "foundations",
       "title": "The Father Who Runs",
       "theme": "The Prodigal Son",
+      "group": "god",
       "passage": "Luke 15:20",
       "href": "/study/bible/luke/15#v20",
       "file": "/family-devotions-2.json",
-      "description": "No matter how far you have run from God, He is already looking down the road for you."
+      "description": "No matter how far you've run from God, He is already looking down the road for you."
     },
     {
       "id": "the-image-of-god",
       "kind": "weekly",
       "n": 51,
+      "strand": "foundations",
       "title": "Everyone You Meet",
       "theme": "The Image Of God",
+      "group": "others",
       "passage": "Genesis 1:27",
       "href": "/study/bible/genesis/1#v27",
       "file": "/family-devotions-2.json",
-      "description": "Every single person you meet carries the image of God, so every single person matters."
+      "description": "Every person you meet carries the image of God, so every person matters."
     },
     {
       "id": "being-sent",
       "kind": "weekly",
       "n": 52,
-      "title": "You Are Not Just A Keeper",
+      "strand": "foundations",
+      "title": "You Are Not Just a Keeper",
       "theme": "Being Sent",
+      "group": "following",
       "passage": "Matthew 28:19-20",
       "href": "/study/bible/matthew/28#v19",
       "file": "/family-devotions-2.json",
-      "description": "God does not just want us to keep the good news to ourselves. He sends us out to share it."
+      "description": "God doesn't just want us to keep the good news to ourselves. He sends us out to share it."
     },
     {
       "id": "when-someone-hurts-you",
       "kind": "weekly",
       "n": 53,
+      "strand": "foundations",
       "title": "When Someone Hurts You",
       "theme": "Forgiveness",
+      "group": "others",
       "passage": "Colossians 3:13",
       "href": "/study/bible/colossians/3#v13",
       "file": "/family-devotions-2.json",
-      "description": "Forgiving someone means you hand the debt to God instead of making them pay, and it never says that what they did was okay."
+      "description": "Forgiving someone means you hand the debt to God instead of making them pay. You are not saying that what they did was okay.",
+      "grownups": {
+        "line": "If there's a wrong you haven't been able to forgive, start here.",
+        "href": "/help/cant-forgive",
+        "title": "I can't forgive them"
+      }
     },
     {
       "id": "thankfulness",
       "kind": "weekly",
       "n": 54,
-      "title": "The Cure For A Grumpy Heart",
+      "strand": "foundations",
+      "title": "The Cure for a Grumpy Heart",
       "theme": "Thankfulness",
+      "group": "everyday",
       "passage": "1 Thessalonians 5:18",
       "href": "/study/bible/1-thessalonians/5#v18",
       "file": "/family-devotions-2.json",
@@ -617,8 +819,10 @@
       "id": "prayer",
       "kind": "weekly",
       "n": 55,
-      "title": "Talking With God",
+      "strand": "foundations",
+      "title": "Talking with God",
       "theme": "Prayer",
+      "group": "following",
       "passage": "Matthew 7:7",
       "href": "/study/bible/matthew/7#v7",
       "file": "/family-devotions-2.json",
@@ -628,19 +832,28 @@
       "id": "the-bible",
       "kind": "weekly",
       "n": 56,
-      "title": "A Light For The Path",
+      "strand": "foundations",
+      "title": "A Light for the Path",
       "theme": "God's Word",
+      "group": "following",
       "passage": "Psalm 119:105",
       "href": "/study/bible/psalms/119#v105",
       "file": "/family-devotions-2.json",
-      "description": "The Bible is how God talks to us. It is a light that shows us the way to go."
+      "description": "The Bible is how God talks to us. It's a light that shows us the way to go.",
+      "grownups": {
+        "line": "If you want to read the Bible for yourself and don't know where to begin, start here.",
+        "href": "/help/reading-the-bible",
+        "title": "Where do I start reading the Bible?"
+      }
     },
     {
       "id": "trusting-enough-to-obey",
       "kind": "weekly",
       "n": 57,
-      "title": "Trusting Enough To Obey",
+      "strand": "foundations",
+      "title": "Trusting Enough to Obey",
       "theme": "Obedience",
+      "group": "following",
       "passage": "John 14:15",
       "href": "/study/bible/john/14#v15",
       "file": "/family-devotions-2.json",
@@ -650,52 +863,62 @@
       "id": "kindness",
       "kind": "weekly",
       "n": 58,
-      "title": "Small Things With Great Love",
+      "strand": "foundations",
+      "title": "Small Things with Great Love",
       "theme": "Kindness",
+      "group": "character",
       "passage": "Ephesians 4:32",
       "href": "/study/bible/ephesians/4#v32",
       "file": "/family-devotions-2.json",
-      "description": "Kindness is love you can see. It is noticing other people and doing the small good thing."
+      "description": "Kindness is love you can see. It's noticing other people and doing the small good thing."
     },
     {
       "id": "joy",
       "kind": "weekly",
       "n": 59,
+      "strand": "foundations",
       "title": "A Happiness That Holds",
       "theme": "Joy",
+      "group": "character",
       "passage": "Nehemiah 8:10",
       "href": "/study/bible/nehemiah/8#v10",
       "file": "/family-devotions-2.json",
-      "description": "Joy is deeper than happy feelings. It is a settled gladness that comes from belonging to God, even on hard days."
+      "description": "Joy is deeper than happy feelings. It's a settled gladness that comes from belonging to God, even on hard days."
     },
     {
       "id": "peace",
       "kind": "weekly",
       "n": 60,
+      "strand": "foundations",
       "title": "When Your Heart Is Worried",
       "theme": "Peace",
+      "group": "feelings",
       "passage": "John 14:27",
       "href": "/study/bible/john/14#v27",
       "file": "/family-devotions-2.json",
-      "description": "Jesus gives a peace that does not wait for the problems to go away, because it rests on him and not on them."
+      "description": "Jesus gives a peace that doesn't wait for the problems to go away, because it rests on him and not on them."
     },
     {
       "id": "the-trinity",
       "kind": "weekly",
       "n": 61,
-      "title": "Three And Yet One",
+      "strand": "foundations",
+      "title": "Three and Yet One",
       "theme": "The Trinity",
+      "group": "god",
       "passage": "Matthew 28:19-20",
       "href": "/study/bible/matthew/28#v19",
       "file": "/family-devotions-2.json",
-      "description": "There is one God who lives forever as Father, Son, and Holy Spirit, three persons who have always loved each other."
+      "description": "There's one God who lives forever as Father, Son, and Holy Spirit, three persons who have always loved each other."
     },
     {
       "id": "creation",
       "kind": "weekly",
       "n": 62,
+      "strand": "foundations",
       "title": "God Called It Good",
       "theme": "Creation",
+      "group": "story",
       "passage": "Genesis 1:1",
       "href": "/study/bible/genesis/1#v1",
       "file": "/family-devotions-2.json",
@@ -705,8 +928,10 @@
       "id": "the-fall",
       "kind": "weekly",
       "n": 63,
+      "strand": "foundations",
       "title": "How It All Went Wrong",
       "theme": "The Fall",
+      "group": "story",
       "passage": "Genesis 3:6",
       "href": "/study/bible/genesis/3#v6",
       "file": "/family-devotions-2.json",
@@ -716,8 +941,10 @@
       "id": "gods-promises",
       "kind": "weekly",
       "n": 64,
+      "strand": "foundations",
       "title": "The God Who Keeps His Word",
       "theme": "God's Promises",
+      "group": "god",
       "passage": "Joshua 21:45",
       "href": "/study/bible/joshua/21#v45",
       "file": "/family-devotions-2.json",
@@ -727,8 +954,10 @@
       "id": "the-incarnation",
       "kind": "weekly",
       "n": 65,
+      "strand": "foundations",
       "title": "God Came Close",
       "theme": "The Incarnation",
+      "group": "story",
       "passage": "John 1:14",
       "href": "/study/bible/john/1#v14",
       "file": "/family-devotions-2.json",
@@ -738,8 +967,10 @@
       "id": "the-miracles-of-jesus",
       "kind": "weekly",
       "n": 66,
-      "title": "A Glimpse Of The Mender",
+      "strand": "foundations",
+      "title": "A Glimpse of the Mender",
       "theme": "The Miracles Of Jesus",
+      "group": "story",
       "passage": "Matthew 11:5",
       "href": "/study/bible/matthew/11#v5",
       "file": "/family-devotions-2.json",
@@ -749,8 +980,10 @@
       "id": "the-second-coming",
       "kind": "weekly",
       "n": 67,
+      "strand": "foundations",
       "title": "He Is Coming Back",
       "theme": "The Second Coming",
+      "group": "story",
       "passage": "Acts 1:11",
       "href": "/study/bible/acts/1#v11",
       "file": "/family-devotions-2.json",
@@ -760,8 +993,10 @@
       "id": "the-new-creation",
       "kind": "weekly",
       "n": 68,
+      "strand": "foundations",
       "title": "Everything New Again",
       "theme": "The New Creation",
+      "group": "story",
       "passage": "Revelation 21:5",
       "href": "/study/bible/revelation/21#v5",
       "file": "/family-devotions-2.json",
@@ -771,19 +1006,23 @@
       "id": "gentleness",
       "kind": "weekly",
       "n": 69,
-      "title": "Strong Enough To Be Gentle",
+      "strand": "foundations",
+      "title": "Strong Enough to Be Gentle",
       "theme": "Gentleness",
+      "group": "character",
       "passage": "Philippians 4:5",
       "href": "/study/bible/philippians/4#v5",
       "file": "/family-devotions-2.json",
-      "description": "Gentleness is strength that chooses to be careful with people, and it takes more strength than shoving does."
+      "description": "Gentleness is strength that chooses to be careful with people."
     },
     {
       "id": "goodness",
       "kind": "weekly",
       "n": 70,
-      "title": "Good All The Way Through",
+      "strand": "foundations",
+      "title": "Good All the Way Through",
       "theme": "Goodness",
+      "group": "character",
       "passage": "Galatians 6:9",
       "href": "/study/bible/galatians/6#v9",
       "file": "/family-devotions-2.json",
@@ -793,8 +1032,10 @@
       "id": "perseverance",
       "kind": "weekly",
       "n": 71,
+      "strand": "foundations",
       "title": "Keep Going",
       "theme": "Perseverance",
+      "group": "character",
       "passage": "Hebrews 12:1",
       "href": "/study/bible/hebrews/12#v1",
       "file": "/family-devotions-2.json",
@@ -804,12 +1045,19 @@
       "id": "stewardship",
       "kind": "weekly",
       "n": 72,
-      "title": "Taking Care Of What Is Not Yours",
+      "strand": "foundations",
+      "title": "Taking Care of What Is Not Yours",
       "theme": "Stewardship",
+      "group": "everyday",
       "passage": "1 Corinthians 4:2",
       "href": "/study/bible/1-corinthians/4#v2",
       "file": "/family-devotions-2.json",
-      "description": "Everything we have is really God's, given to us to take care of well, not to use up however we please."
+      "description": "Everything we have is really God's, given to us to take care of well, not to use up however we please.",
+      "grownups": {
+        "line": "If money is a worry in your house, start here.",
+        "href": "/help/money",
+        "title": "Money is a weight on me"
+      }
     },
     {
       "id": "thanksgiving-1",
@@ -821,7 +1069,8 @@
       "passage": "Deuteronomy 8:10-14",
       "href": "/study/bible/deuteronomy/8#v10",
       "file": "/family-seasonal.json",
-      "description": "Moses said this to people who had eaten manna in the desert for forty years, one day's food at a time, and were about to sit down at full tables of their own."
+      "description": "Moses said this to people who had eaten manna in the desert for forty years, one day's food at a time, and were about to sit down at full tables of their own.",
+      "bsb": "When you eat and are satisfied, you are to bless the LORD your God for the good land that He has given you. Be careful not to forget the LORD your God by failing to keep His commandments and ordinances and statutes, which I am giving you this day. Otherwise, when you eat and are satisfied, when you build fine houses in which to dwell, and when your herds and flocks grow large and your silver and gold increase and all that you have is multiplied, then your heart will become proud, and you will forget the LORD your God who brought you out of the land of Egypt, out of the house of slavery."
     },
     {
       "id": "thanksgiving-2",
@@ -833,7 +1082,8 @@
       "passage": "Luke 17:14-18",
       "href": "/study/bible/luke/17#v14",
       "file": "/family-seasonal.json",
-      "description": "Leprosy meant living apart from everyone, even your own family. These men could only call to Jesus from a distance."
+      "description": "Leprosy meant living apart from everyone, even your own family. These men could only call to Jesus from a distance.",
+      "bsb": "When Jesus saw them, He said, “Go, show yourselves to the priests.” And as they were on their way, they were cleansed. When one of them saw that he was healed, he came back, praising God in a loud voice. He fell facedown at Jesus’ feet in thanksgiving to Him—and he was a Samaritan. “Were not all ten cleansed?” Jesus asked. “Where then are the other nine? Was no one found except this foreigner to return and give glory to God?”"
     },
     {
       "id": "thanksgiving-3",
@@ -845,7 +1095,8 @@
       "passage": "1 Thessalonians 5:16-18",
       "href": "/study/bible/1-thessalonians/5#v16",
       "file": "/family-seasonal.json",
-      "description": "Paul wrote this to a young church that was suffering for following Jesus. He knew how hard things were for them."
+      "description": "Paul wrote this to a young church that was suffering for following Jesus. He knew how hard things were for them.",
+      "bsb": "Rejoice at all times. Pray without ceasing. Give thanks in every circumstance, for this is God’s will for you in Christ Jesus."
     },
     {
       "id": "thanksgiving-4",
@@ -857,7 +1108,8 @@
       "passage": "Habakkuk 3:17-18",
       "href": "/study/bible/habakkuk/3#v17",
       "file": "/family-seasonal.json",
-      "description": "Habakkuk wrote this knowing an army was coming, and the verse before says his whole body shook with fear."
+      "description": "Habakkuk wrote this knowing an army was coming, and the verse before says his whole body shook with fear.",
+      "bsb": "Though the fig tree does not bud and no fruit is on the vines, though the olive crop fails and the fields produce no food, though the sheep are cut off from the fold and no cattle are in the stalls, yet I will exult in the LORD; I will rejoice in the God of my salvation!"
     },
     {
       "id": "thanksgiving-5",
@@ -869,7 +1121,8 @@
       "passage": "Luke 14:12-14",
       "href": "/study/bible/luke/14#v12",
       "file": "/family-seasonal.json",
-      "description": "Most of us make guest lists the way Jesus describes: friends, family, people who will ask us back."
+      "description": "Most of us make guest lists the way Jesus describes: friends, family, people who will ask us back.",
+      "bsb": "Then Jesus said to the man who had invited Him, “When you host a dinner or a banquet, do not invite your friends or brothers or relatives or rich neighbors. Otherwise, they may invite you in return, and you will be repaid. But when you host a banquet, invite the poor, the crippled, the lame, and the blind, and you will be blessed. Since they cannot repay you, you will be repaid at the resurrection of the righteous.”"
     },
     {
       "id": "thanksgiving-6",
@@ -881,7 +1134,8 @@
       "passage": "John 11:32-35",
       "href": "/study/bible/john/11#v32",
       "file": "/family-seasonal.json",
-      "description": "Tomorrow some of us will set the table with a chair missing. Maybe someone died this year, or long ago and it still hurts."
+      "description": "Tomorrow some of us will set the table with a chair missing. Maybe someone died this year, or long ago and it still hurts.",
+      "bsb": "When Mary came to Jesus and saw Him, she fell at His feet and said, “Lord, if You had been here, my brother would not have died.” When Jesus saw her weeping, and the Jews who had come with her also weeping, He was deeply moved in spirit and troubled. “Where have you put him?” He asked. “Come and see, Lord,” they answered. Jesus wept."
     },
     {
       "id": "thanksgiving-7",
@@ -893,7 +1147,8 @@
       "passage": "Psalm 136:1-3",
       "href": "/study/bible/psalms/136#v1",
       "file": "/family-seasonal.json",
-      "description": "Psalm 136 has twenty-six verses, and every one ends the same way: his loving devotion endures forever."
+      "description": "Psalm 136 has twenty-six verses, and every one ends the same way: his loving devotion endures forever.",
+      "bsb": "Give thanks to the LORD, for He is good. His loving devotion endures forever. Give thanks to the God of gods. His loving devotion endures forever. Give thanks to the Lord of lords. His loving devotion endures forever."
     },
     {
       "id": "advent-1",
@@ -905,7 +1160,8 @@
       "passage": "Genesis 3:15",
       "href": "/study/bible/genesis/3#v15",
       "file": "/family-seasonal.json",
-      "description": "On the worst day in the story, when everything had already broken, God made a promise. Nothing about that afternoon got fixed, and the promise would take thousands of years to come true."
+      "description": "On the worst day in the story, when everything had already broken, God made a promise. Nothing about that afternoon got fixed, and the promise would take thousands of years to come true.",
+      "bsb": "And I will put enmity between you and the woman, and between your seed and her seed. He will crush your head, and you will strike his heel."
     },
     {
       "id": "advent-2",
@@ -917,7 +1173,8 @@
       "passage": "Genesis 12:1-3",
       "href": "/study/bible/genesis/12#v1",
       "file": "/family-seasonal.json",
-      "description": "Abram was old and had no children, and God told him his family would bless the whole world."
+      "description": "Abram was old and had no children, and God told him his family would bless the whole world.",
+      "bsb": "Then the LORD said to Abram, “Leave your country, your kindred, and your father’s household, and go to the land I will show you. I will make you into a great nation, and I will bless you; I will make your name great, so that you will be a blessing. I will bless those who bless you and curse those who curse you; and all the families of the earth will be blessed through you.”"
     },
     {
       "id": "advent-3",
@@ -929,7 +1186,8 @@
       "passage": "Exodus 3:7-8",
       "href": "/study/bible/exodus/3#v7",
       "file": "/family-seasonal.json",
-      "description": "The people had been slaves for four hundred years. Four hundred years is longer than the United States has existed."
+      "description": "The people had been slaves for four hundred years. Four hundred years is longer than the United States has existed.",
+      "bsb": "The LORD said, “I have indeed seen the affliction of My people in Egypt. I have heard them crying out because of their oppressors, and I am aware of their sufferings. I have come down to rescue them from the hand of the Egyptians and to bring them up out of that land to a good and spacious land, a land flowing with milk and honey—the home of the Canaanites, Hittites, Amorites, Perizzites, Hivites, and Jebusites.”"
     },
     {
       "id": "advent-4",
@@ -941,7 +1199,8 @@
       "passage": "2 Samuel 7:12-13",
       "href": "/study/bible/2-samuel/7#v12",
       "file": "/family-seasonal.json",
-      "description": "David was a real king with a real throne, and God told him a son from his line would reign forever."
+      "description": "David was a real king with a real throne, and God told him a son from his line would reign forever.",
+      "bsb": "And when your days are fulfilled and you rest with your fathers, I will raise up your descendant after you, who will come from your own body, and I will establish his kingdom. He will build a house for My Name, and I will establish the throne of his kingdom forever."
     },
     {
       "id": "advent-5",
@@ -953,7 +1212,8 @@
       "passage": "Micah 5:2",
       "href": "/study/bible/micah/5#v2",
       "file": "/family-seasonal.json",
-      "description": "Bethlehem was a small town, the kind of place travelers passed through on the way to somewhere bigger."
+      "description": "Bethlehem was a small town, the kind of place travelers passed through on the way to somewhere bigger.",
+      "bsb": "But you, Bethlehem Ephrathah, who are small among the clans of Judah, out of you will come forth for Me One to be ruler over Israel— One whose origins are of old, from the days of eternity."
     },
     {
       "id": "advent-6",
@@ -965,7 +1225,8 @@
       "passage": "Isaiah 9:6",
       "href": "/study/bible/isaiah/9#v6",
       "file": "/family-seasonal.json",
-      "description": "Isaiah said these words seven hundred years before the first Christmas. He had never seen a manger."
+      "description": "Isaiah said these words seven hundred years before the first Christmas. He had never seen a manger.",
+      "bsb": "For unto us a child is born, unto us a son is given, and the government will be upon His shoulders. And He will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."
     },
     {
       "id": "advent-7",
@@ -977,7 +1238,8 @@
       "passage": "Isaiah 9:2",
       "href": "/study/bible/isaiah/9#v2",
       "file": "/family-seasonal.json",
-      "description": "Isaiah did not pretend the darkness was not real. He called it deep, he called it shadow, he did not soften it."
+      "description": "Isaiah didn't pretend the darkness wasn't real. He called it deep, he called it shadow, he didn't soften it.",
+      "bsb": "The people walking in darkness have seen a great light; on those living in the land of the shadow of death, a light has dawned."
     },
     {
       "id": "advent-8",
@@ -989,7 +1251,8 @@
       "passage": "Isaiah 11:1",
       "href": "/study/bible/isaiah/11#v1",
       "file": "/family-seasonal.json",
-      "description": "A stump is what is left after a tree gets cut down. It looks finished, dead, done. Israel had been cut down to a stump, the old royal family reduced to almost nothing."
+      "description": "A stump is what is left after a tree gets cut down. It looks finished, dead, done. Israel had been cut down to a stump, the old royal family reduced to almost nothing.",
+      "bsb": "Then a shoot will spring up from the stump of Jesse, and a Branch from his roots will bear fruit."
     },
     {
       "id": "advent-9",
@@ -1001,7 +1264,8 @@
       "passage": "Isaiah 40:1-3",
       "href": "/study/bible/isaiah/40#v1",
       "file": "/family-seasonal.json",
-      "description": "After many hard chapters, God says one word twice. Comfort, comfort. He is not embarrassed to comfort his people."
+      "description": "After many hard chapters, God says one word twice. Comfort, comfort. He's not embarrassed to comfort his people.",
+      "bsb": "“Comfort, comfort My people,” says your God. “Speak tenderly to Jerusalem, and proclaim to her that her forced labor has been completed; her iniquity has been pardoned. For she has received from the hand of the LORD double for all her sins.” A voice of one calling: “Prepare the way for the LORD in the wilderness; make a straight highway for our God in the desert.”"
     },
     {
       "id": "advent-10",
@@ -1013,7 +1277,8 @@
       "passage": "Isaiah 53:4-5",
       "href": "/study/bible/isaiah/53#v4",
       "file": "/family-seasonal.json",
-      "description": "This is the strangest promise of Advent. The one who is coming will not just rule, he will suffer."
+      "description": "This is the strangest promise of Advent. The one who is coming won't just rule, he will suffer.",
+      "bsb": "Surely He took on our infirmities and carried our sorrows; yet we considered Him stricken by God, struck down and afflicted. But He was pierced for our transgressions, He was crushed for our iniquities; the punishment that brought us peace was upon Him, and by His stripes we are healed."
     },
     {
       "id": "advent-11",
@@ -1025,7 +1290,8 @@
       "passage": "Ezekiel 36:26",
       "href": "/study/bible/ezekiel/36#v26",
       "file": "/family-seasonal.json",
-      "description": "Notice what God promised here. He could have promised us better rules, and we would have taken them."
+      "description": "Notice what God promised here. He could have promised us better rules, and we would have taken them.",
+      "bsb": "I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh."
     },
     {
       "id": "advent-12",
@@ -1037,7 +1303,8 @@
       "passage": "Psalm 13:1-2",
       "href": "/study/bible/psalms/13#v1",
       "file": "/family-seasonal.json",
-      "description": "Even in Advent, full of promises, the people of God asked hard questions out loud. How long."
+      "description": "Even in Advent, full of promises, the people of God asked hard questions out loud. How long.",
+      "bsb": "How long, O LORD? Will You forget me forever? How long will You hide Your face from me? How long must I wrestle in my soul, with sorrow in my heart each day? How long will my enemy dominate me?"
     },
     {
       "id": "advent-13",
@@ -1049,7 +1316,8 @@
       "passage": "Malachi 3:1",
       "href": "/study/bible/malachi/3#v1",
       "file": "/family-seasonal.json",
-      "description": "Malachi is the last book before a long silence. After he spoke, four hundred years passed with no prophet, no new word."
+      "description": "Malachi is the last book before a long silence. After he spoke, four hundred years passed with no prophet, no new word.",
+      "bsb": "“Behold, I will send My messenger, who will prepare the way before Me. Then the Lord whom you seek will suddenly come to His temple—the Messenger of the covenant, in whom you delight—see, He is coming,” says the LORD of Hosts."
     },
     {
       "id": "advent-14",
@@ -1061,7 +1329,8 @@
       "passage": "Luke 1:13",
       "href": "/study/bible/luke/1#v13",
       "file": "/family-seasonal.json",
-      "description": "Zechariah and Elizabeth were old and had prayed for a child for years with no answer. They had probably stopped expecting one."
+      "description": "Zechariah and Elizabeth were old and had prayed for a child for years with no answer. They had probably stopped expecting one.",
+      "bsb": "But the angel said to him, “Do not be afraid, Zechariah, because your prayer has been heard. Your wife Elizabeth will bear you a son, and you are to give him the name John.”"
     },
     {
       "id": "advent-15",
@@ -1073,7 +1342,8 @@
       "passage": "Luke 1:38",
       "href": "/study/bible/luke/1#v38",
       "file": "/family-seasonal.json",
-      "description": "Mary was young, probably a teenager, and the angel asked her to carry the Son of God, which would turn her whole life upside down."
+      "description": "Mary was young, probably a teenager, and the angel asked her to carry the Son of God, which would turn her whole life upside down.",
+      "bsb": "“I am the Lord’s servant,” Mary answered. “May it happen to me according to your word.” Then the angel left her."
     },
     {
       "id": "advent-16",
@@ -1085,7 +1355,8 @@
       "passage": "Luke 1:52-53",
       "href": "/study/bible/luke/1#v52",
       "file": "/family-seasonal.json",
-      "description": "When Mary found out what God was doing, she did not sing a quiet little lullaby. She sang about a world turned upside down, where the proud get knocked off their thrones and the forgotten get a seat at the table."
+      "description": "When Mary found out what God was doing, she didn't sing a quiet little lullaby. She sang about a world turned upside down, where the proud get knocked off their thrones and the forgotten get a seat at the table.",
+      "bsb": "He has brought down rulers from their thrones, but has exalted the humble. He has filled the hungry with good things, but has sent the rich away empty."
     },
     {
       "id": "advent-17",
@@ -1097,7 +1368,8 @@
       "passage": "Matthew 1:20-21",
       "href": "/study/bible/matthew/1#v20",
       "file": "/family-seasonal.json",
-      "description": "Joseph could have walked away, and no one would have blamed him. Instead he stayed, took on a son who was not his by blood, and raised the Savior of the world in a carpenter shop."
+      "description": "Joseph could have walked away, and no one would have blamed him. Instead he stayed, took on a son who wasn't his by blood, and raised the Savior of the world in a carpenter shop.",
+      "bsb": "But after he had pondered these things, an angel of the Lord appeared to him in a dream and said, “Joseph, son of David, do not be afraid to embrace Mary as your wife, for the One conceived in her is from the Holy Spirit. She will give birth to a Son, and you are to give Him the name Jesus, because He will save His people from their sins.”"
     },
     {
       "id": "advent-18",
@@ -1109,7 +1381,8 @@
       "passage": "John 1:1-3",
       "href": "/study/bible/john/1#v1",
       "file": "/family-seasonal.json",
-      "description": "Before Bethlehem, before the manger, before there was a sky to hang stars in, Jesus already was."
+      "description": "Before Bethlehem, before the manger, before there was a sky to hang stars in, Jesus already was.",
+      "bsb": "In the beginning was the Word, and the Word was with God, and the Word was God. He was with God in the beginning. Through Him all things were made, and without Him nothing was made that has been made."
     },
     {
       "id": "advent-19",
@@ -1121,7 +1394,8 @@
       "passage": "John 1:14",
       "href": "/study/bible/john/1#v14",
       "file": "/family-seasonal.json",
-      "description": "God could have saved us from far away, with a wave of his hand. Instead he came and lived among us, in a real town, on a real street, with people who knew his face."
+      "description": "God could have saved us from far away, with a wave of his hand. Instead he came and lived among us, in a real town, on a real street, with people who knew his face.",
+      "bsb": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
     },
     {
       "id": "advent-20",
@@ -1133,7 +1407,8 @@
       "passage": "Luke 2:1-5",
       "href": "/study/bible/luke/2#v1",
       "file": "/family-seasonal.json",
-      "description": "On the night before everything changed, a tired couple was walking a hard road because a faraway emperor wanted to count people for taxes."
+      "description": "On the night before everything changed, a tired couple was walking a hard road because a faraway emperor wanted to count people for taxes.",
+      "bsb": "Now in those days a decree went out from Caesar Augustus that a census should be taken of the whole empire. This was the first census to take place while Quirinius was governor of Syria. And everyone went to his own town to register. So Joseph also went up from Nazareth in Galilee to Judea, to the city of David called Bethlehem, since he was from the house and line of David. He went there to register with Mary, who was pledged to him in marriage and was expecting a child."
     },
     {
       "id": "advent-21",
@@ -1145,7 +1420,8 @@
       "passage": "Luke 2:6-7",
       "href": "/study/bible/luke/2#v6",
       "file": "/family-seasonal.json",
-      "description": "The King of the universe was born in a place where animals ate, because no one had a room for him."
+      "description": "The King of the universe was born in a place where animals ate, because no one had a room for him.",
+      "bsb": "While they were there, the time came for her Child to be born. And she gave birth to her firstborn, a Son. She wrapped Him in swaddling cloths and laid Him in a manger, because there was no room for them in the inn."
     },
     {
       "id": "advent-22",
@@ -1157,7 +1433,8 @@
       "passage": "Luke 2:10-11",
       "href": "/study/bible/luke/2#v10",
       "file": "/family-seasonal.json",
-      "description": "When God announced the most important birth in history, he sent the news past the palace and the temple to shepherds working the night shift in a field."
+      "description": "When God announced the most important birth in history, he sent the news past the palace and the temple to shepherds working the night shift in a field.",
+      "bsb": "But the angel said to them, “Do not be afraid! For behold, I bring you good news of great joy that will be for all the people: Today in the city of David a Savior has been born to you. He is Christ the Lord!”"
     },
     {
       "id": "advent-23",
@@ -1169,7 +1446,8 @@
       "passage": "Luke 2:19",
       "href": "/study/bible/luke/2#v19",
       "file": "/family-seasonal.json",
-      "description": "After the shepherds left and the noise died down, Mary did not rush on to the next thing. She held it all quietly and turned it over in her heart."
+      "description": "After the shepherds left and the noise died down, Mary didn't rush on to the next thing. She held it all quietly and turned it over in her heart.",
+      "bsb": "But Mary treasured up all these things and pondered them in her heart."
     },
     {
       "id": "advent-24",
@@ -1181,7 +1459,8 @@
       "passage": "Luke 2:30-32",
       "href": "/study/bible/luke/2#v30",
       "file": "/family-seasonal.json",
-      "description": "Simeon was old and had waited his whole life to see God keep his promise. When he finally held the baby Jesus, he said he could die in peace now."
+      "description": "Simeon was old and had waited his whole life to see God keep his promise. When he finally held the baby Jesus, he said he could die in peace now.",
+      "bsb": "For my eyes have seen Your salvation, which You have prepared in the sight of all people, a light for revelation to the Gentiles, and for glory to Your people Israel."
     },
     {
       "id": "advent-25",
@@ -1193,7 +1472,8 @@
       "passage": "Luke 2:11",
       "href": "/study/bible/luke/2#v11",
       "file": "/family-seasonal.json",
-      "description": "Today. After Genesis and the garden, after Abraham and David, after Isaiah and the long silence, after Mary and Joseph and the road to Bethlehem, the word is today."
+      "description": "Today. After Genesis and the garden, after Abraham and David, after Isaiah and the long silence, after Mary and Joseph and the road to Bethlehem, the word is today.",
+      "bsb": "Today in the city of David a Savior has been born to you. He is Christ the Lord!"
     },
     {
       "id": "holy-week-1",
@@ -1205,7 +1485,8 @@
       "passage": "Matthew 21:8-9",
       "href": "/study/bible/matthew/21#v8",
       "file": "/family-seasonal.json",
-      "description": "The crowd wanted a king who would ride in on a war horse and throw out the Romans. Jesus came in on a young donkey, slow and humble, the way kings came when they came in peace."
+      "description": "The crowd wanted a king who would ride in on a war horse and throw out the Romans. Jesus came in on a young donkey, slow and humble, the way kings came when they came in peace.",
+      "bsb": "A massive crowd spread their cloaks on the road, while others cut branches from the trees and spread them on the road. The crowds that went ahead of Him and those that followed were shouting: “Hosanna to the Son of David!” “Blessed is He who comes in the name of the Lord!” “Hosanna in the highest!”"
     },
     {
       "id": "holy-week-2",
@@ -1217,7 +1498,8 @@
       "passage": "Matthew 21:12-13",
       "href": "/study/bible/matthew/21#v12",
       "file": "/family-seasonal.json",
-      "description": "The temple was supposed to be the one place where anyone could come close to God, and people had turned it into a marketplace where the poor got cheated."
+      "description": "The temple was supposed to be the one place where anyone could come close to God, and people had turned it into a marketplace where the poor got cheated.",
+      "bsb": "Then Jesus entered the temple courts and drove out all who were buying and selling there. He overturned the tables of the money changers and the seats of those selling doves. And He declared to them, “It is written: ‘My house will be called a house of prayer.’ But you are making it ‘a den of robbers.’”"
     },
     {
       "id": "holy-week-3",
@@ -1229,7 +1511,8 @@
       "passage": "Matthew 22:37-39",
       "href": "/study/bible/matthew/22#v37",
       "file": "/family-seasonal.json",
-      "description": "People kept trying to trap Jesus with hard questions that week, hoping he would say something they could arrest him for."
+      "description": "People kept trying to trap Jesus with hard questions that week, hoping he would say something they could arrest him for.",
+      "bsb": "Jesus declared, “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’”"
     },
     {
       "id": "holy-week-4",
@@ -1241,7 +1524,8 @@
       "passage": "Matthew 26:14-16",
       "href": "/study/bible/matthew/26#v14",
       "file": "/family-seasonal.json",
-      "description": "Judas had walked with Jesus for three years. He had seen the miracles, eaten the meals, heard every word."
+      "description": "Judas had walked with Jesus for three years. He had seen the miracles, eaten the meals, heard every word.",
+      "bsb": "Then one of the Twelve, the one called Judas Iscariot, went to the chief priests and asked, “What are you willing to give me if I hand Him over to you?” And they set out for him thirty pieces of silver. So from then on Judas looked for an opportunity to betray Jesus."
     },
     {
       "id": "holy-week-5",
@@ -1253,7 +1537,8 @@
       "passage": "John 13:14-15",
       "href": "/study/bible/john/13#v14",
       "file": "/family-seasonal.json",
-      "description": "On his last night, Jesus took off his outer robe, knelt down, and washed the dirty feet of his friends, a job usually left to the lowest servant."
+      "description": "On his last night, Jesus took off his outer robe, knelt down, and washed the dirty feet of his friends, a job usually left to the lowest servant.",
+      "bsb": "So if I, your Lord and Teacher, have washed your feet, you also should wash one another’s feet. I have set you an example so that you should do as I have done for you."
     },
     {
       "id": "holy-week-6",
@@ -1265,7 +1550,8 @@
       "passage": "John 19:30",
       "href": "/study/bible/john/19#v30",
       "file": "/family-seasonal.json",
-      "description": "This is the hardest day, and we should not rush past it. Jesus, who had done nothing wrong, was nailed to a cross and died."
+      "description": "This is the hardest day, and we should not rush past it. Jesus, who had done nothing wrong, was nailed to a cross and died.",
+      "bsb": "When Jesus had received the sour wine, He said, “It is finished.” And bowing His head, He yielded up His spirit."
     },
     {
       "id": "holy-week-7",
@@ -1277,7 +1563,8 @@
       "passage": "Matthew 27:59-60",
       "href": "/study/bible/matthew/27#v59",
       "file": "/family-seasonal.json",
-      "description": "Saturday is the day nobody talks about much. Jesus was in the tomb, and his friends did not know yet that Sunday was coming."
+      "description": "Saturday is the day nobody talks about much. Jesus was in the tomb, and his friends didn't know yet that Sunday was coming.",
+      "bsb": "So Joseph took the body, wrapped it in a clean linen cloth, and placed it in his own new tomb that he had cut into the rock. Then he rolled a great stone across the entrance to the tomb and went away."
     },
     {
       "id": "holy-week-8",
@@ -1289,7 +1576,8 @@
       "passage": "Matthew 28:5-6",
       "href": "/study/bible/matthew/28#v5",
       "file": "/family-seasonal.json",
-      "description": "The women came to the tomb in the dark, expecting to care for a dead body. Instead they found the stone rolled away and the grave empty."
+      "description": "The women came to the tomb in the dark, expecting to care for a dead body. Instead they found the stone rolled away and the grave empty.",
+      "bsb": "But the angel said to the women, “Do not be afraid, for I know that you are looking for Jesus, who was crucified. He is not here; He has risen, just as He said! Come, see the place where He lay.”"
     }
   ],
   "catechism": [

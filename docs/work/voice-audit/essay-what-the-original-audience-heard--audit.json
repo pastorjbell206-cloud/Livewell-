@@ -1,0 +1,58 @@
+{
+  "piece": "what-the-original-audience-heard",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Clean. Read start to finish as a skeptic, this sounds like a person who knows the passages and is thinking in order, not a machine. Literal searches found no Forbidden Language word, no em-dash, no exclamation point, no hedge and no connective filler (the two 'in many ways' hits are Hebrews 1:1 quoted verbatim). Paragraph lengths vary from 9 to 144 words, the sources each do work, the political criticism fires at conservative and progressive churches with the same instrument, and the ending lands on Christ and Nehemiah 8 instead of recapping. Five small findings, none of them 'must': one self-referential essay sentence, one stock self-posed question, one pillow-shaped one-line paragraph in the closing stack, one abstract aphorism as a paragraph opener, and one repeated phrase. The voice score stops at 8 because the piece has only one first-person line and it is generic; that is James's to fix, not an editor's.",
+  "findings": [
+    {
+      "quote": "That should make us slower readers, and humbler ones.",
+      "tell": "Aphoristic one-line paragraph closer; a paragraph that restates the essay as a slogan",
+      "why": "It is the only line in the closing stack that could be embroidered. It also repeats what the section already said two paragraphs up ('Mostly it means slowing down'), so it reads as a recap wearing a verdict's clothes, and its balanced 'slower... and humbler ones' tail is the tidy pair a generator reaches for. The three lines around it (coming late, the Son at Nazareth, weeping before feasting) carry the weight without it.",
+      "replacement": "Delete the paragraph, or fold it into the one before so it stops standing alone: \"We come to the Bible late. Most of those who received it before us heard something harder than we usually let ourselves hear, and that ought to slow us down.\"",
+      "severity": "should"
+    },
+    {
+      "quote": "What would it look like to read this way? Mostly it means slowing down.",
+      "tell": "Stock self-posed question answered at once (announced turn)",
+      "why": "'What would it look like to...?' is the standard sermon-and-chatbot bridge into an application paragraph. Nobody across a table asks himself this and answers in the next breath. The paragraph's advice is good and concrete; it does not need the drumroll.",
+      "replacement": "Reading this way mostly means slowing down.",
+      "severity": "should"
+    },
+    {
+      "quote": "That loss is the subject of this essay.",
+      "tell": "Essay voice where a person thinking should be; the prose describing itself",
+      "why": "Plain signposting is his habit, but 'the subject of this essay' is a school-paper sentence, and the next sentence already states the thesis in his own words. It is the one place in the opening where the reader hears a document instead of a man.",
+      "replacement": "That loss is what I want to look at here.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Hearing changes what a text is.",
+      "tell": "Abstract aphorism as a paragraph opener; mild overclaim",
+      "why": "It sounds profound before it has shown anything, and it claims more than the paragraph proves (the paragraph shows hearing changes how a letter is received, not what it is). The concrete sentence that follows is stronger and plainer.",
+      "replacement": "A letter that is heard is not the same as a letter that is read alone.",
+      "severity": "consider"
+    },
+    {
+      "quote": "church people reach for it too, usually against whoever is correcting them",
+      "tell": "Repeated stock phrase in adjacent paragraphs",
+      "why": "'Reach for' was used two paragraphs earlier ('the verse many Christians reach for before a big game or a hard exam'), and 'know by heart' appears three times in the essay. One echo is human; the same idiom doing the same job twice within 150 words starts to sound like a default.",
+      "replacement": "church people use it too, usually against whoever is correcting them",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Opens on a scene from the text (the Water Gate, the wooden platform, the weeping) and returns to it at the end with the argument added, so the last line is earned and not a recap.",
+    "Every source does work a reader can check: Walton's saying and the 2020 volume titled after it, Harris's one-in-ten figure with the dispute admitted, Langton, Estienne 1551, Geneva 1560, Josephus on Coponius. Remove any name and the sentence loses information.",
+    "Concrete closers in place of slogans: 'The congregation welcomed the good news until it reached a widow in Sidon and a Syrian general.'",
+    "Right and left get the same treatment in adjacent paragraphs, each with the verses it skips quoted in full, and the Amos 2 paragraph makes the same point from inside the text.",
+    "The objection in 'Can Ordinary Christians Still Read the Bible?' is voiced in the reader's own words and answered from the confession's own paragraph, then from the essay's own evidence (nearly everything came from the surrounding chapters).",
+    "Paragraph and sentence lengths vary naturally; contractions appear where speech would have them; no em-dash, no exclamation, no forbidden word, no hedge."
+  ],
+  "for_james": [
+    "The only first-person line is 'Preachers build those lists one sermon at a time, and I have built one too.' It is true to the confirmed facts but generic; any preacher could sign it. If you will name the verse you know you have over-preached, or the chapter you have avoided, one sentence there would make the essay yours. No editor should invent that for you.",
+    "The essay has no moment that draws on coming to the Bible as an adult from atheism, which is the natural place a first-time reader's experience of an unfamiliar book would belong. If you have a real memory of meeting one of these verses without the church's usual hearing of it, it would fit in the opening section. If not, leave it out.",
+    "Your saved Substack profile disagrees with VOICE-JAMES-BELL.md in several places and this essay follows the voice standard, correctly: the profile asks for paragraphs of two to four sentences, 1,500 to 2,500 words, a Greek or Hebrew word, a 'screenshot' line, and a Monday-morning block of three questions and one practice (the voice standard calls for developed paragraphs, one earned verdict, and no application box). The profile also says no exclamation marks ever, where the site allows them inside verbatim Scripture, and names the domain as .com. Nothing was rewritten toward the profile.",
+    "The second fact check left one item for you: Philippians 4:11's commas ('I have learned, in whatever situation I am, to be content') rest on a search summary of esv.org; your ESV API key settles it.",
+    "The sentence about preachers who defended American slavery sits abruptly between your own confession and Paul at Miletus. It is not a machine tell, but read it aloud and decide whether you want a clause connecting it to the sentence before."
+  ]
+}

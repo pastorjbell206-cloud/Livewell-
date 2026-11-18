@@ -1,0 +1,41 @@
+{
+  "piece": "why-does-god-allow-suffering",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read confirms the first reader's overall judgment: clean, close to finished, no forbidden words, no em-dashes, no exclamation points, one semicolon outside quotation. Three of eight findings survive. The essay's thesis (no explanation, but a promise and a presence) does recur as a 'doesn't X. It Y.' two-beat, but most instances are doing exegetical or pastoral work; only the mid-paragraph one in the Natural Evil section is surplus.",
+  "keep": [
+    {
+      "quote": "The Bible doesn't look at earthquakes and parasites and call the world finished. It calls the present order subjected and bound, in labor and waiting.",
+      "tell": "'Doesn't X. It Y.' antithesis as habit: second of two in one short section (the section closes 'Rowe's fawn gets no explanation in this life. What Scripture supplies is a promise'), and the same two-beat denial runs in the Job, Romans 8:28, widow, Psalms and resurrection passages.",
+      "replacement": "The Bible looks at earthquakes and parasites and calls the present order subjected and bound, in labor and waiting.",
+      "severity": "should"
+    },
+    {
+      "quote": "His argument was that God cannot make creatures truly free and also guarantee what they will choose, a view of freedom many Christians in the Reformed tradition reject.",
+      "tell": "Bolted-on qualifying clause; a safeguard stapled to the end of a summary reads as committee voice, not a person talking.",
+      "replacement": "His argument was that God cannot make creatures truly free and also guarantee what they will choose. It's a view of freedom many Christians in the Reformed tradition reject.",
+      "severity": "should"
+    },
+    {
+      "quote": "The Bible saw all of this long before Lisbon.",
+      "tell": "Vague framing sentence and mild overclaim: 'all of this' gestures at five paragraphs of philosophy, and the skeptic hears a boast just before the essay admits Job 'doesn't answer Rowe'.",
+      "replacement": "The Bible took up this question long before Lisbon.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "Widow at the graveside ('the doctrine was never an explanation to hand a widow at the graveside. It's a promise she may lean on later'): this is the hinge of the section and the denial half carries the one concrete image; the replacement flattened it.",
+    "'These aren't failed prayers.' (consider): a short pastoral verdict a reader in grief needs said outright; the replacement loses it.",
+    "'and they carry real weight' (consider): a plain concession in his own manner ('Some of that is true'), not method showing.",
+    "'the psalms give you permission' (consider): permission is the paragraph's deliberate thread ('before you're allowed to pray', later 'He was allowed to ask, though, and so are you'); the one semicolon is permitted.",
+    "'Baptists, my own tradition': not a tell; the brief allows it and it works as fairness, not credential. Moved to for_james."
+  ],
+  "added": [],
+  "for_james": [
+    "The essay has no moment only you could have written. One real memory of your own (a hospital room, a funeral, something said too early) near 'Most of us who have stood with a grieving family' or 'We make that mistake of timing all the time' would lift the voice score. Nobody should write it for you.",
+    "'Baptists, my own tradition' names your denomination. The brief allows it; your call whether it stays.",
+    "'the father who walks out' sits in the list of human-caused suffering. It works unnamed; say if you want it gone or in the first person.",
+    "Final line, 'The hands that will wipe away every tear still carry the marks of the nails.': the most literary sentence in the piece. I think it is earned; read it aloud and decide.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree (profile: 1,500 to 2,500 words, 2-to-4-sentence paragraphs, a Greek or Hebrew word, a screenshot line, a Monday Morning close of three questions and a practice; voice doc: developed paragraphs, no decorative Greek or Hebrew, no clean application turn). This essay follows the voice doc and was not rewritten toward the profile."
+  ]
+}

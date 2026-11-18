@@ -20,7 +20,9 @@
  * through its vercel.json redirect. Otherwise the reader lands on a retired
  * notice. A file that consults the shelf (imports lib/shelf) is trusted to
  * gate its own links and is only counted; page files App.tsx never routes
- * are skipped, since no reader reaches them.
+ * are skipped, since no reader reaches them. A page that links the pull
+ * quotes (client/src/data/social-quotes.ts) to their essays must consult the
+ * shelf too: eight quote cards once opened retired or pending notices.
  *
  * Run:  node scripts/validate-links.mjs   (CI gate — exits 1 on any dead link)
  */
@@ -83,6 +85,7 @@ function reachesPublic(slug) {
 const APP = readFileSync("client/src/App.tsx", "utf8");
 const ROUTED = new Set([...APP.matchAll(/import\("\.\/([^"]+)"\)/g)].map((m) => `client/src/${m[1]}`));
 const offShelf = new Map(); // "/writing/x" -> Set(files)
+const ungatedQuotes = []; // pages linking quotes to essays without asking the shelf
 let gatedOffShelf = 0;
 
 function scan(file) {
@@ -90,6 +93,11 @@ function scan(file) {
   const isTest = /\.test\.tsx?$/.test(file);
   const unrouted = file.startsWith("client/src/pages/") && !ROUTED.has(file.replace(/\.tsx?$/, ""));
   const gated = /from "(?:@\/lib|\.)\/shelf"/.test(t);
+  // The quote corpus (client/src/data/social-quotes.ts) names its source
+  // essays by slug, and most of them are off the shelf. A page that builds
+  // /writing/ links from it has no literal link for the check above to see,
+  // so it must consult the shelf itself.
+  if (!isTest && !unrouted && /from "@\/data\/social-quotes"/.test(t) && /\/writing\/\$\{/.test(t) && !gated) ungatedQuotes.push(file);
   for (const m of t.matchAll(/\/writing\/([a-z0-9-]{4,})/g)) {
     if (!essaySlugs.has(m[1])) record("/writing/" + m[1], file);
     else if (!isTest && !unrouted && !reachesPublic(m[1])) {
@@ -117,6 +125,13 @@ function walk(dir) {
 
 walk("client/src");
 
+if (ungatedQuotes.length) {
+  console.error(`\nPages that link pull quotes to their essays without consulting the shelf: ${ungatedQuotes.length}\n`);
+  for (const f of ungatedQuotes) console.error(`  ${f.replace("client/src/", "")}`);
+  console.error("\nMost quoted essays are off the public shelf. Build the link through isPublicEssay");
+  console.error("(client/src/lib/shelf.ts) and name the source without a link when it is false.\n");
+}
+
 if (offShelf.size) {
   console.error(`\nLinks to essays off the public shelf: ${offShelf.size}\n`);
   for (const [href, files] of offShelf) {
@@ -127,7 +142,7 @@ if (offShelf.size) {
   console.error("live shelf essay, a /writing section, or another live page.\n");
 }
 
-if (offShelf.size && !dead.size) process.exit(1);
+if ((offShelf.size || ungatedQuotes.length) && !dead.size) process.exit(1);
 
 if (dead.size) {
   console.error(`\nDead content links: ${dead.size}\n`);

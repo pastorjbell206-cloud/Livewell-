@@ -13,6 +13,7 @@ import ArticleProgress from "@/components/ArticleProgress";
 import { AudienceShare } from "@/components/AudienceShare";
 import { useEssayCompletion } from "@/lib/useEssayCompletion";
 import { ogImageUrl } from "@/lib/site";
+import SEARCH_TITLES from "@/lib/searchTitles.json";
 
 interface Section { id: string; kicker: string; title: string; body: string; }
 interface Reading { title: string; author: string; }
@@ -71,7 +72,7 @@ export default function NationEssay({ slug }: { slug: string }) {
 
   return (
     <Layout>
-      <SEOMeta title={`${e?.title ?? "Christ and the Nation"} — LiveWell by James Bell`} description={e?.subtitle ?? ""} url={url} image={e ? ogImageUrl(e.title, "Christ and the Nation") : undefined} structuredData={structuredData} />
+      <SEOMeta title={(SEARCH_TITLES as Record<string, string>)[`/nation/${slug}`] ?? e?.title ?? "The Bible and American Politics"} description={e?.subtitle ?? ""} url={url} image={e ? ogImageUrl(e.title, "Christ and the Nation") : undefined} structuredData={structuredData} />
       {e && <ArticleProgress readTime={readTime} />}
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>

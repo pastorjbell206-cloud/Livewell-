@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { useFavorites } from "@/hooks/useFavorites";
 import { copyToClipboard } from "@/lib/clipboard";
 import { readStoredJSON, isArrayOf } from "@/lib/storage";
@@ -57,23 +58,11 @@ export default function SavedItems() {
   return (
     <Layout>
       <SEOMeta
-        title="Saved Items — LiveWell Tools"
+        title="Saved Items"
         description="Everything you saved across the LiveWell tools — verses, prayers, quotes, and wisdom entries — in one place."
       />
 
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "80px 32px 60px", textAlign: "center" }}>
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "16px" }}>
-            YOUR COLLECTION
-          </div>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
-            Saved <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Items</em>
-          </h1>
-          <p style={{ fontSize: "17px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--U)" }}>
-            {totalCount} {totalCount === 1 ? "item" : "items"} saved across your tools.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/saved" place={{ door: { name: "Tools", href: "/tools" } }} title="Saved Items" line={<>{totalCount} {totalCount === 1 ? "item" : "items"} saved across your tools.</>} plate="book" />
 
       <section style={{ padding: "48px 32px", background: "var(--bone)" }}>
         <div className="wrap" style={{ maxWidth: "800px" }}>

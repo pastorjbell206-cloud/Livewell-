@@ -122,22 +122,22 @@ export function EbookThankYou({ slug, title }: { slug: string; title: string }) 
               )}
 
               {/* Read next — a gentle next step, not an upsell. The reader just
-                  finished paying; point them at more reading and the weekly
-                  essay, never a hard sell. */}
+                  finished paying; point them at more reading and the Substack
+                  signup, never a hard sell. */}
               <div style={{ marginTop: "var(--s-6)", paddingTop: "var(--s-5)", borderTop: "1px solid var(--border)", maxWidth: "54ch", marginLeft: "auto", marginRight: "auto" }}>
                 <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>While you have the time</div>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, letterSpacing: "-0.01em", color: "var(--ink)", marginBottom: "10px" }}>
                   Keep reading
                 </h2>
                 <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", marginBottom: "20px" }}>
-                  Every essay on the site is free, and one serious new one goes out each week in the same vein as what you just bought.
+                  Every essay on the site is free, and new ones go out by email through Substack.
                 </p>
                 <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
                   <Link href="/writing" style={{ ...btn, background: "var(--ink)", color: "var(--bone)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
                     Read the essays free
                   </Link>
                   <Link href="/subscribe" style={{ ...btn, background: "transparent", color: "var(--ink)", border: "1px solid var(--border)", minWidth: 0, padding: "12px 22px", fontSize: "14px" }}>
-                    The weekly essay
+                    Essays by email
                   </Link>
                 </div>
               </div>

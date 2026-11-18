@@ -1,11 +1,13 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { Link } from "wouter";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { BookOpen, Check, ChevronRight, Eye, EyeOff } from "lucide-react";
 import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 import ScriptureNote from "@/components/ScriptureNote";
 
+import NextStep from "@/components/NextStep";
 /* ── Types ─────────────────────────────────────────────────────── */
 
 interface Verse {
@@ -311,7 +313,7 @@ export default function ScriptureMemory() {
   return (
     <Layout>
       <SEOMeta
-        title="Scripture Memory System -- Memorize Bible Verses"
+        title="Memorize Bible Verses: 40 Verses, Step by Step"
         description="Memorize 40 Bible verses across 8 categories with first-letter hints, fill-in-the-blank, and full recall. Track your progress."
         keywords="scripture memory, Bible memorization, memorize Bible verses, scripture memory system, Bible memory techniques"
         structuredData={{
@@ -327,54 +329,17 @@ export default function ScriptureMemory() {
       />
 
       {/* Hero */}
+      <InnerHead path="/tools/scripture-memory" title="Memorize Scripture: 40 key verses" line="Forty verses across eight categories, with four ways to work each one into memory. The aim is Scripture you can reach for at three in the morning without a phone in your hand." plate="book" />
+
       <section
         style={{
           background: "var(--charcoal)",
           color: "var(--bone)",
-          padding: "80px 32px 60px",
+          padding: "var(--s-4) var(--gutter)",
           textAlign: "center",
         }}
       >
         <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-            }}
-          >
-            Scripture Memory{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              System
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--U)",
-            }}
-          >
-            Forty verses across eight categories, with four ways to work each
-            one into memory. The aim is Scripture you can reach for at three in
-            the morning without a phone in your hand.
-          </p>
-
           {/* Progress bar */}
           <div
             style={{
@@ -1052,6 +1017,9 @@ export default function ScriptureMemory() {
           )}
         </div>
       </section>
+      <div style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
+        <NextStep id="study-bible" line="Read each verse in its own chapter, with notes beside the text." />
+      </div>
     </Layout>
   );
 }

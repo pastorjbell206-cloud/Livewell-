@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { useState, useMemo } from "react";
 import { BookOpen, Copy, Check, Heart, Search, Share2, Sun } from "lucide-react";
 import { useFavorites } from "@/hooks/useFavorites";
@@ -7,6 +8,7 @@ import { copyToClipboard } from "@/lib/clipboard";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 
+import FoldedNote from "@/components/FoldedNote";
 const VERSES: Record<string, { ref: string; text: string }[]> = {
   Anxiety: [
     { ref: "Philippians 4:6-7", text: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." },
@@ -209,7 +211,7 @@ export default function VerseFinder() {
   return (
     <Layout>
       <SEOMeta
-        title="Bible Verse Finder — Find Scripture for Any Season"
+        title="Bible Verse Finder: Verses by Topic"
         description="Find Bible verses by topic. Search for Scripture on anxiety, hope, grief, courage, forgiveness, marriage, wisdom, and more."
         keywords="Bible verse finder, scripture by topic, Bible verses for anxiety, Bible verses for hope, topical Bible search"
         structuredData={{
@@ -222,33 +224,17 @@ export default function VerseFinder() {
           offers: { "@type": "Offer", price: "0" },
         }}
       />
+      <FoldedNote id="verse-finder" />
 
-      <section style={{ background: "var(--charcoal)", color: "var(--ivory)", padding: "80px 32px 60px", textAlign: "center" }}>
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--gold)", fontFamily: "var(--U)", marginBottom: "16px" }}>
-            FREE TOOL
-          </div>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 300, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
-            Bible Verse <em style={{ fontStyle: "italic", color: "var(--gold)" }}>Finder</em>
-          </h1>
-          <p style={{ fontSize: "17px", lineHeight: 1.7, opacity: 0.85, fontFamily: "var(--B)" }}>
-            Select a topic and find Scripture for the season you are in. The line shown is the part that bears on the topic — tap any reference to read the whole passage in context. For the fuller treatment — the world a verse was written in and how the church has read it — see <Link href="/tools/wisdom-finder" style={{ color: "var(--gold)", textDecoration: "underline" }}>Wisdom for All of Life</Link>.
-          </p>
-          {favorites.length > 0 && (
-            <Link
-              href="/tools/saved"
-              style={{
-                display: "inline-block", marginTop: "16px",
-                fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)",
-                color: "var(--gold)", textDecoration: "underline",
-                textUnderlineOffset: "3px",
-              }}
-            >
+      <InnerHead path="/tools/verse-finder" title="Bible Verse Finder" line={<>Select a topic and find Scripture for the season you are in. The line shown is the part that bears on the topic — tap any reference to read the whole passage in context. For the fuller treatment — the world a verse was written in and how the church has read it — see <Link href="/tools/wisdom-finder" >Wisdom for All of Life</Link>.</>} plate="book">
+        {favorites.length > 0 && (
+          <p className="pg-head__lede">
+            <Link href="/tools/saved" className="btn--text">
               Saved Verses ({favorites.length})
             </Link>
-          )}
-        </div>
-      </section>
+          </p>
+        )}
+      </InnerHead>
 
       {/* Daily Verse */}
       <section style={{ padding: "36px 32px 0", background: "var(--paper)" }}>

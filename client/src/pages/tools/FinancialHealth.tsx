@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { ToolActions } from "@/components/ToolActions";
@@ -316,7 +317,7 @@ const CATEGORIES: Category[] = [
         ],
         next: [
           { kind: "How-to", title: "How to Handle Money as a Couple", href: "/how-tos/wm-how-to-handle-money-as-a-couple" },
-          { kind: "Care plan", title: "Eight Weeks Toward Each Other", href: "/plans/marriage" },
+          { kind: "Care plan", title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage" },
           { kind: "Wisdom", title: "Talking with Your Spouse", href: "/wisdom/marriage-communication" },
         ],
       },
@@ -586,13 +587,13 @@ export default function FinancialHealth() {
   return (
     <Layout>
       <SEOMeta
-        title="Financial Health Check: A Self-Check on Money and Faith"
+        title="Money and Faith Self-Check (12 Questions)"
         description="A 12-question self-check on money and faith: generosity, contentment, stewardship, and provision. Not a diagnosis or financial advice. Answers stay on your device."
         keywords="financial health check, financial health self-check, biblical stewardship, Christian finances, money and faith, generosity, contentment"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Financial Health Check",
+          name: "Financial Health Self-Check",
           description:
             "A 12-question self-check on money and faith covering generosity, contentment, stewardship, and family provision. Not a diagnosis or financial advice.",
           url: "https://www.livewellbyjamesbell.co/tools/financial-health",
@@ -601,74 +602,9 @@ export default function FinancialHealth() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Financial Health{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Check
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Twelve statements about four parts of your financial life:
-            generosity, contentment, stewardship, and providing for your
-            household. It takes a few minutes. It isn't a budget calculator. It
-            asks whether your money reflects what you say you believe.
-          </p>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "12px auto 0",
-            }}
-          >
-            This is a self-check for reflection, not a test or a diagnosis, and
-            your answers stay on this device. It isn't financial advice either;
-            for decisions about debt, investments, or taxes, talk with someone
-            qualified who knows your situation.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/financial-health" title="Financial Health Self-Check" line="Twelve statements about four parts of your financial life: generosity, contentment, stewardship, and providing for your household. It takes a few minutes. It isn't a budget calculator. It asks whether your money reflects what you say you believe." plate="compass">
+        <p className="pg-head__lede">This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device. It isn't financial advice either; for decisions about debt, investments, or taxes, talk with someone qualified who knows your situation.</p>
+      </InnerHead>
 
       {/* Progress Bar */}
       {!showResults && (
@@ -1064,7 +1000,7 @@ export default function FinancialHealth() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
-            <ToolActions toolName="Financial Health Check" onStartOver={handleRestart} />
+            <ToolActions toolName="Financial Health Self-Check" onStartOver={handleRestart} />
             <SafetyCheck askAboutHome={false} />
             <SelfCheckHistory
               id="financial-health"

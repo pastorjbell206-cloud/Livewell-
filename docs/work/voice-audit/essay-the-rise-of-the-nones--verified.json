@@ -1,0 +1,33 @@
+{
+  "piece": "the-rise-of-the-nones",
+  "human_score": 9,
+  "voice_score": 8.5,
+  "keep": [
+    {
+      "quote": "When a church lets its name become shorthand for a party, it loses the people who can't vote for that party. Many of the people Hout and Fischer studied had not given up on God. What they turned down was a religious label that had come to stand for a political side.",
+      "tell": "Paragraph that ends by restating itself; a 'not X. Y.' antithesis used a third time on the same point",
+      "replacement": "When a church lets its name become shorthand for a party, it loses the people who can't vote for that party.",
+      "severity": "should"
+    },
+    {
+      "quote": "The larger group looks more like people whose ties to civic life have loosened in general, the same loosening of American association, religious participation included, that Putnam traced in *Bowling Alone*.",
+      "tell": "Patched sentence that will not read aloud; a source attached by a long apposition",
+      "replacement": "The larger group looks more like people whose ties to civic life have loosened in general. It's the same loosening of American association, religious participation included, that Putnam traced in *Bowling Alone*.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "'Pastors stand where Ezekiel's shepherds stood, me included.' Dropped: 'me included' is two spoken words, not the stamp 'pastors like me'; the proposed 'I'm a pastor, which puts me where...' narrows the claim from all pastors to James and reads more like a credential than the original.",
+    "'The scattering wasn't only the shepherds' doing.' Dropped (consider): this is the hinge that moves the blame from shepherds to strong sheep, which the next paragraph depends on. One short gloss at a true turn is his voice.",
+    "'The data won't let either filing stand.' Dropped (consider): the filing image is one sustained figure inside a single paragraph, not a motif stamped through the essay, and the replacement is flatter without being more human.",
+    "'Sociologists have a name for people like this: unchurched believers.' Dropped (consider): a single plain introduction of a term; the wording was set by the fact check and no careful reader hears a machine in it.",
+    "The Lifeway parenthetical percentages. Dropped (consider): the 'at 34 percent ... at 29' rewrite is no more spoken than the original and drops 'percent' from the last figure. The flatness of that section is a for_james matter, not an edit."
+  ],
+  "added": [],
+  "notes": "Second read as the skeptic, whole essay, plus literal searches: no em-dash, one exclamation point (inside Ezekiel 34:2), no Forbidden Language, no stock connective or hedge, no title, years, book count or denomination, both parties criticized with the same instrument, abuse passage carries the report-to-authorities line and the /help link. Nothing further found that a careful reader would hear as machine-made. Both kept replacements change no fact, name, number, quotation or reference (checked against the ledger: Hout and Fischer belief finding is still stated in 'How the Nones Grew'; Putnam and Bowling Alone unchanged). First kept item is a cut of two sentences: the quote includes the sentence before them so the replacement is exact.",
+  "for_james": [
+    "First reader's notes stand: the father line is the most human sentence here and only you can add to it; a real person behind 'Who noticed when they stopped coming?' would do more than any edit; one sentence of your own reaction would break up the three paragraphs of survey figures. None of these was written for you.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree (profile: 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a screenshot line, a Greek or Hebrew word, a Monday Morning block, .com domain, paid content). Judged by VOICE-JAMES-BELL.md, which governs; the essay was not pushed toward the profile.",
+    "The closing Hebrews 10:24-25 text ends at 'encouraging one another' with a period; the ESV sentence continues. The words quoted are verbatim. Your call."
+  ]
+}

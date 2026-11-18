@@ -1,11 +1,14 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import { Copy, Check, Search } from "lucide-react";
 import { copyToClipboard } from "@/lib/clipboard";
 import ScriptureNote from "@/components/ScriptureNote";
 
+import FoldedNote from "@/components/FoldedNote";
+import NextStep from "@/components/NextStep";
 /**
  * Parenting Bible Verses — a topical lookup of Scripture for the real moments
  * of raising kids, each paired with a short, honest note for the parent.
@@ -157,21 +160,12 @@ export default function ParentingVerses() {
   return (
     <Layout>
       <SEOMeta
-        title="Parenting Bible Verses — Scripture for Raising Kids"
+        title="Bible Verses for Parents"
         description="Bible verses for the real moments of parenting — fear, anger, identity, obedience, screens, doubt — each with a short, honest note for the parent."
         url="https://www.livewellbyjamesbell.co/tools/parenting-verses"
       />
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>For the home</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px" }}>
-            Parenting Bible Verses
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "rgba(245,240,230,0.75)", maxWidth: "60ch" }}>
-            Scripture for the moments parenting actually hands you. Pick a topic, read the verses together, and let the short note give you a way in.
-          </p>
-        </div>
-      </section>
+      <FoldedNote id="parenting-verses" />
+      <InnerHead path="/tools/parenting-verses" title="Parenting Bible Verses" line="Scripture for the moments parenting actually hands you. Pick a topic, read the verses together, and let the short note give you a way in." plate="book" />
 
       <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
@@ -231,6 +225,9 @@ export default function ParentingVerses() {
           </div>
         </div>
       </section>
+      <div style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
+        <NextStep id="parenting-guide" line="What your child needs at their age, and one practice to start this week." />
+      </div>
     </Layout>
   );
 }

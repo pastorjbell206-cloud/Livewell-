@@ -1,0 +1,83 @@
+/* ─── ONE HOME FOR ALL HE DOES ───────────────────────────────────────
+ * WorkCard (art/WorkCard.tsx, .lw-work and its grid .lw-works),
+ * SubstackLatest (.sb-latest), and WorksRow (.lw-works-row).
+ * Tokens only; day and night come from :root and html.dark. */
+
+/* A work: plate, name, one line, one button. */
+.lw-works{list-style:none;margin:0;padding:0;display:grid;gap:var(--s-5) var(--s-4)}
+.lw-works--four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.lw-works--three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lw-works>li{display:flex;min-width:0}
+.lw-works>li>.lw-work{flex:1}
+.lw-work{display:flex;flex-direction:column;min-width:0;color:var(--ink)}
+.lw-work__art .lw-frame__in{aspect-ratio:4 / 3}
+.lw-work__text{display:flex;flex-direction:column;align-items:flex-start;flex:1;margin-top:14px;min-width:0}
+.lw-work__label{margin:0 0 8px;font-family:var(--U);font-weight:500;font-size:.75rem;line-height:1.5;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text)}
+.lw-work__name{margin:0;font-family:var(--F);font-weight:400;font-size:clamp(1.5rem,1.2rem + .8vw,1.875rem);line-height:1.08;letter-spacing:-.015em;color:var(--ink)}
+.lw-work__line{margin:6px 0 0;font-family:var(--U);font-size:15px;line-height:1.5;color:var(--ink-muted);max-width:44ch}
+.lw-work__actions{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:auto;padding-top:16px}
+.lw-work__btn{gap:8px;min-height:44px;padding:0 16px;font-size:15px}
+.lw-work__btn svg{flex:none}
+.lw-work__host{margin:8px 0 0;font-family:var(--U);font-size:13px;line-height:1.4;color:var(--ink-muted);overflow-wrap:anywhere}
+
+/* The wide first card: LiveWell itself. */
+.lw-work--lead{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:var(--s-5);align-items:center}
+.lw-work--lead .lw-work__art .lw-frame__in{aspect-ratio:16 / 10}
+.lw-work--lead .lw-work__text{margin-top:0;flex:none}
+.lw-work--lead .lw-work__name{font-size:clamp(2.5rem,1.8rem + 2vw,3.5rem)}
+.lw-work--lead .lw-work__line{font-family:var(--B);font-size:18px;line-height:1.6;max-width:40ch;margin-top:12px}
+.lw-work--lead .lw-work__actions{margin-top:0;padding-top:var(--s-3)}
+.lw-work--lead .lw-work__btn{min-height:48px;padding:0 22px}
+
+@media (max-width:1100px){.lw-works--four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){
+  .lw-work--lead{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
+  .lw-works--three{grid-template-columns:minmax(0,1fr)}
+}
+/* On a phone, a work is a row: a small square picture beside its words. */
+@media (max-width:640px){
+  .lw-works--four,.lw-works--three{grid-template-columns:minmax(0,1fr);gap:0}
+  .lw-works>li{border-top:1px solid var(--borderdk);padding:var(--s-3) 0}
+  .lw-works>li:first-child{border-top:0;padding-top:0}
+  .lw-works .lw-work{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:start}
+  .lw-works .lw-work__art .lw-frame{padding:3px}
+  .lw-works .lw-work__art .lw-frame__in{aspect-ratio:1 / 1}
+  .lw-works .lw-work__text{margin-top:0}
+  .lw-works .lw-work__name{font-size:24px}
+  .lw-works .lw-work__actions{padding-top:12px}
+  .lw-work--lead .lw-work__name{font-size:40px}
+}
+
+/* SubstackLatest: titles and dates, linked out. */
+.sb-latest{--sb-row:84px;--sb-ink:var(--ink);--sb-muted:var(--ink-muted);--sb-rule:var(--borderdk)}
+.sb-latest--dark{--sb-ink:var(--charcoal-fg);--sb-muted:var(--charcoal-fg-muted);--sb-rule:var(--charcoal-line)}
+.sb-latest__list{list-style:none;margin:0 0 var(--s-3);padding:0;max-width:var(--w-content,860px);border-bottom:1px solid var(--sb-rule)}
+.sb-latest__item{border-top:1px solid var(--sb-rule)}
+.sb-latest__link{display:flex;flex-direction:column;justify-content:center;gap:4px;min-height:var(--sb-row);padding:12px 0;color:var(--sb-ink);text-decoration:none;background-image:none}
+.sb-latest__title{font-family:var(--F);font-weight:400;font-size:clamp(1.3rem,1.15rem + .5vw,1.6rem);line-height:1.2;text-wrap:pretty}
+.sb-latest__link:hover .sb-latest__title,.sb-latest__link:focus-visible .sb-latest__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.sb-latest__meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;font-family:var(--U);font-size:13px;line-height:1.4;color:var(--sb-muted)}
+.sb-latest__where{display:inline-flex;align-items:center;gap:3px}
+.sb-latest__list--wait{border-bottom:0}
+.sb-latest__ghost{height:var(--sb-row);border-top:1px solid var(--sb-rule);position:relative}
+.sb-latest__ghost::before{content:"";position:absolute;left:0;top:24px;width:min(60%,420px);height:14px;background:var(--sb-rule);opacity:.6}
+.sb-latest__empty{margin:0 0 var(--s-2);font-family:var(--B);font-size:18px;line-height:1.6;color:var(--sb-ink)}
+.sb-latest__btn{gap:8px}
+.sb-latest--dark .btn{background:var(--charcoal-fg);color:var(--charcoal);border-color:var(--charcoal-fg);border-bottom-color:var(--mustard)}
+.sb-latest--dark .btn:hover{background:var(--charcoal-fg-muted)}
+.sb-latest--dark .btn--quiet{background:transparent;color:var(--charcoal-fg);border:1px solid var(--charcoal-fg-muted)}
+.sb-latest--dark .btn--quiet:hover{background:transparent;border-color:var(--charcoal-fg)}
+.sb-latest--dark :focus-visible{outline-color:var(--charcoal-fg);box-shadow:0 0 0 5px var(--charcoal)}
+@media (max-width:640px){.sb-latest{--sb-row:92px}}
+
+/* WorksRow: the compact row on /about. */
+.lw-works-row{display:flex;flex-direction:column;gap:12px}
+.lw-works-row__label{margin:0;font-family:var(--U);font-weight:500;font-size:.75rem;line-height:1.5;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text)}
+.lw-works-row__list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.lw-works-row__link{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px 0 6px;border:1px solid var(--borderdk);background:var(--bone);color:var(--ink);font-family:var(--U);font-size:15px;font-weight:500;text-decoration:none;transition:border-color .2s var(--ease)}
+.lw-works-row__link:hover{border-color:var(--ink)}
+.lw-works-row__icon{display:grid;place-items:center;width:32px;height:32px;color:var(--art-ink)}
+.lw-works-row__out{color:var(--ink-muted)}
+.lw-works-row__all{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;min-height:44px;font-family:var(--U);font-size:16px;font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--mustard)}
+.lw-works-row__all svg{transition:transform .25s var(--ease)}
+.lw-works-row__all:hover svg{transform:translateX(3px)}

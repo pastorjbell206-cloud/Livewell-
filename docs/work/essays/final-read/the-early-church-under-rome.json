@@ -1,0 +1,248 @@
+{
+ "slug": "the-early-church-under-rome",
+ "reads": [
+  {
+   "lens": "Last reader before publication: forbidden language, stamps, AI tells, integrity and biography rules, read as the skeptic and as a pastor deciding whether to hand it to a congregation. Text checked: /h",
+   "findings": [
+    {
+     "where": "What the Early Church Teaches a Post-Christian America, the paragraph beginning \"A post-Christian America will have civic gestures of its own\" (read with the Falwell paragraph in How Rome Saw the Christians)",
+     "problem": "The political criticism points only one way. Jerry Falwell is the only modern figure the essay names. The other American targets (\"Many of us have called the loss of deference persecution\" and \"A church fighting to recover its place\") also point right. Nothing applies the incense test to pressure from the left. A pastor with a conservative congregation will read the piece as aimed at one side, which the brief's rule of same instrument and same grief forbids. Falwell can stay: his remark mirrors Tertullian's Tiber line exactly, and his apology is noted. The fix is to let the closing incense question cut both ways.",
+     "fix": "Replace \"A post-Christian America will have civic gestures of its own, asked of Christians as the price of standing.\" with \"A post-Christian America will have civic gestures of its own, asked of Christians as the price of standing, some from the left and some from the right.\" If the \"standing\" fix below is also taken, write \"price of respectability\" here.",
+     "severity": "should"
+    },
+    {
+     "where": "Decius and the Certificates of Sacrifice, first paragraph",
+     "problem": "Rulebook leakage. \"The most sympathetic reading is\" announces the fair-description move instead of simply making it.",
+     "fix": "Replace \"The most sympathetic reading is that Decius wanted the whole empire to stand together before its gods in a dangerous time.\" with \"Decius may simply have wanted the whole empire to stand together before its gods in a dangerous time.\"",
+     "severity": "should"
+    },
+    {
+     "where": "How Rome Saw the Christians, Wilken paragraph",
+     "problem": "Rulebook leakage. \"and he is right to\" certifies the essay's own fairness. The next sentence already makes the concession.",
+     "fix": "Replace \"takes those critics seriously, and he is right to. They saw something true.\" with \"takes those critics seriously. They saw something true.\"",
+     "severity": "should"
+    },
+    {
+     "where": "What the Early Church Teaches a Post-Christian America, the paragraph just before \"That is the church a post-Christian America is going to need.\"",
+     "problem": "This is an aphoristic three-beat closer (\"had a great deal to lose. It lost much of it. What it never had was...\"). It also plays a clever reversal on the title and then recaps the section in a parallel clause (neighbors who distrusted it / emperors who hunted it / worship for God alone). That recap is the one place where the ending summarizes instead of leaving weight. The line it repeats (worship for God alone) is already made in the \"Where did those Christians draw the line?\" paragraph.",
+     "fix": "Replace \"The church before Constantine had a great deal to lose. It lost much of it. What it never had was a position to protect. That left it free to spend itself on neighbors who distrusted it and to pray for emperors who hunted it, while it kept its worship for God alone.\" with \"Having no position to protect left the church before Constantine free to spend itself on neighbors who distrusted it and to pray for emperors who hunted it.\"",
+     "severity": "should"
+    },
+    {
+     "where": "Pliny's Letter to Trajan through the closing lines (the \"standing\" motif)",
+     "problem": "A pun on \"standing\" (social status) and \"standing on\" (foundation) is stamped through the piece seven times: \"no legal standing\", \"losing cultural standing\", \"resting on that standing\", \"never had standing to lose\", \"the price of standing\", \"what they were standing on\", \"nothing they stood on\". By the time the closing image arrives, the reader has already heard the wordplay.",
+     "fix": "Replace \"The church before Constantine never had standing to lose,\" with \"The church before Constantine never had the culture's deference to lose,\" and replace \"asked of Christians as the price of standing\" with \"asked of Christians as the price of respectability\". That leaves the closing \"standing on\" image its own.",
+     "severity": "should"
+    },
+    {
+     "where": "Decius and the Certificates of Sacrifice, Cornelius paragraph",
+     "problem": "The verdict sentence frame repeats within the essay. \"A community with no legal right to exist...\" echoes \"A community with no legal standing had thinned out the temples\" from the Pliny section. It also restates the fifteen hundred from the sentence just before it.",
+     "fix": "Replace \"A community with no legal right to exist, a year after the worst persecution it had yet faced, was feeding fifteen hundred people in the capital.\" with \"This was a year after the worst persecution it had yet faced.\"",
+     "severity": "should"
+    },
+    {
+     "where": "How Rome Saw the Christians, Celsus paragraph",
+     "problem": "This is a tidy triplet with \"Roman\" repeated three times, and it sits inside a paraphrase of Celsus. The roads are not in Celsus's argument (Against Celsus 8.68 is about desertion of the emperor), so the triplet also blurs where the source ends and the essay begins.",
+     "fix": "Replace \"The Christians used Roman roads, lived under Roman law, and enjoyed the Roman peace.\" with \"The Christians lived under Roman law and enjoyed the Roman peace.\"",
+     "severity": "should"
+    },
+    {
+     "where": "What the Early Church Teaches a Post-Christian America, the paragraph beginning \"Where did those Christians draw the line?\"",
+     "problem": "This overclaims. A skeptic who has read the apologists will object. Origen answered Celsus by imagining all the Romans embracing the faith (Against Celsus 8.68 to 69), and Tertullian wrote that the Caesars would have believed if Caesars could be Christians (Apology 21). What the pre-Constantinian church never asked for was establishment.",
+     "fix": "Replace \"They never asked Rome to become Christian, and they had no Christian culture to mourn.\" with \"They never asked Rome to establish their faith, and they had no Christian culture to mourn.\"",
+     "severity": "should"
+    },
+    {
+     "where": "What the Early Church Teaches a Post-Christian America, second paragraph",
+     "problem": "This movement uses \"Not X. Y.\" twice: \"That is not Decius. It is closer to...\" and, two paragraphs later, \"Decius did not create the lapsed. A long peace did\". \"That is not Decius\" also repeats the previous paragraph's \"No one here is being asked for a certificate of sacrifice.\" Keep the second one, which carries the argument.",
+     "fix": "Replace \"That is not Decius. It is closer to the way things began in Lyon,\" with \"What we face is closer to the way things began in Lyon,\"",
+     "severity": "consider"
+    },
+    {
+     "where": "What the Early Church Teaches a Post-Christian America, second paragraph",
+     "problem": "This is a two-beat framing sentence, and \"it should tell us something\" is the kind of vague framing sentence the brief warns against. The next sentence already says what it tells us.",
+     "fix": "Replace \"That should embarrass us, and it should tell us something.\" with \"That should embarrass us.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "How the Church Grew, last paragraph",
+     "problem": "This is a balanced antithesis epigram (\"The emperor received honor, and God alone received fear.\") stacked right before the paragraph's real closer (\"but they would not give him a pinch of incense\"). The section ends on two verdict lines where one is enough.",
+     "fix": "Replace \"The emperor received honor, and God alone received fear.\" with \"Fear, in Peter's list, is kept for God alone.\" The next sentence, beginning \"So they gave Caesar\", still follows.",
+     "severity": "consider"
+    },
+    {
+     "where": "How Rome Saw the Christians, first paragraph",
+     "problem": "This announces the fairness move (\"that is lazy history\"). It also overclaims: \"it keeps us from learning anything\".",
+     "fix": "Replace \"It's easy to make Rome the villain of this story and stop there, but that is lazy history, and it keeps us from learning anything.\" with \"It's easy to make Rome the villain of this story and stop there, but the Romans had their reasons.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Final line of the body",
+     "problem": "The last line uses the parallel \"was enough for ... is enough for\" construction, the same shape as the \"enough to ... enough to\" tell the judges caught. It still lands on Christ, so the problem is only the parallel kicker shape.",
+     "fix": "Replace \"The risen Christ who was enough for Blandina in the arena is enough for His church in a country that no longer defers to it.\" with \"The risen Christ Blandina confessed in the arena is enough for His church in a country that no longer defers to it.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "The Great Persecution, last paragraph",
+     "problem": "This takes a side on a question traditions divide on. Whether Constantine's favor was a trial the church failed to recognize is the free-church reading (Baptist, Anabaptist). Catholic, Orthodox and magisterial Protestant traditions read it differently. The sentence asserts the free-church reading as settled. The essay's own sources (Cyprian, Eusebius on the long peace) support \"a different kind of trial\". They do not support the claim about centuries.",
+     "fix": "Replace \"and much of the church would take centuries to recognize it as a trial at all.\" with \"and Christians have argued ever since over whether, and when, the church recognized it as a trial at all.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Decius and the Certificates of Sacrifice, \"We like to imagine the early church as a church of heroes\" paragraph",
+     "problem": "This is an unsupported inference written as fact. No source says the lapsed \"had been told\" faith would be cheap. Cyprian blames a long peace, not anything they were taught.",
+     "fix": "Replace \"who had been told that faith would not cost them much and had believed it.\" with \"who had grown used to a faith that cost them little.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Pliny's Letter to Trajan, third paragraph",
+     "problem": "This says more than the source does. Pliny's \"quae ministrae dicebantur\" says the women were called ministrae. It does not say by whom.",
+     "fix": "Replace \"women the Christians called *ministrae*\" with \"women who were called *ministrae*\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Closing Texts",
+     "problem": "1 Peter 2:17 is quoted in full in the body (How the Church Grew) and again in Closing Texts. A repeated verse reads as decoration. The brief allows two or three closing verses, so two remain if it is cut.",
+     "fix": "Delete the line: *\"Honor everyone. Love the brotherhood. Fear God. Honor the emperor.\"* (1 Peter 2:17)",
+     "severity": "consider"
+    },
+    {
+     "where": "Title",
+     "problem": "\"When the Church Had Nothing to Lose\" is a literary title, not the plain words people search, and the essay's own ending says the church \"had a great deal to lose\". James approved this title, so it is his call, not an edit to make silently. Taking the fix to that ending paragraph removes the direct contradiction.",
+     "fix": "Raise with James. A plain alternative: \"How the Early Church Lived Under Rome\".",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "Forbidden Language, searched literally in the title, excerpt and body: none of the 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), the 8 phrases (including 'blessed', 'gospel-centered', 'authentic community') or the 6 therapy-speak phrases appear. Pew is cited as 'Pew reported in 2025', so the forbidden 'Landscape' never shows up.",
+    "Stamps: none of the seven ('Those of us who preach', 'pastors like me', 'This is not both-sidesism', 'Consider ...', 'none of this', 'the record', 'I don't exempt myself') appear. 'records' appears only as a verb ('The same letter records').",
+    "Rulebook vocabulary: no steelman, verdict, indictment, self-implication or both-sidesism. 'honest' and 'fair' are used zero times. 'Someone will object ... The objection is right.' is the brief's approved habit of voicing an objection and making a real concession, not leakage.",
+    "Em-dash: zero U+2014 and no '--'. The only dash is the en-dash in the verse range 1 Timothy 2:1\u20132, which is allowed.",
+    "Exclamation point: none anywhere. Tertullian's 'to the lion!' is given as paraphrase without it.",
+    "Headings: all seven are plain and descriptive (Pliny's Letter to Trajan; How Rome Saw the Christians; The Martyrs of Lyon; Decius and the Certificates of Sacrifice; How the Church Grew; The Great Persecution; What the Early Church Teaches a Post-Christian America).",
+    "Standfirst (the excerpt) is one plain declarative sentence, not a balanced antithesis.",
+    "Biography: the only personal reference is 'that includes the church I pastor'. That is a confirmed fact, used to put himself inside the diagnosis, not as a credential. There is no title, no years in ministry, no book count, no Southern Baptist reference, no Fenton, and nothing about his sons, atheism or wife. The Carthage merchant passage is a plain hypothetical, not invented biography.",
+    "Scholar parade: only three modern scholars (Wilken, Stark, Kreider). Each is named with his idea and no 'In *Title* (YEAR)' formula is used. Stark's figures are qualified ('Historians argue about his figures').",
+    "Announced turns: none of the caught forms appear. 'Where did those Christians draw the line?' and 'Which is which? And how would we know?' are real questions, which the brief allows.",
+    "Contested second-order questions: military service (Tertullian, the legions) and the Novatian dispute are told as history. No position on pacifism or on any doctrine is asserted. The only open point is the Constantine judgment flagged above.",
+    "Crisis-facing: not a crisis piece. No self-harm or abuse by a church leader is in view, so no 988 line or Find Help link is required.",
+    "Ending: it turns the mirror on 'us' and on the writer's own church and lands on the resurrection and the risen Christ. Apart from the one recap paragraph flagged above, it leaves weight rather than summarizing.",
+    "Self-implication is done, not announced: 'Put most of us in a magistrate's chair', 'If I had been a Christian merchant in Carthage in 250', 'Many of us have called the loss of deference persecution'.",
+    "Scripture: nine quotations, each with its reference beside it, used inside the argument (1 Peter in Bithynia, 1 Timothy 2 with Galerius). The Closing Texts format *\"Quote.\"* (Reference) is correct. 1 Peter 1:1's capital 'Dispersion' matches the ESV according to one web search ([esv.org 1 Peter 1:1](https://www.esv.org/verses/1+Peter+1:1;1+Peter+2:11/), [biblia.com ESV](https://biblia.com/bible/esv/1-peter/1/1)). Every essay's ESV wording still needs a recheck with James's API key, per NOTES.md.",
+    "Quotations match the claims ledger: 'Away with the atheists', 'I am a Christian', 'the faithful and true witness', 'See how they love one another', and 'Thanks be to God' (restored from the ledger's 'Original wording, for restoring' list). Paraphrases carry no quotation marks.",
+    "The restored figures match the ledger's originals: Gallup (47 percent in 2020, 70 percent in 1999), Stark (about forty percent a decade, around six million by 300) and Pew (62 percent in 2025, 78 percent in 2007).",
+    "node scripts/validate-essays.mjs in /home/user/livewell-land reports 'Essays: clean (5 files)'.",
+    "Register measurements: 4,077 words; 43 paragraphs averaging 92 words (target 80 to 90); mean sentence 18.9 words (target 17 to 19); 20 percent of sentences at 8 words or fewer (target about 25 percent). These are near target and not a failure.",
+    "Links: none. The brief sets a maximum of four, not a minimum, so this passes."
+   ]
+  },
+  {
+   "lens": "Fact audit, read-only. I went through the published essay (/home/user/livewell-land/client/public/essays/the-early-church-under-rome.json, whose body matches docs/work/essays/the-early-church-under-ro",
+   "findings": [
+    {
+     "where": "Decius and the Certificates of Sacrifice, paragraph 3: \"Others bought certificates without going near an altar.\"",
+     "problem": "(a) A checkable historical claim with no ledger line. The ledger's Decius lines cover those who sacrificed of their own accord (On the Lapsed 8) but not the libellatici. The claim is true: an audit search found Wikipedia \"Lapsi (Christianity)\", the Catholic Encyclopedia \"St. Cyprian of Carthage\" and the heurist commentary on Cyprian's On the Lapsed, all describing Christians who got a libellus by bribery without sacrificing and were classed apart from the sacrificati.",
+     "fix": "Keep the sentence. Add a ledger line under Decius: \"Others bought certificates without going near an altar (the libellatici). Verified, audit search: Wikipedia 'Lapsi (Christianity)', Catholic Encyclopedia 'St. Cyprian of Carthage' (newadvent.org/cathen/04583b.htm, catholic.com) and the heurist commentary on On the Lapsed: those who obtained a certificate, often by bribery, without sacrificing, distinguished from the sacrificati. Primary text to read when the library is open: Cyprian to Antonianus (ANF Epistle 51).\"",
+     "severity": "should"
+    },
+    {
+     "where": "Decius and the Certificates of Sacrifice, paragraph 2: \"Rome had celebrated its thousandth birthday shortly before, under the emperor Philip,\"",
+     "problem": "(g) Restoration. Correction 12 records the writer's original, \"Rome had celebrated its thousandth birthday in 248\", and says it was generalized only because no source seen gave 248. This audit's search found it: Wikipedia \"248\", the Encyclopaedia Romana ludi page (penelope.uchicago.edu) and a Kyle Harper chapter (chss.wwu.edu PDF) all put the millennium games under Philip in 248, on April 21.",
+     "fix": "Restore the year: \"Rome had celebrated its thousandth birthday in 248, under the emperor Philip, in the middle of a crisis, with Goths pressing on the Danube and armies making and unmaking emperors.\" Update correction 12 and the Decius ledger line to cite those three search results.",
+     "severity": "should"
+    },
+    {
+     "where": "Decius and the Certificates of Sacrifice, paragraph 3: \"Fabian, the bishop of Rome, died early in 250.\"",
+     "problem": "(g) Restoration. Correction 13 records the original, \"died in January 250\". The second closing pass saw a source that confirms it: Wikipedia \"Pope Fabian\" (papacy ended 20 January 250), with Britannica \"St. Fabian\". The ledger kept the generalization anyway (\"the exact day is not needed\"). The month itself is now sourced.",
+     "fix": "Restore the month: \"Fabian, the bishop of Rome, died in January 250.\" Update correction 13 to say the month was confirmed in the second pass (Wikipedia \"Pope Fabian\", Britannica \"St. Fabian\").",
+     "severity": "should"
+    },
+    {
+     "where": "How the Church Grew, paragraph 1: \"The sociologist Rodney Stark estimated that the church grew at about forty percent a decade\"",
+     "problem": "(g) Restoration. Correction 16 records that \"in the 1990s\" was cut only because no source gave the year of publication. This audit's search found Princeton University Press's listings (press.princeton.edu), the NYPL catalog and Wikipedia \"The Rise of Christianity\", all giving Princeton University Press, 1996.",
+     "fix": "Restore: \"The sociologist Rodney Stark estimated in the 1990s that the church grew at about forty percent a decade and that by the year 300 there were around six million Christians, about a tenth of the empire.\" Add to the ledger line: \"The Rise of Christianity: A Sociologist Reconsiders History, Princeton University Press, 1996 (press.princeton.edu; NYPL catalog).\" (The brief allows a year when it helps. If James prefers no date, leave it out.)",
+     "severity": "should"
+    },
+    {
+     "where": "Pliny's Letter to Trajan, paragraph 3: \"They met on a fixed day before dawn and sang a hymn to Christ as to a god.\"",
+     "problem": "(g) Restoration. Correction 1 and \"Original wording, for restoring\" keep the original `sang a hymn to Christ \"as to a god.\"` as paraphrase because no named translation with that wording had been seen. This audit's search found J. B. Lightfoot's translation rendering the line \"singing alternately a hymn to Christ as to a god\", cited in R. P. Martin's Carmen Christi (Cambridge Core) and in a Vox Evangelica vol. 3 footnote (gospelstudies.org.uk). It also matches the Latin quasi deo (Perseus). Caveat: this was seen as quoted in search results, not in Lightfoot's volume itself.",
+     "fix": "Restore the original quotation: \"They met on a fixed day before dawn and sang a hymn to Christ \\\"as to a god.\\\"\" Record in the ledger: \"as to a god\" is matched to J. B. Lightfoot's translation (\"singing alternately a hymn to Christ as to a god\"), as quoted in Martin, Carmen Christi (Cambridge Core) and Vox Evangelica 3 (gospelstudies.org.uk). If James wants the line checked in Lightfoot's own volume first, leave it as paraphrase. It is not wrong as it stands.",
+     "severity": "should"
+    },
+    {
+     "where": "The Martyrs of Lyon, paragraph 4: \"The same letter records that the survivors refused to be called martyrs.\"",
+     "problem": "(c) The ledger line repeats the essay's wording, but the source it cites (Church History 5.2.2-3) describes \"these witnesses\" who had \"been brought back to prison from the wild beasts, covered with burns and scars and wounds\". These are the martyrs of the account while still alive, not people who outlived the persecution. A reader will take \"the survivors\" to mean the second group. The essay's later line (\"the confessors who bore far worse still would not let anyone call them martyrs\") fits the source better.",
+     "fix": "\"The same letter records that those who had been brought back to prison from the arena, covered with burns and wounds, refused to be called martyrs.\" Change the ledger line to match.",
+     "severity": "consider"
+    },
+    {
+     "where": "The Martyrs of Lyon, paragraph 1: \"which Eusebius later copied into his history of the church\"",
+     "problem": "(c) The sentence implies Eusebius copied the whole letter. He gives extracts: he skips passages (\"after some other things\") and sends readers to his Collection of Martyrs for the full account. The audit search confirms this: the Cambridge History of Religions chapter calls the letter \"excerpted ... and significantly redacted\". The ledger line (\"copied by Eusebius\", 5.1.2-3) does not note it.",
+     "fix": "\"...which survives in a letter the churches there sent to the Christians of Asia and Phrygia, much of which Eusebius later copied into his history of the church.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "How Rome Saw the Christians, paragraph 3: \"quoted it at length in his reply seventy years later\"",
+     "problem": "(c) The ledger line reads \"about seventy years later\". The essay states a flat seventy right after dating Celsus to \"around 170 to 180\", and the sources seen give \"nearly 70\" (encyclopedia.com) and 178 to 248.",
+     "fix": "\"We have much of it only because Origen of Alexandria quoted it at length in his reply some seventy years later.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "How Rome Saw the Christians, paragraph 4: \"Robert Louis Wilken ... takes those critics seriously, and he is right to.\"",
+     "problem": "(f)/(c) The ledger itself records that Wilken died on June 6, 2026, and this audit's search confirms it (Wikipedia, ncregister.com, dhs.edu). The sentence is fair and supported. But its subject is the man, in the present tense, four months after his death. He is no longer a living person, so the sentence is not unfair, only stale.",
+     "fix": "\"Robert Louis Wilken, a historian of early Christianity who wrote a book on how the Christians looked to the Romans, took those critics seriously, and he was right to.\" Note his death (June 6, 2026) on the Wilken ledger line.",
+     "severity": "consider"
+    },
+    {
+     "where": "Pliny's Letter to Trajan, paragraph 3: \"women the Christians called *ministrae*\"",
+     "problem": "(c) The Latin is passive, quae ministrae dicebantur (\"who were called ministrae\"), and does not say who called them that. The ledger line reads \"called ministrae\" without \"the Christians\". Reading it as their title in the church is the usual view, but the essay states it as if the text said so.",
+     "fix": "\"To check their story, he had two enslaved women tortured, women who were called *ministrae*, a word often translated deaconesses.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Decius and the Certificates of Sacrifice, last paragraph: \"was feeding fifteen hundred people in the capital\"",
+     "problem": "(c) Cornelius, in Church History 6.43.11 as the ledger has it, gives \"over fifteen hundred widows and persons in distress\", and the essay's previous sentence says \"more than fifteen hundred\". The second sentence drops the \"more than\".",
+     "fix": "\"...was feeding more than fifteen hundred people in the capital.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "Decius and the Certificates of Sacrifice, last paragraph: \"That same year Cornelius described the Christian community in Rome in a letter Eusebius preserved.\"",
+     "problem": "(a) The ledger checks every count in the letter but has no line for its date (251). The audit search found no source stating the year. It places the letter to Fabius of Antioch after the October 251 Roman synod, which is an inference.",
+     "fix": "Add a ledger line dating the letter. McGiffert's note to Church History 6.43 is the likely source; record the year it gives. If no source dates it to 251, write \"Soon afterward Cornelius described the Christian community in Rome in a letter Eusebius preserved.\"",
+     "severity": "consider"
+    },
+    {
+     "where": "What the Early Church Teaches a Post-Christian America: \"They never asked Rome to become Christian, and they had no Christian culture to mourn.\"",
+     "problem": "(a) A sweeping historical negative with no ledger line. The ledger files the section under \"Interpretive judgments ... Not claims.\" The apologists asked for justice and toleration, not for a Christian state, but they did urge rulers toward the faith. Justin closes his First Apology warning the emperors of God's judgment. Tertullian, Apology 21, says the Caesars too would have believed on Christ if Christians could have been Caesars. Origen, Against Celsus 8.68-72, pictures all Romans embracing the faith. A well-read skeptic could challenge the line.",
+     "fix": "\"They asked Rome for justice, not for a Christian empire, and they had no Christian culture to mourn.\" Add a ledger line citing Justin, First Apology 2-3 (the request for a fair trial).",
+     "severity": "consider"
+    },
+    {
+     "where": "How the Church Grew (Stark's figures and nursing mechanism; Kreider's thesis and \"no handbook on evangelism\") and How Rome Saw the Christians (Wilken)",
+     "problem": "(b) These ledger lines are marked verified, but they rest on reviews and search-result summaries, not the books. The ledger says so itself (\"Summaries of Stark, not his text\"). CLAUDE.md's Scholarship Standard says not to attribute a claim to a thinker met only in someone else's summary. The summaries agree with one another, with the arithmetic and with what is widely known of these books, so nothing in the essay looks wrong. The standard is simply not yet met.",
+     "fix": "No text change needed if the books cannot be reached. Before publication, if possible, check the lines against Stark, The Rise of Christianity, ch. 1 (Table 1.1, 6,299,832 Christians, 10.5 percent, in 300) and ch. 4 (nursing), and Kreider, The Patient Ferment of the Early Church, introduction. Then mark the ledger lines as checked against the text.",
+     "severity": "consider"
+    }
+   ],
+   "clean_checks": [
+    "All 13 quotations in the essay (9 Scripture, 4 non-Scripture) have ledger lines and match what the ledger says was matched. The 9 Scripture quotations come from 8 verses, since 1 Peter 2:17 appears twice. The 4 non-Scripture quotations are \"Away with the atheists\", \"I am a Christian.\", \"See how they love one another,\" and \"Thanks be to God.\"",
+    "Two quotations differ slightly from the source text, and the ledger notes both. \"Away with the atheists\" differs from ANF's \"Atheists\" only in case, and modern translations use lowercase. \"See how they love one another\" leaves out the inserted speech tag \"they say\" (Apology 39, Vide, inquiunt, ut ...). Both are acceptable.",
+    "Scripture in ESV form, each with its reference: 1 Pet 1:1, 2:12, 4:16, 2:17 (twice), 4:12; Rev 3:14; 1 Tim 2:1-2; Heb 13:14. The ESV wording matches the ledger, and this audit's search confirms esv.org's capital D in \"the Dispersion\" (correction 11 is right).",
+    "Every reference matches its verse's sense in the BSB files in client/public/bible/ch/. The differences are only translation wording: 1 Pet 2:17 has \"honor the king\" against ESV \"emperor\", and 1 Tim 2:1-2 has \"petitions\" against \"supplications\".",
+    "Closing Texts are in the brief's *\"Quote.\"* (Reference) form. The essay has no em-dashes, no exclamation points, and only one en-dash, in the 1 Timothy 2:1\u20132 range. There are no forbidden words, and none of the words steelman, verdict, indictment, honest or fair.",
+    "Pliny section, all matched to ledger lines: about 112; Bithynia and Pontus; the 150 firemen; questioning three times; led away to execution; obstinacy; incense and wine before the statue; twenty years; the oath (theft, robbery, adultery, deposits); the harmless meal and the ban on associations; superstition; every age, rank and sex, villages and farms; temples and the trade in sacrificial animals; Trajan's rescript; the century and a half.",
+    "Rome section, all matched to ledger lines: pax deorum; atheists; Polycarp at Smyrna around 155; Tertullian around 197 in Carthage (paraphrase, no quotation marks); Celsus 170 to 180 and his paraphrased lines (3.55, 8.68); Wilken's book; Falwell on September 13, 2001 and his apology. Falwell died in 2007, and the sentence is fair because it includes the apology.",
+    "Lyon section, matched to ledger lines: 177 under Marcus Aurelius; exclusion, then the crowd, then arrest; the slaves' charges; Pothinus past ninety, dead in two days; Sanctus answering in Latin; Blandina, the post, last to die; the emperor's ruling; six days, burning, the Rh\u00f4ne; prayer for the fallen; many restored; Irenaeus and Against Heresies.",
+    "Decius section, matched to ledger lines: Origen around 248; local and sporadic persecution; the edict in late 249 or early 250; dozens of Egyptian certificates; no certificate names Christians; the scholarly debate; Origen's imprisonment; On the Lapsed 5-8 (Cyprian's 'very many bishops' is softened to 'some', an understatement, not an error); Cyprian's hiding; Decius dead in 251; Novatian; the councils of 251; Cornelius's counts; Valerian 257, Cyprian exiled, sentenced in 258.",
+    "Growth section, matched to ledger lines: Stark's figures; Dionysius in the early 260s; Julian a century later on the Galileans' poor; Tertullian's monthly collection; Kreider; the patience treatises; the closed Eucharist; the Hippolytan order ('traditionally attributed', 'as long as three years'); Tertullian, Apology 42 and 30 (paraphrase, no quotation marks); Justin around 150, First Apology 17.",
+    "Great Persecution section, matched to ledger lines: more than forty years of peace after 260; Eusebius 8.1 on laxity; February 23, 303 and the first edict; the 304 sacrifice edict; Constantius in Gaul and Britain; most of a decade in the East; April 30, 311 and Galerius dead within days; 312; Pamphilus; Eusebius's 'earthly copy' (paraphrase matched to the Oration 1.6 and 3.5).",
+    "Final section, matched to ledger lines: First Amendment free exercise; Gallup 47 percent in 2020, 70 percent in 1999, below half for the first time in an eight-decade trend; Pew 62 percent in 2025 against 78 percent in 2007, perhaps leveling off. The essay avoids the forbidden word in Pew's study name.",
+    "Lines with no ledger entry that are general or interpretive and need none: the standfirst's 'almost three centuries'; 'Christians in other parts of the world face prison and death'; the hypothetical business rival; 'Rome distrusted any group'. 'Paul had told Timothy' and 'the honor Peter told Christians to give' follow the letters' own attribution, the same traditional authorship the ledger already uses for 1 Peter.",
+    "Biography: only 'the church I pastor', which NOTES.md allows. No title, years, book count or invented scene.",
+    "No living person is named apart from James. Wilken (died June 6, 2026), Falwell (2007), Stark (2022) and Kreider (2017) are all deceased.",
+    "No ledger line is still marked unverified, not checked, open or memory-based.",
+    "Restorations I considered and did not propose: Origen 'two years earlier' (sources seen give about 248, 248-249 and 246-250, so two years is not confirmed); ministrae 'most translators' (one search result is too thin, and 'often translated' is safe); 'the longest peace the church had known' (no source ranks it)."
+   ]
+  }
+ ]
+}

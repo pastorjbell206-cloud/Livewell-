@@ -1,0 +1,34 @@
+{
+  "piece": "the-council-of-nicaea-what-was-decided-in-325",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first: clean. Literal search finds no forbidden word or phrase, no em-dash, and both exclamation points inside John 20:28. 'In short' and 'truly' occur only inside verbatim quotations (Theodoret, Constantine). Two of six findings kept, both 'should'; four dropped as plain human prose or as replacements that were worse than the original. Nothing added.",
+  "keep": [
+    {
+      "quote": "That question matters to ordinary faith more than most people expect, and Constantine's first instinct, that this was a quarrel over words, sounds a good deal more like many American Christians than anything the bishops said.",
+      "tell": "Vague framing sentence; a comparison that does not parse (an instinct 'sounds like' Christians, then like 'anything the bishops said')",
+      "replacement": "That question matters to ordinary faith more than most people expect, and Constantine's first instinct, that this was a quarrel over words, is a good deal closer to what many American Christians think than anything the bishops said.",
+      "severity": "should",
+      "note": "First reader's replacement dropped 'first instinct', which the ledger (item 4a) protects: Constantine later pressed homoousios himself. This version keeps 'first instinct', 'quarrel over words', 'many American Christians' and 'anything the bishops said' exactly, and only repairs the comparison."
+    },
+    {
+      "quote": "Some resisted *homoousios* because they feared it erased the difference between the Father and the Son. The history is messier than the Sunday school version.",
+      "tell": "Paragraph ends by restating itself as a slogan; stock phrase",
+      "replacement": "Some resisted *homoousios* because they feared it erased the difference between the Father and the Son.",
+      "severity": "should",
+      "note": "The paragraph has already shown the mess through Hanson; the section already has its one verdict line ('We shouldn't tell that part as a simple victory'). Cutting loses no fact."
+    }
+  ],
+  "dropped": [
+    "'And if anyone bent the gospel to fit Greek philosophy, Arius is at least as easy to accuse.' Dropped: a gap in the argument, not an AI tell, and the proposed fix adds a newly voiced objection ('People also say ...') the ledger does not carry. Passed to for_james instead.",
+    "'The tide turned with Theodosius.' Dropped: an ordinary idiom any person would use; 'Theodosius changed that.' has a vague 'that' and is no better.",
+    "'To them Arius sounds sensible. In the 320s plenty of bishops thought so too.' Dropped: the looseness is how a person talks, and the short pair lands the section. Not machine-sounding.",
+    "'Athanasius became bishop of Alexandria in 328. In 335 a council at Tyre deposed him, and Constantine sent him into exile at Trier, in Gaul.' Dropped: the replacement is an and-and run-on that reads worse; a short chronicle paragraph is right for a list of reversals."
+  ],
+  "added": [],
+  "for_james": [
+    "The paragraph beginning 'And if anyone bent the gospel to fit Greek philosophy' answers a charge the Case Against Nicaea section never states. If you want it tied in, one sentence of yours in that section naming the Greek-philosophy charge would do it; we did not write one for you.",
+    "Saved Substack profile vs docs/VOICE-JAMES-BELL.md: the profile asks for 1,500 to 2,500 words, 2 to 4 sentence paragraphs, a 'Monday Morning' block and a screenshot line. This essay follows VOICE-JAMES-BELL.md (developed paragraphs, no application box), which governs.",
+    "The historical middle could be any careful historian. Only a real memory of yours (for example, whether you once believed Constantine invented Jesus's divinity) would make it unmistakably yours. Nothing has been invented."
+  ]
+}

@@ -62,7 +62,7 @@ export default function WhenGodBlessAmerica() {
   return (
     <Layout>
       <SEOMeta
-        title="When God Bless America Replaces Thy Kingdom Come — by James Bell"
+        title="When God Bless America Replaces Thy Kingdom Come"
         description="A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Available now as an ebook."
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/when-god-bless-america`}
@@ -74,7 +74,7 @@ export default function WhenGodBlessAmerica() {
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
           <img
             src={COVER}
-            alt="When God Bless America Replaces Thy Kingdom Come — cover"
+            alt="Cover of When God Bless America Replaces Thy Kingdom Come"
             width={1600} height={2416}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }}
           />
@@ -107,13 +107,13 @@ export default function WhenGodBlessAmerica() {
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
             <p style={{ margin: "0 0 1.2em" }}>
-              In a time of political panic, rising tribalism, and growing confusion inside the church, many believers have quietly begun to place their practical trust in power, policy, and national strength rather than in Christ. The language of faith remains. The rituals remain. The worship remains. But the heart has moved.
+              Many believers have quietly begun to place their practical trust in power, policy, and national strength rather than in Christ. The language of faith is still there, and so are the rituals and the worship, but the heart has moved.
             </p>
             <p style={{ margin: "0 0 1.2em" }}>
-              In <em>When God Bless America Replaces Thy Kingdom Come</em>, James Bell writes to the church in America as a pastor inside it — from Scripture, from church history, and from what he has watched happen in his own sanctuary. He exposes how patriotism can become practical salvation, how fear can rewrite doctrine, and how the cross confronts every attempt to turn Jesus into a mascot for political power.
+              In <em>When God Bless America Replaces Thy Kingdom Come</em>, James Bell writes to the church in America as a pastor inside it, drawing on Scripture, church history, and what he has watched happen in his own sanctuary. He exposes how patriotism can become practical salvation, how fear can rewrite doctrine, and how the cross confronts every attempt to turn Jesus into a mascot for political power.
             </p>
             <p style={{ margin: 0, fontWeight: 600 }}>
-              This is not a book about who to vote for. It is a book about who you worship.
+              This book won't tell you who to vote for. It asks who you worship.
             </p>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function WhenGodBlessAmerica() {
             Read it now
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
+            $8.99 for the complete ebook: an EPUB for your e-reader and a PDF for everything else, delivered the moment you check out.
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <StripeBuyButton />

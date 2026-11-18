@@ -28,8 +28,8 @@ interface NewsletterSignupProps {
 
 export function NewsletterSignup({
   variant = "inline",
-  title = "One serious essay a week",
-  description = "Theology that meets the weight of marriage, money, parenting, and doubt. Written slow, sent once a week. No spam, ever.",
+  title = "New essays by email, through Substack",
+  description = "Leave your email here and finish on Substack, where the essays are sent from. You can unsubscribe there at any time.",
   source,
   audienceType,
 }: NewsletterSignupProps) {
@@ -47,7 +47,7 @@ export function NewsletterSignup({
       addToast?.({
         type: "success",
         title: "One more step",
-        message: "You're on our list — confirm on Substack to get the essays.",
+        message: "Your email is saved here. Confirm on Substack to get the essays.",
       });
       setEmail("");
     },
@@ -81,7 +81,7 @@ export function NewsletterSignup({
           margin: 0,
         }}
       >
-        You're on our list.{" "}
+        One more step. Your email is saved here.{" "}
         <a
           href={handoffUrl}
           target="_blank"
@@ -113,7 +113,7 @@ export function NewsletterSignup({
               fontFamily: "var(--F)",
               fontWeight: 500,
               fontSize: "16px",
-              color: "var(--bone)",
+              color: "var(--charcoal-fg)",
             }}
           >
             {title}
@@ -126,21 +126,21 @@ export function NewsletterSignup({
             <input
               type="email"
               required
-              placeholder="you@example.com"
+              placeholder="Your email"
               value={email}
               onChange={e => setEmail(e.target.value)}
               aria-label="Email address"
               style={{
-                flex: "1 1 140px",
+                flex: "1 1 100%",
                 minWidth: 0,
+                minHeight: "44px",
                 padding: "10px 12px",
                 background: "var(--charcoal-soft)",
-                border: "1px solid var(--charcoal-soft)",
+                border: "1px solid var(--charcoal-line)",
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--B)",
                 fontSize: "16px",
-                color: "var(--bone)",
-                outline: "none",
+                color: "var(--charcoal-fg)",
               }}
             />
             <button
@@ -149,8 +149,8 @@ export function NewsletterSignup({
               style={{
                 padding: "13px 18px",
                 minHeight: "44px",
-                background: "var(--mustard)",
-                color: "var(--ink)",
+                background: "var(--charcoal-fg)",
+                color: "var(--charcoal)",
                 border: "none",
                 borderRadius: "var(--radius-sm)",
                 fontFamily: "var(--U)",

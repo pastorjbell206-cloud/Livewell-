@@ -108,14 +108,13 @@ const STATIC_PAGES = [
   { url: "/books", priority: "0.9", changefreq: "weekly" },
   // LiveWell series ebooks (code-only product pages, not DB-backed).
   { url: "/skeptic-track", priority: "0.9", changefreq: "monthly" },
-  { url: "/roadmap", priority: "0.8", changefreq: "monthly" },
   { url: "/diagnostic", priority: "0.8", changefreq: "monthly" },
   { url: "/study", priority: "0.9", changefreq: "monthly" },
   { url: "/about", priority: "0.7", changefreq: "monthly" },
   { url: "/speaking", priority: "0.6", changefreq: "monthly" },
   { url: "/contact", priority: "0.5", changefreq: "monthly" },
+  { url: "/connect", priority: "0.6", changefreq: "monthly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
-  { url: "/membership", priority: "0.7", changefreq: "monthly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
   // (The /writing?pillar=, ?track= and ?series= listing variants are gone:
   // /writing is now the essay shelf, and those views canonicalize to it.)
@@ -135,13 +134,21 @@ const STATIC_PAGES = [
   { url: "/life/assessment", priority: "0.8", changefreq: "monthly" },
   { url: "/family", priority: "0.75", changefreq: "monthly" },
   { url: "/family/devotions", priority: "0.75", changefreq: "monthly" },
+  // Tonight's devotion: the address a parent opens each night. It forwards to
+  // the day's devotion in the browser, and answers with its own page and head.
+  { url: "/family/tonight", priority: "0.75", changefreq: "daily" },
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },
+  { url: "/skeptics", priority: "0.85", changefreq: "monthly" },
+  { url: "/topics", priority: "0.9", changefreq: "monthly" },
   { url: "/assessments", priority: "0.85", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
+  { url: "/theology/history/people", priority: "0.7", changefreq: "monthly" },
   { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
-  { url: "/start", priority: "0.8", changefreq: "monthly" },
+  { url: "/start", priority: "0.9", changefreq: "monthly" },
+  { url: "/explore", priority: "0.8", changefreq: "monthly" },
+  { url: "/start/quiz", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/theology-quiz", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/verse-finder", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/prayer-generator", priority: "0.6", changefreq: "monthly" },
@@ -168,14 +175,10 @@ const STATIC_PAGES = [
   { url: "/compare/evangelical-vs-mainline", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/liturgical-vs-contemporary", priority: "0.8", changefreq: "monthly" },
   { url: "/compare/orthodox-vs-catholic", priority: "0.8", changefreq: "monthly" },
-  // Ebook product pages previously missing
+  // The three books on the /books shelf (client/src/lib/bookShelf.ts). The
+  // off-shelf book pages stay reachable but are noindex and not listed.
   { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/bible-and-homosexuality", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/bible-and-transgender-identity", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/critical-race-theory-biblical", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/deconstruction-of-faith", priority: "0.8", changefreq: "monthly" },
   { url: "/books/the-monster-in-the-mirror", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/the-reliability-of-scripture", priority: "0.8", changefreq: "monthly" },
   { url: "/books/when-god-bless-america", priority: "0.8", changefreq: "monthly" },
   // Justice / Disruption / Nation hubs
   { url: "/disruption/consistency", priority: "0.7", changefreq: "monthly" },
@@ -234,6 +237,7 @@ const STATIC_PAGES = [
   { url: "/tools/test-the-case", priority: "0.8", changefreq: "monthly" },
   { url: "/downloads", priority: "0.75", changefreq: "weekly" },
   { url: "/study/bible", priority: "0.9", changefreq: "monthly" },
+  { url: "/study/plans", priority: "0.8", changefreq: "monthly" },
   { url: "/wisdom", priority: "0.8", changefreq: "monthly" },
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },
@@ -286,6 +290,9 @@ function manifestPages() {
     // A page per family devotion (/family/devotions/:id), from the family
     // index (scripts/build-family-index.mjs), which keys each row by `id`.
     { file: "client/public/family/index.json", key: "devotions", slugField: "id", prefix: "/family/devotions/" },
+    // The topic pages (/topics/:slug), from the topics index
+    // (scripts/build-topics-index.mjs).
+    { file: "client/public/topics/index.json", key: "pages", prefix: "/topics/" },
   ];
   for (const s of sources) {
     try {
@@ -300,6 +307,14 @@ function manifestPages() {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
   }
+  // A page per Honest Answer (/answers/:slug). The answers are TypeScript
+  // (client/src/data/answers.ts); their slugs are read from the source.
+  try {
+    const src = fs.readFileSync("client/src/data/answers.ts", "utf8");
+    for (const m of src.matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)) pages.push({ url: `/answers/${m[1]}`, priority: "0.8", changefreq: "monthly" });
+  } catch (err) {
+    console.warn(`[sitemap] could not read the Honest Answers: ${err.message}`);
+  }
   // The Study Bible: every book, every chapter, the eleven acts of the story,
   // and the doctrine pages (client/public/bible/*).
   try {
@@ -311,8 +326,11 @@ function manifestPages() {
     pages.push({ url: "/study/bible/story", priority: "0.9", changefreq: "monthly" });
     for (const a of JSON.parse(fs.readFileSync("client/public/bible/story.json", "utf8")).acts)
       pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/search", priority: "0.6", changefreq: "monthly" });
+    pages.push({ url: "/study/how-to-study", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/guides/whole-story-2027", priority: "0.8", changefreq: "monthly" });
     if (fs.existsSync("client/public/bible/guides/index.json"))
       for (const g of JSON.parse(fs.readFileSync("client/public/bible/guides/index.json", "utf8")).groups)
         for (const x of g.guides) if (fs.existsSync(`client/public/bible/guides/${x.id}.json`)) pages.push({ url: `/study/bible/guides/${x.id}`, priority: "0.7", changefreq: "monthly" });
@@ -333,6 +351,8 @@ function urlEntry(loc, lastmod, changefreq, priority) {
   entry += "  </url>\n";
   return entry;
 }
+
+const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "the-monster-in-the-mirror", "believe"]);
 
 function buildXml(staticPages, articles, books, readingPaths) {
   // De-duplicate by URL (a few study-guide slugs appear in both STATIC_PAGES and
@@ -367,6 +387,8 @@ function buildXml(staticPages, articles, books, readingPaths) {
     xml += urlEntry(`${BASE_URL}/writing/${a.slug}`, lastmod, "monthly", "0.8");
   }
   for (const b of books) {
+    // Database books that are not on the /books shelf are noindex pages.
+    if (!SHELF_BOOK_SLUGS.has(b.slug)) continue;
     const lastmod = new Date(b.updatedAt).toISOString().split("T")[0];
     if (!advertisable(`/books/${b.slug}`)) continue;
     xml += urlEntry(`${BASE_URL}/books/${b.slug}`, lastmod, "monthly", "0.7");

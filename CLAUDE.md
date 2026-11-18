@@ -24,7 +24,7 @@
 
 1. **Skeptics** — the hardest case, the one Bell writes toward
 2. **Christians** — carrying real questions the church avoids
-3. **Pastors** — the strategic distribution channel via PCN
+3. **Pastors** — the strategic distribution channel
 4. **People seeking to live well** — marriage, parenting, vocation
 
 ---
@@ -340,7 +340,8 @@ high the numbers.
 | Display (H1) | Cormorant Garamond | 400 | `letter-spacing: -0.02em`. Size carries weight, not boldness. |
 | Section titles (H2) | Cormorant Garamond | 400 | — |
 | Subheadings (H3) | Cormorant Garamond | 500 | — |
-| Body | Inter | 400 | `line-height: 1.7`, `max-width: 68ch` |
+| Reading (essays, Scripture, devotions, history, answers) | Source Serif 4 | 400, 400 italic, 600 | `--font-reading`, `--fs-read` (19 to 20px), `line-height: 1.6`, column `--w-read`. Never preloaded. |
+| Body (interface and short copy) | Inter | 400 | `line-height: 1.7`, `max-width: 68ch` |
 | UI / buttons | Inter | 500 | — |
 | Eyebrow labels | Inter | 500 | 0.75rem, uppercase, `letter-spacing: 0.18em`, mustard color |
 | Mono (code, ISBNs) | JetBrains Mono | 400 | Data labels only |
@@ -361,11 +362,11 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 
 ## Strategic Reminders
 
-- The PCN network (thousands of pastors) is the highest-yield growth channel. Every feature that serves pastors has distribution built in.
-- Stripe integration is pending for membership/book purchases.
+- The Pastors Connection Network stays outside this site (James, 2026-11-17): no link to it, no ask to support it, no redirect that leaves for it. Pastors are still readers here (`/help/pastors`).
+- No membership fee (James, 2026-11-17). Everything is free; the three shelf books are sold as ebooks.
 - The homepage is strong; inner pages need the same design system applied.
-- Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel.
-- Contact forms send to Pastorjbell206@gmail.com.
+- Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel, and is called Substack by name. Both are linked from `/connect`, never imported or embedded; the one list of outside channels is `client/src/lib/channels.ts`.
+- Contact forms save to `contact_messages` for James to read; nothing is emailed until a mail sender exists.
 - The database holds the full archive of essays and 21 books, but readers see
   a small curated essay shelf (`client/src/lib/shelf.json`): "live" essays are
   public, "pending" ones go public when a rewrite lands in
@@ -488,11 +489,14 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (24
-validators: scripture, design, life, studyguides, pathways, theology,
-politics, no-emdash, essays, content-integrity, skeptic-track, answers,
-argument-cases, links, needs (pages and drafts), grow-links, plans, workbooks,
-family, grow-voice, verse-guides, catalogue, bible, bible-notes) → `pnpm test` →
+On every PR, five blocking steps: `pnpm check` → the content-gates step (35
+commands: 25 validators: scripture, design, life, studyguides, pathways,
+theology, politics, no-emdash, essays, content-integrity, skeptic-track,
+answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
+workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
+bible-notes; the history-source verifier `verify-sources`; and the `--check`
+drift checks for the family year map, family index, topics index, search
+index, passage index, Bible text, Bible word search and the 2027 story plan) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
 prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
 Lighthouse + axe against the built site. Keep all five blocking steps green.
@@ -679,19 +683,33 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 - **SEO**: `scripts/generate-sitemap.mjs` runs in the Vercel build, merging
   static routes, the JSON-library manifests, and database content. `llms.txt`
   is served at the site root for answer engines. JSON-LD renders via SEOMeta.
-- **IA (simplified site, approved by James on 2026-10-12, implemented)**: a
+- **IA (simplified site, approved by James on 2026-10-12; seven doors
+  chosen by James on 2026-11-18; implemented)**: a
   simple site he keeps adding to, for living well in post-Christian America
-  and understanding the church's long history. The header has five doors from
-  the committed map in `client/src/lib/siteNav.ts` (Study, Essays, Books,
-  Resources, About) beside Find Help, search, and Subscribe; the footer
-  mirrors every group. Study (/study) leads with the Study Bible, then church
-  history (/theology/history), the creeds, the context guides, and group study
-  guides. Essays (/writing) is the curated shelf in `client/src/lib/shelf.json`
-  (see Strategic Reminders). Books shows the three titles in `bookShelf.ts`.
-  Resources (/resources) holds downloads, tools, Find Help, and families.
-  About is the person: /about, /speaking, /contact, /subscribe. Folded hubs
+  and understanding the church's long history. On 2026-11-18 James replaced
+  the five doors of 2026-10-26 (Study, Topics, Family, Essays, About) with
+  seven, read from one committed catalogue, `client/src/lib/siteCatalog.ts`
+  (`siteNav.ts` derives from it): Bible (/study), History
+  (/theology/history), Questions (/topics), Family (/family), Tools (/tools),
+  Essays (/writing, a plain link), About (/about). They sit beside Find Help,
+  search, and Subscribe. **Six or fewer:** a door's panel lists at most six
+  rooms (icon, name, one line), then "Everything in <door>" and "New here?
+  Start here" (/start, the road for a new or returning Christian in
+  `client/src/lib/startRoad.json`; its quiz is /start/quiz); a room is
+  listed only when its page exists, and a page has one name everywhere.
+  About holds Books (the three titles in `bookShelf.ts`), Speaking, Find
+  James (/connect, live by James's word on 2026-11-17), Contact and
+  Subscribe. The header, the phone sheet, the footer, the
+  search shortcuts and /explore ("Everything on LiveWell", the whole site on
+  one page, once a redirect to /writing) all read the catalogue; the tools
+  list is `client/src/lib/toolsList.ts`. Essays is the curated shelf in
+  `client/src/lib/shelf.json` (see Strategic Reminders). The footer shows the
+  seven doors, then My Library, Everything on LiveWell, Downloads and the
+  legal line, with Find Help in its bottom bar. `docs/work/elite/map.md` is
+  the map as built. Folded hubs
   (the reading hubs, the subject hubs, the /theology pages the Study Bible
-  replaces, /faq, /doubt, /substack, /work-with-james, /connect) are one-hop
+  replaces, /faq, /doubt, /substack, /work-with-james, /membership, /dashboard,
+  /authors/:slug, the old pastors' addresses) are one-hop
   permanent redirects in vercel.json mirrored by `redirectTo` stubs in App.tsx;
   their page files stay in the repo; /lament lands on /studyguides/lament. An
   old /writing/<slug> 301 lands only on a public essay, a /writing section, or
@@ -704,11 +722,58 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   `client/src/lib/site-structure.test.ts` holds this shape. `taxonomy.ts` and
   `pillar-assignments.ts` still file content but no longer drive navigation.
   No giving or Support page until James names who receives gifts.
-- **Payments**: Stripe checkout is config-driven — live only when
-  STRIPE_SECRET_KEY (Vercel env) and the `stripeMembershipPriceId` site
-  setting both exist; the membership page falls back to the waitlist.
+- **Payments**: no membership (James, 2026-11-17). /membership redirects to
+  /subscribe; the Stripe membership procedures and settings remain in the
+  code, unused by any page. No giving link anywhere.
+- **Outside the site (James, 2026-11-17)**: the Pastors Connection Network
+  has no link, ask, or redirect here; `site-structure.test.ts` fails on a
+  path redirect that leaves the site. No title, years in ministry, or book
+  count is stated until James gives one set.
+- **Design parts (2026-11-17)**: page titles use `--fs-h1` (only Home and
+  About use `--fs-display`), section titles `--fs-h2`, section side padding
+  `var(--gutter)`; one button family (`.btn` / `.pg-action`, `--quiet`,
+  `--text`, `--on-dark`), one card (`.ed-card`), one label (`.eyebrow`). A
+  hub's H1 is its plain name with James's line under it as
+  `.page-standfirst`; search titles end `| LiveWell`.
+- **First paint on a prerendered page (2026-11-18)**: a chapter, essay, or
+  guide paints its own text from the HTML inside the static shell
+  (`.prerender-content`), held by `lib/prerender-hold.ts` until the real page
+  is ready. Measure pages with `scripts/serve-like-vercel.mjs`, not
+  `serve -s`. Fonts are one variable file per upright subset
+  (`font-weight: 400 600`).
+- **Church history is one course (2026-11-17)**: `build-history-index.mjs`
+  numbers the fourteen course essays; people, councils, and heresies have
+  stable anchors (`entryId` in `lib/historyCourse.ts`) that essays and the
+  site search link to. A new hub page joins `MAIN_PAGES` in
+  `scripts/build-search-index.mjs`.
+- **Bible word search**: /study/bible/search scans the Berean Standard Bible
+  in the browser from the files `scripts/build-bible-search.mjs` writes
+  (drift-checked in CI). Not in the sitemap, like /search.
 - **CI** (.github/workflows/ci.yml): typecheck, content validators, tests,
   build on every PR. Browser-based gates (Lighthouse, axe) belong in CI
   against Vercel previews, not local runs.
 - **PDFs**: `scripts/build-pdfs.mjs` (pdfkit) renders context guides and
   sermon series to `client/public/downloads/`; rerun after content changes.
+- **The art kit and one page top (2026-11-18)**: pages are built from
+  `client/src/components/art/` (one engraved hand; README says how a door's
+  page is built). Every page top is `PageHead` (`size="door"` or `"inner"`);
+  `components/editorial/PageHead.tsx` is a thin wrapper over it.
+- **A page for each Honest Answer (2026-11-18)**: `/answers/<slug>` (35
+  pages, each prerendered with its own head); `/answers#<slug>` opens the
+  answer's page. No answer's wording changes with its page.
+- **How to study, and the guided chapter study (2026-11-18)**:
+  `/study/how-to-study` and the seven-step walk on a chapter (`?study=walk`,
+  `ChapterWalk.tsx`) share one method, `lib/study-method.ts`. The walk shows
+  only the chapter's own files and keeps its place in `livewell-study-walk-v1`.
+- **/skeptics (2026-11-18)**: "For skeptics", the Questions door's room for
+  the skeptic: the Test the Case cases, the "Is it true?" answers, and longer
+  reading. `/skeptic-track` is a separate page and stays.
+- **/james (2026-11-18)**: a permanent one-hop redirect to /connect (Find
+  James), in `vercel.json` with a `redirectTo` stub in `App.tsx`.
+- **The passage index (2026-11-18)**: `scripts/build-passage-index.mjs`
+  writes one file per chapter under `client/public/index/chapters/`, read by
+  "Go deeper" on a chapter and by the walk's last step. Rerun it after a
+  library's references change; CI drift-checks it.
+- **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
+  the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
+  local run measure alike.

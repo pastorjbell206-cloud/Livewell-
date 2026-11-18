@@ -1,4 +1,9 @@
 /**
+ * OFF THE SHELF (2026-11-17): the Books page says three books and that the
+ * rest were taken down. This page stays reachable at its address, says
+ * noindex, is out of the sitemap, and nothing links to it. James decides
+ * whether it stays purchasable.
+ *
  * The Deconstruction of Faith — dedicated ebook product + purchase page.
  *
  * Self-contained (not DB-backed) so it deploys with the code. The Buy button
@@ -49,6 +54,7 @@ export default function DeconstructionOfFaith() {
         image={`${SITE_URL}${COVER}`}
         url={`${SITE_URL}/books/deconstruction-of-faith`}
         type="book"
+        noindex
       />
 
       {/* HERO */}
@@ -57,7 +63,7 @@ export default function DeconstructionOfFaith() {
           <img src={COVER} alt="The Deconstruction of Faith — cover" width={1600} height={2560}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
-            <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Ebook Available Now</div>
+            <div style={{ ...eyebrow, color: "var(--mustard)" }}>Ebook</div>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               The Deconstruction of Faith
             </h1>
@@ -122,7 +128,7 @@ export default function DeconstructionOfFaith() {
             <StripeBuyButton paymentLink={PAYMENT_LINK} />
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
-            James Bell is the Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, and the author of more than twenty books. He came to faith from atheism and writes for the reader whose faith has outgrown the answers they were given.
+            James Bell is a pastor and a writer. He came to faith from atheism, and he writes for the reader whose faith has outgrown the answers they were given.
           </p>
         </div>
       </section>
@@ -132,7 +138,6 @@ export default function DeconstructionOfFaith() {
         related={[
           { href: "/books/believe", title: "Believe: The Rational Case for Christian Faith" },
           { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
-          { href: "/books/raising-believers", title: "Raising Believers" },
         ]}
       />
     </Layout>

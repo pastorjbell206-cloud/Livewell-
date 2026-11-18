@@ -1,9 +1,11 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer, AlertTriangle } from "lucide-react";
 
 /* ── Types ─────────────────────────────────────────────────────── */
@@ -806,11 +808,31 @@ const CONFLICT_TYPES: ConflictType[] = [
 
 /* ── Component ─────────────────────────────────────────────────── */
 
+/** The kind of conflict and the step the reader is on, kept on this device so a reload lands there. */
+const PROGRESS_KEY = "livewell-progress-conflict-guide";
+interface Place { type: string; step: number; savedAt: string }
+const isPlace = (x: unknown): x is Place => {
+  if (!x || typeof x !== "object") return false;
+  const v = x as Record<string, unknown>;
+  return typeof v.type === "string" && typeof v.step === "number" && Number.isInteger(v.step) && typeof v.savedAt === "string";
+};
+function savedPlace(): { type: string | null; step: number } {
+  const p = readStoredJSON<Place | null>(PROGRESS_KEY, isPlace, null);
+  const c = p ? CONFLICT_TYPES.find((t) => t.id === p.type) : undefined;
+  return c && p ? { type: c.id, step: Math.min(Math.max(0, p.step), c.steps.length - 1) } : { type: null, step: 0 };
+}
+
 export default function ConflictGuide() {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
-  const [currentStep, setCurrentStep] = useState(0);
+  const [place] = useState(savedPlace);
+  const [selectedType, setSelectedType] = useState<string | null>(place.type);
+  const [currentStep, setCurrentStep] = useState(place.step);
 
   const conflict = CONFLICT_TYPES.find((c) => c.id === selectedType);
+
+  useEffect(() => {
+    if (selectedType) writeStoredJSON(PROGRESS_KEY, { type: selectedType, step: currentStep, savedAt: new Date().toISOString() });
+    else removeStoredJSON(PROGRESS_KEY);
+  }, [selectedType, currentStep]);
 
   const handleSelectType = (id: string) => {
     setSelectedType(id);
@@ -844,13 +866,13 @@ export default function ConflictGuide() {
   return (
     <Layout>
       <SEOMeta
-        title="Conflict Resolution Guide -- A Five-Step Process for Couples and Families"
+        title="Work Through a Fight in Five Steps"
         description="An interactive five-step guide to help couples and families work through conflict, from naming the issue to a concrete next step. Scripture-grounded."
         keywords="conflict resolution, marriage conflict, family conflict, communication, couples guide, relationship repair, Christian marriage"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Conflict Resolution Guide",
+          name: "Work Through a Fight in Five Steps",
           description:
             "An interactive five-step guide to help couples and families resolve conflict with honesty, Scripture, and concrete action.",
           url: "https://www.livewellbyjamesbell.co/tools/conflict-guide",
@@ -859,59 +881,7 @@ export default function ConflictGuide() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--bone)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Conflict Resolution{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Guide
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Five steps. One conflict at a time. Not a formula for avoiding hard
-            conversations -- a framework for having them without destroying
-            what you are trying to protect.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/conflict-guide" title="Work Through a Fight in Five Steps" line="Five steps. One conflict at a time. Not a formula for avoiding hard conversations -- a framework for having them without destroying what you are trying to protect." plate="sundial" />
 
       {/* Conflict Type Selection */}
       {!selectedType && (

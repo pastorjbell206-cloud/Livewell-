@@ -138,7 +138,8 @@ export default function CarePlan() {
           {data && !progress && (
             <button
               onClick={start}
-              style={{ marginTop: "10px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", padding: "13px 24px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, borderRadius: "2px", cursor: "pointer" }}
+              className="btn btn--on-dark"
+              style={{ marginTop: "10px" }}
             >
               Begin week one
             </button>
@@ -157,7 +158,8 @@ export default function CarePlan() {
               {currentWeek && (
                 <a
                   href={`#week-${currentWeek}`}
-                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "44px", marginTop: "14px", padding: "10px 20px", background: "var(--mustard)", color: "var(--charcoal)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, borderRadius: "2px", textDecoration: "none" }}
+                  className="btn btn--on-dark"
+                  style={{ gap: "8px", marginTop: "14px" }}
                 >
                   Go to week {currentWeek} <ArrowDown size={16} aria-hidden />
                 </a>

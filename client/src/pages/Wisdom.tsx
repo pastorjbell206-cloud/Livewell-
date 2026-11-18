@@ -8,13 +8,15 @@
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { PullQuote, StatementBand } from "@/components/EditorialBlocks";
-import { CardGrid } from "@/components/editorial/CardGrid";
-import { SectionHead } from "@/components/editorial/SectionHead";
+import InnerHead from "@/components/art/InnerHead";
+import SectionHead from "@/components/art/SectionHead";
+import DoorCard from "@/components/art/DoorCard";
+import IconTile from "@/components/art/IconTile";
+import { BookOpenText, Briefcase, CalendarDays, CloudRain, Compass, Flame, HandHeart, Handshake, HeartHandshake, Hourglass, Lightbulb, MessageCircle, Scale, Shield, Sprout, Sun, Users, Wallet, type LucideIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import ScriptureNote from "@/components/ScriptureNote";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 interface TodayVerse { ref: string; text: string }
 interface TodayTopic {
@@ -47,9 +49,12 @@ function WisdomToday() {
   const verse = topic.verses && topic.verses[0];
 
   return (
-    <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
-      <div style={wrap}>
-        <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Wisdom for today</div>
+    <section className="home-sec home-sec--warm" aria-label="Wisdom for today">
+      <div className="home-wrap">
+        <p className="lw-sec-head__label">
+          <Sun aria-hidden="true" size={18} strokeWidth={1.75} />
+          Wisdom for today
+        </p>
         <div style={{ background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderTop: "2px solid var(--mustard)", padding: "var(--s-4)" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>{topic.label}</h2>
           {verse && (
@@ -100,96 +105,121 @@ const ARENAS: Arena[] = [
   { label: "Wisdom itself", topic: "wisdom", domain: "wisdom-for-all-of-life" },
 ];
 
-const heroP = { fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch" } as const;
+/** An icon for each arena, by its topic. */
+const ARENA_ICON: Record<string, LucideIcon> = {
+  money: Wallet,
+  tongue: MessageCircle,
+  anger: Flame,
+  anxiety: CloudRain,
+  work: Briefcase,
+  marriage: HeartHandshake,
+  friendship: Users,
+  generosity: HandHeart,
+  suffering: Hourglass,
+  forgiveness: Handshake,
+  contentment: Sun,
+  fear: Shield,
+  humility: Scale,
+  wisdom: Lightbulb,
+};
 
 export default function Wisdom() {
   return (
     <Layout>
       <SEOMeta
-        title="Wisdom for All of Life — Proverbs, Ecclesiastes, and the Skill of Living"
-        description="A guide to Proverbs, Ecclesiastes, and Job, a topical map of Scripture for money, work, words, anger, and marriage, and a chapter of Proverbs for each day of the month."
+        title="Bible Wisdom for Money, Work, Anger, Marriage"
+        description="A guide to Proverbs, Ecclesiastes, and Job, a map of Scripture on money, work, words, anger, and marriage, and a chapter of Proverbs for each day."
         url="https://www.livewellbyjamesbell.co/wisdom"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Wisdom · For all of life</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
-            Wisdom for all of life
-          </h1>
-          <p style={{ ...heroP, marginBottom: "12px" }}>
-            Most of your life is lived in the place no single command reaches. Whether to take the job. How much to give. When to speak and when to hold your peace. The Bible has more than rules for that place. It has wisdom, the hard-won skill of living well in a world that does not come with instructions.
-          </p>
-          <p style={{ ...heroP, marginBottom: "26px" }}>
-            Three whole books of the Old Testament, Proverbs, Ecclesiastes, and Job, were written for exactly this territory. Here it is, gathered in one place, for whatever you are facing.
-          </p>
-          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            <Link href="/tools/wisdom-finder" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal)", background: "var(--mustard)", padding: "13px 22px", textDecoration: "none" }}>
+      <InnerHead
+        path="/wisdom"
+        title="What the Bible says, by subject"
+        line="Wisdom for all of life"
+        plate="books"
+        action={
+          <>
+            <Link href="/tools/wisdom-finder" className="btn">
               Tell us what you are facing
             </Link>
-            <Link href="/life/wisdom-for-all-of-life" style={{ display: "inline-block", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", background: "transparent", border: "1px solid rgba(245,240,230,0.4)", padding: "13px 22px", textDecoration: "none" }}>
+            <Link href="/life/wisdom-for-all-of-life" className="btn btn--quiet">
               Read the guide
             </Link>
-          </div>
+          </>
+        }
+      />
+
+      {/* FIRST: pick the part of life you are standing in. */}
+      <section className="home-sec home-sec--dark" aria-labelledby="wisdom-arenas-title">
+        <div className="home-wrap">
+          <SectionHead dark icon={Compass} label={`${ARENAS.length} arenas`} title="Wisdom for every arena" id="wisdom-arenas-title" />
+          <p className="lw-group__line" style={{ color: "var(--charcoal-fg-muted)" }}>
+            Pick the part of life you are standing in. Each opens what Scripture actually says, the verses worth knowing by heart, and points you to a deeper guide where one exists.
+          </p>
+          {/* Two destinations means the card cannot be a single link: the name
+              opens what Scripture says, and the deep guide, where one exists,
+              is a quiet text link beneath it. */}
+          <ul className="lw-arenas" aria-label="Wisdom by arena">
+            {ARENAS.map((a) => {
+              const Icon = ARENA_ICON[a.topic] ?? Lightbulb;
+              return (
+                <li key={a.topic}>
+                  <Link className="lw-arena" href={`/tools/bible-on?topic=${a.topic}`}>
+                    <span className="lw-tile__icon" aria-hidden="true">
+                      <Icon size={22} strokeWidth={1.75} />
+                    </span>
+                    <span className="lw-arena__name">
+                      {a.label}
+                      <span className="sr-only">: what Scripture says</span>
+                    </span>
+                  </Link>
+                  {a.domain && (
+                    <Link className="lw-arena__guide" href={`/life/${a.domain}`}>
+                      Read the guide <span className="sr-only">on {a.label.toLowerCase()}</span>
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
 
       <WisdomToday />
 
-      {/* Wisdom for every arena */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-5)" }}>
-        <div style={wrap}>
-          <SectionHead
-            title="Wisdom for every arena"
-            intro="Pick the part of life you are standing in. Each opens what Scripture actually says, the verses worth knowing by heart, and points you to a deeper guide where one exists."
-          />
-          <PullQuote>A proverb is a pattern, not a promise. It tells you how the world usually runs, so you can act wisely inside it.</PullQuote>
-          {/* One index row per arena. Two destinations means the row cannot be
-              a single link: the title opens what Scripture says, and the deep
-              guide, where one exists, is a quiet text link beneath it. */}
-          <ul className="ed-index ed-index--2" aria-label="Wisdom by arena">
-            {ARENAS.map((a) => (
-              <li key={a.topic}>
-                <div style={{ flex: 1, paddingBottom: a.domain ? "24px" : 0 }}>
-                  <Link className="ed-row" href={`/tools/bible-on?topic=${a.topic}`} style={a.domain ? { paddingBottom: 0 } : undefined}>
-                    <h3 className="ed-title">
-                      {a.label}
-                      <span className="sr-only">: what Scripture says</span>
-                    </h3>
-                    <span className="ed-arrow" aria-hidden>→</span>
-                  </Link>
-                  {a.domain && (
-                    <Link className="ed-sublink" href={`/life/${a.domain}`}>
-                      Read the guide{" "}<span className="sr-only">on {a.label.toLowerCase()}</span>
-                    </Link>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
       <StatementBand tone="dark" width="30ch">
         Wisdom is not more rules. It is the skill of living well where no rule reaches.
       </StatementBand>
 
-      {/* The three ways in */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          <SectionHead title="Three ways in" />
-          <CardGrid
-            items={[
-              { href: "/life/wisdom-for-all-of-life", title: "The deep guide", dek: "An extensive walk through Proverbs, Ecclesiastes, and Job: the fear of the Lord, proverbs as patterns not promises, the honesty of vapor and gift, and Christ as the wisdom of God." },
-              { href: "/tools/bible-on", title: "What the Bible says about", dek: "A topical guide for the arenas of ordinary life, with the heart of the passages worth knowing by heart, ready to copy and carry." },
-              { href: "/tools/proverbs-31", title: "Proverbs in 31 days", dek: "A chapter of Proverbs a day, matched to the date, with the theme and the lines worth carrying into the day's decisions." },
-            ]}
-          />
+      {/* The three ways in, as picture cards. */}
+      <section className="home-sec" aria-labelledby="wisdom-ways-title">
+        <div className="home-wrap">
+          <SectionHead icon={BookOpenText} label="Three ways in" title="Read it, look it up, or take it a day at a time." id="wisdom-ways-title" />
+          <ul className="lw-rooms">
+            <li><DoorCard href="/life/wisdom-for-all-of-life" plate="book" title="The deep guide" note="An extensive walk through Proverbs, Ecclesiastes, and Job: the fear of the Lord, proverbs as patterns not promises, the honesty of vapor and gift, and Christ as the wisdom of God." /></li>
+            <li><DoorCard href="/tools/bible-on" plate="lens" title="What the Bible says about" note="A topical guide for the arenas of ordinary life, with the heart of the passages worth knowing by heart, ready to copy and carry." /></li>
+            <li><DoorCard href="/tools/proverbs-31" plate="sundial" title="Proverbs in 31 days" note="A chapter of Proverbs a day, matched to the date, with the theme and the lines worth carrying into the day's decisions." /></li>
+          </ul>
+        </div>
+      </section>
 
-          <div style={{ marginTop: "var(--s-4)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
-            <Link href="/life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The Integrated Life</Link>
-            <Link href="/tools/rule-of-life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Build a Rule of Life</Link>
+      {/* The page's own words on what wisdom is for. */}
+      <section className="home-sec home-sec--warm" aria-labelledby="wisdom-why-title">
+        <div className="home-wrap">
+          <SectionHead icon={Lightbulb} label="Why wisdom" title="Where no single command reaches." id="wisdom-why-title" />
+          <div className="lw-prose-band__body">
+            <p>
+              Most of your life is lived in the place no single command reaches. Whether to take the job. How much to give. When to speak and when to hold your peace. The Bible has more than rules for that place. It has wisdom, the hard-won skill of living well in a world that does not come with instructions.
+            </p>
+            <p>
+              Three whole books of the Old Testament, Proverbs, Ecclesiastes, and Job, were written for exactly this territory. Here it is, gathered in one place, for whatever you are facing.
+            </p>
           </div>
+          <PullQuote>A proverb is a pattern, not a promise. It tells you how the world usually runs, so you can act wisely inside it.</PullQuote>
+          <ul className="lw-tiles" style={{ marginTop: "var(--s-4)" }}>
+            <li><IconTile href="/life" icon={Sprout} name="The Integrated Life" line="Every part of life, one guide each" /></li>
+            <li><IconTile href="/tools/rule-of-life" icon={CalendarDays} name="Build a Rule of Life" line="A weekly rhythm of prayer and rest" /></li>
+          </ul>
         </div>
       </section>
     </Layout>
