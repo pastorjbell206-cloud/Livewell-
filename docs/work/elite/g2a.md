@@ -25,10 +25,10 @@ My share (all guides in client/public/studyguides, minus the six good guides the
 
 ## Where this share stands
 
-Done, committed and pushed: 1 to 8 (after-christendom, aging-and-legacy, alone-in-a-crowded-church, anger, anxiety, attention, baptism-and-communion, believe).
-Not started: 9 to 20 (character-before-competence through friendship). The second run (brief guides3.md, five guides assigned) stopped after three at a clean guide boundary to leave room for the gates and the push; the next run should start at character-before-competence, then christian-nationalism.
+Done, committed and pushed: 1 to 11 (after-christendom through church-and-empire).
+Not started: 12 to 20 (contentment through friendship). The third run (brief guides3.md) did character-before-competence, christian-nationalism and church-and-empire; the next run should start at contentment, then deconstruction.
 
-Each guide was rewritten whole by the pilot's method: same slug, title, sessions, session titles, passages, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted (ESV, the translation these guides already used) with references; case studies reframed as "Suppose"; rulebook words, biography stamps, "Bell" and "Leader to confirm" removed; off-shelf book plugs dropped; help lines kept word for word. The claim-by-claim record is docs/work/elite/g2a-ledger.md.
+Third run notes: christian-nationalism and church-and-empire each carry 25 short devotionals (five per session); these were rewritten too, keeping each day's title and passage, as the pastoral-health pilot did. Neither guide nor character-before-competence had help lines.
 
 ## Per guide
 
@@ -42,6 +42,9 @@ Each guide was rewritten whole by the pilot's method: same slug, title, sessions
 | attention | 26,873 / 17,710 | 21 / 0 | 34 / 1 | 4 / 0 | Paraphrased: Weil on attention and prayer; Augustine's restless heart named, not quoted. Cut: none | Wilson 2014 shock study corrected (6 to 15 minutes; one experiment); 1 Kings 19:12 to the ESV wording; Sinai and Psalms dates; smartphone dates |
 | baptism-and-communion | 24,935 / 17,795 | 27 / 0 | 56 / 5 | 4 / 0 | Kept: Augustine's "a kind of visible word" (searched). Paraphrased: Athanasius. Cut: none | Augustine source corrected to Tractates on John 80; 1 Peter 3:21 and John 6:63 to ESV wording; Didache date; Corinthian reconstruction marked as reconstruction |
 | believe | 22,388 / 15,897 | 34 / 0 | 103 / 13 | 6 / 0 | Kept: Bonhoeffer's "come and die" (English translation); Twain's schoolboy line. Paraphrased: Lewis's trilemma and "reluctant convert". Cut: none | Minimal facts and apostles' deaths stated accurately; Psalm 19:1 and 1 Corinthians 15:3-4 to ESV; atheism used once, fatherless line cut |
+| character-before-competence | 25,008 / 17,074 | 42 / 0 | 37 / 3 | 7 / 0 | Paraphrased: Willard (hurry, via Ortberg, searched); Peterson's shopkeepers (searched); Abba Moses's cell. Cut: Willard "who they are becoming" line (unverified) | One skill on the lists restated with Titus 1:9; Calvin's elders 1541 (not 1559); Benedict about 530; Acts 20:28, 1 Timothy 3:4 and Deuteronomy 5:15 to ESV; research and ratio claims cut; off-shelf book plug dropped |
+| christian-nationalism | 23,308 / 20,235 (25 devotionals included) | 46 / 0 | 47 / 1 | 1 / 0 | Paraphrased and re-sourced: Niebuhr (searched; "demonic" line not found, now Moral Man and Immoral Society). Kept as paraphrase: Newbigin, Augustine, Hauerwas and Willimon, Noll. Cut: none | Whitehead and Perry's definition and church-attendance finding corrected (searched); Augsburg 1555 behind Westphalia; Constitution claim narrowed; Colossians 2:15 and 1 Kings 8:11 to ESV; biography credential, "Michigan pastor" and method FAQ cut |
+| church-and-empire | 26,257 / 19,496 (25 devotionals included) | 42 / 0 | 28 / 2 | 3 / 0 | Kept as paraphrase: Tertullian (On Idolatry; Apology), Pliny, Barmen. Paraphrased: Newbigin, Kierkegaard. Cut: none | Mark 12:16 "likeness", 1 Peter 2:9 and Matthew 13:31 to ESV; Luther 1523 (not 1521); Augsburg 1555 behind Westphalia; Stark's account widened; five-sons line kept once, in session 2 |
 
 Help lines: aging-and-legacy and anxiety each keep their three 988 sentences unchanged and in place; anger keeps its domestic-violence and "never return to harm" sentences unchanged. Checked by script against the old files.
 
@@ -64,14 +67,19 @@ Web searches used: 1 in the first run (Sacks, "On Creative Minorities", 2013); 2
 
 Second run (attention, baptism-and-communion, believe): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed, each run on its own; pnpm check passed; pnpm test 142 files passed, 7 skipped, one client test (fes.test.tsx, the family catechism) timed out under load and passed when rerun alone. pnpm build, Lighthouse and screenshots not run, per the brief (the lead runs them on the whole branch).
 
+Third run (character-before-competence, christian-nationalism, church-and-empire): validate-studyguides after each guide, 68 guides, 0 failures; all 35 content-gate commands passed (run after guide 2 and again after guide 3); pnpm check passed; pnpm test 144 files passed, 7 skipped, 1639 tests passed. pnpm build, Lighthouse and screenshots not run, per the brief. Web searches used: 4 (Willard and Ortberg on hurry; Peterson's shopkeepers; Niebuhr's "demonic" line, not found; Whitehead and Perry on religiosity).
+
 ## What I did not do or verify
 
-- Guides 9 to 20 are not rewritten.
+- Guides 12 to 20 are not rewritten.
 - ESV wording was quoted from memory; there is no ESV in the repository to check against.
 - Book dates and titles marked "Known" in the ledger were not searched.
 - PDFs were not rebuilt (another unit owns pnpm pdfs).
 
 ## What only James can supply
+
+5. Character Before Competence was built on his book of that name, which is not on the three-book shelf, so the plug is gone. Tell me if that book should be offered.
+6. In church-and-empire I kept his five-sons sentence once (session 2, the grief over a thinner world). If he'd rather it go, it is one sentence.
 
 1. The five-sons sentence. Old aging-and-legacy session 5 ended with a first-person wish about his sons standing at his grave. I cut it under the "no added memory" default. If it is his, it could go back as the one biographical line in that guide.
 2. The pilot's six questions still stand, especially translation (these guides are ESV) and whether any of his biography belongs anywhere.
