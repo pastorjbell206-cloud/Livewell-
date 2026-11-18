@@ -159,6 +159,10 @@
   --s-1:0.5rem;--s-2:1rem;--s-3:1.5rem;--s-4:2rem;--s-5:3rem;
   --s-6:4rem;--s-7:6rem;--s-8:8rem;--s-9:12rem;
 
+  /*  Illustration (components/art): the plates' paper, ink and three tones.
+      The plate's one light is --mustard. */
+  --art-paper:#F1EADB;--art-ink:#1A1712;--art-blue:#8FA3AD;--art-olive:#A3A77E;--art-clay:#C98B6B;
+
   /*  Container  */
   --w-prose:680px;--w-content:880px;--w-default:1180px;--w-wide:1440px;
 }
@@ -192,6 +196,8 @@ html.dark{
   --ivory:#F4F1EA;--oxblood:#D4A017;
   --rust:#D4A017;--rustlt:#E0B945;
   --sage:#9A968E;--plum:#1A1A1A;
+  /* Illustration: night paper, light ink, deeper tones */
+  --art-paper:#1C1913;--art-ink:#E6DEC9;--art-blue:#3E5563;--art-olive:#4F5637;--art-clay:#8A4F36;
 }
 
 /* The admin area is a purpose-built light workspace. It opts out of the
@@ -476,46 +482,78 @@ img{display:block;max-width:100%}
 .rule-draw::after{content:"";position:absolute;left:0;top:0;height:1px;width:0;background:var(--mustard);transition:width .35s var(--motion-ease)}
 .rule-draw:hover::after,.rule-draw:focus-within::after{width:100%}
 
-/* Home hero: James's headline and one sentence on what the site is for. These
-   classes style both the React hero (pages/Home.tsx) and the static copy
+/* THE ART KIT (components/art/README.md): the engraved plates, their frame,
+   and the picture-led door. Colour only through the --art-* tokens and
+   --mustard, so every drawing turns to night with html.dark. */
+.lw-plate,.lw-plate-slot{display:block;width:100%;height:100%}
+.pl-paper{fill:var(--art-paper)}
+.pl-o{fill:var(--art-paper);stroke:var(--art-ink);stroke-width:2.25;stroke-linejoin:miter}
+.pl-l{fill:none;stroke:var(--art-ink);stroke-width:2.25;stroke-linejoin:miter;stroke-linecap:butt}
+.pl-f{fill:none;stroke:var(--art-ink);stroke-width:1.1}
+.pl-k{fill:var(--art-ink)}
+.pl-b{fill:var(--art-blue)}.pl-g{fill:var(--art-olive)}.pl-c{fill:var(--art-clay)}.pl-m{fill:var(--mustard)}
+.pl-hatch{stroke:var(--art-ink)}
+.lw-roundel{display:block;width:100%;height:auto}
+.lw-frame-fig{margin:0;min-width:0}
+.lw-frame{position:relative;display:block;border:1.5px solid var(--art-ink);padding:5px;background:var(--art-paper)}
+.lw-frame__in{display:block;border:.75px solid var(--art-ink);overflow:hidden;background:var(--art-paper)}
+.lw-cap{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-family:var(--U);font-weight:500;font-size:11px;line-height:1.3;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);margin-top:9px}
+.lw-cap span:last-child{letter-spacing:.02em;text-transform:none;font-family:var(--F);font-style:italic;font-size:15px}
+.lw-door{display:flex;flex-direction:column;min-width:0;color:var(--ink);text-decoration:none}
+.lw-door .lw-frame{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.lw-door:hover .lw-frame,.lw-door:focus-visible .lw-frame{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--art-ink)}
+.lw-door__text{display:block;margin-top:14px}
+.lw-door__t{display:flex;align-items:baseline;gap:10px;font-family:var(--F);font-weight:400;font-size:clamp(1.375rem,1.1rem + 1vw,1.875rem);line-height:1.08;letter-spacing:-.015em}
+.lw-door__n{font-family:var(--U);font-weight:500;font-size:11px;line-height:1;letter-spacing:.14em;color:var(--mustard-text);flex:none}
+.lw-door__f{display:block;font-family:var(--U);font-size:14px;line-height:1.45;color:var(--ink-muted);margin-top:6px}
+.lw-door--lead .lw-door__t{font-size:clamp(1.75rem,1.2rem + 2vw,2.75rem)}
+
+/* Home hero: James's headline, Find, tonight's line, and Plate I beside them
+   (on a phone the plate runs edge to edge above the headline). These classes
+   style both the React hero (pages/Home.tsx) and the static copy
    scripts/prerender-heads.mjs writes into "/", so the swap from HTML to React
-   moves nothing. Kept short so Find, tonight's devotion and the doors reach a
-   phone's first screen. On a wide screen the sentence sits beside the
-   headline, on its last line. */
-.home-hero{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-5) var(--gutter)}
-.home-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);column-gap:var(--s-5);align-items:end}
-.home-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(34px,5.4vw,72px);line-height:1.05;letter-spacing:-0.02em;color:var(--charcoal-fg);margin:0;max-width:23ch;text-wrap:balance}
-.home-hero__title a{white-space:nowrap;color:inherit;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:max(1px,0.03em);text-underline-offset:0.14em}
+   moves nothing: the static copy has the same frame, empty, at the same size. */
+.home-hero{background:var(--bone);color:var(--ink);padding:var(--s-5) var(--gutter) var(--s-4)}
+.home-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:var(--s-5);align-items:start}
+/* Both columns hang from the top, so tonight's line arriving under Find (React only) moves nothing above it. */
+.home-hero__art{margin-top:12px}
+.home-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(2.25rem,4.4vw,4.125rem);line-height:1.04;letter-spacing:-0.025em;color:var(--ink);margin:0 0 var(--s-4);text-wrap:pretty}
+.home-hero__title a{white-space:nowrap;color:inherit;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:max(1.5px,0.03em);text-underline-offset:0.14em}
 .home-hero__title a:hover{text-decoration-thickness:max(2px,0.05em)}
-.home-hero__text{font-family:var(--B);font-size:clamp(16px,1.3vw,18px);line-height:1.6;color:var(--charcoal-fg-muted);max-width:44ch;margin:0 0 0.5em;padding-top:var(--s-2);border-top:1px solid var(--charcoal-line);text-wrap:pretty}
+.home-hero__art .lw-frame__in{aspect-ratio:1200/700}
 @media (max-width:900px){
-  .home-hero{padding-top:var(--s-3);padding-bottom:var(--s-3)}
-  .home-hero__inner{grid-template-columns:minmax(0,1fr);row-gap:var(--s-2)}
-  .home-hero__text{max-width:60ch;margin:0;padding-top:0;border-top:0}
+  .home-hero{padding:0 var(--gutter) var(--s-3)}
+  .home-hero__inner{display:flex;flex-direction:column-reverse;align-items:stretch}
+  .home-hero__art{margin:0 calc(var(--gutter) * -1)}
+  .home-hero__art .lw-frame{border-width:0 0 1.5px;padding:0}
+  .home-hero__art .lw-frame__in{border:0;aspect-ratio:390/228}
+  .home-hero__art .lw-cap{padding:0 var(--gutter);margin-top:7px}
+  .home-hero__title{font-size:clamp(2.125rem,8.6vw,2.75rem);margin:var(--s-2) 0 var(--s-2)}
 }
 
-/* Home: Find and tonight (pages/home/, U18), the first things under the hero,
-   on the cream of the doors section. Not in the static hero, so first paint
-   is unchanged. Links are underlined in mustard; inline links get vertical
-   padding so a thumb has a 44 px target without changing the line. */
-.home-find{margin:0 0 var(--s-4)}
-.home-find__label{display:block;font-family:var(--F);font-weight:400;font-size:clamp(22px,3vw,32px);line-height:1.15;letter-spacing:-0.015em;color:var(--ink);margin:0 0 12px}
-.home-find__row{display:flex;gap:10px;max-width:680px}
-.home-find__input{flex:1 1 auto;min-width:0;min-height:52px;padding:0 16px;font-family:var(--U);font-size:17px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);-webkit-appearance:none;appearance:none}
+/* Find (pages/home/HomeFind) and tonight's line, under the headline. One
+   ruled field with the search mark on an ink button. Links are underlined in
+   mustard; inline links get vertical padding so a thumb has a 44 px target. */
+.home-find{margin:0}
+.home-find__row{display:flex;max-width:520px;border:1.5px solid var(--ink);background:var(--card);border-radius:var(--radius-sm)}
+.home-find__input{flex:1 1 auto;min-width:0;height:52px;padding:0 16px;font-family:var(--U);font-size:17px;color:var(--ink);background:transparent;border:0;border-radius:0;-webkit-appearance:none;appearance:none}
 .home-find__input::placeholder{color:var(--ink-muted);opacity:1}
-.home-find__input:focus-visible{border-color:var(--ink)}
-.home-find__go{flex:0 0 auto;min-height:52px}
+.home-find__input:focus-visible{outline-offset:-4px}
+.home-find__go{flex:0 0 56px;display:grid;place-items:center;height:52px;padding:0;border:0;background:var(--ink);color:var(--bone);cursor:pointer}
+.home-find__go svg{width:21px;height:21px}
 .home-find__passage,.home-tonight__link{font-family:var(--U);font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.22em}
 .home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
 .home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
-.home-tonight{margin:0 0 var(--s-4)}
+.home-tonight{margin:var(--s-2) 0 0}
 /* Holds one line (.home-tonight__line's 17px at 1.6) while the line's module loads (Home.tsx). */
 .home-tonight--slot{min-height:calc(17px * 1.6)}
-.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px var(--s-4)}
+.home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 var(--s-4)}
 .home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
 .home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
 .home-tonight__link{padding:13px 0}
-@media (max-width:760px){.home-find,.home-tonight{margin-bottom:var(--s-2)}.home-find__label{margin-bottom:8px}}
+/* On a phone an ordinary night's line runs to two lines; both the slot and the
+   line hold two, so the doors under the hero never move when it arrives. */
+@media (max-width:760px){.home-tonight{margin-top:var(--s-1)}.home-tonight--slot,.home-tonight{min-height:calc(17px * 1.6 * 2)}}
 
 /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
  * Collections read as an index, not a wall of boxes: type carries the

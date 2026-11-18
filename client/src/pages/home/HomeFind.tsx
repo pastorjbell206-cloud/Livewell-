@@ -8,6 +8,7 @@
  */
 import { useState, type FormEvent } from "react";
 import { Link, useLocation } from "wouter";
+import { Search } from "lucide-react";
 
 import type { PassageMatch } from "@/lib/siteSearch";
 
@@ -38,7 +39,7 @@ export default function HomeFind() {
 
   return (
     <form role="search" aria-labelledby="home-find-label" className="home-find" onSubmit={submit}>
-      <label id="home-find-label" htmlFor="home-find-input" className="home-find__label">
+      <label id="home-find-label" htmlFor="home-find-input" className="sr-only">
         Look up a passage or ask a question
       </label>
       <div className="home-find__row">
@@ -54,8 +55,8 @@ export default function HomeFind() {
           onFocus={prepare}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button type="submit" className="pg-action home-find__go">
-          Find
+        <button type="submit" className="home-find__go" aria-label="Find">
+          <Search aria-hidden="true" strokeWidth={1.75} />
         </button>
       </div>
       {typed && (

@@ -277,7 +277,7 @@ describe("book links", () => {
 });
 
 describe("the home page", () => {
-  it("says the headline and one sentence of James's, with no photograph, opens the doors, and starts with three shelf essays", () => {
+  it("says James's headline beside Plate I, with no photograph, opens the doors, and leads the desk with a shelf essay", () => {
     vi.stubGlobal("fetch", offlineFetch());
     renderWithProviders(<Home />);
     const h1 = screen.getByRole("heading", { level: 1 });
@@ -285,33 +285,34 @@ describe("the home page", () => {
     // "post-Christian" in the headline opens the page that explains it.
     expect(within(h1).getByRole("link", { name: HOME_LINKED_WORD }).getAttribute("href")).toBe(HOME_LINKED_HREF);
     expect(isRoute(HOME_LINKED_HREF)).toBe(true);
-    // The one sentence is the last sentence of the paragraph James chose, word for word.
+    // The sentence under the headline is still the last sentence of James's paragraph (it opens /about's quote).
     expect(HOME_WHY.endsWith(HOME_LINE)).toBe(true);
-    expect(screen.getByText(HOME_LINE)).toBeTruthy();
-    expect(document.querySelectorAll(".home-hero p")).toHaveLength(1);
+    // The hero's picture is the drawn plate, never a photograph.
     expect(document.querySelector(".home-hero img")).toBeNull();
+    expect(document.querySelector(".home-hero svg.lw-plate")).not.toBeNull();
 
-    const doors = screen.getByRole("heading", { name: "Where to begin" }).nextElementSibling as HTMLElement;
-    for (const [name, href] of [[/^Study the Bible/, "/study/bible"], [/^Essays/, "/writing"], [/^Books/, "/books"]] as const) {
+    const doors = screen.getByRole("region", { name: "Where to begin." });
+    for (const a of within(doors).getAllByRole("link")) expect(isRoute(a.getAttribute("href") ?? ""), a.getAttribute("href") ?? "").toBe(true);
+    for (const [name, href] of [[/Study the Bible/, "/study/bible"], [/Essays/, "/writing"], [/Books/, "/books"]] as const) {
       expect(within(doors).getByRole("link", { name }).getAttribute("href")).toBe(href);
     }
 
-    const starts = START_WITH.filter((s) => isPublicEssay(s)).slice(0, 3);
-    expect(starts).toHaveLength(3);
-    for (const slug of starts) {
-      expect(document.querySelector(`a[href="/writing/${slug}"]`), slug).not.toBeNull();
-    }
+    const lead = START_WITH.find((s) => isPublicEssay(s));
+    expect(lead).toBeTruthy();
+    expect(document.querySelector(`a[href="/writing/${lead}"]`), lead).not.toBeNull();
     for (const b of BOOK_SHELF) expect(document.querySelector(`main a[href="${b.href}"]`), b.href).not.toBeNull();
     expect(screen.getByRole("link", { name: "Find help for what you are facing" }).getAttribute("href")).toBe("/help");
-    expect(screen.getAllByPlaceholderText(/you@example\.com/i).length).toBeGreaterThan(0);
+    // The follow row (Substack, Facebook, RSS, every way to find James) stays on Home.
+    expect(document.querySelector("main .follow-row")).not.toBeNull();
   });
 
   it("mirrors the hero strings in the prerendered HTML", () => {
     const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
-    for (const name of ["HOME_HEADLINE", "HOME_LINE", "HOME_LINKED_WORD", "HOME_LINKED_HREF"]) {
+    for (const name of ["HOME_HEADLINE", "HOME_LINKED_WORD", "HOME_LINKED_HREF"]) {
       expect(src, name).toContain(`positioningString("${name}")`);
     }
-    for (const cls of ["home-hero", "home-hero__title", "home-hero__text"]) {
+    expect(src).toContain('class="lw-frame-fig home-hero__art"');
+    for (const cls of ["home-hero", "home-hero__title", "home-find", "home-find__input", "lw-frame__in"]) {
       expect(src, cls).toContain(`class="${cls}"`);
     }
     // No photograph of James on the front page, in either copy.

@@ -885,7 +885,7 @@ const HOME_HERO_MARKER = /\s*<!--\s*prerender:home-hero[\s\S]*?-->/;
  * budget. Painting it from the HTML, inside the existing static shell, moves
  * the largest paint to the first paint. main.tsx waits for that paint to be
  * recorded before React replaces it (lib/static-hero.ts). The hero is the
- * headline and one sentence, with no photograph.
+ * headline, Find, and the empty frame Plate I fills; no photograph.
  */
 function positioningString(name) {
   const src = fs.readFileSync(
@@ -903,18 +903,28 @@ function homeHeroHtml() {
     s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   // A dash keeps to the word before it, as in Home.tsx.
   const headline = positioningString("HOME_HEADLINE").replace(/ \u2014/g, "\u00A0\u2014");
-  const line = positioningString("HOME_LINE");
   const word = positioningString("HOME_LINKED_WORD");
   const href = positioningString("HOME_LINKED_HREF");
-  if (!headline || !line) return "";
+  if (!headline) return "";
   // "post-Christian" in the headline opens the page that explains it, as in Home.tsx.
   const [before, after] = word && href && headline.includes(word) ? headline.split(word) : [headline, null];
   const title = after === null ? esc(headline) : `${esc(before)}<a href="${esc(href)}">${esc(word)}</a>${esc(after)}`;
+  // Find works before the app runs: a plain GET to /search. Plate I's frame is
+  // here, empty, at the size the drawing fills when React mounts.
+  const label = "Look up a passage or ask a question";
   return `
         <section class="home-hero">
           <div class="home-hero__inner">
-            <h1 class="home-hero__title">${title}</h1>
-            <p class="home-hero__text">${esc(line)}</p>
+            <div class="home-hero__words">
+              <h1 class="home-hero__title">${title}</h1>
+              <form role="search" class="home-find" action="/search" method="get" aria-label="${label}">
+                <div class="home-find__row">
+                  <input class="home-find__input" type="search" name="q" autocomplete="off" placeholder="John 3:16, or your question" aria-label="${label}">
+                  <button type="submit" class="home-find__go" aria-label="Find"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+                </div>
+              </form>
+            </div>
+            <figure class="lw-frame-fig home-hero__art"><div class="lw-frame"><div class="lw-frame__in"></div></div><figcaption class="lw-cap"><span>Plate I</span><span>The road</span></figcaption></figure>
           </div>
         </section>`;
 }

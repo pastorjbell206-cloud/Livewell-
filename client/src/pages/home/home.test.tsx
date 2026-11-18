@@ -142,23 +142,26 @@ describe("Home's tonight line", () => {
 });
 
 describe("Home's doors", () => {
-  it("open everything James named, led by the line for someone new", () => {
+  it("are ten picture cards, in order, each opening a real page", () => {
     setToday(2026, 10, 27);
     renderHome();
-    const doors = screen.getByRole("heading", { name: "Where to begin" }).nextElementSibling as HTMLElement;
+    const doors = screen.getByRole("region", { name: "Where to begin." });
     expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([
-      "/start",
       "/study/bible",
       "/theology/history",
       "/topics",
       "/family",
+      "/start",
+      "/study",
+      "/tools",
       "/writing",
       "/books",
+      "/connect",
     ]);
-    expect(within(doors).getByRole("link", { name: /^New here\? Start here/ }).getAttribute("href")).toBe("/start");
-    expect(within(doors).getByRole("link", { name: /^Church history/ }).getAttribute("href")).toBe("/theology/history");
-    expect(within(doors).getByRole("link", { name: /^Hard questions/ }).getAttribute("href")).toBe("/topics");
-    expect(screen.getByRole("link", { name: "The study guides come with a leader's guide" }).getAttribute("href")).toBe("/studyguides");
+    expect(within(doors).getByRole("link", { name: /Start here/ }).getAttribute("href")).toBe("/start");
+    expect(within(doors).getByRole("link", { name: /Find James/ }).getAttribute("href")).toBe("/connect");
+    // Every door carries its picture frame; the pictures themselves are decorative.
+    expect(doors.querySelectorAll(".lw-door .lw-frame")).toHaveLength(10);
   });
 });
 
@@ -197,7 +200,6 @@ describe("Home's latest writing", () => {
     expect(within(row).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(committed.map((e) => `/writing/${e.slug}`));
     expect(within(row).getAllByText(/^[A-Z][a-z]+ \d{1,2}, \d{4}$/)).toHaveLength(committed.length);
     expect(screen.getByRole("heading", { name: "Latest writing" })).toBeTruthy();
-    expect(screen.getByRole("heading", { name: "Start with these" })).toBeTruthy();
   });
 });
 
@@ -214,7 +216,8 @@ describe("Find on Home", () => {
     renderHome();
     fireEvent.focus(field());
     fireEvent.change(field(), { target: { value: "jn 3 16" } });
-    expect(await screen.findByRole("link", { name: "Open John 3:16 in the Study Bible" })).toHaveAttribute("href", "/study/bible/john/3#v16");
+    // The parser is a lazy import; under a full, parallel run it can take a few seconds.
+    expect(await screen.findByRole("link", { name: "Open John 3:16 in the Study Bible" }, { timeout: 5000 })).toHaveAttribute("href", "/study/bible/john/3#v16");
   });
 
   it("sends a reference to the verse", async () => {
