@@ -236,6 +236,7 @@ describe("/answers and /answers/:slug", () => {
       "do-i-have-to-choose-between-faith-and-science",
       "does-god-actually-exist",
       "if-god-is-good-why-suffering",
+      "is-hell-forever-or-does-it-end",
       "why-would-anyone-trust-the-bible",
     ]);
     for (const a of argued) {

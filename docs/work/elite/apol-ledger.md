@@ -166,3 +166,26 @@ Same method as above. "Search" is a WebSearch run in this second run (12 at most
 | Acts 2:24; Matthew 28:17; 1 Corinthians 15:17 | Essay ledger (ESV) | Verified |
 | "You can weigh it all ... where I lived for years." "The tomb sat in a city ... It would not stay closed." | The old answer's own sentences, kept word for word | James's words; the one biographical line, already his |
 | Sources: Wright 2003; Licona, *The Resurrection of Jesus: A New Historiographical Approach* (IVP Academic/Apollos, 2010); Allison, *The Resurrection of Jesus: Apologetics, Polemics, History* (T&T Clark, 2021); Sanders 1993; Bird, Evans and others, *How God Became Jesus* (2014); Hume 1748; Lüdemann, *The Resurrection of Jesus: History, Experience, Theology* (Fortress, 1994); Ehrman, *How Jesus Became God* (2014) | Search this run: Licona, Allison, Lüdemann, Sanders, Ehrman. Essay ledger: Wright, Evans's book, Hume | Verified |
+
+## Is hell forever, or does it end?
+
+12 searches. The old answer's first three sentences, its three views (with Matthew 25:46, 10:28, Romans 6:23, Stott, Fudge, Gregory of Nyssa, the church's general refusal of universalism) and its closing paragraph are kept in its own words. No doctrine changed: final judgment and separation stay near the center; what hell is and how long it lasts stays open.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Russell, "Why I Am Not a Christian", lecture 6 March 1927, Battersea Town Hall, London, National Secular Society; published as a pamphlet that year; Jesus believed in hell; "I do not myself feel that any person who is really profoundly humane can believe in everlasting punishment."; hell-fire "a doctrine of cruelty" | Search: College of Charleston course text of the lecture, Drew University copy, SuperSummary | Verified; the sentence quoted, "a doctrine of cruelty" paraphrased in the answer |
+| Mill, *An Examination of Sir William Hamilton's Philosophy* (1865): no being good who is not good in the sense we mean of a person; "to hell I will go" | Search (two runs): Fitzjames Stephen's 1866 review, reposted, carries the passage; Mill's full sentence not seen | The three words quoted; the rest paraphrased, without quotation marks |
+| Talbott, Christian philosopher, universalist; "The Problem of Hell: A Problem of Evil for Christians" (1993); *The Inescapable Love of God* (Universal Publishers, 1999) | Search: PhilPeople, SEP bibliography, Evangelical Review of Theology | Verified |
+| Kvanvig, *The Problem of Hell* (Oxford University Press, 1993) | Search: same | Verified |
+| Jesus wept over Jerusalem | Luke 19:41 | Verified (not quoted) |
+| Nicene Creed: "shall come again, with glory, to judge both the quick and the dead" | Repo creeds (`client/public/creeds/documents/nicene-creed.json`) | Verified, quoted |
+| Volf, Croatian-born; *Exclusion and Embrace* (1996) grew out of the war in the former Yugoslavia; a nonindignant God would be an accomplice to injustice; "It takes the quiet of a suburban home for the birth of the thesis that human nonviolence corresponds to God's refusal to judge." | Search (two runs): Calvin Institute of Christian Worship article and Darryl Dash's post give the sentence in this form; other blogs give looser versions; Willems and Christianity Today on the book's origin | Verified, quoted in the form two sources agree on; the "accomplice" point paraphrased. Recheck the sentence against the book if James has it. Year 1996 (Abingdon) is standard bibliography. |
+| Genesis 18:25; 1 Timothy 2:4; Ezekiel 33:11 | Repo (heaven-and-hell study guide, ESV) | Verified |
+| Aquinas, *Summa Theologiae* I-II q.87 a.4: sin's turning away from the infinite good is infinite, its turning toward a mutable good finite; the loss of God is lasting | Search: CCEL and Benziger text of q.87 a.4 | Verified, paraphrased |
+| Lewis, *The Problem of Pain* (1940), chapter on hell: "the doors of hell are locked on the inside" | Search: several copies of the sentence ("I willingly believe that the damned are, in one sense, successful, rebels to the end; that the doors of hell are locked on the inside") | Verified, quoted |
+| Lewis, *The Great Divorce* (1945): "There are only two kinds of people in the end: those who say to God, 'Thy will be done,' and those to whom God says, in the end, 'Thy will be done.'" | Search: Goodreads, C. S. Lewis Institute article, an essay citing p. 75 of the HarperOne edition | Verified, quoted |
+| Fudge, *The Fire That Consumes* (1982); Stott in *Essentials* (1988), a dialogue with David L. Edwards, held conditional immortality "tentatively" | Search: Christianity Today 2000, JETS, Fudge's site | Verified |
+| Revelation 20:12 "according to what they had done"; Romans 3:26 "so that he might be just and the justifier of the one who has faith in Jesus" | Repo (content-data, forgiveness study guide) for the phrases; ESV | Verified |
+| Revelation 14:11, the smoke of torment rising forever | ESV | Paraphrased, not quoted |
+| Jesus' warnings among the sternest in the New Testament, many aimed at the religious (e.g. Matthew 23:33) | Reading of the Gospels | Stated as "many", not as a count |
+| Sources: Russell 1927; Kvanvig 1993; Lewis 1940 and 1945; Fudge 1982; Edwards and Stott 1988; Talbott 1999; Volf 1996 | Search for each except Volf's year (standard) | Verified |

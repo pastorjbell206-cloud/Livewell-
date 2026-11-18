@@ -807,9 +807,82 @@ export const ANSWERS: Answer[] = [
     askedAs: "eternal punishment annihilation what is hell",
     question: "Is hell forever, or does it end?",
     paragraphs: [
-      "The reality of judgment and of being finally separated from God is what the church has always taught, and it is close to the center of the faith. The exact nature and duration of hell is a different matter, and Bible-loving Christians have genuinely disagreed about it. I'm not going to fake a consensus that doesn't exist.",
-      "Three views have been held by serious believers. The traditional and majority view is eternal conscious separation and suffering, resting on texts like \"these will go away into eternal punishment, but the righteous into eternal life\" (Matthew 25:46). Conditional immortality, or annihilationism, holds that the finally impenitent are not kept alive forever in torment but at last perish, resting on Jesus warning of the one who can \"destroy both soul and body in hell\" (Matthew 10:28) and on the wages of sin being death (Romans 6:23). John Stott expressed sympathy for this reading, and Edward Fudge argued it at length. A minority hope of final restoration has appeared in church history, in Gregory of Nyssa among others, though the church has generally not affirmed universal salvation and the New Testament's warnings are severe and real.",
-      "Both cheap versions are wrong. The preacher who relishes the fire has not understood the God he claims to serve, and the sentimentalist who empties the warnings has not read the pages he is quoting. What the tradition guards is narrower and more sober than either: that a person can finally, really refuse God, and that the refusal is not nothing. Christians disagree about what hell is like and how long it lasts. They don't disagree that a person can choose it.",
+      "The reality of judgment and of being finally separated from God is what the church has always taught, and it is close to the center of the faith. The exact nature and duration of hell is a different matter, and Bible-loving Christians have genuinely disagreed about it. I'm not going to fake a consensus that doesn't exist. But the skeptic's real question isn't how long. It's how a good God could do this at all, and that question deserves an argument, not a shrug. I think a world with no final judgment would be worse, not kinder, especially for the people who suffered most in it. And I think each of the three views Christians hold is an honest attempt to answer the moral objection, by denying a different step in it.",
+    ],
+    sections: [
+      {
+        heading: "The objection at full strength",
+        body: [
+          "Bertrand Russell made the charge plainly in a lecture in London in 1927, published as Why I Am Not a Christian. Jesus, he pointed out, believed in hell, and Russell counted that against his moral character: \"I do not myself feel that any person who is really profoundly humane can believe in everlasting punishment.\" He went further and called the doctrine of hell-fire a doctrine of cruelty, one that had put cruelty into the world. Sixty years earlier John Stuart Mill had made the same point from the other side. In his Examination of Sir William Hamilton's Philosophy (1865) he refused to call any being good whose goodness was not the kind we mean when we call a person good, and he added that if such a being could send him to hell for refusing, \"to hell I will go.\"",
+          "Put as an argument, the objection is about proportion. A just punishment fits the wrong. A human life is short, and even its worst wrongs are finite. Endless conscious suffering is infinite. So a God who punished that way would not be just, and a God who isn't just isn't good. Not all who press this are unbelievers. The Christian philosopher Thomas Talbott argued that hell, understood as endless and final, is a problem of evil that Christians have to answer among themselves.",
+          "I grant what is true in this, and it's a lot. The church has sometimes preached hell with a relish that looks nothing like the God who wept over Jerusalem. It has used the fear of hell to control people, and it has spoken about the fate of others with a confidence Scripture doesn't give. Russell was right that a doctrine can make people cruel. Any answer has to take that seriously before it says anything else.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "Two different questions sit inside this one, and they don't carry the same weight. The first is whether there will be a final judgment at all, in which a person can be finally separated from God. The Nicene Creed confesses that Christ \"shall come again, with glory, to judge both the quick and the dead,\" the living and the dead, and that belongs near the center of the faith. The second is what that separation is like and whether it lasts forever, and on that faithful Christians have disagreed for a very long time. I'll argue for the first. On the second I'll set out the moral objection as a chain of steps and show how each Christian view answers it by denying a different step. The argument doesn't decide among them, and I won't pretend it does.",
+        ],
+      },
+      {
+        heading: "Why there must be a judgment",
+        body: [
+          "Start with the people the objection tends to forget. Miroslav Volf is a Croatian-born theologian whose book Exclusion and Embrace (1996) grew out of trying to make sense of the war that tore apart the former Yugoslavia. He argued that a God who refused to judge would not be kind. He would be complicit. And he wrote a line that should stop anyone who has lived a comfortable life: \"It takes the quiet of a suburban home for the birth of the thesis that human nonviolence corresponds to God's refusal to judge.\"",
+          {
+            kind: "A deductive argument for final judgment",
+            premises: [
+              "Some wrongs are real and grave: the murder of the innocent, the abuse of a child, the slaughter of a people.",
+              "A good God can't treat such wrongs as if they didn't matter, because that would be to treat their victims as if they didn't matter.",
+              "Many such wrongs are never set right in this life. The guilty die comfortable, and the victims die unheard.",
+            ],
+            conclusion: "If God is good, there will be a final reckoning. Judgment isn't a stain on God's goodness. It is one of the things his goodness requires.",
+          },
+          "The weight sits on the second premise. A skeptic can reply that a good God would simply heal the victims and leave the rest alone. But healing that never names the wrong isn't love. It's indifference with a smile. Abraham, pleading for Sodom, asked the question this whole page depends on: \"Shall not the Judge of all the earth do what is just?\" (Genesis 18:25). Notice that he asked it as an appeal, not an accusation. He trusted that God's justice would be better than his own, not worse.",
+        ],
+      },
+      {
+        heading: "The argument about proportion, and three answers",
+        body: [
+          "Now the hard part. Here is the moral objection laid out, so we can see where each Christian view parts company with it.",
+          {
+            kind: "The skeptic's argument from proportion",
+            premises: [
+              "A just punishment is proportioned to the wrong done.",
+              "Every human wrong is finite.",
+              "Hell, as eternal conscious punishment, is infinite punishment.",
+            ],
+            conclusion: "Eternal conscious punishment would be unjust, so a just God would not inflict it.",
+          },
+          "The traditional view, held by most of the church through most of its history, rests on texts like \"these will go away into eternal punishment, but the righteous into eternal life\" (Matthew 25:46). It answers by denying the second premise. Thomas Aquinas argued that sin has two sides: a turning toward some lesser good, which is finite, and a turning away from God, who is the infinite good, and that the loss of God which follows is lasting because of that second side. C. S. Lewis gave a more human version. Sin isn't a single act in the past, finished and paid for. It's a direction a person keeps choosing. In The Problem of Pain (1940) he wrote that \"the doors of hell are locked on the inside.\" On that view hell doesn't punish a finite past forever. It is the place of a refusal that never ends.",
+          "Conditional immortality, or annihilationism, denies the third premise. It holds that the finally impenitent are not kept alive forever in torment but at last perish, resting on Jesus warning of the one who can \"destroy both soul and body in hell\" (Matthew 10:28) and on the wages of sin being death (Romans 6:23). The punishment is eternal in its result, not in endless suffering. Edward Fudge argued it at length in The Fire That Consumes (1982), and John Stott, one of the most respected evangelical leaders of the last century, said in a published dialogue in 1988 that he held it, tentatively.",
+          "A minority hope of final restoration denies that the separation is final at all. It has appeared in church history, in Gregory of Nyssa among others, and Talbott argues for it today. But the church has generally not affirmed universal salvation, and the New Testament's warnings are severe and real. Any view that empties them has stopped reading the pages it quotes.",
+          "Each of these is an attempt to keep both God's justice and his love, and each has texts it struggles with. The traditional view has to explain why God, who \"desires all people to be saved\" (1 Timothy 2:4), keeps the lost in being forever. Conditional immortality has to explain why Jesus set \"eternal punishment\" beside \"eternal life\" in a single sentence, and why Revelation speaks of torment whose smoke rises forever (Revelation 14:11). The hope of restoration has to explain the warnings that speak of no way back. Christians who love Scripture hold all three, though not equally, and each of them is answering the moral objection rather than ignoring it. I'm not going to settle that here.",
+        ],
+      },
+      {
+        heading: "The strongest reply",
+        body: [
+          "The strongest reply is Mill's, sharpened. Fine, the skeptic says, judge the murderer. But your tradition sends ordinary decent people to hell for failing to believe the right things, and a God who does that is the one I won't call good. If that were the Christian teaching, I'd agree with him. It isn't. Scripture says the dead are judged \"according to what they had done\" (Revelation 20:12), by a God who says, \"I have no pleasure in the death of the wicked\" (Ezekiel 33:11). What about those who never heard has its own page, and it leaves open what the Bible leaves open.",
+          "Christianity's deeper answer isn't a theory of punishment. It's the cross. The Christian claim is that God doesn't stand outside judgment sending others into it. He enters it himself, and bears it, \"so that he might be just and the justifier of the one who has faith in Jesus\" (Romans 3:26). Whatever hell is, it isn't what God wants for anyone. It is what remains when someone finally refuses what God has given at that cost. Lewis put it in a sentence in The Great Divorce (1945): \"There are only two kinds of people in the end: those who say to God, 'Thy will be done,' and those to whom God says, in the end, 'Thy will be done.'\"",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this proves that hell exists. The case for final judgment rests on two things a skeptic may deny: that God is real and that he is good. The argument shows that if he is both, judgment isn't a contradiction of his goodness. It doesn't settle what hell is like or how long it lasts, and it doesn't tell anyone who will be there. Jesus' own warnings are among the sternest in the New Testament, and many of them were aimed at the religious. That alone should keep anyone from preaching hell at someone else.",
+          "Both cheap versions are wrong. The preacher who relishes the fire has not understood the God he claims to serve, and the sentimentalist who empties the warnings has not read the pages he is quoting. What the tradition guards is narrower and more sober than either: that a person can finally, really refuse God, and that the refusal is not nothing. Christians disagree about what hell is like and how long it lasts. They don't disagree that a person can choose it.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Bertrand Russell", title: "Why I Am Not a Christian", year: "1927", note: "The classic short case against." },
+      { author: "Jonathan L. Kvanvig", title: "The Problem of Hell", year: "1993" },
+      { author: "C. S. Lewis", title: "The Problem of Pain", year: "1940" },
+      { author: "C. S. Lewis", title: "The Great Divorce", year: "1945" },
+      { author: "Edward William Fudge", title: "The Fire That Consumes", year: "1982" },
+      { author: "David L. Edwards and John Stott", title: "Essentials: A Liberal-Evangelical Dialogue", year: "1988" },
+      { author: "Thomas Talbott", title: "The Inescapable Love of God", year: "1999", note: "A Christian philosopher's case for universal salvation." },
+      { author: "Miroslav Volf", title: "Exclusion and Embrace", year: "1996" },
     ],
     essaySlug: "is-hell-eternal",
     essayTitle: "Is Hell Forever, or Does It End?",
