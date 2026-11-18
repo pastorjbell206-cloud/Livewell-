@@ -368,3 +368,32 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Biography (atheism, fatherless, five sons) as credentials in 9 places | Credentials | Atheism once, session 1, with "learn to pray from scratch" (old promo's own words) |
 | Help lines | Script compared each help sentence in old and new | All present word for word; sensitive-pages.json untouched |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Story of the Bible
+
+| Claim | How checked | Result |
+|---|---|---|
+| Genesis 1: "seven times good, and then very good" | Counted: good six times (1:4, 10, 12, 18, 21, 25), very good once (1:31) | Corrected |
+| "Four thousand years" from Abraham to Jesus; promise "four thousand years old" | Abraham about 2000 BC | "About two thousand years"; all instances fixed |
+| Abraham about 2000 BC; Exodus about 1400 BC | Traditional or debated | Marked "traditional dating"; Exodus "fifteenth or thirteenth century BC (dating debated)" |
+| Prophets 750 to 500 BC; silence 430 BC on | Amos about 760 to Malachi about 430 | "About 760 to 430 BC" |
+| Revelation about AD 95 | Common dating, not certain | "A common dating" |
+| N. T. Wright five acts, The New Testament and the People of God | Known: 1992; acts creation, fall, Israel, Jesus, church | Stated as he gives them; study's fifth session named as the ending |
+| Wright, Simply Christian: echoes of justice, beauty, relationship | Known: four echoes, justice, spirituality, relationships, beauty | Corrected; dated 2006 |
+| Wright, Surprised by Hope | Known: 2008 | Kept |
+| Bartholomew and Goheen, The Drama of Scripture | Known: 2004, six acts | Six acts noted |
+| Roberts 2002; Goldsworthy 1991; Keller 2008; Stott 1986; Strobel 1998; Lewis, Mere Christianity 1952 | Known | Dated; "Leader to confirm" removed |
+| Lewis trilemma (liar, lunatic, Lord; poached egg) | Known: Mere Christianity, book 2 ch. 3 | Paraphrase, attributed |
+| Charles Taylor, enchanted world and buffered self | Known: A Secular Age, 2007 | Paraphrase |
+| Wittgenstein: the mystery is that the world is | Known: Tractatus 6.44, 1921 | Paraphrase, dated |
+| Rieff, the triumph of the therapeutic | Known: 1966 | Kept, dated |
+| Solzhenitsyn: line between good and evil through every heart; "wrote from inside the camps" | Known: The Gulag Archipelago, written after his eight years in the camps, published 1973 | Paraphrase; "from inside" corrected |
+| Marx, "opiate of the masses" | Known as "the opium of the people," 1843-44 | Phrase corrected, unquoted |
+| 1 Corinthians 15:3 creed dated within a few years | Widely held, including by some skeptical scholars | "Many scholars, including some who don't believe it" |
+| Historians "across the spectrum" grant the empty tomb | Overstated | Empty tomb marked as more disputed than crucifixion and appearances |
+| Witnesses "many of whom died rather than recant" | Rests on later tradition | "Several suffered for it" |
+| "Pitiable fraud" (Paul) | Not Paul's words | 1 Corinthians 15:19 quoted in ESV |
+| Mark 2:5 "My son" | ESV reads "Son" | Corrected |
+| Marcion cut the Old Testament | Known: second century | Kept, dated |
+| Biography: atheism as credential (summary, primer, facilitator, FAQ 3, FAQ 10, three promo pieces) | Credentials | Kept once, session 1 teaching, where the old guide said "I once held it myself"; FAQ about the writer cut (12 to 11) |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
