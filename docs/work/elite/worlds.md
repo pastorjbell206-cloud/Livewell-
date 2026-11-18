@@ -133,6 +133,33 @@ every quoted verse against the Study Bible's text.
   words.
 - Which world should come next.
 
-## What was run, and what passed
+## What was run, and what passed (2026-11-18, after merging the latest work branch)
 
-See the closing section below, written after the gates.
+- `pnpm check`: passed (and again after the last two style fixes).
+- Every one of the 36 commands in the CI content-gates step, including
+  `validate-worlds`, `validate-no-emdash`, `validate-links`,
+  `validate-design` and the search-index and passage-index drift checks:
+  all passed.
+- `pnpm test`: 145 files passed, 7 skipped; 1,644 tests passed, 73 skipped.
+  The world page test and the route smoke test passed again after the last
+  edits.
+- ESLint on every changed source file: clean.
+- `pnpm build`, then `pnpm run sitemap`, `pnpm run prerender` (3,025 pages;
+  the portrait's full text is in its prerendered HTML) and
+  `pnpm run audit:canonicals` (0 failures): all passed.
+- Looked at the portrait at 390x844 and 1440x900, day and night, plus the
+  library and a guide: no sideways scroll at either width. Two labels ("Before
+  you start" and "How it changes what you read") were showing in the display
+  face because every heading is forced into it; both now use the interface
+  face like the site's other labels. Screenshots: `/home/user/elite-shots/worlds/`.
+- Lighthouse (median of three, local server): the portrait scored performance
+  92, accessibility 100, CLS 0.000. A guide page (temple-and-synagogue) scored
+  performance 80 and the library 90, both accessibility 100, CLS 0.000.
+
+## What was not done
+
+- The ledger lists the lines not checked a second time in the closing run
+  (the closing run was held to 25 searches and could not reach Gutenberg or
+  attalus.org).
+- The PDFs were not changed: the portrait is a page, not a guide, and
+  `scripts/build-pdfs.mjs` does not read it.
