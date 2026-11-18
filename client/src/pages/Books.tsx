@@ -126,7 +126,7 @@ export default function Books() {
           <div style={{ display: "flex", gap: "18px", flexWrap: "wrap" }}>
             <Link
               href="/writing"
-              style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
+              style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
             >
               Read the essays
             </Link>
