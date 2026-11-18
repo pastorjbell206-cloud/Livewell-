@@ -295,3 +295,35 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | "Leader to confirm" (7) | Bibliography and further reading | Removed; notes describe the books only |
 | Scripture quoted: John 1:12-13, 3:1-8, 14:16-18, 15:4-5, 16:13-14, Genesis 1:2, Ezekiel 36:26-27, Acts 5:3-4, 7:51, 13:2, Matthew 12:31 (cited), Romans 8:9, 8:13, 8:15-16, 8:20-28, 10:17, 1 Corinthians 6:19, 12:4-11, 13:1-2, 13:8-12, 14:1, 2 Corinthians 1:22, 3:18, 12:12, Galatians 5:16, 5:22-25, Ephesians 1:13-14, 2:4-5, 2:20, 4:30, Colossians 3:5, Philippians 1:6, Titus 3:5, Hebrews 2:3-4, 1 Thessalonians 5:19, 1 Peter 1:3 | ESV from memory | Quoted with references; Romans 8:15 "Abba! Father!" not quoted (described) |
 | Help box | Not on the sensitive list; no help lines in the old guide | Nothing to keep |
+
+## Hospitality
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp (atheism) in summary, leader primer, facilitator script and session 3 teaching | Credential use | Kept once, in session 3 teaching ("Christ set a place for me before I'd changed anything"), where the argument about being seated undeserving needs it; removed everywhere else |
+| "Bell takes the strong case / Bell says" throughout, questions built on "Bell says" | Narrator calling him "Bell" | Removed; teaching in first person; questions rebuilt on the passages |
+| Philoxenia = phileo + xenos; used in Romans 12:13, Hebrews 13:2, adjective in 1 Peter 4:9 | Known | Kept; glossary made precise about 1 Peter |
+| Romans 12:13 "seek" is dioko, also used for pursuing righteousness and persecuting | Known | Kept |
+| "The church had no buildings at all for three hundred years" | Overstated: there were adapted houses and some church buildings before Constantine | Made "for roughly its first three centuries the church had no buildings of its own to speak of; it met mostly in homes, many adapted for gathering" (quote card too) |
+| "The whole of Christianity in six words" (This man receives sinners and eats with them) | Seven words in English | Count removed |
+| Sojourner "named more than thirty times in the law" | Ger is frequent; exact counts vary by method | Made "dozens of times in the law" |
+| Timeline Abraham "circa 2000 BC"; Sinai "circa 1400 BC"; Isaiah 58 "circa 700 BC" | Dates debated (Isaiah 58 often placed after the exile) | "Date unknown", "Date debated", "Date debated" |
+| Timeline Jesus "circa AD 30"; early church "circa AD 50" | Acts 2 is about AD 30 to 33; Romans mid-50s | "About AD 30 to 33"; "AD 30s to 50s" with Romans in the mid-50s |
+| Timeline Basileias "circa AD 360" | Founded about 369 to 372 | "About AD 370" (as in generosity) |
+| Rule of Benedict, every guest received as Christ, foot washing | Known: Rule, chapter 53 | Kept, chapter named, as paraphrase |
+| Hospital, hostel, hospice from Latin hospes (guest and host) | Known | Kept; "circa AD 1200" made "Middle Ages" |
+| Timeline order (1999 before 1975) | Out of order | Reordered |
+| Didache and early hospitality to travelers | Known: Didache 11 to 12; 2 and 3 John | Kept; dated late first to early second century |
+| Pohl, Making Room 1999; Nouwen, Reaching Out 1975; Butterfield 2018; Oden sourcebook | Known | Kept; dates added to notes |
+| Nouwen's "free and open space where the stranger can enter and become a friend" | Unquoted in the old guide | Kept as paraphrase without quotation marks |
+| Marcel Mauss on the gift creating obligation | Known: The Gift, 1925 | Kept as paraphrase, title and year named |
+| Rublev's Trinity, open place at the table | Known icon; the open place as invitation is a common reading | Kept, marked "many have read" |
+| Judges 19 note: "hospitality stands as the last decency" | The old man's welcome ends in the handing over of the concubine; the note misread the chapter | Rewritten: a town that wouldn't open a door, a welcome that ends in horror, a society coming apart (no detail given) |
+| Levi's guests "collaborators who had sold out their own people" | Galilean toll collectors worked under Herod Antipas, not directly Rome | Made "whom their neighbors saw as collaborators with the ruling powers" |
+| "Go and sin no more" | John 8:11 ESV "Go, and from now on sin no more" | Quoted exactly with reference |
+| Keller, The Meaning of Marriage, in the bibliography "to model the platform's method" | Not on hospitality; rulebook language | Cut |
+| "Leader to confirm" (3) and "leader to weigh against the study's frame" | Bibliography and further reading | Removed; notes describe the books only |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Scripture quoted: Genesis 18:1-8, 19:3, Exodus 22:21, Leviticus 19:33-34, Deuteronomy 10:18-19, Judges 19:15, Job 31:32, Isaiah 58:6-7, Matthew 8:11, 25:35-40, Mark 2:17, Luke 5:29-30, 7:34 (phrase only, the verse has exclamation points), 14:12-14, 14:21-23, 15:1-2, 19:5-7, 24:28-31, John 8:11, Acts 2:46, 4:32-34, 16:15, Romans 5:10, 12:9-13, 15:7, 1 Timothy 3:2, 3:15, Hebrews 13:2, 1 Peter 4:9, 3 John 5-8, Revelation 3:20 | ESV from memory | Quoted with references; Luke 10:33 not quoted ("as he journeyed" trips the gate), described instead; Genesis 18:6 not quoted ("Quick!") |
+| Quotations of people | None in the old guide | None kept, none added |
+| Help box | Not on the sensitive list; no help lines in the old guide ("police" was only "policed") | Nothing to keep |
