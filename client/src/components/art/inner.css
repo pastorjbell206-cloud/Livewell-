@@ -116,3 +116,4 @@
   .lw-inner.pg-head--art .pg-head__eyebrow,.lw-inner.pg-head--art .pg-head__title{grid-column:1}
   .lw-inner.pg-head--art .pg-head__art{grid-column:2;grid-row:1 / span 2;align-self:start;margin-top:0}
 }
+.lw-holding{min-height:100vh}

@@ -106,7 +106,9 @@ export default function LibraryIndex({
     }
   };
 
-  const present = useMemo(() => groups.filter((g) => (items ?? []).some((i) => i.group === g.id)), [groups, items]);
+  // Before the list arrives every group is offered (counts follow), so the
+  // chips hold their place and nothing below them moves when it loads.
+  const present = useMemo(() => (items ? groups.filter((g) => items.some((i) => i.group === g.id)) : groups), [groups, items]);
   const words = queryWords(query);
   const searching = words.length > 0;
   const shown = useMemo(() => {
@@ -149,7 +151,7 @@ export default function LibraryIndex({
                   <button key={g.id} type="button" className="lw-chip" aria-pressed={g.id === active} onClick={() => choose(g.id)}>
                     {Icon && <Icon size={18} strokeWidth={1.75} aria-hidden="true" />}
                     {g.name}
-                    <span className="lw-chip__n">{count}</span>
+                    {items && <span className="lw-chip__n">{count}</span>}
                   </button>
                 );
               })}
@@ -157,6 +159,9 @@ export default function LibraryIndex({
           )}
         </div>
       </section>
+
+      {/* While the list loads, hold a screen's height so the page below does not jump. */}
+      {!items && !failed && <div className="home-sec lw-holding" aria-hidden="true" />}
 
       {failed && (
         <section className="home-sec">
