@@ -397,3 +397,49 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Marcion cut the Old Testament | Known: second century | Kept, dated |
 | Biography: atheism as credential (summary, primer, facilitator, FAQ 3, FAQ 10, three promo pieces) | Credentials | Kept once, session 1 teaching, where the old guide said "I once held it myself"; FAQ about the writer cut (12 to 11) |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Undivided Life
+
+| Claim | How checked | Result |
+|---|---|---|
+| Kuyper, "not one square inch... Mine," 1880 | Known: inaugural address at the Free University of Amsterdam, 20 October 1880; prime minister 1901 to 1905 | Kept as paraphrase, dated; quoted "Mine" dropped |
+| Bellah, Habits of the Heart, 1985: no shared language for the good of the whole | Known: the book's "first language" of individualism and the weaker "second languages" | Restated as the book puts it |
+| Taylor, A Secular Age, 2007: porous and buffered self | Known | Paraphrase, dated |
+| Smith, Desiring the Kingdom 2009; You Are What You Love 2016 | Known | Kept, dated |
+| Heschel, The Sabbath, 1951: "palace in time" | Known | Paraphrase, dated |
+| Brueggemann, Sabbath as Resistance, 2014: "anxiety system" | Known | Paraphrase, dated |
+| Keller, contract and covenant | Known: The Meaning of Marriage, 2011 | Credited there, not to Every Good Endeavor (2012) |
+| Plantinga, Not the Way It's Supposed to Be, 1995: shalom as universal flourishing, wholeness and delight; sin as vandalism of shalom | Known | Paraphrase, unquoted |
+| Alcorn, The Treasure Principle 2001; Money, Possessions, and Eternity; Comer, The Ruthless Elimination of Hurry 2019 | Known | Kept; "Leader to confirm" and "Not cited by Bell directly" removed |
+| Luther, 1520, "the milkmaid and the magistrate and the monk" | Known: the milkmaid line is a popular attribution; To the Christian Nobility (1520) names the cobbler, smith and peasant | Replaced with what the 1520 text says |
+| Augustine, restless heart, "circa 400" | Known: Confessions 1.1, written about 397 to 400 | Dated 397 to 400 |
+| Hosea placed about 1000 BC with David | Hosea prophesied about 750 BC | Separate entry |
+| Ephesians "circa AD 62" | Prison letters, about AD 60 to 62 | Range given |
+| Early Christians died rather than call Caesar lord | Known: Martyrdom of Polycarp 8 to 10 | Kept, Polycarp named |
+| Romans 12:1 "reasonable worship" | ESV reads "spiritual worship" (footnote: rational) | ESV quoted, rendering noted |
+| 1 Corinthians 13:5 "keeps no record of wrongs" | NIV wording; ESV "not irritable or resentful" | ESV quoted, Greek sense explained |
+| Malachi 2:14 "wife of your covenant" | ESV "your wife by covenant" | Corrected |
+| Jeremiah 29:11 "plans for wholeness" | ESV "plans for welfare"; Hebrew shalom | Corrected |
+| "The Undivided Life" as a book by James | Not on bookShelf.ts | Plug dropped |
+| Biography: atheism (summary, primer, FAQ 10); "raised without a father" (session 5) | Credentials | All cut |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## Witness
+
+| Claim | How checked | Result |
+|---|---|---|
+| Tertullian, "see how they love one another," circa 197 | Searched: Apology 39; Christian History Institute and Bibliothek der Kirchenväter give "See," they say, "how they love one another" (Latin "Vide, inquiunt, ut invicem se diligant") | Quoted in that wording, dated about 197 |
+| Christians nursing the sick in a plague "circa 165" | Known: the evidence is for the plague of about 250 to 270 (Dionysius of Alexandria, in Eusebius, Church History 7.22); Julian's letter to Arsacius, 362, on Christians feeding pagan poor | Timeline and teaching moved to the third-century plague; Julian added as the hostile observer the old guide alluded to |
+| Finney, revival "not a miracle" but right use of means, "circa 1830s" | Known: Lectures on Revivals of Religion, 1835 | Paraphrase, dated 1835 |
+| Bonhoeffer and the Confessing Church, 1934 | Known: Barmen Declaration, May 1934; Bonhoeffer in London 1933 to 1935, not a signatory | Entry names Barmen and says he served the Confessing Church |
+| Newbigin, congregation as hermeneutic of the gospel, 1989; India decades | Known: The Gospel in a Pluralist Society, 1989; India 1936 to 1974; returned to Britain | Paraphrase, unquoted; "nearly forty years" |
+| Augustine, Confessions "around 400" | Known: about 397 to 400 | Dated |
+| Stark, The Rise of Christianity | Known: 1996; plague-care argument, numbers are his estimates | "Leader to confirm" replaced with "present them as his" |
+| Lewis, Surprised by Joy; Bonhoeffer, The Cost of Discipleship; Koukl, Tactics; Pippert, Out of the Saltshaker; Taylor, A Secular Age; Keller, The Reason for God; Kreider, The Patient Ferment | Known: 1955; 1937; 2009; 1979; 2007; 2008; 2016 | Kept, dated where given; "Leader to confirm" removed |
+| Paul died for the faith (objection, session 5) | Rests on later tradition | Cut; beatings and shipwreck kept (2 Corinthians 11:24-27) |
+| John 9:25 "One thing I know" | ESV "One thing I do know" | Corrected throughout |
+| Mark 9:24 "three words long" | Not so in English or Greek | Dropped; ESV punctuation used |
+| Deuteronomy 10:19 | ESV "Love the sojourner, therefore, for you were sojourners in the land of Egypt" | Quoted as ESV |
+| "I write books" (session 1) | Stamp | Cut |
+| Biography: atheism (summary, primer, sessions 1, 2, 4, FAQ 7, FAQ 10) | Credential | Kept once, session 2 teaching |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |

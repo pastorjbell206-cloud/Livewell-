@@ -31,7 +31,9 @@ Done, committed and pushed (11, before the fifth run): mental-health, pastoral-h
 
 Fifth run (brief guides3.md): hospitality and knowing-god done, committed and pushed (13 in all).
 
-Not started (7): manhood, mishpat, money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The fourth run was assigned habits-and-formation and holy-spirit, with hospitality if room remained; it stopped at a clean guide boundary after holy-spirit and its gates, to leave hospitality whole for a fresh run. The fifth run was assigned hospitality and knowing-god, with manhood if room remained; it stopped at a clean guide boundary after knowing-god and the full gates, leaving manhood whole for a fresh run. The next guide is manhood.
+Sixth run (brief guides3.md): manhood and mishpat done, committed and pushed (15 in all).
+
+Not started (5): money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The sixth run was assigned manhood and mishpat, with money if room remained; it stopped at a clean guide boundary after mishpat and the full gates, leaving money whole for a fresh run. The next guide is money.
 
 Each guide was rewritten whole by the pilot's method: same slug, title, theme, sessions, session titles, key passages, timing, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted from the ESV (the text these guides already used) with references; case studies reframed as "Suppose"; rulebook words ("steelman", "verdict" as a method word, "inside the indictment", "the method is the mercy"), biography stamps, "Bell" and "Leader to confirm" removed; every help line kept word for word (checked by script against the old file). The claim-by-claim record is docs/work/elite/g2b-ledger.md.
 
@@ -52,6 +54,8 @@ Each guide was rewritten whole by the pilot's method: same slug, title, theme, s
 | holy-spirit | 22,745 / 18,661 | 30 / 0 | 22 / 2 | 7 / 0 | Kept: none (the creed's "the Lord and giver of life" is creed text). Paraphrased: none. Cut: none | 1 Corinthians 13:1 corrected to ESV "noisy gong or a clanging cymbal"; Wright's "Surprised by the Spirit" (no such book) made Surprised by Hope; Warfield's title made Counterfeit Miracles; Luther "1546" made Against the Heavenly Prophets, 1525; Ezekiel and New Testament dates loosened; atheism kept once, in session 2 teaching, removed elsewhere |
 | hospitality | 22,652 / 19,326 | 24 / 0 | 21 / 3 | 3 / 0 | Kept: none (the old guide quoted no one). Paraphrased: Nouwen on free space; Mauss on the gift; Benedict, Rule 53. Cut: none | "No buildings for three hundred years" softened; "six words" count removed; Judges 19 note corrected; Levi's tax collectors no longer said to work for Rome; timeline dates loosened and reordered; Basil about 370; Keller marriage book cut from the bibliography |
 | knowing-god | 26,701 / 20,212 | 20 / 0 | 44 / 8 | 3 / 0 | Kept: none (only creed text and the Arian slogan). Paraphrased: Augustine's "if you understand it, it isn't God" (now attributed to a sermon, not On the Trinity); Calvin, Institutes 1.2.1; Packer on adoption. Cut: none | Trinitarian refinement moved from Chalcedon to Constantinople 381; Calvin's line moved to the 1559 edition; Barth 1932, not 1934; Shema, Hebrews and Athanasius dates loosened; prodigal cultural claims marked as commentators' reading; biography kept once (fatherlessness, session 3), atheism removed |
+| manhood | 24,548 / 21,778 | 32 / 0 | 66 / 7 | 3 / 0 | Kept: none (the old guide quoted no one; Taylor's term "buffered self" kept). Paraphrased: Pearcey, Junger, Farrell and Gray as arguments, books named. Cut: none | Mark 10 argument moved off "the last nights" to the road (Luke 22:24 for the supper); "five words" count cut; Malachi as last book qualified (Christian order) and dated fifth century; 1 Corinthians mid-50s, not AD 60; Augustine's father restated, Luther's "curved in" removed; friendship collapse given its source (Survey Center on American Life, 2021, searched); "the poor fleeced" replaced by Mark 11:17; biography kept once (session 5), atheism removed |
+| mishpat | 26,227 / 23,286 | 31 / 0 | 35 / 3 | 7 / 0 | Kept: none. Paraphrased: King's white moderate and his segregated-hour line, Wolterstorff, Brueggemann, Gutierrez, the Talmud's count. Cut: the Bonhoeffer "silence in the face of evil" saying (searched: not in his works) | Plug for James's Mishpat book dropped (not on the shelf); Micah 6:8 and Ephesians 6:12 restored to ESV; Jubilee no longer said to cancel debts; Needle's Eye gate marked unattested; Wilberforce, Bonhoeffer, Berkhof and Wink dated correctly; James "eight centuries" after Amos, not a thousand; reconciliation word study and lament share softened; divine pronouns lowercased as in the ESV |
 
 Web searches used: 3 of 40 in the first run; 1 in the second (Chesterton's grace before the pen, for gratitude); 1 in the third (the year of Chalmers's sermon, for fruit-of-the-spirit; not found, so the year was cut); in the fourth, 1 for habits-and-formation (Willard's grace-and-earning line); in the fifth, none (hospitality and knowing-god quoted no one that needed a search; dates and attributions were corrected from known sources and loosened where unsure).
 
@@ -110,9 +114,22 @@ scripts/validate-grow-voice.mjs exempts quoted Scripture only when the words are
 - Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
 - Knowing God, session 3 (the word Father): no help line existed to keep. I added, in plain words and with no number, a pointer to a group leader, pastor or counselor in the practice, the leader primer and the FAQ. James may want the 988 line or the help box there; that is his call.
 
+## What I ran, and what passed (sixth run, after mishpat)
+
+- node scripts/validate-studyguides.mjs: 68 guides, 0 failures (after each guide).
+- Forbidden words, em-dashes and exclamation points searched literally in both guides: no forbidden words ("blessed" appears only as a verb, of the church blessing the idea of race; "verdict" only in its plain sense and in an untouched cadence line). The only exclamation points are inside quoted ESV Ecclesiastes 4:10 (manhood).
+- Help lines in manhood (988 lifeline in the leader primer, FAQ 3 and session 4 going deeper; "do not leave him alone in it") checked by script against the old file: identical.
+- Every command in the CI content-gates step (35): passed.
+- pnpm check: passed.
+- pnpm test: 144 files passed, 7 skipped, 0 failed (1,642 tests).
+- Web searches: 2 (the 2021 Survey Center on American Life friendship figures, for manhood; the Bonhoeffer "silence in the face of evil" attribution, for mishpat, not found in his works, so cut).
+- Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
+- Manhood: biography kept once, in session 5 teaching, in the words the old guide gave it (raised without a father, five sons, the wound stops here); removed from the promo kit, FAQ, primer and facilitator script, and atheism removed entirely. James may want the five sons line in session 2 instead, or nowhere.
+- Mishpat: the old guide was "drawn from James Bell's book Mishpat". That book is not on the shelf, so the guide no longer names it. If James wants the book credited, it returns to the shelf first.
+
 ## What I did not do or verify
 
-- The seven guides listed above as not started.
+- The five guides listed above as not started.
 - The ESV wording was checked from memory; there is no ESV text in the repository.
 - Lighthouse was not run for these pages (only the guide text changed; the pilot measured the same page component at CLS 0 and accessibility 99, the one miss being heading order in the page component).
 - The downloadable PDFs still carry the old wording until pnpm pdfs is rerun.
