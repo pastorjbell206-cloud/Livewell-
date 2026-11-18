@@ -422,3 +422,29 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "I will tell you where I lean, if a member asks me privately" | His sentence in the old guide | Kept; no position stated (he doesn't name one) |
 | FAQ "the medical, I mean the historical" question | Garbled | Rewritten as "Is the study grounded in scholarship" |
 | Help lines | Old guide carried none (checked by script) | None added |
+
+## fatherhood
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography: "raised without a father" (6 uses), "five sons" (3), atheism (4) | Prompt: each of the two facts at most once, where it does work; no added memory or feeling | "I was raised without a father" once (session 1 teaching, beside the wound); "I have five sons, and I write this as a fellow learner" once (session 5 teaching; "fellow learner" is the old primer's own phrase); atheism cut; "I am describing my own childhood" cut |
+| Help lines: FAQ on abuse or crisis (three sentences) and the opening ground rule "if someone is in danger, I will get help" | Script against the old file | Word for word, in place |
+| Bonhoeffer, "nothing we despise in another is wholly absent from ourselves" | Web search (After Ten Years); wording not found | Name and line cut; the idea kept as plain teaching |
+| Bonhoeffer, Life Together on listening | Known, unquoted | Kept only in the bibliography note |
+| Keller, The Prodigal God, two lost sons | Known | Kept as paraphrase |
+| Keller, "a verdict spoken over us by someone whose word counts" (credited to Prayer) | Web search: the verdict-before-performance argument is The Freedom of Self-Forgetfulness (2012), which also applies Matthew 3:17 to the believer | Paraphrased and credited to that book; bibliography entry swapped |
+| Augustine "the love that loved us before we were lovely" | Not verified | Cut |
+| Augustine, God "nearer to him than he was to himself" | Confessions 3.6.11, known | Paraphrased as "more inward to him than his own inmost self" |
+| Patricius "largely absent in any spiritual sense" | Patricius was a pagan, baptized near death (Confessions) | Restated as that |
+| Lord's Prayer "first prayed at the moment of entering the family" in "many baptismal liturgies" | Broadly: it was handed over to those preparing for baptism | Narrowed to that |
+| Shema "prayed twice a day for three thousand years" | Not supportable | "still pray morning and evening" |
+| Peterson "the religion of the spectacular" | Not verified | Cut; book title kept |
+| Haidt "the sociologist" | He is a social psychologist; The Anxious Generation (2024) | Corrected, book named |
+| Exodus 34:7 "the very next breath promises steadfast love to thousands of generations" | ESV: "keeping steadfast love for thousands" comes in the same verse, before the visiting clause; "a thousand generations" is Deuteronomy 7:9 | Corrected |
+| "Spare the rod and spoil the child" | Not a Bible verse | Response now quotes Proverbs 13:24 and 3:12 |
+| Hebrews 12:8 "illegitimate"; Luke 3:23 "about thirty" | ESV, from memory | Quoted |
+| Joshua 24:15 memory verse (elided) | ESV, from memory | Full verse |
+| Luke 15, Exodus 34:6-7, Psalm 68:5, 103:13-14, Deuteronomy 6:7, 7:9, 31:8, Mark 3:14, 10:14-16, 1 Thessalonians 2:11-12, Luke 2:51-52, 1 Timothy 5:8, Hebrews 12:6-11, Ephesians 3:14-15, 6:4, Colossians 3:21, Proverbs 3:11-12, 13:24, Matthew 3:17, 9:36-38, Genesis 1:3, 17:5, 27:34, 38, Numbers 6:24-26, Romans 8:15-16, 2 Samuel 12:7, Joshua 24:15, 2 Timothy 1:5, 1 Corinthians 3:6-7, Psalm 78:4-7 | ESV, from memory | Quoted with references |
+| "Leader to confirm" (2: Cost of Discipleship, Keller's Prayer) and "Bell" (2) | Cheap grace is Bonhoeffer's, known; Keller see above | Notes removed |
+| Abraham lied twice; Jacob twenty years; Monica lived to see Augustine's return | Genesis 12, 20; Genesis 31:38, 41; Confessions 9 | Kept |
+| Every case study | Told as an actual man in the group | Framed as "Suppose" |
