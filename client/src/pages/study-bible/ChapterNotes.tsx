@@ -94,6 +94,7 @@ export function ChapterHead({ note, place }: { note: ChapterNote | null | undefi
           </button>
         )}
         {hard > 0 && <a href="#hard-question" style={jump}>{hard > 1 ? `${hard} hard questions` : "A hard question"}</a>}
+        {note.plain && <a href="#plain" style={jump}>Passage by passage</a>}
         <a href="#questions" style={jump}>Study questions</a>
         <a href="#notes" style={jump}>Study notes</a>
       </p>
@@ -197,6 +198,24 @@ function GoDeeperSlot({ slug, chapter, label }: { slug: string; chapter: number;
   );
 }
 
+// The chapter in plain words (PlainPassages.tsx) is its own chunk too: its
+// code, CSS and file load only near the screen, in a box that holds a place.
+const PlainPassages = lazy(() => import("@/pages/study-bible/PlainPassages"));
+const plainHold: CSSProperties = { minHeight: "600px" };
+
+function PlainSlot({ slug, chapter, label }: { slug: string; chapter: number; label: string }) {
+  const [ref, near] = useNear<HTMLDivElement>();
+  return (
+    <div ref={ref} style={near ? undefined : plainHold}>
+      {near && (
+        <Suspense fallback={<div style={plainHold} />}>
+          <PlainPassages slug={slug} chapter={chapter} label={label} />
+        </Suspense>
+      )}
+    </div>
+  );
+}
+
 export function ChapterNotesBody(props: {
   books: BibleBook[];
   book: BibleBook;
@@ -247,6 +266,11 @@ export function ChapterNotesBody(props: {
       <div style={{ ...kicker, marginBottom: "8px" }}>Study notes</div>
       <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.7rem, 3.4vw, 2.2rem)", fontWeight: 400, lineHeight: 1.15, color: "var(--ink)", margin: "0 0 var(--s-4)" }}>{book.name} {chapter}: {note.title}</h2>
 
+      {note.plain && (
+        <Section title="Passage by passage, in plain words" open id="plain">
+          <PlainSlot slug={book.slug} chapter={chapter} label={`${chapterBookName(book)} ${chapter}`} />
+        </Section>
+      )}
       <Section title="Where we are in the story" open>
         <Prose text={note.story} />
       </Section>
