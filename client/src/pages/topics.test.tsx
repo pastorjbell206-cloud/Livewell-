@@ -213,7 +213,7 @@ describe("/topics/:slug", () => {
       expect(screen.getByRole("link", { name: pathName }).getAttribute("href")).toBe(href);
     }
     const use = screen.getByRole("list", { name: "Use this" });
-    for (const tool of ["The Consistency Check", "Which Lens Has You?", "The Party Scorecard", "If We Had a Biblical Government"]) {
+    for (const tool of ["Do You Hold Both Sides to the Same Standard? A Self-Check", "What Shapes the Way You Read the Bible? A Self-Check", "How Close Is Each Party to the Bible?", "What Would a Biblical Government Look Like?"]) {
       expect(within(use).getByRole("link", { name: new RegExp(tool.replace(/[?]/g, "\\?")) })).toBeTruthy();
     }
   });
