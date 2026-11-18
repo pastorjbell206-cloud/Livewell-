@@ -422,3 +422,72 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "I will tell you where I lean, if a member asks me privately" | His sentence in the old guide | Kept; no position stated (he doesn't name one) |
 | FAQ "the medical, I mean the historical" question | Garbled | Rewritten as "Is the study grounded in scholarship" |
 | Help lines | Old guide carried none (checked by script) | None added |
+
+## fatherhood
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography: "raised without a father" (6 uses), "five sons" (3), atheism (4) | Prompt: each of the two facts at most once, where it does work; no added memory or feeling | "I was raised without a father" once (session 1 teaching, beside the wound); "I have five sons, and I write this as a fellow learner" once (session 5 teaching; "fellow learner" is the old primer's own phrase); atheism cut; "I am describing my own childhood" cut |
+| Help lines: FAQ on abuse or crisis (three sentences) and the opening ground rule "if someone is in danger, I will get help" | Script against the old file | Word for word, in place |
+| Bonhoeffer, "nothing we despise in another is wholly absent from ourselves" | Web search (After Ten Years); wording not found | Name and line cut; the idea kept as plain teaching |
+| Bonhoeffer, Life Together on listening | Known, unquoted | Kept only in the bibliography note |
+| Keller, The Prodigal God, two lost sons | Known | Kept as paraphrase |
+| Keller, "a verdict spoken over us by someone whose word counts" (credited to Prayer) | Web search: the verdict-before-performance argument is The Freedom of Self-Forgetfulness (2012), which also applies Matthew 3:17 to the believer | Paraphrased and credited to that book; bibliography entry swapped |
+| Augustine "the love that loved us before we were lovely" | Not verified | Cut |
+| Augustine, God "nearer to him than he was to himself" | Confessions 3.6.11, known | Paraphrased as "more inward to him than his own inmost self" |
+| Patricius "largely absent in any spiritual sense" | Patricius was a pagan, baptized near death (Confessions) | Restated as that |
+| Lord's Prayer "first prayed at the moment of entering the family" in "many baptismal liturgies" | Broadly: it was handed over to those preparing for baptism | Narrowed to that |
+| Shema "prayed twice a day for three thousand years" | Not supportable | "still pray morning and evening" |
+| Peterson "the religion of the spectacular" | Not verified | Cut; book title kept |
+| Haidt "the sociologist" | He is a social psychologist; The Anxious Generation (2024) | Corrected, book named |
+| Exodus 34:7 "the very next breath promises steadfast love to thousands of generations" | ESV: "keeping steadfast love for thousands" comes in the same verse, before the visiting clause; "a thousand generations" is Deuteronomy 7:9 | Corrected |
+| "Spare the rod and spoil the child" | Not a Bible verse | Response now quotes Proverbs 13:24 and 3:12 |
+| Hebrews 12:8 "illegitimate"; Luke 3:23 "about thirty" | ESV, from memory | Quoted |
+| Joshua 24:15 memory verse (elided) | ESV, from memory | Full verse |
+| Luke 15, Exodus 34:6-7, Psalm 68:5, 103:13-14, Deuteronomy 6:7, 7:9, 31:8, Mark 3:14, 10:14-16, 1 Thessalonians 2:11-12, Luke 2:51-52, 1 Timothy 5:8, Hebrews 12:6-11, Ephesians 3:14-15, 6:4, Colossians 3:21, Proverbs 3:11-12, 13:24, Matthew 3:17, 9:36-38, Genesis 1:3, 17:5, 27:34, 38, Numbers 6:24-26, Romans 8:15-16, 2 Samuel 12:7, Joshua 24:15, 2 Timothy 1:5, 1 Corinthians 3:6-7, Psalm 78:4-7 | ESV, from memory | Quoted with references |
+| "Leader to confirm" (2: Cost of Discipleship, Keller's Prayer) and "Bell" (2) | Cheap grace is Bonhoeffer's, known; Keller see above | Notes removed |
+| Abraham lied twice; Jacob twenty years; Monica lived to see Augustine's return | Genesis 12, 20; Genesis 31:38, 41; Confessions 9 | Kept |
+| Every case study | Told as an actual man in the group | Framed as "Suppose" |
+
+## forgiveness
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Bell" as narrator (28); "He was raised without a father" (summary, primer, FAQ) | Brief: biography at most once, only where it does work | Cut everywhere; it did no work here |
+| Help and safety lines (14 sentences: report to the police, no obligation to restore access, the locked door, the abused woman's home, the call to seek help in the close, the leader's notes on abuse) | Script against the old file | All word for word, same count; added that forgiveness never asks anyone back within reach of harm (s3, s5, FAQ, primer) and a primer line on present danger |
+| Lewis, "Real forgiveness means looking steadily at the sin..." | Web search: not confirmed word for word; the essay is "On Forgiveness", written for a parish magazine about 1947 and published after his death (in later editions of The Weight of Glory) | Paraphrase with attribution; Mere Christianity entry replaced by The Weight of Glory; timeline 1957 corrected |
+| Bonhoeffer on cheap grace | Web search: "grace without discipleship, grace without the cross, grace without Jesus Christ, living and incarnate" and the list (baptism without church discipline, communion without confession) confirmed | That phrase quoted as "the English translation"; the rest paraphrased |
+| Bonhoeffer "died on a Nazi gallows in April 1945" for resisting a regime "the German church" blessed | Executed at Flossenbürg, April 1945; Confessing Church resisted | "much of the German church" |
+| Volf, Exclusion and Embrace (1996), remembering truthfully, forgetting at the end | Known | Paraphrase kept |
+| Peterson's phrase from Nietzsche; 1980 | Known | Kept |
+| Micah 6:8 "love mercy" | ESV "love kindness" (hesed) | Corrected throughout, hesed explained |
+| Colossians 3:13, Matthew 18:33, Lamentations 3:22-23 memory verses | ESV, from memory | Corrected |
+| Matthew 18:34-35 ("the jailers are not God's vengeance") | Verse 35 says the Father will do the same | Warning quoted and faced; readings stated |
+| Talent and denarius values | A talent about 6,000 denarii, about twenty years' wages | Stated |
+| Luke 23:34 | Absent from some early manuscripts (ESV note) | Note added |
+| Timeline: Joseph circa 1700 BC; psalms circa 1000 BC; Lamentations circa 590 BC; Stephen circa AD 34 | Traditional or approximate | "traditional dating"; "from about 1000 BC"; "after 587 BC"; "early 30s AD" |
+| Nickel Mines 2006; Amish Grace (Kraybill, Nolt, Weaver-Zercher) | Known | Kept |
+| "Leader to confirm" (5: Keller, Kendall, Brauns, Kraybill, Jenco, Stott) | Titles and authors known | Notes removed; Kendall and Brauns presented as the two sides of the session 3 debate |
+| Other Scripture: Ephesians 4:32, Psalm 51:4, Genesis 50:20, Jeremiah 31:34, Romans 12:18-19, 3:26, 13:4, 5:8, 8:1, Luke 17:3, 7:47, 3:8, Acts 7:60, Matthew 5:44, 18:21-35, Proverbs 22:3, Psalm 85:10, 13:1, 103:12, 2 Samuel 12:13-14, Job 42:7, Revelation 21:4, 1 John 1:9 | ESV, from memory | Quoted with references |
+
+## friendship
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography: atheism and "raised without a father" (summary, primer, script, FAQ); invite caption "by a man who knows the loneliness of needing no one" | Brief: no invented feeling; biography only where it does work | All cut; the leader's own "I'm inside this too" kept in the script |
+| Care lines (primer and FAQ on isolation shading into something darker; "If anyone is in crisis..."; the script's offer to talk privately; "my door is open") | Script against the old file | Word for word |
+| Lewis, The Four Loves (1960): friendship least natural, ancients ranked it highest, modern world ignores it | Known | Paraphrase |
+| Aristotle, Nicomachean Ethics books 8-9; Cicero, Laelius (44 BC) | Known | Kept; "Leader to confirm" removed |
+| Surgeon General 2023 "public health crisis" | Advisory titled Our Epidemic of Loneliness and Isolation; compares the risk to smoking | Named by title |
+| Augustine, Confessions 4: hometown a torment, "a great question to myself", half his soul, soul poured on the sand | Known (4.4.9, 4.6.11, 4.8.13) | Paraphrase |
+| Aelred, Spiritual Friendship: "God is friendship" | He raises it and grants Scripture doesn't say it | Stated with his hedge |
+| Bonhoeffer, Life Together: alone with one's sin, utterly alone | Known | Paraphrase |
+| "Moralistic therapeutic deism" credited to "some observers" | Christian Smith and Melinda Lundquist Denton, Soul Searching (2005) | Smith named |
+| Keller, The Meaning of Marriage, on the romantic ideal | Not verified | Entry and attribution cut |
+| Wesley Hill, Spiritual Friendship (2015); Murthy, Together (2020); Putnam, Bowling Alone (2000) | Known | Kept; "Leader to confirm" removed |
+| 2 Samuel 1:26 | Contested; some read it as romantic | Both readings named; the study's reading (covenant friendship) kept as the old guide had it |
+| David and Jonathan "circa 1010 BC" | Traditional | "Late eleventh century BC (traditional dating)" |
+| Saul's motive | 1 Samuel 20:31 | Quoted |
+| James 2:23 | ESV has an em-dash | Quoted in two parts |
+| Genesis 2:18, Ecclesiastes 4:9-12, Proverbs 18:24, 27:5-10, 27:17, 28:23, 1 Samuel 18:1-4, 19:1-2, 20:16-17, 20:42, 23:16, 2 Samuel 1:26, John 1:3, 11:35, 15:12-15, Exodus 33:11, Luke 7:34, Galatians 6:1-2, Ephesians 4:15, Hebrews 10:24-25, Romans 12:15, 1 Thessalonians 2:8, 3 John 14 | ESV, from memory | Quoted with references |
+| Every case study | Told as a real person in the group | Framed as "Suppose", ending in questions for the leader |
