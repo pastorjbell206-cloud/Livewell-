@@ -132,7 +132,7 @@ export default function Help() {
         url="https://www.livewellbyjamesbell.co/help"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-4) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-4) var(--gutter) var(--s-6)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
           <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, margin: "0 0 var(--s-4)", padding: "10px 14px", border: "1px solid var(--charcoal-soft)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", maxWidth: "70ch" }}>
             In danger or thinking about ending your life? Call or text <a href="tel:988" style={{ color: "inherit", fontWeight: 700 }}>988</a>, text{" "}
@@ -140,7 +140,7 @@ export default function Help() {
             <a href="#help-now" style={{ color: "var(--mustard)", fontWeight: 600 }}>More lines below</a>
           </p>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>Find help</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.6vw, 58px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "18ch" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "18ch" }}>
             What are you facing?
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--charcoal-fg)", maxWidth: "60ch", margin: "0 0 var(--s-4)" }}>
@@ -209,13 +209,13 @@ export default function Help() {
         </div>
       </section>
 
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <CrisisBlock id="help-now" heading="If you're in trouble right now" topics={["suicide", "abuse", "sexual-assault", "substance"]} />
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-7)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Where are you?</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", margin: "0 0 var(--s-3)", maxWidth: "24ch" }}>

@@ -16,7 +16,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** The second block: the old page's coaching, consulting, and writing offers. */

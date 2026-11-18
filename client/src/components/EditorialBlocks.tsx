@@ -167,7 +167,7 @@ export function StatementBand({
         {eyebrow && (
           <div
             className="eyebrow"
-            style={{ justifyContent: "center", marginBottom: "18px", color: "var(--mustard-text)" }}
+            style={{ justifyContent: "center", marginBottom: "18px", color: dark ? "var(--mustard)" : "var(--mustard-text)" }}
           >
             {eyebrow}
           </div>

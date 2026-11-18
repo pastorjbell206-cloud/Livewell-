@@ -10,7 +10,7 @@ import CrisisNote from "@/components/CrisisNote";
 import FollowRow from "@/components/FollowRow";
 import ContactForm, { CONTACT_EMAIL } from "@/components/ContactForm";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 
 const p = { fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink-muted)", margin: "0 0 var(--s-2)" } as const;
 const link = { color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" } as const;
@@ -31,7 +31,7 @@ export default function Contact() {
               id="contact-title"
               style={{
                 fontFamily: "var(--F)",
-                fontSize: "clamp(40px, 5.4vw, 64px)",
+                fontSize: "var(--fs-h1)",
                 fontWeight: 400,
                 lineHeight: 1.04,
                 letterSpacing: "-0.02em",

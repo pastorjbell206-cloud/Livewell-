@@ -96,7 +96,7 @@ export default function Answers() {
                 {a.question}
               </h2>
               {a.paragraphs.map((p, j) => (
-                <p key={j} style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "14px", opacity: j === 0 ? 1 : 0.92 }}>
+                <p key={j} style={{ fontFamily: "var(--font-reading)", fontSize: "var(--fs-read)", lineHeight: "var(--lh-read)", color: "var(--ink)", marginBottom: "14px" }}>
                   {p}
                 </p>
               ))}

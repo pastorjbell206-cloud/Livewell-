@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
@@ -19,16 +20,34 @@ const colTitleText = { fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 
 const legalLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", display: "inline-flex", alignItems: "center", minHeight: "44px" } as const;
 const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
 
+/** True on a phone-width screen (and false where the browser cannot say). */
+const PHONE = "(max-width: 640px)";
+function usePhoneWidth(): boolean {
+  const query = () => (typeof window !== "undefined" && typeof window.matchMedia === "function" ? window.matchMedia(PHONE) : null);
+  const [phone, setPhone] = useState(() => query()?.matches ?? false);
+  useEffect(() => {
+    const mq = query();
+    if (!mq?.addEventListener) return;
+    const onChange = () => setPhone(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+  return phone;
+}
+
 /**
  * Footer mirrors the header: the same five groups from lib/siteNav.ts (Study,
  * Topics, Family, Essays, About), each showing every link it holds, so the
  * destinations that sit behind a header menu are one click away here. Topics
  * ends with /resources, the one page of everything to use. About carries the
- * books, Speaking, Contact, the Substack signup, and the outbound home of ENDS. The Follow James row
- * (Substack, Facebook, RSS) sits above the bottom bar. Find Help and My Library stay in the bottom bar on every page.
+ * books, Speaking, Contact, the Substack signup, and the outbound home of
+ * ENDS. The Follow James row (Substack, Facebook, RSS) sits above the bottom
+ * bar. Find Help and My Library stay in the bottom bar on every page. On a
+ * phone the five groups are closed rows that open, so the footer stays short.
  */
 export default function Footer() {
   const { theme, toggleTheme } = useTheme();
+  const phone = usePhoneWidth();
   return (
     // charcoal, not --ink: the footer stays a dark surface in BOTH themes (--ink flips light in dark mode)
     <footer style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(36px, 7vw, 60px) clamp(16px, 4vw, 20px) 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
@@ -61,8 +80,19 @@ export default function Footer() {
               );
             return (
             <div key={group.title}>
-              <h3 style={colTitle}><span style={colTitleText}>{group.title}</span></h3>
-              <div style={col}>{group.links.map((l) => renderLink(l, footerLink))}</div>
+              {/* On a phone each group is one closed row that opens (.ft-group),
+                  so the footer is a short list of doors, not forty links. */}
+              {phone ? (
+                <details className="ft-group">
+                  <summary><h3 style={{ margin: 0 }}><span style={colTitleText}>{group.title}</span></h3></summary>
+                  <div style={col}>{group.links.map((l) => renderLink(l, footerLink))}</div>
+                </details>
+              ) : (
+                <>
+                  <h3 style={colTitle}><span style={colTitleText}>{group.title}</span></h3>
+                  <div style={col}>{group.links.map((l) => renderLink(l, footerLink))}</div>
+                </>
+              )}
               {/* The one real signup form, on every page that carries the
                   footer. Anchored under About. */}
               {group.title === "About" && (

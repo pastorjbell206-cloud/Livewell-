@@ -202,7 +202,7 @@ export default function SearchPage() {
         <button
           onClick={() => navigate("/")}
           className="flex items-center gap-2 mb-8 font-ui text-sm font-medium uppercase tracking-wider hover:opacity-70 transition-opacity"
-          style={{ color: "var(--gold)" }}
+          style={{ color: "var(--mustard-text)" }}
         >
           <ArrowLeft size={20} />
           Back
@@ -214,7 +214,7 @@ export default function SearchPage() {
             className="font-display font-bold mb-6"
             style={{
               color: "var(--ink)",
-              fontSize: "clamp(2rem, 4vw, 3rem)",
+              fontSize: "var(--fs-h1)",
               lineHeight: 1.2,
             }}
           >
@@ -252,7 +252,7 @@ export default function SearchPage() {
                 aria-pressed={searchType === type}
                 className="px-4 py-2 rounded-full font-ui text-sm font-medium uppercase tracking-wider transition-all"
                 style={{
-                  backgroundColor: searchType === type ? "var(--gold)" : "var(--bone-muted)",
+                  backgroundColor: searchType === type ? "var(--ink)" : "var(--bone-muted)",
                   color: searchType === type ? "var(--bone)" : "var(--ink)",
                 }}
               >
@@ -313,7 +313,7 @@ export default function SearchPage() {
                 <div className="mb-12">
                   <p
                     className="font-ui text-xs font-medium uppercase mb-6"
-                    style={{ color: "var(--gold)", letterSpacing: "0.18em" }}
+                    style={{ color: "var(--mustard-text)", letterSpacing: "0.18em" }}
                   >
                     Across the site
                   </p>
@@ -331,7 +331,7 @@ export default function SearchPage() {
                       >
                         <p
                           className="text-xs font-ui mb-2 uppercase tracking-wider"
-                          style={{ color: "var(--gold)" }}
+                          style={{ color: "var(--mustard-text)" }}
                         >
                           {entry.sourceLabel}
                         </p>
@@ -359,7 +359,7 @@ export default function SearchPage() {
                           <Link
                             href={entry.indexHref}
                             className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             See all in {entry.sourceLabel} →
                           </Link>
@@ -393,7 +393,7 @@ export default function SearchPage() {
                           <Link
                             href="/writing"
                             className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             essays
                           </Link>{" "}
@@ -401,7 +401,7 @@ export default function SearchPage() {
                           <Link
                             href="/tools"
                             className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             tools
                           </Link>
@@ -451,7 +451,7 @@ export default function SearchPage() {
                         {result.category && (
                           <p
                             className="text-xs font-ui mt-2 uppercase tracking-wider"
-                            style={{ color: "var(--gold)" }}
+                            style={{ color: "var(--mustard-text)" }}
                           >
                             {result.category}
                           </p>

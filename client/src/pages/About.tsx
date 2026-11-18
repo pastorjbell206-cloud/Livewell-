@@ -26,7 +26,7 @@ import { SAME_AS, liveChannels } from "@/lib/channels";
 import { HOME_WHY, PORTRAIT_URL } from "@/lib/positioning";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 /** The long form of James's story, once it is on the essay shelf. */
@@ -107,7 +107,7 @@ export default function About() {
             <h1
               style={{
                 fontFamily: "var(--F)",
-                fontSize: "clamp(44px, 6vw, 76px)",
+                fontSize: "var(--fs-display)",
                 fontWeight: 400,
                 lineHeight: 1.02,
                 letterSpacing: "-0.02em",

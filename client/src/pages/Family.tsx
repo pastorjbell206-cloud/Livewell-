@@ -140,7 +140,7 @@ export default function Family() {
       <AdventAtTheTable variant="card" />
 
       {/* CATECHISM — featured */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) 0" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <Link href="/family/catechism" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Learn the faith together</div>
@@ -158,7 +158,7 @@ export default function Family() {
       </section>
 
       {/* FAMILY DEVOTIONS: the library, a page per devotion */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead eyebrow="Do this together" title="Family devotions" intro="Short devotions for the table or the couch: a passage, a question that starts a conversation, something to do together, and a prayer a child can pray." />
           <CardGrid
@@ -172,7 +172,7 @@ export default function Family() {
       </section>
 
       {/* IF YOUR TABLE LOOKS DIFFERENT (U21) */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <TableLooksDifferent />
         </div>
@@ -183,7 +183,7 @@ export default function Family() {
       </StatementBand>
 
       {/* READING PLANS */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) 0" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter) 0" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <Link href="/family/reading-plans" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
             <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Read it together</div>
@@ -201,7 +201,7 @@ export default function Family() {
       </section>
 
       {/* TEEN APOLOGETICS */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead eyebrow="For teenagers" title="Why we believe" intro="Faith does not survive on what alone. A teenager needs the why. Honest answers to the hard questions — the resurrection, the Bible, suffering, science, other religions, and doubt itself." />
           <CardGrid
@@ -219,7 +219,7 @@ export default function Family() {
       <PullQuote>The household is the first church a child ever attends.</PullQuote>
 
       {/* PARENTING */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead eyebrow="Raising them in the faith" title="Parenting" intro="The work no one applauds, done where no congregation watches. Scripture for the real moments, plus writing and tools for the long obedience of raising children who can carry weight." />
           <CardGrid
@@ -237,7 +237,7 @@ export default function Family() {
       </section>
 
       {/* MARRIAGE */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionHead eyebrow="The center of the home" title="Marriage" intro="A home is built on a covenant before it is built on anything else. Writing and a real assessment for the marriage your family is standing on." />
           <CardGrid
@@ -254,7 +254,7 @@ export default function Family() {
       </section>
 
       {/* TOOLS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-7)" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <SectionArt seed="family-tools" />
           <SectionHead eyebrow="For the home" title="Tools" intro="Practical tools to use around the table and through the week." />

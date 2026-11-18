@@ -31,7 +31,7 @@ export default function EmailSignup() {
       />
 
       {/* ── HERO ── */}
-      <section style={{ background: "var(--charcoal)", padding: "96px 24px 72px" }}>
+      <section style={{ background: "var(--charcoal)", padding: "96px var(--gutter) 72px" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 28 }}>
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
@@ -41,7 +41,7 @@ export default function EmailSignup() {
             <span style={{ width: 32, height: 1, background: "var(--mustard)", display: "inline-block" }} />
           </div>
 
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 5vw, 64px)", fontWeight: 300, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: 24 }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.02em", color: "var(--charcoal-fg)", marginBottom: 24 }}>
             New essays by email,
             <br />
             through Substack.
@@ -67,7 +67,7 @@ export default function EmailSignup() {
       </section>
 
       {/* ── THE ONE REAL FORM ── */}
-      <section style={{ background: "var(--bone)", padding: "72px 24px" }}>
+      <section style={{ background: "var(--bone)", padding: "72px var(--gutter)" }}>
         <div style={{ maxWidth: 640, margin: "0 auto" }}>
           <SegmentedSignup
             title="Subscribe on Substack"
@@ -77,7 +77,7 @@ export default function EmailSignup() {
       </section>
 
       {/* ── READING PATHS (the self-paced real thing) ── */}
-      <section style={{ background: "var(--bone-warm)", padding: "72px 24px" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "72px var(--gutter)" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--U)", fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase" as const, color: "var(--mustard-text)", marginBottom: 20 }}>
             Prefer to read at your own pace

@@ -16,6 +16,11 @@ import { mountAfterStaticHero } from "@/lib/static-hero";
 // for the "Add to your home screen" card on My Library (lib/install).
 captureInstallPrompt();
 
+// iOS Safari applies :active (the pressed state in index.css) to a tapped
+// element only when the page listens for touches at all. This listener does
+// nothing else.
+document.addEventListener("touchstart", () => {}, { passive: true });
+
 // Calm defaults: one retry instead of three (the retry storm on a cold API
 // was the dominant cause of the ~20 s lab Speed Index), five minutes of
 // staleness for content that changes weekly, and no refetch storm when the

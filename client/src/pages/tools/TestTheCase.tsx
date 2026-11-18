@@ -120,10 +120,10 @@ export default function TestTheCase() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--s-4) var(--s-6)", color: "var(--bone)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-7) var(--gutter) var(--s-6)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>Test the Case</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 56px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
+          <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
             {active.title}
           </h1>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
@@ -153,7 +153,7 @@ export default function TestTheCase() {
       </section>
 
       {/* THE STEP-THROUGH */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-7)" }}>
         <div style={wrap}>
           {finished ? (
             <div>

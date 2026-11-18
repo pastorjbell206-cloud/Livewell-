@@ -139,7 +139,7 @@ function startEssays() {
     });
 }
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
+const gutter = "var(--gutter)";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const sectionTitle = {
   fontFamily: "var(--F)",

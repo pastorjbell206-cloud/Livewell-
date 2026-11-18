@@ -21,7 +21,7 @@ export const card: CSSProperties = { background: "var(--card)", border: "1px sol
 export function Hero({ eyebrow, eyebrowHref, title, children, tone = "bone" }: { eyebrow: string; eyebrowHref?: string; title: ReactNode; children?: ReactNode; tone?: "bone" | "charcoal" }) {
   const dark = tone === "charcoal";
   return (
-    <section style={{ background: dark ? "var(--charcoal)" : "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+    <section style={{ background: dark ? "var(--charcoal)" : "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
       <div style={wrap}>
         <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
           {eyebrowHref ? <Link href={eyebrowHref} style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>{eyebrow}</Link> : eyebrow}
@@ -42,7 +42,7 @@ export function Prose({ text, size = 17 }: { text: string | undefined; size?: nu
   return (
     <>
       {paragraphs(text).map((p, i) => (
-        <p key={i} style={{ ...prose, fontFamily: "var(--B)", fontSize: `${size}px`, lineHeight: 1.75, color: "var(--ink)", margin: "0 0 14px" }}>{p}</p>
+        <p key={i} style={{ ...prose, fontFamily: "var(--font-reading)", fontSize: `${size + 1}px`, lineHeight: 1.65, color: "var(--ink)", margin: "0 0 14px" }}>{p}</p>
       ))}
     </>
   );
@@ -58,7 +58,7 @@ export function H3({ children }: { children: ReactNode }) {
 
 export function Band({ tone = "bone", children, id }: { tone?: "bone" | "warm"; children: ReactNode; id?: string }) {
   return (
-    <section id={id} style={{ background: tone === "warm" ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-6) var(--s-4)", scrollMarginTop: "70px" }}>
+    <section id={id} style={{ background: tone === "warm" ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-6) var(--gutter)", scrollMarginTop: "70px" }}>
       <div style={wrap}>{children}</div>
     </section>
   );
@@ -85,7 +85,7 @@ export function Credits() {
 }
 
 export function Status({ children }: { children: ReactNode }) {
-  return <p role="status" style={{ ...wrap, padding: "var(--s-6) var(--s-4)", fontFamily: "var(--B)", color: "var(--ink-muted)" }}>{children}</p>;
+  return <p role="status" style={{ ...wrap, padding: "var(--s-6) var(--gutter)", fontFamily: "var(--B)", color: "var(--ink-muted)" }}>{children}</p>;
 }
 
 /**
