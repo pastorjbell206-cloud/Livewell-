@@ -70,10 +70,9 @@ export default function EmailSignup() {
             A short shelf of essays, grouped by subject, with three to start with.
             Read them at your own pace, no inbox required.
           </p>
-          <Link href="/writing" style={{ textDecoration: "none" }}>
-            <button style={{ background: "var(--ink)", color: "var(--bone)", border: "none", padding: "13px 28px", fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", borderRadius: "3px", cursor: "pointer" }}>
-              Read the essays
-            </button>
+          {/* One link, styled as the site's button (a button inside a link was two targets, the link 20px tall). */}
+          <Link href="/writing" className="btn">
+            Read the essays
           </Link>
         </div>
       </section>

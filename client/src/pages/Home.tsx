@@ -24,7 +24,7 @@
  */
 import { lazy, Suspense, useEffect, useState, type ReactNode } from "react";
 import { Link } from "wouter";
-import { ArrowRight, LifeBuoy, Mail, Mic, UserRound } from "lucide-react";
+import { ArrowRight, LifeBuoy, Mail, Mic, Smartphone, UserRound } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import FollowRow from "@/components/FollowRow";
@@ -368,6 +368,16 @@ export default function Home() {
                 In a hard season?{" "}
                 <Link href="/help" className="home-helpbar__link">
                   Find help for what you are facing
+                </Link>
+              </span>
+            </p>
+            {/* One quiet line: LiveWell from an icon (/app). */}
+            <p className="home-appline">
+              <Smartphone aria-hidden="true" size={20} strokeWidth={1.75} />
+              <span>
+                Reading on a phone?{" "}
+                <Link href="/app" className="home-helpbar__link">
+                  Put LiveWell on your phone or computer
                 </Link>
               </span>
             </p>

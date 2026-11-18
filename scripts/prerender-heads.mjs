@@ -80,14 +80,14 @@ const STATIC_PAGES = [
   {
     path: "/books",
     title: "Books by James Bell",
-    description: "The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is an ebook for $8.99.",
+    description: "The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is a free ebook to download.",
     type: "website",
     get image() { return ogImageUrl("Books by James Bell", "LiveWell"); },
   },
   {
     path: "/connect",
     title: "Find James Bell: Substack, Facebook, Essays, and Contact",
-    description: "Everything James Bell does, on one page: LiveWell, his Substack, his Facebook, the Following the Way podcast, ENDS, his books, speaking, and contact.",
+    description: "Everything James Bell does, on one page: LiveWell, ENDS, his Substack, his Facebook, his books, speaking, and contact.",
     type: "website",
     // Its own share card: the address James puts in his Facebook and Substack profiles.
     get image() { return ogImageUrl("Find James Bell", "LiveWell"); },

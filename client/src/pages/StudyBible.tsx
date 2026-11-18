@@ -545,7 +545,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
       {!wide && panel && (
         // About two fifths of the screen (index.css, .sb-panel), so the verse
         // being studied stays readable above it; "taller" is one tap away.
-        <aside aria-label="Study panel" className="sb-panel" data-tall={tall || undefined} style={{ position: "fixed", left: 0, right: 0, bottom: 0, zIndex: 60, overflowY: "auto", overscrollBehavior: "contain", background: "var(--card)", borderTop: "2px solid var(--mustard)", boxShadow: "var(--shadow-modal)", padding: "12px var(--s-3) var(--s-3)" }}>
+        <aside aria-label="Study panel" className="sb-panel" data-tall={tall || undefined} style={{ position: "fixed", left: 0, right: 0, bottom: "var(--lw-appbar-h, 0px)", zIndex: 60, overflowY: "auto", overscrollBehavior: "contain", background: "var(--card)", borderTop: "2px solid var(--mustard)", boxShadow: "var(--shadow-modal)", padding: "12px var(--s-3) var(--s-3)" }}>
           {panel}
         </aside>
       )}

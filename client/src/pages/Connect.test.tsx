@@ -63,8 +63,7 @@ describe("/connect", () => {
     const want: [string, string, string][] = [
       ["Substack", "Read on Substack", substack],
       ["Facebook", "Follow on Facebook", channelUrl("facebook")!],
-      ["Following the Way", "Listen to the podcast", channelUrl("podcast")!],
-      ["ENDS", "Visit ENDS", channelUrl("ends")!],
+      ["ENDS (Ends of the Earth Initiative)", "Visit ENDS", channelUrl("ends")!],
     ];
     for (const [name, action, href] of want) {
       const card = screen.getByRole("article", { name });
@@ -74,7 +73,9 @@ describe("/connect", () => {
       expect(link.getAttribute("rel")).toContain("noopener");
       expect(link.textContent).toMatch(/opens .* in a new tab/);
     }
-    expect(within(screen.getByRole("article", { name: "ENDS" })).getByText("Training pastors in remote regions.")).toBeTruthy();
+    const ends = screen.getByRole("article", { name: "ENDS (Ends of the Earth Initiative)" });
+    expect(within(ends).getByText("The missionary work James founded")).toBeTruthy();
+    expect(within(ends).getByRole("link", { name: /^Visit ENDS/ }).getAttribute("href")).toBe("https://endsinitiative.org");
     for (const [name, href] of [["Books", "/books"], ["Speaking", "/speaking"], ["Contact", "/contact"]]) {
       const card = screen.getByRole("article", { name });
       expect(within(card).getByRole("link").getAttribute("href"), name).toBe(href);

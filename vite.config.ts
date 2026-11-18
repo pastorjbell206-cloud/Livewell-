@@ -25,33 +25,39 @@ const plugins = [
     // the parser: as a plain <script> in <head> it held up first paint on
     // every page (U08).
     injectRegister: "script-defer",
-    includeAssets: ["robots.txt", "sitemap.xml"],
+    includeAssets: ["robots.txt", "sitemap.xml", "apple-touch-icon.png"],
+    // The web manifest is what lets a browser offer to install LiveWell
+    // (/app). Tested in Chromium on 2026-11-18 (Page.getInstallabilityErrors
+    // returned none) with the self-destroying worker above: Chrome and Edge
+    // no longer ask for a worker with a fetch handler, so none is added and
+    // nothing is cached. Colours are the brand's charcoal and cream (a
+    // manifest cannot read a CSS variable). Icons: scripts/generate-pwa-icons.mjs.
     manifest: {
+      id: "/",
       name: "LiveWell by James Bell",
       short_name: "LiveWell",
       description:
-        "Connecting the depth of theology to the weight of everyday life.",
+        "Study the Bible, church history, family devotions, and honest answers to hard questions, by James Bell.",
+      lang: "en",
+      dir: "ltr",
       theme_color: "#1A1A1A",
       background_color: "#F5F0E6",
       display: "standalone",
       start_url: "/",
+      scope: "/",
+      categories: ["books", "education", "lifestyle"],
       icons: [
-        {
-          src: "/pwa-192x192.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "/pwa-512x512.png",
-          sizes: "512x512",
-          type: "image/png",
-        },
-        {
-          src: "/pwa-512x512.png",
-          sizes: "512x512",
-          type: "image/png",
-          purpose: "maskable",
-        },
+        { src: "/pwa-192x192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+        { src: "/pwa-512x512.png", sizes: "512x512", type: "image/png", purpose: "any" },
+        { src: "/pwa-maskable-192x192.png", sizes: "192x192", type: "image/png", purpose: "maskable" },
+        { src: "/pwa-maskable-512x512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+      ],
+      // Long-press the icon (Android, Windows, ChromeOS) for these four.
+      shortcuts: [
+        { name: "Tonight's devotion", short_name: "Tonight", url: "/family/tonight", icons: [{ src: "/pwa-192x192.png", sizes: "192x192", type: "image/png" }] },
+        { name: "The Study Bible", short_name: "Bible", url: "/study/bible", icons: [{ src: "/pwa-192x192.png", sizes: "192x192", type: "image/png" }] },
+        { name: "Search", short_name: "Search", url: "/search", icons: [{ src: "/pwa-192x192.png", sizes: "192x192", type: "image/png" }] },
+        { name: "Find Help", short_name: "Find Help", url: "/help", icons: [{ src: "/pwa-192x192.png", sizes: "192x192", type: "image/png" }] },
       ],
     },
     workbox: {
