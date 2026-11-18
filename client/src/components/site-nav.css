@@ -65,3 +65,7 @@
 /* ---- Which set shows: the doors from 1024px, the menu button below ---- */
 @media(max-width:1023px){.desktop-nav{display:none!important}.mobile-nav{display:flex!important}}
 @media(min-width:1024px){.mobile-nav{display:none!important}.desktop-nav{display:flex!important}}
+
+/* A 360px phone: the name, Find Help, search, Subscribe and the menu do not
+ * fit on one line, so Subscribe waits in the menu (the phone pass, 2026-11-18). */
+@media (max-width:379px){.sn-subscribe--phone{display:none}}

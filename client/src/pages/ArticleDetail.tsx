@@ -347,7 +347,7 @@ function TableOfContents({
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  minHeight: "32px",
+                  minHeight: "44px",
                   fontFamily: "var(--B)",
                   fontSize: "15px",
                   lineHeight: 1.4,

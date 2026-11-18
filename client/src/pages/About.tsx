@@ -247,6 +247,8 @@ const ABOUT_CSS = `
 .about-prose__h3{font-family:var(--F);font-weight:500;font-size:24px;line-height:1.2;color:var(--ink);margin:0 0 6px}
 .about-more,.about-prose a.about-more{font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px}
 .about-more--dark{color:var(--charcoal-fg)}
+.about-more{position:relative}
+.about-more::after{content:"";position:absolute;left:0;right:0;top:-12px;bottom:-12px}
 @media (max-width:760px){
   .about-band__grid{grid-template-columns:minmax(0,1fr)}
 }

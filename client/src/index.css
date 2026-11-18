@@ -1894,7 +1894,7 @@ html.dark{--mark-a:#4A3C0E;--mark-b:#343B26;--mark-c:#22333C;--mark-line:#6A6252
 
 .sb-viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
 .sb-switch{display:inline-flex;padding:3px;border:1px solid var(--borderdk);border-radius:999px;background:var(--card)}
-.sb-switch button{min-height:40px;min-width:76px;padding:0 18px;border:0;border-radius:999px;background:transparent;color:var(--ink);font-family:var(--U);font-size:14px;font-weight:600;cursor:pointer}
+.sb-switch button{min-height:44px;min-width:76px;padding:0 18px;border:0;border-radius:999px;background:transparent;color:var(--ink);font-family:var(--U);font-size:14px;font-weight:600;cursor:pointer}
 .sb-switch button[aria-pressed="true"]{background:var(--ink);color:var(--bone)}
 .sb-walkbtn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 18px;border:1px solid var(--ink);border-bottom:2px solid var(--mustard);border-radius:var(--radius-sm);background:var(--ink);color:var(--bone);font-family:var(--U);font-size:14.5px;font-weight:500;cursor:pointer}
 .sb-walkbtn:hover{background:var(--charcoal-deep)}
@@ -2086,3 +2086,13 @@ aside .sb-tabs{margin-left:calc(var(--s-4) * -1);margin-right:calc(var(--s-4) * 
   .lw-inner.pg-head--art .pg-head__art{grid-column:2;grid-row:1 / span 2;align-self:start;margin-top:0}
 }
 .lw-holding{min-height:100vh}
+
+/* Phones (2026-11-18, the phone pass, docs/work/elite/app.md).
+ * A text field under 16px makes Safari on iPhone zoom the page when it is
+ * tapped; this holds every field at 16px or more on a touch screen, over any
+ * inline size. A small label link (the door over a title, an essay's section
+ * kicker) gets a 44px touch area without moving the text around it. */
+@media (hover:none) and (pointer:coarse){
+  input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]),select,textarea{font-size:max(16px,1em)!important}
+}
+.eyebrow a,.essay-kicker a{display:inline-flex;align-items:center;min-height:44px;margin:-12px 0}
