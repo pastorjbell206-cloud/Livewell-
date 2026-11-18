@@ -13,11 +13,13 @@
 .wd-sec{padding-top:var(--s-6);padding-bottom:var(--s-6)}
 [id^="wd-"],.wd-part{scroll-margin-top:84px}
 
-.wd-intro{max-width:var(--w-read);margin:0 0 var(--s-4)}
+.wd-start{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--s-6);align-items:start}
+.wd-intro{max-width:var(--w-read)}
+.wd-intro__h{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 var(--s-2)}
 .wd-intro p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 var(--s-2)}
 
 /* The contents. */
-.wd-toc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s-5);border-top:1.5px solid var(--ink)}
+.wd-toc{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
 .wd-toc a{display:grid;grid-template-columns:48px minmax(0,1fr) 18px;gap:14px;align-items:center;min-height:72px;padding:12px 0;border-bottom:1px solid var(--borderdk);color:var(--ink);text-decoration:none}
 .wd-toc__icon{display:grid;place-items:center;width:48px;height:48px;border:1.5px solid var(--art-ink);background:var(--art-paper);color:var(--art-ink)}
 .wd-toc__words{display:flex;flex-direction:column;gap:2px;min-width:0}
@@ -43,9 +45,9 @@
 .wd-read ul{list-style:none;margin:0;padding:0}
 .wd-read__item + .wd-read__item{margin-top:var(--s-4);padding-top:var(--s-4);border-top:1px solid var(--border)}
 .wd-read blockquote{margin:0;padding:0 0 0 16px;border-left:2px solid var(--art-olive)}
-.wd-read blockquote p{font-family:var(--font-reading);font-style:italic;font-size:1.0625rem;line-height:1.6;color:var(--ink);margin:0}
-.wd-read blockquote footer{margin-top:4px}
-.wd-read blockquote footer a{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--U);font-weight:600;font-size:15px;color:var(--mustard-text);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wd-read blockquote p:not(.wd-read__ref){font-family:var(--font-reading);font-style:italic;font-size:1.0625rem;line-height:1.6;color:var(--ink);margin:0}
+.wd-read blockquote .wd-read__ref{margin:4px 0 0}
+.wd-read__ref a{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--U);font-weight:600;font-size:15px;color:var(--mustard-text);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .wd-read__note{font-family:var(--font-reading);font-size:1.0625rem;line-height:1.6;color:var(--ink);margin:var(--s-1) 0 0}
 
 /* After a part: the next one, or back to the contents. */
@@ -88,7 +90,9 @@
   .wd-head .pg-head__art .lw-frame__in{border:0;aspect-ratio:390 / 190}
 }
 @media (max-width:900px){
-  .wd-toc,.wd-guides{grid-template-columns:minmax(0,1fr)}
+  .wd-start{grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
+  .wd-start .wd-toc{order:-1}
+  .wd-guides{grid-template-columns:minmax(0,1fr)}
   .wd-toc__t{font-size:20px}
   .wd-part{padding-top:var(--s-5);padding-bottom:var(--s-5)}
   .wd-bar__n{display:none}

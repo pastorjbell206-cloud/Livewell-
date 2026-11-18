@@ -785,7 +785,7 @@ function worldBody(e) {
   const p = (x) => `<p>${escapeHtml(x)}</p>`;
   const parts = (d.parts ?? []).map((part, i) => {
     const read = (part.read ?? []).map((r) =>
-      `<li><blockquote><p>${escapeHtml(r.text)}</p><footer><a href="${escapeHtml(r.href)}">${escapeHtml(r.ref)}</a></footer></blockquote>${p(r.note)}</li>`
+      `<li><blockquote><p>${escapeHtml(r.text)}</p><p><a href="${escapeHtml(r.href)}">${escapeHtml(r.ref)}</a></p></blockquote>${p(r.note)}</li>`
     ).join("\n");
     return `<section id="${escapeHtml(part.id)}"><p class="pre-eyebrow">Part ${i + 1} of ${d.parts.length}</p><h2>${escapeHtml(part.title)}</h2>\n${p(part.line)}\n${(part.body ?? []).map(p).join("\n")}${read ? `\n<h3>How it changes what you read</h3>\n<ul>${read}</ul>` : ""}</section>`;
   });

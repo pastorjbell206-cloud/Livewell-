@@ -141,38 +141,41 @@ export default function ContextWorld() {
           <section className="home-sec home-sec--warm wd-sec" aria-labelledby="wd-contents-title" id="wd-contents">
             <div className="home-wrap">
               <SectionHead icon={ListOrdered} label="Contents" title="Read it in order, or jump to a part." id="wd-contents-title" />
-              <div className="wd-intro">
-                {data.intro.map((p, i) => <p key={i}>{p}</p>)}
+              <div className="wd-start">
+                <div className="wd-intro">
+                  <h3 className="wd-intro__h">Before you start</h3>
+                  {data.intro.map((p, i) => <p key={i}>{p}</p>)}
+                </div>
+                <ol className="wd-toc">
+                  {data.parts.map((p, i) => {
+                    const Icon = ICONS[p.icon] ?? Compass;
+                    return (
+                      <li key={p.id}>
+                        <a href={`#${p.id}`}>
+                          <span className="wd-toc__icon" aria-hidden="true"><Icon size={22} strokeWidth={1.75} /></span>
+                          <span className="wd-toc__words">
+                            <span className="wd-toc__n">Part {i + 1}</span>
+                            <span className="wd-toc__t">{p.title}</span>
+                            <span className="wd-toc__l">{p.line}</span>
+                          </span>
+                          <ArrowRight className="wd-toc__go" aria-hidden="true" size={18} strokeWidth={1.75} />
+                        </a>
+                      </li>
+                    );
+                  })}
+                  <li>
+                    <a href="#wd-sources">
+                      <span className="wd-toc__icon" aria-hidden="true"><Library size={22} strokeWidth={1.75} /></span>
+                      <span className="wd-toc__words">
+                        <span className="wd-toc__n">At the end</span>
+                        <span className="wd-toc__t">Sources and further reading</span>
+                        <span className="wd-toc__l">Every ancient writer and modern book this portrait draws on.</span>
+                      </span>
+                      <ArrowRight className="wd-toc__go" aria-hidden="true" size={18} strokeWidth={1.75} />
+                    </a>
+                  </li>
+                </ol>
               </div>
-              <ol className="wd-toc">
-                {data.parts.map((p, i) => {
-                  const Icon = ICONS[p.icon] ?? Compass;
-                  return (
-                    <li key={p.id}>
-                      <a href={`#${p.id}`}>
-                        <span className="wd-toc__icon" aria-hidden="true"><Icon size={22} strokeWidth={1.75} /></span>
-                        <span className="wd-toc__words">
-                          <span className="wd-toc__n">Part {i + 1}</span>
-                          <span className="wd-toc__t">{p.title}</span>
-                          <span className="wd-toc__l">{p.line}</span>
-                        </span>
-                        <ArrowRight className="wd-toc__go" aria-hidden="true" size={18} strokeWidth={1.75} />
-                      </a>
-                    </li>
-                  );
-                })}
-                <li>
-                  <a href="#wd-sources">
-                    <span className="wd-toc__icon" aria-hidden="true"><Library size={22} strokeWidth={1.75} /></span>
-                    <span className="wd-toc__words">
-                      <span className="wd-toc__n">At the end</span>
-                      <span className="wd-toc__t">Sources and further reading</span>
-                      <span className="wd-toc__l">Every ancient writer and modern book this portrait draws on.</span>
-                    </span>
-                    <ArrowRight className="wd-toc__go" aria-hidden="true" size={18} strokeWidth={1.75} />
-                  </a>
-                </li>
-              </ol>
             </div>
           </section>
 
@@ -196,7 +199,7 @@ export default function ContextWorld() {
                           <li key={r.ref} className="wd-read__item">
                             <blockquote>
                               <p>{r.text}</p>
-                              <footer><Link href={r.href}>{r.ref} <ArrowRight aria-hidden="true" size={16} strokeWidth={1.75} /></Link></footer>
+                              <p className="wd-read__ref"><Link href={r.href}>{r.ref} <ArrowRight aria-hidden="true" size={16} strokeWidth={1.75} /></Link></p>
                             </blockquote>
                             <p className="wd-read__note">{r.note}</p>
                           </li>
