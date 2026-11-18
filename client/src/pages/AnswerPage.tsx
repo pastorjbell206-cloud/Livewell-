@@ -95,14 +95,30 @@ export default function AnswerPage() {
             {a.paragraphs.map((p, j) => (
               <p key={j}>{p}</p>
             ))}
+            {a.sections && (
+              <nav className="qa-contents" aria-label="In this answer">
+                <ol>
+                  {a.sections.map((s, k) => (
+                    <li key={k}>
+                      <a href={`#part-${k + 1}`}>{s.heading}</a>
+                    </li>
+                  ))}
+                  {a.sources && a.sources.length > 0 && (
+                    <li>
+                      <a href="#sources">Sources and further reading</a>
+                    </li>
+                  )}
+                </ol>
+              </nav>
+            )}
             {a.sections?.map((s, k) => (
-              <section key={k} className="qa-part">
+              <section key={k} className="qa-part" id={`part-${k + 1}`}>
                 <h2>{s.heading}</h2>
                 {s.body.map((b, j) => (typeof b === "string" ? <p key={j}>{b}</p> : <Steps key={j} steps={b} />))}
               </section>
             ))}
             {a.sources && a.sources.length > 0 && (
-              <section className="qa-sources">
+              <section className="qa-sources" id="sources">
                 <h2>Sources and further reading</h2>
                 <ul>
                   {a.sources.map((s) => (

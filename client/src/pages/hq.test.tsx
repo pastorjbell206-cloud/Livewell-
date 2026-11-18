@@ -220,6 +220,8 @@ describe("/answers and /answers/:slug", () => {
     const a = ANSWERS.find((x) => x.slug === "does-god-actually-exist")!;
     renderAt(`/answers/${a.slug}`);
     for (const s of a.sections!) expect(screen.getByRole("heading", { level: 2, name: s.heading })).toBeTruthy();
+    const contents = within(screen.getByRole("navigation", { name: "In this answer" })).getAllByRole("link");
+    expect(contents.map((l) => l.getAttribute("href"))).toEqual([...a.sections!.map((_, k) => `#part-${k + 1}`), "#sources"]);
     const steps = a.sections!.flatMap((s) => s.body).filter((b): b is AnswerSteps => typeof b !== "string");
     expect(steps.length).toBe(3);
     for (const st of steps) for (const p of st.premises) expect(screen.getByText(p).tagName).toBe("LI");
