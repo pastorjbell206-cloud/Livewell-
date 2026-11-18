@@ -29,7 +29,7 @@ written in", built so you can read one before the other six are written.
 
 ## Word count
 
-6,493 words of portrait (the opening and the seven parts), plus 1,062 words of
+6,549 words of portrait (the opening and the seven parts; 6,493 before the second check added 56), plus 1,062 words of
 notes under the 21 passages, plus 902 words of quoted Scripture. About 7,500
 words of our own writing in all.
 
@@ -87,11 +87,10 @@ Every claim, its source and how it was checked is in
   narrower range.
 - Babatha's papers are said to have been hidden "during the revolt that began in
   AD 132," not in that exact year.
-- The ledger names every line not checked a second time in the closing run
-  (Pliny on the Essenes, several Josephus sections, Tacitus, Philo on the
-  Essenes, 4Q521, the Psalms of Solomon, the bread-in-the-diet figure). They
-  rest on named, standard sources, but an editor should match them before the
-  other six worlds are written.
+- The lines the closing run could not check a second time (Pliny on the
+  Essenes, the Josephus sections, Tacitus, Philo on the Essenes, 4Q521, the
+  Psalms of Solomon, the bread-in-the-diet figure and the rest) were checked in
+  the second check below. Six sentences changed.
 - Anything from the Mishnah (about AD 200) is marked as later every time it
   appears: the rule on stone vessels, the flute players at a funeral, and the
   schools of Hillel and Shammai.
@@ -132,6 +131,74 @@ every quoted verse against the Study Bible's text.
 - Whether he wants a line of his own at the top of each world, and if so, the
   words.
 - Which world should come next.
+
+## Second check (2026-11-18)
+
+Every claim the ledger had marked "Not re-searched" was checked again: 44 web
+searches (direct fetches of lexundria.com were blocked from this machine, so
+Josephus was matched through search results quoting Whiston, COJS and other
+translations), plus the Study Bible's own BSB text for every Bible reference in
+the prose. The ledger had 46 lines not checked a second time; 45 were checked
+now. 39 held as written and 6 did not, and those six sentences were changed.
+One (Sanders on sacrifice) is still unchecked. Nothing else on the page changed. The ledger,
+`docs/work/elite/worlds-ledger.md`, gives the source for each.
+
+1. Tacitus (part 2). Before: "The Roman historian Tacitus, writing about AD
+   100, sneered that the Jews had given the seventh day over to idleness
+   (Histories 5.4)." After: "The Roman historian Tacitus, writing about AD 100,
+   sneered that the Jews rested on the seventh day and then, charmed by
+   idleness, gave up the seventh year as well (Histories 5.4)." Why: in 5.4 the
+   seventh day is rest after toil; "the charm of indolence" is his reason for
+   the seventh year (Church and Brodribb; Fyfe).
+2. Bread (part 2). Before: "...at least half of what ordinary people ate, and
+   perhaps much more (Susan Weingarten, drawing on the work of Magen
+   Broshi)." After: "...at least half of what ordinary people ate, and perhaps
+   as much as three quarters (Susan Weingarten, Biblical Archaeology Review,
+   2019)." Why: Weingarten gives 50 to 75 percent; no source tied the figure
+   to Broshi.
+3. Synagogue halls (part 4). Before: "Archaeologists have now found several
+   meeting halls from before 70: at Gamla in the Golan, at Herod's fortresses
+   of Masada and Herodium, and since 2009 at Magdala..." After:
+   "Archaeologists have now found several meeting halls from the first
+   century: at Gamla in the Golan, destroyed by the Romans in AD 67; in rooms
+   at Herod's fortresses of Masada and Herodium that the rebels used in the
+   war with Rome, though the Herodium hall's date is argued; and since 2009 at
+   Magdala..." Why: the Masada and Herodium halls belong to the revolt, which
+   ran past 70, and Herodium's date is disputed.
+4. Pliny on the Essenes (part 5). Before: "...a community of them on the
+   western shore of the Dead Sea, living without women..." After: "...a
+   community of them on the west side of the Dead Sea, back from the shore,
+   living without women..." Why: Pliny says they keep away from the shore,
+   which is harmful (Natural History 5.73).
+5. Theudas (part 5). Before: "...men who led crowds into the desert promising
+   signs from God, such as Theudas (Antiquities 20.97-98; Acts 5:36)..."
+   After: "...men who led crowds out promising signs from God, such as Theudas,
+   who said he would part the Jordan (Antiquities 20.97-98; Acts 5:36)..."
+   Why: Josephus has Theudas lead people to the Jordan, not the desert.
+6. Von Wahlde (part 7). Before: "Others, such as Urban von Wahlde, think the
+   Gospel accounts still fit a smaller stone that could be rolled." After:
+   "Urban von Wahlde has pointed out that Matthew, Mark and Luke all use a verb
+   that means to roll, while John says only that the stone had been removed
+   (John 20:1)." Why: that is what his 2015 BAR column is reported to argue;
+   the old sentence did not match it.
+
+Held as written, with the source now in the ledger: the Josephus sections Ant.
+13.297, 15.380, 17.289, 18.15-17, 18.20, 18.27, 18.29-30, 18.36-38, 20.118;
+War 2.427, 7.218; Against Apion 2.175; Philo on the number of the Essenes
+(Every Good Man Is Free 75, "more than four thousand"; Josephus "about four
+thousand", so "about" stands); 4Q521 and Psalms of Solomon 17 (both
+paraphrased, which fits translations that differ in wording); 1 Maccabees 2;
+the lake's size; Scythopolis; Herod's dates; Herod's and Antipas's coins; the
+scrolls count; tefillin at Qumran; stone vessels; ossuary dates; Capernaum
+houses; Bailey on kataluma; Mishnah Gittin 9:10; the Zealots; and the
+paraphrases of Sanders, Neusner, Levine, Collins, Wright and Malina.
+
+Still not verified: the distance from Nazareth to Sepphoris (5 or 6 km);
+stepped pools as a separate search; Sanders on sacrifice (Judaism: Practice
+and Belief); the exact wording of 1 Maccabees 2:41 (not quoted on the page);
+Levine's own wording (checked only through summaries); and von Wahlde's final
+conclusion, which the summaries report differently, so the page states only
+his observation about the verbs.
 
 ## What was run, and what passed (2026-11-18, after merging the latest work branch)
 
