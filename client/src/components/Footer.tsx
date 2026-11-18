@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Sun, Moon } from "lucide-react";
-import { DOORS, EVERYTHING_ENTRY, HELP_ENTRY, LEGAL_LINKS, LIBRARY_ENTRY, type CatalogEntry } from "@/lib/siteCatalog";
+import { APP_ENTRY, DOORS, EVERYTHING_ENTRY, HELP_ENTRY, LEGAL_LINKS, LIBRARY_ENTRY, type CatalogEntry } from "@/lib/siteCatalog";
+import { channelUrl, liveChannels } from "@/lib/channels";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import FollowRow from "@/components/FollowRow";
 
@@ -39,9 +40,14 @@ function usePhoneWidth(): boolean {
 const FOOT_LINE: { name: string; href: string }[] = [
   { name: LIBRARY_ENTRY.name, href: LIBRARY_ENTRY.href },
   { name: EVERYTHING_ENTRY.name, href: EVERYTHING_ENTRY.href },
+  { name: APP_ENTRY.name, href: APP_ENTRY.href },
   { name: "Downloads", href: "/downloads" },
   ...LEGAL_LINKS,
 ];
+
+/** ENDS, the missionary work James founded (lib/channels.ts): its home page, under the brand line. */
+const ENDS_URL = channelUrl("ends");
+const ENDS_LABEL = liveChannels().find((c) => c.id === "ends")?.label ?? "ENDS";
 
 /** A catalogue entry as a footer link: outbound in a new tab, in-app through wouter. */
 function FooterLink({ entry }: { entry: CatalogEntry }) {
@@ -61,7 +67,8 @@ function FooterLink({ entry }: { entry: CatalogEntry }) {
  * (lib/siteCatalog.ts), each with its own page and its rooms, so nothing
  * behind a header panel is more than one click away here. Under them, the
  * Follow James row, then one line: My Library, Everything on LiveWell,
- * Downloads, Privacy, Terms, Accessibility. Find Help leads the bottom bar on
+ * LiveWell on your phone, Downloads, Privacy, Terms, Accessibility. Under the
+ * brand line, ENDS, the work James founded, links to its own site. Find Help leads the bottom bar on
  * every page. On a phone each door is one closed row that opens, so the
  * footer stays short.
  */
@@ -76,6 +83,16 @@ export default function Footer() {
         <div style={{ marginBottom: "28px" }}>
           <div style={{ fontSize: "22px", fontWeight: 500, color: "var(--gold)", marginBottom: "8px", fontFamily: "var(--F)" }}>LiveWell</div>
           <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", margin: 0 }}>Theology that carries the weight of everyday life.</p>
+          {ENDS_URL && (
+            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", margin: "4px 0 0" }}>
+              James also founded{" "}
+              <a href={ENDS_URL} target="_blank" rel="noopener noreferrer" style={{ ...legalLink, color: "var(--charcoal-fg)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>
+                {ENDS_LABEL}
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+              .
+            </p>
+          )}
         </div>
         <div style={{ display: "grid", gridTemplateColumns: phone ? "1fr" : "repeat(auto-fit, minmax(min(140px, 100%), 1fr))", gap: phone ? 0 : "clamp(20px, 3vw, 32px)", marginBottom: "36px" }}>
           {DOORS.map((door) => {

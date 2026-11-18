@@ -7,9 +7,9 @@
  * the church and the networks, how the writing works, and how to reach him.
  * It also absorbs /connect, so the outside channels live here now.
  *
- * Standing rule (docs/work/NOTES.md): this page states no title, no number
- * of years in ministry, and no book count until James gives one set of
- * facts. Those numbers were taken out of his paragraphs on 2026-11-17 and
+ * Standing rule (docs/work/NOTES.md): this page states no title and no book
+ * count until James gives one set of facts. On 2026-11-18 he gave one: he
+ * has been a pastor for 16 years, said once in the lines under his name. Those numbers were taken out of his paragraphs on 2026-11-17 and
  * nothing else in them was reworded. The Pastors Connection Network is kept
  * off this site at his word of the same day, so the paragraph about it and
  * its link are gone; git history holds his words if he wants them back.
@@ -37,7 +37,7 @@ const REACH: HubLink[] = [
   { label: "Speaking", href: "/speaking", note: "Conferences, retreats, revivals, and pulpit supply, with a form to ask about a date." },
   { label: "Contact", href: "/contact", note: "A direct line to James, for anything else." },
   { label: "Subscribe on Substack", href: "/subscribe", note: "New essays by email. The sign-up starts here and finishes on Substack." },
-  { label: "Find James", href: "/connect", note: "Everything James does, on one page: Substack, Facebook, the podcast, ENDS, books, speaking, and contact." },
+  { label: "Find James", href: "/connect", note: "Everything James does, on one page: ENDS, Substack, Facebook, books, speaking, and contact." },
 ];
 
 /** The channels in lib/channels.ts that live at their own address. */
@@ -114,8 +114,12 @@ export default function About() {
       >
         <p className="about-roles">
           Pastor, First Baptist Church of Fenton, Michigan<br />
-          Founder, ENDS, equipping pastors in remote regions<br />
-          Host, Following the Way<br />
+          A pastor for 16 years<br />
+          Founder,{" "}
+          <a href="https://endsinitiative.org" target="_blank" rel="noopener noreferrer" className="about-roles__ends">
+            ENDS (Ends of the Earth Initiative)<span className="sr-only"> (opens in a new tab)</span>
+          </a>
+          , which trains local shepherds and sends them out<br />
           Writer
         </p>
         <p className="about-why">{HOME_WHY}</p>
@@ -173,7 +177,7 @@ export default function About() {
           I also founded ENDS, which equips pastors in remote regions around the world. The aim isn't to send Americans to do their work for them or to hand them a translated version of our assumptions. It's to put training in the hands of the men already there, who know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
         </p>
         <p>
-          The rest of it is writing. There are books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. There are the essays here, the <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It's all one project, really: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
+          The rest of it is writing. There are books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. There are the essays here, the Following the Way podcast, and the notes I write most days for whoever is reading. It's all one project, really: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
           <Link href="/books">The books are here</Link>.
         </p>
       </Band>
@@ -201,7 +205,7 @@ export default function About() {
             Ask him to speak, write to him, or get his essays by email through Substack.
           </HubGroup>
           <HubGroup id="elsewhere" title="Everywhere James is" links={ELSEWHERE}>
-            The essays and books live here. ENDS, the podcast, and the daily notes live elsewhere.
+            The essays and books live here. ENDS and the daily notes live elsewhere.
             It's the same person in each place.
           </HubGroup>
         </div>
@@ -228,6 +232,7 @@ const ABOUT_CSS = `
 .about-hero__links{display:flex;flex-wrap:wrap;gap:0 28px;margin:0;font-family:var(--U);font-size:15px}
 .about-hero__links a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:5px;background-image:none}
 .about-roles{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:14px 0 0}
+.about-roles__ends{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px;background-image:none}
 .about-why{font-family:var(--F);font-size:clamp(21px,2vw,26px);font-weight:400;line-height:1.4;color:var(--ink);max-width:40ch;margin:var(--s-3) 0 0}
 .about-head .pg-head__art .lw-frame__in{aspect-ratio:4 / 5}
 .about-band__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.9fr);gap:var(--s-3) var(--s-5);align-items:start}

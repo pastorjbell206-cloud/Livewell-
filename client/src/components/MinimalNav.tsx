@@ -15,9 +15,11 @@
 import { Link, useLocation } from "wouter";
 import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
+import AppBack from "./AppBack";
 
 import {
   DOORS,
+  APP_ENTRY,
   EVERYTHING_ENTRY,
   HELP_ENTRY,
   LIBRARY_ENTRY,
@@ -382,6 +384,8 @@ export default function MinimalNav() {
             height: "64px",
           }}
         >
+          <div style={{ display: "flex", alignItems: "center", gap: "4px", minWidth: 0 }}>
+          <AppBack />
           <Link href="/" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", minHeight: "44px" }}>
             <div>
               <div
@@ -414,6 +418,7 @@ export default function MinimalNav() {
               </div>
             </div>
           </Link>
+          </div>
 
           <div ref={doorsRef} className="desktop-nav sn-doors">
             {DOORS.map((door, i) => {
@@ -531,12 +536,12 @@ export default function MinimalNav() {
             <Link href={HELP_ENTRY.href} className="sn-util" style={{ padding: "0 8px" }}>
               {HELP_ENTRY.name}
             </Link>
-            <button type="button" className="sn-search" onClick={() => setSearchOpen(true)} aria-label="Search">
+            <button type="button" className="sn-search sn-search--phone" onClick={() => setSearchOpen(true)} aria-label="Search">
               <Search size={20} strokeWidth={ICON_STROKE} aria-hidden />
             </button>
             {/* Subscribe sits beside the menu button on a phone, so the
                 Substack signup is one tap from any page. */}
-            <Link href="/subscribe" className="sn-subscribe" style={{ margin: 0, padding: "0 12px", fontSize: "13px" }}>
+            <Link href="/subscribe" className="sn-subscribe sn-subscribe--phone" style={{ margin: 0, padding: "0 12px", fontSize: "13px" }}>
               Subscribe
             </Link>
             <button
@@ -622,7 +627,7 @@ export default function MinimalNav() {
               </ul>
 
               <ul className="sn-sheet-more">
-                {[HELP_ENTRY, LIBRARY_ENTRY, EVERYTHING_ENTRY].map((entry) => {
+                {[HELP_ENTRY, LIBRARY_ENTRY, EVERYTHING_ENTRY, APP_ENTRY].map((entry) => {
                   const Icon = ICONS[entry.icon];
                   return (
                     <li key={entry.id}>

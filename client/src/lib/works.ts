@@ -9,15 +9,14 @@
  * site. Nothing here is fetched from or embedded out of Facebook or Substack.
  *
  * Kept true on purpose:
- * - The podcast's address is http, as James gave it (channels.ts); it is
- *   linked here as it already was on /connect and /about, and stays out of
- *   the Follow row, which takes https only.
- * - All the repo knows of ENDS is its address and "training pastors in remote
- *   regions", so its line says only that.
+ * - The Following the Way podcast is off the site for now (James,
+ *   2026-11-18): it has no address yet.
+ * - ENDS's line says only what endsinitiative.org said when it was read on
+ *   2026-11-18 (endsWork below).
  * - The church has no verified web address, so it has no card.
  */
 import type { LucideIcon } from "lucide-react";
-import { Globe, Headphones, House, Library, Mail, MessageCircle, Mic, Newspaper } from "lucide-react";
+import { Globe, House, Library, Mail, MessageCircle, Mic, Newspaper } from "lucide-react";
 import type { PlateName } from "@/components/art/Plate";
 import { channelUrl, liveChannels } from "@/lib/channels";
 
@@ -72,9 +71,27 @@ export function elsewhereWorks(): Work[] {
   return [
     ...channelWork("substack", { name: label("substack", "Substack"), line: "The letter: new writing by email.", action: "Read on Substack", plate: "quill", icon: Newspaper }),
     ...channelWork("facebook", { name: label("facebook", "Facebook"), line: "The front porch: short notes from James.", action: "Follow on Facebook", plate: "lantern", icon: MessageCircle }),
-    ...channelWork("podcast", { name: label("podcast", "Following the Way"), line: "His podcast.", action: "Listen to the podcast", plate: "arch", icon: Headphones }),
-    ...channelWork("ends", { name: label("ends", "ENDS"), line: "Training pastors in remote regions.", action: "Visit ENDS", plate: "compass", icon: Globe }),
   ];
+}
+
+/**
+ * ENDS, James's missionary work, as its own card high on /connect. Its line
+ * is built only from what endsinitiative.org said on 2026-11-18: it trains
+ * local shepherds, sends them out and helps their churches do the same,
+ * among the nations, and is seeking to do it in rural America (not yet
+ * running there). Only the home page is linked.
+ */
+export function endsWork(): Work | null {
+  const label = liveChannels().find((c) => c.id === "ends")?.label ?? "ENDS (Ends of the Earth Initiative)";
+  return (
+    channelWork("ends", {
+      name: label,
+      line: "James founded ENDS. It trains local shepherds, sends them out, and helps the churches they plant do the same. It has done this among the nations, with partners in Thailand and India, and is now seeking to do the same in rural America.",
+      action: "Visit ENDS",
+      plate: "compass",
+      icon: Globe,
+    })[0] ?? null
+  );
 }
 
 /** His books, speaking and contact: pages on this site. */
@@ -84,7 +101,8 @@ export const HOME_WORKS: Work[] = [
   { id: "contact", name: "Contact", line: "Send James a message.", href: "/contact", action: "Write to James", external: false, plate: "letter", icon: Mail },
 ];
 
-/** Every work after LiveWell, in order: the outside ones, then books, speaking, contact. */
+/** Every work after LiveWell, in order: ENDS, the other outside ones, then books, speaking, contact. */
 export function allWorks(): Work[] {
-  return [...elsewhereWorks(), ...HOME_WORKS];
+  const ends = endsWork();
+  return [...(ends ? [ends] : []), ...elsewhereWorks(), ...HOME_WORKS];
 }
