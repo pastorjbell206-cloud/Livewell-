@@ -15,6 +15,7 @@ const Toaster = lazy(() =>
   import("@/components/ui/sonner").then((m) => ({ default: m.Toaster }))
 );
 import { trackReturnReaderOnce } from "@/lib/telemetry";
+import { useStandalone } from "@/lib/install";
 import { DISRUPTION, JUSTICE } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -161,6 +162,7 @@ const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
 const Speaking = lazy(() => import("./pages/Speaking"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Connect = lazy(() => import("./pages/Connect"));
+const AppInstall = lazy(() => import("./pages/AppInstall"));
 const StudyBible = lazy(() => import("./pages/StudyBible"));
 const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
 const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
@@ -625,6 +627,7 @@ function Router() {
         <Route path="/tools/glossary" component={ToolsGlossary} />
         <Route path="/work-with-james" component={ToSpeakingRedirect} />
         <Route path="/connect" component={Connect} />
+        <Route path="/app" component={AppInstall} />
         <Route path="/james" component={ToConnectRedirect} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />
@@ -712,6 +715,21 @@ function useTransitionLocation(): ReturnType<typeof useBrowserLocation> {
   return [location, navigateInTransition as typeof navigate];
 }
 
+// The bar at the foot of a phone when LiveWell is opened from its icon. Its
+// own chunk, fetched only then (components/AppBar.tsx).
+const AppBar = lazy(() => import("./components/AppBar"));
+
+function StandaloneBar() {
+  const standalone = useStandalone();
+  const [location] = useLocation();
+  if (!standalone || location.startsWith("/admin")) return null;
+  return (
+    <Suspense fallback={null}>
+      <AppBar />
+    </Suspense>
+  );
+}
+
 function App() {
   // Depth telemetry (board rec #17 / Next-Ten #4): count returning readers once
   // per load. Best-effort, no PII, no cookie — forwards to Vercel Analytics.
@@ -741,6 +759,7 @@ function App() {
             <WebVitalsBeacon />
             <ClientErrorReporter />
             <Router />
+            <StandaloneBar />
           </WouterRouter>
         </ToastProvider>
       </ThemeProvider>

@@ -46,6 +46,7 @@ const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, let
 const chipStyle = (on: boolean) =>
   ({
     cursor: "pointer",
+    minHeight: "44px",
     padding: "8px 14px",
     background: on ? "var(--mustard)" : "var(--card)",
     color: on ? "var(--charcoal)" : "var(--ink)",
@@ -56,6 +57,7 @@ const chipStyle = (on: boolean) =>
   }) as const;
 const smallActionStyle = {
   cursor: "pointer",
+  minHeight: "44px",
   display: "inline-flex",
   alignItems: "center",
   gap: "6px",
@@ -445,7 +447,7 @@ export default function WisdomFinder() {
     <LoadFailed what="The wisdom library" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
   );
   const backToList = (label: string) => (
-    <button onClick={() => setActiveId(null)} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "8px 14px", background: "none", color: "var(--ink)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", marginBottom: "var(--s-3)" }}>
+    <button onClick={() => setActiveId(null)} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "8px 14px", background: "none", color: "var(--ink)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", marginBottom: "var(--s-3)" }}>
       <ArrowLeft size={14} /> {label}
     </button>
   );
@@ -519,7 +521,7 @@ export default function WisdomFinder() {
                   key={v.id}
                   onClick={() => switchView(v.id)}
                   aria-pressed={on}
-                  style={{ cursor: "pointer", padding: "8px 16px", background: on ? "var(--charcoal)" : "none", color: on ? "var(--bone)" : "var(--ink)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}
+                  style={{ cursor: "pointer", minHeight: "44px", padding: "8px 16px", background: on ? "var(--charcoal)" : "none", color: on ? "var(--bone)" : "var(--ink)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}
                 >
                   {v.label}
                 </button>
@@ -617,7 +619,7 @@ export default function WisdomFinder() {
                         onChange={(e) => setBrowseQuery(e.target.value)}
                         placeholder="Filter the topics"
                         aria-label="Filter topics by name or keyword"
-                        style={{ width: "100%", padding: "10px 14px 10px 34px", fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", background: "var(--card)", border: "1px solid var(--line)", outline: "none" }}
+                        style={{ width: "100%", padding: "10px 14px 10px 34px", fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", background: "var(--card)", border: "1px solid var(--line)", outline: "none" }}
                       />
                     </div>
                     <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
@@ -632,7 +634,7 @@ export default function WisdomFinder() {
                           key={l}
                           onClick={() => setLetter(l)}
                           aria-pressed={on}
-                          style={{ cursor: "pointer", minWidth: "34px", padding: "6px 8px", background: on ? "var(--charcoal)" : "none", color: on ? "var(--bone)" : "var(--ink-muted)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12.5px" }}
+                          style={{ cursor: "pointer", minWidth: "44px", minHeight: "44px", padding: "6px 8px", background: on ? "var(--charcoal)" : "none", color: on ? "var(--bone)" : "var(--ink-muted)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12.5px" }}
                         >
                           {l}
                         </button>

@@ -133,9 +133,10 @@ const MAIN_PAGES = [
   { title: "Books", href: "/books", blurb: "The books of James Bell.", keywords: "books author james bell book" },
   { title: "About James", href: "/about", blurb: "Who James Bell is, and why he writes.", keywords: "about james bell author bio who is" },
   { title: "Contact", href: "/contact", blurb: "Write to James.", keywords: "contact email message reach get in touch james bell" },
-  { title: "Find James", href: "/connect", blurb: "Everything James does, in one place: his Substack, Facebook, the Following the Way podcast, ENDS, his books, speaking, and how to write to him.", keywords: "connect follow social media facebook substack podcast following the way ends initiative books speaking contact find james bell" },
+  { title: "Find James", href: "/connect", blurb: "Everything James does, in one place: ENDS (Ends of the Earth Initiative), his Substack, Facebook, his books, speaking, and how to write to him.", keywords: "connect follow social media facebook substack ends initiative ends of the earth missions shepherds books speaking contact find james bell" },
   { title: "Subscribe", href: "/subscribe", blurb: "New writing by email.", keywords: "subscribe newsletter email sign up substack" },
   { title: "Speaking", href: "/speaking", blurb: "Invite James to speak.", keywords: "speaking speaker invite preach event conference james bell" },
+  { title: "LiveWell on your phone", href: "/app", blurb: "Put LiveWell on your phone or computer and open it from an icon. The same site, free.", keywords: "app install download phone iphone android home screen computer desktop mac windows icon" },
   { title: "My Library", href: "/my-library", blurb: "What you have saved and started, kept on this device.", keywords: "saved bookmarks my library progress continue" },
 ];
 
