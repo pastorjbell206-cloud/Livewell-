@@ -86,3 +86,33 @@
 | Biography: "Bell is a pastor with five sons" (summary, primer, teaching, FAQ x2) | Confirmed fact used as a credential | Removed; "I'm a pastor" kept once where the self-implication needs it. No claim that he is married |
 | Sexual revolution "by many honest secular accounts" produced loneliness and commodification | Unattributed claim | Cut from going deeper |
 | Memory verses 1 Corinthians 7:7, Psalm 62:8, 1 Corinthians 6:20, Ephesians 2:19, John 15:5 | ESV wording | Unchanged (already ESV) |
+
+## Skeptic
+
+| Claim | How checked | Result |
+|---|---|---|
+| Lewis, Mere Christianity: "let us not come with any patronising nonsense about His being a great human teacher. He has not left that open to us. He did not intend to." | Known (Book 2, chapter 3) | Quoted; the rest of the trilemma paraphrased |
+| Lewis built the opening of Mere Christianity on the moral argument; Mere Christianity from wartime BBC talks, book 1952 (old timeline "1942 to 1952") | Known: talks began 1941 | Timeline "1941 to 1952" |
+| Surprised by Joy | Known (1955) | Dated |
+| Draper (1874), White (1896) | Known | Kept |
+| Lindberg's work on medieval science; Numbers (ed.), Galileo Goes to Jail (2009) | Known | Kept |
+| Kepler, Boyle and Newton saw their work as studying God's creation | Known | Kept |
+| Tacitus, Christ "suffered the extreme penalty" under Pilate | Known (Annals 15.44, Church and Brodribb translation) | Added as the non-Christian witness to the crucifixion; timeline entry "About 116" |
+| Socrates, unexamined life (old "circa 400 BC") | Known (Plato, Apology 38a; trial 399 BC) | "399 BC", attributed to Plato's account |
+| Aquinas, Summa 1265 to 1274; Hume 1748; Darwin 1859; James 1896 | Known | Kept |
+| Hume's Dialogues Concerning Natural Religion | Known (published 1779, after his death) | Named for the design critique |
+| Clifford, "It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence" (1877) | Known | Quoted |
+| "Augustine's faith seeking understanding" | The phrase is Anselm's (fides quaerens intellectum), drawing on Augustine | Corrected to Anselm |
+| Fine-tuning "circa 1960s onward" | Discussion grew from the 1950s; Brandon Carter named the anthropic principle in 1973 | "1950s to 1970s", Carter named |
+| Plantinga 1967 to 2000 | Known: God and Other Minds (1967), Warranted Christian Belief (2000) | Titles added |
+| Wright "1996 to 2003" | Known: series from 1992 to 2003 | "1992 to 2003" |
+| Habermas/Licona and Bauckham "2003 to 2017" | Known: 2004, 2006, 2010 | "2004 to 2010" |
+| Paul's creed "circa AD 53"; Gospels "circa AD 70 to 100" | Common scholarly dating with ranges | "Mid-50s"; "About AD 65 to 100, on most scholars' dating" |
+| Bibliography: "Misquoting Jesus and How Jesus Became God" as one title | Two books | Kept How Jesus Became God (2014) |
+| Bibliography: Sayers, Letters to a Diminished Church | Known: posthumous essay collection (2004) | Kept; "Leader to confirm" removed |
+| Keller (2008), Plantinga (2000), Wright (2003), Bauckham (2006), Habermas and Licona (2004) | Known | Dated |
+| Mark ends at 16:8 in the earliest manuscripts | Known | Stated |
+| James did not believe before the resurrection | Scripture: John 7:5; appearance 1 Corinthians 15:7 | References added |
+| Case studies with named people (Marcus, Dana, Tope, Priya, Helen) | Invented people presented as if real | Rewritten as "Suppose..." without names |
+| Biography: came to faith from atheism (summary, primer, FAQ x3, script, promo x2, teaching) | Confirmed fact used repeatedly as a credential | Kept once, in session 1's teaching, where it lets him state the atheist view as his own former view |
+| Memory verse Matthew 16:15 | ESV | Inner quotation marks restored |
