@@ -75,7 +75,7 @@ describe("/writing", () => {
     expect(screen.getByRole("heading", { level: 2, name: "The Mirror: How Sincere Believers Go Wrong" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "Faith and Power: Christian Nationalism and Politics" })).toBeInTheDocument();
     // Sections with nothing public yet stay hidden.
-    expect(screen.queryByRole("heading", { name: "Doubt and Hard Questions" })).not.toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: "Marriage, Family and Ordinary Faithfulness" })).not.toBeInTheDocument();
     // Pending essays are not listed.
     expect(screen.queryByText("What Christian Nationalism Is and What It Is Not")).not.toBeInTheDocument();
     expect(screen.getAllByText("When the Church Married Empire").length).toBeGreaterThan(0);
@@ -198,9 +198,9 @@ const robots = () => document.head.querySelector('meta[name="robots"]')?.getAttr
 describe("/writing/:slug off the shelf", () => {
   it("answers a pending shelf essay at once, noindex, pointing to its section and the Study Bible", () => {
     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
-    renderEssay("/writing/what-render-unto-caesar-actually-means");
+    renderEssay("/writing/when-god-bless-america-replaces-thy-kingdom-come");
 
-    expect(screen.getByRole("heading", { level: 1, name: "What Did Jesus Mean by \"Render Unto Caesar\"?" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "When God Bless America Replaces Thy Kingdom Come" })).toBeInTheDocument();
     expect(screen.getByText(/James is revising this essay/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Read the essays" })).toHaveAttribute("href", "/writing");
     expect(screen.getByRole("link", { name: /Go to Faith and Power/ })).toHaveAttribute("href", "/writing?section=faith-and-power");
