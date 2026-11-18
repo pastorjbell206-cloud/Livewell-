@@ -346,3 +346,23 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Leader to confirm" on Wright, Hatch, Reeves, Trueman | Known titles | Notes removed; "as Bell's own argument" phrasing cut |
 | Timeline | Old guide had none | None added |
 | Help lines | Old guide had none | None added |
+
+## doubt
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography as credential (summary, primer, FAQ, script, bulletin; atheism and fatherlessness) | Brief: once, only where it does work | Atheism kept once, session 1 teaching, where it explains why the doubt/deconstruction line must not become a weapon; fatherless line and all other uses cut |
+| Narrator "Bell" (31) | Narrator talk | Gone; his teaching in first person |
+| Mark 9:22-24, John 20:25-29, Jude 22, Psalm 13:1-2, Habakkuk 1:2, 2:1, 2:4, 3:17-18, Matthew 11:3-6, 23:13, 23:27-28, 18:6, 27:46, 2 Peter 3:9, Isaiah 53:5, 2 Corinthians 5:21, Job 38:1-4, 42:3, 42:5, 42:7, Luke 18:14, Acts 17:11, Galatians 3:28 | ESV, from memory (no ESV in repo) | Paraphrased verses replaced with ESV wording; Habakkuk 3:17-18 memory verse restored in full (flock line had been dropped); Mark 9:24 memory verse was a paraphrase, now ESV |
+| Luke 1:1-4 "having investigated everything carefully" | Not ESV wording | ESV "having followed all things closely" (Luke 1:3-4) |
+| Matthew 11 note "Jesus does not revoke John's calling" | Text | Restated: Jesus praises John to the crowd (Matthew 11:7-11) |
+| Job "argues for thirty chapters" / "thirty-seven chapters" | Speeches run chapters 3-31, Elihu 32-37 | "through most of his book" |
+| Women's testimony "not admitted in court" | Overstated; restricted, not universally barred | "a woman's word counted for little in court" |
+| New Testament manuscripts "better attested than any other ancient text by an enormous margin" | Known, widely stated | Kept as "far more manuscripts, and far earlier ones, than any other work of ancient literature" |
+| Lewis, The Problem of Pain, doors of hell "locked on the inside" | Web search (1): sentence is in the hell chapter of The Problem of Pain (1940) | Paraphrase with attribution, no quotation marks |
+| Augustine's "restless heart" (bibliography note) | Known | Dropped from the note; book kept |
+| Kepler, Newton, Faraday, Maxwell as believers | Known | Kept, "were believers" (not "overwhelmingly") |
+| "He said it harder than Hitchens ever did" | Name used as decoration | "harder than any of the famous atheists have" |
+| "Leader to confirm" on Williams, McLaren, Ortlund (3) | Titles and authors known; Williams's notes on names and places in the Gospels known | Notes removed; McLaren marked "a voice to understand, not an endorsement" |
+| Help lines | Old guide carried none (no 988, hotline, police or counselor sentence; checked by script) | None removed. Added, as care for the abuse discussion in session 4: believe the person, talk privately, and where someone is in danger help them reach police, child protective services or an advocate outside the church |
+| Timeline | Old guide had none | None added |
