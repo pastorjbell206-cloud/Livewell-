@@ -71,6 +71,7 @@ function paramSources() {
     "/pathways/:slug": slugsFrom(json("client/public/pathways/index.json")),
     "/reading-paths/:slug": slugsFrom(json("client/public/reading-paths/index.json")),
     "/resources/context/:slug": slugsFrom(json("client/public/context/guides-index.json")),
+    "/resources/context/world/:id": slugsFrom(json("client/public/context/worlds-index.json"), "id"),
     "/resources/creeds/:slug": slugsFrom(json("client/public/creeds/documents-index.json")),
     "/theology/doctrine/:slug": slugsFrom(json("client/public/theology/index.json")),
     "/theology/history/:slug": slugsFrom(json("client/public/history/essays-index.json")),

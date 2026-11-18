@@ -4,7 +4,9 @@
  * generated from the guide JSON files by scripts/build-context-index.mjs.
  *
  * The page leads with its seven groups as picture cards (each jumps to its
- * group), then a find box, then each group's guides as a short list of titles.
+ * group, or opens the group's portrait where one is written:
+ * context/worlds-index.json, pages/resources/ContextWorld.tsx), then a find
+ * box, then each group's guides as a short list of titles.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -21,6 +23,7 @@ import "../home/home.css";
 import "./libraries.css";
 
 interface Entry { slug: string; title: string; blurb: string; group: string }
+interface WorldEntry { id: string; title: string; group: string }
 const isIndex = (x: unknown): x is { guides: Entry[] } => !!x && Array.isArray((x as { guides?: unknown }).guides);
 
 /** The groups in the manifest, in the order of the Bible's own story, with a plain name, a plate and an icon. */
@@ -41,6 +44,17 @@ export default function ContextLibrary() {
   const [failed, setFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
   const [q, setQ] = useState("");
+  // The groups that have a full portrait. The cards work without it; a missing file only means no portrait links.
+  const [worlds, setWorlds] = useState<WorldEntry[]>([]);
+  useEffect(() => {
+    let live = true;
+    fetch("/context/worlds-index.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { worlds?: WorldEntry[] } | null) => { if (live && Array.isArray(d?.worlds)) setWorlds(d.worlds); })
+      .catch(() => {});
+    return () => { live = false; };
+  }, []);
+  const worldOf = (group: string) => worlds.find((w) => w.group === group);
 
   useEffect(() => {
     let live = true;
@@ -85,19 +99,30 @@ export default function ContextLibrary() {
             <LoadFailed what="The background guides" onRetry={() => setNonce((n) => n + 1)} backHref="/study" backLabel="Back to Study the Bible" />
           ) : (
             <ul className="lw-rooms lib-worlds">
-              {(items ? groups : GROUPS).map((g) => (
-                <li key={g.id}>
-                  <a href={`#${g.id}`} className="lw-door">
+              {(items ? groups : GROUPS).map((g) => {
+                const world = worldOf(g.group);
+                const count = items ? `${items.filter((i) => i.group === g.group).length} guides` : " ";
+                const inner = (
+                  <>
                     <PlateFrame>
                       <Plate name={g.plate} decorative />
                     </PlateFrame>
                     <span className="lw-door__text">
                       <span className="lw-door__t">{g.name}</span>
-                      <span className="lw-door__f">{items ? `${items.filter((i) => i.group === g.group).length} guides` : " "}</span>
+                      <span className="lw-door__f">{world && items ? `What it was like · ${count}` : count}</span>
                     </span>
-                  </a>
-                </li>
-              ))}
+                  </>
+                );
+                return (
+                  <li key={g.id}>
+                    {world ? (
+                      <Link href={`/resources/context/world/${world.id}`} className="lw-door">{inner}</Link>
+                    ) : (
+                      <a href={`#${g.id}`} className="lw-door">{inner}</a>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
@@ -123,6 +148,11 @@ export default function ContextLibrary() {
                       <span className="lib-group__icon" aria-hidden="true"><Icon size={22} strokeWidth={1.75} /></span>
                       {g.name}
                     </h2>
+                    {worldOf(g.group) && (
+                      <Link href={`/resources/context/world/${worldOf(g.group)?.id}`} className="lib-world">
+                        What it was like: the full portrait of this world <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                      </Link>
+                    )}
                     <ul className="lib-list">
                       {g.entries.map((e) => (
                         <li key={e.slug}>

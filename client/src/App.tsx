@@ -67,6 +67,7 @@ const ContextLibrary = lazy(() => import("./pages/resources/ContextLibrary"));
 const CreedsLibrary = lazy(() => import("./pages/resources/CreedsLibrary"));
 const CreedDocument = lazy(() => import("./pages/resources/CreedDocument"));
 const ContextGuide = lazy(() => import("./pages/resources/ContextGuide"));
+const ContextWorld = lazy(() => import("./pages/resources/ContextWorld"));
 const StudyGuide = lazy(() => import("./pages/studyguides/StudyGuide"));
 const StudyGuidesIndex = lazy(() => import("./pages/studyguides/StudyGuidesIndex"));
 const SkepticTrack = lazy(() => import("./pages/SkepticTrack"));
@@ -513,6 +514,7 @@ function Router() {
         <Route path="/authors/:slug" component={ToAboutRedirect} />
         <Route path="/article-collections" component={ToWritingRedirect} />
         <Route path="/resources/hard-issues-series" component={HardIssuesSeries} />
+        <Route path="/resources/context/world/:id" component={ContextWorld} />
         <Route path="/resources/context/:slug" component={ContextGuide} />
         <Route path="/resources/context" component={ContextLibrary} />
         <Route path="/resources/creeds/:slug" component={CreedDocument} />

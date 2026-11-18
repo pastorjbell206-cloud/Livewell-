@@ -261,6 +261,8 @@ function manifestPages() {
   const pages = [];
   const sources = [
     { file: "client/public/context/guides-index.json", key: "guides", prefix: "/resources/context/" },
+    // The world portraits (/resources/context/world/:id), keyed by id.
+    { file: "client/public/context/worlds-index.json", key: "worlds", slugField: "id", prefix: "/resources/context/world/" },
     { file: "client/public/life/domains-index.json", key: "domains", prefix: "/life/" },
     { file: "client/public/creeds/documents-index.json", key: "documents", prefix: "/resources/creeds/" },
     { file: "client/public/history/essays-index.json", key: "essays", prefix: "/theology/history/" },
