@@ -314,6 +314,7 @@ function manifestPages() {
     pages.push({ url: "/study/bible/story", priority: "0.9", changefreq: "monthly" });
     for (const a of JSON.parse(fs.readFileSync("client/public/bible/story.json", "utf8")).acts)
       pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/bible/search", priority: "0.6", changefreq: "monthly" });
     pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides/whole-story-2027", priority: "0.8", changefreq: "monthly" });

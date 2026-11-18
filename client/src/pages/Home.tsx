@@ -120,7 +120,7 @@ const DOORS = [
   {
     title: "Books",
     href: "/books",
-    note: "The books James wrote himself. The opening of each is free to read.",
+    note: "The three books James wrote himself. Each is an ebook for $8.99.",
   },
 ];
 
@@ -298,7 +298,6 @@ export default function Home() {
             variant="inline"
             source="home"
             title="New essays by email, through Substack"
-            description="Serious theology, written for the week you are actually living. Leave your email here and finish on Substack, and leave whenever you like."
           />
           {/* Where else James writes: links only (lib/channels.ts). */}
           <FollowRow style={{ marginTop: "var(--s-3)" }} />

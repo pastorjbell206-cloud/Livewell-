@@ -37,6 +37,9 @@ export const WAIT_CLASS = "lw-root-wait";
 
 /** True when the app under the held text has a real page to show. */
 export function pageIsReady(root: Element): boolean {
+  // A page that has said its content did not load (components/LoadFailed) is
+  // as ready as it will get; do not keep the reader waiting for a heading.
+  if (root.querySelector("[data-lw-failed]") !== null) return true;
   return root.querySelector("main h1") !== null && root.querySelector("[data-lw-loading]") === null;
 }
 

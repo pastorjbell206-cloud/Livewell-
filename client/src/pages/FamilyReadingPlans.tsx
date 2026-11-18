@@ -213,7 +213,7 @@ export default function FamilyReadingPlans() {
             <p style={{ fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-2) 0 0" }}>
               For the whole Bible in a year, there's a plan for that too:{" "}
               <Link href="/study/bible/guides/whole-story-2027" className="tb-different__link">
-                Read the whole story in 2027
+                Read the Bible in a year (2027)
               </Link>
               .
             </p>

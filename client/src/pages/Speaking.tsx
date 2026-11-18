@@ -27,7 +27,7 @@ const ALONGSIDE = [
   },
   {
     title: "Church consulting",
-    desc: "For a church that has stalled, or is quietly dying and has not said so. An honest reading of where it actually is, what has to change, and how to change it without losing the people you are there to serve. A network of pastors who have been through the same.",
+    desc: "For a church that has stalled, or is quietly dying and has not said so. An honest reading of where it actually is, what has to change, and how to change it without losing the people you are there to serve.",
   },
   {
     title: "Writing and ghostwriting",

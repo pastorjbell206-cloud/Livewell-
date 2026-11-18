@@ -22,6 +22,8 @@ import SubjectShelf from "@/components/SubjectShelf";
 import HistoryTimeline from "@/components/history/HistoryTimeline";
 import { subjectById } from "@/lib/subjects";
 import { readStoredJSON } from "@/lib/storage";
+import { fetchJson } from "@/lib/fetch-json";
+import { LoadFailed } from "@/components/LoadFailed";
 import {
   COURSE_PLACE_KEY, buildNameIndex, courseEssays, deeperEssays, entryId, isCoursePlace, kindOfAnchor, splitNames,
   type Council, type EntryKind, type Era, type Figure, type Heresy, type HistoryEssayEntry,
@@ -104,14 +106,29 @@ export default function TheologyHistory() {
     return () => cancelAnimationFrame(frame);
   }, [target, tab, councils.length, heresies.length, figures.length]);
 
+  // A file that does not arrive is said out loud, with a way to try again
+  // (components/LoadFailed), never left as "Loading…" for good.
+  const [failed, setFailed] = useState(false);
+  const [nonce, setNonce] = useState(0);
   useEffect(() => {
-    const get = (f: string) => fetch(f).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    get("/theology/church-history-timeline.json").then((d) => { if (d?.eras) setEras(d.eras); });
-    get("/theology/church-history-councils.json").then((d) => d?.councils && setCouncils(d.councils));
-    get("/theology/church-history-heresies.json").then((d) => d?.heresies && setHeresies(d.heresies));
-    get("/theology/church-history-figures.json").then((d) => d?.figures && setFigures(d.figures));
-    get("/history/essays-index.json").then((d) => d?.essays && setEssays(d.essays));
-  }, []);
+    let live = true;
+    const get = (f: string) => fetchJson<Record<string, unknown> | null>(f).catch(() => null);
+    Promise.all([
+      get("/theology/church-history-timeline.json").then((d) => { if (live && Array.isArray(d?.eras)) setEras(d.eras as Era[]); return Array.isArray(d?.eras); }),
+      get("/theology/church-history-councils.json").then((d) => { if (live && Array.isArray(d?.councils)) setCouncils(d.councils as Council[]); return Array.isArray(d?.councils); }),
+      get("/theology/church-history-heresies.json").then((d) => { if (live && Array.isArray(d?.heresies)) setHeresies(d.heresies as Heresy[]); return Array.isArray(d?.heresies); }),
+      get("/theology/church-history-figures.json").then((d) => { if (live && Array.isArray(d?.figures)) setFigures(d.figures as Figure[]); return Array.isArray(d?.figures); }),
+      get("/history/essays-index.json").then((d) => { if (live && Array.isArray(d?.essays)) setEssays(d.essays as HistoryEssayEntry[]); return Array.isArray(d?.essays); }),
+    ]).then((arrived) => { if (live && arrived.includes(false)) setFailed(true); });
+    return () => { live = false; };
+  }, [nonce]);
+  /** What stands where a list will be: the wait, or the failure with a retry. */
+  const waiting = (label: string) =>
+    failed ? (
+      <LoadFailed what="The church history course" onRetry={() => { setFailed(false); setNonce((n) => n + 1); }} backHref="/study" backLabel="Back to Study" />
+    ) : (
+      <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">{label}</p>
+    );
 
   const figuresByEra = useMemo(() => {
     const order = ["Early Church", "Age of the Councils", "Medieval", "Reformation", "Modern"];
@@ -207,7 +224,7 @@ export default function TheologyHistory() {
           {/* On a first load the prerendered list of essays stays on screen
               until the essays and the timeline have arrived
               (lib/prerender-hold.ts), so neither pushes the other down. */}
-          {(eras.length === 0 || essays.length === 0) && <span hidden data-lw-loading />}
+          {!failed && (eras.length === 0 || essays.length === 0) && <span hidden data-lw-loading />}
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
             <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Church history
           </div>
@@ -216,7 +233,7 @@ export default function TheologyHistory() {
           </h1>
           <p className="page-standfirst">The story you were born into.</p>
           <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            You did not start the faith. You walked into a story already two thousand years long, carried by martyrs and scholars and ordinary believers who handed it down at great cost. Here is the sweep of it: the eras, the councils that fixed the creeds you confess, the errors the church had to reject, and the people worth meeting.
+            You walked into a story already two thousand years long, carried by martyrs and scholars and ordinary believers who handed it down at great cost. Here is the sweep of it: the eras, the councils that fixed the creeds you confess, the errors the church had to reject, and the people worth meeting.
           </p>
         </div>
       </section>
@@ -237,7 +254,7 @@ export default function TheologyHistory() {
       {tab === "course" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--gutter) var(--s-7)" }}>
           <div style={wrap}>
-            {essays.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the course…</p>}
+            {essays.length === 0 && waiting("Loading the course…")}
             {essays.length > 0 && (
               <>
                 <SectionHead
@@ -291,7 +308,7 @@ export default function TheologyHistory() {
             <HistoryTimeline eras={eras} councils={councils} figures={figures} essays={essays} onOpen={openEntry} />
           </div>
           <div style={{ ...wrap, display: "flex", flexDirection: "column", gap: "12px" }}>
-            {eras.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading the story…</p>}
+            {eras.length === 0 && waiting("Loading the story…")}
             {eras.length > 0 && <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 8px" }}>Each era in full</h2>}
             {eras.map((era) => {
               const isOpen = openEra === era.id;
@@ -386,7 +403,7 @@ export default function TheologyHistory() {
               The creeds were not handed down from the sky. The whole church gathered, usually in a crisis, and worked out how to say a true thing clearly. Here is what each council faced and what it gave us.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-              {councils.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
+              {councils.length === 0 && waiting("Loading…")}
               {councils.map((c, i) => (
                 <div key={i} id={entryId("council", c.name)} tabIndex={-1} className={entryClass(entryId("council", c.name))} style={{ ...cardStyle, padding: "var(--s-4)", borderLeft: `3px solid ${c.ecumenical ? "var(--mustard)" : "var(--border)"}` }}>
                   <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: "8px", alignItems: "baseline", marginBottom: "10px" }}>
@@ -413,7 +430,7 @@ export default function TheologyHistory() {
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "66ch", marginBottom: "var(--s-4)", fontStyle: "italic" }}>
               The church often learned what it believed by facing what it could not accept. Each of these was sincere, attractive, and wrong in a way that mattered. Many still return today in new clothes.
             </p>
-            {heresies.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
+            {heresies.length === 0 && waiting("Loading…")}
             <div className="ed-split" style={{ gap: "var(--s-3)" }}>
               {heresies.map((h, i) => (
                 <div key={i} id={entryId("heresy", h.name)} tabIndex={-1} className={entryClass(entryId("heresy", h.name))} style={refBlock}>
@@ -439,7 +456,7 @@ export default function TheologyHistory() {
       {tab === "figures" && (
         <section style={{ background: "var(--bone)", padding: "var(--s-4) var(--gutter) var(--s-7)" }}>
           <div style={{ ...wrap }}>
-            {figures.length === 0 && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
+            {figures.length === 0 && waiting("Loading…")}
             {figures.length > 0 && <SectionArt seed="history-figures" />}
             {figuresByEra.map(({ era, items }) => (
               <div key={era} style={{ marginBottom: "var(--s-5)" }}>

@@ -22,6 +22,7 @@
  * row carries the reader's own marks from this device: Read (finished, from
  * lib/readProgress) and Saved (in My Library, lib/library).
  */
+import { smartQuotes } from "@/lib/smartQuotes";
 import { useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
 import { BookmarkCheck, Search, X } from "lucide-react";
@@ -138,7 +139,8 @@ export default function Writing() {
       if (loaded && !row && !rewrite) continue;
       out.push({
         slug: e.slug,
-        title: rewrite?.title || row?.title || e.title,
+        // Curled like the essay's own headline (lib/smartQuotes.ts).
+        title: smartQuotes(rewrite?.title || row?.title || e.title),
         blurb: rewrite ? rewrite.excerpt : e.blurb ?? cleanExcerpt(row?.excerpt),
         minutes: minutesOf(row),
         section: e.section,
@@ -155,7 +157,7 @@ export default function Writing() {
         .filter((r) => essayVisibility(r.slug, essayDate(r)) === "latest")
         .map((r) => ({
           slug: r.slug,
-          title: r.title,
+          title: smartQuotes(r.title),
           blurb: cleanExcerpt(r.excerpt),
           minutes: minutesOf(r),
           section: null,

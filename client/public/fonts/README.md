@@ -9,6 +9,10 @@ ever contacts a third party for type.
 - **Inter** — one variable file per subset, used at 400 to 600, latin and
   latin-ext subsets. Copyright the
   Inter Project Authors; licensed under the SIL Open Font License 1.1.
+  The italic (one variable file per subset, `inter-400-italic-*`) is from the
+  npm package `@fontsource-variable/inter` 5.2.5 (`npm pack`, the
+  `inter-latin-wght-italic` and `inter-latin-ext-wght-italic` files). Not
+  preloaded: only a page that sets italic interface text downloads it.
 
 - **Source Serif 4** (the reading face, `--font-reading`): upright 400 and
   600 and italic 400, latin and latin-ext subsets, taken from the npm

@@ -149,7 +149,7 @@ export default function RoadMap() {
           >
             Books in progress
           </h1>
-          <p className="page-standfirst">What's been written. What's coming.</p>
+          <p className="page-standfirst">The books on the shelf, and the ones planned.</p>
           <p
             style={{
               fontFamily: "var(--B)",
@@ -160,8 +160,8 @@ export default function RoadMap() {
             }}
           >
             The books on the shelf today are below. The rest get listed here
-            when they are actually underway, not before. Subscribe to the
-            newsletter to know when one lands.
+            when they are actually underway, not before. Subscribe on
+            Substack to hear when one is out.
           </p>
         </div>
       </section>
@@ -288,7 +288,7 @@ export default function RoadMap() {
             variant="inline"
             source="roadmap"
             title="Know when the next one lands."
-            description="The newsletter says when a new book is out."
+            description="New books are announced by email through Substack."
           />
         </div>
       </section>

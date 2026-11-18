@@ -26,7 +26,7 @@ const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const SHELVES: Record<string, { label: string; blurb: string }> = {
   Booklet: {
     label: "The Hard Issues booklets",
-    blurb: "Ten free booklets for the men who lead the church: five on eldership and five on governing the local church. Each as a PDF and an EPUB.",
+    blurb: "Free booklets for elders and church leaders on governing the local church. Each as a PDF and an EPUB.",
   },
   "Study guide": {
     label: "Study guides and curriculum",

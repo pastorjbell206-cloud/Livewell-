@@ -90,6 +90,13 @@ describe("names an essay links", () => {
     expect(pieces.map((p) => (typeof p === "string" ? p : p.text)).join("")).toBe("Athanasius came to Nicaea. Athanasius against the world.");
   });
 
+  it("does not link a name inside a longer word, and builds its pattern without a lookbehind", () => {
+    expect(link("the preAugustine years")).toEqual([]);
+    expect(link("Saint-Augustine wrote the Confessions")[0].name).toBe("Augustine of Hippo");
+    // Safari before 16.4 throws on a lookbehind when the pattern is built.
+    expect(names.pattern?.source).not.toContain("(?<");
+  });
+
   it("leaves another person's name alone", () => {
     expect(link("Augustine of Canterbury reached England in 597")).toEqual([]);
     expect(link("Martin Luther King Jr. wrote from a Birmingham jail")).toEqual([]);

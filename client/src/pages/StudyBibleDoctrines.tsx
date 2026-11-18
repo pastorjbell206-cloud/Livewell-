@@ -117,7 +117,7 @@ function Toc({ items }: { items: { id: string; label: string }[] }) {
   return (
     <nav aria-label="On this page" style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "var(--s-4)" }}>
       {items.map((t) => (
-        <a key={t.id} href={`#${t.id}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "36px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
+        <a key={t.id} href={`#${t.id}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
           {t.label}
         </a>
       ))}

@@ -603,7 +603,7 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
             <span>
               Also in{" "}
               {OTHER_TRANSLATIONS.map((t) => (
-                <a key={t.code} href={translationHref(book.name, chapter, t.code)} target="_blank" rel="noopener noreferrer" aria-label={`${book.name} ${chapter} in the ${t.name}, on another site`} style={{ ...quietLink, display: "inline-block", padding: "5px 5px" }}>{t.name}</a>
+                <a key={t.code} href={translationHref(book.name, chapter, t.code)} target="_blank" rel="noopener noreferrer" aria-label={`${book.name} ${chapter} in the ${t.name}, on another site`} style={{ ...quietLink, display: "inline-block", padding: "13px 6px", margin: "-13px -1px" }}>{t.name}</a>
               ))}
             </span>
           </p>
@@ -695,7 +695,7 @@ const verseNumStyle = (active: boolean): CSSProperties => ({
   color: active ? "var(--charcoal)" : "var(--mustard-text)",
   fontFamily: "var(--U)",
   fontSize: "12px",
-  fontWeight: 700,
+  fontWeight: 600,
   padding: "2px 5px",
   marginRight: "4px",
   borderRadius: "4px",
@@ -784,8 +784,8 @@ function Interlinear({ data, lang, sel, onVerse, onWord, noted }: { data: BibleC
 
 const panelH = { fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.16em", textTransform: "uppercase" as const, color: "var(--mustard-text)", margin: "var(--s-4) 0 8px" };
 const quietLink: CSSProperties = { color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px", backgroundImage: "none" };
-const roundBtn: CSSProperties = { display: "inline-flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)" };
-const pillBtn: CSSProperties = { display: "inline-flex", alignItems: "center", minHeight: "40px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600 };
+const roundBtn: CSSProperties = { display: "inline-flex", alignItems: "center", justifyContent: "center", width: "44px", height: "44px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)" };
+const pillBtn: CSSProperties = { display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", cursor: "pointer", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600 };
 
 interface PanelProps {
   books: BibleBook[];
@@ -919,7 +919,7 @@ function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lan
       )}
 
       <p style={{ margin: "var(--s-4) 0 0", fontFamily: "var(--U)", fontSize: "13px" }}>
-        <button type="button" onClick={() => setSel({ kind: "verse", verse: sel.verse })} style={{ ...quietLink, border: "none", padding: 0, minHeight: "40px", cursor: "pointer", background: "none", fontFamily: "inherit", fontSize: "inherit" }}>
+        <button type="button" onClick={() => setSel({ kind: "verse", verse: sel.verse })} style={{ ...quietLink, border: "none", padding: 0, minHeight: "44px", cursor: "pointer", background: "none", fontFamily: "inherit", fontSize: "inherit" }}>
           Study the whole verse
         </button>
       </p>
@@ -980,7 +980,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
           <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {verse.w.map((w, i) => (
               <li key={i}>
-                <button type="button" onClick={() => setSel({ kind: "word", verse, index: i })} style={{ display: "flex", width: "100%", gap: "10px", alignItems: "baseline", justifyContent: "space-between", minHeight: "36px", padding: "4px 0", border: "none", borderBottom: "1px solid var(--border)", background: "none", cursor: "pointer", textAlign: "left" }}>
+                <button type="button" onClick={() => setSel({ kind: "word", verse, index: i })} style={{ display: "flex", width: "100%", gap: "10px", alignItems: "baseline", justifyContent: "space-between", minHeight: "44px", padding: "4px 0", border: "none", borderBottom: "1px solid var(--border)", background: "none", cursor: "pointer", textAlign: "left" }}>
                   <span lang={lang === "H" ? "he" : "grc"} style={{ ...script, direction: lang === "H" ? "rtl" : "ltr", fontSize: "18px", color: "var(--ink)" }}>{w[0]}</span>
                   <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink)", flex: 1, textAlign: "right" }}><Gloss text={w[2]} /></span>
                 </button>

@@ -73,7 +73,7 @@ export function ChapterHead({ note, place }: { note: ChapterNote | null | undefi
   }, [text, whole]);
   if (!note) return null;
   const hard = hardQuestions(note).length;
-  const jump: CSSProperties = { ...quietLink, display: "inline-flex", alignItems: "center", minHeight: "36px", fontFamily: "var(--U)", fontSize: "13.5px" };
+  const jump: CSSProperties = { ...quietLink, display: "inline-flex", alignItems: "center", minHeight: "44px", fontFamily: "var(--U)", fontSize: "13.5px" };
   return (
     <div style={{ maxWidth: "68ch", marginBottom: "var(--s-3)" }}>
       {place?.act && (
@@ -110,7 +110,7 @@ export function OutlinePanel({ note, data, onVerse }: { note: ChapterNote; data:
           const verse = data?.verses.find((v) => v.v === a);
           return (
             <li key={o.v}>
-              <button type="button" disabled={!verse} onClick={() => verse && onVerse(verse)} style={{ display: "flex", gap: "10px", width: "100%", minHeight: "36px", alignItems: "baseline", padding: "6px 0", border: "none", borderBottom: "1px solid var(--border)", background: "none", cursor: verse ? "pointer" : "default", textAlign: "left" }}>
+              <button type="button" disabled={!verse} onClick={() => verse && onVerse(verse)} style={{ display: "flex", gap: "10px", width: "100%", minHeight: "44px", alignItems: "baseline", padding: "6px 0", border: "none", borderBottom: "1px solid var(--border)", background: "none", cursor: verse ? "pointer" : "default", textAlign: "left" }}>
                 <span style={{ flex: "0 0 52px", fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--mustard-text)" }}>{o.v.replace("-", "–")}</span>
                 <span style={{ fontFamily: "var(--B)", fontSize: "14.5px", lineHeight: 1.45, color: "var(--ink)" }}>{o.t}</span>
               </button>

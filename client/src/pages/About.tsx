@@ -242,8 +242,8 @@ export default function About() {
 
 const ABOUT_CSS = `
 .about-hero{display:grid;grid-template-columns:220px minmax(0,1fr);gap:var(--s-5);align-items:start}
-.about-hero__links{display:flex;flex-wrap:wrap;gap:12px 28px;font-family:var(--U);font-size:15px}
-.about-hero__links a{color:var(--charcoal-fg);text-decoration:none;border-bottom:1px solid var(--mustard);padding-bottom:2px}
+.about-hero__links{display:flex;flex-wrap:wrap;gap:0 28px;font-family:var(--U);font-size:15px}
+.about-hero__links a{display:inline-flex;align-items:center;min-height:44px;color:var(--charcoal-fg);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:5px;background-image:none}
 .about-band__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.9fr);gap:var(--s-3) var(--s-5);align-items:start}
 .about-band__title{font-family:var(--F);font-weight:400;font-size:clamp(30px,3.4vw,42px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink);margin:0;max-width:14ch}
 .about-band--dark .about-band__title{color:var(--charcoal-fg)}

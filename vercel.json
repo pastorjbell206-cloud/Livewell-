@@ -1215,6 +1215,41 @@
       "permanent": true
     },
     {
+      "source": "/ebook/what-elders-are-for/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/qualified-elder/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/finding-installing-elders/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/when-elders-disagree/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/removing-an-elder/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/the-patient-pastor/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/changing-the-unchangeable/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
       "source": "/authors/:slug",
       "destination": "/about",
       "permanent": true

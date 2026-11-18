@@ -94,21 +94,28 @@ export default function HistoryEssay() {
     <Layout>
       {data && <SEOMeta title={`${data.title} — Church History`} description={data.subtitle} url={`https://www.livewellbyjamesbell.co/theology/history/${slug}`} />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--gutter) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
+          {/* On a first load the prerendered essay stays on screen until the
+              essay itself has arrived (lib/prerender-hold.ts), so the hero
+              does not grow under the reader. */}
+          {!data && !missing && <span hidden data-lw-loading />}
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/theology/history" style={{ color: "inherit" }}>Church History</Link>
-            {data ? ` · ${data.era} · ${data.dateRange}` : ""}
+            {/* One run of text, so a long line wraps as a sentence does. */}
+            <span>
+              <Link href="/theology/history" style={{ color: "inherit" }}>Church History</Link>
+              {data ? ` · ${data.era} · ${data.dateRange.replace(/(\d)-(\d)/g, "$1\u2013$2")}` : ""}
+            </span>
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That essay is not here yet." : "Loading the essay…")}</h1>
           {missing && (
-            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
+            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "60ch" }}>
               It may have moved. Start from the{" "}
               <Link href="/theology/history" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Church History library</Link>.
             </p>
           )}
           {data?.standfirst && <p style={{ fontFamily: "var(--F)", fontStyle: "italic", fontSize: "clamp(20px, 2.6vw, 26px)", lineHeight: 1.25, color: "var(--charcoal-fg)", margin: "0 0 14px" }}>{data.standfirst}</p>}
-          {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>{data.subtitle}</p>}
+          {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", maxWidth: "62ch" }}>{data.subtitle}</p>}
           {data && place && inCourse && (
             <nav className="hx-place" aria-label="Your place in the course">
               <strong>Essay {place.entry.course} of {place.total} in the course</strong>
@@ -128,7 +135,7 @@ export default function HistoryEssay() {
       </section>
 
       {data?.sections.map((s, i) => (
-        <section key={s.id} style={{ background: i % 2 ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+        <section key={s.id} style={{ background: i % 2 ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-5) var(--gutter)" }}>
           <div style={wrap}>
             {s.kicker && <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "8px" }}>{s.kicker}</div>}
             <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", lineHeight: 1.1, marginBottom: "var(--s-3)" }}>{s.title}</h2>
@@ -157,7 +164,7 @@ export default function HistoryEssay() {
       ))}
 
       {data && place && inCourse && (place.prev || place.next) && (
-        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)", borderTop: "1px solid var(--border)" }}>
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--gutter)", borderTop: "1px solid var(--border)" }}>
           <div style={wrap}>
             <p style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 500, color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
               That was essay {place.entry.course} of {place.total} in the church history course.
@@ -174,7 +181,7 @@ export default function HistoryEssay() {
         </section>
       )}
       {data && place && !inCourse && place.alongside.length > 0 && (
-        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)", borderTop: "1px solid var(--border)" }}>
+        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--gutter)", borderTop: "1px solid var(--border)" }}>
           <div style={wrap}>
             <p style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 500, color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
               This is one of the longer essays. The course covers the same years in {place.alongside.length === 1 ? "this essay" : "these essays"}.
@@ -189,25 +196,25 @@ export default function HistoryEssay() {
       )}
 
       {data && (data.keyFigures?.length || data.sources?.length) ? (
-        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4)", color: "var(--charcoal-fg)" }}>
+        <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--gutter)", color: "var(--charcoal-fg)" }}>
           <div style={{ ...wrap, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "var(--s-5)" }}>
             {data.keyFigures?.length ? (
               <div>
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Key figures</div>
-                {data.keyFigures.map((f, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55, color: "rgba(245,240,230,0.85)", marginBottom: "8px" }}><span style={{ fontFamily: "var(--F)", fontSize: "17px" }}>{linked(f.name, new Set())}.</span> {f.note}</p>)}
+                {data.keyFigures.map((f, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.55, color: "var(--charcoal-fg-muted)", marginBottom: "8px" }}><span style={{ fontFamily: "var(--F)", fontSize: "17px" }}>{linked(f.name, new Set())}.</span> {f.note}</p>)}
               </div>
             ) : null}
             {data.sources?.length ? (
               <div>
                 <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Books behind this essay</div>
-                {data.sources.map((r, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, color: "rgba(245,240,230,0.8)", marginBottom: "8px" }}>{r.title}<span style={{ color: "rgba(245,240,230,0.5)" }}>, {r.author}</span></p>)}
+                {data.sources.map((r, i) => <p key={i} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, color: "var(--charcoal-fg-muted)", marginBottom: "8px" }}>{r.title}<span style={{ color: "rgba(245,240,230,0.5)" }}>, {r.author}</span></p>)}
               </div>
             ) : null}
           </div>
         </section>
       ) : null}
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter)" }}>
         <div style={wrap}>
           <Link href="/theology/history" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← The whole course, the timeline and the people</Link>
         </div>

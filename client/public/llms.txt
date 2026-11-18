@@ -34,6 +34,9 @@ doors: Study, Topics, Family, Essays, and About (with the books).
   guides to reading each kind of writing; verse-by-verse notes are written for
   Genesis and the four Gospels so far):
   https://www.livewellbyjamesbell.co/study/bible
+- Search the Bible (type a word or a phrase and see every verse that holds
+  it, in the Berean Standard Bible):
+  https://www.livewellbyjamesbell.co/study/bible/search
 - Read the Bible in a year: the 2027 plan (a daily reading plan: all 1,189 chapters in
   365 days, in the order the story happened, each day linked to its chapters
   and, where one belongs, to a context guide):

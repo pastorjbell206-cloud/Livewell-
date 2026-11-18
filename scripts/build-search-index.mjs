@@ -86,7 +86,7 @@ function answers() {
     blurb: clip(a.paragraphs?.[0]),
     // The essay's title and address carry the plain name of the subject
     // ("trinity", "inerrancy") when the question itself does not use the word.
-    keywords: `${str(a.essayTitle)} ${str(a.essaySlug).replace(/-/g, " ")}`.trim(),
+    keywords: `${str(a.essayTitle)} ${str(a.essaySlug).replace(/-/g, " ")} ${str(a.askedAs)}`.trim(),
     href: `/answers#${a.slug}`,
   }));
 }

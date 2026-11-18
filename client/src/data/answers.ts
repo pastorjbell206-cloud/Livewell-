@@ -22,11 +22,18 @@ export interface Answer {
    */
   bookTitle?: string;
   bookHref?: string;
+  /**
+   * Other words a person types for this question ("did Jesus rise from the
+   * dead"). The site search matches them (scripts/build-search-index.mjs);
+   * they are never shown.
+   */
+  askedAs?: string;
 }
 
 export const ANSWERS: Answer[] = [
   {
     slug: "did-the-resurrection-actually-happen",
+    askedAs: "did jesus rise rose risen raised from the dead come back to life easter empty tomb",
     question: "Did the resurrection actually happen?",
     paragraphs: [
       "The resurrection is the best historical explanation of facts nearly all serious scholars — skeptical ones included — already grant. Not a proof. The best explanation. Jesus was executed by crucifixion. His followers were convinced they had seen him alive and died for the claim. The proclamation began in Jerusalem, where a body could have ended it. The creed in 1 Corinthians 15:3–8 dates to within years of the cross. Legends need time. Here there is almost none.",
@@ -206,6 +213,7 @@ export const ANSWERS: Answer[] = [
   },
   {
     slug: "is-jesus-the-only-way",
+    askedAs: "other religions all religions the same exclusive narrow",
     question: "Is Jesus really the only way to God?",
     paragraphs: [
       "Yes, and the claim you were told was arrogant is closer to Christianity's whole hope. The question rarely arrives as a doctrine. It arrives as a face across the table, someone who buried a grandmother who prayed toward Mecca for sixty years, asking whether your God would send her to hell. For most of my life I was an atheist, and of all the church's claims I found this one not merely improbable but obscene.",
@@ -219,6 +227,7 @@ export const ANSWERS: Answer[] = [
   },
   {
     slug: "does-god-actually-exist",
+    askedAs: "is there a god is god real proof evidence for god",
     question: "Does God actually exist?",
     paragraphs: [
       "God exists, and I say that as a man who spent most of his life certain no one was there. Not because someone won an argument. No proof marches a living person across that line, and anyone selling one has never watched it work. What I found was smaller and harder to escape: the atheism I held could be stated but not inhabited, and it kept running up debts it refused to pay.",
@@ -384,6 +393,7 @@ export const ANSWERS: Answer[] = [
   },
   {
     slug: "is-hell-forever-or-does-it-end",
+    askedAs: "eternal punishment annihilation what is hell",
     question: "Is hell forever, or does it end?",
     paragraphs: [
       "The reality of judgment and of being finally separated from God is the church's historic teaching and sits near the confessional core. The exact nature and duration of hell is a different matter, and Bible-loving Christians have genuinely disagreed about it. I am not going to fake a consensus that does not exist.",

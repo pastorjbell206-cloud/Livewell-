@@ -324,7 +324,7 @@ export default function MinimalNav() {
             height: "64px",
           }}
         >
-          <Link href="/" style={{ textDecoration: "none" }}>
+          <Link href="/" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center", minHeight: "44px" }}>
             <div>
               <div
                 style={{
@@ -616,7 +616,7 @@ export default function MinimalNav() {
                 fontSize: "13px",
                 fontWeight: 600,
                 padding: "0 12px",
-                minHeight: "36px",
+                minHeight: "44px",
                 display: "inline-flex",
                 alignItems: "center",
                 whiteSpace: "nowrap",

@@ -267,7 +267,7 @@ export function buildNameIndex(figures: Pick<Figure, "name" | "dates">[], counci
   // another person's name ("Augustine of Canterbury", "Benedict XVI",
   // "Martin Luther King"), and not a possessive of someone else.
   const pattern = new RegExp(
-    `(?<![A-Za-z])(${forms.map(escapeRe).join("|")})(?![A-Za-z])(?! of [A-Z])(?! [IVX]+\\b)(?! King\\b)(?! the [A-Z])`,
+    `(${forms.map(escapeRe).join("|")})(?![A-Za-z])(?! of [A-Z])(?! [IVX]+\\b)(?! King\\b)(?! the [A-Z])`,
     "g",
   );
   return { pattern, byForm };
@@ -299,6 +299,9 @@ export function splitNames(text: string, index: NameIndex, seen: Set<string>): N
   index.pattern.lastIndex = 0;
   let m: RegExpExecArray | null;
   while ((m = index.pattern.exec(text))) {
+    // Not inside a longer word. Checked here, not with a lookbehind: older
+    // Safari cannot parse one and would throw when the pattern is built.
+    if (m.index > 0 && /[A-Za-z]/.test(text[m.index - 1])) continue;
     const target = index.byForm.get(m[1]);
     if (!target || seen.has(target.name)) continue;
     if (m[1] !== target.name && target.life && datedElsewhere(text, m.index, target.life)) continue;

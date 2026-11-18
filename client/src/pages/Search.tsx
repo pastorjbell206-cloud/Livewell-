@@ -1,11 +1,10 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
-import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
 import { LoadFailed } from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Link } from "wouter";
-import { ArrowLeft, Search as SearchIcon } from "lucide-react";
+import { Search as SearchIcon } from "lucide-react";
 
 import { LIBRARY_SOURCES, type LibrarySource } from "@/lib/catalog";
 import { ESSAY_OVERRIDES } from "@/lib/essayOverrides.generated";
@@ -64,7 +63,6 @@ async function fetchEntries(url: string, read: (data: unknown) => SearchEntry[])
 const fetchLibrarySource = (source: LibrarySource) => fetchEntries(source.url, (data) => libraryEntries(source, data));
 
 export default function SearchPage() {
-  const [, navigate] = useLocation();
   // A deep link (/search?q=Genesis 1, from the Study Bible) opens on its query.
   const [query, setQuery] = useState(() =>
     typeof window === "undefined" ? "" : new URLSearchParams(window.location.search).get("q") ?? ""
@@ -211,24 +209,16 @@ export default function SearchPage() {
     <Layout>
       <SEOMeta title="Search" description="Search the essays, libraries, tools, and books on LiveWell." />
       <div className="container px-4 py-16 max-w-4xl mx-auto">
-        {/* Back button */}
-        <button
-          onClick={() => navigate("/")}
-          className="flex items-center gap-2 mb-8 font-ui text-sm font-medium uppercase tracking-wider hover:opacity-70 transition-opacity"
-          style={{ color: "var(--mustard-text)" }}
-        >
-          <ArrowLeft size={20} />
-          Back
-        </button>
-
         {/* Search header */}
         <div className="mb-12">
           <h1
-            className="font-display font-bold mb-6"
+            className="font-display mb-6"
             style={{
               color: "var(--ink)",
               fontSize: "var(--fs-h1)",
-              lineHeight: 1.2,
+              fontWeight: 400,
+              letterSpacing: "-0.02em",
+              lineHeight: 1.1,
             }}
           >
             Search LiveWell
@@ -247,8 +237,10 @@ export default function SearchPage() {
               placeholder="Look up a passage or ask a question"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 text-lg"
+              className="w-full pl-12 pr-4 py-3 border focus:outline-none focus:ring-2 text-lg"
               style={{
+                borderRadius: "var(--radius-sm)",
+                minHeight: "52px",
                 borderColor: "var(--border)",
                 backgroundColor: "var(--bone)",
                 color: "var(--ink)",
@@ -263,8 +255,9 @@ export default function SearchPage() {
                 key={type}
                 onClick={() => setSearchType(type)}
                 aria-pressed={searchType === type}
-                className="px-4 py-2 rounded-full font-ui text-sm font-medium uppercase tracking-wider transition-all"
+                className="px-4 rounded-full font-ui text-sm font-medium transition-all"
                 style={{
+                  minHeight: "44px",
                   backgroundColor: searchType === type ? "var(--ink)" : "var(--bone-muted)",
                   color: searchType === type ? "var(--bone)" : "var(--ink)",
                 }}

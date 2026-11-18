@@ -20,6 +20,7 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { SafetyCheck } from "@/components/SafetyCheck";
+import { SAVE_FAILED } from "@/components/TakeItWithYou";
 
 /* ------------------------------------------------------------------ */
 /* Data                                                                */
@@ -1133,7 +1134,7 @@ export default function WholeLifeAssessment() {
               )}
               {progressFailed && (
                 <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
-                  Couldn't save to this browser — your work here will not survive a reload.
+                  {SAVE_FAILED}
                 </p>
               )}
 
@@ -1219,7 +1220,7 @@ export default function WholeLifeAssessment() {
                 </div>
                 {saveFailed && (
                   <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>
-                    Couldn't save to this browser — your work here will not survive a reload.
+                    {SAVE_FAILED}
                   </p>
                 )}
 

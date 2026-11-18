@@ -32,11 +32,12 @@ export const META_DESCRIPTION =
  * (replacing the earlier lines drawn from /about); the facts in HOME_WHO are
  * the confirmed biography. scripts/prerender-heads.mjs paints the same strings
  * into the static HTML for "/", so keep each one a plain double-quoted string
- * on one line. (The headline's hyphen is a non-breaking one, U+2011, so
- * "post-Christian" never splits across lines.)
+ * on one line. (The headline's hyphen is a plain one: Cormorant has no glyph
+ * for U+2011 and drew a heavy fallback dash. `.home-hero__title a` in
+ * index.css keeps "post-Christian" on one line instead.)
  */
 export const HOME_HEADLINE =
-  "Learning to follow Jesus — and live well — in post‑Christian America.";
+  "Learning to follow Jesus — and live well — in post-Christian America.";
 
 /** Why the site exists (also the pull quote at the top of /about). */
 export const HOME_WHY =
@@ -52,7 +53,7 @@ export const HOME_LINE =
   "This site is here to help you study the Bible in its context, learn the church's long history, and think through the hardest questions of our time with patience and depth.";
 
 /** The word in the headline that links to the page explaining it, and that page. */
-export const HOME_LINKED_WORD = "post‑Christian";
+export const HOME_LINKED_WORD = "post-Christian";
 export const HOME_LINKED_HREF = "/topics/living-after-christendom";
 
 /** Who is writing. */

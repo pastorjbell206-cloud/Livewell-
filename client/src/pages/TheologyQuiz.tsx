@@ -89,7 +89,8 @@ export default function TheologyQuiz() {
     );
   }
 
-  if (questionsQuery.isError) {
+  // An answer with no questions in it is a failed load too, not "Question 1 of 0".
+  if (questionsQuery.isError || questions.length === 0) {
     return (
       <>
         <MinimalNav />

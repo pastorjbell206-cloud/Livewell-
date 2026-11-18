@@ -96,7 +96,7 @@ function GuidePage({ id, index }: { id: string; index: GuideIndex }) {
         {guide.sections.length > 3 && (
           <nav aria-label="On this page" style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "var(--s-4)" }}>
             {guide.sections.map((s, n) => (
-              <a key={n} href={`#s${n}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "36px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>{s.h}</a>
+              <a key={n} href={`#s${n}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>{s.h}</a>
             ))}
           </nav>
         )}

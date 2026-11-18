@@ -20,6 +20,9 @@
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400 600;font-display:swap;src:url(/fonts/cormorant-garamond-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:"Inter";font-style:normal;font-weight:400 600;font-display:swap;src:url(/fonts/inter-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Inter";font-style:normal;font-weight:400 600;font-display:swap;src:url(/fonts/inter-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Inter italic (variable, 400 to 600): a real italic for emphasis in notes and interface copy, in place of a slanted upright. Not preloaded. */
+@font-face{font-family:"Inter";font-style:italic;font-weight:400 600;font-display:swap;src:url(/fonts/inter-400-italic-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:italic;font-weight:400 600;font-display:swap;src:url(/fonts/inter-400-italic-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 /* Source Serif 4: the reading face (--font-reading). Loaded only by a page that sets text in it. */
 @font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/source-serif-4-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
@@ -482,7 +485,7 @@ img{display:block;max-width:100%}
 .home-hero{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-5) var(--gutter)}
 .home-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:minmax(0,2.1fr) minmax(0,1fr);column-gap:var(--s-5);align-items:end}
 .home-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(34px,5.4vw,72px);line-height:1.05;letter-spacing:-0.02em;color:var(--charcoal-fg);margin:0;max-width:23ch;text-wrap:balance}
-.home-hero__title a{color:inherit;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:max(1px,0.03em);text-underline-offset:0.14em}
+.home-hero__title a{white-space:nowrap;color:inherit;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:max(1px,0.03em);text-underline-offset:0.14em}
 .home-hero__title a:hover{text-decoration-thickness:max(2px,0.05em)}
 .home-hero__text{font-family:var(--B);font-size:clamp(16px,1.3vw,18px);line-height:1.6;color:var(--charcoal-fg-muted);max-width:44ch;margin:0 0 0.5em;padding-top:var(--s-2);border-top:1px solid var(--charcoal-line);text-wrap:pretty}
 @media (max-width:900px){
@@ -640,8 +643,8 @@ img{display:block;max-width:100%}
 .ax-more a{border-bottom:0;color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px;display:inline-block;padding:6px 0}
 .ax-more a,.ax-jump a,.ax-back,.hx-continue a,.hx-link,.hx-read,.hx-place a,.hx-turn a{background-image:none}
 .ax-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;margin-top:18px}
-.ax-back,.ax-copy{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);background:none;border:none;border-bottom:1px solid var(--mustard);padding:12px 0 2px;cursor:pointer;text-decoration:none}
-.ax-copy{color:var(--ink-muted);border-bottom-color:var(--border)}
+.ax-back,.ax-copy{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);background:none;border:none;min-height:44px;padding:12px 0;cursor:pointer;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:5px}
+.ax-copy{color:var(--ink-muted);text-decoration-color:var(--border)}
 
 .ed-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(var(--ed-card-min,320px),100%),1fr));gap:clamp(16px,2vw,24px)}
 .ed-cards > li{display:flex}
@@ -942,7 +945,7 @@ img{display:block;max-width:100%}
 /* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them,
    drawn at the foot of the text (content-box), while the padding makes each night a 44px target
    that never breaks across lines. */
-.tb-nights__link{display:inline-block;padding:13px 0;line-height:1.3;white-space:nowrap;background-origin:content-box;color:var(--mustard-text);font-weight:600}
+.tb-nights__link{display:inline-block;padding:13px 0;margin:-10px 0;line-height:1.3;white-space:nowrap;background-origin:content-box;color:var(--mustard-text);font-weight:600}
 .tb-grownups{margin:0 0 var(--s-2);padding:var(--s-3) 0 var(--s-2);border-top:1px solid var(--border)}
 .tb-grownups__line{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0}
 .tb-different__notes{display:grid;gap:var(--s-3) var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 var(--s-3)}

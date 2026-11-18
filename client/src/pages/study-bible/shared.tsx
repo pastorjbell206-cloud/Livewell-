@@ -82,7 +82,7 @@ export function Band({ tone = "bone", children, id }: { tone?: "bone" | "warm"; 
 
 export function Pill({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <Link href={href} style={{ display: "inline-flex", alignItems: "center", minHeight: "36px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
+    <Link href={href} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
       {children}
     </Link>
   );

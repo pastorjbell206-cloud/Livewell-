@@ -64,7 +64,7 @@ export default function Answers() {
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(var(--s-5), 8vw, var(--s-7)) var(--gutter) clamp(var(--s-4), 6vw, var(--s-6))" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Answers</div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(36px, 6vw, 60px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "20px", maxWidth: "22ch" }}>
@@ -81,7 +81,7 @@ export default function Answers() {
       </section>
 
       {/* FIND A QUESTION: a box to type in and the full list to jump from */}
-      <section id="questions" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)", borderBottom: "1px solid var(--border)", scrollMarginTop: "84px" }}>
+      <section id="questions" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--gutter)", borderBottom: "1px solid var(--border)", scrollMarginTop: "84px" }}>
         <div style={wrap}>
           <div className="ax-find">
             <label htmlFor="answers-find">Find a question</label>
@@ -111,7 +111,7 @@ export default function Answers() {
       </section>
 
       {/* THE ANSWERS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           {ANSWERS.map((a, i) => (
             <article key={a.slug} id={a.slug} style={{ paddingTop: i === 0 ? 0 : "var(--s-5)", marginTop: i === 0 ? 0 : "var(--s-5)", borderTop: i === 0 ? "none" : "1px solid var(--border)", scrollMarginTop: "84px" }}>
@@ -126,14 +126,14 @@ export default function Answers() {
               {/* The depth ladder: the essay only while it is on the public
                   shelf (lib/shelf.ts), the book when one takes the question up. */}
               {(isPublicEssay(a.essaySlug) || (a.bookHref && a.bookTitle)) && (
-                <div style={{ background: "var(--card)", border: "1px solid var(--line)", borderLeft: "2px solid var(--mustard)", padding: "16px 20px", marginTop: "18px", display: "flex", flexDirection: "column", gap: "6px" }}>
+                <div style={{ background: "var(--card)", border: "1px solid var(--line)", borderLeft: "2px solid var(--mustard)", padding: "6px 20px", marginTop: "18px", display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 0 }}>
                   {isPublicEssay(a.essaySlug) && (
-                    <Link href={`/writing/${a.essaySlug}`} style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
+                    <Link href={`/writing/${a.essaySlug}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
                       The full essay: {a.essayTitle} →
                     </Link>
                   )}
                   {a.bookHref && a.bookTitle && (
-                    <Link href={a.bookHref} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 500, color: "var(--ink-muted)", textDecoration: "none" }}>
+                    <Link href={a.bookHref} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 500, color: "var(--ink-muted)", textDecoration: "none" }}>
                       The book behind it: {a.bookTitle}
                     </Link>
                   )}
@@ -160,7 +160,7 @@ export default function Answers() {
       </section>
 
       {/* CLOSING */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 28px)", fontStyle: "italic", lineHeight: 1.4, color: "rgba(245,240,230,0.92)", marginBottom: "18px" }}>
             Your question is not on this page? Someone has probably asked it before,

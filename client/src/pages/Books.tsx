@@ -27,7 +27,7 @@ export default function Books() {
       />
 
       {/* HERO — dark room */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-7) var(--s-4) var(--s-6)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(var(--s-5), 8vw, var(--s-7)) var(--gutter) clamp(var(--s-4), 6vw, var(--s-6))" }}>
         <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
           <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
             The Books
@@ -45,7 +45,7 @@ export default function Books() {
           >
             Books by James Bell
           </h1>
-          <p className="page-standfirst">Three books. Every word mine.</p>
+          <p className="page-standfirst">I wrote all three of these myself.</p>
           <p
             style={{
               fontFamily: "var(--B)",
@@ -57,8 +57,7 @@ export default function Books() {
           >
             I write about the church and the country, about reading the Bible without
             flattering ourselves, and about whether any of this holds up under honest
-            questions. Each one is an ebook for $8.99, which is less than the coffee you
-            would read it over.
+            questions. Each one is an ebook for $8.99.
           </p>
         </div>
       </section>
@@ -69,7 +68,7 @@ export default function Books() {
           key={b.slug}
           style={{
             background: i % 2 === 0 ? "var(--bone)" : "var(--bone-warm)",
-            padding: "var(--s-6) var(--s-4)",
+            padding: "var(--s-6) var(--gutter)",
           }}
         >
           <div
@@ -141,7 +140,7 @@ export default function Books() {
       ))}
 
       {/* WHERE THE REST WENT — honest, brief, prose */}
-      <section style={{ background: "var(--charcoal)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <h2
             style={{
