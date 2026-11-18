@@ -69,3 +69,7 @@
   .cr-card svg{grid-column:2;grid-row:1 / span 2}
 }
 @media (prefers-reduced-motion:reduce){.cr-mark,.lib-list a svg{transition:none}}
+
+/* A group with a full portrait (ContextWorld.tsx) links to it above its guides. */
+.lib-world{display:inline-flex;align-items:center;gap:8px;min-height:44px;margin:0 0 var(--s-2);font-family:var(--U);font-weight:600;font-size:15px;color:var(--mustard-text);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.lib-world svg{flex:none}

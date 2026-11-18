@@ -485,6 +485,7 @@ function breadcrumbSchema(crumbs) {
 // The middle crumb of each library page's breadcrumb. Absent → a 2-level trail.
 const SECTION_BY_ROUTE = {
   "/resources/context/": { name: "Context Guides", path: "/resources/context" },
+  "/resources/context/world/": { name: "Bible background", path: "/resources/context" },
   "/life/": { name: "The Integrated Life", path: "/life" },
   "/resources/creeds/": { name: "Creeds & Confessions", path: "/resources/creeds" },
   "/theology/history/": { name: "Church History", path: "/theology/history" },
@@ -774,6 +775,29 @@ function doctrineBody(e) {
     sec("The biblical evidence", evidence),
     sec("Weighing it", paras(d.weighing)),
     sec("Charitable disagreement", paras(d.charitableDisagreement)),
+  ]);
+}
+
+/** A world portrait (/resources/context/world/:id): the intro, every part with the passages it opens, and the sources, as the page shows them. */
+function worldBody(e) {
+  const d = readJsonSafe(`client/public/context/worlds/${e.id}.json`);
+  if (!d) return "";
+  const p = (x) => `<p>${escapeHtml(x)}</p>`;
+  const parts = (d.parts ?? []).map((part, i) => {
+    const read = (part.read ?? []).map((r) =>
+      `<li><blockquote><p>${escapeHtml(r.text)}</p><footer><a href="${escapeHtml(r.href)}">${escapeHtml(r.ref)}</a></footer></blockquote>${p(r.note)}</li>`
+    ).join("\n");
+    return `<section id="${escapeHtml(part.id)}"><p class="pre-eyebrow">Part ${i + 1} of ${d.parts.length}</p><h2>${escapeHtml(part.title)}</h2>\n${p(part.line)}\n${(part.body ?? []).map(p).join("\n")}${read ? `\n<h3>How it changes what you read</h3>\n<ul>${read}</ul>` : ""}</section>`;
+  });
+  const books = (d.sources?.modern ?? []).map((b) => `<li>${escapeHtml(`${b.author}, ${b.title}${b.in && b.in !== "an essay" ? `, ${b.in}` : ""} (${b.year}).`)}</li>`).join("");
+  const ancient = (d.sources?.ancient ?? []).map((a) => `<li>${escapeHtml(a.name)}${a.note ? `. ${escapeHtml(a.note)}` : ""}</li>`).join("");
+  return article([
+    `<p class="pre-eyebrow">Bible background</p>`,
+    `<h1>${escapeHtml(d.title ?? e.title)}</h1>`,
+    d.line ? `<p class="pre-subtitle">${escapeHtml(d.line)}</p>` : "",
+    (d.intro ?? []).map(p).join("\n"),
+    ...parts,
+    sec("Sources and further reading", `<h3>Ancient sources</h3><ul>${ancient}</ul><h3>Modern books</h3><ul>${books}</ul>`),
   ]);
 }
 
@@ -1449,6 +1473,10 @@ async function main() {
   // essays, and toolkits unfurl and index with their own title and image.
   const LIBRARY_SOURCES = [
     { file: "client/public/context/guides-index.json", key: "guides", route: "/resources/context/", ogPrefix: "resources-context", contentDir: "client/public/context/guides" },
+    // The world portraits (/resources/context/world/:id), from the index
+    // scripts/build-context-index.mjs writes. The title is the page's own
+    // SEOMeta title; the body is the whole portrait (worldBody).
+    { file: "client/public/context/worlds-index.json", key: "worlds", route: "/resources/context/world/", ogPrefix: "resources-context-world", slugField: "id", titleField: "seoTitle", preferTitleField: true, desc: "blurb", body: worldBody },
     { file: "client/public/life/domains-index.json", key: "domains", route: "/life/", ogPrefix: "life", contentDir: "client/public/life/domains" },
     { file: "client/public/creeds/documents-index.json", key: "documents", route: "/resources/creeds/", ogPrefix: "resources-creeds", contentDir: "client/public/creeds/documents" },
     { file: "client/public/history/essays-index.json", key: "essays", route: "/theology/history/", ogPrefix: "theology-history", contentDir: "client/public/history/essays" },

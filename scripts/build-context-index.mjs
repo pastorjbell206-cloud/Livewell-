@@ -14,7 +14,7 @@
  *
  * It also scans client/public/context/worlds/*.json (the long portraits of a
  * whole world, one per group, at /resources/context/world/:id) and writes
- * client/public/context/worlds-index.json: { id, title, group, blurb, parts }
+ * client/public/context/worlds-index.json: { id, title, seoTitle, group, blurb, parts }
  * for each. scripts/validate-worlds.mjs gates the portraits themselves.
  */
 import fs from "node:fs";
@@ -53,7 +53,7 @@ for (const f of fs.existsSync(WORLD_DIR) ? fs.readdirSync(WORLD_DIR).filter((x) 
   try {
     const d = JSON.parse(fs.readFileSync(path.join(WORLD_DIR, f), "utf8"));
     if (!d.id || !d.title || !d.group) continue;
-    worlds.push({ id: d.id, title: d.title, group: d.group, blurb: d.description || d.line || "", parts: Array.isArray(d.parts) ? d.parts.length : 0 });
+    worlds.push({ id: d.id, title: d.title, seoTitle: d.seoTitle || d.title, group: d.group, blurb: d.description || d.line || "", parts: Array.isArray(d.parts) ? d.parts.length : 0 });
   } catch (err) {
     console.warn(`[build-context-index] skipped world ${f}:`, err.message);
   }
