@@ -224,3 +224,20 @@ Stopped at a clean guide boundary after the-parables, to leave room for the gate
 ### Where this run stopped
 
 Stopped at a clean guide boundary after the-story-of-the-bible. Next in order: **the-undivided-life**, then witness, womanhood, work-and-vocation.
+
+## Eighth run (the-undivided-life, witness)
+
+### the-undivided-life (done)
+
+- Words 24,844 to 22,853; teaching 6,693 to 6,130. "Bell" 54 to 0 (the remaining matches are "Bellah"); "honest" 38 to 11; "Leader to confirm" 4 to 0; contractions 37 to 642. Every teaching now runs in paragraphs (it was one block per session).
+- Quotations of people: none carried in quotation marks except Scripture. Kuyper's "square inch" (1880) kept as paraphrase, without the quoted "Mine"; Bellah, Taylor, Smith, Heschel ("palace in time"), Brueggemann ("anxiety system"), Keller (contract and covenant) and Plantinga (shalom as universal flourishing, wholeness and delight; sin as its vandalism) kept as paraphrase with attribution and dates. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout. Corrected: Romans 12:1 "reasonable worship" (KJV) to the ESV's "spiritual worship," with a note that the word can be rendered "rational"; 1 Corinthians 13 "keeps no record of wrongs" (NIV) to the ESV's "not irritable or resentful," with the Greek sense of counting wrongs explained; Malachi 2:14 "wife of your covenant" to "your wife by covenant"; Jeremiah 29:11 "plans for wholeness" to the ESV's "plans for welfare," with the Hebrew shalom named.
+- Corrected: the timeline put Hosea at about 1000 BC with David (Hosea is about 750 BC; now its own entry, 13 to 14 entries); Luther's 1520 "milkmaid" (a popular attribution) now his cobbler, smith and farmer in To the Christian Nobility; Ephesians and Philippians dated about AD 60 to 62; the Exodus date marked traditional and debated; Bellah's finding stated as the book puts it (individualism as Americans' "first language"); Keller's contract and covenant distinction credited to The Meaning of Marriage, not Every Good Endeavor; FAQ 1 and FAQ 4 claimed the leader primer said things it didn't, so the primer now says them (a study that leaves people more ashamed has failed; covenant never requires staying in danger).
+- Cut: the plug for "James Bell's book The Undivided Life" (not on the three-book shelf) from the summary and all three promo pieces; four "Leader to confirm" notes and "Not cited by Bell directly"; the biography as credential ("came to faith from atheism" in the summary, primer and FAQ 10; "I was raised without a father" in session 5's teaching). The guide now carries no biography. FAQ 10 ("Why does the study keep implicating the writer") is now "Why does the study ask the leader to go first?" (count kept at 12).
+- Help: no help topic for this guide in sensitive-pages.json. Added: the leader primer's paragraph on a dangerous marriage (don't counsel staying; talk privately; a pastor, a counselor, Find Help) and on not shaming financial hardship; FAQ 4 points a person in danger to their leader or a pastor and Find Help; session 3's practice, discussion note and prayer, session 4's note that some exhaustion is necessity not pride, session 5's note on hardship, and the facilitator's close inviting anyone carrying something heavier to talk afterward.
+- First person: only what the old guide stated of him ("I've lived in the boxes," "I've flinched," "I won't tell you I've arrived," "I'd counsel anyone," "I say it about myself before I say it about you," "a man still arguing with his own heart"). Nothing added.
+
+### What only James can supply (eighth run)
+
+- The Undivided Life: the old guide said the study was "drawn from James Bell's book The Undivided Life." That book isn't on the shelf, so the plug is gone. If the book exists and he wants it named, that's his call.
+- The Undivided Life: the old session 5 said "I was raised without a father, and I have lived in the boxes." It did no work there, so it's cut. If he wants his fatherlessness tied to the idea of producing one's own worth (session 4), that sentence has to come from him.

@@ -397,3 +397,29 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Marcion cut the Old Testament | Known: second century | Kept, dated |
 | Biography: atheism as credential (summary, primer, facilitator, FAQ 3, FAQ 10, three promo pieces) | Credentials | Kept once, session 1 teaching, where the old guide said "I once held it myself"; FAQ about the writer cut (12 to 11) |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Undivided Life
+
+| Claim | How checked | Result |
+|---|---|---|
+| Kuyper, "not one square inch... Mine," 1880 | Known: inaugural address at the Free University of Amsterdam, 20 October 1880; prime minister 1901 to 1905 | Kept as paraphrase, dated; quoted "Mine" dropped |
+| Bellah, Habits of the Heart, 1985: no shared language for the good of the whole | Known: the book's "first language" of individualism and the weaker "second languages" | Restated as the book puts it |
+| Taylor, A Secular Age, 2007: porous and buffered self | Known | Paraphrase, dated |
+| Smith, Desiring the Kingdom 2009; You Are What You Love 2016 | Known | Kept, dated |
+| Heschel, The Sabbath, 1951: "palace in time" | Known | Paraphrase, dated |
+| Brueggemann, Sabbath as Resistance, 2014: "anxiety system" | Known | Paraphrase, dated |
+| Keller, contract and covenant | Known: The Meaning of Marriage, 2011 | Credited there, not to Every Good Endeavor (2012) |
+| Plantinga, Not the Way It's Supposed to Be, 1995: shalom as universal flourishing, wholeness and delight; sin as vandalism of shalom | Known | Paraphrase, unquoted |
+| Alcorn, The Treasure Principle 2001; Money, Possessions, and Eternity; Comer, The Ruthless Elimination of Hurry 2019 | Known | Kept; "Leader to confirm" and "Not cited by Bell directly" removed |
+| Luther, 1520, "the milkmaid and the magistrate and the monk" | Known: the milkmaid line is a popular attribution; To the Christian Nobility (1520) names the cobbler, smith and peasant | Replaced with what the 1520 text says |
+| Augustine, restless heart, "circa 400" | Known: Confessions 1.1, written about 397 to 400 | Dated 397 to 400 |
+| Hosea placed about 1000 BC with David | Hosea prophesied about 750 BC | Separate entry |
+| Ephesians "circa AD 62" | Prison letters, about AD 60 to 62 | Range given |
+| Early Christians died rather than call Caesar lord | Known: Martyrdom of Polycarp 8 to 10 | Kept, Polycarp named |
+| Romans 12:1 "reasonable worship" | ESV reads "spiritual worship" (footnote: rational) | ESV quoted, rendering noted |
+| 1 Corinthians 13:5 "keeps no record of wrongs" | NIV wording; ESV "not irritable or resentful" | ESV quoted, Greek sense explained |
+| Malachi 2:14 "wife of your covenant" | ESV "your wife by covenant" | Corrected |
+| Jeremiah 29:11 "plans for wholeness" | ESV "plans for welfare"; Hebrew shalom | Corrected |
+| "The Undivided Life" as a book by James | Not on bookShelf.ts | Plug dropped |
+| Biography: atheism (summary, primer, FAQ 10); "raised without a father" (session 5) | Credentials | All cut |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
