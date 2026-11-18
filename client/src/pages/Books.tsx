@@ -87,7 +87,7 @@ export default function Books() {
                 loading={i === 0 ? "eager" : "lazy"}
                 decoding="async"
                 src={b.cover}
-                alt={`${b.title} — cover`}
+                alt={`Cover of ${b.title}`}
                 width={1600}
                 height={2560}
                 style={{

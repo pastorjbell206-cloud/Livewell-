@@ -298,7 +298,7 @@ export default function Home() {
             variant="inline"
             source="home"
             title="New essays by email, through Substack"
-            description="Serious theology, written for the week you are actually living. Leave your email here and finish on Substack, and leave whenever you like."
+            description="Serious theology for an ordinary week. Leave your email here and finish on Substack. You can unsubscribe whenever you like."
           />
           {/* Where else James writes: links only (lib/channels.ts). */}
           <FollowRow style={{ marginTop: "var(--s-3)" }} />
