@@ -31,7 +31,9 @@ Done, committed and pushed (11, before the fifth run): mental-health, pastoral-h
 
 Fifth run (brief guides3.md): hospitality and knowing-god done, committed and pushed (13 in all).
 
-Not started (7): manhood, mishpat, money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The fourth run was assigned habits-and-formation and holy-spirit, with hospitality if room remained; it stopped at a clean guide boundary after holy-spirit and its gates, to leave hospitality whole for a fresh run. The fifth run was assigned hospitality and knowing-god, with manhood if room remained; it stopped at a clean guide boundary after knowing-god and the full gates, leaving manhood whole for a fresh run. The next guide is manhood.
+Sixth run (brief guides3.md): manhood and mishpat done, committed and pushed (15 in all).
+
+Not started (5): money, new-believer, parenting-formation, providence, raising-believers. No file for them was touched. The sixth run was assigned manhood and mishpat, with money if room remained; it stopped at a clean guide boundary after mishpat and the full gates, leaving money whole for a fresh run. The next guide is money.
 
 Each guide was rewritten whole by the pilot's method: same slug, title, theme, sessions, session titles, key passages, timing, Scripture index, downloads and help box; teaching in James's first person, seven or eight ordinary paragraphs per session; Scripture quoted from the ESV (the text these guides already used) with references; case studies reframed as "Suppose"; rulebook words ("steelman", "verdict" as a method word, "inside the indictment", "the method is the mercy"), biography stamps, "Bell" and "Leader to confirm" removed; every help line kept word for word (checked by script against the old file). The claim-by-claim record is docs/work/elite/g2b-ledger.md.
 
@@ -112,9 +114,22 @@ scripts/validate-grow-voice.mjs exempts quoted Scripture only when the words are
 - Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
 - Knowing God, session 3 (the word Father): no help line existed to keep. I added, in plain words and with no number, a pointer to a group leader, pastor or counselor in the practice, the leader primer and the FAQ. James may want the 988 line or the help box there; that is his call.
 
+## What I ran, and what passed (sixth run, after mishpat)
+
+- node scripts/validate-studyguides.mjs: 68 guides, 0 failures (after each guide).
+- Forbidden words, em-dashes and exclamation points searched literally in both guides: no forbidden words ("blessed" appears only as a verb, of the church blessing the idea of race; "verdict" only in its plain sense and in an untouched cadence line). The only exclamation points are inside quoted ESV Ecclesiastes 4:10 (manhood).
+- Help lines in manhood (988 lifeline in the leader primer, FAQ 3 and session 4 going deeper; "do not leave him alone in it") checked by script against the old file: identical.
+- Every command in the CI content-gates step (35): passed.
+- pnpm check: passed.
+- pnpm test: 144 files passed, 7 skipped, 0 failed (1,642 tests).
+- Web searches: 2 (the 2021 Survey Center on American Life friendship figures, for manhood; the Bonhoeffer "silence in the face of evil" attribution, for mishpat, not found in his works, so cut).
+- Not run (the lead runs them on the whole branch): pnpm build, sitemap, prerender, Lighthouse, screenshots. I did not look at either guide in a browser.
+- Manhood: biography kept once, in session 5 teaching, in the words the old guide gave it (raised without a father, five sons, the wound stops here); removed from the promo kit, FAQ, primer and facilitator script, and atheism removed entirely. James may want the five sons line in session 2 instead, or nowhere.
+- Mishpat: the old guide was "drawn from James Bell's book Mishpat". That book is not on the shelf, so the guide no longer names it. If James wants the book credited, it returns to the shelf first.
+
 ## What I did not do or verify
 
-- The seven guides listed above as not started.
+- The five guides listed above as not started.
 - The ESV wording was checked from memory; there is no ESV text in the repository.
 - Lighthouse was not run for these pages (only the guide text changed; the pilot measured the same page component at CLS 0 and accessibility 99, the one miss being heading order in the page component).
 - The downloadable PDFs still carry the old wording until pnpm pdfs is rerun.
