@@ -86,3 +86,21 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | "This platform's economic study" (goingDeeper) | Rulebook | Cut |
 | Case studies told as real | No source | Reframed as "Suppose..." |
 | Every hotline line (1-800-799-7233, START to 88788, 911) | Help lines | Kept word for word |
+
+## Identity
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp ("came to faith from atheism and was raised without a father") in summary, primer, script, three FAQs; pulpit announcement "I have measured my worth by the room" | Credential use; a memory scripted for whoever reads it | Removed; one general line kept in session 1 ("for anyone who grew up without a father") because it does work in a teaching about inherited names |
+| Genesis dated "circa 1446 BC" | Not checkable | "Date unknown" |
+| Taylor, A Secular Age (2007), immanent frame, buffered and porous self | Known | Kept, described; noted that the porous self was open to spirits as well as God |
+| Bellah et al., Habits of the Heart (1985), expressive individualism | Known | Kept; "Leader to confirm" removed |
+| Augustine, "You have made us for yourself, and our heart is restless until it rests in you" | Known (Confessions 1.1) | Kept as quotation; "fourteen words" count cut (depends on translation) |
+| Luther, "I am baptized" | Widely reported tradition (baptizatus sum) | Kept as "is remembered for", not as documented scene |
+| Calvin, union with Christ, Institutes "1536" | Known: the passage is Book 3.1.1 of the 1559 edition | Dated 1536 to 1559; the teaching given as marked paraphrase |
+| "The medieval description of sin as the heart curved in on itself" | Known: Luther's incurvatus in se, following Augustine | Attributed to Luther |
+| "In Christ" "well over a hundred times" in Paul | Known (common count, including "in him", "in the Lord") | Kept |
+| Social media and rising anxiety (unattributed) | Known: argued by Jonathan Haidt and others | Attributed in general terms; not stated as settled |
+| Luther, The Freedom of a Christian (1520, date added); Keller, Smith, Ortlund, Fukuyama, Ferguson | Known | Kept; "Leader to confirm" removed (7) |
+| FAQ "Why does the study keep putting the writer ... inside the problem" ("the method is the mercy") | Rulebook | Rewritten as a plain question about the leader |
+| Session 5 "lose your life" and abuse | Care | Leader primer and discussion note now ask the leader to make a private way to talk and help anyone being harmed find real help |
