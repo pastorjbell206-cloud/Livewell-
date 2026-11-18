@@ -44,7 +44,11 @@ function toTime(date: unknown): number {
   return Number.NaN;
 }
 
-const newestFirst = (a: LatestEssay, b: LatestEssay) => b.time - a.time || a.slug.localeCompare(b.slug);
+// Plain comparisons, not localeCompare or toLocaleDateString: either one wakes
+// the browser's whole locale data on the first visit, a cost Home's first
+// seconds cannot spare (the slugs are plain ASCII, the dates English).
+const bySlug = (a: string, b: string) => (a < b ? -1 : a > b ? 1 : 0);
+const newestFirst = (a: LatestEssay, b: LatestEssay) => b.time - a.time || bySlug(a.slug, b.slug);
 
 /** The rewritten essays that are public, by the date of the rewrite. Needs no network. */
 export function committedLatest(): LatestEssay[] {
@@ -80,8 +84,10 @@ export function latestFrom(rows: ListingRow[]): LatestEssay[] {
 }
 
 /** "October 27, 2026". Read in UTC, so a date stored at midnight keeps its day. */
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 export function longDate(time: number): string {
-  return new Date(time).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+  const d = new Date(time);
+  return `${MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
 }
 
 const SHELF_LISTING = shelfListingInput();

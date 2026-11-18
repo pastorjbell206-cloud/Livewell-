@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { httpBatchLink, TRPCClientError } from "@trpc/client";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { startTransition } from "react";
 import { createRoot } from "react-dom/client";
 import superjson from "superjson";
 import App from "./App";
@@ -86,13 +87,21 @@ mountAfterStaticHero(() => {
   // A chapter, an essay or a guide keeps its prerendered text on screen until
   // the real page is ready (lib/prerender-hold.ts).
   holdPrerenderedPage();
-  createRoot(document.getElementById("root")!).render(
-    <trpc.Provider client={trpcClient} queryClient={queryClient}>
-      <QueryClientProvider client={queryClient}>
-        <App />
-        <Analytics />
-        <SpeedInsights />
-      </QueryClientProvider>
-    </trpc.Provider>
-  );
+  const root = createRoot(document.getElementById("root")!);
+  const render = () =>
+    root.render(
+      <trpc.Provider client={trpcClient} queryClient={queryClient}>
+        <QueryClientProvider client={queryClient}>
+          <App />
+          <Analytics />
+          <SpeedInsights />
+        </QueryClientProvider>
+      </trpc.Provider>
+    );
+  // On "/" the static hero is already the page a visitor sees, so the first
+  // render can wait its turn: as a transition React works in short slices and
+  // lets a tap or a scroll through between them, where one long render would
+  // hold the main thread for the whole tree (Lighthouse's blocking time).
+  if (location.pathname === "/") startTransition(render);
+  else render();
 });
