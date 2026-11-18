@@ -129,3 +129,29 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Packer, Knowing God listed as a defense of eternal punishment | Known: a book on God's character, not a treatise on hell | Note rewritten to say what the book is |
 | "Leader to confirm" (5) | Known titles | Removed |
 | Grief and despair | Care | Leader primer and grief FAQ now say to stay with anyone whose grief has become despair and help them get real help |
+
+## Prayer
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamp ("raised without a father... came to God from atheism") in summary, primer, FAQ, objections | Confirmed facts used as a credential | Removed; one first-person "I was raised without a father" kept in session 1 teaching, where the session is about the word Father |
+| "Bell says / Bell takes the strong form" in summaries, questions, objections | Narrator calling him "Bell" | Removed; teaching in first person |
+| "Tim Keller used to say" that fatherhood without heaven gives sentimentality and heaven without fatherhood gives terror | Not verified as his wording | Cut as a saying; replaced with the verifiable subtitle of his 2014 book (Experiencing Awe and Intimacy with God) and the idea in plain words, unattributed |
+| Manna "circa 1446 BC" | Exodus date is debated | "Date debated" |
+| Tertullian and Cyprian "circa 200" | Known: Tertullian, On Prayer, about 200; Cyprian, On the Lord's Prayer, about 252 | "About 200 to 250" |
+| Lord's Prayer taught only to the baptized "in many ancient liturgies" | Known practice in parts of the early church (handing over of the prayer to those coming to baptism) | Softened to "in parts of the early church... as they came to baptism" |
+| Augustine "circa 400", Confessions; disordered love in the Confessions | Known: Confessions about 397 to 400; ordered love is developed mainly in other works (On Christian Teaching, City of God) | Dated 397 to 400; restless heart attributed to the Confessions, disordered love to "other works" |
+| Luther "circa 1520s", guide for his barber | Known: A Simple Way to Pray, 1535, for Peter Beskendorf | Dated 1535, barber named |
+| Calvin "1535" Institutes | Known: first edition 1536; "chief exercise of faith" is the title of the 1559 chapter (3.20) | "1536 to 1559", phrase tied to the 1559 edition |
+| Puritans "circa 1650", Westminster catechisms and Thomas Watson | Known: Shorter Catechism 1647 ends with the Lord's Prayer; Watson's exposition was published later (1692) | Entry made the 1647 Shorter Catechism only; Watson dropped |
+| Lewis 1958 Reflections; Letters to Malcolm "prayer that bounces off the ceiling" | Known: Reflections 1958, Letters to Malcolm 1964 (posthumous). The ceiling description is not a verified summary | Dates kept; description changed to "the puzzles of asking God for things" |
+| Brueggemann, The Message of the Psalms, 1984; loss of lament | Known; the loss-of-lament argument is chiefly the 1986 essay "The Costly Loss of Lament" | Both named |
+| Peterson "1989 work on the Psalms"; bibliography "Working the Angles... and Answering God" (two books run together) | Known: Answering God, 1989 | Bibliography entry made Answering God: The Psalms as Tools for Prayer |
+| Keller, Prayer, 2014 | Known | Kept |
+| Bonhoeffer, cheap grace; "warned there is no such thing" | Known: The Cost of Discipleship (1937) opens calling cheap grace the deadly enemy of the church; "no such thing" is not his claim | Corrected to the deadly-enemy line, as paraphrase; "cheap grace" quoted as a two-word term |
+| Psalm 130:3-4 "kept a record of sins, who could stand" | Not ESV | Restored to ESV ("should mark iniquities") |
+| "Paul E. Miller", "Wright", "Ortlund", "Lewis" entries marked "Leader to confirm" (4) | Known titles and authors; the notes describe the books only, nothing attributed to James | "Leader to confirm" removed |
+| Gethsemane: three times; sweat like drops of blood | Matthew 26:39-44; Luke 22:44 (ESV) | Kept, quoted with references |
+| Proverbs 6:8 ant; 1 Timothy 5:8 provide for household | Scripture | Added with references to the planning objection the old guide already made |
+| Romans 8:15 and Galatians 4:6 | ESV ends with an exclamation inside the quotation | Quoted as short excerpts that stop before it |
+| Help box | Rendered by the page from client/src/data/sensitive-pages.json (prayer: abuse); none in the guide text | Untouched; session 4 now says safety comes first and forgiveness is not trust or reconciliation, as the old guide's going-deeper section did |
