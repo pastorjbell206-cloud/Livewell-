@@ -57,10 +57,9 @@ function KindGroup({ k, name, rows, chapterLabel }: { k: PassageKind; name: stri
   const shown = all ? rows : rows.slice(0, PER_KIND);
   return (
     <section className="gd__group" aria-label={name}>
-      <h3 className="gd__kind">
+      <h3 className="eyebrow gd__kind">
         <span className="gd__icon" aria-hidden><Icon size={18} strokeWidth={1.75} /></span>
         <span>{name}</span>
-        <span className="gd__n">{rows.length}</span>
       </h3>
       <ul className="gd__rows" id={listId}>
         {shown.map((r) => (
