@@ -57,6 +57,7 @@ jobs:
           node scripts/validate-topics.mjs
           pnpm exec tsx scripts/validate-catalogue.mjs
           pnpm exec tsx scripts/build-search-index.mjs --check
+          pnpm exec tsx scripts/build-passage-index.mjs --check
           node scripts/validate-bible.mjs
           node scripts/build-bible-text.mjs --check
           node scripts/build-bible-search.mjs --check
