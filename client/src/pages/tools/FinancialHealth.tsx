@@ -592,7 +592,7 @@ export default function FinancialHealth() {
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Financial Health Check",
+          name: "Financial Health Self-Check",
           description:
             "A 12-question self-check on money and faith covering generosity, contentment, stewardship, and family provision. Not a diagnosis or financial advice.",
           url: "https://www.livewellbyjamesbell.co/tools/financial-health",
@@ -635,7 +635,7 @@ export default function FinancialHealth() {
           >
             Financial Health{" "}
             <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Check
+              Self-Check
             </em>
           </h1>
           <p
@@ -1064,7 +1064,7 @@ export default function FinancialHealth() {
           style={{ padding: "48px 32px 80px", background: "var(--bone)", outline: "none" }}
         >
           <div className="wrap" style={{ maxWidth: "800px" }}>
-            <ToolActions toolName="Financial Health Check" onStartOver={handleRestart} />
+            <ToolActions toolName="Financial Health Self-Check" onStartOver={handleRestart} />
             <SafetyCheck askAboutHome={false} />
             <SelfCheckHistory
               id="financial-health"

@@ -360,7 +360,7 @@ const CATEGORIES: Category[] = [
           "Make sure a will and the documents your family would need are in place, and that someone you trust knows where to find them.",
         ],
         next: [
-          { kind: "Self-check", title: "Financial Health Check", href: "/tools/financial-health" },
+          { kind: "Self-check", title: "Financial Health Self-Check", href: "/tools/financial-health" },
           { kind: "Life", title: "Why Should Christians Give Their Money Away?", href: "/life/generosity-and-the-open-hand" },
         ],
       },
@@ -373,7 +373,7 @@ const CATEGORIES: Category[] = [
           "Pick the money task you've been putting off, such as an emergency fund, a plan to pay down debt, or a will, and give it one hour this month.",
         ],
         next: [
-          { kind: "Self-check", title: "Financial Health Check", href: "/tools/financial-health" },
+          { kind: "Self-check", title: "Financial Health Self-Check", href: "/tools/financial-health" },
           { kind: "How-to", title: "How to Make a Budget That Honors God", href: "/how-tos/wm-how-to-make-a-budget-that-honors-god" },
           { kind: "How-to", title: "How to Start Giving Generously", href: "/how-tos/wm-how-to-start-giving-generously" },
         ],
