@@ -124,7 +124,7 @@ export default function WhenGodBlessAmerica() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
           <div style={eyebrow}>What’s Inside</div>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 500, color: "var(--ink)", margin: "10px 0 28px" }}>
-            The chapters
+            Thirteen movements, from Hosea to the cross
           </h2>
           <ol style={{ listStyle: "none", margin: 0, padding: 0 }}>
             {CHAPTERS.map(([num, title], i) => (

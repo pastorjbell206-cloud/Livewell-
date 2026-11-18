@@ -189,7 +189,7 @@ export default function About() {
           I also founded ENDS, which equips pastors in remote regions around the world. The aim isn't to send Americans to do their work for them or to hand them a translated version of our assumptions. It's to put training in the hands of the men already there, who know the language and the terrain and the cost, and who will still be there long after any visitor has gone home.
         </p>
         <p>
-          The rest of it is writing. There are books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. There are the essays here, the <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It's all one project, really. I'm trying to put theology back in contact with ordinary life.{" "}
+          The rest of it is writing. There are books on theology, church history, justice, marriage, parenting, and the slow unglamorous business of following Jesus over a long stretch of time. There are the essays here, the <a href="http://followingthewaypodcast.com/" target="_blank" rel="noopener noreferrer">Following the Way</a> podcast, and the notes I write most days for whoever is reading. It's all one project, really: taking the depth of theology and putting it back in contact with the weight of an ordinary life.{" "}
           <Link href="/books">The books are here</Link>.
         </p>
       </Band>
