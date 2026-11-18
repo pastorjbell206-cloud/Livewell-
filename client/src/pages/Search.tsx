@@ -20,7 +20,7 @@ import {
   type SearchEntry,
 } from "@/lib/siteSearch";
 import { CrisisBlock } from "@/components/CrisisBlock";
-import { TOOLS } from "@/pages/ToolsHub";
+import { TOOLS, foldedInto } from "@/lib/toolsList";
 
 // The verses that hold the words typed ("born again"). The Bible's words are
 // a large download, so the code and the text both wait for a query.
@@ -36,9 +36,11 @@ const BibleMatchesPreview = lazy(() => import("@/pages/study-bible/BibleSearchRe
 const LIBRARY_RESULT_CAP = 16;
 
 // The tools, from the /tools registry, so "worry journal" finds the Worry Journal.
+// A folded tool is found under the tool that took it in (its old name is a keyword).
 const TOOL_ENTRIES: SearchEntry[] = TOOLS.map((t) => ({
-  title: t.title,
-  blurb: t.description,
+  title: t.name,
+  blurb: t.job,
+  keywords: foldedInto(t.id).map((f) => f.name).join(" "),
   facet: "Tool",
   sourceLabel: "Tools",
   href: t.href,

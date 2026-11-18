@@ -78,7 +78,7 @@ describe("names an essay links", () => {
   });
 
   it("links a full name and a listed short form to the entry", () => {
-    expect(link("Polycarp of Smyrna, who had known the apostle John")[0]).toMatchObject({ text: "Polycarp of Smyrna", href: "/theology/history#person-polycarp-of-smyrna" });
+    expect(link("Polycarp of Smyrna, who had known the apostle John")[0]).toMatchObject({ text: "Polycarp of Smyrna", href: "/theology/history/people#person-polycarp-of-smyrna" });
     expect(link("the philosopher Justin, who had walked")[0].name).toBe("Justin Martyr");
     expect(link("bishops from across the world to Nicaea in AD 325")[0].name).toBe("First Council of Nicaea");
     expect(link("the Second Council of Nicaea restored the icons")[0].name).toBe("Second Council of Nicaea");

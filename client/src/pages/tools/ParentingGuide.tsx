@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
 import { useState } from "react";
 import { ArrowLeft, Users, ChevronRight } from "lucide-react";
@@ -372,13 +373,13 @@ export default function ParentingGuide() {
   return (
     <Layout>
       <SEOMeta
-        title="Christian Parenting by Age: Toddlers to Teens"
+        title="What Your Child Needs at Each Age"
         description="Practical, theologically grounded parenting guidance for every stage. What your child needs, how to talk about God, common mistakes, and one practice to start."
         keywords="Christian parenting, parenting guide, faith and parenting, theological parenting, parenting toddlers, parenting teens, raising kids in faith"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Parenting Stage Guide",
+          name: "What Your Child Needs at Each Age",
           description:
             "Age-specific theological parenting guidance from toddler through young adult. Practical, specific, and grounded in real life.",
           url: "https://www.livewellbyjamesbell.co/tools/parenting-guide",
@@ -418,9 +419,9 @@ export default function ParentingGuide() {
               marginBottom: "16px",
             }}
           >
-            Parenting Stage{" "}
+            What Your Child Needs{" "}
             <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Guide
+              at Each Age
             </em>
           </h1>
           <p
@@ -835,8 +836,8 @@ export default function ParentingGuide() {
               </div>
 
               {/* CTA */}
-              <a
-                href="/writing"
+              <Link
+                href="/family/tonight"
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -866,7 +867,7 @@ export default function ParentingGuide() {
                       marginBottom: "6px",
                     }}
                   >
-                    KEEP READING
+                    NEXT, AT THE TABLE
                   </div>
                   <span
                     style={{
@@ -876,14 +877,14 @@ export default function ParentingGuide() {
                       fontStyle: "italic",
                     }}
                   >
-                    Essays on Faith, Parenting, and the Weight of Raising Souls
+                    Tonight's family devotion, ready to read together
                   </span>
                 </div>
                 <ChevronRight
                   size={20}
                   style={{ opacity: 0.5, flexShrink: 0 }}
                 />
-              </a>
+              </Link>
             </div>
           )}
         </div>

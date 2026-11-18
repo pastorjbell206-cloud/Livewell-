@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import { ArrowLeft, BookOpen, AlertTriangle, Scale, Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
 
+import NextStep from "@/components/NextStep";
 /* ─────────────────────────────────────────────────── types ── */
 
 interface Passage {
@@ -1699,6 +1700,8 @@ export default function BibleReference() {
                   {topic.takeaway}
                 </p>
               </div>
+
+              <NextStep id="study-bible" line="Read these passages in their whole chapter, with notes beside the text." />
 
               {/* Back to topics link at bottom */}
               <div style={{ textAlign: "center", marginTop: "48px" }}>

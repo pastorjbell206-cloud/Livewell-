@@ -5,6 +5,7 @@ import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 
+import FoldedNote from "@/components/FoldedNote";
 interface KeyWord { word: string; original: string; meaning: string; }
 interface KeyTerm { term: string; language: string; meaning: string; }
 interface ScholarView { view: string; summary: string; proponents: string; }
@@ -2092,6 +2093,7 @@ export default function DeepBibleCompanion() {
         description="Study any passage with 6 layers: text, historical context, literary structure, scholarly views, application, and resources. Serious depth in plain language."
         structuredData={{ "@context": "https://schema.org", "@type": "WebApplication", name: "Deep Bible Study Companion", applicationCategory: "ReligiousApp", offers: { "@type": "Offer", price: "0" } }}
       />
+      <FoldedNote id="deep-bible" />
 
       {/*
         Print document styles. On screen the .db-print document is hidden; in

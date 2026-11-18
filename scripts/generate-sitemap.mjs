@@ -140,11 +140,14 @@ const STATIC_PAGES = [
   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
   { url: "/answers", priority: "0.9", changefreq: "weekly" },
+  { url: "/skeptics", priority: "0.85", changefreq: "monthly" },
   { url: "/topics", priority: "0.9", changefreq: "monthly" },
   { url: "/assessments", priority: "0.85", changefreq: "monthly" },
   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
+  { url: "/theology/history/people", priority: "0.7", changefreq: "monthly" },
   { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
   { url: "/start", priority: "0.9", changefreq: "monthly" },
+  { url: "/explore", priority: "0.8", changefreq: "monthly" },
   { url: "/start/quiz", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/theology-quiz", priority: "0.6", changefreq: "monthly" },
   { url: "/tools/verse-finder", priority: "0.6", changefreq: "monthly" },
@@ -303,6 +306,14 @@ function manifestPages() {
     } catch (err) {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
+  }
+  // A page per Honest Answer (/answers/:slug). The answers are TypeScript
+  // (client/src/data/answers.ts); their slugs are read from the source.
+  try {
+    const src = fs.readFileSync("client/src/data/answers.ts", "utf8");
+    for (const m of src.matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)) pages.push({ url: `/answers/${m[1]}`, priority: "0.8", changefreq: "monthly" });
+  } catch (err) {
+    console.warn(`[sitemap] could not read the Honest Answers: ${err.message}`);
   }
   // The Study Bible: every book, every chapter, the eleven acts of the story,
   // and the doctrine pages (client/public/bible/*).

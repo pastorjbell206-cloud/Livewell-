@@ -30,6 +30,7 @@ import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBloc
 import { CardGrid } from "@/components/editorial/CardGrid";
 import { SectionHead } from "@/components/editorial/SectionHead";
 import { isPublicEssayHref } from "@/lib/shelf";
+import { toolName } from "@/lib/toolsList";
 import { localISODate } from "@/lib/familyYear";
 import { FAMILY_SETS } from "@/lib/familyYear.generated";
 import { readCatechismPlace } from "@/lib/familyCatechism";
@@ -264,7 +265,7 @@ export default function Family() {
             label="Family devotions"
             items={[
               { href: "/family/devotions", title: "Every family devotion", dek: "Seventy-two weekly devotions, more than a year of them, plus daily readings for Thanksgiving week, Advent, and Holy Week. Each has its own page to send or print." },
-              { href: "/tools/family-devotions", title: "Build a family devotion", dek: "Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." },
+              { href: "/tools/family-devotions", title: toolName("family-devotions"), dek: "Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." },
             ]}
           />
         </div>
@@ -307,10 +308,10 @@ export default function Family() {
             label="For teenagers"
             items={[
               { href: "/family/devotions", title: "Older questions on every devotion", dek: "Each weekly devotion has its own questions for ages eleven and up. Choose Older when you reach the Ask step.", cta: "See the devotions" },
-              { href: "/tools/parent-teen-conversation", title: "The Parent and Teen Conversation", dek: "You each answer apart, then talk through the places where you see home differently.", cta: "Start the conversation" },
+              { href: "/tools/parent-teen-conversation", title: toolName("parent-teen"), dek: "You each answer apart, then talk through the places where you see home differently.", cta: "Start the conversation" },
               { href: "/how-tos/fam-how-to-disciple-teenagers-at-home", title: "How to disciple teenagers at home", dek: "Staying in the room when they pull away, and answering the hard question instead of dodging it.", cta: "Read the guide" },
               { href: "/how-tos/parenting-how-to-stay-close-to-a-pulling-away-teenager", title: "How to stay close to a teenager who is pulling away", dek: "How to stay reachable without chasing, and present without smothering.", cta: "Read the guide" },
-              { href: "/tools/family-devotions", title: "Devotions written for teens", dek: "In the devotion builder, pick Teens (12-18) and a theme, and you get a devotion written for that age.", cta: "Open the builder" },
+              { href: "/tools/family-devotions", title: toolName("family-devotions"), dek: "Devotions written for teens: pick Teens (12-18) and a theme, and you get a devotion written for that age.", cta: "Open the builder" },
               ...(SKEPTIC_TRACK_LIVE
                 ? [{ href: "/skeptic-track", title: "Start here if you're a skeptic", dek: "Seven essays in argument order, for anyone working out whether this is true." }]
                 : []),
@@ -329,9 +330,9 @@ export default function Family() {
           <CardGrid
             label="Parenting guides and tools"
             items={[
-              { href: "/tools/parenting-verses", title: "Parenting Bible verses", dek: "Scripture for fear, anger, identity, obedience, screens, and doubt, each with a short note for the parent." },
+              { href: "/wisdom/parenting-struggles", title: "What the Bible says about parenting", dek: "Scripture for the hard moments of raising children, with the verses worth knowing by heart." },
               { href: "/help/parenting", title: "When parenting is hard", dek: "For worn-out parents of little ones, of a teen who has gone quiet, or of a grown child who has left the faith." },
-              { href: "/tools/parenting-guide", title: "Parenting stage guide", dek: "Age-specific guidance from toddlers to young adults, and one practice to start this week." },
+              { href: "/tools/parenting-guide", title: toolName("parenting-guide"), dek: "Age-specific guidance from toddlers to young adults, and one practice to start this week." },
               { href: "/writing/what-fatherhood-requires", title: "What fatherhood requires", dek: "On the inheritance you pass down, and the one you choose to break." },
               { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You can't save your children, and you were never meant to." },
               { href: "/life/the-home-and-the-family", title: "The home and the family", dek: "The household as a school of grace: the table, family worship, and the open door." },
@@ -349,7 +350,7 @@ export default function Family() {
             label="Marriage guides and tools"
             items={[
               { href: "/help/marriage", title: "When a marriage is in trouble", dek: "For the marriage that has gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help." },
-              { href: "/tools/marriage-assessment", title: "Marriage Health Self-Check", dek: "Fifteen questions across communication, trust, conflict, and shared vision." },
+              { href: "/tools/marriage-assessment", title: toolName("marriage"), dek: "Fifteen questions across communication, trust, conflict, and shared vision." },
               { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage is, and why the difference holds it together." },
               { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },
             ].filter((item) => isPublicEssayHref(item.href))}
@@ -365,11 +366,11 @@ export default function Family() {
           <CardGrid
             label="Tools for the home"
             items={[
-              { href: "/tools/verse-finder", title: "Bible verse finder", dek: "Find Scripture for anxiety, grief, hope, or courage, and share it." },
-              { href: "/tools/family-devotions", title: "Family devotion builder", dek: "Build a 15-minute devotion by your kids' ages and a theme." },
-              { href: "/tools/bible-study", title: "Bible study guide", dek: "Study any book of the Bible with themes, questions, and reading strategies." },
-              { href: "/tools/prayer-generator", title: "Prayer generator", dek: "Guided prayers for morning, evening, strength, guidance, and gratitude." },
-              { href: "/tools/rule-of-life", title: "Rule of life builder", dek: "Build a rhythm of prayer, Scripture, rest, community, and mission that you can keep." },
+              { href: "/tools/wisdom-finder", title: toolName("wisdom-finder"), dek: "Find Scripture for anxiety, grief, hope, or courage, and share it." },
+              { href: "/tools/family-devotions", title: toolName("family-devotions"), dek: "Build a 15-minute devotion by your kids' ages and a theme." },
+              { href: "/tools/prayer-generator", title: toolName("prayer-generator"), dek: "Guided prayers for morning, evening, strength, guidance, and gratitude." },
+              { href: "/tools/rule-of-life", title: toolName("rule-of-life"), dek: "Build a rhythm of prayer, Scripture, rest, community, and mission that you can keep." },
+              { href: "/tools", title: "Every tool", dek: "Every tool on LiveWell, in one place, each listed once." },
             ]}
           />
         </div>

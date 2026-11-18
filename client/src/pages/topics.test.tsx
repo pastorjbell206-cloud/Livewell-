@@ -82,41 +82,65 @@ afterEach(() => {
 });
 
 describe("/topics", () => {
-  it("lists every question, each a link to the page it opens today", async () => {
+  /** Open every group, so each question is on the page. */
+  const openAll = () => screen.queryAllByRole("button", { name: /^All \d+$/ }).forEach((b) => fireEvent.click(b));
+
+  it("is the Questions door: every question in a group, each a link to the page it opens today", async () => {
     serve();
     renderAt("/topics");
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Hard questions, and where to start");
-    const list = await screen.findByRole("list", { name: "Questions" });
-    const rows = within(list).getAllByRole("listitem");
-    expect(rows).toHaveLength(INDEX.rows.length);
-    // The mission's central question first.
-    expect(within(rows[0]).getByRole("heading").textContent).toBe(topic("living-after-christendom").title);
-    const politics = within(list).getByRole("link", { name: /What is Christian nationalism/ });
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Hard questions");
+    const politics = await screen.findByRole("link", { name: /What is Christian nationalism/ });
+    openAll();
     expect(politics.getAttribute("href")).toBe("/topics/faith-politics-and-the-flag");
-    // A personal need opens its care page directly.
-    expect(within(list).getByRole("link", { name: /I can't stop worrying/ }).getAttribute("href")).toBe("/help/anxiety");
+    expect(screen.getByRole("link", { name: /What does it mean that America is post-Christian/ }).getAttribute("href")).toBe("/topics/living-after-christendom");
+    // A personal need opens its care page directly, labelled as care.
+    const worry = screen.getByRole("link", { name: /I can't stop worrying/ });
+    expect(worry.getAttribute("href")).toBe("/help/anxiety");
+    expect(within(worry).getByText("Find Help")).toBeTruthy();
+    // The two trust questions are guides to read, not crisis care.
+    const bible = screen.getByRole("link", { name: /Can I trust the Bible/ });
+    expect(within(bible).getByText("Guide")).toBeTruthy();
+    expect(within(bible).queryByText("Find Help")).toBeNull();
+    expect(within(screen.getByRole("link", { name: /Can I trust the church/ })).getByText("Guide")).toBeTruthy();
+    // The resurrection, Jesus and God each have a card by name, on the answer's own page.
+    expect(screen.getByRole("link", { name: "Did the resurrection actually happen?" }).getAttribute("href")).toBe("/answers/did-the-resurrection-actually-happen");
+    expect(screen.getByRole("link", { name: "Was Jesus just a good teacher?" }).getAttribute("href")).toBe("/answers/was-jesus-just-a-good-teacher");
+    expect(screen.getByRole("link", { name: "Does God actually exist?" }).getAttribute("href")).toBe("/answers/does-god-actually-exist");
+    // Every row of the index is on the door, or held by the page that already answers it.
+    for (const row of INDEX.rows) {
+      if (row.href === "/answers" || row.href === "/answers#is-jesus-the-only-way" || row.standIn) continue;
+      expect(screen.getAllByRole("link", { name: new RegExp(row.askedAs.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").slice(0, 30)) }).length).toBeGreaterThan(0);
+    }
   });
 
-  it("opens the stand-in while a row's essay is not public, and puts Test the Case on the Honest Answers row", async () => {
-    hold(SLAVERY);
-    serve();
-    renderAt("/topics");
-    const list = await screen.findByRole("list", { name: "Questions" });
-    const slavery = within(list).getByRole("link", { name: /Sunday mornings/ });
-    expect(slavery.getAttribute("href")).toBe("/answers#why-didnt-the-bible-just-ban-slavery");
-    expect(within(slavery).getByText("Honest answers")).toBeTruthy();
-    const trueRow = within(list).getByRole("link", { name: /Is Christianity actually true/ }).closest("li")!;
-    expect(within(trueRow).getByRole("link", { name: /Test the Case/ }).getAttribute("href")).toBe("/tools/test-the-case");
-  });
-
-  it("opens the essay itself once it is public", async () => {
+  it("opens the essay once it is public, and leaves the row to its answer while it is not", async () => {
     publish(SLAVERY);
     serve();
     renderAt("/topics");
-    const list = await screen.findByRole("list", { name: "Questions" });
-    const slavery = within(list).getByRole("link", { name: /Sunday mornings/ });
+    await screen.findByRole("link", { name: /What is Christian nationalism/ });
+    openAll();
+    const slavery = screen.getByRole("link", { name: /Sunday mornings/ });
     expect(slavery.getAttribute("href")).toBe(`/writing/${SLAVERY}`);
     expect(within(slavery).getByText("Essay")).toBeTruthy();
+  });
+
+  it("answers a question typed in a person's own words, with next steps", async () => {
+    serve();
+    renderAt("/topics");
+    fireEvent.change(screen.getByRole("searchbox", { name: "Ask a hard question" }), { target: { value: "did jesus really rise from the dead" } });
+    const best = screen.getByText("The closest answer").closest(".qa-best") as HTMLElement;
+    expect(within(best).getByRole("link", { name: "Did the resurrection actually happen?" }).getAttribute("href")).toBe("/answers/did-the-resurrection-actually-happen");
+    expect(within(best).getByRole("link", { name: /Test the Case/ }).getAttribute("href")).toMatch(/^\/tools\/test-the-case\?case=/);
+  });
+
+  it("says plainly when nothing fits, and brings the help lines first when words call for a person", async () => {
+    serve();
+    renderAt("/topics");
+    const box = screen.getByRole("searchbox", { name: "Ask a hard question" });
+    fireEvent.change(box, { target: { value: "zzqx flurb" } });
+    expect(screen.getByText("Nothing here answers that yet.")).toBeTruthy();
+    fireEvent.change(box, { target: { value: "I want to end my life" } });
+    expect(screen.getByRole("note", { name: "Where to find help now" })).toBeTruthy();
   });
 
   it("says so, with a retry, when the list does not arrive", async () => {

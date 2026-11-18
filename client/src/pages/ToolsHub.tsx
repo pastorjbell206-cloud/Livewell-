@@ -1,329 +1,32 @@
+/**
+ * /tools: the Tools door, "Tools and resources", built the way a door's page
+ * is built (components/art/README.md, "How a door's page is built";
+ * pages/Study.tsx is the model).
+ *
+ * 1. PageHead at the door size, with the Tools door's plate.
+ * 2. The one thing to do first: a find box, on a charcoal band, that narrows
+ *    the tiles as you type by what a person wants to do, and says so when
+ *    nothing matches. Under it, the four groups, one tap each.
+ * 3. The groups of James's map (docs/work/elite/PROJECT-PROMPT.md): Study,
+ *    Tools for hard questions, Check yourself, Pray and practise. Every tool
+ *    once, under its one name, from lib/toolsList.ts. Each group is linkable:
+ *    /tools#study, /tools#hard-questions, /tools#check-yourself,
+ *    /tools#pray-and-practise (the older hashes are followed too).
+ * 4. Leading on: eight-week plans for a hard season, the study guides for
+ *    groups and churches, and the downloads, as picture cards; then one line
+ *    pointing families to the family page.
+ */
+import { lazy, Suspense } from "react";
+
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { Link } from "wouter";
-import { BookOpen, Heart, Users, Search, HeartHandshake, DollarSign, Baby, Brain, BookMarked, MessageCircle, Shield, Target, Church, PenLine, CalendarDays } from "lucide-react";
-import { useFavorites } from "@/hooks/useFavorites";
-import { useMemo, useState } from "react";
-import { useLibrary } from "@/lib/library";
-import { hasWordStarts, queryWords } from "@/lib/siteSearch";
+import PageHead from "@/components/art/PageHead";
+import "./home/home.css";
 
-export const TOOLS = [
-  {
-    title: "Test the Case for Christianity",
-    description: "The case for the resurrection, worked one move at a time. At every step you can push back with the objection you hold and see the answer, including what the argument does not prove. Nobody asks you for a decision at the end.",
-    href: "/tools/test-the-case",
-    icon: Shield,
-    color: "var(--mustard)",
-  },
-  {
-    title: "What Shapes the Way You Read the Bible? A Self-Check",
-    description: "Thirteen choices that show which of five lenses does your thinking before you do: the flag, the cause, the highlighter, the rearview, the marketplace. There's no score at the end. You get the name of the lens it found and the reading that takes it apart.",
-    href: "/tools/which-lens",
-    icon: Search,
-    color: "var(--mustard)",
-  },
-  {
-    title: "Book-by-Book Bible Study: 20 Books in Depth",
-    description: "Twenty books of the Bible in plain language, each with six layers of analysis: text, historical context, literary structure, scholarly views, modern application, and deeper resources.",
-    href: "/tools/deep-bible",
-    icon: Search,
-    color: "var(--ink)",
-  },
-  {
-    title: "Theology Quiz",
-    description: "Ten questions across doctrine, church history, and the biblical storyline. About four minutes. Find out where your foundations are solid and where the gaps are.",
-    href: "/tools/theology-quiz",
-    icon: Brain,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Where Are You With God? A Self-Check",
-    description: "Eight questions across four areas about where you are with God right now, without the church answer. It ends with a reading of your season and where to start.",
-    href: "/diagnostic",
-    icon: Search,
-    color: "var(--ink)",
-  },
-    {
-    title: "The Whole-Life Assessment",
-    description: "Thirty statements across the inner life, the body, relationships, work and money, and the world. It maps where life is flourishing and gives you a rule of life for the season. It's scored on this device, and nothing is sent.",
-    href: "/life/assessment",
-    icon: Heart,
-    color: "var(--goldlt)",
-  },
-    {
-    title: "Proverbs and Ecclesiastes: A Guide to Biblical Wisdom",
-    description: "Where to start with Scripture's wisdom for the situations no rule covers: the deep Proverbs and Ecclesiastes guide, a topical map for money, words, work, anger, marriage, and more, and a month in Proverbs.",
-    href: "/wisdom",
-    icon: BookMarked,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "What Does the Bible Say About What I Am Facing?",
-    description: "Type in what you are struggling with, and find what the Bible says about it: the verses, the cultural world they were written in, how the church has understood them across history, and the practical application to your life now.",
-    href: "/tools/wisdom-finder",
-    icon: Search,
-    color: "var(--ink2)",
-  },
-  {
-    title: "Build a Weekly Rhythm of Prayer and Rest (a Rule of Life)",
-    description: "A rule of life is a trellis, something to grow along. Choose practices across prayer, Scripture, rest, community, mission, and the body, and settle on a pattern you can keep on an ordinary week. Your rule stays on this device.",
-    href: "/tools/rule-of-life",
-    icon: Target,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "What the Bible Says About Money, Anger, Work and More",
-    description: "A topical guide to Scripture for ordinary life: money, the tongue, anger, anxiety, work, marriage, friendship, suffering, forgiveness, and more, with the heart of each passage worth knowing by heart.",
-    href: "/tools/bible-on",
-    icon: BookOpen,
-    color: "var(--ink)",
-  },
-  {
-    title: "Proverbs in 31 Days",
-    description: "A chapter of Proverbs a day, matched to the date, the way the church has read it for centuries. Each day has a theme, a verse or two worth knowing by heart, and a reflection that ties the chapter to a decision you might face. A daily reminder can go in your own calendar.",
-    href: "/tools/proverbs-31",
-    icon: BookMarked,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Bible Background: The World the Bible Was Written In",
-    description: "Background guides to the Ancient Near Eastern, Second Temple Jewish, and Greco-Roman worlds of the Bible, and how to read Scripture apart from American politics.",
-    href: "/resources/context",
-    icon: BookOpen,
-    color: "var(--ink)",
-  },
-  {
-    title: "Read Any Bible Verse in Context",
-    description: "Enter any Bible reference and read it in context: the passage with room around it, who wrote it and why, its genre, the flow of the argument, cross-references, and the questions to ask of any text. The passage is the World English Bible.",
-    href: "/theology/passage",
-    icon: BookMarked,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Bible Verse Finder",
-    description: "Search Scripture by what you are carrying: anxiety, grief, courage, marriage, and more. Each search returns the passages themselves, with the reference, so you can read them in context, copy them, and keep the ones you need.",
-    href: "/tools/verse-finder",
-    icon: BookOpen,
-    color: "var(--ink2)",
-  },
-  {
-    title: "The Worry Journal",
-    description: "Five minutes before bed: name the worry, write the one thing that is yours to do tomorrow, hand the rest to God, and later see how your worries turned out. Private to your browser, with a printable version.",
-    href: "/tools/worry-journal",
-    icon: PenLine,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "The Parent and Teen Conversation",
-    description: "A parent and a teenager each answer twelve short statements about home on their own, swap codes, and see where they see things differently, with questions to ask each other there. Nothing is stored or sent.",
-    href: "/tools/parent-teen-conversation",
-    icon: MessageCircle,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "The Prayer Planner",
-    description: "Write down the people and needs you mean to pray for, give each a day, and each day see that day's names. Mark answered prayers and keep a dated record of them. Private to your browser.",
-    href: "/tools/prayer-planner",
-    icon: CalendarDays,
-    color: "var(--ink)",
-  },
-  {
-    title: "A Plan for When You Feel Alone",
-    description: "For when you feel alone: name up to five people, choose one small step toward each this week, keep one place where the same faces gather, and check off what happened. Private to your browser.",
-    href: "/tools/connection-planner",
-    icon: HeartHandshake,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Prayers for When You Have No Words",
-    description: "Words for when you don't have your own. Choose the hour or the need, morning, evening, strength, guidance, gratitude, and get a written prayer to pray as it is, or copy and make your own.",
-    href: "/tools/prayer-generator",
-    icon: Heart,
-    color: "var(--ink)",
-  },
-  {
-    title: "Family Devotion Builder",
-    description: "Build a fifteen-minute family devotion for tonight. Pick your kids' age group and a theme, and get a complete devotion with Scripture, teaching, activity, and prayer.",
-    href: "/tools/family-devotions",
-    icon: Users,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "How to Study a Book of the Bible: 12 Books",
-    description: "Study any book of the Bible with theological depth. Key themes, study questions, and reading strategies for 12 essential books.",
-    href: "/tools/bible-study",
-    icon: Search,
-    color: "var(--ink)",
-  },
-  {
-    title: "Marriage Health Self-Check",
-    description: "Fifteen questions across communication, intimacy, trust, shared vision, and conflict, and what to do about what you find.",
-    href: "/tools/marriage-assessment",
-    icon: HeartHandshake,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Financial Health Self-Check",
-    description: "Twelve questions across generosity, contentment, stewardship, and family provision, and what your answers say about who you believe owns what you have.",
-    href: "/tools/financial-health",
-    icon: DollarSign,
-    color: "var(--ink2)",
-  },
-  {
-    title: "Parenting Stage Guide",
-    description: "Age-specific guidance from toddlers to young adults. What your child needs, how to talk about God, common mistakes, and one practice to start this week.",
-    href: "/tools/parenting-guide",
-    icon: Baby,
-    color: "var(--ink)",
-  },
-  {
-    title: "Parenting Bible Verses",
-    description: "Scripture for fear, anger, identity, obedience, screens, and doubt, each with a short note for the parent.",
-    href: "/tools/parenting-verses",
-    icon: Baby,
-    color: "var(--ink)",
-  },
-  {
-    title: "Emotional Health Self-Check",
-    description: "Fifteen questions across self-awareness, boundaries, grief, forgiveness, and rest, and where Scripture meets each one.",
-    href: "/tools/emotional-health",
-    icon: Brain,
-    color: "var(--goldlt)",
-  },
-  {
-    title: "Spiritual Gifts Self-Check",
-    description: "Thirty-two statements about what you've done, across eight gifts Scripture names, from teaching and mercy to hospitality and sharing the faith. It ranks no gift above another, and it sets out both views on the miraculous gifts without taking a side.",
-    href: "/tools/spiritual-gifts",
-    icon: Users,
-    color: "var(--ink)",
-  },
-    {
-    title: "Memorize Scripture: 40 Key Verses",
-    description: "Memorize 40 key verses across 8 categories. First-letter mode, fill-in-the-blank, and full recall practice with progress tracking.",
-    href: "/tools/scripture-memory",
-    icon: BookMarked,
-    color: "var(--ink)",
-  },
-  {
-    title: "Conflict Resolution Guide",
-    description: "A 5-step guided process for 8 common conflict types. Name what happened, name what you feel, agree on one next step.",
-    href: "/tools/conflict-guide",
-    icon: MessageCircle,
-    color: "var(--goldlt)",
-  },
-    {
-    title: "A Quick Check on Eight Areas of Life",
-    description: "24 questions across 8 life areas: spiritual, marriage, parenting, physical, financial, emotional, vocational, community. It names what is strong and what is slipping.",
-    href: "/tools/life-audit",
-    icon: Target,
-    color: "var(--goldlt)",
-  },
-    {
-    title: "Misused Bible Verses: What They Actually Mean",
-    description: "The passages we quote most and read least: what each one says in context, how it gets misused, and the fuller teaching underneath.",
-    href: "/tools/bible-says",
-    icon: BookOpen,
-    color: "var(--ink)",
-  },
-  {
-    title: "Quotes From the Essays and Books",
-    description: "Four hundred lines and counting from the essays and books, filed by conviction, comfort, challenge, history, and wisdom. Each is tied to the piece it came from, so you can copy it, share it, or go read the whole thing.",
-    href: "/tools/quotes",
-    icon: MessageCircle,
-    color: "var(--ink2)",
-  },
-  {
-    title: "Theology Glossary",
-    description: "The words the church uses (justification, atonement, sanctification and the rest), defined plainly and searchable.",
-    href: "/tools/glossary",
-    icon: BookMarked,
-    color: "var(--ink)",
-  },
-  {
-    title: "Do You Hold Both Sides to the Same Standard? A Self-Check",
-    description: "A self-examination of whether you defend truth selectively, with one standard for your own side and another for your opponents. It's meant for looking at yourself, so please don't use it to score anyone else.",
-    href: "/disruption/consistency",
-    icon: Shield,
-    color: "var(--ink)",
-  },
-  {
-    title: "How Close Is Each Party to the Bible?",
-    description: "How close is each party to the Bible, theme by theme? A tally that lands where the evidence puts it, whichever side that disappoints. The test is whether you can name where your own side falls short.",
-    href: "/nation/scorecard",
-    icon: Target,
-    color: "var(--ink2)",
-  },
-  {
-    title: "What Would a Biblical Government Look Like?",
-    description: "The Year of Jubilee, gleaning, the warning against kings: what Scripture's own economic principles might look like as policy, and why both parties would hate the result.",
-    href: "/nation/policy",
-    icon: Church,
-    color: "var(--ink)",
-  },
-];
-
-/** Display groups for the hub, ordered by need. Every TOOLS href appears exactly once. */
-export const TOOL_GROUPS = [
-  { title: "Self-checks", tools: TOOLS.filter((t) => ["/diagnostic","/tools/life-audit","/tools/emotional-health","/tools/spiritual-gifts","/life/assessment"].includes(t.href)) },
-  { title: "Scripture and theology", tools: TOOLS.filter((t) => ["/tools/deep-bible","/tools/bible-study","/resources/context","/theology/passage","/tools/verse-finder","/tools/bible-says","/tools/bible-on","/tools/theology-quiz","/tools/glossary","/tools/test-the-case","/tools/which-lens","/tools/scripture-memory"].includes(t.href)) },
-  { title: "Help for a decision or a hard day", tools: TOOLS.filter((t) => ["/wisdom","/tools/wisdom-finder","/tools/proverbs-31","/tools/quotes","/tools/conflict-guide","/tools/worry-journal","/tools/prayer-planner","/tools/connection-planner","/tools/prayer-generator"].includes(t.href)) },
-  { title: "Family, marriage, and the household", tools: TOOLS.filter((t) => ["/tools/family-devotions","/tools/marriage-assessment","/tools/parenting-guide","/tools/parent-teen-conversation","/tools/parenting-verses","/tools/financial-health","/tools/rule-of-life"].includes(t.href)) },
-  { title: "Faith and politics", tools: TOOLS.filter((t) => ["/disruption/consistency","/nation/scorecard","/nation/policy"].includes(t.href)) },
-];
-
-
-/** Tiles that open something to read say "Read"; the rest are tools you work, and say "Start". */
-const READING_PAGES = new Set(["/wisdom", "/resources/context", "/tools/quotes", "/tools/glossary", "/tools/bible-study", "/tools/deep-bible", "/tools/bible-says", "/tools/bible-on", "/tools/parenting-guide", "/tools/parenting-verses", "/tools/proverbs-31"]);
-
-const slug = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-
-/** A tool matches when every word of the query is in its name or description. */
-function toolMatches(tool: (typeof TOOLS)[number], q: string): boolean {
-  const words = queryWords(q);
-  return words.length > 0 && hasWordStarts(`${tool.title} ${tool.description}`, words);
-}
-
-function ToolCard({ tool }: { tool: (typeof TOOLS)[number] }) {
-  const Icon = tool.icon;
-  return (
-    <Link
-      href={tool.href}
-      className="tool-card"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: "clamp(18px, 3vw, 28px)",
-        background: "var(--card)",
-        borderRadius: "var(--radius-sm)",
-        border: "1px solid var(--border)",
-        borderLeft: `4px solid ${tool.color}`,
-        textDecoration: "none",
-        minHeight: "100%",
-      }}
-    >
-      <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-        <Icon size={24} aria-hidden style={{ color: tool.color, flexShrink: 0 }} />
-        <h3 style={{ fontSize: "21px", fontWeight: 500, fontFamily: "var(--F)", color: "var(--ink)", lineHeight: 1.2, margin: 0 }}>{tool.title}</h3>
-      </div>
-      <p className="tool-card-dek" style={{ fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", fontFamily: "var(--B)", margin: 0 }}>
-        {tool.description}
-      </p>
-      <div style={{ marginTop: "auto", paddingTop: "14px", fontSize: "14px", fontWeight: 600, color: "var(--mustard-text)", fontFamily: "var(--U)" }}>
-        {READING_PAGES.has(tool.href) ? "Read" : "Start"} <span aria-hidden>→</span>
-      </div>
-    </Link>
-  );
-}
+/** Everything below the page top, as its own chunk (pages/ToolsBody.tsx). */
+const ToolsBody = lazy(() => import("./ToolsBody"));
 
 export default function ToolsHub() {
-  const verses = useFavorites("livewell-saved-verses");
-  const prayers = useFavorites("livewell-saved-prayers");
-  const totalSaved = verses.favorites.length + prayers.favorites.length;
-  const saved = useLibrary();
-  const [query, setQuery] = useState("");
-  const found = useMemo(() => (query.trim() ? TOOLS.filter((t) => toolMatches(t, query)) : []), [query]);
-  const searching = query.trim().length > 0;
-
   return (
     <Layout>
       <SEOMeta
@@ -338,100 +41,24 @@ export default function ToolsHub() {
           url: "https://www.livewellbyjamesbell.co/tools",
         }}
       />
-      <style>{`
-        .tool-card:hover, .tool-card:focus-visible { border-color: var(--mustard); }
-        @media (max-width: 640px) {
-          .tool-card-dek { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-        }
-      `}</style>
 
-      {/* Hero */}
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--gutter) var(--s-5)", textAlign: "center" }}>
-        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.2em", color: "var(--mustard)", fontFamily: "var(--U)", marginBottom: "16px" }}>
-            FREE TOOLS
-          </div>
-          <h1 style={{ fontSize: "var(--fs-h1)", fontWeight: 400, fontFamily: "var(--F)", lineHeight: 1.15, marginBottom: "16px" }}>
-            Free tools for Bible study, prayer, and family life
-          </h1>
-          <p className="page-standfirst" style={{ marginInline: "auto" }}>Tools you can use this week.</p>
-          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "var(--charcoal-fg-muted)", fontFamily: "var(--B)", margin: "0 0 var(--s-4)" }}>
-            Built for marriages, households, and anyone who wants to practice the faith in an ordinary week. Every one is free and works on your phone, and the journals and planners keep what you write on your own device.
-          </p>
-          <label htmlFor="tool-find" style={{ display: "block", fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--charcoal-fg)", marginBottom: "8px", textAlign: "left" }}>
+      <PageHead
+        size="door"
+        door="Tools"
+        title="Tools and resources"
+        line="Every tool on LiveWell, free, and each one works on a phone."
+        plate="compass"
+        action={
+          <a href="#tl-find" className="btn">
             Find a tool
-          </label>
-          <input
-            id="tool-find"
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Try: prayer, worry, marriage"
-            autoComplete="off"
-            style={{ width: "100%", minHeight: "52px", padding: "12px 16px", fontSize: "17px", fontFamily: "var(--B)", borderRadius: "var(--radius-sm)", border: "1px solid var(--charcoal-line)", background: "var(--charcoal-fg)", color: "var(--charcoal)" }}
-          />
-        </div>
-      </section>
+          </a>
+        }
+      />
 
-      <section style={{ padding: "var(--s-5) var(--gutter) var(--s-6)", background: "var(--bone)" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <Link href="/my-library" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", minHeight: "52px", padding: "12px 16px", marginBottom: "var(--s-5)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600 }}>
-            <span>My Library{saved.length ? ` (${saved.length} saved)` : ""}: what you've saved and started, on this device</span>
-            <span aria-hidden style={{ color: "var(--mustard-text)" }}>→</span>
-          </Link>
-
-          {/* Always on the page, so a screen reader hears each new count. */}
-          <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", margin: searching ? "0 0 var(--s-3)" : 0 }}>
-            {searching ? (found.length ? `${found.length} ${found.length === 1 ? "tool matches" : "tools match"} "${query.trim()}"` : `No tool matches "${query.trim()}".`) : ""}
-          </p>
-          {searching ? (
-            <div>
-              {found.length ? (
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
-                  {found.map((tool) => <ToolCard key={tool.href} tool={tool} />)}
-                </div>
-              ) : (
-                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>
-                  Try another word, <Link href={`/search?q=${encodeURIComponent(query.trim())}`} style={{ color: "var(--mustard-text)", fontWeight: 600 }}>search the whole site</Link>, or start at <Link href="/help" style={{ color: "var(--mustard-text)", fontWeight: 600 }}>Find Help</Link> with what you're facing.
-                </p>
-              )}
-            </div>
-          ) : (
-            <>
-              {/* Jump to a group: on a phone the list is long, so the groups are one tap away. */}
-              <nav aria-label="Tool groups" style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "var(--s-5)" }}>
-                {TOOL_GROUPS.map((g) => (
-                  <a key={g.title} href={`#${slug(g.title)}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "8px 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-pill)", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
-                    {g.title} <span style={{ color: "var(--ink-muted)", fontWeight: 500, marginLeft: "6px" }}>{g.tools.length}</span>
-                  </a>
-                ))}
-              </nav>
-              {/* Tools, in the order a person actually needs them: an honest reading
-                  first, then the Word, then wisdom for the situation, then the
-                  household, then the public square. Grouping lives in TOOL_GROUPS. */}
-              {TOOL_GROUPS.map((group) => (
-                <div key={group.title} id={slug(group.title)} style={{ marginBottom: "var(--s-6)", scrollMarginTop: "80px" }}>
-                  <h2 className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "6px" }}>{group.title}</h2>
-                  <div style={{ width: "40px", height: "1px", background: "var(--mustard)", marginBottom: "18px" }} />
-                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))", gap: "16px" }}>
-                    {group.tools.map((tool) => <ToolCard key={tool.href} tool={tool} />)}
-                  </div>
-                </div>
-              ))}
-            </>
-          )}
-
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px 24px", justifyContent: "center", marginTop: "var(--s-4)" }}>
-            <Link href="/my-library" style={{ fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--mustard-text)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
-              My Library
-            </Link>
-            <Link href="/tools/saved" style={{ fontSize: "14px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--mustard-text)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
-              {totalSaved > 0 ? `Saved verses and prayers (${totalSaved})` : "Saved verses and prayers"}
-            </Link>
-          </div>
-        </div>
-      </section>
-
+      {/* The band holds the find box's place until the list arrives. */}
+      <Suspense fallback={<div className="home-sec home-sec--dark tl-find-band tl-hold" aria-hidden="true" />}>
+        <ToolsBody />
+      </Suspense>
     </Layout>
   );
 }

@@ -25,7 +25,7 @@ import FollowJames from "@/components/FollowJames";
 import { SITE_URL } from "@/lib/site";
 import { trpc } from "@/lib/trpc";
 import { essayDate, isPublicEssay } from "@/lib/shelf";
-import { TOOLS } from "@/pages/ToolsHub";
+import { TOOLS } from "@/lib/toolsList";
 import {
   buildIndex,
   fetchCatalogue,
@@ -44,9 +44,8 @@ const PAGE = 40;
 
 const TOOL_ITEMS: CatalogueItem[] = TOOLS.map((t) => ({
   kind: "Tool",
-  title: t.title,
-  // Drop the "Part of the … section." tail some descriptions carry.
-  summary: t.description.replace(/\s*Part of [^.]*\.\s*$/i, "").trim(),
+  title: t.name,
+  summary: t.job,
   href: t.href,
 }));
 

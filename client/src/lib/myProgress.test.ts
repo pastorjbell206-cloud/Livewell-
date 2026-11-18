@@ -54,7 +54,7 @@ describe("continueHere", () => {
 
   it("offers a self-check left part-way, and not one whose result came after its last save", () => {
     localStorage.setItem("livewell-progress-life-audit", draft("2026-10-20T12:00:00.000Z"));
-    expect(continueHere()).toEqual({ href: "/tools/life-audit", label: "the Life Audit", when: "2026-10-20T12:00:00.000Z" });
+    expect(continueHere()).toEqual({ href: "/tools/life-audit", label: "a Quick Check on Eight Areas of Life", when: "2026-10-20T12:00:00.000Z" });
     localStorage.setItem("livewell-history-life-audit", runs("2026-10-20T12:00:00.000Z"));
     expect(continueHere()).toBeNull();
     // Answers changed after that result: part-way again.

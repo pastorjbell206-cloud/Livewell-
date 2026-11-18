@@ -111,13 +111,14 @@ const MAIN_PAGES = [
   { title: "Creeds and confessions", href: "/resources/creeds", blurb: "The creeds and confessions of the church, with where each came from.", keywords: "apostles creed nicene creed confession of faith" },
   { title: "The Bible in its context", href: "/resources/context", blurb: "Guides to the world each part of the Bible was written in.", keywords: "background culture history context guides" },
   { title: "Study guides for groups", href: "/studyguides", blurb: "Bible studies to work through with a group, a class, or on your own.", keywords: "small group bible study sunday school class discussion" },
+  { title: "Everything on LiveWell", href: "/explore", blurb: "Every door, room and tool on LiveWell, on one page.", keywords: "everything site map all pages index directory list what is on this site" },
   { title: "New to faith? Start here", href: "/start", blurb: "Where to begin if you are new to the faith or coming back to it.", keywords: "start here new christian beginner begin discipleship first steps coming back where to start" },
   { title: "Topics: the hard questions", href: "/topics", blurb: "The hard questions of faith, each with the answers, plans and tools that go with it.", keywords: "topics questions subjects issues" },
   { title: "Honest Answers", href: "/answers", blurb: "Short, direct answers to the questions people ask about the Christian faith.", keywords: "questions answers faq doubt objections apologetics" },
   { title: "What the Bible says", href: "/wisdom", blurb: "What Scripture says about the things people face, one subject to a page.", keywords: "bible verses about topics what does the bible say" },
   { title: "Eight-week plans", href: "/plans", blurb: "Plans that take one need a week at a time for eight weeks.", keywords: "plan plans weekly 8 week" },
-  { title: "Self-checks", href: "/assessments", blurb: "Every self-check on the site in one place.", keywords: "assessment assessments quiz test inventory" },
-  { title: "Tools", href: "/tools", blurb: "Every tool on the site, in one list.", keywords: "tools planners builders generators" },
+  { title: "Self-checks", href: "/assessments", blurb: "Every self-check on the site in one place.", keywords: "assessment assessments quiz test inventory self-checks self checks" },
+  { title: "Tools and resources", href: "/tools", blurb: "Every tool on the site, in one list.", keywords: "tools planners builders generators" },
   { title: "How-to guides", href: "/how-tos", blurb: "Step-by-step guides for the practices of the Christian life.", keywords: "how to guide guides practical steps" },
   { title: "Downloads and PDFs", href: "/downloads", blurb: "Everything on the site that can be printed or saved.", keywords: "download pdf print printable booklet" },
   { title: "All resources", href: "/resources", blurb: "Everything to use, on one page.", keywords: "resources library everything" },
@@ -137,8 +138,21 @@ const MAIN_PAGES = [
   { title: "My Library", href: "/my-library", blurb: "What you have saved and started, kept on this device.", keywords: "saved bookmarks my library progress continue" },
 ];
 
+/**
+ * Every tool's one name, by address, read as text from client/src/lib/toolsList.ts
+ * (each entry keeps id, name, ... href on their own lines). A main page that
+ * is a tool is indexed under the tool's name, so search and the tools page agree.
+ */
+export function toolNames() {
+  const src = fs.readFileSync(path.join(ROOT, "client/src/lib/toolsList.ts"), "utf8");
+  const names = new Map();
+  for (const m of src.matchAll(/\{\s*id: "[^"]+",\s*name: "([^"]+)",[\s\S]*?href: "([^"]+)",/g)) names.set(m[2], m[1]);
+  return names;
+}
+
 function mainPages() {
-  return MAIN_PAGES.map((p) => ({ ...p }));
+  const names = toolNames();
+  return MAIN_PAGES.map((p) => ({ ...p, title: names.get(p.href) ?? p.title }));
 }
 
 /** The Study Bible beyond its chapters: each book's introduction, the reading guides, the acts of the story. */

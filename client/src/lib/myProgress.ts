@@ -10,6 +10,7 @@
 import { isArrayOf, readStoredJSON } from "@/lib/storage";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
 import { PLAN_PATH, readPlanDays, readerPlace } from "@/lib/storyPlan";
+import { toolById } from "@/lib/toolsList";
 
 export interface ProgressRow {
   href: string;
@@ -22,14 +23,23 @@ export interface ProgressRow {
   when: string;
 }
 
-/** The self-checks that keep a history (components/SelfCheckHistory, key livewell-history-<id>). */
+/** A tool's row: where it opens, under its one name (lib/toolsList.ts). */
+const tool = (id: string) => {
+  const t = toolById(id);
+  return { title: t.name, href: t.href };
+};
+
+/**
+ * The self-checks that keep a history (components/SelfCheckHistory, key
+ * livewell-history-<id>), by that id, each under its one name.
+ */
 export const SELF_CHECKS: Record<string, { title: string; href: string }> = {
-  diagnostic: { title: "Where Are You With God? A Self-Check", href: "/diagnostic" },
-  "life-audit": { title: "Life Audit", href: "/tools/life-audit" },
-  "emotional-health": { title: "Emotional Health Self-Check", href: "/tools/emotional-health" },
-  "spiritual-gifts": { title: "Spiritual Gifts Self-Check", href: "/tools/spiritual-gifts" },
-  marriage: { title: "Marriage Health Self-Check", href: "/tools/marriage-assessment" },
-  "financial-health": { title: "Financial Health Check", href: "/tools/financial-health" },
+  diagnostic: tool("diagnostic"),
+  "life-audit": tool("life-audit"),
+  "emotional-health": tool("emotional-health"),
+  "spiritual-gifts": tool("spiritual-gifts"),
+  marriage: tool("marriage"),
+  "financial-health": tool("financial-health"),
 };
 
 const isString = (x: unknown): x is string => typeof x === "string";
@@ -38,6 +48,16 @@ const isRuns = isArrayOf((x): x is { date: string } => isObject(x) && typeof x.d
 const isPlanProgress = (x: unknown): x is { startedAt: string; done: Record<string, unknown> } =>
   isObject(x) && typeof x.startedAt === "string" && isObject(x.done);
 const isList = (x: unknown): x is unknown[] => Array.isArray(x);
+const str = (x: unknown) => (typeof x === "string" ? x : "");
+
+/** The Whole-Life check's results screen: its five areas come first (pages/life/WholeLifeAssessment). */
+const WHOLE_LIFE_RESULTS_SCREEN = 5;
+const isWholeLifeDraft = (x: unknown): x is { answers: Record<string, unknown>; screen: number; savedAt: string } =>
+  isObject(x) && isObject(x.answers) && typeof x.screen === "number" && typeof x.savedAt === "string";
+const isDeepBible = (x: unknown): x is { v: 1; notes?: Record<string, unknown>; marks?: Record<string, unknown>; touched?: Record<string, unknown> } =>
+  isObject(x) && x.v === 1;
+const isDevotionSeries = (x: unknown): x is { v: 1; series: { created?: unknown; weeks: unknown[] } } =>
+  isObject(x) && x.v === 1 && isObject(x.series) && Array.isArray(x.series.weeks);
 const hasList = (field: string) => (x: unknown): x is Record<string, unknown[]> => isObject(x) && Array.isArray(x[field]);
 
 function storageKeys(): string[] {
@@ -100,17 +120,49 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
 
   // The companion tools and Scripture memory, each with its own key.
   const worries = readStoredJSON("livewell-worry-journal", isList, []);
-  if (worries.length) rows.push({ href: "/tools/worry-journal", title: "The Worry Journal", kind: "Tool", detail: plural(worries.length, "entry", "entries"), when: "" });
+  if (worries.length) rows.push({ ...tool("worry-journal"), kind: "Tool", detail: plural(worries.length, "entry", "entries"), when: "" });
   const prayer = readStoredJSON("livewell-prayer-planner", hasList("items"), { items: [] });
-  if (prayer.items.length) rows.push({ href: "/tools/prayer-planner", title: "The Prayer Planner", kind: "Tool", detail: `${plural(prayer.items.length, "person or need", "people and needs")} you pray for`, when: "" });
+  if (prayer.items.length) rows.push({ ...tool("prayer-planner"), kind: "Tool", detail: `${plural(prayer.items.length, "person or need", "people and needs")} you pray for`, when: "" });
   const connection = readStoredJSON("livewell-connection-planner", hasList("people"), { people: [] });
-  if (connection.people.length) rows.push({ href: "/tools/connection-planner", title: "The Connection Planner", kind: "Tool", detail: `${plural(connection.people.length, "person", "people")} you're reaching toward`, when: "" });
+  if (connection.people.length) rows.push({ ...tool("connection-planner"), kind: "Tool", detail: `${plural(connection.people.length, "person", "people")} you're reaching toward`, when: "" });
   const memorized = readStoredJSON("livewell-scripture-memorized", isList, []);
-  if (memorized.length) rows.push({ href: "/tools/scripture-memory", title: "Scripture Memory System", kind: "Tool", detail: `${plural(memorized.length, "verse")} memorized`, when: "" });
+  if (memorized.length) rows.push({ ...tool("scripture-memory"), kind: "Tool", detail: `${plural(memorized.length, "verse")} memorized`, when: "" });
+
+  // The four the library could not see before (TOOLS-PLAN unit 22).
+  // A Whole-Life check left part-way (pages/life/WholeLifeAssessment).
+  const whole = readStoredJSON("livewell-progress-whole-life", isWholeLifeDraft, null);
+  if (whole && Object.keys(whole.answers).length > 0 && whole.screen >= 0 && whole.screen < WHOLE_LIFE_RESULTS_SCREEN) {
+    rows.push({ ...tool("whole-life"), kind: "Self-check", detail: `${plural(Object.keys(whole.answers).length, "statement")} answered so far`, when: whole.savedAt });
+  }
+  // Notes and marks in the book-by-book study (pages/tools/DeepBibleCompanion, key lw-deep-bible).
+  const deep = readStoredJSON("lw-deep-bible", isDeepBible, null);
+  if (deep) {
+    const notes = Object.values(deep.notes ?? {}).reduce<number>((n, qs) => n + (isObject(qs) ? Object.keys(qs).length : 0), 0);
+    const marks = Object.values(deep.marks ?? {}).reduce<number>((n, list) => n + (Array.isArray(list) ? list.length : 0), 0);
+    const touched = Object.values(deep.touched ?? {}).filter(isString).sort().pop() ?? "";
+    if (notes || marks) {
+      const parts = [notes ? plural(notes, "note") : "", marks ? plural(marks, "layer", "layers") + " marked" : ""].filter(Boolean);
+      rows.push({ ...tool("deep-bible"), kind: "Study", detail: parts.join(", "), when: touched });
+    }
+  }
+  // A family devotion series (pages/tools/FamilyDevotionBuilder, key lw-family-devotions).
+  const series = readStoredJSON("lw-family-devotions", isDevotionSeries, null);
+  if (series && series.series.weeks.length) {
+    const weeks = series.series.weeks;
+    const done = weeks.filter((w) => isObject(w) && w.done === true).length;
+    rows.push({ ...tool("family-devotions"), kind: "Family", detail: done >= weeks.length ? `All ${weeks.length} weeks done` : `${done} of ${weeks.length} weeks done`, when: str(series.series.created) });
+  }
+  // Steps passed in Test the Case (pages/tools/TestTheCase, key lw-test-the-case).
+  const cases = readStoredJSON("lw-test-the-case", isObject, {});
+  const steps = Object.entries(cases).filter(([k, v]) => v === true && !k.endsWith(":__finished")).length;
+  const finished = Object.entries(cases).filter(([k, v]) => v === true && k.endsWith(":__finished")).length;
+  if (steps || finished) {
+    rows.push({ ...tool("test-the-case"), kind: "Tool", detail: finished ? `${plural(finished, "case")} argued to the end` : `${plural(steps, "step")} passed`, when: "" });
+  }
 
   // The Study Bible (lib/bible-notes, key livewell-progress-bible).
   const chapters = readStoredJSON("livewell-progress-bible", isArrayOf(isString), []);
-  if (chapters.length) rows.push({ href: "/study/bible", title: "The Study Bible", kind: "Study", detail: `${plural(chapters.length, "chapter")} marked read`, when: "" });
+  if (chapters.length) rows.push({ ...tool("study-bible"), kind: "Study", detail: `${plural(chapters.length, "chapter")} marked read`, when: "" });
 
   // Read the whole story in 2027 (lib/storyPlan): the reader's place, never a count behind.
   const planDays = readPlanDays();
@@ -134,6 +186,11 @@ export const SELF_CHECK_DRAFTS: Record<string, string> = {
   marriage: "livewell-progress-marriage-assessment",
   "financial-health": "livewell-progress-financial-health",
 };
+
+/** A tool's name after "Continue": "the Marriage Health Self-Check", "a Quick Check on Eight Areas of Life". */
+export function continueLabel(name: string): string {
+  return /^(The|A|An) /.test(name) ? name.replace(/^\w+/, (w) => w.toLowerCase()) : `the ${name}`;
+}
 
 /** One thing to pick up again: where it opens, how to name it after "Continue", and when it was last touched. */
 export interface ContinueItem {
@@ -182,7 +239,7 @@ export function continueHere(): ContinueItem | null {
     const runs = readStoredJSON(`livewell-history-${id}`, isKeyedRuns, []);
     const last = runs[runs.length - 1];
     const finished = !!last && (last.date >= draft.savedAt || last.key === draftKey(draft));
-    if (!finished) items.push({ href: SELF_CHECKS[id].href, label: `the ${SELF_CHECKS[id].title}`, when: draft.savedAt });
+    if (!finished) items.push({ href: SELF_CHECKS[id].href, label: continueLabel(SELF_CHECKS[id].title), when: draft.savedAt });
   }
 
   return items.sort((a, b) => b.when.localeCompare(a.when))[0] ?? null;
