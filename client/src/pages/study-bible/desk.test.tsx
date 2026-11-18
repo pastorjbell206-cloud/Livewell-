@@ -92,12 +92,14 @@ describe("Study this chapter", { timeout: 20000 }, () => {
     fireEvent.click(screen.getAllByRole("button", { name: "Show an answer" })[0]);
     expect(screen.getByRole("button", { name: "Hide the answer" })).toBeTruthy();
 
-    // 7. What it asks of you: the study questions, a box, one next step.
+    // 7. What it asks of you: the study questions, a box, and the chapter's
+    // "Go deeper" list as its next steps.
     next();
     expect(stepName()).toBe("What it asks of you");
     expect(screen.getByLabelText("What I will carry with me")).toBeTruthy();
     expect(screen.getByRole("button", { name: "Finish" })).toBeTruthy();
-    expect(await screen.findByText("One next step")).toBeTruthy();
+    expect(await screen.findByText("Next steps: go deeper")).toBeTruthy();
+    expect(screen.getByRole("link", { name: /New Birth/ }).getAttribute("href")).toBe("/study/bible/doctrines/regeneration");
   });
 
   it("keeps the step reached and what was written for each chapter", () => {
@@ -121,7 +123,7 @@ describe("Study this chapter", { timeout: 20000 }, () => {
       expect(document.querySelector(".wk__body")?.textContent).not.toMatch(/undefined|null|NaN/);
       if (i < STUDY_STEPS.length - 1) next();
     }
-    expect(await screen.findByText("One next step")).toBeTruthy();
+    expect(await screen.findByText("Next steps: go deeper")).toBeTruthy();
   });
 
   it("says so in one line where a chapter has no hard question (Psalm 23)", () => {

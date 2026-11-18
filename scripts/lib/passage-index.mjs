@@ -34,8 +34,9 @@
  *               committed static library.
  *   wisdom      Wisdom topics (client/public/wisdom/topics.json): the verses
  *               the topic prints in full (verses[]).
- *   tool        The passage guide (/theology/passage): the chapters it has a
- *               guide for (bible/notes-index.json, "passages").
+ *   tool        "Read any verse in context" (/theology/passage): the chapters
+ *               it has a passage guide for
+ *               (bible/notes-index.json, "passages").
  *
  * A reference names chapters; an item is listed on each chapter its passage
  * touches, once, under the first passage it gives for that chapter. A
@@ -266,7 +267,7 @@ function passageGuides() {
     const name = `${slug === "psalms" ? "Psalm" : books.get(slug)?.name ?? slug} ${n}`;
     return {
       kind: "tool",
-      title: `The passage guide to ${name}`,
+      title: `${name} in context`,
       href: `/theology/passage?ref=${encodeURIComponent(name)}`,
       at: books.has(slug) ? [{ slug, chapter: +n, label: name }] : [],
     };

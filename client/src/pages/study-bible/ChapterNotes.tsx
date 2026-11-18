@@ -3,35 +3,33 @@
  * above the text, with links to the chapter's hard question and its study
  * questions; directly after the text, that hard question and those questions
  * in the open, where a reader who has just finished the chapter meets them;
- * then the notes in drawers: where the chapter sits in the story, its history
- * and culture, how it is built, the doctrines it teaches, its key Hebrew or
- * Greek words, how it points to Christ, LiveWell's writing on it, and the
+ * then "Go deeper", the pages on the site that treat the chapter (the passage
+ * index, loaded when near); then the notes in drawers: where the chapter sits
+ * in the story, its history and culture, how it is built, the doctrines it
+ * teaches, its key Hebrew or Greek words, how it points to Christ, and the
  * next step in the story.
  */
-import { useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { Suspense, lazy, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
-import { chapterHref, type BibleBook, type BibleChapter, type BibleVerse } from "@/lib/bible";
+import { chapterBookName, chapterHref, type BibleBook, type BibleChapter, type BibleVerse } from "@/lib/bible";
 import {
   fetchDoctrines,
-  fetchNotesIndex,
   fetchStory,
   fetchStoryline,
   flattenStory,
   hardQuestions,
-  itemsForPassage,
   readProgress,
   setRead,
-  spreadKinds,
   storyPlace,
   verseRange,
   type ChapterNote,
   type Doctrine,
   type VerseNote,
 } from "@/lib/bible-notes";
-import { buildIndex, fetchCatalogue, search, type CatalogueItem } from "@/lib/catalogue";
-import { Gloss, Prose, RelatedList, card, kicker, quietLink, useLoad } from "@/pages/study-bible/shared";
+import { Gloss, Prose, card, kicker, quietLink, useLoad } from "@/pages/study-bible/shared";
+import { useNear } from "@/components/art/useNear";
 import { VerseByVerse } from "@/pages/study-bible/VerseNotes";
 
 const HEB: CSSProperties = { fontFamily: '"SBL Hebrew", "Ezra SIL", "Taamey Frank CLM", "Times New Roman", serif', direction: "rtl" };
@@ -180,6 +178,25 @@ function ChapterQuestions({ note }: { note: ChapterNote }) {
   );
 }
 
+// "Go deeper" (components/GoDeeper.tsx) is its own chunk: its code, its CSS
+// and the chapter's piece of the passage index load only when the block
+// nears the screen. Until then a box holds its place.
+const GoDeeper = lazy(() => import("@/components/GoDeeper"));
+const goDeeperHold: CSSProperties = { minHeight: "220px" };
+
+function GoDeeperSlot({ slug, chapter, label }: { slug: string; chapter: number; label: string }) {
+  const [ref, near] = useNear<HTMLDivElement>();
+  return (
+    <div ref={ref} style={near ? undefined : goDeeperHold}>
+      {near && (
+        <Suspense fallback={<div style={goDeeperHold} />}>
+          <GoDeeper slug={slug} chapter={chapter} label={label} />
+        </Suspense>
+      )}
+    </div>
+  );
+}
+
 export function ChapterNotesBody(props: {
   books: BibleBook[];
   book: BibleBook;
@@ -204,16 +221,6 @@ export function ChapterNotesBody(props: {
   }
 
   const { data: doctrines } = useLoad<Doctrine[]>("doctrines", fetchDoctrines);
-  const { data: passages } = useLoad("notes-index", fetchNotesIndex);
-  const { data: related } = useLoad<CatalogueItem[]>(doctrines === undefined ? null : `related-${key}`, () =>
-    fetchCatalogue().then((c) => {
-      const direct = itemsForPassage(c.items, book.slug, chapter);
-      const idx = buildIndex(c.items);
-      const topical = note.doctrines.flatMap((d) => search(idx, doctrines?.find((x) => x.id === d.id)?.terms ?? d.id).results.slice(0, 4));
-      return spreadKinds([...direct, ...topical], 6);
-    })
-  );
-  const hasGuide = passages ? passages.passages.includes(key) : false;
 
   const toggleRead = () => {
     const next = !read;
@@ -235,6 +242,7 @@ export function ChapterNotesBody(props: {
   return (
     <>
     <ChapterQuestions note={note} />
+    <GoDeeperSlot slug={book.slug} chapter={chapter} label={`${chapterBookName(book)} ${chapter}`} />
     <section id="notes" aria-label={`Study notes on ${book.name} ${chapter}`} style={{ scrollMarginTop: "80px", marginTop: "var(--s-5)", maxWidth: "72ch" }}>
       <div style={{ ...kicker, marginBottom: "8px" }}>Study notes</div>
       <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(1.7rem, 3.4vw, 2.2rem)", fontWeight: 400, lineHeight: 1.15, color: "var(--ink)", margin: "0 0 var(--s-4)" }}>{book.name} {chapter}: {note.title}</h2>
@@ -338,20 +346,6 @@ export function ChapterNotesBody(props: {
           )}
         </Section>
       )}
-      {(hasGuide || (related && related.length > 0)) && (
-        <div style={{ borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)", marginTop: "4px" }}>
-          <h3 style={{ fontFamily: "var(--F)", fontSize: "1.35rem", fontWeight: 400, margin: "0 0 12px" }}>Go deeper on LiveWell</h3>
-          {hasGuide && (
-            <p style={{ margin: "0 0 14px", fontFamily: "var(--U)", fontSize: "14px" }}>
-              <Link href={`/theology/passage?ref=${encodeURIComponent(`${book.name} ${chapter}`)}`} style={quietLink}>
-                The passage guide to {book.name} {chapter}: its flow, common misreadings, and the views Christians hold
-              </Link>
-            </p>
-          )}
-          {related && related.length > 0 && <RelatedList items={related} />}
-        </div>
-      )}
-
       <div style={{ ...card, marginTop: "var(--s-5)", padding: "var(--s-4)", display: "grid", gap: "12px" }}>
         <button type="button" aria-pressed={read} onClick={toggleRead} style={{ justifySelf: "start", display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "44px", padding: "0 18px", borderRadius: "999px", border: "1px solid var(--ink)", background: read ? "var(--ink)" : "transparent", color: read ? "var(--bone)" : "var(--ink)", cursor: "pointer", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
           {read && <Check size={16} aria-hidden />} {read ? `${book.name} ${chapter} read` : `Mark ${book.name} ${chapter} as read`}

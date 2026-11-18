@@ -13,9 +13,10 @@
  *   5 Where else         each verse's cross-references (the chapter file's x),
  *                        each opening in place to its text (bible/text)
  *   6 The hard question  note.hard, with the answer one tap behind it
- *   7 What it asks       note.questions, a box to write in, and one next step:
- *                        a family devotion on this chapter (family/index.json),
- *                        else its first doctrine study, else the next chapter
+ *   7 What it asks       note.questions, a box to write in, and the next steps:
+ *                        the chapter's "Go deeper" list (index/chapters, the
+ *                        passage index), else its first doctrine study, else
+ *                        the next chapter
  *
  * A step whose piece the chapter lacks says so in one line. The step reached
  * and what the reader writes are kept on this device (lib/bible-desk.ts,
@@ -43,11 +44,11 @@ import {
 import { fetchDoctrines, fetchIntro, hardQuestions, paragraphs, type ChapterNote } from "@/lib/bible-notes";
 import { readWalks, saveWalk, type WalkEntry } from "@/lib/bible-desk";
 import { copyToClipboard } from "@/lib/clipboard";
-import { fetchJson } from "@/lib/fetch-json";
 import { KEPT_HERE, NOTICE_QUESTIONS, STUDY_STEPS, type StudyStep } from "@/lib/study-method";
 import { LoadFailed } from "@/components/LoadFailed";
 import { Gloss, useLoad } from "@/pages/study-bible/shared";
 import { CrossRef } from "@/pages/study-bible/CrossRefs";
+import { GoDeeperList, useChapterIndex } from "@/components/GoDeeper";
 import "./walk.css";
 
 const ICONS: Record<StudyStep["icon"], typeof BookOpen> = { BookOpen, Eye, Compass, Languages, Link2, CircleHelp, Footprints };
@@ -421,25 +422,22 @@ function HardQuestion({ q, a, n, of }: { q: string; a: string; n: number; of: nu
 
 // ── 7. What it asks of you ───────────────────────────────────────────────────
 
-type DevotionRow = { id: string; title: string; href: string };
-const isFamily = (x: unknown): x is { devotions: DevotionRow[] } =>
-  typeof x === "object" && x !== null && Array.isArray((x as { devotions?: unknown }).devotions);
-
 function RespondStep({ note, entry, update, book, chapter, books, next, label }: BodyProps) {
-  const { data: family } = useLoad("family-index", () => fetchJson("/family/index.json", isFamily));
+  // The next steps are the chapter's "Go deeper" list (the passage index).
+  // A chapter with nothing there offers one step: a doctrine it teaches, else
+  // the next chapter.
+  const rows = useChapterIndex(book.slug, chapter);
   const { data: doctrines } = useLoad("doctrines", fetchDoctrines);
-  const here = `/study/bible/${book.slug}/${chapter}`;
-  const devotion = family ? family.devotions.find((d) => typeof d.href === "string" && d.href.split("#")[0] === here) : undefined;
   const doctrine = note?.doctrines[0];
   const doctrineName = doctrine ? doctrines?.find((d) => d.id === doctrine.id)?.name : undefined;
   const nextName = next ? `${chapterBookName(books.find((b) => b.slug === next.slug) ?? { slug: next.slug, name: next.slug })} ${next.chapter}` : null;
 
+  const deeper = rows !== undefined && rows.length > 0;
   const step: { kind: string; title: string; href: string } | null =
-    devotion ? { kind: "A family devotion on this chapter", title: devotion.title, href: `/family/devotions/${devotion.id}` }
-    : doctrine && doctrineName ? { kind: "A doctrine this chapter teaches", title: doctrineName, href: `/study/bible/doctrines/${doctrine.id}` }
+    doctrine && doctrineName ? { kind: "A doctrine this chapter teaches", title: doctrineName, href: `/study/bible/doctrines/${doctrine.id}` }
     : next && nextName ? { kind: "Read on", title: nextName, href: chapterHref(next.slug, next.chapter) }
     : null;
-  const waiting = family === undefined || (doctrine !== undefined && doctrines === undefined);
+  const waiting = rows === undefined || (!deeper && doctrine !== undefined && doctrines === undefined);
 
   const copyAll = [
     `${label}: my study notes`,
@@ -469,9 +467,11 @@ function RespondStep({ note, entry, update, book, chapter, books, next, label }:
         })
       )}
       <Writing label="What I will carry with me" value={entry.respond ?? ""} onChange={(respond) => update({ respond })} copyText={copyAll} />
-      <p className="wk__h4">One next step</p>
+      <p className="wk__h4">{deeper ? "Next steps: go deeper" : "One next step"}</p>
       {waiting ? (
         <p role="status" className="wk__kept">Finding a next step…</p>
+      ) : deeper ? (
+        <GoDeeperList rows={rows} chapterLabel={label} />
       ) : step ? (
         <Link href={step.href} className="wk__nextcard">
           <span className="wk__icon wk__icon--sm" aria-hidden><Footprints size={20} strokeWidth={1.75} /></span>
@@ -484,7 +484,7 @@ function RespondStep({ note, entry, update, book, chapter, books, next, label }:
       ) : (
         <Missing>This is the last chapter of the Bible.</Missing>
       )}
-      {step && step.kind !== "Read on" && next && nextName && (
+      {!waiting && (deeper || (step && step.kind !== "Read on")) && next && nextName && (
         <p className="wk__onward"><Link href={chapterHref(next.slug, next.chapter)} className="wk__link">Or read on to {nextName}</Link></p>
       )}
     </>

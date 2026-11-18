@@ -42,9 +42,11 @@ function isEntries(x: unknown): x is Entry[] {
 
 const quiet = { fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", background: "none", border: "1px solid var(--borderdk)", borderRadius: "var(--radius-sm)", minHeight: "44px", padding: "0 16px", cursor: "pointer" } as const;
 
-function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned, onStartHere }: {
+function QuestionCard({ e, highlight, anchor, open, setOpen, learned, onToggleLearned, onStartHere }: {
   e: Entry;
   highlight?: boolean;
+  /** The list's card carries the question's address (#q14), so a link can open it. */
+  anchor?: boolean;
   open: number | null;
   setOpen: (n: number | null) => void;
   learned?: boolean;
@@ -54,7 +56,7 @@ function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned, o
 }) {
   const isOpen = open === e.number;
   return (
-    <div style={{ background: "var(--card)", border: `1px solid ${highlight ? "var(--mustard)" : "var(--border)"}`, borderRadius: "var(--radius-sm)", overflow: "hidden" }}>
+    <div id={anchor ? `q${e.number}` : undefined} style={{ background: "var(--card)", border: `1px solid ${highlight ? "var(--mustard)" : "var(--border)"}`, borderRadius: "var(--radius-sm)", overflow: "hidden", scrollMarginTop: "90px" }}>
       <button type="button" onClick={() => setOpen(isOpen ? null : e.number)} aria-expanded={isOpen}
         style={{ width: "100%", display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "12px", padding: "16px var(--s-4)", background: "none", border: "none", cursor: "pointer", textAlign: "left" }}>
         <span style={{ display: "flex", gap: "12px" }}>
@@ -97,6 +99,13 @@ function QuestionCard({ e, highlight, open, setOpen, learned, onToggleLearned, o
   );
 }
 
+/** The question a #q14 address names, or null. */
+function hashQuestion(): number | null {
+  if (typeof window === "undefined") return null;
+  const m = window.location.hash.match(/^#q(\d+)$/);
+  return m ? Number(m[1]) : null;
+}
+
 export default function FamilyCatechism() {
   // Loading, failed, and loaded are distinct states keyed to a retry nonce
   // (the HowTos pattern), so a failed fetch offers a retry instead of
@@ -105,7 +114,8 @@ export default function FamilyCatechism() {
   const [failedAt, setFailedAt] = useState<number | null>(null);
   const [nonce, setNonce] = useState(0);
   const failed = failedAt === nonce;
-  const [open, setOpen] = useState<number | null>(null);
+  // A link to one question (#q14, from "Go deeper" on a Bible chapter) opens it.
+  const [open, setOpen] = useState<number | null>(() => hashQuestion());
   const { isDone, toggle, count, reset, persisted } = useProgress("lw-family-catechism-v1");
 
   useEffect(() => {
@@ -115,6 +125,12 @@ export default function FamilyCatechism() {
       .catch(() => { if (live) setFailedAt(nonce); });
     return () => { live = false; };
   }, [nonce]);
+
+  // Once the questions are on the page, the one the link named is brought into view.
+  useEffect(() => {
+    const n = hashQuestion();
+    if (loaded && n !== null) requestAnimationFrame(() => document.getElementById(`q${n}`)?.scrollIntoView?.({ block: "start" }));
+  }, [loaded]);
 
   const entries = useMemo(() => loaded ?? [], [loaded]);
   const parts = useMemo(() => {
@@ -249,7 +265,7 @@ export default function FamilyCatechism() {
             <div key={part} style={{ marginBottom: "var(--s-5)" }}>
               <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 28px)", fontWeight: 400, color: "var(--ink)", marginBottom: "var(--s-3)", paddingBottom: "8px", borderBottom: "2px solid var(--mustard)" }}>{part}</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                {items.map((e) => <QuestionCard key={e.number} e={e} open={open} setOpen={setOpen} learned={isDone(String(e.number))} onToggleLearned={() => toggle(String(e.number))} onStartHere={own && ours?.number === e.number ? undefined : () => { move({ v: 1, follow: "own", at: e.number }); window.scrollTo({ top: 0 }); }} />)}
+                {items.map((e) => <QuestionCard key={e.number} e={e} anchor open={open} setOpen={setOpen} learned={isDone(String(e.number))} onToggleLearned={() => toggle(String(e.number))} onStartHere={own && ours?.number === e.number ? undefined : () => { move({ v: 1, follow: "own", at: e.number }); window.scrollTo({ top: 0 }); }} />)}
               </div>
             </div>
           ))}
