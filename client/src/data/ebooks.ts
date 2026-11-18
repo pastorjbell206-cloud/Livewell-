@@ -1,23 +1,25 @@
 /**
  * Every ebook on the site, free to download (James, 2026-11-18: "give away for
  * free for people to download", everything free, nothing sold as an ebook).
+ * Nine books here, and the three booklets for church leaders beside them.
  *
  * Read by /downloads (the one page that shows them all), /books, each book's
  * own page, and the build-time catalogue (scripts/build-catalogue.mjs), so
  * the list cannot drift. The Hard Issues booklets for church leaders stay in
  * data/booklets.ts and are shown beside these.
  *
- * Every line is the description the site already had for the book: the
- * book's own page, or the ebook catalogue in api/index.ts for the older
- * titles. Nothing here is new copy.
+ * Every line is the description the site already had for the book, from its
+ * own page. Nothing here is new copy.
  *
- * HELD_EBOOKS name the Pastors Connection Network inside the file. They are
- * not served and not listed until James sends corrected files; see
- * content/held-downloads/README.md.
+ * HELD_EBOOKS are not served and not listed (content/held-downloads/README.md).
+ * Seven name the Pastors Connection Network inside the file and wait for
+ * James's corrected files. The sixteen older titles he took down to rewrite
+ * in his own hand stay off too (James, 2026-11-18: "Keep them off for now").
  *
  * Kept as pure data (no imports) so the build scripts can read it.
  */
-export type EbookGroup = "james" | "questions" | "older";
+/** "leaders" is the Hard Issues booklets (data/booklets.ts), shelved beside these on /downloads. */
+export type EbookGroup = "james" | "questions" | "leaders";
 
 export interface Ebook {
   group: EbookGroup;
@@ -36,17 +38,7 @@ export interface Ebook {
 export const EBOOK_GROUPS: { id: EbookGroup; label: string }[] = [
   { id: "james", label: "Books by James Bell" },
   { id: "questions", label: "Hard questions" },
-  { id: "older", label: "More ebooks" },
 ];
-
-const older = (slug: string, title: string, line: string, cover = `/books/${slug}.svg`): Ebook => ({
-  group: "older",
-  slug,
-  title,
-  line,
-  cover,
-  pdf: `/ebook/${slug}/${slug}.pdf`,
-});
 
 export const FREE_EBOOKS: Ebook[] = [
   {
@@ -138,25 +130,9 @@ export const FREE_EBOOKS: Ebook[] = [
     pdf: "/ebook/raising-believers/Raising-Believers.pdf",
     epub: "/ebook/raising-believers/Raising-Believers.epub",
   },
-  older("babylon", "Babylon", "The part of Jeremiah's letter we never read. Not how to take the country back, and not how to make peace with losing it. How to build, plant, and seek the good of the city in Christian exile."),
-  older("born-again-from-atheism", "Born Again From Atheism", "How an unbeliever came to faith as a grown man, and what he found there. The doubts taken at full strength, and the God he did not want to meet."),
-  older("faith-after-deconstruction", "Faith After Deconstruction", "How to lose the faith you were given and find the one that holds. What should fall, what must not, and the way through."),
-  older("how-to-read-the-bible", "How to Read the Bible", "Reading Scripture without bending it to what you already believe, from proof-texting to the passages we skip."),
-  older("why-not-what", "Why Not What", "How theology starts with the right question. Why before what, the order the whole Bible insists on."),
-  older("the-god-who-is-not-nice", "The God Who Is Not Nice", "Recovering the weight of God in a sentimental age. Nice is not holy, and a God with no weight cannot save."),
-  older("the-scandal-of-the-cross", "The Scandal of the Cross", "Why the death of God is the center of everything. The cross recovered from jewelry, and the atonement held together instead of traded for a slogan."),
-  older("prayer-in-the-dark", "Prayer in the Dark", "Talking to God when you are not sure anyone is listening. For prayers that hit the ceiling, without the formulas or the guilt."),
-  older("be-true-to-yourself", "Be True to Yourself", "The age's one commandment, named as the lie it is, and the older freedom underneath it: you are not your own."),
-  older("rule-of-life", "Rule of Life", "The ancient practices the church used to form durable souls, recovered for an age engineered to deform us."),
-  older("ordinary-holiness", "Ordinary Holiness", "Finding God in the life you actually have. Work, the body, the table, the neighbor, and the faithfulness no one applauds."),
-  older("covenant", "Covenant", "Why marriage is a promise, not a deal. The culture sold us a contract and called it romance."),
-  older("healwell", "HealWell: 52 Weeks in Costly Hope", "A year of honest devotionals for tired believers, written from inside the wound and pointed toward a costly hope."),
-  older("the-body-you-left", "The Body You Left", "A case for the church in an age that walked away. An honest reckoning with why people left, and why the body of Christ still matters."),
-  older("sermon-on-the-mount-as-politics", "The Sermon on the Mount as Politics", "The Sermon read as the constitution of the kingdom, not private inner life. Power, money, enemies, truth, and the poor."),
-  older("what-belongs-to-the-poor", "What Belongs to the Poor", "What the ancient church knew about wealth and justice, recovered from Basil and the Fathers, who called giving justice, not charity."),
 ];
 
-/** Off the site until James sends corrected files. Nothing lists these. */
+/** Off the site; nothing lists these. The first seven wait for corrected files, the sixteen after them are off for now. */
 export const HELD_EBOOKS: { slug: string; title: string }[] = [
   { slug: "alone-in-a-crowded-church", title: "Alone in a Crowded Church" },
   { slug: "consider-the-birds", title: "Consider the Birds" },
@@ -165,6 +141,22 @@ export const HELD_EBOOKS: { slug: string; title: string }[] = [
   { slug: "prophetic-justice-101", title: "Prophetic Justice 101" },
   { slug: "the-loneliness-of-the-pastor", title: "The Loneliness of the Pastor" },
   { slug: "where-your-treasure-is", title: "Where Your Treasure Is" },
+  { slug: "babylon", title: "Babylon" },
+  { slug: "born-again-from-atheism", title: "Born Again From Atheism" },
+  { slug: "faith-after-deconstruction", title: "Faith After Deconstruction" },
+  { slug: "how-to-read-the-bible", title: "How to Read the Bible" },
+  { slug: "why-not-what", title: "Why Not What" },
+  { slug: "the-god-who-is-not-nice", title: "The God Who Is Not Nice" },
+  { slug: "the-scandal-of-the-cross", title: "The Scandal of the Cross" },
+  { slug: "prayer-in-the-dark", title: "Prayer in the Dark" },
+  { slug: "be-true-to-yourself", title: "Be True to Yourself" },
+  { slug: "rule-of-life", title: "Rule of Life" },
+  { slug: "ordinary-holiness", title: "Ordinary Holiness" },
+  { slug: "covenant", title: "Covenant" },
+  { slug: "healwell", title: "HealWell: 52 Weeks in Costly Hope" },
+  { slug: "the-body-you-left", title: "The Body You Left" },
+  { slug: "sermon-on-the-mount-as-politics", title: "The Sermon on the Mount as Politics" },
+  { slug: "what-belongs-to-the-poor", title: "What Belongs to the Poor" },
 ];
 
 /** A free ebook by slug, or undefined. */

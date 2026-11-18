@@ -123,21 +123,12 @@ export default function Books() {
             I took the rest of the shelf down to rewrite it in my own hand, one book at
             a time. When a book is finished, it comes back.
           </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "rgba(245,240,230,0.78)", maxWidth: "62ch", marginBottom: "20px" }}>
-            Until then, the older versions are free to download, with every other ebook on the site.
-          </p>
           <div style={{ display: "flex", gap: "18px", flexWrap: "wrap" }}>
             <Link
               href="/writing"
-              style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
-            >
-              Read the essays
-            </Link>
-            <Link
-              href="/downloads"
               style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--charcoal-fg)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}
             >
-              The older ebooks, free
+              Read the essays
             </Link>
           </div>
         </div>
