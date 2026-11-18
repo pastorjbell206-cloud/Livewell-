@@ -1,7 +1,7 @@
 # w-history-essays: voice pass on the 22 church history essays
 
 Branch `elite/w-history-essays`, from `b2e655e6`. Not pushed.
-Files touched: `client/public/history/essays/*.json` (20 of the 22 files; section bodies and key-figure notes only). No title, subtitle, kicker, id, slug, date range or source entry was changed. `the-desert-and-the-rule.json` and `the-church-that-outlived-rome.json` changed in the audit pass too; the two untouched by the later sweep are those.
+Files touched: all 22 files in `client/public/history/essays/` (section bodies and key-figure notes only). No title, subtitle, kicker, id, slug, date range or source entry was changed.
 
 ## What changed
 
