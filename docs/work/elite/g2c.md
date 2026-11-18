@@ -275,3 +275,54 @@ Stopped at a clean guide boundary after the-story-of-the-bible. Next in order: *
 ### Where this run stopped
 
 Stopped at a clean guide boundary after witness, to leave room for the gates and the push. Next in order: **womanhood**, then work-and-vocation.
+
+## Ninth run (womanhood, work-and-vocation)
+
+### womanhood (done)
+
+- Words 24,430 to 22,183; teaching 4,937 to 4,737. "Bell" 24 to 0 (the old guide named him in questions and summaries); "honest" 57 to 3; "Leader to confirm" 3 to 0; contractions 114 to 591. Every teaching, case study and Going Deeper now runs in paragraphs.
+- Contested questions: session 4 still states the complementarian and the egalitarian readings each at its strongest, sorts the question as second-order, and lands where the old guide landed ("a complementarian, but a chastened one"), naming the same unanswered objection (the women of session 2). Nothing new is claimed about where he lands. The egalitarian case now quotes 1 Corinthians 14:35 and cites the Ephesian false teaching (1 Timothy 5:13-15; 2 Timothy 3:6-7) instead of asserting that women there "taught a mythology Paul is fighting," which is a hypothesis; it is now marked as what many egalitarian scholars argue. Junia's standing ("well known to the apostles" or "among them") left open, as the old Going Deeper left it.
+- Quotations of people: none in quotation marks except Scripture, as before. Chrysostom on Junia kept as paraphrase. "In essentials unity..." kept as an unattributed old saying. Luther's 1520 To the Christian Nobility now gives the shoemaker, smith and farmer in place of the old "milkmaid." No quotation added.
+- Scripture: ESV as before, now quoted with references throughout. Corrected: Genesis 3:16 now in the ESV's current text ("contrary to your husband"), with a note that earlier editions and most translations read "for your husband"; Galatians 3:28 "neither male nor female" to the ESV's "no male and female"; Romans 16:7 no longer has Paul "calling her notable among the apostles" (the ESV reads "well known to the apostles"; the other reading is named as a reading); Anna's age given with the ESV's note; John 20:18 memory verse given its quotation marks (the ESV's dash rendered as a comma).
+- Corrected: session 4 tied the "cruciform authority" to "session three, the headship that dies," but session 3 is Proverbs 31; it now rests on Mark 10:45. Priscilla's name "listed first more often than not" is now "first in four of the six places the couple is named." Phoebe "almost certainly" carried and "read" the letter is now "most scholars think she carried" it. "The early church called her the apostle to the apostles" is now "later Christian tradition." Junia "read without controversy for the first thousand years" is now "no commentator we know of read the name as a man's until about the thirteenth century" (checked by search). Timeline dates given as ranges where debated (Deborah, Anna, Priscilla at Ephesus about AD 52).
+- Cut: "father of five sons" and "a pastor with five sons" (summary, FAQ 9, facilitator's open, invite caption): credential, not doing work. The guide now carries no biography. FAQ 9 ("Why does the writer, a man, keep implicating himself") now "Why does the teaching keep implicating men, and its own writer"; count kept at 12. Three "Leader to confirm" notes in the bibliography (the books are real; notes reworded).
+- Help: no help lines in the old guide and no help topic for womanhood in sensitive-pages.json (checked by script: no phone number, hotline or "Find Help" in the old file, so none could be lost). Added, because the guide touches headship and harm at home: a leader-primer paragraph (a woman hurt, threatened or controlled at home: take her seriously, talk privately, no reading of headship asks her to stay in danger or stay quiet, a pastor or counselor, the Find Help page, emergency services if in immediate danger); one sentence in session 4's teaching that no reading of either passage asks a woman to stay quiet about harm; the facilitator's close invites anyone carrying harm or grief to talk afterward; session 5's practice and FAQ 7 point a heavy grief to a leader, pastor or counselor.
+- First person: only what the old guide stated of him ("I don't exempt myself," "I have to grant," where he lands, "it costs me something to say," "if I'm honest, they feel like a position straining," "I've felt the force of your best argument"). Nothing added.
+
+### What only James can supply (womanhood)
+
+- The old guide said three times that it was written by "the father of five sons." It did no work there and is cut. If he wants his sons tied to how a man reads a study on womanhood, that sentence has to come from him.
+- Session 4 lands as "chastened complementarian," as the old guide did. Whether that is his settled public position on this platform is his to confirm.
+
+### work-and-vocation (done)
+
+- Words 23,927 to 21,439; teaching 5,387 to 4,898. "Bell" 22 to 0; "Leader to confirm" 5 to 0 (and "Not cited by Bell directly"); contractions 67 to 579. "honest" 53 to 22, most of the rest being the doctrinal phrase "honest work." Every teaching, case study and Going Deeper now runs in paragraphs.
+- Quotations of people: the old quote card put Luther in quotation marks ("When the milkmaid milks the cow, said Luther, it is God who is milking..."). Searched: the milkmaid line is a summary from Gustaf Wingren's Luther on Vocation, picked up by Veith; no primary Luther text found. Cut as a quotation; the guide now gives Luther's own 1520 argument (shoemaker, smith, farmer in To the Christian Nobility) and calls the milkmaid picture his interpreters' summary. Sayers (Why Work?, 1942) kept as paraphrase and slightly closer to her text (the church tells the carpenter to stay sober and come to church; it should tell him the first demand of his religion is good tables). DeKoster, Keller, Guinness and Wright paraphrased with attribution. No quotation added.
+- Scripture: ESV as before, now quoted with references throughout; memory verses given in the ESV's words ("the garden of Eden," "LORD," and the full 1 Corinthians 15:58). Added in the objection on fire: 2 Peter 3:10 reads "will be exposed" in the ESV (not "burned up"), and 1 Corinthians 3:12-15's "wood, hay, straw" (the old "stubble" was the KJV). Colossians 3 and Ephesians 6 now carry one sentence that Paul is speaking to slaves without blessing slavery (the skeptic reader would stumble there).
+- Corrected: DeKoster's book dated 1982 (the old timeline said 1962); Ecclesiastes no longer dated "circa 950 BC" (dating debated); Psalm 127 noted as titled "of Solomon"; the Benedictine entry now names Augustine's On the Work of Monks and Benedict's Rule; Calvin dated to the 1559 Institutes; 1 Corinthians dated about AD 54, Colossians about AD 60 to 62; "the first person filled with the Spirit" softened to "the first person Scripture names as filled with the Spirit of God" (Exodus 28:3 speaks of skilled workers filled with a spirit of skill); "the man with the collar" became "the man in the pulpit" (imagery that doesn't fit a Baptist pastor).
+- Cut: five "Leader to confirm" notes and "Not cited by Bell directly" (the books are real; notes reworded); the Luther quote card.
+- Help: no help lines in the old guide and none in sensitive-pages.json (checked by script; none could be lost). Added: the leader primer's paragraph on exhaustion, job loss or failure that sounds like more than a hard season, including hopelessness (talk privately, a pastor, counselor or doctor, the Find Help page); FAQ 8 (a job doing real harm) and FAQ 10 (being out of work in a dark place); the facilitator's close; session 2's and session 4's case studies suggest a private word and, for sleeplessness and dread, a doctor or counselor. Session 4 is gentler on those who overwork from need.
+- Biography: none in the old guide beyond his being a pastor; none added. First person kept only where the old guide had it ("I'm the professional Christian here," "the Sabbath command stands over me," and the pulpit announcement's "I've made an idol of my own work more than once").
+
+### What only James can supply (work-and-vocation)
+
+- The pulpit announcement still says, in the announcer's voice, "I've made an idol of my own work more than once," as the old one did. If James reads it himself, it's his confession to keep or cut.
+- If he has a primary Luther citation for the milkmaid line, it can go back on a quote card. Without one, it stays as his interpreters' summary.
+
+### What I ran (ninth run)
+
+- `node scripts/validate-studyguides.mjs` after each guide: 68 guides, 0 failures. Index rebuilt after each.
+- Literal search of both guides for every forbidden word and phrase, em-dashes, "Bell" and "Leader to confirm": clean (one "showing up" in womanhood caught and changed). "Blessed" appears only as a verb or inside quoted Scripture; every exclamation point is inside quoted Scripture.
+- Web searches: 1 for womanhood (Junia, Chrysostom, Aegidius), 1 for work-and-vocation (Luther's milkmaid).
+- Gates, after merging the latest origin branch: `pnpm check` passed; all 35 content-gate commands from ci.yml passed, each exit code checked; `pnpm test`: 144 files passed, 7 skipped (1,642 tests passed, 73 skipped).
+
+### Not done or not verified (ninth run)
+
+- No pnpm build, Lighthouse or screenshots (the lead runs those).
+- Scripture quoted from memory of the ESV; there is no ESV in the repository.
+- PDFs not rebuilt (`pnpm pdfs`).
+- Sayers, DeKoster, Keller, Guinness, Wright, Calvin and Augustine paraphrased from memory of the books, not checked against copies.
+
+### Where this run stopped
+
+Both guides in this share are done: womanhood and work-and-vocation. Nothing is left in g2c's share.

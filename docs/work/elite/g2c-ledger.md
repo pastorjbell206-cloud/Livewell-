@@ -443,3 +443,45 @@ The second run added three quotations to skeptic that the old guide did not carr
 | "I write books" (session 1) | Stamp | Cut |
 | Biography: atheism (summary, primer, sessions 1, 2, 4, FAQ 7, FAQ 10) | Credential | Kept once, session 2 teaching |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## Womanhood
+
+| Claim | How checked | Result |
+|---|---|---|
+| Chrysostom praised Junia as a woman apostle; read as female "for the first thousand years" | Searched: Homily 31 on Romans reads her as a woman; first masculine reading Aegidius of Rome (13th century); "Junias" unattested in antiquity | Paraphrase kept; "no commentator we know of read the name as a man's until about the thirteenth century" |
+| Romans 16:7 "notable among the apostles" | ESV "well known to the apostles"; Greek allows "among" | ESV quoted; both readings named |
+| Genesis 3:16 "your desire shall be for your husband" | ESV 2016 text: "contrary to your husband"; earlier ESV "for" | Current ESV quoted, earlier wording noted |
+| Galatians 3:28 "neither male nor female" | ESV "there is no male and female" | Corrected |
+| Ezer used most often of God | Known: most of its Old Testament uses refer to God (e.g. Psalm 121:2) | Kept |
+| Priscilla named first "more often than not" | Known: first in Acts 18:18, 26; Romans 16:3; 2 Timothy 4:19; second in Acts 18:2; 1 Corinthians 16:19 | "four of the six" |
+| Phoebe "almost certainly" carried and read Romans | Carrying is the majority view; reading aloud is conjecture | "Most scholars think she carried the letter" |
+| Jeremiah active when Huldah was consulted | Jeremiah 1:2 (Josiah's 13th year); book found in the 18th (2 Kings 22:3) | Kept, Jeremiah 1:2 cited |
+| "Early church" called Mary Magdalene apostle to the apostles | Title is later tradition | "Later Christian tradition" |
+| Anna "at eighty-four" | ESV text "until she was eighty-four," note allows 84 years a widow | Both given |
+| Session 4: "cruciform authority of session three, the headship that dies" | Session 3 is Proverbs 31; reference wrong | Rests on Mark 10:45 |
+| Ephesian women "taught a mythology Paul is fighting" | Hypothesis, not established | Marked as what many egalitarian scholars argue; 1 Timothy 5:13-15, 2 Timothy 3:6-7 cited |
+| Luther's "milkmaid" | Popular attribution | Luther 1520, To the Christian Nobility: shoemaker, smith, farmer |
+| Josiah's reform 622 BC; Perpetua 203; Argula von Grumbach 1523; Chrysostom on Romans 390s | Known | Kept |
+| Half the Church (2011); Two Views on Women in Ministry; Vindicating the Vixens; Schuurman, Vocation (2004); Keller, The Meaning of Marriage | Known, real books | "Leader to confirm" removed |
+| Biography: "father of five sons" (summary, FAQ 9, facilitator open, invite caption) | Credential | All cut |
+| Help lines | Old file has none (script: no number, hotline or Find Help); no sensitive-pages topic | Find Help path added in primer; none removed |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## Work and Vocation
+
+| Claim | How checked | Result |
+|---|---|---|
+| Luther: "God milks the cow through the milkmaid" (quote card, teaching, FAQ, prayer) | Searched: traced to Wingren's Luther on Vocation and Veith; no primary Luther text found | Quotation cut; Luther's 1520 To the Christian Nobility (shoemaker, smith, farmer) given; milkmaid named as his interpreters' summary |
+| Sayers, Why Work?, 1942, the carpenter and good tables | Known: address of 1942; the church exhorts the carpenter not to be drunk and to come to church, when it should tell him the first demand of his religion is good tables | Paraphrase, dated |
+| DeKoster, Work, "1962" | Known: Work: The Meaning of Your Life, 1982 | Corrected to 1982 |
+| Ecclesiastes "circa 950 BC" | Date debated | "Date debated" |
+| Benedictine "work and prayer" motto, circa 400 | Augustine, On the Work of Monks (about 400); Benedict's Rule (6th century) sets hours for work; the motto is later | Entry rewritten |
+| Calvin "1560s" | Institutes 1559, 3.10.6 (calling as a post) | 1559 |
+| Bezalel the first person filled with the Spirit | Exodus 31:3 is the first named person "filled with the Spirit of God"; Exodus 28:3 speaks of a spirit of skill | "Names as" |
+| 2 Peter 3:10 "burned up" | ESV: "will be exposed" | Noted in the objection |
+| 1 Corinthians 3 "wood, hay and stubble" | ESV "wood, hay, straw" | Corrected |
+| Jesus "a carpenter," "worker worthy of wages" | Mark 6:3; Luke 10:7 ESV "the laborer deserves his wages" | Cited |
+| Keller, Every Good Endeavor 2012; Counterfeit Gods 2009; Guinness, The Call 1998; Wright, Surprised by Hope 2008; Veith, God at Work 2002; Comer, Garden City 2015; Garber, Visions of Vocation 2014; Horton, Ordinary 2014 | Known, real books | "Leader to confirm" removed; dated |
+| "The man with the collar" | Imagery, not a fact about James; a Baptist pastor | "The man in the pulpit" |
+| Help lines | Old file has none (script); no sensitive-pages topic | Find Help path added; none removed |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
