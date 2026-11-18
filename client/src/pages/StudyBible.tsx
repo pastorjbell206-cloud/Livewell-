@@ -627,8 +627,11 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
           <div style={{ flex: "1 1 0", minWidth: 0 }}>
             {/* On a first load the prerendered chapter stays on screen until the
                 heading, the text and the summary above it have all arrived
-                (lib/prerender-hold.ts), so none of them pushes the others down. */}
-            {valid && ((!data && !failed) || note === undefined || place === undefined) && <span hidden data-lw-loading />}
+                (lib/prerender-hold.ts), so none of them pushes the others down.
+                The verses' own notes are waited for too: each one puts a dot
+                beside its verse number, and a dot that came late widened the
+                number and rewrapped the lines after it. */}
+            {valid && ((!data && !failed) || note === undefined || place === undefined || index === undefined || (hasVerseNotes && verseNotes === undefined)) && <span hidden data-lw-loading />}
             <ChapterHead note={note} place={place} />
             {failed && !data ? (
               <LoadFailed what={`${book.name} ${chapter}`} onRetry={() => { setFailedKey(null); setNonce((n) => n + 1); }} backHref={`/study/bible/${book.slug}`} backLabel={`All of ${book.name}`} />
