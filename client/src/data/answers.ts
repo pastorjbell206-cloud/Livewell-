@@ -170,9 +170,76 @@ export const ANSWERS: Answer[] = [
     question: "If God is good, why is there so much suffering?",
     askedAs: "why does god allow suffering why does god let people suffer why do bad things happen to good people pain evil",
     paragraphs: [
-      "Suffering does not disprove God, but it does not need to be solved to be survived. It is the best reason not to believe. The logical version has weakened. Plantinga showed a world of free creatures may be worth more than a world of puppets, because forced love is a contradiction. What remains is less a proof than a cry.",
-      "Ivan Karamazov puts the objection as hard as it can be put: no future harmony is worth the torture of one innocent child, and he returns the ticket. Lewis wrote The Problem of Pain, then lost his wife and found his arguments never touched the wound. But the outrage borrows. Atoms do not have oughts. To call a child's suffering evil is to stand on a moral floor a Godless universe cannot pour. Every worldview has to carry the problem. The secular one only moves it to a universe where suffering means nothing.",
-      "Out of the whirlwind God answers Job with questions. He never gives the explanation; he gives himself. And at the center of the faith is a God who entered the suffering instead of explaining it from a distance. The child in the ward is still in the ward. The people who met him in their worst hour don't come back saying they understand. They come back saying they are not alone in it.",
+      "Suffering does not disprove God, but it is the strongest reason people give for not believing, and it deserves an argument, not a slogan. The claim that evil makes God impossible has largely been given up, even by atheist philosophers. The claim that evil makes God unlikely is serious and still argued, and its key step, that suffering we can see no reason for probably has none, is weaker than it looks. Neither argument is answered by an explanation of your suffering, and I don't have one. What Christianity offers is something else: a God who entered suffering, and a promise about how it ends.",
+    ],
+    sections: [
+      {
+        heading: "The objection at full strength",
+        body: [
+          "The argument is old. It's usually credited to Epicurus, but it survives because a Christian teacher, Lactantius, quoted it early in the fourth century in order to answer it: \"if He is both willing and able, which alone is suitable to God, from what source then are evils? or why does He not remove them?\" Fourteen centuries later David Hume had a character in his Dialogues remark that \"Epicurus's old questions are yet unanswered.\"",
+          "Modern philosophers gave it two forms. In 1955 J. L. Mackie argued in the journal Mind that the three claims \"God is omnipotent,\" \"God is wholly good\" and \"evil exists\" cannot all be held together. In 1979 William Rowe made a more modest and more dangerous case. He asked his readers to imagine a fawn caught in a forest fire started by lightning, horribly burned, lying in terrible agony for several days before it dies. Darwin had felt the same weight in an 1860 letter to the botanist Asa Gray, unable to persuade himself that a good and all-powerful God would have designed wasps that feed inside the living bodies of caterpillars. And Dostoevsky, a believer himself, gave the protest its human face. Ivan Karamazov tells his brother about children tortured by adults and says no final harmony is worth it: \"It's not God that I don't accept, Alyosha, only I most respectfully return Him the ticket.\"",
+          "I grant what's true in all this, and it's a lot. The suffering is real, much of it looks pointless from where we stand, and some of the answers Christians reach for first are worse than silence. Telling a grieving mother that everything happens for a reason isn't theology. It's the mistake of Job's friends, and God rebuked them for it: \"you have not spoken of me what is right, as my servant Job has\" (Job 42:7).",
+        ],
+      },
+      {
+        heading: "Two arguments, laid out",
+        body: [
+          "It helps to separate the two forms, because they succeed or fail in different places.",
+          {
+            kind: "The logical argument (after Mackie, 1955)",
+            premises: [
+              "If God exists, he is all-powerful and wholly good.",
+              "A wholly good being eliminates every evil it can.",
+              "An all-powerful being can eliminate every evil.",
+              "Evil exists.",
+            ],
+            conclusion: "God does not exist.",
+          },
+          "The weight sits on the second premise. Alvin Plantinga answered it in God, Freedom, and Evil (1974): a good being might permit an evil if it is the price of a good it could not have any other way, and a world of creatures free to love, and so free to refuse, may be such a good. Plantinga didn't need to show this is God's actual reason, only that it's possible, because a contradiction has to be impossible. Most philosophers on both sides now think he succeeded. Mackie himself, in The Miracle of Theism (1982), allowed that the problem of evil does not, after all, show the central doctrines of theism to be logically inconsistent, and Rowe wrote that he didn't think anyone had succeeded in establishing so strong a claim. One honest note: Plantinga's answer assumes a view of freedom that many Christians in the Reformed tradition don't hold. They reject the logical argument on other grounds, that God may permit an evil for a greater good we cannot see.",
+          {
+            kind: "The evidential argument (Rowe, 1979, in my words, close to his)",
+            premises: [
+              "There probably is intense suffering, like the fawn's, that an all-powerful, all-knowing being could have prevented without losing some greater good or allowing some evil as bad or worse.",
+              "A wholly good, all-knowing being would prevent any intense suffering it could, unless that would cost a greater good or allow an evil as bad or worse.",
+            ],
+            conclusion: "Probably there is no all-powerful, all-knowing, wholly good being.",
+          },
+          "Rowe himself called the argument valid, and it is. Everything turns on the first premise, and on the word \"probably.\" His reason for it is that we look at the fawn and can't think of any good its suffering serves. The step is from \"I can see no reason\" to \"there is probably no reason.\"",
+        ],
+      },
+      {
+        heading: "Where the evidential argument is weakest",
+        body: [
+          "Whether that step holds depends on whether we should expect to see the reason if there were one. The philosopher Stephen Wykstra pressed this point in 1984, and it has shaped the debate since. Put it with an example of my own. If I look into my garage and see no car, I can be confident there's no car. If I look and see no flea, I can't, because I wouldn't expect to see a flea even if one were there. If God exists, the distance between his mind and ours is far greater than the distance between my eyes and a flea. The reasons of a being who sees the whole of history are not the kind of thing we should expect to spot from inside one afternoon of it.",
+          "The Bible tells exactly that kind of story. In Job the reader is shown a reason for Job's suffering in the first two chapters, a scene in the heavenly court, and Job is never told it. When God finally speaks, he gives Job no explanation at all, only questions about the foundations of the earth, the lion hunting its prey and the young ravens crying for food. Job shows, inside Scripture, that a person can suffer for a reason that exists and is never told to him.",
+        ],
+      },
+      {
+        heading: "The strongest reply, and an answer",
+        body: [
+          "A skeptic has a good reply to this, and I want to put it fairly. If we can't judge whether God has reasons for the fawn, how can we judge anything about God? Haven't you made his goodness impossible to test? And if any horror might serve a hidden good, why should I stop a child from being hurt? That reply has real force, and I don't think it's fully answered. But two things can be said. First, the ignorance claimed here is narrow. It isn't that we know nothing about right and wrong. It's that we don't know every good an infinite mind might be weighing. Knowing that God has purposes has never licensed Christians to stand back. Jesus came to the grave of his friend Lazarus already intending to raise him, and still, \"Jesus wept\" (John 11:35). Second, Christians don't read God's goodness off the balance sheet of the world at all. They learn it from a particular history: the cross and the empty tomb. If that history is true, it's the evidence that counts most, and it has its own page.",
+          "Christians, me included, often make one more move here, and it needs correcting. We say the skeptic's outrage borrows a moral standard a godless universe can't supply. As an answer to the argument, that fails. The argument is internal: it asks whether the believer's own God and the believer's own idea of goodness can stand together with this world, and the skeptic doesn't need to believe in objective good to ask it. What the point does show is this. If the argument succeeds and there is no God, the suffering is still there. It has only lost the name evil. The child's pain becomes a fact about matter in motion, and the protest that started the argument has nowhere left to stand. Every view of the world has to carry suffering. The question is which one can carry the protest too.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this explains your suffering, or anyone's. At best it shows that God and evil are not contradictory, and that the case from pointless suffering is less certain than it feels. That's a long way short of comfort. C. S. Lewis wrote The Problem of Pain in 1940, and after his wife died in 1960 he published A Grief Observed under a made-up name. What he dreaded, he wrote, was not \"So there's no God after all,\" but \"So this is what God's really like.\" The philosopher Nicholas Wolterstorff, who knew these arguments better than I do, wrote Lament for a Son after his son died in a climbing accident, and he offered no theodicy at all. I find that honest. The arguments belong in the seminar room. They don't belong at the hospital bed.",
+          "What Christianity offers there isn't an explanation but an event. The church confesses that God didn't stay outside the suffering. The Son became a man with a body that could be hurt, and he was tortured and killed. Standing with Mary as she wept for her brother, \"he was deeply moved in his spirit and greatly troubled\" (John 11:33). On the cross he prayed the first line of Psalm 22: \"My God, my God, why have you forsaken me?\" (Matthew 27:46). If he was raised, then suffering is real evil and it won't win. The Bible's last picture is of God himself: \"He will wipe away every tear from their eyes, and death shall be no more\" (Revelation 21:4). That doesn't tell a mother why. It tells her who has the last word, and that he has carried the wound himself.",
+          "If you're reading this in the middle of it, you don't need an argument tonight. You need someone to sit with you, and Find Help has people you can call; in the US you can call or text 988 at any hour. I can't tell you why, and I'd be wary of anyone who says he can. Job never found out. But he was allowed to ask, and at the end he said, \"I had heard of you by the hearing of the ear, but now my eye sees you\" (Job 42:5). The hands that will wipe away every tear still carry the marks of the nails.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "J. L. Mackie", title: "Evil and Omnipotence", in: "Mind", year: "1955" },
+      { author: "William L. Rowe", title: "The Problem of Evil and Some Varieties of Atheism", in: "American Philosophical Quarterly", year: "1979" },
+      { author: "Alvin Plantinga", title: "God, Freedom, and Evil", year: "1974" },
+      { author: "Daniel Howard-Snyder, ed.", title: "The Evidential Argument from Evil", year: "1996", note: "Both sides, by the philosophers who made the arguments." },
+      { author: "Eleonore Stump", title: "Wandering in Darkness", year: "2010" },
+      { author: "Fyodor Dostoevsky", title: "The Brothers Karamazov", year: "1880" },
+      { author: "C. S. Lewis", title: "A Grief Observed", year: "1961" },
+      { author: "Nicholas Wolterstorff", title: "Lament for a Son", year: "1987" },
+      { author: "Bart D. Ehrman", title: "God's Problem", year: "2008", note: "The best popular case against, by a scholar who left the faith over suffering." },
     ],
     essaySlug: "if-god-is-good-why-suffering",
     essayTitle: "If God Is Good, Why Is There So Much Suffering?",
