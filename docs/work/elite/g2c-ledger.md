@@ -282,3 +282,52 @@ The second run added three quotations to skeptic that the old guide did not carr
 | "Bell says" (about 20 places) | Narrator naming James | Removed |
 | Help: abuse topic in sensitive-pages.json | Untouched; guide text has no help lines of its own | Session 3 and 5 questions, case study and objection now point to the help information printed with the guide; primer names Find Help |
 | Scripture quotations | ESV, from memory | ESV throughout; John 4:6 in the-creeds paraphrased to avoid "journey" |
+
+## The Lord's Prayer
+
+| Claim | How checked | Result |
+|---|---|---|
+| Pope Francis 2019 change to "lead us not into temptation" | Web search: Avvenire and CNA reports, June 2019; Italian missal "non abbandonarci alla tentazione" | Kept, made exact: Italian wording for the Mass only |
+| Jeremias: no Jewish prayer before Jesus addressed God as Abba | Known: The Prayers of Jesus (English 1967) | Paraphrase, attributed |
+| James Barr, "Abba Isn't 'Daddy'", JTS 1988 | Known | Paraphrase; bibliography title and date set |
+| Tertullian: the prayer a summary of the whole gospel | Known: On Prayer 1, about 200 | Paraphrase |
+| Cyprian on calling God Father and the plural petitions | Known: On the Lord's Prayer, about 252 | Paraphrase |
+| Origen: epiousios found in no other Greek writer, coined by the evangelists | Known: On Prayer 27 | Kept; date corrected from 253 to about 233 |
+| New believers not taught the prayer until baptism | The prayer was handed over to candidates as they came to baptism (fourth century) | Softened to "taught to new believers as they came to baptism", fourth century |
+| Didache: pray three times a day; doxology | Known: Didache 8, short form without "kingdom" | Kept, short form stated |
+| Augustine to Proba | Known: Letter 130, about 412 | Kept |
+| Luther, A Simple Way to Pray, 1535, for Peter the barber | Known | Kept |
+| Calvin, Institutes 3.20, means and end | Known | Paraphrase |
+| Karl Barth on prayer (claim about wills ordered, not erased) | Could not check from here | Cut |
+| Christian Smith, moralistic therapeutic deism; Taylor | Known: Soul Searching 2005; A Secular Age 2007 | Paraphrase; Taylor's idea named (immanent frame) |
+| Heidelberg Catechism on the fifth petition | Known: Q&A 126, 1563 | Paraphrase |
+| Arendt, Eichmann in Jerusalem, "banality of evil" | Known: 1963, trial 1961 | Kept as her phrase, unquoted |
+| "God helps those who help themselves" from Aesop by way of Franklin | Known: Aesop's fable; Poor Richard 1736 | Kept as proverb with attribution |
+| Hedonic treadmill research | General finding | Kept general, no study named |
+| Forgiveness research | General finding | "A good deal of research suggests", no study named |
+| A hundred denarii as "a few days' wages" | A denarius was a day's wage | Corrected to "a few months' wages" |
+| Biography: atheism, fatherless, five sons as credentials (summary, primer, FAQ, script) | Credentials | "Raised without a father" kept once, session 1 teaching; rest removed; FAQ about the writer cut |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## The Parables
+
+| Claim | How checked | Result |
+|---|---|---|
+| C. H. Dodd's definition of a parable | Web search: several sources quote it from The Parables of the Kingdom (1935) | Quoted exactly with source and date (objection 2, session 1); glossary quotes a phrase |
+| Dodd, realized eschatology | Known | Kept |
+| Jeremias, The Parables of Jesus, 1947, already and not yet | Known in outline | Kept, softened to "often read as" |
+| Jülicher, one main point, "1888" | Die Gleichnisreden Jesu, 1886 (vol. 1) and 1899 (vol. 2) | Dated 1886 to 1899 |
+| Augustine's allegory of the Samaritan, about 400 | Known: Questions on the Gospels 2.19 | Kept |
+| Bailey: inheritance request like wishing the father dead; patriarch doesn't run; father shields son from village | Known as Bailey's argument (The Cross and the Prodigal 1973; Poet and Peasant 1976; Through Peasant Eyes 1980; Jesus Through Middle Eastern Eyes 2008) | Attributed to Bailey as his reading; note that not every scholar accepts every detail; untransliterated ceremony term cut |
+| Snodgrass on leaven as corruption; on Jesus speaking of judgment "more than almost anyone" | Could not confirm these are his | Leaven point made general (Matthew 16:6), unattributed; judgment claim no longer his |
+| Snodgrass, Stories with Intent, 2008 | Known | Kept |
+| Keller, The Prodigal God, 2008 | Known | Kept; "Leader to confirm" removed |
+| Blomberg, Interpreting the Parables | Known: 1990, 2nd ed. 2012 | Dated; "Leader to confirm" removed |
+| Charles Taylor, the buffered self | Known: A Secular Age, 2007 | Kept, named as his term |
+| Jericho road about seventeen miles | Known | "About seventeen miles" |
+| Jew-Samaritan enmity from 722 BC, Gerizim | Known | Kept; John 4:9 added from Scripture; "half-breed" removed |
+| Timeline: Isaiah 740 BC listed before Nathan 1000 BC | Order wrong | Reordered; dates loosened ("about") |
+| Bibliography "The Meaning of the Parables" by "Pastoral and expository literature" | Placeholder, not a book | Cut |
+| A hundred denarii | About a hundred days' wages | Stated |
+| Biography: atheism (summary, primer, two FAQs) | Credentials | Kept once, session 1 teaching; FAQ about the writer cut (12 to 11) |
+| Scripture | ESV, from memory | ESV with references throughout |

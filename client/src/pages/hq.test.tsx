@@ -11,7 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
-import { ANSWERS } from "@/data/answers";
+import { ANSWERS, type AnswerSteps } from "@/data/answers";
 import { QUESTION_GROUPS, ROWS_HELD_ELSEWHERE } from "@/data/questionGroups";
 import { AGE_ID_BY_NAME, ageOfPerson, peopleOfAge } from "@/lib/historyAges";
 import { answerCandidates, ask, toAnswerPage, type AskCandidate } from "@/lib/askQuestion";
@@ -214,6 +214,31 @@ describe("/answers and /answers/:slug", () => {
     const i = ANSWERS.indexOf(a);
     expect(within(turn).getByRole("link", { name: new RegExp(ANSWERS[i - 1].question.slice(0, 20)) }).getAttribute("href")).toBe(`/answers/${ANSWERS[i - 1].slug}`);
     expect(screen.getByRole("link", { name: /All the questions/ }).getAttribute("href")).toBe("/answers");
+  });
+
+  it("lays out an argued answer: its parts, the numbered steps and the sources; a plain answer has none of them", () => {
+    const a = ANSWERS.find((x) => x.slug === "does-god-actually-exist")!;
+    renderAt(`/answers/${a.slug}`);
+    for (const s of a.sections!) expect(screen.getByRole("heading", { level: 2, name: s.heading })).toBeTruthy();
+    const contents = within(screen.getByRole("navigation", { name: "In this answer" })).getAllByRole("link");
+    expect(contents.map((l) => l.getAttribute("href"))).toEqual([...a.sections!.map((_, k) => `#part-${k + 1}`), "#sources"]);
+    const steps = a.sections!.flatMap((s) => s.body).filter((b): b is AnswerSteps => typeof b !== "string");
+    expect(steps.length).toBe(3);
+    for (const st of steps) for (const p of st.premises) expect(screen.getByText(p).tagName).toBe("LI");
+    expect(screen.getByRole("heading", { level: 2, name: "Sources and further reading" })).toBeTruthy();
+    expect(screen.getByText("The Miracle of Theism").tagName).toBe("CITE");
+  });
+
+  it("keeps the argued form to the pilot of three, each with checked sources", () => {
+    const argued = ANSWERS.filter((a) => a.sections);
+    expect(argued.map((a) => a.slug).sort()).toEqual(["does-god-actually-exist", "if-god-is-good-why-suffering", "why-would-anyone-trust-the-bible"]);
+    for (const a of argued) {
+      expect(a.paragraphs.length).toBeGreaterThan(0);
+      expect(a.sources!.length).toBeGreaterThanOrEqual(5);
+      for (const s of a.sources!) expect(s.year).toMatch(/\d{4}/);
+    }
+    renderAt("/answers/can-you-lose-your-salvation");
+    expect(screen.queryByRole("heading", { name: "Sources and further reading" })).toBeNull();
   });
 
   it("says plainly when an answer is not there", () => {

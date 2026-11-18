@@ -596,6 +596,27 @@ const paras = (text) =>
 const sec = (heading, body) => (body ? `<section><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
 const article = (parts) => `<article>\n${parts.filter(Boolean).join("\n")}\n</article>`;
 
+/** An argued answer's parts and sources (answers.ts `sections`, `sources`), as plain HTML. */
+function argued(a) {
+  const parts = (a.sections ?? []).map((sec) => {
+    const body = sec.body
+      .map((b) =>
+        typeof b === "string"
+          ? `<p>${escapeHtml(b)}</p>`
+          : `<figure><figcaption>${escapeHtml(b.kind)}</figcaption><ol>${b.premises.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ol><p>So: ${escapeHtml(b.conclusion)}</p></figure>`,
+      )
+      .join("\n");
+    return `<h2>${escapeHtml(sec.heading)}</h2>\n${body}`;
+  });
+  const sources = a.sources ?? [];
+  if (sources.length) {
+    const li = (x) =>
+      `<li>${escapeHtml(x.author)}, ${x.in ? `&ldquo;${escapeHtml(x.title)},&rdquo; <cite>${escapeHtml(x.in)}</cite>` : `<cite>${escapeHtml(x.title)}</cite>`} (${escapeHtml(x.year)}).${x.note ? ` ${escapeHtml(x.note)}` : ""}</li>`;
+    parts.push(`<h2>Sources and further reading</h2>\n<ul>${sources.map(li).join("")}</ul>`);
+  }
+  return parts.join("\n");
+}
+
 /** client/src/data/answers.ts is TypeScript; bundle it once to read it. */
 let answersCache;
 async function loadAnswers() {
@@ -1610,6 +1631,7 @@ async function main() {
         `<p class="pre-eyebrow"><a href="/answers">Honest answers</a></p>`,
         `<h1>${escapeHtml(a.question)}</h1>`,
         (a.paragraphs ?? []).map((x) => `<p>${escapeHtml(x)}</p>`).join("\n"),
+        argued(a),
         a.essaySlug && shelf.isPublic(a.essaySlug) ? `<p><a href="/writing/${escapeHtml(a.essaySlug)}">The full essay: ${escapeHtml(a.essayTitle ?? "")}</a></p>` : "",
         a.bookHref && a.bookTitle ? `<p><a href="${escapeHtml(a.bookHref)}">The book behind it: ${escapeHtml(a.bookTitle)}</a></p>` : "",
         `<nav aria-label="Previous and next question"><ul>`,
