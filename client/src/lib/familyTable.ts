@@ -15,7 +15,7 @@
  */
 import { familySetDayOn, familyWeekOn, onFamilyMap, type FamilySetKey } from "./familyYear";
 import { FAMILY_SETS, FAMILY_SET_TITLES, FAMILY_TITLES } from "./familyYear.generated";
-import { catechismWeekIndex } from "./familyCatechism";
+import { catechismWeekIndex, familyQuestionIndex, type CatechismPlace } from "./familyCatechism";
 import { readStoredJSON, writeStoredJSON } from "./storage";
 
 export const FAMILY_INDEX_URL = "/family/index.json";
@@ -42,6 +42,12 @@ export interface FamilyIndexRow {
   description: string;
   /** Weekly: its theme group in the library. */
   group?: string;
+  /**
+   * Seasonal: the day's passage word for word from the Berean Standard Bible
+   * (scripts/lib/family-index.mjs, bsbReading). The set's own file holds a
+   * retelling; the page shows this instead where it is there.
+   */
+  bsb?: string;
   /** Some weeks: one line for the parents and the page behind tonight. */
   grownups?: { line: string; href: string; title: string };
 }
@@ -148,6 +154,50 @@ export function tonightTitle(t: Tonight): string | null {
   return FAMILY_TITLES[t.id] ?? null;
 }
 
+/** The calendar date `days` after (or before) a YYYY-MM-DD date. */
+const isoOf = (day: number) => new Date(day * DAY_MS).toISOString().slice(0, 10);
+export const addDays = (date: string, days: number) => isoOf(dayNumber(date) + days);
+
+/** The Sunday that starts the week (Sunday to Saturday) holding the date. */
+export function weekStartOf(date: string): string {
+  const day = dayNumber(date);
+  return isoOf(day - new Date(day * DAY_MS).getUTCDay());
+}
+
+/**
+ * The first night after `date` whose devotion is a different one: next Sunday
+ * in an ordinary week, tomorrow inside a daily set. Null when the map ends
+ * first.
+ */
+export function nextNewNight(date: string): { date: string; tonight: Tonight } | null {
+  const now = tonightOn(date);
+  for (let i = 1; i <= 8; i++) {
+    const d = addDays(date, i);
+    const t = tonightOn(d);
+    if (!t) return null;
+    if (!now || t.id !== now.id) return { date: d, tonight: t };
+  }
+  return null;
+}
+
+/** "tomorrow", or the weekday: when the next devotion comes, as a family would say it. */
+export function nextSaid(date: string, today: string): string {
+  if (dayNumber(date) - dayNumber(today) === 1) return "tomorrow";
+  return new Date(dayNumber(date) * DAY_MS).toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
+}
+
+/**
+ * How a devotion's day is named on a given night. A day of a daily set
+ * carries a date for a label ("December 1"), and a week has nights its set
+ * does not cover (Advent Sunday and the Monday after it fall before December
+ * 1; see tonightOn). On those nights the label would name the wrong date, so
+ * the day is named by its number: "Day 1".
+ */
+export function nightLabel(row: Pick<FamilyIndexRow, "id" | "label" | "day">, today: string): string | undefined {
+  if (!row.day || tonightOn(today)?.id !== row.id) return row.label;
+  return familySetDayOn(today) ? row.label : `Day ${row.day}`;
+}
+
 /**
  * Which week of the year a date is in: weeks run Sunday to Saturday, and week
  * 1 is the week that holds January 1 of the date's own year.
@@ -182,6 +232,16 @@ export function placeOf(row: FamilyIndexRow, index: FamilyIndex): { unit?: strin
 export function catechismThisWeek(list: CatechismLine[], now: Date = new Date()): CatechismLine | null {
   if (list.length === 0) return null;
   return list[catechismWeekIndex(now, list.length)] ?? null;
+}
+
+/**
+ * The question a family is on: its own place in the catechism (question 1
+ * until it moves), or the calendar's weekly pick when it has chosen to follow
+ * the calendar. `own` says which, so a page can name it truthfully.
+ */
+export function catechismFor(list: CatechismLine[], place: CatechismPlace, now: Date = new Date()): { line: CatechismLine; own: boolean } | null {
+  const line = list[familyQuestionIndex(place, list.length, now)];
+  return line ? { line, own: place.follow === "own" } : null;
 }
 
 // What this device remembers.
@@ -248,6 +308,19 @@ export function recordDevotionDone(id: string, date: string): { ok: boolean; alr
 export function lastDone(progress: FamilyProgress): FamilyDone | null {
   let best: FamilyDone | null = null;
   for (const d of progress.done) if (!best || d.date >= best.date) best = d;
+  return best;
+}
+
+/**
+ * Whether this device has a devotion marked done in the week holding `today`
+ * (Sunday up to tonight): the latest such night, or null. There is one
+ * devotion a week outside the daily sets, so a family that has done it should
+ * be told so on the other six nights, not handed the same Start button.
+ */
+export function doneThisWeek(progress: FamilyProgress, id: string, today: string): FamilyDone | null {
+  const from = weekStartOf(today);
+  let best: FamilyDone | null = null;
+  for (const d of progress.done) if (d.id === id && d.date >= from && d.date <= today && (!best || d.date > best.date)) best = d;
   return best;
 }
 

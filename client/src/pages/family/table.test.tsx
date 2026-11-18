@@ -86,11 +86,13 @@ describe("/family", () => {
     expect(within(card).getByText(`${tonight.passage} · About ten minutes`)).toBeInTheDocument();
     expect(within(card).getByText(`Week ${weekOfYear("2026-11-03")} of the year`, { exact: false })).toBeInTheDocument();
     expect(within(card).getByText(`Last time: ${row("identity").title}, Friday`, { exact: false })).toBeInTheDocument();
-    expect(within(card).getByRole("link", { name: "Start" })).toHaveAttribute("href", "/family/devotions/goodness?mode=table");
+    expect(within(card).getByRole("link", { name: "Start tonight's devotion" })).toHaveAttribute("href", "/family/devotions/goodness?mode=table");
     expect(within(card).getByRole("link", { name: "Read it first" })).toHaveAttribute("href", "/family/devotions/goodness");
 
-    const q = INDEX.catechism[catechismWeekIndex(when, INDEX.catechism.length)];
-    expect(screen.getByText(`The catechism · Question ${q.number}`)).toBeInTheDocument();
+    // A family starts the catechism at question 1, not at the calendar's question (audit 2026-11, F4).
+    const q = INDEX.catechism[0];
+    expect(catechismWeekIndex(when, INDEX.catechism.length)).not.toBe(0);
+    expect(screen.getByText("Your place in the catechism · Question 1")).toBeInTheDocument();
     expect(screen.getByText(q.question)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Thanksgiving week\s*November 20 to 26/ })).toHaveAttribute("href", "/family/devotions?tab=thanksgiving");
 
@@ -103,7 +105,7 @@ describe("/family", () => {
     at(new Date(2026, 11, 6, 18)); // Sunday, December 6, 2026: Advent, day 6
     serveFamily();
     renderAt("/family");
-    const start = await screen.findByRole("link", { name: "Start" });
+    const start = await screen.findByRole("link", { name: "Start tonight's devotion" });
     expect(start).toHaveAttribute("href", "/family/devotions/advent-6?mode=table");
     fireEvent.click(start);
     expect(await screen.findByRole("heading", { level: 2, name: "Read" })).toBeInTheDocument();
@@ -205,13 +207,17 @@ describe("/family/devotions/:id", () => {
     scrollTo.mockRestore();
   });
 
-  it("gives a day of a daily set its own page, named as the paraphrase it is", async () => {
+  it("gives a day of a daily set its own page, with the Bible text named and the retelling marked as one", async () => {
     at(new Date(2026, 10, 3, 19));
     serveFamily();
     renderAt("/family/devotions/advent-6");
     expect(await screen.findByRole("heading", { level: 1, name: row("advent-6").title })).toBeInTheDocument();
     expect(screen.getByText("Day 6 of 25 · Advent")).toBeInTheDocument();
-    expect(screen.getByText(/The wording here is a paraphrase/)).toBeInTheDocument();
+    // The passage is the Berean Standard Bible from the site's own Bible data (audit 2026-11, F5).
+    expect(screen.getByText(/^For unto us a child is born, unto us a son is given/)).toBeInTheDocument();
+    expect(screen.getByText(/Scripture quoted from the Berean Standard Bible/)).toBeInTheDocument();
+    expect(screen.queryByText(/The wording here is a paraphrase/)).toBeNull();
+    expect(screen.getByText("In other words (a retelling, not a quotation)")).toBeInTheDocument();
     expect(screen.queryByRole("heading", { level: 2, name: "Do" })).toBeNull();
     expect(screen.getByRole("link", { name: `Next: ${row("advent-7").title}` })).toBeInTheDocument();
   });

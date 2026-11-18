@@ -323,11 +323,14 @@ describe("the other pages that gain live references (real data)", () => {
   it("the catechism: the verse is printed, so its reference links to the chapter", async () => {
     const user = userEvent.setup();
     page(<FamilyCatechism />, "/family/catechism");
-    // Question 1 in the list (the "this week" card above may hold another).
+    // Question 1 in the list. A family starts at question 1, so the card for
+    // its own place above holds the same question and opens with it.
     const buttons = await screen.findAllByRole("button", { name: /Who made you\?/ });
     await user.click(buttons[buttons.length - 1]);
-    const link = await screen.findByRole("link", { name: "Genesis 1:1" });
-    expect(link).toHaveAttribute("href", "/study/bible/genesis/1#v1");
-    expect(link).not.toHaveAttribute("aria-haspopup");
+    const links = await screen.findAllByRole("link", { name: "Genesis 1:1" });
+    for (const link of links) {
+      expect(link).toHaveAttribute("href", "/study/bible/genesis/1#v1");
+      expect(link).not.toHaveAttribute("aria-haspopup");
+    }
   });
 });

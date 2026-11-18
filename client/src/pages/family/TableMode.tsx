@@ -39,6 +39,7 @@ export function TableFrame({ title, leaveHref, children }: { title: string; leav
 export default function TableMode({
   devotion,
   catechism,
+  own,
   ask,
   step,
   onStepChange,
@@ -47,6 +48,8 @@ export default function TableMode({
 }: {
   devotion: Devotion;
   catechism: CatechismLine | null;
+  /** The question is the family's own place in the catechism, not the calendar's. */
+  own?: boolean;
   /** Whose questions to ask, where the devotion has age bands (U21). */
   ask?: AskChoice;
   /** Zero-based. */
@@ -70,7 +73,7 @@ export default function TableMode({
     title: part.title,
     content: (
       <>
-        <PartBody part={part} devotion={devotion} catechism={catechism} ask={ask} />
+        <PartBody part={part} devotion={devotion} catechism={catechism} ask={ask} own={own} />
         {part.id === "read" && <ScriptureNote rendering={devotion.rendering === "bsb" ? "bsb" : "paraphrase"} />}
       </>
     ),
@@ -89,6 +92,9 @@ export default function TableMode({
           <div className="tb-table__actions">
             <Link href="/family" className="st-action">
               Back to Family
+            </Link>
+            <Link href="/family/tonight" className="st-action st-action--quiet">
+              The rest of this week
             </Link>
           </div>
         </div>

@@ -24,12 +24,16 @@
  * would be without the file, so nothing on the site can link, prerender, or
  * list a devotion James has not read.
  *
+ * A day of a daily set also carries its passage in the Berean Standard Bible
+ * (`bsb`, see bsbReading), so the devotion's page shows the Bible text where
+ * the set itself holds a retelling.
+ *
  * Built by scripts/build-family-index.mjs; CI runs it with --check.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { readRef } from "./bsb.mjs";
+import { passage, readRef, readingText } from "./bsb.mjs";
 import { devotionsIn } from "./family-devotion-file.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -113,6 +117,34 @@ function studyHref(ref) {
   if (!r) return null;
   const p = r.parts[0];
   return `/study/bible/${r.book.slug}/${p.c1}${p.v2 === Infinity ? "" : `#v${p.v1}`}`;
+}
+
+/** Every double quotation mark opens before it closes, and none is left open. */
+function quotesSit(text) {
+  let depth = 0;
+  for (const ch of text) {
+    if (ch === "“") depth++;
+    if (ch === "”" && --depth < 0) return false;
+  }
+  return depth === 0;
+}
+
+/**
+ * A daily set's passage in the Berean Standard Bible, word for word, for the
+ * screen (audit 2026-11, F5): the days were written with a retelling, and the
+ * printed booklets already give the Bible text. The words are the site's own
+ * Bible data (./bsb.mjs), set for reading aloud as the booklets and the
+ * weekly devotions set them: a psalm's heading off, and a speech the passage
+ * enters or leaves midway given its missing mark. Null when the reference
+ * does not resolve or its quotation marks cannot be made to sit; that day
+ * keeps its retelling, named as a paraphrase.
+ */
+export function bsbReading(ref) {
+  try {
+    return [readingText(ref), `${passage(ref).text}”`].find(quotesSit) ?? null;
+  } catch {
+    return null;
+  }
 }
 
 const read = (root, name) => JSON.parse(fs.readFileSync(path.join(root, "client/public", name), "utf8"));
@@ -201,6 +233,7 @@ export function buildFamilyIndex(root = ROOT) {
           href: studyHref(d.passage),
           file: `/${SEASONAL_FILE}`,
           description: opening(d.reflection),
+          ...(bsbReading(d.passage) ? { bsb: bsbReading(d.passage) } : {}),
         },
         `client/public/${SEASONAL_FILE} ${s.key} day ${d.day}`,
       );
