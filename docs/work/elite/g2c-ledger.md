@@ -282,3 +282,29 @@ The second run added three quotations to skeptic that the old guide did not carr
 | "Bell says" (about 20 places) | Narrator naming James | Removed |
 | Help: abuse topic in sensitive-pages.json | Untouched; guide text has no help lines of its own | Session 3 and 5 questions, case study and objection now point to the help information printed with the guide; primer names Find Help |
 | Scripture quotations | ESV, from memory | ESV throughout; John 4:6 in the-creeds paraphrased to avoid "journey" |
+
+## The Lord's Prayer
+
+| Claim | How checked | Result |
+|---|---|---|
+| Pope Francis 2019 change to "lead us not into temptation" | Web search: Avvenire and CNA reports, June 2019; Italian missal "non abbandonarci alla tentazione" | Kept, made exact: Italian wording for the Mass only |
+| Jeremias: no Jewish prayer before Jesus addressed God as Abba | Known: The Prayers of Jesus (English 1967) | Paraphrase, attributed |
+| James Barr, "Abba Isn't 'Daddy'", JTS 1988 | Known | Paraphrase; bibliography title and date set |
+| Tertullian: the prayer a summary of the whole gospel | Known: On Prayer 1, about 200 | Paraphrase |
+| Cyprian on calling God Father and the plural petitions | Known: On the Lord's Prayer, about 252 | Paraphrase |
+| Origen: epiousios found in no other Greek writer, coined by the evangelists | Known: On Prayer 27 | Kept; date corrected from 253 to about 233 |
+| New believers not taught the prayer until baptism | The prayer was handed over to candidates as they came to baptism (fourth century) | Softened to "taught to new believers as they came to baptism", fourth century |
+| Didache: pray three times a day; doxology | Known: Didache 8, short form without "kingdom" | Kept, short form stated |
+| Augustine to Proba | Known: Letter 130, about 412 | Kept |
+| Luther, A Simple Way to Pray, 1535, for Peter the barber | Known | Kept |
+| Calvin, Institutes 3.20, means and end | Known | Paraphrase |
+| Karl Barth on prayer (claim about wills ordered, not erased) | Could not check from here | Cut |
+| Christian Smith, moralistic therapeutic deism; Taylor | Known: Soul Searching 2005; A Secular Age 2007 | Paraphrase; Taylor's idea named (immanent frame) |
+| Heidelberg Catechism on the fifth petition | Known: Q&A 126, 1563 | Paraphrase |
+| Arendt, Eichmann in Jerusalem, "banality of evil" | Known: 1963, trial 1961 | Kept as her phrase, unquoted |
+| "God helps those who help themselves" from Aesop by way of Franklin | Known: Aesop's fable; Poor Richard 1736 | Kept as proverb with attribution |
+| Hedonic treadmill research | General finding | Kept general, no study named |
+| Forgiveness research | General finding | "A good deal of research suggests", no study named |
+| A hundred denarii as "a few days' wages" | A denarius was a day's wage | Corrected to "a few months' wages" |
+| Biography: atheism, fatherless, five sons as credentials (summary, primer, FAQ, script) | Credentials | "Raised without a father" kept once, session 1 teaching; rest removed; FAQ about the writer cut |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
