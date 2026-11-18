@@ -443,3 +443,26 @@ The second run added three quotations to skeptic that the old guide did not carr
 | "I write books" (session 1) | Stamp | Cut |
 | Biography: atheism (summary, primer, sessions 1, 2, 4, FAQ 7, FAQ 10) | Credential | Kept once, session 2 teaching |
 | Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
+
+## Womanhood
+
+| Claim | How checked | Result |
+|---|---|---|
+| Chrysostom praised Junia as a woman apostle; read as female "for the first thousand years" | Searched: Homily 31 on Romans reads her as a woman; first masculine reading Aegidius of Rome (13th century); "Junias" unattested in antiquity | Paraphrase kept; "no commentator we know of read the name as a man's until about the thirteenth century" |
+| Romans 16:7 "notable among the apostles" | ESV "well known to the apostles"; Greek allows "among" | ESV quoted; both readings named |
+| Genesis 3:16 "your desire shall be for your husband" | ESV 2016 text: "contrary to your husband"; earlier ESV "for" | Current ESV quoted, earlier wording noted |
+| Galatians 3:28 "neither male nor female" | ESV "there is no male and female" | Corrected |
+| Ezer used most often of God | Known: most of its Old Testament uses refer to God (e.g. Psalm 121:2) | Kept |
+| Priscilla named first "more often than not" | Known: first in Acts 18:18, 26; Romans 16:3; 2 Timothy 4:19; second in Acts 18:2; 1 Corinthians 16:19 | "four of the six" |
+| Phoebe "almost certainly" carried and read Romans | Carrying is the majority view; reading aloud is conjecture | "Most scholars think she carried the letter" |
+| Jeremiah active when Huldah was consulted | Jeremiah 1:2 (Josiah's 13th year); book found in the 18th (2 Kings 22:3) | Kept, Jeremiah 1:2 cited |
+| "Early church" called Mary Magdalene apostle to the apostles | Title is later tradition | "Later Christian tradition" |
+| Anna "at eighty-four" | ESV text "until she was eighty-four," note allows 84 years a widow | Both given |
+| Session 4: "cruciform authority of session three, the headship that dies" | Session 3 is Proverbs 31; reference wrong | Rests on Mark 10:45 |
+| Ephesian women "taught a mythology Paul is fighting" | Hypothesis, not established | Marked as what many egalitarian scholars argue; 1 Timothy 5:13-15, 2 Timothy 3:6-7 cited |
+| Luther's "milkmaid" | Popular attribution | Luther 1520, To the Christian Nobility: shoemaker, smith, farmer |
+| Josiah's reform 622 BC; Perpetua 203; Argula von Grumbach 1523; Chrysostom on Romans 390s | Known | Kept |
+| Half the Church (2011); Two Views on Women in Ministry; Vindicating the Vixens; Schuurman, Vocation (2004); Keller, The Meaning of Marriage | Known, real books | "Leader to confirm" removed |
+| Biography: "father of five sons" (summary, FAQ 9, facilitator open, invite caption) | Credential | All cut |
+| Help lines | Old file has none (script: no number, hotline or Find Help); no sensitive-pages topic | Find Help path added in primer; none removed |
+| Scripture | ESV, from memory; no ESV in the repository | ESV with references throughout |
