@@ -238,3 +238,30 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | Hauerwas, After Christendom? (1991); Resident Aliens (1989) social-strategy line; Noll's Scandal (1994) opening line | Known | Kept in the bibliography notes as before, unquoted |
 | Case studies told as real | No source | Reframed as "Suppose" |
 | Help lines | Old guide had none | None added |
+
+## church-and-empire
+
+| Claim | How checked | Result |
+|---|---|---|
+| Narrator "Bell" lines; summary "He writes from inside the indictment"; leader primer "a pastor in Michigan"; FAQ on why the study implicates the writer | Rulebook, location and method talk | First person kept in the summary; location and method FAQ cut |
+| "Five essays by James Bell" | His essays (essaySlug kept per session) | Kept as "five of my essays" |
+| "I have five sons inheriting a thinner world" (session 2 teaching and objection) | Confirmed biography | Kept once, in the session 2 teaching where the grief turns on it; cut from the objection |
+| Mark 12:16 "Whose image" | ESV reads "likeness" | ESV wording used; the eikon point kept and explained (same Greek word as the Greek Old Testament's Genesis 1:27) |
+| Denarius of Tiberius, "son of the divine Augustus" | Known | Kept |
+| "That they can produce one inside the temple precincts already convicts them" | Interpretive overstatement | Softened to "it says something that ... they have one to hand" |
+| Tertullian, "Render the coin to Caesar and yourself to God, for if all things are Caesar's, what will be left for God" | Known (On Idolatry 15) | Kept as paraphrase, work named |
+| Tertullian, "see how they love one another"; "the blood of the martyrs is the seed" | Known (Apology 39 and 50) | Kept as paraphrase, attributed; the scriptureStudy entry "Tertullian, on the blood of the martyrs" replaced by Revelation 12:11 with the paraphrase in the note |
+| Pliny about 112, three questions, incense before the emperor's image, cursing Christ | Known (Letters 10.96) | Kept, stated as in the letter |
+| Nero 64; Lyon 177 (Eusebius); Decius 250 certificates; Diocletian 303; Milan 313; Thessalonica 380; City of God about 426 after 410; Barmen 1934 (largely Barth); Bellah 1967; Resident Aliens 1989; Newbigin returned 1974 | Known | Kept; Barmen "Leader to confirm" removed |
+| Luther's two-kingdoms teaching dated 1521 | His treatise on temporal authority is 1523 | Corrected to 1523 |
+| Westphalia "ruler's religion is the land's" | Augsburg 1555 principle | Corrected as in christian-nationalism |
+| Kierkegaard "called it the great illusion" (Practice in Christianity) | The "illusion" language is chiefly from his late writings and The Point of View; Practice in Christianity treats the offense | Paraphrased as his last years' attack on Christendom; bibliography note adjusted |
+| Newbigin found "a pagan culture with Christian memories" | Wording not verified | Paraphrased: found Britain a mission field |
+| Stark: growth through plagues "the simple math ... did the rest" | Known, but his account is wider (networks, fertility, no infant exposure) | Stated with the wider account; marked as one sociologist's argument to weigh |
+| "That decayed doctrine helped a church stay quiet" | Historians' reading, not settled | "Many historians believe" |
+| "Bell also cites ..." / "Bell also draws on ..." in bibliography notes | About the writer | Cut |
+| Ethics, Barmen, Leithart "Leader to confirm" | Known (Ethics, posthumous, with the "thinking in two spheres" section; Barmen articles 1 and 2; Leithart 2010) | Notes removed |
+| 1 Peter 2:9 "chosen people" | ESV reads "chosen race" | ESV wording |
+| Matthew 13:31 memory verse "which a man took" | ESV reads "that a man took" | ESV wording |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
