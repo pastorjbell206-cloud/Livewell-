@@ -354,3 +354,66 @@ Every quotation of a person (other than Scripture), every book, date and biograp
 | Scripture quoted: Deuteronomy 6:4, Psalm 68:5, Jeremiah 9:23-24, Hosea 6:6, Matthew 7:11, 7:22-23, 28:19, Mark 1:41, 10:14, Luke 15:18-20, John 1:1, 1:14, 1:18, 8:11, 8:58, 10:30, 14:8-9, 14:16-17, 17:3, 17:5, 17:20-26, Romans 5:5, 8:15 (to "we cry", the rest described, the verse has exclamation points), 8:26, 1 Corinthians 8:1-3, 12:11, 2 Corinthians 13:14, Galatians 4:6 (phrase), 4:9, Ephesians 4:30, Philippians 3:8, Colossians 1:15, 2:9, Hebrews 1:1-3, 1 John 3:1, 4:8, Revelation 21:4 | ESV from memory | Quoted with references; Matthew 7:11 quoted without its closing exclamation point (ends a sentence of ours with a period); Galatians 4:6 and Romans 8:15 "Abba! Father!" described rather than quoted |
 | Quotations of people | Old guide quoted no one directly beyond creed text and the Arian slogan | Paraphrased: Augustine (sermon, restless heart), Calvin 1.2.1, Packer on adoption, Athanasius. Kept: creed phrases. Cut: none. Added: none |
 | Session 3 (fatherhood) | Not on the sensitive list; no help lines in the old guide | No help line to keep; added in plain words a pointer to a leader, pastor or counselor in the practice, leader primer and FAQ, no number invented |
+
+## Manhood
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography stamps: atheism (summary, FAQ x3, facilitator open), fatherlessness and five sons (summary, leader primer, FAQ x3, facilitator open, bulletin, pulpit, invite, session 2 teaching opening, session 4 teaching, session 5 teaching) | Credential use | Kept once, in session 5 teaching, where the old guide stated it ("I was the boy with the empty chair, and I have five sons... the wound stops here"); removed everywhere else, atheism entirely. Session 4's "there are seasons it nearly buries him" (a veiled recollection) cut |
+| "Bell says / Bell takes the strong case" throughout summaries and questions | Narrator calling him "Bell" | Removed; teaching in first person; questions rebuilt on the passages |
+| Help lines: 988 lifeline (leader primer, FAQ 3, session 4 going deeper), "do not leave him alone in it" (primer, FAQ 3) | Checked by script against the old file | Kept word for word in the same places |
+| "Most men have exactly one person... too many zero" (stated as fact) | Searched: Survey Center on American Life, American Perspectives Survey, May 2021: 15% of men report no close friends, up from 3% in 1990; "friendship recession" is the Center's phrase | Kept the observation as a general one ("many men"), and added the named survey with its figures in FAQ 7, session 4 teaching and going deeper (replaces the old guide's unsourced "several-fold" claim) |
+| Men die by suicide at several times the rate of women | Known (CDC data, roughly four to one in the US) | Kept as "several times" |
+| Mark 10 argument "on one of the last nights before the cross" | Mark 10:35-45 is on the road to Jerusalem (James and John's request); the Last Supper dispute is Luke 22:24 | Corrected: Mark 10 placed on the road, Luke 22:24 added for the supper |
+| "Jesus says five words... But it shall not be so among you" | Seven words | Count removed |
+| Malachi "the last word of the Old Testament"; timeline "circa 430 BC" | True of the Christian ordering, not the Hebrew Bible (which ends with Chronicles); date debated | "The closing book of the Old Testament in Christian Bibles"; "Fifth century BC" |
+| Timeline Paul to the Corinthians "circa AD 60" | 1 Corinthians usually dated about 53 to 55 | "Mid-50s AD" |
+| Timeline Augustine, a father "who shaped him little" and "a self curved in on itself" | Patricius was ambitious for his son's education and baptized near death (Confessions 2-3, 9); "curved in on itself" is Luther's phrase | Restated with Patricius described from the Confessions; Luther's phrase dropped |
+| Temple cleansing "the poor being fleeced" | Not stated in the text | Replaced with Mark 11:17 quoted (house of prayer, den of robbers) |
+| Temple cleansing "in all four Gospels" | Known (Matthew 21, Mark 11, Luke 19, John 2); the whip is John only | Kept, with the whip quoted from John 2:15 |
+| Industrial Revolution broke father-son apprenticeship, attributed to Pearcey | Known (her argument in The Toxic War on Masculinity, 2023) | Kept as her argument; "for most of human history a boy" softened to "many boys" |
+| Pearcey: committed Christian men among the most engaged husbands and fathers | Known (she draws on sociological research, chiefly W. Bradford Wilcox) | Kept, attributed to her and to "sociological research" |
+| Bly, Iron John 1990; Eldredge, Wild at Heart 2001; Farrell and Gray, The Boy Crisis 2018; Reeves 2022; Junger, Tribe 2016; Rohr, Adam's Return 2004; Bancroft 2002; Hughes 1991; Ortlund 2020; Taylor, A Secular Age 2007 | Known | Kept; dates added to bibliography notes |
+| Junger's argument "on soldiers and belonging" | Known (Tribe) | Kept as paraphrase, book named |
+| Bibliography "Leader to confirm" (2), "Leader to weigh against the study's frame", "common grace under the gospel", "Offered as a position to weigh, not a settled endorsement" | Rulebook language | Removed; notes describe the books only |
+| "Every man has authority over... a wife" (session 5) | Touches the contested headship question, which this guide does not argue | Made "children, a team, a household, a younger man"; no position stated |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Scripture quoted: Genesis 1:27 (phrase), 2:15, 3:6, Deuteronomy 6:6-7, Psalm 1:3, 27:10, 68:5, Proverbs 16:32, 27:17, Ecclesiastes 4:9-10, 4:12, Isaiah 42:3, Micah 6:8, Malachi 4:6, Matthew 3:17, 11:29, 26:53, Mark 10:32, 10:41-45, 11:17, 14:33-34, 15:5, Luke 15:20, 22:24, 23:34, John 2:15, 10:18, 11:35, 13:3-4, 13:14-15, Romans 8:15 (phrase; "Abba! Father!" described), 1 Corinthians 16:13-14, 2 Corinthians 6:18, Galatians 6:2, Philippians 2:5-7, 1 Timothy 6:11, 2 Timothy 2:2, James 5:16, 1 John 3:1, 1 Samuel 18:1 | ESV from memory | Quoted with references; the only exclamation points are Ecclesiastes 4:10's own |
+| Quotations of people | Old guide quoted no one but Scripture; Taylor's term "buffered self" | Kept: the term. Added: none |
+| Help box | Not on the sensitive list | The guide's own 988 lines kept as they stood |
+
+## Mishpat (Justice)
+
+| Claim | How checked | Result |
+|---|---|---|
+| "Drawn from James Bell's book Mishpat" (summary, bulletin, pulpit, invite; "the whole book" in session 5) | Mishpat is not on the three-book shelf (client/src/lib/bookShelf.ts) | Plug dropped everywhere |
+| "Bell takes / Bell says / Bell does not stand above" throughout | Narrator calling him "Bell" | Removed; teaching in first person; questions rebuilt on the passages. Self-implications the old guide stated in his voice kept ("I have led worship that God may have despised", "I include myself" on clergy, "We did this. I did this.") |
+| Bonhoeffer "said that silence in the face of evil is itself evil and that not to speak is to speak" (timeline, bibliography note) | Searched: not found in Bonhoeffer's works (Throckmorton 2016; the editor of the English critical edition; Wikiquote lists it as misattributed) | Cut. Timeline keeps his opposition to the regime and his execution at Flossenbürg on April 9, 1945, "about two weeks before the camp is liberated" (old: "days before") |
+| King, Letter from Birmingham Jail, white moderate "prefers... the absence of tension to... the presence of justice" | Known (1963 letter: "a negative peace which is the absence of tension to a positive peace which is the presence of justice") | Kept as paraphrase, no quotation marks, as before |
+| King, eleven o'clock Sunday "the most segregated hour" | Known (he said "one of the most segregated hours, if not the most segregated hour", e.g. 1960) | Made "one of the most segregated hours", "said more than once" |
+| Wolterstorff "spent a career insisting we read the Hebrew Scriptures through Greek eyes... love and justice one" | Known: Justice: Rights and Wrongs (2008) roots justice-as-rights in Scripture; Justice in Love (2011) argues love and justice are not at odds | Restated narrowly with both books named; the Greek "inner harmony" view attributed to Plato's Republic |
+| Brueggemann, prophet cracks open a closed imagination | Known (The Prophetic Imagination, 1978) | Kept as paraphrase, year added |
+| "Thirty-six times, by the old rabbinic count, the Torah commands love of the foreigner" | Known: Talmud, Bava Metzia 59b, counts 36 (some say 46) places warning against wronging the ger | Restated as the Talmud's count of warnings against wronging the stranger |
+| Mishpat used "more than four hundred times" | Known (about 420 occurrences in the Hebrew Bible) | Kept, as the Hebrew Bible's use of the word |
+| Timeline: Sinai "circa 1446 BC", Jubilee "circa 1375 BC" | Dates debated; the Jubilee date was not a recognized date | Both "Date debated" |
+| Timeline: Jubilee "debts dissolved" | Leviticus 25 returns land and frees the enslaved; debt release is the seventh-year law of Deuteronomy 15 | Debts dropped from Jubilee |
+| Timeline: Isaiah "circa 700 BC" for both chapter 10 and 58 | Chapter 58 is usually dated later | "Eighth century BC" for chapter 10, "later chapters of the book" for 58 |
+| Timeline: Ephesians "circa AD 62" | Known (if Pauline and from Roman imprisonment, about 60 to 62) | "About AD 60 to 62" |
+| Timeline: Needle's Eye gate legend "circa AD 1100s" | Origin of the story uncertain; no evidence such a gate existed | "Medieval and later"; "no evidence such a gate existed" added |
+| Timeline: race hardening "1525-1834" | Spurious precision | "1500s to 1800s"; curse of Ham named (known) |
+| Timeline: Wilberforce "1807-1833", "sees ... slavery itself abolished" | Known: Slave Trade Act 1807; he died 29 July 1833, days after hearing the abolition bill would pass | "1787 to 1833", restated accurately |
+| Timeline: Gutierrez "circa 1971" | Known (Teología de la liberación, 1971) | "1971", book named |
+| Timeline: principalities and powers "circa 1980s ... writers wrestling with the world wars" | Known: Hendrik Berkhof, Christ and the Powers (1953); Walter Wink's trilogy from 1984 | "1950s to 1990s", both named |
+| Dividing wall = the temple barrier with death-warning inscriptions | Known (soreg inscriptions found 1871 and 1935); Paul's reference to it is a reading | Kept, marked "many readers hear an echo" |
+| "Paul, who had once guarded that separation with his life" | Overstated | Cut |
+| Reconciliation "in the Greek, the language of war and debt" | Overpressed word study | Made "the end of enmity between estranged parties" |
+| "A full third of the Psalms are laments" | Counts vary | "By many counts about a third" |
+| James "a thousand years after Amos"; Micah "three thousand years" | Amos about 760 BC; James first century AD (about eight centuries); Micah about 2,700 years | "Some eight centuries"; "nearly three thousand years" |
+| Micah 6:8 "love mercy" (memory verse x2, teaching, prayer, timeline) | The guide quotes ESV elsewhere; ESV reads "love kindness" | Restored to ESV, with a note that the Hebrew hesed is rendered "mercy" in some translations; Ephesians 6:12 likewise restored from "our struggle" (NIV) to ESV "we do not wrestle" |
+| Amos 7:12-15 "dresser of fig trees" | ESV "a dresser of sycamore figs" | Quoted exactly |
+| "Jesus said the city killed the prophets" | Matthew 23:37 has exclamation points | Described, not quoted |
+| Bibliography "Leader to confirm" (5), "before attributing them to Bell" (4), "Offered as a balancing voice" | Rulebook language | Removed; notes describe the books, years added (Wolterstorff 2008, Keller 2010, Brueggemann 1978, Wink 1998, Gutierrez 1971, Tisby 2019, Rah 2015, Hochschild 2005) |
+| Case studies told as "Consider a real and common scene" | No source | Reframed as "Suppose"; Ruth, Lazarus, King's letter and Zacchaeus kept as the texts they are |
+| Scripture quoted: Genesis 1:27, Exodus 22:21-24, 23:3, 23:9, Leviticus 19:15, Deuteronomy 10:18-19, 24:17-18, Ruth 4:1, Psalm 13:1-2, 89:14, 113:7, 146:7-9, Proverbs 19:17, 23:10, Isaiah 1:11-17, 5:8, 10:1-2, 58:3-8, Jeremiah 6:14, 22:16, Daniel 9:5, Amos 2:6, 5:21-24, 7:13-15, Micah 6:7-8, Matthew 6:24, 25:40, 27:24, Mark 10:21-22, 10:25, 10:27, Luke 1:51-53, 4:18-21, 10:31-32, 19:8, 22:19, John 13:14, 2 Corinthians 5:18, Galatians 3:28, Ephesians 2:14-16, 6:12, James 4:17, 5:4, 1 Peter 2:24, Revelation 7:9 | ESV from memory | Quoted with references; divine pronouns lowercased as in the ESV; no exclamation points |
+| Quotations of people | Old guide: Bonhoeffer (misattributed, cut); King, Wolterstorff, Brueggemann, Gutierrez as paraphrase | Kept as paraphrase. Added: none |
+| Help box | Not on the sensitive list; no help lines in the old guide (the help script only matched Ephesians 6:12) | Nothing to keep |
