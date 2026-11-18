@@ -14,7 +14,9 @@ import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { ANSWERS } from "@/data/answers";
 import { QUESTION_GROUPS, ROWS_HELD_ELSEWHERE } from "@/data/questionGroups";
 import { AGE_ID_BY_NAME, ageOfPerson, peopleOfAge } from "@/lib/historyAges";
-import { answerCandidates, ask, toAnswerPage } from "@/lib/askQuestion";
+import { answerCandidates, ask, toAnswerPage, type AskCandidate } from "@/lib/askQuestion";
+import { rowTarget } from "@/lib/topics";
+import { ASK_MORE } from "@/components/questions/AskBox";
 import { entryHref, type Era, type Figure } from "@/lib/historyCourse";
 import TheologyHistory from "./TheologyHistory";
 import HistoryEssay from "./history/HistoryEssay";
@@ -81,6 +83,32 @@ describe("the question groups", () => {
     expect(top("can I trust the bible")).toBe("/answers/why-would-anyone-trust-the-bible");
     expect(top("is hell eternal")).toBe("/answers/is-hell-forever-or-does-it-end");
     expect(ask(answerCandidates(), "zzqx flurb")).toEqual([]);
+  });
+
+  // The ten plain questions of the site review (docs/work/elite/REVIEW.md),
+  // over everything the ask box on /topics matches: the answers, the topics
+  // index rows (as Topics.tsx builds them) and the two pages it adds.
+  it("puts the right page first for ten plain questions", () => {
+    const index = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../public/topics/index.json"), "utf8"));
+    const rows: AskCandidate[] = index.rows
+      .filter((r: { href: string }) => !ROWS_HELD_ELSEWHERE.has(r.href))
+      .map((r: Parameters<typeof rowTarget>[0]) => ({ r, href: toAnswerPage(rowTarget(r)) }))
+      .filter(({ href }: { href: string }) => !href.startsWith("/answers"))
+      .map(({ r, href }: { r: { askedAs: string; line: string }; href: string }) => ({ question: r.askedAs, href, keywords: "", body: r.line }));
+    const all = [...answerCandidates(), ...rows, ...ASK_MORE];
+    const first = (q: string, crisis = false) => ask(all, q, crisis)[0]?.href;
+    expect(first("Why does God allow suffering?")).toBe("/answers/if-god-is-good-why-suffering");
+    expect(first("Did the resurrection happen?")).toBe("/answers/did-the-resurrection-actually-happen");
+    expect(first("Does God exist?")).toBe("/answers/does-god-actually-exist");
+    expect(first("Is the Bible true?")).toBe("/answers/why-would-anyone-trust-the-bible");
+    expect(first("Is Jesus the only way?")).toBe("/answers/is-jesus-the-only-way");
+    expect(first("Is hell real?")).toBe("/answers/is-hell-forever-or-does-it-end");
+    expect(first("Why are there so many denominations?")).toBe("/theology/traditions");
+    expect(first("Can I trust the church?")).toBe("/help/church-hurt");
+    expect(first("How do I pray?")).toBe("/help/prayer");
+    expect(first("Why do Christians disagree about baptism?")).toBe("/theology/compare");
+    // When the words call for help, the Find Help page of the same name keeps its place.
+    expect(first("Why does God allow suffering?", true)).toBe("/help/suffering");
   });
 });
 

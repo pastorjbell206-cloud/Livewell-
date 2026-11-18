@@ -11,6 +11,7 @@ import { Link } from "wouter";
 import { ArrowRight, Search } from "lucide-react";
 
 import { ANSWERS } from "@/data/answers";
+import { answerCandidates, ask } from "@/lib/askQuestion";
 
 const FIRST = 3;
 
@@ -32,11 +33,23 @@ export default function QuestionPicker() {
 
   const shown = useMemo(() => {
     const w = word.trim().toLowerCase();
+    // A whole question typed ("why does God allow suffering") is matched the
+    // way the Questions door's ask box matches it, best answer first; one
+    // word narrows the list to the questions that use it.
+    if (/\s/.test(w)) {
+      const order = new Map(ANSWERS.map((a, i) => [a.slug, i]));
+      return ask(answerCandidates(), w)
+        .map((c) => c.answer && { a: c.answer, i: order.get(c.answer.slug) ?? 0 })
+        .filter((x): x is { a: (typeof ANSWERS)[number]; i: number } => !!x);
+    }
     const hits = ANSWERS.map((a, i) => ({ a, i })).filter(({ a }) => !w || `${a.question} ${a.paragraphs.join(" ")} ${a.askedAs ?? ""}`.toLowerCase().includes(w));
     return w || all ? hits : hits.slice(0, FIRST);
   }, [word, all]);
 
-  const answer = ANSWERS[chosen];
+  // The answer shown is the one touched, or, when typing has narrowed the list
+  // past it, the first question still on the list.
+  const current = shown.length && !shown.some((x) => x.i === chosen) ? shown[0].i : chosen;
+  const answer = ANSWERS[current];
 
   return (
     <div>
@@ -61,7 +74,7 @@ export default function QuestionPicker() {
         <ul className="hq-list" aria-label="Questions">
           {shown.map(({ a, i }) => (
             <li key={a.slug}>
-              <button type="button" className="home-chip" aria-pressed={i === chosen} onClick={() => setChosen(i)}>
+              <button type="button" className="home-chip" aria-pressed={i === current} onClick={() => setChosen(i)}>
                 {a.question}
               </button>
             </li>

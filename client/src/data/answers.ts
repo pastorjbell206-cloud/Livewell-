@@ -61,6 +61,7 @@ export const ANSWERS: Answer[] = [
   {
     slug: "if-god-is-good-why-suffering",
     question: "If God is good, why is there so much suffering?",
+    askedAs: "why does god allow suffering why does god let people suffer why do bad things happen to good people pain evil",
     paragraphs: [
       "Suffering does not disprove God, but it does not need to be solved to be survived. It is the best reason not to believe. The logical version has weakened. Plantinga showed a world of free creatures may be worth more than a world of puppets, because forced love is a contradiction. What remains is less a proof than a cry.",
       "Ivan Karamazov puts the objection as hard as it can be put: no future harmony is worth the torture of one innocent child, and he returns the ticket. Lewis wrote The Problem of Pain, then lost his wife and found his arguments never touched the wound. But the outrage borrows. Atoms do not have oughts. To call a child's suffering evil is to stand on a moral floor a Godless universe cannot pour. Every worldview has to carry the problem. The secular one only moves it to a universe where suffering means nothing.",

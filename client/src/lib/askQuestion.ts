@@ -53,7 +53,14 @@ function stem(w: string): string {
   return w;
 }
 
-const has = (hay: string, w: string) => hay.includes(` ${w}`) || hay.includes(` ${stem(w)}`);
+/**
+ * True when a word of the text is the typed word, or shares its stem. Whole
+ * words only: "real" must not find "really", nor "die" find "diet".
+ */
+function has(hay: string, w: string): boolean {
+  const s = stem(w);
+  return hay.split(" ").some((h) => h && (h === w || h === s || stem(h) === s));
+}
 
 /** How well a candidate answers what was typed: 0 when it holds none of the words. */
 export function askScore(c: AskCandidate, q: string): number {
@@ -81,12 +88,25 @@ export function askScore(c: AskCandidate, q: string): number {
   return score / words.length + bonus;
 }
 
+/** How far a Find Help page steps back when the words are not a crisis: the whole-question bonus and a little more. */
+const HELP_STEP_BACK = 2.5;
+/** And how far it steps forward when they are: it wins a tie with an answer. */
+const HELP_STEP_UP = 0.5;
+
 /** The candidates that answer what was typed, best first (stable for equal scores). */
-export function ask(candidates: AskCandidate[], q: string): AskCandidate[] {
+export function ask(candidates: AskCandidate[], q: string, crisis = false): AskCandidate[] {
   return candidates
+    // A Find Help page shares its name with an Honest Answer ("Why does God
+    // allow suffering?"). Unless the words call for help, the answer comes
+    // first: the Find Help page drops behind any answer as good as it. When
+    // they do, the Find Help page comes first.
     .map((c, i) => ({ c, i, s: askScore(c, q) }))
     .filter((x) => x.s > 0)
-    .sort((a, b) => b.s - a.s || a.i - b.i)
+    .map((x) => {
+      const help = !x.c.answer && x.c.href.startsWith("/help");
+      return { ...x, rank: x.s + (help ? (crisis ? HELP_STEP_UP : -HELP_STEP_BACK) : 0) };
+    })
+    .sort((a, b) => b.rank - a.rank || a.i - b.i)
     .map((x) => x.c);
 }
 

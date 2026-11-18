@@ -48,12 +48,32 @@ function nextSteps(best: AskCandidate, rest: AskCandidate[]): Step[] {
   return out.filter((s) => !seen.has(s.href) && seen.add(s.href)).slice(0, 3);
 }
 
+/**
+ * Two pages that answer questions people ask in many words, and that neither
+ * the answers nor the topics index carry. Their names are the catalogue's
+ * and the Find Help page's own; the keywords are only for matching.
+ */
+export const ASK_MORE: AskCandidate[] = [
+  {
+    question: "Where Christians differ",
+    href: "/theology/compare",
+    keywords: "christians disagree differ debate views baptism lords supper communion calvinism arminianism predestination election free will end times millennium rapture women pastors",
+    body: "",
+  },
+  {
+    question: "I don't know how to pray",
+    href: "/help/prayer",
+    keywords: "how to pray how do i pray prayer for beginners what to say when you pray",
+    body: "",
+  },
+];
+
 export default function AskBox({ rows = [] }: { rows?: AskCandidate[] }) {
   const [q, setQ] = useState("");
-  const candidates = useMemo(() => [...answerCandidates(), ...rows], [rows]);
+  const candidates = useMemo(() => [...answerCandidates(), ...rows, ...ASK_MORE], [rows]);
   const typed = q.trim().length >= 3;
-  const found = useMemo(() => (typed ? ask(candidates, q) : []), [candidates, q, typed]);
-  const crisis = typed ? crisisTopicsFor(q) : [];
+  const crisis = useMemo(() => (typed ? crisisTopicsFor(q) : []), [q, typed]);
+  const found = useMemo(() => (typed ? ask(candidates, q, crisis.length > 0) : []), [candidates, q, typed, crisis]);
   const best = found[0];
 
   return (
