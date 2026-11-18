@@ -22,6 +22,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
+import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 
 dotenv.config();
@@ -395,9 +396,8 @@ function renderArticleBody({ title, subtitle, contentHtml, sectionLabel }) {
     `</div>`,
     `</article>`,
   ];
-  // A tiny style keeps the crawler-only content readable if JS ever fails to
-  // boot, without shifting the real SPA paint (React replaces #root on mount).
-  return `<div class="prerender-content" style="max-width:68ch;margin:0 auto;padding:2rem 1.25rem;font-family:Georgia,serif;line-height:1.7">${parts.filter(Boolean).join("\n")}</div>`;
+  // writeRoute wraps this in .prerender-content (styled in index.css).
+  return parts.filter(Boolean).join("\n");
 }
 
 /** Turn a content object (or raw markdown) into the injected body HTML. */
@@ -546,6 +546,16 @@ const HUB_LISTINGS = {
   } },
   // Read the whole story in 2027 (scripts/build-story-plan.mjs): each day
   // with its date and chapters, linked to the day's first chapter.
+  // The family hub and tonight's forwarding page: the family pages of the
+  // menu, then every devotion by name.
+  // The church history essays, in their order, by title and line.
+  "/theology/history": { label: "Church history", cap: 60, load: () => {
+    const d = readJsonSafe("client/public/history/essays-index.json");
+    return ((d && d.essays) || []).map((e) => ({ title: e.title, href: `/theology/history/${e.slug}`, blurb: e.blurb || "" }));
+  } },
+  "/family": { label: "For families", cap: 160, load: () => [...familyNavLinks(), ...familyDevotionLinks()] },
+  "/family/tonight": { label: "For families", cap: 160, load: () => [...familyNavLinks(), ...familyDevotionLinks()] },
+  "/family/devotions": { label: "Family devotions", cap: 160, load: () => familyDevotionLinks() },
   "/study/bible/guides/whole-story-2027": { label: "The days", cap: 365, load: () => {
     const p = readJsonSafe("client/public/bible/guides/whole-story-2027.json");
     return ((p && p.days) || []).map((d, i) => {
@@ -555,11 +565,205 @@ const HUB_LISTINGS = {
   } },
 };
 
+// ---------------------------------------------------------------------------
+// Full text for the pages that answer, teach and serve a family. Until
+// 2026-11 the answers page, the family pages, the 208 "What the Bible Says"
+// topics and the 31 doctrine pages shipped a head and an empty body, so a
+// link preview, an archive, or an AI assistant that does not run scripts
+// found no words on them (docs/work/audit-2026-11/technical.md, T5). Every
+// line below is read from the data the page itself renders, under the
+// headings the page itself uses. Nothing is written here.
+const paras = (text) =>
+  String(text ?? "").split(/\n{2,}/).map((x) => x.trim()).filter(Boolean).map((x) => `<p>${inline(x)}</p>`).join("\n");
+const sec = (heading, body) => (body ? `<section><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
+const article = (parts) => `<article>\n${parts.filter(Boolean).join("\n")}\n</article>`;
+
+/** client/src/data/answers.ts is TypeScript; bundle it once to read it. */
+let answersCache;
+async function loadAnswers() {
+  if (answersCache) return answersCache;
+  try {
+    const out = buildSync({ entryPoints: [path.join(REPO_ROOT, "client/src/data/answers.ts")], bundle: true, format: "esm", write: false, logLevel: "silent" });
+    const mod = await import(`data:text/javascript;base64,${Buffer.from(out.outputFiles[0].text).toString("base64")}`);
+    answersCache = Array.isArray(mod.ANSWERS) ? mod.ANSWERS : [];
+  } catch {
+    answersCache = [];
+  }
+  return answersCache;
+}
+
+/** The family links of the site menu (client/src/lib/siteNav.ts), in its words. */
+function familyNavLinks() {
+  const src = fs.readFileSync(path.join(REPO_ROOT, "client/src/lib/siteNav.ts"), "utf8");
+  return [...src.matchAll(/\{ label: "([^"]+)", href: "(\/family[^"]*)"/g)].map((m) => ({ title: m[1], href: m[2], blurb: "" }));
+}
+
+/** Weekly devotions and the daily sets, by the id the family index gives them. */
+let devotionCache;
+function devotionById(id) {
+  if (!devotionCache) {
+    devotionCache = new Map();
+    const index = readJsonSafe("client/public/family/index.json");
+    const files = new Set((index?.devotions ?? []).map((d) => d.file).filter(Boolean));
+    for (const file of files) {
+      const data = readJsonSafe(`client/public${file}`);
+      if (!data) continue;
+      const weekly = Array.isArray(data) ? data : Array.isArray(data.devotions) ? data.devotions : null;
+      if (weekly) for (const d of weekly) if (d?.id) devotionCache.set(d.id, d);
+    }
+    const seasonal = readJsonSafe("client/public/family-seasonal.json") ?? {};
+    for (const d of index?.devotions ?? []) {
+      if (d.kind !== "seasonal") continue;
+      const key = Object.keys(seasonal).find((k) => k.toLowerCase() === String(d.set).replace(/-/g, "").toLowerCase());
+      const day = key && (seasonal[key] ?? []).find((x) => x.day === d.day);
+      if (day) devotionCache.set(d.id, day);
+    }
+  }
+  return devotionCache.get(id) ?? null;
+}
+
+/** A family devotion under the page's own headings: Read, Talk, Do, Pray. */
+function devotionBody(row) {
+  const d = devotionById(row.id);
+  if (!d) return "";
+  const questions = Array.isArray(d.questions)
+    ? d.questions
+    : d.questions && typeof d.questions === "object"
+      ? Object.values(d.questions).flat()
+      : d.question ? [d.question] : [];
+  return article([
+    `<p class="pre-eyebrow">${escapeHtml(row.theme || row.label || "Family devotion")}</p>`,
+    `<h1>${escapeHtml(row.title)}</h1>`,
+    d.bigIdea ? `<p class="pre-subtitle">${escapeHtml(d.bigIdea)}</p>` : "",
+    sec("Read", [d.passage ? `<p><strong>${escapeHtml(d.passage)}</strong></p>` : "", d.passageText ? `<blockquote>${escapeHtml(d.passageText)}</blockquote>` : ""].join("\n")),
+    sec("Talk", [paras(d.reflection), questions.length ? `<ul>${questions.filter((q) => typeof q === "string").map((q) => `<li>${escapeHtml(q)}</li>`).join("\n")}</ul>` : ""].join("\n")),
+    d.activity ? sec("Do", paras(d.activity)) : "",
+    d.prayer ? sec("Pray", paras(d.prayer)) : "",
+  ]);
+}
+
+/** A "What the Bible Says" topic: the framing, the verses, and the three lenses. */
+function wisdomBody(t) {
+  const verses = (t.verses ?? []).filter((v) => v?.text)
+    .map((v) => `<blockquote>${escapeHtml(v.text)} <strong>${escapeHtml(v.ref ?? "")}</strong></blockquote>`).join("\n");
+  return article([
+    `<p class="pre-eyebrow">What the Bible Says</p>`,
+    `<h1>${escapeHtml(t.label)}</h1>`,
+    t.framing ? `<p class="pre-subtitle">${escapeHtml(t.framing)}</p>` : "",
+    sec("What Scripture says", verses),
+    sec("The world it was written in", paras(t.cultural)),
+    sec("How the church has understood it", paras(t.historical)),
+    sec("Living it now", paras(t.application)),
+  ]);
+}
+
+/** A debated doctrine, step by step, as the page lays it out. */
+function doctrineBody(e) {
+  const d = readJsonSafe(`client/public/theology/${e.slug}.json`);
+  if (!d) return "";
+  const loose = (obj, skip = []) => {
+    const copy = { ...obj };
+    for (const k of skip) delete copy[k];
+    return extractReadableText(copy).map((x) => mdToHtml(x)).filter(Boolean).join("\n");
+  };
+  const positions = (d.positions ?? []).map((pos) =>
+    `<h3>${escapeHtml(pos.name ?? "")}</h3>\n${pos.inOneLine ? `<p><em>${escapeHtml(pos.inOneLine)}</em></p>` : ""}\n${loose(pos, ["name", "inOneLine"])}`
+  ).join("\n");
+  const evidence = (d.biblicalEvidence ?? []).map((b) =>
+    `<h3>${escapeHtml(b.passage ?? "")}</h3>\n${loose(b, ["passage"])}`
+  ).join("\n");
+  return article([
+    `<h1>${escapeHtml(d.title ?? e.title)}</h1>`,
+    d.subtitle ? `<p class="pre-subtitle">${escapeHtml(d.subtitle)}</p>` : "",
+    d.triageNote ? paras(d.triageNote) : "",
+    sec("The question", paras(d.question)),
+    sec("Why it matters", paras(d.whyItMatters)),
+    sec("The positions", positions),
+    sec("The biblical evidence", evidence),
+    sec("Weighing it", paras(d.weighing)),
+    sec("Charitable disagreement", paras(d.charitableDisagreement)),
+  ]);
+}
+
+const PAGE_BODIES = {
+  // Every answer in full, with the FAQPage data the page builds at runtime.
+  "/answers": async (title) => {
+    const answers = await loadAnswers();
+    if (!answers.length) return null;
+    const shelf = loadEssayShelf(REPO_ROOT);
+    const blocks = answers.map((a) => [
+      `<section id="${escapeHtml(a.slug)}"><h2>${escapeHtml(a.question)}</h2>`,
+      (a.paragraphs ?? []).map((x) => `<p>${escapeHtml(x)}</p>`).join("\n"),
+      a.essaySlug && shelf.isPublic(a.essaySlug) ? `<p><a href="/writing/${escapeHtml(a.essaySlug)}">${escapeHtml(a.essayTitle ?? "")}</a></p>` : "",
+      `</section>`,
+    ].filter(Boolean).join("\n"));
+    return {
+      html: article([`<h1>${escapeHtml(title)}</h1>`, ...blocks]),
+      schemas: [{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: answers.map((a) => ({
+          "@type": "Question",
+          name: a.question,
+          acceptedAnswer: { "@type": "Answer", text: (a.paragraphs ?? []).join(" ") },
+        })),
+      }],
+    };
+  },
+  // Every catechism question with its answers and its verse.
+  "/family/catechism": async (title) => {
+    const list = readJsonSafe("client/public/family-catechism.json");
+    if (!Array.isArray(list) || !list.length) return null;
+    const out = [`<h1>${escapeHtml(title)}</h1>`];
+    let part = null;
+    for (const q of list) {
+      if (q.part && q.part !== part) {
+        part = q.part;
+        out.push(`<h2>${escapeHtml(part)}</h2>`);
+      }
+      out.push([
+        `<h3>${escapeHtml(`${q.number}. ${q.question}`)}</h3>`,
+        q.kidsAnswer ? `<p><strong>${escapeHtml(q.kidsAnswer)}</strong></p>` : "",
+        q.answer ? `<p>${escapeHtml(q.answer)}</p>` : "",
+        q.scriptureText ? `<blockquote>${escapeHtml(q.scriptureText)} <strong>${escapeHtml(q.scripture ?? "")}</strong></blockquote>` : "",
+      ].filter(Boolean).join("\n"));
+    }
+    return { html: article(out) };
+  },
+  // Each reading plan with every day's passage and prompt.
+  "/family/reading-plans": async (title) => {
+    const plans = readJsonSafe("client/public/family-reading-plans.json");
+    if (!Array.isArray(plans) || !plans.length) return null;
+    const out = [`<h1>${escapeHtml(title)}</h1>`];
+    for (const plan of plans) {
+      out.push(`<h2>${escapeHtml(plan.title)}</h2>`);
+      if (plan.description) out.push(`<p>${escapeHtml(plan.description)}</p>`);
+      const meta = [plan.audience, plan.length].filter(Boolean).join(" · ");
+      if (meta) out.push(`<p>${escapeHtml(meta)}</p>`);
+      const days = (plan.days ?? []).map((d) => `<li><strong>${escapeHtml(d.passage ?? "")}</strong>. ${escapeHtml(d.prompt ?? "")}</li>`).join("\n");
+      if (days) out.push(`<ol>\n${days}\n</ol>`);
+    }
+    return { html: article(out) };
+  },
+};
+
+/** A static route's own body and structured data, when it has one. */
+async function pageBody(routePath, title) {
+  const make = PAGE_BODIES[routePath];
+  if (!make) return null;
+  try { return await make(title); } catch { return null; }
+}
+
 function readJsonSafe(rel) {
   try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), rel), "utf8")); }
   catch { return null; }
 }
 
+
+function familyDevotionLinks() {
+  const index = readJsonSafe("client/public/family/index.json");
+  return (index?.devotions ?? []).map((d) => ({ title: d.title, href: `/family/devotions/${d.id}`, blurb: d.description || "" }));
+}
 
 function hubListingHtml(routePath) {
   const cfg = HUB_LISTINGS[routePath];
@@ -715,20 +919,84 @@ function homeHeroHtml() {
         </section>`;
 }
 
+/**
+ * The page's own code, preloaded from its prerendered HTML.
+ *
+ * Every page but Home is a lazy chunk (React.lazy in App.tsx). The browser
+ * only learned a chapter page needed StudyBible-<hash>.js after the entry
+ * bundle had downloaded and run, and "One moment." was what showed while it
+ * fetched. The route table says which page component an address renders and
+ * Vite names the chunk after the component's file, so the prerendered HTML
+ * can ask for that chunk, and the chunks it imports, at once.
+ */
+let routeChunks = null;
+function loadRouteChunks() {
+  const app = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
+  const fileOf = new Map();
+  for (const m of app.matchAll(/const\s+(\w+)\s*=\s*lazy\(\s*\(\)\s*=>\s*import\("([^"]+)"\)/g)) {
+    fileOf.set(m[1], path.basename(m[2]));
+  }
+  const routes = [];
+  for (const m of app.matchAll(/<Route\s+path="([^"]+)"\s+component=\{(\w+)\}/g)) {
+    const file = fileOf.get(m[2]);
+    if (!file) continue;
+    const pattern = m[1]
+      .replace(/[.+?^${}()|[\]\\]/g, "\\$&")
+      .replace(/:\w+\*/g, ".*")
+      .replace(/:\w+/g, "[^/]+");
+    routes.push({ re: new RegExp(`^${pattern}$`), file });
+  }
+  let assets = [];
+  try { assets = fs.readdirSync(path.join(DIST_DIR, "assets")).filter((f) => f.endsWith(".js")); } catch { /* no build */ }
+  return { routes, assets, cache: new Map() };
+}
+
+function chunkPreloads(routePath, template) {
+  routeChunks ??= loadRouteChunks();
+  const hit = routeChunks.routes.find((r) => r.re.test(routePath || "/"));
+  if (!hit) return "";
+  if (routeChunks.cache.has(hit.file)) return routeChunks.cache.get(hit.file);
+  let html = "";
+  // "<File>-<hash>.js": the hash is eight URL-safe characters with no dot.
+  const own = routeChunks.assets.filter((f) => new RegExp(`^${hit.file}-[A-Za-z0-9_-]{8}\\.js$`).test(f));
+  if (own.length === 1) {
+    let code = "";
+    try { code = fs.readFileSync(path.join(DIST_DIR, "assets", own[0]), "utf8"); } catch { /* skip */ }
+    const names = [own[0]];
+    for (const m of code.matchAll(/(?:from|import)"\.\/([^"]+\.js)"/g)) {
+      if (!names.includes(m[1])) names.push(m[1]);
+    }
+    html = names
+      // The entry and the React vendor file are already in the shell's head.
+      .filter((n) => !template.includes(`/assets/${n}`))
+      .map((n) => `<link rel="modulepreload" crossorigin href="/assets/${n}">`)
+      .join("\n    ");
+  }
+  routeChunks.cache.set(hit.file, html);
+  return html;
+}
+
 function writeRoute(template, route, head, bodyHtml = "") {
   const isHome = route.path === "" || route.path === "/";
   const target = isHome
     ? path.join(DIST_DIR, "index.html")
     : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  let html = rewriteIndexHtml(template, head);
+  const preloads = isHome ? "" : chunkPreloads(route.path, template);
+  let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
+  // The page's own text goes inside the static shell, under the masthead, in
+  // the site's own type (.prerender-content in index.css). A crawler, a link
+  // preview and a browser with scripts blocked read it there. For everyone
+  // else it is the first thing on screen, and main.tsx keeps it there until
+  // the real page has its content (lib/prerender-hold.ts), so a reader on a
+  // phone never watches the text vanish behind "One moment."
+  const body = bodyHtml ? `\n        <div class="prerender-content">\n${bodyHtml}\n        </div>` : "";
   // The static hero paints from the HTML on the front page only; every other
   // route drops the marker so a deep link never flashes the home hero.
-  html = html.replace(HOME_HERO_MARKER, isHome ? homeHeroHtml() : "");
-  // Inject crawlable article content at the top of #root. The client mounts
-  // with createRoot, which replaces #root entirely, so this is crawler-only.
-  if (bodyHtml) {
-    html = html.replace('<div id="root">', `<div id="root">\n${bodyHtml}`);
+  if (HOME_HERO_MARKER.test(html)) {
+    html = html.replace(HOME_HERO_MARKER, () => (isHome ? homeHeroHtml() : "") + body);
+  } else if (body) {
+    html = html.replace('<div id="root">', () => `<div id="root">${body}`);
   }
   fs.writeFileSync(target, html);
   return target;
@@ -801,12 +1069,13 @@ function prerenderStudyBible(template) {
       const note = read(`notes/${b.slug}/${c}.json`);
       const vnotes = read(`notes/${b.slug}/verses/${c}.json`)?.verses ?? [];
       const text = read(`ch/${b.slug}/${c}.json`);
-      const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<li value="${v.v}">${escapeHtml(v.t)}</li>`).join("\n");
+      // One running block with the verse numbers raised, as the reader shows it.
+      const verses = (text?.verses ?? []).filter((v) => v.t).map((v) => `<sup>${v.v}</sup>${escapeHtml(v.t)}`).join("\n");
       const lang = b.testament === "OT" ? "Hebrew" : "Greek";
       const body = [
         `<h1>${escapeHtml(`${chName(b)} ${c}`)}${note ? `: ${escapeHtml(note.title)}` : ""}</h1>`,
         note ? `<p>${escapeHtml(note.summary)}</p>` : "",
-        verses ? section(`${chName(b)} ${c} (Berean Standard Bible)`, `<ol>\n${verses}\n</ol>`) : "",
+        verses ? section(`${chName(b)} ${c} (Berean Standard Bible)`, `<p>\n${verses}\n</p>`) : "",
         note ? section("Where we are in the story", para(note.story)) : "",
         note ? section("The historical setting", para(note.historical)) : "",
         note ? section("The world behind the text", para(note.cultural)) : "",
@@ -934,7 +1203,7 @@ function writeRetiredEssay(template, { slug, title, pending }) {
     `<li><a href="/study/bible">Open the Study Bible</a></li>`,
     `<li><a href="/help">Find Help</a></li>`,
   ].filter(Boolean).join("\n");
-  const body = `<div class="prerender-content" style="max-width:68ch;margin:0 auto;padding:2rem 1.25rem;font-family:Georgia,serif;line-height:1.7"><article><h1>${escapeHtml(title)}</h1>\n<p>${escapeHtml(sentence)}</p>\n<ul>\n${links}\n</ul></article></div>`;
+  const body = `<article><h1>${escapeHtml(title)}</h1>\n<p>${escapeHtml(sentence)}</p>\n<ul>\n${links}\n</ul></article>`;
   writeRoute(template, { path: `/writing/${slug}` }, head, body);
 }
 
@@ -993,18 +1262,19 @@ async function main() {
     const image =
       page.image ||
       (page.path.startsWith("/nation/") ? ogImageUrl(page.title, "Christ and the Nation") : undefined);
+    const own = await pageBody(page.path, page.title);
     const head = buildHead({
       title: SEARCH_TITLES[page.path] || page.title,
       description: page.description,
       url,
       image,
       type: page.type,
-      schemas: page.schemas || [],
+      schemas: [...(page.schemas || []), ...(own?.schemas ?? [])],
       // The skeptic track says noindex while any stop is off the public shelf
       // (SKEPTIC_TRACK_LIVE in client/src/lib/skepticTrack.ts), as its page does.
       noindex: page.path === "/skeptic-track" && !skepticTrackLive(),
     });
-    writeRoute(template, page, head, hubListingHtml(page.path));
+    writeRoute(template, page, head, own?.html || hubListingHtml(page.path));
     wrote++;
   }
 
@@ -1025,7 +1295,7 @@ async function main() {
     { file: "client/public/plans/plans-index.json", key: "plans", route: "/plans/", ogPrefix: "plans", desc: "blurb", contentDir: "client/public/plans" },
     // The contested-doctrine pages (/theology/doctrine/:slug) — manifest
     // from scripts/build-theology-index.mjs; subtitle is the description.
-    { file: "client/public/theology/index.json", key: "docs", route: "/theology/doctrine/", ogPrefix: "theology-doctrine", desc: "subtitle" },
+    { file: "client/public/theology/index.json", key: "docs", route: "/theology/doctrine/", ogPrefix: "theology-doctrine", desc: "subtitle", body: doctrineBody },
     // Sermon series for all 66 books of the Bible. The manifest keys the entry
     // by `id`/`name` (not slug/title), so map them; content files are arrays of
     // markdown sermons, so the body injects at full depth.
@@ -1034,7 +1304,7 @@ async function main() {
     // The 208 wisdom topics (/wisdom/:id). Manifest keys by id/label; the
     // framing is the description, and the title matches the page's own
     // "{label} — What the Bible Says" so scrapers see the same head.
-    { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleFn: (t) => (/^(When|Why)\b/.test(t) ? `${t}: What the Bible Says` : `What the Bible Says About ${t}`) },
+    { file: "client/public/wisdom/topics.json", key: "topics", route: "/wisdom/", ogPrefix: "wisdom", slugField: "id", titleField: "label", desc: "framing", titleFn: (t) => (/^(When|Why)\b/.test(t) ? `${t}: What the Bible Says` : `What the Bible Says About ${t}`), body: wisdomBody },
     // The 13 guided reading pathways (/pathways/:slug) and the 4 formation
     // guides (/leadership/guides/:slug). Both are param routes, so the route
     // table extractor skips them by design and only a manifest pass reaches
@@ -1055,8 +1325,9 @@ async function main() {
     // and each day of the daily sets, from the family index
     // (scripts/build-family-index.mjs). The title matches the page's own
     // "{title}: A Family Devotion"; the description is the big idea, or the
-    // opening of a daily reflection. Head only (no per-devotion content file).
-    { file: "client/public/family/index.json", key: "devotions", route: "/family/devotions/", ogPrefix: "family-devotions", slugField: "id", desc: "description", titleTemplate: "{title}: A Family Devotion" },
+    // opening of a daily reflection. The body is the devotion itself, read
+    // from the file the index names for it (devotionBody).
+    { file: "client/public/family/index.json", key: "devotions", route: "/family/devotions/", ogPrefix: "family-devotions", slugField: "id", desc: "description", titleTemplate: "{title}: A Family Devotion", body: devotionBody },
     // The topic pages (/topics/:slug), from the topics index
     // (scripts/build-topics-index.mjs). The title is the question, as the
     // page's own SEOMeta has it; the page file's prose (the short answer and
@@ -1153,7 +1424,12 @@ async function main() {
       }
       const head = buildHead({ title: headTitle, description, url, image, type: src.type || "article", schemas });
       let bodyHtml = "";
-      if (contentObj) {
+      if (src.body) {
+        try {
+          bodyHtml = src.body(e) || "";
+          if (bodyHtml) withBody++;
+        } catch { /* leave head-only */ }
+      } else if (contentObj) {
         try {
           bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj });
           if (bodyHtml) withBody++;
@@ -1262,6 +1538,7 @@ async function main() {
       continue;
     }
     const url = `${SITE_URL}${routePath}`;
+    const own = await pageBody(routePath, title);
     const head = buildHead({
       title,
       description,
@@ -1269,8 +1546,9 @@ async function main() {
       image: ogImageUrl(title),
       type: "website",
       noindex: pageNoindex,
+      schemas: own?.schemas ?? [],
     });
-    writeRoute(template, { path: routePath }, head, hubListingHtml(routePath));
+    writeRoute(template, { path: routePath }, head, own?.html || hubListingHtml(routePath));
     written.add(routePath);
     extracted++;
     wrote++;

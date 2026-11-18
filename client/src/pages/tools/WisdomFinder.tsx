@@ -36,6 +36,7 @@ import ScriptureNote from "@/components/ScriptureNote";
 import { fetchJson } from "@/lib/fetch-json";
 import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 import { SOCIAL_QUOTES, type SocialQuote } from "@/data/social-quotes";
+import { isPublicEssay } from "@/lib/shelf";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 // Default is AA-passing mustard-text (eyebrows on light sections); the one
@@ -124,7 +125,9 @@ function quoteSourcePath(q: SocialQuote): string | null {
     case "studyguide":
       return `/studyguides/${q.articleSlug}`;
     default:
-      return `/writing/${q.articleSlug}`;
+      // An essay off the public shelf answers with a notice, not the essay:
+      // the quote keeps its source named, without a link (lib/shelf.ts).
+      return isPublicEssay(q.articleSlug) ? `/writing/${q.articleSlug}` : null;
   }
 }
 

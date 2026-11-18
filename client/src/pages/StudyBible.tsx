@@ -252,6 +252,9 @@ function BookPage({ book }: { book: BibleBook }) {
             <span><Link href="/study/bible" style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>The Study Bible</Link> · {testament}</span>
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, color: "var(--ink)", margin: "0 0 14px" }}>{book.name}</h1>
+          {/* Held on a first load until the introduction and the story line
+              above the chapter list have arrived (lib/prerender-hold.ts). */}
+          {(intro === undefined || act === undefined || index === undefined) && <span hidden data-lw-loading />}
           {intro && <p style={{ fontFamily: "var(--B)", fontSize: "1.15rem", lineHeight: 1.65, color: "var(--ink-muted)", maxWidth: "62ch", margin: "0 0 14px" }}>{intro.tagline}</p>}
           <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", display: "flex", flexWrap: "wrap", gap: "6px 14px" }}>
             <span>{book.chapters} chapter{book.chapters === 1 ? "" : "s"}</span>
@@ -546,6 +549,10 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--gutter) var(--s-6)" }}>
         <div style={{ ...wrap, display: "flex", gap: "var(--s-5)", alignItems: "flex-start" }}>
           <div style={{ flex: "1 1 0", minWidth: 0 }}>
+            {/* On a first load the prerendered chapter stays on screen until the
+                heading, the text and the summary above it have all arrived
+                (lib/prerender-hold.ts), so none of them pushes the others down. */}
+            {valid && ((!data && !failed) || note === undefined || place === undefined) && <span hidden data-lw-loading />}
             <ChapterHead note={note} place={place} />
             {failed && !data ? (
               <LoadFailed what={`${book.name} ${chapter}`} onRetry={() => { setFailedKey(null); setNonce((n) => n + 1); }} backHref={`/study/bible/${book.slug}`} backLabel={`All of ${book.name}`} />

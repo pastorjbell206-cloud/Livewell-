@@ -11,6 +11,7 @@ import "./index.css";
 import "./brand-override.css";
 import { captureInstallPrompt } from "@/lib/install";
 import { mountAfterStaticHero } from "@/lib/static-hero";
+import { holdPrerenderedPage } from "@/lib/prerender-hold";
 
 // The browser offers to install the site only once, early; keep that offer
 // for the "Add to your home screen" card on My Library (lib/install).
@@ -82,6 +83,9 @@ const trpcClient = trpc.createClient({
 // On "/", let the static hero's first paint be recorded before React replaces
 // it (lib/static-hero.ts); everywhere else this mounts at once.
 mountAfterStaticHero(() => {
+  // A chapter, an essay or a guide keeps its prerendered text on screen until
+  // the real page is ready (lib/prerender-hold.ts).
+  holdPrerenderedPage();
   createRoot(document.getElementById("root")!).render(
     <trpc.Provider client={trpcClient} queryClient={queryClient}>
       <QueryClientProvider client={queryClient}>

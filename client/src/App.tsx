@@ -156,7 +156,6 @@ const Proverbs31 = lazy(() => import("./pages/tools/Proverbs31"));
 const BibleReference = lazy(() => import("./pages/tools/BibleReference"));
 const ToolsGlossary = lazy(() => import("./pages/tools/TheologyGlossary"));
 const QuoteLibrary = lazy(() => import("./pages/tools/QuoteLibrary"));
-const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Speaking = lazy(() => import("./pages/Speaking"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Connect = lazy(() => import("./pages/Connect"));
@@ -293,6 +292,9 @@ const ToHelpChurchHurtRedirect = redirectTo("/help/church-hurt");
 // membership and author pages are down.
 const ToHelpPastorsRedirect = redirectTo("/help/pastors");
 const ToResourcesRedirect = redirectTo("/resources");
+// The unlinked streak page folds into My Library, which shows the same
+// progress; the leftover author page folds into About (2026-11-17).
+const ToMyLibraryRedirect = redirectTo("/my-library");
 
 function PageFallback() {
   return (
@@ -645,7 +647,7 @@ function Router() {
         <Route path="/faq/what-is-religious-trauma" component={FAQWhatIsReligiousTrauma} />
         <Route path="/faq/why-do-young-people-leave-church" component={FAQWhyDoYoungPeopleLeaveChurch} />
         <Route path="/faq/can-science-and-faith-coexist" component={FAQCanScienceAndFaithCoexist} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/dashboard" component={ToMyLibraryRedirect} />
 <Route path="/admin/login" component={AdminLogin} />
         <Route path="/admin"><ProtectedRoute component={AdminDashboard} requireAdmin /></Route>
         <Route path="/admin/posts"><ProtectedRoute component={AdminPosts} requireAdmin /></Route>

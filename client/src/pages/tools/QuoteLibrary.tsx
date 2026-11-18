@@ -22,6 +22,7 @@ import {
   BookmarkCheck,
 } from "lucide-react";
 import { SOCIAL_QUOTES, type SocialQuote } from "@/data/social-quotes";
+import { isPublicEssay } from "@/lib/shelf";
 import { copyToClipboard } from "@/lib/clipboard";
 import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 
@@ -75,7 +76,9 @@ function sourcePath(q: SocialQuote): string | null {
     case "studyguide":
       return `/studyguides/${q.articleSlug}`;
     default:
-      return `/writing/${q.articleSlug}`;
+      // An essay off the public shelf answers with a notice, not the essay:
+      // the quote keeps its source named, without a link (lib/shelf.ts).
+      return isPublicEssay(q.articleSlug) ? `/writing/${q.articleSlug}` : null;
   }
 }
 

@@ -16,6 +16,9 @@ interface Test { id: string; prompt: string; tell: string; }
 interface Data { intro: string; note: string; tests: Test[]; closing: string; }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+// The old section hub and its topic pages fold into the essay shelf's Faith
+// and Power section (vercel.json); link there directly, not through a redirect.
+const SECTION_HREF = "/writing?section=faith-and-power";
 
 export default function PropheticConsistency({ config }: { config: SectionConfig }) {
   const [data, setData] = useState<Data | null>(null);
@@ -37,7 +40,7 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
           <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href={config.base} style={{ color: "inherit" }}>{config.label}</Link> · The consistency check
+            <Link href={SECTION_HREF} style={{ color: "inherit" }}>{config.label}</Link> · The consistency check
           </div>
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>Do you hold your own side to the same standard?</h1>
           <p className="page-standfirst">One standard, or two?</p>
@@ -88,7 +91,7 @@ export default function PropheticConsistency({ config }: { config: SectionConfig
               )}
               {data.closing.split("\n\n").map((p, i) => <p key={i} style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 400, lineHeight: 1.5, color: "var(--bone)", maxWidth: "60ch", marginBottom: "14px" }}>{p}</p>)}
               <div style={{ marginTop: "var(--s-4)" }}>
-                <Link href={`${config.base}/topic/truth-and-tribe`} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Read: When Truth Becomes Negotiable →</Link>
+                <Link href={SECTION_HREF} style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Read the essays on faith and power →</Link>
               </div>
             </div>
           </section>

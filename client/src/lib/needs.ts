@@ -78,10 +78,18 @@ function stem(w: string): string {
     .replace(/(.)\1$/, "$1");
 }
 
+/** The most pages the "in your own words" box offers: a short, sure list. */
+export const NEED_RESULT_CAP = 3;
+
 /**
  * Rank needs for what a reader typed. Whole-phrase matches on an askedAs
  * phrase or the title count most, then shared words (stemmed). Ties keep the
  * demand-map order.
+ *
+ * A floor keeps the list honest. A page stays only if it scores at least half
+ * of what the best page scored, so "my husband died" offers the grief page
+ * and not every page that happens to use the word "husband". The list stops
+ * at NEED_RESULT_CAP.
  */
 export function searchNeeds(query: string, needs: NeedEntry[]): NeedEntry[] {
   const q = query.trim().toLowerCase().replace(/[’']/g, "");
@@ -98,9 +106,11 @@ export function searchNeeds(query: string, needs: NeedEntry[]): NeedEntry[] {
     qs.forEach((w) => { if (hay.has(w)) score += 2; });
     return { n, score };
   });
+  const floor = Math.max(...scored.map((s) => s.score)) / 2;
   return scored
-    .filter((s) => s.score > 0)
+    .filter((s) => s.score > 0 && s.score >= floor)
     .sort((a, b) => b.score - a.score || a.n.rank - b.n.rank)
+    .slice(0, NEED_RESULT_CAP)
     .map((s) => s.n);
 }
 

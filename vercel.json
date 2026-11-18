@@ -3,11 +3,6 @@
   "outputDirectory": "dist/public",
   "trailingSlash": false,
   "installCommand": "pnpm install --frozen-lockfile",
-  "git": {
-    "deploymentEnabled": {
-      "claude/todo-implementation-hhp4bm": false
-    }
-  },
   "functions": {
     "api/index.ts": {
       "maxDuration": 60,
@@ -1267,6 +1262,11 @@
     {
       "source": "/church-hurt",
       "destination": "/help/church-hurt",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/my-library",
       "permanent": true
     }
   ],
