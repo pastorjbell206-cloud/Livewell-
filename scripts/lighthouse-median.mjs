@@ -46,7 +46,10 @@ for (let i = 1; i <= 3; i++) {
       "npx",
       [
         "--yes",
-        "lighthouse",
+        // Pinned, so the CI runner and a developer machine measure with the
+        // same simulation. Unpinned, npx picked a different major version
+        // on each depending on the Node installed.
+        "lighthouse@13.6.0",
         url,
         "--chrome-flags=--headless --no-sandbox",
         "--only-categories=performance,accessibility,best-practices,seo",
