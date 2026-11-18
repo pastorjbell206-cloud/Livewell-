@@ -30,7 +30,8 @@ import "./world.css";
 export interface WorldReading { ref: string; href: string; text: string; note: string }
 export interface WorldPart { id: string; title: string; line: string; icon: string; body: string[]; read: WorldReading[] }
 export interface WorldSource { name: string; note?: string }
-export interface WorldBook { author: string; title: string; year: number }
+/** A book, or with `in` an article or essay (its journal, or "an essay"). */
+export interface WorldBook { author: string; title: string; year: number; in?: string }
 export interface World {
   id: string; group: string; title: string; seoTitle: string; description: string; line: string; plate: PlateName;
   intro: string[]; parts: WorldPart[]; sources: { ancient: WorldSource[]; modern: WorldBook[] };
@@ -248,7 +249,7 @@ export default function ContextWorld() {
               <h3 className="wd-src__h">Modern books</h3>
               <ul className="wd-src">
                 {data.sources.modern.map((b) => (
-                  <li key={`${b.author}-${b.title}`}>{b.author}, <i>{b.title}</i> ({b.year}).</li>
+                  <li key={`${b.author}-${b.title}`}>{b.author}, {b.in ? <>“{b.title}”, {b.in === "an essay" ? "an essay" : <i>{b.in}</i>}</> : <i>{b.title}</i>} ({b.year}).</li>
                 ))}
               </ul>
               <p className="wd-src__note">Scripture is quoted from the Berean Standard Bible. Each passage opens in the Study Bible.</p>
