@@ -172,3 +172,10 @@ Stopped at a clean guide boundary after the-image-of-god, to leave room for the 
 ### Where this run stopped
 
 Stopped at a clean guide boundary after the-parables, to leave room for the gates and the push. Next in order: **the-psalms** (abuse and sexual-assault help topics in sensitive-pages.json), then the-story-of-the-bible, the-undivided-life, witness, womanhood, work-and-vocation.
+
+## Seventh run (repair to the-parables; the-psalms, the-story-of-the-bible)
+
+### Repair: the-parables
+
+- Session 1 read "I came to faith from atheism, and I remember thinking something like that" (that a God who hides truth in riddles is unfair). The remembered thought was inferred, not something James said. It now reads "That's an objection a thoughtful skeptic raises, and I want to honor it." The guide now carries no biography at all.
+- Searched the whole guide for "I remember", "remember", "I used to", "when I was", "I once", "I've seen", "years ago", "I grew up", "I felt", "I recall" against the version before commit 33350915. No other recollection, feeling or habit of his was added; the other matches are group instructions, Scripture, or sentences the old guide carried.

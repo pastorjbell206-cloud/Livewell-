@@ -331,3 +331,10 @@ The second run added three quotations to skeptic that the old guide did not carr
 | A hundred denarii | About a hundred days' wages | Stated |
 | Biography: atheism (summary, primer, two FAQs) | Credentials | Kept once, session 1 teaching; FAQ about the writer cut (12 to 11) |
 | Scripture | ESV, from memory | ESV with references throughout |
+
+## The Parables (repair, seventh run)
+
+| Claim | How checked | Result |
+|---|---|---|
+| "I came to faith from atheism, and I remember thinking something like that" (session 1) | Old guide (before 33350915) carried no such memory; it was inferred | Rewritten as a skeptic's objection; no memory claimed; atheism no longer named in this guide |
+| Other recollections ("I remember", "I used to", "when I was", "I've seen", "years ago" and similar) | Searched the new guide against the old | None added; other matches are instructions, Scripture, or old wording |
