@@ -8,7 +8,7 @@
  * Greek words, how it points to Christ, LiveWell's writing on it, and the
  * next step in the story.
  */
-import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -67,7 +67,11 @@ export function ChapterHead({ note, place }: { note: ChapterNote | null | undefi
   const [whole, setWhole] = useState(false);
   const [cut, setCut] = useState(false);
   const text = note?.summary;
-  useEffect(() => {
+  // Measured before the browser paints, so "Whole summary" arrives with the
+  // summary. Measured after, it came one frame late and pushed the other
+  // links along and the chapter's text down a line (a layout shift of 0.09 on
+  // a phone, when that frame was the first one shown).
+  useLayoutEffect(() => {
     const el = summary.current;
     if (el && !whole) setCut(el.scrollHeight > el.clientHeight + 2);
   }, [text, whole]);

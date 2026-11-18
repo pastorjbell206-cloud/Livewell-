@@ -63,6 +63,28 @@ describe("holdPrerenderedPage", () => {
     expect(root.classList.contains(WAIT_CLASS)).toBe(false);
   });
 
+  it("waits for the real page's fonts before the swap, so its text is not drawn twice", async () => {
+    const root = setPage(true);
+    let fontsIn = () => {};
+    const fonts = { status: "loading", ready: new Promise<void>((resolve) => { fontsIn = resolve; }) };
+    Object.defineProperty(document, "fonts", { configurable: true, value: fonts });
+    try {
+      holdPrerenderedPage({ path: "/study/bible/john/3" });
+      mount(root, "<main><h1>John 3</h1><p>Now there was a man of the Pharisees</p></main>");
+      await flush();
+      expect(document.getElementById(HELD_ID)).not.toBeNull();
+      expect(root.classList.contains(WAIT_CLASS)).toBe(true);
+
+      fonts.status = "loaded";
+      fontsIn();
+      await flush();
+      expect(document.getElementById(HELD_ID)).toBeNull();
+      expect(root.classList.contains(WAIT_CLASS)).toBe(false);
+    } finally {
+      delete (document as unknown as { fonts?: unknown }).fonts;
+    }
+  });
+
   it("lets go after the longest wait when the page never gets its content", () => {
     vi.useFakeTimers();
     const root = setPage(true);

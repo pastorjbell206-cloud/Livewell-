@@ -67,9 +67,29 @@ export function holdPrerenderedPage(options: PrerenderHoldOptions = {}): boolean
 
   let done = false;
   let timer: ReturnType<typeof setTimeout> | null = null;
+  let awaitingFonts = false;
   const observer = new Observer(() => {
-    if (pageIsReady(root)) release();
+    if (pageIsReady(root)) releaseWhenFontsAreIn();
   });
+  // The real page can set its text in a face the held text never asked for
+  // (the chapter's reading serif). Shown before that file arrives, the text
+  // is drawn in the fallback and then redrawn, and every line below the first
+  // moves: a layout shift of 0.19 on a phone, on the loads where the font
+  // lost the race. So the hidden page is laid out, which makes the browser
+  // ask for the faces it uses, and the swap waits for them (or for
+  // `maxWaitMs`, whichever comes first).
+  function releaseWhenFontsAreIn() {
+    if (done || awaitingFonts) return;
+    const fonts = doc.fonts;
+    void root!.offsetHeight;
+    if (!fonts || fonts.status !== "loading") return release();
+    awaitingFonts = true;
+    const again = () => {
+      awaitingFonts = false;
+      if (pageIsReady(root!)) releaseWhenFontsAreIn();
+    };
+    fonts.ready.then(again, again);
+  }
   function release() {
     if (done) return;
     done = true;
