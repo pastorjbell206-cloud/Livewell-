@@ -212,3 +212,29 @@ Every quotation of a person other than Scripture, every book, date and biographi
 | "Not domineering" set inside the 1 Timothy 3 list | It is 1 Peter 5:3 | Session 5 now quotes 1 Timothy 3 and Titus 1 only; 1 Peter 5:3 cited separately in session 4 |
 | Bibliography: Willard 1988 and 2002, Peterson 1987, Buchanan 2006, Greenleaf 1977, Nouwen 1981, Scazzero 2015, DeGroat 2020, Strauch, Edwards, Gregory, Desert Fathers | Known | Kept; Nouwen's later reissue subtitle dropped; seven "Leader to confirm" notes removed |
 | Help lines | Old guide had none | None added |
+
+## christian-nationalism
+
+| Claim | How checked | Result |
+|---|---|---|
+| Biography used as credential ("He came to faith from atheism, and he writes from inside the indictment"); leader primer "a Michigan pastor"; FAQ on why the study implicates the writer | Credential, location and method talk | Cut; first person kept in the summary ("I'm not writing from outside this temptation") |
+| "Five essays by James Bell" | His essays (essaySlug kept per session) | Kept as "five of my essays" |
+| Whitehead and Perry "coined" the term; definition with covenant and capturing the state | They did not coin it; their definition is a cultural framework that idealizes and advocates a fusion of Christianity with American civic life | Now "describe" it, with their framework definition paraphrased; the extra clauses dropped |
+| Strongest Christian nationalism "among people who do not attend church much" | Searched: their finding (Taking America Back for God, 2020) is that Christian nationalism does not track religious practice and on several outcomes pulls the opposite way; critics dispute their measure of religion | Restated to their actual finding, with the critics noted |
+| Niebuhr: love of country becomes "demonic" when it claims "unconditioned loyalty," attributed to The Irony of American History | Searched: wording not found; the nearest is Moral Man and Immoral Society (1932), on patriotism turning individual unselfishness into national egoism and the nation's claim on unqualified devotion | Paraphrased and re-sourced to Moral Man and Immoral Society; "demonic" dropped as a Niebuhr attribution; Irony kept in the bibliography for its own theme |
+| Pledge 1892 (Bellamy); "under God" 1954; motto 1956 | Known | Kept |
+| Constitution "naming no God" | Overstated (it is dated "in the Year of our Lord") | Now "establishing no church"; First Amendment 1791 kept |
+| Westphalia "ruler's religion is the land's" | That principle was set at Augsburg in 1555; Westphalia confirmed it with changes | Corrected |
+| Edict of Milan 313; Thessalonica 380; City of God about 426; Scopes 1925; Bellah 1967; Moral Majority 1979; Reagan over Carter 1980; Whitehead and Perry 2020 | Known | Kept |
+| SBC 1971 resolution "notably moderate" | Known: supported legislation allowing abortion for rape, incest, fetal deformity, and damage to the mother's health | Stated concretely |
+| Balmer's segregation thesis; Politico essay; Bob Jones; Weyrich's later account | Known (Politico, 2014) | Kept, still presented as contested; "Leader to confirm" removed |
+| Noll's America's God shows the colonists had no unified Christian nation in mind and founders ranged from Calvinists to deists | That argument is chiefly Noll, Hatch and Marsden, The Search for Christian America; America's God treats providentialism | Now "Historians, Mark Noll among them"; America's God cited for providentialism only |
+| "Bell urges reading the footnotes" of Du Mez | Claim about James | Cut |
+| "One who actually had them to give" (the kingdoms) | Theological overstatement | Now "the devil claims these kingdoms have been handed over to him (Luke 4:6)" |
+| Palm Sunday "the same crowd" screamed for his blood | Not stated in the Gospels | "A crowd in the same city" |
+| Colossians 2:15 "triumphing over them in the cross" | ESV text reads "in him" (margin "in it") | ESV text used |
+| 1 Kings 8:11 memory verse "And the priests could not stand" | ESV begins "so that the priests" | ESV wording restored |
+| 2 Kings 16:14 Ahaz moves the altar | Checked against the text: the bronze altar moved to the north side | Kept, quoted |
+| Hauerwas, After Christendom? (1991); Resident Aliens (1989) social-strategy line; Noll's Scandal (1994) opening line | Known | Kept in the bibliography notes as before, unquoted |
+| Case studies told as real | No source | Reframed as "Suppose" |
+| Help lines | Old guide had none | None added |
