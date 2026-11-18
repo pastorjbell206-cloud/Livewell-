@@ -68,4 +68,4 @@ Web searches used: 1 of 40 (Sacks, "On Creative Minorities", 2013).
 
 1. The five-sons sentence. Old aging-and-legacy session 5 ended with a first-person wish about his sons standing at his grave. I cut it under the "no added memory" default. If it is his, it could go back as the one biographical line in that guide.
 2. The pilot's six questions still stand, especially translation (these guides are ESV) and whether any of his biography belongs anywhere.
-3. Four guides here were tied to books of his not on the shelf (After Christendom, Alone in a Crowded Church, Consider the Birds, plus the aging guide's framing). The plugs are gone; tell me if any of those books should be offered to readers.
+3. Three guides here were tied to books of his not on the shelf (After Christendom, Alone in a Crowded Church, Consider the Birds). The plugs are gone; tell me if any of those books should be offered to readers.
