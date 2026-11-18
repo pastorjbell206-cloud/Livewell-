@@ -61,3 +61,8 @@ I stopped at a clean guide boundary after two guides because I ran short of work
 - Sermon on the Mount: nothing of his own was added; any memory of his own struggle with an enemy, money or anger would be his to give.
 - Singleness: the guide says only "I'm a pastor" and never states whether he is married. If he wants to say how he stands toward single people in his own church, that is his sentence to write.
 - Skeptic: "I came to faith from atheism" is used once, in session 1. Whether he wants a line of his own about what the atheist view felt like from inside is his call.
+
+## Third run (repair, then spiritual-warfare to the-creeds)
+
+- **Repair**: the quotations the second run added to skeptic (Lewis, Clifford, Tacitus) and the Bonhoeffer lines kept in sermon-on-the-mount were each searched. All were confirmed except Bonhoeffer's "the preaching of forgiveness without requiring repentance", which is now marked paraphrase. Details in the ledger. From here on no quotation is added that the old guide did not carry.
+- **spiritual-warfare** (done): words 23,674 to 17,468; teaching 4,413 to 3,902. "Bell" 22 to 0; "honest" 23 to 2; "Leader to confirm" 2 to 0; contractions 99 to 447. Quotations kept: Lewis's two errors (verified, now quoted exactly); Luther's "one little word" corrected to Hedge's wording. Corrected: Arnold is not a third-wave writer; the war image is Cullmann's, not Vos's; City of God dated 413 to 426; timeline reordered and loose dates fixed. Cut: two placeholder bibliography entries. FAQ 11 to 9 (the two about the writer's own method folded into the primer). Biography: once, session 1 teaching.

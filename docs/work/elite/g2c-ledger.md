@@ -130,3 +130,28 @@ The second run added three quotations to skeptic that the old guide did not carr
 | Bonhoeffer: cheap grace is "grace without discipleship, grace without the cross, grace without Jesus Christ, living and incarnate" | Searched: wording attested (Wikipedia, "Cheap grace", and others), opening chapter "Costly Grace" | Kept |
 | Bonhoeffer: cheap grace is "the preaching of forgiveness without requiring repentance" | Searched: not confirmed by the results | Turned into marked paraphrase in session 5's going deeper ("in his account, ... forgiveness preached with no call to repent") |
 | Bonhoeffer: "only he who believes is obedient, and only he who is obedient believes" | Searched in the second run (attested, Fuller wording) | Kept |
+
+## Spiritual warfare
+
+| Claim | How checked | Result |
+|---|---|---|
+| Lewis, Screwtape preface: "There are two equal and opposite errors into which our race can fall about the devils. One is to disbelieve in their existence. The other is to believe, and to feel an excessive and unhealthy interest in them." | Searched: the 1942 preface, reproduced in the Faded Page edition and others | Old guide paraphrased it as a quotation; now quoted in the verified wording (session 1); the "equally pleased" clause is paraphrased |
+| Luther, "one little word shall fell the devil" | Searched: Hedge's English (1852/1853) reads "one little word shall fell him"; Luther's German "Ein Wörtlein kann ihn fällen" | Corrected to Hedge's wording, attributed to Hedge's translation |
+| Mighty Fortress "1529", "amid plague" | Searched: written between 1527 and 1529, in print by 1529; 1527 a hard year for Luther | "Late 1520s", "in print by 1529"; plague in Wittenberg (1527) kept as part of that stretch |
+| Clinton Arnold placed among "charismatic and third-wave" writers | Known: Arnold is an evangelical New Testament scholar (Talbot), not a third-wave writer | Described as an evangelical scholar; Three Crucial Questions (1997) named for his case |
+| Berkhof, Christ and the Powers | Known: Dutch 1953, English 1962 | Dated |
+| Wink trilogy | Known: 1984, 1986, 1992 | Dated |
+| Arnold, Powers of Darkness (1992); Powlison, Power Encounters (1995) | Known | Dated |
+| Aulén, Christus Victor | Known: Swedish 1930, English 1931; argues the "classic" view was dominant in the early church | Kept as his argument, dated |
+| Vos and Cullmann both "used the image of a war decided at its turning point" | Known: the war image is Cullmann's (Christ and Time, 1946); Vos is the earlier voice on Paul's already/not yet | Image attributed to Cullmann only; Christ and Time added to the bibliography |
+| Desert fathers, Evagrius and Cassian, logismoi; stages from suggestion to consent | Known: logismoi from Evagrius and Cassian; the step-by-step stages are fuller in later monastic writers | Reworded so the stage map is credited to later monastic writers |
+| Augustine pears | Known (Confessions, Book 2) | Book named |
+| City of God "circa AD 400" | Known: 413 to 426 | Corrected |
+| Timeline "circa AD 27", "circa AD 30", Ephesians "circa AD 62" | Loose dates | "About AD 28"; "About AD 30 to 33"; "Early 60s AD", with the authorship debate noted |
+| Timeline order (1942 listed before 1931) | Ordering error | Reordered |
+| Bibliography: "The Screwtape Letters and the reality of temptation" by "Representative devotional and pastoral literature" | Placeholder category, not a book | Cut |
+| Bibliography: "The Gospel of Mark and the Gospel of Matthew" by "the evangelists" | Not a bibliography entry | Cut; further reading keeps the wilderness accounts |
+| "Leader to confirm" / "Leader to handle with discernment" notes | Rulebook stamps | Removed; notes say what each book is for |
+| Biography: came to faith from atheism (summary, session 1 objection and teaching, primer, FAQ, script, promo x2) | Confirmed fact used as a credential | Kept once, in session 1's teaching, where it lets him state the closed-world view as his own former view |
+| Luke 4:5-7 quoted as "To you I will give all this authority, if you will worship me" | Spliced verse | Quoted in ESV order with an ellipsis |
+| Scripture quotations | ESV, from memory; no ESV in the repository | Unchanged translation |
