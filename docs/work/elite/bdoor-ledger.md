@@ -2841,3 +2841,44 @@ Matthew 8, 14, 16, 17 and 18; John 4).
 | 1 Kings 19:19-20 | 57-62 | BSB | Repository |
 
 Left out: the Cynic philosophers' staff and bag; Theissen; Josephus on Machaerus; Bethsaida-Julias and the two sites; the "great omission" label; Plutarch and Yehohanan (they are in the Mark 8 note); Leo the Great, Palamas, Callixtus III and Raphael; Conzelmann, Evans and Moessner on the travel section; Tertullian and Marcion on the fire; Ambrose; Hengel and Sanders on the burial saying; Tobit and m. Berakhot 3:1.
+
+## The plain notes on Luke 10 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/10.json`. Six searches for this
+chapter, with the earlier ledger (Mark 6, 10 and 12; Matthew 11 and 20;
+John 4).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seventy or seventy-two: early copies divided; KJV seventy, BSB seventy-two; scholars still argue | 1-12 | Apparatus and studies as reported (incl. a 2017 Cambridge journal article on P45 at 10:17) | Search: biblehub.com; biblicaltraining.org "Seventy Disciples"; americanbible.org; cambridge.org. No manuscript named, since the witness lists were not confirmed |
+| Genesis 10: seventy nations in the Hebrew, seventy-two in the Greek | 1-12 | Reference works | Search: biblicaltraining.org and others as reported. Stated "if that is in the background" |
+| Numbers 11:16, 25-26 (seventy elders; Eldad and Medad) | 1-12 | BSB | Repository |
+| "The worker is worthy of his wages" quoted at 1 Timothy 5:18 | 1-12 | BSB | Repository |
+| Isaiah 27:12; Genesis 18:20; 9:54-55 | 1-12 | BSB | Repository |
+| Woe as "alas"; the three towns on the north shore | 13-16 | Earlier ledger (Matthew 11) | Matthew 11 wording |
+| Ezekiel 28:2; Isaiah 14:13-15; Hades the Greek for Sheol; 12:48 | 13-16 | BSB; standard | Repository |
+| Three readings of 10:18 (during the mission; the first rebellion; the cross) | 17-20 | Commentaries; deep note | Stated as views |
+| Isaiah 14:12; Psalm 91:13; Exodus 32:32; Daniel 12:1; 4:12; Acts 7:59-60; 12:2 | 17-20 | BSB | Repository |
+| Matthew 11:25-27 note ("not praise of ignorance"); Isaiah 35:5; 1 Peter 1:10; Luke 1:1-4 | 21-24 | Matthew 11 plain note; BSB | Repository |
+| Deuteronomy 6:5; Leviticus 19:18, 34; 18:5; 18:13-14; Mark 12:28-34; Matthew 22:34-40 | 25-29 | BSB | Repository |
+| Jerusalem to Jericho about 25 km, a drop of about 1,000 m | 30-37 | Earlier ledger (Mark 10) | Earlier ledger |
+| Ascent of Adummim (Joshua 15:7); Adummim "red", probably the rocks; Jerome said it was named for blood shed by robbers | 30-37 | Bible geography; Jerome as reported | Search: bibleplaces.com "The Ascent of Adummim"; jw.org Insight "Adummim"; waynestiles.com; en.wikipedia.org Good Samaritan. "Writing around AD 400" (date of the work not pinned) |
+| Leviticus 21:1-3 (priest and the dead); Numbers 19:11 not quoted | 30-37 | BSB | Repository |
+| Mishnah Nazir 7:1: a high priest and a Nazirite become unclean for a neglected corpse (met mitzvah) | 30-37 | Mishnah (around 200, marked later) | Search: mishnah.org Nazir 7:1; torahclass.com; patheos.com "The bad Samaritan". Paraphrased |
+| Bauckham, "The Scrupulous Priest and the Good Samaritan", New Testament Studies 44 (1998) 475-489: purity against love, love overrides; Levites' purity rules uncertain | 30-37 | Bauckham | Search: cambridge.org (NTS article page and PDF); NTS 44.4 front matter |
+| The corpse-impurity explanation contested; "the story gives them no excuse" | 30-37 | The above | Stated as debated |
+| Samaritans (John 4 wording); about nine hundred today; 9:53 | 30-37 | Earlier ledger (John 4) | Earlier ledger |
+| The expected third figure an Israelite layman | 30-37 | Commentaries | Stated as "Many readers think" |
+| Olive oil a common medicine; wine to clean wounds | 30-37 | Earlier ledger (Mark 6) for oil | Wine stated as "many think" |
+| Two denarii two days' pay (Matthew 20:2) | 30-37 | BSB | Repository |
+| 2 Chronicles 28:15 (Samaria, oil on wounds, donkeys, Jericho); Hosea 6:6 | 30-37 | BSB | Repository; the link to the parable stated as "many readers think" |
+| Augustine's allegory (Quaestiones Evangeliorum 2.19): man Adam, Samaritan the Lord, inn the church | 30-37 | Augustine | Search: proquest.com; adlimina.blogspot.com; restlesspilgrim.net. Paraphrased; no section number on the page |
+| Bethany the sisters' village (John 11:1, 5); Acts 22:3 "at the feet of Gamaliel" | 38-42 | BSB | Repository |
+| Mishnah Avot 1:4: make your house a meeting place for the wise, sit in the dust of their feet | 38-42 | Mishnah (around 200, marked later) | Search: sefaria.org Avot 1:4 and English explanation; cojs.org. Paraphrased; Yose ben Yoezer not named |
+| Women at a teacher's feet unusual | 38-42 | Commentaries | Stated as "Many scholars think" |
+| Deuteronomy 8:3; 4:4; Psalm 46:10; 8:3; 22:27 | 38-42 | BSB | Repository |
+
+Left out: which manuscripts read seventy and which seventy-two; the Talmud's
+seventy nations; the 10:42 variant ("few things" or "one"); the Inn of the
+Good Samaritan site; Josephus on robbers; a lodging price for two denarii;
+Origen's allegory; every scholar named in the deep note and not checked.
