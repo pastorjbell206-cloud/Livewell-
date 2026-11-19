@@ -6400,3 +6400,44 @@ No web search.
 | Death as shepherd set against Psalm 23 | 13-20 | BSB | BSB text |
 | Two readings of 49:15 | 13-20 | Book page ("Sheol"); repository deep note (`hard`) | Site's own teaching |
 | Luke 12:20; 1 Timothy 6:7; Mark 10:45; 1 Corinthians 15:20 | all | BSB | BSB text |
+
+## The plain notes on Psalm 50 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Asaph a leader of temple singers | 1-15 | Book page ("Who wrote the psalms") | Site's own teaching |
+| Burnt offering wholly burned; thank offering partly eaten (Leviticus 7:12); vows | 1-15 | Repository deep note (cultural); BSB | BSB text |
+| Neighbouring peoples thought gods needed feeding | 1-15 | Repository deep note (cultural) | Site's own teaching. "Mesopotamian texts" not named |
+| Heaven and earth as covenant witnesses; the prophets' courtroom language | 1-15 | Repository deep note | Site's own teaching. "Covenant lawsuit" not used |
+| Two readings of the prophets on sacrifice | 1-15 | Repository deep note (`hard`) | Stated as views |
+| Charges match the Ten Commandments | 16-23 | BSB (Exodus 20) | BSB text |
+| Hosea 6:6; Micah 6:8; Hebrews 13:15; Mark 7:6; Romans 2:4 | all | BSB | BSB text |
+
+50:10 carries an em-dash in the BSB: quoted in two parts, each before or after it.
+
+## The plain notes on Psalm 51 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The heading and 2 Samuel 11 and 12: David sent for Bathsheba (11:4), the king used his power over her; Uriah killed by David's order (11:15); "evil in the sight of the LORD" (11:27); "You are that man!" (12:7); nothing blames Bathsheba | 1-6 | BSB | BSB text. "used his power over her" is the brief's direction, grounded in "sent messengers to get her" |
+| Three words for wrong | 1-6 | Earlier ledger (Psalm 32) | Earlier ledger |
+| One of the seven penitential psalms | 1-6 | Earlier ledger (Psalm 6) | Earlier ledger |
+| Romans 3:4 quotes 51:4 in a slightly different form (BSB "victorious" for "blameless") | 1-6 | BSB both | BSB text |
+| "Against You only": three readings (wrong to a person is a wrong against God; courtroom; David accepts the charge about Uriah); Genesis 39:9 | 1-6 | Repository deep note (`hard`); BSB | Stated as readings |
+| 51:5: Western reading after Augustine (original sin; some add shared guilt, Romans 5:12); Orthodox ancestral sin (death and a pull toward sin, not guilt); a poetic reading (sin as far back as he has lived) | 1-6 | Earlier ledger (original sin row: stgeorgegreenville.org, saintjohnchurch.org); biblehub.com commentaries 51:5; redeeminggod.com | Search. Calvin not named (met in a secondary citation). The rabbinic tradition that David was born of an unlawful union was met only in secondary sources and is not used. Nothing said against mothers, marriage or babies |
+| Hyssop for sprinkling (Exodus 12:22; skin disease; contact with the dead) | 7-12 | Repository deep note (cultural); BSB | BSB text |
+| "Create" (bara, H1254) in 51:10 and Genesis 1:1; only God its subject | 7-12 | Repository word data; earlier ledger (Genesis 1 bara row) | Script; earlier ledger |
+| 1 Samuel 16:13-14: the Spirit on David, departed from Saul; David's fear of Saul's fate | 7-12 | BSB; biblehub.com commentaries 51:11; bibleref.com | Search; BSB text |
+| "Holy Spirit" in the Old Testament only at Psalm 51:11 and Isaiah 63:10-11 (BSB) | 7-12 | BSB | Script over the BSB Old Testament |
+| Views on losing the Spirit: Spirit for a task in the Old Testament; John 14:16, Ephesians 1:13; traditions that teach a believer can fall away; "not a cause for division" | 7-12 | Earlier ledger (perseverance rows, John 10); bibleref.com; jackcottrell.com | Earlier ledger; search. No side |
+| Bloodguilt; no sacrifice listed for defiant sin (Numbers 15:30) | 13-19 | Repository deep note; BSB | BSB text |
+| 51:18-19: later addition in or after the exile (many scholars), or David's prayer for the city | 13-19 | Repository deep note (historical) | Stated as views |
+| Ezekiel 36:26; Isaiah 1:18; Hebrews 9:14; 2 Samuel 12:13; Luke 18:13; John 21:15-17; Matthew 5:4; 1 John 1:9 | all | BSB | BSB text |
+
+Care lines: a guilt-laden reader (1 John 1:9); a separate line for anyone
+harmed by a person with power over them ("it was not your fault"), with the
+Find Help page.
