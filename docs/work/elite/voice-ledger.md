@@ -258,7 +258,7 @@ All 36 content-gate commands in .github/workflows/ci.yml passed (list and last l
 
 Pass run 2026-11-19 on branch elite/voice, on ranks 16 to 30 of the ranking above, worked the same way as the second run: same scripts (/home/user/tmp-voice/g/scripts), edits applied as exact old/new pairs to the section bodies only (the edit lists are kept in /home/user/tmp-voice/g/edits/<slug>.py), the guide fact diff run on every guide, unquoted Scripture checked by eye. Third-person reference writing: no opinion added, nothing made first person, existing first person left as it was. Words added to the fact diff's lowercase list after a false alarm (a capitalized word at a sentence start read as a name): projected, bankrolling. Two other false alarms ("Hospitality", "Individualism", "Fairness", "Jesus" counted once too few) were met by rewording so the count held, not by widening the list.
 
-This run worked on section endings, as the last run asked. Of the 75 sections, the counter's "paragraph ends on a short verdict" fell from 52 to 21 and "section closes on an aphorism" from 30 to 11; endings now close variously on a long sentence, a joined clause, or a kept short line where it was earned ("Forget the story and the welcome dies.", "That instinct is data.", "Only a resurrection lets both be true.").
+This run worked on section endings, as the last run asked. Of the 75 sections, the counter's "paragraph ends on a short verdict" fell from 58 to 25 and "section closes on an aphorism" from 38 to 18; endings now close variously on a long sentence, a joined clause, or a kept short line where it was earned ("Forget the story and the welcome dies.", "That instinct is data.", "Only a resurrection lets both be true.").
 
 ## The fifteen
 
