@@ -4233,3 +4233,31 @@ Cut: selective breeding as a working method and hidden traits in the parents
 (the deep note's suggestion; a science claim the brief excludes); the
 Mesopotamian law collections on surrogate wives (pointed to by the Genesis
 16 note instead).
+
+## The plain notes on Genesis 31 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/31.json`. Two web searches for this
+chapter, with the deep note, the verse notes and the Genesis book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| ‘I will be with you’ (26:3; 28:15; Exodus 3:12; Matthew 28:20); Exodus 3:7 | 1-16 | BSB | Repository |
+| Bride payment; the sisters say Laban kept and spent it | 1-16 | BSB (31:15); deep note (`cultural`) | Repository; the deep note's ‘part of its value returned to the daughter’ not used |
+| Shearing a busy season | 17-24 | Repository deep note (`cultural`) | Repository |
+| Teraphim: household figures of gods, small (31:34) to large (1 Samuel 19:13), used in divination (Ezekiel 21:21; Zechariah 10:2); some scholars think they first stood for ancestors (van der Toorn, as reported) | 17-24 | Encyclopedia of the Bible (Bible Gateway) "Teraphim"; encyclopedia.com; Wikipedia "Teraphim" | Search: "teraphim household gods ... divination". Ancestor view stated as "Some scholars think" |
+| Nuzi: the inheritance reading "has not held up, even for the Nuzi texts themselves, and scholars now use the Nuzi parallels with caution" (from the Genesis book page's Nuzi caution); other motives; no choice made | 17-24 | Genesis intro.json `teaching`; deep note (`hard`) | Repository |
+| ‘Deceived’ = ‘stole the heart’; ‘steal’ through the chapter; Gilead high wooded country east of the Jordan | 17-24 | Deep note (`literary`, `historical`) | Repository |
+| Genesis 35:2, 4; Isaiah 46:7; Zechariah 10:2; Joshua 24:2 | 17-24 | BSB | Repository |
+| Jacob's rash oath and Rachel's death (35:16-19): "Some readers hear a shadow"; the text does not link them | 25-35 | Deep note (`literary`) | Repository; stated as a reading |
+| Leviticus 15:20; Psalm 115:5; 1 Thessalonians 1:9; Psalm 121:4 | 25-35 | BSB | Repository |
+| Herding agreements on losses; Exodus 22:13 | 36-42 | Deep note (`historical`); BSB | Repository; Hammurabi's herding law not used |
+| ‘Fear of Isaac’ only in this chapter (31:42, 53); exact sense debated | 36-42 | BSB; verse notes 51-53 | Repository; said as debated |
+| ‘Affliction’ (oni) as in 29:32 and Exodus 3:7; John 10:11-12 | 36-42 | Verse notes 41-42; BSB | Repository |
+| Jegar-sahadutha Aramaic, Galeed Hebrew, both ‘heap of witness’ | 43-55 | Verse notes 47-48 | Repository |
+| Mizpah ‘watchtower’; the words a wary oath between men who distrust each other, not a sentimental blessing; popular use as a parting blessing | 43-55 | Commentaries summarised at biblehub.com and openbible.com on 31:49 | Search: "Mizpah Genesis 31:49 ... distrust". The jewelry use (in the query) was not confirmed and is not mentioned |
+| Treaty with oath, sacrifice, meal and witness stones | 43-55 | Deep note (`cultural`) | Repository |
+| Gilead fought over by Israel and Aram (1 Kings 22:3); Mizpah of Gilead (Judges 11:29); Laban's plural verb in 31:53 | 43-55 | BSB; verse notes 51-53 | Repository; "seems to think of more than one god" |
+| Romans 12:17-18 | 43-55 | BSB | Repository |
+
+Cut: Hammurabi's herding laws (not checked this run); "the God who was
+Isaac's dread to his enemies" (not checked).
