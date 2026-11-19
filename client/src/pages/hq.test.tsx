@@ -240,6 +240,7 @@ describe("/answers and /answers/:slug", () => {
       "did-the-resurrection-actually-happen",
       "do-i-have-to-choose-between-faith-and-science",
       "does-god-actually-exist",
+      "how-can-god-be-three-and-one",
       "if-god-is-good-why-suffering",
       "is-faith-irrational",
       "is-faith-just-wishful-thinking",

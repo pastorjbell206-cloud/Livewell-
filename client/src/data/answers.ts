@@ -618,9 +618,86 @@ export const ANSWERS: Answer[] = [
     slug: "how-can-god-be-three-and-one",
     question: "How can God be three and one?",
     paragraphs: [
-      "God is one in being and three in persons. The oneness and the threeness are not at the same level, so they do not collide. I made the math objection for years and was objecting to a cartoon: a god who was three of the same thing, which no one has ever taught. The church didn't flunk arithmetic. It refused to let arithmetic be the measure of God.",
-      "The doctrine was forced on the church by its own evidence. The first Christians were Jews, the last people on earth who would invent a doctrine that multiplied God. Then they met a man who forgave sins and accepted worship, and the Spirit came, and he too was God. They could not let go of either truth. In 325 the council at Nicaea drew the line: the Son is of the same being as the Father, because only God can save you. Every analogy fails, whether water, clover, or sun, and the failure is a clue. There is nothing else like God.",
-      "A solitary god could acquire love only by making something to love. The God of the creeds is love all the way down, and salvation is adoption into the family life of God. You aren't asked to master the Trinity. You're asked into that family.",
+      "God is one in being and three in persons: the Father, the Son and the Holy Spirit, each fully God, and one God. The oneness and the threeness are not at the same level, so they do not collide. It stands in the Nicene Creed, the confession the great churches share, and here it is confessed, not put to a vote. But the charge against it is serious: Jews, Muslims, Unitarians and some careful philosophers say it is simply a contradiction. Below I set out that charge at full strength, say what the creeds claim and what they don't, show why the first Christians, who were Jews, ended up saying it, and say plainly what remains a mystery. A mystery is something we can't see to the bottom of. A contradiction is something that can't be true. The question is which one this is.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The objection comes from three directions. Israel's daily confession is \"Hear, O Israel: The LORD our God, the LORD is one\" (Deuteronomy 6:4), and Jesus himself called it the most important commandment (Mark 12:29). Maimonides, the great Jewish teacher of the twelfth century, made God's unity the second of his thirteen principles of faith: the cause of all things is one, with a oneness unlike any other, not divisible in any way. Seen from there, a God in three persons abandons the very verse Christians say they keep.",
+          "Islam presses the same point from its own scripture. In the Saheeh International translation the Qur'an says, \"And do not say, 'Three'; desist - it is better for you. Indeed, Allah is but one God. Exalted is He above having a son\" (Qur'an 4:171). Its shortest chapter confesses that God \"neither begets nor is born, Nor is there to Him any equivalent\" (Qur'an 112:3-4). To a Muslim, calling Jesus God is the gravest error there is: setting something beside the one God.",
+          "Inside Christianity the Unitarians made the case from the Bible itself. William Ellery Channing's sermon \"Unitarian Christianity,\" preached in Baltimore in 1819, rejected the Trinity as contrary to the unity of God. The philosopher Dale Tuggy argues today that in the New Testament the one God is the Father alone.",
+          "Philosophers have put it as plain logic. Richard Cartwright's essay \"On the Logical Problem of the Trinity,\" published in his Philosophical Essays in 1987, takes the Athanasian Creed at its word and asks whether its sentences can all be true together.",
+          {
+            kind: "The objection, as a deductive argument",
+            premises: [
+              "The Father is God, the Son is God, and the Holy Spirit is God.",
+              "The Father is not the Son, the Son is not the Spirit, and the Spirit is not the Father.",
+              "If each of three distinct beings is a God, there are at least three Gods. Cartwright held this way of counting to be plain to reason: if every A is a B, there can't be fewer B's than A's.",
+            ],
+            conclusion: "There are at least three Gods, which the creed itself denies. So the doctrine, as stated, contradicts itself.",
+          },
+          "I grant what is true here. If the premises mean what they seem to mean, the conclusion follows. And the church has often answered badly, with a shrug or a picture: many Christians, asked to explain the Trinity, describe three gods on a team or one God in three costumes. If that's the doctrine, the objectors are right. So the first thing is to get straight what it says.",
+        ],
+      },
+      {
+        heading: "What the creeds claim, and what they don't",
+        body: [
+          "The Athanasian Creed, written in Latin around 500, is the church's most exact statement. \"And the catholic faith is this: that we worship one God in Trinity, and Trinity in Unity; neither confounding the Persons, nor dividing the Substance.\" Then it says the sentences Cartwright built his argument from: \"So the Father is God, the Son is God, and the Holy Ghost is God; and yet they are not three Gods, but one God.\" The Nicene Creed says it with less arithmetic. The Son is \"of one substance with the Father,\" and the Holy Spirit is the one \"who with the Father and the Son together is worshipped and glorified.\"",
+          "Notice what the creeds don't claim. They don't say that one equals three, or that God has three parts, or that one person plays three roles in turn, or that the Son or the Spirit is a lesser god. What they claim is that God is one in one respect, his being, what God is, and three in another, the persons, who God is. In short: one what, three whos.",
+          "Augustine, in his long work On the Trinity, was honest about how far the words reach. \"When the question is asked, What three? human language labors altogether under great poverty of speech\" (On the Trinity 5.9, in the Nicene and Post-Nicene Fathers translation). The church says \"three persons,\" he went on, not because the word says everything, but so that something can be said rather than nothing.",
+        ],
+      },
+      {
+        heading: "Why the church said it",
+        body: [
+          "The doctrine was forced on the church by its own evidence. The first Christians were Jews, the last people on earth who would invent a doctrine that multiplied God. They prayed the Shema. And yet within a few years of the crucifixion they were worshiping Jesus. The historian Larry Hurtado argued in Lord Jesus Christ (2003) that devotion to Jesus as divine began early, among his Jewish followers, inside their belief in one God, not as a later borrowing from pagan religion. Around the year 112 Pliny the Younger, a Roman governor, reported to the emperor Trajan that the Christians he questioned sang a hymn to Christ \"as to a god.\" Writing in the 50s, Paul takes the Shema itself and says, \"yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist\" (1 Corinthians 8:6). Richard Bauckham reads that as placing Jesus inside the Shema; others disagree.",
+          {
+            kind: "An argument from the evidence the church had to hold together",
+            premises: [
+              "Scripture teaches that there is one God and no other (Deuteronomy 6:4).",
+              "Scripture speaks of the Father, of the Son and of the Spirit in ways it speaks only of God. \"In the beginning was the Word, and the Word was with God, and the Word was God\" (John 1:1). Thomas says to the risen Jesus, \"My Lord and my God!\" (John 20:28). Peter tells a man who lied \"to the Holy Spirit,\" \"You have not lied to man but to God\" (Acts 5:3-4).",
+              "Scripture keeps the three distinct. At Jesus' baptism the Spirit descends and the Father says, \"This is my beloved Son, with whom I am well pleased\" (Matthew 3:17). The risen Jesus sends his followers out \"baptizing them in the name of the Father and of the Son and of the Holy Spirit\" (Matthew 28:19). Paul blesses a church: \"The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all\" (2 Corinthians 13:14).",
+            ],
+            conclusion: "Any faithful account has to hold all three at once. Drop the first and you have many gods. Drop the second and you have a Jesus who is less than God. Drop the third and you have one person in disguises. The doctrine of the Trinity is the church's refusal to drop any of them.",
+          },
+          "The weight sits on the second premise, and it is contested. Tuggy reads the high texts as speaking of a man God exalted, and Bart Ehrman argued in How Jesus Became God (2014) that Jesus did not call himself God and that belief in his divinity came after belief in his resurrection. The church argued over these texts for three centuries. Arius, a presbyter of Alexandria, taught that the Son was the first and greatest thing God made. In 325 the council at Nicaea answered that the Son is of the same being as the Father, \"begotten, not made.\" Athanasius, who defended Nicaea for the rest of his life, pressed the reason: a creature, however high, cannot save you; only God can. In 381 the council at Constantinople said the same of the Spirit. A reasonable person can weigh the texts and side with Tuggy. But the doctrine was not a Greek idea laid over a simple gospel. It was the slow answer to what the earliest Jewish Christians were already doing on their knees.",
+        ],
+      },
+      {
+        heading: "Why every picture fails",
+        body: [
+          "Every analogy fails, whether water, clover, or sun, and the failure is a clue. There is nothing else like God. Each bad picture teaches an old error the church already weighed and set aside.",
+          "Water as ice, liquid and steam, or a man who is at once a father, a son and a husband, teaches modalism: one person who shows up in three modes. Early in the third century Tertullian answered a teacher named Praxeas, who held something like it, and said that Praxeas \"put to flight the Paraclete, and he crucified the Father\" (Against Praxeas 1). If the Son is only the Father in another mode, then in Gethsemane Jesus was praying to himself.",
+          "Three men who share one human nature teaches tritheism. Gregory of Nyssa took up exactly this objection in his short work On \"Not Three Gods,\" where it is put to him that \"Peter, James, and John, being in one human nature, are called three men.\" His answer was that men who share a task each work at it by himself, while the Father, the Son and the Spirit never act apart. A clover's three leaves fails another way: it makes each person a third of God, when the creed says each is wholly God.",
+          "A father and a son in time teaches Arianism. A human son comes after his father, so there was a time when he did not exist. That was Arius's slogan about Christ, and it is why the Nicene Creed says he was \"begotten of his Father before all worlds.\" No picture taken from inside the world can show how its maker is one, which is what you would expect if the doctrine is about the maker.",
+        ],
+      },
+      {
+        heading: "A mystery, not a contradiction",
+        body: [
+          "Go back to Cartwright. A contradiction says that something is and is not so in the same respect. The creed says God is one in being and three in persons. The weight of the objection sits on the third premise, which reads \"the Son is God\" the way we read \"Peter is a man\": as one more member of a kind, to be counted. The creed doesn't mean that. It means the Son is wholly the one divine being, not one more instance of it. How to state that with full logical precision is still argued, and philosophers have offered models. I give them as proposals and take no side.",
+          "The Latin model, which looks back to Augustine and is defended by Brian Leftow, starts from the one God and takes the persons as distinct by their eternal relations to one another. Its hard question is whether it can keep the persons from collapsing into modes. The social model, defended by Cornelius Plantinga Jr. and others, starts from three persons in perfect communion, one in nature and will. Its hard question is whether it can keep from becoming three gods. The relative identity model, which goes back to the philosopher Peter Geach, holds that things can be the same God without being the same person, and Peter van Inwagen showed that a statement of the doctrine can be free of formal contradiction in such a logic. Its hard question is whether sameness can really be relative to a kind.",
+          "The strongest reply goes like this. Showing that a doctrine can't be proved contradictory is a low bar. You have stretched the words \"person\" and \"being\" until they no longer say anything, and a claim that says nothing can't be wrong. Part of that is simply true: \"person\" does not mean in God what it means of us, and Augustine said so. But the creed still rules things out, and that's the test of a claim that says something. It rules out three gods, a lesser Christ, and one God in masks. It tells you who was praying in Gethsemane, and to whom. It does not let you see to the bottom of God, and Christians have never claimed it does.",
+        ],
+      },
+      {
+        heading: "What this does not prove",
+        body: [
+          "None of this proves the Trinity true. It shows, I think, that it is not the incoherence it is said to be, and that it was forced, not invented, by Jews who would not give up the Shema and could not stop worshiping Jesus. Whether they were right rests on who Jesus was, and that rests on whether he was raised from the dead, which has its own page here. If he was, the question is no longer how the church could say something so strange, but what else it could honestly have said.",
+          "And there is a reason the church held this line so hard. \"Anyone who does not love does not know God, because God is love\" (1 John 4:8). A solitary god could acquire love only by making something to love. The God of the creeds is love all the way down. The night before he died, Jesus prayed to his Father, \"you loved me before the foundation of the world\" (John 17:24). The church didn't flunk arithmetic. It refused to let arithmetic be the measure of God, and it never claimed to see to the bottom of him. It claimed to have been told his name.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Richard Cartwright", title: "On the Logical Problem of the Trinity", in: "Philosophical Essays", year: "1987", note: "The logical objection in its classic form." },
+      { author: "Dale Tuggy", title: "Trinity", in: "Stanford Encyclopedia of Philosophy", year: "2009", note: "The strongest case against: a philosopher who holds that the one God is the Father alone, surveying every answer. Revised since." },
+      { author: "Cornelius Plantinga Jr.", title: "Social Trinitarianism and Tritheism", in: "Trinity, Incarnation, and Atonement", year: "1989" },
+      { author: "Peter van Inwagen", title: "And Yet They Are Not Three Gods But One God", in: "God, Knowledge, and Mystery", year: "1995" },
+      { author: "Brian Leftow", title: "Anti Social Trinitarianism", in: "The Trinity: An Interdisciplinary Symposium", year: "1999" },
+      { author: "Larry W. Hurtado", title: "Lord Jesus Christ: Devotion to Jesus in Earliest Christianity", year: "2003" },
+      { author: "Richard Bauckham", title: "Jesus and the God of Israel", year: "2008" },
+      { author: "Bart D. Ehrman", title: "How Jesus Became God", year: "2014", note: "The best case that belief in Jesus' divinity came later." },
     ],
     essaySlug: "the-trinity-plainly",
     essayTitle: "How Can God Be Three and One?",
