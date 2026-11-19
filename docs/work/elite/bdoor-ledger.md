@@ -2531,3 +2531,38 @@ eighty miles; Judith; the age of betrothal; the wax tablet; Celsus and
 Panthera; Lüdemann, Schaberg, Lincoln, Machen and Brown by name. Care: the
 5-17 hard field speaks to readers who long for a child or lost one
 (childlessness is not a judgment; a path to a friend, pastor or counsellor).
+
+## The plain notes on Luke 2 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/2.json`. Five searches for this
+chapter, with the book page's rows above.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Augustus 27 BC to AD 14 | 1-7 | Book page timeline (repository) | Repository |
+| Kataluma: the same word for the guest room of 22:11; pandocheion for the inn of 10:34; Bailey (2008) on village houses with animals in a lower part of the main room; Carlson (NTS 2010) on "a place to stay"; no innkeeper in the text | 1-7 | Bailey, Jesus Through Middle Eastern Eyes; Carlson, NTS 56 (2010) | Search: psephizo.com "Jesus was not born in a stable"; Carlson's NTS paper (hypotyposeis PDF); ucg.org; tyndale.cam.ac.uk. BSB for "inn". Scholars not named on the page |
+| The census: book page wording | 1-7 | Book page rows | Book page |
+| 1 Samuel 16:11; Micah 5:2; Matthew 2:6; Exodus 13:2 | 1-7 | BSB | Repository |
+| Shepherds: the "despised" claim rests mostly on later rabbinic texts (Jeremias's sources mostly the Babylonian Talmud); Mishnah Kiddushin 4:14 lists the shepherd among trades a father should not teach his son, "the trades of robbers"; how far it reflects the first century is debated; the Bible honours shepherds | 8-14 | Mishnah Kiddushin 4:14 | Search: mishnah.org Kiddushin 4:14; posenlibrary.com; psephizo.com "Challenging Christmas myths"; epm.org. Jeremias not named on the page |
+| Priene and the cities of Asia, about 9 BC: Augustus's birthday the beginning of good news; savior | 8-14 | Earlier ledger (Mark); book page | Earlier ledger |
+| Psalm 23:1; Ezekiel 34:23; Isaiah 9:6-7 | 8-14 | BSB | Repository |
+| 2:14: one letter; the oldest copies read "on whom His favor rests"; later copies and the KJV "good will toward men" | 8-14 | Textual commentaries as summarised | Search: christianitytoday.com (1994); skipmoen.com; byunewtestamentcommentary.com; repository `text`. No manuscript named |
+| "Pondered" twice (2:19, 2:51); Mary as a source "a guess, but a reasonable one" | 15-20 | BSB; repository `literary` | Stated as a guess |
+| Isaiah 1:3 | 15-20 | BSB | Repository. The ox and donkey of Christian art not mentioned |
+| Leviticus 12:2-4 (seven and thirty-three days), 12:8 (the poor family's offering); Exodus 13:2; "the Law" five times (22, 23, 24, 27, 39) | 21-24 | BSB | Repository; count of BSB |
+| 1 Samuel 1:24-28; Malachi 3:1; Galatians 4:4 | 21-24 | BSB | Repository |
+| Nunc Dimittis at night prayer | 25-35 | Book page row (canticles) | Search (book page) |
+| Isaiah 40:1; 49:6; 52:10; 8:14; Luke 20:17; John 19:25 | 25-35 | BSB | Repository |
+| Care line for the bereaved parent | 25-35 | Matthew 2 plain note, wording adapted | Repository |
+| Anna: verse 37 read two ways (until eighty-four, or for eighty-four years) | 36-40 | Repository `text` (heōs) | Repository |
+| Miriam, Deborah, Huldah prophetesses; Isaiah 52:9; 1 Samuel 2:26 | 36-40 | BSB | Repository |
+| Three pilgrim feasts for men (Deuteronomy 16:16); travelling with relatives and friends (2:44) | 41-52 | BSB | Repository |
+| Mishnah Avot 5:21: thirteen for the commandments; a later addition to the tractate | 41-52 | Mishnah | Search: sefaria.org.il English Explanation of Avot 5:21; cojs.org; en.wikipedia.org Pirkei Avot. Stated as "a Jewish saying added to the Mishnah" |
+| "About My Father's business" in older translations; the Greek carries both | 41-52 | Translation history (KJV) | Common knowledge of the KJV; no lexicon cited |
+
+Left out: the date 25 December and the Chronograph of 354; the Protevangelium
+and the cave; the ox and donkey's origin; Francis at Greccio; the five
+shekels of redemption; the Nicanor Gate; "their purification"; Judith and
+Anna; the caravan word sunodia; the numbers of pilgrims. Care: the sword
+(25-35) carries the Matthew 2 line for the bereaved parent; the boy in the
+temple (41-52) speaks to parents of a child who has wandered.
