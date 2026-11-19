@@ -1658,3 +1658,41 @@ Herzog, Russell, Hart, Fudge, Stott by name; the claim that the English word
 "talent" comes from this parable; the deep note's claim that 25:34 is the only
 place Jesus calls himself king in his teaching; the textual notes; the
 "bride" variant in verse 1; 1 Enoch.
+
+## The plain notes on Matthew 26 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/26.json`. Five searches for this
+chapter. Where Mark 14 tells the event, its verified claims and its wording
+are reused (the Lord's Supper views, Gethsemane and its care line, the
+Mishnah on trials, Peter's denial, "Surely not I").
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Caiaphas appointed by Valerius Gratus around AD 18, removed by Vitellius around 36 or 37; overlapped with Pilate | 1-16 | Josephus, Antiquities 18.33-35, 18.95 | Search: livius.org Caiaphas; newadvent.org Caiphas; en.wikipedia.org Caiaphas (36 or 37 disputed, both given) |
+| The 1990 ossuary; Passover crowds and riot; nard; anointing | 1-16 | Earlier ledger (Mark 14) | Pointer to the Mark 14 note |
+| Thirty pieces most likely shekels, perhaps Tyrian (used for the temple tax); not certain | 1-16 | Encyclopedias | Search: en.wikipedia.org Thirty pieces of silver; biblehub.com topical "Thirty shekels"; dannythedigger.com. Given as "most likely" and "perhaps" |
+| Exodus 21:32 thirty shekels for a slave gored; Zechariah 11:12-13; 27:9-10 | 1-16 | BSB | BSB text |
+| John 12:6 | 1-16 | BSB | BSB text |
+| Judas the Greek form of Judah; from the Middle Ages Judas sometimes made a picture of the Jewish people, feeding contempt | 1-16 | Encyclopedias; Acocella (New Yorker 2006) as quoted | Search: en.wikipedia.org Judas Iscariot; history.com "Why Judas betrayed Jesus"; bitterwinter.org. No scholar named |
+| "You have said it yourself" (su eipas) taken by many as a careful or reluctant yes that puts the words back on the asker | 17-25, 57-68 | Catchpole, NTS 1971 (as cited by the IVP commentary); translation notes | Search: cambridge.org NTS abstract; biblegateway.com IVP NT commentary 26:62-68; tips.translation.bible on 26:64. "Many scholars" |
+| Psalm 41:9; Genesis 50:20; Exodus 12; date question (Mark 14 wording, pointer) | 17-25 | BSB; earlier ledger | BSB text |
+| "For the forgiveness of sins" only in Matthew (Mark 14:24; Luke 22:20); 1:21; "with you" | 26-30 | BSB comparison | BSB text |
+| Exodus 24:8; Jeremiah 31:34; Isaiah 53:12; 20:28; views of the Supper (Mark 14 wording) | 26-30 | BSB; Mark 14 plain note | BSB text; repository |
+| Zechariah 13:7; one crowing in Matthew; 28:16 | 31-35 | BSB | BSB text |
+| "May Your will be done" (26:42) and the Lord's Prayer (6:10, 6:13); "My Father" for Abba; Psalm 42:5, 11; Isaiah 51:17; the church's answer and the care line (Mark 14 wording) | 36-46 | BSB; Mark 14 plain note | BSB text; repository |
+| Kiss of a student to a teacher (Mark 14 wording); "Friend" three times (20:13; 22:12; 26:50) | 47-56 | Earlier ledger (Matthew 22) | Repository |
+| A legion about five thousand soldiers | 47-56 | Earlier ledger (Mark 5) | Earlier ledger |
+| John 18:10 (Peter, Malchus); Luke 22:51; 5:39; Romans 13:4; Isaiah 50:6; views on the sword | 47-56 | BSB; standard positions | BSB text; stated as views |
+| Two witnesses (Deuteronomy 19:15); Leviticus 5:1 on a public charge, "may be why" Jesus speaks | 57-68 | BSB; deep note | BSB text; stated as "may" |
+| Mishnah Sanhedrin 4:1 and the two views (Mark 14 wording) | 57-68 | Earlier ledger (Mark 14) | Earlier ledger |
+| Psalm 110:1; Daniel 7:13; Isaiah 53:7; 50:6 | 57-68 | BSB | BSB text |
+| b. Eruvin 53b: later stories mocking Galilean pronunciation | 69-75 | Babylonian Talmud | Search: en.wikipedia.org Galilean dialect; johngill.thekingsbible.com 26:73; muse.jhu.edu article. Marked "much later"; the reading of lalia as "talk" not used |
+| 5:37; Psalm 51:17; 28:7, 10, 16; John 21:15-19; Mark manuscripts with one crowing | 69-75 | BSB; earlier ledger (Mark 14) | BSB text; earlier ledger |
+
+Left out: the Mishnah on reclining, the four cups and Gamaliel (in Mark's
+note); m. Berakhot 6:1; m. Sanhedrin 5:2 and 7:5; m. Bava Kamma 7:7;
+Josephus, Antiquities 18.63-64 (kept for chapter 27 if checked); P64 and P67;
+Klausner, Winter, Cohn, Danby, Brown, Catchpole, Maccoby, Klassen, Meier,
+Barth, Borges and the Gospel of Judas by name; Jeremias, Jaubert and
+Humphreys (the date question is a pointer to Mark 14); the claim that no
+governor of Judea had twelve legions.
