@@ -1774,7 +1774,7 @@ Meier by name.
 ## John's book page (teaching introduction, 2026-11-19)
 
 Every historical claim in `client/public/bible/notes/john/intro.json`, field
-`teaching`. 17 web searches for the book page. Checks rest on search results
+`teaching`. 19 web searches for the book page. Checks rest on search results
 that quote or summarise the source, read against at least two results where
 possible. Ancient writers are paraphrased. Scripture is the BSB in the
 repository, checked word for word by `scripts/validate-bible-notes.mjs`;

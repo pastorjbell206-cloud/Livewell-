@@ -1659,3 +1659,154 @@ passages, 44,581 plain words. The two Gospels together: 262 passages,
 ### Next
 
 Matthew is finished. The next book in the plan's order.
+
+## John: book page and chapters 1 to 3 (2026-11-19)
+
+### A repair first: Gray on Matthew 25
+
+The plain note on "the least of these" credited Sherman W. Gray, The Least
+of My Brothers: Matthew 25:31-46, A History of Interpretation (1989), with a
+finding the last run had met only in other people's summaries. One search
+found the book's catalogue entry (Scholars Press, 1989, SBL Dissertation
+Series 114) but no publisher's or library's description of what it found,
+and the library page could not be reached. So his name is gone from the
+plain note, which now says: "For much of the church's history, many writers
+read it this way." The ledger row says why. The deep note underneath, which
+is older and was not touched, still names him.
+
+### The book page (`/study/bible/john`, same address)
+
+Data only, in `client/public/bible/notes/john/intro.json`, field `teaching`,
+built from the same parts and hooks as Mark and Matthew. Eleven headed parts
+with a contents list: John in a minute; Who wrote it, and how we know; When,
+where, and for whom; Why John is so different; How John is built; The big
+themes; The Old Testament and the feasts; John's Greek, made simple; 'The
+Jews' in John; Two passages, and what the old copies show; How the church
+has read John. Then 13 hard passages (1:1, 2:4, 3:5, 6:53, 7:53, 8:44, 8:58,
+10:30, 14:6, 14:28, 20:23, 20:28, 21:24), 13 key words, a timeline of 18
+entries that uses John's own feasts as its calendar, a map of eight places
+(Capernaum, Bethsaida, Tiberias, Cana placed roughly as a region, Sychar,
+Bethany beyond the Jordan, Jerusalem, Bethany), and five "Go deeper" pages
+after the shared six: Jewish life in Jesus's day, The Calendar and
+Festivals, The Incarnation, and two Honest Answers (three and one; the only
+way). The outline band at the top already drew John's eight parts from its
+existing `structure`; "How John is built" links to it.
+
+Words: 4,591 in the eleven parts; 1,059 in the lists, timeline and map.
+
+**Code.** None changed. The three hooks Matthew added (`teaching.deeper`,
+map `region` and `label`) were enough. `teaching.test.tsx` now expects
+John's guide and adds two tests (the part on "the Jews", a hard-passage link,
+Go deeper; the map's north-to-south description, a place card, the region
+caption).
+
+### Chapters 1 to 3 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| John 1 | 7 (in the beginning was the Word; a witness, and a light refused and received; the Word became flesh; not the Christ, but a voice; the Lamb of God; come and see; Philip, Nathanael, and heaven opened) | 3,760 |
+| John 2 | 5 (the wine runs out; water into wine, the first sign; zeal for the Father's house; destroy this temple; he knew what was in a man) | 2,414 |
+| John 3 | 5 (born from above; as Moses lifted up the snake; God so loved the world; he must increase; the one who comes from above) | 2,872 |
+| Total | 17 | 9,046 |
+
+Counted by script over the five fields. After each chapter every passage was
+printed field by field and read: all 17 sit under their right headings, and
+on the served build a script matched each rendered heading and its first
+words to the data (John 1: 7 of 7; John 3: 5 of 5; at 390 and 1440, day and
+night). `validate-bible-notes` passed with no exceptions (`OT_FIELD_KNOWN`
+is still empty).
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "John's book page" and "The plain
+notes on John 1" to "3". 34 web searches: 1 for Gray, 19 for the book page,
+then 5, 5 and 4. Main sources: Irenaeus, Against Heresies 3.1.1 and 3.3.4;
+Papias in Eusebius 3.39; Clement in Eusebius 6.14.7 (all paraphrased);
+Robinson (1976); Roberts (1935) and Nongbri (HTR 2005) on P52; Martyn (1968)
+and its critics; Brown and Dodd on "signs" and "glory"; Mishnah Sukkah 4:9
+and 5:2-4, Kelim 10:1, Rosh Hashanah 3:8 (marked as later); 1 Maccabees 4;
+UNESCO on Al-Maghtas; the Siloam and Bethesda pools; Tiberias; Colwell (1933)
+and Harner (JBL 1973); b. Ketubbot 96a (marked as later); the Qumran
+Community Rule on Isaiah 40:3; the 1:18 variant; Josephus, Antiquities
+15.380; Wisdom of Solomon 16:7; Eusebius's Onomasticon on Aenon; the NET note
+on "Woman" and on houtōs. Counts of Greek words are a script over the
+repository's Greek text. Scripture is the BSB, checked word for word.
+
+### Cut or narrowed
+
+The size of P52 and the author of the 2020 NTS article on it; Robinson's The
+Priority of John; the Florinus letter; Trajan's dates; any count of how much
+of John is not in the others; Ephraim and Aenon on the map; Philo, the
+Targums and Wisdom literature beyond Proverbs 8; Dodd's conquering lamb by
+name; Origen's Bethabara; the Zechariah 14:21 wordplay; the metrētēs in
+litres; Dionysus; Augustine's six ages; the shoshbin; Nakdimon ben Gurion;
+the "born again" story of 1976; every scholar named in the deep notes but not
+checked this run. The Jerusalem pools are "widely taken to be" Bethesda and
+Siloam, not "found".
+
+### Contested matters, and how they are stated
+
+Authorship (the son of Zebedee, a Jerusalem disciple perhaps the elder, a
+circle of churches; tradition and evidence named apart). Date (the 90s, and
+the minority before 70). The temple action (one event or two, in the Mark 11
+and Matthew 21 wording, "These notes do not settle it"). The length of the
+ministry. The day of the crucifixion (three views, pointing to the Mark 14
+notes). Whether John knew the other Gospels. The count of the signs. 1:1 and
+"a god" (the Greek explained, the New World Translation named, "deserve a
+patient answer, not scorn"). Verse 13 and human response. Isaiah and Moses
+"seeing" God. Elijah (Matthew 11:14 and 1:21). The Lamb (five readings).
+"Son of God" on Nathanael's lips. Mary at Cana (Catholic, Orthodox and
+Protestant emphases). Wine (unfermented reading and the majority reading;
+neither for nor against drinking). Did Jesus raise himself. "Water and the
+Spirit" (baptism; Ezekiel 36; natural birth; "These notes do not choose").
+"So loved" (degree and manner). Those who never heard (not answered by the
+passage). Where the quotation marks close in chapter 3.
+
+**"The Jews" in John.** Its own part on the book page, consistent with
+Matthew's page and the Mark 15 and Matthew 27 notes: the misuse named ("This
+misuse is wrong, and the site rejects it plainly"), what the phrase means in
+the story, everyone in the story Jewish, 4:22, the synagogue split and
+Martyn's theory with its doubters, Acts 4:27 and Nostra Aetate in the same
+words, and the translators' choices as views. In the chapter notes, 1:19 and
+2:18-20 each say the phrase there means the authorities.
+
+**Care.** 2:6-11: a line for anyone hurt by alcohol, with a path to help
+(someone you trust, a doctor or a recovery group). 3:31-36: for anyone
+grieving someone who died without clear faith. 1:6-13: for readers whose
+families let them down. No phone number is given.
+
+### What was run, and what passed (watched)
+
+All 36 commands of the content-gates step in ci.yml, one at a time: exit 0
+each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 47
+chapters in plain words; validate-no-emdash: 260 files, 0 em-dashes; search
+index 732 entries up to date; passage index 623 files match; verify-sources
+22 texts intact). `pnpm check`: clean. `pnpm test`: 146 files passed, 7
+skipped; 1,655 tests passed, 73 skipped. ESLint on the changed test file:
+clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,028 pages),
+`pnpm run audit:canonicals` (0 failures). Served with
+`scripts/serve-like-vercel.mjs` on port 4602 and looked at `/study/bible/john`,
+`/john/1`, `/john/3`, `/mark` and `/matthew` at 390 and 1440, day and night:
+no sideways scroll, no page errors; Mark and Matthew show their own guides as
+before (16 contents entries each, their own maps and Go deeper). The first
+look at John's map had Tiberias over the lake and Bethany touching the
+Jordan line; three `label` entries in John's data fixed it, and a script then
+found no name overlapping another name or a mark. (The server keeps gzipped
+files in memory, so it was restarted to see the change.) Screenshots:
+`/home/user/elite-shots/bdoor/jnrun-*`. The label fix was data only and was
+checked by `validate-bible-notes` and `teaching.test.tsx` after the build;
+the build was not rerun for it. Lighthouse was not run (no code changed and
+nothing new loads on a chapter's first paint). dist/ deleted, server stopped,
+no lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient writer (all paraphrased); whether the
+Mishnah's Tabernacles rites were done in Jesus' day (said to be uncertain);
+the Al-Maghtas identification (said to be uncertain); Wisdom of Solomon's
+date ("probably" before Jesus); the repository's own dates for Bach, Luther,
+Calvin and Aquinas (reused from the introduction, not searched again).
+
+### Next
+
+John 4 onward in plain words, in the same shape.
