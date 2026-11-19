@@ -1893,3 +1893,37 @@ Augustine's six ages; Veronese and the Louvre; the Zechariah 14:21 wordplay;
 m. Shekalim 1:3; m. Keritot 1:7; Tosefta Ketubbot; the Royal Stoa; Sanders
 and Fredriksen by name; the brothers of Jesus (three readings are in the
 Mark 3 note).
+
+## The plain notes on John 3 (2026-11-19)
+
+`client/public/bible/notes/john/plain/3.json`. 4 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Pharisees devout, respected by the people | 1-8 | Earlier ledger (Mark 12: Josephus, Antiquities 18.15-17) | Earlier ledger |
+| Nicodemus among the chief priests and Pharisees, asks for a fair hearing (7:45-51); 19:39 | 1-8 | BSB | BSB text |
+| Anōthen "again" and "from above"; 3:31; Bibles divide | 1-8 | Greek text in the repository; book page ledger | Script; repository `text` |
+| Pneuma wind and spirit (Hebrew ruach likewise) | 1-8 | Lexicons; repository word note G4151 | Repository |
+| Ezekiel 36:25-26; 37:9; Titus 3:5 | 1-8 | BSB | BSB text |
+| Readings of "water and the Spirit": baptism (long associated in Christian interpretation; Catholic, Orthodox, Lutheran, many Anglican); Ezekiel's cleansing (Calvin: "water, that is, the Spirit"); natural birth | 1-8 | McCabe, "The Meaning of Born of Water and the Spirit in John 3:5" (DBTS); Reformation Study Bible note; Carson's survey as summarised; repository `hard` | Search: dbts.edu; biblegateway.com Reformation Study Bible John 3:5; thegospelcoalition.org. Justin, Tertullian, Trent, Witherington, Belleville and Bultmann not named |
+| Crucifixion Rome's punishment for slaves and rebels, in public | 9-15 | Earlier ledger (Mark 15) | Earlier ledger; kept general |
+| Dei ("must") in 3:7, 3:14, 3:30 | 9-15 | Greek text in the repository | Script |
+| Numbers 21:4-9 (21:8 quoted); 2 Kings 18:4; 12:33 | 9-15 | BSB | BSB text |
+| Wisdom of Solomon 16:7: healed not by what he saw but by God, the Saviour of all; Mishnah Rosh Hashanah 3:8: healed when they looked upward and set their hearts on their Father in heaven | 9-15 | Wisdom; Mishnah | Search: stljewishlight.org; aish.com; jweekly.com; sefaria.org topics "The Copper Snake". Paraphrased; Wisdom "probably" before Jesus' time |
+| Houtōs: "so much" or "in this way"; many think both (NET note); Gundry and Howell (NovT 1999) for manner, Jensen (NTS 2019) against a manner-only reading | 16-21 | NET note; NTS | Search: biblia.com NET John 3:16; cambridge.org NTS (Jensen). Scholars not named on the page |
+| Monogenēs "unique"; "only begotten" in older Bibles | 16-21 | Repository word note G3439 | Repository |
+| Where Jesus' words end (15 or 21) an editorial choice | 16-21 | Repository `literary` and `text` | Repository |
+| Genesis 22:2; Romans 8:32 | 16-21 | BSB | BSB text |
+| Those who never heard: the passage does not address it; views differ | 16-21 | Repository `hard` | Stated without names |
+| Jesus did not himself baptize (4:2); Mark 1:14; Mark 6:17-29 | 22-30 | BSB | BSB text |
+| Aenon near Salim: Eusebius's Onomasticon, eight Roman miles south of Scythopolis; Samaria near Shechem also proposed; no site confirmed | 22-30 | Eusebius; Bible atlases | Search: biblicaltraining.org "Aenon"; biblehub atlas; biblewalks.com |
+| Hosea 2:19; Isaiah 62:5 | 22-30 | BSB | BSB text |
+| Sphragizō "set one's seal" (3:33); apeitheō "not obey" (3:36); menei "remains" | 31-36 | Greek text in the repository | Script |
+| Psalm 7:11; Psalm 103:10 | 31-36 | BSB | BSB text |
+| Care line for the grieving | 31-36 | Repository `teach.pastoral` | Written for this note |
+
+Left out: the shoshbin and m. Sanhedrin 3:5; Nakdimon ben Gurion and
+Bauckham's family link; Qumran's night study; Jubilees and 1QS on the spirit;
+b. Yevamot 22a; Barnabas and Justin on the snake; Wesley, Colson, Carter and
+the 1976 "born again" story; Rollen Stewart's signs; Michelangelo and Tanner;
+Hick, Nash and Pinnock by name; the Madaba map's Aenon.
