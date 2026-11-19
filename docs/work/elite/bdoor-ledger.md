@@ -727,3 +727,135 @@ Via Maris as a Roman road name; the number of fishing boats on the lake
 (Josephus's figure in Jewish War 2, not checked). Care: a word on fasting
 safely (ask a doctor; if not eating has become a struggle, talk to someone
 trusted and a health professional); healing and medicine set side by side.
+
+## The plain notes on Matthew 5 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/5.json`. Eight searches for this
+chapter, with the earlier ledger for Mark 1, 2, 9, 10 and 12 and Matthew's
+book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Teachers sat to teach; the Moses echo is the scholars' reading, which Matthew never states | 1-12 | Luke 4:20; Allison, The New Moses (1993) | Earlier ledger (Mark 9; Matthew's book page) |
+| Psalm 1:1; Isaiah 61:1-2; Psalm 37:11; Psalm 24:3-4; first and eighth beatitudes share a promise | 1-12 | BSB | Repository |
+| Salt with every grain offering; no account of how salt loses its taste | 13-16 | Leviticus 2:13 | Earlier ledger (Mark 9, narrowed there too) |
+| The basket (modios) a grain measure | 13-16 | Standard lexicons | Lexicon fact |
+| Isaiah 49:6; Isaiah 2:2-3; 6:1 beside 5:16 | 13-16 | BSB | Repository |
+| Scribes trained in the Law; Pharisees devout and popular | 17-20 | Josephus, Antiquities 18.15-17 | Earlier ledger (Matthew 3, Mark 12) |
+| Jeremiah 31:33; Ezekiel 36:26-27; Romans 13:10; Mark 7:19; Acts 15:19-20 | 17-20 | BSB | Repository |
+| Moral, ceremonial and civil division of the Law; fulfilled in Christ | 17-20 | Standard theological positions | Stated as views |
+| Raca: Aramaic, roughly "empty-head", "worthless"; only here in the Bible | 21-26 | Strong's 4469; Vine's | Search: biblehub.com 4469; blueletterbible.org G4469; bible.jmoorewv.com Vine's. The "spit" etymology not used |
+| Gehenna, the Valley of Hinnom; no ancient evidence for the rubbish dump | 21-26 | Jeremiah 7:31; Bailey (1986) | Earlier ledger (Mark 9) |
+| Day of Atonement does not atone for wrongs against a neighbour until he is appeased | 21-26 | Mishnah Yoma 8:9 (written down around 200, marked as later) | Search: outorah.org Yoma 8:8-9; torah.org; sefaria.org sheets |
+| Exodus 20:13; Leviticus 19:17; Mark 3:5; Ephesians 4:26; Romans 12:18 | 21-26 | BSB | Repository |
+| "Cut it off" a picture, never a command to harm the body; care line | 27-30 | Mark 9 plain note, word for word | Repository |
+| Exodus 20:14, 17 | 27-30 | BSB | Repository |
+| Deuteronomy 24:1; Shammai and Hillel; only the husband could divorce; the certificate freed her | 31-32 | Mishnah Gittin 9:10 and 9:3 (later) | Earlier ledger (Mark 10) |
+| Christian readings of divorce and the exception (Catholic, Orthodox, Protestant, betrothal, forbidden kin) | 31-32 | Mark 10 plain note; repository deep note (Matthew 5 `hard`) | Repository. No side taken; scholars not named |
+| Safety line | 31-32 | Mark 10 plain note, word for word | Repository |
+| Swearing by the temple and its gold (23:16); Leviticus 19:12; Numbers 30:2; Deuteronomy 23:22; Isaiah 66:1; 2 Corinthians 1:23; Hebrews 6:17; James 5:12 | 33-37 | BSB | Repository |
+| Essenes avoided swearing, thought it worse than perjury, since one not believed without God is already condemned | 33-37 | Josephus, Jewish War 2.135 | Search: cojs.org (Schiffman); biblicalarchaeology.org (Mason); virtualqumran.huji.ac.il (Whiston). Paraphrased |
+| Anabaptists refused oaths | 33-37 | Schleitheim Confession (1527) | Earlier ledger (Matthew's book page) |
+| Eye for eye a rule for judges (Deuteronomy 19:18); Exodus 21:24; Leviticus 24:20; Deuteronomy 19:21; Proverbs 25:21 | 38-42 | BSB | Repository |
+| Heavier fine for a back-handed slap than an ordinary slap (400 against 200 zuz) | 38-42 | Mishnah Bava Kamma 8:6 (later) | Search: outorah.org Bava Kamma 8:5-6; jewishencyclopedia.com "Assault and Battery"; jewishvirtuallibrary.org. No sums given, since translations differ; the back-hand reading of the right cheek is "many readers note" |
+| Cloak returned by sunset | 38-42 | Exodus 22:26-27 | Earlier ledger (Mark 10) |
+| Angareuō a Persian loanword, first of royal couriers pressing men and animals into service; used of Simon (27:32) | 38-42 | Thayer's; LSJ | Search: lsj.gr; blueletterbible.org G29; biblicaltraining.org "Compel". Roman soldiers not named, since the results did not confirm it |
+| Tolstoy, What I Believe (1884), took "resist not evil" as the key to the sermon | 38-42 | Tolstoy | Search: nonresistance.org What I Believe ch. 1, 4; marxists.org 1884 |
+| Luther's two kinds of duty; Anabaptist and Mennonite non-violence | 38-42 | Histories of interpretation | Earlier ledger (Matthew's book page) |
+| Just war from Augustine to Aquinas (Summa II-II, question 40) | 38-42 | Aquinas, Summa | Search: ccel.org SS040; pages.uoregon.edu; acton.org |
+| John 18:22-23; Acts 22:25 | 38-42 | BSB | Repository |
+| "Hate your enemy" in no Old Testament verse | 43-48 | BSB | Script over the whole BSB (only Matthew 5:43) |
+| Community Rule: love the sons of light, hate the sons of darkness; whether Jesus meant it is unknown | 43-48 | 1QS 1:9-10 | Search: ccat.sas.upenn.edu 1QS; israelbiblecenter.com "Love and Hate at Qumran"; encyclopedia.com "Sons of Light" |
+| Leviticus 19:18; Exodus 23:4-5; Leviticus 19:2; Deuteronomy 18:13; Luke 6:36; teleios whole, complete | 43-48 | BSB; lexicons | Repository |
+| Tax collectors despised as collaborators | 43-48 | Earlier ledger (Mark 2) | Earlier ledger |
+
+Left out: 4Q525 and Puech; the War Scroll's "poor in spirit"; the Church of
+the Beatitudes and Barluzzi; the claim that Dead Sea salt leached away; any
+first-century custom of withholding a greeting; the right hand as the valued
+one; "without a cause" in verse 22 and other manuscript notes; Roman soldiers
+as the ones who compelled; the Quakers on oaths; Fitzmyer, Instone-Brewer,
+Piper and the other scholars named in the deep note. Care: "cut it off" and
+the crisis line; the divorce safety line; "turn the other cheek" is not a
+command to stay with someone who hurts you; reconciliation does not mean
+returning to danger; loving an enemy is not trusting one who is still
+dangerous.
+
+## The plain notes on Matthew 6 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/6.json`. Eight searches for this
+chapter, with the earlier ledger and Matthew's book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Hypokritēs the Greek for a stage actor; Matthew uses "hypocrite" far more than the other Gospels | 1-4 | Strong's 5273; lexicons | Search: blueletterbible.org G5273; merriam-webster.com; wiktionary. Count by script over the BSB (Matthew 27, Luke 6, Mark 2, John 0) |
+| No ancient source describes givers blowing trumpets; read as a picture | 1-4 | Repository deep note (Matthew 6 `cultural`) | Stated as how most read it |
+| 5:16; Acts 4:36-37 | 1-4 | BSB | Repository |
+| Hour of prayer (Acts 3:1); standing to pray (Mark 11:25); tameion a storeroom or inner chamber | 5-8 | BSB; lexicons | Repository |
+| 1 Kings 18:26; Ecclesiastes 5:2; Luke 6:12 | 5-8 | BSB | Repository |
+| Isaiah 63:16; Luke 11:2-4; James 1:13; Exodus 16:4; Proverbs 30:8; 1 Chronicles 29:11; 18:33 | 9-15 | BSB | Repository |
+| The Kaddish asks God to establish his kingdom in the lifetime of those who pray; its early wording and date are uncertain | 9-15 | Jewish Encyclopedia "Kaddish"; Boustan's review of Lehnardt | Search: jewishencyclopedia.com; rboustan.scholar.princeton.edu; jcrelations.net. Given as "how old ... is not known" |
+| Epiousios: Origen found it in no Greek writer and thought the evangelists formed it; readings "for today", "for tomorrow", "needed to live"; Jerome's "supersubstantial" in Matthew | 9-15 | Origen, On Prayer 27 (paraphrased); Jerome, Vulgate | Search: ccel.org Origen On Prayer; blog.adw.org; catholicexchange.com |
+| Peirasmos means test or trial as well as temptation; Pope Francis in 2017 called the usual wording not a good translation; the Italian wording later changed | 9-15 | News and commentary | Search: ncregister.com; logos.com; catholicreview.org. Only "some languages" said; no French or Italian text quoted |
+| Doxology absent from Sinaiticus, Vaticanus, Bezae and early commentators (Tertullian, Origen, Cyprian); Didache's two-part form; most scholars think it an early addition | 9-15 | Metzger-style textual notes; Didache 8.2 | Search: oca.org (Farley); confessionalbibliology.com (the dissenting view); uasvbible.org |
+| Didache about AD 100; pray the prayer three times a day | 9-15 | Didache 8.3 | Search: christianhistoryinstitute.org; cts.perseids.org Didache 8; earlier ledger (Matthew's book page) |
+| Forgiveness first in the parable; forgiveness is not reconciliation or silence about a crime | 9-15 | 18:23-35; repository deep note (Matthew 6 `hard`) | Pastoral; CLAUDE.md "Care for the reader" |
+| Day of Atonement the one fast in the Law (Leviticus 16:29); "I fast twice a week" (Luke 18:12); 9:15; Acts 13:2-3 | 16-18 | BSB | Repository |
+| Mourners unwashed and unanointed, ashes; David washed and anointed when mourning ended | 16-18 | 2 Samuel 14:2; 13:19; 12:20 | BSB |
+| Joel 2:13; Isaiah 58:6-7 | 16-18 | BSB | Repository |
+| Care: who should not fast; ask a doctor; disordered eating | 16-18 | Matthew 4 plain note, same wording for the last two sentences | Pastoral |
+| Treasure as grain, cloth, coins hidden or buried | 19-24 | 25:18; repository deep note | BSB; stated generally |
+| Good eye generous, evil eye grudging: Proverbs 22:9 "good of eye"; Deuteronomy 15:9 | 19-24 | Hebrew idiom | Search: biola.edu "Good eye, bad eye"; biblicaltraining.org "Single eye"; bibleproject.com. Both readings given. Matthew 20:15 not used |
+| Mammon Aramaic for wealth or property, not a known god; personified in 6:24 | 19-24 | Encyclopedia of the Bible; Tyndale Bible Dictionary; Strong's 3126 | Search: biblegateway.com encyclopedia "Mammon"; biblehub.com 3126; en.wikipedia.org "Mammon" |
+| Proverbs 23:5; 1 Timothy 6:10, 17-18 | 19-24 | BSB | Repository |
+| Sowing and reaping field work, spinning home work | 25-34 | The verse's own pairing; repository deep note | Stated plainly |
+| 1 Kings 10; Psalm 147:9; 1 Peter 5:7; 8:26; 14:31; Philippians 2:20; 26:37; 10:29; 2 Corinthians 11:27; 25:35 | 25-34 | BSB | Repository |
+| Help wording: "A doctor, a counselor, medicine, one trusted person who will stay. If you have reached the place where you are not sure you want to be here at all, tell someone today, and in the United States you can call or text 988 right now." | 25-34 | The site's Honest Answer "Is my anxiety a spiritual failure?" (`client/src/data/answers.ts`) | Copied word for word |
+
+Left out: Tobit 12:8 and Avot 1:2; the theater at Sepphoris and Batey;
+apechō as a business receipt (the search did not confirm it); the Amidah and
+Avinu Malkenu; the Didache's fast days (its "hypocrites" are read as Jews, and
+the line was not needed); the French bishops' 2017 wording; Augustine on
+Punic mammon; the eye as sending out light (Allison); Rabbi Eliezer in b.
+Sotah 48b; Jay Adams; Kierkegaard; Skeat's "card" reading. Care: forgiveness
+is not a return to harm; fasting not for everyone; worry is not a rebuke of
+anxiety disorders, with the site's help wording; no prosperity reading of
+6:33.
+
+## The plain notes on Matthew 7 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/7.json`. Seven searches for this
+chapter, with the earlier ledger (Hillel in Mark 12; the Didache's date in
+Matthew's book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Karphos a chip or splinter, dokos a roof beam; the carpenter's son (13:55) | 1-6 | Lexicons; BSB | Lexicon fact |
+| Rabbi Tarfon on accepting rebuke: splinter and beam | 1-6 | Babylonian Talmud, Arakhin 16b (marked as later) | Search: intertextual.bible Matthew 7:3 and Arakhin 16b; sefaria.org Arakhin 16b; Harvard Theological Review "The Mote and the Beam". Paraphrased |
+| Dogs as scavengers (1 Kings 14:11); pigs unclean (Leviticus 11:7); pearls (13:45-46); holy food not for outsiders (Exodus 29:33); 15:26; 28:19 | 1-6 | BSB | Repository. "What is holy" as sacred food given as "may" |
+| 18:15; John 7:24; Galatians 6:1 | 1-6 | BSB | Repository |
+| Tobit gives the rule in negative form; written in the third or second century BC | 7-12 | Tobit 4:15; dating summaries (about 225 to 175 BC) | Search: tips.translation.bible on Tobit 4:15; bible.usccb.org Tobit 4; Wikipedia "Book of Tobit". Paraphrased ("in effect") |
+| Hillel: what is hateful to you, do not do to your neighbour; the rest is commentary | 7-12 | b. Shabbat 31a (later) | Earlier ledger (Mark 12) |
+| 4:3; 6:8; 6:10; Luke 11:13; 26:39; 2 Corinthians 12:8-9; Leviticus 19:18; 5:17 | 7-12 | BSB | Repository |
+| No prosperity reading; unanswered prayer stated as the skeptic would | 7-12 | Mark 11 plain note | Repository |
+| Two ways: Deuteronomy 30:19; Psalm 1:6; Jeremiah 21:8 | 13-14 | BSB | Repository |
+| Didache opens with two ways, of life and of death | 13-14 | Didache 1.1 | Search: newworldencyclopedia.org "Didache"; biblegateway.com encyclopedia; ewtn.com translation |
+| Luke 13:23-24 | 13-14 | BSB | Repository |
+| Russell, Why I Am Not a Christian (lecture of 1927), counted Christ's belief in hell a serious defect in his moral character | 13-14 | Russell | Search: users.drew.edu (Bertrand Russell Society text); humanum.arts.cuhk.edu.hk; Wikipedia. Paraphrased |
+| Theudas under Fadus (about AD 44 to 46) promised to part the Jordan; cavalry killed many; he was beheaded | 15-20 | Josephus, Antiquities 20.97-98 | Search: lexundria.com Antiquities 20.97-98 (Whiston); livius.org; en.wikipedia.org "Theudas". Acts 5:36 named as "a Theudas", since its order differs |
+| Didache 11: a prophet who stays three days or asks for money is false | 15-20 | Didache 11 | Search: evangelizationstation.com translation; ewtn.com; bkv.unifr.ch |
+| Deuteronomy 13:1-3; 18:22; Ezekiel 22:27; Genesis 3:18; 3:10; Galatians 5:22 | 15-20 | BSB | Repository |
+| "Knew" as a personal bond (John 10:14); Luke 6:46; 11:28; 5:3 | 21-23 | BSB | Repository |
+| Reformed, Wesleyan and Catholic accounts of assurance | 21-23 | Standard confessional positions (repository deep note, Matthew 7 `hard`) | Stated as views, no documents named |
+| Rains in their seasons (Deuteronomy 11:14); Luke 6:48; Ezekiel 13:11 | 24-29 | BSB | Repository |
+| Avot de-Rabbi Natan 24: stones then bricks, a house the flood cannot move; attribution to Elisha ben Abuyah uncertain; written down long after | 24-29 | Avot de-Rabbi Natan A 24 | Search: intertextual.bible Matthew 7:24 and ARN 24; encyclopedia.com "Elisha ben Avuyah"; sefaria.org sheet 247324 |
+| Mishnah (about AD 200) Avot 1:1: Moses to Joshua to the elders | 24-29 | Mishnah | Search: sefaria.org English explanation of Avot 1:1; cojs.org; posenlibrary.com |
+| Pointer to the six readings on Matthew's book page | 24-29 | `intro.json` teaching part "sermon" | Repository |
+
+Left out: the Mishnah on measure for measure (Sotah 1:7-8); the Egyptian
+prophet and the false prophet of AD 70; 4 Ezra; Kohler, Kant, Dihle, Wattles;
+Bunyan; the Westminster Confession, Wesley's sermons and Trent by name; any
+account of wadis flooding in minutes (stated only from Scripture); Hillel's
+dates; m. Avot 3:17. Care: "judge not" is not a ban on telling right from
+wrong nor a license to look down; no prosperity reading of 7:7; the narrow
+gate is an invitation, not a scare; the afraid reader of 7:21-23 is met with
+11:28.

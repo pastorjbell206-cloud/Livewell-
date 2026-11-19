@@ -595,3 +595,64 @@ Apologetic, should get the argued form: "How can God be three and one?" (215 wor
 Doctrinal questions argued between Christians, better as the contested-doctrine form (positions steelmanned, ranked by order, left open): "Can you lose your salvation?" (273), "Does God choose us, or do we choose him?" (254), "What does the Bible say about divorce and remarriage?" (241).
 
 Pastoral or practical, should stay short and personal: "Is it okay to be angry at God?" (221), "Can you be a Christian without going to church?" (212), "What if I'm done with church but not with Jesus?" (212), "What happens after you deconstruct your faith?" (229), "Should a Christian follow a political party?" (208), "What does the Bible actually say about money?" (226), "What does the Bible say about anxiety?" (203), "What do I do when my teenager says they don't believe?" (215), "Is my anxiety a spiritual failure?" (295).
+
+## 11. The ninth run (2026-11-19): the Trinity, those who never heard, Genesis 1
+
+The last three short answers that make a claim a skeptic disputes, rebuilt by the approved pattern. Slugs, questions, addresses, essay and book links are unchanged; every claim is in `apol-ledger.md` under "Ninth run". No answer uses a fact about James. Twenty-three of the 35 answers now have the argued form; the twelve left short are the doctrinal and pastoral ones listed in section 10.
+
+### How can God be three and one?
+
+The argument in three sentences. It states the objection from Judaism (the Shema, Maimonides), Islam (Qur'an 4:171 and 112) and the Unitarians (Channing 1819, Tuggy), then lays out Cartwright's logical argument (each person is God, they are distinct, so there are three Gods) and grants that it is valid on its face. It quotes what the Athanasian and Nicene Creeds claim and do not claim (one in being, three in persons), argues from the New Testament evidence the church had to hold together (one God; Father, Son and Spirit each spoken of as God; the three distinct; Hurtado, Pliny, 1 Corinthians 8:6) with the contested premise named, and shows which old error each bad analogy teaches (modalism with Tertullian, tritheism with Gregory of Nyssa, Arianism). It answers that the objection reads "is God" as counting one more of a kind, which the creed does not mean, gives the Latin, social and relative-identity models as proposals without a side, hears the reply that "not provably contradictory" is a low bar, and ends by saying what is mystery and what the doctrine still rules out.
+
+Before: "I made the math objection for years and was objecting to a cartoon" (cut: a recollection of James's that can't be confirmed). After: "The weight of the objection sits on the third premise, which reads \"the Son is God\" the way we read \"Peter is a man\": as one more member of a kind, to be counted."
+
+Words: 215 before; 2,235 after.
+
+Sources: Cartwright 1987; Tuggy, Stanford Encyclopedia, 2009 (the strongest case against); Plantinga Jr. 1989; van Inwagen 1995; Leftow 1999; Hurtado 2003; Bauckham 2008; Ehrman 2014.
+
+### What about those who never heard of Jesus?
+
+The argument in three sentences. It states the moral objection as an argument (a just God does not condemn for the impossible; many could not have believed; Christianity requires belief in Jesus), with Hick on birthplace and Dillard's hunter, and grants the first two premises from Scripture itself (Genesis 18:25). It shows that the third premise runs together "saved only by Christ" (confessed, Acts 4:12) and "saved only by knowing his name in this life" (debated), using Abraham, Hebrews 11:13, Romans 3:25, Melchizedek, Job and Cornelius, then sets out what Scripture says (Romans 1 to 2, Acts 14 and 17) and what it does not say (that creation's light saves; Romans 10:14, Acts 11:14, Acts 17:30). It links to "Is Jesus really the only way to God?" for the three views rather than repeating them, names the hard question each must face (Craig's 1989 middle-knowledge proposal for the restrictive view, with its critics), treats the child who dies as hope and not doctrine, and takes no side.
+
+Before: "I wanted the roster for years so I could stop feeling the ache" (cut: a recollection and a feeling of James's). After: "No one in Scripture is condemned for never hearing a name."
+
+Words: 396 before; 2,205 after.
+
+Sources: Dillard 1974; Hick 1989 (the best book against); Craig 1989; Sanders 1992; Pinnock 1992; Sanders, Fackre and Nash 1995; Lumen Gentium 1964.
+
+### How should a Christian read Genesis 1?
+
+The argument in three sentences. It states the skeptic's charge (prescientific myth, and non-literal readings a retreat), grants the first half with a Christian scholar's concession (Seely 1991 on the raqia, with Poythress's reply), and refutes the second from the history: Origen and Augustine read the days non-literally long before modern geology, and Basil read them plainly ("For me grass is grass"). It reads Genesis 1 against the Enuma Elish to show what kind of text it is, an argument with its neighbors' myths about God, the world and the human being, then sets out six Christian readings (calendar-day, day-age, framework, analogical days, cosmic temple, evolutionary creation), each with its strongest point and hard question and no side taken. It names what all confess and the creeds bind ("Maker of heaven and earth", nothing about duration), calls the days a third-order question, and names the historical Adam as a weightier related question, with the four views set out and left open.
+
+Before: "When I was an atheist the science was a real barrier, and learning that the church has held several faithful readings of this chapter mattered more to me than winning any single argument about it." (cut: a recollection and a feeling). After: "The church has held more than one faithful reading from the start. That doesn't settle which is right. It does mean no reading can be dismissed as a recent invention."
+
+Words: 250 before; 2,150 after.
+
+Sources: Augustine, The Literal Meaning of Genesis (Taylor 1982); Kline 1958; Whitcomb and Morris 1961; Seely 1991; C. John Collins 2006; Walton 2009; Four Views on the Historical Adam 2013.
+
+### What I ran, and what passed (ninth run)
+
+Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date). One heavy command at a time, each watched to the end:
+
+- Rebuilt the search index (732 entries) and the passage index (35 chapter files written).
+- `pnpm check`: exit 0.
+- All 36 commands of the content-gates step in `ci.yml`, one at a time: every one exit 0.
+- `pnpm test`: exit 0, 146 test files passed, 7 skipped; 1,651 tests passed, 73 skipped.
+- ESLint on `answers.ts` and `hq.test.tsx`: clean.
+- `pnpm build`, `pnpm run sitemap` (static fallback, no database), `pnpm run prerender` (3,028 route files), `pnpm run audit:canonicals` (0 not prerendered, 0 failures): each exit 0.
+- Served with `scripts/serve-like-vercel.mjs` on port 4587, API stubbed, Playwright at 390 x 844 and 1440 x 900, day and night: scroll width equals the viewport on all twelve views; every section heading, the laid-out arguments and the source lists render. Screenshots: `/home/user/elite-shots/apol/run10-*`. Server stopped, `dist/` deleted.
+- Not run: Lighthouse.
+
+### Not verified (ninth run)
+
+- The Stanford Encyclopedia and Cartwright's essay could not be opened from here; Tuggy's and Cartwright's positions are paraphrased from search results.
+- Augustine's Literal Meaning of Genesis was not read; its three claims rest on the earlier ledger. Dillard's story is from a reader's transcription and is told as paraphrase. The year of Tertullian's Against Praxeas is uncertain and is given only as "early in the third century".
+- Job 1:1 in the ESV was not found by search; it is cited, not quoted.
+- No answer has been read by James.
+
+### Waits for James (ninth run)
+
+1. Three sentences were cut because they describe a memory or feeling of his that can't be confirmed (one in each answer, quoted above). Any that is true as written can go back.
+2. The Genesis answer takes no position on the age of the earth, evolution or a historical Adam. If he holds one he wants named as his, it can be added as his.
+3. The Trinity answer says plainly that the doctrine is confessed, not put to a vote, and that its denial describes a different God; it calls no living person a heretic. He may want to check that line.
+4. The pages are long (2,150 to 2,235 words). The first-paint idea from earlier runs (prerender only the short answer above the fold) still stands, unbuilt.
