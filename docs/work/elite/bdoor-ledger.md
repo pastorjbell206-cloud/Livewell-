@@ -1619,3 +1619,154 @@ Left out: Reimarus, Schweitzer, Russell, J. S. Russell, Sproul, Wright,
 France by name; Darby, Scofield, Lindsey, A Thief in the Night, Left Behind,
 Hart, Walvoord, Ladd; Irenaeus on the sign; the Didache; the "pestilences"
 variant; Deissmann's coin evidence; every date-setter by name.
+
+## The plain notes on Matthew 25 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/25.json`. Eight searches for this
+chapter, with the earlier ledger (Matthew 10, 13, 18 and 22; Mark 16).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| 1 Maccabees 9:37-39: a great wedding; the bridegroom came out with his friends and relatives, with drums and music, to meet the bride's party | 1-13 | 1 Maccabees | Search: biblehub.com and biblestudytools.com 1 Maccabees 9:37-39 (several translations; verse numbers vary by edition). Paraphrased |
+| Lampades: clay oil lamps or torches (oil-soaked cloth on a stick); scholars divided | 1-13 | Jeremias's article; Peppard, JBL 2024; translation notes | Search: reformedperspectives.org (Chamblin on 25:1-13); tips.translation.bible on 25:1-7; byustudies.byu.edu. No scholar named |
+| Luke 13:25; 7:23; Isaiah 62:5; Hosea 2:19; 9:15; 24:36 | 1-13 | BSB | BSB text |
+| Didache 16.1 (around AD 100): watch over your life; let your lamps not go out | 1-13 | Didache | Search: cts.perseids.org Didache 16.1; bkv.unifr.ch; date from the earlier ledger. Paraphrased |
+| b. Shabbat 153a, several centuries after Jesus | 1-13 | Earlier ledger (Matthew 22) | Earlier ledger; pointer only |
+| A talent about six thousand denarii; a denarius a day's wage (20:2); so about twenty years' wages | 14-30 | Earlier ledger (Matthew 18) | Earlier ledger; "something like" |
+| Josephus, Antiquities 17.318: Antipas two hundred talents a year | 14-30 | Earlier ledger (Matthew 18) | Earlier ledger |
+| b. Bava Metzia 42a: Samuel, money is properly guarded only in the ground | 14-30 | Babylonian Talmud | Search: halakhah.com Bava Metzia 42a; myjewishlearning.com; steinsaltz.org. Marked as written down centuries later. No source found linking it to the parable; the note does not claim one |
+| Luke 19:11-27, 19:22; 13:12, 13:44; 21:12; 8:12; 22:13; Psalm 24:1; Psalm 16:11; Exodus 22:25 | 14-30 | BSB | BSB text |
+| A "whistle-blower" reading of the third servant (Herzog, in the deep note); most reject it | 14-30 | Deep note | Stated as "a few modern readers"; no name |
+| 1 Kings 2:19; Isaiah 58:7; Ezekiel 18:7; Ezekiel 34:17, 23; Daniel 7:13-14; Proverbs 19:17 | 31-40 | BSB | BSB text |
+| Lucian (second century), The Passing of Peregrinus 11-12: Christians at the prison daily with meals | 31-40 | Lucian | Search: en.wikipedia.org Passing of Peregrinus; tertullian.org; cts.perseids.org 11-15. Paraphrased |
+| Sulpicius Severus, Life of Martin 3: Martin cut his cloak at the gate of Amiens; that night saw Christ wearing the half | 31-40 | Sulpicius Severus | Search: en.wikipedia.org Martin of Tours; dcc.dickinson.edu; st-takla.org (NPNF). Paraphrased; given as "the story says" |
+| Two readings of "the least"; Sherman Gray, The Least of My Brothers (1989): before modern times most took them to be Christians | 31-40 | Gray 1989, as summarised | Search: journal-ems.org (citing Gray 1989, 340); dennyburk.com; crosswalk.com. Gray's own text not read; given as his finding |
+| 12:49; 28:10; 10:40, 42; 5:44; Luke 10:25-37 | 31-40 | BSB | BSB text |
+| "Prepared for you" (34) and "prepared for the devil and his angels" (41) | 41-46 | BSB | BSB text |
+| Many Jews expected the dead to be raised at the end of time | 41-46 | Earlier ledger (Mark 16) | Earlier ledger |
+| Daniel 12:2; Proverbs 21:13; 26:1; 7:17; Ephesians 2:8-10; James 2:17; 11:28; 27:28, 48 | 41-46 | BSB | BSB text |
+| Grace and works: Reformation (fruit); Catholic (works in grace truly count, grace their source) | 41-46 | Deep note; standard confessional positions | Stated as views; Trent not named |
+| Augustine, City of God 21.23: "eternal" used of both, so if one is endless the other is | 41-46 | Augustine | Search: newadvent.org/fathers/120121.htm; logoslibrary.org; sacred-texts.com. Paraphrased |
+| Views of hell; care line (11:28) | 41-46 | Matthew 10 and 13 plain notes | Wording reused |
+
+Left out: the talent's weight in kilograms; Antiquities 17.318's other
+figures; b. Sotah 14a and Midrash Tehillim 118.17; the Book of the Dead;
+Origen, Chrysostom, Benedict's Rule, Caravaggio, the cathedral portals,
+Sponsus, Michelangelo, Milton, Nicolai and Bach (all in the deep note, not
+checked this run); Stanton, France, Carson, Davies and Allison, Gutiérrez,
+Herzog, Russell, Hart, Fudge, Stott by name; the claim that the English word
+"talent" comes from this parable; the deep note's claim that 25:34 is the only
+place Jesus calls himself king in his teaching; the textual notes; the
+"bride" variant in verse 1; 1 Enoch.
+
+## The plain notes on Matthew 26 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/26.json`. Five searches for this
+chapter. Where Mark 14 tells the event, its verified claims and its wording
+are reused (the Lord's Supper views, Gethsemane and its care line, the
+Mishnah on trials, Peter's denial, "Surely not I").
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Caiaphas appointed by Valerius Gratus around AD 18, removed by Vitellius around 36 or 37; overlapped with Pilate | 1-16 | Josephus, Antiquities 18.33-35, 18.95 | Search: livius.org Caiaphas; newadvent.org Caiphas; en.wikipedia.org Caiaphas (36 or 37 disputed, both given) |
+| The 1990 ossuary; Passover crowds and riot; nard; anointing | 1-16 | Earlier ledger (Mark 14) | Pointer to the Mark 14 note |
+| Thirty pieces most likely shekels, perhaps Tyrian (used for the temple tax); not certain | 1-16 | Encyclopedias | Search: en.wikipedia.org Thirty pieces of silver; biblehub.com topical "Thirty shekels"; dannythedigger.com. Given as "most likely" and "perhaps" |
+| Exodus 21:32 thirty shekels for a slave gored; Zechariah 11:12-13; 27:9-10 | 1-16 | BSB | BSB text |
+| John 12:6 | 1-16 | BSB | BSB text |
+| Judas the Greek form of Judah; from the Middle Ages Judas sometimes made a picture of the Jewish people, feeding contempt | 1-16 | Encyclopedias; Acocella (New Yorker 2006) as quoted | Search: en.wikipedia.org Judas Iscariot; history.com "Why Judas betrayed Jesus"; bitterwinter.org. No scholar named |
+| "You have said it yourself" (su eipas) taken by many as a careful or reluctant yes that puts the words back on the asker | 17-25, 57-68 | Catchpole, NTS 1971 (as cited by the IVP commentary); translation notes | Search: cambridge.org NTS abstract; biblegateway.com IVP NT commentary 26:62-68; tips.translation.bible on 26:64. "Many scholars" |
+| Psalm 41:9; Genesis 50:20; Exodus 12; date question (Mark 14 wording, pointer) | 17-25 | BSB; earlier ledger | BSB text |
+| "For the forgiveness of sins" only in Matthew (Mark 14:24; Luke 22:20); 1:21; "with you" | 26-30 | BSB comparison | BSB text |
+| Exodus 24:8; Jeremiah 31:34; Isaiah 53:12; 20:28; views of the Supper (Mark 14 wording) | 26-30 | BSB; Mark 14 plain note | BSB text; repository |
+| Zechariah 13:7; one crowing in Matthew; 28:16 | 31-35 | BSB | BSB text |
+| "May Your will be done" (26:42) and the Lord's Prayer (6:10, 6:13); "My Father" for Abba; Psalm 42:5, 11; Isaiah 51:17; the church's answer and the care line (Mark 14 wording) | 36-46 | BSB; Mark 14 plain note | BSB text; repository |
+| Kiss of a student to a teacher (Mark 14 wording); "Friend" three times (20:13; 22:12; 26:50) | 47-56 | Earlier ledger (Matthew 22) | Repository |
+| A legion about five thousand soldiers | 47-56 | Earlier ledger (Mark 5) | Earlier ledger |
+| John 18:10 (Peter, Malchus); Luke 22:51; 5:39; Romans 13:4; Isaiah 50:6; views on the sword | 47-56 | BSB; standard positions | BSB text; stated as views |
+| Two witnesses (Deuteronomy 19:15); Leviticus 5:1 on a public charge, "may be why" Jesus speaks | 57-68 | BSB; deep note | BSB text; stated as "may" |
+| Mishnah Sanhedrin 4:1 and the two views (Mark 14 wording) | 57-68 | Earlier ledger (Mark 14) | Earlier ledger |
+| Psalm 110:1; Daniel 7:13; Isaiah 53:7; 50:6 | 57-68 | BSB | BSB text |
+| b. Eruvin 53b: later stories mocking Galilean pronunciation | 69-75 | Babylonian Talmud | Search: en.wikipedia.org Galilean dialect; johngill.thekingsbible.com 26:73; muse.jhu.edu article. Marked "much later"; the reading of lalia as "talk" not used |
+| 5:37; Psalm 51:17; 28:7, 10, 16; John 21:15-19; Mark manuscripts with one crowing | 69-75 | BSB; earlier ledger (Mark 14) | BSB text; earlier ledger |
+
+Left out: the Mishnah on reclining, the four cups and Gamaliel (in Mark's
+note); m. Berakhot 6:1; m. Sanhedrin 5:2 and 7:5; m. Bava Kamma 7:7;
+Josephus, Antiquities 18.63-64 (kept for chapter 27 if checked); P64 and P67;
+Klausner, Winter, Cohn, Danby, Brown, Catchpole, Maccoby, Klassen, Meier,
+Barth, Borges and the Gospel of Judas by name; Jeremias, Jaubert and
+Humphreys (the date question is a pointer to Mark 14); the claim that no
+governor of Judea had twelve legions.
+
+## The plain notes on Matthew 27 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/27.json`. Eight searches for this
+chapter. Where Mark 15 tells the event, its verified claims and its wording
+are reused word for word (Pilate, Tacitus, the "Christ-killers" paragraph,
+Nostra Aetate, Acts 4:27, the mocking, crucifixion, the three readings of the
+cry and its care line, the curtain, the burial). The crisis line after
+Judas's death is the Mark 14 wording word for word.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Judas's death told in one sentence in Matthew's own word (hanged himself) | 1-10 | BSB 27:5 | BSB text; no further detail given |
+| Acts 1:18-19 a different account; explanations: two stages; priests bought the field in his name; two tellings of remembered facts | 1-10 | Commentaries; skeptical replies | Search: biblehub.com "Acts 1:18 vs Matthew"; readingacts.com; jamesbishopblog.com (skeptical); ehrmanblog.org forum. No side; Acts's details not described |
+| 27:9 credited to Jeremiah: composite of Zechariah 11 with Jeremiah 18-19 and 32; "spoken" not "written"; a slip; the earliest manuscripts read Jeremiah | 1-10 | Menken, Biblica 83 (2002); commentaries | Search: bsw.org Biblica 83 Menken; biblehub.com "Is Matthew 27:9 a textual error?"; en.wikipedia.org Matthew 27:9. The claim that Augustine and Jerome called it a mistake was not used |
+| Zechariah 11:13; Jeremiah 19:1-2, 11; 32:9; 2 Samuel 17:23 (Ahithophel) | 1-10 | BSB | BSB text; Ahithophel given as what "some readers notice" |
+| "You bear the responsibility" in 27:4 and 27:24 | 1-10, 15-26 | BSB | BSB text |
+| Crisis lines (Mark 14 wording); 26:28 | 1-10 | Mark 14 plain note | Repository |
+| Pilate about AD 26 to 36; Pilate stone 1961; Tacitus, Annals 15.44 around 116 | 11-14 | Earlier ledger (Mark 15) | Earlier ledger |
+| Josephus, Antiquities 18.63-64: expanded by Christian copyists; most scholars think the original said Pilate condemned Jesus to the cross on the accusation of leading men | 11-14 | Josephus; the "authentic core" consensus | Search: en.wikipedia.org Josephus on Jesus (and talk page); posenlibrary.com Testimonium; undeceptions.com. Paraphrased |
+| Isaiah 53:7; 20:19; Psalm 2:2 | 11-14 | BSB | BSB text |
+| Pilate's wife only in Matthew; later tradition names her Procula; honoured as a saint by the Orthodox and Ethiopian churches; Origen (Commentary on Matthew) thought the dream meant to turn her | 15-26 | Encyclopedias | Search: christianhistoryinstitute.org Oct 27; en.wikipedia.org Pontius Pilate's wife (Procula); christianity.com. Feast days not given; "Claudia" not given |
+| Dreams in 1:20 and 2:12 | 15-26 | BSB | BSB text |
+| Deuteronomy 21:6-7 the hand-washing rite; Joshua 2:19; 2 Samuel 1:16; Jeremiah 26:15; Deuteronomy 24:16; Isaiah 53:12 | 15-26 | BSB | BSB text |
+| 27:25 as one crowd on one morning (27:20), a legal formula, the irony with 26:28; Oberammergau and passion plays; Christ-killers paragraph, Nostra Aetate 4, Acts 4:27 (Mark 15 wording); "This site rejects it" (book page) | 15-26 | Book page ledger (Cargal; Oberammergau); Mark 15 ledger | Earlier ledger; wording kept consistent with the book page |
+| How far Matthew's conflict with synagogue leaders shaped the scene is debated | 15-26 | Deep note; book page | Stated as debated; no names |
+| Scarlet robe and the staff in Matthew; purple in Mark | 27-31 | BSB comparison | BSB text. The claim that scarlet was a soldier's cloak was cut |
+| Crucifixion (Mark 15 wording); "kept watch" (27:36); 4:3; Psalm 22:7, 8, 18; Psalm 69:21; 16:25; 20:28; Mark's myrrh | 32-44 | BSB; earlier ledger | BSB text |
+| "Eli" closer to the Hebrew of the psalm, "Eloi" Aramaic; two explanations | 45-50 | Bible dictionaries | Search: biblicaltraining.org "Eloi, Eloi"; biblestudytools.com dictionary. Stated as views |
+| Readings of the cry and care line (Mark 15 wording); Psalm 22:1, 24, 27; Amos 8:9; Malachi 4:5; 2 Corinthians 5:21 | 45-50 | Mark 15 plain note; BSB | Repository; BSB text |
+| 27:52-53 only in Matthew; read as event, or as prophetic picture-language (including by some with a high view of Scripture); the skeptic's question; the reply about single sources | 51-56 | JBL 2003 (Waters); Geisler, JISCA 2013; Wikipedia "Matthew 27:53" | Search: en.wikipedia.org Matthew 27:53; gospelstudies.org.uk JISCA 6.1; bibleref.com. Licona, Geisler and the 2011 controversy not named |
+| Ezekiel 37:12; Isaiah 26:19; Daniel 12:2; Exodus 26:33; Hebrews 10:20; 14:33; 20:20-21; 27:38 | 51-56 | BSB | BSB text |
+| Deuteronomy 21:23; Isaiah 53:9; John 19:38; the burial (Mark 15 wording) | 57-61 | BSB; earlier ledger | BSB text |
+| The guard only in Matthew; the skeptic's case (answering the theft charge; no guard on Friday night); replies (single sources; the rumour concedes the empty tomb); "You have a guard" Roman or temple guard; the Gospel of Peter has guards, dependence debated | 62-66 | Brown and the Jesus Seminar as cited; Craig; McGrew; Torley | Search: reasonablefaith.org "The guard at the tomb"; secularfrontier.infidels.org (Torley); crossexamined.org. No names on the site |
+| Mark 15:42; 12:40; 16:21; Psalm 2:4; 28:11, 14; 1 Corinthians 15:3-8 | 62-66 | BSB; earlier ledger (Paul in the 50s, Mark 16) | BSB text |
+
+Left out: Papias on Judas (Apollinaris); the Akeldama tombs and the
+Hinnom site; Thallus, Phlegon and Africanus on the darkness; Josephus on the
+temple gate; Susanna 46; Melito, Origen on 27:25, the Roman Catechism, We
+Remember, Benedict XVI, Cargal, Crossan and Cohen by name; the reading of
+"our children" as the generation of AD 70 (not checked this run); Licona and
+Geisler; the harrowing of hell; Procula's feast days and the letter to Fulvia;
+the claim that the soldiers were recruited locally.
+
+## The plain notes on Matthew 28 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/28.json`. Six searches for this
+chapter, with the earlier ledger (Mark 16 for the women as witnesses, Celsus
+and Origen, the first day of the week; the book page for the five
+teachings).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Josephus, Antiquities 4.219; Celsus's "a half-frantic woman" as Origen reports; all four Gospels make women first; many historians weigh this (Mark 16 wording) | 1-10 | Earlier ledger (Mark 16) | Earlier ledger |
+| Earthquake, the angel on the stone, the guards like dead men, Jesus meeting the women: only in Matthew | 1-10 | BSB comparison | BSB text |
+| 16:21; 17:23; 20:19; 26:32; Isaiah 25:8; Daniel 12:2; Daniel 10:6; 27:56, 61 | 1-10 | BSB | BSB text |
+| Differences among the four accounts (women, one or two angels, Galilee and Jerusalem); explanations (selection and fitting together; honest reports; legend) | 1-10 | Gospel texts; harmonies and critics | Search: blueletterbible.org (Stewart) "Are the reports ... contradictory"; credomag.com; krharriman.substack.com. Luke 24:4; John 20:12 BSB. Ladd not named |
+| 1 Corinthians 15:3-8, Paul in the 50s | 1-10 | Earlier ledger (Mark 16) | Earlier ledger |
+| "Circulated among the Jews to this very day" read as the rumour Matthew answers, not a statement about Jewish people | 11-15 | BSB; book page "A Jewish book, and a hard history" | Consistent with the book page; pointer to 27:15-26 |
+| Justin Martyr, Dialogue with Trypho 108: the charge that the disciples stole him by night still spread | 11-15 | Justin | Search: logoslibrary.org trypho/108; bkv.unifr.ch; en.wikipedia.org Stolen body hypothesis. Paraphrased; no year given |
+| Exodus 23:8; 26:15; Acts 5:18, 40; 28:14 | 11-15 | BSB | BSB text |
+| Distazō only here and 14:31; hesitation rather than settled unbelief; "some" partitive (some of the eleven) or others present | 16-17 | NET notes; France (as summarised) | Search: en.wikipedia.org Matthew 28:17; biblia.com NET notes; openbible.com. No scholar named |
+| 4:8-9; 5:1; 17:1-2; Exodus 3:12; Luke 24:11; Mark 9:24 | 16-17 | BSB | BSB text |
+| "All nations": Gentiles only (Hare and Harrington, CBQ 1975) or every people including Israel (Meier, CBQ 1977); 10:5-6; 15:24; 2:1; 8:11 | 18-20 | Scholarship as cited | Search: cambridge.org HTR note; hts.org.za (Lee and Viljoen); biblesociety.org.uk. Stated as "scholars discuss"; no names |
+| Didache 7 (around AD 100): baptism in the name of the Father, Son and Holy Spirit, in running water, or pouring three times on the head | 18-20 | Didache | Search: cts.perseids.org Didache 7.1-7.4; reformedforum.org "Baptism in the Didache"; date from the earlier ledger. Paraphrased |
+| Daniel 7:14; Genesis 22:18; 1:1; 1:23; Exodus 3:12; Joshua 1:9; Acts 2:38; Romans 6:4 | 18-20 | BSB | BSB text |
+| Views of baptism (infants and believers; mode; means of grace or sign); "in the name of Jesus Christ" in Acts read by most as describing Christian baptism | 18-20 | Standard confessional positions; deep note | Stated as views |
+
+Left out: Eusebius's shorter citations of 28:19 and Conybeare (every Greek
+manuscript has the threefold name, as the deep note says; the site does not
+raise the question); Oneness Pentecostal practice; Reimarus; Craig, Brown and
+Ferguson by name; the Roman penalty for sleeping on guard; the claim that
+many apostles died as martyrs (narrowed to Acts 5); Hare, Harrington and
+Meier by name.

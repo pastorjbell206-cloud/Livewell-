@@ -1521,3 +1521,141 @@ Zechariah was killed (not given).
 ### Next
 
 Matthew 25 onward, in the same shape.
+
+## Continuation: Matthew 25 to 28 (2026-11-19)
+
+The ten young women, the talents, the sheep and the goats, the passion and
+the resurrection, passage by passage, in plain words, in the same data shape
+(`client/public/bible/notes/matthew/plain/25.json` to `28.json`; each chapter
+note now says `"plain": true`). This finishes Matthew. Data only; no page
+code changed, so no build, Lighthouse or screenshots were run.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 25 | 4 (the ten young women; the talents; the sheep and the goats, "you did for Me"; "you did not do for Me", eternal punishment and eternal life) | 3,893 |
+| Matthew 26 | 8 (the plot, the perfume and thirty pieces of silver; the Passover and "Surely not I?"; the bread and the cup "for the forgiveness of sins"; you will all fall away; Gethsemane; the arrest; before Caiaphas; Peter's denial) | 5,054 |
+| Matthew 27 | 9 (morning and the end of Judas; before Pilate; Barabbas, the dream, the washed hands and the crowd's cry; the mocking; the crucifixion; the cry; the curtain, the earthquake and the raised saints; the burial; the guard) | 5,578 |
+| Matthew 28 | 4 (He has risen; the guards' story; "some doubted"; the commission and "I am with you always") | 2,786 |
+| Total | 25 | 17,311 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. Where
+Mark 14 to 16 tell the event, the notes point to them, reuse their verified
+claims and their wording word for word (the Lord's Supper views, Gethsemane
+and its care line, the Mishnah on trials, the "Christ-killers" paragraph with
+Nostra Aetate and Acts 4:27, the mocking, crucifixion, the readings of the
+cry and its care line, the curtain, the burial, the women as witnesses), and
+say what Matthew does differently: Jesus foretelling the handing over;
+Caiaphas named; Judas asking for money and the thirty pieces of silver;
+"You have said it yourself"; "for the forgiveness of sins"; "may Your will be
+done"; the sword saying and the twelve legions; the oath by the living God;
+the accent; Judas's remorse and the field; Pilate's wife; the washed hands;
+the cry of 27:25; the scarlet robe; the gall; "Eli"; the earthquake and the
+raised saints; the soldiers' confession; the guard; the angel on the stone;
+Jesus meeting the women; the bribe; the mountain; "some doubted"; the
+commission.
+
+### On 27:25 and Judas
+
+27:25 is handled once, fully, in the note on 27:15-26, consistent with the
+book page: one crowd, one morning, stirred by its leaders (27:20), a legal
+formula (Joshua 2:19, 2 Samuel 1:16, Jeremiah 26:15), Deuteronomy 24:16, the
+irony with 26:28, passion plays, the "Christ-killers" paragraph, "This site
+rejects it", Nostra Aetate and Acts 4:27 word for word as in Mark 15 and
+Matthew 23. 26:57-68 and 28:11-15 point to it. Judas's death is one sentence
+in Matthew's own word ("Then he goes away and hangs himself (verse 5).");
+Acts 1:18-19 is named as a different account without its details; the care
+lines are the Mark 14 wording; the notes do not say what God did with Judas.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and checked by
+eye: all 25 are under their right headings (what is happening; the first
+hearers; the Old Testament behind it; the hard verse; what it asks), and the
+validator's Old Testament field check passed with no exceptions.
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "The plain notes on Matthew 25" to
+"28". 27 web searches (8, 5, 8, 6). New sources: 1 Maccabees 9:37-39; the
+lamps-or-torches debate; Didache 16.1 and 7; b. Bava Metzia 42a; Lucian on
+Peregrinus; Sulpicius Severus on Martin; Gray (1989) on "the least";
+Augustine, City of God 21.23; Caiaphas's dates (Josephus); Tyrian shekels;
+su eipas; b. Eruvin 53b; Judas in medieval antisemitism; the explanations of
+Acts 1:18 and of "Jeremiah" (Menken, Biblica 2002); Pilate's wife in later
+tradition; the readings of 27:52-53; the guard debate; Josephus's paragraph
+on Jesus; "Eli" and "Eloi"; Justin, Dialogue 108; distazō; "all nations".
+Ancient, patristic and rabbinic writers are paraphrased.
+
+### Cut or narrowed
+
+The English word "talent" traced to the parable; the deep note's "only place
+Jesus calls himself king"; the claim that no governor of Judea had twelve
+legions; the scarlet robe as a soldier's cloak; locally recruited soldiers;
+"earthquakes mark God's coming"; "sermons" reading 27:25 aloud (kept to
+passion plays, from the book page's ledger); Augustine and Jerome calling
+27:9 a mistake; the AD 70 reading of "our children" (not checked this run);
+the Roman penalty for sleeping on guard; martyrdom of many apostles (narrowed
+to Acts 5:18, 40); Eusebius on 28:19; every scholar in the deep notes by name.
+The deep notes are unchanged underneath.
+
+### Contested matters, and how they are stated
+
+The lamps (clay lamps or torches). The talents: not a prosperity text and
+not a rule about money; the third servant's picture of his master judged by
+his own words (Luke 19:22); the "whistle-blower" reading as a few modern
+readers'. "The least of these": Jesus' followers and messengers, or all who
+suffer, both fairly, "These notes do not choose"; not a verdict on any nation.
+Grace and works: the Reformation and Catholic readings, Ephesians 2:8-10,
+James 2:17. Hell: the three views (Matthew 10 and 13 wording), Augustine's
+argument as his, no side. Judas and God's purpose; "better not born" with no
+verdict on his end. "You have said it yourself". The date of the meal and the
+Supper (Mark 14 wording). The sword (peace churches; Romans 13:4). The trial's
+lawfulness (Mark 14 wording). 27:9 and "Jeremiah"; Matthew 27 and Acts 1;
+the Passover release (Mark 15 pointer); the cry (Mark 15 wording); the
+curtain; 27:52-53 (event, picture-language, the skeptic's question, the
+reply), "These notes do not choose"; the guard (the skeptic's case and the
+replies); the Easter accounts' differences and their explanations; the theft
+rumour; who doubted; "all nations"; baptism (infants and believers; mode;
+means of grace or sign; Acts 2:38).
+
+### Care lines included
+
+25:1-13: "If you fear that the door is already shut on you, notice that you
+are still able to knock", with 11:28. 25:14-30: the servant's fear and a
+false picture of God. 25:41-46: the Matthew 13 wording with 11:28. 26:36-46:
+the Mark 14 Gethsemane lines word for word. 26:69-75: "If shame over
+something you have done feels too heavy to carry, you do not have to carry it
+alone. Tell God, and tell someone you trust." 27:1-10: "Many people carry
+shame for something they have done, and some have thought of ending their
+life. If that is you, please do not carry it alone. Tell God, and tell someone
+near you: a friend, a pastor, a doctor. If you have thought of ending your
+life, please reach out today to a crisis line or emergency service where you
+live." 27:45-50: the Mark 15 line word for word. 28:16-17: "If you are
+carrying doubts, you are in the company of the eleven. Bring them with you."
+No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` (partial, Matthew) after each chapter. Then all 36
+commands of the content-gates step in ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 44 chapters in
+plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732
+entries up to date; passage index 623 files match; verify-sources: 22 texts
+intact). `pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped;
+1,653 tests passed, 73 skipped. No build, so no dist/ and no lh-*.json.
+
+### Still unverified
+
+Gray's own text (his finding read in secondary summaries); Catchpole's
+argument (read as cited); the exact words of every ancient, patristic and
+rabbinic writer (all paraphrased).
+
+### The whole book, and the two Gospels
+
+Matthew 1 to 28: 167 passages, 103,659 plain words. Mark 1 to 16: 95
+passages, 44,581 plain words. The two Gospels together: 262 passages,
+148,240 plain words (counted by script over the five fields).
+
+### Next
+
+Matthew is finished. The next book in the plan's order.
