@@ -1007,3 +1007,49 @@ Septuagint's phronimos; Song of Songs Rabbah; the assarion's exact value;
 Diocletian's edict and Deissmann; Crossan and the Cynics; the Essenes'
 travel (Josephus); Tertullian on flight; Sim, Jeremias, Levine, France, Davies
 and Allison, Luz by name; the textual notes on 10:3, 10:8 and 10:23.
+
+## The plain notes on Matthew 11 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/11.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 6 on Josephus and Machaerus; Mark 8 on
+Bethsaida).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Antipas arrested John over his marriage | 1-6 | Matthew 14:3-4 | BSB text |
+| Josephus: John held and killed at Machaerus, east of the Dead Sea | 1-6 | Josephus, Antiquities 18.116-119 | Earlier ledger (Mark 6) |
+| Varied hopes: a prophet like Moses, Elijah's return, a son of David | 1-6 | Deuteronomy 18:15; Malachi 4:5 | BSB text |
+| 4Q521 (Qumran Cave 4): when God's anointed comes, the Lord heals the wounded, makes the dead live, brings good news to the poor ("meek" in some translations); fragmentary; scholars debate whether God or the anointed one does the works | 1-6 | 4Q521 fragment 2, column 2 | Search: en.wikipedia.org 4Q521; virtualreligion.net "Messiah Apocalypse"; bsw.org Biblica 89 (2008) abstract. Paraphrased; translation difference stated |
+| Skandalizō at 11:6 and 13:57; skandalon a trap's trigger or stumbling stone | 1-6 | Greek text in the repository (G4624); standard lexicons | Script |
+| Isaiah's promises; vengeance lines left out | 1-6 | Isaiah 35:4-6; 26:19; 61:1-2 | BSB text |
+| Chrysostom, Homily 36 on Matthew: John asked for his disciples' sake, not his own (the lesson was for those who doubted) | 1-6 | Chrysostom | Search: newadvent.org/fathers/200136.htm; st-takla.org NPNF excerpt. Paraphrased. Tertullian (deep note) not confirmed and not named |
+| Care: doubt is not unbelief; a pastor, a doctor, or a crisis line | 1-6 | CLAUDE.md, care for the reader | Pastoral |
+| Antipas's coins for Tiberias (around AD 19/20) carry a reed; the link to 11:7 is a suggestion (Theissen), called a conjecture by others since no source has the nickname | 7-15 | Kogon and Fontanille (Brill 2018) and Hendin, as summarised; Reiser, Biblica 81 (2000) | Search: library.biblicalarchaeology.org (Hendin); bsw.org Reiser article p470. No scholar named on the page |
+| Camel's hair and leather belt | 7-15 | Matthew 3:4 | BSB text |
+| Malachi 3:1 (God's way); Malachi 4:5; John 1:21; Luke 1:17 | 7-15 | BSB | BSB text (Malachi 3:1 quoted only to the first sentence, before its em-dash) |
+| Biazetai passive or middle; three readings; Luke 16:16 | 7-15 | Greek text (G0971); deep note `hard` | Repository; stated as views, no side |
+| Street games of weddings and funerals | 16-19 | The verse itself | Not a separate historical claim |
+| Erga at 11:2 and 11:19; Luke 7:35 "all her children" | 16-19 | Greek text (G2041); BSB | Script; BSB text |
+| Deuteronomy 21:20 "glutton and a drunkard"; Proverbs 9:5 | 16-19 | BSB | BSB text |
+| Chorazin about two miles north of Capernaum (sources say two to two and a half); visible basalt ruins and synagogue later than Jesus (third or fourth century; one phase dated earlier); first-century town not found | 20-24 | Bible Gateway Encyclopedia of the Bible "Chorazin"; seetheholyland.net; biblewalks.com | Search. Stated as "about two miles" and "most of what stands dates from well after" |
+| Bethsaida home of Peter, Andrew, Philip; site disputed | 20-24 | John 1:44; earlier ledger (Mark 8) | BSB text; earlier ledger |
+| Capernaum Jesus' home (4:13); Tyre and Sidon (Isaiah 23; Ezekiel 26 to 28); Sodom (Genesis 19); Jonah 3:6; Isaiah 14:13-15; Ezekiel 16:49 | 20-24 | BSB | BSB text |
+| Views on 11:21 (God's free choosing; God's knowledge of what free people would do; prophetic overstatement) | 20-24 | Deep note `hard` | Stated as views; Augustine, Molina, Craig and Calvin (deep note) not named |
+| Nēpios at 11:25 and 21:16; John 10:15; Isaiah 29:14; Daniel 2:22; Psalm 8:2; 28:18 | 25-27 | Greek text (G3516); BSB | Script; BSB text |
+| Election and response at 11:25-27 | 25-27 | Mark 4 plain note wording | Stated as views, no side, consistent with Mark 4:10-12 |
+| Yoke as rule (1 Kings 12:11); Acts 15:10 not used | 28-30 | BSB | BSB text |
+| Rabbinic teaching (later) speaks of reciting the Shema as accepting "the yoke of the kingdom of heaven" | 28-30 | Mishnah Berakhot 2:2 in printed texts; Babylonian Talmud Berakhot 14b; the word "yoke" may be missing from the best Mishnah manuscripts | Search: sefaria.org; sacred-texts.com; en.wikipedia.org Shema. Stated as "rabbinic writings from after Jesus' time", not as the Mishnah's exact words |
+| Ben Sira wrote in Jerusalem early in the second century BC (about 190 to 175 BC); Sirach 51:23-27 invites the untaught to Wisdom's school and yoke and says he laboured little and found much rest | 28-30 | Sirach 51:23-27; Jewish Encyclopedia; Wikipedia "Book of Sirach" | Search: intertextual.bible; biblestudytools.com Sirach 51:27; en.wikipedia.org; jewishencyclopedia.com. Paraphrased "in summary"; no translation quoted. The Qumran copy of Sirach 51 (deep note) not used |
+| Sirach in Catholic and Orthodox Bibles, not counted as Scripture by Protestants | 28-30 | Standard | Common reference fact |
+| Praus at 5:5, 11:29, 21:5; chrēstos at 11:30 ("good", "kind") | 28-30 | Greek text (G4235, G5543) | Script; standard lexicons |
+| Jeremiah 6:16; Exodus 33:14; 23:4; 10:38 | 28-30 | BSB | BSB text |
+| Only Matthew has 11:28-30; Luke 10:21-22 parallels 25-27 | 28-30 | BSB comparison | Repository |
+| Cranmer made 11:28 the first of the "comfortable words" (1548 Order of the Communion) | (checked, not used) | Crosby; Churchman 120/2 | Search. Not used in the plain note |
+| Care: weariness and despair; a doctor, a pastor or a crisis line; the afraid reader met with 11:28 | 28-30 | CLAUDE.md, care for the reader | Pastoral |
+
+Left out: Tertullian on John's doubt; the Psalms of Solomon and the Community
+Rule; Theissen by name; Norden, Bultmann, von Hase, Suggs, Deutsch; Augustine,
+Molina, Craig and Calvin on 11:21; Athanasius and Irenaeus on 11:27; Mishnah
+Avot 3:5 (Nehunya ben HaKanah); the Qumran copy of Sirach 51; Handel and
+Bonar; the textual notes on 11:2, 11:19 and 11:23; Cranmer (checked, not
+needed).
