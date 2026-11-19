@@ -4549,3 +4549,23 @@ this chapter, with the deep note, the verse notes and the book page.
 Cut: Egyptian records of eastern herders in the Delta (held for 46, where
 Papyrus Anastasi VI is checked); coins first struck in Asia Minor in the
 seventh century BC (not needed; ‘much later’ kept).
+
+## The plain notes on Genesis 43 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/43.json`. One web search for this
+chapter, with the deep note, the verse notes and the book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Judah's past (37:26-27; 38:26); Reuben's offer (42:37) | 1-10 | BSB | Repository |
+| ‘Guarantee’ the language of standing surety; Hebrews 7:14, 7:22 as a thematic link, not a prophecy | 1-10 | Deep note (`christ`) | Repository; stated as the deep note does |
+| Na'ar ‘boy’ a wide word, used of Joseph at seventeen (37:2); Benjamin grown | 1-10 | Deep note (`hard`) | Repository |
+| Gift's goods echo 37:25; Jacob's gift to Esau (32:20); El Shaddai as in 35:11 | 11-14 | Deep note (`historical`, `cultural`); BSB | Repository |
+| Esther 4:16; Proverbs 18:16 | 11-14 | BSB | Repository |
+| A steward over an official's household | 15-25 | Deep note (`historical`) | Repository; stated generally |
+| Foot-washing and fodder as welcome (18:4) | 15-25 | Deep note (`cultural`) | Repository |
+| Psalm 23:5; 1 Peter 5:7; Luke 7:44 | 15-25 | BSB | Repository |
+| Eleven bow, as the eleven stars (37:9) | 26-34 | Deep note (`cultural`) | Repository |
+| Herodotus (400s BC), Histories 2.41: Egyptians would not use a Greek's knife, spit or cauldron | 26-34 | Herodotus | Search: "Herodotus 2.41 Egyptians ... knife spit or cauldron of a Greek" (lexundria.com 2.41; fgh.perseids.org). Paraphrased; marked as a different people and a much later time; Assmann's caution noted, so no wider claim made |
+| Joseph's separate table ‘probably’ also for rank; the fivefold portion read by many as a quiet test | 26-34 | Deep note (`historical`, `cultural`) | Repository; hedged |
+| Luke 14:13; Romans 5:8 | 26-34 | BSB | Repository |
