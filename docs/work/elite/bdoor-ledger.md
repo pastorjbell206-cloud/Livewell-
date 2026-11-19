@@ -403,3 +403,40 @@ Left out: Josephus on the Sadducees' end, Origen and Hippolytus on their
 canon, Tobit 3:8, m. Tamid 5:1, tefillin at Qumran, 613 commandments, the
 Targum of Isaiah 5, Leviticus 19:23-25, the Court of the Women and John 8:20,
 the roles of scribes in legal paperwork, and the Psalm 110 Jewish readings.
+
+## The plain notes on Mark 13 (continuation run, 2026-11-19)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Herod began rebuilding around 20 or 19 BC; work went on for decades (to about AD 63/64); Josephus: like a snow-covered mountain, parts covered with gold | 13:1-4 | Josephus, Jewish War 5.222-223; Antiquities 15.380; Schürer's date | Search: lexundria.com j_bj 5.222-226 (Whiston); rsc.byu.edu "The Temple of Herod"; library.biblicalarchaeology.org footnote; jewishencyclopedia.com Temple of Herod |
+| Revolt from 66; temple destroyed 70 | 13:1-4 | Earlier ledger (When, where, for whom) | Earlier ledger |
+| Arch of Titus, around AD 81, shows soldiers carrying the lampstand | 13:1-4 | The arch itself | Search: smarthistory.org; holylandphotos.org; bible-history.com |
+| Micah 3:12; Jeremiah 7:4 | 13:1-4 | BSB | BSB text |
+| Before or after 70: both views held | 13:1-4 | Earlier ledger (Marcus 1992; repository introduction) | Stated as views |
+| Theudas (about AD 45, the Jordan, Antiquities 20.97-98); the Egyptian prophet (Mount of Olives, walls to fall, Antiquities 20.169-172); Acts 5:36 and 21:38 | 13:5-13 | Josephus | Search: en.wikipedia.org Theudas and Egyptian (prophet); livius.org "The Egyptian Prophet"; lexundria.com j_aj 20.97. Said only that Roman soldiers scattered both movements (Theudas was beheaded; the Egyptian escaped) |
+| Acts 5:40; Acts 24 to 26 | 13:5-13 | BSB | BSB text |
+| Isaiah 26:17; Micah 7:6 | 13:5-13 | BSB | BSB text |
+| Daniel 9:27, 11:31, 12:11; 12:1 | 13:14-23 | BSB | BSB text |
+| Antiochus IV's pagan altar in the temple, around 167 BC, called the abomination of desolation in 1 Maccabees 1:54 | 13:14-23 | 1 Maccabees 1:54 | Search: biblicaltraining.org; biblestudytools.com; nocr.net ISBE. Sources give 168 or 167; the site says "around 167" |
+| Caligula ordered his statue set up in the temple around AD 40; Jews said they would rather die; delayed (Petronius, Agrippa); Caligula murdered January 41 | 13:14-23 | Josephus, Antiquities 18; Philo, Embassy to Gaius | Search: jewishencyclopedia.com Caligula; Young, JETS 62 (2019); encyclopedia.com Petronius. No section number given on the site |
+| The Gospels heard read aloud | 13:14-23 | Deep note (Justin, First Apology 67) | Said as "most early Christians heard the Gospels read aloud"; Justin not named |
+| Flat roofs with outside stairs; cloak left in the field; winter rain | 13:14-23 | Deep note; Acts 10:9 | Common knowledge of the land, not a source claim; kept general |
+| Eusebius, Church History 3.5.3: Jerusalem Christians warned, left for Pella; historicity debated | 13:14-23 | Eusebius | Search: en.wikipedia.org Flight to Pella; Koester, "The Origin and Significance of the Flight to Pella Tradition" (godawa.com PDF) |
+| Luke 21:20; 2 Thessalonians 2:3-4 | 13:14-23 | BSB | BSB text |
+| Three readings of the abomination (AD 70; future; both) | 13:14-23 | Deep note; standard positions | Stated as views, no names. Irenaeus (Against Heresies 5.25) not named: not checked |
+| Isaiah 13:10; Daniel 7:13-14; Deuteronomy 30:4 | 13:24-27 | BSB | BSB text |
+| Readings of 13:24-27 (second coming; AD 70 in prophetic picture-language; both) | 13:24-27 | Deep note | Stated as views, no names |
+| Fig tree bare in winter, late leaves; olive evergreen | 13:28-31 | Deep note; common botany | Kept general |
+| Genea in Mark 8:12, 8:38, 9:19 | 13:28-31 | Greek text in the repository | Repository |
+| C. S. Lewis, "The World's Last Night": "the most embarrassing verse in the Bible" | 13:28-31 | Lewis (essay 1952, collected 1960) | Search: cslewisinstitute.org; singjupost.com full text; kenschenck.blogspot.com. No date given on the site |
+| Isaiah 40:8 | 13:28-31 | BSB | BSB text |
+| Arians used 13:32; Athanasius: Christ spoke as man ("according to the flesh") | 13:32-37 | Athanasius, Discourses against the Arians 3.42-49 | Search: newmanreader.org discourse 3; bkv.unifr.ch NPNF Four Discourses |
+| Chalcedon 451: truly God and truly man in one person | 13:32-37 | Standard | Standard date; already in the deep note |
+| Luke 2:52; Isaiah 62:6 | 13:32-37 | BSB | BSB text |
+| Four night watches echoed in the passion (evening, night, cockcrow, morning) | 13:32-37 | Mark 14:17, 14:32-41, 14:72, 15:1 | BSB text. Lightfoot (1950) not named |
+
+Left out: Josephus on the Egyptian's numbers; Jesus son of Ananias; the
+portents in Josephus and Tacitus; the ninth of Av; Yohanan ben Zakkai;
+Colani, Schweitzer, Russell, Beasley-Murray, Wright, France, Stein, Scofield,
+Lindsey, Miller and Camping by name; Gregory of Nazianzus, the kenotic
+theologians; the Arch's date of 81 is given as "around".
