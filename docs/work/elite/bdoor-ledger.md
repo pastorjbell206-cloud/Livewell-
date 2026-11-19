@@ -1571,7 +1571,7 @@ facts were used, never its sentences.
 | "Son of Berechiah" missing from the first hand of one major manuscript (Sinaiticus) | 29-36 | Repository chapter note (`text`) | Repository; manuscript not named on the site |
 | Josephus, Jewish War 4.343: Zacharias son of Baris (Baruch) killed by Zealots "in the middle of the temple"; most reject the identification | 29-36 | Josephus | Search: lexundria.com j_bj 4.343 and 4.335 (Whiston); josephus.org. No year given on the site ("during the war with Rome") |
 | Guilt not inherited: Deuteronomy 24:16; Ezekiel 18:20 | 29-36 | BSB | BSB text |
-| The "Christ-killers" paragraph and Nostra Aetate 4 ("cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today"); Acts 4:27 | 29-36 | Mark 15 plain note; earlier ledger (Mark 15) | Wording reused word for word except the serial comma |
+| The "Christ-killers" paragraph and Nostra Aetate 4 ("cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today"); Acts 4:27 | 29-36 | Mark 15 plain note; earlier ledger (Mark 15) | Wording reused word for word |
 | "This generation" the people alive then; many link the judgment to AD 70 (24:2) | 29-36 | BSB; earlier ledger (Mark 13) | Stated as what many readers think |
 | Luke 19:41; Ruth 2:12; Psalm 91:4; Jeremiah 22:5; 12:7; 9:1; Psalm 118:26; Romans 9:2 | 37-39 | BSB | BSB text |
 | Readings of 23:39 (hope of welcome; warning of judgment; both) | 37-39 | Standard positions | Stated as views |
