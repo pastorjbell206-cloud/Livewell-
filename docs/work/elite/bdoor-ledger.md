@@ -4442,3 +4442,28 @@ chapter, with the deep note and the verse notes.
 
 Cut: Adullam, Chezib and Timnah located in the Shephelah; dates; Revelation
 5:5 and Genesis 49:10; the Middle Assyrian section numbers.
+
+## The plain notes on Genesis 39 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/39.json`. Two web searches for this
+chapter, with the deep note, the verse notes and the Genesis 19 plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Contrast with Judah in chapter 38 | 1-6 | Deep note (`story`) | Repository |
+| Saris ‘officer’; ‘captain of the guard’ literally ‘chief of the slaughterers’, probably bodyguard or executioners | 1-6 | Deep note (`historical`) | Repository |
+| ‘The LORD was with Joseph’ four times (2, 3, 21, 23); Yahweh rare in Joseph's story; an Egyptian house blessed (12:3) | 1-6 | Deep note (`literary`, `doctrines`) | Repository; BSB count |
+| Acts 7:9-10; Isaiah 43:2; Psalm 23:4 | 1-6 | BSB | Repository |
+| A slave's word counted little against his mistress's | 7-10 | Deep note (`cultural`) | Repository |
+| Psalm 51:4; 1 Corinthians 6:18; Hebrews 4:15 | 7-10 | BSB | Repository |
+| ‘This Hebrew’ an ethnic label with contempt; blame shifted to the husband; the cloak recalls the robe (37:31-33) | 11-18 | Deep note (`cultural`, `literary`) | Repository |
+| Tale of Two Brothers: Papyrus D'Orbiney, about 1215 BC, British Museum; the elder brother's wife tries to seduce Bata, is refused, claims he attacked her; comparison only, no borrowing claimed | 11-18 | British Museum EA 10183 | Search: "Tale of Two Brothers Papyrus D'Orbiney date British Museum" (britishmuseum.org collection EA10183; olli.gmu.edu translation) |
+| False reports of sexual assault uncommon; Lisak, Gardinier, Nicksa and Cote (2010, Violence Against Women): 8 of 136 reports at one university over ten years (5.9%) classed as false | 11-18 | Lisak et al. 2010 | Search: "research false reports of sexual assault rate Lisak 2010" (ojp.gov; psmag.com; themarshallproject.org). The claim that most assaults go unreported was not confirmed and is not made; the page says only that many stay silent for fear of not being believed |
+| Exodus 23:1; Deuteronomy 19:18; 1 Peter 2:20 | 11-18 | BSB | Repository |
+| Care line for anyone pressured by someone with power: the Genesis 19 shape ("it is not your fault ... Please tell someone you trust and get help. The Find Help page on this site lists places to turn.") | 11-18 | Site | Repository |
+| Why prison and not death: unexplained; guesses named as guesses; the king's prison; chesed ‘kindness’; the repeated ‘did not concern himself’ (6, 23) | 19-23 | Deep note (`hard`, `words` H2617A); BSB | Repository |
+| Psalm 105:18-19; 1 Peter 2:23; Hebrews 13:5 | 19-23 | BSB | Repository |
+
+Cut: Papyrus Brooklyn 35.1446 (not searched in this run); the Middle Kingdom
+and Hyksos dates (kept for chapter 41); Potiphar's table and 43:32; tsachaq
+and Isaac's name.
