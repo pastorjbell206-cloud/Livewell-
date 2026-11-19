@@ -2134,3 +2134,35 @@ Cut: Genesis Rabbah 63:6; b. Nedarim 64b; y. Shabbat 14:4; m. Yoma 8:6; m. Avot 
 | Bethany beyond the Jordan, site uncertain; 1:7, 1:28 | 40-42 | Book page | Earlier ledger |
 
 Cut: George Adam Smith and Barclay's shepherd-as-gate; Hammurabi and Homer; the Psalms of Solomon; lēstēs and Josephus's insurgents; 2 Maccabees on the feast; the Talmud's oil story; the Mishnah's definition of blasphemy; the 10:29 variant; the KJV's "one fold"; Neyrey, 11Q13, Augustine, Calvin, Dort, Arminius and Wesley by name; the Socinians.
+
+## The plain notes on John 11 (2026-11-19)
+
+`client/public/bible/notes/john/plain/11.json`. 5 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Bethany "a little less than two miles" (11:18) | 1-6 | BSB | Earlier ledger (book page) |
+| Al-Eizariya's name comes from Lazarus (Lazarion); the tomb pointed out since at least the fourth century | 1-6 | Robinson (1840) as cited; Eusebius and Egeria as cited; Jerome (390) on the Lazarium | Search: en.wikipedia.org Bethany and Tomb of Lazarus; dig.corps-cmhl.huji.ac.il "Lazarion". Stated as "at least the fourth century"; no single date given |
+| Lazarus a Greek form of Eleazar, "God has helped" | 1-6 | ISBE; lexicons | Search: bibletools.org ISBE "Lazarus"; biblehub.com Strong's 2976; en.wikipedia.org Lazarus (name). Tal Ilan's name counts not used |
+| Luke 10:38-42; 1 Kings 17:22; Isaiah 26:19; 2:4; 7:6 | 1-6 | BSB | BSB text |
+| The delay: readings (purpose; the count of days; the Father's time); no verdict | 1-6 | Deep note `hard` | Stated as readings; Calvin not named |
+| Daniel 12:2; 1 Thessalonians 4:13; Thomas 11:16 | 7-16 | BSB | BSB text |
+| The soul near the body three days (Jerusalem Talmud, Moed Qatan 3:5; Leviticus Rabbah 18:1), written down centuries after Jesus; whether believed in his day uncertain | 17-27 | Rabbinic texts as quoted | Search: jtsa.edu (Kraemer, Hebrew and English); bibletruthpublishers.com; biblia.com (Evans). Paraphrased, marked as later and uncertain; no rabbi named |
+| Pharisees taught resurrection; Sadducees denied it | 17-27 | Earlier ledger (Mark 12; Matthew 22) | Earlier ledger |
+| 20:31; Matthew 16:16; Isaiah 25:8; Job 19:25 | 17-27 | BSB | BSB text |
+| Apostles' Creed "the resurrection of the body, and the life everlasting" | 17-27 | The site's creed text | Repository (`client/public/studyguides/the-creeds.json`) |
+| Embrimaomai: strong feeling, often anger or indignation; NET note "deeply indignant"; Mark 1:43 (stern warning) and Mark 14:5 (scolded) | 28-37 | NET note on 11:33; Thayer; Strong's | Search: biblia.com NET note; biblehub.com 1690. Greek checked in the repository. Readings of its object given as views |
+| Klaiō (11:33) and dakryō (11:35); dakryō "to shed tears"; "may have been quieter" | 28-37 | Greek text in the repository; Thayer | Script; search: biblehub.com 1145. The loud/quiet contrast hedged ("may have been") |
+| Psalm 56:8 (quoted before its em-dash); Isaiah 53:3; Ecclesiastes 3:4; Genesis 50:10 | 28-37 | BSB | BSB text |
+| Rock-cut tombs, a stone at the entrance, strips of linen and a face cloth; 20:5-7 | 38-44 | Earlier ledger (Mark 15 and 16, tombs); BSB | Earlier ledger; BSB text |
+| Ezekiel 37:12; Hosea 13:14; 12:10; Mark 5:21-43; Luke 7:11-17 | 38-44 | BSB | BSB text |
+| Whether it happened: views (later growth; the Synoptics' focus; 12:10 and protection); no verdict | 38-44 | Deep note `hard` | Stated as views; Strauss, Bultmann, Bauckham and Meier not named (not checked this run) |
+| Sanhedrin: chief priests, elders, teachers, led by the high priest | 45-53 | Earlier ledger (Mark 14) | Earlier ledger |
+| Caiaphas: about AD 18 to 36 or 37, appointed and removed by Romans | 45-53 | Josephus, Antiquities 18.35, 18.95 | Earlier ledger (John's book page) |
+| AD 70 destruction of Jerusalem and the temple | 45-53 | Earlier ledger (Mark 13) | Earlier ledger |
+| Misuse named; Acts 4:27 (Mark 15 wording) | 45-53 | Earlier ledger | Earlier ledger |
+| Exodus 28:30; Ezekiel 34:23; 10:16 | 45-53 | BSB | BSB text |
+| Ephraim: site uncertain, near the wilderness, probably north of Jerusalem | 54-57 | Book page ledger (left off the map as uncertain) | "Not certain"; et-Taiyibeh not named |
+| Numbers 19:11; 9:6; Passovers at 2:13, 6:4, 11:55 | 54-57 | BSB; book page ledger | BSB text; earlier ledger |
+
+Cut: Kloner's count of rolling stones; m. Ketubbot 4:4 (flutes and wailing woman); Sirach 22:12; the Amidah; m. Sanhedrin 10:1; the ossuary of Caiaphas (not needed); 2 Maccabees 5:19; Josephus on Hyrcanus's prophecy; et-Taiyibeh; Egeria by name; Tal Ilan; the P45 reading at 11:25; Strauss, Bultmann, Hume, Bauckham and Meier by name.
