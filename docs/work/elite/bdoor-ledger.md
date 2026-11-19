@@ -3813,3 +3813,28 @@ Cut: "usually the weaker party walked between the pieces" (deep note, not
 checked); von Rad's priestly-declaration reading; Rashi's and the
 Septuagint's ways of counting the years (said only "ancient readers counted
 these years in different ways").
+
+## The plain notes on Genesis 16 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/16.json`. Three web searches for
+this chapter, with the book page's rows (Hammurabi 144 to 147; the Nuzi
+caution) and the site's safety wording.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Laws of Hammurabi (about 1754 BC) 144-147: a wife who could not bear children gives a slave; the slave mother who claims equality may be put back among the slaves but not sold | 1-6 | Book page row | Earlier search (palmerseminary.edu; UCL). The page says "a wife who could not bear children" as the book page does ("not allowed to bear children") and calls the parallel "real but not exact" |
+| Nuzi used with caution | 1-6 | Book page row | Earlier search |
+| A slave's child counted as the wife's; ‘build’ and ‘son’ wordplay | 1-6 | Repository deep note (`cultural`) | Repository |
+| Abram and Sarai never say Hagar's name; the angel does (16:2, 5, 6, 8) | 1-6, 7-12 | BSB | Repository (read) |
+| 3:17 ‘listened to the voice of’; Galatians 4:22, 24, 26; Deuteronomy 23:15; Exodus 3:7; Romans 9:4; 11:1; Genesis 17:20; 21:17-20; 24:62; 25:9, 11; Psalm 139:1 | all | BSB | Repository |
+| Shur on the road to Egypt; the onager untamed (Job 39:5-8); the image as freedom from slavery | 7-12 | Repository deep note | Repository |
+| Readings of "return and submit" (survival of a pregnant woman; temporary; joined to promises) | 7-12 | Repository deep note (`hard`) | Repository; stated as readings |
+| Delores S. Williams, Sisters in the Wilderness (Orbis, 1993): Hagar's story as God helping the oppressed survive and gain quality of life, survival rather than liberation | 7-12 | Williams | Search: ncronline.org "Sisters in the Wilderness after 30 years"; goodreads; aaihs.org. Paraphrased |
+| Safety line, word for word from the Mark 10:1-12 note: "Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first. Talk to a pastor or a counselor you trust, or call a local domestic violence line. These notes are not legal advice." | 7-12 | Site | Repository (grep -F: one match in each file) |
+| El Roi only in 16:13; Hagar one of very few, and by many readers' count the only person, to give God a name; the second half of 16:13 hard to translate | 13-16 | Repository verse note; El Roi summaries | Search: en.wikipedia.org "El Roi"; sermons.logos.com (the "no other character" claim). Stated as "one of very few ... many readers say she is the only one", agreeing with the verse note |
+| Beer-lahai-roi "usually explained as" the well of the Living One who sees me | 13-16 | Standard rendering | Hedged |
+| Muslims honor Hagar and Ishmael; Ismail a prophet and remembered as ancestor of the Arabs and of Muhammad; the Qur'an does not name Hagar; tradition (al-Bukhari) of her running between Safa and Marwa for water; Zamzam; pilgrims walk between the hills (sa'i) | 13-16 | Islamic tradition as summarised | Search: en.wikipedia.org "Hagar in Islam"; islamqa.info 11069; madainproject.com "Safa and Marwah". Paraphrased, no Qur'an quotation |
+
+Cut: the Old Assyrian marriage contract (deep note, not checked); the
+proposed correction to the Hebrew of 16:13; the angel as the Son before
+his birth (not needed here).
