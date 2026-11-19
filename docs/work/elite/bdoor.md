@@ -1810,3 +1810,132 @@ Calvin and Aquinas (reused from the introduction, not searched again).
 ### Next
 
 John 4 onward in plain words, in the same shape.
+
+## Continuation: John 4 to 7 (2026-11-19)
+
+The Samaritan woman, Bethesda, the bread of life and Tabernacles, passage by
+passage, in plain words, in the same data shape
+(`client/public/bible/notes/john/plain/4.json` to `7.json`; each chapter note
+now says `"plain": true`). Data only; no page code changed.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| John 4 | 7 (tired, at Jacob's well; living water; five husbands, and a prophet; worship in spirit and truth; come and see, fields ripe for harvest; the Savior of the world; the official's son) | 4,448 |
+| John 5 | 6 (the pool and a man ill for thirty-eight years; the Sabbath and making himself equal with God; the Son does what the Father does; the hour is coming; the witnesses; Moses wrote about me) | 3,735 |
+| John 6 | 7 (five thousand fed and a crown refused; it is I; food that endures; I am the bread of life; no one can come unless the Father draws him; eat My flesh and drink My blood; to whom would we go?) | 4,268 |
+| John 7 | 7 (his brothers did not believe; whispers at the feast; teaching in the temple; where is he from; rivers of living water; a divided crowd; no one ever spoke like this man) | 3,746 |
+| Total | 27 | 16,197 |
+
+Counted by script over the five fields. John 1 to 7 now: 44 passages, 25,243
+plain words. 7:53 sits in the last passage of chapter 7 only as a pointer
+(the validator needs the passages to reach the chapter's last verse); the
+woman caught in adultery is left for the chapter 8 run.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and read: all 27
+sit under their right headings, and `validate-bible-notes` passed with no
+exceptions (`OT_FIELD_KNOWN` still empty).
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "The plain notes on John 4" to "7".
+24 web searches (7, 5, 7, 5). New sources: Samaritan population today;
+Daube's vessels reading of 4:9 (as a proposal); the Taheb (later Samaritan
+writings); Mishnah Avot 1:5; Koester on "Savior of the world" (JBL 1990,
+abstract); the Bethesda excavations and the later Asclepius shrine; the
+manuscripts of 5:3b-4; Mishnah Shabbat 7:2 and 19; Philo, Allegorical
+Interpretation 1.5; Mishnah Berakhot 5:5; the site's own Nicene Creed text;
+barley as poor people's bread; Catechism 1336; Calvin's commentary on John 6;
+Lutheran writers on John 6; the Marburg Colloquy (1529); the 7:8 "not yet"
+variant; Mishnah Sukkah 5:1; Justin, Dialogue 8; the punctuation of 7:37-38
+and its possible Scriptures; Jonah of Gath-hepher. Ancient, patristic and
+rabbinic writers are paraphrased and the rabbinic ones marked as later.
+
+### Cut or narrowed
+
+Augustine's "believe, and you have eaten" (searched twice, found only in
+secondary citations, so neither the line nor his name is used); Luther's own
+words on John 6 (secondary only); Lynn Cohick by name (her reading met only
+in reviews, so it is given to "some scholars who study women in the ancient
+world"); Porphyry and Jerome on 7:8; Marqah; the symbolic five husbands;
+Photini and the Eastern feast; Daube's article itself (only his proposal is
+stated); the Samaritan Pentateuch at Deuteronomy 27:4; the copper scroll;
+Keener's "later read at the feast"; P66 at 7:52; and every scholar in the
+deep notes not checked this run. The deep notes are unchanged underneath.
+
+### Contested matters, and how they are stated
+
+The five husbands (the traditional reading and the reading that sees a woman
+much wronged; "The text does not settle it, and these notes do not choose";
+death, divorce by a husband and levirate custom all named as possible).
+4:9 (associate, or share vessels). "Salvation is from the Jews" (its weight,
+against both misuses). "Spirit and truth" (human spirit or Holy Spirit). The
+"others" of 4:38. Which hometown (4:44). The official and the centurion (one
+event or two). 5:4 (what the copies show). "Do you want to get well?" (not
+blame). 5:14 and 9:3. Equality with God (Arius, Nicaea and Constantinople,
+the creed in the site's wording, as the first-order confession). 5:29 and
+faith. The feeding (pointer to Matthew 14). 6:37, 44 and 65 (God's choosing,
+human response, Catholic and Orthodox grace first, shared ground, "open for
+discussion and not a cause for division", in the Mark 4 and Matthew 11
+wording). 6:53 (Catholic and Orthodox, Lutheran, Reformed with Calvin,
+memorial; "These notes do not settle the question", consistent with the Mark
+14 and Matthew 26 wording). 6:63. Judas. 7:8 ("not" or "not yet"). The
+brothers (pointer to Mark 3). 7:17. 7:37-38 (punctuation and Scriptures;
+"These notes do not choose"). Bethlehem and John's silence.
+
+**"The Jews".** 5:10-18 says where the phrase first bites that it means the
+Jerusalem authorities and points to the book page; 6:41 says it means the
+Capernaum synagogue audience; 7:1 says the Judean leaders; 7:13 shows Jews
+afraid of "the Jews", with 9:22 and 20:19. 5:41-47 and 7:45-53 add that the
+words were said to particular leaders.
+
+### Care lines included
+
+4:16-19 (a painful marriage history, met with dignity; shamed in church for a
+past one could not control). 4:43-54 (parents of sick children; faith not a
+guarantee; "you are not being told your faith failed"). 5:1-9 (long illness
+or disability; not a lack of faith or desire). 5:10-18 (illness not one's
+fault). 6:35-40 and 6:41-51 (fear of not being wanted; "the one who comes to
+Me I will never drive away"). 6:60-71 (the doubting reader; loved ones who
+left). 7:1-9 (family who do not believe). 7:37-39 (the dry and worn out).
+7:45-53 (mocked for a fair question).
+
+### The rendered pages: Mark, Matthew and John
+
+`pnpm build`, then `scripts/serve-like-vercel.mjs` on port 4603, and a
+Playwright script at 390 wide (deviceScaleFactor 1, `/api/trpc`, `/api/track`
+and `/_vercel/*` stubbed) opened all 51 chapter pages with a plain layer:
+Mark 1 to 16, Matthew 1 to 28, John 1 to 7. For each it scrolled until the
+plain section loaded and compared, passage by passage, the heading (reference
+and title), the order of the five part headings, and the first 60 characters
+under each with the data file. Result: 306 of 306 passages matched in all 51
+chapters; no passage missing; no sideways scroll on any page. The only
+console errors were 404s for `/index/chapters/matthew/8.json`, `/14.json` and
+`/17.json`: those three chapters have no passage-index file because nothing
+links to them, and the "Go deeper" fetch logs a 404 (code, not data; left for
+the lead). Screenshots of Matthew 18, 23, 27 and John 6 read clean:
+`/home/user/elite-shots/bdoor/plain-*-390.png` and `plain-*-passage.png`
+(the sticky header appears mid-image in the element shots; that is the
+screenshot stitching, not the page). Server stopped; dist/ deleted.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` (partial, John) after each chapter. All 36 commands
+of the content-gates step, one at a time: exit 0 each (validate-bible-notes:
+66 introductions, 1,189 chapter notes, 51 chapters in plain words;
+validate-no-emdash: 260 files, 0 em-dashes; search index 732 entries up to
+date; passage index 623 files match; verify-sources 22 texts intact).
+`pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped; 1,655 tests
+passed, 73 skipped. No lh-*.json.
+
+### Still unverified
+
+Daube's own article; Cohick's own text; Koester beyond his abstract; the
+exact words of every ancient and rabbinic writer (all paraphrased); whether
+the Mishnah's Tabernacles rites were done in Jesus' day (said to be
+uncertain).
+
+### Next
+
+John 8 onward, beginning with 7:53 to 8:11.
