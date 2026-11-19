@@ -4086,3 +4086,32 @@ Cut: the Nuzi tablet of a brother selling his inheritance share for sheep
 (the book page's Nuzi caution); the Mari and other Arabian identifications
 beyond Kedar, Nebaioth, Tema and Dumah; Sheba and Dedan as caravan
 peoples; lentils described.
+
+## The plain notes on Genesis 26 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/26.json`. One web search for this
+chapter, with the deep note, the verse notes, and the Genesis 20 and 21 plain
+notes and their ledger rows.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Famine and Egypt's Nile; Isaac never leaves the land; ‘stay as a foreigner’ (gur); the chapter echoes Abraham's life | 1-6 | Repository deep note (`historical`, `literary`); verse notes 2-3 | Repository |
+| Abimelech possibly a royal title (Genesis 20 plain note wording) | 1-6 | Site | Repository |
+| Philistines paragraph, word for word from the Genesis 21 plain note | 1-6 | Site; earlier ledger row (Genesis 21, 22-34) | Repository (grep -F) |
+| Mishnah Kiddushin 4:14 cites Genesis 26:5 to say Abraham kept the whole law before it was given; Mishnah written down around AD 200 | 1-6 | Mishnah Kiddushin 4:14; earlier ledger row on the Mishnah's date | Search: steinsaltz-center.org; thetorah.com "Abraham is not a Jew"; sefaria.org sheets. Paraphrased |
+| Three readings of 26:5 (broad; Jewish literal; later editor shaped by Deuteronomy) | 1-6 | Repository deep note (`hard`) | Repository; no side |
+| Galatians 3:8, 17; Hebrews 11:9; James 2:22; Genesis 28:15; Matthew 28:20 | 1-6 | BSB | Repository |
+| Three wife-sister stories pointed back to the Genesis 20 note | 7-11 | Site | Repository |
+| Rebekah the granddaughter of Nahor (24:15), not a half-sister | 7-11 | BSB | Repository |
+| ‘Caressing’ from tsachaq, the root of Isaac's name | 7-11 | Repository deep note (`words` H6711) | Repository |
+| Psalm 105:14; Exodus 34:7 (paraphrase); Ezekiel 18:14-17; 1 Peter 3:7 | 7-11 | BSB | Repository |
+| Care line "What was done to you was wrong, and it was not your fault" and Find Help, from the Genesis 12 and 19 plain notes | 7-11 | Site | Repository |
+| Herders sowing where rain allowed; wells as life and claim; filling wells as hostility; Esek, Sitnah, Rehoboth meanings; rachav and Psalm 4:1 | 12-22 | Repository deep note (`historical`, `cultural`, `words`) | Repository |
+| Matthew 13:8 (quoted only after its em-dash); Matthew 5:5; Romans 12:18 | 12-22 | BSB | Repository |
+| Treaty forms as in chapter 21; shared meal sealed it; Shibah, oath and seven sound alike | 23-33 | Repository deep note (`cultural`); Genesis 21 ledger | Repository |
+| Two accounts of Beersheba's name (21:31, 26:33): two readings | 23-33 | BSB | Repository; no side |
+| Matthew 5:9; Proverbs 16:7 (paraphrase); Judges 20:1; Exodus 3:6; Matthew 22:32 | 23-33 | BSB | Repository |
+| Esau married at forty like Isaac (25:20); 24:3; ‘grief’ as bitterness of spirit | 34-35 | BSB; standard lexicons | Repository |
+| Hittites: the Genesis 23 plain note's wording ("Many scholars think ... a local people with a similar name") | 34-35 | Site | Repository |
+
+Cut: "the Hittites of Genesis have Hebrew-sounding names" (not checked).
