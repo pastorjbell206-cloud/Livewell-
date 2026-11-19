@@ -981,7 +981,7 @@ function OneMap({
           {places.map(p => {
             const on = p.id === place?.id;
             const region = isRegion(p);
-            const l =
+            const l: Exclude<Place["label"], false | undefined> | null =
               p.label === false
                 ? null
                 : (p.label ??
@@ -1035,11 +1035,10 @@ function OneMap({
                     textAnchor={l.anchor}
                     className="bk-map__name"
                   >
-                    {"text" in l && l.text
-                      ? l.text
-                      : p.name
-                          .replace(/^(Region of the|The) /, "")
-                          .replace(/ River$/, "")}
+                    {l.text ??
+                      p.name
+                        .replace(/^(Region of the|The) /, "")
+                        .replace(/ River$/, "")}
                   </text>
                 )}
               </g>
