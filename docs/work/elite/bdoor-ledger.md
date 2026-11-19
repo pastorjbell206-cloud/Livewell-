@@ -6332,3 +6332,33 @@ No web search.
 | Spreading hands as prayer posture | Repository deep note (cultural) | Site's own teaching |
 | 1 Kings 18:27; Psalm 121:4; Romans 8:35-37; Mark 4:38; John 9:3 | BSB | BSB text |
 | 44:22 on the book page's list of hard passages | Book page (`teaching.hard`) | Repository |
+
+## The plain notes on Psalm 45 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Royal wedding song; heading "A love song", "The Lilies"; the king not named; Solomon a common guess; used at more than one wedding (a view) | 1-9 | Repository deep note (historical); BSB | Site's own teaching. Ahab not repeated |
+| Ophir gold (1 Kings 9:28); ivory as wealth; anointing | 1-9 | BSB; repository deep note | BSB text |
+| Hebrews 1:8-9 quotes 45:6-7; Isaiah 9:6 | 1-9 | BSB | BSB text |
+| 45:6 readings: vocative "O God" (most English Bibles); court language and elohim of judges (Exodus 21:6, BSB "the judges"); "your divine throne" (RSV, NJB), "your throne is of God" (RSV footnote, Kirkpatrick); Jewish readers to the king or to God | 1-9 | Translation commentary | Search: tips.translation.bible "Translation commentary on Psalm 45:6-7"; biblehub.com commentaries 45:6; nyc.scriptura.org. Translations not named on the page. Rashi not named (not found) |
+| The Targum addresses the king of 45:3 (Hebrew numbering) as the anointed king | 1-9 | Aramaic Bible translation of the Targum of Psalms (biblia.com); Sutcliffe; Strack-Billerbeck as reproduced | Search. Narrowed: "speaks to the king of this psalm as the anointed one, the word that gives us 'Messiah'"; "King Messiah" not quoted, since editions differ |
+| Leaving one's people; Tyre a Phoenician trading city; "Daughter of Tyre" a poetic name | 10-17 | Repository deep note (cultural) | Site's own teaching |
+| Ruth 1:16; 2 Corinthians 11:2; Revelation 19:7; Ephesians 5:21-33 (pointed to, views unstated) | 10-17 | BSB | BSB text |
+
+## The plain notes on Psalm 46 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Alamoth also in 1 Chronicles 15:20; like the word for young women; perhaps a high range; uncertain | 1-3 | BSB; repository deep note | BSB text; stated as uncertain |
+| 46:1 "a help ... found exceedingly" (nimtsa me'od) | 1-3 | Repository word data | Script |
+| Jerusalem has no river; spring and cisterns; Eden's river (Genesis 2:10); Ezekiel 47:1 | 4-7 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| "With us" 'imanu (46:7) and Immanu-el (Isaiah 7:14) | 4-7 | Repository word data | Script |
+| Link to 701 BC (2 Kings 18 and 19) a view; temple use another | 4-7 | Repository deep note | Stated as views; no date given |
+| No modern city or nation in view | 4-7 | Book page ("The king's psalms") | Site's own teaching |
+| "Be still": harpu from raphah, "let go", "stop", "drop", "relax"; NASB "Cease striving"; the setting of war; a command to the nations | 8-11 | Hebrew word studies; commentaries | Search: equip.org "Be Still and Know"; christiancourier.com; hebrewwordlessons.com; repository word data (H7503, "be quiet"). NASB not named on the page ("Some Bibles") |
+| Luther's "A Mighty Fortress Is Our God" drawn from Psalm 46 | 8-11 | Repository deep note; equip.org | Search. One line; no year given (the late-1520s date was not confirmed this run) |
+| Mark 4:39; Revelation 21:1; Matthew 1:23; Matthew 28:20; Revelation 22:1; Exodus 14:14; Isaiah 2:4 | all | BSB | BSB text |
