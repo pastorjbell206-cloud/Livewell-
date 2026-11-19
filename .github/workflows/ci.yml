@@ -63,6 +63,8 @@ jobs:
           node scripts/build-bible-text.mjs --check
           node scripts/build-bible-search.mjs --check
           node scripts/build-story-plan.mjs --check
+          node scripts/build-explorer-index.mjs --check
+          node scripts/validate-explorer.mjs
           node scripts/validate-bible-notes.mjs
           node scripts/verify-sources.mjs
 

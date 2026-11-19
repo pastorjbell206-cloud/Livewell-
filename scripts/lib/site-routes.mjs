@@ -82,6 +82,8 @@ function paramSources() {
     "/family/devotions/:id": slugsFrom(json("client/public/family/index.json")?.devotions, "id"),
     "/topics/:slug": slugsFrom(json("client/public/topics/index.json")?.pages),
     "/answers/:slug": answerSlugs(),
+    // The Bible Explorer: a stop has its own page once it is finished.
+    "/study/explorer/:slug": new Set((json("client/public/explorer/index.json")?.stops || []).filter((s) => s.status === "finished").map((s) => s.slug)),
     "/study/bible/:book": new Set(books.keys()),
   };
 }
