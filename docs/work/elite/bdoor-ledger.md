@@ -3476,3 +3476,35 @@ one for Genesis 2 and two for Genesis 3.
 Left out: Lambert's date for Enuma Elish; Cassuto's counts of sevens; the
 Memphite Theology and Merikare; the Ugaritic seven-day palace; Tutankhamun's
 name; every scholar named in the deep note not checked this run.
+
+## The plain notes on Genesis 2 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/2.json`. One search for this
+chapter (counted above), with the book page's rows and the earlier ledger.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Shavat: to stop or cease; Sabbath from the same root | 1-3 | Repository deep note (`words`, H7673A) | Repository |
+| Exodus 20:8-11; Deuteronomy 5:15; Mark 2:27; Hebrews 4:9-10 | 1-3 | BSB | Repository |
+| In Babylon's stories the gods rest because humans do their work | 1-3 | Site guide genesis-one-in-its-world; Atrahasis row above | Repository; earlier search |
+| ‘The LORD God’: the personal name; Elohim in chapter 1 | 4-7 | Repository deep note (`historical`) | Repository |
+| Adam and adamah; yatsar the potter's verb (Jeremiah 18); living being used of animals in 1:20-24 | 4-7 | Repository deep note (`cultural`, `words`) | Repository; Hebrew from the repository text |
+| Atrahasis: clay and a slain god's blood | 4-7 | Book page row (search) | Earlier search |
+| Two accounts: two sources each with its point; one writer, overview then close-up; 2:5 wild scrub and farmed crops; 2:19 ‘had formed’ | 4-7 | Repository deep note (`hard`) | Repository; stated as views, scholars not named |
+| Historical Adam: Christians differ; some weigh it above the days because of Romans 5 | 4-7 | Honest Answer on Genesis 1 | Repository |
+| Psalm 103:14; Ecclesiastes 3:20; 1 Corinthians 15:45; John 20:22 | 4-7 | BSB | Repository. The Septuagint verb link to John 20:22 is given only as "many readers see a deliberate echo" |
+| Tigris (Hiddekel) and Euphrates; Pishon and Gihon not identified with certainty | 8-17 | Repository deep note (`historical`) | Repository |
+| Eden: ‘delight’ or ‘well-watered place’; scholars weigh both | 8-17 | Repository deep note (Millard 1984) | Repository; no name given |
+| Wenham, "Sanctuary Symbolism in the Garden of Eden Story" (Proceedings of the Ninth World Congress of Jewish Studies, 1986): the garden a sanctuary, Adam an archetypal Levite; entrance east as the tabernacle's | 8-17 | Wenham | Search: Lioy (sats.edu.za); moseseditor blog; adventistbiblicalresearch.org; BYU RSC (Bradshaw) |
+| Same verb ‘walk’ (hitpael of halak) in 3:8 and Leviticus 26:12; the pair avad and shamar in 2:15 and Numbers 3:7-8; Exodus 26:31 cherubim in the veil | 8-17 | Hebrew text; BSB | Script over the repository's Strong's numbers and stems |
+| Knowledge of good and evil: moral autonomy; all things; maturity | 8-17 | Repository deep note (Genesis 3 `hard`) | Repository; stated as readings |
+| Ezer: 21 uses; most of God (Exodus 18:4; Psalm 121:2); kenegdo ‘corresponding to him’ | 18-25 | Hebrew text; lexicon | Script; repository deep note (`words`) |
+| Tsela: 31 uses; elsewhere usually a side (Exodus 25:12) | 18-25 | Hebrew text | Script over Strong's H6763 |
+| Kinship formula: Genesis 29:14; 2 Samuel 5:1 | 18-25 | BSB | Repository |
+| A bride usually joined her husband's family | 18-25 | Repository deep note (`cultural`); Genesis 24:58-61 | Repository; stated generally |
+| Complementarian and egalitarian readings; 1 Timothy 2:13 | 18-25 | Repository deep note (`hard`) | Repository; no scholars named |
+| Matthew 19:4-5, 19:12; Ephesians 5:32; 1 Corinthians 7:7; Psalm 68:6 | 18-25 | BSB | Repository |
+
+Left out: Kramer and Enki and Ninhursag; Brueggemann (CBQ 1970); Trible,
+Ortlund, Hess, Stanton and Friedman by name; Cush as the Kassites; the king's
+garden as a sign of power (not checked; cut).
