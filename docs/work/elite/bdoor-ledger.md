@@ -3787,3 +3787,29 @@ this chapter.
 Cut: the Elamite power in the early second millennium; the Amorite
 meaning of ‘masters of a covenant’; Melchizedek as a pre-incarnate
 appearance attributed to named writers (kept as "some Christians").
+
+## The plain notes on Genesis 15 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/15.json`. Two web searches for
+this chapter, with the book page's rows and the genocide Honest Answer.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| ‘Shield’ used of kings as protectors; 15:1 can be read ‘your reward will be very great’ | 1-6 | Repository deep note (`cultural`, `text`); Psalm 3:3 | Repository |
+| A childless man's heir could be a servant | 1-6 | Repository deep note; BSB 15:2-3 | Repository; the Nuzi adoption parallel not used (book page caution) |
+| Romans 4:3, 4:5, 4:10-11, 4:20; Galatians 3:6; James 2:21-24; Hebrews 11:12 | 1-6 | BSB | Repository |
+| Protestant reading of ‘credited’ (Luther, Calvin: a righteousness not one's own, put to the believer's account); Catholic teaching at Trent, 1547 (God who reckons righteous also makes righteous); Catholic writers on ‘reckoned’ not ruling out real renewal; Paul and James on first counting and later showing | 1-6 | Repository deep note (`hard`); Trent's decree as summarised | Search: catholic.com "Righteous or reckoned"; ligonier.org "What does the Roman Catholic Church believe about justification"; samstorms.org. Stated as both views, no side |
+| Cutting a covenant (karat berit); the self-curse; Jeremiah 34:18 | 7-11, 17-21 | Book page row; BSB | Repository |
+| Sefire treaty, 700s BC: as the calf is cut up, so Matti'el and his nobles shall be cut up | 7-11 | Sefire inscription as quoted | Search: rsc.byu.edu "Cutting Covenants". Paraphrased. **Cut:** the Ashur-nirari V lamb's head (not confirmed: the source has a spring lamb in a different curse); the Mari donkey (book page: not found) |
+| The animals later accepted for sacrifice; the birds left whole | 7-11 | Repository deep note | Repository |
+| Judges 6:36-40; John 20:27 | 7-11 | BSB | Repository |
+| 400 years, the fourth generation, 430 years (Exodus 12:40-41); Galatians 3:17; ‘generation’ as lifetime; ancient readers counted differently | 12-16 | BSB; repository deep note (`historical`) | Repository |
+| Amorites standing for the peoples of Canaan | 12-16 | Repository deep note | Repository |
+| "The judgment is described as late. Long before, God told Abraham his descendants would wait, “for the iniquity of the Amorites is not yet complete” (Genesis 15:16)." and "On the Bible's own account, the peoples of Canaan were given generations." | 12-16 | Honest Answer and essay "Did God command genocide" | Repository (copied word for word) |
+| Deuteronomy 9:5; Leviticus 18:24-28; Joshua 6:25; 2 Peter 3:9 | 12-16 | BSB | Repository |
+| Fire as God's presence (Exodus 3:2; 13:21; 19:18); God alone passes; borders reached under Solomon (1 Kings 4:21); Hebrews 6:13, 6:18; Galatians 3:13 as a Christian reading, said so | 17-21 | Book page; repository deep note; BSB | Repository |
+
+Cut: "usually the weaker party walked between the pieces" (deep note, not
+checked); von Rad's priestly-declaration reading; Rashi's and the
+Septuagint's ways of counting the years (said only "ancient readers counted
+these years in different ways").
