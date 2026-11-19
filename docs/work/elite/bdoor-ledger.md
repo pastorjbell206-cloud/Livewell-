@@ -3143,3 +3143,42 @@ bones in the temple; m. Negaim and b. Nedarim 64b; 1QS on rebuke; Wisdom of
 Solomon and Josephus on the pillar of salt; outside stairs on roofs; Origen,
 Athanasius, the Vulgate, Luther, Tolstoy, C. H. Roberts and the Gospel of
 Thomas on 17:21; Darby, Scofield, Left Behind, MacArthur, Bock.
+
+## The plain notes on Luke 18 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/18.json`. Three searches for this
+chapter, with the earlier ledger (Mark 10; Matthew 19, 20 and 23; Luke 3, 11
+and the book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Widows named with orphans and foreigners as those God defends | 1-8 | Exodus 22:22-23; Psalm 68:5; Isaiah 1:23 | BSB text |
+| Hupōpiazō: "strike under the eye", a boxer's word; only here and 1 Corinthians 9:27 | 1-8 | Lexicons (Thayer, Vine as reproduced) | Search: biblehub.com 5299 (cnbible mirror); preceptaustin.org 1 Corinthians 9:27; blueletterbible.org G5299. Script over the repository's Greek (two occurrences) |
+| Sirach 35 (verses numbered differently in editions): the Lord does not ignore the widow pouring out her complaint; commentators hear it behind Luke 18:7 | 1-8 | Sirach 35; USCCB footnote to Luke 18:7; Joel Green as reported | Search: bible.usccb.org Sirach 35; intertextual.bible "Sirach 35:17 / Luke 18:3"; en.wikipedia.org "Parable of the Unjust Judge". "Written before Jesus' time"; "many readers hear"; no verse number given |
+| Psalm 13:1; Revelation 6:10 | 1-8 | BSB | Repository |
+| Care for those failed by courts, police or churches (new wording; the police-or-crisis-line line as in the Matthew 10 paragraph) | 1-8 | Site care wording | Written for this passage |
+| Pharisees (Luke 11 and Matthew 23 wording, word for word: "So ‘Pharisee’ is not a word for a hypocrite. In later Christian speech it came to mean that, but it did not mean that to Jesus' hearers.") | 9-14 | Luke 11 and Matthew 23 plain notes | Copied word for word |
+| One fast a year commanded (Leviticus 16:29); tithe (Deuteronomy 14:22) | 9-14 | BSB | Repository |
+| Didache 8:1: "the hypocrites" fast on Mondays and Thursdays; Christians to fast on Wednesdays and Fridays | 9-14 | Didache | Search: cts.perseids.org Didache 8.1; catholic.com encyclopedia "Didache"; newadvent.org. Paraphrased ("some fasted"); who the hypocrites were not stated |
+| Tax collectors (Luke 3 wording) | 9-14 | Luke 3 plain note | Repository |
+| Standing to pray, looking up (John 17:1); beating the breast (23:48) | 9-14 | BSB | Repository |
+| Hilasthēti (18:13) the verb of Hebrews 2:17 ("make atonement"); eleēson at 18:38-39 | 9-14 | Greek text | Script over the repository's Greek (G2433, G1653). "Some readers hear" |
+| The Jesus Prayer grew in part from the cries of the blind man and the tax collector | 9-14 | Earlier ledger (Mark 10) | Earlier ledger |
+| Psalm 51:1, 17; Isaiah 57:15; Luke 7:36; 11:37; 14:1; 13:31 | 9-14 | BSB | Repository |
+| Children in the ancient world; "like a little child" (Mark 10 wording) | 15-17 | Mark 10 plain note | Copied word for word |
+| Brephē (18:15), the word for John in the womb (1:41) and the baby Jesus (2:12, 16) | 15-17 | Greek text | Script over the repository's Greek (G1025) |
+| Genesis 48:14; Psalm 131:2; infant baptism views stated without a side | 15-17 | BSB; standard positions | Repository; stated as views |
+| The inheritance question, the camel and needle, the Talmud's elephant, no gate (Mark 10 wording word for word) | 18-30 | Mark 10 plain note; earlier ledger | Copied word for word |
+| "Why do you call Me good?" readings; Clement and Antony; "Is it wrong to be rich?" paragraph (Mark 10 and Matthew 19 wording) | 18-30 | Mark 10 and Matthew 19 plain notes | Copied, verse numbers changed and the hundredfold sentence adapted to "many times more" |
+| "Wife" in Luke 18:29 and Matthew 19:29, not in Mark 10:29; Exodus 20:3, 12-17; Luke 19:9 | 18-30 | BSB comparison | Repository |
+| Third warning (9:22; 9:44); "up" to Jerusalem; Gentiles the Romans; crucifixion Roman (Mark 10 wording) | 31-34 | Mark 10 plain note | Repository |
+| Isaiah 50:6; Psalm 22:7; Luke 24:25-27, 44-46 | 31-34 | BSB | Repository |
+| Jericho the last town on the road up; Son of David; sesōken "saved" at 18:42 | 35-43 | Mark 10 plain note; Greek text | Repository; script over the repository's Greek |
+| Leaving and approaching; two Jerichos; Luke's placing before Zacchaeus; storytellers; "Christians who hold a high view of Scripture are found on more than one side here. These notes do not choose." (Matthew 20 wording) | 35-43 | Matthew 20 plain note; earlier ledger (two Jerichos) | Copied and adapted; Calvin and Augustine not named |
+| Isaiah 35:5; Luke 4:18; 2 Samuel 7:13 | 35-43 | BSB | Repository |
+
+Left out: Josephus on the Pharisees; m. Nedarim 3:4; m. Tamid and the hour of
+the afternoon sacrifice; Bailey's atonement-sacrifice setting; Levine on the
+widow; b. Berakhot 28b; m. Demai; the Psalms of Solomon; Sanders by name;
+Lucian; Cyril and the "rope" reading; Netzer's palaces; Herod's death at
+Jericho; Calvin's harmony.
