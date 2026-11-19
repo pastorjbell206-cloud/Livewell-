@@ -3609,3 +3609,22 @@ chapter, with the book page's rows (sons of God, Atrahasis, Gilgamesh).
 | Gilgamesh's boat usually read as a cube (equal sides, 120 cubits) | 14-22 | Gilgamesh XI | Search: historyskills.com; imsmessenger.org; howstuffworks. The page says "usually read as a cube" and gives no deck count (sources differ) |
 | Tevah only in Genesis 6 to 9 and Exodus 2:3, 2:5; tar and pitch | 14-22 | Hebrew text; BSB | Script (H8392) |
 | 1 Peter 3:20-21 (only the dash-free words quoted); Luke 22:20; Genesis 9:9-10 | 14-22 | BSB | Repository |
+
+## The plain notes on Genesis 7 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/7.json`. Two web searches for this
+chapter.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Clean and unclean (Leviticus 11:47); ‘seven seven’ read as seven pairs or seven; 8:20, 9:3 | 1-10 | Repository deep note (`cultural`); BSB | Repository |
+| Two of every kind (6:19-20) and seven pairs (7:2-3): the fuller-detail reading and the two-sources reading; ‘God’ in 6:22, ‘the LORD’ in 7:5 | 1-10 | Book page (authorship part); BSB | Repository; stated as views, no side |
+| Luke 17:26-27; 1 Peter 3:20; Hebrews 11:7 | 1-10 | BSB | Repository |
+| Waters above and below; tehom in 1:2, 7:11, 8:2; ‘windows’ of heaven; sagar in 7:16 | 11-16 | Repository deep note (`cultural`, `words`); Hebrew text | Script (H8415, H5462) |
+| Psalm 29:10; Mark 4:39; John 10:9 (the door link said to be a reading the New Testament does not draw); Ezekiel 33:11 | 11-16 | BSB | Repository |
+| Reverse order of creation in 7:23; breath of life (2:7) | 17-24 | Repository deep note (`literary`); BSB | Repository |
+| Flood layers at Ur, Kish and Shuruppak; Woolley's 1929 announcement for Ur; the layers of different dates and local floods; Woolley later retracted the identification | 17-24 | Archaeology | Search: Penn Museum Expedition "Reflections on the Mesopotamian Flood"; livius.org "The Great Flood: Archaeology?"; NCSE Creation/Evolution Journal; New World Encyclopedia "Leonard Woolley"; a 1929 newspaper (Papers Past). The retraction rests on one secondary source (livius.org) and is worded simply |
+| Whitcomb and Morris, The Genesis Flood (1961): a universal flood and flood geology; written partly against Ramm's local-flood view (1954, not named on the page) | 17-24 | The Genesis Flood | Search: Wikipedia "The Genesis Flood"; Grace Journal review (1961); ASA review |
+| Erets as earth and land (7:19, 12:1, 13:12, 41:57); "every nation came to Joseph" (41:57) | 17-24 | Hebrew text; BSB | Script (H0776) |
+| Third view: the writer describes the whole earth, an ancient telling of a real memory (a universal reading held by many critical commentators) | 17-24 | Davidson, "The Biblical Flood: Local or Universal" (Adventist paper, 2023); repository deep note | Search, as above; stated as a view |
+| 2 Peter 3:6; Isaiah 54:9; Isaiah 43:2 | 17-24 | BSB | Repository |
