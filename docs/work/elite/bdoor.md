@@ -646,3 +646,110 @@ chapter's first load; the map and plain notes load as before).
 ### Next
 
 Matthew 5 to 7 (the Sermon on the Mount), then 8 onward, in the same shape.
+
+## Continuation: Matthew 5 to 7 (2026-11-19)
+
+The Sermon on the Mount, passage by passage, in plain words, in the same data
+shape as Matthew 1 to 4 (`client/public/bible/notes/matthew/plain/5.json` to
+`7.json`; each chapter note now says `"plain": true`). Data only; no code
+changed, so no build, Lighthouse or screenshots were run.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 5 | 9 (the Beatitudes; salt and light; not to abolish, but to fulfill; anger, and making peace first; desire, and the eye and the hand; divorce; oaths; the other cheek; love your enemies) | 4,626 |
+| Matthew 6 | 6 (giving in secret; prayer in secret; the Lord's Prayer; fasting in secret; treasure, the eye, and two masters; do not worry) | 3,100 |
+| Matthew 7 | 6 (do not judge; ask, seek, knock, and the golden rule; the narrow gate; known by their fruit; "I never knew you"; two builders, and a teacher with authority) | 3,007 |
+| Total | 21 | 10,733 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. The deep
+notes are unchanged underneath. Matthew 5 runs longer than earlier chapters
+because it holds nine passages and six hard questions that the brief named.
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "The plain notes on Matthew 5", "6"
+and "7". 23 web searches (8, 8, 7). New sources: Strong's and Vine's on Raca;
+the Mishnah Yoma 8:9 and Bava Kamma 8:6 (marked as written down later);
+Josephus, Jewish War 2.135 (Essenes and oaths) and Antiquities 20.97-98
+(Theudas); the lexicons on angareuō; Tolstoy, What I Believe (1884); Aquinas,
+Summa II-II question 40; the Community Rule (1QS 1:9-10); Origen on
+epiousios and Jerome's "supersubstantial"; the manuscripts and the Didache on
+the doxology; the Kaddish (age of its wording uncertain); Pope Francis on
+"lead us not into temptation" (2017); the good eye and evil eye idiom;
+mammon; the Talmud, Arakhin 16b (later); Tobit 4:15 (third or second century
+BC); the Didache 1 and 11; Russell, Why I Am Not a Christian (1927); Avot
+de-Rabbi Natan 24 (later, attribution uncertain); Avot 1:1. Reused from the
+ledger: Hillel and Shammai on divorce, Hillel's golden rule, Gehenna, the
+Schleitheim Confession, Luther's two kinds of duty. All ancient and rabbinic
+writers are paraphrased.
+
+### Cut or narrowed
+
+Roman soldiers as the ones who compelled the second mile (the results
+confirmed the Persian courier sense and Simon of Cyrene, not soldiers); the
+sums of the Mishnah's fines; apechō as a business receipt; Tobit 12:8; the
+Didache's fast days; the French and Italian wordings of the Lord's Prayer;
+Matthew 20:15 as a third "evil eye" text; 4Q525; the Church of the
+Beatitudes; Dead Sea salt; a first-century custom of withholding greetings;
+the right hand as the valued one; Hillel's dates; the Quakers on oaths; the
+named scholars and confessions in the deep notes (Fitzmyer, Piper,
+Instone-Brewer, Westminster, Trent, Wesley, Kant, Bunyan). Theudas in Acts
+is "a Theudas", since Acts and Josephus place him differently.
+
+### Contested matters, and how they are stated
+
+"You have heard ... but I tell you": a Jewish teacher going to the root of the
+Law, with 5:17 stated plainly, the Law already pushing past hatred (Leviticus
+19:17; Exodus 23:4-5), and the Jewish parallels (Yoma 8:9, the Essenes,
+Hillel, Tarfon, Avot de-Rabbi Natan) set beside Jesus, not against him. Why
+Christians do not keep the whole Law (three answers). Divorce (Catholic,
+Orthodox, Protestant, betrothal, forbidden kin; no side). Oaths (Anabaptist
+refusal and the majority view). Non-resistance (pacifist with the
+Anabaptists, Mennonites and Tolstoy; Luther's two kinds of duty; the just war
+tradition from Augustine to Aquinas; no side). "Be perfect" (three readings).
+"Daily bread", "lead us not into temptation" and the doxology, each plain and
+without alarm. Forgiveness in 6:15. Owning and saving. "Judge not" and the
+dogs and pigs (not a word about any people). Ask and receive (the skeptic's
+objection, the sermon's own setting, no prosperity reading). The narrow gate
+(how many; Russell's objection; no side on the nature of judgment).
+Assurance in 7:21-23 (Reformed, Wesleyan, Catholic, stated as views). Faith
+and works in the two builders. The six readings of the whole sermon are not
+repeated: 7:24-29 points to the part on Matthew's book page.
+
+### Care lines included
+
+5:21-26: making peace does not mean returning to someone dangerous. 5:29-30:
+the Mark 9 wording, word for word (a picture, never a command to harm the
+body; a doctor, a pastor, a trusted friend, or a crisis line). 5:31-32: the
+Mark 10 safety line, word for word, with no phone number. 5:38-42: "turn the
+other cheek" is not a command to stay with someone who hurts you; seeking
+safety and the law's protection is not disobedience (John 18:23; Acts 22:25).
+5:43-48: loving an enemy is not trusting one who is still dangerous. 6:9-15:
+forgiveness is not reconciliation, silence about a crime, or a return to
+harm. 6:16-18: fasting is not for everyone (illness, pregnancy, nursing,
+medicine, a history of disordered eating), ending with the Matthew 4 wording.
+6:25-34: "do not worry" is not a rebuke of an anxiety disorder, and the help
+wording of the site's answer "Is my anxiety a spiritual failure?" is copied
+word for word (including its 988 line for the United States). 7:13-14 and
+7:21-23: an invitation, not a scare; the frightened reader is met with 11:28.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` after each chapter. Then all 36 content-gate commands
+of ci.yml, one at a time: exit 0 each (validate-bible-notes: 66
+introductions, 1,189 chapter notes, 23 chapters in plain words;
+validate-no-emdash: 260 files, 0 em-dashes; search index 732 entries up to
+date; passage index 620 files match). `pnpm check`: clean. `pnpm test`: 146
+files passed, 7 skipped; 1,653 tests passed, 73 skipped. No build, so no
+dist/ and no lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient and rabbinic writer (all paraphrased); the
+back-handed reading of the right cheek (given as "many readers note"); which
+flower the lilies were; whether Jesus had the Community Rule in mind (stated
+as unknown).
+
+### Next
+
+Matthew 8 onward, in the same shape.
