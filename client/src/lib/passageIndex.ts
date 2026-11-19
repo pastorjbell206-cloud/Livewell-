@@ -1,8 +1,9 @@
 /**
  * The passage index on the client: what else the site has on a Bible chapter
  * ("Go deeper"). scripts/build-passage-index.mjs writes one small file per
- * chapter that has anything (client/public/index/chapters/<book>/<n>.json);
- * a chapter with nothing has no file, so its fetch answers 404 and the
+ * chapter that has anything (client/public/index/chapters/<book>/<n>.json),
+ * and the list of those chapters (client/public/index/chapters.json). A
+ * chapter the list leaves out has nothing, so no file is asked for and the
  * chapter shows nothing. The rules for what counts are in
  * scripts/lib/passage-index.mjs.
  */
@@ -53,18 +54,43 @@ export const isPassageRows = (x: unknown): x is PassageRow[] =>
 
 export const chapterIndexUrl = (slug: string, chapter: number) => `/index/chapters/${slug}/${chapter}.json`;
 
+export const CHAPTER_LIST_URL = "/index/chapters.json";
+
+const isChapterList = (x: unknown): x is Record<string, number[]> =>
+  !!x && typeof x === "object" && !Array.isArray(x) && Object.values(x).every((n) => Array.isArray(n) && n.every((c) => typeof c === "number"));
+
+let list: Promise<Record<string, number[]> | null> | null = null;
+
+/** Which chapters have a file; null when the list cannot be read (then every chapter is asked for, as before). */
+function fetchChapterList(): Promise<Record<string, number[]> | null> {
+  list ??= fetch(CHAPTER_LIST_URL)
+    .then(async (res) => {
+      const data: unknown = res.ok ? await res.json() : null;
+      return isChapterList(data) ? data : null;
+    })
+    .catch(() => null)
+    .then((got) => {
+      if (!got) list = null;
+      return got;
+    });
+  return list;
+}
+
 const cache = new Map<string, Promise<PassageRow[]>>();
 
 /**
- * The rows for one chapter. A chapter with no file (404) has none; any other
+ * The rows for one chapter. A chapter the list leaves out has none, and its
+ * file is not asked for; a chapter with no file (404) has none; any other
  * failure rejects, and is not cached, so a later visit tries again.
  */
 export function fetchChapterIndex(slug: string, chapter: number): Promise<PassageRow[]> {
   const url = chapterIndexUrl(slug, chapter);
   const hit = cache.get(url);
   if (hit) return hit;
-  const p = fetch(url)
+  const p = fetchChapterList()
+    .then((have) => (have && !have[slug]?.includes(chapter) ? null : fetch(url)))
     .then(async (res) => {
+      if (res === null) return [];
       if (res.status === 404) return [];
       if (!res.ok) throw new Error(`fetch ${url} → ${res.status}`);
       const data: unknown = await res.json();

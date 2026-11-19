@@ -34,5 +34,428 @@
     { "ch": 73, "why": "A wisdom psalm that faces the prosperity of the wicked honestly and finds its answer in the sanctuary and the nearness of God." },
     { "ch": 89, "why": "The end of Book 3, where God's covenant with David seems to have failed, setting up the rest of the Psalter's answer." },
     { "ch": 110, "why": "The Old Testament text the New Testament quotes most often about Christ, the king seated at God's right hand and a priest forever." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "The Psalms in a minute",
+        "body": "The Psalms are the prayer book and the song book of the Bible. The book holds 150 poems. Some praise God. Some thank him for a rescue. Many cry out to him from trouble. A few teach, like a wise elder. All of them are written to be prayed or sung.\n\nMost of the Bible is God speaking to his people. In the Psalms, God's people speak to him, and he kept their words as Scripture. So the book does two things at once. It tells you who God is. And it hands you words to say back to him, in every state a human life can reach: joy, fear, guilt, thanks, grief, anger and quiet trust.\n\nThe poems were written by many people over many centuries. Later they were gathered into one book in five parts. Israel sang them at the temple in Jerusalem. Jews have prayed them every day for many centuries, and so have Christians. Jesus prayed words from them as he died on the cross.\n\nThe book opens with two doors. Psalm 1 speaks of the person who loves God's teaching. Psalm 2 speaks of the king God has set on Zion, his holy hill in Jerusalem. The rest of the book keeps both in view: the life of one faithful person, and the hope of God's chosen king. It ends with five psalms of pure praise. The very last line is “Let everything that has breath praise the LORD.”"
+      },
+      {
+        "id": "the-name",
+        "h": "‘Praises’: the book's name",
+        "body": "In Hebrew the book is called Tehillim. It means ‘praises’. That is a surprising name, because more of the psalms are cries for help than songs of praise. The name seems to say that even a cry of pain, when it is spoken to God, is on its way to praise.\n\nThe English name comes from Greek. When the Hebrew Bible was put into Greek, before the time of Jesus, this book was called Psalmoi. A psalmos was a song sung to a stringed instrument, like a harp. Through Latin that word reached English as ‘psalm’. The whole book is sometimes called the Psalter, an old name for a book of psalms.\n\nIn English Bibles the Psalms sit among the books of poetry and wisdom, after Job and before Proverbs. In the Hebrew Bible they stand near the front of the third part, called the Writings. Jesus once named the whole Old Testament as “the Law of Moses, the Prophets, and the Psalms” (Luke 24:44).\n\nThe word ‘LORD’ in small capital letters appears all through the book. It stands for God's own name in Hebrew, often written Yahweh, which Jewish readers do not say aloud. Most English Bibles show it this way. When you see ‘LORD’ in a psalm, the poet is calling God by his personal name, the name he gave Moses at the burning bush."
+      },
+      {
+        "id": "five-books",
+        "h": "Five books, and the blessings that close them",
+        "body": "The Psalms are not one long list. They are gathered into five smaller books. Each of the first four ends with a short blessing of God, called a doxology (from the Greek for ‘a word of glory’).\n\nBook One is Psalms 1 to 41. It ends, “Blessed be the LORD, the God of Israel, from everlasting to everlasting. Amen and Amen” (41:13). Book Two is Psalms 42 to 72. It ends with a blessing and then a note: “Thus conclude the prayers of David son of Jesse” (72:20). Book Three is Psalms 73 to 89. It ends, “Blessed be the LORD forever! Amen and amen” (89:52). Book Four is Psalms 90 to 106. It ends with a blessing and a call: “Let all the people say, ‘Amen!’ Hallelujah!” (106:48). Book Five is Psalms 107 to 150. It has no short blessing of its own. Many readers take Psalm 150, or the five psalms 146 to 150 that each begin and end with ‘Hallelujah’ (‘praise the LORD’), as the close of Book Five and of the whole book.\n\nWhy five? Many have noticed that the Law of Moses also has five books. Some think the five parts of the Psalms were meant to match them, so that the Psalms became Israel's answer in prayer to God's teaching. Others say there is no clear evidence for that. These notes leave the question open.\n\nSome readers also see a story in the order. Book Three ends with Psalm 89, which grieves that David's royal line seems to have failed. Book Four then opens with a prayer of Moses and sings, again and again, that the LORD is King. On this reading, the book answers the loss of Israel's kings by pointing back to God's own rule. This is a reading of the arrangement, not something the book says in so many words."
+      },
+      {
+        "id": "who-wrote-them",
+        "h": "Who wrote the psalms",
+        "body": "Many psalms begin with a short line above the poem, called a heading. A heading may name a person, an event, a tune or a kind of song. In most English Bibles it is printed in smaller type above verse 1. In the Berean Standard Bible used on this site it begins verse 1.\n\nThe headings name several people. By the usual count, 73 psalms are linked with David. Twelve are linked with Asaph, a leader of the temple singers in David's day according to the books of Chronicles (1 Chronicles 16:7). Eleven are linked with ‘the sons of Korah’, a family of temple singers. Two are linked with Solomon (72 and 127), one with Moses (90), one with Heman (88, which also names the sons of Korah) and one with Ethan (89). About a third of the psalms have no name at all.\n\nHere is the hard part. The Hebrew words often put into English as ‘of David’ are just two: le-David. The small word le can mean ‘by’, ‘for’, ‘to’ or ‘belonging to’. So ‘of David’ could mean that David wrote the psalm. It could mean it was written for David, or for a king of his line. It could mean it belongs to a collection that bore his name.\n\nPeople who study the Psalms read this in different ways. The traditional view, held by Jews and Christians for many centuries and by many scholars today, is that le-David names the author in most cases. They point out that the same small word names writers elsewhere in the Bible, and that the Bible remembers David as a singer and poet (1 Samuel 16:23; 2 Samuel 23:1). The New Testament also quotes psalms as David's words (Acts 4:25). Many critical scholars, who study the Bible with the tools used on any ancient book, think most headings were added later by the people who collected the psalms. On that view the headings show how early readers understood a psalm, but they do not prove who wrote it. Many hold a view in between: the headings are old and often right, but some mark a collection or a dedication rather than a writer.\n\nThe headings are old. They are already in the Hebrew text the Greek translators used before Jesus' time, and that Greek version adds still more headings naming David. But how old they are, and how much weight they carry, is debated among believers and scholars alike. These notes do not settle it. Whoever held the pen, Jews and Christians have received these poems as the prayers God gave his people."
+      },
+      {
+        "id": "headings",
+        "h": "What the headings tell you",
+        "body": "About a dozen headings tie a psalm to a moment in David's life. Psalm 3 is “A Psalm of David, when he fled from his son Absalom.” Psalm 51 is set “When Nathan the prophet came to him after his adultery with Bathsheba.” Psalm 57 is set “when he fled from Saul into the cave.” These headings invite you to read the psalm beside a story in the books of Samuel. Read that way, a psalm becomes a window into a real person's fear or guilt.\n\nOther headings give directions for music. Many begin “For the choirmaster”, the leader of the temple music. Some name instruments: “With stringed instruments” (Psalm 4), “to be accompanied by flutes” (Psalm 5). Some seem to name a tune the psalm was sung to, such as “The Doe of the Dawn” (Psalm 22). Some name a kind of poem with a word we no longer fully understand: Maskil, Miktam, Shiggaion. The Berean Standard Bible leaves these in Hebrew because no one is sure what they mean.\n\nOne more thing about headings can confuse a reader. Hebrew Bibles usually count the heading as verse 1, and a long heading as verses 1 and 2. English Bibles do not. So a verse number in a Hebrew Bible, or in a book that follows it, can be one or two higher than the same verse in an English Bible. The blessing that ends Book One is 41:13 in English and 41:14 in Hebrew. The words are the same."
+      },
+      {
+        "id": "when",
+        "h": "When they were written",
+        "body": "The psalms were written over a long time. The book itself shows this.\n\nSome psalms are tied to the age of Israel's first kings. The headings link many with David, whose reign is usually dated around 1000 BC. Psalm 90 is headed “A prayer of Moses the man of God”, which would take it further back still. Many psalms speak of the king and of the temple in Jerusalem, and seem to belong to the centuries when Israel had both.\n\nOther psalms clearly come much later. Psalm 137 begins, “By the rivers of Babylon we sat and wept when we remembered Zion.” It must come after the army of Babylon destroyed Jerusalem and its temple in 587 or 586 BC and took many of its people away to Babylon. Psalm 126 sings of the day “the LORD restored the captives of Zion”, and seems to look back on the return from that exile, which began after Persia took Babylon in 539 BC.\n\nScholars do not agree on how many psalms come from which period. Some date a large share of them to the time of the kings. Others think many were written or reshaped during or after the exile. The gathering of the whole book into its present shape came at the end of this long process. Many place it in the centuries after the exile. The Dead Sea Scrolls, discussed below, show that the last part of the book was still arranged differently in some copies around the time of Jesus.\n\nA careful reader can hold this simply. The Psalms were not written in one sitting by one person. They are the prayers of God's people across many generations, kept, used and gathered over centuries."
+      },
+      {
+        "id": "hebrew-poetry",
+        "h": "How Hebrew poetry works",
+        "body": "English poems often rhyme. Hebrew poems do not. Their music lies somewhere else: in lines that answer each other. This is called parallelism. The second line of a pair picks up the first and says it again in other words, or sharpens it, or sets something against it.\n\nHere is a pair that says one thing twice: “Why do the nations rage and the peoples plot in vain?” (2:1). ‘Nations’ answers ‘peoples’. ‘Rage’ answers ‘plot’. The second half deepens the first. They are not just angry; their plans are empty.\n\nHere is a pair that sets two things against each other: “For the LORD guards the path of the righteous, but the way of the wicked will perish” (1:6). The whole of Psalm 1 is built on that contrast.\n\nSometimes the lines climb, step by step. Psalm 1 opens with three: the one who “does not walk in the counsel of the wicked, or set foot on the path of sinners, or sit in the seat of mockers” (1:1). Walking, standing, sitting: each line goes a little further in.\n\nThe English scholar Robert Lowth first described this pattern carefully in lectures given at Oxford and published in 1753. He sorted the pairs into kinds. Later scholars have found his kinds too neat, since the second line nearly always adds something. But his main point has lasted: in Hebrew poetry, meaning moves between the lines.\n\nThis matters for reading. When a line seems to repeat itself, slow down. Ask what the second half adds.\n\nSome psalms also follow the Hebrew alphabet. In an acrostic, each verse or set of verses begins with the next of the 22 Hebrew letters. Psalms 9 and 10 (together), 25, 34, 37, 111, 112, 119 and 145 are built this way, some with a letter missing or out of place. Psalm 119, the longest psalm, gives eight verses to each letter. The pattern is lost in English, but it may have helped people learn a psalm by heart, and it says something too: here is praise from A to Z."
+      },
+      {
+        "id": "selah",
+        "h": "‘Selah’ and the words for music",
+        "body": "The word Selah stands at the end of a line 71 times in the Psalms, and three more times in the prayer in Habakkuk 3. Many readers pause there. No one knows for certain what it means.\n\nSome think it marked a pause, or a break for music. Some think it told the singers to lift their voices, or the players to play louder. Some think it marked a place for the people to respond. Each guess has its defenders, and none can be proved.\n\nOther musical words are just as uncertain. Sheminith (Psalm 6) means ‘the eighth’ in Hebrew, but whether that is an eight-stringed instrument, a lower range of voice, or something else is not known. Gittith (Psalm 8) and Higgaion (9:16) are just as uncertain.\n\nIt is honest to say: these words show that the psalms were sung, with instruments and leaders and tunes, but much of how they were sung is lost. The words are what remain."
+      },
+      {
+        "id": "kinds-of-psalm",
+        "h": "Kinds of psalm",
+        "body": "The psalms are not all the same kind of prayer. Learning the kinds helps you know what a psalm is doing.\n\nThe German scholar Hermann Gunkel did the most to sort them. His great study, Introduction to the Psalms (Einleitung in die Psalmen), was finished after his death in 1932 by his student Joachim Begrich and published in 1933. Gunkel grouped psalms by their shape and by the setting in life where they were used. Scholars still use his main groups, though many have changed the details.\n\nLaments are the largest group. A lament brings trouble straight to God. About a third of the psalms take this form. Most move through the same steps: they call on God, describe the trouble, ask him to act, and then often turn toward trust. Psalm 13 begins “How long, O LORD?” and ends “But I have trusted in Your loving devotion” (13:5). Some laments are one person's prayer (Psalm 6). Some are the whole people's (Psalm 44). One, Psalm 88, never turns. It ends, “darkness is my closest companion” (88:18). God kept it in the book anyway.\n\nSongs of praise, or hymns, praise God for who he is and what he has made (Psalms 8, 100, 104). Songs of thanksgiving tell how God rescued someone, so that others can praise him too (Psalms 30, 34, 116).\n\nRoyal psalms are about the king of Israel: his crowning, his wedding, his battles, God's promise to his family (Psalms 2, 18, 20, 21, 45, 72, 89, 101, 110, 132, 144).\n\nWisdom psalms teach, like the book of Proverbs. They set out two ways to live and wrestle with why the wicked often do well (Psalms 1, 37, 49, 73, 112). Psalms of trust rest in God's care (Psalms 23, 27, 91, 131).\n\nPsalms 120 to 134 each carry the heading “A song of ascents.” Many think these were sung by pilgrims going up to Jerusalem for the great feasts, since Jerusalem sits high in the hills. That is a likely reading, not a certain one.\n\nMany psalms mix the kinds. A lament can turn into praise in the middle. The groups are tools for reading, not boxes."
+      },
+      {
+        "id": "the-temple",
+        "h": "The Psalms and the temple",
+        "body": "Many psalms belong to worship at the temple in Jerusalem, the house of God that Solomon built. The temple stood on Zion, the hill of Jerusalem where God had chosen to put his name. So the psalms speak of going up to God's house, of his holy mountain, of his courts and altar.\n\nThe books of Chronicles describe David setting Levites, the tribe set apart for temple service, to sing and play before the ark. “On that day David first committed to Asaph and his brothers this song of thanksgiving to the LORD” (1 Chronicles 16:7). The song that follows is made up of lines found in Psalms 105, 96 and 106.\n\nSome psalms seem written for feasts and great days. Psalms 113 to 118, called the Hallel (from ‘hallelu’, praise), were sung at the great festivals, and probably at Passover in Jesus' day. When the Gospels say that Jesus and his friends sang a hymn after the Last Supper (Mark 14:26), many think they sang these psalms.\n\nBut the psalms were never only for the temple. Many are the prayers of one person, sick or afraid or ashamed, alone at night. And when the temple fell in 587 or 586 BC, the psalms went with the people into exile. They became the prayers of a scattered people, in Babylon and later in synagogues everywhere. To this day, Jewish morning prayer includes Psalm 145 and Psalms 146 to 150 every day, and the Hallel on the festivals."
+      },
+      {
+        "id": "scrolls-and-greek",
+        "h": "The Psalms in the Dead Sea Scrolls and in Greek",
+        "body": "From 1947 onward, scrolls and scraps of scrolls were found in caves near Qumran, by the Dead Sea. They were copied in the last centuries before Jesus and in his own century. They are the oldest copies of most of the Old Testament we have.\n\nThe Psalms are the best represented book among them. Scholars count them differently, since many are only fragments, but the numbers given run from about 36 to about 40 manuscripts that hold psalms. That is more than for any other book. The people who kept these scrolls clearly prayed the Psalms a great deal.\n\nThe largest is the Great Psalms Scroll from Cave 11. From about Psalm 90 onward it puts the psalms in a different order from our Bibles, and it mixes in other poems not in the Hebrew Psalter. Scholars debate what this means. Some think it shows the last part of the book was not yet fixed for everyone. Others think it was a special collection made for prayer, with the familiar book already settled. Both views are held by careful scholars.\n\nOne of the extra poems is a Hebrew form of what is called Psalm 151. That psalm is best known from the Greek Old Testament, the Septuagint, where it comes after Psalm 150 with a heading saying it is ‘outside the number’. It speaks of young David and his fight with Goliath. The Eastern Orthodox churches count it as Scripture. Roman Catholics, Protestants and most Jews do not. It is not in the Bible used on this site."
+      },
+      {
+        "id": "numbering",
+        "h": "Why the numbers differ",
+        "body": "If you use an older Catholic Bible, or an Orthodox one, you may find that the psalm numbers do not match. The psalm most people call ‘the Twenty-third Psalm’ may be numbered 22. Here is why.\n\nThe Greek translation, the Septuagint, divided a few psalms differently from the Hebrew. It joined Psalms 9 and 10 into one psalm. It joined 114 and 115. It split 116 into two, and split 147 into two. The Latin Bible of the Western church, the Vulgate, followed the Greek.\n\nThe result is simple to remember. For most of the book, from Psalm 10 to Psalm 147, the Greek and Latin number is one lower than the Hebrew. So the shepherd psalm, 23 in the Hebrew and in most English Bibles, is 22 in the Greek and Latin. The psalm Jesus quoted on the cross, 22 in the Hebrew, is 21. At the start and the end the two systems agree again.\n\nOlder Catholic Bibles, such as the Douay version, followed the Latin numbers. Most Catholic translations today follow the Hebrew numbers, though some prayer books still use the older ones. Orthodox churches use the Greek numbers. Jewish and Protestant Bibles use the Hebrew numbers, and so does this site.\n\nPsalms 9 and 10 are a good place to see the difference with your own eyes. Together they make one broken alphabet poem, and Psalm 10 has no heading of its own. The Greek treats them as one psalm. The note on Psalms 9 and 10 explains more."
+      },
+      {
+        "id": "cursing-psalms",
+        "h": "The cursing psalms",
+        "body": "Some psalms ask God to do terrible things to enemies. The hardest line in the book ends a psalm of grief over the fall of Jerusalem: “Blessed is he who seizes your infants and dashes them against the rocks” (137:9). Psalm 109 prays, “May his children be fatherless and his wife a widow” (109:9). Psalm 69 asks that enemies “be blotted out of the Book of Life” (69:28). These are often called the imprecatory psalms, from an old word for calling down a curse.\n\nThese lines shock readers, and they should. Jesus said, “love your enemies and pray for those who persecute you” (Matthew 5:44). How can a Christian read Psalm 137:9? Christians have answered in several ways. Each is held by thoughtful believers, and these notes do not choose between them.\n\nHonest prayer that hands vengeance to God. On this reading, the psalmist does not take revenge. He tells God the truth about his rage and leaves the judging to God. Paul writes, “Do not avenge yourselves, beloved, but leave room for God's wrath” (Romans 12:19). Saying the worst to God, rather than doing it, is a step away from violence.\n\nThe voice of the oppressed. These are the prayers of people who had seen their city burned and their children killed. Psalm 137 was prayed by exiles in Babylon. Those who have never suffered like that should be slow to judge the words of those who have. The lines show what injustice does to a human heart, and they cry out for justice from the only one who can give it. The souls under the altar in Revelation also cry, “How long, O Lord, holy and true, until You avenge our blood” (Revelation 6:10).\n\nFulfilled or changed at the cross. Some Christians, Dietrich Bonhoeffer among them in his short book on the Psalms (1940), read these prayers in the light of Christ. On this reading, the one who prays them asks for God's justice, not his own revenge, and leaves judgment to God. At the cross God's judgment on evil and his forgiveness meet, and Jesus prayed for those who killed him: “Father, forgive them, for they do not know what they are doing” (Luke 23:34).\n\nNot for Christian lips. Others have said plainly that some of these lines are wrong in their spirit. On this view, Scripture records them honestly, as it records many human sins, and the reader learns from them without praying them as his own. C. S. Lewis, in Reflections on the Psalms (1958), called the spirit of some of these lines devilish. Yet he also asked readers to think of what had been done to the people who wrote them.\n\nOne thing is not open. No reading of these psalms has ever made it right to harm anyone, least of all a child. They are prayers spoken to God, not commands to people. Anyone who uses them to justify hurting another person has turned the Psalms against their own God, who says, “Vengeance is Mine; I will repay” (Romans 12:19)."
+      },
+      {
+        "id": "sheol",
+        "h": "Sheol, and what the psalmists knew of life after death",
+        "body": "Sheol is the Hebrew name for the place of the dead. It appears 16 times in the Psalms. It is pictured as deep below the earth, dark and silent. In Sheol, the psalms say, no one praises God. “For there is no mention of You in death; who can praise You from Sheol?” (6:5). “It is not the dead who praise the LORD, nor any who descend into silence” (115:17). Psalm 88 asks, “Can Your loving devotion be proclaimed in the grave?” (88:11).\n\nThese lines are honest about death. Many psalmists do not seem to know of a happy life with God after death. Their hope is to be rescued from dying now, so that they can go on praising God among the living. That is why a sick man in Psalm 6 begs not to die.\n\nBut here and there a brighter line appears. “For You will not abandon my soul to Sheol, nor will You let Your Holy One see decay” (16:10). “But God will redeem my life from Sheol, for He will surely take me to Himself” (49:15). “You guide me with Your counsel, and later receive me in glory” (73:24).\n\nReaders weigh these lines differently. Some think they mean only rescue from an early death. Others think they are the first light of a hope that grows brighter later in the Bible. Daniel speaks plainly of the dead rising: “many who sleep in the dust of the earth will awake” (Daniel 12:2). The New Testament reads Psalm 16:10 as a promise kept when Jesus rose from the dead (Acts 2:27). Many readers hold both: the psalmist hoped more than he could fully see.\n\nA Christian reading Psalm 6 or Psalm 88 today should not rush past the darkness. The psalmists faced death without the full light of Easter. Their honesty is part of what makes their prayers true."
+      },
+      {
+        "id": "innocence",
+        "h": "When a psalmist says he is innocent",
+        "body": "Some psalms sound proud to modern ears. “Vindicate me, O LORD! For I have walked with integrity” (26:1). “The LORD has rewarded me according to my righteousness” (18:20). Psalm 7 says, “O LORD my God, if I have done this, if injustice is on my hands”, then let my enemy catch me (7:3-5).\n\nIs the psalmist claiming never to have sinned? Usually not. Most of these prayers come from someone falsely accused. He is saying, ‘I did not do what they say I did.’ That is innocence of a charge, not a claim to be without sin. The same book has deep prayers of confession. Psalm 51 begins, “Have mercy on me, O God.” Psalm 130 asks, “If You, O LORD, kept track of iniquities, then who, O Lord, could stand?” (130:3).\n\nSome readers add a second answer. ‘Righteous’ in the Psalms often means loyal to God and his covenant, the bond God made with his people, rather than perfect. A righteous person is one who turns to God, trusts him and seeks his ways, and who confesses when he fails.\n\nChristians also read these prayers as prayers that one person, Jesus, could pray in full truth. Others can pray them as people forgiven and made right with God through him. Either way, these psalms give a voice to everyone who has been accused of what they did not do."
+      },
+      {
+        "id": "forsaken",
+        "h": "‘Why have You forsaken me?’",
+        "body": "Psalm 22 begins, “My God, my God, why have You forsaken me?” It is one of the darkest cries in the Bible. A man feels that God has left him. He is mocked and surrounded. His strength is poured out like water.\n\nJesus spoke these words as he died on the cross. Matthew and Mark both record it in Aramaic, the language Jesus spoke, and then translate it: “My God, My God, why have You forsaken Me?” (Mark 15:34). The Gospels also show other lines of Psalm 22 coming true around him: the mocking, the casting of lots for his clothes (Psalm 22:18; John 19:24).\n\nChristians have read Jesus' cry in more than one way, often holding them together. Some stress that he prayed the whole psalm in quoting its first line, and the psalm ends in trust and praise: “All the ends of the earth will remember and turn to the LORD” (22:27). Others stress that the cry was real. Jesus truly felt the weight of being cut off, because he was bearing the sin of others (2 Corinthians 5:21). Others see him taking the cry of every forsaken person into his own mouth. These readings are not enemies.\n\nFor a reader, this means something plain. If Jesus prayed a lament, then lament is not a lack of faith. The Son of God used the Psalms' words for the moment when God seemed gone."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament uses the Psalms",
+        "body": "The New Testament quotes and echoes the Psalms more than almost any other Old Testament book. Only Isaiah comes close, and which of the two is used more depends on how the echoes are counted.\n\nA few psalms are used again and again.\n\nPsalm 2 is the crowning of God's king. The voice from heaven at Jesus' baptism echoes it: “You are My beloved Son” (Mark 1:11). Paul quotes it of Jesus' rising from the dead: “You are My Son; today I have become Your Father” (Acts 13:33). The church in Acts prayed its opening lines (Acts 4:25-26). Hebrews quotes it in its first chapter (Hebrews 1:5).\n\nPsalm 110 is the most quoted of all. Its first verse is the Old Testament verse quoted or echoed most often in the New Testament: “The LORD said to my Lord: ‘Sit at My right hand until I make Your enemies a footstool for Your feet.’” Jesus asked how David could call his own descendant ‘Lord’ (Matthew 22:43-44). Peter, Paul and Hebrews all read it of Jesus raised and seated at God's right hand.\n\nPsalm 118 gave the crowds their shout when Jesus entered Jerusalem: ‘Hosanna’ and ‘Blessed is He who comes in the name of the LORD’. Its line “The stone the builders rejected has become the cornerstone” (118:22) is quoted by Jesus and by Peter (1 Peter 2:7).\n\nPsalm 22, as the part above shows, gave Jesus his words on the cross. Luke records a different last word, also from a psalm: “Father, into Your hands I commit My Spirit” (Luke 23:46), from Psalm 31:5.\n\nThe New Testament uses the Psalms in more than one way. Sometimes it reads a psalm as a direct promise about the Messiah. More often it sees a pattern: what a psalm said of David, or of a suffering righteous person, comes to its full meaning in Jesus. Jesus himself said that what was written about him in “the Psalms” must be fulfilled (Luke 24:44)."
+      },
+      {
+        "id": "royal-psalms",
+        "h": "The king's psalms: how Jews and Christians read them",
+        "body": "Some psalms speak of ‘the LORD's anointed’, his chosen king. In Hebrew ‘anointed one’ is mashiach, the word that comes into English as ‘Messiah’. In Greek it is christos, ‘Christ’. A king of Israel was anointed with oil to show that God had chosen him. So when Psalm 2 speaks of “against the LORD and against His Anointed One” (2:2), it is speaking first of the king on David's throne.\n\nMany scholars think psalms like 2, 72 and 110 were first used when a new king was crowned in Jerusalem. On that reading, the king was called God's ‘son’ because God had adopted him to rule on his behalf, as God promised David (2 Samuel 7:14).\n\nJews and Christians both read these psalms as pointing beyond any one king. But they read them differently, and each reading deserves respect.\n\nJewish readers have long read them in two ways. The Talmud, the great body of early rabbinic teaching, reads Psalm 2 as speaking of the King Messiah to come. The medieval Jewish teacher Rashi reported that the rabbis read it that way, but said its plain sense is about David himself. He added that reading it of David helps answer Christian claims. For many Jewish readers, the Messiah is a human king still to come, who will bring peace to the world. Since the world is not yet at peace, they do not believe he has come.\n\nChristians read these psalms as fulfilled in Jesus. They hold that he is the Son of David and more than a son of David, the one God raised from the dead and set at his right hand. They read ‘You are My Son’ as true of Jesus in a fuller way than of any king before him.\n\nBoth communities read the same words with care and with love for them. Neither reading is dishonest. They part over who Jesus is, and that is a real difference that should be named plainly and discussed with respect. No reading of these psalms gives any modern nation or ruler the place of God's anointed king."
+      },
+      {
+        "id": "how-to-pray",
+        "h": "How to read and pray a psalm",
+        "body": "The Psalms were written to be prayed. Here are some simple ways to begin.\n\nRead it slowly, and read it aloud. These are poems. Their sound and their pace matter. A psalm read fast is like a song read off the page with no tune.\n\nRead the whole psalm, not only the best-known verse. Many famous lines sit inside hard prayers. “The LORD is my shepherd” is followed by “the valley of the shadow of death” (23:4). Follow the psalm all the way through, and watch where it turns.\n\nLet the psalm give you words. You may not feel what the psalm says. That is all right. The Psalms teach people to pray by giving them words before they have their own, the way a child learns to speak by repeating. Some days a psalm will say what you feel. Other days it will say what someone else feels, and you can pray it for them.\n\nBring the hard psalms too. If you are angry, or grieving, or afraid, there is a psalm for that. Lament is not unbelief. You do not argue with a God you have given up on.\n\nYou are joining a very old habit. Jews have prayed the Psalms daily for many centuries; Psalm 145 and Psalms 146 to 150 are part of Jewish morning prayer every day. Christians took the Psalms into their prayer from the start. In the Rule of Saint Benedict, written for monks, the whole book of 150 psalms is prayed every week. Augustine of Hippo, around AD 400, wrote a long work on the Psalms and taught that in them Christ prays with his people and for them. In 1940 Dietrich Bonhoeffer called the Psalms the prayer book of the Bible.\n\nStart small. One psalm a day, read slowly. Or read the 150 psalms in a month, five a day. Or choose one psalm and pray it every morning for a week. The book will teach you as you go."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 2,
+        "v": 12,
+        "ref": "2:12",
+        "line": "‘Kiss the Son’: the Hebrew is hard to read, and Bibles render it in different ways. What the choices are, and why."
+      },
+      {
+        "ch": 6,
+        "v": 5,
+        "ref": "6:5",
+        "line": "‘Who can praise You from Sheol?’ What the psalmists knew, and did not yet know, of life after death."
+      },
+      {
+        "ch": 7,
+        "v": 8,
+        "ref": "7:8",
+        "line": "‘According to my righteousness’: is the psalmist claiming to be sinless? Innocence of a false charge, not perfection."
+      },
+      {
+        "ch": 8,
+        "v": 5,
+        "ref": "8:5",
+        "line": "‘A little lower than the angels’, or ‘than God’? The Hebrew word, the Greek, and how Hebrews reads it."
+      },
+      {
+        "ch": 10,
+        "v": 4,
+        "ref": "10:4",
+        "line": "‘There is no God’ in the wicked man's schemes: practical godlessness, not a philosopher's doubt."
+      },
+      {
+        "ch": 22,
+        "v": 1,
+        "ref": "22:1",
+        "line": "‘My God, my God, why have You forsaken me?’ The psalm Jesus prayed on the cross, and the ways it is read."
+      },
+      {
+        "ch": 44,
+        "v": 22,
+        "ref": "44:22",
+        "line": "A whole people says it kept faith and suffered anyway. Paul quotes this verse in Romans 8:36."
+      },
+      {
+        "ch": 51,
+        "v": 5,
+        "ref": "51:5",
+        "line": "‘Brought forth in iniquity’: what this says about sin from birth, and what it does not say about a mother."
+      },
+      {
+        "ch": 58,
+        "v": 10,
+        "ref": "58:10",
+        "line": "‘Wash their feet in the blood of the wicked’: one of the cursing psalms, and how Christians read it."
+      },
+      {
+        "ch": 82,
+        "v": 6,
+        "ref": "82:6",
+        "line": "‘You are gods’: who is being spoken to, and why Jesus quotes the line in John 10:34."
+      },
+      {
+        "ch": 88,
+        "v": 18,
+        "ref": "88:18",
+        "line": "The one lament that never turns, ending ‘darkness is my closest companion’. Why God kept it."
+      },
+      {
+        "ch": 109,
+        "v": 9,
+        "ref": "109:9",
+        "line": "‘May his children be fatherless’: one of the cursing psalms. Acts 1:20 applies the verse before it to Judas."
+      },
+      {
+        "ch": 110,
+        "v": 1,
+        "ref": "110:1",
+        "line": "‘The LORD said to my Lord’: the verse the New Testament uses most, and how Jews and Christians read it."
+      },
+      {
+        "ch": 137,
+        "v": 9,
+        "ref": "137:9",
+        "line": "The hardest line in the Psalms. The main Christian readings, side by side, and why none of them permits harm."
+      }
+    ],
+    "words": [
+      {
+        "word": "Loving devotion (hesed)",
+        "line": "Hebrew hesed. God's loyal, faithful love, kept because he bound himself by promise. The Berean Standard Bible often says ‘loving devotion’. It appears 127 times in the Psalms."
+      },
+      {
+        "word": "The LORD",
+        "line": "Small capitals stand for God's personal name in Hebrew, often written Yahweh (Exodus 3:14-15). ‘Lord’ in ordinary letters is a different word, meaning ‘master’."
+      },
+      {
+        "word": "Law (torah)",
+        "line": "Hebrew torah. More than rules: God's teaching or instruction. Psalm 1 calls it a delight, and Psalm 119 praises it from A to Z."
+      },
+      {
+        "word": "Sheol",
+        "line": "The Hebrew name for the place of the dead, pictured as dark and silent, below the earth. In the New Testament's Greek it becomes Hades (Acts 2:27)."
+      },
+      {
+        "word": "Zion",
+        "line": "The hill of Jerusalem where the temple stood, and so a name for Jerusalem and for God's dwelling among his people. It appears 38 times in the Psalms."
+      },
+      {
+        "word": "Selah",
+        "line": "A word at the end of a line, 71 times in the Psalms. Probably a direction for singing or music. Its exact meaning is not known."
+      },
+      {
+        "word": "Anointed one",
+        "line": "Hebrew mashiach, from which ‘Messiah’ comes; Greek christos, ‘Christ’. First the king anointed with oil (Psalm 2:2); for Christians, Jesus."
+      },
+      {
+        "word": "The righteous",
+        "line": "Hebrew tsaddiq. Not people who never sin, but those who belong to God, trust him and seek his ways. Their opposite is ‘the wicked’."
+      },
+      {
+        "word": "Refuge",
+        "line": "A place to run to and hide, like a rock shelter in the hills. ‘Take refuge in’ God means to trust him for safety (2:12; 7:1)."
+      },
+      {
+        "word": "Wait",
+        "line": "Hebrew qavah. Not idle waiting, but looking to God in hope, like a watchman waiting for the morning (130:5-6)."
+      },
+      {
+        "word": "Blessed (ashre)",
+        "line": "Hebrew ashre, the first word of the book. Not a passing mood but a whole life that is going well under God: ‘how happy’, ‘how rich in good’."
+      },
+      {
+        "word": "Soul (nephesh)",
+        "line": "Hebrew nephesh. Not a ghostly part of a person but the whole living self: life, breath, desire. ‘My soul’ often simply means ‘I’."
+      },
+      {
+        "word": "Hallelujah",
+        "line": "Two Hebrew words: hallelu, ‘praise’, and Yah, a short form of God's name. ‘Praise the LORD.’ It frames each of the last five psalms."
+      },
+      {
+        "word": "Lament",
+        "line": "A prayer that brings grief, complaint or protest straight to God. About a third of the psalms are laments. It is complaint that stays addressed to God."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "Around 1000 BC",
+        "what": "David reigns in Jerusalem, by the usual dating. Seventy-three psalms are linked with him by their headings; what ‘of David’ means is debated.",
+        "kind": "book"
+      },
+      {
+        "when": "Tenth century BC",
+        "what": "Solomon builds the temple on Zion (1 Kings 6), by the usual dating. Many psalms belong to its worship and its singers.",
+        "kind": "story"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "Babylon destroys Jerusalem and the temple and carries many into exile. Psalm 137 remembers weeping ‘by the rivers of Babylon’.",
+        "kind": "world"
+      },
+      {
+        "when": "539 BC",
+        "what": "Persia takes Babylon, and exiles may return home (Ezra 1). Psalm 126 sings of the LORD restoring Zion's captives.",
+        "kind": "world"
+      },
+      {
+        "when": "After the exile",
+        "what": "The five books are gathered into their present shape, most think in the centuries after the return. The exact date is not known.",
+        "kind": "book"
+      },
+      {
+        "when": "Before the time of Jesus",
+        "what": "The Psalms are put into Greek in the Septuagint, with a slightly different numbering and an extra Psalm 151 ‘outside the number’.",
+        "kind": "book"
+      },
+      {
+        "when": "Last centuries BC to first century AD",
+        "what": "Copies at Qumran by the Dead Sea: more manuscripts hold psalms than any other book. The Great Psalms Scroll orders the later psalms differently.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 30",
+        "what": "On the cross Jesus prays the first line of Psalm 22 (Mark 15:34); Luke records Psalm 31:5 as his last word (Luke 23:46).",
+        "kind": "story"
+      },
+      {
+        "when": "About AD 400",
+        "what": "Augustine of Hippo writes his long work on the Psalms, reading them as the prayer of Christ with his church.",
+        "kind": "world"
+      },
+      {
+        "when": "1753",
+        "what": "Robert Lowth publishes his Oxford lectures on Hebrew poetry, describing the paired lines called parallelism.",
+        "kind": "world"
+      },
+      {
+        "when": "1933",
+        "what": "Hermann Gunkel's Introduction to the Psalms, finished by Joachim Begrich after Gunkel's death, sorts the psalms into kinds.",
+        "kind": "world"
+      },
+      {
+        "when": "1940",
+        "what": "Dietrich Bonhoeffer publishes a short book on the Psalms as the prayer book of the Bible.",
+        "kind": "world"
+      },
+      {
+        "when": "1958",
+        "what": "C. S. Lewis publishes Reflections on the Psalms, facing the cursing psalms honestly.",
+        "kind": "world"
+      }
+    ],
+    "map": [
+      {
+        "id": "zion",
+        "name": "Jerusalem (Zion)",
+        "lat": 31.778,
+        "lon": 35.235,
+        "refs": [
+          "2:6",
+          "48:2",
+          "137:1"
+        ],
+        "line": "The city on its hill, where the temple stood. ‘I have installed My King on Zion’ (2:6). The exiles in Babylon wept when they remembered it (137:1).",
+        "label": {
+          "dx": -10,
+          "dy": 4,
+          "anchor": "end"
+        }
+      },
+      {
+        "id": "jordan",
+        "name": "The Jordan",
+        "lat": 31.84,
+        "lon": 35.55,
+        "refs": [
+          "42:6",
+          "114:3"
+        ],
+        "line": "The river of the land. A homesick singer remembers God ‘from the land of Jordan’ (42:6); at the exodus ‘the Jordan turned back’ (114:3).",
+        "label": {
+          "dx": 10,
+          "dy": 4,
+          "anchor": "start"
+        }
+      },
+      {
+        "id": "shechem",
+        "name": "Shechem",
+        "lat": 32.213,
+        "lon": 35.282,
+        "refs": [
+          "60:6",
+          "108:7"
+        ],
+        "line": "An old city in the hill country. In Psalm 60 God claims his land town by town, beginning with Shechem.",
+        "label": {
+          "dx": -10,
+          "dy": 4,
+          "anchor": "end"
+        }
+      },
+      {
+        "id": "gilead",
+        "name": "Gilead",
+        "lat": 32.4,
+        "lon": 35.82,
+        "refs": [
+          "60:7",
+          "108:8"
+        ],
+        "line": "The hill country east of the Jordan, placed roughly. ‘Gilead is Mine’, God says (60:7).",
+        "region": true
+      },
+      {
+        "id": "tyre",
+        "name": "Tyre",
+        "lat": 33.27,
+        "lon": 35.2,
+        "refs": [
+          "45:12",
+          "87:4"
+        ],
+        "line": "A rich port city to the north. In Psalm 87 even Tyre is counted among those born in Zion."
+      }
+    ],
+    "mapNote": "The psalms name few places, and were prayed far from all of them. Babylon, where the exiles of Psalm 137 wept, lies far to the east of this map, and Egypt, which Psalm 114 remembers leaving, lies to the south-west.",
+    "deeper": [
+      {
+        "href": "/studyguides/lament",
+        "name": "Lament: A Bible Study on Praying Your Pain",
+        "line": "Five sessions on the lament psalms, Psalm 13 and Psalm 88, Job and the cross",
+        "icon": "book"
+      },
+      {
+        "href": "/answers/is-it-okay-to-be-angry-at-god",
+        "name": "Is it okay to be angry at God?",
+        "line": "The Honest Answer, drawn from the laments of the Psalms",
+        "icon": "book"
+      },
+      {
+        "href": "/answers/if-god-is-good-why-suffering",
+        "name": "If God is good, why is there so much suffering?",
+        "line": "The Honest Answer behind the Psalms' hardest questions",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/psalm-91-in-context",
+        "name": "Does Psalm 91 Promise Protection From Harm?",
+        "line": "One psalm read in its own setting, with care",
+        "icon": "scroll"
+      },
+      {
+        "href": "/resources/context/messianic-expectation",
+        "name": "What Kind of Messiah Was Israel Waiting For?",
+        "line": "The hopes behind the royal psalms",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/world/old-testament-world",
+        "name": "The Old Testament's world",
+        "line": "The land, the kings, the temple and the gods around Israel",
+        "icon": "world"
+      }
+    ]
+  }
 }

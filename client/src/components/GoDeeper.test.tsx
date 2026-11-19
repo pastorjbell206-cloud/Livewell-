@@ -34,7 +34,7 @@ describe("Go deeper", () => {
   it("lists John 3's pages by kind, from John 3's file alone", async () => {
     render(<GoDeeper slug="john" chapter={3} label="John 3" />);
     expect(await screen.findByRole("heading", { name: "Go deeper" })).toBeTruthy();
-    expect(requested).toEqual(["/index/chapters/john/3.json"]);
+    expect(requested.filter((u) => u.startsWith("/index/chapters/"))).toEqual(["/index/chapters/john/3.json"]);
     const doctrine = screen.getByRole("region", { name: "What Christians believe" });
     expect(within(doctrine).getByRole("link", { name: /New Birth/ }).getAttribute("href")).toBe("/study/bible/doctrines/regeneration");
     expect(screen.getByRole("region", { name: "The family catechism" })).toBeTruthy();
@@ -52,10 +52,21 @@ describe("Go deeper", () => {
     expect(within(doctrine).getByRole("button", { name: /Show fewer/ }).getAttribute("aria-expanded")).toBe("true");
   });
 
-  it("draws nothing for a chapter with nothing (Genesis 36)", async () => {
+  it("draws nothing for a chapter with nothing (Genesis 36), and asks for no file it lacks", async () => {
     const { container } = render(<GoDeeper slug="genesis" chapter={36} label="Genesis 36" />);
-    await waitFor(() => expect(requested).toContain("/index/chapters/genesis/36.json"));
     await waitFor(() => expect(container.innerHTML).toBe(""));
     expect(screen.queryByText("Go deeper")).toBeNull();
+    expect(requested).not.toContain("/index/chapters/genesis/36.json");
+  });
+
+  it("asks for no file for Matthew 8, 14 or 17, which the list leaves out (no 404 in the console)", async () => {
+    const list: Record<string, number[]> = JSON.parse(fs.readFileSync(path.join(PUBLIC, "index/chapters.json"), "utf8"));
+    for (const n of [8, 14, 17]) {
+      expect(list.matthew).not.toContain(n);
+      const { container, unmount } = render(<GoDeeper slug="matthew" chapter={n} label={`Matthew ${n}`} />);
+      await waitFor(() => expect(container.innerHTML).toBe(""));
+      unmount();
+    }
+    expect(requested.filter((u) => u.startsWith("/index/chapters/matthew/"))).toEqual([]);
   });
 });

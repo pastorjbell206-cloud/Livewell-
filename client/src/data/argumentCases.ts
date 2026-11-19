@@ -583,7 +583,7 @@ const WISHFUL: ArgumentCase = {
         {
           label: "But the emotional need is obvious, so the belief is suspect.",
           response:
-            "Then apply the tool evenly, because it cuts both ways. The wish that there be no God, no final accounting, no gaze you cannot escape, is also a wish, and it can manufacture unbelief as easily as need manufactures belief. The philosopher Thomas Nagel, no friend of religion, admitted it plainly: I do not want there to be a God. I do not want the universe to be like that. The wanting is on both sides of the table. It settles nothing on either.",
+            "Then apply the tool evenly, because it cuts both ways. The wish that there be no God, no final accounting, no gaze you cannot escape, is also a wish, and it can manufacture unbelief as easily as need manufactures belief. The philosopher Thomas Nagel, no friend of religion, admitted it plainly in The Last Word (1997): \"I don't want there to be a God; I don't want the universe to be like that.\" The wanting is on both sides of the table. It settles nothing on either.",
         },
       ],
       grants: "This step shows the projection charge, applied honestly, disqualifies the atheist's motive as much as the believer's. It proves neither view true.",
