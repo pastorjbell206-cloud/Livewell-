@@ -4316,3 +4316,27 @@ chapter, with the deep note and the verse notes.
 Cut: Tell Balata, Labayu and Shechem's temple (deep note; not needed);
 Tell Deir Alla and the Balaam inscription; the Mari ‘killing a donkey’
 idiom and Hamor; Shalem read as a place name.
+
+## The plain notes on Genesis 34 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/34.json`. Two web searches for this
+chapter, with the deep note, the verse notes and the Genesis 19 plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Dinah the only daughter whose birth is told (30:21); Simeon and Levi her full brothers; ‘went out’ carries no blame | 1-4 | Verse notes 1; BSB | Repository |
+| ‘Lay with her by force’ (BSB); a few scholars question whether the Hebrew means rape in the modern sense: Lyn Bechtel, ‘What If Dinah Is Not Raped?’ (JSOT, 1994); most readers read rape | 1-4 | Deep note (`words` H6031B); verse notes 2 | Search: "Genesis 34 Dinah scholars argue not rape anah Bechtel" (lectio.unibe.ch Scholz and Clark; thetorah.com; Wikipedia "Rape in the Hebrew Bible"). One sentence, as a view |
+| ‘Defiled’ three times (5, 13, 27); ‘an outrage in Israel’ a phrase for grave sexual crimes | 1-12 | Verse notes 5, 6-7; deep note (`literary`) | Repository |
+| Dinah held in Shechem's house during the bargaining (26); mohar a bride-price paid to the bride's family | 5-12 | Verse notes 11-12, 25-26 | Repository |
+| 2 Samuel 13:12, 21-22, 29; Deuteronomy 22:26; Proverbs 31:8 | 1-12 | BSB | Repository |
+| ‘Deceitfully’ the word of 27:35; circumcision weakens grown men for days; the gate speech adds the motive of gain (23) | 13-24 | Deep note (`cultural`); verse notes 13-14, 20-23 | Repository |
+| Jeremiah 9:25; Romans 2:29 | 13-24 | BSB | Repository |
+| God not mentioned in the chapter; vengeance multiplies victims | 25-29 | Deep note (`story`, `doctrines`) | Repository |
+| Judith 9:2: Judith prays to the God of her ancestor Simeon and praises his sword; Judith about the second century BC; received by Catholics and Orthodox, Apocrypha for Protestants | 25-29 | Judith 9:2; deep note (`hard`) | Search: "Judith 9:2 Simeon sword Shechem" (usccb.org Judith 9; tips.translation.bible; intertextual.bible). Paraphrased |
+| Genesis 49:5, 7; Deuteronomy 24:16; Romans 12:19; Genesis 35:5; Psalm 10:14; 34:18 | 25-31 | BSB | Repository |
+| Jacob's ‘me, I, my’; the question left hanging; verdict in 49:5-7 | 30-31 | Verse notes 30, 31 | Repository |
+| Care line: Genesis 19 form ("This story does not call it right, and neither does the rest of the Bible. What was done to you was wrong, and it was not your fault." ... "The Find Help page on this site lists places to turn.") | 30-31 | Site | Repository (grep -F) |
+
+Cut: Deuteronomy 22:28-29 (left out, so that nothing reads as a case for a
+victim marrying an attacker); Josephus's festival detail; Jubilees on Levi
+(not searched); the Septuagint's Horite.
