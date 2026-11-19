@@ -5614,3 +5614,7 @@ Left out: Smith's own figures; the exact sites of Phoenix, Cauda and the bay; Va
 | Closing note: the prison letters (Philippi, Colossae, Philemon, "if they are his" Ephesians) and the church's continuing story; no summary of the book | 30-31 | BSB | Pastoral close |
 
 Left out: snakes on Malta today; the exact find-spots of the Publius inscriptions; the distances of the Forum of Appius and Three Taverns; Jerome's date (67 or 68) for Paul's death; beheading as the manner (said only in the portrait, not repeated here); the seven imprisonments of 1 Clement; Hobart's medical language; names of the scholars behind the ending views.
+
+## Acts complete (2026-11-19)
+
+Acts 1 to 28 in plain words: 165 passages, 95,163 words (fields `happening` to `asks`, counted over all 28 files). Rendered check over all 28 chapters: 165 passages, 716 fields matched.

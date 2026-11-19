@@ -4926,3 +4926,117 @@ date of the matrilineal rule (stated as argued).
 ### Next
 
 Acts 22 onward in plain words.
+
+## Continuation: Acts 22 to 28 (2026-11-19)
+
+### Acts 22 to 28 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Acts 22 | 6 (‘Brothers and fathers’: who Paul was; the light at noon, told a second time; Ananias: ‘Get up, be baptized’; in the temple: ‘I will send you far away’; the crowd turns at one word; ‘I was born a citizen’) | 3,447 |
+| Acts 23 | 7 (‘You whitewashed wall’; ‘I am a Pharisee’: the resurrection divides the council; ‘Take courage’; more than forty men swear to kill Paul; Paul's nephew exposes the plot; an escort, and Claudius Lysias's letter; by night to Antipatris and Caesarea) | 3,490 |
+| Acts 24 | 6 (Tertullus brings the charges; Paul's defence: ‘the Way’, and the hope of resurrection; alms for his people, and the missing accusers; Felix puts off the case; ‘Righteousness, self-control, and the coming judgment’; two years, and no answer) | 2,973 |
+| Acts 25 | 5 (a new governor, and an old plot; the hearing at Caesarea; ‘I appeal to Caesar’; Festus explains the case to King Agrippa; Paul brought before Agrippa and Bernice) | 2,574 |
+| Acts 26 | 7 (Paul speaks before King Agrippa; on trial for the hope of Israel; Paul the persecutor; ‘It is hard for you to kick against the goads’; ‘I was not disobedient to the heavenly vision’; Festus: ‘You are insane’, and Agrippa's reply; ‘This man could have been released’) | 3,007 |
+| Acts 27 | 7 (from Caesarea to Crete; Paul's warning is overruled; the Northeaster, and the loss of hope; ‘Take courage’: Paul's word from the angel; near land, and the sailors' escape stopped; Paul breaks bread in the storm; the wreck, and everyone brought safely to land) | 3,527 |
+| Acts 28 | 6 (Malta, a fire, and a viper; Publius's father, and the sick of the island; to Rome by the Appian Way; Paul meets the Jewish leaders of Rome; some convinced, some not, and Isaiah's words; two years, and the word unhindered) | 3,944 |
+| Total | 44 | 22,962 |
+
+**The whole book, now complete:** 28 chapters, 165 passages, 95,163 words
+(counted afresh over all 28 files, fields `happening` to `asks`; the earlier
+per-run tables, summed, come to slightly more because some passages were
+trimmed after they were counted).
+
+Every passage was printed field by field after its chapter: all 44 sit under
+their right headings. `validate-bible-notes` and `validate-no-emdash` passed
+after each chapter with no exceptions. Each chapter note gained only
+`"plain": true`. One commit per chapter, with its ledger rows.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Acts 22" to "28". 20 web
+searches: 1, 2, 5, 2, 2, 3, 5. Main sources: the Roman scourge (Bible
+encyclopedias); Ananias son of Nedebaeus in Josephus (Antiquities 20.205-207;
+Jewish War 2.441, paraphrased); Antipatris's distance; Tacitus on Felix
+(Annals 12.54; Histories 5.9, paraphrased); Josephus on Felix, Jonathan and
+Drusilla (Antiquities 20.141-143, 162-164, paraphrased); Festus's arrival
+(between about 58 and 60 for most; some earlier); 24:7 and 28:29 in the
+manuscripts; Agrippa II's temple powers; Bernice and the ancient rumours
+(Josephus, Juvenal), stated as rumours; Nero's early years; the goads
+proverb (Aeschylus, Euripides); the renderings of 26:28; James Smith, The
+Voyage and Shipwreck of St. Paul (1848); Euraquilo; Phoenix; the
+undergirding and the sea anchor; 276 and "about seventy-six"; barbaroi;
+Publius's title; why Acts ends (Asbury, Crossway); 1 Clement 5; Eusebius,
+Church History 2.22 and 2.25. Reused: the Roman-world portrait (citizenship,
+appeal, Vegetius and the sailing season, the Fast, Puteoli, the Appian Way,
+Castor and Pollux, "our sovereign one"), the Jewish-life portrait (Pharisees,
+Sadducees, the Sanhedrin, the barrier notices), the book page (dates, the
+Jewish people, the ending), the Acts 2, 9 and 13 notes, the Mark 16 note.
+
+### Cut or narrowed
+
+Cut: Gamaliel as Hillel's grandson; Jerome's Gischala; the Porcian law
+dates; the forum domicilii rule; Antipatris named for Antipater; the
+"spearmen" puzzle; Felix's Cypriot magician; the claim that releasing
+prisoners for money was common; Agrippa II as the last Herod; the number of
+commanders; Pindar's goads; Smith's own figures; Vaticanus at 27:37;
+Hobart's medical language; snakes on Malta today; Jerome's date for Paul's
+death; the seven imprisonments of 1 Clement. Narrowed: Ananias's years
+("about a dozen ... end date varies"); Tacitus on Pallas shielding Felix
+("suggests"); Antipatris "roughly forty miles"; Publius's inscriptions "are
+reported"; the 28:29 addition "many think"; "granted" as Paul's prayer
+"many readers think".
+
+### Contested matters, and how they are stated
+
+22:16 (sacramental and sign readings; the grammar; pointer to 2:37-41; no
+side). Using one's rights (22:25-30; 25:9-12; readings, no rule). Paul's
+reply to Ananias (did not recognise him; irony; accepted rebuke; "Luke does
+not settle it"). Tactic or sincerity at 23:6. Festus's date. 24:7 and 28:29.
+26:10 "cast my vote". 26:28 ("Scholars do not agree, and these notes do not
+choose"). The meal of 27:35. Promise and action at 27:31: "Those who stress
+God's sovereign rule, such as Reformed Christians, say that God ordains the
+means as well as the end ... Those who stress human freedom, such as
+Arminian and Wesleyan Christians, say that God's promises often come with
+conditions that real human choices can affect. These notes do not choose
+between them." Romans 11:26 (three readings; no side on its fulfilment).
+Luke's meaning at 28:28. Why Acts ends (three views, no side). Paul's
+release and second imprisonment; 2 Timothy's setting and authorship. "The
+Jews" in the 13:42-47 form with pointers at 22:22-24 (the crowd), 23:12,
+23:20, 23:27, 24:9, 24:18-19, 24:27, 25:2, 25:7-10, 25:24, 26:2, 26:7,
+26:21, 28:19.
+
+### Care lines included
+
+24:27 (those kept waiting by an unjust system, the Acts 12 form, with Find
+Help); 28:7-10 (those who prayed and were not healed, pointing to the Acts
+3:1-10 note and Find Help); 28:1-6 (no snake handling, no testing God, no
+refusing medical care). None in Acts 27: the text did not call for one.
+
+### What was run, and what passed (watched)
+
+After each chapter: `validate-bible-notes` (partial, acts) and
+`validate-no-emdash`: pass. At the end, all 36 content-gate commands of
+ci.yml, one at a time: exit 0 each (validate-bible-notes: 167 chapters in
+plain words; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: clean. `pnpm test`:
+146 files passed, 7 skipped; 1,679 tests passed, 73 skipped. `pnpm build`:
+exit 0. Served with `scripts/serve-like-vercel.mjs` on port 4600; a
+Playwright script (390 wide, deviceScaleFactor 1, /api/trpc, /api/track and
+/_vercel stubbed) matched every passage heading, its part headings in order
+and the first 60 characters under each to the data: Acts 22, 25 of 25
+fields; 23, 28; 24, 26; 25, 21; 26, 28; 27, 28; 28, 27. Then over all
+twenty-eight chapters of Acts: 165 of 165 passages, 716 of 716 fields, no
+sideways scroll, no console or page errors on any chapter. Screenshots
+looked at: `/home/user/elite-shots/bdoor/acts27-390-*` and `acts28-390-*`.
+Server stopped by PID, dist/ deleted, no lh-*.json. Sitemap, prerender and
+Lighthouse not run (no code changed).
+
+### Still unverified
+
+The exact words of every ancient writer (all paraphrased); the find-spot of
+the Publius inscriptions; which manuscripts read seventy-six at 27:37.
+
+### Next
+
+Acts is complete in plain words. The next book is for the lead to choose.
