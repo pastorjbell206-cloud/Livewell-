@@ -2294,3 +2294,186 @@ John 1 to 21: 21 chapters, 123 passages, 77,812 plain words. Mark: 16 chapters, 
 ### Next
 
 John is finished. Luke is the Gospel still without a plain layer.
+
+## Luke: book page and chapters 1 to 3 (2026-11-19)
+
+### The book page (`/study/bible/luke`, same address)
+
+Data only, in `client/public/bible/notes/luke/intro.json`, field `teaching`,
+built from the same parts and hooks as Mark, Matthew and John. Fourteen
+headed parts with a contents list: Luke in a minute; Who wrote it, and how we
+know; One work in two volumes, for Theophilus; The opening sentence: what
+kind of history; When it was written; Where Luke's material came from; How
+Luke is built; The big themes; What only Luke has; Luke and the Old
+Testament; Luke and the history of his day; Luke and the Jewish people; Luke
+and money; How the church has read Luke. Then 12 hard passages (2:2, 4:25,
+6:20, 12:49, 14:26, 16:8, 16:19, 17:21, 22:36, 22:43, 23:34, 23:43), 13 key
+words, a timeline of 17 entries, a map of nine places (Capernaum, Nazareth,
+Nain, the Samaritan villages and Emmaus placed roughly as regions, Jericho,
+Jerusalem, Bethany, Bethlehem), and five "Go deeper" pages after the shared
+six: Jewish life in Jesus's day, The Roman world, the guide on wealth and the
+poor, the guide on hospitality, and the guide on women in the ancient world.
+The outline band at the top already drew Luke's eight parts from the
+existing `structure`; "How Luke is built" points to it.
+
+Words: 4,851 in the fourteen parts; 906 in the lists, timeline and map.
+
+**Code.** None changed in the app. `teaching.test.tsx` now expects the four
+Gospels to have a guide and adds two tests for Luke (the history and Jewish
+people parts, two hard-passage links, Go deeper; the map's north-to-south
+description, the Emmaus card, the two-regions caption).
+
+**A layout repair.** The first commits wrote `luke/intro.json`, `luke/1.json`
+and `luke/2.json` back in a new layout. The Luke 3 commit put all three back
+in their own layout, with only `teaching` and `"plain": true` added.
+
+### Chapters 1 to 3 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Luke 1 | 8 (an orderly account, for Theophilus; a priest, a prayer, and an angel at the altar; ‘How can I be sure?’ silence, then Elizabeth's joy; Gabriel comes to Mary; Mary visits Elizabeth; Mary's song; ‘His name is John’; Zechariah's song) | 4,468 |
+| Luke 2 | 7 (a census, and a birth in Bethlehem; angels and shepherds; they went and saw, and told; named, and presented in the temple; Simeon; Anna, and the growing child; the boy in His Father's house) | 3,993 |
+| Luke 3 | 6 (the word of God comes to John; a warning to the crowds; ‘What then should we do?’; one more powerful is coming, John in prison; the baptism of Jesus; the family line, back to Adam) | 3,130 |
+| Total | 21 | 11,591 |
+
+After each chapter every passage was printed field by field and read: all 21
+sit under their right headings. `validate-bible-notes` passed after each with
+no exceptions (`OT_FIELD_KNOWN` stays empty).
+
+### Sources
+
+All in `bdoor-ledger.md` under "Luke's book page" and "The plain notes on
+Luke 1" to "3". 34 web searches: 23 for the book page, then 3, 5 and 3.
+Main sources: Irenaeus, Against Heresies 3.1.1, 3.11.8, 3.14.1; the
+Muratorian fragment; Hobart (1882) and Cadbury; Cadbury, The Making of
+Luke-Acts (1927); Loveday Alexander (1993); Robinson (1976); Farrer (1955)
+and Goodacre (2002); the Pilate stone; the Abila inscription; the Tivoli
+inscription and Tertullian on the census; Tyndale House and others on 23:34
+and 22:43-44; Nostra Aetate (1965); the canticles in the daily office and the
+Book of Common Prayer; Jerome (398) on the calf; the Emmaus candidates; Nein;
+Mishnah Tamid 5:2; 4Q246; kecharitōmenē and gratia plena; Bailey (2008) and
+Carlson (NTS 2010) on kataluma; Mishnah Kiddushin 4:14; the Priene
+inscription; Mishnah Avot 5:21; Steinmann (JETS 2017) on the second Cainan;
+reference works on tax collectors and on the soldiers of 3:14. Counts of
+Greek words are a script over the repository's text. Scripture is the BSB,
+checked word for word.
+
+### Cut or narrowed
+
+The anti-Marcionite prologue; the claim that Cadbury coined "Luke-Acts";
+Philip's death date; the Caiaphas bone box; Marcion's date; Mommsen, Ramsay,
+Syme, Turner and Brown by name on the census; the Motza "consensus" for
+Emmaus; the priestly blessing Zechariah could not give; Ein Karem; the age of
+brides; the wax tablet; Judith; the 25 December date; the ox and donkey's
+origin; the five shekels; the claim that no legion was in Judea before 66;
+Africanus on Herod burning the records; Conzelmann; every scholar in the
+deep notes not checked this run. Narrowed: Cadbury "from 1919"; the Abila
+inscription "most date it to Tiberius's reign, though its exact date is
+debated"; Saturninus "a few years before Herod died"; the soldiers "most
+think"; John and the Dead Sea community "only a guess".
+
+### Contested matters, and how they are stated
+
+Authorship (Paul's letters, the "we" passages and the early writers named
+apart; the diary and convention readings and their critics). Luke a Gentile
+(both views). Theophilus (patron, believer, symbolic name). The preface
+(historians or technical handbooks). The date (after 70, the majority; the
+early 60s and the end of Acts; a few later; "the site does not settle the
+question"). Sources (the Matthew page's three hypotheses, same wording). The
+census (five explanations, "These notes do not settle it"). 23:34 (some
+think added, some think removed; modern Bibles bracket it). The virgin
+conception (skeptics and Christians; "The site confesses it with them",
+with the Apostles' Creed in the site's wording). "Highly favored" and "full
+of grace" (Catholic and Protestant readings; shared ground). Honour to Mary
+(Catholic and Orthodox; many Protestants). The Magnificat (neither only
+inward nor a party programme). 2:14 (the one-letter difference). The sword
+(Mary's grief). Anna's age (two readings). "My Father's house" or
+"business". Why John did not tell tax collectors and soldiers to quit (two
+lessons). "The Spirit and fire" (one gift, or two outcomes). Why Jesus was
+baptized (the Matthew 3 answers). The two family trees (the Matthew page's
+four views, "The site does not choose"). The second Cainan (Luke followed the
+Greek, or a copyist added it).
+
+**Luke and the Jewish people.** Its own part, consistent with the other three
+book pages: the temple start and end, the faithful Jews of chapters 1 and 2,
+the grieving crowds and women (23:27, 23:48), the misuse named and rejected
+in the same words, Acts 4:27 and Nostra Aetate, and 23:34 with what the
+manuscripts show. No verdict on the Jewish people.
+
+**Money.** Its own part: the hard words for the rich quoted as they stand;
+the prosperity reading named and refused; contempt for the rich refused
+(the women of 8:3, Zacchaeus, Joseph of Arimathea, 18:26-27).
+
+**The census, the sentences on the book page.** "The census of 2:1-2. Here
+the difficulty is real. ... No writer outside Luke tells of a Roman census in
+Herod's kingdom." Then five explanations, and "The question is about a date.
+It does not touch the confession that Jesus was born as a real man in real
+history. These notes do not settle it." Luke 2:1-7 states the same in brief
+and points to the book page.
+
+**The shepherds, the sentences on the page.** "Many sermons say that
+shepherds were despised outcasts. The evidence for that comes mostly from
+Jewish writings set down well after Jesus' day; one saying in the Mishnah,
+written down around AD 200, lists herding among trades a father should not
+teach his son because they tempt a man to steal (Mishnah Kiddushin 4:14).
+How far that reflects the first century is debated, and the Bible itself
+honours shepherds."
+
+**The inn.** "There is no innkeeper in Luke's story, and no one turns them
+away. The cruel innkeeper of Christmas plays is not in the text." The guest
+room and the "place to stay" readings are both given.
+
+### Care lines included
+
+1:5-17 (childlessness: "a grief then, and a public shame"; "Childlessness is
+not a judgment from God, and it does not measure your faith"; a friend,
+pastor or counsellor). 1:18-25 (doubt met, not scolded). 2:25-35 (the sword:
+the bereaved parent, the Matthew 2 line adapted, with a crisis line or
+emergency service). 2:41-52 (parents of a child who has wandered). 2:36-40
+(the old, widowed and alone).
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each piece: pass. At
+the end, all 36 commands of the content-gates step, one at a time: exit 0
+each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 68
+chapters in plain words; validate-no-emdash: 260 files, 0 em-dashes; search
+index 732 entries up to date; passage index 623 files match; verify-sources
+22 texts intact). `pnpm check`: clean. `pnpm test`: 146 files passed, 7
+skipped; 1,659 tests passed, 73 skipped. ESLint on the changed test file:
+clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,028 pages),
+`pnpm run audit:canonicals` (0 failures).
+
+Served with `scripts/serve-like-vercel.mjs` on port 4606 and looked with
+Playwright at `/study/bible/luke`, `/luke/1`, `/luke/2`, `/luke/3`, `/mark`,
+`/matthew` and `/john` at 390 and 1440: no sideways scroll, no page errors;
+Luke's contents list has 19 entries; Mark, Matthew and John show their own
+guides as before (16 contents entries each, their own maps and Go deeper). A
+script matched every rendered passage heading, its part headings in order
+and the first 60 characters under each to the data: Luke 1, 8 of 8; Luke 2,
+7 of 7; Luke 3, 6 of 6, at both widths. The first look at Luke's map had the
+Jerusalem name over Emmaus's mark and the Jericho name over Jerusalem's; the
+Jerusalem and Jericho `label` entries and a small move of the Emmaus mark
+fixed it, and a script then found no name overlapping another name or a mark
+at 390 and 1440, day and night (the Jerusalem and Bethany marks touch, as on
+John's map). The server was restarted to see the change. The label fix was
+data only and was checked by `validate-bible-notes`, the teaching test and
+the search and passage index checks after the build; the build was not rerun
+for it. Screenshots: `/home/user/elite-shots/bdoor/lkrun-*`. Lighthouse was
+not run (no app code changed and nothing new loads on a chapter's first
+paint). dist/ deleted, server stopped, no lh-*.json. One slip: the server was
+stopped once with `pkill -f` on its own command line instead of by PID; it
+matched only this run's server.
+
+### Still unverified
+
+The exact words of every ancient writer (all paraphrased); the Orthodox and
+Catholic positions on honour to Mary (stated generally); how far the
+Mishnah's rules reflect the first century (said to be debated); the
+repository's dates for Augustus (27 BC) and Tiberius (AD 14), reused, not
+searched again; the meaning of the name John (common name studies, not
+searched).
+
+### Next
+
+Luke 4 onward in plain words, in the same shape.
