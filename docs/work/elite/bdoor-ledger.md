@@ -2642,3 +2642,37 @@ the physician proverb; Isaiah 58 as the Yom Kippur reading; Yardenna
 Alexandre's house and the size of Nazareth beyond the earlier ledger; Sloan,
 Ringe, Yoder, Gutiérrez, Jeremias, Sanders, Jervell and Levine by name;
 Irenaeus and Gregory on the temptations; Hodge and Shedd by name.
+
+## The plain notes on Luke 5 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/5.json`. Three searches for this
+chapter, with the earlier ledger (Mark 1 and 2; Matthew 4, 8 and 9).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Only Luke calls it a lake (limnē, five times in Luke, none in the other Gospels); Gennesaret a plain on the north-west shore | 1-11 | Greek text; repository chapter note (`historical`) | Script over the repository's Greek (G3041) |
+| The Galilee boat, 1986, about eight metres | 1-11 | Earlier ledger (Mark 1) | Earlier ledger |
+| Fishermen worked at night; many think because fish could see the nets by day (trammel nets) | 1-11 | Mendel Nun's research as reported | Search: christianhistoryinstitute.org "Fishers of Fish"; jerusalemperspective.com "Let Down Your Nets"; ourrabbijesus.com. Stated as "many think" |
+| Master then Lord; "Simon Peter" first at 5:8 | 1-11 | BSB | Repository |
+| zōgreō: to take alive, used of prisoners taken in war; only here and 2 Timothy 2:26 | 1-11 | Lexicons (Strong's, Thayer, Mounce) | Search: biblehub.com 2221; billmounce.com; blueletterbible.org G2221 |
+| Isaiah 6:5; Jeremiah 16:16; Genesis 15:1; Luke 1:30; 2:10 | 1-11 | BSB | Repository |
+| John 21:1-14: one event placed differently, or two catches with the second recalling the first; nothing in the faith depends on it | 1-11 | Repository chapter note (`hard`; Brown and Bock not named) | Repository. Both views stated |
+| Leprosy, uncleanness, torn clothes, living apart, priest declares clean; Leviticus 13:46; 14; 2 Kings 5:7 | 12-16 | Earlier ledger (Mark 1; Matthew 8) | Earlier ledger; BSB |
+| The Matthew 8 care line on sickness and faith, word for word (2 Corinthians 12:9; 2 Timothy 4:20; 1 Timothy 5:23; Colossians 4:14) | 12-16 | Matthew 8 plain note | Copied word for word |
+| Roofs; Mark "dug through", Luke "tiles"; Pharisees devoted to the law and respected; scribes | 17-26 | Earlier ledger (Mark 2; Mark 12) | Earlier ledger |
+| Mark 2:5 "Son", Luke 5:20 BSB "Friend" for Greek anthrōpe ("Man") | 17-26 | Greek text | Repository Greek and BSB |
+| Daniel 7:13-14; Psalm 103:3; Isaiah 35:6; John 9:2-3 | 17-26 | BSB | Repository |
+| The Mark 2 wording on the scribes' question, adapted to Luke | 17-26 | Mark 2 plain note | Repository |
+| Levi a toll collector for Antipas (most likely); Matthew 9:9; most think one man, Luke does not say | 27-32 | Earlier ledger (Mark 2; Matthew 9) | Earlier ledger. Heracleon not named |
+| "to repentance" (5:32) only in Luke (later copies of Matthew and Mark add it) | 27-32 | BSB; repository chapter note (`text`) | Repository BSB text of Mark 2:17 and Matthew 9:13 |
+| Exodus 16:7; Luke 15:2; Ezekiel 18:23 | 27-32 | BSB | Repository |
+| One commanded fast; weddings lasting days; wineskins | 33-39 | Earlier ledger (Mark 2; Matthew 9) | Earlier ledger |
+| Luke's patch from a new garment; 5:39 only in Luke | 33-39 | BSB | Repository |
+| 5:39: "good" in P4, Sinaiticus, Vaticanus, W; "better" in A, C and the Byzantine text; Bezae and Old Latin copies omit the verse | 33-39 | NA28 apparatus as reported; Rice, AUSS 1980 | Search: freely-given.org OBD Luke 5:39; biblestudytools.com (Robertson); andrews.edu AUSS 1980-2; Wikipedia Codex Bezae |
+| Isaiah 54:5; Hosea 2:19; Amos 9:13; Joel 3:18 | 33-39 | BSB | Repository |
+
+Left out: Josephus on the lake's fertility; K. C. Hanson on fishing leases;
+the Akeldama leprosy DNA; Josephus and the Temple Scroll on lepers; the
+Talmud on the leper as one dead; the Didache's fasting days; Dewey and
+Wrede; Raymond Brown and Darrell Bock by name; Heracleon; the Mishnah on
+tax collectors' houses.
