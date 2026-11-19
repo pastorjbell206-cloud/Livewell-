@@ -538,3 +538,192 @@ Nazareth Inscription; Kloner on rolling stones; 2 Maccabees 3:26 and
 Josephus on angels as young men; the Amidah and m. Sanhedrin 10:1; Jerome's
 letter to Hedibia; the Eusebian canons and Family 1; Tatian; the Freer Logion;
 every scholar named in the deep note on the ending and on the resurrection.
+
+## Matthew's book page (teaching introduction, 2026-11-19)
+
+Every historical claim in `client/public/bible/notes/matthew/intro.json`, field
+`teaching`. Searches run on 2026-11-19 (28 for the book page). Direct page
+fetches were not used; checks rest on search results that quote or summarise
+the source, read against at least two results where possible. Where wording
+could not be checked, the page paraphrases. Scripture is the BSB in the
+repository, checked word for word by `scripts/validate-bible-notes.mjs`.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Matthew at the tax booth (9:9), "Matthew the tax collector" (10:3); Levi in Mark 2:14 and Luke 5:27 | BSB text | Repository |
+| Papias (Eusebius, Church History 3.39.16): Matthew put the logia in order in the Hebrew language (dialect), each translated as he could; logia, "Hebrew dialect" disputed (Hebrew, Aramaic, or Hebrew style) | Eusebius 3.39.16; Kürzinger's style reading is in the repository's `author` | Search: en.wikipedia.org Logia; encyclopedia.com Papias; virtualreligion.net/primer/papias.html. Paraphrased |
+| Irenaeus, Against Heresies 3.1.1: Matthew issued a written Gospel among the Hebrews in their own language while Peter and Paul preached at Rome | Irenaeus 3.1.1 | Search: newadvent.org/fathers/0103301.htm; bkv.unifr.ch; catholic.com. Paraphrased |
+| No Hebrew or Aramaic early Matthew survives; our Greek does not read as a translation; it follows Mark's Greek | Repository `author` and `text`; search results on Papias | Search as above |
+| Ignatius, To the Smyrnaeans 1.1: baptized by John that all righteousness might be fulfilled (Matthew 3:15) | Ignatius | Search: tertullian.org ANF; earlychristianwritings.com (Srawley note "Cf. Matt. iii. 15"). Paraphrased |
+| Didache 8: the Lord's Prayer almost identical to Matthew's | Didache 8.2 | Search: bc.edu Didache 8-10; several translations |
+| Mark dated late 60s to about 70; Matthew after 70 (about 80 to 95, majority) or before 70 (minority); 22:7, 28:15, 5:23-24, 17:24-27, 23:16-22, 24:2 as evidence | Repository `date` (Davies and Allison; Robinson 1976) | Repository; ledger for Mark's date; BSB text |
+| Antioch the most common proposal; Galilee, Sepphoris, Caesarea, Transjordan also proposed | Streeter (1924) and others | Search: bibleodyssey.org "Antioch and the Gospel of Matthew"; encyclopedia.com; blbi.org course notes |
+| Disciples first called Christians at Antioch | Acts 11:26 | BSB |
+| Mark explains handwashing (7:3-4); Matthew does not (15:2) | BSB text | Repository |
+| "When Jesus had finished" at 7:28, 11:1, 13:53, 19:1, 26:1; "From that time on Jesus began" at 4:17 and 16:21 | BSB text | Repository |
+| Bacon proposed five books answering Moses (The Expositor 1918; Studies in Matthew 1930); many doubt a strict match | B. W. Bacon | Search: markluth91.substack.com "Five Books of Matthew"; theopolisinstitute.com; repository `reading` |
+| Allison, The New Moses: A Matthean Typology (1993) | Dale C. Allison Jr. | Search: Fortress listing via verbum.com, exlibris |
+| "Kingdom of heaven" 32 times in Matthew and in no other book (BSB); "kingdom of God" 5 times in Matthew | BSB text | Script over the repository's text |
+| Reverential-circumlocution explanation; Pennington (Brill 2007) argues for a heaven-and-earth contrast | Jonathan T. Pennington, Heaven and Earth in the Gospel of Matthew (2007) | Search: bakerpublishinggroup.com; thegospelcoalition.org Themelios review |
+| "Son of David" more in Matthew than any Gospel (BSB: 7 capitalised plus 1:1, 1:20; Mark 3, Luke 3, John 0) | BSB text | Script |
+| "Church" only in Matthew among the Gospels (16:18, 18:17) | BSB text | Script |
+| Ten formula quotations: 1:22; 2:15; 2:17; 2:23; 4:14; 8:17; 12:17; 13:35; 21:4; 27:9 | BSB text | Script ("fulfill" in Matthew) |
+| 2:23 has no single source; Isaiah 11:1 netzer the most common proposal; Nazirite and "despised" readings also proposed | Commentaries | Search: wikipedia Matthew 2:23; biblegateway Encyclopedia of the Bible "Nazarene"; tyndalebulletin.org |
+| Jeremiah 31:16-17 hope after 31:15; Hosea 11:1 about Israel | BSB text | Repository |
+| Streeter: Matthew repeats about nine tenths of Mark | Streeter 1924 | Earlier ledger (Mark) |
+| Two-Source view with Q (Quelle); Farrer 1955; Goodacre, The Case Against Q (2002); Augustine's order; Farmer 1960s | Farrer, "On Dispensing with Q" (1955); Goodacre (Trinity Press International, 2002) | Search: markgoodacre.org/Q; christiancentury.org review; earlier ledger for Augustine and Farmer |
+| Material only in Matthew (list) | BSB text against Mark and Luke | Repository |
+| Three kings left out between Joram and Uzziah (1 Chronicles 3:11-12) | BSB text | Repository |
+| David's name in Hebrew letters (d-w-d) adds to fourteen; many scholars (Davies and Allison) think gematria a factor | Commentaries | Search: ehrmanblog.org "A numerical puzzle in Matthew's genealogy"; biblehub; lectionarystudies.com. Stated as what many scholars think |
+| Luke's line through Nathan, Joseph son of Heli | Luke 3:23, 3:31 | BSB |
+| Julius Africanus's levirate explanation, reported by Eusebius, Church History 1.7; Mary's line widely held since the Reformation; royal line versus natural descent | Africanus, Letter to Aristides | Search: ccel.org NPNF Eusebius 1.7; catholic.com Genealogy of Christ; encyclopedia.com |
+| Isaiah 7 in the crisis of about 735 to 732 BC (Rezin and Pekah against Ahaz); the sign before the boy grows up (7:16) | Isaiah 7; 2 Kings 16 | Search: en.wikipedia.org Isaiah 7; BSB |
+| almah: most scholars render "young woman"; the Septuagint used parthenos; parthenos used of Dinah after the assault (Genesis 34 LXX); many modern English Bibles say "young woman" | Hebrew and Greek texts | Search: en.wikipedia.org Isaiah 7:14; bibleinterp.arizona.edu (Hagelia); outreachjudaism.org |
+| Magi a priestly class from Persia/Media, associated with astrology and dreams (Herodotus 1.101); number not given; three from the gifts | Herodotus; Matthew 2:11 | Search: encyclopedia.com Magi; catholic.com "Mysteries of the Magi" |
+| Kepler drew attention to the 7 BC triple conjunction of Jupiter and Saturn; Chinese record of a new object for about seventy days in 5 BC; Molnar's lunar occultation of Jupiter in 6 BC; Jupiter and Venus in 2 BC; no consensus | Astronomical proposals | Search: biblicaltraining.org Star of Bethlehem; astronomy.com; unimelb.edu.au |
+| Herod king from 37 BC | Repository `setting` | Repository |
+| Herod's death: most 4 BC, some 1 BC | Chronology debate | Search: biblearchaeology.org; scriptaclassica.org; bible.ca (Steinmann and Young) |
+| Archelaus removed by Augustus in AD 6 and exiled to Vienne; Judea under Roman governors | Josephus; Cassius Dio | Search: en.wikipedia.org Herod Archelaus; livius.org; jewishencyclopedia.com |
+| Josephus: Herod killed his wife Mariamne and three of his sons (Alexander, Aristobulus, Antipater) | Josephus, Antiquities 15 to 17; Jewish War 1 | Search: josephus.org/Mariamme.htm; penelope.uchicago.edu Antiquities 16 |
+| Herod's order to kill the leading men shut in the hippodrome at his death; Salome and Alexas freed them | Josephus, Jewish War 1.659-666; Antiquities 17 | Search: lexundria.com Antiquities 17.174-193 and War 1.647-666 |
+| No record of the massacre outside Matthew; Josephus silent; estimates a dozen to a few dozen boys; the skeptical case | Reference works | Search: biblicaltraining.org "Slaughter of the Innocents"; deseret.com (Maier); thewellexaminedlife.com (skeptical) |
+| Macrobius (about AD 400), Saturnalia 2.4.11: Augustus's joke about Herod and boys under two; may conflate with Herod's sons | Macrobius | Search: imperiumromanum.pl; johnsanidopoulos.com; jewishvirtuallibrary.org |
+| Pharaoh's order (Exodus 1:22) | BSB | Repository |
+| Readings of the Sermon: Augustine (about 394); commands and counsels (Aquinas); Luther's personal and public duty and the sermon driving to grace; Anabaptist literalism, Schleitheim (1527) on oaths and the sword; a mirror; a dispensational future-kingdom reading; Tolstoy (1894), Bonhoeffer (1937) | Histories of interpretation | Search: studylight.org Holman "Sermon on the Mount"; mereorthodoxy.com on Luther; jeltzz.substack.com; repository `reception` for dates |
+| Woes a prophetic form (Isaiah 5:8-22); Weinfeld (Bible Review 13.5, 1997) on Jewish sayings about teachers who do not practise what they preach; 23:2-3 | Moshe Weinfeld, "The Jewish Roots of Matthew's Vitriol" | Search: cojs.org Weinfeld; library.biblicalarchaeology.org |
+| 27:25 misused as a curse on all Jews; Oberammergau kept the line from 1750 until 2000 | History | Search: christiancentury.org "Oberammergau 2000"; ajc.org FAQs |
+| 27:25 limited to the crowd present; irony with 26:28 (Cargal, NTS 1991, "double entendre") | Scholarship | Search: acuresearchbank.acu.edu.au (Hili 2024); cambridge.org NTS abstract |
+| Nostra Aetate 4 (1965) | Second Vatican Council | Earlier ledger (Mark 15) |
+| Chief priests and elders persuade the crowds (27:20) | BSB | Repository |
+| Jerome (398) gave Matthew the man | Jerome, preface to the Commentary on Matthew | Earlier ledger (Jerome 398) and repository `reception` |
+| Bach's St Matthew Passion, Leipzig, Good Friday 1727 | Repository `reception` | Repository |
+| Map positions | Approximate modern sites; the Gadarenes and the Decapolis are regions, placed roughly and said so | Not a historical claim |
+
+Left out: Origen and Jerome on a Hebrew Matthew (not checked this run);
+the scholars by name on authorship (Davies and Allison, Luz, Gundry, Carson,
+Blomberg: in the fuller introduction below, not repeated); Annius of Viterbo
+(no result confirmed him); every count of how many verses the double tradition
+holds; the claim that the 7 BC conjunction is "the strongest match" (only a
+popular almanac says so); a section number for Augustine's Retractations on
+16:18.
+
+## The plain notes on Matthew 1 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/1.json`. Four searches for this
+chapter; the rest rests on the book page's rows above or the BSB text.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Priests had to prove descent | 1-6 | Ezra 2:61-63 | BSB |
+| Son of David and the promise of a lasting throne; all families blessed through Abraham | 1-6 | 2 Samuel 7:12-16; Genesis 12:3 | BSB |
+| Biblos geneseōs in 1:1; the phrase only twice in the Septuagint (Genesis 2:4, 5:1); a "new genesis" reading (Davies and Allison) against the plain "family record" reading | 1-6 | Commentaries | Search: billmounce.com (Carson's note); biblehub ICC Matthew 1; ejournals.bc.edu. Both readings stated |
+| Women rarely named in genealogies; Tamar (Genesis 38), Rahab (Joshua 2), Ruth a Moabite (Ruth 1:4), Bathsheba and Uriah the Hittite (2 Samuel 11) | 1-6 | BSB; repository chapter note (`cultural`) | BSB. Tamar given as "perhaps" an outsider, since Genesis does not say |
+| Judah and the staff; Ruth 4:17-22; 2 Samuel 7:16 | 1-6 | BSB | Repository |
+| Jerusalem destroyed in 587 or 586 BC; no Davidic king after | 7-17 | 2 Kings 25; repository chapter note (`historical`) | BSB and repository |
+| David = d-w-d = fourteen | 7-17 | Book page row above | Search (book page) |
+| Three kings skipped (1 Chronicles 3:11-12); the last group counts thirteen unless one is counted twice | 7-17 | BSB; ehrmanblog.org (book page search) | Count of BSB 1:12-16 |
+| Luke's line, Africanus, Mary's line, royal line | 7-17 | Book page rows above | As above |
+| Jeconiah and Jeremiah 22:30; Haggai 2:23 signet ring; the legal-son answer | 7-17 | BSB; apologetic and dictionary summaries | Search: biblehub.com "Does Matthew 1 contradict Jeremiah 22:30"; thejesusquestion.org; equip.org. Stated as what some answer |
+| Betrothal binding; a betrothed woman freed only by divorce or the husband's death (Mishnah Kiddushin 1:1, written down about AD 200); how far this applied in the first century is debated, so the note leans on Matthew's own words (husband, divorce) | 18-21 | Mishnah Kiddushin 1:1 | Search: jwa.org "Marriage in Halakhic Judaism"; chabad.org Kiddushin; thegemara.com (caution on first-century practice) |
+| Deuteronomy 22:23-24 | 18-21 | BSB | Repository |
+| Jesus = Yeshua, short for Joshua, "the LORD saves"; common name; Josephus names several men called Jesus | 18-21 | Name studies | Search: biblicaltraining.org "Jesus"; aleteia.org; biblehub |
+| Joseph son of Jacob echoes the patriarch | 18-21 | Genesis 37 to 50; Matthew 1:16 | BSB |
+| Psalm 130:8 | 18-21 | BSB | Repository |
+| Matthew and Luke tell the conception independently (Luke 1:26-38) | 18-21 | BSB | Repository; skeptic's objection stated, not answered for the reader |
+| Isaiah 7 and Ahaz, about 735 BC; Isaiah 7:16; 8:10; 9:6; almah and parthenos | 22-25 | Book page rows above; BSB | As above |
+| Mary's perpetual virginity (Catholic, Orthodox) and the brothers read three ways | 22-25 | Earlier ledger, Mark 3:31-35 (Bauckham) | Earlier ledger |
+
+Left out: the twelve months between betrothal and wedding (Mishnah Ketubbot
+5:2; not confirmed this run); Dionysius Exiguus and the year count; the
+Babylonian ration tablets naming Jeconiah (in the deep note below, not
+re-checked); the count of men named Jesus in Josephus.
+
+## The plain notes on Matthew 2 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/2.json`. Five searches for this
+chapter, with the book page's rows above.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Magi: Herodotus 1.101, priestly tribe of the Medes, dreams and stars; later sense of sorcerer; number not given | 1-8 | Herodotus; Acts 13:6-8 | Book page search (encyclopedia.com Magi; catholic.com) |
+| Herod king from 37 BC; Idumean family; killed Mariamne and three sons | 1-8 | Josephus; earlier ledger (Idumea) | Book page searches |
+| Belief that the heavens marked rulers' births and deaths; Numbers 24:17 | 1-8 | Repository chapter note (`cultural`: Suetonius, Tacitus); BSB | Repository and BSB. Stated generally, no ancient writer named |
+| Micah 5:2 against Matthew 2:6; 2 Samuel 5:2 | 1-8 | BSB | Repository |
+| Star proposals | 1-8 | Book page rows | Book page search |
+| Gold, frankincense and myrrh: resins from southern Arabia and the Horn of Africa, carried by caravan; frankincense burned in worship, myrrh in perfume, medicine and burial | 9-12 | Trade histories | Search: openscholar.uga.edu (frankincense and myrrh, 2011); cris.huji.ac.il; gulfnews.com |
+| Irenaeus, Against Heresies 3.9.2: gold for a king, frankincense for God, myrrh for one who would die and be buried | 9-12 | Irenaeus | Search: newadvent.org/fathers/0103309.htm; catholic.com. Paraphrased |
+| Isaiah 60:6; Psalm 72:11; worship in 14:33, 28:9, 28:17 | 9-12 | BSB | Repository |
+| Egypt under direct Roman rule; one of the largest Jewish communities, chiefly Alexandria | 13-15 | Britannica (Judaism); Jewish Virtual Library, Egypt | Search: britannica.com; jewishvirtuallibrary.org |
+| Hosea 11:1-2 | 13-15 | BSB | Repository |
+| Herod's order at Jericho, released by his sister (Jewish War 1.659-666) | 16-18 | Josephus | Book page search (lexundria.com) |
+| No outside record; estimate of a dozen to a few dozen boys; the skeptical case; Exodus 1:22 | 16-18 | Book page rows | Book page search |
+| Rachel buried on the way to Ephrath, Bethlehem (Genesis 35:19); captives gathered at Ramah (Jeremiah 40:1); Jeremiah 31:15-17, 31:31 | 16-18 | BSB | Repository |
+| Archelaus: about three thousand killed at Passover (Antiquities 17.213-218; War 2); removed in AD 6, exiled to Gaul | 19-23 | Josephus | Search: lexundria.com Antiquities 17.213-218; book page search on Archelaus |
+| Antipas gets Galilee; 14:1-12 | 19-23 | Repository `setting`; BSB | Repository |
+| Nazareth not in the Old Testament; John 1:46 | 19-23 | BSB | Repository (search of the Old Testament text) |
+| Exodus 4:19 against Matthew 2:20 | 19-23 | BSB | Repository |
+| "Nazarene": netzer (Isaiah 11:1), Nazirite (Numbers 6), "despised" readings | 19-23 | Book page row | Book page search |
+
+Left out: the Herodium tomb (found 2007, but its identification was
+challenged in 2013, and it adds nothing the passage needs); Tertullian on
+"almost kings"; Tiridates and the magi of AD 66; the "at its rising" reading
+of the star; the eclipse in Josephus; Pope Gregory on the gifts. Care: the
+killing of the children is told in one sentence as Matthew tells it; the
+passage names Herod as the cause, gives the mothers' grief its place, and
+keeps a path to help visible (someone trusted, a grief counsellor, a crisis
+line or emergency service).
+
+## The plain notes on Matthew 3 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/3.json`. Three searches for this
+chapter, with the earlier ledger for Mark 1, 6 and 12.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Elijah's clothing; Malachi 4:5; locusts allowed; wilderness and Jordan in Israel's story | 1-6 | 2 Kings 1:8; Malachi 4:5; Leviticus 11:22 | Earlier ledger (Mark 1:1-8); BSB |
+| John's first words the same as Jesus' (3:2; 4:17) | 1-6 | BSB | Repository |
+| Isaiah 40:3 opens the promise of comfort after exile | 1-6 | BSB (Isaiah 40:1-11) | Repository |
+| Pharisees popular; Sadducees from the priestly circle, denying resurrection and angels | 7-12 | Josephus, Antiquities 18.15-17; Acts 23:8; 5:17 | Earlier ledger (Mark 12) |
+| "Brood of vipers" again at 12:34 and 23:33 | 7-12 | BSB | Repository |
+| Stones and children: abanim and banim in Hebrew | 7-12 | UBS translators' handbook on Matthew 3:9; Wikipedia Matthew 3:9 | Search: tips.translation.bible; en.wikipedia.org Matthew 3:9. Given as "may also be", since John likely spoke Aramaic and the results did not confirm the pun there |
+| Carrying a master's sandals a servant's task | 7-12 | Earlier ledger (Mark 1:7) | Earlier ledger |
+| Winnowing: threshed grain tossed with a wooden fork, the wind takes the chaff, which is burned | 7-12 | Bible dictionaries | Search: biblicaltraining.org "Winnow"; hypr.bible threshing floor; tips.translation.bible |
+| Malachi 4:1; 3:2; Joel 2:28; Ezekiel 36:26 | 7-12 | BSB | Repository |
+| John's protest and Jesus' answer only in Matthew | 13-17 | BSB (Mark 1:9-11; Luke 3:21-22) | Repository |
+| Isaiah 64:1; Genesis 1:2; 8:11; Psalm 2:7; Isaiah 42:1; Genesis 22:2 | 13-17 | BSB | Repository; earlier ledger (Mark 1:9-11) |
+| Readings of "fulfill all righteousness": obedience, standing with sinners, fulfilment | 13-17 | Commentaries; Litfin, JETS 65.4 (2022); Schreiner | Search: etsjets.org Litfin; logos.com Schreiner; en.wikipedia.org Matthew 3:15 |
+
+Left out: the claim that the dove symbolised Israel (not checked); the
+Gospel of the Nazarenes fragment on why Jesus was baptized; Hilary of Poitiers
+on 3:15; any count of how many John baptized.
+
+## The plain notes on Matthew 4 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/4.json`. Two searches for this
+chapter, with the earlier ledger for Mark 1.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Forty: Israel's years; Moses (Exodus 34:28); Elijah (1 Kings 19:8); Israel "My firstborn son" (Exodus 4:22) | 1-4 | BSB | Repository |
+| The three answers from Deuteronomy 8:3; 6:16; 6:13; Psalm 91:11-12; Massah (Exodus 17:7) | 1-11 | BSB | Repository |
+| Pinnacle (pterugion) means a wing or edge; the place is not known; the south-east corner above the Kidron and the Royal Portico are the usual proposals | 5-11 | Lexicons and Bible dictionaries (Vine's; Strong's notes) | Search: biblehub.com 4419; blueletterbible.org G4419; bibletruthpublishers.com. No height given, since the figures disagree |
+| Herod rebuilt the temple on a vast scale | 5-11 | Repository chapter notes (Matthew 2 `historical`) | Repository |
+| 28:18; John 12:31 | 5-11 | BSB | Repository |
+| Capernaum on the north-west shore near the Jordan's inflow; "His own town" (9:1) | 12-17 | Earlier ledger (Mark 1 and 2); BSB | Earlier ledger |
+| Tiglath-pileser III took Galilee and Naphtali and carried the people captive, about 733 to 732 BC | 12-17 | 2 Kings 15:29; Dubovský, Biblica 87 (2006), on the campaigns of 734 to 732 BC | Search: bsw.org Biblica 87; cojs.org; ucg.org commentary |
+| Galilee bordered by non-Jewish lands, with many non-Jews in and around it | 12-17 | Isaiah 9:1; repository | Stated generally |
+| "From that time on Jesus began" only at 4:17 and 16:21 | 12-17 | BSB | Script |
+| Isaiah 9:1-2, 9:6 | 12-17 | BSB | Repository |
+| The Galilee boat (1986), about eight metres, many repairs; fishing a major trade; Zebedee's hired men (Mark 1:20) | 18-22 | Earlier ledger (Mark 1:16-20); BSB | Earlier ledger |
+| Students usually chose their teacher; Jesus chooses his | 18-22 | Repository chapter note (Matthew 4 `cultural`) | Repository. Stated as "usually" |
+| Jeremiah 16:16 fishermen | 18-22 | BSB | Repository |
+| Synagogue: Sabbath reading, teaching and prayer; visitors invited to teach | 23-25 | Earlier ledger (Mark 1:21-28 and 6:1-6); Luke 4:16-21 | Earlier ledger and BSB |
+| Syria the Roman province; the Decapolis a league of Greek towns mostly east of the Jordan | 23-25 | Earlier ledger (Mark map) | Earlier ledger |
+| 4:23 and 9:35 frame chapters 5 to 9; ten miracles in chapters 8 and 9 | 23-25 | BSB; repository `structure` | Repository |
+
+Left out: any height for the temple's pinnacle; the claim that James the
+Just was thrown from it (Hegesippus, in the deep note, not re-checked); the
+Via Maris as a Roman road name; the number of fishing boats on the lake
+(Josephus's figure in Jewish War 2, not checked). Care: a word on fasting
+safely (ask a doctor; if not eating has become a struggle, talk to someone
+trusted and a health professional); healing and medicine set side by side.

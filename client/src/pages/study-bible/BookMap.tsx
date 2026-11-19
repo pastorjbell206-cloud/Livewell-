@@ -114,6 +114,16 @@ export default function BookMap({
   places: Place[];
 }) {
   const id = useId().replace(/:/g, "");
+  const isRegion = (p: Place) =>
+    p.region ?? (p.id === "decapolis" || p.id === "gerasenes");
+  const towns = places.filter(p => !isRegion(p));
+  // The farthest town each way names the map's reach; towns within about
+  // five kilometres of it count as the same spot, and the one the book lists
+  // first (its main place) is named.
+  const lats = towns.map(p => p.lat);
+  const north = towns.find(p => p.lat > Math.max(...lats) - 0.05);
+  const south = towns.find(p => p.lat < Math.min(...lats) + 0.05);
+  const regions = places.length - towns.length;
   const [sel, setSel] = useState<string>(places[0]?.id ?? "");
   const place = places.find(p => p.id === sel) ?? places[0];
   const hatch = `bkmap-hatch-${id}`;
@@ -131,7 +141,7 @@ export default function BookMap({
         <svg
           viewBox={`0 0 ${W} ${H}`}
           role="img"
-          aria-label={`A simple map of the places in ${bookName}, from Sidon in the north to Jerusalem in the south.`}
+          aria-label={`A simple map of the places in ${bookName}${north && south && north !== south ? `, from ${north.name} in the north to ${south.name} in the south` : ""}.`}
           preserveAspectRatio="xMidYMid meet"
         >
           <defs>
@@ -205,12 +215,13 @@ export default function BookMap({
           </text>
           {places.map(p => {
             const on = p.id === place?.id;
-            const isRegion = p.id === "decapolis" || p.id === "gerasenes";
-            const l = LABEL[p.id] ?? {
-              dx: 10,
-              dy: 4,
-              anchor: "start" as const,
-            };
+            const region = isRegion(p);
+            const l = p.label ??
+              LABEL[p.id] ?? {
+                dx: 10,
+                dy: 4,
+                anchor: "start" as const,
+              };
             const cx = x(p.lon);
             const cy = y(p.lat);
             return (
@@ -232,7 +243,7 @@ export default function BookMap({
                     stroke="var(--art-ink)"
                     strokeWidth="2.25"
                   />
-                ) : isRegion ? (
+                ) : region ? (
                   <circle
                     className={on ? "pl-k" : "pl-o"}
                     cx={cx}
@@ -265,8 +276,12 @@ export default function BookMap({
           })}
         </svg>
         <figcaption>
-          A sketch, not a survey: places are set by their modern sites; the two
-          regions are placed roughly.
+          A sketch, not a survey: places are set by their modern sites
+          {regions === 0
+            ? "."
+            : regions === 1
+              ? "; the region is placed roughly."
+              : `; the ${regions === 2 ? "two" : regions} regions are placed roughly.`}
         </figcaption>
       </figure>
 

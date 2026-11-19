@@ -43,7 +43,20 @@ export interface BookTeaching {
   hard: { ch: number; v: number; ref: string; line: string }[];
   words: { word: string; line: string }[];
   timeline: { when: string; what: string; kind: "world" | "story" | "book" }[];
-  map: { id: string; name: string; lat: number; lon: number; refs: string[]; line: string }[];
+  map: {
+    id: string;
+    name: string;
+    lat: number;
+    lon: number;
+    refs: string[];
+    line: string;
+    /** A region rather than a town: drawn as a dashed ring, placed roughly. */
+    region?: boolean;
+    /** Where the name sits beside its mark, when the default would collide. */
+    label?: { dx: number; dy: number; anchor: "start" | "end" | "middle" };
+  }[];
+  /** Optional: pages on the site for this book, shown after the shared "Go deeper" list. */
+  deeper?: { href: string; name: string; line: string; icon?: "people" | "world" | "scroll" | "book" }[];
 }
 
 /** One passage of a chapter in plain words (notes/<slug>/plain/<n>.json). */
