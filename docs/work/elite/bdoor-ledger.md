@@ -4591,3 +4591,30 @@ this chapter, with the deep note, the verse notes and the book page.
 
 Cut: the Hyksos-period date for cup divination (Kitchen) and the Middle
 Kingdom statuettes; the count of ‘father’ fifteen times.
+
+## The plain notes on Genesis 45 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/45.json`. One web search for this
+chapter, with the deep note, the verse notes, the book page and the site's
+safety wording.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Joseph weeps aloud; an official expected to keep reserve; ‘I am Joseph’ three words in Hebrew | 1-3 | Deep note (`cultural`, `literary`) | Repository |
+| Acts 7:13; Luke 24:39 | 1-3 | BSB | Repository |
+| ‘Sold’ answered by ‘sent’, three times (5, 7, 8); the sale named first | 4-8 | Deep note (`literary`, `hard`) | Repository |
+| ‘A father to Pharaoh’ as a trusted adviser; Isaiah 22:21 uses ‘father’ of a high official | 4-8 | Hebrew; BSB | Search: "Genesis 45:8 father to Pharaoh Egyptian title god's father" (biblehub.com commentaries; openbible.com Strong's ‘adviser’; Aling, biblicalelearning.org). The link to the Egyptian ‘god's father’ title was not confirmed and is left out |
+| God's hand and human guilt held together, neither cancelling (the Genesis 27 wording); Reformed and Arminian/Catholic/Orthodox accounts | 4-8 (hard) | Deep note (`hard`); plain note 27 | Repository; no side |
+| Safety lines word for word from the Genesis 16 note (from Mark 10:1-12), and its Find Help sentence | 4-8 (hard) | Site | Repository (grep -F) |
+| Acts 2:23; Psalm 105:17 | 4-8 | BSB | Repository |
+| Goshen usually placed in the eastern Nile delta; exact borders not known | 9-15 | Book page map (‘usually placed in the eastern Nile delta’); deep note (‘exact boundaries are uncertain’) | Repository |
+| 37:4 ‘could not speak a kind word’ against 45:15 ‘talked with him’ | 9-15 | BSB | Repository |
+| Luke 15:20; Ephesians 4:32 | 9-15 | BSB | Repository |
+| Clothing through the story; ragaz ‘be agitated’ by anger or fear, two readings | 16-24 | Deep note (`cultural`); verse note (24) | Repository |
+| Colossians 3:13; Romans 12:18 | 16-24 | BSB | Repository |
+| Whether Jacob was told of the sale: the text does not say | 25-28 | Deep note on 50 (`hard`) | Repository; no claim made |
+| ‘His heart grew numb’ (vayyafog libbo); ‘spirit ... revived’; Jacob and Israel | 25-28 | Verse notes (25-26, 27-28); deep note (`literary`) | Repository |
+| Luke 24:11; Genesis 32:28 | 25-28 | BSB | Repository |
+
+Cut: the Egyptian ‘god's father’ title (not confirmed); the silver's weight
+in kilograms (kept out, as in Genesis 23).
