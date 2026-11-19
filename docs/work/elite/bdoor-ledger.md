@@ -637,3 +637,38 @@ Left out: the twelve months between betrothal and wedding (Mishnah Ketubbot
 5:2; not confirmed this run); Dionysius Exiguus and the year count; the
 Babylonian ration tablets naming Jeconiah (in the deep note below, not
 re-checked); the count of men named Jesus in Josephus.
+
+## The plain notes on Matthew 2 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/2.json`. Five searches for this
+chapter, with the book page's rows above.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Magi: Herodotus 1.101, priestly tribe of the Medes, dreams and stars; later sense of sorcerer; number not given | 1-8 | Herodotus; Acts 13:6-8 | Book page search (encyclopedia.com Magi; catholic.com) |
+| Herod king from 37 BC; Idumean family; killed Mariamne and three sons | 1-8 | Josephus; earlier ledger (Idumea) | Book page searches |
+| Belief that the heavens marked rulers' births and deaths; Numbers 24:17 | 1-8 | Repository chapter note (`cultural`: Suetonius, Tacitus); BSB | Repository and BSB. Stated generally, no ancient writer named |
+| Micah 5:2 against Matthew 2:6; 2 Samuel 5:2 | 1-8 | BSB | Repository |
+| Star proposals | 1-8 | Book page rows | Book page search |
+| Gold, frankincense and myrrh: resins from southern Arabia and the Horn of Africa, carried by caravan; frankincense burned in worship, myrrh in perfume, medicine and burial | 9-12 | Trade histories | Search: openscholar.uga.edu (frankincense and myrrh, 2011); cris.huji.ac.il; gulfnews.com |
+| Irenaeus, Against Heresies 3.9.2: gold for a king, frankincense for God, myrrh for one who would die and be buried | 9-12 | Irenaeus | Search: newadvent.org/fathers/0103309.htm; catholic.com. Paraphrased |
+| Isaiah 60:6; Psalm 72:11; worship in 14:33, 28:9, 28:17 | 9-12 | BSB | Repository |
+| Egypt under direct Roman rule; one of the largest Jewish communities, chiefly Alexandria | 13-15 | Britannica (Judaism); Jewish Virtual Library, Egypt | Search: britannica.com; jewishvirtuallibrary.org |
+| Hosea 11:1-2 | 13-15 | BSB | Repository |
+| Herod's order at Jericho, released by his sister (Jewish War 1.659-666) | 16-18 | Josephus | Book page search (lexundria.com) |
+| No outside record; estimate of a dozen to a few dozen boys; the skeptical case; Exodus 1:22 | 16-18 | Book page rows | Book page search |
+| Rachel buried on the way to Ephrath, Bethlehem (Genesis 35:19); captives gathered at Ramah (Jeremiah 40:1); Jeremiah 31:15-17, 31:31 | 16-18 | BSB | Repository |
+| Archelaus: about three thousand killed at Passover (Antiquities 17.213-218; War 2); removed in AD 6, exiled to Gaul | 19-23 | Josephus | Search: lexundria.com Antiquities 17.213-218; book page search on Archelaus |
+| Antipas gets Galilee; 14:1-12 | 19-23 | Repository `setting`; BSB | Repository |
+| Nazareth not in the Old Testament; John 1:46 | 19-23 | BSB | Repository (search of the Old Testament text) |
+| Exodus 4:19 against Matthew 2:20 | 19-23 | BSB | Repository |
+| "Nazarene": netzer (Isaiah 11:1), Nazirite (Numbers 6), "despised" readings | 19-23 | Book page row | Book page search |
+
+Left out: the Herodium tomb (found 2007, but its identification was
+challenged in 2013, and it adds nothing the passage needs); Tertullian on
+"almost kings"; Tiridates and the magi of AD 66; the "at its rising" reading
+of the star; the eclipse in Josephus; Pope Gregory on the gifts. Care: the
+killing of the children is told in one sentence as Matthew tells it; the
+passage names Herod as the cause, gives the mothers' grief its place, and
+keeps a path to help visible (someone trusted, a grief counsellor, a crisis
+line or emergency service).
