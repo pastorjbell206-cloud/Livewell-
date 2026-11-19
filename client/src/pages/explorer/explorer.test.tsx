@@ -279,7 +279,7 @@ describe("a stop", () => {
     const marks = act.steps.map((st, i) =>
       screen.getByRole("button", { name: `Step ${i + 1}: ${st.name}` })
     );
-    expect(screen.getByRole("button", { name: /Back a step/ })).toBeDisabled();
+    expect(screen.queryByRole("button", { name: /Back a step/ })).toBeNull();
     fireEvent.click(
       screen.getByRole("button", { name: `Start: ${act.steps[0].name}` })
     );

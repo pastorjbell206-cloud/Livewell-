@@ -582,7 +582,10 @@ export function WalkActivity({
           </button>
         ))}
       </Scene>
-      <div className="ex-walk" aria-live="polite">
+      <div
+        className={`ex-walk${at === null ? "" : " ex-walk--open"}`}
+        aria-live="polite"
+      >
         {step && at !== null ? (
           <>
             <p className="ex-walk__count">
@@ -605,24 +608,27 @@ export function WalkActivity({
         )}
       </div>
       <div className="ex-act__row ex-walk__nav">
-        <button
-          type="button"
-          className="btn btn--quiet"
-          disabled={!at}
-          onClick={() => {
-            if (!at) return;
-            go(at - 1);
-            if (at - 1 === 0) requestAnimationFrame(() => next.current?.focus());
-          }}
-        >
-          <ArrowLeft
-            size={16}
-            strokeWidth={1.75}
-            aria-hidden="true"
-            style={{ marginRight: 8 }}
-          />
-          Back a step
-        </button>
+        {at !== null && (
+          <button
+            type="button"
+            className="btn btn--quiet"
+            disabled={at === 0}
+            onClick={() => {
+              if (!at) return;
+              go(at - 1);
+              if (at - 1 === 0)
+                requestAnimationFrame(() => next.current?.focus());
+            }}
+          >
+            <ArrowLeft
+              size={16}
+              strokeWidth={1.75}
+              aria-hidden="true"
+              style={{ marginRight: 8 }}
+            />
+            Back a step
+          </button>
+        )}
         <button
           type="button"
           className="btn"
@@ -690,7 +696,13 @@ export function CycleActivity({
           aria-hidden="true"
           focusable="false"
         >
-          <circle className="pl-f" cx="50" cy="50" r="36" fill="none" />
+          <circle
+            className="pl-l"
+            cx="50"
+            cy="50"
+            r="36"
+            vectorEffect="non-scaling-stroke"
+          />
           {stages.map((_, i) => {
             const a = ((i + 0.5) / n) * 2 * Math.PI - Math.PI / 2;
             const x = 50 + 36 * Math.cos(a);
@@ -699,11 +711,9 @@ export function CycleActivity({
             return (
               <path
                 key={i}
-                className="pl-l"
-                d="M-2.2,-2.6L1.4,0L-2.2,2.6"
+                className="pl-k"
+                d="M-2,-2.4L2.4,0L-2,2.4Z"
                 transform={`translate(${x.toFixed(2)},${y.toFixed(2)}) rotate(${deg.toFixed(1)})`}
-                fill="none"
-                strokeWidth="1"
               />
             );
           })}
@@ -733,7 +743,7 @@ export function CycleActivity({
           {at === n ? "And round again" : finished ? "Waiting for a king" : "Round it goes"}
         </p>
       </div>
-      <div className="ex-walk" aria-live="polite">
+      <div className="ex-walk ex-walk--open" aria-live="polite">
         {stage ? (
           <>
             <p className="ex-walk__count">
