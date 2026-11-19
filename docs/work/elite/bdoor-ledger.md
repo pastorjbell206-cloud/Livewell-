@@ -2304,3 +2304,29 @@ Cut: Tacitus on the golden vine and Liber; m. Middot 3:8; the revolt coins; 2 Ba
 | Zechariah 13:7; Mark 14:27; Psalm 27:10; 1 John 5:4 | 25-33 | BSB | BSB text |
 
 Cut: Martyn, Kimelman and Bernier by name (the book page carries the debate); the Birkat ha-Minim; Justin's Dialogue 16 and 96; Phinehas, 1 Maccabees 2 and Numbers Rabbah 21:3; Josephus on James the brother of Jesus; Luther's On the Jews and Their Lies (met only in summaries); Nostra Aetate (said in the John 8 note); m. Eduyot 5:6 and 1QS 6-7; 1QH 11; b. Sanhedrin 98b; Plutarch on parrēsia; m. Berakhot 5:5; Montanus, Mani and the Muslim reading of the Paraclete (periklytos), Ibn Ishaq and Sean Anthony (not checked this run); the Toledo and Florence dates for the filioque.
+
+## The plain notes on John 17 (2026-11-19)
+
+`client/public/bible/notes/john/plain/17.json`. 7 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| 2:4; 7:30; 8:20; 12:23; 11:41; Psalm 123:1; Deuteronomy 6:4; Jeremiah 31:34; Isaiah 42:8; Proverbs 8:30; 1 John 5:20; 3:16 | 1-5 | BSB | BSB text |
+| "The high priestly prayer": the title credited to the Lutheran David Chytraeus (1530 to 1600); the priestly reading older (Cyril of Alexandria); some think the title says more than the text | 1-5 | Wikipedia "John 17"; Carson as cited by readingacts.com; Derek Thomas (reformedperspectives.org) | Search. Cyril not named on the page ("readers saw a priest praying here long before him") |
+| Arius (early 300s) and Jehovah's Witnesses; creeds on Father and Son (pointer to the 14:28 note) | 1-5 | Earlier ledger (John 14) | Earlier ledger |
+| "Christians who stress God's choosing ... These notes do not settle it." | 1-5 | Mark 4 and Matthew 13 plain notes | Repository |
+| Exodus 3:15; 13:18; Psalm 41:9; Acts 1:20; Psalm 109:8; Exodus 28:29; Acts 2:23; 12:6; 13:5, 26; Hebrews 7:25 | 6-12 | BSB | BSB text |
+| "The son of destruction" also in 2 Thessalonians 2:3; the play apōleto / apōleias in 17:12 | 6-12 | BSB; Greek text in the repository (`ch/john/17.json`) | Script. The em-dashed BSB wording of 2 Thessalonians 2:3 is quoted only as "the son of destruction" |
+| Views of Judas and Scripture's fulfilment; "These notes do not say what God did with Judas. That belongs to God." (Matthew 27 wording) | 6-12 | Deep note `hard`; Matthew 27 plain note | Stated as views; no names (Maccoby, Klassen, Barth, Calvin and the Gospel of Judas not used) |
+| Peter restored (21:15-17) | 6-12 | BSB | BSB text |
+| "The world" in John (1:10; 3:16-17); 10:36 "the One whom the Father sanctified"; Exodus 28:36, 41; Leviticus 11:44; Deuteronomy 7:6; Jeremiah 29:7; Psalm 119:142 | 13-19 | BSB | BSB text |
+| Hagiazō in 17:17 and 17:19 ("sanctify"), en tē alētheia | 13-19 | Greek text in the repository | Script |
+| Lumen Gentium 8: the church of Christ "subsists in" the Catholic Church, with elements of sanctification and truth outside it | 20-26 | Second Vatican Council | Search: en.wikipedia.org Subsistit in; ewtn.com; catholic.com. Two words quoted |
+| Unitatis Redintegratio (21 November 1964) 1: division openly contradicts the will of Christ, scandalizes the world, damages the preaching of the gospel | 20-26 | Second Vatican Council | Search: vatican.va; catholicculture.org. Paraphrased |
+| Orthodox: unity a mark the church already has, kept in one faith and one Eucharist; no shared communion where faith is not shared | 20-26 | Fr. Lawrence Farley (oca.org, "The Marks of the Church: the Church as One"); orthochristian.com | Search. Stated generally, no document named |
+| Lausanne Covenant (1974), section 7: "We affirm that the Church's visible unity in truth is God's purpose" | 20-26 | Lausanne Covenant | Search: lausanne.org; Haddington House Journal appendix; ecumenism.net. Quoted |
+| Edinburgh World Missionary Conference 1910 seen as a start of the ecumenical movement; World Council of Churches founded at Amsterdam in 1948 | 20-26 | Encyclopedias | Search: museeprotestant.org; christianity.com; encyclopedia.com. "Many trace its start" |
+| Celsus mocked Christian factions; Origen, Against Celsus 3.10-12, replied that medicine and philosophy also have schools | 20-26 | Origen | Search: bkv.unifr.ch (Crombie); clerus.org; newadvent.org 04163. Paraphrased; book number only |
+| Ezekiel 37:22; Psalm 133:1; Isaiah 49:6; Ephesians 4:5 | 20-26 | BSB | BSB text |
+
+Cut: Ut Unum Sint (1995) and Käsemann (not checked this run); the 1054 date (stated as "the churches of East and West have parted"); the number of denominations; Maccoby, Klassen, Barth and the Gospel of Judas; Cyril of Alexandria by name.
