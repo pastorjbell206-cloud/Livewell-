@@ -2721,3 +2721,44 @@ source found for the contrast, so not drawn); Avot de-Rabbi Natan's
 builders; the Talmud's speck and beam; Tolstoy (dropped from the copied
 paragraph to keep it short); the back-handed slap (Luke does not say
 "right cheek").
+
+## The plain notes on Luke 7 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/7.json`. Five searches for this
+chapter, with the book page's rows and the earlier ledger (Matthew 8 and 11;
+John 8, 11, 12 and 20).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Centurion, Antipas's forces "most likely", a Gentile | 1-10 | Earlier ledger (Matthew 8) | Earlier ledger |
+| Luke's two delegations; Matthew's short form or Luke's fuller form: both views | 1-10 | Repository chapter note (`historical`) | Repository; no names |
+| Acts 10:2; slave (doulos) at 7:2; "highly valued" | 1-10 | BSB; Greek text | Earlier ledger (Matthew 8); repository |
+| 2 Kings 5:15; Ruth 4:17; Psalm 107:20 | 1-10 | BSB | Repository |
+| Nain identified with Nein on the hill of Moreh, a few miles from Nazareth | 11-17 | Earlier ledger (book page) | Earlier ledger |
+| Shunem on the other side of the same hill, a few miles away | 11-17 | Bible atlases and dictionaries | Search: biblehub.com atlas Shunem; itsgila.com; evangelicalmagazine.com "The city of Nain". Sides of the hill vary in the sources, so only "the other side" is said |
+| Splanchnizomai, moved deep inside | 11-17 | Earlier ledger (Matthew 9) | Earlier ledger |
+| Quick burial (Acts 5:6-10); corpse uncleanness (Numbers 19:11); open bier inferred from the man sitting up | 11-17 | BSB | Repository; stated as "probably" |
+| 1 Kings 17:23 "gave him to his mother" and Luke 7:15; 2 Kings 4:32-37; Psalm 68:5; Deuteronomy 10:18; 1:68 | 11-17 | BSB | Repository |
+| Grief care: the John 11 lines ("this story does not say you were loved less"; "Grief is not unbelief"; "If grief is crushing you, do not carry it alone. Reach out to people you trust, to a pastor, or to someone trained to help") | 11-17 | John 11 plain note | Copied word for word where marked; the first adapted to the widow |
+| John 11:25, 11:35 | 11-17 | BSB | Repository |
+| John's question; the two readings of John's doubt; the care line | 18-23 | Matthew 11 plain note | Repository; Chrysostom not named here |
+| "At that very hour" only in Luke (7:21) | 18-23 | BSB against Matthew 11 | Repository |
+| 4Q521: the Lord will heal the wounded, give life to the dead, bring good news to the poor | 18-23 | Dead Sea Scroll | Search: en.wikipedia.org 4Q521; jamestabor.com; library.biblicalarchaeology.org "Parallel miracles". Paraphrased |
+| Isaiah 35:5; 26:19; 61:1; Malachi 3:1; Proverbs 9:1-6 | 18-35 | BSB | Repository |
+| Reed, fine clothes, children's games; "least in the kingdom" | 24-35 | Matthew 11 plain note | Repository. The Antipas reed coin not used |
+| 7:29-30 only in Luke; Matthew 11:19 "by her actions" against Luke 7:35 "by all her children" | 24-35 | BSB | Repository |
+| Reclining on couches, leaning on one elbow, feet away from the table | 36-50 | Reference works on ancient dining | Search: biblicaltraining.org "Triclinium"; julianspriggs.co.uk "Reclining"; tips.translation.bible (SIL on 7:36) |
+| Denarius a day's pay (Matthew 20:2) | 36-50 | BSB | Repository |
+| Water for feet, kiss, oil (Genesis 18:4; Psalm 23:5); "may not have been required" | 36-50 | BSB; repository chapter note (`cultural`) | Repository |
+| Mishnah Ketubot 7:6: a wife going out with her head uncovered may be divorced without her settlement; around 200, later; may not show first-century Galilee | 36-50 | Mishnah | Search: cts.perseids.org Ketubot 7.6; myjewishlearning.com "Hair Coverings for Married Women"; etzion.org.il. The link to the woman's hair is given as "suggests how the gesture might have looked", since no source found draws it |
+| Not Mary Magdalene (8:2 introduces her as new), not Mary of Bethany (John 12:1-8); Gregory the Great's sermon of 591 blended them; the Eastern churches kept them apart | 36-50 | Earlier ledger (John 12 and 20) | Earlier ledger, same wording where possible |
+| Her sin not named; "a prostitute" not in the text | 36-50 | BSB | Repository |
+| 7:47 hoti: love as evidence of forgiveness (the parable; the end of the verse), or love as part of the way to forgiveness; both readings in more than one tradition; 7:50 | 36-50 | NET note; Barnes; Pulpit Commentary; catena of the Fathers as summarised | Search: biblia.com NET note on 7:47; ccel.org Barnes; biblehub.com commentaries; catenabible.com; tips.translation.bible. No tradition labelled; no writer named; no side taken |
+| Psalm 32:1; Isaiah 1:18; 1 Samuel 1:17 | 36-50 | BSB | Repository |
+| Sexual shame care line, the John 8 sentence word for word | 36-50 | John 8 plain note | Copied word for word |
+
+Left out: the Capernaum synagogue's foundations under 7:5; Hanina ben Dosa
+and Vermes; John 4:46-54 as the same event; Josephus on Machaerus (used in
+earlier chapters); m. Ketubbot 4:4 on flutes; Numbers 5:18; Lefèvre
+d'Étaples (1517) and the 1969 calendar; Raymond Brown by name; the Antipas
+reed coin; the alabaster's cost (no figure given).
