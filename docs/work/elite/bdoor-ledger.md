@@ -292,3 +292,40 @@ Left out: Josephus on Moses' cloud, the Mishnah on Elijah, 1 Enoch and 4 Ezra,
 Rabbi Akiva on Gehenna, Suetonius on drowning, the Mishnah on agents, the
 Hippocratic author's name, and the textual question of verses 44 and 46 (all in
 the deep note, not checked on this run).
+
+## The plain notes on Mark 10 (continuation run, 2026-11-19)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The land beyond the Jordan (Perea) ruled by Herod Antipas; John killed for speaking against his marriage | 10:1-12 | Earlier ledger (Antipas, Perea); Mark 6:17-18 | Earlier ledger; BSB text |
+| Herodias divorced her first husband while he was alive, against the laws of the Jews | 10:1-12 | Josephus, Antiquities 18.136 | Search: lexundria.com (Whiston 18.136); posenlibrary.com "Herodias Divorces Her Husband". Paraphrased, not quoted |
+| Shammai: only for something shameful; Hillel: even if she spoiled his dish; Akiva: even if he found another more beautiful | 10:1-12 | Mishnah Gittin 9:10 (written down around 200, earlier ledger) | Search: posenlibrary.com "Grounds for Divorce"; mishnah.org Gittin 9:10 |
+| Only the husband could divorce in Jewish law; a wife could in Roman law; Mark's verse 12 likely speaks to Roman readers | 10:1-12 | Scholarly summaries (Instone-Brewer; Posen Library "Divorce in Early Judaism") | Search: posenlibrary.com; douglasjacoby.com (Instone-Brewer PDF); christianhistoryinstitute.org. Stated as "likely" |
+| The certificate's essential words: she is permitted to any man | 10:1-12 | Mishnah Gittin 9:3 | Search: en.wikipedia.org Get; mishnah.org; sacred-texts.com (Epstein). Paraphrased |
+| The Damascus Document grounds a ban on two wives in a man's lifetime in Genesis 1:27 | 10:1-12 | CD 4:20-21 | Search: cojs.org (Baumgarten); palimpsest.stmarytx.edu CD text; intertextual.bible. Its scope (bigamy or remarriage) is debated, so the note says "a second wife in his lifetime" |
+| Catholic, Orthodox and Protestant positions on remarriage; Heth-Wenham view | 10:1-12 | Deep note (Trent, Catechism 2382-2386, Westminster 24.5-6) | Stated as positions without dates or section numbers |
+| Care: a person in an abusive marriage seeks safety, a pastor or counselor, a local domestic violence line; not legal advice | 10:1-12 | CLAUDE.md, "Care for the reader in the hard places" | Pastoral. No phone number given |
+| Paidion used of the child in 9:36 and the girl in 5:39-41; Luke 18:15 "babies" | 10:13-16 | Greek and BSB text | Repository text |
+| Aganakteō (indignant) used of Jesus only at Mark 10:14 in the Gospels; of the ten (10:41), others (14:4; Matthew 20:24; 21:15; 26:8; Luke 13:14) | 10:13-16 | Greek text in the repository (every G0023) | Repository Greek text |
+| Young (Matthew 19:20); ruler (Luke 18:18); "do not cheat" not one of the Ten; Deuteronomy 24:14 | 10:17-22 | BSB text | BSB text. "May stand in for 'do not covet'" given as a possibility |
+| Clement of Alexandria's Who Is the Rich Man That Shall Be Saved? is a sermon on Mark 10:17-31 arguing for freedom from the love of wealth | 10:17-22 | Clement, Quis dives salvetur (ANF vol. 2) | Search: ewtn.com; newadvent.org; logoslibrary.org. No date given |
+| Antony heard the Gospel's words to the rich man read in church and gave his family land away | 10:17-22 | Athanasius, Life of Antony 2 | Search: history.hanover.edu; ewtn.com; bkv.unifr.ch. No date given; 300 acres not used |
+| Camel and needle; Talmud's elephant through a needle's eye; no ancient evidence for a needle gate, which appears only many centuries later | 10:23-31 | b. Berakhot 55b; en.wikipedia.org "Eye of a needle" | Search: en.wikipedia.org; christiantoday.com; biblehub.com. Origin of the gate story (Theophylact or Anselm, contested) not given |
+| Jericho to Jerusalem: about 25 km, a climb of about 1,000 m from below sea level | 10:32-34; 10:46-52 | Bible Odyssey "The road to Jericho"; walking accounts | Search: bibleodyssey.com; waynestiles.com; jerusalemperspective.com |
+| Each step of the third prediction fulfilled (14:10; 14:64; 14:65; 15:15; 15:19-20; 15:37) | 10:32-34 | Mark | BSB text |
+| Lutron the price of release; Exodus 21:30; Daniel 7:14; Isaiah 51:17; Psalm 75:8; Isaiah 53:12 | 10:35-45 | Standard lexicons; BSB | BSB text |
+| Views of the ransom (to the devil; rejected; satisfaction; victory; a picture); debate over Isaiah 53 | 10:35-45 | Deep note | Stated as views; the deep note's names and dates (Origen, Gregory, Anselm 1098, Aulén) were not checked and are not given, except "the Reformers" |
+| Son of David first used of Jesus in Mark here | 10:46-52 | Mark's text | Repository text |
+| A poor man's cloak returned by sunset | 10:46-52 | Exodus 22:26-27 | BSB text |
+| Kyrie eleison; the Jesus Prayer drawn in part from Bartimaeus and Luke 18:13 | 10:46-52 | Liturgical summaries | Search: en.wikipedia.org "Kyrie"; orthochristian.com "Biblical Roots of the Jesus Prayer"; salvationist.ca |
+
+Narrowed: the deep note's line that the rich man's land was the safest wealth
+a family could hold, and that running and kneeling were unusual for such a man,
+were not checked and are not given. Clement and Antony are given no dates.
+
+Left out: Josephus's own divorce, Salome and Costobarus, m. Yevamot 14:1, b.
+Gittin 90b, the ketubbah, Tobit on treasure in heaven, Herod's winter palaces,
+Josephus on the Samaria route, Tertullian and Calvin on the children, Cranach,
+Hofmann's painting, and the lectionary (all in the deep note, not checked on
+this run). The suggestion that Bartimaeus was named because the first
+Christians knew him was cut (not checked this run).
