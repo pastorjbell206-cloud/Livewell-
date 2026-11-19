@@ -439,3 +439,32 @@ Before: "For years this was my strongest reason to reject the Bible, read aloud 
 Words: 398 before; 2,212 after.
 
 Sources: Younger 1990; Kitchen 2003; Dawkins 2006; Morriston 2009 (the best case against); Rauser 2009; Seibert 2009; Copan and Flannagan 2014; Boyd 2017; Underhill 1638.
+
+### What I ran, and what passed (sixth run)
+
+Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date). Each command watched to the end, one heavy command at a time:
+
+- `pnpm check`: exit 0.
+- All 36 commands of the content-gates step in `ci.yml`, one at a time, after rebuilding the search index (730 entries) and the passage index (26 chapter files rewritten): every one exit 0.
+- `pnpm test`: first run 1 failure, the hq test that lists the argued answers (it now names the three new ones; it also caught the Plato source entry, which had no four-digit year and was taken out of the list; Plato is still quoted in the text). Second run exit 0: 146 test files passed, 7 skipped; 1,651 tests passed, 73 skipped.
+- ESLint on `answers.ts` and `hq.test.tsx`: clean.
+- `pnpm build`, `pnpm run sitemap` (static fallback, no database here), `pnpm run prerender` (3,026 route files), `pnpm run audit:canonicals` (0 not prerendered, 0 failures): each exit 0. Two text-only edits made after the test run had started (Morgan's description; one sentence on the 2009 symposium) were checked with the search and passage index checks, the em-dash gate and ESLint, and were in the build.
+- Served with `scripts/serve-like-vercel.mjs` on port 4584, API stubbed, Playwright at 390 x 844 and 1440 x 900, day and night: on all three pages the scroll width equals the viewport, every section heading and the "Sources and further reading" list render, and the laid-out argument renders in its box. Screenshots: `/home/user/elite-shots/apol/run7-*`. Server stopped, `dist/` deleted.
+- Not run: Lighthouse. The cheap first-paint ideas from earlier runs still stand, unbuilt.
+
+### Not verified (sixth run)
+
+- Dawkins's "blind trust" definition is attributed to *The Selfish Gene* (1976) on the balance of search results; the book itself was not seen, and one result placed similar words elsewhere.
+- Morriston's and Rauser's articles could not be opened (the host is outside this session's network); both are paraphrased from the journal record and summaries, and Rauser's premises come from a reconstruction.
+- Joshua 23:12's ESV wording rests on search pages that matched the exact phrase.
+- No answer has been read by James.
+
+### Waits for James (sixth run)
+
+1. "I came to faith from atheism" (good without God) and "I have five sons" (the conquest) are each used once, as facts, with nothing added. Keep or cut as you like.
+2. Cut because they describe memories or habits we can't confirm: "I could not keep my footing there ... on a floor I swore was not under me" (good without God); "for years I accused believers of the exact posture I was standing in" (faith); "For years this was my strongest reason to reject the Bible, read aloud to win a room" and "three of my certainties turned out softer than I had sworn" (the conquest). If any is true as written, it can go back.
+3. The conquest answer now sets out four readings without choosing between them. The old answer leaned on two (ancient war rhetoric and judgment). If you want your own view stated, say which, and it can be named as yours with the tradition it comes from.
+
+### Next in the ranking
+
+"Why didn't the Bible just ban slavery?", then "What did the New Atheists get right?", "Can a life mean anything without God?", "What do Christianity and Islam actually dispute?", "What makes us human in the age of AI?".
