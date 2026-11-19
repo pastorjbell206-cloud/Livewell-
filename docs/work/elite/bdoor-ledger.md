@@ -5860,3 +5860,49 @@ No web search.
 | A lament with all its steps; used on the book page as the model lament | Book page, "Kinds of psalm" | Site's own teaching. "The shortest lament in the Bible" not stated (not checked); "one of the shortest laments in the Psalms" |
 | Habakkuk 1:2; Revelation 6:10; Hebrews 13:5 with Deuteronomy 31:6 | BSB | BSB text |
 | Care line shortened from Psalm 6's, pointing back to it | Psalm 6 plain note | Site's own wording |
+
+## The plain notes on Psalm 14 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Nabal "fool": morally senseless, not unintelligent; 1 Samuel 25:25 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Psalm 14 appears again as Psalm 53, "God" where 14 often has "the LORD" | Repository deep note (historical); BSB 53:1 | BSB text |
+| Romans 3:9-12 draws on 14:1-3; Luke 12:20 | BSB | BSB text |
+
+"There is no God": practical godlessness, pointing to the book page (10:4)
+and the Psalm 10 note; honest unbelievers not the target; Paul turns the
+words on everyone.
+
+## The plain notes on Psalm 15 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The tent David pitched for the ark (2 Samuel 6:17) | Repository deep note (historical); BSB | BSB text |
+| "Abide" as living as a guest | Repository deep note (cultural) | Site's own teaching |
+| Psalms 15 and 24 called entrance psalms by many scholars | Repository deep note on Psalm 24 (literary) | Stated as "many scholars call" |
+| No interest on loans to the poor (Exodus 22:25); loans after a bad harvest; interest and loss of land | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Isaiah 33:14-15; Micah 6:8; Matthew 5:37; Luke 19:8; Ephesians 2:8, 10; Hebrews 10:19 | BSB | BSB text |
+
+Not earning God's favour: the psalm given to a people already rescued; grace
+opens the door (Ephesians 2:8; Hebrews 10:19), good works follow (2:10).
+
+## The plain notes on Psalm 16 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Miktam meaning unknown; heads 16 and 56 to 60 | 1-6 | BSB headings by script; repository deep note | Script |
+| Land shared by lot (Joshua 14 to 19), measuring cord; Levites' portion the LORD (Numbers 18:20) | 1-6 | Repository deep note (cultural); BSB | BSB text |
+| Verses 3-4 hard to translate; versions differ | 1-6 | Repository deep note (literary) | Site's own teaching |
+| "Conscience" is "kidneys"; the right hand as protector's place | 7-11 | Repository deep note (cultural) | Site's own teaching |
+| Holy One (hasid) built on hesed | 7-11 | Psalm 4 ledger row (chasid) | Earlier ledger |
+| Shachat can mean "the pit"; some modern Bibles (NRSV, NLT) have "the Pit"; the Greek has "corruption/decay", and Acts quotes the Greek | 7-11 | biblehub.com commentaries on 16:10 and Acts 2:27 (Ellicott, Pulpit); tips.translation.bible on 16:10 | Search. The Greek word not named; the "mistaken derivation" view not stated |
+| Acts 2:25-32; 13:35-37; 1 Corinthians 15:20; Psalm 73:26; Lamentations 3:24; Matthew 22:37; Philippians 3:8 (paraphrased) | both | BSB | BSB text |
+
+Contested: whether David meant resurrection (three views, none chosen; all
+agree the apostles read it of an event).
