@@ -1164,3 +1164,38 @@ Dodd's, Jeremias's and Kingsbury's books; the textual notes on 13:35 and
 |---|---|---|---|
 | Matthew 7:23 echoes Psalm 6:8 ("Depart from me, all you workers of iniquity"); Isaiah 29:13 on lips and hearts; Amos 3:2 "Only you have I known"; "known" as chosen and bound in covenant | Matthew 7:21-23 | BSB | BSB text. The Luke 6:46 line moved from the Old Testament note to the end of "first hearers" |
 | Deuteronomy 19:15 (two or three witnesses); 1 Corinthians 15:4 "according to the Scriptures"; Luke 24:25; Psalm 16:10 quoted in Acts 2:27 | Mark 16:9-14 | BSB | BSB text. Paul "in the 50s" from the earlier ledger (Mark 16) |
+
+## The plain notes on Matthew 14 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/14.json`. Five searches for this
+chapter, with the earlier ledger (Mark 6).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Antipas, son of Herod the Great, ruled Galilee 4 BC to AD 39; tetrarch, never king | 1-12 | Earlier ledger (Mark 6) | Earlier ledger; "tetrarch" (14:1) and "king" (14:9) from the BSB |
+| Mark: Herodias wants John dead, Herod protects him; Matthew: Herod wants to kill him, fears the people | 1-12 | Mark 6:19-20; Matthew 14:5 | BSB comparison |
+| Josephus: John a good man; Herod feared John's great influence over the people might lead to a rebellion; killed at Machaerus | 1-12 | Josephus, Antiquities 18.116-119 | Search: lexundria.com 18.117-118 (Whiston: "feared lest the great influence John had over the people might put it into his power and inclination to raise a rebellion"); livius.org. Paraphrased. This narrows the Mark 6 run's "suspicious of John's influence" with the wording now found |
+| Josephus names Herodias's first husband Herod; her daughter Salome married Philip the tetrarch | 1-12 | Josephus, Antiquities 18.136-137 | Search: lexundria.com 18.136-137 (Whiston; "[Philip]" is the translator's bracket) |
+| Two explanations of the names: the man bore both names (Josephus calls more than one son of Herod "Herod"); or the Gospel writers confused him with Philip the tetrarch | 1-12 | Lexham Bible Dictionary "Herod Philip"; biblicaltraining.org; Encyclopedia of the Bible "Herodias" | Search. Kokkinos's three-marriage idea not used |
+| 2 Maccabees 6:7: Jews forced to eat sacrifices at the king's monthly birthday | 1-12 | 2 Maccabees 6:7 | Search: biblestudytools.com NRSV, KJVA; tips.translation.bible. No date given for the book; the king not named |
+| Korasion at 9:24-25 and 14:11 | 1-12 | Greek text (G2877) | Script |
+| Matthew 11:14; 17:12; 1 Kings 21:25; 19:2; Leviticus 18:16; Genesis 40:20-22; Judges 11:31, 34; Matthew 5:37; 27:57-60 | 1-12 | BSB | BSB text |
+| Withdrawal after John's death (Matthew) against after the mission (Mark); "healed their sick"; "in addition to women and children" only in Matthew | 13-21 | Matthew 14:13-21; Mark 6:30-44 | BSB comparison |
+| Exodus 12:37 "besides women and children"; Exodus 16:35; 2 Kings 4:43; Matthew 26:26 | 13-21 | BSB | BSB text |
+| Told in Mark 6, Luke 9 and John 6; barley loaves and a boy (John 6:9) | 13-21 | BSB | BSB text. "The only miracle in all four" (deep note) not used; "one of the few events" |
+| Skeptical readings (shared food; a story built from the Old Testament) | 13-21 | Standard positions | Stated as views, no names. Hume, Paulus, Strauss, Lewis and Keener (deep note) not named |
+| Fourth watch about 3 to 6 a.m. | 22-33 | Earlier ledger (Mark 6) | Earlier ledger |
+| Matthew omits "intended to pass by" and the hardened hearts, adds Peter, ends in worship; first time the disciples together say "Son of God" in Matthew | 22-33 | Matthew 14:22-33; Mark 6:45-52 | BSB comparison; earlier uses of "Son of God" in Matthew are by the devil, demons and the voice from heaven |
+| Distazō only at 14:31 and 28:17 in Matthew; oligopistos at 6:30, 8:26, 14:31, 16:8 | 22-33 | Greek text (G1365, G3640) | Script |
+| Augustine, Sermon 76 (Benedictine numbering): the sea is this world, Peter a figure of the one church, walking by the Lord's power, the church holds strong and weak | 22-33 | Augustine, Sermon 76 | Search: newadvent.org (NPNF "Sermon 26", Benedictine 76); ccel.org; clerus.org. Paraphrased; no year given |
+| Egō eimi | 22-33 | Earlier ledger (Mark 6) | Earlier ledger |
+| Job 9:8; Psalm 77:19; Psalm 107:28-29; Isaiah 43:10; Psalm 18:16 | 22-33 | BSB | BSB text |
+| Care: "little faith" is not a rebuke of anxiety; the Matthew 8 sentences reused | 22-33 | Matthew 8 plain note | Repository |
+| Kraspedon at 9:20, 14:36 and 23:5; Numbers 15:38-39 | 34-36 | Greek text (G2899); BSB | Script; BSB text |
+
+Left out: Malthace; Lugdunum; Herodias "in defiance of the ancestral laws"
+(18.136); the Mishnah on birthdays of kings and on beheading; Tobit on
+burial; Vörös and the Machaerus excavations; John's tomb at Sebaste and
+Rufinus; Juvenal's baskets; the Mishnah's bread blessing; Bethsaida;
+Chrysostom's two tables (the contrast kept, unattributed); Origen; Giotto's
+Navicella; Moreau; Held; the lectionaries; the date of 2 Maccabees.
