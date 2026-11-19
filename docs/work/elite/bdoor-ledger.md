@@ -3669,3 +3669,22 @@ this chapter, with the book page's "curse of Ham" row.
 | Semitic from Shem; Gibeonites as servants (Joshua 9:23) | 24-29 | Repository deep note (`historical`); BSB | Repository |
 | "The curse of Ham" paragraph copied word for word from the book page (from "Yet for centuries" to "about race") | 24-29 | Book page; Goldenberg row | Repository (checked by script: the paragraph appears verbatim) |
 | Ezekiel 18:20; Matthew 1:5; Matthew 15:22-28; Acts 17:26; Galatians 3:28; Revelation 7:9 | 24-29 | BSB | Repository |
+
+## The plain notes on Genesis 10 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/10.json`. Two web searches for this
+chapter, with the repository lexicon.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Madai the Medes; Javan the Ionians or Greeks; Gomer the Gimirrai (Cimmerians); Tubal and Meshech northern peoples | 1-5 | Identifications | Search: Bible Odyssey and biblicaltraining.org "Table of Nations"; Josephus as quoted; JBL 1925 (biblicalstudies.gospelstudies.org.uk). "Usually linked" for Gomer; some names "cannot now be placed" |
+| Kittim Cyprus; Tarshish a distant Mediterranean port (Jonah 1:3) | 1-5 | Lexicon; BSB | Repository lexicon (H3794, H8659) |
+| Isaiah 66:19 (only the dash-free words quoted); Ezekiel 38:2; Revelation 20:8 (cited, not quoted) | 1-5 | BSB | Repository |
+| Mizraim Egypt; Cush south along the Nile (Ethiopia); Put probably Libya; Caphtor (Crete) and Amos 9:7; Asshur Assyria; Aram Syria; Elam east of Babylon | 6-20, 21-32 | Lexicon; BSB | Repository lexicon (H4714, H3568, H6316, H3732, H0804, H0758, H5867) |
+| Gibbor in 6:4 and 10:8; Nimrod's cities (Uruk for Erech); no historical Nimrod confirmed | 6-20 | Repository deep note (`historical`, `words`) | Repository |
+| Canaanite language close to Hebrew yet under Ham; Elamite unrelated yet under Shem; the list not a racial table | 6-20 | Repository deep note (`cultural`) | Repository |
+| Isaiah 19:25; Psalm 87:4; Micah 5:6; Acts 2:10-11 | 6-20 | BSB | Repository |
+| Peleg and palag (10:25); mishpachah in 10:5, 10:20, 10:31 and 12:3 | 21-32 | Hebrew text | Script (H6389, H6385, H4940) |
+| Eber and ‘Hebrew’ | 21-32 | Not checked | Stated as "may ... not certain" |
+| Seventy names in the Hebrew, seventy-two in the Greek; Luke 10:1 seventy or seventy-two in the manuscripts (BSB seventy-two); the link to the nations argued, not proved | 21-32 | Text and interpretation | Search: Bible Hub "Were there 70 or 72 disciples?"; Faithlife Study Bible sidebar; ESV Study Bible note as quoted; biblicaltraining.org "Seventy Disciples" |
+| Genesis 46:27 (seventy); Acts 17:26; Matthew 28:19; Revelation 7:9 | 21-32 | BSB | Repository |
