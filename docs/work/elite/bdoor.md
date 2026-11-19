@@ -2074,3 +2074,162 @@ screen, nothing on first paint). Server stopped; dist/ deleted; no lh-*.json.
 ### Next
 
 John 12 onward, in the same shape.
+
+## Continuation: John 12 to 16 (2026-11-19)
+
+### A check first: the John 8:44 sentence
+
+The John 8 note says "In the 1930s Nazi propaganda put it in a book for German
+children." The ledger already had a row for it: Der Giftpilz (Ernst Hiemer,
+Stürmerverlag, Nuremberg, 1938), from the German Propaganda Archive's
+translation "What Christ Said about the Jews", in which a mother tells her
+children that Jesus told the Jews their father is the devil. One new search
+confirmed the archive's description (the page itself cannot be fetched from
+here). 1938 is in the 1930s, so the sentence stands unchanged. Elvira Bauer's
+book of 1936 is not named on the page and was not checked for this verse. The
+re-check is recorded under the John 8 ledger section (commit `cedecf75`).
+
+### Chapters 12 to 16 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| John 12 | 7 (Mary pours out the perfume; a plot against Lazarus too; the king comes on a donkey; the grain of wheat; now My soul is troubled; He has blinded their eyes; not to judge the world, but to save it) | 4,466 |
+| John 13 | 5 (Jesus washes their feet; I have set you an example; one of you will betray Me; a new commandment; before the rooster crows) | 3,107 |
+| John 14 | 5 (many rooms in My Father's house; I am the way and the truth and the life; whoever has seen Me has seen the Father; another Advocate, the Spirit of truth; peace I leave with you) | 3,359 |
+| John 15 | 5 (I am the true vine; apart from Me you can do nothing; no longer servants, but friends; if the world hates you; the Spirit will testify) | 2,854 |
+| John 16 | 5 (they will put you out of the synagogues; it is for your benefit that I am going away; He will guide you into all truth; your grief will turn to joy; I have overcome the world) | 3,059 |
+| Total | 27 | 16,845 |
+
+John 1 to 16 now: 95 passages, about 57,500 plain words. Each chapter note
+carries `"plain": true`.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field (happening,
+hearers, ot, hard, asks) and read; all 27 sit under their right headings, each
+"Old Testament behind it" names Old Testament books, and no field is out of
+place. `validate-bible-notes` passed after each chapter with no exceptions
+(`OT_FIELD_KNOWN` stays empty). No page code changed, so no build was run.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on John 12" to "16". 24 web
+searches (4, 4, 4, 5, 6) plus one for the 8:44 check. New: m. Ketubbot 7:6;
+Gregory the Great's sermon of 591 and the 2021 memorial of Martha, Mary and
+Lazarus; Dostoevsky's epigraph; Chrysostom (Homily 68 on John) and Augustine
+(Tractate 53) on 12:39; J. C. Thomas's survey of foot washing; the churches that
+keep foot washing as an ordinance; "Maundy" from mandatum; "many mansions" and
+the Latin mansiones; paraklētos; the Jehovah's Witness reading of 14:28;
+Augustine, On the Trinity 1.7.14; Josephus on the golden vine (War 5.210);
+airei in 15:2; Hellenistic kings' "Friends"; m. Avot 1:6; the filioque; the
+Rhineland massacres of 1096; Felix Manz (1527); elenchō; Westminster
+Confession 1.6; Dei Verbum 8. Creed wording is copied from the site's Nicene
+and Athanasian Creed pages; help wording from the site's answer "Is my anxiety
+a spiritual failure?".
+
+### Cut or narrowed
+
+Cut because they could not be confirmed or were met only in summaries: the
+Mekilta on the Hebrew slave and foot washing (searched, not found); Gregory of
+Nazianzus, Oration 30.7 (searched, not confirmed, so the "source" reading of
+14:28 is given without his name); what the 1969 Roman calendar changed
+(sources disagree); the Jewish wedding-custom reading of 14:2 (later sources);
+Plato's Phaedo on orphans; Pliny's nard prices; Luther's On the Jews and Their
+Lies; the Muslim reading of the Paraclete (not checked this run). Scholars
+named in the deep notes but not checked here are not named (Bauckham, Brown,
+Carson, Martyn, Kimelman, Bernier, Reinhartz, Hick, Newbigin, Marshall and
+others). Narrowed: Josephus's golden vine "as tall as a man" is credited to the
+War only; "Tyndale ... in the 1520s" (sources give 1525 or 1526); the Avot
+contrast is "may have sounded unusual"; "lift up" is "one of the word's basic
+meanings"; no death toll for 1096 and no day for Manz's execution.
+
+### Contested matters, and how they are stated
+
+12:1-8: the Bethany anointings (same evening or two; Luke 7 a different
+story); Mary is not Mary Magdalene. 12:8 is not leave to neglect the poor
+(Deuteronomy 15:7, 11; Mark 14:7; 13:29; Matthew 25:40). 12:32 "everyone"
+(all kinds; every person drawn though not all come; the hope of a few that all
+will be saved; "These notes do not settle it"). 12:37-41: Chrysostom,
+Augustine, the tradition that stresses God's choosing, and the reading of
+hardening after long refusal, closing with the Mark 4 and Matthew 13 sentence
+("Christians who stress God's choosing and those who stress human freedom
+have read these verses differently for centuries. These notes do not settle
+it."); "many of the leaders believed" (12:42) and "These verses are not a
+verdict on the Jewish people." 13:1 and the Passover date (views, open).
+13:14 foot washing as a rite (ordinance churches named; Catholic Holy Thursday
+optional; others read a call to service; "These notes take no side"). 13:27
+Judas (his own motive; foreknowledge views; "These notes do not say what God
+did with Judas. That belongs to God.", the Matthew 27 wording). The beloved
+disciple in the book page's terms. 13:34 "new". 14:12 "greater works" (reach,
+not bigger miracles). 14:13-14 ask in My name (Mark 11 and Matthew 7 line; no
+prosperity reading). 14:28 (Arius; Jehovah's Witnesses, "sincere, and they
+deserve a patient answer, not scorn"; Nicaea; the Nicene and Athanasian Creed
+wording; Augustine; the "source" reading). 15:2 airei (two renderings, no
+side). 15:6 perseverance (the John 10 views and wording, plus the lost-reward
+reading; "open for discussion and not a cause for division"; a line for the
+frightened reader). 15:18-25 "the world" is not a people; no leave to despise
+anyone; not every hardship is persecution. 15:26 the filioque (stated, no
+side). 16:13 to whom the promise is given (many Protestants with Westminster
+1.6; the Catholic Church with Dei Verbum 8; the Orthodox; Pentecostals; "These
+notes take no side").
+
+**14:6, the sentences on the page.** In "What a first-century hearer would
+catch": "The church confesses these words as they stand. They claim that Jesus
+is not one guide among many, pointing toward God from a distance. He is
+himself the way to the Father, because he is the truth about God and the life
+of God come among us. Whoever comes to the Father comes through him." In the
+hard question: "It is not said in scorn of anyone, and it gives no one leave to
+look down on people of other faiths or of none." And: "On this site, the
+answers ‘Is Jesus really the only way to God?’ and ‘What about those who never
+heard of Jesus?’ set those views out fairly. These notes take no side among
+them."
+
+**16:2, the sentences on the page.** "‘Whoever kills you will think he is
+offering a service to God’ is not a charge against the Jewish people. Jesus
+and all eleven friends listening to him were Jews." Then, once: "And
+Christians have done this very thing. Christians have killed Jews and thought
+they served God, as crusaders did when they massacred the Jewish communities
+of Worms and Mainz in 1096. Christians have killed other Christians and thought
+they served God, as when the Protestant authorities of Zurich drowned the
+Anabaptist Felix Manz in 1527 for baptizing adults. This verse warns the church
+as much as anyone. It gives no one, ever, leave to hate or hurt another person
+in God's name."
+
+### Care lines included
+
+12:20-26 ("hates his life" is not self-hatred; for a reader with thoughts of
+not living, the site's help wording word for word, with 988). 12:37-43 (a
+reader afraid that doubt means God has shut them out). 13:12-20 (service is not
+staying under abuse; seeking safety is not disobedience). 13:21-30 (betrayed
+by someone close). 13:36-38 (the reader who has failed Jesus: Luke 22:32; three
+denials, three chances to say yes). 14:1-4 (troubled is not sin; grief at
+funerals). 14:15-24 (orphans: lost a parent, grew up without a father). 14:27
+("Do not be afraid" is not a rebuke of anxiety; the site's help wording word
+for word). 15:5-8 (the reader frightened by verse 6). 15:18-25 (suffering for
+the name). 16:1-4 (hurt by religious people, in a church too). 16:16-24 (long
+sorrow; loss in pregnancy or childbirth, or longing for a child; "Reach out to
+people you trust, to a pastor, or to someone trained to help"). 16:25-33 (left
+alone in a crisis).
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass. At
+the end, all 36 commands of the content-gates step, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 60 chapters in
+plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732
+entries up to date; passage index 623 files match; verify-sources 22 texts
+intact). `pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped; 1,657
+tests passed, 73 skipped. No build (no page code changed); no server; no
+Lighthouse; no lh-*.json; no dist/.
+
+### Still unverified
+
+Free Will Baptists' ordinance is from a list citing their statement, not the
+statement itself. The Jehovah's Witness reading of 14:28 rests on a mirror of
+their library and on critics' summaries; the page states it generally and
+quotes nothing. The Orthodox and Pentecostal positions on 16:13 are stated
+generally, without a document.
+
+### Next
+
+John 17 onward, in the same shape.
