@@ -4486,3 +4486,36 @@ chapter, with the deep note and the verse notes.
 
 Cut: royal birthday festivals in later Egyptian texts; Egyptian bread
 varieties.
+
+## The plain notes on Genesis 41 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/41.json`. Five web searches for
+this chapter, with the deep note, the verse notes and the book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seventeen (37:2) to thirty (41:46): thirteen years | 1-13 | BSB | Repository |
+| Pharaoh unnamed; the Nile's yearly flood and failed harvests; the east wind hot and dry | 1-13 | Deep note (`historical`); verse notes | Repository |
+| Daniel 2:28; Daniel 1:20 | 1-13 | BSB | Repository |
+| Egyptian men of rank usually clean-shaven; Egyptian art often shows men from Canaan with beards | 14-24 | Deep note (`cultural`) | Search: "Genesis 41:14 Joseph shaved Egyptians clean-shaven custom" (biblehub.com commentaries citing Wilkinson and Herodotus; bibletruthpublishers.com Freeman). Older commentaries; kept general |
+| Bil'adai one word ‘apart from me’; clothing through Joseph's life | 14-24 | Deep note (`literary`); Hebrew text | Repository |
+| Psalm 105:19-21; 1 Peter 5:6 | 14-24 | BSB | Repository |
+| Doubled dream settled by God (32); Joseph's plan of a fifth stored in cities | 25-36 | BSB; deep note (`literary`, `cultural`) | Repository |
+| Famine Stela: Sehel Island near Aswan; seven-year famine under Djoser; carved in the Ptolemaic period; seven-year famine a common Near Eastern motif | 25-36 | Deep note (`historical`) | Search: "Famine Stela Sehel Island Ptolemaic seven years famine Djoser" (Wikipedia "Famine Stela"; egymonuments.gov.eg; attalus.org). No claim about Joseph |
+| Proverbs 6:8; Acts 7:11 | 25-36 | BSB | Repository |
+| ‘Spirit of God’ / ‘spirit of the gods’ | 37-46 | Deep note (`words` H7307G) | Repository |
+| Signet ring = authority to seal orders in the king's name; fine linen; gold chain a mark of honor | 37-46 | Deep note (`cultural`) | Search: "Egyptian gold of honour collar ... signet ring linen Genesis 41:42" (biblehub.com commentaries). The Egyptian ‘gold of honour’ institution was not confirmed and is not named |
+| Abrek probably Egyptian, meaning uncertain | 37-46 | Deep note (`cultural`) | Same search (no meaning found); stated as uncertain |
+| Zaphenath-paneah an Egyptian kind of name, meaning disputed (Steindorff, Vergote, Kitchen proposals) | 37-46 | Deep note (`historical`) | Search: "Zaphenath-paneah meaning debated" (tips.translation.bible; NET note on biblia.com). No meaning given on the page |
+| Asenath ‘she belongs to Neith’ (HALOT), ‘many scholars think’ | 37-46 | Lexicon | Same search (NET note citing HALOT) |
+| On = Heliopolis ‘city of the sun’, near Cairo, centre of the worship of Ra | 37-46 | Deep note (`historical`) | Same search |
+| Joseph's date: the book page's sentence (traditional early second millennium, Joseph somewhat later; many doubt dating); Hyksos about 1650-1550 BC, West Asian rulers of northern Egypt, a view linking Joseph to them; an earlier placing; a later composition | 37-46 | Book page (`readers`/intro); deep note (`historical`) | Search: "Joseph Hyksos period theory 1650-1550 BC" (biblicalarchaeology.org "Imagining Joseph in Egypt"; studylight.org Holman dictionary "Hyksos"). Views only; no side |
+| Psalm 105:21; Daniel 2:48; Luke 1:52 | 37-46 | BSB | Repository |
+| Grain ‘like the sand of the sea’ and 22:17; Manasseh ‘making forget’, Ephraim ‘fruitful’; Asenath an Egyptian priest's daughter stated twice (45, 50) | 47-57 | Deep note (`cultural`); BSB | Repository |
+| Famine policy told only as far as chapter 41; chapter 47 named as where the rest comes | 47-57 | BSB | Repository |
+| Genesis 48:5, 20; 12:3; John 2:5 | 47-57 | BSB; deep note (`christ`) | Repository |
+
+Cut: Potiphera ‘the one whom Ra has given’ (not confirmed by the search);
+the Egyptian ‘gold of honour’ awards; Aper-El at Saqqara; Redford and
+Kitchen on the names; the Middle Kingdom ‘nineteenth century BC’ date;
+Ptolemaic priestly motives for the stela.
