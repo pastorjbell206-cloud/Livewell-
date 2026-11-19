@@ -1927,3 +1927,41 @@ Bauckham's family link; Qumran's night study; Jubilees and 1QS on the spirit;
 b. Yevamot 22a; Barnabas and Justin on the snake; Wesley, Colson, Carter and
 the 1976 "born again" story; Rollen Stewart's signs; Michelangelo and Tanner;
 Hick, Nash and Pinnock by name; the Madaba map's Aenon.
+
+## The plain notes on John 4 (2026-11-19)
+
+`client/public/bible/notes/john/plain/4.json`. 7 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Jesus did not himself baptize (4:2); dei in 4:4 as in 3:7, 3:14 | 1-6 | BSB; Greek text in the repository | Script |
+| Hours counted from sunrise; sixth hour about noon, seventh about 1 p.m. | 1-6, 43-54 | Earlier ledger (Mark 15) | Earlier ledger |
+| Samaritans worshipped the God of Israel, kept the five books of Moses, worshipped at Gerizim; temple destroyed by John Hyrcanus about 111 or 110 BC (coins) | 1-6 | Worlds ledger (Jewish life portrait); earlier ledger (Matthew 10) | Earlier ledgers; same wording as the portrait |
+| Bones scattered in the temple at Passover (Antiquities 18.29-30); Galilean pilgrims killed at Ginea (Antiquities 20.118) | 1-6 | Josephus | Worlds ledger (second check 2026-11-18). No date given for Ginea |
+| 2 Kings 17:24; Ezra 4:3; the Samaritans' own account as descendants of the northern tribes | 1-6 | BSB; Samaritan self-understanding in reference works | BSB text; search below (israelite-samaritans.com) |
+| About 900 Samaritans today, in Holon and at Kiryat Luza on Mount Gerizim | 1-6 | Population figures | Search: en.wikipedia.org Samaritans (about 900 in 2024; about 460 Holon, 380 Kiryat Luza in 2021); israelite-samaritans.com population survey; refworld.org. "About nine hundred" |
+| Genesis 33:19; Joshua 24:32 | 1-6 | BSB | BSB text |
+| Ou sunchrōntai (4:9): "associate with", or Daube (1950) "do not use vessels in common"; some modern Bibles follow him (NET, NRSV); others keep "associate"; the Greek reading questioned | 7-15 | Daube, JBL 69 (1950) as cited; NTS article "Sharing Cups, Associating, or Getting Help?"; NET note | Search: cambridge.org NTS; biblia.com NET note; biola.edu blog. Daube's article itself not read, so only his proposal is stated, as a proposal; no Bible version named on the page |
+| Living water = running water as against a cistern | 7-15 | Lexicons; Leviticus 14:5 sense; deep note | Common reference fact; kept general |
+| Kurios "Sir" and "Lord" | 7-15 | Greek text in the repository | Script |
+| Jeremiah 2:13 (cut before its em-dash); Zechariah 14:8; Isaiah 44:3; 55:1; John 7:37-39 | 7-15 | BSB | BSB text |
+| Divorce in the husband's hands (Deuteronomy 24:1); levirate marriage (Deuteronomy 25:5-6); Luke 20:28-33 | 16-19 | BSB | BSB text |
+| Scholars of women in the ancient world: she may have been widowed more than once or sent away, for example for being unable to have children; she could not end a marriage herself; her town listens to her | 16-19 | Lynn Cohick, Women in the World of the Earliest Christians (Baker Academic, 2009), as reported | Search: englewoodreview.org; cbeinternational.org review; scotmcknight.substack.com. Met only in reviews, so Cohick is not named on the page (no secondhand authority); the point is given to "some scholars who study women in the ancient world" |
+| The noon hour as evidence of shunning: the text does not say | 16-19 | Repository deep note (`cultural`, `teach.pitfalls`) | Repository |
+| Deuteronomy 18:15, 18 | 16-19 | BSB | BSB text |
+| "Woman" a polite address | 20-26 | Earlier ledger (John 2: NET note) | Earlier ledger |
+| Taheb, "the one who returns" or "Restorer", a figure built on the prophet like Moses, in later Samaritan writings; how early the name was used not certain | 20-26 | Reference works | Search: livius.org "The Samaritan Prophet"; israelite-samaritans.com; en.wikipedia.com Samaritanism. Marqah and his date not confirmed, not named |
+| Egō eimi in 4:26; the "I am" background debated | 20-26 | Greek text in the repository; book page ledger | Script; earlier ledger |
+| Genesis 12:3; Isaiah 2:3; 1 Kings 8:27; John 14:6; 3:5-8 | 20-26 | BSB | BSB text |
+| "Spirit": human spirit or Holy Spirit; many hold both | 20-26 | Repository deep note (`teach.pitfalls`) | Stated as views |
+| Mishnah Avot 1:5 (written down around 200): Yose ben Yohanan of Jerusalem advises men not to talk much with women | 27-38 | Mishnah | Search: sefaria.org sheets; en.wikisource.org Avot 1:5; myjewishlearning.com. Paraphrased and marked as later; "how far it reflects Jesus' day is not certain" |
+| Grain sown in late autumn, reaped in spring | 27-38 | Repository deep note (`cultural`) | Kept general ("months later"); no month count beyond the verse |
+| Amos 9:13; Micah 6:15; Acts 8:5-6 | 27-38 | BSB | BSB text |
+| "Savior of the world" used of emperors from Julius Caesar to Hadrian; Koester, JBL 109 (1990) 665-680 | 39-42 | Koester's abstract | Search: digitalcommons.luthersem.edu (abstract and citation); Richey (2007) citing it |
+| Isaiah 49:6 (in two quotations); Isaiah 45:22; 1 John 4:14 not used | 39-42 | BSB | BSB text |
+| Basilikos "king's man"; Herod Antipas called king (Mark 6:14) | 43-54 | Greek text in the repository; BSB | Script; BSB text |
+| "You people": verse 48 plural (idēte, pisteusēte) | 43-54 | Greek text in the repository | Script |
+| Psalm 107:20; 1 Kings 17:23; Mark 6:4; Luke 4:24; Matthew 8:5-13; Luke 7:1-10 | 43-54 | BSB | BSB text |
+| Which hometown (Judea or Galilee); one event or two with the centurion | 43-54 | Repository deep note | Stated as views, "These notes do not settle it" |
+
+Left out: Josephus on the route (Antiquities 20.118 as a custom; Life 269, three days) and the Ginea date; Magen's fifth-century precinct; the Samaritan Pentateuch at Deuteronomy 27:4; Marqah; the Passover sacrifice on Gerizim today; the 2007 church over the well and Jerome; m. Sheviit 8:10, m. Niddah 4:1 and Sirach 50:25-26; Alter's betrothal type-scene; Heracleon, Origen, Chrysostom and Augustine on the woman; the symbolic reading of the five husbands (Augustine as reported; Schneiders); Photini and the Eastern feast (searched and found, but kept out to keep the note on the text); Duccio and Bonar; Brown's Samaritan-converts theory; the miles from Cana to Capernaum.
