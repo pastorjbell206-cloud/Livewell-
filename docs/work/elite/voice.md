@@ -19,3 +19,13 @@ The prompts ask for writing that sounds like someone who went through it. In thr
 ## What was run
 
 Every content gate in the CI workflow (36 commands) passed, as did the essays index check, pnpm check and pnpm test (146 test files passed, 7 skipped). There was no build, because no code changed.
+
+## Second run: Bible background guides
+
+After the first five essays an audit counted where the tells really are, and the worst body of writing on the site was the 41 Bible background guides (the "Reading Scripture in Context" library). Their habit was the two-step you'll recognize, "It was not X. It was Y.", used over and over, often followed by a stack of very short sentences. This run took the fifteen guides with the most tells per thousand words and ran your six prompts over them as a teacher talking to an ordinary adult. Because these are reference pages, nothing became first person and no opinion was added; the few first-person lines some guides already had were left as they were.
+
+What changed: in those fifteen the two-step fell from 82 uses to 25 (each guide keeps one at its real hinge, such as "They aren't chapters. They're mail."), and the runs of three or more very short sentences fell from 34 to 2. The fragments were joined into ordinary sentences that say what the thing was and why the common reading misses it, contractions came in where a teacher would use them, and "honest", "simply" and the colon reveals mostly went. Length grew by 1.3 percent in all, under 3 percent in every guide. For example, "Shame was not a feeling. It was a location, the bottom of the ladder, visible to everyone." now reads "Shame, in that world, was where you stood, at the bottom of the ladder in full view, before it was anything you felt."
+
+What did not change: a script checked every guide before and after, and every quotation, Scripture reference, year, number, name, source, title, heading, kicker and group is exactly as it was in all fifteen. Every caveat about what scholars dispute and every fair statement of a view stayed. In the five political guides among the fifteen, the paired paragraphs addressed to the right and to the left were left untouched or given the same small change, so no side gained or lost anything.
+
+Waiting on you: several headings and subtitles are themselves the two-step ("Not Hygiene. Not Sin. Order.", "Not One Hope. Many."), and they were left because titles were held fixed. And seven guides quote the Berean Standard Bible, which capitalizes He and Him for God, while their own prose uses he and him; one guide (on Proverbs 3:5-6) capitalizes in its prose too. Which you want is your decision. The full record is in docs/work/elite/voice-ledger.md under the same heading.

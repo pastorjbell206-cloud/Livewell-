@@ -128,3 +128,128 @@ Mean sentence length and spread hardly moved (for example 16.5 words, sd 9.0, to
 
 - A true detail in place of a general line. Three places would gain most: "I lead one, and I feel that pull too." (doubt-after-church-abuse, the pull to protect a church's name); "Which of mine would?" (excavation-not-demolition, which of his sermons would not survive his sons' questions); and the father sentence in the-rise-of-the-nones, which now stops at the fact. None was invented here.
 - Whether to restore a line about his coming to faith from atheism in why-does-god-feel-far-away. The final read of 2026-10-28 cut "I came to faith as an adult, out of atheism, so I don't think that answer is stupid" when no biography could be stated; that fact is now confirmed, but restoring it would add a first-person claim, which this brief forbids. His call.
+
+---
+
+# Second run: Bible background guides
+
+Pass run 2026-11-19 on branch elite/voice, on the 41 guides in client/public/context/guides/*.json ("Reading Scripture in Context"). These are third-person reference writing, so under the brief lens 4 added no opinion and nothing became first person; the lenses meant a teacher talking to an ordinary adult. The first person that some guides already had ("Pastors, and I am one", "So do I.", "When I read Matthew 23") was kept, never enlarged, never added to.
+
+## Method
+
+The two scripts from the first run were adapted to the guides' shape (kept in /home/user/tmp-voice/g/scripts: guide2essay.mjs, gtells.mjs, gfact.mjs, gapply.py, rank.sh).
+
+- **Tell counter (gtells.mjs).** As before, with two changes: the "Not X. Y." detector is broader (any short negating sentence followed by a short positive one, which also catches "No ...", "never", "isn't"), and "three-beat fragments" now counts maximal runs of three or more sentences of eight words or fewer. It still over-counts (a list of names, "spoke Greek, not Hebrew. Their children ..."), so read it as direction.
+- **Fact diff (gfact.mjs).** Every field except the section bodies must be byte-identical: slug, title, subtitle, kicker, group, each section's id, kicker and title, keyTexts, sources. The bodies then go through the first run's factdiff.mjs: every quoted string, Scripture reference, year, number, number word, capitalized name (counted by occurrence), link and italic. One change: a capitalized word at the start of a sentence counts as a name only if its lowercase form appears nowhere in the site's guides, portraits and essays (a word list of about 8,900 words), so "Think" or "Trust" opening a new sentence is not read as a name. Words added to that list by hand after a false alarm: breathe, orators, factions, genital, gymnasiums. Length must stay within 5 percent. Edits were applied as exact old/new pairs, each matching once, and only the body strings were rewritten in the raw file, so the sources' one-line formatting in two files is untouched.
+- **Unquoted Scripture.** Several guides quote Scripture without quotation marks (the KJV lines in the-gods-of-the-nations, the ESV phrases in exile-not-empire, the-cities-of-paul and purity-and-contagion). The fact diff cannot see those, so each was kept word for word by hand and checked in the diff.
+
+## Ranking of all 41 (before)
+
+Tells per 1,000 words of our own prose (quotations blanked); "Not X. Y." is the broad count.
+
+| Rank | Guide | Words | Tells | Per 1,000 | "Not X. Y." |
+|---|---|---|---|---|---|
+| 1 | the-gods-of-the-nations | 921 | 28 | 30.4 | 6 |
+| 2 | septuagint-and-scripture | 902 | 27 | 29.9 | 6 |
+| 3 | exile-not-empire | 980 | 29 | 29.6 | 3 |
+| 4 | pharisees-sadducees-essenes | 922 | 27 | 29.3 | 2 |
+| 5 | honor-status-and-the-cross | 993 | 29 | 29.2 | 11 |
+| 6 | money-texts-we-explain-away | 990 | 28 | 28.3 | 2 |
+| 7 | the-cities-of-paul | 962 | 27 | 28.1 | 8 |
+| 8 | purity-and-contagion | 963 | 26 | 27.0 | 8 |
+| 9 | between-the-testaments | 899 | 24 | 26.7 | 6 |
+| 10 | gospel-against-empire | 909 | 24 | 26.4 | 4 |
+| 11 | the-kingdom-is-not-a-platform | 994 | 26 | 26.2 | 6 |
+| 12 | what-justice-meant | 1034 | 27 | 26.1 | 5 |
+| 13 | patronage-and-grace | 918 | 24 | 26.1 | 7 |
+| 14 | messianic-expectation | 908 | 23 | 25.3 | 5 |
+| 15 | left-lens-right-lens | 964 | 24 | 24.9 | 3 |
+| 16 | genesis-one-in-its-world | 910 | 22 | 24.2 | 5 |
+| 17 | hospitality-and-the-stranger | 968 | 23 | 23.8 | 1 |
+| 18 | temple-and-synagogue | 926 | 21 | 22.7 | 2 |
+| 19 | misreading-with-western-eyes | 956 | 19 | 19.9 | 5 |
+| 20 | the-bible-is-not-an-american-book | 978 | 19 | 19.4 | 4 |
+| 21 | the-slavery-texts | 994 | 19 | 19.1 | 5 |
+| 22 | covenant-and-treaty | 901 | 17 | 18.9 | 4 |
+| 23 | collectivist-world-individualist-readers | 955 | 18 | 18.8 | 5 |
+| 24 | honor-shame-vs-guilt | 923 | 17 | 18.4 | 4 |
+| 25 | wisdom-and-the-nations | 969 | 17 | 17.5 | 4 |
+| 26 | isaiah-41-10-in-context | 1451 | 25 | 17.2 | 1 |
+| 27 | psalm-91-in-context | 1458 | 23 | 15.8 | 5 |
+| 28 | philippians-4-13-in-context | 1536 | 24 | 15.6 | 4 |
+| 29 | women-in-the-ancient-world | 1040 | 16 | 15.4 | 3 |
+| 30 | did-the-gospels-get-jesus-right | 1072 | 16 | 14.9 | 2 |
+| 31 | torah-and-the-law-codes | 943 | 14 | 14.8 | 1 |
+| 32 | miracles-and-the-ancient-mind | 1042 | 14 | 13.4 | 4 |
+| 33 | romans-13-1-in-context | 1506 | 20 | 13.3 | 5 |
+| 34 | household-codes-in-context | 979 | 13 | 13.3 | 0 |
+| 35 | the-violence-of-the-old-testament | 1058 | 14 | 13.2 | 4 |
+| 36 | romans-8-28-in-context | 1452 | 19 | 13.1 | 3 |
+| 37 | 2-chronicles-7-14-in-context | 1388 | 18 | 13.0 | 0 |
+| 38 | matthew-7-1-in-context | 1451 | 16 | 11.0 | 2 |
+| 39 | proverbs-3-5-6-in-context | 1466 | 15 | 10.2 | 3 |
+| 40 | jeremiah-29-11-in-context | 1386 | 14 | 10.1 | 4 |
+| 41 | matthew-18-20-in-context | 1505 | 13 | 8.6 | 2 |
+
+All 41 before: 44,472 words, 164 "Not X. Y." (36.9 per 10,000 words; the audit's narrower count was 117), 58 runs of three or more short sentences. All 41 after: 44,658 words, 107 "Not X. Y." (24.0 per 10,000), 26 runs. The fifteen alone: 82 to 25, and 34 runs to 2.
+
+## The fifteen
+
+| Guide | Words before | Words after | Change | Tells before | Tells after | "Not X. Y." | Short runs | Fact diff |
+|---|---|---|---|---|---|---|---|---|
+| the-gods-of-the-nations | 921 | 946 | +2.7% | 28 | 13 | 6 to 1 | 3 to 1 | PASS |
+| septuagint-and-scripture | 902 | 928 | +2.9% | 27 | 10 | 6 to 2 | 0 to 0 | PASS |
+| exile-not-empire | 980 | 1009 | +3.0% | 29 | 12 | 3 to 2 | 3 to 0 | PASS |
+| pharisees-sadducees-essenes | 922 | 941 | +2.1% | 27 | 6 | 2 to 0 | 1 to 0 | PASS |
+| honor-status-and-the-cross | 993 | 1017 | +2.4% | 29 | 12 | 11 to 2 | 3 to 0 | PASS |
+| money-texts-we-explain-away | 990 | 1001 | +1.1% | 28 | 15 | 2 to 1 | 2 to 0 | PASS |
+| the-cities-of-paul | 962 | 968 | +0.6% | 27 | 13 | 8 to 2 | 1 to 0 | PASS |
+| purity-and-contagion | 963 | 969 | +0.6% | 26 | 7 | 8 to 1 | 4 to 0 | PASS |
+| between-the-testaments | 899 | 908 | +1.0% | 24 | 5 | 6 to 0 | 3 to 0 | PASS |
+| gospel-against-empire | 909 | 916 | +0.8% | 24 | 10 | 4 to 3 | 5 to 1 | PASS |
+| the-kingdom-is-not-a-platform | 994 | 999 | +0.5% | 26 | 14 | 6 to 3 | 1 to 0 | PASS |
+| what-justice-meant | 1034 | 1034 | 0.0% | 27 | 15 | 5 to 1 | 1 to 0 | PASS |
+| patronage-and-grace | 918 | 926 | +0.9% | 24 | 10 | 7 to 2 | 3 to 0 | PASS |
+| messianic-expectation | 908 | 918 | +1.1% | 23 | 13 | 5 to 2 | 1 to 0 | PASS |
+| left-lens-right-lens | 964 | 965 | +0.1% | 24 | 16 | 3 to 3 | 3 to 0 | PASS |
+| **Fifteen** | 14,259 | 14,445 | +1.3% | 393 | 171 | 82 to 25 | 34 to 2 | 15 of 15 |
+
+The "Not X. Y." left over are, in each guide, the one kept at its hinge ("They aren't chapters. They're mail."; "The four hundred years were not God's absence."; "The Pharisee is not a villain from someone else's religion."), the counter's false positives, and in the political guides the ones inside paired right-and-left paragraphs that were left alone on purpose (below). "honest" went from 7 uses to 2 (both literal: honest scales, honest speech), "simply" from 7 to 0, "verdict" from 5 to 3 (courtroom uses, plus the kicker "The Verdict", a field the fact diff holds fixed).
+
+## Eight before-and-after pairs
+
+1. honor-status-and-the-cross. "Shame was not a feeling. It was a location, the bottom of the ladder, visible to everyone." became "Shame, in that world, was where you stood, at the bottom of the ladder in full view, before it was anything you felt."
+2. the-gods-of-the-nations. "So Baal worship was not exotic. It was agricultural insurance. It was the religion of making sure. Elijah's contest on Mount Carmel was not a seminar on comparative religion. It was a public test, held in the third year of a drought, of who actually sends rain." became "Baal worship, then, wasn't anything exotic. It was agricultural insurance, the religion of making sure. That's why Elijah's contest on Mount Carmel, held in the third year of a drought, was a public test of who actually sends rain, and nobody there mistook it for a seminar on comparative religion."
+3. pharisees-sadducees-essenes. "And then there were the Pharisees, who chose none of those roads. Not accommodation. Not withdrawal. Not revolt. Their wager was ... without waiting for the politics to change. Holiness, at home, now." became "And then there were the Pharisees, who took none of those roads, neither accommodation nor withdrawal nor revolt. Their wager was ... without waiting for the politics to change. They wanted holiness at home, and they wanted it now."
+4. between-the-testaments. "One prophet falls silent and a carpenter's son appears, and we assume the story simply paused. It did not pause. Four centuries passed on that page. Three empires rose and fell on that page." became "One prophet falls silent and a carpenter's son appears, and we assume the story just paused, when in fact four centuries passed on that page, and three empires rose and fell on it."
+5. septuagint-and-scripture. "And remember what a Bible physically was. Not a bound volume on a nightstand but a cabinet of scrolls, expensive and communal, kept at the synagogue. ... The first century did not own Bibles. It knew them." became "Remember, too, what a Bible physically was. It was a cabinet of scrolls kept at the synagogue, expensive and shared, nothing like the bound volume on your nightstand. ... The first century didn't own its Bibles, but it knew them."
+6. patronage-and-grace. "That was the scandal. Not that God gives. Every god gave. The scandal was who receives." became "Every god gave, so the scandal was never that God gives. The scandal was who receives."
+7. exile-not-empire. "If not. No guarantee of winning. No requirement of winning. Faithfulness was never indexed to outcome." became "If not. There's no guarantee of winning in that, and no requirement to win either, because faithfulness was never tied to the outcome."
+8. purity-and-contagion. "Jesus does not mock the purity map or wave it away. He fulfills its deepest hope from the other direction. The holy is no longer merely guarded. In him it has gone on offense. Holiness has become the contagious thing." became "Jesus never mocks the purity map or waves it away. What he does is fulfill its deepest hope from the other direction, so that the holy, which once could only be guarded, goes on offense in him, and holiness becomes the contagious thing."
+
+## Left alone, and why
+
+- Every section heading, kicker, subtitle and title, including the headings that are themselves "Not X. Y." slogans ("Not Hygiene. Not Sin. Order." in purity-and-contagion, "Not One Hope. Many." in messianic-expectation, "Confidence, Not Anxiety" in septuagint-and-scripture) and the subtitles built the same way (the-gods-of-the-nations, purity-and-contagion, messianic-expectation). The brief holds titles and kickers fixed and the subtitle is the index blurb; changing them is James's call.
+- Every steelman and caveat: Sanders ("Scholars still argue over the edges"), "historians, skeptical ones among them, broadly agree", Wright and Barclay at equal weight with "genuinely contested", "There is real scholarship behind that reading", "Some of those arguments deserve real engagement", "Some of it was. Not all of it."
+- Lists that are really lists: the Torah laws with their references in money-texts-we-explain-away, "Gospel. Lord. Savior." (the three words the guide is about), "Nicodemus was a Pharisee. So was Gamaliel ... So was Paul" (each name earns its sentence), the three senses of charis.
+- Paraphrases attributed to a scholar or source (Cicero, Seneca, Hauerwas and Willimon, Newbigin, Keller, Barclay's "unconditioned ... not unconditional", Haidt's press secretary, Noll's "not by exegesis but by artillery"): wording kept or touched only by a contraction, because they are someone else's thought.
+- Unquoted Scripture lines, in whatever translation the guide already used.
+
+## Where a lens pulled against a guardrail, and the guardrail won
+
+- money-texts-we-explain-away. Lens 3 flagged the mirrored endings of the two escape-route paragraphs ("Money becomes a heart issue, and the heart, conveniently, is invisible." / "Compassion becomes a position, and positions are free."). Both paragraphs are untouched, so neither side's route is described more sharply than the other's.
+- what-justice-meant. The paragraphs "To my friends on the right ..." and "To my friends on the left ..." are untouched, including the left one's "The prophets were not activists for an agenda. They were witnesses against everyone". Taking the tic out of one paragraph only would have changed its weight against the other.
+- the-kingdom-is-not-a-platform. Lens 3 wanted the anaphora "It is not the Republican platform ... It is not the Democratic platform ... It is not a centrist compromise" broken up. All three stay as they were; only "It is a throne" and the sentence after it were joined.
+- left-lens-right-lens. The right-hand and left-hand sections got the same touch and nothing more: one contraction each ("That isn't balance. It's a tribe ..." / "They aren't reinterpreted; they just aren't preached."), two words shorter each.
+- gospel-against-empire. Lens 3 flagged "genuinely contested" as an intensifier and "The honest position holds both" as a stock line. "honest" went ("A careful reader can hold both"); "genuinely contested" stayed, because it is the caveat.
+- pharisees-sadducees-essenes. Lens 6 pulled toward "On his reading, Jews kept the law ..." to soften Sanders' claim into an attribution. Not done: the guide's own caveat follows two sentences later, and adding a hedge would change the claim.
+- gospel-against-empire and left-lens-right-lens. The fragments "Gospel." and "Change them." stay: the first is the capitalized term the guide is about, the second the spoken turn of the test question; rewriting either failed the fact diff (a capitalized word lost) and was worse prose besides.
+- the-gods-of-the-nations and others. Existing first-person lines ("I want to understand it ...", "So do I.") are left as they were. Reference writing should not gain first person, and these already had it; removing them is James's call, not this pass's.
+
+## He and he for God
+
+None of the fifteen mixes them: all fifteen use lowercase he/him/his for God in their own prose, and the Scripture they quote is lowercase too. Across the 41, the mixing is between the BSB quotations (which capitalize He, Him, His) and the guide's own lowercase prose, in seven guides: 2-chronicles-7-14-in-context, jeremiah-29-11-in-context, matthew-7-1-in-context, philippians-4-13-in-context, psalm-91-in-context, romans-13-1-in-context, romans-8-28-in-context. proverbs-3-5-6-in-context is the one guide that capitalizes in its own prose too (15 times), so it matches its quotations but not the rest of the library. Nothing was changed; James has not decided.
+
+## Gates
+
+All 36 content-gate commands in .github/workflows/ci.yml passed (list and last lines in /home/user/tmp-voice/gates.txt), pnpm check passed, pnpm test passed (146 test files, 1653 tests; 7 files and 73 tests skipped). node scripts/build-context-index.mjs rerun: guides-index.json unchanged (it reads only slug, title, subtitle and group). The search index and passage index --check runs were clean, so neither needed a rebuild. No build, no PDFs (they rebuild on deploy).
