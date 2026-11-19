@@ -5025,3 +5025,34 @@ learned secrets from a teacher, often for a price" cut to the deep note's
 "people paid for spells and charms"; a quotation of 2:38 that joined two
 parts of the verse with an ellipsis rewritten as a paraphrase and one exact
 quotation.
+
+## The plain notes on Acts 9 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/9.json`. 3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Damascus in Syria, about 220 km (135 miles) from Jerusalem, a large Jewish community with several synagogues | 1-9 | Deep note `historical`; standard geography | Repository; distance given as "about" |
+| "The Way" also 19:9, 23; 24:14 | 1-9 | BSB | Repository |
+| The three tellings (9; 22:6-16; 26:12-18); 9:7 "heard the voice" and 22:9 "could not understand"; older Bibles "heard not"; the Greek verb can mean hear a sound or understand, and the two verses differ in grammar (genitive and accusative); other scholars think the grammar too slight to carry the weight | 1-9 | BSB; deep note `hard`; book page hard line | Search: biblehub.com "Acts 9:7 vs. 22:9"; catholicexchange archive (against the case argument); tips.translation.bible acts-97; bibletools.org (Robertson). Both readings stated |
+| Genesis 22:11; Exodus 3:4; 1 Samuel 3:10; Galatians 1:15; Jeremiah 1:5; Isaiah 49:1, 6; 42:6-7; Isaiah 6:8 | 1-19 | BSB | Repository |
+| Ananias "a devout observer of the law" (22:12) | 10-19 | BSB | Repository |
+| Tarsus in Cilicia; Straight Street a main street of Damascus | 10-19 | Deep note `historical` | Repository. That the street can still be traced today not used |
+| Conversion or call: both views; Romans 11:1; Galatians 1:15-16; Philippians 3:8 | 10-19 | Deep note `hard` | Stated as views; Stendahl not named |
+| 2 Corinthians 11:26, 32-33; Aretas IV king of the Nabataeans about 9 BC to AD 40; how his governor had power in Damascus is debated | 20-25 | BSB; reference works | Search: Wikipedia "Aretas IV"; biblearchaeologyreport.com "Aretas IV"; biblicaltraining.org "Aretas". Nothing said of how or when Damascus came under him |
+| Galatians 1:17-19 (Arabia, three years, fifteen days with Cephas, James) alongside Acts 9:23-27 | 20-31 | BSB; book page part "Acts and Paul's letters" | Repository |
+| "The Jews" at 9:23 and the Grecian Jews at 9:29: opponents in one place; Saul, Ananias, the disciples are Jews; pointer to the 2:22-28 note | 20-31 | BSB; book page part "Acts and the Jewish people" | Repository |
+| Psalm 2:7 and Acts 13:33; Joshua 2:15; 1 Samuel 19:12; Deuteronomy 19:15; Proverbs 9:10 | 20-31 | BSB | Repository |
+| Barnabas "Son of Encouragement" (4:36); 11:25; 6:9; 8:1; Caesarea the governors' seat | 26-31 | BSB; earlier ledger (Acts book page) | Repository |
+| Lydda = Lod, Joppa = Jaffa, about 18 km apart; Sharon the coastal plain; Isaiah 35:2, 6; Song of Solomon 2:1; Mark 2:11; Acts 3:12 | 32-35 | Deep note `cultural`; BSB | Repository; distance "about" |
+| Healing care line: the Acts 3 sentences (2 Corinthians 12:9; 2 Timothy 4:20) with Find Help | 32-35 | Acts 3 plain note | Repository wording |
+| Tabitha (Aramaic) and Dorcas (Greek) both "gazelle"; mathētria, feminine "disciple", only here in the New Testament | 36-43 | Deep note `cultural`; Greek text | Lexical; common knowledge |
+| Tabitha koum and Talitha koum one letter apart, "if Peter spoke Aramaic, as many think"; Mark 5:37-41 | 36-43 | Deep note `literary`; BSB | Stated as conditional |
+| 1 Kings 17:19, 22; 2 Kings 4:33; Jonah 1:3 (Joppa) | 36-43 | BSB | Repository |
+| Tanners: leather from dead animals' skins, foul smell; Mishnah Ketubot 7:10 lists a tanner among men a court could compel to divorce (the smell); ritual uncleanness held by many readers, disputed by others (stench and dirt, not impurity) | 36-43 | Mishnah; NTS article "Simon Peter Meets Simon the Tanner" as summarised | Search: mishnah.org Ketubot 7:10; steinsaltz.org Ketubot 77; cambridge.org NTS abstract. Both readings stated; the article's author and year not named |
+| Bereavement care line (Acts 7 form) with Find Help; Revelation 21:4 | 36-43 | Acts 7 plain note | Repository wording |
+
+Left out: a date for Saul's call (the book page's "the 30s, exact years
+unknown" stands); Stendahl by name; how Aretas came to control Damascus
+(Caligula's grant, the Jewish quarter: debated, not stated); Straight Street
+traced today; Jerome Murphy-O'Connor.
