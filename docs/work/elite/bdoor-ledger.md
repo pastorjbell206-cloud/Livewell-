@@ -6474,3 +6474,40 @@ No web search.
 | "Strangers" odd for fellow Judeans: two readings | Repository deep note (historical) | Stated as views |
 | Name as character; freewill offering | Repository deep note (cultural) | Site's own teaching |
 | Romans 12:19 | BSB | BSB text |
+
+## The plain notes on Psalm 55 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No event named; Absalom's revolt and Ahithophel (2 Samuel 15:31) a common suggestion; the psalm names no one | 1-11 | Repository deep note; earlier ledger (Psalm 41); BSB | BSB text. Ahithophel's death not mentioned |
+| Doves nest in cliffs and wild places | 1-11 | Repository deep note (cultural) | Site's own teaching |
+| Meals and worship as bonds of loyalty; "violates his covenant" | 12-23 | Repository deep note (cultural); BSB | Site's own teaching |
+| Daniel 6:10; Numbers 16:30; 1 Kings 19:4; Matthew 23:37; Luke 22:48; 1 Peter 5:7 | all | BSB | BSB text |
+
+Care line for the betrayed, with the Find Help page. 55:15 points to the book
+page's cursing psalms part. 55:19 has an em-dash in the BSB and is not quoted.
+
+## The plain notes on Psalm 56 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Gath a Philistine city; 1 Samuel 21:12-13; Psalm 34 linked to the same day; Samuel does not say "seized" | BSB; repository deep note | BSB text |
+| Miktam (16, 56-60) meaning unknown | Earlier ledger (Psalm 16); book page | Earlier ledger |
+| Skin bottle; God's book as a king's records | Repository deep note (cultural) | Site's own teaching |
+| 56:8 in the BSB reads "Put my tears in Your bottle" (the brief's "You have collected my tears" is not the BSB wording); quoted before its em-dash | BSB | BSB text |
+| Hebrews 13:6 quotes Psalm 118:6 ("almost the same words" as 56:4, 11); Luke 12:7; Revelation 7:17 | BSB | BSB text |
+
+## The plain notes on Psalm 57 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Two caves: Adullam (1 Samuel 22:1) and En-gedi (1 Samuel 24); the heading does not say which; 57:6 fits En-gedi (a reading) | BSB; repository deep note | BSB text |
+| Wings of a mother bird; Ruth 2:12 | Repository deep note; BSB | BSB text |
+| 57:7-11 nearly the same as 108:1-5 | BSB compared | BSB text |
+| Matthew 23:37; Romans 12:19 | BSB | BSB text |
