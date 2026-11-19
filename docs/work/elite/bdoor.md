@@ -3999,7 +3999,7 @@ passage's third part is `later` ("Where the Bible takes this up"), never
 changes its closing lines and nothing else). After each chapter every
 passage was printed field by field and read: every text sits under its
 right heading, and `validate-bible-notes` passed with no exception (it
-caught four quotations not word for word, in 26:27, 27:29, 30's Leviticus
+caught five quotations not word for word, in 26:27, 27:29, 30's Leviticus
 19:13, 33:14 and Joshua 24:32, where a "..." had joined two parts of a
 verse; and "journey" outside a quotation twice; all corrected before each
 commit).
@@ -4142,3 +4142,148 @@ from older commentaries only.
 ### Next
 
 Genesis 34 onward in plain words, in the same shape.
+
+## Continuation: Genesis 34 to 41 (2026-11-19)
+
+Eight chapters in plain words, in the shape of Genesis 26 to 33: each
+passage's third part is `later` ("Where the Bible takes this up"), never
+`ot`; each chapter note gained only `"plain": true` at its end (the diff
+changes its closing lines and nothing else). After each chapter every
+passage was printed field by field and read: every text sits under its
+right heading. `validate-bible-notes` passed with no exception before each
+commit; on the way it caught three quotations not word for word (Colossians
+3:21 "so that" for "so"; Judah's split speech in 38:23; Jeremiah 9:25,
+replaced by the verse's own words) and one exclamation point outside a
+quotation (41:43 "Bow the knee!" in single quotes, now in double quotes as
+BSB text). Quotations whose BSB wording carries an em-dash (34:7, 35:18,
+Psalm 105:17) were cut back so the quoted words contain none.
+
+### Chapters 34 to 41 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Genesis 34 | 5 (What was done to Dinah; a father's silence, and a bargain; a sacred sign used as a trap; slaughter and plunder; a question left hanging) | 2,303 |
+| Genesis 35 | 5 (back to Bethel, and the foreign gods buried; ‘Your name will be Israel’; Rachel dies giving birth; Reuben and Bilhah, the twelve sons; Isaac dies, and both sons bury him) | 2,420 |
+| Genesis 36 | 3 (Esau's family moves to Seir; clans and chiefs; kings in Edom before Israel had a king) | 1,121 |
+| Genesis 37 | 5 (the favored son and the robe; two dreams; ‘Here comes that dreamer’; sold for twenty shekels; a robe dipped in goat's blood) | 2,637 |
+| Genesis 38 | 4 (Judah's sons, and a widow wronged; Tamar's plan; ‘She is more righteous than I’; twins: Perez and Zerah) | 2,155 |
+| Genesis 39 | 4 (‘The LORD was with Joseph’; ‘How could I do such a great evil?’; the cloak, and a lie; in prison, and the LORD with him) | 1,942 |
+| Genesis 40 | 3 (two of Pharaoh's officers in prison; the cupbearer's dream, and ‘Remember me’; the baker's dream, and forgotten) | 1,374 |
+| Genesis 41 | 5 (Pharaoh's dreams, and a cupbearer remembers; ‘I myself cannot do it’; seven years of plenty, seven of famine; ruler over all Egypt; plenty, two sons, and the famine) | 2,451 |
+| Total | 34 | 16,403 |
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Genesis 34" to "41". 14
+web searches (2, 1, 0, 1, 2, 2, 1, 5). Main sources: Lyn Bechtel's 1994
+article questioning ‘rape’ in 34:2 (one sentence, as a view); Judith 9:2
+praising Simeon; the Talmud, Shabbat 55b, on Reuben (paraphrased); Kenneth
+Kitchen's 1995 argument on the twenty-shekel price (with Leviticus 27:5,
+BSB); the Hittite and Middle Assyrian levirate laws; Augustine, Pius XI's
+Casti Connubii (1930), Luther and Calvin on Onan; the Tale of Two Brothers
+(Papyrus D'Orbiney, British Museum, about 1215 BC); Lisak and colleagues
+(2010) on false reports; the Chester Beatty dream book (British Museum,
+1200s BC); the Famine Stela on Sehel Island (Ptolemaic); Zaphenath-paneah
+(meaning disputed), Asenath (‘she belongs to Neith’, HALOT), On as
+Heliopolis; the Hyksos (about 1650 to 1550 BC). The book page's sentence on
+Joseph's date and its views on 36:31 are followed. Site wording reused: the
+Genesis 19 lines ("This story does not call it right, and neither does the
+rest of the Bible. What was done to you was wrong, and it was not your
+fault." ... "The Find Help page on this site lists places to turn."), the
+Genesis 23 grief and crisis-line sentences, the Genesis 27 unfavored-child
+lines with Psalm 27:10, the Genesis 30 Bilhah wording (‘enslaved’, ‘no
+say’), and the Genesis 12 Find Help form.
+
+### Cut or narrowed
+
+Cut: Deuteronomy 22:28-29 (left out so nothing reads as a case for a victim
+marrying an attacker); Josephus on Dinah; Jubilees on Levi; the Mari ‘sons
+of the right’; Migdal Eder in the Targum; Egyptian records of Edomite
+herders, Faynan, Herod and the Idumeans; Beni Hasan and Papyrus Brooklyn
+35.1446; Nuzi and Ugarit prices; Adullam, Chezib and Timnah located;
+royal birthday festivals; Potiphera ‘the one whom Ra has given’ (not
+confirmed); the Egyptian ‘gold of honour’; Aper-El; Redford and Kitchen on
+the Egyptian names; a Middle Kingdom ‘nineteenth century BC’ date for
+Joseph; the claim that most assaults go unreported (not confirmed).
+Narrowed: shaving ‘usually’; Egyptian art ‘often’ shows bearded men from
+Canaan; ‘Bow the knee’ a rare word, meaning uncertain; Ben-oni ‘most
+likely’ sorrow; Asenath's name ‘many scholars think’.
+
+### Contested matters, and how they are stated
+
+34:2: "A few scholars have asked whether the Hebrew words mean rape in the
+modern sense; Lyn Bechtel argued in a 1994 article that they need not. Most
+readers, and the BSB, read the verse as rape. On any reading the text does
+not soften it." Rachel's tomb (Bethlehem, or Zelzah on Benjamin's border:
+"The question is open."). Reuben (the plain reading; the Talmud's view that
+he only moved the bed; "Most readers take the words as they stand.").
+Esau's wives' names (several explanations; the text lets both stand).
+36:31 (final form under the kings; later hands updating details; Moses
+writing of promised kings; "these notes do not settle the question").
+Ketonet passim (‘many colors’ or long sleeves). Ishmaelites and Midianites
+(three readings; on every reading the brothers are responsible). The
+twenty-shekel price (Kitchen's argument; "Others doubt that prices can date
+the story"). Onan (Catholic reading with Augustine, Pius XI, Luther and
+Calvin; the levirate-refusal reading; "These notes take no side between
+these readings."). Shrine prostitution (evidence disputed). Dreams today
+("Christians differ over whether, and how, he still does."). Joseph's date
+(traditional, Hyksos, earlier, later composition; "These notes do not
+settle the question.").
+
+The sentences asked for, as on the page: on Dinah (34:1-4), "Verse 2 says it
+plainly. Shechem sees her, takes her, and lies with her by force. He rapes
+her." and "And notice whose voice is missing. Dinah never says one word in
+the whole chapter." and (34:30-31) "Nothing in this chapter teaches that a
+woman who has been raped should marry the man who did it, or make peace
+with him." On Onan (38:1-11), "On both, Onan wronged Tamar. He denied a
+widow her right and her future, for his own gain." On Genesis 39
+(39:11-18), "This story is not a reason to disbelieve a person who reports
+sexual assault."
+
+### Care lines included
+
+34:30-31 sexual assault (Genesis 19 form, "it was not your fault", tell
+someone you trust, Find Help). 35:16-20 loss of a wife, mother or baby in
+childbirth (Genesis 23 grief and crisis-line sentences, Find Help), and a
+line for those who grew up without a mother. 37:1-4 the unfavored child
+(Genesis 27 wording, Psalm 27:10) and a word to parents. 37:25-28 human
+trafficking ("It is not your fault. You are not the property of the people
+who hold you." Find Help). 39:11-18 anyone pressured by someone with power
+over them ("Saying no is right, and it is not your fault if they punish you
+for it." Find Help). No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes genesis` and `validate-no-emdash` after each chapter:
+pass. At the end, all 36 commands of the content-gates step in ci.yml, one
+at a time: exit 0 each (validate-bible-notes: 66 introductions, 1,189
+chapter notes, 130 chapters in plain words; validate-no-emdash: 260 files,
+0 em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`:
+146 files passed, 7 skipped; 1,674 tests passed, 73 skipped. `pnpm build`:
+exit 0 (after the chapter commits).
+
+Served with `scripts/serve-like-vercel.mjs` on port 4603; Playwright at 390
+wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed. `/study/bible/genesis/34` to `/41`: every passage's heading, its
+part headings in order and the first 60 characters under each matched the
+data (5, 5, 3, 5, 4, 4, 3, 5), the third part reads "Where the Bible takes
+this up" in every passage, no sideways scroll, no page errors and no console
+errors. Screenshots of every passage of Genesis 34 and 39 read by eye:
+`/home/user/elite-shots/bdoor/gn34-390-*` and `gn39-390-*` (the fixed
+masthead appears once mid-image where the element screenshot scrolls; not
+on the page itself). Server stopped by its PID, dist/ deleted, no
+lh-*.json. Lighthouse not run (data only, no code change).
+
+### Still unverified
+
+Ancient and later texts' exact words (all paraphrased: Judith, the Talmud,
+Augustine, Casti Connubii); the older commentaries behind the shaving
+custom; the meaning of abrek and of Zaphenath-paneah (said to be
+uncertain).
+
+### Next
+
+Genesis 42 onward in plain words, in the same shape. Genesis 47 must face
+Joseph's famine policy in its later years (pointed to from 41:47-57).
+
