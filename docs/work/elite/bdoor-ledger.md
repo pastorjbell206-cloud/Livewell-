@@ -4418,3 +4418,27 @@ chapter, with the deep note, the verse notes, the book page and the Genesis
 Cut: Beni Hasan painting; the eighteenth-century papyrus of Semitic
 servants; Dothan's distance from Shechem; Mari and Hammurabi law numbers;
 Nuzi and Ugarit prices.
+
+## The plain notes on Genesis 38 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/38.json`. Two web searches for this
+chapter, with the deep note and the verse notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The chapter shows Judah at his worst before his change (44:18-34); 37:26-27 | 1-11 | Deep note (`story`) | Repository |
+| Levirate from Latin levir ‘husband's brother’; first son counted the dead man's heir, carrying his name and share of land; Deuteronomy 25:5-10 | 1-11 | Deep note (`cultural`, `words` H2992); BSB | Repository |
+| Hittite and Assyrian law collections also have levirate-type rules (Hittite Laws §193; Middle Assyrian Laws §§30, 33, 43) | 1-11 | Deep note (`cultural`) | Search: "levirate marriage Hittite laws 193 Middle Assyrian laws" (degruyterbrill.com Stol; revistas.usp.br Hirata; thetorah.com; karolinum.cz). Section numbers not on the page |
+| Onan's motive: a son for Er would reduce his own inheritance | 1-11 | Deep note (`cultural`); BSB verse 9 | Repository |
+| Onan, two readings: Catholic teaching (Augustine; Pius XI, Casti Connubii, 1930) reads the act itself as condemned, as Luther and Calvin did; the point that Judah and Shelah also failed but only Onan died; many Protestants and scholars read the sin as refusal of the levirate duty while using Tamar | 1-11 | Deep note (`hard`) | Search: "Onan Genesis 38 contraception Catholic teaching Casti Connubii Augustine Protestant reading" (Wikipedia "Christian views on birth control" and "Onan"; catholic.com; catholicjournal.us). No side taken; nothing beyond the text on other matters |
+| Deuteronomy 25:6; Ruth 4:10; Matthew 22:24-28 | 1-11 | BSB | Repository |
+| Widow bound to Judah's family (Deuteronomy 25:5); sheep-shearing a feast; seal on a cord, staff with marks, like signature and ID | 12-19 | Deep note (`cultural`) | Repository |
+| Leviticus 18:15; Ruth 3:9 | 12-19 | BSB | Repository |
+| Qedeshah (verse 21) differs from the word in verse 15; shrine prostitution once assumed common, evidence now disputed | 20-26 | Deep note (`cultural`) | Repository; stated as debated |
+| Burning as the clan head's sentence; ‘Please examine’ echoes 37:32; ‘more righteous’ = in the right between them | 20-26 | Deep note (`cultural`, `literary`, `words` H6663) | Repository |
+| Genesis 44:33; Matthew 7:3; John 8:7 | 20-26 | BSB | Repository |
+| Perez ‘breaking through’; Zerah ‘rising’ or ‘shining’; echo of 25:24-26 | 27-30 | Deep note (`words` H6557, `literary`); standard lexicons | Repository |
+| Ruth 4:12, 18, 21-22; Matthew 1:3 | 27-30 | BSB | Repository |
+
+Cut: Adullam, Chezib and Timnah located in the Shephelah; dates; Revelation
+5:5 and Genesis 49:10; the Middle Assyrian section numbers.
