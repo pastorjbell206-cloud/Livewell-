@@ -246,6 +246,7 @@ describe("/answers and /answers/:slug", () => {
       "was-jesus-just-a-good-teacher",
       "what-if-christianity-is-wrong",
       "why-does-god-allow-natural-disasters",
+      "why-didnt-the-bible-just-ban-slavery",
       "why-would-anyone-trust-the-bible",
     ]);
     for (const a of argued) {
