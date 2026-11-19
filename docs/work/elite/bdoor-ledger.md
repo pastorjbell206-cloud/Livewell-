@@ -1157,3 +1157,125 @@ rabbinic parables of treasure and the pearl; Irenaeus and Origen on the
 treasure; Jerome on the hundredfold; the Scofield reading; Jülicher's,
 Dodd's, Jeremias's and Kingsbury's books; the textual notes on 13:35 and
 13:55.
+
+## Repairs to two Old Testament notes (2026-11-19, Matthew 14 to 16 run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Matthew 7:23 echoes Psalm 6:8 ("Depart from me, all you workers of iniquity"); Isaiah 29:13 on lips and hearts; Amos 3:2 "Only you have I known"; "known" as chosen and bound in covenant | Matthew 7:21-23 | BSB | BSB text. The Luke 6:46 line moved from the Old Testament note to the end of "first hearers" |
+| Deuteronomy 19:15 (two or three witnesses); 1 Corinthians 15:4 "according to the Scriptures"; Luke 24:25; Psalm 16:10 quoted in Acts 2:27 | Mark 16:9-14 | BSB | BSB text. Paul "in the 50s" from the earlier ledger (Mark 16) |
+
+## The plain notes on Matthew 14 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/14.json`. Five searches for this
+chapter, with the earlier ledger (Mark 6).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Antipas, son of Herod the Great, ruled Galilee 4 BC to AD 39; tetrarch, never king | 1-12 | Earlier ledger (Mark 6) | Earlier ledger; "tetrarch" (14:1) and "king" (14:9) from the BSB |
+| Mark: Herodias wants John dead, Herod protects him; Matthew: Herod wants to kill him, fears the people | 1-12 | Mark 6:19-20; Matthew 14:5 | BSB comparison |
+| Josephus: John a good man; Herod feared John's great influence over the people might lead to a rebellion; killed at Machaerus | 1-12 | Josephus, Antiquities 18.116-119 | Search: lexundria.com 18.117-118 (Whiston: "feared lest the great influence John had over the people might put it into his power and inclination to raise a rebellion"); livius.org. Paraphrased. This narrows the Mark 6 run's "suspicious of John's influence" with the wording now found |
+| Josephus names Herodias's first husband Herod; her daughter Salome married Philip the tetrarch | 1-12 | Josephus, Antiquities 18.136-137 | Search: lexundria.com 18.136-137 (Whiston; "[Philip]" is the translator's bracket) |
+| Two explanations of the names: the man bore both names (Josephus calls more than one son of Herod "Herod"); or the Gospel writers confused him with Philip the tetrarch | 1-12 | Lexham Bible Dictionary "Herod Philip"; biblicaltraining.org; Encyclopedia of the Bible "Herodias" | Search. Kokkinos's three-marriage idea not used |
+| 2 Maccabees 6:7: Jews forced to eat sacrifices at the king's monthly birthday | 1-12 | 2 Maccabees 6:7 | Search: biblestudytools.com NRSV, KJVA; tips.translation.bible. No date given for the book; the king not named |
+| Korasion at 9:24-25 and 14:11 | 1-12 | Greek text (G2877) | Script |
+| Matthew 11:14; 17:12; 1 Kings 21:25; 19:2; Leviticus 18:16; Genesis 40:20-22; Judges 11:31, 34; Matthew 5:37; 27:57-60 | 1-12 | BSB | BSB text |
+| Withdrawal after John's death (Matthew) against after the mission (Mark); "healed their sick"; "in addition to women and children" only in Matthew | 13-21 | Matthew 14:13-21; Mark 6:30-44 | BSB comparison |
+| Exodus 12:37 "besides women and children"; Exodus 16:35; 2 Kings 4:43; Matthew 26:26 | 13-21 | BSB | BSB text |
+| Told in Mark 6, Luke 9 and John 6; barley loaves and a boy (John 6:9) | 13-21 | BSB | BSB text. "The only miracle in all four" (deep note) not used; "one of the few events" |
+| Skeptical readings (shared food; a story built from the Old Testament) | 13-21 | Standard positions | Stated as views, no names. Hume, Paulus, Strauss, Lewis and Keener (deep note) not named |
+| Fourth watch about 3 to 6 a.m. | 22-33 | Earlier ledger (Mark 6) | Earlier ledger |
+| Matthew omits "intended to pass by" and the hardened hearts, adds Peter, ends in worship; first time the disciples together say "Son of God" in Matthew | 22-33 | Matthew 14:22-33; Mark 6:45-52 | BSB comparison; earlier uses of "Son of God" in Matthew are by the devil, demons and the voice from heaven |
+| Distazō only at 14:31 and 28:17 in Matthew; oligopistos at 6:30, 8:26, 14:31, 16:8 | 22-33 | Greek text (G1365, G3640) | Script |
+| Augustine, Sermon 76 (Benedictine numbering): the sea is this world, Peter a figure of the one church, walking by the Lord's power, the church holds strong and weak | 22-33 | Augustine, Sermon 76 | Search: newadvent.org (NPNF "Sermon 26", Benedictine 76); ccel.org; clerus.org. Paraphrased; no year given |
+| Egō eimi | 22-33 | Earlier ledger (Mark 6) | Earlier ledger |
+| Job 9:8; Psalm 77:19; Psalm 107:28-29; Isaiah 43:10; Psalm 18:16 | 22-33 | BSB | BSB text |
+| Care: "little faith" is not a rebuke of anxiety; the Matthew 8 sentences reused | 22-33 | Matthew 8 plain note | Repository |
+| Kraspedon at 9:20, 14:36 and 23:5; Numbers 15:38-39 | 34-36 | Greek text (G2899); BSB | Script; BSB text |
+
+Left out: Malthace; Lugdunum; Herodias "in defiance of the ancestral laws"
+(18.136); the Mishnah on birthdays of kings and on beheading; Tobit on
+burial; Vörös and the Machaerus excavations; John's tomb at Sebaste and
+Rufinus; Juvenal's baskets; the Mishnah's bread blessing; Bethsaida;
+Chrysostom's two tables (the contrast kept, unattributed); Origen; Giotto's
+Navicella; Moreau; Held; the lectionaries; the date of 2 Maccabees.
+
+## The plain notes on Matthew 15 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/15.json`. Four searches for this
+chapter, with the earlier ledger (Mark 7 and 8).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Priests washed before the altar; the Pharisees' aim of priestly holiness at ordinary meals; the Mishnah around AD 200; Mishnah Nedarim 9:1 | 1-9 | Earlier ledger (Mark 7) | Earlier ledger |
+| Josephus: the Pharisees passed on many observances from their fathers not written in the law of Moses; the Sadducees rejected them | 1-9 | Josephus, Antiquities 13.297 | Search: lexundria.com 13.297 (Whiston); cojs.org. Paraphrased |
+| Matthew does not explain the washing (Mark 7:3-4 does) | 1-9 | BSB comparison; Matthew's book page | BSB text |
+| Hupokritēs first meant a stage actor | 1-9 | Greek lexicons | Search: biblehub.com 5273; merriam-webster.com "The Origin of 'Hypocrite'" |
+| Exodus 20:12; 21:17; Numbers 30:2; Isaiah 29:13; 2 Thessalonians 2:15; Philippians 3:5; Acts 5:34 | 1-9 | BSB | BSB text |
+| Tradition paragraph reused from the Mark 7 note | 1-9 | Mark 7 plain note | Repository |
+| Matthew lacks Mark's "(Thus all foods are clean.)" and ends at handwashing (15:20); two readings of the omission, no side; Acts 10:15; Romans 14:14 | 10-20 | Mark 7:19; Matthew 15:17, 20 | BSB comparison; stated as views, no names (Boyarin, deep note, not named) |
+| Matthew 12:34; Romans 2:19; Jeremiah 17:9; Psalm 51:10; Ezekiel 36:26; Isaiah 60:21 | 10-20 | BSB | BSB text. Isaiah 61:3 not quoted (its BSB text holds an em-dash). Qumran and 1 Enoch on "planting" not used |
+| Tyre and Sidon; dogs in the Bible; kynarion a little or house dog; first to Israel; Genesis 12:3; Romans 1:16 | 21-28 | Earlier ledger (Mark 7) | Earlier ledger; kunarion at 15:26-27 confirmed in the Greek text (G2952) |
+| Matthew: "Canaanite"; Mark: "Greek woman of Syrophoenician origin"; Canaanites among the nations of Deuteronomy 7:1 | 21-28 | Matthew 15:22; Mark 7:26; Deuteronomy 7:1 | BSB text |
+| Only Matthew has the silence, the disciples' request and 15:24; Matthew lacks Mark's "First" | 21-28 | Matthew 15:21-28; Mark 7:27 | BSB comparison |
+| Great faith praised in the centurion (8:10) and the woman; healed "at that very hour" (8:13) | 21-28 | BSB | BSB text |
+| Chrysostom, Homily 52 on Matthew: Jesus held back to bring out and show her faith | 21-28 | Chrysostom | Search: newadvent.org 200152; ccel.org NPNF1 10. Paraphrased; no year given |
+| Augustine, Sermon 77: called a dog, she did not deny it; her humility praised | 21-28 | Augustine | Search: newadvent.org; sermonindex.net; bkv.unifr.ch. Paraphrased |
+| Four readings (test; order of mission, 10:6 and 28:19; real exchange; the diminutive), no side | 21-28 | Standard positions; deep note | Stated as views. Ringe, Dube, Levine, Croy and Luther (deep note) not named |
+| Zarephath of Sidon; the widow's son; Rahab's confession; Rahab in 1:5 | 21-28 | 1 Kings 17:9, 17-24; Joshua 2:11; Matthew 1:5 | BSB text |
+| Cranmer's prayer (1548 Order of the Communion): "not worthy so much as to gather up the crumbs", drawn from this story | 21-28 | Cranmer | Search: livingchurch.org; prayerbook.ca; episcopalchurch.org glossary; en.wikipedia.org Prayer of Humble Access. Given in single quotes as not Scripture; the 1548 text reads "We be not worthy..." |
+| Mark 7:31 places Jesus in the Decapolis; two readings of who the crowd was | 29-31 | BSB; standard positions | Stated as views |
+| Isaiah 35:5-6; Isaiah 25:6 | 29-31, 32-39 | BSB | BSB text; the link to 25:6 given as "many readers" |
+| Spyris (15:37; 16:10) the word of Acts 9:25; Magadan and Dalmanutha unknown; later copies Magdala | 32-39 | Earlier ledger (Mark 8); Greek text (G4711) | Earlier ledger; script |
+| Exodus 16:35; Matthew 16:9-10; "in addition to women and children" (15:38) | 32-39 | BSB | BSB text |
+
+Left out: Josephus, Jewish War 2.162-166; Galatians 1:14; Mishnah Hagigah 2:5,
+Yadayim and Nedarim 5:6; Furstenberg; the Jebel Hallet et-Turi ossuary by
+name; Josephus on the Tyrians (Against Apion 1.70; War 2.478); Theissen;
+Pesikta de-Rav Kahana and Yohanan ben Zakkai; Hilary; Origen; the Didache on
+dogs; Luther's 1525 sermon (not searched); the lectionaries; every textual
+note in the deep note (6, 4, 8, 14, 30-31, 39 beyond Magadan).
+
+## The plain notes on Matthew 16 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/16.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 8 and 9).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Pharisees kept traditions of the fathers; Sadducees rejected them (Josephus, Antiquities 13.297, from the Matthew 15 search) and denied the resurrection; Matthew pairs them (3:7; 16:1-12) | 1-4 | Matthew 22:23; Acts 23:8; Josephus | BSB text; earlier ledger (Matthew 15) |
+| 16:2b-3 absent from Sinaiticus and Vaticanus (and others); added from Luke 12:54-56, or dropped where a red morning sky does not bring rain (Scrivener, Lagrange) | 1-4 | Textual commentaries as summarised | Search: en.wikipedia.org "Matthew 16:2b-3"; confessionalbibliology.com; uasvbible.org. Scholars not named |
+| Sign of Jonah; Jonah 3:5; 12:40; "adulterous" as the prophets' picture (Hosea 2; Jeremiah 3), not the Jewish people | 1-4 | BSB; Matthew 12 plain note | BSB text; earlier ledger |
+| Leaven; Passover; Mark's Herod; Luke's hypocrisy; only Matthew "teaching"; Mark ends at "Do you still not understand?" | 5-12 | Exodus 12:15; 1 Corinthians 5:6; Mark 8:15, 21; Luke 12:1 | BSB text; earlier ledger (Mark 8) |
+| Matthew 23:3 against 16:12: readings, no side | 5-12 | BSB | Stated as views |
+| Caesarea Philippi (Pan, Herod's temple, Philip); Psalms of Solomon 17 | 13-17 | Earlier ledger (Mark 8) | Earlier ledger. Distance and temple site not given |
+| Only Matthew adds Jeremiah and "Son of the living God" and verses 17-19 | 13-17 | Mark 8:28-29 | BSB comparison |
+| Simon son of Jonah; John 1:42 "son of John"; "may be forms of one name" | 13-17 | BSB | BSB text; stated as possible |
+| 2 Samuel 7:12-16; Psalm 2:7; Hosea 1:10 | 13-17 | BSB | BSB text |
+| Petros / petra (16:18); kepha, Cephas (John 1:42); ekklēsia only at 16:18 and 18:17 in the Gospels | 18-20 | Greek text (G4074, G4073, G1577); BSB | Script; Matthew's book page |
+| Hades the Greek word for Sheol: Psalm 16:10 "Sheol" quoted in Acts 2:27 as "Hades"; Isaiah 38:10 "gates of Sheol"; Hades not Gehenna | 18-20 | BSB | BSB text |
+| Bind and loose: Jewish legal terms for forbid and permit (asar, hittir), in rabbinic writings (later) | 18-20 | Jewish Encyclopedia (1901) "Binding and Loosing"; israelbiblecenter.com | Search: jewishencyclopedia.com 3307. Marked as later; no tractate named |
+| Josephus, Jewish War 1.111: under Queen Alexandra the Pharisees bound and loosed whom they would | 18-20 | Josephus | Search: lexundria.com War 1.107-119 (Whiston); cojs.org War 1.110-12. Paraphrased; her dates not given |
+| Matthew 18:18 gives the words to the disciples together | 18-20 | BSB | BSB text |
+| Isaiah 22:15, 22 (Shebna, Eliakim, the key); Psalm 18:2; Isaiah 51:1-2 | 18-20 | BSB | BSB text. The Catholic argument from Isaiah 22's continuing office is not stated (not confirmed by the search) |
+| Catholic: Simon alone made the rock; the keys as authority to govern God's house (Catechism 553, 881) | 18-20 | Catechism of the Catholic Church | Search: vatican.va archive; usccb.org; catholic.com; stmikes.org. Paraphrased |
+| First Vatican Council (1870), Pastor Aeternus: a true primacy of jurisdiction, not only of honour, given to Peter and continuing in the bishops of Rome | 18-20 | Pastor Aeternus | Search: ewtn.com; catholicculture.org; oursundayvisitor.com; churchcontroversies.com. Paraphrased |
+| Orthodox: the rock as Peter's confession of faith; Chrysostom (Homily 54 on Matthew): "the faith of his confession" | 18-20 | oca.org "On this rock I will build my church"; Chrysostom | Search: oca.org; newadvent.org 200154; clerus.org. Paraphrased. "Every bishop holds Peter's chair" and the named Orthodox theologians (deep note) not confirmed and not used; Orthodox rejection of Rome's universal jurisdiction stated generally |
+| Protestant: the rock as Christ or the confession (1 Corinthians 3:11); many today accept Peter in person, without successors (Ephesians 2:20; Acts 2; 10) | 18-20 | Ligonier devotional "Peter the Rock"; thegospelcoalition.org; christiantruth.com | Search. Cullmann's wording not confirmed, so no scholar named; Melanchthon and Calvin not named |
+| "From that time on" at 4:17 and 16:21 | 21-23 | BSB | BSB text |
+| Skandalon at 16:23; hupage (4:10; 16:23); opisō mou (4:19; 16:23-24) | 21-23 | Greek text | Script. "Shares its Greek words for 'behind Me'" (the verbs differ: deute, hupage) |
+| Ruling council; stumbling block (1 Corinthians 1:23); Isaiah 53:5; Psalm 118:22; Daniel 7:13-14; predictions shaped after Easter (since about 1900) | 21-23 | BSB; earlier ledger (Mark 8, Wrede) | BSB text; earlier ledger |
+| Varus and about two thousand crucified; Plutarch; Yehohanan (1968); psychē | 24-28 | Earlier ledger (Mark 8) | Earlier ledger |
+| Mark 8:35 "and for the gospel"; Mark 9:1 "arrive with power" against Matthew 16:28 | 24-28 | BSB | BSB comparison |
+| Psalm 49:8; Psalm 62:12; Daniel 7:13-14; Galatians 2:20; Matthew 17:1-2; 28:18 | 24-28 | BSB | BSB text |
+| Care: the cross is not abuse; "If you are being abused, seek safety first..." (the Matthew 5 and Mark 10 wording) | 24-28 | CLAUDE.md, care for the reader | Pastoral |
+| Bertrand Russell, Why I Am Not a Christian (lecture, March 1927, Battersea): Christ expected his second coming within the lifetime of people then living | 24-28 | Russell | Search: hettingern.people.charleston.edu (text); bigthink.com; christiancourier.com. Paraphrased |
+| Readings of 16:28: the mountain; resurrection and Spirit; the judgment on Jerusalem in AD 70 (a coming in judgment) | 24-28 | Mark 9 plain note; christiancourier.com (the judgment reading) | Stated as views, no side; AD 70 from the earlier ledger |
+
+Left out: forty kilometres to Caesarea Philippi; Netzer, Maoz and Overman on
+Herod's temple; 2 Maccabees 15 and 2 Esdras on Jeremiah; Sirach 14:18 on
+"flesh and blood"; the Elephantine papyrus and Fitzmyer; Yalkut Shimoni;
+Tertullian, Origen, Cyprian, Firmilian, Augustine's Retractations, Leo the
+Great; Melanchthon, Calvin; Meyendorff, Afanasiev, Schmemann; Cullmann,
+Carson, Bultmann; Ut Unum Sint; Wisdom 16:13 and 3 Maccabees 5:51; the
+Catholic argument from Isaiah 22 as an office handed on; the lectionaries.
