@@ -943,7 +943,6 @@ export const ANSWERS: Answer[] = [
       },
     ],
     sources: [
-      { author: "Plato", title: "Euthyphro", year: "4th century BC; tr. Benjamin Jowett", note: "The oldest form of the objection." },
       { author: "Charles Darwin", title: "The Descent of Man, and Selection in Relation to Sex", year: "1871", note: "Chapter on the moral sense." },
       { author: "J. L. Mackie", title: "Ethics: Inventing Right and Wrong", year: "1977" },
       { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982" },

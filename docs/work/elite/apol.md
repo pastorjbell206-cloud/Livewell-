@@ -405,3 +405,37 @@ The first run of this section was cut off by a machine restart before its commit
 ### Next in the ranking
 
 Section 6, item 9: the remaining apologetic answers, in this order: "Can you be good without God?", "Is believing anything on faith irrational?", "Did God command genocide in the Old Testament?", "Why didn't the Bible just ban slavery?", "What did the New Atheists get right?", "Can a life mean anything without God?", "What do Christianity and Islam actually dispute?", "What makes us human in the age of AI?".
+
+## 8. The sixth run (2026-11-19): good without God, faith and reason, the conquest
+
+The next three in the ranking (section 7, "Next in the ranking"), rebuilt by the approved pattern. Slugs, questions, addresses, essay and book links are unchanged; every claim is in `apol-ledger.md` under "Sixth run". Each answer uses at most one confirmed fact about James and nothing added to it ("I came to faith from atheism" in the first, "I have five sons" in the third, none in the second). Old recollections that cannot be confirmed were cut and are listed in the ledger.
+
+### Can you be good without God?
+
+The argument in three sentences. Atheists are plainly good (Gervais's study of the prejudice against them is conceded), and the secular accounts are stated at full strength: Darwin's own account of the moral sense (1871), Wielenberg's godless moral realism, held in some form by most philosophers (PhilPapers 2020, about 62 percent), and the Euthyphro dilemma in Jowett's words. The moral argument is laid out as an inference to the best explanation, about what grounds moral facts, not who behaves well: objective, binding, knowable moral facts are what a good God would lead us to expect, and each secular account leaves one unexplained (Darwin's own hive-bees passage and Street's dilemma for evolution; obligation and knowledge as two pieces of luck for Wielenberg, answered with his parity point and third-factor reply granted). The Euthyphro is answered with Aquinas and Adams, the best reply (we know morality before God) is granted in half, and the argument is said not to prove God, or which God, or that believers are better (Nietzsche on Eliot; Romans 2:1).
+
+Before: "I could not keep my footing there. I said morality was evolved and useful and felt, and then I lived every waking hour as if some things were just wrong" (cut: a recollection that cannot be confirmed). After: "A brute moral fact is an abstract thing. It can't command you, and it can't forgive you. Yet obligation doesn't feel like noticing an abstract truth. It feels like being answerable."
+
+Words: 347 before; 2,213 after.
+
+Sources: Darwin 1871; Mackie 1977 and 1982; Adams 1999; Street 2006; Wielenberg 2014 (the best book against); Nietzsche 1889.
+
+### Is believing anything on faith irrational?
+
+The argument in three sentences. Clifford (1877) is stated without caricature, including his own allowance for belief on testimony, beside Hume's "A wise man ... proportions his belief to the evidence" and Dawkins's definition of faith as blind trust, which is conceded to be irrational where believers hold it. The New Testament word pistis means trust resting on testimony and evidence (Morgan 2015; Luke 1, John 20:31, 1 Corinthians 15:6, and Acts 17:31, where the resurrection is itself called pistis), reaching past what is seen but not against it. An argument from the limits of evidence (Hume on induction in his own words, Reid on testimony, Plantinga 1983, with Alston's dissent named) shows every reasoner rests on trust, James (1896) is quoted against Clifford's "fantastic" rule, and the Great Pumpkin reply is met by pointing the case back to public evidence.
+
+Before: "I say this against myself, because for years I accused believers of the exact posture I was standing in." (cut: a recollection). After: "A wife who trusts her husband while he's away has no proof he is faithful tonight. She has years of knowing him. That is the shape of faith in the New Testament."
+
+Words: 325 before; 1,809 after.
+
+Sources: Hume 1748; Reid 1764; Clifford 1877 (the best case against); James 1896; Dawkins 1976; Plantinga 1983; Morgan 2015.
+
+### Did God command genocide in the Old Testament?
+
+The argument in three sentences. The texts are quoted plainly, the modern definition of genocide is applied to them honestly, and the objection is given in Dawkins's words and then in its serious form (Morriston and Rauser, *Philosophia Christi*, 2009), laid out as an argument whose pressure point is the claim about reasons. Four Christian readings are set out, each with its strength and its hard question, and no side is taken: the language of ancient war (Joshua's own survivors, Merneptah, Mesha, Younger, Kitchen, Copan and Flannagan), judgment after long patience (Genesis 15:16, Rahab, Israel under the same standard), God stooping, seen through Christ (Origen, Seibert, Boyd, and the Marcion question), and the right of the giver of life (Augustine, Aquinas, Craig, and the question of how anyone could know such a command). It says once and plainly that these texts warrant no violence by anyone today, names their misuse at Mystic in 1637 from Underhill's own words, refuses to explain away the children, and ends with Abraham's question left open.
+
+Before: "For years this was my strongest reason to reject the Bible, read aloud to win a room." (cut: a recollection). After: "Its strength is that it comes from the text, not from modern discomfort. Its hard question is that it eases the scale without emptying the battlefield."
+
+Words: 398 before; 2,212 after.
+
+Sources: Younger 1990; Kitchen 2003; Dawkins 2006; Morriston 2009 (the best case against); Rauser 2009; Seibert 2009; Copan and Flannagan 2014; Boyd 2017; Underhill 1638.
