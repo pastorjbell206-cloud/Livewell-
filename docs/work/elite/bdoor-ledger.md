@@ -5223,3 +5223,38 @@ Lystra.
 Left out: a date for the council (the deep note's 48 or 49 not stated); the
 rabbinic "yoke of the law"; the Ethiopian Orthodox food rules; Silas as the
 Silvanus of the letters (not searched); the Noachide commandments.
+
+## The plain notes on Acts 16 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/16.json`. 5 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Timothy's mother and grandmother (2 Timothy 1:5; 3:15); Lystra (14:19) | 1-5 | BSB | Repository |
+| The rule that a Jewish mother's child is Jewish is in the Mishnah (written around 200); whether it held in Paul's day is argued | 1-5 | Mishnah Kiddushin 3:12 as reported; Cohen's work as summarised | Search: cambridge.org AJS Review abstract (Cohen, origins of the matrilineal principle); israelbiblicalstudies.com; a blog summary of Cohen. No scholar named (secondhand) |
+| Timothy's circumcision beside Galatians 2:3 and 5:2; 1 Corinthians 9:20; 7:18; two answers | 1-5 | Book page part "Acts and Paul's letters"; deep note `hard` | Repository; no side taken |
+| Asia a Roman province; Bithynia by the Black Sea; Troas near old Troy; Macedonia across the Aegean | 6-10 | Deep note `historical`; map card | Repository |
+| The "we" passages begin at 16:10; the views | 6-10 | Book page part "Who wrote it" | Repository |
+| Exodus 13:17; Numbers 12:6; Isaiah 2:3 | 6-10 | BSB | Repository |
+| Neapolis, the Via Egnatia, Philippi a colony after the battle of 42 BC, settled with soldiers | 11-15 | Roman-world portrait, part 1 | wrom-ledger |
+| Inscriptions at Thyatira name a guild of dyers | 11-15 | Inscriptions as reported | Search: biblegateway Easton's "Thyatira"; biblicaltraining.org "Thyatira"; sermonindex.net. The madder-root dye not stated (weak sourcing) |
+| Purple prized, the finest very costly | 11-15 | Earlier ledger (Tyrian purple) | Earlier ledger |
+| Lydia a "worshiper of God" (God-fearer, like Cornelius 10:2); no husband named; household of family, slaves and freed slaves | 11-15 | BSB; Roman-world portrait, part 3 | Repository |
+| Household baptisms: infant-baptizing churches (covenant household, 2:39, 1 Corinthians 1:16) and believer-baptizing churches (16:32, 34; 18:8); no side; pointer to 2:37-41 | 11-15 | Standard positions; deep note | Repository |
+| Proverbs 31:22; Genesis 18:1-8; Joshua 24:15 (quoted without its closing exclamation mark) | 11-15 | BSB | Repository |
+| "Spirit of python": the serpent guarding Delphi, slain by Apollo; used of those speaking oracles | 16-18 | Lexicons (Thayer) | Search: biblehub.com Greek 4436; biblicalarchaeology.org "Paul and the Slave Girl in Philippi"; biblegateway Reformation Study Bible 16:16 |
+| "Most High" used by Greeks of Zeus or an unnamed god in inscriptions | 16-18 | Theos Hypsistos inscriptions | Search: Wikipedia "Hypsistarians" and "Hypsistos"; McMaster thesis "Hypsistos Cults in the Greek World". Stated generally, no date range |
+| The girl exploited by owners for money; what became of her not told | 16-18 | BSB 16:16, 19 | Repository. The deep note's "freed slave girl" not repeated |
+| Deuteronomy 18:10; Isaiah 8:19; Genesis 14:19; Exodus 21:16; 1 Timothy 1:10 ("slave traders") | 16-18 | BSB | Repository |
+| Slavery Honest Answer pointer; trafficking definition and care line in the Genesis 37 form, with Find Help | 16-18 | answers.ts; genesis/plain/37.json | Repository wording |
+| Magistrates the colony's two chief officials (duoviri); "rod-bearers" = lictors with the bundles of rods | 19-24 | Lexicons; USCCB note | Search: biblehub.com Greek 4465; biblicaltraining.org "Sergeants"; bible.usccb.org Acts 16 notes |
+| 2 Corinthians 11:25; 1 Thessalonians 2:2; Jeremiah 20:2; Genesis 39:20-21; Amos 2:6 | 19-24 | BSB | Repository |
+| Guards punished for escaped prisoners (12:19); sozo "rescue" or "save" | 25-34 | BSB; deep note `words` | Repository |
+| Job 35:10; Psalm 42:8; 18:7; 146:7; Isaiah 42:7 | 25-34 | BSB | Repository |
+| Care line on suicide (the Matthew 27 and Acts 1 form), no detail, Find Help | 25-34 | matthew/plain/27.json; acts/plain/1.json | Repository wording |
+| Citizenship: legal standing, a minority in the east, no flogging or binding without trial, appeal | 35-40 | Roman-world portrait, part 2 | wrom-ledger (portrait wording) |
+| 22:25; Philippians 1:3; 3:20; Deuteronomy 1:17; Genesis 41:14, 41-43; Psalm 37:6 | 35-40 | BSB | Repository |
+
+Left out: the madder-root dye; Hypsistos dates; Neapolis's distance from
+Philippi; why Paul did not claim citizenship (Luke does not say); a date for
+the trip; the girl's later life.
