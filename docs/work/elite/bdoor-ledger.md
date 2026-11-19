@@ -1279,3 +1279,42 @@ Tertullian, Origen, Cyprian, Firmilian, Augustine's Retractations, Leo the
 Great; Melanchthon, Calvin; Meyendorff, Afanasiev, Schmemann; Cullmann,
 Carson, Bultmann; Ut Unum Sint; Wisdom 16:13 and 3 Maccabees 5:51; the
 Catholic argument from Isaiah 22 as an office handed on; the lectionaries.
+
+## The plain notes on Matthew 17 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/17.json`. Seven searches for this
+chapter, with the earlier ledger (Mark 9; Mark 7 on the Tyrian shekel).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The shelters, Tabernacles, the unnamed mountain (Tabor and Hermon) | 1-8 | Earlier ledger (Mark 9) | Pointed to the Mark 9 note, not repeated |
+| Only Matthew: face "shone like the sun", bright cloud, "in whom I am well pleased" (matching 3:17), Moses named first, "Lord" (Mark "Rabbi"), the fall, the touch, "Get up... Do not be afraid" | 1-8 | Mark 9:2-8; Luke 9:28-36 | BSB comparison |
+| 2 Peter 1:18; Exodus 24:16; 34:29; Psalm 2:7; Isaiah 42:1; Deuteronomy 18:15; Daniel 10:9-12 | 1-8 | BSB | BSB text |
+| Horama, a sight God shows; Acts 7:31 of the burning bush | 9-13 | Greek text; standard lexicons | Repository text |
+| Only Matthew: the disciples understood he meant John (17:13; 11:14); Malachi 4:5-6; 1 Kings 19:2 | 9-13 | BSB | BSB text; earlier ledger (Mark 9) |
+| Selēniazomai from the word for moon, "moonstruck", older "lunatic"; only Matthew 4:24 and 17:15; 4:24 lists the demon-possessed and those having seizures apart | 14-21 | Thayer's and Strong's (4583); Mounce | Search: biblehub.com 4583; billmounce.com; blueletterbible.org G4583. Thayer's remark on the Greeks and epilepsy not used |
+| Greek doctors argued seizures have natural causes | 14-21 | On the Sacred Disease | Earlier ledger (Mark 9) |
+| 17:21 absent from the first hand of Sinaiticus and from Vaticanus (and others); added from Mark 9:29; "and fasting" also absent from the oldest copies of Mark; BSB leaves the number empty; some who hold the later copies defend it | 14-21 | NET Bible note on 17:21; textual summaries | Search: biblia.com NET note; biblehub.com; confessionalbibliology.com (the opposing case). Carson not named |
+| Deuteronomy 32:5; Exodus 32:19; 1 Corinthians 13:2; 13:32 "the smallest of all seeds" | 14-21 | BSB | BSB text |
+| Care: the Mark 9 wording on seizures and mental illness and the path to help, word for word (adapted only to "often falls into the fire or into the water"); the Matthew 8 sentence that the Bible does not teach that sickness comes from too little faith, and "Faith is trust in a person, not a payment that buys a cure"; the mustard seed not a formula | 14-21 | CLAUDE.md, care for the reader | Pastoral |
+| Second of three predictions (16:21; 20:17-19); Mark 9:32 against Matthew's "deeply grieved" | 22-23 | BSB | BSB comparison |
+| Paradidōmi in 17:22, 26:15-16, 27:26 and Romans 4:25 | 22-23 | Greek text (G3860) | Script |
+| Isaiah 53:5; Hosea 6:2 | 22-23 | BSB | BSB text |
+| Two drachmas the yearly temple tax; Exodus 30:12-16 the half shekel; Nehemiah 10:32 a third of a shekel | 24-27 | BSB; Josephus, Jewish War 7.218 ("as they used to pay" the temple) | BSB text; search below |
+| Babylonian Jews kept the money at Nehardea and Nisibis until it could be taken to Jerusalem | 24-27 | Josephus, Antiquities 18.311-313 | Search: lexundria.com 18.312 (Whiston); philipharland.com summary; posenlibrary.com. Paraphrased |
+| Mishnah Shekalim 1:3: changers' tables in the provinces on 15 Adar, in the temple on 25 Adar (written down around 200) | 24-27 | Mishnah | Search: mishnah.org; jewishvirtuallibrary.org; sefaria.org. The sources differ on where the 15 Adar tables stood, so the note says "in the towns" and "later in the temple" |
+| Stater a four-drachma coin, paying for two; Tyrian shekel the usual coin of temple payments | 24-27 | Lexicons; earlier ledger (Mark 7) | Earlier ledger. Tosefta Ketubbot 13:20 not cited: the "only Tyrian" reading is an inference from it |
+| After 70 Vespasian ordered every Jew to pay two drachmas yearly to the Capitol (Jupiter's temple) | 24-27 | Josephus, Jewish War 7.218 | Search: lexundria.com 7.218 (Whiston); encyclopedia.com "Fiscus Judaicus"; biblicalarchaeology.org. Paraphrased. Women, children, Edfu ostraca, Suetonius and Nerva's coin (deep note) not used |
+| Matthew after 70 (most scholars) | 24-27 | Earlier ledger (Matthew's book page) | Earlier ledger |
+| Herodotus, Histories 3.41-42: Polycrates of Samos threw his ring into the sea and found it in a fish | 24-27 | Herodotus | Search: lexundria.com 3.42 (Macaulay); perseids.org (Godley); sacred-texts.com. Paraphrased. Strauss, b. Shabbat 119a, Davies and Allison, Mendel Nun (deep note) not used |
+| Chrysostom, Homily 58 on Matthew: Jesus first shows he is not liable, then pays, to keep others from offence, and pays for Peter | 24-27 | Chrysostom | Search: newadvent.org 200158; ewtn.com. Paraphrased; "a preacher of the late 300s" as in the earlier notes |
+| Not a teaching on modern taxes; 22:21; Romans 13:7; 1 Corinthians 9:19; 12:6 | 24-27 | BSB | BSB text; pastoral line |
+
+Left out: 4Q159 and a once-in-a-lifetime half shekel (the fragment is broken
+and its subject debated); m. Shekalim 1:4 on priests; Philo; Cicero, For
+Flaccus; Cassius Dio; Suetonius; Nerva; the Edfu receipts; Origen, Cyril,
+Leo the Great, Aquinas, Palamas, the hesychast councils, Callixtus III;
+Raphael and Masaccio; Bultmann, Stein, Allison, Horbury, Cassidy, Strauss,
+Temkin, Twelftree; the moon-phase belief beyond the word's root; the barbel
+and the musht; the lectionaries; every textual note in the deep note except
+17:21.
