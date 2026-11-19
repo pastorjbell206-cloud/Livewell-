@@ -696,3 +696,34 @@ chapter, with the earlier ledger for Mark 1, 6 and 12.
 Left out: the claim that the dove symbolised Israel (not checked); the
 Gospel of the Nazarenes fragment on why Jesus was baptized; Hilary of Poitiers
 on 3:15; any count of how many John baptized.
+
+## The plain notes on Matthew 4 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/4.json`. Two searches for this
+chapter, with the earlier ledger for Mark 1.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Forty: Israel's years; Moses (Exodus 34:28); Elijah (1 Kings 19:8); Israel "My firstborn son" (Exodus 4:22) | 1-4 | BSB | Repository |
+| The three answers from Deuteronomy 8:3; 6:16; 6:13; Psalm 91:11-12; Massah (Exodus 17:7) | 1-11 | BSB | Repository |
+| Pinnacle (pterugion) means a wing or edge; the place is not known; the south-east corner above the Kidron and the Royal Portico are the usual proposals | 5-11 | Lexicons and Bible dictionaries (Vine's; Strong's notes) | Search: biblehub.com 4419; blueletterbible.org G4419; bibletruthpublishers.com. No height given, since the figures disagree |
+| Herod rebuilt the temple on a vast scale | 5-11 | Repository chapter notes (Matthew 2 `historical`) | Repository |
+| 28:18; John 12:31 | 5-11 | BSB | Repository |
+| Capernaum on the north-west shore near the Jordan's inflow; "His own town" (9:1) | 12-17 | Earlier ledger (Mark 1 and 2); BSB | Earlier ledger |
+| Tiglath-pileser III took Galilee and Naphtali and carried the people captive, about 733 to 732 BC | 12-17 | 2 Kings 15:29; Dubovský, Biblica 87 (2006), on the campaigns of 734 to 732 BC | Search: bsw.org Biblica 87; cojs.org; ucg.org commentary |
+| Galilee bordered by non-Jewish lands, with many non-Jews in and around it | 12-17 | Isaiah 9:1; repository | Stated generally |
+| "From that time on Jesus began" only at 4:17 and 16:21 | 12-17 | BSB | Script |
+| Isaiah 9:1-2, 9:6 | 12-17 | BSB | Repository |
+| The Galilee boat (1986), about eight metres, many repairs; fishing a major trade; Zebedee's hired men (Mark 1:20) | 18-22 | Earlier ledger (Mark 1:16-20); BSB | Earlier ledger |
+| Students usually chose their teacher; Jesus chooses his | 18-22 | Repository chapter note (Matthew 4 `cultural`) | Repository. Stated as "usually" |
+| Jeremiah 16:16 fishermen | 18-22 | BSB | Repository |
+| Synagogue: Sabbath reading, teaching and prayer; visitors invited to teach | 23-25 | Earlier ledger (Mark 1:21-28 and 6:1-6); Luke 4:16-21 | Earlier ledger and BSB |
+| Syria the Roman province; the Decapolis a league of Greek towns mostly east of the Jordan | 23-25 | Earlier ledger (Mark map) | Earlier ledger |
+| 4:23 and 9:35 frame chapters 5 to 9; ten miracles in chapters 8 and 9 | 23-25 | BSB; repository `structure` | Repository |
+
+Left out: any height for the temple's pinnacle; the claim that James the
+Just was thrown from it (Hegesippus, in the deep note, not re-checked); the
+Via Maris as a Roman road name; the number of fishing boats on the lake
+(Josephus's figure in Jewish War 2, not checked). Care: a word on fasting
+safely (ask a doctor; if not eating has become a struggle, talk to someone
+trusted and a health professional); healing and medicine set side by side.
