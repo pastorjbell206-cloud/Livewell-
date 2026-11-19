@@ -2200,3 +2200,26 @@ Cut: Kloner's count of rolling stones; m. Ketubbot 4:4 (flutes and wailing woman
 | Deuteronomy 18:18-19; 3:17-19 | 44-50 | BSB | BSB text |
 
 Cut: Pliny on nard; the litra; Josephus's lamb count; Egeria and the Palm Sunday procession; Theodulf; b. Sanhedrin 98a and Rashi on Zechariah 9:9; the bat qol; the Targum of Isaiah; Craig Evans, Bauckham, Reinhartz, Erasmus, Luther and Calvin by name; the 1969 calendar change; Giotto and Duccio; the 12:32 "all things" variant.
+
+## The plain notes on John 13 (2026-11-19)
+
+`client/public/bible/notes/john/plain/13.json`. 4 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Foot washing a basic courtesy; guests often washed their own feet; when another did it, usually a slave or low servant; the lower for the higher | 1-11 | J. C. Thomas, Footwashing in John 13 and the Johannine Community (Sheffield thesis 1990; book 1991): hospitality, love, servitude; Pilch and O'Loughlin as summarised | Search: etheses.whiterose.ac.uk/3505 (thesis summary); research.bangor.ac.uk; liturgy.slu.edu cultural context; praytellblog.com. No scholar named on the page; "normally" and "usually". The Mekilta on Exodus 21:2 was searched and not confirmed, so it is not used |
+| 1 Samuel 25:41; Genesis 18:4; Exodus 30:19; Psalm 51:7 | 1-11 | BSB | BSB text |
+| John's "just before the Passover" and the Synoptic Passover meal: views (reckoning, calendars, theological shaping), open | 1-11 | Deep note `hard` | Views only; Jeremias, Brown, Meier, Jaubert, Humphreys, Carson, Blomberg, Ehrman not named |
+| Foot washing kept as an ordinance by the Church of the Brethren, many Mennonite churches, Seventh-day Adventists, Free Will Baptists; Catholic Holy Thursday washing not required | 1-11 | Mennonite Church USA and the Mennonite Encyclopaedia; Brethren summary; Adventist Review; Christianity Today (2024); NAFWB statement (via Wikipedia's list); Diocese of Little Rock | Search: christianitytoday.com 2024 "footwashing maundy thursday"; amnetwork.uk Mennonite Encyclopaedia; adventistreview.org; dolr.org. "Many Mennonite churches" (practice varies) |
+| Teacher and Lord; egō eimi in 13:19 | 12-20 | BSB; Greek text in the repository | Script |
+| Psalm 41:9; 55:12; 2 Samuel 15:31; 18:23 | 12-31 | BSB | BSB text |
+| Showing the sole of the foot an insult in much of the Middle East | 12-20 | Deep note `cultural` | Stated as "some readers think it may also picture" |
+| Not a command to stay under abuse; seeking safety is not disobedience (John 18:23) | 12-20 | Earlier notes (Matthew 5 care line) | Repository |
+| The beloved disciple: 19:26-27, 20:2-10, 21:7, 21:20, 21:24; the church's answer from the late second century; John the elder; "rests on the memory of someone who was there" | 21-30 | Book page `who` | Book page wording |
+| Reclining on the left elbow; the morsel a host's mark of friendship ("many readers think"; "whether or not that was a custom") | 21-30 | Deep note `cultural` | Hedged |
+| Luke 22:3; 12:6; Matthew 27:3-5; "These notes do not say what God did with Judas. That belongs to God." | 21-30 | BSB; Matthew 27 note | BSB text; Matthew 27 wording |
+| Maundy from Latin mandatum, first word of 13:34 in the Vulgate; sung at the foot washing ("most scholars think") | 31-35 | Word origin | Search: wordorigins.org; christiantoday.com; ncregister.com; Guéranger as cited. The alms-basket theory exists, hence "most scholars think" |
+| Leviticus 19:18, 34; 1 John 2:7-8; "little children" in 1 John (2:1, 2:12, 2:28, 3:7, 3:18, 4:4, 5:21); Matthew 5:44; Luke 10:29-37 | 31-35 | BSB | BSB text |
+| 18:10; Mark 14:30; 21:15-19; Luke 22:32; Matthew 26:75; 1 Kings 19:3-8, 15; Psalm 34:18 | 36-38 | BSB | BSB text |
+
+Cut: the Mekilta on the Hebrew slave (not confirmed); Joseph and Aseneth; m. Berakhot 5:5 on agents; 1QH on Psalm 41; the cockcrow watch and m. Bava Kamma 7:7; the meanings of Iscariot and the sicarii; Irenaeus, Bauckham, Hengel and Lazarus as candidates by name; the Gospel of Judas, Borges, Maccoby, Barth; the 13:10 short reading; the KJV's "supper being ended".
