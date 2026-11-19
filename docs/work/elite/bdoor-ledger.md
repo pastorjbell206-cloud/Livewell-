@@ -3688,3 +3688,28 @@ chapter, with the repository lexicon.
 | Eber and ‘Hebrew’ | 21-32 | Not checked | Stated as "may ... not certain" |
 | Seventy names in the Hebrew, seventy-two in the Greek; Luke 10:1 seventy or seventy-two in the manuscripts (BSB seventy-two); the link to the nations argued, not proved | 21-32 | Text and interpretation | Search: Bible Hub "Were there 70 or 72 disciples?"; Faithlife Study Bible sidebar; ESV Study Bible note as quoted; biblicaltraining.org "Seventy Disciples" |
 | Genesis 46:27 (seventy); Acts 17:26; Matthew 28:19; Revelation 7:9 | 21-32 | BSB | Repository |
+
+## The plain notes on Genesis 11 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/11.json`. Three web searches for
+this chapter, with the book page's rows (Babel and Babylon one word; exile
+dates; Ur) and the Luke 1 note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Shinar the land of Babylon (Daniel 1:2); fired brick and bitumen for great buildings in Mesopotamia, stone in Canaan | 1-4 | Repository deep note (`historical`, `cultural`); BSB | Repository |
+| Etemenanki, Babylon's ziggurat, ‘house of the foundation of heaven and earth’; many scholars link the Babel story with the ziggurats, Etemenanki in particular | 1-4 | Archaeology | Search: Wikipedia "Etemenanki" and "Ziggurat"; National Geographic; French Ministry of Culture "Orient cunéiforme" |
+| Enuma Elish tablet VI: the gods mould bricks and build Esagila and Babylon for Marduk | 1-4 | Enuma Elish | Search: Budge, The Babylonian Legends of the Creation (1921) at sacred-texts.com; King (1902). Paraphrased; "for a year" not used |
+| Kings ‘made a name’ by building inscriptions | 1-4 | Repository deep note (`cultural`) | Repository; stated generally |
+| 9:1 "fill the earth"; Revelation 18:2; Psalm 127:1; Genesis 12:2 | 1-4 | BSB | Repository |
+| Babel heard in Akkadian as Bab-ili ‘gate of the god’ (a popular etymology of an older name); balal in 11:7 and 11:9 | 5-9 | Akkadian; Hebrew text | Search: NET note (Biblia) on 11:9; Sarna as quoted; Blue Letter Bible H894. Script (H1101). The page says "was understood as" |
+| Babylon took Jerusalem in 586 BC | 5-9 | Earlier ledger (wot-ledger.md) | Earlier ledger |
+| Readings of the sin (pride; refusing to scatter; reaching heaven; one power); judgment and mercy; the origin of languages read two ways, no side | 5-9 | Repository deep note (`hard`) | Repository; stated as readings |
+| Acts 2:5-6 as Babel reversed (a reading, said so); Zephaniah 3:9; Luke 1:51; James 4:6 | 5-9 | BSB; repository deep note | Repository |
+| Ten generations each (Adam to Noah; Shem to Abram), each ending with three sons; Shem ‘name’; ages 600, 239, 148 | 10-26 | BSB; Hebrew text | Repository (counted and added) |
+| Greek translation adds years and Cainan (11:12-13); Luke 3:36 follows it | 10-26 | Repository introduction (`text`); BSB | Repository |
+| Luke 3:34-36; Galatians 3:8 | 10-26 | BSB | Repository |
+| Ur: Woolley 1922 to 1934 for the British Museum and the Penn Museum; Nanna (Sin); moon god at Haran; Chaldeans settled by about 850 BC; the later-wording argument and its reply | 27-32 | Book page row (search) | Earlier search. **Cut:** a northern Ur (not checked) |
+| Joshua 24:2; Acts 7:2-4; Genesis 15:7; Hebrews 11:8, 11:10 | 27-32 | BSB | Repository |
+| Aqar ‘barren’ in 11:30, 25:21, 29:31; 1 Samuel 1:2; Luke 1:7 | 27-32 | Hebrew text; BSB | Script (H6135); repository |
+| Care line: "Many faithful people long for children and never have them, or lose them before birth." and "Childlessness is not a judgment from God, and it does not measure your faith. Your longing is seen. If the grief is heavy, please share it with someone you trust: a friend, a pastor, a counsellor." copied word for word from the Luke 1:5-17 note | 27-32 | Site | Repository (grep) |
