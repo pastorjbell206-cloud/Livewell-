@@ -6551,3 +6551,41 @@ No web search.
 | Shechem and Succoth (Genesis 33:17-18); Judah's scepter (Genesis 49:10); washbasin; sandal and land (Ruth 4:7), "may mean" | Repository deep note (cultural); BSB | BSB text |
 | 60:5-12 nearly the same as 108:6-13 | BSB compared | BSB text |
 | 2 Corinthians 12:9 | BSB | BSB text |
+
+## The plain notes on Psalm 61 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| No occasion; the flight from Absalom an old suggestion; a soldier or exile another | Repository deep note (historical) | Stated as views |
+| A guest under the host's protection | Repository deep note (cultural) | Site's own teaching |
+| "Many generations" read later of David's line | Repository deep note; book page ("The king's psalms") | Site's own teaching |
+| Isaiah 32:2; 1 Timothy 2:2 | BSB | BSB text |
+
+## The plain notes on Psalm 62 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Jeduthun also in 39 and 77 | Earlier ledger (Psalm 39) | Earlier ledger |
+| 'akh (H0389) six times, verses 1, 2, 4, 5, 6, 9 | Repository word data | Script |
+| 62:1 "silence" (dumiyah, H1747) | Repository word data | Script |
+| hevel (H1892) twice in 62:9; also Ecclesiastes | Repository word data; earlier ledger (Psalm 39) | Script |
+| Mudbrick walls; merchants' scales | Repository deep note (cultural) | Site's own teaching |
+| Matthew 6:19; Romans 2:6 quotes 62:12 | BSB | BSB text |
+
+## The plain notes on Psalm 63 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Wilderness of Judah; little rain | 1-5 | Repository deep note (cultural) | Site's own teaching |
+| David there twice (1 Samuel 23-24; 2 Samuel 15:25, the ark left); "the king" (63:11) favours the second; the heading does not say | 1-5 | BSB; repository deep note | BSB text; stated as a reading |
+| "Fat and fatness" (H2459, H1880) in 63:5 | 1-5 | Repository word data | Script |
+| "Earnestly I seek" (H7836) related to the word for dawn; the Greek "rise early"; the morning psalm of the early church; the Apostolic Constitutions (fourth century) | 1-5 | Wikipedia "Psalm 63"; Cambridge Bible note (biblehub.com); studylight.org; johnmarkhicks.com | Search. Narrowed to "Christian church orders from the fourth century, such as the Apostolic Constitutions, name it for prayer at dawn". Chrysostom's saying (met only secondhand), Athanasius and Benedict not used |
+| "Clings" dabaq (H1692) in 63:8, Genesis 2:24, Ruth 1:14 | 6-11 | Repository word data | Script |
+| Watches of the night; jackals; oaths in God's name | 6-11 | Repository deep note (cultural) | Site's own teaching |
+| Matthew 4:2; John 4:14; Matthew 5:6; Philippians 1:21; John 10:28; Ruth 2:12 | all | BSB | BSB text |
