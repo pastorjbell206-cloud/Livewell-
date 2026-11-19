@@ -3105,3 +3105,41 @@ Sirach 31:8, CD 14:20 and m. Avot 2:12 on mammon; the Qumran "sons of light";
 Josephus on the Pharisees' simple life; m. Gittin 9:10, Josephus on divorce,
 Salome, Elephantine and the Damascus Document; byssus from Egypt; 4 Maccabees
 13:17; Gressmann; Irenaeus and Tertullian on the intermediate state.
+
+## The plain notes on Luke 17 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/17.json`. Five searches for this
+chapter, with the earlier ledger (Mark 1 and 9; Matthew 8, 17, 18 and 24;
+Luke 9 and 10; John 4).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The donkey millstone in Mark and Matthew; Luke's "stone of a mill" | 1-4 | Earlier ledger (Mark 9); Greek text | Earlier ledger; repository Greek |
+| b. Yoma 86b: forgiven three times, not a fourth (written down centuries later) | 1-4 | Earlier ledger (Matthew 18) | Earlier ledger; "Later Jewish teaching, written down centuries afterwards"; the rabbi not named |
+| Leviticus 19:17-18; Matthew 18:21-35 | 1-4 | BSB | Repository |
+| The abuse paragraph, word for word ("These words have been rightly applied to the abuse of children. ... it was not your fault.") | 1-4 | Matthew 18 plain note | Copied word for word |
+| The forgiveness paragraph, word for word from "Forgiveness has also been misused" to "that is not failure" ("this prayer" made "this passage") | 1-4 | Matthew 6 and Luke 11 plain notes | Copied word for word |
+| Mustard seed paragraph (Matthew 17 wording: "The Bible does not teach that sickness comes from too little faith ... Its power is in the God it trusts, not in how strongly it is felt. This verse is not a formula"), the last clause adapted to "a prayer that seems unanswered" | 5-6 | Matthew 17 plain note | Copied, last clause adapted |
+| Sykaminos most likely the black mulberry, deep strong roots; some argue for the sycamore-fig | 5-6 | Lexicons and Bible dictionaries | Search: biblehub.com 4807; biblicaltraining.org "Sycamine tree"; wartburgproject.org; biblegateway Encyclopedia of the Bible. "Most scholars think" |
+| Zechariah 4:6; Matthew 17:20; Mark 11:23 | 5-6 | BSB | Repository |
+| Achreios: "without claim", "owed nothing"; KJV "unprofitable"; elsewhere only Matthew 25:30 | 7-10 | Lexical summaries; Greek text | Search: tips.translation.bible "Luke 17:10"; biblehub.com; jesuswalk.com. Script over the repository's Greek (G0888) |
+| Slaves in ordinary Roman households | 7-10 | General | Stated generally; "He is not approving slavery" |
+| Psalm 116:12-13; Luke 12:37; 22:27 | 7-10 | BSB | Repository |
+| Leprosy not Hansen's disease; mould; Leviticus 13:46; Leviticus 14 and the priest (Mark 1 and Matthew 8 wording) | 11-19 | Earlier ledger (Mark 1; Matthew 8) | Copied from their wording |
+| Samaritans (Luke 10 and John 4 wording; about nine hundred today) | 11-19 | Earlier ledger (John 4) | Earlier ledger |
+| Allogenēs only at 17:18 in the NT; the same word on the temple warning inscription; a complete stone found in 1871 (Clermont-Ganneau), now in Istanbul; Josephus mentions the warning | 11-19 | Temple Warning inscription | Search: en.wikipedia.org "Temple Warning inscription"; avande1.sites.luc.edu; armstronginstitute.org. Script over the repository's Greek (G0241). Istanbul and Josephus not named on the page; no claim that Luke alludes to it |
+| Sesōken (sōzō, "saved") at 17:19 | 11-19 | Greek text | Script over the repository's Greek (G4982) |
+| 2 Kings 5:14-15; Luke 4:27; Psalm 103:2 | 11-19 | BSB | Repository |
+| Entos: "inside" its usual sense; only other NT use Matthew 23:26; KJV "within you"; most modern versions "in your midst" or "among you"; readings: inward, among, both | 20-21 | Greek text; translation surveys | Search: versebyverseministry.org "Is KJV or ESV the correct translation of Luke 17:21"; tips.translation.bible; experimentaltheology.blogspot.com; hugoye.bethmardutho.org (Ramelli). Script over the repository's Greek (G1787). The Vulgate, Origen, Tolstoy and Roberts not named (not all confirmed) |
+| Luke 11:20; Daniel 7:13 | 20-21 | BSB | Repository |
+| Date-setting and Acts 1:7 (Matthew 24 wording); "When Jesus will return is a question on which faithful Christians differ. That he will return is confessed by all." | 22-30 | Matthew 24 plain note | Copied word for word |
+| Genesis 7:23; 19:17; 19:26 | 22-37 | BSB | Repository |
+| Verse 36 lacking in P75, Sinaiticus and Vaticanus; most think it came from Matthew 24:40; others suggest an accidental skip (same ending) | 31-37 | Textual summaries (Metzger as quoted) | Search: biblehub.com "Why omit Luke 17:36"; uasvbible.org; tips.translation.bible "luke 1736" |
+| Aetos eagles or vultures; Matthew 24:28 (Matthew 24 wording); Job 39:30 | 31-37 | Earlier ledger (Matthew 24) | Earlier ledger |
+| One taken, one left: the two readings, rapture from the Latin for "caught up" (1 Thessalonians 4:17), "These notes do not choose, and they set out no end-times scheme." and the closing sentence | 31-37 | Matthew 24 plain note | Copied, the Noah sentence adapted to Noah and Lot |
+
+Left out: Josephus on the Galilean pilgrims at Ginae; John Hyrcanus and the
+bones in the temple; m. Negaim and b. Nedarim 64b; 1QS on rebuke; Wisdom of
+Solomon and Josephus on the pillar of salt; outside stairs on roofs; Origen,
+Athanasius, the Vulgate, Luther, Tolstoy, C. H. Roberts and the Gospel of
+Thomas on 17:21; Darby, Scofield, Left Behind, MacArthur, Bock.
