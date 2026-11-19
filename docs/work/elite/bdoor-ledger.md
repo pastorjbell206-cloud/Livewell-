@@ -5544,3 +5544,37 @@ Left out: the number of commanders at Caesarea; Agrippa II as the last Herod to 
 | Genesis 50:20; Proverbs 19:21 | 30-32 | BSB | Repository |
 
 Left out: Agrippa raised in Rome; Pindar's use of the proverb; whether Luke knew the Bacchae; the content of Festus's letter.
+
+## The plain notes on Acts 27 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/27.json`. 3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The ‘we’ resumes; many think Luke | 1-8 | Book page "Who wrote it" | Repository |
+| Aristarchus "my fellow prisoner" (Colossians 4:10) | 1-8 | BSB | Repository |
+| Adramyttium a port in the north-west of Asia; Myra in Lycia; Alexandrian ship; Rome fed by grain from Egypt and North Africa, "probably" a grain ship (verse 38) | 1-8 | Deep note `historical`; Roman-world portrait parts 1 and 6 | Repository; wrom-ledger |
+| Ships could not sail well into the wind; Cnidus at the south-west tip; the lee of Crete | 1-8 | Deep note; BSB | Repository; stated generally |
+| Psalm 89:9; 107:23-24, 26-27, 28-30; Genesis 39:5, 21 | 1-8 and following | BSB | Repository |
+| The Fast = Day of Atonement, in the autumn; Leviticus 16:29 | 9-12 | Roman-world portrait part 1; BSB | wrom-ledger; Repository |
+| Sailing season: the portrait's Vegetius sentences (late fourth century; late May to mid-September; about 11 November to 10 March); ships sailed in winter when pushed (Beresford, not named here); "a habit, not a law" | 9-12 | Roman-world portrait part 1 | wrom-ledger (Vegetius verified in substance; Beresford BMCR) |
+| Paul's warning "an experienced traveller's judgment, not a vision"; the centurion trusted pilot and owner | 9-12 | Roman-world portrait `read` note | wrom-ledger |
+| Shipwrecked three times (2 Corinthians 11:25); Proverbs 22:3 | 9-12 | BSB | Repository |
+| Phoenix's site debated: two places on either side of one cape (Loutro, Phineka); its facing read more than one way | 9-12 | Reference works | Search: jw.org Insight "Phoenix"; biblicalarchaeology.org "Ancient Phoenix: the harbor that might have been". Sites not named on the page |
+| Euraquilo: seems to join Greek euros (east wind) and Latin aquilo (north wind); off the mountains of Crete | 13-20 | Reference works; deep note `cultural` | Search: jw.org Insight "Euroaquilo"; bibleref.com 27:14. "Seems" |
+| Undergirding with cables (hypozōnnymi); the lowered gear: sea anchor or gear (skeuos, general word); the Syrtis sandbanks off Libya | 13-20 | Lexicons; translations; deep note `cultural` | Search: blueletterbible G5269; openbible commentaries 27:17. Both readings given |
+| James Smith (of Jordanhill), The Voyage and Shipwreck of St. Paul (1848): drift from Cauda to Malta about two weeks; "many historians ... believable, though not every detail is agreed" (Ramsay disagreed on the bay) | 13-20 | Smith | Search: en.wikipedia.org "James Smith of Jordanhill" (1782-1867; book 1848; four editions to 1880); historicalapologetics.org (476 miles, a little over thirteen days at 1.5 mph, secondary); biblicalstudies.org.uk Expositor PDF |
+| Jonah 1:4-5 | 13-20 | BSB | Repository |
+| "Must" stand before Caesar (23:11); "granted" read by many as Paul's prayer, "many readers think" | 21-26 | BSB; deep note | Repository; stated as readings |
+| Isaiah 43:2; Psalm 46:1 | 21-26 | BSB | Repository |
+| "Adriatic" in ancient use the wider sea between Greece, Italy and Sicily; a fathom about six feet; anchoring from the stern | 27-32 | Deep note `cultural` | Repository |
+| Promise and action: the sovereignty (Reformed) and freedom (Arminian and Wesleyan) readings; no side; agreement that Paul acted | 27-32 | Deep note `hard` | Stated as readings |
+| Nehemiah 4:9 | 27-32 | BSB | Repository |
+| The meal: ordinary Jewish thanksgiving (most) or an echo of the Lord's Supper (some); Luke does not say | 33-38 | Deep note; standard readings | Stated as readings |
+| 276 on board; a few copies about seventy-six | 33-38 | Textual apparatus | Search: confessionalbibliology.com dossier on 27:37; freely-given.org parallel 27:37 (WH 76). Vaticanus not named (attribution not confirmed) |
+| 1 Kings 19:5; 1 Samuel 14:45 | 33-38 | BSB | Repository |
+| Two steering oars as rudders; guards punished if prisoners escaped (12:19; 16:27) | 39-44 | Deep note `cultural`; BSB | Repository |
+| diasōthēnai (verse 44) shares the root of sōzō (verses 20, 31) | 39-44 | Greek text in the repository | Script |
+| Exodus 14:29; Jonah 2:2; Isaiah 43:2 | 39-44 | BSB | Repository |
+
+Left out: Smith's own figures; the exact sites of Phoenix, Cauda and the bay; Vaticanus at 27:37; the year and date of the Fast in Paul's voyage; the grain ship's size; Homer and the ancient sea-story genre. No care line: the text does not call for one.
