@@ -229,5 +229,473 @@
       "year": 1992,
       "note": "Essays arguing that Matthew was written after the parting of the ways, including studies of the Sermon on the Mount and Matthew's use of Scripture."
     }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Matthew in a minute",
+        "body": "Matthew is the first book of the New Testament. It is one of the four Gospels, the books that tell the story of Jesus. It has 28 chapters, and the early church read and quoted it more than any other Gospel.\n\nIt opens with a family tree. Before any story begins, Matthew wants you to know who Jesus is related to: Abraham, the father of the Jewish people, and David, Israel's greatest king. The first line calls Jesus “the son of David, the son of Abraham” (1:1).\n\nThen the story moves. An angel speaks to Joseph in a dream. Wise men follow a star. A jealous king tries to kill a baby. A preacher named John baptizes Jesus in the Jordan River. Jesus is tested in the desert and begins to teach and heal in Galilee.\n\nMatthew is the Gospel of Jesus' teaching. It gathers his words into five long speeches. The first is the Sermon on the Mount (chapters 5 to 7), which holds the Beatitudes and the Lord's Prayer.\n\nThe book ends on a mountain in Galilee. The risen Jesus sends his followers to “make disciples of all nations” (28:19). His last words keep a promise made in the first chapter, where his name is Immanuel, “God with us” (1:23). Now he says, “And surely I am with you always, even to the end of the age” (28:20)."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and how we know",
+        "body": "The book never names its writer. Every old copy that has a title calls it ‘According to Matthew’, and from the second century the church said it was written by Matthew, one of Jesus' twelve apostles. So the question is how far that title can be trusted. It helps to keep two things apart: what the Bible says about Matthew, and what the early church said about the book.\n\nWhat the Bible says. Matthew was a tax collector. In this Gospel, Jesus sees “a man named Matthew sitting at the tax booth” and calls him to follow (9:9). The list of the Twelve calls him “Matthew the tax collector” (10:3). Mark and Luke tell the same story but call the man Levi (Mark 2:14; Luke 5:27). Most readers think Matthew and Levi were two names for one man, as Simon was also called Peter. A tax collector was disliked by his neighbours, because he worked for the rulers and was often thought to cheat. He was also a man who could read, write and keep careful records.\n\nWhat the early church said. The oldest witness is Papias, a church leader in Hierapolis, in what is now Turkey, writing early in the second century. His books are lost, but the historian Eusebius copied a few sentences from them (Church History 3.39.16). In plain words, Papias said that Matthew put the sayings of the Lord in order in the Hebrew language, and that each person translated them as well as he could.\n\nThat one sentence is hard to read. The word for ‘sayings’ (logia) can mean Jesus' sayings, or the words of Scripture, or a whole account of what Jesus said and did. ‘The Hebrew language’ could mean Hebrew or Aramaic, the everyday language of Jesus. Some scholars think it means ‘in a Hebrew style’ rather than in the Hebrew tongue. Around 180, Irenaeus, a bishop in what is now France, said that Matthew wrote a Gospel for the Hebrews in their own language while Peter and Paul were preaching in Rome (Against Heresies 3.1.1).\n\nThe puzzle. The Matthew we have is written in Greek, and it does not read like a translation. No Hebrew or Aramaic copy of an early Matthew has ever been found. And Matthew seems to follow Mark's Greek closely, often word for word (see ‘Matthew beside Mark and Luke’ below).\n\nSo scholars divide. Some hold that the apostle wrote the book, perhaps drawing on Mark's account as well as his own memory, and they note that no other name was ever attached to it. Others think a later Jewish Christian teacher wrote it, and that Matthew's name came to the book because some of what it holds went back to him. Many of them point to a line that sounds like a self-portrait: “every scribe who has been discipled in the kingdom of heaven is like a homeowner who brings out of his storeroom new treasures as well as old” (13:52).\n\nThe honest summary. That the book bears Matthew's name is the church's oldest and steady tradition, and there is no rival name. Whether the apostle wrote our Greek book himself is debated, and Papias's sentence can be read more than one way. What nearly everyone agrees on is what the book itself shows: the writer was a Jewish believer in Jesus who knew Israel's Scriptures deeply and wrote for people who knew them too."
+      },
+      {
+        "id": "when",
+        "h": "When, where, and for whom",
+        "body": "When. Matthew gives no date. The latest it can be is set by two Christian writings from early in the second century that seem to know it. Ignatius, bishop of Antioch, wrote that Jesus was baptized by John so that all righteousness might be fulfilled, a detail only Matthew records (To the Smyrnaeans 1.1; compare Matthew 3:15). And a church manual called the Didache gives the Lord's Prayer almost exactly in Matthew's form (Didache 8).\n\nThe earliest date depends on Mark. If Matthew used Mark, as most scholars think, he wrote after Mark, which most place in the late 60s or around 70. So the real question is whether Matthew wrote before or after the year 70, when the Romans destroyed Jerusalem and its temple.\n\nThe case for after 70. Most scholars place Matthew somewhere between about 80 and 95. They point to the parable of the wedding feast, where an angry king “sent his troops to destroy those murderers and burn their city” (22:7), which many read as looking back on the burning of Jerusalem. They point to the phrase “to this very day” (28:15), which suggests some years had passed. And they point to Matthew's sharp quarrel with the synagogue, which fits a time when Jewish life was being rebuilt after the war.\n\nThe case for before 70. Other scholars place Matthew in the 50s or 60s. They point to passages that seem to assume the temple is still standing: bringing a gift to the altar (5:23-24), paying the temple tax (17:24-27), swearing by the temple (23:16-22). They note that Matthew never says that Jesus' warning about the temple (24:2) had come true, which would have been a strong point to make. They answer that a burned city was a common picture of judgment in the prophets. And the early church held that Matthew was the first Gospel written.\n\nWhere. The book does not say. The most common answer is Antioch in Syria, a large Greek-speaking city with many Jews, where believers were first called Christians (Acts 11:26). Ignatius of Antioch is one of the first writers to echo Matthew. Others have proposed Galilee, the town of Sepphoris near Nazareth, Caesarea on the coast, or the land east of the Jordan. No one knows for sure.\n\nFor whom. Here there is more agreement. Matthew writes for people who know the Jewish Scriptures and customs well. Mark stops to explain that Jews wash their hands before they eat (Mark 7:3-4). Matthew tells the same story and explains nothing (15:2), because his readers already know. He shows Jesus keeping the law and arguing about how to keep it. Most think his first readers were Jewish believers in Jesus, with Gentiles (people who are not Jewish) joining them in growing numbers."
+      },
+      {
+        "id": "shape",
+        "h": "How Matthew is built",
+        "body": "Matthew is built like a well-planned house. Story and teaching take turns. Five times the story pauses for a long speech by Jesus, and five times the speech ends with almost the same words: “When Jesus had finished saying these things” (7:28; compare 11:1, 13:53, 19:1 and 26:1). Those words are Matthew's signposts. They tell you a speech is over and the story is moving on.\n\nThe five speeches are these. The Sermon on the Mount, on life in God's kingdom (chapters 5 to 7). The sending of the Twelve, on mission and the cost of it (chapter 10). The parables of the kingdom, on how God's rule grows hidden and then comes into view (chapter 13). Life together as God's people, on humility, lost sheep and forgiveness (chapter 18). And the last things, on the fall of the temple, the end of the age and the final judgment (chapters 24 and 25, with the warnings of chapter 23 just before).\n\nWhy five? In 1918 the scholar B. W. Bacon suggested that the five speeches answer the five books of Moses, the first five books of the Bible. Most scholars today doubt so tidy a match. But many agree that Matthew does show Jesus as a teacher like Moses, and greater (see ‘The big themes’).\n\nThere is a second way to see the shape. Twice Matthew says, “From that time on Jesus began.” At 4:17 Jesus began to preach the kingdom. At 16:21 Jesus began to show his disciples that he must go to Jerusalem, suffer, die and be raised. Some readers divide the book in three at those two turns: who Jesus is (1:1 to 4:16), what he announces (4:17 to 16:20), and where he is going (16:21 to 28:20).\n\nBoth ways of seeing are useful, and they fit together. The band at the top of this page draws the book in eight parts. Tap a part to see what it holds.\n\nAt the very end comes the story of the last week. It runs from the plot against Jesus (26:1) through the cross to the empty tomb and the mountain in Galilee (28:16-20)."
+      },
+      {
+        "id": "themes",
+        "h": "The big themes",
+        "body": "The kingdom of heaven. Jesus' first message in Matthew is “Repent, for the kingdom of heaven is near” (4:17). The kingdom means God's rule, God putting the world right. Matthew says ‘kingdom of heaven’ about thirty times, and no other book of the Bible uses the phrase. It means the same as ‘kingdom of God’, which Matthew also uses a few times. For a long time scholars explained the choice as Jewish reverence, a way of not saying God's name too often. Jonathan Pennington (2007) argued instead that Matthew likes to set heaven against earth, so ‘of heaven’ marks God's rule as different from every earthly kingdom. The two ideas can sit together.\n\nFulfilment. Again and again Matthew says that something happened “to fulfill what the Lord had said through the prophet” (1:22). He believes the whole story of Israel was heading somewhere, and that it arrives in Jesus. (More on this below.)\n\nJesus, the Messiah of Israel. Messiah is Hebrew for ‘anointed one’, the king God promised. Its Greek form is Christ. Matthew calls Jesus the son of David, the royal line, more often than any other Gospel. Blind men cry it out (9:27); crowds shout it as he rides into Jerusalem (21:9).\n\nA new Moses? Matthew tells Jesus' early life in a way that echoes Moses. A cruel king kills baby boys, and the child escapes. He comes out of Egypt. He spends forty days in the desert. He goes up a mountain to teach (5:1). Dale Allison's study The New Moses (1993) set out these echoes at length. But Jesus is more than a second Moses. He says, “You have heard that it was said” (5:21), and then, “But I tell you” (5:22). He speaks with his own authority, “not as their scribes” (7:29).\n\nRighteousness. This means living rightly before God and with others. Jesus says, “unless your righteousness exceeds that of the scribes and Pharisees, you will never enter the kingdom of heaven” (5:20). He does not mean more rules. He means a heart made new: no anger kept, no lust fed, love even for enemies.\n\nThe church. Matthew is the only Gospel that uses the word church, once when Jesus says he will build it (16:18) and once when he teaches how its members should settle wrongs (18:17).\n\nThe nations. The book begins with wise men from the east worshipping the child and ends with “all nations” (28:19). In between, a Roman officer (8:10) and a Canaanite mother (15:28) show more faith than many in Israel. Jesus first sends his followers only to Israel (10:5-6), but by the end the door is open to everyone.\n\nGod with us. Matthew wraps the whole book in one promise. At the start, Jesus is “Immanuel” (1:23). In the middle, he says, “where two or three gather together in My name, there am I with them” (18:20). At the end, “I am with you always” (28:20)."
+      },
+      {
+        "id": "old-testament",
+        "h": "How Matthew uses the Old Testament",
+        "body": "Matthew quotes the Old Testament often. About ten times he uses a set phrase: this happened ‘to fulfil’ what the prophet said (1:22-23; 2:15; 2:17-18; 2:23; 4:14-16; 8:17; 12:17-21; 13:35; 21:4-5; 27:9-10). Four of them come in the first two chapters, as if Matthew wants you to learn how to read him from the start.\n\nHe reads the Scriptures in more than one way, and it helps to see the differences.\n\nSome are straight promises. The scribes tell Herod the Messiah will be born in Bethlehem, quoting Micah 5:2 (Matthew 2:5-6). This is a promise about a future ruler, and Matthew says it came true.\n\nSome are patterns. When the family comes back from Egypt, Matthew quotes Hosea 11:1, “out of Egypt I called My son” (2:15). In Hosea those words look back on Israel, God's ‘son’, leaving Egypt at the exodus. Matthew is not saying Hosea did not mean Israel. He is saying that Jesus lives out Israel's story again, this time faithfully. Like Israel, he comes out of Egypt, passes through water (his baptism) and is tested in the wilderness. Where Israel failed, he does not.\n\nSome are echoes of grief. After the children of Bethlehem are killed, Matthew quotes Jeremiah 31:15, Rachel weeping for her children. In Jeremiah the next lines promise that the children will come home (Jeremiah 31:16-17), and the same chapter promises a new covenant. Readers who knew the passage would hear hope inside the weeping.\n\nSome are wordplay. ‘He will be called a Nazarene’ (2:23) is not found word for word anywhere in the Old Testament, and Matthew says only ‘the prophets’, not one prophet. Many think he is playing on the Hebrew word netzer, the ‘Branch’ from David's family in Isaiah 11:1, which sounds like Nazareth.\n\nReaders who are not Christians often object that these verses, read in their own setting, are about something else. That is a fair point to face, and Matthew is not unaware of it. He reads the Old Testament as one long story that God is steering, so that its people, events and hopes can point beyond themselves. Christians have held, with Matthew, that Jesus is where that story was always heading. A good habit, when Matthew quotes a verse, is to turn back and read the whole passage it comes from."
+      },
+      {
+        "id": "other-gospels",
+        "h": "Matthew beside Mark and Luke",
+        "body": "Matthew, Mark and Luke are called the Synoptic Gospels. Synoptic means ‘seen together’: lay them side by side and they tell many of the same stories, often in the same order and words.\n\nMatthew and Mark. Matthew holds almost all of Mark. B. H. Streeter, in The Four Gospels (1924), counted that Matthew repeats about nine tenths of Mark's material. Matthew often tells the stories more briefly and gathers the teaching into longer speeches.\n\nMatthew and Luke. Matthew and Luke also share a large body of Jesus' sayings that Mark does not have, such as the Lord's Prayer and many sayings from the Sermon on the Mount. How did that happen? Here the views divide, and all of them are hypotheses, careful guesses from the evidence.\n\nThe most common view is called the Two-Source view. Mark was written first. Matthew and Luke each used Mark, and each also used a lost collection of Jesus' sayings that scholars call Q (from the German word Quelle, ‘source’). No copy of Q has ever been found; it is worked out from what Matthew and Luke share.\n\nA second view, named after Austin Farrer, who argued it in 1955, also puts Mark first but has no Q. Luke simply used Matthew as well as Mark. Mark Goodacre defended this in The Case Against Q (2002).\n\nA third view puts Matthew first. For most of church history, from Augustine around 400, Christians held that Matthew was written first and Mark came after. In the 1960s William Farmer revived a form of this: Matthew first, then Luke, then Mark drawing on both.\n\nEach view has able defenders, and the site does not settle the question. Christians who hold any of them agree that all four Gospels are Scripture.\n\nWhat only Matthew has. A great deal of Matthew is found in no other Gospel. The wise men and the star; the flight to Egypt and the killing of the boys in Bethlehem; Peter walking on the water toward Jesus (14:28-31); the coin in the fish's mouth (17:27); the parables of the weeds, the hidden treasure, the pearl and the net (chapter 13); the servant who would not forgive (18:23-35); the workers in the vineyard (20:1-16); the ten bridesmaids (25:1-13); the sheep and the goats (25:31-46); Pilate's wife's dream and Pilate washing his hands (27:19, 24); the guard at the tomb; and the great sending on the mountain (28:16-20). Reading Matthew with Mark open beside you is one of the best ways to see what Matthew wants to say."
+      },
+      {
+        "id": "birth",
+        "h": "The family tree and the birth story",
+        "body": "Matthew's first two chapters raise more questions than almost any others in the Gospels. Here they are, plainly.\n\nThe family tree. Matthew traces Jesus' line from Abraham through David and the kings of Judah down to Joseph (1:1-16). He arranges it in three sets of fourteen generations (1:17). To make the pattern, he leaves some kings out: between Joram and Uzziah there are three more kings in 1 Chronicles 3:11-12. Anyone with Chronicles could see this, so Matthew is not hiding anything. The list is shaped to teach, not to record every link. Why fourteen? In Hebrew, letters also stand for numbers, and the letters of David's name add up to fourteen. Many scholars think that is the point: this is David's family, and Jesus is David's son.\n\nMatthew names four women besides Mary: Tamar, Rahab, Ruth and ‘Uriah's wife’, Bathsheba (1:3-6). Ancient family trees rarely named women. Readers have noticed that each of the four was an outsider or had a marriage others whispered about. Rahab was a Canaanite and Ruth a Moabite. Their place in the line prepares for Mary, whose pregnancy would also cause whispers, and for a Messiah who came for the nations.\n\nTwo family trees. Luke gives a different list (Luke 3:23-38). It runs from Jesus back to Adam, and from David it goes through his son Nathan, not Solomon. It even names a different father for Joseph: Heli, not Jacob. Christians have answered this in several ways. Julius Africanus, in the early 200s, suggested a custom from the law of Moses (Deuteronomy 25:5-6): when a man died childless, his brother married the widow, so one son could have a legal father and a natural father (reported by Eusebius, Church History 1.7). Many since the Reformation have held that Luke gives Mary's line. Others say Matthew traces the royal line of who held the right to David's throne, while Luke traces actual descent. Many modern scholars think the two lists came from different family traditions and cannot be fully joined. The site does not choose among these.\n\nThe virgin birth. Matthew says Mary “was found to be with child through the Holy Spirit” before she and Joseph came together (1:18). Luke tells the same from Mary's side (Luke 1:34-35). Matthew then quotes Isaiah 7:14: “Behold, the virgin will be with child” (1:23).\n\nIsaiah spoke those words around 735 BC to King Ahaz of Judah, who was afraid of two kings marching against him. The sign was a child, and before that child grew up, the danger would pass (Isaiah 7:16). The Hebrew word Isaiah used is almah. It means a young woman of age to marry. Most scholars today say it does not by itself mean ‘virgin’, and many English Bibles translate it ‘young woman’. But the Greek translation of Isaiah, made by Jews before the time of Jesus, used parthenos, the usual Greek word for a virgin, and Matthew quotes that Greek.\n\nReaders take this in different ways. Many Jewish readers hold that Isaiah meant a child born in Ahaz's own day, and that Matthew's reading is not what Isaiah meant. Some Christians hold that Isaiah looked straight ahead to Jesus. Many others hold that the sign had a first meaning in Ahaz's day and a fuller meaning that Matthew saw in Jesus. All Christians who confess the historic creeds hold that Jesus was conceived by the Holy Spirit and born of the Virgin Mary; that belief rests on what Matthew and Luke tell, not on one Hebrew word.\n\nThe wise men and the star. The Magi (2:1) were not kings. The word meant a class of priestly wise men from Persia and the lands around it, known for reading the stars and dreams. Matthew does not say how many came. ‘Three’ comes later, from the three gifts. What was the star? Several proposals have been made. In 7 BC the planets Jupiter and Saturn met three times in the night sky, something the astronomer Johannes Kepler drew attention to in the 1600s. Chinese records tell of a new object, perhaps a comet, seen for about seventy days in 5 BC. Others point to the moon passing in front of Jupiter in 6 BC, or to Jupiter and Venus meeting in 2 BC. Others read Matthew's star, which goes ahead and stops over a house (2:9), as a sign from God that no natural event explains. None of these is proven.\n\nHerod and the children. Herod the Great ruled Judea for Rome from 37 BC until his death, which most scholars date to 4 BC and some to 1 BC. So Jesus was born before then, probably a year or two before. The Jewish historian Josephus, writing near the end of the first century, tells how cruel Herod was. He had his wife Mariamne killed, and three of his own sons. As he lay dying at Jericho, he ordered the leading men of the nation shut in the arena and killed when he died, so the land would mourn; his sister Salome let them go instead (Jewish War 1.659-666).\n\nNo writer outside Matthew records the killing of the boys of Bethlehem (2:16). Bethlehem was a small village. Scholars estimate the boys of two and under at perhaps a dozen to a few dozen, and many think such a killing, terrible as it was, would not have stood out among Herod's larger crimes. Others doubt it happened, noting Josephus's silence and how closely the story mirrors Pharaoh's order in Exodus 1:22. A Roman writer of about AD 400, Macrobius, tells a joke of Augustus about Herod's boys under two, but he wrote four centuries later and may be mixing the story with Herod's killing of his sons. The site tells Matthew's account as Matthew tells it, and notes what can and cannot be checked."
+      },
+      {
+        "id": "sermon",
+        "h": "The Sermon on the Mount, and how Christians have read it",
+        "body": "The Sermon on the Mount (chapters 5 to 7) is the best known of all Jesus' speeches. It begins with the Beatitudes, eight sayings that start “Blessed are” (5:3-12): the poor in spirit, those who mourn, the meek. It goes on to anger, lust, divorce, oaths, revenge and love for enemies; to giving, prayer and fasting done in secret; to money and worry; and it ends with two builders, one on rock and one on sand.\n\nIt is also among the hardest. “Love your enemies and pray for those who persecute you” (5:44). “Be perfect, therefore, as your heavenly Father is perfect” (5:48). How are ordinary people meant to live this? Christians have answered in several ways, and each answer has serious defenders.\n\nFor all, plainly. Augustine of Hippo wrote a book on the sermon around 394 and read it as the pattern of the whole Christian life. Many in every age have read it the same way: this is how Jesus' followers are to live, with his help.\n\nCommands and counsels. In the Middle Ages many teachers, Thomas Aquinas among them, made a distinction. Some of Jesus' words are commands for every Christian. Others are ‘counsels of perfection’, a higher calling taken up by monks and nuns through vows of poverty, chastity and obedience.\n\nTwo kinds of duty. Martin Luther taught that the sermon governs a Christian's personal life: turn the other cheek when you are wronged. But a Christian who holds a public office, such as a judge or a ruler, must still protect others and punish wrong. Luther also saw the sermon's demands as showing us our need of God's grace.\n\nTaken literally. The Anabaptists of the 1500s read it as plainly as they could. Their Schleitheim Confession (1527) refused oaths and the sword. Their heirs, such as the Mennonites, still hold to non-violence.\n\nA mirror. Some read the sermon chiefly as a mirror that shows how far short we fall, so that we turn to Christ for mercy.\n\nThe age to come. Some, especially in the dispensational tradition, hold that it describes life in Christ's future kingdom more than the present church age.\n\nIn the last century and a half, writers as different as Leo Tolstoy (The Kingdom of God Is Within You, 1894) and Dietrich Bonhoeffer (Discipleship, 1937) called Christians back to its demands. Whatever view a reader holds, the sermon ends with a warning that fits them all. Hearing these words is not enough; the wise builder is the one who “hears these words of Mine and acts on them” (7:24)."
+      },
+      {
+        "id": "jews",
+        "h": "A Jewish book, and a hard history",
+        "body": "Matthew is a deeply Jewish book. Jesus is a Jew, born to a Jewish mother, descended from Abraham and David. His first followers are all Jews. He says he has not come to abolish the Law or the Prophets “but to fulfill them” (5:17). He even tells the crowds to “practice and observe everything” the scribes and Pharisees teach from Moses' seat, while not copying how they live (23:2-3). Matthew is an argument inside the Jewish family about who Jesus is and how to be faithful to Israel's God.\n\nThat argument is sharp in places. Chapter 23 is a row of ‘woes’ against scribes and Pharisees, calling them hypocrites and blind guides. Woes are a form Israel's own prophets used against their own people (Isaiah 5:8-22). And later Jewish teachers spoke in much the same way about teachers who do not practise what they preach (Moshe Weinfeld, Bible Review, 1997). It is a warning to religious leaders, and every reader who teaches others is meant to feel it.\n\nAnd at Jesus' trial before Pilate, the crowd cries, “His blood be on us and on our children” (27:25).\n\nFor centuries, Christians misused these passages. They read chapter 23 and 27:25 as a verdict on the whole Jewish people for all time, and called Jews ‘Christ-killers’. That reading fed contempt, expulsion and murder. Passion plays spoke the line aloud; the famous play at Oberammergau in Germany kept it from 1750 until it was removed for the 2000 season. This misuse is wrong, and the site rejects it plainly.\n\nMatthew does not support it. The crowd that shouts is a crowd in one city on one morning, stirred by its leaders (27:20). Some scholars note that Matthew may hear a terrible irony in the words, since Jesus has just said his blood is “poured out for many for the forgiveness of sins” (26:28). The Second Vatican Council's declaration Nostra Aetate (1965) taught that what happened in Christ's passion cannot be charged against all the Jews then living, nor against the Jews of today, and many Protestant churches have said the same. And the Gospel's own teaching puts every reader inside the guilt: the cross was carried out by Roman soldiers on a Roman governor's order, for the sins of the whole world.\n\nRead Matthew as what it is: a Jewish book about a Jewish Messiah, whose last command sends his Jewish followers to all nations."
+      },
+      {
+        "id": "church",
+        "h": "How the church has read Matthew",
+        "body": "For most of history Matthew has stood first. It comes first in the New Testament, and early Christian writers quoted it more than any other Gospel. Early in the second century, the Didache already gives its form of the Lord's Prayer, and Ignatius of Antioch echoes its account of Jesus' baptism.\n\nIn the art of the church each Gospel writer has a symbol, taken from the four living creatures of Ezekiel 1 and Revelation 4. Jerome, in 398, gave Matthew the man, because his book begins with a human family tree. In old Bibles and church windows Matthew is often shown with an angel or a winged man beside him.\n\nMatthew gave the church its most used words: the Lord's Prayer, said every day by Christians around the world; the Beatitudes; and the command to baptize “in the name of the Father, and of the Son, and of the Holy Spirit” (28:19), spoken at baptisms ever since.\n\nIts story has been sung and painted. Johann Sebastian Bach's St Matthew Passion was first performed in Leipzig on Good Friday 1727 and is still heard every Easter. Its teaching has been argued over at every turning point, from monks to Reformers to those who refused to fight in war.\n\nIt has also been misused, above all against the Jewish people (see the part above). To read Matthew well is to hold both: the beauty it has given and the harm done in its name."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 16,
+        "ref": "1:16",
+        "line": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. How do they fit?"
+      },
+      {
+        "ch": 1,
+        "v": 23,
+        "ref": "1:23",
+        "line": "Isaiah's Hebrew says a young woman; the Greek Matthew quotes says a virgin. What did Isaiah mean, and what does Matthew claim?"
+      },
+      {
+        "ch": 2,
+        "v": 16,
+        "ref": "2:16",
+        "line": "Herod kills the little boys of Bethlehem. No other ancient writer records it. What can be known, and how do we read such grief?"
+      },
+      {
+        "ch": 2,
+        "v": 23,
+        "ref": "2:23",
+        "line": "‘He will be called a Nazarene’ is not found in any Old Testament book. What is Matthew quoting?"
+      },
+      {
+        "ch": 5,
+        "v": 17,
+        "ref": "5:17",
+        "line": "Jesus says he came to fulfil the Law, not abolish it. Then why do Christians not keep all of it?"
+      },
+      {
+        "ch": 5,
+        "v": 29,
+        "ref": "5:29",
+        "line": "Tear out your eye? How to read Jesus' strongest picture-language without hurting yourself or others."
+      },
+      {
+        "ch": 5,
+        "v": 32,
+        "ref": "5:32",
+        "line": "Only Matthew has the words ‘except for sexual immorality’. Christians read this exception in several ways."
+      },
+      {
+        "ch": 10,
+        "v": 5,
+        "ref": "10:5",
+        "line": "Jesus sends the Twelve only to Israel, yet the book ends with all nations. Why the change?"
+      },
+      {
+        "ch": 15,
+        "v": 26,
+        "ref": "15:26",
+        "line": "Jesus seems to call a Canaanite mother a dog. What is happening in this hard exchange?"
+      },
+      {
+        "ch": 16,
+        "v": 18,
+        "ref": "16:18",
+        "line": "Who or what is the rock? Peter himself, his confession of faith, or Christ? Catholic, Orthodox and Protestant readers answer differently."
+      },
+      {
+        "ch": 16,
+        "v": 28,
+        "ref": "16:28",
+        "line": "Some standing here will not die before they see the Son of Man coming. Did that happen?"
+      },
+      {
+        "ch": 23,
+        "v": 13,
+        "ref": "23:13",
+        "line": "The woes against scribes and Pharisees are a warning to religious leaders, never a verdict on the Jewish people. That misuse is named and rejected."
+      },
+      {
+        "ch": 24,
+        "v": 34,
+        "ref": "24:34",
+        "line": "‘This generation will not pass away.’ Is Jesus speaking of the fall of Jerusalem in AD 70, of his return, or of both?"
+      },
+      {
+        "ch": 25,
+        "v": 46,
+        "ref": "25:46",
+        "line": "Eternal punishment and eternal life: what the sheep and the goats teach about judgment."
+      },
+      {
+        "ch": 27,
+        "v": 25,
+        "ref": "27:25",
+        "line": "‘His blood be on us.’ For centuries this cry was misused to blame all Jews. That reading is wrong; here is why."
+      },
+      {
+        "ch": 27,
+        "v": 52,
+        "ref": "27:52",
+        "line": "Only Matthew says that tombs opened and saints were raised when Jesus died. How have readers taken it?"
+      }
+    ],
+    "words": [
+      {
+        "word": "Kingdom of heaven",
+        "line": "God's rule, God putting the world right. Matthew's way of saying ‘kingdom of God’; used about thirty times (4:17, 5:3)."
+      },
+      {
+        "word": "Fulfil",
+        "line": "To fill full, to bring to its goal. Matthew's word for how Jesus completes Israel's Scriptures (1:22, 5:17)."
+      },
+      {
+        "word": "Messiah, Christ",
+        "line": "‘Anointed one’ in Hebrew and in Greek: the king God promised to send (1:1, 16:16)."
+      },
+      {
+        "word": "Son of David",
+        "line": "A title for the promised king from David's family. Matthew uses it more than any other Gospel (1:1, 21:9)."
+      },
+      {
+        "word": "Immanuel",
+        "line": "Hebrew for ‘God with us’ (1:23). The promise the book closes on (28:20)."
+      },
+      {
+        "word": "Son of Man",
+        "line": "Jesus' favourite name for himself, from Daniel 7:13-14: a human figure given an everlasting kingdom (16:27-28, 26:64)."
+      },
+      {
+        "word": "Righteousness",
+        "line": "Living rightly before God and with others; more a heart made new than a list of rules (5:6, 5:20, 6:33)."
+      },
+      {
+        "word": "Church",
+        "line": "In Greek ekklesia, ‘assembly’. Matthew is the only Gospel to use it (16:18, 18:17)."
+      },
+      {
+        "word": "Disciple",
+        "line": "A learner who follows a teacher. The last command is to make disciples of all nations (28:19)."
+      },
+      {
+        "word": "Hypocrite",
+        "line": "From the Greek word for a stage actor: someone whose religion is a mask (6:2, 23:13)."
+      },
+      {
+        "word": "Little faith",
+        "line": "Jesus' gentle rebuke to followers who trust him, but not enough to stop being afraid (8:26, 14:31)."
+      },
+      {
+        "word": "Magi",
+        "line": "Priestly wise men from Persia and nearby lands who studied the stars and dreams (2:1)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "37 BC",
+        "what": "Herod the Great becomes king of Judea under Rome. He rules until his death.",
+        "kind": "world"
+      },
+      {
+        "when": "About 6 to 4 BC",
+        "what": "Jesus is born in Bethlehem, ‘during the time of King Herod’ (2:1). The Magi come; the family flees to Egypt (Matthew 2).",
+        "kind": "story"
+      },
+      {
+        "when": "4 BC",
+        "what": "Herod dies (some scholars argue for 1 BC). His son Archelaus rules Judea and his son Herod Antipas rules Galilee.",
+        "kind": "world"
+      },
+      {
+        "when": "AD 6",
+        "what": "Rome removes Archelaus and sends him into exile. Judea is ruled by Roman governors from now on.",
+        "kind": "world"
+      },
+      {
+        "when": "AD 14",
+        "what": "Tiberius becomes emperor of Rome (until AD 37).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 26",
+        "what": "Pontius Pilate becomes the Roman governor of Judea (until about AD 36).",
+        "kind": "world"
+      },
+      {
+        "when": "Late 20s",
+        "what": "John the Baptist preaches by the Jordan. Jesus is baptized and begins to preach in Galilee (Matthew 3 to 4).",
+        "kind": "story"
+      },
+      {
+        "when": "AD 30 or 33",
+        "what": "Jesus is crucified in Jerusalem at Passover and rises on the third day (Matthew 26 to 28). These are the two years most often proposed.",
+        "kind": "story"
+      },
+      {
+        "when": "AD 66 to 70",
+        "what": "The Jewish revolt against Rome. In AD 70 the Romans destroy Jerusalem and its temple (see Matthew 24).",
+        "kind": "world"
+      },
+      {
+        "when": "50s to 60s, or 80 to 95",
+        "what": "When Matthew was written. Some scholars argue for before AD 70; most place it between about 80 and 95.",
+        "kind": "book"
+      },
+      {
+        "when": "Early 100s",
+        "what": "Ignatius of Antioch echoes Matthew's account of Jesus' baptism, and the Didache gives the Lord's Prayer in Matthew's form.",
+        "kind": "book"
+      },
+      {
+        "when": "About 110 to 130",
+        "what": "Papias says Matthew put the Lord's sayings in order in the Hebrew language (quoted by Eusebius, Church History 3.39.16).",
+        "kind": "book"
+      },
+      {
+        "when": "About 180",
+        "what": "Irenaeus says Matthew wrote for the Hebrews in their own language (Against Heresies 3.1.1).",
+        "kind": "book"
+      },
+      {
+        "when": "300s",
+        "what": "Codex Sinaiticus and Codex Vaticanus, the oldest complete copies of the New Testament, are made. Both hold all of Matthew.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "id": "bethlehem",
+        "name": "Bethlehem",
+        "lat": 31.705,
+        "lon": 35.207,
+        "refs": [
+          "2:1",
+          "2:6",
+          "2:16"
+        ],
+        "label": {
+          "dx": -9,
+          "dy": 5,
+          "anchor": "end"
+        },
+        "line": "David's town, where Jesus is born and the Magi find him. From here the family flees to Egypt, off this map to the south-west (2:13-15)."
+      },
+      {
+        "id": "jerusalem",
+        "name": "Jerusalem",
+        "lat": 31.778,
+        "lon": 35.235,
+        "refs": [
+          "2:3",
+          "21:10",
+          "27:33"
+        ],
+        "line": "Herod's city and the temple's. It is troubled at the news of a new king (2:3), welcomes Jesus as Son of David (21:9), and he dies outside it."
+      },
+      {
+        "id": "bethany",
+        "name": "Bethany",
+        "lat": 31.771,
+        "lon": 35.262,
+        "refs": [
+          "21:17",
+          "26:6"
+        ],
+        "label": {
+          "dx": 9,
+          "dy": 0,
+          "anchor": "start"
+        },
+        "line": "A village on the Mount of Olives where Jesus stays in his last week and is anointed with perfume (26:6-13)."
+      },
+      {
+        "id": "jericho",
+        "name": "Jericho",
+        "lat": 31.871,
+        "lon": 35.444,
+        "refs": [
+          "20:29"
+        ],
+        "line": "On the road up to Jerusalem, two blind men call Jesus ‘Son of David’ and are healed (20:29-34)."
+      },
+      {
+        "id": "jordan",
+        "name": "The Jordan River",
+        "lat": 31.84,
+        "lon": 35.55,
+        "refs": [
+          "3:1",
+          "3:6",
+          "3:13"
+        ],
+        "line": "In the wilderness of Judea, John baptizes in the Jordan. Jesus comes from Galilee to be baptized (3:13-17)."
+      },
+      {
+        "id": "nazareth",
+        "name": "Nazareth",
+        "lat": 32.7,
+        "lon": 35.3,
+        "refs": [
+          "2:23",
+          "4:13",
+          "13:54"
+        ],
+        "line": "The small Galilee town where Jesus grows up, so that he is called a Nazarene (2:23). Later its people take offence at him (13:57)."
+      },
+      {
+        "id": "capernaum",
+        "name": "Capernaum",
+        "lat": 32.881,
+        "lon": 35.575,
+        "refs": [
+          "4:13",
+          "8:5",
+          "9:1",
+          "17:24"
+        ],
+        "line": "A fishing town by the lake that becomes Jesus' home base (4:13), called ‘His own town’ (9:1). A Roman officer's servant is healed here (8:5-13)."
+      },
+      {
+        "id": "bethsaida",
+        "name": "Bethsaida",
+        "lat": 32.91,
+        "lon": 35.63,
+        "refs": [
+          "11:21"
+        ],
+        "line": "A lakeside town where many mighty works were done, yet Jesus grieves that it did not turn back to God (11:21)."
+      },
+      {
+        "id": "gadarenes",
+        "name": "Region of the Gadarenes",
+        "lat": 32.8,
+        "lon": 35.68,
+        "refs": [
+          "8:28"
+        ],
+        "region": true,
+        "label": {
+          "dx": 10,
+          "dy": 12,
+          "anchor": "start"
+        },
+        "line": "Across the lake, two men held by demons meet Jesus, and the pigs rush into the sea (8:28-34). Placed roughly."
+      },
+      {
+        "id": "decapolis",
+        "name": "The Decapolis",
+        "lat": 32.55,
+        "lon": 35.8,
+        "refs": [
+          "4:25"
+        ],
+        "region": true,
+        "line": "‘Ten cities’, a league of Greek towns mostly east of the Jordan. Crowds come from here to hear Jesus (4:25)."
+      },
+      {
+        "id": "tyre",
+        "name": "Tyre",
+        "lat": 33.27,
+        "lon": 35.2,
+        "refs": [
+          "11:21",
+          "15:21"
+        ],
+        "line": "A Gentile city on the coast. In its district a Canaanite mother's great faith is praised (15:21-28)."
+      },
+      {
+        "id": "sidon",
+        "name": "Sidon",
+        "lat": 33.56,
+        "lon": 35.37,
+        "refs": [
+          "11:22",
+          "15:21"
+        ],
+        "line": "A Gentile port to the north. Jesus says it would have turned to God if it had seen what Galilee saw (11:21-22)."
+      },
+      {
+        "id": "caesarea",
+        "name": "Caesarea Philippi",
+        "lat": 33.25,
+        "lon": 35.69,
+        "refs": [
+          "16:13"
+        ],
+        "line": "Near a pagan shrine in the far north, Peter says, ‘You are the Christ’, and Jesus speaks of building his church (16:13-20)."
+      }
+    ],
+    "deeper": [
+      {
+        "href": "/resources/context/world/jewish-life-in-jesus-day",
+        "name": "Jewish life in Jesus's day",
+        "line": "The land, the Temple, the Sabbath and the synagogue Matthew's readers knew",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/world/honor-and-shame",
+        "name": "Honor and shame",
+        "line": "The values behind many of Matthew's scenes",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/guides/reading-genealogies",
+        "name": "Reading genealogies",
+        "line": "Why family trees open books, and how to read them",
+        "icon": "book"
+      },
+      {
+        "href": "/studyguides/end-times",
+        "name": "The end times",
+        "line": "A study for Matthew 24 and 25 and how the story ends",
+        "icon": "scroll"
+      }
+    ]
+  }
 }

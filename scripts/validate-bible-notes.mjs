@@ -358,6 +358,14 @@ function checkTeaching(b, t, where) {
     if (!(m.lat > 29 && m.lat < 38 && m.lon > 30 && m.lon < 40)) fail(`${where}.map[${i}]`, "a place outside the Bible lands");
     if (!Array.isArray(m.refs) || m.refs.length < 1) fail(`${where}.map[${i}]`, "at least one reference");
     prose(`${where}.map[${i}].line`, m.line, 20, 300);
+    if (m.region != null && typeof m.region !== "boolean") fail(`${where}.map[${i}]`, "region must be true or false");
+    if (m.label != null && !(Number.isFinite(m.label.dx) && Number.isFinite(m.label.dy) && ["start", "end", "middle"].includes(m.label.anchor))) fail(`${where}.map[${i}]`, "label needs dx, dy and an anchor of start, end or middle");
+  }
+  for (const [i, x] of (t.deeper ?? []).entries()) {
+    if (typeof x.href !== "string" || !x.href.startsWith("/")) fail(`${where}.deeper[${i}]`, "href must be a path on the site");
+    if (typeof x.name !== "string" || x.name.length < 3) fail(`${where}.deeper[${i}]`, "missing name");
+    if (x.icon != null && !["people", "world", "scroll", "book"].includes(x.icon)) fail(`${where}.deeper[${i}]`, "icon must be people, world, scroll or book");
+    prose(`${where}.deeper[${i}].line`, x.line, 10, 200);
   }
 }
 

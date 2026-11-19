@@ -300,13 +300,21 @@ function nation() {
     .map((n) => ({ title: str(n.title), blurb: clip(n.subtitle), href: `/nation/${n.slug}` }));
 }
 
+/** Words a reader might search for, by the guides' group a world portrait belongs to. */
+const WORLD_KEYWORDS = {
+  "Second Temple Judaism": "world of jesus first century",
+  "Ancient Near East": "old testament ancient near east israel judah assyria babylon exile",
+  "The Greco-Roman World": "roman empire rome paul acts letters caesar emperor citizenship slavery corinth ephesus philippi",
+  "Honor, Shame, and Culture": "honor shame honour disgrace culture patronage gift grace gratitude kinship brothers family hospitality envy evil eye limited good women cross",
+};
+
 /** The world portraits (/resources/context/world/:id), from the index build-context-index.mjs writes. */
 function worlds() {
   return (readJson("context/worlds-index.json").worlds ?? []).map((w) => ({
     title: str(w.title),
     blurb: clip(w.blurb),
     href: `/resources/context/world/${w.id}`,
-    keywords: "what was it like daily life world of jesus first century background culture",
+    keywords: `what was it like daily life background culture ${WORLD_KEYWORDS[w.group] ?? ""}`.trim(),
   }));
 }
 

@@ -51,10 +51,10 @@ describe("Mark's teaching introduction", () => {
     expect(book).toBeLessThan(all);
   });
 
-  it("only Mark has one so far, and every other book's introduction still has the fields its page draws", () => {
+  it("only Mark and Matthew have one so far, and every other book's introduction still has the fields its page draws", () => {
     for (const b of BOOKS) {
       const d: BookIntro = json(`bible/notes/${b.slug}/intro.json`);
-      expect(!!d.teaching, b.slug).toBe(b.slug === "mark");
+      expect(!!d.teaching, b.slug).toBe(b.slug === "mark" || b.slug === "matthew");
       expect(typeof d.overview).toBe("string");
     }
   });
@@ -63,12 +63,32 @@ describe("Mark's teaching introduction", () => {
 describe("Mark's map", () => {
   it("lists every place as a button, and the card follows the one chosen", () => {
     renderWithProviders(<BookMap slug="mark" bookName="Mark" places={intro.teaching!.map} />);
-    expect(screen.getByRole("img", { name: /A simple map of the places in Mark/ })).toBeTruthy();
+    expect(screen.getByRole("img", { name: "A simple map of the places in Mark, from Sidon in the north to Jerusalem in the south." })).toBeTruthy();
     const list = within(screen.getByRole("list", { name: "Places in Mark" })).getAllByRole("button");
     expect(list).toHaveLength(intro.teaching!.map.length);
     fireEvent.click(screen.getByRole("button", { name: "Caesarea Philippi" }));
     expect(screen.getByRole("heading", { level: 3, name: "Caesarea Philippi" })).toBeTruthy();
     expect(screen.getByRole("link", { name: "Mark 8:27" }).getAttribute("href")).toBe("/study/bible/mark/8#v27");
+  });
+});
+
+describe("Matthew's teaching introduction, from the same parts", () => {
+  const MATTHEW = BOOKS.find((b) => b.slug === "matthew")!;
+  const mt: BookIntro = json("bible/notes/matthew/intro.json");
+
+  it("adds its own pages to Go deeper, after the shared ones", () => {
+    renderWithProviders(<BookTeaching book={MATTHEW} teaching={mt.teaching!} />);
+    expect(screen.getByRole("link", { name: /Jewish life in Jesus's day/ }).getAttribute("href")).toBe("/resources/context/world/jewish-life-in-jesus-day");
+    expect(screen.getByRole("link", { name: /How to read the Gospels/ })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Matthew 27:25" }).getAttribute("href")).toBe("/study/bible/matthew/27#v25");
+  });
+
+  it("draws its own places, north to south, with its regions marked", () => {
+    renderWithProviders(<BookMap slug="matthew" bookName="Matthew" places={mt.teaching!.map} />);
+    expect(screen.getByRole("img", { name: "A simple map of the places in Matthew, from Sidon in the north to Bethlehem in the south." })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Bethlehem" }));
+    expect(screen.getByRole("link", { name: "Matthew 2:16" }).getAttribute("href")).toBe("/study/bible/matthew/2#v16");
+    expect(screen.getByText(/the two regions are placed roughly/)).toBeTruthy();
   });
 });
 
