@@ -434,7 +434,7 @@ const FRAMES: Record<MapFrameId, Frame> = {
         {(
           [
             ["THE GREAT SEA", 33.0, 29.5],
-            ["EGYPT", 29.3, 29.5],
+            ["EGYPT", 28.3, 31.25],
             ["THE DESERT", 31.4, 39.6],
           ] as const
         ).map(([t, la, lo]) => (
@@ -447,7 +447,7 @@ const FRAMES: Record<MapFrameId, Frame> = {
           [
             ["Euphrates", 34.0, 40.9, "end"],
             ["Tigris", 35.3, 43.9, "start"],
-            ["Nile", 28.6, 31.15, "start"],
+            ["Nile", 29.5, 30.95, "end"],
           ] as const
         ).map(([t, la, lo, a]) => (
           <text

@@ -726,9 +726,9 @@
             ],
             "line": "Abraham settles by the oaks of Mamre at Hebron (13:18), where three visitors come to him (chapter 18). He buys a cave here to bury Sarah (chapter 23). Mamre is usually placed just north of the town.",
             "label": {
-              "dx": -10,
-              "dy": 5,
-              "anchor": "end"
+              "dx": 0,
+              "dy": 24,
+              "anchor": "middle"
             }
           },
           {
