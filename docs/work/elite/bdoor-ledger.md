@@ -4830,3 +4830,34 @@ Left out: Papias on Judas; the "swelling up" reading of prēnēs; ancient
 historians' second-volume prefaces (deep note; not searched); the Mount of
 Olives as the place of the ascension in tradition (Luke says only that they
 returned from it).
+
+## The plain notes on Acts 2 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/2.json`. 6 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Pentecost the Feast of Weeks, fifty days after Passover; one of three pilgrim feasts | 1-4 | Jewish-life portrait; Leviticus 23:15-16; Deuteronomy 16:9-10, 16 | Repository |
+| Weeks tied to Sinai in later rabbinic tradition; Jubilees (second century BC) links the feast with covenant; how early the link was made is debated (Philo and Josephus do not show it) | 1-4 | Jubilees; Talmud | Search: thetorah.com "Between Shavuot and Pentecost"; patheos.com anxiousbench; israelbiblicalstudies.com |
+| Tongues: Pentecostal origins at Topeka (1 January 1901) and Azusa Street (1906); Assemblies of God: tongues the initial physical sign of Spirit baptism (Fundamental Truths, 1916) | 1-4 | Assemblies of God statement; histories | Search: encyclopedia.com "Assemblies of God"; thegospelcoalition.org "9 things"; christianityfaq.com |
+| Charismatic and continuationist positions; 1 Corinthians 12:30; 14:2, 27-28 | 1-4 | Deep note `hard`; BSB | Stated as views, no names |
+| Cessationism; B. B. Warfield, Counterfeit Miracles (1918) | 1-4 | Warfield | g2b-ledger |
+| The Diaspora list; Galilean accent (Matthew 26:73); third hour about nine | 5-21 | BSB; earlier ledger (hours) | Repository |
+| Joel "afterward" and Peter's "In the last days"; quotation stops in Joel 2:32 | 14-21 | BSB | Repository (the Septuagint and Codex Vaticanus claims of the deep note not used) |
+| Hades and Sheol; ōdinas, birth pains | 22-28 | Standard lexicons | Common lexical sense |
+| "Christ-killers" paragraph, Nostra Aetate 4 (1965), Acts 4:27 | 22-28 | Matthew 27 and John 19 plain notes | Repository wording, with Peter and the three thousand added |
+| 2 Samuel 7:12-13; Psalm 110:1; Luke 20:41-44 | 29-36 | BSB | Repository |
+| Catechism of the Catholic Church 1263: by baptism all sins are forgiven; Acts 2:38 cited | 37-41 | CCC | Search: vatican.va archive; catholicculture.org; usccb.org. Paraphrased |
+| Luther's Small Catechism: baptism gives forgiveness of sins, rescue from death and the devil, eternal salvation to all who believe | 37-41 | Small Catechism | Search: catechism.cph.org; wels.net. Paraphrased |
+| Westminster Confession 28: sign and seal; Acts 2:38-39 among its proof texts for infant baptism | 37-41 | WCF 28 | Search: apuritansmind.com; reformation21.org; bpc.org. Paraphrased |
+| Baptists: repentance and faith, baptism the believer's sign; believers only | 37-41 | Deep note; standard | Stated generally; no confession named |
+| Churches of Christ, from the Stone-Campbell movement: believer's immersion the point of forgiveness | 37-41 | Deep note; equip.org; faithalone.org; edwardfudge.com | Search |
+| Grammar of 2:38 (plural repent, singular be baptized; eis "in order to" or "with a view to") | 37-41 | Deep note | Mantey not named |
+| Ephesians 2:13; Isaiah 57:19; Joel 2:32; Genesis 17:7 | 37-41 | BSB | Repository |
+| Koinōnia; "the prayers" with the article; Deuteronomy 15:4 and Acts 4:34; 5:4; 2:46 homes | 42-47 | Greek text; BSB | Repository |
+
+Left out: Codex Vaticanus at 2:17; the Hebrew shachat and Greek diaphthora
+at Psalm 16:10 (not checked this run); the ritual baths and pools for the
+three thousand; Orthodox chrismation (not found in the search; the Orthodox
+are named with Catholics in the general sentence only, as in the deep note);
+Mantey on eis; any modern economic or political reading of 2:44.
