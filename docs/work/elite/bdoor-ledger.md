@@ -5982,3 +5982,26 @@ No web search. The Targum's "King Messiah" (in the deep note) is not used: not s
 | "Live forever" as court language (1 Kings 1:31); 2 Samuel 7:16 | Repository deep note (cultural); BSB | BSB text |
 | "Furnace" a household clay oven | Repository deep note (cultural) | Site's own teaching |
 | Hebrews 2:9; Revelation 19:12; John 11:25 | BSB | BSB text |
+
+## The plain notes on Psalm 22 (2026-11-19)
+
+Three web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The Doe of the Dawn" most likely a tune | 1-11 | Repository deep note (historical) | Stated as "most likely" |
+| Complaint and memory alternating; the turn in the middle of verse 21; the second half answering the first (despised, face, cry; birth and a people yet unborn) | all | Repository deep note (literary); BSB | BSB text |
+| Mark 15:34 Aramaic; Matthew 27:46-47 "Eli", Elijah; Mark 15:29; Matthew 27:43; 2 Corinthians 5:21 | 1-11 | BSB | BSB text |
+| Three Christian readings of the cry | 1-11 | Book page, "Why have You forsaken me?" | Site's own teaching (pointed to, summarised) |
+| Talmud Megillah 15b: Esther speaks the first line as she goes in to the king; the psalm read at Purim in some communities | 1-11 | thetorah.com "My God, My God, Why Have You Forsaken Me? Jesus or Esther"; ezrabrand.com on Megillah 15a-b; etzion.org.il | Search. "In some Jewish communities" |
+| Rashi reads the "I" as Israel in exile | 1-11 | Chabad (Rashi on Psalm 22); sefaria; hebrewbible.app | Search |
+| Bashan's cattle (Amos 4:1); dogs as scavengers; wild oxen extinct; water, wax, potsherd | 12-21 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Masoretic ka'ari "like a lion"; Jewish translations follow it; Isaiah 38:13; the Greek "they dug" (made before Jesus); Nahal Hever fragment (5/6HevPs, first century AD) with a final vav read by many as a verb, disputed (faint letter, careless scribe); one letter (yod or vav) apart; the Gospels never quote 22:16 | 12-21 | en.wikipedia.org "They have pierced my hands and my feet"; lxxscrolls.substack.com; jewsforjudaism.org chapter 37d; torahresource.com; Strawn named in the results (not named on the page); repository deep note (text, hard) | Search. Each view stated; no side. Scholars and the date range of the fragment not given beyond "about the first century AD" |
+| All four Gospels: garments divided (Mark 15:24; Matthew 27:35; Luke 23:34; John 19:23-24) | 12-21 | BSB | BSB text |
+| Vows kept with a peace offering eaten in a shared meal | 22-31 | Repository deep note (cultural; Leviticus 7) | Site's own teaching |
+| Hebrews 2:11-12; John 20:17; Isaiah 45:22; Revelation 7:9; John 19:30 ("often set beside") | 22-31 | BSB | BSB text |
+
+Care: "If you feel forsaken right now and the feeling will not lift ..." with
+Find Help. Cut: Justin Martyr and Tertullian on verse 16, Pesikta Rabbati,
+Bach, Handel, Flint by name, the Givat HaMivtar skeleton (all in the deep
+note; not searched this run).
