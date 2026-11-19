@@ -3400,7 +3400,7 @@ explained (Luke gives none; the examples are marked as what Christians
 ## Genesis's book page (teaching introduction, 2026-11-19)
 
 Every historical claim in `client/public/bible/notes/genesis/intro.json`,
-field `teaching`. 20 web searches for the book page, run on 2026-11-19;
+field `teaching`. 16 web searches for the book page, run on 2026-11-19;
 checks rest on search results that quote or summarise the source, read
 against at least two results where possible. Ancient texts are paraphrased.
 Scripture is the BSB in the repository, checked word for word by
@@ -3452,9 +3452,8 @@ repository's fuller introduction not checked this run.
 
 `client/public/bible/notes/genesis/plain/1.json`. One search for this
 chapter, with the book page's rows above and the site's guide and Honest
-Answer on Genesis 1. Correction to the book page's count above: 16 of the 20
-searches run in that pass were for the book page; one was for this chapter,
-one for Genesis 2 and two for Genesis 3.
+Answer on Genesis 1. (Four searches run in the book page's pass served the
+chapters: one this chapter, one Genesis 2, two Genesis 3.)
 
 | Claim | Where | Source | Checked by |
 |---|---|---|---|

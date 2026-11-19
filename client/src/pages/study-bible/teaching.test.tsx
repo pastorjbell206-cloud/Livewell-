@@ -252,3 +252,16 @@ describe("the third part of a passage is named for its testament", () => {
     expect(within(document.getElementById("map")!).getByText("Places beyond the map's edge are named here.")).toBeTruthy();
   });
 });
+
+describe("Genesis 1 to 3 in plain words", () => {
+  it.each([1, 2, 3])("Genesis %i: every passage, in order, with 'Where the Bible takes this up' as its third part", async (n) => {
+    vi.stubGlobal("fetch", publicFetch());
+    expect(json(`bible/notes/genesis/${n}.json`).plain).toBe(true);
+    const { passages } = json(`bible/notes/genesis/plain/${n}.json`);
+    renderWithProviders(<PlainPassages slug="genesis" chapter={n} label={`Genesis ${n}`} />);
+    await waitFor(() => expect(document.querySelectorAll(".pp-passage")).toHaveLength(passages.length));
+    expect(screen.getAllByRole("heading", { level: 4, name: "Where the Bible takes this up" })).toHaveLength(passages.length);
+    expect(screen.queryByRole("heading", { level: 4, name: "The Old Testament behind it" })).toBeNull();
+    for (const a of Array.from(document.querySelectorAll(".pp-passage"))) expect(a.querySelectorAll("h4")[2].textContent).toBe("Where the Bible takes this up");
+  });
+});
