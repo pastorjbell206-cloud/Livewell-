@@ -4115,3 +4115,32 @@ notes and their ledger rows.
 | Hittites: the Genesis 23 plain note's wording ("Many scholars think ... a local people with a similar name") | 34-35 | Site | Repository |
 
 Cut: "the Hittites of Genesis have Hebrew-sounding names" (not checked).
+
+## The plain notes on Genesis 27 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/27.json`. Two web searches for this
+chapter, with the deep note, the verse notes, and the Genesis 25 plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Isaac lived to 180 and both sons buried him (35:28-29); the hurry rests on a fear; ‘tasty dish’ repeated; appetite (25:28) | 1-4 | BSB; repository deep note (`historical`); verse notes 1-2, 3-4 | Repository |
+| Genesis 49:1-28; Deuteronomy 33:1; Hebrews 11:20 | 1-4 | BSB | Repository |
+| Rebekah adds ‘in the presence of the LORD’ (verse 7); two readings of Rebekah (faith, wrongly carried out; or culpable); ‘obey my voice’ = shema beqoli as in 26:5 | 5-17 | Verse notes 5-7, 8-10; deep note (`hard`) | Repository; no side |
+| Taste, touch and smell against hearing | 5-17 | Repository deep note (`cultural`) | Repository |
+| Galatians 6:7; 1 Samuel 15:22 (paraphrase) | 5-17 | BSB | Repository |
+| Three lies; ‘your God’; dew the only moisture in the dry summer; blessing echoes 12:3 | 18-29 | Verse notes 28-29; deep note | Repository |
+| Goat and robe in 37:31; 29:25; Romans 9:11; 50:20 | 18-29 | BSB | Repository |
+| Election pointed back to the Genesis 25:19-26 plain note (Reformed, Arminian and Wesleyan), "These notes do not settle it" | 18-29 | Site | Repository |
+| Rebekah never seen with Jacob again; only her burial mentioned (49:31) | 18-29, 41-46 | Verse notes 42-45 | Repository |
+| Why the blessing could not be withdrawn: the text does not fully explain; two readings (a solemn blessing before the LORD treated as binding; Isaac seeing God's hand) | 30-40 | Commentaries (Constable; Utley) as summarised; deep note (`cultural`) | Search: sermonindex.net Constable and Utley on Genesis 27; uasvbible.org. The Nuzi claim found there was not used (no source given) |
+| min ‘of’ or ‘away from’ in 27:39; KJV reads a blessing; BSB and most modern ‘away from’ | 30-40 | Verse notes 39-40 (`text`) | Repository |
+| Edom under David (2 Samuel 8:14); revolt under Jehoram (2 Kings 8:20); Deuteronomy 23:7 | 30-40 | BSB | Repository |
+| Hebrews 12:16-17 quoted whole; readings: no way to undo it or change his father's mind (ASV ‘no place for a change of mind’); tears of loss, not of turning (2 Corinthians 7:10) | 30-40 | Commentaries in catenabible.com and biblesuite.com; biblestudytools.com ASV | Search: "Hebrews 12:17 no place for repentance". No side |
+| John 6:37; Hebrews 4:16; 1 John 1:9; Psalm 27:10 | 30-40 | BSB | Repository |
+| Care line for the unfavored child (new wording, ending with the site's "please share it with someone you trust: a friend, a pastor, a counsellor") | 30-40 | Site | Not a historical claim |
+| harag as in 4:8; two readings of ‘lose both of you’ (9:6); twenty years (31:38, 41) | 41-46 | Verse notes 41, 42-45; BSB | Repository |
+| Obadiah 1:10; Psalm 137:7; Genesis 33:4; 35:29; Ephesians 4:26 | 41-46 | BSB | Repository |
+
+Cut: the Nuzi tablets on spoken blessings (asserted without a source in the
+search results); Chrysostom's reading of Hebrews 12:17 (only in a catena);
+"dew watered the crops" replaced by the verse note's wording.
