@@ -1456,3 +1456,46 @@ parable; Bach, Ruskin, Gandhi, Rembrandt, Poussin; Origen, Gregory of
 Nazianzus, Anselm, Aulén by name; the lectionaries; Avot 5:13; every textual
 note in the deep note (20:16's "many be called, but few chosen" was checked
 and is absent from Sinaiticus and Vaticanus, but the note does not need it).
+
+## The plain notes on Matthew 21 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/21.json`. Five searches for this
+chapter, with the earlier ledger (Mark 11 and 12; Mark 15 for Nostra Aetate;
+Matthew's book page for the formula quotations).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Bethany, cloaks for a king, branches, Hosanna "Save us, please" | 1-11 | Earlier ledger (Mark 11) | Earlier ledger |
+| About ten formula quotations, 21:4 among them | 1-11 | Earlier ledger (Matthew's book page) | Earlier ledger |
+| Isaiah 62:11 and Zechariah 9:9-10 joined; "righteous and victorious" left out; 11:29; Psalm 118:26; 20:30 | 1-11 | BSB | BSB text |
+| Mishnah Sukkah 3:9 (written down around 200): the lulav shaken at Psalm 118:25 at Tabernacles | 1-11 | Mishnah | Search: mishnah.org; posenlibrary.com "The Mishnah on the Four Species"; steinsaltz.org Sukkah 37. Paraphrased; the schools of Hillel and Shammai not named |
+| The verb for "stirred" (seiō, G4579) also at 27:51 and 28:4 | 1-11 | Greek word lists in the repository's verse notes | Repository |
+| Two animals: the parallelism objection; a Jewish reading of each phrase; the colt with its mother (Mark 11:2); "on them" as the cloaks | 1-11 | Deep note; Instone-Brewer, Tyndale Bulletin 54.1 (2003), and Coppins, Tyndale Bulletin 63.2 (2012), on the question | Search: galaxie.com and tyndalebulletin.org listings. Neither scholar named on the site (Instone-Brewer's conclusion was not read); views unnamed |
+| Justin Martyr, Dialogue with Trypho 53: the harnessed donkey the Jewish people under the law, the unharnessed colt the Gentiles, both to believe | 1-11 | Justin | Search: logoslibrary.org Trypho 53; bkv.unifr.ch (ANF and BKV). Paraphrased; "mid-second century" given as "the second century" |
+| Money changers, the temple coin, doves (Leviticus 5:7) | 12-17 | Earlier ledger (Mark 11) | Earlier ledger |
+| Mark: looks around, returns next day; Matthew: same day, no "for all the nations" | 12-17 | BSB comparison | BSB text |
+| 2 Samuel 5:8 ("palace" in the BSB); Leviticus 21:18; Psalm 8:2; Isaiah 56:7; Jeremiah 7:11; Malachi 3:1 | 12-17 | BSB | BSB text. The Temple Scroll on the blind (deep note) not used |
+| Readings of the temple action; John 2 timing | 12-17 | Earlier ledger (Mark 11) | Earlier ledger, wording reused |
+| Fig leaves in spring; the disagreement about early figs; Hosea 9:10; Jeremiah 8:13; Micah 7:1; Jeremiah 19 | 18-22 | Earlier ledger (Mark 11) | Earlier ledger |
+| The old reading against the Jewish people rejected; the prayer promise and unanswered prayer | 18-22 | Mark 11 plain note | Wording reused; 6:10 and 26:39 in place of Mark's verses |
+| Matthew 3:8; 7:16-20; Luke 13:6-9 | 18-22 | BSB | BSB text |
+| By what authority (Mark 11 wording); Malachi 3:1; Isaiah 40:3; 3:3; 11:14 | 23-27 | Earlier ledger; BSB | BSB text |
+| Two sons only in Matthew; tax collectors baptized by John (Luke 3:12; 7:29-30); proagō "go ahead of" | 28-32 | BSB; Greek | BSB text; the Greek sense is standard lexicon meaning |
+| Three manuscript forms of the parable | 28-32 | Repository chapter note (`text`) | Repository. Manuscripts not named on the site |
+| Ezekiel 18:27; 33:32 | 28-32 | BSB | BSB text |
+| Tenancy and Isaiah 5 (Mark 12 wording); Isaiah 5:1-2, 4, 7; Psalm 118:22-23; Isaiah 8:15; Daniel 2:34, 44; 2 Samuel 12:7; Hebrews 13:12; Luke 20:18 | 33-46 | Earlier ledger; BSB | BSB text |
+| Matthew's order (thrown out, then killed); the leaders pass sentence; 21:43 and 21:45 only in Matthew | 33-46 | BSB comparison with Mark 12 | BSB text |
+| Verse 44 missing from some manuscripts; like Luke 20:18; most Bibles print it | 33-46 | Repository chapter note (`text`) | Repository |
+| Supersessionism or "replacement" theology: the view that the church has replaced Israel in God's purposes | 33-46 | Standard definition | Search: wikipedia "Supersession"; biblehub.com "What is replacement theology?". Soulen's three forms (deep note) not used |
+| Readings of the "people": the Twelve as new leaders (19:28); a renewed Israel; the church | 33-46 | Deep note (Saldarini 1994; Olmstead 2003) | Stated as views without names (not checked this run) |
+| Views of Israel and the church (one people grafted in, many expecting Romans 11:26; Israel and church distinct; the covenant still standing) | 33-46 | Standard positions | Stated as views, no names; John Paul II's "never revoked" (Mainz 1980) not used: not checked |
+| Nostra Aetate 4 (1965): "the Jews should not be presented as rejected or accursed by God, as if this followed from the Holy Scriptures" | 33-46 | Second Vatican Council | Search: christianunity.va Nostra Aetate 4; cbcew.org.uk PDF; newadvent.org. Quoted in single quotes as a translation; one translation reads "repudiated or cursed" |
+| Romans 11:1, 18, 26, 29 | 33-46 | BSB | BSB text |
+
+Left out: the year of the entry (30 or 33); Pilate and Caiaphas's dates;
+the Royal Stoa; m. Bekhorot 8:7; b. Pesachim 57a; Jesus son of Ananias; the
+Temple Scroll on the blind; the Zenon papyri and Hengel; the Targum, the
+Tosefta and 4Q500 on the tower; b. Berakhot 64a; b. Sanhedrin 98a; Egeria,
+the lectionaries, Bach, Giotto, Duccio, Cranach, Ecclesia and Synagoga;
+Chrysostom, Irenaeus, Telford, Sanders, Ruether, Soulen, Saldarini, Olmstead
+and Snodgrass by name; the Gospel of Thomas; the Psalm 8 Greek wording.
