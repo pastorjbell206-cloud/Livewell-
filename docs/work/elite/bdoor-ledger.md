@@ -4199,3 +4199,37 @@ Nachmanides point below. The deep note and verse notes for the rest.
 Cut: the Mesopotamian dowry documents on slave women (in the verse notes,
 not checked here); wine helping the deception (a suggestion only); Leah's
 name and ‘wild cow’.
+
+## The plain notes on Genesis 30 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/30.json`. Two web searches for this
+chapter, with the deep note, the verse notes, the Genesis 16, 18, 23 and 25
+plain notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Childlessness felt as shame; standing, old age and the family name hung on children | 1-8 | Repository deep note (`cultural`); 30:23; Luke 1:25 | Repository |
+| Isaac prayed (25:21); Rachel's words echo Sarai's (16:2) | 1-8 | BSB | Repository |
+| Bilhah enslaved, given to bear children, no say, named by Rachel; "The Bible does not hide that its great families held slaves and used them. It shows us the harm, so that we can see it." word for word from the Genesis 16 note | 1-8 | Site; deep note ("The servant women had no say in it") | Repository (grep -F) |
+| Dan ‘vindicated’, Naphtali ‘wrestling’ | 1-8 | Deep note (`literary`) | Repository |
+| Rachel dies bearing her second son (35:16-18) | 1-8 | BSB | Repository |
+| 1 Samuel 1:8; Luke 1:25; Jeremiah 31:15; Matthew 2:18 | 1-8 | BSB | Repository |
+| Childlessness care lines in the Luke 1 form (as Genesis 25:19-26), opening adapted "Rachel's story ends with a son." | 1-8 | Site (luke/plain/1.json, genesis/plain/25.json) | Repository (grep -F) |
+| "If the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service. The Find Help page on this site lists places to turn." word for word from the Genesis 23 note | 1-8 | Site | Repository |
+| Honest Answer named: ‘Why didn't the Bible just ban slavery?’ | 1-8 | client/src/data/answers.ts | Repository |
+| Gad ‘good fortune’, Asher ‘happy’, Issachar ‘wages’, Zebulun ‘honor/gift’, Joseph ‘taken away’ and ‘add’ | 9-24 | Deep note (`literary`) | Repository |
+| Genesis 49:16-21, 28; Revelation 21:12; Exodus 21:7-11 (paraphrased as the BSB reads it) | 9-13 | BSB | Repository |
+| Mandrakes: dudaim, Mandragora officinarum; fruit ripening in late spring; believed to stir love and help conception; name sounds like ‘love’ (a pun); poisonous; no good evidence it helps fertility | 14-21 | Deep note (`cultural`); translation notes and botanical summaries | Search: biblehub.com mandrakes pages; tips.translation.bible "mandrake". The Hazor amulet and Assyrian herbal claims not used |
+| Song of Songs 7:13; 1 Samuel 1:19 | 14-21 | BSB | Repository |
+| ‘Remembered’ = acted for (8:1; Exodus 2:24); Psalm 113:9; Acts 7:9-14 | 22-24 | BSB | Repository |
+| Laban's divination (Deuteronomy 18:10 forbids it); 12:3 | 25-36 | BSB | Repository |
+| Sheep usually white and goats dark there, so speckled ones few | 25-36 | Older commentaries (Matthew Henry; Keil and Delitzsch as quoted) and a translation note | Search: "Genesis 30:32 sheep usually white goats dark". Said as "Commentators have long noted" |
+| Laban ‘white’; livneh ‘poplar’ | 25-43 | Deep note (`literary`) | Repository |
+| Genesis 31:7; Leviticus 19:13; James 5:4 | 25-36 | BSB | Repository |
+| Peeled branches a folk belief; the text reports and does not say they worked; 31:9-12 credits God; two readings of fairness | 37-43 | Deep note (`hard`); BSB | Repository; no science claim; no side |
+| Genesis 28:15; Proverbs 10:22 | 37-43 | BSB | Repository |
+
+Cut: selective breeding as a working method and hidden traits in the parents
+(the deep note's suggestion; a science claim the brief excludes); the
+Mesopotamian law collections on surrogate wives (pointed to by the Genesis
+16 note instead).
