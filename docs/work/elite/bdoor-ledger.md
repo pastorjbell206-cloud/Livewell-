@@ -5940,3 +5940,45 @@ for Psalm 29, where it was searched).
 No modern nation or army; the war lines read as history, under the praise of
 verse 49 and 2 Corinthians 10:4. Cut: "Israel was not a sea-going people" (not
 checked).
+
+## The plain notes on Psalm 19 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two halves; one poem or two joined, debated | 1-6 | Repository deep note (historical); psalms.scriptura.org "The Unity of Psalm 19" | Search. Both views stated |
+| C. S. Lewis, Reflections on the Psalms (1958), "the greatest poem in the Psalter and one of the greatest lyrics in the world" | 1-6 | workingpreacher.org (Psalm 19 commentary, dating the book 1958, with the page 63); supersummary.com quotes | Search. Given without quotation marks, as his judgment |
+| Shamash the Mesopotamian sun god, also god of justice | 1-6 | intertextual.bible (Code of Hammurabi and Psalm 19:6); Stellenbosch Theological Journal 10.3 (2024); Sarna as reported | Search. The popular "Hammurabi receives the laws from Shamash" not stated (the 2024 article qualifies it) |
+| Bridegroom and champion images | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| "God" once in 1-6, "the LORD" seven times in 7-14 | 7-14 | BSB | Count by hand on the BSB text |
+| Torah as teaching; go'el, the kinsman-redeemer (Ruth 4:14) | 7-14 | Book page key words; BSB | Site's own teaching; BSB text |
+| Unintentional and defiant sins (Numbers 15:27-30) | 7-14 | BSB | BSB text |
+| Romans 10:18; 1:20; 7:12; John 1:9, 14; Matthew 4:4; Hebrews 4:12 | both | BSB | BSB text |
+
+No position on the age of the earth or evolution ("Christians hold different
+views ... Psalm 19 does not take a side"); the sun's course read as poetry of
+what the eye sees.
+
+## The plain notes on Psalm 20 (2026-11-19)
+
+No web search. Papyrus Amherst 63 (in the deep note) is not used: not searched.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Royal psalm before battle; offerings before battle; used in the temple (many scholars) | Repository deep note (historical, cultural) | Stated as "many scholars" |
+| Chariots the strongest weapon; Israel in the hills had few for much of its history; Exodus 15:4 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Isaiah 31:1; Proverbs 21:31; 1 Samuel 17:45; Acts 2:33 | BSB | BSB text |
+
+No modern nation's army in view (pointing to the book page).
+
+## The plain notes on Psalm 21 (2026-11-19)
+
+No web search. The Targum's "King Messiah" (in the deep note) is not used: not searched.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Twin of Psalm 20; framed by God's strength (verses 1, 13) | BSB; repository deep note | BSB text |
+| "Live forever" as court language (1 Kings 1:31); 2 Samuel 7:16 | Repository deep note (cultural); BSB | BSB text |
+| "Furnace" a household clay oven | Repository deep note (cultural) | Site's own teaching |
+| Hebrews 2:9; Revelation 19:12; John 11:25 | BSB | BSB text |
