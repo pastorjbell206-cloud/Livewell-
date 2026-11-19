@@ -4367,3 +4367,24 @@ notes.
 
 Cut: the Mari ‘sons of the right’; Migdal Eder in the Targum; Saul of Tarsus
 and the Ben-oni picture of Christ; the Septuagint's added clause in 35:22.
+
+## The plain notes on Genesis 36 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/36.json`. No web search for this
+chapter; the deep note, the book page and the BSB.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| ‘This is the account of’ headings; Esau's heading like Ishmael's (25:12) | 1-8 | Book page (`shape`); deep note (`literary`, `words` H8435) | Repository |
+| Edom ‘red’ (25:25, 30); Seir south and east of the Dead Sea | 1-8 | Deep note (`historical`) | Repository |
+| Wives' names differ from 26:34 and 28:9; explanations; the text lets both stand; 13:6 echo | 1-8 | Deep note (`literary`) | Repository |
+| Deuteronomy 2:5; 23:7 | 1-8 | BSB | Repository |
+| Genealogies as maps of clans; sons become chiefs; Horites first; Oholibamah Zibeon's granddaughter (2, 20) | 9-30 | Deep note (`cultural`); BSB | Repository |
+| Yemim (verse 24) uncertain; BSB ‘hot springs’, older translations (KJV) ‘mules’ | 9-30 | Deep note (`words` H3222) | Repository |
+| Exodus 17:8; Deuteronomy 25:17-18; Job 2:11; Job 1:1 | 9-30 | BSB | Repository |
+| No king the son of the one before | 31-43 | Deep note (`cultural`) | Repository; BSB 32-39 |
+| Verse 31 and authorship: later final form; later hands updated details (as tradition holds of Deuteronomy 34); Moses writing of promised kings (35:11) | 31-43 | Book page (`who`); deep note (`hard`) | Repository; stated as views, as the book page does |
+| Obadiah 1:10; Amos 9:12; Acts 15:17 | 31-43 | BSB | Repository |
+
+Cut: Egyptian records of Edomite herders; Faynan copper mines; Bozrah as
+Buseirah; Herod and the Idumeans; the root of alluf.
