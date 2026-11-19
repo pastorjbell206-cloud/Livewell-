@@ -5405,3 +5405,163 @@ lighter psalm takes about 530 words and a major one about 1,350. One run
 covered 31 psalms (11 full, 20 lighter) in about 25,500 words. Book Two
 (42 to 72) and Book Three (73 to 89) together make one run of about the same
 size. The remaining 109 psalms come to roughly four runs.
+
+## Continuation: Psalms 42 to 72 (2026-11-19)
+
+All of Book Two, in the lighter shape James accepted ("finish the psalms and
+the rest of the bible doing that", 2026-11-19). Most psalms are one passage;
+the major psalms of Book Two (42 and 43 as one poem, 46, 51, 63, 69, 72) are
+at full depth in two or three passages, and 45, 49, 50, 55, 58 and 68 have a
+little more room in two. `hard` appears only where a psalm has a difficulty
+of its own. Each note gained only `"plain": true` at its end. No code changed.
+The notes point to the book page for Sheol, the cursing psalms, the
+headings, "of David", claims of innocence and the royal psalms instead of
+repeating it; the book page was not edited.
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 42 | full (with 43) | 2 | care line | 1,115 |
+| 43 | full (with 42) | 1 | none | 484 |
+| 44 | lighter | 1 | yes | 675 |
+| 45 | more room | 2 | 1 (45:6) | 1,107 |
+| 46 | full | 3 | 1 (no modern city) | 1,198 |
+| 47 | lighter | 1 | none | 479 |
+| 48 | lighter | 1 | short | 504 |
+| 49 | more room | 2 | 1 (49:15) | 816 |
+| 50 | more room | 2 | 1 | 902 |
+| 51 | full | 3 | 2 | 1,929 |
+| 52 | lighter | 1 | short | 535 |
+| 53 | lighter | 1 | none (points to 14) | 480 |
+| 54 | lighter | 1 | none | 436 |
+| 55 | more room | 2 | 1 (to the book page) | 874 |
+| 56 | lighter | 1 | none | 451 |
+| 57 | lighter | 1 | none | 440 |
+| 58 | more room | 2 | 1 (58:6-10) | 1,037 |
+| 59 | lighter | 1 | short | 499 |
+| 60 | lighter | 1 | none | 477 |
+| 61 | lighter | 1 | none | 447 |
+| 62 | lighter | 1 | none | 461 |
+| 63 | full | 2 | 1 | 975 |
+| 64 | lighter | 1 | none | 431 |
+| 65 | lighter | 1 | none | 433 |
+| 66 | lighter | 1 | yes (66:18) | 502 |
+| 67 | lighter | 1 | none | 453 |
+| 68 | more room | 2 | 2 | 1,075 |
+| 69 | full | 3 | 2 | 1,739 |
+| 70 | lighter | 1 | none (points to 40) | 454 |
+| 71 | lighter | 1 | none | 588 |
+| 72 | full | 3 | 1 | 1,406 |
+| Total | | 47 | 20 | 23,402 |
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 42" to "72". 14 web
+searches: 42 (1, the Gethsemane echo), 43 (1, the manuscripts joining 42 and
+43), 45 (2, the translations of 45:6 and the Targum), 46 (1, "be still" and
+Luther's hymn), 48 (1, Zaphon), 51 (2, 51:5 and 51:11), 63 (1, the morning
+psalm), 68 (2, the cloud-rider title and Ephesians 4:8), 69 (1, the New
+Testament uses and the curses), 72 (2, the Targum and Hammurabi). Scripts over
+the repository's Hebrew word data checked: the counts of YHWH and Elohim in
+Books One and Two (273 and 49; 28 and 198); tehom in 42:7 and Genesis 1:2;
+nimtsa me'od (46:1); 'imanu and Immanu-el; "take" (49:15, Genesis 5:24,
+73:24); bara (51:10); "Holy Spirit" in the Old Testament only at 51:11 and
+Isaiah 63:10-11; elem in 58:1; 'akh six times in Psalm 62; dumiyah (62:1,
+65:1); hevel (62:9); "fat and fatness" (63:5); the word for dawn (63:1);
+dabaq (63:8, Genesis 2:24, Ruth 1:14); "the river" (66:6). The BSB was
+compared for 53 and 14, 57:7-11 and 108:1-5, 60:5-12 and 108:6-13, 70 and
+40:13-17, 71 and 31, and the "of David" headings after 72.
+
+### Cut or narrowed
+
+Cut (not verified this run, or met only secondhand): the claim that the Greek
+translators used the same word (perilypos) in the refrain of 42 and 43 and in
+Mark 14:34; the Peshitta's "gave" at 68:18; Rashi, Kimchi and Ibn Ezra on
+Psalm 72 (met only in Gill); Calvin on 51:5 (secondhand); the rabbinic
+tradition that David was born of an unlawful union (secondary only);
+Chrysostom's saying on Psalm 63 (secondhand), Athanasius and Benedict;
+Mowinckel by name (47); Mesopotamian texts on feeding the gods (50); the
+Greek heading of Psalm 71; the 701 BC and Maccabean dates (44, 46, 48);
+Ahithophel's death (55); the year of Luther's hymn. Narrowed: the Targum on
+45 ("speaks to the king of this psalm as the anointed one", not "King
+Messiah", since editions differ); the Apostolic Constitutions ("church
+orders from the fourth century, such as ..."); Hammurabi paraphrased with no
+quotation marks and no prologue or epilogue named; "Some Bibles" for the
+NASB's "cease striving"; Romans 2:6 as words found in 62:12 and Proverbs
+24:12; 1 Samuel 24 as "Soon after" the Ziph chase. Two wordings in the brief
+are not the BSB and were not used: 56:8 reads "Put my tears in Your bottle",
+and 71:9 reads "Do not discard me in my old age".
+
+### Contested matters, and how they are stated
+
+The Elohistic Psalms: an observation from the Hebrew counts, "No one knows for
+sure why the collectors did this." 42 and 43 as one poem (most readers; some
+medieval copies join them). 45:6 (vocative "O God" in most Bibles; court
+language and elohim of judges; "your divine throne" and "your throne is from
+God"; Jewish readings to the king or to God; the Targum; "Both readings are
+held in good faith"). 46:10 ("let go", "stop"; a command first to the
+nations). 47 (a yearly feast of God's kingship: a view the Old Testament does
+not describe directly). 48 and 46 (no modern city or state). 49:15 (rescue
+from early death, or hope beyond it). 50 (two readings of the prophets on
+sacrifice). 51:4 (three readings). 51:5 (Western original sin after
+Augustine, some adding shared guilt; Orthodox ancestral sin; a poetic
+reading). 51:11 (the Spirit for a task in the Old Testament; John 14:16 and
+Ephesians 1:13; traditions that teach a believer can fall away; "not a cause
+for division"). 51:18-19 (later addition or David's own). 54 ("strangers").
+58:1 (elem or elim; human judges or unseen powers). 59:11 and 13. 60 (the
+numbers 12,000 and 18,000; three explanations, "these notes leave it open";
+victory heading and defeat psalm). 63 (which wilderness flight). 67:6 (thanks
+or prayer). 68:18 and Ephesians 4:8 (the Targum's "gave"; a conqueror
+receives and gives; Acts 2:33). 69 (the pattern reading; the curses beside
+Luke 23:34). 70 (the meaning of "to bring remembrance"). 71 (David or an
+older worshipper; "a portent"). 72 (Solomon's prayer, David's, or a
+coronation psalm; Jewish and Christian readings; 72:20).
+
+**Psalm 51's heading and Bathsheba, on the page:** "The heading points to 2
+Samuel 11 and 12, and it is right to say plainly what happened. King David
+saw Bathsheba, the wife of Uriah, one of his soldiers, while Uriah was away at
+war. “Then David sent messengers to get her” (2 Samuel 11:4). He was the
+king, and he used his power over her. She became pregnant. To hide what he
+had done, David sent a letter to his commander ... Uriah died. The Bible puts
+the blame on David. ... Nothing in the story or the psalm blames Bathsheba."
+
+**51:5, on the page:** "Christians have read it in different ways. Many in the
+Western church, following Augustine, read it as teaching original sin: that
+since Adam every person is born with a nature already bent toward sin, and
+some add that they share Adam's guilt (Romans 5:12). Orthodox Christians speak
+of ancestral sin: we inherit death and a pull toward sin, but not guilt.
+Others read the verse as a poem's way of saying that David's sin goes all the
+way down, as far back as he has been alive. Whichever reading is right, the
+‘I’ of the verse is David. It does not say that his mother sinned by
+conceiving him, that the love of husband and wife is sinful, or that a baby is
+anything less than precious to God."
+
+**58:6-10, on the page:** "This is one of the hardest passages in the Psalms,
+and the book page lists verse 10 among them. These notes do not soften the
+words. They say what they say. The book page's part on the cursing psalms sets
+out four ways Christians read lines like these ... Thoughtful believers hold
+each view, and these notes do not choose between them. One thing is not open:
+no reading of this psalm has ever made it right to harm anyone."
+
+**Psalm 69's curses beside "Father, forgive them", on the page:** "Most
+Christian readers do not put these curses in Jesus' mouth. They say the New
+Testament takes the psalmist's sufferings as a pattern for Jesus, but the
+curses remain David's own prayer. Jesus, the Son of David, prayed the opposite
+way. ... Others read the curses as God's real judgment on those who finally
+reject him. On that reading the New Testament applies them not as personal
+revenge but as a sober warning, as Acts does of Judas." On Romans 11:9-10:
+Paul writes "with grief, not scorn", the hardening is "in part" and for a
+time, and "These verses give no one any reason to blame or look down on the
+Jewish people".
+
+### Care lines included
+
+42:1-5 (the downcast soul; no diagnosis of anyone; the Psalm 13 form with the
+Find Help page). 51:1-6 (a guilt-laden reader: 1 John 1:9; and, separately,
+anyone harmed by a person with power over them: "What was done to you was
+wrong, and it was not your fault ... The Find Help page on this site lists
+places to turn"). 55:12-23 (the betrayed, with the Find Help page). 58:6-11
+(a parent who lost a baby). 68:1-18 (the fatherless and the lonely). 69:1-12
+(the sinking and the shame, with the Find Help page). 71 (the old, those who
+care for them, and an old person low in spirit). No phone number anywhere.
