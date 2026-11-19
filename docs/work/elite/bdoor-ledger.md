@@ -5817,3 +5817,46 @@ A stricter script than the validator (keeping case and punctuation, and
 refusing an em-dash) found four quotations that the validator's looser match
 passed: Numbers 6:25 ("may" in lower case), Psalm 9:12 ("For"), 9:20
 ("let"), 89:52 (its exclamation mark). All four now match the BSB exactly.
+
+## The plain notes on Psalms 11 to 41: the lighter shape (2026-11-19)
+
+From Psalm 11 on, most psalms have one passage for the whole psalm and a
+`hard` part only where the psalm has a difficulty of its own (the validator,
+the type and the page already allowed `hard` to be absent: Psalm 8:1-2 had
+none). Scripture is the BSB in the repository, checked by a strict script
+(case and punctuation kept, no em-dash, no "..." inside a quotation) as well
+as by the validator. "Repository deep note" means the existing note at
+`client/public/bible/notes/psalms/<n>.json`.
+
+## The plain notes on Psalm 11 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Fleeing to the hills and caves; David in the hill country (1 Samuel 23:14) | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| "Foundations" most likely the moral and legal order of society | Repository deep note (cultural) | Stated as "most likely" |
+| Fiery coals and sulfur recall Sodom (Genesis 19:24) | BSB | BSB text |
+| Matthew 5:8; Revelation 22:4; Matthew 10:28; Hebrews 12:28 | BSB | BSB text |
+
+## The plain notes on Psalm 12 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Agreements mostly spoken; "a heart and a heart" | Repository deep note (cultural) | Site's own teaching |
+| Silver refined by heat; seven as completeness | Repository deep note (cultural) | Site's own teaching |
+| Proverbs 30:5; 2 Samuel 22:31; Psalm 18:30; Matthew 5:37; James 3:5 | BSB | BSB text |
+
+## The plain notes on Psalm 13 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "How long" four times in verses 1-2 | BSB | BSB text |
+| The face of God as favour (Numbers 6:25); "forget" as ceasing to act for someone; bright eyes as life | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| A lament with all its steps; used on the book page as the model lament | Book page, "Kinds of psalm" | Site's own teaching. "The shortest lament in the Bible" not stated (not checked); "one of the shortest laments in the Psalms" |
+| Habakkuk 1:2; Revelation 6:10; Hebrews 13:5 with Deuteronomy 31:6 | BSB | BSB text |
+| Care line shortened from Psalm 6's, pointing back to it | Psalm 6 plain note | Site's own wording |
