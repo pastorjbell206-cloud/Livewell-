@@ -10,7 +10,7 @@ import path from "node:path";
 
 import { renderWithProviders } from "@/test/harness";
 import type { BibleBook } from "@/lib/bible";
-import type { BookIntro } from "@/lib/bible-notes";
+import { MAP_FRAMES, bookMaps, type BookIntro, type MapPlace } from "@/lib/bible-notes";
 import BookTeaching from "./BookTeaching";
 import BookMap from "./BookMap";
 import PlainPassages from "./PlainPassages";
@@ -149,16 +149,94 @@ describe("Genesis's teaching introduction, the first Old Testament book", () => 
     expect(within(deeper).getByRole("link", { name: /How should a Christian read Genesis 1\?/ }).getAttribute("href")).toBe("/answers/how-should-a-christian-read-genesis-1");
     expect(within(deeper).getByRole("link", { name: /The Old Testament's world/ }).getAttribute("href")).toBe("/resources/context/world/old-testament-world");
     expect(within(deeper).queryByRole("link", { name: /How to read the Gospels/ })).toBeNull();
-    expect(within(document.getElementById("map")!).getByText(/Ur and Haran to the north-east, and Egypt to the south-west, lie far beyond it/)).toBeTruthy();
+    expect(within(document.getElementById("map")!).getByText(/The first follows the family from Ur and Haran to Canaan and down to Egypt/)).toBeTruthy();
   });
 
-  it("draws Canaan's places only, north to south, with Moriah and the regions placed roughly", () => {
+  it("draws two maps: the long journey on the wide frame, then Canaan close up", () => {
     renderWithProviders(<BookMap slug="genesis" bookName="Genesis" places={gn.teaching!.map} />);
-    expect(screen.getByRole("img", { name: "A simple map of the places in Genesis, from Dothan in the north to Bethlehem in the south." })).toBeTruthy();
-    fireEvent.click(screen.getByRole("button", { name: "Moriah" }));
+    const maps = Array.from(document.querySelectorAll(".bk-map"));
+    expect(maps.map((m) => m.getAttribute("data-frame"))).toEqual(["fertile-crescent", "canaan"]);
+    expect(screen.getByRole("heading", { level: 3, name: "From Ur to Egypt" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Canaan, close up" })).toBeTruthy();
+    expect(maps[0].querySelector("svg")!.getAttribute("viewBox")).toBe("0 0 521 311");
+    expect(maps[1].querySelector("svg")!.getAttribute("viewBox")).toBe("0 0 338 483");
+    expect(screen.getByRole("img", { name: "A simple map of the places in Genesis, from Ur in the east to Goshen in the west, with Haran in the north." })).toBeTruthy();
+    expect(screen.getByRole("img", { name: "A simple map of the places in Genesis, from Dothan in the north to Beersheba in the south." })).toBeTruthy();
+    // The wide map's caption says the coasts and rivers are today's, and counts its regions.
+    expect(within(maps[0] as HTMLElement).getByText(/the coasts and rivers as they are now, not as they were then; the three regions are placed roughly\./)).toBeTruthy();
+    expect(within(maps[1] as HTMLElement).getByText(/the five regions are placed roughly\./)).toBeTruthy();
+  });
+
+  it("a place card on each map follows the button chosen, and the uncertain sites say so", () => {
+    renderWithProviders(<BookMap slug="genesis" bookName="Genesis" places={gn.teaching!.map} />);
+    const wide = within(screen.getByRole("list", { name: "Places in Genesis: From Ur to Egypt" }));
+    fireEvent.click(wide.getByRole("button", { name: "Ur" }));
+    expect(screen.getByRole("heading", { level: 4, name: "Ur" })).toBeTruthy();
+    expect(screen.getByText(/usually placed at Tell el-Muqayyar/)).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Genesis 15:7" }).getAttribute("href")).toBe("/study/bible/genesis/15#v7");
+    fireEvent.click(wide.getByRole("button", { name: "Goshen" }));
+    expect(screen.getByText(/eastern Nile delta; it is drawn here roughly/)).toBeTruthy();
+    const close = within(screen.getByRole("list", { name: "Places in Genesis: Canaan, close up" }));
+    expect(close.getAllByRole("button")).toHaveLength(11);
+    fireEvent.click(close.getByRole("button", { name: "Moriah" }));
     expect(screen.getByRole("link", { name: "Genesis 22:2" }).getAttribute("href")).toBe("/study/bible/genesis/22#v2");
     expect(screen.getByText(/Where exactly is uncertain/)).toBeTruthy();
-    expect(screen.getByText(/the 4 regions are placed roughly/)).toBeTruthy();
+    fireEvent.click(close.getByRole("button", { name: "Sodom" }));
+    expect(screen.getByText(/Where it stood is not known\. It is drawn at the south end of the Dead Sea/)).toBeTruthy();
+    // Both maps keep their own choice.
+    expect(wide.getByRole("button", { name: "Goshen" }).getAttribute("aria-pressed")).toBe("true");
+  });
+
+  it("every place sits inside its own map's frame", () => {
+    for (const m of bookMaps(gn.teaching!.map)) {
+      const f = MAP_FRAMES[m.frame];
+      for (const p of m.places) {
+        expect(p.lat > f.south && p.lat < f.north && p.lon > f.west && p.lon < f.east, `${m.frame} ${p.id}`).toBe(true);
+      }
+    }
+  });
+});
+
+describe("a map's frame", () => {
+  const place: MapPlace = { id: "jerusalem", name: "Jerusalem", lat: 31.778, lon: 35.235, refs: ["1:1"], line: "A test place." };
+
+  it("is the old 'israel' frame when a book gives a bare list of places: one map, no title, the same drawing", () => {
+    expect(bookMaps([place])).toEqual([{ frame: "israel", title: "", places: [place] }]);
+    for (const slug of ["mark", "matthew", "john", "luke"]) {
+      const t: BookIntro = json(`bible/notes/${slug}/intro.json`);
+      expect(bookMaps(t.teaching!.map).map((m) => m.frame), slug).toEqual(["israel"]);
+    }
+    renderWithProviders(<BookMap slug="mark" bookName="Mark" places={[place]} />);
+    expect(document.querySelectorAll(".bk-map")).toHaveLength(1);
+    expect(document.querySelector(".bk-map")!.getAttribute("data-frame")).toBe("israel");
+    expect(document.querySelector(".bk-map svg")!.getAttribute("viewBox")).toBe("0 0 348 462");
+    expect(document.querySelector(".bk-map__title")).toBeNull();
+    expect(screen.getByRole("heading", { level: 3, name: "Jerusalem" })).toBeTruthy();
+    expect(screen.getByText(/^A sketch, not a survey: places are set by their modern sites\.$/)).toBeTruthy();
+  });
+
+  it("is chosen by the data: a named map draws on the frame it names", () => {
+    renderWithProviders(<BookMap slug="genesis" bookName="Genesis" places={[{ frame: "canaan", title: "Test map", places: [place] }]} />);
+    expect(document.querySelector(".bk-map")!.getAttribute("data-frame")).toBe("canaan");
+    expect(screen.getByRole("heading", { level: 3, name: "Test map" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 4, name: "Jerusalem" })).toBeTruthy();
+  });
+
+  it("the validator's frames are the component's frames", () => {
+    const src = fs.readFileSync(path.resolve(__dirname, "../../../../scripts/validate-bible-notes.mjs"), "utf8");
+    const m = src.match(/const MAP_FRAMES = (\{.*\});/);
+    expect(m).toBeTruthy();
+    expect(JSON.parse(m![1])).toEqual(MAP_FRAMES);
+  });
+
+  it("the space held for a book's maps names its frames, so the page can reserve the right height", () => {
+    const GENESIS = BOOKS.find((b) => b.slug === "genesis")!;
+    const gn: BookIntro = json("bible/notes/genesis/intro.json");
+    const { unmount } = renderWithProviders(<BookTeaching book={GENESIS} teaching={gn.teaching!} />);
+    expect(document.querySelector(".bk-map-hold")!.getAttribute("data-frames")).toBe("fertile-crescent canaan");
+    unmount();
+    renderWithProviders(<BookTeaching book={MARK} teaching={intro.teaching!} />);
+    expect(document.querySelector(".bk-map-hold")!.getAttribute("data-frames")).toBe("israel");
   });
 });
 

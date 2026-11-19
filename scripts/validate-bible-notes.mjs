@@ -328,6 +328,12 @@ function checkStudy(id, where) {
 }
 
 /**
+ * The stretch of the world each map frame shows, in degrees. Keep in step
+ * with MAP_FRAMES in client/src/lib/bible-notes.ts (teaching.test.tsx checks).
+ */
+const MAP_FRAMES = {"israel":{"west":34.45,"east":36.3,"north":33.68,"south":31.6},"canaan":{"west":34.0,"east":36.4,"north":33.7,"south":30.8},"fertile-crescent":{"west":29,"east":49,"north":38,"south":28}};
+
+/**
  * Optional: a book's teaching introduction (intro.json `teaching`), plain
  * words in headed parts with lists for the hard passages, key words, a
  * timeline and a map. Held to the same prose rules as every note.
@@ -354,12 +360,30 @@ function checkTeaching(b, t, where) {
     if (typeof x.when !== "string" || !x.when) fail(`${where}.timeline[${i}]`, "missing when");
     prose(`${where}.timeline[${i}].what`, x.what, 20, 400);
   }
-  for (const [i, m] of (t.map ?? []).entries()) {
-    if (!(m.lat > 29 && m.lat < 38 && m.lon > 30 && m.lon < 40)) fail(`${where}.map[${i}]`, "a place outside the Bible lands");
-    if (!Array.isArray(m.refs) || m.refs.length < 1) fail(`${where}.map[${i}]`, "at least one reference");
-    prose(`${where}.map[${i}].line`, m.line, 20, 300);
-    if (m.region != null && typeof m.region !== "boolean") fail(`${where}.map[${i}]`, "region must be true or false");
-    if (m.label != null && !(Number.isFinite(m.label.dx) && Number.isFinite(m.label.dy) && ["start", "end", "middle"].includes(m.label.anchor))) fail(`${where}.map[${i}]`, "label needs dx, dy and an anchor of start, end or middle");
+  // The map: a bare list of places on the default frame, or named maps,
+  // each with a frame and a title. Every place must sit inside its frame.
+  const maps = Array.isArray(t.map) && t.map.length && t.map[0] && "places" in t.map[0] ? t.map : [{ frame: "israel", places: t.map ?? [], bare: true }];
+  const mapIds = new Set();
+  for (const [j, mp] of maps.entries()) {
+    const mw = mp.bare ? `${where}.map` : `${where}.map[${j}]`;
+    const fr = MAP_FRAMES[mp.frame];
+    if (!fr) { fail(mw, `unknown frame "${mp.frame}" (one of ${Object.keys(MAP_FRAMES).join(", ")})`); continue; }
+    if (!mp.bare && (typeof mp.title !== "string" || mp.title.length < 3)) fail(mw, "a named map needs a title");
+    if (!Array.isArray(mp.places) || mp.places.length < 1) { fail(mw, "at least one place"); continue; }
+    if (!mp.bare && mapIds.has(mp.frame)) fail(mw, `frame "${mp.frame}" used twice`);
+    mapIds.add(mp.frame);
+    for (const [i, m] of mp.places.entries()) {
+      const pw = mp.bare ? `${mw}[${i}]` : `${mw}.places[${i}]`;
+      if (!(m.lat > fr.south && m.lat < fr.north && m.lon > fr.west && m.lon < fr.east)) fail(pw, `${m.name ?? m.id} (${m.lat}, ${m.lon}) lies outside the "${mp.frame}" frame`);
+      if (!Array.isArray(m.refs) || m.refs.length < 1) fail(pw, "at least one reference");
+      for (const r of m.refs ?? []) {
+        const rm = String(r).match(/^(\d+):(\d+)/);
+        if (!rm || !chapterData.get(`${b.slug}/${rm[1]}`)?.verses.some((v) => String(v.v) === rm[2])) fail(pw, `no verse ${r}`);
+      }
+      prose(`${pw}.line`, m.line, 20, 300);
+      if (m.region != null && typeof m.region !== "boolean") fail(pw, "region must be true or false");
+      if (m.label != null && !(Number.isFinite(m.label.dx) && Number.isFinite(m.label.dy) && ["start", "end", "middle"].includes(m.label.anchor))) fail(pw, "label needs dx, dy and an anchor of start, end or middle");
+    }
   }
   if (t.mapNote != null) prose(`${where}.mapNote`, t.mapNote, 20, 400);
   for (const [i, x] of (t.deeper ?? []).entries()) {
