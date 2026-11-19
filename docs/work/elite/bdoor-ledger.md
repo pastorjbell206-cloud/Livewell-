@@ -4340,3 +4340,30 @@ chapter, with the deep note, the verse notes and the Genesis 19 plain note.
 Cut: Deuteronomy 22:28-29 (left out, so that nothing reads as a case for a
 victim marrying an attacker); Josephus's festival detail; Jubilees on Levi
 (not searched); the Septuagint's Horite.
+
+## The plain notes on Genesis 35 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/35.json`. One web search for this
+chapter, with the deep note, the verse notes and the Genesis 23 and 30 plain
+notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| God's first word since the return; the vow of 28:20-22; Rachel's gods 31:19; washing and clothes as preparation; earrings perhaps charms; Deborah 24:59; Allon-bachuth ‘oak of weeping’ | 1-8 | Deep note (`story`, `cultural`); verse notes 1-8 | Repository |
+| Joshua 24:23; 1 Samuel 7:3; Exodus 19:10; 1 John 5:21 | 1-8 | BSB | Repository |
+| Name confirmed (32:28); 1:28 and 17:6 echoed; El Shaddai debated, ‘Almighty’ from ancient translations; first drink offering; pillar and oil as 28:18-19 | 9-15 | Deep note (`literary`, `words` H5262); verse notes 11 | Repository |
+| Numbers 28:7; Philippians 2:17; Matthew 1:1 | 9-15 | BSB | Repository |
+| Ben-oni ‘son of my sorrow’ most likely, or ‘strength’; Benjamin ‘son of the right hand’; 30:1, 30:24, 48:7 | 16-20 | Verse notes 18; BSB | Repository |
+| Tomb: verse 19 Bethlehem; 1 Samuel 10:2 Zelzah on Benjamin's border; two views; traditional tomb honored for centuries | 16-20 | Deep note (`historical`) | Repository; stated as open |
+| Jeremiah 31:15-16; Matthew 2:18 | 16-20 | BSB | Repository |
+| Care line: the Genesis 23 sentences ("If your grief is heavy, please share it with someone you trust: a friend, a pastor, a grief counsellor. If the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service. The Find Help page on this site lists places to turn.") | 16-20 | Site | Repository (grep -F) |
+| Concubine a secondary wife; taking a ruler's concubine a claim to his place (2 Samuel 16:21-22) | 21-26 | Deep note (`cultural`) | Repository |
+| Bilhah enslaved, no say (Genesis 30 wording echoed) | 21-26 | Site | Repository |
+| Talmud (Shabbat 55b): a view that Reuben only disturbed his father's bed, moving it from Bilhah's tent for Leah's honor | 21-26 | Babylonian Talmud Shabbat 55b | Search: "Shabbat 55b whoever says Reuben sinned is mistaken" (sefaria.org.il Shabbat.55b; aish.com/reuben; ezrabrand.com). Paraphrased, no rabbi named |
+| Genesis 49:4; 1 Chronicles 5:1; Revelation 21:12 | 21-26 | BSB | Repository |
+| Hebron south of Jerusalem; Mamre and Machpelah (23); ‘gathered to his people’; 25:9 | 27-29 | Verse notes 27, 28-29 | Repository |
+| Isaac alive about twelve years after Joseph was sold | 27-29 | Deep note (`literary`) | Arithmetic: 25:26 (Isaac 60), 47:9 (Jacob 130), 41:46, 45:6 (Joseph 39), 37:2 (sold at 17): Isaac 168 when Joseph sold, dies at 180 |
+| Matthew 22:32 | 27-29 | BSB | Repository |
+
+Cut: the Mari ‘sons of the right’; Migdal Eder in the Targum; Saul of Tarsus
+and the Ben-oni picture of Christ; the Septuagint's added clause in 35:22.
