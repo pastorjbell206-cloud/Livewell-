@@ -4880,3 +4880,26 @@ Mantey on eis; any modern economic or political reading of 2:44.
 
 Left out: the councils of 543 and 553; the wax tablet image for "wiped
 away"; any claim that the lame were barred from the temple.
+
+## The plain notes on Acts 4 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/4.json`. 3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Captain of the temple: a senior priestly officer keeping order, with Levites as temple police | 1-4 | Commentaries; Josephus as cited | Search: gci.org; jw.org; biblehub.com. Whether he was the sagan (second to the high priest) not stated: sources disagree |
+| Sadducees: few, priestly and wealthy, written law only, no resurrection (23:8) | 1-4 | Jewish-life portrait | Repository wording |
+| Sanhedrin's makeup; Annas and Caiaphas (Luke 3:2; John 18:13) | 5-12 | Repository `historical`; BSB | Repository |
+| Acts 4:6 "John": Codex Bezae and a few Latin witnesses read "Jonathan"; Jonathan son of Annas high priest after Caiaphas (about 36 to 37); most think "John" original | 5-12 | Josephus, Antiquities 18.95; textual notes | Search: tips.translation.bible; biblegateway Reformation Study Bible; Constable |
+| Psalm 118:22; Luke 20:17; Isaiah 28:16; John 14:6 | 5-12 | BSB | Repository |
+| "No other name": stated as the text's claim; the views on those who never heard; pointer to the Honest Answer "What about those who never heard of Jesus?" | 5-12 | Deep note `hard`; answers.ts | Repository; no side taken |
+| Agrammatoi and idiōtai: without formal training in the law, laymen; some think unable to read, then common and no shame | 13-22 | Lexicons; Kraus, NTS (2001) | Search: biblehub.com Thayer; studybible.info Trench; cambridge.org NTS abstract. Kraus not named |
+| Civil disobedience views (obey except when commanded to sin; peaceful public resistance; teaching on resisting tyrants); Romans 13:1; 1 Peter 2:17; Exodus 1:17; Daniel 3:18; 6:10; pointer to the site's Romans 13 guide | 13-22 | BSB; standard positions | Stated as views; no movement, person or modern cause named |
+| Despotēs "master with full authority"; Herod Antipas (Luke 23:7-12) | 23-31 | Lexicon; earlier ledger | Repository |
+| Psalm 2:1-2; Exodus 20:11; Psalm 146:6 | 23-31 | BSB | Repository |
+| "At the feet" a sign of handing over; shared goods voluntary (5:4); no modern economic or political application | 32-37 | Deep note `cultural`; BSB | Stated without any program named |
+| Numbers 18:20; Jeremiah 32:9 (Jeremiah of the priests, Jeremiah 1:1); Deuteronomy 15:4, 11 | 32-37 | BSB | Repository |
+
+Left out: night trials and the Mishnah's rules for them; the sagan as a
+title; how many of the believers were pilgrims; the Theodotus inscription
+(kept for Acts 6).
