@@ -3182,3 +3182,44 @@ the afternoon sacrifice; Bailey's atonement-sacrifice setting; Levine on the
 widow; b. Berakhot 28b; m. Demai; the Psalms of Solomon; Sanders by name;
 Lucian; Cyril and the "rope" reading; Netzer's palaces; Herod's death at
 Jericho; Calvin's harmony.
+
+## The plain notes on Luke 19 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/19.json`. Seven searches for this
+chapter, with the earlier ledger (Mark 11 and 13; Matthew 23 and 25; Luke 3,
+13 and the book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Tax collectors, contracts sold in advance (Luke 3 wording); table fellowship as acceptance | 1-10 | Luke 3 and 15 plain notes | Earlier ledger |
+| Architelōnēs only at 19:2; sukophanteō only at 3:14 and 19:8; didōmi and apodidōmi both present tense in 19:8 | 1-10 | Greek text | Script over the repository's Greek (G0754, G4811) |
+| "Probably held the contract for the district" | 1-10 | Deep note; Luke 3 ledger on contractors | Stated as "probably" |
+| Sycamore-fig (Ficus sycomorus): short trunk, low wide branches, easy to climb, at home in the hot Jericho plain | 1-10 | Bible dictionaries | Search: biblicaltraining.org "sycomore tree"; israelbiblicalstudies.com; Easton via biblegateway; christiantoday.com |
+| 19:8: most read the presents as futuristic (a resolve, conversion); a minority as customary (a defence, vindication) | 1-10 | Tichy, Biblica 92 (2011) 21-38, surveying the debate; A. T. Robertson as reported; Fitzmyer as reported | Search: bsw.org Tichy article pages; ucc.org (Luti). No scholar named on the page. Hamm's article not confirmed, not named |
+| Leviticus 6:5; Exodus 22:1; 2 Samuel 12:6; Ezekiel 34:16; 15:2; 18:23, 27; 13:16; 2:11; 4:21; 23:43; "must" and "today" (book page key words) | 1-10 | BSB; book page | Repository |
+| Mina = 100 drachmas, about 100 days' wages (three or four months); talent = sixty minas (6,000 denarii, Matthew 25 ledger) | 11-27 | Bible notes and coin tables | Search: biblia.com NASB95 note on Luke 19:13; depts.ttu.edu coin syllabus; Reformation Study Bible ("several months' wages") |
+| Archelaus went to Rome to have Augustus confirm him; a delegation of fifty Jews, joined by more than eight thousand Jews in Rome, asked not to be ruled by a Herod (Josephus, Antiquities 17.299-314); given part of the kingdom without the title of king; removed in AD 6 and exiled; a palace at Jericho; commentators see the echo in 19:12-14 | 11-27 | Josephus; Bible encyclopedias | Search: lexundria.com Antiquities 17.299-314 (Whiston); biblicaltraining.org "Herod Archelaus"; en.wikipedia.org Herod Archelaus; earlier ledger (removal AD 6). "Many readers think"; "Luke does not say so" |
+| Two plots joined (servants and money; nobleman and citizens): some think combined, others one parable | 11-27 | Deep note; standard positions | Stated as views; Jeremias not named |
+| "I will judge you by your own words"; the greedy-landowner reading (Matthew 25 wording adapted) | 11-27 | Matthew 25 plain note | Repository |
+| Psalm 24:1; Daniel 7:13-14; Acts 1:11; 10:42; 9:54-55; 22:51; 23:34; 16:10; 18:1-8 | 11-27 | BSB | Repository |
+| Colt, cloaks, 2 Kings 9:13 (Mark 11 wording); no branches or Hosanna in Luke; "King" added (also John 12:13); Luke 2:14; 13:31 | 28-40 | BSB comparison; Mark 11 plain note | Repository |
+| Psalm 118:26; Zechariah 9:9 quoted by Matthew and John; 1 Kings 1:33; Habakkuk 2:11 | 28-40 | BSB | Repository |
+| Klaiō at 19:41; dakruō at John 11:35 | 41-44 | Greek text | Script over the repository's Greek (G2799, G1145) |
+| Episkopē at 19:44; episkeptomai at 1:68, 1:78, 7:16 | 41-44 | Greek text | Script over the repository's Greek (G1984, G1980) |
+| Revolt 66; AD 70 under Titus, temple burned (Mark 13 wording) | 41-44 | Earlier ledger (Mark 13) | Earlier ledger |
+| Josephus (Jewish War 5) on Titus's wall round the city, built in three days, so none could get in or out | 41-44 | Josephus as summarised | Search: historyhit.com "Cataclysm: The Roman Siege of Jerusalem"; weaponsandwarfare.com (Connolly); ejournals.eu study of the wall. "Josephus says"; length and forts not given |
+| Dominus Flevit, Latin "the Lord wept", Franciscan church on the western slope of the Mount of Olives, by Barluzzi, teardrop shape, built 1953-1955 (some give 1954) | 41-44 | Reference works | Search: en.wikipedia.org Dominus Flevit Church; biblewalks.com; seetheholyland.net; israel21c.org. "Built in the 1950s" |
+| "This is grief, not a verdict ..." (Luke 13 and Matthew 23 wording, word for word); misuse rejected (book page "Luke and the Jewish people") | 41-44 | Luke 13 and Matthew 23 plain notes; book page | Repository |
+| Dating of 19:43-44 (book page wording; Mark 13 hard wording) | 41-44 | Book page; earlier ledger | Repository |
+| Jeremiah 9:1; Psalm 122:6; Isaiah 29:3 | 41-44 | BSB | Repository |
+| Temple market (pointed to Mark 11); Isaiah 56:7; Jeremiah 7:11; Malachi 3:1; "for all the nations" in Mark 11:17, absent from Matthew 21:13 and Luke 19:46; two reasons offered | 45-48 | BSB comparison; deep note (stated as views) | Repository |
+| Readings of the temple action; "not attacking his own people's faith" (Mark 11 wording) | 45-48 | Mark 11 plain note | Repository |
+
+Left out: balsam, date palms and Netzer's palaces at Jericho; the Mishnah on
+tax collectors and on tying money in a cloth; b. Ketubot 50a; Gaius on
+fourfold theft; Clement on Zacchaeus as Matthias and the Apostolic
+Constitutions; Ambrose and Augustine on the sycamore; Jeremias, Johnson,
+Rohrbaugh, Dodd, Robinson by name; the Jewish-Christian gospel in Eusebius;
+the Judensonntag, Bugenhagen and Bach's cantatas (Bugenhagen's link and the
+name not confirmed); Simonet's painting; Josephus's 1,100,000 dead; the
+thirteen forts and 39 stadia; Jerusalem as "city of peace".
