@@ -5691,3 +5691,34 @@ Three web searches (and the book page's Rashi search).
 Cut: kings called sons of gods in the nations around, and Egypt's god-king
 (not searched); smaller nations rebelling at a new king (not searched); the
 "kiss his feet" emendation (not searched).
+
+## The plain notes on Psalm 3 (2026-11-19)
+
+No web search needed: the story is Scripture and the images are the
+repository's deep note.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Absalom's revolt, David's flight weeping with head covered, the ark sent back, Shimei's curse, David's grief | 1-4, 5-8 | 2 Samuel 15:13-14, 25, 30; 16:5-8; 18:33 | BSB text |
+| Shield; lifting the head as restoring honour (Genesis 40:13); teeth as a predator made harmless (58:6) | 1-4, 5-8 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| "Arise, O LORD" and Numbers 10:35; deliver/salvation one root framing the psalm | 5-8 | Repository deep note (literary); BSB | Site's own teaching; BSB text |
+| Matthew 27:43 with Psalm 22:8; Romans 8:31; Mark 4:38; Jonah 2:9; Revelation 7:10; Matthew 26:52; 1 Peter 2:23; Matthew 5:44 | both | BSB | BSB text |
+
+Cut: Brevard Childs on the headings (deep note; not searched); "the tenth
+century BC" for the revolt (not needed).
+
+## The plain notes on Psalm 4 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ragaz: be stirred, shake, with fear or anger; the Septuagint took it as anger; Ephesians 4:26 quotes the Septuagint's words exactly | 1-5 | ccel.org and biblehub.com on Ephesians 4:26 (Ellicott, Barnes, Pulpit); translation.bible tip on Psalm 4:4 | Search |
+| Chasid ("the godly") built from hesed | 1-5 | Standard lexicons | Repository word notes; standard |
+| Choirmaster; stringed instruments; sacrifices with a right heart; the priestly blessing behind 4:6; grain and new wine | both | Repository deep note (cultural) | Site's own teaching |
+| Ephesians 4:26-27, 31; James 1:19-20; Mark 3:5; Numbers 6:25; Proverbs 16:15; Habakkuk 3:17-18; Proverbs 3:24; Philippians 4:7 | both | BSB | BSB text |
+
+Cut: the seasons of the grain and grape harvests (not checked this run);
+the drought reading stated only as what "some readers think".
+Care: anger that frightens anyone at home points to someone trusted and to
+Find Help; long sleeplessness points to a doctor, "not a failure of faith".
