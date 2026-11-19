@@ -51,10 +51,10 @@ describe("Mark's teaching introduction", () => {
     expect(book).toBeLessThan(all);
   });
 
-  it("only Mark, Matthew and John have one so far, and every other book's introduction still has the fields its page draws", () => {
+  it("only the four Gospels have one so far, and every other book's introduction still has the fields its page draws", () => {
     for (const b of BOOKS) {
       const d: BookIntro = json(`bible/notes/${b.slug}/intro.json`);
-      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john"].includes(b.slug));
+      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke"].includes(b.slug));
       expect(typeof d.overview).toBe("string");
     }
   });
@@ -109,6 +109,28 @@ describe("John's teaching introduction, from the same parts", () => {
     fireEvent.click(screen.getByRole("button", { name: "Sychar" }));
     expect(screen.getByRole("link", { name: "John 4:5" }).getAttribute("href")).toBe("/study/bible/john/4#v5");
     expect(screen.getByText(/the region is placed roughly/)).toBeTruthy();
+  });
+});
+
+describe("Luke's teaching introduction, from the same parts", () => {
+  const LUKE = BOOKS.find((b) => b.slug === "luke")!;
+  const lk: BookIntro = json("bible/notes/luke/intro.json");
+
+  it("has its parts on history and on the Jewish people, its hard passages and its own Go deeper pages", () => {
+    renderWithProviders(<BookTeaching book={LUKE} teaching={lk.teaching!} />);
+    expect(screen.getByRole("heading", { level: 2, name: "Luke and the history of his day" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 2, name: "Luke and the Jewish people" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Luke 2:2" }).getAttribute("href")).toBe("/study/bible/luke/2#v2");
+    expect(screen.getByRole("link", { name: "Luke 23:34" }).getAttribute("href")).toBe("/study/bible/luke/23#v34");
+    expect(screen.getByRole("link", { name: /The Roman world/ }).getAttribute("href")).toBe("/resources/context/world/roman-world");
+  });
+
+  it("draws its own places, north to south, with Emmaus and the Samaritan villages placed roughly", () => {
+    renderWithProviders(<BookMap slug="luke" bookName="Luke" places={lk.teaching!.map} />);
+    expect(screen.getByRole("img", { name: "A simple map of the places in Luke, from Capernaum in the north to Bethlehem in the south." })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Emmaus" }));
+    expect(screen.getByRole("link", { name: "Luke 24:13" }).getAttribute("href")).toBe("/study/bible/luke/24#v13");
+    expect(screen.getByText(/the two regions are placed roughly/)).toBeTruthy();
   });
 });
 

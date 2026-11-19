@@ -2447,3 +2447,54 @@ Cut: the 1969 calendar change; Hippolytus and the Song of Songs; Trent's year an
 | Who wrote it (book page wording); Deuteronomy 19:15; 1:1-3; 20:31 | 24-25 | Book page; BSB | Repository; BSB text |
 
 Cut: Oppian by name; the gematria proposals by name (Gog, En-eglaim); Trench, Carson, Barrett, Butler and Brown by name; Catechism 553 (not found in the search); Tertullian and the Scorpiace by name; the date of Peter's death (64 or 67); the Vatican excavations; Ut Unum Sint.
+
+## Luke's book page (teaching introduction, 2026-11-19)
+
+Every historical claim in `client/public/bible/notes/luke/intro.json`, field
+`teaching`. 23 searches for the book page, run on 2026-11-19; checks rest on
+search results that quote or summarise the source, read against at least two
+results where possible. Ancient writers are paraphrased. Scripture is the BSB
+in the repository, checked word for word by `scripts/validate-bible-notes.mjs`;
+word counts are a script over the repository's Greek text.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Colossians 4:10-14 ("These are the only Jews among my fellow workers"; "Luke, the beloved physician"); Philemon 24; 2 Timothy 4:11 | BSB | Repository |
+| The "we" passages (Acts 16:10-17; 20:5 to 21:18; 27:1 to 28:16); the eyewitness, diary and sea-voyage-convention readings | Repository `author` (Robbins 1978; Hemer, Praeder) | Repository; names not used on the page |
+| Irenaeus, Against Heresies 3.1.1: Luke, Paul's companion, set down in a book the gospel Paul preached; 3.14.1: from the "we" passages, Luke Paul's constant companion; Marcion and Valentinus would not accept Luke's authority | Irenaeus | Search: newadvent.org/fathers/0103301.htm and 0103314.htm; logoslibrary.org; bkv.unifr.ch; ehrmanblog.org. Paraphrased |
+| Muratorian fragment: Luke the physician; Paul took him along; he did not see the Lord in the flesh; late second century usually, fourth century argued by Sundberg (1973) and Hahneman (1992) | Muratorian fragment | Search: earlychristianwritings.com (Metzger translation); newworldencyclopedia.org; bible-researcher.com; thegospelcoalition.org Themelios review; galaxie.com (Hill). Paraphrased; scholars not named on the page |
+| Hobart, The Medical Language of St. Luke (Dublin, 1882); Cadbury's answer (The Style and Literary Method of Luke, 1919-1920; JBL 1926): ancient physicians had hardly a technical vocabulary; educated writers used the same words | Hobart; Cadbury | Search: archive.org; gospelstudies.org.uk JBL 1926; Spectator 1883 review. Year given as "from 1919" because the results give 1919 and 1920 |
+| Luke a Gentile (Colossians 4) and the reply that "of the circumcision" may mean a narrower group (Ellis, as cited) | Commentaries | Search: foi.org; paulandco-workers.blogspot.com (Fellows); NET note via biblia.com. Both views stated, no names |
+| Acts 1:1 "O Theophilus"; "most excellent" for Felix (Acts 24:3) and Festus (Acts 26:25) | BSB | Repository (BSB 23:26 reads "His Excellency", so it is not cited) |
+| Theophilus: patron, believer under instruction, symbolic name; "friend of God" | Reference works | Search: biblehub.com; bartehrman.com; Wikipedia "Theophilus (biblical)" |
+| Cadbury, The Making of Luke-Acts (Macmillan, 1927), one literary project; the name "Luke-Acts" | Cadbury | Search: archive.org PDF; Wikipedia Henry Cadbury. The page does not say he coined the name |
+| Loveday Alexander, The Preface to Luke's Gospel (Cambridge, SNTS 78, 1993): closest parallels in scientific and technical prefaces; critics say the line is less sharp | Alexander | Search: 4enoch.org; powells.com; apcz.umk.pl (2020 article) |
+| Date: majority about 80 to 90; Luke 19:43 and 21:20; minority early 60s from the end of Acts (Robinson 1976); reply that Acts ends on purpose; a few early second century | Reference works | Search: vridar.org; reasonabletheology.org; jimmyakin.com; bartehrman.com; repository `date`; ledger (Robinson) |
+| Two-Source view and Q; Farrer 1955; Goodacre 2002; Matthew-first view | Earlier ledger (Matthew's book page) | Earlier ledger; wording kept consistent with Matthew's page |
+| Luke uses "poor" (ptōchos) 10 times and "rich" (plousios) 11 times, more than any other Gospel; "today" (sēmeron) 11 times | Greek text | Script over the repository's Greek |
+| Septuagint style of Luke 1 and 2; most think deliberate imitation, some think Hebrew or Aramaic sources | Jung, The Original Language of the Lukan Infancy Narrative (2004); NTS article | Search: logos.com; bestcommentaries.com; cambridge.org NTS abstract |
+| Isaiah 61:1-2 with Isaiah 58:6 in Luke 4:18-19; Jesus stops before "the day of our God's vengeance" | BSB | Repository |
+| Tiberius's fifteenth year: AD 28-29 counting from 14; about 26 counting from a co-regency | Chronology studies | Search: Tyndale Bulletin (Tiberius's reign); biblearchaeology.org; galaxie.com (Hoehner) |
+| Pilate stone, Caesarea, found 1961 by Frova's team, "prefect of Judea", now in the Israel Museum | Inscription | Search: bible-history.com; madainproject.com; biblicalarchaeology.org |
+| Lysanias: Josephus's Lysanias put to death about 36 BC; the Abila inscription of a freedman of "Lysanias the tetrarch", most date it to Tiberius's reign, date debated | Inscription; Josephus | Search: en.wikipedia.org Lysanias; biblicaltraining.org; bibleplaces.com. Uncertainty stated |
+| Quirinius governor of Syria in AD 6; Judea under direct rule; Josephus's census; Herod's death 4 BC (most) | Earlier ledger (Mark 12; Matthew's book page) | Earlier ledger |
+| Explanations of 2:2: Luke mistaken; an earlier command (the Tivoli inscription, Lapis Tiburtinus, "a second time", disputed); "before" (protē), found strained by most grammarians; Tertullian (Against Marcion 4.19) and Sentius Saturninus; a count begun under Herod; Luke knows the AD 6 census (Acts 5:37) | Reference works | Search: aaronjudkins.substack.com; psephizo.com "Did Luke get his nativity history wrong?"; tertullian.org; evidenceunseen.com; repository `hard` (Luke 2). Stated as views; Saturninus's years given only as "a few years before Herod died" |
+| 23:34: absent from P75, Vaticanus, Bezae's first hand (and W, 579); present in Sinaiticus as first written (a later corrector marked it); scholars divided; some think removed for anti-Jewish reasons | Manuscript evidence | Search: tyndale.cam.ac.uk (Jongkind); ehrmanblog.org; confessionalbibliology.com; repository `text` |
+| 22:43-44: absent from P75, Vaticanus and others; present in Sinaiticus as first written and Bezae | Manuscript evidence | Search: tyndale.cam.ac.uk; biblehub.com; repository `text` (hard-passage line only) |
+| Nostra Aetate 4 (1965); Acts 4:27 | Earlier ledger (Mark 15, Matthew) | Earlier ledger; BSB |
+| Benedictus at Lauds, Magnificat at Vespers, Nunc Dimittis at Compline (Roman use; Benedict lacked the Nunc Dimittis); BCP: Benedictus at Morning Prayer, Magnificat and Nunc Dimittis at Evening Prayer | Liturgical histories | Search: en.wikipedia.org Canticle; saint-aelfric-customary.org; anglicancompass.com |
+| Irenaeus 3.11.8 gives Luke the calf (Zechariah the priest); Jerome (398), preface to the Commentary on Matthew, the calf "because he began with Zacharias the priest" | Irenaeus; Jerome | Search: bkv.unifr.ch NPNF II/6 and AH 3.11.8; biblicalarchaeology.org "Why the ox"; silouanthompson.net. Paraphrased |
+| Priene inscription (9 BC): Augustus's birthday the beginning of good news; savior | Earlier ledger (Mark) | Earlier ledger; search: en.wikipedia.org Priene calendar inscription |
+| Emmaus: candidates Nicopolis (Imwas, near Latrun; Eusebius's Onomasticon), Abu Ghosh, el-Qubeibeh, Motza; 60 or 160 stadia in the manuscripts | Reference works | Search: biblicalarchaeology.org "The Emmaus Trail"; seetheholyland.net; agapebiblestudy.com. "Placed roughly"; no consensus claimed |
+| Nain identified with the village of Nein on the slope of the hill of Moreh, a few miles from Nazareth | Bible dictionaries | Search: encyclopedia.com Nain; biblehub topical; biblewalks.com |
+| Paradise from an old Persian word for an enclosed garden or park | Etymology | Search: Wikipedia Paradise; iranicaonline.org; encyclopedia.com |
+| Shrewd manager: cut his own commission (Derrett 1970), cut the interest, or cheated again | Commentaries | Search: biblegateway IVP NT commentary; workingpreacher.org; muse.jhu.edu. Used only for the hard-passage line, which names no view |
+| Herod 37 to 4 BC; Antipas 4 BC to AD 39; Pilate 26 to about 36; crucifixion 30 or 33; 70; P75 around 200; Tiberius from 14 | Earlier ledger (Mark, Matthew, John) | Earlier ledger |
+| Map positions | Approximate modern sites; Emmaus and the Samaritan villages are regions, placed roughly and said so | Not a historical claim |
+
+Left out: the anti-Marcionite prologue (Antioch, Boeotia, eighty-four); the
+claim that Cadbury coined "Luke-Acts"; Philip's death in AD 34; the Caiaphas
+bone box; Marcion's date and Gospel; Hobart's count of 400 words; Mommsen,
+Ramsay, Syme, Turner and Brown by name on the census; every scholar named in
+the repository's fuller introduction below and not checked this run; the
+claim that Motza is now the consensus for Emmaus (one popular source only).
