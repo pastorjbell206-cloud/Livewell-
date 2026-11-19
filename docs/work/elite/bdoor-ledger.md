@@ -3742,3 +3742,21 @@ Ehulhul temple; the names Nahur, Sarugi, Til-Turahi; Papyrus Anastasi VI;
 Pharaoh's gifts as a bride-price; the Speiser and Greengus Nuzi argument;
 the Genesis Apocryphon and Jubilees retellings (all from the deep note, not
 checked this run).
+
+## The plain notes on Genesis 13 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/13.json`. No new web search; the
+book page's rows and the repository's deep note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| 12:8 altar between Bethel and Ai; 4:26 calling on the name; 12:16 wealth from Egypt | 1-4 | BSB | Repository |
+| Luke 15:20; Revelation 2:5; Jeremiah 6:16 | 1-4 | BSB | Repository (validator caught two misquotations from memory; corrected to the BSB) |
+| Quarrels over wells (21:25; 26:20); the elder's right to choose first; ‘brothers’ for close kin | 5-13 | Repository deep note (`cultural`); BSB | Repository; stated generally |
+| Sodom's site: south and north of the Dead Sea proposed, no agreement | 5-13 | Book page row | Earlier search |
+| 14:12 Lot living in Sodom; 2 Peter 2:7-8; Ezekiel 16:49; Philippians 2:3; Romans 12:18 | 5-13 | BSB | Repository |
+| Walking the land as a claim, Joshua 1:3; Hebron, Mamre, chapter 23, 2 Samuel 2:4 | 14-18 | Repository deep note; BSB | Repository; "could be a way of showing a claim" |
+| Romans 4:13; Matthew 5:5; Hebrews 11:9-10 | 14-18 | BSB | Repository |
+
+Cut: the Perizzites as ‘villagers’ (deep note, not checked); the kikkar as
+‘circle’.
