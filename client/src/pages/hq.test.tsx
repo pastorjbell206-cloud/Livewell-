@@ -247,6 +247,7 @@ describe("/answers and /answers/:slug", () => {
       "is-hell-forever-or-does-it-end",
       "is-jesus-the-only-way",
       "was-jesus-just-a-good-teacher",
+      "what-about-those-who-never-heard",
       "what-did-the-new-atheists-get-right",
       "what-if-christianity-is-wrong",
       "what-makes-us-human-in-the-age-of-ai",
