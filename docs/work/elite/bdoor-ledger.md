@@ -5618,3 +5618,42 @@ Left out: snakes on Malta today; the exact find-spots of the Publius inscription
 ## Acts complete (2026-11-19)
 
 Acts 1 to 28 in plain words: 165 passages, 95,163 words (fields `happening` to `asks`, counted over all 28 files). Rendered check over all 28 chapters: 165 passages, 716 fields matched.
+
+## The Psalms' book page (teaching introduction, 2026-11-19)
+
+Ten web searches, run 2026-11-19. Scripture is the BSB in the repository,
+checked word for word by `validate-bible-notes.mjs`. Counts of Hebrew words
+are a script over the repository's Strong's numbers in `client/public/bible/ch/psalms/`.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Tehillim "praises"; Greek psalmos a song to a stringed instrument; more laments than hymns | Repository introduction (`overview`) | Standard; not separately searched |
+| Five books; doxologies at 41:13, 72:19 (with 72:20), 89:52, 106:48; Book Five closed by 150 or 146-150; the link to the five books of Moses debated | BSB; enterthebible.org, Asbury Bible Commentary, freely-given.org | Search; BSB text. "These notes leave the question open" |
+| Hebrew counts the heading as verse 1, so 41:13 English is 41:14 Hebrew | Search results citing 41:14 and 89:53 against 41:13 and 89:52 | Search (same as above). Stated as "usually" |
+| Headings: 73 David (usual count), 12 Asaph, 11 sons of Korah, 2 Solomon (72, 127), Moses (90), Heman (88), Ethan (89); about a third name no one | BSB headings counted by script (David 74 hits including one in a heading's wording; Asaph 11 plus 81's capital "Of"; Korah 11) | Script over BSB verse 1. "73 by the usual count" kept from the repository introduction |
+| le-David: "by", "for", "to", "belonging to"; authorship, collection, usage views; headings' authority debated; the Septuagint adds Davidic headings | logos.com "Are the Superscriptions in the Psalms Part of Scripture?"; psalms.scriptura.org "Ledavid"; b-hebrew list; CSB note | Search. Views stated without a side |
+| Asaph and his brothers given a song (1 Chronicles 16:7); the song draws on Psalms 105, 96, 106 | BSB | BSB text compared (16:8 with 105:1; 16:23 with 96:1-2; 16:34-36 with 106:1, 47-48) |
+| David around 1000 BC (usual dating); Jerusalem fell 587 or 586 BC; Cyrus took Babylon 539 BC | Repository introduction; lament guide timeline; wot-ledger Part 7 | Earlier ledgers |
+| Robert Lowth's Oxford lectures, published 1753, parallelismus membrorum; three kinds; later scholars found the third hardly parallelism | jewishencyclopedia.com "Parallelism in Hebrew Poetry"; biblicaltraining.org; Bible Gateway Encyclopedia | Search. "Bishop" cut (not in results) |
+| Acrostics: 9-10 together, 25, 34, 37, 111, 112, 119, 145; some broken; memory aid suggested | tips.translation.bible; psalms.scriptura.org Psalm 9; christadelphianbooks.org | Search. "some with a letter missing or out of place" |
+| Selah 71 times in the Psalms, 3 in Habakkuk 3; meaning unknown | BSB text counted by script (and Strong's H5542 = 71) | Script. The guesses stated as guesses; "ancient translators" line cut |
+| Sheminith "the eighth"; Gittith, Higgaion uncertain | Hebrew word | Standard; meanings left uncertain. The Gath guess cut |
+| Gunkel, Einleitung in die Psalmen, finished by Begrich, 1933; Gunkel died March 1932; royal psalms 2, 18, 20, 21, 45, 72, 101, 110, 132, 144 | psalms.scriptura.org; three-things.ca; Booij, Biblica 96 (2015) | Search. 89 added to the royal list from the repository introduction's reading of 89 as the Davidic covenant psalm |
+| About a third of the psalms are laments; the steps of a lament; Psalm 88 never turns | Lament study guide (glossary, leaderPrimer); Honest Answer "Is it okay to be angry at God?" | Site's own teaching |
+| Songs of ascents 120-134 (headings); pilgrims "many think" | BSB headings; repository introduction | Script; stated as likely |
+| Hallel 113-118 on festivals; daily Psalm 145 and 146-150 in Jewish morning prayer | en.wikipedia.org "Hallel (pesukei dezimra)" | Search. Passover in Jesus' day "probably", per the Mark 14 ledger row |
+| Qumran from 1947; Psalms the best-attested book, counts 36 to about 40; Great Psalms Scroll (11Q5) from Cave 11, different order from about Psalm 90, extra compositions, Hebrew text behind Psalm 151 | apol-ledger (1947); en.wikipedia.org "Great Psalms Scroll"; muse.jhu.edu excerpts; uasvbible.org | Search. Both views of the scroll stated |
+| Psalm 151 in the Septuagint, "outside the number", David and Goliath; canonical for the Eastern Orthodox, not for Catholics, Protestants, most Jews | en.wikipedia.org "Psalm 151" | Search. Paraphrased in single quotes |
+| Numbering: LXX and Vulgate join 9-10, 114-115, split 116, 147; one lower from 10 to 147; 23 is 22 in Douay; recent Catholic translations follow the Hebrew; Orthodox use Greek numbers | en.wikipedia.org "Psalms"; Britannica; oca.org "Septuagint numbering"; dick.wursten.be | Search |
+| Imprecatory readings: Bonhoeffer, Psalms: The Prayer Book of the Bible (1940), leaves judgment to God, ties the prayer to the cross; Zenger's study; Lewis, Reflections on the Psalms (written 1957, published 1958) calls some lines devilish and asks readers to think of what was done to the writers | Duke Scholars (Hamilton); cris.fau.de (Strawn); christianitytoday.com (2025); thegospelcoalition.org (Wax) | Search. All paraphrased. Zenger not named (his "voice of victims" reading not confirmed); the "voice of the oppressed" reading stated without a name |
+| Sheol 16 times in the Psalms; hesed 127; Zion 38; torah 36 | Strong's H7585, H2617, H6726, H8451 in the repository | Script |
+| Psalm 110:1 the Old Testament verse most quoted in the New Testament; Psalms and Isaiah the two most-used books, the order depends on counting | knowableword.com; thegospelcoalition.org; Logos forum count (Isaiah about 419, Psalms about 414) | Search. "more than almost any other Old Testament book" |
+| Rashi on Psalm 2: the rabbis (Berakhot 7b) read it of the King Messiah; the plain sense David; this answers the Christians; Kimchi likewise | mg.alhatorah.org Tehillim 2; sermonindex.net (Whedon, Poole); Mosaic | Search. Paraphrased; the censorship argument not stated; Rashi's dates and place cut |
+| Rule of Benedict 18: all 150 psalms every week | pressbooks.palni.org Rule of Benedict 18; eriebenedictines.org | Search |
+| Augustine's Expositions of the Psalms, about 400, the whole Christ; Bonhoeffer 1940 | Lament study guide (timeline, bibliography) | Site's own teaching |
+| Map: Jerusalem 31.778, 35.235; Jordan 31.84, 35.55; Shechem 32.213, 35.282; Gilead (region) 32.4, 35.82; Tyre 33.27, 35.2 | wmap-ledger.md and earlier book maps | Earlier ledger |
+
+Left out: Athanasius's Letter to Marcellinus (not searched); Zenger by name;
+the date and place of the Septuagint's Psalms; the Gath sense of Gittith;
+Rashi's dates; a count of psalms with no heading at all; "the most quoted
+book" as a flat claim; the five books "matching" the Torah as fact.
