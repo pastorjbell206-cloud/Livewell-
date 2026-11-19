@@ -6005,3 +6005,39 @@ Care: "If you feel forsaken right now and the feeling will not lift ..." with
 Find Help. Cut: Justin Martyr and Tertullian on verse 16, Pesikta Rabbati,
 Bach, Handel, Flint by name, the Givat HaMivtar skeleton (all in the deep
 note; not searched this run).
+
+## The plain notes on Psalm 23 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shepherding hard work in dry country; rod a club, staff for guiding | 1-4 | Repository deep note (cultural) | Site's own teaching |
+| David the shepherd (1 Samuel 17:34-35); "You will shepherd My people" (2 Samuel 5:2) | 1-4 | BSB | BSB text |
+| Kings called themselves shepherds; Hammurabi does so in his law code | 1-4 | en.wikipedia.org "Code of Hammurabi"; intertextual.bible; vision.org "Shepherds of the People"; Cardiff (Johnson) | Search. "In his law code" (prologue or epilogue: sources differ, so neither named) |
+| Tsalmavet: "shadow" + "death", or "deep darkness"; many modern Bibles "darkest valley" or "deep darkness"; the Greek "shadow of death"; the repository's Strong's gloss "deep darkness" | 1-4 | psalms.scriptura.org "The Meaning of צלמות in Psalm 23:4"; biblicaltraining.org; chaimbentorah.com; Strong's H6757 in the repository | Search; repository data |
+| Anointing a guest's head (Luke 7:46) | 5-6 | BSB | BSB text |
+| "Mercy" is hesed (H2617), "follow" is pursue (H7291) | 5-6 | Repository word data for 23:6 | Script |
+| Ezekiel 34:15; Isaiah 40:11; John 10:11; Luke 15:4; Hebrews 13:20; Revelation 7:17; 19:9; John 14:2 | both | BSB | BSB text |
+
+Care: "Grief is not a failure of faith. If your grief has become too heavy to
+carry, please tell someone you trust, a pastor, a friend or a doctor. The Find
+Help page on this site lists places to turn." Cut: the host's duty to protect
+a fugitive guest (the deep note's claim; cut on Psalm 5's run too, not checked).
+
+## The plain notes on Psalm 24 (2026-11-19)
+
+Two web searches (the Mishnah; the Ugarit search shared with Psalm 29).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Mishnah Tamid 7:4: Psalm 24 the Levites' song for the first day of the week | 1-6 | outorah.org "Song of the Day" and Tamid 7:3-4; seforimblog.com; en.wikipedia.org "Shir shel yom" | Search |
+| Ugarit: the storm god Baal fights the sea god Yam and wins kingship | 1-6 | worldhistory.org "Yamm"; obitel-minsk.com "The Bible and the Ugaritic literature"; Christianity Today (1960) | Search. Stated as what the Ugarit poems say, not as a source of the psalm |
+| Entrance psalm like Psalm 15 | 1-6 | Repository deep note (literary, historical) | Site's own teaching |
+| Gates with towers, lintel as head; LORD of Hosts and the ark | 7-10 | Repository deep note (cultural) | Site's own teaching |
+| The ark brought in (2 Samuel 6:15), "many readers"; or a festival procession | 7-10 | Repository deep note (historical); BSB | Both readings stated |
+| 1 Corinthians 10:26; Matthew 5:8; Isaiah 6:3, 5-7; Hebrews 9:24; John 1:14; 1 Corinthians 2:8 | both | BSB | BSB text |
+
+Narrowed: "sung on Ascension Day from early times" (not checked) became "Many
+Christians read verses 7 to 10 of Jesus going up into heaven". Not earning
+God's favour: the hard part points to Psalm 15's note and Hebrews 9:24.
