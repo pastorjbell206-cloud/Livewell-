@@ -51,10 +51,10 @@ describe("Mark's teaching introduction", () => {
     expect(book).toBeLessThan(all);
   });
 
-  it("only the four Gospels have one so far, and every other book's introduction still has the fields its page draws", () => {
+  it("only the four Gospels and Genesis have one so far, and every other book's introduction still has the fields its page draws", () => {
     for (const b of BOOKS) {
       const d: BookIntro = json(`bible/notes/${b.slug}/intro.json`);
-      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke"].includes(b.slug));
+      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke", "genesis"].includes(b.slug));
       expect(typeof d.overview).toBe("string");
     }
   });
@@ -131,6 +131,34 @@ describe("Luke's teaching introduction, from the same parts", () => {
     fireEvent.click(screen.getByRole("button", { name: "Emmaus" }));
     expect(screen.getByRole("link", { name: "Luke 24:13" }).getAttribute("href")).toBe("/study/bible/luke/24#v13");
     expect(screen.getByText(/the two regions are placed roughly/)).toBeTruthy();
+  });
+});
+
+describe("Genesis's teaching introduction, the first Old Testament book", () => {
+  const GENESIS = BOOKS.find((b) => b.slug === "genesis")!;
+  const gn: BookIntro = json("bible/notes/genesis/intro.json");
+
+  it("has its parts on authorship, its neighbors and its readers, its hard passages, and its own Go deeper pages without the Gospel ones", () => {
+    renderWithProviders(<BookTeaching book={GENESIS} teaching={gn.teaching!} />);
+    expect(screen.getByRole("heading", { level: 2, name: "Who wrote it, and how we know" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 2, name: "Genesis and its neighbors" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 2, name: "How Jews and Christians have read it" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Genesis 9:20-27" }).getAttribute("href")).toBe("/study/bible/genesis/9#v25");
+    expect(screen.getByRole("link", { name: "Genesis 3:15" }).getAttribute("href")).toBe("/study/bible/genesis/3#v15");
+    const deeper = document.getElementById("deeper")!;
+    expect(within(deeper).getByRole("link", { name: /How should a Christian read Genesis 1\?/ }).getAttribute("href")).toBe("/answers/how-should-a-christian-read-genesis-1");
+    expect(within(deeper).getByRole("link", { name: /The Old Testament's world/ }).getAttribute("href")).toBe("/resources/context/world/old-testament-world");
+    expect(within(deeper).queryByRole("link", { name: /How to read the Gospels/ })).toBeNull();
+    expect(within(document.getElementById("map")!).getByText(/Ur and Haran to the north-east, and Egypt to the south-west, lie far beyond it/)).toBeTruthy();
+  });
+
+  it("draws Canaan's places only, north to south, with Moriah and the regions placed roughly", () => {
+    renderWithProviders(<BookMap slug="genesis" bookName="Genesis" places={gn.teaching!.map} />);
+    expect(screen.getByRole("img", { name: "A simple map of the places in Genesis, from Dothan in the north to Bethlehem (Ephrath) in the south." })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Moriah" }));
+    expect(screen.getByRole("link", { name: "Genesis 22:2" }).getAttribute("href")).toBe("/study/bible/genesis/22#v2");
+    expect(screen.getByText(/Where exactly is uncertain/)).toBeTruthy();
+    expect(screen.getByText(/the 4 regions are placed roughly/)).toBeTruthy();
   });
 });
 

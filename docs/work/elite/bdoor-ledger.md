@@ -3396,3 +3396,54 @@ Left out: Martin, Snodgrass, Parsons and the SBL Greek New Testament by name;
 claim that the companion was Cleopas's wife; a list of the passages Jesus
 explained (Luke gives none; the examples are marked as what Christians
 "have often pointed to").
+
+## Genesis's book page (teaching introduction, 2026-11-19)
+
+Every historical claim in `client/public/bible/notes/genesis/intro.json`,
+field `teaching`. 20 web searches for the book page, run on 2026-11-19;
+checks rest on search results that quote or summarise the source, read
+against at least two results where possible. Ancient texts are paraphrased.
+Scripture is the BSB in the repository, checked word for word by
+`scripts/validate-bible-notes.mjs`; Hebrew word counts are a script over the
+repository's Hebrew text (Strong's numbers in `client/public/bible/ch/`).
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Genesis names no author; Mark 12:26 "the Book of Moses"; John 5:46; 14:14 "as far as Dan" and Judges 18:29 (Laish); 36:31 kings of Edom "before any king reigned over the Israelites" | BSB | Repository |
+| Astruc, a French physician, 1753, noticed Elohim in Genesis 1 and Jehovah elsewhere and proposed sources (his work was meant to refute Hobbes and Spinoza; not used) | Astruc | Search: newworldencyclopedia.org "Documentary hypothesis"; Wikipedia "Prolegomena zur Geschichte Israels" |
+| Wellhausen: Geschichte Israels 1878; second edition 1883 as Prolegomena zur Geschichte Israels; the classic form of the four-source (J, E, D, P) theory, owed also to Graf and others | Wellhausen | Search: Wikipedia; newworldencyclopedia.org. The page says "classic form", not "founded" |
+| 1970s challenge: Van Seters 1975 (Abraham in History and Tradition), Schmid (Der sogenannte Jahwist), Rendtorff 1977; no agreement on a replacement; a revised neo-documentary view held especially in North America and Israel; supplementary and fragmentary models | Pentateuch scholarship | Search: Wikipedia "Documentary hypothesis"; Themelios "Pentateuchal studies today"; Wenham (biblicalstudies.org.uk). Schmid's year not given on the page |
+| Cassuto, The Documentary Hypothesis: Hebrew 1941, English 1961 (Israel Abrahams, Magnes Press), eight lectures; argued against Wellhausen | Cassuto | Search: Wikipedia "Umberto Cassuto"; Goodreads editions; mmz.vufindnet.de catalogue |
+| P. J. Wiseman, New Discoveries in Babylonia about Genesis (1936): the toledot as tablet colophons; little scholarly acceptance | Wiseman | Search: Wikipedia "Wiseman hypothesis"; biblearchaeology.org; Armstrong Institute |
+| Ten toledot headings (2:4, 5:1, 6:9, 10:1, 11:10, 11:27, 25:12, 25:19, 36:1, 37:2; repeat 36:9); toledot 13 times in Genesis, 39 in the Old Testament | Hebrew text | Repository deep note (Genesis 2); script count; BSB for 36:9 and 37:2 |
+| Exile 597 and 586 BC; Cyrus took Babylon 539 BC; Merneptah stone about 1208 BC names Israel as a people | Earlier ledger (wot-ledger.md) | Earlier ledger |
+| Babel and Babylon the same Hebrew word (Strong's H894: Gen 10:10 "Babylon", 11:9 "Babel") | Lexicon | Repository lexicon |
+| Critical dating of sources tenth to sixth centuries BC and final shaping in the Persian period; traditional dating with the exodus in the 1400s or 1200s | Repository `date` | Repository (the site's existing introduction); stated as views |
+| Enuma Elish: Ashurbanipal's library, 600s BC, older composition; Marduk, Tiamat, Kingu; George Smith published 1876 | Earlier site texts | Site guide genesis-one-in-its-world; Honest Answer on Genesis 1 |
+| Atrahasis: fairly complete Old Babylonian copy about 1650 BC (Ammi-saduqa); gods' labour; a slain god's flesh and blood mixed with clay; noise disturbs Enlil; plague, drought, flood; Enki warns Atrahasis, boat | Atrahasis | Search: newworldencyclopedia.org; livius.org (ANET); cojs.org; Frymer-Kensky essay |
+| Gilgamesh XI: Utnapishtim, boat; dove, swallow, raven (the raven does not return); British Museum K.3375, about 600s BC; George Smith read his translation to the Society of Biblical Archaeology, London, 3 December 1872 | Gilgamesh | Search: cojs.org; historyskills.com; Google Arts and Culture (British Museum record); biblicalarchaeology.org |
+| Genesis 8:6-12 raven then dove; 6:11 "full of violence"; 9:8-17 covenant and rainbow; 9:6 | BSB | Repository |
+| Covenant (berit) 27 times in Genesis; bara 53 in the Old Testament, 11 in Genesis; tselem 17, 5 in Genesis; ezer 21 times (Genesis 2:18, 2:20; most of the rest of God, e.g. Psalm 121:1-2) | Hebrew text | Script over the repository's Strong's numbers |
+| Genesis 15:9-10, 15:17; Jeremiah 34:18 the calf cut in two; self-curse reading | BSB; standard reading | Repository. The Mari donkey parallel was not found and is not used |
+| Ur: Woolley's joint British Museum and Penn Museum excavation 1922 to 1934; patron moon god Nanna (Sin); Sin chief god at Haran; Chaldeans settled by about 850 BC; the anachronism argument and its reply | Ur | Search: Wikipedia "Ur"; Penn Museum Expedition; Bible Gateway Encyclopedia of the Bible "Ur of the Chaldees" |
+| Joshua 24:2 Terah "worshiped other gods"; 23:16 silver weighed | BSB; earlier ledger | Repository |
+| Laws of Hammurabi 144 to 147: a wife (a naditu priestess, barred from bearing) gives a slave to bear children; the slave who claims equality may not be sold (146); Hammurabi about 1754 BC | Laws of Hammurabi | Search: palmerseminary.edu (McDaniel); UCL (Jacobus); timesofisrael blog; date from the site guide torah-and-the-law-codes |
+| Nuzi: fashionable from 1935 to the early 1970s; challenged by Thompson (1974) and Van Seters; tablets later (the 1400s and 1300s; Gordon's minority 14th-century setting); about a dozen of some 4,000 tablets quoted; the household-gods inheritance reading no longer valid for Nuzi | Nuzi scholarship | Search: Themelios (Selman, "Comparative methods and the patriarchal narratives"); Tyndale Bulletin (Selman, "The social environment of the patriarchs"); biblicalelearning.org (Fowler) |
+| Camels: Sapir-Hen and Ben-Yosef, Tel Aviv University, 2013; Aravah; most domesticated camel bones from the last third of the 10th century BC or later; replies (Kitchen; rarity) | Camel study | Search: english.tau.ac.il; eurekalert.org; timesofisrael.com; crossexamined.org |
+| Albright: about 2100 to 1800 BC, Amorite link; Kitchen, BAR 1995 "The Patriarchal Age: Myth or History?"; Thompson 1974 and Van Seters: no convincing second-millennium evidence; Iron Age setting | Patriarchal age debate | Search: Wikipedia "Patriarchal age"; cojs.org (Kitchen); biblicalstudies.org.uk (Bimson) |
+| Exodus 12:40 (430 years); 1 Kings 6:1 (480 years) | BSB | Repository |
+| "Curse of Ham": 9:25 curses Canaan; from about the fifteenth century the curse moved to Ham and tied to Black Africans; quoted by many in the 18th to 20th centuries as a rationale for enslaving people of African descent; Ibn Ezra and Nahmanides on the curse touching only those named, unlinked to dark skin | Goldenberg, The Curse of Ham (Princeton, 2003) and reviews | Search: christiancentury.org (Schlimm); muse.jhu.edu (Shavit review); Wikipedia mirror; repository (race-and-image on Jim Crow) |
+| Sons of God: angels (early interpreters; Job 1:6), Sethite (most fathers from the fourth century; Augustine, after Julius Africanus), rulers | Interpretation history | Search: bibleinterp.arizona.edu; Wikipedia "Sons of God"; crossway.org. Used in the hard-passage line only, no names |
+| Sodom: Bab edh-Dhra (south) and Tall el-Hammam (north, Collins) both proposed; no consensus | Archaeology | Search: biblearchaeology.org (Wood); biblicalarchaeology.org; christiancentury.org |
+| Binding of Isaac read on the second day of Rosh Hashanah in traditional practice | Jewish liturgy | Search: myjewishlearning.com; thetorah.com; bj.org |
+| Origen, Basil, Augustine on the days | Honest Answer on Genesis 1 | Repository (the answer's sources) |
+| The Pentateuch translated into Greek in the early third century BC for Greek-speaking Jews in Egypt | Septuagint | Search: uasvbible.org; intertextual.bible |
+| Map positions | Approximate modern sites (Dothan, Shechem/Tell Balata, Bethel/Beitin, Bethlehem); Moriah, the Jordan plain, the Jabbok and Gilead are regions placed roughly and said so | Not a historical claim |
+
+Left out: the Mari donkey-killing covenant (not found); the number of
+Genesis copies among the Dead Sea Scrolls and their agreement with the later
+text (not confirmed; the timeline entry was cut); Genesis Rabbah, Rashi,
+Ramban and the synagogue's yearly cycle of readings (not confirmed this run);
+Schmid's year; Lambert's date for Enuma Elish; the Sumerian King List; Eden
+as sanctuary (kept for chapter 2, searched there); every scholar in the
+repository's fuller introduction not checked this run.
