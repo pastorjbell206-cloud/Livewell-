@@ -86,13 +86,16 @@ afterEach(() => {
 });
 
 describe("the data", () => {
-  it("has every act of the Bible's story, numbered without a gap, four stops finished", () => {
+  it("has every act of the Bible's story, numbered without a gap, seven stops finished", () => {
     expect(INDEX.stops.map(s => s.n)).toEqual(INDEX.stops.map((_, i) => i + 1));
     expect(new Set(INDEX.stops.map(s => s.act)).size).toBe(11);
     expect(FINISHED.map(s => s.slug)).toEqual([
       "creation",
+      "fall",
       "abraham",
       "rescue",
+      "sinai",
+      "land",
       "cross",
     ]);
     for (const s of INDEX.stops) {
@@ -104,8 +107,11 @@ describe("the data", () => {
   it("gives each finished stop one activity of a kind the page runs", () => {
     expect(FINISHED.map(s => stopFile(s.slug).activity?.kind)).toEqual([
       "tap",
+      "tap",
       "match",
       "order",
+      "walk",
+      "cycle",
       "reveal",
     ]);
   });
@@ -244,6 +250,88 @@ describe("a stop", () => {
     await waitFor(() => expect(stored().done).toContain("creation"));
   });
 
+  it("what broke: each spot names a relationship, shows how God begins to mend it, and all four is done", async () => {
+    renderAt("/study/explorer/fall");
+    const act = stopFile("fall").activity!;
+    if (act.kind !== "tap") throw new Error("fall is a tap activity");
+    await screen.findByRole("heading", { name: act.title });
+    for (const spot of act.spots) {
+      fireEvent.click(screen.getByRole("button", { name: spot.name }));
+      const found = document.querySelector(".ex-found")!;
+      expect(found.textContent).toContain(spot.label!);
+      expect(found.textContent).toContain(spot.mend!);
+    }
+    expect(screen.getByText(act.finish!)).toBeInTheDocument();
+    for (const spot of act.spots)
+      expect(
+        screen.getByText(spot.label!, { selector: ".ex-days b" })
+      ).toBeInTheDocument();
+    await waitFor(() => expect(stored().done).toContain("fall"));
+  });
+
+  it("walk into the tent: Next goes from the gate to the ark in order, each step says where the Bible takes it up", async () => {
+    renderAt("/study/explorer/sinai");
+    const act = stopFile("sinai").activity!;
+    if (act.kind !== "walk") throw new Error("sinai is a walk activity");
+    await screen.findByRole("heading", { name: act.title });
+    expect(act.steps[0].id).toBe("gate");
+    expect(act.steps[act.steps.length - 1].id).toBe("ark");
+    const marks = act.steps.map((st, i) =>
+      screen.getByRole("button", { name: `Step ${i + 1}: ${st.name}` })
+    );
+    expect(screen.getByRole("button", { name: /Back a step/ })).toBeDisabled();
+    fireEvent.click(
+      screen.getByRole("button", { name: `Start: ${act.steps[0].name}` })
+    );
+    act.steps.forEach((st, i) => {
+      expect(
+        screen.getByRole("heading", { level: 3, name: st.name })
+      ).toBeInTheDocument();
+      expect(marks[i]).toHaveAttribute("aria-current", "step");
+      expect(document.querySelector(".ex-walk__later")!.textContent).toContain(
+        st.laterRef.split(";")[0].trim()
+      );
+      if (i < act.steps.length - 1)
+        fireEvent.click(
+          screen.getByRole("button", { name: `Next: ${act.steps[i + 1].name}` })
+        );
+    });
+    expect(screen.getByText(act.finish)).toBeInTheDocument();
+    await waitFor(() => expect(stored().done).toContain("sinai"));
+    // A mark on the picture is a button too: tapping one goes straight there.
+    fireEvent.click(marks[2]);
+    expect(marks[2]).toHaveAttribute("aria-current", "step");
+  });
+
+  it("round and round: Next steps round the judges' circle, round again, and ends with the need for a king", async () => {
+    renderAt("/study/explorer/land");
+    const act = stopFile("land").activity!;
+    if (act.kind !== "cycle") throw new Error("land is a cycle activity");
+    await screen.findByRole("heading", { name: act.title });
+    const items = () =>
+      Array.from(document.querySelectorAll(".ex-wheel__list li"));
+    expect(items()).toHaveLength(act.stages.length);
+    act.stages.forEach((st, i) => {
+      expect(items()[i]).toHaveAttribute("aria-current", "step");
+      expect(
+        screen.getByRole("heading", { level: 3, name: st.name })
+      ).toBeInTheDocument();
+      const next =
+        i < act.stages.length - 1
+          ? `Next: ${act.stages[i + 1].name}`
+          : "Round again";
+      fireEvent.click(screen.getByRole("button", { name: next }));
+    });
+    expect(screen.getByText(act.again.text, { exact: false })).toBeInTheDocument();
+    expect(items()[0]).toHaveAttribute("aria-current", "step");
+    expect(stored()?.done ?? []).not.toContain("land");
+    fireEvent.click(screen.getByRole("button", { name: "Where does it lead?" }));
+    expect(
+      screen.getByRole("heading", { level: 3, name: act.end.title })
+    ).toBeInTheDocument();
+    await waitFor(() => expect(stored().done).toContain("land"));
+  });
+
   it("put in order: moves by buttons, says how many are right, and finishes in the true order", async () => {
     renderAt("/study/explorer/rescue");
     const act = stopFile("rescue").activity!;
@@ -350,6 +438,43 @@ describe("a stop", () => {
     expect(care?.textContent).toBe("Find Help");
     for (const v of s.verses!)
       expect(screen.getByText(v.text)).toBeInTheDocument();
+  });
+
+  it("Next walks every finished stop in order and never links a stop still being drawn", async () => {
+    const drawing = new Set(DRAWING.map(s => s.slug));
+    const chain: string[] = [];
+    let slug: string | null = FINISHED[0].slug;
+    while (slug) {
+      chain.push(slug);
+      renderAt(`/study/explorer/${slug}`);
+      const title = INDEX.stops.find(s => s.slug === slug)!.title;
+      await screen.findByRole("heading", { level: 1, name: title });
+      for (const a of Array.from(document.querySelectorAll("a[href]"))) {
+        const m = a.getAttribute("href")!.match(/^\/study\/explorer\/([a-z0-9-]+)/);
+        if (m) expect(drawing.has(m[1]), `${slug} links ${m[1]}`).toBe(false);
+      }
+      const next = screen.queryByRole("link", { name: /^Next stop: / });
+      slug = next ? next.getAttribute("href")!.split("/").pop()! : null;
+      cleanup();
+    }
+    expect(chain).toEqual(FINISHED.map(s => s.slug));
+  });
+
+  it("shows the older level's care line and question on the three new stops", async () => {
+    window.localStorage.setItem(
+      EXPLORER_PROGRESS_KEY,
+      JSON.stringify({ v: 1, level: "older", visited: [], done: [], last: null })
+    );
+    for (const slug of ["fall", "sinai", "land"]) {
+      const s = stopFile(slug);
+      renderAt(`/study/explorer/${slug}`);
+      await screen.findByRole("heading", { name: "A question people ask" });
+      expect(screen.getByText(s.question!.ask)).toBeInTheDocument();
+      expect(
+        Boolean(document.querySelector(".ex-care a[href='/help']"))
+      ).toBe(Boolean(s.care));
+      cleanup();
+    }
   });
 
   it("says plainly when this browser will not keep the progress", async () => {
