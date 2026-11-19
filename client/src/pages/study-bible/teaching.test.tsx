@@ -63,7 +63,7 @@ describe("Mark's teaching introduction", () => {
 describe("Mark's map", () => {
   it("lists every place as a button, and the card follows the one chosen", () => {
     renderWithProviders(<BookMap slug="mark" bookName="Mark" places={intro.teaching!.map} />);
-    expect(screen.getByRole("img", { name: /A simple map of the places in Mark/ })).toBeTruthy();
+    expect(screen.getByRole("img", { name: "A simple map of the places in Mark, from Sidon in the north to Jerusalem in the south." })).toBeTruthy();
     const list = within(screen.getByRole("list", { name: "Places in Mark" })).getAllByRole("button");
     expect(list).toHaveLength(intro.teaching!.map.length);
     fireEvent.click(screen.getByRole("button", { name: "Caesarea Philippi" }));

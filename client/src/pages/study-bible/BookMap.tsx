@@ -117,14 +117,12 @@ export default function BookMap({
   const isRegion = (p: Place) =>
     p.region ?? (p.id === "decapolis" || p.id === "gerasenes");
   const towns = places.filter(p => !isRegion(p));
-  const north = towns.reduce<Place | undefined>(
-    (a, p) => (!a || p.lat > a.lat ? p : a),
-    undefined
-  );
-  const south = towns.reduce<Place | undefined>(
-    (a, p) => (!a || p.lat < a.lat ? p : a),
-    undefined
-  );
+  // The farthest town each way names the map's reach; towns within about
+  // five kilometres of it count as the same spot, and the one the book lists
+  // first (its main place) is named.
+  const lats = towns.map(p => p.lat);
+  const north = towns.find(p => p.lat > Math.max(...lats) - 0.05);
+  const south = towns.find(p => p.lat < Math.min(...lats) + 0.05);
   const regions = places.length - towns.length;
   const [sel, setSel] = useState<string>(places[0]?.id ?? "");
   const place = places.find(p => p.id === sel) ?? places[0];
