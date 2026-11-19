@@ -4805,3 +4805,28 @@ Baur was not searched); Sergius Paulus inscriptions; Agrippa I as grandson of
 Herod the Great; an exact year for the famine; Festus's year; the length of
 Acts in hours (said "a few hours"); how the church has read Acts (not
 searched, so no such part).
+
+## The plain notes on Acts 1 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/1.json`. 3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Theophilus: patron, believer, symbolic name; "friend of God" | 1-3 | Earlier ledger (Luke's book page) | Earlier ledger |
+| Forty days: Exodus 24:18; 1 Kings 19:8; Luke 4:2; Luke 24:42-43 | 1-3 | BSB | Repository |
+| Samaritans worshipped on their own mountain (John 4:20), kept their own books of Moses | 4-8 | BSB; standard | Repository; the Samaritan temple's history not stated |
+| Restore the kingdom: fulfilled in Christ and the church; a future promise to Israel (3:21; Romans 11:26); both. No claim about any modern state | 4-8 | Deep note `doctrines`; standard positions | Stated as views, no names |
+| Cloud as God's presence; Luke 9:34-35; Daniel 7:13-14; Mark 14:62; 2 Kings 2:9-11; the creeds' "ascended into heaven" | 9-11 | BSB; Luke 24 plain note wording | Repository |
+| Sabbath limit about 2,000 cubits, about one kilometre; set down in the Mishnah (Eruvin 4:3); linked to Numbers 35:5 (and Joshua 3:4) | 12-14 | Mishnah; Bible dictionaries | Search: biblegateway.com Encyclopedia of the Bible; ISBE (biblestudytools.com); chabad.org; Wikipedia "Techum shabbat" |
+| Simon the Zealot: zeal, or a party that belongs to 66 to 70 | 12-14 | Jewish-life portrait | Repository wording |
+| The three readings of Jesus' brothers | 12-14 | Mark 6 plain note | Repository wording |
+| Akeldama: Eusebius's Onomasticon near the Hinnom valley (Tophet); Jerome "south of Mount Sion"; traditional site at the meeting of the Hinnom and Kidron valleys | 15-20 | Eusebius; Jerome | Search: Wikipedia "Akeldama" (Klostermann's edition cited); leonmauldin.blog. "Cannot be known" |
+| Psalm 69:25 "their" made "his" in Acts 1:20; Psalm 109:8; John 2:17 | 15-20 | BSB | Repository |
+| Matthew 27:5-8 and Acts 1:18-19; the two readings (joined; separate memories) | 15-20 | Deep note `hard`; commentaries | Search: biblehub.com and ehrmanblog.org on Acts 1:18 (prēnēs "head first"). The "swelling up" sense not used (not confirmed in a lexicon) |
+| Care line in the Matthew 27 form, with the Find Help page | 15-20 | Matthew 27 and Genesis 23 plain notes | Repository wording |
+| Lots: Proverbs 16:33; Exodus 28:30; Luke 1:9; Luke 22:30; last use in the New Testament; 1 Samuel 16:7 | 21-26 | BSB; deep note `cultural` | Repository |
+
+Left out: Papias on Judas; the "swelling up" reading of prēnēs; ancient
+historians' second-volume prefaces (deep note; not searched); the Mount of
+Olives as the place of the ascension in tradition (Luke says only that they
+returned from it).
