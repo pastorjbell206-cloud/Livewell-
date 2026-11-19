@@ -2060,3 +2060,31 @@ Cut: Augustine's "believe, and you have eaten" (Tractates on John 25.12) was sea
 | 19:38-39 | 45-53 | BSB | BSB text |
 
 Left out: Porphyry and Jerome on 7:8; P66's "the prophet" at 7:52 (not found); b. Sukkah 27b; 1 Enoch 48:6; 4 Ezra 13:52; the Jerusalem Talmud on drawing the Holy Spirit; the willow branches and the shofar; Josephus on the feast as the greatest; Baur, Bultmann, Barrett, Bruce and Carson by name; b. Yoma 85b.
+
+## The plain notes on John 8 (2026-11-19)
+
+`client/public/bible/notes/john/plain/8.json`. 7 web searches. The passages start at 8:1; 7:53 stays in chapter 7's last passage as a pointer.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| The woman's story: not in P66, P75, Sinaiticus, Vaticanus; first Greek copy Codex Bezae (fifth century); placed after 7:36, at the end of John, after Luke 21:38; Jerome kept it and said many Greek and Latin copies had it | 1-11 | Book page | Book page ledger, same wording |
+| Eusebius reports that Papias told a story of a woman accused of many sins before the Lord (Church History 3.39.17); commonly linked to this story; may have differed in detail | 1-11 | Eusebius | Search: bkv.unifr.ch NPNF Eusebius 3.39 and Papias fragments; biblicaltraining.org. Paraphrased |
+| Views: an ancient true story not originally here (common); a few hold it original; some would not preach it as Scripture in the full sense; the Catholic Church accepts it as canonical | 1-11 | NAB note as cited; Akin; catholic.com; Themelios "Text Criticism and the Pulpit" | Search: jimmyakin.com; catholic.com "The Adulteress and the Gospel"; thegospelcoalition.org Themelios 45.2. Trent's "with all their parts" not used (its reach is disputed). No scholar named |
+| Both parties to die (Leviticus 20:10; Deuteronomy 22:22); two or three witnesses, witnesses' hands first (Deuteronomy 17:6-7); Jeremiah 17:13; Exodus 20:14; John 18:31 | 1-11 | BSB | BSB text. Leviticus 20:10 quoted only after its em-dash |
+| What he wrote is unknown; suggestions (the accusers' sins; Jeremiah 17:13; refusal) | 1-11 | Deep note | Stated as suggestions; Jerome not named (not checked) |
+| Mishnah (around 200) lamps in the Court of the Women; uncertain for Jesus' day; the treasury chests probably in that court | 12-20 | Earlier ledger (Sukkah 5:2-4); Easton's; Encyclopedia of the Bible "Treasury" | Search: biblegateway.com Easton "Treasury"; biblegateway Encyclopedia of the Bible "Treasury of the Temple". "Probably" |
+| 5:31 and 8:14 | 12-20 | BSB | BSB text |
+| Egō eimi in 8:24, 28, 58 and 9:9; the BSB supplies "He"; Greek OT echo debated (Exodus 3:14 or Isaiah 43:10) | 21-30, 48-59 | Greek text in the repository; earlier ledger (book page) | Script; earlier ledger |
+| "Lifted up" 3:14, 8:28, 12:32 | 21-30 | Earlier ledger (book page) | Script |
+| "The truth will set you free" carved in the lobby of the CIA's Original Headquarters Building | 31-38 | cia.gov "Bible Quote Carving" | Search: cia.gov/legacy/headquarters/bible-quote-carving. University mottoes not used (not checked) |
+| Exodus 20:2; Leviticus 25:42; Genesis 12:3; Romans 6:17-18; John 14:6 | 31-38 | BSB | BSB text |
+| 8:44 used to call Jews children of the devil; Nazi children's book (Der Giftpilz, Stürmer press, 1938) | 39-47 | German Propaganda Archive (Calvin University) "What Christ Said about the Jews"; relbib.de article "The Jews as 'Children of the Devil' (John 8:44) in Nazi Children's Literature" | Search: research.calvin.edu/german-propaganda-archive/story14.htm; relbib.de. Luther and Origen not named (met only in summaries) |
+| Misuse paragraph in the Mark 15 and Matthew 27 wording; "This site rejects it"; "Never a word against the Jewish people" (book page hard line); Nostra Aetate 4 (1965) "the Jews should not be presented as rejected or accursed by God, as if this followed from the Holy Scriptures" | 39-47 | Earlier ledger (Matthew 21 and 27, Mark 15) | Earlier ledger |
+| Community Rule (1QS): love the sons of light, hate the sons of darkness; Levites curse the men of the lot of Belial; outsiders, fellow Jews included | 39-47 | 1QS 1:9-10; 2:4-5 | Earlier ledger (Matthew 5); search: hts.org.za article; magazine.israelbiblecenter.com "Love and Hate at Qumran"; cojs.org. No column given on the page |
+| Ancient invective conventional between rival groups | 39-47 | Johnson, JBL 108 (1989) 419-441, as summarised | Search: themelios (Motyer); library.biblicalarchaeology.org endnote. Met only in summaries, so Johnson is not named; stated as what scholars of ancient argument note |
+| Isaiah 1:4; Genesis 15:6; Genesis 3:4; Mark 8:33; John 6:70; 1 John 3:8, 10; John 4:22; John 5:19 | 39-47 | BSB | BSB text |
+| 4 Ezra 3:14: God loved Abraham and showed him the end of the times secretly by night; written near the end of the first century | 48-59 | 2 Esdras 3:14 (RSV) | Search: biblestudytools.com RSV; biblia.com; Encyclopedia of the Bible "Second Esdras". Paraphrased, marked as later. Jubilees not used |
+| Exodus 3:14; Psalm 90:2; Isaiah 43:10; 41:4; Deuteronomy 32:39; Leviticus 24:16; Genesis 22:8; Numbers 21:9 | 21-30, 48-59 | BSB | BSB text. Isaiah 41:4 quoted only after its em-dashes |
+| Nicene Creed in the site's older English wording | 48-59 | John 5 plain note | Repository |
+
+Cut: Jerome on what Jesus wrote; the Didascalia; Didymus; Augustine's "misery and mercy"; Trent by name; Luther's On the Jews and Their Lies (met only in summaries); Celsus on 8:41; Josephus on Eleazar at Masada; m. Ketubbot 2:9; Jubilees on Abraham; the Levites' age of fifty; Johns Hopkins; the 8:25 alternative renderings; the New World Translation at 8:58; Luke Timothy Johnson, Reinhartz and Ruether by name.
