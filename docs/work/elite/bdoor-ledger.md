@@ -1199,3 +1199,39 @@ burial; Vörös and the Machaerus excavations; John's tomb at Sebaste and
 Rufinus; Juvenal's baskets; the Mishnah's bread blessing; Bethsaida;
 Chrysostom's two tables (the contrast kept, unattributed); Origen; Giotto's
 Navicella; Moreau; Held; the lectionaries; the date of 2 Maccabees.
+
+## The plain notes on Matthew 15 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/15.json`. Four searches for this
+chapter, with the earlier ledger (Mark 7 and 8).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Priests washed before the altar; the Pharisees' aim of priestly holiness at ordinary meals; the Mishnah around AD 200; Mishnah Nedarim 9:1 | 1-9 | Earlier ledger (Mark 7) | Earlier ledger |
+| Josephus: the Pharisees passed on many observances from their fathers not written in the law of Moses; the Sadducees rejected them | 1-9 | Josephus, Antiquities 13.297 | Search: lexundria.com 13.297 (Whiston); cojs.org. Paraphrased |
+| Matthew does not explain the washing (Mark 7:3-4 does) | 1-9 | BSB comparison; Matthew's book page | BSB text |
+| Hupokritēs first meant a stage actor | 1-9 | Greek lexicons | Search: biblehub.com 5273; merriam-webster.com "The Origin of 'Hypocrite'" |
+| Exodus 20:12; 21:17; Numbers 30:2; Isaiah 29:13; 2 Thessalonians 2:15; Philippians 3:5; Acts 5:34 | 1-9 | BSB | BSB text |
+| Tradition paragraph reused from the Mark 7 note | 1-9 | Mark 7 plain note | Repository |
+| Matthew lacks Mark's "(Thus all foods are clean.)" and ends at handwashing (15:20); two readings of the omission, no side; Acts 10:15; Romans 14:14 | 10-20 | Mark 7:19; Matthew 15:17, 20 | BSB comparison; stated as views, no names (Boyarin, deep note, not named) |
+| Matthew 12:34; Romans 2:19; Jeremiah 17:9; Psalm 51:10; Ezekiel 36:26; Isaiah 60:21 | 10-20 | BSB | BSB text. Isaiah 61:3 not quoted (its BSB text holds an em-dash). Qumran and 1 Enoch on "planting" not used |
+| Tyre and Sidon; dogs in the Bible; kynarion a little or house dog; first to Israel; Genesis 12:3; Romans 1:16 | 21-28 | Earlier ledger (Mark 7) | Earlier ledger; kunarion at 15:26-27 confirmed in the Greek text (G2952) |
+| Matthew: "Canaanite"; Mark: "Greek woman of Syrophoenician origin"; Canaanites among the nations of Deuteronomy 7:1 | 21-28 | Matthew 15:22; Mark 7:26; Deuteronomy 7:1 | BSB text |
+| Only Matthew has the silence, the disciples' request and 15:24; Matthew lacks Mark's "First" | 21-28 | Matthew 15:21-28; Mark 7:27 | BSB comparison |
+| Great faith praised in the centurion (8:10) and the woman; healed "at that very hour" (8:13) | 21-28 | BSB | BSB text |
+| Chrysostom, Homily 52 on Matthew: Jesus held back to bring out and show her faith | 21-28 | Chrysostom | Search: newadvent.org 200152; ccel.org NPNF1 10. Paraphrased; no year given |
+| Augustine, Sermon 77: called a dog, she did not deny it; her humility praised | 21-28 | Augustine | Search: newadvent.org; sermonindex.net; bkv.unifr.ch. Paraphrased |
+| Four readings (test; order of mission, 10:6 and 28:19; real exchange; the diminutive), no side | 21-28 | Standard positions; deep note | Stated as views. Ringe, Dube, Levine, Croy and Luther (deep note) not named |
+| Zarephath of Sidon; the widow's son; Rahab's confession; Rahab in 1:5 | 21-28 | 1 Kings 17:9, 17-24; Joshua 2:11; Matthew 1:5 | BSB text |
+| Cranmer's prayer (1548 Order of the Communion): "not worthy so much as to gather up the crumbs", drawn from this story | 21-28 | Cranmer | Search: livingchurch.org; prayerbook.ca; episcopalchurch.org glossary; en.wikipedia.org Prayer of Humble Access. Given in single quotes as not Scripture; the 1548 text reads "We be not worthy..." |
+| Mark 7:31 places Jesus in the Decapolis; two readings of who the crowd was | 29-31 | BSB; standard positions | Stated as views |
+| Isaiah 35:5-6; Isaiah 25:6 | 29-31, 32-39 | BSB | BSB text; the link to 25:6 given as "many readers" |
+| Spyris (15:37; 16:10) the word of Acts 9:25; Magadan and Dalmanutha unknown; later copies Magdala | 32-39 | Earlier ledger (Mark 8); Greek text (G4711) | Earlier ledger; script |
+| Exodus 16:35; Matthew 16:9-10; "in addition to women and children" (15:38) | 32-39 | BSB | BSB text |
+
+Left out: Josephus, Jewish War 2.162-166; Galatians 1:14; Mishnah Hagigah 2:5,
+Yadayim and Nedarim 5:6; Furstenberg; the Jebel Hallet et-Turi ossuary by
+name; Josephus on the Tyrians (Against Apion 1.70; War 2.478); Theissen;
+Pesikta de-Rav Kahana and Yohanan ben Zakkai; Hilary; Origen; the Didache on
+dogs; Luther's 1525 sermon (not searched); the lectionaries; every textual
+note in the deep note (6, 4, 8, 14, 30-31, 39 beyond Magadan).
