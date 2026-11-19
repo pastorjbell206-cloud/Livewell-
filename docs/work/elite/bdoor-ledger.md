@@ -2358,3 +2358,38 @@ Cut: Ut Unum Sint (1995) and Käsemann (not checked this run); the 1054 date (st
 | Isaiah 53:6, 12 | 39-40 | BSB | BSB text |
 
 Cut: the Humphreys and Waddington astronomy (Nature, 1983); Philo's gilded shields; the aqueduct; y. Sanhedrin 1:1 and Josephus, War 2.117 on the power of the sword; Ananus the younger and James (not needed); the 2009 pavement find; Huxley's Jesting Pilate; the Mishnah on Gentile dwellings; Augustine and other readers on the falling back.
+
+## The plain notes on John 19 (2026-11-19)
+
+`client/public/bible/notes/john/plain/19.json`. 8 web searches. Where Mark 15 and Matthew 27 tell the event, their verified claims and wording are reused word for word: the "Christ-killers" paragraph with Nostra Aetate 4 and Acts 4:27 (Matthew 27 wording, with "This site rejects it"), crucifixion as a Roman punishment, the women who stayed, Joseph and the burial, Yehohanan (pointer), Jewish burial customs (pointer to Mark 16). The day-of-Passover views are the Mark 14 wording. The bereaved-parent care line is the Matthew 2 wording word for word.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Ecce homo (Vulgate 19:5); Iesus Nazarenus Rex Iudaeorum (19:19); INRI | 1-7, 17-22 | Vulgate | Search: blueletterbible.org Vulgate John 19; vulgate.org; ewtn.com "I.N.R.I."; en.wikipedia.org INRI |
+| Leviticus 24:16; 5:18; Isaiah 53:5, 7; 12:12-13; 18:38; 19:4, 6 | 1-7 | BSB | BSB text |
+| Acts 14:11; Daniel 4:17; Psalm 2:2; 7:27-28; 8:14 | 8-12 | BSB | BSB text |
+| "Friend of Caesar" an honor for those the emperor trusted, possibly a formal title (Bammel 1952 as cited); Sejanus's fall in AD 31 and a possible link to Pilate, disputed | 8-12 | NET note; Stone-Campbell Journal study; catholicstand.com; relbib.de "No friend of Caesar" | Search. "Some scholars"; no names on the page |
+| Paradidōmi for Judas (18:2), the priests (18:30, 35), Pilate (19:16), "the one who handed Me over" (19:11) and paredōken (19:30) | 8-12, 28-30 | Greek text in the repository | Script |
+| Views on "the one who handed Me over" (Caiaphas, Judas, all) | 8-12 | Commentaries; deep note | Stated as views |
+| The Antonia pavement laid later than Jesus' day (most archaeologists) | 13-16 | Encyclopedia.com "Praetorium" and the 18:28 search | Search (John 18) |
+| Lambs killed in the afternoon of the day of Preparation; 1:29 | 13-16 | Earlier ledger (Mark 14) | Earlier ledger |
+| The day question (Mark 14 wording, four views, "No answer has won general agreement", "All four Gospels agree ...") | 13-16 | Mark 14 plain note | Repository |
+| The hour (third in Mark 15:25, about the sixth in John 19:14): round figures; hours from midnight (doubted); copyist slip, a few old copies read "third", the best read "sixth" | 13-16 | biblehub.com "Why do John 19:14 and Mark 15:25 differ?"; Barnes's notes (ccel.org); catholic.com "The timing of Jesus' death" | Search. No manuscript named |
+| Judges 8:23; 1 Samuel 8:7; Isaiah 33:22 | 13-16 | BSB | BSB text |
+| 19:15 said by the chief priests (BSB); the "Christ-killers" paragraph; Nostra Aetate 4; Acts 4:27; 1:10 | 13-16 | BSB; Matthew 27 and Mark 15 plain notes; book page | Repository |
+| Mark 15:21 (Simon); Genesis 22:6; Isaiah 52:13; 49:6; 10:18 | 17-22 | BSB | BSB text. The Isaac echo is "many readers" |
+| Josephus, Antiquities 3.161: the high priest's long garment woven in one piece, not of two; the priestly reading of the tunic debated (chitōn the ordinary word) | 23-27 | Josephus (Whiston) | Search: lexundria.com j_aj 3.161; stpaulcenter.com (Lane). Stated as a reading |
+| Psalm 22:18; Exodus 20:12; Luke 2:35 (paraphrased, the BSB has an em-dash); 7:5; 2:4 note | 23-27 | BSB; John 2 plain note | BSB text |
+| Catholic and Orthodox reading of Mary as mother of disciples; Protestant reading as a son's care | 23-27 | Standard positions | Stated generally |
+| Bereaved-parent care line (Matthew 2 wording) | 23-27 | Matthew 2 plain note | Repository |
+| Tetelestai in 19:28 and 19:30 | 28-30 | Greek text in the repository | Script |
+| "Paid in full" receipts: the abbreviation on tax receipts was misread (papyrologists since 1934 read it as tetelōnētai); no ancient use of tetelestai to mean paid in full found | 28-30 | Gary Manning, Biola "Good Book Blog" (2022); catholic.com "Protestants and the paid in full myth" | Search. Doubtful, so NOT used: the page says nothing about receipts |
+| Psalm 69:21; Psalm 22:15; Exodus 12:22; Hebrews 10:10; 17:4; 4:7-14 | 28-30 | BSB | BSB text |
+| Breaking the legs hastened death; how crucifixion killed is debated (asphyxia a 1950s theory among others) | 31-37 | britannica.com crucifixion; library.biblicalarchaeology.org; biblehub.com | Search. Yehohanan's legs not described |
+| Exodus 12:46; Numbers 9:12; Psalm 34:20; Zechariah 12:10; 13:1; Deuteronomy 21:23; 7:38-39; 1 John 5:6; Genesis 2:21-22 | 31-37 | BSB | BSB text. Revelation 1:7 not quoted (em-dash) |
+| Augustine, Tractate 120 on John: the Latin "opened", the side as the door of the sacraments, the church from the side like Eve; Chrysostom on baptism and the mysteries and Eve | 31-37 | Augustine; Chrysostom | Search: newadvent.org 1701120; ccel.org NPNF 1.7; lectionarycentral.com. Paraphrased; Chrysostom's homily number not given (84 or 85 by edition) |
+| A hundred litrai, a litra about 327 grams, about 33 kilograms | 38-42 | NET and translation notes | Search: biblehub.com 19:39; content.bibletranslationtools.org. "Fit for a king" given as "many readers think" |
+| 3:2; 7:50-51; Isaiah 53:9; Matthew 27:57; 2 Chronicles 16:14; 1 Corinthians 15:3-4 | 38-42 | BSB | BSB text |
+| The burial debated (unburied or common graves argued; burial the same day; Yehohanan; Joseph a council member); Paul in the 50s | 38-42 | Earlier ledger (Mark 15, 16) | Earlier ledger. No scholar named |
+
+Cut: the "paid in full" claim (doubtful; the page is silent on it); Cyprian on the seamless tunic and unity (not checked; stated as "many Christians"); Sejanus and Bammel by name; Barbet and the medical theories; Josephus on Herod's funeral spices; the 2009 Gabbatha find; Salome as Mary's sister; Humphreys and Waddington's dates (AD 30 or 33); Crossan by name; the claim that Romans always left bodies on crosses.
