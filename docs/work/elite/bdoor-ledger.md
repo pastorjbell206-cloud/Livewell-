@@ -606,3 +606,34 @@ Blomberg: in the fuller introduction below, not repeated); Annius of Viterbo
 holds; the claim that the 7 BC conjunction is "the strongest match" (only a
 popular almanac says so); a section number for Augustine's Retractations on
 16:18.
+
+## The plain notes on Matthew 1 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/1.json`. Four searches for this
+chapter; the rest rests on the book page's rows above or the BSB text.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Priests had to prove descent | 1-6 | Ezra 2:61-63 | BSB |
+| Son of David and the promise of a lasting throne; all families blessed through Abraham | 1-6 | 2 Samuel 7:12-16; Genesis 12:3 | BSB |
+| Biblos geneseōs in 1:1; the phrase only twice in the Septuagint (Genesis 2:4, 5:1); a "new genesis" reading (Davies and Allison) against the plain "family record" reading | 1-6 | Commentaries | Search: billmounce.com (Carson's note); biblehub ICC Matthew 1; ejournals.bc.edu. Both readings stated |
+| Women rarely named in genealogies; Tamar (Genesis 38), Rahab (Joshua 2), Ruth a Moabite (Ruth 1:4), Bathsheba and Uriah the Hittite (2 Samuel 11) | 1-6 | BSB; repository chapter note (`cultural`) | BSB. Tamar given as "perhaps" an outsider, since Genesis does not say |
+| Judah and the staff; Ruth 4:17-22; 2 Samuel 7:16 | 1-6 | BSB | Repository |
+| Jerusalem destroyed in 587 or 586 BC; no Davidic king after | 7-17 | 2 Kings 25; repository chapter note (`historical`) | BSB and repository |
+| David = d-w-d = fourteen | 7-17 | Book page row above | Search (book page) |
+| Three kings skipped (1 Chronicles 3:11-12); the last group counts thirteen unless one is counted twice | 7-17 | BSB; ehrmanblog.org (book page search) | Count of BSB 1:12-16 |
+| Luke's line, Africanus, Mary's line, royal line | 7-17 | Book page rows above | As above |
+| Jeconiah and Jeremiah 22:30; Haggai 2:23 signet ring; the legal-son answer | 7-17 | BSB; apologetic and dictionary summaries | Search: biblehub.com "Does Matthew 1 contradict Jeremiah 22:30"; thejesusquestion.org; equip.org. Stated as what some answer |
+| Betrothal binding; a betrothed woman freed only by divorce or the husband's death (Mishnah Kiddushin 1:1, written down about AD 200); how far this applied in the first century is debated, so the note leans on Matthew's own words (husband, divorce) | 18-21 | Mishnah Kiddushin 1:1 | Search: jwa.org "Marriage in Halakhic Judaism"; chabad.org Kiddushin; thegemara.com (caution on first-century practice) |
+| Deuteronomy 22:23-24 | 18-21 | BSB | Repository |
+| Jesus = Yeshua, short for Joshua, "the LORD saves"; common name; Josephus names several men called Jesus | 18-21 | Name studies | Search: biblicaltraining.org "Jesus"; aleteia.org; biblehub |
+| Joseph son of Jacob echoes the patriarch | 18-21 | Genesis 37 to 50; Matthew 1:16 | BSB |
+| Psalm 130:8 | 18-21 | BSB | Repository |
+| Matthew and Luke tell the conception independently (Luke 1:26-38) | 18-21 | BSB | Repository; skeptic's objection stated, not answered for the reader |
+| Isaiah 7 and Ahaz, about 735 BC; Isaiah 7:16; 8:10; 9:6; almah and parthenos | 22-25 | Book page rows above; BSB | As above |
+| Mary's perpetual virginity (Catholic, Orthodox) and the brothers read three ways | 22-25 | Earlier ledger, Mark 3:31-35 (Bauckham) | Earlier ledger |
+
+Left out: the twelve months between betrothal and wedding (Mishnah Ketubbot
+5:2; not confirmed this run); Dionysius Exiguus and the year count; the
+Babylonian ration tablets naming Jeconiah (in the deep note below, not
+re-checked); the count of men named Jesus in Josephus.
