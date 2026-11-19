@@ -550,124 +550,263 @@
     ],
     "map": [
       {
-        "id": "dothan",
-        "name": "Dothan",
-        "lat": 32.41,
-        "lon": 35.24,
-        "refs": [
-          "37:17"
-        ],
-        "line": "In the hills north of Shechem. Joseph finds his brothers here with the flocks, and they throw him into a pit and sell him (37:17-28)."
+        "frame": "fertile-crescent",
+        "title": "From Ur to Egypt",
+        "places": [
+          {
+            "id": "ur",
+            "name": "Ur",
+            "lat": 30.962,
+            "lon": 46.103,
+            "refs": [
+              "11:28",
+              "11:31",
+              "15:7"
+            ],
+            "line": "Abraham's family sets out from ‘Ur of the Chaldeans’ (11:28-31). Ur is usually placed at Tell el-Muqayyar in southern Mesopotamia, where it is drawn here; some have proposed a northern Ur near Haran instead.",
+            "label": {
+              "dx": 0,
+              "dy": 22,
+              "anchor": "middle"
+            }
+          },
+          {
+            "id": "haran",
+            "name": "Haran",
+            "lat": 36.865,
+            "lon": 39.031,
+            "refs": [
+              "11:31",
+              "12:4",
+              "27:43",
+              "29:4"
+            ],
+            "line": "Terah's family settles here on the way to Canaan, and Abraham leaves from here at seventy-five (11:31 to 12:4). Jacob later flees here to his uncle Laban and works for him twenty years (chapters 29 to 31).",
+            "label": {
+              "dx": -10,
+              "dy": -2,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "paddan-aram",
+            "name": "Paddan-aram",
+            "lat": 36.35,
+            "lon": 39.2,
+            "refs": [
+              "25:20",
+              "28:2",
+              "31:18"
+            ],
+            "line": "The country around Haran. Rebekah's family lives here, and Jacob is sent here to find a wife (25:20; 28:2). Drawn roughly, near Haran.",
+            "region": true
+          },
+          {
+            "id": "canaan",
+            "name": "Canaan",
+            "lat": 31.8,
+            "lon": 35.1,
+            "refs": [
+              "12:5",
+              "17:8"
+            ],
+            "line": "The land God promises to Abraham and his children (12:5-7; 17:8). The second map below shows it close up.",
+            "region": true,
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "goshen",
+            "name": "Goshen",
+            "lat": 30.6,
+            "lon": 31.75,
+            "refs": [
+              "12:10",
+              "45:10",
+              "47:27"
+            ],
+            "line": "Abraham goes down to Egypt in a famine (12:10). Later Jacob's family settles in Goshen, in Egypt, when Joseph brings them there (45:10; 47:27). Goshen is usually placed in the eastern Nile delta; it is drawn here roughly.",
+            "region": true
+          }
+        ]
       },
       {
-        "id": "shechem",
-        "name": "Shechem",
-        "lat": 32.213,
-        "lon": 35.282,
-        "refs": [
-          "12:6",
-          "33:18",
-          "34:2"
-        ],
-        "line": "Abraham's first stop in Canaan, where God promises the land and Abraham builds an altar (12:6-7). Jacob later camps here, and Dinah is attacked here (chapter 34).",
-        "label": {
-          "dx": -10,
-          "dy": 4,
-          "anchor": "end"
-        }
-      },
-      {
-        "id": "bethel",
-        "name": "Bethel",
-        "lat": 31.93,
-        "lon": 35.22,
-        "refs": [
-          "12:8",
-          "28:19",
-          "35:1"
-        ],
-        "line": "Abraham pitches his tent near here. Jacob dreams of a stairway to heaven and names the place Bethel, ‘house of God’ (28:10-22)."
-      },
-      {
-        "id": "moriah",
-        "name": "Moriah",
-        "lat": 31.778,
-        "lon": 35.235,
-        "refs": [
-          "22:2"
-        ],
-        "line": "‘The land of Moriah’, where Abraham is sent to offer Isaac (22:2). Where exactly is uncertain. 2 Chronicles 3:1 names Mount Moriah as the site of Solomon's temple in Jerusalem, so it is drawn there, roughly.",
-        "region": true,
-        "label": {
-          "dx": 0,
-          "dy": -12,
-          "anchor": "middle"
-        }
-      },
-      {
-        "id": "bethlehem",
-        "name": "Bethlehem",
-        "lat": 31.705,
-        "lon": 35.2,
-        "refs": [
-          "35:19",
-          "48:7"
-        ],
-        "line": "Rachel dies giving birth to Benjamin and is buried ‘on the way to Ephrath (that is, Bethlehem)’ (35:19).",
-        "label": {
-          "dx": -10,
-          "dy": 5,
-          "anchor": "end"
-        }
-      },
-      {
-        "id": "jordan-plain",
-        "name": "The plain of the Jordan",
-        "lat": 31.86,
-        "lon": 35.52,
-        "refs": [
-          "13:10",
-          "19:28"
-        ],
-        "line": "Lot chooses this well-watered plain and settles near Sodom (13:10-12). Where Sodom stood is not known: some place it south of the Dead Sea, below this map; others north of it.",
-        "region": true,
-        "label": {
-          "dx": 10,
-          "dy": 4,
-          "anchor": "start"
-        }
-      },
-      {
-        "id": "peniel",
-        "name": "Peniel",
-        "lat": 32.18,
-        "lon": 35.58,
-        "refs": [
-          "32:22",
-          "32:30"
-        ],
-        "line": "By the ford of the Jabbok, a river that runs down into the Jordan from the east, Jacob wrestles until dawn. He calls the place Peniel, ‘face of God’ (32:22-31). The exact spot is uncertain.",
-        "region": true,
-        "label": {
-          "dx": -10,
-          "dy": 10,
-          "anchor": "end"
-        }
-      },
-      {
-        "id": "gilead",
-        "name": "Gilead",
-        "lat": 32.4,
-        "lon": 35.82,
-        "refs": [
-          "31:21",
-          "31:25"
-        ],
-        "line": "The hill country east of the Jordan. Laban catches up with Jacob here, and they set up a heap of stones as a witness between them (31:21-55).",
-        "region": true
+        "frame": "canaan",
+        "title": "Canaan, close up",
+        "places": [
+          {
+            "id": "dothan",
+            "name": "Dothan",
+            "lat": 32.41,
+            "lon": 35.24,
+            "refs": [
+              "37:17"
+            ],
+            "line": "In the hills north of Shechem. Joseph finds his brothers here with the flocks, and they throw him into a pit and sell him (37:17-28)."
+          },
+          {
+            "id": "shechem",
+            "name": "Shechem",
+            "lat": 32.213,
+            "lon": 35.282,
+            "refs": [
+              "12:6",
+              "33:18",
+              "34:2"
+            ],
+            "line": "Abraham's first stop in Canaan, where God promises the land and Abraham builds an altar (12:6-7). Jacob later camps here, and Dinah is attacked here (chapter 34).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "12:8",
+              "28:19",
+              "35:1"
+            ],
+            "line": "Abraham pitches his tent near here. Jacob dreams of a stairway to heaven and names the place Bethel, ‘house of God’ (28:10-22).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "moriah",
+            "name": "Moriah",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "22:2"
+            ],
+            "line": "‘The land of Moriah’, where Abraham is sent to offer Isaac (22:2). Where exactly is uncertain. 2 Chronicles 3:1 names Mount Moriah as the site of Solomon's temple in Jerusalem, so it is drawn there, roughly.",
+            "region": true,
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethlehem",
+            "name": "Bethlehem",
+            "lat": 31.705,
+            "lon": 35.2,
+            "refs": [
+              "35:19",
+              "48:7"
+            ],
+            "line": "Rachel dies giving birth to Benjamin and is buried ‘on the way to Ephrath (that is, Bethlehem)’ (35:19).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "hebron",
+            "name": "Hebron (Mamre)",
+            "lat": 31.525,
+            "lon": 35.102,
+            "refs": [
+              "13:18",
+              "18:1",
+              "23:2",
+              "23:19"
+            ],
+            "line": "Abraham settles by the oaks of Mamre at Hebron (13:18), where three visitors come to him (chapter 18). He buys a cave here to bury Sarah (chapter 23). Mamre is usually placed just north of the town.",
+            "label": {
+              "dx": -14,
+              "dy": 24,
+              "anchor": "middle"
+            }
+          },
+          {
+            "id": "beersheba",
+            "name": "Beersheba",
+            "lat": 31.245,
+            "lon": 34.84,
+            "refs": [
+              "21:31",
+              "26:23",
+              "28:10",
+              "46:1"
+            ],
+            "line": "Abraham digs a well and swears an oath with Abimelech here (21:22-33). Isaac lives here, and Jacob sets out from here for Haran (28:10)."
+          },
+          {
+            "id": "jordan-plain",
+            "name": "The plain of the Jordan",
+            "lat": 31.86,
+            "lon": 35.52,
+            "refs": [
+              "13:10",
+              "19:28"
+            ],
+            "line": "Lot chooses this well-watered plain and settles near Sodom (13:10-12). Where Sodom stood is not known: some place it south of the Dead Sea; others north of it.",
+            "region": true,
+            "label": {
+              "dx": 10,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "sodom",
+            "name": "Sodom",
+            "lat": 31.2,
+            "lon": 35.49,
+            "refs": [
+              "13:12",
+              "19:24",
+              "19:28"
+            ],
+            "line": "The city Lot settles near (13:12), destroyed in chapter 19. Where it stood is not known. It is drawn at the south end of the Dead Sea, one of the places proposed, roughly.",
+            "region": true
+          },
+          {
+            "id": "peniel",
+            "name": "Peniel",
+            "lat": 32.18,
+            "lon": 35.58,
+            "refs": [
+              "32:22",
+              "32:30"
+            ],
+            "line": "By the ford of the Jabbok, a river that runs down into the Jordan from the east, Jacob wrestles until dawn. He calls the place Peniel, ‘face of God’ (32:22-31). The exact spot is uncertain.",
+            "region": true,
+            "label": {
+              "dx": 10,
+              "dy": 5,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "31:21",
+              "31:25"
+            ],
+            "line": "The hill country east of the Jordan. Laban catches up with Jacob here, and they set up a heap of stones as a witness between them (31:21-55).",
+            "region": true
+          }
+        ]
       }
     ],
-    "mapNote": "This map is drawn for the middle of the land. Hebron and Mamre, Beersheba and the Negev, where Abraham and Isaac spent many years, lie just south of its edge. Ur and Haran to the north-east, and Egypt to the south-west, lie far beyond it.",
+    "mapNote": "Two maps. The first follows the family from Ur and Haran to Canaan and down to Egypt. The second shows Canaan close up, where most of the story happens.",
     "deeper": [
       {
         "href": "/answers/how-should-a-christian-read-genesis-1",

@@ -43,22 +43,55 @@ export interface BookTeaching {
   hard: { ch: number; v: number; ref: string; line: string }[];
   words: { word: string; line: string }[];
   timeline: { when: string; what: string; kind: "world" | "story" | "book" }[];
-  map: {
-    id: string;
-    name: string;
-    lat: number;
-    lon: number;
-    refs: string[];
-    line: string;
-    /** A region rather than a town: drawn as a dashed ring, placed roughly. */
-    region?: boolean;
-    /** Where the name sits beside its mark, when the default would collide. */
-    label?: { dx: number; dy: number; anchor: "start" | "end" | "middle" };
-  }[];
+  /**
+   * The book's map: a list of places, drawn on the default frame ("israel",
+   * the land of Jesus' day); or one or more maps, each naming its own frame
+   * and a short title (Genesis: the long journey, then Canaan close up).
+   */
+  map: MapPlace[] | BookMapData[];
   /** Optional: a line shown above the map, for what the drawing cannot show (places off its frame). */
   mapNote?: string;
   /** Optional: pages on the site for this book, shown after the shared "Go deeper" list. */
   deeper?: { href: string; name: string; line: string; icon?: "people" | "world" | "scroll" | "book" }[];
+}
+
+/** A place on a book's map, set by its modern coordinates. */
+export interface MapPlace {
+  id: string;
+  name: string;
+  lat: number;
+  lon: number;
+  refs: string[];
+  line: string;
+  /** A region rather than a town: drawn as a dashed ring, placed roughly. */
+  region?: boolean;
+  /** Where the name sits beside its mark, when the default would collide. */
+  label?: { dx: number; dy: number; anchor: "start" | "end" | "middle" };
+}
+
+/**
+ * The stretch of the world a map can show, in degrees. "israel" is the old
+ * fixed frame and stays the default; scripts/validate-bible-notes.mjs keeps
+ * the same numbers (teaching.test.tsx checks they agree).
+ */
+export const MAP_FRAMES = {
+  israel: { west: 34.45, east: 36.3, north: 33.68, south: 31.6 },
+  canaan: { west: 34.0, east: 36.4, north: 33.7, south: 30.8 },
+  "fertile-crescent": { west: 29, east: 49, north: 38, south: 28 },
+} as const;
+export type MapFrameId = keyof typeof MAP_FRAMES;
+
+/** One map of a book: its frame, a short title, and its places. */
+export interface BookMapData {
+  frame: MapFrameId;
+  title: string;
+  places: MapPlace[];
+}
+
+/** A book's maps, whichever way its data gives them: a bare list of places is one map on the default frame. */
+export function bookMaps(map: BookTeaching["map"]): BookMapData[] {
+  if (map.length && "places" in map[0]) return map as BookMapData[];
+  return [{ frame: "israel", title: "", places: map as MapPlace[] }];
 }
 
 /** One passage of a chapter in plain words (notes/<slug>/plain/<n>.json). */

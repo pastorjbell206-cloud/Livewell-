@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 import { chapterHref, type BibleBook } from "@/lib/bible";
-import type { BookTeaching as Teaching } from "@/lib/bible-notes";
+import { bookMaps, type BookTeaching as Teaching } from "@/lib/bible-notes";
 import { useNear } from "@/components/art/useNear";
 import IconTile from "@/components/art/IconTile";
 import { Band, H2, Prose, kicker } from "./shared";
@@ -49,7 +49,13 @@ function MapSlot({
 }) {
   const [ref, near] = useNear<HTMLDivElement>();
   return (
-    <div ref={ref} className="bk-map-hold">
+    <div
+      ref={ref}
+      className="bk-map-hold"
+      data-frames={bookMaps(places)
+        .map(m => m.frame)
+        .join(" ")}
+    >
       {near && (
         <Suspense fallback={null}>
           <BookMap slug={slug} bookName={bookName} places={places} />
