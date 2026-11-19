@@ -6165,3 +6165,43 @@ No web search.
 | 22 verses, not an alphabet poem | First Hebrew letters of 33 in the repository | Script |
 | Ruach breath, wind, Spirit | Standard | Site's own teaching |
 | Genesis 1:3; John 1:3; Hebrews 11:3; Revelation 5:9 | BSB | BSB text |
+
+## The plain notes on Psalm 34 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| David at Gath feigning madness; the king there is Achish (1 Samuel 21:10-13); Abimelech a title (Genesis 20, 26) or a slip in a later note | 1-10 | BSB; repository deep note (historical) | BSB text; both views stated |
+| Alphabet poem: no vav, extra last verse with pe | 1-10 | First Hebrew letters in the repository | Script |
+| The angel of the LORD speaking as God (Exodus 3:2-6) | 1-10 | BSB; repository deep note (cultural) | BSB text |
+| 1 Peter 2:3; Hebrews 1:14; 2 Kings 6:17 | 1-10 | BSB | BSB text |
+| 1 Peter 3:10-12 quotes 34:12-16; Matthew 5:4, 9 | 11-22 | BSB | BSB text |
+| John 19:36: Psalm 34:20, or the Passover law (Exodus 12:46; Numbers 9:12), or both | 11-22 | BSB | BSB text; the readings stated, none chosen |
+
+Hard (34:10): believers do go hungry; the psalm is thanks and teaching, not
+a contract; points to Psalms 37 and 73.
+
+## The plain notes on Psalm 35 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Contend" a legal word; battle and court | Repository deep note (cultural) | Site's own teaching |
+| The false witness punished (Deuteronomy 19:18-19) | BSB; repository deep note (historical) | BSB text |
+| John 15:25 from 35:19 or 69:4; Matthew 26:59-60; Matthew 5:44 | BSB | BSB text |
+
+Cursing lines: pointing to the book page, and "No reading of this psalm
+makes it right to harm anyone."
+
+## The plain notes on Psalm 36 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The servant of the LORD" in a heading only here and in Psalm 18 | BSB headings | Read in the BSB text |
+| "Oracle" a prophet's word; 36:1 hard Hebrew, translations differ | Repository deep note (cultural) | Site's own teaching |
+| River of delights "may recall Eden" | Common reading | Stated as "may" |
+| Romans 3:18; John 4:14; Revelation 22:1 | BSB | BSB text |
