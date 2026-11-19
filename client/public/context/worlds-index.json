@@ -1,6 +1,14 @@
 {
   "worlds": [
     {
+      "id": "honor-and-shame",
+      "title": "Honor and shame",
+      "seoTitle": "Honor and Shame in the Bible's World: What It Was Really Like",
+      "group": "Honor, Shame, and Culture",
+      "blurb": "A long, sourced portrait of the values the Bible's first readers lived by: honor as a public verdict, challenge and envy, kin before self, gift and gratitude, the table and the guest, men and women in public, shame and vindication in Israel's Scriptures, and the cross that turned the scale over.",
+      "parts": 8
+    },
+    {
       "id": "jewish-life-in-jesus-day",
       "title": "Jewish life in Jesus's day",
       "seoTitle": "Jewish Life in Jesus's Day: What It Was Really Like",
