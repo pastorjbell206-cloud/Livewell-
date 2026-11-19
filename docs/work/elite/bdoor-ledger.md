@@ -6511,3 +6511,43 @@ No web search.
 | Wings of a mother bird; Ruth 2:12 | Repository deep note; BSB | BSB text |
 | 57:7-11 nearly the same as 108:1-5 | BSB compared | BSB text |
 | Matthew 23:37; Romans 12:19 | BSB | BSB text |
+
+## The plain notes on Psalm 58 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Judges forbidden bribes (Deuteronomy 16:19); corrupt courts a breach of covenant | 1-5 | BSB; repository deep note | BSB text |
+| 58:1 Hebrew reads elem "silence" (H0482); many revise a vowel to elim; BSB "rulers"; human judges or unseen powers (Psalm 82) | 1-5 | Repository word data; repository deep note (historical) | Script; stated as views |
+| Snake charming known in the ancient world | 1-5 | Repository deep note (cultural); Ecclesiastes 10:11 | Site's own teaching |
+| 58:9 among the hardest lines to translate; pot and thorns | 6-11 | Repository deep note (cultural) | Site's own teaching; 58:9 has em-dashes and is not quoted |
+| Feet in blood a battlefield image of total victory | 6-11 | Repository deep note (`hard`) | Site's own teaching |
+| The four readings of the cursing psalms, "no reading ... has ever made it right to harm anyone" | 6-11 | Book page ("The cursing psalms"; `teaching.hard` lists 58:10) | Site's own teaching, restated without names |
+| Amos 5:24; Luke 18:7; Revelation 6:10; 19:2; Matthew 5:44; Romans 12:19 | all | BSB | BSB text |
+
+Care line for a parent who lost a baby (58:8). The text is quoted, not softened.
+
+## The plain notes on Psalm 59 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 1 Samuel 19:11-12, Michal and the window | BSB | BSB text |
+| Half-wild town dogs; "dogs" an insult | Repository deep note (cultural) | Site's own teaching |
+| "All the nations": a later royal setting (some scholars) or David as anointed heir | Repository deep note (historical) | Stated as views |
+| Two readings of 59:11 and 59:13 | Repository deep note (`hard`) | Stated as views |
+| Acts 9:24-25; 2 Corinthians 11:33 | BSB | BSB text |
+
+## The plain notes on Psalm 60 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Heading: 12,000 (Joab); 2 Samuel 8:13 18,000 (David); 1 Chronicles 18:12 18,000 (Abishai); three explanations, none certain | BSB; repository deep note (`hard`) | BSB text. The Aram/Edom reading at 2 Samuel 8:13 not discussed |
+| Defeat in the psalm, victory in the heading: two readings | Repository deep note (`hard`) | Stated as views |
+| Shechem and Succoth (Genesis 33:17-18); Judah's scepter (Genesis 49:10); washbasin; sandal and land (Ruth 4:7), "may mean" | Repository deep note (cultural); BSB | BSB text |
+| 60:5-12 nearly the same as 108:6-13 | BSB compared | BSB text |
+| 2 Corinthians 12:9 | BSB | BSB text |
