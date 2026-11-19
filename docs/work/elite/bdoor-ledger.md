@@ -3942,3 +3942,31 @@ chapter, with the deep note and the Genesis 12 plain note.
 
 Cut: the Psalm 34 heading and Achish (not needed); Sarah's body renewed for
 childbearing (the deep note says the text does not say so).
+
+## The plain notes on Genesis 21 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/21.json`. Four web searches for
+this chapter, with the deep note, the Genesis 16 plain note and its ledger
+rows.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Twenty-five years from 12:4 to 21:5; ‘attended to’ (paqad) and 50:24; Isaac ‘he laughs’; 17:17; 18:12; circumcision on the eighth day (17:12) | 1-7 | BSB; repository deep note (`words`) | Repository |
+| Luke 1:37; Psalm 126:2; Galatians 4:28 | 1-7 | BSB | Repository |
+| Care line, word for word from the Genesis 18 plain note (itself from Luke 1), opening adapted "A word of care. Sarah's story ends in joy, with a son in her old age." | 1-7 | Site | Repository (grep -F) |
+| Weaning at two or three years; 2 Maccabees 7:27 (three years); a feast at weaning | 8-13 | Encyclopedia of the Bible "Wean"; Reformation Study Bible note on 1 Samuel 1:22; 2 Maccabees 7:27 | Search: biblegateway.com resources; biblehub.com catholic 2 Maccabees 7:27. Paraphrased |
+| Ishmael thirteen at circumcision (17:25), about sixteen at the weaning | 8-13 | BSB arithmetic (17:24-25; 21:5) | Repository |
+| ‘Mocking’ from tsachaq (Isaac's root), read as mocking or playing | 8-13 | Repository deep note (`literary`) | Repository; two readings, no side |
+| Laws of Hammurabi 170-171: acknowledged sons of a slave woman share the inheritance; if not acknowledged, after the father's death the woman and children go free | 8-13 | Repository deep note (`cultural`); secondary summaries | Search: Wikipedia "Babylonian law"; historyrise.com; Avalon Project named as the full text (not opened). Said "The parallel is not exact"; the freedom point said as "some readers point out ... That may be so" |
+| Galatians 4:30; Romans 9:7; Hebrews 11:18; the Galatians picture pointed back to the 16:13-16 note | 8-13 | BSB; site | Repository |
+| A skin of water; Ishmael's age and verse 14 (two readings); ‘boy’ a wide range; Ishmael ‘God hears’ (16:11); echo of chapter 16 and of chapter 22 (22:3, 11); Paran in north-eastern Sinai | 14-21 | Repository deep note (`hard`, `literary`, `historical`); BSB | Repository |
+| Psalm 34:6; Genesis 25:9, 16 | 14-21 | BSB | Repository |
+| Muslim tradition: Abraham brings Hajar and Ismail to the valley of Mecca; in al-Bukhari's account (Prophets, the Ibn Abbas narration) Hajar asks whether God commanded it and, told yes, trusts God will not neglect them; Zamzam | 14-21 | Sahih al-Bukhari 3364-3365 | Search: sunnah.com bukhari 60/38-39 (3364, 3365); islamqa.info 11069. Paraphrased; earlier ledger row (Genesis 16) for Safa, Marwa, Zamzam |
+| Care line for a parent or child sent away (new wording; Find Help) | 14-21 | Site | Not a historical claim |
+| Beersheba in the northern Negev; wells; seven and oath sound alike; seven lambs as witness; tamarisk; El Olam | 22-34 | Repository deep note (`cultural`, `words`) | Repository |
+| Philistines settled on the southern coast in the 1100s BC; three explanations of 21:32-34 | 22-34 | Repository deep note (`historical`); Katzenstein (Anchor Bible Dictionary) and Kitchen as quoted; Finkelstein as quoted | Search: biblearchaeology.org "The Genesis Philistines"; armstronginstitute.org. No side |
+| Genesis 26:24-25; Judges 20:1; Isaiah 40:28 | 22-34 | BSB | Repository |
+
+Cut: Tel Beersheba and Aharoni's 1969 dig (not needed); the Minoan graffito
+at Gerar (apologetic sources only); a figure for a bowshot; "El Olam found
+only here in Genesis" (not checked).
