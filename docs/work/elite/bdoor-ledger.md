@@ -6081,3 +6081,44 @@ No web search.
 27:1 carries two em-dashes in the BSB: quoted in four pieces. Care: verse 10,
 for readers whose parents left or hurt them; someone trusted, a counsellor,
 Find Help.
+
+## The plain notes on Psalm 28 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The Pit (bor) a cistern, in poetry the grave; hands raised toward the inner sanctuary | Repository deep note (cultural) | Site's own teaching |
+| A priest's word between verses 5 and 6, or a change in prayer | Repository deep note (historical) | Two readings |
+| 1 Kings 8:30; 1 Timothy 2:8; Matthew 7:15; Isaiah 40:11 | BSB | BSB text |
+
+Verse 4: one sentence pointing to the book page's cursing psalms part.
+
+## The plain notes on Psalm 29 (2026-11-19)
+
+One web search (shared with Psalm 24).
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The voice of the LORD" seven times | BSB | Count by hand |
+| Sirion is Hermon (Deuteronomy 3:9) | BSB | BSB text |
+| "Heavenly beings" is "sons of God(s)" | Repository deep note (cultural); Psalm 8 row on elohim | Site's own teaching |
+| Ugarit poems: Baal's voice is thunder, rider on the clouds, conflict with the sea; scholars compare Psalm 29; some think its words for Baal were given to the LORD | obitel-minsk.com; christianitytoday.com (1960) "Prophets and Canaanites"; intertextual.bible; Mark Smith (2014) as summarised | Search. Stated as a comparison, "not something the psalm says" |
+| Mabbul only in Genesis 6 to 11 and Psalm 29:10 | Strong's H3999 counted over the repository's Hebrew | Script |
+| Baal and rain, 1 Kings 18 | BSB; repository deep note | BSB text |
+| John 12:28-29; Matthew 8:26-27; Luke 2:14 ("some readers hear it") | BSB | BSB text |
+
+Cut: the date Ugarit was found (1929 in the deep note; not searched).
+
+## The plain notes on Psalm 30 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The heading's puzzle: David's palace; the temple site (1 Chronicles 22:1); a later use. Left open | Repository deep note (historical); BSB | Three readings stated |
+| Sackcloth of goat hair worn in grief; dancing in public joy | Repository deep note (cultural) | Site's own teaching |
+| John 16:20; Luke 6:21; 2 Corinthians 4:17; Revelation 21:4 | BSB | BSB text |
+
+Hard: "joy comes in the morning" not a promise that grief is short; points
+to Psalm 6.
