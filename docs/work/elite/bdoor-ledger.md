@@ -5470,3 +5470,29 @@ Left out: Gamaliel as Hillel's grandson; Paul's family from Gischala (Jerome); t
 | Mark 13:9; Luke 21:12; Psalm 119:46; 1 Samuel 19:11-12 | 31-35 | BSB | Repository |
 
 Left out: the Quadratus trial; Ananias's ten years in Josephus versus other counts; "dexiolaboi" (spearmen) and its uncertain meaning; the forum domicilii rule and Cilicia's place in Syria (not verified); Antipatris named for Herod's father; the length of Felix's term (Acts 24).
+
+## The plain notes on Acts 24 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/24.json`. 5 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tertullus a hired speaker; the usual pattern (praise, brevity, charges); flattery with a little truth; charges framed for Roman ears | 1-9 | Deep note `cultural`, `historical` | Repository; stated generally |
+| The temple charge: the barrier notices warned foreigners of death | 1-9 | Jewish-life portrait part 3 | worlds-ledger |
+| Verses 6b-8a (verse 7) missing from the earliest manuscripts (P74, Sinaiticus, Alexandrinus, Vaticanus); found in later, mostly Byzantine copies; most modern Bibles omit or footnote | 1-9 | Textual apparatus as summarised | Search: uasvbible.org "Why Has Acts 24:6-8 Been Removed"; biblehub.com "Why omit Acts 24:7"; bibleref.com Acts 24:7. Manuscripts not named on the page |
+| "The Jews" at 24:9, 24:18-19 and 24:27 in the 13:42-47 form with pointers | 1-9, 17-21, 27 | acts/plain/13.json | Repository |
+| Proverbs 29:5; Psalm 12:2; Deuteronomy 19:15, 17; 15:11 | 1-9, 17-21 | BSB | Repository |
+| Twelve days; the Way; "sect"; the Law and the Prophets; resurrection of righteous and wicked; Daniel 12:2; Ecclesiastes 12:14; Exodus 3:15 | 10-16 | BSB; Jewish-life portrait (resurrection hope) | Repository |
+| The collection (Romans 15:25-28; 1 Corinthians 16:1-4), only here in Acts; ceremonially clean (21:26); the Roman custom of facing accusers (25:16) | 17-21 | Deep note `cultural`; BSB | Repository |
+| Felix well informed; believers in Caesarea (21:8-9; Acts 10); lighter custody with friends allowed; "we" resumes at 27:1, so Luke "may" have been among the friends | 22-23 | BSB | Repository; stated as possible |
+| Habakkuk 1:2; Deuteronomy 16:19; Genesis 39:21 | 22-23 | BSB | Repository |
+| Felix a former slave, freed with his brother Pallas, who rose at court; Tacitus suggests Felix was shielded by Pallas (Annals 12.54); Tacitus's verdict that he used a king's power with a slave's mind, given to cruelty and lust (Histories 5.9), paraphrased | 24-26 | Tacitus | Search: classicalwisdom.com Annals XII; wikipedia "Pallas (freedman)"; biblicaltraining.org "Antonius Felix"; cojs.org Histories 5.9; Smith's Dictionary (Perseus) Latin "jus regium servili ingenio exercuit". Paraphrased, not quoted |
+| Josephus on Felix's harsh rule against bandits and rebels, and that he arranged the murder of the former high priest Jonathan (Antiquities 20.162-164, as cited) | 24-26 | Josephus | Search: wikipedia "Antonius Felix" (archived); deep note `historical`. Paraphrased; Jonathan's criticism of Felix not given (not confirmed) |
+| Drusilla youngest daughter of Agrippa I, sister of Agrippa II and Bernice; married to Azizus king of Emesa, left him for Felix | 24-26 | Josephus, Antiquities 20.141-143 | Search: lexundria.com Antiquities 20.137-147 (Whiston); jewishencyclopedia.com; wikipedia "Drusilla (daughter of Agrippa I)". The Cypriot magician not used |
+| 2 Samuel 12:7; Exodus 23:8; Micah 6:8 | 24-26 | BSB | Repository |
+| Festus's arrival: most scholars between about AD 58 and 60, some a few years earlier (about 55 or 56) | 27 | Reference works | Search: en.wikipedia.org "Porcius Festus"; biblestudytools ISBE "Festus, Porcius"; biblegateway Encyclopedia of the Bible. The coin argument not given |
+| Two years read as Paul's custody; the delay not explained; prison letters from Caesarea suggested by some, most place them in Rome or Ephesus | 27 | Deep note `hard`, `historical` | Repository; stated as views |
+| Genesis 41:1; Psalm 13:1; 31:15 | 27 | BSB | Repository |
+| Care line for those kept waiting by an unjust system, Acts 12 form, Find Help | 27 | CLAUDE.md, care for the reader | Pastoral |
+
+Left out: the Cypriot magician; Felix's term dates; the claim that releasing prisoners for money was common (not checked); Drusilla's age and her son's death at Vesuvius; Felix's recall and the complaints against him; the Nazarenes as a later Jewish name for Christians.
