@@ -1185,3 +1185,192 @@ Alexandra's dates (not given).
 ### Next
 
 Matthew 17 onward, in the same shape.
+
+## Continuation: Matthew 17 to 20 (2026-11-19)
+
+The mountain and the valley, the temple tax, life together in the church,
+divorce, singleness, the rich young man, the vineyard workers, the request
+for thrones and the blind men at Jericho, passage by passage, in plain words,
+in the same data shape (`client/public/bible/notes/matthew/plain/17.json` to
+`20.json`; each chapter note now says `"plain": true`). Data only; no page
+code changed, so no build, Lighthouse or screenshots were run.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 17 | 5 (the glory on the mountain; Elijah has already come; a boy with seizures and the mustard seed, with the empty verse 21; the second warning; the temple tax and the coin in the fish) | 2,932 |
+| Matthew 18 | 6 (become like a child; causing a little one to stumble; the sheep that wanders, with the empty verse 11; tell it to the church; two or three in My name; seventy-seven times and the unforgiving servant) | 3,880 |
+| Matthew 19 | 6 (divorce; those who do not marry, for the kingdom; the children; the young man; the camel and the needle; the first and the last) | 3,723 |
+| Matthew 20 | 5 (the workers hired through the day; paid the same; the third warning; the mother of James and John and the ransom; two blind men) | 3,085 |
+| Total | 22 | 13,620 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. Where
+Mark 9 and 10 already tell the event, the notes point to them, reuse their
+verified claims and care wording, and say what Matthew does differently:
+the face like the sun, "in whom I am well pleased", the touch and "Do not be
+afraid"; the disciples understanding about John; selēniazomai and 4:24; the
+second warning met with grief, not confusion; the question asked outright;
+"goes astray" and "if he finds it"; "for any reason", "ordered" against
+"permitted", the exception; the eunuch saying; "what good thing", "young",
+"love your neighbor", teleios; "kingdom of God" at 19:24; the twelve thrones;
+crucifixion named; the mother's request; compassion, touch and two men.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and checked by
+eye: all 22 are under their right headings (what is happening; the first
+hearers; the Old Testament behind it; the hard verse; what it asks), and the
+validator's Old Testament field check passed with no exceptions.
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "The plain notes on Matthew 17" to
+"20". 31 web searches (7, 8, 8, 8). New sources: Josephus, Jewish War 7.218
+(Vespasian's two drachmas to the Capitol) and Antiquities 18.311-313
+(Nehardea and Nisibis) and 17.318 (Antipas's two hundred talents) and 4.253
+("for any cause whatsoever", Whiston); Mishnah Shekalim 1:3, Avot 2:9 and 3:2;
+b. Yoma 86b; y. Berakhot 2:8; selēniazomai; the omission of 17:21 and 18:11
+in Sinaiticus and Vaticanus; the harmonized "Good Teacher" in later copies of
+19:17; hebdomēkontakis hepta and Genesis 4:24 in Greek; the talent at about
+six thousand denarii; the Community Rule on reproof; Herodotus 3.41-42
+(Polycrates); Chrysostom, Homily 58 on Matthew; Justin, First Apology 29;
+Nicaea, canon 1; Catechism 1579-1580; the Augsburg Confession, article 23;
+Tacitus, Annals 1.17; Gregory the Great, Homily 19 (591); Amy-Jill Levine,
+Short Stories by Jesus; Augustine, Harmony of the Gospels 2.65; the two
+Jerichos. Ancient, patristic and rabbinic writers are paraphrased; Josephus's
+"for any cause whatsoever" is Whiston's wording in single quotes.
+
+### Cut or narrowed
+
+The drachma as a day's pay (not confirmed); 4Q159 and a once-in-a-lifetime
+tax (broken text, debated subject); Tosefta Ketubbot 13:20 (the "only Tyrian"
+reading is an inference); Philo, Cicero, Dio, Suetonius, Nerva and the Edfu
+receipts; the barbel; Strauss, Temkin, Twelftree; Raphael and Masaccio; the
+Mishnah on priests; "ten thousand the largest Greek number word"; the
+"against you" variant at 18:15; Tobit, Jerome, Aquinas and the guardian
+angel feast; Calvin, the Belgic and Schleitheim confessions, Erastus, Beza,
+Benedict, Luther, Bonhoeffer, Volf, Jones, Langberg, Wiesenthal; Catholic and
+Orthodox excommunication as "medicinal" (stated only generally); Philo on
+divorce, the Temple Scroll, m. Yevamot, b. Gittin 90b, the ketubbah; the
+Essenes and Therapeutae; Origen's castration; Hester; Meier, Fitzmyer,
+Instone-Brewer, Piper, Heth and Wenham by name; Cyril of Alexandria on
+"rope" (the sources disagree on what he argued); Philo and Josephus on
+palingenesia; Psalms of Solomon 17:26; "lost their farms through debt";
+Herzog and Jeremias by name; Herod's palaces and death at Jericho; John's
+later life; Salome; Bach, Ruskin, Gandhi, Rembrandt, Poussin; most textual
+notes. One error in the deep note was found and not repeated: Tacitus's
+mutineers of AD 14 were on the Danube, not the Rhine. The deep notes are
+unchanged underneath.
+
+### Contested matters, and how they are stated
+
+The mountain: pointed to the Mark 9 note (no one can be sure). Seizures and
+possession: the Mark 9 wording. 17:20: not a formula; the disciples' faith,
+not the father's or the boy's. 17:21: the manuscripts plainly, with those
+who defend the later copies. The fish and the coin: the skeptical case
+(Polycrates), the miracle reading (Chrysostom), the weight on the saying,
+"turns in part on whether God acts in the world at all", no side. The temple
+tax: not a statement about modern taxes or any government. Guardian angels:
+Christians differ on an angel for each person. 18:11: the manuscripts. Church
+discipline: practices described generally, "These notes do not choose among
+the churches' practices." Seventy-seven or seventy times seven: both, the
+point the same. 18:35 and losing grace: the Matthew 6 answer, then the two
+views, "All agree the warning is meant to be heard." Hillel and Shammai:
+marked later (the Mishnah, around 200); "for any reason" as Hillel's term and
+the reply, both unnamed. Divorce and remarriage: the Matthew 5 paragraph
+(Catholic, kinship reading, Orthodox, Protestant, betrothal), "These notes do
+not decide between them." "This word" in 19:11: two readings. Celibacy:
+Catholic (Catechism 1579), Orthodox, Protestant (Augsburg 23), what all
+agree. Sell all: Clement and Antony, a call to a few or a call to each, no
+side. Camel and needle: no gate, no rope. 19:17: the later copies. The
+vineyard: four readings (Jesus' welcome of sinners; Matthew's setting;
+non-Jews; Gregory's hours), then Levine's and a darker reading, "These notes
+do not choose among the readings." The ransom: the Mark 10 paragraph. Two
+blind men and the two Jerichos: Augustine, doubling, two witnesses, two
+Jerichos, ancient story-telling, "These notes do not choose."
+
+### Care lines included
+
+17:14-21, the Mark 9 wording word for word: "Does this story mean that
+seizures, or illness of the mind, are caused by demons? Christians hold that
+evil is real, and the Gospels tell of real possession. But most Christians
+today hold that seizures and mental illness are illnesses, to be treated
+with medicine and care, and that it is wrong and harmful to tell a sick
+person they have a demon. The Gospels themselves know the difference." The
+path to help, adapted only to Matthew's verse: "The father says his son often
+falls into the fire or into the water. If you, or someone you love, are at
+risk of harm, reach for real help now: a doctor, a pastor you trust, or a
+crisis line in your country. Jesus did not leave this boy alone, and you are
+not meant to face such danger alone." And the Matthew 8 line: "The Bible does
+not teach that sickness comes from too little faith, or that a person who
+stays ill did not believe enough." 17:24-27: not a teaching on modern taxes,
+and the coin no promise of money.
+
+18:6-9, on abuse: "These words have been rightly applied to the abuse of
+children. It must be said plainly. This passage stands with the child.
+Jesus' fiercest warning in the Gospels is for anyone who harms a little one.
+The church has sometimes protected abusers and silenced children, and that is
+a betrayal of this very passage. Abuse of a child is a crime. It is to be
+reported to the police and the proper authorities, not handled quietly inside
+a church. If a child is in danger, or you know of a child being harmed,
+contact the police or your local child protection service now. If you were
+harmed as a child, what was done to you was wrong, and it was not your
+fault." Then the Mark 9 "cut it off" paragraph word for word, ending "If you
+have thoughts of hurting yourself, please speak to someone now: a doctor, a
+pastor, a trusted friend, or a crisis line."
+
+18:15-17, the context guide's sentences word for word: "Matthew 18 is not a
+rule that makes a harmed person meet the one who harmed them. It opens by
+placing Christ's presence in a child, “whoever welcomes a little child like
+this in My name welcomes Me” (Matthew 18:5), and by warning of the millstone.
+Nothing in it asks a child, or anyone who is afraid, to go alone to the
+person who hurt them. The law behind the two or three witnesses sends a
+disputed case to judges who “shall investigate thoroughly” (Deuteronomy
+19:18), so it's no excuse for refusing to look. Abuse and other crimes are
+reported to the police and the proper authorities, whom Paul calls “God’s
+servant, an agent of retribution to the wrongdoer” (Romans 13:4)." Then:
+"Nothing in verses 15 to 20 puts a church meeting in the place of the
+police." The steps do not fit where one person has power over another or
+someone is afraid, and are no way to silence a concern.
+
+18:21-35, the Matthew 6 wording ("this prayer" made "this parable"):
+"Forgiveness has also been misused. Some have told people who were abused to
+forgive quickly, keep quiet, or go back to the person who hurt them. That is
+not what this parable asks. Forgiveness lets go of revenge. It is not the
+same as trusting someone again, and it does not mean a crime should go
+unreported. A person can forgive and still stay safe, still tell the truth,
+and still ask for justice. It can also take a long time, and that is not
+failure." And the guide's: "Forgiving from the heart is not the same as
+trusting again, reconciling, or keeping quiet. ... If someone has harmed you,
+tell someone safe, and if a crime was committed, go to the police. You don't
+need anyone's permission to be safe."
+
+19:1-9, the Mark 10 and Matthew 5 line word for word: "Nothing in this
+passage asks anyone to stay where they or their children are in danger. If
+you are in an abusive marriage, seek safety first. Talk to a pastor or a
+counselor you trust, or call a local domestic violence line. These notes are
+not legal advice." 19:10-12: single readers, without assuming anything about
+them ("This passage does not ask you to explain yourself"). 19:16-30: no
+contempt for the wealthy, no prosperity reading of the hundredfold. 20:20-28:
+service is never a duty to stay under mistreatment. No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` (partial, Matthew) and `validate-no-emdash` after each
+chapter. Then all 36 commands of the content-gates step in ci.yml, one at a
+time: exit 0 each (validate-bible-notes: 66 introductions, 1,189 chapter
+notes, 36 chapters in plain words; validate-no-emdash: 260 files, 0
+em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources: 22 texts intact). `pnpm check`: clean. `pnpm test`:
+146 files passed, 7 skipped; 1,653 tests passed, 73 skipped. No build, so no
+dist/ and no lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient, patristic and rabbinic writer (all
+paraphrased); the exact wording of Catechism 1579 beyond its phrase "for the
+sake of the kingdom of heaven"; the year of Levine's book (not given); the
+distance between the two Jerichos (not given).
+
+### Next
+
+Matthew 21 onward, in the same shape.

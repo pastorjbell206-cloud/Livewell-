@@ -1279,3 +1279,180 @@ Tertullian, Origen, Cyprian, Firmilian, Augustine's Retractations, Leo the
 Great; Melanchthon, Calvin; Meyendorff, Afanasiev, Schmemann; Cullmann,
 Carson, Bultmann; Ut Unum Sint; Wisdom 16:13 and 3 Maccabees 5:51; the
 Catholic argument from Isaiah 22 as an office handed on; the lectionaries.
+
+## The plain notes on Matthew 17 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/17.json`. Seven searches for this
+chapter, with the earlier ledger (Mark 9; Mark 7 on the Tyrian shekel).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The shelters, Tabernacles, the unnamed mountain (Tabor and Hermon) | 1-8 | Earlier ledger (Mark 9) | Pointed to the Mark 9 note, not repeated |
+| Only Matthew: face "shone like the sun", bright cloud, "in whom I am well pleased" (matching 3:17), Moses named first, "Lord" (Mark "Rabbi"), the fall, the touch, "Get up... Do not be afraid" | 1-8 | Mark 9:2-8; Luke 9:28-36 | BSB comparison |
+| 2 Peter 1:18; Exodus 24:16; 34:29; Psalm 2:7; Isaiah 42:1; Deuteronomy 18:15; Daniel 10:9-12 | 1-8 | BSB | BSB text |
+| Horama, a sight God shows; Acts 7:31 of the burning bush | 9-13 | Greek text; standard lexicons | Repository text |
+| Only Matthew: the disciples understood he meant John (17:13; 11:14); Malachi 4:5-6; 1 Kings 19:2 | 9-13 | BSB | BSB text; earlier ledger (Mark 9) |
+| Selēniazomai from the word for moon, "moonstruck", older "lunatic"; only Matthew 4:24 and 17:15; 4:24 lists the demon-possessed and those having seizures apart | 14-21 | Thayer's and Strong's (4583); Mounce | Search: biblehub.com 4583; billmounce.com; blueletterbible.org G4583. Thayer's remark on the Greeks and epilepsy not used |
+| Greek doctors argued seizures have natural causes | 14-21 | On the Sacred Disease | Earlier ledger (Mark 9) |
+| 17:21 absent from the first hand of Sinaiticus and from Vaticanus (and others); added from Mark 9:29; "and fasting" also absent from the oldest copies of Mark; BSB leaves the number empty; some who hold the later copies defend it | 14-21 | NET Bible note on 17:21; textual summaries | Search: biblia.com NET note; biblehub.com; confessionalbibliology.com (the opposing case). Carson not named |
+| Deuteronomy 32:5; Exodus 32:19; 1 Corinthians 13:2; 13:32 "the smallest of all seeds" | 14-21 | BSB | BSB text |
+| Care: the Mark 9 wording on seizures and mental illness and the path to help, word for word (adapted only to "often falls into the fire or into the water"); the Matthew 8 sentence that the Bible does not teach that sickness comes from too little faith, and "Faith is trust in a person, not a payment that buys a cure"; the mustard seed not a formula | 14-21 | CLAUDE.md, care for the reader | Pastoral |
+| Second of three predictions (16:21; 20:17-19); Mark 9:32 against Matthew's "deeply grieved" | 22-23 | BSB | BSB comparison |
+| Paradidōmi in 17:22, 26:15-16, 27:26 and Romans 4:25 | 22-23 | Greek text (G3860) | Script |
+| Isaiah 53:5; Hosea 6:2 | 22-23 | BSB | BSB text |
+| Two drachmas the yearly temple tax; Exodus 30:12-16 the half shekel; Nehemiah 10:32 a third of a shekel | 24-27 | BSB; Josephus, Jewish War 7.218 ("as they used to pay" the temple) | BSB text; search below |
+| Babylonian Jews kept the money at Nehardea and Nisibis until it could be taken to Jerusalem | 24-27 | Josephus, Antiquities 18.311-313 | Search: lexundria.com 18.312 (Whiston); philipharland.com summary; posenlibrary.com. Paraphrased |
+| Mishnah Shekalim 1:3: changers' tables in the provinces on 15 Adar, in the temple on 25 Adar (written down around 200) | 24-27 | Mishnah | Search: mishnah.org; jewishvirtuallibrary.org; sefaria.org. The sources differ on where the 15 Adar tables stood, so the note says "in the towns" and "later in the temple" |
+| Stater a four-drachma coin, paying for two; Tyrian shekel the usual coin of temple payments | 24-27 | Lexicons; earlier ledger (Mark 7) | Earlier ledger. Tosefta Ketubbot 13:20 not cited: the "only Tyrian" reading is an inference from it |
+| After 70 Vespasian ordered every Jew to pay two drachmas yearly to the Capitol (Jupiter's temple) | 24-27 | Josephus, Jewish War 7.218 | Search: lexundria.com 7.218 (Whiston); encyclopedia.com "Fiscus Judaicus"; biblicalarchaeology.org. Paraphrased. Women, children, Edfu ostraca, Suetonius and Nerva's coin (deep note) not used |
+| Matthew after 70 (most scholars) | 24-27 | Earlier ledger (Matthew's book page) | Earlier ledger |
+| Herodotus, Histories 3.41-42: Polycrates of Samos threw his ring into the sea and found it in a fish | 24-27 | Herodotus | Search: lexundria.com 3.42 (Macaulay); perseids.org (Godley); sacred-texts.com. Paraphrased. Strauss, b. Shabbat 119a, Davies and Allison, Mendel Nun (deep note) not used |
+| Chrysostom, Homily 58 on Matthew: Jesus first shows he is not liable, then pays, to keep others from offence, and pays for Peter | 24-27 | Chrysostom | Search: newadvent.org 200158; ewtn.com. Paraphrased; "a preacher of the late 300s" as in the earlier notes |
+| Not a teaching on modern taxes; 22:21; Romans 13:7; 1 Corinthians 9:19; 12:6 | 24-27 | BSB | BSB text; pastoral line |
+
+Left out: 4Q159 and a once-in-a-lifetime half shekel (the fragment is broken
+and its subject debated); m. Shekalim 1:4 on priests; Philo; Cicero, For
+Flaccus; Cassius Dio; Suetonius; Nerva; the Edfu receipts; Origen, Cyril,
+Leo the Great, Aquinas, Palamas, the hesychast councils, Callixtus III;
+Raphael and Masaccio; Bultmann, Stein, Allison, Horbury, Cassidy, Strauss,
+Temkin, Twelftree; the moon-phase belief beyond the word's root; the barbel
+and the musht; the lectionaries; every textual note in the deep note except
+17:21.
+
+## The plain notes on Matthew 18 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/18.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 9 and 10; Matthew 5, 6 and 16) and the
+safety paragraph of `client/public/context/guides/matthew-18-20-in-context.json`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Fourth of five discourses, closing at 19:1 | 1-5 | Matthew's book page | Repository text |
+| Mark 9:33-34 against Matthew's direct question | 1-5 | BSB | BSB comparison |
+| Children loved but without rank; pais for child and servant; "become like" as status, not sentiment | 1-5 | Earlier ledger (Mark 9, 10) | Earlier ledger |
+| "Change" literally "turn" (strephō); tapeinoō and 11:29 | 1-5 | Greek text | Repository text |
+| Skandalizō, skandalon a trap or obstacle; 17:27; "little ones" in 10:42 | 6-9 | Greek text; BSB | Repository text |
+| Donkey millstone; Gehenna, Hinnom and child sacrifice (Jeremiah 7:31); Isaiah 66:24 | 6-9 | Earlier ledger (Mark 9) | Earlier ledger |
+| "Cut it off" care paragraph, word for word from Mark 9 (and Matthew 5) | 6-9 | Mark 9:42-50 plain note | Repository text |
+| Abuse: the passage stands with the child; abuse a crime, reported to the police and the proper authorities; contact police or child protection | 6-9 | CLAUDE.md, care for the reader; the context guide | Pastoral. No phone number given |
+| "See the face" as access to a king; angels assigned to people; Acts 12:15; Psalm 91:11; Christians differ on an angel for each person | 10-14 | Deep note; BSB | BSB text. Tobit, Jerome, Aquinas, Clement X and the feast (deep note) not used |
+| Luke 15:3-7 setting, "lost", "until he finds it" against Matthew's "goes astray", "if he finds it"; planaō in 24:4-5 | 10-14 | BSB; Greek text (G4105) | BSB comparison; script |
+| 18:11 absent from Sinaiticus and Vaticanus; brought in from Luke 19:10; BSB leaves the number empty | 10-14 | Textual summaries | Search: biblehub.com; billmounce.com; openbible.com; confessionalbibliology.com (the opposing case). Metzger not named |
+| Ezekiel 34:6, 16 | 10-14 | BSB | BSB text |
+| Community Rule (1QS 5:24-6:1): correct a fellow in truth and humility; no charge before the Many without prior correction before witnesses | 15-17 | Dead Sea Scrolls | Search: intertextual.bible; palimpsest.stmarytx.edu; orion-bibliography.huji.ac.il (Akiyama 2017). Paraphrased; no column given in the note |
+| Ekklēsia only 16:18 and 18:17 in the Gospels | 15-17 | Earlier ledger (Matthew 16) | Earlier ledger |
+| Jesus and tax collectors: 9:9; 9:10-11; 11:19 | 15-17 | BSB | BSB text |
+| Leviticus 19:17-18; Deuteronomy 19:15, 18; Galatians 6:1; 2 Corinthians 2:7; Romans 13:4 | 15-17 | BSB | BSB text |
+| Safety paragraph, sentences word for word from the context guide ("Matthew 18 is not a rule that makes a harmed person meet...", "Nothing in it asks a child...", "The law behind the two or three witnesses...", "Abuse and other crimes are reported to the police...", "Forgiving from the heart is not the same as trusting again...", "If someone has harmed you, tell someone safe...", "You don't need anyone's permission to be safe.") | 15-17; 21-35 | matthew-18-20-in-context.json | Repository text |
+| Church practice of 18:17 in general terms (Communion withheld for a time; elders; congregation; pastoral care), no side | 15-17 | Deep note | Stated generally; Calvin, the Belgic Confession, Schleitheim, Erastus, Beza, Benedict (deep note) not named or dated |
+| Bind and loose: forbid and permit; given to the disciples together | 18-20 | Earlier ledger (Matthew 16) | Earlier ledger |
+| Mishnah Avot 3:2, Rabbi Hananiah ben Teradion: when two sit and words of Torah pass between them, the Shekhinah rests among them (written down around 200; later) | 18-20 | Mishnah | Search: mishnah.org Avos 3:2; sefaria.org; docs.lib.purdue.edu (Sievers, Claritas 2017). Paraphrased; editions number it 3:2, 3:3 or 3:6 |
+| 1:23; 28:20; 26:39 | 18-20 | BSB | BSB text |
+| b. Yoma 86b, Rabbi Yose bar Judah: forgiven a first, second and third time, not a fourth (written down several centuries later) | 21-35 | Babylonian Talmud | Search: sefaria.org sheets; encyclopedia.com "Repentance"; jewishvirtuallibrary.org. Paraphrased; the rabbi not named in the note |
+| Hebdomēkontakis hepta: seventy-seven or seventy times seven; the same Greek in the Greek Old Testament of Genesis 4:24 | 21-35 | Lexicons (G1441); LXX | Search: blueletterbible.org G1441 (LXX); biblehub.com 1441; engediresourcecenter.com. Carson's remark not attributed |
+| A talent about six thousand denarii; ten thousand talents sixty million; a denarius a day's wage (20:2); a hundred denarii about a hundred days | 21-35 | Bible dictionaries; earlier ledger | Search: biblehub.com "Ten Thousand Talents"; en.wikipedia.org "Parable of the Unforgiving Servant"; kjvstudy.org. "Largest Greek number word" (deep note) not used |
+| Josephus, Antiquities 17.318: Galilee and Perea paid Antipas two hundred talents a year | 21-35 | Josephus | Search: lexundria.com 17.318 (Whiston); Jewish War 2.95 the same. Paraphrased |
+| Esther 3:9; 2 Kings 4:1; Leviticus 25:39-40; Genesis 4:24; Luke 17:3 | 21-35 | BSB | BSB text |
+| "Many readers think" the king's orders sound like foreign courts | 21-35 | Deep note (Jeremias) | Stated as a view; Jeremias not named |
+| Matthew 6 wording on the misuse of forgiveness, word for word ("this prayer" made "this parable"); verse 35 not the price but the sign (the Matthew 6 note); the traditions on losing grace stated without names | 21-35 | Matthew 6:9-15 plain note | Repository text |
+
+Left out: the "against you" variant in 18:15 (not checked on this run);
+Tobit; m. Berakhot 5:5; m. Megillah 4:3; Suetonius on drowning; Maimonides;
+Antiquities 14.78; the talent's weight; m. Sotah 3:8; Jeremias; Luther's The
+Keys and Large Catechism; Calvin; the Belgic and Schleitheim confessions;
+Erastus and Beza; Benedict's Rule; Bonhoeffer; Jones, Volf, Langberg;
+Wiesenthal; Dura-Europos; Clephane and Sankey; the lectionaries.
+
+## The plain notes on Matthew 19 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/19.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 10; Matthew 5).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Perea under Antipas; John killed over his marriage | 1-9 | Earlier ledger (Mark 10) | Earlier ledger |
+| Shammai, Hillel, Akiva on Deuteronomy 24:1 (Mishnah Gittin 9:10, written down around 200; Akiva "a later teacher") | 1-9 | Earlier ledger (Mark 10) | Earlier ledger |
+| Josephus, Antiquities 4.253: a man may divorce his wife "for any cause whatsoever" | 1-9 | Josephus (Whiston) | Search: lexundria.com 4.253; readingacts.com; posenlibrary.com "Divorce in Early Judaism". Quoted in single quotes as Whiston's words |
+| "For any reason" as the name of Hillel's easy divorce (Instone-Brewer), and the reply that Jesus' answer reaches further | 1-9 | Instone-Brewer; critics | Search: psephizo.com; gospeltranslations.org; totheendsblog.blogspot.com. Stated as two views, unnamed |
+| Only the husband could divorce in Jewish law | 1-9 | Earlier ledger (Mark 10) | Earlier ledger |
+| Mark's order (Jesus asks what Moses commanded) against Matthew's ("ordered" and "permitted") | 1-9 | Mark 10:3-5; Matthew 19:7-8 | BSB comparison |
+| Genesis 1:27; 2:24; Deuteronomy 24:1-4; Malachi 2:16; Ezekiel 36:26 | 1-9 | BSB | BSB text |
+| Catholic, Orthodox, Protestant readings, kinship and betrothal readings, "These notes do not decide" | 1-9 | Matthew 5:31-32 plain note, word for word ("here and in 19:9" made "here and in 5:32") | Repository text |
+| "What all of them share" (Mark 10 wording, last sentence adapted to Matthew) and the safety paragraph word for word ("Nothing in this passage asks anyone to stay where they or their children are in danger...") | 1-9 | Mark 10 and Matthew 5 plain notes | Repository text |
+| Eunuchs born so, made so (slaves, court servants); Acts 8:27; Jesus, John and Paul unmarried; 1 Corinthians 7:7 | 10-12 | BSB; deep note | BSB text |
+| Justin Martyr, First Apology 29: a young Christian in Alexandria petitioned the governor Felix for leave to be castrated; refused (Felix prefect 149-154, so "in the 150s") | 10-12 | Justin | Search: logoslibrary.org 29; st-takla.org (ANF); en.wikipedia.org Lucius Munatius Felix. Paraphrased |
+| Nicaea (325), canon 1: a man who castrated himself not admitted to the clergy | 10-12 | Canons of Nicaea | Search: newadvent.org 3801; ewtn.com; fourthcentury.com. Paraphrased |
+| Deuteronomy 23:1; Isaiah 56:3, 5; Jeremiah 16:2 | 10-12 | BSB | BSB text |
+| Two readings of "this word" (verse 11) | 10-12 | Deep note | Stated as views; Dupont and Quesnell not named |
+| Latin Church priests normally celibate "for the sake of the kingdom of heaven" (Catechism 1579); Eastern bishops from the celibate, married men ordained priests (Catechism 1580; Orthodox practice) | 10-12 | Catechism of the Catholic Church | Search: vatican.va 1579-1580; usccb.org. Single-quoted as the Catechism's phrase |
+| Augsburg Confession (1530), article 23, cites Matthew 19:11 against compulsory clerical celibacy | 10-12 | Augsburg Confession | Search: bookofconcord.cph.org; projectwittenberg.org. Calvin and Aquinas not named |
+| Care for single readers: no assumptions; singleness honoured | 10-12 | CLAUDE.md, care for the reader | Pastoral |
+| Mark's indignation and "receive like a child" left out by Matthew; 18:3; Genesis 48:14 | 13-15 | BSB | BSB comparison |
+| "Good Teacher" (Mark, Luke) against "what good thing" (Matthew); later copies of Matthew harmonized to Mark; Sinaiticus and Vaticanus have the BSB wording | 16-22 | Textual summaries | Search: openbible.com on 19:17; catholic.com; confessionalbibliology.com (the opposing case). Metzger not named |
+| Only Matthew: "young", "love your neighbor as yourself", teleios as in 5:48; 22:39-40 | 16-22 | BSB | BSB comparison |
+| Clement of Alexandria; Antony (Athanasius) | 16-22 | Earlier ledger (Mark 10), word for word | Earlier ledger |
+| The "counsel for a few" reading and its answer, unnamed; no contempt for the wealthy (1 Timothy 6:18; Mark 10:21); no prosperity reading | 16-22 | Deep note; BSB | Stated as views; pastoral |
+| Camel and needle, Talmud's elephant, no gate | 23-26 | Earlier ledger (Mark 10) | Earlier ledger |
+| A later reading of "camel" as a Greek word for rope; the oldest copies read "camel" | 23-26 | Textual and lexical summaries | Search: en.wikipedia.org "Eye of a needle"; christiantoday.com. Cyril not named: the sources disagree on what he argued |
+| "Kingdom of God" at 19:24 against Matthew's usual "kingdom of heaven" | 23-26 | BSB | BSB text |
+| Genesis 18:14 | 23-26 | BSB | BSB text |
+| Twelve thrones only in Matthew here; Luke 22:30; Ezekiel 37:21-22; Psalms of Solomon (first century BC) pray for a son of David to rule | 27-30 | BSB; earlier ledger (Mark 8) | BSB text; earlier ledger. Psalms of Solomon 17:26 wording (deep note) not used |
+| Palingenesia only here and Titus 3:5 | 27-30 | Greek text (G3824) | Repository text. Philo and Josephus (deep note) not used |
+| Mark 10:30 "along with persecutions"; 10:16-39; Daniel 7:9, 13-14; Deuteronomy 4:1; 2 Corinthians 8:9; 20:16 | 27-30 | BSB | BSB text |
+| Hundredfold not a prosperity promise (the Mark 10 wording) | 27-30 | Mark 10 plain note | Repository text |
+
+Left out: Philo, Special Laws 3.30; Josephus's own divorce; the Temple
+Scroll; m. Yevamot 14:1 and 8:4; b. Gittin 90b; the ketubbah; the age of
+brides; Wisdom 3:14; Josephus and Philo on the Essenes and Therapeutae;
+Origen and Eusebius; Hester; Meier; Fitzmyer by name; Hermas, Augustine,
+Trent, Erasmus, Luther, Westminster, Amoris Laetitia, Heth and Wenham, Piper
+by name; Augustine and Ambrose on "good"; Stonehouse; Davies and Allison;
+Cyril of Alexandria; Tobit and Sirach on treasure; Francis of Assisi;
+Hofmann; the 722 BC date (said "long before"); the textual notes on 19:4, 9,
+20, 29.
+
+## The plain notes on Matthew 20 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/20.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 10; the evil-eye idiom from the
+Matthew 6 run) and the honor-and-shame portrait
+(`client/public/context/worlds/honor-and-shame.json`, read only).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The parable answers 19:27 and is framed by 19:30 and 20:16; found only in Matthew | 1-7 | BSB | BSB text |
+| Day labourers hired in the market; harvest | 1-7 | Deep note; the text itself (20:3) | General; "lost their farms through debt" (deep note) cut |
+| A denarius a day's wage | 1-7 | Earlier ledger (Mark 6; 20:2) | Earlier ledger |
+| Tacitus, Annals 1.17: in AD 14 soldiers paid ten asses a day mutinied and demanded a denarius a day | 1-7 | Tacitus | Search: penelope.uchicago.edu (Annals 1); ancientromanhistory31-14.com; cambridge.org (Speidel). Paraphrased. The deep note's "legions on the Rhine" corrected: the speech is in the Pannonian mutiny, and the note names no army |
+| Hours counted from sunrise (third about nine, eleventh about five) | 1-7 | Standard reckoning | General knowledge, stated as "about" |
+| Isaiah 5:7; Deuteronomy 24:15 | 1-7 | BSB | BSB text |
+| Hetaire ("Friend") only 20:13, 22:12, 26:50 | 8-16 | Greek text (G2083) | Script |
+| Evil eye: literally "Is your eye evil because I am good?"; envy and grudging; good eye generous; the portrait's sentences on the workers ("The workers hired at dawn received exactly what they agreed to... The parable asks the hearer to see generosity without counting it as theft.") kept word for word | 8-16 | honor-and-shame.json, Matthew 20:15 note; Greek text (ophthalmos ponēros, agathos) | Repository text; script |
+| Mishnah Avot 2:9: Rabbi Eliezer's answer "a good eye" (written down around 200) | 8-16 | Mishnah | Search: mishnah.org; sefaria.org; posenlibrary.com. Paraphrased; numbering differs by edition |
+| Deuteronomy 15:9: to look begrudgingly is, in Hebrew, an evil eye | 8-16 | Earlier ledger (Matthew 6: biola.edu; biblicaltraining.org) | Earlier ledger; BSB text |
+| Jerusalem Talmud, Berakhot 2:8: a king paid a worker hired late a full wage because he did more in two hours (put together several centuries after Jesus) | 8-16 | y. Berakhot 2:8 | Search: intertextual.bible; sefaria.org; sacred-texts.com (Collins 1910). Paraphrased; Rabbi Bun and Rabbi Zeira not named |
+| Jonah 4:2 | 8-16 | BSB | BSB text |
+| Readings: Jesus' welcome of sinners; Matthew's setting after 19:27; non-Jews; a harsh owner (unnamed) | 8-16 | Deep note | Stated as views; Jeremias and Herzog not named |
+| Gregory the Great, Homily 19 on the Gospels (591): the hours as ages of the world and stages of a life | 8-16 | Gregory | Search: historicalchristianfaith.github.io; lectionarycentral.com; vaticannews.va. Paraphrased |
+| Amy-Jill Levine, Short Stories by Jesus: an owner who hires all who need work and pays a living wage | 8-16 | Levine | Search: americamagazine.org review; christiancentury.org review; patheos.com. No year given |
+| Third prediction the only one in Matthew naming crucifixion; Mark 10:34 "kill"; fulfilment in 26:47-50, 26:66, 27:2, 27:26, 27:29 | 17-19 | BSB | BSB comparison |
+| Isaiah 50:6; Hosea 6:2 | 17-19 | BSB | BSB text |
+| Mother asks in Matthew, sons in Mark; Jesus answers the sons; kneeling | 20-28 | Mark 10:35; BSB | BSB comparison |
+| The mother at the cross (27:56); robbers on the right and left (27:38); James killed (Acts 12:2) | 20-28 | BSB | BSB text |
+| Ransom as the price of release; Exodus 21:30; Daniel 7:14; Isaiah 51:17; Psalm 75:8; Isaiah 53:12 | 20-28 | Earlier ledger (Mark 10) | Earlier ledger; BSB |
+| The views of the ransom, word for word from the Mark 10 note ("Mark puts first" made "Matthew puts first") | 20-28 | Mark 10:35-45 plain note | Repository text |
+| Care: service is never a duty to stay under mistreatment | 20-28 | CLAUDE.md, care for the reader | Pastoral |
+| Matthew's additions: compassion and touch; no name or cloak; the same question to the mother and the blind men | 29-34 | Mark 10:46-52; BSB | BSB comparison |
+| Isaiah 35:5; 2 Samuel 7:13; Luke 18:35; 8:28; 9:27-31; Deuteronomy 19:15 | 29-34 | BSB | BSB text |
+| Augustine, Harmony of the Gospels 2.65: two men; Mark names the better known | 29-34 | Augustine | Search: bkv.unifr.ch (NPNF); newadvent.org 1602265; biblehub.com. Paraphrased |
+| Two Jerichos: the old ruined city and Herod's newer town nearby | 29-34 | Bible dictionaries | Search: biblicaltraining.org; catholic.com; Easton's. Distance and direction not given (the sources disagree) |
+| Doubling as Matthew's way; two witnesses; ancient writers shortening details | 29-34 | Deep note | Stated as views; Gundry, Keener, Licona not named |
+
+Left out: Josephus on the Samaria route; Netzer and Herod's winter palaces;
+Herod's death at Jericho; the height of Jericho; m. Bava Metzia 9:11-12;
+John's later life (Irenaeus, Philip of Side, George the Monk); Salome and
+Jesus' cousins; Archelaus; Solomon the healer; Irenaeus and Chrysostom on the
+parable; Bach, Ruskin, Gandhi, Rembrandt, Poussin; Origen, Gregory of
+Nazianzus, Anselm, Aulén by name; the lectionaries; Avot 5:13; every textual
+note in the deep note (20:16's "many be called, but few chosen" was checked
+and is absent from Sinaiticus and Vaticanus, but the note does not need it).
