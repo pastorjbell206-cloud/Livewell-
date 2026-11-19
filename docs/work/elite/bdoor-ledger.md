@@ -2762,3 +2762,42 @@ and Vermes; John 4:46-54 as the same event; Josephus on Machaerus (used in
 earlier chapters); m. Ketubbot 4:4 on flutes; Numbers 5:18; Lefèvre
 d'Étaples (1517) and the 1969 calendar; Raymond Brown by name; the Antipas
 reed coin; the alabaster's cost (no figure given).
+
+## The plain notes on Luke 8 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/8.json`. Four searches for this
+chapter, with the book page's rows and the earlier ledger (Mark 3, 4 and 5;
+Matthew 8, 9 and 13; John 20).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| 8:1-3 only in Luke; Mark names the women only at the cross (Mark 15:40-41); Joanna at the tomb (24:10) | 1-3 | BSB | Repository |
+| The only explicit statement in the Gospels of how the travelling work was paid for | 1-3 | Thesis on Luke 8:1-3 (University of Waterloo) as summarised | Search: uwspace.uwaterloo.ca; cbeinternational.org. Stated as "the only place in the Gospels that says plainly" |
+| How unusual it was: "We cannot say exactly"; the women's guide for the world they lived in | 1-3 | Site guide `women-in-the-ancient-world` | The guide's "no parallel" claim is not repeated, since no search confirmed it |
+| Magdala on the western shore; synagogue found in 2009, built and used before 70 (coin of 29 minted at Tiberias); early Christian texts name it Mary's home | 1-3 | Israel Antiquities Authority dig as reported | Search: worldhistory.org "The Archaeological Excavations at Magdala"; en.wikipedia.org Magdala stone and Migdal Synagogue; magdala.org. "Most likely from Magdala" |
+| Chuza Herod Antipas's epitropos, steward or household manager, a senior post | 1-3 | Lexicons and translations | Search: biblehub.com lexicon Luke 8:3; tips.translation.bible; douglasjacoby.com |
+| Mary Magdalene not called a prostitute; seven demons not a moral statement; Gregory 591; the East kept the women apart | 1-3 | Earlier ledger (John 20) | Earlier ledger, John 20 wording |
+| 1 Kings 17:15; 2 Kings 4:8-10; Joel 2:28; Acts 2:17-18 | 1-3 | BSB | Repository |
+| Sowing; rock under thin earth; Luke's differences (seed the word of God, no moisture, for a season, pleasures, noble and good heart, persevering) | 4-15 | Earlier ledger (Mark 4); BSB | Repository |
+| Isaiah 6:9; Isaiah 55:11; Luke omits Mark 4:12's "turn and be forgiven" | 4-15 | BSB | Repository |
+| The Mark 4 answer on why parables, adapted (Jeremias's "unless" reading dropped) | 4-15 | Mark 4 plain note | Repository |
+| House lamp a clay dish of oil; Psalm 119:105; Isaiah 49:6; Luke 2:32 | 16-18 | Earlier ledger (Mark 4); BSB | Repository |
+| Luke omits Mark 3:21; 1:38; 2:19; the brothers (Mark 3 wording, word for word but for the last sentence) | 19-21 | Mark 3 plain note; BSB | Repository |
+| Deuteronomy 18:15; 5:1; Psalm 27:10; John 19:26-27 | 19-21 | BSB | Repository |
+| The lake's sudden storms; fishermen | 22-25 | Earlier ledger (Mark 4) | Earlier ledger |
+| Mark 4:38, 4:40 against Luke 8:24-25; "rebuked" (4:35, 39) | 22-25 | BSB | Repository |
+| Psalm 89:9; 107:29; Jonah 1:4-5 | 22-25 | BSB | Repository |
+| Unclean setting, Leviticus 11:7, graves; Legion some five thousand; Gerasenes, Gadarenes, Gergesenes; Gerasa some thirty miles away; Origen and Gergesa; Kursi in the 1970s | 26-39 | Earlier ledger (Mark 5) | Earlier ledger |
+| Abyss (Revelation 20:3); "at the feet" (10:39; Acts 22:3); Isaiah 65:4; Psalm 68:6 | 26-39 | BSB | Repository |
+| The Mark 5 lines on illness and spirits, adapted to Luke; the path to help word for word ("If that is where you or someone you love is today, please reach out for real help now, to a doctor, a pastor, or a crisis line"); the pigs | 26-39 | Mark 5 plain note | Repository |
+| Leviticus 15:25 and 15:19-27; uncleanness not sin; scholars debate how cut off; tassels (Numbers 15:38) | 40-48 | Earlier ledger (Mark 5; Matthew 9) | Earlier ledger |
+| 8:43 "spent all she had on physicians" absent from P75 and Vaticanus, present in other copies; Mark 5:26 | 40-48 | Apparatus as reported; Robertson | Search: Wikipedia "Textual variants in the Gospel of Luke"; bibletools.org (Robertson); biblehub.com |
+| Isaiah 53:4; Matthew 8:17 | 40-48 | BSB | Repository |
+| Mishnah (around 200): two flutes and a wailing woman; only child (7:12; 9:38); Talitha koum in Mark; "her spirit returned" only in Luke | 49-56 | Earlier ledger (Mark 5); BSB | Repository |
+| 1 Kings 17:21; Daniel 12:2 | 49-56 | BSB | Repository |
+| Grief line (John 11 wording) | 49-56 | John 11 plain note | Copied word for word |
+
+Left out: Bauckham's Joanna-Junia proposal; Tarichaeae; the Magdala stone's
+menorah; m. Bava Kamma 7:7 on pigs; the Kursi road builders' date; the
+Malachi 4:2 "wings" echo (could not be checked); kalos kagathos for "noble
+and good"; Jeremias on "unless".
