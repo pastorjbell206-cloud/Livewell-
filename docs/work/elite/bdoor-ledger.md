@@ -5779,3 +5779,41 @@ Two web searches (the elohim search and the verse 2 search).
 
 Stated with no side: elohim (three readings). No position on the age of the
 earth or on evolution; no modern political application of "ruler".
+
+## The plain notes on Psalm 9 (2026-11-19)
+
+No new web search (the book page's acrostic and numbering searches cover it).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The Death of the Son" a tune, meaning unknown; Goliath and David's son only guesses | 1-12 | Repository deep note (historical) | Site's own teaching |
+| One broken acrostic across 9 and 10; the Septuagint and Vulgate treat them as one; numbering falls one behind from here; damage or design debated | 1-12 | Book page rows (acrostics, numbering); repository deep note | Search (book page) |
+| Only Psalms 1, 2, 10 and 33 lack a heading in Psalms 1 to 41 | 1-12 | BSB verse 1 of Psalms 1 to 41 | Script |
+| The avenger of blood (Numbers 35:19); city gates; Daughter Zion; Lamentations 1 to 4 acrostic | both | Repository deep note (cultural); BSB | BSB text; site's own teaching |
+| Acts 17:31 uses the words of 9:8 (BSB wording identical); 1 Samuel 2:8; Luke 1:52-53; Luke 18:7; Isaiah 1:17 | both | BSB | BSB text |
+
+9:14 and 9:17 carry em-dashes in the BSB; both are quoted only up to the
+dash, or in two separate quotations.
+
+## The plain notes on Psalm 10 (2026-11-19)
+
+No new web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No heading; continues the acrostic; one psalm in the Greek | 1-11 | As Psalm 9 | As Psalm 9 |
+| "He says to himself" three times (6, 11, 13); "forget" linking 9:17, 10:11, 10:12; verse 14 answers verse 11 | both | BSB; repository deep note (literary) | BSB text |
+| Unwalled villages; the lion and the net; "under his tongue"; practical godlessness; the fatherless without a protector at the gate; God their defender in the law | both | Repository deep note (cultural, historical) | Site's own teaching. Hammurabi's claim to protect orphans not used |
+| Romans 3:14 (drawing on 10:7); Zephaniah 1:12; Jeremiah 5:12; Luke 12:19-20; Hebrews 4:13; Exodus 22:22-23; Deuteronomy 10:18; Psalm 68:5; James 1:27; Revelation 11:15 | both | BSB | BSB text |
+
+"There is no God": stated as practical godlessness, with a paragraph that
+honest unbelievers are not the psalm's target and that the temptation lives
+in believers too. Verse 14 is stated as a claim about God; nothing is said
+about any reader's own family.
+
+## Quotation check (2026-11-19)
+
+A stricter script than the validator (keeping case and punctuation, and
+refusing an em-dash) found four quotations that the validator's looser match
+passed: Numbers 6:25 ("may" in lower case), Psalm 9:12 ("For"), 9:20
+("let"), 89:52 (its exclamation mark). All four now match the BSB exactly.
