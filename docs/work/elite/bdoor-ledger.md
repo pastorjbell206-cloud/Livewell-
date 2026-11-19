@@ -5130,3 +5130,37 @@ name as a parallel to Nero's Augustiani; Tacitus on the name.
 
 Left out: Agrippa raised in Rome; the owl in Josephus; any Roman rule on
 guards; a year for James's death beyond "shortly before 44" (not stated).
+
+## The plain notes on Acts 13 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/13.json`. 6 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Niger Latin "black"; Cyrene in North Africa; Manaen and Herod the tetrarch (Antipas) | 1-3 | BSB; lexical | Repository; "perhaps" and "some think" for Simeon's origin |
+| Numbers 8:10, 14; Leviticus 20:26; Numbers 27:18-20 | 1-3 | BSB | Repository |
+| First trip "many place it in the later 40s", counted back from Gallio (about 51 to 52); exact years not known | 1-3 | Deep note `historical`; wrom-ledger (Gallio) | Narrowed to "many" and "not known" |
+| Seleucia the port of Antioch; Salamis east, Paphos west, the governor's seat | 4-12 | Deep note `historical` | Repository |
+| Proconsul: governor of a senatorial province, usually a year; Luke's title right for Cyprus | 4-12 | Roman-world portrait | Repository wording |
+| Lucius Sergius Paullus, a curator of the Tiber's banks under Claudius (CIL VI 31545, Rome); identification with Acts 13:7 "has been suggested", not certain | 4-12 | Inscription | Search: biblearchaeologyreport.com "Sergius Paulus"; biblearchaeology.org (Bar and Rosenberg, 2022); biblicaltraining.org. The Soloi inscription and Ramsay's claims not used |
+| Bar-Jesus "son of Jesus/Joshua"; Elymas and Luke's gloss; how the names connect unclear; magos as adviser or magician | 4-12 | BSB; deep note `cultural` | Repository |
+| "Saul, who was also called Paul": not a conversion name change; the ordinary "also known as" formula (as 4:36; 12:12); Hebrew and Roman names common among Jews outside the land; Paulus a Roman name; Philippians 3:5 (Benjamin) | 4-12 | Commentaries | Search: logos.com "Why Was Saul Changed to Paul?"; biblicalarchaeology.org "When Did Saul Become Paul?"; dbts.edu. Whether Paulus was his cognomen not stated beyond "a Roman name" |
+| Deuteronomy 13:5; 18:10-11; 28:28; Isaiah 40:3; Hosea 14:9; 2 Kings 6:18-20 | 4-12 | BSB | Repository |
+| Perga near the south coast; Pisidian Antioch inland over the Taurus; a Roman colony of Augustus settled with veterans from Italy; in the province of Galatia | 13-25 | Reference works | Search: biblegateway Encyclopedia of the Bible "Antioch of Pisidia"; penelope.uchicago.edu (JRS 6, "Pisidian Antioch in the Augustan Age"); willamette.edu. No founding year stated |
+| John Mark leaves (13:13); 15:37-39; 2 Timothy 4:11 | 13-25 | BSB | Repository |
+| Synagogue service: readings from the Law and the Prophets, then a word from a visitor; synagogue leaders; Luke 4:16-17 | 13-25 | BSB; deep note `cultural`; Theodotus inscription (worlds-ledger) | Repository |
+| Exodus 6:6; 1 Samuel 13:14; Psalm 89:20; 2 Samuel 7:12-16 | 13-25 | BSB | Repository |
+| "The people of Jerusalem and their rulers" (13:27): pointer to the 2:22-28 note | 26-41 | Acts 2 plain note | Repository wording |
+| Psalm 2:7; Isaiah 55:3 (trimmed before its em-dash); Psalm 16:10; Habakkuk 1:5 (after its em-dash); Genesis 15:6; 2:25-31 | 26-41 | BSB | Repository |
+| Justified: Lutheran and Reformed (declared righteous for Christ's sake, received by faith, new life follows); Catholic Catechism 1989, from Trent (DS 1528): "not only the remission of sins, but also the sanctification and renewal of the interior man"; Joint Declaration on the Doctrine of Justification, Catholic Church and Lutheran World Federation, signed 1999 | 26-41 | CCC 1989; JDDJ | Search: vatican.va CCC part three, article 2; usccb.org flipbook; iarccum.org and ewtn.com (JDDJ, 31 October 1999, Augsburg). Quoted in single marks; no side taken |
+| "The Jews" at 13:45 and 13:50: some synagogue members and leaders in Pisidian Antioch; many Jews believed (13:43); Paul and Barnabas are Jews; pointer to 2:22-28 | 42-52 | BSB; book page part "Acts and the Jewish people" | Repository |
+| 13:46 a turn in one town: 14:1 (synagogue first at Iconium); Romans 11:1; 9:2; 1:16 | 42-47 | BSB | Repository |
+| Isaiah 49:6; Acts 1:8 | 42-47 | BSB | Repository |
+| Women of leading families with public influence in these cities; Luke 9:5 | 48-52 | Deep note `cultural`; BSB | Stated generally |
+| 13:48: Reformed reading (God's choice, Ephesians 1:4); Arminian and Wesleyan readings (God's appointing takes account of response, 1 Timothy 2:4; the Gentiles as a group); 13:46 alongside; pointer to the Honest Answer "Does God choose us, or do we choose him?" | 48-52 | Deep note `hard`; answers.ts | Stated as views; the middle-voice grammar claim not used (not checked) |
+| Deuteronomy 7:7-8; 30:19; Psalm 67:3 | 48-52 | BSB | Repository |
+
+Left out: the Soloi inscription and Ramsay's claims about Sergius Paulus's
+family; the 450 years of 13:20 (not explained); the middle-voice reading of
+tetagmenoi; the year Pisidian Antioch became a colony; Orthodox teaching on
+justification (not searched, so not described).
