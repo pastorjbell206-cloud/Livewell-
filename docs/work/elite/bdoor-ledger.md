@@ -2882,3 +2882,40 @@ Left out: which manuscripts read seventy and which seventy-two; the Talmud's
 seventy nations; the 10:42 variant ("few things" or "one"); the Inn of the
 Good Samaritan site; Josephus on robbers; a lodging price for two denarii;
 Origen's allegory; every scholar named in the deep note and not checked.
+
+## The plain notes on Luke 11 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/11.json`. Three searches for this
+chapter, with the earlier ledger (Mark 3 and 7; Matthew 6, 7, 12 and 23).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Luke's shorter form ("Father"; no "Your will be done", no "deliver us"; "sins"); later copies filled in from Matthew, as in the KJV; the oldest copies have the shorter form | 1-4 | BSB; apparatus as reported (P75 lacks "deliver us from evil") | Search: en.wikipedia.org "Lord's Prayer"; Wikipedia "Papyrus 75". Two explanations stated as "some think", no majority claimed. The Holy Spirit variant left out (not confirmed) |
+| "Hallowed", "daily", "temptation"; forgiveness as sign, not price; the misuse paragraph word for word | 1-4 | Matthew 6 plain note; earlier ledger (Matthew 6) | Repository |
+| Isaiah 63:16; Exodus 16:4; Proverbs 30:8 | 1-4 | BSB | Repository |
+| Anaideia only here in the NT; usual sense "shamelessness"; readings: persistence, the asker's boldness, the sleeper's shame; debated | 5-13 | Lexicons and studies as reported (Johnson, JETS 1979; Snodgrass, JBL 1997; Bailey) | Search: biola.edu "The difference of one word"; galaxie.com (Johnson); ibiblio.org b-greek (Snodgrass); hts.org.za; workingpreacher.org. Script over the repository's Greek (G0335, one occurrence). No scholar named on the page |
+| Hospitality a duty, shame of an empty table | 5-13 | Earlier ledger (Mark 6) | General; the sleeper's words from the verse |
+| "Ask, seek, knock" (Matthew 7 wording; the skeptic and prosperity sentences and the last sentence word for word); egg and scorpion only in Luke; Holy Spirit for "good things" | 5-13 | Matthew 7 plain note; BSB | Repository |
+| Psalm 145:18; Jeremiah 29:13; 22:42 | 5-13 | BSB | Repository |
+| Beelzebul and Baal-zebub; other exorcists | 14-23 | Earlier ledger (Mark 3; Matthew 12) | Matthew 12 wording |
+| Finger of God for Spirit of God; Exodus 8:19; 31:18; Isaiah 49:25; "fully armed" and "the armor in which the man trusted" only in Luke | 14-23 | BSB | Repository; script over the repository's Greek (daktulos at 11:20) |
+| 6:18; 7:21 keep sickness and spirits apart; the Matthew 9/12 illness sentence word for word | 14-23 | BSB; Matthew 12 plain note | Repository |
+| The empty house; the Matthew 12:43-45 illness paragraph adapted, with "Illness of body or mind is illness" and its help line word for word | 24-28 | Matthew 12 plain note | Repository |
+| 11:27-28 only in Luke; 1:38, 42, 48; 2:19; readings of 11:28 | 24-28 | BSB; standard positions | Repository; stated as views |
+| Isaiah 34:14; Proverbs 8:34 | 24-28 | BSB | Repository |
+| Nineveh, the queen of Sheba; Luke has no three days; the "misuse" sentences (Matthew 12 wording) | 29-36 | Matthew 12 plain note; BSB | Repository |
+| Good eye generous, bad eye grudging | 29-36 | Earlier ledger (Matthew 6) | Earlier ledger |
+| Jonah 3:4-5; 1 Kings 10:1; Psalm 119:105 | 29-36 | BSB | Repository |
+| Jesus at Pharisees' tables (7:36; 11:37; 14:1); 13:31 | 37-44 | BSB | Repository |
+| Who the Pharisees were; "Pharisee" not a word for hypocrite; the verdict and "every age" sentences | 37-44 | Matthew 23 plain note; earlier ledger (Matthew 23) | Matthew 23 wording, adapted to the table |
+| Ritual washing; baptizō in 11:38; priests' washing; the Pharisees' aim at ordinary meals | 37-44 | Earlier ledger (Mark 7); Greek text | Earlier ledger; script over the repository's Greek (G0907) |
+| Mishnah Sheviit 9:1 (around 200): rue among plants exempt from tithes; Matthew has dill and cumin | 37-44 | Mishnah | Search: mishnah.org Sheviit 9:1; biblegateway Encyclopedia of the Bible "Rue"; bibletranslationtools.org notes. Marked as later, "If that rule was known" |
+| Unmarked graves; Numbers 19:16; the whitewashed tombs of Matthew 23:27 | 37-44 | BSB | Repository |
+| Micah 6:8; Hosea 6:6; Isaiah 5:8; James 3:1 | 37-44 | BSB | Repository |
+| Abel; Zechariah son of Jehoiada (2 Chronicles 24:20-22); Chronicles last, order debated | 45-54 | Earlier ledger (Matthew 23) | Matthew 23 wording |
+| Guilt not inherited; the "Christ-killers" sentences; Acts 4:27; AD 70 | 45-54 | Matthew 23 plain note; earlier ledger | Word for word, Nostra Aetate sentence not repeated |
+| Malachi 2:7-8; Genesis 4:10; 2 Chronicles 24:22 | 45-54 | BSB | Repository |
+
+Left out: the Holy Spirit petition in some copies of 11:2 (not confirmed);
+Bailey's village customs; the Talmud's tithing rules; m. Demai; who first
+read "Pharisee" as hypocrite; the deep note's scholars.
