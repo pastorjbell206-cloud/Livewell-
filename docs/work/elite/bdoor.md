@@ -3342,3 +3342,215 @@ Gospels together: 89 chapters, 545 passages, 326,006 plain words.
 ### Next
 
 Luke is finished, and so are the four Gospels. Nothing was stopped early.
+
+## Genesis: book page and chapters 1 to 3 (2026-11-19)
+
+The first Old Testament book in this work.
+
+### The code change: the third part, named for its testament
+
+A Gospel passage's third part is "The Old Testament behind it" (field `ot`).
+That cannot be right for Genesis. An Old Testament passage now carries its
+third part in a new optional field, `later`, shown as "Where the Bible takes
+this up" (later Old Testament and New Testament use of the passage), in the
+same third place, with its own icon. `PlainPassages.tsx` draws a part only
+when its field is present, so the 89 Gospel chapters render exactly as before.
+
+`validate-bible-notes.mjs`: a New Testament passage may not have `later` and
+keeps its old strict check (`ot` must name an Old Testament book, the Law,
+the Prophets, the Psalms or Scripture; `OT_FIELD_KNOWN` still empty). An Old
+Testament passage may not have `ot`; its `later` must name at least one book
+of the Bible other than its own, and "What it asks" may not be the only
+field that does. Tried by hand: a `later` field put into Mark 1 fails.
+
+Two small changes to the book page for a book that is not a Gospel:
+`BookTeaching.tsx` shows the shared Gospel "Go deeper" list (how to read the
+Gospels, the parables, the Pharisees, the Herods, the New Testament's text)
+only on the four Gospels; other books keep only "How to study the Bible" and
+their own pages. And a guide may carry `mapNote`, one line above its map for
+what the drawing cannot show (checked as prose by the validator).
+
+Tests (`teaching.test.tsx`, 22 now): Mark 1 renders its old part names in
+the old order and no new heading; a synthetic Old Testament passage renders
+"Where the Bible takes this up" third; every plain file uses its own
+testament's field; the four Gospels keep the whole shared Go deeper list and
+no map line; Genesis's guide, map, and Genesis 1 to 3 rendered from the real
+files with the new name third in every passage.
+
+### The map
+
+`BookMap.tsx` has a fixed frame (34.45 to 36.30 east, 31.60 to 33.68 north,
+drawn for the land of Jesus' day). It cannot take a wider frame as data, and
+it was not redesigned. Hebron (31.53) and Beersheba (31.24) fall below its
+edge, so the brief's own list could not all be drawn. Genesis's map shows
+eight places inside the frame: Dothan, Shechem, Bethel, Bethlehem, and four
+regions placed roughly (Moriah, said to be uncertain and drawn at Jerusalem
+after 2 Chronicles 3:1; the plain of the Jordan, with Sodom's site said to be
+unknown; Peniel by the Jabbok; Gilead). The line above the map: "This map is
+drawn for the middle of the land. Hebron and Mamre, Beersheba and the Negev,
+where Abraham and Isaac spent many years, lie just south of its edge. Ur and
+Haran to the north-east, and Egypt to the south-west, lie far beyond it." A
+wider map, with Mesopotamia, Canaan and Egypt, is needed for Genesis and for
+Exodus; that is for the lead to decide.
+
+### The book page (`/study/bible/genesis`, same address)
+
+Data only, in `client/public/bible/notes/genesis/intro.json`, field
+`teaching`, added at the end of the file in its own layout (the diff adds
+lines and changes only the closing brace). Thirteen parts: Genesis in a
+minute; The first book of the Torah; Who wrote it, and how we know; When,
+and for whom; How Genesis is built; What kind of writing it is; Genesis and
+its neighbors; The big themes; The covenants with Noah and Abraham; The
+world of Abraham's family; When did the patriarchs live?; How the New
+Testament reads Genesis; How Jews and Christians have read it. Then 13 hard
+passages (1:1, 1:26, 2:4, 3:15, 4:17, 6:1-4, 6:6, 9:20-27, 11:1-9, 19, 22,
+34, 38), 13 key words, a timeline of 19 entries (the story's entries
+relative; dates only where a date is honestly statable), the map, and six
+Go deeper pages (the Genesis 1 answer, the Old Testament world portrait and
+the four guides).
+
+Words: 5,518 in the thirteen parts; 1,304 in the lists, timeline and map.
+
+Authorship, the sentences on the page: "Genesis never names its author. No
+verse says who wrote it." ... "Christians who confess the Bible as God's
+word hold more than one of these views. These notes do not settle the
+question, and the book's authority does not hang on knowing the writer's
+name."
+
+"The curse of Ham", the sentences on the page: "Yet for centuries this
+passage was twisted. From about the fifteenth century the curse was moved
+from Canaan to Ham and tied to Black Africans. Many writers and preachers
+used this so-called ‘curse of Ham’ to claim that God had made Africans to be
+slaves. In America it was preached from pulpits to defend slavery and,
+later, segregation. This teaching is false and evil. These notes name it and
+reject it. The text curses Canaan, not Ham, and it says nothing about Africa
+or about race."
+
+### Chapters 1 to 3 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Genesis 1 | 5 (in the beginning, God; days one to three: God makes room; days four to six: God fills what he made; male and female, in God's image; food for all, and ‘very good’) | 3,120 |
+| Genesis 2 | 4 (the seventh day: God rests; dust and breath; a garden, a task, and one command; a helper, and one flesh) | 2,724 |
+| Genesis 3 | 5 (‘Did God really say?’; ‘Where are you?’; the serpent and the woman's seed; pain, rule, toil and dust; garments of skin, and the guarded way) | 3,590 |
+| Total | 14 | 9,434 |
+
+After each chapter every passage was printed field by field and read: all
+14 sit under their right headings. `"plain": true` was added at the end of
+`genesis/1.json` to `3.json` with no other change.
+
+3:16, the sentences on the page: "‘He will rule over you’ must be read
+carefully. It describes what sin will do to the relationship between men
+and women. It is part of the curse, not a command." ... "This verse has been
+used to excuse the domination and abuse of women ... That is a terrible
+misuse of Scripture." Then the Mark 10 safety wording, word for word.
+
+### Sources
+
+All in `bdoor-ledger.md` under "Genesis's book page" and "The plain notes on
+Genesis 1" to "3". 21 web searches: 16 for the book page, then 1, 1 and 3.
+Main sources: Astruc (1753); Wellhausen (1878, 1883); Van Seters (1975),
+Schmid, Rendtorff (1977); Cassuto (Hebrew 1941, English 1961); P. J.
+Wiseman (1936); Atrahasis (copy about 1650 BC); Gilgamesh XI and George
+Smith (3 December 1872); Woolley at Ur (1922 to 1934); the Laws of
+Hammurabi 144 to 147; the Nuzi debate (Selman; Thompson 1974); the 2013 Tel
+Aviv camel study; Albright and Kitchen (BAR 1995); Goldenberg (2003) and
+reviews on the "curse of Ham"; Ibn Ezra and Nahmanides; the sons of God
+readings; the Sodom sites; Rosh Hashanah; the Septuagint's date; Tell
+Fekheriye (1979); Wenham (1986); Wisdom 2:24; Irenaeus, Against Heresies
+5.21; Western and Orthodox accounts of original sin. Earlier rows reused
+from the world portrait's ledger (exile, Cyrus, Merneptah) and the site's
+guides and Honest Answer. Hebrew counts (berit 27 in Genesis; bara 53;
+tselem 17; ezer 21; tsela 31; toledot 13 in Genesis) and shared Hebrew words
+are a script over the repository's Strong's numbers.
+
+### Cut or narrowed
+
+Cut: the Mari donkey covenant; the count of Genesis copies among the Dead
+Sea Scrolls (its timeline entry); Genesis Rabbah, Rashi, Ramban and the
+synagogue's yearly cycle; Lambert's date for Enuma Elish; the Sumerian King
+List; Adapa; the Timna snake; Kramer's rib pun; the king's garden as a sign
+of power; every scholar in the deep notes not checked this run. Narrowed:
+Eden "usually explained as ‘delight’ or as ‘a well-watered place’"; the
+Wisdom of Solomon "which many read as" the first link to the devil; Wenham
+"has argued"; camels "the debate goes on"; Moriah "uncertain"; Sodom "not
+known".
+
+### Contested matters, and how they are stated
+
+Authorship and date (tradition, the text's clues, the documentary hypothesis
+and later models, conservative replies; no side). The setting (Israel
+leaving Egypt; the exile; "These notes do not choose"). The days, the age of
+the earth and evolution: the six readings as the Honest Answer gives them,
+"Christians differ, and these notes do not settle it", and what all confess.
+A historical Adam: the same words, pointed to the answer. Genesis and its
+neighbors (borrowing, shared memory, a shared language; "These notes do not
+choose"). The Nuzi parallels (with caution). The patriarchs' dates (no
+side). ‘Us’ in 1:26 (three readings). Light before the sun (three answers).
+The two creation accounts (views). Roles in marriage and church
+(complementarian and egalitarian, "Christians differ ... and these notes do
+not settle it"; no reading may belittle women). The knowledge of good and
+evil (readings). Original sin (Western and Eastern). 3:15 (the first gospel
+reading and the plainer reading, held together, no choice). ‘Desire’ in 3:16
+(two readings). The death threatened in 2:17 and death entering the world
+(three views, no side). The garments as sacrifice ("The text does not say
+so").
+
+### Care lines included
+
+1:26-28: male and female equally in God's image; rule is not a licence to
+destroy. 2:18-25: single, widowed, divorced and same-sex-attracted readers
+("you are made in God's image like every other reader, and the church owes
+you love and a place at the table, never contempt"), the historic teaching on
+marriage not denied, "not every question people bring to this passage can be
+settled here". 3:1-7: no reading blames Eve more than Adam (Romans 5:12
+names Adam). 3:16-19: the Mark 10 safety wording word for word; childbirth
+pain, miscarriage and childlessness not a personal punishment. No phone
+number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` after each piece: pass. At the end, all 36 commands
+of the content-gates step in ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 92 chapters in
+plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732
+entries up to date; passage index 623 files match; verify-sources 22 texts
+intact). `pnpm check`: exit 0. `pnpm test`: 146 files passed, 7 skipped;
+1,668 tests passed, 73 skipped. ESLint on the changed code and test files:
+clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,028
+pages), `pnpm run audit:canonicals`: exit 0 each.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4606; Playwright with
+`/api/trpc`, `/api/track` and `/_vercel/*` stubbed. `/study/bible/genesis`
+at 390 and 1440, day and night: 18 contents entries, no sideways scroll, no
+page errors, the map line shown, no Gospel Go deeper pages. The first look
+found the Jabbok name running off the drawing and over "Beyond the Jordan",
+and Shechem's name on a mark; the data's names and label positions were
+changed (Peniel, Bethlehem, Shechem), the file copied into the served build
+and the server restarted by its PID (it caches gzipped files); a script then
+found no name over another name, over a mark, or outside the drawing, at
+both widths, day and night. The build was not rerun for this data-only fix;
+the validator, the teaching tests and the gates above cover the file.
+`/study/bible/genesis/1` to `/3` at 390 and 1440: every passage heading, its
+part headings in order and the first 60 characters under each matched the
+data (5 of 5, 4 of 4, 5 of 5 at each width), and the third part reads
+"Where the Bible takes this up" in every passage. `/study/bible/mark/1`,
+`/matthew/5`, `/john/3`, `/luke/15` at 390: every passage matched its data
+(9, 9, 5, 5), the third part reads "The Old Testament behind it" (one Mark 1
+passage has no `ot`, as before, so its third part is "What it asks"), and
+the new name appears nowhere. Screenshots: `/home/user/elite-shots/bdoor/gn-*`
+and `gn1-*` to `gn3-*`. Lighthouse not run (the code change adds one optional
+part to an already lazy chunk and one line above a lazy map). Server stopped
+by PID, dist/ deleted, no lh-*.json.
+
+### Still unverified
+
+Ancient texts' exact words (all paraphrased); Schmid's year; the Septuagint
+date beyond "the early third century BC"; whether all 29 other uses of tsela
+mean a side (said "usually"); the claim that most modern Bibles read
+Romans 5:12 as "because all sinned" (the BSB does; others not checked).
+
+### Next
+
+Genesis 4 onward in plain words, in the same shape. A wider map frame for
+Genesis and Exodus waits on the lead.

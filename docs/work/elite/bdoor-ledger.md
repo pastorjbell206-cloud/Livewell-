@@ -3438,7 +3438,7 @@ repository's Hebrew text (Strong's numbers in `client/public/bible/ch/`).
 | Binding of Isaac read on the second day of Rosh Hashanah in traditional practice | Jewish liturgy | Search: myjewishlearning.com; thetorah.com; bj.org |
 | Origen, Basil, Augustine on the days | Honest Answer on Genesis 1 | Repository (the answer's sources) |
 | The Pentateuch translated into Greek in the early third century BC for Greek-speaking Jews in Egypt | Septuagint | Search: uasvbible.org; intertextual.bible |
-| Map positions | Approximate modern sites (Dothan, Shechem/Tell Balata, Bethel/Beitin, Bethlehem); Moriah, the Jordan plain, the Jabbok and Gilead are regions placed roughly and said so | Not a historical claim |
+| Map positions | Approximate modern sites (Dothan, Shechem/Tell Balata, Bethel/Beitin, Bethlehem); Moriah, the Jordan plain, Peniel (by the Jabbok) and Gilead are regions placed roughly and said so | Not a historical claim |
 
 Left out: the Mari donkey-killing covenant (not found); the number of
 Genesis copies among the Dead Sea Scrolls and their agreement with the later
