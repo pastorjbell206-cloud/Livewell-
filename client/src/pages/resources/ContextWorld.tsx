@@ -6,7 +6,7 @@
  * scripts/build-context-index.mjs), so a new world is a new file.
  *
  * The page: one plate at the top, a contents list of the parts, each part in
- * the reading type with the Gospel passages it opens (quoted from the Berean
+ * the reading type with the Bible passages it opens (quoted from the Berean
  * Standard Bible, each linked to its chapter), the guides filed under the same
  * world, and the sources. On a long read a small bar at the foot of the screen
  * names the part you are in and goes back to the contents.
