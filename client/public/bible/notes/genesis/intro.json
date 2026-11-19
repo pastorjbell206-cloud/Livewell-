@@ -569,7 +569,12 @@
           "33:18",
           "34:2"
         ],
-        "line": "Abraham's first stop in Canaan, where God promises the land and Abraham builds an altar (12:6-7). Jacob later camps here, and Dinah is attacked here (chapter 34)."
+        "line": "Abraham's first stop in Canaan, where God promises the land and Abraham builds an altar (12:6-7). Jacob later camps here, and Dinah is attacked here (chapter 34).",
+        "label": {
+          "dx": -10,
+          "dy": 4,
+          "anchor": "end"
+        }
       },
       {
         "id": "bethel",
@@ -601,7 +606,7 @@
       },
       {
         "id": "bethlehem",
-        "name": "Bethlehem (Ephrath)",
+        "name": "Bethlehem",
         "lat": 31.705,
         "lon": 35.2,
         "refs": [
@@ -633,16 +638,21 @@
         }
       },
       {
-        "id": "jabbok",
-        "name": "The Jabbok ford (Peniel)",
+        "id": "peniel",
+        "name": "Peniel",
         "lat": 32.18,
-        "lon": 35.64,
+        "lon": 35.58,
         "refs": [
           "32:22",
           "32:30"
         ],
-        "line": "Jacob crosses the Jabbok at night and wrestles until dawn. He calls the place Peniel, ‘face of God’ (32:22-31). The exact spot is uncertain.",
-        "region": true
+        "line": "By the ford of the Jabbok, a river that runs down into the Jordan from the east, Jacob wrestles until dawn. He calls the place Peniel, ‘face of God’ (32:22-31). The exact spot is uncertain.",
+        "region": true,
+        "label": {
+          "dx": -10,
+          "dy": 10,
+          "anchor": "end"
+        }
       },
       {
         "id": "gilead",

@@ -154,7 +154,7 @@ describe("Genesis's teaching introduction, the first Old Testament book", () => 
 
   it("draws Canaan's places only, north to south, with Moriah and the regions placed roughly", () => {
     renderWithProviders(<BookMap slug="genesis" bookName="Genesis" places={gn.teaching!.map} />);
-    expect(screen.getByRole("img", { name: "A simple map of the places in Genesis, from Dothan in the north to Bethlehem (Ephrath) in the south." })).toBeTruthy();
+    expect(screen.getByRole("img", { name: "A simple map of the places in Genesis, from Dothan in the north to Bethlehem in the south." })).toBeTruthy();
     fireEvent.click(screen.getByRole("button", { name: "Moriah" }));
     expect(screen.getByRole("link", { name: "Genesis 22:2" }).getAttribute("href")).toBe("/study/bible/genesis/22#v2");
     expect(screen.getByText(/Where exactly is uncertain/)).toBeTruthy();
