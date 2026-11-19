@@ -1739,3 +1739,34 @@ Remember, Benedict XVI, Cargal, Crossan and Cohen by name; the reading of
 "our children" as the generation of AD 70 (not checked this run); Licona and
 Geisler; the harrowing of hell; Procula's feast days and the letter to Fulvia;
 the claim that the soldiers were recruited locally.
+
+## The plain notes on Matthew 28 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/28.json`. Six searches for this
+chapter, with the earlier ledger (Mark 16 for the women as witnesses, Celsus
+and Origen, the first day of the week; the book page for the five
+teachings).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Josephus, Antiquities 4.219; Celsus's "a half-frantic woman" as Origen reports; all four Gospels make women first; many historians weigh this (Mark 16 wording) | 1-10 | Earlier ledger (Mark 16) | Earlier ledger |
+| Earthquake, the angel on the stone, the guards like dead men, Jesus meeting the women: only in Matthew | 1-10 | BSB comparison | BSB text |
+| 16:21; 17:23; 20:19; 26:32; Isaiah 25:8; Daniel 12:2; Daniel 10:6; 27:56, 61 | 1-10 | BSB | BSB text |
+| Differences among the four accounts (women, one or two angels, Galilee and Jerusalem); explanations (selection and fitting together; honest reports; legend) | 1-10 | Gospel texts; harmonies and critics | Search: blueletterbible.org (Stewart) "Are the reports ... contradictory"; credomag.com; krharriman.substack.com. Luke 24:4; John 20:12 BSB. Ladd not named |
+| 1 Corinthians 15:3-8, Paul in the 50s | 1-10 | Earlier ledger (Mark 16) | Earlier ledger |
+| "Circulated among the Jews to this very day" read as the rumour Matthew answers, not a statement about Jewish people | 11-15 | BSB; book page "A Jewish book, and a hard history" | Consistent with the book page; pointer to 27:15-26 |
+| Justin Martyr, Dialogue with Trypho 108: the charge that the disciples stole him by night still spread | 11-15 | Justin | Search: logoslibrary.org trypho/108; bkv.unifr.ch; en.wikipedia.org Stolen body hypothesis. Paraphrased; no year given |
+| Exodus 23:8; 26:15; Acts 5:18, 40; 28:14 | 11-15 | BSB | BSB text |
+| Distazō only here and 14:31; hesitation rather than settled unbelief; "some" partitive (some of the eleven) or others present | 16-17 | NET notes; France (as summarised) | Search: en.wikipedia.org Matthew 28:17; biblia.com NET notes; openbible.com. No scholar named |
+| 4:8-9; 5:1; 17:1-2; Exodus 3:12; Luke 24:11; Mark 9:24 | 16-17 | BSB | BSB text |
+| "All nations": Gentiles only (Hare and Harrington, CBQ 1975) or every people including Israel (Meier, CBQ 1977); 10:5-6; 15:24; 2:1; 8:11 | 18-20 | Scholarship as cited | Search: cambridge.org HTR note; hts.org.za (Lee and Viljoen); biblesociety.org.uk. Stated as "scholars discuss"; no names |
+| Didache 7 (around AD 100): baptism in the name of the Father, Son and Holy Spirit, in running water, or pouring three times on the head | 18-20 | Didache | Search: cts.perseids.org Didache 7.1-7.4; reformedforum.org "Baptism in the Didache"; date from the earlier ledger. Paraphrased |
+| Daniel 7:14; Genesis 22:18; 1:1; 1:23; Exodus 3:12; Joshua 1:9; Acts 2:38; Romans 6:4 | 18-20 | BSB | BSB text |
+| Views of baptism (infants and believers; mode; means of grace or sign); "in the name of Jesus Christ" in Acts read by most as describing Christian baptism | 18-20 | Standard confessional positions; deep note | Stated as views |
+
+Left out: Eusebius's shorter citations of 28:19 and Conybeare (every Greek
+manuscript has the threefold name, as the deep note says; the site does not
+raise the question); Oneness Pentecostal practice; Reimarus; Craig, Brown and
+Ferguson by name; the Roman penalty for sleeping on guard; the claim that
+many apostles died as martyrs (narrowed to Acts 5); Hare, Harrington and
+Meier by name.
