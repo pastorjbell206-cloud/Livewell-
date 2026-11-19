@@ -131,3 +131,17 @@ reading; no single sentence of the portrait rests on them alone.
   excavated: stated as "often called".
 - Meyers's own page for the grinding estimate.
 - Where the Mesha Stele and the Laws of Hammurabi now stand (the Louvre), named in the source list: standard museum facts, not searched; the Merneptah Stele in Cairo was confirmed.
+
+## Checks of 2026-11-19 (run with the Roman world portrait, key wrom)
+
+The six facts the list above marks "not searched" or "unverified" were
+searched. Two sentences changed; four held.
+
+| Claim | How checked | Result |
+|---|---|---|
+| The Dead Sea as "the lowest place on earth" | Search: Geology.com, LiveScience (NOAA), Wikipedia "Dead Sea" (shore about 430 m below sea level and falling). The lowest point under ice (Bentley Subglacial Trench) and the ocean floor are lower | **Corrected**: "the lowest place on earth" became "whose shore is the lowest dry land on earth" |
+| Persian province name Yehud | Search: Yehud Medinata (Aramaic name of the province in the satrapy Beyond the River); the YHD silver coins and jar-handle stamp impressions (Lipschits and Vanderhooft, 2011) | Holds |
+| No coins for most of Old Testament history | Search: Lydian electrum coins of the late seventh century BC (the deposit under the Artemision at Ephesus; Herodotus 1.94 credits the Lydians); Judah's own YHD coins from about the mid fourth century BC (COJS; Jewish Virtual Library) | Holds |
+| Gezer calendar months "more harvest" and "tending vines" | Search: Albright (Context of Scripture) "vine-tending"; others "pruning" (root zmr); the line after the barley harvest is read "harvest and measuring", "harvest and feasting" or "harvest and finishing" (Seth Sanders) | **Corrected**: "more harvest" became "a month of harvest and measuring (some read feasting; the word is argued)"; "tending vines" holds |
+| The Louvre as home of the Mesha Stele and the Laws of Hammurabi | Search: Louvre record Sb 8 (Hammurabi, from Susa, found by de Morgan's mission 1901 to 1902, Richelieu wing room 227); Mesha Stele AO 5066 in the Louvre | Holds |
+| Carol Meyers's grinding estimate, "two hours or more a day for one household" | Search: an essay in the Hebraic Thought series "A Gender Study" whose author refers to "my Rediscovering Eve" estimates at least 2 to 3 hours a day to make flour for a family of six, and notes several sets of grinding tools in one house; the OUP blog gives "two or more hours". The book's own page was not seen | Holds as worded ("Estimates drawn from Carol Meyers's work"); the page number is still unseen |
