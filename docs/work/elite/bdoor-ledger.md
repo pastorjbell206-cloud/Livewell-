@@ -2422,3 +2422,28 @@ Cut: the "paid in full" claim (doubtful; the page is silent on it); Cyprian on t
 | 2 Samuel 7:12-16; Isaiah 61:1 | 30-31 | BSB | BSB text |
 
 Cut: the 1969 calendar change; Hippolytus and the Song of Songs; Trent's year and canon wording; the Small Catechism's "as valid and certain" sentence (not confirmed in the search); Calvin and the 1689 Confession; Domitian's rejection of the title (Statius); the medical and Jaubert matters (not needed); Pentecost theories by name.
+
+## The plain notes on John 21 (2026-11-19)
+
+`client/public/bible/notes/john/plain/21.json`. 4 web searches. The Catholic, Orthodox and Protestant readings of Peter's place follow the Matthew 16 note's verified wording (Vatican I, the Catechism, the Orthodox position stated generally, "the text says nothing of successors").
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Chapter 21 likely added in the final edition; in every surviving copy that has the ending; 21:23 may mean the disciple had died | 1-14, 20-23 | Book page "Two passages" | Repository |
+| Anthrakia only at 18:18 and 21:9 | 1-14, 15-17 | Greek text in the repository | Script (earlier, John 18) |
+| Luke 5:4-10; Jeremiah 16:16; Ezekiel 47:10; Mark 1:17; Isaiah 55:1 | 1-14 | BSB | BSB text |
+| 153: Jerome (Commentary on Ezekiel 47) said natural writers counted 153 kinds of fish (Oppian cited); no such exact count found in them; Augustine: 153 the sum of 1 to 17, 17 as 10 and 7; other guesses; "someone counted" | 1-14 | Chris Keith (historicaljesusresearch blog, Baker); Brown and Carson as summarised; commentaries | Search: christianstudylibrary.org; openbible.com 21:11; historicaljesusresearch.blogspot.com. Guesses named as guesses; no scholar named |
+| Agapaō in 21:15-16 (Jesus), phileō in Peter's answers and in 21:17; agapa in 3:35 and philei in 5:20 of the Father's love; boske / poimaine | 15-17 | Greek text in the repository | Script |
+| The two views of the love words; scholars divided | 15-17 | Constable's notes; psephizo.com (Paul); BDAG as summarised | Search. No names on the page |
+| 18:17, 25, 27; 1:42; Mark 14:29; Ezekiel 34:2; Jeremiah 3:15; Isaiah 40:11; 10:11; 1 Peter 5:2; Psalm 51:12; Matthew 16:18 | 15-17 | BSB | BSB text |
+| Vatican I, Pastor Aeternus 1 (1870), citing John 21:15-17: primacy of jurisdiction conferred on Peter alone; supreme shepherd and ruler of the whole fold | 15-17 | Pastor Aeternus | Search: ewtn.com; churchcontroversies.com; catholictheology.info. Paraphrased |
+| Catechism of the Catholic Church 881: the keys and "shepherd of the whole flock" (Jn 21:15-17) | 15-17 | Catechism | Search (as above). Paraphrased |
+| Orthodox and Protestant readings (Matthew 16 wording; restoration; 1 Peter 5:2) | 15-17 | Matthew 16 plain note; hprweb.com on the Protestant reinstatement reading | Repository; search |
+| 13:36-37; 12:33; 18:32; 2 Peter 1:14 | 18-19 | BSB | BSB text |
+| "Stretch out your hands" read by early writers as crucifixion (Tertullian, Scorpiace 15: "girded by another" and bound to the cross) | 18-19 | Tertullian as cited | Search: bam.sites.uiowa.edu "How did the Apostles Peter and Paul die?". Tertullian not named on the page |
+| 1 Clement 5 (late first century): Peter's many labors and witness, the manner not told; Eusebius (Church History 2.25 and 3.1): crucified at Rome under Nero; Origen's report that he asked to be crucified head downward; marked as tradition | 18-19 | Eusebius; 1 Clement | Search: bkv.unifr.ch Eusebius; sacred-texts.com; biblehub.com; uiowa.edu. Book numbers not given on the page |
+| Psalm 71:9; Psalm 92:14; Acts 4:13, 19-20 | 18-19 | BSB | BSB text |
+| Micah 6:8; Ezekiel 18:20 | 20-23 | BSB | BSB text |
+| Who wrote it (book page wording); Deuteronomy 19:15; 1:1-3; 20:31 | 24-25 | Book page; BSB | Repository; BSB text |
+
+Cut: Oppian by name; the gematria proposals by name (Gog, En-eglaim); Trench, Carson, Barrett, Butler and Brown by name; Catechism 553 (not found in the search); Tertullian and the Scorpiace by name; the date of Peter's death (64 or 67); the Vatican excavations; Ut Unum Sint.
