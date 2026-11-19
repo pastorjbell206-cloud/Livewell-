@@ -55,3 +55,46 @@ phrase confirmed in a search.
 | Six thousand crucified from Capua to Rome after Spartacus, 71 BC | Appian, Civil Wars 1.120 | Verified (search): Livius (Appian on Spartacus), Perseus, Encyclopaedia Romana |
 | The word cross far from a citizen's body, thoughts, eyes, ears | Cicero, For Rabirius 16 | The site's guide honor-status-and-the-cross (paraphrase there and here); the section number not separately searched |
 | "the form of a servant"; "even death on a cross" | Philippians 2:7-8 | BSB text |
+
+## Part 3. The household: slaves, freedmen and patrons
+
+| Claim | Source | How checked |
+|---|---|---|
+| Aristotle's three pairs; household codes follow them | Aristotle, Politics 1 | The site's guide household-codes-in-context |
+| Lydia, dealer in purple from Thyatira, baptized with her household, opens her house | Acts 16:14-15 | BSB text |
+| Churches in the houses of Prisca and Aquila and of Philemon | Romans 16:3-5; Philemon 1:2 | BSB text |
+| Slaves about a tenth of the empire's people, a lower limit; Italy much higher | Walter Scheidel, JRS 87 (1997); JRS 95 (2005) | Verified (search): Cambridge JRS abstracts and quotations ("my estimate of 10 per cent for the Empire as a whole seems rather a lower limit"; Italy up to 1.5 million) |
+| Slaves did skilled work; sources of slaves (war, birth, exposure) | standard | Standard; debt slavery cut because it was abolished for citizens and not checked for the provinces |
+| Slave girl's income; owners dragged Paul before the authorities | Acts 16:16-19 | BSB text |
+| Frequent manumission in cities; formal manumission by a citizen usually gave citizenship; freedmen owed duties to the former owner as patron | standard (Roman law) | Standard; worded "usually" because informal manumission did not give full citizenship |
+| Corinth founded largely with freedmen | Strabo 8.6.23 | See part 1 |
+| "Household of Caesar" most likely the emperor's slaves and freedmen | Philippians 4:22; Lightfoot's reading | Standard interpretation; stated as "most likely" |
+| Philemon 1:16 wording | Philemon 1:16 | BSB text |
+| Pliny 9.21 to Sabinianus for a freedman who angered him; often compared with Philemon | Pliny, Letters 9.21 | Verified (search): intertextual.bible "Philemon 1:8 / Pliny letter to Sabinianus", F. F. Bruce in BJRL, Gutenberg text listed. "Says the man is sorry, urges him to forgive": the gist of the letter, not quoted |
+| Salutatio at dawn in togas; sportula; Martial and Juvenal mock it | patronage | Verified (search): Britannica "clientship" (salutatores, togati), Wikipedia "Patronage in ancient Rome", Cambridge Latin Course notes |
+| Seneca, On Benefits | Seneca | The site's guide patronage-and-grace |
+| Phoebe; "great help to many people, including me"; prostatis | Romans 16:1-2 | BSB text; prostatis from the site's guide patronage-and-grace |
+| Lynn Cohick on women as owners and benefactors | Cohick, Women in the World of the Earliest Christians (2009) | Already a source of the site's guide household-codes-in-context; the summary is general and not checked page by page |
+| Onesimus means useful; the pun of Philemon 11 | Philemon 1:10-11 | BSB text; the meaning of the name is standard |
+
+## Part 4. Gods, the emperor and the words on the coins
+
+| Claim | Source | How checked |
+|---|---|---|
+| Household shrines (lararia) in many Pompeian houses | archaeology | Standard; no number given |
+| Athens full of idols; altar TO AN UNKNOWN GOD; Lystra, Zeus and Hermes, the priest of Zeus with bulls and wreaths; "Great is Artemis" for two hours | Acts 17:16, 23; 14:11-13; 19:34 | BSB text |
+| 29 BC Augustus allowed Asia a temple to Roma and himself at Pergamum | Cassius Dio 51.20.6-7; Tacitus, Annals 4.37 | Verified (search): Madsen, Classical Quarterly, on Dio 51.20.6-8; lexundria Dio 51.20 |
+| Temple of the Sebastoi at Ephesus, AD 89/90 under Domitian; first neokoros title for it | Friesen, Twice Neokoros (1993) | Verified (search): Wikipedia "Temple of the Sebastoi" citing Friesen; BAS endnote |
+| Price, Rituals and Power (1984) | Simon Price | A standard book; its argument summarised generally, cited in Madsen's footnotes |
+| Revelation 2:13 "throne of Satan"; readings: altar of Zeus, Asclepius, imperial temple | interpretation | BSB text; the three readings are the standard options in commentaries, given as options |
+| Tiberius denarius: TI CAESAR DIVI AVG F AVGVSTVS, son of the divine Augustus; reverse seated woman, Livia uncertain; PONTIF MAXIM; called the tribute penny | coin | Verified (search): Museums Victoria, MFA Boston, Penn Museum records |
+| 48 BC Ephesus inscription for Julius Caesar: god manifest, common savior of human life; among the earliest divine honors for Romans in the Greek east | SIG 760 | Verified (search): attalus.org SIG 760 ("the manifest god ... and the common saviour of humankind"), Roger Pearse ("common savior of the life of mankind"), PHI dates it 48 BC. Not quoted on the page; paraphrased in the guide's wording |
+| Priene calendar decree, about 9 BC, proconsul Paullus Fabius Maximus; year to begin on Augustus's birthday; savior; good news (euangelia) began with his birth; copies in other cities | Priene inscription | Verified (search): Wikipedia "Priene calendar inscription" (citing Ehrenberg and Jones), Paullus Fabius Maximus, SCU artifact page; the site's guide gospel-against-empire |
+| Mark 1:1 wording | Mark 1:1 | BSB text |
+| Augustus refused the title dominus as an insult and rebuked those who used it | Suetonius, Augustus 53 | Verified (search): Rolfe translation quoted in results ("always shrank from the title of Lord as reproachful and insulting") |
+| Papyri call Nero the lord | Deissmann, Light from the Ancient East | The site's guide gospel-against-empire; Deissmann's own pages not reached |
+| Acts 25:26: Greek "the lord" (to kyrio), BSB "our sovereign one" | Acts 25:26 | BSB text; the Greek word is in every critical text |
+| Domitian addressed as "lord and god" | Suetonius, Domitian 13 | The site's guide gospel-against-empire |
+| "many so-called gods and lords"; "one Lord, Jesus Christ" | 1 Corinthians 8:5-6 | BSB text |
+| Wright counter-imperial; Barclay: Rome marginal to Paul | Wright (2013); Barclay | The site's guide gospel-against-empire |
+| Weima (NTS 2012) argues "peace and security" echoes Roman propaganda; White (NTS 2013) says it cannot be shown to be an identifiable slogan in Paul's time | 1 Thessalonians 5:3 | Verified (search): Cambridge NTS abstracts of both articles; Bammel (1960) first proposed it |
