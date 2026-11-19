@@ -6589,3 +6589,42 @@ One web search.
 | "Clings" dabaq (H1692) in 63:8, Genesis 2:24, Ruth 1:14 | 6-11 | Repository word data | Script |
 | Watches of the night; jackals; oaths in God's name | 6-11 | Repository deep note (cultural) | Site's own teaching |
 | Matthew 4:2; John 4:14; Matthew 5:6; Philippians 1:21; John 10:28; Ruth 2:12 | all | BSB | BSB text |
+
+Psalm 62's note was corrected in the next commit: Romans 2:6 uses words found in
+both 62:12 and Proverbs 24:12 (BSB), so the note no longer says Paul quotes the
+psalm alone.
+
+## The plain notes on Psalm 64 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Archery from cover; slander as a weapon in courts and towns | Repository deep note (cultural) | Site's own teaching |
+| "Suddenly" in 64:4 and 64:7 | BSB | BSB text |
+| Head-shaking as scorn | Repository deep note | Site's own teaching |
+| Proverbs 26:27; James 3:8; Luke 12:3 | BSB | BSB text |
+
+## The plain notes on Psalm 65 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Rain-fed land unlike Egypt and Mesopotamia; autumn and spring rains (Deuteronomy 11:14); Baal credited with rain | Repository deep note (cultural); BSB | BSB text |
+| A harvest festival setting (not named) | Repository deep note (historical) | Stated as "sounds like" |
+| 65:1 dumiyah "silence" (H1747), as in 62:1 | Repository word data | Script |
+| 65:3 "atone" kaphar (H3722) | Repository word data | Script (not named on the page) |
+| Acts 14:17; Matthew 5:45; Isaiah 55:10-11 | BSB | BSB text |
+
+## The plain notes on Psalm 66 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 66:6 the sea (Exodus 14) and "the river" (H5104) fitting the Jordan (Joshua 3:17) | Repository word data; repository deep note | Script; BSB text |
+| Refining silver | Repository deep note (cultural) | Site's own teaching |
+| No event named | Repository deep note (historical) | Proposals (701 BC, the return) not repeated |
+| 66:18 "cherished" as holding on to sin; Isaiah 59:2; Proverbs 28:13 | Repository deep note (`hard`); BSB | BSB text |
+| Isaiah 43:2; Malachi 3:3; 1 Peter 1:7 | BSB | BSB text |
