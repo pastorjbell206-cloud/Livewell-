@@ -3585,3 +3585,27 @@ chapter.
 | Noah and nuach; nacham in 5:29 and 6:6-7 | 25-32 | Hebrew text | Script (H5162, H5117) |
 | Methuselah's death in the flood year (187 + 182 + 600 = 969) | 25-32 | BSB numbers | Repository (arithmetic on 5:25, 5:28, 7:6) |
 | Genesis 8:21; Matthew 11:28; Romans 8:21; Revelation 22:3; 1 Peter 3:20; Acts 17:28 | 25-32 | BSB | Repository |
+
+## The plain notes on Genesis 6 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/6.json`. Two web searches for this
+chapter, with the book page's rows (sons of God, Atrahasis, Gilgamesh).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Saw, good, took: tov in 3:6 and 6:2 | 1-4 | Hebrew text | Script (H2896) |
+| Sons of God: angels (early readers; Job 1:6; Jude 1:6 and 2 Peter 2:4 as possible allusions); Seth's line (most Christian teachers from the fourth century, Augustine); rulers | 1-4 | Interpretation history | Book page row (search); new search for the rulers view: Targum Onqelos and Pseudo-Jonathan ‘sons of the great ones’, Neofiti ‘sons of judges’, Symmachus ‘sons of the rulers’ (Wikipedia "Sons of God"; Newman, Grace Theological Journal; oztorah.com). The page says "some ancient Jewish translations"; 1 Enoch is not named for the angel reading |
+| Nephilim's meaning uncertain; Numbers 13:33 (cited, not quoted: its BSB text holds an em-dash) | 1-4 | Lexicon; BSB | Repository. The derivation from ‘to fall’ was not checked and is not used |
+| Matthew 22:30; Job 1:6; Jude 1:6; 2 Peter 2:4-5 | 1-4 | BSB | Repository |
+| 120 years: a lifespan limit or the time before the flood | 1-4 | Repository deep note | Repository; stated as views |
+| Yetser (6:5, 8:21) from the potter's verb; atsav (6:6) and itsavon (3:16-17, 5:29) one root; nacham in 5:29 and 6:6; Noah and chen (favor) the same two letters reversed | 5-8 | Hebrew text | Script (H3336, H6087, H6093, H5162, H2580) |
+| 1 Samuel 15:11, 15:29, 15:35; Hosea 11:8; Ephesians 4:30; Ezekiel 33:11; Jeremiah 18:8 | 5-8 | BSB | Repository |
+| Regret: God spoken of in human terms; a personal God who responds; both held together | 5-8 | Repository deep notes; standard theology | Stated as views, no names |
+| Shachat in 6:11-13, 6:17; chamas, used by the prophets (Amos 3:10) | 9-13 | Hebrew text | Script (H7843, H2555) |
+| Atrahasis: the flood for noise | 9-13 | Book page row (search) | Earlier search |
+| Luke 13:4-5 (BSB wording, not the Honest Answer's ESV); the Honest Answer's point that Jesus refused that reading of a disaster; Find Help | 9-13 | BSB; Honest Answer "Why does God allow earthquakes, cancer, and animal suffering?" | Repository |
+| 2 Peter 2:5, 3:9; Hebrews 11:7; Matthew 24:37-38 | 9-13 | BSB | Repository |
+| Cubit about 18 inches; ark about 450 by 75 by 45 feet (137 by 23 by 14 meters); gopher wood unknown, cypress a guess; pitch in Mesopotamia | 14-22 | Repository deep note (`historical`, `cultural`) | Repository; given as "often reckoned" and "roughly" |
+| Gilgamesh's boat usually read as a cube (equal sides, 120 cubits) | 14-22 | Gilgamesh XI | Search: historyskills.com; imsmessenger.org; howstuffworks. The page says "usually read as a cube" and gives no deck count (sources differ) |
+| Tevah only in Genesis 6 to 9 and Exodus 2:3, 2:5; tar and pitch | 14-22 | Hebrew text; BSB | Script (H8392) |
+| 1 Peter 3:20-21 (only the dash-free words quoted); Luke 22:20; Genesis 9:9-10 | 14-22 | BSB | Repository |
