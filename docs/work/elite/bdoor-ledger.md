@@ -203,3 +203,29 @@ Left out: Gennesaret's fertility in Josephus, Bethsaida's disputed site, the
 Machaerus excavations, the Theodotus inscription, Juvenal's baskets, the
 Mishnah's blessing over bread, and the first husband's name in Josephus (all in
 the deep note, not checked on this run).
+
+## The plain notes on Mark 7 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Priests wash hands and feet before serving at the altar | 7:1-13 | Exodus 30:19-21 | BSB text |
+| The tradition of the elders taught by mouth, later written in the Mishnah (around AD 200) | 7:1-13 | Earlier ledger (Mishnah's date) | Earlier ledger |
+| Shammai and Hillel dispute whether hands are washed before or after mixing the cup | 7:1-13 | Mishnah Berakhot 8:2 | Search: mishnah.org; sacred-texts.com (Lukyn Williams, Berakhot); Wikisource translation of Berakhot 8 |
+| Qorban carved on Second Temple ossuaries near Jerusalem as a warning against reuse | 7:1-13 | Fitzmyer, "The Aramaic Qorbān Inscription from Jebel Hallet et-Tûri and Mk 7:11/Mt 15:5" (reprinted 1997); Mount Scopus ossuary (Cathedra, 2007) | Search: orion-bibliography.huji.ac.il; cris.biu.ac.il "A New 'Qorban' Inscription on an Ossuary from Jerusalem". Stated generally, with no find-spot named |
+| A vow concerning a man and his own parents may be opened (the Sages agree with Rabbi Eliezer there) | 7:1-13 | Mishnah Nedarim 9:1 | Search: jtsa.edu Nedarim 9:1; mishnah.org; sefaria.org sheet |
+| Vows not to be broken; honour parents; cursing parents | 7:1-13 | Numbers 30:2; Exodus 20:12; 21:17; Isaiah 29:13; 2 Thessalonians 2:15 | BSB text |
+| Masculine participle in 7:19 makes Jesus the one who cleanses all foods; most modern versions; the neuter (Textus Receptus, KJV) reads "purging all meats"; some scholars argue only the handwashing rules are meant | 7:14-23 | Robertson, Word Pictures; translation handbooks (UBS/SIL) | Search: biblestudytools.com Robertson on 7:19; tips.translation.bible on 7:19; freely-given.org Greek. Boyarin and Crossley (deep note) not named |
+| Heart texts; Peter's vision; Romans 14:14 | 7:14-23 | Jeremiah 17:9; Psalm 51:10; Ezekiel 36:26; Acts 10:15; Romans 14:14 | BSB text |
+| Tyrian silver shekels were the coin of the temple tax | 7:24-30 | Numismatic summaries | Search: en.wikipedia.org Tyrian shekel; coinweek.com "Graven images and the coins of ancient Tyre"; dannythedigger.com |
+| Tyre and Sidon depended on the king's country for food; "Canaanite woman"; Israel God's son; first to Israel | 7:24-30 | Acts 12:20; Matthew 15:22, 24; Exodus 4:22; Genesis 12:3; Romans 1:16 | BSB text |
+| "Lord" (kyrie) as a form of address to Jesus only at 7:28 in Mark; kynarion a little or house dog | 7:24-30 | Greek text of Mark | Repository Greek text (every vocative of G2962 in Mark 1 to 16); deep note on the diminutive (stated without taking a side on its force) |
+| Tacitus: a blind man at Alexandria asked Vespasian to moisten his eyes with spittle (about AD 69-70) | 7:31-37 | Tacitus, Histories 4.81 | Search: penelope.uchicago.edu (Thayer) Histories 4; sacred-texts.com; en.wikipedia.org "Fasting spittle" |
+| Mogilalos only at Mark 7:32 in the New Testament and only at Isaiah 35:6 in the Greek Old Testament | 7:31-37 | Thayer's lexicon; Constable's notes | Search: biblehub.com 3424; bibliaparalela.com Thayer's 3424. One low-authority site lists Exodus 4:10 too; the standard lexicon does not, and that is followed |
+| Ambrose: the ears touched and Ephphatha said before baptism, so the ears would open to the word | 7:31-37 | Ambrose, On the Sacraments 1.1-3; On the Mysteries 1.3 | Search: newadvent.org On the Mysteries; sermonindex.net On the Sacraments; crossroadsinitiative.com. Placed as "the late 300s"; no exact year |
+| Stenazō, "groan"; Isaiah 35; the Decapolis man of 5:20; eyes and ears in 8:18 | 7:31-37 | Romans 8:23; Isaiah 35:4-6; Mark 5:20; 8:18 | BSB text; repository Greek |
+
+Left out: Josephus on the Pharisees and on the Tyrians, Furstenberg's thesis,
+the Pseudo-Clementine names Justa and Bernice, Theissen by name, Pliny on
+saliva, the lectionary, and Drouais's painting (all in the deep note, not
+checked on this run). The cleansing of hands "with a fist" (7:3) is not
+discussed.
