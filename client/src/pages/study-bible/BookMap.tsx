@@ -386,7 +386,6 @@ const FRAMES: Record<MapFrameId, Frame> = {
         {(
           [
             ["THE NEGEV", 30.98, 34.62],
-            ["HILL COUNTRY", 32.62, 35.0],
           ] as const
         ).map(([t, la, lo]) => (
           <text key={t} x={x(lo)} y={y(la)} className="bk-map__region">
@@ -434,7 +433,7 @@ const FRAMES: Record<MapFrameId, Frame> = {
         )}
         {(
           [
-            ["THE GREAT SEA", 33.15, 30.4],
+            ["THE GREAT SEA", 33.0, 29.5],
             ["EGYPT", 29.3, 29.5],
             ["THE DESERT", 31.4, 39.6],
           ] as const

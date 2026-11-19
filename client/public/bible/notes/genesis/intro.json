@@ -563,7 +563,12 @@
               "11:31",
               "15:7"
             ],
-            "line": "Abraham's family sets out from ‘Ur of the Chaldeans’ (11:28-31). Ur is usually placed at Tell el-Muqayyar in southern Mesopotamia, where it is drawn here; some have proposed a northern Ur near Haran instead."
+            "line": "Abraham's family sets out from ‘Ur of the Chaldeans’ (11:28-31). Ur is usually placed at Tell el-Muqayyar in southern Mesopotamia, where it is drawn here; some have proposed a northern Ur near Haran instead.",
+            "label": {
+              "dx": 0,
+              "dy": 22,
+              "anchor": "middle"
+            }
           },
           {
             "id": "haran",
@@ -669,7 +674,12 @@
               "28:19",
               "35:1"
             ],
-            "line": "Abraham pitches his tent near here. Jacob dreams of a stairway to heaven and names the place Bethel, ‘house of God’ (28:10-22)."
+            "line": "Abraham pitches his tent near here. Jacob dreams of a stairway to heaven and names the place Bethel, ‘house of God’ (28:10-22).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
           },
           {
             "id": "moriah",
@@ -714,7 +724,12 @@
               "23:2",
               "23:19"
             ],
-            "line": "Abraham settles by the oaks of Mamre at Hebron (13:18), where three visitors come to him (chapter 18). He buys a cave here to bury Sarah (chapter 23). Mamre is usually placed just north of the town."
+            "line": "Abraham settles by the oaks of Mamre at Hebron (13:18), where three visitors come to him (chapter 18). He buys a cave here to bury Sarah (chapter 23). Mamre is usually placed just north of the town.",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
           },
           {
             "id": "beersheba",
@@ -771,9 +786,9 @@
             "line": "By the ford of the Jabbok, a river that runs down into the Jordan from the east, Jacob wrestles until dawn. He calls the place Peniel, ‘face of God’ (32:22-31). The exact spot is uncertain.",
             "region": true,
             "label": {
-              "dx": -10,
-              "dy": 10,
-              "anchor": "end"
+              "dx": 10,
+              "dy": 5,
+              "anchor": "start"
             }
           },
           {
