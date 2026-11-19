@@ -1770,3 +1770,56 @@ raise the question); Oneness Pentecostal practice; Reimarus; Craig, Brown and
 Ferguson by name; the Roman penalty for sleeping on guard; the claim that
 many apostles died as martyrs (narrowed to Acts 5); Hare, Harrington and
 Meier by name.
+
+## John's book page (teaching introduction, 2026-11-19)
+
+Every historical claim in `client/public/bible/notes/john/intro.json`, field
+`teaching`. 17 web searches for the book page. Checks rest on search results
+that quote or summarise the source, read against at least two results where
+possible. Ancient writers are paraphrased. Scripture is the BSB in the
+repository, checked word for word by `scripts/validate-bible-notes.mjs`;
+counts of Greek words are a script over the repository's Greek text of John.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The disciple whom Jesus loved" five times: 13:23; 19:26; 20:2; 21:7; 21:20; 21:24 the witness and "we know" | BSB | Script over the repository's text |
+| Irenaeus, Against Heresies 3.1.1 (about 180): John, the Lord's disciple who leaned on his breast, gave out a Gospel while living at Ephesus in Asia | Irenaeus | Search: newadvent.org/fathers/0103301.htm (ANF); bkv.unifr.ch; hypotyposeis.org. Paraphrased |
+| Irenaeus 3.3.4: John stayed at Ephesus until Trajan's time; Irenaeus saw Polycarp in his youth; Polycarp appointed by apostles in Asia | Irenaeus | Search: newadvent.org/fathers/0103303.htm; bkv.unifr.ch division 415; fordham.edu sourcebook. Paraphrased. The Florinus letter (Eusebius 5.20) was not found and is not used |
+| Papias names John among the disciples and then "the elder John" with Aristion; Eusebius (3.39) read two Johns and reported two tombs at Ephesus called John's; Irenaeus took Papias to mean the apostle | Eusebius, Church History 3.39.4-6 | Search: newadvent.org Catholic Encyclopedia "Papias"; bkv.unifr.ch NPNF Eusebius 3.39; fgh.perseids.org. Paraphrased. Papias's date from the earlier ledger (Mark) |
+| Views on the beloved disciple (John son of Zebedee; a Jerusalem disciple, perhaps the elder; a circle of churches) | Repository `author` (Bauckham, Brown, Martyn) | Repository; names not repeated on the page |
+| Most date John to the 90s; Robinson, Redating the New Testament (1976), argued before 70; 5:2 present tense; no mention of the temple's fall | Scholarship | Search: christianitytoday.com; psephizo.com; michaelfbird.substack.com; time.com. The Priority of John not named (its year differed between results) |
+| P52: John Rylands Library, Manchester; John 18:31-33 and 18:37-38; bought by Grenfell in Egypt in 1920; published by C. H. Roberts in 1935; Roberts dated it to the first half of the second century; Nongbri, "The Use and Abuse of P52", Harvard Theological Review (2005), widened the range | Roberts 1935; Nongbri 2005 | Search: en.wikipedia.org Papyrus 52; cambridge.org NTS article; brentnongbri.com. Its size and the 2020 NTS article's author are not given |
+| Put out of the synagogue: 9:22; 12:42; 16:2. Martyn (1968) linked it to the Birkat ha-Minim; many now doubt the link (Kimelman; Reinhartz); Marcus (NTS 2009) defends a form of it | J. Louis Martyn, History and Theology in the Fourth Gospel (1968) | Search: bibleinterp.arizona.edu; resolve.cambridge.org NTS article; voice.dts.edu. Stated as "many scholars now doubt that link" |
+| 20:31 manuscripts differ in tense | Repository `text` and `purpose` | Repository |
+| Only in John, and missing from John (birth, temptation, parables, exorcisms, Transfiguration, the bread and cup); "kingdom of God" only 3:3, 3:5 | BSB of the four Gospels | Script over the repository's text |
+| Temple action early in John, late in the others; one event or two | 2:13-22; Mark 11:15-19 | Wording consistent with the Mark 11 and Matthew 21 notes ("These notes do not settle it") |
+| Three Passovers named (2:13, 6:4, 11:55); unnamed feast 5:1 | BSB | Repository |
+| The day of the crucifixion: Mark 14:12 against John 18:28 and 19:14; the views | Earlier ledger (Mark 14: the date of the Last Supper) | Earlier ledger; Exodus 12:6 BSB for the day the lambs were killed |
+| Whether John knew the other Gospels: views | Repository `reading`; michaelfbird.substack.com | Search above. Stated as views |
+| Seven signs as usually listed; some fold the walk on the sea into the feeding; some add the catch of fish; John numbers only the first two (2:11, 4:54) | Reference works | Search: en.wikipedia.org Book of Signs (Marsh, Smalley; Bullinger); BSB |
+| "Book of signs" and "book of glory" from Raymond Brown (Anchor Bible, 1966 and 1970); Dodd's "book of the passion" | Brown; Dodd, The Interpretation of the Fourth Gospel (1953) | Search: en.wikipedia.org Book of Signs; scholarly source citing Brown 1.cxxxviii and Dodd p. 289; years from the repository's furtherReading |
+| "Believe" 98 times in John (Matthew 11, Mark 14, Luke 9); "faith" (pistis) never; "abide" 40; "world" 78; "life" 36; "love" 44; "truth" 25; "light" 23; Ioudaios 71; anōthen 3:3, 3:7, 3:31, 19:11, 19:23; "lifted up" 3:14, 8:28, 12:32, 12:34 | Greek text in the repository | Script over `client/public/bible/ch/*/` |
+| Tabernacles: the Mishnah (written down around 200) describes water drawn from Siloam and poured at the altar (Sukkah 4:9) and lamps in the Court of the Women (Sukkah 5:2-4); how much was done in Jesus' day not certain | Mishnah Sukkah | Search: sefaria.org Mishnah Sukkah 4:9; jtsa.edu; israelnationalnews.com (Sukkah 5:2-4). Marked as later and uncertain |
+| Dedication: the temple rededicated in 164 BC after Antiochus IV defiled it; 1 Maccabees 4:52-59 | 1 Maccabees | Search: bible.usccb.org 1 Maccabees 4 with notes (14 December 164 BC); biblehub; biblegateway Encyclopedia of the Bible |
+| "I am" without a picture: the background debated (Exodus 3:14 LXX or Isaiah 43:10 LXX), stated in the chapter notes, not on the page | Scholarship | Search: en.wikipedia.org Ego eimi; bagl.org (Ma) |
+| "The Jews": used to justify contempt, expulsions and violence; misuse rejected; Nostra Aetate 4 (1965) quoted as in Mark 15; Acts 4:27 | Earlier ledger (Mark 15; Matthew's book page) | Earlier ledger; wording consistent with Matthew's page and the Mark 15 and Matthew 27 notes |
+| Translators: "the Jews" kept; "the Jewish leaders" by context; "the Judeans" argued by some scholars, and the objection that it cuts the link with Jews today | Scholarship | Search: tips.translation.bible "Jews"; momentmag.com "Judeans"; cavac.at Ioudaios (Steve Mason). No version named except the BSB |
+| Woman caught in adultery: absent from P66 and P75 (and from Sinaiticus and Vaticanus, repository `text`); first Greek copy Codex Bezae (fifth century); placed after John 7:36, at the end of John, after Luke 21:38; Jerome kept it and said many Greek and Latin copies had it | Manuscript evidence | Search: ehrmanblog.org; biblehub.com; kmooreperspective.blogspot.com; repository `text` |
+| Chapter 21 in every surviving manuscript that has the ending; many think it added in the final edition | Repository `text` and `structure` | Repository |
+| Clement of Alexandria, via Eusebius 6.14.7: John last, seeing the bodily facts set out in the Gospels, urged by friends and moved by the Spirit, wrote a spiritual Gospel; a tradition of the elders | Eusebius, Church History 6.14.5-7 | Search: hypotyposeis.org (Greek and translation); bkv.unifr.ch ANF fragments; library.biblicalarchaeology.org. Paraphrased |
+| Nicaea 325; Chalcedon 451; Augustine's 124 tractates and the eagle; Aquinas at Paris; Luther's "chief Gospel" (1522); Calvin's "key"; Bach's St John Passion, Leipzig 1724 | Repository `reception` | Repository |
+| Herod Antipas 4 BC to AD 39; Pilate 26 to about 36; crucifixion AD 30 or 33; temple destroyed 70 | Earlier ledger (Mark) | Earlier ledger |
+| Tiberias founded by Antipas about AD 20 and named for Tiberius; the lake called after it (6:1; 21:1) | Josephus; encyclopedias (dates 18 to 20 most common) | Search: encyclopedia.com Tiberias; jewishencyclopedia.com; biblegateway Easton. "About AD 20" |
+| P66 and P75 around 200 | Repository `text` | Repository |
+| Cana: Kafr Kanna or Khirbet Qana (Reina also proposed); placed roughly | Archaeology | Search: bibleplaces.com/cana; en.wikipedia.com Khirbet Qana; christiantoday.com |
+| Sychar: most place it at Askar; some at Shechem (Tell Balata) | Bible encyclopedias | Search: biblegateway Encyclopedia of the Bible "Sychar"; biblicaltraining.org; biblehub atlas |
+| Bethany beyond the Jordan: Al-Maghtas inscribed by UNESCO in 2015; no solid proof the site is the place; other proposals (repository: Origen's Bethabara, Riesner's Batanea) | UNESCO; reviewers | Search: whc.unesco.org list 1446; biblicalarchaeology.org; orthochristian.com |
+| Pool of Siloam found in 2004 (Reich and Shukron); Pool of Bethesda excavated near St Anne's, a pool fitting John's description, still debated in detail | Archaeology | Search: biblicalarchaeology.org "The Siloam Pool"; en.wikipedia.org Pool of Bethesda. The page says only that both "have been found by archaeologists" |
+| Bethany "a little less than two miles" (11:18) | BSB | Repository |
+| Map positions | Approximate modern sites; Cana a region, placed roughly and said so | Not a historical claim |
+
+Left out: the size of P52; the author of the 2020 NTS article on P52; Robinson's
+The Priority of John (its year differed between results); the Florinus letter;
+Trajan's dates; any count of how much of John is not in the other Gospels;
+Ephraim (11:54) and Aenon near Salim (3:23) on the map (sites uncertain); the
+modern names of Bethany.

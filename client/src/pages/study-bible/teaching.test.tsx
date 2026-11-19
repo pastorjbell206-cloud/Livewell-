@@ -51,10 +51,10 @@ describe("Mark's teaching introduction", () => {
     expect(book).toBeLessThan(all);
   });
 
-  it("only Mark and Matthew have one so far, and every other book's introduction still has the fields its page draws", () => {
+  it("only Mark, Matthew and John have one so far, and every other book's introduction still has the fields its page draws", () => {
     for (const b of BOOKS) {
       const d: BookIntro = json(`bible/notes/${b.slug}/intro.json`);
-      expect(!!d.teaching, b.slug).toBe(b.slug === "mark" || b.slug === "matthew");
+      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john"].includes(b.slug));
       expect(typeof d.overview).toBe("string");
     }
   });
@@ -89,6 +89,26 @@ describe("Matthew's teaching introduction, from the same parts", () => {
     fireEvent.click(screen.getByRole("button", { name: "Bethlehem" }));
     expect(screen.getByRole("link", { name: "Matthew 2:16" }).getAttribute("href")).toBe("/study/bible/matthew/2#v16");
     expect(screen.getByText(/the two regions are placed roughly/)).toBeTruthy();
+  });
+});
+
+describe("John's teaching introduction, from the same parts", () => {
+  const JOHN = BOOKS.find((b) => b.slug === "john")!;
+  const jn: BookIntro = json("bible/notes/john/intro.json");
+
+  it("has its own part on 'the Jews', its hard passages and its own Go deeper pages", () => {
+    renderWithProviders(<BookTeaching book={JOHN} teaching={jn.teaching!} />);
+    expect(screen.getByRole("heading", { level: 2, name: "‘The Jews’ in John" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "John 8:44" }).getAttribute("href")).toBe("/study/bible/john/8#v44");
+    expect(screen.getByRole("link", { name: /Jewish life in Jesus's day/ }).getAttribute("href")).toBe("/resources/context/world/jewish-life-in-jesus-day");
+  });
+
+  it("draws its own places, north to south, with Cana placed roughly", () => {
+    renderWithProviders(<BookMap slug="john" bookName="John" places={jn.teaching!.map} />);
+    expect(screen.getByRole("img", { name: "A simple map of the places in John, from Capernaum in the north to Jerusalem in the south." })).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Sychar" }));
+    expect(screen.getByRole("link", { name: "John 4:5" }).getAttribute("href")).toBe("/study/bible/john/4#v5");
+    expect(screen.getByText(/the region is placed roughly/)).toBeTruthy();
   });
 });
 
