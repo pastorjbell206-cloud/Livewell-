@@ -3284,3 +3284,41 @@ Bock, Scofield, Augustine's Letter 199, Jervell, Tannehill by name; Eusebius
 3.5-7 on the fall as punishment; Charles Taze Russell and 1914, 1948 and 1967
 by name; the 21:19 variant; family 13 by name; the gladiators and the
 Colosseum; the deep note's 40,000 released captives.
+
+## The plain notes on Luke 22 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/22.json`. Five searches for this
+chapter, with the earlier ledger (Mark 14; Matthew 26; John 13 and 18; Luke's
+book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Passover and Unleavened Bread; pilgrims; fear of a riot (Mark 11 and 14 wording) | 1-6 | Earlier ledger | Repository |
+| Satan enters Judas only in Luke and John (John 13:27); 4:13; temple officers the temple's own guard | 1-6 | BSB; deep note | Repository |
+| Acts 2:23; providence and freedom stated as a second-order difference without names | 1-6 | BSB; deep note | Repository. Klassen, Borges, the Gospel of Judas, Augustine, Aquinas, Calvin and Barth not named |
+| Lambs killed in the afternoon, rooms for pilgrims, the man with the water jar (Mark 14 wording); only Luke names Peter and John; Exodus 12:6-8, 14 | 7-13 | Mark 14 plain note; BSB | Repository |
+| Synoptic Passover against John's dating (pointer to the John 13 note) | 7-13 | John 13 plain note | Repository |
+| Reclining; the Mishnah's four cups (Pesachim 10, written down around 200; how much was fixed in Jesus' day debated) | 14-20 | Earlier ledger (Mark 14) | Earlier ledger |
+| 22:19b-20: almost every Greek manuscript has the longer text; Codex Bezae (fifth century) and some Old Latin lack 19b-20; Westcott and Hort (1881) judged the shorter original ("Western non-interpolation"); the theory widely abandoned (the UBS committee in the 1960s); a few still defend the shorter text (Billings) | 14-20 | Text-critical surveys | Search: bible-researcher.com "Western non-interpolations"; skypoint.com (Waltz); en.wikipedia.org Western non-interpolation; bestcommentaries.com (Billings). Bezae's date from the earlier ledger |
+| 1 Corinthians 11:24-25; Exodus 24:8; Jeremiah 31:31-34; the Lord's Supper views (Mark 14 wording, word for word) | 14-20 | BSB; Mark 14 plain note | Repository |
+| Greatness dispute placed earlier in Mark 10:35-45; Matthew 19:28; John 13:4-5; 1 Kings 12:7; Daniel 7:18 | 21-30 | BSB comparison | Repository |
+| Euergetes ("Benefactor") as a royal title; Ptolemy III Euergetes; the only New Testament use of euergetēs | 21-30 | Lexicons and Bible encyclopedias | Search: biblehub.com 2110; openbible.com commentaries on 22:25; internationalstandardbible.com "Benefactor". Only Ptolemy III named (the second Euergetes's number conflicted) |
+| 22:31 humas (plural); 22:32 sou (singular) | 31-34 | Greek text | Script over the repository's Greek |
+| 24:34; Amos 9:9; Job 1:9-12 | 31-34 | BSB | Repository |
+| 9:3; 10:4; 6:29; 23:33-34; Isaiah 53:12; hikanon estin at 22:38; eate heōs toutou at 22:51 | 35-38 | BSB; Greek text | Repository |
+| Three readings of the swords (literal provision; figure of coming hardship with "That is enough" as closing a misunderstood talk; fulfilment of Isaiah 53:12 with 22:52); never a warrant for violence; 22:51 | 35-38 | Deep note (Hengel, Brandon, Meggitt as reported, not named); standard commentaries | Stated as readings; no scholar named; no statement about weapons or policy |
+| Gethsemane named in Mark and Matthew, not Luke; one prayer, kneeling, "asleep from sorrow" only in Luke; Isaiah 51:17; 1 Kings 19:5 | 39-46 | BSB comparison | Repository |
+| 22:43-44 absent from P75 (around 200) and Vaticanus (300s); present in Sinaiticus as first written, in Bezae and most later copies; known to Justin and Irenaeus; added (anti-docetic) or removed (seemed to diminish Christ); printed with a note or in brackets | 39-46 | Book page ledger; text-critical surveys | Search: tyndale.cam.ac.uk (Jongkind) "Luke 22:43-44"; en.wikipedia.org Luke 22:43-44; ehrmanblog.org. Wording agrees with the book page's hard-passage line |
+| "Like" (hōsei) drops of blood; hematidrosis as "some have suggested", not asserted | 39-46 | Medical reviews | Search: pmc.ncbi.nlm.nih.gov PMC4808663 (review: capillaries rupturing under extreme stress); Kluger's review (dlib.si) noting Luke 22:44; Cureus case report via NCBI |
+| Agōnia, English "agony" | 39-46 | Greek text | Repository Greek |
+| Real humanity answer and the care paragraph (Mark 14 wording, word for word, after Mark 14:34) | 39-46 | Mark 14 plain note | Repository |
+| Kiss as a student's greeting; Peter and Malchus (John 18:10); Matthew 26:52; views on force and "All agree" (Matthew 26 wording, "5:39" made "6:29"); Romans 13:4; Isaiah 50:6 | 47-53 | Matthew 26 plain note; earlier ledger | Repository |
+| Colossians 4:14 and the tradition of Luke's authorship (book page) | 47-53 | Book page | Repository |
+| Galilean accent (Matthew 26:73); Luke's order (council at daybreak) against Mark's night hearing; the look only in Luke; Psalm 51:12; Isaiah 44:22; John 21:15-17 | 54-62 | BSB comparison | Repository |
+| Sanhedrin; Caiaphas (pointer to Mark 14); Psalm 110:1; Daniel 7:13; Isaiah 50:6; the Mishnah's rules for capital trials marked as later and uncertain (Mark 14 wording, shortened); "Luke names particular people" (Mark 14 wording adapted) | 63-71 | Mark 14 plain note; earlier ledger | Repository |
+
+Left out: Brandon, Hengel, Meggitt, Boniface VIII and Unam Sanctam (1302;
+verified but not needed); Klassen, Borges and the Gospel of Judas; the RSV's
+1946-1952 text and its restoration; Ehrman and Plunkett, Blumell, Epiphanius
+and family 13 on 22:43-44; the 22:68 variant; Antiochus VII and the second
+Euergetes.
