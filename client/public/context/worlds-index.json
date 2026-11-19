@@ -7,6 +7,14 @@
       "group": "Second Temple Judaism",
       "blurb": "A long, sourced portrait of the world Jesus lived in: the land and its rulers, a day and a year, the Temple, the synagogue, the groups, the hopes, and family, sickness and death.",
       "parts": 7
+    },
+    {
+      "id": "old-testament-world",
+      "title": "The Old Testament's world",
+      "seoTitle": "The Old Testament's World: What It Was Really Like",
+      "group": "Ancient Near East",
+      "blurb": "A long, sourced portrait of the world the Old Testament was written in: the land between empires, the village and the house, kings and the Temple, the gods next door, covenant and law, scribes and prophets, and exile and return.",
+      "parts": 7
     }
   ]
 }

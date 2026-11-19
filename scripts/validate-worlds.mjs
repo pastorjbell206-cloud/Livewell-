@@ -9,7 +9,7 @@
  *
  * - the fields the page reads, a group the guides already use, a plate from
  *   the art kit and an icon the page knows;
- * - parts of real length, each with Gospel passages it opens;
+ * - parts of real length, each with Bible passages it opens;
  * - every passage quoted word for word from the Berean Standard Bible (the
  *   Study Bible's text) and linked to its chapter and first verse;
  * - the voice rules: no em-dash or en-dash, no exclamation mark outside the
@@ -31,7 +31,8 @@ export const ICONS = ["map", "sun", "landmark", "scroll", "users", "sparkles", "
 const PLATES = [...readFileSync(join(ROOT, "client/src/components/art/Plate.tsx"), "utf8").matchAll(/"([a-z]+)"/g)].map((m) => m[1]);
 const GROUPS = new Set(JSON.parse(readFileSync(join(ROOT, "client/public/context/guides-index.json"), "utf8")).guides.map((g) => g.group));
 const FORBIDDEN = /\b(delve|leverage|unlock|transformative|navigate|tapestry|foster|unpack|landscape|nuanced|multifaceted|authentic|journey|holistic|in today's world|now more than ever|here's the thing|hold space|your truth|lean into|showing up)\b/i;
-const NAMES = { matthew: "Matthew", mark: "Mark", luke: "Luke", john: "John", acts: "Acts" };
+/** A book's name as a reference spells it ("1 Kings") and its folder in the Study Bible's text ("1-kings"). */
+const BOOKS = new Set(readdirSync(join(ROOT, "client/public/bible/text")));
 
 function verses(book, ch, a, b) {
   const f = join(ROOT, "client/public/bible/text", book, `${ch}.json`);
@@ -77,9 +78,9 @@ for (const f of files) {
     else p.read.forEach((r, j) => {
       const rw = `${pw} passage ${j + 1}`;
       prose(`${rw} note`, r.note);
-      const m = String(r.ref).match(/^(Matthew|Mark|Luke|John|Acts) (\d+):(\d+)(?:-(\d+))?$/);
-      if (!m) return fail(rw, `reference "${r.ref}" is not "Book chapter:verse" in the Gospels or Acts`);
-      const book = Object.keys(NAMES).find((k) => NAMES[k] === m[1]);
+      const m = String(r.ref).match(/^((?:[1-3] )?[A-Z][a-z]+(?: of [A-Z][a-z]+)?) (\d+):(\d+)(?:-(\d+))?$/);
+      const book = m ? m[1].toLowerCase().replace(/ /g, "-") : "";
+      if (!m || !BOOKS.has(book)) return fail(rw, `reference "${r.ref}" is not "Book chapter:verse" in the Study Bible`);
       const [ch, a, b] = [Number(m[2]), Number(m[3]), Number(m[4] ?? m[3])];
       if (r.href !== `/study/bible/${book}/${ch}#v${a}`) fail(rw, `link should be /study/bible/${book}/${ch}#v${a}`);
       const want = verses(book, ch, a, b);
