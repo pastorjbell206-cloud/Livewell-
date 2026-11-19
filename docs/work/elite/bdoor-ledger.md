@@ -5355,3 +5355,30 @@ first (Luke does not say).
 Left out: the temple as a bank and its size compared with the Parthenon; the
 date of the theatre; Paul's dates in Ephesus; Erastus of Corinth; the number
 of Asiarch inscriptions.
+
+## The plain notes on Acts 20 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/20.json`. 3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2 Corinthians from Macedonia "probably"; Romans from Corinth "many think" | 1-6 | Deep note `historical` | Stated as probable |
+| "The Jews" (20:3, 19): opponents who plotted; Paul preached to Jews and Greeks; pointers to 13:42-47 and 2:22-28 | 1-6, 17-24 | BSB; acts/plain/13.json form | Repository |
+| The companions as delegates with the collection, "many scholars think"; Romans 15:26; 1 Corinthians 16:3; 24:17 | 1-6 | Deep note `historical`; BSB | Repository |
+| The "we" resumes at Philippi | 1-6 | Book page ("we" passages 20:5 to 21:18) | Repository |
+| Deuteronomy 15:10; Isaiah 60:5; Exodus 12:39 | 1-6 | BSB | Repository |
+| First day of the week; Jewish (Saturday evening) or Roman (Sunday evening) reckoning | 7-12 | Holman Bible Dictionary "Lord's Day" as reported | Search: studylight.org HBD "Lord's Day"; biblicaltraining.org "The Lord's Day" |
+| Didache and Justin Martyr speak of gathering on the Lord's day / Sunday; most churches gather on Sunday; Seventh-day Adventists and Seventh Day Baptists keep Saturday; Romans 14:5-6; no side | 7-12 | Didache 14; Justin, First Apology 67 | Same search; catholic.com "Sabbath or Sunday". Didache's date not given (sources differ) |
+| Eutychus "picked up dead": a raising (most) or found alive (some) | 7-12 | BSB; commentaries | Stated as readings |
+| 1 Kings 17:21; 2 Kings 4:34; Exodus 20:8; 1 Corinthians 16:2 | 7-12 | BSB | Repository |
+| Pentecost fifty days after Passover; Deuteronomy 16:9, 16 | 13-16 | Deep note; BSB | Repository |
+| The Miletus speech closest to Paul's letters, "many readers" | 17-24 | Deep note `literary` | Stated as a reading |
+| 1 Samuel 12:3; Ezekiel 2:7 | 17-24 | BSB | Repository |
+| Elders = overseers = shepherds here; Titus 1:5-7; church government views pointing to 14:21-28; Ignatius of Antioch's letters (early second century) speak of one bishop with elders and deacons | 25-31 | Commentaries; Ignatius | Search: apostolicum.substack.com; azbyka.ru (Orthodox appendix on Acts 20:28); davidwfletcher.com (Ignatius and the monarchical episcopate) |
+| 20:28: some early copies "church of the Lord", most modern Bibles "church of God"; "with the blood of His own" (Son) as in some translations (NET, NRSV) | 25-31 | Textual notes as reported | Search: tips.translation.bible (SIL notes on 20:28); heidelblog.net; confessionalbibliology.com |
+| Psalm 23:1; Ezekiel 34:2; 22:27; 3:19 | 25-31 | BSB | Repository |
+| "More blessed to give" not in the four Gospels; 1 Corinthians 9:14; Proverbs 11:24-25; Joshua 23:2 | 32-38 | BSB | Repository |
+
+Left out: the distance from Miletus to Ephesus; the Didache's date; Justin's
+date; the Greek proverb parallels to 20:35; which textual reading most
+textual critics prefer at 20:28.
