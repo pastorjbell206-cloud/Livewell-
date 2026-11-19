@@ -4678,3 +4678,28 @@ site's slavery Honest Answer.
 Cut: royal decrees exempting temples from levies (deep note, not checked);
 an Egyptian rent of a fifth confirmed by Herodotus (one old commentary only);
 any modern political or economic application (none made).
+
+## The plain notes on Genesis 48 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/48.json`. Two web searches for
+this chapter, with the deep note, the verse notes, the book page and the
+plain notes on 25 and 35.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Luz = Bethel (28:19); 35:9-12; the double portion (Deuteronomy 21:17); Reuben's loss (35:22) | 1-7 | BSB; deep note (`historical`) | Repository |
+| Rachel's tomb: Bethlehem or Zelzah (1 Samuel 10:2), ‘open’ | 1-7 | Plain note 35:16-20 | Repository (same view) |
+| 1 Chronicles 5:1-2; Matthew 2:18 | 1-7 | BSB | Repository |
+| Echo of Isaac's blindness and ‘Which one are you, my son?’ (27:1, 18); no deception now | 8-12 | Deep note (`literary`); BSB | Repository |
+| Manasseh and Ephraim's names (41:51-52); setting on the knees as receiving (30:3; 50:23) | 8-12 | Deep note (`cultural`); BSB | Repository |
+| Ephesians 3:20; Psalm 128:6 | 8-12 | BSB | Repository |
+| Right hand of honor; the younger-over-older pattern (book page `themes`) | 13-20 | Deep note (`cultural`, `literary`); book page | Repository |
+| ‘May God make you like Ephraim and Manasseh’ spoken by many Jewish parents over sons on Friday evening | 13-20 | Jewish practice | Search: "Friday night blessing of sons May God make you like Ephraim and Manasseh" (aish.com "Blessing the Children"; outorah.org). ‘Many’, since practice varies; the custom's age not stated |
+| Ephraim prominent: Joshua (Numbers 13:8), Jeroboam (1 Kings 11:26), Hosea's ‘Ephraim’ (Hosea 11:8) | 13-20 | Deep note (`historical`); BSB | Repository |
+| 47:31 ‘bed’ and Hebrews 11:21 ‘staff’: same Hebrew letters (mth), different vowels; the Septuagint read ‘staff’ and Hebrews follows it | 13-20 | Textual notes | Search: "Genesis 47:31 bed or staff mittah matteh ... Septuagint ... Hebrews 11:21" (uasvbible.org textual analysis; openbible.com commentaries) |
+| Readings of the younger chosen (Romans 9:12; Reformed; peoples and roles); pointer to 25:19-26 | 13-20 (hard) | Deep note (`hard`); plain note 25 | Repository; no side |
+| John 10:11 | 13-20 | BSB | Repository |
+| Shekem ‘shoulder’ and Shechem; 33:19; Joshua 24:32; John 4:5; the battle not told in Genesis; two readings | 21-22 | Deep note (`historical`); BSB | Repository; ‘the text does not settle it’ |
+
+Cut: ‘the first time the Bible calls God shepherd’ (not checked); the
+custom's first record in a seventeenth-century book (sources differ).
