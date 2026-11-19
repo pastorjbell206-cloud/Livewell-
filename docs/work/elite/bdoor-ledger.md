@@ -5578,3 +5578,39 @@ Left out: Agrippa raised in Rome; Pindar's use of the proverb; whether Luke knew
 | Exodus 14:29; Jonah 2:2; Isaiah 43:2 | 39-44 | BSB | Repository |
 
 Left out: Smith's own figures; the exact sites of Phoenix, Cauda and the bay; Vaticanus at 27:37; the year and date of the Fast in Paul's voyage; the grain ship's size; Homer and the ancient sea-story genre. No care line: the text does not call for one.
+
+## The plain notes on Acts 28 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/28.json`. 5 web searches. Acts is now complete in plain words (28 chapters).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Malta south of Sicily; the landing place tradition (St Paul's Bay), as on the book page's map card | 1-6 | Book page map card "Malta"; deep note `historical` | Repository |
+| barbaroi: people whose language was not Greek, not an insult here; Luke praises their kindness | 1-6 | Reference works; deep note `cultural` | Search: en.wikipedia.org "Acts 28" ("the standard term for non-Greek speakers"); ebible translator's note; Ellicott via kingjamesbibleonline. Punic population not stated |
+| Justice personified as a goddess, Dike; Lystra (14:11) | 1-6 | Deep note `cultural`; BSB | Repository |
+| Viper not a pattern or test; Mark 16:18 in the longer ending; pointer to the Mark 16:15-20 note; snake handling since the early 1900s, deaths; no snake handling, no testing God, no refusing medical care; Matthew 4:7; Deuteronomy 6:16; Colossians 4:14 | 1-6 | mark/plain/16.json; earlier ledger (Mark 16: snake handling); BSB | Repository; earlier ledger |
+| Psalm 91:13; Luke 10:19; Genesis 18:2-5 | 1-6 | BSB | Repository |
+| Publius "the first man"; inscriptions from the Maltese islands "are reported" to use a similar title | 7-10 | Deep note `historical`; reference works | Search: en.wikipedia.org "Acts 28"; themoorings.org (Protos Melitaion on Gozo; MEL PRIMUS Latin, 1747). Sources conflict on the find-spot, so "Maltese islands" and "reported" |
+| Fever and dysentery explained without the "medical language" claim; Luke the physician (Colossians 4:14) present as the "we"; the text does not say he treated anyone | 7-10 | BSB | Repository; Hobart's medical-language thesis not used |
+| Care line pointing to the Acts 3:1-10 note and Find Help | 7-10 | CLAUDE.md, care for the reader | Pastoral |
+| 1 Kings 17:15-16, 22; 2 Kings 4:33-35; 5:14 | 7-10 | BSB | Repository |
+| Twin Brothers, Castor and Pollux, sailors' gods; Puteoli the grain harbour; Appian Way, the Forum of Appius and the Three Taverns south of the city; walking out to meet someone a public honour | 11-16 | Roman-world portrait part 1 and its `read` note | wrom-ledger |
+| Syracuse in Sicily; Rhegium at the toe of Italy; Romans 1:11; lighter custody with a soldier | 11-16 | Book page map card; deep note `historical`, `cultural` | Repository |
+| Psalm 133:1; Isaiah 2:3 | 11-16 | BSB | Repository |
+| "The Jews" at 28:19 in the 13:42-47 form with a pointer; no letters from Judea (winter travel or a decision in Jerusalem, "readers suggest"); Claudius's expulsion pointer to the book page (18:2) | 17-22 | Deep note `cultural`; book page "history" | Repository |
+| Ezekiel 34:23; Daniel 12:2; Deuteronomy 1:17 | 17-22 | BSB | Repository |
+| 28:29 missing from the earliest manuscripts (P74, Sinaiticus, Alexandrinus, Vaticanus); in later copies; many think added to smooth the step to verse 30 | 23-29 | Metzger's Textual Commentary (as quoted); Ellicott | Search: uasvbible.org "Why Has Acts 28:29 Been Omitted"; Ellicott via bibleportal.com; blueletterbible footnotes. Manuscripts not named on the page |
+| Isaiah 6:9-10 (BSB wording differs from Acts, said so); 6:13; 49:6; Luke 8:10; 13:46; 18:6 | 23-29 | BSB | Repository |
+| 28:28 not God's last word: Romans written to Rome before the Jerusalem trip (Romans 15:25); Romans 9 to 11; 11:1, 2, 11, 26, 29; three readings of 11:26 (a future turning of the Jewish people; the whole people of God; the full number of Jewish believers through history); no side on its fulfilment; Luke's meaning: verdict or open door, from the book page and deep note | 23-29 | BSB; book page "Acts and the Jewish people"; deep note `hard` | Repository; standard readings, no names; no side taken |
+| The misuse of the ending named and rejected, with "That reading is false, and Christians must reject it plainly. This site rejects it." and a pointer to the 2:22-28 note | 23-29 | acts/plain/2.json; book page | Repository |
+| Two years about AD 60 to 62; prison letters from Rome (many), Caesarea or Ephesus (others); Philippians 1:12-13 | 30-31 | Book page timeline; deep note `historical` | Repository |
+| 28:31 ends with akōlutōs, "unhindered" | 30-31 | Greek text in the repository | Repository |
+| Why Acts stops: written then, before the outcome; the outcome known and not the point (the book page's two views); "some have suggested" a planned third book; no side | 30-31 | Book page "When it was written"; commentaries | Search: biblegateway Asbury Bible Commentary "Date" (Knox for a further book; Guthrie); crossway.org "Why Does the Book of Acts End So Abruptly?". Names not given |
+| 1 Clement (from Rome, usually near the end of the first century): Paul a herald in east and west, reached "the limits of the west", died as a witness; the phrase argued (Rome, Spain; some say Britain) | 30-31 | 1 Clement 5, paraphrased | Search: lexundria.com 1 Clement 5 (Lake); perseids 1 Clement 5.5-7; ccel Richardson notes. Earlier ledger (wrom: date) |
+| Eusebius (early fourth century, about 324): released after a first defence, preached again, a second imprisonment, death under Nero; scholars divided on the release | 30-31 | Eusebius, Church History 2.22 and 2.25, paraphrased | Search: bkv.unifr.ch NPNF Eusebius 2.22; cambridge.org SJT (2022) "The second imprisonment of Paul: fiction or reality?"; christianity.com. Earlier ledger (Mark: 2.25) |
+| Tradition: Peter and Paul died in Rome under Nero | 30-31 | Roman-world portrait part 8 | wrom-ledger |
+| 2 Timothy 4:7; its setting and authorship argued ("some scholars think" a follower wrote it) | 30-31 | BSB; standard positions | Stated as views |
+| Isaiah 49:6; 40:8; Acts 1:8; Romans 15:24 | 30-31 | BSB | Repository |
+| Closing note: the prison letters (Philippi, Colossae, Philemon, "if they are his" Ephesians) and the church's continuing story; no summary of the book | 30-31 | BSB | Pastoral close |
+
+Left out: snakes on Malta today; the exact find-spots of the Publius inscriptions; the distances of the Forum of Appius and Three Taverns; Jerome's date (67 or 68) for Paul's death; beheading as the manner (said only in the portrait, not repeated here); the seven imprisonments of 1 Clement; Hobart's medical language; names of the scholars behind the ending views.
