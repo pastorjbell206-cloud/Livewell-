@@ -1994,3 +1994,40 @@ Left out: Josephus on the route (Antiquities 20.118 as a custom; Life 269, three
 | Exodus 32:11; Deuteronomy 18:15; 31:26; Numbers 21:8-9; 1:45 | 41-47 | BSB | BSB text |
 
 Left out: the feast proposals (Irenaeus, Chrysostom); the Sheep Gate's name; the spellings Bethzatha and Bethsaida and Josephus's Bezetha; the copper scroll; Gibson and von Wahlde on a ritual pool; m. Shabbat 10:5; m. Yoma 8:6; Philo 1.49 and 2 Maccabees 9:12; Dodd's apprenticed son by name; m. Ketubbot 2:9; Hillel in m. Avot 2:7; Baruch 4:1; Psalm 132:17 and Sirach 48:1; Ruether, Reinhartz, the Pontifical Biblical Commission; Athanasius, Hilary, Augustine and Bauckham by name; the 2016 debate on the Son's eternal submission.
+
+## The plain notes on John 6 (2026-11-19)
+
+`client/public/bible/notes/john/plain/6.json`. 7 web searches, with the earlier ledger (Mark 6, Matthew 14, Mark 14, Matthew 26).
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Denarius, wilderness, twelve baskets; told in all four Gospels | 1-15 | Earlier ledger (Mark 6; Matthew 14) | Earlier ledger; pointers to those notes |
+| Barley cheaper than wheat, the bread of poorer people | 1-15 | Encyclopedias | Search: encyclopedia.com "Barley" and "Bread"; thecollector.com (Pliny on barley bread). m. Ketubbot 5:8 not confirmed, not cited |
+| Prophet like Moses (Deuteronomy 18:15) | 1-15 | Earlier ledger (Matthew 11) | Earlier ledger |
+| Crown of thorns (19:2); 18:36 | 1-15 | BSB | BSB text |
+| Exodus 16:4; 2 Kings 4:42-43 | 1-15 | BSB | BSB text |
+| "Did this really happen" pointer to the Matthew 14 note and its last sentence | 1-15 | Matthew 14 plain note | Repository |
+| Twenty-five or thirty stadia; a stadion a little under 200 metres | 16-21 | Greek text in the repository; standard measure (about 185 m) | Script; common reference fact |
+| Egō eimi "It is I" or "I am"; background debated | 16-21 | Earlier ledger (Mark 6; book page) | Earlier ledger |
+| Job 9:8; Psalm 77:19; Psalm 107:30 | 16-21 | BSB | BSB text |
+| Psalm 78:24; Exodus 16:4, 15; Deuteronomy 8:3; Isaiah 55:2 | 22-34 | BSB | BSB text |
+| Seven "I am" sayings with a picture (6:35; 8:12; 10:7; 10:11; 11:25; 14:6; 15:1) | 35-40 | BSB | BSB text |
+| Ou mē ekbalō, a double negative (6:37) | 35-40 | Greek text in the repository | Script |
+| Isaiah 55:1, 11 | 35-40 | BSB | BSB text |
+| "The Jews" in 6:41 a Capernaum synagogue audience; 6:59; 6:60 | 41-51 | BSB; book page; repository `teach.pitfalls` | Repository |
+| Exodus 16:2; Isaiah 54:13 | 41-51 | BSB | BSB text |
+| Helkuō in 6:44 and 12:32 | 41-51 | Greek text in the repository | Script |
+| Election views: God's choosing; human response (12:32); Catholic and Orthodox grace first and the answer free; shared ground; "open for discussion and not a cause for division" | 35-51 | Wording of the Mark 4 and Matthew 11 notes; repository `hard` | Repository; no names |
+| Phagō to 6:53, trōgō from 6:54 | 52-59 | Greek text in the repository | Script |
+| Leviticus 17:11; Genesis 9:4 | 52-59 | BSB | BSB text |
+| John has no words over the bread and cup | 52-59 | Book page ledger | Earlier ledger |
+| Catholic and Orthodox eucharistic reading; Catechism of the Catholic Church 1336: "the first announcement of the Eucharist" | 52-59 | CCC 1336; Mark 14 note wording | Search: usccb.org Catechism flipbook p. 340; intratext.com; catholicculture.org. Orthodox reading from the repository `hard` and the Mark 14 wording |
+| Lutheran: true presence in, with and under, resting on "This is My body"; many Lutheran teachers read John 6 as about faith, some see the Supper | 52-59 | Mark 14 note wording; Lutheran writers | Search: steadfastlutherans.org "Twice More to John 6"; forwardinchrist.net (WELS) Q&A; christiannewsmissouri.com on Weinrich. Luther's own words met only in secondary citations, so he is not quoted or named for them |
+| Calvin, Commentary on John 6: the passage not about the Supper but the continual communication of Christ's flesh by faith; what it says is figured and given in the Supper | 52-59 | Calvin's commentary | Search: ccel.org calvin comment3 vol34 xii.ix. Paraphrased |
+| Memorial reading; verses 35 and 47 | 52-59 | Mark 14 note wording; BSB | BSB text |
+| Marburg, 1529: 6:63 pressed by the Swiss side (Oecolampadius, Zwingli) | 52-59 | Accounts of the colloquy | Search: courses.washington.edu "The Marburg Colloquy, 1529"; germanhistorydocs.org (Osiander's report); christianhistoryinstitute.org |
+| Readings of 6:63 | 60-71 | Repository `hard` | Stated as views |
+| Mark 8:33; 13:27 | 60-71 | BSB | BSB text |
+| Judas: views, no verdict on his end | 60-71 | Matthew 26 and 27 notes' stance | Repository |
+
+Cut: Augustine's "believe, and you have eaten" (Tractates on John 25.12) was searched twice and found only in secondary citations, so neither the line nor his name is used; Luther's own statements on John 6 (secondary only); m. Ketubbot 5:8; the fish as dried or salted; Taricheae; Juvenal's baskets; Wisdom 16:20-26 and Philo on the manna; Ignatius, Chrysostom, Bultmann, Brown and Carson; Arminius and Wesley by name; the reading of 6:66 by its number.
