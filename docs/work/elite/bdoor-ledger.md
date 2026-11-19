@@ -5194,3 +5194,32 @@ Left out: veterans settled at Lystra; the year it became a colony; Zeus and
 Hermes inscriptions near Lystra; the statue of Hermes dedicated to Zeus;
 Ancyra and the North Galatian region by name; the distance from Antioch to
 Lystra.
+
+## The plain notes on Acts 15 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/15.json`. 6 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Circumcision on the eighth day; proselytes circumcised; Pharisees careful keepers of the law | 1-5 | Genesis 17:12; deep note `cultural` | Repository |
+| The askers' case: Genesis 17:10, 13; Exodus 12:48; Isaiah 56:6; Deuteronomy 10:16 | 1-5 | BSB | Repository (Genesis 17:9 not quoted: it holds an em-dash) |
+| Cornelius (10:44-45); Ezekiel 36:26-27; Jeremiah 4:4; Psalm 119:97 | 6-11 | BSB | Repository. The rabbinic "yoke of the law" phrase in the deep note not used (not searched) |
+| Galatians 2:2, 3, 9, 10, 11-14 and the three views of how Galatians 2 fits Acts | 6-11 | Book page part "Acts and Paul's letters"; deep note `historical` | Repository; no side taken |
+| James the brother of Jesus (Galatians 1:19; Mark 6:3; John 7:5); stoned about AD 62 (Josephus) | 12-21 | Book page timeline | Repository |
+| James follows the Septuagint of Amos 9:11-12 ("the remnant of men may seek the Lord"); the Hebrew "possess the remnant of Edom"; Edom and adam alike in Hebrew letters, "some think" | 12-21 | Septuagint; Hebrew text | Search: biblehub.com "Link Amos 9:12 & Acts 15:17"; bibleref.com Acts 15:17; wol.jw.org study note. Edom/adam stated as a proposal |
+| The four requirements read from Leviticus 17-18 (rules also for "the foreigner living among them"); the match loose, Luke names no source | 12-21, 22-29 | Leviticus 17:8-13; 18:26 | Search: seedbed.com; archive.gci.org; Cambridge NTS abstract "The Jerusalem Decrees (Acts 15.20, 29 and 21.25)"; rlsolberg.com (Glenny). Noachide reading not used |
+| The requirements tied to pagan temple worship | 12-21 | Deep note `cultural` | Stated as a reading |
+| Codex Bezae (fifth century) and some others omit "strangled" and add a negative golden rule at 15:20 and 29; most textual scholars think these later | 12-21 | Textual apparatus as reported; NET note; Lake | Search: biblia.com NET note on 15:23-29; mdpi.com Religions 15/8/947; sermonindex.net (Lake). Bezae's date from the earlier ledger |
+| Do they still bind: Paul on food (1 Corinthians 8:8; 10:25-28); 16:4; some hold they apply; sexual immorality stands for all; no side | 12-21 | BSB; deep note `hard` | Repository. The deep note's Ethiopian Orthodox example not used (not searched) |
+| Councils: Catholic (council with the pope defines without error); Orthodox (seven councils, Nicaea 325 to Nicaea II 787); Westminster Confession chapter 31, councils "may err, and many have erred"; congregational churches | 22-29 | Standard positions; WCF 31 | Search: creeds.net and apuritansmind.com WCF 31; byzcath.org and orthodoxy pages (seven councils 325 to 787). Stated in general terms, no paragraph numbers |
+| The letter for Gentiles; Jewish believers zealous for the law (21:20); 1 Corinthians 7:18 | 22-29 | BSB | Repository |
+| Leviticus 17:10; 18:26 (quoted without its em-dash); Genesis 9:4; Deuteronomy 1:17 | 22-29 | BSB | Repository |
+| 15:34 absent from the oldest copies (P74, Sinaiticus, Vaticanus and others); later copies add that Silas stayed; likely added to explain Silas in 15:40 (Metzger) | 30-35 | Textual apparatus as reported | Search: openbible.com and biblehub.com on 15:34; tips.translation.bible (SIL); uasvbible.org |
+| Prophets strengthen (1 Corinthians 14:3); Proverbs 25:25; Isaiah 52:7; Haggai 1:13 | 30-35 | BSB | Repository |
+| Barnabas "Son of Encouragement" (4:36); 9:27; 13:13; Mark the cousin of Barnabas (Colossians 4:10); Philemon 24; 2 Timothy 4:11; Genesis 13:8; Psalm 133:1 | 36-41 | BSB | Repository |
+| Paroxysmos, the root of English "paroxysm" | 36-41 | Lexical | Standard |
+| Mark and the second Gospel: pointer to the Mark book page | 36-41 | Mark book page | Repository |
+
+Left out: a date for the council (the deep note's 48 or 49 not stated); the
+rabbinic "yoke of the law"; the Ethiopian Orthodox food rules; Silas as the
+Silvanus of the letters (not searched); the Noachide commandments.
