@@ -779,3 +779,44 @@ the crisis line; the divorce safety line; "turn the other cheek" is not a
 command to stay with someone who hurts you; reconciliation does not mean
 returning to danger; loving an enemy is not trusting one who is still
 dangerous.
+
+## The plain notes on Matthew 6 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/6.json`. Eight searches for this
+chapter, with the earlier ledger and Matthew's book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Hypokritēs the Greek for a stage actor; Matthew uses "hypocrite" far more than the other Gospels | 1-4 | Strong's 5273; lexicons | Search: blueletterbible.org G5273; merriam-webster.com; wiktionary. Count by script over the BSB (Matthew 27, Luke 6, Mark 2, John 0) |
+| No ancient source describes givers blowing trumpets; read as a picture | 1-4 | Repository deep note (Matthew 6 `cultural`) | Stated as how most read it |
+| 5:16; Acts 4:36-37 | 1-4 | BSB | Repository |
+| Hour of prayer (Acts 3:1); standing to pray (Mark 11:25); tameion a storeroom or inner chamber | 5-8 | BSB; lexicons | Repository |
+| 1 Kings 18:26; Ecclesiastes 5:2; Luke 6:12 | 5-8 | BSB | Repository |
+| Isaiah 63:16; Luke 11:2-4; James 1:13; Exodus 16:4; Proverbs 30:8; 1 Chronicles 29:11; 18:33 | 9-15 | BSB | Repository |
+| The Kaddish asks God to establish his kingdom in the lifetime of those who pray; its early wording and date are uncertain | 9-15 | Jewish Encyclopedia "Kaddish"; Boustan's review of Lehnardt | Search: jewishencyclopedia.com; rboustan.scholar.princeton.edu; jcrelations.net. Given as "how old ... is not known" |
+| Epiousios: Origen found it in no Greek writer and thought the evangelists formed it; readings "for today", "for tomorrow", "needed to live"; Jerome's "supersubstantial" in Matthew | 9-15 | Origen, On Prayer 27 (paraphrased); Jerome, Vulgate | Search: ccel.org Origen On Prayer; blog.adw.org; catholicexchange.com |
+| Peirasmos means test or trial as well as temptation; Pope Francis in 2017 called the usual wording not a good translation; the Italian wording later changed | 9-15 | News and commentary | Search: ncregister.com; logos.com; catholicreview.org. Only "some languages" said; no French or Italian text quoted |
+| Doxology absent from Sinaiticus, Vaticanus, Bezae and early commentators (Tertullian, Origen, Cyprian); Didache's two-part form; most scholars think it an early addition | 9-15 | Metzger-style textual notes; Didache 8.2 | Search: oca.org (Farley); confessionalbibliology.com (the dissenting view); uasvbible.org |
+| Didache about AD 100; pray the prayer three times a day | 9-15 | Didache 8.3 | Search: christianhistoryinstitute.org; cts.perseids.org Didache 8; earlier ledger (Matthew's book page) |
+| Forgiveness first in the parable; forgiveness is not reconciliation or silence about a crime | 9-15 | 18:23-35; repository deep note (Matthew 6 `hard`) | Pastoral; CLAUDE.md "Care for the reader" |
+| Day of Atonement the one fast in the Law (Leviticus 16:29); "I fast twice a week" (Luke 18:12); 9:15; Acts 13:2-3 | 16-18 | BSB | Repository |
+| Mourners unwashed and unanointed, ashes; David washed and anointed when mourning ended | 16-18 | 2 Samuel 14:2; 13:19; 12:20 | BSB |
+| Joel 2:13; Isaiah 58:6-7 | 16-18 | BSB | Repository |
+| Care: who should not fast; ask a doctor; disordered eating | 16-18 | Matthew 4 plain note, same wording for the last two sentences | Pastoral |
+| Treasure as grain, cloth, coins hidden or buried | 19-24 | 25:18; repository deep note | BSB; stated generally |
+| Good eye generous, evil eye grudging: Proverbs 22:9 "good of eye"; Deuteronomy 15:9 | 19-24 | Hebrew idiom | Search: biola.edu "Good eye, bad eye"; biblicaltraining.org "Single eye"; bibleproject.com. Both readings given. Matthew 20:15 not used |
+| Mammon Aramaic for wealth or property, not a known god; personified in 6:24 | 19-24 | Encyclopedia of the Bible; Tyndale Bible Dictionary; Strong's 3126 | Search: biblegateway.com encyclopedia "Mammon"; biblehub.com 3126; en.wikipedia.org "Mammon" |
+| Proverbs 23:5; 1 Timothy 6:10, 17-18 | 19-24 | BSB | Repository |
+| Sowing and reaping field work, spinning home work | 25-34 | The verse's own pairing; repository deep note | Stated plainly |
+| 1 Kings 10; Psalm 147:9; 1 Peter 5:7; 8:26; 14:31; Philippians 2:20; 26:37; 10:29; 2 Corinthians 11:27; 25:35 | 25-34 | BSB | Repository |
+| Help wording: "A doctor, a counselor, medicine, one trusted person who will stay. If you have reached the place where you are not sure you want to be here at all, tell someone today, and in the United States you can call or text 988 right now." | 25-34 | The site's Honest Answer "Is my anxiety a spiritual failure?" (`client/src/data/answers.ts`) | Copied word for word |
+
+Left out: Tobit 12:8 and Avot 1:2; the theater at Sepphoris and Batey;
+apechō as a business receipt (the search did not confirm it); the Amidah and
+Avinu Malkenu; the Didache's fast days (its "hypocrites" are read as Jews, and
+the line was not needed); the French bishops' 2017 wording; Augustine on
+Punic mammon; the eye as sending out light (Allison); Rabbi Eliezer in b.
+Sotah 48b; Jay Adams; Kierkegaard; Skeat's "card" reading. Care: forgiveness
+is not a return to harm; fasting not for everyone; worry is not a rebuke of
+anxiety disorders, with the site's help wording; no prosperity reading of
+6:33.
