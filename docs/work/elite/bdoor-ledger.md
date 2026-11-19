@@ -2112,3 +2112,25 @@ Cut: Jerome on what Jesus wrote; the Didascalia; Didymus; Augustine's "misery an
 | Daniel 7:13; Isaiah 6:9; Isaiah 42:7 | 35-41 | BSB | BSB text |
 
 Cut: Genesis Rabbah 63:6; b. Nedarim 64b; y. Shabbat 14:4; m. Yoma 8:6; m. Avot 5:21; m. Sanhedrin 6:2; Hezekiah's tunnel and its inscription; Irenaeus on the clay and Adam (the link is given only as what "some readers have noticed"); Justin and "illumination"; Augustine's allegory; the Lent readings and the Orthodox Sunday of the Blind Man; Duccio and El Greco; the 9:35 Son of God variant; the 9:38 omission; Kimelman, Reinhartz and Bernier by name.
+
+## The plain notes on John 10 (2026-11-19)
+
+`client/public/bible/notes/john/plain/10.json`. 6 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Folds, gatekeeper, shepherd calling and leading; sheep named | 1-6 | Deep note `cultural` (everyday practice) | Kept general; George Adam Smith and Barclay's gate story not used |
+| Psalm 23:1; 95:7; 100:3; Numbers 27:17; Deuteronomy 28:6; Psalm 121:8; Ezekiel 34:2, 4, 10-11, 16, 22-23; Isaiah 40:11; 56:8; 1 Samuel 17:34-35; Deuteronomy 32:39; 6:4; Leviticus 24:16; Psalm 82:1, 6-7 | all | BSB | BSB text |
+| Mishnah Bava Metzia 7:9 (around 200): a paid shepherd must fend off one wolf; two wolves count as an unavoidable accident | 11-21 | Mishnah | Search: sefaria.org.il English Explanation of Mishnah Bava Metzia 7:9; mishnah.org; fgh.perseids.org. Marked as later |
+| Ezekiel 34: God himself shepherds, and one shepherd, "My servant David" | 11-21 | BSB | BSB text |
+| "Other sheep": most read as Gentiles; 11:52 | 11-21 | Deep note; BSB | Stated as the common reading |
+| Hanukkah means dedication; Antiochus IV's altar around 167 BC; temple rededicated 164 BC; eight days and yearly feast (1 Maccabees 4) | 22-29 | Earlier ledger (Mark 13; John's book page) | Earlier ledger |
+| Josephus, Antiquities 12.325: the feast called "Lights" | 22-29 | Josephus | Search: lexundria.com Whiston 12.325; josephus.org "The Festival of the Dedication"; bibleodyssey.org. "Near the end of the first century" (Antiquities about 93) |
+| Solomon's Colonnade: a roofed colonnade of the outer court, probably on the east side; Acts 3:11; 5:12 | 22-29 | Easton's; Encyclopedia of the Bible "Solomon's Porch" | Search: biblegateway Easton and Encyclopedia of the Bible; BSB. "Probably" |
+| Harpazō in 10:12 and 10:28-29; hen (neuter) in 10:30 | 22-39 | Greek text in the repository | Script |
+| Perseverance: Westminster Confession 17 ("can neither totally nor finally fall away from the state of grace"); Dort; 1 John 2:19. Catholic, Orthodox, Lutheran, Wesleyan and Methodist teaching that a believer can fall away; 15:6 | 22-29 | Westminster Confession; catholic.com; UMC; Lutheran symbols as summarised | Search: apuritansmind.com WCF 17; ligonier.org; catholic.com "Can Salvation Be Lost?"; umc.org; christianitytoday.com (1962). Views only; "open for discussion and not a cause for division" (John 6 wording) |
+| Psalm 82's "gods": human judges; heavenly beings in God's court; later rabbinic reading, Israel at Sinai | 30-39 | Commentaries; Heiser's SBL paper | Search: christianity.com; desiringgod.org; drmsh.com SBL paper. The Talmud tractate not cited (not found) |
+| Nicene Creed in the site's older English wording; 1:1; 20:28; 17:22 | 30-39 | Repository; BSB | Repository; BSB text |
+| Bethany beyond the Jordan, site uncertain; 1:7, 1:28 | 40-42 | Book page | Earlier ledger |
+
+Cut: George Adam Smith and Barclay's shepherd-as-gate; Hammurabi and Homer; the Psalms of Solomon; lēstēs and Josephus's insurgents; 2 Maccabees on the feast; the Talmud's oil story; the Mishnah's definition of blasphemy; the 10:29 variant; the KJV's "one fold"; Neyrey, 11Q13, Augustine, Calvin, Dort, Arminius and Wesley by name; the Socinians.
