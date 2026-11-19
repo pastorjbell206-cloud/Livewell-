@@ -155,6 +155,76 @@
           "note": "Archaeologists have found the figurines in Judah's houses; Jeremiah describes the household at prayer. Everyone has a job, children, fathers and mothers alike. Idolatry here is not a scandal on a high hill but an ordinary family custom, and that is what made it so hard to give up."
         }
       ]
+    },
+    {
+      "id": "covenant-and-law",
+      "title": "Covenant, law and treaty",
+      "line": "Israel's God spoke in the shapes of a great king's treaty and a royal law collection, and changed what those shapes said.",
+      "icon": "scroll",
+      "body": [
+        "In this world great kings bound smaller kings by sworn treaties, and those treaties had a recognizable shape. In 1954 George Mendenhall compared the covenant at Sinai with treaties of the Hittite empire from the late second millennium BC. Those treaties open with the great king's name and titles, then recount what he has already done for the smaller king, then set out what loyalty requires, above all no allegiance to any rival. They provide for the text to be kept in a temple and read aloud, call the gods as witnesses, and end with blessings for keeping faith and curses for breaking it. Later scholars have tested the comparison hard. Dennis McCarthy found that only a few treaties actually include the clause on keeping and reading the text. But the likeness of the overall shape is widely granted.",
+        "Read the Ten Commandments with that shape in mind. \"I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery.\" That is the name and the history. Only then: \"You shall have no other gods before Me\" (Exodus 20:2-3). The demand comes after the rescue, as it would in a treaty. Deuteronomy carries the form at length. It retells the history, sets out the commands, pronounces blessings and curses, and orders the law read \"in the hearing of all Israel\" every seven years at the Feast of Tabernacles (Deuteronomy 31:10-11). Israel did not sign a contract with God. It was taken into allegiance by a King who had already acted.",
+        "Treaties changed over the centuries, and Israel lived through the later kind too. In 672 BC the Assyrian king Esarhaddon made his subject peoples swear to support his son Ashurbanipal as heir. In 2009 a copy of that oath was found at Tell Tayinat in southern Turkey, lying in the inner room of a temple, where a vassal had evidently displayed it. Judah's King Manasseh was an Assyrian vassal at the time, and Hans Ulrich Steymans has argued that Judah took the same oath, and that the curses of Deuteronomy 28:20-44 follow the order of a long curse section in Esarhaddon's text. Others doubt any direct borrowing. If Steymans is right, Deuteronomy turned an Assyrian loyalty oath around: the loyalty Assyria demanded for its king, Israel owed to the LORD alone.",
+        "Law had its own shared forms. The most famous law collection of the ancient world was carved for Hammurabi, king of Babylon, about 1754 BC, on a black stone pillar over seven feet tall that French archaeologists found at Susa in 1901. Its laws are written as cases, \"if a man does this, then that follows,\" the same form as many laws in Exodus 21 and 22, and it treats some of the same problems, such as an ox that gores. Israel's law speaks the legal language of its world.",
+        "What it says in that language is often different. Hammurabi grades penalties by rank. If a man puts out the eye of a free man, his own eye is put out (law 196). For the eye of a commoner he pays a mina of silver (law 198). For the eye of another man's slave he pays half the slave's price, to the owner (law 199). Exodus has its own \"eye for eye\" (Exodus 21:23-25), and then the verses that follow turn to the slave: a master who blinds his own servant \"must let the servant go free as compensation for the eye\" (Exodus 21:26-27). In Babylon the injured slave's value went to his owner. In the Torah the slave went free. The Torah also refuses money for a murder: \"You are not to accept a ransom for the life of a murderer\" (Numbers 35:31). And it keeps giving reasons that are memories: protect the foreigner, the fatherless and the widow, \"Remember that you were slaves in Egypt\" (Deuteronomy 24:17-18). Israel did not always keep these laws, and the prophets said so. But the laws stood as a judgment on any society that prices people by their rank.",
+        "Scholars such as Jean Bottero have pointed out that the thousands of court records surviving from Babylonia do not cite Hammurabi's laws as binding rules. The stone seems to have been a monument to the king as a just ruler as much as a code to be applied clause by clause. The Torah is not a full code either. It leaves most cases unmentioned and teaches by example, woven into a story. Both were meant to form judges as much as to bind them.",
+        "The covenant reached into the body and the house. Deuteronomy tells Israel to tie God's words \"as reminders on your hands and bind them on your foreheads\" and to write them on doorposts and gates (Deuteronomy 6:8-9). In 1979 a young volunteer on Gabriel Barkay's dig at Ketef Hinnom, a burial cave overlooking the Hinnom Valley outside Jerusalem's Old City, found the first of two tiny rolled scrolls of silver. Unrolled and read, they carry the priestly blessing of Numbers 6, \"May the LORD bless you and keep you,\" in early Hebrew letters. Barkay dates them to the late seventh or early sixth century BC, before the Babylonians burned Jerusalem. They are the oldest known copies of words that are in the Bible, centuries older than the Dead Sea Scrolls, and they were worn as amulets, the covenant's blessing rolled up and carried against the skin, then buried with the dead."
+      ],
+      "read": [
+        {
+          "ref": "Exodus 20:2-3",
+          "href": "/study/bible/exodus/20#v2",
+          "text": "“I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery. You shall have no other gods before Me.",
+          "note": "A great king's treaty began with his name and what he had done. So does this. The commandments are not an entrance exam. The sea was already parted and the slaves were already free before the first command was given."
+        },
+        {
+          "ref": "Exodus 21:26-27",
+          "href": "/study/bible/exodus/21#v26",
+          "text": "If a man strikes and blinds the eye of his manservant or maidservant, he must let the servant go free as compensation for the eye. And if he knocks out the tooth of his manservant or maidservant, he must let the servant go free as compensation for the tooth.",
+          "note": "Hammurabi's law paid the owner for a slave's lost eye. This law frees the slave. Set the two columns side by side and you can see the same legal world and a different God inside it, one who counts the servant's body as more than his master's property."
+        },
+        {
+          "ref": "Numbers 6:24-26",
+          "href": "/study/bible/numbers/6#v24",
+          "text": "‘May the LORD bless you and keep you; may the LORD cause His face to shine upon you and be gracious to you; may the LORD lift up His countenance toward you and give you peace.’",
+          "note": "These words were found on two tiny silver scrolls in a tomb outside Jerusalem, made before the city fell to Babylon. Someone wore the blessing at the neck and was buried with it. The oldest piece of the Bible ever found is not a law or a history but a prayer for God's face to shine."
+        }
+      ]
+    },
+    {
+      "id": "scribes-and-prophets",
+      "title": "Scribes, seals and prophets",
+      "line": "Who could write, what they wrote on, and the men who carried God's word to kings who did not want it.",
+      "icon": "book",
+      "body": [
+        "Israel and Judah wrote with an alphabet, a few dozen signs at most instead of the hundreds of signs an Egyptian or Babylonian scribe had to master. That made writing easier to learn than it had ever been. Most of what they wrote has perished. Scrolls of papyrus and leather rot in a wet winter, and almost none from the kingdoms survive. What lasts is writing on harder things: words cut in stone or plaster, letters written in ink on broken pieces of pottery, which archaeologists call ostraca, and the little lumps of clay called bullae that sealed a rolled document shut, pressed with the owner's seal.",
+        "Bullae survive best when the documents they sealed are burned, because fire bakes the clay. In 1982 Yigal Shiloh's excavation in the City of David, the oldest part of Jerusalem, found a room holding 51 bullae from documents that burned when the city fell to Babylon. One reads \"Belonging to Gemaryahu son of Shaphan.\" Jeremiah 36 tells how Baruch read Jeremiah's scroll aloud in the Temple \"from the chamber of Gemariah son of Shaphan the scribe\" (Jeremiah 36:10). Most scholars take the bulla to be his, or his office's. It came out of a controlled dig, which matters, because many seals and bullae sold on the antiquities market bearing biblical names have been questioned as forgeries.",
+        "How many people could read and write is one of the hardest questions in the study of this world. One test case comes from Arad, the fortress in the Negev, where a set of ink letters from about 600 BC was found, many addressed to an officer named Eliashib about supplies for the soldiers. In 2016 a team led by Shira Faigenbaum-Golovin used computer analysis of the handwriting on eighteen of them and concluded that at least six different people wrote them; a second study in 2020 raised the count to at least twelve. The authors argued that writing reached down through the army's ranks to quartermasters and officers in a small desert fort, though they say plainly that this is far from everyone reading. Others think trained scribes still did most of the writing. The answer probably lies between.",
+        "The most moving letters come from Lachish. In 1935 James Starkey found a group of ostraca in the burned ruins of Lachish, written by officers in the last months before Babylon took the city, about 588 to 586 BC. One letter ends with an officer telling his commander that they are watching for the fire signals of Lachish, following all the signs his lord has given, \"for we cannot see Azekah.\" Jeremiah 34:7 says that at the end, Lachish and Azekah \"were the only fortified cities remaining in Judah.\" Whether the officer means that Azekah had already fallen, or only that it could not be seen from his post, is argued. Either way the letter was written in the dark, by a man looking for a fire on the next hill.",
+        "Prophets were not unique to Israel. From the palace at Mari on the Euphrates come letters of the eighteenth century BC in which officials report to King Zimri-Lim what men and women called an apilum, an \"answerer,\" or a muhhum had said in the name of gods such as Dagan and Adad. Some of these messages warn the king; many promise him victory, including victory over Hammurabi of Babylon, who in the end conquered Mari. Two things set Israel's prophets apart from them. The Mari words were reported in letters and then filed; no one gathered them into books. And Israel's prophets were remembered, written down and kept even when, perhaps especially when, they spoke against the king.",
+        "In 1967 excavators at Deir Alla in the Jordan valley found pieces of a plastered wall written in red and black ink. When the fragments were put together they told of \"Balaam son of Beor,\" a \"seer of the gods,\" to whom the gods came at night with a terrible message, and who wept. Dates proposed for the plaster text range across the ninth and eighth centuries BC. It does not prove the story in Numbers 22, where King Balak sends for \"Balaam son of Beor\" to curse Israel (Numbers 22:5). It does show that a seer of that name was remembered east of the Jordan, by people who were not Israelites, centuries after the time the Bible gives him.",
+        "In Israel the prophet's word often went straight at the throne. At Bethel the king's priest Amaziah ordered Amos home to Judah: \"never prophesy at Bethel again, because it is the sanctuary of the king\" (Amos 7:13). A century after Micah warned that \"Jerusalem will become a heap of rubble,\" some of the elders of Judah quoted his words to save Jeremiah's life, reminding the court that King Hezekiah had listened instead of killing him (Jeremiah 26:18-19). The prophets' words were kept like that: remembered, repeated, written down by scribes such as Baruch, and carried through the very disasters they had foretold."
+      ],
+      "read": [
+        {
+          "ref": "Jeremiah 36:10",
+          "href": "/study/bible/jeremiah/36#v10",
+          "text": "From the chamber of Gemariah son of Shaphan the scribe, which was in the upper courtyard at the opening of the New Gate of the house of the LORD, Baruch read from the scroll the words of Jeremiah in the hearing of all the people.",
+          "note": "A clay seal impression naming Gemaryahu son of Shaphan has been found in the ruins of Jerusalem. The man whose office lent Baruch a window onto the Temple court left his name in clay. The book of Jeremiah is full of named officials like him, and some of their seals have turned up."
+        },
+        {
+          "ref": "Jeremiah 34:7",
+          "href": "/study/bible/jeremiah/34#v7",
+          "text": "as the army of the king of Babylon was fighting against Jerusalem and the remaining cities of Judah—against Lachish and Azekah. For these were the only fortified cities remaining in Judah.",
+          "note": "Jeremiah names Lachish and Azekah as the last strongholds. An officer near Lachish, writing on a potsherd, says he can no longer see Azekah's signal. The prophet's sentence and the soldier's letter describe the same closing weeks of a kingdom from two places on the map."
+        },
+        {
+          "ref": "Amos 7:12-13",
+          "href": "/study/bible/amos/7#v12",
+          "text": "And Amaziah said to Amos, “Go away, you seer! Flee to the land of Judah; earn your bread there and do your prophesying there. But never prophesy at Bethel again, because it is the sanctuary of the king and the temple of the kingdom.”",
+          "note": "Mari's prophets brought kings good news about their wars. Amaziah wants that kind of prophet, one who stays in his place and does not trouble the king's sanctuary. Amos's refusal is part of why his words were kept at all."
+        }
+      ]
     }
   ],
   "sources": {
