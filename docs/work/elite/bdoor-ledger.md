@@ -3628,3 +3628,23 @@ chapter.
 | Erets as earth and land (7:19, 12:1, 13:12, 41:57); "every nation came to Joseph" (41:57) | 17-24 | Hebrew text; BSB | Script (H0776) |
 | Third view: the writer describes the whole earth, an ancient telling of a real memory (a universal reading held by many critical commentators) | 17-24 | Davidson, "The Biblical Flood: Local or Universal" (Adventist paper, 2023); repository deep note | Search, as above; stated as a view |
 | 2 Peter 3:6; Isaiah 54:9; Isaiah 43:2 | 17-24 | BSB | Repository |
+
+## The plain notes on Genesis 8 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/8.json`. Two web searches for this
+chapter, with the book page's Gilgamesh row.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Zakar ‘remember’ (8:1; 9:15-16; 19:29); Genesis 30:22; Exodus 2:24; 1 Samuel 1:11; Luke 23:42; Isaiah 49:15 | 1-5 | Hebrew text; BSB | Script (H2142); repository |
+| Ruach in 1:2 and 8:1; nuach in 8:4; nichoach in 8:21 | 1-5, 20-22 | Hebrew text | Script (H7307, H5117, H5207) |
+| Ararat a region (plural ‘mountains’), Urartu in Assyrian texts, around Lake Van, eastern Turkey and Armenia; the peak's name modern; ark claims unconfirmed | 1-5 | Geography and history | Search: Encyclopedia.com "Ararat"; Biblical Archaeology Society "Where Noah landed"; Bible Hub atlas. "Never confirmed" from the repository deep note |
+| 2 Kings 19:37; Jeremiah 51:27 | 1-5 | BSB | Repository |
+| Gilgamesh XI: the boat on Mount Nimush; dove, swallow (both return), raven (does not); the offering, and the gods arriving at it | 6-12, 20-22 | Gilgamesh | Search: livius.org (Gilgamesh flood text); etana.org (Kovacs translation); historyskills.com; book page row. **Cut:** the gods gathering "like flies" (not found in the results) and the olive branch as a symbol of peace "because of this story"; ancient sailors releasing birds (not checked) |
+| Olive trees at lower elevations | 6-12 | Repository deep note (`cultural`) | Repository; stated plainly ("does not grow on high mountains") |
+| Matthew 3:16 and the dove, an echo the New Testament does not draw; Psalm 130:5 | 6-12 | BSB; repository deep note | Repository |
+| Dates: 7:11 and 8:14, about a year; ‘be fruitful and multiply’ (1:22, 1:28, 8:17) | 13-19 | BSB | Repository |
+| Romans 8:22; Revelation 21:1 | 13-19 | BSB | Repository |
+| First altar (mizbeach first at 8:20); olah first at 8:20; ‘pleasing aroma’ in Leviticus 1:9 | 20-22 | Hebrew text; BSB | Script (H4196, H5930) |
+| Gods fed by offerings in Babylon's world | 20-22 | Site guide the-gods-of-the-nations (earlier ledger row) | Repository |
+| Ephesians 5:2; Ezekiel 36:26; Jeremiah 33:20; Psalm 74:17 | 20-22 | BSB | Repository |
