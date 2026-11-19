@@ -3696,3 +3696,141 @@ traditional count of seventy names (taken from the sources, not recounted).
 ### Next
 
 Genesis 12 onward in plain words, in the same shape.
+
+## Continuation: Genesis 12 to 18 (2026-11-19)
+
+Seven chapters in plain words, in the shape of Genesis 1 to 11: each
+passage's third part is `later` ("Where the Bible takes this up"), never
+`ot`; each chapter note gained only `"plain": true` at its end (the diff
+changes its closing lines and nothing else). After each chapter every
+passage was printed field by field and read: every text sits under its
+right heading, and `validate-bible-notes` passed with no exception (it
+caught two misquotations from memory in Genesis 13, corrected to the BSB
+before the commit).
+
+### Chapters 12 to 18 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Genesis 12 | 3 (‘Leave your country’: the call and the promise; Abram goes, and the land is promised; Abram and Sarai in Egypt) | 2,288 |
+| Genesis 13 | 3 (back to the altar; Lot chooses the well-watered plain; ‘Lift up your eyes’) | 1,306 |
+| Genesis 14 | 4 (four kings against five; Abram goes after Lot; Melchizedek, king of Salem; ‘Not even a thread’) | 2,018 |
+| Genesis 15 | 4 (count the stars; ‘How can I know?’; four hundred years, and the Amorites; the fire passes between the pieces) | 2,294 |
+| Genesis 16 | 3 (Sarai's plan, and Hagar; the angel finds Hagar; ‘The God who sees me’) | 2,154 |
+| Genesis 17 | 4 (Abram becomes Abraham; the sign of the covenant; Sarah, and Abraham laughs; that very day) | 1,861 |
+| Genesis 18 | 4 (three visitors at Mamre; Sarah laughs; ‘Shall I hide from Abraham what I am about to do?’; Abraham pleads for Sodom) | 2,297 |
+| Total | 25 | 14,218 |
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Genesis 12" to "18".
+15 web searches (3, 0, 3, 2, 3, 2, 2). Main sources: Genesis 12:3 in
+Christian Zionist argument and its critics; Khnumhotep II's Beni Hasan
+painting (Kamrin 2009); per-aa ‘great house’; the four kings' proposed
+identifications and their limited acceptance; Melchizedek as Shem
+(Nedarim 32b, Targum Pseudo-Jonathan) and 11QMelchizedek; the Sefire
+treaty's cut calf; Trent (1547) and the Catholic and Protestant readings
+of ‘reckoned’; El Roi; Hagar in Islam (Safa and Marwa, Zamzam); Delores
+S. Williams, Sisters in the Wilderness (1993); Ankhmahor's circumcision
+relief at Saqqara; Josephus on the Arabs at thirteen; Mamre at Ramat
+el-Khalil (Herod; Constantine); Rublev's Trinity. Earlier rows reused:
+Hammurabi 144 to 147, the Nuzi caution, the camel study, Ur and Haran,
+Sodom's site, Jeremiah 34:18. Site wording reused word for word: the Mark
+10 safety line; the Luke 1 childlessness care lines; the genocide
+answer's two sentences on the Amorites; the Honest Answer's "God did not
+rebuke the question. He let Abraham press it again and again."
+
+### Cut or narrowed
+
+Cut: the Execration Texts and Khu-Sebek naming Shechem; Papyrus Anastasi
+VI; Pharaoh's gifts as a bride-price; the Speiser and Greengus Nuzi
+argument; the Mari donkey and the Ashur-nirari V lamb's head (not
+confirmed); "usually the weaker party walked between the pieces"; the
+Old Assyrian surrogacy contract; women kept apart from male guests;
+market bargaining; Rohl's Amar-Sin. Narrowed: the four kings
+("suggestions, not proofs"); Salem "usually identified" with Jerusalem;
+Hagar "one of very few people in the Bible who give God a name, and many
+readers say she is the only one" (agreeing with the verse note); the
+Saqqara relief "from the 2300s BC"; Rublev "early fifteenth century";
+Augustine and Nachmanides on Abram unnamed ("some old readers"; "many
+readers, Jewish and Christian, old and new").
+
+### Contested matters, and how they are stated
+
+12:3 "be blessed" or "bless themselves" (two readings; both say the
+choice is for the whole world). "I will curse those who curse you"
+(applied by some to nations and the modern state; others: a promise to
+Abram, not a rule for any government). The land promise (12:4-9, with
+pointers from 13:14-18 and 15:17-21): what the text promises, how Hebrews
+and Romans take it up, and three Christian readings, "These notes take no
+side." The kings of chapter 14 (late creation or older source).
+Melchizedek (a real king; Shem; the Qumran figure; the Son; Hebrews'
+‘like the Son of God’ read as a picture). The tithe (a lasting pattern or
+no New Testament command; "These notes do not settle it."). 15:6 and
+‘credited’ (Protestant and Catholic readings, and Paul and James, "These
+notes do not settle it."). The conquest behind 15:16 (the genocide
+answer's wording; the Honest Answer named). God passing between the
+pieces as a picture of the cross, "a Christian reading of the pattern".
+"Return and submit" (three readings, "The text does not answer every
+question"). Infant and believer baptism ("These notes take no side.").
+Who the three visitors were, including the Trinity reading ("These notes
+take no side among these readings."). Whether Abraham changed God's mind
+("These notes do not settle it.").
+
+The land promise, the sentences on the page (12:4-9): "Christians read the
+land promise in more than one way." ... "These notes take no side." and
+"These notes make no claim about any modern state, border or conflict.
+Nothing here is said against any people, ancient or modern: not the
+Canaanites, not the Jewish people, not the Arab peoples, not anyone who
+lives in that land today. On every reading the land was God's gift, never
+something earned or seized." 12:1-3 also says: "These notes make no claim
+about any modern state, border or conflict."
+
+Hagar, "return and submit" (16:7-12): "This is one of the hardest lines in
+Genesis, and it should not be softened." ... "This verse is not a command
+for anyone today to go back to a person who is hurting them. It was a word
+to one woman, in one desert, about one unborn child. No one should use it
+to send a wife, a child, a worker or anyone else back to harm." Then the
+Mark 10 safety line word for word, and a line for harm at home, work or
+church with Find Help.
+
+### Care lines included
+
+12:10-20: anyone put at risk by someone who should have protected them
+("What was done to you was wrong, and it was not your fault"; Find Help).
+16:7-12: the safety line above. 18:9-15: the Luke 1 childlessness lines
+word for word. 15:12-16: the conquest faced with the site's own answer.
+No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass.
+At the end, all 36 commands of the content-gates step in ci.yml, one at a
+time: exit 0 each (validate-bible-notes: 66 introductions, 1,189 chapter
+notes, 107 chapters in plain words; validate-no-emdash: 260 files, 0
+em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`:
+146 files passed, 7 skipped; 1,668 tests passed, 73 skipped. `pnpm build`:
+exit 0 (after the chapter commits).
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602; Playwright at 390
+wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed. `/study/bible/genesis/12` to `/18`: every passage's heading, its
+part headings in order and the first 60 characters under each matched the
+data (3, 3, 4, 4, 3, 4, 4 of the same), the third part reads "Where the
+Bible takes this up" in every passage, no sideways scroll, no page errors
+and no console errors. Screenshots of every passage of Genesis 12 and 16
+read by eye: `/home/user/elite-shots/bdoor/gn12-390-*` and `gn16-390-*`
+(the fixed masthead appears once mid-image where the element screenshot
+scrolls; not on the page itself). Server stopped by its PID, dist/
+deleted, no lh-*.json. Lighthouse not run (data only, no code change).
+
+### Still unverified
+
+Ancient texts' exact words (all paraphrased); Islamic tradition
+summarised from secondary sources; El Shaddai's meaning (said to be
+uncertain).
+
+### Next
+
+Genesis 19 onward in plain words, in the same shape.
