@@ -2154,10 +2154,10 @@ Cut: George Adam Smith and Barclay's shepherd-as-gate; Hammurabi and Homer; the 
 | Embrimaomai: strong feeling, often anger or indignation; NET note "deeply indignant"; Mark 1:43 (stern warning) and Mark 14:5 (scolded) | 28-37 | NET note on 11:33; Thayer; Strong's | Search: biblia.com NET note; biblehub.com 1690. Greek checked in the repository. Readings of its object given as views |
 | Klaiō (11:33) and dakryō (11:35); dakryō "to shed tears"; "may have been quieter" | 28-37 | Greek text in the repository; Thayer | Script; search: biblehub.com 1145. The loud/quiet contrast hedged ("may have been") |
 | Psalm 56:8 (quoted before its em-dash); Isaiah 53:3; Ecclesiastes 3:4; Genesis 50:10 | 28-37 | BSB | BSB text |
-| Rock-cut tombs, a stone at the entrance, strips of linen and a face cloth; 20:5-7 | 38-44 | Earlier ledger (Mark 15 and 16, tombs); BSB | Earlier ledger; BSB text |
+| Rock-cut tombs, a stone at the entrance, strips of linen and a face cloth; 20:5-7 | 38-44 | John 11:38, 44; Mark 15:46; John 20:5-7 | BSB text |
 | Ezekiel 37:12; Hosea 13:14; 12:10; Mark 5:21-43; Luke 7:11-17 | 38-44 | BSB | BSB text |
 | Whether it happened: views (later growth; the Synoptics' focus; 12:10 and protection); no verdict | 38-44 | Deep note `hard` | Stated as views; Strauss, Bultmann, Bauckham and Meier not named (not checked this run) |
-| Sanhedrin: chief priests, elders, teachers, led by the high priest | 45-53 | Earlier ledger (Mark 14) | Earlier ledger |
+| Sanhedrin: chief priests, elders, teachers, gathered with the high priest | 45-53 | Mark 14:53; 15:1 | BSB text |
 | Caiaphas: about AD 18 to 36 or 37, appointed and removed by Romans | 45-53 | Josephus, Antiquities 18.35, 18.95 | Earlier ledger (John's book page) |
 | AD 70 destruction of Jerusalem and the temple | 45-53 | Earlier ledger (Mark 13) | Earlier ledger |
 | Misuse named; Acts 4:27 (Mark 15 wording) | 45-53 | Earlier ledger | Earlier ledger |
