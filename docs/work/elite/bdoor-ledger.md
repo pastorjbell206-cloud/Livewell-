@@ -4649,3 +4649,32 @@ Cut: the deep note's claim that a Hebrew copy of Exodus among the Dead Sea
 Scrolls reads seventy-five at Exodus 1:5 (sources disagree; the fragment is
 broken there); the Hyksos as ‘shepherd kings’; the separation as Joseph's
 stated purpose (kept as a result, not a motive).
+
+## The plain notes on Genesis 47 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/47.json`. Four web searches for
+this chapter, with the deep note, the verse notes, the book page and the
+site's slavery Honest Answer.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| ‘Live in the land for a time’ = stay as a foreigner; Goshen as the book page map | 1-6 | Hebrew (gur); book page | Repository |
+| Deuteronomy 26:5 | 1-6 | BSB | Repository |
+| Blessing usually from greater to lesser; ‘travels’ = sojourning; Abraham 175 (25:7), Isaac 180 (35:28) | 7-12 | Deep note (`cultural`); BSB | Repository |
+| Pi-Ramesses built by Ramesses II in the 1200s BC in the eastern (north-eastern) delta; ‘district of Rameses’ a later name, or a sign of later writing | 7-12 | Archaeology summaries; deep note (`historical`) | Search: "Pi-Ramesses capital built by Ramesses II thirteenth century BC eastern delta Qantir" (en.wikipedia.org "Pi-Ramesses"; unibo.it mission page). Both readings stated; book page's dates part pointed to |
+| Hebrews 11:13; Psalm 39:12; Galatians 3:8; 12:3; 28:14 | 7-12 | BSB | Repository |
+| Three steps: money, livestock, land and bodies; the people's own offer (19) | 13-19 | BSB; deep note (`literary`) | Repository |
+| The grain from Egypt's own fields: a fifth advised (41:34), surplus gathered (41:48) | 13-19 | BSB | Repository; stated only as the text says |
+| Nehemiah 5:5; Proverbs 11:26 | 13-19 | BSB | Repository |
+| 47:21: the Masoretic text ‘moved them to the cities’; the Samaritan Pentateuch and the Septuagint ‘made them slaves’; the words differ by one letter; the BSB follows the second | 20-26 | Textual notes | Search: "Genesis 47:21 Masoretic ... Samaritan Pentateuch Septuagint" (freely-given.org OBD 47:21; intertextual.bible citing Tov; tips.translation.bible). No side taken on which is original |
+| ‘To this day’ shows a later writer | 20-26 | Deep note (`historical`) | Repository |
+| Three readings of the policy: life-saving (47:25); mild terms; the critical reading (state bondage; Leviticus 25; Exodus 1); the narrator silent; no side | 20-26 (hard) | Deep note (`hard`, `literary`); BSB | Repository |
+| Laws of Hammurabi 46: a field let for half or a third of the harvest | 20-26 (hard) | Hammurabi (King's translation) | Search: "Code of Hammurabi law 46 field rented half or a third of the crop" (sacred-texts.com ham05; historyweblog.com). Given as what those who hold the ‘mild terms’ reading say; the law number not printed; ‘maximum rents’ claim not used |
+| Exodus 1:11; 2:23; Leviticus 25:23, 39-41 | 20-26 | BSB | Repository |
+| The slavery Honest Answer named by its question | 20-26 (hard) | client/src/data/answers.ts | Repository |
+| Seventeen years (47:28; 37:2); hand under the thigh (24:2); chesed and emet; Machpelah (49:29-31); pointer to 12:4-9 on the land | 27-31 | BSB; deep note (`cultural`); plain note 12 | Repository |
+| Hebrews 11:21; Exodus 1:7 | 27-31 | BSB | Repository |
+
+Cut: royal decrees exempting temples from levies (deep note, not checked);
+an Egyptian rent of a fifth confirmed by Herodotus (one old commentary only);
+any modern political or economic application (none made).
