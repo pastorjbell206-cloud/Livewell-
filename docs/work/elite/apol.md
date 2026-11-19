@@ -535,3 +535,63 @@ Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date)
 ### Next in the ranking
 
 "What do Christianity and Islam actually dispute?", then "What makes us human in the age of AI?".
+
+## 10. The eighth run (2026-11-19): Islam, and being human in the age of AI
+
+The last two in the ranking, rebuilt by the approved pattern. Slugs, questions, addresses, essay and book links are unchanged; every claim is in `apol-ledger.md` under "Eighth run". Neither answer uses a fact about James.
+
+### What do Christianity and Islam actually dispute?
+
+The argument in three sentences. It states what Muslims confess in their own terms, quoting the Qur'an only from Saheeh International (tawhid and shirk, 4:48 and 112; Jesus as Messiah, born of the virgin, a word from God, not God's son, 3:45, 3:47, 4:171; not crucified, 4:157-158, with Lawson on the range of Muslim readings; the earlier books and the tahrif question, with Ibn Hazm and the interpretive view both named), then what the faiths share (Nostra Aetate 3 quoted, A Common Word in 2007, Qur'an 29:46), and sets out the Christian views on whether both worship the same God (Volf against Shehadeh) without taking a side. It argues four disputes, each with the strongest Muslim reply: the Trinity (what Christians do not mean, then an argument from "God is love" marked as persuasive only within the confession, against "the Free of need"); the cross (a historical argument from 1 Corinthians 15, Tacitus, Paul's "stumbling block" and Crossan, against the reply that 4:157 predicts exactly that evidence); who Jesus is (Hurtado on the earliest worship, against Mark 10:18, Qur'an 5:72 and Ehrman); and grace (Islam's mercy and the hadith on deeds stated fairly, Ephesians 2:8-9, against 6:164). It ends by showing the four disputes are one, in the old answer's own closing words.
+
+Before: "When I was an atheist, lumping every religion together kept all of them at arm's length." (cut: a habit of James's that can't be confirmed). After: "The strongest Muslim reply doesn't dispute that people saw a crucifixion. The verse itself says the matter \"was made to resemble him to them\" (4:157)."
+
+Words: 329 before; 2,188 after.
+
+Sources: Saheeh International 1997; Nostra Aetate 1965; Hurtado 2003; A Common Word 2007; Lawson 2009; Reynolds 2010; Volf 2011; Ehrman 2014 (the best case that Jesus' divinity was a later belief).
+
+### What makes us human in the age of AI?
+
+The argument in three sentences. The functionalist case is stated at full strength (Turing 1950 with his opening sentence and "the polite convention that everyone thinks", Putnam 1967, Dennett 1991 and his 1994 "we are a sort of robot ourselves"), with Searle's Chinese Room and Nagel's bat as secular dissent, and the page says plainly that nobody knows whether a machine could be conscious. It turns to what we already believe about the newborn and the man with dementia, with Singer's honest conclusion from a view based on abilities and Maritain's "on condition that no one asked why", then sets out the substantive (Aquinas), functional (Middleton) and relational (Barth) readings of the image of God fairly. An inference to the best explanation argues that equal human worth is better explained as given by God than earned by ability, the secular reply (worth from membership in the species) is heard, and the body is defended from Genesis 2:7, the creed and Irenaeus, ending on Psalm 8.
+
+Before: "the transhumanist dream of uploading the self is an old heresy on new hardware: the gnostic contempt for flesh." After: "Whatever one thinks of its chances, Christianity holds a different picture of a person, and it's the older one: a creature of dust and breath, made to be raised whole."
+
+Words: 245 before; 1,985 after.
+
+Sources: Turing 1950; Maritain 1951; Putnam 1967; Nagel 1974; Singer 1979; Searle 1980; Dennett 1991 (the strongest case against); Middleton 2005.
+
+### What I ran, and what passed (eighth run)
+
+Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date). One heavy command at a time, each watched to the end:
+
+- Rebuilt the search index (732 entries) and the passage index (8 chapter files written).
+- `pnpm check`: exit 0.
+- All 36 commands of the content-gates step in `ci.yml`, one at a time: every one exit 0.
+- `pnpm test`: exit 0, 146 test files passed, 7 skipped; 1,651 tests passed, 73 skipped (first run).
+- ESLint on `answers.ts` and `hq.test.tsx`: clean.
+- `pnpm build`, `pnpm run sitemap` (static fallback, no database), `pnpm run prerender` (3,028 route files), `pnpm run audit:canonicals` (0 not prerendered, 0 failures): each exit 0.
+- Served with `scripts/serve-like-vercel.mjs` on port 4586, API stubbed, Playwright at 390 x 844 and 1440 x 900, day and night: scroll width equals the viewport on all eight views, every section heading, the laid-out arguments and the source lists render. Screenshots: `/home/user/elite-shots/apol/run9-*`. Server stopped, `dist/` deleted.
+- Not run: Lighthouse.
+
+### Not verified (eighth run)
+
+- No Qur'an site, archive.org or other primary host resolves from here. The Saheeh International wording was read in full from an npm package that carries tanzil.net's text; it was not checked against a printed edition (the 1997 and 2004 editions differ slightly).
+- The Ayoub article and Reynolds's argument were not seen; Reynolds is listed by title only, Ayoub not at all.
+- Turing's "polite convention" is in secondary sources that give it as his words, not in the paper as seen. Barth's reading is from secondary summaries and has no source-list entry.
+- No answer has been read by James.
+
+### Waits for James (eighth run)
+
+1. Cut because it describes a habit we can't confirm: "When I was an atheist, lumping every religion together kept all of them at arm's length" (Islam). If it is true as written, it can go back.
+2. The Islam answer takes no side on whether Christians and Muslims worship the same God. If James holds a view, it can be named as his.
+3. Both pages are long (about 2,000 words). The first-paint idea from earlier runs (prerender only the short answer above the fold) still stands, unbuilt.
+
+### Every answer still in the short form
+
+Fifteen of the 35 answers have no `sections`. Sorted by whether they make a claim a skeptic disputes:
+
+Apologetic, should get the argued form: "How can God be three and one?" (215 words), "What about those who never heard of Jesus?" (396), "How should a Christian read Genesis 1?" (250).
+
+Doctrinal questions argued between Christians, better as the contested-doctrine form (positions steelmanned, ranked by order, left open): "Can you lose your salvation?" (273), "Does God choose us, or do we choose him?" (254), "What does the Bible say about divorce and remarriage?" (241).
+
+Pastoral or practical, should stay short and personal: "Is it okay to be angry at God?" (221), "Can you be a Christian without going to church?" (212), "What if I'm done with church but not with Jesus?" (212), "What happens after you deconstruct your faith?" (229), "Should a Christian follow a political party?" (208), "What does the Bible actually say about money?" (226), "What does the Bible say about anxiety?" (203), "What do I do when my teenager says they don't believe?" (215), "Is my anxiety a spiritual failure?" (295).
