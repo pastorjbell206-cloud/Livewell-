@@ -3760,3 +3760,30 @@ book page's rows and the repository's deep note.
 
 Cut: the Perizzites as ‘villagers’ (deep note, not checked); the kikkar as
 ‘circle’.
+
+## The plain notes on Genesis 14 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/14.json`. Three web searches for
+this chapter.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Shinar the land of Babylon; Elam in south-western Iran | 1-12 | Earlier ledger (Genesis 11); common reference | Earlier search; standard geography |
+| None of the four kings firmly identified; Amraphel as Hammurabi proposed (older encyclopedias) and not accepted; Chedorlaomer a Kudur-type Elamite name; Tidal compared with Tudhaliya; identifications have had limited acceptance | 1-12 | Encyclopedia of the Bible (Bible Gateway) "Chedorlaomer", "Amraphel"; Wikipedia "Chedorlaomer"; ISBE | Search. Stated as "suggestions, not proofs"; Rohl's Amar-Sin not used |
+| No record of the war outside Genesis; late creation or older source (views) | 1-12 | Repository deep note (`historical`) | Repository; stated as views |
+| Bela = Zoar; Siddim = Salt Sea; tar pits | 1-12 | BSB (14:2-3, 10) | Repository |
+| Deuteronomy 2:10-11; 2 Chronicles 20:2 (Hazazon-tamar = En-gedi); 1 Corinthians 15:33 | 1-12 | BSB | Repository |
+| ‘Hebrew’ first in 14:13; used by outsiders (39:14; 1 Samuel 4:6) | 13-16 | BSB | Repository |
+| Dan formerly Laish (Judges 18:29) | 13-16 | BSB; book page row | Repository |
+| 1 Samuel 30:24; John 15:13 | 13-16 | BSB | Repository |
+| Melchizedek ‘king of righteousness’; Salem usually identified with Jerusalem (Psalm 76:2); Adoni-zedek (Joshua 10:1); El Elyon a title of the highest God; king-priests | 17-20 | Repository deep note (`cultural`); BSB | Repository; "usually identified" |
+| Melchizedek identified with Shem in rabbinic tradition (Nedarim 32b; Targum Pseudo-Jonathan; Avot de Rabbi Natan), on Shem's long life | 17-20 | Rabbinic texts as summarised | Search: intertextual.bible (Nedarim 32b); newworldencyclopedia.org; Hayward, Biblica 81 (2000). Texts not named on the page |
+| 11QMelchizedek (11Q13): Melchizedek a heavenly deliverer bringing release and judgment at the end | 17-20 | Dead Sea Scrolls as summarised | Search: intertextual.bible 11q13; posenlibrary.com; Wikipedia 11Q13. Called "a scroll found among the Dead Sea Scrolls" |
+| Psalm 110:4; Hebrews 7:2-3, 7:16; bread and wine as Supper not drawn by the New Testament | 17-20 | BSB; deep note (`christ`) | Repository |
+| Tithe views (a lasting pattern, from Abram and 28:22; or no New Testament command, 2 Corinthians 9:7); no side | 17-20 | BSB | Repository; stated as views |
+| Raised hand as oath; refusing Sodom's spoils; contrast with chapter 12 | 21-24 | Repository deep note (`cultural`) | Repository |
+| Genesis 15:1; Luke 12:15; Matthew 6:24; 1 Timothy 6:10 | 21-24 | BSB | Repository |
+
+Cut: the Elamite power in the early second millennium; the Amorite
+meaning of ‘masters of a covenant’; Melchizedek as a pre-incarnate
+appearance attributed to named writers (kept as "some Christians").
