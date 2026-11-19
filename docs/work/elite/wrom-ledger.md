@@ -98,3 +98,41 @@ phrase confirmed in a search.
 | "many so-called gods and lords"; "one Lord, Jesus Christ" | 1 Corinthians 8:5-6 | BSB text |
 | Wright counter-imperial; Barclay: Rome marginal to Paul | Wright (2013); Barclay | The site's guide gospel-against-empire |
 | Weima (NTS 2012) argues "peace and security" echoes Roman propaganda; White (NTS 2013) says it cannot be shown to be an identifiable slogan in Paul's time | 1 Thessalonians 5:3 | Verified (search): Cambridge NTS abstracts of both articles; Bammel (1960) first proposed it |
+
+## Part 5. Clubs, meals and the table
+
+| Claim | Source | How checked |
+|---|---|---|
+| Associations by trade, cult, neighborhood, immigrant origin; officers, patrons, funds, meals | Kloppenborg, Christ's Associations (Yale, 2019) | Verified (search): Yale/De Gruyter listing; RBECS review (immigrant, cultic, occupational, neighborhood groups) |
+| Ascough: the Thessalonian church may have begun as an occupational association (after Kloppenborg) | Ascough, Paul's Macedonian Associations (Mohr Siebeck, 2003) | Verified (search): Mohr Siebeck listing; NTS 2023 article summarising his thesis |
+| Lanuvium AD 136, Diana and Antinous; entrance 100 sesterces and an amphora of good wine; 5 asses a month; 300 sesterces for the funeral; six months behind loses the claim; dinners | CIL 14.2112 (AGRW 310) | Verified (search): Harland, AGRW; followinghadrian.com; eagle-network. The dinner provisions are stated generally ("arrange the society's dinners"), not itemised |
+| Nicomedia fire; fire company of about 150; Trajan refuses, such men become political clubs; supply equipment and owners fight fires | Pliny, Letters 10.33-34 | Verified (search): World History Encyclopedia and others quoting the letters |
+| Pliny's edict banning hetaeriae; Christians stopped the common meal after it | Pliny, Letters 10.96 | Verified (search): Dickinson College Commentaries Latin and notes |
+| Reclining in the triclinium; rank seating; unequal food for guests | standard; Winter (2001) | The site's guide the-cities-of-paul (Winter); unequal food is standard (Pliny, Letters 2.6), not searched, and no source is named on the page |
+| Murphy-O'Connor, St. Paul's Corinth (1983): Anaploga villa; comparison set averages 37 m2 dining room, 74 m2 atrium; not all could recline | Murphy-O'Connor | Verified (search): Horrell's NTS article (2004) summarising Murphy-O'Connor, with Miller (Hesperia 1972) for the room sizes |
+| Horrell: shops and rented rooms east of the theater more likely than villas | Horrell, NTS 50 (2004) | Verified (search): Cambridge NTS abstract |
+| "each of you goes ahead without sharing his meal. While one remains hungry, another gets drunk" | 1 Corinthians 11:21 | BSB text |
+| Temple dining rooms could be used for meals; invitations ordinary | Garland, SNTS 2002 paper | Verified (search): Vanderbilt-hosted paper by David Garland |
+| P.Oxy. 110: Chaeremon invites to dine at the table of the lord Sarapis in the Sarapeum at the ninth hour; second century | papyrus | Verified (search): Wikipedia "Papyrus Oxyrhynchus 110", papyri.info HGV 28404 |
+| Asclepius sanctuary at Corinth a likely setting for 1 Cor 8:10 | Fotopoulos, Food Offered to Idols in Roman Corinth (2003) | Verified (search): DTS review of Fotopoulos |
+| makellon = Latin macellum | 1 Corinthians 10:25 | Standard (the Greek word in every critical text) |
+| "the table of the Lord and the table of demons too" | 1 Corinthians 10:21 | BSB text |
+
+## Part 6. Work, money and the crowded city
+
+| Claim | Source | How checked |
+|---|---|---|
+| Elite contempt for shop and wage work | Cicero, On Duties 1.150-151 | Standard; no source is named on the page |
+| Tentmakers by trade; worked night and day; work with our own hands | Acts 18:3; 1 Thessalonians 2:9; 1 Corinthians 4:12 | BSB text |
+| Hock (1980): leatherworker; the workshop as a place of conversation about the gospel | Hock, The Social Context of Paul's Ministry | Verified (search): Fortress Press listing; journal article in pubs.ufs.ac.za summarising Hock |
+| Insulae: shops below, rooms above; higher was cheaper | standard | Standard |
+| Juvenal, Satire 3: houses propped up and about to fall; Ucalegon shouting for water while the third floor burns; the last to burn is the tenant under the tiles where doves lay eggs; early second century | Juvenal 3.190-202 | Verified (search): opendemocracy essay, Latin reading blog (3.193-202), Kline translation; paraphrased, not quoted |
+| Eutychus, lamps, upper room, third story; meal until daybreak | Acts 20:8-11 | BSB text |
+| Free monthly grain for a fixed list of citizens; "a little more than two hundred thousand" in Augustus's gift | Res Gestae 15 | Verified (search): Wikipedia "Cura annonae", Brewminate; the 2 BC date (13th consulship) is not given on the page |
+| Famine under Claudius; relief to Judea | Acts 11:28-29 | BSB text |
+| Seneca over a bath: weight lifters grunting, masseur slapping, ball player counting, man who loves his voice, people leaping into the pool, hair plucker, sellers of snacks and drinks | Seneca, Moral Letters 56 | Verified (search): Standard Ebooks (Gummere), PBS translation, Modern Stoicism summary; the sellers given generally |
+| Denarius and drachma roughly equal | standard | Standard |
+| Fifty thousand drachmas | Acts 19:19 | BSB text |
+| Taxes and revenue | Romans 13:7 | BSB text |
+| Erastus inscription: found 1929 near the theater; ERASTVS PRO AED S P STRAVIT; aedile's duties; identification with Romans 16:23 disputed; oikonomos; Friesen dates the plaza to the second century | IKorinthKent 232 | Verified (search): Wikipedia "Erastus of Corinth", Cambridge review of Friesen, Gill; Weiss (2015) |
+| "not many" powerful or of noble birth | 1 Corinthians 1:26 | BSB text |
