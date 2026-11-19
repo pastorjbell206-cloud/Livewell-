@@ -2676,3 +2676,48 @@ the Akeldama leprosy DNA; Josephus and the Temple Scroll on lepers; the
 Talmud on the leper as one dead; the Didache's fasting days; Dewey and
 Wrede; Raymond Brown and Darrell Bock by name; Heracleon; the Mishnah on
 tax collectors' houses.
+
+## The plain notes on Luke 6 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/6.json`. Three searches for this
+chapter, with the book page's rows and the earlier ledger (Mark 2 and 3;
+Matthew 5, 7, 10 and 12).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Hand-picking allowed (Deuteronomy 23:25); harvest named (Exodus 34:21); Mishnah (around 200, later) lists reaping and threshing; "some of the Pharisees" | 1-5 | Earlier ledger (Mark 2); BSB | Earlier ledger |
+| 1 Samuel 21:1-6; Leviticus 24:5-9; Exodus 31:13; Isaiah 58:13 | 1-5 | BSB | Repository |
+| Only Luke: the rubbing (6:1), the right hand (6:6), the night of prayer (6:12) | 1-16 | BSB against Mark 2-3 and Matthew 12 | Repository |
+| Mishnah Yoma 8:6: even a doubt of danger to life overrides the Sabbath (later) | 6-11 | Earlier ledger (Matthew 12) | Earlier ledger |
+| Pharisees who invite (7:36), warn (13:31), Gamaliel (Acts 5:34-39), Paul (Acts 23:6); Hosea 6:6; Micah 6:8 | 6-11 | BSB | Repository |
+| Twelve tribes; Simon the Zealot; Matthew a tax collector; Judas "became a traitor"; apostle "one sent" | 12-16 | Earlier ledger (Mark 3); lexicon | Earlier ledger; repository Greek |
+| Thaddaeus (Mark 3:18) and Judas son of James (Luke 6:16; Acts 1:13): most think one man; not stated in the Gospels | 12-16 | Bible dictionaries | Search: biblicaltraining.org "Judas, not Iscariot"; biblehub topical; freely-given.org Thaddaeus. "Most think" |
+| Exodus 19; Acts 1:24; Psalm 27:11; 3:21, 9:18, 9:29 | 12-16 | BSB | Repository |
+| Same sermon told two ways, or taught more than once: both held | 17-26 | Standard readings | Stated as views; no names |
+| Tyre and Sidon Gentile cities; 4:26 | 17-26 | BSB; earlier ledger | Repository |
+| "Blessed is" a familiar form; not a wish | 17-26 | Matthew 5 plain note | Repository, same wording |
+| ptōchos: reduced to beggary, destitute; the opposite of the rich | 17-26 | Thayer; Strong's; Robertson as quoted | Search: blueletterbible.org G4434; bibletools.org G4434; bibliaparalela.com |
+| "Woe" a cry of grief and warning, used by the prophets (Isaiah 5:8) | 17-26 | BSB; standard lexicon sense | Repository |
+| Jeremiah 6:14; Psalm 126:5; Proverbs 30:8-9; Matthew 5:3 | 17-26 | BSB | Repository |
+| The 6:20 and 6:24 sentences: both money and the heart; not blunted; poverty not holy in itself; the woe a warning, not contempt; 8:3, 19:8-9, 18:27 | 17-26 | Book page ("The big themes", "Luke and money", hard-passage line for 6:20) | Repository, same stance and some of the same words |
+| Persecution line ("not a call to seek suffering") | 17-26 | Matthew 5 plain note | Repository |
+| Matthew 5:40 lawsuit (tunic, then cloak) against Luke 6:29 (cloak, then tunic) | 27-36 | BSB | Repository |
+| Hillel's negative rule, recorded in the Talmud written down centuries later | 27-36 | Earlier ledger (Mark 12; b. Shabbat 31a) | Earlier ledger. No date given for Hillel |
+| Matthew 5:48 "perfect" against Luke 6:36 "merciful" | 27-36 | BSB | Repository |
+| Leviticus 19:18; Exodus 23:4; Proverbs 25:21; Deuteronomy 15:8 | 27-36 | BSB | Repository |
+| The three readings of "turn the other cheek" and the care lines, word for word from Matthew 5:38-42 and 5:43-48 | 27-36 | Matthew 5 plain note; earlier ledger (Tolstoy omitted here) | Copied word for word (the Tolstoy clause dropped) |
+| "Give to everyone who asks" not a rule to hand over what will be used for harm | 27-36 | Repository chapter note (`teach.pitfalls`) | Repository |
+| Speck and beam; the Matthew 7 wording on judging; Galatians 6:1 | 37-42 | Matthew 7 plain note | Repository |
+| kolpos: the fold of the robe above the belt used as a pocket; grain poured into it | 37-42 | Translation commentaries | Search: tips.translation.bible (SIL notes on Luke 6:38); biblehub.com commentaries; bibletruthpublishers.com (Freeman). The selling practice given as Jesus' picture, not as a recorded custom |
+| 6:38 not a promise of money for giving | 37-42 | Repository chapter note (`teach.pitfalls`) | Repository |
+| Jeremiah 17:10; Leviticus 19:35; Psalm 1:3; Ezekiel 36:26; Luke 18:19 | 37-45 | BSB | Repository |
+| Matthew's tree saying aimed at false prophets (7:15-20); Luke's after the speck | 43-45 | BSB | Repository |
+| Rains in their seasons; Luke's builder "dug down deep" | 46-49 | Earlier ledger (Matthew 7) | Earlier ledger |
+| Proverbs 10:25; Isaiah 28:16; Psalm 18:2 | 46-49 | BSB | Repository |
+
+Left out: deuteroprōtos and Codex Bezae's added saying on the Sabbath worker
+(deep note, not needed); Combs (2019); Metzger; penēs against ptōchos (no
+source found for the contrast, so not drawn); Avot de-Rabbi Natan's
+builders; the Talmud's speck and beam; Tolstoy (dropped from the copied
+paragraph to keep it short); the back-handed slap (Luke does not say
+"right cheek").
