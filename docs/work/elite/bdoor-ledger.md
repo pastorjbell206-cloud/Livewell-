@@ -3886,3 +3886,36 @@ Honest Answers.
 Cut: Sarah hidden because women kept apart from male guests (not
 checked); "the first long prayer in the Bible" (said "one of the first");
 any comparison with market bargaining.
+
+## The plain notes on Genesis 19 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/19.json`. Four web searches for
+this chapter, with the book page, the deep note and verse notes, and the
+Genesis 12 plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The two angels are two of the three visitors (18:22); ‘angel’ means messenger | 1-3 | BSB; repository verse note (19:1) | Repository |
+| The gate: elders, trade, cases (Ruth 4:1-2); Lot's standing; 13:12; 14:12; bread without yeast as bread made in haste | 1-3 | Repository deep note (`cultural`) and verse notes (19:1, 3); BSB | Repository |
+| Hebrews 13:2; Judges 19:15, 22-24, 25-27 | 1-11 | BSB | Repository |
+| ‘Know’ (yada) sexual in Genesis (4:1) and in 19:8; the demand is gang rape | 4-11 | Repository verse note (19:5, 8) | Repository |
+| Host's duty to protect a guest; ‘my brothers’; the foreigner taunt; the door motif | 4-11 | Repository deep note (`cultural`) and verse notes (19:6-7, 9) | Repository |
+| Ezekiel 16:49-50; Isaiah 1:9-10, 17; Jude 7; Matthew 10:14-15; 11:23-24; Luke 17:28-33; 2 Peter 2:6-9; Deuteronomy 29:23; Amos 4:11; Zechariah 3:2 | 4-29 | BSB | Repository |
+| The Talmud (Sanhedrin 109) remembers Sodom chiefly as shutting out strangers and punishing kindness to the poor | 4-11 | Babylonian Talmud as summarised | Search: reformjudaism.org "Judge a Society by Its Hospitality"; etzion.org.il "Order, Compassion and Moral Society"; truah.org (Polsky). Paraphrased; no story from it retold |
+| Two Christian readings of the sexual element (traditional: same-sex element condemned with the violence, Jude 7, Leviticus 18:22; other: violent inhospitality the whole point); Jude's ‘strange flesh’ = Greek ‘other flesh’, read by some as angels | 4-11 | Repository verse note (19:5, `theology`); NET Bible note on Jude 7; commentaries | Search: biblia.com NET note Jude 7; biblehub.com commentaries on Jude 1:7. No side taken |
+| Lot's offer reported without approval; 2 Peter 2:7 ‘righteous’; saved by mercy | 4-11 | Repository deep note (`hard`, `cultural`) | Repository |
+| Care line "What was done to you was wrong, and it was not your fault." | 4-11; 30-38 | Genesis 12 plain note, word for word | Repository (grep -F) |
+| Sons-in-law: ‘pledged’ or already married (two readings); ‘joking’ from tsachaq, Isaac's root; ‘lingered’ suggests dithering; compassion (chemlah) as pity; Zoar and ‘small’; ‘I cannot do anything’ | 12-22 | Repository verse notes (19:14, 16, 21-22) and deep note (`words`) | Repository |
+| Sodom in the Jordan plain; salt, bitumen, sulfur; tar pits (14:10); site not known, south or north proposed; natural-cause suggestions | 23-29 | Book page map line; repository deep note (`historical`); earlier ledger rows (book page) | Repository; earlier search |
+| A salt pillar on Mount Sodom nicknamed ‘Lot's wife’, a later name, not evidence | 23-29 | Deep note; Wikipedia "Mount Sodom"; biblewalks.com | Search |
+| ‘Overthrow’ (haphak) the key verb; ‘from behind him’ and the command's verb; ‘God remembered’ as in 8:1 | 23-29 | Repository verse notes (19:26, 29) and deep note (`words`) | Repository |
+| Honest Answer "Did God command genocide in the Old Testament?" named | 23-29 | answers.ts | Repository |
+| Moab sounds like ‘from father’; Ben-ammi ‘son of my kin’; ‘of today’; Noah's drunkenness echo (9:20-27); the daughters' possible belief | 30-38 | Repository verse notes (19:31-32, 36-38) and deep note (`literary`) | Repository |
+| Mesha Stele: a king of Moab's inscription, about 840 BC (some say 850), naming wars with Israel; 2 Kings 3:4-5 | 30-38 | Mesha Stele | Search: cojs.org "Moabite Stone, c. 840 BCE"; newworldencyclopedia.org; Wikipedia. The page says "from about the middle of the 800s BC" |
+| Leviticus 18:6; Deuteronomy 2:9, 19; 23:3-4; Ruth 1:4; 4:17; Matthew 1:5; 1 Kings 14:21 | 30-38 | BSB | Repository |
+
+Cut: Josephus seeing the pillar (not checked); Tall el-Hammam and Bab
+edh-Dhra by name (the book page's wording used instead); the Talmud's
+stories (the bed, the marked coins, Pelotit), not retold; Wisdom of
+Solomon 19; the mid-twentieth-century ‘get acquainted’ reading of yada
+and its author; any claim that the story was told to mock Moab.
