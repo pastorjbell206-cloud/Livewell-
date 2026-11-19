@@ -2088,3 +2088,27 @@ Left out: Porphyry and Jerome on 7:8; P66's "the prophet" at 7:52 (not found); b
 | Nicene Creed in the site's older English wording | 48-59 | John 5 plain note | Repository |
 
 Cut: Jerome on what Jesus wrote; the Didascalia; Didymus; Augustine's "misery and mercy"; Trent by name; Luther's On the Jews and Their Lies (met only in summaries); Celsus on 8:41; Josephus on Eleazar at Masada; m. Ketubbot 2:9; Jubilees on Abraham; the Levites' age of fifty; Johns Hopkins; the 8:25 alternative renderings; the New World Translation at 8:58; Luke Timothy Johnson, Reinhartz and Ruether by name.
+
+## The plain notes on John 9 (2026-11-19)
+
+`client/public/bible/notes/john/plain/9.json`. 6 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Babylonian Talmud, Shabbat 55a-b: Rav Ami's "no death without sin, no suffering without iniquity", then refuted | 1-7 | b. Shabbat 55a-b | Search: halakhah.com Shabbath 55; sefaria.org.il Shabbat 55b; etzion.org.il "Is there Suffering Without Sin?". Paraphrased, marked as written down centuries after Jesus. Genesis Rabbah on prenatal sin not used |
+| Job 42:7; Exodus 20:5; Ezekiel 18:20; Leviticus 19:14; Isaiah 35:5; Psalm 146:8; Genesis 2:7 | 1-7 | BSB | BSB text |
+| Tacitus, Histories 4.81: in Alexandria a blind man asked Vespasian to moisten his eyes with spittle (AD 69-70) | 1-7 | Tacitus | Search: penelope.uchicago.edu Thayer (Loeb); sacred-texts.com; en.wikipedia.org "Fasting spittle". Paraphrased; "around AD 70" |
+| Siloam: stepped pool found in 2004; many take it as the pool of the story; "Sent" (9:7) | 1-7 | Earlier ledger (book page) | Earlier ledger |
+| 9:3-4 punctuation: no punctuation in the oldest copies; a full stop after "sinned" proposed, so the purpose clause goes with "we must work" | 1-7 | Poirier (NTS 1996; Filologia Neotestamentaria 2006; 2010); Derrett (FN 2003) for a third reading | Search: bsw.org Filologia Neotestamentaria vol. 19 and vol. 16. Stated as "some scholars propose"; no name given |
+| Egō eimi in 9:9 | 8-17 | Greek text in the repository | Script |
+| Mishnah Shabbat 7:2 (around 200): thirty-nine main kinds of work, kneading among them | 8-17 | Mishnah | Earlier ledger (Mark 2; Matthew 12); search: jtsa.edu Mishnah Shabbat 7:2; cojs.org; en.wikipedia.org 39 Melakhot. "Could be counted as kneading" |
+| Exodus 20:9-10 (quoted before its em-dash); Deuteronomy 18:18 | 8-17 | BSB | BSB text |
+| "Afraid of the Jews" means the authorities; the parents are Jews | 18-23 | Book page | Earlier ledger |
+| Put out of the synagogue: 12:42; 16:2; Martyn (1968) and the prayer against heretics; many doubt the link; local exclusions in Jesus' lifetime argued plausible (Bernier, Aposynagōgos and the Historical Jesus in John, Brill 2013) | 18-23 | Earlier ledger (book page); Bernier | Search: library.arce.org and oeaw.ac.at catalogue descriptions. Bernier not named |
+| Ezra 10:8; Psalm 34:18 | 18-23 | BSB | BSB text |
+| "Give glory to God": Joshua 7:19 | 24-34 | BSB | BSB text |
+| Amazing Grace: most likely written for 1 January 1773 at Olney; printed in Olney Hymns, 1779; "was blind, but now I see" | 24-34 | Olney heritage; hymnology archive; Museum of the Bible | Search: mkheritage.org.uk; christian.org.uk; museumofthebible.org "A Wretch Like Me". "Most likely"; that it echoes 9:25 is stated as an echo, not as Newton's source |
+| Psalm 66:18; Proverbs 15:29; Isaiah 29:18; 2 Chronicles 33:12-13 | 24-34 | BSB | BSB text |
+| Daniel 7:13; Isaiah 6:9; Isaiah 42:7 | 35-41 | BSB | BSB text |
+
+Cut: Genesis Rabbah 63:6; b. Nedarim 64b; y. Shabbat 14:4; m. Yoma 8:6; m. Avot 5:21; m. Sanhedrin 6:2; Hezekiah's tunnel and its inscription; Irenaeus on the clay and Adam (the link is given only as what "some readers have noticed"); Justin and "illumination"; Augustine's allegory; the Lent readings and the Orthodox Sunday of the Blind Man; Duccio and El Greco; the 9:35 Son of God variant; the 9:38 omission; Kimelman, Reinhartz and Bernier by name.
