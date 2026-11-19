@@ -1499,3 +1499,36 @@ Tosefta and 4Q500 on the tower; b. Berakhot 64a; b. Sanhedrin 98a; Egeria,
 the lectionaries, Bach, Giotto, Duccio, Cranach, Ecclesia and Synagoga;
 Chrysostom, Irenaeus, Telford, Sanders, Ruether, Soulen, Saldarini, Olmstead
 and Snodgrass by name; the Gospel of Thomas; the Psalm 8 Greek wording.
+
+## The plain notes on Matthew 22 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/22.json`. Four searches for this
+chapter, with the earlier ledger (Mark 12; Matthew 20 for "Friend").
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Luke's great dinner (Luke 14:15-24); 8:11; 21:31; 21:34-36 | 1-10 | BSB | BSB text |
+| The two-step invitation read from the story itself (invited, then called) | 1-10 | Matthew 22:3-4 | BSB text. A general claim about ancient invitation customs was cut (not checked) |
+| Isaiah 25:6; Hosea 2:19; Zephaniah 1:7; Isaiah 5:24 | 1-10 | BSB | BSB text |
+| 22:7 and AD 70: many read it after the war and count it toward a date after 70; others call it stock language for punishing a rebel city; some trace it to Isaiah 5:24-25 | 1-10 | Earlier ledger (Matthew's book page: 22:7 as evidence); commentary survey | Search: jimmyakin.com "Was Matthew Written AFTER A.D. 70?"; biblehub.com commentaries 22:7; catholic.com. No scholar named (Gundry, Brown, Rengstorf not named; Rengstorf not found) |
+| "Friend" only at 20:13, 22:12, 26:50 | 11-14 | Earlier ledger (Matthew 20) | Earlier ledger |
+| Wedding clothes read by many as clean clothes, one's best | 11-14 | Commentaries | Search: biblegateway.com IVP NT Commentary on 22:11-14; openbible.com commentaries 22:11. Stated as "many readers take" |
+| Host-supplied garments: no clear evidence; 2 Kings 10:22 weak | 11-14 | Commentaries | Same search (openbible.com: "not very convincing"; friarmusings.com). Stated as "should be held loosely" |
+| b. Shabbat 153a: Yohanan ben Zakkai's parable of the king's banquet with no time set; the dressed servants eat; Ecclesiastes 9:8 | 11-14 | Babylonian Talmud | Search: intertextual.bible (Matthew 22:2 and Shabbat 153a); virtualreligion.net/iho/parable.html; jerusalemperspective.com. Paraphrased, marked as several centuries after Jesus |
+| 8:12; 25:30; 7:21; Isaiah 61:10; Ecclesiastes 9:8; Galatians 3:27; Revelation 19:8 | 11-14 | BSB | BSB text |
+| Readings of the garment (righteousness given; a changed life; both) and of "chosen" | 11-14 | Deep note; standard positions | Stated as views, no names (Irenaeus, Augustine, Gregory, Calvin not named) |
+| 4 Ezra 8:3: many created, few saved; written near the end of the first century | 11-14 | 4 Ezra (2 Esdras) | Search: biblia.com RSV 2 Esdras 8; fortresspress.com introduction (Domitian, 81-96); israelbiblecenter.com. Paraphrased; dated "from the end of the first century" |
+| Pharisees, Herodians, AD 6 census, Judas the Galilean, Acts 5:37, the Tiberius denarius, three readings of "Give to Caesar" | 15-22 | Earlier ledger (Mark 12) | Earlier ledger; Mark 12 wording reused |
+| apodote "give back" as of a debt; Romans 13:7; Acts 5:29; Genesis 1:27 | 15-22 | Greek; BSB | Standard lexicon sense; BSB text |
+| Sadducees (Josephus, Antiquities 18.16; Acts 5:17; 23:8); 2 Maccabees 7 | 23-33 | Earlier ledger (Mark 12) | Earlier ledger |
+| Deuteronomy 25:5-6; Daniel 12:2; Exodus 3:6; Luke 20:36; 1 Corinthians 7:39 | 23-33 | BSB | BSB text |
+| Readings of marriage at the resurrection (Mark 12 wording); care for the remarried | 23-33 | Mark 12 plain note; pastoral | Repository text |
+| The Shema, Mishnah Berakhot 1:1, Hillel (b. Shabbat 31a), Akiva | 34-40 | Earlier ledger (Mark 12) | Earlier ledger |
+| Deuteronomy 6:4-5, 7; Leviticus 19:18; Matthew 7:12 | 34-40 | BSB | BSB text |
+| Psalm 110:1; 2 Samuel 7:13; 1:1; 9:27; 15:22; 21:9; Romans 1:3-4; views of Psalm 110's authorship | 41-46 | Earlier ledger (Mark 12); BSB | BSB text; Mark 12 wording reused |
+
+Left out: Amy-Jill Levine on this parable; Calvinist and Arminian names;
+Irenaeus, Augustine, Gregory and Calvin on the garment; Jehu's vestments as
+evidence; Ecclesiastes Rabbah; Brandon, Horsley, Justin, Tertullian, the
+Barmen Declaration, Luther's two kingdoms and Calvin's Institutes on taxes;
+the Greek Old Testament's "mind" in Deuteronomy 6:5; every textual note.
