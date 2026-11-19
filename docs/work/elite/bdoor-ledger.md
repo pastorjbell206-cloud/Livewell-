@@ -3713,3 +3713,32 @@ dates; Ur) and the Luke 1 note.
 | Joshua 24:2; Acts 7:2-4; Genesis 15:7; Hebrews 11:8, 11:10 | 27-32 | BSB | Repository |
 | Aqar ‘barren’ in 11:30, 25:21, 29:31; 1 Samuel 1:2; Luke 1:7 | 27-32 | Hebrew text; BSB | Script (H6135); repository |
 | Care line: "Many faithful people long for children and never have them, or lose them before birth." and "Childlessness is not a judgment from God, and it does not measure your faith. Your longing is seen. If the grief is heavy, please share it with someone you trust: a friend, a pastor, a counsellor." copied word for word from the Luke 1:5-17 note | 27-32 | Site | Repository (grep) |
+
+## The plain notes on Genesis 12 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/12.json`. Three web searches for
+this chapter, with the book page's rows (Ur and Haran, the moon god, the
+camel study, Joshua 24:2) and the repository's deep and verse notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The father's household held land, flocks, graves, name and protection; leaving it made one an outsider | 1-3 | Repository deep note (`cultural`) | Repository; stated generally |
+| ‘Bless’ five times in 12:2-3; ‘curse’ recurring before (3:14, 3:17, 4:11, 5:29, 9:25); mishpachot as in chapter 10; 11:4 against 12:2 | 1-3 | Hebrew text; book page | Repository (deep note `literary`; book page "repeated five times in three verses") |
+| 12:3 Niphal ‘be blessed’; 22:18 and 26:4 Hithpael ‘bless themselves’; the Greek and Galatians 3:8, Acts 3:25 take the passive | 1-3 | Repository verse note and deep note (`text`) | Repository; stated as two readings |
+| Plural ‘those who bless’, singular ‘the one who curses’ | 1-3 | Hebrew text; deep note (`words`) | Repository |
+| Genesis 12:3 is the verse most cited by Christian Zionists and is applied by some to nations and to U.S. policy toward the modern state; critics reply it is a promise to Abraham, not to a modern state | 1-3 | Press and church sources | Search: religionunplugged.com; catholic.com "Are Christians commanded to support Israel"; relevantmagazine.com; pursuegod.org. Stated as two views, no side, no names |
+| Acts 7:5; Hebrews 11:8-9, 11:16; Romans 4:13; Romans 11:29; Galatians 3:8-9, 3:29; Leviticus 25:23; Matthew 5:5; 8:11; Joshua 24:1-2; Psalm 105:14; Exodus 12:35-36 | all | BSB | Repository |
+| Christian readings of the land promise (still the Jewish people's in history; widened in Christ to the renewed earth; both) | 4-9 | Repository deep note on Genesis 13 (`hard`) | Repository; no side |
+| Great trees as places of seeking guidance; Shechem and Bethel later places of worship | 4-9 | Repository deep note (`cultural`); Joshua 24:1 | Repository |
+| Khnumhotep II's tomb at Beni Hasan (BH3): the Aamu of Shu under Abisha, dated to year 6 of Senusret II (1800s BC) | 10-20 | Kamrin, JAEI 2009, as summarised | Search: en.wikipedia.org "Khnumhotep II"; journals.librarypublishing.arizona.edu (JAEI). The page says "from the 1800s BC"; the count of 37 not used |
+| Pharaoh from per-aa ‘great house’, first the palace, later the king himself (New Kingdom) | 10-20 | Egyptian | Search: britannica.com "pharaoh"; worldhistory.org; egypt-museum.com |
+| Sarai a half-sister (20:12); three wife-sister stories (12, 20, 26) | 10-20 | BSB; deep note | Repository |
+| Camels: Tel Aviv University 2013 | 10-20 | Book page row | Earlier search |
+| Augustine's defence of Abram; Nachmanides' judgment | 10-20 | Repository deep note | Not checked this run: said only as "some old readers" and "many readers, Jewish and Christian" with no names |
+| Care line for a reader put at risk by a protector; Find Help named | 10-20 | Site | Written for this page; no phone number |
+
+Cut: the Execration Texts and Khu-Sebek stela naming Shechem; the
+Ehulhul temple; the names Nahur, Sarugi, Til-Turahi; Papyrus Anastasi VI;
+Pharaoh's gifts as a bride-price; the Speiser and Greengus Nuzi argument;
+the Genesis Apocryphon and Jubilees retellings (all from the deep note, not
+checked this run).
