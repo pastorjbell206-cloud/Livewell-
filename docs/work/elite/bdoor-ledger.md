@@ -6205,3 +6205,54 @@ No web search.
 | "Oracle" a prophet's word; 36:1 hard Hebrew, translations differ | Repository deep note (cultural) | Site's own teaching |
 | River of delights "may recall Eden" | Common reading | Stated as "may" |
 | Romans 3:18; John 4:14; Revelation 22:1 | BSB | BSB text |
+
+## The plain notes on Psalm 37 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Wisdom psalm; alphabet poem roughly every second verse | 1-11 | Book page (acrostics); first Hebrew letters in the repository | Script |
+| "Do not fret" in 1, 7, 8; "inherit the land" in 9, 11, 22, 29, 34 | all | BSB | Read in the BSB text |
+| Land as the family's share; seized by the powerful; grass after winter rains | 1-11, 27-40 | Repository deep note (historical, cultural) | Site's own teaching |
+| Matthew 5:5 nearly the same as the Greek of Psalm 37:11; Hebrew anawim behind "meek"; the Hebrew for "land" also means "earth" | 1-11 | en.wikipedia.org "Matthew 5:5"; intertextual.bible; israelbiblecenter.com "They Shall Inherit the Earth?" | Search. The article difference between the Greek texts not stated |
+| Loans in lean years; no interest (Exodus 22:25) | 12-26 | Repository deep note (cultural); BSB | BSB text |
+| Ruth 1:1; Luke 16:20-21; Acts 11:28-29; James 2:5; Psalm 73:2-3, 17, 26; Romans 4:13; 2 Peter 3:13; 1 Peter 5:7; Jeremiah 31:33; Hebrews 11:13; Revelation 21:1; Matthew 6:19 | all | BSB | BSB text |
+
+The hard question stated: "It is honest to say plainly: the righteous do
+sometimes go hungry. The Bible itself says so." Three readings of 37:25 (one
+man's witness; how God's world usually works; the end of the story); one use
+ruled out (blaming the poor); Psalm 73 as the deeper answer. 37:8 has an
+em-dash in the BSB and is quoted only before it; 37:23's word "journey" is
+not quoted.
+
+## The plain notes on Psalm 38 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Opens with the words of Psalm 6:1; one of the seven penitential psalms | BSB; Psalm 6 ledger row | BSB text |
+| "For remembrance" also heads Psalm 70; meaning uncertain | BSB headings by script; repository deep note | Script |
+| Sickness assumed a sign of God's anger; friends keeping away; doctors but little medicine | Repository deep note (cultural); Psalm 6 note | Site's own teaching |
+| Job 6:4; John 9:3; Luke 13:4-5; Isaiah 53:7; Luke 23:49; Romans 8:1; James 5:14 | BSB | BSB text |
+
+Illness and sin, on the page: "If you are ill, this psalm does not mean God
+is punishing you. Please do not let anyone tell you that it does." Guilt met
+with Psalms 32 and 51 and Romans 8:1; a doctor "is wise; it is not a lack of
+faith"; Find Help.
+
+## The plain notes on Psalm 39 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Jeduthun, a music leader (1 Chronicles 16:41); also heads 62 and 77 | BSB; headings by script | Script; BSB text |
+| Handbreadth a small measure | Repository deep note (cultural) | Site's own teaching |
+| Hevel (H1892) three times (39:5, 6, 11); the same word as Ecclesiastes 1:2 "futility" | Repository Strong's data | Script |
+| Foreigner and stranger: resident aliens protected by the law | Repository deep note (cultural) | Site's own teaching |
+| James 4:14; Luke 12:20; Hebrews 11:13; 1 Peter 2:11; Job 7:16 | BSB | BSB text |
+
+Care: "If you feel that you want to ‘be no more’, please do not carry that
+alone. Speak to someone today ..." with Find Help; no number.
