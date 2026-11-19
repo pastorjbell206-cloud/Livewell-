@@ -33,5 +33,466 @@
     { "ch": 15, "why": "The Jerusalem council decides that Gentile believers are saved by grace without circumcision, a turning point for the whole church." },
     { "ch": 17, "why": "Paul's speech in Athens shows how the gospel addresses a pagan audience with no knowledge of Israel's Scriptures." },
     { "ch": 28, "why": "Paul reaches Rome, and the book ends with the kingdom proclaimed boldly and without hindrance at the empire's heart." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Acts in a minute",
+        "body": "Acts is the fifth book of the New Testament, right after the four Gospels. It has 28 chapters. It is the second half of a two-part work. The same writer wrote the Gospel of Luke first, and both books are written to a man called Theophilus.\n\nLuke's Gospel told the story of Jesus. Acts tells what happened next. It opens with the risen Jesus, who tells his followers to wait in Jerusalem for the Holy Spirit and is then taken up into heaven. At the Jewish feast of Pentecost the Spirit comes, Peter preaches to the crowds, and about three thousand people are baptized.\n\nFrom there the story moves outward, step by step. The first believers in Jerusalem share their goods and face arrest. Stephen is stoned to death. The believers scatter into the country around. Saul, who had hunted them, meets the risen Jesus on the road to Damascus. Peter visits the house of a Roman army officer, and people who are not Jews (the Bible calls them Gentiles) receive the Spirit too. The second half follows Saul, now called Paul, across what is now Turkey and Greece, and at last to Rome as a prisoner.\n\nThe book ends with Paul under guard in Rome, still teaching: “Boldly and freely he proclaimed the kingdom of God and taught about the Lord Jesus Christ” (28:31). It does not say what happened to him next. The story is left open, as if more were still to be written."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and how we know",
+        "body": "Like the Gospels, Acts does not name its writer. But it plainly comes from the same hand as the Gospel of Luke. Both are written to Theophilus, and Acts begins, “In my first book, O Theophilus, I wrote about all that Jesus began to do and to teach” (1:1). The first book is Luke's Gospel. The style and the favourite words of the two books match closely, and nearly all scholars treat them as one work in two volumes.\n\nThe early church named the writer as Luke. Irenaeus, a bishop in Gaul (modern France), writing around AD 180, said that Luke was Paul's companion and that he set down in a book the gospel Paul preached. An early list of the Bible's books, called the Muratorian fragment and usually dated to the late second century, says that Luke wrote ‘the acts of all the apostles’ in one book for Theophilus, telling the things that happened while he was there. Paul's letters name a Luke among his fellow workers: “Luke, the beloved physician” (Colossians 4:14; also Philemon 24 and 2 Timothy 4:11).\n\nThe strongest clue is inside the book itself. In a few stretches the story suddenly says ‘we’ instead of ‘they’: “we got ready to leave for Macedonia” (16:10). These are called the ‘we’ passages (16:10-17; 20:5 to 21:18; 27:1 to 28:16). Irenaeus already read them as a sign that the writer travelled with Paul.\n\nScholars read the ‘we’ passages in more than one way. Many take them the plain way: the writer was there. Others think the writer used a travel diary kept by someone who was there. A few have argued that ‘we’ was simply a way of telling sea voyages in the writing of the time, and others dispute that such a custom existed. Some scholars also doubt that a close friend of Paul wrote Acts, because they see differences between Acts and Paul's own letters (the part ‘Acts and Paul's letters’ below sets them out). Others answer that two friends can tell the same events in different ways for different purposes. The traditional view, that Luke the companion of Paul wrote it, is still widely held."
+      },
+      {
+        "id": "two-volumes",
+        "h": "The second of two books",
+        "body": "Luke and Acts were written as one story in two parts. Luke's Gospel ends with the risen Jesus telling his disciples to “remain in the city until you have been clothed with power from on high” (Luke 24:49), and then being carried up into heaven. Acts begins with the same scene, told again at more length.\n\nThe two books mirror each other. In the first, the Spirit comes on Jesus at his baptism, and he begins his work with a sermon (Luke 3 and 4). In the second, the Spirit comes on the disciples at Pentecost, and Peter begins with a sermon (Acts 2). Jesus heals a man who cannot walk (Luke 5:17-26); so do Peter (Acts 3) and Paul (Acts 14:8-10). Jesus prays for the men who kill him (Luke 23:34); so does Stephen (Acts 7:60). Jesus goes up to Jerusalem knowing what waits for him there; so does Paul, who says he is “ready not only to be bound, but also to die in Jerusalem for the name of the Lord Jesus” (Acts 21:13).\n\nThe point is in the first verse. The Gospel told what Jesus “began to do and to teach” (1:1). Acts tells what he goes on doing, now from heaven, by his Spirit, through his people. That is why some readers say the book could as well be called the Acts of the risen Jesus, or the Acts of the Holy Spirit, as the Acts of the Apostles. Most of the twelve apostles hardly appear after the first chapter. The book is mostly about Peter, and then about Paul."
+      },
+      {
+        "id": "when",
+        "h": "When it was written",
+        "body": "Acts gives no date. Its last scene is Paul in Rome, under guard for “two full years” (28:30), which most date to about AD 60 to 62. So Acts was finished after that. How long after is debated, and there are three main views.\n\nThe early 60s. Some scholars date Acts soon after its last scene. Their main reason is what the book leaves out. Paul is the hero of the second half, yet the book never says how his trial ended or that he died. It does not mention the great fire of Rome in July 64, after which the emperor Nero blamed the Christians and many were put to death, as the Roman historian Tacitus tells. It does not mention that James, the brother of Jesus and a leader of the Jerusalem church in Acts, was stoned in Jerusalem around AD 62, which the Jewish historian Josephus reports. It does not mention the fall of Jerusalem and its temple in AD 70. On this view, Luke stopped where he stopped because events had reached his own day.\n\nThe 70s or 80s. Many modern scholars, probably most, date Acts here, with Luke's Gospel a little before it. They think Luke used Mark's Gospel, which is often dated to the late 60s, and that Luke's Gospel shows knowledge of how the Roman siege of Jerusalem went (Luke 19:43; 21:20). They read the open ending as a choice. The story was heading for Rome all along, and its last words show the message preached there without hindrance. The goal was reached, so the book was done.\n\nEarly in the second century. A smaller group dates Acts later still. Richard Pervo, in Dating Acts (2006), argued for about AD 115, partly because he thought Acts used a collection of Paul's letters and the writings of Josephus. Most scholars have not followed him.\n\nEach view has careful defenders, and these notes do not settle the question. Nothing in the faith hangs on the year."
+      },
+      {
+        "id": "kind",
+        "h": "What kind of book it is",
+        "body": "Acts is a history book, written the way history was written in the ancient world. That is different from a modern history in some ways and the same in others.\n\nLike other ancient histories, it chooses. It covers about thirty years in 28 chapters and leaves out far more than it tells. Most of the apostles drop out of sight. We hear nothing of the first believers in Egypt or in the lands to the east. Luke picks the stories that show how the message went from Jerusalem to Rome.\n\nIt marks its stages with short summaries: “So the word of God continued to spread” (6:7; compare 9:31, 12:24, 16:5 and 19:20). They work like the end of a chapter in a modern book.\n\nAnd it is full of speeches. A large part of the book is people speaking: Peter at Pentecost, Stephen before the council, Paul in a synagogue, in Athens and before a king. That raises a fair question. Did Luke have a record of every word? Most of the speeches take only a few minutes to read aloud, and the real ones were surely longer.\n\nAncient historians knew this question. The Greek historian Thucydides, writing in the 400s BC, said of the speeches in his history that exact words were hard to remember, so he kept as close as he could to the general sense of what was really said, and gave the speakers what the moment called for. Not every later historian was as careful, and some were criticised for making speeches up.\n\nReaders understand the speeches of Acts in more than one way. Many think they are faithful summaries: the general sense of what was said, in Luke's words. They point out that the speeches differ from one another in ways that suit their speakers and settings, and that some ways of speaking about Jesus in Peter's early sermons, such as God's ‘servant’ (3:13), seem to come from the church's earliest days. Other scholars think Luke wrote the speeches himself, as many ancient historians did, to say what he believed each moment meant, so that they tell us more about Luke than about Peter or Paul. Many hold a view somewhere between. All agree that the speeches are short, that Luke shaped them, and that they carry much of the book's teaching."
+      },
+      {
+        "id": "plan",
+        "h": "The plan in one verse",
+        "body": "Acts gives its own outline near the start. Jesus tells his followers, “you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth” (1:8).\n\nThe book follows that order. Chapters 1 to 7 stay in Jerusalem. Chapters 8 to 12 move into Judea, the country around Jerusalem, and Samaria, the region to the north whose people most Jews kept apart from, and on to the coast and to Damascus. In chapter 10 the message reaches a Roman officer and his household. From chapter 13 it goes out into the wider world: Cyprus, the cities of what is now Turkey, then Greece, and at last Rome.\n\n‘The ends of the earth’ is a phrase from Israel's prophets. In Isaiah, God says to his servant, “I will also make You a light for the nations, to bring My salvation to the ends of the earth” (Isaiah 49:6). Paul and Barnabas quote those words when they turn to the Gentiles (13:47).\n\nRome was not the end of the earth, and Luke knew it. But it was the centre of the world his readers knew. When the message is preached openly there, the book stops. The rest of the road is left to those who come after."
+      },
+      {
+        "id": "shape",
+        "h": "How Acts is built",
+        "body": "The outline at the top of this page draws Acts in six parts: waiting and Pentecost (1 and 2); witness in Jerusalem (3 to 7); Judea, Samaria and the door to the nations (8 to 12); the first mission and the council in Jerusalem (13:1 to 15:35); Paul's travels around the Aegean Sea (15:36 to 21:16); and Paul on trial and the road to Rome (21:17 to 28:31).\n\nSeen from further back, the book has two halves. Peter leads the first half and Paul the second. Luke seems to have shaped them to match. Both heal a man lame from birth (3:1-10; 14:8-10). Both see prison doors opened in the night (12:6-11; 16:25-26). Both are taken for more than men and refuse it (10:25-26; 14:11-15). Both raise a dead person to life (9:36-41; 20:9-12). The same Spirit works through both, and the message they preach is the same.\n\nAt the hinge stands chapter 15. The church meets in Jerusalem to decide whether Gentiles who believe in Jesus must first become Jews. Peter speaks for the last time in the book, and after that the story belongs to Paul."
+      },
+      {
+        "id": "themes",
+        "h": "The big themes",
+        "body": "The Holy Spirit. The Spirit drives the story. Jesus promises power when the Spirit comes (1:8), and the Spirit gives the believers courage to speak, guides their choices, sends out Paul and Barnabas, and comes on Samaritans and Gentiles in ways that push the church to accept them.\n\nWitness. A witness tells what he has seen. The apostles are first of all people who saw Jesus alive after his death (1:22). The Greek word for witness, martus, later came to mean martyr, someone who dies for the faith. In Acts the two meanings already touch: Stephen's witness costs him his life.\n\nThe good news crosses lines. The message goes from Jews in Jerusalem to Greek-speaking Jews, to Samaritans, to an official from Ethiopia, to a Roman officer, to farmers in Lystra and thinkers in Athens. Each crossing is argued over, and often God has to push the church across it.\n\nGod's promises to Israel kept. The first believers are Jews who pray in the temple. The apostles preach from the Law, the Prophets and the Psalms. Paul, on trial, says he is bound “because of the hope of Israel” (28:20). Acts never treats the church as a new religion cut loose from Israel's God.\n\nSuffering that does not stop the word. Almost every step forward comes through trouble: arrests, beatings, riots, a shipwreck. Persecution scatters the believers and so spreads the message. Paul's chains carry him to Rome. Luke does not make the suffering small, and he does not treat it as defeat."
+      },
+      {
+        "id": "old-testament",
+        "h": "Acts and the Old Testament",
+        "body": "Acts is soaked in Israel's Scriptures. The first sermons are built from them. At Pentecost Peter explains what is happening by the prophet Joel: “In the last days, God says, I will pour out My Spirit on all people” (2:17, from Joel 2:28). He then argues from Psalm 16, where David says to God, “nor will You let Your Holy One see decay” (2:27), and from Psalm 110, where the Lord says to the king, “Sit at My right hand” (2:34). In chapter 4 the believers pray Psalm 2 and Peter quotes Psalm 118: “the stone you builders rejected” (4:11).\n\nStephen's long speech in chapter 7 retells Israel's story from Abraham to Solomon. When the church decides about the Gentiles in chapter 15, James quotes the prophet Amos: God will rebuild “the fallen tent of David” so that all the nations may seek the Lord (15:16-17, from Amos 9:11-12). And the book ends with Paul quoting Isaiah 6 to the Jewish leaders in Rome (28:26-27).\n\nMost of these quotations follow the Septuagint, the old Greek translation of the Hebrew Bible that Greek-speaking Jews read, so their wording sometimes differs from the Hebrew behind our Old Testaments. The notes on each chapter point this out where it matters.\n\nThe claim running under all of it is simple. What has happened in Jesus is not a new story but the next chapter of Israel's story, the one the prophets were waiting for."
+      },
+      {
+        "id": "history",
+        "h": "Acts and the history of its day",
+        "body": "Acts names rulers, cities and officials, and that makes it possible to check. Some of its details can be matched with other ancient sources.\n\nHerod Agrippa I. Acts 12 tells how King Herod, known to historians as Herod Agrippa I, killed James the brother of John, and later died suddenly at Caesarea after the crowd hailed his voice as “the voice of a god” (12:22). The Jewish historian Josephus tells the same death: at Caesarea, during games held for the emperor, the people hailed Agrippa as a god, he did not rebuke them, and he was seized with pain in his belly and died five days later. Josephus places it in the seventh year of the emperor Claudius, AD 44. The two accounts differ in detail, but they tell the same event.\n\nThe famine. A prophet in Acts foretells a great famine, and Luke adds, “This happened under Claudius” (11:28). Josephus tells of a severe famine in Judea in the mid-40s, under the governors Fadus and Tiberius Alexander, when Queen Helena of Adiabene bought grain in Egypt and figs in Cyprus for the people of Jerusalem. Most think this is the famine Acts means, though its exact years are uncertain.\n\nClaudius and the Jews of Rome. In Corinth, Paul meets Aquila and Priscilla, who had come from Italy “because Claudius had ordered all the Jews to leave Rome” (18:2). The Roman writer Suetonius says Claudius expelled the Jews from Rome because they kept making disturbances at the prompting of ‘Chrestus’. Most scholars think this is a garbled form of ‘Christus’, and that the trouble was over Jesus; some think Chrestus was a local troublemaker. The year usually given, AD 49, comes from a much later writer, Orosius, and is disputed.\n\nGallio. Acts says Paul was brought before Gallio “while Gallio was proconsul of Achaia” (18:12). A proconsul was the governor of a Roman province. A letter of Claudius, carved in stone at Delphi in Greece, names Gallio and allows his year of office to be fixed, most think in AD 51 to 52, some say 50 to 51. This is the surest fixed date in Paul's life, and the other dates of his travels are counted from it.\n\nCity officials. In Thessalonica, Luke calls the city's rulers by a rare title, politarchs, translated ‘city officials’ (17:6). Inscriptions using that title have been found there; the best known came from an old arch over the main Roman road and is now in the British Museum.\n\nWhat this shows is debated. Some scholars gather many such details and argue that Luke was a careful historian who can be trusted where he cannot be checked. Others answer that getting local details right does not prove every story, and that Luke shaped his material to teach, as all ancient historians did. Both sides agree that Luke knew the world he wrote about."
+      },
+      {
+        "id": "letters",
+        "h": "Acts and Paul's letters",
+        "body": "Paul wrote many of his letters during the years Acts describes, so the two can be read side by side. Often they fit well. Acts tells how Paul founded the churches of Philippi, Thessalonica and Corinth, and his letters to those churches remember the same beginnings. But in some places readers see tensions, and it is fair to name them.\n\nPaul's visits to Jerusalem. In Galatians, Paul is defending his right to preach, and he swears, “I assure you before God that what I am writing to you is no lie” (Galatians 1:20). He says that after he met Jesus he went away to Arabia and back to Damascus. “Only after three years did I go up to Jerusalem to confer with Cephas, and I stayed with him fifteen days” (Galatians 1:18), and he saw no other apostle but James. Acts 9 says that “after many days” Paul went to Jerusalem and Barnabas brought him to the apostles (9:23-27), with no mention of Arabia.\n\nThen Galatians says, “Fourteen years later I went up again to Jerusalem, accompanied by Barnabas” (Galatians 2:1), and that he met the leaders privately. Acts tells of two later visits by Paul and Barnabas: one to bring gifts in a famine (11:30), and one for the council of chapter 15. Which one is Galatians 2?\n\nReaders answer in three ways. Many think Galatians 2 is the council of Acts 15, because both are about whether Gentiles must be circumcised. Others think it is the famine visit of Acts 11, because Paul went “in response to a revelation” (Galatians 2:2), as a prophet had foretold the famine, and the leaders asked him to “remember the poor” (Galatians 2:10); on this view Galatians was written before the council, which explains why Paul never mentions its decision. A third view sees Galatians 2 as a private meeting of its own.\n\nOther tensions are noticed too. Galatians tells of a sharp quarrel between Paul and Peter at Antioch (Galatians 2:11-14) that Acts does not tell. And Paul warns the Galatians against being circumcised, yet in Acts he circumcises his helper Timothy (16:3).\n\nHere too scholars differ. Some take these as signs that Acts was written later, by someone who did not know Paul closely or who smoothed over old quarrels to show a united church. Others think the two fit once their purposes are seen: Paul in Galatians is showing that his gospel did not come from the Jerusalem leaders, so he counts every contact; Luke is telling the church's story and leaves much out. They add that Galatians is about whether Gentiles must be circumcised to belong to God's people, while Timothy, whose mother was Jewish, was circumcised so that he could work among Jews. These notes set out the views and do not settle them."
+      },
+      {
+        "id": "jews",
+        "h": "Acts and the Jewish people",
+        "body": "Acts begins in Jerusalem among Jews. The apostles are Jews. The three thousand baptized at Pentecost are Jews and converts to Judaism, from all over the world. The first believers pray in the temple and keep the hours of prayer. “A great number of priests became obedient to the faith” (6:7). Years later, the leaders in Jerusalem tell Paul that “many thousands of Jews have believed” (21:20). Paul goes first to the synagogue in town after town, and he calls himself, on trial, “a Pharisee, the son of a Pharisee” (23:6).\n\nActs also tells of conflict. In the early chapters Peter says to the crowds in Jerusalem that they put Jesus to death: “God has made this Jesus, whom you crucified, both Lord and Christ” (2:36). It matters who is speaking, and to whom. A Jew is speaking to his own people, in their own city, weeks after the event, about something done there. In the same breath he says Jesus was delivered up “by God's set plan and foreknowledge” (2:23), and soon after, “I know that you acted in ignorance, as did your leaders” (3:17). And he offers them forgiveness, not condemnation: God sent his servant “first to you to bless you” (3:26). Three thousand of the hearers believe.\n\nLater in the book, Luke often writes ‘the Jews’ for those in a city who opposed Paul (for example 9:23). He means the opponents in that place, not every Jew; in the same cities many Jews believed.\n\nOver the centuries Christians misused verses like these to blame the whole Jewish people for Jesus' death, and called Jews ‘Christ-killers’. That reading fed contempt, expulsion and murder. It is false, and Christians must reject it plainly. This site rejects it, as on the pages for the four Gospels. Acts itself places all people inside the guilt: the first believers pray that “Herod and Pontius Pilate conspired with the Gentiles and the people of Israel” against Jesus (4:27). Jew and Gentile, ruler and crowd, together. The Second Vatican Council's declaration Nostra Aetate (1965) taught that what happened in Christ's passion cannot be charged against all the Jews then living, nor against the Jews of today, and many Protestant churches have said the same.\n\nThe book ends in Rome with Paul and the Jewish leaders there. “Some of them were convinced by what he said, but others refused to believe” (28:24). Paul tells them that God's salvation has been sent to the Gentiles. Readers differ on what that ending means: a turn away from mission to the Jews, or a sad but open door, since Paul goes on welcoming “all who came to visit him” (28:30). Acts does not give a verdict on the Jewish people. It tells of a Jewish Messiah and his Jewish apostles, welcomed by many of their own and refused by others, as the prophets had been before them."
+      },
+      {
+        "id": "not-a-rulebook",
+        "h": "What Acts is not",
+        "body": "Acts is not a rulebook in which every event is a pattern for every church. It tells what happened at the church's founding, and some of what happened is plainly not meant to repeat. The sound of wind at Pentecost does not come again. Lots are cast once, to choose Matthias, and never again in the New Testament. No other believer is struck dead as Ananias and Sapphira are.\n\nBut Luke also clearly means the book to shape its readers. The first believers' devotion to teaching, fellowship, the breaking of bread and prayer (2:42) has been a pattern for churches ever since.\n\nSo the real question is which parts are meant to be normal, and Christians differ over it. Three places show the difference most. First, the Spirit. In Acts the Spirit sometimes comes at the moment of faith, sometimes after baptism (8:16), sometimes before it (10:44-48), and sometimes with speaking in tongues. Pentecostal Christians take some of these scenes as a pattern of a later filling with the Spirit; many others take them as unusual moments in a church crossing new lines. Second, baptism: who receives it, and how it relates to forgiveness (the notes on 2:38 set out the views). Third, shared goods: the believers of chapters 2 and 4 share what they own, freely and not by law (5:4), and churches differ on what, if anything, that asks of Christians now.\n\nA careful reader asks of each scene what Luke himself signals is ordinary and what is a one-time turning point, and reads Acts alongside the teaching of the letters. Faithful churches land in different places on these questions, and these notes lay out the views without choosing between them."
+      },
+      {
+        "id": "reading",
+        "h": "How to read Acts",
+        "body": "Read it as one story. Acts takes a few hours to read aloud, and reading it in one or two sittings shows its movement better than anything else: from one room in Jerusalem to the capital of the empire.\n\nWatch the summaries. Each time Luke says the word kept spreading (6:7; 9:31; 12:24; 16:5; 19:20), a stage of the story closes.\n\nWatch who is speaking. The speeches carry the teaching. Ask what each speaker knows about his hearers, and how he begins where they are: with Joel for Jews at a feast, with the Creator and an altar ‘to an unknown god’ for thinkers in Athens (17:23).\n\nKeep the letters near. When Acts reaches Philippi, Thessalonica, Corinth or Ephesus, reading Paul's letter to that church shows the same story from the inside.\n\nAnd notice who the book is really about. The apostles fail, argue and are afraid. The church is never perfect. But the risen Jesus keeps acting, and the word keeps going on."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 18,
+        "ref": "1:18",
+        "line": "How did Judas die? Matthew says he hanged himself; Acts says he fell and burst open. The difference, faced honestly, and the ways readers answer it."
+      },
+      {
+        "ch": 2,
+        "v": 4,
+        "ref": "2:4",
+        "line": "Tongues at Pentecost: known languages, heard by people from many lands. And how Christians differ on the gift of tongues today."
+      },
+      {
+        "ch": 2,
+        "v": 36,
+        "ref": "2:36",
+        "line": "‘Whom you crucified’. Said by a Jew to his own people, with forgiveness offered. Why this verse may never be turned against the Jewish people."
+      },
+      {
+        "ch": 2,
+        "v": 38,
+        "ref": "2:38",
+        "line": "‘Repent and be baptized’ for ‘the forgiveness of your sins’. How the churches read baptism, forgiveness and ‘your children’."
+      },
+      {
+        "ch": 2,
+        "v": 44,
+        "ref": "2:44",
+        "line": "‘Everything in common’. What the first believers did, freely, and why it is not a program for any modern economy."
+      },
+      {
+        "ch": 4,
+        "v": 12,
+        "ref": "4:12",
+        "line": "‘No other name’. What the text claims about Jesus, and where Christians differ about those who never heard."
+      },
+      {
+        "ch": 5,
+        "v": 5,
+        "ref": "5:5",
+        "line": "Ananias and Sapphira. A hard story, not softened: what their sin was, and how readers have understood the judgment."
+      },
+      {
+        "ch": 5,
+        "v": 36,
+        "ref": "5:36",
+        "line": "Gamaliel's Theudas, and the Theudas of Josephus who seems to come later. The problem stated honestly, and the answers given."
+      },
+      {
+        "ch": 7,
+        "v": 16,
+        "ref": "7:16",
+        "line": "Stephen places Abraham's purchase at Shechem; Genesis puts it at Hebron. How readers account for the difference."
+      },
+      {
+        "ch": 8,
+        "v": 16,
+        "ref": "8:16",
+        "line": "Believers in Samaria baptized, yet without the Spirit until the apostles came. One time, or a pattern?"
+      },
+      {
+        "ch": 9,
+        "v": 7,
+        "ref": "9:7",
+        "line": "Did Paul's companions hear the voice (9:7) or not understand it (22:9)? What the Greek allows."
+      },
+      {
+        "ch": 15,
+        "v": 20,
+        "ref": "15:20",
+        "line": "The council's four rules for Gentile believers. Food laws, or something else? And do they still bind?"
+      },
+      {
+        "ch": 28,
+        "v": 28,
+        "ref": "28:28",
+        "line": "The salvation of God ‘sent to the Gentiles’. Does Acts end by closing the door to the Jews? Two readings."
+      }
+    ],
+    "words": [
+      {
+        "word": "Witness",
+        "line": "Greek martus. One who tells what he has seen. The apostles are witnesses of the risen Jesus (1:8, 1:22); the word later came to mean martyr."
+      },
+      {
+        "word": "Holy Spirit",
+        "line": "God's own Spirit, promised by Jesus and poured out at Pentecost (1:5, 2:4, 2:33). In Acts the Spirit gives courage and guides the church."
+      },
+      {
+        "word": "Pentecost",
+        "line": "Greek for ‘fiftieth’. The Jewish Feast of Weeks, fifty days after Passover, when the Spirit came (2:1)."
+      },
+      {
+        "word": "Apostle",
+        "line": "One who is sent. In Acts mostly the Twelve, who had been with Jesus and saw him risen (1:21-22); Paul and Barnabas are also called apostles (14:14)."
+      },
+      {
+        "word": "Repent",
+        "line": "Greek metanoeō, to change one's mind and turn one's life around (2:38, 3:19)."
+      },
+      {
+        "word": "The name",
+        "line": "In the Bible a name stands for the person and his authority. Acts heals, baptizes and preaches ‘in the name of Jesus’ (3:6, 4:12)."
+      },
+      {
+        "word": "Boldness",
+        "line": "Greek parrēsia, open and free speech without fear (4:13, 4:29). The last word of Acts describes Paul preaching ‘boldly’ (28:31)."
+      },
+      {
+        "word": "The Way",
+        "line": "An early name for the followers of Jesus and their way of life (9:2, 19:9, 24:14)."
+      },
+      {
+        "word": "Christian",
+        "line": "A name first given to the disciples at Antioch (11:26); in Acts it is used by outsiders (26:28)."
+      },
+      {
+        "word": "Gentiles",
+        "line": "People who are not Jews. Acts is in large part the story of how they came to share in Israel's promises (10:45, 15:7-11)."
+      },
+      {
+        "word": "Sanhedrin",
+        "line": "The council of leading priests, elders and teachers of the law in Jerusalem, led by the high priest (4:15, 5:21)."
+      },
+      {
+        "word": "Proselyte",
+        "line": "A Gentile who has fully joined the Jewish people; the BSB says ‘convert to Judaism’ (2:11, 6:5)."
+      },
+      {
+        "word": "Church",
+        "line": "Greek ekklēsia, an assembly or gathering. The word Acts uses for the believers together (5:11, 8:1)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "AD 26 to about 36",
+        "what": "Pontius Pilate governs Judea. Peter reminds the crowd that Pilate had decided to release Jesus (3:13; 4:27).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 30 or 33",
+        "what": "The two dates most often proposed for Jesus' death and rising. Pentecost (2:1) comes seven weeks later.",
+        "kind": "world"
+      },
+      {
+        "when": "The 30s, exact years unknown",
+        "what": "The first believers in Jerusalem; Stephen's death; Saul meets the risen Jesus near Damascus (chapters 2 to 9).",
+        "kind": "story"
+      },
+      {
+        "when": "AD 41 to 54",
+        "what": "Claudius is emperor. Acts names him for a famine (11:28) and for sending the Jews out of Rome (18:2).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 41 to 44",
+        "what": "Herod Agrippa I rules as king over Judea. He has James the brother of John put to death (12:1-2).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 44",
+        "what": "Agrippa dies suddenly at Caesarea, as Acts 12:20-23 and Josephus both tell, in the seventh year of Claudius.",
+        "kind": "world"
+      },
+      {
+        "when": "The mid-40s",
+        "what": "A severe famine in Judea, according to Josephus. The church in Antioch sends help by Barnabas and Saul (11:28-30).",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 49, disputed",
+        "what": "Claudius expels Jews from Rome. Aquila and Priscilla come to Corinth (18:2). The year comes from a later writer.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 51 to 52",
+        "what": "Gallio is proconsul of Achaia, as an inscription at Delphi shows. Paul stands before him in Corinth (18:12).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 54 to 68",
+        "what": "Nero is emperor. He is the ‘Caesar’ to whom Paul appeals (25:11).",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 60 to 62",
+        "what": "Paul under guard in Rome for two years, where Acts ends (28:30).",
+        "kind": "story"
+      },
+      {
+        "when": "About AD 62",
+        "what": "James, the brother of Jesus and a leader in Jerusalem, is stoned, as Josephus reports. Acts does not tell it.",
+        "kind": "world"
+      },
+      {
+        "when": "July 64",
+        "what": "The great fire of Rome. Nero blames the Christians, and many are killed (Tacitus). Acts does not tell it.",
+        "kind": "world"
+      },
+      {
+        "when": "AD 70",
+        "what": "The Romans destroy Jerusalem and its temple.",
+        "kind": "world"
+      },
+      {
+        "when": "60s to 80s, debated",
+        "what": "When Acts was written: the early 60s on one view, the 70s or 80s on the view of many scholars. A few say about 115.",
+        "kind": "book"
+      },
+      {
+        "when": "Late second century",
+        "what": "The Muratorian fragment, usually dated here, says Luke wrote the acts of all the apostles for Theophilus.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 180",
+        "what": "Irenaeus writes that Luke, Paul's companion, wrote down the gospel Paul preached, and reads the ‘we’ passages as Luke's.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "id": "damascus",
+        "name": "Damascus",
+        "lat": 33.513,
+        "lon": 36.29,
+        "refs": [
+          "9:2",
+          "9:19"
+        ],
+        "line": "An old city in Syria. Saul asks for letters to its synagogues (9:2), meets the risen Jesus on the road to it, and is baptized there.",
+        "label": {
+          "dx": -10,
+          "dy": 4,
+          "anchor": "end"
+        }
+      },
+      {
+        "id": "sidon",
+        "name": "Sidon",
+        "lat": 33.56,
+        "lon": 35.37,
+        "refs": [
+          "12:20"
+        ],
+        "line": "A port city on the coast north of Galilee. With Tyre, it asks Herod Agrippa for peace because it depends on his land for food (12:20)."
+      },
+      {
+        "id": "tyre",
+        "name": "Tyre",
+        "lat": 33.27,
+        "lon": 35.2,
+        "refs": [
+          "12:20"
+        ],
+        "line": "The other great port of Phoenicia, south of Sidon. Its people come to Herod Agrippa at Caesarea to ask for peace (12:20)."
+      },
+      {
+        "id": "caesarea",
+        "name": "Caesarea",
+        "lat": 32.5,
+        "lon": 34.89,
+        "refs": [
+          "8:40",
+          "10:1",
+          "12:19"
+        ],
+        "line": "A port city Herod the Great built on the coast, where the Roman governors lived. Cornelius, a Roman officer, lives here (10:1), and Herod Agrippa dies here (12:23).",
+        "label": {
+          "dx": 10,
+          "dy": 4,
+          "anchor": "start"
+        }
+      },
+      {
+        "id": "samaria",
+        "name": "Samaria",
+        "lat": 32.42,
+        "lon": 35.32,
+        "refs": [
+          "1:8",
+          "8:5",
+          "8:14"
+        ],
+        "line": "The region between Galilee and Judea, whose people most Jews kept apart from. Philip preaches the Christ in a city there (8:5).",
+        "region": true
+      },
+      {
+        "id": "joppa",
+        "name": "Joppa",
+        "lat": 32.054,
+        "lon": 34.752,
+        "refs": [
+          "9:36",
+          "10:5"
+        ],
+        "line": "An old port, today's Jaffa. Peter raises Tabitha here, and on a rooftop here he sees the vision that sends him to Cornelius (9:36 to 10:16).",
+        "label": {
+          "dx": 10,
+          "dy": -2,
+          "anchor": "start"
+        }
+      },
+      {
+        "id": "lydda",
+        "name": "Lydda",
+        "lat": 31.951,
+        "lon": 34.888,
+        "refs": [
+          "9:32",
+          "9:38"
+        ],
+        "line": "A town inland from Joppa, today's Lod. Peter heals Aeneas here (9:32-35).",
+        "label": {
+          "dx": 10,
+          "dy": 6,
+          "anchor": "start"
+        }
+      },
+      {
+        "id": "jerusalem",
+        "name": "Jerusalem",
+        "lat": 31.778,
+        "lon": 35.235,
+        "refs": [
+          "1:4",
+          "2:5",
+          "8:1"
+        ],
+        "line": "Where the book begins. The Spirit comes here at Pentecost, the first believers meet in the temple courts, and Stephen is stoned outside the city (7:58)."
+      },
+      {
+        "id": "azotus",
+        "name": "Azotus",
+        "lat": 31.76,
+        "lon": 34.66,
+        "refs": [
+          "8:40"
+        ],
+        "line": "The old Philistine city of Ashdod, near the coast. Philip appears here after baptizing the Ethiopian official on the road to Gaza (8:26-40).",
+        "label": {
+          "dx": 10,
+          "dy": 4,
+          "anchor": "start"
+        }
+      }
+    ],
+    "mapNote": "This map shows the land where Acts 1 to 12 happens. Gaza (8:26) lies just south of its edge. Paul's travels, from Antioch to Rome, need a wider map of the Mediterranean, which is still to come.",
+    "deeper": [
+      {
+        "href": "/resources/context/world/jewish-life-in-jesus-day",
+        "name": "Jewish life in Jesus's day",
+        "line": "The temple, the feasts, the council and the groups Acts names",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/world/roman-world",
+        "name": "The Roman world",
+        "line": "The emperors, governors and cities Paul's travels pass through",
+        "icon": "world"
+      },
+      {
+        "href": "/resources/context/world/honor-and-shame",
+        "name": "Honor and shame",
+        "line": "The world behind Barnabas's gift and the apostles' joy in disgrace",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/the-cities-of-paul",
+        "name": "Which Cities Did Paul Write To? Corinth, Ephesus, Rome",
+        "line": "The cities of Acts, and the letters Paul sent them",
+        "icon": "world"
+      },
+      {
+        "href": "/resources/context/septuagint-and-scripture",
+        "name": "What Is the Septuagint, and Why Does It Matter?",
+        "line": "The Greek Old Testament most quotations in Acts follow",
+        "icon": "scroll"
+      },
+      {
+        "href": "/answers/what-about-those-who-never-heard",
+        "name": "What about those who never heard of Jesus?",
+        "line": "The Honest Answer behind the question 4:12 raises",
+        "icon": "book"
+      }
+    ]
+  }
 }

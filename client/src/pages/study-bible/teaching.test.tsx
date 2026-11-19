@@ -51,10 +51,10 @@ describe("Mark's teaching introduction", () => {
     expect(book).toBeLessThan(all);
   });
 
-  it("only the four Gospels and Genesis have one so far, and every other book's introduction still has the fields its page draws", () => {
+  it("only the four Gospels, Acts and Genesis have one so far, and every other book's introduction still has the fields its page draws", () => {
     for (const b of BOOKS) {
       const d: BookIntro = json(`bible/notes/${b.slug}/intro.json`);
-      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke", "genesis"].includes(b.slug));
+      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke", "acts", "genesis"].includes(b.slug));
       expect(typeof d.overview).toBe("string");
     }
   });
@@ -131,6 +131,27 @@ describe("Luke's teaching introduction, from the same parts", () => {
     fireEvent.click(screen.getByRole("button", { name: "Emmaus" }));
     expect(screen.getByRole("link", { name: "Luke 24:13" }).getAttribute("href")).toBe("/study/bible/luke/24#v13");
     expect(screen.getByText(/the two regions are placed roughly/)).toBeTruthy();
+  });
+});
+
+describe("Acts's teaching introduction, Luke's second volume", () => {
+  const ACTS = BOOKS.find((b) => b.slug === "acts")!;
+  const ac: BookIntro = json("bible/notes/acts/intro.json");
+
+  it("has its parts on Paul's letters and on the Jewish people, its hard passages and its own Go deeper pages", () => {
+    renderWithProviders(<BookTeaching book={ACTS} teaching={ac.teaching!} />);
+    expect(screen.getByRole("heading", { level: 2, name: "Acts and Paul's letters" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 2, name: "Acts and the Jewish people" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Acts 2:38" }).getAttribute("href")).toBe("/study/bible/acts/2#v38");
+    expect(screen.getByRole("link", { name: "Acts 5:5" }).getAttribute("href")).toBe("/study/bible/acts/5#v5");
+    expect(screen.getByText(/need a wider map of the Mediterranean/)).toBeTruthy();
+  });
+
+  it("draws one map on the old frame, with the places of Acts 1 to 12 inside it", () => {
+    expect(bookMaps(ac.teaching!.map).map((m) => m.frame)).toEqual(["israel"]);
+    renderWithProviders(<BookMap slug="acts" bookName="Acts" places={ac.teaching!.map} />);
+    fireEvent.click(screen.getByRole("button", { name: "Joppa" }));
+    expect(screen.getByRole("link", { name: "Acts 9:36" }).getAttribute("href")).toBe("/study/bible/acts/9#v36");
   });
 });
 

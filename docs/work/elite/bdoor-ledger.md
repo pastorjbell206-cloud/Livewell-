@@ -4766,3 +4766,42 @@ Genesis 23 care lines and the suffering Honest Answer.
 Cut: Acts 7:15-16 (it names Shechem for the fathers' tomb, a separate
 question not raised here); Diodorus on thirty and seventy-two days; the
 Cairo papyrus CG 58038 (not confirmed); Ptahhotep's 110 years.
+
+## Acts's book page (teaching introduction, 2026-11-19)
+
+Every historical claim in `client/public/bible/notes/acts/intro.json`, field
+`teaching`. 8 searches for the book page, run on 2026-11-19. Ancient writers
+are paraphrased. Scripture is the BSB in the repository, checked word for
+word by `scripts/validate-bible-notes.mjs`.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Acts 1:1 and Luke 1:3 to Theophilus; one work in two volumes | BSB; repository `author` | Repository |
+| Irenaeus (about 180): Luke, Paul's companion, set down the gospel Paul preached; read the "we" passages as Luke's | Irenaeus, Against Heresies 3.1.1, 3.14.1 | Earlier ledger (Luke's book page). Paraphrased |
+| Muratorian fragment: "the acts of all the apostles" in one book; Luke for Theophilus; the things done while he was present; usually late second century | Muratorian fragment | Search: earlychristianwritings.com (Metzger); lexundria.com; christian-history.org. Single-quoted phrase as in Metzger and Lexundria |
+| Colossians 4:14; Philemon 24; 2 Timothy 4:11; the "we" passages; the eyewitness, diary and sea-voyage readings | BSB; earlier ledger (Luke) | Repository; no scholar named |
+| Date views: early 60s (no trial outcome, no fire of 64, no James 62, no 70); 70s or 80s (most; Mark used; Luke 19:43, 21:20; open ending a choice); early second century | Repository `date`; earlier ledger (Luke) | Earlier ledger |
+| Fire of Rome July 64; Nero blamed Christians (Tacitus, Annals 15.44) | Tacitus | Earlier ledger (Mark) |
+| James the brother of Jesus stoned under Ananus between Festus and Albinus, about AD 62 | Josephus, Antiquities 20.200 | Search: lexundria.com 20.200 (Whiston); Wikipedia "Ananus ben Ananus", "James, brother of Jesus" |
+| Richard Pervo, Dating Acts (Polebridge, 2006), about AD 115; partly from dependence on a Pauline letter collection and on Josephus; most have not followed | Pervo | Search: westarinstitute.org; schweitzer-online.de (2006, Polebridge); proquest review (115); BiTS article; Tyndale Bulletin (majority first century) |
+| Thucydides 1.22: exact words hard to recall; kept as close as possible to the general sense, and what the occasion called for; later historians less careful (Polybius's criticism) | Thucydides; Bruce (1942) as summary | Search: ellopos.net (Crawley); gospelstudies.org.uk Bruce; vridar.org. Paraphrased; views on Acts' speeches stated without names |
+| Isaiah 49:6 and Acts 13:47; Joel 2:28 and Acts 2:17; Psalms 16, 110, 2, 118; Amos 9:11-12 in Acts 15:16-17; Isaiah 6 in Acts 28:26-27 | BSB | Repository |
+| Peter and Paul parallels (3:1-10 and 14:8-10; 12:6-11 and 16:25-26; 10:25-26 and 14:11-15; 9:36-41 and 20:9-12) | BSB | Repository |
+| Herod Agrippa I's death at Caesarea at games for the emperor, hailed as a god, pain in the belly, five days, seventh year of Claudius, AD 44; Acts 12:20-23 | Josephus, Antiquities 19.343-350 | Search: biblicaltraining.org; julianspriggs.co.uk; newworldencyclopedia.org; biblearchaeologyreport.com. "Grandson of Herod the Great" not used (not seen in the results) |
+| Agrippa I king over Judea AD 41 to 44 | Repository `setting` | Repository |
+| Famine in Judea under Fadus and Tiberius Alexander, Queen Helena of Adiabene's grain from Egypt and figs from Cyprus; years uncertain ("the mid-40s") | Josephus, Antiquities 20.51-53, 20.101 | Search: julianspriggs.co.uk; biblehub commentaries (Gill, Barnes). Dates vary in sources, so no exact year |
+| Claudius expelled Jews at the prompting of "Chrestus"; most read Christus, some a local agitator; AD 49 from Orosius, disputed | Suetonius, Claudius 25.4; Orosius | wrom-ledger (verified) |
+| Gallio inscription at Delphi; most AD 51 to 52, some 50 to 51 | Inscription | wrom-ledger (verified) |
+| Politarchs at Thessalonica; best-known inscription from an arch over the Egnatian Way, now in the British Museum | Inscriptions | Search: Wikipedia "Politarch"; biblicaltraining.org; holylandphotos.org; also the Roman-world portrait's source note |
+| Claudius 41 to 54; Nero 54 to 68; Pilate 26 to about 36; crucifixion 30 or 33; 70 | Standard reign dates (wrom-ledger); earlier ledger | Ledgers |
+| Galatians 1:17-20, 2:1-2, 2:10, 2:11-14; Acts 9:23-27, 11:30, 15; three views of Galatians 2 (= Acts 15; = Acts 11; a private meeting) | BSB; readings | Search: galaxie.com (Stein, JETS 17.4, 1974); readingacts.com; psephizo.com; gci.org. Stated as views, no names |
+| Timothy's mother Jewish (16:1); 16:3; Galatians 5:2 | BSB | Repository |
+| "Christ-killers" paragraph, Nostra Aetate 4 (1965), Acts 4:27 | Earlier ledger (Mark 15; Luke's book page) | Earlier ledger; wording as Luke's book page |
+| Map positions (Damascus, Sidon, Tyre, Caesarea, Samaria as a region placed roughly, Joppa as Jaffa, Lydda as Lod, Jerusalem, Azotus as Ashdod) | Approximate modern sites | Not a historical claim; Caesarea built by Herod and the governors' seat from the Jewish-life portrait |
+
+Left out: Colin Hemer, William Ramsay and F. C. Baur by name (the search
+confirmed Hemer's book of 1989 but not what it argues about politarchs, and
+Baur was not searched); Sergius Paulus inscriptions; Agrippa I as grandson of
+Herod the Great; an exact year for the famine; Festus's year; the length of
+Acts in hours (said "a few hours"); how the church has read Acts (not
+searched, so no such part).
