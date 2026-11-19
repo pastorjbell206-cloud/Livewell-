@@ -4615,3 +4615,147 @@ sentence; the charismatic movement described only generally.
 
 Acts 8 onward in plain words, in the same shape; and a Mediterranean map
 frame for Paul's travels.
+
+## Continuation: Acts 8 to 14 (2026-11-19)
+
+A machine restart cut off the last run after Acts 8 was committed
+(957ec4f8), with its ledger rows in place. This run read Acts 8 as an editor
+and then wrote Acts 9 to 14.
+
+### The editor's read of Acts 8
+
+Every passage printed field by field: all seven sit under their right
+headings, and the care points hold (Samaria without contempt; Simon's later
+legends as "later Christian writers told", paraphrased; 8:14-17 with the
+Pentecostal, Catholic and Orthodox, and Reformed and Baptist readings, no
+side; the Kandake as a title of the queens of Kush; the eunuch with
+Deuteronomy 23:1 and Isaiah 56; 8:37 missing from the earliest manuscripts,
+said plainly; baptism mode as views). Five things changed: "the Samaritans
+also looked for a coming prophet like Moses" narrowed (one search: the hope
+is in later Samaritan writings, its first-century form uncertain); the men
+who buried Stephen made "devout Jews or believers", both readings; "often as
+a boy" cut; "a scroll of Isaiah, which was costly" cut to what the text says;
+"a magician learned secrets from a teacher, often for a price" cut to the
+deep note's "people paid for spells and charms". One quotation of 2:38 had
+joined two parts of the verse with an ellipsis; it is now a paraphrase and
+one exact quotation. Commit 98ad6492.
+
+### Acts 9 to 14 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Acts 9 | 6 (a light on the Damascus road; Ananias goes to his enemy; preaching in Damascus, and the basket; Barnabas stands with Saul; Aeneas at Lydda; Tabitha, raised at Joppa) | 4,299 |
+| Acts 10 | 6 (Cornelius; Peter's vision; three men at the gate; Peter enters a Gentile house; ‘God does not show favoritism’; the Spirit falls before baptism) | 3,578 |
+| Acts 11 | 5 (‘You ate with them’; ‘Who was I to hinder God?’; Greeks believe in Antioch; the name ‘Christians’; Agabus, and a gift for Judea) | 2,580 |
+| Acts 12 | 4 (James killed, Peter in chains; an angel in the prison; Rhoda at the gate; ‘The voice of a god’) | 2,510 |
+| Acts 13 | 6 (sent out from Antioch; Cyprus; Pisidian Antioch: Israel's story; forgiveness, and ‘justified’; ‘We now turn to the Gentiles’; ‘Appointed for eternal life’) | 4,008 |
+| Acts 14 | 5 (Iconium; Lystra: ‘The gods have come down’; ‘We too are only men’; stoned, and left for dead; ‘Through many hardships’, and home) | 3,017 |
+| Total | 32 | 19,992 |
+
+Acts 8 now has 4,350 words in 7 passages. After each chapter every passage
+was printed field by field: all sit under their right headings.
+`validate-bible-notes` passed after each with no exceptions. Each chapter
+note gained only `"plain": true`.
+
+### Sources
+
+All in `bdoor-ledger.md` under "Editor's read of Acts 8" and "The plain
+notes on Acts 9" to "14". 18 web searches: 1, 3, 2, 2, 2, 6, 2. Main
+sources: the Greek of 9:7 and 22:9 (both readings); Aretas IV (about 9 BC to
+AD 40); Mishnah Ketubot 7:10 on tanners; the Italian cohort inscription
+(Syria, about 69); the Aphrodisias God-fearers inscription; Antioch's
+founding by Seleucus I; the name "Christians"; Herod Agrippa I's family and
+reign; Josephus, Antiquities 19.343-350 (from the ledger and a search);
+Lucius Sergius Paullus (CIL VI 31545), "has been suggested"; Pisidian
+Antioch and Lystra as Augustan colonies; "Saul, also called Paul" as a
+two-name formula; Catechism 1989 (from Trent) and the Joint Declaration
+(1999); Ovid, Metamorphoses 8 (Baucis and Philemon), paraphrased.
+
+### Cut or narrowed
+
+Cut: a date for Saul's call; Stendahl by name; how Aretas held Damascus;
+Straight Street traced today; Kraabel; the temple of Rome and Augustus at
+Caesarea; "third city of the empire"; the size of Antioch's Jewish
+community; the 11:20 Greeks/Hellenists reading; Tacitus on the name; Agrippa
+raised in Rome; the owl in Josephus; any Roman rule on guards; the Soloi
+inscription and Ramsay; the 450 years of 13:20; the middle-voice reading of
+13:48; Orthodox teaching on justification (not searched); veterans and the
+founding year at Lystra; Zeus and Hermes inscriptions near Lystra.
+Narrowed: the first trip "many place it in the later 40s"; Sergius Paulus
+"has been suggested ... not certain"; Tabitha koum "if Peter spoke
+Aramaic"; tanners' uncleanness "many readers ... others argue"; Ovid "scholars
+debate how far that story lies behind this scene".
+
+### Contested matters, and how they are stated
+
+The three tellings of Saul's call and 9:7 with 22:9 (the grammar reading and
+the "too slight" reading). Conversion or call ("These notes leave the choice
+of word to the reader"). Peter's vision and the food laws. The Spirit before
+baptism (set beside 2:38, 8:14-17 and 19:5-6, with "What Acts is not").
+Those who never heard (pointer to the Honest Answer, twice). Galatians 2 and
+the famine visit. Justified (Lutheran and Reformed; Catholic; the Joint
+Declaration). 13:48 (Reformed; Arminian and Wesleyan; pointer to "Does God
+choose us, or do we choose him?"). Church government (bishops; elders;
+congregations). South and North Galatia.
+
+**8:14-17 (unchanged from the last run).** "Christians understand this
+passage in different ways. These views are held by faithful believers, and
+these notes do not choose between them."
+
+**Peter's vision and the food laws (10:9-16, hard).** "What does the vision
+mean for the food laws? Christians read it mainly as being about people,
+with the food question following from it." And: "None of this treats the
+food laws as foolish. God gave them, and they did their work ... Jewish
+families who keep them today are honouring the God of Abraham. The vision is
+not a story about Jews being wrong. It is a story about God widening his
+table."
+
+**James killed and Peter freed (12:1-5, hard).** "The text gives no reason.
+Luke tells James's death in a single sentence and Peter's rescue in many,
+and he does not explain why God let one apostle die and brought the other
+out. ... These notes will not invent a reason Luke does not give."
+
+**"The Jews" in Acts 13 (13:42-47, hearers).** "Then Luke writes, ‘when the
+Jews saw the crowds, they were filled with jealousy’. Who does he mean? Not
+the Jewish people, and not even all the Jews of this town, since many of
+them had just believed. He means some of the synagogue's members and leaders
+in Pisidian Antioch ... Paul and Barnabas, who answer them, are Jews too."
+And: "‘We now turn to the Gentiles’ is a turn in one town, not a turn away
+from the Jewish people. In the very next town, Iconium, Paul and Barnabas go
+‘as usual into the Jewish synagogue’ ... (14:1)", with Romans 11:1. The same
+care, each with a pointer to the 2:22-28 note, at 9:23, 9:29, 12:3, 12:11,
+13:27, 13:50, 14:2-5 and 14:19.
+
+### Care lines included
+
+9:32-35 (those who prayed and were not healed: the Acts 3 sentences, Find
+Help); 9:36-43 (those who prayed beside a bed and the person did not wake,
+Acts 7 form, Find Help); 12:1-5 (those whose prayer for rescue was not
+answered, with Daniel 3:18, Find Help); 14:21-28 ("through many hardships":
+not every hardship is to be endured in silence; help and safety; Find Help).
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass. At
+the end, all 36 content-gate commands of ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 153 chapters in plain words; search index 732 entries
+up to date; passage index 623 files match; verify-sources 22 texts intact).
+`pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped; 1,676 tests
+passed, 73 skipped. `pnpm build`: exit 0. Served with
+`scripts/serve-like-vercel.mjs` on port 4600; a Playwright script (390 wide,
+deviceScaleFactor 1, /api/trpc, /api/track and /_vercel stubbed) matched
+every passage heading, its part headings in order and the first 60
+characters under each to the data: Acts 8, 30 of 30 fields; 9, 28; 10, 26;
+11, 20; 12, 17; 13, 26; 14, 21; no sideways scroll, no console or page
+errors. Screenshots looked at: `/home/user/elite-shots/bdoor/acts8-390-*`
+and `acts13-390-*`. Server stopped by PID, dist/ deleted, no lh-*.json.
+Sitemap, prerender and Lighthouse not run (no code changed).
+
+### Still unverified
+
+The exact words of every ancient writer (paraphrased); Orthodox teaching on
+justification; the age of the Samaritan hope of a prophet like Moses.
+
+### Next
+
+Acts 15 onward in plain words.
