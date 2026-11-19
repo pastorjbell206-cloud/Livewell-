@@ -1123,7 +1123,7 @@ export const ANSWERS: Answer[] = [
         heading: "The case against, at its strongest",
         body: [
           "The commands are in Deuteronomy, for the war Israel was about to fight west of the Jordan. For the peoples of the land, the law says, \"you shall save alive nothing that breathes, but you shall devote them to complete destruction\" (Deuteronomy 20:16-17). Joshua narrates it. At Jericho \"they devoted all in the city to destruction, both men and women, young and old, oxen, sheep, and donkeys, with the edge of the sword\" (Joshua 6:21). The word genocide is modern. Raphael Lemkin coined it in 1944, and the United Nations convention adopted on December 9, 1948, defines it as acts \"committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such.\" Deuteronomy 20 names six peoples and gives a religious reason. If a government gave that order today, we would know what to call it.",
-          "Richard Dawkins put the charge loudly in The God Delusion (2006), calling the God of the Old Testament \"the most unpleasant character in all fiction\" and, among much else, a \"vindictive, bloodthirsty ethnic cleanser.\" The same objection was made more carefully in 2009, in a symposium in the Christian philosophy journal Philosophia Christi. The philosopher Wes Morriston, in \"Did God Command Genocide? A Challenge to the Biblical Inerrantist,\" argued that a morally perfect God would not command such a thing unless he had a morally sufficient reason, and that it is very unlikely any such reason existed. Randal Rauser, writing in the same symposium, argued that a perfect God would not command a moral atrocity, that genocide is always one, and so God did not command it. Behind both stands a point about what we can know. We are more sure that it is wrong to kill a child for what his parents did than we could ever be that an ancient text speaks for God. When the two collide, the reasonable thing is to doubt the text.",
+          "Richard Dawkins put the charge loudly in The God Delusion (2006), calling the God of the Old Testament \"the most unpleasant character in all fiction\" and, among much else, a \"vindictive, bloodthirsty ethnic cleanser.\" The same objection was made more carefully in 2009, in a symposium in the Christian philosophy journal Philosophia Christi. The philosopher Wes Morriston pressed it there in \"Did God Command Genocide? A Challenge to the Biblical Inerrantist,\" and Randal Rauser, in the same issue, concluded that God did not give these commands. Put in its strongest form, in my words and not theirs, the objection runs like this. A morally perfect God would not command the killing of children without a reason good enough to justify it, and it is hard to believe any such reason existed. Behind that stands a point about what we can know. We are more sure that it is wrong to kill a child for what his parents did than we could ever be that an ancient text speaks for God. When the two collide, the reasonable thing is to doubt the text.",
           "I grant the force of that. People have left the faith on this reasoning, taking their consciences seriously, which is what the church tells them to do. I have five sons. Whatever a Christian says about \"child and infant\" has to be something he could say with a parent listening. If these chapters have shaken your own faith, talk it through with someone; the Find Help page has real people you can call.",
         ],
       },
@@ -1132,7 +1132,7 @@ export const ANSWERS: Answer[] = [
         body: [
           "Two questions are tangled here. One is first-order, settled by the creeds the whole church confesses: is the God of these chapters the same God as the Father of Jesus? The church answered that in the second century, when it rejected Marcion, who taught that the God of the Old Testament could not be the Father Jesus revealed. The other is how these commands should be read, and that question divides faithful Christians and careful scholars still. I won't settle it for you. The skeptic's argument is the best way to see where the readings part.",
           {
-            kind: "The skeptic's argument (after Wes Morriston, 2009, in my words)",
+            kind: "The skeptic's argument (my own summary of the objection argued in the 2009 symposium)",
             premises: [
               "A perfectly good God would not command the killing of children unless he had a morally sufficient reason.",
               "It is very unlikely that any such reason existed.",
@@ -1140,7 +1140,7 @@ export const ANSWERS: Answer[] = [
             ],
             conclusion: "Either God is not perfectly good, or the Bible is mistaken in saying he commanded it.",
           },
-          "Morriston argued that a Christian who holds the Bible true can't easily deny the first premise, so the dispute comes down to the second, the claim about reasons. But the Christian readings don't all answer in the same place. Some read the third premise differently, as a description of something other than what it seems. Some deny the second. Each has a real strength, and each leaves a hard question.",
+          "A Christian who holds the Bible true can't easily deny the first premise, so on this summary the dispute comes down to the second, the claim about reasons. But the Christian readings don't all answer in the same place. Some read the third premise differently, as a description of something other than what it seems. Some deny the second. Each has a real strength, and each leaves a hard question.",
         ],
       },
       {
@@ -1208,9 +1208,68 @@ export const ANSWERS: Answer[] = [
     slug: "why-didnt-the-bible-just-ban-slavery",
     question: "Why didn't the Bible just ban slavery?",
     paragraphs: [
-      "It never says the four words a good book should manage: own no human being. It regulates the thing instead, telling masters how to treat their slaves and slaves how to obey. For two thousand years men who preached it bought and branded and sold human beings. Whitefield lobbied to legalize slavery in Georgia; Edwards owned slaves; when the American crisis came, the most confident biblical arguments in the room were the pro-slavery ones. Frederick Douglass, who had been owned, called the slaveholding religion of the land as opposite to the Christianity of Christ as heaven and hell.",
-      "Read the whole book instead of the verses that arm you, and it is not silent. The word carries two cargoes: the Atlantic trade of permanent, heritable ownership, and the debt-servitude the Hebrew law regulates and releases. Three lines after the verse that armed the slaveholders, the same chapter of Exodus sets a death sentence over the trade: \"Whoever steals a man and sells him ... shall be put to death\" (Exodus 21:16). The Atlantic trade was manstealing from the first raid to the last auction. Paul calls the runaway \"a beloved brother\" (Philemon 16), and writes \"there is neither slave nor free ... you are all one in Christ Jesus\" (Galatians 3:28). Abolition came from there: Wilberforce drove the trade's end through Parliament out of an evangelical conversion, not the Enlightenment.",
-      "I used to play this as a trump card, and I had confused ending the game with finding the truth. The church's blood on this is real, and the believer sets it on the table before he says anything else. But the book did not stay silent. It hid a death sentence in the slaveholder's own law, called the owned man a brother, and made the freeing of slaves the story a whole people were commanded never to forget. I wanted a God who would have said the four words. He made the men who owned slaves read, every year, about the God who set them free.",
+      "Because it didn't, and that has to be said first. The Bible regulates slavery without forbidding it. The law of Moses lets Israel buy foreigners and hand them down to their children as property, and the New Testament tells slaves to obey their masters. For generations American Christians, Baptists among them, quoted those verses to defend owning human beings. But the same Bible makes stealing a person and holding him a capital crime (Exodus 21:16), names slave-dealers among the lawless (1 Timothy 1:10), says every human being bears the image of God, founds Israel on God freeing slaves, and calls an owned man \"a beloved brother\" (Philemon 16). The case that finally ended slavery in the English-speaking world was made largely from those texts. Neither that case nor the long record against it answers why God gave no plain prohibition, and I won't pretend this answer does.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Start with the texts, because they are plain. Leviticus 25, the chapter that gives Israel the jubilee, goes on: \"As for your male and female slaves whom you may have: you may buy male and female slaves from among the nations that are around you. You may also buy from among the strangers who sojourn with you and their clans that are with you, who have been born in your land, and they may be your property. You may bequeath them to your sons after you to inherit as a possession forever\" (Leviticus 25:44-46). If a master struck a slave with a rod and the slave died under his hand, \"he shall be avenged\" (Exodus 21:20). The next verse adds, \"if the slave survives a day or two, he is not to be avenged, for the slave is his money\" (Exodus 21:21). The New Testament doesn't reverse any of this by decree. \"Bondservants, obey your earthly masters with fear and trembling\" (Ephesians 6:5). Paul sends Onesimus, whom most readers have taken to be a runaway, back to the man who owned him.",
+          "The objection needs no philosophy. A law that rules on what a garment may be woven from (Leviticus 19:19) was not too vague to forbid things, yet on whether one person may own another it gives instructions for doing it. If a good God spoke here, why not the one sentence that would have spared millions of people? The biblical scholar Hector Avalos added a second charge in Slavery, Abolitionism, and the Ethics of Biblical Scholarship (2011): that most modern biblical scholarship still works as an apology for biblical slavery, softening what the words plainly say.",
+          "The history is worse than the texts. George Whitefield, the best-known preacher of the First Great Awakening, campaigned to make slavery legal in the colony of Georgia and owned slaves to support his orphanage there. Jonathan Edwards bought a girl of about fourteen named Venus at Newport in 1731. In December 1822 the Baptist preacher Richard Furman, writing to the governor of South Carolina on behalf of the state's Baptist convention, argued that the right to hold slaves was clearly established in Scripture, by precept and by example. The Virginia Baptist minister Thornton Stringfellow argued that slavery had \"the sanction of the Almighty in the Patriarchal age,\" that it was \"incorporated into the only National Constitution which ever emanated from God,\" and that it was recognized \"by Jesus Christ in his kingdom.\" In May 1845 Baptists from the slaveholding states met in Augusta, Georgia, and formed the Southern Baptist Convention, after the denomination's mission boards had made clear they would not appoint slaveholders as missionaries.",
+          "I'm a Baptist pastor, so I don't get to tell this story from a safe distance. In 1995, a hundred and fifty years after Augusta, the Southern Baptist Convention adopted a resolution acknowledging the part slavery had played in its founding, repenting of racism, and apologizing to African Americans for condoning and perpetuating it. The skeptic who asks this question is describing Baptists, and I am one. So I grant the heart of the objection. The sentence he wants isn't in the Bible. Leviticus 25 permits what it permits. Christians with open Bibles defended chattel slavery for generations, and they were not stupid men misreading an obscure verse. They were quoting.",
+        ],
+      },
+      {
+        heading: "What the law regulated, said fairly",
+        body: [
+          "The usual Christian reply starts with a distinction, and the distinction is real. Much of what the Hebrew law regulates under the word we translate slave was debt servitude: a poor man, or his children, sold into service to pay what he owed. The standard study, Gregory Chirichigno's Debt-Slavery in Israel and the Ancient Near East (1993), reads the release laws of Exodus 21 beside the debt-sale law in Hammurabi's code. For an Israelite the law set limits. \"When you buy a Hebrew slave, he shall serve six years, and in the seventh he shall go out free, for nothing\" (Exodus 21:2). \"If your brother becomes poor beside you and sells himself to you, you shall not make him serve as a slave\" (Leviticus 25:39). The reason follows: \"For they are my servants, whom I brought out of the land of Egypt; they shall not be sold as slaves\" (Leviticus 25:42). Hammurabi's code made it a capital crime to help a slave out through the city gate or to hide a runaway in your house. Deuteronomy says, \"You shall not give up to his master a slave who has escaped from his master to you\" (Deuteronomy 23:15), though many readers, slavery's American defenders among them, took that to mean a slave fleeing a foreign master into Israel.",
+          "But the distinction stops at the border, and this is where a great deal of Christian apologetics stops too. The protections for the brother do not cover the foreigner. The same chapter that frees the Israelite in the jubilee lets the foreigner be bought, held for life, and passed to the next generation as property. Most scholars, whatever they make of the Bible, read Leviticus 25 as drawing exactly that line, between Israelite debt servants and foreign slaves held as chattel. Exodus 21:21 calls the slave his master's money. A Christian who quotes the release laws to a skeptic and leaves out verses 44 to 46 has done what the slaveholder did from the other side. He has picked the verses that help him. Avalos's charge lands there, and it is fair.",
+        ],
+      },
+      {
+        heading: "The case that the Bible's own logic undid slavery",
+        body: [
+          "American slavery was built on kidnapping. \"Whoever steals a man and sells him, and anyone found in possession of him, shall be put to death\" (Exodus 21:16). That law sits in the same chapter that slavery's preachers cited for a master's rights. When Paul lists the people the law exists to restrain, he names \"enslavers\" (1 Timothy 1:10), a word for a slave-dealer who trades in captured people; the King James Version rendered it \"menstealers,\" and the abolitionists took the word straight from their Bibles. Their case was not a proof text. It was an argument about what the Bible's own premises imply, and it can be set out so that it can be checked.",
+          {
+            kind: "An argument from the Bible's own premises (the abolitionists' case, in my words)",
+            premises: [
+              "Every human being is made in the image of God, and by the same hand as the one who would own him: \"So God created man in his own image\" (Genesis 1:27); \"Did not he who made me in the womb make him?\" (Job 31:15).",
+              "Under the law itself, a person God has redeemed may not be held as a slave, because he already belongs to God (Leviticus 25:42).",
+              "In Christ the line between brother and foreigner, on which the permission for lifelong slavery rested, is erased: \"There is neither Jew nor Greek, there is neither slave nor free, there is no male and female, for you are all one in Christ Jesus\" (Galatians 3:28).",
+              "The law makes stealing a person, and holding one who was stolen, a capital crime (Exodus 21:16), and the New Testament counts slave-dealers among the lawless (1 Timothy 1:10).",
+            ],
+            conclusion: "Owning a fellow believer as property, and the whole trade in kidnapped people that fed American slavery, stand condemned by the Bible's own law and logic, whatever the law permitted ancient Israel.",
+          },
+          "The third premise carries the weight. A skeptic can answer that Galatians speaks of standing before God, not of social order, and Paul did not free anyone by decree. But Paul drew the social consequence himself. He asked Philemon to receive Onesimus \"no longer as a bondservant but more than a bondservant, as a beloved brother\" (Philemon 16), and told the Corinthians, \"You were bought with a price; do not become bondservants of men\" (1 Corinthians 7:23). By the logic of Leviticus 25, a brother can't be held as property, and in the household of God there are no strangers left to hold. The first premise carries the rest of the way, to those outside the church.",
+          "Late in the fourth century Gregory of Nyssa, preaching on the verse where the Preacher boasts, \"I bought male and female slaves\" (Ecclesiastes 2:7), asked his congregation what price they thought they had paid for a creature made in the image of God, and condemned owning human beings as such. David Bentley Hart has argued that no other surviving ancient text, Christian, Jewish or pagan, condemns slavery so fiercely. When the conscience of the English-speaking world finally moved, it moved from the same texts. William Wilberforce, after his evangelical conversion in 1785, brought the cause back to Parliament for nearly twenty years until the British slave trade was abolished in 1807. Frederick Douglass, who had escaped slavery in Maryland, wrote in the appendix to his Narrative (1845) that his attacks were aimed at \"the slaveholding religion of this land,\" with \"no possible reference to Christianity proper.\" He drew the line the whole controversy came down to: \"I love the pure, peaceable, and impartial Christianity of Christ: I therefore hate the corrupt, slaveholding, women-whipping, cradle-plundering, partial and hypocritical Christianity of this land.\"",
+        ],
+      },
+      {
+        heading: "The honest counter",
+        body: [
+          "The strongest reply to that argument is historical, and it deserves to be heard in full. If the Bible's logic was so clear, why did it take so long, and why did the most confident biblical arguments in America's crisis belong to slavery's defenders? The historian Mark Noll gives the uncomfortable answer in The Civil War as a Theological Crisis (2006). Read the way most American Protestants had been taught to read it, verse by verse and at face value, the Bible gave the defenders of slavery the easier argument, since both testaments regulate slavery and neither condemns it outright. The abolitionists had to appeal to the spirit and direction of Scripture, and to a great many devout people that sounded like an evasion of the text.",
+          "Noll's point cuts both ways. It explains how sincere men read so badly. It also means the abolitionist case is an argument from the whole, not a verse anyone can point to, and a skeptic is entitled to ask whether readers found that spirit in the text or brought it there. Slavery's defenders had answers for the hard verses too. Many granted that the African trade had been wicked but denied that a man who inherited slaves was holding stolen people, and their King James text of Exodus 21:16 was less plain than the ESV's \"anyone found in possession of him.\"",
+          "The church also doesn't get to take a bow. It didn't follow Gregory for well over a thousand years. Abolition had other engines: Enlightenment arguments about natural rights, the revolt of the enslaved in Saint-Domingue that began in 1791 and ended in an independent Haiti, economics, and finally war. The church was on both sides, and it was on the wrong side first and for longest. What the record shows is narrower. The Christian case against slavery was real, and it ran on the texts the slaveholders had to explain away.",
+        ],
+      },
+      {
+        heading: "What remains hard",
+        body: [
+          "Here is what none of this proves. It doesn't show that the Bible forbade slavery as plainly as it forbade idols; it didn't. It doesn't make Leviticus 25:44-46 or Exodus 21:21 easier to read. It doesn't give back a single year to anyone who lived and died under the law of Moses or the law of Virginia.",
+          "The nearest the Bible comes to explaining its own permission is Jesus on divorce: \"Because of your hardness of heart Moses allowed you to divorce your wives, but from the beginning it was not so\" (Matthew 19:8). That establishes that the law can permit what God does not love, with creation standing behind it as the measure. Many Christians read slavery that way. Critics such as Avalos answer that this reads a modern conscience back into texts that never shared it. That dispute is honest, and it isn't settled here.",
+          "So the skeptic's question stands. Why not the plain sentence? I don't know. I can say what the book did instead. It gave a slaveholding world a God who says, \"I have surely seen the affliction of my people who are in Egypt and have heard their cry because of their taskmasters. I know their sufferings\" (Exodus 3:7), and it commanded his people to tell that story every year. Enslaved Christians in America heard it read by the men who owned them, and they knew whose story it was. They read the book more truly than their masters did. The skeptic has every right to ask why God took the slow way. The people who paid for the delay have a greater right. Whatever answer a Christian gives, he gives it in front of them.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Frederick Douglass", title: "Narrative of the Life of Frederick Douglass, an American Slave", year: "1845", note: "With the appendix on the Christianity of Christ and the Christianity of this land." },
+      { author: "Thornton Stringfellow", title: "The Bible Argument: or, Slavery in the Light of Divine Revelation", in: "Cotton Is King, and Pro-Slavery Arguments", year: "1860", note: "The proslavery case from Scripture, in its own words." },
+      { author: "Gregory of Nyssa", title: "Homilies on Ecclesiastes", year: "late 4th century; English version by Stuart George Hall and Rachel Moriarty, 1993" },
+      { author: "David Bentley Hart", title: "The \"Whole Humanity\": Gregory of Nyssa's Critique of Slavery in Light of His Eschatology", in: "Scottish Journal of Theology", year: "2001" },
+      { author: "Gregory Chirichigno", title: "Debt-Slavery in Israel and the Ancient Near East", year: "1993" },
+      { author: "Mark A. Noll", title: "The Civil War as a Theological Crisis", year: "2006", note: "Why the proslavery reading looked so plausible." },
+      { author: "Hector Avalos", title: "Slavery, Abolitionism, and the Ethics of Biblical Scholarship", year: "2011", note: "The best book against: the Bible endorses slavery, and its scholars still excuse it." },
     ],
     essaySlug: "why-didnt-the-bible-ban-slavery",
     essayTitle: "Why Didn't the Bible Just Ban Slavery?",
@@ -1304,9 +1363,60 @@ export const ANSWERS: Answer[] = [
     slug: "what-did-the-new-atheists-get-right",
     question: "What did the New Atheists get right?",
     paragraphs: [
-      "They got a great deal right, and a believer who cannot say so has understood neither the men nor the faith he imagines he is defending. I owned the books. I read Dawkins and Hitchens and Harris and Dennett the way a soldier reads dispatches from a front where his side is advancing, and I would have followed all four Horsemen off a cliff. They weren't knocking over straw men. They were reading a public record, and it is soaked.",
-      "The ground they took is real. Religion has blood on it: the church blessed conquest as mission, lit the fires under dissenters with Scripture, moved men who abused children from parish to parish. It answered honest questions with slogans and taught its children the faith cannot bear examination. But turn the argument over. The worst of religion gets cast as its essence while the worst of the godless twentieth century gets cast as an aberration, and the record will not sit still for that. Under all four sits the genetic fallacy: you have not shown a belief false by naming where it came from. And Dawkins made the cleanest category mistake, treating God as a hypothesis inside the universe when the creeds offer him as the reason there is a universe at all.",
-      "Jesus said harder things about religion than Hitchens managed. \"Woe to you, scribes and Pharisees, hypocrites!\" (Matthew 23:27, ESV). The charge the four thought they were leveling from outside had been sitting inside the book, in red letters, the whole time. They were right about the church I was leaving. They were wrong about the God I had never met. I cheered because I thought the machine was the whole of it, and no one had shown me the man that machine crucified for naming the poison. \"Thus you will recognize them by their fruits\" (Matthew 7:20, ESV). Apply it to the church and it draws blood. Apply it to the century that promised to do better once God was gone and it draws blood too. Neither of us walks away clean.",
+      "A great deal, and a Christian who can't say so hasn't understood them or the faith he's defending. Richard Dawkins, Christopher Hitchens, Sam Harris and Daniel Dennett, writing between 2004 and 2007, named real things: children abused by clergy and the abuse covered up, violence done in God's name, believers who treat faith as a reason to stop thinking, and arguments for God that don't survive a first reading. They were right that religion can be studied like any other human behavior, and right that a faith which can't bear questions isn't worth keeping. Where their case was weak was philosophy, and that judgment isn't only a believer's. The atheist philosopher Thomas Nagel and the philosopher of science Michael Ruse, no believer, said so in print. Showing that religion does harm doesn't show that God isn't there, and the God they argued against was often not the God the creeds confess. None of that excuses the church. The charge of hypocrisy was in the Gospels long before it was in their books.",
+    ],
+    sections: [
+      {
+        heading: "What they got right",
+        body: [
+          "The movement had four books at its center. Sam Harris began The End of Faith (2004) right after the attacks of September 11, 2001. Richard Dawkins published The God Delusion and Daniel Dennett Breaking the Spell: Religion as a Natural Phenomenon in 2006, and Christopher Hitchens followed with God Is Not Great: How Religion Poisons Everything in 2007. Their case should be heard at its strongest, because much of it is true.",
+          "First, abuse and its cover-up. In April 2010 Dawkins and Hitchens backed an effort, with the barrister Geoffrey Robertson, to seek legal action against Pope Benedict XVI over the Catholic Church's handling of priests who had abused children. A believer can think the stunt misjudged and still admit that the thing it pointed at was real. Nor is it only a Catholic sin. In May 2022 an independent report by Guidepost Solutions found that a few senior leaders of the Southern Baptist Convention's Executive Committee, with outside lawyers, had for years controlled the response to reports of abuse and mistreated the survivors who made them. No church gets to point at another.",
+          "Second, violence in God's name. Harris wrote out of the smoke of September 11, and his charge was that faith which can't be questioned will sooner or later license killing. The Christian record doesn't let us point only at other religions. English soldiers from the Puritan colonies burned a Pequot village at Mystic in 1637, and one of their captains defended it from Scripture. Third, the life of the mind. Dawkins defined faith as \"blind trust, in the absence of evidence, even in the teeth of evidence\" in The Selfish Gene (1976). That isn't what the New Testament means by faith, but it is what many believers have been taught to mean, and where it is held it deserves his scorn. Christians have answered honest questions with slogans, called doubt a sin, and offered arguments that a bright fifteen-year-old can take apart. Fourth, Dennett's plain point: religion is a human activity, and like any other it can be studied, and a faith that forbids looking at it has something to hide.",
+          "Jesus said harder things than any of them. \"Woe to you, scribes and Pharisees, hypocrites!\" (Matthew 23:27), he said, and he compared the religious leaders of his day to whitewashed tombs, handsome outside and full of bones. The prophets before him said that God hates feasts and sacrifices offered without justice (Amos 5:21-24). The New Atheists thought they were bringing a charge from outside. It had been inside the book the whole time. I came to faith from atheism, so I owe their side the fairest hearing I can give, and on these four counts the fair verdict is that they were right.",
+        ],
+      },
+      {
+        heading: "Three different claims",
+        body: [
+          "It helps to separate what the four books argued, because the claims are of different kinds and stand or fall separately. One is moral and historical: religion does great harm. One is about knowledge: belief in God has no good evidence, so holding it is irrational. One is about God himself: God almost certainly doesn't exist. The first can be true while the third is false. A medicine can be misused by a thousand doctors and still cure. The third is the one that matters most, and Dawkins gave it its clearest form in the fourth chapter of The God Delusion.",
+          {
+            kind: "The improbability argument (my summary of the case Dawkins makes)",
+            premises: [
+              "Complex, improbable things need an explanation, and the best explanations account for complexity by something simpler.",
+              "A mind able to design a universe would be at least as complex and improbable as the universe it is meant to explain.",
+              "So a designer explains nothing. It leaves a greater improbability than the one it was brought in to remove.",
+            ],
+            conclusion: "God, understood as a designer of the universe, almost certainly does not exist.",
+          },
+          "The second premise carries the weight. Everything depends on whether God is the kind of thing that could be complex and improbable, a very large and clever being inside the order of things, or the kind of thing the classical creeds mean. It's easy to see why the argument persuades. Much popular Christianity does talk about God as if he were the biggest person in the universe, a designer who stepped in at certain points to do what nature couldn't. If that were God, the second premise would be hard to deny, and the believer would owe an explanation of the explainer. The New Atheists didn't invent that picture. Many of us taught it to them.",
+        ],
+      },
+      {
+        heading: "Where their case is weak",
+        body: [
+          "The sharpest criticism came from people who share Dawkins's unbelief. Thomas Nagel, an atheist and one of the most respected philosophers of his generation, reviewed The God Delusion in The New Republic in October 2006 under the title \"The Fear of Religion.\" He judged its philosophy weak, and he argued that the improbability argument would only have force if believers thought of God as a complicated physical being, something like a vast brain, which the theism of the great traditions does not. Michael Ruse, a philosopher of science and a nonbeliever, went further in a 2009 essay titled \"Why I Think the New Atheists Are a Bloody Disaster,\" saying that The God Delusion would fail an introductory course in philosophy or religion.",
+          "Terry Eagleton, the Marxist literary critic, reviewed the book in the London Review of Books in October 2006 as \"Lunging, Flailing, Mispunching.\" His charge was that Dawkins attacked a caricature, a God no serious theologian believes in, and treated God's existence as a scientific question that evidence inside the universe could settle. The classical answer is that God is not one more thing in the universe, however large, but the reason there is a universe at all. That idea may be false. But an argument against a complex being inside the world doesn't touch it, and a reader who wants to reject it has to meet it.",
+          "The second claim, that belief in God has no evidence, depends on what counts as evidence. The four books mostly asked for the kind of evidence you'd want for a thing inside the world: a measurement, an experiment, a gap only God could fill. That is the wrong kind of test for a cause of the world as a whole, and the right kind of test for the God of the gaps, which is why that God keeps losing. The better arguments start somewhere else, from the fact that anything exists, from the fitness of the universe for life, from moral obligation, and from a particular event in history. Dawkins's definition of faith as blind trust describes what many believers do. It doesn't describe what the New Testament calls faith, which is trust resting on testimony and evidence, and which the page on faith and reason sets out.",
+          "The argument from harm has a different weakness. It shows that people have done evil in God's name. It doesn't show that God isn't there, any more than the crimes done in the name of science show that atoms aren't there. Reasoning from where a belief came from, or what its holders did, to whether it is true is the mistake logicians call the genetic fallacy. The argument also tends to count the worst of religion as its essence and the good it has done as an accident, the hospitals and the abolition of the slave trade among it. A fair atheist will answer that the twentieth century's officially godless states, the Soviet Union first among them, did not kill in the name of atheism the way crusaders killed in the name of Christ. That answer has force. What it shows is that human beings will kill for anything they make absolute, with God or without him. It doesn't show that religion is uniquely poisonous.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply from the New Atheists' side goes like this. Grant that Dawkins's philosophy was weak and that Hitchens was a polemicist, not a philosopher. But the burden of proof hasn't moved. If there is a God, show the evidence. Waving at classical theism isn't evidence. That's fair, and it can't be answered in a paragraph. It is answered, as well as I can, on the pages that argue for God from why anything exists, from a universe fit for life, and from moral facts, and on the page that weighs the history of Easter. A reader is right to judge those arguments on their merits, and he's right to expect them to be better than the ones the four were knocking down.",
+          "Here is what none of this proves. It doesn't prove that God exists. Showing that one argument against God fails is not an argument for him. It doesn't clear the church of anything the four accused it of; the abuse, the violence and the anti-intellectualism were real, and some of it is still going on. And it doesn't make them bad men. They were often unfair, and Dawkins's chapter on God's existence is weaker than its confidence. But they asked the church questions it should have been asking itself, and much of the church answered with outrage instead of repentance.",
+          "Jesus gave a test for prophets: \"Thus you will recognize them by their fruits\" (Matthew 7:20). Apply it to the church and it draws blood. Apply it to the secular states of the last century that promised a better world once God was gone, and it draws blood again. Neither side walks away clean. The question the New Atheists made unavoidable isn't whether religious people do harm. They do. It's whether there is a God who judges that harm more severely than Hitchens did, and who did not leave the matter there.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Sam Harris", title: "The End of Faith", year: "2004" },
+      { author: "Richard Dawkins", title: "The God Delusion", year: "2006", note: "The best book against: the case that God almost certainly does not exist." },
+      { author: "Daniel C. Dennett", title: "Breaking the Spell: Religion as a Natural Phenomenon", year: "2006" },
+      { author: "Christopher Hitchens", title: "God Is Not Great: How Religion Poisons Everything", year: "2007" },
+      { author: "Thomas Nagel", title: "The Fear of Religion", in: "The New Republic", year: "2006", note: "An atheist's review of The God Delusion." },
+      { author: "Terry Eagleton", title: "Lunging, Flailing, Mispunching", in: "London Review of Books", year: "2006" },
+      { author: "Michael Ruse", title: "Why I Think the New Atheists Are a Bloody Disaster", in: "Beliefnet, Science and the Sacred", year: "2009" },
     ],
     essaySlug: "what-new-atheists-got-right",
     essayTitle: "What the New Atheists Got Right",
@@ -1317,9 +1427,69 @@ export const ANSWERS: Answer[] = [
     slug: "can-life-mean-anything-without-god",
     question: "Can a life mean anything without God?",
     paragraphs: [
-      "Yes, and any Christian who says otherwise is protecting his comfort by slandering better men. I was an atheist. I built real meaning out of love and craft and loyalty, and so have people I knew who loved their spouses with a fidelity that shamed my elders and faced a terminal diagnosis with a steadiness I would want at my own bedside. The church invented a miserable nihilist to feel better, and he doesn't exist. Whether you can make meaning was never the real question.",
-      "What matters is the kind of meaning you can make. Camus opened by calling suicide the one serious philosophical problem and still refused the ledge, choosing revolt inside the absurd until \"One must imagine Sisyphus happy.\" Sartre said existence precedes essence, \"condemned to be free\" to author our own worth. Both of them mean it. Then watch Tolstoy, who had won by every measure Sartre would prescribe, hide a rope from himself in his own study because none of it answered the death waiting for all of it. What you invent, you can un-invent. Ecclesiastes got there first: \"Vanity of vanities, says the Preacher, vanity of vanities! All is vanity\" (Ecclesiastes 1:2). And both men kept borrowing a moral ground their systems could not supply, calling injustice a crime for everyone when a silent universe stocks no such thing.",
-      "So the question is whether what you made is holding you up, or you are holding it. Invented meaning has one fatal property. On the night you can no longer believe in it, it is gone, because it was only ever your believing. I made my own for years, and it was good, right up until it was not, on a night when I was the thing that had broken and there was no one on the shore because I had spent my life proving the shore was empty. Wait for a good day, when you're standing in the dark kitchen with a glass of water and nothing is wrong. Then notice which one of you gets tired first, you or the meaning you made.",
+      "Yes, in the sense most people mean. Unbelievers love their children, give themselves to good work, keep faith with their friends and face death with courage, and their lives mean a great deal, to them and to the people they serve. A Christian who denies that is slandering his neighbors. The real question is a different one. There's meaning in a life, the worth found in love, work and goodness, and there's the meaning of life, whether the whole has a point and whether what we love is worth it beyond our caring about it. Atheists have the first in full. The second is where the accounts part. The best secular philosophers say we make our meaning, or find it in values that are simply there, in a universe that is silent about both. I think the worth people find in love and justice is real, and that it is better explained by a God who made us for it than by a universe that will not remember it. That is an argument, not a verdict on anyone's life. If you have reached the place where you are not sure you want to be here at all, tell someone today, and in the United States you can call or text 988 right now.",
+    ],
+    sections: [
+      {
+        heading: "The case for meaning without God, at its strongest",
+        body: [
+          "Start with what is plainly true. I was an atheist, and I won't pretend that unbelief makes anyone incapable of love, or of work worth doing, or of courage at a deathbed. The church has sometimes talked as if every atheist must be a secret nihilist, and that picture is false. The serious unbelieving philosophers have thought about meaning more carefully than most Christians have.",
+          "Albert Camus put the question at the start of The Myth of Sisyphus (1942): whether life is worth living. His answer was a kind of defiance, to live fully in a world that gives no answer, without the comfort of hope, and he ended the essay, in Justin O'Brien's translation, \"One must imagine Sisyphus happy.\" Jean-Paul Sartre, lecturing in Paris on October 29, 1945, in the talk published as Existentialism Is a Humanism, gave the movement its formula, that existence precedes essence. There is no human nature given in advance, so we make ourselves and our values by what we choose. We are, he said, \"condemned to be free.\"",
+          "Two later philosophers made the case in a quieter, stronger form. Thomas Nagel, in \"The Absurd\" (1971), argued that the sense that life is absurd comes from our ability to step back and look at our lives from far outside, and that this is no reason for distress. If nothing matters from that distant standpoint, then that doesn't matter either. He thought Camus's defiance \"romantic and slightly self-pitying,\" and ended, \"we can approach our absurd lives with irony instead of heroism or despair.\" Susan Wolf, in Meaning in Life and Why It Matters (2010), argued that meaning is neither just feeling fulfilled nor just doing something objectively good. Her summary: \"meaning arises when subjective attraction meets objective attractiveness.\" A life is meaningful when a person loves things that are worth loving and does something with that love.",
+          "I grant most of this. Wolf is right that meaning is more than a feeling and more than a duty. Nagel is right that a life doesn't need to be seen from the stars to matter on a Tuesday. If the Christian claim were that unbelievers can't have meaningful lives, these philosophers would have refuted it, and so would the unbelievers we know.",
+        ],
+      },
+      {
+        heading: "Two questions, not one",
+        body: [
+          "The argument below isn't about whether atheists find meaning. They do. It's about what meaning is, and what has to be true for it to be what it seems to be. When a mother says her children are worth everything, she doesn't mean only that she happens to care about them. She means they are worth it, and that she'd be wrong not to care. When someone gives his life to justice, he doesn't think he has picked a hobby. Meaning, as we experience it, makes a claim beyond our feelings. The question is what could make that claim true. This is an inference to the best explanation, not a proof: it asks which picture of the world makes best sense of something nearly everyone already believes.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An inference to the best explanation",
+            premises: [
+              "The meaning people find in a life is not only a feeling. It includes the conviction that some things, love, truth and justice among them, are worth giving a life to whether or not anyone feels it. Wolf's account rightly says a meaningful life needs this objective element as well as the subjective one.",
+              "If there is no God, that worth is either something we invent, in which case the conviction is mistaken, or a brute fact about a universe that neither knows it nor keeps it.",
+              "If there is a good God who made persons to know and love what is good, that worth is what we'd expect, and death doesn't cancel it.",
+            ],
+            conclusion: "The meaning unbelievers rightly find in their lives is better explained if God exists than if he doesn't. That doesn't show anyone's life lacks meaning. It is an argument about what the meaning they have is.",
+          },
+          "The first premise is taken from Wolf's account. The rest is my argument, not hers. The weight sits on the second premise, and it has a strong reply, which is that objective values can simply be there, needing no ground, the way the truths of mathematics seem to be. The page on whether you can be good without God weighs that view at length. Here it's enough to say what it costs. On that view, the worth of a child or of justice is real, but it belongs to nothing and no one. Nothing in the universe knows it, and when the last mind goes out, nothing will keep it.",
+          "Bertrand Russell, who did not believe in God, saw the long view without flinching. In \"A Free Man's Worship\" (1903) he wrote that all the labors and genius of the ages are \"destined to extinction in the vast death of the solar system.\" Nagel's answer is that this long view isn't the measure, and he's right that the death of the sun can't reach back and spoil a good afternoon. But the question was never whether this afternoon matters to me. It was whether it matters, full stop, and whether that mattering is anywhere but in me. Leo Tolstoy, who had fame, family and wealth, put it plainly in A Confession (1882): \"What will come of what I am doing today or shall do tomorrow? What will come of my whole life?\" That's not a question about feelings. It's a question about what is real.",
+        ],
+      },
+      {
+        heading: "What the Bible says about the same question",
+        body: [
+          "The Bible doesn't dodge Russell's view. One of its own books states it. \"Vanity of vanities, says the Preacher, vanity of vanities! All is vanity\" (Ecclesiastes 1:2). The Preacher tries pleasure, work, wealth and wisdom and finds that death levels all of them. That book is in the canon, which tells you something: the faith doesn't need to hide from the thought that, under the sun, nothing lasts. But the same Preacher says of God, \"He has made everything beautiful in its time. Also, he has put eternity into man's heart, yet so that he cannot find out what God has done from the beginning to the end\" (Ecclesiastes 3:11). On that account, the ache Tolstoy felt isn't a mistake in the wiring. It's what you'd expect in a creature made for more than a lifetime.",
+          "The New Testament grounds the answer in an event, not a mood. Paul ends his long argument for the resurrection by turning to ordinary work: \"knowing that in the Lord your labor is not in vain\" (1 Corinthians 15:58). That doesn't make an unbeliever's labor worthless. It says something about why any labor is worth doing, and it rests on whether Jesus rose, which has its own page. If he didn't, Paul himself says the faith is futile.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply is Nagel's, pressed hard. You are smuggling in a demand for cosmic meaning that no one needs. A finite good is still good. A friendship that ends at death was still a friendship, and a kindness no one remembers was still kind. Wanting the universe to keep score is a kind of vanity of its own. There's real force in that, and the Christian should grant it: finite goods are good, and their worth isn't on loan from eternity. The Christian claim is narrower. It's that their worth is real and not ours to revoke, and that a world with a God who knows and keeps what is good is the kind of world in which that would be true. Whether that world is ours is the question the other pages argue.",
+          "Here is what the argument doesn't prove. It doesn't prove God exists. It doesn't show that believers live more meaningful lives than unbelievers; many don't. It doesn't show that anyone who doubts God should feel that his life is empty, because it isn't. What it shows is narrower: that the meaning nearly everyone finds asks to be true, and that the question of God is one place to look for what makes it so.",
+        ],
+      },
+      {
+        heading: "If the question isn't abstract for you",
+        body: [
+          "Sometimes this question comes from a seminar. Sometimes it comes at three in the morning, from grief, or exhaustion, or a darkness that makes everything look pointless. If that's where you are, the feeling that nothing matters is real and it is common, and it is not the truth about you. Your life matters to people who would be wrecked to lose you, whether or not you can feel that tonight. Find Help has people you can call, today if you need them. If you have reached the place where you are not sure you want to be here at all, tell someone today, and in the United States you can call or text 988 right now.",
+          "The Preacher of Ecclesiastes wrote some of the darkest sentences in the Bible, and they have been kept and read for more than two thousand years by people who believed God was there. The question of meaning doesn't have to be answered tonight. It only has to be carried to someone, and asked out loud.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Leo Tolstoy", title: "A Confession", year: "1882" },
+      { author: "Bertrand Russell", title: "A Free Man's Worship", in: "The Independent Review", year: "1903" },
+      { author: "Albert Camus", title: "The Myth of Sisyphus", year: "1942; tr. Justin O'Brien, 1955" },
+      { author: "Jean-Paul Sartre", title: "Existentialism Is a Humanism", year: "lecture 1945; tr. Carol Macomber, 2007" },
+      { author: "Thomas Nagel", title: "The Absurd", in: "The Journal of Philosophy", year: "1971" },
+      { author: "Susan Wolf", title: "Meaning in Life and Why It Matters", year: "2010", note: "The best case for meaning without appeal to God." },
     ],
     essaySlug: "meaning-without-god",
     essayTitle: "Can a Life Mean Anything Without God?",
@@ -1330,9 +1500,100 @@ export const ANSWERS: Answer[] = [
     slug: "christianity-and-islam-differences",
     question: "What do Christianity and Islam actually dispute?",
     paragraphs: [
-      "They are neither the same faith nor strangers, and both slogans dodge the conversation. When I was an atheist, lumping every religion together kept all of them at arm's length. Looking closely is harder. Both confess one God, not many. Islam honors Jesus, Isa, as a prophet and messiah, born of the virgin Mary. This is a family argument, the bitterest kind, because it runs through what both sides hold most holy.",
-      "At the center of Islam is tawhid, the absolute oneness of God, and its gravest sin, shirk, is associating anything created with the Creator. From inside that, the Trinity does not enrich God's oneness; it assaults it, and calling God Father and Son sounds close to blasphemy, not because a Muslim thinks little of Jesus but because he thinks so highly of God. A God that great would not be surrendered to a mob and executed. Islam honors Jesus as the greatest prophet; Christianity worships him and lets Thomas say \"My Lord and my God!\" (John 20:28). One faith says the cross was an execution God prevented; the other stakes everything on its having happened. One says a person climbs toward mercy; the other says God came down.",
-      "These are not misunderstandings a patient afternoon could clear. They are the load-bearing walls of two different houses, and no one inside either is a fool. I hold the Christian confession as confession, not as a point scored against a neighbor I respect: the one God, without ceasing to be one, entered his own creation as a man, was handed over to be killed, and was not defeated by it. I could be wrong, and if I am, I have built my life on a rumor. But I cannot make it smaller to keep peace at the table, and neither can the devout Muslim across from me. What we owe each other is to name what stands on each side, and not lie about how far apart they are.",
+      "They aren't the same faith, and they aren't strangers. Both confess one God, the Creator, who spoke through prophets and will judge the world. Islam honors Jesus as a prophet and as the Messiah, born of the virgin Mary. The disputes are real, and they run through the center of both faiths: whether God's oneness leaves room for Father, Son and Spirit; whether Jesus died on a cross; whether he is a prophet of God or God come in the flesh; and how a person stands before God at the judgment. Below, each dispute is argued from the Christian side with the strongest Muslim reply beside it. No one inside either faith is a fool.",
+    ],
+    sections: [
+      {
+        heading: "What Muslims confess, in their own terms",
+        body: [
+          "The heart of Islam is tawhid, the oneness of God: one God, without partner and without equal, the Creator distinct from everything he made. The gravest sin is shirk, associating anything with God. In the Saheeh International translation, quoted throughout this page, the Qur'an says, \"Indeed, Allah does not forgive association with Him, but He forgives what is less than that for whom He wills\" (Qur'an 4:48). The shortest statement of the faith is a chapter of four verses: \"Say, 'He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, Nor is there to Him any equivalent'\" (Qur'an 112:1-4). The brackets mark words the translators supplied.",
+          "Jesus, whom the Qur'an calls Isa, holds a high place. He is called the Messiah and \"a word from Him\" (Qur'an 3:45). He is born of Mary, who asks the angels, \"My Lord, how will I have a child when no man has touched me?\" (3:47). But he isn't God's son, and he isn't God. \"The Messiah, Jesus, the son of Mary, was but a messenger of Allah and His word which He directed to Mary and a soul [created at a command] from Him\" (4:171). The same verse goes on: \"And do not say, 'Three'; desist - it is better for you. Indeed, Allah is but one God. Exalted is He above having a son.\"",
+          "On the cross, the Qur'an answers a boast that Jesus had been killed: \"And they did not kill him, nor did they crucify him; but [another] was made to resemble him to them\" (4:157), and \"Rather, Allah raised him to Himself\" (4:158). Most Muslim commentators have read this to mean that Jesus didn't die on the cross and that God took him up alive, and many held that someone else was made to look like him. Muslim scholars haven't all read the verse the same way, as Todd Lawson's history of its interpretation (2009) shows, but the common confession is plain: Jesus was not crucified.",
+          "Islam also honors the books that came before it. The Qur'an says God gave Jesus the Gospel, \"in which was guidance and light\" (5:46), and tells the People of the Gospel to judge by what God revealed in it (5:47). It also charges some in the earlier communities with distorting God's words (2:75; 4:46). Muslims call this tahrif, and they haven't agreed on what it means. The eleventh-century scholar Ibn Hazm argued at length that the text of the Bible itself had been altered. Other Muslim scholars have held that the corruption lay in how the books were interpreted rather than in their words.",
+        ],
+      },
+      {
+        heading: "What the two faiths share",
+        body: [
+          "The common ground isn't small. Both confess one God, the Creator of heaven and earth, who is merciful, who speaks, who sends prophets, and who will judge. Both honor Abraham, Moses and Jesus, and both pray, fast and give to the poor as duties. The Second Vatican Council, in Nostra Aetate (1965), said of Muslims, \"They adore the one God, living and subsisting in Himself; merciful and all-powerful, the Creator of heaven and earth.\" In October 2007, 138 Muslim scholars and leaders signed an open letter to Christian leaders, A Common Word Between Us and You, arguing that love of God and love of neighbor stand at the center of both faiths. And the Qur'an tells Muslims to say to Jews and Christians, \"We believe in that which has been revealed to us and revealed to you. And our God and your God is one\" (Qur'an 29:46).",
+        ],
+      },
+      {
+        heading: "Do Christians and Muslims worship the same God?",
+        body: [
+          "Christians answer this differently, and this page doesn't settle it. Miroslav Volf argued in Allah: A Christian Response (2011) that Christians and Muslims worship the same God, whom they understand differently in important ways, and that this matters for how the two communities live together. Other Christians answer no, or not in the same sense. Imad Shehadeh, reviewing Volf's book in Themelios, argued that the two faiths share a name for God but describe him so differently that the shared name hides more than it shows.",
+          "Much turns on the difference between referring to someone and describing him rightly: two people can mean the same man and believe very different things about him, up to a point. Christians of good faith land on both sides of that point.",
+        ],
+      },
+      {
+        heading: "The first dispute: is God three?",
+        body: [
+          "The Muslim objection at full strength is not ignorance. It's reverence. If God is one without partner, talk of Father and Son sounds like dragging the Most High into biology. A Muslim objects to the Trinity not because he thinks little of Jesus but because he thinks so highly of God.",
+          "So begin with what Christians don't mean. They don't mean three gods, or that God fathered a son as creatures do, or that Mary is divine. When the Qur'an pictures Jesus asked whether he told people, \"Take me and my mother as deities besides Allah\" (5:116), Christians reject that as firmly as Muslims do. The Nicene Creed calls the Son \"begotten, not made\": not a creature, and not the product of any act in time, but eternally from the Father, of one being with him. Christians confess one God.",
+          "What they do mean is that the one God is eternally Father, Son and Spirit, and the reason isn't a love of paradox. It's a claim about what God is. \"Anyone who does not love does not know God, because God is love\" (1 John 4:8). Jesus prays to the Father, \"you loved me before the foundation of the world\" (John 17:24).",
+          {
+            kind: "An argument from within the Christian confession (it persuades only someone who grants the first premise)",
+            premises: [
+              "God is love. Love belongs to what God is eternally, not only to what he began to do when he made the world.",
+              "Love, as the giving of oneself to another, needs someone to love.",
+              "Before the world was made, there was nothing but God.",
+            ],
+            conclusion: "If God is love eternally, there is giving and receiving within the one God himself. That is the shape of what Christians mean by Father, Son and Spirit.",
+          },
+          "The strongest Muslim reply goes at the first premise. The Qur'an calls God \"the Affectionate\" (85:14), and it also says, \"Allah is the Free of need, the Praiseworthy\" (35:15). A love that requires another is a need, and God needs nothing. His attributes are eternal without any eternal object beside him. The Christian answer is narrow: the Son and the Spirit aren't beside God, as a creature would be, but within the one God's own life. A Muslim will say that is exactly the point in dispute, and he's right. The argument shows why Christians confess the Trinity. It can't make a Muslim accept the premise it starts from.",
+        ],
+      },
+      {
+        heading: "The second dispute: did Jesus die on the cross?",
+        body: [
+          "This one is a question about an event, so outside evidence can be heard.",
+          {
+            kind: "A historical argument, an inference to the best explanation",
+            premises: [
+              "Paul, writing in the 50s, hands on a formula he had already received: \"that Christ died for our sins in accordance with the Scriptures, that he was buried\" (1 Corinthians 15:3-4).",
+              "Tacitus, a Roman historian with no sympathy for Christians, writing early in the second century, says \"Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus\" (Annals 15.44).",
+              "A crucified Messiah embarrassed the first preachers. Paul called it \"a stumbling block to Jews and folly to Gentiles\" (1 Corinthians 1:23). It isn't a story they would have invented.",
+              "John Dominic Crossan, no friend of traditional belief, in Jesus: A Revolutionary Biography (1994), called Jesus' death by crucifixion under Pilate \"as sure as anything historical can ever be.\"",
+            ],
+            conclusion: "The best historical explanation of the evidence is that Jesus was crucified under Pontius Pilate and died.",
+          },
+          "The strongest Muslim reply doesn't dispute that people saw a crucifixion. The verse itself says the matter \"was made to resemble him to them\" (4:157). The witnesses reported honestly what they saw, and a historian, who can weigh only human reports, will find exactly what the verse predicts. Revelation from the One who knows the unseen outranks those reports.",
+          "The Christian answer is that no evidence could ever count against it, which is its strength as faith and its weakness as history. It asks us to believe that God let Jesus' mother, his friends and his enemies all believe a false thing about the most important event in their lives, and that the faith built on it spread for six centuries before it was corrected. A Muslim will answer that God's purpose in saving his messenger was good. A historian can't rule out a miracle of appearance. He can only say that nothing in the first-century evidence points to one. Nor does the argument show that Jesus rose or that his death saves anyone. The resurrection has its own page.",
+        ],
+      },
+      {
+        heading: "The third dispute: who is Jesus?",
+        body: [
+          "Islam gives Jesus the highest honor it can give a man. In the Qur'an he says, \"Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet\" (19:30). Christians worship him. \"Thomas answered him, 'My Lord and my God!'\" (John 20:28).",
+          "The Christian case rests partly on how early that worship began. Larry Hurtado, in Lord Jesus Christ (2003), argued that devotion to Jesus as divine, with prayer to him and calling on his name, appeared among his Jewish followers at the very start of the movement, and within a strict belief in one God. If he's right, the worship of Jesus wasn't a later corruption of a prophet's message.",
+          "The strongest Muslim reply uses the Gospels themselves. When a man calls him good, Jesus answers, \"Why do you call me good? No one is good except God alone\" (Mark 10:18). He prays to God. In the Qur'an he tells Israel, \"worship Allah, my Lord and your Lord\" (5:72). Bart Ehrman, an agnostic historian, argues in How Jesus Became God (2014) that Jesus didn't call himself God and that his followers came to call him divine after they came to believe he had been raised. Christians read Mark 10:18 as a question that asks the man whom he's speaking to. But grant the limit of the historical argument. It can show that the worship of Jesus is early. It can't show that it's true.",
+        ],
+      },
+      {
+        heading: "The fourth dispute: how does a person stand before God?",
+        body: [
+          "Christians often get this one wrong. Every chapter of the Qur'an but one opens, \"In the name of Allah, the Entirely Merciful, the Especially Merciful\" (1:1). The Qur'an says, \"do not despair of the mercy of Allah. Indeed, Allah forgives all sins\" (39:53). Deeds are weighed at the judgment (7:8), but a hadith reported by al-Bukhari has the Prophet saying that no one enters Paradise by his deeds, not even he himself, unless God grants him favor and mercy. Islam is not a religion of earning heaven.",
+          "The real difference is narrower. In Islam, God forgives the one who repents, and no atoning death is needed. In Christianity, forgiveness comes through the cross. \"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast\" (Ephesians 2:8-9).",
+          "The strongest Muslim reply is moral. \"No bearer of burdens will bear the burden of another\" (Qur'an 6:164). Punishing the innocent for the guilty is unjust, and a God who needs a death before he forgives seems less merciful, not more. The Christian answer is that the cross isn't God punishing a third party. It's God himself, in the Son, bearing the cost of the wrong, the judge paying what the judged owe. Every real forgiveness costs the one who forgives. But that answer works only if Jesus is God, and if he isn't, the Muslim objection stands. The four disputes turn out to be one.",
+        ],
+      },
+      {
+        heading: "What this page doesn't settle",
+        body: [
+          "These aren't misunderstandings a patient afternoon could clear. They are the load-bearing walls of two different houses. The pluralist who says the faiths are the same hasn't honored Islam. He has erased it.",
+          "I hold the Christian confession as confession, not as a point scored against a neighbor I respect: the one God, without ceasing to be one, entered his own creation as a man, was handed over to be killed, and was not defeated by it. I could be wrong, and if I am, I have built my life on a rumor. But I cannot make it smaller to keep peace at the table, and neither can the devout Muslim across from me. What we owe each other is to name what stands on each side, and not lie about how far apart they are.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Saheeh International", title: "The Qur'an: English Meanings", year: "1997", note: "The translation quoted on this page." },
+      { author: "Second Vatican Council", title: "Nostra Aetate", year: "1965" },
+      { author: "Larry W. Hurtado", title: "Lord Jesus Christ: Devotion to Jesus in Earliest Christianity", year: "2003" },
+      { author: "Muslim scholars and leaders", title: "A Common Word Between Us and You", year: "2007", note: "An open letter from 138 Muslim signatories to Christian leaders." },
+      { author: "Todd Lawson", title: "The Crucifixion and the Qur'an: A Study in the History of Muslim Thought", year: "2009" },
+      { author: "Gabriel Said Reynolds", title: "On the Qur'anic Accusation of Scriptural Falsification (tahrif) and Christian Anti-Jewish Polemic", in: "Journal of the American Oriental Society", year: "2010", note: "On what the charge of tahrif meant." },
+      { author: "Miroslav Volf", title: "Allah: A Christian Response", year: "2011" },
+      { author: "Bart D. Ehrman", title: "How Jesus Became God", year: "2014", note: "The best case that Jesus' divinity was a later belief." },
     ],
     essaySlug: "christianity-and-islam",
     essayTitle: "What Christianity and Islam Actually Dispute",
@@ -1568,9 +1829,83 @@ export const ANSWERS: Answer[] = [
     slug: "what-makes-us-human-in-the-age-of-ai",
     question: "What makes us human in the age of AI?",
     paragraphs: [
-      "Start with the functionalist case, because it's a serious one. If the mind simply is information processing, then a human being is a wet computer, and a sufficiently advanced machine that reasons, converses, and reports feeling would be a person in every way that counts. To deny it would be mere carbon chauvinism. The machines are now good enough that this is not science fiction, and much of what we prized as uniquely human, including calculation, fluency, and a kind of creativity, turns out to be reproducible. That should humble us.",
-      "The Christian answer is not that humans compute better. It is that personhood was never a capacity in the first place. If it were, the infant, the demented, and the profoundly disabled would be less than persons, and nobody should want to go down that road. \"So God created man in his own image\" (Genesis 1:27), formed from dust and given breath (Genesis 2:7). A person is one who is made and loved and named by God, and that is conferred rather than earned or benchmarked.",
-      "That changes what we should be anxious about. The body is not luggage the real self is carrying, and the Christian hope is the resurrection of the body rather than escape from it, so the transhumanist dream of uploading the self is an old heresy on new hardware: the gnostic contempt for flesh. What the machines finally show us is the difference between being simulated and being known.",
+      "Not being the smartest thing in the room. Machines now do much of what people once called uniquely human: they calculate, they converse, they write fluent paragraphs. The strongest secular account of the mind says a mind is what it does, so a machine that does what we do would, in the end, be one of us. Serious philosophers who don't believe in God dissent from that account, and no one yet knows whether a machine could be conscious. This page doesn't pretend to know. It answers a different question: where human worth rests if it doesn't rest on our abilities. The Christian answer is that it rests on being made in the image of God, which is given, not earned, and which no machine's skill can add to or take away.",
+    ],
+    sections: [
+      {
+        heading: "The case that a mind is what it does",
+        body: [
+          "Start with the strongest version of the other view. Alan Turing opened his paper \"Computing Machinery and Intelligence\" (1950) with the sentence \"I propose to consider the question, 'Can machines think?'\" He then put a test in its place, the imitation game: if a machine's answers can't be told from a person's, we have no good reason to deny it what we grant the person. To the objection that a machine wouldn't really feel what it says, Turing replied that on that standard you couldn't know that other people think either. We extend to each other what he called \"the polite convention that everyone thinks,\" and he saw no principled reason to withhold it from a machine.",
+          "Philosophers built a theory of mind on that insight. Hilary Putnam argued in 1967 that a mental state such as pain is a functional state: what makes it pain is the role it plays in a whole system, not the stuff the system is made of. A mammal and an octopus can both be in pain with very different nerves. If that's right, a mind could in principle be made of silicon as well as of cells. Daniel Dennett pressed further. In Consciousness Explained (1991) he argued that there is no inner theater in the brain where experience is shown to a self, and no extra ingredient beyond the brain's own processing. In a 1994 paper on conscious robots he wrote that \"we are a sort of robot ourselves,\" and said his doubts about building a conscious machine were practical, not theoretical.",
+          "Grant what is true in this. The list of things only humans could do has been shrinking for a long time, and each item on it was once defended as the mark of a mind. If our worth rested on that list, we'd have reason to be anxious. To deny a machine anything simply because it's made of silicon rather than carbon would be an arbitrary line, and the charge of \"carbon chauvinism\" would stick. The machines should humble us. They show that much of what we prized in ourselves can be copied.",
+        ],
+      },
+      {
+        heading: "The secular dissent",
+        body: [
+          "Not every unbeliever accepts that account, and the two most famous objections come from philosophers who make no religious argument at all. John Searle, in \"Minds, Brains, and Programs\" (1980), asked us to imagine a man who knows no Chinese, shut in a room with a rulebook for matching Chinese symbols to other Chinese symbols. Questions come in, he follows the rules, and answers go out that a Chinese speaker can't tell from a native's. Yet the man understands nothing. Searle's point was that running a program, however well, isn't the same as understanding. His critics answered that the whole system, the man with his rulebook and papers, understands, even if the man doesn't. Searle replied that the man could memorize the rulebook and still not know what a single symbol meant. The argument is still disputed.",
+          "Thomas Nagel, in \"What Is It Like to Be a Bat?\" (1974), made a different point. He wrote that \"an organism has conscious mental states if and only if there is something that it is like to be that organism.\" We can describe everything a bat's brain does and still not know what it is like to be a bat. A complete account of what a system does may leave out the one thing that makes it conscious: that there is someone there for whom it is like something.",
+          "Neither argument shows that a machine can't be conscious, and honesty requires saying so. Searle's argument is about running a program, not about every possible machine, and Nagel's is about the limits of our descriptions. What they show is that doing what a mind does and being a mind may not be the same thing, and that nobody has yet shown how to tell from the outside. Whether any machine has an inner life, now or ever, is a question this page leaves open.",
+        ],
+      },
+      {
+        heading: "Why ability can't be the measure of worth",
+        body: [
+          "Set the machines aside for a moment and ask what we already believe about each other. We hold that a newborn, a man with advanced dementia and a child with a profound disability have the same worth as the most gifted adult in the room. None of them can do what the gifted adult does. Some can do less than a good machine. If worth tracked ability, they'd have less of it.",
+          "The philosopher Peter Singer has been honest about where a view based on abilities leads. In Practical Ethics (1979) and since, he has used \"person\" to mean a being aware of itself as existing over time, and argued that a newborn is not a person in that sense, so that killing a newborn is never equivalent to killing a person. Most people, religious or not, recoil from that conclusion. The recoil is worth taking seriously. It suggests that we already believe human worth rests on something other than what we can do.",
+          "Unbelievers hold that belief as firmly as Christians do, and often live it better. Jacques Maritain recalled that when people of opposed philosophies agreed on a list of human rights after the Second World War, they agreed on condition that no one asked them why. The agreement was real. The question of what grounds it is still there.",
+        ],
+      },
+      {
+        heading: "What the image of God has meant",
+        body: [
+          "The Bible's first word on what a human being is says this: \"Then God said, 'Let us make man in our image, after our likeness. And let them have dominion'\" (Genesis 1:26), and \"So God created man in his own image, in the image of God he created him; male and female he created them\" (Genesis 1:27). Christians have read the image in three main ways, and each has a strength and a weakness.",
+          "The first reading finds the image in something we are, chiefly the mind. Thomas Aquinas, following Augustine, placed the image above all in our intellectual nature. Its strength is that it names something real about us. Its weakness, in this century, is plain: if the image is reason, then it comes in degrees, and the question of machines becomes a contest of abilities after all.",
+          "The second reading finds the image in what we are called to do. J. Richard Middleton, in The Liberating Image (2005), argued from the ancient Near East, where a king was called the image of a god, that Genesis gives every human being that royal office: to represent God and care for his world. Its strength is that it fits the text, where image and dominion arrive together. Its weakness is the same question in another form, since some people can't carry out any office at all.",
+          "The third reading finds the image in relationship. Karl Barth read \"male and female he created them\" as the clue: human beings image a God who is himself a communion of persons, and they are made for relationship with God and with each other. Its strength is that it rests the image on God's turning toward us, which no loss of ability can undo. Some recent theologians combine the three.",
+          "Whatever the image consists in, the text presents it as given. God creates, and the creature receives. No one in Genesis earns the image or qualifies for it. That is the point that matters here.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An inference to the best explanation, about where human worth rests (it makes no claim about what machines are)",
+            premises: [
+              "Every human being has equal and unconditional worth: the newborn and the man with advanced dementia as much as the most gifted adult.",
+              "Abilities such as intelligence, speech and reasoning come in degrees, can be lost, and can be matched or passed by machines in some tasks.",
+              "So a worth that rested on abilities would come in degrees, could be lost, and could be outranked.",
+              "A worth that rests on being made and loved by God, given rather than earned, is equal, can't be lost, and doesn't depend on any ranking.",
+            ],
+            conclusion: "Equal human worth is better explained if it is given by God than if it rests on what we can do. Whatever machines turn out to be able to do, that worth isn't in competition with them.",
+          },
+          "The weight sits on the first premise, and nearly everyone accepts it. The strongest secular reply is that worth can rest on being a member of the human species, or on the kind of being we are even when our abilities fail, with no appeal to God. That reply is held sincerely and lived well. The Christian answer is a question: why should membership in a species carry unconditional worth, if the species is one product of nature among others? Something has to make the human kind worth more than its abilities. The Christian account says what that is. This is an argument about what best explains a belief we share, not a proof, and it doesn't show that anyone who rejects God values people less.",
+        ],
+      },
+      {
+        heading: "Dust and breath: why the body matters",
+        body: [
+          "The second account of creation says, \"Then the LORD God formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature\" (Genesis 2:7). The person is neither the dust alone nor the breath alone, but the two together. Christianity has never treated the body as luggage the real self carries around. The Apostles' Creed confesses \"the resurrection of the body,\" not an escape from it.",
+          "That has always set Christians against one recurring idea: that the true self is something inside the body that would be better off out of it. Around the year 180, Irenaeus of Lyon wrote Against Heresies against Gnostic teachers who denied that the body would be saved, and he insisted that the God who made the flesh would raise it. Some people now hope that a mind might one day be copied out of the brain and kept running on a machine. That hope assumes a person is a pattern that the body merely carries. Whatever one thinks of its chances, Christianity holds a different picture of a person, and it's the older one: a creature of dust and breath, made to be raised whole.",
+        ],
+      },
+      {
+        heading: "What this does not settle",
+        body: [
+          "This answer doesn't show that machines can't be conscious. Nobody knows that, and the Christian account doesn't require a verdict on it. It doesn't prove that God exists; the other pages argue that. It doesn't say how we ought to treat a machine if one ever did have an inner life, which would be a hard and new question. And it doesn't claim that Christians have always honored the weak; often they haven't.",
+          "What it says is narrower. Your worth was never your ability. The machines can do more than many people every year, and that is no threat to what you are, because what you are was never a ranking. \"What is man that you are mindful of him, and the son of man that you care for him? Yet you have made him a little lower than the heavenly beings and crowned him with glory and honor\" (Psalm 8:4-5). The psalmist asked the question looking up at the stars. We ask it now looking at a screen. The answer he gave doesn't depend on what the screen can do.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Alan M. Turing", title: "Computing Machinery and Intelligence", in: "Mind", year: "1950", note: "The case that a machine that does what we do should be granted what we grant each other." },
+      { author: "Jacques Maritain", title: "Man and the State", year: "1951" },
+      { author: "Hilary Putnam", title: "Psychological Predicates", year: "1967; reprinted as \"The Nature of Mental States\", 1975" },
+      { author: "Thomas Nagel", title: "What Is It Like to Be a Bat?", in: "The Philosophical Review", year: "1974" },
+      { author: "Peter Singer", title: "Practical Ethics", year: "1979" },
+      { author: "John R. Searle", title: "Minds, Brains, and Programs", in: "Behavioral and Brain Sciences", year: "1980" },
+      { author: "Daniel C. Dennett", title: "Consciousness Explained", year: "1991", note: "The strongest case that a mind is what a brain does, with nothing added." },
+      { author: "J. Richard Middleton", title: "The Liberating Image", year: "2005" },
     ],
     essaySlug: "personhood-in-the-age-of-ai",
     essayTitle: "What Makes Us Human in the Age of AI?",

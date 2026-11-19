@@ -468,3 +468,130 @@ Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date)
 ### Next in the ranking
 
 "Why didn't the Bible just ban slavery?", then "What did the New Atheists get right?", "Can a life mean anything without God?", "What do Christianity and Islam actually dispute?", "What makes us human in the age of AI?".
+
+## 9. The seventh run (2026-11-19): a repair, slavery, the New Atheists, meaning
+
+### Repair: "Did God command genocide in the Old Testament?"
+
+The sixth run took Rauser's premises from a course slide and Morriston's from a blog summary. Two more searches still did not reach either article or its abstract in the authors' own words (the journal host, Morriston's own page and the society's blog do not resolve from here); one result described Rauser's abstract as concluding that God did not command the genocide. So the answer now names the 2009 symposium as where the objection is argued, says only that Morriston "pressed it there" and that Rauser "concluded that God did not give these commands", states the objection "in my words and not theirs", and labels the laid-out argument "my own summary of the objection argued in the 2009 symposium". The sentence "Morriston argued that a Christian ... can't easily deny the first premise" now makes that point in the site's own voice. Ledger rows updated.
+
+### Why didn't the Bible just ban slavery?
+
+The argument in three sentences. The hard texts are quoted plainly (Leviticus 25:44-46, Exodus 21:20-21, Ephesians 6:5), the objection is given with Avalos's charge that scholars still excuse them, and the history is conceded by name and word: Whitefield, Edwards, Furman in 1822, Stringfellow quoted, the Southern Baptist founding at Augusta in 1845 and its 1995 repentance, with "I'm a Baptist pastor" as the one fact about James. The distinction between Israelite debt servants and foreign slaves held for life is set out fairly (Chirichigno), including where it fails, and then the abolitionists' case is laid out as an argument from the Bible's own premises (image of God, Leviticus 25:42, Galatians 3:28 with Philemon 16, Exodus 21:16 and 1 Timothy 1:10), with Gregory of Nyssa, Hart, Wilberforce and Douglass's appendix quoted exactly. Noll's account of why the proslavery reading looked so plausible is given in full, the church is denied any bow, and the question why there was no plain prohibition is left standing, with Matthew 19:8 offered and Avalos's answer to it heard.
+
+Before: "I used to play this as a trump card, and I had confused ending the game with finding the truth." (cut: a recollection). After: "I'm a Baptist pastor, so I don't get to tell this story from a safe distance."
+
+Words: 342 before; 2,253 after.
+
+Sources: Douglass 1845; Stringfellow in *Cotton Is King* 1860; Gregory of Nyssa (Hall and Moriarty 1993); Hart 2001; Chirichigno 1993; Noll 2006; Avalos 2011 (the best book against).
+
+### What did the New Atheists get right?
+
+The argument in three sentences. Four things are granted with dates and names: abuse and its cover-up (the 2010 legal effort against Benedict XVI, and the 2022 Guidepost report on the Southern Baptist Executive Committee), violence in God's name (Harris after September 11; Mystic, 1637), faith as "blind trust" where believers hold it, and Dennett's point that religion can be studied. Their claims are separated (harm, evidence, God), and Dawkins's improbability argument is laid out in the site's own summary with its weight on the second premise. Its weakness is shown through unbelieving and non-Christian critics, Nagel (an atheist), Ruse (a nonbeliever) and Eagleton, all paraphrased; the harm argument is met as the genetic fallacy with the fair atheist reply about the godless states granted; and both sides are judged by Matthew 7:20.
+
+Before: "I owned the books. I read Dawkins and Hitchens and Harris and Dennett the way a soldier reads dispatches..." (cut: a recollection). After: "I came to faith from atheism, so I owe their side the fairest hearing I can give, and on these four counts the fair verdict is that they were right."
+
+Words: 350 before; 1,786 after.
+
+Sources: Harris 2004; Dawkins 2006 (the best book against); Dennett 2006; Hitchens 2007; Nagel 2006; Eagleton 2006; Ruse 2009.
+
+### Can a life mean anything without God?
+
+The argument in three sentences. It concedes that unbelievers live meaningful lives and states the secular accounts at strength (Camus, Sartre's 1945 lecture, Nagel's "The Absurd" quoted, Wolf's "subjective attraction meets objective attractiveness" quoted), then separates meaning in a life from the meaning of life. An inference to the best explanation, its first premise credited to Wolf's account and the rest marked as the site's, argues that the worth meaning claims is better explained by a good God than by invented or ungrounded value; Russell's 1903 long view and Tolstoy's question are set beside Nagel's reply, and Ecclesiastes 1:2 and 3:11 and 1 Corinthians 15:58 show the Bible facing the same question. Nagel's reply is granted in part, the argument is said not to prove God or to make any unbeliever's life empty, and the last part speaks to a reader in the dark with the site's help wording copied word for word.
+
+Before: "I made my own for years, and it was good, right up until it was not, on a night when I was the thing that had broken..." (cut: a recollection, crisis-adjacent). After: "If that's where you are, the feeling that nothing matters is real and it is common, and it is not the truth about you."
+
+Words: 354 before; 1,720 after. The old answer's mention of Camus on suicide and Tolstoy's rope were cut (no specifics of self-harm).
+
+Sources: Tolstoy 1882; Russell 1903; Camus 1942 (O'Brien 1955); Sartre 1945 (Macomber 2007); Nagel 1971; Wolf 2010 (the best case for meaning without God).
+
+### What I ran, and what passed (seventh run)
+
+Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date). One heavy command at a time, each watched to the end:
+
+- `pnpm check`: exit 0.
+- All 36 commands of the content-gates step in `ci.yml`, one at a time, after rebuilding the search index (730 entries) and the passage index (14 chapter files rewritten): every one exit 0.
+- `pnpm test`: first run 1 failure (the hq test's list of argued answers, where the slavery slug was out of sorted order); fixed; second run exit 0: 146 test files passed, 7 skipped; 1,651 tests passed, 73 skipped.
+- ESLint on `answers.ts` and `hq.test.tsx`: clean.
+- `pnpm build`, `pnpm run sitemap` (static fallback, no database), `pnpm run prerender` (3,026 route files), `pnpm run audit:canonicals` (0 not prerendered, 0 failures): each exit 0.
+- Served with `scripts/serve-like-vercel.mjs` on port 4585, API stubbed, Playwright at 390 x 844 and 1440 x 900, day and night, on the three new answers and the repaired one: scroll width equals the viewport on all sixteen views, every section heading, the laid-out arguments and the source lists render. Screenshots: `/home/user/elite-shots/apol/run8-*`. Server stopped, `dist/` deleted.
+- Not run: Lighthouse.
+
+### Not verified (seventh run)
+
+- No primary page could be opened this run (every non-GitHub host failed to resolve). Quotations not already in an essay ledger (Wolf, Nagel's "The Absurd", Camus's last line, Sartre's three words, Russell's fragment, Tolstoy's question) were matched in search results that reproduce them, not in the books.
+- Gregory of Nyssa is paraphrased, not quoted: no named translation's wording was seen.
+- The 1995 SBC resolution and Furman's 1822 letter are paraphrased: their exact sentences were not seen.
+- Eagleton's well-known "Book of British Birds" sentence could not be found and is not used; the Ruse blurb ("embarrassed to be an atheist") is not used because his own wording differed.
+- Morriston's and Rauser's articles are still unread.
+- No answer has been read by James.
+
+### Waits for James (seventh run)
+
+1. "I'm a Baptist pastor" (slavery), "I came to faith from atheism" (New Atheists) and "I was an atheist" (meaning, the old answer's own words) are each used once, as facts, with nothing added.
+2. Cut because they describe memories or feelings we can't confirm: "I used to play this as a trump card" and "I wanted a God who would have said the four words" (slavery); "I owned the books ... followed all four Horsemen off a cliff" and "They were right about the church I was leaving ... I cheered" (New Atheists); "I built real meaning out of love and craft and loyalty", "I made my own for years ... on a night when I was the thing that had broken" (meaning). If any is true as written, it can go back.
+3. The slavery answer sets the "hardness of heart" reading beside Avalos's objection to it and doesn't settle between them.
+
+### Next in the ranking
+
+"What do Christianity and Islam actually dispute?", then "What makes us human in the age of AI?".
+
+## 10. The eighth run (2026-11-19): Islam, and being human in the age of AI
+
+The last two in the ranking, rebuilt by the approved pattern. Slugs, questions, addresses, essay and book links are unchanged; every claim is in `apol-ledger.md` under "Eighth run". Neither answer uses a fact about James.
+
+### What do Christianity and Islam actually dispute?
+
+The argument in three sentences. It states what Muslims confess in their own terms, quoting the Qur'an only from Saheeh International (tawhid and shirk, 4:48 and 112; Jesus as Messiah, born of the virgin, a word from God, not God's son, 3:45, 3:47, 4:171; not crucified, 4:157-158, with Lawson on the range of Muslim readings; the earlier books and the tahrif question, with Ibn Hazm and the interpretive view both named), then what the faiths share (Nostra Aetate 3 quoted, A Common Word in 2007, Qur'an 29:46), and sets out the Christian views on whether both worship the same God (Volf against Shehadeh) without taking a side. It argues four disputes, each with the strongest Muslim reply: the Trinity (what Christians do not mean, then an argument from "God is love" marked as persuasive only within the confession, against "the Free of need"); the cross (a historical argument from 1 Corinthians 15, Tacitus, Paul's "stumbling block" and Crossan, against the reply that 4:157 predicts exactly that evidence); who Jesus is (Hurtado on the earliest worship, against Mark 10:18, Qur'an 5:72 and Ehrman); and grace (Islam's mercy and the hadith on deeds stated fairly, Ephesians 2:8-9, against 6:164). It ends by showing the four disputes are one, in the old answer's own closing words.
+
+Before: "When I was an atheist, lumping every religion together kept all of them at arm's length." (cut: a habit of James's that can't be confirmed). After: "The strongest Muslim reply doesn't dispute that people saw a crucifixion. The verse itself says the matter \"was made to resemble him to them\" (4:157)."
+
+Words: 329 before; 2,188 after.
+
+Sources: Saheeh International 1997; Nostra Aetate 1965; Hurtado 2003; A Common Word 2007; Lawson 2009; Reynolds 2010; Volf 2011; Ehrman 2014 (the best case that Jesus' divinity was a later belief).
+
+### What makes us human in the age of AI?
+
+The argument in three sentences. The functionalist case is stated at full strength (Turing 1950 with his opening sentence and "the polite convention that everyone thinks", Putnam 1967, Dennett 1991 and his 1994 "we are a sort of robot ourselves"), with Searle's Chinese Room and Nagel's bat as secular dissent, and the page says plainly that nobody knows whether a machine could be conscious. It turns to what we already believe about the newborn and the man with dementia, with Singer's honest conclusion from a view based on abilities and Maritain's "on condition that no one asked why", then sets out the substantive (Aquinas), functional (Middleton) and relational (Barth) readings of the image of God fairly. An inference to the best explanation argues that equal human worth is better explained as given by God than earned by ability, the secular reply (worth from membership in the species) is heard, and the body is defended from Genesis 2:7, the creed and Irenaeus, ending on Psalm 8.
+
+Before: "the transhumanist dream of uploading the self is an old heresy on new hardware: the gnostic contempt for flesh." After: "Whatever one thinks of its chances, Christianity holds a different picture of a person, and it's the older one: a creature of dust and breath, made to be raised whole."
+
+Words: 245 before; 1,985 after.
+
+Sources: Turing 1950; Maritain 1951; Putnam 1967; Nagel 1974; Singer 1979; Searle 1980; Dennett 1991 (the strongest case against); Middleton 2005.
+
+### What I ran, and what passed (eighth run)
+
+Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date). One heavy command at a time, each watched to the end:
+
+- Rebuilt the search index (732 entries) and the passage index (8 chapter files written).
+- `pnpm check`: exit 0.
+- All 36 commands of the content-gates step in `ci.yml`, one at a time: every one exit 0.
+- `pnpm test`: exit 0, 146 test files passed, 7 skipped; 1,651 tests passed, 73 skipped (first run).
+- ESLint on `answers.ts` and `hq.test.tsx`: clean.
+- `pnpm build`, `pnpm run sitemap` (static fallback, no database), `pnpm run prerender` (3,028 route files), `pnpm run audit:canonicals` (0 not prerendered, 0 failures): each exit 0.
+- Served with `scripts/serve-like-vercel.mjs` on port 4586, API stubbed, Playwright at 390 x 844 and 1440 x 900, day and night: scroll width equals the viewport on all eight views, every section heading, the laid-out arguments and the source lists render. Screenshots: `/home/user/elite-shots/apol/run9-*`. Server stopped, `dist/` deleted.
+- Not run: Lighthouse.
+
+### Not verified (eighth run)
+
+- No Qur'an site, archive.org or other primary host resolves from here. The Saheeh International wording was read in full from an npm package that carries tanzil.net's text; it was not checked against a printed edition (the 1997 and 2004 editions differ slightly).
+- The Ayoub article and Reynolds's argument were not seen; Reynolds is listed by title only, Ayoub not at all.
+- Turing's "polite convention" is in secondary sources that give it as his words, not in the paper as seen. Barth's reading is from secondary summaries and has no source-list entry.
+- No answer has been read by James.
+
+### Waits for James (eighth run)
+
+1. Cut because it describes a habit we can't confirm: "When I was an atheist, lumping every religion together kept all of them at arm's length" (Islam). If it is true as written, it can go back.
+2. The Islam answer takes no side on whether Christians and Muslims worship the same God. If James holds a view, it can be named as his.
+3. Both pages are long (about 2,000 words). The first-paint idea from earlier runs (prerender only the short answer above the fold) still stands, unbuilt.
+
+### Every answer still in the short form
+
+Fifteen of the 35 answers have no `sections`. Sorted by whether they make a claim a skeptic disputes:
+
+Apologetic, should get the argued form: "How can God be three and one?" (215 words), "What about those who never heard of Jesus?" (396), "How should a Christian read Genesis 1?" (250).
+
+Doctrinal questions argued between Christians, better as the contested-doctrine form (positions steelmanned, ranked by order, left open): "Can you lose your salvation?" (273), "Does God choose us, or do we choose him?" (254), "What does the Bible say about divorce and remarriage?" (241).
+
+Pastoral or practical, should stay short and personal: "Is it okay to be angry at God?" (221), "Can you be a Christian without going to church?" (212), "What if I'm done with church but not with Jesus?" (212), "What happens after you deconstruct your faith?" (229), "Should a Christian follow a political party?" (208), "What does the Bible actually say about money?" (226), "What does the Bible say about anxiety?" (203), "What do I do when my teenager says they don't believe?" (215), "Is my anxiety a spiritual failure?" (295).
