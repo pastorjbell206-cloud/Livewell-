@@ -390,9 +390,30 @@ function checkPlain(b, c, where) {
     if (p.ot != null) prose(`${where}.passages[${i}].ot`, p.ot, 100, 3000);
     if (p.hard != null) prose(`${where}.passages[${i}].hard`, p.hard, 100, 3000);
     prose(`${where}.passages[${i}].asks`, p.asks, 80, 1500);
+    // Field order: every field can hold text and still sit under the wrong
+    // heading (a run once stored the hard question under "The Old Testament
+    // behind it"). So the Old Testament note must name an Old Testament book
+    // or the Law, the Prophets, the Psalms or Scripture, and "What it asks"
+    // must not be the only field that names one.
+    const key = `${b.slug}/${c} ${p.v}`;
+    if (typeof p.ot === "string" && !OT_NAMED.test(p.ot) && !OT_FIELD_KNOWN.has(key)) fail(`${where}.passages[${i}].ot`, "names no Old Testament book, the Law, the Prophets, the Psalms or Scripture: is this text under the right heading?");
+    const naming = ["happening", "hearers", "ot", "hard", "asks"].filter((k) => typeof p[k] === "string" && OT_BOOK.test(p[k]));
+    if (naming.length === 1 && naming[0] === "asks") fail(`${where}.passages[${i}].asks`, "is the only field naming an Old Testament book: is the Old Testament note under the wrong heading?");
   }
   if (next !== last + 1) fail(where, `passages end at ${next - 1}, chapter ends at ${last}`);
 }
+const OT_BOOK = new RegExp(
+  `\\b(${[...new Set([...books.filter((x) => x.testament === "OT").map((x) => x.name.replace(/^\d\s/, "")), "Psalm", "Song of Songs"])]
+    .sort((a, z) => z.length - a.length)
+    .join("|")})\\b`,
+);
+const OT_NAMED = new RegExp(`${OT_BOOK.source}|\\b(the Law|the Prophets|the Psalms|Scriptures?|Old Testament)\\b`);
+// Passages whose Old Testament note names none of these, reported for a
+// writer to look at rather than changed by a script. Remove an entry once
+// its note is put right.
+const OT_FIELD_KNOWN = new Set([
+  "matthew/7 21-23", // holds only Luke 6:46 (reported 2026-11-19, Matthew 11 to 13 run)
+]);
 
 let intros = 0, notes = 0, verseFiles = 0, versesMissing = 0, studies = 0, plains = 0;
 for (const b of books) {
