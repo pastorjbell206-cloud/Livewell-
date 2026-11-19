@@ -5009,3 +5009,19 @@ Left out: the "wild animal" sense of the verb in 8:3 (not checked); the
 tradition that the eunuch preached in his own land (Irenaeus; not checked
 this run); which queen of Kush ruled; whether the Gaza road or the city was
 "desert"; the Didache on pouring; Dunn by name.
+
+Editor's read of Acts 8 (2026-11-19, after the restart). 1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Samaritan hope of a coming figure, a prophet like Moses (Deuteronomy 18:15), the Taheb, is found in later Samaritan writings; how early it took that form is uncertain (the title appears in Samaritan sources from about the fourth century AD) | 4-8 | Pummer as reported; Samaritan sources | Search: livius.org "The Samaritan Prophet"; israelite-samaritans.com. Narrowed to "later Samaritan writings ... not certain" |
+| "God-fearing men" (8:2) and "God-fearing Jews" (2:5): the same BSB wording; devout Jews or believers, both readings stated | 1-3 | BSB | Repository |
+
+Changed in the read: "the Samaritans also looked for a coming prophet like
+Moses" narrowed as above; "devout Jews" for the men who buried Stephen made a
+reading, with the other; "often as a boy" (castration) cut, not verified;
+"a scroll of Isaiah, which was costly" cut to what the text says; "a magician
+learned secrets from a teacher, often for a price" cut to the deep note's
+"people paid for spells and charms"; a quotation of 2:38 that joined two
+parts of the verse with an ellipsis rewritten as a paraphrase and one exact
+quotation.
