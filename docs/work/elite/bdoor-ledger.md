@@ -3027,3 +3027,43 @@ Thomas Aquinas on compelling heretics; Letter 185; the dragonnades and the
 1685 revocation; Jerome to Heliodorus; Kierkegaard; Bonhoeffer; Bach and the
 lectionaries; Dead Sea salt and b. Bekhorot 8b; salt on soil and manure;
 mōrainō ("become foolish").
+
+## The plain notes on Luke 15 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/15.json`. Five searches for this
+chapter, with the earlier ledger (Luke 3; Matthew 18 and 23; Mark 10) and the
+site's honour-and-shame portrait.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Tax collectors and "sinners" (Luke 3 wording); table fellowship as acceptance; 5:30 | 1-7 | Luke 3 plain note; BSB | Repository |
+| Matthew's setting against Luke's ("goes astray", "if he finds it") | 1-7 | Matthew 18 plain note | Copied in substance from its wording |
+| Isaiah 40:11; Ezekiel 34:16 | 1-7 | BSB | Repository |
+| Drachma roughly equal to a denarius, about a day's wage (an approximation) | 8-10 | Bible reference works | Search: biblehub.com 1406; depts.ttu.edu "Coins Mentioned in the New Testament"; jw.org Insight "Money" (the official Roman rate three quarters of a denarius). "Worth about the same", "roughly" |
+| Philas and geitonas feminine in 15:9 (masculine in 15:6) | 8-10 | Greek text | Script over the repository's Greek |
+| Gregory the Great (Homily 34) reads the woman as God and the lamp as God's wisdom appearing in a human life | 8-10 | Gregory, Homilies on the Gospels 34, as reported | Search: en.wikipedia.org "Parable of the Lost Coin"; catenabible.com; biblesnet.com (Trench). Paraphrased; "around AD 600" |
+| Isaiah 49:15; 66:13; Zephaniah 3:17; 13:18-21 | 8-10 | BSB | Repository |
+| Firstborn's double share (Deuteronomy 21:17), so a younger son's third | 11-19 | BSB | Repository |
+| Sirach 33:20-24 (numbered 33:19-23 in some editions): do not give your property away while you live, lest you must ask for it back | 11-19 | Sirach | Search: biblehub.com/catholic/sirach/33-20; usccb.org Sirach 33; tips.translation.bible. "About two centuries before Jesus"; verse numbers not given on the page |
+| Request unusual and a break with the honour a son owed | 11-19 | The site's honour-and-shame portrait ("a hard break with the honor a son owed") | Repository. "Wishing the father dead" not used |
+| Pigs unclean (Leviticus 11:7) | 11-19 | BSB | Repository |
+| Keratia most likely carob pods, cheap fodder (especially for pigs), eaten by the poor in hard times; the identification usual but not certain | 11-19 | Lexicons and Bible dictionaries | Search: biblehub.com 2769; jw.org Insight "Carob Pod"; tips.translation.bible "luke 1516". "Most likely" |
+| Eis heauton elthōn, "came to himself" (15:17) | 11-19 | Greek text | Script over the repository's Greek |
+| Hosea 14:1-2, 4; Ezekiel 18:23 | 11-19 | BSB | Repository |
+| Bailey on the running father as a modern parallel, and Aristotle's great-souled man with a slow step (Nicomachean Ethics 4.3) | 20-24 | The site's honour-and-shame portrait | Repository. Bailey marked as a modern parallel, as the portrait has it; Aristotle paraphrased, in single quotes nowhere |
+| Robe, ring, Genesis 41:42; the son's standing restored | 20-24 | Honour-and-shame portrait; BSB | Repository |
+| Rembrandt painted the son's return | 20-24 | Luke's book page | Repository. No date or collection given |
+| Genesis 33:4; Psalm 103:13; Jeremiah 31:20; Luke 22:20; 24:46-47; Romans 5:8 | 20-24 | BSB | Repository |
+| Atonement views stated without a side; pointer to the Mark 10 ransom paragraph | 20-24 | Mark 10 plain note; deep note | Stated as views; Socinus, Warfield, the liberal "gospel within the gospel" and m. Yoma 8:8 not named |
+| Care: "If your own father was absent, or hurt you, ... is not asking you to pretend otherwise. It tells you that you have a Father in heaven who is not like that." | 20-24 | Matthew 23 plain note | Word for word, "this verse" made "this story" |
+| Teknon "child" in 15:31 | 25-32 | Greek text | Script over the repository's Greek |
+| Tertullian (On Modesty 8-9) reports the common reading of the older son as the Jews and the younger as the Gentiles, and disputes it; Augustine among those who read the sons as two peoples | 25-32 | Tertullian, De pudicitia 8-9; Augustine (a sermon) as reported | Search: bkv.unifr.ch De pudicitia 9; sermonindex.net (Augustine); scalar.usc.edu. "As early as the 200s"; Augustine and Jerome not named on the page (Quaestiones 2.33 and Letter 21 not confirmed) |
+| Jonah 4:2 | 25-32 | BSB | Repository |
+| Care: "Mary and Joseph lost their son for three days and did not understand his answer. If you have a child who has wandered or whom you cannot understand, you are not the first." | 25-32 | Luke 2 plain note | Word for word |
+
+Left out: Sanders and Dunn on "sinners"; m. Bava Batra 8:7; m. Bava Kamma
+7:7; Leviticus Rabbah 13:4; Acts 11:28; the Gospel of Thomas, saying 107;
+shepherds in later rabbinic lists of low trades; Jeremias's dowry headdress;
+"wishing the father dead" and every village ceremony (as instructed); the
+sandals of free men; sumphōnia; Exodus 10:16; Socinus, Warfield and Levine
+by name; Augustine's Quaestiones 2.33 and Jerome's Letter 21 (not confirmed).
