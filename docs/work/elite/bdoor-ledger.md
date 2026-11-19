@@ -4058,3 +4058,31 @@ Laban's part in this story). The brief named "the women guide's wording"
 on arranged marriage; no such sentence was found in the women guide
 (`women-in-the-ancient-world`) or elsewhere on the site, so the wording
 here is new and rests on the deep note.
+
+## The plain notes on Genesis 25 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/25.json`. One web search for this
+chapter, with the deep note, the Honest Answer on election and the Luke 1
+plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Keturah a wife here, a concubine in 1 Chronicles 1:32; her sons' names linked with Arabian peoples; Midian and Exodus 2:15-21 | 1-11 | BSB; repository deep note (`historical`, `cultural`) | Repository |
+| Gifts and sending away so Isaac alone inherits; 15:15 kept; ‘gathered to his people’ before burial ("many readers note") | 1-11 | Repository deep note; BSB | Repository |
+| Abraham lived until the twins were fifteen (21:5; 25:7, 26) | 1-11 | BSB arithmetic; deep note | Repository |
+| Matthew 22:32; Hebrews 11:13 | 1-11 | BSB | Repository |
+| Care line for family hurts at a funeral (new wording; friend, pastor, counsellor) | 1-11 | Site | Not a historical claim |
+| Toledot heading; the twelve princes fulfil 17:20; Isaiah 60:7; Genesis 36 | 12-18 | BSB; repository deep note (`literary`) | Repository |
+| Kedar (Qedar) and Nebaioth named in Assyrian records of the 700s and 600s BC (tribute to Tiglath-pileser III, 737 BC; Ashurbanipal's campaigns); Tema and Dumah usually linked with Tayma and Dumat al-Jandal; the link with Ishmaelites debated (Eph'al) | 12-18 | Assyrian records as summarised | Search: livius.org "Qedar", "Duma"; en.wikipedia.org "Qedar". Said "discussed by scholars, and not everyone agrees" |
+| 25:18 ‘in the face of’, translated near, over against or in hostility; not a judgment on any people | 12-18 | Hebrew; English versions | Repository Hebrew; the Genesis 16 note's line on Arabs followed |
+| Isaac forty at marriage, sixty at the twins (twenty years); Rebekah asks and God answers her; the oracle a four-line poem; Edom/red, Seir/hairy, Jacob/heel (27:36) | 19-26 | BSB; repository deep note (`cultural`, `literary`) | Repository |
+| Romans 9:11-13; Malachi 1:2-3; Genesis 29:30-31; Luke 14:26; Deuteronomy 23:7 | 19-26 | BSB | Repository |
+| Election: the Reformed (Augustine, Calvin) and Arminian/Wesleyan readings; corporate and individual readings on both sides; ‘love’ and ‘hate’ as choosing; Malachi as covenant language about nations | 19-26 | Honest Answer "Does God choose us, or do we choose him?" (answers.ts); repository deep note (`hard`) | Repository; no side |
+| Care lines, word for word from the Luke 1 plain note: "This story ends in joy for one couple. It does not promise a child to every couple who prays for one. Many faithful people long for children and never have them, or lose them before birth." and "Childlessness is not a judgment from God, and it does not measure your faith. Your longing is seen. If the grief is heavy, please share it with someone you trust: a friend, a pastor, a counsellor." | 19-26 | Site | Repository (grep -F, one match in each file) |
+| Birthright: double share and leadership (Deuteronomy 21:17); parental favorites; ‘the red, the red’; despised | 27-34 | Repository deep note (`cultural`, `literary`); BSB | Repository |
+| Hebrews 12:16-17; Deuteronomy 2:5; Genesis 33:4 | 27-34 | BSB | Repository |
+
+Cut: the Nuzi tablet of a brother selling his inheritance share for sheep
+(the book page's Nuzi caution); the Mari and other Arabian identifications
+beyond Kedar, Nebaioth, Tema and Dumah; Sheba and Dedan as caravan
+peoples; lentils described.
