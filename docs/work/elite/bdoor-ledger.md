@@ -2953,3 +2953,41 @@ chapter, with the earlier ledger (Mark 3, 4, 10 and 12; Matthew 5, 6, 10,
 Left out: 1 Enoch 97:8-10; Malherbe; the Epicurean reading of "eat, drink,
 and be merry"; the hours of each night watch; Thomas's Gospel; Marcion;
 every deep-note scholar not checked.
+
+## The plain notes on Luke 13 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/13.json`. Three searches for this
+chapter, with the earlier ledger (Mark 2, 4, 11 and 15; Matthew 7, 13 and
+23; John 7 and 9).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The Galileans killed by Pilate at their sacrifices: told only by Luke, no other ancient record; Josephus's Gerizim massacre a different place and people | 1-5 | Commentaries as reported | Search: biblestudytools.com; catenabible.com (Lapide); biblehub.com. "No other ancient writer tells of this event"; Gerizim not mentioned on the page |
+| Philo charges Pilate with violence; Josephus on the standards; both accounts hostile | 1-5 | Earlier ledger (Mark 15: Philo, Embassy to Gaius 299-305; Josephus, Jewish War 2.169-174) | Earlier ledger. The aqueduct episode not used |
+| Pool of Siloam found in 2004 | 1-5 | Earlier ledger (John's book page) | Earlier ledger |
+| Tower of Siloam named only in Luke; location unknown (Silwan, near the pool, the Ophel; Weill's tentative tower) | 1-5 | Bible encyclopedias | Search: biblicaltraining.org "Tower of Siloam"; biblegateway Encyclopedia of the Bible; jw.org Insight "Siloam". "Perhaps part of the city wall"; Weill not named |
+| Job 4:7; 42:7; Ezekiel 33:11; John 9:3; 19:43-44; AD 70 | 1-5 | BSB; earlier ledger (Mark 13) | Repository |
+| Care: "Grief is not unbelief. If grief is crushing you, do not carry it alone. Reach out to people you trust, to a pastor, or to someone trained to help." | 1-5 | Luke 7 plain note (John 11 wording) | Copied word for word |
+| Luke has no cursing of the fig tree (Mark 11:12-14; Matthew 21:18-19) | 6-9 | BSB comparison | Repository |
+| Kopria (manure) in 13:8 | 6-9 | Greek text | Script over the repository's Greek (G2874) |
+| Isaiah 5:4; Micah 7:1; 2 Peter 3:9 | 6-9 | BSB | Repository |
+| Readings of owner and keeper | 6-9 | Standard positions | Stated as views |
+| The Sabbath a gift and a sign (Mark 2 wording); Deuteronomy 5:15; Mark 2:27 | 10-17 | Mark 2 plain note; BSB | Repository |
+| Luō for the ox (13:15) and the woman (13:16); "daughter of Abraham"; 19:9 | 10-17 | Greek text; BSB | Script over the repository's Greek (G3089) |
+| Illness sentences: "The Gospel does not teach that every disability or illness has an evil spirit behind it, and it would be wrong and cruel to say so of anyone today." (Matthew 9/12) and "Illness of body or mind is illness." (Matthew 12) word for word; 6:18; 7:21 | 10-17 | Matthew 9 and 12 plain notes; BSB | Repository |
+| Mustard, leaven, three measures (Genesis 18:6) | 18-21 | Earlier ledger (Mark 4; Matthew 13) | Matthew 13 wording |
+| Ezekiel 17:23; 12:1 | 18-21 | BSB | Repository |
+| Agōnizomai in 13:24 ("agony") | 22-30 | Greek text | Script over the repository's Greek (G0075) |
+| The narrow way (Matthew 7 wording: "Christians also differ on what final judgment is like, and these notes do not settle that here." and the closing sentences adapted from "gate" to "door"); 18:13-14 | 22-30 | Matthew 7 plain note | Repository |
+| Psalm 6:8; Psalm 107:3; Isaiah 25:6 | 22-30 | BSB | Repository |
+| Antipas ruled Galilee and Perea under Rome; killed John (9:9) | 31-35 | Earlier ledger (Mark 6) | Earlier ledger |
+| Pharisees warn Jesus (Matthew 23 wording on who they were) | 31-35 | Matthew 23 plain note | Repository |
+| The fox: cunning (and perhaps destructive); some read it as "not to be feared" | 31-35 | Commentaries as reported (Zondervan dictionary; Gundry) | Search: charlottemasonpoetry.org "That fox"; openbible.com commentaries; tips.translation.bible. The lion contrast not found and not used |
+| Teleioumai "I am perfected" (13:32) | 31-35 | Greek text | Script over the repository's Greek (G5048) |
+| The hen (Matthew 23:37 wording word for word); 19:41; Ruth 2:12; Psalm 91:4; Jeremiah 22:5; Psalm 118:26; 19:38; readings of 13:35 (Matthew 23 wording) | 31-35 | Matthew 23 plain note; BSB | Repository |
+
+Left out: the Gerizim massacre (a different event); the aqueduct episode;
+Judas the Galilean's followers; the hours and height of the tower; Weill;
+the Damascus Document and the Mishnah on animals on the Sabbath; Leviticus
+19:23-25 on young trees; the lion contrast for the fox; Gundry and Bock by
+name.
