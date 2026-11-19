@@ -6362,3 +6362,41 @@ One web search.
 | "Be still": harpu from raphah, "let go", "stop", "drop", "relax"; NASB "Cease striving"; the setting of war; a command to the nations | 8-11 | Hebrew word studies; commentaries | Search: equip.org "Be Still and Know"; christiancourier.com; hebrewwordlessons.com; repository word data (H7503, "be quiet"). NASB not named on the page ("Some Bibles") |
 | Luther's "A Mighty Fortress Is Our God" drawn from Psalm 46 | 8-11 | Repository deep note; equip.org | Search. One line; no year given (the late-1520s date was not confirmed this run) |
 | Mark 4:39; Revelation 21:1; Matthew 1:23; Matthew 28:20; Revelation 22:1; Exodus 14:14; Isaiah 2:4 | all | BSB | BSB text |
+
+## The plain notes on Psalm 47 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Clapping and shouting at a coronation (2 Kings 11:12) | Repository deep note (cultural); BSB | BSB text |
+| Shofar; "ascended" as God going up to his throne, perhaps with the ark; 2 Samuel 6:15 | Repository deep note; BSB | BSB text; "Many think" |
+| A yearly feast of God's kingship: a scholarly proposal the Old Testament does not describe directly | Repository deep note (historical) | Stated as a view; Mowinckel not named |
+| Shields as rulers | Repository deep note (cultural) | Site's own teaching |
+| Genesis 12:3; Galatians 3:29; Acts 1:9 ("Many Christians also read verse 5 of Jesus going up", as with Psalm 24) | BSB; earlier ledger (Psalm 24) | BSB text. Ascension Day not named |
+
+## The plain notes on Psalm 48 (2026-11-19)
+
+One web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Zaphon a mountain in the north (Syria, Jebel al-Aqra), Baal's home in Ugaritic texts; Zion given its name as a claim for the LORD | NET Bible note (biblia.com); Constable and Utley notes (sermonindex.net); israelbiblicalstudies.com | Search. Jebel al-Aqra not named on the page |
+| Ships of Tarshish; Isaiah 2:16 | Repository deep note; earlier ledger (Tarshish); BSB | BSB text |
+| The fleeing kings unnamed; a failed Assyrian siege one view, general celebration another | Repository deep note | Stated as views, no date |
+| Jeremiah 7:4; Matthew 5:35; Hebrews 12:22 | BSB | BSB text |
+| No modern city or state | Book page; Psalm 46 note | Site's own teaching |
+
+## The plain notes on Psalm 49 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A wisdom psalm | 1-12 | Book page ("Kinds of psalm") | Site's own teaching |
+| Ransom of a forfeit life by payment (Exodus 21:30) | 1-12 | Repository deep note; BSB | BSB text |
+| Lands named after their owners (49:11); verses 11, 13 and 14 hard Hebrew, translations differ | 1-12 | Repository deep note | Site's own teaching |
+| "Take me" (H3947) in 49:15, Genesis 5:24 and 73:24 | 13-20 | Repository word data | Script |
+| Death as shepherd set against Psalm 23 | 13-20 | BSB | BSB text |
+| Two readings of 49:15 | 13-20 | Book page ("Sheol"); repository deep note (`hard`) | Site's own teaching |
+| Luke 12:20; 1 Timothy 6:7; Mark 10:45; 1 Corinthians 15:20 | all | BSB | BSB text |
