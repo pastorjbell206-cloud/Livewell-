@@ -4002,3 +4002,26 @@ Samaritan Moreh; the Carthage tophet debate; Auerbach's Mimesis; Moberly;
 Levenson; Delaney; Boehm (none checked this run); the Zikhronot and daily
 prayer-book readings; ‘teleological suspension of the ethical’ as a quoted
 phrase; any first use of substitution.
+
+## The plain notes on Genesis 23 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/23.json`. Two web searches for
+this chapter, with the deep note and the Genesis 5 and 12 plain notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Sarah 127; Isaac about thirty-seven (17:17 with 23:1); Kiriath-arba ‘town of Arba’ (Joshua 14:15); Mamre (13:18) | 1-2 | BSB arithmetic | Repository |
+| John 11:35; 1 Thessalonians 4:13; Isaiah 51:2; 1 Peter 3:5-6; Hebrews 11:11 | 1-2 | BSB | Repository |
+| Grief care line, adapted from the Genesis 5 and Matthew 2 plain notes (friend, pastor, grief counsellor; crisis line or emergency service; Find Help) | 1-2 | Site | Repository |
+| Ger as resident alien without the right to own land; the gate as the place of witnessed business; Ephron's gift as a polite opening; full price; silver weighed; ‘bury my dead’ refrain | 3-16 | Repository deep note (`cultural`, `literary`, `words`) | Repository; "often", "many readers think" |
+| Biblical Hittites: the Anatolian empire far north; Heth among Canaan's descendants (10:15); Ephron and Zohar Semitic names; many take the Hebron group as local, others see a link; uncertain | 3-16 | Repository deep note (`historical`) | Search: en.wikipedia.org "Biblical Hittites" (Speiser cited); biblearchaeology.org "Hittites and Hethites". Said "It is not certain" |
+| Leviticus 25:23; Psalm 39:12; 1 Peter 2:11; Hebrews 11:13, 16; Jeremiah 32:9 | 3-20 | BSB | Repository |
+| ‘Possession’ (achuzzah) and 17:8; the only land Abraham owns; the family grave (25:9; 49:29-31; 50:13); land promise pointed back to the 12:4-9 note | 17-20 | Repository deep note (`literary`, `story`, `words`); BSB | Repository |
+| Cave of the Patriarchs: Herodian enclosure (first century BC) still standing; Byzantine church; later the Ibrahimi Mosque; honored by Jews, Christians and Muslims; al-Haram al-Ibrahimi | 17-20 | Site history | Search: en.wikipedia.org "Cave of the Patriarchs"; madainproject.com; jewishvirtuallibrary.org. No modern dispute described |
+| Acts 7:5, 16 with Genesis 33:19 (Stephen's summary) | 17-20 | BSB; repository deep note (`hard`) | Repository; "many readers think" |
+| Matthew 22:32 | 17-20 | BSB | Repository |
+
+Cut: the silver's weight in kilograms; Lehmann (1953) and Tucker (1966) on
+the sale's legal form; ‘the only woman in Genesis whose age at death is
+recorded’ (not checked); "al-Khalil" as ‘the friend’ (not confirmed); loud
+public mourning customs; Hebron's distance from Jerusalem.
