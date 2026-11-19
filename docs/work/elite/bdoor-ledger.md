@@ -4903,3 +4903,27 @@ away"; any claim that the lame were barred from the temple.
 Left out: night trials and the Mishnah's rules for them; the sagan as a
 title; how many of the believers were pilgrims; the Theodotus inscription
 (kept for Acts 6).
+
+## The plain notes on Acts 5 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/5.json`. 4 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sin was the lie, not keeping money (5:4); honour sought; Spirit and God (5:3-4) | 1-6 | BSB; deep note `cultural` | Repository |
+| Achan (Joshua 7:1, 21); the Greek verb for "kept back" (nosphizomai) used of Achan in the Septuagint, "many readers notice" | 1-6 | Commentaries (Bruce as quoted; Pervo as quoted) | Search: americamagazine.org; tips.translation.bible; vridar.org; logos.com. The exact Septuagint form not checked, so stated as what readers notice |
+| Readings of the judgment (a founding sign; judgment or shock; believers or not, 1 Corinthians 11:30); not a pattern for discipline | 1-6 | Deep note `hard` | Stated as views |
+| Care line: no sudden death or illness read as punishment (Luke 13:4-5); Find Help; 5:31; 1 John 1:9 | 1-6 | BSB; earlier care-line form | Repository |
+| Ekklēsia first at 5:11 in most modern Bibles; the Greek Old Testament's word for Israel's assembly | 7-11 | Greek text; standard | Common knowledge, narrowed to "most modern Bibles" |
+| Belief that holiness passes by touch or shadow; Luke 8:44; Acts 19:12 | 12-16 | Deep note `cultural` | Stated as "many in the ancient world believed" |
+| Deuteronomy 21:23; Galatians 3:13 | 27-32 | BSB | Repository |
+| Gamaliel: Pharisee honoured by all (5:34); Paul his pupil (22:3); Mishnah Sotah 9:15, at Rabban Gamaliel the Elder's death the glory of the Torah ceased; most identify him with Acts' Gamaliel | 33-42 | Mishnah | Search: sefaria.org sheets; outorah.org; halakhah.com. Paraphrased; identification stated as "most" |
+| Pharisees in Luke-Acts: Luke 13:31; Acts 15:5 | 33-42 | BSB; Jewish-life portrait | Repository |
+| Judas the Galilean, AD 6 census; God alone master | 33-42 | Josephus | Earlier ledger (Mark 12) |
+| Theudas under Fadus about 44 to 46, the Jordan; the four answers (Luke's error; an earlier Theudas, many uprisings after 4 BC; Luke misread Josephus, Antiquities 20.97-102, against which the date about 93; Josephus's order); no side | 33-42 | Josephus; reference works | Earlier ledger (Theudas); search: Wikipedia "Theudas"; biblicaltraining.org; intertextual.bible |
+| Thirty-nine lashes: Mishnah Makkot 3:10; Deuteronomy 25:3; 2 Corinthians 11:24 | 33-42 | Mishnah | Search: mishnah.org Makkot 3:10; myjewishlearning.com; sefaria |
+| Proverbs 21:30; Deuteronomy 6:16; 13:11; 4:34; Joel 2:30; Daniel 6:22; Psalm 34:7; Matthew 5:12 | all | BSB | Repository |
+
+Left out: same-day burial custom (not searched); the interpolation theory of
+Josephus's Theudas; the sagan; Peter's shadow as magic (Luke "reports
+without teaching it as a method").
