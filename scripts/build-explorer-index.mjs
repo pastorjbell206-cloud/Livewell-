@@ -29,18 +29,23 @@ const DIR = path.join(ROOT, "client/public/explorer");
 const OUT = path.join(DIR, "index.json");
 const CHECK = process.argv.includes("--check");
 
-const read = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
+const read = p => JSON.parse(fs.readFileSync(p, "utf8"));
 
 export function buildIndex() {
-  const storyline = read(path.join(ROOT, "client/public/theology/biblical-theology-storyline.json")).acts;
-  const actOf = new Map(storyline.map((a) => [a.id, a]));
-  const files = fs.readdirSync(path.join(DIR, "stops")).filter((f) => f.endsWith(".json"));
+  const storyline = read(
+    path.join(ROOT, "client/public/theology/biblical-theology-storyline.json")
+  ).acts;
+  const actOf = new Map(storyline.map(a => [a.id, a]));
+  const files = fs
+    .readdirSync(path.join(DIR, "stops"))
+    .filter(f => f.endsWith(".json"));
   const stops = files
-    .map((f) => read(path.join(DIR, "stops", f)))
+    .map(f => read(path.join(DIR, "stops", f)))
     .sort((a, b) => a.n - b.n)
-    .map((s) => {
+    .map(s => {
       const act = actOf.get(s.act);
-      if (!act) throw new Error(`stop ${s.slug}: no act "${s.act}" in the storyline`);
+      if (!act)
+        throw new Error(`stop ${s.slug}: no act "${s.act}" in the storyline`);
       return {
         slug: s.slug,
         n: s.n,
@@ -56,14 +61,17 @@ export function buildIndex() {
   const { threads } = read(path.join(DIR, "threads.json"));
   const { cards } = read(path.join(DIR, "cards.json"));
   return {
-    about: "Written by scripts/build-explorer-index.mjs from client/public/explorer/stops, threads.json and cards.json. Do not edit by hand.",
+    about:
+      "Written by scripts/build-explorer-index.mjs from client/public/explorer/stops, threads.json and cards.json. Do not edit by hand.",
     stops,
     threads,
     cards,
   };
 }
 
-const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+const isMain =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
   let text;
   try {
@@ -75,7 +83,9 @@ if (isMain) {
   if (CHECK) {
     const now = fs.existsSync(OUT) ? fs.readFileSync(OUT, "utf8") : "";
     if (now !== text) {
-      console.error("[explorer-index] client/public/explorer/index.json is stale. Run: node scripts/build-explorer-index.mjs");
+      console.error(
+        "[explorer-index] client/public/explorer/index.json is stale. Run: node scripts/build-explorer-index.mjs"
+      );
       process.exit(1);
     }
     console.log("[explorer-index] index.json is current.");

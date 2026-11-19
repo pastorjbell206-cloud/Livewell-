@@ -16,7 +16,15 @@
  */
 import { useCallback, useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
-import { ArrowLeft, ArrowRight, BookOpen, Hourglass, LifeBuoy, MessageCircle, Tent } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  BookOpen,
+  Hourglass,
+  LifeBuoy,
+  MessageCircle,
+  Tent,
+} from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -36,13 +44,23 @@ import {
   type Stop,
 } from "@/lib/explorer";
 import { Roundel } from "./art";
-import { hasScene, LevelSwitch, MatchActivity, OrderActivity, RevealActivity, Scene, TapActivity } from "./parts";
+import {
+  hasScene,
+  LevelSwitch,
+  MatchActivity,
+  OrderActivity,
+  RevealActivity,
+  Scene,
+  TapActivity,
+} from "./parts";
 import "./explorer.css";
 
 type Loaded = { stop: Stop; index: ExplorerIndex };
 
 function useStop(slug: string) {
-  const [res, setRes] = useState<{ key: string; data: Loaded | null } | null>(null);
+  const [res, setRes] = useState<{ key: string; data: Loaded | null } | null>(
+    null
+  );
   const [nonce, setNonce] = useState(0);
   const key = `${slug}:${nonce}`;
   useEffect(() => {
@@ -55,7 +73,7 @@ function useStop(slug: string) {
     };
   }, [slug, key]);
   const data = res?.key === key ? res.data : undefined;
-  return { data, retry: useCallback(() => setNonce((n) => n + 1), []) };
+  return { data, retry: useCallback(() => setNonce(n => n + 1), []) };
 }
 
 export default function ExplorerStop() {
@@ -68,11 +86,26 @@ export default function ExplorerStop() {
     <Layout>
       {data === null ? (
         <div style={{ padding: "var(--s-6) var(--gutter)" }}>
-          <SEOMeta title="Bible Explorer" description="The whole Bible as one story, on one map, for ages 7 to 16." url={`https://www.livewellbyjamesbell.co${EXPLORER_PATH}`} noindex />
-          <LoadFailed what="This stop" onRetry={retry} backHref={EXPLORER_PATH} backLabel="Back to the map" />
+          <SEOMeta
+            title="Bible Explorer"
+            description="The whole Bible as one story, on one map, for ages 7 to 16."
+            url={`https://www.livewellbyjamesbell.co${EXPLORER_PATH}`}
+            noindex
+          />
+          <LoadFailed
+            what="This stop"
+            onRetry={retry}
+            backHref={EXPLORER_PATH}
+            backLabel="Back to the map"
+          />
         </div>
       ) : data === undefined ? (
-        <div className="ex-sec" data-lw-loading aria-busy="true" style={{ minHeight: "80vh" }}>
+        <div
+          className="ex-sec"
+          data-lw-loading
+          aria-busy="true"
+          style={{ minHeight: "80vh" }}
+        >
           <p className="ex-note" style={{ textAlign: "center" }}>
             Opening the stop…
           </p>
@@ -84,7 +117,11 @@ export default function ExplorerStop() {
   );
 }
 
-function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typeof useExplorerProgress> }) {
+function StopPage({
+  stop,
+  index,
+  explorer,
+}: Loaded & { explorer: ReturnType<typeof useExplorerProgress> }) {
   const { progress, saveFailed, setLevel, visit, markDone } = explorer;
   const level: Level = progress.level;
   const finished = stop.status === "finished";
@@ -99,10 +136,12 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
   const done = useCallback(() => markDone(slug), [markDone, slug]);
   const doneBefore = progress.done.includes(slug);
 
-  const i = index.stops.findIndex((s) => s.slug === slug);
+  const i = index.stops.findIndex(s => s.slug === slug);
   const summary = index.stops[i];
-  const nextReady = index.stops.slice(i + 1).find((s) => s.status === "finished");
-  const prevReady = [...index.stops.slice(0, Math.max(i, 0))].reverse().find((s) => s.status === "finished");
+  const nextReady = index.stops.slice(i + 1).find(s => s.status === "finished");
+  const prevReady = [...index.stops.slice(0, Math.max(i, 0))]
+    .reverse()
+    .find(s => s.status === "finished");
   const threads = threadsAt(slug, index.threads);
   const url = `https://www.livewellbyjamesbell.co${stopHref(slug)}`;
   const actLine = summary ? `${summary.actLabel}: ${summary.actTitle}` : "";
@@ -110,16 +149,33 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
   if (!finished) {
     return (
       <>
-        <SEOMeta title={`${stop.title}: Bible Explorer`} description={stop.summary.older} url={url} noindex />
-        <PageHead door="Bible Explorer" doorHref={EXPLORER_PATH} title={stop.title} line={stop.summary[level]} art={<Roundel slug={slug} className="ex-headmark" />} />
+        <SEOMeta
+          title={`${stop.title}: Bible Explorer`}
+          description={stop.summary.older}
+          url={url}
+          noindex
+        />
+        <PageHead
+          door="Bible Explorer"
+          doorHref={EXPLORER_PATH}
+          title={stop.title}
+          line={stop.summary[level]}
+          art={<Roundel slug={slug} className="ex-headmark" />}
+        />
         <section className="ex-sec ex-sec--warm">
           <div className="ex-wrap">
             <p className="ex-stop__drawing" style={{ fontSize: 16 }}>
-              <Hourglass size={18} strokeWidth={1.75} aria-hidden="true" /> {stop.range}. This stop is being drawn.
+              <Hourglass size={18} strokeWidth={1.75} aria-hidden="true" />{" "}
+              {stop.range}. This stop is being drawn.
             </p>
             <p style={{ marginTop: "var(--s-3)" }}>
               <Link href={EXPLORER_PATH} className="btn btn--quiet">
-                <ArrowLeft size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginRight: 8 }} />
+                <ArrowLeft
+                  size={16}
+                  strokeWidth={1.75}
+                  aria-hidden="true"
+                  style={{ marginRight: 8 }}
+                />
                 Back to the map
               </Link>
             </p>
@@ -137,13 +193,17 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
 
   return (
     <>
-      <SEOMeta title={`${stop.title}: Bible Explorer`} description={stop.summary.older} url={url} />
+      <SEOMeta
+        title={`${stop.title}: Bible Explorer`}
+        description={stop.summary.older}
+        url={url}
+      />
       <PageHead
         door="Bible Explorer"
         doorHref={EXPLORER_PATH}
         title={stop.title}
         line={stop.summary[level]}
-        art={<Roundel slug={slug} />}
+        art={<Roundel slug={slug} className="ex-headmark" />}
       >
         <p className="ex-note" style={{ marginTop: 0 }}>
           Stop {stop.n} of {index.stops.length}. {actLine}. {stop.range}.
@@ -151,18 +211,32 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
       </PageHead>
 
       <section className="ex-sec ex-sec--tight" aria-label="Reading level">
-        <div className="ex-wrap" style={{ maxWidth: "26rem", marginLeft: 0 }}>
-          <LevelSwitch level={level} onLevel={setLevel} saveFailed={saveFailed} />
-          {saveFailed && <p className="ex-alert">{SAVE_FAILED}</p>}
+        <div className="ex-wrap">
+          <div style={{ maxWidth: "26rem" }}>
+            <LevelSwitch
+              level={level}
+              onLevel={setLevel}
+              saveFailed={saveFailed}
+            />
+            {saveFailed && <p className="ex-alert">{SAVE_FAILED}</p>}
+          </div>
         </div>
       </section>
 
       <section className="ex-sec ex-sec--warm" aria-label="The picture">
         <div className="ex-wrap">
           {tapFirst && a?.kind === "tap" ? (
-            <TapActivity activity={a} onDone={done} doneBefore={doneBefore} scene={stop.scene!} sceneLabel={stop.sceneLabel ?? stop.title} />
+            <TapActivity
+              activity={a}
+              onDone={done}
+              doneBefore={doneBefore}
+              scene={stop.scene!}
+              sceneLabel={stop.sceneLabel ?? stop.title}
+            />
           ) : (
-            hasScene(stop.scene) && <Scene name={stop.scene!} label={stop.sceneLabel ?? stop.title} />
+            hasScene(stop.scene) && (
+              <Scene name={stop.scene!} label={stop.sceneLabel ?? stop.title} />
+            )
           )}
         </div>
       </section>
@@ -195,7 +269,10 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
               <p className="ex-care">
                 <LifeBuoy size={18} strokeWidth={1.75} aria-hidden="true" />
                 <span>
-                  {stop.care.replace(/ or look at Find Help\.$/, " or look at ")}
+                  {stop.care.replace(
+                    / or look at Find Help\.$/,
+                    " or look at "
+                  )}
                   {/ or look at Find Help\.$/.test(stop.care) ? (
                     <>
                       <Link href="/help" className="ex-link">
@@ -208,20 +285,30 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
               </p>
             )}
           </div>
-          <aside className="ex-aside" aria-label="What this shows us about God, and the verses">
+          <aside
+            className="ex-aside"
+            aria-label="What this shows us about God, and the verses"
+          >
             <div className="ex-panel">
               <h2 className="ex-panel__title">What this shows us about God</h2>
-              <p style={{ margin: 0, fontFamily: "var(--font-reading)", fontSize: 18, lineHeight: 1.6 }}>
+              <p
+                style={{
+                  margin: 0,
+                  fontFamily: "var(--font-reading)",
+                  fontSize: 18,
+                  lineHeight: 1.6,
+                }}
+              >
                 <RefText text={stop.god?.[level] ?? ""} />
               </p>
             </div>
             <div className="ex-verses">
-              {stop.verses?.map((v) => (
+              {stop.verses?.map(v => (
                 <blockquote key={v.ref} className="ex-quote">
                   <p>{v.text}</p>
-                  <footer>
+                  <p className="ex-quote__ref">
                     <VerseRef reference={v.ref} />
-                  </footer>
+                  </p>
                 </blockquote>
               ))}
             </div>
@@ -232,9 +319,27 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
       {a && !tapFirst && (
         <section className={tone()} aria-label="Something to do">
           <div className="ex-wrap" style={{ maxWidth: "48rem" }}>
-            {a.kind === "order" && <OrderActivity activity={a} onDone={done} doneBefore={doneBefore} />}
-            {a.kind === "match" && <MatchActivity activity={a} onDone={done} doneBefore={doneBefore} />}
-            {a.kind === "reveal" && <RevealActivity activity={a} onDone={done} doneBefore={doneBefore} />}
+            {a.kind === "order" && (
+              <OrderActivity
+                activity={a}
+                onDone={done}
+                doneBefore={doneBefore}
+              />
+            )}
+            {a.kind === "match" && (
+              <MatchActivity
+                activity={a}
+                onDone={done}
+                doneBefore={doneBefore}
+              />
+            )}
+            {a.kind === "reveal" && (
+              <RevealActivity
+                activity={a}
+                onDone={done}
+                doneBefore={doneBefore}
+              />
+            )}
           </div>
         </section>
       )}
@@ -245,7 +350,16 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
             <h2 className="ex-h2" id="ex-question-title">
               A question people ask
             </h2>
-            <p className="ex-lede" style={{ fontFamily: "var(--F)", fontSize: "1.6rem", lineHeight: 1.25, color: "var(--ink)", marginBottom: "var(--s-2)" }}>
+            <p
+              className="ex-lede"
+              style={{
+                fontFamily: "var(--F)",
+                fontSize: "1.6rem",
+                lineHeight: 1.25,
+                color: "var(--ink)",
+                marginBottom: "var(--s-2)",
+              }}
+            >
               {stop.question.ask}
             </p>
             <div className="ex-read">
@@ -257,11 +371,14 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
             </div>
             {stop.deeper && stop.deeper.length > 0 && (
               <>
-                <h3 className="ex-panel__title" style={{ marginTop: "var(--s-3)" }}>
+                <h3
+                  className="ex-panel__title"
+                  style={{ marginTop: "var(--s-3)" }}
+                >
                   Go deeper on LiveWell
                 </h3>
                 <ul className="ex-deeper">
-                  {stop.deeper.map((d) => (
+                  {stop.deeper.map(d => (
                     <li key={d.href}>
                       <Link href={d.href}>{d.label}</Link>
                     </li>
@@ -280,15 +397,30 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
               Talk about it
             </h2>
             <p className="ex-talk">
-              <MessageCircle size={18} strokeWidth={1.75} aria-hidden="true" style={{ verticalAlign: "-3px", marginRight: 8 }} />
+              <MessageCircle
+                size={18}
+                strokeWidth={1.75}
+                aria-hidden="true"
+                style={{ verticalAlign: "-3px", marginRight: 8 }}
+              />
               {stop.talk?.[level]}
             </p>
             {threads.map(({ thread, at }) => (
-              <p key={thread.id} className="ex-stop__thread" style={{ marginTop: "var(--s-3)" }}>
+              <p
+                key={thread.id}
+                className="ex-stop__thread"
+                style={{ marginTop: "var(--s-3)" }}
+              >
                 <Tent size={18} strokeWidth={1.75} aria-hidden="true" />
                 <span>
-                  <strong style={{ fontFamily: "var(--U)", fontSize: 14 }}>{thread.name}.</strong> {at.line} <VerseRef reference={at.ref} />{" "}
-                  <Link href={`${EXPLORER_PATH}?thread=${thread.id}`} className="ex-link">
+                  <strong style={{ fontFamily: "var(--U)", fontSize: 14 }}>
+                    {thread.name}.
+                  </strong>{" "}
+                  {at.line} <VerseRef reference={at.ref} />{" "}
+                  <Link
+                    href={`${EXPLORER_PATH}?thread=${thread.id}`}
+                    className="ex-link"
+                  >
                     Follow it on the map
                   </Link>
                 </span>
@@ -296,9 +428,11 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
             ))}
           </div>
           <div>
-            <h2 className="ex-panel__title">Read it yourself in the Study Bible</h2>
+            <h2 className="ex-panel__title">
+              Read it yourself in the Study Bible
+            </h2>
             <ul className="ex-chapters">
-              {stop.read?.map((r) => (
+              {stop.read?.map(r => (
                 <li key={r.href}>
                   <Link href={r.href}>
                     <BookOpen size={16} strokeWidth={1.75} aria-hidden="true" />
@@ -315,30 +449,54 @@ function StopPage({ stop, index, explorer }: Loaded & { explorer: ReturnType<typ
         <div className="ex-wrap ex-nav">
           {prevReady ? (
             <Link href={stopHref(prevReady.slug)} className="btn btn--quiet">
-              <ArrowLeft size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginRight: 8 }} />
+              <ArrowLeft
+                size={16}
+                strokeWidth={1.75}
+                aria-hidden="true"
+                style={{ marginRight: 8 }}
+              />
               {prevReady.title}
             </Link>
           ) : (
             <Link href={EXPLORER_PATH} className="btn btn--quiet">
-              <ArrowLeft size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginRight: 8 }} />
+              <ArrowLeft
+                size={16}
+                strokeWidth={1.75}
+                aria-hidden="true"
+                style={{ marginRight: 8 }}
+              />
               The whole map
             </Link>
           )}
           {nextReady ? (
             <Link href={stopHref(nextReady.slug)} className="btn">
               Next stop: {nextReady.title}
-              <ArrowRight size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginLeft: 8 }} />
+              <ArrowRight
+                size={16}
+                strokeWidth={1.75}
+                aria-hidden="true"
+                style={{ marginLeft: 8 }}
+              />
             </Link>
           ) : (
             <Link href={EXPLORER_PATH} className="btn">
               Back to the map
-              <ArrowRight size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginLeft: 8 }} />
+              <ArrowRight
+                size={16}
+                strokeWidth={1.75}
+                aria-hidden="true"
+                style={{ marginLeft: 8 }}
+              />
             </Link>
           )}
         </div>
         {prevReady && (
           <div className="ex-wrap" style={{ marginTop: "var(--s-2)" }}>
-            <Link href={`${EXPLORER_PATH}#stop-${slug}`} className="ex-link" style={{ fontFamily: "var(--U)", fontSize: 15 }}>
+            <Link
+              href={`${EXPLORER_PATH}#stop-${slug}`}
+              className="ex-link"
+              style={{ fontFamily: "var(--U)", fontSize: 15 }}
+            >
               See this stop on the whole map
             </Link>
           </div>

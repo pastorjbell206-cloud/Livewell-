@@ -18,7 +18,10 @@ import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
 
 export type Level = "younger" | "older";
 export const LEVELS: Level[] = ["younger", "older"];
-export const LEVEL_LABELS: Record<Level, string> = { younger: "Ages 7 to 11", older: "Ages 12 to 16" };
+export const LEVEL_LABELS: Record<Level, string> = {
+  younger: "Ages 7 to 11",
+  older: "Ages 12 to 16",
+};
 export type Leveled<T = string> = Record<Level, T>;
 
 export interface StopSummary {
@@ -86,9 +89,31 @@ export interface TapSpot {
 
 export type Activity =
   | { kind: "tap"; title: string; prompt: string; spots: TapSpot[] }
-  | { kind: "order"; title: string; prompt: string; items: { id: string; text: string; ref: string }[]; start: string[] }
-  | { kind: "match"; title: string; prompt: string; pairs: { id: string; promise: string; promiseRef: string; kept: string; keptRef: string }[] }
-  | { kind: "reveal"; title: string; prompt: string; questions: { id: string; q: string; a: string; ref: string }[] };
+  | {
+      kind: "order";
+      title: string;
+      prompt: string;
+      items: { id: string; text: string; ref: string }[];
+      start: string[];
+    }
+  | {
+      kind: "match";
+      title: string;
+      prompt: string;
+      pairs: {
+        id: string;
+        promise: string;
+        promiseRef: string;
+        kept: string;
+        keptRef: string;
+      }[];
+    }
+  | {
+      kind: "reveal";
+      title: string;
+      prompt: string;
+      questions: { id: string; q: string; a: string; ref: string }[];
+    };
 
 export interface Stop extends Omit<StopSummary, "actLabel" | "actTitle"> {
   added?: string;
@@ -106,39 +131,63 @@ export interface Stop extends Omit<StopSummary, "actLabel" | "actTitle"> {
   activity?: Activity;
 }
 
-const isObj = (x: unknown): x is Record<string, unknown> => typeof x === "object" && x !== null;
+const isObj = (x: unknown): x is Record<string, unknown> =>
+  typeof x === "object" && x !== null;
 
 export function isExplorerIndex(x: unknown): x is ExplorerIndex {
-  return isObj(x) && Array.isArray(x.stops) && Array.isArray(x.threads) && Array.isArray(x.cards);
+  return (
+    isObj(x) &&
+    Array.isArray(x.stops) &&
+    Array.isArray(x.threads) &&
+    Array.isArray(x.cards)
+  );
 }
 
 export function isStop(x: unknown): x is Stop {
-  return isObj(x) && typeof x.slug === "string" && typeof x.title === "string" && isObj(x.summary);
+  return (
+    isObj(x) &&
+    typeof x.slug === "string" &&
+    typeof x.title === "string" &&
+    isObj(x.summary)
+  );
 }
 
 export const EXPLORER_PATH = "/study/explorer";
 export const stopHref = (slug: string) => `${EXPLORER_PATH}/${slug}`;
 
-export const fetchExplorerIndex = () => fetchJson("/explorer/index.json", isExplorerIndex);
-export const fetchStop = (slug: string) => fetchJson(`/explorer/stops/${encodeURIComponent(slug)}.json`, isStop);
+export const fetchExplorerIndex = () =>
+  fetchJson("/explorer/index.json", isExplorerIndex);
+export const fetchStop = (slug: string) =>
+  fetchJson(`/explorer/stops/${encodeURIComponent(slug)}.json`, isStop);
 
 // ── Threads ───────────────────────────────────────────────────────────────
 
 /** The stops a thread lights, in map order, with how it shows at each. */
-export function threadStops(thread: Thread | undefined, stops: StopSummary[]): { slug: string; at: ThreadStop }[] {
+export function threadStops(
+  thread: Thread | undefined,
+  stops: StopSummary[]
+): { slug: string; at: ThreadStop }[] {
   if (!thread?.stops || thread.status !== "finished") return [];
-  return stops.filter((s) => thread.stops![s.slug]).map((s) => ({ slug: s.slug, at: thread.stops![s.slug] }));
+  return stops
+    .filter(s => thread.stops![s.slug])
+    .map(s => ({ slug: s.slug, at: thread.stops![s.slug] }));
 }
 
 /** The threads that run through one stop. */
-export function threadsAt(slug: string, threads: Thread[]): { thread: Thread; at: ThreadStop }[] {
-  return threads.filter((t) => t.status === "finished" && t.stops?.[slug]).map((t) => ({ thread: t, at: t.stops![slug] }));
+export function threadsAt(
+  slug: string,
+  threads: Thread[]
+): { thread: Thread; at: ThreadStop }[] {
+  return threads
+    .filter(t => t.status === "finished" && t.stops?.[slug])
+    .map(t => ({ thread: t, at: t.stops![slug] }));
 }
 
 // ── Progress on this device ───────────────────────────────────────────────
 
 export const EXPLORER_PROGRESS_KEY = "livewell-progress-explorer-v1";
-export const SAVE_FAILED = "Couldn't save to this browser — your work here will not survive a reload.";
+export const SAVE_FAILED =
+  "Couldn't save to this browser — your work here will not survive a reload.";
 
 export interface ExplorerProgress {
   v: 1;
@@ -149,9 +198,16 @@ export interface ExplorerProgress {
   last: string | null;
 }
 
-export const EMPTY_PROGRESS: ExplorerProgress = { v: 1, level: "younger", visited: [], done: [], last: null };
+export const EMPTY_PROGRESS: ExplorerProgress = {
+  v: 1,
+  level: "younger",
+  visited: [],
+  done: [],
+  last: null,
+};
 
-const strings = (x: unknown): x is string[] => Array.isArray(x) && x.every((s) => typeof s === "string");
+const strings = (x: unknown): x is string[] =>
+  Array.isArray(x) && x.every(s => typeof s === "string");
 
 export function isExplorerProgress(x: unknown): x is ExplorerProgress {
   return (
@@ -164,9 +220,11 @@ export function isExplorerProgress(x: unknown): x is ExplorerProgress {
   );
 }
 
-export const readExplorerProgress = (): ExplorerProgress => readStoredJSON(EXPLORER_PROGRESS_KEY, isExplorerProgress, EMPTY_PROGRESS);
+export const readExplorerProgress = (): ExplorerProgress =>
+  readStoredJSON(EXPLORER_PROGRESS_KEY, isExplorerProgress, EMPTY_PROGRESS);
 
-const add = (list: string[], slug: string) => (list.includes(slug) ? list : [...list, slug]);
+const add = (list: string[], slug: string) =>
+  list.includes(slug) ? list : [...list, slug];
 
 export function withLevel(p: ExplorerProgress, level: Level): ExplorerProgress {
   return { ...p, level };
@@ -184,17 +242,21 @@ export function withDone(p: ExplorerProgress, slug: string): ExplorerProgress {
  * full store), so the page can say so in the site's one sentence.
  */
 export function useExplorerProgress() {
-  const [progress, setProgress] = useState<ExplorerProgress>(readExplorerProgress);
+  const [progress, setProgress] =
+    useState<ExplorerProgress>(readExplorerProgress);
   const [saveFailed, setSaveFailed] = useState(false);
 
-  const update = useCallback((change: (p: ExplorerProgress) => ExplorerProgress) => {
-    setProgress((prev) => {
-      const next = change(prev);
-      if (next === prev) return prev;
-      if (!writeStoredJSON(EXPLORER_PROGRESS_KEY, next)) setSaveFailed(true);
-      return next;
-    });
-  }, []);
+  const update = useCallback(
+    (change: (p: ExplorerProgress) => ExplorerProgress) => {
+      setProgress(prev => {
+        const next = change(prev);
+        if (next === prev) return prev;
+        if (!writeStoredJSON(EXPLORER_PROGRESS_KEY, next)) setSaveFailed(true);
+        return next;
+      });
+    },
+    []
+  );
 
   // Another tab (or the stop page, on the way back) may have moved on.
   useEffect(() => {
@@ -208,8 +270,13 @@ export function useExplorerProgress() {
   return {
     progress,
     saveFailed,
-    setLevel: (level: Level) => update((p) => (p.level === level ? p : withLevel(p, level))),
-    visit: (slug: string) => update((p) => (p.last === slug && p.visited.includes(slug) ? p : withVisit(p, slug))),
-    markDone: (slug: string) => update((p) => (p.done.includes(slug) ? p : withDone(p, slug))),
+    setLevel: (level: Level) =>
+      update(p => (p.level === level ? p : withLevel(p, level))),
+    visit: (slug: string) =>
+      update(p =>
+        p.last === slug && p.visited.includes(slug) ? p : withVisit(p, slug)
+      ),
+    markDone: (slug: string) =>
+      update(p => (p.done.includes(slug) ? p : withDone(p, slug))),
   };
 }

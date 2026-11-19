@@ -59,19 +59,22 @@ function roadPath(x: number, first: boolean, last: boolean) {
 }
 
 function useIndex() {
-  const [res, setRes] = useState<{ nonce: number; data: ExplorerIndex | null } | null>(null);
+  const [res, setRes] = useState<{
+    nonce: number;
+    data: ExplorerIndex | null;
+  } | null>(null);
   const [nonce, setNonce] = useState(0);
   useEffect(() => {
     let live = true;
     fetchExplorerIndex()
-      .then((d) => live && setRes({ nonce, data: d }))
+      .then(d => live && setRes({ nonce, data: d }))
       .catch(() => live && setRes({ nonce, data: null }));
     return () => {
       live = false;
     };
   }, [nonce]);
   const data = res?.nonce === nonce ? res.data : undefined;
-  return { data, retry: useCallback(() => setNonce((n) => n + 1), []) };
+  return { data, retry: useCallback(() => setNonce(n => n + 1), []) };
 }
 
 /** The thread a link asked for (?thread=dwelling), if any. */
@@ -86,11 +89,32 @@ export default function ExplorerMap() {
   const [threadId, setThreadId] = useState<string | null>(threadFromUrl);
   const level = progress.level;
 
-  const thread = data?.threads.find((t) => t.id === threadId && t.status === "finished");
-  const lit = useMemo(() => new Map(threadStops(thread, data?.stops ?? []).map((x) => [x.slug, x.at])), [thread, data]);
-  const finishedCount = data?.stops.filter((s) => s.status === "finished").length ?? 0;
-  const visitedFinished = data?.stops.filter((s) => s.status === "finished" && progress.visited.includes(s.slug)).length ?? 0;
+  const thread = data?.threads.find(
+    t => t.id === threadId && t.status === "finished"
+  );
+  const lit = useMemo(
+    () =>
+      new Map(threadStops(thread, data?.stops ?? []).map(x => [x.slug, x.at])),
+    [thread, data]
+  );
+  const finishedCount =
+    data?.stops.filter(s => s.status === "finished").length ?? 0;
+  const visitedFinished =
+    data?.stops.filter(
+      s => s.status === "finished" && progress.visited.includes(s.slug)
+    ).length ?? 0;
   const here = progress.last ?? data?.stops[0]?.slug ?? null;
+
+  // An address with #stop-<slug> or #believe-<id> lands on it once the map has drawn.
+  const ready = !!data;
+  useEffect(() => {
+    if (!ready || typeof window === "undefined" || !window.location.hash)
+      return;
+    const el = document.getElementById(
+      decodeURIComponent(window.location.hash.slice(1))
+    );
+    el?.scrollIntoView({ block: "start" });
+  }, [ready]);
 
   const toggleThread = (id: string) => {
     const next = threadId === id ? null : id;
@@ -99,7 +123,11 @@ export default function ExplorerMap() {
       const url = new URL(window.location.href);
       if (next) url.searchParams.set("thread", next);
       else url.searchParams.delete("thread");
-      window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
+      window.history.replaceState(
+        window.history.state,
+        "",
+        url.pathname + url.search + url.hash
+      );
     } catch {
       /* the address stays as it was; the map still lights */
     }
@@ -121,28 +149,47 @@ export default function ExplorerMap() {
         art={<HeadArt />}
       />
 
-      <section className="ex-sec ex-sec--tight" aria-label="Reading level and threads">
+      <section
+        className="ex-sec ex-sec--tight"
+        aria-label="Reading level and threads"
+      >
         <div className="ex-wrap">
           <div className="ex-controls">
             <div className="ex-panel">
-              <LevelSwitch level={level} onLevel={setLevel} saveFailed={saveFailed} />
+              <LevelSwitch
+                level={level}
+                onLevel={setLevel}
+                saveFailed={saveFailed}
+              />
             </div>
             <div className="ex-panel">
-              <h2 className="ex-panel__title">Threads that run through the whole Bible</h2>
+              <h2 className="ex-panel__title">
+                Threads that run through the whole Bible
+              </h2>
               {data ? (
-                <Threads threads={data.threads} active={thread?.id ?? null} onToggle={toggleThread} level={level} count={lit.size} />
+                <Threads
+                  threads={data.threads}
+                  active={thread?.id ?? null}
+                  onToggle={toggleThread}
+                  level={level}
+                  count={lit.size}
+                />
               ) : (
-                <p className="ex-note">Tap a thread to light it up on the map.</p>
+                <p className="ex-note">
+                  Tap a thread to light it up on the map.
+                </p>
               )}
             </div>
           </div>
           {data && (
             <p className="ex-progress">
               <span>
-                <strong>{visitedFinished}</strong> of {finishedCount} finished stops visited on this device
+                <strong>{visitedFinished}</strong> of {finishedCount} finished
+                stops visited on this device
               </span>
               <span>
-                <strong>{progress.done.length}</strong> {progress.done.length === 1 ? "activity" : "activities"} done
+                <strong>{progress.done.length}</strong>{" "}
+                {progress.done.length === 1 ? "activity" : "activities"} done
               </span>
             </p>
           )}
@@ -155,11 +202,23 @@ export default function ExplorerMap() {
           <h2 className="ex-h2" id="ex-map-title">
             The map
           </h2>
-          <p className="ex-lede">Thirteen stops, from the first page to the last. The ones with a link are ready to open; the rest are being drawn.</p>
+          <p className="ex-lede">
+            Thirteen stops, from the first page to the last. The ones with a
+            link are ready to open; the rest are being drawn.
+          </p>
           {data === null ? (
-            <LoadFailed what="The map" onRetry={retry} backHref="/study" backLabel="Back to Study the Bible" />
+            <LoadFailed
+              what="The map"
+              onRetry={retry}
+              backHref="/study"
+              backLabel="Back to Study the Bible"
+            />
           ) : data === undefined ? (
-            <ol className="ex-map ex-map--wait" data-lw-loading aria-busy="true" />
+            <ol
+              className="ex-map ex-map--wait"
+              data-lw-loading
+              aria-busy="true"
+            />
           ) : (
             <ol className={`ex-map${thread ? " ex-map--lit" : ""}`}>
               {data.stops.map((s, i) => (
@@ -171,7 +230,11 @@ export default function ExplorerMap() {
                   level={level}
                   lit={lit.get(s.slug)}
                   litPrev={i > 0 ? lit.has(data.stops[i - 1].slug) : false}
-                  litNext={i < data.stops.length - 1 ? lit.has(data.stops[i + 1].slug) : false}
+                  litNext={
+                    i < data.stops.length - 1
+                      ? lit.has(data.stops[i + 1].slug)
+                      : false
+                  }
                   threadName={thread?.name}
                   visited={progress.visited.includes(s.slug)}
                   done={progress.done.includes(s.slug)}
@@ -185,16 +248,34 @@ export default function ExplorerMap() {
 
       {data && <Believe cards={data.cards} stops={data.stops} level={level} />}
 
-      <section className="ex-sec ex-sec--warm" aria-labelledby="ex-parents-title">
+      <section
+        className="ex-sec ex-sec--warm"
+        aria-labelledby="ex-parents-title"
+      >
         <div className="ex-wrap">
           <h2 className="ex-h2" id="ex-parents-title">
             For parents and leaders
           </h2>
           <p className="ex-lede">
-            Every stop is written twice: short and concrete for ages 7 to 11, with the why and the hard questions for ages 12 to 16. Read a stop together, do its activity, and talk about the question at the end. Nothing here needs an account, and progress stays on this device.
+            Every stop is written twice: short and concrete for ages 7 to 11,
+            with the why and the hard questions for ages 12 to 16. Read a stop
+            together, do its activity, and talk about the question at the end.
+            Nothing here needs an account, and progress stays on this device.
           </p>
           <p className="ex-lede" style={{ marginBottom: 0 }}>
-            Next, try <Link href="/family/catechism" className="ex-link">the family catechism</Link>, <Link href="/family/tonight" className="ex-link">tonight's devotion</Link>, or, for adults, <Link href="/study/bible/story" className="ex-link">the Bible's story in eleven parts</Link>.
+            Next, try{" "}
+            <Link href="/family/catechism" className="ex-link">
+              the family catechism
+            </Link>
+            ,{" "}
+            <Link href="/family/tonight" className="ex-link">
+              tonight's devotion
+            </Link>
+            , or, for adults,{" "}
+            <Link href="/study/bible/story" className="ex-link">
+              the Bible's story in eleven parts
+            </Link>
+            .
           </p>
         </div>
       </section>
@@ -202,27 +283,52 @@ export default function ExplorerMap() {
   );
 }
 
-function Threads({ threads, active, onToggle, level, count }: { threads: Thread[]; active: string | null; onToggle: (id: string) => void; level: Level; count: number }) {
-  const on = threads.find((t) => t.id === active);
+function Threads({
+  threads,
+  active,
+  onToggle,
+  level,
+  count,
+}: {
+  threads: Thread[];
+  active: string | null;
+  onToggle: (id: string) => void;
+  level: Level;
+  count: number;
+}) {
+  const on = threads.find(t => t.id === active);
   return (
     <>
       <ul className="ex-threads">
-        {threads.map((t) =>
-          t.status === "finished" ? (
+        {threads
+          .filter(t => t.status === "finished")
+          .map(t => (
             <li key={t.id}>
-              <button type="button" className="ex-thread-btn" aria-pressed={active === t.id} onClick={() => onToggle(t.id)}>
+              <button
+                type="button"
+                className="ex-thread-btn"
+                aria-pressed={active === t.id}
+                onClick={() => onToggle(t.id)}
+              >
                 <Tent size={18} strokeWidth={1.75} aria-hidden="true" />
                 {t.name}
               </button>
             </li>
-          ) : (
-            <li key={t.id} className="ex-thread-soon">
-              <Hourglass size={14} strokeWidth={1.75} aria-hidden="true" />
-              {t.name}, coming
-            </li>
-          ),
-        )}
+          ))}
       </ul>
+      {threads.some(t => t.status !== "finished") && (
+        <p className="ex-thread-soon">
+          <Hourglass size={14} strokeWidth={1.75} aria-hidden="true" />
+          <span>
+            Coming next:{" "}
+            {threads
+              .filter(t => t.status !== "finished")
+              .map(t => t.name)
+              .join(", ")}
+            .
+          </span>
+        </p>
+      )}
       <div aria-live="polite">
         {on ? (
           <>
@@ -242,7 +348,10 @@ function Threads({ threads, active, onToggle, level, count }: { threads: Thread[
             </p>
           </>
         ) : (
-          <p className="ex-note">Tap a thread to light it up on the map, with a line at each stop saying how it shows there.</p>
+          <p className="ex-note">
+            Tap a thread to light it up on the map, with a line at each stop
+            saying how it shows there.
+          </p>
         )}
       </div>
     </>
@@ -251,8 +360,17 @@ function Threads({ threads, active, onToggle, level, count }: { threads: Thread[
 
 function KeyLine({ apart }: { apart?: boolean }) {
   return (
-    <svg width="40" height="10" viewBox="0 0 40 10" aria-hidden="true" focusable="false">
-      <path className={`ex-road__lit${apart ? " ex-road__lit--apart" : ""}`} d="M4,5H36" />
+    <svg
+      width="40"
+      height="10"
+      viewBox="0 0 40 10"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        className={`ex-road__lit${apart ? " ex-road__lit--apart" : ""}`}
+        d="M4,5H36"
+      />
     </svg>
   );
 }
@@ -286,23 +404,45 @@ function StopRow({
   const road = roadPath(x, i === 0, i === count - 1);
   const finished = stop.status === "finished";
   const side = i % 2 === 0 ? "left" : "right";
-  const litClass = lit ? `ex-road__lit${lit.state === "apart" ? " ex-road__lit--apart" : ""}` : "";
+  const litClass = lit
+    ? `ex-road__lit${lit.state === "apart" ? " ex-road__lit--apart" : ""}`
+    : "";
   const pinClass = `ex-pin${finished ? "" : " ex-pin--drawing"}${lit ? " is-lit" : ""}${here ? " is-here" : ""}`;
   const pinStyle = { left: `${x}%` };
   const titleId = `ex-stop-${stop.slug}`;
 
   return (
-    <li className={`ex-stop ex-stop--${side}`} id={`stop-${stop.slug}`} aria-labelledby={titleId} data-lit={lit ? lit.state : undefined}>
+    <li
+      className={`ex-stop ex-stop--${side}`}
+      id={`stop-${stop.slug}`}
+      aria-labelledby={titleId}
+      data-lit={lit ? lit.state : undefined}
+    >
       <div className="ex-road" aria-hidden="true">
-        <svg className="ex-road__svg" viewBox="0 0 100 100" preserveAspectRatio="none" focusable="false">
+        <svg
+          className="ex-road__svg"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          focusable="false"
+        >
           <path className="ex-road__edge" d={road.whole} />
           <path className="ex-road__bed" d={road.whole} />
           <path className="ex-road__mid" d={road.whole} />
-          {lit && road.top && litPrev && <path className={litClass} d={road.top} />}
-          {lit && road.bottom && litNext && <path className={litClass} d={road.bottom} />}
+          {lit && road.top && litPrev && (
+            <path className={litClass} d={road.top} />
+          )}
+          {lit && road.bottom && litNext && (
+            <path className={litClass} d={road.bottom} />
+          )}
         </svg>
         {finished ? (
-          <Link href={stopHref(stop.slug)} className={pinClass} style={pinStyle} tabIndex={-1} aria-hidden="true">
+          <Link
+            href={stopHref(stop.slug)}
+            className={pinClass}
+            style={pinStyle}
+            tabIndex={-1}
+            aria-hidden="true"
+          >
             <Roundel slug={stop.slug} />
             {visited && (
               <span className="ex-pin__seen">
@@ -319,7 +459,8 @@ function StopRow({
       <div className="ex-stop__text">
         {here && (
           <p className="ex-here">
-            <MapPin size={16} strokeWidth={1.75} aria-hidden="true" /> {visited ? "You are here" : "Start here"}
+            <MapPin size={16} strokeWidth={1.75} aria-hidden="true" />{" "}
+            {visited ? "You are here" : "Start here"}
           </p>
         )}
         <p className="eyebrow ex-stop__act">
@@ -327,7 +468,11 @@ function StopRow({
           <span className="sr-only">: {stop.actTitle}</span>
         </p>
         <h3 className="ex-stop__title" id={titleId}>
-          {finished ? <Link href={stopHref(stop.slug)}>{stop.title}</Link> : stop.title}
+          {finished ? (
+            <Link href={stopHref(stop.slug)}>{stop.title}</Link>
+          ) : (
+            stop.title
+          )}
         </h3>
         <p className="ex-stop__sum">{stop.summary[level]}</p>
         {finished ? (
@@ -338,7 +483,8 @@ function StopRow({
           </p>
         ) : (
           <p className="ex-stop__drawing">
-            <Hourglass size={14} strokeWidth={1.75} aria-hidden="true" /> {stop.range}. This stop is being drawn.
+            <Hourglass size={14} strokeWidth={1.75} aria-hidden="true" />{" "}
+            {stop.range}. This stop is being drawn.
           </p>
         )}
         {lit && (
@@ -355,22 +501,45 @@ function StopRow({
   );
 }
 
-function Believe({ cards, stops, level }: { cards: Card[]; stops: StopSummary[]; level: Level }) {
-  const ready = cards.filter((c) => c.status === "finished");
-  const soon = cards.filter((c) => c.status !== "finished");
-  const stopOf = (slug: string) => stops.find((s) => s.slug === slug);
+function Believe({
+  cards,
+  stops,
+  level,
+}: {
+  cards: Card[];
+  stops: StopSummary[];
+  level: Level;
+}) {
+  const ready = cards.filter(c => c.status === "finished");
+  const soon = cards.filter(c => c.status !== "finished");
+  const stopOf = (slug: string) => stops.find(s => s.slug === slug);
   return (
     <section className="ex-sec" aria-labelledby="ex-believe-title">
       <div className="ex-wrap">
         <h2 className="ex-h2" id="ex-believe-title">
           Why we believe
         </h2>
-        <p className="ex-lede">What Christians everywhere confess, one card at a time: what it says, where the Bible says it, and the question people ask.</p>
+        <p className="ex-lede">
+          What Christians everywhere confess, one card at a time: what it says,
+          where the Bible says it, and the question people ask.
+        </p>
         <div className="ex-cards">
-          {ready.map((c) => (
-            <article key={c.id} className="ex-card" id={`believe-${c.id}`} aria-labelledby={`ex-card-${c.id}`}>
+          {ready.map(c => (
+            <div
+              key={c.id}
+              role="group"
+              className="ex-card"
+              id={`believe-${c.id}`}
+              aria-labelledby={`ex-card-${c.id}`}
+            >
               <div className="ex-card__art">
-                <PlateFrame ratio={null}>{c.picture === "manger" ? <MangerArt label={c.pictureLabel} /> : <Plate name="book" />}</PlateFrame>
+                <PlateFrame ratio={null}>
+                  {c.picture === "manger" ? (
+                    <MangerArt label={c.pictureLabel} />
+                  ) : (
+                    <Plate name="book" />
+                  )}
+                </PlateFrame>
               </div>
               <div className="ex-card__body">
                 <h3 className="ex-card__title" id={`ex-card-${c.id}`}>
@@ -380,14 +549,14 @@ function Believe({ cards, stops, level }: { cards: Card[]; stops: StopSummary[];
                 {c.quote && (
                   <blockquote className="ex-quote">
                     <p>{c.quote.text}</p>
-                    <footer>
+                    <p className="ex-quote__ref">
                       <VerseRef reference={c.quote.ref} />
-                    </footer>
+                    </p>
                   </blockquote>
                 )}
                 <h4>The Bible passages it rests on</h4>
                 <ul>
-                  {c.rests?.map((r) => (
+                  {c.rests?.map(r => (
                     <li key={r}>
                       <VerseRef reference={r} />
                     </li>
@@ -401,7 +570,7 @@ function Believe({ cards, stops, level }: { cards: Card[]; stops: StopSummary[];
                 )}
                 <h4>Where the map shows it</h4>
                 <ul>
-                  {c.stops?.map((slug) => {
+                  {c.stops?.map(slug => {
                     const s = stopOf(slug);
                     if (!s) return null;
                     return (
@@ -419,11 +588,23 @@ function Believe({ cards, stops, level }: { cards: Card[]; stops: StopSummary[];
                 </ul>
                 {c.deeper && c.deeper.length > 0 && (
                   <>
-                    <h4>{level === "older" ? "Go deeper" : "Read more with a parent or leader"}</h4>
+                    <h4>
+                      {level === "older"
+                        ? "Go deeper"
+                        : "Read more with a parent or leader"}
+                    </h4>
                     <ul style={{ display: "grid", gap: 2 }}>
-                      {c.deeper.map((d) => (
+                      {c.deeper.map(d => (
                         <li key={d.href}>
-                          <Link href={d.href} className="ex-link" style={{ display: "inline-flex", minHeight: 44, alignItems: "center" }}>
+                          <Link
+                            href={d.href}
+                            className="ex-link"
+                            style={{
+                              display: "inline-flex",
+                              minHeight: 44,
+                              alignItems: "center",
+                            }}
+                          >
                             {d.label}
                           </Link>
                         </li>
@@ -432,17 +613,22 @@ function Believe({ cards, stops, level }: { cards: Card[]; stops: StopSummary[];
                   </>
                 )}
               </div>
-            </article>
+            </div>
           ))}
         </div>
         {soon.length > 0 && (
           <>
             <h3 className="ex-panel__title" style={{ marginTop: "var(--s-4)" }}>
-              <PenLine size={16} strokeWidth={1.75} aria-hidden="true" style={{ verticalAlign: "-3px", marginRight: 6 }} />
+              <PenLine
+                size={16}
+                strokeWidth={1.75}
+                aria-hidden="true"
+                style={{ verticalAlign: "-3px", marginRight: 6 }}
+              />
               Cards being written
             </h3>
             <ul className="ex-soon">
-              {soon.map((c) => (
+              {soon.map(c => (
                 <li key={c.id}>{c.title}</li>
               ))}
             </ul>
