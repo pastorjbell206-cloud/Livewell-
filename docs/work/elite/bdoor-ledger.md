@@ -6122,3 +6122,46 @@ No web search.
 
 Hard: "joy comes in the morning" not a promise that grief is short; points
 to Psalm 6.
+
+## The plain notes on Psalm 31 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Luke 23:46 from Psalm 31:5; Jesus adds "Father" | BSB; book page ("How the New Testament uses the Psalms") | BSB text |
+| "Terror on every side" also in Jeremiah 20:10 | BSB | BSB text |
+| Acts 7:59; 1 Peter 4:19 | BSB | BSB text |
+
+Narrowed: "Many Christians say it before sleep" (not checked) became an
+invitation; "a broken pot was not mended" cut. Verse 10 (iniquity and
+strength) points to Psalms 32 and 38.
+
+## The plain notes on Psalm 32 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Maskil uncertain; first at Psalm 32 (also 42, 44, 45, 52-55, 74, 78, 88, 89, 142) | 1-5 | BSB headings by script | Script |
+| Three words for wrong (rebellion, missing the mark, crookedness); forgiven, covered, not counted | 1-5 | Standard lexicons; repository word notes | Site's own teaching |
+| "Covered" (32:1) and "hide" (32:5) both H3680 kasah; "forgiven" and "forgave" both H5375 nasa | 1-5 | Repository Strong's data for 32:1, 5 | Script |
+| One of the seven penitential psalms | 1-5 | Psalm 6 ledger row | Earlier ledger |
+| Romans 4:6-7; Proverbs 28:13; 1 John 1:9; James 5:16; John 9:2-3 | 1-5 | BSB | BSB text |
+| Isaiah 55:6; Luke 15:21; 2 Corinthians 7:10 | 6-11 | BSB | BSB text |
+
+Illness not presented as punishment for hidden sin ("It does not say that
+every illness has a sin behind it"); a guilt-laden heart pointed to Psalm 51
+and James 5:16. An earlier draft said "hide" (3-4) and "hiding place" (7)
+were one word; the script showed they are not, and the sentence was changed.
+
+## The plain notes on Psalm 33 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| No heading (with 1, 2, 10 in Psalms 1 to 41) | Psalm 9 ledger row | Script (earlier) |
+| 22 verses, not an alphabet poem | First Hebrew letters of 33 in the repository | Script |
+| Ruach breath, wind, Spirit | Standard | Site's own teaching |
+| Genesis 1:3; John 1:3; Hebrews 11:3; Revelation 5:9 | BSB | BSB text |
