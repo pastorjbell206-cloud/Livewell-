@@ -859,3 +859,151 @@ dates; m. Avot 3:17. Care: "judge not" is not a ban on telling right from
 wrong nor a license to look down; no prosperity reading of 7:7; the narrow
 gate is an invitation, not a scare; the afraid reader of 7:21-23 is met with
 11:28.
+
+## The plain notes on Matthew 8 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/8.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 1, 4 and 5).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Biblical "leprosy" not only Hansen's disease; mould on cloth and walls; live outside the camp; torn clothes and "Unclean"; touch made unclean; the priest examines and declares clean | 1-4 | Leviticus 13:45-46; 13:47-59; 14:2-4; 5:3 | Earlier ledger (Mark 1); BSB text |
+| Curing leprosy God's work (Naaman's king); Miriam "like a stillborn infant"; "the lepers are cleansed" | 1-4 | 2 Kings 5:7; Numbers 12:12; Matthew 11:5 | BSB text |
+| Unhealed believers not blamed: Paul's thorn, Trophimus, Timothy's ailments; Luke "the beloved physician" | 1-4 | 2 Corinthians 12:7-9; 2 Timothy 4:20; 1 Timothy 5:23; Colossians 4:14 | BSB text. Care line: sickness is not from too little faith (CLAUDE.md, care for the reader) |
+| The centurion most likely an officer in Herod Antipas's forces, organized on Roman lines; a Gentile | 5-13 | Bible Odyssey, "Roman Centurion"; Carr (Cambridge Bible) as summarised; heurist.huma-num.fr (Judaism and Rome) | Search: bibleodyssey.org; heurist.huma-num.fr; en.wikipedia.org Matthew 8:5. Stated as "many scholars think ... most likely". The "no Roman troops in Galilee until AD 44" date conflicts across sources and is not used |
+| Luke's elders: "he loves our nation and has built our synagogue"; Luke's Greek doulos (7:2) | 5-13 | Luke 7:2-5 | BSB text and Greek text in the repository |
+| A Jew did not normally visit a Gentile's house | 5-13 | Acts 10:28 | BSB text. The Mishnah (Oholot 18:7) in the deep note not used |
+| Since 2011 English-speaking Catholics say "Lord, I am not worthy that you should enter under my roof, but only say the word and my soul shall be healed" (the 1973 text had "to receive you") | 5-13 | Roman Missal, third edition, English translation (2011) | Search: USCCB (Moroney, Catechetical Sunday 2011); diolc.org bulletin insert; catholicnewsagency.com "Under my roof". Given in single quotes as a liturgical text |
+| Pais child or servant | 5-13 | Standard lexicons | Earlier ledger (Mark 9). The Jennings and Liew debate (deep note) not used |
+| Banquet for all peoples; gathered from east and west; Israel's scattered gathered; all nations | 5-13 | Isaiah 25:6, 8; Psalm 107:3; Isaiah 43:5; Matthew 28:19 | BSB text. "Some readers think" for the diaspora reading (Allison not named; not checked) |
+| Not a rejection of the Jewish people; John's warning; "weeping and gnashing of teeth" six times in Matthew | 5-13 | Matthew 3:9; script over the BSB (8:12; 13:42, 50; 22:13; 24:51; 25:30) | BSB text; script. The history of misuse is stated generally, with no writer named |
+| Peter married ("a believing wife") | 14-17 | 1 Corinthians 9:5 | BSB text |
+| House honoured as Peter's under a church of the 400s; Egeria shown it in the late 300s; cannot be proved | 14-17 | Earlier ledger (Mark 1) | Earlier ledger. Corbo and Loffreda's graffiti (deep note) not used |
+| Sabbath ended at sunset; carrying forbidden; Mark's "evening" | 14-17 | Mark 1:21, 32; Jeremiah 17:21-22 | Earlier ledger (Mark 1) |
+| The Greek Old Testament of Isaiah 53:4 speaks of sins; Matthew's wording follows the Hebrew sense of sicknesses | 14-17 | Isaiah 53:4 (Hebrew and Septuagint) | Search: intertextual.bible "Isaiah 53:4 / LXX Isaiah 53:4"; tips.translation.bible (UBS handbook on Matthew 8:17: the Septuagint "spiritualized" the passage) |
+| Isaiah 53:5; Revelation 21:4; Romans 8:23 | 14-17 | BSB | BSB text |
+| Healing in the atonement rests chiefly on Isaiah 53:4-5 and Matthew 8:17; F. F. Bosworth, Christ the Healer (1924) | 14-17 | Bosworth (1877-1958); Keith Bailey as quoted by the Christian and Missionary Alliance | Search: bakerpublishinggroup.com (Christ the Healer); tonycooke.org "The Life of Fred Francis Bosworth"; ecommunity.cmalliance.org. A. B. Simpson (deep note) could not be confirmed by the search and is not named; Warfield not named |
+| "Son of Man" first in Matthew at 8:20 (28 times in the BSB of Matthew) | 18-22 | Script over the BSB | Repository |
+| Daniel 7:13-14; Exodus 20:12; 1 Kings 19:20; 15:4-6; John 19:26-27; John 11:35 | 18-22 | BSB | BSB text |
+| Secondary burial: bones later gathered into an ossuary; McCane, "'Let the Dead Bury Their Own Dead': Secondary Burial and Matt 8:21-22", Harvard Theological Review 83 (1990) 31-43 | 18-22 | McCane | Search: resolve.cambridge.org (HTR abstract); zenon.dainst.org record; lifeandland.org (Franz). "About a year later" (deep note) not confirmed and not used. Bailey's "father still alive" given as a reading, unnamed |
+| Lake about 700 feet below sea level among hills; sudden storms | 23-27 | Earlier ledger (Mark 4) | Earlier ledger |
+| Seismos at 8:24, 24:7, 27:54, 28:2; oligopistos at 6:30, 8:26, 14:31, 16:8 | 23-27 | Greek text in the repository (G4578, G3640) | Script |
+| Mark's order (calm, then "Do you still have no faith?"); Jonah 1:5-6; 12:41; Psalm 107:29 | 23-27 | Mark 4:39-40; BSB | BSB text |
+| Matthew 8:28: Vaticanus and a few early witnesses "Gadarenes"; many later "Gergesenes" (Byzantine text, Textus Receptus, so the King James Version); others "Gerasenes" | 28-34 | NET Bible note on Matthew 8:28; Metzger's Textual Commentary as summarised | Search: biblia.com NET note; kmooreperspective.blogspot.com (Metzger summary); wartburgproject.org |
+| Gadara at Umm Qais, about six miles southeast of the lake, a Decapolis city; territory probably reaching the shore | 28-34 | Bible dictionaries and atlases | Search: biblicaltraining.org "Gadara"; bibliaparalela.com atlas; biblegateway.com Encyclopedia of the Bible. "Many think" for the territory |
+| Gerasa about thirty miles away; Origen's Gergesa | 28-34 | Earlier ledger (Mark 5) | Earlier ledger |
+| Pigs unclean; graves unclean | 28-34 | Leviticus 11:7; Numbers 19:16 | Earlier ledger |
+| Two men against one: the old harmonizing answer; Matthew's pairs (9:27; 20:30; Mark 10:46); two witnesses (Deuteronomy 19:15); ancient biography; skeptics | 28-34 | BSB; standard positions | Stated as views. Augustine (Harmony of the Gospels 2.24) could not be confirmed by the search, so the answer is called "an old explanation" with no name |
+| Matthew lists the demon-possessed and those with seizures separately | 28-34 | Matthew 4:24 | BSB text (not quoted at length, since the verse holds an em-dash) |
+| Care: mental illness is illness; path to help; the Mark 5 wording | 28-34 | Mark 5 plain note | Repository |
+
+Left out: the Akeldama leprosy DNA find; the Temple Scroll, the Mishnah and
+Josephus on lepers; Corbo and Loffreda; Josephus on Antipas's army; the "AD 44"
+date; Augustine and Tertullian by name; Hengel, Bornkamm, Held, Allison,
+Simpson, Warfield, Levine, Strauss; Tobit 4:3 and the Mishnah on the Shema;
+the Kursi details beyond the Mark 5 note; Menippus, Philodemus and Meleager;
+the Roman Missal's 1973 wording is in this ledger only.
+
+## The plain notes on Matthew 9 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/9.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 2 and 5; Matthew's book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Blasphemy a grave crime; the trial charge | 1-8 | Leviticus 24:16; Matthew 26:65 | BSB text |
+| Sickness assumed to come from sin; John 9:2-3 | 1-8 | Earlier ledger (Mark 2); BSB | BSB text. The Talmud (Shabbat 55a) in the deep note not used |
+| Binding and loosing | 1-8 | Matthew 16:19; 18:18 | BSB text. Given as "some readers think" |
+| Capernaum near the border of Antipas and Philip; most likely a toll collector for Antipas; collectors' bad name | 9-13 | Earlier ledger (Mark 2) | Earlier ledger |
+| "Collect no more than you are authorized" | 9-13 | Luke 3:13 | BSB text |
+| Mishnah Nedarim 3:4 (written down around 200): a vow may be made to murderers, robbers and tax collectors to protect one's goods | 9-13 | Mishnah | Search: mishnah.org Nedarim 3:4; heurist.huma-num.fr (Judaism and Rome) record 1318. Paraphrased, marked as later. Tohorot 7:6 (deep note) could not be found and is not used |
+| Levi in Mark 2:14 and Luke 5:27; "Matthew the tax collector" (10:3); the church linked the Gospel to him from early in the second century | 9-13 | BSB; Papias via Eusebius 3.39.16 | Earlier ledger (Matthew's book page) |
+| Pharisees devoted to the Law in daily life and popular | 9-13 | Josephus, Antiquities 18.15-17 | Earlier ledger (Mark 12) |
+| Antisthenes, blamed for bad company, said physicians attend the sick without catching the fever | 9-13 | Diogenes Laertius, Lives of the Eminent Philosophers, book 6 (Life of Antisthenes) | Search: penelope.uchicago.edu (Hicks, Loeb); fordham.edu (Yonge). Paraphrased; no section number or date given on the site |
+| Hosea 6:4, 6:6; 1 Samuel 15:22; Micah 6:8; Matthew 12:7; only Matthew quotes Hosea 6:6 | 9-13 | BSB | BSB text; Mark, Luke and John checked by script for the words "mercy, not sacrifice" (none) |
+| Hesed: loyal love, kindness | 9-13 | Standard lexicons | Search (with the next entry): sichaconversation.org "I desire hesed" |
+| Avot de-Rabbi Natan 4: Yohanan ben Zakkai, seeing the ruined temple with Rabbi Joshua, cites Hosea 6:6: deeds of loving-kindness atone as the sacrifices did | 9-13 | Avot de-Rabbi Natan (later than the Gospels) | Search: sefaria.org sheets; newworldencyclopedia.org "Yochanan ben Zakai"; jewishideas.org. Paraphrased and marked as written down long after |
+| Ezekiel 18:23 | 9-13 | BSB | BSB text. Sanders, Neusner, Dunn and Levine (deep note) not named |
+| One commanded fast; Zechariah's four fasts; "I fast twice a week"; John in prison | 14-17 | Leviticus 16:29; Zechariah 8:19; Luke 18:12; Matthew 4:12 | BSB text; earlier ledger (Mark 2) |
+| Samson's feast seven days | 14-17 | Judges 14:12 | BSB text |
+| Patches and wineskins | 14-17 | Earlier ledger (Mark 2 note) | Common knowledge, kept general |
+| Didache 8.1 (around AD 100): fast on Wednesday and Friday | 14-17 | Didache | Search: cts.perseids.org Didache 8.1; bc.edu Didache 8-10; posenlibrary.com. Its "hypocrites" and their days not mentioned |
+| "Both are preserved" only in Matthew in modern Bibles | 14-17 | Matthew 9:17; Mark 2:22; Luke 5:38 | BSB text (later copies of Luke 5:38 add it, so the site says "in modern Bibles") |
+| Leviticus 15:25-27; uncleanness not sin; scholars debate how far it cut her off; Matthew silent on impurity | 18-26 | Earlier ledger (Mark 5) | Earlier ledger; BSB |
+| Tassels: Numbers 15:38-39; 14:36 | 18-26 | BSB; kraspedon (earlier ledger, Mark 6) | BSB text |
+| Mishnah Ketubot 4:4: two flutes and one wailing woman | 18-26 | Earlier ledger (Mark 5) | Earlier ledger |
+| Josephus: at the false report of his death (Jewish War 3.437), many in Jerusalem hired pipers to lead their laments | 18-26 | Josephus, Jewish War 3.432-437 | Search: lexundria.com j_bj 3.437 (Whiston); gutenberg.org Wars of the Jews. Paraphrased; no year given on the site |
+| Daniel 12:2; 1 Kings 17:21-22; 2 Kings 4:32-37 | 18-26 | BSB | BSB text |
+| Mark 5:23, 35: "near death", then messengers | 18-26 | BSB | BSB text |
+| Augustine, Harmony of the Gospels 2.28: Matthew, by brevity, gives the father's mind and purpose; the substance the same | 18-26 | Augustine | Search: ccel.org NPNF vol. 6, book 2 ch. 28; lectionarycentral.com; bkv.unifr.ch. Paraphrased; no date given. Licona and Held (deep note) not named |
+| 2 Samuel 7:13; "the son of David" 1:1; Son of David most in Matthew | 27-31 | BSB; earlier ledger (Matthew's book page) | BSB text; script |
+| Two blind men at Jericho against Bartimaeus | 27-31 | Matthew 20:30; Mark 10:46 | BSB text |
+| Isaiah 35:5-6; Matthew 11:4-5 | 27-31 | BSB | BSB text |
+| Kōphos "blunted", deaf or mute or both | 32-34 | Strong's and Thayer's (G2974) | Search: biblehub.com 2974; blueletterbible.org G2974 |
+| Justin Martyr, Dialogue with Trypho 69: Jesus called a magician and a deceiver of the people | 32-34 | Justin | Search: logoslibrary.org trypho/069; newadvent.org; bkv.unifr.ch. Paraphrased. The Talmud (Sanhedrin 43a) not used |
+| Mute healed with no demon named; the demon-possessed listed apart; 12:24-32 | 32-34 | Matthew 15:30-31; 4:24; 12:24 | BSB text |
+| 4:23 and 9:35 nearly identical; ten miracles in chapters 8 and 9 | 35-38 | BSB; count of the stories | BSB text |
+| Splanchnizomai from splanchna, the inward parts | 35-38 | Standard lexicons (G4697) | Lexicon fact; Greek text in the repository |
+| Numbers 27:17; Ezekiel 34:5, 15, 23 | 35-38 | BSB | BSB text |
+
+Left out: the Mishnah on toll collectors' houses (Tohorot 7:6, not found);
+the Talmud on sickness and sin, and Sanhedrin 43a; the Theodotus inscription;
+Neusner, Sanders, Dunn, Levine, Haber, Licona, Held, Strauss by name; the
+Didache's "hypocrites"; the textual notes on 9:14 and 9:34 (all in the deep
+note, not needed); John 4:35.
+
+## The plain notes on Matthew 10 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/10.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 3, 6, 9, 13 and 15).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Twelve tribes | 1-4 | Earlier ledger (Mark 3) | Earlier ledger |
+| Apostolos only at 10:2 in Matthew | 1-4 | Greek text in the repository (G652) | Script |
+| The four lists; Peter first, Judas last; Thaddaeus and "Judas son of James" | 1-4 | Matthew 10:2-4; Mark 3:16-19; Luke 6:14-16; Acts 1:13 | BSB text. "Most think" one man |
+| Kananaios from the Aramaic for zealous; meaning (zeal for the Law or resistance to Rome) left open | 1-4 | Earlier ledger (Mark 3) | Earlier ledger. The claim that the Zealot party is attested only from AD 66 (deep note) was not confirmed and is not used |
+| Iscariot: "man of Kerioth" most common; the sicarius theory; John 6:71 "son of Simon Iscariot" | 1-4 | Joshua 15:25; John 6:71; Bible dictionaries; Joan Taylor (sicarius) as reported | Search: ehrmanblog.org "The Name Judas Iscariot"; abarim-publications.com; biblestudytools.com dictionary |
+| Samaritans worshipped on Gerizim; their temple destroyed by John Hyrcanus, most likely around 110 BC | 5-15 | Bourgel, JBL 2016 (about 112/111 BC); archaeology of Shechem (111-110 BC); Jewish Encyclopedia | Search: wikipedia.com Hyrcanus I; jewishencyclopedia.com "Hyrcanus, John". "Most likely around" kept, since sources range from about 120 to 109 BC; no Josephus section given |
+| Samaritans kept the books of Moses | 5-15 | Standard | Common reference fact, stated plainly |
+| "Jews do not associate with Samaritans" | 5-15 | John 4:9 | BSB text |
+| Ktaomai "acquire" in 10:9 | 5-15 | Greek text (ktēsēsthe) | Repository Greek text |
+| Mark allows a staff and sandals; Luke forbids the staff; two explanations | 5-15 | Mark 6:8-9; Luke 9:3 | BSB text. Stated as views |
+| 1 Corinthians 9:14; 1 Timothy 5:18 | 5-15 | BSB | BSB text |
+| Didache 11: a travelling apostle who stays three days or asks for money is false | 5-15 | Didache 11 | Earlier ledger (Matthew 7) |
+| Shalom greeting; shaking off dust (Acts 13:51) | 5-15 | Earlier ledger (Mark 6) | Earlier ledger |
+| Sodom and Gomorrah; Ezekiel 34:5; 9:36 | 5-15 | Genesis 19; BSB | BSB text |
+| Gentile mission: critical view; sequence; 15:24; Romans 1:16; 10:18; 28:19 | 5-15 | BSB; deep note `hard` | Stated as views. Sim, Jeremias and Levine (deep note) not named |
+| Forty lashes limit; the Mishnah's forty less one (Makkot 3:10, later); Paul's five floggings | 16-25 | Deuteronomy 25:3; Mishnah Makkot 3:10; 2 Corinthians 11:24 | BSB text; search: en.wikipedia.org "Malkot (Judaism)"; myjewishlearning.com Makkot 22; sefaria.org Jerusalem Talmud Makkot 3.9. The synagogue attendant (deep note) not confirmed and not used |
+| James killed by "King Herod" | 16-25 | Acts 12:1-2 | BSB text. No year given |
+| Felix, Festus, King Agrippa | 16-25 | Acts 24 to 26 | Earlier ledger (Mark 13) |
+| Tacitus: Nero blamed Christians for the fire of 64; many killed | 16-25 | Tacitus, Annals 15.44 | Earlier ledger |
+| Pliny, Letters 10.96 (around 111 or 112): asks Trajan whether the name itself should be punished | 16-25 | Pliny | Search: yorku.ca Pliny 10.96-97; fordham.edu sourcebook; bartehrman.com. Paraphrased; "around 111 or 112" since sources say late 111 or 112 |
+| Genesis 3:1 "crafty"; Hosea 7:11 "a silly, senseless dove" | 16-25 | BSB | BSB text. The Septuagint's phronimos and the midrash (deep note) not used |
+| Beelzebul possibly "lord of the house" | 16-25 | Earlier ledger (Mark 3: "lord of the exalted house") | Earlier ledger; "may mean" |
+| Micah 7:6; Exodus 4:10, 12 | 16-25 | BSB | BSB text |
+| Schweitzer: Jesus expected the Son of Man before the twelve returned; proved wrong; German 1906, English The Quest of the Historical Jesus (1910) | 16-25 | Schweitzer | Search: religion-online.org; Churchman 125/4 (gospelstudies.org.uk); people.bu.edu (Boston Collaborative Encyclopedia); gutenberg.org. Paraphrased |
+| Chrysostom, Homily 34 on Matthew: Jesus would come to them before they had gone round the towns, a comfort for the persecuted | 16-25 | Chrysostom | Search: newadvent.org/fathers/200134.htm; ccel.org NPNF vol. 10. Paraphrased; "a preacher of the late 300s" (his Matthew homilies are usually dated about 390; given only as "late 300s") |
+| Readings of 10:23: resurrection (28:18), AD 70, final coming with an unfinished mission | 16-25 | Deep note; standard positions | Stated as views, no names (France, Davies and Allison, Luz not named) |
+| 16:28; 24:34; 28:18; Daniel 7 | 16-25 | BSB | BSB text; the closing line matches the Mark 13 note |
+| Flat roofs for announcements | 26-33 | Earlier ledger (Mark 2; Mark 13) | Earlier ledger |
+| Assarion a small copper coin; Luke 12:6 five for two | 26-33 | Bible dictionaries; BSB | Search: biblia.com NET note on 10:29; ferrelljenkins.blog. The exact fraction (sixteenth or tenth of a denarius) conflicts across sources and is not given. Diocletian's price edict and Deissmann not used (not confirmed) |
+| Greek of 10:29 "without your Father" (aneu tou patros); "the will of" supplied | 26-33 | Greek text in the repository | Repository |
+| Gehenna, Hinnom, child sacrifice; the rubbish dump is late and unsupported | 26-33 | Jeremiah 7:31; Bailey (1986) | Earlier ledger (Mark 9) |
+| 1 Samuel 14:45; Proverbs 9:10; 11:28 | 26-33 | BSB | BSB text |
+| Views on hell (endless conscious separation; final destruction; hope of restoration) | 26-33 | Standard positions | Stated as views, no side, matching the Mark 9 note |
+| Peter's denial and restoration | 26-33 | Matthew 26:69-75; John 21:15-19 | BSB text |
+| Family as the unit of life; the cross Rome's death for slaves and rebels | 34-39 | Earlier ledger (Mark 8 and 15) | Earlier ledger |
+| Stauros first in Matthew at 10:38 | 34-39 | Greek text (G4716) | Script |
+| "Hate" as "love less" in comparison; Genesis 29:30-31 (Hebrew "hated", BSB "unloved"); the comparative reading questioned by some | 34-39 | Luke 14:26; Genesis 29:30-31; Adam Clarke; a Cambridge article on the idiom | Search: bibletools.org (Clarke); freebiblecommentary.org "Hate"; cambridge.org core-reader; vridar.org (the dissent) |
+| Isaiah 9:6; 26:52; 5:9; 15:4-6; Romans 12:18; 1 Peter 3:15; Psalm 27:10; Mark 10:29-30 | 34-39 | BSB | BSB text |
+| Care: rejection by family; safety and the police or a crisis line | 34-39 | CLAUDE.md, care for the reader | Pastoral, not a historical claim |
+| A messenger stands for the sender | 40-42 | Standard (deep note) | Kept general |
+| "Little ones" means disciples; 18:6; 25:40 | 40-42 | BSB | BSB text |
+
+Left out: the Mishnah on courts of twenty-three; the synagogue attendant;
+Herod Agrippa I and the year of James's death; the Zealot party's date; the
+Septuagint's phronimos; Song of Songs Rabbah; the assarion's exact value;
+Diocletian's edict and Deissmann; Crossan and the Cynics; the Essenes'
+travel (Josephus); Tertullian on flight; Sim, Jeremias, Levine, France, Davies
+and Allison, Luz by name; the textual notes on 10:3, 10:8 and 10:23.
