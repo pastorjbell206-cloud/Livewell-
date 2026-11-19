@@ -5722,3 +5722,33 @@ Cut: the seasons of the grain and grape harvests (not checked this run);
 the drought reading stated only as what "some readers think".
 Care: anger that frightens anyone at home points to someone trusted and to
 Find Help; long sleeplessness points to a doctor, "not a failure of faith".
+
+## The plain notes on Psalm 5 (2026-11-19)
+
+No web search needed beyond the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Morning and evening lamb (Exodus 29:38-39); "lay my plea" a verb for setting in order (wood on an altar, a case in court); bowing toward the sanctuary (Daniel 6:10) | 1-7 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| David and a temple built after him: two answers (later wording; "house" and "temple" of the earlier sanctuary) | 1-7 | Repository deep note (historical) | Stated as two views. 1 Samuel 1 to 3 not cited by verse |
+| "Hate" as firm rejection; settled opposition and love; the court setting | 1-7 | Repository deep note (hard) | Stated as readings |
+| 1 Kings 8:29-30; Proverbs 6:16-17; Ezekiel 18:23; Romans 5:8; Revelation 21:27; Romans 3:10, 13; James 3:6 | both | BSB | BSB text |
+
+Cut: a guest under a host's protection; the large body shield (neither checked).
+
+## The plain notes on Psalm 6 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Seven penitential psalms 6, 32, 38, 51, 102, 130, 143, grouped by Cassiodorus in the sixth century | 1-5 | encyclopedia.com "Penitential Psalms"; newliturgicalmovement.org (2017, 2020) | Search. "A grouping known from the sixth century"; Cassiodorus not named |
+| Sheminith "eighth", meaning unknown; Psalm 12 and 1 Chronicles 15:21 | 1-5 | Repository deep note; BSB | BSB text |
+| Sickness read as God's anger; Job argues against it; John 9:2-3 | 1-5 | Repository deep note (cultural); BSB | BSB text |
+| The sudden turn at verse 8: a priest's word, or a change in the heart (two readings) | 6-10 | Repository deep note (literary) | Stated as readings |
+| "Turn" (verse 4) and "turn back" (verse 10) one word | 6-10 | Repository deep note (literary) | Site's own teaching |
+| Isaiah 38:18; Psalm 30:9; John 12:27 ("some readers hear an echo"); Hebrews 5:7; Isaiah 26:19; Daniel 12:2; Matthew 7:23; Luke 13:27; Psalm 30:5; Revelation 21:4; Matthew 26:38 | both | BSB; earlier ledger row on Matthew 7:23 | BSB text |
+| Lament wording: "Lament is not unbelief. You do not argue with a God you have given up on"; "When grief or sadness lasts and starts taking sleep, appetite or work ... not a failure of faith"; Psalm 88 never turns, "the person whose grief has not lifted is not praying wrong" | 6-10 | Lament study guide (objections, leaderPrimer, faq) | Site's own wording, contractions opened |
+| Crisis sentence and Find Help line | 6-10 | The form used in Mark 9 and Matthew 5 plain notes | Site's own wording |
+
+No phone number is given. No diagnosis is named.
