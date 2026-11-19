@@ -149,11 +149,15 @@ export default function ExplorerMap() {
         art={<HeadArt />}
       />
 
-      <section
-        className="ex-sec ex-sec--tight"
-        aria-label="Reading level and threads"
-      >
+      <section className="ex-sec ex-sec--warm" aria-labelledby="ex-map-title">
         <div className="ex-wrap">
+          <h2 className="ex-h2" id="ex-map-title">
+            The map
+          </h2>
+          <p className="ex-lede">
+            Thirteen stops, from the first page to the last. The ones with a
+            link are ready to open; the rest are being drawn.
+          </p>
           <div className="ex-controls">
             <div className="ex-panel">
               <LevelSwitch
@@ -194,18 +198,7 @@ export default function ExplorerMap() {
             </p>
           )}
           {saveFailed && <p className="ex-alert">{SAVE_FAILED}</p>}
-        </div>
-      </section>
 
-      <section className="ex-sec ex-sec--warm" aria-labelledby="ex-map-title">
-        <div className="ex-wrap">
-          <h2 className="ex-h2" id="ex-map-title">
-            The map
-          </h2>
-          <p className="ex-lede">
-            Thirteen stops, from the first page to the last. The ones with a
-            link are ready to open; the rest are being drawn.
-          </p>
           {data === null ? (
             <LoadFailed
               what="The map"

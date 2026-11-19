@@ -163,7 +163,7 @@ describe("the map", () => {
     const button = screen.getByRole("button", { name: thread.name });
     fireEvent.click(button);
     expect(button).toHaveAttribute("aria-pressed", "true");
-    const lit = [...document.querySelectorAll("[data-lit]")].map(el =>
+    const lit = Array.from(document.querySelectorAll("[data-lit]")).map(el =>
       el.id.replace(/^stop-/, "")
     );
     expect(lit).toEqual(
@@ -250,7 +250,7 @@ describe("a stop", () => {
     if (act.kind !== "order") throw new Error("rescue is an order activity");
     await screen.findByRole("heading", { name: act.title });
     const list = () =>
-      [...document.querySelectorAll(".ex-order__text")].map(
+      Array.from(document.querySelectorAll(".ex-order__text")).map(
         el => el.textContent ?? ""
       );
     fireEvent.click(screen.getByRole("button", { name: "Check my order" }));
