@@ -4426,3 +4426,192 @@ Hammurabi rent shares as typical practice (only the law's wording).
 
 Genesis is complete in plain words. The next book is for the lead to
 choose.
+
+## Acts: the book page and Acts 1 to 7 (2026-11-19)
+
+### The book page (`/study/bible/acts`, same address)
+
+Data only, in `client/public/bible/notes/acts/intro.json`, field `teaching`
+(the rest of the file untouched; its own layout kept), built to Luke's shape.
+Fourteen headed parts with a contents list: Acts in a minute; Who wrote it,
+and how we know; The second of two books; When it was written; What kind of
+book it is (ancient history-writing; the speeches, with Thucydides and the
+views); The plan in one verse (1:8); How Acts is built; The big themes; Acts
+and the Old Testament; Acts and the history of its day (Agrippa I, the
+famine, Claudius and the Jews of Rome, Gallio, the politarchs); Acts and
+Paul's letters (Galatians 1 and 2 with Acts 9, 11 and 15, three views;
+Antioch; Timothy); Acts and the Jewish people; What Acts is not (what is
+normative, three places Christians differ); How to read Acts. Then 13 hard
+passages (1:18, 2:4, 2:36, 2:38, 2:44, 4:12, 5:5, 5:36, 7:16, 8:16, 9:7,
+15:20, 28:28), 13 key words, a timeline of 17 entries, one map on the
+"israel" frame with nine places (Damascus, Sidon, Tyre, Caesarea, Samaria as
+a region placed roughly, Joppa, Lydda, Jerusalem, Azotus), a `mapNote` saying
+Gaza lies just south of the frame and that Paul's travels need a wider
+Mediterranean map that is still to come, and six Go deeper pages (Jewish
+life, the Roman world, honor and shame, the cities of Paul, the Septuagint,
+and the Honest Answer on those who never heard).
+
+Words: 4,353 in the fourteen parts.
+
+**Code.** None changed in the app. `teaching.test.tsx` now expects Acts to
+have a guide (the list of books with one) and adds two tests: the parts on
+Paul's letters and the Jewish people, two hard-passage links and the map
+note; one map on the "israel" frame, with the Joppa card linking Acts 9:36.
+
+### Acts 1 to 7 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Acts 1 | 6 (the first book, and forty days; wait for the Spirit, you will be My witnesses; taken up, and coming back; back to the city, to pray; Peter speaks about Judas; Matthias chosen by lot) | 3,531 |
+| Acts 2 | 7 (wind, fire, and other tongues; every nation under heaven; what Joel foretold; Jesus of Nazareth, killed and raised; David's tomb, and David's Lord; ‘What shall we do?’; the life of the first believers) | 4,469 |
+| Acts 3 | 4 (at the gate called Beautiful; not our power: the name of Jesus; you acted in ignorance: turn back; the prophet like Moses, and Abraham's blessing) | 2,242 |
+| Acts 4 | 5 (arrested in the temple; no other name; ‘We cannot stop speaking’; the believers pray for boldness; one heart and soul, Barnabas) | 2,597 |
+| Acts 5 | 6 (Ananias; Sapphira; signs and wonders; jailed and freed by night; ‘We must obey God rather than men’; Gamaliel, a flogging, and joy) | 3,229 |
+| Acts 6 | 2 (widows overlooked, and seven chosen; Stephen accused) | 1,424 |
+| Acts 7 | 8 (Abraham; Joseph; Moses born and pushed away; Moses sent; the calf and the stars; tabernacle and temple; ‘You stiff-necked people’; Stephen sees Jesus, and is stoned) | 3,998 |
+| Total | 38 | 21,490 |
+
+After each chapter every passage was printed field by field and read: all 38
+sit under their right headings. `validate-bible-notes` passed after each with
+no exceptions (`OT_FIELD_KNOWN` stays empty).
+
+### Sources
+
+All in `bdoor-ledger.md` under "Acts's book page" and "The plain notes on
+Acts 1" to "7". 33 web searches: 8 for the book page, then 3, 6, 4, 3, 4, 2
+and 3. Main sources: Irenaeus; the Muratorian fragment (Metzger); Josephus,
+Antiquities 19.343-350 (Agrippa), 20.51-53 and 20.101 (the famine), 20.97-98
+(Theudas), 20.200 (James), 14.65 (the ninth-hour sacrifice); Suetonius and
+Orosius (the wrom ledger); the Gallio inscription; the Thessalonica politarch
+inscription; Pervo, Dating Acts (2006); Thucydides 1.22; Stein (JETS 1974) and
+others on Galatians 2; Mishnah Eruvin 4:3, Makkot 3:10, Sotah 9:15; Eusebius
+and Jerome on Akeldama; Jubilees and the rabbis on Weeks and Sinai; the
+Assemblies of God statement (1916), Topeka (1901), Azusa Street (1906);
+Warfield, Counterfeit Miracles (1918); Catechism of the Catholic Church 1263;
+Luther's Small Catechism; Westminster Confession 28; the Stone-Campbell
+reading of 2:38; Codex Bezae at 4:6; Kraus (NTS 2001) on agrammatoi;
+Irenaeus on Nicolas; Philo on the freedmen; the Theodotus inscription; the
+Septuagint of Amos 5:26-27 and Genesis 46:27; Pilate's removal in 36.
+Scripture is the BSB, checked word for word.
+
+### Cut or narrowed
+
+Hemer, Ramsay and Baur by name; Agrippa I as Herod's grandson; an exact year
+for the famine; Festus's year; "how the church has read Acts" (not searched);
+the length of Acts in hours; Papias on Judas; the "swelling up" sense of
+1:18; Codex Vaticanus at 2:17; shachat and diaphthora at Psalm 16:10; the
+ritual baths for the three thousand; Orthodox chrismation; Mantey on eis;
+night trials; the sagan; the councils of 543 and 553; the wax tablet;
+same-day burial; Stephen as "first deacon" in Irenaeus; the "Libyans"
+reading; 4QExod reading seventy-five (disputed in the search); the
+Samaritan Pentateuch on Terah; Philo on Moses; "beyond Babylon" as code for
+Rome; a date for Stephen's death. Narrowed: the famine "the mid-40s";
+Claudius's expulsion "about 49, disputed"; Gallio "most 51 to 52"; the
+Beautiful Gate "many think" the Nicanor Gate; Gamaliel "most identify";
+the Achan verb "many readers notice"; "church" first at 5:11 "in most modern
+Bibles"; the cloaks "probably".
+
+### Contested matters, and how they are stated
+
+Authorship (Luke; the "we" passages read as eyewitness, diary or convention;
+doubts from the letters; "still widely held"). Date (early 60s; 70s or 80s,
+"probably most"; about 115, "most have not followed"; "these notes do not
+settle"). The speeches (faithful summaries; Luke's compositions; between).
+Galatians 2 and Acts 11 or 15 (three views; Antioch; Timothy; "these notes
+set out the views and do not settle them"). What is normative (three
+places). "Restore the kingdom" (fulfilled in Christ and the church; a future
+promise; both; no claim about any modern state). Judas's death (joined, or
+separate memories). Tongues today (Pentecostal, charismatic,
+continuationist, cessationist, each in its holders' terms; "these notes do
+not choose"). 2:38 (Catholic and Orthodox, Lutheran, Presbyterian and
+Reformed, Baptist, Churches of Christ; the grammar; "faithful churches
+differ while confessing one Lord"). Healing today. The restoration of all
+things. No other name (the claim stated plainly; the fate of those who never
+heard left open, with the Honest Answer). Civil disobedience (three views;
+no modern cause). Shared goods (voluntary, 5:4; no application left or
+right). Ananias and Sapphira (a founding sign; judgment or shock; believers
+or not; not a pattern). Theudas (four answers, no side). The seven as
+deacons; church order. Stephen and Genesis (Terah's death; seventy-five; the
+Shechem tomb). The Son of Man standing. How Stephen could be stoned.
+
+**"You crucified" and its misuse (Acts 2:22-28, hard).** "First, see who is
+speaking, and to whom. Peter is a Jew, speaking to his own people, in their
+own city, weeks after the event, about something done there. He includes the
+Romans (‘the lawless’) in the same sentence. He says Jesus was delivered up by
+God's own plan. In his next sermon he adds, “I know that you acted in
+ignorance, as did your leaders” (3:17). And he does not condemn them; he
+offers them forgiveness, and three thousand of the hearers believe and are
+baptized. This is a prophet's call to his own nation to turn, like the calls
+of Jeremiah and the other prophets, not a verdict on a people." Then the
+Matthew 27 and John 19 paragraph word for word ("For centuries many
+Christians called the Jewish people ‘Christ-killers’ ... That reading is
+false, and Christians must reject it plainly. This site rejects it."), with
+Peter and the three thousand added, Nostra Aetate 4 and Acts 4:27. 3:13-15,
+5:28-30 and 7:51-53 point back to it.
+
+**Tongues today (Acts 2:1-4, hard).** "Christians also differ on whether the
+gift continues today. These views are held by faithful believers, and these
+notes do not choose between them." Then Pentecostal, charismatic,
+continuationist and cessationist readings each in a paragraph.
+
+**2:38 (Acts 2:37-41, hard).** "Churches read it differently, and the
+differences are old and sincerely held. These notes set out the main
+readings in the words their holders would use, and do not choose between
+them." Five readings, the grammar, and "These are questions on which
+faithful churches differ while confessing one Lord."
+
+**Ananias and Sapphira (Acts 5:1-6).** "Peter is clear about what the sin
+was. It was not keeping money. ... The sin was the lie." And: "This is one
+of the hardest stories in the New Testament, and Luke does not soften it. A
+man and his wife die for a lie about money."
+
+### Care lines included
+
+1:15-20 (Judas: the Matthew 27 form, with Find Help); 3:1-10 (those who
+prayed and were not healed: the Matthew 8 sentences, with Find Help); 5:1-6
+(no sudden death or illness read as God's punishment, Luke 13:4-5, with Find
+Help); 7:54-60 (those bereaved by violence, the Genesis 23 form, with Find
+Help).
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each piece: pass. At
+the end, all 36 content-gate commands, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 146 chapters
+in plain words; validate-no-emdash 260 files, 0; search index 732 entries
+up to date; passage index 623 files match; verify-sources 22 texts intact).
+`pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped; 1,676 tests
+passed, 73 skipped. ESLint on the changed test file: clean. `pnpm build`,
+`pnpm run sitemap`, `pnpm run prerender` (3,028 pages), `pnpm run
+audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4600 and looked with
+Playwright (deviceScaleFactor 1; /api/trpc, /api/track and /_vercel stubbed).
+Book page at 390 and 1440: 14 of 14 parts as headings, 17 of 17 timeline
+entries, one map on the "israel" frame, the map note shown, no sideways
+scroll, no console or page errors. A script matched every rendered passage
+heading, its part headings in order and the first 60 characters under each
+to the data at 390: Acts 1, 27 of 27 fields; 2, 33; 3, 19; 4, 23; 5, 27; 6,
+10; 7, 36; no sideways scroll, no errors. The first map had Jerusalem's name
+over Azotus's and Caesarea's name over the Samaria ring, and the Damascus
+mark at the drawing's edge; data-only label and position changes fixed it,
+and a script then found no name over another name or mark and none outside
+the drawing at 390 and 1440 (the server keeps gzipped files in memory, so it
+was restarted to see the change; the build was not rerun for this data-only
+fix, which `validate-bible-notes`, the teaching test and the index checks
+passed after). Screenshots looked at: `/home/user/elite-shots/bdoor/acts-*`
+(book page, map, contents, timeline, the Jewish people part, Acts 2).
+Lighthouse (ci.yml command, three runs, on `/study/bible/acts`): performance
+88, accessibility 100, best practices 96, SEO 100, CLS 0.000. Server stopped
+by PID, dist/ deleted, no lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient writer (all paraphrased); the Septuagint's
+exact verb at Joshua 7:1; Orthodox teaching on baptism beyond the general
+sentence; the charismatic movement described only generally.
+
+### Next
+
+Acts 8 onward in plain words, in the same shape; and a Mediterranean map
+frame for Paul's travels.

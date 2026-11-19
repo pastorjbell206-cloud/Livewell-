@@ -4970,3 +4970,8 @@ synagogues in 6:9; Stephen as "first deacon" in Irenaeus.
 Left out: 4QExod reading seventy-five; the Samaritan Pentateuch's numbers for
 Terah; Philo on Moses' education; the "coded Rome" reading of "beyond
 Babylon"; a date for Stephen's death.
+
+Map repair (Acts book page, after the rendered check): Damascus moved from
+36.29 to 36.27 so its mark sits inside the drawing; the Samaria region ring
+moved to 32.4, 35.42 (placed roughly, as said); Jerusalem's name set to the
+right of its mark. Positions only; no historical claim changed.
