@@ -307,3 +307,34 @@ Removed from the old page as unchecked: the Pew 2009 "51%" figure; Ecklund 2016;
 | Old answer's sentences kept: "Lewis's point holds: no merely wise teacher talks that way."; "The trilemma's largest hole is legend. Maybe a later church put the high claims in a humble rabbi's mouth, and for a long time that was the scholarly default."; "But legend needs time, and the time has been taken away."; "Devotion that high, that fast, among those people does not behave like a legend" (one contraction); "frauds do not die for the con when recanting would save them"; "I held the comfortable view ... first." | James's old answer | Kept |
 
 Not used: Lewis's "poached egg" and "Devil of Hell" wording (copies differ; paraphrased as "a lunatic or something worse"); Ehrman's *Jesus: Apocalyptic Prophet* (not searched); Bousset by name and date.
+
+# Fifth run (2026-11-19): "Is Jesus really the only way to God?", "Are miracles believable?", "Is faith just wishful thinking?"
+
+No sentence about James's life is added. Old first-person recollections that could not be confirmed were cut (listed under each answer). Scripture is ESV, matched against a search or against ESV text already quoted in the repo.
+
+## Is Jesus really the only way to God?
+
+10 searches.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Hick, *God and the Universe of Faiths* (1973), a "Copernican revolution" in theology: God, not Christianity, at the center | Search: Kleczkowska article, D'Costa's "Ten Years After", Churchman outline | Verified, paraphrased |
+| Hick, *An Interpretation of Religion* (1989): the Real beyond human concepts; the traditions as culturally shaped responses; salvation as the transformation "from self-centredness to Reality-centredness" | Search: UGA thesis, Cambridge *Religious Studies* abstract, Themelios | Verified; the phrase quoted, the rest paraphrased |
+| Hick: the religion a person holds depends in the great majority of cases on where they were born | Search: Hick, "Can There Be Only One True Religion?" (2001, about 99 percent); other statements of the same | Verified, paraphrased without a figure |
+| Newbigin, *The Gospel in a Pluralist Society* (1989): the elephant parable is told from the view of one who sees the whole | Search: blog quotation of p. 9, Themelios review | Verified, given as paraphrase (wording not seen in the book) |
+| Newbigin went to India as a missionary in 1936; bishop in Madras until he retired in 1974 | Search: Wikipedia, BU missiology biography | Verified |
+| D'Costa, "The Impossibility of a Pluralist View of Religions", *Religious Studies* 32 (1996): pluralism a form of exclusivism | Search: Cambridge record, PhilArchive, Hick's reply | Verified, paraphrased |
+| Hick's reply, *Religious Studies* 33 (1997): pluralism a second-order philosophical hypothesis, not a rival religion | Search (same) | Verified, paraphrased |
+| Plantinga, "Pluralism: A Defense of Religious Exclusivism", in *The Rationality of Belief and the Plurality of Faith* (Cornell, 1995): the pluralist too believes what others reject; Madagascar rather than Michigan | Searches: course page, Cambridge chapter record, whyevolutionistrue quotation of p. 188 of the reprint | Verified, paraphrased |
+| Qur'an 4:157: Jesus neither killed nor crucified | Standard reference | Verified, paraphrased |
+| Sanders, *No Other Name* (Eerdmans, 1992); all the views agree Jesus is the only Savior | Search: Andrews University review, Sanders's own chart | Verified |
+| Sanders, Fackre and Nash, *What About Those Who Have Never Heard?* (IVP, 1995): Sanders inclusivism, Fackre postmortem, Nash restrictivism | Search: Grace Evangelical Society review | Verified |
+| Pinnock, *A Wideness in God's Mercy* (1992) | Search (same) | Verified |
+| *Lumen Gentium* 16 (Second Vatican Council, 1964): those who through no fault of their own do not know the gospel but seek God sincerely may be saved | Search: Catholic Answers, HPR, Bullivant in *Theological Studies* | Verified, paraphrased |
+| Nicene Creed: "for us men and for our salvation came down from heaven" | Repo: `client/public/creeds/documents/nicene-creed.json` | Verified, quoted |
+| John 14:5-6 | Search: ESV.org, Bible Gateway | Verified, quoted |
+| Acts 4:12, Romans 10:14, Genesis 18:25, Acts 10:34 (first clause) | The old answer's own quotations; Acts 4:12 also in repo ESV | Verified, quoted |
+| 1 Timothy 2:5; Genesis 15:6; Romans 2:15 phrase; 1 Corinthians 15:17 "futile" | Repo ESV quotations (study guides, essays) | Verified, quoted |
+| 1 Peter 3:19, 4:6; Hebrews 9:27; Acts 17:28; Surah 4:157 | Cited by reference, not quoted | Checked against the passages' content |
+
+Cut from the old answer: "For most of my life I was an atheist, and of all the church's claims I found this one not merely improbable but obscene" ("most of my life" and the feeling are not confirmed); "I once thought pluralism was the humble position" (a recollection); "He loved the parable of the blind men and the elephant" (Hick's fondness for it not checked); "forty years a missionary in India" (corrected to the dates). Kept from the old answer in its own words: the grandmother's face, Peter "a fisherman on trial", "in a person you can only receive, and in no philosophy or bloodline", "Everybody at the table is making an exclusive claim. What's left to ask is which one is true.", "Refuse him if you must, but refuse him for being too particular".

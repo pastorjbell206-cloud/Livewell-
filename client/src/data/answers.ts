@@ -676,9 +676,85 @@ export const ANSWERS: Answer[] = [
     askedAs: "other religions all religions the same exclusive narrow",
     question: "Is Jesus really the only way to God?",
     paragraphs: [
-      "Yes, and the claim you were told was arrogant is closer to Christianity's whole hope. The question rarely arrives as a doctrine. It arrives as a face across the table, someone who buried a grandmother who prayed toward Mecca for sixty years, asking whether your God would send her to hell. For most of my life I was an atheist, and of all the church's claims I found this one not merely improbable but obscene.",
-      "The philosopher John Hick pressed the objection well: make God the center, and Christianity, Islam, and the rest are planets in orbit, each catching the same light at a different angle. He loved the parable of the blind men and the elephant, each grasping one part, none the whole. But the parable has a problem. The man telling it is not blind. He stands above the scene with his eyes open, describing the whole elephant everyone else is too limited to see. Lesslie Newbigin, forty years a missionary in India, named it. Pluralism makes a total claim of its own and calls that humility. Everybody at the table is making an exclusive claim. What's left to ask is which one is true.",
-      "I once thought pluralism was the humble position and exclusivity the arrogant one, and I had it backward. When Peter first said there is \"no other name under heaven given among men by which we must be saved\" (Acts 4:12), he was a fisherman on trial, powerless before the council that killed his teacher. That claim wasn't grabbing power. What scandalized people was where it put salvation: in a person you can only receive, and in no philosophy or bloodline. And the verse that gets quoted at that grieving face is not a threat. \"I am the way, and the truth, and the life. No one comes to the Father except through me\" (John 14:6) was spoken to a terrified friend who asked how to find God. Refuse him if you must, but refuse him for being too particular, not for being arrogant.",
+      "Yes. Christians confess that Jesus is the only way to God, and I confess it with them. Many people hear that as arrogance, and the charge deserves an honest answer rather than a shrug. Two things are worth seeing before anyone decides. Every view of the religions, the pluralist's included, makes a claim the others deny, so the real question isn't who is humble but what is true. And the Christian claim is narrower than it's usually heard. It says that whoever is saved is saved by Christ. It doesn't say it knows the fate of every person who never heard his name, and Christians hold more than one view about that. I'll set those views out fairly and leave the question where the creeds leave it, open.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The question rarely arrives as a doctrine. It arrives as a face across the table, someone who buried a grandmother who prayed toward Mecca for sixty years, asking whether your God would send her to hell. Behind that face stands a serious argument, and its best defender was the philosopher John Hick. In God and the Universe of Faiths (1973) he called for what he named a Copernican revolution in theology. The old picture put Christianity at the center with the other faiths circling it. Hick put God at the center and had every faith, Christianity included, circling him.",
+          "In An Interpretation of Religion (1989) he worked the idea out with care. There is one ultimate reality, which he called the Real, beyond the reach of any human concept. The great traditions are different human responses to it, each shaped by its culture, each speaking of God or of ultimate reality in its own terms. And each, as far as anyone can tell, does the same work in human lives, which Hick called the transformation of human existence \"from self-centredness to Reality-centredness.\" The saints of every tradition look more alike than their doctrines do.",
+          "Hick added a fact that is hard to deny. The religion a person holds depends, in the great majority of cases, on where that person happened to be born. If salvation depends on believing the right thing, it seems to depend on the luck of birth, and a God who saved people by that kind of luck would not be just.",
+          "I grant what is true here. Birthplace shapes belief. Christians have often carried this claim with contempt, and sometimes on the back of an empire. The goodness of Muslim, Jewish, Hindu and Buddhist neighbors is real. Scripture itself says that \"God shows no partiality\" (Acts 10:34). If the Christian claim required me to deny any of that, it would deserve the scorn it gets.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "What follows isn't a proof that Christianity is true. It's three steps that clear the ground. The first is logical: can all the religions be right at once? The second is historical: what does the Christian claim rest on, and where would you go to test it? The third is theological: what does the claim actually say, and what does it leave unsaid?",
+        ],
+      },
+      {
+        heading: "Can every religion be right?",
+        body: [
+          "The religions don't only differ in style. They make claims about the same things, and some of those claims can't both be true.",
+          {
+            kind: "A deductive argument from contradiction",
+            premises: [
+              "The great religions make claims about the same matters that contradict each other. Christianity holds that Jesus of Nazareth died on a Roman cross and rose bodily from the dead. The Qur'an holds that he was neither killed nor crucified (Surah 4:157). Judaism holds that the Messiah has not yet come; Christianity holds that he has.",
+              "Two claims that contradict each other about the same matter can't both be true.",
+            ],
+            conclusion: "At least some of the great religions are mistaken about something they hold central. No view of the religions, the pluralist's included, can call them all true as their own followers understand them.",
+          },
+          "The second premise is just logic. The weight sits on the first, and Hick saw it. His answer was that the doctrines aren't literally true. They are mythological: true in the sense that they move people toward the Real, not in the sense that they report what happened. That's a coherent position. But look at what it costs. It tells the Muslim that the Qur'an is wrong, taken literally, about the cross. It tells the Christian that the resurrection didn't happen as an event. Every believer at the table is told he has misunderstood his own faith, by a view that stands above all of them and sees what none of them can see.",
+          "Lesslie Newbigin, who went to India as a missionary in 1936 and was a bishop there until 1974, put his finger on that in The Gospel in a Pluralist Society (1989), using the pluralist's favorite picture. In the old parable of the blind men and the elephant, each blind man grasps one part and mistakes it for the whole. Newbigin's point, in paraphrase, was that the story is told from the place of someone who isn't blind, who sees the whole elephant and can tell that each of the others has only a part. The parable makes the largest claim in the room. The theologian Gavin D'Costa pressed the same point in the journal Religious Studies in 1996, arguing that pluralism turns out to be one more exclusive view. Hick answered him the next year that pluralism is a philosophical hypothesis about the religions, not a rival religion. That's a fair distinction. But a hypothesis can be true or false like anything else, and this one holds that the central claims of every faith are false as their believers mean them.",
+          "Alvin Plantinga took up the charge of arrogance in an essay of 1995, \"Pluralism: A Defense of Religious Exclusivism.\" The pluralist, he observed, also believes something that most of the world rejects and that he can't persuade them of, and he keeps believing it. If holding a belief others deny is arrogant, everyone is arrogant, and the charge says nothing. He turned the birthplace argument around the same way: had he been raised in Madagascar rather than Michigan, his beliefs would likely be different, and the same is true of the pluralist. Everybody at the table is making an exclusive claim. What's left to ask is which one is true.",
+        ],
+      },
+      {
+        heading: "What the Christian claim rests on",
+        body: [
+          "The Christian claim is not that Christians are better people, or that their religion is the best of the religions. It's a claim about something God did. The Nicene Creed confesses that the Son of God \"for us men and for our salvation came down from heaven,\" was crucified under Pontius Pilate and rose again on the third day. Paul writes, \"For there is one God, and there is one mediator between God and men, the man Christ Jesus\" (1 Timothy 2:5). When Peter first said there is \"no other name under heaven given among men by which we must be saved\" (Acts 4:12), he was a fisherman on trial, powerless before the council that had handed his teacher over to be killed. What scandalized people was where it put salvation: in a person you can only receive, and in no philosophy or bloodline.",
+          {
+            kind: "A conditional argument",
+            premises: [
+              "If God has acted in history to rescue people, that act happened at a particular time and place, through a particular person.",
+              "Christianity claims that he did, in the life, death and resurrection of Jesus of Nazareth.",
+            ],
+            conclusion: "Then the question of the only way is not a question of which religion is the most humble or the most attractive. It's a question of history: whether that act happened. If it did, it is particular because history is particular, not because Christians are proud.",
+          },
+          "The second premise is where everything rests, and it can be tested. The claim is that Jesus was raised from the dead, and that is a historical question with its own page here, \"Did the resurrection actually happen?\" If he wasn't raised, Paul himself says the faith is \"futile\" (1 Corinthians 15:17), and you should leave it. If he was, then his own words carry a different weight. \"I am the way, and the truth, and the life. No one comes to the Father except through me\" (John 14:6) wasn't said to a crowd of rivals. It was said to a frightened friend. Thomas had just asked, \"Lord, we do not know where you are going. How can we know the way?\" (John 14:5). Jesus didn't answer with a method. He answered with himself.",
+        ],
+      },
+      {
+        heading: "What about those who never heard?",
+        body: [
+          "Here the creeds bind less than many people think. What they confess is that salvation is God's own work, done through Christ and no one else. They don't say how God deals with the person who lived and died where his name was never spoken. Christians who hold the same creed answer that in at least three ways. John Sanders, who set the views side by side in No Other Name (1992), points out that all of them agree that Jesus is the only Savior. They disagree about how a person comes to be saved by him.",
+          "The first view, often called restrictivism, holds that a person must hear the gospel and put conscious faith in Christ in this life. Its strength is that it reads Paul's chain at face value: \"How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?\" (Romans 10:14). That chain sent missionaries across every ocean. Ronald Nash makes the case in What About Those Who Have Never Heard? (1995). Its hard question is the grandmother's: would a just God hold people accountable for a name they never had the chance to hear?",
+          "The second, inclusivism, holds that no one is saved apart from Christ, but that his work may reach some who never knew his name and who answered, in faith, the light God gave them. It points to Abraham, who \"believed the LORD, and he counted it to him as righteousness\" (Genesis 15:6) long before Jesus was born, and to Paul's Gentiles with the law \"written on their hearts\" (Romans 2:15). Clark Pinnock defended it in A Wideness in God's Mercy (1992), and Roman Catholic teaching since the Second Vatican Council, in Lumen Gentium (1964), holds something close to it for those who, through no fault of their own, don't know the gospel but seek God with a sincere heart. Its hard question is Romans 10 itself: why does Scripture press so hard on hearing and believing, if hearing isn't needed?",
+          "The third holds that everyone will meet Christ and be able to answer him, at death or after it. It reads 1 Peter 3:19 and 4:6, where Christ proclaims to the spirits in prison and the gospel is preached to the dead, as a door the church shouldn't close. Gabriel Fackre argues for it in the same 1995 volume. Its hard question is Hebrews 9:27, which says that after death comes judgment, and the silence of most of Scripture about any later chance.",
+          "I'm not going to tell you which of these to hold. Faithful Christians disagree, and the creeds don't settle it. What all three share is the Judge. Abraham stood before him and pressed: \"Shall not the Judge of all the earth do what is just?\" (Genesis 18:25). We were never handed the list. We were told who keeps it.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. You've shown that somebody at the table has to be wrong. You haven't shown it isn't you. And the birthplace point still bites: you believe this mostly because of where you were raised. Both halves are fair. The first is why the argument above sends you to the evidence about Easter rather than claiming to settle it. The second is true of nearly everyone, believer and skeptic alike. Where a belief came from doesn't tell you whether it's true. It does tell each of us to check our belief against something outside the place we grew up in, and the resurrection is that kind of claim. It happened, if it happened, in public, in a city where it could be denied.",
+          "Here is what the argument doesn't prove. It doesn't prove Christianity true; that rests on the resurrection. It doesn't show that other religions contain nothing true or good. Paul stood among the philosophers of Athens and quoted their own poets to them with approval (Acts 17:28). It doesn't make Christians better than their neighbors, and it gives no one the right to speak of another person's eternity as if they had read it. What it shows is narrower. The claim that all roads lead to God is not the humble alternative it looks like. It's one more road, with its own claim to see the whole.",
+          "And the claim that was called arrogant is closer to Christianity's whole hope. If there is one way, it is not a ladder the clever or the well-born can climb. It's a person who came down. Refuse him if you must, but refuse him for being too particular, not for being proud. The question Thomas asked is still the honest one, and the answer he was given was not a doctrine about the religions. It was a man standing in front of him, a few hours from a cross.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "John Hick", title: "God and the Universe of Faiths", year: "1973", note: "The call for a Copernican revolution in theology." },
+      { author: "John Hick", title: "An Interpretation of Religion", year: "1989", note: "The best book against: the full case for religious pluralism." },
+      { author: "Gavin D'Costa", title: "The Impossibility of a Pluralist View of Religions", in: "Religious Studies", year: "1996" },
+      { author: "John Hick", title: "The Possibility of Religious Pluralism: A Reply to Gavin D'Costa", in: "Religious Studies", year: "1997" },
+      { author: "Alvin Plantinga", title: "Pluralism: A Defense of Religious Exclusivism", year: "1995", note: "In The Rationality of Belief and the Plurality of Faith (Cornell, 1995)." },
+      { author: "Lesslie Newbigin", title: "The Gospel in a Pluralist Society", year: "1989" },
+      { author: "John Sanders", title: "No Other Name: An Investigation into the Destiny of the Unevangelized", year: "1992" },
+      { author: "John Sanders, Gabriel Fackre and Ronald Nash", title: "What About Those Who Have Never Heard? Three Views on the Destiny of the Unevangelized", year: "1995", note: "Three Christian views, each argued by its defender." },
+      { author: "Clark H. Pinnock", title: "A Wideness in God's Mercy", year: "1992" },
     ],
     essaySlug: "is-jesus-really-the-only-way",
     essayTitle: "Is Jesus Really the Only Way?",
