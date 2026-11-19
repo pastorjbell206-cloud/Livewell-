@@ -8,8 +8,9 @@
  * A book names its frame in its data (lib/bible-notes.ts `MAP_FRAMES`): the
  * land of Jesus' day ("israel", the default), Canaan from Dan to the Negev
  * ("canaan"), or the Fertile Crescent from the Nile to the Persian Gulf
- * ("fertile-crescent"). Each frame draws its own coasts and rivers from a few
- * dozen points (docs/work/elite/wmap-ledger.md gives their sources).
+ * ("fertile-crescent"), or the eastern and central Mediterranean from Rome to
+ * Jerusalem ("mediterranean"). Each frame draws its own coasts and rivers from
+ * a few dozen points (docs/work/elite/wmap-ledger.md gives their sources).
  *
  * Its own chunk: BookTeaching loads it only when it nears the screen, in a box
  * that holds its height. Every place is a 44px button in the list beside the
@@ -50,6 +51,8 @@ interface Frame {
   shift: number;
   /** The description names the reach north to south (towns), or east to west (every place). */
   axis: "ns" | "ew";
+  /** Half the side of a town's square mark, when a crowded frame needs smaller marks (default 5). */
+  mark?: number;
   /** The caption's opening, before the count of regions. */
   sketch: string;
   draw: (pen: Pen) => ReactNode;
@@ -295,6 +298,329 @@ const DEAD_SEA_FAR: LatLon[] = [
   [31.05, 35.38],
 ];
 
+// ---- "mediterranean": longitude 11.5 to 37.6 east, latitude 30.6 to 42.3
+// north. Rome and Sicily to Antioch and Jerusalem, Macedonia to the coast of
+// Libya and Egypt. The sea is the whole frame, toned and hatched; the lands
+// are laid over it as paper, the Black Sea and the Sea of Marmara cut back in
+// as water. Points beyond the frame only close the shapes.
+const ITALY: LatLon[] = [
+  [42.5, 11.2],
+  [42.33, 11.6],
+  [42.22, 11.7],
+  [42.09, 11.79],
+  [41.95, 12.07],
+  [41.77, 12.22],
+  [41.45, 12.62],
+  [41.22, 13.07],
+  [41.28, 13.25],
+  [41.21, 13.57],
+  [41.02, 13.93],
+  [40.82, 14.08],
+  [40.84, 14.25],
+  [40.63, 14.37],
+  [40.57, 14.33],
+  [40.68, 14.76],
+  [40.35, 14.99],
+  [40.03, 15.27],
+  [40.07, 15.63],
+  [39.81, 15.79],
+  [39.36, 16.04],
+  [38.9, 16.2],
+  [38.68, 15.9],
+  [38.43, 15.9],
+  [38.25, 15.72],
+  [38.11, 15.65],
+  [37.92, 15.78],
+  [37.93, 16.06],
+  [38.24, 16.26],
+  [38.69, 16.55],
+  [38.91, 17.05],
+  [39.08, 17.13],
+  [39.4, 17.15],
+  [39.75, 16.5],
+  [40.2, 16.68],
+  [40.37, 16.83],
+  [40.47, 17.24],
+  [40.26, 17.89],
+  [40.06, 17.97],
+  [39.8, 18.37],
+  [40.15, 18.49],
+  [40.39, 18.31],
+  [40.64, 17.94],
+  [40.95, 17.3],
+  [41.13, 16.87],
+  [41.32, 16.28],
+  [41.63, 15.92],
+  [41.88, 16.18],
+  [41.93, 15.88],
+  [42.0, 14.99],
+  [42.12, 14.71],
+  [42.35, 14.4],
+  [42.5, 14.2],
+];
+const SICILY: LatLon[] = [
+  [38.27, 15.65],
+  [38.19, 15.55],
+  [37.85, 15.29],
+  [37.5, 15.09],
+  [37.23, 15.22],
+  [37.07, 15.29],
+  [36.69, 15.15],
+  [36.73, 14.85],
+  [36.89, 14.43],
+  [37.06, 14.25],
+  [37.1, 13.94],
+  [37.27, 13.58],
+  [37.5, 13.08],
+  [37.65, 12.59],
+  [37.8, 12.45],
+  [38.02, 12.51],
+  [38.18, 12.73],
+  [38.03, 12.88],
+  [38.12, 13.36],
+  [38.04, 14.02],
+  [38.16, 14.75],
+  [38.27, 15.24],
+];
+const MALTA: LatLon[] = [
+  [36.08, 14.26],
+  [36.03, 14.18],
+  [35.99, 14.3],
+  [35.85, 14.37],
+  [35.82, 14.48],
+  [35.84, 14.57],
+  [35.9, 14.52],
+  [35.97, 14.41],
+  [36.04, 14.31],
+];
+const CRETE: LatLon[] = [
+  [35.6, 23.6],
+  [35.5, 23.66],
+  [35.69, 23.75],
+  [35.52, 24.02],
+  [35.6, 24.15],
+  [35.47, 24.25],
+  [35.37, 24.47],
+  [35.34, 25.13],
+  [35.29, 25.47],
+  [35.19, 25.72],
+  [35.21, 26.1],
+  [35.31, 26.31],
+  [35.1, 26.26],
+  [35.0, 26.08],
+  [35.0, 25.74],
+  [34.98, 25.3],
+  [34.93, 24.8],
+  [34.92, 24.72],
+  [35.1, 24.69],
+  [35.18, 24.39],
+  [35.2, 24.14],
+  [35.23, 23.68],
+  [35.27, 23.53],
+  [35.49, 23.57],
+];
+/** The Balkans, Asia Minor, the Levant, Egypt and Libya as one land, closed round the frame's south, east and north. */
+const EAST_LAND: LatLon[] = [
+  [42.5, 18.6],
+  [42.29, 18.84],
+  [42.09, 19.09],
+  [41.92, 19.2],
+  [41.81, 19.59],
+  [41.32, 19.45],
+  [40.8, 19.38],
+  [40.47, 19.49],
+  [40.42, 19.3],
+  [40.1, 19.74],
+  [39.87, 20.0],
+  [39.5, 20.27],
+  [39.28, 20.4],
+  [38.95, 20.75],
+  [38.53, 21.08],
+  [38.37, 21.43],
+  [38.33, 21.77],
+  [38.43, 22.42],
+  [37.94, 22.95],
+  [38.01, 22.75],
+  [38.25, 22.08],
+  [38.3, 21.78],
+  [38.25, 21.73],
+  [38.17, 21.38],
+  [37.64, 21.32],
+  [37.25, 21.67],
+  [36.91, 21.7],
+  [36.72, 21.88],
+  [37.02, 22.11],
+  [36.39, 22.48],
+  [36.76, 22.57],
+  [36.44, 23.2],
+  [36.69, 23.05],
+  [37.17, 22.86],
+  [37.57, 22.8],
+  [37.38, 23.25],
+  [37.43, 23.53],
+  [37.63, 23.16],
+  [37.92, 22.99],
+  [37.98, 23.35],
+  [37.94, 23.64],
+  [37.8, 23.78],
+  [37.65, 24.02],
+  [38.02, 24.01],
+  [38.32, 23.77],
+  [38.46, 23.6],
+  [38.65, 23.0],
+  [38.87, 22.6],
+  [39.36, 22.94],
+  [39.15, 23.25],
+  [39.75, 22.83],
+  [40.27, 22.6],
+  [40.64, 22.94],
+  [40.24, 23.28],
+  [39.96, 23.4],
+  [40.12, 23.55],
+  [39.98, 23.92],
+  [40.22, 23.9],
+  [40.15, 24.4],
+  [40.4, 23.88],
+  [40.52, 23.83],
+  [40.94, 24.41],
+  [40.85, 24.7],
+  [40.99, 25.13],
+  [40.85, 25.87],
+  [40.72, 26.08],
+  [40.62, 26.8],
+  [40.04, 26.18],
+  [40.0, 26.2],
+  [39.48, 26.07],
+  [39.49, 26.34],
+  [39.58, 26.9],
+  [39.32, 26.69],
+  [39.07, 26.89],
+  [38.8, 26.97],
+  [38.42, 27.14],
+  [38.64, 26.51],
+  [38.32, 26.3],
+  [38.2, 26.79],
+  [37.86, 27.26],
+  [37.68, 27.1],
+  [37.37, 27.27],
+  [37.24, 27.6],
+  [37.03, 27.43],
+  [36.69, 27.37],
+  [36.85, 28.27],
+  [36.7, 28.8],
+  ...MED_COAST,
+  [31.35, 27.24],
+  [31.56, 25.16],
+  [31.76, 25.08],
+  [32.08, 23.96],
+  [32.6, 23.1],
+  [32.77, 22.64],
+  [32.9, 22.17],
+  [32.9, 21.97],
+  [32.71, 20.95],
+  [32.53, 20.57],
+  [32.12, 20.07],
+  [30.95, 20.05],
+  [30.4, 19.58],
+  [30.5, 18.57],
+  [30.8, 18.1],
+  [31.21, 16.59],
+  [31.4, 15.73],
+  [32.38, 15.09],
+  [32.65, 14.26],
+  [32.9, 13.18],
+  [32.93, 12.08],
+  [33.15, 11.56],
+  [33.3, 11.2],
+  [30.3, 11.2],
+  [30.3, 37.8],
+  [42.5, 37.8],
+];
+const EUBOEA: LatLon[] = [
+  [39.03, 23.0],
+  [38.95, 23.35],
+  [38.63, 24.1],
+  [38.16, 24.6],
+  [38.0, 24.42],
+  [38.3, 24.0],
+  [38.46, 23.62],
+  [38.75, 23.2],
+];
+const LESBOS: LatLon[] = [
+  [39.38, 26.2],
+  [39.33, 26.6],
+  [39.1, 26.56],
+  [38.97, 26.37],
+  [39.08, 26.0],
+  [39.2, 25.85],
+];
+const CHIOS: LatLon[] = [
+  [38.6, 26.0],
+  [38.55, 26.15],
+  [38.37, 26.15],
+  [38.25, 25.98],
+  [38.37, 25.86],
+  [38.5, 25.88],
+];
+const SAMOS: LatLon[] = [
+  [37.8, 26.6],
+  [37.78, 26.95],
+  [37.7, 27.06],
+  [37.65, 26.8],
+  [37.7, 26.6],
+];
+const RHODES: LatLon[] = [
+  [36.45, 28.22],
+  [36.1, 28.08],
+  [35.88, 27.76],
+  [36.1, 27.73],
+  [36.3, 27.9],
+];
+const MARMARA: LatLon[] = [
+  [40.41, 26.67],
+  [40.98, 27.51],
+  [41.07, 28.25],
+  [41.0, 28.98],
+  [40.82, 29.3],
+  [40.76, 29.92],
+  [40.43, 29.15],
+  [40.37, 28.88],
+  [40.35, 27.97],
+  [40.4, 27.79],
+  [40.4, 27.3],
+  [40.34, 26.69],
+];
+const DARDANELLES: LatLon[] = [
+  [40.04, 26.18],
+  [40.15, 26.4],
+  [40.41, 26.67],
+];
+const BLACK_SEA: LatLon[] = [
+  [42.5, 27.6],
+  [42.17, 27.85],
+  [41.87, 27.98],
+  [41.63, 28.1],
+  [41.23, 29.11],
+  [41.18, 29.61],
+  [41.18, 30.2],
+  [41.09, 31.12],
+  [41.28, 31.42],
+  [41.45, 31.79],
+  [41.75, 32.39],
+  [41.89, 33.0],
+  [41.98, 33.76],
+  [42.1, 34.94],
+  [42.03, 35.15],
+  [41.8, 35.2],
+  [41.73, 35.95],
+  [41.29, 36.33],
+  [41.25, 36.7],
+  [41.13, 37.29],
+  [41.05, 37.8],
+  [42.5, 37.8],
+];
+const MED_LANDS = [ITALY, SICILY, MALTA, CRETE, CYPRUS, EAST_LAND, EUBOEA, LESBOS, CHIOS, SAMOS, RHODES];
+
 const SKETCH = "A sketch, not a survey: places are set by their modern sites";
 
 const FRAMES: Record<MapFrameId, Frame> = {
@@ -463,6 +789,74 @@ const FRAMES: Record<MapFrameId, Frame> = {
       </>
     ),
   },
+  mediterranean: {
+    kmLon: 89,
+    k: 0.225,
+    shift: 2,
+    axis: "ew",
+    mark: 3,
+    sketch: `${SKETCH}, and the coasts as they are now, not as they were then`,
+    draw: ({ x, y, pts, water, hatch }) => (
+      <>
+        {/* The Great Sea fills the frame: its tone, the lands' paper laid
+            over it off register, the hatching, then the lands in register. */}
+        <rect className="pl-b" x="0" y="0" width="100%" height="100%" />
+        {MED_LANDS.map((l, i) => (
+          <polygon
+            key={`t${i}`}
+            className="pl-paper"
+            points={pts(l)}
+            transform="translate(2 2)"
+          />
+        ))}
+        <rect x="0" y="0" width="100%" height="100%" fill={`url(#${hatch})`} />
+        {MED_LANDS.map((l, i) => (
+          <polygon
+            key={`l${i}`}
+            className="pl-o"
+            points={pts(l)}
+            strokeWidth="1.5"
+          />
+        ))}
+        {water(BLACK_SEA)}
+        {water(MARMARA)}
+        {water(DEAD_SEA_FAR)}
+        {[ROSETTA, DAMIETTA, DARDANELLES].map((r, i) => (
+          <polyline key={i} className="bk-map__river" points={pts(r)} />
+        ))}
+        {(
+          [
+            ["THE GREAT SEA", 33.9, 14.0, "start"],
+            ["ITALY", 39.95, 16.1, "start"],
+            ["MACEDONIA", 41.75, 20.6, "start"],
+            ["ACHAIA", 36.9, 21.6, "start"],
+            ["ASIA", 38.75, 28.6, "start"],
+            ["GALATIA", 39.5, 31.6, "start"],
+            ["JUDEA", 31.0, 37.4, "end"],
+          ] as const
+        ).map(([t, la, lo, a]) => (
+          <text
+            key={t}
+            x={x(lo)}
+            y={y(la)}
+            textAnchor={a}
+            className="bk-map__region"
+          >
+            {t}
+          </text>
+        ))}
+        {/* Syria has no room across the narrow land east of the coast. */}
+        <text
+          x={x(37.35)}
+          y={y(34.0)}
+          className="bk-map__region"
+          transform={`rotate(-90 ${x(37.35)} ${y(34.0)})`}
+        >
+          SYRIA
+        </text>
+      </>
+    ),
+  },
 };
 
 /** Which side of its mark each name sits on, so close places do not collide. */
@@ -553,6 +947,7 @@ function OneMap({
     </>
   );
   const Card = title ? "h4" : "h3";
+  const half = f.mark ?? 5;
 
   return (
     <div className="bk-map" data-frame={frameId}>
@@ -586,12 +981,15 @@ function OneMap({
           {places.map(p => {
             const on = p.id === place?.id;
             const region = isRegion(p);
-            const l = p.label ??
-              LABEL[p.id] ?? {
-                dx: 10,
-                dy: 4,
-                anchor: "start" as const,
-              };
+            const l =
+              p.label === false
+                ? null
+                : (p.label ??
+                  LABEL[p.id] ?? {
+                    dx: 10,
+                    dy: 4,
+                    anchor: "start" as const,
+                  });
             const cx = x(p.lon);
             const cy = y(p.lat);
             return (
@@ -606,10 +1004,10 @@ function OneMap({
                 {p.id === "jerusalem" ? (
                   <rect
                     className="pl-m"
-                    x={cx - 7}
-                    y={cy - 7}
-                    width="14"
-                    height="14"
+                    x={cx - half - 2}
+                    y={cy - half - 2}
+                    width={2 * half + 4}
+                    height={2 * half + 4}
                     stroke="var(--art-ink)"
                     strokeWidth="2.25"
                   />
@@ -624,23 +1022,26 @@ function OneMap({
                 ) : (
                   <rect
                     className={on ? "pl-k" : "pl-o"}
-                    x={cx - 5}
-                    y={cy - 5}
-                    width="10"
-                    height="10"
+                    x={cx - half}
+                    y={cy - half}
+                    width={2 * half}
+                    height={2 * half}
                   />
                 )}
-                <text
-                  x={cx + l.dx}
-                  y={cy + l.dy}
-                  textAnchor={l.anchor}
-                  className="bk-map__name"
-                >
-                  {p.name.replace(/^(Region of the|The) /, "").replace(
-                    / River$/,
-                    ""
-                  )}
-                </text>
+                {l && (
+                  <text
+                    x={cx + l.dx}
+                    y={cy + l.dy}
+                    textAnchor={l.anchor}
+                    className="bk-map__name"
+                  >
+                    {"text" in l && l.text
+                      ? l.text
+                      : p.name
+                          .replace(/^(Region of the|The) /, "")
+                          .replace(/ River$/, "")}
+                  </text>
+                )}
               </g>
             );
           })}
