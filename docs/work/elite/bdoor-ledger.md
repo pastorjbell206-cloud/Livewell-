@@ -951,3 +951,59 @@ the Talmud on sickness and sin, and Sanhedrin 43a; the Theodotus inscription;
 Neusner, Sanders, Dunn, Levine, Haber, Licona, Held, Strauss by name; the
 Didache's "hypocrites"; the textual notes on 9:14 and 9:34 (all in the deep
 note, not needed); John 4:35.
+
+## The plain notes on Matthew 10 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/10.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 3, 6, 9, 13 and 15).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Twelve tribes | 1-4 | Earlier ledger (Mark 3) | Earlier ledger |
+| Apostolos only at 10:2 in Matthew | 1-4 | Greek text in the repository (G652) | Script |
+| The four lists; Peter first, Judas last; Thaddaeus and "Judas son of James" | 1-4 | Matthew 10:2-4; Mark 3:16-19; Luke 6:14-16; Acts 1:13 | BSB text. "Most think" one man |
+| Kananaios from the Aramaic for zealous; meaning (zeal for the Law or resistance to Rome) left open | 1-4 | Earlier ledger (Mark 3) | Earlier ledger. The claim that the Zealot party is attested only from AD 66 (deep note) was not confirmed and is not used |
+| Iscariot: "man of Kerioth" most common; the sicarius theory; John 6:71 "son of Simon Iscariot" | 1-4 | Joshua 15:25; John 6:71; Bible dictionaries; Joan Taylor (sicarius) as reported | Search: ehrmanblog.org "The Name Judas Iscariot"; abarim-publications.com; biblestudytools.com dictionary |
+| Samaritans worshipped on Gerizim; their temple destroyed by John Hyrcanus, most likely around 110 BC | 5-15 | Bourgel, JBL 2016 (about 112/111 BC); archaeology of Shechem (111-110 BC); Jewish Encyclopedia | Search: wikipedia.com Hyrcanus I; jewishencyclopedia.com "Hyrcanus, John". "Most likely around" kept, since sources range from about 120 to 109 BC; no Josephus section given |
+| Samaritans kept the books of Moses | 5-15 | Standard | Common reference fact, stated plainly |
+| "Jews do not associate with Samaritans" | 5-15 | John 4:9 | BSB text |
+| Ktaomai "acquire" in 10:9 | 5-15 | Greek text (ktēsēsthe) | Repository Greek text |
+| Mark allows a staff and sandals; Luke forbids the staff; two explanations | 5-15 | Mark 6:8-9; Luke 9:3 | BSB text. Stated as views |
+| 1 Corinthians 9:14; 1 Timothy 5:18 | 5-15 | BSB | BSB text |
+| Didache 11: a travelling apostle who stays three days or asks for money is false | 5-15 | Didache 11 | Earlier ledger (Matthew 7) |
+| Shalom greeting; shaking off dust (Acts 13:51) | 5-15 | Earlier ledger (Mark 6) | Earlier ledger |
+| Sodom and Gomorrah; Ezekiel 34:5; 9:36 | 5-15 | Genesis 19; BSB | BSB text |
+| Gentile mission: critical view; sequence; 15:24; Romans 1:16; 10:18; 28:19 | 5-15 | BSB; deep note `hard` | Stated as views. Sim, Jeremias and Levine (deep note) not named |
+| Forty lashes limit; the Mishnah's forty less one (Makkot 3:10, later); Paul's five floggings | 16-25 | Deuteronomy 25:3; Mishnah Makkot 3:10; 2 Corinthians 11:24 | BSB text; search: en.wikipedia.org "Malkot (Judaism)"; myjewishlearning.com Makkot 22; sefaria.org Jerusalem Talmud Makkot 3.9. The synagogue attendant (deep note) not confirmed and not used |
+| James killed by "King Herod" | 16-25 | Acts 12:1-2 | BSB text. No year given |
+| Felix, Festus, King Agrippa | 16-25 | Acts 24 to 26 | Earlier ledger (Mark 13) |
+| Tacitus: Nero blamed Christians for the fire of 64; many killed | 16-25 | Tacitus, Annals 15.44 | Earlier ledger |
+| Pliny, Letters 10.96 (around 111 or 112): asks Trajan whether the name itself should be punished | 16-25 | Pliny | Search: yorku.ca Pliny 10.96-97; fordham.edu sourcebook; bartehrman.com. Paraphrased; "around 111 or 112" since sources say late 111 or 112 |
+| Genesis 3:1 "crafty"; Hosea 7:11 "a silly, senseless dove" | 16-25 | BSB | BSB text. The Septuagint's phronimos and the midrash (deep note) not used |
+| Beelzebul possibly "lord of the house" | 16-25 | Earlier ledger (Mark 3: "lord of the exalted house") | Earlier ledger; "may mean" |
+| Micah 7:6; Exodus 4:10, 12 | 16-25 | BSB | BSB text |
+| Schweitzer: Jesus expected the Son of Man before the twelve returned; proved wrong; German 1906, English The Quest of the Historical Jesus (1910) | 16-25 | Schweitzer | Search: religion-online.org; Churchman 125/4 (gospelstudies.org.uk); people.bu.edu (Boston Collaborative Encyclopedia); gutenberg.org. Paraphrased |
+| Chrysostom, Homily 34 on Matthew: Jesus would come to them before they had gone round the towns, a comfort for the persecuted | 16-25 | Chrysostom | Search: newadvent.org/fathers/200134.htm; ccel.org NPNF vol. 10. Paraphrased; "a preacher of the late 300s" (his Matthew homilies are usually dated about 390; given only as "late 300s") |
+| Readings of 10:23: resurrection (28:18), AD 70, final coming with an unfinished mission | 16-25 | Deep note; standard positions | Stated as views, no names (France, Davies and Allison, Luz not named) |
+| 16:28; 24:34; 28:18; Daniel 7 | 16-25 | BSB | BSB text; the closing line matches the Mark 13 note |
+| Flat roofs for announcements | 26-33 | Earlier ledger (Mark 2; Mark 13) | Earlier ledger |
+| Assarion a small copper coin; Luke 12:6 five for two | 26-33 | Bible dictionaries; BSB | Search: biblia.com NET note on 10:29; ferrelljenkins.blog. The exact fraction (sixteenth or tenth of a denarius) conflicts across sources and is not given. Diocletian's price edict and Deissmann not used (not confirmed) |
+| Greek of 10:29 "without your Father" (aneu tou patros); "the will of" supplied | 26-33 | Greek text in the repository | Repository |
+| Gehenna, Hinnom, child sacrifice; the rubbish dump is late and unsupported | 26-33 | Jeremiah 7:31; Bailey (1986) | Earlier ledger (Mark 9) |
+| 1 Samuel 14:45; Proverbs 9:10; 11:28 | 26-33 | BSB | BSB text |
+| Views on hell (endless conscious separation; final destruction; hope of restoration) | 26-33 | Standard positions | Stated as views, no side, matching the Mark 9 note |
+| Peter's denial and restoration | 26-33 | Matthew 26:69-75; John 21:15-19 | BSB text |
+| Family as the unit of life; the cross Rome's death for slaves and rebels | 34-39 | Earlier ledger (Mark 8 and 15) | Earlier ledger |
+| Stauros first in Matthew at 10:38 | 34-39 | Greek text (G4716) | Script |
+| "Hate" as "love less" in comparison; Genesis 29:30-31 (Hebrew "hated", BSB "unloved"); the comparative reading questioned by some | 34-39 | Luke 14:26; Genesis 29:30-31; Adam Clarke; a Cambridge article on the idiom | Search: bibletools.org (Clarke); freebiblecommentary.org "Hate"; cambridge.org core-reader; vridar.org (the dissent) |
+| Isaiah 9:6; 26:52; 5:9; 15:4-6; Romans 12:18; 1 Peter 3:15; Psalm 27:10; Mark 10:29-30 | 34-39 | BSB | BSB text |
+| Care: rejection by family; safety and the police or a crisis line | 34-39 | CLAUDE.md, care for the reader | Pastoral, not a historical claim |
+| A messenger stands for the sender | 40-42 | Standard (deep note) | Kept general |
+| "Little ones" means disciples; 18:6; 25:40 | 40-42 | BSB | BSB text |
+
+Left out: the Mishnah on courts of twenty-three; the synagogue attendant;
+Herod Agrippa I and the year of James's death; the Zealot party's date; the
+Septuagint's phronimos; Song of Songs Rabbah; the assarion's exact value;
+Diocletian's edict and Deissmann; Crossan and the Cynics; the Essenes'
+travel (Josephus); Tertullian on flight; Sim, Jeremias, Levine, France, Davies
+and Allison, Luz by name; the textual notes on 10:3, 10:8 and 10:23.
