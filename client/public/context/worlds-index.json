@@ -15,6 +15,14 @@
       "group": "Ancient Near East",
       "blurb": "A long, sourced portrait of the world the Old Testament was written in: the land between empires, the village and the house, kings and the Temple, the gods next door, covenant and law, scribes and prophets, and exile and return.",
       "parts": 7
+    },
+    {
+      "id": "roman-world",
+      "title": "The Roman world",
+      "seoTitle": "The Roman World of Paul: What It Was Really Like",
+      "group": "The Greco-Roman World",
+      "blurb": "A long, sourced portrait of the Roman world the first churches lived in: roads, ships and cities, Caesar and the law, the household and the patron, the gods and the emperor, clubs and meals, work and the crowded city, letters, and how the church looked from outside.",
+      "parts": 8
     }
   ]
 }

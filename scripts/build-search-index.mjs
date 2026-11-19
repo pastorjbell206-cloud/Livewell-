@@ -304,6 +304,7 @@ function nation() {
 const WORLD_KEYWORDS = {
   "Second Temple Judaism": "world of jesus first century",
   "Ancient Near East": "old testament ancient near east israel judah assyria babylon exile",
+  "The Greco-Roman World": "roman empire rome paul acts letters caesar emperor citizenship slavery corinth ephesus philippi",
 };
 
 /** The world portraits (/resources/context/world/:id), from the index build-context-index.mjs writes. */
