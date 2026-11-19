@@ -1035,3 +1035,153 @@ numbering of Aquinas's reply and of Pliny (not given on the page).
 
 Matthew 14 onward, in the same shape. Matthew 7:21-23's Old Testament note
 waits for a writer (see the guard above).
+
+## Continuation: Matthew 14 to 16 (2026-11-19)
+
+Two repairs the field-order check surfaced, then John's death, the feedings,
+the walk on the water, tradition and the Law, the Canaanite woman, the rock
+and the keys and the cross, passage by passage, in plain words, in the same
+data shape (`client/public/bible/notes/matthew/plain/14.json` to `16.json`;
+each chapter note now says `"plain": true`). Data and one validator line; no
+page code changed, so no build, Lighthouse or screenshots were run.
+
+### The two repairs
+
+**Matthew 7:21-23.** Its Old Testament note held only Luke 6:46. It now
+holds the Old Testament behind the passage: Jesus' "depart from Me, you
+workers of lawlessness" echoes Psalm 6:8; Isaiah 29:13 on lips and hearts;
+and "know" in its covenant sense from Amos 3:2. The Luke 6:46 line moved to
+the end of "what the first hearers would catch". `OT_FIELD_KNOWN` in
+`scripts/validate-bible-notes.mjs` is now empty: the check stands with no
+exceptions.
+
+**Mark 16:9-14** (a live page). Its Old Testament note held only
+1 Corinthians 15:4-5, about the witnesses, not the Old Testament. It now
+holds Deuteronomy 19:15 (two or three witnesses, and these verses pile up
+witnesses), Paul's "according to the Scriptures" (1 Corinthians 15:4), Luke
+24:25 on the prophets, and Psalm 16:10 as Peter reads it in Acts 2:27.
+Nothing else in Mark changed.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 14 | 4 (the death of John the Baptist; five thousand fed; walking on the water, and Peter; healing at Gennesaret) | 2,913 |
+| Matthew 15 | 5 (the tradition of the elders and the command of God; what defiles a person; the Canaanite woman; healing on the mountain; four thousand fed) | 3,257 |
+| Matthew 16 | 6 (the demand for a sign; the leaven; you are the Christ; the rock and the keys; get behind Me, Satan; take up your cross) | 3,871 |
+| Total | 15 | 10,041 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. These
+chapters lean on Mark 6 to 9, so they are shorter than Matthew 11 to 13: they
+point to the Mark notes, reuse their verified claims and care wording, and
+say what Matthew does differently. Herod himself wanting John dead and
+fearing the people (close to Josephus); the feeding placed after John's
+death and the two tables; "women and children" and Exodus 12:37; Peter on
+the water, worship in place of hardened hearts, "doubt" only here and at
+28:17; no explanation of the washing; no "Thus all foods are clean"; the
+Canaanite, the silence, 15:24, no "first"; the healing on the mountain;
+Jeremiah, "the Son of the living God" and verses 17-19; skandalon; "the Son
+of Man coming in His kingdom".
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and checked by
+eye: all 15 are under their right headings (what is happening; the first
+hearers; the Old Testament behind it; the hard verse; what it asks), and the
+validator's field check passed with no exceptions.
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "Repairs to two Old Testament
+notes" and "The plain notes on Matthew 14", "15" and "16". 17 web searches
+(5, 4, 8). New sources: Josephus, Antiquities 18.118 in Whiston's words on
+Herod's fear of a rebellion; Antiquities 18.136-137 (Herodias's first husband
+Herod; Salome married Philip the tetrarch) and the two explanations of the
+names; 2 Maccabees 6:7; Augustine, Sermon 76 and Sermon 77; Josephus,
+Antiquities 13.297; hupokritēs; Chrysostom, Homilies 52 and 54 on Matthew;
+Cranmer's 1548 prayer and the crumbs; the omission of 16:2b-3 in Sinaiticus
+and Vaticanus; Catechism 553 and 881; Pastor Aeternus (1870); the Orthodox
+reading (oca.org); binding and loosing (Jewish Encyclopedia, marked later)
+and Josephus, Jewish War 1.111; Bertrand Russell's 1927 lecture. Ancient,
+patristic and rabbinic writers are paraphrased; the Cranmer words are quoted
+in single quotes as not Scripture.
+
+### Cut or narrowed
+
+The Mark 6 run's "suspicious of John's influence" is narrowed with Whiston's
+wording now found (fear of a rebellion). The date of 2 Maccabees, the
+Machaerus excavations, John's tomb at Sebaste, Juvenal, the Mishnah on
+birthdays, beheading and the bread blessing; Hume, Paulus, Strauss, Lewis and
+Keener on the miracles (the views kept, unnamed); Chrysostom's "two tables"
+(the contrast kept, unattributed); the date of Augustine's sermon; Furstenberg,
+Boyarin, Theissen, Ringe, Dube, Levine, Croy and Luther's 1525 sermon; the
+Qumran and Enoch "planting"; Isaiah 61:3 (its BSB text has an em-dash);
+the Catholic argument from Isaiah 22 as an office handed on (not confirmed);
+"every bishop holds Peter's chair" and the named Orthodox theologians;
+Cullmann, Carson, Bultmann, Melanchthon, Calvin, Augustine's Retractations,
+Leo, Cyprian, Firmilian and Ut Unum Sint; "taste death" as a Semitic idiom;
+the distance to Caesarea Philippi; every textual note in the deep notes
+except 16:2b-3. The deep notes are unchanged underneath.
+
+### Contested matters, and how they are stated
+
+Josephus and the Gospels on why John died: political and personal, both
+given, and Matthew's "feared the people" set beside Josephus. The names of
+Herodias's husbands: both explanations, no side. Herod's wish and his grief
+(14:5, 9): the critics' "leftover from Mark" and the reply, no side. The
+miracles of the loaves: the skeptical readings stated, the Gospels' telling
+stated, "turns on whether God acts in the world at all". Tradition: the
+Mark 7 wording (Scripture and tradition, both views). The Pharisees: a
+serious movement; the Corban point where later rabbis agreed; "an argument
+among Jews"; Paul and Gamaliel; "a danger for every religious person,
+Christians first of all". Matthew's omission of "Thus all foods are clean":
+two readings (kept narrow on purpose; the wider sense still in 15:17), no
+side, with what the church came to hold. The Canaanite woman: four readings
+(a test, with Chrysostom and Augustine; the order of his mission, 10:6 and
+28:19; a real exchange in which she presses him; the diminutive), no side,
+consistent with the Mark 7 note; she is praised; "Nothing here gives any
+reader leave to look down on any people." Who the mountain crowd was: both
+readings. Two feedings or one: as the Mark 8 note. 16:12 and 23:3: two
+readings. The rock: Catholic (Peter himself; Catechism; Vatican I),
+Orthodox (Peter's confession; Chrysostom), Protestant (Christ or the
+confession; and Peter in person without successors), each as its teachers
+state it, what all three agree on, 18:18 to the disciples together, "These
+notes do not decide between the readings", in line with the book page's
+line. Binding and loosing: forbid and permit, rabbinic use marked later,
+Josephus on the Pharisees. The gates of Hades: death's power, Hades not
+Gehenna. The passion predictions: as the Mark 8 note. 16:28: Russell's
+objection, then the mountain, the resurrection and Spirit, and AD 70, no
+side, consistent with the Mark 9:1 note.
+
+### Care lines included
+
+14:1-12: grief is not a lack of faith; take it to Jesus and let a friend, a
+pastor or a counsellor carry it with you. 14:22-33: "You of little faith" is
+not a rebuke of anxiety or panic (the Matthew 8 sentences); help from a
+doctor or counsellor is wise, not faithless; the story does not promise
+that faith keeps anyone from sinking. 16:21-23: "Get behind Me, Satan" is
+not Jesus calling Peter evil; Peter is sent back to follow, not sent away.
+16:24-28: deny yourself is not self-hatred (the Mark 8 wording); taking up
+the cross is not a command to bear abuse; "If you are being abused, seek
+safety first. Talk to a pastor or a counsellor you trust, or call a local
+domestic violence line." No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` after each chapter. Then all 36 commands of the
+content-gates step in ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 32 chapters in
+plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732
+entries up to date; passage index 623 files match; verify-sources: 22 texts
+intact). `pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped;
+1,653 tests passed, 73 skipped. No build, so no dist/ and no lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient, patristic and rabbinic writer (all
+paraphrased); the date of Augustine's Sermons 76 and 77 and of Chrysostom's
+homilies (not given); the exact wording of Catechism 553 and 881 and of
+Pastor Aeternus (seen only through quotations, so paraphrased); Queen
+Alexandra's dates (not given).
+
+### Next
+
+Matthew 17 onward, in the same shape.
