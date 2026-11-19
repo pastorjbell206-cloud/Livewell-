@@ -5496,3 +5496,27 @@ Left out: the Quadratus trial; Ananias's ten years in Josephus versus other coun
 | Care line for those kept waiting by an unjust system, Acts 12 form, Find Help | 27 | CLAUDE.md, care for the reader | Pastoral |
 
 Left out: the Cypriot magician; Felix's term dates; the claim that releasing prisoners for money was common (not checked); Drusilla's age and her son's death at Vesuvius; Felix's recall and the complaints against him; the Nazarenes as a later Jewish name for Christians.
+
+## The plain notes on Acts 25 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/25.json`. 2 web searches (and the Festus search of Acts 24).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Festus's arrival debated: most between about AD 58 and 60, some earlier | 1-5 | Reference works | Acts 24 search (wikipedia "Porcius Festus"; ISBE; Encyclopedia of the Bible) |
+| Festus died in office; James stoned before the next governor came, about AD 62 | 1-5 | Josephus, Antiquities 20.200 | Earlier ledger (book page); deep note `historical` |
+| The ambush plan repeated (23:12-15); "the Jews" at 25:2, 7, 9-10 and 24 in the 13:42-47 form with pointers | 1-5, 6-8, 9-12, 22-27 | BSB; acts/plain/13.json | Repository |
+| Psalm 56:6; 118:9; Proverbs 21:1; Deuteronomy 19:15, 17; Proverbs 18:17; Leviticus 19:15; 1 Kings 3:9 | 1-8, 13-21 | BSB | Repository |
+| The appeal: portrait sentences ("the citizen's last protection"; "a legal formula ... out of a provincial court to the emperor's"; Pliny, Letters 10.96, about AD 112); the legal steps debated; after Festus consulted his council the case could not be sent to Jerusalem | 9-12 | Roman-world portrait part 2; deep note `cultural` | wrom-ledger |
+| Caesar is Nero, AD 54 to 68; the fire of July 64 and the Christians killed (Tacitus); the early years remembered by Roman writers as good government, with advisers such as Seneca | 9-12 | Book page timeline; earlier ledger (Tacitus, Annals 15.44); quinquennium Neronis | Search: roman-emperors.sites.luc.edu "Nero" (Benario); biblegateway Encyclopedia of the Bible "Nero"; cambridge.org JRS "Some reflections on the quinquennium Neronis". The exact span (54-59 or later) not given |
+| Esther 4:16; Genesis 50:20; 1 Corinthians 9:12 | 9-12 | BSB | Repository |
+| Using the law: readings, no rule drawn | 9-12 | Deep note `cultural` | Stated as readings |
+| Agrippa II son of Agrippa I (Acts 12); lands north and east of Galilee; oversight of the temple and the right to appoint the high priest | 13-21 | Encyclopedias; deep note `historical` | Search: jewishvirtuallibrary.org "Agrippa II"; encyclopedia.com "Agrippa II" |
+| Bernice his sister, widowed, at his court for long periods; rumours repeated by Josephus (Antiquities 20.145) and Juvenal (Satire 6), said to be rumours; later companion of Titus | 13-21 | Josephus; Juvenal; encyclopedias | Search: wikipedia "Berenice (daughter of Herod Agrippa)"; bibleinterp.arizona.edu "The Troubled Memory of Rome's Jewish Queen"; biblegateway Encyclopedia of the Bible "Berenice". Stated as rumours; no claim made |
+| Festus's "religion" word can mean religion or superstition; "probably" polite | 13-21 | Deep note `cultural` | Repository |
+| Festus's retelling polishes his own part (verse 9 against verse 20) | 13-21 | BSB | The text itself |
+| Festus's need for a written report (25:26-27) | 22-27 | BSB; deep note `cultural` | Repository |
+| "Our sovereign one" is "the lord" in Greek; portrait sentences on the clash | 22-27 | Roman-world portrait part 4 | wrom-ledger |
+| Innocence verdicts (23:29; 25:25); Isaiah 52:15; Psalm 146:3 | 22-27 | BSB | Repository |
+
+Left out: the number of commanders at Caesarea; Agrippa II as the last Herod to rule; Bernice's marriages beyond "widowed"; Juvenal's words; the dates of the quinquennium; the procedure of appellatio against provocatio.
