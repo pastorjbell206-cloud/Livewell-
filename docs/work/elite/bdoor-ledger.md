@@ -2393,3 +2393,32 @@ Cut: the Humphreys and Waddington astronomy (Nature, 1983); Philo's gilded shiel
 | The burial debated (unburied or common graves argued; burial the same day; Yehohanan; Joseph a council member); Paul in the 50s | 38-42 | Earlier ledger (Mark 15, 16) | Earlier ledger. No scholar named |
 
 Cut: the "paid in full" claim (doubtful; the page is silent on it); Cyprian on the seamless tunic and unity (not checked; stated as "many Christians"); Sejanus and Bammel by name; Barbet and the medical theories; Josephus on Herod's funeral spices; the 2009 Gabbatha find; Salome as Mary's sister; Humphreys and Waddington's dates (AD 30 or 33); Crossan by name; the claim that Romans always left bodies on crosses.
+
+## The plain notes on John 20 (2026-11-19)
+
+`client/public/bible/notes/john/plain/20.json`. 8 web searches. Where Mark 16 and Matthew 28 tell the morning, their verified claims are reused (women first and why historians weigh it; the differences among the four accounts; the stolen-body rumour conceding the empty tomb).
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Women first; a woman's word counted for little in court (Josephus, Antiquities 4.219); the four accounts differ; the rumour concedes the empty tomb | 1-10 | Earlier ledger (Mark 16, Matthew 28) | Earlier ledger |
+| Psalm 16:10 (used in Acts 2 and 13); Hosea 6:2; Isaiah 25:8; Genesis 1:3-5; 20:29 | 1-10 | BSB | BSB text |
+| Luke 8:2-3 (seven demons; the women who supported him); Luke 7:37 ("a sinful woman"); 19:25; 10:3; Luke 24:16; 1:12; 20:27 | 11-18 | BSB | BSB text |
+| The Gospels never call Mary Magdalene a prostitute; Gregory the Great's Homily 33 (591) joined her with Mary of Bethany and the sinful woman of Luke 7; the West kept the picture; the East kept them apart | 11-18 | Gregory, Homilies on the Gospels 33 (PL 76, 1239); earlier ledger (John 12) | Search: roger-pearse.com "A homily of Gregory the Great and Mary Magdalene"; remnantnewspaper.com; degruyterbrill.com (Hennessy); earlier ledger |
+| Decree of the Congregation for Divine Worship, 3 June 2016, raising the memorial of 22 July to a feast like the apostles'; "apostle of the apostles" (from Thomas Aquinas) | 11-18 | The decree | Search: press.vatican.va 10 June 2016; slmedia.org; catholicregister.org. Aquinas not named on the page |
+| Mē mou haptou a present imperative ("stop holding"); Noli me tangere in the Latin | 11-18 | Repository chapter note (`text`); Greek text | Repository; script |
+| Song of Songs 3:1, 4; Psalm 22:22; Ruth 1:16 | 11-18 | BSB | BSB text. The Song echo is "many readers" |
+| Emphusaō (20:22) the verb of LXX Genesis 2:7 (and Ezekiel 37:9); only here in the New Testament | 19-23 | Lexicons | Search: biblehub.com 1720; blueletterbible.org G1720 LXX; craigladams.com |
+| Genesis 2:7; Ezekiel 37:9; Micah 7:18; Acts 2; Luke 24:47 | 19-23 | BSB | BSB text |
+| Catholic: the power to forgive and retain sins in the sacrament of penance; the Council of Trent (sixteenth century, Session 14, canon 3) rests the teaching chiefly on John 20 | 19-23 | Trent; Catholic Encyclopedia "Penance" | Search: history.hanover.edu ct14; newadvent.org cathen 11618c; catholictheology.info (Pohle). Paraphrased; year not given |
+| Orthodox: the mystery of confession founded on these verses; the priest often described as a witness, praying God's forgiveness | 19-23 | Orthodox parish and teaching pages; Pomazansky (roca.org) | Search: saintandrewgoc.org; holyapostlesgo.org; stgeorgecathedral.net; roca.org. Stated generally ("often describe") |
+| Lutheran: the Office of the Keys in Luther's Small Catechism, citing John 20:22-23: authority to forgive repentant sinners and withhold forgiveness from the unrepentant as long as they do not repent | 19-23 | Small Catechism | Search: els.org part 5; catechism.cph.org; witness.lcms.org. Paraphrased |
+| Reformed and other Protestants: declared in the preaching of the gospel; perfect passive "have been forgiven" | 19-23 | Reformation Study Bible note on 20:23; ligonier.org/tabletalk; repository `text` (apheōntai) | Search. Calvin not named |
+| Didymus "twin"; 11:16; 14:5; 20:20 | 24-29 | BSB; deep note | BSB text |
+| Suetonius, Domitian 13: a circular letter beginning "Our Master and our God"; Domitian AD 81 to 96; the link to 20:28 debated | 24-29 | Suetonius | Search: lexundria.com suet_dom 13; en.wikipedia.org John 20:28; ncregister.com. Paraphrased; "Some scholars ... Others doubt" |
+| Psalm 35:23; Deuteronomy 6:4; Psalm 13:1; 1 Peter 1:8; 1:1 | 24-29 | BSB | BSB text |
+| Nicene Creed wording | 24-29 | The site's Nicene Creed page (`client/public/creeds/documents/nicene-creed.json`) | Repository, copied |
+| Chapter 21 and the old copies (book page wording) | 30-31 | Book page "Two passages" | Repository |
+| 20:31 pisteuēte / pisteusēte; either form usable for both | 30-31 | Repository chapter note (`text`) | Repository. Manuscripts not named on the page |
+| 2 Samuel 7:12-16; Isaiah 61:1 | 30-31 | BSB | BSB text |
+
+Cut: the 1969 calendar change; Hippolytus and the Song of Songs; Trent's year and canon wording; the Small Catechism's "as valid and certain" sentence (not confirmed in the search); Calvin and the 1689 Confession; Domitian's rejection of the title (Statius); the medical and Jaubert matters (not needed); Pentecost theories by name.
