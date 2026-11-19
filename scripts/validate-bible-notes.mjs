@@ -411,9 +411,7 @@ const OT_NAMED = new RegExp(`${OT_BOOK.source}|\\b(the Law|the Prophets|the Psal
 // Passages whose Old Testament note names none of these, reported for a
 // writer to look at rather than changed by a script. Remove an entry once
 // its note is put right.
-const OT_FIELD_KNOWN = new Set([
-  "matthew/7 21-23", // holds only Luke 6:46 (reported 2026-11-19, Matthew 11 to 13 run)
-]);
+const OT_FIELD_KNOWN = new Set([]);
 
 let intros = 0, notes = 0, verseFiles = 0, versesMissing = 0, studies = 0, plains = 0;
 for (const b of books) {

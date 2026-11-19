@@ -1157,3 +1157,10 @@ rabbinic parables of treasure and the pearl; Irenaeus and Origen on the
 treasure; Jerome on the hundredfold; the Scofield reading; Jülicher's,
 Dodd's, Jeremias's and Kingsbury's books; the textual notes on 13:35 and
 13:55.
+
+## Repairs to two Old Testament notes (2026-11-19, Matthew 14 to 16 run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Matthew 7:23 echoes Psalm 6:8 ("Depart from me, all you workers of iniquity"); Isaiah 29:13 on lips and hearts; Amos 3:2 "Only you have I known"; "known" as chosen and bound in covenant | Matthew 7:21-23 | BSB | BSB text. The Luke 6:46 line moved from the Old Testament note to the end of "first hearers" |
+| Deuteronomy 19:15 (two or three witnesses); 1 Corinthians 15:4 "according to the Scriptures"; Luke 24:25; Psalm 16:10 quoted in Acts 2:27 | Mark 16:9-14 | BSB | BSB text. Paul "in the 50s" from the earlier ledger (Mark 16) |
