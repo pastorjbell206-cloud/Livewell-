@@ -4569,3 +4569,25 @@ chapter, with the deep note, the verse notes and the book page.
 | Herodotus (400s BC), Histories 2.41: Egyptians would not use a Greek's knife, spit or cauldron | 26-34 | Herodotus | Search: "Herodotus 2.41 Egyptians ... knife spit or cauldron of a Greek" (lexundria.com 2.41; fgh.perseids.org). Paraphrased; marked as a different people and a much later time; Assmann's caution noted, so no wider claim made |
 | Joseph's separate table ‘probably’ also for rank; the fivefold portion read by many as a quiet test | 26-34 | Deep note (`historical`, `cultural`) | Repository; hedged |
 | Luke 14:13; Romans 5:8 | 26-34 | BSB | Repository |
+
+## The plain notes on Genesis 44 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/44.json`. Two web searches for
+this chapter, with the deep note, the verse notes and the book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Laws of Hammurabi (about 1754 BC, the book page's date), law 6: theft of temple or palace property punished by death | 1-13 | Hammurabi | Search: "Code of Hammurabi law 6 ... temple or palace put to death" (avalon.law.yale.edu; biblicaltraining.org). The law number is not printed on the page |
+| Torn clothes as grief; 37:29, 34 | 1-13 | Deep note (`cultural`); BSB | Repository |
+| Babylonian omen texts on oil dropped on water in a cup | 1-13 (hard) | Old Babylonian lecanomancy texts as summarised | Search: "lecanomancy oil on water divination Old Babylonian texts Genesis 44:5" (en.wikipedia.org "Lecanomancy"; armstronginstitute.org citing Kitchen). Stated generally; no tablet named, no date given, Kitchen's Hyksos claim and the Egyptian statuettes not used |
+| The divination words spoken only inside the trick; three readings (disguise; real practice before the law; irony); judgments of the trap | 1-13 (hard) | Deep note (`hard`) | Repository; no side; no claim that Joseph practised it |
+| Leviticus 19:26; Deuteronomy 18:10; ‘good with evil’ and 50:20 | 1-13 | BSB; deep note (`literary`) | Repository |
+| ‘Judah and his brothers’; Judah reads the false charge as God exposing the old guilt | 14-17 | BSB; deep note (`literary`) | Repository |
+| Psalm 51:3; Luke 18:13 | 14-17 | BSB | Repository |
+| Court address (‘my lord’, ‘your servant’); ‘father’ runs through the speech (no count given); ‘my wife bore me two sons’ accepted without resentment | 18-29 | Deep note (`cultural`, `literary`) | Repository. The deep note's count of fifteen not repeated (not checked) |
+| 2 Samuel 18:33; 1 Samuel 18:1 (‘knit together’, the deep note's link for 44:30) | 18-29 | BSB | Repository |
+| Judah sold Joseph (37:27); now offers himself as a slave in Benjamin's place: the turning point | 30-34 | BSB; deep note (`doctrines`, `christ`) | Repository |
+| Substitution as a Christian reading, not a prophecy; the guilty for the innocent against the innocent for the guilty; Revelation 5:5; Mark 10:45; 1 Peter 3:18; Genesis 49:8 | 30-34 | Deep note (`christ`); BSB | Repository; marked ‘a reading’ |
+
+Cut: the Hyksos-period date for cup divination (Kitchen) and the Middle
+Kingdom statuettes; the count of ‘father’ fifteen times.
