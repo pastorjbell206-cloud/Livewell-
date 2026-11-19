@@ -5438,3 +5438,35 @@ Jonathan killed by the sicarii; Paul's speech (Acts 22, next).
 | Using rights or laying them down: readings, no rule drawn | 25-30 | Deep note `questions` | Stated as readings |
 
 Left out: Gamaliel as Hillel's grandson; Paul's family from Gischala (Jerome); the dates and names of the Porcian and Valerian laws; the punctuation debate over "raised in this city".
+
+## The plain notes on Acts 23 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/23.json`. 2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sanhedrin led by the high priest; called by the commander (22:30) | 1-5 | Jewish-life portrait; BSB | Repository |
+| Ananias son of Nedebaeus: high priest from about AD 47, about a dozen years, end date varies; his servants took the ordinary priests' tithes by force; killed by rebels at the outbreak of the war in 66 as a friend of Rome; house burned | 1-5 | Josephus, Antiquities 20.205-207; Jewish War 2.441 (as cited), paraphrased | Search: en.wikipedia.org "Ananias son of Nedebeus"; jewishencyclopedia.com "Ananias, son of Nebedeus"; encyclopedia.com. The trial in Rome under Quadratus (52) not used. "Luke himself does not say" that his death fulfilled 23:3 |
+| Paul's reply: did not recognise him (absence; informal sitting; eyesight, Galatians 4:15; 6:11), irony, or accepted rebuke; Luke does not settle | 1-5 | Deep note `hard` | Stated as readings |
+| Exodus 22:28 (BSB wording differs from Acts 23:5, said so); Ezekiel 13:10-11; Leviticus 19:15 | 1-5 | BSB | Repository |
+| Sadducees and Pharisees: portrait sentences (few and powerful, priestly and wealthy, written law only, no resurrection, angels, spirits; Pharisees popular, mostly lay, resurrection) | 6-10 | Jewish-life portrait part 5 | worlds-ledger (portrait wording) |
+| Tactic or sincere: Philippians 3:5; 24:15, 21; 26:6-8; Gamaliel 5:38-39 | 6-10 | Deep note `hard`; BSB | Stated as readings |
+| Daniel 12:2; Isaiah 26:19; Job 19:25; Exodus 3:6; Luke 20:37-38 | 6-10 | BSB | Repository |
+| "Must" (dei) for God's plan, Luke 9:22; Romans 1:10-13; 15:23-24 | 11 | Deep note `literary`; BSB | Repository |
+| Joshua 1:9; Isaiah 41:10; Genesis 28:15 | 11 | BSB | Repository |
+| "The Jews" at 23:12, 23:20 and 23:27 in the 13:42-47 form with pointers | 12-15, 16-22, 23-30 | acts/plain/13.json | Repository |
+| The oath: the Greek verb (anethematisan) means to bind under a curse | 12-15 | Greek text in the repository; deep note `cultural` | Repository |
+| Sicarii pointer to the 21:37-40 note | 12-15 | Earlier ledger (Acts 21) | Earlier ledger |
+| Exodus 20:13; Deuteronomy 27:25; Psalm 56:6; 1 Samuel 14:24, 44-45 | 12-15 | BSB | Repository |
+| Paul's nephew the only mention of his family | 16-22 | BSB | Repository (no other mention in the New Testament) |
+| 2 Kings 5:2-3; Esther 2:21-23; Psalm 33:10 | 16-22 | BSB | Repository |
+| Third hour of the night about 9 pm; 470 men; the letter's standard form; the letter improves Lysias's part (21:33; 22:25-29) | 23-30 | Deep note `cultural`; BSB | Repository; stated as the text shows |
+| Claudius Lysias's name an inference | 23-30 | Roman-world portrait | wrom-ledger |
+| Innocence verdicts 25:25; 26:31-32; Luke 23:4, 14, 22 | 23-30 | BSB | Repository |
+| Exodus 20:16; Proverbs 12:19; 2 Kings 6:17 | 23-30 | BSB | Repository |
+| Antipatris on the road to the coastal plain, roughly forty miles from Jerusalem by the usual reckoning | 31-35 | Commentaries and dictionaries | Search: biblehub commentaries 23:31 (Alford: 42 Roman miles); jw.org Insight "Antipatris" (about 40 miles); freely-given.org. Distances vary, so "roughly" |
+| Caesarea built by Herod the Great, governors' city; the Praetorium his palace used as the governor's headquarters | 31-35 | Book page map card; deep note `cultural` | Repository |
+| Why Felix asked about the province: not said | 31-35 | BSB | Stated as uncertain |
+| Mark 13:9; Luke 21:12; Psalm 119:46; 1 Samuel 19:11-12 | 31-35 | BSB | Repository |
+
+Left out: the Quadratus trial; Ananias's ten years in Josephus versus other counts; "dexiolaboi" (spearmen) and its uncertain meaning; the forum domicilii rule and Cilicia's place in Syria (not verified); Antipatris named for Herod's father; the length of Felix's term (Acts 24).
