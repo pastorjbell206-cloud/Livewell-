@@ -476,3 +476,38 @@ Left out: the Josephus lamb count; Pliny's prices for nard; b. Sanhedrin 43a;
 Jeremias, Humphreys and Brown by name; Celsus, Origen, Maximus and Cullmann;
 Klausner, Winter, Cohn and Danby by name; m. Sanhedrin 5:2 and 7:5; m. Bava
 Kamma 7:7 on roosters; the claim that a servant girl could not give evidence.
+
+## The plain notes on Mark 15 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Pilate governor about AD 26 to 36 | 15:1-5 | Earlier ledger (Timeline and map) | Earlier ledger |
+| The Pilate stone: found 1961 at Caesarea by an Italian team (Frova); "prefect of Judea"; the only known inscription naming him; Israel Museum | 15:1-5 | The inscription | Search: en.wikipedia.org Pilate stone; madainproject.com; thecorebible.org |
+| Tacitus, writing around 116: Christ executed under Tiberius by Pontius Pilate | 15:1-5 | Annals 15.44 | Search: en.wikipedia.org Tacitus on Jesus; earlychristianwritings.com. Paraphrased; the "procurator" title debate not raised |
+| Josephus: standards with the emperor's image brought in by night, withdrawn after protest; Philo charges greed, violence, theft; both accounts hostile | 15:1-5 | Josephus, Jewish War 2.169-174, Antiquities 18.55-59; Philo, Embassy to Gaius 299-305 | Search: julianspriggs.co.uk "Josephus Philo Pilate"; livius.org Pontius Pilate; mdpi.com Religions 11 (2020) on Pilate in Josephus and Philo. The aqueduct episode was not confirmed and is not used |
+| John 18:31; Acts 7 | 15:1-5 | BSB | BSB text |
+| Isaiah 53:7, 53:12, 50:6, 53:9; Mark 10:34 | 15 | BSB | BSB text |
+| The Passover release known only from the Gospels; some think it a literary creation; others note festival pardons elsewhere | 15:6-15 | HTR article on Barabbas; Ehrman; Wright (as summarised) | Search: cambridge.org HTR "Barabbas, the Scapegoat Ritual"; ehrmanblog.org; en.wikipedia.org Barabbas. m. Pesachim 8:6 not used (wording not confirmed) |
+| Barabbas means "son of the father" (Aramaic bar abba) | 15:6-15 | Standard lexicons | Common etymology; the irony is given as what "many readers have noticed" |
+| The "Christ-killer" charge and its harm, rejected; Nostra Aetate 4 (1965): "cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today" | 15:6-15 | Second Vatican Council, Nostra Aetate 4 | Search: jewishvirtuallibrary.org Nostra Aetate; ebsco.com research starter; forward.com; christianunity.va. Quoted in single quotes as a translation |
+| Acts 4:27 | 15:6-15 | BSB | BSB text |
+| Purple, crown, kneeling as royal honours; praetorium a Latin word | 15:16-20 | Earlier ledger (Latin loanwords); deep note | The "Hail, Caesar" parallel and the palace location were cut (not checked) |
+| Cicero called crucifixion the cruellest and most disgusting penalty | 15:21-32 | Cicero, Against Verres 2.5.165 (crudelissimum taeterrimumque supplicium) | Search: bible-history.com; michaelfbird.substack.com; stpaulcenter.com. Paraphrased |
+| Up to five hundred captured Jews crucified a day during the siege of 70 | 15:21-32 | Josephus, Jewish War 5.449-451 | Search: vision.org "Josephus and the Siege of Jerusalem"; jamestabor.com |
+| Giv'at ha-Mivtar, 1968: ossuary of Yehohanan; right heel bone with an iron nail and wood fragments; published 1970 (Tzaferis; Haas); Zias and Sekeles (1985) corrected details; a crucified man buried in a family tomb; such remains rare | 15:21-32 | Israel Exploration Journal 20 (1970); Zias and Sekeles, IEJ 35 (1985) | Search: en.wikipedia.org Jehohanan; cojs.org ossuary of Yehohanan; biblicalarchaeology.org "A Tomb in Jerusalem Reveals the History of Crucifixion". The site does not call it the only find (others have since been reported outside Israel) |
+| Cyrene in North Africa with a Jewish community; Acts 6:9; Rufus in Romans 16:13, identity uncertain | 15:21-32 | BSB; deep note | BSB text. The 1941 Kidron ossuary not used |
+| Hours counted from sunrise; third hour about 9, sixth noon, ninth 3 | 15:21-32 | John 11:9 (twelve hours of daylight); standard | Kept general |
+| Psalm 22:1, 7, 18, 24, 27; Psalm 69:21; Amos 8:9; Luke 22:37; Malachi 4:5 | 15 | BSB | BSB text |
+| Verse 28 absent from the oldest manuscripts | 15:21-32 | Repository chapter note (`text`) | Repository |
+| Myrrh-wine perhaps to dull pain | 15:21-32 | Deep note | Stated as "may have been"; b. Sanhedrin 43a not used |
+| Three readings of the cry (psalm of trust; real abandonment, bearing judgment, 2 Corinthians 5:21; speaking for humanity) | 15:33-39 | Deep note; standard positions | Stated as views, no names |
+| Two curtains; inner or outer debated; meanings (way opened, judgment, both); Hebrews 10:20 | 15:33-39 | Ulansey and others as summarised; JETS 48 (2005); Themelios on the rending of the veil | Search: ets.galaxie.com JETS 48.2; thegospelcoalition.org Themelios; mysterium.com. Josephus's description of the curtain not used |
+| The same verb for "torn" at 1:10 and 15:38 | 15:33-39 | Greek text in the repository; Mark 1 plain note | Repository |
+| Centurion the first human being in the story to call Jesus Son of God | 15:33-39 | Mark's text (demons in 3:11 and 5:7; the voice in 1:11 and 9:7) | BSB text |
+| Deuteronomy 21:23; Luke 23:51 | 15:40-47 | BSB | BSB text |
+
+Left out: Varus's two thousand crucified; Josephus, Jewish War 4.317; Philo's
+Carabas; the Antonia and the Via Dolorosa; Augustus as divi filius; the
+Church of the Holy Sepulchre; rolling and square blocking stones; Reimarus,
+Brown, Calvin, Augustine and Moltmann by name; Helen Bond and the Jewish
+scholars named in the deep note.
