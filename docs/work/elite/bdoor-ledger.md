@@ -5258,3 +5258,35 @@ Silvanus of the letters (not searched); the Noachide commandments.
 Left out: the madder-root dye; Hypsistos dates; Neapolis's distance from
 Philippi; why Paul did not claim citizenship (Luke does not say); a date for
 the trip; the girl's later life.
+
+## The plain notes on Acts 17 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/17.json`. 5 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Amphipolis and Apollonia on the Via Egnatia; Thessalonica a Greek city running its own affairs | 1-4 | Roman-world portrait, part 1; deep note | wrom-ledger |
+| Isaiah 53:5; Luke 24:26; Psalm 2:6; 1 Corinthians 1:23 | 1-4 | BSB | Repository |
+| "The Jews" (17:5, 13): opponents in Thessalonica; Jews believed (17:4, 11-12); Paul and Silas Jews; pointer to 2:22-28 | 5-9, 10-15 | BSB; acts/plain/13.json form | Repository |
+| Politarchs; inscription from the arch over the Roman road, British Museum | 5-9 | Book page wording | Earlier ledger; wrom-ledger |
+| "Another king": a charge of disloyalty, twisting Paul's message; John 18:36; no modern political use made | 5-9 | BSB | Repository |
+| Zechariah 9:9; Daniel 6:5 | 5-9 | BSB | Repository |
+| Berea = Veria | 10-15 | Standard | Standard |
+| Deuteronomy 18:22; Psalm 1:2; Jeremiah 29:13 | 10-15 | BSB | Repository |
+| A Roman city crowded with gods; Athens "full of idols" | 16-21 | Roman-world portrait, part 4 | wrom-ledger |
+| Stoics: named from the stoa (public porch) where Zeno taught; divine reason ordering the world (providence); virtue the only good | 16-21 | Britannica "Hellenistic and Roman philosophy"; Epicureanism entry | Search: britannica.com |
+| Epicurus about 341 to 271 BC; gods far off and uninvolved; soul of fine atoms scattering at death; simple pleasure, free from pain and fear | 16-21 | IEP "Epicurus (341-271 B.C.E.)"; Stanford Encyclopedia "Epicurus"; Britannica | Search: iep.utm.edu; plato.stanford.edu; britannica.com |
+| Spermologos "seed-picker"; anastasis heard as a second god ("some readers think") | 16-21 | Deep note `cultural` and `words` | Stated as a reading |
+| Areopagus: "hill of Ares" and the council's name; by Paul's day the council may have met in the agora (Royal Stoa); hill or council debated | 16-21 | Reference works | Search: Wikipedia "Areopagus"; biblicaltraining.org "Areopagus"; biblegateway Encyclopedia of the Bible "Areopagus" |
+| Exodus 20:3-4; Isaiah 44:9; 40:18; Daniel 12:2 | 16-21 | BSB | Repository |
+| Altars to "unknown gods" at Athens mentioned by Pausanias (second century AD); Diogenes Laertius's story of nameless altars in a plague (Epimenides); no altar with Acts's exact words found | 22-28 | Pausanias 1.1.4; Diogenes Laertius 1.110 | Search: biblicaltraining.org "Unknown God"; biblehub.com commentaries on 17:23; camws.org paper "Altars to Unknown Gods" (2022). Paraphrased; section numbers not printed on the page |
+| "We are His offspring": Aratus, Phaenomena 5 (third century BC, from Cilicia), a poem opening with Zeus; similar words in Cleanthes's hymn | 22-28 | Aratus | Search: freely-given.org OBD Acts 17:28; intertextual.bible; ginoskos.com |
+| "In Him we live": often traced to Epimenides, less certain; some think a common saying | 22-28 | Commentaries | Same search; stated as uncertain. Isho'dad of Merv not named (not confirmed) |
+| Genesis 1:1, 27; Isaiah 42:5; 1 Kings 8:27; Psalm 50:12; Deuteronomy 32:8; 4:29; Romans 1:20 | 22-28 | BSB | Repository |
+| Speaking to people without the Bible: two emphases, "most readers hold both" | 22-28 | Deep note `literary` | Stated as readings |
+| Isaiah 44:10; Psalm 115; 96:13; Daniel 7:13-14 | 29-34 | BSB | Repository |
+| Did Athens fail: two readings; 1 Corinthians 2:2; Romans 1:18-25 | 29-34 | Deep note `hard` | Repository; no side taken |
+
+Left out: the loyalty oaths to the emperor (deep note, not searched); what
+"Caesar's decrees" were; the Stoa Poikile by name; Zeno's dates; Isho'dad of
+Merv; later traditions about Dionysius the Areopagite.
