@@ -2843,3 +2843,245 @@ practice (said each time); the tower's site; the night-watch system.
 ### Next
 
 Luke 14 onward in plain words, in the same shape.
+
+## Continuation: Luke 14 to 18 (2026-11-19)
+
+Data only: `client/public/bible/notes/luke/plain/14.json` to `18.json`, and
+`"plain": true` added at the end of `luke/14.json` to `luke/18.json` with no
+other change to those files (each diff is the one closing brace and the new
+line). No app code changed.
+
+### Chapters 14 to 18 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Luke 14 | 6 (a man with dropsy, on the Sabbath; take the lowest place; invite those who cannot repay; the great banquet, and "compel them to come in"; hate father and mother? counting the cost; salt that loses its taste) | 4,369 |
+| Luke 15 | 5 (the lost sheep; the lost coin, and the woman who searched; a son who left, and came to his senses; the father who ran; the older brother outside the door) | 3,836 |
+| Luke 16 | 5 (the shrewd manager; faithful with little, two masters; the Law, the kingdom, and divorce; the rich man and Lazarus; "even if someone rises from the dead") | 4,202 |
+| Luke 17 | 7 (millstones, and forgiving seven times; "Increase our faith!"; "We are unworthy servants"; ten lepers; "the kingdom of God is in your midst"; the days of the Son of Man, Noah and Lot; "Remember Lot's wife!", one taken, one left) | 4,396 |
+| Luke 18 | 6 (the widow and the unjust judge; the Pharisee and the tax collector; babies brought to Jesus; the rich ruler and the eye of a needle; the third warning; a blind man near Jericho) | 4,452 |
+| Total | 29 | 21,255 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. Where
+Mark or Matthew already tell an event (salt, the lost sheep, divorce,
+millstones, mustard-seed faith, the days of the Son of Man, the children, the
+rich ruler, the camel, the third warning, the blind man at Jericho), the note
+says so, reuses their checked wording, and spends its words on what Luke does
+differently (the soil and the manure pile; "lost" and "until he finds it";
+the stone of a mill; the mulberry; Lot and Lot's wife; the disciples'
+"Where, Lord?"; babies; "a ruler" and "seeing the man's sadness"; "wife" in
+18:29; "as the prophets have written" and the threefold "did not
+understand"; one man, approaching). The fuller treatment goes to what only
+Luke has: the dropsy healing, the seats and the guest list, the banquet and
+14:23, the tower and the king, the lost coin, the two sons, the manager, the
+rich man and Lazarus, the unworthy servants, the ten lepers, 17:20-21, the
+widow and the judge, and the Pharisee and the tax collector.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field (first 110
+characters and word count under each heading) and read: all 29 sit under
+their right headings. `validate-bible-notes` passed after each chapter with
+no exceptions (`OT_FIELD_KNOWN` stays empty). Its quotation check caught one
+quotation that ran across "said Peter" (18:28), split at the speaker as the
+BSB splits it, and one forbidden phrase ("do the work", 15:1-7 Old Testament
+note), reworded.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Luke 14" to "18". 23 web
+searches (5, 5, 5, 5, 3). New sources: Horace, Odes 2.2 and dropsy as a
+picture of greed; the Rule of the Congregation (1QSa 2:3-10); Augustine,
+Letter 93 to Vincentius (about 408); Pierre Bayle's Philosophical Commentary
+(1686); Dignitatis Humanae (1965); the drachma; Gregory the Great, Homily 34
+on the lost coin; Sirach 33 on giving property away while alive; carob pods;
+Tertullian, On Modesty 8-9, on the older-son-as-Israel reading; the three
+readings of the shrewd manager (Derrett, Fitzmyer, Kloppenborg, as
+reported); Tyrian purple; Lazarus the only named character; 1 Enoch 22; the
+Egyptian tale of Setne and Si-Osire; entos in 17:21; 17:36 in the
+manuscripts; the temple warning inscription (1871); achreios; the black
+mulberry; Sirach 35 behind 18:7; Didache 8:1; hupōpiazō. Greek facts
+(hudrōpikos, anagkazō and parabiazomai, feminine friends in 15:9, eis heauton
+elthōn, teknon, ebeblēto, allogenēs, entos, sesōken, achreios, brephē,
+hilasthēti and eleēson) are a script over the repository's Greek. Earlier
+ledger rows reused for the Pharisees, tax collectors, mammon, the stroke of a
+pen, the divorce views, Aretas, Varus, leprosy, the Samaritans, the
+millstone, b. Yoma 86b, Hades and Sheol, the camel and the needle, the Jesus
+Prayer, the two Jerichos and the honour-and-shame portrait (Bailey and
+Aristotle). Scripture is the BSB, checked word for word.
+
+One earlier ledger row was not repeated: the book-page ledger gives the
+commission reading of 16:1-9 to "Derrett 1970"; the search gives the
+commission reading to Fitzmyer (1964) and the interest reading to Derrett
+(1961). The plain note names no scholar, so the page is unaffected.
+
+### Cut or narrowed
+
+Cut: the Damascus Document and the later rabbinic rules on animals in a pit;
+Plutarch's Table Talk; Leviticus Rabbah 1:5; the Gospel of Thomas (64, 107);
+Bar Ma'yan and Jeremias; the deep note's custom that a buyer inspected a
+field before purchase; Gregory on the banquet; Aquinas on compelling
+heretics; Letter 185; the dragonnades and the 1685 revocation (not tied by
+the search); Jerome to Heliodorus; Kierkegaard; Bonhoeffer; Bach; salt on
+soil and manure and mōrainō; Sanders and Dunn on "sinners"; m. Bava Batra
+8:7; m. Bava Kamma 7:7; Leviticus Rabbah 13:4; shepherds as a despised
+trade; Jeremias's dowry headdress; "wishing the father dead" and every
+village ceremony; the sandals of free men; Socinus, Warfield, Levine by
+name; Augustine's Quaestiones 2.33 and Jerome's Letter 21 (not confirmed);
+bath and cor in litres; Dodd, Fletcher, Bailey's merciful master; the
+Qumran "sons of light"; m. Gittin 9:10, Salome, Elephantine; byssus;
+4 Maccabees 13:17; Gressmann; Ginae; Hyrcanus and the bones in the temple;
+m. Negaim; outside stairs on roofs; the Vulgate, Origen, Tolstoy and C. H.
+Roberts on 17:21; Darby, Scofield, Left Behind, MacArthur, Bock; m. Nedarim
+3:4; m. Tamid; Bailey's atonement-hour setting; b. Berakhot 28b; Lucian;
+Cyril's "rope"; Netzer; Calvin's harmony. Narrowed: dropsy as a picture of
+greed ("Some scholars think ... Luke does not say so"); Sirach's date
+("about two centuries before Jesus"); the drachma ("about the same as a
+Roman denarius, roughly a day's wage"); carob ("most likely"); "Apart from
+Abraham" for the only named character; Bayle's argument paraphrased.
+
+### Contested matters, and how they are stated
+
+The seats (not a tactic for honour; humility is not self-hatred). Real meals
+or a generous heart (Luke means real tables; eating with friends is not
+wrong). Matthew's banquet against Luke's (told more than once, or shaped by
+each Gospel; both end with a full house). Verse 33, "give up everything"
+(literal for some, a handing-over of everything for many; Acts 5:4). The
+ninety-nine "righteous" (irony, or the faithful truly loved). God pictured
+as a woman (Father, mother's love, the woman's search; God neither male nor
+female). Whether the younger son is truly sorry ("The story does not settle
+it"). The atonement and the two sons (below). The shrewd manager (three
+readings, each with its strength and its hard question; "Scholars have not
+agreed, and these notes do not choose"; what Jesus draws from it is clear:
+use money for people). "Forcing his way" (Matthew 11 wording, not settled).
+Divorce and remarriage (the Mark 10 views paragraph; "These notes do not
+decide between them"). The rich man and Lazarus: parable or account (most
+read it as a parable; reasons given both ways); the state of the dead
+(conscious between death and resurrection, or asleep until it; the Matthew 7
+sentence on final judgment; the creed's resurrection confessed by all); "it
+is wise not to build a geography of hell on this story, or to use its fire to
+frighten anyone, a child least of all". 17:21 (within you, among you, both;
+"Careful scholars hold each view, and these notes do not choose"; not a
+divine spark without the King). One taken, one left (the Matthew 24
+paragraph; no scheme, no dates). 17:36 (the manuscripts plainly). "Promptly"
+in 18:8 (suddenly when it comes; the Bible's own "How long?"). Infant
+baptism (both views, no side). "Why do you call Me good?" (two readings).
+Selling everything (Clement and Antony; Zacchaeus). The meaning "hidden"
+(God, or their own hopes, or both). Leaving or approaching Jericho (the
+Matthew 20 explanations, with Luke's placing before Zacchaeus; "These notes
+do not choose").
+
+**Luke 14:23, the sentences on the page.** "These words have a dark history,
+and it must be told plainly. Augustine, the great North African bishop, at
+first held that no one should be forced into the church. Around AD 408, in a
+letter to Vincentius, a bishop of the Donatists, a church that had broken
+away from the main church in North Africa, he wrote that he had changed his
+mind, and he pointed to this verse to defend using the laws of the Roman
+empire to press the Donatists back into the church. Later churches went much
+further. For centuries ‘compel them to come in’ was quoted to justify
+forcing people into the church, by law, by punishment, and by violence."
+Then: "That reading is wrong, and this site rejects it. The verse does not
+give anyone, church or state, the right to force faith on a single person."
+And: "The host has no soldiers. He has one servant, and the servant has
+nothing but an invitation. ... The host is pleading, not coercing." With
+Bayle (1686), Mark 6:45 and Luke 24:29 on the verb, 9:55, Dignitatis Humanae
+(1965) and the Baptist witness, and 2 Corinthians 5:20.
+
+**The older brother, the sentences on the page.** "That reading has fed
+contempt for Jewish people, and it is wrong. Everyone in the story is
+Jewish, the younger son as much as the older, and so was everyone listening,
+the tax collectors and sinners included." Then: "The older brother is not a
+picture of the Jewish people. He is anyone who has stayed close to God's
+house and grown hard toward those who come home late, and the church should
+see itself in him first."
+
+**The two sons and the cross.** "So the story shows plainly that God runs to
+meet the sinner who turns home, and that his welcome is free. It is not the
+whole of what the New Testament says about the cross. Christians explain the
+cross in more than one way (see the note on Mark 10:35-45), and these notes
+do not choose among them." The views: the story as the whole gospel (with
+Jewish readers' point that the prophets taught the same welcome); a parable
+makes one point and Luke says more (22:20; 24:46-47); the cost inside the
+story; the teller as the welcome.
+
+**The father's welcome.** The running father from the honour-and-shame
+portrait: Bailey's argument marked "a modern parallel, not ancient evidence",
+Aristotle's great-souled man paraphrased; the cut-short speech; robe, ring
+and sandals as a son's standing (Genesis 41:42); Genesis 33:4.
+
+**The Pharisee and the tax collector.** "Is this parable a verdict on
+Pharisees, or on Jews? No. ... That reading is wrong, and it turns the
+parable upside down." "The ‘Pharisee’ Jesus warns against is not in
+first-century Jerusalem. He is in the listener". The site's sentence "So
+‘Pharisee’ is not a word for a hypocrite" word for word, here and at 16:14.
+
+**Money.** 16:1-13 and 16:19-31 hold the book page's line both ways: no
+prosperity reading ("The man whom everyone would have called blessed was the
+one in danger"; "many times more" is no promise of money), no contempt for
+the rich ("Luke's point ... is not that being poor makes anyone good, or that
+being rich makes anyone bad"; "the rich man's sin is that Lazarus lay at his
+gate").
+
+### Care lines included
+
+14:25-33: the Matthew 10 family-rejection paragraph word for word ("If your
+family has rejected you for your faith, you are not alone, and you have not
+failed. ... if you are in danger, contact the police or a crisis line."),
+with "He asks for first place, not for cruelty" and 1 Timothy 5:8.
+14:15-24: "If you were once pushed, shamed or pressured into a religious
+decision, that was not the way of Jesus. His invitation still stands, and it
+is still an invitation. You are free to come, and free to take your time."
+15:20-24: the Matthew 23 line ("If your own father was absent, or hurt you,
+this story is not asking you to pretend otherwise. It tells you that you
+have a Father in heaven who is not like that."). 15:25-32: the Luke 2 line
+word for word, then "This story does not promise that every child will come
+home, or say when. ... Keep the door open as far as you safely can, and keep
+praying. God has not stopped loving your child, and he has not stopped
+loving you." 16:14-18: the Mark 10 safety line word for word, and a word to
+the divorced ("this verse is not a door closed in your face"). 16:19-26: no
+scaring, a child least of all. 17:1-4: the Matthew 18 abuse paragraph word
+for word and the Matthew 6 forgiveness paragraph word for word ("this
+prayer" made "this passage"), with "Words alone do not make it safe to
+stay." 17:5-6: the Matthew 17 sentences against blaming the sick. 17:7-10:
+"‘Unworthy’ here means only that you cannot put God in your debt. It does
+not mean you are of no worth to him." 17:31-37: "These words are not given
+to make anyone afraid, least of all a child lying awake at night." 18:1-8:
+"God is not like him. Your cries are not wearing God out; he hears them.
+Keep telling the truth to people who can help: a lawyer, an advocate, the
+proper authorities, a pastor you trust. If you are in danger, contact the
+police or a crisis line. And if a church failed you, that failure was
+theirs, not God's." No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` (partial, Luke) and `validate-no-emdash` after each
+chapter: pass. At the end, all 36 commands of the content-gates step in
+ci.yml, one at a time: exit 0 each (validate-bible-notes: 66 introductions,
+1,189 chapter notes, 83 chapters in plain words; validate-no-emdash: 260
+files, 0 em-dashes; search index 732 entries up to date; passage index 623
+files match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm
+test`: 146 files passed, 7 skipped; 1,659 tests passed, 73 skipped.
+
+Rendered check, after the chapter commits: `pnpm build` (exit 0), served
+with `scripts/serve-like-vercel.mjs` on port 4605, and a Playwright script
+at 390 wide (deviceScaleFactor 1; `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed) opened `/study/bible/luke/14` to `/18`. Every passage's rendered
+heading, its part headings in order and the first 60 characters under each
+matched the data: Luke 14, 6 of 6; Luke 15, 5 of 5; Luke 16, 5 of 5; Luke
+17, 7 of 7; Luke 18, 6 of 6. No sideways scroll on any, no page errors, no
+console errors. Screenshots read: `/home/user/elite-shots/bdoor/lk1418-15-390-*.png`
+(top, the father who ran, the older brother) and `lk1418-16-390-*.png` (top,
+the manager, the rich man and Lazarus). Server stopped by its PID, dist/
+deleted, no lh-*.json. Lighthouse not run (no app code changed).
+
+### Still unverified
+
+Ancient and patristic writers' exact words (Augustine, Tertullian, Gregory,
+Clement, Athanasius, Sirach, the Didache, 1 Enoch and the Talmud are all
+paraphrased); which of Derrett and Fitzmyer first proposed each reading of
+the manager beyond the summaries found; the date of the Egyptian tale's
+papyri; whether Luke 17:36 was added or dropped.
+
+### Next
+
+Luke 19 onward in plain words, in the same shape.

@@ -3050,7 +3050,7 @@ site's honour-and-shame portrait.
 | Keratia most likely carob pods, cheap fodder (especially for pigs), eaten by the poor in hard times; the identification usual but not certain | 11-19 | Lexicons and Bible dictionaries | Search: biblehub.com 2769; jw.org Insight "Carob Pod"; tips.translation.bible "luke 1516". "Most likely" |
 | Eis heauton elthōn, "came to himself" (15:17) | 11-19 | Greek text | Script over the repository's Greek |
 | Hosea 14:1-2, 4; Ezekiel 18:23 | 11-19 | BSB | Repository |
-| Bailey on the running father as a modern parallel, and Aristotle's great-souled man with a slow step (Nicomachean Ethics 4.3) | 20-24 | The site's honour-and-shame portrait | Repository. Bailey marked as a modern parallel, as the portrait has it; Aristotle paraphrased, in single quotes nowhere |
+| Bailey on the running father as a modern parallel, and Aristotle's great-souled man with a slow step (Nicomachean Ethics 4.3) | 20-24 | The site's honour-and-shame portrait | Repository. Bailey marked as a modern parallel, as the portrait has it; Aristotle paraphrased, not quoted |
 | Robe, ring, Genesis 41:42; the son's standing restored | 20-24 | Honour-and-shame portrait; BSB | Repository |
 | Rembrandt painted the son's return | 20-24 | Luke's book page | Repository. No date or collection given |
 | Genesis 33:4; Psalm 103:13; Jeremiah 31:20; Luke 22:20; 24:46-47; Romans 5:8 | 20-24 | BSB | Repository |
