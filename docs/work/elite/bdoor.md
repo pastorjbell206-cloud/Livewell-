@@ -885,3 +885,153 @@ readings); the dating of Chrysostom's homily beyond "the late 300s".
 ### Next
 
 Matthew 11 onward, in the same shape.
+
+## Continuation: Matthew 11 to 13 (2026-11-19)
+
+John's question, the yoke, the Sabbath disputes, Beelzebul, the sign of Jonah
+and the parables, passage by passage, in plain words, in the same data shape
+(`client/public/bible/notes/matthew/plain/11.json` to `13.json`; each chapter
+note now says `"plain": true`). Data and one validator check; no page code
+changed, so no build, Lighthouse or screenshots were run.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 11 | 6 (John's question from prison; more than a prophet; children in the marketplace; woe to the towns that did not turn; hidden from the wise, shown to little children; come to Me: the easy yoke) | 4,195 |
+| Matthew 12 | 8 (grain picked on the Sabbath; a withered hand healed; God's chosen Servant; Beelzebul and the strong man; the sin against the Spirit, words and the heart; the sign of Jonah; the empty house; Jesus' true family) | 5,126 |
+| Matthew 13 | 9 (the farmer and the seed; why parables; the seed explained; weeds among the wheat; the mustard seed and the leaven; the weeds explained; the treasure and the pearl; the net and the scribe; rejected at home) | 4,789 |
+| Total | 23 | 14,110 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. Where
+Mark's plain notes already tell an event (the grainfields, the withered hand,
+Beelzebul, the unforgivable sin, the true family, the sower, why parables, the
+mustard seed, Nazareth), these notes point to them, reuse their verified claims
+and their care wording, and say what Matthew does differently: the hungry
+disciples, the priests and Hosea 6:6 in place of Abiathar and Mark 2:27, the
+sheep in the pit, the blind and mute man and "your sons", "in this age or in
+the one to come", "because" for "so that", Isaiah quoted in full, "understand",
+the downward count of the harvest, "the carpenter's son" and "did not" for
+"could not".
+
+### Field order, checked, and a guard
+
+Before writing, each field's job was written down from the model and the page
+code (`PlainPassages.tsx`): `happening` what is happening; `hearers` what the
+first hearers would catch; `ot` the Old Testament behind it; `hard` the hard
+verse; `asks` what it asks. After each chapter every passage was printed field
+by field and checked by eye: all 23 are under their right headings.
+
+`scripts/validate-bible-notes.mjs` now also fails when a plain passage's `ot`
+names no Old Testament book, "the Law", "the Prophets", "the Psalms",
+"Scripture" or "Old Testament", or when `asks` is the only field naming an Old
+Testament book. Run over all 29 plain chapters (Mark 1 to 16, Matthew 1 to
+13) it flags one passage: **Matthew 7:21-23, whose Old Testament note holds
+only Luke 6:46** (a Gospel, not the Old Testament). It is listed by name as
+known in the validator (`OT_FIELD_KNOWN`) and not rewritten here; a writer
+should give it a true Old Testament note or drop the field, then remove the
+entry. Not flagged but worth a look: Mark 16:9-14's Old Testament note holds
+only 1 Corinthians 15:4-5 (it passes because Paul's words say "according to
+the Scriptures"). Tested by swapping Matthew 11's fields the way the earlier
+run did: the check caught four of the five swapped passages (the fifth's hard
+question happens to name Ezekiel). Two other rules were tried and dropped for
+false alarms: "the hard field must ask a question" (17 passages written
+without a question mark) and "the asks field must say ask" (2).
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "The plain notes on Matthew 11",
+"12" and "13". 23 web searches (8, 7, 8). New sources: 4Q521; Chrysostom,
+Homilies 36 and 45 on Matthew; Chorazin's site and later ruins; Antipas's reed
+coins (around AD 19/20) and the suggestion linking them to 11:7, called a
+conjecture; Ben Sira's date (early second century BC) and Sirach 51:23-27;
+the Shema as "the yoke of the kingdom of heaven" in rabbinic texts (later);
+Mishnah Yoma 8:6 (later); the Damascus Document on an animal in a pit;
+Josephus, Antiquities 8.46-48 (Eleazar the exorcist); Rabbi Eleazar ben
+Azariah on counting days (Talmud, later); Thomas Paine's objection; the
+Wednesday-crucifixion view; Bunyan, Grace Abounding (1666); darnel; Digest
+9.2.27.14 (sowing weeds); the Donatists, Augustine and Carthage (411); Aquinas,
+Summa II-II q.11 a.3; Roger Williams (1644) and John Cotton; Josephus, Jewish
+War 7.114-115 (buried treasure); Pliny on pearls. All ancient, patristic,
+medieval and rabbinic writers are paraphrased.
+
+### Cut or narrowed
+
+Tertullian on John's doubt (not found); Theissen by name (the coin link is
+reported only through a reviewer); the Mishnah's exact "yoke" wording (the
+best manuscripts may lack the word), so "rabbinic writings from after Jesus'
+time"; Cranmer's comfortable words (checked, not needed); the later rabbinic
+rulings on animals in pits (sources differ); the rabbi's date and the Talmud
+tractates; Torrey by name and the Thursday view; Paine's part and year (the
+deep note says part 2, 1795; the search found it in Part I), so "in the
+1790s"; Augustine's Letter 93 and his turn to coercion (not confirmed);
+Luther, Hubmaier and Calvin on the weeds; the darnel fungus; the litres in
+three measures; the reading "Isaiah the prophet" at 13:35 and Porphyry;
+Helvidius, Epiphanius, Jerome, Meier and the council of 553 by name; Russell,
+Aquinas, Calvin and Augustine on the unforgivable sin; Molina, Craig and Calvin
+on 11:21; Norden, Bultmann, Suggs and Deutsch; every textual note in the deep
+notes. The deep notes are unchanged underneath.
+
+### Contested matters, and how they are stated
+
+John's doubt: Chrysostom's view (asked for his disciples' sake) and the modern
+view (real puzzlement), no side; Jesus' gentleness plain. 11:12: three
+readings of the violence, no side. 11:21-24: God's free choosing, God's
+knowledge of what free people would do, prophetic overstatement; "more
+bearable" as a word of fairness. 11:25-27: choosing and response stated as the
+Mark 4 note states them, with what both agree on. The Sabbath for Christians:
+the Lord's Day, the seventh day, fulfilled in Christ, no side; the Pharisees
+not caricatured, "an argument among Jews". 12:30 against Mark 9:40: two
+questions. The unforgivable sin: three descriptions and the Hebrews 6 link, no
+side; the Mark 3 sentences kept word for word. "Adulterous generation": the
+prophets' picture, not the Jewish people as a whole. Three days and three
+nights: Paine's objection, inclusive counting with Esther, 1 Samuel 30 and
+Matthew's own "third day", the Wednesday view, the Friday majority; "a
+question about the calendar, not the resurrection". Why parables: Chrysostom,
+Matthew's "because", the choosing tradition; no side; "them" is not the Jewish
+people. The weeds: Donatists and Augustine, Aquinas's use for killing
+heretics, Roger Williams's use for liberty and Cotton's reply; church
+discipline left open; "it gives no one a warrant to harm the people they judge
+to be weeds". Hell: three views and literal or pictured fire, no side. The
+smallest seed: the speech of the field, both views of inerrancy. The buyer of
+the treasure: the disciple or Christ, both held. Jesus' brothers: the Mark 6
+wording, each view's texts, all three confess the virgin birth, no side.
+
+### Care lines included
+
+11:1-6: doubt in a faithful man met without rebuke; for the doubting or
+darkened reader, bring the question to Jesus, and if the darkness is heavy, a
+pastor, a doctor or a crisis line; getting help is not a failure of faith.
+11:28-30: the invitation given its full weight, "not a demand"; the afraid
+reader hears this voice first; weariness and despair can be illness, see a
+doctor or talk to a pastor or a crisis line. 12:15-21: the bruised reed for
+the reader worn thin. 12:22-30: no disability or illness blamed on a spirit
+(the 9:32-34 wording). 12:31-37: "If you are afraid you have committed it,
+this note is written for you", with the Mark 3 sentences, Bunyan, and 11:28.
+12:43-45: not a teaching that illness is possession; a returning illness is
+not a judgment; a doctor, a pastor or a crisis line. 12:46-50: for the reader
+without family. 13:36-43: the warning of hell is not a scare; the afraid reader
+is met with 11:28. 13:53-58: for the reader whose family does not believe. No
+phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` after each chapter. Then all 37 commands of the
+content-gates step in ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 29 chapters in
+plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732
+entries up to date; passage index 623 files match). `pnpm check`: clean.
+`pnpm test`: 146 files passed, 7 skipped; 1,653 tests passed, 73 skipped. The
+validator script is ignored by ESLint's config and was not Prettier-clean
+before this change either; not reformatted. No build, so no dist/ and no
+lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient, medieval and rabbinic writer (all
+paraphrased); whether 4Q521's works are God's or his anointed one's (given as
+debated); the date of Rabbi Eleazar ben Azariah (not given); the section
+numbering of Aquinas's reply and of Pliny (not given on the page).
+
+### Next
+
+Matthew 14 onward, in the same shape. Matthew 7:21-23's Old Testament note
+waits for a writer (see the guard above).
