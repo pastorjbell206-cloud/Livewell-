@@ -55,6 +55,8 @@ export interface BookTeaching {
     /** Where the name sits beside its mark, when the default would collide. */
     label?: { dx: number; dy: number; anchor: "start" | "end" | "middle" };
   }[];
+  /** Optional: a line shown above the map, for what the drawing cannot show (places off its frame). */
+  mapNote?: string;
   /** Optional: pages on the site for this book, shown after the shared "Go deeper" list. */
   deeper?: { href: string; name: string; line: string; icon?: "people" | "world" | "scroll" | "book" }[];
 }
@@ -65,7 +67,10 @@ export interface PlainPassage {
   t: string;
   happening: string;
   hearers: string;
+  /** A New Testament passage: the Old Testament behind it. */
   ot?: string;
+  /** An Old Testament passage: where later Scripture, Old Testament and New, takes it up. */
+  later?: string;
   hard?: string;
   asks: string;
 }

@@ -107,6 +107,7 @@ const DEEPER_ICONS = {
 } as const;
 
 /** "Go deeper": pages the site already has, for a Gospel. */
+const GOSPELS = new Set(["matthew", "mark", "luke", "john"]);
 const DEEPER = [
   {
     href: "/study/bible/guides/reading-gospels",
@@ -264,6 +265,9 @@ export default function BookTeaching({
           />{" "}
           Where it happened
         </H2>
+        {teaching.mapNote && (
+          <p className="bk-learn__lede">{teaching.mapNote}</p>
+        )}
         <MapSlot slug={book.slug} bookName={name} places={teaching.map} />
       </Band>
 
@@ -287,7 +291,9 @@ export default function BookTeaching({
             />
           </li>
           {[
-            ...DEEPER,
+            // Books other than the Gospels keep only "How to study the Bible"
+            // from the shared list, then their own pages.
+            ...(GOSPELS.has(book.slug) ? DEEPER : DEEPER.slice(-1)),
             ...(teaching.deeper ?? []).map(d => ({
               ...d,
               icon: DEEPER_ICONS[d.icon ?? "book"],

@@ -1,13 +1,15 @@
 /**
  * A chapter in plain words, passage by passage (notes/<slug>/plain/<n>.json):
  * for each passage, what is happening, what the first hearers would have
- * caught, the Old Testament behind it, the hard verse faced, and what it asks.
+ * caught, the Old Testament behind it (a New Testament book) or where the
+ * Bible takes it up (an Old Testament book, field `later`), the hard verse
+ * faced, and what it asks.
  *
  * Its own chunk, with its file fetched only when the section nears the
  * screen; ChapterNotes holds its space until then. Only chapters whose note
  * says `plain: true` have one (Mark 1 to 3 first).
  */
-import { BookOpenText, Ear, HelpCircle, MessageCircleQuestion, ScrollText } from "lucide-react";
+import { BookOpenText, Ear, HelpCircle, MessageCircleQuestion, Route, ScrollText } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 import { fetchPlain, verseRange, type PlainPassage } from "@/lib/bible-notes";
@@ -19,6 +21,7 @@ const PARTS: { key: keyof PlainPassage; label: string; icon: LucideIcon }[] = [
   { key: "happening", label: "What is happening", icon: BookOpenText },
   { key: "hearers", label: "What the first hearers would catch", icon: Ear },
   { key: "ot", label: "The Old Testament behind it", icon: ScrollText },
+  { key: "later", label: "Where the Bible takes this up", icon: Route },
   { key: "hard", label: "The hard verse", icon: HelpCircle },
   { key: "asks", label: "What it asks", icon: MessageCircleQuestion },
 ];

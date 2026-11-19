@@ -147,3 +147,80 @@ describe("Mark 1 to 3 in plain words", () => {
     expect(within(screen.getByRole("navigation", { name: `Passages in Mark ${n}` })).getAllByRole("link")).toHaveLength(passages.length);
   });
 });
+
+describe("the third part of a passage is named for its testament", () => {
+  const GOSPELS = ["matthew", "mark", "luke", "john"];
+
+  it("a Gospel chapter keeps 'The Old Testament behind it', and nothing new appears", async () => {
+    vi.stubGlobal("fetch", publicFetch());
+    const { passages } = json("bible/notes/mark/plain/1.json");
+    renderWithProviders(<PlainPassages slug="mark" chapter={1} label="Mark 1" />);
+    await waitFor(() => expect(document.querySelectorAll(".pp-passage")).toHaveLength(passages.length));
+    expect(screen.getAllByRole("heading", { level: 4, name: "The Old Testament behind it" })).toHaveLength(passages.filter((p: { ot?: string }) => p.ot).length);
+    expect(screen.queryByRole("heading", { level: 4, name: "Where the Bible takes this up" })).toBeNull();
+    // Five parts at most, in their old order.
+    const first = document.querySelector(".pp-passage")!;
+    expect(Array.from(first.querySelectorAll("h4")).map((h) => h.textContent)).toEqual(
+      ["What is happening", "What the first hearers would catch", "The Old Testament behind it", "The hard verse", "What it asks"].filter((_, i) => [passages[0].happening, passages[0].hearers, passages[0].ot, passages[0].hard, passages[0].asks][i]),
+    );
+  });
+
+  it("an Old Testament passage shows 'Where the Bible takes this up' in the third place", async () => {
+    const passage = {
+      v: "1-31",
+      t: "A test passage",
+      happening: "Happening text.",
+      hearers: "Hearers text.",
+      later: "Later text, naming John 1.",
+      hard: "Hard text.",
+      asks: "Asks text.",
+    };
+    vi.stubGlobal("fetch", vi.fn(async () => new Response(JSON.stringify({ passages: [passage] }), { status: 200, headers: { "content-type": "application/json" } })));
+    renderWithProviders(<PlainPassages slug="genesis" chapter={99} label="Genesis 99" />);
+    await waitFor(() => expect(document.querySelectorAll(".pp-passage")).toHaveLength(1));
+    expect(Array.from(document.querySelectorAll(".pp-passage h4")).map((h) => h.textContent)).toEqual([
+      "What is happening",
+      "What the first hearers would catch",
+      "Where the Bible takes this up",
+      "The hard verse",
+      "What it asks",
+    ]);
+    expect(screen.queryByRole("heading", { level: 4, name: "The Old Testament behind it" })).toBeNull();
+    expect(screen.getByText("Later text, naming John 1.")).toBeTruthy();
+  });
+
+  it("every plain file uses its own testament's field: `ot` in the New Testament, `later` in the Old", () => {
+    for (const b of BOOKS) {
+      const dir = path.join(PUBLIC, "bible/notes", b.slug, "plain");
+      if (!fs.existsSync(dir)) continue;
+      for (const f of fs.readdirSync(dir)) {
+        for (const p of json(`bible/notes/${b.slug}/plain/${f}`).passages) {
+          if (b.testament === "NT") expect(p.later, `${b.slug}/${f} ${p.v}`).toBeUndefined();
+          else expect(p.ot, `${b.slug}/${f} ${p.v}`).toBeUndefined();
+        }
+      }
+    }
+  });
+
+  it("the four Gospels keep the whole shared Go deeper list; another book keeps only 'How to study the Bible' from it", () => {
+    for (const slug of GOSPELS) {
+      const book = BOOKS.find((b) => b.slug === slug)!;
+      const t: BookIntro = json(`bible/notes/${slug}/intro.json`);
+      const { unmount } = renderWithProviders(<BookTeaching book={book} teaching={t.teaching!} />);
+      const deeper = document.getElementById("deeper")!;
+      expect(within(deeper).getAllByRole("link"), slug).toHaveLength(1 + 6 + (t.teaching!.deeper?.length ?? 0));
+      expect(within(deeper).getByRole("link", { name: /How to read the Gospels/ })).toBeTruthy();
+      expect(document.querySelector("#map .bk-learn__lede"), slug).toBeNull();
+      unmount();
+    }
+    const GENESIS = BOOKS.find((b) => b.slug === "genesis")!;
+    renderWithProviders(
+      <BookTeaching book={GENESIS} teaching={{ ...intro.teaching!, deeper: [], mapNote: "Places beyond the map's edge are named here." }} />,
+    );
+    const deeper = document.getElementById("deeper")!;
+    expect(within(deeper).queryByRole("link", { name: /How to read the Gospels/ })).toBeNull();
+    expect(within(deeper).getByRole("link", { name: /How to study the Bible/ })).toBeTruthy();
+    expect(within(deeper).getAllByRole("link")).toHaveLength(2);
+    expect(within(document.getElementById("map")!).getByText("Places beyond the map's edge are named here.")).toBeTruthy();
+  });
+});

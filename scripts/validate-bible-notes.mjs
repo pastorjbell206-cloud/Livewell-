@@ -361,6 +361,7 @@ function checkTeaching(b, t, where) {
     if (m.region != null && typeof m.region !== "boolean") fail(`${where}.map[${i}]`, "region must be true or false");
     if (m.label != null && !(Number.isFinite(m.label.dx) && Number.isFinite(m.label.dy) && ["start", "end", "middle"].includes(m.label.anchor))) fail(`${where}.map[${i}]`, "label needs dx, dy and an anchor of start, end or middle");
   }
+  if (t.mapNote != null) prose(`${where}.mapNote`, t.mapNote, 20, 400);
   for (const [i, x] of (t.deeper ?? []).entries()) {
     if (typeof x.href !== "string" || !x.href.startsWith("/")) fail(`${where}.deeper[${i}]`, "href must be a path on the site");
     if (typeof x.name !== "string" || x.name.length < 3) fail(`${where}.deeper[${i}]`, "missing name");
@@ -387,7 +388,14 @@ function checkPlain(b, c, where) {
     if (typeof p.t !== "string" || p.t.length < 3) fail(`${where}.passages[${i}]`, "missing title");
     prose(`${where}.passages[${i}].happening`, p.happening, 150, 3000);
     prose(`${where}.passages[${i}].hearers`, p.hearers, 150, 4000);
+    // The third part: a New Testament passage has "The Old Testament behind
+    // it" (`ot`); an Old Testament passage has "Where the Bible takes this up"
+    // (`later`). Each testament uses only its own field.
+    const oldBook = b.testament === "OT";
+    if (oldBook && p.ot != null) fail(`${where}.passages[${i}].ot`, "an Old Testament book's passages use `later` (Where the Bible takes this up), not `ot`");
+    if (!oldBook && p.later != null) fail(`${where}.passages[${i}].later`, "only an Old Testament book's passages have `later`; a New Testament passage uses `ot`");
     if (p.ot != null) prose(`${where}.passages[${i}].ot`, p.ot, 100, 3000);
+    if (p.later != null) prose(`${where}.passages[${i}].later`, p.later, 100, 3000);
     if (p.hard != null) prose(`${where}.passages[${i}].hard`, p.hard, 100, 3000);
     prose(`${where}.passages[${i}].asks`, p.asks, 80, 1500);
     // Field order: every field can hold text and still sit under the wrong
@@ -396,6 +404,16 @@ function checkPlain(b, c, where) {
     // or the Law, the Prophets, the Psalms or Scripture, and "What it asks"
     // must not be the only field that names one.
     const key = `${b.slug}/${c} ${p.v}`;
+    if (oldBook) {
+      // An Old Testament passage: "Where the Bible takes this up" must name
+      // at least one other book of the Bible, and "What it asks" must not be
+      // the only field that does.
+      const other = otherBook(b);
+      if (typeof p.later === "string" && !other.test(p.later)) fail(`${where}.passages[${i}].later`, `names no other book of the Bible than ${b.name}: is this text under the right heading?`);
+      const naming = ["happening", "hearers", "later", "hard", "asks"].filter((k) => typeof p[k] === "string" && other.test(p[k]));
+      if (naming.length === 1 && naming[0] === "asks") fail(`${where}.passages[${i}].asks`, "is the only field naming another book of the Bible: is the later-Scripture note under the wrong heading?");
+      continue;
+    }
     if (typeof p.ot === "string" && !OT_NAMED.test(p.ot) && !OT_FIELD_KNOWN.has(key)) fail(`${where}.passages[${i}].ot`, "names no Old Testament book, the Law, the Prophets, the Psalms or Scripture: is this text under the right heading?");
     const naming = ["happening", "hearers", "ot", "hard", "asks"].filter((k) => typeof p[k] === "string" && OT_BOOK.test(p[k]));
     if (naming.length === 1 && naming[0] === "asks") fail(`${where}.passages[${i}].asks`, "is the only field naming an Old Testament book: is the Old Testament note under the wrong heading?");
@@ -407,6 +425,15 @@ const OT_BOOK = new RegExp(
     .sort((a, z) => z.length - a.length)
     .join("|")})\\b`,
 );
+// Every book of the Bible but the one given ("Psalm" and "Song of Songs"
+// count; "1 Kings" is matched as "Kings").
+const otherBook = (b) =>
+  new RegExp(
+    `\\b(${[...new Set([...books.filter((x) => x.slug !== b.slug).map((x) => x.name.replace(/^\d\s/, "")), ...(b.slug === "psalms" ? [] : ["Psalm"]), ...(b.slug === "song-of-solomon" ? [] : ["Song of Songs"])])]
+      .filter((n) => n !== b.name.replace(/^\d\s/, ""))
+      .sort((a, z) => z.length - a.length)
+      .join("|")})\\b`,
+  );
 const OT_NAMED = new RegExp(`${OT_BOOK.source}|\\b(the Law|the Prophets|the Psalms|Scriptures?|Old Testament)\\b`);
 // Passages whose Old Testament note names none of these, reported for a
 // writer to look at rather than changed by a script. Remove an entry once
