@@ -328,3 +328,7 @@ The counter over-counts "Not X. Y." here more than last time, so read the 26 as 
 - philippians-4-13-in-context: "I would leave the verse on the wristband."
 - did-the-gospels-get-jesus-right: "I want that objection on the table whole, because the answer to it is not a slogan, and because parts of it are simply true."
 - Generic, not James: misreading-with-western-eyes ("my five-year plan", "it is mine"), covenant-and-treaty ("You perform, I pay").
+
+## Gates (third run)
+
+All 36 content-gate commands in .github/workflows/ci.yml passed, run one at a time (last lines in /home/user/tmp-voice/gates3.txt), pnpm check passed, pnpm test passed (146 test files, 1653 tests; 7 files and 73 tests skipped). node scripts/build-context-index.mjs rerun: guides-index.json unchanged. The search index and passage index --check runs were clean, so neither needed a rebuild. No build, no PDFs.
