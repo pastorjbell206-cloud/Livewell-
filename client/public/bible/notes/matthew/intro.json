@@ -519,6 +519,11 @@
           "2:6",
           "2:16"
         ],
+        "label": {
+          "dx": -9,
+          "dy": 5,
+          "anchor": "end"
+        },
         "line": "David's town, where Jesus is born and the Magi find him. From here the family flees to Egypt, off this map to the south-west (2:13-15)."
       },
       {
@@ -542,6 +547,11 @@
           "21:17",
           "26:6"
         ],
+        "label": {
+          "dx": 9,
+          "dy": 0,
+          "anchor": "start"
+        },
         "line": "A village on the Mount of Olives where Jesus stays in his last week and is anointed with perfume (26:6-13)."
       },
       {
