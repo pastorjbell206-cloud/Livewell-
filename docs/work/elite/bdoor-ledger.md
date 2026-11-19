@@ -5382,3 +5382,32 @@ of Asiarch inscriptions.
 Left out: the distance from Miletus to Ephesus; the Didache's date; Justin's
 date; the Greek proverb parallels to 20:35; which textual reading most
 textual critics prefer at 20:28.
+
+## The plain notes on Acts 21 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/21.json`. 3 web searches. Acts 22 not written in this run.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Cos, Rhodes, Patara, Phoenicia; Tyre's church from those scattered (11:19), "probably" | 1-6 | Map; BSB | Repository |
+| 1 Kings 5:1-10; Ezekiel 27-28; 1 Kings 8:54 | 1-6 | BSB | Repository |
+| Philip one of the Seven (6:5; 8:40); four unmarried daughters who prophesied; 2:17; 1 Corinthians 11:5; views pointing to the 18:24-28 note | 7-14 | BSB | Repository; no side taken |
+| Agabus (11:28); acted prophecy (Jeremiah 13:1; Ezekiel 4:1-8; Isaiah 20:3); Exodus 15:20; Judges 4:4; 2 Kings 22:14; Joel 2:28 | 7-14 | BSB; deep note `cultural` | Repository |
+| "The Jews of Jerusalem" (21:11), "some Jews from the province of Asia" (21:27): particular people; pointers to 13:42-47 and 2:22-28 | 7-14, 27-36 | BSB; acts/plain/13.json form | Repository |
+| Was Paul right to go: the Spirit's warning and the believers' advice; Luke 9:51; 23:11; a minority think Paul mistaken; guidance not a formula | 7-14 | Deep note `hard` | Stated as readings |
+| James the brother of Jesus (15:13); the gift (24:17) "probably"; Jewish believers zealous for the law; 1 Corinthians 7:18 | 15-26 | BSB | Repository |
+| The four men's vow most likely Nazirite; paying their offerings an act of devotion (Josephus on Agrippa I and the Nazirites, Antiquities 19.294, read so by commentators); Numbers 6:9, 14, 18 (6:9 quoted without its em-dash) | 15-26 | Josephus; commentaries; BSB | Search: lexundria.com Antiquities 19.294 (Whiston); tips.translation.bible (SIL) on 21:24; biblegateway IVP NT commentary. Josephus not named on the page |
+| Why Paul needed purifying: not said; "many think" travel among Gentiles | 15-26 | Deep note `cultural` | Stated as uncertain |
+| Galatians and the vow: Galatians 2:16; 5:3; 18:18; 1 Corinthians 9:20; Romans 3:31; three readings; book page part | 15-26 | Book page; deep notes | Repository; no side taken |
+| Temple barrier notices in Greek and Latin, warning of death; Josephus describes them; one found complete in 1871, a broken second in 1936; whether anyone was executed argued | 27-36 | Jewish-life portrait, part 3 | worlds-ledger (portrait wording) |
+| Trophimus of Ephesus (20:4) | 27-36 | BSB | Repository |
+| The Antonia at the north-west corner of the temple area, stairs into the courts; "commander of a thousand"; Claudius Lysias (23:26) | 27-36 | Reference works | Search: biblicaltraining.org "Tower of Antonia"; biblegateway Easton's "Antonia"; madainproject.com. Garrison size not stated |
+| Ezekiel 44:9; Isaiah 56:7; Jeremiah 26:8; Luke 23:18 | 27-36 | BSB | Repository |
+| The Egyptian: under Felix, a would-be prophet, Mount of Olives, walls to fall, Romans attacked, he escaped; Josephus's two accounts (about 30,000 in Jewish War 2.261-263; 400 killed and 200 captured in Antiquities 20.169-172); Luke's 4,000 | 37-40 | Josephus, paraphrased | Earlier ledger (Mark 13); search: lexundria.com Jewish War 2.261-263 (Whiston); livius.org "The Egyptian Prophet" |
+| Sicarii: daggers hidden under clothes, killing in festival crowds | 37-40 | Josephus, Jewish War 2.254-256, paraphrased | Same search |
+| "Hebrew": Hebrew or Aramaic, scholars differ | 37-40 | Deep note `cultural` | Stated as uncertain |
+| Zechariah 14:4; Joshua 6:20; Proverbs 15:1 | 37-40 | BSB | Repository |
+
+Left out: the year of Paul's arrival (about 57 in the deep note); the size
+of the Antonia garrison; Philip's daughters in later tradition; the
+Jonathan killed by the sicarii; Paul's speech (Acts 22, next).
