@@ -1939,3 +1939,138 @@ uncertain).
 ### Next
 
 John 8 onward, beginning with 7:53 to 8:11.
+
+## Continuation: John 8 to 11 (2026-11-19)
+
+### A code fix first: no 404 from "Go deeper"
+
+A chapter page's "Go deeper" block asked for `/index/chapters/<book>/<n>.json`
+for every chapter, and 566 chapters (Matthew 8, 14 and 17 among them) have
+no such file, so the browser logged a 404. The passage-index builder
+(`scripts/lib/passage-index.mjs`) now also writes
+`client/public/index/chapters.json`, a 2.4 KB list of the 623 chapters that
+have a file, and its `--check` drift test covers the list (a stale list fails
+it; checked by hand). `client/src/lib/passageIndex.ts` reads the list once
+and asks for no file it leaves out; if the list cannot be read, it asks for
+the chapter's file as before. What a reader sees is unchanged. Tests:
+`passageIndex.test.ts` (the list matches the files exactly) and
+`GoDeeper.test.tsx` (Genesis 36 and Matthew 8, 14 and 17 draw nothing and
+request no chapter file; John 3 still lists its pages). On the served build:
+Matthew 8, 14 and 17 request only `/index/chapters.json`, show no block, no
+HTTP error and no console error; John 3 and Romans 8 show "Go deeper" with 6
+and 11 groups.
+
+### Chapters 8 to 11 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| John 8 | 6 (the woman caught in adultery; I am the light of the world; unless you believe that I am He; the truth will set you free; whose children?; before Abraham was born, I am) | 4,773 |
+| John 9 | 5 (who sinned?; I am the one; afraid of the Jews; I was blind, but now I see; blind and seeing) | 3,272 |
+| John 10 | 6 (the shepherd and the sheepfold; I am the gate; the good shepherd lays down his life; no one can snatch them; I and the Father are one; back across the Jordan) | 3,576 |
+| John 11 | 7 (the one You love is sick; let us go, so that we may die with him; I am the resurrection and the life; Jesus wept; Lazarus, come out; one man for the people; will he come to the feast?) | 3,808 |
+| Total | 24 | 15,429 |
+
+John 1 to 11 now: 68 passages, about 40,700 plain words. Passages for
+chapter 8 start at 8:1; 7:53 stays in chapter 7's pointer.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and read; all 24
+sit under their right headings. On the served build a Playwright script at
+390 wide matched each rendered heading, the order of the parts and the first
+words of each part to the data: John 8 6 of 6, John 9 5 of 5, John 10 6 of 6,
+John 11 7 of 7; no sideways scroll, no console error. Screenshots read:
+`/home/user/elite-shots/bdoor/run811-*`.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on John 8" to "11". 24 web
+searches (7, 6, 6, 5). New: Eusebius on Papias's story of the woman; the
+Catholic acceptance of the passage (NAB note as cited); cia.gov on the 8:32
+carving; Der Giftpilz and the scholarship on 8:44 in Nazi children's books;
+1QS on the sons of darkness and the lot of Belial; 4 Ezra 3:14; the treasury
+in the Court of the Women; b. Shabbat 55a-b (later); Tacitus, Histories 4.81;
+the punctuation proposal for 9:3-4; Mishnah Shabbat 7:2 and kneading;
+Bernier (2013); Amazing Grace (1773, 1779); Westminster Confession 17 and the
+other churches' teaching on falling away; Psalm 82's readings; Josephus on
+"Lights"; m. Bava Metzia 7:9 (later); Solomon's Colonnade; embrimaomai (NET
+note, Thayer); dakryō and klaiō; the three days in later rabbinic writings;
+al-Eizariya; Lazarus and Eleazar.
+
+### Cut or narrowed
+
+Luther's On the Jews and Their Lies, Origen, Luke Timothy Johnson,
+Reinhartz and Ruether by name (met only in summaries); Jerome on what Jesus
+wrote; Trent's decree; Augustine's "misery and mercy"; the 8:25 renderings
+and the New World Translation at 8:58; Celsus; Jubilees; Genesis Rabbah on
+prenatal sin; Irenaeus on the clay (kept only as "some readers have
+noticed"); the Lent readings; George Adam Smith's shepherd at the gate;
+Psalms of Solomon; the Talmud's oil story; Kloner on rolling stones; the
+Caiaphas ossuary; et-Taiyibeh; Strauss, Bultmann, Bauckham and Meier by
+name. "Jesus' tears were quiet" became "may have been quieter"; "Lazarus
+died again later" became "in time he would die again".
+
+### Contested matters, and how they are stated
+
+7:53 to 8:11: what the copies show in the book page's own words; views (an
+ancient true story not first in this place, the common view; a few hold it
+original; some would teach it but not preach it as Scripture in the full
+sense; the Catholic Church accepts it as Scripture); "These notes take no
+side"; "None of this is cause for alarm". What Jesus wrote: suggestions,
+"none can be proved". 8:24 and 8:58 (echo of Exodus 3:14 or of Isaiah's
+"I am He"; "Scholars debate which echo is stronger"; the Nicene confession
+in the site's wording). 9:3 (readings; the punctuation proposal as a view).
+9:22 (Martyn, the doubters, and the case for Jesus' lifetime). "Other sheep"
+(the common reading). 10:28 (perseverance views, "open for discussion and
+not a cause for division", as in John 6). 10:30 (purpose or being; the
+creed). 10:34 (three readings of Psalm 82; the rabbinic one marked later).
+The two days' delay (three readings, no verdict). Embrimaomai's object
+(three readings). Whether Lazarus's raising happened (views, no verdict).
+
+**8:44, the sentences on the page:** "This verse has been used terribly. For
+centuries it was used to call Jewish people children of the devil, and to
+justify hatred, expulsions and murder. In the 1930s Nazi propaganda put it in
+a book for German children. That reading is false, and Christians must reject
+it plainly. This site rejects it. Never a word against the Jewish people."
+Then: said to "the Jews who had believed Him" (8:31) who sought to kill him;
+the prophets (Isaiah 1:4) and the Community Rule; Mark 8:33, 6:70 and 1 John
+3:8-10; Nostra Aetate's sentence as in the Matthew 21 note.
+
+**The woman of 8:1-11:** "Nothing in this story gives anyone leave to shame
+anyone." "His first word is “Then neither do I condemn you.” His second is
+“Now go and sin no more.” He does not wave her sin away, and he does not crush
+her with it. The mercy comes first, and the call that follows does not cancel
+it." "Where is the man?" opens the hearers' note.
+
+### Care lines included
+
+8:1-11 (sexual shame; "If what happened to you was not your choice, it is
+not your sin, and you deserve safety and help from someone you trust").
+8:21-30 (loneliness). 9:1-7 (disability is not punishment; "you are not a
+riddle for other people to solve"; the man as the chapter's hero). 9:18-23
+and 9:35-41 (fear of speaking; pushed out of a church). 10:11-21 (hurt by
+leaders who fed themselves). 10:22-29 (fear of slipping from God's hand).
+11:1-6 (long waits; no promise that every sick person recovers). 11:17-27
+and 11:28-37 (grief is not unbelief; a death that was not reversed; no
+promise beyond the text; "do not carry it alone. Reach out to people you
+trust, to a pastor, or to someone trained to help"). 11:45-53 (sacrificed by
+someone's calculation). No detail of dying is given.
+
+### What was run, and what passed (watched)
+
+All 36 commands of the content-gates step, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 55 chapters in
+plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732
+entries up to date; passage index 623 files match; verify-sources 22 texts
+intact). `pnpm check`: clean (run after the code fix and again at the end).
+`pnpm test`: 146 files passed, 7 skipped; 1,657 tests passed, 73 skipped.
+ESLint on the changed client files: clean (the two scripts are outside
+ESLint's scope). `pnpm build`, `pnpm run sitemap`, `pnpm run prerender`
+(3,028 pages), `pnpm run audit:canonicals` (0 failures). Served with
+`scripts/serve-like-vercel.mjs` on port 4604; checks as above. Lighthouse not
+run (the change adds one 2.4 KB request when the Go deeper block nears the
+screen, nothing on first paint). Server stopped; dist/ deleted; no lh-*.json.
+
+### Next
+
+John 12 onward, in the same shape.
