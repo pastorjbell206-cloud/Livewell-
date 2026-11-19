@@ -241,6 +241,7 @@ describe("/answers and /answers/:slug", () => {
       "do-i-have-to-choose-between-faith-and-science",
       "does-god-actually-exist",
       "how-can-god-be-three-and-one",
+      "how-should-a-christian-read-genesis-1",
       "if-god-is-good-why-suffering",
       "is-faith-irrational",
       "is-faith-just-wishful-thinking",
