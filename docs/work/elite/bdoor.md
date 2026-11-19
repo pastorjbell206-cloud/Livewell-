@@ -5234,3 +5234,174 @@ Psalm 11 onward, in the same shape. At this depth a psalm takes about 1,300
 words; 140 more psalms is roughly 180,000 words. A lighter shape (one passage
 for most short psalms, `hard` only where a real difficulty exists) would serve
 readers of the many short psalms better; that is for the lead to decide.
+
+## Continuation: Psalms 11 to 41 (2026-11-19)
+
+James, on 2026-11-19: "finish the psalms and the rest of the bible doing
+that". The lead's lighter shape is the rule from Psalm 11 on: most psalms are
+one passage for the whole psalm (about 450 to 700 words), with `hard` only
+where the psalm has a difficulty of its own; the major psalms of Book One
+(16, 18, 19, 22, 23, 24, 27, 32, 34, 37, 40) are at full depth, in two or
+three passages.
+
+**Code.** None changed. The validator (`prose(... p.hard ...)` runs only when
+`p.hard != null`), the type (`hard?: string` in `client/src/lib/bible-notes.ts`)
+and `PlainPassages.tsx` (a part with no text returns `null`, so no heading)
+already let `hard` be absent; Psalm 8:1-2 had shipped without one. The
+rendered check below confirms no "The hard verse" heading appears for a
+passage without it.
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 11 | lighter | 1 | none | 494 |
+| 12 | lighter | 1 | none | 451 |
+| 13 | lighter | 1 | care line | 578 |
+| 14 | lighter | 1 | yes | 626 |
+| 15 | lighter | 1 | yes | 584 |
+| 16 | full | 2 | 2 | 1,250 |
+| 17 | lighter | 1 | one line to the book page | 500 |
+| 18 | full | 3 | 3 | 1,753 |
+| 19 | full | 2 | 2 | 1,129 |
+| 20 | lighter | 1 | short | 505 |
+| 21 | lighter | 1 | short | 485 |
+| 22 | full | 3 | 3 | 2,186 |
+| 23 | full | 2 | 1 | 1,132 |
+| 24 | full | 2 | 1 | 936 |
+| 25 | lighter | 1 | none | 533 |
+| 26 | lighter | 1 | one line to the book page | 500 |
+| 27 | full | 2 | 2 | 1,144 |
+| 28 | lighter | 1 | short | 464 |
+| 29 | lighter | 1 | none | 548 |
+| 30 | lighter | 1 | yes | 540 |
+| 31 | lighter | 1 | short | 520 |
+| 32 | full | 2 | 2 | 1,067 |
+| 33 | lighter | 1 | none | 469 |
+| 34 | full | 2 | 2 | 1,192 |
+| 35 | lighter | 1 | short | 470 |
+| 36 | lighter | 1 | none | 450 |
+| 37 | full | 3 | 2 | 1,632 |
+| 38 | lighter | 1 | yes, care | 722 |
+| 39 | lighter | 1 | yes, care | 615 |
+| 40 | full | 3 | 2 | 1,417 |
+| 41 | lighter | 1 | yes | 614 |
+| Total | | 46 | 36 | 25,506 |
+
+Lighter psalms: 20, averaging 531 words. Full psalms: 11, averaging 1,350.
+Each note gained only `"plain": true` at its end.
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 11" to "41". 14 web
+searches: Psalm 16 (1), 19 (2), 22 (3), 23 (2), 24 (1), 24 and 29 together
+(1, Ugarit), 37 (1), 40 (1), and none for the other 23 psalms, whose claims
+rest on the BSB, the repository's deep notes and Hebrew data, and earlier
+ledger rows. Scripts over the repository's Hebrew and headings checked: the
+alphabet patterns of 25, 33, 34 and 37; Miktam (16, 56-60), Maskil (from 32),
+Jeduthun (39, 62, 77), "for remembrance" (38, 70); kasah and nasa repeated in
+32:1 and 32:5; mabbul only in Genesis 6 to 11 and 29:10; hevel three times in
+Psalm 39 and in Ecclesiastes 1:2; the doubled verb of 40:1 and "ears You dug"
+in 40:6.
+
+### Cut or narrowed
+
+Cut (not verified this run): Justin Martyr and Tertullian on 22:16, Pesikta
+Rabbati, Bach and Handel, Peter Flint by name, the Givat HaMivtar skeleton
+(all in Psalm 22's deep note); Papyrus Amherst 63 (Psalm 20); the Targum's
+"King Messiah" (Psalm 21); the year Ugarit was found; the host's duty to
+protect a fugitive guest (Psalm 23); "Israel was not a sea-going people"; "a
+broken pot was not mended"; Babylon's creation-by-combat story (Psalm 33).
+Narrowed: Psalm 13 "one of the shortest laments in the Psalms" (not "the
+shortest in the Bible"); Psalm 24 on Ascension Day became "Many Christians
+read verses 7 to 10 of Jesus going up into heaven"; Psalm 31:5 "Many
+Christians say it before sleep" became an invitation; Hammurabi "in his law
+code" (prologue or epilogue left unstated, since sources differ); the Nahal
+Hever fragment "about the first century AD". One error caught by script and
+fixed: a draft said "hide" (32:3-4) and "hiding place" (32:7) were one Hebrew
+word; they are not, and the sentence now names the words that are repeated
+(32:1 and 32:5).
+
+### Contested matters, and how they are stated
+
+Psalm 16:10 (did David mean resurrection: three views, all agreeing the
+apostles read it of an event). Psalm 19 (one poem or two; "Christians hold
+different views on those, and Psalm 19 does not take a side" on the age of
+the earth and evolution). Psalm 22:1 (the book page's three readings, "They
+are not enemies"; Jewish readings with respect: Megillah 15b and Esther,
+Purim, Rashi's Israel in exile). Psalm 22:16 (ka'ari and the verb; Jewish
+and Christian cases; "no one needs to accuse the other side of bad faith").
+Psalm 23 (tsalmavet: "shadow of death" or "deep darkness"). Psalm 27 (one
+psalm or two). Psalm 30's heading (three readings; "These notes leave it
+open"). Psalm 34's Abimelech (title or slip). John 19:36 (Psalm 34:20, the
+Passover law, or both). Psalm 37:25 (three readings; one use ruled out).
+Psalm 40:6 and Hebrews 10:5 (Hebrew "ears", Greek "a body"; two readings).
+Royal psalms 18, 20, 21: no modern nation or army.
+
+**Psalm 22:1, on the page:** "The book page on the Psalms sets out the three
+main ways Christians have read the cry ... Christians often hold these
+together. They are not enemies. Jewish readers have long read the psalm in
+other ways, and those deserve to be known. The Talmud (Megillah 15b) pictures
+Queen Esther speaking its first line as she went in, uncalled and in danger,
+to the Persian king. ... The medieval teacher Rashi read the ‘I’ of the
+psalm as the people of Israel in exile, crying to God through a long night."
+
+**Psalm 22:16, on the page:** "Here the ancient copies differ, and it is
+honest to say so. The standard Hebrew text, called the Masoretic text, reads
+a word that means ‘like a lion’ ... Other old witnesses have a verb instead.
+The Greek translation, made by Jewish scholars before the time of Jesus,
+reads ‘they dug’. A small Psalms fragment from the Judean desert, found at
+Nahal Hever and copied about the first century AD, has a spelling that many
+scholars read as a verb, though others say the letter is too faint or the
+scribe too careless to be sure. ... the Gospels never quote this verse, so
+nothing in the Christian reading of Psalm 22 depends on settling it."
+
+**Psalm 23 care line:** "If you are grieving, this psalm does not ask you to
+feel calm. Read it slowly, and let the shepherd be with you in the valley you
+are in. Grief is not a failure of faith. If your grief has become too heavy
+to carry, please tell someone you trust, a pastor, a friend or a doctor. The
+Find Help page on this site lists places to turn."
+
+**Psalm 38 on illness:** "If you are ill, this psalm does not mean God is
+punishing you. Please do not let anyone tell you that it does."
+
+Other care lines: 13 (shortened from Psalm 6, pointing back to it), 22:1-11,
+27:7-14 (parents who left), 30, 32 (illness not a sign of hidden sin), 39
+(wanting to "be no more"), 40:1-5. No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` passed with
+no exceptions, the strict quotation script (case and punctuation kept, no
+em-dash, no "..." inside a quotation, no `!` outside quoted Scripture) was
+run, and every passage was printed field by field and read; all 46 sit under
+their right headings. The strict script's last run over 11 to 41 flags only
+reviewed false positives: "blessed" inside quoted Scripture or as a verb, the
+`!` of quoted Scripture in two titles (24:7-10, 26), and three quotations whose
+reference stands before the quote rather than after it.
+
+At the end, one at a time: all 36 content-gate commands in ci.yml, exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 208 chapters in
+plain words; validate-no-emdash 260 files, 0; search index 732 entries up to
+date; passage index 623 files match; verify-sources 22 texts intact). `pnpm
+check`: exit 0. `pnpm test`: 146 files passed, 7 skipped; 1,679 tests passed,
+73 skipped. `pnpm build`: exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs` on port 4603;
+Playwright at 390 wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 11 to 41: 46 passages, 220 parts. Each passage's
+heading and each part's heading and first 60 characters matched the data. The
+10 passages without `hard` show no "The hard verse" heading. No sideways
+scroll, no console or page errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/ps13-390-p0.png` (lighter shape),
+`ps22-390-p0.png` to `p2.png`, `ps23-390-p0.png` and `p1.png`. Server stopped
+by PID, dist/ deleted, no lh-*.json. No code changed, so no ESLint run and no
+Genesis or Acts check was needed.
+
+### Next
+
+Psalm 42, the start of Book Two, in the same lighter shape. At this rate a
+lighter psalm takes about 530 words and a major one about 1,350. One run
+covered 31 psalms (11 full, 20 lighter) in about 25,500 words. Book Two
+(42 to 72) and Book Three (73 to 89) together make one run of about the same
+size. The remaining 109 psalms come to roughly four runs.

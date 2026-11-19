@@ -5817,3 +5817,472 @@ A stricter script than the validator (keeping case and punctuation, and
 refusing an em-dash) found four quotations that the validator's looser match
 passed: Numbers 6:25 ("may" in lower case), Psalm 9:12 ("For"), 9:20
 ("let"), 89:52 (its exclamation mark). All four now match the BSB exactly.
+
+## The plain notes on Psalms 11 to 41: the lighter shape (2026-11-19)
+
+From Psalm 11 on, most psalms have one passage for the whole psalm and a
+`hard` part only where the psalm has a difficulty of its own (the validator,
+the type and the page already allowed `hard` to be absent: Psalm 8:1-2 had
+none). Scripture is the BSB in the repository, checked by a strict script
+(case and punctuation kept, no em-dash, no "..." inside a quotation) as well
+as by the validator. "Repository deep note" means the existing note at
+`client/public/bible/notes/psalms/<n>.json`.
+
+## The plain notes on Psalm 11 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Fleeing to the hills and caves; David in the hill country (1 Samuel 23:14) | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| "Foundations" most likely the moral and legal order of society | Repository deep note (cultural) | Stated as "most likely" |
+| Fiery coals and sulfur recall Sodom (Genesis 19:24) | BSB | BSB text |
+| Matthew 5:8; Revelation 22:4; Matthew 10:28; Hebrews 12:28 | BSB | BSB text |
+
+## The plain notes on Psalm 12 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Agreements mostly spoken; "a heart and a heart" | Repository deep note (cultural) | Site's own teaching |
+| Silver refined by heat; seven as completeness | Repository deep note (cultural) | Site's own teaching |
+| Proverbs 30:5; 2 Samuel 22:31; Psalm 18:30; Matthew 5:37; James 3:5 | BSB | BSB text |
+
+## The plain notes on Psalm 13 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "How long" four times in verses 1-2 | BSB | BSB text |
+| The face of God as favour (Numbers 6:25); "forget" as ceasing to act for someone; bright eyes as life | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| A lament with all its steps; used on the book page as the model lament | Book page, "Kinds of psalm" | Site's own teaching. "The shortest lament in the Bible" not stated (not checked); "one of the shortest laments in the Psalms" |
+| Habakkuk 1:2; Revelation 6:10; Hebrews 13:5 with Deuteronomy 31:6 | BSB | BSB text |
+| Care line shortened from Psalm 6's, pointing back to it | Psalm 6 plain note | Site's own wording |
+
+## The plain notes on Psalm 14 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Nabal "fool": morally senseless, not unintelligent; 1 Samuel 25:25 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Psalm 14 appears again as Psalm 53, "God" where 14 often has "the LORD" | Repository deep note (historical); BSB 53:1 | BSB text |
+| Romans 3:9-12 draws on 14:1-3; Luke 12:20 | BSB | BSB text |
+
+"There is no God": practical godlessness, pointing to the book page (10:4)
+and the Psalm 10 note; honest unbelievers not the target; Paul turns the
+words on everyone.
+
+## The plain notes on Psalm 15 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The tent David pitched for the ark (2 Samuel 6:17) | Repository deep note (historical); BSB | BSB text |
+| "Abide" as living as a guest | Repository deep note (cultural) | Site's own teaching |
+| Psalms 15 and 24 called entrance psalms by many scholars | Repository deep note on Psalm 24 (literary) | Stated as "many scholars call" |
+| No interest on loans to the poor (Exodus 22:25); loans after a bad harvest; interest and loss of land | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Isaiah 33:14-15; Micah 6:8; Matthew 5:37; Luke 19:8; Ephesians 2:8, 10; Hebrews 10:19 | BSB | BSB text |
+
+Not earning God's favour: the psalm given to a people already rescued; grace
+opens the door (Ephesians 2:8; Hebrews 10:19), good works follow (2:10).
+
+## The plain notes on Psalm 16 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Miktam meaning unknown; heads 16 and 56 to 60 | 1-6 | BSB headings by script; repository deep note | Script |
+| Land shared by lot (Joshua 14 to 19), measuring cord; Levites' portion the LORD (Numbers 18:20) | 1-6 | Repository deep note (cultural); BSB | BSB text |
+| Verses 3-4 hard to translate; versions differ | 1-6 | Repository deep note (literary) | Site's own teaching |
+| "Conscience" is "kidneys"; the right hand as protector's place | 7-11 | Repository deep note (cultural) | Site's own teaching |
+| Holy One (hasid) built on hesed | 7-11 | Psalm 4 ledger row (chasid) | Earlier ledger |
+| Shachat can mean "the pit"; some modern Bibles (NRSV, NLT) have "the Pit"; the Greek has "corruption/decay", and Acts quotes the Greek | 7-11 | biblehub.com commentaries on 16:10 and Acts 2:27 (Ellicott, Pulpit); tips.translation.bible on 16:10 | Search. The Greek word not named; the "mistaken derivation" view not stated |
+| Acts 2:25-32; 13:35-37; 1 Corinthians 15:20; Psalm 73:26; Lamentations 3:24; Matthew 22:37; Philippians 3:8 (paraphrased) | both | BSB | BSB text |
+
+Contested: whether David meant resurrection (three views, none chosen; all
+agree the apostles read it of an event).
+
+## The plain notes on Psalm 17 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Righteous plea" a legal term; cases at the town gate before elders | Repository deep note (cultural) | Site's own teaching |
+| Apple of the eye: the pupil, "little man of the eye"; Song of Moses (Deuteronomy 32:10-11) | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Ruth 2:12; Matthew 23:37; 1 John 3:2 | BSB | BSB text |
+
+Innocence: one sentence pointing to the book page.
+
+## The plain notes on Psalm 18 (2026-11-19)
+
+No web search. The Ugarit comparison in the deep note is not used here (kept
+for Psalm 29, where it was searched).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Same song as 2 Samuel 22, same heading; a royal thanksgiving | 1-19 | Repository deep note (historical, literary); BSB 2 Samuel 22:1 | BSB text |
+| Wilderness cliffs and strongholds; horn as strength | 1-19 | Repository deep note (cultural) | Site's own teaching |
+| Theophany like Sinai (Exodus 19:16) | 1-19 | Repository deep note (cultural); BSB | BSB text |
+| Frame of verses 20 and 24 around 25-26 | 20-30 | Repository deep note (literary) | Site's own teaching |
+| David spares Saul twice (1 Samuel 24 and 26) | 20-30 | BSB | BSB text |
+| "Shrewd" from a word for twisting (patal) | 20-30 | Standard lexicon | Stated plainly; no more claimed |
+| Lamp: clay dish with a wick; David's lamp (1 Kings 11:36) | 20-30 | BSB; common knowledge | BSB text |
+| "Blameless" as whole-hearted, loyal | 20-30 | Book page ("When a psalmist says he is innocent") | Site's own teaching |
+| A bow of bronze need not be literal | 31-50 | Repository deep note (cultural) | Site's own teaching |
+| Luke 1:69; Matthew 14:31; Colossians 1:13; John 8:12; Hebrews 4:15; 2 Samuel 7:16; 2 Samuel 11; Luke 1:32; Romans 15:9; 2 Corinthians 10:4; Matthew 5:44 | all | BSB | BSB text |
+
+No modern nation or army; the war lines read as history, under the praise of
+verse 49 and 2 Corinthians 10:4. Cut: "Israel was not a sea-going people" (not
+checked).
+
+## The plain notes on Psalm 19 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two halves; one poem or two joined, debated | 1-6 | Repository deep note (historical); psalms.scriptura.org "The Unity of Psalm 19" | Search. Both views stated |
+| C. S. Lewis, Reflections on the Psalms (1958), "the greatest poem in the Psalter and one of the greatest lyrics in the world" | 1-6 | workingpreacher.org (Psalm 19 commentary, dating the book 1958, with the page 63); supersummary.com quotes | Search. Given without quotation marks, as his judgment |
+| Shamash the Mesopotamian sun god, also god of justice | 1-6 | intertextual.bible (Code of Hammurabi and Psalm 19:6); Stellenbosch Theological Journal 10.3 (2024); Sarna as reported | Search. The popular "Hammurabi receives the laws from Shamash" not stated (the 2024 article qualifies it) |
+| Bridegroom and champion images | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| "God" once in 1-6, "the LORD" seven times in 7-14 | 7-14 | BSB | Count by hand on the BSB text |
+| Torah as teaching; go'el, the kinsman-redeemer (Ruth 4:14) | 7-14 | Book page key words; BSB | Site's own teaching; BSB text |
+| Unintentional and defiant sins (Numbers 15:27-30) | 7-14 | BSB | BSB text |
+| Romans 10:18; 1:20; 7:12; John 1:9, 14; Matthew 4:4; Hebrews 4:12 | both | BSB | BSB text |
+
+No position on the age of the earth or evolution ("Christians hold different
+views ... Psalm 19 does not take a side"); the sun's course read as poetry of
+what the eye sees.
+
+## The plain notes on Psalm 20 (2026-11-19)
+
+No web search. Papyrus Amherst 63 (in the deep note) is not used: not searched.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Royal psalm before battle; offerings before battle; used in the temple (many scholars) | Repository deep note (historical, cultural) | Stated as "many scholars" |
+| Chariots the strongest weapon; Israel in the hills had few for much of its history; Exodus 15:4 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Isaiah 31:1; Proverbs 21:31; 1 Samuel 17:45; Acts 2:33 | BSB | BSB text |
+
+No modern nation's army in view (pointing to the book page).
+
+## The plain notes on Psalm 21 (2026-11-19)
+
+No web search. The Targum's "King Messiah" (in the deep note) is not used: not searched.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Twin of Psalm 20; framed by God's strength (verses 1, 13) | BSB; repository deep note | BSB text |
+| "Live forever" as court language (1 Kings 1:31); 2 Samuel 7:16 | Repository deep note (cultural); BSB | BSB text |
+| "Furnace" a household clay oven | Repository deep note (cultural) | Site's own teaching |
+| Hebrews 2:9; Revelation 19:12; John 11:25 | BSB | BSB text |
+
+## The plain notes on Psalm 22 (2026-11-19)
+
+Three web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The Doe of the Dawn" most likely a tune | 1-11 | Repository deep note (historical) | Stated as "most likely" |
+| Complaint and memory alternating; the turn in the middle of verse 21; the second half answering the first (despised, face, cry; birth and a people yet unborn) | all | Repository deep note (literary); BSB | BSB text |
+| Mark 15:34 Aramaic; Matthew 27:46-47 "Eli", Elijah; Mark 15:29; Matthew 27:43; 2 Corinthians 5:21 | 1-11 | BSB | BSB text |
+| Three Christian readings of the cry | 1-11 | Book page, "Why have You forsaken me?" | Site's own teaching (pointed to, summarised) |
+| Talmud Megillah 15b: Esther speaks the first line as she goes in to the king; the psalm read at Purim in some communities | 1-11 | thetorah.com "My God, My God, Why Have You Forsaken Me? Jesus or Esther"; ezrabrand.com on Megillah 15a-b; etzion.org.il | Search. "In some Jewish communities" |
+| Rashi reads the "I" as Israel in exile | 1-11 | Chabad (Rashi on Psalm 22); sefaria; hebrewbible.app | Search |
+| Bashan's cattle (Amos 4:1); dogs as scavengers; wild oxen extinct; water, wax, potsherd | 12-21 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Masoretic ka'ari "like a lion"; Jewish translations follow it; Isaiah 38:13; the Greek "they dug" (made before Jesus); Nahal Hever fragment (5/6HevPs, first century AD) with a final vav read by many as a verb, disputed (faint letter, careless scribe); one letter (yod or vav) apart; the Gospels never quote 22:16 | 12-21 | en.wikipedia.org "They have pierced my hands and my feet"; lxxscrolls.substack.com; jewsforjudaism.org chapter 37d; torahresource.com; Strawn named in the results (not named on the page); repository deep note (text, hard) | Search. Each view stated; no side. Scholars and the date range of the fragment not given beyond "about the first century AD" |
+| All four Gospels: garments divided (Mark 15:24; Matthew 27:35; Luke 23:34; John 19:23-24) | 12-21 | BSB | BSB text |
+| Vows kept with a peace offering eaten in a shared meal | 22-31 | Repository deep note (cultural; Leviticus 7) | Site's own teaching |
+| Hebrews 2:11-12; John 20:17; Isaiah 45:22; Revelation 7:9; John 19:30 ("often set beside") | 22-31 | BSB | BSB text |
+
+Care: "If you feel forsaken right now and the feeling will not lift ..." with
+Find Help. Cut: Justin Martyr and Tertullian on verse 16, Pesikta Rabbati,
+Bach, Handel, Flint by name, the Givat HaMivtar skeleton (all in the deep
+note; not searched this run).
+
+## The plain notes on Psalm 23 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shepherding hard work in dry country; rod a club, staff for guiding | 1-4 | Repository deep note (cultural) | Site's own teaching |
+| David the shepherd (1 Samuel 17:34-35); "You will shepherd My people" (2 Samuel 5:2) | 1-4 | BSB | BSB text |
+| Kings called themselves shepherds; Hammurabi does so in his law code | 1-4 | en.wikipedia.org "Code of Hammurabi"; intertextual.bible; vision.org "Shepherds of the People"; Cardiff (Johnson) | Search. "In his law code" (prologue or epilogue: sources differ, so neither named) |
+| Tsalmavet: "shadow" + "death", or "deep darkness"; many modern Bibles "darkest valley" or "deep darkness"; the Greek "shadow of death"; the repository's Strong's gloss "deep darkness" | 1-4 | psalms.scriptura.org "The Meaning of צלמות in Psalm 23:4"; biblicaltraining.org; chaimbentorah.com; Strong's H6757 in the repository | Search; repository data |
+| Anointing a guest's head (Luke 7:46) | 5-6 | BSB | BSB text |
+| "Mercy" is hesed (H2617), "follow" is pursue (H7291) | 5-6 | Repository word data for 23:6 | Script |
+| Ezekiel 34:15; Isaiah 40:11; John 10:11; Luke 15:4; Hebrews 13:20; Revelation 7:17; 19:9; John 14:2 | both | BSB | BSB text |
+
+Care: "Grief is not a failure of faith. If your grief has become too heavy to
+carry, please tell someone you trust, a pastor, a friend or a doctor. The Find
+Help page on this site lists places to turn." Cut: the host's duty to protect
+a fugitive guest (the deep note's claim; cut on Psalm 5's run too, not checked).
+
+## The plain notes on Psalm 24 (2026-11-19)
+
+Two web searches (the Mishnah; the Ugarit search shared with Psalm 29).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Mishnah Tamid 7:4: Psalm 24 the Levites' song for the first day of the week | 1-6 | outorah.org "Song of the Day" and Tamid 7:3-4; seforimblog.com; en.wikipedia.org "Shir shel yom" | Search |
+| Ugarit: the storm god Baal fights the sea god Yam and wins kingship | 1-6 | worldhistory.org "Yamm"; obitel-minsk.com "The Bible and the Ugaritic literature"; Christianity Today (1960) | Search. Stated as what the Ugarit poems say, not as a source of the psalm |
+| Entrance psalm like Psalm 15 | 1-6 | Repository deep note (literary, historical) | Site's own teaching |
+| Gates with towers, lintel as head; LORD of Hosts and the ark | 7-10 | Repository deep note (cultural) | Site's own teaching |
+| The ark brought in (2 Samuel 6:15), "many readers"; or a festival procession | 7-10 | Repository deep note (historical); BSB | Both readings stated |
+| 1 Corinthians 10:26; Matthew 5:8; Isaiah 6:3, 5-7; Hebrews 9:24; John 1:14; 1 Corinthians 2:8 | both | BSB | BSB text |
+
+Narrowed: "sung on Ascension Day from early times" (not checked) became "Many
+Christians read verses 7 to 10 of Jesus going up into heaven". Not earning
+God's favour: the hard part points to Psalm 15's note and Hebrews 9:24.
+
+## The plain notes on Psalm 25 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Acrostic with a gap or two (no vav, two resh, no qof); a last verse outside the alphabet beginning with pe, as in Psalm 34 | First Hebrew letter of each verse in the repository's `ch/psalms/25.json` and `34.json` | Script |
+| Verse 22 widening to all Israel, "many scholars" | Repository deep note (historical) | Stated as a scholarly view |
+| Shame as public; "wait" as watchful hope | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 40:31; Romans 5:5; John 14:6; James 1:5; Luke 18:13 | BSB | BSB text |
+
+## The plain notes on Psalm 26 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Hard cases taken to the priests (Deuteronomy 17:8-9) | BSB; repository deep note (historical) | BSB text |
+| Hand-washing: Deuteronomy 21:6-7; Exodus 30:19 | BSB; repository deep note (cultural) | BSB text |
+| "Kidneys and heart" | Repository deep note (cultural) | Site's own teaching |
+| Matthew 27:24; Psalm 51:7; 1 John 1:9 | BSB | BSB text |
+
+Innocence: one sentence pointing to the book page.
+
+## The plain notes on Psalm 27 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Light as life and favour; stronghold, rock | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Taking hold of the horns of the altar (1 Kings 1:50) | 1-6 | BSB; repository deep note | BSB text |
+| Two halves: two psalms joined, or one (shared words checked in the BSB) | 7-14 | Repository deep note (historical); BSB | Both views stated |
+| Family as security in a kinship society | 7-14 | Repository deep note (cultural) | Site's own teaching |
+| John 1:5; 8:12; 1 John 1:5; Luke 10:42; Hebrews 13:6; Isaiah 49:15; Matthew 26:60; Joshua 1:9 | both | BSB | BSB text |
+
+27:1 carries two em-dashes in the BSB: quoted in four pieces. Care: verse 10,
+for readers whose parents left or hurt them; someone trusted, a counsellor,
+Find Help.
+
+## The plain notes on Psalm 28 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The Pit (bor) a cistern, in poetry the grave; hands raised toward the inner sanctuary | Repository deep note (cultural) | Site's own teaching |
+| A priest's word between verses 5 and 6, or a change in prayer | Repository deep note (historical) | Two readings |
+| 1 Kings 8:30; 1 Timothy 2:8; Matthew 7:15; Isaiah 40:11 | BSB | BSB text |
+
+Verse 4: one sentence pointing to the book page's cursing psalms part.
+
+## The plain notes on Psalm 29 (2026-11-19)
+
+One web search (shared with Psalm 24).
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The voice of the LORD" seven times | BSB | Count by hand |
+| Sirion is Hermon (Deuteronomy 3:9) | BSB | BSB text |
+| "Heavenly beings" is "sons of God(s)" | Repository deep note (cultural); Psalm 8 row on elohim | Site's own teaching |
+| Ugarit poems: Baal's voice is thunder, rider on the clouds, conflict with the sea; scholars compare Psalm 29; some think its words for Baal were given to the LORD | obitel-minsk.com; christianitytoday.com (1960) "Prophets and Canaanites"; intertextual.bible; Mark Smith (2014) as summarised | Search. Stated as a comparison, "not something the psalm says" |
+| Mabbul only in Genesis 6 to 11 and Psalm 29:10 | Strong's H3999 counted over the repository's Hebrew | Script |
+| Baal and rain, 1 Kings 18 | BSB; repository deep note | BSB text |
+| John 12:28-29; Matthew 8:26-27; Luke 2:14 ("some readers hear it") | BSB | BSB text |
+
+Cut: the date Ugarit was found (1929 in the deep note; not searched).
+
+## The plain notes on Psalm 30 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The heading's puzzle: David's palace; the temple site (1 Chronicles 22:1); a later use. Left open | Repository deep note (historical); BSB | Three readings stated |
+| Sackcloth of goat hair worn in grief; dancing in public joy | Repository deep note (cultural) | Site's own teaching |
+| John 16:20; Luke 6:21; 2 Corinthians 4:17; Revelation 21:4 | BSB | BSB text |
+
+Hard: "joy comes in the morning" not a promise that grief is short; points
+to Psalm 6.
+
+## The plain notes on Psalm 31 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Luke 23:46 from Psalm 31:5; Jesus adds "Father" | BSB; book page ("How the New Testament uses the Psalms") | BSB text |
+| "Terror on every side" also in Jeremiah 20:10 | BSB | BSB text |
+| Acts 7:59; 1 Peter 4:19 | BSB | BSB text |
+
+Narrowed: "Many Christians say it before sleep" (not checked) became an
+invitation; "a broken pot was not mended" cut. Verse 10 (iniquity and
+strength) points to Psalms 32 and 38.
+
+## The plain notes on Psalm 32 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Maskil uncertain; first at Psalm 32 (also 42, 44, 45, 52-55, 74, 78, 88, 89, 142) | 1-5 | BSB headings by script | Script |
+| Three words for wrong (rebellion, missing the mark, crookedness); forgiven, covered, not counted | 1-5 | Standard lexicons; repository word notes | Site's own teaching |
+| "Covered" (32:1) and "hide" (32:5) both H3680 kasah; "forgiven" and "forgave" both H5375 nasa | 1-5 | Repository Strong's data for 32:1, 5 | Script |
+| One of the seven penitential psalms | 1-5 | Psalm 6 ledger row | Earlier ledger |
+| Romans 4:6-7; Proverbs 28:13; 1 John 1:9; James 5:16; John 9:2-3 | 1-5 | BSB | BSB text |
+| Isaiah 55:6; Luke 15:21; 2 Corinthians 7:10 | 6-11 | BSB | BSB text |
+
+Illness not presented as punishment for hidden sin ("It does not say that
+every illness has a sin behind it"); a guilt-laden heart pointed to Psalm 51
+and James 5:16. An earlier draft said "hide" (3-4) and "hiding place" (7)
+were one word; the script showed they are not, and the sentence was changed.
+
+## The plain notes on Psalm 33 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| No heading (with 1, 2, 10 in Psalms 1 to 41) | Psalm 9 ledger row | Script (earlier) |
+| 22 verses, not an alphabet poem | First Hebrew letters of 33 in the repository | Script |
+| Ruach breath, wind, Spirit | Standard | Site's own teaching |
+| Genesis 1:3; John 1:3; Hebrews 11:3; Revelation 5:9 | BSB | BSB text |
+
+## The plain notes on Psalm 34 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| David at Gath feigning madness; the king there is Achish (1 Samuel 21:10-13); Abimelech a title (Genesis 20, 26) or a slip in a later note | 1-10 | BSB; repository deep note (historical) | BSB text; both views stated |
+| Alphabet poem: no vav, extra last verse with pe | 1-10 | First Hebrew letters in the repository | Script |
+| The angel of the LORD speaking as God (Exodus 3:2-6) | 1-10 | BSB; repository deep note (cultural) | BSB text |
+| 1 Peter 2:3; Hebrews 1:14; 2 Kings 6:17 | 1-10 | BSB | BSB text |
+| 1 Peter 3:10-12 quotes 34:12-16; Matthew 5:4, 9 | 11-22 | BSB | BSB text |
+| John 19:36: Psalm 34:20, or the Passover law (Exodus 12:46; Numbers 9:12), or both | 11-22 | BSB | BSB text; the readings stated, none chosen |
+
+Hard (34:10): believers do go hungry; the psalm is thanks and teaching, not
+a contract; points to Psalms 37 and 73.
+
+## The plain notes on Psalm 35 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Contend" a legal word; battle and court | Repository deep note (cultural) | Site's own teaching |
+| The false witness punished (Deuteronomy 19:18-19) | BSB; repository deep note (historical) | BSB text |
+| John 15:25 from 35:19 or 69:4; Matthew 26:59-60; Matthew 5:44 | BSB | BSB text |
+
+Cursing lines: pointing to the book page, and "No reading of this psalm
+makes it right to harm anyone."
+
+## The plain notes on Psalm 36 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The servant of the LORD" in a heading only here and in Psalm 18 | BSB headings | Read in the BSB text |
+| "Oracle" a prophet's word; 36:1 hard Hebrew, translations differ | Repository deep note (cultural) | Site's own teaching |
+| River of delights "may recall Eden" | Common reading | Stated as "may" |
+| Romans 3:18; John 4:14; Revelation 22:1 | BSB | BSB text |
+
+## The plain notes on Psalm 37 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Wisdom psalm; alphabet poem roughly every second verse | 1-11 | Book page (acrostics); first Hebrew letters in the repository | Script |
+| "Do not fret" in 1, 7, 8; "inherit the land" in 9, 11, 22, 29, 34 | all | BSB | Read in the BSB text |
+| Land as the family's share; seized by the powerful; grass after winter rains | 1-11, 27-40 | Repository deep note (historical, cultural) | Site's own teaching |
+| Matthew 5:5 nearly the same as the Greek of Psalm 37:11; Hebrew anawim behind "meek"; the Hebrew for "land" also means "earth" | 1-11 | en.wikipedia.org "Matthew 5:5"; intertextual.bible; israelbiblecenter.com "They Shall Inherit the Earth?" | Search. The article difference between the Greek texts not stated |
+| Loans in lean years; no interest (Exodus 22:25) | 12-26 | Repository deep note (cultural); BSB | BSB text |
+| Ruth 1:1; Luke 16:20-21; Acts 11:28-29; James 2:5; Psalm 73:2-3, 17, 26; Romans 4:13; 2 Peter 3:13; 1 Peter 5:7; Jeremiah 31:33; Hebrews 11:13; Revelation 21:1; Matthew 6:19 | all | BSB | BSB text |
+
+The hard question stated: "It is honest to say plainly: the righteous do
+sometimes go hungry. The Bible itself says so." Three readings of 37:25 (one
+man's witness; how God's world usually works; the end of the story); one use
+ruled out (blaming the poor); Psalm 73 as the deeper answer. 37:8 has an
+em-dash in the BSB and is quoted only before it; 37:23's word "journey" is
+not quoted.
+
+## The plain notes on Psalm 38 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Opens with the words of Psalm 6:1; one of the seven penitential psalms | BSB; Psalm 6 ledger row | BSB text |
+| "For remembrance" also heads Psalm 70; meaning uncertain | BSB headings by script; repository deep note | Script |
+| Sickness assumed a sign of God's anger; friends keeping away; doctors but little medicine | Repository deep note (cultural); Psalm 6 note | Site's own teaching |
+| Job 6:4; John 9:3; Luke 13:4-5; Isaiah 53:7; Luke 23:49; Romans 8:1; James 5:14 | BSB | BSB text |
+
+Illness and sin, on the page: "If you are ill, this psalm does not mean God
+is punishing you. Please do not let anyone tell you that it does." Guilt met
+with Psalms 32 and 51 and Romans 8:1; a doctor "is wise; it is not a lack of
+faith"; Find Help.
+
+## The plain notes on Psalm 39 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Jeduthun, a music leader (1 Chronicles 16:41); also heads 62 and 77 | BSB; headings by script | Script; BSB text |
+| Handbreadth a small measure | Repository deep note (cultural) | Site's own teaching |
+| Hevel (H1892) three times (39:5, 6, 11); the same word as Ecclesiastes 1:2 "futility" | Repository Strong's data | Script |
+| Foreigner and stranger: resident aliens protected by the law | Repository deep note (cultural) | Site's own teaching |
+| James 4:14; Luke 12:20; Hebrews 11:13; 1 Peter 2:11; Job 7:16 | BSB | BSB text |
+
+Care: "If you feel that you want to ‘be no more’, please do not carry that
+alone. Speak to someone today ..." with Find Help; no number.
+
+## The plain notes on Psalm 40 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Waited patiently" a doubled verb (H6960 twice) | 1-5 | Repository Hebrew data for 40:1 | Script |
+| A cistern with mud: Jeremiah 38:6 | 1-5 | BSB | BSB text |
+| Hebrew 40:6 "ears You dug for me" (H241, H3738); the Greek "a body You prepared", which Hebrews 10:5 follows; some Greek copies differ; how the Greek arose not known; Exodus 21:6 link uncertain | 6-10 | Repository Hebrew data; biblehub.com commentaries on 40:6 and "Does Hebrews 10:5-7 alter Psalm 40?"; ccel.org (ESV note on 40:6); Reformation Study Bible note | Script; search. Both readings stated; the manuscripts not named |
+| Deuteronomy 17:18 (the king's copy of the law), "may be" | 6-10 | BSB; repository deep note | BSB text |
+| 1 Samuel 15:22; Hosea 6:6; Hebrews 10:5-7, 10; Matthew 26:39 | 6-10 | BSB | BSB text |
+| 40:13-17 is Psalm 70 with small changes; Psalm 53 repeats 14 | 11-17 | BSB compared | BSB text |
+| Romans 15:6; Revelation 5:9; Luke 4:18 | all | BSB | BSB text |
+
+40:5 and 40:7 carry em-dashes in the BSB: quoted only before them.
+
+## The plain notes on Psalm 41 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sharing bread as a bond of loyalty | Repository deep note | Site's own teaching |
+| Ahithophel (2 Samuel 15:12, 31), "many readers"; not named in the psalm | BSB; repository deep note (historical) | BSB text |
+| 41:13 closes Book One; the four doxologies; 106:48 nearly the same words | Book page ("Five books"); BSB | BSB text |
+| John 13:18 omits "whom I trusted"; John 6:64; Mark 14:18; Matthew 5:7; John 13:5 | BSB | BSB text |
+
+Illness and sin: points to the Psalm 38 note. Verse 10: points to the book
+page's cursing psalms part.
