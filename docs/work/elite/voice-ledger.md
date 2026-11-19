@@ -469,3 +469,81 @@ Others of the same kind: "The townspeople do not dispute the wisdom or the mirac
 ## Gates (fifth run)
 
 node scripts/build-context-index.mjs rerun: guides-index.json and worlds-index.json unchanged (it reads only titles, descriptions and part counts). All 36 content-gate commands in .github/workflows/ci.yml passed, run one at a time, including validate-worlds, validate-no-emdash and build-search-index --check ("up to date (732 entries)", so the search index needed no rebuild); last lines in /home/user/tmp-voice/w/gates5.txt. pnpm check passed. pnpm test passed (146 test files, 1653 tests; 7 files and 73 tests skipped). No build, no PDFs.
+
+# Sixth run: the seven older /faq pages
+
+Pass run 2026-11-19 on branch elite/voice over the seven /faq pages still in the old register (client/src/pages/faq/): WhatIsDeconstruction, WhatIsReligiousTrauma, WhatDoChristiansBelieveAboutHell, WhatDenominationShouldIJoin, WhatIsTheDifferenceBetweenCatholicAndProtestant, WhyArePeopleLeavingChurch, WhyDoYoungPeopleLeaveChurch. The other three (does-god-exist, is-the-bible-historically-accurate, can-science-and-faith-coexist) were brought in line with the argued answers in the apologetics runs and were not touched; the Bible page still has its own two " -- " dashes.
+
+## Method
+
+Scripts in /home/user/tmp-voice/f: faq.py reads each page's JavaScript string literals (the eight answers, the eight questions, the standfirst `line`, the go-deeper `text`, the related-link labels), flattens them for the tell counter (gtells.mjs from runs two to four), applies an edit list (edits/<Page>.py, exact old/new pairs, each old matching once) to those strings only, re-encodes them, and then checks: (1) everything in the file outside those strings is byte-identical (imports, props, classes, SEOMeta title, description and keywords, the JSON-LD objects, paths, hrefs); (2) factdiff.mjs on all the prose: every quotation, Scripture reference, year, number, number word, proper name and link, by count; (3) a hedge count (probably, perhaps, may, might, could, about, some, many, most, often, usually, sometimes, rarely, tend(s), whether and the rest, with "n't" read as "not") that may not fall; (4) length within 5 percent; (5) no " -- ", em-dash or en-dash introduced. Sentence-initial words the name counter mistook for names are listed in edits/<Page>.allow.json (Peripheral, Fear-based, Preventing, Young, Non-attendance); nothing else was allowed.
+
+## Measurement
+
+Words are all prose strings (fact-diff count). Tells are counted on the answers with quotations blanked, as in the earlier runs.
+
+| Page | Words before | after | change | Tells per 1,000 before | after | Tells | " -- " before | after | Edits | Fact diff |
+|---|---|---|---|---|---|---|---|---|---|---|
+| what-is-deconstruction | 1,887 | 1,835 | -2.76% | 20.4 | 12.4 | 35 to 21 | 25 | 0 | 24 | PASS |
+| what-is-religious-trauma | 2,162 | 2,137 | -1.16% | 16.6 | 14.6 | 33 to 29 | 27 | 0 | 30 | PASS |
+| what-do-christians-believe-about-hell | 2,085 | 2,036 | -2.35% | 12.3 | 10.9 | 23 to 20 | 17 | 0 | 26 | PASS |
+| what-denomination-should-i-join | 1,974 | 1,923 | -2.58% | 30.5 | 26.6 | 56 to 48 | 19 | 0 | 29 | PASS |
+| catholic-vs-protestant | 2,238 | 2,201 | -1.65% | 10.5 | 11.0 | 21 to 22 | 28 | 0 | 33 | PASS |
+| why-are-people-leaving-church | 1,829 | 1,780 | -2.68% | 18.1 | 15.3 | 30 to 25 | 24 | 0 | 31 | PASS |
+| why-do-young-people-leave-church | 2,066 | 2,024 | -2.03% | 22.4 | 17.9 | 42 to 33 | 12 | 0 | 33 | PASS |
+| **All seven** | 14,241 | 13,936 | -2.14% | 18.5 | 15.5 | 240 to 198 | 152 | 0 | 206 | 7 of 7 |
+
+The counter scores a colon that opens a list as a "colon before reveal", and many of the 152 dashes opened a real list; where a colon was the honest replacement it raised that count, which is why Catholic and Protestant went from 21 to 22 and the denominations page still scores high (its eighteen colons open its lists of questions to ask a church, which are genuinely lists).
+
+## Per page, in one line
+
+- Deconstruction: questioning inherited faith is old and biblical, not the same as losing it, and only worth it if it heads toward rebuilding; the church shares the blame for people who get stuck.
+- Religious trauma: it is harm done by how religious power is used, not by belief; it is real, it needs real treatment, and churches prevent it only by limiting their own power.
+- Hell: Jesus took judgment with full seriousness; three views have serious Christian advocates and the texts resist a single system; the page's own answer to the moral question is Lewis's self-chosen separation.
+- Denominations: choose by conviction, not taste; every church has a tradition and will disappoint you; look for one that tells the truth.
+- Catholic and Protestant: real differences about authority, salvation, sacraments, church and saints, each given in its own voice; worth arguing over, not worth refusing to recognize one another.
+- Leaving church: the exodus is real and many-caused; many left the building, not the faith; trust returns only with structural honesty; part crisis, part correction.
+- Young people: they say the church offered too little, not that it asked too much; the old return-with-children pattern has broken; what keeps them is honesty, depth, justice and room for complexity.
+
+## Eight before-and-after pairs
+
+1. Deconstruction. "The Bible is not a book that protects inherited assumptions. It is a book that repeatedly tears them apart in the service of something truer. The question is never whether deconstruction is biblical. The question is whether yours is heading somewhere or just tearing things down for the sake of it." became "The Bible doesn't protect inherited assumptions; again and again it tears them apart in the service of something truer. Whether deconstruction is biblical isn't really in doubt. What's worth asking is whether yours is heading somewhere or just tearing things down for the sake of it."
+2. Deconstruction. "And honest conversation with people who have been through it. Not people who want to fix you. People who will sit with you in the wreckage and help you sort through what is worth keeping. That is what the church should be. That is what it too rarely is." became "And find honest conversation with people who have been through it, people who won't try to fix you but will sit with you in the wreckage and help you sort through what's worth keeping. That's what the church should be, and what it too rarely is."
+3. Religious trauma. "Healing is not returning to what you had before. It is becoming something new. It takes time. It is worth it." became "Healing isn't a return to what you had before. It's becoming something new. That takes time, and it's worth it."
+4. Religious trauma. "The reconstructed faith tends to be less certain and more trusting. Less about right answers and more about right relationship. Less afraid of questions and more suspicious of systems that forbid them." became "The reconstructed faith tends to be less certain and more trusting. It cares less about right answers and more about right relationship, and it's less afraid of questions and more suspicious of systems that forbid them."
+5. Hell. "God's love is not coercive. It invites. It warns. It weeps. But it does not override the will." became "God's love isn't coercive. It invites, it warns, it weeps, but it doesn't override the will."
+6. Young people. "The departure is not always dramatic. Many young adults do not have a crisis of faith. They simply drift. Sunday becomes a day for sleeping in. The community they valued is replaced by new relationships. The sermons feel irrelevant to the questions they are actually asking." became "The departure isn't always dramatic. Many young adults never have a crisis of faith; they just drift. Sunday becomes a day for sleeping in, new relationships take the place of the community they valued, and the sermons feel irrelevant to the questions they're actually asking."
+7. Leaving church. "And fifth, many people have not left the faith. They have left the building. The distinction matters enormously. They still pray, still read, still believe -- but they no longer trust the institution to steward what they believe." became "And fifth, many people haven't left the faith; they've left the building, and that distinction matters enormously. They still pray, read, and believe, but they no longer trust the institution to look after what they believe."
+8. Denominations. "Look for a church that tells you the truth. Not a church that tells you what you want to hear, and not a church that uses truth as a weapon. A church that tells you the truth with tears in its eyes." became "Look for a church that tells you the truth, which means neither telling you what you want to hear nor using truth as a weapon. Look for one that tells you the truth with tears in its eyes."
+
+Also: Catholic and Protestant, "The split was not inevitable. It was the product of genuine theological conviction meeting institutional corruption meeting political opportunity." became "The split wasn't inevitable. It was what happened when genuine theological conviction met institutional corruption and political opportunity."
+
+## Left alone, and why
+
+- The questions (headings), word for word. One question carried a dash: "Which came first -- Catholic or Protestant Christianity?" is now "Which came first: Catholic or Protestant Christianity?" (punctuation only). The related-question label "Catholic vs. Protestant -- what is the difference?" on the hell and denominations pages became "Catholic vs. Protestant: what is the difference?"; its href is unchanged. No heading reads as a slogan, so none is listed.
+- SEOMeta titles, descriptions and keywords, the WebPage and Breadcrumb JSON-LD, paths, hrefs and the `more` titles and labels: byte-identical (the FAQPage JSON-LD carries the answer text, as it always has). The standfirsts of hell, religious trauma and Catholic and Protestant, and every go-deeper text but the trauma page's (one dash), are unchanged.
+- Every quotation, Scripture reference and wording, book title, name, date and figure. Each survey number on the two leaving-church pages is exactly as it was; none was added.
+- Help and safety wording: "Therapy (specifically with a counselor trained in religious trauma) is not optional for people whose deconstruction involves abuse or spiritual manipulation" (only the dashes became parentheses); "A person deconstructing after clergy abuse may need years of therapy..."; "You cannot heal in the same system that wounded you..."; the therapist warning; the directories and peer groups; the reporting and training items; "Many survivors of religious trauma do leave faith entirely, and that decision deserves respect." The trauma page's clinical claims (DSM-5, the APA materials, EMDR's "strong results") keep their words.
+- The lists that are really lists: the trauma symptoms, the six prevention steps, the denominations page's five axes and its questions to ask, the Growing Young commitments.
+- One hinge per answer where it carries the turn: "It doesn't look like going back. It looks like going through."; "The remedy isn't to prevent people from questioning. It's to give them something worth questioning toward."; "It makes it worse."; "People aren't leaving because the gospel is too demanding. They're leaving because what they were offered wasn't demanding enough to be worth their lives."; "The young just leave first."
+- Each view on the hell page at its present weight: the three definitions (with their "ultimately"), the advocates, the fathers on fire, "language more consistent with annihilationism than eternal torment", and the last answer's argument, which only lost its dashes and took contractions.
+- Each tradition's description on the denominations and Catholic and Protestant pages, including the traffic in both directions ("Many Catholics have become Protestant, and many Protestants have become Catholic or Orthodox.").
+
+## Where a lens pulled against a guardrail, and the guardrail won
+
+- Hedge count (lens 1 and 6). "most people feel the most alone" wanted to be "feel loneliest"; "some of the most robust Christians", "The most honest answer is", "The most effective approaches" wanted the "most" gone. Each would drop a counted word, so each kept it.
+- Names (lens 1). "In Christian circles" wanted to be "Among Christians"; "God told Job's friends" wanted to be "those friends"; "All three hold" added a number word. The fact diff caught each, and each went back.
+- Quotation (lens 3). Lewis's line on the hell page ended in a dash; the plain fix puts a comma inside the quotation marks, which changes the quoted string. The sentence was recast around it instead ("...locked from the inside\" and that no one is in hell...").
+- Care (lens 1 and 5). The therapy sentence in the deconstruction resources answer was left in its own words; only its dashes became parentheses. Nothing in the trauma page was made blunter toward a reader or softer about abuse ("weaponized" became "turned into weapons", not something milder).
+- Lens 4 on the leaving-church page. "stop conflating political conservatism with orthodoxy" names one direction only, where CLAUDE.md asks for the same instrument on both sides; adding the other side would be a new opinion, so it stays as it is and is listed for James.
+- Lens 3 on the hell page. The intensifier "ultimately" appears in the definitions of all three views; taking it out of one would tilt them, and out of all three would change how each is stated. Left.
+
+## For James
+
+- First-person sentences stating personal experience or memory: none on these seven pages. The pages speak of the writer only in three standfirsts: "a pastor who loves the church has to say so" (religious trauma), "A working pastor examines the data and the damage" (leaving church), and "A pastor with five sons" (young people; a confirmed fact).
+- Figures nobody has checked, with the source each page gives (unchanged): see the list in voice.md under this run.
+- Quotations and claims to check (not changed here): the hell page quotes Lewis as "the doors of hell are locked from the inside" (The Problem of Pain has "locked on the inside"); John 14:6 and Romans 2:14 there are not in ESV wording (Romans 2:14 reads as the NIV); "Jesus uses Gehenna eleven times, Hades twice" (Hades appears on Jesus's lips more than twice in the Gospels); the Gehenna "burning garbage dump" is commonly disputed; the Catholic and Protestant page quotes Lumen Gentium as "joined to us" (the Vatican's English has "joined with us") and says the Westminster Confession "still recognizes baptized Catholics as having received a valid Christian sacrament", which needs checking against the Confession's own text; the young-people page gives Growing Young as "three characteristics" in one answer and "six core commitments" in another.
+
+## Gates (sixth run)
+
+pnpm check passed. ESLint (--max-warnings 0) on the seven files passed. All 36 content-gate commands in .github/workflows/ci.yml passed, one at a time (validate-no-emdash "clean (260 files, 0 em-dashes)"; build-search-index --check "up to date (732 entries)"); last lines in /home/user/tmp-voice/f/gates.txt. pnpm test passed (146 files, 1653 tests; 7 files and 73 tests skipped). pnpm build passed; pnpm run sitemap (static fallback, no database) and pnpm run prerender (3,028 route files) passed; pnpm run audit:canonicals passed (0 failures). The seven pages were opened on the served build (serve-like-vercel.mjs, port 4634) at 390 x 844 and 1440 x 900 with the second question open: 8 questions each, no sideways scroll, no " -- " in the page text, head title and description as in the source (the description is the existing 155-character cut). Screenshots in /home/user/elite-shots/voice/. dist/ deleted, server stopped.
