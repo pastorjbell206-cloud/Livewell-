@@ -111,7 +111,7 @@ export default function ExplorerStop() {
           </p>
         </div>
       ) : (
-        <StopPage {...data} explorer={explorer} />
+        <StopPage key={data.stop.slug} {...data} explorer={explorer} />
       )}
     </Layout>
   );
@@ -134,7 +134,8 @@ function StopPage({
   }, [slug, finished]);
 
   const done = useCallback(() => markDone(slug), [markDone, slug]);
-  const doneBefore = progress.done.includes(slug);
+  // Read once, when the stop opens: finishing the activity now is not "before".
+  const [doneBefore] = useState(() => progress.done.includes(slug));
 
   const i = index.stops.findIndex(s => s.slug === slug);
   const summary = index.stops[i];

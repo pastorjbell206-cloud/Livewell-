@@ -64,7 +64,7 @@
       { "id": "light", "name": "The light and the darkness", "x": 50, "y": 9, "day": 1, "text": "Day 1. God made light, and separated the light from the darkness.", "ref": "Genesis 1:3-5" },
       { "id": "sky", "name": "The sky over the sea", "x": 16, "y": 52, "day": 2, "text": "Day 2. God made the sky, with the waters above it and the waters below.", "ref": "Genesis 1:6-8" },
       { "id": "land", "name": "The trees on the dry land", "x": 63, "y": 51, "day": 3, "text": "Day 3. God gathered the seas so the dry land appeared, and filled it with plants and trees.", "ref": "Genesis 1:9-13" },
-      { "id": "lights", "name": "The sun, the moon and the stars", "x": 82, "y": 20, "day": 4, "text": "Day 4. God made the sun, the moon and the stars, to mark the days, the seasons and the years.", "ref": "Genesis 1:14-19" },
+      { "id": "lights", "name": "The sun, the moon and the stars", "x": 76, "y": 28, "day": 4, "text": "Day 4. God made the sun, the moon and the stars, to mark the days, the seasons and the years.", "ref": "Genesis 1:14-19" },
       { "id": "creatures", "name": "The fish and the birds", "x": 22, "y": 80, "day": 5, "text": "Day 5. God filled the sea with fish and the sky with birds.", "ref": "Genesis 1:20-23" },
       { "id": "people", "name": "The animals and the two people", "x": 47, "y": 74, "day": 6, "text": "Day 6. God made the animals, and then a man and a woman in his own image.", "ref": "Genesis 1:24-31" },
       { "id": "rest", "name": "The garden", "x": 86, "y": 70, "day": 7, "text": "Day 7. God rested from his work, and he blessed the seventh day.", "ref": "Genesis 2:1-3" }
