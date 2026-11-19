@@ -3508,3 +3508,37 @@ chapter (counted above), with the book page's rows and the earlier ledger.
 Left out: Kramer and Enki and Ninhursag; Brueggemann (CBQ 1970); Trible,
 Ortlund, Hess, Stanton and Friedman by name; Cush as the Kassites; the king's
 garden as a sign of power (not checked; cut).
+
+## The plain notes on Genesis 3 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/3.json`. Three searches for this
+chapter (two counted above, and one on Gilgamesh's plant), with the earlier
+rows.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Arum (crafty, 3:1) and arummim (naked, 2:25) | 1-7 | Hebrew text | Script (H6175, H6174) |
+| Gilgamesh XI: the plant that renews youth; a snake takes it while he bathes and sheds its skin; he weeps | 1-7 | Epic of Gilgamesh | Search: Britannica "Epic of Gilgamesh"; GradeSaver; Macmillan source excerpt |
+| Genesis does not name the serpent Satan; the Wisdom of Solomon 2:24 (death through the devil's envy), traditionally the first text to equate the serpent with the devil, a reading recently questioned (Zurawski 2012) | 1-7 | Wisdom 2:24 | Search: bible.usccb.org (note); Orion bibliography (Zurawski). Paraphrased; "which many read as" |
+| Revelation 12:9, 20:2; John 8:44; 2 Corinthians 11:3; Matthew 4:4; Hebrews 4:15; Romans 5:12; 1 Timothy 2:14 | 1-7 | BSB | Repository |
+| Hitpael of halak in 3:8 and Leviticus 26:12 | 8-13 | Hebrew text | Script |
+| Original sin: Augustine and the Latin ‘in whom all sinned’ for Romans 5:12; Orthodox ‘ancestral sin’, death and a tendency to sin inherited, not guilt; Greek phrase debated | 8-13 | Western and Orthodox teaching | Search: stgeorgegreenville.org (Orthodox catechism); saintjohnchurch.org; summaries of Meyendorff. Stated as views |
+| Eating or licking dust as defeat (Micah 7:17); only the serpent and the ground cursed (arar at 3:14 and 3:17) | 14-15 | BSB; Hebrew text | Repository; script (H0779) |
+| Zera one child or a line | 14-15 | Repository deep note (`words`) | Repository |
+| Irenaeus, Against Heresies 5.21: Christ the woman's seed, recapitulation, crushing the enemy | 14-15 | Irenaeus | Search: newadvent.org/fathers/0103521.htm; St James Lancaster forum paper. Paraphrased |
+| Galatians 4:4; Romans 16:20; Hebrews 2:14; 1 John 3:8 | 14-15 | BSB | Repository |
+| Itsavon for both judgments (3:16, 3:17); teshuqah and mashal together in 3:16 and 4:7; teshuqah in Song 7:10 | 16-19 | Hebrew text | Script (H6093, H8669, H4910) |
+| Two readings of ‘desire’ (longing; desire to control) | 16-19 | Repository deep note (`words`) | Repository; no names |
+| Rachel's death in childbirth (35:16-19); Genesis 5:29; Romans 8:20-21; 1 Corinthians 15:26; Revelation 22:3; Ephesians 5:25 | 16-19 | BSB | Repository |
+| Safety wording copied word for word from the Mark 10:1-12 note | 16-19 | Site | Repository (grep: the sentence appears once in each file) |
+| Kuttonet for 3:21, Joseph's robe (37:3), priests' tunics (Exodus 28:40); lavash at 3:21 and Leviticus 8:13 | 20-24 | Hebrew text | Script (H3801, H3847) |
+| Cherubim in the tabernacle veil (Exodus 26:31); Cain east of Eden (4:16) | 20-24 | BSB | Repository |
+| The ‘surely die’ formula (mot tamut, ‘in the day’) in 1 Kings 2:37 | 20-24 | Hebrew text | Script (H4191 twice, H3117) |
+| Three views on death before the fall; no side | 20-24 | Honest Answer (evolutionary creation's hard question); repository deep notes | Repository; stated as views |
+| Revelation 22:2-3, 22:14; Colossians 3:10; 2 Corinthians 5:17; 1 Corinthians 15:22 | 20-24 | BSB | Repository |
+
+Left out: Adapa; the uraeus and Apophis; the Timna copper snake; the Life of
+Adam and Eve and 1 Enoch's Gadreel; Niehaus's storm reading of 3:8;
+Foh, Collins, Barr, Moberly, Wenham, Kant, Fromm and the Nag Hammadi texts by
+name; the term ‘protoevangelium’ and its date (the page says "Christians have
+long called it").
