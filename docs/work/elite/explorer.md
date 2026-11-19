@@ -151,3 +151,17 @@ The Bible door already lists six rooms (`client/src/lib/siteCatalog.ts`), so Bib
 3. The two levels are "Ages 7 to 11" and "Ages 12 to 16", as he said. The Family door's devotions say "about 4 to 10" and "about 11 to 17". Should the two be brought into line?
 4. Is he content with the one sentence at the older level of Creation that says Christians read the days of Genesis 1 differently, with the link to the Honest Answer?
 5. Which stops should come next, in what order?
+
+## What was run (2026-11-19)
+
+- `pnpm check`: clean. ESLint on every changed file: clean.
+- Every command of the content-gates step in `.github/workflows/ci.yml`, including the new `node scripts/build-explorer-index.mjs --check` and `node scripts/validate-explorer.mjs`: all exit 0.
+- `pnpm test`: 147 files passed, 7 skipped (1,693 tests passed, 73 skipped), including the 14 new Explorer tests, the route smoke net, site-structure and the catalogue tests.
+- `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (4 Explorer stop pages written; the map's head extracted from its SEOMeta), `pnpm run audit:canonicals`: every audited page canonicalises to itself.
+- On the served build (`scripts/serve-like-vercel.mjs`, port 4621): every activity completed by touch (phone emulation) and by keyboard alone; the level kept across a reload; the thread lit at 13 stops by tap and by Enter; "You are here" after a reload; no sideways scroll at 390 or 1440; no console errors.
+- Lighthouse (`scripts/lighthouse-median.mjs`, three runs, median): `/study/explorer` performance 90, accessibility 100, best practices 96, SEO 100, CLS 0.000; `/study/explorer/rescue` performance 90, accessibility 100, best practices 96, SEO 100, CLS 0.000.
+- Screenshots: `/home/user/elite-shots/explorer/` (every finished stop at 390 and 1440, day and night, both levels); six chosen ones in `docs/work/elite/explorer-shots/`.
+
+## Not done in the pilot
+
+Nine stops, four threads and eight cards, as planned above. James has not yet read any of the writing. No printable pages, no parent guide. Axe was not run separately (Lighthouse's accessibility audit is axe-based and scored 100 on both pages).
