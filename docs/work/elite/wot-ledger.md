@@ -22,7 +22,7 @@ changed after; nothing marked verified here was checked only from memory.
 
 | Claim | Source | How checked |
 |---|---|---|
-| All 21 passages under "How it changes what you read" are word for word the Berean Standard Bible and link to their chapter and first verse | `client/public/bible/text` | Verified (validator): `scripts/validate-worlds.mjs`, now reading any book of the Bible (it read only the Gospels and Acts before) |
+| All 21 passages under "How it changes what you read" are word for word the Berean Standard Bible and link to their chapter and first verse | `client/public/bible/text` | Verified (validator): `scripts/validate-worlds.mjs`, now reading any book of the Bible (it read only the Gospels and Acts before). Hosea 2:8, Psalms 68:4 and Jeremiah 34:7 were first chosen but carry em-dashes in the BSB, which `validate-no-emdash.mjs` forbids anywhere in a world file, so Hosea 2:5, 1 Kings 18:21 and Jeremiah 36:4 stand in their place; the first three are still cited in the prose without the dash |
 | Every other reference in the prose (Numbers 20:17; Deuteronomy 6:8-9, 7:13, 11:10-11, 11:14, 12:5, 12:31, 24:17-18, 25:13-15, 31:10-11; Exodus 20:2-4, 21:23-27, 23:14-16; Leviticus 19:9-10; Numbers 6, 22:5, 27:7, 35:31; Joshua 7:14; Judges 2:14, 6:11; Ruth 3:2, 4:1; 1 Samuel 13:21, 28:24; 1 Kings 6:2, 12:19-20, 16:24, 18:1, 22:39; 2 Kings 3:27, 17:6, 17:24, 18:4, 18:13-14, 20:20, 23:6, 23:10, 24:17, 25:30; Isaiah 22:10, 36:2, 44:15; Jeremiah 7:18, 7:31, 26:18-19, 29:5, 32:9, 34:7, 36:10; Ezekiel 1:1; Hosea 2:8; Amos 5:15, 6:4, 7:13, 8:5; Psalms 68:4, 137:1, 137:4; Genesis 23:16, 25:8; Ezra 1:2-3) | Bible text | Verified (BSB text): each was printed from `client/public/bible/text` and the prose quotes or paraphrases what it says. Quoted words are the BSB's |
 
 ## Intro and Part 1: A land between empires
@@ -130,3 +130,4 @@ reading; no single sentence of the portrait rests on them alone.
 - Whether the Lachish ramp is truly the only Assyrian siege ramp ever
   excavated: stated as "often called".
 - Meyers's own page for the grinding estimate.
+- Where the Mesha Stele and the Laws of Hammurabi now stand (the Louvre), named in the source list: standard museum facts, not searched; the Merneptah Stele in Cairo was confirmed.
