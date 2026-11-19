@@ -6041,3 +6041,43 @@ Two web searches (the Mishnah; the Ugarit search shared with Psalm 29).
 Narrowed: "sung on Ascension Day from early times" (not checked) became "Many
 Christians read verses 7 to 10 of Jesus going up into heaven". Not earning
 God's favour: the hard part points to Psalm 15's note and Hebrews 9:24.
+
+## The plain notes on Psalm 25 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Acrostic with a gap or two (no vav, two resh, no qof); a last verse outside the alphabet beginning with pe, as in Psalm 34 | First Hebrew letter of each verse in the repository's `ch/psalms/25.json` and `34.json` | Script |
+| Verse 22 widening to all Israel, "many scholars" | Repository deep note (historical) | Stated as a scholarly view |
+| Shame as public; "wait" as watchful hope | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 40:31; Romans 5:5; John 14:6; James 1:5; Luke 18:13 | BSB | BSB text |
+
+## The plain notes on Psalm 26 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Hard cases taken to the priests (Deuteronomy 17:8-9) | BSB; repository deep note (historical) | BSB text |
+| Hand-washing: Deuteronomy 21:6-7; Exodus 30:19 | BSB; repository deep note (cultural) | BSB text |
+| "Kidneys and heart" | Repository deep note (cultural) | Site's own teaching |
+| Matthew 27:24; Psalm 51:7; 1 John 1:9 | BSB | BSB text |
+
+Innocence: one sentence pointing to the book page.
+
+## The plain notes on Psalm 27 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Light as life and favour; stronghold, rock | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Taking hold of the horns of the altar (1 Kings 1:50) | 1-6 | BSB; repository deep note | BSB text |
+| Two halves: two psalms joined, or one (shared words checked in the BSB) | 7-14 | Repository deep note (historical); BSB | Both views stated |
+| Family as security in a kinship society | 7-14 | Repository deep note (cultural) | Site's own teaching |
+| John 1:5; 8:12; 1 John 1:5; Luke 10:42; Hebrews 13:6; Isaiah 49:15; Matthew 26:60; Joshua 1:9 | both | BSB | BSB text |
+
+27:1 carries two em-dashes in the BSB: quoted in four pieces. Care: verse 10,
+for readers whose parents left or hurt them; someone trusted, a counsellor,
+Find Help.
