@@ -4261,3 +4261,32 @@ chapter, with the deep note, the verse notes and the Genesis book page.
 
 Cut: Hammurabi's herding laws (not checked this run); "the God who was
 Isaac's dread to his enemies" (not checked).
+
+## The plain notes on Genesis 32 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/32.json`. Four web searches for this
+chapter, with the deep note, the verse notes and the Genesis 12 plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Mahanaim ‘two camps’; the word returns in verses 7 and 10; David at Mahanaim (2 Samuel 17:24) | 1-2 | Deep note (`historical`, `literary`); BSB | Repository |
+| 2 Kings 6:15-17; Psalm 34:7; Hebrews 1:14 | 1-2 | BSB | Repository |
+| ‘My master’ and ‘your servant’ reverse 27:29; Seir south and east of the Dead Sea | 3-8 | Deep note (`cultural`, `historical`) | Repository |
+| About four hundred men with David (1 Samuel 22:2); Numbers 20:14-21 | 3-8 | BSB | Repository |
+| Kindness and faithfulness (chesed and emet) as in Exodus 34:6; Philippians 4:6; Psalm 34:4 | 9-12 | BSB; standard lexicons | Repository |
+| 550 animals; minchah also used of offerings; Proverbs 21:14; ‘face’ repeated in verse 20; ‘appease’ = kipper ‘cover’, later of atonement | 13-21 | Deep note (`cultural`, `literary`) | Repository; count checked by sum of 32:14-15 |
+| Genesis 33:10; Matthew 5:23-24 | 13-21 | BSB | Repository |
+| Jabbok a river cutting a deep valley to the Jordan; Yaakov/yeaveq/Yabboq; renaming as authority | 22-29 | Deep note (`historical`, `literary`, `cultural`) | Repository |
+| Hosea 12:3-4; Genesis 35:10; Judges 13:18 | 22-29 | BSB | Repository |
+| Genesis Rabbah 77:3: Esau's guardian angel; Rashi repeats it | 22-29 | Genesis Rabbah 77:3; Rashi on 32:25 | Search: sefaria.org sheets 283350 and 283366; rabbisacks.org. Paraphrased |
+| Justin Martyr, Dialogue with Trypho (125-126), second century: the wrestler the Word, the Son, before he became man | 22-29 | Justin | Search: logoslibrary.org trypho 125 and 126; newadvent.org; bkv.unifr.ch. Paraphrased; "in the second century" |
+| An older river-spirit tale (some modern scholars) and its critics | 22-29 | Deep note (`hard`) | Repository; stated as a view |
+| Israel: Genesis explains by sound ‘struggled with God’; the name may first have meant ‘God strives’ or ‘God rules’ (El rules); root uncertain | 22-29 | NET note on 32:28; Jewish Study Bible as quoted; Wikipedia "Israel (name)"; abarim-publications | Search: "meaning of the name Israel ... debated". Said as uncertain |
+| "These notes make no claim about any modern state, border or conflict" word for word from the Genesis 12 note | 22-29 | Site | Repository (grep -F) |
+| Peniel/Penuel ‘face of God’; Exodus 33:20; sunset 28:11 and sunrise 32:31 | 30-32 | Deep note (`literary`); BSB | Repository |
+| Gid hanasheh: Jewish law still forbids the tendon (usually identified with the sciatic nerve); it is cut out with skill, and in many places the hindquarters are not eaten | 30-32 | Chabad "What Is Gid Hanasheh"; steinsaltz.org Hullin 90; yeshiva.co halakhic overview | Search: "gid hanasheh sciatic nerve ... today" |
+| John 1:18; 2 Corinthians 4:6; 12:9; Deuteronomy 4:9 | 30-32 | BSB | Repository |
+
+Cut: the Samael identification (doubtful in the sources); Maimonides on a
+prophetic vision (not confirmed by the search); Jabbok as the modern Zarqa
+(in the deep note, not needed); Penuel's later history.
