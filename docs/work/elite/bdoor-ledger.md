@@ -5164,3 +5164,33 @@ Left out: the Soloi inscription and Ramsay's claims about Sergius Paulus's
 family; the 450 years of 13:20 (not explained); the middle-voice reading of
 tetagmenoi; the year Pisidian Antioch became a colony; Orthodox teaching on
 justification (not searched, so not described).
+
+## The plain notes on Acts 14 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/14.json`. 2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Iconium = Konya; Iconium, Lystra, Derbe in the province of Galatia | 1-7 | Deep note `historical` | Repository |
+| "As usual" (14:1) after 13:46: the turn was local; a great number of Jews believed | 1-7 | BSB | Repository |
+| "The unbelieving Jews" (14:2), "sided with the Jews" (14:4), "Gentiles and Jews, together with their rulers" (14:5), "some Jews" from Antioch and Iconium (14:19): opponents in those towns; many Jews believed (13:43; 14:1); Paul a Jew; pointer to 2:22-28 | 1-7, 19-20 | BSB; book page part "Acts and the Jewish people" | Repository |
+| "Apostles" for Paul and Barnabas (14:4, 14), "ones sent", sent by Antioch (13:3) | 1-7 | BSB; lexical | Stated as "seems" |
+| Matthew 10:23; Deuteronomy 26:8; Luke 12:51-53; Micah 7:6 | 1-7 | BSB | Repository |
+| Lystra a Roman colony under Augustus (inscription and coins "COL IVL FEL GEM LVSTRA"); its people spoke Lycaonian (14:11) | 8-13 | Inscription; coins | Search: ancient-history-sites.com "Lystra"; wildwinds.com and snible.org (coins of Lystra); arkeonews.net. Veterans and a founding year not stated |
+| Zeus king of the gods, Hermes their messenger | 8-13 | Common knowledge | Common knowledge |
+| Ovid (Metamorphoses 8): Jupiter and Mercury disguised as travellers in the hills of Phrygia, turned away by all but Baucis and Philemon, who were rewarded while the rest were punished; how far it lies behind Acts 14 is debated | 8-13 | Ovid | Search: perseids.org Metamorphoses 8.612-799 (English); Cambridge NTS abstract "Gods or Ambassadors of God? Barnabas and Paul in Lystra"; 1911 Britannica "Philemon and Baucis". Paraphrased. Inscriptions of Zeus and Hermes together near Lystra not used (not confirmed) |
+| Wreaths garlands for sacrificial animals; tearing clothes a Jewish sign of grief or horror | 8-18 | Deep note `cultural` | Stated generally |
+| Acts 3:2 lame from birth; Isaiah 35:6; Psalm 115:7; Genesis 18:2; 19:1-3 | 8-13 | BSB | Repository |
+| Psalm 146:6; Exodus 20:11; Jeremiah 5:24; 10:10; Isaiah 44:9 | 14-18 | BSB | Repository |
+| Those who never heard: pointer to the Honest Answer | 14-18 | answers.ts | Repository; no side taken |
+| 2 Corinthians 11:25; 2 Timothy 3:10-11; 16:1-2 (Timothy of Lystra, "may have been"); 8:1; Psalm 34:19; 2 Chronicles 24:20-21 | 19-20 | BSB | Repository |
+| Cheirotoneō first "choose by a show of hands", by then often simply "appoint"; 20:28; 1 Peter 5:1-2 | 21-28 | Deep note `cultural`; lexical | Stated with "some read" |
+| Church government: bishops (Catholic, Orthodox, Anglican); elders together (Presbyterian); congregational (Baptist and others); no side | 21-28 | Standard positions | Stated as views |
+| Numbers 11:16; Exodus 18:21; Isaiah 49:6; John 16:33; 2 Corinthians 4:9 | 21-28 | BSB | Repository |
+| South and North Galatian views of Paul's letter, no side | 21-28 | Deep note `historical` | Stated as views, no names |
+| Care line on hardship (the Acts 7 form adapted) with Find Help | 21-28 | Earlier care lines | Repository wording |
+
+Left out: veterans settled at Lystra; the year it became a colony; Zeus and
+Hermes inscriptions near Lystra; the statue of Hermes dedicated to Zeus;
+Ancyra and the North Galatian region by name; the distance from Antioch to
+Lystra.
