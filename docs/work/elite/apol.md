@@ -354,7 +354,7 @@ The argument in three sentences. Hick's pluralism, stated in his own terms (a Co
 
 Before: "The philosopher John Hick pressed the objection well: make God the center, and Christianity, Islam, and the rest are planets in orbit... He loved the parable of the blind men and the elephant..." After (set out): "1. The great religions make claims about the same matters that contradict each other... 2. Two claims that contradict each other about the same matter can't both be true. So: At least some of the great religions are mistaken about something they hold central. No view of the religions, the pluralist's included, can call them all true as their own followers understand them."
 
-Words: about 340 before; 2,227 after (with the laid-out arguments, before headings and sources).
+Words: 340 before; 2,227 after (with the laid-out arguments, before headings and sources).
 
 Sources: Hick 1973 and 1989 (the best book against); D'Costa 1996; Hick's reply 1997; Plantinga 1995; Newbigin 1989; Sanders 1992; Sanders, Fackre and Nash 1995; Pinnock 1992.
 
@@ -364,7 +364,7 @@ The argument in three sentences. Hume's case is quoted from the Enquiry itself (
 
 Before: "John Earman, no apologist, called this circular in Hume's Abject Failure (Oxford, 2000)." After: "The first is a circle... C. S. Lewis put it plainly in Miracles (1947)... That is the second problem. John Earman... examined the essay with the mathematics of probability worked out by Hume's own contemporaries, Thomas Bayes and Richard Price."
 
-Words: about 330 before; 2,046 after.
+Words: 376 before; 2,046 after.
 
 Sources: Hume 1748 (the best case against); Lewis 1947; Earman 2000; Kopf 2005; Babbage 1837; Keener 2011; Wright 2003.
 
@@ -374,7 +374,7 @@ The argument in three sentences. Feuerbach, Marx (quoted) and Freud (quoted) are
 
 Before: "I ran the projection test on everyone but myself. For years I told myself I had followed the evidence into the cold..." (cut: a recollection that cannot be confirmed). After: "I was raised without a father, so I can't read either theory as a stranger to it. On Freud's account, any faith I hold is the obvious wish of a fatherless boy. On Vitz's account, unbelief in a man like me would be just as easy to explain."
 
-Words: about 330 before; 1,993 after.
+Words: 330 before; 1,993 after.
 
 Sources: Feuerbach 1841; Marx 1844; Freud 1927 (the best book against); Nagel 1997; Vitz 1999; Plantinga 2000; Augustine, Confessions (Chadwick).
 
