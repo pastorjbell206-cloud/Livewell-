@@ -3834,3 +3834,159 @@ uncertain).
 ### Next
 
 Genesis 19 onward in plain words, in the same shape.
+
+## Continuation: Genesis 19 to 25 (2026-11-19)
+
+Seven chapters in plain words, in the shape of Genesis 1 to 18: each
+passage's third part is `later` ("Where the Bible takes this up"), never
+`ot`; each chapter note gained only `"plain": true` at its end (the diff
+changes its closing lines and nothing else). After each chapter every
+passage was printed field by field and read: every text sits under its
+right heading, and `validate-bible-notes` passed with no exception (it
+caught three quotations not word for word, in 20:8, 24:12 and the first
+draft of Hebrews 12:16, corrected to the BSB before each commit).
+
+### Chapters 19 to 25 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Genesis 19 | 5 (Lot takes two strangers into his house; the men of the city at the door; ‘Get out of this place’; fire, salt and smoke; Lot's daughters, Moab and Ammon) | 3,511 |
+| Genesis 20 | 3 (‘She is my sister’, again; ‘What have you done to us?’; Sarah restored, and a prayer that heals) | 1,731 |
+| Genesis 21 | 4 (Isaac is born, and Sarah laughs; ‘Expel the slave woman and her son’; God hears the boy; a well, an oath and a tree at Beersheba) | 2,602 |
+| Genesis 22 | 5 (‘God tested Abraham’; ‘God Himself will provide the lamb’; the binding, and the ram in his place; ‘By Myself I have sworn’; news from Nahor's family, and Rebekah) | 2,886 |
+| Genesis 23 | 3 (Sarah dies, and Abraham weeps; ‘I am a foreigner and an outsider among you’; a field, a cave, and Sarah's grave) | 1,500 |
+| Genesis 24 | 5 (Abraham sends his servant; a prayer at the well; the servant tells the story; ‘I will go’; Isaac meets Rebekah) | 2,552 |
+| Genesis 25 | 4 (Abraham's last years, and his death; Ishmael's twelve princes; twins, and a word before their birth; a bowl of stew and a birthright) | 2,247 |
+| Total | 29 | 17,029 |
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Genesis 19" to "25". 19
+web searches (4, 1, 4, 6, 2, 1, 1). Main sources: the Talmud on Sodom
+(Sanhedrin 109); the NET note and commentaries on Jude 7; Mount Sodom's
+salt pillar; the Mesha Stele (about 840 BC); Tel Haror as Gerar; Laws of
+Hammurabi 170-171; weaning and 2 Maccabees 7:27; the Philistines'
+settlement in the 1100s BC; al-Bukhari's account of Hajar at Mecca (3364-
+3365); Kant, The Conflict of the Faculties (1798); Rashi on 22:2 with
+Genesis Rabbah 56:8; Kierkegaard, Fear and Trembling (1843); Qur'an 37 and
+Eid al-Adha; Rosh Hashanah 16a; the Cave of the Patriarchs; the biblical
+Hittites; Robert Alter's betrothal type-scene (1981); Kedar and Nebaioth in
+Assyrian records. Strong's-number scripts in the repository: navi first at
+20:7; ahav (love) first at 22:2, second at 24:67; chesed at 20:13; ‘I will
+go’ one word at 24:58. Site wording reused word for word: "What was done to
+you was wrong, and it was not your fault" (Genesis 12); the Luke 1
+childlessness lines (21:1-7 in the Genesis 18 form; 25:19-26 in the Luke 1
+form); the book page's camel paragraph (24:10-27); the book page's Sodom
+location wording; the Honest Answers on genocide and on election, named.
+
+### Cut or narrowed
+
+Cut: Josephus on the salt pillar; Tall el-Hammam and Bab edh-Dhra by name;
+the Talmud's Sodom stories; the ‘get acquainted’ reading of yada; any claim
+that chapter 19 was told to mock Moab; Sarah's renewed body; Tel Beersheba;
+the Minoan graffito at Gerar; a bowshot's length; Isaac's age in later
+tradition; Jubilees and the Samaritan Moreh; the Carthage tophet; Auerbach,
+Moberly, Levenson, Delaney and Boehm; the Zikhronot and daily prayers; the
+silver's weight; Lehmann and Tucker; al-Khalil as ‘friend’; Nahur at Mari;
+"eating bound a guest"; the Nuzi birthright tablet. Narrowed: Mesha "about
+the middle of the 800s BC"; Gerar "many ... though not all agree"; the
+Hittites "It is not certain"; Moriah "usually linked" with Jerusalem;
+Kedar's link with Genesis "not everyone agrees"; 25:18 as hard to
+translate.
+
+The brief named "the women guide's wording" on arranged marriage. No such
+sentence was found in `women-in-the-ancient-world` or elsewhere on the
+site; the wording in 24:50-61 is new and rests on the deep note.
+
+### Contested matters, and how they are stated
+
+Sodom's sin (19:4-11): "All agree that the men of Sodom tried to gang-rape
+two strangers, and that this was monstrous. They differ on one further
+question. The traditional reading, held by most churches through history,
+sees the same-sex nature of the demand as part of what the text condemns,
+along with the violence. Its holders point to Jude 7 and to Leviticus
+18:22. Another reading holds that the whole point is violent cruelty to
+strangers, the worst possible breach of hospitality, and that the story
+does not speak to other questions. Its holders point out that Ezekiel,
+Isaiah and Jesus name pride, injustice and the refusal of welcome, and
+that Jude's ‘strange flesh’ (in Greek, ‘other flesh’) has been read by some
+as the angels. These notes take no side on that question here. On both
+readings nothing in this chapter gives anyone a reason for contempt toward
+any person." The `later` field names Ezekiel 16:49-50, Isaiah 1:10, 17,
+Jude 7, Matthew 10:15, Luke 17 and Judges 19.
+
+Also: the three wife-sister stories (one tale or a deliberate pattern); how
+God could destroy cities (the text does not answer every question); what
+Ishmael was doing (mocking or playing); Ishmael's age in 21:14-16; the
+Philistines (three explanations, "These notes do not settle it"); the
+binding of Isaac (Kant's objection at full strength; the Bible's own
+answers; "These answers do not make every difficulty disappear"; Jewish,
+Christian, Kierkegaard's and Muslim readings, each as its holders give it);
+Moriah; the Hittites; signs and guidance; what Rebekah was asked; election
+(Reformed and Arminian, corporate and individual, "These notes do not
+settle it"); 25:18.
+
+### Care lines included
+
+19:4-11, Lot's offer: "This is wrong, and the text does not praise it." ...
+"A word for anyone who was not protected by a parent, or was handed over to
+harm by someone who should have kept them safe. This story does not call
+that right. What was done to you was wrong, and it was not your fault. If
+you are still in danger, please tell someone you trust and get help. The
+Find Help page on this site lists places to turn."
+
+19:30-38, Lot's daughters: "Is this story approved? No. Genesis tells it
+briefly and plainly, and gives it no praise." ... "This story is also not a
+slur on a people." ... "A word for anyone who has suffered sexual abuse
+within a family. This story does not call it right, and neither does the
+rest of the Bible. What was done to you was wrong, and it was not your
+fault. If it is happening now, please tell someone you trust and get help.
+The Find Help page on this site lists places to turn."
+
+22:1-2, the binding: "One thing must be said without any doubt. No one today
+is told by God to harm a child, or anyone else. This story has never been
+read in Jewish or Christian teaching as permission to hurt a child. If you
+hear a voice, or have a thought, telling you to harm a child or anyone
+else, do not act on it. Seek help at once: tell someone you trust, a
+doctor, or a pastor, today. If anyone is in immediate danger, call your
+local emergency number. The Find Help page on this site lists places to
+turn."
+
+Also: 21:1-7 and 25:19-26 the Luke 1 childlessness lines; 21:14-21 a parent
+or child who has been sent away (Find Help if no safe place to stay);
+23:1-2 grief (crisis line or emergency service, Find Help); 25:1-11 old
+family hurts at a funeral. No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass.
+At the end, all 36 commands of the content-gates step in ci.yml, one at a
+time: exit 0 each (validate-bible-notes: 66 introductions, 1,189 chapter
+notes, 114 chapters in plain words; validate-no-emdash: 260 files, 0
+em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`:
+146 files passed, 7 skipped; 1,674 tests passed, 73 skipped. `pnpm build`:
+exit 0 (after the chapter commits).
+
+Served with `scripts/serve-like-vercel.mjs` on port 4603; Playwright at 390
+wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed. `/study/bible/genesis/19` to `/25`: every passage's heading, its
+part headings in order and the first 60 characters under each matched the
+data (5, 3, 4, 5, 3, 5, 4 of the same), the third part reads "Where the
+Bible takes this up" in every passage, no sideways scroll, no page errors
+and no console errors. Screenshots of every passage of Genesis 19 and 22
+read by eye: `/home/user/elite-shots/bdoor/gn19-390-*` and `gn22-390-*`
+(the fixed masthead appears once mid-image where the element screenshot
+scrolls; not on the page itself). Server stopped by its PID, dist/
+deleted, no lh-*.json. Lighthouse not run (data only, no code change).
+
+### Still unverified
+
+Ancient and later texts' exact words (all paraphrased: Talmud, Rashi,
+Kant, Kierkegaard, the Qur'an, al-Bukhari, Hammurabi); Hammurabi 170-171
+from secondary summaries only; the Hittites' identity (said to be
+uncertain).
+
+### Next
+
+Genesis 26 onward in plain words, in the same shape.
