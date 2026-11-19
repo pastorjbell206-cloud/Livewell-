@@ -5411,3 +5411,30 @@ textual critics prefer at 20:28.
 Left out: the year of Paul's arrival (about 57 in the deep note); the size
 of the Antonia garrison; Philip's daughters in later tradition; the
 Jonathan killed by the sicarii; Paul's speech (Acts 22, next).
+
+## The plain notes on Acts 22 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/22.json`. 1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Brothers and fathers’ as Stephen's greeting (7:2); ‘Hebrew’ as Hebrew or Aramaic, scholars differ | 1-5 | BSB; deep note `cultural`; Acts 21 note | Repository |
+| Gamaliel ‘honored by all the people’ (5:34); Mishnah Sotah 9:15 (glory of the law ceased); most identify him with Acts' Gamaliel | 1-5 | Earlier ledger (Acts 5) | Earlier ledger. Hillel as his grandfather (deep note, later sources) not used |
+| ‘The Way’ (9:2); Numbers 25:13; 1 Kings 19:10; Psalm 119:105 | 1-5 | BSB | Repository |
+| Three tellings; 9:7 and 22:9 handled by pointing to the Acts 9:1-9 note | 6-11 | acts/plain/9.json | Repository; not restated |
+| Ezekiel 1:28; Exodus 3:4; 1 Samuel 3:10 | 6-11 | BSB | Repository |
+| Ananias described for this audience; ‘the Righteous One’ (3:14; 7:52) | 12-16 | BSB; deep note `literary` | Repository |
+| 22:16: sacramental and sign readings; the grammar argued; pointer to the 2:37-41 note; no side | 12-16 | acts/plain/2.json; deep note `doctrines` | Repository; no side taken |
+| Exodus 3:15; Psalm 51:2; Isaiah 1:16; Joel 2:32; 2:21 | 12-16 | BSB | Repository |
+| The temple vision told only here; 9:29-30; martus later meaning martyr | 17-21 | BSB; book page "The big themes" | Repository |
+| Isaiah 6:8-10; 49:6 (13:47) | 17-21 | BSB | Repository |
+| The crowd's reaction explained from the false report (21:28-29), Roman rule, the Antonia, high priests appointed by Rome; cloaks and dust as outrage, "some readers think" readiness to stone, "not certain"; Luke 23:18; 21:36; 21:20; the 13:42-47 form with a pointer to 2:22-28 | 22-24 | Jewish-life portrait part 5 (a gentile emperor's soldiers beside God's house, his governor appointing the high priest); deep note `cultural`; BSB | Repository |
+| Genesis 12:3; Isaiah 60:3; 56:7; Jeremiah 26:8 | 22-24 | BSB | Repository |
+| The Roman scourge: leather thongs, sometimes weighted with bone or metal; used to force confessions from non-citizens; could cripple or kill | 25-30 | Bible encyclopedias; deep note `cultural` | Search: biblegateway Encyclopedia of the Bible "Scourge"; biblehub topical "Scourging"; studylight ISBE "Scourge". The dates of the Porcian laws (sources conflict) not given |
+| Citizenship paragraph (legal standing, ways of getting it, protections) word for word; Cassius Dio 60.17 on citizenship sold under Claudius, paraphrased; Claudius Lysias's name "an inference"; some doubt Paul's citizenship, many follow Acts' legal accuracy | 25-30 | Roman-world portrait part 2 | wrom-ledger (portrait wording) |
+| How Paul's family gained citizenship: not known, said so | 25-30 | Deep note `historical` | Stated as unknown. Jerome's Gischala tradition not used |
+| Sanhedrin led by the chief priests and high priest; Rome let it govern many internal matters | 25-30 | Jewish-life portrait part 3; deep note `historical` | Repository |
+| Deuteronomy 1:17; 25:3; Jeremiah 38:7-13; Nehemiah 2:7-9; Romans 12:14; 1 Corinthians 9:12; 25:11 | 25-30 | BSB | Repository |
+| Using rights or laying them down: readings, no rule drawn | 25-30 | Deep note `questions` | Stated as readings |
+
+Left out: Gamaliel as Hillel's grandson; Paul's family from Gischala (Jerome); the dates and names of the Porcian and Valerian laws; the punctuation debate over "raised in this city".
