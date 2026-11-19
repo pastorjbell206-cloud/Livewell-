@@ -1318,3 +1318,47 @@ Raphael and Masaccio; Bultmann, Stein, Allison, Horbury, Cassidy, Strauss,
 Temkin, Twelftree; the moon-phase belief beyond the word's root; the barbel
 and the musht; the lectionaries; every textual note in the deep note except
 17:21.
+
+## The plain notes on Matthew 18 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/18.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 9 and 10; Matthew 5, 6 and 16) and the
+safety paragraph of `client/public/context/guides/matthew-18-20-in-context.json`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Fourth of five discourses, closing at 19:1 | 1-5 | Matthew's book page | Repository text |
+| Mark 9:33-34 against Matthew's direct question | 1-5 | BSB | BSB comparison |
+| Children loved but without rank; pais for child and servant; "become like" as status, not sentiment | 1-5 | Earlier ledger (Mark 9, 10) | Earlier ledger |
+| "Change" literally "turn" (strephō); tapeinoō and 11:29 | 1-5 | Greek text | Repository text |
+| Skandalizō, skandalon a trap or obstacle; 17:27; "little ones" in 10:42 | 6-9 | Greek text; BSB | Repository text |
+| Donkey millstone; Gehenna, Hinnom and child sacrifice (Jeremiah 7:31); Isaiah 66:24 | 6-9 | Earlier ledger (Mark 9) | Earlier ledger |
+| "Cut it off" care paragraph, word for word from Mark 9 (and Matthew 5) | 6-9 | Mark 9:42-50 plain note | Repository text |
+| Abuse: the passage stands with the child; abuse a crime, reported to the police and the proper authorities; contact police or child protection | 6-9 | CLAUDE.md, care for the reader; the context guide | Pastoral. No phone number given |
+| "See the face" as access to a king; angels assigned to people; Acts 12:15; Psalm 91:11; Christians differ on an angel for each person | 10-14 | Deep note; BSB | BSB text. Tobit, Jerome, Aquinas, Clement X and the feast (deep note) not used |
+| Luke 15:3-7 setting, "lost", "until he finds it" against Matthew's "goes astray", "if he finds it"; planaō in 24:4-5 | 10-14 | BSB; Greek text (G4105) | BSB comparison; script |
+| 18:11 absent from Sinaiticus and Vaticanus; brought in from Luke 19:10; BSB leaves the number empty | 10-14 | Textual summaries | Search: biblehub.com; billmounce.com; openbible.com; confessionalbibliology.com (the opposing case). Metzger not named |
+| Ezekiel 34:6, 16 | 10-14 | BSB | BSB text |
+| Community Rule (1QS 5:24-6:1): correct a fellow in truth and humility; no charge before the Many without prior correction before witnesses | 15-17 | Dead Sea Scrolls | Search: intertextual.bible; palimpsest.stmarytx.edu; orion-bibliography.huji.ac.il (Akiyama 2017). Paraphrased; no column given in the note |
+| Ekklēsia only 16:18 and 18:17 in the Gospels | 15-17 | Earlier ledger (Matthew 16) | Earlier ledger |
+| Jesus and tax collectors: 9:9; 9:10-11; 11:19 | 15-17 | BSB | BSB text |
+| Leviticus 19:17-18; Deuteronomy 19:15, 18; Galatians 6:1; 2 Corinthians 2:7; Romans 13:4 | 15-17 | BSB | BSB text |
+| Safety paragraph, sentences word for word from the context guide ("Matthew 18 is not a rule that makes a harmed person meet...", "Nothing in it asks a child...", "The law behind the two or three witnesses...", "Abuse and other crimes are reported to the police...", "Forgiving from the heart is not the same as trusting again...", "If someone has harmed you, tell someone safe...", "You don't need anyone's permission to be safe.") | 15-17; 21-35 | matthew-18-20-in-context.json | Repository text |
+| Church practice of 18:17 in general terms (Communion withheld for a time; elders; congregation; pastoral care), no side | 15-17 | Deep note | Stated generally; Calvin, the Belgic Confession, Schleitheim, Erastus, Beza, Benedict (deep note) not named or dated |
+| Bind and loose: forbid and permit; given to the disciples together | 18-20 | Earlier ledger (Matthew 16) | Earlier ledger |
+| Mishnah Avot 3:2, Rabbi Hananiah ben Teradion: when two sit and words of Torah pass between them, the Shekhinah rests among them (written down around 200; later) | 18-20 | Mishnah | Search: mishnah.org Avos 3:2; sefaria.org; docs.lib.purdue.edu (Sievers, Claritas 2017). Paraphrased; editions number it 3:2, 3:3 or 3:6 |
+| 1:23; 28:20; 26:39 | 18-20 | BSB | BSB text |
+| b. Yoma 86b, Rabbi Yose bar Judah: forgiven a first, second and third time, not a fourth (written down several centuries later) | 21-35 | Babylonian Talmud | Search: sefaria.org sheets; encyclopedia.com "Repentance"; jewishvirtuallibrary.org. Paraphrased; the rabbi not named in the note |
+| Hebdomēkontakis hepta: seventy-seven or seventy times seven; the same Greek in the Greek Old Testament of Genesis 4:24 | 21-35 | Lexicons (G1441); LXX | Search: blueletterbible.org G1441 (LXX); biblehub.com 1441; engediresourcecenter.com. Carson's remark not attributed |
+| A talent about six thousand denarii; ten thousand talents sixty million; a denarius a day's wage (20:2); a hundred denarii about a hundred days | 21-35 | Bible dictionaries; earlier ledger | Search: biblehub.com "Ten Thousand Talents"; en.wikipedia.org "Parable of the Unforgiving Servant"; kjvstudy.org. "Largest Greek number word" (deep note) not used |
+| Josephus, Antiquities 17.318: Galilee and Perea paid Antipas two hundred talents a year | 21-35 | Josephus | Search: lexundria.com 17.318 (Whiston); Jewish War 2.95 the same. Paraphrased |
+| Esther 3:9; 2 Kings 4:1; Leviticus 25:39-40; Genesis 4:24; Luke 17:3 | 21-35 | BSB | BSB text |
+| "Many readers think" the king's orders sound like foreign courts | 21-35 | Deep note (Jeremias) | Stated as a view; Jeremias not named |
+| Matthew 6 wording on the misuse of forgiveness, word for word ("this prayer" made "this parable"); verse 35 not the price but the sign (the Matthew 6 note); the traditions on losing grace stated without names | 21-35 | Matthew 6:9-15 plain note | Repository text |
+
+Left out: the "against you" variant in 18:15 (not checked on this run);
+Tobit; m. Berakhot 5:5; m. Megillah 4:3; Suetonius on drowning; Maimonides;
+Antiquities 14.78; the talent's weight; m. Sotah 3:8; Jeremias; Luther's The
+Keys and Large Catechism; Calvin; the Belgic and Schleitheim confessions;
+Erastus and Beza; Benedict's Rule; Bonhoeffer; Jones, Volf, Langberg;
+Wiesenthal; Dura-Europos; Clephane and Sankey; the lectionaries.
