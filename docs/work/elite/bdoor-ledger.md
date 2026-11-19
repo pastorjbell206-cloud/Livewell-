@@ -292,3 +292,114 @@ Left out: Josephus on Moses' cloud, the Mishnah on Elijah, 1 Enoch and 4 Ezra,
 Rabbi Akiva on Gehenna, Suetonius on drowning, the Mishnah on agents, the
 Hippocratic author's name, and the textual question of verses 44 and 46 (all in
 the deep note, not checked on this run).
+
+## The plain notes on Mark 10 (continuation run, 2026-11-19)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The land beyond the Jordan (Perea) ruled by Herod Antipas; John killed for speaking against his marriage | 10:1-12 | Earlier ledger (Antipas, Perea); Mark 6:17-18 | Earlier ledger; BSB text |
+| Herodias divorced her first husband while he was alive, against the laws of the Jews | 10:1-12 | Josephus, Antiquities 18.136 | Search: lexundria.com (Whiston 18.136); posenlibrary.com "Herodias Divorces Her Husband". Paraphrased, not quoted |
+| Shammai: only for something shameful; Hillel: even if she spoiled his dish; Akiva: even if he found another more beautiful | 10:1-12 | Mishnah Gittin 9:10 (written down around 200, earlier ledger) | Search: posenlibrary.com "Grounds for Divorce"; mishnah.org Gittin 9:10 |
+| Only the husband could divorce in Jewish law; a wife could in Roman law; Mark's verse 12 likely speaks to Roman readers | 10:1-12 | Scholarly summaries (Instone-Brewer; Posen Library "Divorce in Early Judaism") | Search: posenlibrary.com; douglasjacoby.com (Instone-Brewer PDF); christianhistoryinstitute.org. Stated as "likely" |
+| The certificate's essential words: she is permitted to any man | 10:1-12 | Mishnah Gittin 9:3 | Search: en.wikipedia.org Get; mishnah.org; sacred-texts.com (Epstein). Paraphrased |
+| The Damascus Document grounds a ban on two wives in a man's lifetime in Genesis 1:27 | 10:1-12 | CD 4:20-21 | Search: cojs.org (Baumgarten); palimpsest.stmarytx.edu CD text; intertextual.bible. Its scope (bigamy or remarriage) is debated, so the note says "a second wife in his lifetime" |
+| Catholic, Orthodox and Protestant positions on remarriage; Heth-Wenham view | 10:1-12 | Deep note (Trent, Catechism 2382-2386, Westminster 24.5-6) | Stated as positions without dates or section numbers |
+| Care: a person in an abusive marriage seeks safety, a pastor or counselor, a local domestic violence line; not legal advice | 10:1-12 | CLAUDE.md, "Care for the reader in the hard places" | Pastoral. No phone number given |
+| Paidion used of the child in 9:36 and the girl in 5:39-41; Luke 18:15 "babies" | 10:13-16 | Greek and BSB text | Repository text |
+| Aganakteō (indignant) used of Jesus only at Mark 10:14 in the Gospels; of the ten (10:41), others (14:4; Matthew 20:24; 21:15; 26:8; Luke 13:14) | 10:13-16 | Greek text in the repository (every G0023) | Repository Greek text |
+| Young (Matthew 19:20); ruler (Luke 18:18); "do not cheat" not one of the Ten; Deuteronomy 24:14 | 10:17-22 | BSB text | BSB text. "May stand in for 'do not covet'" given as a possibility |
+| Clement of Alexandria's Who Is the Rich Man That Shall Be Saved? is a sermon on Mark 10:17-31 arguing for freedom from the love of wealth | 10:17-22 | Clement, Quis dives salvetur (ANF vol. 2) | Search: ewtn.com; newadvent.org; logoslibrary.org. No date given |
+| Antony heard the Gospel's words to the rich man read in church and gave his family land away | 10:17-22 | Athanasius, Life of Antony 2 | Search: history.hanover.edu; ewtn.com; bkv.unifr.ch. No date given; 300 acres not used |
+| Camel and needle; Talmud's elephant through a needle's eye; no ancient evidence for a needle gate, which appears only many centuries later | 10:23-31 | b. Berakhot 55b; en.wikipedia.org "Eye of a needle" | Search: en.wikipedia.org; christiantoday.com; biblehub.com. Origin of the gate story (Theophylact or Anselm, contested) not given |
+| Jericho to Jerusalem: about 25 km, a climb of about 1,000 m from below sea level | 10:32-34; 10:46-52 | Bible Odyssey "The road to Jericho"; walking accounts | Search: bibleodyssey.com; waynestiles.com; jerusalemperspective.com |
+| Each step of the third prediction fulfilled (14:10; 14:64; 14:65; 15:15; 15:19-20; 15:37) | 10:32-34 | Mark | BSB text |
+| Lutron the price of release; Exodus 21:30; Daniel 7:14; Isaiah 51:17; Psalm 75:8; Isaiah 53:12 | 10:35-45 | Standard lexicons; BSB | BSB text |
+| Views of the ransom (to the devil; rejected; satisfaction; victory; a picture); debate over Isaiah 53 | 10:35-45 | Deep note | Stated as views; the deep note's names and dates (Origen, Gregory, Anselm 1098, Aulén) were not checked and are not given, except "the Reformers" |
+| Son of David first used of Jesus in Mark here | 10:46-52 | Mark's text | Repository text |
+| A poor man's cloak returned by sunset | 10:46-52 | Exodus 22:26-27 | BSB text |
+| Kyrie eleison; the Jesus Prayer drawn in part from Bartimaeus and Luke 18:13 | 10:46-52 | Liturgical summaries | Search: en.wikipedia.org "Kyrie"; orthochristian.com "Biblical Roots of the Jesus Prayer"; salvationist.ca |
+
+Narrowed: the deep note's line that the rich man's land was the safest wealth
+a family could hold, and that running and kneeling were unusual for such a man,
+were not checked and are not given. Clement and Antony are given no dates.
+
+Left out: Josephus's own divorce, Salome and Costobarus, m. Yevamot 14:1, b.
+Gittin 90b, the ketubbah, Tobit on treasure in heaven, Herod's winter palaces,
+Josephus on the Samaria route, Tertullian and Calvin on the children, Cranach,
+Hofmann's painting, and the lectionary (all in the deep note, not checked on
+this run). The suggestion that Bartimaeus was named because the first
+Christians knew him was cut (not checked this run).
+
+## The plain notes on Mark 11 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Bethany a little under two miles from Jerusalem | 11:1-11 | John 11:18 | BSB text |
+| Garments spread for Jehu; Zechariah 9:9; Psalm 118:25-26; Zechariah 14:4 | 11:1-11 | BSB | BSB text |
+| Simon entered the Jerusalem citadel with palm branches and songs, 141 BC | 11:1-11 | 1 Maccabees 13:51 | Search: biblegateway.com; bible.usccb.org (dates it June 141 BC); tips.translation.bible |
+| Hosanna first a plea, "save, please" (Psalm 118:25), later also a shout of praise; Psalm 118 in the Hallel of the feasts | 11:1-11 | en.wikipedia.org "Hosanna"; BAS Library "Hosanna" | Search: en.wikipedia.org; library.biblicalarchaeology.org; ligonier.org |
+| Fig trees leaf in spring; sources differ on whether early figs (paggim) come before or with the leaves; main crop in summer | 11:12-14 | Bible encyclopedias; commentary on 11:13 | Search: wiki.bibleportal.com "Cursed Fig-Tree"; biblegateway.com Encyclopedia of the Bible "Fig Tree"; biblehub.com. The disagreement is stated, not resolved |
+| Micah 4:4; Hosea 9:10; Jeremiah 8:13; Micah 7:1; Jeremiah 19 | 11:12-14 | BSB | BSB text |
+| Fig tree as acted parable; a parable later told as event (compare Luke 13:6-9); the old reading against the Jewish people rejected | 11:12-14 | Deep note (Telford, Hooker, Marcus) | Stated as views without names. Bertrand Russell (1927) not checked this run and not named |
+| Half shekel (Exodus 30:13); Tyrian shekel the temple coin | 11:15-19 | BSB; earlier ledger (Mark 7) | BSB text; earlier ledger |
+| Money changers in the temple from 25 Adar | 11:15-19 | Mishnah Shekalim 1:3 | Search: mishnah.org; jewishvirtuallibrary.org Shekalim 1; outorah.org |
+| Doves the offering of those who could not afford a lamb | 11:15-19 | Leviticus 5:7; 12:8 | BSB text |
+| A pair of birds once cost gold denars in Jerusalem until Rabban Simeon ben Gamaliel's ruling brought the price down | 11:15-19 | Mishnah Keritot 1:7 | Search: jtsa.edu Keritot 1:7; mishnah.org; jwa.org "Kinnim" |
+| Temple Warning inscription found 1871 (Clermont-Ganneau): a foreigner past the barrier is to blame for his own death | 11:15-19 | en.wikipedia.org "Temple Warning inscription"; Josephus | Search: en.wikipedia.org; armstronginstitute.org; cbnisrael.org (Turnage) |
+| The temple mount not to be used as a shortcut | 11:15-19 | Mishnah Berakhot 9:5 | Search: mishnah.org; Wikisource translation; sacred-texts.com |
+| Temple under construction 46 years | 11:15-19 | John 2:20 | BSB text. Herod's rebuilding and Josephus's figures (deep note) not used |
+| Isaiah 56:7; Jeremiah 7:4, 11; Malachi 3:1 | 11:15-19; 11:27-33 | BSB | BSB text |
+| Readings of the temple action (cleansing, sign of judgment, the nations); one event or two (John 2:13-22) | 11:15-19 | Deep note | Stated as views |
+| Standing to pray: Hannah; the Pharisee and tax collector | 11:20-26 | 1 Samuel 1:26; Luke 18:11-13 | BSB text |
+| Verse 26 absent from Sinaiticus and Vaticanus; matches Matthew 6:15 and probably came from there; the KJV prints it | 11:20-26 | Metzger and Omanson as summarised; NA28 | Search: uasvbible.org; biblehub.com; confessionalbibliology.com (the opposing case) |
+| Your will be done; Gethsemane; Paul's thorn | 11:20-26 | Matthew 6:10; Mark 14:36; 2 Corinthians 12:7-9 | BSB text |
+| Chief priests, elders and scribes assembled as the council | 11:27-33 | Mark 14:53 | BSB text |
+
+Narrowed: "Many Jews criticized the high priests" was cut (Qumran and the
+Talmud's lament not checked this run). "Answering a question with a question
+was a recognised Jewish form" was replaced by Jesus' own question in 10:3.
+Russell's lecture is not named. Jesus' place on the Mount of Olives at 11:23 is
+given as the road's line of sight and "many readers think".
+
+Left out: Josephus's Egyptian prophet, his Passover census, the Royal Stoa,
+Caiaphas and Eppstein, b. Pesachim 57a, Jesus son of Ananias, unridden animals
+for holy use, Solomon's mule (verse checked, not used), 2 Maccabees 10:7,
+Psalms of Solomon 17, the Word of Faith movement and the 2006 prayer study,
+b. Berakhot 64a, and P45.
+
+## The plain notes on Mark 12 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Tenant farming for a share of the crop | 12:1-12 | Mark 12:1-2 itself | BSB text. Absentee owners, common quarrels and the Zenon papyri (deep note) not used |
+| Isaiah 5:1-2, 7; Psalm 118:22-23; sung at the entry (11:9) | 12:1-12 | BSB | BSB text |
+| The parable aimed at the leaders; the crowd on Jesus' side; the old reading against the Jewish people rejected by many | 12:1-12 | Mark 12:12; deep note | Stated as views |
+| Pharisees popular with the people | 12:13-17 | Josephus, Antiquities 18.15-17 | Search (with the Sadducees entry): lexundria.com 18.16-17 (the multitude) |
+| Herodians supporters of the Herods | 12:13-17 | Earlier ledger (Mark 3) | Earlier ledger |
+| Judea under direct Roman rule in AD 6; Quirinius's census; Judas the Galilean's revolt on the ground that God alone is master; Acts 5:37 | 12:13-17 | Josephus, Jewish War 2.118; Antiquities 18; Acts 5:37 | Search: jewishvirtuallibrary.org "Judah the Galilean"; jewishencyclopedia.com; encyclopedia.com. The date is standard; one recent article (Rhoads) disputes Josephus's dating, not stated |
+| Tiberius denarius: laureate head, TI CAESAR DIVI AVG F AVGVSTVS, reverse PONTIF MAXIM; which coin was handed to Jesus is uncertain | 12:13-17 | Numismatic catalogues (RIC I 26-30) | Search: academic.sun.ac.za; oceanlight.com "The Tribute Penny"; timelineauctions.com. The uncertainty is stated |
+| Genesis 1:27 image; Romans 13:7 | 12:13-17 | BSB | BSB text |
+| Three readings of "Give to Caesar" | 12:13-17 | Standard positions | Stated as views, no names |
+| Sadducees: souls perish with bodies, only the written law | 12:18-27 | Josephus, Antiquities 18.16 | Search: lexundria.com (Whiston); cojs.org; text.egwwritings.org |
+| Sadducees deny resurrection, angels, spirits; the high priest's circle Sadducees | 12:18-27 | Acts 23:8; 5:17 | BSB text |
+| Levirate law; Ruth; Daniel 12:2; Exodus 3:6; Luke 20:36 | 12:18-27 | BSB | BSB text |
+| 2 Maccabees 7: seven brothers die under Antiochus trusting God will raise them | 12:18-27 | 2 Maccabees 7:9 | Search: bible.com NRSVue; ccel.org Douay; jwa.org. Its date not given; the "mocking echo" stated as "may be" |
+| Readings of marriage at the resurrection | 12:18-27 | Standard positions | Stated as views |
+| Mishnah Berakhot 1:1 on the evening and morning Shema; Deuteronomy 6:7 | 12:28-34 | Mishnah; BSB | Search: cojs.org Berakhot 1:1-4; posenlibrary.com; BSB text |
+| Hillel: what is hateful to you, do not do to your neighbour (b. Shabbat 31a); Akiva called "love your neighbour" a great principle | 12:28-34 | Talmud; rabbinic tradition | Search: sefaria.org sheet 195830 and related sheets. Sifra not named; Akiva given as "a later teacher" |
+| Deuteronomy 6:4-5; Leviticus 19:18; 1 Samuel 15:22; Hosea 6:6 | 12:28-34 | BSB | BSB text |
+| 2 Samuel 7:12-13; Psalm 110:1; Acts 2:34-36; Romans 1:3-4 | 12:35-37 | BSB | BSB text |
+| Views of Psalm 110's authorship and of Jesus' argument | 12:35-37 | Deep note | Stated as views. Justin, b. Nedarim 32b and Rashi not used; "most quoted psalm" cut |
+| Ways scribes may have defrauded widows are suggestions only | 12:38-40 | Deep note | Stated as suggestions |
+| Exodus 22:22; Isaiah 10:2 | 12:38-40 | BSB | BSB text |
+| Thirteen trumpet-shaped chests, narrow at the top | 12:41-44 | Mishnah Shekalim 6:5 | Search: outorah.org Shekalim 6:5-6; jewishvirtuallibrary.org Shekalim 6; mishnah.org. Marked as later and possibly not fitting Jesus' day |
+| Two lepta make a quadrans; a quadrans 1/64 of a denarius; lepta the smallest coins in Palestine | 12:41-44 | NET notes; lexicons | Search: biblia.com NET note; biblehub.com; sites.tyndale.com |
+| Addison G. Wright, "The Widow's Mites: Praise or Lament?", CBQ 44 (1982); Malbon's reply | 12:41-44 | CBQ 1982; Kubiś 2013 survey | Search: tyndalebulletin.org; bazhum.muzhp.pl (Kubiś); en.wikipedia.org "Lesson of the widow's mite" |
+
+Narrowed in Mark 10 on this run as well: Rabbi Akiva is "a later teacher", not
+"a generation after Jesus" (his dates were not checked).
+
+Left out: Josephus on the Sadducees' end, Origen and Hippolytus on their
+canon, Tobit 3:8, m. Tamid 5:1, tefillin at Qumran, 613 commandments, the
+Targum of Isaiah 5, Leviticus 19:23-25, the Court of the Women and John 8:20,
+the roles of scribes in legal paperwork, and the Psalm 110 Jewish readings.

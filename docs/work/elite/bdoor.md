@@ -309,3 +309,83 @@ screenshots, since no code changed.
 **Not verified:** the new chapters were not looked at in a browser.
 
 **Next:** Mark 10.
+
+## Continuation: Mark 10 to 12 (2026-11-19)
+
+Same pattern, same data shape (`client/public/bible/notes/mark/plain/<n>.json`,
+`"plain": true` on each chapter note). No code changed; the deep notes are
+unchanged underneath.
+
+| Chapter | Passages | Plain words added |
+|---|---|---|
+| Mark 10 | 7 (a question about divorce; let the little children come; the man who went away sad; a camel and the eye of a needle; going up to Jerusalem; not to be served but to serve; blind Bartimaeus) | 3,506 |
+| Mark 11 | 5 (the king comes on a colt; a fig tree with only leaves; tables overturned in the temple; faith that moves mountains; by what authority?) | 2,511 |
+| Mark 12 | 7 (the tenants of the vineyard; what belongs to Caesar; whose wife will she be?; the greatest commandment; David's son and David's Lord; beware of the show; the widow's two coins) | 3,438 |
+| Total | 19 | 9,455 |
+
+Mark 1 to 12 now all open with the plain layer: 72 passages, about 32,000
+plain words. (Counts are the words of the five prose fields, titles and
+verse ranges not counted.)
+
+**Sources.** Every claim is in `docs/work/elite/bdoor-ledger.md` under "The
+plain notes on Mark 10", "Mark 11" and "Mark 12". 24 web searches were run (8
+per chapter); the rest rests on the earlier ledger, the Berean Standard Bible
+text (every quotation checked word for word by the validator) and the Greek
+text in the repository (for example, that "indignant" in 10:14 is the only use
+of that verb for Jesus in the Gospels). Main sources: Josephus, Antiquities
+18.136 (Herodias), 18.16 (the Sadducees) and Jewish War 2.118 (Judas the
+Galilean); the Mishnah, marked as written down around AD 200: Gittin 9:10 and
+9:3, Shekalim 1:3 and 6:5, Keritot 1:7, Berakhot 1:1 and 9:5; the Damascus
+Document; b. Berakhot 55b and b. Shabbat 31a, marked as later; Clement of
+Alexandria's Who Is the Rich Man; Athanasius's Life of Antony; 1 Maccabees
+13:51; 2 Maccabees 7; the Temple Warning inscription (1871); the Tiberius
+denarius; the lepton and quadrans; the textual evidence for 11:26; Addison
+Wright (CBQ 1982) on the widow.
+
+**Narrowed or left out.** Mark 10: dates for Clement and Antony; the names and
+dates of Origen, Gregory and Anselm on the ransom (the views are given, the
+names are not); Akiva's generation (now "a later teacher"); the claim that
+running and kneeling were unusual for a rich man; the claim that Bartimaeus
+was named because the first Christians knew him. Mark 11: Bertrand Russell is
+not named; "many Jews criticised the high priests" was cut; Herod's rebuilding
+replaced by John 2:20; "answering a question with a question" replaced by
+Jesus' own question in 10:3; the order of fig leaves and early figs is given as
+disputed. Mark 12: absentee owners and quarrels with tenants; "Psalm 110 the
+most quoted psalm"; Jewish readings of Psalm 110 (Justin, the Talmud, Rashi);
+the scribes' legal paperwork; the date of 2 Maccabees. Many deep-note details
+were simply not used (each chapter's "Left out" line in the ledger lists them).
+
+**Care.** Mark 10:1-12 keeps a plain line: nothing in the passage asks anyone
+to stay where they or their children are in danger; seek safety first; talk to
+a pastor or counselor, or call a local domestic violence line (no number
+given); these notes are not legal advice. Mark 11:20-26 names the hurt done by
+teaching that unanswered prayer means weak faith.
+
+**Jews and Judaism.** The fig tree, the temple action, the tenants and the
+scribes are each set inside Israel's own prophets and aimed, as Mark aims them,
+at the leaders of that hour; the old Christian readings against the Jewish
+people are named and rejected as most Christian scholars now do; the crowd,
+the scribe of 12:28-34 and the widow are shown as Jews on Jesus' side. Later
+rabbinic sources are marked as later.
+
+**Contested matters, stated without taking a side:** divorce and remarriage
+(Catholic, Orthodox, Protestant, separation without remarriage); "Why do you
+call Me good?"; whether Jesus asks every Christian to sell everything (Clement
+and Antony); wealth and the hundredfold (and the prosperity reading answered by
+"along with persecutions"); the ransom (to the devil, rejected, satisfaction of
+justice, victory, a picture; and the Isaiah 53 debate); the fig tree (acted
+parable, parable become story); the temple action (cleansing, sign of judgment,
+the nations; one event or two); faith and prayer (11:23-24); the tenants and
+Israel; taxes to Caesar (two spheres, God's claim swallows Caesar's, a clever
+refusal); marriage at the resurrection; Psalm 110 and David's son; the widow
+(praise, lament, or both).
+
+**What was run** (after merging the latest `claude/todo-implementation-hhp4bm`,
+one at a time): `validate-bible-notes.mjs` after each chapter; all 36 commands
+of the CI content-gates step, all passed; `pnpm check` passed; `pnpm test`:
+146 files and 1,651 tests passed, 73 skipped. No build, Lighthouse or
+screenshots, since no code changed.
+
+**Not verified:** the new chapters were not looked at in a browser.
+
+**Next:** Mark 13.
