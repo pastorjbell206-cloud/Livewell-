@@ -244,6 +244,7 @@ describe("/answers and /answers/:slug", () => {
       "is-hell-forever-or-does-it-end",
       "is-jesus-the-only-way",
       "was-jesus-just-a-good-teacher",
+      "what-did-the-new-atheists-get-right",
       "what-if-christianity-is-wrong",
       "why-does-god-allow-natural-disasters",
       "why-didnt-the-bible-just-ban-slavery",
