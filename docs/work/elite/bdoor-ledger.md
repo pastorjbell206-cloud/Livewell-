@@ -3861,3 +3861,28 @@ this chapter.
 Cut: the deep note's "around 2300 BC" (sources give the 2340s; the page
 says "the 2300s"); Philistines as uncircumcised (true in the Bible but not
 needed).
+
+## The plain notes on Genesis 18 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/18.json`. Two web searches for
+this chapter, with the site's hospitality guide, the Luke 1 note and the
+Honest Answers.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Hospitality: the stranger's danger; water, food, shelter, protection at the host's cost; honor; promise little, give much; three seahs; the host stands by like a servant | 1-8 | Site guide hospitality-and-the-stranger; repository deep note (`cultural`) | Repository |
+| The text's shifts: the LORD (18:1, 10, 13), three men (18:2), two go on (18:22), two angels (19:1) | 1-8 | BSB | Repository (read) |
+| Mamre at Ramat el-Khalil north of Hebron: a Herodian enclosure; a church built by Constantine (about AD 325, Eusebius) | 1-8 | Excavation (Mader 1926-28) and Eusebius as summarised | Search: en.wikipedia.org "Mamre"; encyclopedia.com "Mamre"; dig.corps-cmhl.huji.ac.il. The page says "the 300s AD" and "the traditional site" |
+| Rublev's Trinity icon, early fifteenth century (dated variously 1408 to 1427), also called the Hospitality of Abraham | 1-8 | Art history | Search: en.wikipedia.org "Trinity (Andrei Rublev)"; newworldencyclopedia.org. The page says "early fifteenth century" |
+| Readings of the three (the LORD with two angels; a hint of the Trinity; an appearance of the Son); the New Testament does not use the story for the Trinity | 1-8 | Repository deep note (`christ`) | Repository; no side |
+| Hebrews 13:2; Matthew 25:35; Luke 1:37; Jeremiah 32:17; Hebrews 11:11; 21:6 | 1-15 | BSB | Repository. Luke 1:37 as an echo "many readers hear" (the deep note's Greek-translation link not repeated) |
+| Care line, word for word from the Luke 1:5-17 note: "Many faithful people long for children and never have them, or lose them before birth." and "Childlessness is not a judgment from God, and it does not measure your faith. Your longing is seen. If the grief is heavy, please share it with someone you trust: a friend, a pastor, a counsellor." | 9-15 | Site | Repository (grep -F: one match in each file) |
+| ‘Outcry’ the cry of the wronged; ‘go down to see’ as a fair judge (11:5) | 16-21 | Repository deep note (`hard`) | Repository |
+| Ezekiel 16:49; James 2:23; John 15:15 | 16-21 | BSB | Repository |
+| "God did not rebuke the question. He let Abraham press it again and again." | 22-33 | Honest Answer (answers.ts), word for word | Repository; the Genesis 18:25 quotation itself is the BSB ("Will not ... do what is right?") |
+| Views on whether Abraham changed God's mind | 22-33 | Repository deep note (`hard`) | Repository; no side |
+| Exodus 32:14; Ezekiel 22:30; James 5:16; Luke 18:1; Hebrews 7:25; 1 Peter 3:18 | 22-33 | BSB | Repository |
+
+Cut: Sarah hidden because women kept apart from male guests (not
+checked); "the first long prayer in the Bible" (said "one of the first");
+any comparison with market bargaining.
