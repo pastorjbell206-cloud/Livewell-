@@ -98,6 +98,14 @@ function Timeline({
   );
 }
 
+/** Icons a book's own "Go deeper" entries may name (intro.json `teaching.deeper`). */
+const DEEPER_ICONS = {
+  people: Users,
+  world: Landmark,
+  scroll: ScrollText,
+  book: Library,
+} as const;
+
 /** "Go deeper": pages the site already has, for a Gospel. */
 const DEEPER = [
   {
@@ -278,7 +286,13 @@ export default function BookTeaching({
               line="Start at chapter 1, with notes beside the text"
             />
           </li>
-          {DEEPER.map(d => (
+          {[
+            ...DEEPER,
+            ...(teaching.deeper ?? []).map(d => ({
+              ...d,
+              icon: DEEPER_ICONS[d.icon ?? "book"],
+            })),
+          ].map(d => (
             <li key={d.href}>
               <IconTile
                 href={d.href}
