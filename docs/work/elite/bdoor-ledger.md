@@ -3564,3 +3564,24 @@ this chapter, with the book page's rows above and the repository.
 | Jubilees 4:9: Cain married his sister Awan; Jubilees about the second century BC | 17-24 | Book of Jubilees | Search: Bible Odyssey "Whom did Cain marry?"; Wikipedia "Book of Jubilees"; Charles's translation via jmoorewv.com. The page does not give the sister's name |
 | Cain's wife: other views (a wider population; a representative story) | 17-24 | Repository deep note (`hard`) | Repository; stated as views |
 | Shat (‘appointed’) in 4:25; Enosh as ‘mortal man’ (H0582); calling on the name (12:8; Joel 2:32; Acts 2:21; Romans 10:13; Luke 3:38) | 25-26 | Hebrew text; lexicon; BSB | Script (H7896); repository lexicon; repository |
+
+## The plain notes on Genesis 5 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/5.json`. Four web searches for this
+chapter.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Likeness and image (1:26; 5:1, 5:3); Romans 5:14; James 3:9; Luke 3:38 | 1-5 | BSB | Repository |
+| Sumerian King List: before the flood, five cities, eight kings, 241,200 years in all (some copies ten kings) | 6-20 | Sumerian King List | Search: csun.edu translation ("Five Cities, eight kings, reigned 241,200 years"); CDLI composite P479895; Harrison, JETS 36:1 (1993). Stated as "eight kings ... 241,200 years" |
+| Creation to flood: 1,656 years in the Hebrew text; more than 2,200 in the Greek (2,242 or 2,262 by the Methuselah variant); 1,307 in the Samaritan; the Greek often adds a hundred years | 6-20 | Text witnesses | Search: Smith (ICC 2018; BAS 2018); Armstrong Institute; Wevers (1993) as cited; repository introduction (`text`). The page says "more than 2,200" |
+| Ussher, Annals (1650): creation 4004 BC; printed in the margins of King James Bibles from the early 1700s | 6-20 | Ussher | Search: Linda Hall Library exhibit; EBSCO research starter; Oxford History of Science museum. The page says "later printed in the margins of many English Bibles" |
+| Matthew 1:8 goes from Joram to Uzziah; Ahaziah, Joash and Amaziah in 2 Kings 8 to 14 | 6-20 | BSB | Repository |
+| Readings of the ages (ordinary years; symbolic or honorific; king-list form); 365 and 777 | 6-20 | Repository deep note (`hard`) | Repository; no side |
+| Psalm 90:10 (cited, not quoted: its BSB text holds an em-dash), 90:12; 1 Corinthians 15:26; John 11:25; 1 Thessalonians 4:13 | 6-20 | BSB | Repository |
+| Halakh ‘walk’ (5:22, 5:24, 6:9); laqach and 2 Kings 2:3; Hebrews 11:5-6; Micah 6:8 | 21-24 | Repository deep note (`words`); BSB | Repository |
+| Jude 1:14-15 almost word for word 1 Enoch 1:9; 1 Enoch dated to the third to first centuries BC; "seventh from Adam" counts Adam | 21-24 | 1 Enoch | Search: Reformation Study Bible note (BibleGateway); NET note (Biblia); Ligonier. Paraphrased; no words of 1 Enoch quoted |
+| Seventh in Cain's line (Lamech) and in Seth's (Enoch) | 21-24 | BSB | Repository (counted) |
+| Noah and nuach; nacham in 5:29 and 6:6-7 | 25-32 | Hebrew text | Script (H5162, H5117) |
+| Methuselah's death in the flood year (187 + 182 + 600 = 969) | 25-32 | BSB numbers | Repository (arithmetic on 5:25, 5:28, 7:6) |
+| Genesis 8:21; Matthew 11:28; Romans 8:21; Revelation 22:3; 1 Peter 3:20; Acts 17:28 | 25-32 | BSB | Repository |
