@@ -6703,3 +6703,31 @@ No web search.
 
 A word for the old and for those who care for them; a care line for an old
 person low in spirit.
+
+Psalm 70's note was corrected in the commit for Psalm 72: "Aha, aha!" now sits
+in double marks with its verse, as quoted Scripture (the validator flagged the
+exclamation mark inside single marks after the Psalm 70 commit).
+
+## The plain notes on Psalm 72 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Of Solomon" one of two (with 127); "by", "for" or "about"; Solomon's prayer (1 Kings 3:9), David's for his son, or a coronation psalm | 1-7 | Book page; repository deep note (historical); BSB | Stated as views |
+| Hammurabi's laws: so the strong would not oppress the weak, and justice for the orphan and widow | 1-7 | Harper's translation (Online Library of Liberty); King's translation (sacred-texts.com; oll.libertyfund.org) | Search. Paraphrased, no quotation marks; prologue or epilogue left unstated (translations place the phrases differently) |
+| A just reign thought to make the land fruitful | 1-7 | Repository deep note (cultural) | Site's own teaching |
+| Euphrates, Tarshish, Sheba in southern Arabia (1 Kings 10:1) | 8-17 | Repository deep note; BSB | BSB text |
+| 72:17 echoes Genesis 12:3 | 8-17 | BSB | BSB text |
+| No king met the ideal; Solomon's heavy yoke (1 Kings 12:4); the kingdom split | 8-17 | BSB | BSB text |
+| The Targum adds "Messiah" at 72:1 (the King Messiah); many Jewish readers look for the king still to come; Christians read it of Jesus | 8-17 | Gill's commentary (sacred-texts.com); prophecytoday.uk; Cambridge Bible (sermonindex.net); book page ("The king's psalms") | Search. Rashi, Kimchi and Ibn Ezra met only in Gill's summary and not named |
+| 72:18-20 the close of Book Two; the doxologies | 18-20 | Book page ("Five books"); BSB | BSB text |
+| Psalms headed "of David" after 72: 86, 101, 103, 108-110, 122, 124, 131, 133, 138-145 (18) | 18-20 | BSB headings by script (132 mentions David in its text, not its heading, and is left out) | Script; "more than a dozen" |
+| 72:20 once closed an earlier collection (many), or marks a section | 18-20 | Repository deep note (historical) | Stated as views |
+| Isaiah 11:4; 9:7; Luke 4:18; Proverbs 31:8; Matthew 12:42; 2:11; 25:40; Habakkuk 2:14; Revelation 11:15 | all | BSB | BSB text |
+
+No modern ruler, party or nation in view.
+
+## Book Two complete (2026-11-19)
+
+Psalms 42 to 72 now have plain notes. Next: Psalm 73, the start of Book Three.
