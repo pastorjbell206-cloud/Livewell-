@@ -1814,7 +1814,7 @@ counts of Greek words are a script over the repository's Greek text of John.
 | Cana: Kafr Kanna or Khirbet Qana (Reina also proposed); placed roughly | Archaeology | Search: bibleplaces.com/cana; en.wikipedia.com Khirbet Qana; christiantoday.com |
 | Sychar: most place it at Askar; some at Shechem (Tell Balata) | Bible encyclopedias | Search: biblegateway Encyclopedia of the Bible "Sychar"; biblicaltraining.org; biblehub atlas |
 | Bethany beyond the Jordan: Al-Maghtas inscribed by UNESCO in 2015; no solid proof the site is the place; other proposals (repository: Origen's Bethabara, Riesner's Batanea) | UNESCO; reviewers | Search: whc.unesco.org list 1446; biblicalarchaeology.org; orthochristian.com |
-| Pool of Siloam found in 2004 (Reich and Shukron); Pool of Bethesda excavated near St Anne's, a pool fitting John's description, still debated in detail | Archaeology | Search: biblicalarchaeology.org "The Siloam Pool"; en.wikipedia.org Pool of Bethesda. The page says only that both "have been found by archaeologists" |
+| Pool of Siloam found in 2004 (Reich and Shukron); Pool of Bethesda excavated near St Anne's, a pool fitting John's description, still debated in detail | Archaeology | Search: biblicalarchaeology.org "The Siloam Pool"; en.wikipedia.org Pool of Bethesda. The page says pools "widely taken to be" Bethesda and Siloam |
 | Bethany "a little less than two miles" (11:18) | BSB | Repository |
 | Map positions | Approximate modern sites; Cana a region, placed roughly and said so | Not a historical claim |
 
