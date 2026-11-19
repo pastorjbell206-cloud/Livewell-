@@ -5752,3 +5752,30 @@ One web search.
 | Crisis sentence and Find Help line | 6-10 | The form used in Mark 9 and Matthew 5 plain notes | Site's own wording |
 
 No phone number is given. No diagnosis is named.
+
+## The plain notes on Psalm 7 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shiggaion only here, a related plural at Habakkuk 3:1; meaning unknown; proposals "reel/wander" and lament | 1-5 | biblehub.com (Expositor's, Gray, Cambridge); Strong's | Search. Stated as uncertain |
+| Cush the Benjamite named nowhere else; Saul's years and Shimei proposed; none provable | 1-5 | Same search; repository deep note | Search. The "Cush = black" and Cushite-messenger guesses not used |
+| Oath of innocence, Job 31; the accused hands the case to God | 1-5 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| David spares Saul (1 Samuel 24:10-12); "many readers have thought of this" | 1-5 | BSB; repository deep note | BSB text |
+| Judge seated; city gate; "hearts and kidneys"; God as warrior; pregnancy image in verse 14; "LORD Most High" taken up in 9:2 | 6-11, 12-17 | Repository deep note (cultural, literary); BSB | Site's own teaching |
+| 1 Peter 2:23; Jeremiah 11:20; 17:10; Revelation 2:23; Proverbs 26:27; Galatians 6:7; James 1:15 | all | BSB | BSB text |
+
+## The plain notes on Psalm 8 (2026-11-19)
+
+Two web searches (the elohim search and the verse 2 search).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Elohim usually "God", also "gods", heavenly beings, angels; the Septuagint and Hebrews 2:7 "angels"; translations differ (NASB "God", ESV "heavenly beings"); the BSB note gives both; a matter of translation, not a different text | 3-9 | en.wikipedia.org "Lower than the angels"; freely-given.org Psalm 8:5; ebible.org notes | Search |
+| Verse 2: Hebrew oz "strength"; the Septuagint and Vulgate "praise"; Matthew 21:16 follows the Greek | 1-2 | tips.translation.bible on Psalm 8:1-2; intertextual.bible; bibleproject.com | Search |
+| Gittith obscure (also 81, 84); enosh suggests frailty; royal language of glory, honour, crowning, under the feet; the animal list follows Genesis 1; heavenly bodies worshipped around Israel | both | Repository deep note (cultural, literary, historical) | Site's own teaching. The "wine press" sense of Gittith not used |
+| Matthew 21:14-16; Mark 10:14-15; 1 Corinthians 1:27; Psalm 19:1; Romans 1:20; Genesis 1:26; 2:15; Job 7:17; Hebrews 2:7-9; 1 Corinthians 15:27; Ephesians 1:22 | both | BSB | BSB text |
+
+Stated with no side: elohim (three readings). No position on the age of the
+earth or on evolution; no modern political application of "ruler".
