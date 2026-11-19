@@ -380,11 +380,15 @@ Sources: Feuerbach 1841; Marx 1844; Freud 1927 (the best book against); Nagel 19
 
 ### What I ran, and what passed
 
-- Merged the latest `origin/claude/todo-implementation-hhp4bm` before starting. Search index and passage index rebuilt (20 chapter files).
-- `pnpm check`: pass. All 36 content-gate commands in `ci.yml`: pass. `pnpm test`: 146 files passed, 7 skipped; 1,651 tests passed, 73 skipped. ESLint on the changed source files: clean. `hq.test.tsx` names the twelve argued answers.
-- `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (35 Honest Answer pages), `pnpm run audit:canonicals` (0 failures): pass.
-- Screenshots at 390 x 844 and 1440 x 900, day and night, in `/home/user/elite-shots/apol/` (`only-way-*`, `miracles-*`, `wishful-*`, each with `-argument` and `-sources`). No horizontal overflow.
-- Lighthouse (three runs, median, `serve-like-vercel.mjs`): all three answers performance 84, accessibility 100, best practices 96, SEO 100, CLS 0.000, LCP 4.6 s. The same as the earlier argued answers; no worse. The cheap ideas from the second run (`content-visibility: auto` on later parts, or prerendering only the short answer and contents) still stand and were not built.
+The first run of this section was cut off by a machine restart before its commits were pushed, and its gate results were never seen by the agent that finished it. This section states only what the finishing run (2026-11-19) watched run to the end, after merging the latest `claude/todo-implementation-hhp4bm` (already up to date) and correcting one source (below).
+
+- Editor's read of the three answers: one real breach found and fixed. The Hume Studies reply to Earman (2005) is by William L. Vanderburgh; the answer, its source list, the ledger and this report had named a "William Kopf". No invented recollection, feeling or habit of James's; the only first-person biography is "I was raised without a father" (wishful thinking), with nothing added to it. Every quotation of a person is marked verified word for word in the ledger. No forbidden words, no em-dashes, no exclamation outside quoted Scripture, no altar call; the three views on those who never heard are set out without a side taken.
+- `pnpm check`: exit 0.
+- All 36 commands of the content-gates step in `ci.yml`, run one at a time: every one exit 0 (search index up to date, 730 entries; passage index 615 chapter files match).
+- `pnpm test`: exit 0; 146 test files passed, 7 skipped; 1,651 tests passed, 73 skipped.
+- `pnpm build`, then `pnpm run sitemap` (static fallback, no database here), then `pnpm run prerender` (3,026 route files, 35 Honest Answer pages), then `pnpm run audit:canonicals` (0 not prerendered, 0 failures): each exit 0.
+- Served with `scripts/serve-like-vercel.mjs` on port 4583 and looked at with Playwright (API stubbed) at 390 x 844 and 1440 x 900, day and night: on all three pages the scroll width equals the viewport width (no sideways scroll), every section heading renders, the laid-out arguments and "Sources and further reading" render. Screenshots: `/home/user/elite-shots/apol/run6-*`.
+- Not run by the finishing run: ESLint and Lighthouse. The first run's Lighthouse figures (performance 84, accessibility 100, CLS 0.000) were not re-measured and are not claimed here. The cheap ideas from the second run (`content-visibility: auto` on later parts, or prerendering only the short answer and contents) still stand and were not built.
 
 ### Not verified
 
