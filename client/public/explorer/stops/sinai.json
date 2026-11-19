@@ -2,12 +2,170 @@
   "slug": "sinai",
   "n": 5,
   "act": "exodus",
+  "added": "Act Four (Exodus and Sinai) is two stops here: the rescue, then the law and the tent.",
   "title": "Sinai and the Tent",
-  "range": "Exodus 16 to Deuteronomy",
-  "status": "drawing",
+  "range": "Exodus 19 to 40, and Leviticus",
+  "status": "finished",
   "summary": {
     "younger": "At a mountain called Sinai, God gave his people his good laws and told them to build a tent where he would live among them.",
     "older": "Rescued people are given a way to live. At Sinai God makes a covenant with Israel, gives the law, and has them build the tabernacle so that he can dwell among them."
   },
-  "added": "Act Four (Exodus and Sinai) is two stops here: the rescue, then the law and the tent."
+  "scene": "sinai",
+  "sceneLabel": "Mount Sinai under a thick cloud, with the people and their tents at its foot. In front, the tabernacle in the middle of the camp, seen from above with north at the top: the courtyard of linen curtains on posts, with its gate on the east; the altar of burnt offering; the bronze basin; and the tent, where the table with its bread stands on the north side of the Holy Place, the lampstand with its seven lamps on the south side, and the altar of incense in front of the veil. Behind the veil, in the Most Holy Place, is the ark, with two cherubim over the mercy seat.",
+  "story": {
+    "younger": [
+      "Three months after God rescued his people from Egypt, they came to a great mountain called Sinai and camped in front of it. God came down on the mountain in cloud and fire, and all the people trembled.",
+      "First God told them who he was and what he had already done: “I am the LORD your God, who brought you out of the land of Egypt.” Only after that did he give them the Ten Commandments. God did not wait for them to be good before he saved them. He saved them first, and then his laws showed them how to live as people he had set free.",
+      "God also told Moses to build a special tent, called the tabernacle, so that he could live right in the middle of his people. But while Moses was on the mountain, the people made a calf out of gold and bowed down to it. It was a terrible wrong.",
+      "Moses prayed for the people, and God did not give up on them. He told Moses his name: “The LORD, the LORD God, is compassionate and gracious, slow to anger.” The people built the tent, and when it was finished, God's glory filled it. God was living with his people."
+    ],
+    "older": [
+      "Exodus has a careful order, and the order matters. The rescue comes first, in chapters 1 to 15. Only then, at Sinai, does God give the law, and even the Ten Commandments begin with what God has already done: “I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery” (Exodus 20:2). The first command comes in the next verse. Israel did not obey in order to be rescued. They had been rescued, and the law showed them how rescued people live.",
+      "God says he carried them “on eagles’ wings” and brought them to himself (Exodus 19:4). He makes a covenant with them, and he gives Moses the plan for the tabernacle: “they are to make a sanctuary for Me, so that I may dwell among them” (Exodus 25:8). The holy God of the mountain is going to live in a tent in the middle of the camp.",
+      "While Moses is on the mountain receiving those plans, the people make a golden calf and call it the god who brought them out of Egypt (Exodus 32:4). It is the Fall again: the gift barely given, and already traded away. Moses pleads for them, and God answers by speaking his own name: “compassionate and gracious, slow to anger, abounding in loving devotion and faithfulness” (Exodus 34:6). The next verse says he will not leave the guilty unpunished. Mercy and justice are both in his name.",
+      "Leviticus then shows how a holy God and a sinful people can live close together: priests, offerings, clean and unclean, and once a year the Day of Atonement (Leviticus 16). Sacrifice can seem strange to us. Leviticus gives the reason: “the life of the flesh is in the blood” (Leviticus 17:11), and God gave it to make atonement. A life was given so that a sinner could live and come near. The same book holds the command “love your neighbor as yourself” (Leviticus 19:18)."
+    ]
+  },
+  "god": {
+    "younger": "God rescues first, and then he teaches his people how to live. He is holy, and he wants to live close to his people. He is kind and patient, and full of love.",
+    "older": "God's law is a gift to people he has already saved, not a ladder for climbing up to him. He is holy, so sin cannot simply be ignored; and he is merciful, so he provides a way to come near. Both are in the name he speaks to Moses (Exodus 34:6-7)."
+  },
+  "verses": [
+    {
+      "ref": "Exodus 20:2-3",
+      "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery. You shall have no other gods before Me."
+    },
+    {
+      "ref": "Exodus 25:8",
+      "text": "And they are to make a sanctuary for Me, so that I may dwell among them."
+    }
+  ],
+  "read": [
+    {
+      "label": "Exodus 20",
+      "href": "/study/bible/exodus/20"
+    },
+    {
+      "label": "Exodus 32",
+      "href": "/study/bible/exodus/32"
+    },
+    {
+      "label": "Exodus 40",
+      "href": "/study/bible/exodus/40"
+    },
+    {
+      "label": "Leviticus 16",
+      "href": "/study/bible/leviticus/16"
+    }
+  ],
+  "question": {
+    "ask": "Are Christians supposed to keep all these laws?",
+    "answer": [
+      "It is a fair question, because Christians plainly do not offer sacrifices or keep many of the laws in Leviticus. Here is what Christians share. Jesus said he did not come to abolish the Law or the Prophets “but to fulfill them” (Matthew 5:17). The sacrifices pointed to his death, which Hebrews calls “one sacrifice for sins” offered for all time (Hebrews 10:12). And God's moral will has not changed. Paul says that love is “the fulfillment of the law” (Romans 13:10), and the commands against murder, stealing and coveting still stand.",
+      "Where churches differ is in how they explain the law's place now. Some divide the law into moral, ceremonial and civil parts. Some speak of law and gospel. Some say the whole law of Moses reached its goal in Christ, and Christians now live under the law of Christ. Faithful Christians hold each of these, and the Study Bible sets them side by side.",
+      "One more thing matters. Many Jewish people today keep the Torah as God's gift, and Christians should speak of that with respect. The law was never a weight God laid on people he did not love. It begins with “I am the LORD your God, who brought you out.”"
+    ]
+  },
+  "deeper": [
+    {
+      "label": "The law: what the Bible teaches, and where Christians differ",
+      "href": "/study/bible/doctrines/law"
+    },
+    {
+      "label": "How is the law of Moses different from Hammurabi?",
+      "href": "/resources/context/torah-and-the-law-codes"
+    }
+  ],
+  "talk": {
+    "younger": "God rescued his people first, and then gave them his good laws. Why do you think he did it in that order?",
+    "older": "The people made a golden calf while God was preparing to live among them. What do people today trust in place of God?"
+  },
+  "activity": {
+    "kind": "walk",
+    "title": "Walk into the tent",
+    "prompt": "Start at the gate and walk in, one step at a time, all the way to the ark. Use the Next button, or tap a number on the picture.",
+    "steps": [
+      {
+        "id": "gate",
+        "name": "The gate of the courtyard",
+        "x": 94,
+        "y": 68,
+        "what": "The courtyard had one way in: a gate on the east side, toward the sunrise, hung with a curtain of blue, purple and scarlet yarn.",
+        "whatRef": "Exodus 27:13-16",
+        "later": "Jesus said, “I am the gate. If anyone enters through Me, he will be saved.”",
+        "laterRef": "John 10:9"
+      },
+      {
+        "id": "altar",
+        "name": "The altar of burnt offering",
+        "x": 77.5,
+        "y": 78,
+        "what": "Just inside the gate stood a square altar of acacia wood covered with bronze, with a horn at each corner. Here offerings were made, and an offering was accepted on the worshipper's behalf.",
+        "whatRef": "Exodus 27:1-2; Leviticus 1:4",
+        "later": "Hebrews says Jesus offered “one sacrifice for sins” for all time, so no more are needed.",
+        "laterRef": "Hebrews 10:10-12"
+      },
+      {
+        "id": "basin",
+        "name": "The bronze basin",
+        "x": 63.75,
+        "y": 77,
+        "what": "Between the altar and the tent stood a bronze basin of water. The priests washed their hands and feet there before they served.",
+        "whatRef": "Exodus 30:18-20",
+        "later": "Hebrews tells believers to draw near to God through Jesus, with hearts made clean and “bodies washed with pure water.”",
+        "laterRef": "Hebrews 10:19-22"
+      },
+      {
+        "id": "lampstand",
+        "name": "The lampstand",
+        "x": 52.5,
+        "y": 88,
+        "what": "Inside the tent, in the Holy Place, stood a lampstand of pure gold, hammered from one piece, with seven lamps to give light.",
+        "whatRef": "Exodus 25:31-37",
+        "later": "Jesus said, “I am the light of the world.”",
+        "laterRef": "John 8:12"
+      },
+      {
+        "id": "table",
+        "name": "The table and the Bread of the Presence",
+        "x": 45,
+        "y": 49,
+        "what": "Across from the lampstand stood a table of acacia wood, and on it the Bread of the Presence, set before the LORD at all times.",
+        "whatRef": "Exodus 25:23-30",
+        "later": "Jesus said, “I am the bread of life.”",
+        "laterRef": "John 6:35"
+      },
+      {
+        "id": "incense",
+        "name": "The altar of incense",
+        "x": 34,
+        "y": 77,
+        "what": "In front of the veil stood a small altar covered with gold, where sweet incense was burned every morning and every evening.",
+        "whatRef": "Exodus 30:1-8",
+        "later": "In Revelation, incense rises before God together with the prayers of God's people.",
+        "laterRef": "Revelation 8:3-4"
+      },
+      {
+        "id": "veil",
+        "name": "The veil",
+        "x": 25,
+        "y": 49,
+        "what": "A veil of blue, purple and scarlet yarn, worked with cherubim, hung across the tent. It separated the Holy Place from the Most Holy Place.",
+        "whatRef": "Exodus 26:31-33",
+        "later": "When Jesus died, the veil of the temple was torn in two from top to bottom. God himself opened the way in.",
+        "laterRef": "Mark 15:38; Hebrews 10:19-20"
+      },
+      {
+        "id": "ark",
+        "name": "The ark of the Testimony",
+        "x": 16.5,
+        "y": 77,
+        "what": "Behind the veil, in the Most Holy Place, was the ark: a chest of acacia wood covered with gold, with the mercy seat on top and two cherubim of gold. God said, “I will meet with you there.” Only the high priest went in, once a year.",
+        "whatRef": "Exodus 25:10-22; Leviticus 16:34",
+        "later": "John says that in Jesus, God “made His dwelling among us” (John 1:14), and Hebrews says Christ entered the Most Holy Place “once for all by His own blood” (Hebrews 9:12).",
+        "laterRef": "John 1:14; Hebrews 9:12"
+      }
+    ],
+    "finish": "You walked all the way in, from the gate to the ark. Through Jesus, the way to God is open."
+  }
 }

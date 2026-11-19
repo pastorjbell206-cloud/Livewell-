@@ -4,9 +4,138 @@
   "act": "fall",
   "title": "The Fall",
   "range": "Genesis 3 to 11",
-  "status": "drawing",
+  "status": "finished",
   "summary": {
     "younger": "The first people did not trust God and did what he told them not to do. Sin and sadness came into the world, but God kept caring for them.",
     "older": "Adam and Eve reach for what God withheld, and the damage spreads: shame, blame, murder, the flood, a tower built to reach the sky. God judges, and he keeps showing mercy."
+  },
+  "scene": "fall",
+  "sceneLabel": "Outside the garden of Eden, on its east side. Behind a hedge of trees stands the tree of life, and the way back in is guarded by two cherubim and a whirling sword of flame. In front, the man and the woman walk away a step apart, dressed in the clothes God made for them. Their fig leaves lie dropped on the path, thorns and thistles grow from the ground, and a serpent goes on its belly in the dust.",
+  "story": {
+    "younger": [
+      "God made a beautiful garden for the first man and woman. They could eat from every tree in it but one, and God told them not to eat from that one tree.",
+      "A crafty serpent told the woman that God was keeping something good from them. She did not trust God. She ate the fruit, and she gave some to her husband, and he ate it too.",
+      "Then everything went wrong. They felt ashamed and hid from God among the trees. The man blamed the woman, and the woman blamed the serpent. God told them that life would now be hard, and they had to leave the garden.",
+      "But God did not stop caring for them. He came looking for them. He made them clothes and dressed them himself. And he made a promise: one day a child of the woman would crush the serpent's head. Christians believe that promise points all the way to Jesus.",
+      "After that, things kept going wrong. Cain was angry and killed his brother Abel. People became so wicked that God sent a great flood, and he kept Noah and his family safe in the ark. Later, people built a tall tower to make themselves great, and God scattered them over the earth."
+    ],
+    "older": [
+      "Genesis 3 is short, and almost everything after it depends on it. The serpent does not start with the fruit. He starts by making God sound mean, and then he makes a promise: “you will be like God” (Genesis 3:5). Sin, in this story, is more than breaking a rule. It is not trusting that God is good, and wanting to be our own god, deciding good and evil for ourselves.",
+      "The damage comes at once, and it runs in every direction. The man and the woman hide from God. They try to cover their shame. He blames her, and she blames the serpent. The ground will now grow thorns, and work becomes hard toil. They are sent out of the garden, and the way back to the tree of life is guarded (Genesis 3:24).",
+      "Then it spreads. Cain kills his brother Abel (Genesis 4:8). By Noah's day, Genesis says, the thoughts of people's hearts were “altogether evil all the time” (Genesis 6:5), and God sends the flood, keeping Noah and his family. At Babel people build a tower to “make a name for ourselves” (Genesis 11:4), and God scatters them.",
+      "Yet judgment is never the only word. God comes looking and calls, “Where are you?” (Genesis 3:9). He makes clothes for them and dresses them himself (Genesis 3:21). He puts a mark on Cain so that no one will kill him (Genesis 4:15). And before anyone leaves the garden, he makes the first promise: a son of the woman will crush the serpent's head (Genesis 3:15). Christians have long read that promise as the first announcement of Jesus."
+    ]
+  },
+  "differ": {
+    "text": "Christians read some of Genesis 3 differently, such as how much of it is told the way a history book would tell it; all of them confess that the world God made is good, that it was broken by human sin, and that God still loves it.",
+    "label": "Sin: what the Bible teaches, and where Christians differ",
+    "href": "/study/bible/doctrines/sin"
+  },
+  "god": {
+    "younger": "God is good, and he tells the truth. Even when people turn away from him, he comes looking for them and keeps caring for them.",
+    "older": "God takes sin seriously because he loves what sin spoils. In the same chapter that tells of judgment, he comes looking, he clothes, and he promises. Mercy is there before anyone leaves the garden."
+  },
+  "verses": [
+    {
+      "ref": "Genesis 3:15",
+      "text": "And I will put enmity between you and the woman, and between your seed and her seed. He will crush your head, and you will strike his heel."
+    },
+    {
+      "ref": "Genesis 3:21",
+      "text": "And the LORD God made garments of skin for Adam and his wife, and He clothed them."
+    }
+  ],
+  "read": [
+    {
+      "label": "Genesis 3",
+      "href": "/study/bible/genesis/3"
+    },
+    {
+      "label": "Genesis 4",
+      "href": "/study/bible/genesis/4"
+    },
+    {
+      "label": "Genesis 6",
+      "href": "/study/bible/genesis/6"
+    },
+    {
+      "label": "Genesis 11",
+      "href": "/study/bible/genesis/11"
+    }
+  ],
+  "care": "This part of the story talks about guilt and death. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "Why is one bite such a big deal?",
+    "answer": [
+      "Because it was never really about the fruit. God had given the man and the woman the whole garden. The one tree was the one place where they could show that they trusted his word more than their own wanting. Eating from it said: we will decide what is good, and we do not need God to tell us. That is what the Bible means by sin at its root. It is not only doing bad things. It is turning away from the God who made us and putting ourselves in his place.",
+      "That is why the damage is so wide. When the first relationship breaks, the others break with it: with each other, with ourselves, with the world around us. Most people know this from the inside. We know what it is to hide, to blame, and to want our own way at any cost. Genesis does not say the problem is only out there somewhere. It says it is in us.",
+      "And it says that is not the end. Paul writes that the whole creation is waiting to be “set free from its bondage to decay” (Romans 8:21). The God who judged in the garden is the God who promised, in the same breath, to put things right."
+    ]
+  },
+  "deeper": [
+    {
+      "label": "If God is good, why is there suffering?",
+      "href": "/answers/if-god-is-good-why-suffering"
+    },
+    {
+      "label": "Sin: what the Bible teaches",
+      "href": "/study/bible/doctrines/sin"
+    }
+  ],
+  "talk": {
+    "younger": "The man and the woman hid from God. Why do you think people hide when they have done something wrong? What did God do when they hid?",
+    "older": "Where do you see the four broken relationships in the world around you? Where do you see God's mercy at work, even now?"
+  },
+  "activity": {
+    "kind": "tap",
+    "title": "What broke",
+    "prompt": "When people stopped trusting God, four things broke. Tap each + on the picture to find them, and to see how God begins to mend each one.",
+    "spots": [
+      {
+        "id": "god",
+        "label": "With God",
+        "name": "The guarded way back into the garden",
+        "x": 72.5,
+        "y": 46,
+        "text": "The man and the woman hid from God among the trees, and then they had to leave the garden.",
+        "ref": "Genesis 3:8",
+        "mend": "God came looking for them and called, “Where are you?”",
+        "mendRef": "Genesis 3:9"
+      },
+      {
+        "id": "each",
+        "label": "With each other",
+        "name": "The man and the woman, a step apart",
+        "x": 29,
+        "y": 72,
+        "text": "The man blamed the woman, and the woman blamed the serpent. Soon Cain killed his brother.",
+        "ref": "Genesis 3:12-13",
+        "mend": "God put a mark on Cain so that no one would kill him. God was already holding back the hurt people do to each other.",
+        "mendRef": "Genesis 4:15"
+      },
+      {
+        "id": "self",
+        "label": "With ourselves",
+        "name": "The fig leaves dropped on the path",
+        "x": 50,
+        "y": 86,
+        "text": "They felt ashamed and afraid, and tried to cover themselves with fig leaves.",
+        "ref": "Genesis 3:7",
+        "mend": "God made them clothes of skin and dressed them himself.",
+        "mendRef": "Genesis 3:21"
+      },
+      {
+        "id": "ground",
+        "label": "With the ground",
+        "name": "The thorns and thistles",
+        "x": 87.5,
+        "y": 87,
+        "text": "The ground would grow thorns and thistles, and work became hard.",
+        "ref": "Genesis 3:17-18",
+        "mend": "After the flood, God promised that “seedtime and harvest” would never cease.",
+        "mendRef": "Genesis 8:22"
+      }
+    ],
+    "finish": "You found all four. Each one broke, and God began to mend each one."
   }
 }
