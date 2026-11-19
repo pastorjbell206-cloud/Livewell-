@@ -4162,15 +4162,15 @@ Psalm 105:17) were cut back so the quoted words contain none.
 
 | Chapter | Passages | Plain words |
 |---|---|---|
-| Genesis 34 | 5 (What was done to Dinah; a father's silence, and a bargain; a sacred sign used as a trap; slaughter and plunder; a question left hanging) | 2,303 |
-| Genesis 35 | 5 (back to Bethel, and the foreign gods buried; ‘Your name will be Israel’; Rachel dies giving birth; Reuben and Bilhah, the twelve sons; Isaac dies, and both sons bury him) | 2,420 |
-| Genesis 36 | 3 (Esau's family moves to Seir; clans and chiefs; kings in Edom before Israel had a king) | 1,121 |
+| Genesis 34 | 5 (What was done to Dinah; a father's silence, and a bargain; a sacred sign used as a trap; slaughter and plunder; a question left hanging) | 2,306 |
+| Genesis 35 | 5 (back to Bethel, and the foreign gods buried; ‘Your name will be Israel’; Rachel dies giving birth; Reuben and Bilhah, the twelve sons; Isaac dies, and both sons bury him) | 2,417 |
+| Genesis 36 | 3 (Esau's family moves to Seir; clans and chiefs; kings in Edom before Israel had a king) | 1,129 |
 | Genesis 37 | 5 (the favored son and the robe; two dreams; ‘Here comes that dreamer’; sold for twenty shekels; a robe dipped in goat's blood) | 2,637 |
 | Genesis 38 | 4 (Judah's sons, and a widow wronged; Tamar's plan; ‘She is more righteous than I’; twins: Perez and Zerah) | 2,155 |
 | Genesis 39 | 4 (‘The LORD was with Joseph’; ‘How could I do such a great evil?’; the cloak, and a lie; in prison, and the LORD with him) | 1,942 |
-| Genesis 40 | 3 (two of Pharaoh's officers in prison; the cupbearer's dream, and ‘Remember me’; the baker's dream, and forgotten) | 1,374 |
-| Genesis 41 | 5 (Pharaoh's dreams, and a cupbearer remembers; ‘I myself cannot do it’; seven years of plenty, seven of famine; ruler over all Egypt; plenty, two sons, and the famine) | 2,451 |
-| Total | 34 | 16,403 |
+| Genesis 40 | 3 (two of Pharaoh's officers in prison; the cupbearer's dream, and ‘Remember me’; the baker's dream, and forgotten) | 1,380 |
+| Genesis 41 | 5 (Pharaoh's dreams, and a cupbearer remembers; ‘I myself cannot do it’; seven years of plenty, seven of famine; ruler over all Egypt; plenty, two sons, and the famine) | 2,446 |
+| Total | 34 | 16,412 |
 
 ### Sources
 
