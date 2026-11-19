@@ -3554,3 +3554,145 @@ Romans 5:12 as "because all sinned" (the BSB does; others not checked).
 
 Genesis 4 onward in plain words, in the same shape. A wider map frame for
 Genesis and Exodus waits on the lead.
+
+## Continuation: Genesis 4 to 11 (2026-11-19)
+
+Eight chapters in plain words, in the shape of Genesis 1 to 3: each
+passage's third part is `later` ("Where the Bible takes this up"), never
+`ot`; each chapter note gained only `"plain": true` at its end (the diff
+changes its closing lines and nothing else). After each chapter every
+passage was printed field by field and read: every text sits under its
+right heading, and `validate-bible-notes` passed with no exception.
+
+### Chapters 4 to 11 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Genesis 4 | 4 (two brothers, two offerings; ‘Am I my brother's keeper?’; Cain's city, and Lamech's boast; Seth, and calling on the LORD) | 2,726 |
+| Genesis 5 | 4 (in God's likeness, and in Adam's; ‘And then he died’; Enoch walked with God; Methuselah, and a son named for comfort) | 2,249 |
+| Genesis 6 | 4 (the sons of God and the daughters of men; God's grief, and one man's favor; a world full of violence; build an ark) | 2,640 |
+| Genesis 7 | 3 (‘Go into the ark’; the deep breaks open, and God shuts the door; the waters rise) | 1,868 |
+| Genesis 8 | 4 (God remembered Noah; the raven and the dove; out of the ark; an altar, and a promise) | 1,934 |
+| Genesis 9 | 4 (blessing again, and the worth of a life; the covenant and the bow in the clouds; Noah's shame, covered; Canaan cursed, and the death of Noah) | 2,592 |
+| Genesis 10 | 3 (the sons of Japheth; the sons of Ham, Nimrod, and Canaan; the sons of Shem, and one family of nations) | 1,604 |
+| Genesis 11 | 4 (‘Let us make a name for ourselves’; the LORD comes down; from Shem to Abram; Terah's family, and Sarai's barrenness) | 2,165 |
+| Total | 30 | 17,778 |
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Genesis 4" to "11". 21
+web searches (3, 4, 2, 2, 2, 3, 2, 3). Main sources: the Latter-day Saint
+and Protestant history of the "mark of Cain" (Wikipedia's two articles;
+Young's 1852 speech); the Septuagint of 4:24 and Matthew 18:22; Jubilees
+4:9; the Sumerian King List (eight kings, 241,200 years); the Hebrew,
+Greek and Samaritan totals for Genesis 5; Ussher (1650); Jude and 1 Enoch
+1:9; the Targums and Symmachus on "sons of God"; Gilgamesh's cube-shaped
+boat, Mount Nimush and the birds; Woolley's flood layer (1929) and its
+retraction; Whitcomb and Morris (1961); Ararat and Urartu; Sanhedrin 70a
+(what Ham did) and 56a (the seven laws of Noah); views on 9:6 and the death
+penalty; the Table of Nations' identifications; seventy and seventy-two;
+Etemenanki; Enuma Elish tablet VI; Bab-ili. Earlier rows reused: the book
+page's sons of God, Atrahasis, Gilgamesh, Ur, the exile dates and the
+"curse of Ham". Hebrew word facts are a script over the repository's
+Strong's numbers.
+
+### Cut or narrowed
+
+Cut: the deep notes' apkallu and iron date (chapter 4); a Mesopotamian
+threshold demon behind 4:7; the Nephilim's derivation from ‘to fall’; the
+Septuagint's ‘giants’; 1 Enoch named as the source of the angel reading;
+the gods gathering "like flies" at Utnapishtim's sacrifice (not found);
+the olive branch as a symbol of peace because of this story; sailors
+releasing birds; a northern Ur; the Catholic Catechism's 2018 wording on
+the death penalty (not retrieved). Narrowed: Gilgamesh's boat "usually
+read as a cube"; Gomer "usually linked" with the Cimmerians; Eber and
+‘Hebrew’ "may ... not certain"; Babel "was understood as" Bab-ili;
+Woolley's retraction (one secondary source) said simply; the Septuagint
+total "more than 2,200" (2,242 or 2,262 by a variant).
+
+### Contested matters, and how they are stated
+
+Why God accepted Abel's offering (the text does not say; four readings,
+more than one may be true). Cain's wife (as the book page has it: 5:4,
+Jubilees, the later law, and the wider-population and representative
+readings; "The text says what it says (5:4) and leaves the rest
+unexplained"). The long ages (ordinary years; symbolic or honorific
+numbers; the form of ancient king lists) and dating creation from the
+list: "Christians differ, and these notes do not settle it." The three
+text traditions' totals, stated plainly. The sons of God (angels, Seth's
+line, rulers: "These notes take no side"). The 120 years (two readings).
+God's regret (human terms; a personal God who responds; both, with 1
+Samuel 15 holding both). The two animal counts (fuller detail; two woven
+accounts: "These notes do not choose"). The death penalty and 9:6 (a
+lasting mandate; a description; a principle: "Christians differ, and
+these notes do not settle it"). What Ham did (the plain reading; a worse
+act, without detail; Canaan involved). Why Canaan is cursed (three
+readings). Seventy and Luke 10:1 ("These notes do not decide"). The sin
+of Babel (four readings that fit together) and the origin of languages
+("Christians differ on how to read it, and these notes do not settle
+it"). Pentecost as Babel reversed, the dove at Jesus' baptism and the
+ark's door, each said to be a reading the New Testament does not draw.
+
+The flood's extent, the sentences on the page (7:17-24): "Did the flood
+cover the whole globe, or a region? Christians have read it in more than
+one way." ... "Christians differ, and these notes do not settle it. On
+every reading the chapter teaches the same thing: God judges evil, he does
+not forget his own, and he keeps life alive through judgment."
+
+The mark of Cain, the sentence on the page (4:8-16): "In
+nineteenth-century America some churches taught that Cain's mark was black
+skin and used that claim to defend slavery and to keep Black people out of
+church office; that teaching is false and evil, and these notes reject
+it."
+
+The "curse of Ham" (9:24-29): the book page's paragraph word for word,
+from "Yet for centuries this passage was twisted" to "it says nothing
+about Africa or about race" (checked by script).
+
+### Care lines included
+
+4:8-16: anyone carrying guilt for harm done (God still speaks to Cain and
+protects him; tell the truth to God and someone you trust; make it right
+where possible and safe; 1 John 1:9), and anyone bereaved by violence (God
+hears the blood; the Matthew 2 line on not carrying it alone, a pastor or
+grief counsellor, a crisis line or emergency service). 5:25-32: the
+grieving. 6:9-13: a frightened younger reader (God's own promise in 9:11,
+talk with a parent), and anyone who has lived through a disaster (not a
+judgment on you; Luke 13:4-5 in the BSB, the Honest Answer's point; Find
+Help). 7:11-16: the deaths not made small; the same two readers. 9:8-17:
+the promise is not a promise that no one will suffer a flood; Find Help.
+9:24-29: anyone who has heard the passage used against them. 11:27-32:
+the Luke 1 childlessness lines word for word. No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass.
+At the end, all 36 commands of the content-gates step in ci.yml, one at a
+time: exit 0 each (validate-bible-notes: 66 introductions, 1,189 chapter
+notes, 100 chapters in plain words; validate-no-emdash: 260 files, 0
+em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`:
+146 files passed, 7 skipped; 1,668 tests passed, 73 skipped. `pnpm build`:
+exit 0 (after the chapter commits).
+
+Served with `scripts/serve-like-vercel.mjs` on port 4601; Playwright at 390
+wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed. `/study/bible/genesis/4` to `/11`: every passage's heading, its
+part headings in order and the first 60 characters under each matched the
+data (4, 4, 4, 3, 4, 4, 3, 4 of the same), the third part reads "Where the
+Bible takes this up" in every passage, no sideways scroll, no page errors
+and no console errors. `/study/bible/mark/1` unchanged (9 of 9, "The Old
+Testament behind it"). Screenshots of every passage of Genesis 6 and 9 read
+by eye: `/home/user/elite-shots/bdoor/gn6-390-*` and `gn9-390-*`. Server
+stopped by its PID, dist/ deleted, no lh-*.json. Lighthouse not run (data
+only, no code change).
+
+### Still unverified
+
+Ancient texts' exact words (all paraphrased); Woolley's retraction (one
+secondary source); Eber and ‘Hebrew’ (said to be uncertain); the
+traditional count of seventy names (taken from the sources, not recounted).
+
+### Next
+
+Genesis 12 onward in plain words, in the same shape.

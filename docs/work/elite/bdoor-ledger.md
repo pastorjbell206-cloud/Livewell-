@@ -3541,3 +3541,175 @@ Adam and Eve and 1 Enoch's Gadreel; Niehaus's storm reading of 3:8;
 Foh, Collins, Barr, Moberly, Wenham, Kant, Fromm and the Nag Hammadi texts by
 name; the term ‘protoevangelium’ and its date (the page says "Christians have
 long called it").
+
+## The plain notes on Genesis 4 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/4.json`. Three web searches for
+this chapter, with the book page's rows above and the repository.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Qayin and qanah; Hevel as breath (Ecclesiastes) | 1-7 | Repository deep note (`words`) | Repository |
+| Grain offerings in Israel's law (Leviticus 2); "All the fat is the LORD’s" (Leviticus 3:16) | 1-7 | BSB | Repository |
+| First use of chattat (sin); teshuqah and mashal shared with 3:16 | 1-7 | Hebrew text | Repository deep note; earlier script row (Genesis 3) |
+| Readings of the two offerings (quality; the giver's heart, Hebrews 11:4 and 1 John 3:12; blood sacrifice, doubted; the younger chosen) | 1-7 | Repository deep note (`cultural`); book page's theme | Repository; stated as readings, no names. The deep note's Mesopotamian threshold demon was not checked and is not used |
+| 4:8: the Hebrew does not report Cain's words; Samaritan, Greek and others supply ‘Let us go out to the field’ | 8-16 | Repository introduction (`text`) | Repository |
+| Shamar in 2:15 and 4:9; ot in 4:15, 9:12, 17:11; Nod ‘wandering’ and nud (4:12, 4:14) | 8-16 | Hebrew text; lexicon | Script over the repository's Strong's numbers (H8104, H0226, H5113, H5110) |
+| Blood feud; "the avenger of blood" (Numbers 35:19) | 8-16 | BSB; repository deep note | Repository |
+| Mark of Cain read as black skin in nineteenth-century America: Brigham Young's speeches of 1852 and 1859; Protestant use alongside the "curse of Ham" to defend slavery; the Latter-day Saint priesthood restriction ended in 1978 and the church has since disavowed the teaching | 8-16 | History | Search: Wikipedia "Curses of Cain and Ham (LDS Church)" and "Curse and mark of Cain"; Milestone Documents (Young's 1852 speech). The page names no church and says "some churches", "to defend slavery and to keep Black people out of church office" |
+| Matthew 23:35; Hebrews 11:4, 12:24; 1 John 3:12, 3:15, 1:9; Jude 1:11; Revelation 6:10; Psalm 4:4; Ephesians 4:26; Matthew 5:22; 1 Samuel 16:7 | all | BSB | Repository |
+| Lamech the first with two wives; arts in Cain's line | 17-24 | BSB; repository deep note | Repository. The deep note's apkallu and its iron date were not checked and are not used |
+| LXX Genesis 4:24 uses hebdomekontakis, the word of Matthew 18:22; many read Jesus as answering Lamech | 17-24 | Septuagint | Search: Blue Letter Bible LXX lexicon (G1441); B-Greek archive (Conrad, 2001); Bible Hub. Stated as "many readers hear" |
+| Romans 12:19; Exodus 31:3-5; Psalm 150:4; Matthew 18:21-22 | 17-24 | BSB | Repository |
+| Jubilees 4:9: Cain married his sister Awan; Jubilees about the second century BC | 17-24 | Book of Jubilees | Search: Bible Odyssey "Whom did Cain marry?"; Wikipedia "Book of Jubilees"; Charles's translation via jmoorewv.com. The page does not give the sister's name |
+| Cain's wife: other views (a wider population; a representative story) | 17-24 | Repository deep note (`hard`) | Repository; stated as views |
+| Shat (‘appointed’) in 4:25; Enosh as ‘mortal man’ (H0582); calling on the name (12:8; Joel 2:32; Acts 2:21; Romans 10:13; Luke 3:38) | 25-26 | Hebrew text; lexicon; BSB | Script (H7896); repository lexicon; repository |
+
+## The plain notes on Genesis 5 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/5.json`. Four web searches for this
+chapter.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Likeness and image (1:26; 5:1, 5:3); Romans 5:14; James 3:9; Luke 3:38 | 1-5 | BSB | Repository |
+| Sumerian King List: before the flood, five cities, eight kings, 241,200 years in all (some copies ten kings) | 6-20 | Sumerian King List | Search: csun.edu translation ("Five Cities, eight kings, reigned 241,200 years"); CDLI composite P479895; Harrison, JETS 36:1 (1993). Stated as "eight kings ... 241,200 years" |
+| Creation to flood: 1,656 years in the Hebrew text; more than 2,200 in the Greek (2,242 or 2,262 by the Methuselah variant); 1,307 in the Samaritan; the Greek often adds a hundred years | 6-20 | Text witnesses | Search: Smith (ICC 2018; BAS 2018); Armstrong Institute; Wevers (1993) as cited; repository introduction (`text`). The page says "more than 2,200" |
+| Ussher, Annals (1650): creation 4004 BC; printed in the margins of King James Bibles from the early 1700s | 6-20 | Ussher | Search: Linda Hall Library exhibit; EBSCO research starter; Oxford History of Science museum. The page says "later printed in the margins of many English Bibles" |
+| Matthew 1:8 goes from Joram to Uzziah; Ahaziah, Joash and Amaziah in 2 Kings 8 to 14 | 6-20 | BSB | Repository |
+| Readings of the ages (ordinary years; symbolic or honorific; king-list form); 365 and 777 | 6-20 | Repository deep note (`hard`) | Repository; no side |
+| Psalm 90:10 (cited, not quoted: its BSB text holds an em-dash), 90:12; 1 Corinthians 15:26; John 11:25; 1 Thessalonians 4:13 | 6-20 | BSB | Repository |
+| Halakh ‘walk’ (5:22, 5:24, 6:9); laqach and 2 Kings 2:3; Hebrews 11:5-6; Micah 6:8 | 21-24 | Repository deep note (`words`); BSB | Repository |
+| Jude 1:14-15 almost word for word 1 Enoch 1:9; 1 Enoch dated to the third to first centuries BC; "seventh from Adam" counts Adam | 21-24 | 1 Enoch | Search: Reformation Study Bible note (BibleGateway); NET note (Biblia); Ligonier. Paraphrased; no words of 1 Enoch quoted |
+| Seventh in Cain's line (Lamech) and in Seth's (Enoch) | 21-24 | BSB | Repository (counted) |
+| Noah and nuach; nacham in 5:29 and 6:6-7 | 25-32 | Hebrew text | Script (H5162, H5117) |
+| Methuselah's death in the flood year (187 + 182 + 600 = 969) | 25-32 | BSB numbers | Repository (arithmetic on 5:25, 5:28, 7:6) |
+| Genesis 8:21; Matthew 11:28; Romans 8:21; Revelation 22:3; 1 Peter 3:20; Acts 17:28 | 25-32 | BSB | Repository |
+
+## The plain notes on Genesis 6 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/6.json`. Two web searches for this
+chapter, with the book page's rows (sons of God, Atrahasis, Gilgamesh).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Saw, good, took: tov in 3:6 and 6:2 | 1-4 | Hebrew text | Script (H2896) |
+| Sons of God: angels (early readers; Job 1:6; Jude 1:6 and 2 Peter 2:4 as possible allusions); Seth's line (most Christian teachers from the fourth century, Augustine); rulers | 1-4 | Interpretation history | Book page row (search); new search for the rulers view: Targum Onqelos and Pseudo-Jonathan ‘sons of the great ones’, Neofiti ‘sons of judges’, Symmachus ‘sons of the rulers’ (Wikipedia "Sons of God"; Newman, Grace Theological Journal; oztorah.com). The page says "some ancient Jewish translations"; 1 Enoch is not named for the angel reading |
+| Nephilim's meaning uncertain; Numbers 13:33 (cited, not quoted: its BSB text holds an em-dash) | 1-4 | Lexicon; BSB | Repository. The derivation from ‘to fall’ was not checked and is not used |
+| Matthew 22:30; Job 1:6; Jude 1:6; 2 Peter 2:4-5 | 1-4 | BSB | Repository |
+| 120 years: a lifespan limit or the time before the flood | 1-4 | Repository deep note | Repository; stated as views |
+| Yetser (6:5, 8:21) from the potter's verb; atsav (6:6) and itsavon (3:16-17, 5:29) one root; nacham in 5:29 and 6:6; Noah and chen (favor) the same two letters reversed | 5-8 | Hebrew text | Script (H3336, H6087, H6093, H5162, H2580) |
+| 1 Samuel 15:11, 15:29, 15:35; Hosea 11:8; Ephesians 4:30; Ezekiel 33:11; Jeremiah 18:8 | 5-8 | BSB | Repository |
+| Regret: God spoken of in human terms; a personal God who responds; both held together | 5-8 | Repository deep notes; standard theology | Stated as views, no names |
+| Shachat in 6:11-13, 6:17; chamas, used by the prophets (Amos 3:10) | 9-13 | Hebrew text | Script (H7843, H2555) |
+| Atrahasis: the flood for noise | 9-13 | Book page row (search) | Earlier search |
+| Luke 13:4-5 (BSB wording, not the Honest Answer's ESV); the Honest Answer's point that Jesus refused that reading of a disaster; Find Help | 9-13 | BSB; Honest Answer "Why does God allow earthquakes, cancer, and animal suffering?" | Repository |
+| 2 Peter 2:5, 3:9; Hebrews 11:7; Matthew 24:37-38 | 9-13 | BSB | Repository |
+| Cubit about 18 inches; ark about 450 by 75 by 45 feet (137 by 23 by 14 meters); gopher wood unknown, cypress a guess; pitch in Mesopotamia | 14-22 | Repository deep note (`historical`, `cultural`) | Repository; given as "often reckoned" and "roughly" |
+| Gilgamesh's boat usually read as a cube (equal sides, 120 cubits) | 14-22 | Gilgamesh XI | Search: historyskills.com; imsmessenger.org; howstuffworks. The page says "usually read as a cube" and gives no deck count (sources differ) |
+| Tevah only in Genesis 6 to 9 and Exodus 2:3, 2:5; tar and pitch | 14-22 | Hebrew text; BSB | Script (H8392) |
+| 1 Peter 3:20-21 (only the dash-free words quoted); Luke 22:20; Genesis 9:9-10 | 14-22 | BSB | Repository |
+
+## The plain notes on Genesis 7 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/7.json`. Two web searches for this
+chapter.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Clean and unclean (Leviticus 11:47); ‘seven seven’ read as seven pairs or seven; 8:20, 9:3 | 1-10 | Repository deep note (`cultural`); BSB | Repository |
+| Two of every kind (6:19-20) and seven pairs (7:2-3): the fuller-detail reading and the two-sources reading; ‘God’ in 6:22, ‘the LORD’ in 7:5 | 1-10 | Book page (authorship part); BSB | Repository; stated as views, no side |
+| Luke 17:26-27; 1 Peter 3:20; Hebrews 11:7 | 1-10 | BSB | Repository |
+| Waters above and below; tehom in 1:2, 7:11, 8:2; ‘windows’ of heaven; sagar in 7:16 | 11-16 | Repository deep note (`cultural`, `words`); Hebrew text | Script (H8415, H5462) |
+| Psalm 29:10; Mark 4:39; John 10:9 (the door link said to be a reading the New Testament does not draw); Ezekiel 33:11 | 11-16 | BSB | Repository |
+| Reverse order of creation in 7:23; breath of life (2:7) | 17-24 | Repository deep note (`literary`); BSB | Repository |
+| Flood layers at Ur, Kish and Shuruppak; Woolley's 1929 announcement for Ur; the layers of different dates and local floods; Woolley later retracted the identification | 17-24 | Archaeology | Search: Penn Museum Expedition "Reflections on the Mesopotamian Flood"; livius.org "The Great Flood: Archaeology?"; NCSE Creation/Evolution Journal; New World Encyclopedia "Leonard Woolley"; a 1929 newspaper (Papers Past). The retraction rests on one secondary source (livius.org) and is worded simply |
+| Whitcomb and Morris, The Genesis Flood (1961): a universal flood and flood geology; written partly against Ramm's local-flood view (1954, not named on the page) | 17-24 | The Genesis Flood | Search: Wikipedia "The Genesis Flood"; Grace Journal review (1961); ASA review |
+| Erets as earth and land (7:19, 12:1, 13:12, 41:57); "every nation came to Joseph" (41:57) | 17-24 | Hebrew text; BSB | Script (H0776) |
+| Third view: the writer describes the whole earth, an ancient telling of a real memory (a universal reading held by many critical commentators) | 17-24 | Davidson, "The Biblical Flood: Local or Universal" (Adventist paper, 2023); repository deep note | Search, as above; stated as a view |
+| 2 Peter 3:6; Isaiah 54:9; Isaiah 43:2 | 17-24 | BSB | Repository |
+
+## The plain notes on Genesis 8 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/8.json`. Two web searches for this
+chapter, with the book page's Gilgamesh row.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Zakar ‘remember’ (8:1; 9:15-16; 19:29); Genesis 30:22; Exodus 2:24; 1 Samuel 1:11; Luke 23:42; Isaiah 49:15 | 1-5 | Hebrew text; BSB | Script (H2142); repository |
+| Ruach in 1:2 and 8:1; nuach in 8:4; nichoach in 8:21 | 1-5, 20-22 | Hebrew text | Script (H7307, H5117, H5207) |
+| Ararat a region (plural ‘mountains’), Urartu in Assyrian texts, around Lake Van, eastern Turkey and Armenia; the peak's name modern; ark claims unconfirmed | 1-5 | Geography and history | Search: Encyclopedia.com "Ararat"; Biblical Archaeology Society "Where Noah landed"; Bible Hub atlas. "Never confirmed" from the repository deep note |
+| 2 Kings 19:37; Jeremiah 51:27 | 1-5 | BSB | Repository |
+| Gilgamesh XI: the boat on Mount Nimush; dove, swallow (both return), raven (does not); the offering, and the gods arriving at it | 6-12, 20-22 | Gilgamesh | Search: livius.org (Gilgamesh flood text); etana.org (Kovacs translation); historyskills.com; book page row. **Cut:** the gods gathering "like flies" (not found in the results) and the olive branch as a symbol of peace "because of this story"; ancient sailors releasing birds (not checked) |
+| Olive trees at lower elevations | 6-12 | Repository deep note (`cultural`) | Repository; stated plainly ("does not grow on high mountains") |
+| Matthew 3:16 and the dove, an echo the New Testament does not draw; Psalm 130:5 | 6-12 | BSB; repository deep note | Repository |
+| Dates: 7:11 and 8:14, about a year; ‘be fruitful and multiply’ (1:22, 1:28, 8:17) | 13-19 | BSB | Repository |
+| Romans 8:22; Revelation 21:1 | 13-19 | BSB | Repository |
+| First altar (mizbeach first at 8:20); olah first at 8:20; ‘pleasing aroma’ in Leviticus 1:9 | 20-22 | Hebrew text; BSB | Script (H4196, H5930) |
+| Gods fed by offerings in Babylon's world | 20-22 | Site guide the-gods-of-the-nations (earlier ledger row) | Repository |
+| Ephesians 5:2; Ezekiel 36:26; Jeremiah 33:20; Psalm 74:17 | 20-22 | BSB | Repository |
+
+## The plain notes on Genesis 9 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/9.json`. Three web searches for
+this chapter, with the book page's "curse of Ham" row.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Plants (1:29), then meat (9:3); blood as life (Leviticus 17:11); Acts 15:20; Matthew 26:28; James 3:9 | 1-7 | BSB | Repository |
+| Seven Noahide laws in the Talmud (Sanhedrin 56a-b): courts, and bans on blasphemy, idolatry, forbidden sexual relations, murder, theft, and eating from a living animal; six drawn from Genesis | 1-7 | Talmud | Search: My Jewish Learning "Sanhedrin 56"; Steinsaltz daf; Wikipedia "Seven Laws of Noah". Paraphrased; the page names two of the seven |
+| 9:6 and the death penalty: a lasting mandate (before Moses; Romans 13:4); a description or proverb; a principle; God's protection of Cain; no side | 1-7 | Christian views | Search: Church Life Journal (Notre Dame) "The Death Penalty and the Consequences of the Literal Meaning of Genesis 9:6"; ERLC; Christianity Today (Colson as quoted). No church or writer named on the page; the Catholic Catechism's 2018 wording was not retrieved and is not used |
+| Covenant with no duties on Noah's side; to the animals; qeshet the ordinary word for a bow (9:13-16, 27:3); the war-bow picture as a reading the text does not state | 8-17 | Hebrew text; repository deep note | Script (H7198); repository |
+| Isaiah 54:9-10; Hosea 2:18; Ezekiel 1:28; Revelation 4:3; Luke 13:4-5 (BSB) | 8-17 | BSB | Repository |
+| Disaster care: the Honest Answer's point on Luke 13 and Find Help | 8-17 | Honest Answer "Why does God allow earthquakes, cancer, and animal suffering?" | Repository |
+| Echo of the garden; honor of a father; ervah in 9:22-23 | 18-23 | Repository deep note (`literary`, `cultural`); Hebrew text | Repository; script (H6172) |
+| What Ham did: the plain reading; a worse act (Talmud, Sanhedrin 70a; Encyclopaedia Judaica on Leviticus 20:17; some modern scholars); Canaan involved (rabbis cited by Rashi) | 18-23 | Interpretation history | Search: Wikipedia "Curse of Ham"; Encyclopedia.com "Ham"; aish.com; vridar.org. Stated without lurid detail; no source named on the page |
+| Proverbs 20:1; Ephesians 5:18; Proverbs 10:12; 1 Peter 4:8 | 18-23 | BSB | Repository |
+| Curse from Noah, not God; Canaan cursed, not Ham; three readings of why | 24-29 | BSB; repository deep note (`hard`) | Repository; stated as readings |
+| Semitic from Shem; Gibeonites as servants (Joshua 9:23) | 24-29 | Repository deep note (`historical`); BSB | Repository |
+| "The curse of Ham" paragraph copied word for word from the book page (from "Yet for centuries" to "about race") | 24-29 | Book page; Goldenberg row | Repository (checked by script: the paragraph appears verbatim) |
+| Ezekiel 18:20; Matthew 1:5; Matthew 15:22-28; Acts 17:26; Galatians 3:28; Revelation 7:9 | 24-29 | BSB | Repository |
+
+## The plain notes on Genesis 10 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/10.json`. Two web searches for this
+chapter, with the repository lexicon.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Madai the Medes; Javan the Ionians or Greeks; Gomer the Gimirrai (Cimmerians); Tubal and Meshech northern peoples | 1-5 | Identifications | Search: Bible Odyssey and biblicaltraining.org "Table of Nations"; Josephus as quoted; JBL 1925 (biblicalstudies.gospelstudies.org.uk). "Usually linked" for Gomer; some names "cannot now be placed" |
+| Kittim Cyprus; Tarshish a distant Mediterranean port (Jonah 1:3) | 1-5 | Lexicon; BSB | Repository lexicon (H3794, H8659) |
+| Isaiah 66:19 (only the dash-free words quoted); Ezekiel 38:2; Revelation 20:8 (cited, not quoted) | 1-5 | BSB | Repository |
+| Mizraim Egypt; Cush south along the Nile (Ethiopia); Put probably Libya; Caphtor (Crete) and Amos 9:7; Asshur Assyria; Aram Syria; Elam east of Babylon | 6-20, 21-32 | Lexicon; BSB | Repository lexicon (H4714, H3568, H6316, H3732, H0804, H0758, H5867) |
+| Gibbor in 6:4 and 10:8; Nimrod's cities (Uruk for Erech); no historical Nimrod confirmed | 6-20 | Repository deep note (`historical`, `words`) | Repository |
+| Canaanite language close to Hebrew yet under Ham; Elamite unrelated yet under Shem; the list not a racial table | 6-20 | Repository deep note (`cultural`) | Repository |
+| Isaiah 19:25; Psalm 87:4; Micah 5:6; Acts 2:10-11 | 6-20 | BSB | Repository |
+| Peleg and palag (10:25); mishpachah in 10:5, 10:20, 10:31 and 12:3 | 21-32 | Hebrew text | Script (H6389, H6385, H4940) |
+| Eber and ‘Hebrew’ | 21-32 | Not checked | Stated as "may ... not certain" |
+| Seventy names in the Hebrew, seventy-two in the Greek; Luke 10:1 seventy or seventy-two in the manuscripts (BSB seventy-two); the link to the nations argued, not proved | 21-32 | Text and interpretation | Search: Bible Hub "Were there 70 or 72 disciples?"; Faithlife Study Bible sidebar; ESV Study Bible note as quoted; biblicaltraining.org "Seventy Disciples" |
+| Genesis 46:27 (seventy); Acts 17:26; Matthew 28:19; Revelation 7:9 | 21-32 | BSB | Repository |
+
+## The plain notes on Genesis 11 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/11.json`. Three web searches for
+this chapter, with the book page's rows (Babel and Babylon one word; exile
+dates; Ur) and the Luke 1 note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Shinar the land of Babylon (Daniel 1:2); fired brick and bitumen for great buildings in Mesopotamia, stone in Canaan | 1-4 | Repository deep note (`historical`, `cultural`); BSB | Repository |
+| Etemenanki, Babylon's ziggurat, ‘house of the foundation of heaven and earth’; many scholars link the Babel story with the ziggurats, Etemenanki in particular | 1-4 | Archaeology | Search: Wikipedia "Etemenanki" and "Ziggurat"; National Geographic; French Ministry of Culture "Orient cunéiforme" |
+| Enuma Elish tablet VI: the gods mould bricks and build Esagila and Babylon for Marduk | 1-4 | Enuma Elish | Search: Budge, The Babylonian Legends of the Creation (1921) at sacred-texts.com; King (1902). Paraphrased; "for a year" not used |
+| Kings ‘made a name’ by building inscriptions | 1-4 | Repository deep note (`cultural`) | Repository; stated generally |
+| 9:1 "fill the earth"; Revelation 18:2; Psalm 127:1; Genesis 12:2 | 1-4 | BSB | Repository |
+| Babel heard in Akkadian as Bab-ili ‘gate of the god’ (a popular etymology of an older name); balal in 11:7 and 11:9 | 5-9 | Akkadian; Hebrew text | Search: NET note (Biblia) on 11:9; Sarna as quoted; Blue Letter Bible H894. Script (H1101). The page says "was understood as" |
+| Babylon took Jerusalem in 586 BC | 5-9 | Earlier ledger (wot-ledger.md) | Earlier ledger |
+| Readings of the sin (pride; refusing to scatter; reaching heaven; one power); judgment and mercy; the origin of languages read two ways, no side | 5-9 | Repository deep note (`hard`) | Repository; stated as readings |
+| Acts 2:5-6 as Babel reversed (a reading, said so); Zephaniah 3:9; Luke 1:51; James 4:6 | 5-9 | BSB; repository deep note | Repository |
+| Ten generations each (Adam to Noah; Shem to Abram), each ending with three sons; Shem ‘name’; ages 600, 239, 148 | 10-26 | BSB; Hebrew text | Repository (counted and added) |
+| Greek translation adds years and Cainan (11:12-13); Luke 3:36 follows it | 10-26 | Repository introduction (`text`); BSB | Repository |
+| Luke 3:34-36; Galatians 3:8 | 10-26 | BSB | Repository |
+| Ur: Woolley 1922 to 1934 for the British Museum and the Penn Museum; Nanna (Sin); moon god at Haran; Chaldeans settled by about 850 BC; the later-wording argument and its reply | 27-32 | Book page row (search) | Earlier search. **Cut:** a northern Ur (not checked) |
+| Joshua 24:2; Acts 7:2-4; Genesis 15:7; Hebrews 11:8, 11:10 | 27-32 | BSB | Repository |
+| Aqar ‘barren’ in 11:30, 25:21, 29:31; 1 Samuel 1:2; Luke 1:7 | 27-32 | Hebrew text; BSB | Script (H6135); repository |
+| Care line: "Many faithful people long for children and never have them, or lose them before birth." and "Childlessness is not a judgment from God, and it does not measure your faith. Your longing is seen. If the grief is heavy, please share it with someone you trust: a friend, a pastor, a counsellor." copied word for word from the Luke 1:5-17 note | 27-32 | Site | Repository (grep) |
