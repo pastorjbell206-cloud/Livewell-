@@ -229,3 +229,30 @@ the Pseudo-Clementine names Justa and Bernice, Theissen by name, Pliny on
 saliva, the lectionary, and Drouais's painting (all in the deep note, not
 checked on this run). The cleansing of hands "with a fist" (7:3) is not
 discussed.
+
+## The plain notes on Mark 8 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The second feeding's baskets are spyris, the word of Acts 9:25; the first feeding's are kophinos | 8:1-10 | Greek text; Hastings' Dictionary of the Bible "Basket"; Strong's 4711 and 2894 | Search: biblehub.com 4711, 2894; studylight.org Hastings. "Large enough to hold a man" rests on Acts 9:25. Juvenal (deep note) not used |
+| Dalmanutha named in no other ancient source and unlocated; Matthew has Magadan, also unknown; later copies change to Magdala | 8:1-10 | Bible dictionaries; textual commentaries | Search: studylight.org Hastings "Dalmanutha"; biblegateway.com Encyclopedia of the Bible "Magadan"; en.wikipedia.org Matthew 15 |
+| Manna forty years; Elisha's loaves | 8:1-10 | Exodus 16:35; 2 Kings 4:43 | BSB text |
+| Leaven removed at Passover; a little leaven; Luke's gloss; Herod Antipas killed John | 8:11-21 | Exodus 12:15; 1 Corinthians 5:6; Luke 12:1; Mark 6:14-29 | BSB text; earlier ledger (Antipas) |
+| Eyes that do not see | 8:11-21 | Jeremiah 5:21; Ezekiel 12:2 | BSB text |
+| Philip raised Bethsaida to a city and named it Julias; site disputed between et-Tell and el-Araj | 8:22-26 | Josephus, Antiquities 18.28; Arav; Notley and Aviam | Search: biblicalarchaeology.org "The Great Bethsaida Debate"; BAR Spring 2020; bibleinterp.arizona.edu. Sites not named on the page |
+| Caesarea Philippi: Pan's cave (Paneas), at the foot of Hermon by a spring of the Jordan; Herod's temple to Augustus; Philip founded the city and named it Caesarea, "Philippi" to tell it from the coastal Caesarea | 8:27-30 | Josephus, Jewish War 1.404-405; Antiquities 18.28 | Search: en.wikipedia.org Banias; jewishvirtuallibrary.org Caesarea Philippi; biblewalks.com; biblicalarchaeology.org "Excavating Banias". The deep note's distance (forty kilometres) was not checked and is left out; the temple's exact site is not discussed |
+| Psalms of Solomon 17 (first century BC; Atkinson dates it 37 to 30 BC): a son of David to clear Jerusalem of the nations and rule | 8:27-30 | Psalms of Solomon 17 | Search: paleojudaica.blogspot.com; readingacts.com; israelbiblecenter.com. Qumran texts (deep note) not used |
+| Christ = Messiah = anointed; David's son | 8:27-30 | 2 Samuel 7:12-16 | BSB text; ordinary lexicon fact |
+| Elders, chief priests and scribes together in Jerusalem's council | 8:31-33 | Mark 14:53; 15:1 | BSB text |
+| "Get behind me" (hupage opisō mou) shares opisō mou with "Come, follow me" (1:17) and 8:34 | 8:31-33 | Greek text | Repository Greek text |
+| Crucified Messiah a stumbling block; Isaiah 53; Psalm 118:22 quoted at 12:10; Daniel 7 | 8:31-33 | 1 Corinthians 1:23; Isaiah 53:3, 5; Psalm 118:22; Daniel 7:13-14 | BSB text. The deep note's "no Jewish text before Jesus" claim was not checked and is not used |
+| Some scholars since about 1900 read the predictions as shaped after Easter | 8:31-33 | Wrede (1901) | Earlier ledger |
+| Varus crucified about two thousand after Herod's death (4 BC) | 8:34-38 | Josephus, Antiquities 17.295; Jewish War 2.75 | Search: lexundria.com 17.295 and War 2.75 (Whiston). 4 BC from the earlier ledger |
+| Plutarch: every criminal who is punished carries his own cross | 8:34-38 | Plutarch, On the Delays of the Divine Vengeance 9 | Search: cts.perseids.org (Goodwin translation). Paraphrased, no Moralia page number given (not confirmed) |
+| Yehohanan: 1968, Giv'at ha-Mivtar, Jerusalem; heel bone with an iron nail, in an ossuary | 8:34-38 | Haas (1970); Zias and Sekeles (1985) | Search: en.wikipedia.org Jehohanan; cojs.org; library.biblicalarchaeology.org |
+| Psychē means life and soul; Psalm 49:8; Hosea 2; Jeremiah 3; Galatians 2:20 | 8:34-38 | Greek text; BSB text | Repository; BSB text |
+
+Left out: Theudas and the Egyptian prophet, the Qumran messiahs, the Targum and
+Talmud on the Messiah, Origen and Augustine on the rock, Ignatius and Xavier,
+Luther's Heidelberg theses, Bonhoeffer, the lectionary and the hymn (all in the
+deep note, not checked on this run).
