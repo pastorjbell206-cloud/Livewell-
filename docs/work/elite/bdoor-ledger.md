@@ -5906,3 +5906,37 @@ One web search.
 
 Contested: whether David meant resurrection (three views, none chosen; all
 agree the apostles read it of an event).
+
+## The plain notes on Psalm 17 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Righteous plea" a legal term; cases at the town gate before elders | Repository deep note (cultural) | Site's own teaching |
+| Apple of the eye: the pupil, "little man of the eye"; Song of Moses (Deuteronomy 32:10-11) | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Ruth 2:12; Matthew 23:37; 1 John 3:2 | BSB | BSB text |
+
+Innocence: one sentence pointing to the book page.
+
+## The plain notes on Psalm 18 (2026-11-19)
+
+No web search. The Ugarit comparison in the deep note is not used here (kept
+for Psalm 29, where it was searched).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Same song as 2 Samuel 22, same heading; a royal thanksgiving | 1-19 | Repository deep note (historical, literary); BSB 2 Samuel 22:1 | BSB text |
+| Wilderness cliffs and strongholds; horn as strength | 1-19 | Repository deep note (cultural) | Site's own teaching |
+| Theophany like Sinai (Exodus 19:16) | 1-19 | Repository deep note (cultural); BSB | BSB text |
+| Frame of verses 20 and 24 around 25-26 | 20-30 | Repository deep note (literary) | Site's own teaching |
+| David spares Saul twice (1 Samuel 24 and 26) | 20-30 | BSB | BSB text |
+| "Shrewd" from a word for twisting (patal) | 20-30 | Standard lexicon | Stated plainly; no more claimed |
+| Lamp: clay dish with a wick; David's lamp (1 Kings 11:36) | 20-30 | BSB; common knowledge | BSB text |
+| "Blameless" as whole-hearted, loyal | 20-30 | Book page ("When a psalmist says he is innocent") | Site's own teaching |
+| A bow of bronze need not be literal | 31-50 | Repository deep note (cultural) | Site's own teaching |
+| Luke 1:69; Matthew 14:31; Colossians 1:13; John 8:12; Hebrews 4:15; 2 Samuel 7:16; 2 Samuel 11; Luke 1:32; Romans 15:9; 2 Corinthians 10:4; Matthew 5:44 | all | BSB | BSB text |
+
+No modern nation or army; the war lines read as history, under the praise of
+verse 49 and 2 Corinthians 10:4. Cut: "Israel was not a sea-going people" (not
+checked).
