@@ -3447,3 +3447,32 @@ Ramban and the synagogue's yearly cycle of readings (not confirmed this run);
 Schmid's year; Lambert's date for Enuma Elish; the Sumerian King List; Eden
 as sanctuary (kept for chapter 2, searched there); every scholar in the
 repository's fuller introduction not checked this run.
+
+## The plain notes on Genesis 1 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/1.json`. One search for this
+chapter, with the book page's rows above and the site's guide and Honest
+Answer on Genesis 1. Correction to the book page's count above: 16 of the 20
+searches run in that pass were for the book page; one was for this chapter,
+one for Genesis 2 and two for Genesis 3.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Babylon's creation story: Marduk, Tiamat, the world from her body; humans as the gods' labourers; sun and moon left unnamed because their Hebrew names were also names of gods; tanninim as monsters elsewhere | 1-2, 14-25, 26-28 | Site guide genesis-one-in-its-world; Honest Answer on Genesis 1 | Repository |
+| Bara: only God its subject; 53 times in the Old Testament; again at 1:21 and three times at 1:27 | 1-2, 14-25 | Repository deep note; script count | Repository |
+| 1:1 as a sentence or as ‘When God began to create’ (Rashi and Ibn Ezra; JPS 1985; NRSV); both possible | 1-2 | Repository deep note (`text`) | Repository; stated without names |
+| Six Christian readings of the days; no side | 1-2, 3-13 | Honest Answer on Genesis 1 | Repository; the answer's wording followed, not quoted |
+| Origen (third century) asked about days before the sun | 3-13 | Honest Answer (On First Principles 4) | Repository |
+| Raqia: solid dome or the sky as it appears; debated | 3-13 | Honest Answer (Seely 1991; Poythress) | Repository; no names on the page |
+| Naming as authority in the ancient world | 3-13 | Repository deep note (Genesis 2, 2 Kings 23:34, 24:17) | Repository; stated generally |
+| Tell Fekheriye statue: found 1979; Akkadian and Aramaic; about 850 BC (an earlier date proposed); Aramaic words for image and likeness | 26-28 | Inscription | Search: Wikipedia "Tell Fekherya bilingual inscription"; CDLI wiki; Cambridge (Iraq). Given as "from the 800s BC" |
+| Kings as images of gods; statues of rulers in conquered lands | 26-28 | Site guide genesis-one-in-its-world | Repository |
+| ‘Us’: heavenly court, plural of majesty, a hint of the Trinity seen later | 26-28 | Repository deep note (`doctrines`) | Repository; stated as readings |
+| Meat permitted only after the flood (9:3); Leviticus 25:43 | 26-31 | BSB | Repository |
+| Temples fed the gods daily | 29-31 | Site guide the-gods-of-the-nations | Repository |
+| Psalm 33:6; Jeremiah 4:23; Isaiah 45:18; John 1:1-3; Hebrews 11:3; 2 Corinthians 4:6; Revelation 21:1, 22:5; Psalm 104:24; Deuteronomy 4:19; Psalm 136:7-9; Psalm 74:13; Isaiah 27:1; Matthew 6:26; Genesis 5:1-2, 9:6; James 3:9; Psalm 8:6; Colossians 1:15, 3:10; Galatians 3:28; Romans 8:20-21 | all | BSB | Repository |
+| The chapter break added much later | 29-31 | Repository deep note (`text`) | Repository; no date or name given |
+
+Left out: Lambert's date for Enuma Elish; Cassuto's counts of sevens; the
+Memphite Theology and Merikare; the Ugaritic seven-day palace; Tutankhamun's
+name; every scholar named in the deep note not checked this run.
