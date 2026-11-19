@@ -873,9 +873,84 @@ export const ANSWERS: Answer[] = [
     slug: "can-you-be-good-without-god",
     question: "Can you be good without God?",
     paragraphs: [
-      "You can be good without God, and pretending otherwise is the lie that discredits every true thing standing near it. Atheists are not, as a class, worse neighbors or parents or citizens than the people filling pews, and any pastor who has done funerals for long knows it. The claim was never that unbelievers cannot behave well. The real question is quieter: what makes the word good point at anything real when an atheist says it.",
-      "The skeptic has an old reply, and a good one. Plato set it down twenty-four centuries ago in the Euthyphro: is a thing good because God commands it, or does God command it because it is good. If the first, goodness is arbitrary; if the second, it stands above God and you have found it without him. Both doors open onto a cliff. But the dilemma hides a third. Goodness is neither above God nor invented by God. It is what God is. The tradition from Aquinas to Robert Adams locates the good not in a command that could have gone either way but in God's own unchanging character, of which his commands are the expression. That makes it objective, since it answers to no one's opinion, and it isn't arbitrary, since it hangs on no will that might have chosen otherwise. When you call the torture of a child wrong, you mean a fact about the act, not weather in your skull.",
-      "I could not keep my footing there. I said morality was evolved and useful and felt, and then I lived every waking hour as if some things were just wrong, wrong the way stone is hard. Paul writes that the Gentiles who never had the law still \"show that the work of the law is written on their hearts, while their conscience also bears witness\" (Romans 2:15, ESV). You already live as if the answer were yes, as if some things are simply, permanently wrong. I did too, on a floor I swore was not under me. The floor held anyway. It is worth asking who laid it.",
+      "You can be good without God, and pretending otherwise is the lie that discredits every true thing standing near it. Atheists are not, as a class, worse neighbors or parents or citizens than the people filling pews. The claim was never that unbelievers can't behave well. The real question is quieter: what makes the word good point at anything real when anyone says it, believer or not. My answer is that moral facts which really bind us fit a world made by a good God better than a world without one. That isn't a proof, and it says nothing against the goodness of the atheist next door. It's a question about what his goodness is answering to.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Start with what is plainly true. Most of us know people who believe nothing about God and are kinder, more truthful and more generous than plenty of people in church on Sunday. I came to faith from atheism, so I'm not describing strangers. Christians have often been unfair here. In a study published in 2017, a team led by the psychologist Will Gervais described to more than three thousand people in thirteen countries a man who had tortured animals as a boy and later killed five homeless people. Participants were about twice as likely to connect him with atheism as with religious belief. Even atheists did it. Paul would not have shared that suspicion. He wrote that Gentiles who never had the law of Moses still \"show that the work of the law is written on their hearts, while their conscience also bears witness\" (Romans 2:15).",
+          "The unbeliever also has more than one good account of where morality comes from. The first is evolutionary. Charles Darwin set it out in The Descent of Man (1871): \"any animal whatever, endowed with well-marked social instincts, would inevitably acquire a moral sense or conscience, as soon as its intellectual powers had become as well developed, or nearly as well developed, as in man.\" Creatures who protected their young, punished cheats and kept faith with each other tended to survive, and over a very long time that pressure gave us outrage at cruelty and guilt at betrayal. On this view morality is real the way language is real, a deep part of human life that needs no explanation beyond biology and history.",
+          "The second account is stronger, and it doesn't rest on biology at all. Many philosophers who don't believe in God hold that moral truths are simply true, the way the truths of mathematics are. The philosopher Erik Wielenberg, an atheist, has defended this at length in Value and Virtue in a Godless Universe (2005) and Robust Ethics (2014). The most basic ethical facts, he argues, hold necessarily and need nothing beneath them. \"On my view,\" he writes, \"objective morality does not require an external foundation of any kind.\" Every explanation has to stop somewhere. The theist stops at God; Wielenberg stops at the moral facts. In the 2020 PhilPapers survey of professional philosophers, about 62 percent said they accept or lean toward moral realism, the view that there are objective moral facts.",
+          "The third is the oldest objection there is. In Plato's Euthyphro, set in 399 BC as Socrates waits to answer the charge that will end in his death, he asks \"whether the pious or holy is beloved by the gods because it is holy, or holy because it is beloved of the gods.\" Put in terms of one God: is a thing good because God commands it, or does God command it because it is good? If the first, then had God commanded cruelty, cruelty would be good, and calling God good means only that he does what he likes. If the second, goodness is a standard above God, and you can have it without him.",
+          "I grant the first point completely, and I grant that each of the other two is held by serious people for serious reasons. If the Christian claim were that you need to believe in God to know that cruelty is wrong, the skeptic would win, and Romans 2 would be on his side.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "There are three questions here, and the argument goes wrong whenever they're mixed up. Can an unbeliever behave well? Yes. Can an unbeliever know right from wrong? Yes, and Paul says so. The third is the one that's actually open: what makes a moral claim true, and what makes it bind us? The argument below is only about the third.",
+          "It's an argument to the best explanation, the kind a detective or a historian makes. It doesn't claim to prove God from premises no one can deny. It asks which picture of the world makes the best sense of something nearly all of us already believe.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An argument to the best explanation (the moral argument, in my words)",
+            premises: [
+              "Some moral claims are objectively true. It is wrong to torment a child for fun, and it would still be wrong if everyone voted otherwise.",
+              "Such truths do more than describe. They bind: they give every person a reason not to do the thing, whether he wants to or not.",
+              "We are able to know at least some of them.",
+              "If there is a God who is goodness itself and who made human beings to know him, all three are what we would expect.",
+              "The main accounts without God each leave at least one of them unexplained.",
+            ],
+            conclusion: "Objective morality is evidence for God. It doesn't prove him, but it makes his existence more likely than it would otherwise be.",
+          },
+          "Most people, believers or not, accept the first three premises in the way they live and argue. Anyone who presses the problem of evil is using them, since the argument from suffering needs real evil to work. The one consistent way out is to deny the first premise, and J. L. Mackie, the Oxford philosopher and atheist, took it. His Ethics: Inventing Right and Wrong (1977) argued that objective values, if they existed, would be strange things unlike anything else in the universe, facts with a demand built into them. He called it the argument from queerness, and concluded there are none. In The Miracle of Theism, published in 1982 after his death, he allowed that if there were objective moral values of that kind, they would be very unlikely to have arisen in the ordinary course of events without a god to create them. He kept his atheism by giving up the values.",
+          "So the weight sits on the fifth premise. That's where a fair reader should push, and it's where the secular accounts make their case.",
+        ],
+      },
+      {
+        heading: "What evolution can and can't explain",
+        body: [
+          "Christians differ over how much of the evolutionary history to accept, and nothing here depends on settling it. Grant the whole account, and it explains why we feel what we feel. What it can't do by itself is tell us whether the feeling is right.",
+          "Darwin saw this. In the same chapter he imagined people \"reared under precisely the same conditions as hive-bees,\" and said that then \"our unmarried females would, like the worker-bees, think it a sacred duty to kill their brothers, and mothers would strive to kill their fertile daughters; and no one would think of interfering.\" If our sense of right is only the shape that survival pressed into us, then a different history would have given us a different sense, and neither would be truer than the other. The philosopher Sharon Street pressed the same point in 2006, from the other side. Natural selection rewards what helps an animal survive and reproduce, and it has no reason to track moral facts that exist independently of us. If such facts exist, it would be a remarkable coincidence for our judgments to match them. Street concluded that we should stop thinking of values as existing independently of us at all.",
+          "Taken alone, the evolutionary account leaves the second premise unexplained. It tells us why we feel bound. It can't tell us that we are.",
+        ],
+      },
+      {
+        heading: "Moral facts without God",
+        body: [
+          "That's why Wielenberg doesn't rest his case on evolution. His view takes the first three premises as seriously as any Christian does, and he has an answer to Street: the same features of our minds that make moral facts hold of us also lead us to believe them, so the match is no accident. His strongest point is parity. The theist says God is the stopping place and needs no explanation. Why may the atheist not say the same of the basic moral facts?",
+          "It's a fair question, and here is my answer. Every account stops somewhere; what matters is where. A brute moral fact is an abstract thing. It can't command you, and it can't forgive you. Yet obligation doesn't feel like noticing an abstract truth. It feels like being answerable, which is why guilt is so much like owing someone. Mackie's oddness is still there on Wielenberg's view. He has simply accepted it as a feature of the world. On the Christian view, the demand built into a moral fact comes from a person, the one to whom we are answerable, and the knowing comes from the same source: the God who is good made creatures able to know the good. That is not a knockdown reply. Reasonable people hold Wielenberg's view. I think it leaves the binding and the knowing as two separate pieces of luck, where theism explains both with one cause.",
+        ],
+      },
+      {
+        heading: "The Euthyphro dilemma, answered",
+        body: [
+          "The classical Christian answer takes neither of Socrates' options. Thomas Aquinas taught that \"God alone is good essentially,\" and that everything else is good by sharing in his goodness. Goodness is not a rule God might have written differently, and it isn't a law above him that he obeys. It is what God is. The philosopher Robert Merrihew Adams worked this out in Finite and Infinite Goods (1999). On his account the supreme good is God himself, and other things are excellent in the measure they resemble him. Moral obligation is then the command of a God who is loving, and on Adams's account it is that love which keeps such a God from commanding wanton cruelty. Scripture puts it in the language of a gift: \"Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change\" (James 1:17).",
+          "The skeptic can press back: haven't you just moved the question? Why should God's character be the measure? But that is the parity question again, and the answer is the same. Something has to be the measure. The only question is whether it is an impersonal fact or a person who is good. The dilemma also bites hardest in one place, and I won't hide it. The Old Testament records commands to kill that look like the very cruelty a good God would not command. That question has its own page, \"Did God command genocide in the Old Testament?\", and it doesn't get an easy answer there either.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. You can't even recognize God's commands as good without already using your own moral sense, so morality comes first and God adds nothing. Half of that is right. We do know right from wrong before we know where it comes from, and Paul says so. But knowing a thing and explaining it are different. People knew that fire burns long before anyone knew what fire is. The moral argument doesn't say you need God to see the moral facts. It says the moral facts you already see make the most sense if God is there.",
+          "Here is what the argument doesn't prove. It doesn't prove that God exists; it makes him more likely, and the other lines of evidence have their own pages. It doesn't show which God, though a God who is goodness itself narrows the field. It doesn't show that believers behave better than unbelievers. Friedrich Nietzsche, who had no love for Christianity, said of George Eliot and the English moralists like her, \"They are rid of the Christian God and now believe all the more firmly that they must cling to Christian morality.\" His verdict was that \"When one gives up the Christian faith, one pulls the right to Christian morality out from under one's feet.\" He wasn't calling them bad people. He was saying they lived on an inheritance whose source they had given up. A Christian has to hear the other half too. Paul's passage about the law written on Gentile hearts is aimed at the religious: \"Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things\" (Romans 2:1). We have often had a sound account of goodness without the life to match it.",
+          "Mark tells of a man who ran up to Jesus and knelt and called him \"Good Teacher.\" Jesus answered, \"Why do you call me good? No one is good except God alone\" (Mark 10:18). The man had kept the commandments since he was young, and Jesus didn't dispute it. Mark adds, \"And Jesus, looking at him, loved him\" (Mark 10:21). If you don't believe, no one is asking you to stop being good. The question is what your goodness is answering to, and whether it was ever as impersonal as it seemed.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Plato", title: "Euthyphro", year: "4th century BC; tr. Benjamin Jowett", note: "The oldest form of the objection." },
+      { author: "Charles Darwin", title: "The Descent of Man, and Selection in Relation to Sex", year: "1871", note: "Chapter on the moral sense." },
+      { author: "J. L. Mackie", title: "Ethics: Inventing Right and Wrong", year: "1977" },
+      { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982" },
+      { author: "Robert Merrihew Adams", title: "Finite and Infinite Goods", year: "1999", note: "The good as God, and obligation as the command of a loving God." },
+      { author: "Sharon Street", title: "A Darwinian Dilemma for Realist Theories of Value", in: "Philosophical Studies", year: "2006" },
+      { author: "Erik J. Wielenberg", title: "Robust Ethics: The Metaphysics and Epistemology of Godless Normative Realism", year: "2014", note: "The best book against: moral facts without God." },
+      { author: "Friedrich Nietzsche", title: "Twilight of the Idols", year: "1889" },
     ],
     essaySlug: "can-you-be-good-without-god",
     essayTitle: "Can You Be Good Without God?",
