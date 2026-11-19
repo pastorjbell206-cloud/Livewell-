@@ -1583,3 +1583,39 @@ David's tomb, the Lives of the Prophets and Jeremias; the Targum of
 Lamentations 2:20 and b. Gittin 57b; Origen and the Protevangelium of James on
 Zechariah the father of John; Montefiore, Chrysostom, Luther, Jules Isaac,
 L. T. Johnson, Garland by name; the Aramaic gnat-camel wordplay; m. Sotah 3:4.
+
+## The plain notes on Matthew 24 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/24.json`. Four searches for this
+chapter, with the earlier ledger (Mark 13, whose wording is reused where the
+passages match) and the Jewish life portrait (bread and the hand mill).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Herod's rebuilding from about 20 or 19 BC; Josephus's snow-covered mountain; AD 70 and Titus | 1-3 | Earlier ledger (Mark 13) | Earlier ledger |
+| Parousia: presence, arrival, used of the official visit of a king or emperor; among the Gospels only in Matthew 24:3, 27, 37, 39 | 1-3 | Abbott-Smith lexicon in the repository (citing Deissmann, LAE); Deissmann, Light from the Ancient East | Repository (lex G3952 occurrences); search: en.wikipedia.org Second Coming and Parousia; bsw.org Biblica 80 (1999). Deissmann not named |
+| Micah 3:12; Jeremiah 7:4 | 1-3 | BSB | BSB text |
+| Three readings of the chapter; before or after 70 | 1-3 | Earlier ledger (Mark 13) | Stated as views |
+| Theudas (Antiquities 20.97-98; Acts 5:36) | 4-14 | Earlier ledger (Mark 13) | Earlier ledger |
+| 10:5-6; 28:19; Isaiah 26:17; Micah 7:6 | 4-14 | BSB | BSB text |
+| Antiochus IV and 1 Maccabees 1:54; Caligula, AD 40 and January 41; Eusebius on Pella (Church History 3.5.3) | 15-28 | Earlier ledger (Mark 13) | Earlier ledger |
+| Matthew names Daniel and "the holy place", adds the Sabbath; Exodus 16:29 | 15-28 | BSB comparison; BSB | BSB text. The claim about city gates on the Sabbath was cut (not checked) |
+| Lightning saying not in Mark; in Luke 17:24 | 15-28 | BSB comparison | BSB text |
+| aetos "eagles" or "vultures"; the Roman eagle standards reading; a proverb; Job 39:30 | 15-28 | Commentaries (Carter, JBL 2003, as cited) | Search: postmillennialworldview.com "Eagles or Vultures?"; jerusalemperspective.com "Carrion Birds"; biblehub.com topical. No scholar named |
+| Daniel 9:27, 11:31, 12:1, 12:11; Luke 21:20; 2 Thessalonians 2:3-4; three readings of the abomination | 15-28 | Earlier ledger (Mark 13); BSB | Mark 13 wording reused |
+| Isaiah 13:10; Daniel 7:13-14; Zechariah 12:10; Isaiah 27:13; Deuteronomy 30:4; Numbers 10:10 | 29-31 | BSB | BSB text |
+| The sign of the Son of Man: the Son of Man himself (many); the cross (Chrysostom, Homily 76 on Matthew) | 29-31 | Chrysostom; commentaries | Search: lectionarycentral.com Chrysostom; catenabible.com 24:30; biblehub.com. Paraphrased. Irenaeus's "light of the Father" not used; the "banner" reading cut (not checked) |
+| Readings of 24:29-31 (Mark 13 wording, verse numbers changed) | 29-31 | Mark 13 plain note | Repository |
+| Fig tree bare in winter; genea; 23:36; 21:19; Isaiah 40:8; C. S. Lewis, "the most embarrassing verse in the Bible"; three readings of "this generation" | 32-35 | Earlier ledger (Mark 13) | Earlier ledger; Mark 13 wording reused with Matthew's verse numbers |
+| Luke 17:26-37; 1 Thessalonians 5:2; Genesis 6:5; 7:23 | 36-44 | BSB | BSB text |
+| Two women grinding at a hand mill; bread at least half of the ordinary diet | 36-44 | Jewish life portrait (Weingarten, BAR 2019) | Repository |
+| Arius, Athanasius, Chalcedon 451; Luke 2:52; no date-setting (Mark 13 wording); Acts 1:7 | 36-44 | Earlier ledger (Mark 13); BSB | Earlier ledger; BSB text |
+| "Nor the Son" absent from later copies, present in the oldest and in Mark 13:32 | 36-44 | Repository chapter note (`text`) | Repository |
+| Rapture from the Latin (rapiemur, "we will be caught up") of 1 Thessalonians 4:17 (harpazō) | 36-44 | Vulgate; lexicons | Search: en.wikipedia.org Rapture; julianspriggs.co.uk; biblehub.com. Given as "the Latin for ‘caught up’" |
+| Taken as rapture or as judgment (by analogy with the flood; Luke 17:37) | 36-44 | Deep note; standard positions | Stated as views; Darby, Scofield, Lindsey, Left Behind, Walvoord not named; no scheme or millennium position |
+| Luke 12:42-46; Ezekiel 34:2; Isaiah 62:6; "cut him to pieces" read as punishment or as being cut off | 45-51 | BSB; deep note | BSB text; stated as views |
+
+Left out: Reimarus, Schweitzer, Russell, J. S. Russell, Sproul, Wright,
+France by name; Darby, Scofield, Lindsey, A Thief in the Night, Left Behind,
+Hart, Walvoord, Ladd; Irenaeus on the sign; the Didache; the "pestilences"
+variant; Deissmann's coin evidence; every date-setter by name.
