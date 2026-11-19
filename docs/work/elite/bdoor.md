@@ -1374,3 +1374,150 @@ distance between the two Jerichos (not given).
 ### Next
 
 Matthew 21 onward, in the same shape.
+
+## Continuation: Matthew 21 to 24 (2026-11-19)
+
+The entry, the temple, the fig tree, the two sons, the tenants, the wedding
+banquet, Caesar, the resurrection question, the greatest commandment, David's
+son, the seven woes and the lament over Jerusalem, and the sermon on the
+Mount of Olives, passage by passage, in plain words, in the same data shape
+(`client/public/bible/notes/matthew/plain/21.json` to `24.json`; each chapter
+note now says `"plain": true`). Data only; no page code changed, so no build,
+Lighthouse or screenshots were run.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 21 | 6 (the king on a donkey and a colt; the temple, the blind and the lame, the children; the fig tree withers at once; by what authority; two sons; the tenants and the stone) | 4,565 |
+| Matthew 22 | 6 (the guests refuse; the guest without wedding clothes and "many are called"; Caesar; whose wife; the greatest commandment; whose son is the Christ) | 3,953 |
+| Matthew 23 | 6 (Moses' seat and titles; the first woes and who the Pharisees were, with the empty verse 14; oaths; tithes, the cup and the tombs; the prophets' tombs and all the righteous blood; the hen and her chicks) | 4,371 |
+| Matthew 24 | 7 (not one stone; do not be alarmed; the abomination and false Christs; the Son of Man on the clouds; the fig tree and this generation; the day and hour, Noah, one taken; the faithful and wicked servant) | 4,610 |
+| Total | 25 | 17,499 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. Where
+Mark 11 to 13 tell the event, the notes point to them, reuse their verified
+claims and their care wording word for word (the fig tree caution, the
+temple readings, the tenants, Caesar, marriage at the resurrection, the
+Shema, Psalm 110, the abomination, the clouds, "this generation", the day
+and hour), and say what Matthew does differently: Zechariah quoted and two
+animals; the city "stirred"; the blind, the lame and the children in the
+temple; the tree withering at once; 21:43 and 21:45; the leaders passing
+sentence; "hypocrites" and "the coin used for the tax"; the testing lawyer
+and "hang"; the question put to the Pharisees; parousia; "in the holy place"
+and the Sabbath; the lightning; the sign, the mourning tribes and the
+trumpet; Noah, the field and the mill, the thief and the servants.
+
+### On Matthew and the Jewish people
+
+Consistent with the book page ("A Jewish book, and a hard history" and its
+23:13 line) and the Mark 11, 12 and 15 notes. 21:43: supersessionism named
+and rejected ("The passage does not say it, and this site rejects that use
+plainly"); the setting (21:23, 21:45, the crowds); three readings of the
+"people"; three views of Israel and the church with no side; Romans 11:1,
+11:18, 11:29; Nostra Aetate 4 quoted in single quotes as a translation. The
+fig tree carries the Mark 11 caution. 22:7 says the burned city is not a
+verdict on the Jewish people. Matthew 23: the chapter read as a Jew speaking
+to Jewish leaders of one generation in the voice of Isaiah, Amos, Ezekiel and
+Jeremiah; the Pharisees at their best from Josephus, Acts, John, Luke and
+Philippians (the portrait and the guide, read only); "Pharisee" not a word
+for hypocrite; later rabbinic self-criticism (Weinfeld, from the book page's
+ledger; b. Sotah 22b, marked as several centuries later); the woes on
+religious leaders of every age, Christian ones first (1 Peter 4:17, James
+3:1); "sons" as following a path, not inherited guilt (Deuteronomy 24:16,
+Ezekiel 18:20); the "Christ-killers" misuse named once and rejected in the
+Mark 15 sentences word for word; the lament as the key to the chapter.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and checked by
+eye: all 25 are under their right headings (what is happening; the first
+hearers; the Old Testament behind it; the hard verse; what it asks), and the
+validator's Old Testament field check passed with no exceptions.
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "The plain notes on Matthew 21" to
+"24". 18 web searches (5, 4, 5, 4). New sources: Nostra Aetate 4 on
+"rejected or accursed"; Justin, Dialogue with Trypho 53; Mishnah Sukkah 3:9
+and Shekalim 1:1; b. Shabbat 153a; b. Sotah 22b; 4 Ezra 8:3; Jerome on
+23:35 and the Nazarenes' Gospel; Josephus, Jewish War 4.343; the Hebrew
+order of the books and its debate; Chrysostom, Homily 76 on Matthew; the
+meaning of parousia; the Latin behind "rapture"; the eagles and the vultures;
+the debate over 22:7; the wedding garment custom (no clear evidence).
+Ancient, patristic and rabbinic writers are paraphrased.
+
+### Cut or narrowed
+
+A general claim about ancient two-step invitations (kept only as the story
+tells it); straining wine through cloth (now "straining a drink"); white lime
+on graves as a Mishnah claim (the white tomb is given as Jesus' picture);
+Jewish debates on vessels; city gates on the Sabbath; a "banner" reading of
+the sign; the Temple Scroll on the blind; the Targum of Lamentations and
+b. Gittin 57b; the Protevangelium and Origen on Zechariah; Instone-Brewer,
+Coppins, Saldarini, Olmstead, Soulen, Gundry, L. T. Johnson, Garland,
+Deissmann, Carter, Darby, Scofield, Walvoord and every date-setter by name;
+John Paul II's "never revoked"; the year of Josephus's Zechariah; most
+textual notes. One slip was caught before the push: a line saying
+"only Matthew has the lightning" now says Mark lacks it and Luke 17:24 has
+it. The deep notes are unchanged underneath.
+
+### Contested matters, and how they are stated
+
+The two animals: the critics' case, a Jewish way of reading, a real detail,
+Justin's reading; "these notes do not choose". The temple action and John 2:
+the Mark 11 wording. The fig tree as sign or event; verse 22 and unanswered
+prayer. The two sons' three manuscript forms. 21:43: as above. 22:7 and AD
+70: after the war, or stock language, or Isaiah 5; "These notes do not
+choose." The garment: no clear evidence for a host's gift; three readings of
+the clothes; two readings of "chosen". Caesar: the Mark 12 readings, plus
+"not a ruling on any party, tax law or government of today". Marriage at the
+resurrection: the Mark 12 readings. Psalm 110's author: three views. 23:2-3:
+three readings. "Call no one father": Catholic and Orthodox practice,
+1 Corinthians 4:15, Protestant practice, what most agree. Converts: debated.
+How much of Matthew 23 reflects Matthew's setting: scholars differ.
+Zechariah son of Berechiah: the merged-names view, the copyist view (Jerome),
+a second name, Josephus's Zechariah; "these notes do not choose". 23:39:
+hope, warning, both. Matthew 24: the three readings of the chapter, of the
+abomination and of the clouds; the three readings of "this generation"; the
+sign (the Son of Man; the cross); the eagles; "nor the Son" and the
+manuscripts; one taken as rapture or as judgment, "these notes do not choose,
+and they set out no end-times scheme"; no millennium position anywhere.
+
+### Care lines included
+
+21:18-22: the Mark 11 lines on unanswered prayer. 22:1-14: "This saying is
+not meant to make an anxious person despair... If you are worried whether God
+will have you, notice that the king's invitation went out to ‘as many as you
+can find’." 22:23-33: the Mark 12 lines for the grieving, and "if you have
+married again after a husband or wife died, this passage is not a judgment on
+you. Scripture says plainly that a widow is free to marry again (1 Corinthians
+7:39)." 23:1-12: "If your own father was absent, or hurt you, this verse is
+not asking you to pretend otherwise. It tells you that you have a Father in
+heaven who is not like that." 24:4-14: "If the news frightens you, or you
+were taught as a child to dread the end of the world, notice the first thing
+Jesus says after the wars: ‘see to it that you are not alarmed’." 24:36-44:
+the Mark 13 line against every date-setter, Acts 1:7, and "If end-times
+teaching has frightened you, or you were taught to fear being ‘left behind’,
+notice what Jesus actually asks. Not to work out a timetable. Not to live in
+dread." 24:45-51: the wicked servant's sin read as abuse of power over those
+in his care. No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` (partial, Matthew) after each chapter. Then all 36
+commands of the content-gates step in ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 40 chapters in
+plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732
+entries up to date; passage index 623 files match; verify-sources: 22 texts
+intact). `pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped;
+1,653 tests passed, 73 skipped. No build, so no dist/ and no lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient, patristic and rabbinic writer (all
+paraphrased); Instone-Brewer's conclusion on the two animals (not read, not
+used); Chrysostom's exact wording in Homily 76; the year Josephus's
+Zechariah was killed (not given).
+
+### Next
+
+Matthew 25 onward, in the same shape.

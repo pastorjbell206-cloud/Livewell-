@@ -1456,3 +1456,166 @@ parable; Bach, Ruskin, Gandhi, Rembrandt, Poussin; Origen, Gregory of
 Nazianzus, Anselm, Aulén by name; the lectionaries; Avot 5:13; every textual
 note in the deep note (20:16's "many be called, but few chosen" was checked
 and is absent from Sinaiticus and Vaticanus, but the note does not need it).
+
+## The plain notes on Matthew 21 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/21.json`. Five searches for this
+chapter, with the earlier ledger (Mark 11 and 12; Mark 15 for Nostra Aetate;
+Matthew's book page for the formula quotations).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Bethany, cloaks for a king, branches, Hosanna "Save us, please" | 1-11 | Earlier ledger (Mark 11) | Earlier ledger |
+| About ten formula quotations, 21:4 among them | 1-11 | Earlier ledger (Matthew's book page) | Earlier ledger |
+| Isaiah 62:11 and Zechariah 9:9-10 joined; "righteous and victorious" left out; 11:29; Psalm 118:26; 20:30 | 1-11 | BSB | BSB text |
+| Mishnah Sukkah 3:9 (written down around 200): the lulav shaken at Psalm 118:25 at Tabernacles | 1-11 | Mishnah | Search: mishnah.org; posenlibrary.com "The Mishnah on the Four Species"; steinsaltz.org Sukkah 37. Paraphrased; the schools of Hillel and Shammai not named |
+| The verb for "stirred" (seiō, G4579) also at 27:51 and 28:4 | 1-11 | Greek word lists in the repository's verse notes | Repository |
+| Two animals: the parallelism objection; a Jewish reading of each phrase; the colt with its mother (Mark 11:2); "on them" as the cloaks | 1-11 | Deep note; Instone-Brewer, Tyndale Bulletin 54.1 (2003), and Coppins, Tyndale Bulletin 63.2 (2012), on the question | Search: galaxie.com and tyndalebulletin.org listings. Neither scholar named on the site (Instone-Brewer's conclusion was not read); views unnamed |
+| Justin Martyr, Dialogue with Trypho 53: the harnessed donkey the Jewish people under the law, the unharnessed colt the Gentiles, both to believe | 1-11 | Justin | Search: logoslibrary.org Trypho 53; bkv.unifr.ch (ANF and BKV). Paraphrased; "mid-second century" given as "the second century" |
+| Money changers, the temple coin, doves (Leviticus 5:7) | 12-17 | Earlier ledger (Mark 11) | Earlier ledger |
+| Mark: looks around, returns next day; Matthew: same day, no "for all the nations" | 12-17 | BSB comparison | BSB text |
+| 2 Samuel 5:8 ("palace" in the BSB); Leviticus 21:18; Psalm 8:2; Isaiah 56:7; Jeremiah 7:11; Malachi 3:1 | 12-17 | BSB | BSB text. The Temple Scroll on the blind (deep note) not used |
+| Readings of the temple action; John 2 timing | 12-17 | Earlier ledger (Mark 11) | Earlier ledger, wording reused |
+| Fig leaves in spring; the disagreement about early figs; Hosea 9:10; Jeremiah 8:13; Micah 7:1; Jeremiah 19 | 18-22 | Earlier ledger (Mark 11) | Earlier ledger |
+| The old reading against the Jewish people rejected; the prayer promise and unanswered prayer | 18-22 | Mark 11 plain note | Wording reused; 6:10 and 26:39 in place of Mark's verses |
+| Matthew 3:8; 7:16-20; Luke 13:6-9 | 18-22 | BSB | BSB text |
+| By what authority (Mark 11 wording); Malachi 3:1; Isaiah 40:3; 3:3; 11:14 | 23-27 | Earlier ledger; BSB | BSB text |
+| Two sons only in Matthew; tax collectors baptized by John (Luke 3:12; 7:29-30); proagō "go ahead of" | 28-32 | BSB; Greek | BSB text; the Greek sense is standard lexicon meaning |
+| Three manuscript forms of the parable | 28-32 | Repository chapter note (`text`) | Repository. Manuscripts not named on the site |
+| Ezekiel 18:27; 33:32 | 28-32 | BSB | BSB text |
+| Tenancy and Isaiah 5 (Mark 12 wording); Isaiah 5:1-2, 4, 7; Psalm 118:22-23; Isaiah 8:15; Daniel 2:34, 44; 2 Samuel 12:7; Hebrews 13:12; Luke 20:18 | 33-46 | Earlier ledger; BSB | BSB text |
+| Matthew's order (thrown out, then killed); the leaders pass sentence; 21:43 and 21:45 only in Matthew | 33-46 | BSB comparison with Mark 12 | BSB text |
+| Verse 44 missing from some manuscripts; like Luke 20:18; most Bibles print it | 33-46 | Repository chapter note (`text`) | Repository |
+| Supersessionism or "replacement" theology: the view that the church has replaced Israel in God's purposes | 33-46 | Standard definition | Search: wikipedia "Supersession"; biblehub.com "What is replacement theology?". Soulen's three forms (deep note) not used |
+| Readings of the "people": the Twelve as new leaders (19:28); a renewed Israel; the church | 33-46 | Deep note (Saldarini 1994; Olmstead 2003) | Stated as views without names (not checked this run) |
+| Views of Israel and the church (one people grafted in, many expecting Romans 11:26; Israel and church distinct; the covenant still standing) | 33-46 | Standard positions | Stated as views, no names; John Paul II's "never revoked" (Mainz 1980) not used: not checked |
+| Nostra Aetate 4 (1965): "the Jews should not be presented as rejected or accursed by God, as if this followed from the Holy Scriptures" | 33-46 | Second Vatican Council | Search: christianunity.va Nostra Aetate 4; cbcew.org.uk PDF; newadvent.org. Quoted in single quotes as a translation; one translation reads "repudiated or cursed" |
+| Romans 11:1, 18, 26, 29 | 33-46 | BSB | BSB text |
+
+Left out: the year of the entry (30 or 33); Pilate and Caiaphas's dates;
+the Royal Stoa; m. Bekhorot 8:7; b. Pesachim 57a; Jesus son of Ananias; the
+Temple Scroll on the blind; the Zenon papyri and Hengel; the Targum, the
+Tosefta and 4Q500 on the tower; b. Berakhot 64a; b. Sanhedrin 98a; Egeria,
+the lectionaries, Bach, Giotto, Duccio, Cranach, Ecclesia and Synagoga;
+Chrysostom, Irenaeus, Telford, Sanders, Ruether, Soulen, Saldarini, Olmstead
+and Snodgrass by name; the Gospel of Thomas; the Psalm 8 Greek wording.
+
+## The plain notes on Matthew 22 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/22.json`. Four searches for this
+chapter, with the earlier ledger (Mark 12; Matthew 20 for "Friend").
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Luke's great dinner (Luke 14:15-24); 8:11; 21:31; 21:34-36 | 1-10 | BSB | BSB text |
+| The two-step invitation read from the story itself (invited, then called) | 1-10 | Matthew 22:3-4 | BSB text. A general claim about ancient invitation customs was cut (not checked) |
+| Isaiah 25:6; Hosea 2:19; Zephaniah 1:7; Isaiah 5:24 | 1-10 | BSB | BSB text |
+| 22:7 and AD 70: many read it after the war and count it toward a date after 70; others call it stock language for punishing a rebel city; some trace it to Isaiah 5:24-25 | 1-10 | Earlier ledger (Matthew's book page: 22:7 as evidence); commentary survey | Search: jimmyakin.com "Was Matthew Written AFTER A.D. 70?"; biblehub.com commentaries 22:7; catholic.com. No scholar named (Gundry, Brown, Rengstorf not named; Rengstorf not found) |
+| "Friend" only at 20:13, 22:12, 26:50 | 11-14 | Earlier ledger (Matthew 20) | Earlier ledger |
+| Wedding clothes read by many as clean clothes, one's best | 11-14 | Commentaries | Search: biblegateway.com IVP NT Commentary on 22:11-14; openbible.com commentaries 22:11. Stated as "many readers take" |
+| Host-supplied garments: no clear evidence; 2 Kings 10:22 weak | 11-14 | Commentaries | Same search (openbible.com: "not very convincing"; friarmusings.com). Stated as "should be held loosely" |
+| b. Shabbat 153a: Yohanan ben Zakkai's parable of the king's banquet with no time set; the dressed servants eat; Ecclesiastes 9:8 | 11-14 | Babylonian Talmud | Search: intertextual.bible (Matthew 22:2 and Shabbat 153a); virtualreligion.net/iho/parable.html; jerusalemperspective.com. Paraphrased, marked as several centuries after Jesus |
+| 8:12; 25:30; 7:21; Isaiah 61:10; Ecclesiastes 9:8; Galatians 3:27; Revelation 19:8 | 11-14 | BSB | BSB text |
+| Readings of the garment (righteousness given; a changed life; both) and of "chosen" | 11-14 | Deep note; standard positions | Stated as views, no names (Irenaeus, Augustine, Gregory, Calvin not named) |
+| 4 Ezra 8:3: many created, few saved; written near the end of the first century | 11-14 | 4 Ezra (2 Esdras) | Search: biblia.com RSV 2 Esdras 8; fortresspress.com introduction (Domitian, 81-96); israelbiblecenter.com. Paraphrased; dated "from the end of the first century" |
+| Pharisees, Herodians, AD 6 census, Judas the Galilean, Acts 5:37, the Tiberius denarius, three readings of "Give to Caesar" | 15-22 | Earlier ledger (Mark 12) | Earlier ledger; Mark 12 wording reused |
+| apodote "give back" as of a debt; Romans 13:7; Acts 5:29; Genesis 1:27 | 15-22 | Greek; BSB | Standard lexicon sense; BSB text |
+| Sadducees (Josephus, Antiquities 18.16; Acts 5:17; 23:8); 2 Maccabees 7 | 23-33 | Earlier ledger (Mark 12) | Earlier ledger |
+| Deuteronomy 25:5-6; Daniel 12:2; Exodus 3:6; Luke 20:36; 1 Corinthians 7:39 | 23-33 | BSB | BSB text |
+| Readings of marriage at the resurrection (Mark 12 wording); care for the remarried | 23-33 | Mark 12 plain note; pastoral | Repository text |
+| The Shema, Mishnah Berakhot 1:1, Hillel (b. Shabbat 31a), Akiva | 34-40 | Earlier ledger (Mark 12) | Earlier ledger |
+| Deuteronomy 6:4-5, 7; Leviticus 19:18; Matthew 7:12 | 34-40 | BSB | BSB text |
+| Psalm 110:1; 2 Samuel 7:13; 1:1; 9:27; 15:22; 21:9; Romans 1:3-4; views of Psalm 110's authorship | 41-46 | Earlier ledger (Mark 12); BSB | BSB text; Mark 12 wording reused |
+
+Left out: Amy-Jill Levine on this parable; Calvinist and Arminian names;
+Irenaeus, Augustine, Gregory and Calvin on the garment; Jehu's vestments as
+evidence; Ecclesiastes Rabbah; Brandon, Horsley, Justin, Tertullian, the
+Barmen Declaration, Luther's two kingdoms and Calvin's Institutes on taxes;
+the Greek Old Testament's "mind" in Deuteronomy 6:5; every textual note.
+
+## The plain notes on Matthew 23 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/23.json`. Five searches for this
+chapter, with the earlier ledger (Matthew's book page on the woes and
+Weinfeld; Mark 12 on the Pharisees; Mark 15 on Nostra Aetate; Mark 6 on the
+tassels), the Pharisees guide (`client/public/context/guides/pharisees-sadducees-essenes.json`)
+and the Jewish life portrait (`client/public/context/worlds/jewish-life-in-jesus-day.json`),
+both read only. The guide is in a first-person voice, so only its checked
+facts were used, never its sentences.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Moses' seat the place from which the law was taught; Jesus tells hearers to keep the teaching | 1-12 | Jewish life portrait (Matthew 23:2-3 note); book page | Repository |
+| Phylacteries: small leather boxes of Scripture on arm and forehead (Deuteronomy 6:8); tassels (Numbers 15:38-39); kraspedon at 9:20 and 23:5 | 1-12 | BSB; earlier ledger (Mark 6) | BSB text; earlier ledger. Qumran finds not mentioned |
+| "Rabbi" a respectful address, "my great one" | 1-12 | Deep note; standard lexicons | Standard meaning; its later use as a formal title not mentioned |
+| Readings of 23:2-3; 15:3-6 | 1-12 | Book page; standard positions | Stated as views |
+| "Father" for priests (Catholic, Orthodox); 1 Corinthians 4:15; many Protestants avoid such titles | 1-12 | BSB; common practice | BSB text; general |
+| Malachi 2:7-8; Deuteronomy 6:8; Numbers 15:39 | 1-12 | BSB | BSB text |
+| Verse 14 missing from the oldest manuscripts; matches Mark 12:40 and Luke 20:47; seven woes without it | 13-15 | Repository chapter note (`text`) | Repository |
+| Hypocrite first a Greek word for a stage actor | 13-15 | Standard lexicons (hupokritēs) | Standard meaning |
+| Pharisees: mostly lay people; most popular group with influence over ordinary people (Josephus, Antiquities 18.15); belief in resurrection; Luke 13:31; Nicodemus (John 3:1); Gamaliel (Acts 5:34); Paul (Philippians 3:5) | 13-15 | Jewish life portrait; Pharisees guide; earlier ledger (Mark 12, Antiquities 18.15-17); BSB | Repository; earlier ledger; BSB text |
+| "Pharisee" came to mean hypocrite only in later Christian speech | 13-15 | Jewish life portrait | Repository (paraphrased) |
+| Later Jewish teachers spoke in much the same way about teachers who do not practise what they preach | 13-15 | Weinfeld, Bible Review 13.5 (1997) | Earlier ledger (Matthew's book page). Weinfeld not named here |
+| b. Sotah 22b: seven kinds of Pharisee, six counted false; only the one who serves from love praised; King Yannai to his wife: fear not the Pharisees but the hypocrites who imitate them | 13-15 | Babylonian Talmud | Search: halakhah.com Sotah 22 (Soncino); magazine.israelbiblecenter.com "The Seven Types of Pharisees"; steinsaltz.org Sota 22. Paraphrased, marked as several centuries after Jesus; Yannai not named |
+| Whether Jews sought converts debated; the verse may mean winning to the Pharisees' way | 13-15 | Deep note; scholarship | Stated as debate, no names |
+| Isaiah's six woes (5:8, 11, 18, 20, 21, 22); Amos 6:1; Ezekiel 34:2; Jeremiah 23:1 | 13-15 | BSB | BSB text |
+| Harsh polemic between ancient schools a convention; how much reflects Matthew's quarrel after 70 debated | 13-15 | Deep note (L. T. Johnson, JBL 1989; Garland 1979) | Stated as what "some scholars note" and "scholars differ"; no names (not checked this run) |
+| 1 Peter 4:17; James 3:1 | 13-15 | BSB | BSB text |
+| Oaths: Matthew 5:34, 37; Deuteronomy 23:21; Exodus 20:7 | 16-22 | BSB | BSB text. m. Shevuot 4:13 and Philo not used |
+| Tithes of herbs read from the verse; Micah 6:8; Hosea 6:6 (9:13; 12:7); Leviticus 11:4, 41; Numbers 19:16; Ezekiel 13:10 | 23-28 | BSB | BSB text. m. Demai and m. Maaserot not used; the gnat-camel Aramaic wordplay not used; straining wine through cloth narrowed to "straining a drink" |
+| Mishnah Shekalim 1:1 (written down around 200): graves marked on 15 Adar | 23-28 | Mishnah | Search: jtsa.edu Shekalim 1:1; jewishvirtuallibrary.org Shekalim 1; mishnah.org. Lime and whitewash not claimed from the Mishnah; the white tomb given as Jesus' picture |
+| "Sons" as following the same path; 3:7 | 29-36 | BSB | BSB text |
+| Abel (Genesis 4:10); Zechariah son of Jehoiada stoned in the temple court (2 Chronicles 24:20-22); Zechariah son of Berechiah the prophet (Zechariah 1:1); Luke 11:51 | 29-36 | BSB | BSB text |
+| Chronicles last in the usual Hebrew order, so Abel to Zechariah is first to last; whether the order was fixed then is debated | 29-36 | Commentaries; McDonald and Gallagher on the debate | Search: blueletterbible.org (Stewart); biblestudytools.com CSB apologetics on 23:35; cambridge.org NTS "Blood from Abel to Zechariah". The debate stated; no names |
+| Jerome, Commentary on Matthew (around 398): the Gospel used by the Nazarenes read "son of Joiada" | 29-36 | Jerome on 23:35 | Search: turretinfan.blogspot.com (translation); openbible.com commentaries 23:35; biblestudytools.com Gill. Paraphrased; the year from the earlier ledger (Jerome 398) |
+| "Son of Berechiah" missing from the first hand of one major manuscript (Sinaiticus) | 29-36 | Repository chapter note (`text`) | Repository; manuscript not named on the site |
+| Josephus, Jewish War 4.343: Zacharias son of Baris (Baruch) killed by Zealots "in the middle of the temple"; most reject the identification | 29-36 | Josephus | Search: lexundria.com j_bj 4.343 and 4.335 (Whiston); josephus.org. No year given on the site ("during the war with Rome") |
+| Guilt not inherited: Deuteronomy 24:16; Ezekiel 18:20 | 29-36 | BSB | BSB text |
+| The "Christ-killers" paragraph and Nostra Aetate 4 ("cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today"); Acts 4:27 | 29-36 | Mark 15 plain note; earlier ledger (Mark 15) | Wording reused word for word |
+| "This generation" the people alive then; many link the judgment to AD 70 (24:2) | 29-36 | BSB; earlier ledger (Mark 13) | Stated as what many readers think |
+| Luke 19:41; Ruth 2:12; Psalm 91:4; Jeremiah 22:5; 12:7; 9:1; Psalm 118:26; Romans 9:2 | 37-39 | BSB | BSB text |
+| Readings of 23:39 (hope of welcome; warning of judgment; both) | 37-39 | Standard positions | Stated as views |
+
+Left out: the Mishnah on Shemaiah, Hillel and Shammai as "fathers"; m. Shevuot
+and Philo on oaths; m. Demai, m. Maaserot, m. Kelim, m. Berakhot 8:2,
+m. Maaser Sheni 5:1; Neusner (1976); the Kidron tombs, Herod's monument at
+David's tomb, the Lives of the Prophets and Jeremias; the Targum of
+Lamentations 2:20 and b. Gittin 57b; Origen and the Protevangelium of James on
+Zechariah the father of John; Montefiore, Chrysostom, Luther, Jules Isaac,
+L. T. Johnson, Garland by name; the Aramaic gnat-camel wordplay; m. Sotah 3:4.
+
+## The plain notes on Matthew 24 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/24.json`. Four searches for this
+chapter, with the earlier ledger (Mark 13, whose wording is reused where the
+passages match) and the Jewish life portrait (bread and the hand mill).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Herod's rebuilding from about 20 or 19 BC; Josephus's snow-covered mountain; AD 70 and Titus | 1-3 | Earlier ledger (Mark 13) | Earlier ledger |
+| Parousia: presence, arrival, used of the official visit of a king or emperor; among the Gospels only in Matthew 24:3, 27, 37, 39 | 1-3 | Abbott-Smith lexicon in the repository (citing Deissmann, LAE); Deissmann, Light from the Ancient East | Repository (lex G3952 occurrences); search: en.wikipedia.org Second Coming and Parousia; bsw.org Biblica 80 (1999). Deissmann not named |
+| Micah 3:12; Jeremiah 7:4 | 1-3 | BSB | BSB text |
+| Three readings of the chapter; before or after 70 | 1-3 | Earlier ledger (Mark 13) | Stated as views |
+| Theudas (Antiquities 20.97-98; Acts 5:36) | 4-14 | Earlier ledger (Mark 13) | Earlier ledger |
+| 10:5-6; 28:19; Isaiah 26:17; Micah 7:6 | 4-14 | BSB | BSB text |
+| Antiochus IV and 1 Maccabees 1:54; Caligula, AD 40 and January 41; Eusebius on Pella (Church History 3.5.3) | 15-28 | Earlier ledger (Mark 13) | Earlier ledger |
+| Matthew names Daniel and "the holy place", adds the Sabbath; Exodus 16:29 | 15-28 | BSB comparison; BSB | BSB text. The claim about city gates on the Sabbath was cut (not checked) |
+| Lightning saying not in Mark; in Luke 17:24 | 15-28 | BSB comparison | BSB text |
+| aetos "eagles" or "vultures"; the Roman eagle standards reading; a proverb; Job 39:30 | 15-28 | Commentaries (Carter, JBL 2003, as cited) | Search: postmillennialworldview.com "Eagles or Vultures?"; jerusalemperspective.com "Carrion Birds"; biblehub.com topical. No scholar named |
+| Daniel 9:27, 11:31, 12:1, 12:11; Luke 21:20; 2 Thessalonians 2:3-4; three readings of the abomination | 15-28 | Earlier ledger (Mark 13); BSB | Mark 13 wording reused |
+| Isaiah 13:10; Daniel 7:13-14; Zechariah 12:10; Isaiah 27:13; Deuteronomy 30:4; Numbers 10:10 | 29-31 | BSB | BSB text |
+| The sign of the Son of Man: the Son of Man himself (many); the cross (Chrysostom, Homily 76 on Matthew) | 29-31 | Chrysostom; commentaries | Search: lectionarycentral.com Chrysostom; catenabible.com 24:30; biblehub.com. Paraphrased. Irenaeus's "light of the Father" not used; the "banner" reading cut (not checked) |
+| Readings of 24:29-31 (Mark 13 wording, verse numbers changed) | 29-31 | Mark 13 plain note | Repository |
+| Fig tree bare in winter; genea; 23:36; 21:19; Isaiah 40:8; C. S. Lewis, "the most embarrassing verse in the Bible"; three readings of "this generation" | 32-35 | Earlier ledger (Mark 13) | Earlier ledger; Mark 13 wording reused with Matthew's verse numbers |
+| Luke 17:26-37; 1 Thessalonians 5:2; Genesis 6:5; 7:23 | 36-44 | BSB | BSB text |
+| Two women grinding at a hand mill; bread at least half of the ordinary diet | 36-44 | Jewish life portrait (Weingarten, BAR 2019) | Repository |
+| Arius, Athanasius, Chalcedon 451; Luke 2:52; no date-setting (Mark 13 wording); Acts 1:7 | 36-44 | Earlier ledger (Mark 13); BSB | Earlier ledger; BSB text |
+| "Nor the Son" absent from later copies, present in the oldest and in Mark 13:32 | 36-44 | Repository chapter note (`text`) | Repository |
+| Rapture from the Latin (rapiemur, "we will be caught up") of 1 Thessalonians 4:17 (harpazō) | 36-44 | Vulgate; lexicons | Search: en.wikipedia.org Rapture; julianspriggs.co.uk; biblehub.com. Given as "the Latin for ‘caught up’" |
+| Taken as rapture or as judgment (by analogy with the flood; Luke 17:37) | 36-44 | Deep note; standard positions | Stated as views; Darby, Scofield, Lindsey, Left Behind, Walvoord not named; no scheme or millennium position |
+| Luke 12:42-46; Ezekiel 34:2; Isaiah 62:6; "cut him to pieces" read as punishment or as being cut off | 45-51 | BSB; deep note | BSB text; stated as views |
+
+Left out: Reimarus, Schweitzer, Russell, J. S. Russell, Sproul, Wright,
+France by name; Darby, Scofield, Lindsey, A Thief in the Night, Left Behind,
+Hart, Walvoord, Ladd; Irenaeus on the sign; the Didache; the "pestilences"
+variant; Deissmann's coin evidence; every date-setter by name.
