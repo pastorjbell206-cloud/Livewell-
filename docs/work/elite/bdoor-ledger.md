@@ -727,3 +727,55 @@ Via Maris as a Roman road name; the number of fishing boats on the lake
 (Josephus's figure in Jewish War 2, not checked). Care: a word on fasting
 safely (ask a doctor; if not eating has become a struggle, talk to someone
 trusted and a health professional); healing and medicine set side by side.
+
+## The plain notes on Matthew 5 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/5.json`. Eight searches for this
+chapter, with the earlier ledger for Mark 1, 2, 9, 10 and 12 and Matthew's
+book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Teachers sat to teach; the Moses echo is the scholars' reading, which Matthew never states | 1-12 | Luke 4:20; Allison, The New Moses (1993) | Earlier ledger (Mark 9; Matthew's book page) |
+| Psalm 1:1; Isaiah 61:1-2; Psalm 37:11; Psalm 24:3-4; first and eighth beatitudes share a promise | 1-12 | BSB | Repository |
+| Salt with every grain offering; no account of how salt loses its taste | 13-16 | Leviticus 2:13 | Earlier ledger (Mark 9, narrowed there too) |
+| The basket (modios) a grain measure | 13-16 | Standard lexicons | Lexicon fact |
+| Isaiah 49:6; Isaiah 2:2-3; 6:1 beside 5:16 | 13-16 | BSB | Repository |
+| Scribes trained in the Law; Pharisees devout and popular | 17-20 | Josephus, Antiquities 18.15-17 | Earlier ledger (Matthew 3, Mark 12) |
+| Jeremiah 31:33; Ezekiel 36:26-27; Romans 13:10; Mark 7:19; Acts 15:19-20 | 17-20 | BSB | Repository |
+| Moral, ceremonial and civil division of the Law; fulfilled in Christ | 17-20 | Standard theological positions | Stated as views |
+| Raca: Aramaic, roughly "empty-head", "worthless"; only here in the Bible | 21-26 | Strong's 4469; Vine's | Search: biblehub.com 4469; blueletterbible.org G4469; bible.jmoorewv.com Vine's. The "spit" etymology not used |
+| Gehenna, the Valley of Hinnom; no ancient evidence for the rubbish dump | 21-26 | Jeremiah 7:31; Bailey (1986) | Earlier ledger (Mark 9) |
+| Day of Atonement does not atone for wrongs against a neighbour until he is appeased | 21-26 | Mishnah Yoma 8:9 (written down around 200, marked as later) | Search: outorah.org Yoma 8:8-9; torah.org; sefaria.org sheets |
+| Exodus 20:13; Leviticus 19:17; Mark 3:5; Ephesians 4:26; Romans 12:18 | 21-26 | BSB | Repository |
+| "Cut it off" a picture, never a command to harm the body; care line | 27-30 | Mark 9 plain note, word for word | Repository |
+| Exodus 20:14, 17 | 27-30 | BSB | Repository |
+| Deuteronomy 24:1; Shammai and Hillel; only the husband could divorce; the certificate freed her | 31-32 | Mishnah Gittin 9:10 and 9:3 (later) | Earlier ledger (Mark 10) |
+| Christian readings of divorce and the exception (Catholic, Orthodox, Protestant, betrothal, forbidden kin) | 31-32 | Mark 10 plain note; repository deep note (Matthew 5 `hard`) | Repository. No side taken; scholars not named |
+| Safety line | 31-32 | Mark 10 plain note, word for word | Repository |
+| Swearing by the temple and its gold (23:16); Leviticus 19:12; Numbers 30:2; Deuteronomy 23:22; Isaiah 66:1; 2 Corinthians 1:23; Hebrews 6:17; James 5:12 | 33-37 | BSB | Repository |
+| Essenes avoided swearing, thought it worse than perjury, since one not believed without God is already condemned | 33-37 | Josephus, Jewish War 2.135 | Search: cojs.org (Schiffman); biblicalarchaeology.org (Mason); virtualqumran.huji.ac.il (Whiston). Paraphrased |
+| Anabaptists refused oaths | 33-37 | Schleitheim Confession (1527) | Earlier ledger (Matthew's book page) |
+| Eye for eye a rule for judges (Deuteronomy 19:18); Exodus 21:24; Leviticus 24:20; Deuteronomy 19:21; Proverbs 25:21 | 38-42 | BSB | Repository |
+| Heavier fine for a back-handed slap than an ordinary slap (400 against 200 zuz) | 38-42 | Mishnah Bava Kamma 8:6 (later) | Search: outorah.org Bava Kamma 8:5-6; jewishencyclopedia.com "Assault and Battery"; jewishvirtuallibrary.org. No sums given, since translations differ; the back-hand reading of the right cheek is "many readers note" |
+| Cloak returned by sunset | 38-42 | Exodus 22:26-27 | Earlier ledger (Mark 10) |
+| Angareuō a Persian loanword, first of royal couriers pressing men and animals into service; used of Simon (27:32) | 38-42 | Thayer's; LSJ | Search: lsj.gr; blueletterbible.org G29; biblicaltraining.org "Compel". Roman soldiers not named, since the results did not confirm it |
+| Tolstoy, What I Believe (1884), took "resist not evil" as the key to the sermon | 38-42 | Tolstoy | Search: nonresistance.org What I Believe ch. 1, 4; marxists.org 1884 |
+| Luther's two kinds of duty; Anabaptist and Mennonite non-violence | 38-42 | Histories of interpretation | Earlier ledger (Matthew's book page) |
+| Just war from Augustine to Aquinas (Summa II-II, question 40) | 38-42 | Aquinas, Summa | Search: ccel.org SS040; pages.uoregon.edu; acton.org |
+| John 18:22-23; Acts 22:25 | 38-42 | BSB | Repository |
+| "Hate your enemy" in no Old Testament verse | 43-48 | BSB | Script over the whole BSB (only Matthew 5:43) |
+| Community Rule: love the sons of light, hate the sons of darkness; whether Jesus meant it is unknown | 43-48 | 1QS 1:9-10 | Search: ccat.sas.upenn.edu 1QS; israelbiblecenter.com "Love and Hate at Qumran"; encyclopedia.com "Sons of Light" |
+| Leviticus 19:18; Exodus 23:4-5; Leviticus 19:2; Deuteronomy 18:13; Luke 6:36; teleios whole, complete | 43-48 | BSB; lexicons | Repository |
+| Tax collectors despised as collaborators | 43-48 | Earlier ledger (Mark 2) | Earlier ledger |
+
+Left out: 4Q525 and Puech; the War Scroll's "poor in spirit"; the Church of
+the Beatitudes and Barluzzi; the claim that Dead Sea salt leached away; any
+first-century custom of withholding a greeting; the right hand as the valued
+one; "without a cause" in verse 22 and other manuscript notes; Roman soldiers
+as the ones who compelled; the Quakers on oaths; Fitzmyer, Instone-Brewer,
+Piper and the other scholars named in the deep note. Care: "cut it off" and
+the crisis line; the divorce safety line; "turn the other cheek" is not a
+command to stay with someone who hurts you; reconciliation does not mean
+returning to danger; loving an enemy is not trusting one who is still
+dangerous.
