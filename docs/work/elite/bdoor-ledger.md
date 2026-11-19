@@ -4618,3 +4618,34 @@ safety wording.
 
 Cut: the Egyptian ‘god's father’ title (not confirmed); the silver's weight
 in kilograms (kept out, as in Genesis 23).
+
+## The plain notes on Genesis 46 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/46.json`. Four web searches for
+this chapter (one, on Papyrus Anastasi VI, made during Genesis 42), with the
+deep note, the verse notes, the book page and the Genesis 10 and 12 plain
+notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Beersheba at Canaan's southern edge; 21:33; 26:24; 26:2; 15:13; 22:11; Exodus 3:4 | 1-7 | Deep note (`historical`, `literary`); BSB | Repository |
+| Closing the eyes of the dead done by someone close | 1-7 | Deep note (`cultural`) | Repository; stated simply |
+| The last time God speaks to Jacob in Genesis | 1-7 | BSB (read through 50) | Repository |
+| Exodus 1:7; Isaiah 43:2; Hosea 11:1 in Matthew 2:15 | 1-7 | BSB | Repository |
+| List by four mothers (33, 16, 14, 7); only Dinah and Serah named; wives left out; Canaanite mother (10); Perez and Hezron | 8-27 | BSB; deep note (`cultural`, `literary`) | Repository; the sums recounted from the list (Leah's 33 counts Jacob; 66 + Jacob, Joseph, Manasseh, Ephraim = 70) |
+| Hebrew list of Genesis 10 ‘by the usual count’ seventy names | 8-27 | Plain note on Genesis 10 | Repository (same wording) |
+| Septuagint reads seventy-five at 46:27, adding descendants of Manasseh and Ephraim; Acts 7:14 follows it; other suggested counts (adding wives) | 8-27 (hard) | Septuagint; commentaries | Search: "Genesis 46:27 Septuagint seventy-five ... Acts 7:14" (biblehub.com; uasvbible.org; Reformation Study Bible note on biblegateway.com) |
+| Benjamin's ten sons and Numbers 26:40 (Ard and Naaman as grandsons); list by clan | 8-27 (hard) | Deep note on 43 (`hard`); BSB | Repository; ‘many readers think’ |
+| Deuteronomy 10:22; Exodus 1:5; Matthew 1:3; Acts 7:14 | 8-27 | BSB | Repository |
+| Joseph 17 (37:2) to about 39 (41:46; 45:6): twenty-two years; Jacob lives seventeen more (47:28) | 28-30 | BSB | Repository |
+| Goshen usually placed in the eastern Nile delta; exact borders not known | 28-30 | Book page map; deep note | Repository |
+| Luke 2:29-30 | 28-30 | BSB | Repository |
+| ‘Shepherds detestable’: no clear Egyptian text that shepherds as such were hated; Herodotus on swineherds; foreign herders the common explanation; others proposed | 31-34 | Commentaries and translation notes | Search: "Genesis 46:34 shepherds detestable to Egyptians evidence ... Herodotus swineherds" (tips.translation.bible on 46:34, citing Driver; johngill.thekingsbible.com; bibleportal.com Coke). Stated as uncertain; the Hyksos link left out |
+| Beni Hasan tomb painting, 1800s BC, people from the east arriving with donkeys | 31-34 | Book page ledger (Genesis 12) | Earlier search |
+| Papyrus Anastasi VI, late 1200s BC: frontier officials let Shasu herders from Edom pass to the pools of Pithom to keep themselves and their flocks alive | 31-34 | Papyrus Anastasi VI (British Museum 10245) | Search: "Papyrus Anastasi VI Shasu of Edom ... Pithom" (bible.ca; intertextual.bible; Schipper, VT, via academia.edu). Reign (Merneptah or Seti II) not named |
+| Exodus 3:1; 1 Samuel 16:11; Psalm 23:1; John 10:11 | 31-34 | BSB | Repository |
+
+Cut: the deep note's claim that a Hebrew copy of Exodus among the Dead Sea
+Scrolls reads seventy-five at Exodus 1:5 (sources disagree; the fragment is
+broken there); the Hyksos as ‘shepherd kings’; the separation as Joseph's
+stated purpose (kept as a result, not a motive).
