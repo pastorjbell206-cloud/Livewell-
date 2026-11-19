@@ -2255,3 +2255,28 @@ Cut: the Mekilta on the Hebrew slave (not confirmed); Joseph and Aseneth; m. Ber
 | Anxiety care line: the help wording of the site's answer "Is my anxiety a spiritual failure?" copied word for word | 25-31 | `client/src/data/answers.ts`; Matthew 6 note | Repository |
 
 Cut: Hick, Rosenzweig, Newbigin, Nash, Pinnock, Lumen Gentium 16 by name (the site's answers carry the views); the Jewish wedding custom; Plato's Phaedo on orphans; the farewell-speech form and the Testaments of the Twelve Patriarchs; 1QS on the two spirits; m. Avot 4:11 (praqlit); m. Berakhot 5:5; Gregory of Nazianzus, Eunomius and Calvin by name; the Pax Romana by name.
+
+## The plain notes on John 15 (2026-11-19)
+
+`client/public/bible/notes/john/plain/15.json`. 5 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| The golden vine over the sanctuary gate of Herod's temple; clusters "as tall as a man" | 1-4 | Josephus, Jewish War 5.210 (and Antiquities 15.395) | Search: lexundria.com War 5.210 (Whiston); ccel.org; avande1.sites.luc.edu Antiquities 15. The height is in the War account only, so the page says "he says" and gives no reference to Antiquities |
+| "True" as the reality earlier things pointed to (6:32) | 1-4 | BSB; deep note `hard` | Kept as the notes' reading; no scholar named |
+| Kathairei (15:2) and katharoi (15:3); airei (15:2); menō ten times in 15:1-10 | 1-10 | Greek text in the repository | Script |
+| Psalm 80:8, 16, 17; Isaiah 5:2, 7; 27:3; Jeremiah 2:21 | 1-4 | BSB | BSB text |
+| Airei "lift up" or "take away": the lifting reading (trailing branches lifted from the ground) and the removal reading (common sense; verse 6); no side | 1-4 | Mounce on airō; Constable's notes; NET | Search: billmounce.com "αἴρω in John 15:2"; bibletools.org; sermonindex.net Constable; escapetoreality.org. Views only |
+| Vine wood useless, fuel (Ezekiel 15:2-4); Galatians 5:22-23 | 5-8 | BSB | BSB text |
+| Perseverance views: Westminster Confession 17 ("can neither totally nor finally fall away from the state of grace"); 1 John 2:19; Catholic, Orthodox, Lutheran, Wesleyan and Methodist teaching; "open for discussion and not a cause for division" | 5-8 | Earlier ledger (John 10) | Earlier ledger; John 10 wording |
+| A further reading: the fire as a believer's lost reward, not final judgment | 5-8 | Constable's notes (those who read "take away" as loss of reward) | Search as above. No name given |
+| Hellenistic kings' "Friends" a ranked inner circle (1 Maccabees 10:65, "chief friends"); 19:12 | 9-17 | ISBE "Friends; Chief Friends"; Cambridge chapter on the Hellenistic court | Search: biblestudytools.com / internationalstandardbible.com; cambridge.org. No reference to Maccabees on the page |
+| Mishnah Avot 1:6 (around 200): a student should make himself a teacher; so students usually sought out teachers ("suggests") | 9-17 | m. Avot 1:6 | Search: sefaria sheets; myjewishlearning.com; kiwix Wikisource Avot 1:6. Paraphrased, marked as later; the contrast hedged ("may have sounded unusual") |
+| Romans 5:8; 1:43; Isaiah 41:8; Exodus 33:11 | 9-17 | BSB | BSB text |
+| "The world" not a nation or people; 3:16; Matthew 5:44 | 18-25 | Book page; BSB | Book page wording |
+| Acts 7:58-60; Acts 12:2; Romans 12:18; 1 Peter 3:15-16; Psalm 69:4; 35:19 | 18-25 | BSB | BSB text |
+| "Their Law" here means Scripture broadly (the quotation is from the Psalms) | 18-25 | BSB (Psalm 35:19; 69:4) | BSB text |
+| "Proceeds from the Father"; the site's Nicene wording "who proceedeth from the Father"; the Western addition "and the Son" (filioque); the Eastern Orthodox churches do not use it | 26-27 | Site creed text; Filioque histories | Repository; search: en.wikipedia.org Filioque; catholic.com "Defending the Filioque". Dates (Toledo 589, Florence) not used |
+| Deuteronomy 19:15; 21:24 | 26-27 | BSB | BSB text |
+
+Cut: Tacitus on the golden vine and Liber; m. Middot 3:8; the revolt coins; 2 Baruch; Didache 9:2; b. Hullin 92a; Aristotle and Plato on dying for friends; Josephus on James the brother of Jesus; Tacitus on Nero (not needed); Wesley, Marshall, Trent, Augustine, Dort, Schreiner and Caneday, Hodges and Carson by name; Ruether, Reinhartz, Barrett, Brown, Wright, Soulen by name.
