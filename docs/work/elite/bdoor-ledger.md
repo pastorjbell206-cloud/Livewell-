@@ -1100,3 +1100,60 @@ Simeon ben Menasya; the Babylonian Talmud Shabbat 128b; Tobit's demon;
 Justin and the Talmud on Jesus as a sorcerer; Augustine, Aquinas, Calvin and
 Russell on the unforgivable sin; Torrey; the queen's homeland and Josephus on
 her; Mishnah Avot 1:4; the textual notes on 12:6, 12:15, 12:24 and 12:47.
+
+## The plain notes on Matthew 13 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/13.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 4 and Mark 6).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Sowing by hand; the ploughing debate; a hundredfold as blessing | 1-9 | Earlier ledger (Mark 4); Genesis 26:12 | Earlier ledger; BSB |
+| Matthew counts the yield downward | 1-9 | Matthew 13:8; Mark 4:8 | BSB comparison (13:8 not quoted, since it carries an em-dash) |
+| Five teaching blocks each closed by "When Jesus had finished" | 1-9 | 7:28; 11:1; 13:53; 19:1; 26:1 | BSB text |
+| Isaiah 55:10-11 | 1-9 | BSB | BSB text |
+| Parable and mystery explained | 10-17 | Earlier ledger (Mark 4) | Earlier ledger |
+| Mark "so that" (4:12); Matthew gives a reason (13:13) | 10-17 | BSB; earlier ledger (Mark 4) | BSB text |
+| Luke 10:23-24 parallels 13:16-17 | 10-17 | BSB | BSB text |
+| Isaiah 6:10 BSB ("Make the hearts ... calloused") against Matthew 13:15 ("has grown callous ... they have closed their eyes") | 10-17 | BSB | BSB comparison. No claim made about the Septuagint |
+| Chrysostom, Homily 45 on Matthew: the blindness self-chosen ("seeing, they see not"); the parables meant to stir them | 10-17 | Chrysostom | Search: newadvent.org/fathers/200145.htm; ccel.org NPNF 10. Paraphrased |
+| "Them" not the Jewish people as a whole | 10-17 | Deep note `hard` | Pastoral and interpretive, stated plainly |
+| Understand (13:19, 23); skandalizō at 13:21 and 13:57 | 18-23 | BSB; Greek text (G4624) | Script |
+| Jülicher (late 1800s) and Blomberg on the explanation | 18-23 | Earlier ledger (Mark 4) | Earlier ledger |
+| Zizanion usually identified as darnel (Lolium temulentum); looks like wheat until the ear; grain harmful if eaten (the fungus theory not stated) | 24-30 | Smith's Bible Dictionary "Tares" (ccel.org); Easton's; hypr.bible; University of Pretoria paper (1933) | Search. Zizanion at 13:25-40 by script (G2215) |
+| Sowing weeds in another's field discussed in Roman law: Ulpian, citing Celsus, Digest 9.2.27.14; the Digest compiled in the 500s | 24-30 | Digest 9.2.27.14 | Search: libmast.utm.my (article "Ulpian, Celsus and weed pollution of soil"); ceeol.com (Aličić). "Weeds" kept general |
+| Donatists claimed a pure church and read "the field is the world" against a mixed church; Augustine and the Catholics read it of the church, a mixed body until the harvest; Conference of Carthage 411 | 24-30 | Schaff, History of the Christian Church 3 (ccel.org); Theological Studies 51.1; dbts.edu; encyclopedia.com "Donatism" | Search. Dated "around AD 400"; Augustine's Letter 93 and coercion (deep note) not confirmed and not used |
+| Aquinas (Summa Theologiae II-II q.11 a.3): the command not to uproot holds only where the wheat would be harmed, so heretics may be put to death | 24-30 | Aquinas | Search: ccel.org summa.SS_Q11_A3; stephenhicks.org translation. Paraphrased; the reply's numbering differs between translations and is not given |
+| Roger Williams, The Bloudy Tenent of Persecution (1644): the field is the world, so dissenters left alone until the harvest; John Cotton: the field is the church (1647 reply) | 24-30 | Williams; Cotton | Search: worldhistory.org; en.wikipedia.org; baptistnews.com; Church History (cambridge.org) |
+| Church discipline (18:15-17) and the parable: views, no side | 24-30 | Standard positions | Stated as views |
+| Black mustard, seed size, height, byword; orchid seeds | 31-35 | Earlier ledger (Mark 4) | Earlier ledger |
+| Luke 13:19 "became a tree" | 31-35 | BSB | BSB text |
+| Leaven as old dough; 16:6; Genesis 18:6 "three seahs" | 31-35 | BSB | BSB text. The litre figure (deep note) not used; "a large batch" only |
+| Enkryptō at 13:33; kruptō at 11:25, 13:35, 13:44 | 31-35 | Greek text (G1470, G2928) | Script |
+| Ezekiel 17:23; Daniel 4:12 | 31-35 | BSB | BSB text (as in Mark 4) |
+| Psalm 78:2; "A Maskil of Asaph"; "Asaph the seer" (2 Chronicles 29:30) | 31-35 | BSB | BSB text. The manuscript reading "Isaiah the prophet" and Porphyry (deep note) not used |
+| Mustard smallest of seeds sown: inerrancy views stated generally | 31-35 | Earlier ledger (Mark 4) | Davis, Lindsell, Sproule (deep note) not named |
+| "End of the age" only in Matthew among the Gospels (13:39, 40, 49; 24:3; 28:20); "gnashing of teeth" six times in Matthew, once in Luke (13:28) | 36-43 | BSB | Script over the BSB text |
+| Daniel 3:6; Malachi 4:1; Daniel 12:3; 8:12 | 36-43 | BSB | BSB text |
+| Views on hell (endless conscious separation; final destruction; hope of restoration); literal or pictured fire and darkness | 36-43 | Standard positions | Stated as views, matching the Matthew 10 and Mark 9 notes |
+| Care: the afraid reader met with 11:28 | 36-43 | CLAUDE.md, care for the reader | Pastoral |
+| Josephus, Jewish War 7.114-115: after 70 the Romans dug up gold, silver and valuables buried against the uncertainties of war; captives showed them more | 44-46 | Josephus | Search: lexundria.com 7.115 (Whiston); ccel.org war-7. Paraphrased |
+| Pliny the Elder, Natural History book 9: pearls hold the first rank among valuables; written in the 70s | 44-46 | Pliny, Natural History 9 (ch. 54 in Bostock and Riley; 9.106 in modern numbering) | Search: peterburk.github.io (Bostock and Riley); jewelpedia.net. Paraphrased; no section number on the page |
+| Emporos at 13:45 only; margaritēs at 7:6 and 13:45-46 | 44-46 | Greek text (G1713, G3135) | Script |
+| Proverbs 2:4; 3:15; Luke 16:1-8 | 44-46 | BSB | BSB text |
+| Two readings of the buyer (the disciple; Christ) | 44-46 | Standard readings | Stated as views; no date or Father claimed |
+| Sagēnē only at 13:47; Leviticus 11:9-10; Habakkuk 1:15; Jeremiah 16:16 | 47-52 | Greek text (G4522); BSB | Script; BSB text |
+| Mathēteuō at 13:52, 27:57, 28:19; 5:17 | 47-52 | Greek text (G3100); BSB | Script |
+| Nazareth a few hundred people; tektōn | 53-58 | Earlier ledger (Mark 6) | Earlier ledger |
+| "Carpenter's son" against Mark's "the carpenter"; "did not" against "could not" | 53-58 | Mark 6:3, 5; BSB | BSB comparison |
+| Three readings of the brothers, Mark 6 wording; 1:25; Luke 2:7; Genesis 13:8; 27:56; John 19:26-27; John 7:5; Acts 1:14; 1 Corinthians 15:7 | 53-58 | Earlier ledger (Mark 3, Mark 6; Bauckham); BSB | Earlier ledger; BSB text. Helvidius, Epiphanius, Jerome, Meier, the Council of 553 and the Reformers (deep note) not named |
+
+Left out: the Gospel of Thomas parallels; Pennington on "kingdom of heaven";
+the Psalms of Solomon and the War Scroll; the Copper Scroll; Cleopatra's
+pearl; the Mishnah on darnel (Kilayim 1:1); the darnel fungus; the litre
+size of three measures; Augustine's Letter 93; Chrysostom's Homily 46;
+Hubmaier, Luther and Calvin on the weeds; Alford's hymn and Millais; the
+rabbinic parables of treasure and the pearl; Irenaeus and Origen on the
+treasure; Jerome on the hundredfold; the Scofield reading; Jülicher's,
+Dodd's, Jeremias's and Kingsbury's books; the textual notes on 13:35 and
+13:55.
