@@ -396,3 +396,76 @@ All 36 content-gate commands in .github/workflows/ci.yml passed, run one at a ti
 ## The whole library after four runs
 
 All 41 before any run: 44,472 words, 859 tells (19.3 per 1,000 words), 164 "Not X. Y." two-steps, 58 runs of three or more short sentences, 150 paragraphs ending on a short verdict, 92 sections closing on an aphorism. All 41 now: 44,633 words (+0.4%), 496 tells (11.1 per 1,000), 76 two-steps, 8 short runs, 71 short-verdict endings, 43 aphorism closings. The fact diff passed on all 41.
+
+# Fifth run: the four world portraits
+
+Pass run 2026-11-19 on branch elite/voice over the four long portraits in client/public/context/worlds/ (jewish-life-in-jesus-day, old-testament-world, roman-world, honor-and-shame): the intro paragraphs, every part's body and every passage note ("How it changes what you read"). These are third-person reference pages, written recently to a plain standard, with every specific claim checked against a named source in the four worlds ledgers (worlds-ledger.md, wot-ledger.md, wrom-ledger.md, whon-ledger.md). So the run measured first, and changed little where little was needed. Nothing became first person, no opinion was added, and nothing was edited to move a number.
+
+## Method
+
+The scripts of runs two to four (/home/user/tmp-voice/g/scripts), adapted to the portraits' shape in /home/user/tmp-voice/w: w2essay.mjs flattens a portrait (intro, one part, or all the notes) for the tell counter; wfact.mjs is the portrait fact diff; wapply.py applies an edit list (/home/user/tmp-voice/w/edits/<id>.py, exact old/new pairs) to the prose strings only and runs the diff. The fact diff requires every field except the intro paragraphs, part bodies and passage notes to be byte-identical (so the Berean Standard Bible passage text, refs, hrefs, ids, titles, part lines, icons, plate, group and every source entry), then runs factdiff.mjs on the prose (every quotation, Latin and Greek phrase in quotation marks, Scripture reference, year, number, number word, proper name, link and italic), then a hedge count: none of "probably, perhaps, possibly, likely, may, might, could, about, around, roughly, some, many, most, often, usually, seems, suggest, argue(d), disputed, debated, uncertain, unclear, later, tradition, almost, nearly, estimate(d), claim(s), said, says, scholars, disagree, few, rare(ly), sometimes, generally, mostly, largely, partly, cannot, whether" (and a few phrases) may fall in count, and the length must stay within 3 percent. Measures are prose words with quotations blanked, as in the earlier runs.
+
+## Measurement (tells per 1,000 words, before and after)
+
+The guides, for comparison: 19.3 before the runs, 11.1 after.
+
+| Portrait | Intro | Part 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | Body | Notes | Body and notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| honor-and-shame | 5.1 to 5.1 | 11.6 to 10.1 | 10.0 to 10.0 | 17.0 to 10.3 | 15.1 to 12.1 | 8.4 to 8.4 | 4.9 to 3.3 | 16.9 to 15.3 | 26.8 to 21.9 | 13.0 to 10.8 | 20.3 to 15.8 | 14.4 to 11.7 |
+| jewish-life-in-jesus-day | 12.5 to 12.5 | 5.3 to 5.3 | 7.3 to 7.4 | 4.2 to 4.2 | 7.4 to 7.4 | 8.8 to 8.8 | 6.4 to 4.8 | 5.1 to 5.1 | | 6.6 to 6.5 | 10.5 to 11.5 | 7.2 to 7.2 |
+| old-testament-world | 21.7 to 21.7 | 10.2 to 10.2 | 8.9 to 8.9 | 8.2 to 8.2 | 7.8 to 6.7 | 6.1 to 6.2 | 5.0 to 5.0 | 8.1 to 8.2 | | 8.5 to 8.3 | 12.3 to 9.5 | 9.0 to 8.5 |
+| roman-world | 14.1 to 14.1 | 6.1 to 6.1 | 10.7 to 10.7 | 3.8 to 3.9 | 8.3 to 8.3 | 6.2 to 6.2 | 9.9 to 8.6 | 8.7 to 8.7 | 8.3 to 8.3 | 8.0 to 7.9 | 12.1 to 11.5 | 8.7 to 8.5 |
+| **All four** | | | | | | | | | | | | 9.7 to 8.9 (288 to 264 tells) |
+
+The intros' high figures are small numbers over a few hundred words (two to six tells each, mostly colons that open a list), and they were left alone. Three portraits started under the guides' after-figure; only honor-and-shame started above it, with its last part (the cross) and its notes carrying the two-step gait ("did not X. They Y.") five times in one part.
+
+## Per portrait
+
+Words are the fact diff's count (all prose, quotations included).
+
+| Portrait | Words before | Words after | Change | Edits | Fact diff |
+|---|---|---|---|---|---|
+| honor-and-shame | 7,751 | 7,724 | -0.35% | 30 | PASS |
+| jewish-life-in-jesus-day | 7,520 | 7,505 | -0.20% | 15 | PASS |
+| old-testament-world | 8,105 | 8,081 | -0.30% | 26 | PASS |
+| roman-world | 8,452 | 8,435 | -0.20% | 19 | PASS |
+| **All four** | 31,828 | 31,745 | -0.26% | 90 | 4 of 4 |
+
+What the edits were: contractions where a teacher would use them (the portraits had none at all, not even "that's"); the short-sentence pairs that weren't a part's real hinge joined into one sentence; four "not X but Y" reveals in the notes put the plain way round; three colon reveals made plain; "honest" out once ("the honest test" became "the real test"); "verdict" out twice where it was habit rather than the honor court the portrait describes; one bare comma splice given its "but".
+
+## Six before-and-after pairs
+
+1. honor-and-shame, the cross. "The New Testament writers did not soften the shame. They used it." became "Rather than soften the shame, the New Testament writers used it."
+2. honor-and-shame, the cross. "He did not escape the shame, and he did not accept its verdict." became "He neither escaped the shame nor accepted its verdict."
+3. honor-and-shame, Israel's Scriptures. "Israel did not choose between a conscience before God and a name before people. It prayed about both, sometimes in the same breath." became "Israel prayed about both, a conscience before God and a name before people, sometimes in the same breath, without choosing between them."
+4. honor-and-shame, a public verdict. "Then he does something no honor list was meant to do. He calls it loss." became "Then he does what no honor list was meant to do, and calls it loss."
+5. jewish-life-in-jesus-day, the land. "The revolt failed. The question it asked did not go away." became "The revolt failed, but the question it asked didn't go away."
+6. old-testament-world, note on Amos 6:4. "The charge is not that ivory is wicked but that it was bought while the poor were sold." became "He doesn't call ivory wicked; his charge is that it was bought while the poor were sold."
+
+Others of the same kind: "The townspeople do not dispute the wisdom or the miracles. They dispute where they could have come from, given the family they know." became "The townspeople don't dispute the wisdom or the miracles, only where they could have come from, given the family they know." (honor, Mark 6:2-4); "Paul's warning was not a vision but the kind of judgment an experienced traveler would make." became "Paul's warning was the kind of judgment an experienced traveler would make, not a vision." (roman, Acts 27:9-10); "Paul did not fit their picture of a teacher. He supported himself by a trade." became "Paul didn't fit their picture of a teacher, since he supported himself by a trade." (roman); "The stone is real, the identification is uncertain." became "The stone is real, but the identification is uncertain." (roman, Erastus).
+
+## Left alone, and why
+
+- Every field outside the prose: titles, SEO titles, descriptions, lines, part titles and lines, the Berean Standard Bible passages (byte-identical), refs, links, icons, plates, sources.
+- The vivid concrete lines, word for word: "A person of honor carried weight."; "A beard and a robe started a war."; "Generosity and honor both depended on the guest not turning the host into a mark."; "the church was not like a family. It was the only family they had."; "The calf really was in the house, downstairs."; "A farmer in the hills could do everything right and still lose the year to the sky."; "The verse turned out to be a price list."; "It names no king. It celebrates the diggers."; "The same stones archaeologists measure, he weighs."; "The oldest piece of the Bible ever found is not a law or a history but a prayer for God's face to shine."; "They gave it to a man in chains."; "Saying it meant something at dinner time."; "They called it a superstition. The believers called it the gospel."
+- One "Not X. Y." per part where it is the part's hinge: "honor was not first a feeling inside a person. It was a judgment made outside"; "Jesus did not abolish kinship. He redrew it."; "Gratitude, in this picture, was not a private glow."; "The first Christians didn't stop caring about honor. They changed courts." (kept because the whole portrait turns on the two courts of John 5:44); "Israel didn't sign a contract with God."; "The commandments aren't an entrance exam."; "Religion wasn't a private belief that a person chose."; "The phrase wasn't a pious ornament."; "He isn't arguing against Judaism. He's arguing inside it". Contractions only, where any change at all.
+- Every "where scholars disagree" passage at equal weight, untouched beyond a contraction: the critics of the honor model (Herzfeld, Downing, Lawrence, Crook) in the intro and part 1 of honor-and-shame; Herod's death date, Bailey's guest room, the set prayers, literacy, Neusner and Sanders, Qumran and the Essenes, Sanders on "sinners" (Jewish life); the hill-country villages and pig bones, the Samaria ivories, Arad and Hezekiah, "his asherah", the figurines, the Carthage tophet, Steymans, the Arad letters, Lachish letter 4, Samaria's fall (Old Testament); the sailing season, Corinth's settlers, Gallio's year, Paul's citizenship, "the throne of Satan", Wright and Barclay, Weima and White, Erastus, Chrestus, Tacitus (Roman).
+- Scholars' claims in paraphrase, so their wording stays theirs: Sanders's "did not mean ordinary working people ... It meant the wicked" and "not understood as a way of earning God's favor. It was the grateful response"; Dio's "did not expel the Jews but forbade them to meet"; Paul's market ruling in 1 Corinthians 10 ("but do not eat in an idol's temple").
+- The opening "It does not argue one point." in three intros, left identical across the portraits rather than contracted in one.
+- Lists that are really lists: the three psalm prayers for vindication, Barclay's six perfections of a gift, Seneca's bath noises, the Lanuvium fees, Hammurabi's three eye laws, the months of the Gezer tablet, Richards's letter lengths.
+- The closing fragment of the Old Testament portrait ("A small Persian province called Yehud, a rebuilt temple, a people scattered from Egypt to Babylon, with a Scripture gathered and a hope still open.") and the honor portrait's last line ("no verdict of any crowd would be final again").
+- Women and living cultures in honor-and-shame part 6 ("Men, women and the public eye"): the opening caution and the two closing warnings are word for word.
+
+## Where a lens pulled against a guardrail, and the guardrail won
+
+- old-testament-world, note on 1 Kings 18:21. Lens 1 contracted "you cannot do both" to "you can't do both"; the hedge count flagged "cannot" falling by one. It is not really a hedge there, but the rule was set before the run and the edit was taken back rather than the rule loosened.
+- old-testament-world, note on Amos 6:4. The first rewrite opened "Amos doesn't call ivory wicked"; the fact diff caught a name added (Amos 10 to 11). Rewritten as "He doesn't call ivory wicked", since the sentence before names him.
+- honor-and-shame, Simon's dinner. Lens 3 flagged "simply" in "Interpreters differ on whether Simon meant a slight or simply did the minimum." It stays: it is the wording of one side of a disagreement, and changing one side only would tilt it. The same for "calls the emperor simply 'the lord'" in the Roman world, where "simply" means the bare title and carries the point.
+- honor-and-shame, the psalms. Lens 3 flagged "The shame these prayers fear is not chiefly an inner feeling. It is public defeat". Any join risked losing "chiefly", which is a hedge; left whole.
+- honor-and-shame, the women at the tomb. Lens 1 wanted "the ones who were believed by God first" made plainer ("the ones God believed first"); left, because the plainer form might say something the sourced sentence does not.
+- honor-and-shame, "verdict". Ten uses; lens 3 counted it a tic. Two went ("Luke records what the room decided", "the town can make up its mind"); the other eight stay because the public court of reputation is the portrait's subject, and its own part title is "A public verdict".
+- Lens 4 and lens 5 everywhere. The portraits take no side where scholars differ and describe peoples as their own sources describe them; nothing was sharpened toward a view, a people, or the reader, and the honor portrait's last paragraph still leaves the reader free to decline belief.
+
+## Gates (fifth run)
+
+node scripts/build-context-index.mjs rerun: guides-index.json and worlds-index.json unchanged (it reads only titles, descriptions and part counts). All 36 content-gate commands in .github/workflows/ci.yml passed, run one at a time, including validate-worlds, validate-no-emdash and build-search-index --check ("up to date (732 entries)", so the search index needed no rebuild); last lines in /home/user/tmp-voice/w/gates5.txt. pnpm check passed. pnpm test passed (146 test files, 1653 tests; 7 files and 73 tests skipped). No build, no PDFs.
