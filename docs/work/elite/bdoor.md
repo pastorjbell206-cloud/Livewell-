@@ -510,3 +510,139 @@ Herodium ring (the reason for narrowing the Pilate stone line) was not
 searched on this run; the narrowed line claims less either way.
 
 **Next:** Mark is finished. The plain layer covers the whole book.
+
+## Matthew: book page and chapters 1 to 4 (2026-11-19)
+
+### The book page (`/study/bible/matthew`, same address)
+
+Matthew now has a teaching introduction built from Mark's parts, data only
+apart from three small code changes (below). Eleven headed parts with a
+contents list: Matthew in a minute; Who wrote it, and how we know; When,
+where, and for whom; How Matthew is built; The big themes; How Matthew uses
+the Old Testament; Matthew beside Mark and Luke; The family tree and the birth
+story; The Sermon on the Mount, and how Christians have read it; A Jewish
+book, and a hard history; How the church has read Matthew. Then 16 hard
+passages (each a line and a link to its verse), 12 key words, a timeline of
+14 dates (37 BC to the 300s), and a map of 13 places (Sidon to Bethlehem;
+Bethlehem's card says Egypt lies off the map). The outline band at the top
+already drew Matthew's eight parts from its existing `structure`; the "How
+Matthew is built" part links to it. "Go deeper" adds four of the site's own
+pages after the shared six: Jewish life in Jesus's day, Honor and shame,
+Reading genealogies, and the end-times study.
+
+Words: 4,946 in the eleven parts; 1,034 in the lists, timeline and map; 5,980
+new in all. The page's teaching block reads 6,275 words as rendered. The old
+introduction is unchanged underneath ("Going further").
+
+**Code changed, and why.** Mark's parts were Mark-shaped in three places, so a
+book can now bring its own data; nothing was redesigned.
+- `lib/bible-notes.ts`: optional `deeper` (a book's own "Go deeper" pages, with
+  one of four icons), and on a map place optional `region` and `label` (where
+  the name sits).
+- `BookTeaching.tsx`: appends `teaching.deeper` after the shared list.
+- `BookMap.tsx`: the hidden map description names the book's own northern and
+  southern places (Mark still reads "from Sidon in the north to Jerusalem in
+  the south"; towns within about 5 km count as one spot, the first listed
+  wins); a place is a region by `region` or, as before, by Mark's two ids; the
+  caption counts the regions; a place's `label` overrides the old table.
+- `scripts/validate-bible-notes.mjs` checks the new fields;
+  `teaching.test.tsx` now expects Mark and Matthew, and adds two Matthew tests.
+
+### Chapters 1 to 4 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 1 | 4 (from Abraham to David; from David, through the exile, to the Messiah; Mary is with child, and Joseph's choice; God with us) | 2,374 |
+| Matthew 2 | 5 (Magi from the east, and a troubled king; the Magi worship the child; escape to Egypt; the children of Bethlehem; home to Nazareth) | 2,494 |
+| Matthew 3 | 3 (John the Baptist in the wilderness; a warning, and the one who is coming; the baptism of Jesus) | 1,572 |
+| Matthew 4 | 5 (stones into bread; the temple and the kingdoms; a great light in Galilee; fishers of men; teaching, preaching and healing) | 2,149 |
+| Total | 17 | 8,589 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. The deep
+notes are unchanged underneath.
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "Matthew's book page" and "The plain
+notes on Matthew 1" to "4". 42 web searches (28 for the book page, then 4, 5,
+3 and 2). Main sources: Papias in Eusebius 3.39.16 and Irenaeus 3.1.1
+(paraphrased); Ignatius, To the Smyrnaeans 1.1; Didache 8; Streeter (1924);
+Bacon (1918, 1930); Allison, The New Moses (1993); Pennington (2007); Farrer
+(1955); Goodacre (2002); Julius Africanus in Eusebius 1.7; Herodotus 1.101;
+Kepler and the 7 BC conjunction, the Chinese record of 5 BC, Molnar; Josephus,
+Jewish War 1.659-666 and Antiquities 17.213-218, and on Herod's wife and sons;
+Macrobius, Saturnalia 2.4.11 (given as late and doubtful); Irenaeus 3.9.2 on
+the gifts; the Mishnah, Kiddushin 1:1 (marked as written down later);
+Weinfeld (Bible Review, 1997); Oberammergau (1750 to 2000); Nostra Aetate
+(earlier ledger); Dubovský (Biblica, 2006) on Tiglath-pileser III. Scripture
+is the Berean Standard Bible, checked word for word by the validator.
+
+### Cut or narrowed
+
+Origen and Jerome on a Hebrew Matthew; the names of scholars on each side of
+authorship (they stay in the fuller introduction below); Annius of Viterbo;
+any count of the double tradition's verses; "the strongest match" for the 7 BC
+conjunction; a section number for Augustine on 16:18; the twelve months of
+betrothal; Dionysius Exiguus; the Babylonian ration tablets; the Herodium tomb
+(its identification is disputed); Tertullian's "almost kings"; Tiridates; any
+height for the temple's pinnacle; the Via Maris; Josephus's count of boats.
+Tamar is "perhaps" an outsider, since Genesis does not say. The stones and
+children pun is "may", since the results confirmed it in Hebrew only.
+
+### Contested matters, and how they are stated
+
+Authorship (apostle, or a later Jewish Christian teacher; Papias's sentence
+read three ways). Date (before 70, or about 80 to 95, each side's evidence).
+Place (Antioch most common; others listed). The order of the Gospels (Two
+Source with Q, Farrer, Matthew first), all called hypotheses, no side. The two
+genealogies (levirate, Mary's line, royal line, separate traditions), no side;
+Jeconiah's curse (two answers given as what some say). Isaiah 7:14 (the
+Hebrew almah, the Greek parthenos, three readings, with the virgin birth
+resting on Matthew and Luke, not one word). Mary's perpetual virginity and
+"until" (1:25), Catholic and Orthodox against many Protestants, no side. The
+star (five proposals). The massacre (the case that it was too small to be
+noticed and the skeptic's case). The Sermon on the Mount (six readings).
+16:18 (Peter, his confession, or Christ; Catholic, Orthodox and Protestant)
+and the divorce exception: a line each in the hard passages, for the chapter
+notes to face. Why Jesus was baptized (three answers). The devil (as Matthew
+tells it, and the inward reading).
+
+**Jews and Judaism.** "A Jewish book, and a hard history" says Matthew is an
+argument inside the Jewish family, names the "Christ-killers" misuse of
+chapter 23 and 27:25, says it is wrong and that the site rejects it, gives
+Oberammergau and Nostra Aetate, and sets 27:20 and 26:28 beside 27:25. The
+hard-passage lines for 23:13 and 27:25 say the same in one line each.
+
+**Care.** Matthew 2:16-18 tells the killing in one sentence, as Matthew does,
+names Herod as the cause, gives the mothers' grief its place, and keeps a path
+to help (someone trusted, a grief counsellor, a crisis line or emergency
+service). Matthew 4:1-4 adds a word on fasting safely.
+
+### Still unverified
+
+The exact wording of every ancient writer (all paraphrased); first-century
+practice of binding betrothal (the note leans on Matthew's own words);
+whether the Bethlehem killing happened (stated as uncertain); the date of
+Bach's first performance and Jerome's symbols rest on the repository and
+the earlier ledger, not new searches.
+
+### What was run, and what passed (watched)
+
+All 36 content-gate commands of ci.yml: exit 0 each (validate-bible-notes:
+66 introductions, 1,189 chapter notes, 20 chapters in plain words). `pnpm
+check`: clean. `pnpm test`: 146 files passed, 7 skipped; 1,653 tests passed,
+73 skipped. ESLint on the changed code files: clean (the validator script is
+ignored by the ESLint config). `pnpm build`, `pnpm run sitemap`, `pnpm run
+prerender` (3,028 pages) and `pnpm run audit:canonicals` (0 failures): run
+twice, the second after the last code and map change. Looked at on the served
+build (port 4601) at 390 and 1440, day and night: `/study/bible/matthew`,
+`/study/bible/matthew/1`, `/study/bible/mark`. No sideways scroll, no page
+errors. Mark's map, caption, description and "Go deeper" are as before.
+Screenshots: `/home/user/elite-shots/bdoor/mt-*`, `mt1-*`, `mark-*`. The first
+look found Bethlehem's and Bethany's names colliding on the map; fixed with
+two `label` entries in Matthew's data. Lighthouse was not run (no change to a
+chapter's first load; the map and plain notes load as before).
+
+### Next
+
+Matthew 5 to 7 (the Sermon on the Mount), then 8 onward, in the same shape.
