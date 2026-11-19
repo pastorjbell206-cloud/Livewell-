@@ -753,3 +753,135 @@ as unknown).
 ### Next
 
 Matthew 8 onward, in the same shape.
+
+## Continuation: Matthew 8 to 10 (2026-11-19)
+
+The ten miracles and the sending of the twelve, passage by passage, in plain
+words, in the same data shape (`client/public/bible/notes/matthew/plain/8.json`
+to `10.json`; each chapter note now says `"plain": true`). Data only; no code
+changed, so no build, Lighthouse or screenshots were run.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Matthew 8 | 6 (a leper made clean; a Roman officer's faith; Peter's mother-in-law and the servant who carries our diseases; what following costs; the storm and little faith; two men among the tombs) | 4,043 |
+| Matthew 9 | 7 (forgiven and then healed; a tax collector called and a meal with sinners; why don't your disciples fast; a dead girl and a woman who touched his cloak; two blind men; a man who could not speak; sheep without a shepherd) | 3,677 |
+| Matthew 10 | 6 (the twelve apostles; sent to the lost sheep of Israel; sheep among wolves; do not be afraid, the sparrows; not peace but a sword; a cup of cold water) | 3,865 |
+| Total | 19 | 11,585 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. Where
+Mark's plain notes already tell an event (the leper, the paralytic, the storm,
+the man among the tombs, Jairus's daughter, the call of the tax collector, the
+sending), these notes reuse their verified claims and their care wording, point
+to them, and say what Matthew does differently: the order and brevity, the
+disciples who "follow" into the boat, the rebuke before the calm, "little
+faith" for "no faith", two men for one, "just died" for "near death", the
+father's greater request, Matthew's silence on the woman's uncleanness.
+
+### A fix to the last run
+
+The Matthew 5 to 7 files stored each passage's hard question under "The Old
+Testament behind it", its question for the reader under "The hard verse", and
+its Old Testament note under "What it asks" (two passages without an Old
+Testament note had the other two swapped). A reader saw them under the wrong
+headings. The texts are now in their own fields, unchanged except four words
+added to 7:21-23's Old Testament note so it meets the field's minimum. Mark
+and Matthew 1 to 4 were checked and are right.
+
+### Sources
+
+Every claim is in `bdoor-ledger.md` under "The plain notes on Matthew 8", "9"
+and "10". 24 web searches (8, 8, 8). New sources: Bible Odyssey and the
+Cambridge Bible on the centurion in Antipas's forces; the 2011 English Roman
+Missal ("under my roof"); the Septuagint of Isaiah 53:4 against Matthew's
+wording; F. F. Bosworth, Christ the Healer (1924), and the healing-in-the-
+atonement case from Isaiah 53:4-5 and Matthew 8:17; McCane, Harvard
+Theological Review 83 (1990), on secondary burial; the NET note and
+Metzger's summary on Gadarenes, Gergesenes and Gerasenes in Matthew 8:28;
+Gadara at Umm Qais; the Mishnah Nedarim 3:4 (later); Diogenes Laertius on
+Antisthenes and the physicians; Avot de-Rabbi Natan on Yohanan ben Zakkai and
+Hosea 6:6 (later); Didache 8.1 (Wednesday and Friday); Josephus, Jewish War
+3.437 (hired pipers); Augustine, Harmony of the Gospels 2.28; kōphos in
+Strong's and Thayer's; Justin, Dialogue with Trypho 69; Iscariot and Kerioth;
+John Hyrcanus and Gerizim (around 110 BC); Pliny, Letters 10.96; the assarion;
+Schweitzer (1906; English 1910) on 10:23; Chrysostom, Homily 34 on Matthew;
+the Mishnah Makkot 3:10 (later); "hate" as "love less" (Genesis 29:30-31).
+All ancient, patristic and rabbinic writers are paraphrased.
+
+### Cut or narrowed
+
+Augustine by name for the two demoniacs (Harmony 2.24 could not be found, so
+"an old explanation"); A. B. Simpson; the "no Roman troops in Galilee until AD
+44" date (sources conflict); "about a year later" for the gathering of bones;
+the Mishnah on toll collectors' houses (Tohorot 7:6, not found); the Zealot
+party's first date; the synagogue attendant who flogged; the year of James's
+death and the name Agrippa (Acts says "King Herod"); the assarion's exact
+fraction of a denarius (sources say a sixteenth or a tenth); Diocletian's
+price edict and Deissmann on sparrows; the Septuagint's phronimos; Bornkamm,
+Held, Hengel, Allison, Levine, Sanders, Neusner, Dunn, Sim, Jeremias, France,
+Davies and Allison, Licona, Strauss and Warfield by name; the Akeldama
+leprosy find, the Temple Scroll, the Talmud's Sanhedrin 43a. The deep notes
+are unchanged underneath.
+
+### Contested matters, and how they are stated
+
+Healing in the atonement (8:17): the view and its main texts, Bosworth named;
+the view that Matthew applies Isaiah to the Galilean ministry and that full
+healing waits for the resurrection; a middle view; no side. The centurion's
+"sons of the kingdom": not a rejection of the Jewish people, said plainly,
+with the warning turned on Christians too. "Let the dead bury their own dead":
+three readings of the request (just died, secondary burial, father still
+alive), the saying faced as hard, and not contempt for family. Two men
+against one, and the place name: the manuscripts plainly; the old
+harmonizing answer, Matthew's pairs, two witnesses, ancient biography, the
+skeptic's contradiction; no side. Possession and illness: Matthew lists the
+possessed and those with seizures apart; the Mark 5 wording. The ruler's
+daughter "just died": Augustine's answer, ancient biography, the skeptic; no
+side. The Pharisees: not caricatured; Ezekiel 18:23, the rabbis' own use of
+Hosea 6:6; "an argument among Jews". The old wineskins: two readings. The
+Gentile limit (10:5-6) against 28:19: the critical view, then the order of
+Romans 1:16 and Matthew's own Gentiles. 10:23: Schweitzer and the skeptic
+first, then Chrysostom, the vindication readings, and the final coming with
+an unfinished mission; the closing line matches the Mark 13 note. Hell
+(10:28): who "the One" is; three views of hell's nature stated as views, no
+side. "Whoever denies Me" against Peter's restoration. "Not peace but a
+sword": a picture of division, never a warrant for violence (26:52; 5:9).
+Luke's "hate" against Matthew's "loves more", with the dissent noted.
+
+### Care lines included
+
+8:1-4: said once, plainly, for all the healings: the Bible does not teach that
+sickness comes from too little faith or that the unhealed did not believe
+enough (Paul's thorn, Trophimus, Timothy), and seeing a doctor is not a
+failure of faith; 8:14-17, 9:1-8 and 9:27-31 ("according to your faith") point
+back to it. 8:18-22: grief is not disobedience; caring for a dying parent is
+obedience. 8:23-27: "little faith" is not a rebuke of anxiety; getting help is
+wise. 8:28-34: mental illness is illness, with the Mark 5 path to help (a
+doctor, a pastor, or a crisis line). 9:32-34: no disability or illness is to
+be blamed on a spirit. 10:16-25: Jesus tells his messengers to flee danger.
+10:26-33: the warning of hell is not a scare; the afraid reader is met with
+11:28 and the sparrows; the grieving reader is told the Father was not absent.
+10:34-39: for a reader rejected by family for faith: not alone, not failed
+(Psalm 27:10; Mark 10:29-30); keep loving and keep the door open as far as is
+safe; if rejection turns to threats or harm, seeking safety is not disloyalty,
+with the police or a crisis line. No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` after each chapter. Then all 36 content-gate commands
+of ci.yml, one at a time: exit 0 each (validate-bible-notes: 66
+introductions, 1,189 chapter notes, 26 chapters in plain words;
+validate-no-emdash: 260 files, 0 em-dashes; search index 732 entries up to
+date; passage index 623 files match). `pnpm check`: clean. `pnpm test`: 146
+files passed, 7 skipped; 1,653 tests passed, 73 skipped. No build, so no
+dist/ and no lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient and rabbinic writer (all paraphrased);
+whether Jesus' "east and west" means Gentiles, scattered Jews, or both (given
+as readings); the exact meaning of "Iscariot" and "Zealot" (given as
+readings); the dating of Chrysostom's homily beyond "the late 300s".
+
+### Next
+
+Matthew 11 onward, in the same shape.
