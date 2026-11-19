@@ -403,3 +403,138 @@ Left out: Josephus on the Sadducees' end, Origen and Hippolytus on their
 canon, Tobit 3:8, m. Tamid 5:1, tefillin at Qumran, 613 commandments, the
 Targum of Isaiah 5, Leviticus 19:23-25, the Court of the Women and John 8:20,
 the roles of scribes in legal paperwork, and the Psalm 110 Jewish readings.
+
+## The plain notes on Mark 13 (continuation run, 2026-11-19)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Herod began rebuilding around 20 or 19 BC; work went on for decades (to about AD 63/64); Josephus: like a snow-covered mountain, parts covered with gold | 13:1-4 | Josephus, Jewish War 5.222-223; Antiquities 15.380; Schürer's date | Search: lexundria.com j_bj 5.222-226 (Whiston); rsc.byu.edu "The Temple of Herod"; library.biblicalarchaeology.org footnote; jewishencyclopedia.com Temple of Herod |
+| Revolt from 66; temple destroyed 70 | 13:1-4 | Earlier ledger (When, where, for whom) | Earlier ledger |
+| Arch of Titus, around AD 81, shows soldiers carrying the lampstand | 13:1-4 | The arch itself | Search: smarthistory.org; holylandphotos.org; bible-history.com |
+| Micah 3:12; Jeremiah 7:4 | 13:1-4 | BSB | BSB text |
+| Before or after 70: both views held | 13:1-4 | Earlier ledger (Marcus 1992; repository introduction) | Stated as views |
+| Theudas (about AD 45, the Jordan, Antiquities 20.97-98); the Egyptian prophet (Mount of Olives, walls to fall, Antiquities 20.169-172); Acts 5:36 and 21:38 | 13:5-13 | Josephus | Search: en.wikipedia.org Theudas and Egyptian (prophet); livius.org "The Egyptian Prophet"; lexundria.com j_aj 20.97. Said only that Roman soldiers scattered both movements (Theudas was beheaded; the Egyptian escaped) |
+| Acts 5:40; Acts 24 to 26 | 13:5-13 | BSB | BSB text |
+| Isaiah 26:17; Micah 7:6 | 13:5-13 | BSB | BSB text |
+| Daniel 9:27, 11:31, 12:11; 12:1 | 13:14-23 | BSB | BSB text |
+| Antiochus IV's pagan altar in the temple, around 167 BC, called the abomination of desolation in 1 Maccabees 1:54 | 13:14-23 | 1 Maccabees 1:54 | Search: biblicaltraining.org; biblestudytools.com; nocr.net ISBE. Sources give 168 or 167; the site says "around 167" |
+| Caligula ordered his statue set up in the temple around AD 40; Jews said they would rather die; delayed (Petronius, Agrippa); Caligula murdered January 41 | 13:14-23 | Josephus, Antiquities 18; Philo, Embassy to Gaius | Search: jewishencyclopedia.com Caligula; Young, JETS 62 (2019); encyclopedia.com Petronius. No section number given on the site |
+| The Gospels heard read aloud | 13:14-23 | Deep note (Justin, First Apology 67) | Said as "most early Christians heard the Gospels read aloud"; Justin not named |
+| Flat roofs with outside stairs; cloak left in the field; winter rain | 13:14-23 | Deep note; Acts 10:9 | Common knowledge of the land, not a source claim; kept general |
+| Eusebius, Church History 3.5.3: Jerusalem Christians warned, left for Pella; historicity debated | 13:14-23 | Eusebius | Search: en.wikipedia.org Flight to Pella; Koester, "The Origin and Significance of the Flight to Pella Tradition" (godawa.com PDF) |
+| Luke 21:20; 2 Thessalonians 2:3-4 | 13:14-23 | BSB | BSB text |
+| Three readings of the abomination (AD 70; future; both) | 13:14-23 | Deep note; standard positions | Stated as views, no names. Irenaeus (Against Heresies 5.25) not named: not checked |
+| Isaiah 13:10; Daniel 7:13-14; Deuteronomy 30:4 | 13:24-27 | BSB | BSB text |
+| Readings of 13:24-27 (second coming; AD 70 in prophetic picture-language; both) | 13:24-27 | Deep note | Stated as views, no names |
+| Fig tree bare in winter, late leaves; olive evergreen | 13:28-31 | Deep note; common botany | Kept general |
+| Genea in Mark 8:12, 8:38, 9:19 | 13:28-31 | Greek text in the repository | Repository |
+| C. S. Lewis, "The World's Last Night": "the most embarrassing verse in the Bible" | 13:28-31 | Lewis (essay 1952, collected 1960) | Search: cslewisinstitute.org; singjupost.com full text; kenschenck.blogspot.com. No date given on the site |
+| Isaiah 40:8 | 13:28-31 | BSB | BSB text |
+| Arians used 13:32; Athanasius: Christ spoke as man ("according to the flesh") | 13:32-37 | Athanasius, Discourses against the Arians 3.42-49 | Search: newmanreader.org discourse 3; bkv.unifr.ch NPNF Four Discourses |
+| Chalcedon 451: truly God and truly man in one person | 13:32-37 | Standard | Standard date; already in the deep note |
+| Luke 2:52; Isaiah 62:6 | 13:32-37 | BSB | BSB text |
+| Four night watches echoed in the passion (evening, night, cockcrow, morning) | 13:32-37 | Mark 14:17, 14:32-41, 14:72, 15:1 | BSB text. Lightfoot (1950) not named |
+
+Left out: Josephus on the Egyptian's numbers; Jesus son of Ananias; the
+portents in Josephus and Tacitus; the ninth of Av; Yohanan ben Zakkai;
+Colani, Schweitzer, Russell, Beasley-Murray, Wright, France, Stein, Scofield,
+Lindsey, Miller and Camping by name; Gregory of Nazianzus, the kenotic
+theologians; the Arch's date of 81 is given as "around".
+
+## The plain notes on Mark 14 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| A Passover riot around AD 48 to 50 under Cumanus: soldiers above the temple courts, a soldier's insult, thousands crushed | 14:1-11 | Josephus, Jewish War 2.224-227 | Search: lexundria.com j_bj 2.223-227 (Whiston: about ten thousand); workingwithcrowds.com incident report. The site says "thousands" |
+| Nard from a Himalayan plant, costly, imported | 14:1-11 | Encyclopedias; Pliny (not cited on the site) | Search: en.wikipedia.org Spikenard; studylight.org dictionaries. Pliny's prices conflict across sources and are not used |
+| A denarius a day's wage, so 300 denarii near a year's wages | 14:1-11 | Matthew 20:2; commentaries | BSB text; search as above |
+| Anointing a head an honor and how kings were anointed; anointing for burial | 14:1-11 | Psalm 23:5; 1 Samuel 10:1; Mark 14:8; 16:1 | BSB text |
+| Deuteronomy 15:11; Matthew's thirty pieces; John 12:6 | 14:1-11 | BSB | BSB text |
+| Lambs killed in the afternoon, eaten at night in the city; rooms for pilgrims; water-carrying usually women's work | 14:12-21 | Deep note; Mark 14:12 | Kept general; the Josephus lamb count was not used |
+| Psalm 41:9; Exodus 12 | 14:12-21 | BSB | BSB text |
+| The date of the Last Supper: Mark against John 18:28 and 19:14; harmonising readings; Annie Jaubert's calendar theory (and its critics); a farewell meal; theological arrangement | 14:12-21 | Jaubert, The Date of the Last Supper (French 1957, English 1965); Nodet, Biblica 91 (2010); BAS endnote "Was Jesus' Last Supper a Seder?" | Search: bsw.org Biblica 91; library.biblicalarchaeology.org endnote 5; mu.edu PDF. No date given for Jaubert; b. Sanhedrin 43a not used |
+| Mishnah Pesachim 10 (written down around AD 200): even the poorest reclines; four cups; Hallel; how much was fixed in Jesus' day debated | 14:22-26 | Mishnah | Search: sefaria.org Mishnah Pesachim 10 and sheets; jewishvirtuallibrary.org Four Cups. The Hallel as Psalms 113 to 118 is given as "most likely" |
+| Exodus 24:8; Jeremiah 31:31; Isaiah 53:12; Psalm 118:1; 1 Corinthians 11:24 | 14:22-26 | BSB | BSB text |
+| Views of "This is My body" (Catholic and Orthodox; Lutheran; Reformed; memorial) | 14:22-26 | Standard confessional positions | Stated as views |
+| Zechariah 13:7 | 14:27-31 | BSB | BSB text |
+| Gethsemane usually explained as "oil press" (Aramaic gat shemanim); exact site unknown | 14:32-42 | Lexicons; Corbo's 1956 excavation (not named) | Search: biblehub.com atlas; abarim-publications.com; en.wikipedia.org Gethsemane |
+| Abba Aramaic for father, used by children and grown children | 14:32-42 | Deep note; standard lexicons | The claim that Jeremias's "Daddy" is right was not made |
+| Isaiah 51:17 the cup of fury; Psalm 42:5; Hebrews 5:7 | 14:32-42 | BSB | BSB text |
+| Jesus' true human will and soul (the church's answer) | 14:32-42 | Standard (Third Council of Constantinople, 681, not named) | Stated as the church's answer. Celsus and Origen not named: not checked |
+| Care line: tell someone; crisis line or emergency service where you live | 14:32-42 | CLAUDE.md care standard | No number given |
+| Temple police and servants rather than Roman troops (suggested) | 14:43-52 | Deep note; Mark 14:43 | Stated as "suggest" |
+| Luke 22:51; Amos 2:16 | 14:43-52 | BSB | BSB text |
+| Views on the young man (Mark himself; a real person known to readers; a picture of flight; sindon in 15:46 and neaniskos in 16:5) | 14:43-52 | Haren, Biblica 79 (1998); Kuruvilla, JETS 54 (2011); Gundry | Search: bsw.org Biblica 79; ets.galaxie.com Kuruvilla PDF; biblehub.com. No scholar named on the site |
+| Caiaphas named in other Gospels; 1990 tomb, ossuary "Joseph son of Caiaphas"; identification questioned by some | 14:53-65 | Matthew 26:57; John 18:13; the ossuary (Israel Museum) | Search: en.wikipedia.org Caiaphas ossuary; cojs.org; library.biblicalarchaeology.org "The Tomb of Caiaphas" |
+| Mishnah Sanhedrin 4:1: capital trials by day, verdict of guilt the next day, so not on the eve of a Sabbath or festival; written down around 200; may be a later ideal | 14:53-65 | Mishnah (Danby 1919 translation) | Search: sacred-texts.com Danby tractate Sanhedrin; sefaria.org explanation 4:1; christianhistoryinstitute.org "Mistrial of the Millennium". Both views stated; no side taken |
+| Psalm 110:1; Daniel 7:13; Isaiah 53:7 | 14:53-65 | BSB | BSB text |
+| Matthew 26:73 Peter's speech gives him away | 14:66-72 | BSB | BSB text |
+| The curse in 14:71 has no object in the Greek | 14:66-72 | Greek text in the repository | Repository |
+| Some manuscripts lack the second crowing; most editors keep two | 14:66-72 | Repository chapter note (`text`) | Repository |
+
+Left out: the Josephus lamb count; Pliny's prices for nard; b. Sanhedrin 43a;
+Jeremias, Humphreys and Brown by name; Celsus, Origen, Maximus and Cullmann;
+Klausner, Winter, Cohn and Danby by name; m. Sanhedrin 5:2 and 7:5; m. Bava
+Kamma 7:7 on roosters; the claim that a servant girl could not give evidence.
+
+## The plain notes on Mark 15 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Pilate governor about AD 26 to 36 | 15:1-5 | Earlier ledger (Timeline and map) | Earlier ledger |
+| The Pilate stone: found 1961 at Caesarea by an Italian team (Frova); "prefect of Judea"; the only inscription all scholars agree names him; Israel Museum | 15:1-5 | The inscription | Search: en.wikipedia.org Pilate stone; madainproject.com; thecorebible.org. Narrowed in the editor's read from "the only ancient inscription known to name him", since a ring from Herodium inscribed "Pilatus" (published 2018) may also name him |
+| Tacitus, writing around 116: Christ executed under Tiberius by Pontius Pilate | 15:1-5 | Annals 15.44 | Search: en.wikipedia.org Tacitus on Jesus; earlychristianwritings.com. Paraphrased; the "procurator" title debate not raised |
+| Josephus: standards with the emperor's image brought in by night, withdrawn after protest; Philo charges greed, violence, theft; both accounts hostile | 15:1-5 | Josephus, Jewish War 2.169-174, Antiquities 18.55-59; Philo, Embassy to Gaius 299-305 | Search: julianspriggs.co.uk "Josephus Philo Pilate"; livius.org Pontius Pilate; mdpi.com Religions 11 (2020) on Pilate in Josephus and Philo. The aqueduct episode was not confirmed and is not used |
+| John 18:31; Acts 7 | 15:1-5 | BSB | BSB text |
+| Isaiah 53:7, 53:12, 50:6, 53:9; Mark 10:34 | 15 | BSB | BSB text |
+| The Passover release known only from the Gospels; some think it a literary creation; others note festival pardons elsewhere | 15:6-15 | HTR article on Barabbas; Ehrman; Wright (as summarised) | Search: cambridge.org HTR "Barabbas, the Scapegoat Ritual"; ehrmanblog.org; en.wikipedia.org Barabbas. m. Pesachim 8:6 not used (wording not confirmed) |
+| Barabbas means "son of the father" (Aramaic bar abba) | 15:6-15 | Standard lexicons | Common etymology; the irony is given as what "many readers have noticed" |
+| The "Christ-killer" charge and its harm, rejected; Nostra Aetate 4 (1965): "cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today" | 15:6-15 | Second Vatican Council, Nostra Aetate 4 | Search: jewishvirtuallibrary.org Nostra Aetate; ebsco.com research starter; forward.com; christianunity.va. Quoted in single quotes as a translation |
+| Acts 4:27 | 15:6-15 | BSB | BSB text |
+| Purple, crown, kneeling as royal honours; praetorium a Latin word | 15:16-20 | Earlier ledger (Latin loanwords); deep note | The "Hail, Caesar" parallel and the palace location were cut (not checked) |
+| Cicero called crucifixion the cruellest and most disgusting penalty | 15:21-32 | Cicero, Against Verres 2.5.165 (crudelissimum taeterrimumque supplicium) | Search: bible-history.com; michaelfbird.substack.com; stpaulcenter.com. Paraphrased |
+| Up to five hundred captured Jews crucified a day during the siege of 70 | 15:21-32 | Josephus, Jewish War 5.449-451 | Search: vision.org "Josephus and the Siege of Jerusalem"; jamestabor.com |
+| Giv'at ha-Mivtar, 1968: ossuary of Yehohanan; right heel bone with an iron nail and wood fragments; published 1970 (Tzaferis; Haas); Zias and Sekeles (1985) corrected details; a crucified man buried in a family tomb; such remains rare | 15:21-32 | Israel Exploration Journal 20 (1970); Zias and Sekeles, IEJ 35 (1985) | Search: en.wikipedia.org Jehohanan; cojs.org ossuary of Yehohanan; biblicalarchaeology.org "A Tomb in Jerusalem Reveals the History of Crucifixion". The site does not call it the only find (others have since been reported outside Israel) |
+| Cyrene in North Africa with a Jewish community; Acts 6:9; Rufus in Romans 16:13, identity uncertain | 15:21-32 | BSB; deep note | BSB text. The 1941 Kidron ossuary not used |
+| Hours counted from sunrise; third hour about 9, sixth noon, ninth 3 | 15:21-32 | John 11:9 (twelve hours of daylight); standard | Kept general |
+| Psalm 22:1, 7, 18, 24, 27; Psalm 69:21; Amos 8:9; Luke 22:37; Malachi 4:5 | 15 | BSB | BSB text |
+| Verse 28 absent from the oldest manuscripts | 15:21-32 | Repository chapter note (`text`) | Repository |
+| Myrrh-wine perhaps to dull pain | 15:21-32 | Deep note | Stated as "may have been"; b. Sanhedrin 43a not used |
+| Three readings of the cry (psalm of trust; real abandonment, bearing judgment, 2 Corinthians 5:21; speaking for humanity) | 15:33-39 | Deep note; standard positions | Stated as views, no names |
+| Two curtains; inner or outer debated; meanings (way opened, judgment, both); Hebrews 10:20 | 15:33-39 | Ulansey and others as summarised; JETS 48 (2005); Themelios on the rending of the veil | Search: ets.galaxie.com JETS 48.2; thegospelcoalition.org Themelios; mysterium.com. Josephus's description of the curtain not used |
+| The same verb for "torn" at 1:10 and 15:38 | 15:33-39 | Greek text in the repository; Mark 1 plain note | Repository |
+| Centurion the first human being in the story to call Jesus Son of God | 15:33-39 | Mark's text (demons in 3:11 and 5:7; the voice in 1:11 and 9:7) | BSB text |
+| Deuteronomy 21:23; Luke 23:51 | 15:40-47 | BSB | BSB text |
+
+Left out: Varus's two thousand crucified; Josephus, Jewish War 4.317; Philo's
+Carabas; the Antonia and the Via Dolorosa; Augustus as divi filius; the
+Church of the Holy Sepulchre; rolling and square blocking stones; Reimarus,
+Brown, Calvin, Augustine and Moltmann by name; Helen Bond and the Jewish
+scholars named in the deep note.
+
+## The plain notes on Mark 16 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Jews washed, wrapped and used spices, did not embalm as Egyptians did | 16:1-8 | Deep note; John 19:40 | Kept general |
+| Josephus: under the law women's testimony not accepted | 16:1-8 | Antiquities 4.219 | Search: lexundria.com j_aj 4.219 (Whiston); community.logos.com discussion. Mishnah Shevuot 4:1 not used (only a forum mention found) |
+| Celsus mocked Mary Magdalene as "a half-frantic woman", as Origen reports | 16:1-8 | Origen, Against Celsus, book 2 (numbered 55 or 59 by edition) | Search: bkv.unifr.ch Against Celsus (Crombie) with Greek γυνὴ πάροιστρος; ellopos.net. No section number given |
+| All four Gospels make women the first at the tomb; many historians weigh this | 16:1-8 | Matthew 28; Luke 24; John 20; deep note | BSB text; stated as "many historians think" |
+| White clothes mark the heavenly world (9:3) | 16:1-8 | BSB | BSB text |
+| Acts 20:7; Justin: Christians assemble on Sunday because of creation and because Jesus rose on that day | 16:1-8 | Justin, First Apology 67 | Search: logoslibrary.org apology1/67; bkv.unifr.ch First Apology; christianhistoryinstitute.org. Given as "partly" and "in the second century" |
+| Mark 8:31, 9:31, 10:34, 14:28; Isaiah 25:8; Daniel 12:2; Mark 4:41; Luke 24:9-11; John 20:18 | 16:1-8 | BSB | BSB text |
+| Sinaiticus and Vaticanus end at 16:8 (300s); Eusebius on the accurate copies; Irenaeus quotes 16:19 around 180; one Old Latin copy (Bobiensis) with a shorter ending instead, several Greek manuscripts with both (corrected in the editor's read from "a few manuscripts ... instead", to match the book page); most scholars think 9-20 added early; a minority defends them; printed in Bible notes for over a century; nothing in 9-20 needed for any belief | 16:1-14 | Earlier ledger (The ending) and the book page's "The ending of Mark" | Earlier ledger; wording kept consistent with the book page |
+| Vaticanus leaves the next column blank after 16:8, an unusual gap; its meaning debated | 16:1-8 | Codex Vaticanus | Search: biblicaltraining.org NT605 lesson 34; textandcanon.org "A case for the longer ending"; journals.muni.cz (2024). Not called "the only" gap (one source counts four) |
+| Mark 16:8 ends with ἐφοβοῦντο γάρ | 16:1-8 | Greek text | Search as above; Greek text in the repository |
+| Views: Mark meant to stop at 8; the last page lost or unfinished; Matthew and Luke continue | 16:1-8 | Deep note; sources above | Stated as views, no names |
+| John 20:11-18; Luke 24:11, 13-35; 1 Corinthians 15:4-5; Paul writing in the 50s | 16:9-14 | BSB; standard dating of 1 Corinthians | BSB text |
+| Acts 16:18; 2:4; 28:3-6; Acts 1:9; Psalm 110:1; Mark 12:36, 14:62 | 16:15-20 | BSB | BSB text |
+| Snake handling in some Appalachian churches since about 1910; deaths, including leaders (George Hensley, 1955, not named); state laws from 1940 | 16:15-20 | Encyclopedias | Search: en.wikipedia.org Snake handling in Christianity; georgiaencyclopedia.org Snake Handlers; christianhistoryinstitute.org "They Shall Take Up Serpents"; encyclopedia.com |
+| Matthew 4:7; Deuteronomy 6:16 | 16:15-20 | BSB | BSB text |
+| Views of 16:16 and of receiving 9-20 | 16:15-20 | Deep note | Stated as views |
+
+Left out: m. Shabbat 23:5; Ignatius, the Didache, Pliny's letter; the
+Nazareth Inscription; Kloner on rolling stones; 2 Maccabees 3:26 and
+Josephus on angels as young men; the Amidah and m. Sanhedrin 10:1; Jerome's
+letter to Hedibia; the Eusebian canons and Family 1; Tatian; the Freer Logion;
+every scholar named in the deep note on the ending and on the resurrection.

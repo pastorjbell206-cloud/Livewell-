@@ -389,3 +389,124 @@ screenshots, since no code changed.
 **Not verified:** the new chapters were not looked at in a browser.
 
 **Next:** Mark 13.
+
+## Continuation: Mark 13 to 16 (2026-11-19)
+
+Same pattern, same data shape (`client/public/bible/notes/mark/plain/<n>.json`).
+No code changed; the deep notes are unchanged underneath. The chapters were
+written and committed on an earlier run that a machine restart cut off; this
+run read them once as an editor, fixed two claims, ran the gates and wrote
+this section.
+
+| Chapter | Passages | Plain words added |
+|---|---|---|
+| Mark 13 | 6 (not one stone left on another; the beginning of birth pains; the abomination of desolation; the Son of Man coming in the clouds; the lesson of the fig tree; no one knows the day: keep watch) | 3,217 |
+| Mark 14 | 8 (a plot, a jar of perfume, and a betrayal; the Passover room and the betrayer at the table; this is My body, this is My blood; you will all fall away; Gethsemane; the arrest; before the high priest; Peter denies Jesus) | 4,240 |
+| Mark 15 | 6 (Jesus before Pilate; Barabbas released, Jesus condemned; the soldiers mock the king; the crucifixion; darkness, the cry, and the torn curtain; the women watching, and the burial) | 3,165 |
+| Mark 16 | 3 (he has risen, he is not here; the longer ending: appearances and unbelief; the longer ending: sent into all the world) | 1,941 |
+| Total | 23 | 12,563 |
+
+**The whole book.** Mark 1 to 16 now all open with the plain layer: 95
+passages, 44,510 plain words. (Counted by script: the words of the five prose
+fields, `happening`, `hearers`, `ot`, `hard` and `asks`; titles and verse
+ranges not counted.)
+
+**Sources.** Every claim is in `docs/work/elite/bdoor-ledger.md` under "The
+plain notes on Mark 13" to "Mark 16", each with its source and the search that
+checked it, or the earlier ledger, the Berean Standard Bible text, or the
+repository. Main sources: Josephus (Jewish War 5.222-223, 2.224-227,
+5.449-451; Antiquities 20.97-98, 20.169-172, 4.219); 1 Maccabees 1:54;
+Eusebius, Church History 3.5.3 (Pella, given as debated); C. S. Lewis, "The
+World's Last Night" (one verbatim phrase); the Mishnah, marked as written down
+around AD 200 (Pesachim 10, Sanhedrin 4:1); the Caiaphas ossuary (1990, the
+identification given as questioned by some); the Pilate stone (1961); Tacitus,
+Annals 15.44; Josephus and Philo on Pilate; Cicero, Against Verres 2.5.165
+(paraphrased); the Giv'at ha-Mivtar heel bone (1968); Nostra Aetate 4 (1965,
+quoted); Origen, Against Celsus (Celsus's "half-frantic woman"); Justin, First
+Apology 67; Codex Sinaiticus and Vaticanus, Eusebius and Irenaeus on the
+ending; encyclopedias on Appalachian snake handling.
+
+**The editor's read (this run).** Two fixes, in one commit:
+- Mark 15:1-5 said the Pilate stone "is the only ancient inscription known to
+  name him". A ring from Herodium inscribed "Pilatus" (published 2018) may
+  also name him, so the line now says it is "the only inscription that
+  scholars all agree names him". The ledger row says why.
+- Mark 16:9-14 said "a few manuscripts have a different, shorter ending
+  instead". Mark's book page says one Old Latin manuscript (Bobiensis) alone
+  ends that way and several Greek manuscripts carry both, so the line now says
+  "One old Latin copy has a different, shorter ending instead, and several
+  Greek manuscripts have both." The same passage's "Most Bibles print verses 9
+  to 20 with a note" now says "Most modern Bibles", as the book page does (the
+  King James Version prints them without comment).
+
+Nothing else was changed. The read found: no em-dash; no first-person "I" in
+the notes' own voice and nothing about James (the occasional inclusive "us" is
+the same as in Mark 1 to 12); no quotation that is not Scripture, a checked
+source, or marked as a translation.
+
+**Narrowed or left out** (the ledger's "Left out" lines). Mark 13: Josephus on
+the Egyptian's numbers; Jesus son of Ananias; the portents in Josephus and
+Tacitus; the ninth of Av; Yohanan ben Zakkai; every modern interpreter and
+date-setter by name; the kenotic theologians; the Arch of Titus given as
+"around 81". Mark 14: the Josephus lamb count; Pliny's prices for nard;
+b. Sanhedrin 43a; the scholars named in the deep note on the trial and the
+supper; m. Sanhedrin 5:2 and 7:5; m. Bava Kamma 7:7 on roosters; the claim that
+a servant girl could not give evidence. Mark 15: Varus's two thousand
+crucified; Philo's Carabas; the Antonia and the Via Dolorosa; Augustus as son
+of a god; the Church of the Holy Sepulchre; the blocking stones; Pilate's
+aqueduct (not confirmed); m. Pesachim 8:6 (wording not confirmed); the
+"Hail, Caesar" parallel; every scholar named in the deep note. Mark 16:
+m. Shabbat 23:5 and Mishnah Shevuot 4:1; Ignatius, the Didache and Pliny; the
+Nazareth Inscription; Jerome's letter to Hedibia; the Freer Logion; every
+scholar named in the deep note on the ending and the resurrection.
+
+**Care.** Gethsemane (14:32-42) and the cry from the cross (15:33-39) each
+speak to a reader in sorrow that feels like dying or forsaken by God: say it
+to God and to someone near, and if you have thought of ending your life or are
+in danger, reach out today to a crisis line or emergency service. Nothing of
+self-harm is spelled out. The crucifixion is told plainly ("And they crucified
+Him"), with no lingering on the body; one passage says it is wise to follow
+Mark in not dwelling on the cruelty. Mark 16:15-20 answers "Should Christians
+handle snakes or drink poison to prove their faith?" with "No.", names the
+deaths, and sets Matthew 4:7 against putting God to the test.
+
+**Jews and Judaism.** Mark 14 names the particular people who condemned Jesus
+(the high priest, the chief priests, elders and scribes of that council) and
+says Mark does not blame the Jewish people, since Jesus, his disciples and the
+crowds who loved him were Jews. Mark 15:6-15 names the old "Christ-killers"
+misuse once and rejects it plainly, quotes Nostra Aetate 4, and places all
+people inside the guilt with Acts 4:27. The Roman governor gives the order and
+Roman soldiers carry it out.
+
+**Contested matters, stated without taking a side.** Mark 13: whether Mark
+wrote before or after AD 70; the abomination of desolation (AD 70, a future
+enemy, or both); verses 24 to 27 (the second coming, the fall of Jerusalem in
+the prophets' picture-language, or both), with the creeds' shared confession
+that Christ will come again; "this generation" in verse 30 (three readings,
+with C. S. Lewis's "most embarrassing verse" and the skeptic's objection
+stated fairly); what the Son did not know (Arius, Athanasius, Chalcedon). No
+dates and no end-times timetable; verse 32 is set against every date-setter.
+Mark 14: why Judas did it; God's purpose and Judas's guilt; the date of the
+Last Supper against John (four answers, Jaubert named, none favored); "This is
+My body" (Catholic and Orthodox, Lutheran, Reformed, memorial); the young man
+who fled; whether the night hearing was lawful (the Mishnah's rules and the
+case against using them); one rooster crow or two. Mark 15: the Passover
+release of a prisoner; the cry of forsakenness (psalm of trust, real
+abandonment, speaking for humanity); the torn curtain (way opened, judgment,
+both; inner or outer). Mark 16: whether Mark meant to end at verse 8 or the
+ending was lost; whether verses 9 to 20 are Scripture (received by some, read
+as an ancient witness by others, with no teaching built on them alone); verse
+16 and baptism. Mark 16 agrees with the book page on the ending.
+
+**What was run** (after `git merge` of the latest
+`claude/todo-implementation-hhp4bm`, which was already up to date; one at a
+time): `validate-bible-notes.mjs` passed (16 chapters in plain words); all 36
+commands of the CI content-gates step exited 0; `pnpm check` passed; `pnpm
+test`: 146 files and 1,651 tests passed, 7 files and 73 tests skipped. No
+build, Lighthouse or screenshots, since no code changed.
+
+**Not verified:** the four chapters were not looked at in a browser. The
+Herodium ring (the reason for narrowing the Pilate stone line) was not
+searched on this run; the narrowed line claims less either way.
+
+**Next:** Mark is finished. The plain layer covers the whole book.
