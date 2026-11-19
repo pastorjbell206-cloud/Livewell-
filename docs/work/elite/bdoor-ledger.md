@@ -4927,3 +4927,22 @@ title; how many of the believers were pilgrims; the Theodotus inscription
 Left out: same-day burial custom (not searched); the interpolation theory of
 Josephus's Theudas; the sagan; Peter's shadow as magic (Luke "reports
 without teaching it as a method").
+
+## The plain notes on Acts 6 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/6.json`. 2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hellenists Greek-speaking Jews, many from the Diaspora; Hebraic Jews Aramaic-speaking; both fully Jewish | 1-7 | Deep note `historical`; Jewish-life portrait | Repository |
+| Widows' need; Exodus 22:22; Deuteronomy 10:18; Isaiah 1:17; Exodus 18:22; Numbers 27:18; Luke 22:27 | 1-7 | BSB | Repository |
+| Seven Greek names; Nicolas a proselyte from Antioch (6:5) | 1-7 | BSB | Repository |
+| Irenaeus (about 180) traced the Nicolaitans (Revelation 2:6) to Nicolas; many doubt it | 1-7 | Irenaeus, Against Heresies 1.26.3 | Search: newadvent.org Catholic Encyclopedia "Nicolaites"; Wikipedia "Nicolaism". Paraphrased |
+| The seven as first deacons (many, from early times) or a group for one task; Philip "the evangelist, one of the Seven" (21:8); Philippians 1:1; 1 Timothy 3:8-13; church orders | 1-7 | Deep note `hard`; BSB | Stated as views. Irenaeus calling Stephen "the first deacon" not used (not found in the search) |
+| Libertini: freed slaves or their descendants; many think descendants of Jews taken to Rome after Pompey took Jerusalem in 63 BC (Philo); others other origins; Greek-speaking | 8-15 | Philo, Embassy to Gaius 23 (155) as cited; reference works | Search: kingjamesbibleonline.org Strong's/Thayer; israelbiblicalstudies.com (Shirokov); Wikipedia "Synagogue of the Libertines". 63 BC from the Jewish-life portrait |
+| Theodotus inscription (1913), "for the reading of the law and for the teaching of the commandments", guest rooms; link uncertain | 8-15 | Inscription | worlds-ledger (verified) |
+| Cilicia Saul's province (22:3) | 8-15 | BSB | Repository |
+| Exodus 34:29; Mark 14:57-58 | 8-15 | BSB | Repository |
+
+Left out: the "Libyans" reading of the synagogue's name; the number of
+synagogues in 6:9; Stephen as "first deacon" in Irenaeus.
