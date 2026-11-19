@@ -1696,3 +1696,46 @@ Klausner, Winter, Cohn, Danby, Brown, Catchpole, Maccoby, Klassen, Meier,
 Barth, Borges and the Gospel of Judas by name; Jeremias, Jaubert and
 Humphreys (the date question is a pointer to Mark 14); the claim that no
 governor of Judea had twelve legions.
+
+## The plain notes on Matthew 27 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/27.json`. Eight searches for this
+chapter. Where Mark 15 tells the event, its verified claims and its wording
+are reused word for word (Pilate, Tacitus, the "Christ-killers" paragraph,
+Nostra Aetate, Acts 4:27, the mocking, crucifixion, the three readings of the
+cry and its care line, the curtain, the burial). The crisis line after
+Judas's death is the Mark 14 wording word for word.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Judas's death told in one sentence in Matthew's own word (hanged himself) | 1-10 | BSB 27:5 | BSB text; no further detail given |
+| Acts 1:18-19 a different account; explanations: two stages; priests bought the field in his name; two tellings of remembered facts | 1-10 | Commentaries; skeptical replies | Search: biblehub.com "Acts 1:18 vs Matthew"; readingacts.com; jamesbishopblog.com (skeptical); ehrmanblog.org forum. No side; Acts's details not described |
+| 27:9 credited to Jeremiah: composite of Zechariah 11 with Jeremiah 18-19 and 32; "spoken" not "written"; a slip; the earliest manuscripts read Jeremiah | 1-10 | Menken, Biblica 83 (2002); commentaries | Search: bsw.org Biblica 83 Menken; biblehub.com "Is Matthew 27:9 a textual error?"; en.wikipedia.org Matthew 27:9. The claim that Augustine and Jerome called it a mistake was not used |
+| Zechariah 11:13; Jeremiah 19:1-2, 11; 32:9; 2 Samuel 17:23 (Ahithophel) | 1-10 | BSB | BSB text; Ahithophel given as what "some readers notice" |
+| "You bear the responsibility" in 27:4 and 27:24 | 1-10, 15-26 | BSB | BSB text |
+| Crisis lines (Mark 14 wording); 26:28 | 1-10 | Mark 14 plain note | Repository |
+| Pilate about AD 26 to 36; Pilate stone 1961; Tacitus, Annals 15.44 around 116 | 11-14 | Earlier ledger (Mark 15) | Earlier ledger |
+| Josephus, Antiquities 18.63-64: expanded by Christian copyists; most scholars think the original said Pilate condemned Jesus to the cross on the accusation of leading men | 11-14 | Josephus; the "authentic core" consensus | Search: en.wikipedia.org Josephus on Jesus (and talk page); posenlibrary.com Testimonium; undeceptions.com. Paraphrased |
+| Isaiah 53:7; 20:19; Psalm 2:2 | 11-14 | BSB | BSB text |
+| Pilate's wife only in Matthew; later tradition names her Procula; honoured as a saint by the Orthodox and Ethiopian churches; Origen (Commentary on Matthew) thought the dream meant to turn her | 15-26 | Encyclopedias | Search: christianhistoryinstitute.org Oct 27; en.wikipedia.org Pontius Pilate's wife (Procula); christianity.com. Feast days not given; "Claudia" not given |
+| Dreams in 1:20 and 2:12 | 15-26 | BSB | BSB text |
+| Deuteronomy 21:6-7 the hand-washing rite; Joshua 2:19; 2 Samuel 1:16; Jeremiah 26:15; Deuteronomy 24:16; Isaiah 53:12 | 15-26 | BSB | BSB text |
+| 27:25 as one crowd on one morning (27:20), a legal formula, the irony with 26:28; Oberammergau and passion plays; Christ-killers paragraph, Nostra Aetate 4, Acts 4:27 (Mark 15 wording); "This site rejects it" (book page) | 15-26 | Book page ledger (Cargal; Oberammergau); Mark 15 ledger | Earlier ledger; wording kept consistent with the book page |
+| How far Matthew's conflict with synagogue leaders shaped the scene is debated | 15-26 | Deep note; book page | Stated as debated; no names |
+| Scarlet robe and the staff in Matthew; purple in Mark | 27-31 | BSB comparison | BSB text. The claim that scarlet was a soldier's cloak was cut |
+| Crucifixion (Mark 15 wording); "kept watch" (27:36); 4:3; Psalm 22:7, 8, 18; Psalm 69:21; 16:25; 20:28; Mark's myrrh | 32-44 | BSB; earlier ledger | BSB text |
+| "Eli" closer to the Hebrew of the psalm, "Eloi" Aramaic; two explanations | 45-50 | Bible dictionaries | Search: biblicaltraining.org "Eloi, Eloi"; biblestudytools.com dictionary. Stated as views |
+| Readings of the cry and care line (Mark 15 wording); Psalm 22:1, 24, 27; Amos 8:9; Malachi 4:5; 2 Corinthians 5:21 | 45-50 | Mark 15 plain note; BSB | Repository; BSB text |
+| 27:52-53 only in Matthew; read as event, or as prophetic picture-language (including by some with a high view of Scripture); the skeptic's question; the reply about single sources | 51-56 | JBL 2003 (Waters); Geisler, JISCA 2013; Wikipedia "Matthew 27:53" | Search: en.wikipedia.org Matthew 27:53; gospelstudies.org.uk JISCA 6.1; bibleref.com. Licona, Geisler and the 2011 controversy not named |
+| Ezekiel 37:12; Isaiah 26:19; Daniel 12:2; Exodus 26:33; Hebrews 10:20; 14:33; 20:20-21; 27:38 | 51-56 | BSB | BSB text |
+| Deuteronomy 21:23; Isaiah 53:9; John 19:38; the burial (Mark 15 wording) | 57-61 | BSB; earlier ledger | BSB text |
+| The guard only in Matthew; the skeptic's case (answering the theft charge; no guard on Friday night); replies (single sources; the rumour concedes the empty tomb); "You have a guard" Roman or temple guard; the Gospel of Peter has guards, dependence debated | 62-66 | Brown and the Jesus Seminar as cited; Craig; McGrew; Torley | Search: reasonablefaith.org "The guard at the tomb"; secularfrontier.infidels.org (Torley); crossexamined.org. No names on the site |
+| Mark 15:42; 12:40; 16:21; Psalm 2:4; 28:11, 14; 1 Corinthians 15:3-8 | 62-66 | BSB; earlier ledger (Paul in the 50s, Mark 16) | BSB text |
+
+Left out: Papias on Judas (Apollinaris); the Akeldama tombs and the
+Hinnom site; Thallus, Phlegon and Africanus on the darkness; Josephus on the
+temple gate; Susanna 46; Melito, Origen on 27:25, the Roman Catechism, We
+Remember, Benedict XVI, Cargal, Crossan and Cohen by name; the reading of
+"our children" as the generation of AD 70 (not checked this run); Licona and
+Geisler; the harrowing of hell; Procula's feast days and the letter to Fulvia;
+the claim that the soldiers were recruited locally.
