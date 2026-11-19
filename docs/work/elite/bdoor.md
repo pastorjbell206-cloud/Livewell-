@@ -2233,3 +2233,64 @@ generally, without a document.
 ### Next
 
 John 17 onward, in the same shape.
+
+## Continuation: John 17 to 21 (2026-11-19)
+
+This run finishes John. All five chapters were written in order, and none was left out.
+
+### Chapters 17 to 21 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| John 17 | 4 (Father, the hour has come; Holy Father, protect them; not of the world, sanctify them by the truth; that they may all be one) | 3,536 |
+| John 18 | 6 (Whom are you seeking? I am He; to Annas, and a fire in the courtyard; I have spoken openly, and Peter denies again; before dawn, to Pilate's headquarters; my kingdom is not of this world, what is truth?; not this man, but Barabbas) | 4,045 |
+| John 19 | 8 (here is the man; where are You from? the greater sin; we have no king but Caesar; what I have written, I have written; the seamless tunic, and his mother; I am thirsty, it is finished; not one of His bones will be broken; Joseph, Nicodemus, and a new tomb) | 5,481 |
+| John 20 | 5 (the empty tomb and the grave cloths; Mary Magdalene meets the risen Jesus; as the Father has sent Me; Thomas: My Lord and my God; why this book was written) | 3,786 |
+| John 21 | 5 (breakfast on the shore; do you love Me? feed My sheep; when you are old, and follow Me; what is that to you? you follow Me; this is the disciple who testifies) | 3,447 |
+| Total | 28 | 20,295 |
+
+Each chapter note carries `"plain": true`. Every chapter of Matthew, Mark and John now has its plain layer.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field (happening, hearers, ot, hard, asks) and read: all 28 sit under their right headings, and each "Old Testament behind it" names Old Testament books. 20:30-31 was first written without a hard question; one was added so the passage has all five parts. `validate-bible-notes` passed after each chapter with no exceptions (`OT_FIELD_KNOWN` stays empty), and `validate-no-emdash` stayed clean.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on John 17" to "21". 32 web searches (7, 5, 8, 8, 4). New: David Chytraeus and "the high priestly prayer"; Lumen Gentium 8 and Unitatis Redintegratio (1964); the Orthodox view of unity (stated generally); the Lausanne Covenant (1974), section 7, quoted; Edinburgh 1910 and the World Council of Churches (Amsterdam, 1948); Origen, Against Celsus 3.10-12; speira and chiliarchos; Annas and his five sons (Josephus); the Praetorium debate; P52 (John Rylands Library, published 1935, dated to the 100s); Bacon's "Of Truth" (1625); "friend of Caesar" (Sejanus link stated as disputed); the hour in John 19:14 against Mark 15:25; Josephus, Antiquities 3.161 on the high priest's woven garment; the "paid in full" claim for tetelestai (checked, found doubtful, NOT used: the page says nothing about receipts); breaking the legs; Augustine, Tractate 120, and Chrysostom on the blood and water; a hundred litrai (about 33 kilograms); Ecce homo and INRI; Gregory the Great's Homily 33 (591) and the 2016 feast of Mary Magdalene; Trent, the Orthodox mystery of confession, Luther's Office of the Keys, and the Reformed proclamation reading of 20:23; Suetonius, Domitian 13; emphusaō in the Greek of Genesis 2:7; Jerome and Augustine on the 153 fish; agapaō and phileō; Peter's death in 1 Clement and Eusebius (marked as tradition); Pastor Aeternus and Catechism 881 on John 21. Creed wording is copied from the site's Nicene Creed page.
+
+### Cut or narrowed
+
+Cut because they could not be confirmed, or were doubtful: the "paid in full" receipts; Ut Unum Sint and Käsemann; the year 1054 (written as "the churches of East and West have parted"); the number of denominations; Cyprian on the seamless tunic (written as "many Christians"); Salome as Mary's sister; the Humphreys and Waddington dates; Trent's year and canon wording; the Small Catechism's "as valid and certain" sentence; Domitian's refusal of the title; the 1969 calendar change; Catechism 553; Oppian, the gematria guesses and every modern scholar by name (Maccoby, Klassen, Barth, Bammel, Barbet, Crossan, Trench, Carson, Barrett, Brown); the date of Peter's death. Narrowed: P52's size not given; "friend of Caesar" a title in the view of "some scholars"; the Antonia pavement "later than Jesus' day, most archaeologists think"; "a few old copies of John do read 'third hour'" with no manuscript named; Chrysostom's homily number not given.
+
+### Contested matters, and how they are stated
+
+17:2 God's choosing (the Mark 4 and Matthew 13 sentence). 17:3 "the only true God" (Arius and Jehovah's Witnesses, "sincere, and they deserve a patient answer, not scorn"; pointer to 14:28 and the creeds). 17:12 Judas (three views; "These notes do not say what God did with Judas. That belongs to God."). 17:14-16 "not of the world" (both misuses; "This prayer gives no one leave to despise anyone."). 17:21 unity (Catholic, Orthodox, Protestant, each as its teachers state it; the ecumenical movement; the skeptic's charge granted; "Christians are divided, and the division has done real harm. Every tradition has had a hand in it"; "These notes take no side among the churches."). 18:6 the falling back (two readings). 18:10-11 the sword (pointer to Matthew 26). 18:28 the date (Mark 14 wording). 18:36 two misuses named once, plainly, no party named. 19:11 "the one who handed Me over" (Caiaphas, Judas, all). 19:14 the day (Mark 14's four views) and the hour (three explanations, no side). 19:23 the tunic (priestly reading, plain reading, unity reading). 19:26-27 Mary and the disciple (Catholic and Orthodox; many Protestants). 19:34 the blood and water (evidence; the sacraments and Eve; the Spirit; 1 John 5:6). 19:38-42 the burial (the skeptic's case and the replies; the creeds' "buried"). 20:17 "do not cling". 20:22 and Pentecost (two explanations). 20:23 Catholic, Orthodox, Lutheran and Reformed and other Protestant readings, each as its teachers state it, "These notes take no side." 20:28 Domitian (some and others). 20:31 the two readings of "believe". 21 the chapter's place (book page wording). 21:11 the 153 (guesses named as guesses). 21:15-17 the two words for love (both views, "Scholars are divided between these views. These notes take no side.") and Peter's office (the Matthew 16 pattern: Vatican I and Catechism 881; the Orthodox; many Protestants). 21:18-19 Peter's death (Scripture's hints; 1 Clement; Eusebius and Origen, "early and widely held tradition ... it should be called tradition"). 21:24 the "we" (book page).
+
+**19:15, the sentence on the page.** "‘We have no king but Caesar’ was said by the chief priests, not by the Jewish people." The "Christ-killers" misuse is named and rejected there in full, once, in the Matthew 27 wording with Nostra Aetate 4 and Acts 4:27 word for word; 18:39-40 and 19:1-7 point to it. Each place where "the Jews" bites in John 18 to 20 says who is meant (the chief priests and their officers; the authorities), with the book page named.
+
+**Mary Magdalene, the sentence on the page.** "The Gospels never say that Mary Magdalene was a prostitute. That idea came much later." Then Gregory's sermon of 591, the Western picture, the Eastern churches keeping the women apart, and the 2016 feast.
+
+### Care lines included
+
+17:6-12 (the reader who fears being a Judas). 18:19-27 (the Matthew 5 abuse line word for word). 19:23-27 (the bereaved parent: the Matthew 2 line word for word). 20:19-23 (the reader carrying an unforgiven sin). 20:24-29 (doubt met, not scolded). 21:15-17 (the reader who has failed and wonders if they can come back). 21:18-19 (not a call to seek suffering).
+
+### The rendered pages: John 12 to 21
+
+All five chapters were committed first. `pnpm build`, then `scripts/serve-like-vercel.mjs` on port 4605, and a Playwright script at 390 wide (deviceScaleFactor 1; `/api/trpc`, `/api/track` and `/_vercel/*` stubbed) opened John 12 to 21, scrolled until the plain section loaded, and compared each passage's heading, the order of its part headings and the first 60 characters under each with the data file. Result: 55 of 55 passages matched in all 10 chapters; no sideways scroll; no console errors; no failed requests. Screenshots of John 14, 19 and 21 read clean (`/home/user/elite-shots/bdoor/run1221-john-{14,19,21}-390.png` and `-passage.png`). Server stopped; dist/ deleted; no lh-*.json.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass. At the end, all 36 commands of the content-gates step, one at a time: exit 0 each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 65 chapters in plain words; validate-no-emdash: 260 files, 0 em-dashes; search index 732 entries up to date; passage index 623 files match; verify-sources 22 texts intact). `pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped; 1,657 tests passed, 73 skipped. `pnpm build`: passed.
+
+### Still unverified
+
+The Orthodox positions on unity (17:21) and confession (20:23) and the Catholic and Orthodox reading of 19:26-27 are stated generally, without a document. The Reformed reading of 20:23 rests on study-Bible and teaching pages, not a confession.
+
+### The whole book, and the three Gospels (counted by script)
+
+John 1 to 21: 21 chapters, 123 passages, 77,812 plain words. Mark: 16 chapters, 95 passages, 44,581 words. Matthew: 28 chapters, 167 passages, 103,646 words. The three Gospels together: 65 chapters, 385 passages, 226,039 plain words.
+
+### Next
+
+John is finished. Luke is the Gospel still without a plain layer.
