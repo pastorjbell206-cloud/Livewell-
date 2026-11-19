@@ -3990,3 +3990,155 @@ uncertain).
 ### Next
 
 Genesis 26 onward in plain words, in the same shape.
+
+## Continuation: Genesis 26 to 33 (2026-11-19)
+
+Eight chapters in plain words, in the shape of Genesis 1 to 25: each
+passage's third part is `later` ("Where the Bible takes this up"), never
+`ot`; each chapter note gained only `"plain": true` at its end (the diff
+changes its closing lines and nothing else). After each chapter every
+passage was printed field by field and read: every text sits under its
+right heading, and `validate-bible-notes` passed with no exception (it
+caught four quotations not word for word, in 26:27, 27:29, 30's Leviticus
+19:13, 33:14 and Joshua 24:32, where a "..." had joined two parts of a
+verse; and "journey" outside a quotation twice; all corrected before each
+commit).
+
+### Chapters 26 to 33 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Genesis 26 | 5 (‘Do not go down to Egypt’; ‘She is my sister’, a third time; wells, envy and room; ‘I am with you’ at Beersheba, and an oath; Esau's wives) | 2,826 |
+| Genesis 27 | 5 (Isaac plans to bless Esau; Rebekah's plan; ‘The voice is the voice of Jacob’; ‘Bless me too, O my father’; Esau's grudge, and Jacob sent away) | 3,159 |
+| Genesis 28 | 5 (Isaac sends Jacob away, with a blessing; Esau tries to please his father; a stairway, and ‘I am with you’; ‘Surely the LORD is in this place’; Jacob's vow, and a tenth) | 2,412 |
+| Genesis 29 | 4 (Rachel at the well; seven years for Rachel; the deceiver deceived; Leah, unloved, and seen) | 2,337 |
+| Genesis 30 | 6 (‘Give me children, or I will die’; Zilpah's sons; mandrakes; God remembered Rachel; Laban's bargain; peeled branches) | 2,684 |
+| Genesis 31 | 5 (‘Go back to the land of your fathers’; flight, and stolen gods; Laban searches the tents; ‘Twenty years I have served you’; Mizpah: a heap of stones between two wary men) | 2,866 |
+| Genesis 32 | 6 (the camp of God; Esau is coming, with four hundred men; Jacob's prayer; a gift sent ahead; wrestling until daybreak; ‘I have seen God face to face’) | 2,788 |
+| Genesis 33 | 4 (Esau runs to meet him; ‘Like seeing the face of God’; two roads; home at Shechem) | 1,973 |
+| Total | 40 | 21,045 |
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Genesis 26" to "33". 14
+web searches (1, 2, 1, 0, 2, 2, 4, 2). Main sources: Mishnah Kiddushin 4:14
+on 26:5; Nachmanides' question on Jacob marrying two sisters; commentaries
+on why Isaac's blessing could not be withdrawn (two readings, the text does
+not fully explain); readings of Hebrews 12:17 (ASV ‘no place for a change
+of mind’); sullam and Akkadian simmiltu (NET note), the link doubted by
+others; mandrakes (dudaim); sheep white and goats dark (older
+commentaries); teraphim (Encyclopedia of the Bible; van der Toorn's
+ancestor view as "some scholars"); Mizpah as a wary oath; the name Israel
+(‘God strives’ or ‘God rules’, root uncertain); Genesis Rabbah 77:3 and
+Rashi (Esau's guardian angel); Justin Martyr, Dialogue with Trypho 125-126;
+gid hanasheh today; Genesis Rabbah 78:9 on the dots over ‘kissed him’; the
+Amarna prostration formula. Site wording reused word for word: the Genesis
+21 Philistines paragraph; the Genesis 23 Hittites sentence; the Genesis 12
+"What was done to you was wrong, and it was not your fault" and "These
+notes make no claim about any modern state, border or conflict"; the
+Genesis 16 sentences on slavery ("The Bible does not hide that its great
+families held slaves and used them. It shows us the harm, so that we can
+see it."); the Luke 1 childlessness lines (Genesis 25 form); the Genesis 23
+crisis line sentence; the book page's Nuzi caution; pointers back to the
+notes on 12:4-9 (land), 14:17-20 (tithe), 20 (the wife-sister stories) and
+25:19-26 (election); the Honest Answer ‘Why didn't the Bible just ban
+slavery?’ named.
+
+### Cut or narrowed
+
+Cut: "the Hittites have Hebrew-sounding names"; Nuzi tablets on spoken
+blessings; Chrysostom on Hebrews 12:17; Gezer and Arad pillars; Beitin;
+Mesopotamian dowry documents; wine in Laban's trick; Leah's name; selective
+breeding and hidden traits (a science claim); Hammurabi's herding law;
+"Isaac's dread to his enemies"; Samael; Maimonides on a vision; the Zarqa;
+Tell Balata, Labayu, Tell Deir Alla, the Mari donkey idiom, Shalem as a
+place. Narrowed: Haran "hundreds of miles" away; Mahalath and Basemath
+"many readers take her to be"; teraphim as ancestor figures "some scholars
+think"; Fear of Isaac "scholars debate its exact sense"; Luke 15 "an echo of
+shape, not a quotation".
+
+### Contested matters, and how they are stated
+
+26:5 (three readings of how Abraham kept ‘laws’; grace and obedience held
+together by most Christian readers). The three wife-sister stories (pointed
+back to chapter 20). Rebekah (faith wrongly carried out, or culpable). Why
+the blessing could not be taken back ("The text does not fully explain";
+two readings; "Genesis does not say which"). God's choice and Jacob's lie:
+"Two things stand side by side in this chapter, and the text does not let
+either one cancel the other. ... On every reading, God's choice does not
+make Jacob's lie right, and Jacob's lie does not make God's choice wrong."
+with the election paragraph pointed back to 25:19-26, "These notes do not
+settle it." The stairway (‘ladder’ in the BSB; sullam found only here; the
+Akkadian link and its doubters; the ziggurat comparison held by some and
+thought too far by others). Jacob's vow (bargain or faith; "The text does
+not settle Jacob's motives."). The tithe (pointed back to chapter 14).
+Polygamy (the minority reading stated; "The narrator's silence is not
+praise."). The peeled branches (fair or sharp practice; no science claim;
+31:9-12). Rachel's motive for the teraphim ("These notes do not choose.").
+The wrestler (angel, Esau's guardian angel, God himself, the Son in
+Justin's reading, angel with God's authority, an older river-spirit tale:
+"These notes take no side among these readings."). The name Israel. The
+dots over Esau's kiss. Jacob and Seir ("A reader can hold both").
+
+Hebrews 12:16-17, the sentences on the page (27:30-40): "What the verse
+does not say is that God turns away a person who is truly sorry and comes
+back to him. The rest of the Bible says the opposite." followed by John
+6:37, Hebrews 4:16 and 1 John 1:9, and "If you are afraid you have gone too
+far for God to take you back, this verse was not written to shut that
+door."
+
+Bilhah and Zilpah: 29:21-30 "Zilpah and Bilhah are enslaved women. Laban
+gives them away as wedding gifts, as part of what went with each daughter
+into her marriage. They have no say."; 30:1-8 "Bilhah is an enslaved woman.
+She is given to Jacob to bear children for her mistress. She has no say in
+any of it. Her body is used for another woman's plan, as Hagar's was.";
+30:9-13 "Zilpah, too, is an enslaved woman. She is given to Jacob to bear
+children for Leah. She has no say."
+
+Polygamy (29:21-30): "Genesis describes Jacob's marriages. It never
+commends them." ... "The narrator's silence is not praise. The story itself
+shows the misery."
+
+### Care lines included
+
+26:7-11 put at risk by someone who should have protected you (Genesis 12
+wording; Find Help). 27:30-40 the unfavored child (Psalm 27:10; someone you
+trust). 29:31-35 anyone unloved (someone you trust; Find Help if not safe at
+home). 30:1-8 the Luke 1 childlessness lines, then for ‘or I will die’: "That
+feeling is real, and it is heavy, but it is not the last word about your
+life." and the Genesis 23 crisis line sentence with Find Help. No phone
+number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes genesis` and `validate-no-emdash` after each chapter:
+pass. At the end, all 36 commands of the content-gates step in ci.yml, one
+at a time: exit 0 each (validate-bible-notes: 66 introductions, 1,189
+chapter notes, 122 chapters in plain words; validate-no-emdash: 260 files, 0
+em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`:
+146 files passed, 7 skipped; 1,674 tests passed, 73 skipped. `pnpm build`:
+exit 0 (after the chapter commits).
+
+Served with `scripts/serve-like-vercel.mjs` on port 4603; Playwright at 390
+wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed. `/study/bible/genesis/26` to `/33`: every passage's heading, its
+part headings in order and the first 60 characters under each matched the
+data (5, 5, 5, 4, 6, 5, 6, 4 of the same), the third part reads "Where the
+Bible takes this up" in every passage, no sideways scroll, no page errors
+and no console errors. Screenshots of every passage of Genesis 29 and 32
+read by eye: `/home/user/elite-shots/bdoor/gn29-390-*` and `gn32-390-*`
+(the fixed masthead appears once mid-image where the element screenshot
+scrolls; not on the page itself). Server stopped by its PID, dist/
+deleted, no lh-*.json. Lighthouse not run (data only, no code change).
+
+### Still unverified
+
+Ancient and later texts' exact words (all paraphrased: the Mishnah,
+Genesis Rabbah, Rashi, Nachmanides, Justin); the Akkadian link for sullam
+and the meaning of Israel (said to be debated); the sheep-and-goat colours
+from older commentaries only.
+
+### Next
+
+Genesis 34 onward in plain words, in the same shape.
