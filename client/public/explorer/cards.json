@@ -1,0 +1,61 @@
+{
+  "cards": [
+    { "id": "god", "title": "God", "status": "coming" },
+    {
+      "id": "bible",
+      "title": "The Bible",
+      "status": "finished",
+      "picture": "book",
+      "pictureLabel": "An open Bible on a table under an arched window.",
+      "statement": {
+        "younger": "The Bible is God's true Word. God gave it through many writers over a very long time, and it tells one big story, about Jesus saving us.",
+        "older": "The Bible is sixty-six books written by many people over many centuries, and through those human writers God himself speaks. It is God-breathed, true in all it teaches, and Jesus is its center: he said the Scriptures testify about him."
+      },
+      "quote": { "ref": "2 Timothy 3:16-17", "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness, so that the man of God may be complete, fully equipped for every good work." },
+      "rests": ["2 Timothy 3:16-17", "2 Peter 1:20-21", "Luke 24:27", "John 5:39", "Psalm 119:105"],
+      "question": {
+        "ask": "How can a book written by people be God's Word?",
+        "younger": "God used real people, with their own words and their own ways of writing. The Holy Spirit carried them along, so that what they wrote is what God wanted to say.",
+        "older": "Christians do not say the writers took dictation. Luke says he carefully investigated everything before he wrote (Luke 1:3). They say God was at work in the whole of it, so that men “spoke from God as they were carried along by the Holy Spirit” (2 Peter 1:21). That is a claim to weigh, not to swallow, and the questions about how the books were copied and collected are fair ones."
+      },
+      "stops": ["sinai", "return", "cross", "church"],
+      "catechism": [12, 13],
+      "deeper": [
+        { "label": "Why would anyone trust the Bible?", "href": "/answers/why-would-anyone-trust-the-bible" },
+        { "label": "The family catechism: how has God spoken to us?", "href": "/family/catechism#q12" }
+      ]
+    },
+    { "id": "image", "title": "People made in God's image", "status": "coming" },
+    { "id": "sin", "title": "Sin", "status": "coming" },
+    {
+      "id": "jesus",
+      "title": "Jesus, God and man",
+      "status": "finished",
+      "picture": "manger",
+      "pictureLabel": "A manger full of straw in a stable at night, under one bright star.",
+      "statement": {
+        "younger": "Jesus is God the Son. He became a real man, born as a baby, so that he could save us. He is fully God and fully man.",
+        "older": "Jesus is one person who is truly God and truly man; the church confessed it in those words at the Council of Chalcedon in 451. He was with God and was God from the beginning, and he became flesh: he grew tired, he wept, he died. Only someone who is both could bring God and people back together."
+      },
+      "quote": { "ref": "John 1:14", "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth." },
+      "rests": ["John 1:1-3", "John 1:14", "Colossians 2:9", "Hebrews 4:15", "John 20:28", "Philippians 2:6-8"],
+      "question": {
+        "ask": "If Jesus is God, who was he praying to?",
+        "younger": "He was praying to God the Father. There is one God, who is the Father, the Son and the Holy Spirit. The Son loves to talk with the Father.",
+        "older": "To God the Father. Christians confess one God in three persons: the Father, the Son and the Holy Spirit. Jesus praying shows that the Son and the Father are two persons, not that Jesus is less than God. The same Gospel that shows him praying ends with Thomas calling him “My Lord and my God” (John 20:28)."
+      },
+      "stops": ["creation", "jesus", "cross"],
+      "catechism": [25, 4],
+      "deeper": [
+        { "label": "Was Jesus just a good teacher?", "href": "/answers/was-jesus-just-a-good-teacher" },
+        { "label": "How can God be three and one?", "href": "/answers/how-can-god-be-three-and-one" },
+        { "label": "The family catechism: who is Jesus Christ?", "href": "/family/catechism#q25" }
+      ]
+    },
+    { "id": "cross", "title": "The cross", "status": "coming" },
+    { "id": "resurrection", "title": "The resurrection", "status": "coming" },
+    { "id": "spirit", "title": "The Holy Spirit", "status": "coming" },
+    { "id": "church", "title": "The church", "status": "coming" },
+    { "id": "life-to-come", "title": "The life to come", "status": "coming" }
+  ]
+}

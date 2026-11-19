@@ -1,0 +1,282 @@
+/**
+ * The Bible Explorer (/study/explorer): the data, the reading level and the
+ * progress kept on this device.
+ *
+ * The library is content as data (client/public/explorer/): the map reads
+ * index.json (scripts/build-explorer-index.mjs), and a stop's page reads its
+ * own file, stops/<slug>.json. scripts/validate-explorer.mjs is the gate.
+ *
+ * Two reading levels, named as the Family door names its age bands
+ * (lib/familyTable.ts): "younger" (ages 7 to 11) and "older" (ages 12 to 16).
+ * The level, the stops visited and the activities done stay on this device
+ * under one key, through lib/storage.ts. Nothing needs an account and nothing
+ * is sent anywhere.
+ */
+import { useCallback, useEffect, useState } from "react";
+import { fetchJson } from "@/lib/fetch-json";
+import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+
+export type Level = "younger" | "older";
+export const LEVELS: Level[] = ["younger", "older"];
+export const LEVEL_LABELS: Record<Level, string> = {
+  younger: "Ages 7 to 11",
+  older: "Ages 12 to 16",
+};
+export type Leveled<T = string> = Record<Level, T>;
+
+export interface StopSummary {
+  slug: string;
+  n: number;
+  title: string;
+  range: string;
+  act: string;
+  actLabel: string;
+  actTitle: string;
+  status: "finished" | "drawing";
+  summary: Leveled;
+}
+
+export interface ThreadStop {
+  state: "near" | "apart";
+  line: string;
+  ref: string;
+}
+
+export interface Thread {
+  id: string;
+  name: string;
+  status: "finished" | "coming";
+  line: Leveled;
+  key?: { near: string; apart: string };
+  stops?: Record<string, ThreadStop>;
+}
+
+export interface Link {
+  label: string;
+  href: string;
+}
+
+export interface Card {
+  id: string;
+  title: string;
+  status: "finished" | "coming";
+  picture?: string;
+  pictureLabel?: string;
+  statement?: Leveled;
+  quote?: { ref: string; text: string };
+  rests?: string[];
+  question?: { ask: string } & Leveled;
+  stops?: string[];
+  catechism?: number[];
+  deeper?: Link[];
+}
+
+export interface ExplorerIndex {
+  stops: StopSummary[];
+  threads: Thread[];
+  cards: Card[];
+}
+
+export interface TapSpot {
+  id: string;
+  name: string;
+  x: number;
+  y: number;
+  day?: number;
+  text: string;
+  ref: string;
+}
+
+export type Activity =
+  | { kind: "tap"; title: string; prompt: string; spots: TapSpot[] }
+  | {
+      kind: "order";
+      title: string;
+      prompt: string;
+      items: { id: string; text: string; ref: string }[];
+      start: string[];
+    }
+  | {
+      kind: "match";
+      title: string;
+      prompt: string;
+      pairs: {
+        id: string;
+        promise: string;
+        promiseRef: string;
+        kept: string;
+        keptRef: string;
+      }[];
+    }
+  | {
+      kind: "reveal";
+      title: string;
+      prompt: string;
+      questions: { id: string; q: string; a: string; ref: string }[];
+    };
+
+export interface Stop extends Omit<StopSummary, "actLabel" | "actTitle"> {
+  added?: string;
+  scene?: string;
+  sceneLabel?: string;
+  story?: Leveled<string[]>;
+  god?: Leveled;
+  verses?: { ref: string; text: string }[];
+  read?: Link[];
+  differ?: { text: string } & Link;
+  care?: string;
+  question?: { ask: string; answer: string[] };
+  deeper?: Link[];
+  talk?: Leveled;
+  activity?: Activity;
+}
+
+const isObj = (x: unknown): x is Record<string, unknown> =>
+  typeof x === "object" && x !== null;
+
+export function isExplorerIndex(x: unknown): x is ExplorerIndex {
+  return (
+    isObj(x) &&
+    Array.isArray(x.stops) &&
+    Array.isArray(x.threads) &&
+    Array.isArray(x.cards)
+  );
+}
+
+export function isStop(x: unknown): x is Stop {
+  return (
+    isObj(x) &&
+    typeof x.slug === "string" &&
+    typeof x.title === "string" &&
+    isObj(x.summary)
+  );
+}
+
+export const EXPLORER_PATH = "/study/explorer";
+export const stopHref = (slug: string) => `${EXPLORER_PATH}/${slug}`;
+
+export const fetchExplorerIndex = () =>
+  fetchJson("/explorer/index.json", isExplorerIndex);
+export const fetchStop = (slug: string) =>
+  fetchJson(`/explorer/stops/${encodeURIComponent(slug)}.json`, isStop);
+
+// ── Threads ───────────────────────────────────────────────────────────────
+
+/** The stops a thread lights, in map order, with how it shows at each. */
+export function threadStops(
+  thread: Thread | undefined,
+  stops: StopSummary[]
+): { slug: string; at: ThreadStop }[] {
+  if (!thread?.stops || thread.status !== "finished") return [];
+  return stops
+    .filter(s => thread.stops![s.slug])
+    .map(s => ({ slug: s.slug, at: thread.stops![s.slug] }));
+}
+
+/** The threads that run through one stop. */
+export function threadsAt(
+  slug: string,
+  threads: Thread[]
+): { thread: Thread; at: ThreadStop }[] {
+  return threads
+    .filter(t => t.status === "finished" && t.stops?.[slug])
+    .map(t => ({ thread: t, at: t.stops![slug] }));
+}
+
+// ── Progress on this device ───────────────────────────────────────────────
+
+export const EXPLORER_PROGRESS_KEY = "livewell-progress-explorer-v1";
+export const SAVE_FAILED =
+  "Couldn't save to this browser — your work here will not survive a reload.";
+
+export interface ExplorerProgress {
+  v: 1;
+  level: Level;
+  visited: string[];
+  done: string[];
+  /** The stop the reader opened last: "you are here" on the map. */
+  last: string | null;
+}
+
+export const EMPTY_PROGRESS: ExplorerProgress = {
+  v: 1,
+  level: "younger",
+  visited: [],
+  done: [],
+  last: null,
+};
+
+const strings = (x: unknown): x is string[] =>
+  Array.isArray(x) && x.every(s => typeof s === "string");
+
+export function isExplorerProgress(x: unknown): x is ExplorerProgress {
+  return (
+    isObj(x) &&
+    x.v === 1 &&
+    (x.level === "younger" || x.level === "older") &&
+    strings(x.visited) &&
+    strings(x.done) &&
+    (x.last === null || typeof x.last === "string")
+  );
+}
+
+export const readExplorerProgress = (): ExplorerProgress =>
+  readStoredJSON(EXPLORER_PROGRESS_KEY, isExplorerProgress, EMPTY_PROGRESS);
+
+const add = (list: string[], slug: string) =>
+  list.includes(slug) ? list : [...list, slug];
+
+export function withLevel(p: ExplorerProgress, level: Level): ExplorerProgress {
+  return { ...p, level };
+}
+export function withVisit(p: ExplorerProgress, slug: string): ExplorerProgress {
+  return { ...p, visited: add(p.visited, slug), last: slug };
+}
+export function withDone(p: ExplorerProgress, slug: string): ExplorerProgress {
+  return { ...p, done: add(p.done, slug) };
+}
+
+/**
+ * The reader's progress, read once from this device and written back on each
+ * change. `saveFailed` is true once a write has been refused (private mode, a
+ * full store), so the page can say so in the site's one sentence.
+ */
+export function useExplorerProgress() {
+  const [progress, setProgress] =
+    useState<ExplorerProgress>(readExplorerProgress);
+  const [saveFailed, setSaveFailed] = useState(false);
+
+  const update = useCallback(
+    (change: (p: ExplorerProgress) => ExplorerProgress) => {
+      setProgress(prev => {
+        const next = change(prev);
+        if (next === prev) return prev;
+        if (!writeStoredJSON(EXPLORER_PROGRESS_KEY, next)) setSaveFailed(true);
+        return next;
+      });
+    },
+    []
+  );
+
+  // Another tab (or the stop page, on the way back) may have moved on.
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === EXPLORER_PROGRESS_KEY) setProgress(readExplorerProgress());
+    };
+    window.addEventListener("storage", onStorage);
+    return () => window.removeEventListener("storage", onStorage);
+  }, []);
+
+  return {
+    progress,
+    saveFailed,
+    setLevel: (level: Level) =>
+      update(p => (p.level === level ? p : withLevel(p, level))),
+    visit: (slug: string) =>
+      update(p =>
+        p.last === slug && p.visited.includes(slug) ? p : withVisit(p, slug)
+      ),
+    markDone: (slug: string) =>
+      update(p => (p.done.includes(slug) ? p : withDone(p, slug))),
+  };
+}

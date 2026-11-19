@@ -842,6 +842,29 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // The Bible Explorer: every stop on the map with its line for younger and
+  // older readers (client/public/explorer/index.json); a finished stop links
+  // its own page, one still being drawn is named without a link.
+  "/study/explorer": async () => {
+    const d = readJsonSafe("client/public/explorer/index.json");
+    if (!d?.stops?.length) return null;
+    const stop = (st) => {
+      const name = st.status === "finished" ? `<a href="/study/explorer/${escapeHtml(st.slug)}">${escapeHtml(st.title)}</a>` : escapeHtml(st.title);
+      return `<li><h3>${st.n}. ${name}</h3><p>${escapeHtml(st.summary.younger)}</p><p>${escapeHtml(st.summary.older)}</p>${st.status === "finished" ? "" : "<p>This stop is being drawn.</p>"}</li>`;
+    };
+    const thread = (d.threads || []).find((t) => t.status === "finished");
+    const cards = (d.cards || []).filter((c) => c.status === "finished");
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Bible Explorer</h1>`,
+        `<p class="pre-subtitle">The whole Bible as one story, on one map, for ages 7 to 16. Follow the road from the garden to the city.</p>`,
+        sec("The map", `<ol>\n${d.stops.map(stop).join("\n")}\n</ol>`),
+        thread ? sec(`A thread through the whole Bible: ${thread.name}`, `<p>${escapeHtml(thread.line.older)}</p>`) : "",
+        cards.length ? sec("Why we believe", cards.map((c) => `<h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.statement.older)}</p>`).join("\n")) : "",
+      ]),
+    };
+  },
   // The history door: the ages, the course, the longer essays, the rooms.
   "/theology/history": async (title) => historyDoorBody(title),
   // Every person, A to Z, with years, role and place, under their own anchor.
@@ -1674,6 +1697,44 @@ async function main() {
       wrote++;
     });
     console.log(`[prerender] wrote ${answers.length} Honest Answer pages`);
+  }
+
+  // A page per finished stop of the Bible Explorer (/study/explorer/:slug).
+  // The head is the stop's own (its title, its line for older readers); the
+  // body is the story at both reading levels, the verses, and the chapters.
+  {
+    const d = readJsonSafe("client/public/explorer/index.json");
+    let n = 0;
+    for (const st of (d?.stops || []).filter((x) => x.status === "finished")) {
+      const s = readJsonSafe(`client/public/explorer/stops/${st.slug}.json`);
+      if (!s) continue;
+      const route = `/study/explorer/${s.slug}`;
+      const title = `${s.title}: Bible Explorer`;
+      const head = buildHead({
+        title,
+        description: s.summary.older,
+        url: `${SITE_URL}${route}`,
+        image: ogImageUrl(title),
+        type: "article",
+        schemas: [breadcrumbSchema([{ name: "Home", path: "" }, { name: "Bible Explorer", path: "/study/explorer" }, { name: s.title, path: route }])],
+      });
+      const paras = (list) => (list || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n");
+      const body = article([
+        `<p class="pre-eyebrow"><a href="/study/explorer">Bible Explorer</a></p>`,
+        `<h1>${escapeHtml(s.title)}</h1>`,
+        `<p class="pre-subtitle">${escapeHtml(s.summary.younger)}</p>`,
+        sec("The story, for ages 7 to 11", paras(s.story?.younger)),
+        sec("The story, for ages 12 to 16", paras(s.story?.older)),
+        sec("What this shows us about God", `<p>${escapeHtml(s.god?.younger ?? "")}</p><p>${escapeHtml(s.god?.older ?? "")}</p>`),
+        (s.verses || []).map((v) => `<blockquote>${escapeHtml(v.text)} <strong>${escapeHtml(v.ref)}</strong></blockquote>`).join("\n"),
+        sec("Read it yourself", `<ul>${(s.read || []).map((r) => `<li><a href="${escapeHtml(r.href)}">${escapeHtml(r.label)}</a></li>`).join("")}</ul>`),
+        `<p><a href="/study/explorer">The whole map</a></p>`,
+      ]);
+      writeRoute(template, { path: route }, head, body);
+      wrote++;
+      n++;
+    }
+    console.log(`[prerender] wrote ${n} Bible Explorer stops`);
   }
 
   const studyBible = prerenderStudyBible(template);

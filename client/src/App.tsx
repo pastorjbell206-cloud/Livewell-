@@ -165,6 +165,8 @@ const StudyBibleYear = lazy(() => import("./pages/StudyBibleYear"));
 const BiblePlans = lazy(() => import("./pages/BiblePlans"));
 const StudyBibleSearch = lazy(() => import("./pages/StudyBibleSearch"));
 const HowToStudy = lazy(() => import("./pages/HowToStudy"));
+const ExplorerMap = lazy(() => import("./pages/explorer/ExplorerMap"));
+const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const Answers = lazy(() => import("./pages/Answers"));
 const AnswerPage = lazy(() => import("./pages/AnswerPage"));
 const Skeptics = lazy(() => import("./pages/Skeptics"));
@@ -593,6 +595,8 @@ function Router() {
         <Route path="/study/bible/:book" component={StudyBible} />
         <Route path="/study/bible" component={StudyBible} />
         <Route path="/study/how-to-study" component={HowToStudy} />
+        <Route path="/study/explorer/:slug" component={ExplorerStop} />
+        <Route path="/study/explorer" component={ExplorerMap} />
         <Route path="/study" component={Study} />
         <Route path="/tools" component={ToolsHub} />
         <Route path="/tools/verse-finder" component={VerseFinder} />

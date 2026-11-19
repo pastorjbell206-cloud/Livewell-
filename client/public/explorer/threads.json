@@ -1,0 +1,68 @@
+{
+  "threads": [
+    {
+      "id": "dwelling",
+      "name": "God with his people",
+      "status": "finished",
+      "line": {
+        "younger": "From the first page to the last, God wants to live with his people. Follow the places where he makes his home.",
+        "older": "The whole Bible can be read as one long answer to a question: can God live with his people? Watch where he dwells move from a garden to a tent, a temple, a person, a people, and a whole new world."
+      },
+      "key": {
+        "near": "God lives among his people",
+        "apart": "The closeness is lost, or still waited for"
+      },
+      "stops": {
+        "creation": { "state": "near", "line": "God planted a garden and put the people he made there, close to him.", "ref": "Genesis 2:8" },
+        "fall": { "state": "apart", "line": "The man and the woman hid from God among the trees, and they were sent out of the garden.", "ref": "Genesis 3:8" },
+        "abraham": { "state": "near", "line": "God came to Abraham, Isaac and Jacob. Jacob woke from a dream and said the LORD was in that place.", "ref": "Genesis 28:15-16" },
+        "rescue": { "state": "near", "line": "God went ahead of his people in a pillar of cloud by day and a pillar of fire by night.", "ref": "Exodus 13:21" },
+        "sinai": { "state": "near", "line": "God told Israel to build a tent, the tabernacle, so that he could dwell among them, and his glory filled it.", "ref": "Exodus 25:8" },
+        "land": { "state": "near", "line": "In the land, the tent of meeting was set up at Shiloh, among the tribes.", "ref": "Joshua 18:1" },
+        "kingdom": { "state": "near", "line": "Solomon built the temple in Jerusalem, and the cloud of God's glory filled it.", "ref": "1 Kings 8:10-11" },
+        "exile": { "state": "apart", "line": "The prophet Ezekiel saw God's glory leave the temple before Babylon destroyed it.", "ref": "Ezekiel 10:18" },
+        "return": { "state": "apart", "line": "The people rebuilt the temple, and God promised that one day he would fill it with glory.", "ref": "Haggai 2:7" },
+        "jesus": { "state": "near", "line": "Jesus is God with us. The Word became flesh and made his dwelling among us.", "ref": "John 1:14" },
+        "cross": { "state": "near", "line": "When Jesus died, the curtain that closed off the most holy place in the temple tore from top to bottom.", "ref": "Mark 15:38" },
+        "church": { "state": "near", "line": "God's Spirit came to live in his people. Paul tells the church that it is now God's temple.", "ref": "1 Corinthians 3:16" },
+        "new-creation": { "state": "near", "line": "At the end, God's dwelling place is with people, and he lives with them for ever.", "ref": "Revelation 21:3" }
+      }
+    },
+    {
+      "id": "promise",
+      "name": "The promise",
+      "status": "coming",
+      "line": {
+        "younger": "God makes promises to his people, and he always keeps them.",
+        "older": "God binds himself to people by covenant: with Noah, Abraham, Israel at Sinai and David, and at last the new covenant in Jesus."
+      }
+    },
+    {
+      "id": "lamb",
+      "name": "The lamb",
+      "status": "coming",
+      "line": {
+        "younger": "Again and again a lamb dies in the place of someone else, until Jesus, the Lamb of God.",
+        "older": "Sacrifice runs from the garden to the cross: a substitute, a covering, a price paid by another."
+      }
+    },
+    {
+      "id": "king",
+      "name": "The king",
+      "status": "coming",
+      "line": {
+        "younger": "God's people wait for a good king, and Jesus is that king.",
+        "older": "People made to rule under God want to rule without him. The story looks for the true king, the son of David, who reigns by serving."
+      }
+    },
+    {
+      "id": "nations",
+      "name": "A blessing for every nation",
+      "status": "coming",
+      "line": {
+        "younger": "God's plan was always for people from every country.",
+        "older": "Through Abraham's family God means to bless all the families of the earth, and the last pages show people from every nation together."
+      }
+    }
+  ]
+}

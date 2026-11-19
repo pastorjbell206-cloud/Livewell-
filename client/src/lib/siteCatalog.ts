@@ -124,7 +124,12 @@ export const DOORS: Door[] = [
           { id: "bible.how-to-study", name: "How to study the Bible", line: "Seven steps for studying a passage, in order.", href: "/study/how-to-study", icon: "Search" },
         ],
       },
-      { id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" } },
+      {
+        id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" },
+        inside: [
+          { id: "bible.explorer", name: "Bible Explorer", line: "The Bible's story on one illustrated map, for ages 7 to 16.", href: "/study/explorer", icon: "Map" },
+        ],
+      },
       { id: "bible.background", name: "Bible background", line: "The world the Bible was written in: its places, peoples and customs.", href: "/resources/context", icon: "Map", count: { n: 41, of: "guides" } },
       {
         id: "bible.plans", name: "Reading plans", line: "Every plan for reading the Bible, by length.", href: "/study/plans", icon: "CalendarDays",

@@ -100,6 +100,7 @@ function answers() {
 const MAIN_PAGES = [
   { title: "The Study Bible", href: "/study/bible", blurb: "Every book and chapter of the Bible, with study notes and the Hebrew and Greek beneath each word.", keywords: "study bible read scripture books chapters notes hebrew greek who wrote the bible" },
   { title: "Study the Bible: where to start", href: "/study", blurb: "The Study Bible, church history, the creeds, and guides to reading Scripture in the world it was written in.", keywords: "bible study learn start begin how to read the bible" },
+  { title: "Bible Explorer", href: "/study/explorer", blurb: "The whole Bible as one story on one illustrated map, for ages 7 to 16.", keywords: "kids children teens youth young people bible map pictures story of the bible for kids teenagers illustrated explorer" },
   { title: "The story of the Bible", href: "/study/bible/story", blurb: "The whole Bible as one story, told in eleven acts.", keywords: "storyline overview big picture summary of the bible" },
   { title: "What the Bible teaches", href: "/study/bible/doctrines", blurb: "The main teachings of the faith, each followed through the chapters that teach it.", keywords: "doctrine doctrines theology beliefs" },
   { title: "Guides to reading the Bible", href: "/study/bible/guides", blurb: "Short guides to what the Bible is, how it came to us, and how to read it.", keywords: "how to read the bible who wrote the bible canon translations" },
