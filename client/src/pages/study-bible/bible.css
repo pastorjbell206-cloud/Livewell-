@@ -205,6 +205,7 @@
 .bk-tl__what{font-family:var(--font-reading);font-size:16.5px;line-height:1.55;color:var(--ink)}
 .bk-map-hold{min-height:640px}
 .bk-map-hold[data-frames="fertile-crescent canaan"]{min-height:1270px}
+.bk-map-hold[data-frames="israel mediterranean"]{min-height:1720px}
 .bk-map{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--s-5);align-items:start}
 .bk-map__fig{margin:0;border:1.5px solid var(--art-ink);padding:5px;background:var(--art-paper)}
 .bk-map__fig svg{display:block;height:600px;width:auto;max-width:100%;border:.75px solid var(--art-ink)}
@@ -225,8 +226,10 @@
 .bk-map__title{grid-column:1 / -1;margin:0 0 calc(12px - var(--s-5));font-family:var(--F);font-size:1.6rem;font-weight:500;color:var(--ink)}
 .bk-map__river{fill:none;stroke:var(--art-ink);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
 .bk-map__water{font-family:var(--font-reading);font-style:italic;font-size:12px;fill:var(--ink-muted);paint-order:stroke;stroke:var(--art-paper);stroke-width:3px}
-.bk-map[data-frame="fertile-crescent"] .bk-map__fig svg{height:auto;width:620px}
-.bk-map[data-frame="fertile-crescent"] .bk-map__fig figcaption{max-width:520px}
+.bk-map[data-frame="fertile-crescent"] .bk-map__fig svg,.bk-map[data-frame="mediterranean"] .bk-map__fig svg{height:auto;width:620px}
+.bk-map[data-frame="fertile-crescent"] .bk-map__fig figcaption,.bk-map[data-frame="mediterranean"] .bk-map__fig figcaption{max-width:520px}
+.bk-map[data-frame="mediterranean"] .bk-map__name{font-size:11px}
+.bk-map[data-frame="mediterranean"] .bk-map__region{font-size:8.5px;paint-order:stroke;stroke:var(--art-paper);stroke-width:3px}
 .bk-more__theme{max-width:68ch;margin:0 0 12px;font-family:var(--font-reading);font-size:16px;line-height:1.6;color:var(--ink)}
 @media (max-width:760px){
   .bk-contents{grid-template-columns:minmax(0,1fr)}
@@ -235,6 +238,7 @@
   .bk-tl li{grid-template-columns:minmax(0,1fr)}
   .bk-map-hold{min-height:1180px}
   .bk-map-hold[data-frames="fertile-crescent canaan"]{min-height:2200px}
+  .bk-map-hold[data-frames="israel mediterranean"]{min-height:2562px}
   .bk-map__title{margin-bottom:calc(12px - var(--s-4))}
   .bk-map{grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
   .bk-map__fig{justify-self:center}
@@ -244,4 +248,8 @@
   .bk-map[data-frame="fertile-crescent"] .bk-map__name{font-size:18px}
   .bk-map[data-frame="fertile-crescent"] .bk-map__region{font-size:13px}
   .bk-map[data-frame="fertile-crescent"] .bk-map__water{font-size:16px}
+  .bk-map[data-frame="mediterranean"] .bk-map__fig{justify-self:stretch}
+  .bk-map[data-frame="mediterranean"] .bk-map__fig svg{width:100%}
+  .bk-map[data-frame="mediterranean"] .bk-map__name{font-size:16px}
+  .bk-map[data-frame="mediterranean"] .bk-map__region{font-size:12px}
 }

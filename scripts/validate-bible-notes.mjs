@@ -331,7 +331,7 @@ function checkStudy(id, where) {
  * The stretch of the world each map frame shows, in degrees. Keep in step
  * with MAP_FRAMES in client/src/lib/bible-notes.ts (teaching.test.tsx checks).
  */
-const MAP_FRAMES = {"israel":{"west":34.45,"east":36.3,"north":33.68,"south":31.6},"canaan":{"west":34.0,"east":36.4,"north":33.7,"south":30.8},"fertile-crescent":{"west":29,"east":49,"north":38,"south":28}};
+const MAP_FRAMES = {"israel":{"west":34.45,"east":36.3,"north":33.68,"south":31.6},"canaan":{"west":34.0,"east":36.4,"north":33.7,"south":30.8},"fertile-crescent":{"west":29,"east":49,"north":38,"south":28},"mediterranean":{"west":11.5,"east":37.6,"north":42.3,"south":30.6}};
 
 /**
  * Optional: a book's teaching introduction (intro.json `teaching`), plain
@@ -382,7 +382,7 @@ function checkTeaching(b, t, where) {
       }
       prose(`${pw}.line`, m.line, 20, 300);
       if (m.region != null && typeof m.region !== "boolean") fail(pw, "region must be true or false");
-      if (m.label != null && !(Number.isFinite(m.label.dx) && Number.isFinite(m.label.dy) && ["start", "end", "middle"].includes(m.label.anchor))) fail(pw, "label needs dx, dy and an anchor of start, end or middle");
+      if (m.label != null && m.label !== false && !(Number.isFinite(m.label.dx) && Number.isFinite(m.label.dy) && ["start", "end", "middle"].includes(m.label.anchor) && (m.label.text == null || (typeof m.label.text === "string" && m.label.text.length > 0)))) fail(pw, "label is false (no name on the drawing) or needs dx, dy, an anchor of start, end or middle, and an optional short text");
     }
   }
   if (t.mapNote != null) prose(`${where}.mapNote`, t.mapNote, 20, 400);

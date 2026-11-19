@@ -65,8 +65,12 @@ export interface MapPlace {
   line: string;
   /** A region rather than a town: drawn as a dashed ring, placed roughly. */
   region?: boolean;
-  /** Where the name sits beside its mark, when the default would collide. */
-  label?: { dx: number; dy: number; anchor: "start" | "end" | "middle" };
+  /**
+   * Where the name sits beside its mark, when the default would collide, and
+   * optionally a shorter name for the drawing. `false`: the mark has no name
+   * on the drawing (a crowded wide map); its button below still lists it.
+   */
+  label?: { dx: number; dy: number; anchor: "start" | "end" | "middle"; text?: string } | false;
 }
 
 /**
@@ -78,6 +82,7 @@ export const MAP_FRAMES = {
   israel: { west: 34.45, east: 36.3, north: 33.68, south: 31.6 },
   canaan: { west: 34.0, east: 36.4, north: 33.7, south: 30.8 },
   "fertile-crescent": { west: 29, east: 49, north: 38, south: 28 },
+  mediterranean: { west: 11.5, east: 37.6, north: 42.3, south: 30.6 },
 } as const;
 export type MapFrameId = keyof typeof MAP_FRAMES;
 

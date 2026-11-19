@@ -93,3 +93,89 @@ before).
 
 Whether the next map is Exodus (route of the Exodus is contested) or Paul's
 journeys for Acts.
+
+# wmap, second run: Paul's travels for Acts (2026-11-19)
+
+## What a reader now sees on Acts's page
+
+`/study/bible/acts`, "Where it happened". The line above the maps reads: "Two
+maps. The first shows the land of Acts 1 to 12, from Jerusalem to Damascus;
+Gaza (8:26) lies just south of its edge. The second follows Paul's travels
+from Antioch through Asia Minor, Macedonia and Greece, and by sea to Rome."
+The sentence about a wider map still to come is gone.
+
+**Jerusalem to Damascus, Acts 1 to 12.** The old map, its nine places and
+their cards unchanged, now with a title.
+
+**Paul's travels and the road to Rome.** A new frame, "mediterranean"
+(11.5 to 37.6 E, 30.6 to 42.3 N): Italy with Sicily and Malta, the southern
+Adriatic, Greece and the Peloponnese, Crete, the Aegean with Euboea, Lesbos,
+Chios, Samos and Rhodes as paper shapes, Asia Minor, the Sea of Marmara and
+the Black Sea's south shore, Cyprus, the Levant, the Nile delta and the coast
+of Libya past Cyrene. Region names: THE GREAT SEA, ITALY, MACEDONIA, ACHAIA,
+ASIA, GALATIA (one name; no side taken on north or south Galatia), SYRIA
+(set upright, since the land east of the coast is too narrow) and JUDEA. No
+modern borders or country names. The caption: places are set by their modern
+sites, and the coasts as they are now, not as they were then.
+
+Twenty-four places, each a 44px button with a card: Antioch in Syria, Tarsus,
+Salamis, Paphos, Perga, Pisidian Antioch, Iconium, Lystra, Derbe, Troas,
+Philippi, Thessalonica, Berea, Athens, Corinth, Ephesus, Miletus, Caesarea,
+Jerusalem, Crete (Fair Havens), Malta, Syracuse, Puteoli and Rome. Every one
+has a mark on the drawing; six are left unnamed there because the towns sit
+too close at this scale (Pisidian Antioch, Iconium, Lystra and Derbe in
+Galatia, Berea beside Thessalonica, Miletus beside Ephesus). Their buttons and
+cards are all there, and a tapped mark shows filled. Derbe's card says its
+site is not certain (Kerti Höyük, drawn; Devri Şehri, also proposed). Malta's
+says where the ship struck is not known for sure and that St Paul's Bay is
+where tradition places it.
+
+No route lines are drawn. At 390 wide the Aegean is crowded with names already,
+and a line for each of three trips plus the voyage would cross the names; the
+cards tell the order instead.
+
+## What changed in the code
+
+`MAP_FRAMES` gains `mediterranean` (lib/bible-notes.ts and the validator,
+held equal by teaching.test.tsx). A place's `label` may now be `false` (no
+name on the drawing) or carry a shorter `text` ("Antioch", "Fair Havens"); the
+validator accepts both. A frame may ask for smaller marks (`mark: 3` here; the
+default 5 keeps every other map's marks as they were). bible.css holds the
+two maps' height (`data-frames="israel mediterranean"`: 1720px wide screens,
+2562px phones) and sizes the wide map like the Genesis one, with a paper halo
+under its region names.
+
+## What was run
+
+`pnpm check` passed. ESLint on BookMap.tsx, bible-notes.ts and
+teaching.test.tsx passed. `pnpm test`: 146 files passed, 7 skipped; 1,679
+tests passed. All 36 content-gate commands in ci.yml exited 0. `pnpm build`,
+`pnpm run sitemap`, `pnpm run prerender` (3,028 pages) and
+`pnpm run audit:canonicals` exited 0.
+
+The six existing maps are unchanged. Their rendered markup (Mark, Matthew,
+John, Luke and both Genesis maps), saved before any code changed and again at
+the end, is byte for byte the same: no attribute changed. Their screenshots on
+the served build match the earlier run's pixel for pixel, except in the strip
+under the sticky site header, which covers the top of the map in both runs.
+
+On the served build (port 4611), Acts at 390 and 1440, day and night: no name
+over another name or a mark, or outside its drawing, on either map; every
+place button 44px tall; no sideways scroll; no console errors; the held space
+matches what loads (2562px phone, 1720px wide). Lighthouse (ci.yml's chapter
+command, three runs, median): Acts performance 81, accessibility 100, CLS
+0.000; Genesis performance 77, accessibility 100, CLS 0.000. Pictures:
+`/home/user/elite-shots/wmap/acts-*`.
+
+## Not verified, or left as found
+
+The approximate coast points named in the ledger. At 390 the wide map is small
+(about 346px across), so its names are about 11px; they are legible but not
+roomy. The held height is exact at 390 and 1440; other phone widths will
+differ a little, as with Genesis.
+
+## What waits
+
+Route lines for the three trips and the voyage to Rome, perhaps one at a time
+behind a choice, so they never cross the names. Whether to label the Galatian
+towns on a close-up inset.
