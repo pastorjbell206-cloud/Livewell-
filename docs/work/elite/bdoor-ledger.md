@@ -5657,3 +5657,37 @@ Left out: Athanasius's Letter to Marcellinus (not searched); Zenger by name;
 the date and place of the Septuagint's Psalms; the Gath sense of Gittith;
 Rashi's dates; a count of psalms with no heading at all; "the most quoted
 book" as a flat claim; the five books "matching" the Torah as fact.
+
+## The plain notes on Psalm 1 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ashre: an exclamation, "how happy", "how fortunate"; said of people, never of God; barukh is the other word, used mostly of God | 1-3 | scriptura.org "‘Happy’ Is Not the Same as ‘Blessed’"; psalms.scriptura.org Psalm 1 notes; CSB Study Bible note | Search |
+| Hagah, meditate, to murmur; the same verb as "plot" in 2:1; yada "knows" behind "guards" in 1:6; planted = transplanted; streams = channels | 1-3, 4-6 | Repository deep and word notes (Psalm 1) | Site's own teaching; standard lexicons |
+| Threshing and winnowing | 4-6 | Repository deep note (cultural) | Site's own teaching |
+| Walk, stand, sit; first word ashre, last "will perish" | 1-3, 4-6 | Repository deep note (literary) | Site's own teaching |
+| Joshua 1:8; Jeremiah 17:7-8 (borrowing debated); Matthew 5:3; 7:17; Psalm 73:3; Job 21:7; Deuteronomy 30:19; Jeremiah 21:8; Matthew 3:12; 7:13-14 | both | BSB | BSB text |
+| Berakhot 9b-10a counts Psalms 1 and 2 as one; a variant at Acts 13:33 reads "first psalm", known to Fathers of the second to fifth centuries | 4-6 | encyclopedia.com "Psalms, Book of"; sermonindex.net (Peake); bsw.org Rius-Camps on Acts 13:33 | Search. "Some early Christian copies"; Codex Bezae not named (not confirmed) |
+
+Left out: Augustine on the blessed man as Christ (deep note; not searched),
+the Asherah etymology of ashre (rejected by the search), the Septuagint's
+makarios.
+
+## The plain notes on Psalm 2 (2026-11-19)
+
+Three web searches (and the book page's Rashi search).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A royal psalm; first setting a coronation (many scholars) | 1-3 | Gunkel's royal list (book page row); repository deep note | Stated as a reading |
+| Mashiach, anointing with oil (1 Samuel 16:13); christos | 1-3 | BSB; standard | BSB text |
+| "Plot" in 2:1 is hagah as in 1:2 | 1-3 | Repository word note (Psalm 1, H1897) | Site's own teaching |
+| Acts 4:25-29; Matthew 3:17; Acts 13:33; Hebrews 1:5; 5:5; Revelation 2:26-27; 12:5; 19:15; 2 Samuel 7:14; Romans 1:4; Isaiah 2:2; Philippians 2:12; Matthew 11:28 | all | BSB | BSB text |
+| Rashi: the rabbis (Berakhot 7b) read it of the King Messiah; plain sense David; answers the Christians | 4-9 | Book page row | Search (book page) |
+| Kiss the Son: nashku "kiss"; bar Aramaic "son", Hebrew "pure" (24:4) and rarely "son" (Proverbs 31:2); "do homage in purity"; the Septuagint "accept correction" (drazasthe paideias), the Vulgate "embrace discipline" (apprehendite disciplinam), the Targum "receive instruction" | 10-12 | jewsforjudaism.org; NET note (biblia.com); kjvtoday; Blue Letter Bible LXX and Vulgate; NKJV note | Search (two). Jerome's Hebrew psalter ("adorate pure") not confirmed and not stated |
+
+Cut: kings called sons of gods in the nations around, and Egypt's god-king
+(not searched); smaller nations rebelling at a new king (not searched); the
+"kiss his feet" emendation (not searched).
