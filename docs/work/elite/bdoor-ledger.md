@@ -511,3 +511,30 @@ Carabas; the Antonia and the Via Dolorosa; Augustus as divi filius; the
 Church of the Holy Sepulchre; rolling and square blocking stones; Reimarus,
 Brown, Calvin, Augustine and Moltmann by name; Helen Bond and the Jewish
 scholars named in the deep note.
+
+## The plain notes on Mark 16 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Jews washed, wrapped and used spices, did not embalm as Egyptians did | 16:1-8 | Deep note; John 19:40 | Kept general |
+| Josephus: under the law women's testimony not accepted | 16:1-8 | Antiquities 4.219 | Search: lexundria.com j_aj 4.219 (Whiston); community.logos.com discussion. Mishnah Shevuot 4:1 not used (only a forum mention found) |
+| Celsus mocked Mary Magdalene as "a half-frantic woman", as Origen reports | 16:1-8 | Origen, Against Celsus, book 2 (numbered 55 or 59 by edition) | Search: bkv.unifr.ch Against Celsus (Crombie) with Greek γυνὴ πάροιστρος; ellopos.net. No section number given |
+| All four Gospels make women the first at the tomb; many historians weigh this | 16:1-8 | Matthew 28; Luke 24; John 20; deep note | BSB text; stated as "many historians think" |
+| White clothes mark the heavenly world (9:3) | 16:1-8 | BSB | BSB text |
+| Acts 20:7; Justin: Christians assemble on Sunday because of creation and because Jesus rose on that day | 16:1-8 | Justin, First Apology 67 | Search: logoslibrary.org apology1/67; bkv.unifr.ch First Apology; christianhistoryinstitute.org. Given as "partly" and "in the second century" |
+| Mark 8:31, 9:31, 10:34, 14:28; Isaiah 25:8; Daniel 12:2; Mark 4:41; Luke 24:9-11; John 20:18 | 16:1-8 | BSB | BSB text |
+| Sinaiticus and Vaticanus end at 16:8 (300s); Eusebius on the accurate copies; Irenaeus quotes 16:19 around 180; a shorter ending, some with both; most scholars think 9-20 added early; a minority defends them; printed in Bible notes for over a century; nothing in 9-20 needed for any belief | 16:1-14 | Earlier ledger (The ending) and the book page's "The ending of Mark" | Earlier ledger; wording kept consistent with the book page |
+| Vaticanus leaves the next column blank after 16:8, an unusual gap; its meaning debated | 16:1-8 | Codex Vaticanus | Search: biblicaltraining.org NT605 lesson 34; textandcanon.org "A case for the longer ending"; journals.muni.cz (2024). Not called "the only" gap (one source counts four) |
+| Mark 16:8 ends with ἐφοβοῦντο γάρ | 16:1-8 | Greek text | Search as above; Greek text in the repository |
+| Views: Mark meant to stop at 8; the last page lost or unfinished; Matthew and Luke continue | 16:1-8 | Deep note; sources above | Stated as views, no names |
+| John 20:11-18; Luke 24:11, 13-35; 1 Corinthians 15:4-5; Paul writing in the 50s | 16:9-14 | BSB; standard dating of 1 Corinthians | BSB text |
+| Acts 16:18; 2:4; 28:3-6; Acts 1:9; Psalm 110:1; Mark 12:36, 14:62 | 16:15-20 | BSB | BSB text |
+| Snake handling in some Appalachian churches since about 1910; deaths, including leaders (George Hensley, 1955, not named); state laws from 1940 | 16:15-20 | Encyclopedias | Search: en.wikipedia.org Snake handling in Christianity; georgiaencyclopedia.org Snake Handlers; christianhistoryinstitute.org "They Shall Take Up Serpents"; encyclopedia.com |
+| Matthew 4:7; Deuteronomy 6:16 | 16:15-20 | BSB | BSB text |
+| Views of 16:16 and of receiving 9-20 | 16:15-20 | Deep note | Stated as views |
+
+Left out: m. Shabbat 23:5; Ignatius, the Didache, Pliny's letter; the
+Nazareth Inscription; Kloner on rolling stones; 2 Maccabees 3:26 and
+Josephus on angels as young men; the Amidah and m. Sanhedrin 10:1; Jerome's
+letter to Hedibia; the Eusebian canons and Family 1; Tatian; the Freer Logion;
+every scholar named in the deep note on the ending and on the resurrection.
