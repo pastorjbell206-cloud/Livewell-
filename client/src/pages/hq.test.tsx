@@ -233,6 +233,7 @@ describe("/answers and /answers/:slug", () => {
     const argued = ANSWERS.filter((a) => a.sections);
     expect(argued.map((a) => a.slug).sort()).toEqual([
       "are-miracles-believable",
+      "can-life-mean-anything-without-god",
       "can-you-be-good-without-god",
       "did-god-command-genocide",
       "did-the-resurrection-actually-happen",

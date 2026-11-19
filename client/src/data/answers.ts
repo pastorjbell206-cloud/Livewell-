@@ -1427,9 +1427,69 @@ export const ANSWERS: Answer[] = [
     slug: "can-life-mean-anything-without-god",
     question: "Can a life mean anything without God?",
     paragraphs: [
-      "Yes, and any Christian who says otherwise is protecting his comfort by slandering better men. I was an atheist. I built real meaning out of love and craft and loyalty, and so have people I knew who loved their spouses with a fidelity that shamed my elders and faced a terminal diagnosis with a steadiness I would want at my own bedside. The church invented a miserable nihilist to feel better, and he doesn't exist. Whether you can make meaning was never the real question.",
-      "What matters is the kind of meaning you can make. Camus opened by calling suicide the one serious philosophical problem and still refused the ledge, choosing revolt inside the absurd until \"One must imagine Sisyphus happy.\" Sartre said existence precedes essence, \"condemned to be free\" to author our own worth. Both of them mean it. Then watch Tolstoy, who had won by every measure Sartre would prescribe, hide a rope from himself in his own study because none of it answered the death waiting for all of it. What you invent, you can un-invent. Ecclesiastes got there first: \"Vanity of vanities, says the Preacher, vanity of vanities! All is vanity\" (Ecclesiastes 1:2). And both men kept borrowing a moral ground their systems could not supply, calling injustice a crime for everyone when a silent universe stocks no such thing.",
-      "So the question is whether what you made is holding you up, or you are holding it. Invented meaning has one fatal property. On the night you can no longer believe in it, it is gone, because it was only ever your believing. I made my own for years, and it was good, right up until it was not, on a night when I was the thing that had broken and there was no one on the shore because I had spent my life proving the shore was empty. Wait for a good day, when you're standing in the dark kitchen with a glass of water and nothing is wrong. Then notice which one of you gets tired first, you or the meaning you made.",
+      "Yes, in the sense most people mean. Unbelievers love their children, give themselves to good work, keep faith with their friends and face death with courage, and their lives mean a great deal, to them and to the people they serve. A Christian who denies that is slandering his neighbors. The real question is a different one. There's meaning in a life, the worth found in love, work and goodness, and there's the meaning of life, whether the whole has a point and whether what we love is worth it beyond our caring about it. Atheists have the first in full. The second is where the accounts part. The best secular philosophers say we make our meaning, or find it in values that are simply there, in a universe that is silent about both. I think the worth people find in love and justice is real, and that it is better explained by a God who made us for it than by a universe that will not remember it. That is an argument, not a verdict on anyone's life. If you have reached the place where you are not sure you want to be here at all, tell someone today, and in the United States you can call or text 988 right now.",
+    ],
+    sections: [
+      {
+        heading: "The case for meaning without God, at its strongest",
+        body: [
+          "Start with what is plainly true. I was an atheist, and I won't pretend that unbelief makes anyone incapable of love, or of work worth doing, or of courage at a deathbed. The church has sometimes talked as if every atheist must be a secret nihilist, and that picture is false. The serious unbelieving philosophers have thought about meaning more carefully than most Christians have.",
+          "Albert Camus put the question at the start of The Myth of Sisyphus (1942): whether life is worth living. His answer was a kind of defiance, to live fully in a world that gives no answer, without the comfort of hope, and he ended the essay, in Justin O'Brien's translation, \"One must imagine Sisyphus happy.\" Jean-Paul Sartre, lecturing in Paris on October 29, 1945, in the talk published as Existentialism Is a Humanism, gave the movement its formula, that existence precedes essence. There is no human nature given in advance, so we make ourselves and our values by what we choose. We are, he said, \"condemned to be free.\"",
+          "Two later philosophers made the case in a quieter, stronger form. Thomas Nagel, in \"The Absurd\" (1971), argued that the sense that life is absurd comes from our ability to step back and look at our lives from far outside, and that this is no reason for distress. If nothing matters from that distant standpoint, then that doesn't matter either. He thought Camus's defiance \"romantic and slightly self-pitying,\" and ended, \"we can approach our absurd lives with irony instead of heroism or despair.\" Susan Wolf, in Meaning in Life and Why It Matters (2010), argued that meaning is neither just feeling fulfilled nor just doing something objectively good. Her summary: \"meaning arises when subjective attraction meets objective attractiveness.\" A life is meaningful when a person loves things that are worth loving and does something with that love.",
+          "I grant most of this. Wolf is right that meaning is more than a feeling and more than a duty. Nagel is right that a life doesn't need to be seen from the stars to matter on a Tuesday. If the Christian claim were that unbelievers can't have meaningful lives, these philosophers would have refuted it, and so would the unbelievers we know.",
+        ],
+      },
+      {
+        heading: "Two questions, not one",
+        body: [
+          "The argument below isn't about whether atheists find meaning. They do. It's about what meaning is, and what has to be true for it to be what it seems to be. When a mother says her children are worth everything, she doesn't mean only that she happens to care about them. She means they are worth it, and that she'd be wrong not to care. When someone gives his life to justice, he doesn't think he has picked a hobby. Meaning, as we experience it, makes a claim beyond our feelings. The question is what could make that claim true. This is an inference to the best explanation, not a proof: it asks which picture of the world makes best sense of something nearly everyone already believes.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An inference to the best explanation",
+            premises: [
+              "The meaning people find in a life is not only a feeling. It includes the conviction that some things, love, truth and justice among them, are worth giving a life to whether or not anyone feels it. Wolf's account rightly says a meaningful life needs this objective element as well as the subjective one.",
+              "If there is no God, that worth is either something we invent, in which case the conviction is mistaken, or a brute fact about a universe that neither knows it nor keeps it.",
+              "If there is a good God who made persons to know and love what is good, that worth is what we'd expect, and death doesn't cancel it.",
+            ],
+            conclusion: "The meaning unbelievers rightly find in their lives is better explained if God exists than if he doesn't. That doesn't show anyone's life lacks meaning. It is an argument about what the meaning they have is.",
+          },
+          "The first premise is taken from Wolf's account. The rest is my argument, not hers. The weight sits on the second premise, and it has a strong reply, which is that objective values can simply be there, needing no ground, the way the truths of mathematics seem to be. The page on whether you can be good without God weighs that view at length. Here it's enough to say what it costs. On that view, the worth of a child or of justice is real, but it belongs to nothing and no one. Nothing in the universe knows it, and when the last mind goes out, nothing will keep it.",
+          "Bertrand Russell, who did not believe in God, saw the long view without flinching. In \"A Free Man's Worship\" (1903) he wrote that all the labors and genius of the ages are \"destined to extinction in the vast death of the solar system.\" Nagel's answer is that this long view isn't the measure, and he's right that the death of the sun can't reach back and spoil a good afternoon. But the question was never whether this afternoon matters to me. It was whether it matters, full stop, and whether that mattering is anywhere but in me. Leo Tolstoy, who had fame, family and wealth, put it plainly in A Confession (1882): \"What will come of what I am doing today or shall do tomorrow? What will come of my whole life?\" That's not a question about feelings. It's a question about what is real.",
+        ],
+      },
+      {
+        heading: "What the Bible says about the same question",
+        body: [
+          "The Bible doesn't dodge Russell's view. One of its own books states it. \"Vanity of vanities, says the Preacher, vanity of vanities! All is vanity\" (Ecclesiastes 1:2). The Preacher tries pleasure, work, wealth and wisdom and finds that death levels all of them. That book is in the canon, which tells you something: the faith doesn't need to hide from the thought that, under the sun, nothing lasts. But the same Preacher says of God, \"He has made everything beautiful in its time. Also, he has put eternity into man's heart, yet so that he cannot find out what God has done from the beginning to the end\" (Ecclesiastes 3:11). On that account, the ache Tolstoy felt isn't a mistake in the wiring. It's what you'd expect in a creature made for more than a lifetime.",
+          "The New Testament grounds the answer in an event, not a mood. Paul ends his long argument for the resurrection by turning to ordinary work: \"knowing that in the Lord your labor is not in vain\" (1 Corinthians 15:58). That doesn't make an unbeliever's labor worthless. It says something about why any labor is worth doing, and it rests on whether Jesus rose, which has its own page. If he didn't, Paul himself says the faith is futile.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply is Nagel's, pressed hard. You are smuggling in a demand for cosmic meaning that no one needs. A finite good is still good. A friendship that ends at death was still a friendship, and a kindness no one remembers was still kind. Wanting the universe to keep score is a kind of vanity of its own. There's real force in that, and the Christian should grant it: finite goods are good, and their worth isn't on loan from eternity. The Christian claim is narrower. It's that their worth is real and not ours to revoke, and that a world with a God who knows and keeps what is good is the kind of world in which that would be true. Whether that world is ours is the question the other pages argue.",
+          "Here is what the argument doesn't prove. It doesn't prove God exists. It doesn't show that believers live more meaningful lives than unbelievers; many don't. It doesn't show that anyone who doubts God should feel that his life is empty, because it isn't. What it shows is narrower: that the meaning nearly everyone finds asks to be true, and that the question of God is one place to look for what makes it so.",
+        ],
+      },
+      {
+        heading: "If the question isn't abstract for you",
+        body: [
+          "Sometimes this question comes from a seminar. Sometimes it comes at three in the morning, from grief, or exhaustion, or a darkness that makes everything look pointless. If that's where you are, the feeling that nothing matters is real and it is common, and it is not the truth about you. Your life matters to people who would be wrecked to lose you, whether or not you can feel that tonight. Find Help has people you can call, today if you need them. If you have reached the place where you are not sure you want to be here at all, tell someone today, and in the United States you can call or text 988 right now.",
+          "The Preacher of Ecclesiastes wrote some of the darkest sentences in the Bible, and they have been kept and read for more than two thousand years by people who believed God was there. The question of meaning doesn't have to be answered tonight. It only has to be carried to someone, and asked out loud.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Leo Tolstoy", title: "A Confession", year: "1882" },
+      { author: "Bertrand Russell", title: "A Free Man's Worship", in: "The Independent Review", year: "1903" },
+      { author: "Albert Camus", title: "The Myth of Sisyphus", year: "1942; tr. Justin O'Brien, 1955" },
+      { author: "Jean-Paul Sartre", title: "Existentialism Is a Humanism", year: "lecture 1945; tr. Carol Macomber, 2007" },
+      { author: "Thomas Nagel", title: "The Absurd", in: "The Journal of Philosophy", year: "1971" },
+      { author: "Susan Wolf", title: "Meaning in Life and Why It Matters", year: "2010", note: "The best case for meaning without appeal to God." },
     ],
     essaySlug: "meaning-without-god",
     essayTitle: "Can a Life Mean Anything Without God?",
