@@ -2801,3 +2801,43 @@ Left out: Bauckham's Joanna-Junia proposal; Tarichaeae; the Magdala stone's
 menorah; m. Bava Kamma 7:7 on pigs; the Kursi road builders' date; the
 Malachi 4:2 "wings" echo (could not be checked); kalos kagathos for "noble
 and good"; Jeremias on "unless".
+
+## The plain notes on Luke 9 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/9.json`. Three searches for this
+chapter, with the book page's rows and the earlier ledger (Mark 6, 8 and 9;
+Matthew 8, 14, 16, 17 and 18; John 4).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Travelling light, one house, shaking the dust (Acts 13:51); Mark allows a staff, Luke and Matthew 10:10 do not | 1-9 | Earlier ledger (Mark 6); BSB | Repository |
+| Herod Antipas ruler of Galilee; John's death in Mark 6; 3:19-20; 23:8 | 1-9 | Earlier ledger (Mark 6); BSB | Repository |
+| Malachi 4:5 | 1-9 | BSB | Repository |
+| One of the few events in all four Gospels; only men counted (Matthew 14:21) | 10-17 | Earlier ledger (Matthew 14, "one of the few events"; Mark 6) | Earlier ledger. "The only miracle in all four" not used |
+| Bethsaida near where the Jordan enters the lake; site disputed | 10-17 | Earlier ledger (Mark 8) | Earlier ledger |
+| Luke has nothing of Mark 6:45 to 8:26 between the feeding and the confession; why not known | 10-17 | BSB comparison | Repository. The label "great omission" not used |
+| Exodus 16:4; 18:21; 2 Kings 4:43; 22:19; 24:35 | 10-17 | BSB | Repository |
+| The "sharing" explanation of the feeding | 10-17 | Deep note `pitfalls` | Stated without a date or name (the deep note's "nineteenth century" not checked) |
+| Christ, Messiah, anointed; Caesarea Philippi; why silence | 18-22 | Earlier ledger (Mark 8) | Earlier ledger |
+| Luke sets the question at prayer; omits Mark 8:32-33; 3:21, 6:12; Psalm 2:2; 2 Samuel 7:12-16; 24:26 | 18-22 | BSB | Repository |
+| The cross Rome's death for slaves and rebels; carried by the condemned; shame | 23-27 | Earlier ledger (Mark 8) | Earlier ledger |
+| "Daily" only in Luke (9:23 against Mark 8:34, Matthew 16:24) | 23-27 | BSB | Repository |
+| Psalm 49:8; Daniel 7:13-14; the views of 9:27 (Mark 9 wording) | 23-27 | BSB; Mark 9 plain note | Repository |
+| Shelters and Tabernacles; mountain unnamed; Tabor since the 200s, Hermon suggested | 28-36 | Earlier ledger (Mark 9) | Earlier ledger |
+| Exodos used three times in the NT (Luke 9:31; Hebrews 11:22; 2 Peter 1:15) | 28-36 | Greek text | Script over the repository's Greek (G1841) |
+| 9:35 "chosen" in P45, P75, Sinaiticus, Vaticanus; "beloved" in later copies (A, C, W, Byzantine), likely to match Mark and Matthew; KJV "beloved" | 28-36 | NA28 apparatus as reported; NET note | Search: freely-given.org OBD Luke 9:35; biblia.com NET note; Wikipedia "Textual variants in the Gospel of Luke". Stated as "the oldest copies" |
+| Exodus 34:29; Psalm 2:7; Isaiah 42:1; Deuteronomy 18:15; 22:45 | 28-36 | BSB | Repository |
+| The glory shown to strengthen the disciples for the cross | 28-36 | Deep note (Leo the Great) | Stated as "one common answer", no name (Leo not checked) |
+| Seizures; the Greek medical writing of about 400 BC; Mark's "help my unbelief"; the Mark 9 illness wording word for word | 37-45 | Earlier ledger (Mark 9); Mark 9 plain note | Repository |
+| Only child (7:12; 8:42; 9:38); "gave him back" (7:15; 9:42); Deuteronomy 32:5; 1 Kings 17:23 | 37-45 | BSB | Repository |
+| A child had no rank; pais for child and servant | 46-50 | Earlier ledger (Mark 9; Matthew 18) | Earlier ledger |
+| Numbers 11:29; 11:23 against 9:50 (Mark 9:38-41 answer) | 46-50 | BSB; Mark 9 plain note | Repository |
+| 9:51 the turning point; 13:22, 17:11, 18:31 | 51-56 | Book page; BSB | Repository |
+| Greek of 9:51 "set his face" (prosōpon estērisen); analēmpsis only here in the NT; analambanō for the ascension (Acts 1:2, 11, 22) | 51-56 | Greek text | Script over the repository's Greek (G0354, G0353, G4383) |
+| Samaritans: God of Israel, five books of Moses, Gerizim; Galilean pilgrims killed (Antiquities 20.118); about nine hundred today | 51-56 | Earlier ledger (John 4; Jewish life portrait) | Earlier ledger, John 4 wording |
+| 2 Kings 1:10-12; Isaiah 50:7; 10:33; 17:16; Acts 8:5-6; 19:10 | 51-56 | BSB | Repository |
+| 9:54 "as Elijah did" lacking in P45, P75, Sinaiticus, Vaticanus, in most later copies; 9:55-56 longer words lacking in P75, Sinaiticus, Vaticanus and others; part of them in Bezae and others, all in many later copies and the KJV; most scholars think them added | 51-56 | NA28 apparatus as reported; NET note; Metzger and Omanson as reported | Search: uasvbible.org (apparatus list); biblia.com NET note 9:54; journeywithjesus.net; Wikipedia "Textual variants in the Gospel of Luke". P45 not named for 9:55-56 (not confirmed); P75 "around AD 200" from the earlier ledger |
+| Burying a father; the three readings; McCane's second burial (not named here); the Matthew 8 care paragraph adapted (Mark 7:10-13 and Luke 18:20 for Matthew 15:4-6; John 11:35 sentence dropped) with its last line word for word | 57-62 | Earlier ledger (Matthew 8); Matthew 8 plain note | Repository |
+| 1 Kings 19:19-20 | 57-62 | BSB | Repository |
+
+Left out: the Cynic philosophers' staff and bag; Theissen; Josephus on Machaerus; Bethsaida-Julias and the two sites; the "great omission" label; Plutarch and Yehohanan (they are in the Mark 8 note); Leo the Great, Palamas, Callixtus III and Raphael; Conzelmann, Evans and Moessner on the travel section; Tertullian and Marcion on the fire; Ambrose; Hengel and Sanders on the burial saying; Tobit and m. Berakhot 3:1.
