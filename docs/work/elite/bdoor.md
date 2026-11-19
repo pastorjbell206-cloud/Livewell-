@@ -4759,3 +4759,170 @@ justification; the age of the Samaritan hope of a prophet like Moses.
 ### Next
 
 Acts 15 onward in plain words.
+
+## Continuation: Acts 15 to 21 (2026-11-19)
+
+### Acts 15 to 21 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Acts 15 | 6 (‘Unless you are circumcised’; Peter: ‘saved through grace, just as they are’; James: ‘The words of the prophets agree’; the letter: ‘It seemed good to the Holy Spirit and to us’; joy at Antioch; a sharp disagreement: Paul, Barnabas and Mark) | 4,265 |
+| Acts 16 | 7 (Timothy joins Paul; ‘Come over to Macedonia and help us’; Lydia, the dealer in purple; an enslaved girl with a spirit; beaten with rods and thrown into prison; midnight: ‘What must I do to be saved?’; ‘We are Roman citizens’) | 4,741 |
+| Acts 17 | 6 (Thessalonica: ‘the Christ had to suffer’; ‘Another king, named Jesus’; Berea: searching the Scriptures every day; Athens: a city full of idols; ‘To an unknown god’; ‘He has set a day’: some mock, some believe) | 3,626 |
+| Acts 18 | 6 (Corinth: Aquila, Priscilla and the tentmakers; ‘Your blood be on your own heads’; ‘Do not be afraid; keep on speaking’; before Gallio; a vow at Cenchrea, and back to Antioch; Apollos, taught by Priscilla and Aquila) | 3,507 |
+| Acts 19 | 8 (twelve disciples who knew only John's baptism; two years in the hall of Tyrannus; handkerchiefs and aprons; the seven sons of Sceva; burning the books of magic; Demetrius the silversmith; ‘Great is Artemis of the Ephesians’; the town clerk calms the city) | 3,780 |
+| Acts 20 | 6 (through Macedonia and Greece, with the gift for Jerusalem; Eutychus falls from the window; hurrying toward Jerusalem; Paul's farewell: how he lived among them; ‘Be shepherds of the church of God’; ‘It is more blessed to give than to receive’) | 3,236 |
+| Acts 21 | 5 (Tyre: farewell on the beach; Philip's daughters, and Agabus with the belt; James and the elders, and a vow in the temple; seized in the temple; ‘Aren't you the Egyptian?’) | 3,488 |
+| Total | 44 | 26,643 |
+
+After each chapter every passage was printed field by field (and a script
+checked that each `happening` cites verses, each `ot` names Old Testament
+Scripture and each `asks` asks); all 44 sit under their right headings.
+`validate-bible-notes` and `validate-no-emdash` passed after each chapter
+with no exceptions. Each chapter note gained only `"plain": true`. Acts 22
+was not written.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Acts 15" to "21". 31 web
+searches: 6, 5, 5, 5, 4, 3, 3. Main sources: the Septuagint and Hebrew of
+Amos 9:11-12; the Western text of 15:20 and 29 (Codex Bezae; NET note; Lake);
+Leviticus 17-18 and the decree; the Westminster Confession chapter 31; the
+seven councils; 15:34 in the manuscripts; the Mishnah's matrilineal rule and
+its debated age; the dyers' guild at Thyatira; "spirit of python"; Theos
+Hypsistos inscriptions; the lictors and duoviri of Philippi; Aratus,
+Phaenomena 5, and the uncertain Epimenides line; Pausanias and Diogenes
+Laertius on unknown gods' altars; Britannica, IEP and Stanford on Stoics and
+Epicureans; the Areopagus; Gallio as Seneca's brother; the Corinth bema;
+Paul's vow at Cenchrea; Priscilla named first four of six times; the
+Ephesian letters; Sceva; the temple of Artemis; Asiarchs; the Lord's day in
+the Didache and Justin; the text of 20:28; Ignatius and the single bishop;
+Josephus on the Egyptian and the sicarii (Jewish War 2.254-263; Antiquities
+20.169-172) and on Agrippa and the Nazirites (19.294); the Antonia. Reused:
+the book page (Galatians 2 views, Claudius, Gallio, politarchs, "Acts and
+the Jewish people"), the Roman-world portrait (Philippi, citizenship,
+households, Corinth, Ephesus's theatre), the Jewish-life portrait (the
+temple barrier inscription), the slavery Honest Answer, and the care lines
+of Genesis 37, Matthew 27 and Acts 1.
+
+### Cut or narrowed
+
+Cut: a date for the council; the rabbinic "yoke of the law"; the Ethiopian
+Orthodox food rules; Silas as Silvanus; the Noachide reading; the madder-root
+dye; Hypsistos dates; why Paul did not claim citizenship (Luke does not
+say); the girl's later life; the loyalty oaths to the emperor; Zeno's dates;
+Isho'dad of Merv; Dionysius the Areopagite's later legend; Seneca's column;
+the bema's date; the secrecy of magic books; the temple of Artemis as a bank
+and its size; Paul's dates at Ephesus; the Didache's and Justin's dates; the
+Antonia's garrison size; the year of Paul's arrival in Jerusalem.
+Narrowed: Edom/adam "some think"; Gallio's ruling "many readers think";
+Sosthenes "some think"; the Areopagus hill or council "scholars differ";
+Epimenides "less certain"; Eutychus raised (most) or found alive (some);
+"Hebrew" or Aramaic; Alexander's purpose "probably"; the temple gates shut
+"probably" to keep blood from the holy place.
+
+### Contested matters, and how they are stated
+
+The council's question (Acts 15:1-5, hearers): "Their case deserves to be
+heard in its strongest form, the way they would have put it. God himself
+gave circumcision to Abraham, and he called it everlasting. The Law said
+that a foreigner who wanted to share Israel's Passover must first be
+circumcised. Jesus is the Messiah of Israel, the promised King of the Jews.
+So anyone who wants to belong to Israel's Messiah should join Israel in the
+way God's own Law had always laid down: by circumcision, and by keeping the
+commandments. Their Bible said nothing about God one day setting this aside.
+To them, welcoming Gentiles without it looked like treating God's word as if
+it did not matter. They were Bible-believing men, and they were taking the
+Bible seriously."
+
+Galatians 2 and Acts 15 (the book page's three views, Antioch quarrel before
+or after; no side). The four requirements of 15:20 (Leviticus 17-18; temple
+worship; Codex Bezae's golden rule, most think later; do they still bind;
+"these notes do not settle it"). What the letter settles for Jewish
+believers ("The council made room for Gentiles without asking Jews to stop
+being Jews"). Councils and authority (Catholic, Orthodox, Protestant with
+Westminster 31, congregational; one sentence each; no side). Timothy's
+circumcision with Galatians 2:3 and 5:2 (most readers; some scholars doubt
+Luke; no side).
+
+Household baptisms (Acts 16:11-15, hard): "‘She and her household had been
+baptized.’ Did that household include infants? Christians who baptize babies
+and Christians who baptize only believers both read this verse, and the
+jailer's household later in this chapter (verse 33), with care. These notes
+set out both readings and do not choose between them." Then the
+infant-baptizing reading (covenant household, 2:39, 1 Corinthians 1:16) and
+the believer-baptizing reading (16:32, 34; 18:8), and "The text does not
+tell us the ages of anyone in Lydia's house. The note on Acts 2:37-41 sets
+out the wider views of baptism."
+
+The enslaved girl (Acts 16:16-18): "Say it plainly: this girl was enslaved,
+and she was being used. Luke tells us she ‘earned a large income for her
+masters’. She had more than one owner. They made money from her, and, as the
+next verses show, the moment the money stopped they cared nothing for her at
+all. She was a person treated as a business." And (hard): "What became of
+her? The text does not say. Luke tells us the spirit left her, and then he
+follows her owners, not her." With the slavery Honest Answer and the
+trafficking care line.
+
+Paul at Athens (common ground and its limits; did Athens fail; no side).
+Priscilla teaching (Acts 18:24-28, hard): "Priscilla, with her husband,
+explained the way of God to Apollos, a man and a preacher. What does this
+mean for women teaching in the church? Christians who hold different views
+both read this verse carefully. These views are held by faithful believers,
+and these notes do not choose between them." Then the complementarian and
+the egalitarian readings each in its holders' terms, and "Both sides agree
+on much: Priscilla was a gifted and respected servant of Christ, she knew
+the faith well enough to correct a famous preacher, and Luke honours her for
+it." Philip's daughters point back to it.
+
+The twelve at Ephesus (not rebaptism of believers; Pentecostal and
+"one conversion" readings; confirmation; pointing back to 2, 8 and 10).
+Selling blessed objects: "Nothing in this passage supports that." Sunday
+worship (Sunday; Saturday Sabbath-keepers; freedom; no side). Church offices
+(pointing back to 14:21-28, with Ignatius). 20:28's text and grammar. Was
+Paul right to go (most; a few; "guidance is not a formula"). The temple vow
+and Galatians (three readings; no side). "The Jews" in the 13:42-47 form,
+with a pointer back, at 17:5, 17:13, 18:5-6, 18:12-14, 18:28, 19:33, 20:3,
+20:19, 21:11 and 21:27. "Another king" with no modern political use.
+Artemis's city shown without contempt; the town clerk's fairness.
+
+### Care lines included
+
+16:16-18 (trafficking, the Genesis 37 form, with Find Help); 16:25-34 (the
+jailer): "The jailer was about to kill himself. Luke tells it in one
+sentence, and Paul's shout stops it. A word of care. Some people come to a
+moment when everything seems lost, and ending their life seems the only way
+out. If that is you, please do not carry it alone. Tell God, and tell
+someone near you: a friend, a pastor, a doctor. If you have thought of
+ending your life, please reach out today to a crisis line or emergency
+service where you live. The Find Help page on this site lists places to
+turn. Paul's first words to the jailer were, ‘Do not harm yourself.’ The
+night that looked like the end was the night his house was filled with
+joy."
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass. At
+the end, all 36 content-gate commands of ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 160 chapters in plain words; search index 732 entries
+up to date; passage index 623 files match; verify-sources 22 texts intact).
+`pnpm check`: clean. `pnpm test`: 146 files passed, 7 skipped; 1,679 tests
+passed, 73 skipped. `pnpm build`: exit 0. Served with
+`scripts/serve-like-vercel.mjs` on port 4600; a Playwright script (390 wide,
+deviceScaleFactor 1, /api/trpc, /api/track and /_vercel stubbed) matched
+every passage heading, its part headings in order and the first 60
+characters under each to the data: Acts 15, 26 of 26 fields; 16, 32; 17, 26;
+18, 25; 19, 34; 20, 25; 21, 22; no sideways scroll, no console or page
+errors. Screenshots looked at: `/home/user/elite-shots/bdoor/acts15-390-*`
+and `acts16-390-*`. Server stopped by PID, dist/ deleted, no lh-*.json.
+Sitemap, prerender and Lighthouse not run (no code changed).
+
+### Still unverified
+
+The exact words of every ancient writer (all paraphrased); the Orthodox and
+Catholic teaching on councils beyond the general sentence; the first-century
+date of the matrilineal rule (stated as argued).
+
+### Next
+
+Acts 22 onward in plain words.
