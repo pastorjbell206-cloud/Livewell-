@@ -4,7 +4,8 @@
  *
  * Writes client/public/index/chapters/<book>/<n>.json: for each Bible chapter
  * that has any, the pages on this site that treat it ("Go deeper" on a
- * chapter). The rules and the sources are in scripts/lib/passage-index.mjs.
+ * chapter), and client/public/index/chapters.json, the list of chapters that
+ * have a file. The rules and the sources are in scripts/lib/passage-index.mjs.
  * Rerun it after editing any library it reads.
  *
  *   pnpm exec tsx scripts/build-passage-index.mjs           write the files

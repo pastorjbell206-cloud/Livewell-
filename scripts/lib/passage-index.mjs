@@ -50,7 +50,8 @@
  *
  * k is the kind, t the title, h the address, p the passage as the item names
  * it within this chapter. Rows are in KIND_ORDER, then in the library's own
- * order. Run with tsx (answers.ts and the reference finder are TypeScript):
+ * order. Beside them, client/public/index/chapters.json lists which chapters
+ * have a file, so the page never asks for one that is not there. Run with tsx (answers.ts and the reference finder are TypeScript):
  *
  *   pnpm exec tsx scripts/build-passage-index.mjs           write the files
  *   pnpm exec tsx scripts/build-passage-index.mjs --check   exit 1 on drift (CI)
@@ -67,6 +68,11 @@ import { loadEssayShelf, loadShelfData } from "./shelf.mjs";
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const PUB = path.join(ROOT, "client/public");
 export const OUT_DIR = path.join(PUB, "index/chapters");
+/**
+ * The list of chapters that have a file ({ "<book>": [n, ...] }), so a
+ * chapter with nothing is known without asking for a file that is not there.
+ */
+export const LIST_FILE = path.join(PUB, "index/chapters.json");
 
 /** The kinds, in the order a chapter lists them. */
 export const KIND_ORDER = ["question", "doctrine", "history", "background", "guide", "devotion", "catechism", "care", "plan", "wisdom", "essay", "tool"];
@@ -323,6 +329,20 @@ export function renderFiles(index = buildPassageIndex()) {
   return files;
 }
 
+/** The text of LIST_FILE for these files: each book's chapters that have one, in order. */
+export function renderList(files) {
+  const list = {};
+  for (const rel of [...files.keys()].sort()) {
+    const [slug, f] = rel.split("/");
+    (list[slug] ??= []).push(Number(f.replace(/\.json$/, "")));
+  }
+  for (const n of Object.values(list)) n.sort((a, b) => a - b);
+  return JSON.stringify(list) + "\n";
+}
+
+const LIST_REL = path.relative(OUT_DIR, LIST_FILE);
+const readText = (p) => (fs.existsSync(p) ? fs.readFileSync(p, "utf8") : null);
+
 function listExisting(dir = OUT_DIR) {
   if (!fs.existsSync(dir)) return [];
   const out = [];
@@ -344,6 +364,9 @@ export function passageIndexDrift(files = renderFiles()) {
     else if (fs.readFileSync(path.join(OUT_DIR, rel), "utf8") !== text) stale.push(rel);
     existing.delete(rel);
   }
+  const list = readText(LIST_FILE);
+  if (list === null) missing.push(LIST_REL);
+  else if (list !== renderList(files)) stale.push(LIST_REL);
   return { count: files.size, stale, missing, extra: [...existing] };
 }
 
@@ -362,6 +385,11 @@ export function writePassageIndex(files = renderFiles()) {
     if (keep.has(rel)) continue;
     fs.rmSync(path.join(OUT_DIR, rel));
     removed++;
+  }
+  const list = renderList(files);
+  if (readText(LIST_FILE) !== list) {
+    fs.writeFileSync(LIST_FILE, list);
+    written++;
   }
   return { count: files.size, written, removed };
 }

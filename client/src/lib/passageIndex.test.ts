@@ -80,6 +80,14 @@ describe("the passage index", () => {
     expect(bad).toEqual([]);
   });
 
+  it("lists exactly the chapters that have a file (index/chapters.json)", () => {
+    const list: Record<string, number[]> = JSON.parse(fs.readFileSync(path.resolve(DIR, "../chapters.json"), "utf8"));
+    const listed = Object.entries(list).flatMap(([slug, ns]) => ns.map((n) => `${slug}/${n}`)).sort();
+    expect(listed).toEqual(files.map((f) => f.key).sort());
+    expect(list.matthew).not.toContain(8);
+    expect(list.john).toContain(3);
+  });
+
   it("groups a chapter's rows by kind, in order, leaving out kinds with nothing", () => {
     const groups = groupRows(read("john/3")!);
     expect(groups[0].name).toBe("Honest Answers");
