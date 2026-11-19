@@ -1235,3 +1235,47 @@ name; Josephus on the Tyrians (Against Apion 1.70; War 2.478); Theissen;
 Pesikta de-Rav Kahana and Yohanan ben Zakkai; Hilary; Origen; the Didache on
 dogs; Luther's 1525 sermon (not searched); the lectionaries; every textual
 note in the deep note (6, 4, 8, 14, 30-31, 39 beyond Magadan).
+
+## The plain notes on Matthew 16 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/16.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 8 and 9).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Pharisees kept traditions of the fathers; Sadducees rejected them (Josephus, Antiquities 13.297, from the Matthew 15 search) and denied the resurrection; Matthew pairs them (3:7; 16:1-12) | 1-4 | Matthew 22:23; Acts 23:8; Josephus | BSB text; earlier ledger (Matthew 15) |
+| 16:2b-3 absent from Sinaiticus and Vaticanus (and others); added from Luke 12:54-56, or dropped where a red morning sky does not bring rain (Scrivener, Lagrange) | 1-4 | Textual commentaries as summarised | Search: en.wikipedia.org "Matthew 16:2b-3"; confessionalbibliology.com; uasvbible.org. Scholars not named |
+| Sign of Jonah; Jonah 3:5; 12:40; "adulterous" as the prophets' picture (Hosea 2; Jeremiah 3), not the Jewish people | 1-4 | BSB; Matthew 12 plain note | BSB text; earlier ledger |
+| Leaven; Passover; Mark's Herod; Luke's hypocrisy; only Matthew "teaching"; Mark ends at "Do you still not understand?" | 5-12 | Exodus 12:15; 1 Corinthians 5:6; Mark 8:15, 21; Luke 12:1 | BSB text; earlier ledger (Mark 8) |
+| Matthew 23:3 against 16:12: readings, no side | 5-12 | BSB | Stated as views |
+| Caesarea Philippi (Pan, Herod's temple, Philip); Psalms of Solomon 17 | 13-17 | Earlier ledger (Mark 8) | Earlier ledger. Distance and temple site not given |
+| Only Matthew adds Jeremiah and "Son of the living God" and verses 17-19 | 13-17 | Mark 8:28-29 | BSB comparison |
+| Simon son of Jonah; John 1:42 "son of John"; "may be forms of one name" | 13-17 | BSB | BSB text; stated as possible |
+| 2 Samuel 7:12-16; Psalm 2:7; Hosea 1:10 | 13-17 | BSB | BSB text |
+| Petros / petra (16:18); kepha, Cephas (John 1:42); ekklēsia only at 16:18 and 18:17 in the Gospels | 18-20 | Greek text (G4074, G4073, G1577); BSB | Script; Matthew's book page |
+| Hades the Greek word for Sheol: Psalm 16:10 "Sheol" quoted in Acts 2:27 as "Hades"; Isaiah 38:10 "gates of Sheol"; Hades not Gehenna | 18-20 | BSB | BSB text |
+| Bind and loose: Jewish legal terms for forbid and permit (asar, hittir), in rabbinic writings (later) | 18-20 | Jewish Encyclopedia (1901) "Binding and Loosing"; israelbiblecenter.com | Search: jewishencyclopedia.com 3307. Marked as later; no tractate named |
+| Josephus, Jewish War 1.111: under Queen Alexandra the Pharisees bound and loosed whom they would | 18-20 | Josephus | Search: lexundria.com War 1.107-119 (Whiston); cojs.org War 1.110-12. Paraphrased; her dates not given |
+| Matthew 18:18 gives the words to the disciples together | 18-20 | BSB | BSB text |
+| Isaiah 22:15, 22 (Shebna, Eliakim, the key); Psalm 18:2; Isaiah 51:1-2 | 18-20 | BSB | BSB text. The Catholic argument from Isaiah 22's continuing office is not stated (not confirmed by the search) |
+| Catholic: Simon alone made the rock; the keys as authority to govern God's house (Catechism 553, 881) | 18-20 | Catechism of the Catholic Church | Search: vatican.va archive; usccb.org; catholic.com; stmikes.org. Paraphrased |
+| First Vatican Council (1870), Pastor Aeternus: a true primacy of jurisdiction, not only of honour, given to Peter and continuing in the bishops of Rome | 18-20 | Pastor Aeternus | Search: ewtn.com; catholicculture.org; oursundayvisitor.com; churchcontroversies.com. Paraphrased |
+| Orthodox: the rock as Peter's confession of faith; Chrysostom (Homily 54 on Matthew): "the faith of his confession" | 18-20 | oca.org "On this rock I will build my church"; Chrysostom | Search: oca.org; newadvent.org 200154; clerus.org. Paraphrased. "Every bishop holds Peter's chair" and the named Orthodox theologians (deep note) not confirmed and not used; Orthodox rejection of Rome's universal jurisdiction stated generally |
+| Protestant: the rock as Christ or the confession (1 Corinthians 3:11); many today accept Peter in person, without successors (Ephesians 2:20; Acts 2; 10) | 18-20 | Ligonier devotional "Peter the Rock"; thegospelcoalition.org; christiantruth.com | Search. Cullmann's wording not confirmed, so no scholar named; Melanchthon and Calvin not named |
+| "From that time on" at 4:17 and 16:21 | 21-23 | BSB | BSB text |
+| Skandalon at 16:23; hupage (4:10; 16:23); opisō mou (4:19; 16:23-24) | 21-23 | Greek text | Script. "Shares its Greek words for 'behind Me'" (the verbs differ: deute, hupage) |
+| Ruling council; stumbling block (1 Corinthians 1:23); Isaiah 53:5; Psalm 118:22; Daniel 7:13-14; predictions shaped after Easter (since about 1900) | 21-23 | BSB; earlier ledger (Mark 8, Wrede) | BSB text; earlier ledger |
+| Varus and about two thousand crucified; Plutarch; Yehohanan (1968); psychē | 24-28 | Earlier ledger (Mark 8) | Earlier ledger |
+| Mark 8:35 "and for the gospel"; Mark 9:1 "arrive with power" against Matthew 16:28 | 24-28 | BSB | BSB comparison |
+| Psalm 49:8; Psalm 62:12; Daniel 7:13-14; Galatians 2:20; Matthew 17:1-2; 28:18 | 24-28 | BSB | BSB text |
+| Care: the cross is not abuse; "If you are being abused, seek safety first..." (the Matthew 5 and Mark 10 wording) | 24-28 | CLAUDE.md, care for the reader | Pastoral |
+| Bertrand Russell, Why I Am Not a Christian (lecture, March 1927, Battersea): Christ expected his second coming within the lifetime of people then living | 24-28 | Russell | Search: hettingern.people.charleston.edu (text); bigthink.com; christiancourier.com. Paraphrased |
+| Readings of 16:28: the mountain; resurrection and Spirit; the judgment on Jerusalem in AD 70 (a coming in judgment) | 24-28 | Mark 9 plain note; christiancourier.com (the judgment reading) | Stated as views, no side; AD 70 from the earlier ledger |
+
+Left out: forty kilometres to Caesarea Philippi; Netzer, Maoz and Overman on
+Herod's temple; 2 Maccabees 15 and 2 Esdras on Jeremiah; Sirach 14:18 on
+"flesh and blood"; the Elephantine papyrus and Fitzmyer; Yalkut Shimoni;
+Tertullian, Origen, Cyprian, Firmilian, Augustine's Retractations, Leo the
+Great; Melanchthon, Calvin; Meyendorff, Afanasiev, Schmemann; Cullmann,
+Carson, Bultmann; Ut Unum Sint; Wisdom 16:13 and 3 Maccabees 5:51; the
+Catholic argument from Isaiah 22 as an office handed on; the lectionaries.
