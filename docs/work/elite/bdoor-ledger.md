@@ -4388,3 +4388,33 @@ chapter; the deep note, the book page and the BSB.
 
 Cut: Egyptian records of Edomite herders; Faynan copper mines; Bozrah as
 Buseirah; Herod and the Idumeans; the root of alluf.
+
+## The plain notes on Genesis 37 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/37.json`. One web search for this
+chapter, with the deep note, the verse notes, the book page and the Genesis
+27 plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| ‘The account of Jacob’ opens the last part; Joseph and Judah the main characters | 1-4 | Book page (`shape`); deep note (`story`) | Repository |
+| Ketonet passim uncertain: ‘many colors’ (Greek translation, KJV) or long sleeves reaching to wrists and ankles; only other use 2 Samuel 13:18 | 1-4 | Deep note (`cultural`, `words` H3801); BSB 2 Samuel 13:18 | Repository |
+| ‘Could not speak to him for peace’ (leshalom) | 1-4 | Hebrew text, standard lexicons | Repository |
+| 25:28; 29:30; James 2:1; Colossians 3:21 | 1-4 | BSB | Repository |
+| Care line: the Genesis 27 wording ("If you know that cry/hurt ... it was not your fault." Psalm 27:10; "If the hurt is heavy, please share it with someone you trust: a friend, a pastor, a counsellor.") | 1-4 | Site | Repository (grep -F) |
+| Dreams taken as divine messages; Egyptians wrote guides to reading them; a doubled dream sure (41:32); Rachel dead (35:19) so pictures | 5-11 | Deep note (`cultural`, `literary`) | Repository |
+| Genesis 42:6; Luke 2:19 | 5-11 | BSB | Repository |
+| Dothan near a pass on the trade road from Gilead toward Egypt; cistern bottle-shaped; ‘master of dreams’ | 12-24 | Deep note (`historical`, `cultural`) | Repository |
+| Genesis 42:21; Jeremiah 38:6; Matthew 21:38 | 12-24 | BSB | Repository |
+| Balm and myrrh resins prized in Egypt for medicine, perfume, the dead | 25-28 | Deep note (`historical`) | Repository |
+| Leviticus 27:5: male aged five to twenty valued at twenty shekels | 25-28 | BSB | Repository |
+| Kenneth Kitchen (1995 article) argued twenty shekels matches the slave price in Hammurabi's time and that later prices were higher; others doubt prices can date the story | 25-28 | Kitchen, Biblical Archaeology Review 1995 (the book page's "well-known article of 1995") | Search: "Kitchen twenty shekels price of slave Joseph" (library.biblicalarchaeology.org; biblearchaeology.org; scripturecentral.org). Stated as Kitchen's argument |
+| Ishmaelites and Midianites: three readings (same traders, Judges 8:24; Midianites pulled him out; two tellings woven) | 25-28 | Deep note (`hard`) | Repository; no side |
+| Exodus 21:16; 1 Timothy 1:10; Psalm 105:17; Amos 2:6; Matthew 26:15 | 25-28 | BSB | Repository |
+| Goat echo of 27:9, 16; ‘recognize’ returns 38:25, 42:7-8; sackcloth goat's hair; Sheol first named | 29-36 | Deep note (`literary`, `cultural`, `words`) | Repository |
+| Genesis 50:20; Acts 7:9 | 29-36 | BSB | Repository |
+| Care line on trafficking: the Genesis 19 shape ("It is not your fault." ... "The Find Help page on this site lists places to turn.") | 25-28 | Site | Repository |
+
+Cut: Beni Hasan painting; the eighteenth-century papyrus of Semitic
+servants; Dothan's distance from Shechem; Mari and Hammurabi law numbers;
+Nuzi and Ugarit prices.
