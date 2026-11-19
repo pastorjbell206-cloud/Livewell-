@@ -574,3 +574,25 @@ Searches this answer: 12 (Saheeh International 4:157 wording; Abdel Haleem 4:157
 | Every chapter but one opens with the Bismillah | Standard (surah 9 has none; 9:1 in the same text opens otherwise) | Verified |
 
 No fact about James is used. Cut from the old answer: "When I was an atheist, lumping every religion together kept all of them at arm's length" (a habit of his that cannot be confirmed). Kept in its own words: "I hold the Christian confession as confession ... how far apart they are." Changed for fairness: the old "One says a person climbs toward mercy" (Islam is now stated with its own teaching on mercy and the hadith on deeds).
+
+### What makes us human in the age of AI?
+
+Searches this answer: 11 (Turing's paper; Turing's reply on consciousness; Searle; Nagel; Putnam; Dennett 1991; Dennett 1994; the three readings of the image of God with Middleton; Maritain; Singer; Irenaeus). No essay ledger exists for this answer. Primary pages could not be opened; every claim rests on search results that reproduce or summarize the texts.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Turing, "Computing Machinery and Intelligence," *Mind* 59 (1950), 433-460, opens "I propose to consider the question, 'Can machines think?'" and replaces it with the imitation game | Search (McGill and Miami course PDFs of the paper; Cogprints) | Verified, quoted. His "too meaningless to deserve discussion" was not found in a result and is not used |
+| Turing's reply to the argument from consciousness (Jefferson): it leads to solipsism; "the polite convention that everyone thinks" | Search (Closer to Truth; Schweizer, Edinburgh) | Verified in secondary sources that give the phrase as his; quoted. Recheck against the paper if possible |
+| Putnam, "Psychological Predicates" (1967), reprinted as "The Nature of Mental States" (1975): pain a functional state of the whole organism; mammal and octopus | Search (Stanford Encyclopedia "Functionalism"; Notre Dame course notes; Cambridge) | Verified, paraphrased |
+| Dennett, *Consciousness Explained* (1991): no Cartesian theater; consciousness no extra non-physical element | Search (London Review of Books review; summaries) | Verified, paraphrased |
+| Dennett, "Consciousness in Human and Robot Minds" (1994): "we are a sort of robot ourselves"; his skepticism "mundane, economic", not theoretical | Search (Cogprints record and abstract) | Verified; the first quoted, the second paraphrased |
+| Searle, "Minds, Brains, and Programs," *Behavioral and Brain Sciences* (1980): the Chinese Room; the systems reply; memorizing the rulebook | Search (Britannica; Wikipedia; NYRB 1982 exchange) | Verified, paraphrased. "Syntax is not sufficient for semantics" was not found and is not used |
+| Nagel, "What Is It Like to Be a Bat?," *Philosophical Review* 83:4 (1974), 435-450: "an organism has conscious mental states if and only if there is something that it is like to be that organism" | Search (JSTOR scan as reproduced; Wikipedia) | Verified, quoted |
+| Singer, *Practical Ethics* (1979): "person" as a being aware of its existence over time; a newborn not a person in that sense; killing a newborn never equivalent to killing a person | Search (Singer's 2015 interview and Princeton FAQ as quoted; 2025 article on *Practical Ethics*) | Verified, paraphrased |
+| Maritain, *Man and the State* (1951): those of opposed views agreed on the rights on condition no one asked why | Search (Notre Dame Maritain Center; Angelus; First Things) | Verified, paraphrased (the wording varies by translation) |
+| Image of God: substantive (Aquinas, intellectual nature, after Augustine), functional (Middleton, *The Liberating Image*, Brazos, 2005, ancient Near Eastern royal images), relational (Barth, male and female, the I-Thou of the triune God); some recent treatments combine them | Search (Middleton's own essay and encyclopedia entry; Reasonable Faith transcript; theology papers) | Verified as paraphrase, mostly from secondary sources; Barth has no source-list entry because no year was checked |
+| Irenaeus, *Against Heresies*, about 180, against Gnostic teachers who denied the body would be saved | Search (Wikipedia; Christian History Institute; New Advent) | Verified, paraphrased |
+| Genesis 1:26, 1:27, 2:7; Psalm 8:4-5 (ESV) | Repo: the same wording quoted on other pages of the site | Quoted |
+| Apostles' Creed, "the resurrection of the body" | Repo: `client/public/creeds/documents/apostles-creed.json` | Verified, quoted |
+
+No fact about James is used, and the old answer had no recollection of his to cut. Not carried over: the old answer's "an old heresy on new hardware" is kept in substance as the contrast with Irenaeus's Gnostic opponents, stated without calling anyone a heretic; "carbon chauvinism" kept as a phrase, unattributed.

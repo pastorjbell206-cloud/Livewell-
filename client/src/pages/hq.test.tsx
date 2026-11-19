@@ -248,6 +248,7 @@ describe("/answers and /answers/:slug", () => {
       "was-jesus-just-a-good-teacher",
       "what-did-the-new-atheists-get-right",
       "what-if-christianity-is-wrong",
+      "what-makes-us-human-in-the-age-of-ai",
       "why-didnt-the-bible-just-ban-slavery",
       "why-does-god-allow-natural-disasters",
       "why-would-anyone-trust-the-bible",

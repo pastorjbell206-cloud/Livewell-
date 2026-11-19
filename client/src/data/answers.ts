@@ -1829,9 +1829,83 @@ export const ANSWERS: Answer[] = [
     slug: "what-makes-us-human-in-the-age-of-ai",
     question: "What makes us human in the age of AI?",
     paragraphs: [
-      "Start with the functionalist case, because it's a serious one. If the mind simply is information processing, then a human being is a wet computer, and a sufficiently advanced machine that reasons, converses, and reports feeling would be a person in every way that counts. To deny it would be mere carbon chauvinism. The machines are now good enough that this is not science fiction, and much of what we prized as uniquely human, including calculation, fluency, and a kind of creativity, turns out to be reproducible. That should humble us.",
-      "The Christian answer is not that humans compute better. It is that personhood was never a capacity in the first place. If it were, the infant, the demented, and the profoundly disabled would be less than persons, and nobody should want to go down that road. \"So God created man in his own image\" (Genesis 1:27), formed from dust and given breath (Genesis 2:7). A person is one who is made and loved and named by God, and that is conferred rather than earned or benchmarked.",
-      "That changes what we should be anxious about. The body is not luggage the real self is carrying, and the Christian hope is the resurrection of the body rather than escape from it, so the transhumanist dream of uploading the self is an old heresy on new hardware: the gnostic contempt for flesh. What the machines finally show us is the difference between being simulated and being known.",
+      "Not being the smartest thing in the room. Machines now do much of what people once called uniquely human: they calculate, they converse, they write fluent paragraphs. The strongest secular account of the mind says a mind is what it does, so a machine that does what we do would, in the end, be one of us. Serious philosophers who don't believe in God dissent from that account, and no one yet knows whether a machine could be conscious. This page doesn't pretend to know. It answers a different question: where human worth rests if it doesn't rest on our abilities. The Christian answer is that it rests on being made in the image of God, which is given, not earned, and which no machine's skill can add to or take away.",
+    ],
+    sections: [
+      {
+        heading: "The case that a mind is what it does",
+        body: [
+          "Start with the strongest version of the other view. Alan Turing opened his paper \"Computing Machinery and Intelligence\" (1950) with the sentence \"I propose to consider the question, 'Can machines think?'\" He then put a test in its place, the imitation game: if a machine's answers can't be told from a person's, we have no good reason to deny it what we grant the person. To the objection that a machine wouldn't really feel what it says, Turing replied that on that standard you couldn't know that other people think either. We extend to each other what he called \"the polite convention that everyone thinks,\" and he saw no principled reason to withhold it from a machine.",
+          "Philosophers built a theory of mind on that insight. Hilary Putnam argued in 1967 that a mental state such as pain is a functional state: what makes it pain is the role it plays in a whole system, not the stuff the system is made of. A mammal and an octopus can both be in pain with very different nerves. If that's right, a mind could in principle be made of silicon as well as of cells. Daniel Dennett pressed further. In Consciousness Explained (1991) he argued that there is no inner theater in the brain where experience is shown to a self, and no extra ingredient beyond the brain's own processing. In a 1994 paper on conscious robots he wrote that \"we are a sort of robot ourselves,\" and said his doubts about building a conscious machine were practical, not theoretical.",
+          "Grant what is true in this. The list of things only humans could do has been shrinking for a long time, and each item on it was once defended as the mark of a mind. If our worth rested on that list, we'd have reason to be anxious. To deny a machine anything simply because it's made of silicon rather than carbon would be an arbitrary line, and the charge of \"carbon chauvinism\" would stick. The machines should humble us. They show that much of what we prized in ourselves can be copied.",
+        ],
+      },
+      {
+        heading: "The secular dissent",
+        body: [
+          "Not every unbeliever accepts that account, and the two most famous objections come from philosophers who make no religious argument at all. John Searle, in \"Minds, Brains, and Programs\" (1980), asked us to imagine a man who knows no Chinese, shut in a room with a rulebook for matching Chinese symbols to other Chinese symbols. Questions come in, he follows the rules, and answers go out that a Chinese speaker can't tell from a native's. Yet the man understands nothing. Searle's point was that running a program, however well, isn't the same as understanding. His critics answered that the whole system, the man with his rulebook and papers, understands, even if the man doesn't. Searle replied that the man could memorize the rulebook and still not know what a single symbol meant. The argument is still disputed.",
+          "Thomas Nagel, in \"What Is It Like to Be a Bat?\" (1974), made a different point. He wrote that \"an organism has conscious mental states if and only if there is something that it is like to be that organism.\" We can describe everything a bat's brain does and still not know what it is like to be a bat. A complete account of what a system does may leave out the one thing that makes it conscious: that there is someone there for whom it is like something.",
+          "Neither argument shows that a machine can't be conscious, and honesty requires saying so. Searle's argument is about running a program, not about every possible machine, and Nagel's is about the limits of our descriptions. What they show is that doing what a mind does and being a mind may not be the same thing, and that nobody has yet shown how to tell from the outside. Whether any machine has an inner life, now or ever, is a question this page leaves open.",
+        ],
+      },
+      {
+        heading: "Why ability can't be the measure of worth",
+        body: [
+          "Set the machines aside for a moment and ask what we already believe about each other. We hold that a newborn, a man with advanced dementia and a child with a profound disability have the same worth as the most gifted adult in the room. None of them can do what the gifted adult does. Some can do less than a good machine. If worth tracked ability, they'd have less of it.",
+          "The philosopher Peter Singer has been honest about where a view based on abilities leads. In Practical Ethics (1979) and since, he has used \"person\" to mean a being aware of itself as existing over time, and argued that a newborn is not a person in that sense, so that killing a newborn is never equivalent to killing a person. Most people, religious or not, recoil from that conclusion. The recoil is worth taking seriously. It suggests that we already believe human worth rests on something other than what we can do.",
+          "Unbelievers hold that belief as firmly as Christians do, and often live it better. Jacques Maritain recalled that when people of opposed philosophies agreed on a list of human rights after the Second World War, they agreed on condition that no one asked them why. The agreement was real. The question of what grounds it is still there.",
+        ],
+      },
+      {
+        heading: "What the image of God has meant",
+        body: [
+          "The Bible's first word on what a human being is says this: \"Then God said, 'Let us make man in our image, after our likeness. And let them have dominion'\" (Genesis 1:26), and \"So God created man in his own image, in the image of God he created him; male and female he created them\" (Genesis 1:27). Christians have read the image in three main ways, and each has a strength and a weakness.",
+          "The first reading finds the image in something we are, chiefly the mind. Thomas Aquinas, following Augustine, placed the image above all in our intellectual nature. Its strength is that it names something real about us. Its weakness, in this century, is plain: if the image is reason, then it comes in degrees, and the question of machines becomes a contest of abilities after all.",
+          "The second reading finds the image in what we are called to do. J. Richard Middleton, in The Liberating Image (2005), argued from the ancient Near East, where a king was called the image of a god, that Genesis gives every human being that royal office: to represent God and care for his world. Its strength is that it fits the text, where image and dominion arrive together. Its weakness is the same question in another form, since some people can't carry out any office at all.",
+          "The third reading finds the image in relationship. Karl Barth read \"male and female he created them\" as the clue: human beings image a God who is himself a communion of persons, and they are made for relationship with God and with each other. Its strength is that it rests the image on God's turning toward us, which no loss of ability can undo. Some recent theologians combine the three.",
+          "Whatever the image consists in, the text presents it as given. God creates, and the creature receives. No one in Genesis earns the image or qualifies for it. That is the point that matters here.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An inference to the best explanation, about where human worth rests (it makes no claim about what machines are)",
+            premises: [
+              "Every human being has equal and unconditional worth: the newborn and the man with advanced dementia as much as the most gifted adult.",
+              "Abilities such as intelligence, speech and reasoning come in degrees, can be lost, and can be matched or passed by machines in some tasks.",
+              "So a worth that rested on abilities would come in degrees, could be lost, and could be outranked.",
+              "A worth that rests on being made and loved by God, given rather than earned, is equal, can't be lost, and doesn't depend on any ranking.",
+            ],
+            conclusion: "Equal human worth is better explained if it is given by God than if it rests on what we can do. Whatever machines turn out to be able to do, that worth isn't in competition with them.",
+          },
+          "The weight sits on the first premise, and nearly everyone accepts it. The strongest secular reply is that worth can rest on being a member of the human species, or on the kind of being we are even when our abilities fail, with no appeal to God. That reply is held sincerely and lived well. The Christian answer is a question: why should membership in a species carry unconditional worth, if the species is one product of nature among others? Something has to make the human kind worth more than its abilities. The Christian account says what that is. This is an argument about what best explains a belief we share, not a proof, and it doesn't show that anyone who rejects God values people less.",
+        ],
+      },
+      {
+        heading: "Dust and breath: why the body matters",
+        body: [
+          "The second account of creation says, \"Then the LORD God formed the man of dust from the ground and breathed into his nostrils the breath of life, and the man became a living creature\" (Genesis 2:7). The person is neither the dust alone nor the breath alone, but the two together. Christianity has never treated the body as luggage the real self carries around. The Apostles' Creed confesses \"the resurrection of the body,\" not an escape from it.",
+          "That has always set Christians against one recurring idea: that the true self is something inside the body that would be better off out of it. Around the year 180, Irenaeus of Lyon wrote Against Heresies against Gnostic teachers who denied that the body would be saved, and he insisted that the God who made the flesh would raise it. Some people now hope that a mind might one day be copied out of the brain and kept running on a machine. That hope assumes a person is a pattern that the body merely carries. Whatever one thinks of its chances, Christianity holds a different picture of a person, and it's the older one: a creature of dust and breath, made to be raised whole.",
+        ],
+      },
+      {
+        heading: "What this does not settle",
+        body: [
+          "This answer doesn't show that machines can't be conscious. Nobody knows that, and the Christian account doesn't require a verdict on it. It doesn't prove that God exists; the other pages argue that. It doesn't say how we ought to treat a machine if one ever did have an inner life, which would be a hard and new question. And it doesn't claim that Christians have always honored the weak; often they haven't.",
+          "What it says is narrower. Your worth was never your ability. The machines can do more than many people every year, and that is no threat to what you are, because what you are was never a ranking. \"What is man that you are mindful of him, and the son of man that you care for him? Yet you have made him a little lower than the heavenly beings and crowned him with glory and honor\" (Psalm 8:4-5). The psalmist asked the question looking up at the stars. We ask it now looking at a screen. The answer he gave doesn't depend on what the screen can do.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Alan M. Turing", title: "Computing Machinery and Intelligence", in: "Mind", year: "1950", note: "The case that a machine that does what we do should be granted what we grant each other." },
+      { author: "Jacques Maritain", title: "Man and the State", year: "1951" },
+      { author: "Hilary Putnam", title: "Psychological Predicates", year: "1967; reprinted as \"The Nature of Mental States\", 1975" },
+      { author: "Thomas Nagel", title: "What Is It Like to Be a Bat?", in: "The Philosophical Review", year: "1974" },
+      { author: "Peter Singer", title: "Practical Ethics", year: "1979" },
+      { author: "John R. Searle", title: "Minds, Brains, and Programs", in: "Behavioral and Brain Sciences", year: "1980" },
+      { author: "Daniel C. Dennett", title: "Consciousness Explained", year: "1991", note: "The strongest case that a mind is what a brain does, with nothing added." },
+      { author: "J. Richard Middleton", title: "The Liberating Image", year: "2005" },
     ],
     essaySlug: "personhood-in-the-age-of-ai",
     essayTitle: "What Makes Us Human in the Age of AI?",
