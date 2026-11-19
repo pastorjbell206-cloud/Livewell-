@@ -1362,3 +1362,51 @@ Antiquities 14.78; the talent's weight; m. Sotah 3:8; Jeremias; Luther's The
 Keys and Large Catechism; Calvin; the Belgic and Schleitheim confessions;
 Erastus and Beza; Benedict's Rule; Bonhoeffer; Jones, Volf, Langberg;
 Wiesenthal; Dura-Europos; Clephane and Sankey; the lectionaries.
+
+## The plain notes on Matthew 19 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/19.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 10; Matthew 5).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Perea under Antipas; John killed over his marriage | 1-9 | Earlier ledger (Mark 10) | Earlier ledger |
+| Shammai, Hillel, Akiva on Deuteronomy 24:1 (Mishnah Gittin 9:10, written down around 200; Akiva "a later teacher") | 1-9 | Earlier ledger (Mark 10) | Earlier ledger |
+| Josephus, Antiquities 4.253: a man may divorce his wife "for any cause whatsoever" | 1-9 | Josephus (Whiston) | Search: lexundria.com 4.253; readingacts.com; posenlibrary.com "Divorce in Early Judaism". Quoted in single quotes as Whiston's words |
+| "For any reason" as the name of Hillel's easy divorce (Instone-Brewer), and the reply that Jesus' answer reaches further | 1-9 | Instone-Brewer; critics | Search: psephizo.com; gospeltranslations.org; totheendsblog.blogspot.com. Stated as two views, unnamed |
+| Only the husband could divorce in Jewish law | 1-9 | Earlier ledger (Mark 10) | Earlier ledger |
+| Mark's order (Jesus asks what Moses commanded) against Matthew's ("ordered" and "permitted") | 1-9 | Mark 10:3-5; Matthew 19:7-8 | BSB comparison |
+| Genesis 1:27; 2:24; Deuteronomy 24:1-4; Malachi 2:16; Ezekiel 36:26 | 1-9 | BSB | BSB text |
+| Catholic, Orthodox, Protestant readings, kinship and betrothal readings, "These notes do not decide" | 1-9 | Matthew 5:31-32 plain note, word for word ("here and in 19:9" made "here and in 5:32") | Repository text |
+| "What all of them share" (Mark 10 wording, last sentence adapted to Matthew) and the safety paragraph word for word ("Nothing in this passage asks anyone to stay where they or their children are in danger...") | 1-9 | Mark 10 and Matthew 5 plain notes | Repository text |
+| Eunuchs born so, made so (slaves, court servants); Acts 8:27; Jesus, John and Paul unmarried; 1 Corinthians 7:7 | 10-12 | BSB; deep note | BSB text |
+| Justin Martyr, First Apology 29: a young Christian in Alexandria petitioned the governor Felix for leave to be castrated; refused (Felix prefect 149-154, so "in the 150s") | 10-12 | Justin | Search: logoslibrary.org 29; st-takla.org (ANF); en.wikipedia.org Lucius Munatius Felix. Paraphrased |
+| Nicaea (325), canon 1: a man who castrated himself not admitted to the clergy | 10-12 | Canons of Nicaea | Search: newadvent.org 3801; ewtn.com; fourthcentury.com. Paraphrased |
+| Deuteronomy 23:1; Isaiah 56:3, 5; Jeremiah 16:2 | 10-12 | BSB | BSB text |
+| Two readings of "this word" (verse 11) | 10-12 | Deep note | Stated as views; Dupont and Quesnell not named |
+| Latin Church priests normally celibate "for the sake of the kingdom of heaven" (Catechism 1579); Eastern bishops from the celibate, married men ordained priests (Catechism 1580; Orthodox practice) | 10-12 | Catechism of the Catholic Church | Search: vatican.va 1579-1580; usccb.org. Single-quoted as the Catechism's phrase |
+| Augsburg Confession (1530), article 23, cites Matthew 19:11 against compulsory clerical celibacy | 10-12 | Augsburg Confession | Search: bookofconcord.cph.org; projectwittenberg.org. Calvin and Aquinas not named |
+| Care for single readers: no assumptions; singleness honoured | 10-12 | CLAUDE.md, care for the reader | Pastoral |
+| Mark's indignation and "receive like a child" left out by Matthew; 18:3; Genesis 48:14 | 13-15 | BSB | BSB comparison |
+| "Good Teacher" (Mark, Luke) against "what good thing" (Matthew); later copies of Matthew harmonized to Mark; Sinaiticus and Vaticanus have the BSB wording | 16-22 | Textual summaries | Search: openbible.com on 19:17; catholic.com; confessionalbibliology.com (the opposing case). Metzger not named |
+| Only Matthew: "young", "love your neighbor as yourself", teleios as in 5:48; 22:39-40 | 16-22 | BSB | BSB comparison |
+| Clement of Alexandria; Antony (Athanasius) | 16-22 | Earlier ledger (Mark 10), word for word | Earlier ledger |
+| The "counsel for a few" reading and its answer, unnamed; no contempt for the wealthy (1 Timothy 6:18; Mark 10:21); no prosperity reading | 16-22 | Deep note; BSB | Stated as views; pastoral |
+| Camel and needle, Talmud's elephant, no gate | 23-26 | Earlier ledger (Mark 10) | Earlier ledger |
+| A later reading of "camel" as a Greek word for rope; the oldest copies read "camel" | 23-26 | Textual and lexical summaries | Search: en.wikipedia.org "Eye of a needle"; christiantoday.com. Cyril not named: the sources disagree on what he argued |
+| "Kingdom of God" at 19:24 against Matthew's usual "kingdom of heaven" | 23-26 | BSB | BSB text |
+| Genesis 18:14 | 23-26 | BSB | BSB text |
+| Twelve thrones only in Matthew here; Luke 22:30; Ezekiel 37:21-22; Psalms of Solomon (first century BC) pray for a son of David to rule | 27-30 | BSB; earlier ledger (Mark 8) | BSB text; earlier ledger. Psalms of Solomon 17:26 wording (deep note) not used |
+| Palingenesia only here and Titus 3:5 | 27-30 | Greek text (G3824) | Repository text. Philo and Josephus (deep note) not used |
+| Mark 10:30 "along with persecutions"; 10:16-39; Daniel 7:9, 13-14; Deuteronomy 4:1; 2 Corinthians 8:9; 20:16 | 27-30 | BSB | BSB text |
+| Hundredfold not a prosperity promise (the Mark 10 wording) | 27-30 | Mark 10 plain note | Repository text |
+
+Left out: Philo, Special Laws 3.30; Josephus's own divorce; the Temple
+Scroll; m. Yevamot 14:1 and 8:4; b. Gittin 90b; the ketubbah; the age of
+brides; Wisdom 3:14; Josephus and Philo on the Essenes and Therapeutae;
+Origen and Eusebius; Hester; Meier; Fitzmyer by name; Hermas, Augustine,
+Trent, Erasmus, Luther, Westminster, Amoris Laetitia, Heth and Wenham, Piper
+by name; Augustine and Ambrose on "good"; Stonehouse; Davies and Allison;
+Cyril of Alexandria; Tobit and Sirach on treasure; Francis of Assisi;
+Hofmann; the 722 BC date (said "long before"); the textual notes on 19:4, 9,
+20, 29.
