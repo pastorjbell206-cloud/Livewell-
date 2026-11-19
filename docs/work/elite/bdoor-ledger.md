@@ -1410,3 +1410,49 @@ by name; Augustine and Ambrose on "good"; Stonehouse; Davies and Allison;
 Cyril of Alexandria; Tobit and Sirach on treasure; Francis of Assisi;
 Hofmann; the 722 BC date (said "long before"); the textual notes on 19:4, 9,
 20, 29.
+
+## The plain notes on Matthew 20 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/20.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 10; the evil-eye idiom from the
+Matthew 6 run) and the honor-and-shame portrait
+(`client/public/context/worlds/honor-and-shame.json`, read only).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The parable answers 19:27 and is framed by 19:30 and 20:16; found only in Matthew | 1-7 | BSB | BSB text |
+| Day labourers hired in the market; harvest | 1-7 | Deep note; the text itself (20:3) | General; "lost their farms through debt" (deep note) cut |
+| A denarius a day's wage | 1-7 | Earlier ledger (Mark 6; 20:2) | Earlier ledger |
+| Tacitus, Annals 1.17: in AD 14 soldiers paid ten asses a day mutinied and demanded a denarius a day | 1-7 | Tacitus | Search: penelope.uchicago.edu (Annals 1); ancientromanhistory31-14.com; cambridge.org (Speidel). Paraphrased. The deep note's "legions on the Rhine" corrected: the speech is in the Pannonian mutiny, and the note names no army |
+| Hours counted from sunrise (third about nine, eleventh about five) | 1-7 | Standard reckoning | General knowledge, stated as "about" |
+| Isaiah 5:7; Deuteronomy 24:15 | 1-7 | BSB | BSB text |
+| Hetaire ("Friend") only 20:13, 22:12, 26:50 | 8-16 | Greek text (G2083) | Script |
+| Evil eye: literally "Is your eye evil because I am good?"; envy and grudging; good eye generous; the portrait's sentences on the workers ("The workers hired at dawn received exactly what they agreed to... The parable asks the hearer to see generosity without counting it as theft.") kept word for word | 8-16 | honor-and-shame.json, Matthew 20:15 note; Greek text (ophthalmos ponēros, agathos) | Repository text; script |
+| Mishnah Avot 2:9: Rabbi Eliezer's answer "a good eye" (written down around 200) | 8-16 | Mishnah | Search: mishnah.org; sefaria.org; posenlibrary.com. Paraphrased; numbering differs by edition |
+| Deuteronomy 15:9: to look begrudgingly is, in Hebrew, an evil eye | 8-16 | Earlier ledger (Matthew 6: biola.edu; biblicaltraining.org) | Earlier ledger; BSB text |
+| Jerusalem Talmud, Berakhot 2:8: a king paid a worker hired late a full wage because he did more in two hours (put together several centuries after Jesus) | 8-16 | y. Berakhot 2:8 | Search: intertextual.bible; sefaria.org; sacred-texts.com (Collins 1910). Paraphrased; Rabbi Bun and Rabbi Zeira not named |
+| Jonah 4:2 | 8-16 | BSB | BSB text |
+| Readings: Jesus' welcome of sinners; Matthew's setting after 19:27; non-Jews; a harsh owner (unnamed) | 8-16 | Deep note | Stated as views; Jeremias and Herzog not named |
+| Gregory the Great, Homily 19 on the Gospels (591): the hours as ages of the world and stages of a life | 8-16 | Gregory | Search: historicalchristianfaith.github.io; lectionarycentral.com; vaticannews.va. Paraphrased |
+| Amy-Jill Levine, Short Stories by Jesus: an owner who hires all who need work and pays a living wage | 8-16 | Levine | Search: americamagazine.org review; christiancentury.org review; patheos.com. No year given |
+| Third prediction the only one in Matthew naming crucifixion; Mark 10:34 "kill"; fulfilment in 26:47-50, 26:66, 27:2, 27:26, 27:29 | 17-19 | BSB | BSB comparison |
+| Isaiah 50:6; Hosea 6:2 | 17-19 | BSB | BSB text |
+| Mother asks in Matthew, sons in Mark; Jesus answers the sons; kneeling | 20-28 | Mark 10:35; BSB | BSB comparison |
+| The mother at the cross (27:56); robbers on the right and left (27:38); James killed (Acts 12:2) | 20-28 | BSB | BSB text |
+| Ransom as the price of release; Exodus 21:30; Daniel 7:14; Isaiah 51:17; Psalm 75:8; Isaiah 53:12 | 20-28 | Earlier ledger (Mark 10) | Earlier ledger; BSB |
+| The views of the ransom, word for word from the Mark 10 note ("Mark puts first" made "Matthew puts first") | 20-28 | Mark 10:35-45 plain note | Repository text |
+| Care: service is never a duty to stay under mistreatment | 20-28 | CLAUDE.md, care for the reader | Pastoral |
+| Matthew's additions: compassion and touch; no name or cloak; the same question to the mother and the blind men | 29-34 | Mark 10:46-52; BSB | BSB comparison |
+| Isaiah 35:5; 2 Samuel 7:13; Luke 18:35; 8:28; 9:27-31; Deuteronomy 19:15 | 29-34 | BSB | BSB text |
+| Augustine, Harmony of the Gospels 2.65: two men; Mark names the better known | 29-34 | Augustine | Search: bkv.unifr.ch (NPNF); newadvent.org 1602265; biblehub.com. Paraphrased |
+| Two Jerichos: the old ruined city and Herod's newer town nearby | 29-34 | Bible dictionaries | Search: biblicaltraining.org; catholic.com; Easton's. Distance and direction not given (the sources disagree) |
+| Doubling as Matthew's way; two witnesses; ancient writers shortening details | 29-34 | Deep note | Stated as views; Gundry, Keener, Licona not named |
+
+Left out: Josephus on the Samaria route; Netzer and Herod's winter palaces;
+Herod's death at Jericho; the height of Jericho; m. Bava Metzia 9:11-12;
+John's later life (Irenaeus, Philip of Side, George the Monk); Salome and
+Jesus' cousins; Archelaus; Solomon the healer; Irenaeus and Chrysostom on the
+parable; Bach, Ruskin, Gandhi, Rembrandt, Poussin; Origen, Gregory of
+Nazianzus, Anselm, Aulén by name; the lectionaries; Avot 5:13; every textual
+note in the deep note (20:16's "many be called, but few chosen" was checked
+and is absent from Sinaiticus and Vaticanus, but the note does not need it).
