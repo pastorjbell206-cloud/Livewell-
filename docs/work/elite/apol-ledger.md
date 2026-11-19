@@ -630,7 +630,7 @@ No fact about James is used. Cut from the old answer: "I made the math objection
 
 ### What about those who never heard of Jesus?
 
-Searches this answer: 8 (Dillard; Acts 17:30; Acts 14:16-17; Acts 10:2 and 11:14; Job 1:1 and Romans 3:25; Aquinas, not found and not used; the soteriological problem of evil; Craig 1989; Deuteronomy 1:39 and Genesis 14:18 make nine with the last).
+Searches this answer: 9 (Dillard; Acts 17:30; Acts 14:16-17; Acts 10:2 and 11:14; Job 1:1 and Romans 3:25; Aquinas, not found and not used; the soteriological problem of evil; Craig 1989; Deuteronomy 1:39 and Genesis 14:18).
 
 | Claim | How verified | Result |
 |---|---|---|
