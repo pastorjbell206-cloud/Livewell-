@@ -3648,3 +3648,24 @@ chapter, with the book page's Gilgamesh row.
 | First altar (mizbeach first at 8:20); olah first at 8:20; ‘pleasing aroma’ in Leviticus 1:9 | 20-22 | Hebrew text; BSB | Script (H4196, H5930) |
 | Gods fed by offerings in Babylon's world | 20-22 | Site guide the-gods-of-the-nations (earlier ledger row) | Repository |
 | Ephesians 5:2; Ezekiel 36:26; Jeremiah 33:20; Psalm 74:17 | 20-22 | BSB | Repository |
+
+## The plain notes on Genesis 9 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/9.json`. Three web searches for
+this chapter, with the book page's "curse of Ham" row.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Plants (1:29), then meat (9:3); blood as life (Leviticus 17:11); Acts 15:20; Matthew 26:28; James 3:9 | 1-7 | BSB | Repository |
+| Seven Noahide laws in the Talmud (Sanhedrin 56a-b): courts, and bans on blasphemy, idolatry, forbidden sexual relations, murder, theft, and eating from a living animal; six drawn from Genesis | 1-7 | Talmud | Search: My Jewish Learning "Sanhedrin 56"; Steinsaltz daf; Wikipedia "Seven Laws of Noah". Paraphrased; the page names two of the seven |
+| 9:6 and the death penalty: a lasting mandate (before Moses; Romans 13:4); a description or proverb; a principle; God's protection of Cain; no side | 1-7 | Christian views | Search: Church Life Journal (Notre Dame) "The Death Penalty and the Consequences of the Literal Meaning of Genesis 9:6"; ERLC; Christianity Today (Colson as quoted). No church or writer named on the page; the Catholic Catechism's 2018 wording was not retrieved and is not used |
+| Covenant with no duties on Noah's side; to the animals; qeshet the ordinary word for a bow (9:13-16, 27:3); the war-bow picture as a reading the text does not state | 8-17 | Hebrew text; repository deep note | Script (H7198); repository |
+| Isaiah 54:9-10; Hosea 2:18; Ezekiel 1:28; Revelation 4:3; Luke 13:4-5 (BSB) | 8-17 | BSB | Repository |
+| Disaster care: the Honest Answer's point on Luke 13 and Find Help | 8-17 | Honest Answer "Why does God allow earthquakes, cancer, and animal suffering?" | Repository |
+| Echo of the garden; honor of a father; ervah in 9:22-23 | 18-23 | Repository deep note (`literary`, `cultural`); Hebrew text | Repository; script (H6172) |
+| What Ham did: the plain reading; a worse act (Talmud, Sanhedrin 70a; Encyclopaedia Judaica on Leviticus 20:17; some modern scholars); Canaan involved (rabbis cited by Rashi) | 18-23 | Interpretation history | Search: Wikipedia "Curse of Ham"; Encyclopedia.com "Ham"; aish.com; vridar.org. Stated without lurid detail; no source named on the page |
+| Proverbs 20:1; Ephesians 5:18; Proverbs 10:12; 1 Peter 4:8 | 18-23 | BSB | Repository |
+| Curse from Noah, not God; Canaan cursed, not Ham; three readings of why | 24-29 | BSB; repository deep note (`hard`) | Repository; stated as readings |
+| Semitic from Shem; Gibeonites as servants (Joshua 9:23) | 24-29 | Repository deep note (`historical`); BSB | Repository |
+| "The curse of Ham" paragraph copied word for word from the book page (from "Yet for centuries" to "about race") | 24-29 | Book page; Goldenberg row | Repository (checked by script: the paragraph appears verbatim) |
+| Ezekiel 18:20; Matthew 1:5; Matthew 15:22-28; Acts 17:26; Galatians 3:28; Revelation 7:9 | 24-29 | BSB | Repository |
