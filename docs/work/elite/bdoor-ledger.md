@@ -3838,3 +3838,26 @@ caution) and the site's safety wording.
 Cut: the Old Assyrian marriage contract (deep note, not checked); the
 proposed correction to the Hebrew of 16:13; the angel as the Son before
 his birth (not needed here).
+
+## The plain notes on Genesis 17 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/17.json`. Two web searches for
+this chapter.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| El Shaddai with promises of fruitfulness (28:3; 35:11); meaning uncertain | 1-8 | BSB; standard lexicons as the deep note has it | Repository; "not certain" |
+| Renaming as authority (41:45; Daniel 1:7); Abram ‘exalted father’ (usually understood); Abraham explained by a play on ‘father of a multitude’; Sarai and Sarah both ‘princess’ | 1-8, 15-22 | Repository deep note (`cultural`); BSB | Repository |
+| Romans 4:11, 4:17, 4:19; Jeremiah 31:33-34; Revelation 21:3; Matthew 1:1 | all | BSB | Repository |
+| Ankhmahor's tomb at Saqqara (vizier under Teti, about 2345-2333 BC): the oldest known depiction of circumcision, done to a youth | 9-14 | Biblical Archaeology Society; JTA; egypt-museum.com | Search. The page says "from the 2300s BC" |
+| Jeremiah 9:25-26 names Egypt, Edom, Ammon, Moab | 9-14 | BSB | Repository |
+| Elsewhere often linked to growing up; Israel on the eighth day; servants included; ‘cut’ and ‘cut off’ | 9-14 | Repository deep note; the Saqqara scene; BSB | Repository; "seems to have marked growing up" |
+| Jewish families keep circumcision on the eighth day today (brit milah) | 9-14 | Common knowledge; Jewish Encyclopedia "Berit Milah" | Search result (jewishencyclopedia.com) |
+| Leviticus 12:3; Deuteronomy 10:16; 30:6; Romans 2:29; Luke 2:21; Acts 15; Galatians 5:6 | 9-14 | BSB | Repository |
+| Infant and believer baptism: traditions named and their texts (Colossians 2:11-12; Acts 2:39; 16:15, 33; Jeremiah 31:34; Romans 4) | 9-14 | Repository deep note (`hard`); BSB | Repository; no side |
+| Isaac ‘he laughs’; 21:6; 25:16 twelve princes; Hebrews 11:11 | 15-22 | Hebrew; BSB | Repository |
+| Josephus, Antiquities 1.12.2 (1.214): the Arabs circumcise after the thirteenth year because Ishmael was | 23-27 | Josephus (Whiston) | Search: lexundria.com j_aj 1.214-1.221; jewishencyclopedia.com "Circumcision". Paraphrased |
+
+Cut: the deep note's "around 2300 BC" (sources give the 2340s; the page
+says "the 2300s"); Philistines as uncircumcised (true in the Bible but not
+needed).
