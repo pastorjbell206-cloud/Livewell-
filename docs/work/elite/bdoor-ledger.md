@@ -4703,3 +4703,38 @@ plain notes on 25 and 35.
 
 Cut: ‘the first time the Bible calls God shepherd’ (not checked); the
 custom's first record in a seventeenth-century book (sources differ).
+
+## The plain notes on Genesis 49 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/49.json`. Three web searches for
+this chapter (and one page fetch, refused by the network), with the deep
+note, the verse notes and the book page. The tribes' later histories are
+given only where the Bible reports them.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Cross and Freedman, Studies in Ancient Yahwistic Poetry: joint Johns Hopkins thesis 1950, published 1975 (SBL/Scholars Press), with Exodus 15, Deuteronomy 33, 2 Samuel 22 | 1-4 | The book | Search: "Cross Freedman Studies in Ancient Yahwistic Poetry 1975 dissertation 1950 Genesis 49" (catalog.hathitrust.org; librarything.com; logos.com). Said: ‘a few other poems they counted among Israel's oldest’; no date given for the poem itself |
+| Two views of origin (Jacob's words handed down; shaped later in the tribes) | 1-4 | Deep note (`hard`) | Repository; no names, no side |
+| A father's last words weighty; 27:33-37 | 1-4 | Deep note (`cultural`) | Repository |
+| ‘Uncontrolled’ a rare word; Reuben and Bilhah (35:22); 1 Chronicles 5:1; Judges 5:16; Deuteronomy 33:6 | 1-4 | Verse notes; BSB | Repository |
+| Points back to 34 (and 34:30); hamstringing not told in 34; Joshua 19:9; Exodus 32:26, 29; Numbers 35:7 | 5-7 | BSB; deep note (`historical`) | Repository |
+| Judah = praise (29:35); 37:26-27; 44:33; the staff ‘probably’ a seated ruler's; plenty in 11-12; leaders on donkeys (Judges 5:10); David's house from Judah (the Bible's report) | 8-12 | BSB; deep note (`cultural`) | Repository |
+| Hebrews 7:14; Revelation 5:5; Luke 1:32; Zechariah 9:9; Matthew 21:5 | 8-12 | BSB | Repository |
+| 49:10 renderings: Shiloh a name or title (BSB, KJV); ‘to whom it belongs’ (Syriac; Ezekiel 21:27 echo); ‘until tribute comes to him’ (some modern translations); ‘until he comes to Shiloh’ the town | 8-12 (hard) | Commentaries; deep note (`hard`) | Search: "Genesis 49:10 Shiloh ... Targum Onkelos Messiah ... Sanhedrin 98b renderings" (biblehub.com and openbible.com commentaries on 49:10; en.wikipedia.com "Shiloh (biblical figure)"). The ESV and NRSV are not named (not confirmed this run) |
+| Targum Onkelos ‘in the form that has come down to us’ speaks of the Messiah; the Talmud, Sanhedrin 98b, counts Shiloh among the Messiah's names | 8-12 (hard) | Onkelos; Babylonian Talmud | Same search (one commentary thinks the Onkelos words may be a later insert, hence the hedge). Paraphrased |
+| Critical reading (David's kingdom); the Christian reading (Jesus, Revelation 5:5); ‘until’ as a goal; no reading called dishonest; nothing about a modern nation | 8-12 (hard) | Deep note (`hard`, `christ`) | Repository; stated as readings |
+| Name plays: Dan (30:6), Gad, Asher (30:13), Issachar and wages (30:18); Zebulun's inland lot (Joshua 19:10-16), read as access to the coast | 13-21 | Deep note (`literary`, `historical`); BSB | Repository; ‘many readers’ |
+| 49:21 ‘fawns’ (BSB) or ‘words’ (KJV ‘goodly words’) | 13-21 | KJV; BSB | Translations as printed |
+| 49:18 the only use of the LORD's name in the poem | 13-21 | BSB (read 49:2-27) | Repository |
+| Judges 1:34; 18:29; 13:2; Luke 2:30 | 13-21 | BSB | Repository |
+| Porat echoes Ephraim (41:52); ‘fruitful bough’ in older versions (KJV); the archers read of all who attacked Joseph; names of God; nazir ‘set apart’ | 22-27 | Deep note (`literary`); KJV | Repository; ‘many readers’ |
+| Deuteronomy 33:13; Psalm 18:2; Judges 3:15; 1 Samuel 9:1; Philippians 3:5 | 22-27 | BSB | Repository |
+| First count of ‘the tribes of Israel, twelve in all’ (49:16 has ‘tribes of Israel’ without the count); Machpelah as in chapter 23; Leah buried there, Rachel not; ‘gathered to his people’ before burial | 28-33 | BSB (searched Genesis for ‘tribe’); deep note (`cultural`, `literary`) | Repository |
+| Genesis 25:8; Revelation 7:5 | 28-33 | BSB | Repository |
+
+Cut: 4Q252 on Genesis 49:10 (the search did not confirm its wording; the
+page fetch was refused); Nahmanides at Barcelona in 1263; Justin Martyr
+and Augustine on Herod; Gunkel and Westermann; the Tel Dan inscription, the
+Mesha Stele and Amarna letter EA 365 (outside the Bible, left out by the
+rule for this chapter); the Testaments of the Twelve Patriarchs; royal
+images of a staff ‘between the feet’ (kept as ‘probably’).
