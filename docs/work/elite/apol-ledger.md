@@ -367,3 +367,23 @@ Cut from the old answer: "For most of my life I was an atheist, and of all the c
 | 1 John 4:1 (first sentence), 1 Corinthians 15:14 | Repo ESV quotations | Verified, quoted |
 
 Cut from the old answer: "I did not lose that argument to a better argument. I lost it to the discovery that I had never had one. What I owned was the feeling of finality..." (a recollection that cannot be confirmed); "Earman ... called this circular" (it was Lewis, among others, who called it circular; Earman's case is the probability argument, now stated as such); "a black swan or a meteorite" (not checked as Earman's examples). Kept in its own words: the opening of the short answer, "Most people ... without having heard his name", Paul's verse, "Notice whether your certainty that miracles cannot happen is a conclusion you reasoned to, or a definition you started with" (two contractions added).
+
+## Is faith just wishful thinking?
+
+8 searches.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Feuerbach, *The Essence of Christianity* (1841): God as human nature projected, the best of humanity set outside ourselves | Search: Wikipedia "Opium of the people", Simply Psychology, Public Discourse | Verified, paraphrased |
+| Marx, Introduction to *A Contribution to the Critique of Hegel's Philosophy of Right*, published February 1844: "Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people." | Search: Wikipedia, Manchester University text, marxists.org pages | Verified, quoted (the standard English translation) |
+| Freud, *The Future of an Illusion* (1927): childhood helplessness and the father; religious ideas "illusions, fulfilments of the oldest, strongest and most urgent wishes of mankind" | Search: Wikipedia, nosubject.com, Livingstone Smith | Verified; phrase quoted in Strachey's wording, the rest paraphrased |
+| Freud: "Illusions need not necessarily be false"; the girl of modest means and the prince | Search (same) | Verified, quoted and paraphrased |
+| Freud: "To assess the truth-value of religious doctrines does not lie within the scope of the present enquiry." | Search: Cambridge *Religious Studies* article citing Strachey (Norton, 1961), p. 42 | Verified, quoted (Strachey; the 1928 Robson-Scott translation words it differently) |
+| Plantinga, *Warranted Christian Belief* (2000): the Freud and Marx complaint is a de jure objection that depends on the de facto question; if theism is true the belief is likely warranted; neither Freud nor Marx offers much argument | Search: CCEL text of the book, Themelios review | Verified, paraphrased |
+| Augustine, *Confessions* 1.1: "you have made us for yourself, and our heart is restless until it rests in you" (Chadwick, Oxford) | Search: TGC, Dalhousie selections, Oregon course text | Verified, quoted; "around the year 400" for the date of writing |
+| Nagel, *The Last Word* (Oxford, 1997), pp. 130-131: "I want atheism to be true"; "I don't want there to be a God; I don't want the universe to be like that."; "cosmic authority problem" not rare | Search: afterall.net, Times Higher Education review, Inquirer | Verified, quoted |
+| Vitz, *Faith of the Fatherless* (Spence, 1999): Freud's method turned on atheism; atheists of four centuries with dead, weak, harsh or absent fathers; does not claim atheism is determined | Search: Catholic Culture review, Ignatius, Humanum | Verified, paraphrased; limits noted |
+| Jeremiah 6:14; Jeremiah 17:9 (first clause); Isaiah 6:5; Hebrews 10:31; Luke 9:23; Matthew 5:44 (part); 1 Corinthians 1:23 (part); Mark 9:24 | Repo ESV quotations (essays, study guides, verse guides, old answers) | Verified, quoted |
+| James was raised without a father | Confirmed biography (CLAUDE.md and the brief) | Used once, with no recollection or feeling added |
+
+Cut from the old answer: "You are describing my inbox." (an invented detail of his life); the whole old third paragraph, "For years I told myself I had followed the evidence into the cold ... a boy raised without a father who found in a Godless universe not a grief but a relief ... I wanted there to be no God ... The crutch was real. It was just in my other hand." (a recollection and feelings that cannot be confirmed; the same invention the pilot removed); "Nagel, no friend of religion" (kept as a plainer description). Kept in its own words: "Sometimes, yes. Religion can be a crutch ... by the millions.", "If your argument is that some faith is wish-fulfillment, you are not wrong.", the frightened man and the shore, "The God of Scripture is the last god a frightened person would order: holy, demanding, crucified. A wish-god does not bleed.", "a wish with a steeple".

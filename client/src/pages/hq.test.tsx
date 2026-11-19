@@ -237,6 +237,7 @@ describe("/answers and /answers/:slug", () => {
       "do-i-have-to-choose-between-faith-and-science",
       "does-god-actually-exist",
       "if-god-is-good-why-suffering",
+      "is-faith-just-wishful-thinking",
       "is-hell-forever-or-does-it-end",
       "is-jesus-the-only-way",
       "was-jesus-just-a-good-teacher",

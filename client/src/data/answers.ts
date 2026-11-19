@@ -1004,9 +1004,79 @@ export const ANSWERS: Answer[] = [
     slug: "is-faith-just-wishful-thinking",
     question: "Is faith just wishful thinking?",
     paragraphs: [
-      "Sometimes, yes. Religion can be a crutch, and it constantly is for people who make it one. Much of what gets called faith is projection, a god assembled out of a person's fears and preferences, warm where they want warmth and silent where they want silence. The church has sold that god by the millions. If your argument is that some faith is wish-fulfillment, you are not wrong. You are describing my inbox.",
-      "Feuerbach (1841) and Freud (1927) gave the suspicion its spine: God is the best of human nature projected onto the sky, the exalted cosmic father the frightened child never stopped wanting. They have a point. But the argument slides from how a belief arose to whether it is true, and that is the genetic fallacy. A frightened man believes the shore is close because he needs it to be, and the shore may also be close. His fear does not move the coastline. The tool cuts both ways. Nagel, no friend of religion, wrote, \"I don't want there to be a God. I don't want the universe to be like that.\" The wanting is on both sides of the table. The God of Scripture is the last god a frightened person would order: holy, demanding, crucified. A wish-god does not bleed.",
-      "I ran the projection test on everyone but myself. For years I told myself I had followed the evidence into the cold. But underneath, where I did not look, was a boy raised without a father who found in a Godless universe not a grief but a relief, because a sky with no Father in it could not disappoint him the way one man already had. I wanted there to be no God. Ask the believer what they want to be true, and you will find plenty of faith that is a wish with a steeple. Then have the nerve to ask it of yourself. The crutch was real. It was just in my other hand.",
+      "Sometimes, yes. Religion can be a crutch, and it constantly is for people who make it one. Much of what gets called faith is projection, a god assembled out of a person's fears and preferences, warm where they want warmth and silent where they want silence. The church has sold that god by the millions. But the charge proves less than it seems to. Showing why someone wants a belief to be true doesn't show that it's false, as Freud himself admitted. The wish runs both ways, since plenty of people want there to be no God, and some of the best of them have said so. And the God of the Bible is a strange thing to have wished for. None of that proves God exists. It means the question has to be settled by evidence, not by a guess about anyone's motives, believer or unbeliever.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The suspicion has a distinguished history, and it should be stated in its best form. In 1841 the German philosopher Ludwig Feuerbach published The Essence of Christianity. His claim was that God is human nature looked at from outside. We take the best of ourselves, our love, wisdom and goodness, set it in the sky, call it God, and worship it, and in doing so we empty ourselves of what is really ours. Three years later, in February 1844, Karl Marx took the idea from the study to the street: \"Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people.\" Religion, on his account, is what people reach for when life is unbearable, and it keeps them from changing the conditions that make it so.",
+          "Sigmund Freud gave the suspicion its sharpest form in The Future of an Illusion (1927). Every child, he argued, meets the world in terror and helplessness, and is protected by a father. The adult never stops being helpless before nature, illness and death, and so he makes the father permanent, a God who guards him, rewards the good, punishes the wicked and promises life after the grave. Religious doctrines, Freud wrote, are \"illusions, fulfilments of the oldest, strongest and most urgent wishes of mankind.\" Their power comes from the power of those wishes, not from evidence. That is why believers hold them so fiercely and examine them so little.",
+          "I grant much of this, because the Bible grants it first. People do make gods out of their wishes. Israel did it with a golden calf, and the prophets spent centuries attacking a religion that told people what they wanted to hear. Jeremiah said of the religious leaders of his day, \"They have healed the wound of my people lightly, saying, 'Peace, peace,' when there is no peace\" (Jeremiah 6:14). A faith whose God never disagrees with you, never asks anything you didn't already want to give, and always takes your side is the faith Freud described, and a great deal of it is preached in churches every Sunday. If your argument is that some faith is wish-fulfillment, you are not wrong.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "The projection argument is an argument about where beliefs come from. Philosophers call this kind a genealogy, or a debunking argument: it doesn't claim to show that God doesn't exist, but that belief in God is produced by something that has nothing to do with whether he does. So the question here isn't whether God exists. That has its own page. The question is whether an account of why people believe can settle whether what they believe is true, and if not, what it can do.",
+        ],
+      },
+      {
+        heading: "Freud's argument, laid out",
+        body: [
+          {
+            kind: "The projection argument, as Freud's readers usually take it",
+            premises: [
+              "Belief in God matches what human beings deeply wish for: protection, a father, justice and life after death.",
+              "When a belief matches our wishes that closely, the wishes are the likeliest explanation of why we hold it.",
+              "Beliefs produced by wishes are not produced by a process aimed at truth, so they can't be trusted.",
+            ],
+            conclusion: "Belief in God can't be trusted, however sincerely it is held.",
+          },
+          "Notice first what Freud himself did not claim. He defined an illusion by where it comes from, not by whether it is true. \"Illusions need not necessarily be false,\" he wrote, and his example was a girl of modest means who believes a prince will come and marry her. It's unlikely, and her wish explains her belief, but it has happened. He said plainly in the same book, \"To assess the truth-value of religious doctrines does not lie within the scope of the present enquiry.\" On Freud's own terms, then, the argument can't show that there is no God. A frightened man believes the shore is close because he needs it to be, and the shore may also be close. His fear does not move the coastline. Reasoning from how a belief arose to whether it's true is the mistake logicians call the genetic fallacy.",
+          "The stronger version doesn't make that mistake. It rests on the third premise: even if the belief happens to be true, it wasn't formed in a way that tracks the truth, so you have no right to hold it. The philosopher Alvin Plantinga answered this in Warranted Christian Belief (2000), and his answer is the heart of the matter. Whether wish is a bad way to come by a belief depends on what the world is like. If there is no God, then the longing for him is a misfire, and belief built on it is unreliable. But if there is a God who made human beings to know him, the longing may be exactly how he made us able to find him. Augustine said as much at the opening of his Confessions, around the year 400: \"you have made us for yourself, and our heart is restless until it rests in you.\" So the complaint that faith is unreliable already assumes that God doesn't exist. Plantinga also pointed out that neither Freud nor Marx offered much of an argument that faith in fact arises this way. They described how it could, on the assumption that it is false.",
+        ],
+      },
+      {
+        heading: "The wish runs both ways",
+        body: [
+          "If wanting a belief to be true discredits it, the rule has to be applied to everyone.",
+          {
+            kind: "An argument from parity",
+            premises: [
+              "If a belief is discredited because the person holding it wants it to be true, then every belief its holder wants to be true is discredited in the same way.",
+              "Many people want there to be no God, and some of the most careful unbelievers have said so plainly.",
+            ],
+            conclusion: "Applied evenly, the projection argument discredits unbelief as much as faith, and so it settles neither. The question goes back to the evidence.",
+          },
+          "The second premise doesn't need a guess about anyone's motives. The philosopher Thomas Nagel, one of the most respected unbelievers of his generation, wrote in The Last Word (1997), \"I want atheism to be true,\" and went on: \"I don't want there to be a God; I don't want the universe to be like that.\" He guessed that this \"cosmic authority problem\" is not rare. The psychologist Paul Vitz turned Freud's own method around in Faith of the Fatherless (1999). He looked at the lives of well-known atheists of the last four centuries and found that many had lost a father early or had a weak, harsh or absent one, and he argued that unbelief can be a projection too, a refusal of any Father in heaven by those failed by one on earth. Vitz was careful to say this doesn't determine anyone's beliefs, and his evidence has the limits of any such survey.",
+          "I was raised without a father, so I can't read either theory as a stranger to it. On Freud's account, any faith I hold is the obvious wish of a fatherless boy. On Vitz's account, unbelief in a man like me would be just as easy to explain. Both stories can be told about the same person, and that is the trouble with both. They tell you something about the believer. They tell you nothing about whether God is there.",
+        ],
+      },
+      {
+        heading: "Is this the God anyone would wish for?",
+        body: [
+          "There is one more test, and it cuts against Freud. If God were made from our wishes, we would expect him to look like what we want. Some gods do. The God of the Bible often doesn't. When Isaiah saw him, he didn't feel comforted. He said, \"Woe is me! For I am lost\" (Isaiah 6:5). The letter to the Hebrews says, \"It is a fearful thing to fall into the hands of the living God\" (Hebrews 10:31). Jesus told those who would follow him, \"If anyone would come after me, let him deny himself and take up his cross daily and follow me\" (Luke 9:23), and he told them to \"love your enemies and pray for those who persecute you\" (Matthew 5:44). The center of the faith is a crucified Messiah, which Paul himself called \"a stumbling block to Jews and folly to Gentiles\" (1 Corinthians 1:23). The God of Scripture is the last god a frightened person would order: holy, demanding, crucified. A wish-god does not bleed.",
+          "A skeptic can fairly answer that even the hard parts serve wishes. Judgment satisfies the wish to see our enemies punished, and a demanding God satisfies the wish to feel serious. There's something in that. But the same Scriptures command love for those enemies, and they place the believer under the same judgment as everyone else. A projection that keeps turning on its maker is an odd kind of projection. This test can't prove that God exists. It shows that the wish account fits the actual content of the faith worse than it claims to.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. I'm not saying your belief is false because of where it came from. I'm saying we now have a full explanation of religious belief that doesn't need God, in fear, in wishes, in the way minds like ours are built, and once a belief is fully explained without its object, it has nothing left to stand on. That's a serious argument, and it works in many cases. If I learned that I believed something only because I'd been hypnotized to, I should drop it. But it works only if two things are true: that the explanation is complete, and that there is no other evidence for the belief. Neither has been shown. Freud offered a theory, not a study of believers, and the case for God doesn't rest on anyone's feelings. It rests on arguments from why anything exists, from a universe fit for life, from goodness that binds us, and on the history of Easter, each of which has its own page. A debunking argument also has to be careful what it debunks. Our trust in reason and our sense that cruelty is really wrong came to us through minds shaped by the same pressures, and few people are ready to give those up.",
+          "Here is what the argument doesn't prove. It doesn't prove that God exists. It doesn't defend faith that really is a wish with a steeple; much of it is, and it deserves Freud's scorn. It doesn't show that unbelievers are driven by wishes either; Nagel's honesty is a credit to him, not a charge against him. What it shows is narrower. The question of motive can be asked of everyone, and it settles nothing for anyone.",
+          "The Bible doesn't flatter believers about their motives. \"The heart is deceitful above all things\" (Jeremiah 17:9), and that includes the believing heart. So ask yourself what you want to be true, whichever way it points. Then put the question down and look at the evidence anyway. The most honest prayer in the Gospels comes from a father with a suffering son, who wanted something badly and knew it: \"I believe; help my unbelief!\" (Mark 9:24). Wanting something doesn't make it false. It just means you have to look harder.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Ludwig Feuerbach", title: "The Essence of Christianity", year: "1841" },
+      { author: "Karl Marx", title: "A Contribution to the Critique of Hegel's Philosophy of Right, Introduction", year: "1844" },
+      { author: "Sigmund Freud", title: "The Future of an Illusion", year: "1927", note: "The best book against: faith as the wish for a father made permanent." },
+      { author: "Thomas Nagel", title: "The Last Word", year: "1997" },
+      { author: "Paul C. Vitz", title: "Faith of the Fatherless: The Psychology of Atheism", year: "1999" },
+      { author: "Alvin Plantinga", title: "Warranted Christian Belief", year: "2000", note: "The answer to the Freud and Marx complaint." },
+      { author: "Augustine", title: "Confessions", year: "c. 400; tr. Henry Chadwick, Oxford, 1992" },
     ],
     essaySlug: "is-faith-just-wishful-thinking",
     essayTitle: "Is Faith Just Wishful Thinking?",
