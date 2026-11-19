@@ -6256,3 +6256,33 @@ No web search.
 
 Care: "If you feel that you want to ‘be no more’, please do not carry that
 alone. Speak to someone today ..." with Find Help; no number.
+
+## The plain notes on Psalm 40 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Waited patiently" a doubled verb (H6960 twice) | 1-5 | Repository Hebrew data for 40:1 | Script |
+| A cistern with mud: Jeremiah 38:6 | 1-5 | BSB | BSB text |
+| Hebrew 40:6 "ears You dug for me" (H241, H3738); the Greek "a body You prepared", which Hebrews 10:5 follows; some Greek copies differ; how the Greek arose not known; Exodus 21:6 link uncertain | 6-10 | Repository Hebrew data; biblehub.com commentaries on 40:6 and "Does Hebrews 10:5-7 alter Psalm 40?"; ccel.org (ESV note on 40:6); Reformation Study Bible note | Script; search. Both readings stated; the manuscripts not named |
+| Deuteronomy 17:18 (the king's copy of the law), "may be" | 6-10 | BSB; repository deep note | BSB text |
+| 1 Samuel 15:22; Hosea 6:6; Hebrews 10:5-7, 10; Matthew 26:39 | 6-10 | BSB | BSB text |
+| 40:13-17 is Psalm 70 with small changes; Psalm 53 repeats 14 | 11-17 | BSB compared | BSB text |
+| Romans 15:6; Revelation 5:9; Luke 4:18 | all | BSB | BSB text |
+
+40:5 and 40:7 carry em-dashes in the BSB: quoted only before them.
+
+## The plain notes on Psalm 41 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sharing bread as a bond of loyalty | Repository deep note | Site's own teaching |
+| Ahithophel (2 Samuel 15:12, 31), "many readers"; not named in the psalm | BSB; repository deep note (historical) | BSB text |
+| 41:13 closes Book One; the four doxologies; 106:48 nearly the same words | Book page ("Five books"); BSB | BSB text |
+| John 13:18 omits "whom I trusted"; John 6:64; Mark 14:18; Matthew 5:7; John 13:5 | BSB | BSB text |
+
+Illness and sin: points to the Psalm 38 note. Verse 10: points to the book
+page's cursing psalms part.
