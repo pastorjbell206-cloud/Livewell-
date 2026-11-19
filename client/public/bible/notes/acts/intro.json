@@ -333,7 +333,7 @@
         "id": "damascus",
         "name": "Damascus",
         "lat": 33.513,
-        "lon": 36.29,
+        "lon": 36.27,
         "refs": [
           "9:2",
           "9:19"
@@ -385,8 +385,8 @@
       {
         "id": "samaria",
         "name": "Samaria",
-        "lat": 32.42,
-        "lon": 35.32,
+        "lat": 32.4,
+        "lon": 35.42,
         "refs": [
           "1:8",
           "8:5",
@@ -437,7 +437,12 @@
           "2:5",
           "8:1"
         ],
-        "line": "Where the book begins. The Spirit comes here at Pentecost, the first believers meet in the temple courts, and Stephen is stoned outside the city (7:58)."
+        "line": "Where the book begins. The Spirit comes here at Pentecost, the first believers meet in the temple courts, and Stephen is stoned outside the city (7:58).",
+        "label": {
+          "dx": 10,
+          "dy": -6,
+          "anchor": "start"
+        }
       },
       {
         "id": "azotus",
