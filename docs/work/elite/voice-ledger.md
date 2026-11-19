@@ -332,3 +332,67 @@ The counter over-counts "Not X. Y." here more than last time, so read the 26 as 
 ## Gates (third run)
 
 All 36 content-gate commands in .github/workflows/ci.yml passed, run one at a time (last lines in /home/user/tmp-voice/gates3.txt), pnpm check passed, pnpm test passed (146 test files, 1653 tests; 7 files and 73 tests skipped). node scripts/build-context-index.mjs rerun: guides-index.json unchanged. The search index and passage index --check runs were clean, so neither needed a rebuild. No build, no PDFs.
+
+# Fourth run: Bible background guides 31 to 41
+
+Pass run 2026-11-19 on branch elite/voice, on ranks 31 to 41 of the ranking above, the eleven guides with the fewest tells in the library (8.6 to 14.8 per 1,000 words). Worked as the second and third runs were: the same scripts (/home/user/tmp-voice/g/scripts), edits applied as exact old/new pairs to section bodies only (the edit lists are in /home/user/tmp-voice/g/edits/<slug>.py), the guide fact diff run on every guide, unquoted Scripture checked by eye in the word diff. Third-person reference writing: no opinion added, nothing made first person, the first person already there left exactly as it was. Because these already read as a teacher talking, the change is small on purpose: one to ten edits per guide, most of them contractions, a few joins, and the two-steps that were not the guide's real hinge. Nothing was edited to move a number. One false alarm in the fact diff ("Ancient" counted once too few after a join in miracles-and-the-ancient-mind) was met by rewording so the sentence again starts with "Ancient", not by widening the word list.
+
+## The eleven
+
+Words are prose words with quotations blanked (the ranking's measure); the fact diff's own count, which includes quotations, is in the last column.
+
+| Guide | Words before | Words after | Tells before | Tells after | "Not X. Y." | Short runs | Edits | Fact diff (words with quotes) |
+|---|---|---|---|---|---|---|---|---|
+| torah-and-the-law-codes | 943 | 940 | 14 | 12 | 1 to 1 | 1 to 1 | 10 | PASS (943 to 940, -0.3%) |
+| miracles-and-the-ancient-mind | 1042 | 1039 | 14 | 9 | 4 to 2 | 1 to 1 | 7 | PASS (1042 to 1039, -0.3%) |
+| romans-13-1-in-context | 1506 | 1506 | 20 | 17 | 5 to 4 | 0 to 0 | 3 | PASS (1696 to 1696, 0.0%) |
+| household-codes-in-context | 979 | 969 | 13 | 10 | 0 to 0 | 2 to 2 | 10 | PASS (979 to 969, -1.0%) |
+| the-violence-of-the-old-testament | 1058 | 1053 | 14 | 13 | 4 to 4 | 0 to 0 | 5 | PASS (1058 to 1053, -0.5%) |
+| romans-8-28-in-context | 1452 | 1452 | 19 | 18 | 3 to 3 | 0 to 0 | 3 | PASS (1665 to 1665, 0.0%) |
+| 2-chronicles-7-14-in-context | 1388 | 1388 | 18 | 17 | 0 to 0 | 0 to 0 | 3 | PASS (1692 to 1692, 0.0%) |
+| matthew-7-1-in-context | 1451 | 1450 | 16 | 16 | 2 to 2 | 0 to 0 | 1 | PASS (1698 to 1697, -0.1%) |
+| proverbs-3-5-6-in-context | 1466 | 1460 | 15 | 15 | 3 to 3 | 0 to 0 | 4 | PASS (1685 to 1679, -0.4%) |
+| jeremiah-29-11-in-context | 1386 | 1382 | 14 | 13 | 4 to 4 | 0 to 0 | 3 | PASS (1677 to 1673, -0.2%) |
+| matthew-18-20-in-context | 1505 | 1505 | 13 | 13 | 2 to 2 | 0 to 0 | 2 | PASS (1683 to 1683, 0.0%) |
+| **Eleven** | 14,176 | 14,144 | 170 | 153 | 28 to 25 | 4 to 4 | 51 | 11 of 11 |
+
+The two-steps left are each guide's hinge or the counter catching something that is not one: "Revelation didn't require Israel to stop sounding like the ancient Near East. It required the ancient Near East's forms to start carrying a different God."; "The premise that no one experiences such things is not a finding. It is a decision not to listen."; "He didn't call Pilate's authority false. He called it borrowed"; "Husbands aren't told to rule. They're told to love their wives"; "This is not ethnic cleansing in the texts' own logic. It is judgment with a long fuse"; "Those sermons were not readings of the text. They were thefts of it"; "it didn't promise that the sword would stay sheathed. It promised them a love the sword couldn't reach."; "From the inside, a beam doesn't feel like a beam. It feels like seeing clearly."; "The opposite of trust, in Proverbs, isn't thought. It's self-trust."; "Verses 13 and 14 don't promise that you'll find your way. They promise that you'll find him". The short runs left are real lists: the Torah's "If a man does this, then that follows" example, Aristotle's three relationships, and the household codes' three commands ("Wives are told ... Children are told ... Slaves are told ..."), which is the overlap the guide concedes and stays whole.
+
+"honest" went from 6 uses in our own prose to 2, both kept on purpose in the violence guide, where they carry the concession ("no honest reader gets to pretend it isn't there", "saying so out loud is part of reading honestly"); the literal ones ("Pay your taxes honestly", "do honest work") and the fixed fields (the title "An Honest Look", the heading "Three Readings Held by Honest People") are untouched. "simply" went from 2 to 1, the one left being the wording of a view the household guide describes ("simply men of their time"). One rhetorical question answered at once was rewritten as a statement in each of two guides (the violence guide and Jeremiah 29:11).
+
+## Eight before-and-after pairs
+
+1. torah-and-the-law-codes. "What you are left with is harder and better. A law with reasons, and the reasons have your name in them. For ye were strangers." became "What you're left with is harder and better, a law with reasons, and reasons that have your name in them. For ye were strangers."
+2. miracles-and-the-ancient-mind. "Ancient people did not lack the category of the impossible. They had it, used it, and applied it to these very claims. The stories were not received into a credulous vacuum. They were received under fire, and the writers tell us so." became "Ancient people didn't lack the category of the impossible. They had it, and they applied it to these very claims. The stories were received under fire, not into a credulous vacuum, and the writers tell us so."
+3. miracles-and-the-ancient-mind. "But the argument needs a stronger premise than some ancients believed strange things. It needs this. Ancient people in general, and the Gospel writers and their audiences in particular, lacked the concept of a fixed natural order and accepted miracle claims without resistance." became "But the argument needs a stronger premise than that some ancients believed strange things. Ancient people in general, and the Gospel writers and their audiences in particular, would have to have lacked the concept of a fixed natural order and accepted miracle claims without resistance."
+4. household-codes-in-context. "We study the background for one reason. To hear what the text said before deciding what we wish it had said." became "We study the background for one reason, to hear what the text said before we decide what we wish it had said."
+5. the-violence-of-the-old-testament. "Does this resolve the difficulty? No. A judgment that falls on a generation still falls on the people in it" became "None of this resolves the difficulty. A judgment that falls on a generation still falls on the people in it"
+6. jeremiah-29-11-in-context. "How does a promise made to Judah's exiles reach a Christian twenty-six centuries later? Not by pretending the letter was addressed to us." became "A promise made to Judah's exiles reaches a Christian twenty-six centuries later without anyone pretending the letter was addressed to us."
+7. torah-and-the-law-codes. "Then the strangest difference of all. The Torah gives reasons, and the reasons are memories." became "The strangest difference of all is that the Torah gives reasons, and the reasons are memories."
+8. miracles-and-the-ancient-mind. "Whatever this is, it is not the grammar of legend. It is the grammar of testimony, offered in the generation that could have contradicted it." became "Whatever this is, it has the grammar of testimony rather than legend, and it was offered in the generation that could have contradicted it."
+
+## Left alone, and why
+
+- Every title, subtitle, kicker, heading, keyText and source, including the headings built as the two-step ("Not a Statute Book", "If a Man. Then This.", "We Grade the Ancients. The Law Grades Us.") and the verse guides' repeated "What It Promises, and What It Never Said".
+- The seven verse guides got one to four edits each. They already read as a teacher talking, carry the help lines, and pair their misreadings; there was little a read-aloud would change. Matthew 7:1 got a single contraction; a second edit (a semicolon made a comma) was tried and taken back because it made the sentence worse.
+- Help and safety wording, word for word: Romans 8:28's "Tell someone who loves you how heavy it is, and if the dark has become more than you can carry, tell a doctor, a counselor, or a pastor today."; Matthew 7:1's "Tell someone you trust, and if you or anyone else is in danger, call the police."; Matthew 18:20's whole paragraph beginning "The chapter must also be guarded from its worst misuse", ending "You don't need anyone's permission to be safe."
+- Unquoted Scripture, in the translation each guide used: the KJV lines in torah-and-the-law-codes ("If an ox gore a man or a woman ...", "Ye shall have one manner of law ...", "Thou shalt not oppress a stranger, for ye were strangers in the land of Egypt", "For ye were strangers"); the violence guide's Deuteronomy and Genesis lines ("nothing that breathes", "show them no mercy", "Not because of your righteousness ...", "the iniquity of the Amorites is not yet complete") and the stele lines of Merneptah and Mesha; the household codes' "Submit to one another out of reverence for Christ"; Jeremiah's "Marry, raise children, and find spouses for those children"; Matthew 18:20's "deeply grieved" (the BSB's own words at 17:23, so the intensifier stays).
+- Paraphrases of a scholar's claim: Bottero, Younger, Kitchen, Copan, Earman, Keener, Wright, Cohick and Keener, Longman, Kidner, Hunter, Haidt, Richards and O'Brien.
+- Lists that are really lists: the dated evidence in Romans 13's skeptic paragraph (1850, the 1930s, 1985), the three prohibitions in Matthew 7:1, the three readings of the conquest, the four verbs of 2 Chronicles 7:14.
+
+## Where a lens pulled against a guardrail, and the guardrail won
+
+- the-violence-of-the-old-testament. Lens 3 flagged "Its cost is ..." three times in the three readings, and lens 5 pulled at "Does this resolve the difficulty? No." The three readings are untouched, each at full strength with its own cost; the answered question became "None of this resolves the difficulty.", which keeps the denial whole. "I will not adjudicate this in a guide." and every other first-person line stay as they were.
+- household-codes-in-context. Lens 3 flagged the mirrored "That will not survive contact with the Greek." / "That will not survive contact with the first century" and "simply men of their time". All stay: the two anachronisms are set at equal weight, and "simply" is the wording of a view being described, so changing it on one side only would tip the balance. Only "honest" went from "We should be honest about the overlap", and the overlap itself (the three commands) is whole.
+- miracles-and-the-ancient-mind. Lens 6 pulled at "Most of those claims may be mistaken." as a hedge; it stays, because it's the concession that makes Keener's narrower point fair. The skeptic's argument in the first section kept every clause; the one edit there only removed "It needs this." before its premise.
+- romans-13-1-in-context and 2-chronicles-7-14-in-context. The paragraphs that address right and left ("Today's misreading runs in both political directions", "Praying for your country is obedience ...") are untouched in both, including Romans 13's "I feel that pull myself" and Chronicles' "I'm a pastor". Jeremiah 29:11's and Matthew 7:1's right-and-left sentences are untouched too, and so is Matthew 7:1's paired church/culture pair ("We have often reversed the order." / "It has kept the verdicts and lost the forgiveness.").
+- romans-8-28-in-context, proverbs-3-5-6-in-context, jeremiah-29-11-in-context. Lens 5 had nothing to sharpen here that wouldn't sound harder toward someone grieving. The edits are contractions and "honest" out ("there's a good reason for it", "Any reading of verse 6 has to make room for verse 12"); the popular reading is still described with respect ("They're hearing something true.", "isn't the problem").
+- proverbs-3-5-6-in-context. Its prose capitalizes He and Him for God; lens 6 would have evened it with the library. Not done: that's James's decision (below).
+
+## Gates (fourth run)
+
+All 36 content-gate commands in .github/workflows/ci.yml passed, run one at a time (last lines in /home/user/tmp-voice/gates4.txt). pnpm check passed. pnpm test passed (146 test files, 1653 tests; 7 files and 73 tests skipped). node scripts/build-context-index.mjs rerun: guides-index.json and worlds-index.json unchanged. The search index and passage index --check runs were clean, so neither needed a rebuild. No build, no PDFs.
+
+## The whole library after four runs
+
+All 41 before any run: 44,472 words, 859 tells (19.3 per 1,000 words), 164 "Not X. Y." two-steps, 58 runs of three or more short sentences, 150 paragraphs ending on a short verdict, 92 sections closing on an aphorism. All 41 now: 44,633 words (+0.4%), 496 tells (11.1 per 1,000), 76 two-steps, 8 short runs, 71 short-verdict endings, 43 aphorism closings. The fact diff passed on all 41.
