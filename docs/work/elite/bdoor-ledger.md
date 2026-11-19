@@ -2223,3 +2223,35 @@ Cut: Pliny on nard; the litra; Josephus's lamb count; Egeria and the Palm Sunday
 | 18:10; Mark 14:30; 21:15-19; Luke 22:32; Matthew 26:75; 1 Kings 19:3-8, 15; Psalm 34:18 | 36-38 | BSB | BSB text |
 
 Cut: the Mekilta on the Hebrew slave (not confirmed); Joseph and Aseneth; m. Berakhot 5:5 on agents; 1QH on Psalm 41; the cockcrow watch and m. Bava Kamma 7:7; the meanings of Iscariot and the sicarii; Irenaeus, Bauckham, Hengel and Lazarus as candidates by name; the Gospel of Judas, Borges, Maccoby, Barth; the 13:10 short reading; the KJV's "supper being ended".
+
+## The plain notes on John 14 (2026-11-19)
+
+`client/public/bible/notes/john/plain/14.json`. 4 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Monai (14:2) and monēn (14:23); paraklētos (14:16, 26); orphanous (14:18); meizōn (14:28) | all | Greek text in the repository | Script |
+| "My Father's house": family household around a courtyard ("often"), or the temple (2:16) | 1-4 | Deep note `cultural`; BSB | Hedged. The Jewish wedding-custom reading not used (its sources are much later) |
+| KJV "many mansions" from the Latin mansiones; Tyndale's English New Testament used "mansions"; older English sense a dwelling | 1-4 | Commentaries; OED as cited | Search: biblehub.com commentaries 14:2; sharperiron.org (Kutilek); tips.translation.bible. Dated "in the 1520s" (sources give 1525 or 1526) |
+| Psalm 27:4; 23:6; 11:33; 12:27; 13:21 | 1-4 | BSB | BSB text |
+| Seven "I am" sayings with a picture | 5-7 | Book page | Book page wording |
+| Acts 9:2 ("the Way"); Acts 4:12; Isaiah 35:8; 1:1 | 5-7 | BSB | BSB text |
+| 14:6 views on those who never heard: pointer to the site's answers "Is Jesus really the only way to God?" and "What about those who never heard of Jesus?" (`client/src/data/answers.ts`); "whoever comes to the Father comes through Christ", "more than one view" | 5-7 | The site's answers | Repository; no view taken |
+| Exodus 33:18, 20; 1:18; 1 John 5:14; Mark 14:36; Acts 2:41 | 8-14 | BSB | BSB text |
+| "Ask in My name": no prosperity reading; Mark 11 and Matthew 7 wording | 8-14 | Earlier notes | Repository |
+| Paraklētos: one called alongside; legal advocate or supporter; Advocate, Helper, Comforter, Counselor | 15-24 | Lexicons (Strong's, HELPS, Thayer as summarised); Faithlife Study Bible sidebar | Search: blueletterbible.org G3875; biblehub.com 3875; biblia.com FSB "Parakletos"; freebiblecommentary.org |
+| 1 John 2:1 (advocate); 15:26; 16:13; Ezekiel 36:27; Jeremiah 31:33; Psalm 68:5; Luke 6:16; Matthew 10:3; Mark 3:18 | 15-24 | BSB | BSB text |
+| Nicene Creed in the site's older English wording: "the Lord and Giver of Life", "who with the Father and the Son together is worshipped and glorified"; "very God of very God, begotten, not made, being of one substance with the Father" | 15-31 | `client/public/creeds/documents/nicene-creed.json` | Repository; wording copied |
+| Shalom: wholeness, the ordinary greeting | 25-31 | Earlier ledger (Matthew 10) and deep note | Kept general |
+| Rome's boasted peace kept by armies | 25-31 | Deep note `cultural` (Pax Romana) | Stated generally, no date or source named |
+| 2:22, 12:16; Isaiah 9:6; 26:3; Numbers 6:26 | 25-31 | BSB | BSB text |
+| Arius in the early 300s: the Son had a beginning; his followers cited 14:28 | 25-31 | Earlier ledger (Matthew 24, John 5); search | Search: jimmyakin.com; logos.com (Horton); answering-islam.org notes Arian use |
+| Jehovah's Witnesses read 14:28 as the Son not equal to God | 25-31 | Watchtower Research Guide note (mirror): the Father's greatness, authority and superior position | Search: wol mirror (wol.pr418.com); jimmyakin.com; christianministriesintl.org. Stated as their reading; no quotation |
+| Council of Nicaea 325 | 25-31 | Earlier ledger | Earlier ledger |
+| Athanasian Creed: "equal to the Father, as touching his Godhead; and inferior to the Father, as touching his Manhood" | 25-31 | `client/public/creeds/documents/athanasian-creed.json` | Repository; wording copied |
+| Augustine, On the Trinity 1.7.14: "greater" said of the form of a servant (Philippians 2:6-7) | 25-31 | Augustine | Search: biblehub.com library On the Holy Trinity ch. 7; bkv.unifr.ch. Paraphrased |
+| The Father as source of the Son, not greater in being | 25-31 | Deep note `hard` | Stated as "others add"; Gregory of Nazianzus (Oration 30.7) searched and not confirmed, so not named |
+| 17:5; 20:28; Philippians 2:7 | 25-31 | BSB | BSB text |
+| Anxiety care line: the help wording of the site's answer "Is my anxiety a spiritual failure?" copied word for word | 25-31 | `client/src/data/answers.ts`; Matthew 6 note | Repository |
+
+Cut: Hick, Rosenzweig, Newbigin, Nash, Pinnock, Lumen Gentium 16 by name (the site's answers carry the views); the Jewish wedding custom; Plato's Phaedo on orphans; the farewell-speech form and the Testaments of the Twelve Patriarchs; 1QS on the two spirits; m. Avot 4:11 (praqlit); m. Berakhot 5:5; Gregory of Nazianzus, Eunomius and Calvin by name; the Pax Romana by name.
