@@ -4975,3 +4975,37 @@ Map repair (Acts book page, after the rendered check): Damascus moved from
 36.29 to 36.27 so its mark sits inside the drawing; the Samaria region ring
 moved to 32.4, 35.42 (placed roughly, as said); Jerusalem's name set to the
 right of its mark. Positions only; no historical claim changed.
+
+## The plain notes on Acts 8 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/8.json`. 5 web searches (a sixth, a
+fetch of the BSB footnote page on ebible.org, was refused by the network, so
+the footnote is described and not quoted).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Saul at Stephen's death; 1 Corinthians 15:9; Galatians 1:13; Acts 1:8 | 1-3 | BSB | Repository |
+| Why the apostles stayed: "a likely guess, not something Luke says" (anger on the Greek-speaking believers, 6:13) | 1-3 | Reading | Stated as a guess |
+| Philip one of the Seven, "the evangelist" (6:5; 21:8-9) | 4-8, 36-40 | BSB | Repository |
+| Samaritans: God of Israel, five books of Moses, Gerizim; John Hyrcanus destroyed their temple around 111 or 110 BC; John 4:9, 25; Luke 9:54; 17:16 | 4-8 | Jewish-life portrait (John 4:9 note) | worlds-ledger; repository wording |
+| 2 Kings 17:24 and 722 BC; the Samaritans' own account (descendants of the northern tribes) | 4-8 | BSB; deep note `historical` | Repository; both accounts stated |
+| Ezekiel 37:16-17, 22-24; Deuteronomy 18:10-11; Exodus 8:19; Numbers 27:18-20; Joel 2:28 | all | BSB | Repository |
+| Justin Martyr (First Apology 26): a Samaritan Simon worked magic in Rome under Claudius; a statue "to Simon" as a god; many think the statue was to Semo Sancus; Irenaeus follows Justin | 9-13 | Justin; Irenaeus, Against Heresies 1.23 | Search: philipharland.com (Harland, translation of Justin and Irenaeus); ccel.org and sacred-texts.com (Eusebius with notes on Semo Sancus); newadvent.org "Simon Magus". Paraphrased; "cannot be known" whether all the stories are about the same man |
+| Simony from Simon's name | 18-25 | Dictionary sense; deep note | Common knowledge |
+| "Gall of bitterness"; Deuteronomy 29:18; 2 Kings 5:16, 20-27; Psalm 51:10 | 18-25 | BSB; lexicons | Repository |
+| 8:14-17: Pentecostal subsequence; Catechism of the Catholic Church 1288 cites Acts 8:15-17 (the apostles' hands give the Spirit that completes baptism); Orthodox chrismation right after baptism, traced to the same act; no oil in the verses; Reformed and Baptist reading (exceptional, to join Samaria to Jerusalem; Romans 8:9); some scholars: the faith was not yet full | 14-17 | CCC 1288-1289; Orthodox parish pages; deep note `hard` | Search: vatican.va archive (CCC); holytrinityorthodox.com; saintandrewgoc.org; oca.org. Dunn not named. Each view one paragraph, no side |
+| "Ethiopia" in Greek and Roman writing = Kush, royal city Meroë, in modern Sudan; Candace (Kandake) a title of the queens of Kush, who often ruled with power; which queen uncertain | 26-35 | Reference works | Search: worldhistory.org "The Candaces of Meroe"; biblegateway Encyclopedia of the Bible "Candace"; Wikipedia "Kandake". Identity of the queen left open |
+| Eunuchs as court officials; the word sometimes for an official; Luke repeats it | 26-35 | Deep note `cultural`, `words` | Repository |
+| Deuteronomy 23:1; Isaiah 56:3, 5 (56:4 not quoted: its BSB text ends in an em-dash); Psalm 68:31; Jeremiah 38:7; Isaiah 53:7, 12 | 26-35 | BSB | Repository |
+| Reading aloud normal in the ancient world | 26-35 | Deep note `cultural` | Repository |
+| Acts 8:32-33 follows the Septuagint, differing a little from the Hebrew of Isaiah 53:7-8 | 26-35 | Commentaries | Search: bible.cc commentaries on 8:32; biblehub.com "Acts 8:33 and Isaiah 53" |
+| Servant read as Israel or a faithful person within Israel by Jewish readers | 26-35 | Deep note `christ` | Repository |
+| 8:37 not in the BSB's text but in its footnote; missing from the earliest Greek manuscripts (Papyrus 45, Sinaiticus, Vaticanus); Irenaeus (Against Heresies 3.12.8, about 180) knew a form of it; most think a copyist added it | 36-40 | Textual commentaries (Metzger) | Search: etsjets.org; uasvbible.org; Wikipedia "Confession of the Ethiopian Eunuch"; biblehub.com (BSB footnote shown as "TR includes"). Alexandrinus not named (sources disagree) |
+| Azotus = Ashdod; Caesarea the governors' seat | 36-40 | Earlier ledger (Acts book page) | Ledger |
+| 1 Kings 18:12; Ezekiel 3:14 | 36-40 | BSB | Repository |
+| Baptism mode: immersion read from "went down into the water"; others: it says where, not how; many churches pour or sprinkle | 36-40 | Standard positions | Stated as views, no history claimed |
+
+Left out: the "wild animal" sense of the verb in 8:3 (not checked); the
+tradition that the eunuch preached in his own land (Irenaeus; not checked
+this run); which queen of Kush ruled; whether the Gaza road or the city was
+"desert"; the Didache on pouring; Dunn by name.
