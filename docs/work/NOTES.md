@@ -364,3 +364,6 @@ His words: "I want you to make this a 10 out of 10 on every score... a place whe
 - Bible background: "I want you to really go into detail about these worlds ... expansive ... what it was actually like." Pilot portrait (Jewish life in Jesus's day) built, source-checked twice, read by James: "publish it all" (PR #558). The other worlds follow the same pattern.
 - Bible door: "a one-stop place where people can understand the Bible ... exhaustive ... easy to understand ... illustrative." Plan in docs/work/elite/bdoor-plan.md; Mark pilot (book page, Mark 1 to 3) read by James: "publish it all" (PR #558). Continue through Mark, then the order in the plan. Contested matters stay stated fairly with no side taken until he says otherwise.
 - Hard questions: eleven items published by his word (PRs #555, #557, #558); the rest follow in the audit's order.
+
+- 2026-11-19: James said "publish them" for PR #559 (Mark 4 to 16, Matthew book page and chapters 1 to 4, the Old Testament, Roman and honor-and-shame world portraits, eleven argued Honest Answers). Merged as 309ebb0c; verified live by fetching the pages.
+- 2026-11-19: James asked for a review of the whole site with a prompt, and for six "spoken voice" editing prompts to be run over all the writing; the brief with their guardrails is in docs/work/elite/voice.md once the first five essays are done.

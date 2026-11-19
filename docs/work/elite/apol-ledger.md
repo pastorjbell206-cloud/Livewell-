@@ -596,3 +596,80 @@ Searches this answer: 11 (Turing's paper; Turing's reply on consciousness; Searl
 | Apostles' Creed, "the resurrection of the body" | Repo: `client/public/creeds/documents/apostles-creed.json` | Verified, quoted |
 
 No fact about James is used, and the old answer had no recollection of his to cut. Not carried over: the old answer's "an old heresy on new hardware" is kept in substance as the contrast with Irenaeus's Gnostic opponents, stated without calling anyone a heretic; "carbon chauvinism" kept as a phrase, unattributed.
+
+## Ninth run (2026-11-19)
+
+Primary texts read locally: the HistoricalChristianFaith Writings-Database clone already in the scratchpad (`sources/Writings-Database`, commit 328918a, 2026-10-25), with `git show` and the HTML stripped. Files: Augustine, *On the Trinity* Book 5 (NPNF); Gregory of Nyssa, *On "Not Three Gods"* (NPNF); Tertullian, *Against Praxeas* (ANF); Origen, *De Principiis* Book 4 (ANF); Basil, *Hexaemeron* Homily 9 (NPNF). Creed wording from `client/public/creeds/documents/`. Scripture is ESV, matched against a search or against ESV text already quoted on the site. `plato.stanford.edu` and `andrewmbailey.com` do not resolve from here, so Tuggy's and Cartwright's texts were not seen.
+
+### How can God be three and one?
+
+Searches this answer: 8 (Cartwright; Tuggy twice; Channing; Maimonides; van Inwagen, Leftow and Plantinga; van Inwagen and relative identity; Tertullian's date).
+
+| Claim | How verified | Result |
+|---|---|---|
+| Cartwright, "On the Logical Problem of the Trinity," *Philosophical Essays* (MIT, 1987), 187-200; built on the Athanasian Creed; the counting principle (if every A is a B, there cannot be fewer B's than A's) | Search (van Inwagen's 2022 *TheoLogica* critique quoting the principle; course pages) | Verified as paraphrase; the principle is given in his sense, not in quotation marks |
+| Tuggy wrote the Stanford Encyclopedia's "Trinity" entry (first 2009, revised since); he argues that in the New Testament the one God is the Father alone | Search (SEP archive pages, PhilPapers) | Verified as paraphrase; the entry's wording not seen |
+| Channing, "Unitarian Christianity," Baltimore, May 5, 1819, rejected the Trinity | Search (Wikipedia, WKU introduction, EBSCO) | Verified as paraphrase ("contrary to the unity of God" is a summary, not a quotation) |
+| Maimonides, twelfth century, God's unity the second of thirteen principles: the cause of all is one, a oneness unlike any other, indivisible | Search (Aish, ORU course text, MyJewishLearning) | Verified as paraphrase |
+| Qur'an 4:171 and 112:3-4, Saheeh International | This ledger (eighth run) | Quoted as checked there |
+| Athanasian Creed: "And the catholic faith is this ... nor dividing the Substance"; "So the Father is God ... but one God"; written around 500 | Repo: `athanasian-creed.json` (text and intro) | Quoted exactly |
+| Nicene Creed: "of one substance with the Father"; "who with the Father and the Son together is worshipped and glorified"; "begotten, not made"; "begotten of his Father before all worlds" | Repo: `nicene-creed.json` | Quoted exactly |
+| Augustine, *On the Trinity* 5.9: "When the question is asked, What three? human language labors altogether under great poverty of speech"; "three persons" said so that something can be said | WDB, NPNF Book 5 | First quoted word for word; second paraphrased (the translator's brackets make a clean quotation awkward) |
+| Hurtado 2003; Bauckham 2008 on 1 Corinthians 8:6, with the dispute named; Paul writing in the 50s | This ledger (Was Jesus just a good teacher?) | Verified, paraphrased |
+| Pliny to Trajan around 112, a hymn to Christ "as to a god" | Essay ledger `the-early-church-under-rome.md` (Lightfoot's translation as quoted by Martin) | Verified, quoted |
+| Ehrman, *How Jesus Became God* (2014) | This ledger | Verified, paraphrased |
+| Arius a presbyter of Alexandria; Nicaea 325; Constantinople 381 and the Spirit; Athanasius's "only God can save" | Essay ledger `excavation-not-demolition.md`; repo `nicene-creed.json` notes | Verified; "defended Nicaea for the rest of his life" rests on the creed page's five exiles |
+| Tertullian against Praxeas, early in the third century: "he put to flight the Paraclete, and he crucified the Father" (ch. 1) | WDB (ANF) for the words; search for the date (ca. 213 in one article; Souter says the dates are uncertain) | Quoted; date given only as "early in the third century" |
+| Gregory of Nyssa, *On "Not Three Gods"*: "Peter, James, and John, being in one human nature, are called three men"; men who share a task work separately, the persons never act apart | WDB (NPNF) | Quoted and paraphrased from the text |
+| Leftow, "Anti Social Trinitarianism," in *The Trinity: An Interdisciplinary Symposium* (OUP, 1999), a Latin trinitarian; Plantinga Jr., "Social Trinitarianism and Tritheism," in *Trinity, Incarnation, and Atonement* (Notre Dame, 1989) | Search | Verified; the models described in general terms, not as either man's wording |
+| Geach and relative identity; van Inwagen, "And Yet They Are Not Three Gods But One God," in *God, Knowledge, and Mystery* (Cornell, 1995): a statement free of formal contradiction in a relative-identity logic, no more | Search (TheoLogica, PhilArchive, Cambridge) | Verified, paraphrased |
+| Deuteronomy 6:4, Matthew 3:17, Matthew 28:19, John 1:1, John 20:28, Acts 5:3-4, 2 Corinthians 13:14, 1 Corinthians 8:6, 1 John 4:8, John 17:24 | Repo ESV quotations (study guides, answers) | Quoted |
+| Mark 12:29, Jesus calls the Shema the most important commandment | Cited by reference, not quoted | Checked against the passage's content |
+
+No fact about James is used. Cut from the old answer: "I made the math objection for years and was objecting to a cartoon" (a recollection of his that cannot be confirmed). Kept in its own words: "The oneness and the threeness are not at the same level, so they do not collide."; "The church didn't flunk arithmetic. It refused to let arithmetic be the measure of God."; "The doctrine was forced on the church by its own evidence. The first Christians were Jews, the last people on earth who would invent a doctrine that multiplied God."; "Every analogy fails, whether water, clover, or sun, and the failure is a clue. There is nothing else like God."; "A solitary god could acquire love only by making something to love. The God of the creeds is love all the way down." Not carried over: "salvation is adoption into the family life of God. You aren't asked to master the Trinity. You're asked into that family." (closer to an invitation than the page's ending allows).
+
+### What about those who never heard of Jesus?
+
+Searches this answer: 9 (Dillard; Acts 17:30; Acts 14:16-17; Acts 10:2 and 11:14; Job 1:1 and Romans 3:25; Aquinas, not found and not used; the soteriological problem of evil; Craig 1989; Deuteronomy 1:39 and Genesis 14:18).
+
+| Claim | How verified | Result |
+|---|---|---|
+| "Soteriological problem of evil" as the name philosophers use, modeled on the problem of evil | Search (BYU Religious Studies Center essay, Beilby's chapter as summarized) | Verified; no coiner named |
+| Hick: belief depends mostly on birthplace; *An Interpretation of Religion* (1989) | This ledger (fifth run) | Verified, paraphrased |
+| Dillard, *Pilgrim at Tinker Creek*: the Inuit hunter, the priest, and "why did you tell me" | Search (a reader's transcription; Christianity Today review) | Told as paraphrase, no quotation marks; 1974 is standard bibliography, not searched |
+| Craig, "'No Other Name': A Middle Knowledge Perspective on the Exclusivity of Salvation through Christ," *Faith and Philosophy* 6 (1989), 172-88: God may have so ordered the world that those who never hear would not have believed; critics (Myers) on informed reflective non-Christians | Search (Craig's bibliography, Lewis Society copy, Cambridge critique) | Verified, paraphrased |
+| Sanders 1992; Sanders, Fackre and Nash 1995; Pinnock 1992; *Lumen Gentium* 16 (1964) | This ledger (fifth run) | Verified |
+| Acts 17:30; Acts 14:16-17; Acts 10:2; Acts 11:14; Romans 3:25 | Search (esv.org and parallel sites) | Verified, quoted |
+| Genesis 14:18 "priest of God Most High"; Deuteronomy 1:39 "no knowledge of good or evil" | Search (esv.org); Deuteronomy quoted only in the words both copies share ("today" or "this day" differ) | Verified, quoted |
+| Job 1:1 (Uz) | Search did not return the ESV wording | Cited, not quoted; Job 1:8 "a blameless and upright man" quoted from repo ESV |
+| Acts 4:12, Acts 10:34-35, Acts 17:26, 17:27, Romans 1:20, 2:15, 3:23, 10:14, Genesis 15:6, 14:20, 18:25, Hebrews 11:6, 11:13, 2 Samuel 12:23 | Repo ESV quotations and this ledger | Quoted |
+| Romans 2:12-16, 1 Peter 3:19, 4:6, Hebrews 9:27, Acts 17:31 | Cited by reference, not quoted (Romans 2:12-16 paraphrased) | Checked against content |
+| Aquinas, *De Veritate* 14.11 (the child raised in the forest) | Search did not reach the text | Not used |
+
+No fact about James is used. Cut from the old answer: "I wanted the roster for years so I could stop feeling the ache" (a recollection and a feeling of his that cannot be confirmed). Kept in its own words: "I don't know, and the people who told you they knew, in either direction, told you something the text withholds."; the mountainside sentences; "It is the soft place in the exclusive claim, the one that makes settled believers change the subject."; "If I don't know the unreached are safe, and I don't, then reaching them isn't optional and my comfort isn't the point. The uncertainty is a reason for the mission."; "We keep trying to settle the mechanism when we were never given the list. We were given the Judge"; "The Judge did not stay behind the glass ... and he will not do it unjustly."
+
+### How should a Christian read Genesis 1?
+
+Searches this answer: 10 (Whitcomb and Morris; Kline and Noordtzij; C. John Collins; Walton; Enuma Elish; Four Views on the Historical Adam; Ross, BioLogos, Lamoureux; Hebrews 11:3; Seely; with the Enuma Elish discovery in the same search).
+
+| Claim | How verified | Result |
+|---|---|---|
+| Universe about 13.8 billion years, earth about 4.54 billion (given in the skeptic's voice as mainstream science) | This ledger (/faq/can-science-and-faith-coexist) | Verified |
+| Seely, "The Firmament and the Water Above, Part I," *WTJ* 53 (1991): raqia a solid dome; Poythress (*WTJ* 77, 2015) answers it is not a physical theory | Search (galaxie.com records, Poythress PDF) | Verified, paraphrased |
+| Origen, *On First Principles* 4: "possessed of understanding" ... "that the first day ... existed without sun, and moon, and stars" | WDB (ANF) | Quoted word for word; "in the third century" (Origen died about 254) |
+| Augustine, *The Literal Meaning of Genesis*: days not measured by the sun; all things together; "a disgraceful and dangerous thing" (1.19.39, Taylor, ACW 41, 1982) | This ledger (science sections) | Verified |
+| Basil, *Hexaemeron* 9: "For me grass is grass; plant, fish, wild beast, domestic animal, I take all in the literal sense"; nine homilies; against allegory | WDB (NPNF) | Quoted word for word; "fourth century" (Basil died 379) |
+| Enuma Elish: Marduk kills Tiamat and splits her body into sky and earth; humans from Kingu's blood to serve the gods; tablets from Ashurbanipal's library at Nineveh; George Smith published them in 1876 | Search (Wikipedia, New World Encyclopedia, crivoice) | Verified, paraphrased; no composition date given (sources conflict) |
+| Whitcomb and Morris, *The Genesis Flood* (1961), revived young-earth creationism | Search (Wikipedia, Numbers via Counterbalance) | Verified |
+| Hugh Ross, astronomer, founded Reasons to Believe in 1986; day-age reading | Search | Verified; *A Matter of Days* not listed (first-edition year not confirmed) |
+| Noordtzij 1924; Kline, "Because It Had Not Rained," *WTJ* 1958, title from Genesis 2:5 | Search | Verified |
+| C. John Collins, *Genesis 1-4* (P&R, 2006): God's workdays, analogous to ours | Search (Logos, reviews) | Verified, paraphrased (Goodreads gives 2005; the publisher's 2006 is used) |
+| Walton, *The Lost World of Genesis One* (IVP Academic, 2009): functional origins, cosmic temple, rest as residence; does not deny material creation; critics on the functional/material split | Search (IVP, DTS and Themelios reviews) | Verified, paraphrased (his own sentence carries an em-dash and is not quoted) |
+| BioLogos founded 2007 by Francis Collins, who led the Human Genome Project | Search | Verified |
+| *Four Views on the Historical Adam*, ed. Barrett and Caneday (Zondervan, 2013): Lamoureux, Walton, C. John Collins, Barrick, as described | Search | Verified |
+| Hebrews 11:3 | Search (esv.org) | Verified, quoted |
+| Genesis 1:3, 1:27, 1:31, Exodus 20:11, Psalm 90:4, Romans 5:12, 1 Corinthians 15:22; "And there was evening and there was morning" | Repo ESV quotations | Quoted |
+| Genesis 1:14-16 "lights"; Genesis 2:4 "in the day" | ESV, single words | Quoted as fragments |
+| Apostles' Creed "Maker of heaven and earth"; Nicene "and of all things visible and invisible" | Repo creeds | Quoted |
+
+No fact about James is used, and no position is taken on the age of the earth or evolution. Cut from the old answer: "When I was an atheist the science was a real barrier, and learning that the church has held several faithful readings of this chapter mattered more to me than winning any single argument about it." (a recollection and feeling of his that cannot be confirmed). Kept in its own words: the whole first paragraph's opening three sentences; "Genesis 1 answers who and why, and it may simply not be pitched at the modern question of how."; "Hold on tight to the Creator, and hold the mechanism loosely." The old answer's sentence on Collins and BioLogos is rewritten with the founding year checked.
