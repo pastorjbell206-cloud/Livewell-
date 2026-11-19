@@ -136,3 +136,72 @@ phrase confirmed in a search.
 | Taxes and revenue | Romans 13:7 | BSB text |
 | Erastus inscription: found 1929 near the theater; ERASTVS PRO AED S P STRAVIT; aedile's duties; identification with Romans 16:23 disputed; oikonomos; Friesen dates the plaza to the second century | IKorinthKent 232 | Verified (search): Wikipedia "Erastus of Corinth", Cambridge review of Friesen, Gill; Weiss (2015) |
 | "not many" powerful or of noble birth | 1 Corinthians 1:26 | BSB text |
+
+## Part 7. Letters: written, carried and read aloud
+
+| Claim | Source | How checked |
+|---|---|---|
+| Augustus's courier service: young men at intervals on the military roads, then vehicles; official business; private letters by slaves, friends, travelers | Suetonius, Augustus 49.3 | Verified (search): lexundria Suetonius 49.3 (Rolfe); World History Encyclopedia "Letters and Post", Wikipedia "Cursus publicus" for the private side |
+| Tychicus; Epaphroditus; Phoebe very likely carried Romans | Colossians 4:7-8; Philippians 2:25; Romans 16:1-2 | BSB text; Phoebe as carrier is the common view, stated as "very likely" |
+| Papyrus letter form; chairein; Paul's "grace and peace" | Romans 1:7 | BSB text; the letter form is standard |
+| P.Oxy. 744, 1 BC: Hilarion in Alexandria to Alis; send wages; keep a boy, expose a girl; Caragounis reads it as a multiple birth | papyrus | Verified (search): papyri.info, Trismegistos 20442, Diotima translation, Sententiae Antiquae, Caragounis's paper. "Tender greetings and wages" is the gist, not quoted |
+| Richards (2004): about 14,000 papyrus letters average about 87 words; Cicero about 295; Seneca about 995; Paul's thirteen about 2,495, from 335 (Philemon) to 7,114 (Romans) | Richards | Verified (search): several secondary sources quoting his table (Olive Tree blog, Bible Study with Randy); his table itself not seen. His cost estimate in 2004 dollars was left out |
+| Tertius; large letters; greetings in his own hand | Romans 16:22; Galatians 6:11; 1 Corinthians 16:21; Colossians 4:18; 2 Thessalonians 3:17 | BSB text (not quoted where the BSB has an em-dash) |
+| Secretaries' freedom debated; Richards discusses a range | Richards (2004) | The book's subject (subtitle "Secretaries, Composition and Collection"); his range not seen page by page |
+| Harris (1989): literacy rarely much above ten percent; others think it too low | Harris, Ancient Literacy | Verified (search): Wikipedia on Harris, BMCR 2019.04.45 review of later essays (Horsfall and others) |
+| Read to all the brothers; Laodicea; the one who reads aloud | 1 Thessalonians 5:27; Colossians 4:16; Revelation 1:3 | BSB text |
+| Andronicus and Junia; "all his letters", "some parts ... hard to understand" | Romans 16:7; 2 Peter 3:16 | BSB text |
+
+## Part 8. How the church looked from outside
+
+| Claim | Source | How checked |
+|---|---|---|
+| Claudius expelled the Jews over disturbances at the instigation of Chrestus; most read Christus; some a local agitator | Suetonius, Claudius 25.4 | Verified (search): Wikipedia "Claudius' expulsion of Jews from Rome", earlychristianwritings; the site's guide the-cities-of-paul |
+| Acts 18:2 wording | Acts 18:2 | BSB text |
+| AD 49 from Orosius (fifth century), disputed; Dio says Claudius forbade meetings | Orosius 7.6.15; Dio 60.6.6 | Verified (search): Wikipedia, biblehub summary of Dio; "two events or one" is the standing debate |
+| Fire of July 64 near the Circus Maximus, about nine days | Tacitus, Annals 15.38-41 | Verified (search): Cambridge Companion to the Age of Nero, Italian Art Society |
+| Nero fastened guilt on those called Christians, hated for their crimes; Christus executed under Tiberius by the procurator Pontius Pilate; hatred of the human race; skins and dogs; burned as lights in Nero's gardens; pity | Tacitus, Annals 15.44 | Verified (search): Wikipedia "Tacitus on Jesus" (Latin and English), Livius, Classics Library commentary. Crucifixion of some victims and "where everything shameful flows" were cut because the searches did not confirm them |
+| Pilate called prefect on the Caesarea inscription, found 1961 | Pilate Stone | Verified (search): Wikipedia "Tacitus on Jesus" (prefect); the year 1961 is standard |
+| A few historians question the scapegoating; most accept it | modern debate | Verified (search): Cambridge chapter on the persecution; Wikipedia notes Suetonius and Dio do not link Christians to the fire |
+| "Punishment was inflicted on the Christians, a class of men given to a new and mischievous superstition" | Suetonius, Nero 16.2, Rolfe (Loeb, 1914) | Verified (search): Perseus/Rolfe wording in results; the only English quotation of an ancient author on the page |
+| 1 Clement from Rome, usually near the end of the first century, date argued; Peter and Paul died as witnesses; beheading a later tradition | 1 Clement 5 | Verified (search): Cambridge chapter ("1 Clement talks of both Peter and Paul having died as martyrs, apparently at Rome ... date disputed"); PBS for the later tradition |
+| Pliny about 112, Bithynia and Pontus; asked a second and third time with threats; executed the obstinate; citizens to Rome; test of gods, wine and incense to the image, cursing Christ; met before dawn on a fixed day; carmen Christo quasi deo; oath against crimes; ordinary and harmless food; stopped after the ban on hetaeriae; two slave women called ministrae tortured; superstitionem pravam et immodicam | Pliny, Letters 10.96 | Verified (search): Dickinson College Commentaries Latin; earlychurchtexts; uvm.edu (Bailly); Vox Evangelica (Martin) for carmen Christo quasi deo; the test is also in the site's guide gospel-against-empire |
+| Trajan: not to be sought out (conquirendi non sunt); punished if accused and proved; pardon for those who deny and worship the gods | Pliny, Letters 10.97 | Verified (search): earlychurchtexts Trajan's reply |
+| Slandered as evildoers; strange that you do not join; suffer as a Christian; first called Christians at Antioch; "people everywhere are speaking against this sect" | 1 Peter 2:12; 4:3-4, 16; Acts 11:26; 28:22 | BSB text |
+
+## Old Testament checks (the extra job)
+
+See the section "Checks of 2026-11-19" at the end of
+`docs/work/elite/wot-ledger.md`.
+
+## What was cut or softened because it could not be verified
+
+- Tacitus: that some of Nero's victims were crucified, and Rome as the place
+  "where everything shameful flows" (both in Annals 15.44, but not confirmed by
+  any search result).
+- The Alexamenos graffito (already on the site in a guide; cut for length).
+- Trajan's rule that anonymous accusations were not to be admitted, and Pliny
+  on the "contagion" spreading to villages and farms, and on the temples
+  filling again: well known lines of 10.96-97, not confirmed by search.
+- Pliny's letter giving his wife a pass for the state post (10.120): not
+  searched, left out.
+- Richards's cost of writing Romans in 2004 dollars.
+- A height limit under Trajan (sources conflict between Nero and Trajan).
+- A figure for the number of people a Corinthian house could hold.
+- Dinner rules at Lanuvium itemised (provisions of wine and bread, fines):
+  stated only generally.
+- Debt as a source of slaves.
+- The English wording of Juvenal's doves and of Pliny's hymn sentence: given as
+  paraphrase, since no named translation's wording could be confirmed.
+
+## Standard facts not separately searched
+
+Reign dates of the emperors; Gallio as Seneca's brother; Castor and Pollux as
+the sailors' gods; Puteoli as the harbor of the Alexandrian grain ships;
+Lechaeum and Cenchreae as Corinth's harbors; Thessalonica as Macedonia's
+capital; Spartacus's revolt ending in 71 BC; Cicero's prosecution of Verres in
+70 BC; the section number of Cicero, For Rabirius 16 (the passage is the site's
+guide's); household shrines at Pompeii; manumission and the freedman's duties;
+the elite's contempt for paid work; the insula; free grain at Rome for a list
+of citizens; the denarius and drachma; the letter form of the papyri; Onesimus
+as "useful"; makellon as macellum; the Pilate inscription's discovery in 1961.
