@@ -1532,3 +1532,54 @@ Irenaeus, Augustine, Gregory and Calvin on the garment; Jehu's vestments as
 evidence; Ecclesiastes Rabbah; Brandon, Horsley, Justin, Tertullian, the
 Barmen Declaration, Luther's two kingdoms and Calvin's Institutes on taxes;
 the Greek Old Testament's "mind" in Deuteronomy 6:5; every textual note.
+
+## The plain notes on Matthew 23 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/23.json`. Five searches for this
+chapter, with the earlier ledger (Matthew's book page on the woes and
+Weinfeld; Mark 12 on the Pharisees; Mark 15 on Nostra Aetate; Mark 6 on the
+tassels), the Pharisees guide (`client/public/context/guides/pharisees-sadducees-essenes.json`)
+and the Jewish life portrait (`client/public/context/worlds/jewish-life-in-jesus-day.json`),
+both read only. The guide is in a first-person voice, so only its checked
+facts were used, never its sentences.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Moses' seat the place from which the law was taught; Jesus tells hearers to keep the teaching | 1-12 | Jewish life portrait (Matthew 23:2-3 note); book page | Repository |
+| Phylacteries: small leather boxes of Scripture on arm and forehead (Deuteronomy 6:8); tassels (Numbers 15:38-39); kraspedon at 9:20 and 23:5 | 1-12 | BSB; earlier ledger (Mark 6) | BSB text; earlier ledger. Qumran finds not mentioned |
+| "Rabbi" a respectful address, "my great one" | 1-12 | Deep note; standard lexicons | Standard meaning; its later use as a formal title not mentioned |
+| Readings of 23:2-3; 15:3-6 | 1-12 | Book page; standard positions | Stated as views |
+| "Father" for priests (Catholic, Orthodox); 1 Corinthians 4:15; many Protestants avoid such titles | 1-12 | BSB; common practice | BSB text; general |
+| Malachi 2:7-8; Deuteronomy 6:8; Numbers 15:39 | 1-12 | BSB | BSB text |
+| Verse 14 missing from the oldest manuscripts; matches Mark 12:40 and Luke 20:47; seven woes without it | 13-15 | Repository chapter note (`text`) | Repository |
+| Hypocrite first a Greek word for a stage actor | 13-15 | Standard lexicons (hupokritēs) | Standard meaning |
+| Pharisees: mostly lay people; most popular group with influence over ordinary people (Josephus, Antiquities 18.15); belief in resurrection; Luke 13:31; Nicodemus (John 3:1); Gamaliel (Acts 5:34); Paul (Philippians 3:5) | 13-15 | Jewish life portrait; Pharisees guide; earlier ledger (Mark 12, Antiquities 18.15-17); BSB | Repository; earlier ledger; BSB text |
+| "Pharisee" came to mean hypocrite only in later Christian speech | 13-15 | Jewish life portrait | Repository (paraphrased) |
+| Later Jewish teachers spoke in much the same way about teachers who do not practise what they preach | 13-15 | Weinfeld, Bible Review 13.5 (1997) | Earlier ledger (Matthew's book page). Weinfeld not named here |
+| b. Sotah 22b: seven kinds of Pharisee, six counted false; only the one who serves from love praised; King Yannai to his wife: fear not the Pharisees but the hypocrites who imitate them | 13-15 | Babylonian Talmud | Search: halakhah.com Sotah 22 (Soncino); magazine.israelbiblecenter.com "The Seven Types of Pharisees"; steinsaltz.org Sota 22. Paraphrased, marked as several centuries after Jesus; Yannai not named |
+| Whether Jews sought converts debated; the verse may mean winning to the Pharisees' way | 13-15 | Deep note; scholarship | Stated as debate, no names |
+| Isaiah's six woes (5:8, 11, 18, 20, 21, 22); Amos 6:1; Ezekiel 34:2; Jeremiah 23:1 | 13-15 | BSB | BSB text |
+| Harsh polemic between ancient schools a convention; how much reflects Matthew's quarrel after 70 debated | 13-15 | Deep note (L. T. Johnson, JBL 1989; Garland 1979) | Stated as what "some scholars note" and "scholars differ"; no names (not checked this run) |
+| 1 Peter 4:17; James 3:1 | 13-15 | BSB | BSB text |
+| Oaths: Matthew 5:34, 37; Deuteronomy 23:21; Exodus 20:7 | 16-22 | BSB | BSB text. m. Shevuot 4:13 and Philo not used |
+| Tithes of herbs read from the verse; Micah 6:8; Hosea 6:6 (9:13; 12:7); Leviticus 11:4, 41; Numbers 19:16; Ezekiel 13:10 | 23-28 | BSB | BSB text. m. Demai and m. Maaserot not used; the gnat-camel Aramaic wordplay not used; straining wine through cloth narrowed to "straining a drink" |
+| Mishnah Shekalim 1:1 (written down around 200): graves marked on 15 Adar | 23-28 | Mishnah | Search: jtsa.edu Shekalim 1:1; jewishvirtuallibrary.org Shekalim 1; mishnah.org. Lime and whitewash not claimed from the Mishnah; the white tomb given as Jesus' picture |
+| "Sons" as following the same path; 3:7 | 29-36 | BSB | BSB text |
+| Abel (Genesis 4:10); Zechariah son of Jehoiada stoned in the temple court (2 Chronicles 24:20-22); Zechariah son of Berechiah the prophet (Zechariah 1:1); Luke 11:51 | 29-36 | BSB | BSB text |
+| Chronicles last in the usual Hebrew order, so Abel to Zechariah is first to last; whether the order was fixed then is debated | 29-36 | Commentaries; McDonald and Gallagher on the debate | Search: blueletterbible.org (Stewart); biblestudytools.com CSB apologetics on 23:35; cambridge.org NTS "Blood from Abel to Zechariah". The debate stated; no names |
+| Jerome, Commentary on Matthew (around 398): the Gospel used by the Nazarenes read "son of Joiada" | 29-36 | Jerome on 23:35 | Search: turretinfan.blogspot.com (translation); openbible.com commentaries 23:35; biblestudytools.com Gill. Paraphrased; the year from the earlier ledger (Jerome 398) |
+| "Son of Berechiah" missing from the first hand of one major manuscript (Sinaiticus) | 29-36 | Repository chapter note (`text`) | Repository; manuscript not named on the site |
+| Josephus, Jewish War 4.343: Zacharias son of Baris (Baruch) killed by Zealots "in the middle of the temple"; most reject the identification | 29-36 | Josephus | Search: lexundria.com j_bj 4.343 and 4.335 (Whiston); josephus.org. No year given on the site ("during the war with Rome") |
+| Guilt not inherited: Deuteronomy 24:16; Ezekiel 18:20 | 29-36 | BSB | BSB text |
+| The "Christ-killers" paragraph and Nostra Aetate 4 ("cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today"); Acts 4:27 | 29-36 | Mark 15 plain note; earlier ledger (Mark 15) | Wording reused word for word except the serial comma |
+| "This generation" the people alive then; many link the judgment to AD 70 (24:2) | 29-36 | BSB; earlier ledger (Mark 13) | Stated as what many readers think |
+| Luke 19:41; Ruth 2:12; Psalm 91:4; Jeremiah 22:5; 12:7; 9:1; Psalm 118:26; Romans 9:2 | 37-39 | BSB | BSB text |
+| Readings of 23:39 (hope of welcome; warning of judgment; both) | 37-39 | Standard positions | Stated as views |
+
+Left out: the Mishnah on Shemaiah, Hillel and Shammai as "fathers"; m. Shevuot
+and Philo on oaths; m. Demai, m. Maaserot, m. Kelim, m. Berakhot 8:2,
+m. Maaser Sheni 5:1; Neusner (1976); the Kidron tombs, Herod's monument at
+David's tomb, the Lives of the Prophets and Jeremias; the Targum of
+Lamentations 2:20 and b. Gittin 57b; Origen and the Protevangelium of James on
+Zechariah the father of John; Montefiore, Chrysostom, Luther, Jules Isaac,
+L. T. Johnson, Garland by name; the Aramaic gnat-camel wordplay; m. Sotah 3:4.
