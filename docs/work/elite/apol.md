@@ -343,3 +343,61 @@ Sources: Lewis, *Mere Christianity* (1952); Schweitzer, *The Quest of the Histor
 ### Next in the ranking
 
 The ten in the audit ranking are done. Next by section 6: item 8's remaining answers, "Is Jesus really the only way to God?", "Are miracles believable?" and "Is faith just wishful thinking?" (they already argue; give them laid-out steps and sources), then item 9.
+
+## 7. The fifth run (2026-11-19): the only way, miracles, wishful thinking
+
+The next three in the ranking (item 8 of section 6), rebuilt in full by the approved pattern: a one-paragraph short answer, the objection at full strength in its defenders' words, the argument laid out with the weight-bearing premise named, the evidence, the strongest reply met, what the argument does not prove, and sources. Slugs, questions, addresses, essay and book links are unchanged. Every claim is in `apol-ledger.md` under "Fifth run". No sentence about James's life is added beyond one use of a confirmed fact (raised without a father, in the wishful-thinking answer). Old recollections that cannot be confirmed were cut; each is listed in the ledger.
+
+### Is Jesus really the only way to God?
+
+The argument in three sentences. Hick's pluralism, stated in his own terms (a Copernican revolution, the Real, transformation "from self-centredness to Reality-centredness", the accident of birth), is answered by a deductive argument from contradiction: the religions make claims about the same matters (the cross, the Messiah) that cannot all be true, so pluralism must tell every believer he has misunderstood his own faith, which Newbigin, D'Costa and Plantinga show is one more exclusive claim. The Christian claim is not that Christians are better but that God acted in history, through one person, so whether it is true is the historical question of the resurrection. The creeds bind that salvation is through Christ alone; how God deals with those who never heard is set out as three views (restrictivist, inclusivist, an opportunity after death), each with its strongest point and hardest question, and left open.
+
+Before: "The philosopher John Hick pressed the objection well: make God the center, and Christianity, Islam, and the rest are planets in orbit... He loved the parable of the blind men and the elephant..." After (set out): "1. The great religions make claims about the same matters that contradict each other... 2. Two claims that contradict each other about the same matter can't both be true. So: At least some of the great religions are mistaken about something they hold central. No view of the religions, the pluralist's included, can call them all true as their own followers understand them."
+
+Words: about 340 before; 2,227 after (with the laid-out arguments, before headings and sources).
+
+Sources: Hick 1973 and 1989 (the best book against); D'Costa 1996; Hick's reply 1997; Plantinga 1995; Newbigin 1989; Sanders 1992; Sanders, Fackre and Nash 1995; Pinnock 1992.
+
+### Are miracles believable?
+
+The argument in three sentences. Hume's case is quoted from the Enquiry itself (the wise man, the definition, the maxim, the four points of Part II, the Abbé Paris, the frost) and laid out as he gives it; its first premise is granted and the weight placed on the second. That premise is circular if read strictly (Lewis), and read as probability it fails the test of probability (Earman, with Babbage on independent witnesses, and Kopf and Millican's replies given fairly), while the word violation assumes what is in question (Hume's own Indian prince; Lewis's drawer). The prior probability of a miracle depends on whether there is a God and a reason for him to act, so no rule laid down in advance can settle it, and the question goes back to the God and resurrection pages; "ignorant and barbarous nations" is met with Keener's reports from the Global South.
+
+Before: "John Earman, no apologist, called this circular in Hume's Abject Failure (Oxford, 2000)." After: "The first is a circle... C. S. Lewis put it plainly in Miracles (1947)... That is the second problem. John Earman... examined the essay with the mathematics of probability worked out by Hume's own contemporaries, Thomas Bayes and Richard Price."
+
+Words: about 330 before; 2,046 after.
+
+Sources: Hume 1748 (the best case against); Lewis 1947; Earman 2000; Kopf 2005; Babbage 1837; Keener 2011; Wright 2003.
+
+### Is faith just wishful thinking?
+
+The argument in three sentences. Feuerbach, Marx (quoted) and Freud (quoted) are stated at full strength, and the Bible's own attack on wish-religion (Jeremiah 6:14) is conceded first. Freud's argument, laid out, fails on Freud's own concessions ("Illusions need not necessarily be false"; truth-value outside "the scope of the present enquiry"), and its stronger debunking form presupposes that God does not exist (Plantinga, with Augustine's restless heart); an argument from parity (Nagel's "I want atheism to be true", Vitz's reversal of Freud) shows the motive question cuts both ways and settles neither. The content of the faith fits the wish account poorly (Isaiah 6, Hebrews 10:31, the cross, love of enemies), and the debunking reply needs a complete explanation and no other evidence, neither of which has been shown.
+
+Before: "I ran the projection test on everyone but myself. For years I told myself I had followed the evidence into the cold..." (cut: a recollection that cannot be confirmed). After: "I was raised without a father, so I can't read either theory as a stranger to it. On Freud's account, any faith I hold is the obvious wish of a fatherless boy. On Vitz's account, unbelief in a man like me would be just as easy to explain."
+
+Words: about 330 before; 1,993 after.
+
+Sources: Feuerbach 1841; Marx 1844; Freud 1927 (the best book against); Nagel 1997; Vitz 1999; Plantinga 2000; Augustine, Confessions (Chadwick).
+
+### What I ran, and what passed
+
+- Merged the latest `origin/claude/todo-implementation-hhp4bm` before starting. Search index and passage index rebuilt (20 chapter files).
+- `pnpm check`: pass. All 36 content-gate commands in `ci.yml`: pass. `pnpm test`: 146 files passed, 7 skipped; 1,651 tests passed, 73 skipped. ESLint on the changed source files: clean. `hq.test.tsx` names the twelve argued answers.
+- `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (35 Honest Answer pages), `pnpm run audit:canonicals` (0 failures): pass.
+- Screenshots at 390 x 844 and 1440 x 900, day and night, in `/home/user/elite-shots/apol/` (`only-way-*`, `miracles-*`, `wishful-*`, each with `-argument` and `-sources`). No horizontal overflow.
+- Lighthouse (three runs, median, `serve-like-vercel.mjs`): all three answers performance 84, accessibility 100, best practices 96, SEO 100, CLS 0.000, LCP 4.6 s. The same as the earlier argued answers; no worse. The cheap ideas from the second run (`content-visibility: auto` on later parts, or prerendering only the short answer and contents) still stand and were not built.
+
+### Not verified
+
+- A real phone, Safari, or a screen reader.
+- Primary texts other than Hume were not opened (the network allows search only): Newbigin's elephant passage, Plantinga's Madagascar line and Lewis's drawer are paraphrased; the Freud, Nagel, Marx, Lewis and Augustine phrases quoted were matched in search results that quote them, not in the books.
+- Babbage's first-edition year (1837) rests on standard bibliography; the text says "the 1830s".
+- None of the three has been read by James.
+
+### Waits for James
+
+1. The wishful-thinking answer uses "I was raised without a father" once, as a fact, with no feeling or memory attached. Keep it only if you want it there.
+2. Three old first-person sentences were cut because they describe memories or feelings we cannot confirm: "For most of my life I was an atheist ... obscene" (the only-way answer), "I did not lose that argument to a better argument..." (miracles), and the old third paragraph of the wishful-thinking answer ("For years I told myself..."). If any of them is true as written, they can go back.
+
+### Next in the ranking
+
+Section 6, item 9: the remaining apologetic answers, in this order: "Can you be good without God?", "Is believing anything on faith irrational?", "Did God command genocide in the Old Testament?", "Why didn't the Bible just ban slavery?", "What did the New Atheists get right?", "Can a life mean anything without God?", "What do Christianity and Islam actually dispute?", "What makes us human in the age of AI?".
