@@ -1859,3 +1859,37 @@ Memra; Origen's Bethabara and Riesner's Batanea; Dodd by name; the Caesarea
 inscription on Nazareth; the size of Nazareth; Genesis Rabbah 68:12; the
 "seven days" reading; the "hymn" and chiasm theories; every scholar in the
 deep note by name.
+
+## The plain notes on John 2 (2026-11-19)
+
+`client/public/bible/notes/john/plain/2.json`. 5 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Samson's feast of seven days; Psalm 104:15; Proverbs 20:1; Ephesians 5:18 | 1-5 | BSB | BSB text |
+| Weddings lasted days; running out of wine a shame on the family; wine usually mixed with water | 1-5 | Background summaries | Search: wedding customs results (towerofadam.substack.com; kentwest.blogspot.com; logos sermons); kept general |
+| "Woman" a polite address (NET note: Jesus' normal polite way of addressing women; Robertson: no censure); 4:21, 20:15, 19:26 | 1-5 | NET Bible note on John 2:4; Robertson's Word Pictures | Search: biblia.com NET note; biblestudytools.com Robertson; tips.translation.bible |
+| "What to me and to you" a Semitic idiom setting a request aside; 2 Samuel 16:10 in the BSB | 1-5 | NET note; BSB | Search as above; BSB text |
+| Isaiah 62:5; 3:29 | 1-5 | BSB | BSB text |
+| Catholic and Orthodox see Mary as bringing needs to her Son; many Protestants stress the distance | 1-5 | Repository chapter note (`interpretation`, `teach.pitfalls`) | Repository; stated as how traditions weigh it, no names |
+| Stone vessels found widely; believed not to contract impurity; Mishnah Kelim 10:1 (written down around 200); Leviticus 11:33 | 6-11 | Mishnah; archaeology | Search: intertextual.bible John 2:6 and m. Kelim 10:1; library.biblicalarchaeology.org "Pure garbage"; livescience.com (Adler) |
+| Twenty to thirty gallons each (BSB); six jars 120 to 180 gallons | 6-11 | BSB; arithmetic | BSB text |
+| Amos 9:13; Joel 3:18; Isaiah 25:6 | 6-11 | BSB | BSB text |
+| Unfermented-juice reading held by some; oinos taken by most as wine | 6-11 | Commentaries | Search: wine results (creationmoments.com; bereanbiblechurch.org; biblereflection.org); repository `teach.pitfalls`. No century given |
+| Care line on alcohol: no number given; "someone you trust", "a doctor or a recovery group" | 6-11 | Repository `teach.pastoral` | Written for this note |
+| Doves for the poor (Leviticus 12:8); half shekel (Exodus 30:13); Tyrian shekels; the outer court open to Gentiles | 12-17 | BSB; earlier ledger (Mark 7, Mark 11) | Earlier ledger |
+| No one said to be struck; whip used on the animals | 12-17 | BSB 2:15 | BSB text |
+| Psalm 69:9 "has consumed"; John's future "will consume"; many read it as pointing to the cross; Malachi 3:1 | 12-17 | Commentaries; BSB | Search: biblehub.com John 2:17 commentaries (Ellicott, Meyer); old-tips.translation.bible Ps 69:9. Zechariah 14:21 not used |
+| Temple action early or late; one event or two | 12-17 | Mark 11 and Matthew 21 notes | Same wording; Mark 11:17 "a den of robbers" BSB |
+| Josephus, Antiquities 15.380: Herod began rebuilding in his eighteenth year, about 20/19 BC; forty-six years about AD 27/28; work continued long after | 18-22 | Josephus; NET note on John 2:20 | Search: biblia.com NET note; openbible.com commentaries; posenlibrary.com |
+| Hieron (2:14-15) and naos (2:19-21) | 18-22 | Greek text in the repository | Script |
+| 1 Kings 8:11; Mark 14:58; Mark 15:29; Psalm 16:10; Acts 2:24, 27-31; 10:18; 12:16; 14:26 | 18-22 | BSB | BSB text |
+| Pisteuō in 2:23 and 2:24 | 23-25 | Greek text in the repository | Script |
+| 1 Samuel 16:7; Jeremiah 17:9-10; 3:1 | 23-25 | BSB | BSB text |
+
+Left out: the metrētēs in litres; Kafr Kanna and Khirbet Qana in this note
+(on the book page's map); the Reina workshop; Pausanias and Dionysus; Hume;
+Augustine's six ages; Veronese and the Louvre; the Zechariah 14:21 wordplay;
+m. Shekalim 1:3; m. Keritot 1:7; Tosefta Ketubbot; the Royal Stoa; Sanders
+and Fredriksen by name; the brothers of Jesus (three readings are in the
+Mark 3 note).
