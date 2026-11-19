@@ -402,13 +402,18 @@
           "18:35",
           "19:1"
         ],
+        "label": {
+          "dx": 10,
+          "dy": 4,
+          "anchor": "start"
+        },
         "line": "An oasis town near the Jordan, the last stop before the climb to Jerusalem. A blind man is healed and Zacchaeus climbs a tree here (19:1-10)."
       },
       {
         "id": "emmaus",
         "name": "Emmaus",
         "lat": 31.83,
-        "lon": 35.06,
+        "lon": 35.04,
         "refs": [
           "24:13"
         ],
@@ -432,9 +437,9 @@
           "24:52"
         ],
         "label": {
-          "dx": -10,
-          "dy": -8,
-          "anchor": "end"
+          "dx": 3,
+          "dy": -16,
+          "anchor": "middle"
         },
         "line": "The city of the temple, where the book begins and ends. Jesus sets his face toward it (9:51), weeps over it, dies outside its walls and rises."
       },
