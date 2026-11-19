@@ -903,3 +903,51 @@ date; Augustine and Tertullian by name; Hengel, Bornkamm, Held, Allison,
 Simpson, Warfield, Levine, Strauss; Tobit 4:3 and the Mishnah on the Shema;
 the Kursi details beyond the Mark 5 note; Menippus, Philodemus and Meleager;
 the Roman Missal's 1973 wording is in this ledger only.
+
+## The plain notes on Matthew 9 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/9.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 2 and 5; Matthew's book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Blasphemy a grave crime; the trial charge | 1-8 | Leviticus 24:16; Matthew 26:65 | BSB text |
+| Sickness assumed to come from sin; John 9:2-3 | 1-8 | Earlier ledger (Mark 2); BSB | BSB text. The Talmud (Shabbat 55a) in the deep note not used |
+| Binding and loosing | 1-8 | Matthew 16:19; 18:18 | BSB text. Given as "some readers think" |
+| Capernaum near the border of Antipas and Philip; most likely a toll collector for Antipas; collectors' bad name | 9-13 | Earlier ledger (Mark 2) | Earlier ledger |
+| "Collect no more than you are authorized" | 9-13 | Luke 3:13 | BSB text |
+| Mishnah Nedarim 3:4 (written down around 200): a vow may be made to murderers, robbers and tax collectors to protect one's goods | 9-13 | Mishnah | Search: mishnah.org Nedarim 3:4; heurist.huma-num.fr (Judaism and Rome) record 1318. Paraphrased, marked as later. Tohorot 7:6 (deep note) could not be found and is not used |
+| Levi in Mark 2:14 and Luke 5:27; "Matthew the tax collector" (10:3); the church linked the Gospel to him from early in the second century | 9-13 | BSB; Papias via Eusebius 3.39.16 | Earlier ledger (Matthew's book page) |
+| Pharisees devoted to the Law in daily life and popular | 9-13 | Josephus, Antiquities 18.15-17 | Earlier ledger (Mark 12) |
+| Antisthenes, blamed for bad company, said physicians attend the sick without catching the fever | 9-13 | Diogenes Laertius, Lives of the Eminent Philosophers, book 6 (Life of Antisthenes) | Search: penelope.uchicago.edu (Hicks, Loeb); fordham.edu (Yonge). Paraphrased; no section number or date given on the site |
+| Hosea 6:4, 6:6; 1 Samuel 15:22; Micah 6:8; Matthew 12:7; only Matthew quotes Hosea 6:6 | 9-13 | BSB | BSB text; Mark, Luke and John checked by script for the words "mercy, not sacrifice" (none) |
+| Hesed: loyal love, kindness | 9-13 | Standard lexicons | Search (with the next entry): sichaconversation.org "I desire hesed" |
+| Avot de-Rabbi Natan 4: Yohanan ben Zakkai, seeing the ruined temple with Rabbi Joshua, cites Hosea 6:6: deeds of loving-kindness atone as the sacrifices did | 9-13 | Avot de-Rabbi Natan (later than the Gospels) | Search: sefaria.org sheets; newworldencyclopedia.org "Yochanan ben Zakai"; jewishideas.org. Paraphrased and marked as written down long after |
+| Ezekiel 18:23 | 9-13 | BSB | BSB text. Sanders, Neusner, Dunn and Levine (deep note) not named |
+| One commanded fast; Zechariah's four fasts; "I fast twice a week"; John in prison | 14-17 | Leviticus 16:29; Zechariah 8:19; Luke 18:12; Matthew 4:12 | BSB text; earlier ledger (Mark 2) |
+| Samson's feast seven days | 14-17 | Judges 14:12 | BSB text |
+| Patches and wineskins | 14-17 | Earlier ledger (Mark 2 note) | Common knowledge, kept general |
+| Didache 8.1 (around AD 100): fast on Wednesday and Friday | 14-17 | Didache | Search: cts.perseids.org Didache 8.1; bc.edu Didache 8-10; posenlibrary.com. Its "hypocrites" and their days not mentioned |
+| "Both are preserved" only in Matthew in modern Bibles | 14-17 | Matthew 9:17; Mark 2:22; Luke 5:38 | BSB text (later copies of Luke 5:38 add it, so the site says "in modern Bibles") |
+| Leviticus 15:25-27; uncleanness not sin; scholars debate how far it cut her off; Matthew silent on impurity | 18-26 | Earlier ledger (Mark 5) | Earlier ledger; BSB |
+| Tassels: Numbers 15:38-39; 14:36 | 18-26 | BSB; kraspedon (earlier ledger, Mark 6) | BSB text |
+| Mishnah Ketubot 4:4: two flutes and one wailing woman | 18-26 | Earlier ledger (Mark 5) | Earlier ledger |
+| Josephus: at the false report of his death (Jewish War 3.437), many in Jerusalem hired pipers to lead their laments | 18-26 | Josephus, Jewish War 3.432-437 | Search: lexundria.com j_bj 3.437 (Whiston); gutenberg.org Wars of the Jews. Paraphrased; no year given on the site |
+| Daniel 12:2; 1 Kings 17:21-22; 2 Kings 4:32-37 | 18-26 | BSB | BSB text |
+| Mark 5:23, 35: "near death", then messengers | 18-26 | BSB | BSB text |
+| Augustine, Harmony of the Gospels 2.28: Matthew, by brevity, gives the father's mind and purpose; the substance the same | 18-26 | Augustine | Search: ccel.org NPNF vol. 6, book 2 ch. 28; lectionarycentral.com; bkv.unifr.ch. Paraphrased; no date given. Licona and Held (deep note) not named |
+| 2 Samuel 7:13; "the son of David" 1:1; Son of David most in Matthew | 27-31 | BSB; earlier ledger (Matthew's book page) | BSB text; script |
+| Two blind men at Jericho against Bartimaeus | 27-31 | Matthew 20:30; Mark 10:46 | BSB text |
+| Isaiah 35:5-6; Matthew 11:4-5 | 27-31 | BSB | BSB text |
+| Kōphos "blunted", deaf or mute or both | 32-34 | Strong's and Thayer's (G2974) | Search: biblehub.com 2974; blueletterbible.org G2974 |
+| Justin Martyr, Dialogue with Trypho 69: Jesus called a magician and a deceiver of the people | 32-34 | Justin | Search: logoslibrary.org trypho/069; newadvent.org; bkv.unifr.ch. Paraphrased. The Talmud (Sanhedrin 43a) not used |
+| Mute healed with no demon named; the demon-possessed listed apart; 12:24-32 | 32-34 | Matthew 15:30-31; 4:24; 12:24 | BSB text |
+| 4:23 and 9:35 nearly identical; ten miracles in chapters 8 and 9 | 35-38 | BSB; count of the stories | BSB text |
+| Splanchnizomai from splanchna, the inward parts | 35-38 | Standard lexicons (G4697) | Lexicon fact; Greek text in the repository |
+| Numbers 27:17; Ezekiel 34:5, 15, 23 | 35-38 | BSB | BSB text |
+
+Left out: the Mishnah on toll collectors' houses (Tohorot 7:6, not found);
+the Talmud on sickness and sin, and Sanhedrin 43a; the Theodotus inscription;
+Neusner, Sanders, Dunn, Levine, Haber, Licona, Held, Strauss by name; the
+Didache's "hypocrites"; the textual notes on 9:14 and 9:34 (all in the deep
+note, not needed); John 4:35.
