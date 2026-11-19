@@ -468,3 +468,70 @@ Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date)
 ### Next in the ranking
 
 "Why didn't the Bible just ban slavery?", then "What did the New Atheists get right?", "Can a life mean anything without God?", "What do Christianity and Islam actually dispute?", "What makes us human in the age of AI?".
+
+## 9. The seventh run (2026-11-19): a repair, slavery, the New Atheists, meaning
+
+### Repair: "Did God command genocide in the Old Testament?"
+
+The sixth run took Rauser's premises from a course slide and Morriston's from a blog summary. Two more searches still did not reach either article or its abstract in the authors' own words (the journal host, Morriston's own page and the society's blog do not resolve from here); one result described Rauser's abstract as concluding that God did not command the genocide. So the answer now names the 2009 symposium as where the objection is argued, says only that Morriston "pressed it there" and that Rauser "concluded that God did not give these commands", states the objection "in my words and not theirs", and labels the laid-out argument "my own summary of the objection argued in the 2009 symposium". The sentence "Morriston argued that a Christian ... can't easily deny the first premise" now makes that point in the site's own voice. Ledger rows updated.
+
+### Why didn't the Bible just ban slavery?
+
+The argument in three sentences. The hard texts are quoted plainly (Leviticus 25:44-46, Exodus 21:20-21, Ephesians 6:5), the objection is given with Avalos's charge that scholars still excuse them, and the history is conceded by name and word: Whitefield, Edwards, Furman in 1822, Stringfellow quoted, the Southern Baptist founding at Augusta in 1845 and its 1995 repentance, with "I'm a Baptist pastor" as the one fact about James. The distinction between Israelite debt servants and foreign slaves held for life is set out fairly (Chirichigno), including where it fails, and then the abolitionists' case is laid out as an argument from the Bible's own premises (image of God, Leviticus 25:42, Galatians 3:28 with Philemon 16, Exodus 21:16 and 1 Timothy 1:10), with Gregory of Nyssa, Hart, Wilberforce and Douglass's appendix quoted exactly. Noll's account of why the proslavery reading looked so plausible is given in full, the church is denied any bow, and the question why there was no plain prohibition is left standing, with Matthew 19:8 offered and Avalos's answer to it heard.
+
+Before: "I used to play this as a trump card, and I had confused ending the game with finding the truth." (cut: a recollection). After: "I'm a Baptist pastor, so I don't get to tell this story from a safe distance."
+
+Words: 342 before; 2,253 after.
+
+Sources: Douglass 1845; Stringfellow in *Cotton Is King* 1860; Gregory of Nyssa (Hall and Moriarty 1993); Hart 2001; Chirichigno 1993; Noll 2006; Avalos 2011 (the best book against).
+
+### What did the New Atheists get right?
+
+The argument in three sentences. Four things are granted with dates and names: abuse and its cover-up (the 2010 legal effort against Benedict XVI, and the 2022 Guidepost report on the Southern Baptist Executive Committee), violence in God's name (Harris after September 11; Mystic, 1637), faith as "blind trust" where believers hold it, and Dennett's point that religion can be studied. Their claims are separated (harm, evidence, God), and Dawkins's improbability argument is laid out in the site's own summary with its weight on the second premise. Its weakness is shown through unbelieving and non-Christian critics, Nagel (an atheist), Ruse (a nonbeliever) and Eagleton, all paraphrased; the harm argument is met as the genetic fallacy with the fair atheist reply about the godless states granted; and both sides are judged by Matthew 7:20.
+
+Before: "I owned the books. I read Dawkins and Hitchens and Harris and Dennett the way a soldier reads dispatches..." (cut: a recollection). After: "I came to faith from atheism, so I owe their side the fairest hearing I can give, and on these four counts the fair verdict is that they were right."
+
+Words: 350 before; 1,786 after.
+
+Sources: Harris 2004; Dawkins 2006 (the best book against); Dennett 2006; Hitchens 2007; Nagel 2006; Eagleton 2006; Ruse 2009.
+
+### Can a life mean anything without God?
+
+The argument in three sentences. It concedes that unbelievers live meaningful lives and states the secular accounts at strength (Camus, Sartre's 1945 lecture, Nagel's "The Absurd" quoted, Wolf's "subjective attraction meets objective attractiveness" quoted), then separates meaning in a life from the meaning of life. An inference to the best explanation, its first premise credited to Wolf's account and the rest marked as the site's, argues that the worth meaning claims is better explained by a good God than by invented or ungrounded value; Russell's 1903 long view and Tolstoy's question are set beside Nagel's reply, and Ecclesiastes 1:2 and 3:11 and 1 Corinthians 15:58 show the Bible facing the same question. Nagel's reply is granted in part, the argument is said not to prove God or to make any unbeliever's life empty, and the last part speaks to a reader in the dark with the site's help wording copied word for word.
+
+Before: "I made my own for years, and it was good, right up until it was not, on a night when I was the thing that had broken..." (cut: a recollection, crisis-adjacent). After: "If that's where you are, the feeling that nothing matters is real and it is common, and it is not the truth about you."
+
+Words: 354 before; 1,720 after. The old answer's mention of Camus on suicide and Tolstoy's rope were cut (no specifics of self-harm).
+
+Sources: Tolstoy 1882; Russell 1903; Camus 1942 (O'Brien 1955); Sartre 1945 (Macomber 2007); Nagel 1971; Wolf 2010 (the best case for meaning without God).
+
+### What I ran, and what passed (seventh run)
+
+Merged the latest `claude/todo-implementation-hhp4bm` first (already up to date). One heavy command at a time, each watched to the end:
+
+- `pnpm check`: exit 0.
+- All 36 commands of the content-gates step in `ci.yml`, one at a time, after rebuilding the search index (730 entries) and the passage index (14 chapter files rewritten): every one exit 0.
+- `pnpm test`: first run 1 failure (the hq test's list of argued answers, where the slavery slug was out of sorted order); fixed; second run exit 0: 146 test files passed, 7 skipped; 1,651 tests passed, 73 skipped.
+- ESLint on `answers.ts` and `hq.test.tsx`: clean.
+- `pnpm build`, `pnpm run sitemap` (static fallback, no database), `pnpm run prerender` (3,026 route files), `pnpm run audit:canonicals` (0 not prerendered, 0 failures): each exit 0.
+- Served with `scripts/serve-like-vercel.mjs` on port 4585, API stubbed, Playwright at 390 x 844 and 1440 x 900, day and night, on the three new answers and the repaired one: scroll width equals the viewport on all sixteen views, every section heading, the laid-out arguments and the source lists render. Screenshots: `/home/user/elite-shots/apol/run8-*`. Server stopped, `dist/` deleted.
+- Not run: Lighthouse.
+
+### Not verified (seventh run)
+
+- No primary page could be opened this run (every non-GitHub host failed to resolve). Quotations not already in an essay ledger (Wolf, Nagel's "The Absurd", Camus's last line, Sartre's three words, Russell's fragment, Tolstoy's question) were matched in search results that reproduce them, not in the books.
+- Gregory of Nyssa is paraphrased, not quoted: no named translation's wording was seen.
+- The 1995 SBC resolution and Furman's 1822 letter are paraphrased: their exact sentences were not seen.
+- Eagleton's well-known "Book of British Birds" sentence could not be found and is not used; the Ruse blurb ("embarrassed to be an atheist") is not used because his own wording differed.
+- Morriston's and Rauser's articles are still unread.
+- No answer has been read by James.
+
+### Waits for James (seventh run)
+
+1. "I'm a Baptist pastor" (slavery), "I came to faith from atheism" (New Atheists) and "I was an atheist" (meaning, the old answer's own words) are each used once, as facts, with nothing added.
+2. Cut because they describe memories or feelings we can't confirm: "I used to play this as a trump card" and "I wanted a God who would have said the four words" (slavery); "I owned the books ... followed all four Horsemen off a cliff" and "They were right about the church I was leaving ... I cheered" (New Atheists); "I built real meaning out of love and craft and loyalty", "I made my own for years ... on a night when I was the thing that had broken" (meaning). If any is true as written, it can go back.
+3. The slavery answer sets the "hardness of heart" reading beside Avalos's objection to it and doesn't settle between them.
+
+### Next in the ranking
+
+"What do Christianity and Islam actually dispute?", then "What makes us human in the age of AI?".
