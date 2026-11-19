@@ -5056,3 +5056,30 @@ Left out: a date for Saul's call (the book page's "the 30s, exact years
 unknown" stands); Stendahl by name; how Aretas came to control Damascus
 (Caligula's grant, the Jewish quarter: debated, not stated); Straight Street
 traced today; Jerome Murphy-O'Connor.
+
+## The plain notes on Acts 10 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/10.json`. 2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Caesarea built by Herod the Great, named for Augustus, mostly Gentile, the governors' seat | 1-8 | Deep note `historical`; earlier ledger (Acts book page) | Repository. The temple to Rome and Augustus and emperor worship there not stated |
+| Centurion: officer over about a hundred men, often fewer | 1-8 | Deep note `historical`; earlier ledger (Matthew 8) | Common knowledge |
+| An inscription (from Carnuntum) names an optio of cohors II Italica serving in Syria around AD 69-70; whether the unit was at Caesarea earlier is not known, scholars differ | 1-8 | Inscription (CIL 3.13483a as cited) | Search: Wikipedia "Cohors II Italica Civium Romanorum"; armyofromanpalestine.com; czasopisma.uksw.edu.pl (Gawroński on Speidel). Find-place not named in the note |
+| God-fearers: Gentiles who worshipped Israel's God without circumcision; the Aphrodisias inscription, probably third century, lists "God-fearers" among donors to the Jewish community; how far it matches Luke's use is debated | 1-8 | Inscription; reference works | Search: cojs.org "Aphrodisias inscription, 3rd century CE" and Tannenbaum, BAR 12.5 (1986); Wikipedia "Godfearer". Kraabel not named |
+| Luke 7:5; the ninth hour and afternoon sacrifice (earlier ledger, Acts 3); Leviticus 2:2 memorial portion; Isaiah 56:7; 1 Samuel 16:7 | 1-8 | BSB; earlier ledger | Repository |
+| Leviticus 11 (clean and unclean; pigs); Leviticus 20:25-26; Daniel 1:8; Ezekiel 4:14; koinos "common" | 9-16 | BSB; deep note `words` | Repository |
+| Many Jews keep the food laws today | 9-16 | Common knowledge | Stated plainly, with respect |
+| John 21:17 (three times); Acts 11:12 (six brothers); Deuteronomy 19:15; Exodus 23:9 | 9-23 | BSB | Repository |
+| Peter's vision read mainly about people (10:28; 15:9), the food question following: Mark 7:19 "(Thus all foods are clean.)"; Romans 14:20; Romans 14; Jewish believers who keep the food laws; 21:20 | 9-16 | BSB; deep note `cultural` | Repository; no side taken on Jewish believers' practice |
+| The Law nowhere forbids entering a Gentile house; many devout Jews avoided eating in Gentile homes (food, idols); practice varied | 24-33 | Deep note `cultural` | Stated with "many" and "varied" |
+| Exodus 20:3; Genesis 12:3; Jonah 1:3; 4:11; Matthew 16:17; Acts 14:14-15 | 24-33 | BSB | Repository |
+| Prosōpolēmptēs "receiving a face"; Deuteronomy 10:17; Isaiah 61:1; Luke 4:18; Deuteronomy 21:23; Galatians 3:13; 11:14 | 34-43 | Deep note `words`; BSB | Repository |
+| "They put Him to death" (10:39): pointer to the 2:22-28 note | 34-43 | Acts 2 plain note | Repository wording |
+| Those who never heard: pointer to the Honest Answer | 34-43 | answers.ts | Repository; no side taken |
+| Spirit before baptism; 2:38; 8:14-17; 19:5-6; 15:8; pointer to "What Acts is not" | 44-48 | BSB; book page | Repository |
+| Joel 2:28; Psalm 22:27; Isaiah 49:6 | 44-48 | BSB | Repository |
+
+Left out: Kraabel's view that Luke invented the God-fearers (named only as
+"scholars debate"); the date of the Cornelius episode; the temple of Rome
+and Augustus at Caesarea; Jubilees on eating with Gentiles.
