@@ -5083,3 +5083,26 @@ traced today; Jerome Murphy-O'Connor.
 Left out: Kraabel's view that Luke invented the God-fearers (named only as
 "scholars debate"); the date of the Cornelius episode; the temple of Rome
 and Augustus at Caesarea; Jubilees on eating with Gentiles.
+
+## The plain notes on Acts 11 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/11.json`. 2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The circumcised believers" are Jewish believers; table fellowship meant belonging; Galatians 2:12 | 1-10 | BSB; deep note `cultural` | Repository |
+| Leviticus 20:26; Isaiah 2:2-3; Acts 1:5; Ezekiel 18:32; Psalm 67:2 | 1-18 | BSB | Repository |
+| Antioch near Antakya, founded around 300 BC by Seleucus I, one of Alexander's successors; capital of the Roman province of Syria | 19-24 | Reference works | Search: Britannica "Antioch"; worldhistory.org "Antiochia"; Wikipedia "Antioch". "Third city of the empire" and the size of its Jewish community not stated (not confirmed) |
+| Phoenicia (Tyre and Sidon); Cyprus Barnabas's home (4:36); Cyrene in Libya | 19-24 | Deep note `historical`; BSB | Repository |
+| "Lord" a title for gods and the emperor in Greek use | 19-24 | Deep note `christ` | Common knowledge |
+| Zechariah 8:23; Ezra 7:6 | 19-24 | BSB | Repository |
+| "Christians": Latin-style ending for followers of a leader (Herodians, Mark 3:6); most think outsiders coined it at Antioch; whether in mockery not known; three times in the New Testament (11:26; 26:28; 1 Peter 4:16) | 25-26 | Bible dictionaries; commentaries | Search: biblegateway Encyclopedia of the Bible "Christian"; biblehub commentaries on 11:26; biblicaltraining.org "Christian". Tacitus's wording not used |
+| 2 Samuel 7:16; Psalm 2:2; Isaiah 62:2 ("Christians have often seen a hint", not claimed for Luke) | 25-26 | BSB | Repository |
+| Agabus (21:10-11); Claudius 41 to 54; famine in Judea in the mid-40s, Helena of Adiabene's grain and figs; exact years uncertain | 27-30 | Josephus, Antiquities 20.51-53, 101 | Earlier ledger (Acts book page) |
+| Elders in Jewish towns and synagogues | 27-30 | Deep note `cultural` | Stated generally |
+| The famine visit and Galatians 2:1-10 (or Acts 15): views, no side; Galatians 2:10 | 27-30 | Book page part "Acts and Paul's letters" | Repository |
+| Deuteronomy 15:11; Genesis 41:57; Romans 15:27 | 27-30 | BSB | Repository |
+
+Left out: "the third city of the empire"; the size of Antioch's Jewish
+community; the 11:20 "Greeks" or "Hellenists" reading (not searched); the
+name as a parallel to Nero's Augustiani; Tacitus on the name.
