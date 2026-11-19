@@ -338,3 +338,32 @@ No sentence about James's life is added. Old first-person recollections that cou
 | 1 Peter 3:19, 4:6; Hebrews 9:27; Acts 17:28; Surah 4:157 | Cited by reference, not quoted | Checked against the passages' content |
 
 Cut from the old answer: "For most of my life I was an atheist, and of all the church's claims I found this one not merely improbable but obscene" ("most of my life" and the feeling are not confirmed); "I once thought pluralism was the humble position" (a recollection); "He loved the parable of the blind men and the elephant" (Hick's fondness for it not checked); "forty years a missionary in India" (corrected to the dates). Kept from the old answer in its own words: the grandmother's face, Peter "a fisherman on trial", "in a person you can only receive, and in no philosophy or bloodline", "Everybody at the table is making an exclusive claim. What's left to ask is which one is true.", "Refuse him if you must, but refuse him for being too particular".
+
+## Are miracles believable?
+
+6 searches. Hume's text: Project Gutenberg #9662 (*An Enquiry Concerning Human Understanding*, Selby-Bigge text), cloned from GITenberg on GitHub on 2026-11-19 and read with grep; paragraph numbers are Selby-Bigge's.
+
+| Claim | How verified | Result |
+|---|---|---|
+| "Of Miracles", 1748, Section X of what became the *Enquiry* | did-the-resurrection-happen ledger (EB1911 for the year); Hume text contents | Verified |
+| "A wise man, therefore, proportions his belief to the evidence." (§87) | Hume text, line 3408 | Verified, quoted |
+| "A miracle is a violation of the laws of nature; and as a firm and unalterable experience has established these laws, the proof against a miracle, from the very nature of the fact, is as entire as any argument from experience can possibly be imagined." (§90) | Hume text, lines 3543-3546 | Verified, quoted |
+| "But it is a miracle, that a dead man should come to life; because that has never been observed in any age or country." (§90) | Hume text, lines 3554-3556 | Verified, quoted |
+| The maxim, "That no testimony is sufficient ... which it endeavours to establish"; "that this person should either deceive or be deceived, or that the fact, which he relates, should really have happened" (§91) | Hume text, lines 3590-3600 | Verified, quoted (the maxim stops before "; and even in that case") |
+| "attested by a sufficient number of men, of such unquestioned good-sense, education, and learning, as to secure us against all delusion in themselves" (§92) | Hume text, lines 3617-3619 | Verified, quoted; the rest paraphrased |
+| Love of wonder (§93); "are observed chiefly to abound among ignorant and barbarous nations" (§94); rival miracles (§95) | Hume text | Verified; §94 quoted, the others paraphrased |
+| The Abbé Paris: "lately" in France, "attested by witnesses of credit and distinction, in a learned age" | Hume text, lines 3858-3867 | Verified, quoted; no year given |
+| "that no human testimony can have such force as to prove a miracle, and make it a just foundation for any such system of religion" (§98) | Hume text, lines 4080-4082 | Verified, quoted |
+| "The Indian prince, who refused to believe the first relations concerning the effects of frost, reasoned justly"; not contrary to experience but not conformable to it (§89 note area) | Hume text, lines 3503-3508 | Verified, quoted and paraphrased |
+| Sagan's slogan "extraordinary claims require extraordinary evidence" | Search: Quote Investigator, Deming (PMC), Wikipedia (popularized by Sagan, *Broca's Brain* 1979) | Verified as his slogan; given without quotation marks or date |
+| Lewis, *Miracles* (1947): "only if we know that all the reports of them are false"; "arguing in a circle"; Hume's defenders reply he meant weighing | Search: Pomona course notes, Larmer in *Faith and Philosophy* (2008), Substack commentary | Verified; the two phrases quoted |
+| Lewis's drawer: six pennies Monday and Tuesday, two on Wednesday after a thief; the laws of England broken, not arithmetic | Search: C. S. Lewis Institute excerpt, TGC excerpt | Verified, paraphrased |
+| Earman, *Hume's Abject Failure* (Oxford, 2000), Pittsburgh; the probability of Bayes and Price; Hume's argument fails | Search: Muse review, Earman's Pittsburgh page, Apologetics315 review | Verified, paraphrased |
+| Babbage, *Ninth Bridgewater Treatise*, chapter 10: enough independent witnesses, each more often right than wrong, outweigh any improbability | Search: Victorian Web text of chapter 10 and appendix E; Earman 1993 | Verified, paraphrased. Year 1837 for the first edition rests on standard bibliography; the text says "the 1830s" |
+| Kopf, "Of Miracles and Evidential Probability: Hume's 'Abject Failure' Vindicated", *Hume Studies* (2005) | Search (same as Earman) | Verified |
+| Millican on how one could know witnesses are independent | Search: Philosophical Disquisitions (2018) summary of Millican | Verified as his objection, paraphrased |
+| Keener, *Miracles* (Baker, 2011), two volumes; hundreds of eyewitness reports, many from Asia, Africa, Latin America | Search: Denver Journal, Themelios, First Things reviews | Verified, paraphrased |
+| Wright, *The Resurrection of the Son of God* (2003) | This ledger (resurrection sources) | Verified |
+| 1 John 4:1 (first sentence), 1 Corinthians 15:14 | Repo ESV quotations | Verified, quoted |
+
+Cut from the old answer: "I did not lose that argument to a better argument. I lost it to the discovery that I had never had one. What I owned was the feeling of finality..." (a recollection that cannot be confirmed); "Earman ... called this circular" (it was Lewis, among others, who called it circular; Earman's case is the probability argument, now stated as such); "a black swan or a meteorite" (not checked as Earman's examples). Kept in its own words: the opening of the short answer, "Most people ... without having heard his name", Paul's verse, "Notice whether your certainty that miracles cannot happen is a conclusion you reasoned to, or a definition you started with" (two contractions added).

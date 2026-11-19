@@ -232,6 +232,7 @@ describe("/answers and /answers/:slug", () => {
   it("keeps the argued form to the answers rebuilt so far, each with checked sources", () => {
     const argued = ANSWERS.filter((a) => a.sections);
     expect(argued.map((a) => a.slug).sort()).toEqual([
+      "are-miracles-believable",
       "did-the-resurrection-actually-happen",
       "do-i-have-to-choose-between-faith-and-science",
       "does-god-actually-exist",
