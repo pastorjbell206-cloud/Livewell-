@@ -5520,3 +5520,27 @@ Left out: the Cypriot magician; Felix's term dates; the claim that releasing pri
 | Innocence verdicts (23:29; 25:25); Isaiah 52:15; Psalm 146:3 | 22-27 | BSB | Repository |
 
 Left out: the number of commanders at Caesarea; Agrippa II as the last Herod to rule; Bernice's marriages beyond "widowed"; Juvenal's words; the dates of the quinquennium; the procedure of appellatio against provocatio.
+
+## The plain notes on Acts 26 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/26.json`. 2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The stretched-out hand as an orator's gesture; the speech's polished Greek | 1-3 | Deep note `cultural` | Repository |
+| Agrippa II's knowledge; oversight of the temple and appointing the high priest (pointer to 25:13-21) | 1-3 | Acts 25 ledger | Earlier ledger |
+| "The Jews" at 26:2, 7 and 21 in the 13:42-47 form with a pointer | 1-3 | acts/plain/13.json | Repository |
+| Psalm 119:46; Genesis 12:3; Isaiah 26:19; Daniel 12:2; 1 Samuel 2:6 | 1-8 | BSB | Repository |
+| "Cast my vote": Sanhedrin member or a figure for approval (8:1); Luke does not say | 9-11 | Deep note `historical` | Stated as readings |
+| Numbers 25:13; Proverbs 14:12 | 9-11 | BSB | Repository |
+| Third telling: pointer to the 9:1-9 note; Ananias not mentioned; commission given on the road (9:15; 22:14-15) | 12-18 | acts/plain/9.json; deep note `hard`, `literary` | Repository |
+| "Kick against the goads": a goad a pointed stick for oxen; a Greek proverb for resisting a power one cannot escape; in Aeschylus (Agamemnon 1624) and Euripides (Bacchae 794-795); only in this telling | 12-18 | Aeschylus; Euripides | Search: openbible.com commentaries 26:14; tips.translation.bible 26:14; patheos "Goads and Gods"; textkit "Euripides in the New Testament". Line numbers not given on the page; Pindar (unconfirmed) not named; no claim that Luke used Euripides |
+| Isaiah 42:6-7; 49:6; Ezekiel 2:1; Jeremiah 1:8; Isaiah 53:11; Psalm 16:10 | 12-23 | BSB | Repository |
+| Greek and Roman views of bodily resurrection; 17:32 | 24-29 | Deep note `cultural` | Repository; stated generally |
+| 26:28: the Greek can be taken more than one way; KJV "Almost thou persuadest me to be a Christian"; "in such a short time" (BSB and many modern Bibles), often heard as dry or mocking; others more serious; no side | 24-29 | Translations; commentaries | Search: biblicaltraining.org "Almost"; biblewise.com "Paul and Agrippa"; Gill and Barnes on 26:28. No side taken |
+| "Christian" three times in the New Testament (11:26; 26:28; 1 Peter 4:16); began as outsiders' word "seems" | 24-29 | BSB; deep note `cultural` | Script over the repository's BSB |
+| 2 Kings 9:11; Isaiah 45:19; Jeremiah 20:9 | 24-29 | BSB | Repository |
+| Innocence verdicts (23:29; 25:25; 26:31); Luke 23:4, 14, 22; the appeal not a mistake (most readers), 23:11 | 30-32 | BSB; deep note `literary` | Repository; stated as most readers |
+| Genesis 50:20; Proverbs 19:21 | 30-32 | BSB | Repository |
+
+Left out: Agrippa raised in Rome; Pindar's use of the proverb; whether Luke knew the Bacchae; the content of Festus's letter.
