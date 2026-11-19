@@ -3361,3 +3361,38 @@ Augustine on Christ's soul; Harnack and Eubank by name; the Diatessaron;
 "in" or "into" your kingdom; the eclipse wording in 23:45; Bezae's stone for
 twenty men; the old saying "one thief was saved, that none may despair"
 (attribution not confirmed).
+
+## The plain notes on Luke 24 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/24.json`. Three searches for this
+chapter, with the earlier ledger (Mark 16; Matthew 28; John 20; Luke's book
+page) and the searches already run for Luke 22 on the "Western
+non-interpolations".
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Women as witnesses: Josephus, Antiquities 4.219; Celsus as reported by Origen; all four Gospels; "Many historians think" (Mark 16 and Matthew 28 wording, word for word) | 1-12 | Earlier ledger (Mark 16) | Earlier ledger |
+| 8:2-3; 23:49, 55-56; 9:22; 18:31-33; lēros at 24:11 ("idle talk") | 1-12 | BSB; Greek text | Repository; script (G3026) |
+| 1 Corinthians 15:4 (Paul in the 50s); Hosea 6:2 ("some readers hear"); Deuteronomy 19:15 | 1-12 | BSB; earlier ledger | Repository |
+| 24:12 omitted by Codex Bezae and some Old Latin; present in P75, Vaticanus and almost all others; Westcott and Hort (1881) bracketed it; most now hold it original | 1-12 | Textual notes | Search: uasvbible.org "Luke 24:12 Is Included"; tips.translation.bible (SIL notes); freely-given.org OBD; bible-researcher.com "Western non-interpolations" (Aland's table) |
+| Differences between the accounts and "What every account agrees on" (Matthew 28 wording) | 1-12 | Matthew 28 plain note | Repository |
+| Cleopas; the companion unnamed; Clopas of John 19:25; Hegesippus via Eusebius: Clopas the brother of Joseph; the link to Luke 24:18 possible, unproven | 13-27 | Reference works | Search: thegospelcoalition.org Themelios "The relatives of Jesus" (Bauckham); biblehub.com 2832; en.wikipedia.org Mary of Clopas; gospelstudies.org.uk EQ 1974. "Possible ... no one can be sure" |
+| Emmaus site unknown; sixty or a hundred and sixty stadia (book page map) | 13-27 | Book page ledger | Earlier ledger |
+| Genesis 3:15; Deuteronomy 18:15; Isaiah 53:5; Psalm 16:10 (Acts 2:27); "Moses and all the Prophets" as the whole Jewish Scriptures | 13-27 | BSB; book page | Repository |
+| Ways Christians link the Old Testament to Christ (prophecy, patterns, the whole story), no side; Jewish reading of the same Scriptures respected, never contempt | 13-27 | Standard positions | Stated as views; written for this passage |
+| Hospitality to travellers; parabiazomai at 24:29 against anagkazō at 14:23 (the Luke 14 note's "a similar strong word"); took, blessed, broke, gave (9:16; 22:19); 24:34 and 22:32 | 28-35 | BSB; Greek text; Luke 14 plain note | Repository; script (G3849, G0315) |
+| Genesis 18:1-8; Hebrews 13:2 (paraphrased); Psalm 119:105; Acts 2:42 | 28-35 | BSB | Repository |
+| Readings of the breaking of the bread (the Supper; an ordinary meal; both); views on Christ's presence pointed to 22:19 | 28-35 | Standard positions | Stated as readings |
+| John 20:19-29 pointer; 1 Corinthians 15:43 (paraphrased "in glory", "in power"); Daniel 12:2; Isaiah 26:19 | 36-43 | BSB | Repository |
+| Visions or faith-language readings named; the creeds confess a bodily resurrection (CLAUDE.md confessional floor) | 36-43 | Standard positions; the site's creeds | Repository |
+| Law, Prophets, Psalms the three parts of the Jewish Bible (book page); repentance (3:3); Acts 1:8; Acts 2; Isaiah 49:6; 2:3; Joel 2:28; Luke 3:6; Romans 1:16 | 44-49 | Book page; BSB | Repository |
+| Bethany a little under two miles from Jerusalem (John 11:18, Mark 11 wording); 19:29; Leviticus 9:22; Numbers 6:24; Psalm 47:5; 1:21-22; 2:10; Acts 1:3, 9, 11 | 50-53 | BSB; earlier ledger | Repository |
+| "And was carried up into heaven" lacking in Codex Bezae, some Old Latin and Codex Sinaiticus; most manuscripts have it; a suggested reason (the forty days of Acts) | 50-53 | Textual notes | Search: bible-researcher.com "Western non-interpolations"; biblicalarchaeology.org "Absent from Codex Sinaiticus"; ehrmanblog.org "Does Luke flat out contradict himself". Which hand of Sinaiticus not stated |
+| Readings of Luke 24 and Acts 1 on the timing (compressed ending; two purposes); the creed's "ascended into heaven ... right hand of the Father" (paraphrased) | 50-53 | Standard positions; the site's creeds | Stated as readings |
+
+Left out: Martin, Snodgrass, Parsons and the SBL Greek New Testament by name;
+"within us" in 24:32; the honeycomb of 24:42; "repentance for" in 24:47;
+"praising and blessing" in 24:53; P75's date of publication (1961); the
+claim that the companion was Cleopas's wife; a list of the passages Jesus
+explained (Luke gives none; the examples are marked as what Christians
+"have often pointed to").
