@@ -5,11 +5,14 @@ James asked (2026-11-19) for a way to explain the whole Bible to young people ag
 ## What is built
 
 - **The map** (`/study/explorer`): one road drawn down the page, from the garden to the city, with a roundel for each of thirteen stops. Every stop is named, placed and summed up in one line at both reading levels, so the whole arc can be read end to end today. A finished stop opens its own page; a stop still being drawn says so and has no link.
-- **Four finished stops**, each with a drawn scene, the story at both levels, "What this shows us about God", one or two verses quoted exactly from the BSB (each opens the site's verse panel), "Read it yourself" (Study Bible chapters), and one activity:
+- **Seven finished stops** (four in the pilot, three added on 2026-11-19), each with a drawn scene, the story at both levels, "What this shows us about God", one or two verses quoted exactly from the BSB (each opens the site's verse panel), "Read it yourself" (Study Bible chapters), and one activity:
   - `/study/explorer/creation`: tap the picture to find the seven days.
   - `/study/explorer/abraham`: match each of God's three promises to where the Bible shows it kept.
   - `/study/explorer/rescue`: put four events of the rescue in order.
   - `/study/explorer/cross`: think, then look (four questions, each answer behind its own button).
+  - `/study/explorer/fall`: "What broke", tap the picture to find four broken relationships (with God, with each other, with ourselves, with the ground), each with its place in Genesis 3 and a line on how God begins to mend it.
+  - `/study/explorer/sinai`: "Walk into the tent", eight numbered marks on a plan of the tabernacle, from the gate of the courtyard to the ark, taken with Next (or tapped); each says what the part was and where the Bible takes it up.
+  - `/study/explorer/land`: "Round and round", the judges' cycle as a wheel stepped round with Next, round again, ending with why the story needs a better king.
 - **Two reading levels**, "Ages 7 to 11" and "Ages 12 to 16" (the Family door's younger and older bands, `lib/familyTable.ts`), one tap, kept on the device. The older level adds the why, an honest hard question with its answer, and links to go deeper (Honest Answers, context guides).
 - **One thread**, "God with his people", lit across the whole map: a solid line where God lives among his people, a broken line where the closeness is lost or waited for (the fall, the exile, the return), and one line with its verse at each of the thirteen stops. Four more threads are named as coming.
 - **"Why we believe"**: two finished cards (The Bible; Jesus, God and man) with a picture, a plain statement at both levels, a quoted verse, the passages it rests on, a question people ask, the stops that teach it, and the family catechism questions that say the same. Eight more are named as coming, without links.
@@ -25,11 +28,11 @@ The site's Bible's Story (`/study/bible/story`, the eleven acts in `client/publi
 | # | Stop | Act | Status |
 |---|---|---|---|
 | 1 | Creation | One | finished |
-| 2 | The Fall | Two | drawing |
+| 2 | The Fall | Two | finished |
 | 3 | Abraham and the Promise | Three | finished |
 | 4 | The Rescue from Egypt | Four (added split) | finished |
-| 5 | Sinai and the Tent | Four (added split) | drawing |
-| 6 | The Land and the Judges | Five | drawing |
+| 5 | Sinai and the Tent | Four (added split) | finished |
+| 6 | The Land and the Judges | Five | finished |
 | 7 | The Kingdom | Six | drawing |
 | 8 | The Prophets and Exile | Seven | drawing |
 | 9 | The Return and the Waiting | Eight ("the Silence" in the storyline; "the Waiting" for a child) | drawing |
@@ -38,7 +41,7 @@ The site's Bible's Story (`/study/bible/story`, the eleven acts in `client/publi
 | 12 | The Church and the Spirit | Ten | drawing |
 | 13 | The New Creation | Eleven | drawing |
 
-## The plan for the nine stops still to draw
+## The plan for the stops still to draw (six now; the first three rows below are finished)
 
 Each needs: a scene (an 800 by 600 drawing in `client/src/pages/explorer/scenes/`, one line in `SCENES` in `parts.tsx`), the story at both levels, God, one or two verses, chapters, an older-level question with its answer and deeper links, a talk prompt, a care line where it touches death, fear or guilt, and one activity. All of it is data in `client/public/explorer/stops/<slug>.json`; only the drawing is code.
 
@@ -152,6 +155,16 @@ The Bible door already lists six rooms (`client/src/lib/siteCatalog.ts`), so Bib
 4. Is he content with the one sentence at the older level of Creation that says Christians read the days of Genesis 1 differently, with the link to the Honest Answer?
 5. Which stops should come next, in what order?
 
+## What was run for the second three (2026-11-19)
+
+- `pnpm check` clean; ESLint on every changed file clean.
+- All 38 commands of the content-gates step in `.github/workflows/ci.yml`: exit 0.
+- `pnpm test`: 147 files passed, 7 skipped (1,698 tests passed, 73 skipped); the Explorer file has 19 tests (each new activity's contract, Next through every finished stop in order, no link to a stop being drawn).
+- `pnpm build`, sitemap, prerender (7 Explorer stop pages), `audit:canonicals`: every audited page canonicalises to itself.
+- On the served build (port 4622): every new activity completed by touch (phone emulation) and by keyboard alone; the map links all three; no console errors; no sideways scroll at 390 or 1440, day and night, both levels.
+- Lighthouse on `/study/explorer/sinai` (median of three): performance 92, accessibility 100, best practices 96, SEO 100, CLS 0.000.
+- Screenshots in `/home/user/elite-shots/explorer/`; `fall-390.png`, `sinai-390.png`, `land-390.png` in `docs/work/elite/explorer-shots/`.
+
 ## What was run (2026-11-19)
 
 - `pnpm check`: clean. ESLint on every changed file: clean.
@@ -161,6 +174,17 @@ The Bible door already lists six rooms (`client/src/lib/siteCatalog.ts`), so Bib
 - On the served build (`scripts/serve-like-vercel.mjs`, port 4621): every activity completed by touch (phone emulation) and by keyboard alone; the level kept across a reload; the thread lit at 13 stops by tap and by Enter; "You are here" after a reload; no sideways scroll at 390 or 1440; no console errors.
 - Lighthouse (`scripts/lighthouse-median.mjs`, three runs, median): `/study/explorer` performance 90, accessibility 100, best practices 96, SEO 100, CLS 0.000; `/study/explorer/rescue` performance 90, accessibility 100, best practices 96, SEO 100, CLS 0.000.
 - Screenshots: `/home/user/elite-shots/explorer/` (every finished stop at 390 and 1440, day and night, both levels); six chosen ones in `docs/work/elite/explorer-shots/`.
+
+## The second three (2026-11-19): the Fall, Sinai and the Tent, the Land and the Judges
+
+- **Shared code changed only where a stop needed it.** The tap activity takes an optional `label` (shown in place of "Day N"), `mend` and `mendRef` per spot, and an optional `finish` line (Creation keeps its own sentence by default). Two new activity kinds in `parts.tsx`: `walk` (numbered marks on the picture, Back a step and Next, the picture is the activity as with tap) and `cycle` (a ring of stages in an ordered list, Next round, then "round again", then where it leads). `validate-explorer.mjs` checks both shapes. The four pilot stops render as before (compared by screenshot).
+- **Wording on the hard places.** The Fall's older level says Christians read some of Genesis 3 differently and names what all confess; no position on a historical Adam's details or the flood's extent. Sinai says at both levels that the law comes after the rescue (Exodus 20:2 before 20:3); on the law for Christians it states what all share and names three ways churches explain it, without a side, and speaks of Jewish practice with respect. The Land's conquest is told briefly with no celebration; the older question reuses the Honest Answer's own sentences and links it. Care lines on the Fall and the Land.
+- **The thread** "God with his people" at Sinai was already right (the tent so that he could dwell among them) and was left as it was.
+- **Ranges** now read "Exodus 19 to 40, and Leviticus" (Sinai) and "Numbers to Ruth" (the Land), as the stops tell them.
+
+## What to draw next
+
+The Kingdom (stop 7) and the Prophets and Exile (stop 8), then Jesus Comes (10), so that Next runs unbroken from Creation to the Cross. Then the Return and the Waiting, the Church and the Spirit, the New Creation.
 
 ## Not done in the pilot
 
