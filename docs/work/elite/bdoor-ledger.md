@@ -4025,3 +4025,36 @@ Cut: the silver's weight in kilograms; Lehmann (1953) and Tucker (1966) on
 the sale's legal form; ‘the only woman in Genesis whose age at death is
 recorded’ (not checked); "al-Khalil" as ‘the friend’ (not confirmed); loud
 public mourning customs; Hebron's distance from Jerusalem.
+
+## The plain notes on Genesis 24 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/24.json`. One web search for this
+chapter, with the book page, the deep note and verse notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The servant never named; Eliezer (15:2) "some readers think" | 1-9 | BSB | Repository |
+| Hand under the thigh usually understood as touching the place of offspring; 47:29 | 1-9 | Repository deep note (`cultural`) | Repository; "usually understood" |
+| Why not a Canaanite wife; 26:34-35; Deuteronomy 7:3-4; 2 Corinthians 6:14 | 1-9 | Repository deep note (`cultural`); BSB | Repository |
+| Aram-naharaim ‘Aram of the two rivers’ near Haran | 10-27 | Repository deep note (`historical`) | Repository |
+| Wells as meeting places; evening water-drawing by women (24:11); camels drink much, jars drawn by hand; the sign tests character | 10-27 | Repository deep note (`cultural`, `hard`); BSB | Repository |
+| Camels: the book page's paragraph on the 2013 Tel Aviv study, word for word | 10-27 | Site book page | Repository (grep -F); earlier search |
+| Robert Alter, The Art of Biblical Narrative (1981): the betrothal ‘type-scene’ at a well (Genesis 24, 29, Exodus 2) | 10-27 | Alter, as summarised | Search: sefaria.org sheets 444704, 528154; thecriticalbible.blogspot.com. The term only; nothing quoted |
+| Genesis 29:9-11; Exodus 2:15-17; John 4:6-7; Psalm 37:5; James 1:5; Deuteronomy 6:16 | 10-27 | BSB | Repository |
+| Guidance by signs: two views and the middle path (Scripture, prayer, wisdom, counsel); not a method for finding a spouse | 10-27 | Repository deep note (`hard`) | Repository; new sentence on spouses is not a historical claim |
+| Laban's eyes on the gold and his later cheating of Jacob (29 to 31); the servant's careful retelling | 28-49 | Repository deep note (`literary`); BSB | Repository |
+| ‘Kindness and faithfulness’ (chesed and emet); Exodus 34:6; John 1:14 | 28-49 | BSB | Repository |
+| Marriages arranged by families; gifts with betrothal; Laban's leading part | 50-61 | Repository deep note (`cultural`) | Repository. No ancient law cited |
+| ‘I will go’ is one Hebrew word (elekh); two readings of what she was asked | 50-61 | Hebrew text in the repository | Script (24:58 ends with one word) ; readings stated without a side |
+| 22:17 echoed in 24:60; Matthew 1:2; Ruth 1:16 | 50-61 | BSB | Repository |
+| Beer-lahai-roi (16:13-14); ‘meditate’ uncertain; veil as a bride's sign | 62-67 | Repository deep note and verse notes | Repository; "not certain" |
+| ‘Love’ (H157): second use in the Bible at 24:67, after 22:2 | 62-67 | Strong's numbers in the repository | Script |
+| Isaac forty at marriage (25:20), Sarah dead three years (23:1 with 17:17) | 62-67 | BSB arithmetic | Repository |
+| Ephesians 5:25; Revelation 19:7; the servant as the Spirit, an allegory not in the text | 62-67 | BSB; repository deep note (`christ`) | Repository |
+
+Cut: Nahur in the Mari texts; the weight of the gold; "eating a host's
+food bound a guest" (not checked); "as brothers often did" (narrowed to
+Laban's part in this story). The brief named "the women guide's wording"
+on arranged marriage; no such sentence was found in the women guide
+(`women-in-the-ancient-world`) or elsewhere on the site, so the wording
+here is new and rests on the deep note.
