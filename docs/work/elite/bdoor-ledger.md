@@ -2566,3 +2566,42 @@ shekels of redemption; the Nicanor Gate; "their purification"; Judith and
 Anna; the caravan word sunodia; the numbers of pilgrims. Care: the sword
 (25-35) carries the Matthew 2 line for the bereaved parent; the boy in the
 temple (41-52) speaks to parents of a child who has wandered.
+
+## The plain notes on Luke 3 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/3.json`. Three searches for this
+chapter, with the book page's rows and the earlier ledger.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seven rulers of 3:1-2; Tiberius's fifteenth year (28-29, or about 26); Pilate 26 to 36; the Pilate stone (1961); the Abila inscription; tetrarch | 1-6 | Book page rows | Book page searches |
+| Annas father-in-law of Caiaphas (John 18:13); Annas high priest before | 1-6 | BSB; earlier ledger (John 18, Josephus) | Earlier ledger |
+| John's washing done once, by John, as a sign of turning; Jews knew many ritual washings | 1-6 | Repository chapter note (`cultural`) | Repository; stated generally. Qumran, m. Pesahim 8:8 and Taylor not named |
+| Isaiah 40:1, 3-5; Matthew and Mark quote only 40:3; Jeremiah 1:2 | 1-6 | BSB | Repository |
+| Stones and children may be a play on words in Hebrew; uncertain because John's language is uncertain | 7-9 | Earlier ledger (Matthew 3) | Earlier ledger, same caution |
+| Matthew 3:7 names Pharisees and Sadducees; Isaiah 51:2; 5:1-7; Malachi 4:1 | 7-9 | BSB | Repository |
+| Tolls and customs farmed to contractors who paid in advance; local collectors could overcharge; hated as cheats working for foreign rulers | 10-14 | Bible encyclopedias | Search: biblegateway Encyclopedia of the Bible "Tax Collector"; biblicaltraining.org; julianspriggs.co.uk; jewishvirtuallibrary.org |
+| The soldiers probably not Roman legionaries; troops of Antipas or local rulers, perhaps guarding the collectors; not certain | 10-14 | Commentaries | Search: biola.edu "Soldiers in the Gospels"; biblehub study notes; openbible.com commentaries. "Most think" |
+| Leviticus 19:13; Isaiah 58:7; Micah 6:8 | 10-14 | BSB | Repository |
+| Sandals a slave's task; winnowing | 15-20 | Earlier ledger (Mark 1; Matthew 3) | Earlier ledger |
+| Herod Antipas married his brother's wife; Leviticus 18:16; Josephus, Antiquities 18.116-119, John held and killed at Machaerus | 15-20 | Earlier ledger (Mark 6) | Earlier ledger |
+| Malachi 3:2; Joel 2:28; 1 Kings 21:17-24; Acts 2:3; two readings of "Spirit and fire" | 15-20 | BSB; standard readings | Repository; stated as readings, no names |
+| Jesus praying at 3:21, 6:12, 9:18, 9:29; Matthew 3:17 "This is" against Mark 1:11 and Luke 3:22 "You are" | 21-22 | BSB | Repository |
+| Psalm 2:7; Isaiah 42:1; 64:1; why Jesus was baptized (Matthew 3 wording) | 21-22 | BSB; Matthew 3 plain note | Repository |
+| Seventy-seven names after Jesus, from Joseph to God (script); Ezra 2:61-63; Genesis 41:46; 2 Samuel 5:4, 5:14 | 23-38 | BSB | Script over the repository's text |
+| The second Cainan (3:36): not in the Hebrew of Genesis 11:12, present in the Greek; Luke followed the Greek, or a copyist added it; P75 and Bezae omit it in Luke | 23-38 | Steinmann, JETS 60.4 (2017); reference works | Search: etsjets.org Steinmann; biblehub.com; kjvtoday. Both explanations stated |
+| The two genealogies: Africanus, Mary's line, royal line, different traditions; "The site does not choose" | 23-38 | Matthew's book page and Matthew 1 plain note | Repository, same wording |
+
+Left out: the Qumran washings and the Community Rule; proselyte baptism;
+Joan Taylor; m. Sanhedrin 10:1; m. Nedarim 3:4; b. Ketubot 96a; the claim
+that no legion was in Judea before 66; Josephus's own genealogy and
+Africanus on Herod burning the records; the Levites at thirty; Conzelmann;
+Admin and Arni; Jerome and the Gospel of the Nazarenes; Meier's criterion
+of embarrassment.
+
+## Format repair (2026-11-19)
+
+The first commits for Luke's book page and Luke 1 and 2 rewrote the whole
+of `luke/intro.json`, `luke/1.json` and `luke/2.json` in a new layout. They
+were put back to their original layout, with only the `teaching` field and
+`"plain": true` added.

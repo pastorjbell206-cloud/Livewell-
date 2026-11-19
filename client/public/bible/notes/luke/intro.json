@@ -10,214 +10,48 @@
   "christ": "Luke presents Jesus as Savior, a title the angels announce to shepherds (2:11) and one that Matthew and Mark never use. He is the Son of David who will reign forever, the Son of God conceived by the Holy Spirit, and the prophet anointed by the Spirit to preach good news to the poor. In his first sermon at Nazareth he reads from Isaiah 61, “The Spirit of the Lord is on Me, because He has anointed Me to preach good news to the poor” (4:18), and says the Scripture is fulfilled that day. Luke calls him Lord in the narrator's own voice, the title the Greek Old Testament uses for God, far more often than Matthew or Mark do. He also stresses that the Messiah's suffering was necessary: the risen Jesus explains to the Emmaus disciples, beginning with Moses and all the Prophets, what was written in all the Scriptures about himself (24:27). And Luke's Jesus is the one who seeks the lost: he eats with sinners, forgives a criminal dying beside him, and prays for those who crucify him. The church confesses on this ground that Jesus is truly God and truly man, crucified for sinners, bodily raised (Luke insists he eats fish before the disciples, 24:42-43), and ascended to the Father.",
   "reading": "Read Luke as an ancient history written by a believer, not a modern biography. Luke selects and arranges, sometimes by theme rather than strict chronology, and he often pairs a man and a woman (Zechariah and Mary, Simeon and Anna, the shepherd with his sheep and the woman with her coin). Watch the meals, the prayers, and the word today. The central section (9:51-19:27) is framed as the road to Jerusalem, but it gathers teaching on discipleship, wealth, prayer, and the kingdom more than it logs a route.\n\nReaders comparing Luke with Matthew and Mark will meet the Synoptic problem: the three share much wording and order, so one must have used another or a common source. The Two-Source hypothesis, formulated by Christian Hermann Weisse (1838) and H. J. Holtzmann (1863) and refined by B. H. Streeter (The Four Gospels, 1924), holds that Matthew and Luke independently used Mark and a lost sayings source called Q (German Quelle, source); it remains the majority view. The Farrer hypothesis, from Austin Farrer's essay On Dispensing with Q (1955) and defended by Michael Goulder and Mark Goodacre (The Case Against Q, 2002), keeps Mark first but has Luke using Matthew too, making Q unnecessary. The Griesbach or Two-Gospel hypothesis, from J. J. Griesbach (1789) and revived by William Farmer (The Synoptic Problem, 1964), puts Matthew first, Luke second using Matthew, and Mark as a digest of both. Luke says only that he drew on earlier accounts and eyewitnesses (1:1-2), which fits each view.",
   "structure": [
-    {
-      "range": "1:1-4",
-      "title": "Preface to Theophilus",
-      "summary": "One long, formal sentence tells how the work was made: earlier accounts, eyewitness tradition, careful investigation, and an orderly account written so that Theophilus may know the certainty of what he was taught."
-    },
-    {
-      "range": "1:5-2:52",
-      "title": "The births of John and Jesus",
-      "summary": "Opening “In the time of Herod king of Judea” (1:5) and written in the style of the Greek Old Testament, paired announcements, births, and songs show God keeping his promises to Israel, ending with the boy Jesus in his Father's house."
-    },
-    {
-      "range": "3:1-4:13",
-      "title": "Preparation for ministry",
-      "summary": "A six-part date by emperor, governor, tetrarchs, and high priests (3:1-2) opens John's preaching. Jesus is baptized and named beloved Son, his genealogy runs back to Adam, and he is tested in the wilderness."
-    },
-    {
-      "range": "4:14-9:50",
-      "title": "Ministry in Galilee",
-      "summary": "Marked by “Jesus returned to Galilee in the power of the Spirit” (4:14), this section opens with the sermon at Nazareth and moves through healings, forgiveness, the call of disciples, and teaching, to Peter's confession and the first predictions of suffering."
-    },
-    {
-      "range": "9:51-19:27",
-      "title": "The road to Jerusalem",
-      "summary": "The turning point is marked in the text: “As the day of His ascension approached, Jesus resolutely set out for Jerusalem” (9:51). Reminders of the destination recur (13:22, 17:11, 18:31) as Jesus teaches on discipleship, prayer, wealth, and the kingdom, with many parables found only in Luke."
-    },
-    {
-      "range": "19:28-21:38",
-      "title": "Teaching in Jerusalem",
-      "summary": "Marked by “He went on ahead, going up to Jerusalem” (19:28), Jesus enters the city, weeps over it, clears the temple, answers his opponents, and foretells Jerusalem's destruction and the coming of the Son of Man."
-    },
-    {
-      "range": "22-23",
-      "title": "The passion",
-      "summary": "Jesus shares the Passover meal, prays on the Mount of Olives, is betrayed, tried before the council, Pilate, and Herod, crucified between two criminals, and buried."
-    },
-    {
-      "range": "24",
-      "title": "Resurrection and ascension",
-      "summary": "The women find the tomb empty, the risen Jesus meets disciples on the Emmaus road and in Jerusalem, opens the Scriptures to them, and is carried up into heaven, and the disciples return to the temple praising God."
-    }
+    { "range": "1:1-4", "title": "Preface to Theophilus", "summary": "One long, formal sentence tells how the work was made: earlier accounts, eyewitness tradition, careful investigation, and an orderly account written so that Theophilus may know the certainty of what he was taught." },
+    { "range": "1:5-2:52", "title": "The births of John and Jesus", "summary": "Opening “In the time of Herod king of Judea” (1:5) and written in the style of the Greek Old Testament, paired announcements, births, and songs show God keeping his promises to Israel, ending with the boy Jesus in his Father's house." },
+    { "range": "3:1-4:13", "title": "Preparation for ministry", "summary": "A six-part date by emperor, governor, tetrarchs, and high priests (3:1-2) opens John's preaching. Jesus is baptized and named beloved Son, his genealogy runs back to Adam, and he is tested in the wilderness." },
+    { "range": "4:14-9:50", "title": "Ministry in Galilee", "summary": "Marked by “Jesus returned to Galilee in the power of the Spirit” (4:14), this section opens with the sermon at Nazareth and moves through healings, forgiveness, the call of disciples, and teaching, to Peter's confession and the first predictions of suffering." },
+    { "range": "9:51-19:27", "title": "The road to Jerusalem", "summary": "The turning point is marked in the text: “As the day of His ascension approached, Jesus resolutely set out for Jerusalem” (9:51). Reminders of the destination recur (13:22, 17:11, 18:31) as Jesus teaches on discipleship, prayer, wealth, and the kingdom, with many parables found only in Luke." },
+    { "range": "19:28-21:38", "title": "Teaching in Jerusalem", "summary": "Marked by “He went on ahead, going up to Jerusalem” (19:28), Jesus enters the city, weeps over it, clears the temple, answers his opponents, and foretells Jerusalem's destruction and the coming of the Son of Man." },
+    { "range": "22-23", "title": "The passion", "summary": "Jesus shares the Passover meal, prays on the Mount of Olives, is betrayed, tried before the council, Pilate, and Herod, crucified between two criminals, and buried." },
+    { "range": "24", "title": "Resurrection and ascension", "summary": "The women find the tomb empty, the risen Jesus meets disciples on the Emmaus road and in Jerusalem, opens the Scriptures to them, and is carried up into heaven, and the disciples return to the temple praising God." }
   ],
   "themes": [
-    {
-      "title": "Good news to the poor",
-      "body": "Luke gives more attention to wealth and poverty than any other Gospel. Mary sings that God has filled the hungry and sent the rich away empty (1:53), Jesus' first sermon announces good news to the poor (4:18), his beatitudes bless the poor and pronounce woes on the rich (6:20-26), and parables like the rich fool and the rich man and Lazarus warn against trusting in possessions. Zacchaeus, a rich tax collector who gives away half his goods, shows what repentance can look like with money."
-    },
-    {
-      "title": "Women and outsiders",
-      "body": "Women are prominent throughout Luke: Elizabeth, Mary, and Anna in the birth stories, the women who supported Jesus from their own means (8:1-3), Martha's sister Mary sitting at his feet as a disciple (10:38-42), and the women who witness the cross and first hear of the resurrection. Samaritans, whom many Jews despised, appear as the neighbor in the parable and the one grateful leper among ten. Tax collectors and sinners are welcomed at Jesus' table, which scandalizes his critics."
-    },
-    {
-      "title": "Prayer",
-      "body": "Luke shows Jesus praying at the turning points of his life: at his baptism, before choosing the Twelve, before Peter's confession, at the transfiguration, in Gethsemane, and on the cross. Only Luke records the parables of the persistent friend at midnight, the persistent widow, and the Pharisee and the tax collector praying in the temple. Prayer in Luke is the ordinary posture of those who wait on God."
-    },
-    {
-      "title": "The Holy Spirit",
-      "body": "The Spirit is active from the first chapter: John is filled with the Spirit from the womb, Mary conceives by the Spirit's power, and Elizabeth, Zechariah, and Simeon speak by the Spirit. Jesus is anointed by the Spirit at his baptism and returns to Galilee in the Spirit's power. At the end he promises the disciples power from on high, which comes at Pentecost in Acts 2."
-    },
-    {
-      "title": "Salvation today, and joy",
-      "body": "The word today carries weight in Luke: today a Savior is born (2:11), today the Scripture is fulfilled (4:21), today salvation has come to Zacchaeus's house (19:9), today the thief will be with Jesus in paradise (23:43). Salvation is present, not only future. And it brings joy: the angels announce good news of great joy, and heaven rejoices over one sinner who repents (15:7)."
-    },
-    {
-      "title": "Fulfillment and divine necessity",
-      "body": "Luke's first sentence speaks of things fulfilled among us, and the Greek word dei, it is necessary, marks the plan of God throughout: the boy must be in his Father's house (2:49), the Son of Man must suffer (9:22), and everything written must be fulfilled (24:44). History in Luke is not random; it is the working out of what God promised in the Scriptures."
-    }
+    { "title": "Good news to the poor", "body": "Luke gives more attention to wealth and poverty than any other Gospel. Mary sings that God has filled the hungry and sent the rich away empty (1:53), Jesus' first sermon announces good news to the poor (4:18), his beatitudes bless the poor and pronounce woes on the rich (6:20-26), and parables like the rich fool and the rich man and Lazarus warn against trusting in possessions. Zacchaeus, a rich tax collector who gives away half his goods, shows what repentance can look like with money." },
+    { "title": "Women and outsiders", "body": "Women are prominent throughout Luke: Elizabeth, Mary, and Anna in the birth stories, the women who supported Jesus from their own means (8:1-3), Martha's sister Mary sitting at his feet as a disciple (10:38-42), and the women who witness the cross and first hear of the resurrection. Samaritans, whom many Jews despised, appear as the neighbor in the parable and the one grateful leper among ten. Tax collectors and sinners are welcomed at Jesus' table, which scandalizes his critics." },
+    { "title": "Prayer", "body": "Luke shows Jesus praying at the turning points of his life: at his baptism, before choosing the Twelve, before Peter's confession, at the transfiguration, in Gethsemane, and on the cross. Only Luke records the parables of the persistent friend at midnight, the persistent widow, and the Pharisee and the tax collector praying in the temple. Prayer in Luke is the ordinary posture of those who wait on God." },
+    { "title": "The Holy Spirit", "body": "The Spirit is active from the first chapter: John is filled with the Spirit from the womb, Mary conceives by the Spirit's power, and Elizabeth, Zechariah, and Simeon speak by the Spirit. Jesus is anointed by the Spirit at his baptism and returns to Galilee in the Spirit's power. At the end he promises the disciples power from on high, which comes at Pentecost in Acts 2." },
+    { "title": "Salvation today, and joy", "body": "The word today carries weight in Luke: today a Savior is born (2:11), today the Scripture is fulfilled (4:21), today salvation has come to Zacchaeus's house (19:9), today the thief will be with Jesus in paradise (23:43). Salvation is present, not only future. And it brings joy: the angels announce good news of great joy, and heaven rejoices over one sinner who repents (15:7)." },
+    { "title": "Fulfillment and divine necessity", "body": "Luke's first sentence speaks of things fulfilled among us, and the Greek word dei, it is necessary, marks the plan of God throughout: the boy must be in his Father's house (2:49), the Son of Man must suffer (9:22), and everything written must be fulfilled (24:44). History in Luke is not random; it is the working out of what God promised in the Scriptures." }
   ],
-  "doctrines": [
-    "incarnation",
-    "salvation",
-    "spirit",
-    "prayer",
-    "messiah",
-    "mission",
-    "justice-poor",
-    "repentance"
-  ],
+  "doctrines": ["incarnation", "salvation", "spirit", "prayer", "messiah", "mission", "justice-poor", "repentance"],
   "keyChapters": [
-    {
-      "ch": 1,
-      "why": "The preface explains Luke's method, and the announcements to Zechariah and Mary, with Mary's song, set out the book's themes of reversal and fulfillment."
-    },
-    {
-      "ch": 2,
-      "why": "The birth of Jesus in Bethlehem, the shepherds, and Simeon's words about a light for the Gentiles anchor the good news in history and point to its reach."
-    },
-    {
-      "ch": 4,
-      "why": "Jesus' sermon at Nazareth from Isaiah 61 is his program statement for the whole ministry, and his rejection there foreshadows what follows."
-    },
-    {
-      "ch": 15,
-      "why": "The parables of the lost sheep, the lost coin, and the lost son show God's joy in finding the lost and expose the resentment of those who think they were never lost."
-    },
-    {
-      "ch": 19,
-      "why": "Zacchaeus's conversion and Jesus' statement that he came to seek and to save the lost lead into his entry into Jerusalem."
-    },
-    {
-      "ch": 24,
-      "why": "The empty tomb, the Emmaus road, and the ascension show the risen Jesus opening the Scriptures and sending his disciples to the nations."
-    }
+    { "ch": 1, "why": "The preface explains Luke's method, and the announcements to Zechariah and Mary, with Mary's song, set out the book's themes of reversal and fulfillment." },
+    { "ch": 2, "why": "The birth of Jesus in Bethlehem, the shepherds, and Simeon's words about a light for the Gentiles anchor the good news in history and point to its reach." },
+    { "ch": 4, "why": "Jesus' sermon at Nazareth from Isaiah 61 is his program statement for the whole ministry, and his rejection there foreshadows what follows." },
+    { "ch": 15, "why": "The parables of the lost sheep, the lost coin, and the lost son show God's joy in finding the lost and expose the resentment of those who think they were never lost." },
+    { "ch": 19, "why": "Zacchaeus's conversion and Jesus' statement that he came to seek and to save the lost lead into his entry into Jerusalem." },
+    { "ch": 24, "why": "The empty tomb, the Emmaus road, and the ascension show the risen Jesus opening the Scriptures and sending his disciples to the nations." }
   ],
   "text": "Luke's text is well attested and early. The oldest substantial witness is P75 (Papyrus Bodmer XIV-XV), a codex of Luke and John usually dated around AD 175 to 225, though some papyrologists place it later; it came to the Vatican Library in 2006 and 2007 and is now called the Hanna Papyrus. Its text is strikingly close to that of Codex Vaticanus, copied more than a century later. P4, fragments of Luke 1 to 6 in Paris found in the binding of a later codex of Philo, is also early; T. C. Skeat argued it came from the same codex as the Matthew fragments P64 and P67, though that is disputed. P45 (the Chester Beatty papyrus, third century) preserves parts of all four Gospels and Acts. The fourth-century codices Sinaiticus and Vaticanus, the fifth-century Alexandrinus and Washingtonianus, and early Latin, Syriac, and Coptic translations fill out the picture.\n\nLuke also has a distinctive textual problem. Codex Bezae (fifth century) and the Old Latin carry a Western text of Luke and Acts, fuller in Acts and at several points shorter in Luke. Westcott and Hort (1881) judged some of Bezae's shorter readings in Luke 22 and 24 original and called them Western non-interpolations; most editors now keep the longer text. So English Bibles differ. The prayer from the cross, ‘Father, forgive them’ (23:34), is missing from P75, Vaticanus, and the first hand of Bezae, and modern Bibles print it with a note or in brackets. The angel and the sweat like drops of blood (22:43-44) are absent from P75 and Vaticanus but present in Sinaiticus and Bezae. The longer account of the Last Supper (22:19b-20) is missing only from Bezae and some Latin and Syriac witnesses. The Lord's Prayer in Luke (11:2-4) is shorter in the earliest manuscripts than the King James Version, which reflects later copyists filling it out from Matthew 6. The angels' song in 2:14 differs by one letter between ‘goodwill toward men’ and ‘people of his good pleasure’. In the story of the woman caught in adultery, one family of manuscripts places it after Luke 21:38 instead of in John.\n\nThe oldest evidence for Luke comes from Marcion of Sinope, who broke with the church at Rome around AD 144 and used a single Gospel, without an author's name, closely related to Luke but shorter: it lacked chapters 1 and 2 and began with Jesus coming down to Capernaum in the fifteenth year of Tiberius. It survives only through its opponents, chiefly Tertullian (Against Marcion, book 4) and Epiphanius (Panarion 42). Those writers, and Adolf von Harnack's reconstruction (1921), treat it as Marcion's cut-down Luke, edited to remove what tied Jesus to Israel's God. John Knox (Marcion and the New Testament, 1942) proposed that canonical Luke was instead expanded from an earlier gospel that Marcion also used, and Joseph Tyson (2006) developed a version of that view. Matthias Klinghardt (2015) and Markus Vinzent (2014) argued that Marcion's Gospel came first, and Jason BeDuhn (The First New Testament, 2013) that it was an older text Marcion adopted. Dieter Roth's critical reconstruction (The Text of Marcion's Gospel, 2015), now the standard, shows how much of that Gospel is uncertain; most scholars still conclude that Marcion edited Luke.",
   "reception": "Luke was read as the Gospel of Paul's companion from the second century. Justin Martyr drew on its birth story, Marcion's use of it forced the church to defend it as one of four, and Irenaeus (Against Heresies 3.11.8) gave it the calf among the four living creatures of Revelation 4 because it begins with Zechariah the priest at the altar; Jerome, in the preface to his commentary on Matthew, kept the calf or ox for Luke, and the winged ox marks Luke on lecterns and in manuscripts such as the Book of Kells. Origen preached on it at Caesarea, and thirty-nine of his homilies survive in Jerome's Latin translation. Ambrose of Milan's Exposition of the Gospel according to Luke (about 387), ten books drawn from his sermons, is the fullest Latin patristic commentary on Luke. Cyril of Alexandria's 156 homilies on Luke survive mainly in a Syriac translation brought to England from the Egyptian desert in the 1840s. Bede wrote a commentary on it in eighth-century Northumbria, and Bonaventure and Thomas Aquinas (in his Catena Aurea) carried it through the Middle Ages.\n\nLuke's hymns entered the church's daily prayer: the Benedictus at the morning office, the Magnificat at evening prayer, and the Nunc Dimittis at Compline, a pattern the Book of Common Prayer (1549) kept in Morning and Evening Prayer. The Ave Maria and the Angelus draw on Luke 1, and the Gloria in excelsis on Luke 2:14. The church year follows Luke through Advent and Christmas, the Annunciation on 25 March, the Visitation, and the Presentation on 2 February (Candlemas). From the sixth century (Theodore Lector, around 530) a legend held that Luke painted the Virgin, which made him the patron of painters and underlies Rogier van der Weyden's Saint Luke Drawing the Virgin (about 1435 to 1440). Luke's parables gave European art the Good Samaritan and Rembrandt's Return of the Prodigal Son (late 1660s), and his birth story gave music Bach's Magnificat (1723) and Christmas Oratorio (1734), Handel's Messiah (1742), and countless carols.\n\nModern criticism made Luke a theologian as well as a historian. Henry Cadbury studied its style and making (1920, 1927); Hans Conzelmann (1954) read it as a theology of salvation history written to cope with the delay of Christ's return; and the commentaries of I. Howard Marshall (1978), Joseph Fitzmyer (1981 and 1985), Luke Timothy Johnson (1991), Joel Green (1997), and François Bovon (2002 to 2013) set the modern standard. Liberation theologians such as Gustavo Gutiérrez made Luke's good news to the poor central to their reading, while feminist scholars have debated whether Luke honors women or confines them: Jane Schaberg, writing on Luke in The Women's Bible Commentary (1992), argued that it models silent, supporting women, and Turid Karlsen Seim (The Double Message, 1994) found in Luke-Acts both real prominence and real restraint. Jewish readers have asked how Luke's positive picture of Jewish piety in its first chapters fits its sharp words about Israel's leaders later; Amy-Jill Levine and Ben Witherington III wrote a commentary together (2018), a Jewish and a Christian scholar in conversation, that treats these questions and the book's use in Christian anti-Judaism openly.",
   "furtherReading": [
-    {
-      "tier": "first",
-      "author": "N. T. Wright",
-      "title": "Luke for Everyone",
-      "series": "The New Testament for Everyone",
-      "year": 2001,
-      "note": "Short passages with a fresh translation and warm, historically informed reflection; an easy place for a newcomer to begin."
-    },
-    {
-      "tier": "first",
-      "author": "Michael Wilcock",
-      "title": "The Message of Luke",
-      "series": "The Bible Speaks Today",
-      "year": 1979,
-      "note": "A clear evangelical exposition that follows the shape of Luke's narrative and its Old Testament roots, written with preaching in view."
-    },
-    {
-      "tier": "pastor",
-      "author": "Joel B. Green",
-      "title": "The Gospel of Luke",
-      "series": "New International Commentary on the New Testament",
-      "year": 1997,
-      "note": "Reads Luke as a unified narrative in its first-century social world; strong on the book's theology of salvation and its concern for the marginal."
-    },
-    {
-      "tier": "pastor",
-      "author": "Darrell L. Bock",
-      "title": "Luke",
-      "series": "Baker Exegetical Commentary on the New Testament",
-      "year": 1994,
-      "note": "A thorough two-volume evangelical commentary (1994 and 1996), careful on the Greek, historical questions, and the views of other interpreters."
-    },
-    {
-      "tier": "pastor",
-      "author": "Luke Timothy Johnson",
-      "title": "The Gospel of Luke",
-      "series": "Sacra Pagina",
-      "year": 1991,
-      "note": "A Roman Catholic literary reading that attends to how Luke tells the story and to its prophetic pattern."
-    },
-    {
-      "tier": "pastor",
-      "author": "Amy-Jill Levine and Ben Witherington III",
-      "title": "The Gospel of Luke",
-      "series": "New Cambridge Bible Commentary",
-      "year": 2018,
-      "note": "A Jewish and a Christian scholar comment together, showing where they agree and differ and how Luke has been used and misused."
-    },
-    {
-      "tier": "pastor",
-      "author": "Arthur A. Just Jr., editor",
-      "title": "Luke",
-      "series": "Ancient Christian Commentary on Scripture",
-      "year": 2003,
-      "note": "Selections from Origen, Ambrose, Cyril of Alexandria, Bede, and other early interpreters, arranged passage by passage."
-    },
-    {
-      "tier": "scholar",
-      "author": "Joseph A. Fitzmyer",
-      "title": "The Gospel According to Luke",
-      "series": "Anchor Bible",
-      "year": 1981,
-      "note": "A landmark two-volume critical commentary (1981 and 1985) by a Jesuit scholar, with a long introduction to Luke's sources, theology, and Greek."
-    },
-    {
-      "tier": "scholar",
-      "author": "François Bovon",
-      "title": "Luke",
-      "series": "Hermeneia",
-      "year": 2002,
-      "note": "A three-volume historical-critical commentary (2002 to 2013) by a Swiss Protestant scholar, rich in the history of interpretation."
-    },
-    {
-      "tier": "scholar",
-      "author": "I. Howard Marshall",
-      "title": "The Gospel of Luke",
-      "series": "New International Greek Testament Commentary",
-      "year": 1978,
-      "note": "A detailed commentary on the Greek text, strong on Luke as historian and theologian."
-    },
-    {
-      "tier": "scholar",
-      "author": "Raymond E. Brown",
-      "title": "The Birth of the Messiah",
-      "year": 1977,
-      "note": "The standard study of the infancy narratives of Matthew and Luke, updated in 1993; indispensable for Luke 1 and 2."
-    },
-    {
-      "tier": "scholar",
-      "author": "Loveday Alexander",
-      "title": "The Preface to Luke's Gospel",
-      "series": "Society for New Testament Studies Monograph Series",
-      "year": 1993,
-      "note": "Compares Luke 1:1-4 and Acts 1:1 with ancient prefaces and argues that Luke's closest models are Greek technical treatises."
-    },
-    {
-      "tier": "scholar",
-      "author": "Mark Goodacre",
-      "title": "The Case Against Q",
-      "year": 2002,
-      "note": "The fullest modern case for the Farrer hypothesis, that Luke used Mark and Matthew; read with a defense of the Two-Source view for balance."
-    }
+    { "tier": "first", "author": "N. T. Wright", "title": "Luke for Everyone", "series": "The New Testament for Everyone", "year": 2001, "note": "Short passages with a fresh translation and warm, historically informed reflection; an easy place for a newcomer to begin." },
+    { "tier": "first", "author": "Michael Wilcock", "title": "The Message of Luke", "series": "The Bible Speaks Today", "year": 1979, "note": "A clear evangelical exposition that follows the shape of Luke's narrative and its Old Testament roots, written with preaching in view." },
+    { "tier": "pastor", "author": "Joel B. Green", "title": "The Gospel of Luke", "series": "New International Commentary on the New Testament", "year": 1997, "note": "Reads Luke as a unified narrative in its first-century social world; strong on the book's theology of salvation and its concern for the marginal." },
+    { "tier": "pastor", "author": "Darrell L. Bock", "title": "Luke", "series": "Baker Exegetical Commentary on the New Testament", "year": 1994, "note": "A thorough two-volume evangelical commentary (1994 and 1996), careful on the Greek, historical questions, and the views of other interpreters." },
+    { "tier": "pastor", "author": "Luke Timothy Johnson", "title": "The Gospel of Luke", "series": "Sacra Pagina", "year": 1991, "note": "A Roman Catholic literary reading that attends to how Luke tells the story and to its prophetic pattern." },
+    { "tier": "pastor", "author": "Amy-Jill Levine and Ben Witherington III", "title": "The Gospel of Luke", "series": "New Cambridge Bible Commentary", "year": 2018, "note": "A Jewish and a Christian scholar comment together, showing where they agree and differ and how Luke has been used and misused." },
+    { "tier": "pastor", "author": "Arthur A. Just Jr., editor", "title": "Luke", "series": "Ancient Christian Commentary on Scripture", "year": 2003, "note": "Selections from Origen, Ambrose, Cyril of Alexandria, Bede, and other early interpreters, arranged passage by passage." },
+    { "tier": "scholar", "author": "Joseph A. Fitzmyer", "title": "The Gospel According to Luke", "series": "Anchor Bible", "year": 1981, "note": "A landmark two-volume critical commentary (1981 and 1985) by a Jesuit scholar, with a long introduction to Luke's sources, theology, and Greek." },
+    { "tier": "scholar", "author": "François Bovon", "title": "Luke", "series": "Hermeneia", "year": 2002, "note": "A three-volume historical-critical commentary (2002 to 2013) by a Swiss Protestant scholar, rich in the history of interpretation." },
+    { "tier": "scholar", "author": "I. Howard Marshall", "title": "The Gospel of Luke", "series": "New International Greek Testament Commentary", "year": 1978, "note": "A detailed commentary on the Greek text, strong on Luke as historian and theologian." },
+    { "tier": "scholar", "author": "Raymond E. Brown", "title": "The Birth of the Messiah", "year": 1977, "note": "The standard study of the infancy narratives of Matthew and Luke, updated in 1993; indispensable for Luke 1 and 2." },
+    { "tier": "scholar", "author": "Loveday Alexander", "title": "The Preface to Luke's Gospel", "series": "Society for New Testament Studies Monograph Series", "year": 1993, "note": "Compares Luke 1:1-4 and Acts 1:1 with ancient prefaces and argues that Luke's closest models are Greek technical treatises." },
+    { "tier": "scholar", "author": "Mark Goodacre", "title": "The Case Against Q", "year": 2002, "note": "The fullest modern case for the Farrer hypothesis, that Luke used Mark and Matthew; read with a defense of the Two-Source view for balance." }
   ],
   "teaching": {
     "parts": [
@@ -274,7 +108,7 @@
       {
         "id": "history",
         "h": "Luke and the history of his day",
-        "body": "Luke ties his story to the wider world more than any other Gospel. He names emperors, governors and kings. That makes his account easier to check, and in one place it raises a real difficulty.\n\nThe rulers of 3:1-2. Luke dates the start of John's preaching with six names: “the fifteenth year of the reign of Tiberius Caesar, while Pontius Pilate was governor of Judea, Herod tetrarch of Galilee, his brother Philip tetrarch of Ituraea and Trachonitis, and Lysanias tetrarch of Abilene, during the high priesthood of Annas and Caiaphas” (3:1-2). A tetrarch was a ruler of part of a kingdom. Most count Tiberius's fifteenth year as AD 28 or 29; some count from an earlier date, which gives about AD 26. Pilate governed Judea from about 26 to 36. In 1961 a stone found at Caesarea on the coast was seen to bear his name and the title ‘prefect of Judea’.\n\nLysanias was once called a mistake. Josephus speaks of a Lysanias who ruled a nearby land and was put to death about 36 BC, long before. But an inscription found at Abila, the chief town of Abilene, records a gift by a freed slave of ‘Lysanias the tetrarch’. Most date it to the reign of Tiberius, though its exact date is debated. So there seems to have been a later Lysanias, as Luke says.\n\nThe census of 2:1-2. Here the difficulty is real. Luke says Joseph went to Bethlehem because of a census ordered by Augustus, “the first census to take place while Quirinius was governor of Syria” (2:2). Luke and Matthew both place the birth while Herod the Great was alive, and most date Herod's death to 4 BC. But Quirinius became governor of Syria in AD 6, about ten years later. That year Judea came under direct Roman rule, and the Jewish historian Josephus describes the census Quirinius took then. No writer outside Luke tells of a Roman census in Herod's kingdom.\n\nSeveral explanations have been offered. Many scholars conclude that Luke joined the famous census of AD 6 to the time of the birth by mistake. Others think Quirinius held an earlier command in Syria; an inscription found near Tivoli in Italy speaks of an unnamed official who governed Syria a second time, and some read it as Quirinius while others assign it to another man. Others note that the Greek word for ‘first’ can sometimes mean ‘before’, giving ‘this census took place before Quirinius was governor’; most experts in Greek grammar find that reading strained. Others point out that Tertullian, writing around 200, tied a census in Judea to Sentius Saturninus, who governed Syria a few years before Herod died. And some suggest a count begun under Herod and finished later. Luke knows the famous census of AD 6 well (Acts 5:37), which some take as a sign he was not confused about it.\n\nThe question is about a date. It does not touch the confession that Jesus was born as a real man in real history. These notes do not settle it."
+        "body": "Luke ties his story to the wider world more than any other Gospel. He names emperors, governors and kings. That makes his account easier to check, and in one place it raises a real difficulty.\n\nThe rulers of 3:1-2. Luke dates the start of John's preaching with seven names: “the fifteenth year of the reign of Tiberius Caesar, while Pontius Pilate was governor of Judea, Herod tetrarch of Galilee, his brother Philip tetrarch of Ituraea and Trachonitis, and Lysanias tetrarch of Abilene, during the high priesthood of Annas and Caiaphas” (3:1-2). A tetrarch was a ruler of part of a kingdom. Most count Tiberius's fifteenth year as AD 28 or 29; some count from an earlier date, which gives about AD 26. Pilate governed Judea from about 26 to 36. In 1961 a stone found at Caesarea on the coast was seen to bear his name and the title ‘prefect of Judea’.\n\nLysanias was once called a mistake. Josephus speaks of a Lysanias who ruled a nearby land and was put to death about 36 BC, long before. But an inscription found at Abila, the chief town of Abilene, records a gift by a freed slave of ‘Lysanias the tetrarch’. Most date it to the reign of Tiberius, though its exact date is debated. So there seems to have been a later Lysanias, as Luke says.\n\nThe census of 2:1-2. Here the difficulty is real. Luke says Joseph went to Bethlehem because of a census ordered by Augustus, “the first census to take place while Quirinius was governor of Syria” (2:2). Luke and Matthew both place the birth while Herod the Great was alive, and most date Herod's death to 4 BC. But Quirinius became governor of Syria in AD 6, about ten years later. That year Judea came under direct Roman rule, and the Jewish historian Josephus describes the census Quirinius took then. No writer outside Luke tells of a Roman census in Herod's kingdom.\n\nSeveral explanations have been offered. Many scholars conclude that Luke joined the famous census of AD 6 to the time of the birth by mistake. Others think Quirinius held an earlier command in Syria; an inscription found near Tivoli in Italy speaks of an unnamed official who governed Syria a second time, and some read it as Quirinius while others assign it to another man. Others note that the Greek word for ‘first’ can sometimes mean ‘before’, giving ‘this census took place before Quirinius was governor’; most experts in Greek grammar find that reading strained. Others point out that Tertullian, writing around 200, tied a census in Judea to Sentius Saturninus, who governed Syria a few years before Herod died. And some suggest a count begun under Herod and finished later. Luke knows the famous census of AD 6 well (Acts 5:37), which some take as a sign he was not confused about it.\n\nThe question is about a date. It does not touch the confession that Jesus was born as a real man in real history. These notes do not settle it."
       },
       {
         "id": "jews",
