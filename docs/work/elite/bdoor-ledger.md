@@ -2087,6 +2087,8 @@ Left out: Porphyry and Jerome on 7:8; P66's "the prophet" at 7:52 (not found); b
 | Exodus 3:14; Psalm 90:2; Isaiah 43:10; 41:4; Deuteronomy 32:39; Leviticus 24:16; Genesis 22:8; Numbers 21:9 | 21-30, 48-59 | BSB | BSB text. Isaiah 41:4 quoted only after its em-dashes |
 | Nicene Creed in the site's older English wording | 48-59 | John 5 plain note | Repository |
 
+Re-check of 8:44 (2026-11-19, before John 12): the sentence "In the 1930s Nazi propaganda put it in a book for German children" rests on the Der Giftpilz row above, not on Elvira Bauer's book of 1936. One new search confirmed it: the German Propaganda Archive (Calvin University) gives the story "What Christ Said about the Jews" from Ernst Hiemer, Der Giftpilz (Nuremberg: Stürmerverlag, 1938), Julius Streicher's press, in which a mother tells her children at a roadside crucifix that Jesus told the Jews their father is the devil, and that they are children of the devil. Search: research.calvin.edu/german-propaganda-archive/story14.htm (as described in the result; the page itself could not be fetched from here); jewishvirtuallibrary.org "Der Giftpilz". 1938 is within "the 1930s"; the sentence stands unchanged. Bauer's 1936 book is not named on the page and was not checked for this verse.
+
 Cut: Jerome on what Jesus wrote; the Didascalia; Didymus; Augustine's "misery and mercy"; Trent by name; Luther's On the Jews and Their Lies (met only in summaries); Celsus on 8:41; Josephus on Eleazar at Masada; m. Ketubbot 2:9; Jubilees on Abraham; the Levites' age of fifty; Johns Hopkins; the 8:25 alternative renderings; the New World Translation at 8:58; Luke Timothy Johnson, Reinhartz and Ruether by name.
 
 ## The plain notes on John 9 (2026-11-19)
