@@ -2168,3 +2168,35 @@ Cut: George Adam Smith and Barclay's shepherd-as-gate; Hammurabi and Homer; the 
 | Numbers 19:11; 9:6; Passovers at 2:13, 6:4, 11:55 | 54-57 | BSB; book page ledger | BSB text; earlier ledger |
 
 Cut: Kloner's count of rolling stones; m. Ketubbot 4:4 (flutes and wailing woman); Sirach 22:12; the Amidah; m. Sanhedrin 10:1; the ossuary of Caiaphas (not needed); 2 Maccabees 5:19; Josephus on Hyrcanus's prophecy; et-Taiyibeh; Egeria by name; Tal Ilan; the P45 reading at 11:25; Strauss, Bultmann, Hume, Bauckham and Meier by name.
+
+## The plain notes on John 12 (2026-11-19)
+
+`client/public/bible/notes/john/plain/12.json`. 4 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Reclining at table (12:2); feet stretched behind | 1-8 | BSB "reclining"; deep note `cultural` | Kept general |
+| Nard from a Himalayan plant, costly; denarius a day's wage, 300 near a year's wages | 1-8 | Earlier ledger (Mark 14) | Earlier ledger. Pliny's prices and the litra not used |
+| Mishnah Ketubbot 7:6 (around 200): a married woman going out with her head uncovered breaks Jewish custom | 1-8 | m. Ketubbot 7:6 | Search: halakhah.com Kethuboth 72; etzion.org.il Deracheha; sefaria sheets. Stated only as what the Mishnah counts for a married woman; Mary's act called bold "many readers think". "Unbound hair" (a commentary gloss) not used |
+| Mark 14:3-9 and Matthew 26:6-13 (head, Simon the Leper, unnamed woman); Luke 7:36-50; same evening or two events as views | 1-8 | BSB; deep note `hard` | BSB text; Strauss, Augustine, Carson, Blomberg not named |
+| Gregory the Great's sermon of 591 (Homily 33) joined Mary of Bethany, the woman of Luke 7 and Mary Magdalene; the East kept them apart; 2021 shared memorial of Martha, Mary and Lazarus on 29 July | 1-8 | Gregory, Homilies on the Gospels 33; Roman calendar decree (2021) | Search: simplycatholic.com "The Real Mary Magdalene"; stpaulcenter.com; ncregister.com (Martha, Mary and Lazarus); ewtnnews.com. The 1969 change not stated (sources disagree on what it did) |
+| Deuteronomy 15:7, 15:11; Mark 14:7; 13:29; Matthew 25:40; Psalm 23:5 | 1-8 | BSB | BSB text |
+| 11:48, 11:53; the high priest held office with Rome's approval | 9-11 | BSB; earlier ledger (Caiaphas appointed and removed by Romans, Josephus Antiquities 18.35, 18.95) | Earlier ledger |
+| Jeremiah 1:19 | 9-11 | BSB | BSB text |
+| 1 Maccabees 13:51, 141 BC, palm branches; Hosanna "save, please" and later praise; Psalm 118 at the feasts | 12-19 | Earlier ledger (Mark 11) | Earlier ledger |
+| "Went out to meet" a civic welcome | 12-19 | Deep note `cultural` | Hedged "often" |
+| Psalm 118:22, 26; Zechariah 9:9-10; Zephaniah 3:15; 1 Kings 1:33 | 12-19 | BSB | BSB text |
+| Greeks are Gentiles; outer court; the warning sign found 1871 | 20-26 | Earlier ledger (Mark 11, Temple Warning inscription) | Earlier ledger |
+| Genesis 29:30-31 ("loved Rachel more than Leah"; "unloved"; KJV "hated"); Matthew 10:37; Isaiah 2:3; 53:10 | 20-26 | BSB; KJV | BSB text; KJV wording standard |
+| Dostoevsky set 12:24 as the epigraph of The Brothers Karamazov (1880) | 20-26 | The novel's front matter | Search: standardebooks.org Garnett text; shmoop.com; Kroó, Problems of Historical Poetics (2022). Year 1880 as in the deep note (book publication) |
+| Help wording for a reader with thoughts of not living | 20-26 | The site's answer "Is my anxiety a spiritual failure?" (`client/src/data/answers.ts`) | Copied word for word, as in Matthew 6 |
+| Mark 14:34-35; Psalm 89:36; Numbers 21:9; 3:14; Isaiah 52:13; 53:5; Exodus 19:19; 11:33; 3:19 | 27-36 | BSB | BSB text |
+| "Lifted up" double meaning; 12:33 | 27-36 | Book page | Book page wording |
+| Qumran: "sons of light" | 27-36 | Earlier ledger (1QS 1:9-10, Matthew 5 and John 8) | Earlier ledger |
+| Chrysostom, Homily 68 on John: "because" refers to the event, not the cause; "could not" put for "would not" | 37-43 | Chrysostom | Search: newadvent.org/fathers/240168.htm; st-takla.org NPNF; catenabible.com. Paraphrased; "a preacher of the late 300s" as in earlier notes |
+| Augustine, Tractate 53 on John: they could not because they would not; God foresaw it | 37-43 | Augustine | Search: newadvent.org/fathers/1701053.htm. Paraphrased |
+| Isaiah 53:1; 6:1, 6:10; 52:13; Mark 4:12; Matthew 13:14-15; views worded as in the Mark 4 and Matthew 13 notes | 37-43 | BSB; earlier notes | BSB text |
+| Synagogue exclusion: book page and 9:22 note wording | 37-43 | Earlier ledger (John 9) | Earlier ledger |
+| Deuteronomy 18:18-19; 3:17-19 | 44-50 | BSB | BSB text |
+
+Cut: Pliny on nard; the litra; Josephus's lamb count; Egeria and the Palm Sunday procession; Theodulf; b. Sanhedrin 98a and Rashi on Zechariah 9:9; the bat qol; the Targum of Isaiah; Craig Evans, Bauckham, Reinhartz, Erasmus, Luther and Calvin by name; the 1969 calendar change; Giotto and Duccio; the 12:32 "all things" variant.
