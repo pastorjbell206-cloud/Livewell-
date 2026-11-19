@@ -2031,3 +2031,32 @@ Left out: the feast proposals (Irenaeus, Chrysostom); the Sheep Gate's name; the
 | Judas: views, no verdict on his end | 60-71 | Matthew 26 and 27 notes' stance | Repository |
 
 Cut: Augustine's "believe, and you have eaten" (Tractates on John 25.12) was searched twice and found only in secondary citations, so neither the line nor his name is used; Luther's own statements on John 6 (secondary only); m. Ketubbot 5:8; the fish as dried or salted; Taricheae; Juvenal's baskets; Wisdom 16:20-26 and Philo on the manna; Ignatius, Chrysostom, Bultmann, Brown and Carson; Arminius and Wesley by name; the reading of 6:66 by its number.
+
+## The plain notes on John 7 (2026-11-19)
+
+`client/public/bible/notes/john/plain/7.json`. 5 web searches. 7:53 is covered only by a pointer (the woman caught in adultery is for the chapter 8 run); the validator needs the passages to reach the chapter's last verse.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| "The Jews" in 7:1 the Judean leaders; in 7:13 Jews afraid of "the Jews", so the authorities; 9:22; 20:19; 19:38 | 1-13 | BSB; book page part on "the Jews" | BSB text; repository |
+| Tabernacles: booths, wilderness, harvest, joy; Leviticus 23:42-43; Deuteronomy 16:14 (cut before its em-dash); law read every seventh year (Deuteronomy 31:10-11) | 1-9 | BSB; book page ledger | BSB text |
+| The brothers: three readings in the Mark 3 note; Acts 1:14; 1 Corinthians 15:7; Galatians 1:19; Acts 15:13 | 1-9 | BSB; Mark 3 plain note | BSB text; repository |
+| 7:8 "not yet" in P66, P75 and Vaticanus; most think it a scribe's easing, a few think it original; readings of "not going up" | 1-9 | Metzger as quoted; Mounce | Search: billmounce.com and zondervanacademic.com "Did Jesus Lie? (John 7:8)"; ibiblio b-greek (Metzger quoted); cambridge.org excerpt. Porphyry and Jerome were met only in one scholarly excerpt, so they are not named |
+| Deuteronomy 13:1-5 behind "He deceives the people" | 10-13 | BSB | BSB text |
+| Teacher's authority from the teacher he trained under; Acts 4:13 | 14-24 | Repository `cultural`; BSB | Kept general |
+| Circumcision on the eighth day overrides the Sabbath: Mishnah Shabbat 19 (written down around 200) | 14-24 | Mishnah | Search: sefaria.org.il Mishnah Shabbat 19; cojs.org "Mishnah Shabbat 18-19". Marked as later; no single mishnah number given |
+| Leviticus 12:3; Genesis 17:12; Deuteronomy 1:16-17; Isaiah 11:3 | 14-24, 45-53 | BSB | BSB text |
+| Justin, Dialogue with Trypho 8: Trypho says the Christ, if born, is unknown and has no power until Elijah anoints him and makes him known | 25-36 | Justin | Search: bkv.unifr.ch (ANF translation); logoslibrary.org; biblehub.com library. Paraphrased and marked as later. 1 Enoch and 4 Ezra not used |
+| Jews dispersed among the Greeks | 25-36 | BSB 7:35 | BSB text |
+| Micah 5:2 (quoted only before its em-dash); "from the days of eternity" | 25-36, 40-44 | BSB | BSB text |
+| Water from Siloam poured at the altar (Sukkah 4:9); lamps in the Court of the Women (5:2-4); "whoever has not seen the rejoicing at the water-drawing has never seen rejoicing" (5:1); how much was done in Jesus' day not certain | 37-39 | Mishnah | Book page ledger; search: mishnah.org Sukkah 5:1; jewishvirtuallibrary.org Sukkah 5; posenlibrary.com. Paraphrased |
+| Oupō gar ēn pneuma, "given" supplied; 20:22; Acts 2:33 | 37-39 | Greek text in the repository; BSB | Script; BSB text |
+| Possible Scriptures: Zechariah 14:8, 16; Ezekiel 47:1; Isaiah 58:11; 12:3; Psalm 78:16; Exodus 17:6 | 37-39 | NET note; SIL translator's notes | Search: biblia.com NET note John 7:37-38; tips.translation.bible SIL note; craigkeener.com. "Later read at this feast" (Keener) not used |
+| Punctuation: no punctuation in the oldest copies; streams from the believer (BSB and most Bibles) or from Jesus; 2:21; 19:34; early teachers divided | 37-39 | NET note | Search as above. "These notes do not choose" |
+| Bethlehem and David: Matthew 2:1; Luke 2:4; 2 Samuel 7:12; Isaiah 9:1; Matthew 4:15; irony or indifference as views | 40-44 | BSB; repository `hard` | BSB text; scholars not named |
+| Officers probably the temple guard | 45-53 | Repository deep note | "Probably" |
+| Jonah from Gath-hepher in Galilee (2 Kings 14:25) | 45-53 | BSB; NET note on 7:52 | BSB text; search: biblia.com NET note |
+| 7:53 belongs with 7:53 to 8:11, absent from the oldest copies | 45-53 | Book page ledger | Earlier ledger |
+| 19:38-39 | 45-53 | BSB | BSB text |
+
+Left out: Porphyry and Jerome on 7:8; P66's "the prophet" at 7:52 (not found); b. Sukkah 27b; 1 Enoch 48:6; 4 Ezra 13:52; the Jerusalem Talmud on drawing the Holy Spirit; the willow branches and the shofar; Josephus on the feast as the greatest; Baur, Bultmann, Barrett, Bruce and Carson by name; b. Yoma 85b.
