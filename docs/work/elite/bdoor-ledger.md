@@ -4519,3 +4519,33 @@ Cut: Potiphera ‘the one whom Ra has given’ (not confirmed by the search);
 the Egyptian ‘gold of honour’ awards; Aper-El at Saqqara; Redford and
 Kitchen on the names; the Middle Kingdom ‘nineteenth century BC’ date;
 Ptolemaic priestly motives for the stela.
+
+## The plain notes on Genesis 42 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/42.json`. Two web searches for
+this chapter, with the deep note, the verse notes and the book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seventeen when sold (37:2), thirty before Pharaoh (41:46), seven years of plenty; more than twenty years; Joseph nearly forty | 1-5, 6-17 | BSB (45:6 for the second year) | Repository |
+| Canaan lived on rain, Egypt on the Nile flood; going down to Egypt in famine (12:10) | 1-5 | Deep note (`historical`); book page | Repository |
+| ‘Joseph's brothers’ and ‘Joseph's brother’ in 42:3-4; favoritism still in place | 1-5 | Verse notes (3-4) | Repository |
+| Acts 7:11-12; Psalm 105:16-17 | 1-5 | BSB | Repository |
+| Nakar ‘recognize’ links 42:7-8 with 37:32 | 6-17 | Deep note (`words` H5234A) | Repository |
+| Tale of Sinuhe (Middle Kingdom) names the ‘Walls of the Ruler’, border defences on the north-east frontier | 6-17 | Sinuhe; Prophecy of Neferti | Search: "Story of Sinuhe Walls of the Ruler" (en.wikipedia.org "Walls of the Ruler"; cojs.org "Tale of Sinuhe"). The builder (Amenemhat I) and the site not named |
+| ‘As surely as Pharaoh lives’ an official's oath that hides his identity | 6-17 | Deep note (`cultural`) | Repository; stated simply |
+| Three readings of Joseph's harshness (testing; anger mixed in; bringing about the dream) | 6-17 | Deep note (`hard`) | Repository; no side |
+| Psalm 139:23; John 1:11; Luke 24:16 | 6-17 | BSB | Repository |
+| Ashem ‘guilty’ opens 42:21; Joseph's cries told first here; blood crying out (4:10) | 18-24 | Deep note (`words` H0818, `literary`, `cultural`) | Repository |
+| Simeon the second son; Reuben passed over ‘perhaps’ because he tried to save Joseph | 18-24 | BSB (29:33); a reading | Stated as ‘perhaps’ |
+| Numbers 32:23; Psalm 32:3, 5; Proverbs 28:13 | 18-24 | BSB | Repository |
+| Silver weighed, not coins; coins much later | 25-28 | Deep note (`cultural`); Genesis 23 note wording | Repository (earlier plain note, 23:3-16) |
+| First mention of God by the brothers in the Joseph story (42:28) | 25-28 | Deep note (`literary`) | Repository |
+| Hebrews 4:13; 1 John 1:9 | 25-28 | BSB | Repository |
+| The report to Jacob leaves out the three days and Simeon bound | 29-38 | Deep note (`literary`) | Repository |
+| Reuben's offer rash; Sheol the place of the dead | 29-38 | Deep note (`cultural`) | Repository |
+| Romans 8:28; Luke 15:20 | 29-38 | BSB | Repository |
+
+Cut: Egyptian records of eastern herders in the Delta (held for 46, where
+Papyrus Anastasi VI is checked); coins first struck in Asia Minor in the
+seventh century BC (not needed; ‘much later’ kept).
