@@ -1823,3 +1823,39 @@ The Priority of John (its year differed between results); the Florinus letter;
 Trajan's dates; any count of how much of John is not in the other Gospels;
 Ephraim (11:54) and Aenon near Salim (3:23) on the map (sites uncertain); the
 modern names of Bethany.
+
+## The plain notes on John 1 (2026-11-19)
+
+`client/public/bible/notes/john/plain/1.json`. 5 web searches (plus the book
+page's). Scripture is the BSB, checked word for word by the validator.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Genesis 1:1, 1:3-5; Psalm 33:6; Proverbs 8:22-31 | 1-5 | BSB | BSB text |
+| Logos also "reason" or "account"; Heraclitus and the Stoics used it for the reason ordering the universe | 1-5 | Reference works | Search: biblegateway Encyclopedia of the Bible "Logos"; biblicaltraining.org; internationalstandardbible.com |
+| New World Translation reads "a god"; Colwell (1933): definite predicate nouns before the verb usually lack the article; Harner (JBL, 1973): such nouns mainly qualitative | 1-5 | Colwell, JBL 1933; Harner, JBL 92 (1973) | Search: equip.org "John 1:1 and the New World Translation"; jashow.org; patheos.com. No year given for the NWT |
+| Theos without the article for the one God in 1:6, 1:12, 1:13, 1:18 | 1-5 | Greek text in the repository | Script |
+| Deuteronomy 6:4; John 20:28 | 1-5 | BSB | BSB text |
+| Josephus on John the Baptist (Antiquities 18.116-119); Acts 19:1-7 | 6-13 | Earlier ledger (Mark 6); BSB | Earlier ledger |
+| Exodus 4:22; Deuteronomy 14:1 | 6-13 | BSB | BSB text |
+| Exodus 40:34-35; 34:6; 33:18-23; 33:20; Isaiah 6:1; Exodus 24:9-11 | 14-18 | BSB | BSB text |
+| 1:18: P66, P75, Sinaiticus and Vaticanus read "only God"; later copies "only Son" | 14-18 | Metzger's Textual Commentary as reported; NTS abstract | Search: bible-researcher.com John 1:18; resolve.cambridge.org NTS "John 1:18: God the Only Son"; repository `text` |
+| "The Jews of Jerusalem" here means the authorities | 19-28 | Book page part on "the Jews"; repository chapter note `teach.pitfalls` | Repository |
+| 2 Kings 2:11; Malachi 4:5; Deuteronomy 18:15; Isaiah 40:3 | 19-28 | BSB | BSB text |
+| b. Ketubbot 96a: a student does for his teacher all a slave does except remove his shoes; Rabbi Joshua ben Levi, third century | 19-28 | Talmud | Search: steinsaltz.org Ketubot 96; en.wikipedia.org John 1:27; posenlibrary.com. Marked as later and conditional ("if people already thought that way") |
+| Bethany beyond the Jordan: Al-Maghtas listed by UNESCO in 2015; no firm proof | 19-28 | UNESCO | Book page ledger |
+| Qumran Community Rule (1QS 8) applies Isaiah 40:3 to its life in the wilderness and the study of the law | 19-28 | 1QS 8:12-16 | Search: muse.jhu.edu excerpt; orion-bibliography.huji.ac.il; cojs.org (Murphy-O'Connor). No column and line numbers given on the page |
+| Matthew 11:14; Luke 1:17 | 19-28 | BSB | BSB text |
+| Passover lamb per household (Exodus 12:3-13); daily lambs (Exodus 29:38-42); Isaiah 53:7; Isaiah 11:2; 19:36 and Exodus 12:46; Genesis 22:8; Revelation 17:14 | 29-34 | BSB | BSB text |
+| Readings of "Lamb of God": Passover, servant, daily offering, Genesis 22, a conquering lamb (some scholars) | 29-34 | Surveys of interpretation | Search: tips.translation.bible John 1:29; tyndalebulletin.org (Carey, "The Lamb of God and Atonement Theories"); sats.ac.za. Dodd not named (met only in a summary) |
+| Tenth hour about 4 p.m., hours counted from sunrise | 35-42 | Earlier ledger (Mark 15) | Earlier ledger |
+| Cephas Aramaic, Peter Greek, "rock"; Genesis 17:5; 32:28; 18:15-27 | 35-42 | BSB (1:42 says "translated as Peter") | BSB text |
+| Messiah "anointed one"; 1 Samuel 16:13; Psalm 2:2; Isaiah 11:1-5 | 35-42 | BSB | BSB text |
+| Nazareth not named in the Old Testament | 43-51 | Earlier ledger (Matthew 2) | Earlier ledger |
+| Micah 4:4; Genesis 27:35-36; Genesis 28:12, 16-17; Daniel 7:13-14; Psalm 2:7 | 43-51 | BSB | BSB text |
+
+Left out: Philo; Wisdom of Solomon and Sirach (deep note); Targums and the
+Memra; Origen's Bethabara and Riesner's Batanea; Dodd by name; the Caesarea
+inscription on Nazareth; the size of Nazareth; Genesis Rabbah 68:12; the
+"seven days" reading; the "hymn" and chiasm theories; every scholar in the
+deep note by name.
