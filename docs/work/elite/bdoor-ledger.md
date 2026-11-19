@@ -4946,3 +4946,27 @@ without teaching it as a method").
 
 Left out: the "Libyans" reading of the synagogue's name; the number of
 synagogues in 6:9; Stephen as "first deacon" in Irenaeus.
+
+## The plain notes on Acts 7 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/7.json`. 3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The call in Mesopotamia; Genesis 12:1-4; 15:7; Nehemiah 9:7; Terah's numbers (Genesis 11:26, 32; 12:4); readings (Abram named first for importance; a way of telling known then) | 1-8 | BSB; deep note | Repository; stated as views |
+| Seventy and seventy-five: the Hebrew of Genesis 46:27 and Exodus 1:5; the Septuagint's seventy-five in Genesis 46:27 | 9-16 | Genesis 46 plain note | Repository wording. The Dead Sea Exodus fragment reading seventy-five (deep note) not used: the search found the claim disputed |
+| The Shechem tomb: Genesis 23; 33:19; 50:13; Joshua 24:32; 12:6-7; readings (two purchases summed up; an unrecorded purchase by Abraham; a joining under pressure faithfully recorded; an error) | 9-16 | BSB; deep note `hard`; Genesis 23 plain note | Stated as views |
+| Exodus 2:2, 10, 11-14; Exodus 3:5; Deuteronomy 18:15; Exodus 32:1 | 17-43 | BSB | Repository |
+| Amos 5:25-27: Hebrew Sakkuth and Kaiwan, "beyond Damascus"; the Greek reads Rephan (and Molech); Stephen "beyond Babylon" | 39-43 | Septuagint | Search: intertextual.bible (Amos 5:26 LXX and Acts 7:43); biblehub.com; hypr.bible (Tyndale). The "coded Rome" suggestion not used |
+| "Made with hands" used of idols | 39-50 | Deep note `cultural` | Stated as the hearers' language |
+| 1 Kings 8:27; Isaiah 66:1-2; Mark 14:58 | 44-50 | BSB | Repository |
+| Exodus 33:5; Deuteronomy 10:16; Jeremiah 6:10; 7:26; Nehemiah 9:26; 2 Chronicles 24:21; Galatians 3:19; Hebrews 2:2 | 51-53 | BSB | Repository |
+| "You stiff-necked people" a prophet's speech from inside Israel; misuse pointer to 2:22-28 | 51-53 | Deep note `cultural`; Acts 2 plain note | Repository |
+| Son of Man standing: readings (welcome; witness); Daniel 7:13; Psalm 110:1 | 54-60 | Deep notes; standard readings | Stated as views |
+| Stoning law: Leviticus 24:14, 16; Deuteronomy 17:7; John 18:31; mob action or a gap in Roman control; Pilate removed AD 36; Stephen's date unknown | 54-60 | Josephus, Antiquities 18.85-89 as cited; commentaries | Search: oursundayvisitor.com; gotquestions.org; biblehub.com. "Probably" for the cloaks |
+| Luke 23:34, 46; 1 Corinthians 15:9; 1 Timothy 1:13 | 54-60 | BSB | Repository |
+| Care line for those bereaved by violence (Genesis 23 form) with Find Help | 54-60 | Genesis 23 plain note | Repository wording |
+
+Left out: 4QExod reading seventy-five; the Samaritan Pentateuch's numbers for
+Terah; Philo on Moses' education; the "coded Rome" reading of "beyond
+Babylon"; a date for Stephen's death.
