@@ -203,3 +203,92 @@ Left out: Gennesaret's fertility in Josephus, Bethsaida's disputed site, the
 Machaerus excavations, the Theodotus inscription, Juvenal's baskets, the
 Mishnah's blessing over bread, and the first husband's name in Josephus (all in
 the deep note, not checked on this run).
+
+## The plain notes on Mark 7 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Priests wash hands and feet before serving at the altar | 7:1-13 | Exodus 30:19-21 | BSB text |
+| The tradition of the elders taught by mouth, later written in the Mishnah (around AD 200) | 7:1-13 | Earlier ledger (Mishnah's date) | Earlier ledger |
+| Shammai and Hillel dispute whether hands are washed before or after mixing the cup | 7:1-13 | Mishnah Berakhot 8:2 | Search: mishnah.org; sacred-texts.com (Lukyn Williams, Berakhot); Wikisource translation of Berakhot 8 |
+| Qorban carved on Second Temple ossuaries near Jerusalem as a warning against reuse | 7:1-13 | Fitzmyer, "The Aramaic Qorbān Inscription from Jebel Hallet et-Tûri and Mk 7:11/Mt 15:5" (reprinted 1997); Mount Scopus ossuary (Cathedra, 2007) | Search: orion-bibliography.huji.ac.il; cris.biu.ac.il "A New 'Qorban' Inscription on an Ossuary from Jerusalem". Stated generally, with no find-spot named |
+| A vow concerning a man and his own parents may be opened (the Sages agree with Rabbi Eliezer there) | 7:1-13 | Mishnah Nedarim 9:1 | Search: jtsa.edu Nedarim 9:1; mishnah.org; sefaria.org sheet |
+| Vows not to be broken; honour parents; cursing parents | 7:1-13 | Numbers 30:2; Exodus 20:12; 21:17; Isaiah 29:13; 2 Thessalonians 2:15 | BSB text |
+| Masculine participle in 7:19 makes Jesus the one who cleanses all foods; most modern versions; the neuter (Textus Receptus, KJV) reads "purging all meats"; some scholars argue only the handwashing rules are meant | 7:14-23 | Robertson, Word Pictures; translation handbooks (UBS/SIL) | Search: biblestudytools.com Robertson on 7:19; tips.translation.bible on 7:19; freely-given.org Greek. Boyarin and Crossley (deep note) not named |
+| Heart texts; Peter's vision; Romans 14:14 | 7:14-23 | Jeremiah 17:9; Psalm 51:10; Ezekiel 36:26; Acts 10:15; Romans 14:14 | BSB text |
+| Tyrian silver shekels were the coin of the temple tax | 7:24-30 | Numismatic summaries | Search: en.wikipedia.org Tyrian shekel; coinweek.com "Graven images and the coins of ancient Tyre"; dannythedigger.com |
+| Tyre and Sidon depended on the king's country for food; "Canaanite woman"; Israel God's son; first to Israel | 7:24-30 | Acts 12:20; Matthew 15:22, 24; Exodus 4:22; Genesis 12:3; Romans 1:16 | BSB text |
+| "Lord" (kyrie) as a form of address to Jesus only at 7:28 in Mark; kynarion a little or house dog | 7:24-30 | Greek text of Mark | Repository Greek text (every vocative of G2962 in Mark 1 to 16); deep note on the diminutive (stated without taking a side on its force) |
+| Tacitus: a blind man at Alexandria asked Vespasian to moisten his eyes with spittle (about AD 69-70) | 7:31-37 | Tacitus, Histories 4.81 | Search: penelope.uchicago.edu (Thayer) Histories 4; sacred-texts.com; en.wikipedia.org "Fasting spittle" |
+| Mogilalos only at Mark 7:32 in the New Testament and only at Isaiah 35:6 in the Greek Old Testament | 7:31-37 | Thayer's lexicon; Constable's notes | Search: biblehub.com 3424; bibliaparalela.com Thayer's 3424. One low-authority site lists Exodus 4:10 too; the standard lexicon does not, and that is followed |
+| Ambrose: the ears touched and Ephphatha said before baptism, so the ears would open to the word | 7:31-37 | Ambrose, On the Sacraments 1.1-3; On the Mysteries 1.3 | Search: newadvent.org On the Mysteries; sermonindex.net On the Sacraments; crossroadsinitiative.com. Placed as "the late 300s"; no exact year |
+| Stenazō, "groan"; Isaiah 35; the Decapolis man of 5:20; eyes and ears in 8:18 | 7:31-37 | Romans 8:23; Isaiah 35:4-6; Mark 5:20; 8:18 | BSB text; repository Greek |
+
+Left out: Josephus on the Pharisees and on the Tyrians, Furstenberg's thesis,
+the Pseudo-Clementine names Justa and Bernice, Theissen by name, Pliny on
+saliva, the lectionary, and Drouais's painting (all in the deep note, not
+checked on this run). The cleansing of hands "with a fist" (7:3) is not
+discussed.
+
+## The plain notes on Mark 8 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The second feeding's baskets are spyris, the word of Acts 9:25; the first feeding's are kophinos | 8:1-10 | Greek text; Hastings' Dictionary of the Bible "Basket"; Strong's 4711 and 2894 | Search: biblehub.com 4711, 2894; studylight.org Hastings. "Large enough to hold a man" rests on Acts 9:25. Juvenal (deep note) not used |
+| Dalmanutha named in no other ancient source and unlocated; Matthew has Magadan, also unknown; later copies change to Magdala | 8:1-10 | Bible dictionaries; textual commentaries | Search: studylight.org Hastings "Dalmanutha"; biblegateway.com Encyclopedia of the Bible "Magadan"; en.wikipedia.org Matthew 15 |
+| Manna forty years; Elisha's loaves | 8:1-10 | Exodus 16:35; 2 Kings 4:43 | BSB text |
+| Leaven removed at Passover; a little leaven; Luke's gloss; Herod Antipas killed John | 8:11-21 | Exodus 12:15; 1 Corinthians 5:6; Luke 12:1; Mark 6:14-29 | BSB text; earlier ledger (Antipas) |
+| Eyes that do not see | 8:11-21 | Jeremiah 5:21; Ezekiel 12:2 | BSB text |
+| Philip raised Bethsaida to a city and named it Julias; site disputed between et-Tell and el-Araj | 8:22-26 | Josephus, Antiquities 18.28; Arav; Notley and Aviam | Search: biblicalarchaeology.org "The Great Bethsaida Debate"; BAR Spring 2020; bibleinterp.arizona.edu. Sites not named on the page |
+| Caesarea Philippi: Pan's cave (Paneas), at the foot of Hermon by a spring of the Jordan; Herod's temple to Augustus; Philip founded the city and named it Caesarea, "Philippi" to tell it from the coastal Caesarea | 8:27-30 | Josephus, Jewish War 1.404-405; Antiquities 18.28 | Search: en.wikipedia.org Banias; jewishvirtuallibrary.org Caesarea Philippi; biblewalks.com; biblicalarchaeology.org "Excavating Banias". The deep note's distance (forty kilometres) was not checked and is left out; the temple's exact site is not discussed |
+| Psalms of Solomon 17 (first century BC; Atkinson dates it 37 to 30 BC): a son of David to clear Jerusalem of the nations and rule | 8:27-30 | Psalms of Solomon 17 | Search: paleojudaica.blogspot.com; readingacts.com; israelbiblecenter.com. Qumran texts (deep note) not used |
+| Christ = Messiah = anointed; David's son | 8:27-30 | 2 Samuel 7:12-16 | BSB text; ordinary lexicon fact |
+| Elders, chief priests and scribes together in Jerusalem's council | 8:31-33 | Mark 14:53; 15:1 | BSB text |
+| "Get behind me" (hupage opisō mou) shares opisō mou with "Come, follow me" (1:17) and 8:34 | 8:31-33 | Greek text | Repository Greek text |
+| Crucified Messiah a stumbling block; Isaiah 53; Psalm 118:22 quoted at 12:10; Daniel 7 | 8:31-33 | 1 Corinthians 1:23; Isaiah 53:3, 5; Psalm 118:22; Daniel 7:13-14 | BSB text. The deep note's "no Jewish text before Jesus" claim was not checked and is not used |
+| Some scholars since about 1900 read the predictions as shaped after Easter | 8:31-33 | Wrede (1901) | Earlier ledger |
+| Varus crucified about two thousand after Herod's death (4 BC) | 8:34-38 | Josephus, Antiquities 17.295; Jewish War 2.75 | Search: lexundria.com 17.295 and War 2.75 (Whiston). 4 BC from the earlier ledger |
+| Plutarch: every criminal who is punished carries his own cross | 8:34-38 | Plutarch, On the Delays of the Divine Vengeance 9 | Search: cts.perseids.org (Goodwin translation). Paraphrased, no Moralia page number given (not confirmed) |
+| Yehohanan: 1968, Giv'at ha-Mivtar, Jerusalem; heel bone with an iron nail, in an ossuary | 8:34-38 | Haas (1970); Zias and Sekeles (1985) | Search: en.wikipedia.org Jehohanan; cojs.org; library.biblicalarchaeology.org |
+| Psychē means life and soul; Psalm 49:8; Hosea 2; Jeremiah 3; Galatians 2:20 | 8:34-38 | Greek text; BSB text | Repository; BSB text |
+
+Left out: Theudas and the Egyptian prophet, the Qumran messiahs, the Targum and
+Talmud on the Messiah, Origen and Augustine on the rock, Ignatius and Xavier,
+Luther's Heidelberg theses, Bonhoeffer, the lectionary and the hymn (all in the
+deep note, not checked on this run).
+
+## The plain notes on Mark 9 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| A fuller (gnapheus) cleaned and whitened cloth; the word only here in the New Testament | 9:1-8 | Thayer's and Strong's lexicons (1102); translation handbooks | Search: biblehub.com 1102; tips.translation.bible on 9:3; Robertson's Word Pictures. Alkaline earths and the smell (deep note) not used |
+| Booths of the Feast of Tabernacles | 9:1-8 | Leviticus 23:42-43 | BSB text |
+| The mountain unnamed; Tabor first linked to it in Origen (third century), then Cyril and Jerome; many modern scholars suggest Hermon, near Caesarea Philippi; not settled | 9:1-8 | Catholic Encyclopedia "Transfiguration"; en.wikipedia.org Mount of Transfiguration | Search: newadvent.org; catholic.com; en.wikipedia.org. Heights, Barluzzi's church and Meron (deep note) not used |
+| Sinai cloud six days; Moses' face; white as snow; Elijah's whirlwind; Moses' grave unknown; listen to the prophet like Moses | 9:1-8 | Exodus 24:16; 34:29; Daniel 7:9; 2 Kings 2:11; Deuteronomy 34:6; 18:15 | BSB text |
+| Three readings of 9:1 (a mistake; the mountain; resurrection and Spirit) | 9:1-8 | Standard commentary positions | Stated as views, no names |
+| Resurrection expected at the last day | 9:9-13 | John 11:24 | BSB text |
+| Elijah before the Day of the LORD; turning hearts | 9:9-13 | Malachi 4:5-6 | BSB text |
+| Ben Sira: Elijah ready to turn the heart of the father to the son and to restore the tribes of Jacob | 9:9-13 | Sirach 48:10 | Search: biblehub.com Sirach 48:10; bible.com RSV; intertextual.bible. The deep note's date (around 180 BC) was not checked and is not given |
+| John dressed like Elijah; killed at Herodias's wish; Jezebel hunted Elijah | 9:9-13 | Mark 1:6; 6:17-29; 1 Kings 19:2 | BSB text; earlier ledger |
+| On the Sacred Disease (about 400 BC) argues seizures have natural causes; Matthew says the boy "has seizures" | 9:14-29 | Hippocratic corpus; Matthew 17:15 | Search: encyclopedia.com "Epilepsy"; Hippocratic Corpus summaries; historyskills.com. Authorship left open (said "a Greek medical writing") |
+| Took by the hand / stood up as in 5:41-42 | 9:14-29 | Mark 5:41-42 | BSB and Greek text |
+| "And fasting" (9:29) absent from Sinaiticus (first hand) and Vaticanus; most modern versions omit; many think it added | 9:14-29 | Metzger-style textual commentary as summarised | Search: uasvbible.org NTTC on 9:29; blog.adw.org; confessionalbibliology.com (the opposing case) |
+| Care: seizures and mental illness are illnesses; a plain line to real help | 9:14-29; 9:42-50 | CLAUDE.md, "Care for the reader in the hard places" | Pastoral, not a historical claim |
+| Teachers sat to teach | 9:30-37 | Luke 4:20 | BSB text |
+| Pais means both child and servant | 9:30-37 | Standard lexicons | Ordinary lexicon fact. Roman law on children (deep note) not used |
+| Mark 10:45; Isaiah 53:3 | 9:30-37 | BSB text | BSB text |
+| Jewish exorcists at Ephesus; Eldad and Medad; "He who is not with Me" | 9:38-41 | Acts 19:13; Numbers 11:28-29; Matthew 12:30 | BSB text. The Paris magical papyrus (deep note) not used |
+| Mylos onikos: a millstone large enough to be turned by a donkey; hand mills small | 9:42-50 | Strong's and Thayer's (3684) | Search: biblehub.com 3684; blueletterbible.org G3684; bibleref.com |
+| Gehenna from the Valley of Hinnom; child sacrifice at Topheth; the Valley of Slaughter | 9:42-50 | Jeremiah 7:31-32; 2 Kings 23:10 | BSB text |
+| The rubbish-dump explanation first appears in David Kimhi around 1200 and has no ancient literary or archaeological support | 9:42-50 | Lloyd R. Bailey, "Gehenna: The Topography of Hell", Biblical Archaeologist 1986 | Search: bibleplaces.com (Bolen); godawa.com (Bailey PDF); thinkingtobelieve.com. Kimhi named only as "a Jewish commentator" |
+| Isaiah 66:24; salt with every grain offering | 9:42-50 | Isaiah 66:24; Leviticus 2:13 | BSB text |
+
+Narrowed: salt losing its saltiness. A search for impure Dead Sea salt
+leaching could not confirm the deep note's explanation, so the page gives no
+chemical account. The reading of 9:49 is given as open. The page takes no side
+on the nature of hell beyond what Christians agree on.
+
+Left out: Josephus on Moses' cloud, the Mishnah on Elijah, 1 Enoch and 4 Ezra,
+Rabbi Akiva on Gehenna, Suetonius on drowning, the Mishnah on agents, the
+Hippocratic author's name, and the textual question of verses 44 and 46 (all in
+the deep note, not checked on this run).

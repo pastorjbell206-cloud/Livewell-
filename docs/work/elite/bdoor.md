@@ -245,3 +245,67 @@ component the pilot built and measured.
 **Not verified:** the new chapters were not looked at in a browser.
 
 **Next:** Mark 7.
+
+## Continuation: Mark 7 to 9 (2026-11-19)
+
+Same pattern, same data shape (`client/public/bible/notes/mark/plain/<n>.json`,
+`"plain": true` on each chapter note). No code changed; the deep notes are
+unchanged underneath.
+
+| Chapter | Passages | Plain words added |
+|---|---|---|
+| Mark 7 | 4 (unwashed hands and Corban; what makes a person unclean; the Syrophoenician woman; "Be opened") | 2,191 |
+| Mark 8 | 6 (four thousand fed; a sign and the one loaf; the blind man in two stages; "You are the Christ"; the Son of Man must suffer; take up your cross) | 2,685 |
+| Mark 9 | 6 (the transfiguration; Elijah; the boy and his father; who is the greatest; not one of us; millstones, fire and salt) | 2,788 |
+| Total | 16 | 7,664 |
+
+Mark 1 to 9 now all open with the plain layer: 53 passages, about 22,700
+plain words.
+
+**Sources.** Every claim is in `docs/work/elite/bdoor-ledger.md` under "The
+plain notes on Mark 7", "Mark 8" and "Mark 9". 24 web searches were run (8 per
+chapter); the rest rests on the earlier ledger, the Berean Standard Bible text
+(every quotation checked word for word by the validator) and the Greek text in
+the repository. Main sources: Mishnah Berakhot 8:2 and Nedarim 9:1; Fitzmyer
+and the Mount Scopus ossuary on qorban inscriptions; the Tyrian shekel; Tacitus,
+Histories 4.81 on Vespasian; Thayer on mogilalos; Ambrose, On the Sacraments
+and On the Mysteries; Josephus, Antiquities 17.295 (Varus) and 18.28 (Bethsaida
+Julias, Caesarea Philippi), Jewish War 1.404-405; Psalms of Solomon 17;
+Plutarch on the condemned carrying his cross; the Yehohanan heel bone (1968);
+Sirach 48:10; the Hippocratic On the Sacred Disease; Bailey (1986) on Gehenna
+and Kimhi; lexicons on spyris, gnapheus and mylos onikos; the textual evidence
+for 7:19 and 9:29.
+
+**Narrowed or left out.** Mark 7: "some Jews died rather than break the food
+laws" was cut (1 Maccabees 1:62-63 not checked this run); Josephus on the
+Tyrians, Furstenberg, Theissen and Pliny not used. Mark 8: the deep note's
+"no Jewish text before Jesus speaks of a suffering Messiah" was replaced by
+1 Corinthians 1:23; the distance to Caesarea Philippi and the place of the
+Jordan's inflow at Bethsaida were cut; Plutarch is paraphrased with no page
+number. Mark 9: Ben Sira is given no date; the chemistry of salt losing its
+taste could not be confirmed and is not given; the reading of 9:49 is left
+open; children's legal standing in Rome is not stated.
+
+**Care.** Mark 9:22 (a boy thrown into fire and water) and 9:43-47 (cutting off
+hand, foot, eye): the notes say seizures and mental illness are illnesses and
+that calling them demons is wrong and harmful; that Jesus' words are a picture,
+never a command to harm the body; and each ends with a plain line to real help
+(a doctor, a pastor, a crisis line).
+
+**Contested matters, stated without taking a side:** the authority of
+tradition (7:1-13); whether Jesus or the later church set aside the food laws
+(7:19); why Jesus spoke so to the Syrophoenician woman; whether the two
+feedings are one story; the meaning of twelve and seven baskets; whether Jesus
+foresaw his death (8:31); what 9:1 refers to; the mountain of the
+transfiguration; "and fasting" in 9:29; 9:49; the nature of hell beyond what
+Christians agree on.
+
+**What was run** (after merging the latest `claude/todo-implementation-hhp4bm`,
+one at a time): `validate-bible-notes.mjs` after each chapter; all 36 commands
+of the CI content-gates step, all passed; `pnpm check` passed; `pnpm test`:
+146 files and 1,651 tests passed, 73 skipped. No build, Lighthouse or
+screenshots, since no code changed.
+
+**Not verified:** the new chapters were not looked at in a browser.
+
+**Next:** Mark 10.
