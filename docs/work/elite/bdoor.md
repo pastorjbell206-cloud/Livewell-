@@ -4287,3 +4287,142 @@ uncertain).
 Genesis 42 onward in plain words, in the same shape. Genesis 47 must face
 Joseph's famine policy in its later years (pointed to from 41:47-57).
 
+
+## Continuation: Genesis 42 to 50 (2026-11-19)
+
+Nine chapters in plain words, which completes Genesis. Same shape as 34 to
+41: each passage's third part is `later` ("Where the Bible takes this up"),
+never `ot`; each chapter note gained only `"plain": true` at its end (the
+diff changes its closing lines and nothing else). After each chapter every
+passage was printed field by field and read: every text sits under its
+right heading. `validate-bible-notes genesis` passed with no exception
+before each commit. On the way it caught three quotations that joined
+words across a speaker tag (43:23 "said the steward", 44:16 "Judah
+replied", 48:18 "Joseph said"), one paraphrase of Deuteronomy 26:5 and one
+of Psalm 128:6 (all now split or replaced by the BSB words), and an
+exclamation inside single quotes (46:2 "Jacob, Jacob!", now BSB text in
+double quotes). Quotations whose BSB wording carries an em-dash (43:8,
+44:12, 44:16, 49:9, 49:22, 50:20) were cut back so the quoted words
+contain none; 50:20's last clause is quoted separately, not joined.
+
+The word-count table of "Continuation: Genesis 34 to 41" was corrected
+first (recount by script over each passage's title and five prose fields:
+34: 2,306; 35: 2,417; 36: 1,129; 37: 2,637; 38: 2,155; 39: 1,942; 40:
+1,380; 41: 2,446; total 16,412, the same as asked).
+
+### Chapters 42 to 50 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Genesis 42 | 5 (ten brothers go down for grain; ‘You are spies!’; ‘We saw his anguish’; silver in the sack; ‘Everything is going against me’) | 2,430 |
+| Genesis 43 | 4 (Judah's pledge; ‘If I am bereaved, I am bereaved’; afraid of a trap; a meal with Joseph) | 1,726 |
+| Genesis 44 | 4 (the silver cup; ‘God has exposed the iniquity of your servants’; Judah speaks for his father; ‘Let your servant stay here in place of the boy’) | 2,023 |
+| Genesis 45 | 5 (‘I am Joseph’; ‘It was not you who sent me here, but God’; ‘Come down to me without delay’; Pharaoh's welcome; ‘My son Joseph is still alive’) | 2,101 |
+| Genesis 46 | 4 (‘Do not be afraid to go down to Egypt’; seventy people; ‘Finally I can die’; ‘Your servants have raised livestock’) | 1,779 |
+| Genesis 47 | 5 (five brothers before Pharaoh; Jacob blesses Pharaoh; money, livestock, and at last themselves; ‘Servants of Pharaoh’, and a fifth for ever; ‘Do not bury me in Egypt’) | 2,312 |
+| Genesis 48 | 4 (‘Ephraim and Manasseh shall be mine’; ‘Who are these?’; the crossed hands; ‘God will bring you back’) | 1,944 |
+| Genesis 49 | 6 (Reuben; Simeon and Levi; Judah and the scepter; Zebulun to Naphtali, and a prayer; Joseph and Benjamin; ‘Bury me with my fathers’) | 2,952 |
+| Genesis 50 | 4 (Joseph mourns his father; the burial at Machpelah; ‘God intended it for good’; ‘Carry my bones up from this place’) | 2,169 |
+| Total | 41 | 19,436 |
+
+The whole book now: 50 chapters in plain words, 213 passages, 115,712
+words (same count).
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Genesis 42" to "50". 20
+web searches (2, 1, 2, 1, 3, 4, 2, 3, 2; one more page fetch refused by the
+network). Main sources: the Tale of Sinuhe's ‘Walls of the Ruler’;
+Herodotus 2.41 (Egyptians and a Greek's knife) and 2.86 (seventy days in
+natron), each marked as much later; the Laws of Hammurabi 6 (theft of
+temple or palace goods) and 46 (fields let for half or a third of the
+harvest); Babylonian oil-on-water omen texts, stated generally; the
+Septuagint's seventy-five at 46:27 behind Acts 7:14; Papyrus Anastasi VI
+(late 1200s BC); Pi-Ramesses (Ramesses II, 1200s BC); the 47:21 variant
+(Masoretic ‘to the cities’, Samaritan and Greek ‘slaves’); the Friday
+evening blessing of sons; ‘bed’ and ‘staff’ in 47:31 and Hebrews 11:21;
+Cross and Freedman (thesis 1950, published 1975); Targum Onkelos and
+Sanhedrin 98b on Shiloh (paraphrased); 110 years as the Egyptian ideal
+(ASOR). The book page's Goshen wording, the Genesis 12 land-promise note,
+the Genesis 16 safety lines, the Genesis 23 grief lines, the Genesis 27
+‘neither cancels the other’ wording, and the slavery and suffering Honest
+Answers are reused or pointed to.
+
+### Cut or narrowed
+
+Cut: 4Q252 on 49:10 (wording not confirmed); a Dead Sea Scrolls copy of
+Exodus 1:5 reading seventy-five (sources disagree); the Egyptian ‘god's
+father’ title for 45:8; Kitchen's Hyksos-age cup divination and the Middle
+Kingdom statuettes; temple exemption decrees; Nahmanides, Justin Martyr,
+Augustine, Gunkel and Westermann on 49; the Tel Dan, Mesha and Amarna
+evidence for the tribes (the brief keeps the tribes to the Bible's own
+reports); Diodorus on embalming; Acts 7:15-16 (Shechem); the silver's
+weight in kilograms; the count of ‘father’ in Judah's speech; ‘the first
+time God is called shepherd’. Narrowed: ‘many readers’ on the fivefold
+portion, Zebulun's coast, the archers and the brothers' message; Onkelos
+‘in the form that has come down to us’; the seated ruler's staff
+‘probably’; the ‘mild terms’ view given as what its holders say.
+
+### Contested matters, and how they are stated
+
+Joseph's harshness (42): testing; anger mixed in; bringing about the dream;
+"These readings do not cancel each other out." Divination (44): the words
+are spoken inside the trick; disguise, real practice before the law, or
+irony; "These notes do not claim more than the text says." Judah's
+substitution (44): a Christian reading, not a prophecy, with the difference
+named. God's hand and human guilt (45, 50): Reformed and Arminian (with
+many Catholic and Orthodox) accounts; no side. Seventy and seventy-five
+(46). ‘Shepherds detestable’ (46): "It is honestly hard to say." The famine
+policy (47): three readings, "The narrator does not comment, and these
+notes take no side." The younger over the older (48): Reformed and
+role-based readings, pointing to 25:19-26. The 48:22 battle: two readings,
+"The text does not settle it." 49:10: four renderings; Jewish, critical and
+Christian readings; "neither side's reading is dishonest"; "Nothing in this
+chapter is a prophecy about any modern nation or people." The brothers'
+message (50): open. Embalming numbers (50): do not match exactly; one
+common harmonisation given.
+
+### Care lines included
+
+45:4-8: forgiving does not mean returning to a person who is still
+dangerous, with the Genesis 16 safety lines word for word and the Find
+Help sentence. 50:1-3: the Genesis 23 grief lines (crisis line, Find
+Help). 50:15-21: 50:20 is never a line for fresh grief or for explaining
+away abuse; "If someone has hurt you, what they did was wrong"; Find Help.
+No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes genesis` and `validate-no-emdash` after each chapter:
+pass. At the end, all 36 commands of the content-gates step in ci.yml, one
+at a time: exit 0 each (validate-bible-notes: 66 introductions, 1,189
+chapter notes, 139 chapters in plain words; validate-no-emdash: 260 files,
+0 em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`:
+146 files passed, 7 skipped; 1,674 tests passed, 73 skipped. `pnpm build`:
+exit 0 (after the chapter commits).
+
+Served with `scripts/serve-like-vercel.mjs` on port 4604; Playwright at 390
+wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed. `/study/bible/genesis/1` to `/50`: every passage's heading, its
+part headings in order and the first 60 characters under each matched the
+data in all fifty chapters, 213 passages (42 to 50: 5, 4, 4, 5, 4, 5, 4,
+6, 4); no sideways scroll, no page errors and no console errors on any.
+Screenshots of every passage of Genesis 47 and 50 read by eye:
+`/home/user/elite-shots/bdoor/gn47-390-*` and `gn50-390-*` (the fixed
+masthead appears once mid-image where the element screenshot scrolls).
+Server stopped by its PID, dist/ deleted, no lh-*.json. Lighthouse not run
+(data only, no code change).
+
+### Still unverified
+
+The exact words of Targum Onkelos and Sanhedrin 98b (paraphrased); which
+modern translations read ‘until tribute comes to him’ (not named); the
+Hammurabi rent shares as typical practice (only the law's wording).
+
+### Next
+
+Genesis is complete in plain words. The next book is for the lead to
+choose.
