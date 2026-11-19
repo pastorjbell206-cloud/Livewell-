@@ -2991,3 +2991,39 @@ Judas the Galilean's followers; the hours and height of the tower; Weill;
 the Damascus Document and the Mishnah on animals on the Sabbath; Leviticus
 19:23-25 on young trees; the lion contrast for the fox; Gundry and Bock by
 name.
+
+## The plain notes on Luke 14 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/14.json`. Five searches for this
+chapter, with the earlier ledger (Mark 6, 8 and 9; Matthew 5 and 10).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Dropsy: fluid swelling; ancient medicine held its sufferers insatiably thirsty; dropsy a common Greek and Roman picture of greed; Horace, Odes 2.2; some scholars (Braun, Hartsock) read Luke 14:1-6 as opening the chapter's theme | 1-6 | Horace, Odes 2.2; Hartsock, Biblical Interpretation (2013) and Braun (1995) as reported | Search: cts.perseids.org Odes 2.2 (Conington); radicaldiscipleship.net (Myers citing Gilleland); core.ac.uk. "Some scholars think"; no scholar named; "Luke does not say so" |
+| Hudrōpikos only in 14:2 in the NT | 1-6 | Greek text | Script over the repository's Greek (G5203, one occurrence) |
+| Third meal at a Pharisee's (7:36; 11:37); third Sabbath healing with objection (6:6-11; 13:10-17); the Pharisees (Luke 11 wording) | 1-6 | BSB; Luke 11 plain note | Repository |
+| Deuteronomy 5:14-15 | 1-6 | BSB | Repository (the part with an em-dash not quoted) |
+| Reclining at table; places of honour; honour a public verdict; Luke 14:8-10 close to Proverbs 25:6-7 | 7-11 | The site's honour-and-shame portrait (`client/public/context/worlds/honor-and-shame.json`) | Repository |
+| Proverbs 25:6-7; 1 Samuel 2:8; Luke 1:52 | 7-11 | BSB | Repository |
+| The Rule of the Congregation (1QSa 2:3-10) bars the lame, blind, deaf and those with a visible blemish from the assembly of the last days, because holy angels are present | 12-14 | 1QSa | Search: dornsife.usc.edu (West Semitic Research Project) "The Rule of the Congregation"; bc.edu CJL translation; orion-bibliography.huji.ac.il (Wassen 2008). Column and line not given on the page |
+| Deuteronomy 14:29; Leviticus 21:18; 2 Samuel 9:13; Proverbs 19:17; Acts 2:44-46 | 12-14 | BSB | Repository |
+| Esther 6:14 (servants fetch Haman to the banquet); Deuteronomy 24:5; Isaiah 25:6, 8; 55:1; Matthew 22:1-14 | 15-24 | BSB | Repository |
+| Augustine at first opposed coercion; in Letter 93 to Vincentius (about 408), a Donatist bishop, he says he changed his mind and cites "compel them to come in" for the church's use of imperial law | 15-24 | Augustine, Letter 93 | Search: newadvent.org/fathers/1102093.htm; earlychurchtexts.com "Letter 93 to Vincentius (Cogite Intrare)"; romanletters.org; Schaff as quoted. Paraphrased; "around AD 408" |
+| Pierre Bayle, a Protestant exile, Philosophical Commentary on Luke 14:23 (1686), against forcing conscience, written amid the persecution of French Protestants | 15-24 | Bayle | Search: encyclopedia.com "Bayle, Pierre"; books.openbookpublishers.com (the 1686 text); oll.libertyfund.org. Paraphrased. The 1685 revocation and the dragoons not named (not tied by the search) |
+| Dignitatis Humanae (7 December 1965): no one to be forced to act against conscience in religious matters | 15-24 | Second Vatican Council | Search: vatican.va (the text, section 2); cbcew.org.uk PDF; ewtn.com. Paraphrased |
+| Anagkazō: Matthew 14:22, Mark 6:45 (Jesus "made" the disciples get into the boat), Luke 14:23, Acts 26:11 and others; parabiazomai at Luke 24:29 ("pleaded") | 15-24 | Greek text; BSB | Script over the repository's Greek (G0315, G3849) |
+| Luke 9:55; 2 Corinthians 5:20 | 15-24 | BSB | Repository |
+| "Hate" as "love less" (Genesis 29:30-31) and the sentence on the sharper word, word for word; the family-rejection paragraph word for word; "The division Jesus speaks of comes from others' response to him, not from his followers' hostility." | 25-33 | Matthew 10 plain note | Copied word for word |
+| Exodus 20:12; Luke 18:20; John 19:26-27; 1 Timothy 5:8; Mark 7:9-13; Psalm 27:10; Luke 5:11, 28; Acts 5:4 | 25-33 | BSB | Repository |
+| Aretas IV defeated Antipas around AD 36 (Josephus) | 25-33 | Earlier ledger (Mark 6) | Earlier ledger |
+| Salt (Matthew 5 wording: "How salt could lose its taste has been explained in different ways, and no one explanation is agreed. The picture is plain enough: salt that does not do what salt does is useless."); Leviticus 2:13 (Mark 9) | 34-35 | Matthew 5 and Mark 9 plain notes | Copied word for word |
+
+Left out: the Damascus Document on animals in a pit and the later rabbinic
+rules (b. Shabbat 128b, m. Yoma 8:6); Plutarch's Table Talk; Leviticus Rabbah
+1:5 and Akiva; the Gospel of Thomas, saying 64; Bar Ma'yan in the Jerusalem
+Talmud and Jeremias; "a buyer inspected a field before purchase" and the
+tested oxen (the deep note's custom, not checked); Gregory the Great's homily;
+Thomas Aquinas on compelling heretics; Letter 185; the dragonnades and the
+1685 revocation; Jerome to Heliodorus; Kierkegaard; Bonhoeffer; Bach and the
+lectionaries; Dead Sea salt and b. Bekhorot 8b; salt on soil and manure;
+mōrainō ("become foolish").
