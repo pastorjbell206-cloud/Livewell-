@@ -672,3 +672,27 @@ killing of the children is told in one sentence as Matthew tells it; the
 passage names Herod as the cause, gives the mothers' grief its place, and
 keeps a path to help visible (someone trusted, a grief counsellor, a crisis
 line or emergency service).
+
+## The plain notes on Matthew 3 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/3.json`. Three searches for this
+chapter, with the earlier ledger for Mark 1, 6 and 12.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Elijah's clothing; Malachi 4:5; locusts allowed; wilderness and Jordan in Israel's story | 1-6 | 2 Kings 1:8; Malachi 4:5; Leviticus 11:22 | Earlier ledger (Mark 1:1-8); BSB |
+| John's first words the same as Jesus' (3:2; 4:17) | 1-6 | BSB | Repository |
+| Isaiah 40:3 opens the promise of comfort after exile | 1-6 | BSB (Isaiah 40:1-11) | Repository |
+| Pharisees popular; Sadducees from the priestly circle, denying resurrection and angels | 7-12 | Josephus, Antiquities 18.15-17; Acts 23:8; 5:17 | Earlier ledger (Mark 12) |
+| "Brood of vipers" again at 12:34 and 23:33 | 7-12 | BSB | Repository |
+| Stones and children: abanim and banim in Hebrew | 7-12 | UBS translators' handbook on Matthew 3:9; Wikipedia Matthew 3:9 | Search: tips.translation.bible; en.wikipedia.org Matthew 3:9. Given as "may also be", since John likely spoke Aramaic and the results did not confirm the pun there |
+| Carrying a master's sandals a servant's task | 7-12 | Earlier ledger (Mark 1:7) | Earlier ledger |
+| Winnowing: threshed grain tossed with a wooden fork, the wind takes the chaff, which is burned | 7-12 | Bible dictionaries | Search: biblicaltraining.org "Winnow"; hypr.bible threshing floor; tips.translation.bible |
+| Malachi 4:1; 3:2; Joel 2:28; Ezekiel 36:26 | 7-12 | BSB | Repository |
+| John's protest and Jesus' answer only in Matthew | 13-17 | BSB (Mark 1:9-11; Luke 3:21-22) | Repository |
+| Isaiah 64:1; Genesis 1:2; 8:11; Psalm 2:7; Isaiah 42:1; Genesis 22:2 | 13-17 | BSB | Repository; earlier ledger (Mark 1:9-11) |
+| Readings of "fulfill all righteousness": obedience, standing with sinners, fulfilment | 13-17 | Commentaries; Litfin, JETS 65.4 (2022); Schreiner | Search: etsjets.org Litfin; logos.com Schreiner; en.wikipedia.org Matthew 3:15 |
+
+Left out: the claim that the dove symbolised Israel (not checked); the
+Gospel of the Nazarenes fragment on why Jesus was baptized; Hilary of Poitiers
+on 3:15; any count of how many John baptized.
