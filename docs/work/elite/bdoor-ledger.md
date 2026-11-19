@@ -859,3 +859,47 @@ dates; m. Avot 3:17. Care: "judge not" is not a ban on telling right from
 wrong nor a license to look down; no prosperity reading of 7:7; the narrow
 gate is an invitation, not a scare; the afraid reader of 7:21-23 is met with
 11:28.
+
+## The plain notes on Matthew 8 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/8.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 1, 4 and 5).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Biblical "leprosy" not only Hansen's disease; mould on cloth and walls; live outside the camp; torn clothes and "Unclean"; touch made unclean; the priest examines and declares clean | 1-4 | Leviticus 13:45-46; 13:47-59; 14:2-4; 5:3 | Earlier ledger (Mark 1); BSB text |
+| Curing leprosy God's work (Naaman's king); Miriam "like a stillborn infant"; "the lepers are cleansed" | 1-4 | 2 Kings 5:7; Numbers 12:12; Matthew 11:5 | BSB text |
+| Unhealed believers not blamed: Paul's thorn, Trophimus, Timothy's ailments; Luke "the beloved physician" | 1-4 | 2 Corinthians 12:7-9; 2 Timothy 4:20; 1 Timothy 5:23; Colossians 4:14 | BSB text. Care line: sickness is not from too little faith (CLAUDE.md, care for the reader) |
+| The centurion most likely an officer in Herod Antipas's forces, organized on Roman lines; a Gentile | 5-13 | Bible Odyssey, "Roman Centurion"; Carr (Cambridge Bible) as summarised; heurist.huma-num.fr (Judaism and Rome) | Search: bibleodyssey.org; heurist.huma-num.fr; en.wikipedia.org Matthew 8:5. Stated as "many scholars think ... most likely". The "no Roman troops in Galilee until AD 44" date conflicts across sources and is not used |
+| Luke's elders: "he loves our nation and has built our synagogue"; Luke's Greek doulos (7:2) | 5-13 | Luke 7:2-5 | BSB text and Greek text in the repository |
+| A Jew did not normally visit a Gentile's house | 5-13 | Acts 10:28 | BSB text. The Mishnah (Oholot 18:7) in the deep note not used |
+| Since 2011 English-speaking Catholics say "Lord, I am not worthy that you should enter under my roof, but only say the word and my soul shall be healed" (the 1973 text had "to receive you") | 5-13 | Roman Missal, third edition, English translation (2011) | Search: USCCB (Moroney, Catechetical Sunday 2011); diolc.org bulletin insert; catholicnewsagency.com "Under my roof". Given in single quotes as a liturgical text |
+| Pais child or servant | 5-13 | Standard lexicons | Earlier ledger (Mark 9). The Jennings and Liew debate (deep note) not used |
+| Banquet for all peoples; gathered from east and west; Israel's scattered gathered; all nations | 5-13 | Isaiah 25:6, 8; Psalm 107:3; Isaiah 43:5; Matthew 28:19 | BSB text. "Some readers think" for the diaspora reading (Allison not named; not checked) |
+| Not a rejection of the Jewish people; John's warning; "weeping and gnashing of teeth" six times in Matthew | 5-13 | Matthew 3:9; script over the BSB (8:12; 13:42, 50; 22:13; 24:51; 25:30) | BSB text; script. The history of misuse is stated generally, with no writer named |
+| Peter married ("a believing wife") | 14-17 | 1 Corinthians 9:5 | BSB text |
+| House honoured as Peter's under a church of the 400s; Egeria shown it in the late 300s; cannot be proved | 14-17 | Earlier ledger (Mark 1) | Earlier ledger. Corbo and Loffreda's graffiti (deep note) not used |
+| Sabbath ended at sunset; carrying forbidden; Mark's "evening" | 14-17 | Mark 1:21, 32; Jeremiah 17:21-22 | Earlier ledger (Mark 1) |
+| The Greek Old Testament of Isaiah 53:4 speaks of sins; Matthew's wording follows the Hebrew sense of sicknesses | 14-17 | Isaiah 53:4 (Hebrew and Septuagint) | Search: intertextual.bible "Isaiah 53:4 / LXX Isaiah 53:4"; tips.translation.bible (UBS handbook on Matthew 8:17: the Septuagint "spiritualized" the passage) |
+| Isaiah 53:5; Revelation 21:4; Romans 8:23 | 14-17 | BSB | BSB text |
+| Healing in the atonement rests chiefly on Isaiah 53:4-5 and Matthew 8:17; F. F. Bosworth, Christ the Healer (1924) | 14-17 | Bosworth (1877-1958); Keith Bailey as quoted by the Christian and Missionary Alliance | Search: bakerpublishinggroup.com (Christ the Healer); tonycooke.org "The Life of Fred Francis Bosworth"; ecommunity.cmalliance.org. A. B. Simpson (deep note) could not be confirmed by the search and is not named; Warfield not named |
+| "Son of Man" first in Matthew at 8:20 (28 times in the BSB of Matthew) | 18-22 | Script over the BSB | Repository |
+| Daniel 7:13-14; Exodus 20:12; 1 Kings 19:20; 15:4-6; John 19:26-27; John 11:35 | 18-22 | BSB | BSB text |
+| Secondary burial: bones later gathered into an ossuary; McCane, "'Let the Dead Bury Their Own Dead': Secondary Burial and Matt 8:21-22", Harvard Theological Review 83 (1990) 31-43 | 18-22 | McCane | Search: resolve.cambridge.org (HTR abstract); zenon.dainst.org record; lifeandland.org (Franz). "About a year later" (deep note) not confirmed and not used. Bailey's "father still alive" given as a reading, unnamed |
+| Lake about 700 feet below sea level among hills; sudden storms | 23-27 | Earlier ledger (Mark 4) | Earlier ledger |
+| Seismos at 8:24, 24:7, 27:54, 28:2; oligopistos at 6:30, 8:26, 14:31, 16:8 | 23-27 | Greek text in the repository (G4578, G3640) | Script |
+| Mark's order (calm, then "Do you still have no faith?"); Jonah 1:5-6; 12:41; Psalm 107:29 | 23-27 | Mark 4:39-40; BSB | BSB text |
+| Matthew 8:28: Vaticanus and a few early witnesses "Gadarenes"; many later "Gergesenes" (Byzantine text, Textus Receptus, so the King James Version); others "Gerasenes" | 28-34 | NET Bible note on Matthew 8:28; Metzger's Textual Commentary as summarised | Search: biblia.com NET note; kmooreperspective.blogspot.com (Metzger summary); wartburgproject.org |
+| Gadara at Umm Qais, about six miles southeast of the lake, a Decapolis city; territory probably reaching the shore | 28-34 | Bible dictionaries and atlases | Search: biblicaltraining.org "Gadara"; bibliaparalela.com atlas; biblegateway.com Encyclopedia of the Bible. "Many think" for the territory |
+| Gerasa about thirty miles away; Origen's Gergesa | 28-34 | Earlier ledger (Mark 5) | Earlier ledger |
+| Pigs unclean; graves unclean | 28-34 | Leviticus 11:7; Numbers 19:16 | Earlier ledger |
+| Two men against one: the old harmonizing answer; Matthew's pairs (9:27; 20:30; Mark 10:46); two witnesses (Deuteronomy 19:15); ancient biography; skeptics | 28-34 | BSB; standard positions | Stated as views. Augustine (Harmony of the Gospels 2.24) could not be confirmed by the search, so the answer is called "an old explanation" with no name |
+| Matthew lists the demon-possessed and those with seizures separately | 28-34 | Matthew 4:24 | BSB text (not quoted at length, since the verse holds an em-dash) |
+| Care: mental illness is illness; path to help; the Mark 5 wording | 28-34 | Mark 5 plain note | Repository |
+
+Left out: the Akeldama leprosy DNA find; the Temple Scroll, the Mishnah and
+Josephus on lepers; Corbo and Loffreda; Josephus on Antipas's army; the "AD 44"
+date; Augustine and Tertullian by name; Hengel, Bornkamm, Held, Allison,
+Simpson, Warfield, Levine, Strauss; Tobit 4:3 and the Mishnah on the Shema;
+the Kursi details beyond the Mark 5 note; Menippus, Philodemus and Meleager;
+the Roman Missal's 1973 wording is in this ledger only.
