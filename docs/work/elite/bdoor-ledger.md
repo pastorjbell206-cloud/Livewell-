@@ -1053,3 +1053,50 @@ Molina, Craig and Calvin on 11:21; Athanasius and Irenaeus on 11:27; Mishnah
 Avot 3:5 (Nehunya ben HaKanah); the Qumran copy of Sirach 51; Handel and
 Bonar; the textual notes on 11:2, 11:19 and 11:23; Cranmer (checked, not
 needed).
+
+## The plain notes on Matthew 12 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/12.json`. Seven searches for this
+chapter, with the earlier ledger (Mark 2 and 3).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Hand-picking allowed; the Mishnah (around AD 200) lists thirty-nine kinds of work, reaping and threshing among them | 1-8 | Deuteronomy 23:25; Mishnah Shabbat 7:2 | Earlier ledger (Mark 2) |
+| Only Matthew says "hungry"; Matthew omits Abiathar and Mark 2:27; adds the priests and Hosea 6:6 | 1-8 | Matthew 12:1-8; Mark 2:23-28 | BSB comparison |
+| Meizon (12:6) "something greater", neuter | 1-8 | Greek text in the repository (G3173) | Repository |
+| Bread of the Presence; Sabbath offerings of two lambs; Hosea 6:6 quoted only by Matthew (9:13; 12:7); Genesis 2:3; Deuteronomy 5:15 | 1-8 | 1 Samuel 21:6; Leviticus 24:5-9; Numbers 28:9-10 | BSB; earlier ledger (Matthew 9) |
+| Christians differ on the Sabbath (Sunday as the Lord's Day; Seventh-day Adventists and Seventh Day Baptists keep Saturday; fulfilled in Christ); 5:17; Colossians 2:16; Hebrews 4:9 | 1-8 | Standard positions; BSB | Stated as views, no side |
+| Mishnah Yoma 8:6: even a doubt of danger to life overrides the Sabbath (later than the Gospels) | 9-14 | Mishnah Yoma 8:6 | Search: mishnah.org; posenlibrary.com Mishnah Yoma; sefaria.org Yoma 85. Paraphrased; marked as later |
+| The Damascus Document (copies among the Dead Sea Scrolls) forbids lifting an animal out of a pit on the Sabbath (CD 11:13-14) | 9-14 | CD 11:13-14 | Search: bsw.org Wilson, Biblica 96 (2015); virtualreligion.net "Sabbath"; orion.huji.ac.il Baumgarten. No date given. The later rabbinic rulings on animals (sources differ) are not detailed: "Other Jewish teachers were less strict" only |
+| Mark's anger and grief and the Herodians, absent in Matthew | 9-14 | Mark 3:1-6 | BSB comparison |
+| Exodus 31:13; Deuteronomy 22:1-4 | 9-14 | BSB | BSB text |
+| Isaiah 42:1-4 against Matthew 12:18-21 (BSB wording compared; no claim about the Septuagint); 3:17; Gentiles 2:1-12, 8:5-13, 28:19 | 15-21 | BSB | BSB text |
+| Reed and wick as everyday things | 15-21 | General | Kept general |
+| Beelzebul's name | 22-30 | 2 Kings 1:2; earlier ledger (Mark 3) | Earlier ledger |
+| Josephus, Antiquities 8.46-48: Eleazar freed the possessed before Vespasian with a ring holding a root and incantations ascribed to Solomon | 22-30 | Josephus | Search: lexundria.com 8.44-49 (Whiston); philipharland.com; Duling, HTR 1985 (cambridge.org). Paraphrased |
+| Luke 11:20 "finger of God"; Mark 9:40; 2 Samuel 7:12-16; Isaiah 49:24-25 | 22-30 | BSB | BSB text |
+| Possession and illness listed apart (4:24; 15:30-31); the 9:32-34 care line | 22-30 | BSB; Matthew 9 plain note | Repository |
+| Blasphemy a capital crime | 31-37 | Leviticus 24:16 | BSB text |
+| Argos at 12:36 and 20:3, 6 | 31-37 | Greek text (G0692) | Script |
+| Matthew's fuller form; Luke 12:10; Mark 3:28-30 | 31-37 | BSB | BSB comparison |
+| The unforgivable sin: defined by the setting; the Mark 3 wording reused word for word ("It is not a careless word ... the very forgiveness Jesus offers"; "Many Christians have feared ... has not turned hard in this way"; "The promise is wide before the warning is given"); views (calling the Spirit's work evil; final refusal; only for those who saw; Hebrews 6:4-6) | 31-37 | Mark 3 plain note; deep note | Stated as views; Augustine, Aquinas, Calvin and Russell (deep note) not named |
+| John Bunyan, Grace Abounding to the Chief of Sinners (1666): long feared he had committed the unpardonable sin, came at last to comfort | 31-37 | Bunyan | Search: ccel.org; gutenberg.org 654; johnbunyan.org. Paraphrased; no length of years given |
+| 1 Timothy 1:13; 7:17; Psalm 1:3; Jeremiah 17:10 | 31-37 | BSB | BSB text |
+| Adultery as the prophets' picture of unfaithfulness | 38-42 | Jeremiah 3:8 | BSB text |
+| Nineveh capital of Assyria, which took Samaria | 38-42 | 2 Kings 17:6 | BSB text |
+| Queen of Sheba (1 Kings 10:1, 7); Jonah 1:17; 3:5 | 38-42 | BSB | BSB text. Her location (Saba) not given |
+| Thomas Paine, The Age of Reason: by the Gospels' own account Jesus was in the grave one day and two nights | 38-42 | Paine (Part I, 1794, per ushistory.org) | Search: ushistory.org/paine/reason. Paraphrased; dated only "in the 1790s" since the deep note says part 2 (1795) and the search found it in Part I |
+| Inclusive reckoning; Rabbi Eleazar ben Azariah: a day and a night make one period, part counts as the whole (Jerusalem Talmud Shabbat 9:3; Babylonian Talmud Pesahim 4a), marked as later | 38-42 | Talmud as cited in commentaries | Search: torahresource.com; JETS 61.1 (Andrews); bethimmanuel.org. Paraphrased; no date given for the rabbi; tractate references kept off the page |
+| Esther 4:16; 5:1; 1 Samuel 30:12-13; 16:21; 27:63-64; Mark 15:42; 1 Corinthians 15:4 | 38-42 | BSB | BSB text |
+| A Wednesday crucifixion (72 hours; festival Sabbath) held by a minority; most hold Friday | 38-42 | Catholic Answers "Crucifixion Wednesday"; jimmyakin.com; Christianity Today | Search. Torrey (deep note) not found and not named; the Thursday view not used |
+| Isaiah 34:14 | 43-45 | BSB | BSB text |
+| Care: the parable is not a teaching that illness is possession; a returning illness is not a judgment; a doctor, a pastor or a crisis line | 43-45 | CLAUDE.md, care for the reader | Pastoral |
+| Mark 3:21 omitted by Matthew; "will of My Father in heaven" | 46-50 | BSB comparison | BSB text |
+| Luke 1:38; John 19:26-27 | 46-50 | BSB | BSB text |
+| Three readings of the brothers | 46-50 | Earlier ledger (Mark 3, Mark 6) | Earlier ledger; same wording as the Mark 6 note |
+
+Left out: 1 Maccabees 2 and the Sabbath martyrs; the Mekhilta saying of
+Simeon ben Menasya; the Babylonian Talmud Shabbat 128b; Tobit's demon;
+Justin and the Talmud on Jesus as a sorcerer; Augustine, Aquinas, Calvin and
+Russell on the unforgivable sin; Torrey; the queen's homeland and Josephus on
+her; Mishnah Avot 1:4; the textual notes on 12:6, 12:15, 12:24 and 12:47.
