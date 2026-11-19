@@ -4738,3 +4738,31 @@ and Augustine on Herod; Gunkel and Westermann; the Tel Dan inscription, the
 Mesha Stele and Amarna letter EA 365 (outside the Bible, left out by the
 rule for this chapter); the Testaments of the Twelve Patriarchs; royal
 images of a staff ‘between the feet’ (kept as ‘probably’).
+
+## The plain notes on Genesis 50 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/50.json`. Two web searches for
+this chapter, with the deep note, the verse notes, the book page, the
+Genesis 23 care lines and the suffering Honest Answer.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| 46:4 kept; embalming with salts, oils and spices; only two embalmings in Genesis (50:2, 26) | 1-3 | BSB; deep note (`historical`) | Repository |
+| Genesis: forty days of embalming, seventy of mourning. Herodotus (400s BC, Histories 2.86): in the costliest method the body lay in natron seventy days; the numbers do not match exactly; practice may have varied; many take the forty as the embalming and the seventy as the whole mourning | 1-3 | Herodotus; commentaries | Search: "Herodotus 2.86 embalming seventy days natron Genesis 50:3 forty days" (biblehub.com, openbible.com commentaries on 50:3). Diodorus left out |
+| Deuteronomy 34:8; John 11:35; 1 Thessalonians 4:13 | 1-3 | BSB | Repository |
+| Grief care lines from the Genesis 23 note (adapted: ‘a father or a mother’, ‘Joseph's tears’) | 1-3 (hard) | Site | Repository |
+| Oath kept (47:31); state funeral; threshing floor; ‘across the Jordan’ puzzling, Atad unknown; Abel-mizraim ‘mourning’ or ‘meadow’ of Egypt | 4-14 | Deep note (`historical`, `cultural`) | Repository |
+| Machpelah (49:31); pointer to 12:4-9 on the land promise; Hebrews 11:13 | 4-14 | BSB; plain note 12 | Repository |
+| Seventeen years since 45 (47:28); whether Jacob left the message: open | 15-21 | Deep note (`hard`) | Repository |
+| ‘Am I in the place of God?’ echoes 30:2 | 15-21 | BSB; deep note (`literary`) | Repository |
+| 50:20 quoted to the em-dash, and ‘to preserve the lives of many people’ quoted apart (not joined); the verse names the act evil; said by the one wronged, years later; never for fresh grief or to explain away abuse; Find Help | 15-21 (hard) | BSB; this brief | Repository |
+| Reformed and Arminian accounts of God's rule over evil acts; no side | 15-21 (hard) | Deep note on 45 (`hard`); plain note 45:4-8 | Repository |
+| The suffering Honest Answer named by its question | 15-21 (hard) | client/src/data/answers.ts | Repository |
+| Romans 8:28; Acts 2:23; Acts 4:28 | 15-21 | BSB | Repository |
+| 110 the ideal lifespan in Egyptian texts (Middle Kingdom onward); Joshua 24:29 | 22-26 | Egyptology summary | Search: "110 years ideal lifespan ancient Egypt texts ... Joseph died at 110" (asor.org ANE Today, April 2018, "Getting old in ancient Egypt"). Ptahhotep and Amenhotep son of Hapu not named |
+| Doubled verb ‘surely visit’ (50:24-25) and Exodus 3:16; 13:19; Joshua 24:32; Hebrews 11:22; Exodus 1:6-8 | 22-26 | Deep note (`literary`); BSB | Repository |
+| Closing note: Genesis ends with a coffin and a promise; the story goes on in Exodus | 22-26 | BSB | Repository; no summary of the book |
+
+Cut: Acts 7:15-16 (it names Shechem for the fathers' tomb, a separate
+question not raised here); Diodorus on thirty and seventy-two days; the
+Cairo papyrus CG 58038 (not confirmed); Ptahhotep's 110 years.
