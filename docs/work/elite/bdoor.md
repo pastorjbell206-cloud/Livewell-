@@ -2477,3 +2477,164 @@ searched).
 ### Next
 
 Luke 4 onward in plain words, in the same shape.
+
+## Continuation: Luke 4 to 8 (2026-11-19)
+
+Data only: `client/public/bible/notes/luke/plain/4.json` to `8.json`, and
+`"plain": true` added at the end of `luke/4.json` to `luke/8.json` with no
+other change to those files (each diff is the one closing brace and the new
+line). No app code changed.
+
+### Chapters 4 to 8 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Luke 4 | 6 (tested in the wilderness; ‘Today this Scripture is fulfilled’; no prophet is welcome at home; a word with authority in Capernaum; a fever, and a town at the door; sent to other towns) | 3,839 |
+| Luke 5 | 5 (a great catch, and ‘Go away from me’; ‘If You are willing’; let down through the roof; Levi, and a banquet with sinners; new wine, new wineskins) | 3,118 |
+| Luke 6 | 8 (grain picked on the Sabbath; a hand restored; a night of prayer, and twelve chosen; blessings and woes on a level place; love your enemies; do not judge; trees and fruit; two builders) | 4,423 |
+| Luke 7 | 5 (a centurion's faith; a widow's only son at Nain; John's question from prison; more than a prophet, children in the market; a woman at Simon's table) | 3,521 |
+| Luke 8 | 8 (the women who travelled with Jesus; the farmer and the seed; a lamp on a stand; Jesus' true family; the storm; a man among the tombs; a woman who touched his cloak; ‘Child, get up’) | 4,793 |
+| Total | 32 | 19,694 |
+
+Where Mark or Matthew already tell an event, the note says so, points to
+their notes, reuses their checked wording, and spends its words on what
+Luke does differently. The fuller treatment goes to what only Luke has:
+Nazareth (4:16-30), the catch (5:1-11), the woes (6:24-26), Nain
+(7:11-17), the woman at Simon's house (7:36-50), and the women of 8:1-3.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and read: all 32
+sit under their right headings. `validate-bible-notes` passed after each with
+no exceptions (`OT_FIELD_KNOWN` stays empty); its quotation check and a
+script over the repository's BSB found every quotation verbatim.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Luke 4" to "8". 21 web
+searches (6, 3, 3, 5, 4). Main sources: the Theodotus inscription; Mishnah
+Megillah 4:4 (marked later); the NA28 apparatus as reported on Luke 4:18,
+4:44, 5:39 and 8:43; Leviticus 25 and the debate over whether the Jubilee was
+kept (encyclopedia.com; Bergsma and Kaplan as cited); 11Q13; zōgreō in the
+lexicons; Mendel Nun on night fishing; ptōchos in Thayer and Strong's; kolpos
+in the SIL notes; Thaddaeus and Judas son of James; 4Q521; the two readings
+of 7:47 (NET, Barnes, Pulpit, the catena); Mishnah Ketubot 7:6 (marked
+later); ancient reclining at table; Shunem and Nain; the Magdala synagogue
+(2009); Chuza's office; the University of Waterloo thesis on 8:1-3. Greek
+word facts (aphesis, dektos, epitimaō, limnē) are a script over the
+repository's Greek. Scripture is the BSB, checked word for word.
+
+### Cut or narrowed
+
+Cut: Josephus on Eleazar and Tobit; any cliff site at Nazareth; Genesis
+Rabbah on the physician proverb; Isaiah 58 as the Yom Kippur reading; Sloan,
+Ringe, Yoder, Gutiérrez, Jeremias, Sanders, Jervell, Levine, Hodge, Shedd,
+Brown, Bock, Dewey, Wrede, Metzger, Combs, Vermes and Bauckham by name;
+Hanina ben Dosa; the Antipas reed coin; the Didache's days; Heracleon;
+deuteroprōtos and Bezae's Sabbath saying; the contrast of penēs and ptōchos
+(no source found); Avot de-Rabbi Natan; the Joanna-Junia proposal; the
+Malachi 4:2 "wings" echo; kalos kagathos; Hillel's date. Narrowed: the
+night fishing ("many think"); the Jubilee ("no clear record ... scholars
+debate whether it was kept at all"); Theodotus ("most date it before 70,
+though its date is debated"); 11Q13 ("written before Jesus' day"); the
+woman's hair (the Mishnah rule "is later and may not show how things were in
+a Galilean town"); 8:1-3 ("We cannot say exactly" how unusual it was; the
+women's guide's "no parallel" is not repeated); Simon's house mentioned
+before his call ("perhaps"); "the first great feast Luke tells of".
+
+### Contested matters, and how they are stated
+
+Luke's order of the temptations (each order makes its point; which is
+first is not known). Whether Christ could sin (two views; the creeds do not
+settle it). "Good news to the poor" (the spiritual and the social reading,
+both given weight; Luke "will not let either reading swallow the other";
+neither "the programme of a political party, of the left or the right").
+Why Nazareth raged ("not one thing"; not a verdict on the Jewish people).
+Possession or illness (Mark's wording). 4:44 Judea or Galilee. Luke's catch
+and John 21 (one event or two; "Nothing in the faith depends on" it). Levi
+and Matthew ("Most think ... but Luke does not say"). 5:39 good or better.
+Same sermon or two (both held). Thaddaeus and Judas son of James. Turn the
+other cheek (the three readings, "These notes do not decide between them").
+The centurion's messengers (both views). John's doubt (both readings). 7:47
+(below). Why parables. Jesus' brothers (the three readings). The pigs.
+
+**Luke 6:20 and 6:24, the sentences on the page.** "‘Blessed are you who are
+poor’ and ‘Woe to you who are rich’. Does Luke mean money, or the heart?
+Both, and it matters how they fit." Then: "Luke's wording is plainer, and it
+should not be blunted. He means people who are really poor, who have little
+food and no security. God has a special care for those who have nothing."
+"But Luke does not say that being poor makes anyone good, or that poverty is
+holy in itself. ... The kingdom is theirs because they belong to him, not
+because they are poor." "The woe on the rich is just as plain, and it is a
+warning, not contempt. ... But Luke does not despise the rich either." The
+women of 8:3, Zacchaeus and 18:27 are named, as on the book page.
+
+**The woman of 7:36-50, the sentences on the page.** "Who was she? Luke does
+not name her. She is not Mary Magdalene, whom Luke introduces as someone new
+in the very next chapter (8:2). She is not Mary of Bethany, Lazarus's
+sister, who anoints Jesus' feet in John's Gospel, at a different time and
+place, just before his death (John 12:1-8)." "What was her sin? Luke calls
+her ‘a sinful woman’ and Simon calls her ‘a sinner’, but neither says what
+she had done. Many sermons and paintings have made her a prostitute. The
+text does not say so, and these notes do not guess." On 7:47: her love as
+the evidence of forgiveness already given, or as part of the way she came to
+it, or both held together with 7:50; "Christians have read the verse in all
+these ways, and these notes take no side." Luke 8:1-3 repeats that Mary
+Magdalene was not a prostitute and that "seven demons" says nothing about
+her morals, with Gregory's sermon of 591 and the Eastern churches, in the
+John 20 wording.
+
+### Care lines included
+
+4:1-13: the Matthew 4 fasting line, word for word. 5:12-16: the Matthew 8
+line on sickness and faith, word for word (4:38-41 and 8:40-48 point to it).
+5:17-26: illness is not punishment (John 9:2-3). 6:27-36: the Matthew 5
+"turn the other cheek" care paragraph word for word ("‘Turn the other cheek’
+is not a command to stay with someone who is hurting you. ... If you are
+being harmed, tell someone you trust and get help.") and the Matthew 5:43-48
+enemy line word for word; "give to everyone who asks" is not a rule to hand
+over what will be used for harm. 6:37-42: 6:38 is not a promise of money.
+7:11-17 and 8:49-56: no promise beyond the text; "Grief is not unbelief";
+"If grief is crushing you, do not carry it alone. Reach out to people you
+trust, to a pastor, or to someone trained to help." 7:18-23: doubt met, not
+scolded; a pastor, a doctor, or a crisis line. 7:36-50: the John 8 sentence
+word for word ("If what happened to you was not your choice, it is not your
+sin, and you deserve safety and help from someone you trust"). 8:22-25: fear
+is not faithlessness; help for anxiety is wise. 8:26-39: the Mark 5 lines on
+illness and spirits, and its path to help word for word ("If that is where
+you or someone you love is today, please reach out for real help now, to a
+doctor, a pastor, or a crisis line"). No phone number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass.
+At the end, all 36 commands of the content-gates step in ci.yml, one at a
+time: exit 0 each (validate-bible-notes: 66 introductions, 1,189 chapter
+notes, 73 chapters in plain words; validate-no-emdash: 260 files, 0
+em-dashes; search index 732 entries up to date; passage index 623 files
+match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`:
+146 files passed, 7 skipped; 1,659 tests passed, 73 skipped.
+
+Rendered check, after the chapter commits: `pnpm build` (exit 0), served
+with `scripts/serve-like-vercel.mjs` on port 4603, and a Playwright script
+at 390 wide (deviceScaleFactor 1) opened `/study/bible/luke/4` to `/8`. Every
+passage's rendered heading, its part headings in order and the first 60
+characters under each matched the data: Luke 4, 6 of 6; Luke 5, 5 of 5; Luke
+6, 8 of 8; Luke 7, 5 of 5; Luke 8, 8 of 8. No sideways scroll on any. No page
+errors. Each page logged three console 404s, for `/api/track` and the two
+`/_vercel/*insights` scripts, which the local server does not serve; Luke 3
+and Luke 12, untouched, log the same three. Screenshots read:
+`/home/user/elite-shots/bdoor/lk48-4-390-*.png` and `lk48-7-390-*.png`.
+Server stopped by its PID, dist/ deleted, no lh-*.json. Lighthouse not run
+(no app code changed).
+
+### Still unverified
+
+Ancient writers' exact words (all paraphrased); the Theodotus inscription's
+date; how first-century synagogue readings were chosen; how often the
+Jubilee was kept; how unusual 8:1-3 looked to others; the reclining posture
+beyond reference works.
+
+### Next
+
+Luke 9 onward in plain words, in the same shape.
