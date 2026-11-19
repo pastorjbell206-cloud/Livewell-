@@ -205,6 +205,7 @@
 .bk-tl__what{font-family:var(--font-reading);font-size:16.5px;line-height:1.55;color:var(--ink)}
 .bk-map-hold{min-height:640px}
 .bk-map-hold[data-frames="fertile-crescent canaan"]{min-height:1270px}
+.bk-map-hold[data-frames="israel mediterranean"]{min-height:1720px}
 .bk-map{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--s-5);align-items:start}
 .bk-map__fig{margin:0;border:1.5px solid var(--art-ink);padding:5px;background:var(--art-paper)}
 .bk-map__fig svg{display:block;height:600px;width:auto;max-width:100%;border:.75px solid var(--art-ink)}
@@ -237,6 +238,7 @@
   .bk-tl li{grid-template-columns:minmax(0,1fr)}
   .bk-map-hold{min-height:1180px}
   .bk-map-hold[data-frames="fertile-crescent canaan"]{min-height:2200px}
+  .bk-map-hold[data-frames="israel mediterranean"]{min-height:2560px}
   .bk-map__title{margin-bottom:calc(12px - var(--s-4))}
   .bk-map{grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
   .bk-map__fig{justify-self:center}
