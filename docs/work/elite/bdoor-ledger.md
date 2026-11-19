@@ -440,3 +440,39 @@ portents in Josephus and Tacitus; the ninth of Av; Yohanan ben Zakkai;
 Colani, Schweitzer, Russell, Beasley-Murray, Wright, France, Stein, Scofield,
 Lindsey, Miller and Camping by name; Gregory of Nazianzus, the kenotic
 theologians; the Arch's date of 81 is given as "around".
+
+## The plain notes on Mark 14 (continuation run)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| A Passover riot around AD 48 to 50 under Cumanus: soldiers above the temple courts, a soldier's insult, thousands crushed | 14:1-11 | Josephus, Jewish War 2.224-227 | Search: lexundria.com j_bj 2.223-227 (Whiston: about ten thousand); workingwithcrowds.com incident report. The site says "thousands" |
+| Nard from a Himalayan plant, costly, imported | 14:1-11 | Encyclopedias; Pliny (not cited on the site) | Search: en.wikipedia.org Spikenard; studylight.org dictionaries. Pliny's prices conflict across sources and are not used |
+| A denarius a day's wage, so 300 denarii near a year's wages | 14:1-11 | Matthew 20:2; commentaries | BSB text; search as above |
+| Anointing a head an honor and how kings were anointed; anointing for burial | 14:1-11 | Psalm 23:5; 1 Samuel 10:1; Mark 14:8; 16:1 | BSB text |
+| Deuteronomy 15:11; Matthew's thirty pieces; John 12:6 | 14:1-11 | BSB | BSB text |
+| Lambs killed in the afternoon, eaten at night in the city; rooms for pilgrims; water-carrying usually women's work | 14:12-21 | Deep note; Mark 14:12 | Kept general; the Josephus lamb count was not used |
+| Psalm 41:9; Exodus 12 | 14:12-21 | BSB | BSB text |
+| The date of the Last Supper: Mark against John 18:28 and 19:14; harmonising readings; Annie Jaubert's calendar theory (and its critics); a farewell meal; theological arrangement | 14:12-21 | Jaubert, The Date of the Last Supper (French 1957, English 1965); Nodet, Biblica 91 (2010); BAS endnote "Was Jesus' Last Supper a Seder?" | Search: bsw.org Biblica 91; library.biblicalarchaeology.org endnote 5; mu.edu PDF. No date given for Jaubert; b. Sanhedrin 43a not used |
+| Mishnah Pesachim 10 (written down around AD 200): even the poorest reclines; four cups; Hallel; how much was fixed in Jesus' day debated | 14:22-26 | Mishnah | Search: sefaria.org Mishnah Pesachim 10 and sheets; jewishvirtuallibrary.org Four Cups. The Hallel as Psalms 113 to 118 is given as "most likely" |
+| Exodus 24:8; Jeremiah 31:31; Isaiah 53:12; Psalm 118:1; 1 Corinthians 11:24 | 14:22-26 | BSB | BSB text |
+| Views of "This is My body" (Catholic and Orthodox; Lutheran; Reformed; memorial) | 14:22-26 | Standard confessional positions | Stated as views |
+| Zechariah 13:7 | 14:27-31 | BSB | BSB text |
+| Gethsemane usually explained as "oil press" (Aramaic gat shemanim); exact site unknown | 14:32-42 | Lexicons; Corbo's 1956 excavation (not named) | Search: biblehub.com atlas; abarim-publications.com; en.wikipedia.org Gethsemane |
+| Abba Aramaic for father, used by children and grown children | 14:32-42 | Deep note; standard lexicons | The claim that Jeremias's "Daddy" is right was not made |
+| Isaiah 51:17 the cup of fury; Psalm 42:5; Hebrews 5:7 | 14:32-42 | BSB | BSB text |
+| Jesus' true human will and soul (the church's answer) | 14:32-42 | Standard (Third Council of Constantinople, 681, not named) | Stated as the church's answer. Celsus and Origen not named: not checked |
+| Care line: tell someone; crisis line or emergency service where you live | 14:32-42 | CLAUDE.md care standard | No number given |
+| Temple police and servants rather than Roman troops (suggested) | 14:43-52 | Deep note; Mark 14:43 | Stated as "suggest" |
+| Luke 22:51; Amos 2:16 | 14:43-52 | BSB | BSB text |
+| Views on the young man (Mark himself; a real person known to readers; a picture of flight; sindon in 15:46 and neaniskos in 16:5) | 14:43-52 | Haren, Biblica 79 (1998); Kuruvilla, JETS 54 (2011); Gundry | Search: bsw.org Biblica 79; ets.galaxie.com Kuruvilla PDF; biblehub.com. No scholar named on the site |
+| Caiaphas named in other Gospels; 1990 tomb, ossuary "Joseph son of Caiaphas"; identification questioned by some | 14:53-65 | Matthew 26:57; John 18:13; the ossuary (Israel Museum) | Search: en.wikipedia.org Caiaphas ossuary; cojs.org; library.biblicalarchaeology.org "The Tomb of Caiaphas" |
+| Mishnah Sanhedrin 4:1: capital trials by day, verdict of guilt the next day, so not on the eve of a Sabbath or festival; written down around 200; may be a later ideal | 14:53-65 | Mishnah (Danby 1919 translation) | Search: sacred-texts.com Danby tractate Sanhedrin; sefaria.org explanation 4:1; christianhistoryinstitute.org "Mistrial of the Millennium". Both views stated; no side taken |
+| Psalm 110:1; Daniel 7:13; Isaiah 53:7 | 14:53-65 | BSB | BSB text |
+| Matthew 26:73 Peter's speech gives him away | 14:66-72 | BSB | BSB text |
+| The curse in 14:71 has no object in the Greek | 14:66-72 | Greek text in the repository | Repository |
+| Some manuscripts lack the second crowing; most editors keep two | 14:66-72 | Repository chapter note (`text`) | Repository |
+
+Left out: the Josephus lamb count; Pliny's prices for nard; b. Sanhedrin 43a;
+Jeremias, Humphreys and Brown by name; Celsus, Origen, Maximus and Cullmann;
+Klausner, Winter, Cohn and Danby by name; m. Sanhedrin 5:2 and 7:5; m. Bava
+Kamma 7:7 on roosters; the claim that a servant girl could not give evidence.
