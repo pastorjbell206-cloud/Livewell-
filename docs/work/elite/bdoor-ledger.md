@@ -3919,3 +3919,26 @@ edh-Dhra by name (the book page's wording used instead); the Talmud's
 stories (the bed, the marked coins, Pelotit), not retold; Wisdom of
 Solomon 19; the mid-twentieth-century ‘get acquainted’ reading of yada
 and its author; any claim that the story was told to mock Moab.
+
+## The plain notes on Genesis 20 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/20.json`. One web search for this
+chapter, with the deep note and the Genesis 12 plain note.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Gerar in the western Negev between Gaza and Beersheba; many place it at Tel Haror, not all agree | 1-7 | Repository deep note (`historical`); Aharoni's 1956 proposal and other candidates (Tell Jemmeh, Tell esh-Sharia) | Search: en.wikipedia.org "Tel Haror", "Nahal Gerar"; biblewalks.com. Said "many ... though not all agree" |
+| Abimelech ‘my father is king’, perhaps a royal title | 1-7 | Repository deep note | Repository; "may have been" |
+| No mention of Sarah's beauty; she is about ninety (17:17); a marriage tie with a rich herder as a likely motive | 1-7 | Repository deep note (`cultural`, `hard`) | Repository; "many readers think" |
+| ‘Prophet’ (navi, H5030): first use in the Bible at 20:7 | 1-7 | Strong's numbers in the repository | Script over `client/public/bible/ch/*/` (first hit: Genesis 20:7) |
+| Prophet as one who prays for others: 1 Samuel 12:23; Jeremiah 42:2; Psalm 105:14-15; Genesis 26:7 | 1-7 | BSB | Repository |
+| The three similar stories: versions of one tale, or a deliberate pattern | 1-7 | Repository deep note (`literary`, `hard`) | Repository; no side |
+| ‘Fear of God’; the servants terrified; Abimelech's conscience; a newcomer's danger | 8-13 | Repository deep note (`cultural`, `words`) | Repository |
+| Half-sister marriage known in the ancient world; forbidden in Leviticus 18:9, 11 | 8-13 | Repository deep note (`historical`); BSB | Repository |
+| ‘Loyalty’ in 20:13 is chesed (H2617), used elsewhere of faithful love | 8-13 | Strong's numbers in the repository | Script (20:13 carries H2617A) |
+| Proverbs 9:10; Job 1:1 (Uz; never said to be an Israelite) | 8-13 | BSB | Repository |
+| Thousand pieces of silver; ‘covering of the eyes’ debated, most read as clearing Sarah's name | 14-18 | Repository deep note (`cultural`) | Repository; "debated", "most take it" |
+| James 5:16-17; Genesis 21:1 | 14-18 | BSB | Repository |
+
+Cut: the Psalm 34 heading and Achish (not needed); Sarah's body renewed for
+childbearing (the deep note says the text does not say so).
