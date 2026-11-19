@@ -4767,13 +4767,13 @@ Acts 15 onward in plain words.
 | Chapter | Passages | Plain words |
 |---|---|---|
 | Acts 15 | 6 (‘Unless you are circumcised’; Peter: ‘saved through grace, just as they are’; James: ‘The words of the prophets agree’; the letter: ‘It seemed good to the Holy Spirit and to us’; joy at Antioch; a sharp disagreement: Paul, Barnabas and Mark) | 4,265 |
-| Acts 16 | 7 (Timothy joins Paul; ‘Come over to Macedonia and help us’; Lydia, the dealer in purple; an enslaved girl with a spirit; beaten with rods and thrown into prison; midnight: ‘What must I do to be saved?’; ‘We are Roman citizens’) | 4,741 |
-| Acts 17 | 6 (Thessalonica: ‘the Christ had to suffer’; ‘Another king, named Jesus’; Berea: searching the Scriptures every day; Athens: a city full of idols; ‘To an unknown god’; ‘He has set a day’: some mock, some believe) | 3,626 |
+| Acts 16 | 7 (Timothy joins Paul; ‘Come over to Macedonia and help us’; Lydia, the dealer in purple; an enslaved girl with a spirit; beaten with rods and thrown into prison; midnight: ‘What must I do to be saved?’; ‘We are Roman citizens’) | 4,745 |
+| Acts 17 | 6 (Thessalonica: ‘the Christ had to suffer’; ‘Another king, named Jesus’; Berea: searching the Scriptures every day; Athens: a city full of idols; ‘To an unknown god’; ‘He has set a day’: some mock, some believe) | 3,641 |
 | Acts 18 | 6 (Corinth: Aquila, Priscilla and the tentmakers; ‘Your blood be on your own heads’; ‘Do not be afraid; keep on speaking’; before Gallio; a vow at Cenchrea, and back to Antioch; Apollos, taught by Priscilla and Aquila) | 3,507 |
-| Acts 19 | 8 (twelve disciples who knew only John's baptism; two years in the hall of Tyrannus; handkerchiefs and aprons; the seven sons of Sceva; burning the books of magic; Demetrius the silversmith; ‘Great is Artemis of the Ephesians’; the town clerk calms the city) | 3,780 |
+| Acts 19 | 8 (twelve disciples who knew only John's baptism; two years in the hall of Tyrannus; handkerchiefs and aprons; the seven sons of Sceva; burning the books of magic; Demetrius the silversmith; ‘Great is Artemis of the Ephesians’; the town clerk calms the city) | 3,781 |
 | Acts 20 | 6 (through Macedonia and Greece, with the gift for Jerusalem; Eutychus falls from the window; hurrying toward Jerusalem; Paul's farewell: how he lived among them; ‘Be shepherds of the church of God’; ‘It is more blessed to give than to receive’) | 3,236 |
 | Acts 21 | 5 (Tyre: farewell on the beach; Philip's daughters, and Agabus with the belt; James and the elders, and a vow in the temple; seized in the temple; ‘Aren't you the Egyptian?’) | 3,488 |
-| Total | 44 | 26,643 |
+| Total | 44 | 26,663 |
 
 After each chapter every passage was printed field by field (and a script
 checked that each `happening` cites verses, each `ot` names Old Testament
