@@ -1007,3 +1007,153 @@ Septuagint's phronimos; Song of Songs Rabbah; the assarion's exact value;
 Diocletian's edict and Deissmann; Crossan and the Cynics; the Essenes'
 travel (Josephus); Tertullian on flight; Sim, Jeremias, Levine, France, Davies
 and Allison, Luz by name; the textual notes on 10:3, 10:8 and 10:23.
+
+## The plain notes on Matthew 11 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/11.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 6 on Josephus and Machaerus; Mark 8 on
+Bethsaida).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Antipas arrested John over his marriage | 1-6 | Matthew 14:3-4 | BSB text |
+| Josephus: John held and killed at Machaerus, east of the Dead Sea | 1-6 | Josephus, Antiquities 18.116-119 | Earlier ledger (Mark 6) |
+| Varied hopes: a prophet like Moses, Elijah's return, a son of David | 1-6 | Deuteronomy 18:15; Malachi 4:5 | BSB text |
+| 4Q521 (Qumran Cave 4): when God's anointed comes, the Lord heals the wounded, makes the dead live, brings good news to the poor ("meek" in some translations); fragmentary; scholars debate whether God or the anointed one does the works | 1-6 | 4Q521 fragment 2, column 2 | Search: en.wikipedia.org 4Q521; virtualreligion.net "Messiah Apocalypse"; bsw.org Biblica 89 (2008) abstract. Paraphrased; translation difference stated |
+| Skandalizō at 11:6 and 13:57; skandalon a trap's trigger or stumbling stone | 1-6 | Greek text in the repository (G4624); standard lexicons | Script |
+| Isaiah's promises; vengeance lines left out | 1-6 | Isaiah 35:4-6; 26:19; 61:1-2 | BSB text |
+| Chrysostom, Homily 36 on Matthew: John asked for his disciples' sake, not his own (the lesson was for those who doubted) | 1-6 | Chrysostom | Search: newadvent.org/fathers/200136.htm; st-takla.org NPNF excerpt. Paraphrased. Tertullian (deep note) not confirmed and not named |
+| Care: doubt is not unbelief; a pastor, a doctor, or a crisis line | 1-6 | CLAUDE.md, care for the reader | Pastoral |
+| Antipas's coins for Tiberias (around AD 19/20) carry a reed; the link to 11:7 is a suggestion (Theissen), called a conjecture by others since no source has the nickname | 7-15 | Kogon and Fontanille (Brill 2018) and Hendin, as summarised; Reiser, Biblica 81 (2000) | Search: library.biblicalarchaeology.org (Hendin); bsw.org Reiser article p470. No scholar named on the page |
+| Camel's hair and leather belt | 7-15 | Matthew 3:4 | BSB text |
+| Malachi 3:1 (God's way); Malachi 4:5; John 1:21; Luke 1:17 | 7-15 | BSB | BSB text (Malachi 3:1 quoted only to the first sentence, before its em-dash) |
+| Biazetai passive or middle; three readings; Luke 16:16 | 7-15 | Greek text (G0971); deep note `hard` | Repository; stated as views, no side |
+| Street games of weddings and funerals | 16-19 | The verse itself | Not a separate historical claim |
+| Erga at 11:2 and 11:19; Luke 7:35 "all her children" | 16-19 | Greek text (G2041); BSB | Script; BSB text |
+| Deuteronomy 21:20 "glutton and a drunkard"; Proverbs 9:5 | 16-19 | BSB | BSB text |
+| Chorazin about two miles north of Capernaum (sources say two to two and a half); visible basalt ruins and synagogue later than Jesus (third or fourth century; one phase dated earlier); first-century town not found | 20-24 | Bible Gateway Encyclopedia of the Bible "Chorazin"; seetheholyland.net; biblewalks.com | Search. Stated as "about two miles" and "most of what stands dates from well after" |
+| Bethsaida home of Peter, Andrew, Philip; site disputed | 20-24 | John 1:44; earlier ledger (Mark 8) | BSB text; earlier ledger |
+| Capernaum Jesus' home (4:13); Tyre and Sidon (Isaiah 23; Ezekiel 26 to 28); Sodom (Genesis 19); Jonah 3:6; Isaiah 14:13-15; Ezekiel 16:49 | 20-24 | BSB | BSB text |
+| Views on 11:21 (God's free choosing; God's knowledge of what free people would do; prophetic overstatement) | 20-24 | Deep note `hard` | Stated as views; Augustine, Molina, Craig and Calvin (deep note) not named |
+| Nēpios at 11:25 and 21:16; John 10:15; Isaiah 29:14; Daniel 2:22; Psalm 8:2; 28:18 | 25-27 | Greek text (G3516); BSB | Script; BSB text |
+| Election and response at 11:25-27 | 25-27 | Mark 4 plain note wording | Stated as views, no side, consistent with Mark 4:10-12 |
+| Yoke as rule (1 Kings 12:11); Acts 15:10 not used | 28-30 | BSB | BSB text |
+| Rabbinic teaching (later) speaks of reciting the Shema as accepting "the yoke of the kingdom of heaven" | 28-30 | Mishnah Berakhot 2:2 in printed texts; Babylonian Talmud Berakhot 14b; the word "yoke" may be missing from the best Mishnah manuscripts | Search: sefaria.org; sacred-texts.com; en.wikipedia.org Shema. Stated as "rabbinic writings from after Jesus' time", not as the Mishnah's exact words |
+| Ben Sira wrote in Jerusalem early in the second century BC (about 190 to 175 BC); Sirach 51:23-27 invites the untaught to Wisdom's school and yoke and says he laboured little and found much rest | 28-30 | Sirach 51:23-27; Jewish Encyclopedia; Wikipedia "Book of Sirach" | Search: intertextual.bible; biblestudytools.com Sirach 51:27; en.wikipedia.org; jewishencyclopedia.com. Paraphrased "in summary"; no translation quoted. The Qumran copy of Sirach 51 (deep note) not used |
+| Sirach in Catholic and Orthodox Bibles, not counted as Scripture by Protestants | 28-30 | Standard | Common reference fact |
+| Praus at 5:5, 11:29, 21:5; chrēstos at 11:30 ("good", "kind") | 28-30 | Greek text (G4235, G5543) | Script; standard lexicons |
+| Jeremiah 6:16; Exodus 33:14; 23:4; 10:38 | 28-30 | BSB | BSB text |
+| Only Matthew has 11:28-30; Luke 10:21-22 parallels 25-27 | 28-30 | BSB comparison | Repository |
+| Cranmer made 11:28 the first of the "comfortable words" (1548 Order of the Communion) | (checked, not used) | Crosby; Churchman 120/2 | Search. Not used in the plain note |
+| Care: weariness and despair; a doctor, a pastor or a crisis line; the afraid reader met with 11:28 | 28-30 | CLAUDE.md, care for the reader | Pastoral |
+
+Left out: Tertullian on John's doubt; the Psalms of Solomon and the Community
+Rule; Theissen by name; Norden, Bultmann, von Hase, Suggs, Deutsch; Augustine,
+Molina, Craig and Calvin on 11:21; Athanasius and Irenaeus on 11:27; Mishnah
+Avot 3:5 (Nehunya ben HaKanah); the Qumran copy of Sirach 51; Handel and
+Bonar; the textual notes on 11:2, 11:19 and 11:23; Cranmer (checked, not
+needed).
+
+## The plain notes on Matthew 12 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/12.json`. Seven searches for this
+chapter, with the earlier ledger (Mark 2 and 3).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Hand-picking allowed; the Mishnah (around AD 200) lists thirty-nine kinds of work, reaping and threshing among them | 1-8 | Deuteronomy 23:25; Mishnah Shabbat 7:2 | Earlier ledger (Mark 2) |
+| Only Matthew says "hungry"; Matthew omits Abiathar and Mark 2:27; adds the priests and Hosea 6:6 | 1-8 | Matthew 12:1-8; Mark 2:23-28 | BSB comparison |
+| Meizon (12:6) "something greater", neuter | 1-8 | Greek text in the repository (G3173) | Repository |
+| Bread of the Presence; Sabbath offerings of two lambs; Hosea 6:6 quoted only by Matthew (9:13; 12:7); Genesis 2:3; Deuteronomy 5:15 | 1-8 | 1 Samuel 21:6; Leviticus 24:5-9; Numbers 28:9-10 | BSB; earlier ledger (Matthew 9) |
+| Christians differ on the Sabbath (Sunday as the Lord's Day; Seventh-day Adventists and Seventh Day Baptists keep Saturday; fulfilled in Christ); 5:17; Colossians 2:16; Hebrews 4:9 | 1-8 | Standard positions; BSB | Stated as views, no side |
+| Mishnah Yoma 8:6: even a doubt of danger to life overrides the Sabbath (later than the Gospels) | 9-14 | Mishnah Yoma 8:6 | Search: mishnah.org; posenlibrary.com Mishnah Yoma; sefaria.org Yoma 85. Paraphrased; marked as later |
+| The Damascus Document (copies among the Dead Sea Scrolls) forbids lifting an animal out of a pit on the Sabbath (CD 11:13-14) | 9-14 | CD 11:13-14 | Search: bsw.org Wilson, Biblica 96 (2015); virtualreligion.net "Sabbath"; orion.huji.ac.il Baumgarten. No date given. The later rabbinic rulings on animals (sources differ) are not detailed: "Other Jewish teachers were less strict" only |
+| Mark's anger and grief and the Herodians, absent in Matthew | 9-14 | Mark 3:1-6 | BSB comparison |
+| Exodus 31:13; Deuteronomy 22:1-4 | 9-14 | BSB | BSB text |
+| Isaiah 42:1-4 against Matthew 12:18-21 (BSB wording compared; no claim about the Septuagint); 3:17; Gentiles 2:1-12, 8:5-13, 28:19 | 15-21 | BSB | BSB text |
+| Reed and wick as everyday things | 15-21 | General | Kept general |
+| Beelzebul's name | 22-30 | 2 Kings 1:2; earlier ledger (Mark 3) | Earlier ledger |
+| Josephus, Antiquities 8.46-48: Eleazar freed the possessed before Vespasian with a ring holding a root and incantations ascribed to Solomon | 22-30 | Josephus | Search: lexundria.com 8.44-49 (Whiston); philipharland.com; Duling, HTR 1985 (cambridge.org). Paraphrased |
+| Luke 11:20 "finger of God"; Mark 9:40; 2 Samuel 7:12-16; Isaiah 49:24-25 | 22-30 | BSB | BSB text |
+| Possession and illness listed apart (4:24; 15:30-31); the 9:32-34 care line | 22-30 | BSB; Matthew 9 plain note | Repository |
+| Blasphemy a capital crime | 31-37 | Leviticus 24:16 | BSB text |
+| Argos at 12:36 and 20:3, 6 | 31-37 | Greek text (G0692) | Script |
+| Matthew's fuller form; Luke 12:10; Mark 3:28-30 | 31-37 | BSB | BSB comparison |
+| The unforgivable sin: defined by the setting; the Mark 3 wording reused word for word ("It is not a careless word ... the very forgiveness Jesus offers"; "Many Christians have feared ... has not turned hard in this way"; "The promise is wide before the warning is given"); views (calling the Spirit's work evil; final refusal; only for those who saw; Hebrews 6:4-6) | 31-37 | Mark 3 plain note; deep note | Stated as views; Augustine, Aquinas, Calvin and Russell (deep note) not named |
+| John Bunyan, Grace Abounding to the Chief of Sinners (1666): long feared he had committed the unpardonable sin, came at last to comfort | 31-37 | Bunyan | Search: ccel.org; gutenberg.org 654; johnbunyan.org. Paraphrased; no length of years given |
+| 1 Timothy 1:13; 7:17; Psalm 1:3; Jeremiah 17:10 | 31-37 | BSB | BSB text |
+| Adultery as the prophets' picture of unfaithfulness | 38-42 | Jeremiah 3:8 | BSB text |
+| Nineveh capital of Assyria, which took Samaria | 38-42 | 2 Kings 17:6 | BSB text |
+| Queen of Sheba (1 Kings 10:1, 7); Jonah 1:17; 3:5 | 38-42 | BSB | BSB text. Her location (Saba) not given |
+| Thomas Paine, The Age of Reason: by the Gospels' own account Jesus was in the grave one day and two nights | 38-42 | Paine (Part I, 1794, per ushistory.org) | Search: ushistory.org/paine/reason. Paraphrased; dated only "in the 1790s" since the deep note says part 2 (1795) and the search found it in Part I |
+| Inclusive reckoning; Rabbi Eleazar ben Azariah: a day and a night make one period, part counts as the whole (Jerusalem Talmud Shabbat 9:3; Babylonian Talmud Pesahim 4a), marked as later | 38-42 | Talmud as cited in commentaries | Search: torahresource.com; JETS 61.1 (Andrews); bethimmanuel.org. Paraphrased; no date given for the rabbi; tractate references kept off the page |
+| Esther 4:16; 5:1; 1 Samuel 30:12-13; 16:21; 27:63-64; Mark 15:42; 1 Corinthians 15:4 | 38-42 | BSB | BSB text |
+| A Wednesday crucifixion (72 hours; festival Sabbath) held by a minority; most hold Friday | 38-42 | Catholic Answers "Crucifixion Wednesday"; jimmyakin.com; Christianity Today | Search. Torrey (deep note) not found and not named; the Thursday view not used |
+| Isaiah 34:14 | 43-45 | BSB | BSB text |
+| Care: the parable is not a teaching that illness is possession; a returning illness is not a judgment; a doctor, a pastor or a crisis line | 43-45 | CLAUDE.md, care for the reader | Pastoral |
+| Mark 3:21 omitted by Matthew; "will of My Father in heaven" | 46-50 | BSB comparison | BSB text |
+| Luke 1:38; John 19:26-27 | 46-50 | BSB | BSB text |
+| Three readings of the brothers | 46-50 | Earlier ledger (Mark 3, Mark 6) | Earlier ledger; same wording as the Mark 6 note |
+
+Left out: 1 Maccabees 2 and the Sabbath martyrs; the Mekhilta saying of
+Simeon ben Menasya; the Babylonian Talmud Shabbat 128b; Tobit's demon;
+Justin and the Talmud on Jesus as a sorcerer; Augustine, Aquinas, Calvin and
+Russell on the unforgivable sin; Torrey; the queen's homeland and Josephus on
+her; Mishnah Avot 1:4; the textual notes on 12:6, 12:15, 12:24 and 12:47.
+
+## The plain notes on Matthew 13 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/13.json`. Eight searches for this
+chapter, with the earlier ledger (Mark 4 and Mark 6).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Sowing by hand; the ploughing debate; a hundredfold as blessing | 1-9 | Earlier ledger (Mark 4); Genesis 26:12 | Earlier ledger; BSB |
+| Matthew counts the yield downward | 1-9 | Matthew 13:8; Mark 4:8 | BSB comparison (13:8 not quoted, since it carries an em-dash) |
+| Five teaching blocks each closed by "When Jesus had finished" | 1-9 | 7:28; 11:1; 13:53; 19:1; 26:1 | BSB text |
+| Isaiah 55:10-11 | 1-9 | BSB | BSB text |
+| Parable and mystery explained | 10-17 | Earlier ledger (Mark 4) | Earlier ledger |
+| Mark "so that" (4:12); Matthew gives a reason (13:13) | 10-17 | BSB; earlier ledger (Mark 4) | BSB text |
+| Luke 10:23-24 parallels 13:16-17 | 10-17 | BSB | BSB text |
+| Isaiah 6:10 BSB ("Make the hearts ... calloused") against Matthew 13:15 ("has grown callous ... they have closed their eyes") | 10-17 | BSB | BSB comparison. No claim made about the Septuagint |
+| Chrysostom, Homily 45 on Matthew: the blindness self-chosen ("seeing, they see not"); the parables meant to stir them | 10-17 | Chrysostom | Search: newadvent.org/fathers/200145.htm; ccel.org NPNF 10. Paraphrased |
+| "Them" not the Jewish people as a whole | 10-17 | Deep note `hard` | Pastoral and interpretive, stated plainly |
+| Understand (13:19, 23); skandalizō at 13:21 and 13:57 | 18-23 | BSB; Greek text (G4624) | Script |
+| Jülicher (late 1800s) and Blomberg on the explanation | 18-23 | Earlier ledger (Mark 4) | Earlier ledger |
+| Zizanion usually identified as darnel (Lolium temulentum); looks like wheat until the ear; grain harmful if eaten (the fungus theory not stated) | 24-30 | Smith's Bible Dictionary "Tares" (ccel.org); Easton's; hypr.bible; University of Pretoria paper (1933) | Search. Zizanion at 13:25-40 by script (G2215) |
+| Sowing weeds in another's field discussed in Roman law: Ulpian, citing Celsus, Digest 9.2.27.14; the Digest compiled in the 500s | 24-30 | Digest 9.2.27.14 | Search: libmast.utm.my (article "Ulpian, Celsus and weed pollution of soil"); ceeol.com (Aličić). "Weeds" kept general |
+| Donatists claimed a pure church and read "the field is the world" against a mixed church; Augustine and the Catholics read it of the church, a mixed body until the harvest; Conference of Carthage 411 | 24-30 | Schaff, History of the Christian Church 3 (ccel.org); Theological Studies 51.1; dbts.edu; encyclopedia.com "Donatism" | Search. Dated "around AD 400"; Augustine's Letter 93 and coercion (deep note) not confirmed and not used |
+| Aquinas (Summa Theologiae II-II q.11 a.3): the command not to uproot holds only where the wheat would be harmed, so heretics may be put to death | 24-30 | Aquinas | Search: ccel.org summa.SS_Q11_A3; stephenhicks.org translation. Paraphrased; the reply's numbering differs between translations and is not given |
+| Roger Williams, The Bloudy Tenent of Persecution (1644): the field is the world, so dissenters left alone until the harvest; John Cotton: the field is the church (1647 reply) | 24-30 | Williams; Cotton | Search: worldhistory.org; en.wikipedia.org; baptistnews.com; Church History (cambridge.org) |
+| Church discipline (18:15-17) and the parable: views, no side | 24-30 | Standard positions | Stated as views |
+| Black mustard, seed size, height, byword; orchid seeds | 31-35 | Earlier ledger (Mark 4) | Earlier ledger |
+| Luke 13:19 "became a tree" | 31-35 | BSB | BSB text |
+| Leaven as old dough; 16:6; Genesis 18:6 "three seahs" | 31-35 | BSB | BSB text. The litre figure (deep note) not used; "a large batch" only |
+| Enkryptō at 13:33; kruptō at 11:25, 13:35, 13:44 | 31-35 | Greek text (G1470, G2928) | Script |
+| Ezekiel 17:23; Daniel 4:12 | 31-35 | BSB | BSB text (as in Mark 4) |
+| Psalm 78:2; "A Maskil of Asaph"; "Asaph the seer" (2 Chronicles 29:30) | 31-35 | BSB | BSB text. The manuscript reading "Isaiah the prophet" and Porphyry (deep note) not used |
+| Mustard smallest of seeds sown: inerrancy views stated generally | 31-35 | Earlier ledger (Mark 4) | Davis, Lindsell, Sproule (deep note) not named |
+| "End of the age" only in Matthew among the Gospels (13:39, 40, 49; 24:3; 28:20); "gnashing of teeth" six times in Matthew, once in Luke (13:28) | 36-43 | BSB | Script over the BSB text |
+| Daniel 3:6; Malachi 4:1; Daniel 12:3; 8:12 | 36-43 | BSB | BSB text |
+| Views on hell (endless conscious separation; final destruction; hope of restoration); literal or pictured fire and darkness | 36-43 | Standard positions | Stated as views, matching the Matthew 10 and Mark 9 notes |
+| Care: the afraid reader met with 11:28 | 36-43 | CLAUDE.md, care for the reader | Pastoral |
+| Josephus, Jewish War 7.114-115: after 70 the Romans dug up gold, silver and valuables buried against the uncertainties of war; captives showed them more | 44-46 | Josephus | Search: lexundria.com 7.115 (Whiston); ccel.org war-7. Paraphrased |
+| Pliny the Elder, Natural History book 9: pearls hold the first rank among valuables; written in the 70s | 44-46 | Pliny, Natural History 9 (ch. 54 in Bostock and Riley; 9.106 in modern numbering) | Search: peterburk.github.io (Bostock and Riley); jewelpedia.net. Paraphrased; no section number on the page |
+| Emporos at 13:45 only; margaritēs at 7:6 and 13:45-46 | 44-46 | Greek text (G1713, G3135) | Script |
+| Proverbs 2:4; 3:15; Luke 16:1-8 | 44-46 | BSB | BSB text |
+| Two readings of the buyer (the disciple; Christ) | 44-46 | Standard readings | Stated as views; no date or Father claimed |
+| Sagēnē only at 13:47; Leviticus 11:9-10; Habakkuk 1:15; Jeremiah 16:16 | 47-52 | Greek text (G4522); BSB | Script; BSB text |
+| Mathēteuō at 13:52, 27:57, 28:19; 5:17 | 47-52 | Greek text (G3100); BSB | Script |
+| Nazareth a few hundred people; tektōn | 53-58 | Earlier ledger (Mark 6) | Earlier ledger |
+| "Carpenter's son" against Mark's "the carpenter"; "did not" against "could not" | 53-58 | Mark 6:3, 5; BSB | BSB comparison |
+| Three readings of the brothers, Mark 6 wording; 1:25; Luke 2:7; Genesis 13:8; 27:56; John 19:26-27; John 7:5; Acts 1:14; 1 Corinthians 15:7 | 53-58 | Earlier ledger (Mark 3, Mark 6; Bauckham); BSB | Earlier ledger; BSB text. Helvidius, Epiphanius, Jerome, Meier, the Council of 553 and the Reformers (deep note) not named |
+
+Left out: the Gospel of Thomas parallels; Pennington on "kingdom of heaven";
+the Psalms of Solomon and the War Scroll; the Copper Scroll; Cleopatra's
+pearl; the Mishnah on darnel (Kilayim 1:1); the darnel fungus; the litre
+size of three measures; Augustine's Letter 93; Chrysostom's Homily 46;
+Hubmaier, Luther and Calvin on the weeds; Alford's hymn and Millais; the
+rabbinic parables of treasure and the pearl; Irenaeus and Origen on the
+treasure; Jerome on the hundredfold; the Scofield reading; Jülicher's,
+Dodd's, Jeremias's and Kingsbury's books; the textual notes on 13:35 and
+13:55.
