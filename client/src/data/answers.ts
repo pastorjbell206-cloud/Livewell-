@@ -961,9 +961,73 @@ export const ANSWERS: Answer[] = [
     slug: "is-faith-irrational",
     question: "Is believing anything on faith irrational?",
     paragraphs: [
-      "No, though a good deal of what gets called faith is exactly the credulous thing the charge names, and I won't defend it. The church has too often praised not-thinking as a virtue and used \"just have faith\" as a lid on a pot it did not want boiling. But the framing of faith against reason is a caricature, and it collapses the moment you examine either side. Biblical faith reaches for reasons the whole time, and reason runs on trust it has never been able to prove.",
-      "Take Clifford at his word. In 1877 he ruled it \"wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence,\" so try to believe only what your evidence forces. You won't last a morning. You trust your own reason without being able to certify it without using it. You trust that other minds exist, that the future will resemble the past, and Hume saw the size of that one in 1748 and could not argue his way out. Michael Polanyi called it tacit knowing, the floor beneath the floor: no knowledge without a knower who is committed. And the word itself was never a leap into the dark. Pistis meant trust with a track record. \"Now faith is the assurance of things hoped for, the conviction of things not seen\" (Hebrews 11:1). Things unseen, not things disbelieved.",
-      "I say this against myself, because for years I accused believers of the exact posture I was standing in. I called my position pure reason. It was a structure of enormous trust I had simply never counted, invisible the way water is invisible to the fish. Everyone is betting on something they cannot stand outside of and prove. The most honest prayer in the Gospels isn't a settled one. It comes from a desperate father with a suffering son: \"I believe; help my unbelief!\" (Mark 9:24). Some of us have just stopped pretending we aren't already doing it.",
+      "No, though a good deal of what gets called faith is exactly the credulous thing the charge names, and I won't defend it. The church has too often praised not-thinking as a virtue and used \"just have faith\" as a lid on a pot it did not want boiling. If faith means believing without evidence, or against it, the skeptic is right to call it irrational. But that isn't what the New Testament means by the word, and it isn't how reason works either. Faith in the Bible is trust in someone, resting on testimony and evidence and reaching past what can be seen. And no one, the skeptic included, believes only what he can prove, because every chain of reasons ends in trust somewhere. The real question isn't whether you trust. It's whether what you trust has earned it.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The case was put most sharply in 1877, by the mathematician W. K. Clifford, in an essay called \"The Ethics of Belief.\" He told of a shipowner who quiets his own doubts about an old ship and sends it to sea full of emigrants. Clifford says the man is guilty whether the ship sinks or not, because he had no right to believe it was sound on the evidence he had. Then Clifford stated his rule: \"It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence.\"",
+          "Clifford is often caricatured, and he shouldn't be. He didn't say we may believe only what we've checked ourselves. In the second part of the essay he allowed that we may believe what others tell us, when there is good reason to think they know what they're talking about and are telling the truth as far as they know it. His rule is about proportion, the same rule David Hume had set down in 1748: \"A wise man, therefore, proportions his belief to the evidence.\" That's the view philosophers call evidentialism, and in that form it's hard to argue with. Most of us live by it every day, and we're right to.",
+          "Set beside that rule a definition of faith, and the charge writes itself. Richard Dawkins, in The Selfish Gene (1976), called faith \"blind trust, in the absence of evidence, even in the teeth of evidence.\" If that is faith, then Clifford's rule condemns it, and it should.",
+          "I grant more than a skeptic might expect. Plenty of Christians use faith in just that sense. They say \"you just have to believe\" when a question gets hard, and they treat doubt as disloyalty. A faith that can't bear to be examined deserves Clifford's verdict, and I'd rather say so myself than wait for a skeptic to say it for me.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "There are two questions here. The first is about words and history: what did the first Christians mean when they spoke of faith? The second is about knowledge: does every rational belief have to rest on evidence, all the way down? Neither answer proves that God exists. Together they show whether faith, as the New Testament uses the word, is the thing Clifford's rule forbids.",
+        ],
+      },
+      {
+        heading: "What the New Testament means by faith",
+        body: [
+          "The Greek word is pistis, with its verb pisteuō, to trust or believe. The classicist Teresa Morgan studied how the word was used across the Roman world in Roman Faith and Christian Faith (2015). She argues that in the first century pistis meant above all a relationship of trust, in human dealings and between people and their gods, rather than assent to a list of ideas. In the New Testament that trust is bound up with beliefs about who Jesus is, but it is trust first. It is the kind of faith you have in a surgeon or a friend, and you have it because of what you know of them.",
+          "The writers themselves point to their evidence. Luke opens his Gospel by saying he \"followed all things closely\" and wrote \"that you may have certainty concerning the things you have been taught\" (Luke 1:3-4). John closes his: \"these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name\" (John 20:31). Paul lists the witnesses of the risen Jesus and adds that more than five hundred saw him at one time, \"most of whom are still alive\" (1 Corinthians 15:6), which is an invitation to go and ask. In Athens he said God \"has given assurance to all by raising him from the dead\" (Acts 17:31). The word translated assurance there is pistis itself. The thing that grounds faith is called by faith's own name.",
+          "None of that makes faith the same as proof. \"Now faith is the assurance of things hoped for, the conviction of things not seen\" (Hebrews 11:1). Faith reaches past what can be seen, to what is promised and not yet here. But things unseen are not things disbelieved, and trust that goes beyond its evidence is not the same as trust against it. A wife who trusts her husband while he's away has no proof he is faithful tonight. She has years of knowing him. That is the shape of faith in the New Testament, and it's the part of the question worth arguing about.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An argument from the limits of evidence (after Thomas Reid and Alvin Plantinga, in my words)",
+            premises: [
+              "If every rational belief must rest on evidence, the evidence must itself be believed rationally, and so on.",
+              "The chain can't go on forever, so it ends in beliefs we hold without evidence from anything further.",
+              "Among those beliefs are some no one can do without: that our senses and memory are generally reliable, that other people have minds, that the future will be like the past, and that what others tell us is generally true.",
+              "Holding those beliefs is not irrational.",
+            ],
+            conclusion: "Rational belief can't mean belief based on evidence all the way down. Every reasoner trusts. The real question is which trusts are reasonable, and which beliefs need argument before they may be held.",
+          },
+          "The weight sits on the third and fourth premises, and Hume is the best witness to both. In the same Enquiry, he showed that we can't prove by reasoning that the future will be like the past, because \"all inferences from experience suppose, as their foundation, that the future will resemble the past.\" Any argument for it assumes it. Hume didn't conclude that we should stop expecting the sun to rise. He concluded that \"Custom, then, is the great guide of human life.\" Thomas Reid, Hume's fellow Scot, who wrote against his skepticism, answered in An Inquiry into the Human Mind (1764) that our trust in our senses, and in what other people tell us, is part of how we are made, and that we would know almost nothing without it. Most of what you believe about history, geography and science you took on testimony. You were right to.",
+          "In 1983, in \"Reason and Belief in God,\" the philosopher Alvin Plantinga turned this on the rule itself. A belief may be properly basic, he argued, rational to hold without being argued from other beliefs, as belief in other minds is. He also argued that the strict foundationalist's rule fails its own test, since the rule itself is neither self-evident nor evident to the senses, and no one has shown it from beliefs that are. Clifford's rule seems to me to have a version of the same difficulty: it's hard to say what evidence would be enough to establish it. Other philosophers, William Alston among them, have argued that Plantinga's case against foundationalism doesn't succeed in that form, and the debate is still live. But the first point stands on its own. If Clifford's rule were applied strictly, it would condemn trust no one can live without.",
+        ],
+      },
+      {
+        heading: "William James's reply",
+        body: [
+          "The American philosopher William James answered Clifford directly in \"The Will to Believe\" (1896). He thought Clifford's rule obeyed one fear, of being duped, as if it were the whole of duty. \"Clifford's exhortation has to my ears a thoroughly fantastic sound,\" he wrote. \"It is like a general informing his soldiers that it is better to keep out of battle forever than to risk a single wound.\" His central point was this: \"a rule of thinking which would absolutely prevent me from acknowledging certain kinds of truth if those kinds of truth were really there, would be an irrational rule.\"",
+          "James was careful about where that applies. He meant questions that are live, forced and momentous, where refusing to decide is itself a decision; the page \"What if Christianity is wrong?\" takes that argument up. Here the point is narrower. A rule that would keep you from ever trusting a person until you could prove him trustworthy would keep you from ever finding out that he was. Some truths are only known from inside a trust.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. Fine, everyone trusts their senses and their memory. But everyone shares those. Belief in God isn't like that. If you may hold it without argument, then anyone may hold anything without argument, and you've opened the door to every superstition there is. Philosophers call this the Great Pumpkin objection, after a cartoon, and Plantinga answered it himself: a belief is properly basic only when it has the right kind of ground, and there's no reason to think belief in the Great Pumpkin has one. The reply is still argued over, and I don't think a Christian should rest the whole case there. He doesn't have to. The New Testament itself doesn't ask anyone to believe without looking. It points to a public event, in a particular city, with named witnesses, and calls that event the assurance. Whether it happened is a historical question, and the page \"Did the resurrection actually happen?\" weighs it.",
+          "Here is what the argument doesn't prove. It doesn't prove that God exists. It doesn't defend faith in Dawkins's sense; where believers hold their faith blindly or against the evidence, that is a failure, and Christians should say so. It doesn't make every trust reasonable, since trust can be misplaced, and the shipowner's was. What it shows is narrower. Faith as the New Testament describes it is not the opposite of reason. It is what reason does when it meets a person: it weighs what it can know and then trusts beyond it, or refuses to.",
+          "Peter told the first Christians to honor Christ in their hearts, \"always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect\" (1 Peter 3:15). A reason for the hope. Everyone trusts something they can't stand outside of and prove: their own mind, the world going on tomorrow, the people who taught them. The question was never whether you live by faith. It's whether the one you trust has given you any reason to.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "David Hume", title: "An Enquiry Concerning Human Understanding", year: "1748", note: "Section IV, on why we expect the future to resemble the past." },
+      { author: "Thomas Reid", title: "An Inquiry into the Human Mind on the Principles of Common Sense", year: "1764" },
+      { author: "W. K. Clifford", title: "The Ethics of Belief", in: "Contemporary Review", year: "1877", note: "The best case against: believing on insufficient evidence is wrong." },
+      { author: "William James", title: "The Will to Believe", year: "1896" },
+      { author: "Richard Dawkins", title: "The Selfish Gene", year: "1976" },
+      { author: "Alvin Plantinga", title: "Reason and Belief in God", in: "Faith and Rationality, ed. Plantinga and Wolterstorff", year: "1983" },
+      { author: "Teresa Morgan", title: "Roman Faith and Christian Faith: Pistis and Fides in the Early Roman Empire and Early Churches", year: "2015" },
     ],
     essaySlug: "is-faith-irrational",
     essayTitle: "Is Believing Anything on Faith Irrational?",
