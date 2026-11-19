@@ -2498,3 +2498,36 @@ bone box; Marcion's date and Gospel; Hobart's count of 400 words; Mommsen,
 Ramsay, Syme, Turner and Brown by name on the census; every scholar named in
 the repository's fuller introduction below and not checked this run; the
 claim that Motza is now the consensus for Emmaus (one popular source only).
+
+## The plain notes on Luke 1 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/1.json`. Three searches for this
+chapter, with the book page's rows above and the earlier ledger.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Preface wording; "most excellent" for governors | 1-4 | BSB; book page rows | Repository |
+| Twenty-four priestly groups; Abijah the eighth | 5-17 | 1 Chronicles 24:10 | BSB |
+| Lots for the incense among priests who had never offered it (Mishnah Tamid 5:2, written down about AD 200); once in a lifetime for many; Talmud Yoma 26a on why no priest did it twice (not used on the page) | 5-17 | Mishnah | Search: bibleportal.com (Constable citing Tamid 5:2); hadran.org.il Yoma 26; Reformation Study Bible note on 1:9 |
+| Childlessness a grief and a public shame; assumed to be God's displeasure; Luke calls them righteous first | 5-17, 18-25 | BSB (1:6, 1:25; Genesis 30:23); repository chapter note (`cultural`) | Repository; stated generally, no ancient writer named |
+| Malachi 4:5-6; Numbers 6:3; Judges 13:4-5; Genesis 18:11, 18:14; 1 Samuel 1:11 | 5-25 | BSB | Repository |
+| Gabriel and Michael the only angels named in the Hebrew Bible, both in Daniel; Gabriel at the evening sacrifice (Daniel 9:21) | 18-25 | BSB | Repository |
+| Nazareth a small village, perhaps a few hundred people; not named in the Old Testament | 26-38 | Earlier ledger (Mark 6) | Earlier ledger |
+| Betrothal a binding first step; wedding later | 26-38 | Earlier ledger (Matthew 1) | Earlier ledger. The age of brides (deep note) was not checked and is left out |
+| 4Q246: "son of God" and "son of the Most High"; messiah or hostile king debated | 26-38 | 4Q246 | Search: en.wikipedia.org 4Q246; galaxie.com (Collins, BBR 7); doaj.org 2025 study |
+| 2 Samuel 7:16; Exodus 40:34-35; Genesis 18:14 | 26-38 | BSB | Repository |
+| Virgin conception: Matthew and Luke independent; skeptics and Christian answers; the Apostles' Creed in the site's wording ("conceived by the Holy Ghost, born of the Virgin Mary") | 26-38 | Matthew 1 plain note; site creed text | Repository |
+| Kecharitōmenē: shown grace or favour; Jerome's gratia plena, "full of grace"; Catholic link to the Immaculate Conception; Protestant "highly favored" | 26-38 | Lexicons; Catholic and Protestant sources | Search: catholic.com "Full of grace versus highly favored"; detroitcatholic.com; tips.translation.bible. The Catechism's paragraph numbers and the 1854 date were not checked and are not given |
+| Judges 5:24 Jael; 2 Samuel 6:9-11 the ark three months; reading offered as what "some readers hear" | 39-45 | BSB | Repository |
+| Catholic and Orthodox honour and prayers to Mary distinguished from worship; Protestant emphasis | 39-45 | Standard positions | Stated generally |
+| Hannah's song (1 Samuel 2:1, 2:7, 2:8); Psalm 111:9; Psalm 103:17; Genesis 12:1-3 | 46-56 | BSB | Repository |
+| Circumcision on the eighth day (Genesis 17:12); sons often named for a father or grandfather; John = Yohanan, "the LORD has been gracious" | 57-66 | BSB; repository chapter note (`cultural`); name studies | Repository. The wax tablet (deep note) not described |
+| Psalm 132:17; Genesis 22:16-18; Malachi 3:1; Isaiah 40:3; Isaiah 9:2 | 67-80 | BSB | Repository |
+| John and the Dead Sea community: "only a guess" | 67-80 | Common suggestion | Stated as a guess, no claim made |
+
+Left out: m. Tamid 7:2 and the priestly blessing Zechariah could not give;
+Josephus on the number of priests; the Mishmarot scrolls; Ein Karem; the
+eighty miles; Judith; the age of betrothal; the wax tablet; Celsus and
+Panthera; Lüdemann, Schaberg, Lincoln, Machen and Brown by name. Care: the
+5-17 hard field speaks to readers who long for a child or lost one
+(childlessness is not a judgment; a path to a friend, pastor or counsellor).
