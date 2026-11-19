@@ -360,7 +360,7 @@ Cut from the old answer: "For most of my life I was an atheist, and of all the c
 | Lewis's drawer: six pennies Monday and Tuesday, two on Wednesday after a thief; the laws of England broken, not arithmetic | Search: C. S. Lewis Institute excerpt, TGC excerpt | Verified, paraphrased |
 | Earman, *Hume's Abject Failure* (Oxford, 2000), Pittsburgh; the probability of Bayes and Price; Hume's argument fails | Search: Muse review, Earman's Pittsburgh page, Apologetics315 review | Verified, paraphrased |
 | Babbage, *Ninth Bridgewater Treatise*, chapter 10: enough independent witnesses, each more often right than wrong, outweigh any improbability | Search: Victorian Web text of chapter 10 and appendix E; Earman 1993 | Verified, paraphrased. Year 1837 for the first edition rests on standard bibliography; the text says "the 1830s" |
-| Kopf, "Of Miracles and Evidential Probability: Hume's 'Abject Failure' Vindicated", *Hume Studies* (2005) | Search (same as Earman) | Verified |
+| Vanderburgh, "Of Miracles and Evidential Probability: Hume's 'Abject Failure' Vindicated", *Hume Studies* (2005) | Search: Project MUSE record (Hume Studies 31.1, April 2005, pp. 37-61), PhilArchive VANOMA-8 | Verified (the fifth run first named the author "Kopf"; corrected to William L. Vanderburgh) |
 | Millican on how one could know witnesses are independent | Search: Philosophical Disquisitions (2018) summary of Millican | Verified as his objection, paraphrased |
 | Keener, *Miracles* (Baker, 2011), two volumes; hundreds of eyewitness reports, many from Asia, Africa, Latin America | Search: Denver Journal, Themelios, First Things reviews | Verified, paraphrased |
 | Wright, *The Resurrection of the Son of God* (2003) | This ledger (resurrection sources) | Verified |

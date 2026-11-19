@@ -360,13 +360,13 @@ Sources: Hick 1973 and 1989 (the best book against); D'Costa 1996; Hick's reply 
 
 ### Are miracles believable?
 
-The argument in three sentences. Hume's case is quoted from the Enquiry itself (the wise man, the definition, the maxim, the four points of Part II, the Abbé Paris, the frost) and laid out as he gives it; its first premise is granted and the weight placed on the second. That premise is circular if read strictly (Lewis), and read as probability it fails the test of probability (Earman, with Babbage on independent witnesses, and Kopf and Millican's replies given fairly), while the word violation assumes what is in question (Hume's own Indian prince; Lewis's drawer). The prior probability of a miracle depends on whether there is a God and a reason for him to act, so no rule laid down in advance can settle it, and the question goes back to the God and resurrection pages; "ignorant and barbarous nations" is met with Keener's reports from the Global South.
+The argument in three sentences. Hume's case is quoted from the Enquiry itself (the wise man, the definition, the maxim, the four points of Part II, the Abbé Paris, the frost) and laid out as he gives it; its first premise is granted and the weight placed on the second. That premise is circular if read strictly (Lewis), and read as probability it fails the test of probability (Earman, with Babbage on independent witnesses, and Vanderburgh and Millican's replies given fairly), while the word violation assumes what is in question (Hume's own Indian prince; Lewis's drawer). The prior probability of a miracle depends on whether there is a God and a reason for him to act, so no rule laid down in advance can settle it, and the question goes back to the God and resurrection pages; "ignorant and barbarous nations" is met with Keener's reports from the Global South.
 
 Before: "John Earman, no apologist, called this circular in Hume's Abject Failure (Oxford, 2000)." After: "The first is a circle... C. S. Lewis put it plainly in Miracles (1947)... That is the second problem. John Earman... examined the essay with the mathematics of probability worked out by Hume's own contemporaries, Thomas Bayes and Richard Price."
 
 Words: 376 before; 2,046 after.
 
-Sources: Hume 1748 (the best case against); Lewis 1947; Earman 2000; Kopf 2005; Babbage 1837; Keener 2011; Wright 2003.
+Sources: Hume 1748 (the best case against); Lewis 1947; Earman 2000; Vanderburgh 2005; Babbage 1837; Keener 2011; Wright 2003.
 
 ### Is faith just wishful thinking?
 
