@@ -5106,3 +5106,27 @@ and Augustus at Caesarea; Jubilees on eating with Gentiles.
 Left out: "the third city of the empire"; the size of Antioch's Jewish
 community; the 11:20 "Greeks" or "Hellenists" reading (not searched); the
 name as a parallel to Nero's Augustiani; Tacitus on the name.
+
+## The plain notes on Acts 12 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/12.json`. 2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Herod Agrippa I: grandson of Herod the Great (son of Aristobulus IV); friend of Caligula and Claudius; Claudius gave him Judea and Samaria in AD 41; king 41 to 44 | 1-5 | Reference works | Search: Britannica "Herod Agrippa I"; jewishvirtuallibrary.org "Agrippa I"; biblicaltraining.org; Wikipedia "Agrippa I". "Raised in Rome" not stated (a first search did not confirm it) |
+| "This pleased the Jews" (12:3) and "the Jewish people" (12:11): those whose favour Herod sought, above all the leaders; James, Peter and the praying church are Jews; pointer to the 2:22-28 note | 1-11 | BSB; book page part "Acts and the Jewish people" | Repository |
+| Feast of Unleavened Bread the week beginning with Passover; sixteen soldiers (12:4); 5:19 | 1-5 | BSB; deep note `cultural` | Repository |
+| Mark 10:39; John 21:18-19; Hebrews 11:37; Psalm 116:15; Exodus 3:8; Daniel 3:18 | 1-5 | BSB | Repository |
+| Peter killed in Rome under Nero, as early Christian writers tell | 1-5 | Eusebius, Church History 2.25; 1 Clement 5 | Earlier ledger (Mark's book page; Luke 22) |
+| James killed and Peter freed: the text gives no reason, said plainly; care line for those whose prayer for rescue was not answered (Acts 7 form) with Find Help | 1-5 | Deep note `hard`; Acts 7 plain note | Repository wording |
+| Exodus 12:11, 42; Psalm 34:7; Psalm 126:1 | 6-11 | BSB | Repository |
+| Rhoda "rose"; Luke 24:11; Matthew 18:10 (angels); belief that each person had an angel | 12-19 | Lexical; deep note `cultural` | Stated as a belief of the time |
+| Mary's house: a meeting place; John Mark (12:25); early writers linked a Mark with the Gospel | 12-19 | BSB; earlier ledger (Papias, Mark's book page) | Ledger |
+| James the Lord's brother (15:13; Galatians 1:19) | 12-19 | BSB | Repository |
+| Guards held responsible "many think"; 16:27 | 12-19 | BSB | Stated as a reading; no Roman law cited |
+| 1 Kings 18:4; 19:3 | 12-19 | BSB | Repository |
+| Agrippa's death: games at Caesarea in honour of the emperor, a robe all of silver shining in the morning sun, flatterers hailed him a god, he did not rebuke them, pain in the belly, died five days later, seventh year of Claudius, AD 44 | 20-25 | Josephus, Antiquities 19.343-350 | Earlier ledger (Acts book page); search: lexundria.com 19.343-351 (Whiston); julianspriggs.co.uk. Paraphrased; the owl omen not used |
+| Tyre and Sidon fed from the king's land (12:20); Ezekiel 28:2; Daniel 4:30, 37; Isaiah 42:8; 1 Kings 5:11 | 20-25 | BSB | Repository |
+
+Left out: Agrippa raised in Rome; the owl in Josephus; any Roman rule on
+guards; a year for James's death beyond "shortly before 44" (not stated).
