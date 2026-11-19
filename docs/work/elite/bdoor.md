@@ -5040,3 +5040,197 @@ the Publius inscriptions; which manuscripts read seventy-six at 27:37.
 ### Next
 
 Acts is complete in plain words. The next book is for the lead to choose.
+
+## Psalms: the book page and Psalms 1 to 10 (2026-11-19)
+
+### The book page (`/study/bible/psalms`, same address)
+
+Data only, in `client/public/bible/notes/psalms/intro.json`, field `teaching`,
+added at the end of the file (the rest untouched). Nineteen headed parts: The
+Psalms in a minute; ‘Praises’: the book's name; Five books, and the blessings
+that close them; Who wrote the psalms; What the headings tell you; When they
+were written; How Hebrew poetry works; ‘Selah’ and the words for music; Kinds
+of psalm; The Psalms and the temple; The Psalms in the Dead Sea Scrolls and in
+Greek; Why the numbers differ; The cursing psalms; Sheol, and what the
+psalmists knew of life after death; When a psalmist says he is innocent; ‘Why
+have You forsaken me?’; How the New Testament uses the Psalms; The king's
+psalms: how Jews and Christians read them; How to read and pray a psalm.
+Then 14 hard passages (2:12, 6:5, 7:8, 8:5, 10:4, 22:1, 44:22, 51:5, 58:10,
+82:6, 88:18, 109:9, 110:1, 137:9), 14 key words (hesed, the LORD, torah,
+Sheol, Zion, Selah, anointed one, the righteous, refuge, wait, ashre, nephesh,
+Hallelujah, lament), a timeline of 13 entries, one map on the "israel" frame
+(Jerusalem/Zion, the Jordan, Shechem, Gilead as a region, Tyre: the places
+Psalms 60, 42, 45 and 87 name), a `mapNote` (Babylon and Egypt lie beyond the
+frame), and six Go deeper pages (the lament study guide, the Honest Answers on
+anger at God and on suffering, Psalm 91 in context, messianic expectation, the
+Old Testament world portrait).
+
+Words: 5,662 in the nineteen parts (the brief asked about 4,000; the hard
+things and the Jewish and Christian readings took the extra); 974 in the
+lists, timeline and map.
+
+The validator requires a map once a book has a teaching introduction, so the
+book could not go without one. The map shows the land the psalms name; a
+"fertile-crescent" map with Babylon would have meant changing the frames test,
+which this run was not to touch.
+
+**Code.** None changed in the app. `teaching.test.tsx` adds "psalms" to the
+list of books with a guide (one line).
+
+### Psalms 1 to 10 in plain words
+
+| Psalm | Passages | Plain words |
+|---|---|---|
+| 1 | 2 (the tree by the streams; chaff, and the two ways) | 1,337 |
+| 2 | 3 (‘Why do the nations rage?’; God laughs, and ‘You are My Son’; ‘Kiss the Son’) | 1,718 |
+| 3 | 2 (surrounded: ‘a shield’; sleep, and ‘Arise, O LORD’) | 1,162 |
+| 4 | 2 (‘Be angry, yet do not sin’; more joy than a harvest, sleep in peace) | 1,114 |
+| 5 | 2 (a morning plea, and the God who hates evil; ‘Lead me’) | 1,194 |
+| 6 | 2 (‘How long?’; ‘I flood my bed’, and ‘The LORD has heard’) | 1,466 |
+| 7 | 3 (hunted, ‘if I have done this’; God the judge; the pit he dug) | 1,498 |
+| 8 | 2 (‘How majestic’, and the praise of children; the night sky, ‘what is man?’) | 1,381 |
+| 9 | 2 (the judge who does not forget; the gates of death and of Zion) | 1,030 |
+| 10 | 2 (‘Why do You stand far off?’; the helper of the fatherless) | 1,391 |
+| Total | 22 | 13,291 |
+
+Each note gained only `"plain": true` at its end (Psalm 2's file has no
+final newline and keeps none). After each psalm every passage was printed
+field by field and read: all 22 sit under their right headings.
+
+**Poetry in the five fields.** `happening` quotes the psalm and names its
+turns (the "But You" of 3:3, the sudden turn at 6:8, the refrain that frames
+Psalm 8); `hearers` holds the heading, the kind of psalm, the Hebrew word
+(ashre, hagah, ragaz, elohim, bar) and the world behind the image (irrigation
+channels, the threshing floor, the city gate, the avenger of blood, Sheol);
+`later` names the New Testament's quotations by book and verse, or another Old
+Testament book where the New Testament is silent (Psalm 3: 2 Samuel, Jonah;
+Psalm 7: Job 31, Jeremiah). What did not fit cleanly: the heading belongs to
+verse 1 in the BSB, so the heading is quoted in `happening` and explained in
+`hearers`; and the two-psalm acrostic of 9 and 10 is explained twice, once in
+each.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The Psalms' book page" and "The plain notes on
+Psalm 1" to "10", with a stricter quotation check at the end. 18 web searches:
+10 for the book page, then 2, 2 (plus the book page's Rashi search), 0, 1, 0,
+1, 1, 2, 0, 0. Main sources: Lowth (1753); Gunkel and Begrich, Einleitung in
+die Psalmen (1933); the Great Psalms Scroll (11Q5) and the counts of Psalms
+manuscripts at Qumran; Psalm 151 in the Septuagint; the Greek and Latin
+numbering; the le-David debate; the acrostics; Psalm 110:1's use in the New
+Testament; Bonhoeffer (1940) and Lewis (1958) on the cursing psalms; Rashi on
+Psalm 2 with Berakhot 7b; Berakhot 9b on Psalms 1 and 2 as one; the Rule of
+Benedict 18; daily Jewish morning prayer (145 to 150) and the festival Hallel;
+ashre; kiss the Son (the Septuagint, Vulgate, Targum, Aramaic and Hebrew bar);
+Ephesians 4:26 and the Septuagint of 4:4; the penitential psalms; Shiggaion
+and Cush; elohim in 8:5; strength and praise in 8:2. Counts by script over
+the repository's Strong's numbers and BSB text: Selah 71, hesed 127, Sheol 16,
+Zion 38, headings by name. Scripture is the BSB, checked word for word.
+
+### Cut or narrowed
+
+Cut: Athanasius's Letter to Marcellinus; Zenger by name; Rashi's dates and
+place; Jerome's Hebrew psalter at 2:12; the "kiss his feet" emendation; kings
+called sons of gods and Egypt's god-king; subject nations rebelling at a new
+king; Codex Bezae by name; the Asherah etymology; the Gath and wine-press
+senses of Gittith; "the ancient translators" on Selah; the large body shield;
+a guest under a host's protection; Hammurabi on orphans; Brevard Childs; the
+harvest seasons; "the most quoted book" as a flat claim. Narrowed: Psalms and
+Isaiah "more than almost any other Old Testament book"; Qumran "from about 36
+to about 40" manuscripts; the five books and the Torah "these notes leave the
+question open"; the songs of ascents "a likely reading"; the Hallel at
+Passover "probably"; the penitential grouping "known from the sixth century".
+
+### Contested matters, and how they are stated
+
+"Of David" (traditional, critical, between; "These notes do not settle it").
+The headings' age and authority ("debated among believers and scholars
+alike"). Dates (some early, some after the exile; scholars do not agree). The
+Great Psalms Scroll (two views). The five books and the Torah (open). The
+cursing psalms (four readings, "these notes do not choose"; one thing not
+open). Sheol (rescue from early death, or first light of a later hope; many
+hold both). Innocence (of a charge; loyalty; prayers Jesus prays in full).
+"Forsaken" (three readings, "not enemies"). The royal psalms (Jewish and
+Christian readings, "Neither reading is dishonest"). Psalm 1:3 (proverb, inner
+fruit, final judgment). Psalm 4:4 (anger or tremble). Psalm 5:5 (hate as
+rejection; opposition and love; the court). Psalm 6's turn (a priest's word
+or a change within). Psalm 8:5 (God, heavenly beings, both); no position on
+the age of the earth or evolution; no modern political use of "ruler". Psalm
+10:4 (practical godlessness; honest unbelievers not its target).
+
+**Of David, on the page:** "People who study the Psalms read this in different
+ways. The traditional view, held by Jews and Christians for many centuries and
+by many scholars today, is that le-David names the author in most cases. ...
+Many critical scholars ... think most headings were added later by the people
+who collected the psalms. ... Many hold a view in between ... The headings are
+old. ... But how old they are, and how much weight they carry, is debated
+among believers and scholars alike. These notes do not settle it."
+
+**The cursing psalms, on the page:** "Christians have answered in several
+ways. Each is held by thoughtful believers, and these notes do not choose
+between them." Then four readings (honest prayer handing vengeance to God; the
+voice of the oppressed; fulfilled or changed at the cross, with Bonhoeffer;
+not for Christian lips, with Lewis). Then: "One thing is not open. No reading
+of these psalms has ever made it right to harm anyone, least of all a child.
+They are prayers spoken to God, not commands to people."
+
+**"You are My Son" (Psalm 2:4-9, hard):** "Both readings take the words
+seriously and with love. Neither is a trick or a dodge. The difference
+between them is real: it is the question of who Jesus is. It should be named
+plainly and discussed with respect." And: "This psalm is not about any modern
+nation."
+
+**Psalm 6 care line (6:6-10, hard):** "The psalm does not give his sorrow a
+medical name, and these notes do not give anyone's sorrow a name either. But
+if your nights are like the nights in this psalm, please do not carry them
+alone. Tell someone you trust: a doctor, a pastor, or a friend. When grief or
+sadness lasts and starts taking sleep, appetite or work, seeing a doctor is
+wise, and it is not a failure of faith. If you have thoughts of hurting
+yourself, please speak to someone now: a doctor, a pastor, a trusted friend,
+or a crisis line. The Find Help page on this site lists places to turn."
+
+Other care lines: Psalm 4 (anger that frightens anyone at home: someone
+trusted and Find Help; long sleeplessness: a doctor). No phone number.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes psalms` after each psalm: pass, no exceptions. A
+stricter quotation script (case, punctuation, no em-dash) found four
+quotations the validator's looser match passed; all four fixed. At the end,
+all 36 content-gate commands of ci.yml, one at a time: exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 177 chapters in
+plain words; validate-no-emdash 260 files, 0; search index 732 entries up to
+date; passage index 623 files match; verify-sources 22 texts intact). `pnpm
+check`: exit 0. `pnpm test`: 146 files passed, 7 skipped; 1,679 tests passed,
+73 skipped. ESLint on the changed test: clean. `pnpm build`, `pnpm run
+sitemap`, `pnpm run prerender` (3,028 pages), `pnpm run audit:canonicals`:
+exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602; Playwright at
+deviceScaleFactor 1 with `/api/trpc`, `/api/track` and `/_vercel/*` stubbed.
+Book page at 390 and 1440: 19 of 19 parts render as headings with the data's
+text, 13 timeline entries, the map and its note, no sideways scroll, no
+console or page errors. Psalms 1 to 10 at 390: every passage heading, its part
+headings in order (the third is "Where the Bible takes this up") and the first
+60 characters under each matched the data: 9, 13, 9, 9, 9, 10, 13, 9, 8, 9
+fields; no sideways scroll, no errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/ps-book-390-*.png`, `ps-book-1440-*.png`,
+`ps6-390-*.png`, `ps8-390-*.png`. After the look, one data-only change: the
+timeline's temple entry gained "by the usual dating" (validator passed after).
+Lighthouse (ci.yml command, three runs, `/study/bible/psalms`): median
+performance 84, accessibility 100, best practices 96, SEO 100, CLS 0.000.
+Server stopped by PID, dist/ deleted, no lh-*.json.
+
+### Still unverified
+
+The exact words of every later writer (all paraphrased); the date of the
+Septuagint's Psalms ("before the time of Jesus"); the Greek of Psalm 1:1 and
+the Beatitudes; whether Psalm 37 is a complete acrostic (sources differ;
+the page says "some with a letter missing or out of place").
+
+### Next
+
+Psalm 11 onward, in the same shape. At this depth a psalm takes about 1,300
+words; 140 more psalms is roughly 180,000 words. A lighter shape (one passage
+for most short psalms, `hard` only where a real difficulty exists) would serve
+readers of the many short psalms better; that is for the lead to decide.
