@@ -6590,7 +6590,7 @@ One web search.
 | Watches of the night; jackals; oaths in God's name | 6-11 | Repository deep note (cultural) | Site's own teaching |
 | Matthew 4:2; John 4:14; Matthew 5:6; Philippians 1:21; John 10:28; Ruth 2:12 | all | BSB | BSB text |
 
-Psalm 62's note was corrected in the next commit: Romans 2:6 uses words found in
+Psalm 62's note was corrected in the commit for Psalms 64 to 66: Romans 2:6 uses words found in
 both 62:12 and Proverbs 24:12 (BSB), so the note no longer says Paul quotes the
 psalm alone.
 
@@ -6628,3 +6628,32 @@ No web search.
 | No event named | Repository deep note (historical) | Proposals (701 BC, the return) not repeated |
 | 66:18 "cherished" as holding on to sin; Isaiah 59:2; Proverbs 28:13 | Repository deep note (`hard`); BSB | BSB text |
 | Isaiah 43:2; Malachi 3:3; 1 Peter 1:7 | BSB | BSB text |
+
+## The plain notes on Psalm 67 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 67:1 echoes the priestly blessing (Numbers 6:24-25), "you" to "us" | Repository deep note (cultural); BSB | BSB text |
+| Shining face as favour | Repository deep note (cultural) | Site's own teaching |
+| Harvest setting; 67:6 can be read as a prayer for a future harvest | Repository deep note (historical) | Stated as views |
+| Genesis 12:3; Luke 2:31-32; Isaiah 49:6; Revelation 7:9 | BSB | BSB text |
+
+## The plain notes on Psalm 68 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 68:1 repeats Numbers 10:35; 68:7-8 close to Judges 5:4-5; the ark procession (many readers) | 1-18 | BSB; repository deep note | BSB text |
+| Ugaritic "rider of the clouds" (rkb 'rpt) a title of Baal; the psalm gives it to the LORD | 1-18 | NET Bible note (biblia.com); Lexham Bible Dictionary "Rider on the Clouds"; Barker, Bibliotheca Sacra 1976 | Search. "Deserts" alternative not raised on the page |
+| Bashan east of Galilee; taller mountains than Zion | 1-18 | Repository deep note (cultural) | Site's own teaching |
+| 68:18 "received" and Ephesians 4:8 "gave"; the Targum reads "gave" of Moses; a conqueror receives and gives; Acts 2:33 | 1-18 | biblehub.com commentaries Ephesians 4:8; samstorms.org "Ephesians 4:7-10"; b-hebrew list (2001) | Search. The Peshitta not named (not confirmed); stated as readings |
+| Psalm 68 among the hardest Hebrew texts; 68:13 uncertain | 1-18 | Repository deep note (historical) | Site's own teaching |
+| 68:19 "bears our burden" or "bears us up" | 19-35 | Translations (BSB; ESV "bears us up") | Stated as "can also be read" |
+| Miriam's tambourine (Exodus 15:20); tribes south and north; Cush south of Egypt | 19-35 | BSB; repository word data | BSB text |
+| Acts 8:27; Colossians 2:15; John 14:18; James 1:27 | all | BSB | BSB text |
+
+68:21-23 point to the book page's cursing psalms part. 68:4, 17, 23, 24 and
+32 carry em-dashes in the BSB and are quoted only up to them.
