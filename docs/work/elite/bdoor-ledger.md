@@ -4290,3 +4290,29 @@ chapter, with the deep note, the verse notes and the Genesis 12 plain note.
 Cut: the Samael identification (doubtful in the sources); Maimonides on a
 prophetic vision (not confirmed by the search); Jabbok as the modern Zarqa
 (in the deep note, not needed); Penuel's later history.
+
+## The plain notes on Genesis 33 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/33.json`. Two web searches for this
+chapter, with the deep note and the verse notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The order of the family and favoritism | 1-7 | Deep note (`cultural`) | Repository |
+| Amarna letters (1300s BC) from rulers in Canaan: the writer falls at the king's feet ‘seven times and seven times’ | 1-7 | Amarna letters EA 286 and others | Search: Wikipedia "Prostration formula"; faculty.uml.edu Amarna translations; Wikipedia EA 286. The comparison with 33:3 is the note's own and said only as the same gesture |
+| Esau's change not explained; gifts not yet accepted; God's hand read from 32:11 | 1-7 | Deep note (`doctrines` providence) | Repository; "Many readers" |
+| Dots over ‘kissed him’; Genesis Rabbah 78:9: some said insincere (Rabbi Yannai; Pirkei de-Rabbi Eliezer), others that his mercy was stirred and he kissed with all his heart (Rabbi Shimon ben Elazar; Rabbi Shimon bar Yochai in Rashi) | 1-7 | Genesis Rabbah 78:9; Rashi on 33:4 | Search: jtsa.edu "An Infinity of Interpretation"; sefaria.org sheets; aish.com "Just a Kiss". Paraphrased, no names given on the page |
+| Luke 15:20 as an echo some readers hear, "an echo of shape, not a quotation" | 1-7 | Deep note (`christ`) | Repository; stated as an echo |
+| Genesis 45:15; Proverbs 18:19 | 1-7 | BSB | Repository |
+| ‘My lord’ and ‘my brother’; accepting a gift accepts the peace; ‘gift’ in 33:11 is ‘blessing’ (berakah); Peniel echo | 8-11 | Deep note (`cultural`, `literary`) | Repository |
+| Matthew 5:24; 2 Corinthians 5:18; Psalm 133:1 | 8-11 | BSB | Repository |
+| Seir never visited: two readings (old Jacob; polite speech, true reasons, Seir outside the land, Abraham and Lot) | 12-17 | Deep note (`hard`) | Repository; no side |
+| Succoth ‘shelters’, in the Jordan Valley near the Jabbok's mouth | 12-17 | Verse notes 17 | Repository; Tell Deir Alla not named |
+| Genesis 35:29; 36:7; Romans 12:18; Hebrews 12:14 | 12-17 | BSB | Repository |
+| shalem ‘safely’, ‘whole’; 28:21; Shechem in a pass on the main roads; 12:6-7; qesitah unknown value; El-Elohe-Israel two readings | 18-20 | Verse notes 19-20; deep note (`historical`) | Repository |
+| Land promise pointed back to the Genesis 12:4-9 note | 18-20 | Site | Repository |
+| Joshua 24:1, 32; John 4:5, 12 | 18-20 | BSB | Repository |
+
+Cut: Tell Balata, Labayu and Shechem's temple (deep note; not needed);
+Tell Deir Alla and the Balaam inscription; the Mari ‘killing a donkey’
+idiom and Hamor; Shalem read as a place name.
