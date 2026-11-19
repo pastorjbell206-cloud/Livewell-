@@ -6657,3 +6657,22 @@ Two web searches.
 
 68:21-23 point to the book page's cursing psalms part. 68:4, 17, 23, 24 and
 32 carry em-dashes in the BSB and are quoted only up to them.
+
+## The plain notes on Psalm 69 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Deep water and mire as pictures of death; the gate; sackcloth and fasting | 1-12 | Repository deep note (cultural) | Site's own teaching |
+| "Of David"; the closing verses dated after the exile by many scholars | 1-12 | Repository deep note (historical); book page | Stated as views |
+| New Testament uses: 69:9 in John 2:17 and Romans 15:3; 69:4 (and 35:19) in John 15:25; 69:21 and the gall and sour wine (Matthew 27:34, 48; John 19:28-30); 69:25 in Acts 1:20; 69:22-23 in Romans 11:9-10 | all | BSB; biblehub.com "Is Psalm 69 originally about Jesus?"; Lange (biblehub.com); International Standard Bible Encyclopedia summaries | BSB text; search |
+| 69:5's confession keeps Christians from applying the whole psalm to Jesus; a pattern (typological) reading | 1-12, 22-36 | Lange; Spurgeon's Treasury (reformedreader.org) as summarised | Search. Paraphrased; no names on the page |
+| Gall a bitter, poisonous plant; sour wine the common drink | 13-21 | Repository deep note; BSB | Site's own teaching |
+| Exodus 34:6 behind "loving devotion" and "compassion"; Mark 14:50 | 13-21 | BSB | BSB text |
+| The Book of Life; Exodus 32:32 | 22-36 | Repository deep note (cultural); BSB | BSB text |
+| Romans 9:2; 11:11; 11:25 (Paul's grief, "in part", warning against pride); nothing blames the Jewish people | 22-36 | BSB | BSB text |
+| Readings of the curses beside Luke 23:34: not put in Jesus' mouth (the contrast of David and the Son of David, 1 Peter 2:23); God's judgment on final rejection, applied soberly (Acts 1:20); the book page's four readings | 22-36 | Commentaries as summarised; book page | Search; stated as views, no side |
+
+Care line where the sinking and the shame are described (69:1-12). 69:4 has an
+em-dash in the BSB and is quoted only before it.
