@@ -181,3 +181,67 @@ latest `claude/todo-implementation-hhp4bm`.
 4. **The brothers of Jesus (3:31-35).** The note gives the Protestant,
    Orthodox and Catholic readings and takes no side. Say if you want the
    site's own view stated.
+
+## Continued: Mark 4 to 6 (2026-11-19)
+
+James read the pilot and said "publish it all". This run added the same plain
+layer, "Passage by passage, in plain words", to Mark 4, 5 and 6, in the same
+data shape (`client/public/bible/notes/mark/plain/<n>.json`, with `"plain":
+true` on each chapter note). No code changed. The deep notes are unchanged
+underneath.
+
+| Chapter | Passages | Plain words added |
+|---|---|---|
+| Mark 4 | 7 (the sower; why parables; the sower explained; lamp and measure; seed growing by itself; mustard seed; the storm) | 2,941 |
+| Mark 5 | 5 (Legion; afraid of the calm; Jairus; the woman who touched his cloak; the girl raised) | 2,377 |
+| Mark 6 | 6 (rejected at home; the Twelve sent; John's death; five thousand fed; walking on the water; Gennesaret) | 2,691 |
+| Total | 18 | 8,009 |
+
+Mark 1 to 6 now all open with the plain layer: 37 passages, about 15,000
+plain words.
+
+**Sources.** Every historical claim is in `docs/work/elite/bdoor-ledger.md`
+under "The plain notes on Mark 4", "Mark 5" and "Mark 6", with what it rests
+on and how it was checked. 21 web searches were run (7 for Mark 4, 6 for
+Mark 5, 8 for Mark 6); the rest rests on the earlier ledger, the Berean
+Standard Bible text (every quotation checked word for word by the validator)
+and counts of the Greek text in the repository. Main sources: Jeremias and
+K. D. White on sowing; the Targum of Isaiah 6:10; Jülicher and Blomberg on
+parables; lexicons on the modios, tektōn and talitha; the Sea of Galilee's
+geography; Livius on the Tenth Legion; Tzaferis and his critics on Kursi;
+1 Maccabees 1:47 and the Jewish Encyclopedia on pigs; Mishnah Ketubot 4:4;
+Josephus on John (Antiquities 18.116-119), on Antipas and Herodias, and on
+James (20.200); Justin Martyr, Dialogue 88; the Roman night watches; the Greek
+Old Testament's "pass by" and egō eimi.
+
+**Narrowed or left out.** Varro's harvest yields could not be found and are
+not used. Calvin's reading of 4:12 was not checked, so no Reformer is named.
+Haber's argument on the bleeding woman could not be read, so the note says
+only that scholars debate how far her illness cut her off. Josephus's motive
+for Herod is given as "suspicious of John's influence over the crowds", the
+wording the sources support, not "feared an uprising". The Kursi site is "many
+think ... though not all agree". Left out entirely: the magical papyri, the
+Theodotus inscription, the ruins at Jerash, Wachsmann's sandbag, Luther's
+Invocavit sermons, Juvenal's baskets, Bethsaida's disputed site, Gennesaret in
+Josephus, and the textual notes on 4:40 and 5:36.
+
+**Care.** Mark 5:5 tells of a man harming himself. The hard question on
+possession and illness says Christians hold that most suffering of the mind is
+illness, warns against calling illness a demon, and ends with a plain line to
+reach for real help now (a doctor, a pastor, or a crisis line).
+
+**Contested matters, stated without taking a side:** why Jesus spoke in
+parables (4:12); whether Jesus gave the explanation of the sower; the
+possessed man and mental illness; the pigs; Jesus' brothers (pointing back to
+Mark 3); how much egō eimi means in 6:50.
+
+**What was run** (after merging the latest `claude/todo-implementation-hhp4bm`,
+one at a time): `validate-bible-notes.mjs` after each chapter; all 36 commands
+of the CI content-gates step, all passed; `pnpm check` passed; `pnpm test`:
+146 files and 1,651 tests passed, 73 skipped. No build, Lighthouse or
+screenshots, since no code changed and the plain layer renders through the
+component the pilot built and measured.
+
+**Not verified:** the new chapters were not looked at in a browser.
+
+**Next:** Mark 7.
