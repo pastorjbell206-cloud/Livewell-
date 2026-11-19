@@ -4861,3 +4861,22 @@ at Psalm 16:10 (not checked this run); the ritual baths and pools for the
 three thousand; Orthodox chrismation (not found in the search; the Orthodox
 are named with Catholics in the general sentence only, as in the deep note);
 Mantey on eis; any modern economic or political reading of 2:44.
+
+## The plain notes on Acts 3 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/3.json`. 4 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ninth hour about three in the afternoon; the second daily (afternoon) sacrifice at the ninth hour | 1-10 | Josephus, Antiquities 14.65; Jewish War 6.423 as quoted | Search: agapebiblestudy.com; tips.translation.bible; biblehub summaries. "As Josephus tells", paraphrased |
+| The Beautiful Gate named nowhere else; many identify it with the bronze Nicanor Gate on the east, into the inner courts; others other gates | 1-10 | Bible dictionaries (ISBE, Lexham); m. Middot | Search: biblicaltraining.org; bibletools.org ISBE; bible-history.com. No side taken |
+| The man over forty (4:22); Isaiah 35:6 | 1-10 | BSB | Repository |
+| Healing care line: the Matthew 8 sentences (2 Corinthians 12:9; 2 Timothy 4:20; Colossians 4:14); healing in the atonement (Isaiah 53:4; Matthew 8:17); James 5:14-15; Revelation 21:4; Find Help | 1-10 | Matthew 8 plain note; earlier ledger (Bosworth) | Repository wording |
+| Solomon's Colonnade along the east side of the outer court; John 10:23; Acts 5:12 | 11-16 | Bible dictionaries | Search: biblegateway Encyclopedia of the Bible; Easton; biblestudytools.com |
+| Barabbas (Luke 23:19); archēgos "founder, leader" | 11-16 | BSB; lexicons | Repository; common lexical sense |
+| Exodus 3:6; Isaiah 52:13; 53:11; 43:25; 65:17; Deuteronomy 18:15; Genesis 12:3; 22:18; John 1:21; Luke 23:34 | 11-26 | BSB | Repository |
+| "You handed Him over": pointer to the 2:22-28 note | 11-16 | Acts 2 plain note | Repository |
+| Apokatastasis; Origen (200s) and universal restoration; most traditions read 3:21 as renewal with judgment (3:23) | 17-21 | Deep note `hard`; reference works | Search: Wikipedia "Apocatastasis"; orthodoxchristiantheology.com. The councils of 543 and 553 not named (their scope is disputed) |
+
+Left out: the councils of 543 and 553; the wax tablet image for "wiped
+away"; any claim that the lame were barred from the temple.
