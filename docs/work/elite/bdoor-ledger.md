@@ -4467,3 +4467,22 @@ chapter, with the deep note, the verse notes and the Genesis 19 plain note.
 Cut: Papyrus Brooklyn 35.1446 (not searched in this run); the Middle Kingdom
 and Hyksos dates (kept for chapter 41); Potiphar's table and 43:32; tsachaq
 and Isaac's name.
+
+## The plain notes on Genesis 40 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/40.json`. One web search for this
+chapter, with the deep note and the verse notes.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Cupbearer served the king's wine and could have influence; chief baker over royal bread; the offence not named | 1-8 | Deep note (`historical`) | Repository |
+| Dreams as messages from the gods; Egyptian experts; the Chester Beatty dream book (British Museum EA 10683), usually dated to the 1200s BC, lists dreams as good or bad | 1-8 | Deep note (`cultural`) | Search: "Chester Beatty dream book papyrus Chester Beatty III date" (britishmuseum.org EA10683; library.biblicalarchaeology.org; thesaurus-linguae-aegyptiae.de). Dates in sources range across the 1200s BC |
+| Daniel 2:27-28; Nehemiah 1:11 | 1-8 | BSB | Repository |
+| ‘Lift up your head’ an idiom for restoring to honor; the wordplay with ‘lift off’ (13, 19, 20); bor ‘dungeon’ the same word as the pit (37:24) | 9-15 | Deep note (`literary`, `words` H7218A, H0953A) | Repository |
+| Luke 23:42-43 as an echo many Christians hear; zakar as acting for someone (8:1) | 9-15 | Deep note (`christ`, `words` H2142); BSB | Repository; stated as an echo |
+| Egyptian weight on the body's care and burial; birds eating the body a horror | 16-23 | Deep note (`cultural`) | Repository |
+| Two more years (41:1); Psalm 13:1; Isaiah 49:15; Habakkuk 2:3 | 16-23 | BSB | Repository |
+| Dreams today: Christians differ whether and how God still speaks in dreams; claims tested by Scripture; Deuteronomy 13:1-3 | 16-23 | BSB | Repository; no side |
+
+Cut: royal birthday festivals in later Egyptian texts; Egyptian bread
+varieties.
