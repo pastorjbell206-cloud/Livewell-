@@ -3541,3 +3541,26 @@ Adam and Eve and 1 Enoch's Gadreel; Niehaus's storm reading of 3:8;
 Foh, Collins, Barr, Moberly, Wenham, Kant, Fromm and the Nag Hammadi texts by
 name; the term ‘protoevangelium’ and its date (the page says "Christians have
 long called it").
+
+## The plain notes on Genesis 4 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/4.json`. Three web searches for
+this chapter, with the book page's rows above and the repository.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Qayin and qanah; Hevel as breath (Ecclesiastes) | 1-7 | Repository deep note (`words`) | Repository |
+| Grain offerings in Israel's law (Leviticus 2); "All the fat is the LORD’s" (Leviticus 3:16) | 1-7 | BSB | Repository |
+| First use of chattat (sin); teshuqah and mashal shared with 3:16 | 1-7 | Hebrew text | Repository deep note; earlier script row (Genesis 3) |
+| Readings of the two offerings (quality; the giver's heart, Hebrews 11:4 and 1 John 3:12; blood sacrifice, doubted; the younger chosen) | 1-7 | Repository deep note (`cultural`); book page's theme | Repository; stated as readings, no names. The deep note's Mesopotamian threshold demon was not checked and is not used |
+| 4:8: the Hebrew does not report Cain's words; Samaritan, Greek and others supply ‘Let us go out to the field’ | 8-16 | Repository introduction (`text`) | Repository |
+| Shamar in 2:15 and 4:9; ot in 4:15, 9:12, 17:11; Nod ‘wandering’ and nud (4:12, 4:14) | 8-16 | Hebrew text; lexicon | Script over the repository's Strong's numbers (H8104, H0226, H5113, H5110) |
+| Blood feud; "the avenger of blood" (Numbers 35:19) | 8-16 | BSB; repository deep note | Repository |
+| Mark of Cain read as black skin in nineteenth-century America: Brigham Young's speeches of 1852 and 1859; Protestant use alongside the "curse of Ham" to defend slavery; the Latter-day Saint priesthood restriction ended in 1978 and the church has since disavowed the teaching | 8-16 | History | Search: Wikipedia "Curses of Cain and Ham (LDS Church)" and "Curse and mark of Cain"; Milestone Documents (Young's 1852 speech). The page names no church and says "some churches", "to defend slavery and to keep Black people out of church office" |
+| Matthew 23:35; Hebrews 11:4, 12:24; 1 John 3:12, 3:15, 1:9; Jude 1:11; Revelation 6:10; Psalm 4:4; Ephesians 4:26; Matthew 5:22; 1 Samuel 16:7 | all | BSB | Repository |
+| Lamech the first with two wives; arts in Cain's line | 17-24 | BSB; repository deep note | Repository. The deep note's apkallu and its iron date were not checked and are not used |
+| LXX Genesis 4:24 uses hebdomekontakis, the word of Matthew 18:22; many read Jesus as answering Lamech | 17-24 | Septuagint | Search: Blue Letter Bible LXX lexicon (G1441); B-Greek archive (Conrad, 2001); Bible Hub. Stated as "many readers hear" |
+| Romans 12:19; Exodus 31:3-5; Psalm 150:4; Matthew 18:21-22 | 17-24 | BSB | Repository |
+| Jubilees 4:9: Cain married his sister Awan; Jubilees about the second century BC | 17-24 | Book of Jubilees | Search: Bible Odyssey "Whom did Cain marry?"; Wikipedia "Book of Jubilees"; Charles's translation via jmoorewv.com. The page does not give the sister's name |
+| Cain's wife: other views (a wider population; a representative story) | 17-24 | Repository deep note (`hard`) | Repository; stated as views |
+| Shat (‘appointed’) in 4:25; Enosh as ‘mortal man’ (H0582); calling on the name (12:8; Joel 2:32; Acts 2:21; Romans 10:13; Luke 3:38) | 25-26 | Hebrew text; lexicon; BSB | Script (H7896); repository lexicon; repository |
