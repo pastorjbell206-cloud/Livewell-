@@ -144,14 +144,56 @@ describe("Acts's teaching introduction, Luke's second volume", () => {
     expect(screen.getByRole("heading", { level: 2, name: "Acts and the Jewish people" })).toBeTruthy();
     expect(screen.getByRole("link", { name: "Acts 2:38" }).getAttribute("href")).toBe("/study/bible/acts/2#v38");
     expect(screen.getByRole("link", { name: "Acts 5:5" }).getAttribute("href")).toBe("/study/bible/acts/5#v5");
-    expect(screen.getByText(/need a wider map of the Mediterranean/)).toBeTruthy();
+    expect(within(document.getElementById("map")!).getByText(/The second follows Paul's travels from Antioch through Asia Minor, Macedonia and Greece, and by sea to Rome\./)).toBeTruthy();
+    expect(screen.queryByText(/still to come/)).toBeNull();
+    expect(document.querySelector(".bk-map-hold")!.getAttribute("data-frames")).toBe("israel mediterranean");
   });
 
-  it("draws one map on the old frame, with the places of Acts 1 to 12 inside it", () => {
-    expect(bookMaps(ac.teaching!.map).map((m) => m.frame)).toEqual(["israel"]);
+  it("draws two maps: Acts 1 to 12 on the old frame, then Paul's travels on the Mediterranean frame", () => {
     renderWithProviders(<BookMap slug="acts" bookName="Acts" places={ac.teaching!.map} />);
-    fireEvent.click(screen.getByRole("button", { name: "Joppa" }));
+    const maps = Array.from(document.querySelectorAll(".bk-map"));
+    expect(maps.map((m) => m.getAttribute("data-frame"))).toEqual(["israel", "mediterranean"]);
+    expect(screen.getByRole("heading", { level: 3, name: "Jerusalem to Damascus, Acts 1 to 12" })).toBeTruthy();
+    expect(screen.getByRole("heading", { level: 3, name: "Paul's travels and the road to Rome" })).toBeTruthy();
+    expect(maps[0].querySelector("svg")!.getAttribute("viewBox")).toBe("0 0 348 462");
+    expect(maps[1].querySelector("svg")!.getAttribute("viewBox")).toBe("0 0 523 292");
+    expect(screen.getByRole("img", { name: "A simple map of the places in Acts, from Damascus in the north to Jerusalem in the south." })).toBeTruthy();
+    expect(screen.getByRole("img", { name: "A simple map of the places in Acts, from Antioch in Syria in the east to Rome in the west." })).toBeTruthy();
+    // The wide map's caption says the coasts are today's.
+    expect(within(maps[1] as HTMLElement).getByText(/^A sketch, not a survey: places are set by their modern sites, and the coasts as they are now, not as they were then\.$/)).toBeTruthy();
+  });
+
+  it("each map keeps its own card; every place on the wide map is a button, even where the drawing leaves its name off", () => {
+    renderWithProviders(<BookMap slug="acts" bookName="Acts" places={ac.teaching!.map} />);
+    const near = within(screen.getByRole("list", { name: "Places in Acts: Jerusalem to Damascus, Acts 1 to 12" }));
+    fireEvent.click(near.getByRole("button", { name: "Joppa" }));
     expect(screen.getByRole("link", { name: "Acts 9:36" }).getAttribute("href")).toBe("/study/bible/acts/9#v36");
+    const wide = within(screen.getByRole("list", { name: "Places in Acts: Paul's travels and the road to Rome" }));
+    expect(wide.getAllByRole("button").map((b) => b.textContent)).toEqual([
+      "Antioch in Syria", "Tarsus", "Salamis", "Paphos", "Perga", "Pisidian Antioch", "Iconium", "Lystra", "Derbe",
+      "Troas", "Philippi", "Thessalonica", "Berea", "Athens", "Corinth", "Ephesus", "Miletus", "Caesarea", "Jerusalem",
+      "Crete (Fair Havens)", "Malta", "Syracuse", "Puteoli", "Rome",
+    ]);
+    // Derbe is unnamed on the drawing (the Galatian towns sit too close) but has its button and card.
+    const svg = document.querySelectorAll(".bk-map__fig svg")[1];
+    expect(Array.from(svg.querySelectorAll(".bk-map__name")).map((t) => t.textContent)).not.toContain("Derbe");
+    expect(svg.querySelectorAll(".bk-map__place")).toHaveLength(24);
+    fireEvent.click(wide.getByRole("button", { name: "Derbe" }));
+    expect(screen.getByText(/Its site is not certain: it is drawn at Kerti Höyük/)).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Acts 14:20" }).getAttribute("href")).toBe("/study/bible/acts/14#v20");
+    fireEvent.click(wide.getByRole("button", { name: "Malta" }));
+    expect(screen.getByText(/Where it struck is not known for sure: it is drawn at St Paul's Bay, where tradition places it\./)).toBeTruthy();
+    // The first map keeps its own choice.
+    expect(near.getByRole("button", { name: "Joppa" }).getAttribute("aria-pressed")).toBe("true");
+  });
+
+  it("every place sits inside its own map's frame", () => {
+    for (const m of bookMaps(ac.teaching!.map)) {
+      const f = MAP_FRAMES[m.frame];
+      for (const p of m.places) {
+        expect(p.lat > f.south && p.lat < f.north && p.lon > f.west && p.lon < f.east, `${m.frame} ${p.id}`).toBe(true);
+      }
+    }
   });
 });
 
@@ -248,6 +290,20 @@ describe("a map's frame", () => {
     const m = src.match(/const MAP_FRAMES = (\{.*\});/);
     expect(m).toBeTruthy();
     expect(JSON.parse(m![1])).toEqual(MAP_FRAMES);
+    expect(Object.keys(JSON.parse(m![1]))).toEqual(["israel", "canaan", "fertile-crescent", "mediterranean"]);
+  });
+
+  it("only Genesis and Acts name frames; every other book with a map keeps the old frame", () => {
+    for (const b of BOOKS) {
+      const p = path.resolve(__dirname, `../../../../client/public/bible/notes/${b.slug}/intro.json`);
+      if (!fs.existsSync(p)) continue;
+      const t: BookIntro = JSON.parse(fs.readFileSync(p, "utf8"));
+      if (!t.teaching?.map) continue;
+      const frames = bookMaps(t.teaching.map).map((m) => m.frame);
+      if (b.slug === "genesis") expect(frames).toEqual(["fertile-crescent", "canaan"]);
+      else if (b.slug === "acts") expect(frames).toEqual(["israel", "mediterranean"]);
+      else expect(frames, b.slug).toEqual(["israel"]);
+    }
   });
 
   it("the space held for a book's maps names its frames, so the page can reserve the right height", () => {
