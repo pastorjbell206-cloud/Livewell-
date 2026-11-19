@@ -235,6 +235,7 @@ describe("/answers and /answers/:slug", () => {
       "are-miracles-believable",
       "can-life-mean-anything-without-god",
       "can-you-be-good-without-god",
+      "christianity-and-islam-differences",
       "did-god-command-genocide",
       "did-the-resurrection-actually-happen",
       "do-i-have-to-choose-between-faith-and-science",

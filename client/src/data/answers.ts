@@ -1500,9 +1500,100 @@ export const ANSWERS: Answer[] = [
     slug: "christianity-and-islam-differences",
     question: "What do Christianity and Islam actually dispute?",
     paragraphs: [
-      "They are neither the same faith nor strangers, and both slogans dodge the conversation. When I was an atheist, lumping every religion together kept all of them at arm's length. Looking closely is harder. Both confess one God, not many. Islam honors Jesus, Isa, as a prophet and messiah, born of the virgin Mary. This is a family argument, the bitterest kind, because it runs through what both sides hold most holy.",
-      "At the center of Islam is tawhid, the absolute oneness of God, and its gravest sin, shirk, is associating anything created with the Creator. From inside that, the Trinity does not enrich God's oneness; it assaults it, and calling God Father and Son sounds close to blasphemy, not because a Muslim thinks little of Jesus but because he thinks so highly of God. A God that great would not be surrendered to a mob and executed. Islam honors Jesus as the greatest prophet; Christianity worships him and lets Thomas say \"My Lord and my God!\" (John 20:28). One faith says the cross was an execution God prevented; the other stakes everything on its having happened. One says a person climbs toward mercy; the other says God came down.",
-      "These are not misunderstandings a patient afternoon could clear. They are the load-bearing walls of two different houses, and no one inside either is a fool. I hold the Christian confession as confession, not as a point scored against a neighbor I respect: the one God, without ceasing to be one, entered his own creation as a man, was handed over to be killed, and was not defeated by it. I could be wrong, and if I am, I have built my life on a rumor. But I cannot make it smaller to keep peace at the table, and neither can the devout Muslim across from me. What we owe each other is to name what stands on each side, and not lie about how far apart they are.",
+      "They aren't the same faith, and they aren't strangers. Both confess one God, the Creator, who spoke through prophets and will judge the world. Islam honors Jesus as a prophet and as the Messiah, born of the virgin Mary. The disputes are real, and they run through the center of both faiths: whether God's oneness leaves room for Father, Son and Spirit; whether Jesus died on a cross; whether he is a prophet of God or God come in the flesh; and how a person stands before God at the judgment. Below, each dispute is argued from the Christian side with the strongest Muslim reply beside it. No one inside either faith is a fool.",
+    ],
+    sections: [
+      {
+        heading: "What Muslims confess, in their own terms",
+        body: [
+          "The heart of Islam is tawhid, the oneness of God: one God, without partner and without equal, the Creator distinct from everything he made. The gravest sin is shirk, associating anything with God. In the Saheeh International translation, quoted throughout this page, the Qur'an says, \"Indeed, Allah does not forgive association with Him, but He forgives what is less than that for whom He wills\" (Qur'an 4:48). The shortest statement of the faith is a chapter of four verses: \"Say, 'He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, Nor is there to Him any equivalent'\" (Qur'an 112:1-4). The brackets mark words the translators supplied.",
+          "Jesus, whom the Qur'an calls Isa, holds a high place. He is called the Messiah and \"a word from Him\" (Qur'an 3:45). He is born of Mary, who asks the angels, \"My Lord, how will I have a child when no man has touched me?\" (3:47). But he isn't God's son, and he isn't God. \"The Messiah, Jesus, the son of Mary, was but a messenger of Allah and His word which He directed to Mary and a soul [created at a command] from Him\" (4:171). The same verse goes on: \"And do not say, 'Three'; desist - it is better for you. Indeed, Allah is but one God. Exalted is He above having a son.\"",
+          "On the cross, the Qur'an answers a boast that Jesus had been killed: \"And they did not kill him, nor did they crucify him; but [another] was made to resemble him to them\" (4:157), and \"Rather, Allah raised him to Himself\" (4:158). Most Muslim commentators have read this to mean that Jesus didn't die on the cross and that God took him up alive, and many held that someone else was made to look like him. Muslim scholars haven't all read the verse the same way, as Todd Lawson's history of its interpretation (2009) shows, but the common confession is plain: Jesus was not crucified.",
+          "Islam also honors the books that came before it. The Qur'an says God gave Jesus the Gospel, \"in which was guidance and light\" (5:46), and tells the People of the Gospel to judge by what God revealed in it (5:47). It also charges some in the earlier communities with distorting God's words (2:75; 4:46). Muslims call this tahrif, and they haven't agreed on what it means. The eleventh-century scholar Ibn Hazm argued at length that the text of the Bible itself had been altered. Other Muslim scholars have held that the corruption lay in how the books were interpreted rather than in their words.",
+        ],
+      },
+      {
+        heading: "What the two faiths share",
+        body: [
+          "The common ground isn't small. Both confess one God, the Creator of heaven and earth, who is merciful, who speaks, who sends prophets, and who will judge. Both honor Abraham, Moses and Jesus, and both pray, fast and give to the poor as duties. The Second Vatican Council, in Nostra Aetate (1965), said of Muslims, \"They adore the one God, living and subsisting in Himself; merciful and all-powerful, the Creator of heaven and earth.\" In October 2007, 138 Muslim scholars and leaders signed an open letter to Christian leaders, A Common Word Between Us and You, arguing that love of God and love of neighbor stand at the center of both faiths. And the Qur'an tells Muslims to say to Jews and Christians, \"We believe in that which has been revealed to us and revealed to you. And our God and your God is one\" (Qur'an 29:46).",
+        ],
+      },
+      {
+        heading: "Do Christians and Muslims worship the same God?",
+        body: [
+          "Christians answer this differently, and this page doesn't settle it. Miroslav Volf argued in Allah: A Christian Response (2011) that Christians and Muslims worship the same God, whom they understand differently in important ways, and that this matters for how the two communities live together. Other Christians answer no, or not in the same sense. Imad Shehadeh, reviewing Volf's book in Themelios, argued that the two faiths share a name for God but describe him so differently that the shared name hides more than it shows.",
+          "Much turns on the difference between referring to someone and describing him rightly: two people can mean the same man and believe very different things about him, up to a point. Christians of good faith land on both sides of that point.",
+        ],
+      },
+      {
+        heading: "The first dispute: is God three?",
+        body: [
+          "The Muslim objection at full strength is not ignorance. It's reverence. If God is one without partner, talk of Father and Son sounds like dragging the Most High into biology. A Muslim objects to the Trinity not because he thinks little of Jesus but because he thinks so highly of God.",
+          "So begin with what Christians don't mean. They don't mean three gods, or that God fathered a son as creatures do, or that Mary is divine. When the Qur'an pictures Jesus asked whether he told people, \"Take me and my mother as deities besides Allah\" (5:116), Christians reject that as firmly as Muslims do. The Nicene Creed calls the Son \"begotten, not made\": not a creature, and not the product of any act in time, but eternally from the Father, of one being with him. Christians confess one God.",
+          "What they do mean is that the one God is eternally Father, Son and Spirit, and the reason isn't a love of paradox. It's a claim about what God is. \"Anyone who does not love does not know God, because God is love\" (1 John 4:8). Jesus prays to the Father, \"you loved me before the foundation of the world\" (John 17:24).",
+          {
+            kind: "An argument from within the Christian confession (it persuades only someone who grants the first premise)",
+            premises: [
+              "God is love. Love belongs to what God is eternally, not only to what he began to do when he made the world.",
+              "Love, as the giving of oneself to another, needs someone to love.",
+              "Before the world was made, there was nothing but God.",
+            ],
+            conclusion: "If God is love eternally, there is giving and receiving within the one God himself. That is the shape of what Christians mean by Father, Son and Spirit.",
+          },
+          "The strongest Muslim reply goes at the first premise. The Qur'an calls God \"the Affectionate\" (85:14), and it also says, \"Allah is the Free of need, the Praiseworthy\" (35:15). A love that requires another is a need, and God needs nothing. His attributes are eternal without any eternal object beside him. The Christian answer is narrow: the Son and the Spirit aren't beside God, as a creature would be, but within the one God's own life. A Muslim will say that is exactly the point in dispute, and he's right. The argument shows why Christians confess the Trinity. It can't make a Muslim accept the premise it starts from.",
+        ],
+      },
+      {
+        heading: "The second dispute: did Jesus die on the cross?",
+        body: [
+          "This one is a question about an event, so outside evidence can be heard.",
+          {
+            kind: "A historical argument, an inference to the best explanation",
+            premises: [
+              "Paul, writing in the 50s, hands on a formula he had already received: \"that Christ died for our sins in accordance with the Scriptures, that he was buried\" (1 Corinthians 15:3-4).",
+              "Tacitus, a Roman historian with no sympathy for Christians, writing early in the second century, says \"Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus\" (Annals 15.44).",
+              "A crucified Messiah embarrassed the first preachers. Paul called it \"a stumbling block to Jews and folly to Gentiles\" (1 Corinthians 1:23). It isn't a story they would have invented.",
+              "John Dominic Crossan, no friend of traditional belief, in Jesus: A Revolutionary Biography (1994), called Jesus' death by crucifixion under Pilate \"as sure as anything historical can ever be.\"",
+            ],
+            conclusion: "The best historical explanation of the evidence is that Jesus was crucified under Pontius Pilate and died.",
+          },
+          "The strongest Muslim reply doesn't dispute that people saw a crucifixion. The verse itself says the matter \"was made to resemble him to them\" (4:157). The witnesses reported honestly what they saw, and a historian, who can weigh only human reports, will find exactly what the verse predicts. Revelation from the One who knows the unseen outranks those reports.",
+          "The Christian answer is that no evidence could ever count against it, which is its strength as faith and its weakness as history. It asks us to believe that God let Jesus' mother, his friends and his enemies all believe a false thing about the most important event in their lives, and that the faith built on it spread for six centuries before it was corrected. A Muslim will answer that God's purpose in saving his messenger was good. A historian can't rule out a miracle of appearance. He can only say that nothing in the first-century evidence points to one. Nor does the argument show that Jesus rose or that his death saves anyone. The resurrection has its own page.",
+        ],
+      },
+      {
+        heading: "The third dispute: who is Jesus?",
+        body: [
+          "Islam gives Jesus the highest honor it can give a man. In the Qur'an he says, \"Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet\" (19:30). Christians worship him. \"Thomas answered him, 'My Lord and my God!'\" (John 20:28).",
+          "The Christian case rests partly on how early that worship began. Larry Hurtado, in Lord Jesus Christ (2003), argued that devotion to Jesus as divine, with prayer to him and calling on his name, appeared among his Jewish followers at the very start of the movement, and within a strict belief in one God. If he's right, the worship of Jesus wasn't a later corruption of a prophet's message.",
+          "The strongest Muslim reply uses the Gospels themselves. When a man calls him good, Jesus answers, \"Why do you call me good? No one is good except God alone\" (Mark 10:18). He prays to God. In the Qur'an he tells Israel, \"worship Allah, my Lord and your Lord\" (5:72). Bart Ehrman, an agnostic historian, argues in How Jesus Became God (2014) that Jesus didn't call himself God and that his followers came to call him divine after they came to believe he had been raised. Christians read Mark 10:18 as a question that asks the man whom he's speaking to. But grant the limit of the historical argument. It can show that the worship of Jesus is early. It can't show that it's true.",
+        ],
+      },
+      {
+        heading: "The fourth dispute: how does a person stand before God?",
+        body: [
+          "Christians often get this one wrong. Every chapter of the Qur'an but one opens, \"In the name of Allah, the Entirely Merciful, the Especially Merciful\" (1:1). The Qur'an says, \"do not despair of the mercy of Allah. Indeed, Allah forgives all sins\" (39:53). Deeds are weighed at the judgment (7:8), but a hadith reported by al-Bukhari has the Prophet saying that no one enters Paradise by his deeds, not even he himself, unless God grants him favor and mercy. Islam is not a religion of earning heaven.",
+          "The real difference is narrower. In Islam, God forgives the one who repents, and no atoning death is needed. In Christianity, forgiveness comes through the cross. \"For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast\" (Ephesians 2:8-9).",
+          "The strongest Muslim reply is moral. \"No bearer of burdens will bear the burden of another\" (Qur'an 6:164). Punishing the innocent for the guilty is unjust, and a God who needs a death before he forgives seems less merciful, not more. The Christian answer is that the cross isn't God punishing a third party. It's God himself, in the Son, bearing the cost of the wrong, the judge paying what the judged owe. Every real forgiveness costs the one who forgives. But that answer works only if Jesus is God, and if he isn't, the Muslim objection stands. The four disputes turn out to be one.",
+        ],
+      },
+      {
+        heading: "What this page doesn't settle",
+        body: [
+          "These aren't misunderstandings a patient afternoon could clear. They are the load-bearing walls of two different houses. The pluralist who says the faiths are the same hasn't honored Islam. He has erased it.",
+          "I hold the Christian confession as confession, not as a point scored against a neighbor I respect: the one God, without ceasing to be one, entered his own creation as a man, was handed over to be killed, and was not defeated by it. I could be wrong, and if I am, I have built my life on a rumor. But I cannot make it smaller to keep peace at the table, and neither can the devout Muslim across from me. What we owe each other is to name what stands on each side, and not lie about how far apart they are.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Saheeh International", title: "The Qur'an: English Meanings", year: "1997", note: "The translation quoted on this page." },
+      { author: "Second Vatican Council", title: "Nostra Aetate", year: "1965" },
+      { author: "Larry W. Hurtado", title: "Lord Jesus Christ: Devotion to Jesus in Earliest Christianity", year: "2003" },
+      { author: "Muslim scholars and leaders", title: "A Common Word Between Us and You", year: "2007", note: "An open letter from 138 Muslim signatories to Christian leaders." },
+      { author: "Todd Lawson", title: "The Crucifixion and the Qur'an: A Study in the History of Muslim Thought", year: "2009" },
+      { author: "Gabriel Said Reynolds", title: "On the Qur'anic Accusation of Scriptural Falsification (tahrif) and Christian Anti-Jewish Polemic", in: "Journal of the American Oriental Society", year: "2010", note: "On what the charge of tahrif meant." },
+      { author: "Miroslav Volf", title: "Allah: A Christian Response", year: "2011" },
+      { author: "Bart D. Ehrman", title: "How Jesus Became God", year: "2014", note: "The best case that Jesus' divinity was a later belief." },
     ],
     essaySlug: "christianity-and-islam",
     essayTitle: "What Christianity and Islam Actually Dispute",
