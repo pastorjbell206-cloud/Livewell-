@@ -3322,3 +3322,42 @@ verified but not needed); Klassen, Borges and the Gospel of Judas; the RSV's
 1946-1952 text and its restoration; Ehrman and Plunkett, Blumell, Epiphanius
 and family 13 on 22:43-44; the 22:68 variant; Antiochus VII and the second
 Euergetes.
+
+## The plain notes on Luke 23 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/23.json`. Three searches for this
+chapter, with the earlier ledger (Mark 15; Matthew 27; John 18 and 19; Luke 3,
+9 and 13; Luke's book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Pilate 26 to 36; the Pilate stone (1961); only the governor could order crucifixion | 1-5 | Book page ledger; earlier ledger (Mark 15) | Earlier ledger |
+| The charges at 23:2 against 20:25 and 22:70; Pilate's three verdicts (23:4, 14-15, 22); Psalm 27:12; Isaiah 53:9 | 1-5 | BSB | Repository |
+| Readings of Luke's Pilate (memory or shaping) | 1-5 | Deep note; standard positions | Stated as views; Winter, Sanders, Bond and Jervell not named |
+| Herod Antipas 4 BC to AD 39; John imprisoned and beheaded (3:19-20; 9:9); 13:31-32; Acts 4:25-27; Psalm 2:2; Isaiah 53:7; 11:29 | 6-12 | Book page ledger; BSB | Repository |
+| Herod and Pilate's earlier enmity not explained by Luke | 6-12 | BSB | Repository; no reason offered |
+| Barabbas, insurrection, "son of the father" (Mark 15 wording); Acts 3:14; verse 17 missing from the oldest manuscripts (absent from the BSB); "punish" most likely a flogging | 13-25 | Mark 15 plain note; BSB; deep note (`text`) | Repository |
+| The "Christ-killers" misuse pointed to the Matthew 27 and John 19 notes and its rejection restated in one sentence; Acts 4:27; 23:27, 48, 51 | 13-25 | Matthew 27 and John 19 plain notes; book page | Repository |
+| Cyrene, Simon (Mark 15 wording); "behind Jesus" and 9:23 ("many readers hear") | 26-31 | Mark 15 plain note; BSB | Repository |
+| Childlessness as disgrace (1:25); Hosea 10:8 (Luke's order reversed, quoted from Hosea); Zechariah 12:10 | 26-31 | BSB | Repository |
+| Green and dry tree: three readings (Roman treatment of the innocent and the rebels; God's judgment; while Jesus is present), no side; "This is grief, not a verdict" (Luke 13 and 19 wording) | 26-31 | Deep note; standard commentaries | Stated as readings, no names |
+| Crucifixion and the Giv'at ha-Mivtar heel bone (pointer to Mark 15; earlier ledger) | 32-38 | Earlier ledger (Mark 15) | Earlier ledger |
+| 23:34 absent from P75 (around 200), Vaticanus (300s), Bezae's first hand; present in Sinaiticus as first written and most later copies; added from an early story, or removed by scribes who could not bear the forgiveness of the Jews; printed with a note or brackets (book page wording, word for word in substance) | 32-38 | Book page ledger; search | Search: tyndale.cam.ac.uk "Father forgive them: the variant in Luke 23:34a"; evangelicaltextualcriticism.blogspot.com; ehrmanblog.org; dennyburk.com (Delobel on the Diatessaron). Irenaeus and the Diatessaron not used |
+| 6:27-28; Acts 7:60; Acts 3:17; Isaiah 53:12; Psalm 22:7, 18 | 32-38 | BSB | Repository |
+| Who "them" is: soldiers; leaders and people; all sinners. No side | 32-38 | Deep note; standard readings | Stated as readings |
+| Mark 15:32 (both criminals mocked); "today" (2:11; 19:9) | 39-43 | BSB | Repository |
+| Paradise from an old Persian word for an enclosed garden; used for the place of the righteous dead with God (book page); paradeisos only at Luke 23:43, 2 Corinthians 12:4, Revelation 2:7 | 39-43 | Book page ledger; Greek text | Script over the repository's Greek (G3857) |
+| The comma: early manuscripts with little or no punctuation; the New World Translation reads "Truly I tell you today, you will be with me in Paradise"; Adventist writers argue the same, with sleep of the dead; John 20:17; most read "today" with what follows; reasons | 39-43 | Reference works and both sides' own publications | Search: wol.jw.org Questions from Readers; signsofthetimes.org.au "The importance of a comma"; adventchristianvoices.com; archive.gci.org "The Comma of Luke 23:43"; kjvtoday. "Many Seventh-day Adventists" (no official statement found); stated without scorn |
+| Genesis 2:8 | 39-43 | BSB | Repository |
+| Luke lacks the cry of dereliction (Mark 15:34); Psalm 31:5; Acts 7:59; curtain (Mark 15 wording); tearing before the death in Luke | 44-49 | BSB comparison; Mark 15 plain note | Repository |
+| Dikaios at 23:47 (also 2:25, 23:50); "innocent" in many English versions; readings: innocence verdict, the Righteous One (Acts 3:14), complementary to Mark 15:39 | 44-49 | Greek text; Tyndale Bulletin 63.1 (Easter 2012) as reported; commentaries | Search: tyndalebulletin.org "Certainly this man was righteous"; galaxie.com tynbul63-1-03; biblehub commentaries. Script over the repository's Greek (G1342). No scholar named |
+| Beating the breast (18:13); Amos 8:9; Psalm 38:11; the forsaken care line (Mark 15 wording, word for word) | 44-49 | BSB; Mark 15 plain note | Repository |
+| Burial details and Deuteronomy 21:23 (Mark 15 wording); Joseph had not consented, "waiting for the kingdom of God" (2:25, 38); Matthew 27:57 rich; Isaiah 53:9; 19:30; Exodus 20:8 | 50-56 | Mark 15 plain note; BSB | Repository |
+
+Left out: Melito of Sardis, Jeremy Cohen, Paul Winter, Jack Sanders, Helen
+Bond, Jacob Jervell; Theophylact and the Curetonian Syriac on the comma;
+Bullinger; b. Berakhot 28b; Abraham's bosom and the descent to the dead;
+Augustine on Christ's soul; Harnack and Eubank by name; the Diatessaron;
+"in" or "into" your kingdom; the eclipse wording in 23:45; Bezae's stone for
+twenty men; the old saying "one thief was saved, that none may despair"
+(attribution not confirmed).
