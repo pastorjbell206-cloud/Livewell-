@@ -820,3 +820,42 @@ Sotah 48b; Jay Adams; Kierkegaard; Skeat's "card" reading. Care: forgiveness
 is not a return to harm; fasting not for everyone; worry is not a rebuke of
 anxiety disorders, with the site's help wording; no prosperity reading of
 6:33.
+
+## The plain notes on Matthew 7 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/7.json`. Seven searches for this
+chapter, with the earlier ledger (Hillel in Mark 12; the Didache's date in
+Matthew's book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Karphos a chip or splinter, dokos a roof beam; the carpenter's son (13:55) | 1-6 | Lexicons; BSB | Lexicon fact |
+| Rabbi Tarfon on accepting rebuke: splinter and beam | 1-6 | Babylonian Talmud, Arakhin 16b (marked as later) | Search: intertextual.bible Matthew 7:3 and Arakhin 16b; sefaria.org Arakhin 16b; Harvard Theological Review "The Mote and the Beam". Paraphrased |
+| Dogs as scavengers (1 Kings 14:11); pigs unclean (Leviticus 11:7); pearls (13:45-46); holy food not for outsiders (Exodus 29:33); 15:26; 28:19 | 1-6 | BSB | Repository. "What is holy" as sacred food given as "may" |
+| 18:15; John 7:24; Galatians 6:1 | 1-6 | BSB | Repository |
+| Tobit gives the rule in negative form; written in the third or second century BC | 7-12 | Tobit 4:15; dating summaries (about 225 to 175 BC) | Search: tips.translation.bible on Tobit 4:15; bible.usccb.org Tobit 4; Wikipedia "Book of Tobit". Paraphrased ("in effect") |
+| Hillel: what is hateful to you, do not do to your neighbour; the rest is commentary | 7-12 | b. Shabbat 31a (later) | Earlier ledger (Mark 12) |
+| 4:3; 6:8; 6:10; Luke 11:13; 26:39; 2 Corinthians 12:8-9; Leviticus 19:18; 5:17 | 7-12 | BSB | Repository |
+| No prosperity reading; unanswered prayer stated as the skeptic would | 7-12 | Mark 11 plain note | Repository |
+| Two ways: Deuteronomy 30:19; Psalm 1:6; Jeremiah 21:8 | 13-14 | BSB | Repository |
+| Didache opens with two ways, of life and of death | 13-14 | Didache 1.1 | Search: newworldencyclopedia.org "Didache"; biblegateway.com encyclopedia; ewtn.com translation |
+| Luke 13:23-24 | 13-14 | BSB | Repository |
+| Russell, Why I Am Not a Christian (lecture of 1927), counted Christ's belief in hell a serious defect in his moral character | 13-14 | Russell | Search: users.drew.edu (Bertrand Russell Society text); humanum.arts.cuhk.edu.hk; Wikipedia. Paraphrased |
+| Theudas under Fadus (about AD 44 to 46) promised to part the Jordan; cavalry killed many; he was beheaded | 15-20 | Josephus, Antiquities 20.97-98 | Search: lexundria.com Antiquities 20.97-98 (Whiston); livius.org; en.wikipedia.org "Theudas". Acts 5:36 named as "a Theudas", since its order differs |
+| Didache 11: a prophet who stays three days or asks for money is false | 15-20 | Didache 11 | Search: evangelizationstation.com translation; ewtn.com; bkv.unifr.ch |
+| Deuteronomy 13:1-3; 18:22; Ezekiel 22:27; Genesis 3:18; 3:10; Galatians 5:22 | 15-20 | BSB | Repository |
+| "Knew" as a personal bond (John 10:14); Luke 6:46; 11:28; 5:3 | 21-23 | BSB | Repository |
+| Reformed, Wesleyan and Catholic accounts of assurance | 21-23 | Standard confessional positions (repository deep note, Matthew 7 `hard`) | Stated as views, no documents named |
+| Rains in their seasons (Deuteronomy 11:14); Luke 6:48; Ezekiel 13:11 | 24-29 | BSB | Repository |
+| Avot de-Rabbi Natan 24: stones then bricks, a house the flood cannot move; attribution to Elisha ben Abuyah uncertain; written down long after | 24-29 | Avot de-Rabbi Natan A 24 | Search: intertextual.bible Matthew 7:24 and ARN 24; encyclopedia.com "Elisha ben Avuyah"; sefaria.org sheet 247324 |
+| Mishnah (about AD 200) Avot 1:1: Moses to Joshua to the elders | 24-29 | Mishnah | Search: sefaria.org English explanation of Avot 1:1; cojs.org; posenlibrary.com |
+| Pointer to the six readings on Matthew's book page | 24-29 | `intro.json` teaching part "sermon" | Repository |
+
+Left out: the Mishnah on measure for measure (Sotah 1:7-8); the Egyptian
+prophet and the false prophet of AD 70; 4 Ezra; Kohler, Kant, Dihle, Wattles;
+Bunyan; the Westminster Confession, Wesley's sermons and Trent by name; any
+account of wadis flooding in minutes (stated only from Scripture); Hillel's
+dates; m. Avot 3:17. Care: "judge not" is not a ban on telling right from
+wrong nor a license to look down; no prosperity reading of 7:7; the narrow
+gate is an invitation, not a scare; the afraid reader of 7:21-23 is met with
+11:28.
