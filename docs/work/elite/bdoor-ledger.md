@@ -1619,3 +1619,42 @@ Left out: Reimarus, Schweitzer, Russell, J. S. Russell, Sproul, Wright,
 France by name; Darby, Scofield, Lindsey, A Thief in the Night, Left Behind,
 Hart, Walvoord, Ladd; Irenaeus on the sign; the Didache; the "pestilences"
 variant; Deissmann's coin evidence; every date-setter by name.
+
+## The plain notes on Matthew 25 (2026-11-19)
+
+`client/public/bible/notes/matthew/plain/25.json`. Eight searches for this
+chapter, with the earlier ledger (Matthew 10, 13, 18 and 22; Mark 16).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| 1 Maccabees 9:37-39: a great wedding; the bridegroom came out with his friends and relatives, with drums and music, to meet the bride's party | 1-13 | 1 Maccabees | Search: biblehub.com and biblestudytools.com 1 Maccabees 9:37-39 (several translations; verse numbers vary by edition). Paraphrased |
+| Lampades: clay oil lamps or torches (oil-soaked cloth on a stick); scholars divided | 1-13 | Jeremias's article; Peppard, JBL 2024; translation notes | Search: reformedperspectives.org (Chamblin on 25:1-13); tips.translation.bible on 25:1-7; byustudies.byu.edu. No scholar named |
+| Luke 13:25; 7:23; Isaiah 62:5; Hosea 2:19; 9:15; 24:36 | 1-13 | BSB | BSB text |
+| Didache 16.1 (around AD 100): watch over your life; let your lamps not go out | 1-13 | Didache | Search: cts.perseids.org Didache 16.1; bkv.unifr.ch; date from the earlier ledger. Paraphrased |
+| b. Shabbat 153a, several centuries after Jesus | 1-13 | Earlier ledger (Matthew 22) | Earlier ledger; pointer only |
+| A talent about six thousand denarii; a denarius a day's wage (20:2); so about twenty years' wages | 14-30 | Earlier ledger (Matthew 18) | Earlier ledger; "something like" |
+| Josephus, Antiquities 17.318: Antipas two hundred talents a year | 14-30 | Earlier ledger (Matthew 18) | Earlier ledger |
+| b. Bava Metzia 42a: Samuel, money is properly guarded only in the ground | 14-30 | Babylonian Talmud | Search: halakhah.com Bava Metzia 42a; myjewishlearning.com; steinsaltz.org. Marked as written down centuries later. No source found linking it to the parable; the note does not claim one |
+| Luke 19:11-27, 19:22; 13:12, 13:44; 21:12; 8:12; 22:13; Psalm 24:1; Psalm 16:11; Exodus 22:25 | 14-30 | BSB | BSB text |
+| A "whistle-blower" reading of the third servant (Herzog, in the deep note); most reject it | 14-30 | Deep note | Stated as "a few modern readers"; no name |
+| 1 Kings 2:19; Isaiah 58:7; Ezekiel 18:7; Ezekiel 34:17, 23; Daniel 7:13-14; Proverbs 19:17 | 31-40 | BSB | BSB text |
+| Lucian (second century), The Passing of Peregrinus 11-12: Christians at the prison daily with meals | 31-40 | Lucian | Search: en.wikipedia.org Passing of Peregrinus; tertullian.org; cts.perseids.org 11-15. Paraphrased |
+| Sulpicius Severus, Life of Martin 3: Martin cut his cloak at the gate of Amiens; that night saw Christ wearing the half | 31-40 | Sulpicius Severus | Search: en.wikipedia.org Martin of Tours; dcc.dickinson.edu; st-takla.org (NPNF). Paraphrased; given as "the story says" |
+| Two readings of "the least"; Sherman Gray, The Least of My Brothers (1989): before modern times most took them to be Christians | 31-40 | Gray 1989, as summarised | Search: journal-ems.org (citing Gray 1989, 340); dennyburk.com; crosswalk.com. Gray's own text not read; given as his finding |
+| 12:49; 28:10; 10:40, 42; 5:44; Luke 10:25-37 | 31-40 | BSB | BSB text |
+| "Prepared for you" (34) and "prepared for the devil and his angels" (41) | 41-46 | BSB | BSB text |
+| Many Jews expected the dead to be raised at the end of time | 41-46 | Earlier ledger (Mark 16) | Earlier ledger |
+| Daniel 12:2; Proverbs 21:13; 26:1; 7:17; Ephesians 2:8-10; James 2:17; 11:28; 27:28, 48 | 41-46 | BSB | BSB text |
+| Grace and works: Reformation (fruit); Catholic (works in grace truly count, grace their source) | 41-46 | Deep note; standard confessional positions | Stated as views; Trent not named |
+| Augustine, City of God 21.23: "eternal" used of both, so if one is endless the other is | 41-46 | Augustine | Search: newadvent.org/fathers/120121.htm; logoslibrary.org; sacred-texts.com. Paraphrased |
+| Views of hell; care line (11:28) | 41-46 | Matthew 10 and 13 plain notes | Wording reused |
+
+Left out: the talent's weight in kilograms; Antiquities 17.318's other
+figures; b. Sotah 14a and Midrash Tehillim 118.17; the Book of the Dead;
+Origen, Chrysostom, Benedict's Rule, Caravaggio, the cathedral portals,
+Sponsus, Michelangelo, Milton, Nicolai and Bach (all in the deep note, not
+checked this run); Stanton, France, Carson, Davies and Allison, Gutiérrez,
+Herzog, Russell, Hart, Fudge, Stott by name; the claim that the English word
+"talent" comes from this parable; the deep note's claim that 25:34 is the only
+place Jesus calls himself king in his teaching; the textual notes; the
+"bride" variant in verse 1; 1 Enoch.
