@@ -238,7 +238,7 @@
   .bk-tl li{grid-template-columns:minmax(0,1fr)}
   .bk-map-hold{min-height:1180px}
   .bk-map-hold[data-frames="fertile-crescent canaan"]{min-height:2200px}
-  .bk-map-hold[data-frames="israel mediterranean"]{min-height:2560px}
+  .bk-map-hold[data-frames="israel mediterranean"]{min-height:2562px}
   .bk-map__title{margin-bottom:calc(12px - var(--s-4))}
   .bk-map{grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
   .bk-map__fig{justify-self:center}
