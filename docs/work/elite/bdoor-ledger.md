@@ -6676,3 +6676,30 @@ One web search.
 
 Care line where the sinking and the shame are described (69:1-12). 69:4 has an
 em-dash in the BSB and is quoted only before it.
+
+## The plain notes on Psalm 70 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Psalm 70 nearly the same as 40:13-17; "God" for "the LORD" (40:16 and 70:4) | BSB compared; earlier ledger (Psalm 40) | BSB text |
+| "To bring remembrance" also heads 38; memorial portion (Leviticus 2:2) or a plea to be remembered | Earlier ledger (Psalm 38); repository deep note | Stated as views |
+| "Aha, aha" as gloating; honour and shame; "poor and needy" | Repository deep note (cultural) | Site's own teaching |
+| Luke 18:7-8; Matthew 5:3 | BSB | BSB text |
+
+## The plain notes on Psalm 71 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| No heading (with 43, rare in Book Two); David in old age or an older worshipper | BSB; repository deep note | BSB text; stated as views. The Greek heading not mentioned (not checked) |
+| 71:1-3 close to 31:1-3; 71:12 echoes 22:11 | BSB compared | BSB text |
+| Respect for the aged (Leviticus 19:32); the old dependent on family | Repository deep note (cultural); BSB | BSB text |
+| "A portent": two readings | Repository deep note (cultural) | Stated as views |
+| 71:9 BSB "Do not discard me in my old age" (the brief's "cast me off" is not the BSB wording) | BSB | BSB text |
+| Isaiah 46:4; Luke 2:37-38; 2 Corinthians 4:16; Matthew 27:43 | BSB | BSB text |
+
+A word for the old and for those who care for them; a care line for an old
+person low in spirit.
