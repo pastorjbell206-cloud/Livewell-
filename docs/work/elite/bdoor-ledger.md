@@ -6441,3 +6441,36 @@ Two web searches.
 Care lines: a guilt-laden reader (1 John 1:9); a separate line for anyone
 harmed by a person with power over them ("it was not your fault"), with the
 Find Help page.
+
+## The plain notes on Psalm 52 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Doeg, Ahimelech at Nob, bread and Goliath's sword, 85 priests (1 Samuel 21-22; 22:18, 22) | BSB; repository deep note | BSB text |
+| Headings tied to David's flight from Saul in Book Two: 52, 54, 56, 57, 59 | BSB headings | Read from the BSB verse 1 of each |
+| Olive trees live long, regrow from roots; oil for food, light, anointing | Repository deep note (cultural) | Site's own teaching |
+| James 1:10; James 3; Jeremiah 11:16; Romans 11:17; Proverbs 24:17 | BSB | BSB text |
+
+## The plain notes on Psalm 53 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Nearly Psalm 14; "God" for "the LORD" throughout; verse 5 differs (14:5-6) | BSB 14 and 53 compared | Script; BSB text |
+| Mahalath (also Psalm 88), meaning unknown | Repository deep note; BSB | BSB headings |
+| Unburied bones a disgrace | Repository deep note (cultural) | Site's own teaching |
+| Romans 3:10-11; Romans 11:26 | BSB | BSB text |
+
+## The plain notes on Psalm 54 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Ziph in Judah; 1 Samuel 23:19, 27-28; David spares Saul (1 Samuel 24:6) | BSB; repository deep note | BSB text |
+| "Strangers" odd for fellow Judeans: two readings | Repository deep note (historical) | Stated as views |
+| Name as character; freewill offering | Repository deep note (cultural) | Site's own teaching |
+| Romans 12:19 | BSB | BSB text |
