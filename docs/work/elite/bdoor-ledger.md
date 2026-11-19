@@ -2280,3 +2280,27 @@ Cut: Hick, Rosenzweig, Newbigin, Nash, Pinnock, Lumen Gentium 16 by name (the si
 | Deuteronomy 19:15; 21:24 | 26-27 | BSB | BSB text |
 
 Cut: Tacitus on the golden vine and Liber; m. Middot 3:8; the revolt coins; 2 Baruch; Didache 9:2; b. Hullin 92a; Aristotle and Plato on dying for friends; Josephus on James the brother of Jesus; Tacitus on Nero (not needed); Wesley, Marshall, Trent, Augustine, Dort, Schreiner and Caneday, Hodges and Carson by name; Ruether, Reinhartz, Barrett, Brown, Wright, Soulen by name.
+
+## The plain notes on John 16 (2026-11-19)
+
+`client/public/bible/notes/john/plain/16.json`. 6 web searches. (A one-line repair to John 15:2's note rides with this commit: "lift up" is now "one of the word's basic meanings", not "the word's first meaning", since the lexicons' order of senses is disputed.)
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Synagogue exclusion (9:22, 12:42, 16:2): book page and 9:22 note wording (a late painful separation, many scholars; local exclusions in Jesus' lifetime argued plausible) | 1-4 | Earlier ledger (John 9) | Earlier ledger |
+| Luke 6:22; Acts 7:58-60; Acts 26:9; Galatians 1:14; Isaiah 66:5 | 1-4 | BSB | BSB text |
+| Latreia, the word for temple worship | 1-4 | Greek text in the repository; deep note | Script |
+| Crusaders massacred the Jewish communities of Worms and Mainz in 1096 (the Rhineland massacres) | 1-4 | Histories of the First Crusade | Search: en.wikipedia.org Rhineland massacres; medievalists.net (2023); fabriziomusacchio.com. No death toll given (estimates vary) |
+| Felix Manz, Anabaptist, drowned in Zurich by the Protestant authorities in 1527 for adult baptism | 1-4 | Histories of the Swiss Anabaptists | Search: en.wikipedia.org Felix Manz; swissinfo.ch; christianhistoryinstitute.org; anabaptistworld.org. Day not given (sources differ, 5 or 25 January) |
+| Elenchō: convict, refute, expose, bring to light, prove wrong | 5-11 | Thayer; Strong's; NET ("prove the world wrong") | Search: blueletterbible.org G1651; openbible.com 1651 |
+| 13:36; 14:5; Joel 2:28; Isaiah 11:2; 32:15 | 5-11 | BSB | BSB text |
+| 1 John 4:1; Deuteronomy 13:2-3; 1 Thessalonians 5:21 | 12-15 | BSB | BSB text |
+| Westminster Confession 1.6: "nothing at any time is to be added, whether by new revelations of the Spirit, or traditions of men" | 12-15 | Westminster Confession | Search: blueletterbible.org "Of The Holy Scripture"; reformation21.org; protestantbrain.blogspot.com. Quoted |
+| Dei Verbum 8 (1965): "this tradition which comes from the Apostles develops in the Church with the help of the Holy Spirit" | 12-15 | Second Vatican Council | Search: vatican.va general audience 28 January 2026 quoting DV 8; slmedia.org; Meszaros (Cambridge) on DV 8. Quoted in that translation |
+| Orthodox churches give a central place to holy tradition; Pentecostals test prophecy by Scripture ("most of them") | 12-15 | Deep note `hard` | Stated generally; no document cited |
+| 20:20; Romans 8:22; Psalm 30:5; 126:5; Isaiah 26:17; 66:9; Revelation 21:4; Psalm 56:8 | 16-24 | BSB | BSB text |
+| Childbirth dangerous in the ancient world (Rachel, Genesis 35:16-18) | 16-24 | Deep note `cultural`; BSB | Stated generally |
+| Care line for long grief and for loss in pregnancy or childbirth; "Reach out to people you trust, to a pastor, or to someone trained to help" (John 11 wording) | 16-24 | John 11 note | Repository |
+| Zechariah 13:7; Mark 14:27; Psalm 27:10; 1 John 5:4 | 25-33 | BSB | BSB text |
+
+Cut: Martyn, Kimelman and Bernier by name (the book page carries the debate); the Birkat ha-Minim; Justin's Dialogue 16 and 96; Phinehas, 1 Maccabees 2 and Numbers Rabbah 21:3; Josephus on James the brother of Jesus; Luther's On the Jews and Their Lies (met only in summaries); Nostra Aetate (said in the John 8 note); m. Eduyot 5:6 and 1QS 6-7; 1QH 11; b. Sanhedrin 98b; Plutarch on parrēsia; m. Berakhot 5:5; Montanus, Mani and the Muslim reading of the Paraclete (periklytos), Ibn Ishaq and Sean Anthony (not checked this run); the Toledo and Florence dates for the filioque.
