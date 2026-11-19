@@ -3223,3 +3223,29 @@ Rohrbaugh, Dodd, Robinson by name; the Jewish-Christian gospel in Eusebius;
 the Judensonntag, Bugenhagen and Bach's cantatas (Bugenhagen's link and the
 name not confirmed); Simonet's painting; Josephus's 1,100,000 dead; the
 thirteen forts and 39 stadia; Jerusalem as "city of peace".
+
+## The plain notes on Luke 20 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/20.json`. One search for this chapter;
+the rest rests on the earlier ledger (Mark 11 and 12; Matthew 21 and 22; Luke
+11 and 13) and the BSB.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Euangelizomai at 20:1 (book page key word) | 1-8 | Greek text | Script over the repository's Greek (G2097) |
+| "Stone us" only in Luke 20:6; 7:29-30; Malachi 3:1; Amos 7:14-15 | 1-8 | BSB comparison | Repository |
+| Tenancy; Isaiah 5 (Mark 12 wording); Luke has no wall, winepress or tower; "for a long time", "What shall I do?", "Perhaps", the people's "May such a thing never happen!" only in Luke; 3:22 | 9-19 | Mark 12 plain note; BSB comparison | Repository |
+| Psalm 118:22; Isaiah 5:7; 8:14-15; Daniel 2:34-35 | 9-19 | BSB | Repository |
+| Supersessionism named and rejected (Matthew 21 wording, word for word where it fits; "Look at what Luke says" adapted to 20:19); views pointed to the Matthew 21 note; Romans 11:1, 29 | 9-19 | Matthew 21 plain note | Repository |
+| AD 6 census, Judas the Galilean (Acts 5:37); Tiberius denarius (Mark 12 ledger); the three readings and "What all agree on" (Mark 12 wording word for word); Romans 13:7; Genesis 1:27 | 20-26 | Mark 12 plain note; earlier ledger | Earlier ledger |
+| Spies in Luke against Pharisees and Herodians in Mark and Matthew; the false charge at 23:2 | 20-26 | BSB comparison | Repository |
+| Sadducees (Josephus, Antiquities 18.16; Acts 5:17; 23:8); Deuteronomy 25:5-6; marriage views and the grief line (Mark 12 wording, "verse 25" made "these verses") | 27-40 | Mark 12 plain note; earlier ledger | Earlier ledger |
+| "For to Him all are alive" only in Luke; 4 Maccabees 7:19 and 16:25 speak of the patriarchs living to God; "some readers hear an echo" | 27-40 | Commentaries | Search: intertextual.bible/p/662; biblehub.com commentaries on Luke 20:38; liturgy.slu.edu (Hamm). No date given for 4 Maccabees |
+| Some scribes of the Pharisees' party (Acts 23:8-9); Exodus 3:6; Daniel 12:2 | 27-40 | BSB | Repository |
+| 2 Samuel 7:12-13; 1:32; 18:38; Psalm 110:1; Acts 2:36; Romans 1:3-4; authorship views on Psalm 110 (Mark 12 wording) | 41-44 | Mark 12 and Matthew 22 plain notes; BSB | Repository |
+| Scribes, robes, ways widows were defrauded (Mark 12 wording); 11:43; 14:7-11; 13:31; Exodus 22:22; Isaiah 10:2 | 45-47 | Mark 12 plain note; BSB | Repository |
+
+Left out: the Mishnah on tenants and the right of possession; the Gospel of
+Thomas's version of the tenants; the Tiberius denarius's exact Latin (pointed
+to the Mark 12 note); 2 Maccabees 7 (left in the Mark 12 note); a date for 4
+Maccabees.
