@@ -1,0 +1,445 @@
+{
+  "about": "Written by scripts/build-explorer-index.mjs from client/public/explorer/stops, threads.json and cards.json. Do not edit by hand.",
+  "stops": [
+    {
+      "slug": "creation",
+      "n": 1,
+      "title": "Creation",
+      "range": "Genesis 1 to 2",
+      "act": "creation",
+      "actLabel": "Act One",
+      "actTitle": "Creation",
+      "status": "finished",
+      "summary": {
+        "younger": "God made everything out of nothing, and he made people to know him and to take care of his world.",
+        "older": "Before anything else, there is God. He speaks the world into being, calls it good, and makes people in his image to care for it under him."
+      }
+    },
+    {
+      "slug": "fall",
+      "n": 2,
+      "title": "The Fall",
+      "range": "Genesis 3 to 11",
+      "act": "fall",
+      "actLabel": "Act Two",
+      "actTitle": "The Fall",
+      "status": "drawing",
+      "summary": {
+        "younger": "The first people did not trust God and did what he told them not to do. Sin and sadness came into the world, but God kept caring for them.",
+        "older": "Adam and Eve reach for what God withheld, and the damage spreads: shame, blame, murder, the flood, a tower built to reach the sky. God judges, and he keeps showing mercy."
+      }
+    },
+    {
+      "slug": "abraham",
+      "n": 3,
+      "title": "Abraham and the Promise",
+      "range": "Genesis 12 to 50",
+      "act": "abraham",
+      "actLabel": "Act Three",
+      "actTitle": "Abraham and the Promise",
+      "status": "finished",
+      "summary": {
+        "younger": "God chose Abraham and promised him a family as many as the stars, a land to live in, and a blessing for the whole world.",
+        "older": "God answers a scattered world by calling one man and making him a promise: a people, a land, and a blessing that will reach every family on earth."
+      }
+    },
+    {
+      "slug": "rescue",
+      "n": 4,
+      "title": "The Rescue from Egypt",
+      "range": "Exodus 1 to 15",
+      "act": "exodus",
+      "actLabel": "Act Four",
+      "actTitle": "Exodus and Sinai",
+      "status": "finished",
+      "summary": {
+        "younger": "God's people were slaves in Egypt. God set them free on the night of the Passover and led them through the sea.",
+        "older": "Abraham's family has become a nation of slaves. God hears them, sends Moses, spares them by the blood of a lamb, and opens a road through the sea."
+      }
+    },
+    {
+      "slug": "sinai",
+      "n": 5,
+      "title": "Sinai and the Tent",
+      "range": "Exodus 16 to Deuteronomy",
+      "act": "exodus",
+      "actLabel": "Act Four",
+      "actTitle": "Exodus and Sinai",
+      "status": "drawing",
+      "summary": {
+        "younger": "At a mountain called Sinai, God gave his people his good laws and told them to build a tent where he would live among them.",
+        "older": "Rescued people are given a way to live. At Sinai God makes a covenant with Israel, gives the law, and has them build the tabernacle so that he can dwell among them."
+      }
+    },
+    {
+      "slug": "land",
+      "n": 6,
+      "title": "The Land and the Judges",
+      "range": "Joshua, Judges, Ruth",
+      "act": "land-judges",
+      "actLabel": "Act Five",
+      "actTitle": "The Land and the Judges",
+      "status": "drawing",
+      "summary": {
+        "younger": "God brought his people into the land he had promised. They kept forgetting him, and God kept sending leaders to rescue them.",
+        "older": "God keeps his word and gives the land. Then a cycle begins: the people turn away, trouble comes, they cry out, God sends a judge. Each time round it gets worse."
+      }
+    },
+    {
+      "slug": "kingdom",
+      "n": 7,
+      "title": "The Kingdom",
+      "range": "1 Samuel to 2 Chronicles",
+      "act": "kingdom",
+      "actLabel": "Act Six",
+      "actTitle": "The Kingdom",
+      "status": "drawing",
+      "summary": {
+        "younger": "God gave Israel kings. The greatest was David, a shepherd boy, and God promised that a king from his family would rule for ever.",
+        "older": "Israel asks for a king. Saul fails; David loves God and fails badly too; God promises him a son whose kingdom will never end. Solomon builds the temple."
+      }
+    },
+    {
+      "slug": "exile",
+      "n": 8,
+      "title": "The Prophets and Exile",
+      "range": "The Kings and the Prophets",
+      "act": "prophets-exile",
+      "actLabel": "Act Seven",
+      "actTitle": "The Prophets and Exile",
+      "status": "drawing",
+      "summary": {
+        "younger": "The people stopped listening to God. Prophets warned them, but they would not turn back, and they were taken far from home.",
+        "older": "The kingdom splits, its kings lead the people to idols, and God sends prophets to call them back. They will not come. Assyria takes the north and Babylon burns Jerusalem, yet the prophets promise a new covenant and a coming king."
+      }
+    },
+    {
+      "slug": "return",
+      "n": 9,
+      "title": "The Return and the Waiting",
+      "range": "Ezra, Nehemiah, Esther, Malachi",
+      "act": "return-silence",
+      "actLabel": "Act Eight",
+      "actTitle": "The Return and the Silence",
+      "status": "drawing",
+      "summary": {
+        "younger": "God brought some of his people home. They rebuilt the temple and the city walls, and then they waited a long time for God's promised king.",
+        "older": "Some exiles come home under Persian rule and rebuild the temple and the walls, but no son of David sits on the throne. The Old Testament ends looking ahead, and roughly four centuries pass before the next page."
+      }
+    },
+    {
+      "slug": "jesus",
+      "n": 10,
+      "title": "Jesus Comes",
+      "range": "Matthew, Mark, Luke, John",
+      "act": "christ",
+      "actLabel": "Act Nine",
+      "actTitle": "Christ, the Center",
+      "status": "drawing",
+      "summary": {
+        "younger": "God the Son was born as a baby named Jesus. He healed people, taught about God's kingdom, and showed what God is like.",
+        "older": "God keeps his promises in person. Jesus, born of Mary, announces that God's kingdom has come near, heals and forgives, calls twelve disciples, and speaks with an authority that belongs to God alone."
+      }
+    },
+    {
+      "slug": "cross",
+      "n": 11,
+      "title": "The Cross and the Empty Tomb",
+      "range": "The end of each Gospel",
+      "act": "christ",
+      "actLabel": "Act Nine",
+      "actTitle": "Christ, the Center",
+      "status": "finished",
+      "summary": {
+        "younger": "Jesus died on a cross to take away the sin of the world. On the third day God raised him from the dead. He is alive.",
+        "older": "Jesus dies on a Roman cross at Passover, carrying the sin of the world, and on the third day God raises him bodily from the dead."
+      }
+    },
+    {
+      "slug": "church",
+      "n": 12,
+      "title": "The Church and the Spirit",
+      "range": "Acts and the Letters",
+      "act": "church-spirit",
+      "actLabel": "Act Ten",
+      "actTitle": "The Church and the Spirit",
+      "status": "drawing",
+      "summary": {
+        "younger": "Jesus went back to his Father and sent the Holy Spirit. His followers told the good news about Jesus to people everywhere.",
+        "older": "Fifty days after Passover the Spirit comes. The church begins in Jerusalem and spreads, Jews and Gentiles together, until the news of Jesus reaches Rome."
+      }
+    },
+    {
+      "slug": "new-creation",
+      "n": 13,
+      "title": "The New Creation",
+      "range": "Revelation",
+      "act": "new-creation",
+      "actLabel": "Act Eleven",
+      "actTitle": "The New Creation",
+      "status": "drawing",
+      "summary": {
+        "younger": "One day Jesus will come back and make everything new. God will live with his people, and there will be no more crying or pain.",
+        "older": "The story ends where it began, with God and his people together, in a garden that has become a city. Jesus returns, death is undone, and God makes his home with people for ever."
+      }
+    }
+  ],
+  "threads": [
+    {
+      "id": "dwelling",
+      "name": "God with his people",
+      "status": "finished",
+      "line": {
+        "younger": "From the first page to the last, God wants to live with his people. Follow the places where he makes his home.",
+        "older": "The whole Bible can be read as one long answer to a question: can God live with his people? Watch where he dwells move from a garden to a tent, a temple, a person, a people, and a whole new world."
+      },
+      "key": {
+        "near": "God lives among his people",
+        "apart": "The closeness is lost, or still waited for"
+      },
+      "stops": {
+        "creation": {
+          "state": "near",
+          "line": "God planted a garden and put the people he made there, close to him.",
+          "ref": "Genesis 2:8"
+        },
+        "fall": {
+          "state": "apart",
+          "line": "The man and the woman hid from God among the trees, and they were sent out of the garden.",
+          "ref": "Genesis 3:8"
+        },
+        "abraham": {
+          "state": "near",
+          "line": "God came to Abraham, Isaac and Jacob. Jacob woke from a dream and said the LORD was in that place.",
+          "ref": "Genesis 28:15-16"
+        },
+        "rescue": {
+          "state": "near",
+          "line": "God went ahead of his people in a pillar of cloud by day and a pillar of fire by night.",
+          "ref": "Exodus 13:21"
+        },
+        "sinai": {
+          "state": "near",
+          "line": "God told Israel to build a tent, the tabernacle, so that he could dwell among them, and his glory filled it.",
+          "ref": "Exodus 25:8"
+        },
+        "land": {
+          "state": "near",
+          "line": "In the land, the tent of meeting was set up at Shiloh, among the tribes.",
+          "ref": "Joshua 18:1"
+        },
+        "kingdom": {
+          "state": "near",
+          "line": "Solomon built the temple in Jerusalem, and the cloud of God's glory filled it.",
+          "ref": "1 Kings 8:10-11"
+        },
+        "exile": {
+          "state": "apart",
+          "line": "The prophet Ezekiel saw God's glory leave the temple before Babylon destroyed it.",
+          "ref": "Ezekiel 10:18"
+        },
+        "return": {
+          "state": "apart",
+          "line": "The people rebuilt the temple, and God promised that one day he would fill it with glory.",
+          "ref": "Haggai 2:7"
+        },
+        "jesus": {
+          "state": "near",
+          "line": "Jesus is God with us. The Word became flesh and made his dwelling among us.",
+          "ref": "John 1:14"
+        },
+        "cross": {
+          "state": "near",
+          "line": "When Jesus died, the curtain that closed off the most holy place in the temple tore from top to bottom.",
+          "ref": "Mark 15:38"
+        },
+        "church": {
+          "state": "near",
+          "line": "God's Spirit came to live in his people. Paul tells the church that it is now God's temple.",
+          "ref": "1 Corinthians 3:16"
+        },
+        "new-creation": {
+          "state": "near",
+          "line": "At the end, God's dwelling place is with people, and he lives with them for ever.",
+          "ref": "Revelation 21:3"
+        }
+      }
+    },
+    {
+      "id": "promise",
+      "name": "The promise",
+      "status": "coming",
+      "line": {
+        "younger": "God makes promises to his people, and he always keeps them.",
+        "older": "God binds himself to people by covenant: with Noah, Abraham, Israel at Sinai and David, and at last the new covenant in Jesus."
+      }
+    },
+    {
+      "id": "lamb",
+      "name": "The lamb",
+      "status": "coming",
+      "line": {
+        "younger": "Again and again a lamb dies in the place of someone else, until Jesus, the Lamb of God.",
+        "older": "Sacrifice runs from the garden to the cross: a substitute, a covering, a price paid by another."
+      }
+    },
+    {
+      "id": "king",
+      "name": "The king",
+      "status": "coming",
+      "line": {
+        "younger": "God's people wait for a good king, and Jesus is that king.",
+        "older": "People made to rule under God want to rule without him. The story looks for the true king, the son of David, who reigns by serving."
+      }
+    },
+    {
+      "id": "nations",
+      "name": "A blessing for every nation",
+      "status": "coming",
+      "line": {
+        "younger": "God's plan was always for people from every country.",
+        "older": "Through Abraham's family God means to bless all the families of the earth, and the last pages show people from every nation together."
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": "god",
+      "title": "God",
+      "status": "coming"
+    },
+    {
+      "id": "bible",
+      "title": "The Bible",
+      "status": "finished",
+      "picture": "book",
+      "pictureLabel": "An open Bible on a table under an arched window.",
+      "statement": {
+        "younger": "The Bible is God's true Word. God gave it through many writers over a very long time, and it tells one big story, about Jesus saving us.",
+        "older": "The Bible is sixty-six books written by many people over many centuries, and through those human writers God himself speaks. It is God-breathed, true in all it teaches, and Jesus is its center: he said the Scriptures testify about him."
+      },
+      "quote": {
+        "ref": "2 Timothy 3:16-17",
+        "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness, so that the man of God may be complete, fully equipped for every good work."
+      },
+      "rests": [
+        "2 Timothy 3:16-17",
+        "2 Peter 1:20-21",
+        "Luke 24:27",
+        "John 5:39",
+        "Psalm 119:105"
+      ],
+      "question": {
+        "ask": "How can a book written by people be God's Word?",
+        "younger": "God used real people, with their own words and their own ways of writing. The Holy Spirit carried them along, so that what they wrote is what God wanted to say.",
+        "older": "Christians do not say the writers took dictation. Luke says he carefully investigated everything before he wrote (Luke 1:3). They say God was at work in the whole of it, so that men “spoke from God as they were carried along by the Holy Spirit” (2 Peter 1:21). That is a claim to weigh, not to swallow, and the questions about how the books were copied and collected are fair ones."
+      },
+      "stops": [
+        "sinai",
+        "return",
+        "cross",
+        "church"
+      ],
+      "catechism": [
+        12,
+        13
+      ],
+      "deeper": [
+        {
+          "label": "Why would anyone trust the Bible?",
+          "href": "/answers/why-would-anyone-trust-the-bible"
+        },
+        {
+          "label": "The family catechism: how has God spoken to us?",
+          "href": "/family/catechism#q12"
+        }
+      ]
+    },
+    {
+      "id": "image",
+      "title": "People made in God's image",
+      "status": "coming"
+    },
+    {
+      "id": "sin",
+      "title": "Sin",
+      "status": "coming"
+    },
+    {
+      "id": "jesus",
+      "title": "Jesus, God and man",
+      "status": "finished",
+      "picture": "manger",
+      "pictureLabel": "A manger full of straw in a stable at night, under one bright star.",
+      "statement": {
+        "younger": "Jesus is God the Son. He became a real man, born as a baby, so that he could save us. He is fully God and fully man.",
+        "older": "Jesus is one person who is truly God and truly man; the church confessed it in those words at the Council of Chalcedon in 451. He was with God and was God from the beginning, and he became flesh: he grew tired, he wept, he died. Only someone who is both could bring God and people back together."
+      },
+      "quote": {
+        "ref": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
+      },
+      "rests": [
+        "John 1:1-3",
+        "John 1:14",
+        "Colossians 2:9",
+        "Hebrews 4:15",
+        "John 20:28",
+        "Philippians 2:6-8"
+      ],
+      "question": {
+        "ask": "If Jesus is God, who was he praying to?",
+        "younger": "He was praying to God the Father. There is one God, who is the Father, the Son and the Holy Spirit. The Son loves to talk with the Father.",
+        "older": "To God the Father. Christians confess one God in three persons: the Father, the Son and the Holy Spirit. Jesus praying shows that the Son and the Father are two persons, not that Jesus is less than God. The same Gospel that shows him praying ends with Thomas calling him “My Lord and my God” (John 20:28)."
+      },
+      "stops": [
+        "creation",
+        "jesus",
+        "cross"
+      ],
+      "catechism": [
+        25,
+        4
+      ],
+      "deeper": [
+        {
+          "label": "Was Jesus just a good teacher?",
+          "href": "/answers/was-jesus-just-a-good-teacher"
+        },
+        {
+          "label": "How can God be three and one?",
+          "href": "/answers/how-can-god-be-three-and-one"
+        },
+        {
+          "label": "The family catechism: who is Jesus Christ?",
+          "href": "/family/catechism#q25"
+        }
+      ]
+    },
+    {
+      "id": "cross",
+      "title": "The cross",
+      "status": "coming"
+    },
+    {
+      "id": "resurrection",
+      "title": "The resurrection",
+      "status": "coming"
+    },
+    {
+      "id": "spirit",
+      "title": "The Holy Spirit",
+      "status": "coming"
+    },
+    {
+      "id": "church",
+      "title": "The church",
+      "status": "coming"
+    },
+    {
+      "id": "life-to-come",
+      "title": "The life to come",
+      "status": "coming"
+    }
+  ]
+}

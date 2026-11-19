@@ -1,0 +1,73 @@
+{
+  "slug": "creation",
+  "n": 1,
+  "act": "creation",
+  "title": "Creation",
+  "range": "Genesis 1 to 2",
+  "status": "finished",
+  "summary": {
+    "younger": "God made everything out of nothing, and he made people to know him and to take care of his world.",
+    "older": "Before anything else, there is God. He speaks the world into being, calls it good, and makes people in his image to care for it under him."
+  },
+  "scene": "creation",
+  "sceneLabel": "The world on the days of creation: darkness on the left with the moon and stars, light on the right with the sun, the sea with fish, birds in the sky, land with trees and animals, a man and a woman, and a garden with a river.",
+  "story": {
+    "younger": [
+      "In the beginning there was only God. Then God spoke, and the world began.",
+      "On the first day he made light. Then, day by day, he made the sky and the sea, the dry land and the plants, the sun, the moon and the stars, the birds and the fish, and every kind of animal.",
+      "Last of all, God made a man and a woman. He made them in his own image, so they could know him and take care of his world.",
+      "God looked at everything he had made, and it was very good. On the seventh day he rested. Then he planted a garden and put the people he had made there, close to him."
+    ],
+    "older": [
+      "Genesis opens with God already there. Nothing comes before him, and nothing helps him. He speaks, and what he says happens. Day by day the empty world is given shape (light, sky, sea, land) and then filled (the lights of the sky, birds and fish, animals, people).",
+      "People come last, and they are different. Only they are made in the image of God. In the ancient world kings set up statues of themselves to show who ruled a land, and a king could be called the image of a god. Genesis gives that dignity to every person, not only to kings, and gives every person work: to rule the earth and to care for it on God's behalf.",
+      "Six times God calls what he made good; the seventh time, very good. Then he rests, and Genesis 2 shows the man and the woman in a garden where God himself is near. The rest of the Bible is the story of how that closeness was lost, and how God set out to bring it back."
+    ]
+  },
+  "god": {
+    "younger": "God made everything, and everything he made was good. He made you on purpose, in his image.",
+    "older": "God is not part of the world. He is its maker, and it depends on him every moment. He is good, and so is what he made. And he made people for himself, to know him and to share his care for the world."
+  },
+  "verses": [
+    { "ref": "Genesis 1:1", "text": "In the beginning God created the heavens and the earth." },
+    { "ref": "Genesis 1:27", "text": "So God created man in His own image; in the image of God He created him; male and female He created them." }
+  ],
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Genesis 2", "href": "/study/bible/genesis/2" }
+  ],
+  "differ": {
+    "text": "Christians read the days of Genesis 1 in different ways, and the age of the earth is one of the places where faithful churches disagree; all of them confess that God made everything.",
+    "label": "How should a Christian read Genesis 1?",
+    "href": "/answers/how-should-a-christian-read-genesis-1"
+  },
+  "question": {
+    "ask": "If God made everything good, why is the world so broken?",
+    "answer": [
+      "Genesis does not dodge it. The very next chapter tells how the first people turned from God, and how the damage spread into everything: their friendship with God, with each other, and with the ground itself.",
+      "So the Bible never says the world as it is now is the world as God meant it. That is why the story keeps going. It is not a story about a good world that stayed good, but about a good God who will not leave his world broken."
+    ]
+  },
+  "deeper": [
+    { "label": "If God is good, why is there suffering?", "href": "/answers/if-god-is-good-why-suffering" },
+    { "label": "Was Genesis 1 answering Babylon, not modern science?", "href": "/resources/context/genesis-one-in-its-world" }
+  ],
+  "talk": {
+    "younger": "What is one thing God made that you love? Ask a parent or a leader what they love too.",
+    "older": "If every person carries God's image, what would change in the way you treat the person you find hardest to like?"
+  },
+  "activity": {
+    "kind": "tap",
+    "title": "Find the seven days",
+    "prompt": "Tap each part of the picture to find out which day God made it. The days fill in below as you find them.",
+    "spots": [
+      { "id": "light", "name": "The light and the darkness", "x": 50, "y": 9, "day": 1, "text": "Day 1. God made light, and separated the light from the darkness.", "ref": "Genesis 1:3-5" },
+      { "id": "sky", "name": "The sky over the sea", "x": 16, "y": 52, "day": 2, "text": "Day 2. God made the sky, with the waters above it and the waters below.", "ref": "Genesis 1:6-8" },
+      { "id": "land", "name": "The trees on the dry land", "x": 63, "y": 51, "day": 3, "text": "Day 3. God gathered the seas so the dry land appeared, and filled it with plants and trees.", "ref": "Genesis 1:9-13" },
+      { "id": "lights", "name": "The sun, the moon and the stars", "x": 82, "y": 20, "day": 4, "text": "Day 4. God made the sun, the moon and the stars, to mark the days, the seasons and the years.", "ref": "Genesis 1:14-19" },
+      { "id": "creatures", "name": "The fish and the birds", "x": 22, "y": 80, "day": 5, "text": "Day 5. God filled the sea with fish and the sky with birds.", "ref": "Genesis 1:20-23" },
+      { "id": "people", "name": "The animals and the two people", "x": 47, "y": 74, "day": 6, "text": "Day 6. God made the animals, and then a man and a woman in his own image.", "ref": "Genesis 1:24-31" },
+      { "id": "rest", "name": "The garden", "x": 86, "y": 70, "day": 7, "text": "Day 7. God rested from his work, and he blessed the seventh day.", "ref": "Genesis 2:1-3" }
+    ]
+  }
+}
