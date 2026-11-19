@@ -2330,3 +2330,31 @@ Cut: Martyn, Kimelman and Bernier by name (the book page carries the debate); th
 | Ezekiel 37:22; Psalm 133:1; Isaiah 49:6; Ephesians 4:5 | 20-26 | BSB | BSB text |
 
 Cut: Ut Unum Sint (1995) and Käsemann (not checked this run); the 1054 date (stated as "the churches of East and West have parted"); the number of denominations; Maccoby, Klassen, Barth and the Gospel of Judas; Cyril of Alexandria by name.
+
+## The plain notes on John 18 (2026-11-19)
+
+`client/public/bible/notes/john/plain/18.json`. 5 web searches. Where Mark 14 and 15 and Matthew 26 tell the event, their verified claims and wording are reused (the Mishnah on trials as a pointer, the date question as a pointer, "Sincerity is not the same as strength", the limit on executions, the Passover release, Barabbas "son of the father"). The abuse care line is the Matthew 5 wording word for word.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| Speira the usual word for a Roman cohort (nominally several hundred, often 600); chiliarchos the Greek for a military tribune; most think a detachment | 1-11, 12 | NET note on 18:3; Thayer; biblicaltraining.org "Tribune" | Search: biblia.com NET 18:3; blueletterbible.org G4686. "Several hundred" on the page |
+| Egō eimi in 18:5, 6, 8; 8:58 | 1-11 | Greek text in the repository | Script |
+| 2 Samuel 15:23, 30 (David crosses the Kidron); Isaiah 43:10; Psalm 27:2; Isaiah 51:17; 10:18; Matthew 26:52; Luke 22:51; Mark 14:32 | 1-11 | BSB | BSB text. The David echo is "readers have long noticed" |
+| Annas appointed high priest by Quirinius about AD 6, deposed by Valerius Gratus about 15; five sons high priest, which never happened to another (Josephus, Antiquities 20.9.1, 20.198 in Niese); Caiaphas his son-in-law; Luke 3:2 | 12-18 | Josephus; encyclopedias | Search: en.wikipedia.org Annas; biblicaltraining.org; bible-history.com. No section number on the page |
+| The "other disciple" and the beloved disciple (book page wording) | 12-18 | Book page "Who wrote it" | Repository |
+| Anthrakia only at 18:18 and 21:9 in the New Testament | 12-18 | Greek text in the repository | Script (G0439 counted: 2) |
+| 11:50-51; Isaiah 53:7; Deuteronomy 19:15; Exodus 22:28; Isaiah 50:6; Mark 14:71; 13:38; Matthew 5:39 | 12-27 | BSB | BSB text |
+| Mishnah on capital trials, around AD 200, perhaps a later ideal (pointer to the Mark 14 note) | 19-27 | Earlier ledger (Mark 14) | Earlier ledger. Not used to judge the hearing |
+| Abuse care line: "Jesus speaks of refusing revenge, not of accepting abuse. Seeking safety, and the protection of the law, is not disobedience to Jesus. If you are being harmed, tell someone you trust and get help." | 19-27 | Matthew 5 plain note | Repository |
+| Praetorium a Latin word for a commander's headquarters; Antonia (old tradition) or Herod's palace (many scholars now) | 28-32 | Encyclopedia.com "Praetorium"; IVP NT commentary on 18:28-32 | Search: encyclopedia.com; biblegateway.com IVP; baptistpress.com |
+| Gentile houses and defilement (Acts 10:28); Numbers 9:6; 12:32-33; 3:14; Numbers 21:8-9; Deuteronomy 21:23; Galatians 3:13 | 28-32 | BSB | BSB text. Mishnah Ohalot not used |
+| Date of the Supper against John (pointer to the Mark 14 note); "We are not permitted to execute anyone" (Mark 15 wording) | 28-32 | Earlier ledger (Mark 14, 15) | Earlier ledger |
+| P52: John 18:31-33 and 37-38; John Rylands Library, Manchester; published 1935; dated to the 100s, often around 125 (Aland, plus or minus 25), some later (Orsini and Clarysse, 125 to 175) | 28-32 | The papyrus | Search: library.biblicalarchaeology.org "Earliest New Testament fragment"; catholic-resources.org Papyri; historyofinformation.com. Size not given |
+| Ek tou kosmou toutou and enteuthen in 18:36 | 33-38 | Greek text in the repository | Script |
+| Francis Bacon, "Of Truth", opening essay of the 1625 Essays: "What is truth? said jesting Pilate, and would not stay for an answer" | 33-38 | Bacon | Search: gutenberg.org 575; en.wikipedia.org Essays (Francis Bacon); wikiquote. Quoted |
+| Daniel 7:14; Zechariah 9:9-10; 12:14-15; 14:6; 17:18; Matthew 6:10 | 33-38 | BSB | BSB text |
+| The two misuses of 18:36 (withdrawal; a warrant for a Christian state by power) | 33-38 | The text (18:36; 17:15, 18) | Stated plainly; no party named |
+| Lēstēs in 18:40; Mark 15:7; Luke 23:19; Barabbas "son of the father"; the release known only from the Gospels (Mark 15 wording) | 39-40 | Greek text; BSB; earlier ledger (Mark 15) | Script; earlier ledger |
+| Isaiah 53:6, 12 | 39-40 | BSB | BSB text |
+
+Cut: the Humphreys and Waddington astronomy (Nature, 1983); Philo's gilded shields; the aqueduct; y. Sanhedrin 1:1 and Josephus, War 2.117 on the power of the sword; Ananus the younger and James (not needed); the 2009 pavement find; Huxley's Jesting Pilate; the Mishnah on Gentile dwellings; Augustine and other readers on the falling back.
