@@ -2919,3 +2919,37 @@ chapter, with the earlier ledger (Mark 3 and 7; Matthew 6, 7, 12 and 23).
 Left out: the Holy Spirit petition in some copies of 11:2 (not confirmed);
 Bailey's village customs; the Talmud's tithing rules; m. Demai; who first
 read "Pharisee" as hypocrite; the deep note's scholars.
+
+## The plain notes on Luke 12 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/12.json`. Two searches for this
+chapter, with the earlier ledger (Mark 3, 4, 10 and 12; Matthew 5, 6, 10,
+11, 12 and 24) and the book page.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Flat roofs; Gehenna, Hinnom (Jeremiah 7:31); five sparrows for two pennies against Matthew's two for one | 1-7 | Earlier ledger (Matthew 10); BSB | Matthew 10 wording |
+| "My friends" only in Luke at 12:4; leaven a little working through the lump | 1-7 | BSB comparison; earlier ledger (Matthew 13) | Repository |
+| Proverbs 9:10; 1 Samuel 14:45 (Matthew 10 OT wording, word for word); the Matthew 10 care sentences adapted ("The warning is not meant to frighten anyone into faith, and it is not meant to sit alone." word for word) | 1-7 | Matthew 10 plain note | Repository |
+| Blasphemy sentences from Mark 3 and Matthew 12 word for word ("It is not a careless word spoken once in anger. It is a settled refusal to see God's goodness as good, a refusal that shuts the door on the very forgiveness Jesus offers." "Many Christians have feared they committed this sin." "A long pastoral tradition answers that the fear itself is a sign that the heart has not turned hard in this way."); Bunyan, Grace Abounding (1666) | 8-12 | Mark 3 and Matthew 12 plain notes; earlier ledger (Matthew 12) | Repository |
+| Peter's denial and restoration (22:32, 54-62); Acts 4:8-13; 6:10; Exodus 4:12 | 8-12 | BSB | Repository |
+| Deuteronomy 21:17 (double share) | 13-21 | BSB | Repository |
+| Sirach 11:18-19: a man grown rich says he has found rest and will enjoy his goods, not knowing his time | 13-21 | Sirach (Greek) | Search: intertextual.bible (Sirach 11:19 and Luke 12:19); bible.usccb.org Sirach 11 notes; biblia.com RSV. Paraphrased. Date "early in the second century BC" from the earlier ledger (Matthew 11) |
+| Psalm 14:1; Psalm 49:16-17; Ecclesiastes 2:18-19; Genesis 41:35-36; Proverbs 6:6-8 | 13-21 | BSB | Repository |
+| Not against saving or planning; against greed and storing "for himself"; Luke and money (prosperity and contempt both refused) | 13-21 | Book page `money` | Repository |
+| Do not worry: the Matthew 6 wording; the help paragraph word for word ("This passage is not a rebuke ... call or text 988 right now.") | 22-34 | Matthew 6 plain note; the Honest Answer "Is my anxiety a spiritual failure?" | Copied word for word |
+| Ravens unclean (Leviticus 11:15); Psalm 147:9; Job 38:41; 1 Kings 10 | 22-34 | BSB | Repository |
+| Readings of "sell your possessions"; Antony gave his land after hearing the Gospel read | 22-34 | Earlier ledger (Mark 10, Athanasius, Life of Antony 2); BSB Acts 2:44-45; 5:4; 19:8-9 | Earlier ledger; repository |
+| "Let your waists be girded" (12:35); clay oil lamps | 35-48 | Greek text; earlier ledger (Mark 4) | Script over the repository's Greek |
+| Second or third watch: Jewish three or Roman four watches, either way the middle of the night or later | 35-48 | Commentaries as reported | Search: biblehub.com commentaries 12:38; biblegateway Reformation Study Bible note. System not named on the page |
+| The master serving at table only in Luke; 22:27 | 35-48 | BSB | Repository |
+| The faithful and wicked servant (Matthew 24 wording, two sentences word for word); Exodus 12:11; Ezekiel 34:2 | 35-48 | Matthew 24 plain note; BSB | Repository |
+| Baptism as his death (Mark 10:38); fire readings (3:16; Acts 2:3); Micah 7:6; Isaiah 9:6; 2:14; 19:42; 22:51; Romans 12:18; Psalm 27:10 | 49-53 | BSB; book page hard line on 12:49 | Repository |
+| "This is a picture of division, not a call to violence"; "No one may use this ... inside a family or outside it"; the family-rejection care paragraph word for word but for the sentence on Mark 10:29-30 | 49-53 | Matthew 10 plain note | Repository |
+| West wind from the sea brings rain, south wind from the desert heat | 54-59 | The verses; geography | Common geography |
+| Lepton the smallest coin; the widow's two (21:2); Matthew 5:25-26 | 54-59 | Greek text; earlier ledger (Mark 12) | Script over the repository's Greek |
+| Jeremiah 8:7; Proverbs 25:8 | 54-59 | BSB | Repository |
+
+Left out: 1 Enoch 97:8-10; Malherbe; the Epicurean reading of "eat, drink,
+and be merry"; the hours of each night watch; Thomas's Gospel; Marcion;
+every deep-note scholar not checked.
