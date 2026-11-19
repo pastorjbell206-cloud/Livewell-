@@ -3970,3 +3970,35 @@ rows.
 Cut: Tel Beersheba and Aharoni's 1969 dig (not needed); the Minoan graffito
 at Gerar (apologetic sources only); a figure for a bowshot; "El Olam found
 only here in Genesis" (not checked).
+
+## The plain notes on Genesis 22 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/22.json`. Six web searches for
+this chapter, with the book page, the deep note and its ledger rows.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The narrator says at the start it is a test; the build of the command; lekh-lekha and ‘which I will show you’ as in 12:1; burnt offering wholly burned | 1-2 | Repository deep note (`literary`, `cultural`); BSB | Repository |
+| ‘Love’ (ahav, H157): first use in the Bible at 22:2 | 1-2 | Strong's numbers in the repository | Script over `client/public/bible/ch/genesis/` (first hit 22:2) |
+| Leviticus 18:21; Deuteronomy 12:31; Jeremiah 7:31 (quoted after its em-dash only); Micah 6:7-8; Exodus 13:13 | 1-2 | BSB | Repository |
+| Kant, The Conflict of the Faculties (1798): Abraham should have refused; he could be sure killing his good son was wrong, never sure the voice was God's | 1-2 | Kant, Conflict of the Faculties, Ak. 7:63 as summarised | Search: plato.stanford.edu "Kant's Philosophy of Religion"; philarchive.org PALTPO-30; cambridge.org (Wood's translation). Paraphrased |
+| Care line "No one today is told by God to harm a child, or anyone else." with seek help at once, Find Help, local emergency number (no number given) | 1-2 | Site wording, new | Not a historical claim |
+| Fire as coals; ‘sacrificial knife’ (BSB); na'ar of Joseph at seventeen (37:2); later tradition's ages for Isaac (not given) | 3-8 | Repository deep note (`cultural`, `historical`); BSB | Repository |
+| ‘Provide’ is ra'ah, ‘see’; ‘the two of them walked on together’ around the only recorded conversation | 3-8 | Repository deep note (`literary`) | Repository |
+| Hebrews 11:17, 19; John 1:29; John 19:17 (the wood and the cross said to be a later Christian picture, not drawn by the New Testament) | 3-14 | BSB; repository deep note (`christ`) | Repository |
+| Akedah from ‘bound’; read on the second day of Rosh Hashanah | 9-14 | Earlier ledger row (book page) | Earlier search |
+| Talmud, Rosh Hashanah 16a (Rabbi Abbahu): the ram's horn is sounded so that God will remember the binding of Isaac in the people's favor | 9-14 | Babylonian Talmud | Search: etzion.org.il VBM digest; sefaria.org sheets 129462, 4732. Paraphrased; the Zikhronot prayers not described (not confirmed) |
+| 2 Chronicles 3:1; Moriah "usually linked" with Jerusalem; some placed it elsewhere | 9-14 | BSB; book page map line; repository deep note (`historical`) | Repository |
+| James 2:21-22; Romans 8:32; John 3:16 | 9-14 | BSB | Repository |
+| Rashi (eleventh century) on 22:2, following Genesis Rabbah 56:8: God did not want Isaac slain; ‘bring him up’, then ‘bring him down’ | 9-14 | Rashi | Search: sefaria.org.il Rashi on Genesis 22:2; cojs.org; chabad.org. Paraphrased |
+| Kierkegaard, Fear and Trembling (1843, as Johannes de silentio): judged by the ethical alone Abraham is a murderer; faith beyond explaining (the knight of faith understood by no one) | 9-14 | Kierkegaard | Search: edsitement.neh.gov; ebsco.com research starter; sparknotes. Paraphrased; no phrase quoted |
+| Qur'an 37:99-111: the dream, the son's consent, the ransom; the son not named; most Muslims hold Ishmael; some early scholars said Isaac; Eid al-Adha | 9-14 | Qur'an; tafsir as summarised | Search: ynetnews.com (Simonsohn); islamreligion.com; religionmediacentre.org.uk; brandeis.edu. Paraphrased |
+| God swears by himself, only time in Genesis; last time God speaks to Abraham; gates | 15-19 | Repository deep note (`literary`, `story`) | Repository |
+| Hebrews 6:13, 18; Galatians 3:8; Acts 3:25; Romans 9:10 | 15-24 | BSB | Repository |
+| Nahor's twelve sons; concubine as a lower-rank wife | 20-24 | BSB; repository deep note (`literary`) | Repository; "usually" |
+
+Cut: Josephus's and Genesis Rabbah's ages for Isaac; Jubilees and the
+Samaritan Moreh; the Carthage tophet debate; Auerbach's Mimesis; Moberly;
+Levenson; Delaney; Boehm (none checked this run); the Zikhronot and daily
+prayer-book readings; ‘teleological suspension of the ethical’ as a quoted
+phrase; any first use of substitution.
