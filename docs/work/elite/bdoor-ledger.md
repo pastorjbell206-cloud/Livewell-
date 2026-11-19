@@ -5290,3 +5290,36 @@ the trip; the girl's later life.
 Left out: the loyalty oaths to the emperor (deep note, not searched); what
 "Caesar's decrees" were; the Stoa Poikile by name; Zeno's dates; Isho'dad of
 Merv; later traditions about Dionysius the Areopagite.
+
+## The plain notes on Acts 18 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/18.json`. 5 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Corinth destroyed 146 BC, empty about a century, refounded by Julius Caesar 44 BC as a colony; two harbours | 1-4 | Roman-world portrait, part 1 | wrom-ledger |
+| Corinth the seat of the proconsul of Achaia | 1-4 | Reference works on Gallio | Search: biblicaltraining.org "Gallio"; Wikipedia "Lucius Junius Gallio Annaeanus" |
+| Claudius's expulsion: Suetonius on "Chrestus"; most read Christus, some a local agitator; about AD 49 from a later writer, disputed | 1-4 | Book page wording | wrom-ledger; earlier ledger |
+| Tentmaker: tents or leather; 1 Thessalonians 2:9 | 1-4 | Deep note `cultural`; BSB | Repository |
+| Proverbs 31:13; Exodus 20:9; 23:9 | 1-4 | BSB | Repository |
+| Macedonian gift (2 Corinthians 11:9), "probably" | 5-8 | BSB | Repository |
+| "The Jews" (18:5, 6, 12, 14, 28): the opponents in Corinth's synagogue; Crispus believed (18:8); Paul a Jew; pointer to 2:22-28; the turn local (Ephesus synagogue, 18:19) | 5-8, 12-17, 24-28 | BSB; acts/plain/13.json form | Repository |
+| "Your blood be on your own heads" = Ezekiel's watchman (Ezekiel 33:4; 3:19); shaking garments (Nehemiah 5:13) | 5-8 | BSB; deep note `cultural` | Repository |
+| 1 Corinthians 2:3; Joshua 1:9; Jeremiah 1:8; Isaiah 43:5; 1 Kings 19:18 | 9-11 | BSB | Repository |
+| 1 Thessalonians written from Corinth, "many think" | 9-11 | Deep note `historical` | Stated as "many think" |
+| Gallio elder brother of Seneca; the Delphi letter of Claudius; most 51 to 52, some 50 to 51; surest date in Paul's life | 12-17 | Book page wording; reference works | Search: Wikipedia "Lucius Junius Gallio Annaeanus"; biblicaltraining.org; biblearchaeologyreport.com "Gallio: An Archaeological Biography" |
+| The bema: raised platform; one uncovered in the centre of Corinth's market square | 12-17 | Excavations as reported | Search: bibleplaces.com Acts 18; biblearchaeologyreport.com. The bema's own date not stated |
+| Gallio's ruling treated the believers as within the Jewish community, "many readers think" | 12-17 | Commentaries | Stated as a reading |
+| Sosthenes of 1 Corinthians 1:1 "some think" the same | 12-17 | BSB | Stated as uncertain |
+| Isaiah 45:5; Psalm 82:3 | 12-17 | BSB | Repository |
+| Phoebe at Cenchrea (Romans 16:1) | 18-23 | BSB | Repository |
+| The vow: like the Nazirite vow (Numbers 6:5, 18), or a private vow since the hair was to be shaved at the sanctuary and burned; Luke does not say | 18-23 | Numbers 6; commentaries | Search: biblehub.com commentaries on 18:18 (Salmasius's objection reported); lavistachurchofchrist.org; freely-given.org OBD |
+| Numbers 30:2; Proverbs 19:21 | 18-23 | BSB | Repository |
+| Alexandria: one of the largest Jewish communities; the Scriptures translated into Greek there | 24-28 | Earlier ledger (Egypt); deep note | Earlier ledger |
+| Priscilla first in four of the six times the couple is named (Acts 18:18, 26; Romans 16:3; 2 Timothy 4:19; Aquila first at Acts 18:2 and 1 Corinthians 16:19); reasons offered | 24-28 | BSB count | Repository; search: biblehub.com Greek 4251; reference pages reporting the count |
+| Priscilla teaching: complementarian and egalitarian readings, each in its holders' terms; 1 Timothy 2:12; Romans 16:3; no side | 24-28 | Standard positions | Search: cbeinternational.org (egalitarian); biblehub.com "Can women teach in church?"; christianitytoday.com 2024. Stated in general terms |
+| Proverbs 1:5; Judges 4:4; 2 Kings 22:14; 1 Corinthians 3:6 | 24-28 | BSB | Repository |
+
+Left out: Seneca's column at Corinth; Gallio's later death; the bema's date;
+the Ethiopian, Philo and the Greek of "explained"; why Priscilla is named
+first (Luke does not say).
