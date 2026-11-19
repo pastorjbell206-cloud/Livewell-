@@ -3249,3 +3249,38 @@ Left out: the Mishnah on tenants and the right of possession; the Gospel of
 Thomas's version of the tenants; the Tiberius denarius's exact Latin (pointed
 to the Mark 12 note); 2 Maccabees 7 (left in the Mark 12 note); a date for 4
 Maccabees.
+
+## The plain notes on Luke 21 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/21.json`. Four searches for this
+chapter, with the earlier ledger (Mark 12 and 13; Matthew 24; John's book
+page; Luke's book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Two lepta, quadrans, 1/64 of a denarius; the Addison Wright (1982) reading and the "both" reading (Mark 12 wording, word for word with Mark's verse pointers removed) | 1-4 | Earlier ledger (Mark 12) | Earlier ledger |
+| 20:47 then 21:1-4 then 21:6; Exodus 22:22; Psalm 68:5; 1 Samuel 16:7 | 1-4 | BSB | Repository |
+| Herod's rebuilding from about 20 or 19 BC; Josephus's snow-covered mountain and gold (Mark 13 wording); revolt 66; AD 70 under Titus | 5-11 | Earlier ledger (Mark 13) | Earlier ledger |
+| Josephus, Antiquities 15.394-395: spoils dedicated by Herod fixed round the temple; the golden vine with hanging clusters | 5-11 | Josephus (Whiston) | Search: lexundria.com Antiquities 15.392-395; avande1.sites.luc.edu (Antiquities 15); posenlibrary.com "Herod's Renovation of the Temple". Linked to 21:5 only as "offerings of this kind" |
+| "The time is near" only in Luke (Mark 13:6; Matthew 24:5 compared); Luke's setting in the temple against Mark 13:3; Micah 3:12; Jeremiah 7:4 (Mark 13 wording) | 5-11 | BSB comparison; Mark 13 plain note | Repository |
+| "Normal weather of a broken world"; the frightened-reader line (Matthew 24 wording, "see to it that you are not alarmed" made Luke's "do not be alarmed") | 5-11 | Mark 13 and Matthew 24 plain notes | Repository |
+| Acts 4; 6:10; 24 to 26 (Felix, Festus, Agrippa); Mark 13:11 against Luke 21:15 and 12:12; 24:48; 12:7; Psalm 41:9; Daniel 3:16-18 | 12-19 | BSB | Repository |
+| Family betrayal care (Mark 13 wording word for word) with the police-or-crisis-line line (Matthew 10 wording) | 12-19 | Mark 13 and Matthew 10 plain notes | Repository |
+| Abomination in Mark and Matthew against Luke's "surrounded by armies"; dating views (book page) | 20-24 | Earlier ledger (Mark 13); book page | Repository |
+| Josephus, Jewish War 6.420: ninety-seven thousand captives in the whole war | 20-24 | Josephus (Whiston) | Search: lexundria.com War 6.420-421; cojs.org; pbs.org Frontline extract. "In the whole war", as Josephus says |
+| Eusebius, Church History 3.5.3: Jerusalem Christians warned before the war, left for Pella in Perea; historicity debated | 20-24 | Earlier ledger (Mark 13); search | Search: en.wikipedia.org Flight to Pella; bkv.unifr.ch NPNF Eusebius 3.5. Paraphrased |
+| Jeremiah 6:1; Deuteronomy 32:35; Hosea 9:7 (quoted only before its em-dash); Daniel 8:13-14; Romans 11:25; Acts 1:7 | 20-24 | BSB | Repository |
+| Readings of "the times of the Gentiles" (foreign rule over Jerusalem; the age of the Gentile mission with Romans 11:25; restoration of Israel after); date-setting has failed (Russell's 1914 reckoning from 1876, not named on the page) | 20-24 | Deep note; reference works | Search: walvoord.com "The Times of the Gentiles"; wacriswell.com; photos.watchtowerdocuments.org (Russell, Bible Examiner 1876); reslight.boards.net. Stated as views; no names, no year |
+| Isaiah 13:10; Joel 2:31; Daniel 7:13; 2:38; 8:24; "redemption" | 25-28 | BSB | Repository |
+| Readings of the coming (Mark 13 wording, with Luke's "until the times of the Gentiles" order added for the end-of-history reading) | 25-28 | Mark 13 plain note; deep note | Repository |
+| Fig tree bare in winter, olive evergreen (Mark 13 wording); "and all the trees", "kingdom of God is near" (Luke) against "He is near" (Mark 13:29); Isaiah 40:8 | 29-33 | Earlier ledger; BSB | Repository |
+| "This generation": C. S. Lewis's phrase and the three readings (Mark 13 wording, verse numbers changed) | 29-33 | Earlier ledger (Mark 13) | Earlier ledger |
+| 8:14; 19:47-48; 21:37-38; Isaiah 5:11; Proverbs 12:25 | 34-38 | BSB | Repository |
+| Some later manuscripts place the woman caught in adultery after Luke 21:38; missing from the earliest copies of both Gospels | 34-38 | Earlier ledger (John's book page) | Earlier ledger |
+| The child lying awake (Luke 17 wording, word for word) | 34-38 | Luke 17 plain note | Repository |
+
+Left out: Schweitzer, Bertrand Russell, J. Stuart Russell, France, Wright,
+Bock, Scofield, Augustine's Letter 199, Jervell, Tannehill by name; Eusebius
+3.5-7 on the fall as punishment; Charles Taze Russell and 1914, 1948 and 1967
+by name; the 21:19 variant; family 13 by name; the gladiators and the
+Colosseum; the deep note's 40,000 released captives.
