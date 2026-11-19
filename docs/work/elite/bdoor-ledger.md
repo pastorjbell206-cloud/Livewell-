@@ -3067,3 +3067,41 @@ shepherds in later rabbinic lists of low trades; Jeremias's dowry headdress;
 "wishing the father dead" and every village ceremony (as instructed); the
 sandals of free men; sumphōnia; Exodus 10:16; Socinus, Warfield and Levine
 by name; Augustine's Quaestiones 2.33 and Jerome's Letter 21 (not confirmed).
+
+## The plain notes on Luke 16 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/16.json`. Five searches for this
+chapter, with the earlier ledger (Mark 10; Matthew 5, 6, 11, 16 and 23; John
+11; Luke 11 and the book page).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Estates run by managers who handled rents, debts and contracts; debts owed in oil and wheat; a hundred measures a large amount | 1-9 | Deep note; Luke 8 ledger (epitropos) | Stated generally; no litres, no Jeremias valuation |
+| Three readings of the manager: cheated again and praised for shrewdness; cut his own commission (Fitzmyer, TS 1964); cut hidden interest forbidden by the Law (Derrett, NTS 1961); the critics' reply that the amounts do not match interest rates and the debtors are not said to be Jews (Kloppenborg, Biblica 1989, as reported); neither theory widely accepted | 1-9 | Studies as reported | Search: biblegateway.com IVP NT commentary "Parable of the Shrewd Steward"; tmcdaniel.palmerseminary.edu (Landry); muse.jhu.edu; difficult-passages.netlify.app. No scholar named on the page. The book-page ledger's "commission (Derrett 1970)" is not repeated: the search gives the commission reading to Fitzmyer |
+| The unjust judge as the same "lesser to greater" move (18:1-8) | 1-9 | BSB | Repository |
+| Exodus 22:25; Deuteronomy 15:8; 23:19; Proverbs 14:31; Luke 12:34; 14:13-14 | 1-9 | BSB | Repository |
+| Mammon Aramaic for wealth or property, not a god (Matthew 6 wording) | 1-9, 10-13 | Earlier ledger (Matthew 6) | Earlier ledger |
+| Matthew 6:24; Proverbs 11:28; Exodus 20:3; 1 Timothy 6:10; Luke 8:3; 19:8-9 | 10-13 | BSB | Repository |
+| No prosperity reading, no contempt for the rich; "where their treasure is" | 10-13, 19-26 | Luke's book page ("Luke and money") | Repository; consistent wording |
+| Pharisees (Matthew 23 and Luke 11 wording: "So ‘Pharisee’ is not a word for a hypocrite. In later Christian speech it came to mean that, but it did not mean that to Jesus' hearers.") | 14-18 | Matthew 23 and Luke 11 plain notes | Copied word for word |
+| "Stroke of a pen" the smallest mark; "Jesus is saying that God's word is not careless in any part." | 14-18 | Matthew 5 plain note | Copied word for word |
+| The readings of "forcing his way" (Matthew 11 wording adapted; "Careful scholars still differ, and these notes do not settle it.") | 14-18 | Matthew 11 plain note | Repository |
+| Divorce views paragraph, "What all of them share..." and the safety line, word for word: "Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first. Talk to a pastor or a counselor you trust, or call a local domestic violence line. These notes are not legal advice." | 14-18 | Mark 10 plain note | Copied word for word |
+| Deuteronomy 24:1; Genesis 2:24; Malachi 2:16; 1 Samuel 16:7 | 14-18 | BSB | Repository |
+| Purple dye from sea snails; thousands for one garment; colour of royalty | 19-26 | Tyrian purple | Search: worldhistory.org "Tyrian Purple" (10,000 to 12,000 for a toga; Diocletian's edict). "Thousands" |
+| Ebeblēto, passive ("had been laid") at 16:20 | 19-26 | Greek text | Script over the repository's Greek |
+| Lazarus the only named character in Jesus' parables (Abraham apart); "Dives" Latin for "rich"; Lazarus from Eleazar, "God has helped" | 19-26 | Reference works; earlier ledger (John 11) | Search: biblegateway.com IVP "Parable of the Rich Man and Lazarus"; theaquilareport.com (Abraham also named); enterthebible.org. "Apart from Abraham" |
+| Reclining at a feast (John 13:23) | 19-26 | BSB | Repository |
+| Hades the Greek word for Sheol; not Gehenna | 19-26 | Earlier ledger (Matthew 16) | Earlier ledger |
+| 1 Enoch 22: the dead kept in separate hollow places until judgment, a bright spring of water for the righteous | 19-26 | 1 Enoch 22 (Charles) | Search: sacred-texts mirror (Charles); bible.jmoorewv.com Enoch 22. "Jewish writings from before Jesus' time"; no chapter given on the page |
+| An Egyptian tale (Setne Khamwas and Si-Osire) of a rich and a poor man reversed in the underworld | 19-26 | Demotic tale as reported | Search: worldhistory.org "The Tales of Prince Setna"; ehrmanblog.org; byustudies.byu.edu (Lichtheim). "An old Egyptian tale"; Gressmann not named (not confirmed) |
+| Amos 6:4, 6; Ezekiel 16:49; Deuteronomy 15:11; Proverbs 21:13; Genesis 13:2 | 19-26 | BSB | Repository |
+| Views on the state of the dead, no side; 23:43; Philippians 1:23; "Christians also differ on what final judgment is like, and these notes do not settle that here." (Matthew 7) | 19-26 | Standard positions; Matthew 7 plain note | Stated as views; Ehrman, Fudge, the Adventists, Calvin and Cullmann not named |
+| Isaiah 58:7; Luke 24:11, 27 | 27-31 | BSB | Repository |
+
+Left out: bath and cor in litres and Jeremias's five hundred denarii; Dodd,
+Fletcher, Bailey's merciful-master reading, the ironic reading by name;
+Sirach 31:8, CD 14:20 and m. Avot 2:12 on mammon; the Qumran "sons of light";
+Josephus on the Pharisees' simple life; m. Gittin 9:10, Josephus on divorce,
+Salome, Elephantine and the Damascus Document; byssus from Egypt; 4 Maccabees
+13:17; Gressmann; Irenaeus and Tertullian on the intermediate state.
