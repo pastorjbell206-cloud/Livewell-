@@ -4171,3 +4171,31 @@ ledger rows.
 
 Cut: Gezer and Arad standing stones (in the deep note, not needed); Beitin
 by name; "more than four hundred miles".
+
+## The plain notes on Genesis 29 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/29.json`. No new web search for this
+chapter: the one for Genesis 26 (Mishnah Kiddushin 4:14) also confirmed the
+Nachmanides point below. The deep note and verse notes for the rest.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| The well, the stone and the shared custom; well meetings (Genesis 24; Exodus 2) | 1-14 | Repository deep note (`cultural`) | Repository |
+| Laban rushed out after seeing the gold (24:29-30); John 4:5-6 | 1-14 | BSB | Repository |
+| Bride-price normal; Jacob offers work; 24:53 | 15-20 | Repository deep note (`historical`); BSB | Repository |
+| ‘Older’ and ‘younger’ the same words as for Esau and Jacob (27:15) | 15-20 | Verse notes 16-17 | Repository |
+| Leah's ‘weak’ eyes: the word can mean tender or soft; uncertain whether a flaw | 15-20 | Standard lexicons (rak) | Stated as uncertain |
+| ‘A few days’ in 27:44 and 29:20 | 15-20 | Verse notes 42-45 on chapter 27 | Repository |
+| Song of Songs 8:7; 1 Corinthians 13:7 | 15-20 | BSB | Repository |
+| ‘Deceived’ echoes 27:35; bekhirah ‘firstborn’; week-long feast (Judges 14:12); mishteh from ‘drink’; bride brought after dark, probably veiled (24:65); Laban's custom not confirmed outside the text | 21-30 | Verse notes 22-24, 26-27; deep note (`cultural`, `literary`) | Repository; "may have been real" |
+| Zilpah and Bilhah enslaved women given as wedding gifts, with no say | 21-30 | BSB (29:24, 29); deep note | Repository; plain statement as in the Genesis 16 note |
+| Leviticus 18:18; Deuteronomy 21:15-17; Matthew 19:4-5; Galatians 6:7 | 21-30 | BSB | Repository |
+| Polygamy: one man and one woman at creation (2:24); every multi-wife household marked by rivalry; most readers: not a model | 21-30 | Repository deep note (`hard`) | Repository; the minority reading stated |
+| Nachmanides (Ramban) asked how Jacob could marry two sisters when the law forbids it | 21-30 | Ramban on Genesis 26:5, as reported | Search (Genesis 26): seforimblog / ezrabrand.com "Was Abraham a Lamdan?". Paraphrased, his answer not given |
+| ‘Unloved’ is literally ‘hated’, used comparatively (25:19-26 note); God first named at verse 31; Reuben/see, Simeon/heard, Levi/attached, Judah/praise; ‘affliction’ as in 16:11 and Exodus 3:7 | 31-35 | Verse notes 31-35; Genesis 25 plain note | Repository |
+| Levi's priests, Judah's David; Matthew 1:2; Revelation 5:5; Genesis 16:13; 1 Corinthians 1:27; Psalm 34:18; Genesis 49:31; 35:19 | 31-35 | BSB; deep note (`christ`) | Repository |
+| Care line for anyone unloved (new; ends with the site's "please share it with someone you trust: a friend, a pastor, a counsellor" and Find Help) | 31-35 | Site | Not a historical claim |
+
+Cut: the Mesopotamian dowry documents on slave women (in the verse notes,
+not checked here); wine helping the deception (a suggestion only); Leah's
+name and ‘wild cow’.
