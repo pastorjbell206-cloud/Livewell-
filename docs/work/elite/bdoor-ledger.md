@@ -2605,3 +2605,40 @@ The first commits for Luke's book page and Luke 1 and 2 rewrote the whole
 of `luke/intro.json`, `luke/1.json` and `luke/2.json` in a new layout. They
 were put back to their original layout, with only the `teaching` field and
 `"plain": true` added.
+
+## The plain notes on Luke 4 (2026-11-19)
+
+`client/public/bible/notes/luke/plain/4.json`. Six searches for this
+chapter, with the book page's rows and the earlier ledger.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Luke's order of the tests (bread, kingdoms, temple) against Matthew's; 3:38 then 4:3; "it has been relinquished to me" only in Luke; 22:3; 9:51 | 1-13 | BSB | Repository |
+| Deuteronomy 8:2-3, 6:13, 6:16; Psalm 91:11-12 and the dropped "in all your ways"; Hebrews 4:15 | 1-13 | BSB | Repository |
+| Two views on whether Christ could sin; the fasting care line | 1-13 | Repository chapter note (`hard`, stated without names); Matthew 4 plain note | Repository; the fasting line copied word for word from Matthew 4 |
+| Mark 6:1-6 and Matthew 13:53-58 place the Nazareth visit later, without the reading; 4:23 shows Capernaum came first | 14-21 | BSB | Repository |
+| Theodotus inscription, Jerusalem, Greek: a synagogue built for reading the Law and teaching the commandments; most date it before 70, date debated | 14-21 | Inscription | Search: en.wikipedia.org Theodotos inscription; library.biblicalarchaeology.org; cojs.org. Paraphrased |
+| Acts 13:15, the reading of the Law and the Prophets, then visitors invited to speak | 14-21 | BSB | Repository; earlier ledger (Mark 5) |
+| Mishnah Megillah 4:4: one may skip in the Prophets but not in the Law; Mishnah written down around AD 200, marked later | 14-21 | Mishnah | Search: outorah.org Megillah 4:4-5; posenlibrary.com; sefaria.org. Paraphrased. Whether readings were fixed then: "not known" |
+| Reader stands, teacher sits (4:16, 4:20; 5:3) | 14-21 | BSB | Repository |
+| Anointing of kings and priests; Messiah and Christ mean anointed; Acts 10:38 | 14-21 | BSB; earlier ledger | Repository |
+| Isaiah 61:1-2 with 58:6; Luke follows the Greek (Septuagint) "recovery of sight"; Hebrew "freedom to the prisoners"; "bind up the brokenhearted" absent from the oldest copies (Sinaiticus, Vaticanus, Bezae), present in later ones and the KJV | 14-21 | Septuagint; NA28 apparatus | Search: freely-given.org OBD Luke 4:18; biblia.com NET note; logos.com; intertextual.bible |
+| Jesus stops before "the day of our God's vengeance" | 14-21 | BSB; book page row | Repository |
+| Jubilee: Leviticus 25:10, 25:23; no clear record it was kept in full, scholars debate whether at all | 14-21 | Reference works | Search: encyclopedia.com "Sabbatical Year and Jubilee"; biblehub topical; Kaplan (2019) and Bergsma (2007) as cited. Stated as debated |
+| 11Q13 (Melchizedek), before Jesus' day, joins Leviticus 25 and Isaiah 61 for a release at the end of days | 14-21 | Dead Sea Scroll | Search: wikipedia 11Q13; posenlibrary.com "The Heavenly Prince Melchizedek"; Bartos and Levinson (JBL 2013) as cited. "Before Jesus' day" only; no exact date |
+| aphesis twice in 4:18 and for forgiveness at 1:77, 3:3, 24:47 | 14-21 | Greek text | Script over the repository's Greek (G0859) |
+| dektos at 4:19 and 4:24 | 22-30 | Greek text | Script (G1184) |
+| Zarephath in Sidon; Jezebel daughter of the king of the Sidonians (1 Kings 16:31); Naaman commander of Aram (2 Kings 5:1, 14-15); 1 Kings 17:24; 1 Kings 18:1 "third year"; James 5:17; Jeremiah 37:15, 38:6 | 22-30 | BSB | Repository |
+| The scene is not a verdict on the Jewish people | 22-30 | Book page ("Luke and the Jewish people"); repository `teach.pitfalls` | Repository, same stance |
+| "Rebuked" (epitimaō) for the demon, the fever and the demons (4:35, 39, 41) | 31-41 | Greek text | Script (G2008) |
+| Capernaum's synagogue; unclean spirit; the illness-or-spirit answer | 31-37 | Mark 1 plain note | Earlier ledger; Mark 1 wording adapted ("Luke himself keeps them apart") |
+| Sunset ends the Sabbath; carrying a load; Jeremiah 17:21-22; Colossians 4:14 | 38-41 | Earlier ledger (Mark 1) | Earlier ledger |
+| 4:44 "Judea" in P75, Sinaiticus, Vaticanus, C, W; "Galilee" in A, D and the Byzantine text (KJV); Judea in a wide sense (1:5) | 42-44 | NA28 apparatus as reported | Search: freely-given.org OBD Luke 4:44; en.wikipedia.org Luke 4; biblia.com |
+| Isaiah 52:7; Jeremiah 7:25; Isaiah 1:4; Psalm 106:16; Psalm 103:3 | various | BSB | Repository |
+
+Left out: Josephus on Eleazar the exorcist and Tobit (deep note, not
+checked); the "Mount of Precipitation" and any cliff site; Genesis Rabbah on
+the physician proverb; Isaiah 58 as the Yom Kippur reading; Yardenna
+Alexandre's house and the size of Nazareth beyond the earlier ledger; Sloan,
+Ringe, Yoder, Gutiérrez, Jeremias, Sanders, Jervell and Levine by name;
+Irenaeus and Gregory on the temptations; Hodge and Shedd by name.
