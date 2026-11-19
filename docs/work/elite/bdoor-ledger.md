@@ -5323,3 +5323,35 @@ Merv; later traditions about Dionysius the Areopagite.
 Left out: Seneca's column at Corinth; Gallio's later death; the bema's date;
 the Ethiopian, Philo and the Greek of "explained"; why Priscilla is named
 first (Luke does not say).
+
+## The plain notes on Acts 19 (2026-11-19)
+
+`client/public/bible/notes/acts/plain/19.json`. 4 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ephesus the great city of the province of Asia | 1-7 | Roman-world portrait, part 1 | wrom-ledger |
+| The twelve: John's baptism; Matthew 3:11; Luke 3:16; Joel 2:28; Numbers 11:29 | 1-7 | BSB | Repository |
+| Rebaptism and the Spirit: John's baptism not Christian baptism; Apollos not said to be rebaptized; Pentecostal and charismatic reading; "one conversion" reading; Catholic, Orthodox, Anglican confirmation link; pointers to 2:1-4, 2:37-41, 8:14-17, 10:44-48; no side | 1-7 | Deep note `hard`; acts/plain/2, 8, 10 | Repository |
+| "The Way" (9:2); Tyrannus otherwise unknown; Colossians 2:1 | 8-10 | BSB | Repository |
+| Daniel 2:44; Isaiah 55:11 | 8-10 | BSB | Repository |
+| Handkerchiefs: God's work, "extraordinary"; 5:15; Mark 5:27-29; 20:33-34; nothing supports selling blessed objects; Matthew 10:8; 8:20; James 5:14 | 11-12 | BSB | Repository |
+| 2 Kings 13:21; 1 Samuel 4:3 | 11-12 | BSB | Repository |
+| Sceva: no high priest of that name known; "chief priest" can mean a member of a leading priestly family; or a claimed title | 13-17 | Lexical; reference works | Search: biblicaltraining.org "Sceva"; biblegateway Encyclopedia of the Bible "Sceva"; biblehub.com commentaries |
+| Deuteronomy 18:11; Exodus 20:7; 7:11 | 13-17 | BSB | Repository |
+| "Ephesian letters": magical words used as protective charms, named for Ephesus | 18-20 | Ancient reports as summarised | Search: Wikipedia "Ephesia Grammata"; biblicaltraining.org "Curious arts"; biblegateway IVP NT commentary "Mastering Magic". The secrecy claim cut (not confirmed) |
+| Fifty thousand drachmas (the text's figure); drachma about a denarius; a denarius a day's pay (Matthew 20:2) | 18-20 | BSB; Roman-world portrait, part 6 | wrom-ledger; repository |
+| Deuteronomy 7:25; 2 Kings 23:24 | 18-20 | BSB | Repository |
+| Temple of Artemis among the Seven Wonders; an earlier temple burned in 356 BC and rebuilt; the image's rounded shapes debated; "fell from heaven" (the text) | 21-27 | Reference works | Search: newworldencyclopedia.org "Temple of Artemis"; sacred-destinations.com. The temple as a bank not stated (not confirmed this run) |
+| Silver shrines: small models of the shrine or image | 21-27 | Deep note `cultural` | Stated as the deep note does |
+| Psalm 115:4; Jeremiah 10:3-4; Isaiah 44:17 | 21-27 | BSB | Repository |
+| Theatre over twenty thousand by most modern estimates | 28-34 | Roman-world portrait, part 1 | wrom-ledger |
+| Asiarchs: wealthy provincial leaders linked with the council and festivals, known from many inscriptions; exact duties debated | 28-34 | Reference works; Witetschek, Biblica 90 (2009) | Search: biblicaltraining.org "Chiefs of Asia"; bsw.org (Witetschek abstract); biblegateway Encyclopedia of the Bible "Asiarchs" |
+| "The Jews in the crowd" (19:33): the Jews of Ephesus present; Alexander shouted down as a Jew; pointer to 2:22-28 | 28-34 | BSB | Repository; Alexander's purpose stated as "probably" |
+| Isaiah 46:1; Psalm 2:1 | 28-34 | BSB | Repository |
+| The city clerk a senior city official; fair; Rome and riots | 35-41 | Deep note `historical`; BSB 19:40 | Stated generally |
+| Jeremiah 29:7; Proverbs 15:1 | 35-41 | BSB | Repository |
+
+Left out: the temple as a bank and its size compared with the Parthenon; the
+date of the theatre; Paul's dates in Ephesus; Erastus of Corinth; the number
+of Asiarch inscriptions.
