@@ -3085,3 +3085,260 @@ papyri; whether Luke 17:36 was added or dropped.
 ### Next
 
 Luke 19 onward in plain words, in the same shape.
+
+## Continuation: Luke 19 to 24 (2026-11-19)
+
+Data only: `client/public/bible/notes/luke/plain/19.json` to `24.json`, and
+`"plain": true` added at the end of `luke/19.json` to `luke/24.json` with no
+other change to those files (each diff is the one closing brace and the new
+line). No app code changed. This finishes Luke, and with it all four Gospels.
+
+### Chapters 19 to 24 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Luke 19 | 5 (Zacchaeus; the ten minas; the King comes down the Mount of Olives, and the stones; Jesus weeps over Jerusalem; a house of prayer) | 4,290 |
+| Luke 20 | 6 (by what authority; the tenants and the stone; Caesar; sons of the resurrection; David's son and Lord; beware of the show) | 3,556 |
+| Luke 21 | 7 (the widow's coins; do not be deceived or alarmed; before kings and governors; Jerusalem surrounded, the times of the Gentiles; lift up your heads; the fig tree and "this generation"; watch and pray) | 3,835 |
+| Luke 22 | 10 (Satan enters Judas; the room; the cup, the bread, the cup; the betrayer and who is greatest; "I have prayed for you, Simon"; two swords; the Mount of Olives; the kiss and the healed ear; Peter and the look; the council at daybreak) | 5,536 |
+| Luke 23 | 8 (Pilate; Herod; three times innocent, Barabbas; Simon and the daughters of Jerusalem; "Father, forgive them"; the two criminals and Paradise; "into Your hands", the centurion; Joseph and the women) | 4,692 |
+| Luke 24 | 6 (the empty tomb and "nonsense"; the road to Emmaus; the breaking of the bread; flesh and bones and fish; to all nations, beginning in Jerusalem; the blessing and the temple) | 3,885 |
+| Total | 42 | 25,794 |
+
+Counted by script over `happening`, `hearers`, `ot`, `hard`, `asks`. Where
+Mark, Matthew and John already tell an event (the entry, the temple, the
+questions in the temple, the discourse, the Supper, the arrest, the denial,
+the hearings, Barabbas, the cross, the burial, the empty tomb), the note
+points to their notes, reuses their checked wording, and spends its words on
+what Luke does differently. The fuller treatment goes to what only Luke has:
+Zacchaeus, the nobleman of the minas, the stones and the tears over the city,
+"The time is near", "lift up your heads", the heavy heart of 21:34, the
+eager desire and the two cups, the quarrel at the table and the
+"benefactors", "I have prayed for you, Simon", the two swords, the sleep
+"from sorrow", the healed ear, the look, Herod, the daughters of Jerusalem,
+"Father, forgive them", the criminal and Paradise, "into Your hands", the
+crowds beating their breasts, Joseph who "had not consented", "an idle
+tale", Emmaus, the fish, "beginning in Jerusalem", and the blessing.
+
+### Field order, checked
+
+After each chapter every passage was printed field by field (first 110
+characters, words and characters under each heading) and read: all 42 sit
+under their right headings. `validate-bible-notes` passed after each chapter
+with no exceptions (`OT_FIELD_KNOWN` stays empty). Its quotation check
+caught quotations that ran across a speaker tag ("I tell you," He answered;
+"Lord," said Peter; "Teacher," they inquired; "Why do we need any more
+testimony?" they declared; "I beheaded John," Herod said; "Are You not the
+Christ?" he said) and a joined quotation of 21:37-38; each was split as the
+BSB splits it. It caught one exclamation outside quoted Scripture (24:1-12,
+reworded) and one Amos quotation that was not verbatim (now verbatim). One
+forbidden phrase was caught by a read-through before the validator ran
+("showing up", 23:50-56, reworded). Quotations avoid the em-dashes inside
+the BSB text of 19:44, 21:34, 24:31, 24:39 and Hosea 9:7.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Luke 19" to "24". 22 web
+searches (7, 1, 4, 5, 3, 3; never more than 8 a chapter). New sources:
+Josephus, Antiquities 17.299-314 (the fifty envoys and the eight thousand in
+Rome); Tichy (Biblica 2011) on the tense of 19:8; the mina; the sycamore-fig;
+Titus's wall (Josephus as summarised); Dominus Flevit; 4 Maccabees 7:19 and
+16:25; Antiquities 15.394-395 (Herod's dedicated spoils, the golden vine);
+Jewish War 6.420 (97,000 captives in the whole war); the "times of the
+Gentiles" readings and failed date-setting; the 22:19b-20 evidence and
+Westcott and Hort; Euergetes; 22:43-44 (Justin and Irenaeus); medical
+reviews of hematidrosis (used only as "some have suggested"); the 23:34
+evidence (Tyndale House); the comma of 23:43 (the New World Translation and
+Adventist writers); dikaios at 23:47 (Tyndale Bulletin 2012 as reported);
+24:12 and 24:51 in the manuscripts; Cleopas, Clopas and Hegesippus. Greek
+facts (architelōnēs, sukophanteō, the present tenses of 19:8, klaiō and
+dakruō, episkopē, humas and sou in 22:31-32, hikanon estin, agōnia, hōsei,
+paradeisos three times, dikaios, lēros, parabiazomai and anagkazō) are a
+script over the repository's Greek. Earlier rows reused: tax collectors,
+AD 66 and 70, Titus, the Arch, Herod's temple, Archelaus's removal,
+Pilate and the Pilate stone, Antipas, the lepta, the Mishnah's four cups and
+capital-trial rules (marked as later), Caiaphas, Giv'at ha-Mivtar, Josephus
+on women's testimony, Celsus via Origen, Eusebius on Pella, C. S. Lewis,
+Emmaus's sites, Paradise's Persian root, Nostra Aetate.
+
+### Cut or narrowed
+
+Cut: Jericho's balsam and palaces; the Mishnah on tax collectors and on
+money tied in a cloth; b. Ketubot 50a; Gaius; Clement on Zacchaeus as
+Matthias; Ambrose and Augustine on the sycamore; the Judensonntag,
+Bugenhagen and Bach (the name and the link were not confirmed); Simonet's
+painting; Josephus's 1,100,000 dead; the wall's length and forts; Jerusalem
+as "city of peace"; the Gospel of Thomas; Schweitzer, the Russells, France,
+Wright, Bock, Scofield, Jervell, Tannehill by name; Charles Taze Russell and
+1914 (verified, left unnamed); the 21:19 variant; Brandon, Hengel, Meggitt,
+Unam Sanctam (verified, not needed); Klassen, Borges and the Gospel of
+Judas; the RSV's history; Ehrman, Plunkett, Blumell, Harnack, Eubank by
+name; Melito, Cohen, Winter, J. T. Sanders, Bond; Theophylact, Bullinger;
+b. Berakhot 28b; Abraham's bosom; the "one thief was saved, that none may
+despair" saying (attribution not confirmed); the 23:45 eclipse wording;
+Bezae's stone for twenty men; Martin, Snodgrass, Parsons; the companion as
+Cleopas's wife; Gentile hours and the Sinaiticus hand at 24:51. Narrowed:
+"probably held the contract" (Zacchaeus); "many readers think" for the
+Archelaus echo, with "Luke does not say so"; "Josephus says" for the wall
+built in three days; "built in the 1950s" for Dominus Flevit (1954 and 1955
+both given); "in the whole war" for the 97,000; "some later manuscripts" for
+the woman caught in adultery after 21:38; Westcott and Hort "judged" the
+shorter text original (not "printed"); "seem to have known" for Justin and
+Irenaeus; "many Seventh-day Adventists" (no official statement found);
+"punish" "most likely" a flogging; "a prayer from the Psalms" (not "learned
+as a child").
+
+### Contested matters, and how they are stated
+
+19:8, "I give" (an announcement, so a conversion; or a description of his
+habit, so a vindication; "The Greek allows both ... These notes do not
+choose"; either way the welcome came first and salvation reaches the purse).
+The minas and Matthew's talents; two plots joined or one parable; the harsh
+king judged by the servant's own words; the greedy-landowner reading (the
+Matthew 25 wording). 19:27: "Verse 27 must be said plainly. It is a line
+inside a parable, spoken by a character in a story. It is never a warrant
+for violence, and no one may use it to harm anyone." The crowd on Sunday
+and Friday ("It is wise not to say more than the Gospel says"). The stones.
+19:41-44: the Luke 13 and Matthew 23 sentences word for word ("This is
+grief, not a verdict. ..."), the misuse named and rejected, and the dating
+question as views. "For all the nations" (two reasons). 20:16:
+supersessionism named and rejected, the views pointed to the Matthew 21 note,
+Romans 11. Caesar (the Mark 12 three readings and "What all agree on").
+Marriage in the resurrection (the Mark 12 views and grief line). Psalm 110's
+author (three views). The widow (praise, lament, both). "Not a hair" (two
+readings). 21:23-24: "wrath against this people" is not a sentence on a
+people; the times of the Gentiles (foreign rule; the age of the Gentile
+mission; restoration of Israel; the modern state of Israel "Faithful
+Christians differ"; "These notes do not choose"); no scheme, no date, Acts
+1:7. 21:25-28 and 21:32 (the Mark 13 readings and wording). 21:36 (two
+readings). Judas and God's plan (no side). The Passover date (pointer to
+John 13). The Lord's Supper (the Mark 14 views word for word) and 22:19b-20
+(the manuscripts plainly; "The meal and its meaning do not hang on one
+manuscript"). The swords (three readings, below). 22:43-44 (below). The use
+of force (the Matthew 26 views and "All agree"). The Mishnah's trial rules
+(later; not certain). Luke's Pilate (memory or shaping). The green and dry
+tree (three readings). 23:34 (below). 23:43 (below). The centurion's
+"righteous" (innocent; the Righteous One; complementary). Trust or
+abandonment ("The Gospels give both cries"). 24:12 and 24:51 in the
+manuscripts. "Moses and all the Prophets" (prophecy, patterns, the whole
+story; "These notes do not choose"; Jewish readers "read them faithfully"
+and must never be spoken of with contempt). The breaking of the bread (the
+Supper; an ordinary meal; both). The bodily resurrection (the creeds' event;
+visions and faith-language readings named). Luke 24 and Acts 1 on the timing
+of the ascension (compressed; two purposes).
+
+**The two swords, the sentences on the page (22:35-38, "The hard
+verse").** "Was Jesus arming his disciples? Readers take verse 36 in three
+main ways." The three readings follow: a plain word about the road ahead;
+a vivid figure of speech, with "That is enough" as "a sad end to a
+conversation they have not understood"; and the swords tied to "He was
+numbered with the transgressors", with verse 52. Then: "These readings can
+overlap, and careful readers hold each one. What no reading allows is to
+make this verse a warrant for violence. A few hours later one of the
+disciples used a sword. Jesus said, “No more of this!” And he “touched the
+man’s ear and healed him” (verse 51). Jesus refused to be defended by
+violence, and he healed rather than harmed." No statement is made about
+weapons or any modern law or policy.
+
+**22:43-44.** "These two verses are missing from some of the oldest copies
+of Luke, including a papyrus called P75, copied around AD 200, and Codex
+Vaticanus from the 300s. They are present in Codex Sinaiticus as first
+written, in Codex Bezae, and in most later copies ... Many modern Bibles
+print them with a note or in brackets." "Like" drops of blood: "Some have
+suggested a rare condition, described by doctors ... Luke does not say
+that, and his word ‘like’ leaves the question open."
+
+**23:34, the sentences on the page.** The manuscripts in the book page's
+words ("missing from some of the oldest copies of Luke, including a papyrus
+called P75, copied around AD 200, Codex Vaticanus from the 300s, and Codex
+Bezae as first written. It is present in Codex Sinaiticus as first written
+and in most later copies. Scholars are divided ..."). Who "them" is (the
+soldiers; the leaders and people, with Acts 3:17; all sinners; "These notes
+do not choose"). Then: "One thing is plain, whichever reading is taken. If
+this prayer is Jesus' own, then no one may use his death to justify hatred
+of anyone. The one who died prayed for those who killed him. Anyone who uses
+the cross to stir up contempt for Jews, or for any people, is standing
+against the prayer of the crucified Lord."
+
+**"Christ-killers" (23:13-25).** Pointed to the Matthew 27 and John 19
+notes, then: "Here it is said again, plainly: the Jewish people, then or
+now, are not guilty of Jesus' death, and this site rejects that charge."
+
+**23:43, the comma.** The New World Translation's reading and many Seventh-day
+Adventists' stated as theirs, with their reasons (the sleep of the dead,
+John 20:17); the majority reading with its reasons; "paradise need not mean
+the same as Jesus going up to the Father"; the creeds' final hope. No scorn.
+
+### Care lines included
+
+19:1-10: "If you carry shame about money ... The welcome comes first. Then
+the repair follows, and it is real: it reaches the people who were wronged."
+19:41-44: "If you are grieving someone who has walked away, he wept too."
+20:27-40: the Mark 12 grief line word for word ("For anyone grieving a
+husband or wife ..."). 21:5-11: the Matthew 24 frightened-reader line ("If
+the news frightens you, or you were taught as a child to dread the end of
+the world ..."). 21:12-19: the Mark 13 family-betrayal paragraph word for
+word, with "If you are in danger, contact the police or a crisis line."
+21:34-38: the Luke 17 line word for word ("These words are not given to make
+anyone afraid, least of all a child lying awake at night."). 22:31-34, for
+the reader who has failed: "Your failure has not surprised him, and it has
+not cancelled his prayer. Turn back." 22:39-46: the Mark 14 Gethsemane
+paragraph word for word ("This passage also speaks to anyone who has known
+sorrow so heavy it felt like dying. ... If you have thought of ending your
+life, please reach out today to a crisis line or emergency service where you
+live."), after Mark 14:34. 22:54-62: "Ask whether there is a failure you
+have stopped believing God could forgive." 23:32-38: "Forgiving does not
+mean saying the wrong was right, and it does not mean staying where you are
+in danger." 23:39-43: "If you think it is too late for you, this story is
+for you. ... But do not read it as a reason to put off turning to God. Only
+one of the two criminals turned. ... No one is promised the time or the
+clear mind to turn at the end. The day to answer is today." 23:44-49: the
+Mark 15 forsaken line ("If you feel forsaken by God, you can pray as he did,
+and you should not stay alone with it. Tell someone you trust, and if you
+are in danger, reach out for help today."). 24:13-27, for the reader walking
+away disappointed: "If you are walking away disappointed, with ‘we had
+hoped’ in your mouth, this story is for you. ... He did not scold them for
+their sadness". 24:36-43: "If you doubt, you are in good company." No phone
+number is given.
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` and `validate-no-emdash` after each chapter: pass. At
+the end, all 36 commands of the content-gates step in ci.yml, one at a time:
+exit 0 each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 89
+chapters in plain words; validate-no-emdash: 260 files, 0 em-dashes; search
+index 732 entries up to date; passage index 623 files match; verify-sources
+22 texts intact). `pnpm check`: exit 0. `pnpm test`: 146 files passed, 7
+skipped; 1,659 tests passed, 73 skipped.
+
+Rendered check, after the chapter commits: `pnpm build` (exit 0), served
+with `scripts/serve-like-vercel.mjs` on port 4606, and a Playwright script
+at 390 wide (deviceScaleFactor 1; `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed) opened `/study/bible/luke/19` to `/24`. Every passage's rendered
+heading, its part headings in order and the first 60 characters under each
+matched the data: Luke 19, 5 of 5; Luke 20, 6 of 6; Luke 21, 7 of 7; Luke
+22, 10 of 10; Luke 23, 8 of 8; Luke 24, 6 of 6. No sideways scroll on any,
+no page errors, no console errors. Screenshots read:
+`/home/user/elite-shots/bdoor/lk1924-23-390-*.png` (top, "Father, forgive
+them", the criminals and Paradise) and `lk1924-24-390-*.png` (top, the
+empty tomb, Emmaus). Server stopped by its PID, dist/ deleted, no lh-*.json.
+Lighthouse not run (no app code changed).
+
+### Still unverified
+
+Ancient writers' exact words (Josephus, Eusebius, Hegesippus, 4 Maccabees,
+Justin, Irenaeus, Origen are paraphrased); which hand of Sinaiticus lacks
+the words of 24:51; whether P75 has 24:51b (stated only as "most
+manuscripts"); the exact length of Titus's wall; an official Seventh-day
+Adventist statement on 23:43.
+
+### The whole book, and the four Gospels (counted by script)
+
+Luke 1 to 24: 24 chapters, 160 passages, 99,967 plain words. Mark: 16
+chapters, 95 passages, 44,581 words. Matthew: 28 chapters, 167 passages,
+103,646 words. John: 21 chapters, 123 passages, 77,812 words. The four
+Gospels together: 89 chapters, 545 passages, 326,006 plain words.
+
+### Next
+
+Luke is finished, and so are the four Gospels. Nothing was stopped early.
