@@ -307,3 +307,162 @@ Removed from the old page as unchecked: the Pew 2009 "51%" figure; Ecklund 2016;
 | Old answer's sentences kept: "Lewis's point holds: no merely wise teacher talks that way."; "The trilemma's largest hole is legend. Maybe a later church put the high claims in a humble rabbi's mouth, and for a long time that was the scholarly default."; "But legend needs time, and the time has been taken away."; "Devotion that high, that fast, among those people does not behave like a legend" (one contraction); "frauds do not die for the con when recanting would save them"; "I held the comfortable view ... first." | James's old answer | Kept |
 
 Not used: Lewis's "poached egg" and "Devil of Hell" wording (copies differ; paraphrased as "a lunatic or something worse"); Ehrman's *Jesus: Apocalyptic Prophet* (not searched); Bousset by name and date.
+
+# Fifth run (2026-11-19): "Is Jesus really the only way to God?", "Are miracles believable?", "Is faith just wishful thinking?"
+
+No sentence about James's life is added. Old first-person recollections that could not be confirmed were cut (listed under each answer). Scripture is ESV, matched against a search or against ESV text already quoted in the repo.
+
+## Is Jesus really the only way to God?
+
+10 searches.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Hick, *God and the Universe of Faiths* (1973), a "Copernican revolution" in theology: God, not Christianity, at the center | Search: Kleczkowska article, D'Costa's "Ten Years After", Churchman outline | Verified, paraphrased |
+| Hick, *An Interpretation of Religion* (1989): the Real beyond human concepts; the traditions as culturally shaped responses; salvation as the transformation "from self-centredness to Reality-centredness" | Search: UGA thesis, Cambridge *Religious Studies* abstract, Themelios | Verified; the phrase quoted, the rest paraphrased |
+| Hick: the religion a person holds depends in the great majority of cases on where they were born | Search: Hick, "Can There Be Only One True Religion?" (2001, about 99 percent); other statements of the same | Verified, paraphrased without a figure |
+| Newbigin, *The Gospel in a Pluralist Society* (1989): the elephant parable is told from the view of one who sees the whole | Search: blog quotation of p. 9, Themelios review | Verified, given as paraphrase (wording not seen in the book) |
+| Newbigin went to India as a missionary in 1936; bishop in Madras until he retired in 1974 | Search: Wikipedia, BU missiology biography | Verified |
+| D'Costa, "The Impossibility of a Pluralist View of Religions", *Religious Studies* 32 (1996): pluralism a form of exclusivism | Search: Cambridge record, PhilArchive, Hick's reply | Verified, paraphrased |
+| Hick's reply, *Religious Studies* 33 (1997): pluralism a second-order philosophical hypothesis, not a rival religion | Search (same) | Verified, paraphrased |
+| Plantinga, "Pluralism: A Defense of Religious Exclusivism", in *The Rationality of Belief and the Plurality of Faith* (Cornell, 1995): the pluralist too believes what others reject; Madagascar rather than Michigan | Searches: course page, Cambridge chapter record, whyevolutionistrue quotation of p. 188 of the reprint | Verified, paraphrased |
+| Qur'an 4:157: Jesus neither killed nor crucified | Standard reference | Verified, paraphrased |
+| Sanders, *No Other Name* (Eerdmans, 1992); all the views agree Jesus is the only Savior | Search: Andrews University review, Sanders's own chart | Verified |
+| Sanders, Fackre and Nash, *What About Those Who Have Never Heard?* (IVP, 1995): Sanders inclusivism, Fackre postmortem, Nash restrictivism | Search: Grace Evangelical Society review | Verified |
+| Pinnock, *A Wideness in God's Mercy* (1992) | Search (same) | Verified |
+| *Lumen Gentium* 16 (Second Vatican Council, 1964): those who through no fault of their own do not know the gospel but seek God sincerely may be saved | Search: Catholic Answers, HPR, Bullivant in *Theological Studies* | Verified, paraphrased |
+| Nicene Creed: "for us men and for our salvation came down from heaven" | Repo: `client/public/creeds/documents/nicene-creed.json` | Verified, quoted |
+| John 14:5-6 | Search: ESV.org, Bible Gateway | Verified, quoted |
+| Acts 4:12, Romans 10:14, Genesis 18:25, Acts 10:34 (first clause) | The old answer's own quotations; Acts 4:12 also in repo ESV | Verified, quoted |
+| 1 Timothy 2:5; Genesis 15:6; Romans 2:15 phrase; 1 Corinthians 15:17 "futile" | Repo ESV quotations (study guides, essays) | Verified, quoted |
+| 1 Peter 3:19, 4:6; Hebrews 9:27; Acts 17:28; Surah 4:157 | Cited by reference, not quoted | Checked against the passages' content |
+
+Cut from the old answer: "For most of my life I was an atheist, and of all the church's claims I found this one not merely improbable but obscene" ("most of my life" and the feeling are not confirmed); "I once thought pluralism was the humble position" (a recollection); "He loved the parable of the blind men and the elephant" (Hick's fondness for it not checked); "forty years a missionary in India" (corrected to the dates). Kept from the old answer in its own words: the grandmother's face, Peter "a fisherman on trial", "in a person you can only receive, and in no philosophy or bloodline", "Everybody at the table is making an exclusive claim. What's left to ask is which one is true.", "Refuse him if you must, but refuse him for being too particular".
+
+## Are miracles believable?
+
+6 searches. Hume's text: Project Gutenberg #9662 (*An Enquiry Concerning Human Understanding*, Selby-Bigge text), cloned from GITenberg on GitHub on 2026-11-19 and read with grep; paragraph numbers are Selby-Bigge's.
+
+| Claim | How verified | Result |
+|---|---|---|
+| "Of Miracles", 1748, Section X of what became the *Enquiry* | did-the-resurrection-happen ledger (EB1911 for the year); Hume text contents | Verified |
+| "A wise man, therefore, proportions his belief to the evidence." (§87) | Hume text, line 3408 | Verified, quoted |
+| "A miracle is a violation of the laws of nature; and as a firm and unalterable experience has established these laws, the proof against a miracle, from the very nature of the fact, is as entire as any argument from experience can possibly be imagined." (§90) | Hume text, lines 3543-3546 | Verified, quoted |
+| "But it is a miracle, that a dead man should come to life; because that has never been observed in any age or country." (§90) | Hume text, lines 3554-3556 | Verified, quoted |
+| The maxim, "That no testimony is sufficient ... which it endeavours to establish"; "that this person should either deceive or be deceived, or that the fact, which he relates, should really have happened" (§91) | Hume text, lines 3590-3600 | Verified, quoted (the maxim stops before "; and even in that case") |
+| "attested by a sufficient number of men, of such unquestioned good-sense, education, and learning, as to secure us against all delusion in themselves" (§92) | Hume text, lines 3617-3619 | Verified, quoted; the rest paraphrased |
+| Love of wonder (§93); "are observed chiefly to abound among ignorant and barbarous nations" (§94); rival miracles (§95) | Hume text | Verified; §94 quoted, the others paraphrased |
+| The Abbé Paris: "lately" in France, "attested by witnesses of credit and distinction, in a learned age" | Hume text, lines 3858-3867 | Verified, quoted; no year given |
+| "that no human testimony can have such force as to prove a miracle, and make it a just foundation for any such system of religion" (§98) | Hume text, lines 4080-4082 | Verified, quoted |
+| "The Indian prince, who refused to believe the first relations concerning the effects of frost, reasoned justly"; not contrary to experience but not conformable to it (§89 note area) | Hume text, lines 3503-3508 | Verified, quoted and paraphrased |
+| Sagan's slogan "extraordinary claims require extraordinary evidence" | Search: Quote Investigator, Deming (PMC), Wikipedia (popularized by Sagan, *Broca's Brain* 1979) | Verified as his slogan; given without quotation marks or date |
+| Lewis, *Miracles* (1947): "only if we know that all the reports of them are false"; "arguing in a circle"; Hume's defenders reply he meant weighing | Search: Pomona course notes, Larmer in *Faith and Philosophy* (2008), Substack commentary | Verified; the two phrases quoted |
+| Lewis's drawer: six pennies Monday and Tuesday, two on Wednesday after a thief; the laws of England broken, not arithmetic | Search: C. S. Lewis Institute excerpt, TGC excerpt | Verified, paraphrased |
+| Earman, *Hume's Abject Failure* (Oxford, 2000), Pittsburgh; the probability of Bayes and Price; Hume's argument fails | Search: Muse review, Earman's Pittsburgh page, Apologetics315 review | Verified, paraphrased |
+| Babbage, *Ninth Bridgewater Treatise*, chapter 10: enough independent witnesses, each more often right than wrong, outweigh any improbability | Search: Victorian Web text of chapter 10 and appendix E; Earman 1993 | Verified, paraphrased. Year 1837 for the first edition rests on standard bibliography; the text says "the 1830s" |
+| Vanderburgh, "Of Miracles and Evidential Probability: Hume's 'Abject Failure' Vindicated", *Hume Studies* (2005) | Search: Project MUSE record (Hume Studies 31.1, April 2005, pp. 37-61), PhilArchive VANOMA-8 | Verified (the fifth run first named the author "Kopf"; corrected to William L. Vanderburgh) |
+| Millican on how one could know witnesses are independent | Search: Philosophical Disquisitions (2018) summary of Millican | Verified as his objection, paraphrased |
+| Keener, *Miracles* (Baker, 2011), two volumes; hundreds of eyewitness reports, many from Asia, Africa, Latin America | Search: Denver Journal, Themelios, First Things reviews | Verified, paraphrased |
+| Wright, *The Resurrection of the Son of God* (2003) | This ledger (resurrection sources) | Verified |
+| 1 John 4:1 (first sentence), 1 Corinthians 15:14 | Repo ESV quotations | Verified, quoted |
+
+Cut from the old answer: "I did not lose that argument to a better argument. I lost it to the discovery that I had never had one. What I owned was the feeling of finality..." (a recollection that cannot be confirmed); "Earman ... called this circular" (it was Lewis, among others, who called it circular; Earman's case is the probability argument, now stated as such); "a black swan or a meteorite" (not checked as Earman's examples). Kept in its own words: the opening of the short answer, "Most people ... without having heard his name", Paul's verse, "Notice whether your certainty that miracles cannot happen is a conclusion you reasoned to, or a definition you started with" (two contractions added).
+
+## Is faith just wishful thinking?
+
+8 searches.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Feuerbach, *The Essence of Christianity* (1841): God as human nature projected, the best of humanity set outside ourselves | Search: Wikipedia "Opium of the people", Simply Psychology, Public Discourse | Verified, paraphrased |
+| Marx, Introduction to *A Contribution to the Critique of Hegel's Philosophy of Right*, published February 1844: "Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people." | Search: Wikipedia, Manchester University text, marxists.org pages | Verified, quoted (the standard English translation) |
+| Freud, *The Future of an Illusion* (1927): childhood helplessness and the father; religious ideas "illusions, fulfilments of the oldest, strongest and most urgent wishes of mankind" | Search: Wikipedia, nosubject.com, Livingstone Smith | Verified; phrase quoted in Strachey's wording, the rest paraphrased |
+| Freud: "Illusions need not necessarily be false"; the girl of modest means and the prince | Search (same) | Verified, quoted and paraphrased |
+| Freud: "To assess the truth-value of religious doctrines does not lie within the scope of the present enquiry." | Search: Cambridge *Religious Studies* article citing Strachey (Norton, 1961), p. 42 | Verified, quoted (Strachey; the 1928 Robson-Scott translation words it differently) |
+| Plantinga, *Warranted Christian Belief* (2000): the Freud and Marx complaint is a de jure objection that depends on the de facto question; if theism is true the belief is likely warranted; neither Freud nor Marx offers much argument | Search: CCEL text of the book, Themelios review | Verified, paraphrased |
+| Augustine, *Confessions* 1.1: "you have made us for yourself, and our heart is restless until it rests in you" (Chadwick, Oxford) | Search: TGC, Dalhousie selections, Oregon course text | Verified, quoted; "around the year 400" for the date of writing |
+| Nagel, *The Last Word* (Oxford, 1997), pp. 130-131: "I want atheism to be true"; "I don't want there to be a God; I don't want the universe to be like that."; "cosmic authority problem" not rare | Search: afterall.net, Times Higher Education review, Inquirer | Verified, quoted |
+| Vitz, *Faith of the Fatherless* (Spence, 1999): Freud's method turned on atheism; atheists of four centuries with dead, weak, harsh or absent fathers; does not claim atheism is determined | Search: Catholic Culture review, Ignatius, Humanum | Verified, paraphrased; limits noted |
+| Jeremiah 6:14; Jeremiah 17:9 (first clause); Isaiah 6:5; Hebrews 10:31; Luke 9:23; Matthew 5:44 (part); 1 Corinthians 1:23 (part); Mark 9:24 | Repo ESV quotations (essays, study guides, verse guides, old answers) | Verified, quoted |
+| James was raised without a father | Confirmed biography (CLAUDE.md and the brief) | Used once, with no recollection or feeling added |
+
+Cut from the old answer: "You are describing my inbox." (an invented detail of his life); the whole old third paragraph, "For years I told myself I had followed the evidence into the cold ... a boy raised without a father who found in a Godless universe not a grief but a relief ... I wanted there to be no God ... The crutch was real. It was just in my other hand." (a recollection and feelings that cannot be confirmed; the same invention the pilot removed); "Nagel, no friend of religion" (kept as a plainer description). Kept in its own words: "Sometimes, yes. Religion can be a crutch ... by the millions.", "If your argument is that some faith is wish-fulfillment, you are not wrong.", the frightened man and the shore, "The God of Scripture is the last god a frightened person would order: holy, demanding, crucified. A wish-god does not bleed.", "a wish with a steeple".
+
+# Sixth run (2026-11-19): "Can you be good without God?", "Is believing anything on faith irrational?", "Did God command genocide in the Old Testament?"
+
+"Primary text" means a public-domain text fetched in this run from the GITenberg mirror of Project Gutenberg on raw.githubusercontent.com and read at the passage (Darwin, *The Descent of Man*, 1st edition, PG 34967; William James, *The Will to Believe and Other Essays*, PG 26659; Plato, *Euthyphro*, Jowett, PG 1642). "Essay ledger" means `docs/work/essays/ledgers/<slug>.md`.
+
+## Can you be good without God?
+
+Searches this answer: 4 (PhilPapers 2020; Adams; Darwin twice). Primary texts: Darwin, Jowett.
+
+| Claim | How verified | Result |
+|---|---|---|
+| James came to faith from atheism ("I came to faith from atheism, so I'm not describing strangers.") | Confirmed biography | Used once, nothing added |
+| Gervais et al., 2017: more than three thousand people, thirteen countries, a man who tortured animals and killed five homeless people, about twice as likely to be linked with atheism; even atheists did it | Essay ledger (can-you-be-good-without-god, final and restoration passes) | Verified |
+| Romans 2:15 (part), Romans 2:1, James 1:17, Mark 10:18, Mark 10:21 (part), "Good Teacher" (Mark 10:17) | Essay ledger (ESV, confirmed by search) | Verified, quoted |
+| Darwin, *The Descent of Man* (1871): "any animal whatever, endowed with well-marked social instincts, would inevitably acquire a moral sense or conscience, as soon as its intellectual powers had become as well developed, or nearly as well developed, as in man." | Primary text (1st edition), word for word; footnote marker [105] omitted. Search confirmed the chapter (IV in later editions) | Verified, quoted |
+| Darwin, same chapter: men "reared under precisely the same conditions as hive-bees"; "our unmarried females would, like the worker-bees, think it a sacred duty to kill their brothers, and mothers would strive to kill their fertile daughters; and no one would think of interfering." | Primary text, word for word | Verified, quoted |
+| Wielenberg, atheist; *Value and Virtue in a Godless Universe* (Cambridge, 2005); *Robust Ethics* (Oxford, 2014); basic ethical facts necessary, needing nothing beneath them; parity with the theist's stopping point | Essay ledger (lines on "Moral Facts Without God") | Verified |
+| Wielenberg: "On my view, objective morality does not require an external foundation of any kind." | Essay ledger: abstract of "In Defense of Non-Natural, Non-Theistic Moral Realism," *Faith and Philosophy* 26 (2009), quoted in a search result from philarchive.org | Verified as his words (abstract), quoted |
+| Wielenberg's "third factor" reply to Street | Essay ledger (philpapers record, moralapologetics.com) | Verified, paraphrased |
+| PhilPapers 2020 survey: about 62 percent accept or lean toward moral realism | Search: survey2020.philpeople.org results (62.07%), Daily Nous | Verified. A critic notes that strict acceptance alone is lower; the answer says "accept or lean toward". |
+| Plato, *Euthyphro*, set in 399 BC as Socrates faces the impiety charge; "whether the pious or holy is beloved by the gods because it is holy, or holy because it is beloved of the gods." | Primary text (Jowett), word for word; date and setting from the essay ledger | Verified, quoted |
+| Mackie: Oxford, atheist; *Ethics: Inventing Right and Wrong* (1977); argument from queerness; error theory; *The Miracle of Theism* (1982, posthumous); the concession about values and a god | Essay ledger | Verified; the concession is paraphrase, as in the essay |
+| Street, "A Darwinian Dilemma for Realist Theories of Value," *Philosophical Studies* (2006); selection need not track independent moral truths; coincidence; antirealism | Essay ledger | Verified, paraphrased |
+| Aquinas: "God alone is good essentially"; all else good by participation (*Summa Theologiae* I q.6) | Essay ledger (WDB, English Dominican text) | Verified, quoted |
+| Robert Merrihew Adams, *Finite and Infinite Goods* (Oxford, 1999): the good is God, excellence is resemblance to God; obligation is the command of a loving God; the appeal to love keeps wanton cruelty from being required | Search: infidels.org review, PhilPapers record on Adams on obligation, afterall.net, Zagzebski's symposium review | Verified, paraphrased |
+| Nietzsche, *Twilight of the Idols* (1889), on George Eliot: "They are rid of the Christian God and now believe all the more firmly that they must cling to Christian morality." and "When one gives up the Christian faith, one pulls the right to Christian morality out from under one's feet." (Kaufmann) | Essay ledger (exact-phrase search matches; German text) | Verified, quoted |
+
+Cut from the old answer: "any pastor who has done funerals for long knows it" (a claim about his experience); the whole old third paragraph, "I could not keep my footing there. I said morality was evolved and useful and felt, and then I lived every waking hour as if some things were just wrong ... I did too, on a floor I swore was not under me." (a recollection and habits of his atheist years that cannot be confirmed). "The tradition from Aquinas to Robert Adams" kept in substance, now with each named for what he holds. Kept in its own words: "You can be good without God, and pretending otherwise is the lie that discredits every true thing standing near it."; "The real question is quieter".
+
+## Is believing anything on faith irrational?
+
+Searches this answer: 7 (Clifford on authority; Dawkins twice; Plantinga twice; Morgan; Reid). Primary texts: Hume, *Enquiry* (PG 9662); William James, *The Will to Believe* (PG 26659). Site Greek data: `client/public/bible/ch/acts/17.json`, `hebrews/11.json`.
+
+| Claim | How verified | Result |
+|---|---|---|
+| Clifford, "The Ethics of Belief" (1877); the shipowner, guilty whether or not the ship sinks; "It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence." | Earlier ledger (third run, search of SEP, Wikipedia, the 1877 text) | Verified, quoted |
+| Clifford, part II ("The Weight of Authority"): we may believe another's statement when there is reasonable ground to think he knows the matter and speaks the truth so far as he knows it | Search: Prezi transcript of the passage, a translation of section II, Gifford archive page | Verified, paraphrased (no quotation marks) |
+| Hume, *Enquiry* (1748): "A wise man, therefore, proportions his belief to the evidence." | Primary text, word for word | Verified, quoted |
+| Hume, Section IV: "all inferences from experience suppose, as their foundation, that the future will resemble the past"; "Custom, then, is the great guide of human life." | Primary text, word for word | Verified, quoted |
+| Dawkins, *The Selfish Gene* (1976), in the chapter on memes: faith is "blind trust, in the absence of evidence, even in the teeth of evidence." | Search, two: the wording agrees in every result (McGrath's critique, bethinking, fulcrum, peped.org extract); the second search places it in the memes discussion of *The Selfish Gene*. One blog attributed it to *The God Delusion*, apparently confusing a page in McGrath's book. Not seen in the book itself. | Quoted, attributed to *The Selfish Gene* on the balance of results; flagged below |
+| Teresa Morgan, *Roman Faith and Christian Faith: Pistis and Fides in the Early Roman Empire and Early Churches* (Oxford, 2015): pistis mainly a relationship of trust, not assent to ideas; in the New Testament bound up with beliefs about Jesus | Search: *Journal of Roman Studies* review quoting her, *Themelios* review (Jipp), publisher listings | Verified, paraphrased |
+| Acts 17:31: the word behind "assurance" is pistis (πίστιν) | Site Greek data (G4102, glossed "a guarantee") | Verified |
+| Acts 17:31 (part), Hebrews 11:1, Luke 1:3-4 (parts), John 20:31, 1 Corinthians 15:6 (part), 1 Peter 3:15 | ESV wording as already quoted in published essays, study guides and answers in the repo (grep), each from a verified source | Verified, quoted |
+| Thomas Reid, *An Inquiry into the Human Mind on the Principles of Common Sense* (1764): trust in the senses and in testimony is part of our constitution, not learned by reasoning; testimony indispensable | Search: philpapers record, Early Modern Texts edition, course pages on the principle of credulity | Verified, paraphrased |
+| Plantinga, "Reason and Belief in God," in *Faith and Rationality* (1983): belief in God can be properly basic; the classical foundationalist criterion is not itself self-evident, evident to the senses or incorrigible, so fails its own test; other minds | Search, two (Wikipedia "Reformed epistemology", Ted Sider handout, Klein on philarchive) | Verified, paraphrased |
+| Critics: Alston and Quinn deny the self-refutation argument succeeds | Search (Klein, philarchive: "Alston (1985) and Quinn (1985 and 1993) and recently DePoe (2007) have denied that Plantinga's argument is successful") | Verified |
+| The Great Pumpkin objection and Plantinga's reply that such a belief has no ground | Search (Wikipedia "Reformed epistemology") | Verified, paraphrased |
+| William James, "The Will to Believe" (1896): "Clifford's exhortation has to my ears a thoroughly fantastic sound. It is like a general informing his soldiers that it is better to keep out of battle forever than to risk a single wound."; "a rule of thinking which would absolutely prevent me from acknowledging certain kinds of truth if those kinds of truth were really there, would be an irrational rule"; the one fear of being duped ("his own preponderant private horror of becoming a dupe") | Primary text, word for word (the second is italic in the source) | Verified, quoted; the dupe line paraphrased |
+
+Cut from the old answer: "I say this against myself, because for years I accused believers of the exact posture I was standing in. I called my position pure reason. It was a structure of enormous trust I had simply never counted" (a recollection that cannot be confirmed); Polanyi's "tacit knowing" (not checked this run, and not needed); "Pistis meant trust with a track record" (replaced by Morgan's argument). Kept in its own words: the opening two sentences of the short answer; "Things unseen, not things disbelieved" in substance; "Everyone is betting on something they cannot stand outside of and prove" in substance.
+
+## Did God command genocide in the Old Testament?
+
+Searches this answer: 7 (Morriston; Rauser; Dawkins; Kitchen; Seibert; Copan and Flannagan; Joshua 23:12 ESV). Almost everything else is reused from the essay ledger `did-god-command-genocide.md`, which verified it against primary texts (EEBO-TCP Underhill and Mason; ANF/NPNF Augustine, Tertullian; CCEL Aquinas) and the ESV.
+
+| Claim | How verified | Result |
+|---|---|---|
+| James has five sons ("I have five sons.") | Confirmed biography | Used once, nothing added |
+| Deuteronomy 20:16 and 20:16-17 (part), 20:10, 15 (paraphrase); Joshua 6:21; 1 Samuel 15:3; Joshua 11:23, 13:1, 15:63 (paraphrase); Judges 3:5; Deuteronomy 7:3; 1 Samuel 15:8, 30:17 (paraphrase); Deuteronomy 9:5 (part); 12:31 (part); Leviticus 18:25 (part); Genesis 15:16 (part); Joshua 6:25 (part); Deuteronomy 13; Hebrews 1:3; Luke 9:55 (part); Matthew 26:52; Ezekiel 18:23; Genesis 18:25 (part); Matthew 1:5 (paraphrase); Matthew 15:28 | Essay ledger (ESV copy; search matched) | Verified, quoted |
+| Joshua 23:12, "the remnant of these nations remaining among you", in Joshua's farewell charge | Search: esv.org, biblia.com, biblestudytools ESV pages matched the exact phrase; context confirmed (23:13) | Verified, quoted |
+| Lemkin coined "genocide" in 1944; UN convention adopted December 9, 1948; Article II wording | Essay ledger | Verified, quoted |
+| Dawkins, *The God Delusion* (2006), opening of chapter 2: "the most unpleasant character in all fiction"; "vindictive, bloodthirsty ethnic cleanser" in the same sentence | Search (FFRF companion reproducing the sentence; library and review records) | Verified, quoted (two fragments) |
+| Wes Morriston, "Did God Command Genocide? A Challenge to the Biblical Inerrantist," *Philosophia Christi* 11:1 (2009), 7-26: a morally perfect God would not command genocide without a morally sufficient reason; very unlikely such reasons existed; the inerrantist's pressure point is the claim about reasons | Search (pdcnet.org record, EPS symposium page, a blog series summarizing the article). Full text not reachable (host blocked). | Verified, paraphrased; the laid-out argument is labeled "in my words" |
+| Randal Rauser, "'Let Nothing that Breathes Remain Alive': On the Problem of Divinely Commanded Genocide," *Philosophia Christi* 11:1 (2009), 27-41: a perfect being would not order a moral atrocity; genocide is always an atrocity; so God did not command it | Search (pdcnet, EPS symposium page; the syllogism from a course slide reconstruction) | Verified as attributed paraphrase; flagged below that the premises come from a reconstruction |
+| "Behind both stands a point about what we can know..." | The essay's own framing of the objection (essay ledger), not attributed to either author | Argument |
+| Merneptah stele around 1208 BC, Israel's seed no more; Mesha around 840 BC, Israel perished forever, uses the ban word | Essay ledger (third pass) | Verified, paraphrased |
+| Younger, *Ancient Conquest Accounts* (JSOT Supplement 98, Sheffield, 1990): Joshua beside Egyptian, Hittite, Assyrian reports, stock formulaic claims of total victory | Essay ledger | Verified, paraphrased |
+| Kitchen, *On the Reliability of the Old Testament* (Eerdmans, 2003), pp. 173-74: Joshua's battle reports use the hyperbole Younger found | Search (T. A. Clarke, *Tyndale Bulletin*, citing those pages; Themelios review) | Verified, paraphrased ("agreed") |
+| Copan and Flannagan, *Did God Really Command Genocide? Coming to Terms with the Justice of God* (Baker, 2014); their reading | Search (Baker, booksellers; year 2014); argument from the essay ledger | Verified, paraphrased |
+| Origen, homilies on Joshua, third century: unless the wars were figures of spiritual ones, the apostles would not have handed these books to followers of Christ who came to teach peace | Essay ledger | Verified as paraphrase (no quotation marks) |
+| Eric A. Seibert, *Disturbing Divine Behavior: Troubling Old Testament Images of God* (Fortress, 2009): the textual God and the actual God, a distinction from Terence Fretheim; the God Jesus reveals as the key | Search (Direction journal reviews, Fortress study guide, Patheos) | Verified, paraphrased |
+| Boyd, *The Crucifixion of the Warrior God* (Fortress, 2017); his reading; critics' Marcion charge and his reply | Essay ledger (and Seibert critics: Theopolis, First Things) | Verified, paraphrased |
+| Marcion rejected; taught the Old Testament God could not be the Father Jesus revealed | Essay ledger | Verified |
+| Augustine to Faustus, a Manichaean bishop: "not in cruelty, but in righteous retribution" | Essay ledger (WDB, *Reply to Faustus* 22.74) | Verified, quoted |
+| Aquinas: all die by God's power; "by the command of God, death can be inflicted on any man, guilty or innocent, without any injustice whatever." | Essay ledger (CCEL, *Summa* I-II q.94 a.5 ad 2) | Verified, quoted |
+| William Lane Craig: God can give and take life as he chooses | Essay ledger (reasonablefaith.org) | Verified, paraphrased |
+| Mystic, May 26, 1637; Mohegan and Narragansett allies; burned; several hundred Pequots, women and children among them; Underhill's two quotations; *Newes from America*, London, 1638; Mason and Canaan | Essay ledger (EEBO-TCP texts) | Verified, quoted |
+
+Cut from the old answer: "For years this was my strongest reason to reject the Bible, read aloud to win a room." and "The scholars who live inside the ancient world kept pointing at something I had dismissed." (recollections that cannot be confirmed); "But three of my certainties turned out softer than I had sworn" (the same); "Kenneth Kitchen, no friend of softening Scripture" (a characterization not checked); "It is sealed to one people, one land, one window, never a template" (kept in substance in "What these chapters do not permit"); the old answer's choice of the hyperbole and judgment readings as the answer (now four readings, set out without a side taken, as the brief requires). Kept in its own words: "On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly."; "The hyperbole eases the scale and does not empty the battlefield" (as "it eases the scale without emptying the battlefield"); "I have no answer for the particular child who chose none of it, and I will not decorate that grief" (in substance).

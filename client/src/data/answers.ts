@@ -676,9 +676,85 @@ export const ANSWERS: Answer[] = [
     askedAs: "other religions all religions the same exclusive narrow",
     question: "Is Jesus really the only way to God?",
     paragraphs: [
-      "Yes, and the claim you were told was arrogant is closer to Christianity's whole hope. The question rarely arrives as a doctrine. It arrives as a face across the table, someone who buried a grandmother who prayed toward Mecca for sixty years, asking whether your God would send her to hell. For most of my life I was an atheist, and of all the church's claims I found this one not merely improbable but obscene.",
-      "The philosopher John Hick pressed the objection well: make God the center, and Christianity, Islam, and the rest are planets in orbit, each catching the same light at a different angle. He loved the parable of the blind men and the elephant, each grasping one part, none the whole. But the parable has a problem. The man telling it is not blind. He stands above the scene with his eyes open, describing the whole elephant everyone else is too limited to see. Lesslie Newbigin, forty years a missionary in India, named it. Pluralism makes a total claim of its own and calls that humility. Everybody at the table is making an exclusive claim. What's left to ask is which one is true.",
-      "I once thought pluralism was the humble position and exclusivity the arrogant one, and I had it backward. When Peter first said there is \"no other name under heaven given among men by which we must be saved\" (Acts 4:12), he was a fisherman on trial, powerless before the council that killed his teacher. That claim wasn't grabbing power. What scandalized people was where it put salvation: in a person you can only receive, and in no philosophy or bloodline. And the verse that gets quoted at that grieving face is not a threat. \"I am the way, and the truth, and the life. No one comes to the Father except through me\" (John 14:6) was spoken to a terrified friend who asked how to find God. Refuse him if you must, but refuse him for being too particular, not for being arrogant.",
+      "Yes. Christians confess that Jesus is the only way to God, and I confess it with them. Many people hear that as arrogance, and the charge deserves an honest answer rather than a shrug. Two things are worth seeing before anyone decides. Every view of the religions, the pluralist's included, makes a claim the others deny, so the real question isn't who is humble but what is true. And the Christian claim is narrower than it's usually heard. It says that whoever is saved is saved by Christ. It doesn't say it knows the fate of every person who never heard his name, and Christians hold more than one view about that. I'll set those views out fairly and leave the question where the creeds leave it, open.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The question rarely arrives as a doctrine. It arrives as a face across the table, someone who buried a grandmother who prayed toward Mecca for sixty years, asking whether your God would send her to hell. Behind that face stands a serious argument, and its best defender was the philosopher John Hick. In God and the Universe of Faiths (1973) he called for what he named a Copernican revolution in theology. The old picture put Christianity at the center with the other faiths circling it. Hick put God at the center and had every faith, Christianity included, circling him.",
+          "In An Interpretation of Religion (1989) he worked the idea out with care. There is one ultimate reality, which he called the Real, beyond the reach of any human concept. The great traditions are different human responses to it, each shaped by its culture, each speaking of God or of ultimate reality in its own terms. And each, as far as anyone can tell, does the same work in human lives, which Hick called the transformation of human existence \"from self-centredness to Reality-centredness.\" The saints of every tradition look more alike than their doctrines do.",
+          "Hick added a fact that is hard to deny. The religion a person holds depends, in the great majority of cases, on where that person happened to be born. If salvation depends on believing the right thing, it seems to depend on the luck of birth, and a God who saved people by that kind of luck would not be just.",
+          "I grant what is true here. Birthplace shapes belief. Christians have often carried this claim with contempt, and sometimes on the back of an empire. The goodness of Muslim, Jewish, Hindu and Buddhist neighbors is real. Scripture itself says that \"God shows no partiality\" (Acts 10:34). If the Christian claim required me to deny any of that, it would deserve the scorn it gets.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "What follows isn't a proof that Christianity is true. It's three steps that clear the ground. The first is logical: can all the religions be right at once? The second is historical: what does the Christian claim rest on, and where would you go to test it? The third is theological: what does the claim actually say, and what does it leave unsaid?",
+        ],
+      },
+      {
+        heading: "Can every religion be right?",
+        body: [
+          "The religions don't only differ in style. They make claims about the same things, and some of those claims can't both be true.",
+          {
+            kind: "A deductive argument from contradiction",
+            premises: [
+              "The great religions make claims about the same matters that contradict each other. Christianity holds that Jesus of Nazareth died on a Roman cross and rose bodily from the dead. The Qur'an holds that he was neither killed nor crucified (Surah 4:157). Judaism holds that the Messiah has not yet come; Christianity holds that he has.",
+              "Two claims that contradict each other about the same matter can't both be true.",
+            ],
+            conclusion: "At least some of the great religions are mistaken about something they hold central. No view of the religions, the pluralist's included, can call them all true as their own followers understand them.",
+          },
+          "The second premise is just logic. The weight sits on the first, and Hick saw it. His answer was that the doctrines aren't literally true. They are mythological: true in the sense that they move people toward the Real, not in the sense that they report what happened. That's a coherent position. But look at what it costs. It tells the Muslim that the Qur'an is wrong, taken literally, about the cross. It tells the Christian that the resurrection didn't happen as an event. Every believer at the table is told he has misunderstood his own faith, by a view that stands above all of them and sees what none of them can see.",
+          "Lesslie Newbigin, who went to India as a missionary in 1936 and was a bishop there until 1974, put his finger on that in The Gospel in a Pluralist Society (1989), using the pluralist's favorite picture. In the old parable of the blind men and the elephant, each blind man grasps one part and mistakes it for the whole. Newbigin's point, in paraphrase, was that the story is told from the place of someone who isn't blind, who sees the whole elephant and can tell that each of the others has only a part. The parable makes the largest claim in the room. The theologian Gavin D'Costa pressed the same point in the journal Religious Studies in 1996, arguing that pluralism turns out to be one more exclusive view. Hick answered him the next year that pluralism is a philosophical hypothesis about the religions, not a rival religion. That's a fair distinction. But a hypothesis can be true or false like anything else, and this one holds that the central claims of every faith are false as their believers mean them.",
+          "Alvin Plantinga took up the charge of arrogance in an essay of 1995, \"Pluralism: A Defense of Religious Exclusivism.\" The pluralist, he observed, also believes something that most of the world rejects and that he can't persuade them of, and he keeps believing it. If holding a belief others deny is arrogant, everyone is arrogant, and the charge says nothing. He turned the birthplace argument around the same way: had he been raised in Madagascar rather than Michigan, his beliefs would likely be different, and the same is true of the pluralist. Everybody at the table is making an exclusive claim. What's left to ask is which one is true.",
+        ],
+      },
+      {
+        heading: "What the Christian claim rests on",
+        body: [
+          "The Christian claim is not that Christians are better people, or that their religion is the best of the religions. It's a claim about something God did. The Nicene Creed confesses that the Son of God \"for us men and for our salvation came down from heaven,\" was crucified under Pontius Pilate and rose again on the third day. Paul writes, \"For there is one God, and there is one mediator between God and men, the man Christ Jesus\" (1 Timothy 2:5). When Peter first said there is \"no other name under heaven given among men by which we must be saved\" (Acts 4:12), he was a fisherman on trial, powerless before the council that had handed his teacher over to be killed. What scandalized people was where it put salvation: in a person you can only receive, and in no philosophy or bloodline.",
+          {
+            kind: "A conditional argument",
+            premises: [
+              "If God has acted in history to rescue people, that act happened at a particular time and place, through a particular person.",
+              "Christianity claims that he did, in the life, death and resurrection of Jesus of Nazareth.",
+            ],
+            conclusion: "Then the question of the only way is not a question of which religion is the most humble or the most attractive. It's a question of history: whether that act happened. If it did, it is particular because history is particular, not because Christians are proud.",
+          },
+          "The second premise is where everything rests, and it can be tested. The claim is that Jesus was raised from the dead, and that is a historical question with its own page here, \"Did the resurrection actually happen?\" If he wasn't raised, Paul himself says the faith is \"futile\" (1 Corinthians 15:17), and you should leave it. If he was, then his own words carry a different weight. \"I am the way, and the truth, and the life. No one comes to the Father except through me\" (John 14:6) wasn't said to a crowd of rivals. It was said to a frightened friend. Thomas had just asked, \"Lord, we do not know where you are going. How can we know the way?\" (John 14:5). Jesus didn't answer with a method. He answered with himself.",
+        ],
+      },
+      {
+        heading: "What about those who never heard?",
+        body: [
+          "Here the creeds bind less than many people think. What they confess is that salvation is God's own work, done through Christ and no one else. They don't say how God deals with the person who lived and died where his name was never spoken. Christians who hold the same creed answer that in at least three ways. John Sanders, who set the views side by side in No Other Name (1992), points out that all of them agree that Jesus is the only Savior. They disagree about how a person comes to be saved by him.",
+          "The first view, often called restrictivism, holds that a person must hear the gospel and put conscious faith in Christ in this life. Its strength is that it reads Paul's chain at face value: \"How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?\" (Romans 10:14). That chain sent missionaries across every ocean. Ronald Nash makes the case in What About Those Who Have Never Heard? (1995). Its hard question is the grandmother's: would a just God hold people accountable for a name they never had the chance to hear?",
+          "The second, inclusivism, holds that no one is saved apart from Christ, but that his work may reach some who never knew his name and who answered, in faith, the light God gave them. It points to Abraham, who \"believed the LORD, and he counted it to him as righteousness\" (Genesis 15:6) long before Jesus was born, and to Paul's Gentiles with the law \"written on their hearts\" (Romans 2:15). Clark Pinnock defended it in A Wideness in God's Mercy (1992), and Roman Catholic teaching since the Second Vatican Council, in Lumen Gentium (1964), holds something close to it for those who, through no fault of their own, don't know the gospel but seek God with a sincere heart. Its hard question is Romans 10 itself: why does Scripture press so hard on hearing and believing, if hearing isn't needed?",
+          "The third holds that everyone will meet Christ and be able to answer him, at death or after it. It reads 1 Peter 3:19 and 4:6, where Christ proclaims to the spirits in prison and the gospel is preached to the dead, as a door the church shouldn't close. Gabriel Fackre argues for it in the same 1995 volume. Its hard question is Hebrews 9:27, which says that after death comes judgment, and the silence of most of Scripture about any later chance.",
+          "I'm not going to tell you which of these to hold. Faithful Christians disagree, and the creeds don't settle it. What all three share is the Judge. Abraham stood before him and pressed: \"Shall not the Judge of all the earth do what is just?\" (Genesis 18:25). We were never handed the list. We were told who keeps it.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. You've shown that somebody at the table has to be wrong. You haven't shown it isn't you. And the birthplace point still bites: you believe this mostly because of where you were raised. Both halves are fair. The first is why the argument above sends you to the evidence about Easter rather than claiming to settle it. The second is true of nearly everyone, believer and skeptic alike. Where a belief came from doesn't tell you whether it's true. It does tell each of us to check our belief against something outside the place we grew up in, and the resurrection is that kind of claim. It happened, if it happened, in public, in a city where it could be denied.",
+          "Here is what the argument doesn't prove. It doesn't prove Christianity true; that rests on the resurrection. It doesn't show that other religions contain nothing true or good. Paul stood among the philosophers of Athens and quoted their own poets to them with approval (Acts 17:28). It doesn't make Christians better than their neighbors, and it gives no one the right to speak of another person's eternity as if they had read it. What it shows is narrower. The claim that all roads lead to God is not the humble alternative it looks like. It's one more road, with its own claim to see the whole.",
+          "And the claim that was called arrogant is closer to Christianity's whole hope. If there is one way, it is not a ladder the clever or the well-born can climb. It's a person who came down. Refuse him if you must, but refuse him for being too particular, not for being proud. The question Thomas asked is still the honest one, and the answer he was given was not a doctrine about the religions. It was a man standing in front of him, a few hours from a cross.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "John Hick", title: "God and the Universe of Faiths", year: "1973", note: "The call for a Copernican revolution in theology." },
+      { author: "John Hick", title: "An Interpretation of Religion", year: "1989", note: "The best book against: the full case for religious pluralism." },
+      { author: "Gavin D'Costa", title: "The Impossibility of a Pluralist View of Religions", in: "Religious Studies", year: "1996" },
+      { author: "John Hick", title: "The Possibility of Religious Pluralism: A Reply to Gavin D'Costa", in: "Religious Studies", year: "1997" },
+      { author: "Alvin Plantinga", title: "Pluralism: A Defense of Religious Exclusivism", year: "1995", note: "In The Rationality of Belief and the Plurality of Faith (Cornell, 1995)." },
+      { author: "Lesslie Newbigin", title: "The Gospel in a Pluralist Society", year: "1989" },
+      { author: "John Sanders", title: "No Other Name: An Investigation into the Destiny of the Unevangelized", year: "1992" },
+      { author: "John Sanders, Gabriel Fackre and Ronald Nash", title: "What About Those Who Have Never Heard? Three Views on the Destiny of the Unevangelized", year: "1995", note: "Three Christian views, each argued by its defender." },
+      { author: "Clark H. Pinnock", title: "A Wideness in God's Mercy", year: "1992" },
     ],
     essaySlug: "is-jesus-really-the-only-way",
     essayTitle: "Is Jesus Really the Only Way?",
@@ -797,9 +873,83 @@ export const ANSWERS: Answer[] = [
     slug: "can-you-be-good-without-god",
     question: "Can you be good without God?",
     paragraphs: [
-      "You can be good without God, and pretending otherwise is the lie that discredits every true thing standing near it. Atheists are not, as a class, worse neighbors or parents or citizens than the people filling pews, and any pastor who has done funerals for long knows it. The claim was never that unbelievers cannot behave well. The real question is quieter: what makes the word good point at anything real when an atheist says it.",
-      "The skeptic has an old reply, and a good one. Plato set it down twenty-four centuries ago in the Euthyphro: is a thing good because God commands it, or does God command it because it is good. If the first, goodness is arbitrary; if the second, it stands above God and you have found it without him. Both doors open onto a cliff. But the dilemma hides a third. Goodness is neither above God nor invented by God. It is what God is. The tradition from Aquinas to Robert Adams locates the good not in a command that could have gone either way but in God's own unchanging character, of which his commands are the expression. That makes it objective, since it answers to no one's opinion, and it isn't arbitrary, since it hangs on no will that might have chosen otherwise. When you call the torture of a child wrong, you mean a fact about the act, not weather in your skull.",
-      "I could not keep my footing there. I said morality was evolved and useful and felt, and then I lived every waking hour as if some things were just wrong, wrong the way stone is hard. Paul writes that the Gentiles who never had the law still \"show that the work of the law is written on their hearts, while their conscience also bears witness\" (Romans 2:15, ESV). You already live as if the answer were yes, as if some things are simply, permanently wrong. I did too, on a floor I swore was not under me. The floor held anyway. It is worth asking who laid it.",
+      "You can be good without God, and pretending otherwise is the lie that discredits every true thing standing near it. Atheists are not, as a class, worse neighbors or parents or citizens than the people filling pews. The claim was never that unbelievers can't behave well. The real question is quieter: what makes the word good point at anything real when anyone says it, believer or not. My answer is that moral facts which really bind us fit a world made by a good God better than a world without one. That isn't a proof, and it says nothing against the goodness of the atheist next door. It's a question about what his goodness is answering to.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Start with what is plainly true. Most of us know people who believe nothing about God and are kinder, more truthful and more generous than plenty of people in church on Sunday. I came to faith from atheism, so I'm not describing strangers. Christians have often been unfair here. In a study published in 2017, a team led by the psychologist Will Gervais described to more than three thousand people in thirteen countries a man who had tortured animals as a boy and later killed five homeless people. Participants were about twice as likely to connect him with atheism as with religious belief. Even atheists did it. Paul would not have shared that suspicion. He wrote that Gentiles who never had the law of Moses still \"show that the work of the law is written on their hearts, while their conscience also bears witness\" (Romans 2:15).",
+          "The unbeliever also has more than one good account of where morality comes from. The first is evolutionary. Charles Darwin set it out in The Descent of Man (1871): \"any animal whatever, endowed with well-marked social instincts, would inevitably acquire a moral sense or conscience, as soon as its intellectual powers had become as well developed, or nearly as well developed, as in man.\" Creatures who protected their young, punished cheats and kept faith with each other tended to survive, and over a very long time that pressure gave us outrage at cruelty and guilt at betrayal. On this view morality is real the way language is real, a deep part of human life that needs no explanation beyond biology and history.",
+          "The second account is stronger, and it doesn't rest on biology at all. Many philosophers who don't believe in God hold that moral truths are simply true, the way the truths of mathematics are. The philosopher Erik Wielenberg, an atheist, has defended this at length in Value and Virtue in a Godless Universe (2005) and Robust Ethics (2014). The most basic ethical facts, he argues, hold necessarily and need nothing beneath them. \"On my view,\" he writes, \"objective morality does not require an external foundation of any kind.\" Every explanation has to stop somewhere. The theist stops at God; Wielenberg stops at the moral facts. In the 2020 PhilPapers survey of professional philosophers, about 62 percent said they accept or lean toward moral realism, the view that there are objective moral facts.",
+          "The third is the oldest objection there is. In Plato's Euthyphro, set in 399 BC as Socrates waits to answer the charge that will end in his death, he asks \"whether the pious or holy is beloved by the gods because it is holy, or holy because it is beloved of the gods.\" Put in terms of one God: is a thing good because God commands it, or does God command it because it is good? If the first, then had God commanded cruelty, cruelty would be good, and calling God good means only that he does what he likes. If the second, goodness is a standard above God, and you can have it without him.",
+          "I grant the first point completely, and I grant that each of the other two is held by serious people for serious reasons. If the Christian claim were that you need to believe in God to know that cruelty is wrong, the skeptic would win, and Romans 2 would be on his side.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "There are three questions here, and the argument goes wrong whenever they're mixed up. Can an unbeliever behave well? Yes. Can an unbeliever know right from wrong? Yes, and Paul says so. The third is the one that's actually open: what makes a moral claim true, and what makes it bind us? The argument below is only about the third.",
+          "It's an argument to the best explanation, the kind a detective or a historian makes. It doesn't claim to prove God from premises no one can deny. It asks which picture of the world makes the best sense of something nearly all of us already believe.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An argument to the best explanation (the moral argument, in my words)",
+            premises: [
+              "Some moral claims are objectively true. It is wrong to torment a child for fun, and it would still be wrong if everyone voted otherwise.",
+              "Such truths do more than describe. They bind: they give every person a reason not to do the thing, whether he wants to or not.",
+              "We are able to know at least some of them.",
+              "If there is a God who is goodness itself and who made human beings to know him, all three are what we would expect.",
+              "The main accounts without God each leave at least one of them unexplained.",
+            ],
+            conclusion: "Objective morality is evidence for God. It doesn't prove him, but it makes his existence more likely than it would otherwise be.",
+          },
+          "Most people, believers or not, accept the first three premises in the way they live and argue. Anyone who presses the problem of evil is using them, since the argument from suffering needs real evil to work. The one consistent way out is to deny the first premise, and J. L. Mackie, the Oxford philosopher and atheist, took it. His Ethics: Inventing Right and Wrong (1977) argued that objective values, if they existed, would be strange things unlike anything else in the universe, facts with a demand built into them. He called it the argument from queerness, and concluded there are none. In The Miracle of Theism, published in 1982 after his death, he allowed that if there were objective moral values of that kind, they would be very unlikely to have arisen in the ordinary course of events without a god to create them. He kept his atheism by giving up the values.",
+          "So the weight sits on the fifth premise. That's where a fair reader should push, and it's where the secular accounts make their case.",
+        ],
+      },
+      {
+        heading: "What evolution can and can't explain",
+        body: [
+          "Christians differ over how much of the evolutionary history to accept, and nothing here depends on settling it. Grant the whole account, and it explains why we feel what we feel. What it can't do by itself is tell us whether the feeling is right.",
+          "Darwin saw this. In the same chapter he imagined people \"reared under precisely the same conditions as hive-bees,\" and said that then \"our unmarried females would, like the worker-bees, think it a sacred duty to kill their brothers, and mothers would strive to kill their fertile daughters; and no one would think of interfering.\" If our sense of right is only the shape that survival pressed into us, then a different history would have given us a different sense, and neither would be truer than the other. The philosopher Sharon Street pressed the same point in 2006, from the other side. Natural selection rewards what helps an animal survive and reproduce, and it has no reason to track moral facts that exist independently of us. If such facts exist, it would be a remarkable coincidence for our judgments to match them. Street concluded that we should stop thinking of values as existing independently of us at all.",
+          "Taken alone, the evolutionary account leaves the second premise unexplained. It tells us why we feel bound. It can't tell us that we are.",
+        ],
+      },
+      {
+        heading: "Moral facts without God",
+        body: [
+          "That's why Wielenberg doesn't rest his case on evolution. His view takes the first three premises as seriously as any Christian does, and he has an answer to Street: the same features of our minds that make moral facts hold of us also lead us to believe them, so the match is no accident. His strongest point is parity. The theist says God is the stopping place and needs no explanation. Why may the atheist not say the same of the basic moral facts?",
+          "It's a fair question, and here is my answer. Every account stops somewhere; what matters is where. A brute moral fact is an abstract thing. It can't command you, and it can't forgive you. Yet obligation doesn't feel like noticing an abstract truth. It feels like being answerable, which is why guilt is so much like owing someone. Mackie's oddness is still there on Wielenberg's view. He has simply accepted it as a feature of the world. On the Christian view, the demand built into a moral fact comes from a person, the one to whom we are answerable, and the knowing comes from the same source: the God who is good made creatures able to know the good. That is not a knockdown reply. Reasonable people hold Wielenberg's view. I think it leaves the binding and the knowing as two separate pieces of luck, where theism explains both with one cause.",
+        ],
+      },
+      {
+        heading: "The Euthyphro dilemma, answered",
+        body: [
+          "The classical Christian answer takes neither of Socrates' options. Thomas Aquinas taught that \"God alone is good essentially,\" and that everything else is good by sharing in his goodness. Goodness is not a rule God might have written differently, and it isn't a law above him that he obeys. It is what God is. The philosopher Robert Merrihew Adams worked this out in Finite and Infinite Goods (1999). On his account the supreme good is God himself, and other things are excellent in the measure they resemble him. Moral obligation is then the command of a God who is loving, and on Adams's account it is that love which keeps such a God from commanding wanton cruelty. Scripture puts it in the language of a gift: \"Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change\" (James 1:17).",
+          "The skeptic can press back: haven't you just moved the question? Why should God's character be the measure? But that is the parity question again, and the answer is the same. Something has to be the measure. The only question is whether it is an impersonal fact or a person who is good. The dilemma also bites hardest in one place, and I won't hide it. The Old Testament records commands to kill that look like the very cruelty a good God would not command. That question has its own page, \"Did God command genocide in the Old Testament?\", and it doesn't get an easy answer there either.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. You can't even recognize God's commands as good without already using your own moral sense, so morality comes first and God adds nothing. Half of that is right. We do know right from wrong before we know where it comes from, and Paul says so. But knowing a thing and explaining it are different. People knew that fire burns long before anyone knew what fire is. The moral argument doesn't say you need God to see the moral facts. It says the moral facts you already see make the most sense if God is there.",
+          "Here is what the argument doesn't prove. It doesn't prove that God exists; it makes him more likely, and the other lines of evidence have their own pages. It doesn't show which God, though a God who is goodness itself narrows the field. It doesn't show that believers behave better than unbelievers. Friedrich Nietzsche, who had no love for Christianity, said of George Eliot and the English moralists like her, \"They are rid of the Christian God and now believe all the more firmly that they must cling to Christian morality.\" His verdict was that \"When one gives up the Christian faith, one pulls the right to Christian morality out from under one's feet.\" He wasn't calling them bad people. He was saying they lived on an inheritance whose source they had given up. A Christian has to hear the other half too. Paul's passage about the law written on Gentile hearts is aimed at the religious: \"Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things\" (Romans 2:1). We have often had a sound account of goodness without the life to match it.",
+          "Mark tells of a man who ran up to Jesus and knelt and called him \"Good Teacher.\" Jesus answered, \"Why do you call me good? No one is good except God alone\" (Mark 10:18). The man had kept the commandments since he was young, and Jesus didn't dispute it. Mark adds, \"And Jesus, looking at him, loved him\" (Mark 10:21). If you don't believe, no one is asking you to stop being good. The question is what your goodness is answering to, and whether it was ever as impersonal as it seemed.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Charles Darwin", title: "The Descent of Man, and Selection in Relation to Sex", year: "1871", note: "Chapter on the moral sense." },
+      { author: "J. L. Mackie", title: "Ethics: Inventing Right and Wrong", year: "1977" },
+      { author: "J. L. Mackie", title: "The Miracle of Theism", year: "1982" },
+      { author: "Robert Merrihew Adams", title: "Finite and Infinite Goods", year: "1999", note: "The good as God, and obligation as the command of a loving God." },
+      { author: "Sharon Street", title: "A Darwinian Dilemma for Realist Theories of Value", in: "Philosophical Studies", year: "2006" },
+      { author: "Erik J. Wielenberg", title: "Robust Ethics: The Metaphysics and Epistemology of Godless Normative Realism", year: "2014", note: "The best book against: moral facts without God." },
+      { author: "Friedrich Nietzsche", title: "Twilight of the Idols", year: "1889" },
     ],
     essaySlug: "can-you-be-good-without-god",
     essayTitle: "Can You Be Good Without God?",
@@ -810,9 +960,73 @@ export const ANSWERS: Answer[] = [
     slug: "is-faith-irrational",
     question: "Is believing anything on faith irrational?",
     paragraphs: [
-      "No, though a good deal of what gets called faith is exactly the credulous thing the charge names, and I won't defend it. The church has too often praised not-thinking as a virtue and used \"just have faith\" as a lid on a pot it did not want boiling. But the framing of faith against reason is a caricature, and it collapses the moment you examine either side. Biblical faith reaches for reasons the whole time, and reason runs on trust it has never been able to prove.",
-      "Take Clifford at his word. In 1877 he ruled it \"wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence,\" so try to believe only what your evidence forces. You won't last a morning. You trust your own reason without being able to certify it without using it. You trust that other minds exist, that the future will resemble the past, and Hume saw the size of that one in 1748 and could not argue his way out. Michael Polanyi called it tacit knowing, the floor beneath the floor: no knowledge without a knower who is committed. And the word itself was never a leap into the dark. Pistis meant trust with a track record. \"Now faith is the assurance of things hoped for, the conviction of things not seen\" (Hebrews 11:1). Things unseen, not things disbelieved.",
-      "I say this against myself, because for years I accused believers of the exact posture I was standing in. I called my position pure reason. It was a structure of enormous trust I had simply never counted, invisible the way water is invisible to the fish. Everyone is betting on something they cannot stand outside of and prove. The most honest prayer in the Gospels isn't a settled one. It comes from a desperate father with a suffering son: \"I believe; help my unbelief!\" (Mark 9:24). Some of us have just stopped pretending we aren't already doing it.",
+      "No, though a good deal of what gets called faith is exactly the credulous thing the charge names, and I won't defend it. The church has too often praised not-thinking as a virtue and used \"just have faith\" as a lid on a pot it did not want boiling. If faith means believing without evidence, or against it, the skeptic is right to call it irrational. But that isn't what the New Testament means by the word, and it isn't how reason works either. Faith in the Bible is trust in someone, resting on testimony and evidence and reaching past what can be seen. And no one, the skeptic included, believes only what he can prove, because every chain of reasons ends in trust somewhere. The real question isn't whether you trust. It's whether what you trust has earned it.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The case was put most sharply in 1877, by the mathematician W. K. Clifford, in an essay called \"The Ethics of Belief.\" He told of a shipowner who quiets his own doubts about an old ship and sends it to sea full of emigrants. Clifford says the man is guilty whether the ship sinks or not, because he had no right to believe it was sound on the evidence he had. Then Clifford stated his rule: \"It is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence.\"",
+          "Clifford is often caricatured, and he shouldn't be. He didn't say we may believe only what we've checked ourselves. In the second part of the essay he allowed that we may believe what others tell us, when there is good reason to think they know what they're talking about and are telling the truth as far as they know it. His rule is about proportion, the same rule David Hume had set down in 1748: \"A wise man, therefore, proportions his belief to the evidence.\" That's the view philosophers call evidentialism, and in that form it's hard to argue with. Most of us live by it every day, and we're right to.",
+          "Set beside that rule a definition of faith, and the charge writes itself. Richard Dawkins, in The Selfish Gene (1976), called faith \"blind trust, in the absence of evidence, even in the teeth of evidence.\" If that is faith, then Clifford's rule condemns it, and it should.",
+          "I grant more than a skeptic might expect. Plenty of Christians use faith in just that sense. They say \"you just have to believe\" when a question gets hard, and they treat doubt as disloyalty. A faith that can't bear to be examined deserves Clifford's verdict, and I'd rather say so myself than wait for a skeptic to say it for me.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "There are two questions here. The first is about words and history: what did the first Christians mean when they spoke of faith? The second is about knowledge: does every rational belief have to rest on evidence, all the way down? Neither answer proves that God exists. Together they show whether faith, as the New Testament uses the word, is the thing Clifford's rule forbids.",
+        ],
+      },
+      {
+        heading: "What the New Testament means by faith",
+        body: [
+          "The Greek word is pistis, with its verb pisteuō, to trust or believe. Teresa Morgan, a historian of the ancient world, studied how the word was used across the Roman world in Roman Faith and Christian Faith (2015). She argues that in the first century pistis meant above all a relationship of trust, in human dealings and between people and their gods, rather than assent to a list of ideas. In the New Testament that trust is bound up with beliefs about who Jesus is, but it is trust first. It is the kind of faith you have in a surgeon or a friend, and you have it because of what you know of them.",
+          "The writers themselves point to their evidence. Luke opens his Gospel by saying he \"followed all things closely\" and wrote \"that you may have certainty concerning the things you have been taught\" (Luke 1:3-4). John closes his: \"these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in his name\" (John 20:31). Paul lists the witnesses of the risen Jesus and adds that more than five hundred saw him at one time, \"most of whom are still alive\" (1 Corinthians 15:6), which is an invitation to go and ask. In Athens he said God \"has given assurance to all by raising him from the dead\" (Acts 17:31). The word translated assurance there is pistis itself. The thing that grounds faith is called by faith's own name.",
+          "None of that makes faith the same as proof. \"Now faith is the assurance of things hoped for, the conviction of things not seen\" (Hebrews 11:1). Faith reaches past what can be seen, to what is promised and not yet here. But things unseen are not things disbelieved, and trust that goes beyond its evidence is not the same as trust against it. A wife who trusts her husband while he's away has no proof he is faithful tonight. She has years of knowing him. That is the shape of faith in the New Testament, and it's the part of the question worth arguing about.",
+        ],
+      },
+      {
+        heading: "The argument, laid out",
+        body: [
+          {
+            kind: "An argument from the limits of evidence (after Thomas Reid and Alvin Plantinga, in my words)",
+            premises: [
+              "If every rational belief must rest on evidence, the evidence must itself be believed rationally, and so on.",
+              "The chain can't go on forever, so it ends in beliefs we hold without evidence from anything further.",
+              "Among those beliefs are some no one can do without: that our senses and memory are generally reliable, that other people have minds, that the future will be like the past, and that what others tell us is generally true.",
+              "Holding those beliefs is not irrational.",
+            ],
+            conclusion: "Rational belief can't mean belief based on evidence all the way down. Every reasoner trusts. The real question is which trusts are reasonable, and which beliefs need argument before they may be held.",
+          },
+          "The weight sits on the third and fourth premises, and Hume is the best witness to both. In the same Enquiry, he showed that we can't prove by reasoning that the future will be like the past, because \"all inferences from experience suppose, as their foundation, that the future will resemble the past.\" Any argument for it assumes it. Hume didn't conclude that we should stop expecting the sun to rise. He concluded that \"Custom, then, is the great guide of human life.\" Thomas Reid, Hume's fellow Scot, who wrote against his skepticism, answered in An Inquiry into the Human Mind (1764) that our trust in our senses, and in what other people tell us, is part of how we are made, and that we would know almost nothing without it. Most of what you believe about history, geography and science you took on testimony. You were right to.",
+          "In 1983, in \"Reason and Belief in God,\" the philosopher Alvin Plantinga turned this on the rule itself. A belief may be properly basic, he argued, rational to hold without being argued from other beliefs, as belief in other minds is. He also argued that the strict foundationalist's rule fails its own test, since the rule itself is neither self-evident nor evident to the senses, and no one has shown it from beliefs that are. Clifford's rule seems to me to have a version of the same difficulty: it's hard to say what evidence would be enough to establish it. Other philosophers, William Alston among them, have argued that Plantinga's case against foundationalism doesn't succeed in that form, and the debate is still live. But the first point stands on its own. If Clifford's rule were applied strictly, it would condemn trust no one can live without.",
+        ],
+      },
+      {
+        heading: "William James's reply",
+        body: [
+          "The American philosopher William James answered Clifford directly in \"The Will to Believe\" (1896). He thought Clifford's rule obeyed one fear, of being duped, as if it were the whole of duty. \"Clifford's exhortation has to my ears a thoroughly fantastic sound,\" he wrote. \"It is like a general informing his soldiers that it is better to keep out of battle forever than to risk a single wound.\" His central point was this: \"a rule of thinking which would absolutely prevent me from acknowledging certain kinds of truth if those kinds of truth were really there, would be an irrational rule.\"",
+          "James was careful about where that applies. He meant questions that are live, forced and momentous, where refusing to decide is itself a decision; the page \"What if Christianity is wrong?\" takes that argument up. Here the point is narrower. A rule that would keep you from ever trusting a person until you could prove him trustworthy would keep you from ever finding out that he was. Some truths are only known from inside a trust.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. Fine, everyone trusts their senses and their memory. But everyone shares those. Belief in God isn't like that. If you may hold it without argument, then anyone may hold anything without argument, and you've opened the door to every superstition there is. Philosophers call this the Great Pumpkin objection, after a cartoon, and Plantinga answered it himself: a belief is properly basic only when it has the right kind of ground, and there's no reason to think belief in the Great Pumpkin has one. The reply is still argued over, and I don't think a Christian should rest the whole case there. He doesn't have to. The New Testament itself doesn't ask anyone to believe without looking. It points to a public event, in a particular city, with named witnesses, and calls that event the assurance. Whether it happened is a historical question, and the page \"Did the resurrection actually happen?\" weighs it.",
+          "Here is what the argument doesn't prove. It doesn't prove that God exists. It doesn't defend faith in Dawkins's sense; where believers hold their faith blindly or against the evidence, that is a failure, and Christians should say so. It doesn't make every trust reasonable, since trust can be misplaced, and the shipowner's was. What it shows is narrower. Faith as the New Testament describes it is not the opposite of reason. It is what reason does when it meets a person: it weighs what it can know and then trusts beyond it, or refuses to.",
+          "Peter told the first Christians to honor Christ in their hearts, \"always being prepared to make a defense to anyone who asks you for a reason for the hope that is in you; yet do it with gentleness and respect\" (1 Peter 3:15). A reason for the hope. Everyone trusts something they can't stand outside of and prove: their own mind, the world going on tomorrow, the people who taught them. The question was never whether you live by faith. It's whether the one you trust has given you any reason to.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "David Hume", title: "An Enquiry Concerning Human Understanding", year: "1748", note: "Section IV, on why we expect the future to resemble the past." },
+      { author: "Thomas Reid", title: "An Inquiry into the Human Mind on the Principles of Common Sense", year: "1764" },
+      { author: "W. K. Clifford", title: "The Ethics of Belief", in: "Contemporary Review", year: "1877", note: "The best case against: believing on insufficient evidence is wrong." },
+      { author: "William James", title: "The Will to Believe", year: "1896" },
+      { author: "Richard Dawkins", title: "The Selfish Gene", year: "1976" },
+      { author: "Alvin Plantinga", title: "Reason and Belief in God", in: "Faith and Rationality, ed. Plantinga and Wolterstorff", year: "1983" },
+      { author: "Teresa Morgan", title: "Roman Faith and Christian Faith: Pistis and Fides in the Early Roman Empire and Early Churches", year: "2015" },
     ],
     essaySlug: "is-faith-irrational",
     essayTitle: "Is Believing Anything on Faith Irrational?",
@@ -823,9 +1037,75 @@ export const ANSWERS: Answer[] = [
     slug: "are-miracles-believable",
     question: "Are miracles believable?",
     paragraphs: [
-      "A rational person can believe in them. Miracles are rare by definition; if they were common they would not be miracles, because the word names the exception, not the schedule. Christianity is not the claim that tombs are unreliable. It is the claim that on one particular morning, one particular tomb was. What you can't do is rule the possibility out by definition, before the evidence arrives.",
-      "The strongest case against them is David Hume's, set out in \"Of Miracles\" in 1748; most people stand inside his conclusion without having heard his name. A miracle, he wrote, is \"a violation of the laws of nature,\" and no testimony can establish one \"unless the testimony be of such a kind, that its falsehood would be more miraculous than the fact which it endeavours to establish.\" It reads like arithmetic. But the uniform experience of mankind can only count against every miracle if you assume in advance that every reported miracle is false, the one under discussion included. John Earman, no apologist, called this circular in Hume's Abject Failure (Oxford, 2000): applied evenly, the rule would have forbidden belief in a black swan or a meteorite, in any novel event that enlarged the world by breaking the pattern. The real question is authorship, not frequency. If God is so much as possible, a miracle is the author writing in the margin, and it can't be ruled out a priori.",
-      "I did not lose that argument to a better argument. I lost it to the discovery that I had never had one. What I owned was the feeling of finality, and the feeling came from the definition, and the definition was the very thing I was supposed to be proving. Paul staked everything on the resurrection being fact and not feeling: \"And if Christ has not been raised, then our preaching is in vain and your faith is in vain\" (1 Corinthians 15:14, ESV). Paul wasn't asking for blind belief. He put the claim where it could be checked. Notice whether your certainty that miracles cannot happen is a conclusion you reasoned to, or a definition you started with. If it is the second, you haven't put the resurrection on the scale yet. You've refused in advance to look.",
+      "A rational person can believe in them, and a rational person can doubt them. What no one can do honestly is rule them out before looking. Miracles are rare by definition; if they were common they would not be miracles, because the word names the exception, not the schedule. The strongest case against them is David Hume's, and it deserves to be heard in his own words. It gives good reasons to be careful with any report of a miracle, including the ones Christians make. What it can't do is show that no evidence could ever be enough, unless it first assumes there is no God who might act. So the question comes down to two others, whether God exists and whether one particular miracle happened, and each of those has its own page.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "Hume set out the case in 1748, in the essay \"Of Miracles,\" the tenth section of the book later called An Enquiry Concerning Human Understanding. Most people who doubt miracles stand inside his conclusion without having heard his name. He began with a rule anyone can accept: \"A wise man, therefore, proportions his belief to the evidence.\" Then he defined his terms. \"A miracle is a violation of the laws of nature; and as a firm and unalterable experience has established these laws, the proof against a miracle, from the very nature of the fact, is as entire as any argument from experience can possibly be imagined.\" It's no miracle, he said, that a healthy man dies suddenly. \"But it is a miracle, that a dead man should come to life; because that has never been observed in any age or country.\"",
+          "From there he drew what he called a general maxim: \"That no testimony is sufficient to establish a miracle, unless the testimony be of such a kind, that its falsehood would be more miraculous, than the fact, which it endeavours to establish.\" When someone tells him a dead man was restored to life, he asks himself which is more likely, \"that this person should either deceive or be deceived, or that the fact, which he relates, should really have happened.\" The answer, he thought, is always the first.",
+          "In the second part of the essay he argued that no real report has ever come close to that bar. No miracle in history, he wrote, was \"attested by a sufficient number of men, of such unquestioned good-sense, education, and learning, as to secure us against all delusion in themselves,\" and of such integrity and standing that they had much to lose if caught. People love to feel wonder and to pass it on. Reports of miracles \"are observed chiefly to abound among ignorant and barbarous nations.\" And the miracles of rival religions cancel each other out, since each is offered as proof of a faith that denies the others. His sharpest example was the healings reported in his own lifetime at the tomb of the Abbé Paris, a Jansenist, in Paris. By Hume's own account many were \"attested by witnesses of credit and distinction, in a learned age,\" and he still thought no sensible person should believe them. His conclusion was careful. He set it down as a maxim \"that no human testimony can have such force as to prove a miracle, and make it a just foundation for any such system of religion.\" Carl Sagan gave the same instinct a modern slogan: extraordinary claims require extraordinary evidence.",
+          "I grant a great deal of this. Most reports of miracles are false. People do love wonder, and believers have every reason to want their faith confirmed, so their reports deserve more scrutiny, not less. Christians reject most miracle claims themselves, including many made by other Christians. Scripture tells believers to do the same: \"Beloved, do not believe every spirit, but test the spirits to see whether they are from God\" (1 John 4:1). If the case for any miracle can't survive Hume's caution, it doesn't deserve belief.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "Hume's is an argument about evidence and probability, and the reply here is of the same kind. It doesn't try to prove that any miracle happened. It asks whether Hume showed what he claimed to show, that testimony can never be enough to make belief in a miracle reasonable. If he did, the question is closed before any particular evidence is weighed. If he didn't, the question is open, and it has to be settled the slow way, case by case, by looking at what happened.",
+        ],
+      },
+      {
+        heading: "Hume's argument, laid out",
+        body: [
+          {
+            kind: "Hume's argument, set out as he gives it",
+            premises: [
+              "A wise person proportions belief to the evidence.",
+              "A miracle is a violation of the laws of nature, and those laws are established by firm and unalterable experience, so the evidence against any miracle is as strong as experience can give.",
+              "Testimony is evidence from experience too, and people often deceive or are deceived.",
+            ],
+            conclusion: "Testimony to a miracle will always be outweighed by the evidence against it, unless its falsehood would be more miraculous than the miracle itself; and no testimony in history has met that bar.",
+          },
+          "The first premise is right, and every Christian should hold it. The weight sits on the second, and it has three problems.",
+          "The first is a circle. Experience against miracles is \"firm and unalterable\" only if every report of one is false, and that's the question being asked. C. S. Lewis put it plainly in Miracles (1947): we know the experience against them to be uniform \"only if we know that all the reports of them are false,\" and so we are \"arguing in a circle.\" Defenders of Hume reply, fairly, that he didn't mean experience without exception, only that the weight of experience always goes against the report. That is a better argument. But it turns Hume's rule into a question of probability, and then it has to pass the tests of probability.",
+          "That is the second problem. John Earman, a philosopher of science at the University of Pittsburgh and no apologist, examined the essay with the mathematics of probability worked out by Hume's own contemporaries, Thomas Bayes and Richard Price. He called his book Hume's Abject Failure (2000), and argued that Hume's maxim, read carefully, doesn't deliver what Hume claimed for it. One reason is independent witnesses. Charles Babbage, the mathematician who designed the first mechanical computers, showed in the 1830s, in his Ninth Bridgewater Treatise, that if witnesses are truly independent of each other and more often right than wrong, enough of them can outweigh any improbability short of impossibility. Earman's verdict is contested. William Vanderburgh argued in Hume Studies in 2005 that Earman misread what Hume was doing, and Peter Millican has pressed the hard question of how we could ever know that ancient witnesses were independent. Those are real replies. But they move the argument from \"no testimony could ever be enough\" to \"this testimony isn't enough,\" which is a different and more modest claim.",
+          "The third problem is the word violation. Hume's own example shows the danger. He wrote that \"the Indian prince, who refused to believe the first relations concerning the effects of frost, reasoned justly.\" Hume saved the prince by saying frost was not contrary to his experience, only unlike it. Still, a rule that keeps a man warm and wrong about ice should make us careful. And the laws of nature, as Christians have long understood them, don't forbid God to act. Lewis used the picture of a drawer. Put six pennies in on Monday and six more on Tuesday, and arithmetic says you'll find twelve on Wednesday. If a thief has opened the drawer, you may find two. The thief broke the law of the land, not the laws of arithmetic. A miracle, on this view, isn't nature failing. It's something added to nature from outside it, after which nature carries on by its own laws.",
+        ],
+      },
+      {
+        heading: "Where the real question lies",
+        body: [
+          {
+            kind: "An argument about probability",
+            premises: [
+              "How much evidence a report needs depends on how probable the event was before the report came in.",
+              "The probability of a miracle before the evidence isn't fixed by the laws of nature alone. It depends on whether there is a God who could act, and whether he would have a reason to act in this case.",
+              "So no rule laid down in advance can decide whether testimony to a miracle is enough. It depends on what we have reason to believe about God, and on the evidence in the particular case.",
+            ],
+            conclusion: "Hume's argument can rule out every miracle before the evidence is heard only if it assumes there is no God, or none who acts. Without that assumption, the question goes back to the evidence.",
+          },
+          "The second premise carries the weight. The chance that a dead man rises by natural causes is as close to zero as anything gets, and Christians agree. The resurrection is not the claim that natural causes did it. It's the claim that God raised this man, and the probability of that depends on whether God exists and on what Jesus said and did before he died. A skeptic can fairly reply that even if God exists, the chance he would act in any given case is tiny. That is true of random marvels. It's less true of an event that comes at the end of a life spent claiming to speak for God, in a people who had waited centuries for him to act. A miracle with a meaning isn't the same as a statue that weeps.",
+          "Hume's second part should be taken seriously, and some of it stands. The love of wonder is real. But his phrase \"ignorant and barbarous nations\" judges a witness by his nation, not his honesty. The New Testament scholar Craig Keener gathered hundreds of eyewitness reports of healing, many from Asia, Africa and Latin America, in the two volumes of Miracles (2011). They don't prove that any of those events were miracles. They do show that sane, careful people in many cultures claim to have seen such things, and that a rule which dismisses them for where they live is not a rule of evidence. The argument from rival miracles works only if every miracle is offered as proof that every other faith is false. Christianity has never needed that.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply doesn't need Hume's definition at all. It goes like this: every time we've been able to check a report of a miracle, it has turned out to be false, mistaken or explained. The Abbé Paris, the faith healers, the weeping statues. That's a terrible record, and a reasonable person should expect the next report to go the same way. I agree with that as a starting point. It's how anyone should treat a healer on television. But a starting point isn't a verdict. Evidence can overturn it, and anyone who says no evidence ever could has walked back into Hume's circle. The record also isn't quite what it seems. Most of what we've checked were wonders that proved nothing in particular. The claim at the center of Christianity is a single event, said to have happened once, for a reason, in public, in the city where it could most easily be denied.",
+          "Here is what the argument doesn't prove. It doesn't prove that any miracle has happened. It doesn't prove that God exists; that case has its own page. It doesn't make every miracle report believable, and Christians have been credulous often enough to deserve Hume's suspicion. It doesn't threaten science, which depends on nature being regular, because a miracle can only be recognized against that regularity. What it shows is narrower. Whether a miracle is believable can't be settled by a definition. It has to be settled by looking.",
+          "Paul didn't ask anyone to believe the resurrection without looking. He named the witnesses and put the claim where it could be checked: \"And if Christ has not been raised, then our preaching is in vain and your faith is in vain\" (1 Corinthians 15:14). \"Did the resurrection actually happen?\" weighs that evidence in full. Before you read it, notice whether your certainty that miracles can't happen is a conclusion you reasoned to, or a definition you started with. If it's the second, you haven't put the resurrection on the scale yet. You've decided in advance not to look.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "David Hume", title: "An Enquiry Concerning Human Understanding, Section X, \"Of Miracles\"", year: "1748", note: "The best case against, and still the one to answer." },
+      { author: "C. S. Lewis", title: "Miracles: A Preliminary Study", year: "1947" },
+      { author: "John Earman", title: "Hume's Abject Failure: The Argument Against Miracles", year: "2000", note: "A philosopher of science, not a believer's book." },
+      { author: "William L. Vanderburgh", title: "Of Miracles and Evidential Probability: Hume's \"Abject Failure\" Vindicated", in: "Hume Studies", year: "2005", note: "A defense of Hume against Earman." },
+      { author: "Charles Babbage", title: "The Ninth Bridgewater Treatise", year: "1837", note: "Chapter 10, on Hume and independent witnesses." },
+      { author: "Craig S. Keener", title: "Miracles: The Credibility of the New Testament Accounts", year: "2011" },
+      { author: "N. T. Wright", title: "The Resurrection of the Son of God", year: "2003" },
     ],
     essaySlug: "are-miracles-believable",
     essayTitle: "Are Miracles Believable?",
@@ -836,9 +1116,88 @@ export const ANSWERS: Answer[] = [
     slug: "did-god-command-genocide",
     question: "Did God command genocide in the Old Testament?",
     paragraphs: [
-      "On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly. I will not hand you a comfort I could not accept myself. \"You shall save alive nothing that breathes\" (Deuteronomy 20:16). To Saul, of the Amalekites: \"Do not spare them, but kill both man and woman, child and infant, ox and sheep, camel and donkey\" (1 Samuel 15:3). Child and infant. Richard Dawkins called this God a \"bloodthirsty ethnic cleanser\" in The God Delusion (2006), and the line drew blood because he was quoting, not distorting. For years this was my strongest reason to reject the Bible, read aloud to win a room.",
-      "The scholars who live inside the ancient world kept pointing at something I had dismissed. K. Lawson Younger's Ancient Conquest Accounts (1990) laid the biblical narratives beside the war annals of Egypt and Assyria and found the same stock formula: total annihilation was the conventional idiom of victory, not a literal census. Kenneth Kitchen, no friend of softening Scripture, said the same in On the Reliability of the Old Testament (2003). And the Bible refuses to let the totality stand: the peoples reported as wiped out in Joshua are Israel's neighbors and in-laws two chapters later. The war is framed as judgment on named evil, not race, with Israel warned it stands under the identical standard: \"Not because of your righteousness ... but because of the wickedness of these nations the LORD your God is driving them out from before you\" (Deuteronomy 9:5). It is sealed to one people, one land, one window, never a template. Then Jesus takes the sword off the table with his own hands: \"Put your sword back into its place\" (Matthew 26:52).",
-      "Put it all together, the genre I misread, the judgment on real evil, the seal that shuts the conquest forever, and a weight still remains. The hyperbole eases the scale and does not empty the battlefield. I have no answer for the particular child who chose none of it, and I will not decorate that grief. The texts did not stop being hard. But three of my certainties turned out softer than I had sworn, and a man who finds three certainties soft is obligated to wonder about the fourth. If you leave still troubled, we are troubled together. I think that is the right place to be.",
+      "On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly. \"You shall save alive nothing that breathes\" (Deuteronomy 20:16). To Saul, of the Amalekites: \"Do not spare them, but kill both man and woman, child and infant, ox and sheep, camel and donkey\" (1 Samuel 15:3). Christians who hold the whole Bible to be God's word read these chapters in more than one way, and I'll set out the main readings with the strength and the hard question of each, without pretending any of them makes the problem go away. Two things hold under all of them. The God of Joshua is the Father of Jesus. And nothing in these chapters gives anyone today a warrant for violence against anyone.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The commands are in Deuteronomy, for the war Israel was about to fight west of the Jordan. For the peoples of the land, the law says, \"you shall save alive nothing that breathes, but you shall devote them to complete destruction\" (Deuteronomy 20:16-17). Joshua narrates it. At Jericho \"they devoted all in the city to destruction, both men and women, young and old, oxen, sheep, and donkeys, with the edge of the sword\" (Joshua 6:21). The word genocide is modern. Raphael Lemkin coined it in 1944, and the United Nations convention adopted on December 9, 1948, defines it as acts \"committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such.\" Deuteronomy 20 names six peoples and gives a religious reason. If a government gave that order today, we would know what to call it.",
+          "Richard Dawkins put the charge loudly in The God Delusion (2006), calling the God of the Old Testament \"the most unpleasant character in all fiction\" and, among much else, a \"vindictive, bloodthirsty ethnic cleanser.\" The same objection was made more carefully in 2009, in a symposium in the Christian philosophy journal Philosophia Christi. The philosopher Wes Morriston, in \"Did God Command Genocide? A Challenge to the Biblical Inerrantist,\" argued that a morally perfect God would not command such a thing unless he had a morally sufficient reason, and that it is very unlikely any such reason existed. Randal Rauser, writing in the same symposium, argued that a perfect God would not command a moral atrocity, that genocide is always one, and so God did not command it. Behind both stands a point about what we can know. We are more sure that it is wrong to kill a child for what his parents did than we could ever be that an ancient text speaks for God. When the two collide, the reasonable thing is to doubt the text.",
+          "I grant the force of that. People have left the faith on this reasoning, taking their consciences seriously, which is what the church tells them to do. I have five sons. Whatever a Christian says about \"child and infant\" has to be something he could say with a parent listening. If these chapters have shaken your own faith, talk it through with someone; the Find Help page has real people you can call.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "Two questions are tangled here. One is first-order, settled by the creeds the whole church confesses: is the God of these chapters the same God as the Father of Jesus? The church answered that in the second century, when it rejected Marcion, who taught that the God of the Old Testament could not be the Father Jesus revealed. The other is how these commands should be read, and that question divides faithful Christians and careful scholars still. I won't settle it for you. The skeptic's argument is the best way to see where the readings part.",
+          {
+            kind: "The skeptic's argument (after Wes Morriston, 2009, in my words)",
+            premises: [
+              "A perfectly good God would not command the killing of children unless he had a morally sufficient reason.",
+              "It is very unlikely that any such reason existed.",
+              "The Bible says that God commanded it.",
+            ],
+            conclusion: "Either God is not perfectly good, or the Bible is mistaken in saying he commanded it.",
+          },
+          "Morriston argued that a Christian who holds the Bible true can't easily deny the first premise, so the dispute comes down to the second, the claim about reasons. But the Christian readings don't all answer in the same place. Some read the third premise differently, as a description of something other than what it seems. Some deny the second. Each has a real strength, and each leaves a hard question.",
+        ],
+      },
+      {
+        heading: "First reading: the language of ancient war",
+        body: [
+          "The book of Joshua complicates its own summaries. Joshua 11:23 says \"Joshua took the whole land.\" Two chapters later God tells him \"there remains yet very much land to possess\" (Joshua 13:1). The Jebusites of Jerusalem were never driven out (Joshua 15:63). In Joshua's own farewell he warns Israel about \"the remnant of these nations remaining among you\" (Joshua 23:12), and in Judges \"the people of Israel lived among the Canaanites, the Hittites, the Amorites, the Perizzites, the Hivites, and the Jebusites\" (Judges 3:5). Right after the command to destroy them, Deuteronomy says \"You shall not intermarry with them\" (Deuteronomy 7:3), a law that assumes they will still be there. Saul is said to have destroyed all the Amalekites (1 Samuel 15:8), and fifteen chapters later four hundred of their young men escape David on camels (1 Samuel 30:17).",
+          "Scholars of the ancient Near East have shown that this is how victory was reported in Israel's world. Around 1208 BC the pharaoh Merneptah boasted on his victory stele that Israel's seed was no more. Around 840 BC Mesha, king of Moab, claimed that Israel had perished forever, and his stone uses the Bible's own word for the ban. K. Lawson Younger, in Ancient Conquest Accounts (1990), laid Joshua beside Egyptian, Hittite and Assyrian campaign reports and found the same stock, formulaic claims of total victory. Kenneth Kitchen agreed in On the Reliability of the Old Testament (2003), and Paul Copan and Matthew Flannagan made the reading central to Did God Really Command Genocide? (2014): what God required was the end of Canaan's religious order and the removal of its peoples, and the language of killing everyone belongs to the idiom of war.",
+          "Its strength is that it comes from the text, not from modern discomfort. Its hard question is that it eases the scale without emptying the battlefield. Jericho is still described as a city where men and women, young and old, were killed, and an exaggerated report of a massacre is still a report of a massacre. First Samuel 15:3 still says infant.",
+        ],
+      },
+      {
+        heading: "Second reading: judgment after long patience",
+        body: [
+          "The text insists the war was not a reward for Israel's goodness: \"Not because of your righteousness or the uprightness of your heart are you going in to possess their land, but because of the wickedness of these nations\" (Deuteronomy 9:5). The charges are specific. The peoples of the land \"even burn their sons and their daughters in the fire to their gods\" (Deuteronomy 12:31), and \"the land vomited out its inhabitants\" (Leviticus 18:25). The judgment is described as late. Long before, God told Abraham his descendants would wait, \"for the iniquity of the Amorites is not yet complete\" (Genesis 15:16). And the line is not drawn by blood. Rahab of Jericho confesses Israel's God and is spared, and \"she has lived in Israel to this day\" (Joshua 6:25). Deuteronomy 13 orders the same destruction against any Israelite town that turns to other gods, and in the end, around 586 BC, Israel itself went into exile under the same charge.",
+          "Its strength is that it shows the war as judgment on named evil after long patience, not a tribal god clearing ground for his favorites. Its hard question is the one the children ask. A baby in Jericho had never offered anyone to Molech. And \"they deserved it\" is what armies always say about the towns they burn.",
+        ],
+      },
+      {
+        heading: "Third reading: God stooping, seen through Christ",
+        body: [
+          "Origen, preaching on Joshua in the third century, told his hearers that unless these wars were figures of spiritual ones, he doubted the apostles would have handed these books to the followers of a Christ who came to teach peace. In our own time Eric Seibert, in Disturbing Divine Behavior (2009), drew a distinction from Terence Fretheim between the God of the text, as Israel portrayed him, and the actual God, and read the portraits by the God that Jesus reveals. Greg Boyd, in The Crucifixion of the Warrior God (2017), keeps every page as inspired Scripture, and reads the violent portraits as God stooping to let his people see him in the terms of their own violent world, bearing their misunderstanding much as Christ bore our sin.",
+          "Its strength is that it takes seriously that the Son \"is the radiance of the glory of God and the exact imprint of his nature\" (Hebrews 1:3), and that when his disciples wanted fire on a Samaritan village, \"he turned and rebuked them\" (Luke 9:55). Its hard question is who decides which portraits truly show God. Its critics say it leaves the reader to decide which texts to set aside, which leads back toward Marcion. Boyd answers that he keeps every text and reads it through Christ, which is the opposite of what Marcion did.",
+        ],
+      },
+      {
+        heading: "Fourth reading: the right of the giver of life",
+        body: [
+          "The oldest Christian answer is the plainest. Augustine, answering the Manichaean bishop Faustus, said God gave those commands \"not in cruelty, but in righteous retribution.\" Thomas Aquinas reasoned that every human being, guilty or innocent, dies by God's power, and so \"by the command of God, death can be inflicted on any man, guilty or innocent, without any injustice whatever.\" William Lane Craig defends a form of this today: God, as the giver of life, can give and take life as he chooses.",
+          "Its strength is that it refuses to let the modern conscience overrule the text, and that it is true that every life is God's to give and to end. Its hard question is that God's right to take a life is not obviously a right to command human beings to take it, and that anyone who believes such a command can come from God has to ask how he would ever know it had. That second question is not abstract, as the next part shows.",
+        ],
+      },
+      {
+        heading: "What these chapters do not permit",
+        body: [
+          "Whatever reading a Christian holds, these texts give no warrant for violence by anyone today. The command in Deuteronomy names particular peoples in one land at one moment, and the same chapter requires an offer of peace to cities outside it (Deuteronomy 20:10, 15). Nothing in the New Testament renews it. When a disciple drew a sword for Jesus, he said, \"Put your sword back into its place. For all who take the sword will perish by the sword\" (Matthew 26:52). No nation today is Israel at Jericho, and no people today stands in the place of Canaan.",
+          "Christians have used these chapters anyway. On May 26, 1637, English soldiers with Mohegan and Narragansett allies burned a fortified Pequot village near the Mystic River, and several hundred Pequots died, women and children among them. The next year one of the English captains, John Underhill, answered readers who asked why Christians had shown so little mercy: \"Sometimes the Scripture declareth women and children must perish with their parents.\" He added, \"We had sufficient light from the word of God for our proceedings.\" His fellow captain, John Mason, framed the war in the language of Canaan. That is the misuse the church has to name as its own. The move from God judged them to God is with us against them still comes easily, and it feels like faithfulness while we make it.",
+        ],
+      },
+      {
+        heading: "What remains, and what this does not prove",
+        body: [
+          "The strongest reply to everything above is simple: you've given four readings because none of them works alone. There's truth in that. The hyperbole reading leaves Jericho. The judgment reading leaves the children. The christological reading leaves the question of who decides. The traditional reading leaves the question of how anyone could know. A Christian who says these chapters are easy hasn't read them.",
+          "Here is what this doesn't prove. It doesn't prove the Bible is from God, and it doesn't make the texts comfortable. It doesn't answer the particular child who chose none of it, and I won't decorate that grief. What it shows is narrower. The charge that the Bible simply endorses genocide, as a template, reads past what the text itself says about survivors, judgment, its own limits, and the Christ who came after. The God who waited generations for the Amorites is the God who asks, \"Have I any pleasure in the death of the wicked, declares the Lord GOD, and not rather that he should turn from his way and live?\" (Ezekiel 18:23).",
+          "Abraham, the father of the faith, argued with God over Sodom: \"Shall not the Judge of all the earth do what is just?\" (Genesis 18:25). The Bible doesn't rebuke him for asking. Matthew puts Rahab of Jericho in Jesus' family tree (Matthew 1:5), and tells of a Canaanite woman who begged Jesus for her daughter and heard, \"O woman, great is your faith! Be it done for you as you desire\" (Matthew 15:28). Christians believe the Judge answered Abraham's question at the cross. That answer doesn't close these chapters. It means we read them with Abraham's question still open, and with the Judge's own face in view.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "K. Lawson Younger", title: "Ancient Conquest Accounts: A Study in Ancient Near Eastern and Biblical History Writing", year: "1990" },
+      { author: "K. A. Kitchen", title: "On the Reliability of the Old Testament", year: "2003" },
+      { author: "Richard Dawkins", title: "The God Delusion", year: "2006" },
+      { author: "Wes Morriston", title: "Did God Command Genocide? A Challenge to the Biblical Inerrantist", in: "Philosophia Christi", year: "2009", note: "The best case against, made carefully." },
+      { author: "Randal Rauser", title: "\"Let Nothing that Breathes Remain Alive\": On the Problem of Divinely Commanded Genocide", in: "Philosophia Christi", year: "2009" },
+      { author: "Eric A. Seibert", title: "Disturbing Divine Behavior: Troubling Old Testament Images of God", year: "2009" },
+      { author: "Paul Copan and Matthew Flannagan", title: "Did God Really Command Genocide? Coming to Terms with the Justice of God", year: "2014" },
+      { author: "Gregory A. Boyd", title: "The Crucifixion of the Warrior God", year: "2017" },
+      { author: "John Underhill", title: "Newes from America", year: "1638" },
     ],
     essaySlug: "did-god-command-genocide",
     essayTitle: "Did God Command Genocide?",
@@ -862,9 +1221,79 @@ export const ANSWERS: Answer[] = [
     slug: "is-faith-just-wishful-thinking",
     question: "Is faith just wishful thinking?",
     paragraphs: [
-      "Sometimes, yes. Religion can be a crutch, and it constantly is for people who make it one. Much of what gets called faith is projection, a god assembled out of a person's fears and preferences, warm where they want warmth and silent where they want silence. The church has sold that god by the millions. If your argument is that some faith is wish-fulfillment, you are not wrong. You are describing my inbox.",
-      "Feuerbach (1841) and Freud (1927) gave the suspicion its spine: God is the best of human nature projected onto the sky, the exalted cosmic father the frightened child never stopped wanting. They have a point. But the argument slides from how a belief arose to whether it is true, and that is the genetic fallacy. A frightened man believes the shore is close because he needs it to be, and the shore may also be close. His fear does not move the coastline. The tool cuts both ways. Nagel, no friend of religion, wrote, \"I don't want there to be a God. I don't want the universe to be like that.\" The wanting is on both sides of the table. The God of Scripture is the last god a frightened person would order: holy, demanding, crucified. A wish-god does not bleed.",
-      "I ran the projection test on everyone but myself. For years I told myself I had followed the evidence into the cold. But underneath, where I did not look, was a boy raised without a father who found in a Godless universe not a grief but a relief, because a sky with no Father in it could not disappoint him the way one man already had. I wanted there to be no God. Ask the believer what they want to be true, and you will find plenty of faith that is a wish with a steeple. Then have the nerve to ask it of yourself. The crutch was real. It was just in my other hand.",
+      "Sometimes, yes. Religion can be a crutch, and it constantly is for people who make it one. Much of what gets called faith is projection, a god assembled out of a person's fears and preferences, warm where they want warmth and silent where they want silence. The church has sold that god by the millions. But the charge proves less than it seems to. Showing why someone wants a belief to be true doesn't show that it's false, as Freud himself admitted. The wish runs both ways, since plenty of people want there to be no God, and some of the best of them have said so. And the God of the Bible is a strange thing to have wished for. None of that proves God exists. It means the question has to be settled by evidence, not by a guess about anyone's motives, believer or unbeliever.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The suspicion has a distinguished history, and it should be stated in its best form. In 1841 the German philosopher Ludwig Feuerbach published The Essence of Christianity. His claim was that God is human nature looked at from outside. We take the best of ourselves, our love, wisdom and goodness, set it in the sky, call it God, and worship it, and in doing so we empty ourselves of what is really ours. Three years later, in February 1844, Karl Marx took the idea from the study to the street: \"Religion is the sigh of the oppressed creature, the heart of a heartless world, and the soul of soulless conditions. It is the opium of the people.\" Religion, on his account, is what people reach for when life is unbearable, and it keeps them from changing the conditions that make it so.",
+          "Sigmund Freud gave the suspicion its sharpest form in The Future of an Illusion (1927). Every child, he argued, meets the world in terror and helplessness, and is protected by a father. The adult never stops being helpless before nature, illness and death, and so he makes the father permanent, a God who guards him, rewards the good, punishes the wicked and promises life after the grave. Religious doctrines, Freud wrote, are \"illusions, fulfilments of the oldest, strongest and most urgent wishes of mankind.\" Their power comes from the power of those wishes, not from evidence. That is why believers hold them so fiercely and examine them so little.",
+          "I grant much of this, because the Bible grants it first. People do make gods out of their wishes. Israel did it with a golden calf, and the prophets spent centuries attacking a religion that told people what they wanted to hear. Jeremiah said of the religious leaders of his day, \"They have healed the wound of my people lightly, saying, 'Peace, peace,' when there is no peace\" (Jeremiah 6:14). A faith whose God never disagrees with you, never asks anything you didn't already want to give, and always takes your side is the faith Freud described, and a great deal of it is preached in churches every Sunday. If your argument is that some faith is wish-fulfillment, you are not wrong.",
+        ],
+      },
+      {
+        heading: "What kind of case this is",
+        body: [
+          "The projection argument is an argument about where beliefs come from. Philosophers call this kind a genealogy, or a debunking argument: it doesn't claim to show that God doesn't exist, but that belief in God is produced by something that has nothing to do with whether he does. So the question here isn't whether God exists. That has its own page. The question is whether an account of why people believe can settle whether what they believe is true, and if not, what it can do.",
+        ],
+      },
+      {
+        heading: "Freud's argument, laid out",
+        body: [
+          {
+            kind: "The projection argument, as Freud's readers usually take it",
+            premises: [
+              "Belief in God matches what human beings deeply wish for: protection, a father, justice and life after death.",
+              "When a belief matches our wishes that closely, the wishes are the likeliest explanation of why we hold it.",
+              "Beliefs produced by wishes are not produced by a process aimed at truth, so they can't be trusted.",
+            ],
+            conclusion: "Belief in God can't be trusted, however sincerely it is held.",
+          },
+          "Notice first what Freud himself did not claim. He defined an illusion by where it comes from, not by whether it is true. \"Illusions need not necessarily be false,\" he wrote, and his example was a girl of modest means who believes a prince will come and marry her. It's unlikely, and her wish explains her belief, but it has happened. He said plainly in the same book, \"To assess the truth-value of religious doctrines does not lie within the scope of the present enquiry.\" On Freud's own terms, then, the argument can't show that there is no God. A frightened man believes the shore is close because he needs it to be, and the shore may also be close. His fear does not move the coastline. Reasoning from how a belief arose to whether it's true is the mistake logicians call the genetic fallacy.",
+          "The stronger version doesn't make that mistake. It rests on the third premise: even if the belief happens to be true, it wasn't formed in a way that tracks the truth, so you have no right to hold it. The philosopher Alvin Plantinga answered this in Warranted Christian Belief (2000), and his answer is the heart of the matter. Whether wish is a bad way to come by a belief depends on what the world is like. If there is no God, then the longing for him is a misfire, and belief built on it is unreliable. But if there is a God who made human beings to know him, the longing may be exactly how he made us able to find him. Augustine said as much at the opening of his Confessions, around the year 400: \"you have made us for yourself, and our heart is restless until it rests in you.\" So the complaint that faith is unreliable already assumes that God doesn't exist. Plantinga also pointed out that neither Freud nor Marx offered much of an argument that faith in fact arises this way. They described how it could, on the assumption that it is false.",
+        ],
+      },
+      {
+        heading: "The wish runs both ways",
+        body: [
+          "If wanting a belief to be true discredits it, the rule has to be applied to everyone.",
+          {
+            kind: "An argument from parity",
+            premises: [
+              "If a belief is discredited because the person holding it wants it to be true, then every belief its holder wants to be true is discredited in the same way.",
+              "Many people want there to be no God, and some of the most careful unbelievers have said so plainly.",
+            ],
+            conclusion: "Applied evenly, the projection argument discredits unbelief as much as faith, and so it settles neither. The question goes back to the evidence.",
+          },
+          "The second premise doesn't need a guess about anyone's motives. The philosopher Thomas Nagel, one of the most respected unbelievers of his generation, wrote in The Last Word (1997), \"I want atheism to be true,\" and went on: \"I don't want there to be a God; I don't want the universe to be like that.\" He guessed that this \"cosmic authority problem\" is not rare. The psychologist Paul Vitz turned Freud's own method around in Faith of the Fatherless (1999). He looked at the lives of well-known atheists of the last four centuries and found that many had lost a father early or had a weak, harsh or absent one, and he argued that unbelief can be a projection too, a refusal of any Father in heaven by those failed by one on earth. Vitz was careful to say this doesn't determine anyone's beliefs, and his evidence has the limits of any such survey.",
+          "I was raised without a father, so I can't read either theory as a stranger to it. On Freud's account, any faith I hold is the obvious wish of a fatherless boy. On Vitz's account, unbelief in a man like me would be just as easy to explain. Both stories can be told about the same person, and that is the trouble with both. They tell you something about the believer. They tell you nothing about whether God is there.",
+        ],
+      },
+      {
+        heading: "Is this the God anyone would wish for?",
+        body: [
+          "There is one more test, and it cuts against Freud. If God were made from our wishes, we would expect him to look like what we want. Some gods do. The God of the Bible often doesn't. When Isaiah saw him, he didn't feel comforted. He said, \"Woe is me! For I am lost\" (Isaiah 6:5). The letter to the Hebrews says, \"It is a fearful thing to fall into the hands of the living God\" (Hebrews 10:31). Jesus told those who would follow him, \"If anyone would come after me, let him deny himself and take up his cross daily and follow me\" (Luke 9:23), and he told them to \"love your enemies and pray for those who persecute you\" (Matthew 5:44). The center of the faith is a crucified Messiah, which Paul himself called \"a stumbling block to Jews and folly to Gentiles\" (1 Corinthians 1:23). The God of Scripture is the last god a frightened person would order: holy, demanding, crucified. A wish-god does not bleed.",
+          "A skeptic can fairly answer that even the hard parts serve wishes. Judgment satisfies the wish to see our enemies punished, and a demanding God satisfies the wish to feel serious. There's something in that. But the same Scriptures command love for those enemies, and they place the believer under the same judgment as everyone else. A projection that keeps turning on its maker is an odd kind of projection. This test can't prove that God exists. It shows that the wish account fits the actual content of the faith worse than it claims to.",
+        ],
+      },
+      {
+        heading: "The best reply, and what this does not prove",
+        body: [
+          "The strongest reply goes like this. I'm not saying your belief is false because of where it came from. I'm saying we now have a full explanation of religious belief that doesn't need God, in fear, in wishes, in the way minds like ours are built, and once a belief is fully explained without its object, it has nothing left to stand on. That's a serious argument, and it works in many cases. If I learned that I believed something only because I'd been hypnotized to, I should drop it. But it works only if two things are true: that the explanation is complete, and that there is no other evidence for the belief. Neither has been shown. Freud offered a theory, not a study of believers, and the case for God doesn't rest on anyone's feelings. It rests on arguments from why anything exists, from a universe fit for life, from goodness that binds us, and on the history of Easter, each of which has its own page. A debunking argument also has to be careful what it debunks. Our trust in reason and our sense that cruelty is really wrong came to us through minds shaped by the same pressures, and few people are ready to give those up.",
+          "Here is what the argument doesn't prove. It doesn't prove that God exists. It doesn't defend faith that really is a wish with a steeple; much of it is, and it deserves Freud's scorn. It doesn't show that unbelievers are driven by wishes either; Nagel's honesty is a credit to him, not a charge against him. What it shows is narrower. The question of motive can be asked of everyone, and it settles nothing for anyone.",
+          "The Bible doesn't flatter believers about their motives. \"The heart is deceitful above all things\" (Jeremiah 17:9), and that includes the believing heart. So ask yourself what you want to be true, whichever way it points. Then put the question down and look at the evidence anyway. The most honest prayer in the Gospels comes from a father with a suffering son, who wanted something badly and knew it: \"I believe; help my unbelief!\" (Mark 9:24). Wanting something doesn't make it false. It just means you have to look harder.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "Ludwig Feuerbach", title: "The Essence of Christianity", year: "1841" },
+      { author: "Karl Marx", title: "A Contribution to the Critique of Hegel's Philosophy of Right, Introduction", year: "1844" },
+      { author: "Sigmund Freud", title: "The Future of an Illusion", year: "1927", note: "The best book against: faith as the wish for a father made permanent." },
+      { author: "Thomas Nagel", title: "The Last Word", year: "1997" },
+      { author: "Paul C. Vitz", title: "Faith of the Fatherless: The Psychology of Atheism", year: "1999" },
+      { author: "Alvin Plantinga", title: "Warranted Christian Belief", year: "2000", note: "The answer to the Freud and Marx complaint." },
+      { author: "Augustine", title: "Confessions", year: "c. 400; tr. Henry Chadwick, Oxford, 1992" },
     ],
     essaySlug: "is-faith-just-wishful-thinking",
     essayTitle: "Is Faith Just Wishful Thinking?",

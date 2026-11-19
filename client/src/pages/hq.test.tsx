@@ -232,11 +232,17 @@ describe("/answers and /answers/:slug", () => {
   it("keeps the argued form to the answers rebuilt so far, each with checked sources", () => {
     const argued = ANSWERS.filter((a) => a.sections);
     expect(argued.map((a) => a.slug).sort()).toEqual([
+      "are-miracles-believable",
+      "can-you-be-good-without-god",
+      "did-god-command-genocide",
       "did-the-resurrection-actually-happen",
       "do-i-have-to-choose-between-faith-and-science",
       "does-god-actually-exist",
       "if-god-is-good-why-suffering",
+      "is-faith-irrational",
+      "is-faith-just-wishful-thinking",
       "is-hell-forever-or-does-it-end",
+      "is-jesus-the-only-way",
       "was-jesus-just-a-good-teacher",
       "what-if-christianity-is-wrong",
       "why-does-god-allow-natural-disasters",
