@@ -4144,3 +4144,30 @@ chapter, with the deep note, the verse notes, and the Genesis 25 plain note.
 Cut: the Nuzi tablets on spoken blessings (asserted without a source in the
 search results); Chrysostom's reading of Hebrews 12:17 (only in a catena);
 "dew watered the crops" replaced by the verse note's wording.
+
+## The plain notes on Genesis 28 (2026-11-19)
+
+`client/public/bible/notes/genesis/plain/28.json`. One web search for this
+chapter, with the deep note, the Genesis 11, 12 and 14 plain notes and their
+ledger rows.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Paddan-aram the region of Haran; Nahor's family (24:10; 25:20); hundreds of miles from Beersheba | 1-5 | Repository deep note (`historical`, which says more than four hundred miles) | Repository; said only as "hundreds of miles" |
+| Marrying within the wider family preferred | 1-5 | Repository deep note (`cultural`) | Repository |
+| El Shaddai, meaning uncertain (17:1); Genesis 35:11 | 1-5 | Earlier Genesis 17 rows; BSB | Repository |
+| Land promise pointed back to the Genesis 12:4-9 note | 1-5 | Site | Repository |
+| Genesis 32:10 (only a staff) | 1-5 | BSB | Repository |
+| Mahalath, Ishmael's daughter; Basemath in 36:3 taken by many as the same; the lists do not match | 6-9 | BSB | Repository; uncertainty stated |
+| sullam occurs only here; linked by many to Akkadian simmiltu, ‘stairway, ramp’; the link doubted by others (Speiser, Hamilton); the Greek Old Testament's klimax can mean ladder or staircase | 10-15 | NET Bible note on 28:12; thetorah.com "Jacob's dream"; b-hebrew list as summarised | Search: "sullam Genesis 28:12 ... simmiltu ziggurat". Stated as debated |
+| Ziggurats: stepped towers with a shrine at the top (Genesis 11 plain note wording); the comparison held by some, thought to go too far by others | 10-15 | Site; NET note; Alter's ‘ramp with terraced landings’ as summarised (not named) | Search above; Genesis 11 ledger row |
+| Babel understood as Bab-ili ‘gate of the god’ | 10-15 | Genesis 11 plain note and its ledger | Repository |
+| John 1:47, 51; Matthew 28:20; Hebrews 13:5; Psalm 139:7 | 10-15 | BSB | Repository |
+| Bethel ‘house of God’; Luz; pillar and oil; sacred places; Deuteronomy 16:22; on the ridge road north of Jerusalem; 12:8 | 16-19 | Repository deep note (`historical`, `cultural`) | Repository |
+| Jeroboam's calf (1 Kings 12:29); Amos 5:5; Beth-aven (Hosea 4:15); Hosea 12:4; Genesis 35:1 | 16-19 | BSB; deep note | Repository |
+| Conditional vows (1 Samuel 1:11); tithe pointed back to the Genesis 14:17-20 note; ‘your God’ (27:20) and ‘my God’ | 20-22 | Deep note (`hard`, `cultural`); BSB | Repository |
+| Bargain or faith: both readings; the Hebrew of ‘then the LORD will be my God’ read two ways | 20-22 | Deep note (`hard`) | Repository; no side |
+| Genesis 31:13; 35:7; 2 Corinthians 9:7 | 20-22 | BSB | Repository |
+
+Cut: Gezer and Arad standing stones (in the deep note, not needed); Beitin
+by name; "more than four hundred miles".
