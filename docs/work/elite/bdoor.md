@@ -2638,3 +2638,208 @@ beyond reference works.
 ### Next
 
 Luke 9 onward in plain words, in the same shape.
+
+## Continuation: Luke 9 to 13 (2026-11-19)
+
+Data only: `client/public/bible/notes/luke/plain/9.json` to `13.json`, and
+`"plain": true` added at the end of `luke/9.json` to `luke/13.json` with no
+other change to those files (each diff is the one closing brace and the new
+line; each file's own ending, with or without a final newline, kept). No app
+code changed.
+
+### Chapters 9 to 13 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Luke 9 | 9 (the twelve sent out, and Herod's question; five thousand fed; ‘The Christ of God’; take up your cross daily; glory on the mountain, and the talk of his departure; a father's only son; who is the greatest? not one of us; his face set toward Jerusalem, fire refused; three who would follow) | 5,134 |
+| Luke 10 | 7 (seventy-two sent ahead; woe to the towns; ‘I saw Satan fall like lightning’; Jesus rejoices; ‘And who is my neighbor?’; the Good Samaritan; Martha and Mary) | 4,179 |
+| Luke 11 | 7 (‘Lord, teach us to pray’; a friend at midnight, ask, seek, knock; ‘By the finger of God’; the empty house, and who is blessed; the sign of Jonah and the lamp; woes at a Pharisee's table; woes on the experts in the law) | 4,173 |
+| Luke 12 | 7 (the leaven of hypocrisy, fear, and the sparrows; confessing Jesus, and the sin against the Spirit; the rich fool; do not worry, where your treasure is; ready servants, to whom much is given; fire, a baptism, and division; reading the sky, and settling on the way) | 4,424 |
+| Luke 13 | 6 (the Galileans, and the tower that fell; one more year for the fig tree; a daughter of Abraham set free; the mustard seed and the leaven; the narrow door; ‘Go tell that fox’ and the lament) | 3,723 |
+| Total | 36 | 21,633 |
+
+Where Mark or Matthew already tell an event, the note says so, points to
+their note, reuses its checked wording, and spends its words on what Luke
+does differently ("daily", exodos, "chosen", the only child, Luke's shorter
+prayer, the finger of God, the egg and scorpion and the Holy Spirit, rue and
+the unmarked graves, five sparrows for two pennies, ravens and "little
+flock", the master who serves, the fire and the baptism). The fuller
+treatment goes to what only Luke has: 9:51-56 and 9:61-62, the seventy-two,
+Satan's fall, the Good Samaritan, Martha and Mary, the friend at midnight,
+the woman in the crowd, the rich fool, Luke 13:1-9 and 13:10-17, and "that
+fox".
+
+### Field order, checked
+
+After each chapter every passage was printed field by field and read: all 36
+sit under their right headings. `validate-bible-notes` passed after each with
+no exceptions (`OT_FIELD_KNOWN` stays empty); its quotation check found every
+quotation verbatim in the repository's BSB (five quotations that ran across a
+"he said" were split at the speaker, as the BSB splits them).
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Luke 9" to "13". 17 web
+searches (3, 6, 3, 2, 3). Main sources: the apparatus on 9:35, 9:54 and
+9:55-56 as reported (NET notes; P75, Sinaiticus, Vaticanus); the divided
+witness on seventy and seventy-two; the Genesis 10 numbers; Mishnah Nazir
+7:1 and Bauckham, New Testament Studies 44 (1998); the Ascent of Adummim and
+Jerome; Augustine's allegory (Quaestiones Evangeliorum 2.19); Mishnah Avot
+1:4; P75 on Luke's shorter prayer; anaideia (Johnson, JETS 1979; Snodgrass,
+JBL 1997, as reported); Mishnah Sheviit 9:1 on rue; Sirach 11:18-19; the
+night watches; the Galileans and the tower of Siloam as attested only in
+Luke; the fox. Greek facts (exodos three times, analēmpsis once, anaideia
+once, baptizō in 11:38, girded waists, lepton, kopria, agōnizomai, luō for
+ox and woman, teleioumai) are a script over the repository's Greek. Earlier
+ledger rows reused for the Samaritans, Bethsaida, the cross, Tabor and
+Hermon, McCane's second burial, Jericho road, the Pharisees, Abel and
+Zechariah, Gehenna, Bunyan, Antony, Pilate in Philo and Josephus, the Siloam
+pool, mustard and leaven. Scripture is the BSB, checked word for word.
+
+### Cut or narrowed
+
+Cut: the Cynics and Theissen; Josephus on Machaerus; the two Bethsaida sites;
+the "great omission" label; "the only miracle in all four Gospels" (now "one
+of the few events"); the "1800s" date for the sharing explanation; Leo the
+Great by name; Conzelmann, Evans, Moessner, Hengel, Sanders, Tertullian,
+Marcion and Ambrose; P45 for 9:55-56 (not confirmed); which manuscripts read
+seventy or seventy-two; long formal greetings as the reason for 10:4;
+"people debated how far 'neighbour' reached"; the 10:42 variant; the Holy
+Spirit petition in some copies of 11:2; Bailey's village customs; a lodging
+price for two denarii; 1 Enoch and Malherbe; the night-watch hours; the
+mud-brick wall and woollen wealth; "people brought inheritance quarrels to
+teachers"; "many teachers held healing could wait"; Gerizim and the aqueduct
+for Pilate; the lion contrast for the fox; "falling walls" in AD 70.
+Narrowed: wine to clean wounds ("many think"); the expected Israelite third
+traveller ("Many readers think"); a woman at a teacher's feet ("Many
+scholars think it was not the usual place"); 2 Chronicles 28:15 ("many
+readers think Jesus had it in mind"); the tower "perhaps part of the city
+wall"; the fig tree's vineyard from the verse only; the glory as
+strengthening ("One common answer").
+
+### Contested matters, and how they are stated
+
+The longer wording of 9:54-56 (the oldest copies lack it; most scholars
+think it added; "They are true to Jesus ... But the plainer text is
+enough"). "Chosen" or "beloved" at 9:35 (the oldest copies). The views of
+9:27 (Mark 9 wording). Burying a father (three readings). Seventy or
+seventy-two ("scholars still argue"). Satan's fall (three readings). The
+priest and the Levite (below). Augustine's allegory and the plain reading
+("Others say both can be true"). Martha and Mary (not a ranking). Luke's
+shorter prayer (two explanations, no majority claimed). Anaideia
+(persistence, the asker's boldness, the sleeper's shame). Luke 11:28 (a
+correction, or Mary as the first who heard and kept). What hell is like (the
+Matthew 10 note, not settled). The unforgivable sin (views, no choice).
+"Sell your possessions" (literal for some, generosity for all; Acts 5:4;
+Zacchaeus). "Cut him to pieces" (two readings). The fire (the Spirit,
+judgment, refining). The opponent at law (God's judgment, or quarrels now).
+The fig tree's owner and keeper (two readings, not setting the Father
+against the Son). How many will be saved (two readings, not settled). 13:35
+(hope, warning, both; 19:38).
+
+**The priest and the Levite, the sentences on the page (Luke 10:30-37).**
+"Why did they pass by? Many sermons say they were afraid of becoming
+unclean. A priest was not to make himself unclean for a dead person, except
+for close family (Leviticus 21:1-3), and the man looked half dead. But that
+explanation is debated. Both men were going down the road, away from
+Jerusalem, so they were not hurrying to serve in the temple. The Law gave
+Levites no such rule about the dead. And a later Jewish teaching, written
+down in the Mishnah around AD 200, says that even a high priest must become
+unclean to bury a body that no one else will bury (Mishnah Nazir 7:1). How
+far that later teaching shows what people thought in Jesus' day is not
+known. The scholar Richard Bauckham argued (New Testament Studies, 1998)
+that the story sets two duties against each other, keeping clean and loving
+your neighbour, and shows that love must come first. Jesus himself gives no
+reason at all. Whatever their reasons, the story gives them no excuse."
+
+**The Good Samaritan.** "Who was a neighbour?" for "Who is my neighbour?";
+the lawyer cannot say "the Samaritan"; "The story is not the programme of a
+political party, of the left or the right. It is not only a call to be nice
+either. It asks for mercy that costs time, money and safety, given across a
+line of old hatred, to anyone in need. That is hard, and it should not be
+softened." The Samaritans in the John 4 wording, with about nine hundred
+living today.
+
+**Luke 13:1-5, the sentences on the page.** "Were the people who died worse
+sinners? Jesus says no, twice: ‘No, I tell you.’ Suffering is not a measure
+of guilt. ... Anyone who tells a grieving family that a death was a
+punishment is saying what Jesus refused to say." "Then what does ‘unless you
+repent, you too will all perish’ mean? It is a call to everyone listening,
+the people who brought the news included. It is not a threat to the
+bereaved, and it is not an explanation of why anyone died."
+
+**The woes and the Jewish people.** Luke 11:37-54 uses the Matthew 23
+wording: who the Pharisees were; "So ‘Pharisee’ is not a word for a
+hypocrite"; "The woes are a warning to religious leaders, never a verdict on
+the Jewish people"; "And the woes fall first on religious leaders of every
+age, Christian ones included"; the "Christ-killers" sentences and Acts 4:27
+on 11:51. Luke 13:31-35: the Pharisees who warn Jesus; "This is grief, not a
+verdict. The lament is not a sentence passed on the Jewish people."
+
+**Violence.** 9:51-56: "This passage can never be a warrant for violence
+against anyone in God's name: not against a village, a people, a religion,
+or a person who says no to Jesus." 10:1-12: wiping off the dust allows no
+one "to harm or punish those who turn the message down". 12:49-53: "This is
+a picture of division, not a call to violence", with 22:51.
+
+**Money.** 12:13-21: not against saving or planning (Joseph, the ant);
+against greed and storing "for himself"; the book page's refusal of both the
+prosperity reading and contempt for the rich. 11:5-13: the Matthew 7
+sentences against the prosperity reading.
+
+### Care lines included
+
+9:23-27: denying yourself is not accepting harm; "If someone is hurting you,
+seeking safety is not a failure to carry your cross." 9:37-45: the Mark 9
+illness wording word for word; the father let down by Jesus' followers.
+9:57-62: the Matthew 8 paragraph adapted, ending word for word "If you are
+grieving a father or mother now, hear this clearly: grief is not
+disobedience. Jesus himself grieved." 10:17-20: no testing God with real
+snakes; joy for those with no visible gift. 10:38-42: for the reader who is
+the Martha ("Jesus is not scolding you. He sees how much you carry, and he
+says your name with love."). 11:1-4: the Matthew 6 forgiveness-misuse
+paragraph word for word. 11:14-28: the Matthew 9/12 illness sentence and the
+Matthew 12:43-45 paragraph with its help line ("Please get help again: a
+doctor, a pastor, or a crisis line."). 12:1-12: fear of judgment and of the
+unforgivable sin (Bunyan; "the fear itself is a sign"). 12:22-34: the site's
+help wording word for word, with 988 for the United States. 12:49-53: the
+Matthew 10 family-rejection paragraph (police or a crisis line if in danger).
+13:1-5: "If you have lost someone to violence, or to an accident or
+disaster, this passage does not say they deserved it. Jesus says the
+opposite. Grief is not unbelief. If grief is crushing you, do not carry it
+alone. Reach out to people you trust, to a pastor, or to someone trained to
+help." 13:10-17: illness is illness; "Your worth to God does not rise or fall
+with your body." 13:22-30: "not meant to scare anyone into sleepless fear".
+
+### What was run, and what passed (watched)
+
+`validate-bible-notes` (partial, Luke) and `validate-no-emdash` after each
+chapter: pass. At the end, all 36 commands of the content-gates step in
+ci.yml, one at a time: exit 0 each (validate-bible-notes: 66 introductions,
+1,189 chapter notes, 78 chapters in plain words; validate-no-emdash: 260
+files, 0 em-dashes; search index 732 entries up to date; passage index 623
+files match; verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm
+test`: 146 files passed, 7 skipped; 1,659 tests passed, 73 skipped.
+
+Rendered check, after the chapter commits: `pnpm build` (exit 0), served
+with `scripts/serve-like-vercel.mjs` on port 4604, and a Playwright script
+at 390 wide (deviceScaleFactor 1, `/api/trpc`, `/api/track` and `/_vercel/*`
+stubbed) opened `/study/bible/luke/9` to `/13`. Every passage's rendered
+heading, its part headings in order and the first 60 characters under each
+matched the data: Luke 9, 9 of 9; Luke 10, 7 of 7; Luke 11, 7 of 7; Luke 12,
+7 of 7; Luke 13, 6 of 6. No sideways scroll on any, no page errors, no
+console errors. Screenshots read: `/home/user/elite-shots/bdoor/lk913-10-390-*.png`
+(top, the Good Samaritan, Martha and Mary) and `lk913-13-390-*.png` (top,
+13:1-5, 13:10-17). Server stopped by its PID, dist/ deleted, no lh-*.json.
+Lighthouse not run (no app code changed).
+
+### Still unverified
+
+Ancient writers' exact words (Jerome, Augustine and the Mishnah all
+paraphrased); which manuscripts read seventy and which seventy-two; how far
+the Mishnah's rules (Nazir 7:1, Sheviit 9:1, Avot 1:4) show first-century
+practice (said each time); the tower's site; the night-watch system.
+
+### Next
+
+Luke 14 onward in plain words, in the same shape.
