@@ -1117,9 +1117,88 @@ export const ANSWERS: Answer[] = [
     slug: "did-god-command-genocide",
     question: "Did God command genocide in the Old Testament?",
     paragraphs: [
-      "On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly. I will not hand you a comfort I could not accept myself. \"You shall save alive nothing that breathes\" (Deuteronomy 20:16). To Saul, of the Amalekites: \"Do not spare them, but kill both man and woman, child and infant, ox and sheep, camel and donkey\" (1 Samuel 15:3). Child and infant. Richard Dawkins called this God a \"bloodthirsty ethnic cleanser\" in The God Delusion (2006), and the line drew blood because he was quoting, not distorting. For years this was my strongest reason to reject the Bible, read aloud to win a room.",
-      "The scholars who live inside the ancient world kept pointing at something I had dismissed. K. Lawson Younger's Ancient Conquest Accounts (1990) laid the biblical narratives beside the war annals of Egypt and Assyria and found the same stock formula: total annihilation was the conventional idiom of victory, not a literal census. Kenneth Kitchen, no friend of softening Scripture, said the same in On the Reliability of the Old Testament (2003). And the Bible refuses to let the totality stand: the peoples reported as wiped out in Joshua are Israel's neighbors and in-laws two chapters later. The war is framed as judgment on named evil, not race, with Israel warned it stands under the identical standard: \"Not because of your righteousness ... but because of the wickedness of these nations the LORD your God is driving them out from before you\" (Deuteronomy 9:5). It is sealed to one people, one land, one window, never a template. Then Jesus takes the sword off the table with his own hands: \"Put your sword back into its place\" (Matthew 26:52).",
-      "Put it all together, the genre I misread, the judgment on real evil, the seal that shuts the conquest forever, and a weight still remains. The hyperbole eases the scale and does not empty the battlefield. I have no answer for the particular child who chose none of it, and I will not decorate that grief. The texts did not stop being hard. But three of my certainties turned out softer than I had sworn, and a man who finds three certainties soft is obligated to wonder about the fourth. If you leave still troubled, we are troubled together. I think that is the right place to be.",
+      "On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly. \"You shall save alive nothing that breathes\" (Deuteronomy 20:16). To Saul, of the Amalekites: \"Do not spare them, but kill both man and woman, child and infant, ox and sheep, camel and donkey\" (1 Samuel 15:3). Christians who hold the whole Bible to be God's word read these chapters in more than one way, and I'll set out the main readings with the strength and the hard question of each, without pretending any of them makes the problem go away. Two things hold under all of them. The God of Joshua is the Father of Jesus. And nothing in these chapters gives anyone today a warrant for violence against anyone.",
+    ],
+    sections: [
+      {
+        heading: "The case against, at its strongest",
+        body: [
+          "The commands are in Deuteronomy, for the war Israel was about to fight west of the Jordan. For the peoples of the land, the law says, \"you shall save alive nothing that breathes, but you shall devote them to complete destruction\" (Deuteronomy 20:16-17). Joshua narrates it. At Jericho \"they devoted all in the city to destruction, both men and women, young and old, oxen, sheep, and donkeys, with the edge of the sword\" (Joshua 6:21). The word genocide is modern. Raphael Lemkin coined it in 1944, and the United Nations convention adopted on December 9, 1948, defines it as acts \"committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group, as such.\" Deuteronomy 20 names six peoples and gives a religious reason. If a government gave that order today, we would know what to call it.",
+          "Richard Dawkins put the charge loudly in The God Delusion (2006), calling the God of the Old Testament \"the most unpleasant character in all fiction\" and, among much else, a \"vindictive, bloodthirsty ethnic cleanser.\" The serious form of the objection was made more carefully, in 2009, in a symposium in the Christian philosophy journal Philosophia Christi. The philosopher Wes Morriston, in \"Did God Command Genocide? A Challenge to the Biblical Inerrantist,\" argued that a morally perfect God would not command such a thing unless he had a morally sufficient reason, and that it is very unlikely any such reason existed. Randal Rauser, writing in the same symposium, argued that a perfect God would not command a moral atrocity, that genocide is always one, and so God did not command it. Behind both stands a point about what we can know. We are more sure that it is wrong to kill a child for what his parents did than we could ever be that an ancient text speaks for God. When the two collide, the reasonable thing is to doubt the text.",
+          "I grant the force of that. People have left the faith on this reasoning, taking their consciences seriously, which is what the church tells them to do. I have five sons. Whatever a Christian says about \"child and infant\" has to be something he could say with a parent listening. If these chapters have shaken your own faith, talk it through with someone; the Find Help page has real people you can call.",
+        ],
+      },
+      {
+        heading: "What kind of question this is",
+        body: [
+          "Two questions are tangled here. One is first-order, settled by the creeds the whole church confesses: is the God of these chapters the same God as the Father of Jesus? The church answered that in the second century, when it rejected Marcion, who taught that the God of the Old Testament could not be the Father Jesus revealed. The other is how these commands should be read, and that question divides faithful Christians and careful scholars still. I won't settle it for you. The skeptic's argument is the best way to see where the readings part.",
+          {
+            kind: "The skeptic's argument (after Wes Morriston, 2009, in my words)",
+            premises: [
+              "A perfectly good God would not command the killing of children unless he had a morally sufficient reason.",
+              "It is very unlikely that any such reason existed.",
+              "The Bible says that God commanded it.",
+            ],
+            conclusion: "Either God is not perfectly good, or the Bible is mistaken in saying he commanded it.",
+          },
+          "Morriston argued that a Christian who holds the Bible true can't easily deny the first premise, so the dispute comes down to the second, the claim about reasons. But the Christian readings don't all answer in the same place. Some read the third premise differently, as a description of something other than what it seems. Some deny the second. Each has a real strength, and each leaves a hard question.",
+        ],
+      },
+      {
+        heading: "First reading: the language of ancient war",
+        body: [
+          "The book of Joshua complicates its own summaries. Joshua 11:23 says \"Joshua took the whole land.\" Two chapters later God tells him \"there remains yet very much land to possess\" (Joshua 13:1). The Jebusites of Jerusalem were never driven out (Joshua 15:63). In Joshua's own farewell he warns Israel about \"the remnant of these nations remaining among you\" (Joshua 23:12), and in Judges \"the people of Israel lived among the Canaanites, the Hittites, the Amorites, the Perizzites, the Hivites, and the Jebusites\" (Judges 3:5). Right after the command to destroy them, Deuteronomy says \"You shall not intermarry with them\" (Deuteronomy 7:3), a law that assumes they will still be there. Saul is said to have destroyed all the Amalekites (1 Samuel 15:8), and fifteen chapters later four hundred of their young men escape David on camels (1 Samuel 30:17).",
+          "Scholars of the ancient Near East have shown that this is how victory was reported in Israel's world. Around 1208 BC the pharaoh Merneptah boasted on his victory stele that Israel's seed was no more. Around 840 BC Mesha, king of Moab, claimed that Israel had perished forever, and his stone uses the Bible's own word for the ban. K. Lawson Younger, in Ancient Conquest Accounts (1990), laid Joshua beside Egyptian, Hittite and Assyrian campaign reports and found the same stock, formulaic claims of total victory. Kenneth Kitchen agreed in On the Reliability of the Old Testament (2003), and Paul Copan and Matthew Flannagan made the reading central to Did God Really Command Genocide? (2014): what God required was the end of Canaan's religious order and the removal of its peoples, and the language of killing everyone belongs to the idiom of war.",
+          "Its strength is that it comes from the text, not from modern discomfort. Its hard question is that it eases the scale without emptying the battlefield. Jericho is still described as a city where men and women, young and old, were killed, and an exaggerated report of a massacre is still a report of a massacre. First Samuel 15:3 still says infant.",
+        ],
+      },
+      {
+        heading: "Second reading: judgment after long patience",
+        body: [
+          "The text insists the war was not a reward for Israel's goodness: \"Not because of your righteousness or the uprightness of your heart are you going in to possess their land, but because of the wickedness of these nations\" (Deuteronomy 9:5). The charges are specific. The peoples of the land \"even burn their sons and their daughters in the fire to their gods\" (Deuteronomy 12:31), and \"the land vomited out its inhabitants\" (Leviticus 18:25). The judgment is described as late. Long before, God told Abraham his descendants would wait, \"for the iniquity of the Amorites is not yet complete\" (Genesis 15:16). And the line is not drawn by blood. Rahab of Jericho confesses Israel's God and is spared, and \"she has lived in Israel to this day\" (Joshua 6:25). Deuteronomy 13 orders the same destruction against any Israelite town that turns to other gods, and in the end, around 586 BC, Israel itself went into exile under the same charge.",
+          "Its strength is that it shows the war as judgment on named evil after long patience, not a tribal god clearing ground for his favorites. Its hard question is the one the children ask. A baby in Jericho had never offered anyone to Molech. And \"they deserved it\" is what armies always say about the towns they burn.",
+        ],
+      },
+      {
+        heading: "Third reading: God stooping, seen through Christ",
+        body: [
+          "Origen, preaching on Joshua in the third century, told his hearers that unless these wars were figures of spiritual ones, he doubted the apostles would have handed these books to the followers of a Christ who came to teach peace. In our own time Eric Seibert, in Disturbing Divine Behavior (2009), drew a distinction from Terence Fretheim between the God of the text, as Israel portrayed him, and the actual God, and read the portraits by the God that Jesus reveals. Greg Boyd, in The Crucifixion of the Warrior God (2017), keeps every page as inspired Scripture, and reads the violent portraits as God stooping to let his people see him in the terms of their own violent world, bearing their misunderstanding much as Christ bore our sin.",
+          "Its strength is that it takes seriously that the Son \"is the radiance of the glory of God and the exact imprint of his nature\" (Hebrews 1:3), and that when his disciples wanted fire on a Samaritan village, \"he turned and rebuked them\" (Luke 9:55). Its hard question is who decides which portraits truly show God. Its critics say it leaves the reader to decide which texts to set aside, which leads back toward Marcion. Boyd answers that he keeps every text and reads it through Christ, which is the opposite of what Marcion did.",
+        ],
+      },
+      {
+        heading: "Fourth reading: the right of the giver of life",
+        body: [
+          "The oldest Christian answer is the plainest. Augustine, answering the Manichaean bishop Faustus, said God gave those commands \"not in cruelty, but in righteous retribution.\" Thomas Aquinas reasoned that every human being, guilty or innocent, dies by God's power, and so \"by the command of God, death can be inflicted on any man, guilty or innocent, without any injustice whatever.\" William Lane Craig defends a form of this today: God, as the giver of life, can give and take life as he chooses.",
+          "Its strength is that it refuses to let the modern conscience overrule the text, and that it is true that every life is God's to give and to end. Its hard question is that God's right to take a life is not obviously a right to command human beings to take it, and that anyone who believes such a command can come from God has to ask how he would ever know it had. That second question is not abstract, as the next part shows.",
+        ],
+      },
+      {
+        heading: "What these chapters do not permit",
+        body: [
+          "Whatever reading a Christian holds, these texts give no warrant for violence by anyone today. The command in Deuteronomy names particular peoples in one land at one moment, and the same chapter requires an offer of peace to cities outside it (Deuteronomy 20:10, 15). Nothing in the New Testament renews it. When a disciple drew a sword for Jesus, he said, \"Put your sword back into its place. For all who take the sword will perish by the sword\" (Matthew 26:52). No nation today is Israel at Jericho, and no people today stands in the place of Canaan.",
+          "Christians have used these chapters anyway. On May 26, 1637, English soldiers with Mohegan and Narragansett allies burned a fortified Pequot village near the Mystic River, and several hundred Pequots died, women and children among them. The next year one of the English captains, John Underhill, answered readers who asked why Christians had shown so little mercy: \"Sometimes the Scripture declareth women and children must perish with their parents.\" He added, \"We had sufficient light from the word of God for our proceedings.\" His fellow captain, John Mason, framed the war in the language of Canaan. That is the misuse the church has to name as its own. The move from God judged them to God is with us against them still comes easily, and it feels like faithfulness while we make it.",
+        ],
+      },
+      {
+        heading: "What remains, and what this does not prove",
+        body: [
+          "The strongest reply to everything above is simple: you've given four readings because none of them works alone. There's truth in that. The hyperbole reading leaves Jericho. The judgment reading leaves the children. The christological reading leaves the question of who decides. The traditional reading leaves the question of how anyone could know. A Christian who says these chapters are easy hasn't read them.",
+          "Here is what this doesn't prove. It doesn't prove the Bible is from God, and it doesn't make the texts comfortable. It doesn't answer the particular child who chose none of it, and I won't decorate that grief. What it shows is narrower. The charge that the Bible simply endorses genocide, as a template, reads past what the text itself says about survivors, judgment, its own limits, and the Christ who came after. The God who waited generations for the Amorites is the God who asks, \"Have I any pleasure in the death of the wicked, declares the Lord GOD, and not rather that he should turn from his way and live?\" (Ezekiel 18:23).",
+          "Abraham, the father of the faith, argued with God over Sodom: \"Shall not the Judge of all the earth do what is just?\" (Genesis 18:25). The Bible doesn't rebuke him for asking. Matthew puts Rahab of Jericho in Jesus' family tree (Matthew 1:5), and tells of a Canaanite woman who begged Jesus for her daughter and heard, \"O woman, great is your faith! Be it done for you as you desire\" (Matthew 15:28). Christians believe the Judge answered Abraham's question at the cross. That answer doesn't close these chapters. It means we read them with Abraham's question still open, and with the Judge's own face in view.",
+        ],
+      },
+    ],
+    sources: [
+      { author: "K. Lawson Younger", title: "Ancient Conquest Accounts: A Study in Ancient Near Eastern and Biblical History Writing", year: "1990" },
+      { author: "K. A. Kitchen", title: "On the Reliability of the Old Testament", year: "2003" },
+      { author: "Richard Dawkins", title: "The God Delusion", year: "2006" },
+      { author: "Wes Morriston", title: "Did God Command Genocide? A Challenge to the Biblical Inerrantist", in: "Philosophia Christi", year: "2009", note: "The best case against, made carefully." },
+      { author: "Randal Rauser", title: "\"Let Nothing that Breathes Remain Alive\": On the Problem of Divinely Commanded Genocide", in: "Philosophia Christi", year: "2009" },
+      { author: "Eric A. Seibert", title: "Disturbing Divine Behavior: Troubling Old Testament Images of God", year: "2009" },
+      { author: "Paul Copan and Matthew Flannagan", title: "Did God Really Command Genocide? Coming to Terms with the Justice of God", year: "2014" },
+      { author: "Gregory A. Boyd", title: "The Crucifixion of the Warrior God", year: "2017" },
+      { author: "John Underhill", title: "Newes from America", year: "1638" },
     ],
     essaySlug: "did-god-command-genocide",
     essayTitle: "Did God Command Genocide?",
