@@ -542,9 +542,9 @@
           "21:1"
         ],
         "label": {
-          "dx": 0,
-          "dy": 17,
-          "anchor": "middle"
+          "dx": -6,
+          "dy": 22,
+          "anchor": "end"
         },
         "line": "A new city built by Herod Antipas and named for the emperor. John calls the lake the Sea of Tiberias, where the risen Jesus meets his disciples (21:1)."
       },
@@ -604,6 +604,11 @@
           "9:7",
           "19:17"
         ],
+        "label": {
+          "dx": -10,
+          "dy": -8,
+          "anchor": "end"
+        },
         "line": "The city of the temple and the feasts. Pools uncovered by archaeologists are widely taken to be Bethesda (5:2) and Siloam (9:7). Jesus dies outside its walls."
       },
       {
@@ -617,9 +622,9 @@
           "12:1"
         ],
         "label": {
-          "dx": 9,
-          "dy": 12,
-          "anchor": "start"
+          "dx": -12,
+          "dy": 10,
+          "anchor": "end"
         },
         "line": "The village of Martha, Mary and Lazarus, ‘a little less than two miles’ from Jerusalem (11:18). Here Lazarus is raised and Jesus anointed."
       }
