@@ -1965,3 +1965,32 @@ Hick, Nash and Pinnock by name; the Madaba map's Aenon.
 | Which hometown (Judea or Galilee); one event or two with the centurion | 43-54 | Repository deep note | Stated as views, "These notes do not settle it" |
 
 Left out: Josephus on the route (Antiquities 20.118 as a custom; Life 269, three days) and the Ginea date; Magen's fifth-century precinct; the Samaritan Pentateuch at Deuteronomy 27:4; Marqah; the Passover sacrifice on Gerizim today; the 2007 church over the well and Jerome; m. Sheviit 8:10, m. Niddah 4:1 and Sirach 50:25-26; Alter's betrothal type-scene; Heracleon, Origen, Chrysostom and Augustine on the woman; the symbolic reading of the five husbands (Augustine as reported; Schneiders); Photini and the Eastern feast (searched and found, but kept out to keep the note on the text); Duccio and Bonar; Brown's Samaritan-converts theory; the miles from Cana to Capernaum.
+
+## The plain notes on John 5 (2026-11-19)
+
+`client/public/bible/notes/john/plain/5.json`. 5 web searches.
+
+| Claim | Verses | Source | Checked by |
+|---|---|---|---|
+| The feast unnamed | 1-9 | BSB 5:1 | BSB text; no proposals named |
+| Two pools separated by a rock wall near St Anne's; colonnades on four sides and one across the wall make five; once thought symbolic (five books of Moses); many now take it as John's pool, details debated | 1-9 | Excavations as reported | Search: en.wikipedia.org Pool of Bethesda; ferrelljenkins.blog; carleton.ca. Earlier ledger (John's book page) for "widely taken to be". Schick, the White Fathers and the copper scroll not used |
+| Healing shrine of Asclepius (and Serapis) at the site in Hadrian's city after 135; whether a cult was there in Jesus' day not certain | 1-9 | Excavations as reported | Search as above. Stated as uncertain |
+| 5:3b-4 absent from P66, P75, Sinaiticus, Vaticanus; the KJV prints it; most textual scholars think it added | 1-9 | Repository `text` (John intro); manuscript surveys | Search: biblehub.com q pages; en.wikipedia.com John 5; Fee, EQ 1982 (biblicalstudies.org.uk) table. Alexandrinus not mentioned (results conflict). "Probably to explain verse 7" stated as what most think |
+| BSB leaves verse 4 empty | 1-9 | Repository Bible text | Script |
+| Deuteronomy 2:14 echo possible, not drawn by John; Isaiah 35:6 | 1-9 | BSB; repository deep note | BSB text |
+| "Do you want to get well?" not blame; healing without a right answer or faith | 1-9 | Repository `teach.pitfalls` | Repository |
+| "The Jews" here the Jerusalem authorities; misuse wrong; book page pointer | 10-18 | Book page part "The Jews in John"; repository `historical` | Repository |
+| Mishnah Shabbat 7:2 (written down around 200): thirty-nine main kinds of work, the last carrying from one domain to another | 10-18 | Mishnah | Search: jtsa.edu Mishnah Shabbat 7:2; cojs.org; steinsaltz-center.org. Marked as later |
+| Genesis 2:2; Exodus 20:8; Jeremiah 17:21 | 10-18 | BSB | BSB text (Exodus 20:10 not quoted: it holds an em-dash) |
+| Philo, Allegorical Interpretation 1.5: God never ceases making, as it is the nature of fire to burn | 10-18 | Philo, Yonge translation (1854) | Search: earlychristianwritings.com yonge book2; ccel.org; fgh.perseids.org. Paraphrased |
+| 5:14 not a teaching that the illness was punishment; 9:2-3; Luke 13:2-3 | 10-18 | BSB; repository `teach.pitfalls` and `pastoral` | BSB text |
+| A son learned the father's trade by watching | 19-24 | Repository `cultural` | Common background; Dodd not named |
+| Mishnah Berakhot 5:5: a man's agent is like himself | 19-24 | Mishnah; Jewish Encyclopedia "Agency, Law of" (Kiddushin 41b) | Search: sefaria.org sheet quoting the prayer-leader passage; jewishencyclopedia.com. Marked as later |
+| Deuteronomy 32:39; 1 Samuel 2:6; Isaiah 42:8 | 19-24 | BSB | BSB text |
+| Arius in the fourth century; Nicaea 325 and Constantinople 381; creed wording "very God of very God, begotten, not made, being of one substance with the Father" | 19-24 | The site's Nicene Creed page (`client/public/creeds/documents/nicene-creed.json`) | Repository; wording copied |
+| Daniel 7 background of "Son of Man"; Daniel 12:2; Ezekiel 37:12 | 25-30 | BSB; earlier ledger (Mark 2) | BSB text |
+| 6:29; 3:21 for verse 29 | 25-30 | BSB | BSB text |
+| Two or three witnesses (Deuteronomy 19:15); Deuteronomy 4:12; Exodus 33:20; Luke 24:27 | 31-40 | BSB | BSB text |
+| Exodus 32:11; Deuteronomy 18:15; 31:26; Numbers 21:8-9; 1:45 | 41-47 | BSB | BSB text |
+
+Left out: the feast proposals (Irenaeus, Chrysostom); the Sheep Gate's name; the spellings Bethzatha and Bethsaida and Josephus's Bezetha; the copper scroll; Gibson and von Wahlde on a ritual pool; m. Shabbat 10:5; m. Yoma 8:6; Philo 1.49 and 2 Maccabees 9:12; Dodd's apprenticed son by name; m. Ketubbot 2:9; Hillel in m. Avot 2:7; Baruch 4:1; Psalm 132:17 and Sirach 48:1; Ruether, Reinhartz, the Pontifical Biblical Commission; Athanasius, Hilary, Augustine and Bauckham by name; the 2016 debate on the Son's eternal submission.
