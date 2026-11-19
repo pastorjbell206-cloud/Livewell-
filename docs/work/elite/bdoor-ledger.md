@@ -6286,3 +6286,49 @@ No web search.
 
 Illness and sin: points to the Psalm 38 note. Verse 10: points to the book
 page's cursing psalms part.
+
+## The plain notes on Psalms 42 to 72: Book Two (2026-11-19)
+
+Same lighter shape and strict quotation script as Psalms 11 to 41.
+"Repository deep note" means `client/public/bible/notes/psalms/<n>.json`.
+Hebrew counts come from the repository's word data
+(`client/public/bible/ch/psalms/<n>.json`, Strong's numbers).
+
+## The plain notes on Psalm 42 (2026-11-19)
+
+One web search (shared with Psalm 43).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Book Two is Psalms 42 to 72; sons of Korah headings 42 to 49 (43 has none) | 1-5 | Book page ("Five books"); BSB headings | Script over BSB verse 1 |
+| Korah's line did not die out (Numbers 26:11); temple singers | 1-5 | BSB; book page | BSB text |
+| Hebrew YHWH (H3068) 273 times and Elohim (H0430) 49 in Psalms 1 to 41; 28 and 198 in 42 to 72; "Elohistic Psalms" for 42 to 83 (the deep note's term) | 1-5 | Repository word data; repository deep note (literary) | Script. Stated as "about"; the reason left open ("No one knows for sure") |
+| Seasonal streams; the feasts (Deuteronomy 16:16) | 1-5 | Repository deep note (cultural); BSB | Site's own teaching |
+| Hermon the tallest peak, feeding the Jordan; Mizar "small mountain", named nowhere else, two readings | 6-11 | Repository deep note | Site's own teaching |
+| "Deep" is tehom (H8415) in 42:7 and Genesis 1:2 | 6-11 | Repository word data | Script |
+| 42:8 the only "LORD" in Psalm 42 | 6-11 | BSB | BSB text |
+| Mark 14:34 heard as an echo of the refrain, "an echo, not a quotation" | 6-11 | Commentaries | Search: openbible.com; studia.reviste.ubbcluj.ro (Sacra Scripta article: "in some way an echo of the refrain"); friarmusings.com. The claim that the Greek translators used the same word (perilypos) was not confirmed against a critical edition, so it is not made |
+| Psalm 63:1; 84:2; John 7:37; Matthew 27:43; Jonah 2:3 ("swept over me") | all | BSB | BSB text |
+
+Care line in the Psalm 13 form; no diagnosis of anyone.
+
+## The plain notes on Psalm 43 (2026-11-19)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| One poem with 42: no heading, shared refrain (42:5, 11; 43:5); some medieval Hebrew manuscripts join them; most interpreters read them together | Reformation Study Bible note; Working Preacher commentaries on Psalm 43 | Search: biblegateway.com (Reformation Study Bible, Ps 42); workingpreacher.org. "From the Middle Ages" kept, since the sources say medieval |
+| 43:2's second question repeats 42:9 | BSB | BSB text |
+| Law-court language of "vindicate" and "plead my case"; the lyre | Repository deep note (cultural) | Site's own teaching |
+| John 8:12; John 14:6; Hebrews 10:19, 22 | BSB | BSB text |
+
+## The plain notes on Psalm 44 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Defeat read as a god's verdict in the ancient world | Repository deep note (cultural) | Site's own teaching |
+| No event named; proposals (the kings, Assyria, the exile) | Repository deep note (historical) | Stated as suggestions only. The Maccabean proposal and 701 BC not repeated |
+| Spreading hands as prayer posture | Repository deep note (cultural) | Site's own teaching |
+| 1 Kings 18:27; Psalm 121:4; Romans 8:35-37; Mark 4:38; John 9:3 | BSB | BSB text |
+| 44:22 on the book page's list of hard passages | Book page (`teaching.hard`) | Repository |
