@@ -11190,3 +11190,20 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Deuteronomy 15:7; Isaiah 58:7 | 16-18 | BSB | BSB text |
 | Care lines ‘Sometimes guilt that will not lift ...’ (first three sentences) and ‘If you are a person whose conscience never rests ...’ | 19-24 | 2-corinthians/plain/7.json (8-12 `hard`); colossians/plain/1.json (21-23 `hard`) | Word for word |
 | Psalm 139:23; Psalm 103:12, 14; Psalm 145:18 | 19-24 | BSB | BSB text |
+
+## The plain notes on 1 John 4 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Travelling prophets; the Didache's later tests; oracles in the Greek world; dokimazō for testing metals | 1-6 | 1-john/4.json `historical`, `cultural`, `words` (G1381) | Repository |
+| Ignatius of Antioch warned churches in the region (Smyrna, Tralles) against teachers who said Christ only seemed to suffer | 1-6 | 1-john/4.json `historical` | Repository |
+| Churches differ on prophecy and gifts today; all hold the apostles' witness above any claim | 1-6 | bible/doctrines/gifts.json (continuationist and cessationist views) | Repository, no side |
+| Deuteronomy 13:3; Jeremiah 14:14; 2 Kings 6:16; 1 Thessalonians 5:20-21 | 1-6 | BSB | BSB text |
+| ‘God is love’ unusual to ancient ears; not ‘love is God’; monogenēs ‘unique’; verse 9 and John 3:16 | 7-12 | 1-john/4.json `cultural`, `words` (G3439) | Repository |
+| Exodus 34:6; Jeremiah 31:3; Deuteronomy 7:7-8 | 7-12 | BSB | BSB text |
+| Isaiah 43:11; Leviticus 26:11-12 | 13-16 | BSB | BSB text |
+| Love and judgment not rivals; the cross shows both; judgment no longer dreaded | 17-21 | 1-john/4.json `hard` | Repository |
+| Care line ‘This passage is not a rebuke of people who live with an anxiety disorder ...’ and ‘The Find Help page on this site lists places to turn.’ | 17-21 | philippians/plain/4.json (4-9 `hard`) | Word for word |
+| Deuteronomy 6:5; Leviticus 19:18; Psalm 130:3-4 | 17-21 | BSB | BSB text |
