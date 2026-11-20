@@ -139,8 +139,16 @@
       "planned": 20,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-census-of-quirinius",
+          "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+          "blurb": "What Luke says and what Josephus dates, the governors of Syria, Justin and Tertullian, the five proposed solutions with the weakness of each, and why the question is still open.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "jesus",
@@ -534,6 +542,26 @@
       "area": "authors",
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "Luke dated Jesus' birth by the census of Quirinius, which Josephus places in AD 6, a decade after Herod died, so Luke misdated it",
+      "proponent": "Raymond E. Brown",
+      "work": "The Birth of the Messiah",
+      "year": 1977,
+      "area": "contradictions",
+      "slug": "the-census-of-quirinius",
+      "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+      "live": false
+    },
+    {
+      "claim": "The census of Luke 2 is the famous census of AD 6, placed a decade too early",
+      "proponent": "Geza Vermes",
+      "work": "The Nativity: History and Legend",
+      "year": 2006,
+      "area": "contradictions",
+      "slug": "the-census-of-quirinius",
+      "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
       "live": false
     },
     {
