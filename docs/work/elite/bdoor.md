@@ -5767,3 +5767,181 @@ stopped by PID, dist/ deleted, no lh-*.json. No code changed.
 Psalm 107, the start of Book Five, in the same shape. Books Three and Four
 took about 29,200 words: lighter psalms about 500 words, major ones 1,450 to
 1,750. Book Five (107 to 150, with 119) is about one more long run, or two.
+
+## Continuation: Psalms 107 to 150 (2026-11-20)
+
+Book Five, which completes the Psalms, in the lighter shape James accepted
+("finish the psalms and the rest of the bible doing that", 2026-11-19). Most
+psalms are one passage; 107, 110, 118, 119, 121, 130, 137, 139 and 145 are at
+full depth (two to five passages); 109, 115, 116, 122, 127 and 128 (a pair),
+136 and 146 to 150 have a little more room. `hard` appears only where a psalm
+has a difficulty of its own. Each chapter note gained only `"plain": true`.
+No code changed; the book page was not edited (no error found). The Songs of
+Ascents' background is explained once, in 120, and 121 to 134 point back; the
+Hallel is explained once, in 113. Psalm 119 has five passages, not 22: what it
+is and how it is built (22 stanzas of eight lines, each line of a stanza
+beginning with its letter, verified over the Hebrew; the eight words as the
+BSB renders them, counted by script: law, testimonies, precepts, statutes,
+commandments, judgments or ordinances, word, and word or promise; all but
+verses 3, 37, 90 and 122 use one), then 9-16 (a young man's way), 17-64
+(delight: law as gift), 65-104 (the word in affliction, 67, 71, 75, with a
+care line), 105-176 (the lamp, and the lost sheep of the last verse).
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 107 | full | 3 | 1 | 1,803 |
+| 108 | lighter | 1 | 0 | 537 |
+| 109 | more room | 2 | 1 | 1,286 |
+| 110 | full | 3 | 1 | 1,786 |
+| 111 | lighter | 1 | 0 | 562 |
+| 112 | lighter | 1 | 1 | 571 |
+| 113 | lighter | 1 | 1 | 643 |
+| 114 | lighter | 1 | 0 | 521 |
+| 115 | more room | 2 | 0 | 953 |
+| 116 | more room | 2 | 1 | 1,068 |
+| 117 | short | 1 | 0 | 388 |
+| 118 | full | 3 | 1 | 1,528 |
+| 119 | full | 5 | 2 | 2,617 |
+| 120 | lighter | 1 | 0 | 576 |
+| 121 | full | 2 | 1 | 983 |
+| 122 | more room | 2 | 1 | 953 |
+| 123 | short | 1 | 0 | 416 |
+| 124 | lighter | 1 | 0 | 496 |
+| 125 | lighter | 1 | 1 | 507 |
+| 126 | lighter | 1 | 0 | 474 |
+| 127 | more room | 2 | 1 | 978 |
+| 128 | more room | 1 | 1 | 584 |
+| 129 | lighter | 1 | 1 | 553 |
+| 130 | full | 2 | 1 | 890 |
+| 131 | short | 1 | 0 | 426 |
+| 132 | lighter | 1 | 1 | 718 |
+| 133 | short | 1 | 0 | 396 |
+| 134 | short | 1 | 0 | 372 |
+| 135 | lighter | 1 | 1 | 589 |
+| 136 | more room | 2 | 1 | 960 |
+| 137 | full | 3 | 1 | 1,540 |
+| 138 | lighter | 1 | 0 | 486 |
+| 139 | full | 3 | 1 | 1,480 |
+| 140 | lighter | 1 | 1 | 547 |
+| 141 | lighter | 1 | 0 | 510 |
+| 142 | lighter | 1 | 1 | 585 |
+| 143 | lighter | 1 | 1 | 551 |
+| 144 | lighter | 1 | 1 | 630 |
+| 145 | full | 3 | 0 | 1,223 |
+| 146 | more room | 1 | 0 | 536 |
+| 147 | more room | 2 | 0 | 788 |
+| 148 | more room | 2 | 0 | 677 |
+| 149 | more room | 1 | 1 | 540 |
+| 150 | more room | 1 | 0 | 451 |
+| Total | | 70 | 26 | 35,678 |
+
+**Whole book (Psalms 1 to 150): 150 psalms, 242 passages, 127,103 words** in
+plain words (happening, hearers, later, hard, asks).
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 107" to "Psalms 148 to
+150". Fourteen web searches: 109 (1, the NRSV's "They say" at 109:6), 110 (3:
+the Talmud's Abraham reading; Ibn Ezra and Kimhi on David; a rabbinic Messiah
+reading), 113 (1, Mishnah Pesachim 10:6-7), 115 (1, mis pi and pit pi), 120 (1,
+Mishnah Sukkah 5:4 and the fifteen steps), 130 (1, the penitential psalms and
+Luther's 1524 hymn), 136 (1, the Great Hallel, Pesachim 118a), 137 (1, the
+weekday custom of saying 137 before grace and the modern Jewish debate on
+137:9), 145 (1, the nun line in 11QPs(a), the Greek, the Syriac). Scripts over
+the repository's Hebrew and the BSB: 109's satan root; 111 and 112 and 119
+acrostics; 119's eight words; 121's shamar six times; 122's shalom; 127's
+yedid; 136's refrain 26 times; 145's missing nun; 146's adam/adamah; Ezra 7:9's
+ma'alah; the shortest psalm (117), the longest chapter (119); "Hallelujah"
+openings and closings; "Hallelujah" in the New Testament only in Revelation 19.
+
+### Cut or narrowed
+
+Cut: Cyrus's date (107, 126, 147: the book page's 539 BC pointed to instead);
+Rowley, Pfeiffer, Treves, the Hasmonean date, Tutankhamun's footstools, Keel,
+Justin and Hezekiah, Philo, 2 Enoch, Luther, Calvin, Hay and Hengel (110); Rashi
+by name on 110 (sources disagree); the location of the midrash on 110:1 (given
+without a reference); Ugarit's Prince Sea (114); Sennacherib and 701 BC (124 to
+126); the rare forgiveness word in 130:4; funerals and Lent customs (116, 130);
+the Septuagint headings of 138, 143, 144; Hermon's height (133); the "middle
+chapter of the Bible" (117); Easter use of 118 as a custom; snow in Jerusalem
+(147); "Jewish readers have often read 149 as final justice" (deep note, not
+verified); the Maccabean date of 149. Narrowed: "the only psalm dated by its
+first line" to "its first line tells us roughly when" (137); "often read at
+funerals" to "can be a comfort" (116:15); "Many believers pray it" to "You may
+pray it" (121); the Greek witnesses to 145's nun line to "some copies" because
+editions differ; the Mishnah's fifteen steps stated with "it does not say these
+were the songs they sang there". Quotations caught by the strict script and the
+validator and fixed before commit: lowercase BSB openings (109:16, 115:7,
+124:3-5, 137:3, 144:15, 146:8, 148:11), Ruth 2:4's comma, Matthew 10:29-31,
+an ellipsis in Colossians 3:16 (replaced by Ephesians 5:19), Luke 19:41-42 run
+across "and said" (now 19:42 alone), and a title with an exclamation mark (117)
+and one with an ellipsis (134).
+
+### Contested matters, and how they are stated
+
+109:6-19: the enemies' curse quoted, or the psalmist's own words; both held,
+no side. 110:1: "Jewish and Christian readers have answered differently, and
+each reading deserves respect"; the Talmud (Abraham), Ibn Ezra and Kimhi
+(David), some rabbinic writings (the King Messiah to come), modern scholars (a
+crowning oracle), the Christian reading; "Neither reading is dishonest. ...
+They part over who Jesus is". 110:5-7 battle poetry, no modern nation. 118:22,
+the builders in Acts 4 "those particular leaders. It is never a charge against
+the Jewish people, which this site rejects." 120: the meaning of "Songs of
+Ascents" (pilgrims, likely not certain; the Mishnah's steps; the return).
+122:6: no claim about any modern state; three Christian applications, no
+side. 132: conditional or unconditional promise; Jewish and Christian hopes.
+137:8-9: the book page's four readings, one sentence each, no side; Jewish
+wrestling stated only as far as verified. 139: the abortion debate (what the
+text says; Christians do not all draw every conclusion alike; no political
+position). 139:19-22: "hate" as reject; pointer to the book page. 145: the
+nun line lost early or added later; both held. 149:6-9: battle poetry; no
+warrant for violence; the sword as the word of God given as a reading.
+
+### Care lines included
+
+109 ("No reading of this psalm makes it right to harm anyone, least of all a
+child or a widow"). 107 (not every prayer answered alike; the sick not to
+blame; Psalm 88 and Find Help). 113 and 127 (the childlessness lines of the
+Luke 1 note word for word; 127 adds that a home without children, or a single
+person, is not less blessed in God's eyes); 128 points back. 116:15 (grief;
+Find Help). 119:71 (not a line for another's pain; Find Help). 121:7 (not a
+promise of no harm; the Psalm 91 note; "it is not because you trusted God too
+little"). 130 (in the form of the Psalm 13 note). 137 (rage heard; hand it to
+God; a trusted person; help today; Find Help). 139 (every person, with any
+disability or illness, made by God and precious; grief or guilt about a
+pregnancy or the loss of a child met with gentleness; a trusted pastor or
+friend; Find Help). 142 (loneliness; Find Help). 143 (a faint spirit; Find
+Help). 146 (no modern figure in view). No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` with its
+exit code read directly, exit 0 each time; the strict quotation script (its
+last run over 107 to 150: 0 problems); every passage printed field by field and
+read: all 70 sit under their right headings.
+
+At the end, one at a time: all 38 content-gate commands in ci.yml, exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 317 chapters in
+plain words; no-emdash 260 files, 0; search index 733 entries up to date;
+passage index 623 files match; explorer index current; verify-sources 22
+texts intact). `pnpm check`: exit 0. `pnpm test`: 147 files passed, 7
+skipped; 1,701 tests passed, 73 skipped. `pnpm build`: exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs --port 4603`;
+Playwright at 390 wide, deviceScaleFactor 1, `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 107 to 150: 44 chapters, 70 passages, 306 parts;
+the whole book, Psalms 1 to 150: 150 chapters, 242 passages, 1,081 parts. Each
+passage's heading and each part's heading and first 60 characters matched the
+data; the 129 passages without `hard` show no "The hard verse" heading; no
+sideways scroll; no console or page errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/ps119-390-p0.png`, `ps137-390-p2.png`,
+`ps139-390-p1.png` (the sticky masthead shows across the middle of these
+element captures, as in earlier runs; it is the capture, not the page).
+Server stopped by PID, dist/ deleted, no lh-*.json. No code changed.
+
+### Next
+
+The Psalms are complete. The next book in the lighter shape is whichever
+James names next.
