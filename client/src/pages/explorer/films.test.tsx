@@ -1122,6 +1122,15 @@ describe("the four films of 2026-11-20 (sixth run): the covenants, the Lamb, exi
     expect(film.differ?.links.map(l => l.href)).toContain(
       "/study/bible/hebrews"
     );
+    // ...and that page still says it, so the film reuses live wording.
+    expect(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/hebrews/intro.json"),
+        "utf8"
+      )
+    ).toContain(
+      "These words are not a verdict that God has rejected the Jewish people"
+    );
     expect(film.frames.map(f => f.id)).toEqual([
       "noah",
       "abraham",
