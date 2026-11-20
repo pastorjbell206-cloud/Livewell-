@@ -10318,3 +10318,42 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Numbers 6:24-25 | 23-25 | BSB | BSB text |
 
 ## Philemon complete (2026-11-20)
+
+## Hebrews: the book page (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. Creed wording from `client/public/creeds/documents/`.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Begins without greeting, ends like a letter; ‘word of exhortation’ (13:22); readers once brave, now tired, tempted to drift back | In a minute; Readers | hebrews/intro.json `overview`, `purpose`; BSB 10:25, 10:32-34, 13:22 | Repository; BSB |
+| Thirteen chapters, about forty-five minutes aloud | In a minute | Estimate from the chapter count and length, as on earlier book pages | Estimate |
+| Writer unnamed; heard from those who heard the Lord (2:3); fine Greek; Greek Old Testament made in Egypt; knew Timothy (13:23) | Who wrote it | hebrews/intro.json `author` | Repository; BSB |
+| P46 about AD 200 places it after Romans; style noticed as unlike Paul's; Clement of Alexandria via Eusebius (Paul in Hebrew, Luke translating); Origen (thoughts Paul's, wording another's, only God knows), paraphrased as the intro paraphrases; Tertullian, Barnabas a Levite (Acts 4:36); Luther, Apollos (Acts 18:24); Harnack 1900, Priscilla; Luke, Silas, Clement of Rome; most scholars: unknown | Who wrote it; timeline | hebrews/intro.json `author` | Repository. No side; no direct quotation of Origen |
+| Accepted widely in the West only by the late 300s | Who wrote it; timeline | hebrews/intro.json `author` | Repository |
+| Title ancient, not part of the text; readers steeped in Israel's Scriptures; most think Jewish believers, some Gentile members; some argue mainly Gentile; synagogue safer | Readers | hebrews/intro.json `setting` | Repository |
+| ‘Those from Italy’: in Italy or Italians abroad; Rome suggested; Jerusalem, Alexandria proposed | Readers; map | hebrews/intro.json `setting` | Repository. No side |
+| Known to Clement of Rome (about AD 96); pre-70 case (present tense, no mention of the temple's fall, 8:13); post-70 case (tabernacle not temple); 60s most common, range 60 to 90 | Readers; timeline | hebrews/intro.json `date` | Repository. No side |
+| Claudius expulsion about AD 49 linked by some; Nero AD 64; no blood yet shed (12:4) | Timeline | hebrews/intro.json `date` | Repository |
+| Structure in six parts | How it is built | hebrews/intro.json `structure` | Repository |
+| Nicene Creed and Chalcedon wording (‘God of God, Light of Light, very God of very God ...’; ‘truly God and truly man’; ‘in all things like unto us, without sin’; the four ‘without’s) | The Son | creeds/documents/nicene-creed.json; chalcedonian-definition.json | Repository text |
+| ‘Learned obedience’ not once disobedient; ‘made perfect’ = complete, brought to the goal, for his office | The Son; words | hebrews/5.json `words` (G5218); hebrews/2.json `words` (G5048) | Repository |
+| Melchizedek: Genesis 14:18-20; Psalm 110:4; ‘without father or mother’ a point about Genesis' silence; other readings (heavenly being, the Son appearing); ‘like the Son of God’ a likeness | A priest like Melchizedek; words | genesis/plain/14.json (17-20 `later`, `hard`); psalms/plain/110.json (4) | Repository |
+| Kings from Judah, priests from Levi and Aaron | A priest like Melchizedek | psalms/plain/110.json (4 `hearers`) | Repository |
+| Law, tabernacle, priesthood God's gifts (2:2; 8:5; 5:4; 3:5); Romans 9:4 | Old covenant | BSB | BSB text |
+| ‘Obsolete’ and ‘takes away the first’ about the Sinai covenant arrangement read from Jeremiah 31; fault with the people (8:8) | Old covenant | hebrews/8.json `literary`, `hard` | Repository; BSB |
+| Romans 11:1; 11:28-29 | Old covenant | BSB | BSB text |
+| Views on Israel's place: replacement and fulfilment; covenant theology; dispensational; two-covenant (most churches do not teach it) | Old covenant | romans/plain/11.json (11-16 `hard`) | Repository wording, no side |
+| Contempt, expulsions and violence justified from the New Testament; ‘That reading is false. This site rejects it’; Acts 2:22-28 pointer | Old covenant; What it is not | acts/plain/2.json (22-28 `hard`); galatians/plain/4.json; hebrews/8.json `hard` (‘long and shameful history’) | Repository wording |
+| Since the Holocaust many churches repudiated teachings that fed hostility toward Jews | Old covenant | hebrews/8.json `hard` | Repository wording |
+| The five warning passages | Warnings; How it is built | hebrews/intro.json `reading` | Repository |
+| Reformed and Baptist (kept by God; warnings as means; never truly regenerated; hypothetical), Wesleyan, Arminian and Catholic (can forfeit; impossibility of final, deliberate apostasy) | Warnings | hebrews/6.json `hard`; romans/plain/8.json (31-39) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | Warnings | galatians/plain/5.json (1-6); 2-timothy/plain/2.json (11-13) | Word for word |
+| Honest Answer ‘Can you lose your salvation?’ | Warnings | client/src/data/answers.ts | Repository |
+| Heroes' flaws: Genesis 12 and 20 (wife as sister); Genesis 27; Exodus 2:12; Judges 6 (Gideon's signs) | Faith | BSB | BSB text |
+| Prosperity teaching named an error | Faith; What it is not | CLAUDE.md orthodoxy guardrails; 1-timothy/plain/6.json | Repository |
+| Greek Old Testament differences: Psalm 40:6; Psalm 8:5; Habakkuk 2:3-4; Genesis 47:31 | Old Testament | psalms/plain/40.json (6-10 `hard`); psalms/plain/8.json (3-9 `hearers`); BSB | Repository; BSB text |
+| Haggai 2:6 at Hebrews 12:26; Proverbs 3 at 12:5-6; Isaiah 8 at 2:13 | Old Testament | BSB | BSB text |
+| Key words: apaugasma, charaktēr, pararreō, archēgos, teleioō, katapausis, sabbatismos, diathēkē, ephapax, skia | Key words | hebrews/1, 2, 4, 8, 10, 12 `words` | Repository |
+| Jeremiah late seventh and early sixth centuries BC; Jerusalem destroyed 587 or 586 BC | Timeline | hebrews/8.json `historical` | Repository |
+| Map: Italy only, a region placed roughly near the frame's own ITALY label (40.6 N, 16.0 E); no place of writing or receiving claimed | Map | BookMap.tsx mediterranean frame label (39.95 N, 16.1 E); BSB 13:24 | Repository |
+| Deeper links: incarnation, offices, atonement, covenant, israel, perseverance, temple, faith | Go deeper | bible/doctrines.json | Repository |
