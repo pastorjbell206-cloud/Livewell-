@@ -282,13 +282,17 @@
 }
 @media (min-width: 560px) {
   .fp-cap__list {
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    columns: 2;
+    column-gap: 24px;
   }
 }
 .fp-cap__list li {
   counter-increment: fp;
   display: flex;
   gap: 10px;
+  margin-bottom: 6px;
+  break-inside: avoid;
 }
 .fp-cap__list li::before {
   content: counter(fp);
