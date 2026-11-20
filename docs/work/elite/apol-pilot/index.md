@@ -20,6 +20,11 @@ The case these pages make is a modest one, and it is meant to be. They don't cla
 2. **We don't have the originals, only copies of copies. Isn't it a telephone game?** How copying actually worked, the earliest papyri and the debates over their dates, and what the telephone picture gets right.
 3. **Two famous passages were not in the earliest Bibles: the ending of Mark and the woman caught in adultery. What else was added?** The passages one by one, and the hard question they leave.
 4. **Did scribes change the text to make Jesus look more divine?** The "orthodox corruption" case at full strength, where it is right, and what the earliest letters show.
+5. **Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?** The famous comparison with corrected figures, and the one question it answers.
+6. **Who decides what the Greek New Testament says, and was there ever a single original to find?** How a critical edition is made, step by step, and the serious question about the word "original".
+7. **Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?** Where the King James's Greek text came from, the verses one by one, and the case for the traditional text stated with respect.
+8. **The Bible has been translated so many times. Hasn't the meaning been lost along the way?** How English Bibles are made, why they differ, what translation loses, and how a reader can find it.
+9. **Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?** Ehrman's case for an angry Jesus, the few witnesses behind it, and what the verse can and can't change.
 
 ## Words these pages use
 

@@ -1,0 +1,84 @@
+---
+area: can-we-trust-the-text
+slug: an-angry-jesus-mark-1-41
+status: pending (not on the site; for James to read first)
+question: "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?"
+ledger: docs/work/elite/apol-ledger.md, "Eleventh run: five more pieces in the text area"
+---
+
+# Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?
+
+## The short answer
+
+Possibly, and this is one of the places where honest scholars still disagree. Nearly every manuscript of Mark says that when a leper begged to be made clean, Jesus was "moved with compassion". A handful, Codex Bezae and a few Old Latin copies, say he became angry. Bart Ehrman has argued that "angry" is original and that copyists softened it, and some evangelical scholars find his case persuasive; the NIV has followed it since 2011 with "indignant". Others answer that the evidence for anger is thin, comes from one corner of the tradition, and can be explained by a slip between two similar Greek words. Either way, both readings are known, which is how we can argue about them at all. And Mark's Jesus is angry and compassionate elsewhere in passages whose wording no one doubts. The variant changes the feeling in one verse. It doesn't change who Jesus is in Mark.
+
+## The objection at its strongest
+
+The case for anger was made most fully by Bart Ehrman, in an essay titled "A Leper in the Hands of an Angry Jesus", published in 2003 in a volume of essays in honor of Gerald Hawthorne, and in a popular article in *Bible Review* in 2005, "Did Jesus Get Angry or Agonize?" He returned to it in *Misquoting Jesus* (2005). His argument runs like this.
+
+The rule textual critics have used since the eighteenth century is that the harder reading is usually the original, because copyists smoothed difficulties and rarely created them. Here the hard reading is obvious. A copyist who found Jesus angry at a suffering man begging for help had every reason to change the word to compassion. It is very hard to imagine a copyist doing the reverse. Then there is Matthew and Luke. Both retell this story from Mark, almost word for word in places, and both leave out any word for Jesus' feeling. If they had read "moved with compassion" in their copies of Mark, why would they both drop it? They keep compassion elsewhere. But if they had read "angry", their silence is easy to explain. And the story itself has a sharp edge. Two verses later Mark says that Jesus sent the man away with a stern warning, using a Greek verb that can carry indignation. An angry Jesus fits the passage better than a gentle one.
+
+The conclusion is the one Ehrman draws across his work. Copyists changed the text, and here they changed the very character of Jesus, turning a fierce figure into a mild one, in a reading almost every Bible still prints. If they could do that here, what else did they soften that we don't know about?
+
+## What is true in it
+
+A good deal, and it should be said plainly. The harder reading is "angry", and the rule that favors harder readings is a sound one. Matthew and Luke do both omit Jesus' emotion here. And Ehrman's case has persuaded scholars who don't share his conclusions about the faith. Timothy Paul Jones, an evangelical who wrote *Misquoting Truth* (2007) as a reply to Ehrman, found his case for "angry" convincing, while arguing that it doesn't change our understanding of Jesus or of Mark. The translators of the NIV, an evangelical version, adopted "indignant" in 2011, with a footnote saying that many manuscripts read that Jesus was filled with compassion.
+
+It is also true that preachers have sometimes built a soft and sentimental Jesus on this verse, and the Study Bible's note on Mark 1 warns against that. Whatever the original word, the man in this chapter isn't mild. He casts out spirits, touches the untouchable, and sends a healed man off with a warning.
+
+## The evidence
+
+Start with the witnesses. The Greek for "moved with compassion" is *splanchnistheis*. The Greek for "becoming angry" is *orgistheis*. Almost the entire Greek manuscript tradition reads the first, across every region and period. The second appears in Codex Bezae, a Greek and Latin manuscript usually dated around the fifth century, and in a few Old Latin manuscripts that read *iratus*, angry. That's all, or nearly all. Peter Lorenz, in a study in the *Tyndale Bulletin* in 2016, examined these witnesses and argued that they are not independent of one another: they come from one interconnected corner of the Latin tradition. Peter J. Williams, in *Novum Testamentum* in 2012, made a similar point, that the support for anger comes only from places where Latin was strong, and argued that the two Greek words are close enough in form for one to have been mistaken for the other.
+
+Then weigh the internal evidence on both sides. The case for anger is the one above: the harder reading, the silence of Matthew and Luke, the stern warning of verse 43. And there is more for it than Ehrman's first point. In Mark 3:5 Jesus looks at his critics in the synagogue with anger before he heals a man's hand, and in Mark 10:14 he is indignant at the disciples who turn the children away. In both places, in the standard text, Matthew and Luke tell the same story without the anger (Matthew 12:13, Luke 6:10; Matthew 19:14, Luke 18:16). So their silence at the leper's healing fits a habit: where Mark reports Jesus' anger, they tend to leave it out.
+
+The case for compassion has internal arguments too. Compassion is a word Mark uses of Jesus elsewhere, in the feeding stories (6:34, 8:2), so it isn't foreign to his Gospel. If Matthew and Luke tended to drop strong emotions of every kind, their silence here can't tell us which emotion Mark wrote. And the stern word in verse 43 could cut the other way. A copyist who found Jesus warning the man so sharply two verses later might have thought anger belonged in verse 41 as well. A copyist could make a text harder, not only easier, by accident or by bringing a word into line with its context. The rule that the harder reading is usually original is a rule of thumb, and it has to be weighed against witnesses. Here the witnesses for the harder reading are very few and very closely related.
+
+Now look at where the editions land. The standard critical text, Nestle-Aland, prints "moved with compassion", as do the Tyndale House edition and the Byzantine text. The SBL Greek New Testament, edited by Michael Holmes, is the exception among the major editions; the site's own Greek data lists the compassion reading in every edition it tracks except that one, and the Study Bible's note on Mark 1 says it prints "angry". Most English Bibles keep compassion. The NIV has "indignant". The question is open, and the editions say so by disagreeing.
+
+## The argument, laid out
+
+This is an argument about what the variant can and can't show.
+
+1. Both readings of Mark 1:41 are preserved in the manuscripts, so whichever is original, the change was made in the open and can be weighed.
+2. The evidence is divided: the witnesses favor compassion overwhelmingly, while the rule of the harder reading and the silence of Matthew and Luke give a serious case for anger.
+3. In passages whose wording is not in doubt, Mark shows Jesus both angry (3:5, 10:14) and moved with compassion (6:34, 8:2), so his portrait of Jesus doesn't depend on this verse.
+
+So: if a copyist softened Jesus here, he softened one word in one verse, and the softening is visible. Mark's Jesus was never a mild figure that scribes invented, and he was never only a fierce one either.
+
+The third step carries the weight, because the objection's real claim is about Jesus' character, not about one word. A reader can check it in a few minutes by reading Mark 3:1-6, 6:30-44 and 10:13-16 in any Bible.
+
+## The strongest reply, and an answer
+
+The strongest reply turns the argument around. Very well, it says, Mark's Jesus is angry in places and the change here was small. But look at what you've just conceded about Matthew and Luke. They didn't only omit anger here. They omitted it at 3:5 and at 10:14 too. So the softening of Jesus didn't begin with copyists in the second century. It began with the evangelists themselves, who reshaped Mark's Jesus to suit their own picture. That isn't a textual problem. It's a historical one, and it's worse.
+
+The reply is right that it isn't a textual problem, and it should be answered as the different question it is. That Matthew and Luke wrote their own Gospels, drawing on Mark and shaping what they took, is not a discovery that threatens the faith. It has been studied openly for generations, and the church has always read four Gospels side by side, not one harmony. Each evangelist chose what to tell and how. Matthew and Luke leaving out Mark's report of anger is a choice of emphasis. They don't contradict it; nowhere do they say Jesus was never angry, and Matthew tells of Jesus overturning the tables in the temple and pronouncing woes on the scribes and Pharisees. Readers have Mark too, and the church kept him, anger and all, in the same Bible. A movement determined to soften Jesus would not have kept the Gospel that shows his anger most plainly. How the four Gospels relate to one another, and what their differences mean for history, are questions the site's other pages take up.
+
+The other half of the reply, the question of how many other changes we can't see, is the one the earlier pages in this area answer. This variant is evidence for that answer, not against it. A change made early enough to stand in nearly every manuscript we have, if that is what happened here, still left its trace in one corner of the tradition.
+
+## What remains unresolved
+
+The original word in Mark 1:41 is unresolved. Careful scholars who share the same evidence and the same method come down on different sides, and anyone who says the question is closed hasn't read them. If the word is anger, what Jesus was angry at is open too. Some read it as anger at the leprosy and what it had done to the man, cut off from family and worship. Ehrman has suggested that the man's request itself provoked it. Others read it as anger at the law's exclusion of the sick, or at the forces opposed to God that Mark shows Jesus confronting from the start. The Study Bible's note on Mark 1 puts it well: "whether the text says compassion or anger, the Jesus of this chapter is intensely engaged with suffering and with what causes it."
+
+## Where Christians differ
+
+Faithful Christians differ on this verse, and this page takes no side. Some follow the great weight of the manuscripts and read compassion. Some follow the harder reading and read anger or indignation, as the NIV does. Some keep to the reading of the Greek text the church has long received, which here agrees with the majority. None of these choices touches the confession that Jesus is truly God and truly man. If anything, the argument over this verse is a reminder of the second half of that confession: the Son of God, in Mark, feels things, deeply and sometimes fiercely.
+
+## Read the other side
+
+- Bart D. Ehrman, "A Leper in the Hands of an Angry Jesus," in *New Testament Greek and Exegesis: Essays in Honor of Gerald F. Hawthorne* (2003).
+- Bart D. Ehrman, "Did Jesus Get Angry or Agonize?," *Bible Review* (Winter 2005).
+- Bart D. Ehrman, *Misquoting Jesus* (2005).
+
+## Read further
+
+- Peter J. Williams, "An Examination of Ehrman's Case for ὀργισθείς in Mark 1:41," *Novum Testamentum* 54 (2012).
+- Peter E. Lorenz, "Counting Witnesses for the Angry Jesus in Mark 1:41: Interdependence and Insularity in the Latin Tradition," *Tyndale Bulletin* 67, no. 2 (2016).
+- Timothy Paul Jones, *Misquoting Truth* (2007). An evangelical reply to Ehrman that accepts his case on this verse.
+- Bruce M. Metzger, *A Textual Commentary on the Greek New Testament* (1971; 2nd ed., 1994).
+
+## On the site
+
+- "Did scribes change the text to make Jesus look more divine?" (/questions/text/did-scribes-make-jesus-more-divine), on changes copyists made for theological reasons.
+- "There are more differences among the manuscripts than words in the New Testament" (/questions/text/more-variants-than-words), where this verse first appears as an example.
+- The Study Bible's notes on Mark 1, Mark 3 and John 11, which this page agrees with.
