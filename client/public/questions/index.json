@@ -164,6 +164,13 @@
           "blurb": "Roman practice with the crucified, Jewish burial law, Yehohanan's tomb, Joseph of Arimathea, the women, and the earliest opponents' theft story.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-appearances-and-the-alternatives",
+          "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
+          "blurb": "The four natural explanations, each as its defenders put it, against the list Paul received, the persecutor and the unbelieving brother, and the word the witnesses chose.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -553,6 +560,26 @@
       "area": "jesus",
       "slug": "the-empty-tomb",
       "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' body decayed, and the appearances were visions born of grief and guilt, beginning with Peter's",
+      "proponent": "Gerd Lüdemann",
+      "work": "The Resurrection of Jesus: History, Experience, Theology",
+      "year": 1994,
+      "area": "jesus",
+      "slug": "the-appearances-and-the-alternatives",
+      "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
+      "live": false
+    },
+    {
+      "claim": "Some of Jesus' followers sincerely had visions of him, of the kind bereaved people have, and persuaded the others",
+      "proponent": "Bart D. Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "the-appearances-and-the-alternatives",
+      "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
       "live": false
     },
     {

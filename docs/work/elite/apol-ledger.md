@@ -1385,3 +1385,29 @@ Cut or not used: Thallus and Mara bar Serapion (not checked); the claim that the
 | Reading lists: Brown 1994; Allison, *Resurrecting Jesus* (2005); Wright 2003; Bird, Evans and others 2014 | Note (Brown, Allison); Res answer (Wright, Bird and Evans) | Verified |
 
 Cut or not used: the Nazareth Inscription (its date and link to Christianity uncertain, per the note); the Mishnah on women's oath (not needed); a claim that Arimathea's location is known (the note says only that Joseph is tied to a real place; the piece says "a named town"); the claim that "many historians who are not Christians" accept the empty tomb (not counted; one is named). No living author is quoted.
+
+### v. "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?" (the-appearances-and-the-alternatives)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Lüdemann, *The Resurrection of Jesus: History, Experience, Theology* (Fortress, 1994): the body decayed; visions, Peter's of grief and guilt after his denial, Paul's of inner conflict, the group experiences a shared ecstasy; he did not believe Jesus rose | Note (Luke 24, Mark 16); Res answer (sources row) | Verified, paraphrased |
+| Ehrman: a few followers (Peter, Mary Magdalene, probably James) and later Paul had visions and persuaded others; tied to bereavement visions | Res ledger (correction 32; the visions line) | Verified (secondary), paraphrased |
+| Rees, *BMJ* 1971: 293 widowed, almost half, some for years; judged normal | Res ledger (correction 20) | Verified |
+| Allison, a Christian: reports of the dead appearing to more than one person at once; warns against claiming visions always private | Res ledger (Allison line) | Verified (secondary), paraphrased |
+| The legend view: Mark ends at 16:8 in the oldest manuscripts with no appearance; Matthew 28:9 and 28:16-17; Luke 24:39-43 touch and fish; John 20:27 Thomas | Res ledger (Scrivener); Repo (BSB) | Verified (repo); the view stated without naming a proponent |
+| Reimarus, fragments published by Lessing in the 1770s (1774 to 1778): the disciples stole the body | Note (John 20, Matthew 28, Luke 24: 1778); HJ ledger (Schweitzer ch. II: 1774 to 1778) | Verified |
+| Celsus, *Against Celsus* 2.55: "one who desired to impress others with this portent, and by such a falsehood to furnish an occasion to impostors like himself" | Crombie, read this run; Res ledger (correction 34) | Quoted |
+| Paulus, *Das Leben Jesu* (1828), a deathlike trance revived in the tomb; Schleiermacher's own opinion, as Schweitzer reports | Res ledger (Schweitzer ch. V) | Verified |
+| Mark 15:44 Pilate surprised; Mark 14:71 Peter's denial | Repo (BSB) | Quoted |
+| 1 Corinthians 15:5-8; most scholars think the summary took shape within a few years; "most of whom are still living" invited checking | Repo (BSB); Res ledger (correction 31); Note (1 Corinthians 15) | Quoted; verified |
+| Sanders: "That Jesus' followers (and later Paul) had resurrection experiences is, in my judgement, a fact. What the reality was that gave rise to the experiences I do not know."; set fraud aside | Res answer (review of *The Historical Figure of Jesus* quoting both sentences); Sanders died 21 November 2022 (HJ ledger, Search 36), so he is not a living author | Quoted; the fraud point paraphrased |
+| Galatians 1:13; John 7:5; James led the Jerusalem church, stoned around 62 | Repo (BSB); Res ledger | Quoted; verified |
+| Acts 12:15 "It must be his angel"; Luke 24:37 "thinking they had seen a spirit" (the BSB wording; the ESV's "It is his angel!" is not used) | Repo (BSB) | Quoted |
+| Wright: resurrection meant the bodily raising of God's people at the end | Res ledger (Wright line) | Verified (secondary), paraphrased |
+| Bar Kosiba, 132 and 135; Akiva; Maimonides a thousand years later | Res ledger (Bar Kosiba lines) | Verified |
+| Acts 12:2; Josephus on James's stoning; 1 Clement on Peter and Paul, late first century; evidence for most other apostles later and less certain | Repo (BSB); Res ledger | Verified |
+| Strauss: a half-dead man needing bandages and nursing could not have convinced anyone he had conquered death | Res ledger (the Strauss line, secondary reproductions of the 1879 text) | Verified (secondary), paraphrased |
+| 1 Corinthians 15:44 "raised a spiritual body" | Repo (BSB) | Quoted |
+| Reading lists: Lüdemann 1994; Ehrman 2014; Wright 2003; Allison 2021; Licona 2010; Sanders 1993 | Res answer (sources row) | Verified |
+
+Cut or not used: that crucifixion victims "often" lived for days (not checked; the piece says only that Jesus died sooner than Pilate expected); that the bereaved in Allison's reports do not conclude a bodily raising (not seen; the piece argues from the ancient vocabulary instead); Kirsopp Lake's wrong-tomb theory (not checked); any count of martyred apostles. No living author is quoted.
