@@ -50,8 +50,19 @@
  *   cases, holdout, holdout2, holdout3: unchanged, 100% and 100%
  *   holdout4 (15) top 1 100%   top 3 100% (tuned for in this build)
  *   holdout5 (15) top 1 26.7%  top 3 60.0% (untouched; the honest number)
- * The floors below sit under those, so a change to the data that makes the
- * finder worse fails here by name.
+ * On 2026-11-20 (seventh build) twenty-five more sentences, holdout6, were
+ * written across the topics written in full and committed before matching.json
+ * was touched. Measured then: holdout5 26.7% / 60.0%, holdout6 56.0% / 64.0%.
+ * Then every topic written in full was given at least eight everyday
+ * phrasings (data only), and the rewrites were made to match on stems (a real
+ * defect: "I keep hurting myself" and "thinking about ending it all" missed
+ * the rewrites written as "hurt myself" and "end it all"). After:
+ *   cases, holdout, holdout2, holdout3, holdout4: unchanged, 100% and 100%
+ *   holdout5 (15) top 1 73.3%  top 3 93.3% (tuned for in this build)
+ *   holdout6 (25) top 1 64.0%  top 3 72.0% (untouched; the honest number;
+ *                 60.0% / 68.0% with the phrasings alone, before the rewrite fix)
+ * The floors below sit just under those, so a change to the data that makes
+ * the finder worse fails here by name.
  */
 import { describe, it, expect } from "vitest";
 import fs from "node:fs";
@@ -66,6 +77,7 @@ const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match
   holdout3: { q: string; expect: string[] }[];
   holdout4: { q: string; expect: string[] }[];
   holdout5: { q: string; expect: string[] }[];
+  holdout6: { q: string; expect: string[] }[];
 };
 
 if (!isFinderIndex(index)) throw new Error("finder.json is not a finder index");
@@ -89,7 +101,7 @@ function rate(cases: { q: string; expect: string[] }[]) {
 describe("wisdom matcher", () => {
   it("has at least 60 plain sentences, every expected topic real", () => {
     const ids = new Set(index.topics.map((t) => t.id));
-    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5];
+    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5, ...fixture.holdout6];
     expect(all.length).toBeGreaterThanOrEqual(60);
     for (const c of all) for (const id of c.expect) expect(ids.has(id), `${c.q}: ${id}`).toBe(true);
   });
@@ -101,6 +113,7 @@ describe("wisdom matcher", () => {
     const holdout3 = rate(fixture.holdout3);
     const holdout4 = rate(fixture.holdout4);
     const holdout5 = rate(fixture.holdout5);
+    const holdout6 = rate(fixture.holdout6);
     console.info(
       `[wisdom-match] cases ${cases.n}: top 1 ${(cases.top1 * 100).toFixed(1)}%, top 3 ${(cases.top3 * 100).toFixed(1)}%; ` +
         `holdout ${holdout.n}: top 1 ${(holdout.top1 * 100).toFixed(1)}%, top 3 ${(holdout.top3 * 100).toFixed(1)}%` +
@@ -112,21 +125,25 @@ describe("wisdom matcher", () => {
         `\n[wisdom-match] holdout4 ${holdout4.n}: top 1 ${(holdout4.top1 * 100).toFixed(1)}%, top 3 ${(holdout4.top3 * 100).toFixed(1)}%` +
         (holdout4.misses.length ? `\n  holdout4 misses: ${holdout4.misses.join("\n  ")}` : "") +
         `\n[wisdom-match] holdout5 ${holdout5.n}: top 1 ${(holdout5.top1 * 100).toFixed(1)}%, top 3 ${(holdout5.top3 * 100).toFixed(1)}%` +
-        (holdout5.misses.length ? `\n  holdout5 misses: ${holdout5.misses.join("\n  ")}` : ""),
+        (holdout5.misses.length ? `\n  holdout5 misses: ${holdout5.misses.join("\n  ")}` : "") +
+        `\n[wisdom-match] holdout6 ${holdout6.n}: top 1 ${(holdout6.top1 * 100).toFixed(1)}%, top 3 ${(holdout6.top3 * 100).toFixed(1)}%` +
+        (holdout6.misses.length ? `\n  holdout6 misses: ${holdout6.misses.join("\n  ")}` : ""),
     );
-    expect(cases.top1).toBeGreaterThanOrEqual(0.9);
+    expect(cases.top1).toBeGreaterThanOrEqual(0.95);
     expect(cases.top3).toBeGreaterThanOrEqual(0.95);
-    expect(holdout.top1).toBeGreaterThanOrEqual(0.75);
-    expect(holdout.top3).toBeGreaterThanOrEqual(0.9);
-    expect(holdout2.top1).toBeGreaterThanOrEqual(0.9);
+    expect(holdout.top1).toBeGreaterThanOrEqual(0.94);
+    expect(holdout.top3).toBeGreaterThanOrEqual(0.94);
+    expect(holdout2.top1).toBeGreaterThanOrEqual(0.95);
     expect(holdout2.top3).toBeGreaterThanOrEqual(0.95);
-    expect(holdout3.top1).toBeGreaterThanOrEqual(0.9);
-    expect(holdout3.top3).toBeGreaterThanOrEqual(0.95);
-    expect(holdout4.top1).toBeGreaterThanOrEqual(0.9);
-    expect(holdout4.top3).toBeGreaterThanOrEqual(0.95);
-    // The clean set: reported, and held at what it scored when written.
-    expect(holdout5.top1).toBeGreaterThanOrEqual(0.25);
-    expect(holdout5.top3).toBeGreaterThanOrEqual(0.55);
+    expect(holdout3.top1).toBeGreaterThanOrEqual(0.93);
+    expect(holdout3.top3).toBeGreaterThanOrEqual(0.93);
+    expect(holdout4.top1).toBeGreaterThanOrEqual(0.93);
+    expect(holdout4.top3).toBeGreaterThanOrEqual(0.93);
+    expect(holdout5.top1).toBeGreaterThanOrEqual(0.7);
+    expect(holdout5.top3).toBeGreaterThanOrEqual(0.9);
+    // The clean set: reported, and held just under what it scored.
+    expect(holdout6.top1).toBeGreaterThanOrEqual(0.6);
+    expect(holdout6.top3).toBeGreaterThanOrEqual(0.7);
   });
 
   it("does not force a match on nonsense", () => {
@@ -148,5 +165,13 @@ describe("wisdom matcher", () => {
     expect(stem("worries")).toBe(stem("worry"));
     expect(stem("hoping")).toBe(stem("hope"));
     expect(queryWords(index, "my mom passed away").has(stem("died"))).toBe(true);
+  });
+
+  it("matches a rewrite in any word form, so the words that need help are not missed", () => {
+    expect(queryWords(index, "I keep hurting myself").has(stem("selfharm"))).toBe(true);
+    expect(queryWords(index, "thinking about ending it all").has(stem("suicide"))).toBe(true);
+    expect(queryWords(index, "I do not want to live").has(stem("suicide"))).toBe(true);
+    expect(queryWords(index, "we maxed out two credit cards").has(stem("debt"))).toBe(true);
+    expect(findTopics(prep, "thinking about ending it all").matches[0].topic.id).toBe("suicidal-thoughts");
   });
 });
