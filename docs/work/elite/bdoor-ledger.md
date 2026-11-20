@@ -10151,3 +10151,41 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 ## 2 Timothy complete (2026-11-20)
 
 All four chapters in plain words.
+
+## Titus: the book page (2026-11-20)
+
+One web search: the coordinates of Nicopolis in Epirus (results from Wikipedia and its mirrors, a travel listing and a heritage listing agree on about 39.008 N, 20.734 E, about 7 km north of Preveza). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Received as Paul's; Muratorian list; Irenaeus and Clement of Alexandria quote it; Marcion left it out | Who wrote it | titus/intro.json `author` | Repository |
+| Authorship pointed to the 1 Timothy page; Crete not in Acts; the two views of the setting | Who wrote it | 1-timothy/intro.json `teaching`; titus/1.json `historical` | Repository |
+| Crete large and mountainous; joined with Cyrene in one province; Philo mentions Jews there; Cretans at Pentecost (Acts 2:11) | Crete | titus/intro.json `setting`; titus/1.json `historical` | Repository; BSB |
+| Acts mentions Crete only on the voyage; Fair Havens (Acts 27:7-13) | Crete; map | titus/intro.json `author`; titus/3.json `historical`; acts teaching map (Fair Havens 34.93, 24.8) | Repository; BSB |
+| AD 62 to 64 if Paul; 80 to 110 on the other view | Crete; timeline | titus/intro.json `date` | Repository |
+| Nicopolis in Epirus, founded by Augustus for Actium, 31 BC; most scholars think this one | Crete; map; timeline | titus/3.json `historical`; philippians teaching timeline (Actium 31 BC) | Repository; coordinates by the search above |
+| Cretans' reputation; Epimenides (about the sixth century BC) by tradition, reported by Clement of Alexandria and others; Callimachus; tomb of Zeus; a verb ‘to lie’ from the name; irony; not every Cretan | Crete; the Cretan saying | titus/1.json `cultural`, `words` (G0893) | Repository (Clement not named on the page) |
+| Titus a Gentile not circumcised (Galatians 2:1-3); Corinth (2 Corinthians 7:6-7; 8:6, 16-17); Dalmatia (2 Timothy 4:10); not in Acts | Titus | titus/intro.json `setting`; BSB | BSB text |
+| Elders in every town (Acts 14:23); elder and overseer interchangeable; oikonomos; the readings of 1:6; church order and women pointed to 1 Timothy | Elders | titus/1.json `historical`, `literary`, `words`, `hard`; 1-timothy/plain/3.json | Repository. No side |
+| ‘Those of the circumcision’ Jewish believers or Jews pressing the law; myths; purity rules; money | The circumcision group | titus/1.json `historical` | Repository |
+| Dispute among believers, not against Jews; Romans 7:12; misuse rejected; Acts 2:22-28 pointer | The circumcision group | philippians/plain/3.json (1-3); galatians/plain/4.json (21-31) | Near word for word |
+| Contempt for any people named as misuse | The Cretan saying | The run's brief; titus/1.json `cultural` | Stated by the site |
+| Household passage: outsiders' scrutiny; critics said the faith disrupted families; older women teachers; sōphrōn for every group | Household | titus/2.json `historical`, `cultural`, `words` (G4998) | Repository |
+| Wives: complementarian and egalitarian readings, each in its holders' terms; no side | Household | titus/2.json `hard`; ephesians/plain/5.json (21-33) | Repository wording, paraphrased. No side |
+| Abuse care lines | Household | ephesians/plain/5.json (21-33) | Word for word |
+| Slavery: no abolition commanded; Atlantic misuse named wrong | Household | ephesians/plain/6.json (5-9) | Word for word where it fits |
+| Paideuō; epiphaneia used of a god's manifestation or a ruler's arrival; two appearings | Grace | titus/2.json `words`, `literary` | Repository |
+| 2:13 taken by most translations and readers as one person; not resting on this verse alone (John 1:1; 20:28; Hebrews 1:8) | Grace | titus/intro.json `christ`; titus/2.json `christ`; romans/verses/9.json | Repository wording |
+| Periousios; Exodus 19:5; Deuteronomy 7:6 | Grace; Old Testament | titus/2.json `words` (G4041) | Repository; BSB |
+| Trinitarian pattern of 3:4-7 | Mercy | titus/3.json `literary`, `christ` | Repository |
+| Baptism readings of 3:5: Catholic, Orthodox, Lutheran; Reformed and Presbyterian; Baptist and evangelical; no side | Mercy | titus/3.json `hard` | Repository wording. No side |
+| Small groups meeting privately suspected; good conduct | Good neighbours | titus/3.json `cultural` | Repository |
+| Acts 5:29; the notes on Romans 13 | Good neighbours | romans/plain/13.json | Repository |
+| Hairetikos, later ‘heretic’, behaviour more than doctrine; two warnings first | Good neighbours; words | titus/3.json `words` (G0141) | Repository |
+| Not used against the harmed; police | Good neighbours | 1-corinthians/plain/5.json (1-5) | Wording drawn from it |
+| Philanthrōpia; palingenesia (Matthew 19:28) | Words | titus/3.json `words` | Repository |
+| Numbers 23:19; Exodus 34:6; Ezekiel 36:25, 27; Joel 2:28; Jeremiah 29:7 | Old Testament | BSB | BSB text |
+| Galatians 2:1-3 about AD 48 to 50 ‘on many readings’ | Timeline | galatians/intro.json `teaching` timeline (the Acts 15 meeting, about AD 48 to 50; many think Galatians 2 tells of it) | Repository, narrowed |
+| Pentecost AD 30 or 33 | Timeline | acts/intro.json timeline | Repository |
+
+Cut: "Perhaps some of them carried the news home"; "Titus had come to faith through Paul" (only ‘my true child’ is in the text).
