@@ -10825,3 +10825,38 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 Cut before publishing: the cry of the wages likened to Abel's blood; ‘cattle eating their fill on the day they are killed’ (an interpretation the notes do not give).
 
 ## James complete (2026-11-20)
+
+## 1 Peter: the book page (2026-11-20)
+
+Two web searches, for the rough placing of Bithynia, Pontus and Cappadocia (results: Bithynia's region near 40.5 N, 31.0 E; Amasya, an old capital of Pontus, 40.65 N, 35.83 E; Cappadocia's region 38.66 N, 34.85 E, Kayseri 38.72 N, 35.49 E). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Strangers in their towns; festivals, banquets, household gods; slander and local mistreatment, not an empire-wide campaign | In a minute; Readers | 1-peter/intro.json `overview`, `setting`; 1-peter/4.json `cultural` | Repository |
+| Five chapters, about twenty minutes aloud | In a minute | Estimate, as on earlier book pages | Estimate |
+| Suffering then glory, first Christ's, then his people's | In a minute; Suffering | 1-peter/intro.json `overview`, `reading` | Repository |
+| Silvanus = Silas (Acts 15:22, 40); secretary or courier or both; Polycarp's echo, Papias via Eusebius, Irenaeus by name; Eusebius: undisputed | Who wrote it; timeline | 1-peter/intro.json `author` | Repository |
+| Pseudonymity case (Greek, Greek Old Testament, Acts 4:13, likeness to Paul, few memories of Jesus, later persecution) and replies | Who wrote it | 1-peter/intro.json `author` | Repository, no side |
+| Babylon most likely Rome; Revelation 14:8; Jewish writers after AD 70; literal readings few; Babylon destroyed Jerusalem 587 or 586 BC | When; timeline; map | 1-peter/intro.json `setting`; 1-peter/5.json `historical`, `words` | Repository |
+| Peter's death in Rome under Nero after the fire of AD 64; date 62 to 64; ‘honor the king’; later dates 70 to 95; Pliny to Trajan 110 to 112 | When; timeline | 1-peter/intro.json `date`; 1-peter/4.json `historical` | Repository, no side |
+| Mark = John Mark (Acts 12:12); Papias on Mark as Peter's interpreter | When | 1-peter/5.json `historical` | Repository |
+| Five provinces north of the Taurus; Paul in Galatia and Asia; founding of the others unknown; Acts 2:9; 16:7; the messenger's route a scholarly suggestion | Readers; map | 1-peter/1.json `historical`; 1-peter/intro.json `setting` | Repository |
+| Mostly Gentiles (1:18; 4:3) | Readers | 1-peter/intro.json `setting` | Repository; BSB |
+| Structure in four parts; household code form | How it is built; Household | 1-peter/intro.json `structure`, `reading`; 1-peter/2.json `literary` | Repository |
+| Suffering for good versus for wrong; not punishment; not a command to stay; the church around sufferers; 5:7 | Suffering; What it is not | 1-peter/intro.json `themes`; 1-peter/2.json `doctrines`, `hard`; 1-peter/4.json `doctrines`; 1-peter/5.json `hard` | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | Suffering | acts/plain/14.json (21-28 `hard`) | Word for word |
+| Election readings (Reformed; Arminian and Wesleyan; corporate) | Chosen | 1-peter/1.json `hard`; ephesians/plain/1.json (3-14 `hard`) | Repository, no side |
+| Views on Israel's place (replacement and fulfilment, covenant, dispensational, two-covenant); Romans 11:1; misuse rejected; Acts 2:22-28 pointer | Chosen; What it is not | romans/plain/11.json (11-16 `hard`); hebrews/intro.json teaching `covenant`; acts/plain/2.json (22-28 `hard`) | Repository wording, no side |
+| Exodus 19:6; Hosea in 2:10 | Chosen; Old Testament | 1-peter/2.json `story`, `literary` | Repository; BSB |
+| Rulers: emperor called king; not approval of everything; fear for God alone; Acts 5:29 | Household | 1-peter/2.json `historical` | Repository; BSB |
+| Slavery paragraph (not softened; powerless movement; Atlantic misuse ‘That was a misuse, and it was wrong.’) | Household; What it is not | ephesians/plain/6.json (5-9 `hard`); 1-timothy/plain/6.json (1-2 `hard`) | Repository wording |
+| Wife expected to share her husband's religion (Plutarch, not named here); complementarian and egalitarian readings | Household | 1-peter/3.json `historical`, `cultural`; titus/plain/2.json (1-5 `hard`) | Repository, no side |
+| Care lines ‘Nothing in this passage asks anyone to stay ...’ and ‘Abuse and other crimes are to be reported ...’ | Household | ephesians/plain/5.json (21-33 `hard`); existing plain-note wording | Word for word |
+| Three readings of 3:19 (Augustine; descent to the dead and its three forms; fallen angels); Apostles' Creed ‘descended into hell’, older sense ‘to the dead’ | Spirits | 1-peter/3.json `hard`, `literary`; creeds/documents/apostles-creed.json | Repository, no side |
+| Baptism: power from the risen Christ; Catholic, Orthodox, Lutheran; Reformed and Presbyterian; Baptist and evangelical | Spirits | 1-peter/3.json `doctrines`; titus/plain/3.json (3-8 `hard`) | Repository, no side |
+| 4:6 two readings; nothing said about anyone's state after death | Spirits; What it is not | 1-peter/4.json `hard` | Repository |
+| Passover lamb; Leviticus; Psalm 118; Isaiah 28; Isaiah 53; Psalm 34; Sarah; the prophets searched (1:10-12); the Greek Old Testament | Old Testament | 1-peter/intro.json `story`, `christ`; 1-peter/2.json `cultural`; 1-peter/4.json `literary` | Repository; BSB |
+| Key words: parepidēmos, paroikos, anagennaō, lutroō, lithos, hierateuma, hupogrammos, apologia, Christianos, oikonomos, archipoimēn | Key words | 1-peter/1.json to 5.json `words` | Repository |
+| Timeline: Noah; exodus; Pentecost; Silas about AD 49; fire of 64 (Tacitus); AD 70; Pliny; Irenaeus | Timeline | 1-peter notes as above; james/intro.json `date` for the council | Repository |
+| Map: Pontus (40.65, 35.83), Cappadocia (38.66, 34.85), Bithynia (40.6, 30.3) as rough regions from the searches; Asia (38.6, 28.3) and Galatia (39.4, 32.0) near the drawing's own labels, unlabelled; Rome as on earlier maps | Map | Web searches; BookMap.tsx region labels; romans/intro.json map | Searches and repository; each line says ‘Placed roughly’ |
+| Deeper links: suffering, hope, church, israel, election, atonement, sacraments, state | Go deeper | bible/doctrines.json | Repository |
