@@ -3303,6 +3303,25 @@
     "kindness",
     "loneliness"
    ]
+  },
+  "peace": {
+   "phrases": [
+    "cant find peace",
+    "peace of mind",
+    "inner peace",
+    "never at peace",
+    "cant relax",
+    "calm down",
+    "peace with god",
+    "calm my mind",
+    "no peace at home"
+   ],
+   "not": [],
+   "related": [
+    "anxiety",
+    "overthinking",
+    "reconciliation"
+   ]
   }
  }
 }
