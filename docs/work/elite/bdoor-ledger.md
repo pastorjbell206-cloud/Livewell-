@@ -12506,3 +12506,26 @@ Cut before publishing: nothing beyond the deep note's wording.
 | Deuteronomy 25:17-18; Leviticus 19:34 | 14-16 | BSB | BSB text |
 
 Added by the brief: no people living today is Amalek, and the passage permits no hatred or harm of any people.
+
+## The plain notes on Exodus 18 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Amalek against, Midian for; Genesis 12:3 | 1-6 | exodus/18.json `story` | Repository |
+| Midianites east of the Gulf of Aqaba; Keturah; Kenites (Judges 1:16) | 1-6 | exodus/18.json `historical` | Repository |
+| The sons' names retell Moses' life | 1-6 | exodus/18.json `literary` | Repository |
+| Greetings of shalom; the meal after sacrifice as a seal of friendship | 7-12 | exodus/18.json `cultural` | Repository |
+| Jethro's words as a newcomer's confession; the Kenite hypothesis reversed by the text | 7-12 | exodus/18.json `historical`; exodus/3.json `hard` | Repository |
+| Joshua 2:10-11; Psalm 96:4; Matthew 2:1-2 | 7-12 | BSB; exodus/18.json `christ` | BSB text |
+| Justice in small societies; two roles of Moses | 13-16 | exodus/18.json `cultural` | Repository |
+| Deuteronomy 1:9; Numbers 11:14 | 13-16 | BSB | BSB text |
+| ‘Not good’ echoing Genesis 2:18; moral qualifications; military units; sar | 17-23 | exodus/18.json `literary`, `cultural` | Repository |
+| The care line ‘Rest in Christ does not replace other help ...’ | 17-23 | matthew/plain/11.json (28-30 `hard`), word for word | Repository |
+| Numbers 11:17; Acts 6:3-4; Exodus 23:8 | 17-23 | BSB; exodus/18.json `christ` | BSB text |
+| Hearing frames the chapter; when Jethro came (before or after the law), placed by theme or in order | 24-27 | exodus/18.json `literary`, `historical` | Repository; no side |
+| Jethro, Reuel, Hobab: the explanations | 24-27 | exodus/18.json `hard` | Repository; no side |
+| Deuteronomy 1:13; Hebrews 7:25 | 24-27 | BSB | BSB text |
+
+Cut before publishing: a gloss on the meaning of Eliezer (not in the repository's notes; the BSB's own explanation used instead).
