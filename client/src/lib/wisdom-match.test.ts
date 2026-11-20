@@ -241,6 +241,9 @@ describe("wisdom matcher", () => {
     expect(r.matches[0].topic.id, q).toBe(id);
     expect(r.matches[0].safety, q).toBe(true);
     expect(r.close, q).toEqual([]);
+    // The help topic's own related subjects follow it, before chance word matches.
+    const related = r.matches[0].topic.related;
+    expect(related.includes(r.matches[1].topic.id), q).toBe(true);
   };
 
   it("puts the help topic first for self-harm, five new ways of saying it", () => {
@@ -278,7 +281,7 @@ describe("wisdom matcher", () => {
   });
 
   it("never shows one subject alone, and names the ones nearly as close as the first", () => {
-    const alone = findTopics(prep, "i wish i was dead");
+    const alone = findTopics(prep, "i keep replaying every conversation in my head");
     expect(alone.matches.length).toBeGreaterThanOrEqual(3);
     expect(alone.matches.slice(1).some((m) => m.related)).toBe(true);
     const r = findTopics(prep, "the doctor said moms cancer is back and theres nothing more they can do");

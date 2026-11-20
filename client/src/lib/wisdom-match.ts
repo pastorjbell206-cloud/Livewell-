@@ -30,7 +30,8 @@
  *   library's own word for the thing to any sentence that names a member.
  * Safety comes first: a sentence carrying a safety word (matching.json
  * "safety", set only by the rewrites for self-harm, abuse and danger) puts
- * that word's help topic first, whatever else scores.
+ * that word's help topic first, whatever else scores, and its own related
+ * subjects next.
  * When fewer than three topics score near the best, the best topic's related
  * subjects fill the second and third places, so a reader is never shown one
  * subject alone; `close` names those scoring nearly as high as the best.
@@ -416,7 +417,16 @@ export function findTopics(prep: Prepared, sentence: string, limit = 6): Found {
   const top = scored[0]?.score ?? 0;
   const confident = top >= MIN_SCORE;
   // Keep the ones near the top; a long tail of one-word hits is noise.
-  const near = scored.filter((m) => m.score >= Math.max(2, top * 0.35)).slice(0, limit);
+  let near = scored.filter((m) => m.score >= Math.max(2, top * 0.35)).slice(0, limit);
+  // After a help topic put first for safety, its own related subjects come next, before chance word matches.
+  if (near[0]?.safety) {
+    const kin = near[0].topic.related
+      .map((id) => prep.byId.get(id))
+      .filter((t): t is FinderTopic => !!t)
+      .map((topic) => scored.find((m) => m.topic.id === topic.id) ?? { topic, score: 0, related: true });
+    const kinIds = new Set(kin.map((m) => m.topic.id));
+    near = [near[0], ...kin, ...near.slice(1).filter((m) => !kinIds.has(m.topic.id))].slice(0, limit);
+  }
   // Never one subject alone: the best topic's related subjects fill to three.
   if (confident && near.length < 3) {
     const have = new Set(near.map((m) => m.topic.id));
