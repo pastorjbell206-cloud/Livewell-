@@ -8291,3 +8291,38 @@ Four searches (Roman courts and status; the BSB wording at 6:9; arsenokoitai and
 | Trafficking care line | 15-20 | Genesis 37 plain note, word for word with one sentence added | Repository |
 
 Cut: banquets ending in prostitution (deep note; not confirmed); Caligula's tax.
+
+## The plain notes on 1 Corinthians 7 (2026-11-20)
+
+Four searches (7:21; the Pauline privilege; Westminster Confession 24.6; the Augustan marriage laws). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 unmarked in the BSB; many take it as a quotation of the Corinthians' letter; others as Paul's view | 1-7 | BSB text; deep note `story` | Stated as two readings |
+| Mutual pairs in 7:2-4 unusual in ancient writing on marriage; men's use of prostitutes not counted a disgrace | 1-7 | Deep note `literary`; chapter 6 search (prostitution) | Repository; ledger. Stated as "rarely" |
+| ‘Mutual consent’ (verse 5); 13:4-5 | 1-7 | BSB | BSB text |
+| Consent within marriage; coercion is abuse; Genesis 16 safety lines word for word; Find Help | 1-7 | Genesis 16 plain note | Repository |
+| Charisma read two ways | 1-7 | Deep note `words` | Repository |
+| Genesis 2:18, 24; Proverbs 5:18; Ecclesiastes 9:9; Song of Solomon 2:16; Exodus 21:10 | 1-7 | BSB | BSB text |
+| Augustus's laws of 18 BC and AD 9: penalties on the unmarried, rewards for children; widows and divorced women expected to remarry within a set time | 8-9 | Lex Julia de maritandis ordinibus; Lex Papia Poppaea | Search: en.wikipedia.org "Lex Papia Poppaea"; penelope.uchicago.edu (Smith's dictionary); csun.edu handout; scriptaclassica.org (Geiger). The periods (one year, six months) not stated |
+| Whether Paul had been married not known | 8-9 | BSB silence | Stated as unknown |
+| Genesis 1:28; Isaiah 56:5; Jeremiah 16:2; Matthew 19:11-12; Psalm 68:5 | 8-9 | BSB | BSB text |
+| Word to single readers | 8-9 | Matthew 19 plain note, adapted | Repository |
+| Roman divorce by either spouse, by leaving | 10-16 | Deep note `cultural`; Mark 10 plain note (Roman wives could divorce) | Repository |
+| Douloō in 7:15 | 10-16 | Repository Greek (G1402) | Script |
+| Sanctified spouse and holy children not saved without faith | 10-16 | Deep note `doctrines` | Repository |
+| 7:16 read as hope or as release | 10-16 | Commentary options | Stated as two readings |
+| Catholic, Orthodox, Protestant views; some scholars: separation without remarriage; many count abuse | 10-16 | Mark 10 and Matthew 19 plain notes, word for word or nearly | Repository |
+| Pauline privilege (canon 1143): one of two unbaptized spouses baptized, the other departs, the first marriage can be dissolved and the believer marry again | 10-16 | Code of Canon Law | Search: en.wikipedia.org "Pauline privilege"; canonlawmadeeasy.com; encyclopedia.com. Paraphrased |
+| Westminster Confession (1646) 24.6: adultery and wilful desertion that cannot be remedied the only grounds that dissolve the bond | 10-16 | Westminster Confession | Search: sermonaudio PDF of the 1646 text; monergism.com; pcahistory.org (PCA 1992 report). Paraphrased |
+| Genesis 2:24; Mark 10:9, 11-12; Matthew 19:9; Deuteronomy 24:1-4; Malachi 2:14; Ezra 10:3 | 10-16 | BSB | BSB text |
+| Slavery everywhere; Scheidel's estimate of at least a tenth; frequent manumission | 17-24 | Roman-world portrait | wrom-ledger. Scheidel not named |
+| 7:21 read two ways (‘take the opportunity’ or ‘make use of your condition’); scholars long divided | 17-24 | Repository Greek (mallon chrēsai); translation notes | Search: biblegateway.com Theology of Work commentary; tips.translation.bible; old-tips.translation.bible. No other translation quoted |
+| Genesis 17:10; Galatians 5:6; 6:15; Exodus 20:2; Leviticus 25:42; Exodus 21:16; Deuteronomy 23:15; 1 Timothy 1:10; Philemon 1:16 | 17-24 | BSB | BSB text |
+| Care line for anyone held or forced to work | 17-24 | Genesis 37 plain note | Repository |
+| ‘Present crisis’: a local hardship (such as food shortage), the pressures of the whole time before Christ's return, or the end expected soon | 25-35 | Deep note `historical`; commentary options | Stated as views; no famine claimed as fact |
+| 1 John 2:17; 1 Peter 4:7; Romans 13:11; Mark 13:17; Luke 10:41-42 | 25-35 | BSB | BSB text |
+| 7:36-38 three readings (engaged man; father, King James Version; celibate couple); the verb ‘give in marriage’ | 36-40 | Deep note `hard` | Repository |
+| Romans 7:2; Psalm 68:5; Ruth; 1 Timothy 5:14 | 36-40 | BSB | BSB text |
+
+Cut: girls' age at marriage (deep note); surgery to hide circumcision (deep note; not checked); grain shortages named as fact; the "three years" of Suetonius.
