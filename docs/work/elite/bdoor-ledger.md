@@ -8154,3 +8154,26 @@ quotation to the verse it cites.
 Cut: "to Corinthianize" and the old city's jokes (not confirmed by the search);
 1 Clement's year (AD 96) and its wording in quotation marks; Strabo's own
 words; Origen by name.
+
+## The plain notes on 1 Corinthians 1 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter form; charis for the usual greeting; shalom | 1-9 | Romans 1 plain note (same form) | Repository |
+| Ekklēsia: the citizens' assembly; the Greek Old Testament's word for Israel's assembly | 1-9 | Earlier ledger (Acts 5:11 row) | Ledger |
+| Joel 2:32; Amos 5:18; Deuteronomy 32:4; 4:7 | 1-9 | BSB | BSB text |
+| Apollos of Alexandria (Acts 18:24-28); Cephas the Aramaic name of Peter; Peter's visit unknown; no rivalry among the leaders (16:12) | 10-17 | BSB; deep note `historical`; Acts 18 plain note | Repository |
+| Teachers of rhetoric with followers | 10-17 | Deep note `cultural` | Stated generally, no names |
+| ‘I follow Christ’: a fourth party or Paul's irony | 10-17 | Commentary options | Stated as two readings |
+| Chloe's household probably slaves or workers; Crispus (Acts 18:8); Gaius (Romans 16:23) "may be" | 10-17 | Deep note; BSB | Repository |
+| Psalm 133:1; John 17:21; Matthew 28:19; 12:13; Romans 6:3; baptism views pointed to the Acts 2:37-41 note | 10-17 | BSB; repository | BSB text |
+| Crucifixion for slaves, bandits, rebels; Cicero, For Rabirius 16, paraphrased | 18-25 | Roman-world portrait | wrom-ledger |
+| Deuteronomy 21:23; skandalon; mōria | 18-25 | BSB; Greek text | Repository |
+| Isaiah 29:14 in the Hebrew (BSB) and Paul's wording close to the old Greek; Isaiah 29:13; 19:12; 33:18; 28:16; 8:14 | 18-25 | BSB; comparison | BSB text. The Greek translation's wording not quoted |
+| ‘Jews demand signs and Greeks search for wisdom’ two ways of asking for proof; contempt for Jews rejected | 18-25 | BSB context (verse 24) | Site's standing line (Romans book page) |
+| Wise, powerful, well-born = educated, influential, good families; ‘not many’ means some; Gaius, Crispus | 26-31 | Roman-world portrait; BSB | Repository |
+| Jeremiah 9:23-24 matches wise, strong, rich; 1 Samuel 2:8; Deuteronomy 7:7 | 26-31 | BSB | BSB text |
+
+Cut: Tertullian, Augustine and Aquinas by name (deep note); the Alexamenos graffito.
