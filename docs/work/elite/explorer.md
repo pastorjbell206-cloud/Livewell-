@@ -496,7 +496,7 @@ A plain section after the map counts every part (13 stops, 5 threads, 23 moving 
 
 ### What of the plan remains
 
-Films still coming (8, after the sixth run of 2026-11-20): a blessing for all nations; light and darkness; Why can't I see God?; What happens when we die?; What about people who never heard?; Why did God let his temple be destroyed?; Why does God seem silent sometimes?; Are science and the Bible enemies?. Every planned thread is lit. Rooms: the library of the 66 books (as a room), the timeline strip, printable pages, the parent and leader guide, and the exodus as "possible routes".
+Films still coming (4, after the seventh run of 2026-11-20): a blessing for all nations; light and darkness; What about people who never heard?; Why did God let his temple be destroyed?. Every planned thread is lit. Rooms: the library of the 66 books (as a room), the timeline strip, printable pages, the parent and leader guide, and the exodus as "possible routes".
 
 ## Hebron's name, the last thread, four films (2026-11-20, fifth run)
 
@@ -557,6 +557,73 @@ Measured on `/study/explorer/watch/the-king` (served by `scripts/serve-like-verc
 - What the frame shots showed, and was fixed: the rainbow lay over the hills (now behind them); the stars were too small at 390; the throne read as a chimney (larger, a crown on its seat); the broken tablets read as a pill, then as a face (now one upright tablet cracked and one lying on its side, cracked); in the Lamb film the garments were modern shirts (now long tunics), the lamb in the poster floated over the hill, the tent floated over the courtyard, the goat was a sheep with horns and the same clay as the hills, and John's pointing arm ran across the river like a rod; in the exile film the poster's garden sat under the title label (moved right), the flame across the gate read as a ribbon (now flames), the far wall at Babylon floated (a horizon now under it), the road to the temple looped; in the kingdom film the seed was too small to see, the lakeside hill was a slab ending in a point, the far city floated, and the nesting birds read as eyes.
 - Not verified: a screen reader by ear; a real phone; Listen by ear on the new films; videos (none exported this run).
 
+## Every still sentence read, and four Good questions (2026-11-20, seventh run)
+
+### The still sentences
+
+A film's `still` sentence is all a reader gets with motion turned off, and it is the picture's accessible name, so it must say what the finished drawing shows and nothing it does not. Every poster and frame of all 31 films was shot in its finished state on the served build (reduced motion, 1440, by day, older level) and each sentence read beside its picture (`/home/user/elite-shots/explorer/run7-stills/sheets/`, one sheet a film, the sentence under each picture). What was wrong, and how it reads now:
+
+- **The covenants**, picture 5: "Two stone tablets lie broken on the ground" (one cracked tablet stands, one lies cracked on its side) now says that; picture 1, a rainbow "in three bands" (two are drawn); picture 2, Abraham "looking up" (no figure can show a gaze).
+- **Exile and coming home**, picture 3: two sitting "with bowed heads" (not drawable) now sit together on the bank, and the harps hang "in the branches of one" willow; picture 6, "looking ahead" removed; picture 7, "its gates" (one gate drawn).
+- **The whole Bible in two minutes** and **The Bible in a minute**, picture 6: "harps hung in a willow" (the roundel has one harp on a willow's branch above a river).
+- **God with his people**, picture 9: the light "fills the whole city" and the line "is joined all the way" (the light shines in the gateway; earlier gaps stay dotted, the last stretch is solid).
+- **Sacrifice and the Lamb**, picture 3: "a family seated at a meal" (no meal is drawn: two of the family sit in the lit doorway, the lamb beside the house).
+- **The kingdom of God**, picture 4: the sower scattering seed was drawn but not named; picture 5, children who "run" to a man (he kneels low among them; the grown-ups stand at either side).
+- **Who God is**, the poster: it described the three crossed-out pictures, while the poster drawn is the Jordan (the plan chose the Jordan so the broken pictures are never shown un-crossed); picture 3, Thomas "facing" Jesus.
+- **Creation and the image of God**, picture 2, "animals on the hills" (one sheep); picture 4, the two "look up toward the light".
+- **What sin is**, picture 2, the person "turns away" (a tree appears and a line reaches to its fruit); picture 6, broken lines "joined again in gold" (one gold line runs from the light to the person).
+- **Why did Jesus die?**, the poster: a hill "outside a city wall" (no wall in the poster).
+- **The resurrection**, picture 3: two "facing each other".
+- **How salvation works**, picture 2, the gold line "stops at the edge of the gap" (it stops short in the air above God's side); picture 7, one "turned toward the light" (stands with hands open and raised). **The gospel in a minute**, the same two, and picture 5, "a gold seam" (in that picture the seam is a plain line).
+- **The Holy Spirit in a believer**, picture 3: a child who "looks up".
+- **Baptism and the Lord's Supper**, picture 5: "a bowed head".
+- **The Bible: how we got it**, picture 7: books "of different shapes ... spread out to the edges" (small books of one shape set in a ring).
+- **Does God still love me when I do wrong?**, picture 6: the cross "behind the house" (it is on the far hill across the valley).
+
+Three drawings were fixed rather than their sentences: in the covenants, picture 1, the hill ended in a vertical cliff (it now slopes to the ground); in What sin is, picture 6, the path rose off the ground into the sky like a plank (it now lies on the ground); in The resurrection, picture 4, the boat "drawn up on the shore" was drawn underneath the land and could not be seen (it now shows, with its mast).
+
+### The four films
+
+All four in "Good questions", in the order asked. Each: 7 frames, captions at both levels, a `still` for every frame, verses checked by the validator, "Think about it", "Where the Bible says it", deeper links, its own emblem in `art.tsx`, page meta (FILM_META string literals), a committed poster, a share cut at the younger level (112.5 to 118.8 seconds; the full levels run 122 to 182), the sitemap, the prerender, the search index and llms.txt, ledger rows and tests (`films.test.tsx`).
+
+1. **Why can't I see God?** (`why-cant-i-see-god`). One green hill under a wide sky with a child on it: a tree bends in a wind that is never drawn; night and stars; an open scroll on a flat rock; a man among a crowd by a lake, a child close beside him; a small gold lamp lighting the next steps of a dark path; morning light from beyond the top of the picture. Built from the family catechism's Q67 (word for word on "real things we cannot see ... like love, or the wind, or our own thoughts", and on "we know him because he came close") and Q3, the Study Bible's study of revelation (general and special revelation, Sinai's "no form"), and the Honest Answer "Does God actually exist?", whose Schellenberg objection the older level names fairly and, with the answer, does not claim to answer, giving Pascal's line as the answer gives it. God is never drawn. No care line (nothing in it touches death, guilt or fear).
+2. **What happens when we die?** (`when-we-die`). A bench under a tree, and a path up the hill to a house: a grown-up and a child on the bench in the evening; soft rain; the house's door opens and its window lights; that light runs down the path; night with a first pale band of morning; the two standing in the morning light; the two on the bench again. The picture is the catechism's own word, a door into being with him; no one is drawn going in. It answers the question directly from catechism Q70, the Study Bible's study of the time between death and the resurrection, and its notes on John 14 and 1 Thessalonians 4, and agrees with The life to come without repeating it (different verses: 1 Thessalonians 4:13-14, John 14:2, 2 Corinthians 5:8, Romans 14:8, Psalm 23:4). Both readings of the time between are named only at the older level, as the existing film does; the younger level says what the card's younger answer says. No grave, body or fire; nothing on how anyone died; nothing on any person's eternal state (the intermediate study's sentence "the one who has died is not lost" is deliberately left out); no end-times scheme. Care line: The life to come's, word for word.
+3. **Why does God seem silent sometimes?** (`god-silent`). A person on a rock on a dark hillside: the stars; a small harp beside them (David); a thin gold line of first light along the far hills (Psalm 13's turn to trust); on a page, Elijah asleep under a desert tree with bread and water beside him; the mountain, rocks broken by the wind, a person at the cave's mouth; a cross on a hill under a darkened sky; morning, and the person stands. From the Wisdom page "Feeling far from God" (its framing and "The lament was an act of faith, not its collapse." word for word), the Study Bible's notes on Psalm 13, Psalm 22 and 1 Kings 19 (God's order of care: rest, food, water, a second meal before any words). Jesus' cry is quoted exactly from Mark 15:34. Elijah's own words are given only as "I have had enough, LORD"; his request to die is not quoted. Never "you lack faith" (a test fails on it). Care line: the Return stop's, whole.
+4. **Are science and the Bible enemies?** (`science-and-the-bible`). A table by a window at night with an open book and a small telescope: a taut rope drawn between them; on a page, a laboratory doorway with its doors open and carved writing above; a kettle steaming beside a cup; a book with a pen across it; three people behind the table, each with a book, one light from the window on all three; the window open to the stars, one gold. Only the Honest Answer "Do I have to choose between faith and science?", the Genesis 1 answer page and catechism Q71, put in the third person (the answer speaks in the first): the war story of Draper and White, Galileo in 1633 named as the church's failure, Maxwell and Lemaître, the kettle, Aquinas and the author, and why science works at all. On the age of the earth and evolution the older level gives the three views exactly as the answer does, "Each is held by believers who take Scripture seriously, and each has hard questions to answer. This moving picture takes no side."; the younger says, with the catechism, that faithful Christians hold different views on the timing and method of creation and all share that God made it all on purpose. Nothing on a historical Adam or the flood. No essay is linked: the Genesis 1 essay is pending on the shelf and the faith and science essay is not listed, so only the two answers' pages, which are live, are used. No care line.
+
+"Light and darkness" was not made: after the still sentences, the four films and twelve videos, there was not room to make it to the same standard.
+
+### Videos (not committed)
+
+Square (1080 by 1080) and vertical (1080 by 1920), each from the film's share cut at the younger level, H.264 with a silent AAC track, in `/home/user/elite-shots/explorer/video/` (`<slug>-square.mp4`, `<slug>-vertical.mp4`), one export at a time with the load read under 6 before each (the twelve loads read 1.07 to 5.96). A still every 14 seconds of each new film's square video was looked at (`video/run7-sheets/`).
+
+| Film | Seconds | Square MB | Vertical MB |
+|---|---|---|---|
+| The resurrection | 105.8 | 3.56 | 5.21 |
+| The Bible: how we got it | 108.2 | 2.95 | 4.40 |
+| The king | 114.2 | 3.12 | 4.62 |
+| Does God still love me when I do wrong? | 114.8 | 3.37 | 4.93 |
+| Promises that build: the covenants | 118.2 | 3.95 | 5.79 |
+| Sacrifice and the Lamb | 118.5 | 3.71 | 5.32 |
+| Exile and coming home | 110.8 | 3.04 | 4.53 |
+| The kingdom of God | 113.8 | 3.07 | 4.55 |
+| Why can't I see God? | 116.2 | 3.91 | 5.69 |
+| What happens when we die? | 118.8 | 3.65 | 5.36 |
+| Why does God seem silent sometimes? | 116.8 | 4.74 | 6.79 |
+| Are science and the Bible enemies? | 112.5 | 3.25 | 4.78 |
+
+Every finished film now has its two videos there (35 films, 70 files).
+
+### What was run (2026-11-20, seventh run)
+
+- After each piece, the light gates: `validate-explorer` 0, `build-explorer-index` and `--check` 0, `validate-no-emdash` 0, `validate-links` 0, the search index build and `--check` 0.
+- Fetched and merged `origin/claude/todo-implementation-hhp4bm` first (one conflict, the search index, rebuilt; the merge brought Revelation notes, the passage index and the Wisdom finder). Then, on the merged tree, each command with the load read under 6 first and its exit code read directly: `pnpm check` 0; all 46 commands of the content-gates step in `.github/workflows/ci.yml`: all 0; `pnpm test`: the first run had one failure, the Explorer's walk through all thirteen stops timing out at 5.3 seconds while the machine was loaded (it passes in about 3, and passed in this run's earlier Explorer-only run); that test was given 20 seconds and the whole suite run again: 0 (162 files passed, 7 skipped; 1,934 tests passed, 73 skipped); `pnpm build` 0; `pnpm run sitemap` 0 (35 film addresses); `pnpm run prerender` 0 (35 film pages, each with its own title and poster as og:image); `pnpm run audit:canonicals` 0 failures; ESLint `--max-warnings 0` on every changed Explorer TypeScript file: clean; Prettier on the four new drawings and the films test (formatting only, then `pnpm check` and the two Explorer test files again: 0, 110 tests passed).
+- On the served build (`scripts/serve-like-vercel.mjs`, port 4671): each new film played once with Playwright's clock (1 to 7, then "Play again", still on 7 thirty seconds later, no page errors); every frame and poster of the four at 390 and 1440, day and night, both levels, with reduced motion (256 shots in `/home/user/elite-shots/explorer/run7-final/`, contact sheets beside them): no sideways scroll, no page errors.
+- Lighthouse (`scripts/lighthouse-median.mjs`, median of three, Playwright's Chromium), the load near 5: `/study/explorer` performance 77, accessibility 100, best practices 96, SEO 100, CLS 0.000; `/study/explorer/watch/when-we-die` performance 90, accessibility 100, best practices 96, SEO 100, CLS 0.000.
+- What the frame shots showed, and was fixed: in Why can't I see God? everything sat low and small under an empty sky (the hill raised, the child, the tree and the crowd drawn larger), the far hills by night were blue and read as a lake (now green and hatched), the lamp was tiny (larger, the path inked); in What happens when we die? the garden and house were small (drawn larger), the band of first light floated across the middle of the sky and vanished by night (it now lies along the horizon and takes the pale ink's tone by night); in Why does God seem silent sometimes? the far hills read as the sea, the rock and person were small, the harp read as a shell (now a small upright harp standing against the rock), the desert picture was tiny, and the cave turned pale by night like a lit door (now dark by day and night); in Are science and the Bible enemies? the telescope stood on the window sill, the three people stood on the table top with their heads floating (now behind a solid table front, head and shoulders showing), the gold star was too small to see; the emblems of the dying and silence films had a cliff-edged hill and a box that read as nothing (both fixed, posters made again).
+- Machine rule: once, the shots of all 31 films for the still check were started in the same command that printed the load, which read 6.02. Every other heavy command waited for a reading under 6 first, read in its own command or by the waiting loop.
+- Not verified: a screen reader by ear; a real phone; Listen by ear on the new films; the videos uploaded anywhere.
+
 ## Questions only James can answer
 
 1. Is "Bible Explorer" the name he wants, everywhere?
@@ -605,6 +672,13 @@ Measured on `/study/explorer/watch/the-king` (served by `scripts/serve-like-verc
 44. The exile film's care line joins three sentences already on the site (the Exile stop's and the Wisdom page "Feeling far from God"), so it is not one line taken whole from one place. Is that acceptable as reuse?
 45. The kingdom film says at the older level that the church rejects making the kingdom a nation, empire, party or program "whichever way that program leans". Is that the plainness he wants, or would he rather name no direction at all?
 46. The 0.001 layout shift comes from the site's Cormorant italic face, not preloaded, arriving after the prerendered shell paints. Would he like the shared fix (preload that one font file) made by whoever looks after the site's head?
+47. Why can't I see God? names, at the older level, the philosopher J. L. Schellenberg's argument that a loving God would not stay hidden from a sincere seeker, and says, with the Honest Answer, that it is not fully answered. Is that the honesty he wants for ages 12 to 16?
+48. What happens when we die? draws the catechism's "door into being with him" as a house on a hill whose door opens and stays lit, with no one drawn going in. Is he content with that picture, and with the younger level saying, as The life to come does, that "people who trust Jesus go to be with him when they die" and that Christians do not all describe that time the same way?
+49. The silence film gives Elijah's words only as "I have had enough, LORD" and leaves out his prayer to die (1 Kings 19:4), for children's sake. The Study Bible's own note on that chapter carries a crisis line with a phone number, and the film links that chapter. Is he content with both?
+50. The science film names Galileo's condemnation in 1633 as the church getting it wrong, and Georges Lemaître simply as "a physicist and a priest". Is that as he would put it for children?
+51. The science film says, at the older level and in the Honest Answer's own words, that the three views on the age of the earth and evolution are each "held by believers who take Scripture seriously". Is he content with the three named for ages 12 to 16, and with the younger level naming none?
+52. "Light and darkness" (Big ideas) is still coming, with "A blessing for all nations", "What about people who never heard?" and "Why did God let his temple be destroyed?". Which should come next?
+53. The film emblems now carry one gold mark each, as their drawings do; the map's stop emblems still keep gold for "You are here" alone. Is he content with that difference?
 
 ## What was run for the second three (2026-11-19)
 
