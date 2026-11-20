@@ -125,6 +125,44 @@ describe("WisdomFinder", () => {
     expect(help.has("kindness")).toBe(false);
   });
 
+  it("offers \"Or look by subject\" beside the search, collapsed, each area opening its subjects written in full", async () => {
+    render(
+      <TestProviders>
+        <WisdomFinder />
+      </TestProviders>,
+    );
+    await waitFor(() => expect(screen.getByText("Browse by area of life")).toBeInTheDocument());
+    const details = document.querySelector("details.wf-browse") as HTMLDetailsElement;
+    expect(details).not.toBeNull();
+    // Collapsed by default, inside the search band.
+    expect(details.open).toBe(false);
+    expect(details.closest(".wf-ask")).not.toBeNull();
+    expect(details.querySelector("summary")?.textContent).toBe("Or look by subject");
+    details.open = true;
+    const byId = new Map(finder.topics.map((t) => [t.id, t]));
+    const buttons = Array.from(details.querySelectorAll<HTMLButtonElement>("button.wf-browse__area"));
+    // One button per area, the same areas the chips use, counted from the data.
+    expect(buttons.length).toBe(finder.areas.length);
+    const area = finder.areas.find((a) => a.id === "mind")!;
+    const deep = area.topics.filter((id) => byId.get(id)?.deep);
+    const btn = screen.getByRole("button", { name: new RegExp(`^${area.name}`) });
+    expect(btn.textContent).toContain(`${deep.length} written in full of ${area.topics.length}`);
+    expect(btn.getAttribute("aria-expanded")).toBe("false");
+    const panel = document.getElementById(btn.getAttribute("aria-controls") ?? "")!;
+    expect(panel.hidden).toBe(true);
+    fireEvent.click(btn);
+    expect(btn.getAttribute("aria-expanded")).toBe("true");
+    expect(panel.hidden).toBe(false);
+    const links = Array.from(panel.querySelectorAll("a")).map((a) => a.getAttribute("href"));
+    expect(links.length).toBe(deep.length);
+    for (const id of deep) expect(links).toContain(`/wisdom/${id}`);
+    // Every subject in the area is one press away, in the area list below.
+    fireEvent.click(screen.getByRole("button", { name: `All ${area.topics.length} subjects in this area` }));
+    expect(await screen.findByText(new RegExp(`${area.topics.length} subjects in ${area.name}`))).toBeInTheDocument();
+    fireEvent.click(btn);
+    expect(panel.hidden).toBe(true);
+  });
+
   it("lists an area's subjects when an area is chosen", async () => {
     render(
       <TestProviders>
