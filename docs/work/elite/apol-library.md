@@ -526,3 +526,29 @@ Served build (`serve-like-vercel.mjs`, port 4631, Playwright at 390 with /api/tr
 ### What remains
 
 Text area (from the plan's fourteen): Luke 22:43-44 and Hebrews 2:9 as pages of their own, Nongbri on the dating of papyri, the church fathers' quotations, the Old Testament text. Authors area (plan items not yet a page of their own): what genre the Gospels are (Burridge), the Synoptic problem and Q, whether John is history or theology, the Gospel of Thomas at length, why not the Shepherd, the Didache or the Gospel of Peter, the Apocrypha, and whether Constantine created Christianity's Bible (partly in piece m). James's read of the five authors pieces before they go live; each goes live by its `status` and the area's in `areas.json`.
+
+---
+
+## 10. Thirteenth run (2026-11-20): an editor's read of the authors area, and the science area
+
+### The editor's read of the five authors pieces
+
+An independent read of the five pending authors pieces, first as a hostile, well-read skeptic and then as a careful conservative scholar, against their twelfth-run ledger rows, the Study Bible introductions and the Honest Answers. Twenty-four changes, each in the record and the data (the record diff at 0), each with a ledger row under "Thirteenth run". The main ones: piece k said the Gospels were written decades later "on any dating", though it cites Crossley's date for Mark within a decade of the crucifixion, and its first step contradicted itself; k also gave Byrskog an argument and a stance not verified, and said Peter, James and John "still preached" in churches when most of the Gospels were written. Piece l said Bauckham conceded the unreliability of memory "in the same book" (it was a blog post and an interview). Piece m said churches from Gaul to Egypt called the four "the only four" (only Irenaeus is verified saying so) and that only Thomas has defenders for early material. Piece n said every article of the creeds is taught in letters "no one doubts" (the virgin birth is taught in the Gospels; a few have doubted all of Paul) and named Tiro, whom the sources didn't. Piece j called Mark and Luke men "of no standing" and said the church "always" confessed Hebrews. No living author is quoted in the five. All five and the area stay pending.
+
+### The science area (pending)
+
+Slug `science` (the plan's), title "Science" as in `areas.json`. Records in `docs/work/elite/apol-pilot/science/` (index.md and five pieces), data in `client/public/questions/science/`. The plan lists sixteen questions for the area; this run took the five that answer "the claims of science" as a skeptic puts them, folding plan items 1 to 6 and 9 to 12 into five pages.
+
+| Piece | Address (pending) | Argued prose | Key |
+|---|---|---|---|
+| Science keeps explaining what people once put down to God. Hasn't it made God unnecessary? | /questions/science/has-science-made-god-unnecessary | 2,051 | o |
+| The church condemned Galileo. Hasn't religion always been at war with science? | /questions/science/galileo-and-the-war | 2,073 | p |
+| A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one? | /questions/science/miracles-and-the-laws-of-nature | 2,068 | q |
+| Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him? | /questions/science/the-beginning-and-fine-tuning | 2,046 | r |
+| Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall? | /questions/science/evolution-and-genesis | 2,363 | s |
+
+The site takes no position on the age of the earth, evolution, a historical Adam's details or the flood's extent: the evolution page sets out young-earth creation, old-earth creation (day-age), evolutionary creation, the framework, analogical-day and cosmic-temple readings, and what intelligent design is and is not, each in its defenders' terms with its hardest difficulty, unranked, and then what all of them confess. Hume is quoted from the Selby-Bigge text of the *Enquiry*, read word for word in this run. Galileo's dates (1616, 1633, 1758, 1835, 1992) and what he was and wasn't sentenced to each have a ledger row. Scripture is quoted from the site's Berean Standard Bible and marked BSB. No living author is quoted.
+
+### What remains in the science area
+
+From the plan's sixteen: the mind and the soul, free will and neuroscience, near-death experiences, life on other planets, artificial intelligence (an answer exists), whether the great scientists were believers, and Adam and the genome as a page of its own. James's read of the five before the area goes live; each goes live by its `status` and the area's in `areas.json`.

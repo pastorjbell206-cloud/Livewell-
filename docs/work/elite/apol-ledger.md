@@ -1116,3 +1116,179 @@ Cut: a claim that Ehrman counts the seven (the count is the scholarly consensus,
 | Papias (bishop of Hierapolis, early second century, quoted by Eusebius) | Bdoor rows 22, 23 | Verified |
 | "Canon" from a Greek word for a measuring rule | Repo: the site's glossary (`client/public/theology/theology-glossary.json`, "Canon": from a word meaning measuring rod) | Agrees with the site |
 | Pastoral Letters: 1 and 2 Timothy and Titus | Note (1 Timothy, Titus) | Verified |
+
+# Thirteenth run (2026-11-20): an independent editor's read of the authors area, and the science area
+
+Method words as in the twelfth run. "S" is a WebSearch run in this run (summaries of pages, so "verified (secondary)" means a search summary, not the primary text); "Twelfth run" means the rows above; "Repo" a file in this repository; "Note" a Study Bible introduction. No book was read from this machine.
+
+## The editor's read of the five authors pieces (changed facts and wording)
+
+Read twice: as a hostile, well-read skeptic, then as a careful conservative scholar. Every change is made in the Markdown record and the data; `diff-questions-record.mjs` shows 0 differences. The five stay pending, and the area stays pending.
+
+| Piece | Before | After | Why |
+|---|---|---|---|
+| j | "belong to men of no standing" (short answer) | "belong to men who were not among the Twelve" | Overclaim: Mark and Luke are named in Acts and in Paul's letters with standing in the churches; the argument needs only that they were not apostles |
+| j | "There are no early copies ... under other names, and none that circulated with a blank where the name should be." | "There are no early copies of these four Gospels under other names." | How copies circulated can't be known from what survives; Kruger's verified point (twelfth run, j) concerns copies that keep a title page, which the paragraph already states |
+| j | "The church has always confessed Hebrews as Scripture without knowing who wrote it" | "The church received Hebrews as Scripture without knowing who wrote it" | "Always" overclaimed: Hebrews was long doubted in parts of the church; the narrower sentence needs no new fact |
+| k | "They were written decades later, on any dating" | "On the dating most scholars hold, they were written decades later" | Logic: the same piece cites Crossley's date for Mark in the late 30s or early 40s, under a decade after the crucifixion |
+| k | "Matthew and Luke in the 80s or 90s" (short answer) | "Matthew and Luke between about 75 and 95" | Agrees with the piece's own evidence section and the Note on Luke (majority view 75 to 90) |
+| k | Step 1: "On any dating scholars defend ... thirty-five and sixty-five years ..., and on the minority view some were written sooner." | "On the dating most scholars hold ... thirty-five and sixty-five years ...; a minority dates some of them sooner, and a few date Luke and Acts later." | The old step contradicted itself and left out Pervo's date for Acts (about 115), which the piece cites |
+| k | "Ignatius of Antioch and the Didache, early in the second century, appear to know Matthew." | "Ignatius of Antioch, around 110 on the usual dating, and the Didache appear to know Matthew." | The twelfth-run row says "on the usual dating" was kept for Ignatius, but the text lacked it; the Didache's date is argued (some place it in the first century). Note (Matthew intro): "the Didache and Ignatius of Antioch (around 110)" |
+| k | Arrian "written about four centuries after" Alexander's campaigns | "more than four centuries after" | Arithmetic: the campaigns 334 to 323 BC, Arrian in the second century AD; the gap is about four and a half centuries |
+| k | "His critics have pressed hard. Samuel Byrskog ... wrote of the eyewitnesses as interpreters of the past, shaping what they saw as they told it. Others have challenged the statistics of the names." | "His critics have pressed hard, and the statistics of the names have been challenged. Samuel Byrskog's response in the *JSHJ* (2008) is titled "The Eyewitnesses as Interpreters of the Past," and the title names the issue: a witness interprets what he saw as well as remembering it." | The twelfth run verified only the article's title, and cut any description of Byrskog's stance; the old text placed him among hard critics and gave him an argument not seen. Now only the title is used, and its point is offered as the title's |
+| k | "A tradition being told in churches where those men still preached and visited couldn't drift freely." | "A tradition told in churches where those men had preached, and where people who had heard them were still alive, wasn't free to drift wherever a community wished." | Peter and Paul died in the 60s, before most of the Gospels on the majority dates; "still preached" was wrong for the time of writing, and "couldn't" overclaimed |
+| l | Bauckham "explained in the same book that eyewitness memory can be very unreliable" | "has said plainly that eyewitness memory can be very unreliable" | Twelfth run row k verified the statement from a 2015 blog post and an interview, not from the book |
+| l | "traditions he gathered first-hand in Middle Eastern communities" | "traditions he gathered himself" | Repetition (the sentence already says Middle Eastern village communities); no fact changed |
+| m | "churches from Gaul to Egypt were reading them in worship and calling them the only four" (short answer) | "churches from Gaul to Egypt held them as Scripture, and Irenaeus could call them the only four" | Only Irenaeus is verified as saying "only four"; worship reading is verified for Rome (Justin), not for Egypt |
+| m | "None of these four has a serious claim ... and only Thomas has serious defenders for an early date for part of its contents." | "None of these four is earlier than the four in the New Testament on the usual scholarly dating, though some scholars argue that parts of Thomas preserve earlier tradition." | "Only" was not verified (some scholars have argued for an early source behind the Gospel of Peter); the narrower sentence states what the twelfth run verified |
+| m | Step 1: "read in worship as Scripture across the churches" | "received as Scripture across the churches" | As above |
+| m | "the four were never in dispute among them" | "the four are not in dispute among them" | The sentence is about churches now; "never" invited a historical claim not checked |
+| n | "Every article of the creeds is taught in letters no one doubts." (short answer) | "What the creeds confess about Christ is taught in letters almost no one doubts, and in the Gospels." | Overclaim: some articles (the virgin birth among them) are taught in the Gospels, not the undisputed letters; step 3 already said "and in the Gospels"; "no one" became "almost no one" (a few have doubted all of Paul's letters), as in step 3 |
+| n | "attested in 1 Corinthians and Galatians, letters no one doubts" and "in the letters no one doubts" | "letters almost no one doubts", "in the letters almost no one doubts" | As above |
+| n | "Second Thessalonians follows 1 Thessalonians phrase by phrase" | "follows 1 Thessalonians closely in its wording" | Twelfth run row: "follows 1 Thessalonians closely"; "phrase by phrase" overstated the objection's own evidence |
+| n | Richards "using the letters of Cicero and his secretary Tiro among his evidence" | "drawing on Cicero's letters and his use of secretaries among his evidence" | Twelfth run row: "draws on Cicero and his secretaries"; Tiro was not seen in the sources |
+| n | "Critics answer that the differences Richards documents are smaller than those between Ephesians and Romans" | "One critic has answered that the shifts of style Richards documents are far smaller than Ephesians or Colossians would need" | Twelfth run row: one critic, and the comparison is with what Ephesians or Colossians would need |
+| n | "The church of the second century rejected letters it judged forged, as the Muratorian fragment shows" | "The early church rejected writings it judged forged, as Tertullian's story and the Muratorian fragment show" | The fragment's date is argued (traditionally late second century, Hahneman fourth); Tertullian (about 200) is the firmer witness |
+| n | Wilder: "early Christians had scruples that rule such a practice out" | "ancient writers, early Christians among them, had scruples about writing under another's name, which tells against it" | Twelfth run row: "had scruples about pseudonymity"; "rule out" overstated |
+
+Checked and left: every name, date, title and journal in the five against its twelfth-run row; each piece against the Study Bible introductions (Matthew, Mark, Luke, John, Acts, Colossians and the others it names: Ignatius around 110, Luke 75 to 90 majority, Dunn on Colossians "with Paul's approval", Davies and Allison on Matthew all agree) and the Honest Answers (no conflict found). No living author is quoted in the five. The objections were reread for their defenders' signature: Ehrman's case in j, k and n, Bultmann's in l and Bauer's and Ehrman's in m are stated in their own terms and kept.
+
+## The area "science" (pieces and keys)
+
+Pieces: `docs/work/elite/apol-pilot/science/` and `client/public/questions/science/`: the area page index.md; has-science-made-god-unnecessary.md, "o"; galileo-and-the-war.md, "p"; miracles-and-the-laws-of-nature.md, "q"; the-beginning-and-fine-tuning.md, "r"; evolution-and-genesis.md, "s". "Second run", "Fifth run", "Ninth run" and "God answer" mean the rows above (faith and science, /faq/can-science-and-faith-coexist, miracles, Genesis 1, "Does God actually exist?"). "Hume" means the Selby-Bigge text of *An Enquiry Concerning Human Understanding* (Project Gutenberg #9662), cloned again in this run from GITenberg on GitHub and searched with grep; every Hume quotation below was read there word for word. Scripture is quoted from the site's Berean Standard Bible (`client/public/bible/text/`), marked "BSB" in the text, and read in the file before it was quoted. The site takes no position on the age of the earth, evolution, a historical Adam's details or the flood's extent.
+
+### o. "Hasn't science made God unnecessary?" (has-science-made-god-unnecessary)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Darwin, *On the Origin of Species*, 1859 | Second run | Verified |
+| Dawkins, *The Blind Watchmaker* (1986): Darwin made it possible to be an intellectually fulfilled atheist; before Darwin atheism logically tenable but without an explanation of design | S: Skeptic magazine article, quote collections citing p. 6 | Verified (secondary), paraphrased; not quoted (a living author, primary text not seen) |
+| Coyne, *Faith versus Fact* (2015): not a strict logical contradiction; incompatibility of method; religion holds claims by faith, scripture and authority | Second run | Verified, paraphrased. "Evolutionary biologist": his own field, standard; his university not stated |
+| Hawking and Mlodinow, *The Grand Design* (2010): because there is a law like gravity the universe can create itself from nothing; no creator needed to set it going | S: Wikipedia "The Grand Design", Al Jazeera, Physics World, NBC reports | Verified (secondary), paraphrased (copies differ, "like" or "such as") |
+| Aquinas, *Summa Theologiae* I q.2 a.3, objection 2: natural things reduced to nature, voluntary things to human reason or will; "there is no need to suppose God's existence"; reply: "whatever is done by nature must needs be traced back to God, as to its first cause" | S: course copies of the English Dominican translation (Manchester, Godalming, UC), as quoted in the search results | Verified (secondary), the two phrases quoted "in a common English translation"; newadvent.org and ccel.org do not resolve from this machine |
+| Aquinas: God works through secondary causes, not in competition (I q.105 a.5) | Second run | Verified |
+| Bonhoeffer, May 1944: "We are to find God in what we know, not in what we don't know."; Coulson about a decade later (1955) | Second run | Verified, quoted |
+| Colossians 1:17; 1 Corinthians 15:17; Psalm 111:2 | Repo (BSB) | Quoted |
+| Einstein, "Physics and Reality" (1936), and Wigner (1960), quoted | Second run | Verified, quoted |
+| Harrison, *The Territories of Science and Religion* (University of Chicago Press, 2015), from his 2011 Gifford Lectures: "science" and "religion" as separate territories are modern categories; natural science as separate from religious and moral concerns dates from the nineteenth century | S: Gifford lecture abstract (Edinburgh), Reading Religion, World History Encyclopedia reviews | Verified (secondary), paraphrased |
+| Maxwell, Cavendish Laboratory in the 1870s, Psalm 111:2 in Latin on the doors by his wish | Second run | Verified |
+| Lemaître 1927, expanding universe; Catholic priest | Second run | Verified |
+| Laplace and Napoleon: no primary source | Second run ("Search: no primary source; the anecdote is likely embroidered") | Stated as unsourced, not used as fact |
+| Russell, 1948 BBC radio debate with Copleston, a Jesuit: "I should say that the universe is just there, and that's all." | God answer | Verified, quoted |
+| Plantinga, *Where the Conflict Really Lies* (2011), the two phrases | Second run | Verified, quoted |
+| Brooke, *Science and Religion: Some Historical Perspectives* (Cambridge, 1991) | S: Wikipedia, Cambridge record, Ian Ramsey Centre | Verified |
+
+Cut: Coyne's university (not checked); Coulson as a Methodist (not checked); Dawkins's sentence as a quotation (primary text not seen).
+
+### p. "Hasn't religion always been at war with science?" (galileo-and-the-war)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Draper, *History of the Conflict between Religion and Science* (1874); Draper a scientist, physician and chemist, an early photographer of the moon (1840) | Second run (title, year); S: Linda Hall Library, Project Gutenberg, publisher listings | Verified (secondary) |
+| White, *A History of the Warfare of Science with Theology in Christendom* (1896), two volumes, astronomy and geology to medicine; first president of Cornell | Second run; S: *Nature* review (1896), Project Gutenberg, Wikipedia | Verified |
+| Critics of Galileo used Joshua 10 (the sun standing still); Galileo's letter to Castelli, 21 December 1613, and to Christina, 1615 | S: Wikipedia "Letter to Benedetto Castelli", Royal Society item, Scripta article | Verified (secondary) |
+| 24 February 1616: the consultors' unanimous report; the sun at the center absurd in philosophy and "formally heretical", contrary to Scripture; the earth's motion at least erroneous in faith; the punctuation of the Latin argued (Graney) | S: inters.org historical report, EB1911, Vatican Observatory posts | Verified (secondary); two words quoted, the rest paraphrased because translations differ |
+| 26 February 1616: Galileo before Bellarmine; the minute records a strict injunction, Bellarmine's certificate only a warning | S: Fordham documents, Vatican Observatory | Verified (secondary) |
+| 5 March 1616: Congregation of the Index; Copernicus's *De revolutionibus* suspended until corrected; Foscarini's book banned outright; Galileo not named | S: Popular Science Monthly excerpt, Fordham | Verified (secondary) |
+| Bellarmine to Foscarini, 12 April 1615: a true demonstration would require careful interpretation of contrary passages; he would not believe one existed until shown | S: inters.org text, Christian History Institute, Gingerich | Verified (secondary), paraphrased |
+| *Dialogue* 1632; trial 1633; 22 June 1633 "vehemently suspect of heresy"; abjuration kneeling; *Dialogue* prohibited; formal imprisonment changed the next day to house arrest; Arcetri until his death in 1642 | Second run ("vehemently suspect of heresy", house arrest); S: OSU "Documents in the Case of Galileo", Museo Galileo, EB1911 | Verified. The penitential psalms (one copy only) are not used |
+| 1758 general prohibition of heliocentric books dropped; Copernicus and the *Dialogue* off the Index in 1835 | S: Wikipedia index list, Casanatense exhibition, Catholic World Report | Verified (secondary) |
+| Galileo quoted Augustine in 1615, "a disgraceful and dangerous thing" | Second run | Verified, quoted |
+| The saying that Scripture teaches how one goes to heaven, not how heaven goes, credited by Galileo to an ecclesiastic of high rank | S: Wikipedia (Letter to Christina), Drake's translation as cited | Verified (secondary), paraphrased; Baronius not named (attribution uncertain) |
+| Telescope: Jupiter's moons (1610), Venus's phases; against Ptolemy, not proof of the earth's motion (consistent with Tycho's system) | S: Oxford History of Science Museum ("The phases of Venus, 1610-23"), Ohio State lecture, NYU lecture | Verified (secondary) |
+| Stellar parallax first measured convincingly by Bessel in 1838 (61 Cygni) | S: encyclopedia.com, Carnegie timeline, Popular Science Monthly | Verified (secondary) |
+| Finocchiaro in Numbers, ed., *Galileo Goes to Jail* (2009), myth 8: threatened with torture, no evidence he was tortured; apart from perhaps three days (21 to 24 June 1633) never in prison; the published documents long made imprisonment look likely | S: UNLV repository ("Prison and Torture as False but Well-Founded Myths"), reviews quoting the chapter | Verified (secondary), paraphrased |
+| Numbers 2009, "the greatest myth in the history of science and religion"; a reviewer called him a religious agnostic | Second run | Verified, quoted |
+| Russell, *Inventing the Flat Earth: Columbus and Modern Historians* (1991): educated medieval people knew the earth was round; Irving's life of Columbus (1828) and Letronne; the error flourished 1870 to 1920 with the fights over evolution | S: Powell's, First Things, MUSE review, Wikipedia "Myth of the flat Earth" | Verified (secondary), paraphrased |
+| Brooke 1991: no single thesis of conflict or harmony; complexity | S (row o) | Verified (secondary), paraphrased |
+| Harrison 2015 | Row o | Verified (secondary) |
+| Mendel, Augustinian friar and abbot; his experiments with peas began genetics | /faq ledger row (Britannica, Wikipedia, DNA Learning Center) for the friar and abbot | Verified for the friar and abbot; "began the science of genetics" is the standard account and was not separately searched |
+| Lemaître 1927 and 1931, primeval atom | Second run | Verified |
+| 31 October 1992: John Paul II addressed the Pontifical Academy of Sciences on receiving the commission's conclusions; read by newspapers as an apology | S: Vatican text (record), Astronomy.com, Christian History, McMullin (Vatican Observatory) | Verified (secondary); the phrase "tragic mutual incomprehension" not found, not used |
+| Joshua 10:13 "the sun stood still"; Proverbs 25:2 | Repo (BSB) | Quoted |
+
+Cut: Psalm 93:1 as a text used against Galileo (not confirmed); "most astronomers of the day" still held the old system (not checked); Urban VIII's anger as a cause (stated only as a question historians argue); "as the procedure required" of the threat of torture; the Jesuit astronomers he argued with (not checked); the seven penitential psalms; Giordano Bruno (not checked).
+
+### q. "Didn't Hume show that no one can reasonably believe in a miracle?" (miracles-and-the-laws-of-nature)
+
+| Claim | How verified | Result |
+|---|---|---|
+| "Of Miracles", 1748, section 10 of the *Enquiry* | Fifth run | Verified |
+| §87 "A wise man, therefore, proportions his belief to the evidence."; §90 "A miracle is a violation of the laws of nature; and as a firm and unalterable experience has established these laws, the proof against a miracle, from the very nature of the fact, is as entire as any argument from experience can possibly be imagined."; §90 "But it is a miracle, that a dead man should come to life; because that has never been observed in any age or country."; §90 "a uniform experience against every miraculous event, otherwise the event would not merit that appellation" | Hume (read word for word this run) | Quoted |
+| §91 the maxim, quoted to "endeavours to establish"; "whether it be more probable, that this person should either deceive or be deceived, or that the fact, which he relates, should really have happened"; rejects the greater miracle | Hume | Quoted; the rest paraphrased |
+| Part 2: sufficient number of men of good sense and learning (§92); love of wonder (§93); "are observed chiefly to abound among ignorant and barbarous nations" (§94); rival miracles (§95); the Abbé Paris, "attested by witnesses of credit and distinction, in a learned age"; §98 "that no human testimony can have such force as to prove a miracle, and make it a just foundation for any such system of religion" | Hume; Fifth run | Quoted where in quotation marks |
+| The Indian prince, "The Indian prince, who refused to believe the first relations concerning the effects of frost, reasoned justly" | Hume | Quoted |
+| §99: eight days of darkness from 1 January 1600, "our present philosophers, instead of doubting the fact, ought to receive it as certain, and ought to search for the causes whence it might be derived"; Queen Elizabeth dead, interred a month, restored to the throne: "to have been pretended, and that it neither was, nor possibly could be real" | Hume | Quoted |
+| Fogelin, *A Defense of Hume on Miracles* (Princeton, 2003): answers early critics and two recent ones, Johnson and Earman; treats Earman as a misreader | S: Princeton University Press listing, MUSE review, library record | Verified (secondary), paraphrased |
+| Lewis, *Miracles* (1947): only if all the reports are false; "arguing in a circle"; Hume's defenders reply that he meant weighing; the pennies in the drawer | Fifth run | Verified; one phrase quoted, the rest paraphrased |
+| Earman, *Hume's Abject Failure* (Oxford, 2000), Pittsburgh; Babbage in the 1830s, independent witnesses; Vanderburgh, *Hume Studies* (2005); Millican on independence | Fifth run | Verified, paraphrased |
+| Keener, *Miracles* (2011), two volumes; hundreds of reports, many from Asia, Africa and Latin America, many eyewitnesses | Fifth run; Note (John 2: "documented how widespread eyewitness claims of extraordinary events are") | Verified, paraphrased |
+| Sagan's slogan | Fifth run | Given without quotation marks or date |
+| Mackie, *The Miracle of Theism* (1982) | God answer | Verified |
+| 1 Corinthians 15:14; witnesses named and numbered in 1 Corinthians 15:5-7 | Repo (BSB) | Quoted; described |
+| Agreement with the Study Bible notes on John 2 and Matthew 14 (Lewis: Hume's case assumes what it sets out to prove; Keener) | Repo | Agrees |
+
+Cut: Earman as one "who writes as no defender of Christianity" (not checked); reports "with names and dates" (not in the reviews); the disciples "would not retract" (narrowed in an earlier ledger); the subtitles of Earman's and Keener's books (not confirmed).
+
+### r. "Can't physics explain the Big Bang and fine-tuning without God?" (the-beginning-and-fine-tuning)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Kalam revived by Craig, 1979 | God answer | Verified ("medieval" cut, not checked) |
+| Several constants in narrow life-permitting ranges (gravity, vacuum energy); Weinberg 1989, about 120 orders of magnitude; Rees, Astronomer Royal, no religious belief, *Just Six Numbers* (1999), takes the multiverse seriously; Hoyle's superintellect (paraphrase); Robin Collins on the universe generator; Lewis and Barnes, *A Fortunate Universe: Life in a Finely Tuned Cosmos* (2016) | God answer | Verified; the Hoyle words paraphrased |
+| Hawking and Mlodinow (2010) | Row o | Verified (secondary), paraphrased |
+| Krauss, *A Universe from Nothing* (2012) | Tenth run map (S); S: Wikipedia, reviews | Verified |
+| Carter, the anthropic principle, IAU Symposium 63 in Kraków, September 1973, for Copernicus's 500th birthday; published 1974 | S: Ellis's editorial note (*Gen. Rel. Grav.* 2011), Carter 1974 PDF | Verified (secondary) |
+| The Big Bang theory does not by itself show an absolute beginning; the laws break down at the earliest times; a quantum theory of gravity needed; proposals of a bounce | S: arXiv 2409.20299 review ("we are unable to determine if the Universe started with an initial singularity"), Scientific American, Wikipedia "Gravitational singularity" | Verified (secondary), paraphrased |
+| Pius XII, 22 November 1951 ("Un'ora"), widely read as saying the new cosmology confirmed creation; Lemaître reported uneasy; the details disputed (Pontifical University of the Holy Cross article) | S: inters.org ("The Pius XII - Lemaître Affair"), arXiv 2310.19175, Aleteia | Verified (secondary); stated as "reported" and "disputed" |
+| McGrew, McGrew and Vestrup, "Probabilities and the Fine-Tuning Argument: A Sceptical View," *Mind* 110 (2001): no probability can be assigned to a constant falling in a finite interval if its possible values have no bound | S: library records, Pruss's summary (*Philosophia Christi*) | Verified (secondary), paraphrased |
+| Lemaître 1927 (two years before Hubble), 1931 primeval atom; Hoyle, BBC, 1949, "this 'big bang' idea"; Penzias and Wilson, Bell Labs, 1964, published 1965 | Second run; /faq rows | Verified, the three words quoted |
+| Hoyle a steady-state theorist (1948, with Gold and Bondi); the background radiation of 1965 the decisive blow | S: Astronomy.com, Scientific American blog, New World Encyclopedia | Verified (secondary) |
+| Planck: about 13.8 billion years (13.787 ± 0.020) | Row (index) | Verified |
+| Borde, Guth and Vilenkin 2003; Carroll's objection on quantum effects | God answer | Verified |
+| Aquinas, reason cannot show the world began; Leibniz 1714 | God answer | Verified |
+| Albert, *New York Times* review of Krauss, March 2012: Krauss never justifies what he calls "nothing"; Krauss's starting point a quantum vacuum | S: Wikipedia (David Albert; A Universe from Nothing), NYT scan, Physics Today, Discover | Verified (secondary), paraphrased; the phrase on relativistic quantum fields not confirmed and not used |
+| Dawkins, *The God Delusion* (2006), the designer at least as improbable | God answer | Verified, paraphrased |
+| Russell 1948 quotation | God answer | Quoted |
+| Romans 1:20 | Repo (BSB) | Quoted |
+| Swinburne, *The Existence of God*, 2nd ed. (2004); Pruss, *The Principle of Sufficient Reason: A Reassessment* (2006) | God answer | Verified |
+
+### s. "Hasn't evolution disproved Genesis?" (evolution-and-genesis)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Darwin 1859; Dawkins 1986 (paraphrase) | Row o | Verified |
+| Coyne, *Why Evolution Is True* (Viking, 2009): fossils, biogeography, vestigial organs, shared genes including pseudogenes as evidence of common ancestry | Tenth run map (S); S: Wikipedia, Publishers Weekly, NCSE review, McDowell review | Verified (secondary), paraphrased |
+| Universe about 13.8 billion years, earth about 4.54 billion; common descent the working framework of biology | /faq rows; S (NAS) | Verified as the mainstream position |
+| National Academy of Sciences and Institute of Medicine, *Science, Evolution, and Creationism* (January 2008, third edition of a 1984 text): evolution well grounded; compatible with religious faith | S: National Academies news release, NAP record, NCSE review | Verified (secondary), paraphrased |
+| Venema and McKnight, *Adam and the Genome* (Brazos, 2017): "We descend from a population that has never dipped below about 10,000 individuals" (p. 48, as quoted by reviewers); challenged by Richard Buggs (2017) and debated | S: Peaceful Science, Ken Schenck's review, BioLogos replies as summarized | Verified (secondary), paraphrased, not quoted (a living author, primary text not seen). "A Christian biologist": the book's subject and its publisher's and BioLogos's presentation |
+| Romans 5:12; Exodus 20:11; Genesis 2:4; Genesis 1:1; Hebrews 11:3; Genesis 1:27; 1 Corinthians 15:22 | Repo (BSB) | Quoted |
+| Whitcomb and Morris, *The Genesis Flood* (1961): revived young-earth creationism; a worldwide flood that did much of the work of geology | Ninth run; S: Wikipedia, *Grace Journal* review (1961) | Verified |
+| Todd Charles Wood: young-earth creationist, PhD in biochemistry (Virginia); has written that the evidence for evolution is strong and the theory successful; holds a young creation because of Scripture | S: geochristian.com (2009), Christianity Today profile, Answers in Genesis critiques quoting his 2009 post "The truth about evolution" | Verified (secondary), paraphrased; not quoted |
+| Hugh Ross, astronomer, Reasons to Believe 1986, day-age | Ninth run | Verified. *A Matter of Days* not listed (year not confirmed in the ninth run) |
+| Old-earth creation: God acted directly at points in the history of life | The faith-and-science answer's description (repo) | Agrees with the site |
+| BioLogos founded 2007 by Francis Collins, who led the Human Genome Project | Ninth run | Verified |
+| God works through secondary causes | Row o (Aquinas) | Verified |
+| Noordtzij 1924, Kline 1958; C. John Collins 2006; Walton 2009 | Ninth run | Verified |
+| Behe, *Darwin's Black Box* (1996): irreducible complexity, the bacterial flagellum | S: Behe chapter, Natural History (2002), Wikipedia mirror | Verified (secondary) |
+| Meyer, *Signature in the Cell: DNA and the Evidence for Intelligent Design* (HarperOne, June 2009); Meyer: not an argument from ignorance, based on what uniform experience shows intelligent agents produce | S: Biola Magazine, Christian Post, STR articles summarizing Meyer | Verified (secondary), paraphrased |
+| Haarsma (then BioLogos president): ID not a god-of-the-gaps argument as such, shares its risk if a natural explanation is found | S: STR and Books & Culture summaries of the BioLogos response to Meyer | Verified (secondary), paraphrased |
+| *Kitzmiller v. Dover Area School District*, 20 December 2005, Judge John E. Jones III: ID could not be taught as an alternative to evolution in the district's science classes | S: Jurist, ACLU, Education Week, Wikipedia | Verified (secondary) |
+| Mainstream biologists reject ID's central claims | S (Wikipedia on Behe; the Kitzmiller record) | Verified (secondary) |
+| Apostles' Creed, "Maker of heaven and earth" | Ninth run | Quoted |
+| *Four Views on the Historical Adam* (2013): Lamoureux, Walton, C. John Collins, Barrick, as described | Ninth run | Verified |
+| Swamidass, *The Genealogical Adam and Eve* (IVP, 2019): Adam and Eve, perhaps as recently as six thousand years ago, genealogical ancestors of all now living without genetic trace; reviews divided | S: IVP listing, Wikipedia, TGC review | Verified (secondary), paraphrased |
+| Wood and Falk, *The Fool and the Heretic: How Two Scientists Moved beyond Labels to a Christian Dialogue about Creation and Evolution* (Zondervan, 2019); from the Colossian Forum's dialogue; Falk former BioLogos president, emeritus professor of biology; they still disagree | S: Zondervan listing, Reading Religion, Calvin University, SEBTS interviews | Verified (secondary) |
+| Agreement with the Study Bible: the Genesis 1 note's hard question sets out young-earth, day-age, framework (Noordtzij, Kline, Blocher), analogical day and Walton readings and calls the age and mechanism questions on which faithful readers differ; the Genesis 1 answer lists the same readings and evolutionary creation | Repo | Agrees; no order (second or third) is named on this page, since the note and the answer differ on the label |
+
+Cut: "in the same places" of shared broken genes (not confirmed); old-earth creation's special creation of humanity "above all" (not checked as the view's universal form); Venema's book as BioLogos's "fullest statement"; "many" Christians reading Romans 5 of human death (now "some"); a claim that young people leave the faith over this (narrowed to what could follow); *The Fool and the Heretic* as written "to show how Christians can argue as brothers" (its aim not confirmed; the subtitle is quoted in paraphrase).
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Universe about 13.8 billion years, earth about 4.54 billion | Second run (/faq rows); S: Planck 2018, 13.787 ± 0.020 billion years | Verified, given as the mainstream estimate |
+| Draper 1874, White 1896; historians correcting the war story for about fifty years | Second run | Verified |
+| "God of the gaps" popularized by Coulson in the 1950s | Second run | Verified |
+| Secondary causes | Second run (Aquinas) | Verified |
+| Fine-tuning, multiverse | God answer (Rees, Lewis and Barnes) | Verified as descriptions |
