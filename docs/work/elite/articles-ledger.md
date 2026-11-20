@@ -48,3 +48,32 @@ A row for every factual claim and quotation in the five essays landed on the she
 | Scripture (ESV): Romans 9:11, 9:16, 9:19, 10:1, 10:13, 11:32, 11:33; John 6:37, 6:40, 6:44, 12:32; 1 Timothy 2:4; 2 Peter 3:9; Ezekiel 33:11 | ESV copy, by script | Words verified |
 
 Cut or held back because it could not be opened: any sentence of Pelagius, Erasmus, Luther, Arminius, Trent or the Formula of Concord in quotation marks (all given as paraphrase); the date of Wesley's *Free Grace* and of Whitefield's letter; Charles Simeon's conversation with Wesley; Spurgeon on the two truths.
+
+## 3. why-jesus-wont-fit-in-either-party
+
+No candidate, party, platform, election or law is named. The people in the opening paragraph are types ("a lot of American Christians"), not anyone's memory.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Matthew and "Simon who was called the Zealot" among the twelve; Matthew a tax collector | ESV copy (Luke 6:15; Matthew 9:9) | Verified; what "Zealot" meant is left open in the essay |
+| Constantine won the West in 312 and credited the Christian God; the faith legal the next year; Nicaea 325 | Repo, history course `the-constantinian-turn`, `councils-and-creeds` | Site's own |
+| Some bishops at Nicaea had been tortured | Repo, live essay `the-council-of-nicaea-what-was-decided-in-325` ("Many in the hall had been tortured for Christ.") and `councils-and-creeds` | Site's own |
+| The banquet: bishops passed the guard and soldiers with drawn swords; Eusebius was present | WD, Eusebius, *Life of Constantine* 3.15 (the NPNF text) | Verified |
+| "One might have thought that a picture of Christ's kingdom was thus shadowed forth, and a dream rather than reality." | Same | Verbatim |
+| Christianity official in 380; Priscillian put to death in the 380s by imperial authorities, urged on by bishops | Repo, `the-constantinian-turn` | Site's own |
+| Theodosius, the massacre of thousands at Thessalonica, Ambrose, public penance in 390 | Repo, `the-constantinian-turn`; Ambrose's Letter 51 is in `scripts/data/history-sources/texts/` | Site's own |
+| Peace of Augsburg 1555, each ruler sets the religion; Saint Bartholomew's Day 1572, the Huguenot leadership murdered in Paris, killing spread for weeks; war ended 1648 with nobody the winner | Repo, `reformation-and-its-wars`, `the-counter-reformation` | Site's own |
+| The Thirty Years' War began in 1618 | Not opened this run | Reference knowledge |
+| The German Christians set out to merge church and regime, accepted the state's racial exclusions, won the 1933 church elections with the regime's support | Repo, `the-global-church`; live essay `what-romans-13-says` and its ledger | Site's own |
+| Barmen, May 1934, a minority; drafted chiefly by Karl Barth | Repo, `the-global-church`; Barmen (EKD) | Verified |
+| Barmen thesis 1, both sentences; thesis 2, "areas of our life in which we would not belong to Jesus Christ, but to other lords" | Barmen (EKD) | Verbatim |
+| Barmen said nothing about the Jews; Barth later said so | Repo, live essay `what-romans-13-says` (ledgered there: Barth, 1967) | Site's own |
+| Rauschenbusch, Baptist pastor, 1886 to 1897, Hell's Kitchen; children's funerals | Repo, `the-american-experiment` | Site's own |
+| In his heirs the kingdom became progress, the cross an example, the resurrection negotiable | Same | Site's own |
+| H. Richard Niebuhr's sentence (a God without wrath ...) | Repo, `the-american-experiment`, which gives it from *The Kingdom of God in America*; the book was not opened, so the essay gives the substance without quotation marks | Paraphrase, marked as such |
+| Many churches on that road have been emptying since | Not opened this run (mainline membership decline since the 1960s) | Reference knowledge, stated generally |
+| The Moral Majority, founded 1979 | Repo (`client/public/theology/church-history-timeline.json`, `nation/nationalism-history.json`); not in the history course | Site's own, older library |
+| Philippi a Roman colony | ESV copy, Acts 16:12 | Verified |
+| Scripture (ESV): Matthew 4:8-9, 5:44; John 6:15, 18:36; Luke 6:15, 9:55; Mark 10:37, 12:17, 15:27; Romans 10:9; Acts 17:7; Philippians 3:20; Psalm 146:3 | ESV copy, by script | Words verified |
+
+Cut or held back: any sentence of Rauschenbusch in quotation marks; Niebuhr's sentence as a quotation; the numbers of the dead in the wars of religion; John 19:15 (left out so that no line could be read as blaming the Jewish people; John 18:36 is quoted only as far as "fighting").
