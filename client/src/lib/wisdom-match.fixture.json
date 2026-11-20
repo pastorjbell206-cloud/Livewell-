@@ -1,5 +1,5 @@
 {
-  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build), holdout3 (third build) and holdout4 (fourth build) were each written and committed before matching.json was touched; holdout2 and holdout3 have since been tuned for, so holdout4 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
+  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build), holdout3 (third build), holdout4 (fourth build) and holdout5 (sixth build) were each written and committed before matching.json was touched; holdout2 and holdout3 have since been tuned for, and holdout4's two misses were tuned for in the sixth build, so holdout5 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
   "cases": [
     { "q": "my son walked away from the faith", "expect": ["wayward-child"] },
     { "q": "passed over for promotion and bitter", "expect": ["envy-and-comparison", "jealousy", "anger", "success-and-failure", "conflict-at-work", "when-life-is-unfair"] },
@@ -153,5 +153,22 @@
     { "q": "my husband cheated and I don't know if I should stay", "expect": ["marriage-after-an-affair", "cheating", "betrayal"] },
     { "q": "I keep putting off the things I need to do", "expect": ["procrastination-and-laziness"] },
     { "q": "we just moved to a new town and I don't know anyone", "expect": ["relocation", "loneliness"] }
+  ],
+  "holdout5": [
+    { "q": "my wife and I barely talk anymore except about the kids' schedules", "expect": ["marriage-communication", "marriage-conflict", "marriage-intimacy"] },
+    { "q": "we haven't been close in the bedroom for over a year", "expect": ["marriage-intimacy"] },
+    { "q": "I found messages on his phone and he admitted he's been seeing someone", "expect": ["marriage-after-an-affair", "cheating", "betrayal"] },
+    { "q": "my toddler throws tantrums every night and I'm losing my patience", "expect": ["parenting-young-children", "parenting-struggles", "patience"] },
+    { "q": "my sixteen year old won't talk to me and slams the door", "expect": ["raising-teenagers", "parenting-struggles"] },
+    { "q": "our grown son moved back home and won't look for work", "expect": ["parenting-adult-children"] },
+    { "q": "we just brought the baby home and I'm exhausted and scared", "expect": ["new-parenthood"] },
+    { "q": "the last of our kids moved out and the house feels empty", "expect": ["empty-nest"] },
+    { "q": "my dad can't live alone anymore and my brothers won't help", "expect": ["caring-for-aging-parents", "caregiving", "sibling-conflict"] },
+    { "q": "my brother and I haven't spoken since our mom's funeral", "expect": ["sibling-conflict", "estrangement"] },
+    { "q": "my mother screams at me every time I visit", "expect": ["difficult-family", "toxic-relationships"] },
+    { "q": "why does God let children die of cancer", "expect": ["the-problem-of-evil", "suffering"] },
+    { "q": "I work twice as hard as him and he got the credit and the raise", "expect": ["when-life-is-unfair", "envy-and-comparison", "status-and-recognition"] },
+    { "q": "I copied answers on my exam and nobody knows", "expect": ["cheating", "honesty-and-integrity"] },
+    { "q": "starting university in a city where I don't know a single person", "expect": ["going-to-college", "loneliness", "life-transitions"] }
   ]
 }
