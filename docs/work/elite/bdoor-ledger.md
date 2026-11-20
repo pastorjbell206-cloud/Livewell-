@@ -9219,3 +9219,33 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Forgiveness not the same as trusting again | 25-32 | matthew/plain/18.json; luke/plain/17.json | Repository wording |
 | Care line ("If anger has become something you cannot control ... Find Help") | 25-32 | psalms/plain/4.json | Word for word, no phone number |
 | Zechariah 8:16; Psalm 4:4 (BSB matches Paul); Exodus 20:15; Leviticus 19:17-18; Isaiah 63:10 | 25-32 | BSB | BSB text |
+
+## The plain notes on Ephesians 5 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Fragrant offering’ the language of Israel's altar | 1-7 | Chapter note `christ`; BSB Exodus 29:18, Genesis 8:21 | Repository; BSB text |
+| Sexual licence (especially for men) and cheating in business widely tolerated | 1-7 | Ephesians 4 deep note `historical`; Ephesians 5 deep note `cultural` | Repository |
+| Greed as idolatry (Colossians 3:5) | 1-7 | BSB | BSB text |
+| 5:5 read by many as a settled life without repentance; 1 Corinthians 6:11; falling away, no side, pointers to the Romans 8:31-39 note and the Honest Answer; no contempt | 1-7 | 2-corinthians/plain/13.json; romans/plain/8.json; client/src/data/answers.ts | Repository wording. No side |
+| Care line for the scrupulous ("Such fear can be part of anxiety ... Find Help"), 1 John 3:20 | 1-7 | 2-corinthians/plain/13.json | Word for word, no phone number |
+| Leviticus 11:44; Exodus 29:18; Genesis 8:21; Exodus 20:3, 17 | 1-7 | BSB | BSB text |
+| 5:14 source unknown; "many" an early hymn, perhaps at baptism | 8-14 | Deep note `literary` | Repository |
+| Isaiah 9:2; 60:1; 26:19; Psalm 36:9; Proverbs 4:18 | 8-14 | BSB | BSB text |
+| Exagorazō ‘redeeming’, a market word, buying up | 15-20 | Standard lexicons | Standard |
+| Feasts, drinking parties and the worship of Dionysus in public life | 15-20 | Deep note `cultural`; wisdom/deep/alcohol-and-drinking.json | Repository |
+| Verses 18 to 21 one sentence in Greek with participles | 15-20 | Deep note `literary` | Repository |
+| Abstinence and moderation views, the churches named as the wisdom topic names them; what all agree; Romans 14 | 15-20 | wisdom/deep/alcohol-and-drinking.json `differ` | Repository wording, paraphrased. No side |
+| Care lines ("If drinking has become hard to control ... recovery group near you"; "The Find Help page ...") | 15-20 | john/plain/2.json; romans/plain/7.json (as gathered in the wisdom topic's careLines) | Word for word, no phone number |
+| Proverbs 20:1; 23:20; Psalm 104:15; 90:12; 95:2 | 15-20 | BSB | BSB text |
+| Verse 22 has no verb in some of the earliest Greek copies | 21-33 | Deep note `literary` | Repository |
+| Roman father's legal power; household writers addressed the man; Paul addresses wives directly | 21-33 | Deep note `historical`; context guide household-codes-in-context | Repository |
+| Roman custom tolerated husbands' use of slaves and prostitutes | 21-33 | Deep note `cultural` | Repository |
+| Washing may echo the bridal bath; many hear baptism | 21-33 | Deep note `cultural` | Repository |
+| What all agree (mutual love; Christ's self-giving the pattern; ‘submit’ spoken to wives, never a husband's to demand or enforce; no licence to control) | 21-33 | Chapter note `hard` ("Both readings agree on much"); book page household part | Repository wording |
+| Complementarian and egalitarian readings, including ‘head’ (authority; source, one who nourishes) and verse 21 | 21-33 | Chapter note `hard`; `words` (kephalē, hypotassō) | Repository wording, paraphrased. No side |
+| Abuse care lines | 21-33 | genesis/plain/16.json; romans/plain/12.json | Word for word, no phone number |
+| Genesis 2:24 BSB ‘they’; Paul and Matthew 19:5 ‘the two’ | 21-33 | BSB | BSB text |
+| Isaiah 54:5; Hosea 2:19; Ezekiel 16:9; Malachi 2:14 | 21-33 | BSB | BSB text |
