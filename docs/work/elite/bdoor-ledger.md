@@ -9635,3 +9635,22 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Parousia a ruler's official visit; first use for Jesus here | 17-20 | Chapter deep note `words` (G3952) | Repository |
 | Stephanos, a winner's wreath | 17-20 | Standard lexicons | Standard |
 | Isaiah 62:3; Proverbs 17:6; Zechariah 3:1-2; Daniel 10:12-13 | 17-20 | BSB | BSB text |
+
+## The plain notes on 1 Thessalonians 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No public post for private letters; slow, costly travel; sending a trusted person | 1-5 | Chapter deep note `cultural` | Repository |
+| Athens ‘full of idols’ (Acts 17:16); Silas and Timothy in Berea, later Corinth (Acts 17:14-15; 18:5); the simplest reconstruction | 1-5 | Chapter deep note `historical`; BSB | Repository; BSB text |
+| Stērizō, to make firm | 1-5 | Chapter deep note `words` (G4741) | Repository |
+| Persecution from neighbours, family, trade associations, not empire-wide | 1-5 | Chapter deep note `historical` | Repository |
+| Peirazō, test or tempt | 1-5 | Chapter deep note `words` (G3985) | Repository |
+| Isaiah 35:3-4; 1 Samuel 23:16; Psalm 16:8; 125:1; Genesis 3:1; Job 1:9-11; John 16:33 | 1-5 | BSB | BSB text |
+| Danger care lines | 1-5 | Genesis 16 form (ephesians/plain/5.json and others) | First sentence word for word; the rest in its form, with Find Help named; no phone number |
+| Euangelizomai used of Timothy's news, the only place Paul uses it for anything but the gospel | 6-10 | Chapter deep note `cultural` | Repository |
+| Proverbs 25:25; Psalm 116:12; 125:1 | 6-10 | BSB | BSB text |
+| Verb ‘direct’ singular with Father and Son | 11-13 | Chapter deep note `christ` | Repository |
+| Zechariah 14:5 behind 3:13; ‘holy ones’ angels, believers or both | 11-13 | Chapter deep note `christ` | Repository. No side |
+| Psalm 89:7; Daniel 7:18; Psalm 37:23 (first clause only) | 11-13 | BSB | BSB text |
