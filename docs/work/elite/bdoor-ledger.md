@@ -10860,3 +10860,26 @@ Two web searches, for the rough placing of Bithynia, Pontus and Cappadocia (resu
 | Timeline: Noah; exodus; Pentecost; Silas about AD 49; fire of 64 (Tacitus); AD 70; Pliny; Irenaeus | Timeline | 1-peter notes as above; james/intro.json `date` for the council | Repository |
 | Map: Pontus (40.65, 35.83), Cappadocia (38.66, 34.85), Bithynia (40.6, 30.3) as rough regions from the searches; Asia (38.6, 28.3) and Galatia (39.4, 32.0) near the drawing's own labels, unlabelled; Rome as on earlier maps | Map | Web searches; BookMap.tsx region labels; romans/intro.json map | Searches and repository; each line says ‘Placed roughly’ |
 | Deeper links: suffering, hope, church, israel, election, atonement, sacraments, state | Go deeper | bible/doctrines.json | Repository |
+
+## The plain notes on 1 Peter 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. 1 Peter has no verse notes; these rest on the chapter deep note, the intro and the lexicon.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter form; Peter's story; Dispersion and exile for mostly Gentile readers; five provinces; founding unknown | 1-2 | 1-peter/1.json `historical`, `cultural`, `story`, `literary` | Repository |
+| Father, Spirit and Christ in verse 2, later confessed as the Trinity; sprinkled blood and Sinai | 1-2 | 1-peter/1.json `doctrines`, `literary` | Repository; BSB |
+| Election readings (Reformed, foreknowledge as in verse 20; Arminian and Wesleyan; corporate); ‘for obedience’; Honest Answer | 1-2 | 1-peter/1.json `hard`; client/src/data/answers.ts | Repository, no side |
+| Care line ‘If you are afraid that you are not chosen ...’ | 1-2 | ephesians/plain/1.json (3-14 `hard`) | Word for word |
+| Genesis 23:4; Psalm 39:12; Deuteronomy 7:7; Exodus 24:8 | 1-2 | BSB | BSB text |
+| One sentence of praise in Greek; Jewish blessing form; anagennaō only here (John 3:3); living hope; inheritance; refining gold; ‘not seen’ striking from Peter | 3-9 | 1-peter/1.json `literary`, `words`, `doctrines`, `cultural`, `christ` | Repository |
+| Care line ‘If you are in a hard place now ...’ | 3-9 | 2-corinthians/plain/1.json (1-7 `hard`) | Word for word |
+| Numbers 26:53; Psalm 16:5; Zechariah 13:9; Psalm 66:10 | 3-9 | BSB | BSB text |
+| The Spirit of Christ in the prophets; sufferings and glories the letter's pattern; parakuptō ‘stoop to look’ (John 20:5) | 10-12 | 1-peter/1.json `christ`; 1-peter/intro.json `reading`; lexicon G3879 | Repository |
+| Daniel 9:2; Isaiah 52:13; 53:5 | 10-12 | BSB | BSB text |
+| ‘Gird up the loins of your mind’ (anazōnnumi, osphus); holiness set apart; paroikia resident aliens; redemption price for slaves; Passover lamb; known before the foundation | 13-21 | lexicon G0328, G3751; 1-peter/1.json `cultural`, `words`, `christ` | Repository |
+| Leviticus 11:44; 19:2; Exodus 12:5, 13; Isaiah 52:3 | 13-21 | BSB | BSB text |
+| Ektenōs ‘fervently, earnestly’; imperishable seed; Isaiah 40:6-8 | 22-25 | lexicon G1619; 1-peter/1.json `literary` | Repository |
+| Isaiah 40:8; Ezekiel 36:26 | 22-25 | BSB | BSB text |
+
+Cut before publishing: ‘deeply’ as a word for something stretched out (the lexicon gives ‘fervently, earnestly’).
