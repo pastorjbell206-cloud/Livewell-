@@ -7713,3 +7713,109 @@ served-build check of chapters 4 to 22 at 390 and 1440, are in the final report 
 ### Next
 
 The Old Testament, from Exodus, in the plan's order (Genesis and Psalms are done).
+
+## Exodus: the book page and Exodus 1 to 20 (2026-11-20)
+
+The first Old Testament book after Genesis and the Psalms. Same shape as Genesis: each passage's third
+part is `later` ("Where the Bible takes this up"), never `ot`; each chapter note gained only
+`"plain": true` at its end. One commit for the book page and one per chapter, each with its ledger
+rows (Exodus 5's files went in with the Exodus 4 commit by a slip of the commit script; its ledger
+rows followed in their own commit).
+
+### The book page (`/study/bible/exodus`, same address)
+
+Data only, in `client/public/bible/notes/exodus/intro.json`, field `teaching`, added at the end of the
+file. Fourteen parts (4,934 words): Exodus in a minute; The second book of the Torah; Who wrote it, and
+how we know; When did the exodus happen?; Egypt in the story; How Exodus is built; The name of God; The
+plagues, and Pharaoh's heart; Passover; The sea, the road and the mountain; Rescue first, then law; The
+tent, the calf, and the name proclaimed; How the New Testament reads Exodus; How Jews and Christians have
+read it. Then 16 hard passages, 14 key words, a timeline of 19 entries, one map, nine Go deeper pages
+(two Study Bible guides, three doctrine studies, four context guides; all live).
+
+The map is on the wide frame Genesis uses and draws only what the repository already places: Goshen
+and Canaan, each as a region, roughly. The map note: "Only two regions are drawn: Goshen, where Israel
+lived in Egypt, and Canaan, the land promised. Rameses, Succoth, the crossing of the sea and Mount Sinai
+are left off, because where they lay is debated, and no route is drawn, because the way Israel went is
+not known." `teaching.test.tsx` now lists Exodus among the books with a teaching guide, and its frame
+test names Exodus's frame (`fertile-crescent`).
+
+### Chapters 1 to 20 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Exodus 1 | 4 | 2,505 |
+| Exodus 2 | 5 | 2,862 |
+| Exodus 3 | 5 | 3,203 |
+| Exodus 4 | 5 | 2,788 |
+| Exodus 5 | 4 | 1,836 |
+| Exodus 6 | 4 | 2,180 |
+| Exodus 7 | 4 | 1,945 |
+| Exodus 8 | 5 | 2,150 |
+| Exodus 9 | 5 | 2,314 |
+| Exodus 10 | 5 | 2,239 |
+| Exodus 11 | 3 | 1,642 |
+| Exodus 12 | 6 | 4,133 |
+| Exodus 13 | 5 | 2,013 |
+| Exodus 14 | 5 | 2,388 |
+| Exodus 15 | 5 | 2,045 |
+| Exodus 16 | 5 | 2,472 |
+| Exodus 17 | 4 | 1,770 |
+| Exodus 18 | 5 | 2,098 |
+| Exodus 19 | 6 | 2,277 |
+| Exodus 20 | 6 | 3,182 |
+| **Total** | **96** | **47,042** |
+
+### The hard places, and how they are stated
+
+The date of the exodus (1 Kings 6:1 and about 1446 BC; the thirteenth century and Ramesses II; the
+doubters of its scale; Merneptah about 1208 BC as fixed): no side. Which Pharaoh: the names each date
+gives, none chosen. The sea (yam suph; the proposed sites; the east wind; the range of views), the road
+(no route drawn) and Sinai (Jebel Musa by tradition; northern Sinai; northwest Arabia): no side. The
+600,000 (as written, or elef as clan or unit; each reading's difficulty): no side. The hardening of
+Pharaoh's heart in its three ways, with the Reformed and Arminian readings (4, 9, 14): no side. The death
+of the firstborn told soberly, with the Talmud's grief for Egypt and the care line from the John 19 note
+word for word (11, 12, and the book page). Passover described as a living Jewish observance (the Seder,
+the four cups, the Samaritans) as well as what the New Testament draws from it; never replaced or
+emptied. The midwives' answer (Augustine; Rahab): no side. Moses' killing of the Egyptian (just defense
+or rash zeal): no side. 4:24-26 said plainly to be obscure, with three readings. 3:14 and 6:3 in their
+readings. Manna (natural, miraculous, later tradition) and the Sabbath today (seventh-day, Reformed,
+Catholic and Lutheran, dispensational and New Covenant): no side. Amalek: no people today is Amalek. The
+Ten Commandments: Jewish, Catholic and Lutheran, and Reformed and Orthodox numberings; images (Nicaea II
+and the Reformed churches); 20:5-6 beside Ezekiel 18, never a curse on any family; the fifth commandment
+never a duty to stay in harm's way, with the Ephesians 6 care lines word for word. Christ only as the New
+Testament draws the line; contempt for Jews rejected with the pointer to the Acts 2:22-28 note.
+
+### Care lines, each word for word
+
+The lost-child line from the John 19 note (book page, 11, 12); the abuse lines from the Ephesians 6 note
+(20); the exhaustion line from the Matthew 11 note (18); the disability sentences from the John 9 and
+Psalm 139 notes (4) and the Luke 5 note (15). Each with the Find Help sentence where the source has it.
+No phone numbers.
+
+### Cut or narrowed
+
+Unsourced claims removed before publishing, each in the ledger: three thousand years of Passover; nomads
+leaving little behind (only in a pending apologetics piece); powerful nations claiming the story; the
+midwives among the Egyptians; tevah ‘used nowhere else’; chariot wheels on the sea floor; a gloss on
+Eliezer; a guess about the priests of 19:22; the Genesis 19 care line (it could not be used whole).
+Every place without a point in the repository's data was left off the map. The word ‘journey’ is kept
+out even where the BSB uses it (3:18 and 5:3 paraphrased).
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for the book page and for each chapter. No web searches.
+
+### What was run
+
+After each chapter: validate-bible-notes, the strict quotation check and the single-quote check (0
+problems each), no-emdash, and the search-index and passage-index checks, each exit 0. After chapter 5:
+all 46 content-gate commands, `pnpm check` and `pnpm test` (one explorer test timed out under load; its
+file passed alone, 39 of 39). The full gates after chapter 10 were not run at that point; they ran at
+the end on the merged tree. The final gates and the served-build check are in the report to the lead.
+
+### Next
+
+Exodus 21 onward: the Book of the Covenant (the slavery laws, ‘eye for eye’, 21:22-25, 22:18), then the
+covenant meal, the tabernacle, the calf and the renewal.
