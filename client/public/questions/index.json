@@ -413,6 +413,13 @@
           "blurb": "Hume's verdict, the preaching at Clermont and the promise of forgiveness, the massacres of 1096 and 1099 and the sack of Constantinople, the conquests that came before, and the cross made a soldier's badge.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-inquisition",
+          "question": "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?",
+          "blurb": "Paine's charge, Augustine's turn and Aquinas's argument for death, the Spanish Inquisition and the *conversos*, the Protestant executions in Zurich and Geneva, the early church's refusal of force, and the case for liberty made from inside the faith.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1316,6 +1323,16 @@
       "area": "morality",
       "slug": "the-crusades",
       "question": "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?",
+      "live": false
+    },
+    {
+      "claim": "As soon as Christians were powerful enough to use the sword they did, with the stake and faggot too, and the persecutions came from belief in revelation itself",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795,
+      "area": "morality",
+      "slug": "the-inquisition",
+      "question": "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?",
       "live": false
     }
   ],
