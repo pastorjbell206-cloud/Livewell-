@@ -11141,3 +11141,29 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Why keep confessing: standing and relationship; the ongoing character of the Christian life | 8-10 | 1-john/1.json `hard` | Repository |
 | Leviticus 16:21; Psalm 32:5; Proverbs 28:13; Psalm 130:3-4; Romans 5:1 | 8-10 | BSB | BSB text |
 | Care line ‘If you are afraid that you have fallen away from God ...’ | 8-10 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+
+## The plain notes on 1 John 2 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paraklētos in legal settings; John 14:16 | 1-2 | 1-john/2.json `cultural` | Repository; BSB |
+| Hilasmos: Dodd (expiation), Morris (propitiation), many see both | 1-2 | 1-john/2.json `words` (G2434) | Repository |
+| ‘The whole world’: not universalism (5:12); Arminian, Lutheran, evangelical; definite atonement (John 11:52); sufficient and effective | 1-2 | 1-john/2.json `hard` | Repository, no side |
+| Leviticus 16:16; Isaiah 53:12; Job 16:19 | 1-2 | BSB | BSB text |
+| Three tested claims (4, 6, 9); old and new commandment | 3-11 | 1-john/2.json `literary` | Repository |
+| Leviticus 19:17-18; Jeremiah 22:16; Isaiah 9:2; John 13:34 | 3-11 | BSB | BSB text |
+| Six parallel lines; three readings of children, fathers, young men | 12-14 | 1-john/2.json `cultural`, `literary` | Repository, no side |
+| Joel 1:3; Psalm 119:9, 11 | 12-14 | BSB | BSB text |
+| ‘The world’ as a way of life without God; three desires compared with Eden (Genesis 3:6) | 15-17 | 1-john/2.json `literary`, `doctrines` (idolatry) | Repository |
+| Isaiah 40:8; Psalm 119:37; John 3:16 | 15-17 | BSB | BSB text |
+| The schism (2:19); denial of Jesus as the Christ likely not a Jewish denial; Cerinthus; Mark 13:22; 2 Thessalonians 2:3 | 18-23 | 1-john/2.json `historical` | Repository |
+| Anointing: kings, priests, prophets; most read the Spirit, some the gospel | 18-23; 24-27 | 1-john/2.json `cultural` | Repository |
+| Identifications (pope, sultan, emperor, dictator) made; these notes make none; they frightened believers and divided Christians | 18-23 | bible/guides/reading-apocalyptic.json; 2-thessalonians/plain/2.json (3-8 `hard`) | Repository; instruction for this run |
+| 2:19 and perseverance: Reformed; Arminian and Wesleyan; Lutheran; Catholic | 18-23 | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Deuteronomy 13:3; 1 Samuel 16:13; Isaiah 61:1; Psalm 2:2 | 18-23 | BSB | BSB text |
+| Menō eleven times in the chapter; the faithful remain | 24-27 | 1-john/2.json `words` (G3306) | Repository |
+| Jeremiah 31:34; Joel 2:28; Isaiah 54:13; Ephesians 4:11 | 24-27 | BSB | BSB text |
+| Parousia as a ruler's arrival | 28-29 | 2-peter/intro.json `teaching.words` (Coming) | Repository |
+| Psalm 34:5; Psalm 11:7 | 28-29 | BSB | BSB text |
