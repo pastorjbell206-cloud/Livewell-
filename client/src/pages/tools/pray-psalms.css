@@ -32,6 +32,9 @@
 .pp-kicker{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:0 0 6px}
 .pp-source{font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:-6px 0 var(--s-3)}
 .pp-care{margin:0 0 var(--s-3)}
+.pp-care .pp-care__h{font-family:var(--U);font-size:14px;font-weight:600;line-height:1.4;letter-spacing:0;color:var(--ink);margin:0 0 8px}
+#pp-view-h:focus,#pp-view-h:focus-visible,.pp-slow__title:focus-visible{outline:none;box-shadow:none}
+.pp-slow{scroll-margin-top:72px}
 .pp-guide p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 .6em;max-width:var(--w-read)}
 .pp-guide .pp-sub{margin-top:var(--s-2)}
 .pp-why{list-style:none;margin:var(--s-2) 0 0;padding:0;max-width:var(--w-read)}

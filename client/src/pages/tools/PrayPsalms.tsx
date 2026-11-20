@@ -179,7 +179,7 @@ export default function PrayPsalms() {
     wantSlow.current = false;
     const h = slowRef.current;
     if (!h) return;
-    h.closest("section")?.scrollIntoView?.({ block: "start" });
+    (h.closest(".pp-slow") ?? h).scrollIntoView?.({ block: "start" });
     h.focus({ preventScroll: true });
   }, [slow]);
 
@@ -418,7 +418,7 @@ export default function PrayPsalms() {
 
                     {psalm.care.length > 0 && (
                       <aside className="ts-help pp-care" aria-labelledby="pp-care-h">
-                        <h3 id="pp-care-h">A word of care, from the Study Bible's plain notes on Psalm {psalm.n}</h3>
+                        <h3 id="pp-care-h" className="pp-care__h">A word of care, from the Study Bible's plain notes on Psalm {psalm.n}</h3>
                         {psalm.care.map((c, i) => (
                           <p key={i}>{c.text}</p>
                         ))}
