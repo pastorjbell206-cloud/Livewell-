@@ -7846,3 +7846,28 @@ Cut: the "Romans road" and other popular uses of 3:23; Anselm and Abelard by nam
 | Paradidōmi in 1:24-28 and 4:25 | 18-25 | Repository deep note (Romans 1 `words`) | Repository |
 
 Cut: the Amidah's "who gives life to the dead" (not checked); later rabbinic tradition that Abraham kept the whole law (deep note; not checked).
+
+## The plain notes on Romans 5 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Augustus as bringer of peace; the Roman peace on coins and monuments; access as introduction to a king; katallagē, making peace between parties at war | 1-5, 6-11 | Repository deep note (`cultural`) | Repository |
+| Kauchaomai "rejoice" is the boasting word; the chain of 5:3-4; dokimē as tested character | 1-5 | Repository deep note (`literary`); Greek text | Repository; standard lexicon sense |
+| The Spirit named at 1:4 and 2:29, then filling chapter 8 | 1-5 | BSB | Script count |
+| Isaiah 32:17; Psalm 22:5; Joel 2:28; Psalm 34:18 | 1-5 | BSB | BSB text |
+| Care line: not a line for fresh grief; Find Help; the suffering Honest Answer | 1-5 | Genesis 50 plain note form; `answers.ts` | Repository wording, adapted |
+| Ancient praise for dying for a friend, benefactor or city | 6-11 | Repository deep note (`cultural`) | Repository |
+| Greater-to-lesser argument known in Jewish interpretation | 6-11 | Repository deep note (`literary`) | Repository |
+| Isaiah 53:6; Hosea 14:4; Zephaniah 1:15 | 6-11 | BSB | BSB text |
+| 4 Ezra and 2 Baruch on Adam's sin and each person's responsibility | 12-14 | Repository deep note (`historical`) | Repository; stated without dates or quotation |
+| Typos, pattern | 12-14 | Greek text | Standard |
+| Western original sin (Augustine; present in Adam or Adam as appointed head); Orthodox ancestral sin (death and a bent nature, not guilt) | 12-14 | Repository deep note (`hard`); search | Search: catenabible.com (Romans 5:12); mdpi.com Religions 15 (2024); secondary pages quoting Kelly and Meyendorff. Stated as teachings, no side |
+| Old Latin "in quo" ("in whom"), followed by Augustine (and Ambrosiaster before him); most modern translations "because" | 12-14 | Search as above; repository deep note | Ambrosiaster not named on the page |
+| Historical Adam: views; the Honest Answer on Genesis 1 | 12-14 | Repository deep note (`hard`); `answers.ts` | Stated as views, no position |
+| Genesis 2:17; 3:19; 5:5; 1 Corinthians 15:22 | 12-14 | BSB | BSB text |
+| Universalist, Reformed and Arminian/Wesleyan readings of "all" and "the many" | 15-21 | Standard positions; apol-ledger (universalism refused by most churches) | Stated as readings, no names, no side |
+| Isaiah 53:11; Genesis 3:6 | 15-21 | BSB | BSB text |
+
+Cut: Gregory of Nyssa and other universalists by name; Ambrosiaster by name; 2 Baruch's "each his own Adam" line (deep note; not checked).
