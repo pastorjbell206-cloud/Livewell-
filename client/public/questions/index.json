@@ -171,6 +171,13 @@
           "blurb": "The four natural explanations, each as its defenders put it, against the list Paul received, the persecutor and the unbelieving brother, and the word the witnesses chose.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-resurrection-accounts-disagree",
+          "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
+          "blurb": "Every difference set out, Tacitus and Suetonius on the fire of Rome as a test case, the conventions of ancient biography, and what all four agree on.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -580,6 +587,26 @@
       "area": "jesus",
       "slug": "the-appearances-and-the-alternatives",
       "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
+      "live": false
+    },
+    {
+      "claim": "The Gospels' accounts of the resurrection contradict one another, and harmonizing them only produces a story none of them tells",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "jesus",
+      "slug": "the-resurrection-accounts-disagree",
+      "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
+      "live": false
+    },
+    {
+      "claim": "The contradictions among the Easter stories show that they were invented",
+      "proponent": "Hermann Samuel Reimarus",
+      "work": "The fragments published by Gotthold Lessing",
+      "year": 1778,
+      "area": "jesus",
+      "slug": "the-resurrection-accounts-disagree",
+      "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
       "live": false
     },
     {

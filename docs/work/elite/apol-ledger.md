@@ -1411,3 +1411,25 @@ Cut or not used: the Nazareth Inscription (its date and link to Christianity unc
 | Reading lists: Lüdemann 1994; Ehrman 2014; Wright 2003; Allison 2021; Licona 2010; Sanders 1993 | Res answer (sources row) | Verified |
 
 Cut or not used: that crucifixion victims "often" lived for days (not checked; the piece says only that Jesus died sooner than Pilate expected); that the bereaved in Allison's reports do not conclude a bodily raising (not seen; the piece argues from the ancient vocabulary instead); Kirsopp Lake's wrong-tomb theory (not checked); any count of martyred apostles. No living author is quoted.
+
+### w. "The four Easter accounts disagree. Doesn't that show they can't be trusted?" (the-resurrection-accounts-disagree)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Reimarus, fragments published by Lessing in the 1770s (1774 to 1778), pressed the contradictions as evidence of invention | Note (John 20); HJ ledger (Schweitzer ch. II) | Verified |
+| Ehrman, *Jesus, Interrupted* (2009): compare the accounts side by side; harmonizing to two angels makes a story no Gospel narrates | Tenth run (title, year); S: ehrmanblog.org ("fuller account of resurrection discrepancies", an excerpt from the book), Equip, reviews, as summarized | Verified (secondary), paraphrased. The word "horizontally" not used (sources disagree on his terms) |
+| Mark 16:2 "just after sunrise"; John 20:1 "while it was still dark"; the women in Mark 16:1, Matthew 28:1, Luke 24:10, John 20:1; Mark 16:5; Matthew 28:2; Luke 24:4; John 20:12; Mark 16:8; Matthew 28:8; Matthew 28:7, 10, 16; Luke 24:49 "remain in the city"; Acts 1:2-3 | Repo (BSB, read and checked by script) | Quoted |
+| Tatian's harmony shortly after 172; Augustine's *Harmony of the Gospels* around 400; Eusebius (*Questions to Marinus*) on Matthew's timing and Mark's | Twelfth run row m (Tatian); earlier rows (Augustine c. 400, agreement of the Gospels); Note (Matthew 27 cites *Harmony* 3.7; Matthew 28 on Eusebius) | Verified |
+| Matthew and Luke used Mark | Bdoor row 574; Note (Mark intro) | Verified |
+| Tacitus, *Annals* 15.39-40: Nero "was at Antium, and did not return to Rome until the fire approached his house"; "a rumour had gone forth everywhere" that he sang of the destruction of Troy on a private stage; stopped after five days, then the flames returned | Church and Brodribb, read this run | Quoted; the rest paraphrased |
+| Suetonius, *Nero* 38: "This fire he beheld from a tower in the house of Mecaenas" ... "a poem on the ruin of Troy, in the tragic dress he used on the stage"; six days and seven nights | Thomson (Gutenberg #6391), read this run | Quoted (the translation's spelling "Mecaenas" kept) |
+| Burridge, *What Are the Gospels?* (1992): the Gospels as ancient biography, now widely held | Earlier rows (WorldCat; the new consensus) | Verified |
+| Licona, *Why Are There Differences in the Gospels? What We Can Learn from Ancient Biography* (OUP, 2017; one listing December 2016): Plutarch's parallel *Lives*; compression, conflation, displacement, simplification, spotlighting; linked to the progymnasmata; Blomberg's response that he turns to the devices too quickly | S: OUP book page, Themelios review (Mark Strauss), Equip (Blomberg), Reading Religion, as summarized | Verified (secondary), paraphrased |
+| John 20:2 "we do not know where they have put Him" (the plural) | Repo (BSB) | Quoted |
+| Luke's compression and Acts 1:2-3; most interpreters read the Gospel's ending as compressed | Note (Luke 24, the ascension question) | Verified (repo) |
+| All four agree on the core; independent witnesses differ in detail while agreeing on the core | Note (John 20, Luke 24) | Agrees with the notes |
+| Some think Mark's original ending was lost | Note (Mark 16) | Verified (repo) |
+| Chicago Statement 1978; inerrancy "as first written" (the pilot's wording, not a quotation of the Statement) | Earlier rows (Chicago Statement 1978) | Verified; no wording of the Statement quoted |
+| Luke begins in the temple; Acts ends in Rome | Repo (BSB Luke 1:8-9; Acts 28) | Verified |
+
+Cut or not used: "horizontally" as Ehrman's term (sources reverse his terms); Licona's count of Gospel pericopes (sources give 16 and 19); a claim that readers have "long" read Mark's silence as temporary (not checked). No living author is quoted.
