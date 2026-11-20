@@ -2722,10 +2722,22 @@
     "give from my paycheck",
     "how much should i give",
     "tithe",
-    "tithing"
+    "tithing",
+    "should i tithe before or after taxes",
+    "cant afford to tithe",
+    "pastor keeps asking for money",
+    "church always asking for money",
+    "offering plate on sunday",
+    "give ten percent to church",
+    "dont trust how church spends money",
+    "seed faith offering"
    ],
    "not": [],
-   "related": []
+   "related": [
+    "generosity-and-giving",
+    "money",
+    "greed"
+   ]
   },
   "marriage-communication": {
    "phrases": [
