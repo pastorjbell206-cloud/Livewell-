@@ -200,7 +200,7 @@ export default function WisdomBooks() {
     const h = document.getElementById("wb-view-h");
     if (!h) return;
     wantView.current = false;
-    h.scrollIntoView?.({ block: "start" });
+    (h.closest("section") ?? h).scrollIntoView?.({ block: "start" });
     h.focus({ preventScroll: true });
   });
 

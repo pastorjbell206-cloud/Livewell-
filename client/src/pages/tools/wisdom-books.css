@@ -2,6 +2,7 @@
  * shell's bands and columns; these are its own parts: the chapter picker,
  * a chapter's verses under the Study Bible's outline, a theme's verses that
  * open to the verses around them, the lines kept, the teaching panel. */
+.wb-view{scroll-margin-top:64px}
 .wb-kicker{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:0 0 6px}
 .wb-source{font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:-6px 0 var(--s-3)}
 .wb-chapters{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:8px}
