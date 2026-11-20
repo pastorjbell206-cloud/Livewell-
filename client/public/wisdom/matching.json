@@ -2695,6 +2695,33 @@
     "betrayal",
     "singleness"
    ]
+  },
+  "codependency": {
+   "phrases": [
+    "codependent",
+    "enabling",
+    "i keep rescuing",
+    "cover for his drinking",
+    "cover for her drinking",
+    "make excuses for him",
+    "make excuses for her",
+    "my whole life revolves around",
+    "responsible for his feelings",
+    "responsible for her feelings",
+    "cant say no to him",
+    "cant say no to her",
+    "need to be needed",
+    "fix everyone",
+    "lost myself in this relationship",
+    "lost myself taking care of"
+   ],
+   "not": [],
+   "related": [
+    "people-pleasing",
+    "setting-boundaries",
+    "saying-no",
+    "identity-and-worth"
+   ]
   }
  }
 }
