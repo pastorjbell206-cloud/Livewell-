@@ -22,6 +22,7 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 2. **The church condemned Galileo. Hasn't religion always been at war with science?** What happened in 1616 and 1633 and what Galileo was and wasn't sentenced to, where the church was wrong, and how the "war" was written in the nineteenth century and taken apart since.
 3. **A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?** Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.
 4. **Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?** What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.
+5. **Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?** The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.
 
 ## Words these pages use
 

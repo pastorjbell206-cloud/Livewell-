@@ -1253,6 +1253,36 @@ Cut: Earman as one "who writes as no defender of Christianity" (not checked); re
 | Romans 1:20 | Repo (BSB) | Quoted |
 | Swinburne, *The Existence of God*, 2nd ed. (2004); Pruss, *The Principle of Sufficient Reason: A Reassessment* (2006) | God answer | Verified |
 
+### s. "Hasn't evolution disproved Genesis?" (evolution-and-genesis)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Darwin 1859; Dawkins 1986 (paraphrase) | Row o | Verified |
+| Coyne, *Why Evolution Is True* (Viking, 2009): fossils, biogeography, vestigial organs, shared genes including pseudogenes as evidence of common ancestry | Tenth run map (S); S: Wikipedia, Publishers Weekly, NCSE review, McDowell review | Verified (secondary), paraphrased |
+| Universe about 13.8 billion years, earth about 4.54 billion; common descent the working framework of biology | /faq rows; S (NAS) | Verified as the mainstream position |
+| National Academy of Sciences and Institute of Medicine, *Science, Evolution, and Creationism* (January 2008, third edition of a 1984 text): evolution well grounded; compatible with religious faith | S: National Academies news release, NAP record, NCSE review | Verified (secondary), paraphrased |
+| Venema and McKnight, *Adam and the Genome* (Brazos, 2017): "We descend from a population that has never dipped below about 10,000 individuals" (p. 48, as quoted by reviewers); challenged by Richard Buggs (2017) and debated | S: Peaceful Science, Ken Schenck's review, BioLogos replies as summarized | Verified (secondary), paraphrased, not quoted (a living author, primary text not seen). "A Christian biologist": the book's subject and its publisher's and BioLogos's presentation |
+| Romans 5:12; Exodus 20:11; Genesis 2:4; Genesis 1:1; Hebrews 11:3; Genesis 1:27; 1 Corinthians 15:22 | Repo (BSB) | Quoted |
+| Whitcomb and Morris, *The Genesis Flood* (1961): revived young-earth creationism; a worldwide flood that did much of the work of geology | Ninth run; S: Wikipedia, *Grace Journal* review (1961) | Verified |
+| Todd Charles Wood: young-earth creationist, PhD in biochemistry (Virginia); has written that the evidence for evolution is strong and the theory successful; holds a young creation because of Scripture | S: geochristian.com (2009), Christianity Today profile, Answers in Genesis critiques quoting his 2009 post "The truth about evolution" | Verified (secondary), paraphrased; not quoted |
+| Hugh Ross, astronomer, Reasons to Believe 1986, day-age | Ninth run | Verified. *A Matter of Days* not listed (year not confirmed in the ninth run) |
+| Old-earth creation: God acted directly at points in the history of life | The faith-and-science answer's description (repo) | Agrees with the site |
+| BioLogos founded 2007 by Francis Collins, who led the Human Genome Project | Ninth run | Verified |
+| God works through secondary causes | Row o (Aquinas) | Verified |
+| Noordtzij 1924, Kline 1958; C. John Collins 2006; Walton 2009 | Ninth run | Verified |
+| Behe, *Darwin's Black Box* (1996): irreducible complexity, the bacterial flagellum | S: Behe chapter, Natural History (2002), Wikipedia mirror | Verified (secondary) |
+| Meyer, *Signature in the Cell: DNA and the Evidence for Intelligent Design* (HarperOne, June 2009); Meyer: not an argument from ignorance, based on what uniform experience shows intelligent agents produce | S: Biola Magazine, Christian Post, STR articles summarizing Meyer | Verified (secondary), paraphrased |
+| Haarsma (then BioLogos president): ID not a god-of-the-gaps argument as such, shares its risk if a natural explanation is found | S: STR and Books & Culture summaries of the BioLogos response to Meyer | Verified (secondary), paraphrased |
+| *Kitzmiller v. Dover Area School District*, 20 December 2005, Judge John E. Jones III: ID could not be taught as an alternative to evolution in the district's science classes | S: Jurist, ACLU, Education Week, Wikipedia | Verified (secondary) |
+| Mainstream biologists reject ID's central claims | S (Wikipedia on Behe; the Kitzmiller record) | Verified (secondary) |
+| Apostles' Creed, "Maker of heaven and earth" | Ninth run | Quoted |
+| *Four Views on the Historical Adam* (2013): Lamoureux, Walton, C. John Collins, Barrick, as described | Ninth run | Verified |
+| Swamidass, *The Genealogical Adam and Eve* (IVP, 2019): Adam and Eve, perhaps as recently as six thousand years ago, genealogical ancestors of all now living without genetic trace; reviews divided | S: IVP listing, Wikipedia, TGC review | Verified (secondary), paraphrased |
+| Wood and Falk, *The Fool and the Heretic: How Two Scientists Moved beyond Labels to a Christian Dialogue about Creation and Evolution* (Zondervan, 2019); from the Colossian Forum's dialogue; Falk former BioLogos president, emeritus professor of biology; they still disagree | S: Zondervan listing, Reading Religion, Calvin University, SEBTS interviews | Verified (secondary) |
+| Agreement with the Study Bible: the Genesis 1 note's hard question sets out young-earth, day-age, framework (Noordtzij, Kline, Blocher), analogical day and Walton readings and calls the age and mechanism questions on which faithful readers differ; the Genesis 1 answer lists the same readings and evolutionary creation | Repo | Agrees; no order (second or third) is named on this page, since the note and the answer differ on the label |
+
+Cut: "in the same places" of shared broken genes (not confirmed); old-earth creation's special creation of humanity "above all" (not checked as the view's universal form); Venema's book as BioLogos's "fullest statement"; "many" Christians reading Romans 5 of human death (now "some"); a claim that young people leave the faith over this (narrowed to what could follow); *The Fool and the Heretic* as written "to show how Christians can argue as brothers" (its aim not confirmed; the subtitle is quoted in paraphrase).
+
 ### The area page (index.md)
 
 | Claim | How verified | Result |

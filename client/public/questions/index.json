@@ -198,6 +198,13 @@
           "blurb": "What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "evolution-and-genesis",
+          "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+          "blurb": "The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -602,6 +609,26 @@
       "slug": "the-beginning-and-fine-tuning",
       "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
       "live": false
+    },
+    {
+      "claim": "The evidence of fossils, biogeography and shared genes shows the common descent of living things, humans included",
+      "proponent": "Jerry A. Coyne",
+      "work": "Why Evolution Is True",
+      "year": 2009,
+      "area": "science",
+      "slug": "evolution-and-genesis",
+      "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+      "live": false
+    },
+    {
+      "claim": "Darwin removed the strongest reason to believe in a designer",
+      "proponent": "Richard Dawkins",
+      "work": "The Blind Watchmaker",
+      "year": 1986,
+      "area": "science",
+      "slug": "evolution-and-genesis",
+      "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+      "live": false
     }
   ],
   "answers": {
@@ -609,6 +636,8 @@
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
     "how-can-god-be-three-and-one": "How can God be three and one?",
-    "are-miracles-believable": "Are miracles believable?"
+    "are-miracles-believable": "Are miracles believable?",
+    "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
+    "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?"
   }
 }
