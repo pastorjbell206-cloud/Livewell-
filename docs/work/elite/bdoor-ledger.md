@@ -10653,3 +10653,29 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Misuse named and rejected; Acts 2:22-28 pointer | 18-24 | acts/plain/2.json (22-28) | Repository wording |
 | Haggai 2:6 (Hebrews' wording differs, the writer usually following the Greek); Deuteronomy 4:24 | 25-29 | Chapter deep note `historical`; BSB | Repository; BSB text |
 | Asaleutos, unshakable | 25-29 | Chapter deep note `words` | Repository |
+
+## The plain notes on Hebrews 13 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Philoxenia ‘love of strangers’; inns' poor reputation; prisoners depended on friends; visiting drew suspicion | 1-6 | Chapter deep note `cultural`, `words` | Repository |
+| Genesis 18:2; Genesis 19; Joshua 1:5; Deuteronomy 31:6; Psalm 118:6; Proverbs 30:8 | 1-6 | Chapter deep note `cultural`; BSB | BSB text |
+| Abuse-in-marriage care line; money line ‘these notes are not financial advice’ | 1-6 | 1-corinthians/plain/7.json (10-16); 1-timothy/plain/6.json (3-10) | Word for word |
+| Verse 7 leaders of the past; ‘outcome’; strange teachings about foods (Jewish food laws, sacrificial meals, other rules) | 7-9 | Chapter deep note `literary`, `cultural` | Repository |
+| Deuteronomy 32:7; Psalm 102:27; Leviticus 11 | 7-9 | BSB | BSB text |
+| Controlling-leader care line (shortened) | 7-9 | 2-corinthians/plain/11.json (16-21) | Word for word, two sentences omitted |
+| Sin-offering bodies burned outside the camp (Leviticus 16:27; 6:30); outside the camp for the unclean and condemned; Jesus crucified outside the walls | 10-16 | Chapter deep note `cultural`; BSB; John 19:17 | Repository; BSB text |
+| Altar = cross, some the Lord's Supper; readings differ | 10-16 | Chapter deep note `cultural` (foods); hebrews/intro.json `purpose` | Repository, narrowed to ‘most likely’ and ‘some readers’ |
+| Exodus 33:7; Psalm 50:14; Hosea 14:2 | 10-16 | BSB | BSB text |
+| ‘The camp’ and retreat into the synagogue (‘some readers’); misuse named and rejected | 10-16 | hebrews/intro.json `overview`, `setting`; acts/plain/2.json (22-28) | Repository wording |
+| Leaders watch over souls, give account; trust not blind obedience; 1 Peter 5:3; Acts 5:29; church orders differ; misuse of 13:17 | 17-19 | Chapter deep note `hard`; wisdom/entry/submitting-to-leaders.json (`application`, `deep.misread` on Hebrews 13:17) | Repository |
+| ‘Nothing in this passage shields a leader who does harm ...’ | 17-19 | 1-timothy/plain/3.json (1-7) | Word for word |
+| Crimes to the police; a church meeting no substitute | 17-19 | 1-timothy/plain/5.json (17-22) | Repository wording |
+| Ezekiel 34:2, 23; Psalm 23:1 | 17-19 | BSB | BSB text |
+| Benediction one of the richest; ‘word of exhortation’ the phrase of Acts 13:15; Timothy released, no other record | 20-25 | Chapter deep note `literary`, `historical` | Repository |
+| ‘Those from Italy’ two readings | 20-25 | Chapter deep note `historical`; hebrews/intro.json `setting` | Repository, no side |
+| Isaiah 63:11; Zechariah 9:11; Numbers 6:26 | 20-25 | BSB | BSB text |
+
+## Hebrews complete (2026-11-20)
