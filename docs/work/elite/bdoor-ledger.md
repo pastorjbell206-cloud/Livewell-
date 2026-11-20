@@ -7249,3 +7249,51 @@ One web search.
 | The right hand of the accuser (6) and of God the defender (31) | 21-31 | BSB; repository deep note | Plain reading |
 
 The sentence "No reading of this psalm makes it right to harm anyone, least of all a child or a widow" stands at the end of the hard part. Ahithophel (deep note) not used.
+
+## The plain notes on Psalm 110 (2026-11-20)
+
+Three web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| LORD (the name) and Lord (adon, master) | 1-3 | Book page (key words) | Repository |
+| Right hand as honour (1 Kings 2:19); footstool as victory | 1-3 | Repository deep note (cultural); BSB | BSB text |
+| A crowning oracle (many scholars) or David's own words about a greater king | 1-3 | Repository deep note (historical, hard); book page ("Royal psalms") | Stated as views |
+| 110:1 the Old Testament verse most quoted or echoed in the New Testament | 1-3 | Book page; earlier ledger (book page row) | Repository; attributed to the book page |
+| Matthew 22:42-43, 46; Acts 2:34; Hebrews 1:13; 1 Corinthians 15:25; Romans 1:3-4; Mark 14:62; Revelation 19:15 | all | BSB | BSB text |
+| The Talmud reads verses 1 and 4 of Abraham (Nedarim 32b; also Sanhedrin 108b reported) | 1-3 | Talmud as summarised | Search: yu.edu (Sacks submissions PDF, Nedarim 32b); aish.com "Psalm 110 – Two Lords"; wikipedia Psalm 110. Tractate not named on the page |
+| Abraham ibn Ezra and David Kimhi read it as a poet writing about David | 1-3 | Medieval commentaries as translated | Search: scripturalmormonism.blogspot.com (Ibn Ezra and Radak on Psalm 110, translated); wikipedia Psalm 110 (Kimhi, Gershonides). Paraphrased. Rashi not named (sources disagree) |
+| Some rabbinic writings read 110:1 of the King Messiah | 1-3 | Midrash on Psalms (chapter 18) as reported | Search: alhatorah.org Tehillim 110:1; psalms.scriptura.org; patheos (polemical, used only with the others). Location disputed, so no reference given on the page |
+| Christian reading; David's authorship held by some, a crowning song pointing forward by others | 1-3 | Mark 12 plain note wording; book page ("Royal psalms") | Repository |
+| "Neither reading is dishonest. ... They part over who Jesus is" | 1-3 | Book page ("Royal psalms") | Repository |
+| Kings from Judah, priests from Levi and Aaron; Uzziah's leprosy (2 Chronicles 26:16-21, "skin disease") | 4 | BSB; repository deep note | BSB text |
+| Melchizedek in Genesis 14:18 and Psalm 110:4 only in the Old Testament; Salem usually Jerusalem | 4 | Earlier ledger (Genesis 14); Genesis 14 plain note | Repository |
+| Hebrews 5:6; 7:16; 7:24-25 | 4 | BSB | BSB text |
+| 110:3, 6 hard Hebrew; 110:7 a warrior drinking (or a crowning rite at a spring); "lift up the head" as restored | 1-3, 5-7 | Repository deep note (historical, cultural) | Stated as "probably" and "some scholars" |
+| Battle poetry; no modern nation or war; no reason to fight in God's name | 5-7 | Site's own stance | Stated plainly |
+
+Cut: Rowley (1950), Pfeiffer, Treves and the Hasmonean date; 1 Maccabees 14:41; Tutankhamun's footstools; Keel; Justin and Hezekiah; Philo; 11Q13 (in the Genesis 14 note already); 2 Enoch; Luther, Calvin, Hay, Hengel; Rashi by name.
+
+## The plain notes on Psalm 111 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 111 and 112 twin acrostics: 22 short lines, two per verse in 1 to 8, three in 9 and 10 | Repository deep notes (literary); book page (acrostics) | Script over the repository's Hebrew: first letters at each verse and atnah run he/bet, gimel/dalet ... resh/tav (aleph at 'odeh after Hallelujah) |
+| Hints of the exodus, Passover, manna, the land | Repository deep note (historical) | Stated as hints |
+| Exodus 34:6; Proverbs 9:10; 1:7; Luke 1:49, 68 | BSB | BSB text |
+| Fear of the LORD as awe and trust | Repository deep note (cultural) | Site's own teaching |
+
+## The plain notes on Psalm 112 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Echoes of 111 in 112 (righteousness endures forever; gracious and compassionate) | BSB | BSB text compared |
+| Psalm 1:1-2; 2 Corinthians 9:9; Matthew 5:16; Proverbs 31:20 | BSB | BSB text |
+| Lending without interest to the poor; horn as honour; bad news | Repository deep note (cultural) | Site's own teaching |
+| 112:3 not a promise of wealth; prosperity teaching named as not the psalm's | Repository deep note (hard) | Stated plainly |
+
+112:4 has an em-dash in the BSB and is quoted only before it.
