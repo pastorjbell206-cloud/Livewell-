@@ -6782,3 +6782,43 @@ No web search.
 | Placed after 74 as God's answer: a possible reading of the arrangement | Repository deep note (historical) | Stated as "may have meant" |
 | The horn as strength (1 Samuel 2:1); the cup of judgment in the prophets; dregs | Repository deep note (cultural); BSB | BSB text |
 | 1 Samuel 2:7; Luke 1:52; Matthew 26:39 (Christians read the cup as judgment borne for others: a reading) | BSB | BSB text |
+
+## The plain notes on Psalm 76 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Salem an old name for Jerusalem (Genesis 14:18); sounds like shalom | Repository deep note (cultural); BSB | BSB text. "Sounds like" kept; no etymology claimed |
+| Many connect the psalm with the Assyrian withdrawal (2 Kings 19:35-36); others a worship song with no one battle | Repository deep note (historical) | Stated as views. The year 701 BC and the Greek heading's note not given (not verified this run) |
+| "Horse and rider" echoes Exodus 15:1; chariots the most feared weapon | Repository deep note (cultural); BSB | BSB text |
+| Isaiah 2:4; Matthew 5:9; Revelation 19:16 | BSB | BSB text |
+
+No modern army or nation in view.
+
+## The plain notes on Psalm 77 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jeduthun a leader of temple music with Asaph and Heman; also heads 39 and 62 | 1-9 | Repository deep note (historical); earlier ledger (Psalm 39, 62 headings) | Script over BSB headings |
+| The six questions echo Exodus 34:6 | 1-9 | BSB | BSB text (an observation, stated as such) |
+| Lifted hands the posture of prayer; the exodus told at Passover | all | Repository deep note (cultural) | Site's own teaching |
+| Habakkuk 3:10; Mark 6:48, 50; Matthew 26:39 | all | BSB | BSB text |
+
+Care line in 1-9 (sleeplessness; a doctor, a pastor, a friend; the Find Help page). No diagnosis of anyone.
+
+## The plain notes on Psalm 78 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second longest psalm (72 verses) after 119 (176) | 1-39 | BSB verse counts | Script |
+| Teaching children the story (Deuteronomy 6:20-21) | 1-39 | Repository deep note (cultural); BSB | BSB text |
+| Quail (Numbers 11), water from the rock (Exodus 17) | 1-39 | Repository deep note (cultural) | Site's own teaching |
+| Matthew 13:35 quotes 78:2; John 6:32; 1 Corinthians 10:11; John 10:11 | all | BSB | BSB text |
+| Shiloh the place of the Tent of Meeting (Joshua 18:1); the ark brought from Shiloh and captured (1 Samuel 4:4, 11); Jeremiah 7:12 | 40-72 | BSB | BSB text |
+| 78:65 how it looked from Israel's side (Psalm 121:4) | 40-72 | Repository deep note (hard) | Site's own teaching |
+| Ephraim and Joseph the leading northern tribes; dates debated (David or Solomon; after the north fell to Assyria) | 40-72 | Repository deep note (historical) | Stated as views; the year 722 BC and Hezekiah not given |
