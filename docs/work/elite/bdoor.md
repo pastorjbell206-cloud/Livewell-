@@ -7471,3 +7471,128 @@ be left empty without a code change.
 
 1 John: its book page (who ‘the elder’ and John are; the antichrists named without any modern
 group; assurance without fear), then chapters 1 to 5; then 2 John, 3 John and Jude.
+
+## 1 John, 2 John, 3 John, Jude, and Revelation 1 to 3 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". 2 Peter was finished;
+this run first repaired a stray mark, then did 1 John, 2 John, 3 John and Jude (book pages and every
+chapter) and began Revelation (the book page and chapters 1 to 3), one commit for each book page and
+each chapter, with its ledger rows. It stopped at the end of Revelation 3, a chapter boundary.
+
+### A repair first
+
+The map notes of Hebrews, James, 1 Peter and 2 Peter began with a stray ‘| ’ that showed on the page
+(the authoring script kept its field separator). Removed; the script is fixed.
+
+### The book pages
+
+**1 John.** Fourteen parts: in a minute; who wrote it (what the letter claims; Irenaeus; Papias' ‘elder
+John’ via Eusebius; the apostle, the elder or a circle; no side); when, where, and what had gone wrong
+(the split of 2:19; docetism; Cerinthus); how it is built; three marks of knowing God (not a checklist
+for anxious consciences); sin, and the one born of God (1:8-10 beside 3:6-9; four readings; the Hebrews
+6 care line); antichrists, and those who went out (what John says; identifications made, none made here;
+2:19 and the perseverance readings); God is love; Jesus in 1 John (2:2 ‘the whole world’ readings; 5:20;
+the Nicene Creed); ‘so that you may know’ (assurance in four traditions; the Colossians 1 care line); two
+hard places in chapter 5 (5:7-8 as the Questions page on missing passages states it, with the Textus
+Receptus view; the sin that leads to death); Old Testament; what it is not; how to read. 14 hard
+passages, 12 key words, 11 timeline entries, 8 Go deeper links. 4,719 words.
+
+**2 John.** Twelve parts, among them ‘the chosen lady’ (a church or a woman, no side) and ‘Do not
+receive him into your home’ (the house church and the formal blessing; not a licence to shun family,
+neighbours or people of other faiths, in the 2 Corinthians 6 note's words; the shunning care line).
+2,423 words.
+
+**3 John.** Thirteen parts, among them ‘That you may prosper and enjoy good health’ (a letter's greeting;
+euodoō not a money word; prosperity teaching named in the 1 Timothy 6 note's words; the illness and the
+money care lines word for word) and Diotrephes (the controlling-leader care line). 2,670 words.
+
+**Jude.** Thirteen parts, among them three examples of judgment (the angels as Genesis 6 is read; Jude 7
+as the Genesis 19 note sets it out, no side, the Romans 1 care line), Michael, Moses and Enoch (only what
+the notes support; quoting a book is not calling it Scripture), and Jude and 2 Peter (as the 2 Peter page
+states it). 2,881 words.
+
+**Revelation.** Fourteen parts: in a minute; who wrote it (‘John’; Justin and Irenaeus; Dionysius; no
+side; its uneven reception); when, and to whom (Domitian or the late 60s, no side); what kind of book it
+is; how it is built; four ways of reading (preterist, historicist, futurist, idealist, each as its holders
+put it, none chosen); the thousand years (amillennial, postmillennial, historic and dispensational
+premillennial, each as its holders put it, none chosen; what all confess); the Lamb on the throne; the
+seven churches; suffering, witness and endurance (not punishment; the Acts 14 care line); judgment and the
+new creation; Old Testament; what it is not; how to read. No scheme, no date, and no modern nation,
+leader, church, movement or event identified with any figure. 13 hard passages, 12 key words, 13 timeline
+entries, 8 links. 4,345 words.
+
+**Maps.** No web searches; points only from the repository's existing maps. 1, 2 and 3 John name no
+place: Ephesus alone on the "mediterranean" frame, with a map note saying so. Jude: Sodom and Gomorrah
+on the "canaan" frame at the Genesis and 2 Peter point; Egypt is named in the note as beyond the frame.
+Revelation: only Ephesus and Laodicea have checked points on the site's maps, so only they are drawn;
+the map note names the other five cities and Patmos and says where they lay, in words.
+
+**Code.** None in the app. `teaching.test.tsx`: the five books added to the list of books with a
+teaching page, with frame lines (Jude "canaan", the others "mediterranean").
+
+### The chapters in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 1 John 1 | 3 | 1,911 |
+| 1 John 2 | 7 (18-27 split at 23) | 4,088 |
+| 1 John 3 | 5 | 3,241 |
+| 1 John 4 | 4 | 2,302 |
+| 1 John 5 | 5 (13-17 split at 15) | 3,067 |
+| 2 John | 5 | 2,650 |
+| 3 John | 5 | 2,345 |
+| Jude | 7 | 3,894 |
+| Revelation 1 | 5 | 2,981 |
+| Revelation 2 | 4 | 3,205 |
+| Revelation 3 | 5 (7-13 split at 9; 14-22 at 19) | 3,347 |
+| **Total** | **55** | **33,031** |
+
+Each chapter note gained only `"plain": true`. None of these chapters has verse notes; they rest on the
+chapter deep notes, the intros, the doctrine studies (perseverance, return, gifts), the guides (canon,
+How We Got the New Testament, Reading Revelation and Daniel), the Questions page on missing passages, the
+textual-criticism comparison, other plain notes and the lexicon (angelos, amen). ‘Synagogue of Satan’
+(2:9, 3:9) is set out as a first-century local conflict, never a word about the Jewish people, its misuse
+named and rejected with the Acts 2:22-28 pointer. ‘Jezebel’ is named as no label for any woman or group
+today. 3:10 sets out the rapture views without a side; 3:20 is read first in its setting.
+
+### Sources
+
+All in `bdoor-ledger.md`. No web searches.
+
+### Cut or narrowed
+
+Cut: a Wesleyan gloss on faults and failings; singular and plural ‘you’ in 2 John; the Greek eklektē;
+‘mouth to mouth’; a claim that the copies of Jude 22-23 differ in the number of groups; a second reading
+of Jude 17; Antipas as the only martyr named; ‘widely read in the West from early on’; ‘most preterists are
+partial’; a paragraph naming each reading's difficulty (the guide gives none for the preterist reading);
+how the traditions read Revelation 3:5 in particular. Narrowed: water and blood to ‘many’; ‘nearly every
+verse’ to ‘several hundred allusions’; ‘ten days’ to the guide's ‘limited fullness’. Psalm 26:3 and Psalm
+119:1 were swapped for other verses to keep ‘your truth’ and ‘blessed’ out even inside Scripture; ‘Blessed’
+stays in Revelation 1:3, the book's own opening blessing, quoted word for word.
+
+### What was run, and what passed (watched)
+
+After each book page and chapter: validate-bible-notes, the strict quotation check (0 problems), the
+search-index and passage-index checks and no-emdash, exit 0. After 1 John: all 46 content-gate commands,
+`pnpm check`, `pnpm test` (162 files, 1,898 tests), exit 0. After merging the latest branch, the served
+build (`scripts/serve-like-vercel.mjs` on 4603, Playwright at 390 and 1440, /api stubbed): all 11
+chapters' passage headings and every field's start matched the data at both widths (55 passages, 516
+field checks), no sideways scroll, no console errors; the five book pages at both widths showed every
+part (14, 12, 13, 13, 14), every timeline entry, the frame and the map note, with no sideways scroll and
+no errors. Looked at in `/home/user/elite-shots/bdoor/`: `1-john-map-390.png`, `1-john-map-1440.png`,
+`2-john-map-390.png`, `3-john-map-1440.png`, `jude-map-390.png`, `revelation-map-390.png`,
+`revelation-map-1440.png`, `revelation2-390-last.png`. One fault seen and fixed: the Ephesus label on the
+1, 2 and 3 John maps crowded the drawing's ASIA label at 390; it was moved west and looked at again. The
+final gates after this report are in the final report to the caller.
+
+### Not done or not verified
+
+Revelation 4 to 22 not begun. Five of the seven cities and Patmos are not drawn, for want of checked
+points in the repository. Jude 7 is set out without a side, as the Genesis 19 note does; whether the
+site should state a view waits on James, and is flagged here. The care lines are word for word, except
+that two omit one sentence each that named Paul or James in a way that would not fit John's letters (the
+1 Corinthians 5 shunning line and the Acts 12 prayer line); the ledger says so.
+
+### Next
+
+Revelation 4 to 22, chapter by chapter, from the book page as written.
