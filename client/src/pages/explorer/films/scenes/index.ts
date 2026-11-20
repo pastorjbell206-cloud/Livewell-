@@ -15,6 +15,9 @@ export const FILM_SCENES: Record<
   "why-jesus-died": () => import("./why-jesus-died"),
   "how-salvation-works": () => import("./how-salvation-works"),
   "who-made-god": () => import("./who-made-god"),
+  "gospel-in-a-minute": () => import("./gospel-in-a-minute"),
+  "bible-in-a-minute": () => import("./bible-in-a-minute"),
+  "does-god-exist": () => import("./does-god-exist"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

@@ -1,0 +1,226 @@
+/*
+ * A moving picture laid out as a video (FilmExport.tsx). The page is the
+ * video's picture: the browser window is set to the shape's exact size by
+ * scripts/export-film-video.mjs (square 1080 by 1080, vertical 1080 by 1920,
+ * wide 1920 by 1080), and everything here is measured for that size.
+ * Colours are the site's day tokens; mustard is the eyebrow and one rule.
+ */
+.fx {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: var(--fx-gap);
+  padding: var(--fx-pad);
+  background: var(--bone);
+  color: var(--ink);
+  --fx-gap: 22px;
+  --fx-pad: 40px 56px 52px;
+  --fx-head: 30px;
+  --fx-stage: 800px;
+  --fx-cap: 40px;
+  --fx-title: 92px;
+}
+.fx--vertical {
+  /* The picture and its caption sit together in the middle of a tall frame. */
+  grid-template-rows: auto auto 720px;
+  align-content: center;
+  --fx-gap: 34px;
+  --fx-pad: 110px 64px 150px;
+  --fx-head: 40px;
+  --fx-stage: 952px;
+  --fx-cap: 58px;
+  --fx-title: 112px;
+}
+.fx--wide {
+  grid-template-columns: 1060px minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  column-gap: 56px;
+  --fx-gap: 26px;
+  --fx-pad: 52px 72px 64px;
+  --fx-head: 34px;
+  --fx-stage: 1060px;
+  --fx-cap: 46px;
+  --fx-title: 116px;
+}
+
+/* The film's name along the top, small, under a thin rule. */
+.fx-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--borderdk);
+}
+.fx--wide .fx-head {
+  grid-column: 1 / -1;
+}
+.fx-head__site {
+  font-family: var(--U);
+  font-size: calc(var(--fx-head) * 0.62);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+}
+.fx-head__title {
+  font-family: var(--F);
+  font-size: var(--fx-head);
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: right;
+}
+
+.fx-stage {
+  width: var(--fx-stage);
+  justify-self: center;
+  align-self: start;
+}
+
+/* The caption: every one in the same box, the current one shown. */
+.fx-caps {
+  position: relative;
+  min-height: 0;
+}
+.fx-cap {
+  position: absolute;
+  inset: 0;
+  --fx-fit: 1;
+  font-size: calc(var(--fx-cap) * var(--fx-fit));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.fx-cap.is-on {
+  opacity: 1;
+  transition: opacity 0.6s ease 0.25s;
+}
+.fx-cap__name {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
+  margin: 0 0 0.35em;
+  font-family: var(--F);
+  font-size: 1.05em;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.fx-cap__n {
+  font-family: var(--U);
+  font-size: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+.fx-cap__text {
+  margin: 0;
+  font-family: var(--font-reading);
+  font-size: 1em;
+  line-height: 1.34;
+}
+.fx .fx-cap__verse {
+  font-size: 1em;
+  margin: 0.6em 0 0;
+  padding: 0 0 0 0.7em;
+  border-left: 3px solid var(--ink);
+}
+.fx .fx-cap__verse p {
+  margin: 0;
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 0.88em;
+  line-height: 1.34;
+}
+.fx .fx-cap__verse .fx-cap__ref {
+  margin-top: 0.25em;
+  font-family: var(--U);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.56em;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+}
+
+/* The opening and closing cards. */
+.fx-card {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--fx-pad);
+  text-align: center;
+  background: var(--bone);
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.fx-card.is-on {
+  opacity: 1;
+}
+.fx-card__mark {
+  width: calc(var(--fx-title) * 2.6);
+  height: calc(var(--fx-title) * 2.6);
+  margin-bottom: calc(var(--fx-title) * 0.4);
+}
+.fx-card__eyebrow.eyebrow {
+  font-size: calc(var(--fx-title) * 0.2);
+  margin: 0 0 calc(var(--fx-title) * 0.25);
+}
+.fx-card__eyebrow.eyebrow::before {
+  width: calc(var(--fx-title) * 0.6);
+  height: 2px;
+}
+.fx-card__title {
+  max-width: 13em;
+  margin: 0;
+  font-family: var(--F);
+  font-size: var(--fx-title);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+}
+.fx-card__line {
+  max-width: 24em;
+  margin: calc(var(--fx-title) * 0.35) 0 0;
+  font-family: var(--font-reading);
+  font-size: calc(var(--fx-title) * 0.42);
+  line-height: 1.4;
+  color: var(--ink-muted);
+}
+.fx-card__site {
+  margin: 0;
+  font-family: var(--F);
+  font-size: var(--fx-title);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+.fx-card__url {
+  margin: calc(var(--fx-title) * 0.3) 0 0;
+  padding-top: calc(var(--fx-title) * 0.3);
+  border-top: 2px solid var(--mustard);
+  font-family: var(--U);
+  font-size: calc(var(--fx-title) * 0.42);
+  font-weight: 600;
+}
+.fx-card__more {
+  margin: calc(var(--fx-title) * 0.6) 0 0;
+  font-family: var(--font-reading);
+  font-size: calc(var(--fx-title) * 0.36);
+  color: var(--ink-muted);
+}
+.fx-card__film span {
+  display: block;
+}
+.fx-card__film {
+  max-width: 100%;
+  margin: calc(var(--fx-title) * 0.12) 0 0;
+  font-family: var(--U);
+  font-size: calc(var(--fx-title) * 0.34);
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}

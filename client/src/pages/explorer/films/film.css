@@ -195,6 +195,68 @@
   border-color: var(--ink);
   color: var(--bone);
 }
+/* Share, under the player: copy the address; download the video if kept. */
+.fp-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin-top: var(--s-3);
+}
+.fp-share .btn {
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+}
+.fp-share__meta {
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+.fp-share__note {
+  flex-basis: 100%;
+  margin: 0;
+  min-height: 1.5em;
+  font-family: var(--U);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  overflow-wrap: anywhere;
+}
+/* Listen: the device's voice, off by default, with what it is said plainly. */
+.fp-listen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  margin-top: 12px;
+}
+.fp .fp-listen__btn {
+  padding: 0 14px;
+}
+.fp .fp-listen__btn.is-on {
+  border-color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+.fp-listen__state {
+  margin-left: 2px;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  background: var(--bone-warm);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+.fp-listen__btn.is-on .fp-listen__state {
+  background: var(--ink);
+  color: var(--bone);
+}
+.fp-listen__note {
+  margin: 0;
+  font-family: var(--U);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
 .fp-hint {
   margin: 8px 0 0;
   font-family: var(--U);
