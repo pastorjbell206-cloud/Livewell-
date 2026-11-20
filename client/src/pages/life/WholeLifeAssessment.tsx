@@ -18,10 +18,11 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import InnerHead from "@/components/art/InnerHead";
-import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { writeStoredJSON } from "@/lib/storage";
+import { copyToClipboard } from "@/lib/clipboard";
 import { SafetyCheck } from "@/components/SafetyCheck";
-import { SAVE_FAILED } from "@/components/TakeItWithYou";
+import { toolById } from "@/lib/toolsList";
+import { CheckPart, focusResultTop, ResultActions, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
 
 /* ------------------------------------------------------------------ */
 /* Data                                                                */
@@ -31,8 +32,7 @@ const SCALE = ["Never", "Rarely", "Sometimes", "Often", "Always"] as const;
 const STORAGE_KEY = "lw-whole-life";
 const RULE_KEY = "lw-whole-life-rule";
 const RULE_STORE_VERSION = 1;
-/** The answers of a check-up in progress (the livewell-progress-* pattern). */
-const PROGRESS_KEY = "livewell-progress-whole-life";
+/** The answers of a check-up in progress live under livewell-progress-whole-life: progressKey("whole-life"). */
 
 /** The check-up is annual. */
 const RETAKE_MONTHS = 12;
@@ -248,14 +248,12 @@ function isStoredProgress(x: unknown): x is StoredProgress {
 }
 
 /**
- * The saved check-up to pick up, or null. One that already reached its map is
- * picked up only if the reader had gone back in to change an answer.
+ * The saved check-up to pick up. One that already reached its map is picked
+ * up only if the reader had gone back in to change an answer. (The shell's
+ * useToolProgress reads it with this as its guard.)
  */
-function loadProgress(): StoredProgress | null {
-  const saved = readStoredJSON<StoredProgress | null>(PROGRESS_KEY, isStoredProgress, null);
-  if (!saved || Object.keys(saved.answers).length === 0) return null;
-  if (saved.screen < 0 || saved.screen >= RESULTS_SCREEN) return null;
-  return saved;
+function isPickUp(x: unknown): x is StoredProgress {
+  return isStoredProgress(x) && Object.keys(x.answers).length > 0 && x.screen >= 0 && x.screen < RESULTS_SCREEN;
 }
 
 function saveHistory(history: RunEntry[]): boolean {
@@ -475,33 +473,8 @@ function chartableRuns(history: RunEntry[]): RunEntry[] {
 /* Shared style fragments                                              */
 /* ------------------------------------------------------------------ */
 
-const wrap = { maxWidth: "740px", margin: "0 auto" } as const;
-
 const bodyText = { fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" } as const;
 const mutedText = { fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)" } as const;
-
-const primaryBtn = {
-  fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px", padding: "12px 24px", minHeight: "44px",
-  background: "var(--mustard)", color: "var(--charcoal)", border: "none", borderRadius: "var(--radius-sm)", cursor: "pointer",
-} as const;
-
-const quietBtn = {
-  fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", padding: "11px 18px", minHeight: "44px",
-  background: "transparent", color: "var(--ink-muted)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", cursor: "pointer",
-} as const;
-
-const h2Style = {
-  fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 36px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)",
-} as const;
-
-function ScoreBar({ value }: { value: number }) {
-  const pct = Math.max(0, Math.min(100, ((value - 1) / 4) * 100));
-  return (
-    <div style={{ height: "4px", background: "var(--border)", borderRadius: "2px", overflow: "hidden" }} aria-hidden="true">
-      <div style={{ height: "100%", width: `${pct}%`, background: "var(--mustard)" }} />
-    </div>
-  );
-}
 
 /* ------------------------------------------------------------------ */
 /* The long view: inline SVG, no chart library                         */
@@ -823,23 +796,31 @@ function PrintDocument({
 /* Component                                                           */
 /* ------------------------------------------------------------------ */
 
+const SCALE_OPTIONS = SCALE.map((label, i) => ({ value: String(i + 1), label }));
+
 export default function WholeLifeAssessment() {
+  const tool = toolById("whole-life");
   // -1 = intro, 0..4 = one domain per screen, 5 = results.
-  // A check-up left part-way through opens where the reader stopped.
-  const [saved] = useState(() => loadProgress());
+  // A check-up left part-way through opens where the reader stopped. The
+  // place is kept under livewell-progress-whole-life (progressKey("whole-life"),
+  // the key and shape this page has always used) through the tool shell.
+  const progress = useToolProgress<StoredProgress | null>("whole-life", (x): x is StoredProgress | null => isPickUp(x), null);
+  const [saved] = useState(() => (progress.resumed ? progress.value : null));
   const [screen, setScreen] = useState(saved?.screen ?? -1);
   const [answers, setAnswers] = useState<Record<string, number>>(saved?.answers ?? {});
   const [resumed, setResumed] = useState(saved !== null);
   const [runDate, setRunDate] = useState<string | null>(saved?.runDate ?? null);
-  const [progressFailed, setProgressFailed] = useState(false);
   const [history, setHistory] = useState<RunEntry[]>(() => loadHistory());
   const [rules, setRules] = useState<RuleEntry[]>(() => loadRules());
   const [previous, setPrevious] = useState<RunEntry | null>(null);
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState("");
   const [saveFailed, setSaveFailed] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (screen === -1) window.scrollTo(0, 0);
+    if (screen === RESULTS_SCREEN) {
+      focusResultTop("wla-result");
+    }
   }, [screen]);
 
   const scores = useMemo(() => {
@@ -849,14 +830,12 @@ export default function WholeLifeAssessment() {
   }, [answers]);
 
   const persist = (nextAnswers: Record<string, number>, nextScreen: number, nextRunDate: string | null = runDate) => {
-    setProgressFailed(
-      !writeStoredJSON(PROGRESS_KEY, {
-        answers: nextAnswers,
-        screen: nextScreen,
-        savedAt: new Date().toISOString(),
-        ...(nextRunDate ? { runDate: nextRunDate } : {}),
-      })
-    );
+    progress.set({
+      answers: nextAnswers,
+      screen: nextScreen,
+      savedAt: new Date().toISOString(),
+      ...(nextRunDate ? { runDate: nextRunDate } : {}),
+    });
   };
 
   const answer = (id: string, value: number) => {
@@ -895,7 +874,7 @@ export default function WholeLifeAssessment() {
     setRules(nextRules);
     const savedRule = saveRules(nextRules);
     setSaveFailed(!(savedRun && savedRule));
-    setCopied(false);
+    setCopied("");
     setRunDate(now);
     setResumed(false);
     persist(answers, RESULTS_SCREEN, now);
@@ -904,19 +883,18 @@ export default function WholeLifeAssessment() {
 
   /** Back into the statements with every answer still in place. */
   const changeAnswers = () => {
-    setCopied(false);
+    setCopied("");
     setScreen(0);
     persist(answers, 0);
   };
 
   const retake = () => {
-    removeStoredJSON(PROGRESS_KEY);
+    progress.clear();
     setAnswers({});
     setRunDate(null);
     setResumed(false);
-    setProgressFailed(false);
     setPrevious(null);
-    setCopied(false);
+    setCopied("");
     setScreen(-1);
   };
 
@@ -934,14 +912,9 @@ export default function WholeLifeAssessment() {
   };
 
   const copyRule = async () => {
-    const text = buildRuleText(scores);
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 2500);
-    } catch {
-      window.prompt("Copy your rule for this season:", text);
-    }
+    const ok = await copyToClipboard(buildRuleText(scores));
+    setCopied(ok ? "Copied" : "This browser would not copy it. Print it instead.");
+    window.setTimeout(() => setCopied(""), 2500);
   };
 
   /** Mark a week for one practice: unmarked -> kept -> missed -> unmarked. */
@@ -979,16 +952,14 @@ export default function WholeLifeAssessment() {
         url="https://www.livewellbyjamesbell.co/life/assessment"
       />
 
-      {/* Focus rings, the drilldown accordion, and the print sheet; everything else is inline. */}
+      {/* The week buttons' focus ring, the drilldown accordion, and the print sheet. */}
       <style>{`
-        .wla-opt input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
-        .wla-opt input:focus-visible + span{outline:2px solid var(--mustard);outline-offset:2px}
-        .wla-week:focus-visible{outline:2px solid var(--mustard);outline-offset:2px}
+        .wla-week:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
         .wla-acc > summary{list-style:none}
         .wla-acc > summary::-webkit-details-marker{display:none}
         .wla-acc > summary::after{content:"+";font-family:var(--U);font-size:16px;line-height:1;color:var(--ink-muted)}
         .wla-acc[open] > summary::after{content:"\\2212"}
-        .wla-acc > summary:focus-visible{outline:2px solid var(--mustard);outline-offset:-2px}
+        .wla-acc > summary:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
         .wla-print{display:none}
         @media print{
           nav, footer, .skip-link, .wla-screen{display:none !important}
@@ -1005,32 +976,43 @@ export default function WholeLifeAssessment() {
         }
       `}</style>
 
-      <InnerHead path="/life/assessment" className="wla-screen" title="The Whole-Life Assessment" line="Where is your life flourishing, and where has it quietly come apart? Thirty statements, once a year. One honest map." plate="compass" />
+      <div className="wla-screen">
+        <ToolHead
+          path="/life/assessment"
+          title={tool.name}
+          line="Where is your life flourishing, and where has it quietly come apart? Thirty statements, once a year. One honest map."
+          time={`About ${tool.time}, once a year`}
+          keeps="The answers of a check-up in progress, each year's map, and the rule of life it draws with the weeks you mark. All of it stays in this browser and is never sent anywhere."
+          plate="compass"
+        />
+      </div>
 
       {/* ------------------------------ Intro ------------------------------ */}
       {screen === -1 && (
-        <section className="wla-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-          <div style={wrap}>
+        <section className="wla-screen ts-band">
+          <div className="ts-col">
             {lastRun && checkupDue && (
-              <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "14px 16px", marginBottom: "var(--s-4)" }}>
-                <p style={{ ...bodyText, fontSize: "15px" }}>
+              <div className="ts-resume">
+                <p>
                   You last took this on {fmtDate(lastRun.date)}. The year is up, or close to it. Take it again and lay the new map against the old one.
                 </p>
               </div>
             )}
 
-            <p style={{ ...bodyText, marginBottom: "14px" }}>
-              This is not a scorecard, and God is not grading you. He already knows the state of every room in your house and he has not left. What this assessment offers is a map: thirty statements about an ordinary life, read honestly, showing you where things are flourishing and where they have gone quiet.
-            </p>
-            <p style={{ ...bodyText, marginBottom: "14px" }}>
-              Five domains, six statements each, about eight minutes. The inner life. The body and its rhythms. The home and its relationships. Work, money, and calling. The life you live in the world. None of these is the spiritual part of your life, because there is no spiritual part. There is one life, and all of it is where God meets you.
-            </p>
-            <p style={{ ...bodyText, marginBottom: "14px" }}>
-              It is built as an annual check-up. Once a year, the same thirty statements, and a new map to lay against the old one. Between check-ups the work is smaller and weekly: the rule of life your results draw up, one practice per domain, marked kept or missed as the weeks pass. This page keeps both, the map and the rule, and asks for neither more often than it should.
-            </p>
-            <p style={{ ...bodyText, marginBottom: "14px" }}>
-              Answer the way you would at midnight, not the way you would in a small group. Nothing leaves this browser. No account, no server, no one reading over your shoulder. Your results, and your history if you come back to it later, live on this device and nowhere else.
-            </p>
+            <div className="ts-r__prose">
+              <p>
+                This is not a scorecard, and God is not grading you. He already knows the state of every room in your house and he has not left. What this assessment offers is a map: thirty statements about an ordinary life, read honestly, showing you where things are flourishing and where they have gone quiet.
+              </p>
+              <p>
+                Five domains, six statements each, about eight minutes. The inner life. The body and its rhythms. The home and its relationships. Work, money, and calling. The life you live in the world. None of these is the spiritual part of your life, because there is no spiritual part. There is one life, and all of it is where God meets you.
+              </p>
+              <p>
+                It is built as an annual check-up. Once a year, the same thirty statements, and a new map to lay against the old one. Between check-ups the work is smaller and weekly: the rule of life your results draw up, one practice per domain, marked kept or missed as the weeks pass. This page keeps both, the map and the rule, and asks for neither more often than it should.
+              </p>
+              <p>
+                Answer the way you would at midnight, not the way you would in a small group. Nothing leaves this browser. No account, no server, no one reading over your shoulder. Your results, and your history if you come back to it later, live on this device and nowhere else.
+              </p>
+            </div>
 
             {lastRun && (
               <p style={{ ...mutedText, marginBottom: "14px" }}>
@@ -1039,41 +1021,50 @@ export default function WholeLifeAssessment() {
             )}
 
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
-              <button onClick={() => goTo(0)} style={primaryBtn}>{Object.keys(answers).length > 0 ? "Go on with the assessment" : "Begin the assessment"}</button>
+              <button type="button" className="btn" onClick={() => goTo(0)}>
+                {Object.keys(answers).length > 0 ? "Go on with the assessment" : "Begin the assessment"}
+              </button>
               {(history.length > 0 || rules.length > 0) && (
-                <button onClick={clearHistory} style={quietBtn}>Clear history</button>
+                <button type="button" className="btn btn--quiet" onClick={clearHistory}>
+                  Clear history
+                </button>
               )}
             </div>
 
             {/* The living rule: what the last check-up handed back, kept weekly. */}
             {activeRule && (
               <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)" }}>
-                <div className="eyebrow" style={{ marginBottom: "10px" }}>The living rule</div>
-                <h2 style={{ ...h2Style, marginBottom: "12px" }}>Your rule for this season</h2>
-                <p style={{ ...bodyText, marginBottom: "var(--s-3)", maxWidth: "62ch" }}>
-                  Drawn {fmtDate(activeRule.date) || "from your last check-up"}, the lowest rooms first. The assessment is annual. The rule is weekly, and the weeks are where it lives or does not.
-                </p>
-                {ruleStale && (
-                  <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "12px 16px", marginBottom: "var(--s-3)" }}>
-                    <p style={{ ...bodyText, fontSize: "15px" }}>
-                      This rule was drawn for a season, and the season has turned. Keep whatever took root, and when you are ready, retake the assessment and draw the next one.
+                <ResultSection title="Your rule for this season">
+                  <div className="ts-r__prose">
+                    <p>
+                      Drawn {fmtDate(activeRule.date) || "from your last check-up"}, the lowest rooms first. The assessment is annual. The rule is weekly, and the weeks are where it lives or does not.
                     </p>
                   </div>
-                )}
-                <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
-                  <RuleCheckIns rule={activeRule} onToggle={toggleCheck} />
-                </div>
-                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
-                  <button onClick={() => window.print()} style={quietBtn}>Print your rule</button>
-                </div>
+                  {ruleStale && (
+                    <div className="ts-resume">
+                      <p>
+                        This rule was drawn for a season, and the season has turned. Keep whatever took root, and when you are ready, retake the assessment and draw the next one.
+                      </p>
+                    </div>
+                  )}
+                  <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-3)" }}>
+                    <RuleCheckIns rule={activeRule} onToggle={toggleCheck} />
+                  </div>
+                  <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
+                    <button type="button" className="btn btn--quiet ts-actions__btn" onClick={() => window.print()}>
+                      Print your rule
+                    </button>
+                  </div>
+                </ResultSection>
               </div>
             )}
 
             {/* The long view, for anyone with two or more years behind them. */}
             {runs.length >= 2 && (
-              <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)" }}>
-                <div className="eyebrow" style={{ marginBottom: "10px" }}>The long view</div>
-                <TrendView runs={runs} />
+              <div style={{ marginTop: "var(--s-4)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-4)" }}>
+                <ResultSection title="The long view">
+                  <TrendView runs={runs} />
+                </ResultSection>
               </div>
             )}
           </div>
@@ -1083,105 +1074,39 @@ export default function WholeLifeAssessment() {
       {/* --------------------------- Domain screens --------------------------- */}
       {screen >= 0 && screen < RESULTS_SCREEN && (() => {
         const domain = DOMAINS[screen];
-        const answeredHere = domain.statements.filter((s) => answers[s.id]).length;
-        const complete = answeredHere === domain.statements.length;
         const isLast = screen === RESULTS_SCREEN - 1;
         const answeredTotal = DOMAINS.flatMap((d) => d.statements).filter((s) => answers[s.id]).length;
 
         return (
-          <section className="wla-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-            <div style={wrap}>
-              {/* Progress dots across domains */}
-              <div style={{ marginBottom: "var(--s-4)" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "10px" }}>
-                  <span className="eyebrow">Domain {screen + 1} of {DOMAINS.length}</span>
-                  <span style={{ ...mutedText, fontSize: "12px" }}>{answeredTotal} of {TOTAL_STATEMENTS} answered</span>
-                </div>
-                <div style={{ display: "flex", gap: "10px", alignItems: "center" }} aria-hidden="true">
-                  {DOMAINS.map((d, i) => (
-                    <span
-                      key={d.id}
-                      style={{
-                        width: "10px", height: "10px", borderRadius: "50%",
-                        background: i < screen ? "var(--mustard)" : i === screen ? "var(--mustard-text)" : "transparent",
-                        border: "1px solid " + (i <= screen ? "var(--mustard)" : "var(--border)"),
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-
+          <section className="wla-screen ts-band" aria-label="The thirty statements">
+            <div className="ts-col">
               {resumed && (
-                <div role="status" style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "14px 16px", marginBottom: "var(--s-4)", display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between" }}>
-                  <p style={{ ...bodyText, fontSize: "15px", margin: 0 }}>
-                    Your answers so far were kept on this device, so you can go on from where you stopped.
-                  </p>
-                  <button onClick={retake} style={quietBtn}>Start over</button>
+                <div className="ts-resume" role="status">
+                  <p>Your answers so far were kept on this device, so you can go on from where you stopped.</p>
+                  <button type="button" className="btn btn--quiet ts-actions__btn" onClick={retake}>
+                    Start over
+                  </button>
                 </div>
               )}
-              {progressFailed && (
-                <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
-                  {SAVE_FAILED}
-                </p>
-              )}
-
-              <h2 style={{ ...h2Style, marginBottom: "6px" }}>{domain.name}</h2>
-              <p style={{ ...mutedText, fontSize: "15px", marginBottom: "var(--s-4)" }}>{domain.framing}</p>
-
-              {domain.statements.map((s, n) => (
-                <div key={s.id} style={{ marginBottom: "var(--s-4)", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
-                  <p style={{ ...bodyText, marginBottom: "12px" }}>
-                    <span style={{ color: "var(--mustard-text)", fontFamily: "var(--U)", fontWeight: 600 }}>{n + 1}. </span>
-                    {s.text}
-                  </p>
-                  <div role="radiogroup" aria-label={s.text} style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-                    {SCALE.map((label, si) => {
-                      const val = si + 1;
-                      const on = answers[s.id] === val;
-                      return (
-                        <label key={val} className="wla-opt" style={{ flex: "1 1 0", minWidth: "88px", position: "relative", cursor: "pointer" }}>
-                          <input
-                            type="radio"
-                            name={s.id}
-                            value={val}
-                            checked={on}
-                            aria-label={label}
-                            onChange={() => answer(s.id, val)}
-                          />
-                          <span style={{
-                            display: "flex", alignItems: "center", justifyContent: "center", minHeight: "44px",
-                            fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px", lineHeight: 1.3, padding: "8px 6px",
-                            borderRadius: "var(--radius-sm)",
-                            border: "1px solid " + (on ? "var(--mustard)" : "var(--border)"),
-                            background: on ? "var(--mustard)" : "var(--card)",
-                            color: on ? "var(--charcoal)" : "var(--ink-muted)",
-                          }}>{label}</span>
-                        </label>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
-
-              <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
-                <button onClick={() => goTo(screen - 1)} style={quietBtn}>
-                  {screen === 0 ? "Back to the introduction" : "Back"}
-                </button>
-                <button
-                  disabled={!complete}
-                  onClick={() => (isLast ? finish() : goTo(screen + 1))}
-                  style={{
-                    ...primaryBtn,
-                    background: complete ? "var(--mustard)" : "var(--border)",
-                    color: complete ? "var(--charcoal)" : "var(--ink-muted)",
-                    cursor: complete ? "pointer" : "not-allowed",
-                  }}
-                >
-                  {!complete
-                    ? `Answer all ${domain.statements.length} (${answeredHere} done)`
-                    : isLast ? "See the map" : "Continue"}
-                </button>
-              </div>
+              <CheckPart
+                step={screen + 1}
+                total={DOMAINS.length}
+                unit="Domain"
+                answered={answeredTotal}
+                questions={TOTAL_STATEMENTS}
+                title={domain.name}
+                line={domain.framing}
+                statements={domain.statements.map((s) => ({ id: s.id, text: s.text }))}
+                options={SCALE_OPTIONS}
+                value={(id) => (answers[id] ? String(answers[id]) : null)}
+                onAnswer={(id, v) => answer(id, Number(v))}
+                onBack={() => goTo(screen - 1)}
+                backLabel={screen === 0 ? "Back to the introduction" : "Back"}
+                onNext={() => (isLast ? finish() : goTo(screen + 1))}
+                nextLabel={isLast ? "See the map" : "Continue"}
+                saveFailed={progress.saveFailed}
+                focusOnMount={!(saved !== null && screen === saved.screen)}
+              />
             </div>
           </section>
         );
@@ -1194,124 +1119,92 @@ export default function WholeLifeAssessment() {
         const innerLow = (scores["inner"] ?? 5) < 3;
 
         return (
-          <>
-            {/* Verdict */}
-            <section className="wla-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
-              <div style={wrap}>
-                <SafetyCheck />
-                <div style={{ background: "var(--charcoal)", color: "var(--bone)", borderRadius: "var(--radius-sm)", padding: "var(--s-5)", borderTop: "3px solid var(--mustard)" }}>
-                  <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>What the map says</div>
-                  <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 500, lineHeight: 1.45, color: "var(--bone)" }}>
-                    {verdictFor(scores)}
-                  </p>
-                </div>
-                {saveFailed && (
-                  <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "10px 0 0" }}>
-                    {SAVE_FAILED}
-                  </p>
-                )}
+          <section className="wla-screen ts-band">
+            <div className="ts-col">
+              <SafetyCheck />
 
-                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "var(--s-3)" }}>
-                  <button onClick={() => window.print()} style={quietBtn}>Print your results</button>
-                  <button onClick={changeAnswers} style={quietBtn}>Change my answers</button>
-                  <button onClick={retake} style={quietBtn}>Retake the assessment</button>
-                  {history.length > 0 && <button onClick={clearHistory} style={quietBtn}>Clear history</button>}
-                </div>
+              <ResultReading id="wla-result" title="What the map says">
+                <p className="ts-r__lead">{verdictFor(scores)}</p>
+              </ResultReading>
+              {saveFailed && <p className="ts-save-failed">{SAVE_FAILED}</p>}
+              {previous && (
+                <p className="ts-r__more">
+                  Compared against your last run on {new Date(previous.date).toLocaleDateString()}.
+                </p>
+              )}
+              <p className="ts-r__more" style={{ marginBottom: "var(--s-4)" }}>
+                Your next check-up is due {fmtDate(nextDue) || "a year from now"}. A year is long enough for a life to drift, and short enough to catch it.
+              </p>
+
+              {/* Mental health guardrail */}
+              {innerLow && (
+                <aside className="ts-help" aria-label="A word about the inner life" style={{ marginBottom: "var(--s-4)" }}>
+                  <p>
+                    One more word before the map, and it is not a footnote. Your inner life scored low, and when the inside of a life has felt heavy for a long stretch, that weight can be depression or anxiety. Those are medical realities, not spiritual failures, and they do not respond to trying harder. Seeing a doctor or a licensed counselor is wisdom, not weakness. The God who heals through prayer also heals through good medicine and good people, and he is not less present in a waiting room.
+                  </p>
+                  <p>
+                    And if you are in crisis right now, set this page down and call or text 988. You are worth that call.
+                  </p>
+                </aside>
+              )}
+
+              <ResultSection title="The map">
+                <ScoreChart
+                  caption="Five domains, one life. Each from 1 to 5; the lowest is marked as the place to start."
+                  max={4}
+                  rows={DOMAINS.map((d) => ({ label: d.name, value: scores[d.id] - 1, start: d.id === ordered[0].id, valueText: `${scores[d.id].toFixed(1)} / 5` }))}
+                />
                 {previous && (
-                  <p style={{ ...mutedText, fontSize: "13px", marginTop: "12px" }}>
-                    Compared against your last run on {new Date(previous.date).toLocaleDateString()}.
-                  </p>
+                  <ul className="ts-r__more" style={{ paddingLeft: "1.2em" }}>
+                    {DOMAINS.map((d) => {
+                      const delta = formatDelta(previous.scores[d.id], scores[d.id]);
+                      return delta ? (
+                        <li key={d.id}>
+                          {d.name}: {delta}
+                        </li>
+                      ) : null;
+                    })}
+                  </ul>
                 )}
-                <p style={{ ...mutedText, fontSize: "13px", marginTop: previous ? "4px" : "12px" }}>
-                  Your next check-up is due {fmtDate(nextDue) || "a year from now"}. A year is long enough for a life to drift, and short enough to catch it.
-                </p>
-              </div>
-            </section>
+              </ResultSection>
 
-            {/* The five domains */}
-            <section className="wla-screen" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
-              <div style={wrap}>
-                <div className="eyebrow" style={{ marginBottom: "10px" }}>Five domains, one life</div>
-                <h2 style={{ ...h2Style, marginBottom: "var(--s-4)" }}>
-                  The map
-                </h2>
-                {DOMAINS.map((d) => {
-                  const delta = formatDelta(previous?.scores[d.id], scores[d.id]);
-                  return (
-                    <div key={d.id} style={{ marginBottom: "var(--s-3)" }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "6px" }}>
-                        <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}>{d.name}</span>
-                        <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", color: "var(--ink-muted)" }}>{scores[d.id].toFixed(1)} / 5</span>
-                      </div>
-                      <ScoreBar value={scores[d.id]} />
-                      {delta && <p style={{ ...mutedText, fontSize: "12px", marginTop: "5px" }}>{delta}</p>}
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-
-            {/* Mental health guardrail */}
-            {innerLow && (
-              <section className="wla-screen" style={{ background: "var(--bone)", padding: "var(--s-4) var(--s-4) 0" }}>
-                <div style={wrap}>
-                  <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
-                    <p style={{ ...bodyText, marginBottom: "10px" }}>
-                      One more word before the map, and it is not a footnote. Your inner life scored low, and when the inside of a life has felt heavy for a long stretch, that weight can be depression or anxiety. Those are medical realities, not spiritual failures, and they do not respond to trying harder. Seeing a doctor or a licensed counselor is wisdom, not weakness. The God who heals through prayer also heals through good medicine and good people, and he is not less present in a waiting room.
-                    </p>
-                    <p style={{ ...bodyText }}>
-                      And if you are in crisis right now, set this page down and call or text 988. You are worth that call.
-                    </p>
-                  </div>
+              {/* Where to begin */}
+              <ResultSection title="Where to begin">
+                <div className="ts-r__prose">
+                  <p>
+                    Not where you are worst. Where the door is. These two domains scored lowest, which makes them the place to start, not the evidence against you.
+                  </p>
                 </div>
-              </section>
-            )}
-
-            {/* Where to begin */}
-            <section className="wla-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
-              <div style={wrap}>
-                <div className="eyebrow" style={{ marginBottom: "10px" }}>The lowest two domains</div>
-                <h2 style={{ ...h2Style, marginBottom: "12px" }}>
-                  Where to begin
-                </h2>
-                <p style={{ ...bodyText, marginBottom: "var(--s-4)", maxWidth: "62ch" }}>
-                  Not where you are worst. Where the door is. These two domains scored lowest, which makes them the place to start, not the evidence against you.
-                </p>
-
                 {lowestTwo.map((d) => (
-                  <div key={d.id} style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", marginBottom: "var(--s-3)" }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "10px" }}>
-                      <h3 style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)" }}>{d.name}</h3>
-                      <span style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", color: "var(--ink-muted)" }}>{scores[d.id].toFixed(1)} / 5</span>
+                  <article key={d.id} className="ts-area" aria-labelledby={`wla-${d.id}`}>
+                    <div className="ts-area__head">
+                      <h3 className="ts-area__name" id={`wla-${d.id}`}>
+                        {d.name}
+                      </h3>
+                      <span className="ts-area__level">{scores[d.id].toFixed(1)} / 5</span>
                     </div>
-                    <p style={{ ...bodyText, marginBottom: "var(--s-3)" }}>{d.meaning}</p>
-
-                    <div className="eyebrow" style={{ marginBottom: "8px" }}>Start this week</div>
-                    <p style={{ ...bodyText, fontSize: "15px", marginBottom: "var(--s-3)" }}>{d.practices[0]}</p>
-
-                    <div className="eyebrow" style={{ marginBottom: "8px" }}>Reading</div>
+                    <p>{d.meaning}</p>
+                    <h4 className="ts-area__label">Start this week</h4>
+                    <p>{d.practices[0]}</p>
+                    <h4 className="ts-area__label">Reading</h4>
                     {d.books.map((b, i) => (
-                      <p key={i} style={{ ...bodyText, fontSize: "15px", marginBottom: "4px" }}>
-                        <em>{b.title}</em><span style={{ color: "var(--ink-muted)" }}>, {b.author}</span>
+                      <p key={i} style={{ marginBottom: "4px" }}>
+                        <em>{b.title}</em>
+                        <span style={{ color: "var(--ink-muted)" }}>, {b.author}</span>
                       </p>
                     ))}
-                  </div>
+                  </article>
                 ))}
-              </div>
-            </section>
+              </ResultSection>
 
-            {/* A rule for this season */}
-            <section className="wla-screen" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4)" }}>
-              <div style={wrap}>
-                <div className="eyebrow" style={{ marginBottom: "10px" }}>One practice per domain</div>
-                <h2 style={{ ...h2Style, marginBottom: "12px" }}>
-                  A rule for this season
-                </h2>
-                <p style={{ ...bodyText, marginBottom: "var(--s-4)", maxWidth: "62ch" }}>
-                  A rule of life is not a regimen. It is a trellis, something for a life to grow along. Here is a simple one drawn from your map, the lowest domains first because that is where the tending starts. Keep it imperfectly. Keep it anyway. Under each practice sits the week now in front of you: mark it kept or missed as it passes, and when you come back to this page, the weeks will be waiting.
-                </p>
-
-                <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", marginBottom: "var(--s-3)" }}>
+              {/* A rule for this season */}
+              <ResultSection title="A rule for this season">
+                <div className="ts-r__prose">
+                  <p>
+                    A rule of life is not a regimen. It is a trellis, something for a life to grow along. Here is a simple one drawn from your map, the lowest domains first because that is where the tending starts. Keep it imperfectly. Keep it anyway. Under each practice sits the week now in front of you: mark it kept or missed as it passes, and when you come back to this page, the weeks will be waiting.
+                  </p>
+                </div>
+                <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-3)", marginBottom: "var(--s-3)" }}>
                   {activeRule ? (
                     <RuleCheckIns rule={activeRule} onToggle={toggleCheck} />
                   ) : (
@@ -1322,63 +1215,66 @@ export default function WholeLifeAssessment() {
                       </div>
                     ))
                   )}
-                  <button onClick={copyRule} aria-live="polite" style={{ ...primaryBtn, marginTop: "var(--s-3)" }}>{copied ? "Copied" : "Copy this rule"}</button>
+                  <button type="button" className="btn btn--quiet ts-actions__btn no-print" onClick={copyRule} aria-live="polite" style={{ marginTop: "var(--s-3)" }}>
+                    {copied || "Copy this rule"}
+                  </button>
                 </div>
-
-                <p style={{ ...mutedText, fontStyle: "italic", marginTop: "var(--s-4)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-3)" }}>
+                <p style={{ ...mutedText, fontStyle: "italic" }}>
                   Nothing here was sent anywhere. Come back to this page and it will remember: the rule week by week, the map year by year.
                 </p>
+              </ResultSection>
 
-                {/* Eight-week plan CTA */}
-                <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderTop: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)", marginTop: "var(--s-4)" }}>
-                  <div className="eyebrow" style={{ marginBottom: "8px" }}>Your next step</div>
-                  <p style={{ ...bodyText, marginBottom: "var(--s-3)", maxWidth: "62ch" }}>
-                    The rule names the practices. The eight-week plan walks them with you, one week at a time.
-                  </p>
-                  <Link
-                    href="/plans/whole-life"
-                    style={{ ...primaryBtn, display: "inline-flex", alignItems: "center", justifyContent: "center", textDecoration: "none" }}
-                  >
-                    Start the eight-week plan
-                  </Link>
+              <ResultSection title="Your next step">
+                <div className="ts-r__prose">
+                  <p>The rule names the practices. The eight-week plan walks them with you, one week at a time.</p>
                 </div>
-              </div>
-            </section>
+                <Link href="/plans/whole-life" className="btn">
+                  Start the eight-week plan
+                </Link>
+              </ResultSection>
 
-            {/* Statement by statement */}
-            <section className="wla-screen" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
-              <div style={wrap}>
-                <div className="eyebrow" style={{ marginBottom: "10px" }}>The arithmetic</div>
-                <h2 style={{ ...h2Style, marginBottom: "12px" }}>
-                  Statement by statement
-                </h2>
-                <p style={{ ...bodyText, marginBottom: "var(--s-4)", maxWidth: "62ch" }}>
-                  No oracle produced the map above. It is your own answers, added together, and every score traces back to something you said. Open a domain and see.
-                </p>
+              {/* Statement by statement */}
+              <ResultSection title="Statement by statement">
+                <div className="ts-r__prose">
+                  <p>
+                    No oracle produced the map above. It is your own answers, added together, and every score traces back to something you said. Open a domain and see.
+                  </p>
+                </div>
                 <AnswerDrilldown answers={answers} scores={scores} />
-                <p style={{ ...mutedText, fontSize: "13px", marginTop: "12px", maxWidth: "62ch" }}>
+                <p className="ts-r__more">
                   Reverse-scored statements count the other way. On those, the more often, the heavier the finding.
                 </p>
-              </div>
-            </section>
+              </ResultSection>
 
-            {/* The long view */}
-            <section className="wla-screen" style={{ background: "var(--bone-warm)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-              <div style={wrap}>
-                <div className="eyebrow" style={{ marginBottom: "10px" }}>The long view</div>
-                <h2 style={{ ...h2Style, marginBottom: "12px" }}>
-                  Year over year
-                </h2>
+              {/* The long view */}
+              <ResultSection title="Year over year">
                 {runs.length >= 2 ? (
                   <TrendView runs={runs} />
                 ) : (
-                  <p style={{ ...bodyText, maxWidth: "62ch" }}>
-                    One check-up is a point, not a line. The line begins the second time you take this, and the second one is due {fmtDate(nextDue) || "a year from now"}. Come back then. This browser will remember.
-                  </p>
+                  <div className="ts-r__prose">
+                    <p>
+                      One check-up is a point, not a line. The line begins the second time you take this, and the second one is due {fmtDate(nextDue) || "a year from now"}. Come back then. This browser will remember.
+                    </p>
+                  </div>
                 )}
-              </div>
-            </section>
-          </>
+              </ResultSection>
+
+              <ResultActions
+                title={tool.name}
+                kind="Self-check"
+                onChange={changeAnswers}
+                onStartOver={retake}
+                startOverClears="the answers of this check-up (your maps and your rule stay)"
+              />
+              {history.length > 0 && (
+                <p className="ts-r__more no-print">
+                  <button type="button" className="btn--text" onClick={clearHistory}>
+                    Clear history
+                  </button>
+                </p>
+              )}
+            </div>
+          </section>
         );
       })()}
 

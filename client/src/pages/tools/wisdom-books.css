@@ -1,0 +1,56 @@
+/* The Wisdom Books Explorer (/tools/wisdom-books). Tokens only. On the
+ * shell's bands and columns; these are its own parts: the chapter picker,
+ * a chapter's verses under the Study Bible's outline, a theme's verses that
+ * open to the verses around them, the lines kept, the teaching panel. */
+.wb-view{scroll-margin-top:64px}
+.wb-kicker{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:0 0 6px}
+.wb-source{font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:-6px 0 var(--s-3)}
+.wb-chapters{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:8px}
+.wb-chapters__btn{position:relative;width:100%;min-height:48px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--U);font-size:16px;font-weight:600;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer}
+.wb-chapters__btn:hover{border-color:var(--borderdk)}
+.wb-chapters__btn[aria-pressed="true"]{background:var(--ink);color:var(--bone);border-color:var(--ink);box-shadow:inset 0 -2px 0 var(--mustard)}
+.wb-chapters__btn:focus-visible,.wb-chip:focus-visible,.wb-keep:focus-visible,.wb-tverse__ref:focus-visible,.wb-kept__drop:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.wb-chapters__read{position:absolute;top:4px;right:4px;color:var(--ink-muted)}
+.wb-chapters__btn[aria-pressed="true"] .wb-chapters__read{color:var(--bone)}
+.wb-sec{margin:var(--s-3) 0 0}
+.wb-sec__title{font-family:var(--F);font-size:clamp(1.25rem,1.15rem + .4vw,1.45rem);font-weight:500;line-height:1.3;color:var(--ink);margin:0 0 8px}
+.wb-sec__range{font-family:var(--U);font-size:13px;font-weight:500;color:var(--ink-muted);margin-left:6px}
+.wb-verses,.wb-tverses{list-style:none;margin:0;padding:0}
+.wb-verse{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:0 10px;padding:12px 0;border-top:1px solid var(--border)}
+.wb-verse__n{font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink-muted);padding-top:.35em}
+.wb-verse__text,.wb-tverse__text{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 8px;max-width:var(--w-read)}
+.wb-verse__tools{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.wb-chip,.wb-keep{display:inline-flex;align-items:center;gap:5px;min-height:32px;padding:4px 10px;font-family:var(--U);font-size:13px;font-weight:500;line-height:1.2;color:var(--ink);background:var(--bone-warm);border:1px solid var(--border);border-radius:var(--radius-pill);cursor:pointer}
+.wb-chip:hover,.wb-keep:hover{border-color:var(--borderdk)}
+.wb-keep{background:transparent;color:var(--ink-muted)}
+.wb-keep[aria-pressed="true"]{color:var(--ink);border-color:var(--ink)}
+@media (pointer:coarse){.wb-chip,.wb-keep{min-height:40px}}
+.wb-tverse{padding:14px 0;border-top:1px solid var(--border)}
+.wb-tverse__ref{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;min-height:40px;padding:0;font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);background:none;border:0;cursor:pointer;text-align:left}
+.wb-tverse__hint{font-size:13px;font-weight:500;color:var(--ink-muted);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wb-around{margin:0 0 10px;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);max-width:var(--w-read)}
+.wb-around__list{list-style:none;margin:0 0 8px;padding:0}
+.wb-around__list li{font-family:var(--font-reading);font-size:calc(var(--fs-read) - 2px);line-height:1.55;color:var(--ink-muted);margin:0 0 6px}
+.wb-around__list li[aria-current]{color:var(--ink);font-weight:600}
+.wb-around__links{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0}
+.wb-note{margin:0 0 var(--s-3);padding:14px 18px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--mustard);border-radius:var(--radius-sm);max-width:var(--w-read)}
+.wb-note__kicker{font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink-muted);margin:0 0 6px}
+.wb-note p:last-child{font-family:var(--font-reading);font-size:calc(var(--fs-read) - 1px);line-height:var(--lh-read);color:var(--ink);margin:0}
+.wb-done{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;margin:var(--s-3) 0 0;padding-top:var(--s-2);border-top:1px solid var(--border)}
+.wb-done__label{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);cursor:pointer}
+.wb-done__label input{width:20px;height:20px;accent-color:var(--ink)}
+.wb-kept{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.wb-kept blockquote{margin:0;padding-left:16px;border-left:3px solid var(--mustard)}
+.wb-kept blockquote p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);font-style:italic;color:var(--ink);margin:0}
+.wb-kept__ref{display:flex;align-items:center;gap:8px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink-muted);margin:6px 0 0 19px}
+.wb-kept__drop{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;color:var(--ink-muted);background:none;border:1px solid transparent;border-radius:var(--radius-pill);cursor:pointer}
+.wb-kept__drop:hover{border-color:var(--border)}
+.wb-pair{display:grid;gap:4px 24px;margin:var(--s-2) 0}
+@media (min-width:720px){.wb-pair{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.wb-pair .wb-kept__ref{margin-left:0}
+@media print{
+  .wb-pick,.wb-teach,.wb-verse__tools,.wb-tverse__hint,.wb-done input,.wb-kept__drop{display:none !important}
+  .wb-verse{padding:3pt 0}
+  .wb-verse__text,.wb-tverse__text{font-size:10.5pt;line-height:1.4;margin:0}
+  .wb-around{display:none !important}
+}
