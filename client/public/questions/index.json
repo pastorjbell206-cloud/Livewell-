@@ -401,6 +401,13 @@
           "blurb": "Genesis 22 read closely, Kant's objection at full strength, the Akedah as Jewish prayer remembers it, the law's and the prophets' horror of child sacrifice, what the story does and doesn't teach, and why it is never a model for harming anyone.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "what-archaeology-shows",
+          "question": "Archaeologists have found no trace of the exodus, a Jericho without walls, and little sign of a great kingdom under David and Solomon. Does archaeology confirm the Old Testament, or undermine it?",
+          "blurb": "The house of David at Tel Dan, Omri on Mesha's stone, Ahab and Jehu in Assyria's records, Sennacherib's prism and Hezekiah's tunnel quoted from an older translation, the debate over David and Solomon, and the limits of archaeology in both directions.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1538,6 +1545,16 @@
       "area": "old-testament",
       "slug": "abraham-and-isaac",
       "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
+      "live": false
+    },
+    {
+      "claim": "Tenth-century Judah was a thinly settled highland chiefdom, and the Bible's picture of a kingdom under David and Solomon was magnified later",
+      "proponent": "Israel Finkelstein and Neil Asher Silberman",
+      "work": "David and Solomon",
+      "year": 2006,
+      "area": "old-testament",
+      "slug": "what-archaeology-shows",
+      "question": "Archaeologists have found no trace of the exodus, a Jericho without walls, and little sign of a great kingdom under David and Solomon. Does archaeology confirm the Old Testament, or undermine it?",
       "live": false
     },
     {
