@@ -6350,3 +6350,125 @@ deleted, no lh-*.json.
 ### Next
 
 1 Corinthians 9 in plain words, then 10 to 16.
+
+## Continuation: 1 Corinthians 9 to 16 (2026-11-20)
+
+1 Corinthians 9 to 16 in plain words, which completes the book. Data only: one
+`plain/<n>.json` per chapter and `"plain": true` added to each chapter note (no
+other change to those files). The book page was not edited. No code changed. One
+commit per chapter, with its ledger rows.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 9 | 4 (‘Am I not free?’ the right to be supported; ‘I would rather die’: the gospel free of charge; ‘all things to all people’; the race and the prize) | 3,131 |
+| 10 | 4 (‘and that rock was Christ’; warnings for us, and a way out; the table of the Lord and the table of demons; ‘do it all to the glory of God’) | 2,946 |
+| 11 | 5 (heads and coverings; ‘nor is man independent of woman’; ‘it is not the Lord's Supper you eat’; ‘This is My body, which is for you’; ‘in an unworthy manner’ and ‘wait for one another’) | 4,166 |
+| 12 | 5 (‘Jesus is Lord’; different gifts, the same Spirit; one body in one Spirit; many parts and honour for the weaker; ‘now you are the body of Christ’) | 2,829 |
+| 13 | 3 (‘but have not love’; ‘love is patient, love is kind’; ‘when the perfect comes’) | 1,920 |
+| 14 | 6 (prophecy; ‘five coherent words’; ‘God is truly among you’; order; ‘women are to be silent in the churches’; ‘do not forbid speaking in tongues’) | 3,525 |
+| 15 | 6 (‘of first importance’; ‘if Christ has not been raised’; firstfruits and ‘God all in all’; baptized for the dead; the seed and the body; ‘where, O Death, is your sting?’) | 4,506 |
+| 16 | 4 (the collection; travel plans, Timothy and Apollos; ‘do everything in love’; ‘Come, O Lord’) | 2,262 |
+| Total, 9 to 16 | 37 | 25,285 |
+| **Whole book, 1 to 16** | **69** | **49,029** |
+
+Passages without a `hard` part: 9:13-18, 10:23-33, 11:17-22, 12:1-3, 12:14-26,
+13:1-3, 14:1-5, 14:20-25, 14:26-33, 15:1-11, 16:5-12, 16:13-18. Every Old
+Testament quotation is named by book and verse and read in its setting; where
+Paul's wording differs from the BSB's Old Testament (Isaiah 28:11 at 14:21,
+Isaiah 25:8 and Hosea 13:14 at 15:54-55), the note says so without naming a Greek
+version it could not check. The book ends with one line pointing to 2 Corinthians.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on 1 Corinthians 9" to "16". 19
+web searches: 9: 1 (Isthmian crown); 10: 2 (the travelling well; the cup of
+blessing); 11: 6 (capite velato; Roman women's covering; the Catholic codes of
+1917 and 1983; Amish, Mennonite and Brethren covering; the Catechism and the
+Orthodox on the Eucharist; Westminster 29.7); 12: 1 (Livy's fable); 13: 1
+(ancient mirrors); 14: 1 (14:34-35 in the manuscripts); 15: 2 (Latter-day Saint
+practice; Menander); 16: 1 (marana tha). Reused: the Acts 2 views on tongues and
+baptism, the Acts 8 Spirit-baptism readings, the Acts 18 and Romans 16
+complementarian and egalitarian sentences, the Romans 5 and 11 readings of "all",
+the Romans 8 perseverance views, the Genesis 16 safety lines, the Genesis 14
+tithe views, the Acts 20 first-day note, the Matthew 26 and Luke 22 Supper views
+(extended), the Honest Answer and apol-ledger on the date of 15:3-7, the
+whon-ledger (Philo), the wrom-ledger (dining rooms, temple meals, P.Oxy. 110).
+Greek checks over the repository's text (exousia, kerdainō, adokimos,
+hypōpiazō, oikonomia, the 10:9 and 13:3 and 14:38 readings, koinōnia, exousia
+at 11:10, anti at 11:15, anaxiōs, diakrinō, kybernēsis, aschēmoneō, barbaros,
+psychikos and pneumatikos, marana tha).
+
+### Cut or narrowed
+
+Cut: training months of athletes; Corinthian bronze as famous; the Augustus
+statue by name; Bruce Winter, Gordon Fee, N. T. Wright and Dale Martin by name;
+the Delphic priestess and the cults of Dionysus and Cybele; Stoic writers on the
+body; Plato's Symposium and agapē's rarity; the rabbinic use of Psalm 24:1;
+Orthodox women's covering; the Lutheran teaching that the unworthy also receive;
+Theodotion and the Septuagint at 15:54; the weight of women's testimony;
+Chrysostom on the Marcionites; winter sailing; the Didache's setting for marana
+tha. Narrowed: the travelling well "later Jewish writings", "debated"; the cup of
+blessing "may echo", date not given; the Western placement of 14:34-35 without
+manuscript names or dates; kybernēsis "related to" the pilot's word; the
+creed's date as "many date it within a few years".
+
+### Contested matters, and how they are stated
+
+Paying ministers (no rule beyond the text; nothing licensing demands; nothing
+against paid pastors); ‘all things to all people’ (limits stated from Galatians
+2); ‘disqualified’ (Reformed and Baptist; Wesleyan, Arminian and Catholic; no
+side); ‘that rock was Christ’ (presence or type); 10:13 (not about suffering:
+stated plainly); demons; kephalē (authority, source, prominence); covering today
+(continuing practice; principle in a cultural form; hair); ‘because of the
+angels’ (uncertain); complementarian and egalitarian (Acts 18 form, at 11:2-16
+and 14:34-35); the Lord's Supper (Catholic, Orthodox, Lutheran, Reformed,
+memorial, each in its own terms); 11:27-30 (not softened; no reading of illness
+today as punishment); who may come to the table (one sentence); gifts today
+(pointer to Acts 2); Spirit baptism at 12:13; apostles today; 12:31; tongues
+(languages or a prayer language); ‘the perfect’; 14:34-35 (six readings and the
+manuscript fact); ‘do not forbid tongues’; ‘all’ and ‘all in all’ (universalist
+and other readings; what the creeds bind); 15:29 (unknown; Latter-day Saint
+practice in its holders' terms); ‘spiritual body’ (not non-physical: stated
+plainly); the tithe (pointer to Genesis 14); 16:22 (a handing over to God, not a
+licence). The resurrection (15) is stated as the church's confession, not a view.
+
+### Care lines
+
+10:6-13 (the overwhelmed: not weak, not alone, pastor, friend, doctor,
+counsellor, Find Help, help now for anyone thinking of ending their life);
+11:27-34 (the scrupulous reader afraid of the table; John 6:37; illness not to
+be read as punishment); 13:4-7 (abuse: the Genesis 16 safety lines word for
+word, Find Help, a record of harm is not a failure of love); 15:50-58 (the
+grieving; Find Help); 9:24-27 (afraid of being disqualified). 11:2-16 and
+14:34-35 each say nothing permits demeaning women; 11:2-16 that no church should
+despise another over covering. No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs 1-corinthians`, exit 0; every passage printed field by
+field, all 37 under their right headings. Strict check over all sixteen
+chapters at the end: 0 problems. After merging the latest
+`claude/todo-implementation-hhp4bm`, one at a time: all 40 content-gate commands
+of ci.yml, exit 0 each (validate-bible-notes: 349 chapters in plain words;
+search index 741 entries up to date; passage index 623 files match;
+verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`: exit 0, 152
+files passed, 7 skipped; 1,779 tests passed, 73 skipped. `pnpm build`,
+`pnpm run sitemap`, `pnpm run prerender` (3,056 pages), `pnpm run
+audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (only other agents'
+4620 and 4631 listening in 4600 to 4699, before and after) and checked with
+Playwright at 390 wide, deviceScaleFactor 1, /api/trpc, /api/track and /_vercel
+stubbed. All sixteen chapters: every passage heading, its part headings in order
+and the first 60 characters under each matched the data: 69 passages, 320
+fields (9: 19; 10: 19; 11: 24; 12: 23; 13: 14; 14: 27; 15: 29; 16: 18; 1 to 8 as
+before, 147). No sideways scroll, no console or page errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/cor11-390-*`, `cor13-390-*`, `cor15-390-*`.
+Server stopped by PID, dist/ deleted, no lh-*.json. Lighthouse not run (no code
+changed).
+
+### Next
+
+1 Corinthians is complete. The next book is for the lead to choose
+(2 Corinthians follows naturally).
