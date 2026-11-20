@@ -12758,3 +12758,23 @@ Cut before publishing: ‘the tent had no windows’ (no source). Narrowed: ‘o
 | A shadow is real; God truly met his people | 31-37 | hebrews/plain/8.json (1-6 `hard`) | Repository |
 
 Cut before publishing: nothing beyond the wording of the idiom (single quotation marks removed, since it is not the BSB's wording).
+
+## The plain notes on Exodus 27 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The courtyard as the space ordinary Israelites entered; the altar between gate and tent | 1-8 | exodus/27.json `story` | Repository |
+| Size of the altar; mizbeach from zavach | 1-8 | exodus/27.json `historical`, `words` (H4196) | Repository |
+| The tools of fire and blood; a working hearth | 1-8 | exodus/27.json `cultural` | Repository |
+| Horns: blood of the sin offering; sanctuary; horned altars at Megiddo and Beersheba | 1-8 | exodus/27.json `historical`, `words` (H7161A) | Repository |
+| Earth or uncut stone (20:24-25) and the bronze altar: filled frame, local altars, different sources | 1-8 | exodus/27.json `hard` | Repository; no side |
+| Leviticus 4:25; 1 Kings 1:50; Hebrews 10:11-12; 13:10, 12; not a code in the boards | 1-8 | BSB; exodus/27.json `christ` | BSB text |
+| The surveyor's plan; about 150 by 75 feet; curtains about 7.5 feet; the pegs of a camp | 9-19 | exodus/27.json `literary`, `historical`, `cultural` | Repository |
+| Psalm 84:2; 100:4 | 9-19 | BSB | BSB text |
+| Beaten oil; from the whole people; tamid from evening until morning | 20-21 | exodus/27.json `cultural`, `words` (H8548) | Repository |
+| Aaron and his sons named; first use of ‘Tent of Meeting’ | 20-21 | exodus/27.json `literary` | Repository |
+| Leviticus 24:2; Matthew 5:14; Revelation 2:5 | 20-21 | BSB; exodus/27.json `christ` | BSB text |
+
+Cut before publishing: nothing.
