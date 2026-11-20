@@ -1,5 +1,5 @@
 {
-  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. Read by client/src/lib/wisdom-match.test.ts.",
+  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build) and holdout3 (third build) were each written and committed before matching.json was touched; holdout2 has since been tuned for, so holdout3 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
   "cases": [
     { "q": "my son walked away from the faith", "expect": ["wayward-child"] },
     { "q": "passed over for promotion and bitter", "expect": ["envy-and-comparison", "jealousy", "anger", "success-and-failure", "conflict-at-work", "when-life-is-unfair"] },
@@ -119,5 +119,22 @@
     { "q": "the church elders want me to step down", "expect": ["submitting-to-leaders", "serving-in-the-church", "church-hurt"] },
     { "q": "I feel like there's no point to anything", "expect": ["purpose-and-meaning", "despair-and-hope", "depression"] },
     { "q": "I'm addicted to porn and ashamed", "expect": ["pornography", "shame", "lust"] }
+  ],
+  "holdout3": [
+    { "q": "my baby died at eight weeks and nobody even knew I was pregnant", "expect": ["miscarriage", "grief"] },
+    { "q": "dad passed last month and I keep reaching for the phone to call him", "expect": ["losing-a-parent", "grief"] },
+    { "q": "my husband died in the spring and the house is so quiet", "expect": ["losing-a-spouse", "grief", "loneliness"] },
+    { "q": "the doctor says I have maybe six months", "expect": ["terminal-diagnosis", "facing-death"] },
+    { "q": "my back has hurt every single day for ten years", "expect": ["chronic-pain"] },
+    { "q": "I was in the car crash and my friend didn't make it", "expect": ["survivors-guilt", "sudden-loss", "grief"] },
+    { "q": "my teenage son was killed by a drunk driver", "expect": ["losing-a-child", "sudden-loss", "grief"] },
+    { "q": "I'm getting old and my body can't do what it used to", "expect": ["aging", "retirement"] },
+    { "q": "what will heaven actually be like", "expect": ["heaven-and-eternity"] },
+    { "q": "I keep watching porn even though I promised my wife I'd stop", "expect": ["pornography", "lust"] },
+    { "q": "our fourth round of IVF failed", "expect": ["infertility"] },
+    { "q": "I got a cancer diagnosis and I'm scared", "expect": ["serious-illness", "terminal-diagnosis", "fear-and-courage"] },
+    { "q": "my coworker keeps taking credit for my work", "expect": ["conflict-at-work", "status-and-recognition"] },
+    { "q": "I can't stop scrolling my phone at night", "expect": ["technology-and-distraction", "social-media", "self-control"] },
+    { "q": "my mother never told me she loved me and now she's gone", "expect": ["losing-a-parent", "grief", "regret"] }
   ]
 }

@@ -1,6 +1,6 @@
 # Tools ledger: the claims in the rebuilt Wisdom Finder
 
-Every factual claim the 2026-11-20 builds added (the twenty-six topics written in full in `client/public/wisdom/deep/`, the finder and topic pages), with where it was checked. Scripture is not listed: every verse and prayer is filled from the BSB in `client/public/bible/ch/` by reference at build time, and `scripts/validate-wisdom.mjs` holds every verse and every quotation of three words or more in the prose to the BSB word for word. "Note" means the site's own Study Bible note for that chapter (`client/public/bible/notes/<book>/<n>.json`, its `verses/` and `plain/` files); where a note exists for a passage, the topic's sentence about the passage was written to agree with it.
+Every factual claim the 2026-11-20 builds added (the forty topics written in full in `client/public/wisdom/deep/`, the finder and topic pages), with where it was checked. Scripture is not listed: every verse and prayer is filled from the BSB in `client/public/bible/ch/` by reference at build time, and `scripts/validate-wisdom.mjs` holds every verse and every quotation of three words or more in the prose to the BSB word for word. "Note" means the site's own Study Bible note for that chapter (`client/public/bible/notes/<book>/<n>.json`, its `verses/` and `plain/` files); where a note exists for a passage, the topic's sentence about the passage was written to agree with it.
 
 | Topic | Claim | Checked against |
 |---|---|---|
@@ -172,8 +172,133 @@ Every factual claim the 2026-11-20 builds added (the twenty-six topics written i
 | alcohol-and-drinking | Abstinence taught or encouraged in Baptist, Methodist, Holiness and Pentecostal churches; moderation in Catholic, Orthodox, Lutheran, Anglican, Reformed | general knowledge of church practice, described not quoted |
 | all fourteen | Care lines word for word from: psalms/plain/40, 69, 88, 102; 2-corinthians/plain/1; romans/plain/7, 12; genesis/plain/34; john/plain/2, 13; matthew/plain/18; 1-corinthians/plain/5 | `scripts/validate-wisdom.mjs` checks each line against its file |
 | all | Care lines on heavy subjects are word for word from the plain notes: psalms/plain/6, 88, 130; genesis/plain/16 | `scripts/validate-wisdom.mjs` checks each line against its source file |
+| pornography | Matthew 5:28: a look with a purpose; joins the seventh and tenth commandments; temptation is not sin | note matthew/5 verse 27-28 (grammar); matthew/plain/5 27-30 "hard" |
+| pornography | Job's oath begins with a covenant with his eyes; Job does not claim sinlessness | note job/31 summary and "hard" |
+| pornography | David stayed home in the season of war; every verb of action is David's; the king is held accountable | note 2-samuel/11 cultural and "hard" |
+| pornography | Proverbs 5: one's own sins become cords; responsibility on the young man | note proverbs/5 summary and "hard" |
+| pornography | Corinthian slogans that the body did not matter; "you were washed" | note 1-corinthians/6 cultural; 1-corinthians/plain/6 15-20 |
+| pornography | Ephesians 5: what the light exposes becomes visible | Ephesians 5:11-13 (BSB) |
+| pornography | Hebrews 4:15: sympathize, tested in every way, without sin | note hebrews/4 verse 15 |
+| pornography | Titus 2: grace trains believers (sophron family) | note titus/2 summary and cultural |
+| pornography | Romans 7: three readings of the "I"; the note does not choose; chapter 8 opens with no condemnation | romans/plain/7 14-25 "hard"; note romans/7 "hard" |
+| pornography | Psalm 32: silence wasted him; confession brought forgiveness | psalms/plain/32 1-5 |
+| pornography | The Find Help page on pornography exists and covers the spouse who found out | client/public/needs/pornography.json |
+| losing-a-child | God answers Rachel with hope, not a rebuke | note jeremiah/31 verse 15 |
+| losing-a-child | Matthew names Herod's rage and does not say the killing happened "so that" Scripture be fulfilled; why one child was saved is not explained | note matthew/2 verse 17-18; matthew/plain/2 16-18 "hard" |
+| losing-a-child | Jacob refused comfort; the Bible lets the grief stand for years of the story | note genesis/37 verse 34-35 |
+| losing-a-child | David's child; the text ties the death to David's sin; verse 23 read as hope of reunion or only the grave | note 2-samuel/12 "hard" |
+| losing-a-child | Naomi: "call me Mara" | Ruth 1:20-21 (BSB); note ruth/1 summary |
+| losing-a-child | Simeon's sword: most readers take it as Mary's grief at the cross | luke/plain/2 25-35 "hard"; John 19:25 |
+| losing-a-child | Nain: Jesus sees the mother first; no miracle does not mean loved less | note luke/7 verse 13; luke/plain/7 11-17 "hard" |
+| losing-a-child | Job lost ten children; he did not sin in his words; chapter 3 curses his birth; 42:7 | Job 1:2, 1:18-22, 3:1-3, 42:7 (BSB) |
+| losing-a-child | Psalm 34 admits many afflictions; promise is nearness, not short grief | note psalms/34 "hard"; psalms/plain/34 11-22 |
+| losing-a-child | Isaiah 65:20 names the infant who lives a few days; readers differ on how verse 20 fits | note isaiah/65 "hard" |
+| losing-a-child | Romans 8:28 is never a line to hand to someone in fresh grief | romans/plain/8 28-30 "hard" |
+| losing-a-child | Jesus said no to reading sudden deaths as punishment | Luke 13:1-5; John 9:3 (BSB) |
+| losing-a-parent | Joseph's seven-day lament at Atad; the place named for it | note genesis/50 verse 10; Genesis 50:11 |
+| losing-a-parent | Isaac and Ishmael bury Abraham together, the only time side by side after Genesis 21; care for old wounds | note genesis/25 verse 9-10; genesis/plain/25 1-11 "hard" |
+| losing-a-parent | Jesus gives his mother to the beloved disciple | note john/19 verse 26-27; john/plain/19 23-27 |
+| losing-a-parent | Jacob: I am about to die, but God will be with you; promise handed on | note genesis/48 verse 21 |
+| losing-a-parent | Lois and Eunice | 2 Timothy 1:5 (BSB); note 2-timothy/1 summary |
+| losing-a-parent | Psalm 27:10 read for those whose parents left or hurt them | psalms/plain/27 7-14 "hard" |
+| losing-a-parent | Psalm 90 the only psalm headed with Moses' name | psalms/plain/90 1-6 |
+| losing-a-parent | Israel wept for Moses thirty days | Deuteronomy 34:8 (BSB) |
+| losing-a-parent | 2 Corinthians 1: not a claim that suffering is good; comfort through people | 2-corinthians/plain/1 1-7 "hard" |
+| losing-a-parent | Psalm 116:15 does not say the death was good or forbid grief | psalms/plain/116 12-19 "hard" |
+| losing-a-spouse | Abraham wept for Sarah, then bought the grave | note genesis/23 summary and verse 1-2 |
+| losing-a-spouse | A seal was worn on the body and marked ownership | note song-of-solomon/8 cultural |
+| losing-a-spouse | Naomi: God's kindness to the living and the dead; Boaz a kinsman-redeemer | note ruth/2 summary |
+| losing-a-spouse | Anna married seven years, a widow into old age; Luke gives her the last word in the temple scene | note luke/2 verse 36-37; luke/plain/2 36-40 "hard" |
+| losing-a-spouse | Widow among the three most vulnerable in Israel | note deuteronomy/10 cultural |
+| losing-a-spouse | 1 Timothy 5: families first; enrolled widows | note 1-timothy/5 summary and "hard" |
+| losing-a-spouse | A widow free to remarry in the Lord; Paul's judgment she may be happier as she is | 1 Corinthians 7:39-40 (BSB); 1-corinthians/plain/7 36-40 |
+| losing-a-spouse | Matthew 22:30: Sadducees' puzzle; does not say love is lost or that people become angels; not a judgment on remarriage | matthew/plain/22 23-33 "hard"; note matthew/22 verse 29-30 |
+| sudden-loss | Job's messengers one after another | Job 1:13-19 (BSB) |
+| sudden-loss | Job's friends sat seven days in silence; God says they did not speak rightly | Job 2:11-13, 42:7 (BSB) |
+| sudden-loss | Siloam: no measure of the victims' guilt; repentance addressed to the living | note luke/13 verse 4-5; luke/plain/13 1-5 "hard" |
+| sudden-loss | Time and chance; fish in a net | Ecclesiastes 9:11-12 (BSB) |
+| sudden-loss | Martha's "if you had been here"; Jesus does not rebuke her | note john/11 verse 20-22 |
+| sudden-loss | Psalm 31:22 "in my alarm"; Psalm 46 the earth transformed | Psalm 31:21-24; Psalm 46:1-3 (BSB) |
+| sudden-loss | Lamentations 3: hope in the middle of lament | note lamentations/3 summary and "hard" |
+| sudden-loss | 1 Corinthians 10:13 is about temptation, not suffering; 2 Corinthians 1:8 | 1-corinthians/plain/10 6-13 "hard" |
+| sudden-loss | Guilt after a death: some points to real wrongs, much is love looking for more | follows the Find Help grief page's FAQ (client/public/needs/grief.json); its suicide paragraph was not used |
+| miscarriage | Psalm 139: God knows a person before birth; gentleness for grief or guilt about a pregnancy | psalms/plain/139 13-18 "hard" |
+| miscarriage | Jeremiah 1:5 first about one prophet's calling | note jeremiah/1 "hard" |
+| miscarriage | Job 10: the maker asked why he destroys; suffering distorts perception | note job/10 summary and "hard" |
+| miscarriage | Psalm 22:9-10: God as midwife; God before memory | note psalms/22 verse 9-10 |
+| miscarriage | David's son lived seven days; verse 23 read two ways | 2 Samuel 12:18; note 2-samuel/12 "hard" |
+| miscarriage | Mark 10:14 the only place "indignant" is used of Jesus | note mark/10 verse 13-14 |
+| miscarriage | Matthew 5:4 divine passive: God comforts | note matthew/5 verse 4 |
+| miscarriage | Exodus 23:25-26 belongs to the promises closing the covenant laws as Israel prepared to enter the land | note exodus/23 summary; Exodus 23:20-33 |
+| miscarriage | Elizabeth called righteous while childless; Hannah year after year | Luke 1:6-7; 1 Samuel 1:7 (BSB) |
+| infertility | Abram's first recorded words to God a complaint, answered with a promise | note genesis/15 verse 2-3 (theology) |
+| infertility | Rachel's story does not promise a child to every couple | genesis/plain/30 1-8 "hard" |
+| infertility | Elkanah's ten sons; Eli took Hannah for drunk | 1 Samuel 1:6-18 (BSB); note 1-samuel/1 summary |
+| infertility | Agur's list includes the barren womb | Proverbs 30:15-16 (BSB); note proverbs/30 cultural |
+| infertility | Zechariah and Elizabeth righteous first; childlessness not a judgment on sin | note luke/1 verse 6-7 |
+| infertility | Elizabeth: "my disgrace among the people" | Luke 1:25 (BSB) |
+| infertility | Isaiah 56: eunuchs who cannot have children promised a name better than sons and daughters | note isaiah/56 summary; Isaiah 56:3-5 |
+| infertility | Mark 3:35 family of God; father not named | note mark/3 verse 33-35 |
+| infertility | Psalm 37:4 not a technique for getting things | psalms/plain/37 1-11 "hard" |
+| infertility | Three Christian positions on IVF, donors and embryos, shared ground | the Find Help infertility page's answer "Is IVF wrong for Christians?" (client/public/needs/infertility.json); the Catechism it cites was not opened |
+| survivors-guilt | James killed, Peter rescued; Luke gives no reason; not James's faith or the church's prayers | note acts/12 "hard"; acts/plain/12 1-5 "hard" |
+| survivors-guilt | Siloam and time and chance as above | luke/plain/13; Ecclesiastes 9:11 |
+| survivors-guilt | "What is that to you? You follow me" | note john/21 verse 22-23 |
+| survivors-guilt | David: if only I had died instead of you | 2 Samuel 18:33 (BSB) |
+| survivors-guilt | No condemnation is God's verdict, not a reward | romans/plain/8 1-11 "hard" |
+| survivors-guilt | God greater than our hearts | 1 John 3:19-20 (BSB) |
+| survivors-guilt | Godly and worldly sorrow; guilt that returns after confession; counselor or doctor | 2-corinthians/plain/7 8-12 "hard" |
+| terminal-diagnosis | Hezekiah: set your house in order, wept, fifteen years | note isaiah/38 summary |
+| terminal-diagnosis | Gethsemane: truly human, felt horror at death | mark/plain/14 32-42 "hard"; note mark/14 verse 35-36 |
+| terminal-diagnosis | Psalm 90 headed as a prayer of Moses; authorship debated | note psalms/90 "hard" |
+| terminal-diagnosis | Paul expects to remain; "far better" read as the intermediate state | note philippians/1 summary and "hard" |
+| terminal-diagnosis | 2 Timothy 4: drink offering; cloak and scrolls | note 2-timothy/4 summary |
+| terminal-diagnosis | "Do not let your hearts be troubled" not a scolding; Jesus was troubled | john/plain/14 1-4 "hard" |
+| terminal-diagnosis | James 5:15 read several ways; none sets prayer against medicine; Paul's thorn | note james/5 "hard"; 2-corinthians/plain/12 7-10 |
+| facing-death | Hebrews 2:14-15 fear of death as slavery | note hebrews/2 verse 14-15 |
+| facing-death | Psalm 23: "You are with me" in the valley | psalms/plain/23 1-4 "hard" |
+| facing-death | Luke 23:43 promise; Luke 23:46 the verb for entrusting a valuable | note luke/23 verse 42-43, 46 |
+| facing-death | Stephen dies as Jesus died | acts/plain/7 54-60 "hard" |
+| facing-death | 2 Corinthians 5: every tradition holds the comfort; details read differently | 2-corinthians/plain/5 1-10 "hard" |
+| facing-death | Christians have long spoken of learning to die well | general knowledge of the tradition; no work named or quoted |
+| serious-illness | John 9:3: illness and disability are not punishment | john/plain/9 1-7 "hard" |
+| serious-illness | Psalm 41 sickbed | Psalm 41:1-4 (BSB); note psalms/41 summary |
+| serious-illness | Oil a medicine in James's world; readings of James 5; Catholic and Orthodox sacrament | note james/5 cultural and "hard" |
+| serious-illness | Jesus touched the man with the skin disease | note mark/1 verse 41-42 |
+| serious-illness | Epaphroditus nearly died; Paul claims no miracle | note philippians/2 verse 26-27 |
+| serious-illness | Trophimus left sick at Miletus; Timothy told to use a little wine | 2 Timothy 4:20; 1 Timothy 5:23 (BSB) |
+| serious-illness | "Visited" is the verb used of God caring for his people | note matthew/25 verse 35-36 |
+| serious-illness | Matthew applies Isaiah 53:4 to healings; Peter 53:5 to sin | Matthew 8:17; 1 Peter 2:24 (BSB) |
+| serious-illness | Continuationist and cessationist views on gifts of healing | note 1-corinthians/12 "hard"; 1-corinthians/plain/12 4-11 |
+| chronic-pain | The thorn unknown; not a rule against healing or doctors | 2-corinthians/plain/12 7-10 "hard" |
+| chronic-pain | Job's nights; pain never rests | Job 7:3-4; Job 30:16-17 (BSB) |
+| chronic-pain | Woman bled twelve years, spent all on doctors; called forward | note mark/5 verse 25-26; mark/plain/5 25-34 "hard" |
+| chronic-pain | Man ill thirty-eight years; his answer a lament about being alone | note john/5 verse 5-7 |
+| chronic-pain | Paul's illness when he first preached in Galatia | Galatians 4:13-14 (BSB) |
+| chronic-pain | Creation's groaning as labor pains | note romans/8 verse 22-23 |
+| chronic-pain | "Man of sorrows": makhovot covers physical pain | note isaiah/53 verse 3 |
+| chronic-pain | "Light and momentary" is Paul's testimony, not a line to hand to others | 2-corinthians/plain/4 13-18 "hard" |
+| aging | Ecclesiastes 12's poem of old age | note ecclesiastes/12 summary |
+| aging | Psalm 71: an old believer's prayer | note psalms/71 summary |
+| aging | Babylon's gods carried on animals; God carries his people | note isaiah/46 summary |
+| aging | Barzillai, eighty, declines; sends a younger man | 2 Samuel 19:31-37 (BSB) |
+| aging | Elihu: not only the old are wise | note job/32 summary |
+| aging | Titus 2: older women "teachers of good" | note titus/2 cultural |
+| aging | Simeon's release; Naomi's grandson sustains her | note luke/2 verse 29-32; Ruth 4:14-15 (BSB) |
+| heaven-and-eternity | God's dwelling with humanity; continuity and discontinuity of this world | note revelation/21 summary and "hard" |
+| heaven-and-eternity | Isaiah 25:8 a stage in the growing hope of resurrection; Paul quotes it | note isaiah/25 "hard"; 1 Corinthians 15:54 |
+| heaven-and-eternity | John 14: the promise is to be where he is | note john/14 verse 3 |
+| heaven-and-eternity | A spiritual body is a body | 1-corinthians/plain/15 35-49 "hard"; note 1-corinthians/15 verse 44 |
+| heaven-and-eternity | Creation set free, not thrown away | romans/plain/8 18-27 "hard" |
+| heaven-and-eternity | 1 Corinthians 2:9 is about God's wisdom in the cross, revealed by the Spirit | 1-corinthians/plain/2 6-9 "hard" |
+| heaven-and-eternity | Paul built nothing on his vision of heaven | 2-corinthians/plain/12 1-6 "hard" |
+| heaven-and-eternity | Philippi a Roman colony | Acts 16:12 (BSB) |
+| heaven-and-eternity | With the Lord at once, asleep until the resurrection (Seventh-day Adventists among them), Catholic purgatory and Catholic and Orthodox prayer for the dead | 2-corinthians/plain/5 1-10 "hard"; note luke/23 "hard"; Catholic teaching on purgatory described from knowledge (Catechism 1030-1031), not opened or quoted |
+| fourteen topics | Care lines word for word from: romans/plain/7; 1-corinthians/plain/6; psalms/plain/13, 38, 139; matthew/plain/2; genesis/plain/23, 25, 30, 35, 50; luke/plain/13; acts/plain/12; 2-corinthians/plain/4, 5, 7, 12; 1-corinthians/plain/15 | `scripts/validate-wisdom.mjs` checks each line against its file |
 | finder | The Berean Standard Bible is in the public domain | as recorded in tools-plan.md section 1 (berean.bible, 30 April 2023) |
 
 Not checked outside the repo in this run: the Westminster, Baptist Faith and Message, Methodist and Catholic Catechism references were cited from knowledge of those documents and should be opened before any of them is quoted; the topic pages describe their positions and quote none of them.
 
 Second build (2026-11-20): the general-knowledge rows above (monastic and Anabaptist practice, baptism and church order by tradition, Catholic teaching on contraception, abstinence and moderation by tradition, the two counseling approaches) describe positions without quoting any document, and none was opened in this run.
+
+Third build (2026-11-20): the fourteen topics above (pornography and thirteen of batch 2) were checked against the Study Bible notes and plain notes named in each row; the Find Help pages on infertility and grief were followed where the rows say so. Nothing outside the repo was opened in this run. The intro's count of topics written in full is now forty.
