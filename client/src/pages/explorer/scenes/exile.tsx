@@ -45,6 +45,7 @@ function harp(x: number, y: number, tilt: number) {
       <path
         className="pl-l"
         d={`M${x - 34},${y + 30}L${x + 34},${y + 20}M${x - 22},${y + 104}C${x - 34},${y + 84} ${x - 40},${y + 56} ${x - 30},${y + 14}M${x + 22},${y + 104}C${x + 34},${y + 84} ${x + 42},${y + 50} ${x + 30},${y + 4}`}
+        style={{ strokeWidth: 5 }}
       />
       <Shape
         d={`M${x - 26},${y + 102}H${x + 26}L${x + 20},${y + 128}H${x - 20}Z`}
@@ -60,16 +61,23 @@ function harp(x: number, y: number, tilt: number) {
   );
 }
 
-/** One of the exiles, seen from behind, sitting, head bowed into the shoulders. */
-function sitter(x: number, y: number, tone: "b" | "c", h: string, lean: number) {
-  const body = `M${x - 34},${y + 70}C${x - 36},${y + 30} ${x - 22},${y + 8} ${x},${y + 8}C${x + 22},${y + 8} ${x + 36},${y + 30} ${x + 34},${y + 70}Z`;
+/**
+ * One of the exiles, sitting on the ground in profile, knees drawn up and
+ * head bowed onto them. `dir` 1 faces right, -1 faces left.
+ */
+function sitter(x: number, y: number, tone: "b" | "c", h: string, dir: 1 | -1) {
+  const X = (dx: number) => x + dx * dir;
+  const body = `M${X(-26)},${y + 64}C${X(-32)},${y + 34} ${X(-18)},${y + 8} ${X(4)},${y + 6}L${X(34)},${y + 26}C${X(44)},${y + 34} ${X(44)},${y + 52} ${X(42)},${y + 64}Z`;
   return (
-    <g transform={`rotate(${lean} ${x} ${y + 70})`}>
-      <path className="pl-o" d={`M${x - 15},${y + 6}a15,15 0 1,0 30,0a15,15 0 1,0 -30,0Z`} />
-      <path className="pl-l" d={`M${x - 15},${y + 6}a15,15 0 1,0 30,0a15,15 0 1,0 -30,0Z`} />
+    <g>
       <Shape d={body} tone={tone} off={3} />
-      <path fill={h} d={`M${x + 6},${y + 9}C${x + 24},${y + 12} ${x + 36},${y + 30} ${x + 34},${y + 70}H${x + 8}Z`} />
-      <path className="pl-f" d={`M${x - 20},${y + 30}c6,10 8,24 6,38M${x + 2},${y + 14}v54`} />
+      <path
+        fill={h}
+        d={`M${X(-26)},${y + 64}C${X(-30)},${y + 44} ${X(-26)},${y + 28} ${X(-16)},${y + 18}L${X(-4)},${y + 64}Z`}
+      />
+      <path className="pl-l" d={`M${X(8)},${y + 22}C${X(18)},${y + 32} ${X(28)},${y + 36} ${X(38)},${y + 34}`} />
+      <path className="pl-o" d={`M${X(10)},${y + 6}a14,14 0 1,0 ${28 * dir},0a14,14 0 1,0 ${-28 * dir},0Z`} />
+      <path className="pl-l" d={`M${X(10)},${y + 6}a14,14 0 1,0 ${28 * dir},0a14,14 0 1,0 ${-28 * dir},0Z`} />
     </g>
   );
 }
@@ -132,8 +140,8 @@ const scene: Drawing = {
       {harp(306, 200, 9)}
 
       {/* Two exiles sitting by the water, heads bowed. */}
-      {sitter(258, 458, "c", h.h1, 4)}
-      {sitter(338, 466, "b", h.h1, -3)}
+      {sitter(244, 462, "c", h.h1, 1)}
+      {sitter(372, 466, "b", h.h1, -1)}
 
       {/* The stump, cut down, and the one green shoot growing from it. */}
       <Shape

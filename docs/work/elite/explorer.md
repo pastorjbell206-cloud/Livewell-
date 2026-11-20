@@ -5,7 +5,7 @@ James asked (2026-11-19) for a way to explain the whole Bible to young people ag
 ## What is built
 
 - **The map** (`/study/explorer`): one road drawn down the page, from the garden to the city, with a roundel for each of thirteen stops. Every stop is named, placed and summed up in one line at both reading levels, so the whole arc can be read end to end today. A finished stop opens its own page; a stop still being drawn says so and has no link.
-- **Seven finished stops** (four in the pilot, three added on 2026-11-19), each with a drawn scene, the story at both levels, "What this shows us about God", one or two verses quoted exactly from the BSB (each opens the site's verse panel), "Read it yourself" (Study Bible chapters), and one activity:
+- **Ten finished stops** (four in the pilot, three added on 2026-11-19, three more on 2026-11-20), each with a drawn scene, the story at both levels, "What this shows us about God", one or two verses quoted exactly from the BSB (each opens the site's verse panel), "Read it yourself" (Study Bible chapters), and one activity:
   - `/study/explorer/creation`: tap the picture to find the seven days.
   - `/study/explorer/abraham`: match each of God's three promises to where the Bible shows it kept.
   - `/study/explorer/rescue`: put four events of the rescue in order.
@@ -13,6 +13,9 @@ James asked (2026-11-19) for a way to explain the whole Bible to young people ag
   - `/study/explorer/fall`: "What broke", tap the picture to find four broken relationships (with God, with each other, with ourselves, with the ground), each with its place in Genesis 3 and a line on how God begins to mend it.
   - `/study/explorer/sinai`: "Walk into the tent", eight numbered marks on a plan of the tabernacle, from the gate of the courtyard to the ark, taken with Next (or tapped); each says what the part was and where the Bible takes it up.
   - `/study/explorer/land`: "Round and round", the judges' cycle as a wheel stepped round with Next, round again, ending with why the story needs a better king.
+  - `/study/explorer/kingdom`: "What makes a good king?", five moments from the stories of Saul, David and Solomon; for each the reader taps "He trusted God" or "He grabbed for himself" and sees what the Bible says and the verse; it ends on the promise of a king who will not fail (2 Samuel 7:16; Luke 1:32-33).
+  - `/study/explorer/exile`: "Promises in the dark", four promises from Jeremiah, Ezekiel and Isaiah matched to where the New Testament takes each up (Luke 22:20; Acts 2:1-4; Acts 8:32-35; Luke 1:32-33).
+  - `/study/explorer/jesus`: "Who is this?", five things Jesus did by the Sea of Galilee in Mark's order, marked on the picture and taken with Next (or tapped); each says what he did, what people said, and who the Gospel says he is, ending on Peter's answer and handing on to the Cross.
 - **Two reading levels**, "Ages 7 to 11" and "Ages 12 to 16" (the Family door's younger and older bands, `lib/familyTable.ts`), one tap, kept on the device. The older level adds the why, an honest hard question with its answer, and links to go deeper (Honest Answers, context guides).
 - **One thread**, "God with his people", lit across the whole map: a solid line where God lives among his people, a broken line where the closeness is lost or waited for (the fall, the exile, the return), and one line with its verse at each of the thirteen stops. Four more threads are named as coming.
 - **"Why we believe"**: two finished cards (The Bible; Jesus, God and man) with a picture, a plain statement at both levels, a quoted verse, the passages it rests on, a question people ask, the stops that teach it, and the family catechism questions that say the same. Eight more are named as coming, without links.
@@ -33,15 +36,15 @@ The site's Bible's Story (`/study/bible/story`, the eleven acts in `client/publi
 | 4 | The Rescue from Egypt | Four (added split) | finished |
 | 5 | Sinai and the Tent | Four (added split) | finished |
 | 6 | The Land and the Judges | Five | finished |
-| 7 | The Kingdom | Six | drawing |
-| 8 | The Prophets and Exile | Seven | drawing |
+| 7 | The Kingdom | Six | finished |
+| 8 | The Prophets and Exile | Seven | finished |
 | 9 | The Return and the Waiting | Eight ("the Silence" in the storyline; "the Waiting" for a child) | drawing |
-| 10 | Jesus Comes | Nine (added split) | drawing |
+| 10 | Jesus Comes | Nine (added split) | finished |
 | 11 | The Cross and the Empty Tomb | Nine (added split) | finished |
 | 12 | The Church and the Spirit | Ten | drawing |
 | 13 | The New Creation | Eleven | drawing |
 
-## The plan for the stops still to draw (six now; the first three rows below are finished)
+## The plan for the stops still to draw (three now; the Fall, Sinai, the Land, the Kingdom, the Exile and Jesus Comes below are finished)
 
 Each needs: a scene (an 800 by 600 drawing in `client/src/pages/explorer/scenes/`, one line in `SCENES` in `parts.tsx`), the story at both levels, God, one or two verses, chapters, an older-level question with its answer and deeper links, a talk prompt, a care line where it touches death, fear or guilt, and one activity. All of it is data in `client/public/explorer/stops/<slug>.json`; only the drawing is code.
 
@@ -182,10 +185,28 @@ The Bible door already lists six rooms (`client/src/lib/siteCatalog.ts`), so Bib
 - **The thread** "God with his people" at Sinai was already right (the tent so that he could dwell among them) and was left as it was.
 - **Ranges** now read "Exodus 19 to 40, and Leviticus" (Sinai) and "Numbers to Ruth" (the Land), as the stops tell them.
 
+## The third three (2026-11-20): the Kingdom, the Prophets and Exile, Jesus Comes
+
+- **Next now runs unbroken from Creation to the Cross**: Creation, the Fall, Abraham, the Rescue, Sinai, the Land, the Kingdom, the Exile, (the Return, still being drawn, is skipped) Jesus Comes, the Cross. The Explorer test names that chain.
+- **One new activity kind, `choose`** (the Kingdom): a moment at a time, two buttons with `aria-pressed`, the Bible's answer and its verse under them in a polite live region; a choice can be changed; every moment answered is done, and then the end card appears. Validator support (both answers present, each moment's reference readable) and a test. The Exile reuses `match` and Jesus Comes reuses `walk`; each kind took optional wording (`finish` for match; `intro`, `laterLabel`, `restart` and a per-step `asked`/`askedRef` for walk), so Abraham and Sinai read exactly as before (re-shot and compared).
+- **Why match for the Exile, not the timeline.** The five dates are in the story; the match teaches the thing the stop is for, that the promises made in the dark are taken up in the New Testament, and each pairing is checked in the BSB.
+- **The scenes.** Kingdom: Jerusalem on its hill, the temple going up (two pillars, an unfinished side with a ladder, cut stones and cedar beams), sheep on the slope, a shepherd's staff with the crown hung on its crook (the mustard mark), a harp against a rock. Exile: a river in Babylon, two exiles sitting with heads bowed under a willow with two harps hung in it, Jerusalem's broken walls on the far horizon, a cut stump with one green shoot (the mustard mark). Jesus Comes: the Sea of Galilee gathering what Mark tells there (the teacher in the boat with no face, the crowd on the beach, the sower on the slope, the house in Capernaum with its opened roof, the man walking home with his mat, Levi's booth, the wind rising on the lake), the sun rising over the far hills (the mustard mark, Matthew 4:16).
+- **Wording on the hard places.** David's sin is told plainly at both levels with the guilt on David (“the thing that David had done was evil in the sight of the LORD”), nothing that shifts it to Bathsheba, forgiveness and lasting harm both stated, and a care line. Isaiah 53's two readings are stated in two sentences at the older level, with the Study Bible note linked. The opposition to Jesus is named as some of the Pharisees and the Herodians (Mark 3:6), with the Acts note's sentence that Jesus, his disciples and the crowds who welcomed him were Jews. The honest question on Jesus reuses the Honest Answer's sentences, not a new argument. Care lines on David's sin, on losing a home, and on prayer for healing that did not come.
+
+## What was run for the third three (2026-11-20)
+
+- `pnpm check` clean; ESLint on every changed file clean.
+- All 38 commands of the content-gates step in `.github/workflows/ci.yml`: exit 0.
+- `pnpm test`: 147 files passed, 7 skipped (1,701 tests passed, 73 skipped); the Explorer file has 22 tests.
+- `pnpm build`, sitemap, prerender (10 Explorer stop pages), `audit:canonicals`: every audited page canonicalises to itself.
+- On the served build (port 4623): every new activity completed by touch (phone emulation) and by keyboard alone; the map links all three; no console errors; no sideways scroll at 390 or 1440, day and night, both levels.
+- Lighthouse on `/study/explorer/jesus` (median of three): performance 93, accessibility 100, best practices 96, SEO 100, CLS 0.000.
+- Screenshots in `/home/user/elite-shots/explorer/`; `kingdom-390.png`, `exile-390.png`, `jesus-390.png` in `docs/work/elite/explorer-shots/`.
+
 ## What to draw next
 
-The Kingdom (stop 7) and the Prophets and Exile (stop 8), then Jesus Comes (10), so that Next runs unbroken from Creation to the Cross. Then the Return and the Waiting, the Church and the Spirit, the New Creation.
+The Return and the Waiting (stop 9), so that Next walks every stop from Creation to the Cross with nothing skipped; then the Church and the Spirit, and the New Creation. After that, the four threads still to light (the king thread now has its turning point drawn at the Kingdom).
 
 ## Not done in the pilot
 
-Nine stops, four threads and eight cards, as planned above. James has not yet read any of the writing. No printable pages, no parent guide. Axe was not run separately (Lighthouse's accessibility audit is axe-based and scored 100 on both pages).
+Three stops (the Return, the Church, the New Creation), four threads and eight cards, as planned above. James has not yet read any of the writing. No printable pages, no parent guide. Axe was not run separately (Lighthouse's accessibility audit is axe-based and scored 100 on both pages).

@@ -134,7 +134,7 @@ const scene: Drawing = {
         off={4}
       />
       <path fill={h.h1} d="M120,466C150,470 172,490 176,520C180,548 170,566 150,572H120Z" />
-      <g transform="rotate(-14 110 470)">
+      <g transform="translate(110 560) scale(1.25) translate(-110 -560) rotate(-14 110 470)">
         <Shape d="M70,560H138L132,512H76Z" tone="c" off={2} />
         <path className="pl-l" d="M80,512C66,480 56,450 66,404M128,512C142,480 156,440 148,394" />
         <path className="pl-l" d="M56,414L160,396" />
@@ -145,6 +145,7 @@ const scene: Drawing = {
       {/* The shepherd's staff, standing in the ground, the crown hung on its crook. */}
       <path className="pl-l" d="M238,580V250c0,-34 48,-34 48,0v14" />
       <path className="pl-f" d="M226,580h24" />
+      <g transform="translate(286 300) scale(1.45) translate(-286 -300)">
       <path
         className="pl-m"
         d="M258,334L250,284L270,302L286,272L302,302L322,284L314,334Z"
@@ -156,7 +157,7 @@ const scene: Drawing = {
       <path className="pl-o" d="M256,334H316V350H256Z" />
       <path className="pl-l" d="M256,334H316V350H256Z" />
       <path className="pl-k" d="M282,342a4,4 0 1,0 8,0a4,4 0 1,0 -8,0ZM264,340h6v4h-6ZM302,340h6v4h-6Z" />
-      <path className="pl-l" d="M286,264V286" />
+      </g>
     </>
   ),
 };
