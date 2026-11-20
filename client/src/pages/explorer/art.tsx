@@ -403,6 +403,35 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path fill={h} d="M14,84H86V88H14Z" />
     </>
   ),
+  /* Why do bad things happen?: a bowl, broken and mended, the mending shown. */
+  "why-bad-things-happen": h => (
+    <>
+      <path className="pl-l" d="M10,80H90" />
+      <Shape d="M18,40H82C80,64 66,78 50,78C34,78 20,64 18,40Z" tone="c" />
+      <path fill={h} d="M66,40H82C80,62 70,74 60,77Z" />
+      <path className="pl-l" d="M18,40C30,46 70,46 82,40" />
+      <path className="pl-l" d="M40,42L36,54L42,62L38,77M60,42L63,52L57,62L61,77" />
+    </>
+  ),
+  /* Is the Bible true?: a scroll, and copies of it. */
+  "is-the-bible-true": h => (
+    <>
+      <path className="pl-f" d="M30,40L62,26M30,40L62,58M30,40L62,86" />
+      <Shape d="M12,30H48V50H12Z" tone="c" off={1.5} />
+      <path className="pl-f" d="M18,37H42M18,43H38" />
+      <Shape d="M60,20H90V32H60ZM60,52H90V64H60ZM60,80H90V92H60Z" tone="b" off={1} />
+      <path fill={h} d="M80,20H90V32H80ZM80,52H90V64H80ZM80,80H90V92H80Z" />
+    </>
+  ),
+  /* The Holy Spirit in a believer: a vine, its branches and fruit. */
+  "spirit-in-a-believer": h => (
+    <>
+      <path className="pl-l" d="M50,94C48,76 54,64 50,50C47,40 52,30 50,20" />
+      <path className="pl-l" d="M50,58C40,54 28,58 16,50M50,58C60,54 72,58 84,50M50,36C42,30 34,30 26,22M50,36C58,30 66,30 74,22" />
+      <Shape d="M20,58a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM68,58a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM44,26a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" tone="c" off={1} />
+      <path fill={h} d="M0,94H100V100H0Z" />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */
@@ -545,6 +574,114 @@ export const MANGER: Drawing = {
     </>
   ),
 };
+
+/**
+ * "The resurrection" card: a tomb cut in a rock garden at first light, its
+ * round stone rolled aside, the doorway open and empty; on the far hill, the
+ * empty cross.
+ */
+export const EMPTY_TOMB: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "A tomb cut in the rock of a garden at first light, its round stone rolled aside and its doorway open and empty; on a far hill, an empty cross.",
+  draw: h => (
+    <>
+      <path
+        className="pl-f"
+        d="M40,206l-26,-30M60,196l-8,-40M84,202l18,-36M100,214l34,-22"
+      />
+      <path className="pl-m" d="M38,232a28,28 0 0 1 56,0Z" />
+      <path className="pl-l" d="M38,232a28,28 0 0 1 56,0" />
+      <path className="pl-f" d="M0,232C60,214 120,196 190,206" />
+      <path className="pl-l" d="M118,202V160M106,172H130" />
+      <Shape d="M168,262V160C196,104 322,92 404,112V262Z" tone="b" off={4} />
+      <path fill={h.h1} d="M330,100C360,102 386,106 404,112V262H350Z" />
+      <path className="pl-paper" d="M212,262V206a28,28 0 0 1 56,0V262Z" />
+      <path className="pl-l" d="M212,262V206a28,28 0 0 1 56,0V262Z" />
+      <path className="pl-o" d="M226,248H254V256H226Z" />
+      <path className="pl-l" d="M226,248H254V256H226ZM232,248V256" />
+      <Shape d="M278,262a32,32 0 1,1 64,0Z" tone="g" off={3} />
+      <path fill={h.h2} d="M318,234a32,32 0 0 1 24,28H316Z" />
+      <path className="pl-o" d="M0,262H400V300H0Z" />
+      <path fill={h.hh} d="M0,276H400V300H0Z" />
+      <path className="pl-l" d="M0,262H400" />
+      <Shape d="M140,262C140,240 150,232 158,236C160,226 172,228 170,240C178,240 180,254 176,262Z" tone="g" off={2} />
+      <Shape d="M360,262C358,248 366,242 372,246C376,238 388,242 384,252C390,254 390,260 388,262Z" tone="g" off={2} />
+    </>
+  ),
+};
+
+/**
+ * "The church" card: people of different kinds seated together round one
+ * table, an open book, bread and a cup on it, under one roof and one lamp.
+ */
+export const CHURCH_TABLE: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "People of different kinds seated together round one table, with an open book, bread and a cup on it, under one roof and one lamp.",
+  draw: h => (
+    <>
+      <path className="pl-l" d="M20,108L200,26L380,108" />
+      <path fill={h.h3} d="M200,26L380,108H346L200,42Z" />
+      <path className="pl-l" d="M40,108V270M360,108V270" />
+      <path className="pl-l" d="M200,42V86" />
+      <path className="pl-m" d="M200,90C206,98 210,104 210,110A10,10 0 0 1 190,110C190,104 194,98 200,90Z" />
+      <path className="pl-l" d="M200,90C206,98 210,104 210,110A10,10 0 0 1 190,110C190,104 194,98 200,90Z" />
+      <path className="pl-f" d="M178,104l-12,-6M222,104l12,-6M184,124l-10,8M216,124l10,8" />
+      {(
+        [
+          [96, 166, "g"],
+          [150, 160, "b"],
+          [204, 164, "c"],
+          [258, 160, "g"],
+          [312, 166, "b"],
+        ] as const
+      ).map(([x, y, t]) => (
+        <g key={x}>
+          <Shape
+            d={`M${x - 20},${y + 76}C${x - 20},${y + 24} ${x - 12},${y + 14} ${x},${y + 14}C${x + 12},${y + 14} ${x + 20},${y + 24} ${x + 20},${y + 76}Z`}
+            tone={t}
+            off={2}
+          />
+          <path
+            className="pl-o"
+            d={`M${x - 11},${y}a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z`}
+          />
+          <path
+            className="pl-l"
+            d={`M${x - 11},${y}a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z`}
+          />
+        </g>
+      ))}
+      <Shape d="M60,214H340V250H60Z" tone="c" off={3} />
+      <path fill={h.h2} d="M60,226H340V250H60Z" />
+      <path className="pl-l" d="M60,224H340M80,250V270M320,250V270" />
+      <Shape
+        d="M104,214V200C116,196 128,197 138,202C148,197 160,196 172,200V214C160,210 148,211 138,216C128,211 116,210 104,214Z"
+        tone="b"
+        off={1.5}
+      />
+      <path className="pl-l" d="M138,202V216" />
+      <Shape d="M190,214a22,12 0 0 1 44,0Z" tone="c" off={1.5} />
+      <path className="pl-l" d="M200,206l4,4M212,204l4,4" />
+      <Shape d="M262,214l5,-30h26l5,30Z" tone="b" off={1.5} />
+      <path className="pl-l" d="M20,270H380" />
+    </>
+  ),
+};
+
+export function TombArt({ label }: { label?: string }) {
+  return (
+    <PlateSvg drawing={label ? { ...EMPTY_TOMB, label } : EMPTY_TOMB} />
+  );
+}
+export function ChurchTableArt({ label }: { label?: string }) {
+  return (
+    <PlateSvg drawing={label ? { ...CHURCH_TABLE, label } : CHURCH_TABLE} />
+  );
+}
 
 export function HeadArt() {
   return <PlateSvg drawing={HEAD_ART} decorative />;

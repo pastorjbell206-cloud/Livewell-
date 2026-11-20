@@ -396,3 +396,91 @@ Every place is an id in `client/public/bible/notes/acts/intro.json` (the Acts bo
 | the-church verses | 1 Corinthians 12:12; 1 Peter 2:5; Acts 2:42; Matthew 28:19-20; Ephesians 4:4-5 (to "one baptism") | BSB, by the validator |
 
 Deliberately left out of the three films: the women's testimony argument (not used anywhere in the Explorer); any first-person sentence of the Honest Answer; the Hume, Ehrman, Wright, Allison and bar Kosiba material (the film points to the answer for the full case); any authorship or date for a biblical book; a count of the Catholic and Orthodox books (the guide gives it); any form of church government, baptism or Supper drawn as the right one.
+
+## Run of 2026-11-20 (evening): two cards, three threads, three films
+
+### The "Why we believe" cards
+
+| Where | Claim | Checked |
+|---|---|---|
+| cards.json resurrection statement | On the third day Jesus rose bodily from the grave; an event, not a nice idea about spring; if Christ has not been raised, faith is futile; Christ the firstfruits | Family catechism Q31 (answer and commentary); BSB 1 Corinthians 15:17, 20; CLAUDE.md's confessional floor |
+| cards.json resurrection quote | 1 Corinthians 15:20 (whole) | BSB, by the validator |
+| cards.json resurrection question | History can't prove a miracle; the short list of facts nearly every historian accepts, skeptics included (crucified; followers soon convinced they had seen him alive; a persecutor and a doubting brother; preaching began in the city where he was buried); each natural explanation covers part and strains at the rest; depends on whether a person has already decided God can't act; you can weigh it all and still say no; some doubted | The Honest Answer "Did the resurrection actually happen?" (`client/src/data/answers.ts`), first paragraph and "What this does not prove", turned to the third person; BSB Matthew 28:17 |
+| cards.json resurrection, left out | The women's testimony argument; every first-person sentence; Hume, Ehrman, Wright and the rest (the card links the answer) | Deliberate, as in the films |
+| cards.json church statement | The church is the whole company of God's people, gathered by the Spirit around Christ, called to worship God, love one another, and make him known to the world; God's family who follow Jesus together; God saves people into a family, not alone; one body, living stones | Family catechism Q46 (answer and kids' answer) and Q60; BSB 1 Corinthians 12:12; 1 Peter 2:5 |
+| cards.json church quote | Acts 2:42 (whole) | BSB, by the validator |
+| cards.json church question | Shared: one Lord; the command to baptize in the threefold name; the Supper proclaims “the Lord’s death until He comes”. Differ: who and how to baptize, what happens in the Supper, how churches are led; the card does not choose | The church film's `differ` and last frame (`films/the-church.json`); the Study Bible note on 1 Corinthians 11 (four readings of the Supper, and what all agree); BSB 1 Corinthians 11:26 |
+| art.tsx EMPTY_TOMB, CHURCH_TABLE | Drawings only: a rock tomb with the stone rolled aside and an empty cross on a far hill; people seated at one table with a book, bread and a cup under one roof | No face is drawn; nothing in either is one church's rite |
+
+### The threads
+
+Every line's quotation is the BSB of a chapter the thread cites, checked by the validator; the references below were read in the BSB for what the line says without quoting.
+
+| Thread, stop | Claim | Checked |
+|---|---|---|
+| spirit creation | The Spirit of God hovering over the waters | BSB Genesis 1:2 |
+| spirit abraham | Pharaoh: anyone like this man, in whom the Spirit of God abides | BSB Genesis 41:38 |
+| spirit rescue | Isaiah, looking back on the sea, speaks of the One who set his Holy Spirit among them | BSB Isaiah 63:11-14 |
+| spirit sinai | Bezalel filled with the Spirit of God, with skill, to make the tent | BSB Exodus 31:1-7 |
+| spirit land | The Spirit came upon Gideon and other judges; Moses wished the LORD would put his Spirit on all his people | BSB Judges 6:34; 3:10; 11:29; Numbers 11:29 |
+| spirit kingdom | The Spirit rushed upon David from that day forward; "take not Your Holy Spirit from me" | BSB 1 Samuel 16:13; Psalm 51:11 (David's by its heading) |
+| spirit exile | I will put My Spirit within you; Joel: pour out his Spirit on all people | BSB Ezekiel 36:26-27; Joel 2:28. Joel is not dated: the line says only "Joel heard" |
+| spirit return | My Spirit remains among you; not by might nor by power, but by My Spirit (to Zerubbabel, the temple builder) | BSB Haggai 2:5; Zechariah 4:6; Ezra 5:1 (both prophets in the rebuilding) |
+| spirit jesus | The Spirit descending like a dove; "The Spirit of the Lord is on Me" | BSB Mark 1:10; Luke 4:18 |
+| spirit cross | Another Advocate, the Spirit of truth, promised the night before he died; wait until clothed with power from on high | BSB John 14:16-17 (John 13:1-2: the last supper); Luke 24:49 |
+| spirit church | They were all filled with the Holy Spirit; God's Spirit dwells in the church, God's temple | BSB Acts 2:4; 1 Corinthians 3:16 |
+| spirit new-creation | The Spirit and the bride say "Come"; the water of life | BSB Revelation 22:17 |
+| spirit, the fall | Left unlit: Genesis 6:3 is the only line, and its sense is debated | Deliberate |
+| promise fall | The rainbow, a sign of the covenant between God and the earth | BSB Genesis 9:13 |
+| promise abraham | The LORD made a covenant with Abram; all the families of the earth blessed through him | BSB Genesis 15:18; 12:3 |
+| promise rescue | God heard their groaning and remembered his covenant with Abraham, Isaac and Jacob | BSB Exodus 2:24 |
+| promise sinai | Obey my voice and keep my covenant, my treasured possession | BSB Exodus 19:5 |
+| promise land | Not one of the LORD's good promises had failed | BSB Joshua 21:45 |
+| promise kingdom | A son whose throne would last for ever; a covenant with my chosen one | BSB 2 Samuel 7:16; Psalm 89:3 |
+| promise exile | The covenant they broke; a new covenant, the law inscribed on hearts | BSB Jeremiah 31:31-33 |
+| promise return | The Lord they seek will come to his temple, the Messenger of the covenant | BSB Malachi 3:1 (the Lord and the Messenger in apposition, as the line words it) |
+| promise jesus | Zechariah's song, before Jesus was born: to remember his holy covenant, the oath to Abraham | BSB Luke 1:67-73 (John born 1:57; Jesus 2:7) |
+| promise cross | This cup is the new covenant in my blood | BSB Luke 22:20 |
+| promise church | Every one of God's promises is "Yes" in Christ | BSB 2 Corinthians 1:20 |
+| promise new-creation | They will be his people, and God himself will be with them as their God | BSB Revelation 21:3 |
+| promise, creation | Left unlit (a covenant with creation is read into Genesis 1 and 2 only by some) | Deliberate |
+| lamb fall | God made garments of skin and clothed them; better than the leaves they had sewn | BSB Genesis 3:21; 3:7 |
+| lamb abraham | God himself will provide the lamb; the ram offered in place of his son | BSB Genesis 22:8, 13 |
+| lamb rescue | Each family's lamb marked their home; when I see the blood, I will pass over you | BSB Exodus 12:3-7, 13 |
+| lamb sinai | The Day of Atonement: wrongs laid on a goat sent into the wilderness | BSB Leviticus 16:21-22 |
+| lamb land | Passover kept at Gilgal | BSB Joshua 5:10 |
+| lamb kingdom | The sacrifices of God are a broken spirit | BSB Psalm 51:16-17 (David's by its heading) |
+| lamb exile | A servant led like a lamb to the slaughter; Christians read him as Jesus, many Jewish readers as the people of Israel | BSB Isaiah 53:7; Acts 8:32-35; the Exile stop's own sentence (`stops/exile.json`) |
+| lamb return | The returned exiles kept the Passover | BSB Ezra 6:19-20 |
+| lamb jesus | Look, the Lamb of God | BSB John 1:29 |
+| lamb cross | Jesus died at Passover; Christ, our Passover lamb, has been sacrificed | BSB Mark 14:12; 15:1-37; 1 Corinthians 5:7 |
+| lamb church | Offered for all time one sacrifice for sins and sat down at God's right hand | BSB Hebrews 10:10-12 |
+| lamb new-creation | The Lamb is the city's lamp | BSB Revelation 21:23 |
+
+### The films
+
+| Where | Claim | Checked |
+|---|---|---|
+| why-bad-things-happen 1 to 2 | The strongest reason people give for not believing; deserves an answer, not a slogan; the suffering is real and much of it looks pointless from where we stand; some first answers are worse than silence; "everything happens for a reason" isn't theology | The Honest Answer "If God is good, why is there so much suffering?" (first paragraph; "The objection at full strength"), third person |
+| why-bad-things-happen 3 | Nobody can explain any one illness or disaster; be wary of anyone who says he can; Jesus on the eighteen at Siloam: not more sinful than others | The Honest Answer "Why does God allow earthquakes, cancer, and animal suffering?" (first paragraph; Malagrida and Siloam); BSB Luke 13:4-5 (the verse is trimmed before "unless you repent", which the film does not use as a lever) |
+| why-bad-things-happen 3, younger | When something bad happens to you, it is not God paying you back | Jesus' answer about Siloam (BSB Luke 13:4-5) and the brief's rule; no claim about any one person's case |
+| why-bad-things-happen 4 | Job is shown no reason; God answers with questions about the earth and the sea; Job was not told, but was allowed to ask | The suffering answer ("Where the evidential argument is weakest"; its last paragraph); BSB Job 38 to 42; Job 42:5 |
+| why-bad-things-happen 5 to 7 | Not an explanation but an event; God didn't stay outside; a body that could be hurt; the first line of Psalm 22 on the cross; if he was raised, suffering is real evil and won't win; every tear wiped away; who has the last word, and that he has carried the wound himself; the marks of the nails | The suffering answer, "What this does not prove"; BSB John 11:35; Matthew 27:46; John 20:27; Revelation 21:4 |
+| why-bad-things-happen 8 and care | You don't need an argument tonight, you need someone to sit with you; a parent, pastor or trusted adult; Find Help | The suffering answer's last paragraph; the Explorer's care-line rule. The 988 number is left to the answer and to Find Help |
+| is-the-bible-true 1 | The strongest critics know the manuscripts; we don't have the originals, the copies differ, the Gospels differ; what the facts add up to | "Why would anyone trust the Bible?" ("The case against, at its strongest") |
+| is-the-bible-true 2 to 3 | Handwritten copies, earliest fragments, fullest from the fourth century; the telephone game is the wrong picture; written, not whispered; copied in many places, old copies kept, compared and argued over; scholars can find most mistakes | `client/public/questions/text/copies-of-copies.json` (short answer) |
+| is-the-bible-true 4 | More than five thousand Greek manuscripts, whole or in part; every slip counts; most are spelling, word order, a skipped line; the doubtful places known and marked, such as the end of Mark; more copies than any book of the Greeks or Romans | The trust answer ("The evidence"); `more-variants-than-words.json`; `passages-not-in-the-earliest-bibles.json`; `compared-with-other-ancient-books.json` (classical Greek or Latin literature) |
+| is-the-bible-true 5 | Before 1947 the oldest complete Hebrew Bible was copied in 1008; the Qumran Isaiah scroll, usually dated to the second century before Christ, about a thousand years older; most differences spelling and small points of grammar | The trust answer ("The evidence"); BSB Isaiah 40:8 |
+| is-the-bible-true 6 | Luke says he investigated carefully; the Pilate stone at Caesarea (prefect of Judea), found 1961; the Tel Dan inscription, found 1993, the House of David | The trust answer ("On the third"); BSB Luke 1:3 |
+| is-the-bible-true 7 to 8 | None of this proves the Bible is the word of God; a carefully kept record, written close to the events, by people who expected to be checked; the real question is what to make of Jesus; read one Gospel whole and argue with the book, not a rumor | The trust answer ("What this does not prove" and its first paragraph); BSB John 20:31 |
+| is-the-bible-true drawings | No letters on any page, scroll or stone | Deliberate: nothing made to look like a real manuscript or inscription |
+| spirit-in-a-believer 1 | The Holy Spirit the third person of the Trinity, fully God, dwells in believers, gives life with God; not a force | Family catechism Q41; the Holy Spirit film's caution; BSB Romans 8:9 |
+| spirit-in-a-believer 2 | The Spirit unites believers to Christ; the vine and the branches; apart from him nothing | Catechism Q45; BSB John 15:5 |
+| spirit-in-a-believer 3 | Adopted: God's own children, a sure place in his family; the Spirit of his Son crying "Abba, Father"; Abba the Aramaic word for father | Catechism Q43; BSB Galatians 4:6; Mark 14:36 ("Abba, Father") and Romans 8:15. The popular gloss "Daddy" is not used: it is disputed |
+| spirit-in-a-believer 4 | The lifelong work of the Spirit by which believers grow more like Jesus; nine kinds of fruit | Catechism Q44 and Q63; BSB Galatians 5:22-23 |
+| spirit-in-a-believer 5 | Gifts to each, for the common good; teaching, serving, encouraging, giving, leading, mercy; the body | BSB 1 Corinthians 12:7; Romans 12:6-8 |
+| spirit-in-a-believer 6 and differ | Shared: the Spirit is God, gives new life, lives in every believer, gives gifts. Differ: whether tongues, prophecy and healing continue as in Acts; whether the baptism of the Spirit is a distinct experience after first believing; when and how the Spirit is received; no side | The Holy Spirit film's `differ` (`films/holy-spirit.json`); the Study Bible note on Acts 2 (Pentecostal and charismatic reading; continuationist and cessationist) |
+| spirit-in-a-believer 7 | When believers do not know how to pray, the Spirit intercedes | BSB Romans 8:26 |
+| all three films, verses | Every `verse` | BSB, by the validator (the answers quote the ESV; the films quote the BSB) |
+
+Deliberately left out of the three films: every first-person sentence of the answers; Mackie, Rowe, Plantinga, Draper, Lewis, Wolterstorff and the rest (the films link the answers for the arguments); any reason given for any one person's suffering; manuscript counts beyond "more than five thousand"; a date for any New Testament book; the order of new birth and faith (Reformed and Arminian churches differ; the film says only that the Spirit gives new life); the meaning "Daddy" for Abba.

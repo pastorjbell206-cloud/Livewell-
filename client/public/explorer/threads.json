@@ -31,19 +31,58 @@
     {
       "id": "promise",
       "name": "The promise",
-      "status": "coming",
+      "status": "finished",
       "line": {
         "younger": "God makes promises to his people, and he always keeps them.",
         "older": "God binds himself to people by covenant: with Noah, Abraham, Israel at Sinai and David, and at last the new covenant in Jesus."
+      },
+      "key": {
+        "made": "God makes a covenant promise, or renews it",
+        "kept": "God keeps what he promised",
+        "waited": "The promise is waited for"
+      },
+      "broken": ["waited"],
+      "stops": {
+        "fall": { "state": "made", "line": "After the flood God set his rainbow in the clouds as “a sign of the covenant between Me and the earth.”", "ref": "Genesis 9:13" },
+        "abraham": { "state": "made", "line": "The LORD made a covenant with Abram, and promised that “all the families of the earth will be blessed through you.”", "ref": "Genesis 15:18; Genesis 12:3" },
+        "rescue": { "state": "kept", "line": "God heard his people groaning in Egypt, “and He remembered His covenant with Abraham, Isaac, and Jacob.”", "ref": "Exodus 2:24" },
+        "sinai": { "state": "made", "line": "At Sinai God said, “if you will indeed obey My voice and keep My covenant, you will be My treasured possession.”", "ref": "Exodus 19:5" },
+        "land": { "state": "kept", "line": "In the land, “Not one of all the LORD’s good promises to the house of Israel had failed; everything was fulfilled.”", "ref": "Joshua 21:45" },
+        "kingdom": { "state": "made", "line": "God promised David a son whose throne would last for ever. A psalm sings, “I have made a covenant with My chosen one.”", "ref": "Psalm 89:3; 2 Samuel 7:16" },
+        "exile": { "state": "made", "line": "The people had broken the covenant, and God promised a new one: “I will put My law in their minds and inscribe it on their hearts.”", "ref": "Jeremiah 31:31-33" },
+        "return": { "state": "waited", "line": "The people came home and waited. Malachi promised that the Lord they were seeking would come to his temple: “the Messenger of the covenant, in whom you delight.”", "ref": "Malachi 3:1" },
+        "jesus": { "state": "kept", "line": "Before Jesus was born, Zechariah sang that God had come to remember “His holy covenant, the oath He swore to our father Abraham.”", "ref": "Luke 1:72-73" },
+        "cross": { "state": "made", "line": "At the last supper Jesus took the cup and said, “This cup is the new covenant in My blood, which is poured out for you.”", "ref": "Luke 22:20" },
+        "church": { "state": "kept", "line": "Paul writes that every one of God's promises is “Yes” in Christ.", "ref": "2 Corinthians 1:20" },
+        "new-creation": { "state": "kept", "line": "At the end the old promise is kept in full: “They will be His people, and God Himself will be with them as their God.”", "ref": "Revelation 21:3" }
       }
     },
     {
       "id": "lamb",
       "name": "The lamb",
-      "status": "coming",
+      "status": "finished",
       "line": {
-        "younger": "Again and again a lamb dies in the place of someone else, until Jesus, the Lamb of God.",
-        "older": "Sacrifice runs from the garden to the cross: a substitute, a covering, a price paid by another."
+        "younger": "Again and again in the Bible, an animal is given in someone's place, or a lamb is a sign of rescue, until Jesus, the Lamb of God.",
+        "older": "Sacrifice runs from the garden to the cross: a covering, a substitute, a lamb that marks a rescued home, a goat that carries wrongs away, until the one sacrifice of Jesus, the Lamb of God."
+      },
+      "key": {
+        "points": "A sacrifice points ahead: a covering, a substitute, a lamb",
+        "lamb": "Jesus, the Lamb of God, and his one sacrifice"
+      },
+      "broken": ["points"],
+      "stops": {
+        "fall": { "state": "points", "line": "After they sinned, God himself made garments of skin and clothed the man and the woman: a better covering than the leaves they had sewn.", "ref": "Genesis 3:21" },
+        "abraham": { "state": "points", "line": "On the mountain Abraham told Isaac, “God Himself will provide the lamb,” and God provided a ram, offered “in place of his son.”", "ref": "Genesis 22:8-13" },
+        "rescue": { "state": "points", "line": "At the first Passover each family's lamb marked their home. God said, “when I see the blood, I will pass over you.”", "ref": "Exodus 12:13" },
+        "sinai": { "state": "points", "line": "On the Day of Atonement the high priest laid the people's wrongs on a goat, which carried them away into the wilderness.", "ref": "Leviticus 16:21-22" },
+        "land": { "state": "points", "line": "In the land, camped at Gilgal, the people kept the Passover, remembering the lamb and the rescue.", "ref": "Joshua 5:10" },
+        "kingdom": { "state": "points", "line": "David learned that God wants more than offerings: “The sacrifices of God are a broken spirit.”", "ref": "Psalm 51:16-17" },
+        "exile": { "state": "points", "line": "Isaiah spoke of a servant who “was led like a lamb to the slaughter.” Christians, from the first church on, read that servant as Jesus; many Jewish readers read him as the people of Israel.", "ref": "Isaiah 53:7; Acts 8:32-35" },
+        "return": { "state": "points", "line": "When the temple was rebuilt, the exiles who had come home kept the Passover again.", "ref": "Ezra 6:19-20" },
+        "jesus": { "state": "lamb", "line": "John the Baptist saw Jesus coming and said, “Look, the Lamb of God, who takes away the sin of the world!”", "ref": "John 1:29" },
+        "cross": { "state": "lamb", "line": "Jesus died at Passover, when the Passover lamb was sacrificed. Paul writes, “Christ, our Passover lamb, has been sacrificed.”", "ref": "Mark 14:12; 1 Corinthians 5:7" },
+        "church": { "state": "lamb", "line": "The letter to the Hebrews says Jesus “offered for all time one sacrifice for sins” and sat down at God's right hand.", "ref": "Hebrews 10:10-12" },
+        "new-creation": { "state": "lamb", "line": "In the city there is no need of sun or moon: “the glory of God illuminates the city, and the Lamb is its lamp.”", "ref": "Revelation 21:23" }
       }
     },
     {
@@ -73,6 +112,35 @@
         "cross": { "state": "reigns", "line": "The soldiers crowned Jesus with thorns, and the charge over the cross read “THE KING OF THE JEWS.” On the third day God raised him.", "ref": "Mark 15:26" },
         "church": { "state": "reigns", "line": "God seated the risen Jesus at his right hand and made him “head over everything for the church,” which is his body.", "ref": "Ephesians 1:20-23" },
         "new-creation": { "state": "reigns", "line": "At the end, “The throne of God and of the Lamb will be within the city,” and his people reign with him for ever.", "ref": "Revelation 22:3-5" }
+      }
+    },
+    {
+      "id": "spirit",
+      "name": "The Holy Spirit",
+      "status": "finished",
+      "line": {
+        "younger": "God's Holy Spirit is at work from the first page to the last: making, giving life, helping people God chose for a task, and at last living in all God's people.",
+        "older": "The Spirit of God hovers over the first waters, comes on judges, kings and prophets for a task, is promised for all God's people, rests on Jesus, and is poured out at Pentecost to live in the church."
+      },
+      "key": {
+        "works": "The Spirit is at work: making, giving life, or coming on someone for a task",
+        "promised": "The Spirit is promised for all God's people, and waited for",
+        "poured": "The Spirit is poured out and lives in God's people"
+      },
+      "broken": ["promised"],
+      "stops": {
+        "creation": { "state": "works", "line": "At the very beginning, “the Spirit of God was hovering over the surface of the waters.”", "ref": "Genesis 1:2" },
+        "abraham": { "state": "works", "line": "Even Pharaoh saw God at work in Joseph, and asked, “Can we find anyone like this man, in whom the Spirit of God abides?”", "ref": "Genesis 41:38" },
+        "rescue": { "state": "works", "line": "Long afterward, Isaiah looked back on the crossing of the sea and spoke of God as the One “who set His Holy Spirit among them.”", "ref": "Isaiah 63:11" },
+        "sinai": { "state": "works", "line": "God filled Bezalel “with the Spirit of God, with skill, ability, and knowledge” to make the tent where God would live among his people.", "ref": "Exodus 31:3" },
+        "land": { "state": "works", "line": "The Spirit of the LORD came upon Gideon and other judges for a task. Moses had wished that the LORD would put his Spirit on all his people.", "ref": "Judges 6:34; Numbers 11:29" },
+        "kingdom": { "state": "works", "line": "When Samuel anointed David, “the Spirit of the LORD rushed upon David from that day forward.” Later David prayed, “take not Your Holy Spirit from me.”", "ref": "1 Samuel 16:13; Psalm 51:11" },
+        "exile": { "state": "promised", "line": "In the exile God promised a new heart: “I will put My Spirit within you.” Joel heard God promise to pour out his Spirit on all people.", "ref": "Ezekiel 36:26-27; Joel 2:28" },
+        "return": { "state": "works", "line": "To the people rebuilding the temple God said, “My Spirit remains among you; do not be afraid,” and the work would be done “Not by might nor by power, but by My Spirit.”", "ref": "Haggai 2:5; Zechariah 4:6" },
+        "jesus": { "state": "works", "line": "At his baptism Jesus saw “the Spirit descending on Him like a dove,” and he said, “The Spirit of the Lord is on Me.”", "ref": "Mark 1:10; Luke 4:18" },
+        "cross": { "state": "promised", "line": "The night before he died, Jesus promised his friends another Advocate, the Spirit of truth. Risen, he told them to wait in the city until they were “clothed with power from on high.”", "ref": "John 14:16-17; Luke 24:49" },
+        "church": { "state": "poured", "line": "At Pentecost “they were all filled with the Holy Spirit.” Paul tells the church that God's Spirit dwells in them: they are God's temple.", "ref": "Acts 2:4; 1 Corinthians 3:16" },
+        "new-creation": { "state": "poured", "line": "On the Bible's last page the Spirit and the bride, the church, both say “Come,” inviting everyone who is thirsty to the water of life.", "ref": "Revelation 22:17" }
       }
     },
     {
