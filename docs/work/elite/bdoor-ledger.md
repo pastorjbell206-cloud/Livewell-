@@ -9275,3 +9275,42 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | 2 Corinthians 10:4 | 10-20 | BSB | BSB text |
 | Tychicus from Asia (Acts 20:4); Colossians 4:7-9 with Onesimus; sent at the same time "many readers"; no personal greetings fits a circular letter | 21-24 | Deep note `historical`, `literary`; BSB | Repository |
 | Numbers 6:24-26 | 21-24 | BSB | BSB text |
+
+## Philippians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/philippians/intro.json`, field
+`teaching`. 2 searches, run on 2026-11-20. Views are paraphrased; no modern scholar is
+named. Scripture is the BSB in the repository, checked by the validator and the strict
+check. Creed wording is quoted from `client/public/creeds/documents/`.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul and Timothy (1:1); Paul speaks of Timothy in the third person (2:19-22); Timothy joined Paul before the founding (Acts 16:1-3) | BSB; chapter 2 deep note `historical` | BSB text; repository |
+| Nearly all scholars, critical and traditional, accept Paul's authorship | Repository `author` | Repository |
+| Polycarp, bishop of Smyrna, early second century, wrote to the Philippians and says Paul, when absent, wrote them letters (Polycarp, Philippians 3.2) | Repository `author` | Search: perseids.org (Epistula ad Philippenses 3.1-3.3, Perseus translation); ccel.org (Richardson, Early Christian Fathers); libraryguides.helsinki.fi. Paraphrased, not quoted |
+| Philippi in Macedonia on the Via Egnatia; named for Philip II, father of Alexander | Repository `setting` | Repository |
+| 42 BC battle (Antony and Octavian against Brutus and Cassius); veterans settled; after Actium (31 BC) more settlers and the colony refounded | Repository `setting` | Search: worldhistory.org "Philippi"; biblegateway.com Encyclopedia of the Bible "Philippi"; Wikipedia "Philippi" (Antony's veterans after 42; Octavian's reorganisation after Actium; some sources give 30 BC for Actium, most 31) |
+| Colony: Roman citizens, law and officials; pride; politeuomai (1:27) and politeuma (3:20) | Repository `setting`; chapter 1 and 3 deep notes | Repository |
+| Founding about AD 49 to 50; Lydia, the place of prayer on the Sabbath, the slave girl, the beating, the hymns, the earthquake, the jailer (Acts 16) | Repository `setting`; BSB Acts 16:13-34 | BSB text. Luke not named as a companion (‘we’ inference left out) |
+| Only Philippi supported Paul on leaving Macedonia; help to Thessalonica more than once (4:15-16) | BSB; chapter 4 deep note | BSB text |
+| Three places of writing: Rome about 60 to 62, most; Ephesus mid-50s (2 Corinthians 11:23; danger in Asia; distance and the trips); Caesarea about 57 to 59 (Acts 23:35); praetorium and ‘household of Caesar’ fit more than one; no side | Repository `date`; chapter 1 and 4 deep notes | Repository |
+| Unity of the letter: the turn at 3:1-2; the thanks late (4:10-20); two or three letters, or one; ‘finally’ as a turn; no side | Repository `author` | Repository |
+| 2:6-11 a hymn, "many scholars"; others think Paul wrote it; two movements | Chapter 2 deep note `literary` | Repository |
+| Crucifixion for slaves and rebels | Chapter 2 deep note `cultural` | Repository |
+| Nicene Creed and Chalcedon quoted | creeds/documents/nicene-creed.json; chalcedonian-definition.json | Read from the files |
+| ‘Emptied’ explained by what he took on; kenotic theories of the 1800s; many holders mean to keep the creeds; teaching that Christ stopped being God outside the confession | Chapter 2 deep note `hard` | Repository. Gore, Forsyth, Mackintosh, Evans, Davis, Gorman and Dunn not named |
+| Joy words more than a dozen times; the ‘mind’ verb; koinonia; citizenship; the day of Christ | Repository `themes`; chapter 1 `words` | Repository |
+| Isaiah 45:23 behind 2:10-11; Isaiah 52:13, 53:12 | Chapter 2 deep note `literary`; repository `story`; BSB | BSB text |
+| 1:19 matches the old Greek of Job 13:16 | Chapter 1 deep note `literary` | Repository (BSB Job 13:16 differs, so not quoted as Paul's words) |
+| Deuteronomy 32:5 behind 2:15; drink offering Numbers 28:7 | Chapter 2 deep note `cultural`; BSB | BSB text |
+| Genesis 17:12; Jeremiah 9:24 | BSB | BSB text |
+| Autarkēs a Stoic word; Paul's contentment from Christ | Chapter 4 deep note `cultural` | Repository |
+| 4:13 in context; printed on sports shirts and wristbands | Repository `overview`, `reading`; context guide philippians-4-13-in-context | Repository |
+| 4:6 not a rebuke; Paul ‘less anxious’ (2:28); medical help not forbidden | wisdom/deep/anxiety.json `misread` | Repository wording, paraphrased |
+| 3:2 a dispute among believers about Gentile converts; Paul a Jew (3:5); pointer to the Acts 2:22-28 note | Chapter 3 deep note `historical`; acts/plain/2.json | Repository |
+| Prosperity and nationalist readings named as errors, no one named | CLAUDE.md guardrails | No factual claim |
+| Map: Philippi, Thessalonica | wmap-ledger | Ledger |
+| Map: Ephesus, Caesarea, Rome | Ephesians book page ledger; wmap-ledger | Ledger |
+
+Cut: Luke as one of the founding party; the Latin names of the colony; the number of
+settlers after Actium; the scholars named in the deep note on 2:6-11.
