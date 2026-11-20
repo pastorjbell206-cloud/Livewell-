@@ -8440,3 +8440,31 @@ Six searches (capite velato; Roman women's head covering; the Catholic law of 19
 | Psalm 103:13-14; Hebrews 12:6; Amos 2:7 | 27-34 | BSB | BSB text |
 
 Cut: the Augustus statue from the Via Labicana by name (not found); Bruce Winter by name and book (title not checked); the "ecstatic cults" with unbound hair (deep note; not checked); Orthodox women's covering (not searched); the Qumran angels; the size of Corinthian dining rooms in square metres; Lutheran teaching that the unworthy also receive the body (not checked); the Small Catechism by name.
+
+## The plain notes on 1 Corinthians 12 (2026-11-20)
+
+One search (Livy's fable of the body). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Most of the church once pagans (12:2); tongues prized by some | 1-3 | BSB; deep note `cultural` | Repository |
+| Anathema Iēsous; three readings, uncertain | 1-3 | Repository Greek (12:3); deep note `cultural` | Stated as uncertain |
+| Kyrios for the emperor and gods, and for the LORD in the Greek Old Testament | 1-3 | Chapter 8 rows (Roman-world portrait); Romans plain notes | Ledger |
+| Psalm 115:5; Habakkuk 2:18; Isaiah 45:23; Philippians 2:11; Deuteronomy 21:23; Galatians 3:13 | 1-3 | BSB | BSB text |
+| Charismata from charis; phanerōsis; ‘for the common good’ | 4-11 | Repository Greek (12:7); deep note `words` | Script |
+| Exodus 31:3; Numbers 11:29; Joel 2:28; Isaiah 11:2 | 4-11 | BSB | BSB text |
+| Gifts today: pointer to the Acts 2 plain note and to 13:8-12 | 4-11, 27-31 | Acts 2 plain note | Repository |
+| 12:13 ‘we were all’; ‘made to drink’ | 12-13 | Repository Greek (12:13) | Script |
+| Spirit baptism: at conversion for all; Pentecostal subsequent baptism; water, Spirit or both; pointers to Acts 2, Acts 8, Acts 2:37-41 | 12-13 | Acts 2 and 8 plain notes; deep note `hard` | Repository |
+| Isaiah 44:3; Ezekiel 36:27; Deuteronomy 6:4 | 12-13 | BSB | BSB text |
+| Livy: Menenius Agrippa's fable of the members and the belly during the common people's secession; used to restore order; Paul reworks the picture | 14-26 | Livy 2.32; scholarship | Search: hts.org.za (HTS 2021); cambridge.org (JSNT 2018 article on Paul and the fable); hrcak.srce.hr. Year (494 BC) not on the page |
+| Psalm 138:6; 1 Samuel 2:8; Genesis 2:7; Psalm 139:14 | 14-26 | BSB | BSB text |
+| Kybernēsis related to the pilot's word (Acts 27:11 kybernētēs) | 27-31 | Repository Greek (12:28; Acts 27:11) | Script |
+| 12:29-30 questions with mē expect ‘no’ | 27-31 | Repository Greek | Script |
+| Tongues last in both lists | 27-31 | BSB; deep note `words` | BSB text |
+| Lists not complete: Romans 12:6-8; Ephesians 4:11; 1 Peter 4:10-11; 7:7 | 27-31 | BSB | BSB text |
+| Apostles today: most churches no replacement of the first apostles; some use the word for missionaries; some charismatic churches recognise apostles | 27-31 | General | Stated as views |
+| 12:31 command or statement | 27-31 | Commentary options | Stated as two readings |
+| Numbers 11:16-17, 25 | 27-31 | BSB | BSB text |
+
+Cut: the priestess at Delphi and the cults of Dionysus (deep note; not checked); Stoic writers on the body (not checked); "ship's pilot" as the meaning of kybernēsis itself (narrowed to "related to").
