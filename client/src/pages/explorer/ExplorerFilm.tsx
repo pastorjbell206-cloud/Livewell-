@@ -102,6 +102,21 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The argument from why anything exists at all, in six pictures: what it shows, what it does not, and where to weigh the case against.",
     },
+    "sixty-six-books": {
+      title: "How the 66 books fit together: Bible Explorer",
+      description:
+        "The Bible as a library of sixty-six books in seven moving pictures: two testaments, the kinds of writing on each shelf, and the one story that runs through them all.",
+    },
+    "the-church": {
+      title: "What the church is: Bible Explorer",
+      description:
+        "What the church is, in seven moving pictures: a people, one body, living stones, a family, gathered and sent, and what churches share where they differ.",
+    },
+    "did-jesus-come-back-to-life": {
+      title: "Did Jesus really come back to life?: Bible Explorer",
+      description:
+        "The historical case for the resurrection in seven pictures: the facts nearly every historian grants, the other explanations, and what history can and cannot show.",
+    },
     "who-made-god": {
       title: "Who made God?: Bible Explorer",
       description:

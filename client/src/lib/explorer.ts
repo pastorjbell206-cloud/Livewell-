@@ -345,6 +345,65 @@ export function filmsFor(
   );
 }
 
+// ── Paul's travels: the moving map ────────────────────────────────────────
+
+/** One step of a trip: a place (an id in the Acts book page's map), how Acts says the leg into it was made, and what happened there. */
+export interface TravelStep {
+  id: string;
+  place: string;
+  /** A name for the list when the place comes twice ("Back through the towns"). */
+  name?: string;
+  /** "sea": Acts says they sailed. "land": overland, or Acts does not say. */
+  by: "start" | "sea" | "land";
+  /** Places named on the way, drawn on the line before this step. */
+  via?: string[];
+  ref: string;
+  text: string;
+}
+
+export interface Trip {
+  id: string;
+  name: string;
+  range: string;
+  line: string;
+  steps: TravelStep[];
+}
+
+export interface TravelChurch {
+  id: string;
+  name: string;
+  places: string[];
+  /** "paul": begun on Paul's travels; "before": there before Paul came. */
+  begun: "paul" | "before";
+  ref: string;
+  text: string;
+  letters: { book: string; name: string; note: string }[];
+}
+
+export interface Travels {
+  frame: "mediterranean";
+  intro: string;
+  routeNote: string;
+  trips: Trip[];
+  churchesIntro: string;
+  churches: TravelChurch[];
+  churchesNote: string;
+}
+
+export const TRAVELS_PATH = `${EXPLORER_PATH}/pauls-travels`;
+
+export function isTravels(x: unknown): x is Travels {
+  return (
+    isObj(x) &&
+    Array.isArray(x.trips) &&
+    x.trips.length > 0 &&
+    Array.isArray(x.churches)
+  );
+}
+
+export const fetchTravels = () =>
+  fetchJson("/explorer/travels.json", isTravels);
+
 // ── Threads ───────────────────────────────────────────────────────────────
 
 /** The stops a thread lights, in map order, with how it shows at each. */

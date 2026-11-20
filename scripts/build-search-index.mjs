@@ -8,6 +8,7 @@
  * only each one's name, the words people use for it, and a line to show.
  *
  *   Wisdom topics        client/public/wisdom/topics.json      -> /wisdom/<id>
+ *   Wisdom in depth      client/public/wisdom/deep/<id>.json   -> /wisdom/<id>#misread, #whole, #differ
  *   Honest Answers       client/src/data/answers.ts            -> /answers/<slug>
  *   Family devotions     client/public/family-devotions*.json  -> /family/devotions/<id> (every live strand)
  *   Family Catechism     client/public/family-catechism.json   -> /family/catechism
@@ -81,6 +82,61 @@ function wisdom() {
   }));
 }
 
+/**
+ * The deep sections of a topic written in full (wisdom/deep/<id>.json), each
+ * opening at its own section of /wisdom/<id>: the often-misread verses (found
+ * by the saying people quote, such as "spare the rod"), what the whole Bible
+ * says, and where Christians differ. A topic not yet written in full adds
+ * nothing.
+ */
+function wisdomDeep() {
+  const dir = path.join(PUB, "wisdom/deep");
+  if (!fs.existsSync(dir)) return [];
+  const labels = new Map(readJson("wisdom/topics.json").topics.map((t) => [t.id, str(t.label)]));
+  const sayings = (s) => [...str(s).matchAll(/“([^”]+)”/g)].map((m) => m[1]);
+  const many = (n, one, more) => (n > 1 ? more : one);
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .flatMap((f) => {
+      const d = readJson(`wisdom/deep/${f}`);
+      const label = labels.get(d.id);
+      if (!label) return [];
+      const href = `/wisdom/${d.id}`;
+      const out = [];
+      const misread = d.misread ?? [];
+      if (misread.length) {
+        const refs = misread.map((m) => str(m.ref));
+        const n = refs.length;
+        out.push({
+          title: `${label}: often misread`,
+          blurb: `${refs.join("; ")}: how ${many(n, "it is", "they are")} often taken, and what ${many(n, "it says", "they say")} where ${many(n, "it stands", "they stand")}.`,
+          facet: "Often misread",
+          keywords: `misread misused verse out of context ${refs.join(" ")} ${misread.flatMap((m) => sayings(m.taken)).join(" ")}`.trim(),
+          href: `${href}#misread`,
+        });
+      }
+      out.push({
+        title: `${label}: what the whole Bible says`,
+        blurb: clip((d.whole ?? [])[0]),
+        facet: "The whole Bible",
+        keywords: `what does the bible say ${(d.passages ?? []).map((p) => str(p.ref)).join(" ")}`,
+        href: `${href}#whole`,
+      });
+      if (d.differ) {
+        out.push({
+          title: `${label}: where Christians differ`,
+          blurb: clip(d.differ.share),
+          facet: "Where Christians differ",
+          keywords: `christians disagree views denominations ${(d.differ.views ?? []).map((v) => str(v.name)).join(" ")}`,
+          href: `${href}#differ`,
+        });
+      }
+      return out;
+    });
+}
+
 function answers() {
   return ANSWERS.map((a) => ({
     title: str(a.question),
@@ -114,6 +170,7 @@ const MAIN_PAGES = [
   { title: "The Study Bible", href: "/study/bible", blurb: "Every book and chapter of the Bible, with study notes and the Hebrew and Greek beneath each word.", keywords: "study bible read scripture books chapters notes hebrew greek who wrote the bible" },
   { title: "Study the Bible: where to start", href: "/study", blurb: "The Study Bible, church history, the creeds, and guides to reading Scripture in the world it was written in.", keywords: "bible study learn start begin how to read the bible" },
   { title: "Bible Explorer", href: "/study/explorer", blurb: "The whole Bible as one story on one illustrated map, for ages 7 to 16.", keywords: "kids children teens youth young people bible map pictures story of the bible for kids teenagers illustrated explorer" },
+  { title: "Paul's travels", href: "/study/explorer/pauls-travels", blurb: "A map of Acts that draws itself: Paul's three trips and the voyage to Rome, place by place, and the churches he wrote to.", keywords: "paul apostle missionary trips map acts travels voyage rome shipwreck malta churches planted letters galatia philippi corinth ephesus kids teens explorer" },
   { title: "Watch and learn", href: "/study/explorer#watch", blurb: "Short moving pictures for ages 7 to 16: the whole Bible's story, big ideas, what we believe, and good questions.", keywords: "kids children teens video animation animated explainer moving pictures films watch bible explorer" },
   { title: "The whole Bible in two minutes", href: "/study/explorer/watch/bible-two-minutes", blurb: "The whole story of the Bible, from creation to the new creation, drawn as one road in nine pictures.", keywords: "kids children teens bible overview summary story animation video watch explorer" },
   { title: "The Holy Spirit through the Bible", href: "/study/explorer/watch/holy-spirit", blurb: "The Holy Spirit from the first page of the Bible to the last, in eight moving pictures.", keywords: "kids children teens holy spirit pentecost dove animation video watch explorer" },
@@ -125,6 +182,9 @@ const MAIN_PAGES = [
   { title: "The gospel in a minute", href: "/study/explorer/watch/gospel-in-a-minute", blurb: "The good news of Jesus in seven moving pictures, short enough to share.", keywords: "gospel good news saved salvation grace faith short video share facebook minute animation watch explorer" },
   { title: "Does God exist?", href: "/study/explorer/watch/does-god-exist", blurb: "Why is there anything at all? The argument from contingency in six moving pictures: what it shows, and what it does not.", keywords: "does god exist is god real proof evidence contingency something rather than nothing video animation watch explorer" },
   { title: "Who made God?", href: "/study/explorer/watch/who-made-god", blurb: "A child's honest question, taken seriously in six moving pictures.", keywords: "kids children teens who made god where did god come from eternal animation video watch explorer" },
+  { title: "How the 66 books fit together", href: "/study/explorer/watch/sixty-six-books", blurb: "The Bible as a library of sixty-six books, sorting itself onto its shelves in seven moving pictures.", keywords: "kids children teens books of the bible library old testament new testament law history poetry prophets gospels letters animation video watch explorer" },
+  { title: "What the church is", href: "/study/explorer/watch/the-church", blurb: "The church as people, one body, living stones and a family, gathered and sent, in seven moving pictures.", keywords: "kids children teens church body of christ living stones fellowship baptism animation video watch explorer" },
+  { title: "Did Jesus really come back to life?", href: "/study/explorer/watch/did-jesus-come-back-to-life", blurb: "The case for the resurrection, told honestly for young readers in seven moving pictures.", keywords: "kids children teens resurrection easter empty tomb rose from the dead is it true evidence animation video watch explorer" },
   { title: "The story of the Bible", href: "/study/bible/story", blurb: "The whole Bible as one story, told in eleven acts.", keywords: "storyline overview big picture summary of the bible" },
   { title: "What the Bible teaches", href: "/study/bible/doctrines", blurb: "The main teachings of the faith, each followed through the chapters that teach it.", keywords: "doctrine doctrines theology beliefs" },
   { title: "Guides to reading the Bible", href: "/study/bible/guides", blurb: "Short guides to what the Bible is, how it came to us, and how to read it.", keywords: "how to read the bible who wrote the bible canon translations" },
@@ -363,7 +423,7 @@ export function buildSearchIndex() {
       source("Church History", "/theology/history", history()),
       source("Family Devotions", "/family/devotions", [...devotions(), ...seasonal()]),
       source("Family Catechism", "/family/catechism", catechism()),
-      source("What the Bible Says", "/wisdom", wisdom()),
+      source("What the Bible Says", "/wisdom", [...wisdom(), ...wisdomDeep()]),
     ],
   };
 }

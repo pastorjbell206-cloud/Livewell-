@@ -492,7 +492,7 @@ describe("Listen", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the ten finished films", () => {
+  it("lists the four groups and the thirteen finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -502,14 +502,17 @@ describe("the data", () => {
     expect(READY.map(f => f.slug)).toEqual([
       "bible-two-minutes",
       "bible-in-a-minute",
+      "sixty-six-books",
       "holy-spirit",
       "god-with-his-people",
       "who-god-is",
       "why-jesus-died",
       "how-salvation-works",
       "gospel-in-a-minute",
+      "the-church",
       "who-made-god",
       "does-god-exist",
+      "did-jesus-come-back-to-life",
     ]);
   });
 
@@ -777,5 +780,36 @@ describe("the video export", () => {
     act(() => api.show(FILM.frames.length));
     expect(document.querySelector(".fx-card--close.is-on")).toBeTruthy();
     expect(vi.getTimerCount()).toBe(0);
+  });
+});
+
+describe("the three films of 2026-11-21", () => {
+  it("Did Jesus really come back to life? keeps to the Honest Answer, in the third person, and points to it", () => {
+    const film = filmFile("did-jesus-come-back-to-life");
+    expect(film.frames.length).toBe(7);
+    for (const fr of film.frames)
+      for (const level of ["younger", "older"] as const)
+        expect(fr[level], fr.id).not.toMatch(/\b(I|I'm|I've|my|me)\b/);
+    const all = JSON.stringify(film);
+    expect(all).toMatch(/isn't a proof/);
+    expect(all).not.toMatch(/testimony of women|women's testimony/i);
+    expect(film.end.href).toBe("/answers/did-the-resurrection-actually-happen");
+  });
+
+  it("How the 66 books fit together names the other Bibles plainly and takes no side on authorship or dates", () => {
+    const film = filmFile("sixty-six-books");
+    const all = JSON.stringify(film);
+    expect(all).toMatch(
+      /Roman Catholic and Orthodox Bibles include further books/
+    );
+    expect(all).not.toMatch(/\b\d{3,4} ?(BC|AD)\b|\b(BC|AD) ?\d/);
+    expect(all).not.toMatch(/Moses wrote|Paul wrote Hebrews|written by Luke/i);
+  });
+
+  it("What the church is says what churches share and that they differ, without a side", () => {
+    const film = filmFile("the-church");
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+    expect(film.care).toMatch(/not your fault/);
+    expect(film.share?.level).toBe("younger");
   });
 });

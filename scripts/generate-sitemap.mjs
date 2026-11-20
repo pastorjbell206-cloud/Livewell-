@@ -342,6 +342,7 @@ function manifestPages() {
     // The Bible Explorer: the map, and each stop once it is finished (a stop
     // still being drawn has no link and no place in the sitemap).
     pages.push({ url: "/study/explorer", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/explorer/pauls-travels", priority: "0.7", changefreq: "monthly" });
     if (fs.existsSync("client/public/explorer/index.json"))
       for (const st of JSON.parse(fs.readFileSync("client/public/explorer/index.json", "utf8")).stops)
         if (st.status === "finished") pages.push({ url: `/study/explorer/${st.slug}`, priority: "0.7", changefreq: "monthly" });

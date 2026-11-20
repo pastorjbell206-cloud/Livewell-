@@ -1,0 +1,94 @@
+{
+  "slug": "did-jesus-come-back-to-life",
+  "title": "Did Jesus really come back to life?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "did-jesus-come-back-to-life",
+  "line": {
+    "younger": "Christians say Jesus died and came back to life. Is it true? An honest look at what happened, in seven pictures.",
+    "older": "The historical case for the resurrection in seven pictures: the facts nearly every historian grants, the other explanations, and what history can and cannot show."
+  },
+  "poster": "A garden at dawn: a far hill with an empty cross on it, and a tomb cut in the rock with a round stone across its door.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "A fair question",
+      "still": "A garden at dawn: a far hill with an empty cross on it, and a tomb cut in the rock with a round stone across its door.",
+      "younger": "Christians say that Jesus died on a cross and that God raised him back to life. That is a big claim, and it is fair to ask whether it really happened.",
+      "older": "Christians claim that God raised Jesus from the dead. The Honest Answer on LiveWell argues that the case is stronger than most people have been told. It isn't a proof: history can't prove a miracle, and the answer doesn't pretend it can."
+    },
+    {
+      "id": "died",
+      "name": "He really died",
+      "still": "The same garden. A thin ring of ink is drawn round the hilltop and its empty cross.",
+      "younger": "First, Jesus really died. He was crucified under Pontius Pilate, and even a Roman historian who despised Christians wrote it down.",
+      "older": "There is a short list of facts that nearly every historian of the period accepts, skeptics included. First, Jesus was crucified under Pontius Pilate. Early in the second century the Roman historian Tacitus, who despised Christians, recorded it."
+    },
+    {
+      "id": "seen",
+      "name": "Seen alive",
+      "still": "A group of people stands between the hill and the tomb.",
+      "younger": "Second, very soon afterward his followers were sure they had seen him alive, more than once, and many of them together. Paul wrote down a list of people Jesus appeared to.",
+      "older": "Second, his followers became convinced they had seen him alive, and the evidence for that is very early. Paul passes on a summary he had himself received, and most scholars, including many with no stake in Christianity, think it took shape within a few years of the events.",
+      "verse": {
+        "ref": "1 Corinthians 15:3-5",
+        "text": "that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures, and that He appeared to Cephas and then to the Twelve."
+      }
+    },
+    {
+      "id": "changed",
+      "name": "Two who did not believe",
+      "still": "Two more people have come from the far side of the picture to stand with the group.",
+      "younger": "Third, two people who did not believe came to believe. Paul had been trying to destroy the church. James, Jesus' own brother, had not believed in him.",
+      "older": "Third, two people who had every reason not to believe came to believe: Paul, who had persecuted the church and tried to destroy it, and James, one of the brothers of whom John writes that they did not believe in him. James went on to lead the church in Jerusalem.",
+      "verse": {
+        "ref": "John 7:5",
+        "text": "For even His own brothers did not believe in Him."
+      }
+    },
+    {
+      "id": "city",
+      "name": "In the same city",
+      "still": "The city wall stands behind the hill. The stone has rolled away from the tomb's door, and light comes from inside.",
+      "younger": "Fourth, his friends began telling people he was alive in Jerusalem, within weeks, in the very city where he had died and been buried.",
+      "older": "Fourth, the preaching began in Jerusalem, within weeks, in the city where Jesus had been executed and buried, where the claim was easiest to refute. The empty tomb is more disputed, and the answer says so plainly; but as far as the sources show, the earliest opponents argued about how the tomb became empty, not whether."
+    },
+    {
+      "id": "explanations",
+      "name": "Other explanations",
+      "still": "The people are gone. Above the open tomb a balance hangs in the sky, its two pans level.",
+      "younger": "People have offered other explanations: that his friends took the body, or that they only saw him in their sadness. Each one explains part of what happened, and struggles with the rest.",
+      "older": "The serious rival is that grieving followers had visions, and it deserves its due: grief does produce visions. But Paul wasn't mourning Jesus; he was hunting his followers, and James didn't believe in his brother while he lived. Each natural explanation covers part of the evidence and strains at the rest."
+    },
+    {
+      "id": "weigh",
+      "name": "Weigh it for yourself",
+      "still": "The balance hangs level over the open tomb, and beside it lies an open book.",
+      "younger": "This does not force anyone to believe, and even some who saw him doubted. Christians believe God raised Jesus, in his body, and that the whole story stands on it. The full answer is on LiveWell: Did the resurrection actually happen?",
+      "older": "History can't prove the resurrection, but it can move a person from dismissing the claim to weighing it. Whether you can accept the explanation that covers all the facts depends on whether you have already decided that God can't act. You can weigh it all and still say no. The full case, and the case against at its strongest, is the Honest Answer: Did the resurrection actually happen?",
+      "verse": {
+        "ref": "Matthew 28:17",
+        "text": "When they saw Him, they worshiped Him, but some doubted."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Why do you think Jesus' friends were willing to tell everyone he was alive? Ask a parent or a leader what they think.",
+    "older": "Which of the four facts seems hardest to explain if Jesus stayed dead? Which seems easiest?"
+  },
+  "read": [
+    { "label": "Luke 24", "href": "/study/bible/luke/24" },
+    { "label": "John 20", "href": "/study/bible/john/20" },
+    { "label": "1 Corinthians 15", "href": "/study/bible/1-corinthians/15" },
+    { "label": "Acts 2", "href": "/study/bible/acts/2" }
+  ],
+  "stops": ["cross"],
+  "cards": ["resurrection"],
+  "care": "If this question comes up because someone you love has died, you do not have to think it through alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Did the resurrection actually happen? (an Honest Answer, with the case against at its strongest)", "href": "/answers/did-the-resurrection-actually-happen" },
+    { "label": "Does God actually exist? (the question this one turns on)", "href": "/answers/does-god-actually-exist" }
+  ],
+  "share": {"level": "older", "frames": [{"id": "question", "verse": false}, {"id": "died", "verse": false}, {"id": "seen", "verse": false}, {"id": "changed", "text": "Third, two people who had every reason not to believe came to believe: Paul, who had persecuted the church and tried to destroy it, and James, one of the brothers of whom John writes that they did not believe in him.", "verse": false}, {"id": "city", "verse": false}, {"id": "explanations", "text": "Each natural explanation covers part of the evidence and strains at the rest.", "verse": false}, {"id": "weigh", "verse": false}]},
+  "end": { "label": "Read the Honest Answer: Did the resurrection actually happen?", "href": "/answers/did-the-resurrection-actually-happen" }
+}
