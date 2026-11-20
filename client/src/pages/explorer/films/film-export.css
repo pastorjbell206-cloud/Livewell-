@@ -19,16 +19,19 @@
   --fx-gap: 22px;
   --fx-pad: 40px 56px 52px;
   --fx-head: 30px;
-  --fx-stage: 860px;
+  --fx-stage: 800px;
   --fx-cap: 40px;
   --fx-title: 92px;
 }
 .fx--vertical {
+  /* The picture and its caption sit together in the middle of a tall frame. */
+  grid-template-rows: auto auto 720px;
+  align-content: center;
   --fx-gap: 34px;
   --fx-pad: 110px 64px 150px;
   --fx-head: 40px;
   --fx-stage: 952px;
-  --fx-cap: 54px;
+  --fx-cap: 58px;
   --fx-title: 112px;
 }
 .fx--wide {
@@ -127,7 +130,7 @@
   margin: 0;
   font-family: var(--font-reading);
   font-style: italic;
-  font-size: 0.82em;
+  font-size: 0.88em;
   line-height: 1.34;
 }
 .fx .fx-cap__verse .fx-cap__ref {
@@ -183,7 +186,7 @@
   max-width: 24em;
   margin: calc(var(--fx-title) * 0.35) 0 0;
   font-family: var(--font-reading);
-  font-size: calc(var(--fx-title) * 0.38);
+  font-size: calc(var(--fx-title) * 0.42);
   line-height: 1.4;
   color: var(--ink-muted);
 }
@@ -206,14 +209,15 @@
 .fx-card__more {
   margin: calc(var(--fx-title) * 0.6) 0 0;
   font-family: var(--font-reading);
-  font-size: calc(var(--fx-title) * 0.3);
+  font-size: calc(var(--fx-title) * 0.36);
   color: var(--ink-muted);
 }
 .fx-card__film {
   max-width: 100%;
   margin: calc(var(--fx-title) * 0.12) 0 0;
   font-family: var(--U);
-  font-size: calc(var(--fx-title) * 0.27);
-  font-weight: 500;
+  font-size: calc(var(--fx-title) * 0.34);
+  font-weight: 600;
+  line-height: 1.35;
   overflow-wrap: anywhere;
 }

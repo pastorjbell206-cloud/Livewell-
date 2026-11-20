@@ -446,7 +446,7 @@ async function render(slug, shape) {
       "-c:v",
       "libx264",
       "-preset",
-      "slow",
+      "medium",
       "-crf",
       "23",
       "-profile:v",
