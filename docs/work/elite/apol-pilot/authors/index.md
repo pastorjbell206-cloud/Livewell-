@@ -18,6 +18,7 @@ What the pages argue is narrower than either a skeptic or an anxious believer mi
 
 1. **The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?** What the titles and the earliest witnesses show, and what "anonymous" does and doesn't mean.
 2. **Weren't the Gospels written decades after Jesus by people who never met him?** The usual dates and the reasons for them, the case for earlier dates, Paul's letters from before the Gospels, and what a gap of a lifetime allows.
+3. **Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?** Form criticism, memory research, the debate over controlled tradition, and what changed and what stayed across the Gospels.
 
 ## Words these pages use
 
