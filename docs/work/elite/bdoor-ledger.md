@@ -12438,3 +12438,27 @@ Cut before publishing: ‘many Jews still wear them’ of tefillin (said only in
 | Exodus 15:1; Psalm 106:11-12; Proverbs 24:17; Ezekiel 18:23 | 26-31 | BSB | BSB text |
 
 Cut before publishing: chariot wheels said to lie on the sea floor (only in a pending apologetics piece, so not used as a source); Psalm 77:16-20 beyond the two verses quoted.
+
+## The plain notes on Exodus 15 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first hymn; parallel lines; three images of the fall; the enemy's six clauses and God's one breath | 1-12 | exodus/15.json `story`, `literary` | Repository |
+| Storm gods and the sea; ‘Who among the gods’ | 1-12 | exodus/15.json `cultural` | Repository |
+| Cross and Freedman's early date; others later | 1-12 | exodus/15.json `historical` | Repository; no side |
+| ‘The LORD is a warrior’: victory given to God; restraint (Proverbs 24:17); the angels; two readings; no side | 1-12 | exodus/15.json `hard` | Repository; no side |
+| Psalm 118:14; Isaiah 12:2; Revelation 15:3; 5:6; Proverbs 24:17 | 1-12 | BSB; exodus/15.json `christ` | BSB text |
+| Chesed; the peoples on the road; ‘mountain of Your inheritance’ read two ways | 13-18 | exodus/15.json `historical`, `words` (H2617A) | Repository |
+| Psalm 146:10; Revelation 15:3 | 13-18 | BSB | BSB text |
+| Women leading with hand drums; Jephthah's daughter; Saul and David; Miriam the first prophetess | 19-21 | exodus/15.json `cultural` | Repository |
+| Micah 6:4; 1 Samuel 18:6 | 19-21 | BSB | BSB text |
+| Three days to complaint; Shur; Marah and Elim not identified; bitter springs and oases; the testing series | 22-26 | exodus/15.json `story`, `historical` | Repository |
+| The log as the cross: a later devotional reading | 22-26 | exodus/15.json `christ` | Repository |
+| ‘No one should be told that their illness or disability is a punishment.’ | 22-26 | luke/plain/5.json (17-26 `hard`), sentence reused | Repository |
+| Deuteronomy 8:2; Psalm 103:3 | 22-26 | BSB | BSB text |
+| Twelve springs and seventy palms; the link to the tribes and the seventy only noticed, not drawn | 27 | BSB; exodus/1.json | Repository |
+| Psalm 23:2-3; Numbers 33:9 | 27 | BSB | BSB text |
+
+Cut before publishing: ‘Marah means bitter’ kept only as the text's own explanation (15:23).
