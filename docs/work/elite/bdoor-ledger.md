@@ -8399,3 +8399,44 @@ Two searches (the travelling rock or well; the cup of blessing). Scripture is th
 | Psalm 24:1; 1 Timothy 4:4; Leviticus 19:14 | 23-33 | BSB | BSB text |
 
 Cut: the rabbinic use of Psalm 24:1 as the ground for blessing before food (deep note; not checked); "a way out of a pass" for ekbasis; any named Jewish source for the travelling well.
+
+## The plain notes on 1 Corinthians 11 (2026-11-20)
+
+Six searches (capite velato; Roman women's head covering; the Catholic law of 1917 and 1983; Amish, Mennonite and Brethren covering; the Catechism and the Orthodox on the Eucharist; Westminster 29.7). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Women and men pray and prophesy (11:4-5); Joel 2:28; Acts 2:17; Acts 21:9 | 1-6 | BSB | BSB text |
+| Roman men at sacrifice and public rites often drew the toga over the head (capite velato); statues of emperors praying or sacrificing so; a likely reason for 11:4, debated | 1-6 | Open University OpenLearn "Capite velato"; Met Museum entry on a veiled head; Cambridge article on victimarii; Massey, JBL 2018, and Oster, NTS 1988, on men veiling in Corinth | Search. No scholar named on the page; stated as "one likely reason ... scholars debate it" |
+| Many scholars: respectable married Roman women usually covered their heads in public, sign of modesty and marriage; others: evidence mixed; the usual word for veil not used; hair worn up as the covering | 1-6 | Winter's argument (Plutarch cited) and its critics, as summarised | Search: bible-researcher.com; biblicalelearning.org (Meadors); cbeinternational.org; theologyintheraw.com. Stated as views; no name |
+| Shaved head shameful for a woman | 1-6 | BSB 11:5-6 | BSB text |
+| Numbers 5:18; 6:5; Ezekiel 44:20; Deuteronomy 28:13; Genesis 2:10 (Hebrew ra'shim, heads) | 1-6 | BSB; repository Hebrew | BSB text; script |
+| Kephalē: authority, source, prominence; long debate | 1-6 | Deep note `words`, `hard` | Repository; no scholar named |
+| ‘The head of Christ is God’ not less than God; the Son's willing obedience | 1-6 | Deep note `christ`; the creeds | Repository |
+| Complementarian and egalitarian paragraphs | 1-6 | Acts 18 and Romans 16 plain notes, opening sentences word for word | Repository |
+| 11:10 ‘authority on her head’; ‘a sign of’ added; two readings | 7-16 | Repository Greek (exousian echein epi tēs kephalēs) | Script |
+| ‘Because of the angels’: uncertain; angels at worship; Genesis 6 | 7-16 | Deep note `hard` | Stated as uncertain |
+| 11:15 anti peribolaiou, ‘as’ or ‘instead of’ a covering; hair as the covering | 7-16 | Repository Greek | Script |
+| Genesis 1:27; 2:18, 22-23; Exodus 18:4 (‘helper’ of God) | 7-16 | BSB | BSB text |
+| Amish and conservative Mennonite women wear a covering; Plymouth Brethren women cover in the meetings | 7-16 | Community and reference pages | Search: en.wikipedia.org "Kapp (headcovering)"; amishamerica.com; Christian headcovering article (mirror) |
+| Catholic Code of 1917 (canon 1262) asked women to cover; the 1983 Code has no such canon; some still choose to | 7-16 | Code of Canon Law | Search: catholic.com Q&A "how women came to be bare-headed in church"; catholic.com magazine; jimmyakin.com. Canon number not on the page |
+| House churches; dining room held few, others in the hall; not all could recline; rank seating and unequal food | 17-22 | wrom-ledger (Murphy-O'Connor 1983 via Horrell 2004; Winter; Pliny, Letters 2.6) | Ledger. "One scholar" unnamed |
+| Wealthy arriving early, workers late: many scholars | 17-22 | Deep note `historical`; wrom-ledger | Stated as "many scholars think" |
+| Deuteronomy 15:7; Isaiah 58:7; Proverbs 14:31; Luke 14:13 | 17-22 | BSB | BSB text |
+| Earliest written account of the Supper; letter probably mid-50s; Gospels later on most views | 23-26 | Book page (about AD 53 to 55); deep note `historical` | Repository |
+| Received and passed on: handing on tradition | 23-26 | Deep note `words` (paradosis); apol-ledger | Ledger |
+| Luke 22:19-20; Paul and Luke companions | 23-26 | BSB; Luke 22 plain note | Repository |
+| Anamnēsis; Passover remembered as one's own | 23-26 | Deep note `words` | Repository |
+| Exodus 12:14; 24:8; Jeremiah 31:31, 34 | 23-26 | BSB | BSB text |
+| Catholic: change of substance; the Catechism (1376, quoting Trent): ‘fittingly and properly’ called transubstantiation | 23-26 | Catechism of the Catholic Church | Search: usccb.org Catechism flipbook p. 349; secondary pages quoting CCC 1376. Paraphrased |
+| Orthodox: bread and wine truly become body and blood; a mystery, how not explained | 23-26 | Orthodox writers | Search: blogs.ancientfaith.com "The Doctrine of Transubstantiation in the Orthodox Church" (Dositheus, Philaret, metousiosis). Paraphrased |
+| Lutheran: in, with and under | 23-26 | Matthew 26 and Luke 22 plain notes; deep note `doctrines` | Repository |
+| Reformed: Westminster Confession 29.7: worthy receivers spiritually feed on Christ crucified and the benefits of his death, not bodily | 23-26 | Westminster Confession | Search: bpc.org WCF ch. 29; reformation21.org; learn.ligonier.org. Paraphrased |
+| Memorial view held by many Baptists and other free churches | 23-26 | Matthew 26 plain note; deep note `doctrines` | Repository. No Baptist body named |
+| Anaxiōs; diakrinō; ‘the body’ as Christ's body, the church, or both | 27-34 | Repository Greek (11:27, 29); deep note `words` | Script |
+| ‘Fallen asleep’ for believers who died | 27-34 | BSB usage (15:6, 15:18) | BSB text |
+| Not softened; no one today to read illness or death as punishment for the Supper; John 9:2-3; care line; John 6:37 | 27-34 | BSB | Site care form |
+| Who may come: churches differ (open; baptized; members of the same faith) | 27-34 | General | Stated in one sentence, no church named |
+| Psalm 103:13-14; Hebrews 12:6; Amos 2:7 | 27-34 | BSB | BSB text |
+
+Cut: the Augustus statue from the Via Labicana by name (not found); Bruce Winter by name and book (title not checked); the "ecstatic cults" with unbound hair (deep note; not checked); Orthodox women's covering (not searched); the Qumran angels; the size of Corinthian dining rooms in square metres; Lutheran teaching that the unworthy also receive the body (not checked); the Small Catechism by name.
