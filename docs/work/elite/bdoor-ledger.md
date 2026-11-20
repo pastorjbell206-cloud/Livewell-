@@ -10760,3 +10760,21 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | The hard part: what all confess; three words; Protestant, Catholic (Trent 1547), Orthodox; the 1999 statement paraphrased | 14-26 | james/2.json `hard`; doctrines/justification.json; ephesians/plain/2.json (1-10 `hard`) | Repository, no side |
 
 Cut before publishing: ‘Go in peace’ as the usual Jewish farewell; an imagined excuse for favouritism.
+
+## The plain notes on James 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Teachers honoured and a gift (1 Corinthians 12:28; Ephesians 4:11); the role sought for status; Matthew 23:8; ‘we who teach’ | 1-5 | james/3.json `historical`, `words` | Repository; BSB |
+| Bit and reins; a steering oar held by one pilot; dry summers and fires | 1-5 | james/3.json `cultural` | Repository |
+| Malachi 2:7; Ezekiel 3:18; Proverbs 18:21; 26:21 | 1-5 | BSB | BSB text |
+| Care line ‘If a leader uses his place to control ...’ | 1-5 | 1-thessalonians/plain/5.json (12-15 `hard`) | Word for word |
+| Gehenna from the Valley of Hinnom; child sacrifice there; a name for final judgment; the only use outside the Gospels | 6-12 | james/3.json `historical`, `words` (G1067) | Repository |
+| Image of God the reason not to curse; fig, olive and grape the three crops; salty springs useless | 6-12 | james/3.json `cultural`, `doctrines` | Repository |
+| Genesis 1:26; 9:6; 2 Kings 23:10; Psalm 140:3; 141:3; Matthew 12:34 | 6-12 | BSB | BSB text |
+| Care line ‘If anger has become something you cannot control ...’ | 6-12 | ephesians/plain/4.json (25-32 `hard`) | Word for word |
+| Eritheia ‘self-seeking, rivalry’; psuchikos ‘natural’; daimoniōdēs ‘demon-like’; eupeithēs ‘ready to obey’; anupokritos ‘unfeigned’ | 13-18 | lexicon G2052, G5591, G1141, G2138, G0505 | Repository |
+| Wisdom by its fruits; a portrait of Christ; peacemakers echo Matthew 5:9; chapter 4 follows | 13-18 | james/3.json `literary`, `christ`, `story` | Repository |
+| Proverbs 3:17; 11:2; 16:32; Isaiah 32:17 | 13-18 | BSB | BSB text |
