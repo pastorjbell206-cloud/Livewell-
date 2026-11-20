@@ -50,7 +50,10 @@ function On({ when, children }: { when: boolean; children: ReactNode }) {
 function Telescope() {
   return (
     <g>
-      <path className="pl-l" d="M566,268L532,360M568,268L570,360M570,268L606,360" />
+      <path
+        className="pl-l"
+        d="M566,268L532,360M568,268L570,360M570,268L606,360"
+      />
       <Shape d="M500,288L630,218L640,238L510,308Z" tone="b" off={1.5} />
       <Shape d="M626,212L654,198L664,218L636,232Z" tone="b" off={1} />
     </g>

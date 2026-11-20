@@ -1256,9 +1256,13 @@ describe("the four Good questions of 2026-11-20 (seventh run): seeing God, dying
     const all = words("when-we-die");
     expect(film.care).toBe(filmFile("life-to-come").care);
     const between = film.frames.find(f => f.id === "with-him")!;
-    expect(between.older).toMatch(/Others hold that the dead sleep until the resurrection/);
+    expect(between.older).toMatch(
+      /Others hold that the dead sleep until the resurrection/
+    );
     expect(between.younger).not.toMatch(/sleep/);
-    expect(between.younger).toMatch(/do not all describe that time the same way/);
+    expect(between.younger).toMatch(
+      /do not all describe that time the same way/
+    );
     expect(all).not.toMatch(
       /grave|coffin|funeral|buried|suicide|accident|cancer|illness|hell|purgatory|rapture|millenni/i
     );
@@ -1273,7 +1277,9 @@ describe("the four Good questions of 2026-11-20 (seventh run): seeing God, dying
     const all = words("god-silent");
     expect(all).toContain("My God, My God, why have You forsaken Me?");
     expect(all).toContain("The lament was an act of faith, not its collapse.");
-    expect(all).not.toMatch(/lack (of )?faith|not enough faith|more faith|weak faith/i);
+    expect(all).not.toMatch(
+      /lack (of )?faith|not enough faith|more faith|weak faith/i
+    );
     const returnStop = JSON.parse(
       fs.readFileSync(path.join(PUBLIC, "explorer/stops/return.json"), "utf8")
     );

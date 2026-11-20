@@ -119,71 +119,70 @@ const film: FilmDrawing = {
         <path className="pl-f" d={EDGE_B} />
         {/* 3. Light from the open door runs down the path. */}
         <Fade frame={frame} on={3} off={4}>
-          <path
-            className="fp-gold"
-            strokeDasharray="10 10"
-            d={MID}
-          />
+          <path className="fp-gold" strokeDasharray="10 10" d={MID} />
         </Fade>
 
         {/* The house on the hill: its door and its window. */}
         <g transform="translate(665 300) scale(1.3) translate(-665 -300)">
-        <Shape d="M610,300V240H720V300Z" tone="c" off={2} />
-        <Shape d="M598,246L665,196L732,246Z" tone="b" off={2} />
-        <path className="pl-paper" d="M650,300V264h28v36Z" />
-        <path fill={h.hh} d="M650,300V264h28v36Z" />
-        <g className={`mv-fade mv-from-none${open ? " is-on" : ""}`}>
-          <path className="pl-m" d="M650,300V264h28v36Z" />
-          <path className="pl-m" d="M690,254h18v16h-18Z" />
+          <Shape d="M610,300V240H720V300Z" tone="c" off={2} />
+          <Shape d="M598,246L665,196L732,246Z" tone="b" off={2} />
+          <path className="pl-paper" d="M650,300V264h28v36Z" />
+          <path fill={h.hh} d="M650,300V264h28v36Z" />
+          <g className={`mv-fade mv-from-none${open ? " is-on" : ""}`}>
+            <path className="pl-m" d="M650,300V264h28v36Z" />
+            <path className="pl-m" d="M690,254h18v16h-18Z" />
+            <path
+              className="pl-f"
+              d="M664,256v-12M646,262l-10,-8M682,262l10,-8"
+            />
+          </g>
+          <path className="pl-l" d="M650,300V264h28v36Z" />
           <path
-            className="pl-f"
-            d="M664,256v-12M646,262l-10,-8M682,262l10,-8"
+            className="pl-l"
+            d="M690,254h18v16h-18ZM699,254v16M690,262h18"
           />
-        </g>
-        <path className="pl-l" d="M650,300V264h28v36Z" />
-        <path className="pl-l" d="M690,254h18v16h-18ZM699,254v16M690,262h18" />
         </g>
 
         <g transform="translate(240 420) scale(1.45) translate(-240 -420)">
-        {/* The tree and the bench in the garden. */}
-        <Shape
-          d="M140,420C142,384 142,350 144,320H158C158,350 158,384 162,420Z"
-          tone="c"
-          off={1.5}
-        />
-        <Shape
-          d="M84,300C76,258 112,232 140,238C170,224 210,252 200,288C210,318 176,332 150,322C120,334 88,322 84,300Z"
-          tone="g"
-          off={2}
-        />
-        <path className="pl-l" d="M206,400V420M318,400V420" />
-        <Shape d="M196,392H330V400H196Z" tone="c" off={1.5} />
-        <path className="pl-l" d="M204,392V362M322,392V362" />
-        <Shape d="M200,362H326V370H200Z" tone="c" off={1.5} />
+          {/* The tree and the bench in the garden. */}
+          <Shape
+            d="M140,420C142,384 142,350 144,320H158C158,350 158,384 162,420Z"
+            tone="c"
+            off={1.5}
+          />
+          <Shape
+            d="M84,300C76,258 112,232 140,238C170,224 210,252 200,288C210,318 176,332 150,322C120,334 88,322 84,300Z"
+            tone="g"
+            off={2}
+          />
+          <path className="pl-l" d="M206,400V420M318,400V420" />
+          <Shape d="M196,392H330V400H196Z" tone="c" off={1.5} />
+          <path className="pl-l" d="M204,392V362M322,392V362" />
+          <Shape d="M200,362H326V370H200Z" tone="c" off={1.5} />
 
-        {/* The grown-up and the child on the bench (all but 5). */}
-        <On when={seated}>
-          <Seated x={238} y={344} tone="b" body={48} />
-          <Travel
-            frame={frame}
-            at={[
-              [0, 0],
-              [-16, 0],
-              [-16, 0],
-              [-16, 0],
-              [-16, 0],
-              [-16, 0],
-              [-12, 0],
-            ]}
-          >
-            <Seated x={296} y={358} tone="c" body={34} />
-          </Travel>
-        </On>
-        {/* 5. Morning: the two stand together beside the bench. */}
-        <Fade frame={frame} on={5} off={6} from="up">
-          <Standing x={350} y={352} tone="b" s={1} />
-          <Standing x={384} y={374} tone="c" s={0.7} />
-        </Fade>
+          {/* The grown-up and the child on the bench (all but 5). */}
+          <On when={seated}>
+            <Seated x={238} y={344} tone="b" body={48} />
+            <Travel
+              frame={frame}
+              at={[
+                [0, 0],
+                [-16, 0],
+                [-16, 0],
+                [-16, 0],
+                [-16, 0],
+                [-16, 0],
+                [-12, 0],
+              ]}
+            >
+              <Seated x={296} y={358} tone="c" body={34} />
+            </Travel>
+          </On>
+          {/* 5. Morning: the two stand together beside the bench. */}
+          <Fade frame={frame} on={5} off={6} from="up">
+            <Standing x={350} y={352} tone="b" s={1} />
+            <Standing x={384} y={374} tone="c" s={0.7} />
+          </Fade>
         </g>
       </>
     );

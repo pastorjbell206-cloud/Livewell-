@@ -39,8 +39,7 @@ const STARS: [number, number][] = [
 ];
 const star = (x: number, y: number) =>
   `M${x},${y - 7}L${x + 2},${y - 2}L${x + 7},${y}L${x + 2},${y + 2}L${x},${y + 7}L${x - 2},${y + 2}L${x - 7},${y}L${x - 2},${y - 2}Z`;
-const RIDGE =
-  "M0,330C120,300 240,296 360,318C480,296 640,290 800,312";
+const RIDGE = "M0,330C120,300 240,296 360,318C480,296 640,290 800,312";
 
 function On({ when, children }: { when: boolean; children: ReactNode }) {
   return (
@@ -74,7 +73,10 @@ const film: FilmDrawing = {
         <Shape d={`${RIDGE}V420H0Z`} tone="g" hatch={h.h2} off={2} />
         {/* 2. A thin line of first light along the far hills. */}
         <Fade frame={frame} on={2} off={3}>
-          <path className="fp-gold" d="M0,322C120,292 240,288 360,310C480,288 640,282 800,304" />
+          <path
+            className="fp-gold"
+            d="M0,322C120,292 240,288 360,310C480,288 640,282 800,304"
+          />
         </Fade>
         <Shape
           d="M0,420C80,360 200,340 300,350C420,362 520,400 600,420Z"
@@ -85,29 +87,29 @@ const film: FilmDrawing = {
         <path fill={h.h3} d="M0,456H800V500H0Z" />
 
         <g transform="translate(320 420) scale(1.6) translate(-320 -420)">
-        {/* The rock. */}
-        <Shape
-          d="M250,420C252,384 280,366 320,364C362,362 384,380 388,420Z"
-          tone="b"
-          off={2}
-        />
-        {/* The person sits on it (the poster, 0 to 2) ... */}
-        <Fade frame={frame} on={-1} off={3}>
-          <Seated x={318} y={330} tone="c" body={34} />
-        </Fade>
-        {/* ... and at 6 stands up beside it. */}
-        <Fade frame={frame} on={6} from="up">
-          <Standing x={420} y={356} tone="c" s={1} />
-        </Fade>
-        {/* 1 and 2. A harp stands against the rock beside them. */}
-        <Fade frame={frame} on={1} off={3} from="up">
-          <path
-            className="pl-l"
-            d="M394,410C384,392 388,378 398,370M420,410C430,392 426,378 416,370M394,376H420"
+          {/* The rock. */}
+          <Shape
+            d="M250,420C252,384 280,366 320,364C362,362 384,380 388,420Z"
+            tone="b"
+            off={2}
           />
-          <path className="pl-f" d="M400,376V410M407,376V410M414,376V410" />
-          <Shape d="M390,420V408H424V420Z" tone="c" off={1} />
-        </Fade>
+          {/* The person sits on it (the poster, 0 to 2) ... */}
+          <Fade frame={frame} on={-1} off={3}>
+            <Seated x={318} y={330} tone="c" body={34} />
+          </Fade>
+          {/* ... and at 6 stands up beside it. */}
+          <Fade frame={frame} on={6} from="up">
+            <Standing x={420} y={356} tone="c" s={1} />
+          </Fade>
+          {/* 1 and 2. A harp stands against the rock beside them. */}
+          <Fade frame={frame} on={1} off={3} from="up">
+            <path
+              className="pl-l"
+              d="M394,410C384,392 388,378 398,370M420,410C430,392 426,378 416,370M394,376H420"
+            />
+            <path className="pl-f" d="M400,376V410M407,376V410M414,376V410" />
+            <Shape d="M390,420V408H424V420Z" tone="c" off={1} />
+          </Fade>
         </g>
 
         {/* 3. A page: Elijah asleep under a small desert tree, bread and water beside him. */}
@@ -120,36 +122,32 @@ const film: FilmDrawing = {
           <Shape d="M0,500V404H800V500Z" tone="c" off={2} />
           <path fill={h.h3} d="M0,456H800V500H0Z" />
           <g transform="translate(420 404) scale(1.7) translate(-420 -404)">
-          <path
-            fill={h.h2}
-            d="M300,408a110,12 0 1,0 220,0a110,12 0 1,0 -220,0Z"
-          />
-          <path
-            className="pl-l"
-            d="M410,404C412,366 406,330 414,290M412,340l-46,-26M414,318l42,-30M410,370l-36,-10M414,300l-20,-34"
-          />
-          <path
-            className="pl-f"
-            d="M366,314l-14,-10M366,314l-6,-16M456,288l12,-12M456,288l14,0M374,360l-16,-2M394,266l-4,-16M394,266l-14,-8"
-          />
-          <path className="pl-o" d={ring(338, 392, 8)} />
-          <path className="pl-l" d={ring(338, 392, 8)} />
-          <Shape
-            d="M348,404C350,388 362,384 380,384H452C462,386 466,394 466,404Z"
-            tone="b"
-            off={1.5}
-          />
-          <Shape
-            d="M500,404C502,392 548,390 552,404Z"
-            tone="b"
-            off={1.5}
-          />
-          <Shape d="M508,392c0,-10 18,-10 18,0Z" tone="c" off={0.8} />
-          <Shape
-            d="M532,392V376c0,-6 4,-8 6,-8c2,0 6,2 6,8V392Z"
-            tone="c"
-            off={0.8}
-          />
+            <path
+              fill={h.h2}
+              d="M300,408a110,12 0 1,0 220,0a110,12 0 1,0 -220,0Z"
+            />
+            <path
+              className="pl-l"
+              d="M410,404C412,366 406,330 414,290M412,340l-46,-26M414,318l42,-30M410,370l-36,-10M414,300l-20,-34"
+            />
+            <path
+              className="pl-f"
+              d="M366,314l-14,-10M366,314l-6,-16M456,288l12,-12M456,288l14,0M374,360l-16,-2M394,266l-4,-16M394,266l-14,-8"
+            />
+            <path className="pl-o" d={ring(338, 392, 8)} />
+            <path className="pl-l" d={ring(338, 392, 8)} />
+            <Shape
+              d="M348,404C350,388 362,384 380,384H452C462,386 466,394 466,404Z"
+              tone="b"
+              off={1.5}
+            />
+            <Shape d="M500,404C502,392 548,390 552,404Z" tone="b" off={1.5} />
+            <Shape d="M508,392c0,-10 18,-10 18,0Z" tone="c" off={0.8} />
+            <Shape
+              d="M532,392V376c0,-6 4,-8 6,-8c2,0 6,2 6,8V392Z"
+              tone="c"
+              off={0.8}
+            />
           </g>
         </Fade>
 
@@ -166,7 +164,10 @@ const film: FilmDrawing = {
             off={3}
           />
           {/* The cave's mouth: ink by day, night paper by night, dark either way. */}
-          <path className="pl-k fp-dark" d="M536,420V384a26,26 0 0 1 52,0V420Z" />
+          <path
+            className="pl-k fp-dark"
+            d="M536,420V384a26,26 0 0 1 52,0V420Z"
+          />
           <path className="pl-l" d="M536,420V384a26,26 0 0 1 52,0V420Z" />
           <Shape d="M0,500V420H800V500Z" tone="g" off={2} />
           <path fill={h.h3} d="M0,456H800V500H0Z" />
