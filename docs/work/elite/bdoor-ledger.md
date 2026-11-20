@@ -7645,3 +7645,22 @@ One web search (for 145).
 | 1 Timothy 1:17; Revelation 11:15; Matthew 11:28; 6:26; Romans 10:13; James 4:8 | 145 | BSB | BSB text |
 
 Cut: the Septuagint's Goliath note on 144; the Qumran line's "God" for "the LORD" (detail not needed); the Talmud's reason for the missing nun.
+
+## The plain notes on Psalms 146 and 147 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 146 to 150 each begin and end with "Hallelujah!" (BSB) | 146 | BSB | Script over all 150 psalms |
+| 146 to 150 as the close of Book Five and of the book (many readers); 145 to 150 in Jewish morning prayer | 146 | Book page ("Five books", "The temple") | Repository |
+| adam (146:3) and adamah (146:4); Genesis 2:7 | 146 | Repository word data; BSB | Script |
+| The warning applies to every ruler and party alike; no modern figure in view | 146 | Brief's rule | Stated plainly |
+| Psalm 118:9; Matthew 11:5; James 1:27 | 146 | BSB | BSB text |
+| After the exile: building Jerusalem, gathering exiles (many scholars); Nehemiah 12:27 | 147 | Repository deep note (historical); BSB | Stated as "many scholars" |
+| Ravens unclean (Leviticus 11:15) | 147 | BSB | BSB text |
+| The horse as the war's strongest weapon | 147 | Repository deep note (cultural) | Site's own teaching |
+| 147 split in two in the Greek | 147 | Book page ("Numbering") | Repository |
+| Isaiah 40:26; 61:1; Luke 12:24; Romans 3:2; John 1:1, 14 | 147 | BSB | BSB text |
+
+Cut: Cyrus's decree date and the Nehemiah dedication as the setting (147); snow in Jerusalem's hills (not checked).
