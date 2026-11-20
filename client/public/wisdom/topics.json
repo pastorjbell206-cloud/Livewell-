@@ -10398,8 +10398,8 @@
       "application": "Honor your leaders and make their work a joy rather than a burden, since you will answer for how you treated them and they will answer for how they led you. Submission does not mean silence. Ask questions, expect transparency, and look for leaders who welcome accountability rather than fear it. Where a leader demands obedience that violates Scripture or covers sin, that is not authority but its abuse, and Scripture has never asked you to submit to it.",
       "verses": [
         {
-          "ref": "Hebrews 13:17",
-          "text": "Obey your leaders and submit to them, for they watch over your souls as those who must give an account. To this end, allow them to lead with joy and not with grief, for that would be of no advantage to you."
+          "ref": "Hebrews 13:7",
+          "text": "Remember your leaders who spoke the word of God to you. Consider the outcome of their way of life and imitate their faith."
         },
         {
           "ref": "1 Peter 5:2-3",
@@ -10414,8 +10414,32 @@
           "text": "Keep watch over yourselves and the entire flock of which the Holy Spirit has made you overseers. Be shepherds of the church of God, which He purchased with His own blood."
         },
         {
-          "ref": "James 3:1",
-          "text": "Not many of you should become teachers, my brothers, because you know that we who teach will be judged more strictly."
+          "ref": "Mark 10:42-43",
+          "text": "So Jesus called them together and said, “You know that those regarded as rulers of the Gentiles lord it over them, and their superiors exercise authority over them. But it shall not be this way among you. Instead, whoever wants to become great among you must be your servant,"
+        },
+        {
+          "ref": "Ezekiel 34:2",
+          "text": "“Son of man, prophesy against the shepherds of Israel. Prophesy and tell them that this is what the Lord GOD says: ‘Woe to the shepherds of Israel, who only feed themselves! Should not the shepherds feed their flock?"
+        },
+        {
+          "ref": "1 Timothy 3:2-3",
+          "text": "An overseer, then, must be above reproach, the husband of but one wife, temperate, self-controlled, respectable, hospitable, able to teach, not dependent on wine, not violent but gentle, peaceable, and free of the love of money."
+        },
+        {
+          "ref": "1 Timothy 5:19-20",
+          "text": "Do not entertain an accusation against an elder, except on the testimony of two or three witnesses. But those who persist in sin should be rebuked in front of everyone, so that the others will stand in fear of sin."
+        },
+        {
+          "ref": "Galatians 2:11",
+          "text": "When Cephas came to Antioch, however, I opposed him to his face, because he stood to be condemned."
+        },
+        {
+          "ref": "Acts 5:29",
+          "text": "But Peter and the other apostles replied, “We must obey God rather than men."
+        },
+        {
+          "ref": "Romans 13:1",
+          "text": "Everyone must submit himself to the governing authorities, for there is no authority except that which is from God. The authorities that exist have been appointed by God."
         }
       ],
       "related": [
