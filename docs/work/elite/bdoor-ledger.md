@@ -11207,3 +11207,32 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Love and judgment not rivals; the cross shows both; judgment no longer dreaded | 17-21 | 1-john/4.json `hard` | Repository |
 | Care line ‘This passage is not a rebuke of people who live with an anxiety disorder ...’ and ‘The Find Help page on this site lists places to turn.’ | 17-21 | philippians/plain/4.json (4-9 `hard`) | Word for word |
 | Deuteronomy 6:5; Leviticus 19:18; Psalm 130:3-4 | 17-21 | BSB | BSB text |
+
+## The plain notes on 1 John 5 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The three marks tied in one chain; nikaō and Nikē | 1-5 | 1-john/5.json `literary`, `words` (G3528) | Repository |
+| Deuteronomy 30:11; Psalm 40:8; Matthew 11:30 | 1-5 | BSB | BSB text |
+| Water and blood against Cerinthus' teaching; John 19:34; the sacraments | 6-12 | 1-john/5.json `historical` | Repository |
+| Marturia as legal testimony; two or three witnesses | 6-12 | 1-john/5.json `cultural`, `words` (G3141) | Repository |
+| 5:7-8: the King James wording; Latin origin, late 300s; a handful of late Greek manuscripts; Erasmus 1516 and 1522; the fourth-century theologians; most modern translations | 6-12 | questions/text/passages-not-in-the-earliest-bibles.json; 1-john/5.json `historical` | Repository (live page's wording) |
+| Textus Receptus holders defend it; Trinity confessed in 325 and 381 without it; Matthew 28:19 and 2 Corinthians 13:14 | 6-12 | theology/textual-criticism.json; bible/guides/how-we-got-the-new-testament.json | Repository |
+| Deuteronomy 19:15; Psalm 36:9; Deuteronomy 30:19 | 6-12 | BSB | BSB text |
+| Purpose sentence beside John 20:31; prayer ‘according to His will’ | 13-15 | 1-john/5.json `story`, `doctrines` (prayer) | Repository |
+| Assurance: Reformed, Wesleyan, Lutheran, Catholic | 13-15 | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Care line ‘If you have prayed for someone to be rescued ...’ with the sentence about James left out, since it belongs to Acts 12 | 13-15 | acts/plain/12.json (1-5 `hard`) | Word for word, one sentence omitted |
+| Psalm 34:15; Psalm 16:11; Matthew 26:39; Daniel 3:18 | 13-15 | BSB | BSB text |
+| Sin that leads to death: bodily death (Acts 5; 1 Corinthians 11:30); final rejection; blasphemy against the Spirit (Mark 3:28-29); Numbers 15; many think the setting points to the second; John does not forbid prayer | 16-17 | 1-john/5.json `hard` | Repository, no side |
+| ‘A long pastoral tradition answers that the fear itself is a sign that the heart has not turned hard in this way.’ | 16-17 | mark/plain/3.json (22-30 `hard`) | Word for word |
+| Nothing about any person's state; no illness or death as judgment; John 9:3 | 16-17 | Instruction for this run; BSB | Stated, no claim |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 16-17 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Numbers 15:27-28, 30; Psalm 19:12-13 | 16-17 | BSB | BSB text |
+| Three ‘we know’ sentences; ‘the One who was born of God’ most likely Christ; 5:20 the Son or the Father | 18-21 | 1-john/5.json `literary`, `christ` | Repository |
+| Ephesus' temple of Artemis; images and guild meals; idols may include the false Christ | 18-21 | 1-john/5.json `cultural` | Repository |
+| Nicene Creed wording | 18-21 | creeds/documents/nicene-creed.json | Repository, exact phrases |
+| Exodus 20:3; Isaiah 44:9; Jeremiah 10:10; John 1:1; John 20:28 | 18-21 | BSB | BSB text |
+
+## 1 John complete (2026-11-20)
