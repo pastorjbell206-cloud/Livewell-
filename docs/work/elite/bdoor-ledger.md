@@ -13012,3 +13012,27 @@ Cut before publishing: ‘sealed at their altars with their sacrifices’ of the
 | 2 Timothy 2:2; Ephesians 2:22 | 30-35 | BSB; exodus/35.json `christ` | BSB text |
 
 Cut before publishing: ‘under the whip’ of the building for Pharaoh (the book says the foremen were beaten, 5:14; ‘as slaves’ says no more than the text).
+
+## The plain notes on Exodus 36 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A people told to stop giving; the same people who gave gold for the calf | 1-7 | exodus/36.json `story` | Repository |
+| ‘Enough’ (day) said twice; a rare moment | 1-7 | exodus/36.json `words` (H1767) | Repository |
+| The calf made on demand (32:1-2) | 1-7 | BSB; exodus/35.json `words` (H5068) | BSB text |
+| 2 Corinthians 8:3-4; Philippians 4:18 | 1-7 | BSB | BSB text |
+| Verses 8-38 follow 26:1-37; ‘he made’ with Bezalel implied; the house before the furniture; the numbers as exactness | 8-19 | exodus/36.json `literary` | Repository |
+| The layers, plain outside, cherubim within | 8-19 | exodus/36.json `cultural`; exodus/plain/26.json | Repository |
+| Hebrews 8:5; Ephesians 2:21 | 8-19 | BSB | BSB text |
+| The size of the tent; the cubit; frames or solid boards | 20-34 | exodus/36.json `historical` | Repository |
+| The rear to the west, the opening to the east; bronze, silver, gold | 20-34 | exodus/36.json `cultural` | Repository |
+| The silver bases cast from the census half shekel | 20-34 | BSB (30:11-16; 38:25-28); exodus/plain/30.json | BSB text |
+| Could it have been built: Wellhausen; Hetepheres' frame; Ramesses II's camp at Kadesh; 12:35-36; a middle view | 20-34 | exodus/36.json `hard`, `historical` | Repository; no side |
+| Exodus 38:27; 1 Peter 1:18-19 | 20-34 | BSB | BSB text |
+| Cherubim as guardians, not infants; beside thrones and doors; Eden's east and the tent's east; the veil and the Day of Atonement | 35-38 | exodus/36.json `cultural`, `words` (H3742, H6532) | Repository |
+| Genesis 3:24; Mark 15:38; Hebrews 10:19-20 | 35-38 | BSB; exodus/36.json `christ` | BSB text |
+| A shadow is real; God truly met his people | 35-38 | hebrews/plain/8.json (1-6 `hard`); exodus/plain/26.json | Repository |
+
+Cut before publishing: a reason for building the house before the furniture (‘the sensible order of building’; the deep note gives none); that Paul thanked the Philippians ‘in the words of this chapter’ (he does not quote it).
