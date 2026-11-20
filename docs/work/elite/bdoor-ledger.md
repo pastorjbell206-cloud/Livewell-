@@ -7492,3 +7492,28 @@ No web search.
 | Not a promise of family or plenty; Job; the care lines pointed back to 127 | 128 | Repository deep note (hard) | Stated plainly |
 
 127:2 has an em-dash in the BSB; the two halves are quoted separately, neither containing it.
+
+## The plain notes on Psalms 129 to 131 (2026-11-20)
+
+One web search (for 130).
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| "From my youth" as Israel's beginnings (Hosea 11:1) | 129 | Repository deep note (historical); BSB | BSB text |
+| Ploughing the back: wounds, or a people walked over (Isaiah 51:23); cords of the plough | 129 | Repository deep note (cultural); BSB | Stated as two readings |
+| Flat earth roofs; rooftop grass withering; harvest greetings (Ruth 2:4) | 129 | Repository deep note (cultural); BSB | BSB text |
+| Matthew 13:6; 2 Corinthians 4:9 | 129 | BSB | BSB text |
+| 129:5-8 a mild cursing prayer; book page pointer; "No reading of it makes it right to harm anyone" | 129 | Book page ("Cursing psalms"); repository deep note (hard) | Repository |
+| Depths as deep waters (Psalm 69:2) | 130 | Repository deep note (cultural); BSB | BSB text |
+| 130:3 cited in the book page's part on innocence | 130 | Book page ("Innocence") | Repository |
+| The seven penitential psalms (6, 32, 38, 51, 102, 130, 143), known since at least the sixth century (Cassiodorus); "De profundis" | 130 | Encyclopedia summaries | Search: wikipedia.org "Penitential psalm"; religiousaffections.org on settings of Psalm 130. Cassiodorus not named on the page |
+| Luther's hymn on Psalm 130 ("Aus tiefer Not"), first printed 1524 (Walter's hymnal, Wittenberg) | 130 | Hymnology summaries | Search: hymnologyarchive.com "Aus tiefer Not"; hymnary.org; bach-cantatas.com. Composition 1523 or 1524 varies, so "first printed in 1524" |
+| Watchmen through the night | 130 | Repository deep note (cultural) | Site's own teaching |
+| "Wait" (qavah) per the book page's key words | 130 | Book page (words) | Repository |
+| 1 John 1:9; Romans 3:23-24; Romans 8:1; Luke 2:25; Matthew 1:21; Ephesians 1:7 | 130 | BSB | BSB text |
+| Care line in the form of the Psalm 13 note (a doctor, a pastor or a friend; thoughts of self-harm; Find Help) | 130 | Psalm 13 plain note | Repository |
+| Weaning later than today; Hannah (1 Samuel 1:24); Isaac's feast (Genesis 21:8) | 131 | Repository deep note (cultural); BSB | BSB text |
+| Lifted heart and raised eyes as pride | 131 | Repository deep note (cultural) | Site's own teaching |
+| Matthew 18:3; 11:29; Philippians 4:11 | 131 | BSB | BSB text |
+
+Cut: the rare word for forgiveness in 130:4 and its other two uses (not checked); funerals and Lent customs for 130; Bach's cantata; the mother-image as a claim about the singer's sex (131).
