@@ -8588,3 +8588,29 @@ Cut: winter sailing (deep note; not checked); the Didache's place for the prayer
 ## 1 Corinthians complete (2026-11-20)
 
 All sixteen chapters of 1 Corinthians are in plain words. Every chapter note carries `"plain": true`.
+
+## 2 Corinthians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/2-corinthians/intro.json`,
+field `teaching`. 4 searches, run on 2026-11-20. Scholars are not named;
+views are paraphrased. Scripture is the BSB in the repository, checked word for
+word by `scripts/validate-bible-notes.mjs` and a strict check that matches each
+quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul with Timothy (1:1); nearly all accept Paul as author; the open question is unity, not authorship | BSB; repository `author` | Repository |
+| Silvanus a fuller, Latin form of Silas; most identify him with Paul's companion in Acts | Reference works | Search: biblicaltraining.org "Silvanus"; blueletterbible.org G4610. Worded "most take him to be" |
+| Written from Macedonia (2:13; 7:5; 8:1; 9:2); city not named; Philippi "often suggested"; about AD 55 to 56 | BSB; repository `date`; reference works | Search: jesuswalk.com introduction; internationalstandardbible.com "Corinthians, Second Epistle"; soniclight.com notes (Macedonia, 55 to 56) |
+| 1 Corinthians about AD 53 to 55 from Ephesus; Gallio most 51 to 52, some 50 to 51 | 1 Corinthians book page ledger; wrom-ledger | Ledger |
+| Three months in Greece (Acts 20:2-3), most likely Corinth, Romans written there "most think"; Achaia gave (Romans 15:26); arrest in Jerusalem (Acts 21; 24:17) | BSB; Romans and Acts book pages | Repository |
+| Painful visit (2:1; 13:1-2); "third time" (12:14; 13:1); the offender of 2:5-11 and 7:12 two views; tearful letter (2:4; 7:8) lost, or part in 10 to 13, or (a few) 1 Corinthians; no side | BSB; 1 Corinthians book page ledger (zondervanacademic, Wikipedia, corpus-paul); deep notes on 2 and 7 | Ledger. "These notes do not choose" |
+| Unity: 10 to 13 a separate letter (before 1 to 9 as the tearful letter, or after on fresh news); 8 and 9 separate notes; 6:14 to 7:1 placed from elsewhere; one letter written over time or turning to the minority; no manuscript has it in pieces | Scholarship | Search: jesuswalk.com; soniclight.com; biblestudytools study notes ("no manuscript evidence"); ehrmanblog.org and cambridge.org NTS (6:14 to 7:1 interpolation); mdpi.com Religions 15 (2024) 538 (four positions). Stated as views, no side, no names |
+| Rivals: Hebrews (11:22), letters of recommendation (3:1), speech (11:6; 10:10), support (11:7-9), visions (12:1); ‘super-apostles’ irony; same group as ‘false apostles’ (most) or Jerusalem leaders invoked (minority); law-observant or Hellenistic preachers | BSB; repository `setting`; deep notes on 10 and 11 | Search: biblehub.com Q&A; biblestudytools CSB apologetics notes; tips.translation.bible on 11:5. No scholar named |
+| Aretas's governor in Damascus (11:32-33) | BSB; Acts 9 ledger row (Aretas IV) | Ledger. No date given on the book page |
+| Paraklēsis with its verb more often in 2 Corinthians than any other New Testament book (29; Acts 26); kauchaomai 20 of 37 New Testament uses | Greek text in the repository (G3874, G3870, G2744) | Script count over `client/public/bible/ch` |
+| Old Testament quotations named: Psalm 116:10 (4:13), Isaiah 49:8 (6:2), Leviticus, Ezekiel, Isaiah, 2 Samuel (6:16-18), Exodus 16:18 (8:15), Psalm 112:9 (9:9), Jeremiah 9:24 (10:17), Deuteronomy 19:15 (13:1); Exodus 34:29-35; Jeremiah 31:33; Ezekiel 36:26 | BSB | BSB text. Paul's following of the old Greek stated generally; each case in the chapter notes |
+| Map: Corinth, Philippi, Troas, Ephesus, Jerusalem, Damascus on the "mediterranean" frame | wmap-ledger and the Acts map coordinates | Ledger. Damascus (33.513, 36.27) inside the frame |
+
+Cut: the deep note's scholar names (Baur, Barrett, Betz); "most personal" kept as
+a description, not a claim about scholars; the date of the Damascus escape.
