@@ -55,9 +55,10 @@ const contradictions = index.areas.find((a) => a.slug === "contradictions")!;
 const oldTestament = index.areas.find((a) => a.slug === "old-testament")!;
 const evil = index.areas.find((a) => a.slug === "evil")!;
 const god = index.areas.find((a) => a.slug === "god")!;
+const morality = index.areas.find((a) => a.slug === "morality")!;
 
 describe("the questions library's data", () => {
-  it("lists the plan's ten areas; the text area and its nine pieces are live, the god, authors, contradictions, jesus, old-testament, science and evil areas and their pieces pending", () => {
+  it("lists the plan's ten areas; the text area and its nine pieces are live, the god, authors, contradictions, jesus, old-testament, science, evil and morality areas and their pieces pending", () => {
     expect(index.areas.map((a) => a.n)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(index.roomLive).toBe(true);
     expect(text.live).toBe(true);
@@ -84,11 +85,14 @@ describe("the questions library's data", () => {
     expect(god.live).toBe(false);
     expect(god.pieces.length).toBeGreaterThan(0);
     expect(god.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(index.areas.filter((a) => a.pieces.length > 0).map((a) => a.slug)).toEqual(["god", "text", "authors", "contradictions", "jesus", "old-testament", "science", "evil"]);
+    expect(morality.live).toBe(false);
+    expect(morality.pieces.length).toBe(5);
+    expect(morality.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
+    expect(index.areas.filter((a) => a.pieces.length > 0).map((a) => a.slug)).toEqual(["god", "text", "authors", "contradictions", "jesus", "old-testament", "science", "evil", "morality"]);
   });
 
   it("gives every piece the parts the pages render", () => {
-    for (const [a, p] of [...text.pieces.map((p) => ["text", p] as const), ...authors.pieces.map((p) => ["authors", p] as const), ...contradictions.pieces.map((p) => ["contradictions", p] as const), ...jesus.pieces.map((p) => ["jesus", p] as const), ...oldTestament.pieces.map((p) => ["old-testament", p] as const), ...science.pieces.map((p) => ["science", p] as const), ...evil.pieces.map((p) => ["evil", p] as const), ...god.pieces.map((p) => ["god", p] as const)]) {
+    for (const [a, p] of [...text.pieces.map((p) => ["text", p] as const), ...authors.pieces.map((p) => ["authors", p] as const), ...contradictions.pieces.map((p) => ["contradictions", p] as const), ...jesus.pieces.map((p) => ["jesus", p] as const), ...oldTestament.pieces.map((p) => ["old-testament", p] as const), ...science.pieces.map((p) => ["science", p] as const), ...evil.pieces.map((p) => ["evil", p] as const), ...god.pieces.map((p) => ["god", p] as const), ...morality.pieces.map((p) => ["morality", p] as const)]) {
       const piece = read<QPiece>(`questions/${a}/${p.slug}.json`);
       expect(piece.question).toBe(p.question);
       expect(piece.sections.map((s) => s.role)).toEqual(expect.arrayContaining(["objection", "concessions", "evidence", "argument", "reply", "unresolved", "differ"]));
