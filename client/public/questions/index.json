@@ -17,6 +17,13 @@
           "blurb": "Leibniz's argument from contingency and the kalam, each in its premises; Hume's three objections, Russell's brute fact and Kant's charge of borrowing; quantum events and the \"universe from nothing\"; and what a necessary being would and wouldn't be.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "who-made-god",
+          "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
+          "blurb": "Mill's father and Russell, Dawkins's gambit, what the arguments actually claim, God's simplicity, the burden of proof and the teapot.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -430,6 +437,36 @@
       "area": "god",
       "slug": "the-cosmological-argument",
       "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
+      "live": false
+    },
+    {
+      "claim": "If everything must have a cause, then God must have a cause; and if anything can be without a cause, it may as well be the world as God",
+      "proponent": "Bertrand Russell",
+      "work": "Why I Am Not a Christian",
+      "year": 1927,
+      "area": "god",
+      "slug": "who-made-god",
+      "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
+      "live": false
+    },
+    {
+      "claim": "A God able to design a universe would be at least as complex and improbable as the universe, so he explains nothing",
+      "proponent": "Richard Dawkins",
+      "work": "The God Delusion",
+      "year": 2006,
+      "area": "god",
+      "slug": "who-made-god",
+      "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
+      "live": false
+    },
+    {
+      "claim": "The burden of proof lies on whoever affirms that God exists, and the reasonable starting point is not to believe",
+      "proponent": "Antony Flew",
+      "work": "The Presumption of Atheism",
+      "year": 1972,
+      "area": "god",
+      "slug": "who-made-god",
+      "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
       "live": false
     },
     {

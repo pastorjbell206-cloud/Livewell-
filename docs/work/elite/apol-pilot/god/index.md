@@ -13,6 +13,7 @@ They also say what such arguments can't do. At most they reach a necessary being
 ## The questions
 
 1. **Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?** Leibniz's argument from contingency and the kalam, each in its premises; Hume's three objections, Russell's brute fact and Kant's charge of borrowing; quantum events and the "universe from nothing"; and what a necessary being would and wouldn't be.
+2. **If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?** Mill's father and Russell, Dawkins's gambit, what the arguments actually claim, God's simplicity, the burden of proof and the teapot.
 
 ## Words these pages use
 
