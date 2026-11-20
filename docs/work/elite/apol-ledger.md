@@ -2757,3 +2757,27 @@ Cut or not used: any date or percentage for the shift from form criticism to bio
 
 Cut or not used: any statistic beyond the guide's; the International Q Project's edition (named in the guide; not needed); the translator's name for Augustine.
 
+### bj. "Isn't John theology rather than history?" (is-john-history-or-theology)
+
+| Claim | How verified | Result |
+|---|---|---|
+| The differences: no parables of the Synoptic kind, no exorcisms, no transfiguration, no institution of the Supper (the foot washing), long discourses, the "I am" sayings with images, Jerusalem, three Passovers, the temple clearing at the start, the day of Preparation; one proposed explanation "that one writer arranged the chronology for theological reasons" | Guide (section 5); John 6:35, 11:25 (BSB, script) | Paraphrased; the guide's words quoted as the guide's |
+| Interpreters disagree on "where Jesus' words end and the evangelist's reflection begins" | Note (John 3) | Quoted as the note's words |
+| Strauss (1835) treated John as largely mythical; Baur dated it around 170; P52, published 1935, usually dated to the second century, its dating uncertain (Nongbri) | Intro (John) | Paraphrased, marked |
+| Ehrman, *How Jesus Became God* (2014): John's divine self-claims appear only in the latest Gospel, express its author's view, have no earlier source, belong to "John's distinctive theology" | BT-HJBG | Paraphrased, said to be a reading of the section |
+| Clement in Eusebius, *Church History* 6.14.7: John, "perceiving that the external facts had been made plain in the Gospel," "composed a spiritual Gospel" | Eusebius book 6 (two copies, McGiffert) | Quoted |
+| John 2:22 and 14:26; the note: the verses "give the Gospel's own account of how it was written" | BSB (script); Note (John 2) | Quoted |
+| Bethesda: excavations at St. Anne's from Schick in the late nineteenth century to the 1960s; two reservoirs and a rock partition; the Copper Scroll (3Q15), written before AD 68, Beth Eshdatayin, "the house of the two pools", many taking it as John's pool | Note (John 5); John 5:2 (BSB, by hand for the ellipsis) | Paraphrased, the dual name quoted as the note gives it |
+| Siloam: the stepped pool found in 2004 during work on a sewer line, Reich and Shukron, most archaeologists identifying it with the pool of Jesus' day | Note (John 9); John 9:7 (BSB) | Paraphrased |
+| Stone jars: among the most common finds in first-century Jewish Galilee and Judea; a purity rule (m. Kelim 10:1); they "decline sharply after AD 70" | Note (John 2); John 2:6 (BSB, by hand) | Paraphrased; quoted |
+| Caiaphas: "high priest that year"; the ossuary found in December 1990 inscribed Yehosef bar Qayafa, "Joseph son of Caiaphas", many but not all connecting it with his family | Note (John 11); John 11:49 (BSB) | Paraphrased, the note's caution kept |
+| The temple's "forty-six years" fitting the late 20s AD | Note (John 2); John 2:20 (BSB) | Paraphrased |
+| Dodd, *Historical Tradition in the Fourth Gospel* (1963), John independent and sometimes of high historical value; others that John knew Mark or all three | Guide (section 5) | Paraphrased, marked |
+| Thucydides 1.22 "adhering as closely as possible to the general sense" | Thucydides (Crawley) | Quoted |
+| "states openly what Mark shows in action" | This library's page did-jesus-claim-to-be-god, as revised this run | Quoted as the page's words |
+| Brown, *The Gospel according to John* (Anchor Bible, 1966 and 1970); Bauckham, *Jesus and the Eyewitnesses* (2006) | Intro (John, further reading and text); Note (John 1) | Listed |
+| The beloved disciple: John son of Zebedee, or John the Elder (Bauckham), or idealized | Guide (section 5) | Paraphrased |
+| John 1:14, 19:35, 20:31 | BSB (script) | Quoted |
+
+Not claimed: that any discourse is verbatim; that the archaeology proves the discourses. Cut or not used: the Gabbatha pavement (the note on John 19 was not found to give an excavation, so nothing is said); Jacob's well and Aenon (not needed); any count of scholars.
+

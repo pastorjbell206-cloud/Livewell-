@@ -23,6 +23,7 @@ What the pages argue is narrower than either a skeptic or an anxious believer mi
 5. **Weren't some New Testament letters forged in the names of Paul and Peter?** The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.
 6. **The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?** The form critics' "folk literature" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's "memoirs" and Luke's preface, and what the genre does and doesn't establish.
 7. **If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?** The Synoptic problem set out fairly, Mark's priority, Q and the main alternatives with no side taken, what copying shows and what it doesn't, the sources skeptics themselves count, and the witnesses outside the problem.
+8. **John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?** Every difference from the first three Gospels conceded, Strauss, Ehrman and Clement's "spiritual Gospel", John's own account of how he wrote, what in John fits Jerusalem before AD 70, and why theology and history are not alternatives.
 
 ## Words these pages use
 
