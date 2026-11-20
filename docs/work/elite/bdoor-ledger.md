@@ -8177,3 +8177,24 @@ No new search. Scripture is the BSB in the repository, matched by the strict che
 | Jeremiah 9:23-24 matches wise, strong, rich; 1 Samuel 2:8; Deuteronomy 7:7 | 26-31 | BSB | BSB text |
 
 Cut: Tertullian, Augustine and Aquinas by name (deep note); the Alexamenos graffito.
+
+## The plain notes on 1 Corinthians 2 (2026-11-20)
+
+One search (the source of 2:9). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Philippi, Thessalonica, Berea, Athens before Corinth (Acts 16 to 17); tentmaking; Acts 18:9 | 1-5 | BSB; Acts 18 plain note | Repository |
+| Orators performing for fans and fees; hand work looked down on | 1-5 | Deep note `cultural`; Roman-world portrait (work) | Repository. Stated generally |
+| Apodeixis a speaker's word for proof | 1-5 | Deep note `cultural` | Repository |
+| 2:1 ‘testimony’ or ‘mystery’ in the old copies; BSB ‘testimony’ | 1-5 | Repository Greek (mystērion tagged NA28, NA27, WH); BSB text | Script |
+| Exodus 4:10; Jeremiah 1:6; Jeremiah 9:23 | 1-5 | BSB | BSB text |
+| Teleios; mystery as God's plan now made known | 6-9 | Greek text; deep note `words` | Repository |
+| Rulers of this age: human, spiritual (Ephesians 6:12), both | 6-9 | Deep note `historical` | Stated as three readings |
+| 2:9 matches no Old Testament verse exactly; closest Isaiah 64:4 ("wait for Him"); echoes of Isaiah 65:17, 52:15; some in the early church thought it came from a lost book | 6-9 | BSB; search: biblehub.com commentaries on 2:9; evidenceunseen.com; intertextual.bible | Search. Origen and the Apocalypse of Elijah not named (met only in summaries) |
+| Psalm 2:2 read of Jesus's death in Acts 4:25-27 | 6-9 | BSB | BSB text |
+| Psychikos, pneumatikos | 10-16 | Greek text (G5591, G4152); deep note `words` | Repository |
+| Isaiah 40:13 Hebrew ‘Spirit’, Paul and the old Greek ‘mind’ (nous); Romans 11:34; Ezekiel 36:27 | 10-16 | BSB; repository Greek (G3563) | BSB text; script |
+| 13:12; Philippians 2:8 (before the BSB's em-dash) | 10-16 | BSB | BSB text |
+
+Cut: the mystery cults of Eleusis (deep note, not checked); Origen and Jerome by name.
