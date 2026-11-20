@@ -19,10 +19,12 @@ Pages on morality itself and on sexuality, which the plan also places in this ar
 1. **Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?** Hume's verdict, the preaching at Clermont and the promise of forgiveness, the massacres of 1096 and 1099 and the sack of Constantinople, the conquests that came before, and the cross made a soldier's badge.
 2. **Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?** Paine's charge, Augustine's turn and Aquinas's argument for death, the Spanish Inquisition and the *conversos*, the Protestant executions in Zurich and Geneva, the early church's refusal of force, and the case for liberty made from inside the faith.
 3. **Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?** Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Baptists' founding in 1845 and their apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.
+4. **Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?** The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe. Find Help (/help) is at the top of the page and at its end.
 
 ## Words these pages use
 
 - **Crusade**: a war preached by the medieval church as an act of devotion, whose fighters took the cross as their sign and were promised forgiveness of sins.
+- **Cover-up**: the hiding of a wrong, here the abuse of children, to protect a person or an institution from its consequences.
 - **Heresy**: the teaching, by a baptized person, of what the church holds to contradict the faith.
 - **Inquisition**: a church tribunal for finding and judging heresy; the Spanish Inquisition, founded in 1478 under the crown, was abolished in 1834.
 - **Converso**: a Jew, or a descendant of Jews, baptized in medieval Spain, often under pressure.

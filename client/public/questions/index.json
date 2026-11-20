@@ -427,6 +427,13 @@
           "blurb": "Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Baptists' founding in 1845 and their apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "abuse-and-cover-up",
+          "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
+          "blurb": "The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe. Find Help (/help) is at the top of the page and at its end.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1350,6 +1357,16 @@
       "area": "morality",
       "slug": "slavery-and-conquest",
       "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
+      "live": false
+    },
+    {
+      "claim": "Bishops turned their backs on victims and protected their priests",
+      "proponent": "National Review Board for the Protection of Children and Young People",
+      "work": "A Report on the Crisis in the Catholic Church in the United States",
+      "year": 2004,
+      "area": "morality",
+      "slug": "abuse-and-cover-up",
+      "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
       "live": false
     }
   ],
