@@ -112,11 +112,13 @@ describe("WisdomFinder", () => {
 
   it("marks for the help line every heavy subject and every page that opens with Find Help, from the data", () => {
     const sensitive = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../data/sensitive-pages.json"), "utf8")).wisdom;
-    const heavy = new Set([...Object.keys(sensitive.lead), ...Object.keys(sensitive.end)]);
-    const help = new Set(finder.topics.filter((t) => t.help).map((t) => t.id));
-    for (const id of heavy) expect(help.has(id), id).toBe(true);
+    const heavyIds = [...Object.keys(sensitive.lead), ...Object.keys(sensitive.end)];
+    const heavy = new Set(heavyIds);
+    const helpIds = finder.topics.filter((t) => t.help).map((t) => t.id);
+    const help = new Set(helpIds);
+    for (const id of heavyIds) expect(help.has(id), id).toBe(true);
     for (const id of ["numbness", "mental-exhaustion", "work-and-burnout", "purpose-and-meaning"]) expect(help.has(id), id).toBe(true);
-    for (const id of help) {
+    for (const id of helpIds) {
       if (heavy.has(id)) continue;
       const deep = JSON.parse(fs.readFileSync(path.join(PUBLIC, "wisdom/deep", `${id}.json`), "utf8")) as { whole: string[] };
       expect(deep.whole[0].split(/(?<=[.?])\s+/).slice(0, 3).join(" "), id).toContain("Find Help");
