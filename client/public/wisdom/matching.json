@@ -1353,12 +1353,26 @@
     "he left me",
     "ex boyfriend",
     "ex girlfriend",
-    "my ex"
+    "my ex",
+    "got dumped",
+    "heartbroken",
+    "broken heart",
+    "miss my ex",
+    "engagement ended",
+    "called off the engagement",
+    "relationship ended",
+    "ex moved on",
+    "ex has someone new",
+    "ended our relationship",
+    "still in love with my ex",
+    "girlfriend ended things",
+    "boyfriend ended things"
    ],
    "not": [],
    "related": [
     "forgiveness",
-    "loneliness"
+    "loneliness",
+    "dating"
    ]
   },
   "losing-a-spouse": {
@@ -2500,7 +2514,6 @@
   "dating": {
    "phrases": [
     "christian dating",
-    "should i date",
     "how do i know if hes the one",
     "how do i know if shes the one",
     "dating apps",
@@ -2513,7 +2526,9 @@
     "dating someone new",
     "crush on",
     "falling for someone",
-    "should we get married"
+    "should we get married or wait",
+    "is he the right person to marry",
+    "is she the right person to marry"
    ],
    "not": [
     "isnt a christian",
