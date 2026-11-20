@@ -48,6 +48,9 @@
 .wb-pair{display:grid;gap:4px 24px;margin:var(--s-2) 0}
 @media (min-width:720px){.wb-pair{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .wb-pair .wb-kept__ref{margin-left:0}
+.wb-more{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink);margin:var(--s-3) 0 0;max-width:var(--w-read)}
+.wb-more a{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+
 @media print{
   .wb-pick,.wb-teach,.wb-verse__tools,.wb-tverse__hint,.wb-done input,.wb-kept__drop{display:none !important}
   .wb-verse{padding:3pt 0}

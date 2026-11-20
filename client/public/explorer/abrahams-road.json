@@ -1,0 +1,118 @@
+{
+  "about": "Abraham's road, the Bible Explorer's second moving map (/study/explorer/abrahams-road): the places Genesis names, in the order it tells them, on the Genesis book page's \"fertile-crescent\" frame. Every place is an id from that page's checked list (client/public/bible/notes/genesis/intro.json, teaching.map), never a copy; names gives the map's own name for two of them. scripts/validate-explorer.mjs checks it.",
+  "frame": "fertile-crescent",
+  "intro": "Genesis follows one family from Ur of the Chaldeans to Haran, on into Canaan, the land God promised, down to Egypt and back. Step along the map one place at a time, in the order Genesis tells it. His name was Abram until God gave him the name Abraham (Genesis 17:5).",
+  "routeNote": "Every line is straight and dotted: Genesis gives the order of the places, not the roads, so the way Abraham went between them is not known. Where a straight line crosses a corner of the sea, that is only because it is straight: Genesis tells of no voyage. Places are set where the Genesis book page sets them; Egypt and the land of Moriah are regions, ringed and placed roughly. A sketch, not a survey: the coasts and rivers are drawn as they are now, not as they were then. The map gives no dates; the Genesis book page says when Abraham may have lived, and why that is debated.",
+  "names": {
+    "goshen": "Egypt",
+    "moriah": "The land of Moriah"
+  },
+  "parts": [
+    {
+      "id": "ur-to-canaan",
+      "name": "From Ur to Canaan",
+      "whole": true,
+      "range": "Genesis 11:31 to 12:7",
+      "line": "Abram's family leaves Ur and settles at Haran; from there Abram sets out for the land God will show him.",
+      "steps": [
+        {
+          "id": "ur",
+          "place": "ur",
+          "by": "start",
+          "ref": "Genesis 11:31",
+          "text": "Terah set out with his son Abram, Abram's wife Sarai and his grandson Lot from “Ur of the Chaldeans” for the land of Canaan. Ur is usually placed at Tell el-Muqayyar in southern Mesopotamia, where it is drawn here; some have proposed a northern Ur near Haran instead."
+        },
+        {
+          "id": "haran",
+          "place": "haran",
+          "by": "land",
+          "ref": "Genesis 12:1-4",
+          "text": "The family settled at Haran, and there God told Abram, “Leave your country, your kindred, and your father’s household, and go to the land I will show you.” Abram went, at seventy-five years old."
+        },
+        {
+          "id": "shechem",
+          "place": "shechem",
+          "by": "land",
+          "ref": "Genesis 12:6-7",
+          "text": "At the Oak of Moreh at Shechem the LORD appeared to Abram and said, “I will give this land to your offspring.” Abram built an altar there."
+        }
+      ]
+    },
+    {
+      "id": "egypt",
+      "name": "Down to Egypt and back",
+      "range": "Genesis 12:8 to 13:18",
+      "line": "From Bethel to Egypt in a famine, back to Bethel, and on to Hebron.",
+      "steps": [
+        {
+          "id": "bethel",
+          "place": "bethel",
+          "by": "start",
+          "ref": "Genesis 12:8-9",
+          "text": "Abram pitched his tent between Bethel and Ai, built an altar and called on the name of the LORD. Then he moved on toward the Negev, the dry country to the south."
+        },
+        {
+          "id": "egypt",
+          "place": "goshen",
+          "name": "Egypt",
+          "by": "land",
+          "ref": "Genesis 12:10-20",
+          "text": "When famine came, Abram went down to Egypt, and there, afraid for his life, he passed Sarai off as his sister until Pharaoh sent them away. Genesis does not say where in Egypt they stayed; the mark is set roughly in the eastern Nile delta, where the book page draws Goshen."
+        },
+        {
+          "id": "bethel-again",
+          "place": "bethel",
+          "name": "Back to Bethel",
+          "by": "land",
+          "ref": "Genesis 13:1-4",
+          "text": "Abram went up out of Egypt into the Negev and on, from place to place, back to Bethel, where he had built the altar. There he called on the name of the LORD again."
+        },
+        {
+          "id": "hebron",
+          "place": "hebron",
+          "by": "land",
+          "ref": "Genesis 13:14-18",
+          "text": "After Lot chose the plain of the Jordan, God told Abram to look north, south, east and west, for all the land he could see would be given to him and his offspring. Abram moved his tent to the Oaks of Mamre at Hebron and built an altar."
+        }
+      ]
+    },
+    {
+      "id": "moriah",
+      "name": "Hebron, Beersheba and Moriah",
+      "range": "Genesis 18 to 25",
+      "line": "The promise of a son, the well at Beersheba, the test in the land of Moriah, and the cave where Sarah and Abraham were buried. The test is one of the hardest stories in the Bible: God stopped Abraham, and the Bible's later law and prophets forbid ever offering a child, “something I never commanded, nor did it even enter My mind” (Jeremiah 7:31).",
+      "steps": [
+        {
+          "id": "mamre",
+          "place": "hebron",
+          "by": "start",
+          "ref": "Genesis 18:1-14",
+          "text": "By the Oaks of Mamre the LORD appeared to Abraham, and he heard the promise that Sarah would have a son. Isaac was born when Abraham was a hundred years old (Genesis 21:5)."
+        },
+        {
+          "id": "beersheba",
+          "place": "beersheba",
+          "by": "land",
+          "ref": "Genesis 21:31-33",
+          "text": "At Beersheba Abraham swore an oath with Abimelech over a well, planted a tamarisk tree, and “called upon the name of the LORD, the Eternal God.” He was living here when God tested him (Genesis 22:1, 19)."
+        },
+        {
+          "id": "moriah",
+          "place": "moriah",
+          "name": "The land of Moriah",
+          "by": "land",
+          "ref": "Genesis 22:1-14",
+          "text": "God told Abraham to offer his son Isaac in “the land of Moriah”, but when Abraham obeyed, God stopped him, and Abraham offered a ram “in place of his son” and named the place “The LORD Will Provide.” Genesis does not say which mountain it was; a later book, 2 Chronicles 3:1, says Solomon built the temple in Jerusalem “on Mount Moriah”, so the mark is set there, roughly, as the Genesis book page sets it."
+        },
+        {
+          "id": "machpelah",
+          "place": "hebron",
+          "name": "Back to Hebron",
+          "by": "land",
+          "ref": "Genesis 23:2-20",
+          "text": "Sarah died at Hebron, and Abraham bought the field with the cave of Machpelah near Mamre to bury her. When Abraham died “at a ripe old age”, his sons Isaac and Ishmael buried him there too (Genesis 25:8-9)."
+        }
+      ]
+    }
+  ]
+}

@@ -291,6 +291,44 @@ describe("the map", () => {
       })
     ).toBeInTheDocument();
   });
+
+  it("the God, image, sin and cross cards keep their limits", async () => {
+    const cards = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/cards.json"), "utf8")
+    ).cards as { id: string; [k: string]: unknown }[];
+    const text = (id: string) => JSON.stringify(cards.find(c => c.id === id));
+    // God: the Honest Answer's limits in the third person; no analogy.
+    const god = text("god");
+    expect(god).toContain("does not claim a proof");
+    expect(god).toContain("still say no");
+    const godWords = JSON.stringify(
+      ["statement", "question"].map(k => cards.find(c => c.id === "god")?.[k])
+    );
+    expect(godWords).not.toMatch(/\bI\b|\bwater\b|\bclover\b|\begg\b/);
+    // The image: worth given, not earned; no position on how or when.
+    const image = text("image");
+    expect(image).toContain("given, not earned");
+    expect(image).toContain("not a proof");
+    expect(image).not.toMatch(/evolution|years old|age of the earth|\bI\b/);
+    // Sin: never "you are bad"; the way home stays open.
+    const sin = text("sin");
+    expect(sin).not.toMatch(/you are bad/i);
+    expect(sin).toContain("Where are you?");
+    // The cross: no theory chosen; never blames the Jewish people.
+    const cross = text("cross");
+    expect(cross).toContain("The creed does not choose a theory");
+    expect(cross).toContain("is a lie that Christians must reject plainly");
+    expect(cross).toContain("it is wrong to blame the Jewish people");
+    renderAt("/study/explorer");
+    for (const name of ["God", "People made in God's image", "Sin", "The cross"]) {
+      const card = await screen.findByRole("group", { name });
+      expect(within(card).getByRole("img")).toBeInTheDocument();
+    }
+    const cardCross = screen.getByRole("group", { name: "The cross" });
+    expect(
+      within(cardCross).getByRole("link", { name: /Why did Jesus die\?/ })
+    ).toBeInTheDocument();
+  });
 });
 
 describe("a stop", () => {

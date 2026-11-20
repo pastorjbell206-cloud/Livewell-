@@ -1,0 +1,24 @@
+/* Test the Case (/tools/test-the-case) on the tool shell. Tokens only. The
+ * case's move in reading type, the objections that open to their answers,
+ * what the move does not settle, and where the case ends. */
+.ttc-coming{font-family:var(--U);font-size:13px;line-height:1.55;color:var(--ink-muted);margin:12px 0 0}
+.ttc-case .ts-r__title{margin-bottom:var(--s-3)}
+.ttc-restart{font-size:13px;margin:0 0 var(--s-2)}
+.ttc-move{font-family:var(--font-reading);font-size:var(--fs-read);font-weight:400;line-height:var(--lh-read);color:var(--ink);margin:var(--s-2) 0 var(--s-3);max-width:var(--w-read);outline:none;scroll-margin-top:84px}
+.ttc-push{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:0 0 10px}
+.ttc-objections{list-style:none;margin:0 0 var(--s-3);padding:0;display:grid;gap:10px}
+.ttc-objection{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
+.ttc-objection.is-open{border-left:3px solid var(--mustard)}
+.ttc-objection__q{display:block;width:100%;min-height:52px;padding:14px 16px;text-align:left;background:none;border:0;cursor:pointer;font-family:var(--F);font-size:clamp(1.05rem,1rem + .25vw,1.2rem);font-weight:500;line-height:1.35;color:var(--ink)}
+.ttc-objection__q:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.ttc-objection__a{margin:0;padding:14px 16px 16px;border-top:1px solid var(--border);font-family:var(--font-reading);font-size:calc(var(--fs-read) - 2px);line-height:var(--lh-read);color:var(--ink)}
+.ttc-grants{font-family:var(--B);font-size:15px;font-style:italic;line-height:1.6;color:var(--ink-muted);border-left:2px solid var(--mustard);padding-left:14px;margin:0 0 var(--s-3);max-width:60ch}
+.ttc-close{font-family:var(--F);font-size:clamp(1.25rem,1.1rem + .6vw,1.6rem);line-height:1.5;color:var(--ink);margin:0 0 var(--s-3);max-width:60ch}
+.ttc-after{margin-top:var(--s-4);padding-top:var(--s-3);border-top:1px solid var(--border)}
+.ttc-after>p{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink-muted);max-width:60ch;margin:0 0 16px}
+.ttc-link{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px}
+@media print{
+  .ttc-objection__a[hidden]{display:block !important}
+  .ttc-objection__q{min-height:0;padding:4pt 0}
+  .ttc-objection__a{padding:2pt 0 6pt;font-size:10.5pt}
+}

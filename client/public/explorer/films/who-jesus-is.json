@@ -1,0 +1,182 @@
+{
+  "slug": "who-jesus-is",
+  "title": "Who Jesus is",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "jesus",
+  "line": {
+    "younger": "Jesus is God the Son, who became a real man. Seven pictures of who he is, and why it matters.",
+    "older": "The Word with God from the beginning, born as a man, fully God and fully man in one person, and the question he asked his friends. In seven pictures."
+  },
+  "poster": "A figure walks along a road by a lake toward a small group of people, under a wide sky.",
+  "frames": [
+    {
+      "id": "word",
+      "name": "The Word",
+      "still": "A light shines in the middle of a dark picture, and the darkness does not cover it.",
+      "younger": "Before the world began, the Son of God was already there, with the Father. John calls him the Word. Everything God made, he made through him.",
+      "older": "John begins before the beginning: “In the beginning was the Word, and the Word was with God, and the Word was God.” The Son did not begin at Bethlehem. Through him all things were made.",
+      "verse": {
+        "ref": "John 1:1",
+        "text": "In the beginning was the Word, and the Word was with God, and the Word was God."
+      }
+    },
+    {
+      "id": "flesh",
+      "name": "Became flesh",
+      "still": "A stable at night with a manger full of straw, under one bright star.",
+      "younger": "Then the Son became a real human baby, born to Mary in Bethlehem. God the Son came to live among us, and he stayed God.",
+      "older": "“The Word became flesh and made His dwelling among us.” He did not stop being God when he became man, and he did not only seem to be a man. He took a real human nature: he was born, he grew, he learned.",
+      "verse": {
+        "ref": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
+      }
+    },
+    {
+      "id": "man",
+      "name": "Fully man",
+      "still": "A man sits resting by a stone well in the heat of the day, his water jar beside him.",
+      "younger": "Jesus was a real man. He got hungry and tired, he slept, and he cried when his friend Lazarus died. He knows what it is like to be one of us.",
+      "older": "The Gospels do not hide his humanity. Weary from walking, he sits down by a well. At his friend's tomb, “Jesus wept.” Hebrews says he was tempted in every way that we are, yet without sin.",
+      "verse": {
+        "ref": "Hebrews 4:15",
+        "text": "For we do not have a high priest who is unable to sympathize with our weaknesses, but we have one who was tempted in every way that we are, yet was without sin."
+      }
+    },
+    {
+      "id": "god",
+      "name": "Fully God",
+      "still": "The same man stands by a lake: on the water a boat rides on calm waves under a clearing sky, and on the shore a man walks away carrying his mat.",
+      "younger": "Jesus also did things only God can do. He forgave people's sins. He told the wind and the waves to be still, and they obeyed him. His friends asked, “Who is this, that even the wind and the sea obey Him?”",
+      "older": "In Mark he tells a paralyzed man, “Son, your sins are forgiven,” and the scribes object, “Who can forgive sins but God alone?” He rebukes the wind and the sea, and his friends ask, “Who is this, that even the wind and the sea obey Him?”",
+      "verse": {
+        "ref": "Mark 4:41",
+        "text": "Overwhelmed with fear, they asked one another, “Who is this, that even the wind and the sea obey Him?”"
+      }
+    },
+    {
+      "id": "one",
+      "name": "One person",
+      "still": "The man stands alone on the road: one figure, the same in every picture.",
+      "younger": "Jesus is not half God and half man, and he is not a man who later became God. He is fully God and fully man, one person, for ever.",
+      "older": "Not half God and half man; not a man who became God; not God dressed up as a man. The church confessed it at the Council of Chalcedon in 451: one person who is truly God and truly man. The family catechism says, fully God and fully man in one person for ever.",
+      "verse": {
+        "ref": "Colossians 2:9",
+        "text": "For in Christ all the fullness of the Deity dwells in bodily form."
+      }
+    },
+    {
+      "id": "why",
+      "name": "Why both",
+      "still": "The man stands between a group of people and the light from beyond the edge, and one gold line runs from the light through him to the people.",
+      "younger": "Only someone who is God could save us, and only someone who is one of us could take our place. Jesus is both, so he can bring God and people back together.",
+      "older": "Only someone who is both could bring God and people back together. As man he could stand in our place; as God he could carry what no one else could. Hebrews says he had to be “made like His brothers in every way” to make atonement for the sins of the people.",
+      "verse": {
+        "ref": "Hebrews 2:17",
+        "text": "For this reason He had to be made like His brothers in every way, so that He might become a merciful and faithful high priest in service to God, in order to make atonement for the sins of the people."
+      }
+    },
+    {
+      "id": "peter",
+      "name": "Who do you say?",
+      "still": "On a hillside the man sits with his friends around him, and one of them leans forward to answer.",
+      "younger": "Jesus once asked his friends, “Who do you say I am?” Peter answered, “You are the Christ, the Son of the living God.” It is a question everyone gets to think about for themselves.",
+      "older": "Near Caesarea Philippi, after hearing what others said, Jesus asked, “Who do you say I am?” Peter answered, “You are the Christ, the Son of the living God.” Some say he was only a good teacher; the Honest Answer on that question weighs it, and why the earliest sources make it hard to hold.",
+      "verse": {
+        "ref": "Matthew 16:16",
+        "text": "Simon Peter answered, “You are the Christ, the Son of the living God.”"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jesus got tired and hungry like you, and he also calmed a storm. Which surprises you more? Talk about it with a parent or a leader.",
+    "older": "Why does it matter that Jesus is fully God and fully man, and not something in between? What would be lost if he were only one of the two?"
+  },
+  "read": [
+    {
+      "label": "John 1",
+      "href": "/study/bible/john/1"
+    },
+    {
+      "label": "John 4",
+      "href": "/study/bible/john/4"
+    },
+    {
+      "label": "John 11",
+      "href": "/study/bible/john/11"
+    },
+    {
+      "label": "Mark 2",
+      "href": "/study/bible/mark/2"
+    },
+    {
+      "label": "Mark 4",
+      "href": "/study/bible/mark/4"
+    },
+    {
+      "label": "Hebrews 2",
+      "href": "/study/bible/hebrews/2"
+    },
+    {
+      "label": "Matthew 16",
+      "href": "/study/bible/matthew/16"
+    }
+  ],
+  "stops": [
+    "jesus"
+  ],
+  "cards": [
+    "jesus"
+  ],
+  "deeper": [
+    {
+      "label": "Was Jesus just a good teacher? (an Honest Answer)",
+      "href": "/answers/was-jesus-just-a-good-teacher"
+    },
+    {
+      "label": "Who is Jesus Christ? (the family catechism)",
+      "href": "/family/catechism#q25"
+    },
+    {
+      "label": "Why did the Son of God become a man? (the family catechism)",
+      "href": "/family/catechism#q26"
+    }
+  ],
+  "share": {
+    "level": "younger",
+    "frames": [
+      {
+        "id": "word",
+        "verse": true
+      },
+      {
+        "id": "flesh",
+        "verse": false
+      },
+      {
+        "id": "man",
+        "verse": false
+      },
+      {
+        "id": "god",
+        "verse": true
+      },
+      {
+        "id": "one",
+        "verse": true
+      },
+      {
+        "id": "why",
+        "verse": false
+      },
+      {
+        "id": "peter",
+        "verse": true
+      }
+    ]
+  },
+  "end": {
+    "label": "Go to the stop: Jesus Comes",
+    "href": "/study/explorer/jesus"
+  }
+}

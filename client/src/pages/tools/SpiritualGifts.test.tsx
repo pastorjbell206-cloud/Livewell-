@@ -186,7 +186,7 @@ describe("SpiritualGifts", () => {
     renderPage();
     answerAll(() => 3);
     fireEvent.click(screen.getAllByRole("button", { name: "Change my answers" })[0]);
-    expect(screen.getByText("PART 1 OF 4")).toBeInTheDocument();
+    expect(screen.getByText("Part 1 of 4")).toBeInTheDocument();
     const first = screen.getByRole("group", { name: new RegExp(escape(ITEMS[0].text)) });
     expect(within(first).getByRole("radio", { name: "Partly true" })).toBeChecked();
     expect(screen.getByRole("button", { name: "Next part" })).toBeEnabled();
