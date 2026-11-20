@@ -9,8 +9,16 @@
       "planned": 16,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-cosmological-argument",
+          "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
+          "blurb": "Leibniz's argument from contingency and the kalam, each in its premises; Hume's three objections, Russell's brute fact and Kant's charge of borrowing; quantum events and the \"universe from nothing\"; and what a necessary being would and wouldn't be.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "text",
@@ -384,6 +392,46 @@
     }
   ],
   "claims": [
+    {
+      "claim": "Whatever we can conceive as existing we can conceive as not existing, so nothing exists necessarily, and the material universe may as well be the necessary being as God",
+      "proponent": "David Hume",
+      "work": "Dialogues Concerning Natural Religion",
+      "year": 1779,
+      "area": "god",
+      "slug": "the-cosmological-argument",
+      "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
+      "live": false
+    },
+    {
+      "claim": "The universe is just there, and that's all; it needs no explanation outside itself",
+      "proponent": "Bertrand Russell",
+      "work": "Debate with Frederick Copleston, BBC radio",
+      "year": 1948,
+      "area": "god",
+      "slug": "the-cosmological-argument",
+      "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
+      "live": false
+    },
+    {
+      "claim": "The cosmological argument depends on the ontological argument for its whole strength",
+      "proponent": "Immanuel Kant",
+      "work": "Critique of Pure Reason",
+      "year": 1781,
+      "area": "god",
+      "slug": "the-cosmological-argument",
+      "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
+      "live": false
+    },
+    {
+      "claim": "Physical law can account for a universe coming to be from nothing, without a creator",
+      "proponent": "Lawrence M. Krauss",
+      "work": "A Universe from Nothing",
+      "year": 2012,
+      "area": "god",
+      "slug": "the-cosmological-argument",
+      "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
+      "live": false
+    },
     {
       "claim": "More variants than words; 200,000 to 400,000 (later estimates higher)",
       "proponent": "Bart D. Ehrman",
