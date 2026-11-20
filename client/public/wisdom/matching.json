@@ -1760,12 +1760,29 @@
     "friend betrayed",
     "stabbed me in the back",
     "lied about me",
-    "friend lied about me"
+    "friend lied about me",
+    "backstabbed",
+    "best friend betrayed me",
+    "business partner cheated me",
+    "told my secret",
+    "shared my secret",
+    "broke my trust",
+    "cant trust anyone",
+    "went behind my back",
+    "friend turned on me",
+    "two faced friend",
+    "pastor betrayed",
+    "betrayed by my",
+    "used me and left",
+    "business partner stole",
+    "partner took the money"
    ],
    "not": [],
    "related": [
     "forgiveness",
-    "reconciliation"
+    "reconciliation",
+    "revenge",
+    "marriage-after-an-affair"
    ]
   },
   "addiction": {
