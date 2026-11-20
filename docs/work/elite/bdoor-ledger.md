@@ -7771,3 +7771,30 @@ count of pistis Christou phrases; who founded the Roman church.
 | "Due penalty" read within Paul's argument, not as illness sent as punishment | 24-32 | Site's care rule | Pastoral line |
 
 Cut: Campbell's reading of 1:18-32 as a voiced opponent (deep note; not checked); whether 1:26 speaks of women with women or of other acts (stated as "most readers take in the same sense"); ancient same-sex practices described in detail (not checked, so the second reading is stated as its holders see Paul's world).
+
+## The plain notes on Romans 2 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The diatribe: an imagined listener addressed as "O man"; whom Paul has in mind read two ways | 1-5 | Repository introduction (`reading`); deep note (`literary`) | Repository; stated as readings |
+| Chrēstotēs, kindness | 1-5 | Repository deep note (`words`) | Repository |
+| 2 Samuel 12:7; Exodus 34:6; Joel 2:13; Zephaniah 1:15 | 1-5 | BSB | BSB text |
+| 2:6-11 built as a mirror (chiasm); prosōpolēmpsia "receiving the face" | 6-11 | Repository deep note (`literary`, `words`) | Repository |
+| Psalm 62:12; Proverbs 24:12; Deuteronomy 10:17 | 6-11 | BSB | BSB text |
+| Three readings of judgment by deeds (the law's standard; believers renewed by the Spirit; works as fruit and evidence) | 6-11 | Repository deep note (`hard`) | Stated as readings, no names |
+| The law read aloud in synagogues on the Sabbath; Greek idea of a natural law | 12-16 | Jewish-life portrait; standard | Stated generally |
+| Suneidēsis; conscience weak (1 Corinthians 8:7) | 12-16 | Repository deep note (`words`); BSB | Repository; BSB text |
+| Jeremiah 31:33; Ezekiel 36:26-27; Psalm 139:23 | 12-16 | BSB | BSB text |
+| Two readings of the Gentiles of 2:14; the Honest Answer on those who never heard | 12-16 | Repository; `answers.ts` ("judged by the light they had") | Stated as readings; Honest Answer pointed to, not quoted |
+| Jewish pride in the law and the calling to be a light true, not caricature; God-fearers | 17-24 | Repository deep note (`historical`) | Repository |
+| "Rob temples": Deuteronomy 7:25-26; two readings; uncertain | 17-24 | Repository deep note | Stated as uncertain. Josephus on the AD 19 Fulvia affair (deep note) not used: not checked |
+| Isaiah 52:5 in Paul follows the Greek, which has "because of you" and "among the Gentiles", absent from the Hebrew; Ezekiel 36:20 | 17-24 | Septuagint | Search: tips.translation.bible (translation commentary on Romans 2:24); preceptaustin.org; biblehub.com commentaries |
+| Not a charge against the Jewish people: "For centuries many Christians ... This site rejects it." | 17-24 | Acts 2 plain note, word for word for the sentences reused | Repository wording |
+| Isaiah 42:6; Exodus 20:14-15; Romans 9:2; 11:1; 11:18-20 | 17-24 | BSB | BSB text |
+| Circumcision the covenant sign (Genesis 17) and chief marker of Jewishness; strange to many Greeks and Romans | 25-29 | Repository deep note (`cultural`) | Repository |
+| Judah linked to praise (Genesis 29:35) | 25-29 | BSB; repository deep note | BSB text |
+| Deuteronomy 10:16; 30:6; Jeremiah 4:4; 9:25; Ezekiel 36:27; Romans 3:2 | 25-29 | BSB | BSB text |
+
+Cut: Josephus on the AD 19 expulsion; the chiasm named as such (described as "a mirror"); Stoic writers by name on natural law.
