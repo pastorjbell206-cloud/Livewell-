@@ -8374,3 +8374,28 @@ One search (the Isthmian crown). Scripture is the BSB in the repository, matched
 | Isaiah 40:31; Psalm 119:32; Philippians 3:14; 2 Timothy 4:7; John 10:28; Hebrews 6:4-6 | 24-27 | BSB | BSB text |
 
 Cut: the number of months athletes trained (deep note; not checked); the Isthmian crown's dates.
+
+## The plain notes on 1 Corinthians 10 (2026-11-20)
+
+Two searches (the travelling rock or well; the cup of blessing). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Corinthian church mostly Gentile; ‘our forefathers’; ‘all’ five times in verses 1-4 | 1-5 | Deep note `historical`, `literary`; BSB | Repository |
+| Water from the rock twice (Exodus 17:6; Numbers 20:11) | 1-5 | BSB | BSB text |
+| Later Jewish writings tell of a well that travelled with Israel; whether known in Paul's day and whether he had it in mind debated | 1-5 | Pseudo-Philo, Biblical Antiquities 10.7; Tosefta Sukkah 3 | Search: intertextual.bible (moving rock timeline; LAB 10.7 and t. Sukkah 3); galaxie.com (Enns, BBR 6, 1996); michaeljkruger.com (Beale's doubts). No text named on the page |
+| ‘That rock was Christ’: real presence of the Son with Israel, or a type; both | 1-5 | Deep note `christ`, `words` (typos) | Stated as readings |
+| 10:9 ‘Christ’ in NA28, NA27, SBL, TR, Byzantine; ‘Lord’ in some old copies (Tyndale House, Westcott and Hort, Tregelles editions) | 1-5 | Repository Greek (edition tags at 10:9) | Script. Stated as "some old copies"; "most modern editions print ‘Christ’" |
+| Exodus 13:21; 14:22; 16:4; 17:6; Numbers 20:11; Psalm 78:16; Deuteronomy 32:4; Numbers 14 | 1-5 | BSB | BSB text |
+| The four warnings: Exodus 32:6; Numbers 25:1-3; 21:6; 16:41; Psalm 95:8 | 6-13 | BSB; deep note `historical` | BSB text |
+| 23,000 against Numbers 25:9's 24,000; one day or the whole plague; round number | 6-13 | Deep note `hard`; BSB | Stated as readings |
+| Peirasmos test or temptation; the context of sin and idolatry; ekbasis a way out | 6-13 | Repository Greek (10:13); deep note `words` | Script. "A way out of a narrow place" not used |
+| 10:13 not a promise against unbearable suffering; 2 Corinthians 1:8-9; James 1:13; Psalm 34:18; care line with Find Help | 6-13 | BSB | BSB text; site's care form |
+| Sacrificial meals in temple dining rooms; P.Oxy. 110 ‘at the table of the lord Sarapis’ | 14-22 | wrom-ledger (Garland; P.Oxy. 110) | Ledger |
+| Koinōnia; ‘communion’ | 14-22 | Repository Greek (10:16, 10:20 koinōnous); deep note `words` | Script |
+| Cup of blessing: later Jewish name for the cup after grace at the end of a meal, and the third Passover cup; how early not certain | 14-22 | Jewish Encyclopedia "Cup of Benediction"; Chabad and Sefaria pages on kos shel berakhah | Search: jewishencyclopedia.com/articles/4806; sefaria.org.il topic; chabad.org. Stated as "may echo"; date not given |
+| Deuteronomy 32:17, 21; Psalm 106:37; Exodus 34:14; Leviticus 7:15 | 14-22 | BSB | BSB text |
+| Makellon, macellum, the food market; meat of mixed origin | 23-33 | wrom-ledger; deep note `cultural` | Ledger |
+| Psalm 24:1; 1 Timothy 4:4; Leviticus 19:14 | 23-33 | BSB | BSB text |
+
+Cut: the rabbinic use of Psalm 24:1 as the ground for blessing before food (deep note; not checked); "a way out of a pass" for ekbasis; any named Jewish source for the travelling well.
