@@ -9825,3 +9825,36 @@ page (the part on 2:1-12) was changed in the chapter 2 commit, to match the chap
 longer says that everyone who named the figure ‘has been wrong’, since that would take a
 side against readings that place him in Paul's own century; it now says that those who
 named someone of their own day and expected the end at once saw the end not come.
+
+## 1 Timothy's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/1-timothy/intro.json`, field
+`teaching`. No new searches: every claim is carried by the repository's intro and chapter
+notes, the wisdom topics, the Acts 18 note, or earlier ledger rows. No modern scholar is
+named. Scripture is the BSB in the repository, checked by the validator and the strict check.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Timothy left in Ephesus; teachers of myths, genealogies, the law; forbade marriage and foods; godliness as gain; ‘knowledge’ (6:20) | Repository `overview`; chapter 1 deep note `historical` | Repository; BSB text |
+| ‘Pastoral Letters’ a name used since the 1700s | Repository `overview` | Repository |
+| Irenaeus about AD 180 quotes it and names Paul; the Muratorian list late second century; Marcion lacked the Pastorals; P46 about AD 200 lacks them, last pages lost | Repository `author` | Repository |
+| The case against Paul (vocabulary and style, settled order, a second-century-like teaching, travels outside Acts; writing in a teacher's name known) and for (subject and recipients, simple order with no single bishop, first-century teaching, travels after a release, the church rejected forgeries); a secretary given freedom; no side; the church received them; the writer called Paul | Repository `author` | Repository wording, each in its holders' terms. P. N. Harrison and Luke as secretary not named. No side |
+| Ephesus: port, leading city of Asia, temple of Artemis, magic; about three years (Acts 19; 20:31); churches in homes; Acts 20:30 | Repository `setting`; Ephesians book page | Repository; BSB text |
+| Timothy: Lystra, believing Jewish mother, Greek father (Acts 16:1); errands (1 Corinthians 4:17; 1 Thessalonians 3:2); co-sender of six letters; youth (4:12); health (5:23) | Repository `setting` | Repository; BSB text |
+| If Paul, about AD 62 to 64 after a release; Clement about AD 96 ‘limit of the west’; Eusebius on a release and second imprisonment; a few fit it within Acts; later view AD 80 to 110 | Repository `date`; chapter 1 deep note `historical` | Repository |
+| The teaching: Jewish speculation with strict rules (many); early Gnostic (some); the label too early (others); no name given | Chapter 1 deep note `historical` | Repository. No side |
+| 2:8-15: what is agreed (image, grace, women to learn when many thought otherwise, no leave to belittle); complementarian and egalitarian readings in the Acts 18:24-28 note's terms (creation order; two normal tasks; Ephesus false teaching drawing in women, 5:13-15; authenteō domineer; Eve as a picture of being misled); pointers; no side | Chapter 2 deep note `hard`, `cultural`, `words` (G0831); acts/plain/18.json | Repository wording. No side |
+| 2:15 readings: the birth of the Saviour; safety in childbirth; ordinary family life against teachers who forbade marriage | Chapter 2 deep note `hard`, `words` (G5042) | Repository. No side |
+| Childless care lines | genesis/plain/30.json | Word for word (three sentences) |
+| 3:1-13: character not talent; only ‘able to teach’ a skill | Chapter 3 deep note `cultural` | Repository |
+| Church order: bishops (Catholic, Orthodox, Anglican, Methodist in their own form); elders together (Presbyterian, Reformed); the congregation (Baptist, Congregational, free); no side | wisdom/deep/submitting-to-leaders.json `differ` | Repository wording, paraphrased. No side |
+| ‘Husband of one wife’ four readings; 3:11 wives or women deacons; Phoebe (Romans 16:1) | Chapter 3 deep note `hard` | Repository. No side |
+| 5:19-21 accusations and fairness; crimes to the police; a church meeting no substitute | BSB; 1-corinthians/plain/5.json | BSB text; last two sentences word for word |
+| ‘The love of money’ misquoted; not money, not the only root; aimed at those wanting riches, some teachers | wisdom/deep/money.json `misread` (1 Timothy 6:10) | Repository wording, paraphrased |
+| Prosperity teaching an error; those caught in it deserve care | CLAUDE.md guardrails | No factual claim |
+| Sound as healthy; godliness eusebeia, most frequent in the Pastorals; God's household; God the Saviour of all (2:4, 6; 4:10) | Repository `themes`; chapter 1 deep note `words` (G5198) | Repository |
+| 1:9-10 follows the second half of the Ten Commandments; slave traders kidnapped; Exodus 21:16 | Chapter 1 deep note `cultural`; BSB | Repository; BSB text |
+| Deuteronomy 6:4; Genesis 2:7; 3:13; 1:31; Psalm 68:5; Deuteronomy 25:4; 19:15; Job 1:21 | BSB; chapter 5 and 6 deep notes | BSB text |
+| Mesitēs; antilutron; authenteō only here; episkopos; diakonos; presbuteros; autarkeia a Stoic word | Chapter 2, 3, 6 deep notes `words`, `cultural` | Repository |
+| Pliny about AD 112, two slave women called ministers | Chapter 3 deep note `historical` | Repository |
+| Map: Ephesus, Philippi, Thessalonica, Lystra | wmap-ledger | Ledger (Macedonia shown by two of its cities, with the line that the letter does not say where Paul was) |
