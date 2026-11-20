@@ -8704,3 +8704,24 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Stoned and dragged out, presumed dead (Acts 14:19) | 13-18 | BSB | BSB text |
 | Care line on 4:17: Paul's own testimony, never a line for fresh pain; the Romans 8:28 note's wording; Romans 12:15; Psalm 13:1; Find Help | 13-18 | Romans 8 plain note | Repository wording |
 | Psalm 116:8, 10; 39:4; 30:5; Isaiah 40:31 | 13-18 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 5 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paul a tentmaker (Acts 18:3); some in Corinth denied the resurrection (1 Corinthians 15:12); Greek ideas of the soul set free, stated generally | 1-10 | BSB; deep note `historical` | Repository |
+| Intermediate state: most, conscious with Christ awaiting the resurrection; some, the heavenly house the resurrection body at death; some, soul sleep; no side; pointers to the doctrine study, 1 Corinthians 15 and the Explorer's New Creation stop | 1-10 | The site's doctrine study ‘Death and the Intermediate State’ (Adventist, Milton, Overton, Calvin, Westminster 32, all there verified); Explorer stop `new-creation` | Repository; no names repeated |
+| Bēma the judge's platform; Acts 18:12 | 1-10 | Deep note `cultural`; BSB | Repository. Archaeology of Corinth's bema not claimed |
+| Judgment of believers not a second trial (Romans 8:1); pointers to Romans 2:6-11 and 1 Corinthians 3:10-15 notes | 1-10 | Repository | Repository wording |
+| Care line for the grieving (John 11:35; 1 Thessalonians 4:13; Find Help) | 1-10 | 1 Corinthians 15:50-58 form | Repository wording |
+| Isaiah 38:12; Psalm 39:12; Job 19:26; Psalm 17:15; Daniel 12:2; Isaiah 25:8; Ecclesiastes 12:14; Philippians 1:23 | 1-10 | BSB | BSB text |
+| Verse 17 verbless in Greek; person made new and belonging to the new creation | 11-17 | Deep note `words` | Repository |
+| Isaiah 43:18-19; 65:17; Revelation 21:5; Isaiah 53:4-5 | 11-17 | BSB | BSB text |
+| Reconciliation language in the Greek world; God never said to be reconciled to us | 18-21 | Deep note `cultural`, `words` | Repository |
+| Ḥaṭṭāʾt (H2403) both sin and sin offering, both in Leviticus 4:3 | 18-21 | Hebrew text in the repository | Script over `client/public/bible/ch/leviticus/4.json` |
+| 5:21 readings: sin offering (IVP; Romans 8:3); treated as sin, imputation in the Reformed tradition; union and participation, Eastern Orthodox and some Western readers; no side; the Nicene Creed line | 18-21 | Commentaries | Search: biblegateway.com IVP NT Commentary "A Ministry of Reconciliation"; biblehub.com commentaries; ccel.org Barnes; christianitytoday.com (Gorman, theosis); orthodoxchristiantheology.com; monergism.com (Bird). No names in the note |
+| Leviticus 4:24; 16:22; Isaiah 53:6, 10; Psalm 32:2; Ezekiel 33:11; 1 Peter 2:22; Galatians 3:13 | 18-21 | BSB | BSB text |
+
+Cut: N. T. Wright by name (deep note); Irenaeus's phrase (not checked).
