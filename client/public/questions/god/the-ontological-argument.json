@@ -1,0 +1,108 @@
+{
+  "area": "god",
+  "slug": "the-ontological-argument",
+  "status": "pending",
+  "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Eighteenth run (2026-11-20): an independent editor's read of the evil area, and the area \"God, faith and reason\"",
+    "key": "ap"
+  },
+  "record": "docs/work/elite/apol-pilot/god/the-ontological-argument.md",
+  "objectionSource": {
+    "author": "Immanuel Kant",
+    "title": "Critique of Pure Reason",
+    "year": 1781
+  },
+  "shortAnswer": "Anselm of Canterbury argued, in a prayer written in 1077 and 1078, that God, rightly understood as that than which nothing greater can be conceived, can't exist in the mind alone. A monk named Gaunilo answered at once that the same reasoning would prove a perfect island. Thomas Aquinas rejected the argument, and Immanuel Kant argued that existence adds nothing to an idea. Modern versions in the logic of possibility are valid, but they rest on the premise that God's existence is possible, which an unbeliever can deny as reasonably as a believer affirms it. The argument is not a proof that should persuade a doubter, and it isn't offered here as one. What it does show is worth having: if God exists at all, he exists necessarily, not as one more fact that happens to be so, and the question of God is therefore unlike any question about a thing in the world.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "The first objection came from Anselm's own century. Gaunilo, a monk of Marmoutiers, wrote a reply \"in behalf of the fool,\" the fool of Psalm 14 who says there is no God. He asked his reader to imagine an island somewhere in the ocean, \"called the lost island,\" richer than the Islands of the Blest. Anyone who hears it described understands the words, so the island is in his understanding; and since it is more excellent to exist in reality than in the understanding alone, it must exist, or any real land would be more excellent than it. If a man tried \"to prove to me by such reasoning that this island truly exists,\" Gaunilo wrote, then \"either I should believe that he was jesting, or I know not which I ought to regard as the greater fool\" (in Sidney Norton Deane's translation of 1903). An argument whose form proves imaginary islands proves nothing.\n\nThomas Aquinas, who believed in God as firmly as Anselm, rejected the argument too. Not everyone who hears the word \"God\" takes it to mean something than which nothing greater can be thought, he observed, \"seeing that some have believed God to be a body.\" And even granting that meaning, \"it does not therefore follow that he understands that what the word signifies exists actually, but only that it exists mentally\" (*Summa Theologiae* I, q. 2, a. 1, reply to objection 2, in the English Dominican translation).\n\nImmanuel Kant gave the objection its most famous form in the *Critique of Pure Reason* (1781). \"Being is evidently not a real predicate, that is, a conception of something which is added to the conception of some other thing.\" To say that a thing exists adds nothing to the idea of it; it says that something answers to the idea. \"A hundred real dollars contain no more than a hundred possible dollars\" (in J. M. D. Meiklejohn's translation). If existence is not a quality that makes a thing greater, Anselm's argument has no engine. At full strength the objection says that no definition, however exalted, can reach out of the mind and produce a being, and that every attempt either begs the question or proves too much."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "Philosophers since Kant, believers among them, have often judged that the argument fails as a proof, and the Stanford Encyclopedia of Philosophy's article on ontological arguments says that while most versions have some defenders, none has a large following. Gaunilo's parody shows that the argument's form needs a reason why it works for God and for nothing else. Kant's point is right as far as it goes: \"exists\" doesn't work like \"red\" or \"wise,\" and an argument that treats it so has a flaw.\n\nThe modern versions concede the main point themselves. Alvin Plantinga, who set out the best known of them in *The Nature of Necessity* (1974), did not claim that it proves God's existence; as the same encyclopedia reports, he claimed only that it shows that accepting its conclusion can be rational, a claim its critics also dispute. And the article reports Bertrand Russell's remark that it is much easier to be persuaded that ontological arguments are no good than to say exactly what is wrong with them. That is a reason for humility on both sides."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Begin with what Anselm wrote and why. The *Proslogion*, which he first called *Faith Seeking Understanding*, opens as a prayer, not a debate. \"I do not seek to understand that I may believe, but I believe in order to understand.\" Its first chapter addresses God in the words of Scripture, \"Truly you dwell in unapproachable light\" (compare 1 Timothy 6:16), and the argument of chapter 2 is offered as an understanding of what faith already holds. Anselm borrowed his fool from Psalm 14:1, \"The fool says in his heart, 'There is no God'\" (BSB), though the Study Bible's note on that psalm points out that the psalm's fool is not making a philosophical argument; he is living as though God will never call him to account. Anselm's fool is a philosopher's fool, someone who understands the words and denies the thing.\n\nThe argument itself turns on a comparison. If that than which nothing greater can be conceived \"exists in the understanding alone,\" Anselm wrote, then \"it can be conceived to exist in reality; which is greater,\" and the being than which nothing greater can be conceived would be one than which a greater can be conceived, which is impossible. In chapter 3 he went further: \"it is possible to conceive of a being which cannot be conceived not to exist; and this is greater than one which can be conceived not to exist.\" That second thought, necessary existence, is the one that has lasted.\n\nAnselm answered Gaunilo directly. If anyone could find anything other than that than which nothing greater can be conceived to which \"the sequence of my reasoning\" applied, he wrote, \"I will discover that thing, and will give him his lost island, not to be lost again.\" His point can be put this way: there is no greatest possible island, since any island could have one more palm tree, but there may be a greatest possible being, if its greatness lies in qualities such as knowledge, power and goodness that have an upper bound. Whether that answer succeeds is still argued.\n\nAquinas's own view is subtler than a simple rejection. He held that \"God exists\" is self-evident in itself, \"for the predicate is the same as the subject, because God is His own existence,\" but not self-evident to us, \"because we do not know the essence of God,\" and so it has to be shown from God's effects in the world. The modern modal versions take up Anselm's second thought. In Plantinga's form, a being is maximally great if it is all-powerful, all-knowing and wholly good in every possible world; if such a being is so much as possible, then, on a widely accepted principle of the logic of necessity, it exists in every possible world, and so in this one."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is Anselm's argument in chapter 2, a reduction to absurdity: it supposes the opposite of its conclusion and shows that the supposition contradicts itself.",
+      "steps": [
+        "God is that than which nothing greater can be conceived.",
+        "That than which nothing greater can be conceived exists at least in the understanding, since even someone who denies God understands what the words mean.",
+        "To exist in reality as well as in the understanding is greater than to exist in the understanding alone.",
+        "If that than which nothing greater can be conceived existed in the understanding alone, something greater could be conceived, namely the same being existing in reality, which contradicts the first step."
+      ],
+      "conclusion": "So: that than which nothing greater can be conceived exists in reality as well as in the understanding.",
+      "after": "The weight sits on the third step, and Kant denies it: existence is not a quality that makes anything greater. Gaunilo and Aquinas deny the second step in the sense the argument needs, holding that understanding the words is not having the thing before the mind in a way that licenses any conclusion about reality; Gaunilo's island also shows that the form, applied elsewhere, proves too much. The modal version replaces the third step with the idea of necessary existence, and its critics then deny its first premise, that a maximally great being is possible.",
+      "weightStep": 3
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply is symmetry. Run the modal argument backward: there is no maximally great being, so it is not possible that there is one. Someone who doesn't already believe in God has no more reason to accept the first premise than its reverse, as the Stanford Encyclopedia's article argues at length. The argument is valid, and its premise is exactly as disputed as its conclusion. That is the mark of an argument that persuades no one who doesn't already agree.\n\nThe reply is correct about proof, and this page grants it. What it leaves standing is still important. The argument shows that God's existence, if there is a God, is not contingent: God is either necessary or impossible. That changes the shape of the whole debate. God can't be dismissed the way a teapot or a fairy can, as something that simply happens not to be there; an unbeliever who rejects God has reason to think the very idea incoherent, and the arguments that try to show it, by setting divine attributes against one another, become the ones that matter. The Internet Encyclopedia of Philosophy's article on atheism records that J. N. Findlay took that road in 1948, arguing that a being worthy of the name God would have to exist necessarily, and that since no such existence can be shown, there is no God. The argument also tells the reader what Christians mean by God: not the largest being in the universe but the one than whom no greater can be conceived, whose existence is not received from anything. It matches what the Study Bible's note on Exodus 3 calls God's self-existence, drawn from \"I AM WHO I AM\" (Exodus 3:14, BSB).\n\nIf any version were sound, it would reach further than other arguments, to a being all-powerful, all-knowing, wholly good and necessary. It still would not show that this God is Father, Son and Holy Spirit, or that he became man. Christians confess those things because of what they hold God has done in history, above all in raising Jesus from the dead, a claim to be weighed as history, which the library's area on the historical Jesus and the resurrection takes up."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "Whether the idea of a maximally great being is coherent, and so whether it is possible, is unresolved, and it is where the debate now lives. Whether Anselm's answer to Gaunilo succeeds is argued. Whether existence, or necessary existence, can be a perfection is disputed among philosophers of every belief. And whether an argument that persuades no doubter can still give a believer real understanding, as Anselm intended, is a question about what arguments are for as much as about this one."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ sharply on this argument. Anselm, Descartes and Leibniz each defended a version, and Plantinga a modern one. Aquinas rejected it, and many Christian thinkers since Kant have agreed with him. Some value it as the believer's understanding of what faith already holds, which is how Anselm framed it; others think it a philosophical curiosity with no place in Christian witness. The site takes no side. What all confess is that God is the living God who exists in himself and depends on nothing, \"the everlasting God, the Creator of the ends of the earth\" (Isaiah 40:28, BSB), and that he is known not finally by definition but as he has made himself known."
+    }
+  ],
+  "otherSide": [
+    "Gaunilo, *In Behalf of the Fool* (about 1078), in Sidney Norton Deane's translation (1903).",
+    "Immanuel Kant, *Critique of Pure Reason* (1781), \"Of the Impossibility of an Ontological Proof of the Existence of God.\"",
+    "David Hume, *Dialogues Concerning Natural Religion* (1779), part 9."
+  ],
+  "further": [
+    "Anselm of Canterbury, *Proslogion* (1077 to 1078), chapters 2 to 4, with his reply to Gaunilo, in Deane's translation (1903).",
+    "Thomas Aquinas, *Summa Theologiae*, part I, question 2, article 1 (written about 1265 to 1274).",
+    "Alvin Plantinga, *The Nature of Necessity* (1974)."
+  ],
+  "onSite": [
+    "The argued answer \"Does God actually exist?\" (/answers/does-god-actually-exist).",
+    "The Study Bible's notes on Psalm 14 (/study/bible/psalms/14) and Exodus 3 (/study/bible/exodus/3).",
+    "The Nicene Creed (/resources/creeds/nicene-creed)."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "psalms",
+        "chapter": 14
+      },
+      {
+        "book": "exodus",
+        "chapter": 3
+      }
+    ],
+    "answers": [
+      "does-god-actually-exist"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Existence is not a real predicate, so no argument from the idea of God can show that God exists",
+      "proponent": "Immanuel Kant",
+      "work": "Critique of Pure Reason",
+      "year": 1781
+    },
+    {
+      "claim": "The same reasoning would prove that a perfect lost island exists",
+      "proponent": "Gaunilo",
+      "work": "In Behalf of the Fool",
+      "year": 1078
+    }
+  ]
+}

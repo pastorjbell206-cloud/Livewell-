@@ -26,5 +26,411 @@
     { "ch": 2, "why": "Calls Timothy to hand on the teaching, remember the risen Christ, and correct opponents with gentleness, and contains an early Christian saying about dying and reigning with Christ." },
     { "ch": 3, "why": "Contains the New Testament's central statement on the inspiration and usefulness of Scripture." },
     { "ch": 4, "why": "Paul's final charge to preach the word and his farewell: he has fought the good fight, finished the race, and kept the faith." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "2 Timothy in a minute",
+        "body": "2 Timothy is a letter from Paul to Timothy, his younger friend and fellow worker. It has 4 chapters and can be read aloud in about fifteen minutes. If Paul wrote it, as the letter says and the church has always received it, it is the last letter we have from him.\n\nPaul is in chains in Rome. Many friends have left him. At his first hearing in court no one stood with him (4:16). He expects to die soon: “For I am already being poured out like a drink offering, and the time of my departure is at hand” (4:6). And so he writes to Timothy, whom he calls “my beloved child” (1:2), to hand on to him what matters most.\n\nThe letter has one great call running through it: do not be ashamed, and do not give up. Do not be ashamed of the gospel or of Paul the prisoner (1:8). Share in suffering like a good soldier (2:3). Hand the teaching on to faithful people who will teach others (2:2). Correct those who oppose you, but gently (2:25). Keep to the Scriptures you have known since you were a child (3:14-15). Preach the word, whether people want to hear it or not (4:2).\n\nIt is also the most personal of Paul's letters. He remembers Timothy's tears and the faith of his grandmother and mother. He names the friends who left and the few who stayed. And near the very end he asks for his coat and his books, because winter is coming and the prison is cold.\n\nSome questions in this letter are debated: who wrote it, what ‘God-breathed’ in 3:16 means for how Christians speak of the Bible, and how to hold together the warning and the promise of 2:12-13. These notes set out the main readings fairly and take no side where faithful Christians differ."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it",
+        "body": "The letter opens with Paul's name (1:1) and is full of things only a close friend would write: the names of Timothy's grandmother Lois and mother Eunice (1:5), a coat left with a man called Carpus at Troas (4:13), a friend left sick at Miletus (4:20). The church received it as Paul's from early on, and it is in the list of accepted books known as the Muratorian list, usually dated to the late second century.\n\n2 Timothy belongs with 1 Timothy and Titus, the three letters called the Pastoral Letters, and the question of who wrote them is asked of all three together. The book page on 1 Timothy sets it out in the part ‘Who wrote it: the Pastoral Letters’: why many scholars since the early 1800s have concluded that a later follower of Paul wrote them in his name, and why many others hold that Paul wrote them. Both views are held by careful scholars, and readers on both sides take the letters as Scripture. These notes do not choose.\n\nTwo things are worth adding for this letter. Some scholars who doubt that Paul wrote 1 Timothy and Titus think 2 Timothy has the strongest claim of the three, because its personal details are so many and serve no clear purpose for a later writer. And if Paul wrote it from a harsh prison, he may well have had help with the writing: ‘Only Luke is with me’ (4:11), and some have suggested Luke as the one who held the pen. These notes speak of the writer as Paul, as the letter does."
+      },
+      {
+        "id": "where",
+        "h": "Where Paul was, and when: what is known and what is tradition",
+        "body": "Here it helps to keep two kinds of knowledge apart: what the letter itself says, and what early Christian writers report.\n\nThe letter says that Paul is in Rome (1:17), a prisoner (1:8), in chains (1:16), ‘chained like a criminal’ (2:9). It is not the open house arrest of the end of Acts, where Paul welcomed everyone who came (Acts 28:30-31). Here a friend called Onesiphorus had to search hard to find him (1:17). Paul has already had a ‘first defense’, a first hearing in court (4:16). And he expects the end: he has finished the race (4:7).\n\nActs ends with Paul under guard in Rome for two years, around AD 60 to 62. It does not tell what happened next. Early Christian writers fill in the gap. Clement of Rome, writing around AD 96, says that Paul reached ‘the limit of the west’, which many take as a sign that he was released and travelled again. The historian Eusebius, in the 300s, tells of a release and then a second imprisonment in Rome, ending in Paul's death. Early tradition says he was put to death in Rome under the emperor Nero, and, because he was a Roman citizen, beheaded rather than crucified. Nero died in AD 68.\n\nIf Paul wrote this letter, then, it most likely comes from that second imprisonment, around AD 64 to 67. That would place it after the great fire of Rome in July 64, when, the Roman historian Tacitus records, Nero blamed the Christians and many were put to death. To visit a Christian prisoner then was dangerous, and that helps explain why so many stayed away and why Paul keeps saying ‘do not be ashamed’. A few scholars place the letter in an earlier imprisonment, and scholars who think a later follower wrote it usually date it between about AD 80 and 110.\n\nSo the letter itself tells us a prison in Rome and a man near death. The release, the second arrest and the manner of Paul's death come from early tradition: old, widely held, and not told in the Bible."
+      },
+      {
+        "id": "timothy",
+        "h": "Timothy, and the people in the letter",
+        "body": "Timothy came from Lystra, in what is now central Turkey. His mother was a Jewish believer and his father a Greek (Acts 16:1). Paul says his ‘sincere faith’ first lived in his grandmother Lois and his mother Eunice (1:5), and that from infancy he had known the Holy Scriptures (3:15), what Christians now call the Old Testament. He had travelled with Paul for years, and Paul had once laid hands on him to set him apart for his work (1:6).\n\nTimothy seems now to be in or near Ephesus, still facing the false teachers of 1 Timothy. Paul asks him to come to Rome quickly, before winter closed the sea, and to bring Mark (4:9-13, 21).\n\nFew letters are so full of people. Some left Paul: everyone in the province of Asia, including Phygelus and Hermogenes (1:15), and Demas, ‘in his love of this world’ (4:10). Some taught what was false: Hymenaeus and Philetus (2:17). One did him great harm: Alexander the coppersmith (4:14). And some were faithful: Onesiphorus, who was not ashamed of his chains (1:16); Luke, the only one still with him (4:11); and Mark, who had once turned back early on Paul's first long trip (Acts 13:13) and is now ‘useful to me in the ministry’ (4:11). Paul's work was always shared, and in this letter both leaving and staying have names."
+      },
+      {
+        "id": "built",
+        "h": "How it is built",
+        "body": "Do not be ashamed (chapter 1). Paul thanks God for Timothy's faith and tells him to ‘fan into flame the gift of God’ (1:6). God has not given ‘a spirit of fear’ (1:7). Do not be ashamed of the gospel or of Paul; guard what has been entrusted to you. Some in Asia left Paul; Onesiphorus did not.\n\nBe strong, and hand it on (chapter 2). Entrust the teaching to faithful people. Endure like a soldier, an athlete and a farmer. ‘Remember Jesus Christ, raised from the dead’ (2:8). A trustworthy saying about dying and living with him. Handle the word of truth rightly; avoid empty quarrels; correct opponents gently.\n\nHard times, and the Scriptures (chapter 3). In the last days people will love themselves, money and pleasure more than God. Timothy has seen Paul's life and sufferings. ‘All Scripture is God-breathed’ (3:16), and it equips God's servant for every good work.\n\nPreach the word; Paul's farewell (chapter 4). A solemn charge to preach in season and out of season. Paul is being poured out like a drink offering, and he has kept the faith. Then news, requests and greetings: come before winter, bring my coat and my books, and the Lord stood by me when no one else did."
+      },
+      {
+        "id": "shame",
+        "h": "Suffering without shame",
+        "body": "The key word of the first chapter is shame. In the Roman world prison was a public disgrace, and the friends of a prisoner shared it. Paul is not ashamed (1:12). He tells Timothy not to be (1:8). And he praises Onesiphorus, who ‘was unashamed of my chains’ (1:16).\n\nPaul does not ask Timothy to be brave by trying harder. He grounds courage in God: “For God has not given us a spirit of fear, but of power, love, and self-control” (1:7), and he asks Timothy to suffer ‘by the power of God’ (1:8). The reason he gives is the gospel itself: God “has saved us and called us to a holy calling, not because of our works, but by His own purpose and by the grace He granted us in Christ Jesus before time began” (1:9).\n\nLater Paul says something many readers find hard: “Indeed, all who desire to live godly lives in Christ Jesus will be persecuted” (3:12). He had lived it. In Antioch, Iconium and Lystra he was driven out, plotted against and stoned (Acts 13 and 14).\n\nTwo cautions belong here. The verse is not a promise that every trouble is persecution. Being disagreed with, or losing an argument, or living among people who do not share your faith is not the same as being beaten, jailed or put to death for Christ, as Paul was. And suffering is not good in itself, or something to seek. Paul took help when it came, asked his friends to come, and was glad to be ‘refreshed’ (1:16). If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      },
+      {
+        "id": "scripture",
+        "h": "‘All Scripture is God-breathed’ (3:16-17): what all confess, and how Christians differ",
+        "body": "“All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness, so that the man of God may be complete, fully equipped for every good work” (3:16-17).\n\nThe Greek word for ‘God-breathed’ is rare, and this is one of its earliest known uses. It says where Scripture comes from: it is breathed out by God, as the heavens were made ‘by the breath of His mouth’ (Psalm 33:6). When Paul wrote, the Scriptures Timothy had known from childhood were what Christians call the Old Testament. The church has always read Paul's words as applying to the whole Bible as it came to be recognized, and already 2 Peter 3:15-16 places Paul's letters with ‘the rest of the Scriptures’.\n\nHere is what Christians across the traditions confess together. Scripture comes from God and carries his authority. It is also fully human: its books show the words, style and lives of the people who wrote them, and very few Christians have ever thought the writers were simply taking dictation. God worked through their own minds, so that what they wrote was what he meant to say; as 2 Peter 1:21 puts it, they ‘spoke from God as they were carried along by the Holy Spirit’. And Scripture is given for a purpose: to make people ‘wise for salvation through faith in Christ Jesus’ (3:15) and to equip them for good works.\n\nChristians who share that confession describe it in different words. Many hold that Scripture is inerrant: because God cannot lie and Scripture is breathed out by him, the Bible is without error in everything it affirms, including what it says about history and the world. Those who hold this view do not demand wooden literal reading. They allow for round numbers, everyday speech such as ‘the sun rose’, loose quotation and the ways ancient writers wrote, and they apply the claim to what the writers first wrote. They argue that Jesus treated Scripture as unbreakable, and that a Bible which could err where it can be checked would give no firm ground where it cannot.\n\nOthers prefer to say Scripture is infallible: it never fails in what God gave it to do, to make people wise for salvation and to teach faith and life. They hold its authority just as fully. They note that these very verses name the Bible's purpose, and they hold that some of its descriptions of nature and some details of history speak in the ordinary words and assumptions of the people God used, which they see not as a fault but as God stooping to human speech.\n\nThese are real differences, and they have divided schools and churches. But they are differences within a shared confession that Scripture comes from God. These notes do not choose. The doctrine study ‘God Speaks: Revelation and Scripture’ sets out these views and others more fully.\n\nNotice, finally, what Paul says Scripture is for. He is not writing an essay about the Bible. He is telling a young leader in a hard place that the Scriptures he has known since childhood are enough for his work. They teach, they convict, they correct, they train. They are given to be used."
+      },
+      {
+        "id": "farewell",
+        "h": "Paul's farewell",
+        "body": "Chapter 4 reads like a last will. Moses gave a farewell to Israel (Deuteronomy 31 to 33), Joshua to the people he had led (Joshua 23 and 24), and Paul himself to the elders of Ephesus (Acts 20:17-38). Here Paul says goodbye to his son in the faith.\n\n“I have fought the good fight, I have finished the race, I have kept the faith. From now on there is laid up for me the crown of righteousness, which the Lord, the righteous Judge, will award to me on that day—and not only to me, but to all who crave His appearing” (4:7-8).\n\nThe pictures come from the games. The crown was the wreath of leaves given to the winner of a race. But Paul does not keep the crown for himself. It is for ‘all who crave His appearing’, every believer who longs for Christ to come.\n\nHe calls his death a ‘departure’, a word used for untying a boat or taking down a tent. And he calls it a drink offering, wine poured out at the altar in Israel's worship. His life has been given to God, and now the last of it is being poured out.\n\nYet the chapter is not only grand. Right after the crown come the coat and the books (4:13). Right after ‘no one stood with me’ comes ‘But the Lord stood by me and strengthened me’ (4:16-17). And Paul, deserted, prays for those who failed him: “May it not be charged against them” (4:16).\n\nPaul is not wishing to die, and nothing here praises ending a life. He faces a death others will bring on him, and he faces it trusting Christ. If you are facing death yourself, or grieving someone who has died, the notes on chapter 4 say more, and the Find Help page on this site lists places to turn."
+      },
+      {
+        "id": "themes",
+        "h": "The big themes",
+        "body": "Handing on the faith. “And the things that you have heard me say among many witnesses, entrust these to faithful men who will be qualified to teach others as well” (2:2). That one verse holds four generations: Paul, Timothy, faithful people, and others after them. The faith is not invented again by each generation. It is received and passed on, like a treasure held in trust (1:14).\n\nGrace before time began. Salvation starts in God's purpose and grace, ‘not because of our works’ (1:9). Christ Jesus ‘has abolished death’ (1:10).\n\nThe risen Christ. “Remember Jesus Christ, raised from the dead, descended from David” (2:8). Against teachers who said the resurrection had already happened in some spiritual way (2:18), Paul holds to the real rising of Jesus, and to the future rising of his people.\n\nGod is faithful. “if we are faithless, He remains faithful, for He cannot deny Himself” (2:13). When Paul was deserted, ‘the Lord stood by me’ (4:17).\n\nGentleness with opponents. The Lord's servant ‘must not be quarrelsome, but must be kind to everyone’ (2:24), correcting gently in the hope that God will grant repentance.\n\nScripture. God-breathed, able to make a person wise for salvation, and enough for the work God gives (3:15-17).\n\nThe day of the Lord. ‘That day’ (1:12, 18; 4:8), when Christ will appear and judge the living and the dead (4:1), stands at the edge of everything Paul writes."
+      },
+      {
+        "id": "old-testament",
+        "h": "2 Timothy and the Old Testament",
+        "body": "Timothy's faith grew out of the Scriptures he learned at home, as Israel's parents were told to teach them: “And you shall teach them diligently to your children” (Deuteronomy 6:7).\n\nThe sayings on God's ‘seal’ in 2:19 come from the story of Korah's rebellion, where Moses says, “Tomorrow morning the LORD will reveal who belongs to Him” (Numbers 16:5), and the second echoes the many calls in the Old Testament to turn away from evil.\n\nJannes and Jambres (3:8) are not named in the Old Testament. Exodus says only that Pharaoh called “the wise men and sorcerers and magicians of Egypt” (Exodus 7:11), who copied Moses' signs. Jewish tradition later gave them names, and Paul uses the names his readers knew.\n\n‘God-breathed’ (3:16) recalls the breath of God that made the world: “By the word of the LORD the heavens were made, and all the stars by the breath of His mouth” (Psalm 33:6).\n\nThe drink offering (4:6) was part of Israel's sacrifices: “a quarter hin of wine as a drink offering” went with the offering of a lamb (Numbers 15:5).\n\n‘Delivered from the mouth of the lion’ (4:17) echoes the psalm Jesus prayed on the cross: “Save me from the mouth of the lion” (Psalm 22:21). And ‘The Lord will repay him according to his deeds’ (4:14) is the language of the psalms and Proverbs: “For You will repay each man according to his deeds” (Psalm 62:12)."
+      },
+      {
+        "id": "not",
+        "h": "What the letter is not",
+        "body": "It is not a call to harshness. The same letter that says ‘reprove, rebuke’ (4:2) says the Lord's servant must be ‘kind to everyone’ and must correct ‘gently’ (2:24-25). Correction that humiliates, frightens or silences is not what Paul describes.\n\nIt is not a timetable for the end. ‘The last days’ (3:1) in the New Testament means the whole time between Christ's first coming and his return, and Paul writes about people already troubling the church in Timothy's day. The letter names no date and no modern group, and it gives no one leave to point at a group of people today and call them the people of 3:1-9.\n\nIt is not a verdict on women. The ‘vulnerable women’ of 3:6-7 were particular people in Ephesus whom false teachers had misled. Paul's blame falls on the teachers who preyed on them.\n\nIt is not a claim that Christians in comfortable places are persecuted whenever they are disagreed with, and it is not a lesson for any party. Paul suffered chains and the threat of death, and he prayed for those who failed him.\n\nIt is not a promise of an easy life. Paul writes from prison, near death, and says that following Christ will cost something.\n\nAnd it is not a weapon. Its words about Scripture are given so that God's servant may be ‘fully equipped for every good work’ (3:17): to teach and heal, not to win quarrels."
+      },
+      {
+        "id": "reading",
+        "h": "How to read 2 Timothy",
+        "body": "Read it in one sitting, and read it as a farewell. Picture an old man in chains writing to someone he loves, knowing he will not see many more winters.\n\nWatch for the words that come back: shame and not being ashamed; guarding and entrusting; suffering and enduring; ‘remember’. And watch for the short sayings and summaries of the gospel (1:9-10; 2:8; 2:11-13), which may be words the early church already knew by heart.\n\nDo not skip the names in chapter 4. They show that faith is lived among real people, some who fail and some who stay, and that Paul, at the end, still cared about a coat, a few books and his friends.\n\nWhere the letter is debated, on who wrote it, on 2:12-13, on how to speak of Scripture, read the case for more than one view before you settle, and hold your own view as one who may yet be taught.\n\nAnd let it ask you its questions. Who handed the faith to you, and to whom are you handing it? Where are you tempted to be ashamed? Are you gentle with those who oppose you? And when your own race is run, what will you be able to say?\n\nThe notes on each chapter go through it passage by passage in plain words."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 10,
+        "ref": "1:10",
+        "line": "‘Who has abolished death.’ What it means when believers still die."
+      },
+      {
+        "ch": 1,
+        "v": 16,
+        "ref": "1:16-18",
+        "line": "Onesiphorus: was he dead, and is Paul praying for him? Two readings."
+      },
+      {
+        "ch": 2,
+        "v": 12,
+        "ref": "2:11-13",
+        "line": "‘If we deny Him, He will also deny us’, and ‘He remains faithful’. How Christians hold the warning and the promise, and a word to the afraid."
+      },
+      {
+        "ch": 2,
+        "v": 17,
+        "ref": "2:17-18",
+        "line": "Hymenaeus and Philetus, who said the resurrection had already happened."
+      },
+      {
+        "ch": 2,
+        "v": 25,
+        "ref": "2:24-26",
+        "line": "Correcting opponents gently, and never as a way to silence the harmed."
+      },
+      {
+        "ch": 3,
+        "v": 1,
+        "ref": "3:1-9",
+        "line": "‘In the last days terrible times will come.’ No date, no modern group, and no verdict on women."
+      },
+      {
+        "ch": 3,
+        "v": 12,
+        "ref": "3:12",
+        "line": "‘All who desire to live godly lives in Christ Jesus will be persecuted.’ What it does and does not mean."
+      },
+      {
+        "ch": 3,
+        "v": 16,
+        "ref": "3:16-17",
+        "line": "‘All Scripture is God-breathed.’ What all Christians confess, and inerrancy and infallibility, each fairly."
+      },
+      {
+        "ch": 4,
+        "v": 6,
+        "ref": "4:6-8",
+        "line": "Paul facing death: the race finished and the crown laid up."
+      },
+      {
+        "ch": 4,
+        "v": 14,
+        "ref": "4:14-16",
+        "line": "‘The Lord will repay him.’ Alexander, and a prayer for those who deserted Paul."
+      }
+    ],
+    "words": [
+      {
+        "word": "Fan into flame",
+        "line": "Greek anazōpureō, to stir up coals until they burn brightly. Gifts need tending (1:6)."
+      },
+      {
+        "word": "Ashamed",
+        "line": "Greek epaischunomai. The key word of chapter 1 (1:8, 12, 16). Prison was a public disgrace, shared by the prisoner's friends."
+      },
+      {
+        "word": "What has been entrusted",
+        "line": "Greek parathēkē, a deposit left in trust. The gospel given to Timothy to guard (1:14)."
+      },
+      {
+        "word": "Abolished",
+        "line": "Christ ‘has abolished death’ (1:10): not taken it out of human life, but broken its power."
+      },
+      {
+        "word": "Trustworthy saying",
+        "line": "A saying of the early church that Paul quotes and stands behind (2:11)."
+      },
+      {
+        "word": "Accurately handles",
+        "line": "Greek orthotomeō, to cut straight, as a road or a furrow. Keeping a straight course with God's word (2:15)."
+      },
+      {
+        "word": "Approved",
+        "line": "Greek dokimos, tested and found genuine, like metal or a full-weight coin (2:15)."
+      },
+      {
+        "word": "The last days",
+        "line": "In the New Testament, the whole time between Christ's first coming and his return (3:1)."
+      },
+      {
+        "word": "God-breathed",
+        "line": "Greek theopneustos, a rare word saying that Scripture is breathed out by God (3:16)."
+      },
+      {
+        "word": "Drink offering",
+        "line": "Wine poured out at the altar with a sacrifice. Paul's picture of his coming death (4:6)."
+      },
+      {
+        "word": "Departure",
+        "line": "Greek analusis, used of untying a boat or taking down a tent. A gentle word for death (4:6)."
+      },
+      {
+        "word": "Crown",
+        "line": "Greek stephanos, the wreath given to a winning athlete, not a king's crown (4:8)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "Late 40s",
+        "what": "Paul and Barnabas start churches in Pisidian Antioch, Iconium and Lystra, and suffer for it there (Acts 13 and 14; 2 Timothy 3:11).",
+        "kind": "story"
+      },
+      {
+        "when": "About AD 49 or 50",
+        "what": "Paul meets Timothy at Lystra, and Timothy joins him (Acts 16:1-3).",
+        "kind": "story"
+      },
+      {
+        "when": "About AD 60 to 62",
+        "what": "Paul under guard in Rome for two years, where Acts ends (Acts 28:30-31).",
+        "kind": "story"
+      },
+      {
+        "when": "July 64",
+        "what": "The great fire of Rome. Nero blames the Christians, and many are killed, as Tacitus records.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 64 to 67, if Paul wrote it",
+        "what": "Paul, in prison in Rome a second time, as early writers report, writes his last letter to Timothy.",
+        "kind": "book"
+      },
+      {
+        "when": "AD 68",
+        "what": "Nero dies. Early tradition says Paul was put to death in Rome under him.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 80 to 110, on another view",
+        "what": "Scholars who think a follower of Paul wrote the Pastoral Letters usually date them here.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 96",
+        "what": "Clement of Rome writes that Paul reached ‘the limit of the west’, which many take as a sign of travels after Acts.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 180",
+        "what": "Irenaeus names Linus as the first leader of the church in Rome after the apostles, and takes him to be the Linus of 4:21.",
+        "kind": "book"
+      },
+      {
+        "when": "The 300s",
+        "what": "The historian Eusebius tells of Paul's release, a second imprisonment in Rome, and his death there.",
+        "kind": "world"
+      }
+    ],
+    "map": [
+      {
+        "frame": "mediterranean",
+        "title": "Rome, Ephesus, and the places Paul names",
+        "places": [
+          {
+            "id": "rome",
+            "name": "Rome",
+            "lat": 41.892,
+            "lon": 12.485,
+            "refs": [
+              "1:17",
+              "4:16"
+            ],
+            "line": "Where Paul writes, a prisoner in chains. Onesiphorus searched the city until he found him (1:17).",
+            "label": {
+              "dx": 7,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "ephesus",
+            "name": "Ephesus",
+            "lat": 37.941,
+            "lon": 27.342,
+            "refs": [
+              "1:18",
+              "4:12"
+            ],
+            "line": "The leading city of Asia, where Onesiphorus had served Paul (1:18) and where Paul sent Tychicus (4:12). Timothy seems to be here or nearby.",
+            "label": {
+              "dx": 7,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "troas",
+            "name": "Troas",
+            "lat": 39.752,
+            "lon": 26.159,
+            "refs": [
+              "4:13"
+            ],
+            "line": "A port where Paul left his cloak with Carpus, and his scrolls (4:13).",
+            "label": {
+              "dx": 7,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "miletus",
+            "name": "Miletus",
+            "lat": 37.53,
+            "lon": 27.278,
+            "refs": [
+              "4:20"
+            ],
+            "line": "A port south of Ephesus, where Paul left Trophimus sick (4:20).",
+            "label": false
+          },
+          {
+            "id": "corinth",
+            "name": "Corinth",
+            "lat": 37.905,
+            "lon": 22.88,
+            "refs": [
+              "4:20"
+            ],
+            "line": "Where Erastus stayed behind (4:20).",
+            "label": {
+              "dx": -7,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "thessalonica",
+            "name": "Thessalonica",
+            "lat": 40.64,
+            "lon": 22.936,
+            "refs": [
+              "4:10"
+            ],
+            "line": "Where Demas went when he left Paul, ‘in his love of this world’ (4:10).",
+            "label": {
+              "dx": -7,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "lystra",
+            "name": "Lystra",
+            "lat": 37.602,
+            "lon": 32.338,
+            "refs": [
+              "3:11"
+            ],
+            "line": "Timothy's home town, where Paul was stoned and left for dead (Acts 14:19; 2 Timothy 3:11).",
+            "label": {
+              "dx": 7,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "iconium",
+            "name": "Iconium",
+            "lat": 37.867,
+            "lon": 32.483,
+            "refs": [
+              "3:11"
+            ],
+            "line": "Where there was a plot to stone Paul and Barnabas (Acts 14:5; 2 Timothy 3:11).",
+            "label": false
+          },
+          {
+            "id": "antioch",
+            "name": "Pisidian Antioch",
+            "lat": 38.306,
+            "lon": 31.189,
+            "refs": [
+              "3:11"
+            ],
+            "line": "Where Paul and Barnabas were driven out of the district (Acts 13:50; 2 Timothy 3:11).",
+            "label": false
+          }
+        ]
+      }
+    ],
+    "mapNote": "Paul writes from Rome, far to the west. Timothy seems to be at Ephesus. Lystra, Iconium and Antioch lie close together inland; tap the marks near Lystra for the other two. Miletus is the mark just south of Ephesus.",
+    "deeper": [
+      {
+        "href": "/study/bible/doctrines/revelation",
+        "name": "God Speaks: Revelation and Scripture",
+        "line": "The doctrine study behind ‘All Scripture is God-breathed’ (3:16), with the views set out",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/perseverance",
+        "name": "Assurance and Perseverance",
+        "line": "Behind ‘if we deny Him’ and ‘He remains faithful’ (2:12-13)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/suffering",
+        "name": "Suffering and Evil",
+        "line": "Behind ‘join me in suffering’ (1:8) and 3:12",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/intermediate",
+        "name": "Death and the Intermediate State",
+        "line": "Behind ‘the time of my departure’ (4:6)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/resurrection",
+        "name": "The Resurrection of Jesus",
+        "line": "Behind ‘Remember Jesus Christ, raised from the dead’ (2:8) and 2:18",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/return",
+        "name": "The Return of Christ",
+        "line": "Behind ‘His appearing and His kingdom’ (4:1, 8)",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/the-cities-of-paul",
+        "name": "Which Cities Did Paul Write To?",
+        "line": "Ephesus, Rome and the cities of Paul's letters",
+        "icon": "world"
+      }
+    ]
+  }
 }
