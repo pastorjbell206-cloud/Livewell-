@@ -9472,3 +9472,26 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Mystery religions' secret rites | 24-29 | Earlier ledger (Ephesians 3: deep note `cultural`) | Ledger |
 | 1:24 readings: messianic woes; union with Christ (Acts 9:4); suffering in carrying the gospel; none a lack in the cross; Hebrews 10:10 | 24-29 | Deep note `hard` | Repository wording. No side |
 | Daniel 2:28; Isaiah 49:6; 53:4 | 24-29 | BSB | BSB text |
+
+## The plain notes on Colossians 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Agōn, struggle, as in 1:29; Epaphras wrestling in prayer (4:12) | 1-5 | Greek text in the repository; BSB | Read from the chapter files |
+| Taxis and stereōma can describe soldiers in order, "some readers" | 1-5 | Standard lexicons | Narrowed to "some readers" |
+| Proverbs 2:4, 6; Isaiah 11:2 | 1-5 | BSB | BSB text |
+| Sulagōgeō, to carry off as captive or plunder | 6-15 | Standard lexicons | Standard |
+| Philosophy as a way of life; stoicheia three senses; powers appeased by rituals | 6-15 | Deep note `cultural` | Repository |
+| Cheirographon a signed note of debt; the notice on a cross (John 19:19) "some readers"; the Roman triumph | 6-15 | Deep note `cultural` | Repository |
+| Baptism and circumcision readings (Presbyterian and Reformed; Catholic, Orthodox, Lutheran; Baptist and evangelical); no side; pointer to the Acts 2:37-41 note | 6-15 | acts/plain/2.json | Repository wording, paraphrased. No side |
+| Deuteronomy 30:6; Psalm 1:3; Isaiah 44:22; Psalm 32:1 | 6-15 | BSB | BSB text |
+| Food laws, feasts, New Moon and Sabbath real marks of Jewish life; a shadow, not evil | 16-19 | Deep note `cultural` | Repository |
+| Katabrabeuō an umpire's ruling | 16-19 | Standard lexicons | Standard |
+| ‘Worship of angels’: worship given to angels, or joining angels' worship; debated | 16-19 | Deep note `historical`; repository `setting` | Repository. No side |
+| Sabbath: what all agree; seventh day; the Lord's Day (Westminster Confession 1646); fulfilled in Christ; Romans 14:5; no side; pointer to the wisdom topic | 16-19 | wisdom/deep/rest-and-sabbath.json `differ`; chapter note `hard` | Repository wording, paraphrased. No side |
+| Genesis 2:3; Exodus 20:8-11; Deuteronomy 5:15; Isaiah 1:13; 1 Samuel 16:7 | 16-19 | BSB | BSB text |
+| ‘Do not handle ...’ "may" quote the teachers' slogans | 20-23 | Standard commentaries | Stated as "may" |
+| Jesus fasted (Matthew 4:2); Paul disciplined his body (1 Corinthians 9:27); Isaiah 29:13 quoted by Jesus (Mark 7:6-7) | 20-23 | BSB | BSB text |
+| Isaiah 29:13; 58:6 | 20-23 | BSB | BSB text |
