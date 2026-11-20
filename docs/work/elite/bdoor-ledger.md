@@ -11648,3 +11648,27 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Psalm 115:4-5, 7; Daniel 5:23; Romans 2:4 | 20-21 | BSB | BSB text |
 
 Cut before publishing: nothing drawn from outside the deep note; no river, army or number tied to any nation or war of our day.
+
+## The plain notes on Revelation 10 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The interlude turns from judgment to witness after 9:20-21 | 1-4 | revelation/10.json `story` | Repository |
+| The angel described like Christ in chapter 1 and the throne of chapter 4; on sea and land; a few identify him with Christ; no side | 1-4 | revelation/10.json `literary`, `christ` | Repository, no side |
+| Biblaridion, a diminutive of the scroll of chapter 5; open | 1-4 | revelation/10.json `words` (G0974), `literary` | Repository |
+| Thunder as God's voice; Psalm 29's seven voices; the thunders sealed: three readings (a cancelled series; 2 Corinthians 12:4; Daniel's sealed book); no schemes on what is not told | 1-4 | revelation/10.json `cultural`, `hard`, `doctrines` (Deuteronomy 29:29) | Repository, no side |
+| Psalm 29:3; Daniel 12:9; Deuteronomy 29:29; 2 Corinthians 12:4 | 1-4 | BSB | BSB text |
+| The raised hand as an oath (Deuteronomy 32:40); swearing by the Creator | 5-7 | revelation/10.json `cultural` | Repository |
+| Chronos, ‘time no longer’ in the King James Version, meaning no more delay; 6:11 | 5-7 | revelation/10.json `words` (G5550) | Repository |
+| 2 Peter 3:4-9; Jewish writers on delay after AD 70 | 5-7 | revelation/10.json `historical` | Repository |
+| Mustērion as a purpose once hidden, now revealed (Ephesians 3:3-6) | 5-7 | revelation/10.json `words` (G3466) | Repository |
+| First century, church history or the very end depends on the school; a commissioning scene on all | 5-7 | revelation/10.json `historical` | Repository, no side |
+| Daniel 12:7; Deuteronomy 32:40; Amos 3:7; 2 Peter 3:9 | 5-7 | BSB | BSB text |
+| Eating the scroll (Ezekiel 2:8 to 3:3, 3:14; Jeremiah 15:16); sweet and bitter as the shape of the gospel | 8-11 | revelation/10.json `cultural`, `christ` | Repository |
+| Prophēteuō as forthtelling; John in the line of Jeremiah (1:10) and Daniel | 8-11 | revelation/10.json `words` (G4395), `historical` | Repository |
+| Same scroll as chapter 5 or a separate message: debated | 8-11 | revelation/10.json `literary`, `words` (G0974) | Repository, no side |
+| Ezekiel 3:3, 14; Jeremiah 15:16; Jeremiah 1:10 | 8-11 | BSB | BSB text |
+
+Cut before publishing: ‘nearly two thousand years’ (a count of years left out; the question is put without one); a per-school account of the oath beyond the deep note's three.
