@@ -443,3 +443,41 @@ Seen and fixed on the screenshots: the review line sat indented from the head at
 - Not built: the glossary terms in /theology/glossary, the timeline picture, the passage index's "Go deeper" link from a chapter to the piece that treats it, links from the Honest Answers down to the library. All wait for the area to go live.
 - No piece has an Explorer stop yet (none exists on the subject).
 - James's read of the four pieces, and his answers to section 6, before anything goes live.
+
+---
+
+## 8. Eleventh run, continued (2026-11-20): five more pieces, and the text area goes live
+
+### Which five, and why
+
+The plan's list for area 2 (section 2) is a map, not a build order, and three of its next items (5, the Comma; 6, Luke 22:43-44; 8, Hebrews 2:9) are already treated inside the pilot's third and fourth pieces. So this run took the items not yet written in any form, in the order the lead's brief gave: the manuscript comparison with other ancient books (a question the plan's map lacked; it answers the apologists' own overclaim), plan item 9 with the method of an edition, items 12 and 5 together, item 14, and item 7.
+
+| Piece | Address (pending) | Argued prose | Ledger key |
+|---|---|---|---|
+| Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove? | /questions/text/compared-with-other-ancient-books | 2,151 words | e |
+| Who decides what the Greek New Testament says, and was there ever a single original to find? | /questions/text/who-decides-what-the-text-says | 2,074 | f |
+| Why do modern Bibles leave out verses the King James Version has? | /questions/text/king-james-and-the-missing-verses | 2,059 | g |
+| The Bible has been translated so many times. Hasn't the meaning been lost along the way? | /questions/text/lost-in-translation | 2,010 | h |
+| Was Jesus angry or compassionate when he healed the leper in Mark 1:41? | /questions/text/an-angry-jesus-mark-1-41 | 1,851 | i |
+
+Each is written first as Markdown in `docs/work/elite/apol-pilot/` and then as data in `client/public/questions/text/`; `diff-questions-record.mjs` shows all ten files (area page and nine pieces) identical to their records. Every fact is in `apol-ledger.md` under "Eleventh run" (36 searches; ehrmanblog.org and gutenberg.org do not resolve from here). The area page and `index.md` list all nine; a live area page shows only the live four.
+
+### Live (James, 2026-11-20: "leet the apologetics go live too")
+
+Live: the room `/questions` ("The case for the faith", a working name), the claims index `/questions/claims` (live claims only), the area `/questions/text`, and the four pilot pieces. The Questions door has its sixth room, "The case for the faith" (`siteCatalog.ts`, icon Library), with the text area and "Look up a claim" inside it. One line in `llms.txt`. The search index carries the room and the four live pieces. Still pending (noindex, the review line, in no list, sitemap, search index or llms.txt): the five pieces above.
+
+Tests changed to the new state (they had pinned "all pending"): `client/src/pages/questions/questions.test.tsx` (a live piece has no review line or noindex, a pending one keeps both; the area lists only live pieces; the claims page lists live claims; the menus link only live library pages; no file outside the library links a pending address) and `server/questions-validator.test.ts` (the seeded faults now use pending pieces, since copies-of-copies and /questions/text are live). No test pinned the number of rooms.
+
+### What was run
+
+Light gates after each piece (validate-questions, the manifest check, the record diff, no-emdash, links, pnpm check): all 0. Before the push, with the load under 6: pnpm test 152 files passed, 7 skipped, 1,780 tests passed, 73 skipped; all 40 content-gate commands 0; pnpm build 0; sitemap 0 (the seven live /questions addresses present, no pending one); prerender 0 (3,061 pages); audit:canonicals 0 failures over 2,362 URLs. Served build at 390 and 1440: the menu shows the new room (desktop panel and phone sheet); /questions, /questions/text, a live piece and /questions/claims have index robots and no review line; a pending piece has noindex and the review line; no sideways scroll; the only console errors are the local server's 404s for /api/track and the two Vercel analytics scripts, on every page alike. Lighthouse (ci.yml's script, median of three) on /questions/text/more-variants-than-words: performance 76, accessibility 100, best practices 96, SEO 100 (66 when it was noindex), CLS 0.000, LCP 5.0 s.
+
+Tried and reverted: preloading the manifest and the piece's JSON from the prerendered head (the page fetches them in turn). Both were fetched once, with no warning, but the medians were 71 and 74 and LCP stayed at 5.0 s, so the change went. The LCP is the moment the held prerendered text gives way to the React page, after the main bundle runs; raising it would need the page to hydrate the prerendered text instead of replacing it, or a smaller entry bundle, the same limit the chapter pages have (their CI floor is 70).
+
+### What remains in the area
+
+From the plan's fourteen: Luke 22:43-44 and Hebrews 2:9 as pages of their own (both now treated inside pilot pieces), "the earliest manuscripts are late and their dates are guesses" (Nongbri), the church fathers' quotations, and the Old Testament text (Masoretic text, Septuagint, Dead Sea Scrolls). The Comma has no separate page; the King James piece and the pilot's third piece carry it.
+
+### For James
+
+Read the five pending pieces; each becomes live by one line (its `status`). The room's name is still the working name. The King James piece speaks of King James Only believers as brothers and sisters and takes no side among the text positions; say if you want your own view stated.
