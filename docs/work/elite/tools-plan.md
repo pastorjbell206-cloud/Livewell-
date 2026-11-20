@@ -661,7 +661,7 @@ Forty-four passages that began or ended mid-sentence now show the BSB sentence t
 
 ### Twelve topics written in full (80 of 208)
 
-people-pleasing, setting-boundaries, saying-no, loving-your-enemies, when-someone-wont-change (the end of batch 4), then overthinking, fear-and-courage, fear-of-the-future, the-news-and-fear, information-overload, courage, need-for-control (batch 5 in the plan's order). One commit each, each with at least eight everyday phrasings. mental-exhaustion, sensitivity and peace open the next run (numbness and restlessness and the rest of batch 5 after them).
+people-pleasing, setting-boundaries, saying-no, loving-your-enemies, when-someone-wont-change (the end of batch 4), then overthinking, fear-and-courage, fear-of-the-future, the-news-and-fear, information-overload, courage, need-for-control (batch 5 in the plan's order). One commit each, each with at least eight everyday phrasings. numbness, mental-exhaustion, sensitivity, peace and restlessness, the rest of batch 5, open the next run.
 
 - Ten or eleven passages each, every "where it stands" written against the chapter's note or plain note; one or two misread verses each (1 Corinthians 10:32-33 and Romans 12:18; Philippians 2:3-4 and Luke 6:30; Luke 10:41-42; Luke 6:27-28 and Romans 12:20; 1 Corinthians 13:7; 2 Corinthians 10:5; 2 Timothy 1:7; Proverbs 16:3; Mark 13:7; Matthew 6:22; Philippians 4:13; Luke 12:18-19).
 - Where Christians differ only on Loving Your Enemies (pacifist, Luther's two kinds of duty, just war, as the plain notes on Luke 6 and Matthew 5 give them, no side taken).
@@ -673,7 +673,7 @@ The Wisdom Finder used by hand at 390 with ten typed sentences (`/home/user/elit
 
 ### Not done in this run
 
-The proposal above. mental-exhaustion onward (128 topics). Job in the explorer. Any retirement, rename, merge or listing.
+The proposal above. numbness onward (128 topics). Job in the explorer. Any retirement, rename, merge or listing.
 
 ---
 
