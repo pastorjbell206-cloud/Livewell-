@@ -1202,12 +1202,33 @@ Cut: Coyne's university (not checked); Coulson as a Methodist (not checked); Daw
 | Russell, *Inventing the Flat Earth: Columbus and Modern Historians* (1991): educated medieval people knew the earth was round; Irving's life of Columbus (1828) and Letronne; the error flourished 1870 to 1920 with the fights over evolution | S: Powell's, First Things, MUSE review, Wikipedia "Myth of the flat Earth" | Verified (secondary), paraphrased |
 | Brooke 1991: no single thesis of conflict or harmony; complexity | S (row o) | Verified (secondary), paraphrased |
 | Harrison 2015 | Row o | Verified (secondary) |
-| Mendel, Augustinian friar and abbot; the founder of genetics | /faq ledger row (Britannica, Wikipedia, DNA Learning Center) | Verified |
+| Mendel, Augustinian friar and abbot; his experiments with peas began genetics | /faq ledger row (Britannica, Wikipedia, DNA Learning Center) for the friar and abbot | Verified for the friar and abbot; "began the science of genetics" is the standard account and was not separately searched |
 | Lemaître 1927 and 1931, primeval atom | Second run | Verified |
 | 31 October 1992: John Paul II addressed the Pontifical Academy of Sciences on receiving the commission's conclusions; read by newspapers as an apology | S: Vatican text (record), Astronomy.com, Christian History, McMullin (Vatican Observatory) | Verified (secondary); the phrase "tragic mutual incomprehension" not found, not used |
 | Joshua 10:13 "the sun stood still"; Proverbs 25:2 | Repo (BSB) | Quoted |
 
 Cut: Psalm 93:1 as a text used against Galileo (not confirmed); "most astronomers of the day" still held the old system (not checked); Urban VIII's anger as a cause (stated only as a question historians argue); "as the procedure required" of the threat of torture; the Jesuit astronomers he argued with (not checked); the seven penitential psalms; Giordano Bruno (not checked).
+
+### q. "Didn't Hume show that no one can reasonably believe in a miracle?" (miracles-and-the-laws-of-nature)
+
+| Claim | How verified | Result |
+|---|---|---|
+| "Of Miracles", 1748, section 10 of the *Enquiry* | Fifth run | Verified |
+| §87 "A wise man, therefore, proportions his belief to the evidence."; §90 "A miracle is a violation of the laws of nature; and as a firm and unalterable experience has established these laws, the proof against a miracle, from the very nature of the fact, is as entire as any argument from experience can possibly be imagined."; §90 "But it is a miracle, that a dead man should come to life; because that has never been observed in any age or country."; §90 "a uniform experience against every miraculous event, otherwise the event would not merit that appellation" | Hume (read word for word this run) | Quoted |
+| §91 the maxim, quoted to "endeavours to establish"; "whether it be more probable, that this person should either deceive or be deceived, or that the fact, which he relates, should really have happened"; rejects the greater miracle | Hume | Quoted; the rest paraphrased |
+| Part 2: sufficient number of men of good sense and learning (§92); love of wonder (§93); "are observed chiefly to abound among ignorant and barbarous nations" (§94); rival miracles (§95); the Abbé Paris, "attested by witnesses of credit and distinction, in a learned age"; §98 "that no human testimony can have such force as to prove a miracle, and make it a just foundation for any such system of religion" | Hume; Fifth run | Quoted where in quotation marks |
+| The Indian prince, "The Indian prince, who refused to believe the first relations concerning the effects of frost, reasoned justly" | Hume | Quoted |
+| §99: eight days of darkness from 1 January 1600, "our present philosophers, instead of doubting the fact, ought to receive it as certain, and ought to search for the causes whence it might be derived"; Queen Elizabeth dead, interred a month, restored to the throne: "to have been pretended, and that it neither was, nor possibly could be real" | Hume | Quoted |
+| Fogelin, *A Defense of Hume on Miracles* (Princeton, 2003): answers early critics and two recent ones, Johnson and Earman; treats Earman as a misreader | S: Princeton University Press listing, MUSE review, library record | Verified (secondary), paraphrased |
+| Lewis, *Miracles* (1947): only if all the reports are false; "arguing in a circle"; Hume's defenders reply that he meant weighing; the pennies in the drawer | Fifth run | Verified; one phrase quoted, the rest paraphrased |
+| Earman, *Hume's Abject Failure* (Oxford, 2000), Pittsburgh; Babbage in the 1830s, independent witnesses; Vanderburgh, *Hume Studies* (2005); Millican on independence | Fifth run | Verified, paraphrased |
+| Keener, *Miracles* (2011), two volumes; hundreds of reports, many from Asia, Africa and Latin America, many eyewitnesses | Fifth run; Note (John 2: "documented how widespread eyewitness claims of extraordinary events are") | Verified, paraphrased |
+| Sagan's slogan | Fifth run | Given without quotation marks or date |
+| Mackie, *The Miracle of Theism* (1982) | God answer | Verified |
+| 1 Corinthians 15:14; witnesses named and numbered in 1 Corinthians 15:5-7 | Repo (BSB) | Quoted; described |
+| Agreement with the Study Bible notes on John 2 and Matthew 14 (Lewis: Hume's case assumes what it sets out to prove; Keener) | Repo | Agrees |
+
+Cut: Earman as one "who writes as no defender of Christianity" (not checked); reports "with names and dates" (not in the reviews); the disciples "would not retract" (narrowed in an earlier ledger); the subtitles of Earman's and Keener's books (not confirmed).
 
 ### The area page (index.md)
 

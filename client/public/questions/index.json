@@ -184,6 +184,13 @@
           "blurb": "What happened in 1616 and 1633 and what Galileo was and wasn't sentenced to, where the church was wrong, and how the \"war\" was written in the nineteenth century and taken apart since.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "miracles-and-the-laws-of-nature",
+          "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+          "blurb": "Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -528,12 +535,43 @@
       "slug": "galileo-and-the-war",
       "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
       "live": false
+    },
+    {
+      "claim": "No testimony is sufficient to establish a miracle unless its falsehood would be more miraculous than the fact it reports",
+      "proponent": "David Hume",
+      "work": "An Enquiry Concerning Human Understanding",
+      "year": 1748,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "No human testimony can prove a miracle so as to make it a just foundation for a system of religion",
+      "proponent": "David Hume",
+      "work": "An Enquiry Concerning Human Understanding",
+      "year": 1748,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "Hume's argument against miracles, rightly read, still stands against its modern critics",
+      "proponent": "Robert J. Fogelin",
+      "work": "A Defense of Hume on Miracles",
+      "year": 2003,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
-    "how-can-god-be-three-and-one": "How can God be three and one?"
+    "how-can-god-be-three-and-one": "How can God be three and one?",
+    "are-miracles-believable": "Are miracles believable?"
   }
 }
