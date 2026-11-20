@@ -3074,6 +3074,28 @@
     "social-media",
     "the-news-and-fear"
    ]
+  },
+  "courage": {
+   "phrases": [
+    "need courage",
+    "brave enough",
+    "too scared to speak up",
+    "afraid to stand up for",
+    "afraid to tell the truth",
+    "such a coward",
+    "scared to take the risk",
+    "stand up for what is right",
+    "afraid to step out",
+    "find the courage",
+    "afraid to speak up",
+    "too scared to report"
+   ],
+   "not": [],
+   "related": [
+    "fear-and-courage",
+    "persecution-and-opposition",
+    "people-pleasing"
+   ]
   }
  }
 }
