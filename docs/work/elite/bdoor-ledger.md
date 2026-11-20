@@ -10189,3 +10189,27 @@ One web search: the coordinates of Nicopolis in Epirus (results from Wikipedia a
 | Pentecost AD 30 or 33 | Timeline | acts/intro.json timeline | Repository |
 
 Cut: "Perhaps some of them carried the news home"; "Titus had come to faith through Paul" (only ‘my true child’ is in the text).
+
+## The plain notes on Titus 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Opening surpassed clearly only by Romans; key themes packed in; ‘Savior’ given to God and Christ | 1-4 | Chapter deep note `literary`, `christ` | Repository |
+| Apseudēs set against verse 12 | 1-4 | Chapter deep note `words` (G0893) | Repository |
+| Titus a Gentile | 1-4 | titus/intro.json `setting` | Repository |
+| Numbers 23:19; Genesis 12:3; Jeremiah 9:24 | 1-4 | BSB | BSB text |
+| Epidiorthoō, putting right what remains; elders in every town (Acts 14:23); elder and overseer interchangeable | 5-9 | Chapter deep note `words` (G1930), `historical`, `literary` | Repository; BSB |
+| Oikonomos, household manager; five nots, six musts, one hold | 5-9 | Chapter deep note `words` (G3623), `literary` | Repository |
+| Roman household expectations | 5-9 | Chapter deep note `cultural` | Repository |
+| Church order, ‘one-woman man’ readings, leaders' accountability and the care line | 5-9 | 1-timothy/plain/3.json (1-7) | Word for word, fitted |
+| Pistos: believers or faithful children | 5-9 | Chapter deep note `words` (G4103), `hard` | Repository |
+| Exodus 18:21; Deuteronomy 1:13; Ezekiel 34:2; Proverbs 16:32 | 5-9 | BSB | BSB text |
+| Circumcision group: Jewish believers pressing the law; myths, commands, purity; money; like Ephesus | 10-11 | Chapter deep note `historical` | Repository |
+| Not against Jews; Romans 9:3; 11:1; 7:12; misuse rejected; Acts 2:22-28 note; not a pattern | 10-11 | philippians/plain/3.json (1-3) | Near word for word, fitted |
+| Micah 3:11; Isaiah 56:11; Proverbs 11:1 | 10-11 | BSB | BSB text |
+| Epimenides by tradition (sixth century BC); Callimachus; Zeus's tomb; a verb ‘to lie’; irony; not every Cretan; goal their soundness | 12-16 | Chapter deep note `cultural` | Repository |
+| ‘To the pure’ applies Mark 7:18-23 | 12-16 | Chapter deep note `christ` | Repository |
+| Contempt for peoples named as misuse; Genesis 1:27 | 12-16 | The run's brief; BSB | BSB text |
+| Genesis 1:31; Psalm 24:4; 15:2; Isaiah 29:13; Proverbs 20:11 | 12-16 | BSB | BSB text |
