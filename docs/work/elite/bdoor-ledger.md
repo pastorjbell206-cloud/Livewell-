@@ -11803,4 +11803,30 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Sequence or retelling of seals, trumpets and bowls (Victorinus of Pettau); the first four bowls match the first four trumpets in full measure; no side | 5-8 | revelation/plain/8.json (1-5 `hard`); revelation/16.json `story`, `literary` | Repository, no side |
 | Exodus 40:35; 1 Kings 8:11; Isaiah 6:4; Exodus 25:16 | 5-8 | BSB | BSB text |
 
-Cut before publishing: ‘wrath ... does not go on for ever’ and ‘God's wrath has an end’, which could be read as taking a side on final judgment (narrowed to the series of plagues having an end); the date of Psalm 139:14 as a source for ‘wonderful works’ (the deep note gives it, but the line was not needed).
+Cut before publishing: ‘wrath ... does not go on for ever’ and ‘God's wrath has an end’, which could be read as taking a side on final judgment (narrowed to the series of plagues having an end); Psalm 139:14 as a second source for ‘wonderful works’ (the deep note gives it; Psalm 111:2 was enough).
+
+## The plain notes on Revelation 16 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The bowls told quickly, without the interludes; the trumpets' pattern in full measure; the plagues of Egypt (sores, blood, darkness, frogs, hail); Pharaoh's hardening | 1-7 | revelation/16.json `story`, `cultural`, `literary` | Repository |
+| ‘Who is and was’ without ‘is to come’ (as at 11:17); blood for blood; the altar of 6:9-10 answered; dikaios as setting right | 1-7 | revelation/16.json `cultural`, `doctrines` (judgment), `words` (G1342); revelation/plain/11.json (15-19) | Repository |
+| The four readings of the bowls; no side; disasters and illness not read as judgment on particular people (Luke 13:4; John 9:3); nothing of our day | 1-7 | revelation/intro.json `teaching` (ways); revelation/plain/6.json (5-8 `hard`); revelation/plain/8.json (6-9 `hard`) | Repository, no side |
+| Exodus 9:10; 7:20, 21; Deuteronomy 32:4; Luke 13:4; John 9:3 | 1-7 | BSB | BSB text |
+| The beast's throne (13:2) darkened; cursing three times, no repentance twice; blasphēmeō, worshippers become like the beast (13:6); pain does not of itself bring repentance, a gift and a turning | 8-11 | revelation/16.json `literary`, `doctrines` (repentance), `words` (G0987) | Repository |
+| The open door: 11:13 and 14:6-7 | 8-11 | BSB; revelation/plain/11.json (11-14) | BSB text |
+| Exodus 10:22; 9:34 | 8-11 | BSB | BSB text |
+| The Euphrates and Parthia (9:14); the Nero-return rumour; Herodotus on Cyrus, 539 BC; the Red Sea and the Jordan dried | 12-16 | revelation/16.json `historical` | Repository |
+| The frogs: unclean under the Law, Egypt's frogs, from the three mouths, deceiving words | 12-16 | revelation/16.json `cultural` | Repository |
+| ‘Like a thief’: suddenness not secrecy (Matthew 24:43; 1 Thessalonians 5:2); Laodicea's garments (3:18) | 12-16 | revelation/16.json `cultural`, `words` (G2812), `christ` | Repository |
+| Har Megiddo; the fortress and the plain; Deborah and Barak (Judges 5:19); Josiah killed by Neco, 609 BC (2 Kings 23:29; Zechariah 12:11); no mountain as such; the mount of assembly (Isaiah 14:13) | 12-16 | revelation/16.json `historical`, `words` (G0717) | Repository |
+| Armageddon's four readings; no battle described, the kings only gathered (19:19-21; 20:8-9); no date, no map, nothing of our day; Matthew 24:36 | 12-16 | revelation/16.json `hard`; revelation/intro.json `teaching` (ways) | Repository, no side |
+| Judges 5:19; 2 Kings 23:29; Zechariah 12:11; Exodus 14:21; 8:6; Matthew 24:36 | 12-16 | BSB | BSB text |
+| ‘It is done’ one Greek word; John 19:30; the storm closing each series (8:5; 11:19); Tacitus on AD 17; Laodicea about AD 60; the talent, almost a hundred pounds; hail in Egypt and at Beth-horon | 17-21 | revelation/16.json `historical`, `cultural`, `literary`, `christ` | Repository |
+| God remembered Noah (Genesis 8:1) | 17-21 | BSB | BSB text |
+| A word for the frightened; care line ‘If you are afraid that you have fallen away from God ...’ | 17-21 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Exodus 9:24; Joshua 10:11; Jeremiah 51:7; John 19:30 | 17-21 | BSB | BSB text |
+
+Cut before publishing: ‘in northern Israel’ for Megiddo (kept to ‘an ancient fortress’, so that no modern state is in view); Leviticus 11:10-12 quoted for the frogs (the verses speak of water creatures, so the note says only that frogs were unclean); ‘Blessed is the one who remains awake’ quoted only in part, as in chapter 14; ‘Megiddo stood on a low hill’ (the deep note says it stood in a plain).
