@@ -9191,3 +9191,31 @@ No searches. Scripture is the BSB in the repository, matched by the strict check
 | Jews usually prayed standing; kneeling for earnestness | 14-21 | Deep note `cultural` (Luke 18:11, 13) | Repository |
 | Patēr and patria wordplay (3:14-15) | 14-21 | Greek text in the repository | Read from the chapter file |
 | 1 Kings 8:27; Psalm 103:11; 139:8 | 14-21 | BSB | BSB text |
+
+## The plain notes on Ephesians 4 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Then’ ties 4 to 6 to 1 to 3; unity kept, not made | 1-6 | BSB 4:1, 3 | BSB text |
+| Seven ‘ones’ may draw on early confession, "many readers" | 1-6 | Deep note `literary` | Repository |
+| Humility the habit of Jesus (Matthew 11:29) | 1-6 | BSB | BSB text. A claim that the Greek and Roman world scorned humility was cut (not checked) |
+| Deuteronomy 6:4; Psalm 133:1; Isaiah 2:3 | 1-6 | BSB | BSB text |
+| Victory parade with captives and shared spoils as the picture behind 4:8 | 7-10 | Standard; Psalm 68 itself | Stated generally |
+| Psalm 68:18 ‘received’, Paul ‘gave’; an Aramaic paraphrase (Targum) of the Psalms, in later copies, also ‘gave’ | 7-10 | Deep note `literary`; BSB Psalm 68:17-18 | Search: intertextual.bible; evidenceforchristianity.org; defendinginerrancy.com (Targum and Syriac read ‘gave’); mdpi.com Religions 16/5/578 (Aramaic tradition). Dated only "copies made centuries later" |
+| 4:9 readings: incarnation (‘the lower parts, that is, the earth’); death, grave or realm of the dead (1 Peter 3:19; Apostles' Creed ‘descended into hell’, older sense ‘to the dead’); a few, Pentecost | 7-10 | Deep note `literary`; book page `hard` line; creeds/documents/apostles-creed.json annotation | Repository. No side |
+| Psalm 63:9 ‘the depths of the earth’; John 3:13 | 7-10 | BSB | BSB text |
+| Apostles, prophets, evangelists (Philip, Acts 21:8), pastors and teachers; ‘pastors and teachers’ joined closely, "many" one office | 11-16 | Deep note `historical`; words (poimēn) | Repository |
+| ‘Equip’ from a verb used of mending nets and setting bones (katartizō) | 11-16 | Earlier ledger (Galatians 6; 2 Corinthians 13); standard lexicons | Ledger |
+| Cessationist, continuationist and middle views; no side | 11-16 | Chapter note `hard` | Repository wording, paraphrased |
+| Jeremiah 3:15; Ezekiel 34:2; Numbers 11:29; Joel 2:28 | 11-16 | BSB | BSB text |
+| ‘The Gentiles’ as the readers' former life; 2:3, 2:11 | 17-24 | BSB | BSB text |
+| Clothing picture; baptismal clothing "some readers", evidence mostly later | 17-24 | Deep note `cultural` | Repository |
+| Ezekiel 36:26; Genesis 1:27 | 17-24 | BSB | BSB text |
+| Paul a tentmaker (Acts 18:3); manual work looked down on by many educated people | 25-32 | Deep note `cultural`; BSB | Repository |
+| Sunset: common ancient view that a quarrel be settled before day's end | 25-32 | Deep note `cultural`; wisdom/deep/anger.json `misread` | Repository |
+| 4:26 neither licenses rage nor forbids all anger; two Christian views (wary of all anger; room for anger at injustice); Mark 3:5 | 25-32 | wisdom/deep/anger.json `misread`, `differ` | Repository wording, paraphrased |
+| Forgiveness not the same as trusting again | 25-32 | matthew/plain/18.json; luke/plain/17.json | Repository wording |
+| Care line ("If anger has become something you cannot control ... Find Help") | 25-32 | psalms/plain/4.json | Word for word, no phone number |
+| Zechariah 8:16; Psalm 4:4 (BSB matches Paul); Exodus 20:15; Leviticus 19:17-18; Isaiah 63:10 | 25-32 | BSB | BSB text |
