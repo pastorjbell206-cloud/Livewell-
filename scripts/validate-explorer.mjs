@@ -19,7 +19,12 @@
  *     mark outside quoted Scripture, no emoji, nothing that blames the Jewish
  *     people for the death of Jesus;
  *   - the threads and the "Why we believe" cards point only at stops that
- *     exist, and a card's catechism numbers exist in the family catechism.
+ *     exist, and a card's catechism numbers exist in the family catechism;
+ *   - "Watch and learn" (films.json, films/<slug>.json): four groups; a film
+ *     not made yet has no file and no link; a finished film has 5 to 9
+ *     frames, each with its caption at both levels and the words for its
+ *     finished picture (all a reader gets with motion turned off), its
+ *     verses exact, its chapters and links live, and a drawing.
  *
  * Run: node scripts/validate-explorer.mjs   (exits 1 on any finding)
  */
@@ -56,6 +61,10 @@ const storyline = read(
 const actIds = new Set(storyline.map(a => a.id));
 const catechism = read(path.join(ROOT, "client/public/family-catechism.json"));
 const catechismNumbers = new Set(catechism.map(q => q.number));
+const filmCatalogue = read(path.join(DIR, "films.json"));
+const filmsReady = new Set(
+  filmCatalogue.films.filter(f => f.status === "finished").map(f => f.slug)
+);
 
 // ── Text rules ────────────────────────────────────────────────────────────
 /** Every string in a value, with its path. */
@@ -76,7 +85,7 @@ function textRules(where, value) {
     if (/—/.test(t)) fail(at, "holds an em-dash");
     for (const m of setAsideAllowed(t).matchAll(forbiddenRe))
       fail(at, `uses the forbidden word "${m[1]}"`);
-    const scripture = /verses\[\d+\]\.text$|\.quote\.text$|\.promise$/.test(at);
+    const scripture = /verses\[\d+\]\.text$|\.quote\.text$|\.promise$|\.verse\.text$/.test(at);
     if (!scripture && /!/.test(outsideQuotes(t)))
       fail(at, "has an exclamation mark outside quoted Scripture");
     if (/\p{Extended_Pictographic}/u.test(t)) fail(at, "holds an emoji");
@@ -152,10 +161,13 @@ function quotationRule(where, value) {
 function linkRule(where, href, finished) {
   if (typeof href !== "string" || !href.startsWith("/"))
     return fail(where, `has no internal href (${href})`);
-  const explorer = href.match(/^\/study\/explorer\/([a-z0-9-]+)/);
+  const film = href.match(/^\/study\/explorer\/watch\/([a-z0-9-]+)/);
+  if (film && !filmsReady.has(film[1]))
+    return fail(where, `links ${href}, a moving picture that is not made yet`);
+  const explorer = !film && href.match(/^\/study\/explorer\/([a-z0-9-]+)/);
   if (explorer && !finished.has(explorer[1]))
     return fail(where, `links ${href}, a stop that is still being drawn`);
-  const r = resolveHref(href);
+  const r = resolveHref(href.replace(/#.*$/, ""));
   if (r.status === "missing")
     fail(where, `links ${href}, which is not a live page`);
   if (r.status === "redirect")
@@ -481,6 +493,101 @@ for (const c of cards) {
   quotationRule(w, c);
 }
 
+
+// ── Watch and learn: the moving pictures ──────────────────────────────────
+// films.json lists every planned film under one of four groups; a finished
+// film has its own file, films/<slug>.json, and a drawing in
+// client/src/pages/explorer/films/scenes/<slug>.tsx listed in FILM_SCENES.
+{
+  const GROUPS = ["story", "ideas", "beliefs", "questions"];
+  const groups = filmCatalogue.groups ?? [];
+  if (groups.map(g => g.id).join() !== GROUPS.join())
+    fail("films.json", `groups must be ${GROUPS.join(", ")}, in that order`);
+  for (const g of groups)
+    if (!g.name || !g.line) fail(`films.json ${g.id}`, "needs a name and a line");
+  textRules("films.json", groups);
+  const scenesSrc = fs.readFileSync(
+    path.join(ROOT, "client/src/pages/explorer/films/scenes/index.ts"),
+    "utf8"
+  );
+  const cardIdsAll = new Set(read(path.join(DIR, "cards.json")).cards.map(c => c.id));
+  const seen = new Set();
+  for (const f of filmCatalogue.films ?? []) {
+    const w = `films.json ${f.slug}`;
+    if (!/^[a-z0-9-]+$/.test(f.slug ?? "") || seen.has(f.slug))
+      fail(w, "has a missing, unplain or repeated slug");
+    seen.add(f.slug);
+    if (!f.title) fail(w, "needs a title");
+    if (!GROUPS.includes(f.group)) fail(w, `group "${f.group}" is not one of the four`);
+    textRules(w, f.title);
+    const file = path.join(DIR, "films", `${f.slug}.json`);
+    if (f.status === "coming") {
+      const extra = Object.keys(f).filter(k => !["slug", "title", "group", "status"].includes(k));
+      if (extra.length) fail(w, `is coming but has ${extra.join(", ")}`);
+      if (fs.existsSync(file)) fail(w, "is coming but has a file; mark it finished");
+      continue;
+    }
+    if (f.status !== "finished") {
+      fail(w, `status "${f.status}" is not finished or coming`);
+      continue;
+    }
+    if (!fs.existsSync(file)) {
+      fail(w, "is finished but has no file in films/");
+      continue;
+    }
+    if (!scenesSrc.includes(`"${f.slug}": () => import(`))
+      fail(w, "has no drawing listed in films/scenes/index.ts");
+    const film = read(file);
+    const fw = `films/${f.slug}.json`;
+    if (film.slug !== f.slug) fail(fw, "slug does not match its file name");
+    if (film.title !== f.title) fail(fw, "title does not match films.json");
+    if (film.group !== f.group) fail(fw, "group does not match films.json");
+    textRules(fw, film);
+    levelPair(`${fw} line`, film.line, 240);
+    if (!film.poster) fail(fw, "needs what the poster shows");
+    if (film.mark !== "road" && !slugs.has(film.mark))
+      fail(fw, `mark "${film.mark}" must be "road" or a stop's slug (its roundel)`);
+    const frames = film.frames ?? [];
+    if (frames.length < 5 || frames.length > 9)
+      fail(fw, `has ${frames.length} frames; a moving picture has 5 to 9`);
+    const fids = new Set();
+    frames.forEach((fr, i) => {
+      const at = `${fw} frames[${i}]`;
+      if (!fr.id || fids.has(fr.id)) fail(at, "has a missing or repeated id");
+      fids.add(fr.id);
+      if (!fr.name) fail(at, "needs a short name for its frame button");
+      // The caption at both levels, and what the picture shows when finished:
+      // with motion turned off, that is all the reader gets, so it must be there.
+      levelPair(at, fr, 520);
+      if (!(typeof fr.still === "string" && fr.still.trim().length > 20))
+        fail(at, "needs the words for its finished picture (still), for reduced motion and screen readers");
+      if (fr.verse) verseRule(`${at} verse`, fr.verse);
+    });
+    levelPair(`${fw} think`, film.think);
+    if (!Array.isArray(film.read) || !film.read.length)
+      fail(fw, "needs Study Bible chapters (Where the Bible says it)");
+    (film.read ?? []).forEach((r, i) => {
+      if (!/^\/study\/bible\/[a-z0-9-]+\/\d+$/.test(r.href ?? ""))
+        fail(`${fw} read[${i}]`, `is not a Study Bible chapter (${r.href})`);
+      linkRule(`${fw} read[${i}]`, r.href, finished);
+    });
+    (film.deeper ?? []).forEach((d, i) => linkRule(`${fw} deeper[${i}]`, d.href, finished));
+    (film.differ?.links ?? []).forEach((d, i) => linkRule(`${fw} differ[${i}]`, d.href, finished));
+    if (film.differ && !film.differ.text) fail(fw, "differ needs its words");
+    if (!film.end?.label) fail(fw, "needs where it sends the reader at the end");
+    else linkRule(`${fw} end`, film.end.href, finished);
+    if (!Array.isArray(film.stops) || !Array.isArray(film.cards))
+      fail(fw, "needs the stops and cards it belongs to (lists, may be empty)");
+    for (const s of film.stops ?? [])
+      if (!finished.has(s)) fail(fw, `belongs to "${s}", which is not a finished stop`);
+    for (const c of film.cards ?? [])
+      if (!cardIdsAll.has(c)) fail(fw, `belongs to the card "${c}", which does not exist`);
+    if (film.care && !/ or look at Find Help\.$/.test(film.care))
+      fail(fw, "a care line ends with \" or look at Find Help.\"");
+    quotationRule(fw, film);
+  }
+}
+
 // ── The manifest ──────────────────────────────────────────────────────────
 try {
   const want = JSON.stringify(buildIndex(), null, 2) + "\n";
@@ -499,5 +606,5 @@ if (problems.length) {
   process.exit(1);
 }
 console.log(
-  `[explorer] ${stops.length} stops (${finished.size} finished), ${threads.length} threads, ${cards.length} cards: all checks pass.`
+  `[explorer] ${stops.length} stops (${finished.size} finished), ${threads.length} threads, ${cards.length} cards, ${filmsReady.size} moving pictures (${filmCatalogue.films.length} planned): all checks pass.`
 );

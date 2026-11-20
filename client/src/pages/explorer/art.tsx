@@ -258,9 +258,12 @@ export const hasEmblem = (slug: string) => slug in EMBLEMS;
 export function Roundel({
   slug,
   className,
+  at,
 }: {
   slug: string;
   className?: string;
+  /** Placed inside another drawing (a moving picture): its top-left corner and size there. */
+  at?: { x: number; y: number; size: number };
 }) {
   const id = `lwr${useId().replace(/[^a-zA-Z0-9]/g, "")}`;
   const draw = EMBLEMS[slug];
@@ -270,6 +273,7 @@ export function Roundel({
       viewBox="0 0 100 100"
       aria-hidden="true"
       focusable="false"
+      {...(at ? { x: at.x, y: at.y, width: at.size, height: at.size } : {})}
     >
       <defs>
         <clipPath id={`${id}c`}>
