@@ -492,7 +492,7 @@ describe("Listen", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the thirteen finished films", () => {
+  it("lists the four groups and the sixteen finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -509,9 +509,12 @@ describe("the data", () => {
       "why-jesus-died",
       "how-salvation-works",
       "gospel-in-a-minute",
+      "spirit-in-a-believer",
       "the-church",
       "who-made-god",
       "does-god-exist",
+      "why-bad-things-happen",
+      "is-the-bible-true",
       "did-jesus-come-back-to-life",
     ]);
   });
@@ -811,5 +814,64 @@ describe("the three films of 2026-11-21", () => {
     expect(film.differ?.text).toMatch(/does not choose between them/);
     expect(film.care).toMatch(/not your fault/);
     expect(film.share?.level).toBe("younger");
+  });
+});
+
+describe("the three films of 2026-11-20 (suffering, the Bible, the Spirit)", () => {
+  const firstPerson = /\b(I|I'm|I've|my|me)\b/;
+  const captions = (slug: string) =>
+    filmFile(slug)
+      .frames.flatMap(fr => [fr.younger, fr.older])
+      .join(" ");
+
+  it("Why do bad things happen? gives no neat explanation, never calls suffering a lesson or a punishment, and keeps help in view", () => {
+    const film = filmFile("why-bad-things-happen");
+    const all = captions("why-bad-things-happen");
+    expect(all).not.toMatch(firstPerson);
+    expect(all).not.toMatch(
+      /teach(es|ing)? you a lesson|you deserved|God is punishing/i
+    );
+    // "Everything happens for a reason" is named only to be refused.
+    for (const m of Array.from(all.matchAll(/happens? for a reason[^.]*\./g)))
+      expect(m[0]).toMatch(/isn't theology/);
+    expect(all).toMatch(/Nobody can explain/);
+    expect(all).toMatch(/not God paying you back/);
+    expect(all).toMatch(/cross/);
+    expect(all).toMatch(/wipe away every tear/);
+    expect(film.care).toMatch(/or look at Find Help\.$/);
+    expect(film.frames.at(-1)!.younger).toMatch(/grown-up you trust/);
+    expect(film.frames.at(-1)!.older).toMatch(/Find Help/);
+    expect(film.end.href).toBe("/answers/if-god-is-good-why-suffering");
+  });
+
+  it("Is the Bible true? concedes what the answer concedes and claims no more", () => {
+    const all = captions("is-the-bible-true");
+    expect(all).not.toMatch(firstPerson);
+    expect(all).toMatch(/We don't have the originals/);
+    expect(all).toMatch(/None of this proves the Bible is the word of God/);
+    expect(all).toMatch(/end of Mark/);
+    expect(filmFile("is-the-bible-true").end.href).toBe(
+      "/answers/why-would-anyone-trust-the-bible"
+    );
+  });
+
+  it("The Holy Spirit in a believer says what all share and that churches differ, with no side", () => {
+    const film = filmFile("spirit-in-a-believer");
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+    expect(film.frames.find(f => f.id === "differ")!.older).toMatch(
+      /does not choose between them/
+    );
+    expect(captions("spirit-in-a-believer")).not.toMatch(
+      /must speak in tongues|gifts (have )?ceased|tongues (have )?ceased/i
+    );
+  });
+
+  it("each runs past two minutes at a level and so has a share cut under two minutes", () => {
+    for (const slug of [
+      "why-bad-things-happen",
+      "is-the-bible-true",
+      "spirit-in-a-believer",
+    ])
+      expect(filmFile(slug).share?.level, slug).toBe("younger");
   });
 });

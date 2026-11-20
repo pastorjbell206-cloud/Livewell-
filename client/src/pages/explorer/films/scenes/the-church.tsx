@@ -125,12 +125,15 @@ const film: FilmDrawing = {
           <Seated
             key={x}
             x={x}
-            y={342 + (n % 2) * 4}
+            y={336 + (n % 2) * 4}
+            body={58}
             tone={(["g", "b", "c"] as const)[n % 3]}
           />
         ))}
-        <Shape d="M140,372H420V388H140Z" tone="c" />
-        <path className="pl-l" d="M160,388V430M400,388V430" />
+        {/* The table in front of them: its top, and a cloth that hides their laps. */}
+        <Shape d="M140,372H420V400H140Z" tone="c" />
+        <path className="pl-l" d="M140,379H420" />
+        <path className="pl-l" d="M160,400V430M400,400V430" />
       </Fade>
       {/* 4. Gathered: the open book, the bread and the cup. */}
       <Fade frame={frame} on={4} off={5} delay={300}>
