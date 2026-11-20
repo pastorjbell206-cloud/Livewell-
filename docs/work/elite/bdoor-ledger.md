@@ -8861,3 +8861,25 @@ Two searches. Scripture is the BSB in the repository, matched by the strict chec
 | Joshua 2:15; 1 Samuel 19:12 | 30-33 | BSB | BSB text |
 
 Cut: the deep note's Tübingen school, Baur and Barrett by name; the Life of Adam and Eve by title; "hunter catches prey" for lambanō.
+
+## The plain notes on 2 Corinthians 12 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The man is Paul himself (verse 7); "almost all readers" | 1-6 | Deep note `literary`; BSB | Repository |
+| Fourteen years from AD 55 to 56: the early 40s, "give or take"; Syria and Cilicia (Galatians 1:21); not the Damascus road | 1-6 | Deep note `historical`; book page date | Arithmetic over the book page's date |
+| Jewish writings count three or seven heavens; 2 Enoch (date debated) places paradise in the third heaven; most take third heaven and Paradise as one place; some as two stages | 1-6 | Reference works | Search: biblia.com FSB sidebar "Paul and the Third Heaven"; biblehub.com Q&A on 12:2; evidenceunseen.com; intertextual.bible (Testament of Levi, 2 Enoch). Testament of Levi not named |
+| Paradise: Persian word for an enclosed garden; Eden in the old Greek; Luke 23:43; paradeisos three times in the New Testament | 1-6 | Earlier ledger (Luke 23); Greek text (G3857) | Ledger; script |
+| Caution about claimed visits to heaven; Colossians 2:18 | 1-6 | Brief | Stated calmly; no person or book named |
+| Isaiah 6:1; Ezekiel 1:1; Genesis 2:8; Deuteronomy 29:29; Daniel 12:4 | 1-6 | BSB | BSB text |
+| Skolops only here; arkei present tense; episkēnoō ‘spread a tent over’; only words of the risen Jesus in the letter | 7-10 | Greek text (G4647; 12:9 parsing); deep note `words`, `literary` | Repository |
+| Thorn guesses: illness, eyes (Galatians 4:13, 15), speech (10:10), persecution or a person (Numbers 33:55), inner temptation in medieval readers; no one knows | 7-10 | Commentaries | Search: en.wikipedia.org "Thorn in the flesh"; samstorms.org; hprweb.com (Aquinas: passions); biblegateway Encyclopedia of the Bible. Malaria, epilepsy, migraine (deep note) not given |
+| Job 2:6; Genesis 50:20; Psalm 6:2; Isaiah 40:29; Matthew 26:39 (and 26:44, three times); Colossians 4:14 | 7-10 | BSB | BSB text |
+| Not a rule that God will not heal; not a reason to refuse treatment; care line in the Matthew 8 and Acts 3 form; chronic illness or disability not a failure of faith; Find Help | 7-10 | matthew/plain/8.json; acts/plain/3.json | Repository wording, no phone number |
+| Signs not in Acts' Corinth account; Romans 15:19 | 11-13 | Deep note `historical`; BSB | Repository |
+| Deuteronomy 34:10-11; Numbers 12:3 | 11-13 | BSB | BSB text |
+| Third visit implies the painful visit (2:1); parents save for children; 1 Corinthians 4:15; the trickery charge tied to the collection ("seems") | 14-18 | Deep note `historical`, `cultural`; BSB | Repository |
+| Proverbs 13:22; 1 Samuel 12:3 | 14-18 | BSB | BSB text |
+| 1 Corinthians 1:11; Jeremiah 9:1; 3:22 | 19-21 | BSB | BSB text |
