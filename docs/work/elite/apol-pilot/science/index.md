@@ -1,0 +1,41 @@
+---
+area: science
+slug: science
+status: pending (not on the site; for James to read first)
+title: "Science"
+proposed address: /questions/science
+---
+
+# Science
+
+Many people who have left the faith, or never come near it, would say that science is the reason. They don't usually mean a single experiment. They mean a story they've absorbed: that the church once explained the world and science has been taking that job away from it ever since, that the church fought the takeover and lost, and that what is left of God is a shrinking space where physics and biology haven't yet reached. The questions in this area are the ones that story raises when it is put by its strongest advocates, not its loudest.
+
+The pages take the science at its mainstream strength. The universe is about 13.8 billion years old and the earth about 4.54 billion; life has a long history; the laws of nature are found, tested and used, and they work. Nothing here disputes a consensus finding by insinuation, and nothing here treats a finding as a proof of God. The question each page asks is narrower: what the finding shows, what it doesn't, and whether it settles the question the skeptic says it settles.
+
+The history is told exactly, including where the church was wrong. Galileo's condemnation was real, and the pages say so with its dates. So is the fact that the "war between science and religion" is largely a nineteenth-century construction that historians of science, believers and unbelievers alike, have spent fifty years correcting. The argument about miracles is taken from David Hume's own words. The arguments from the universe's beginning and its fitness for life are stated with their real limits and the best replies to them, the multiverse among them.
+
+On the age of the earth, evolution, the details of a historical Adam and the extent of the flood, this site takes no position. Faithful Christians hold different views, and the page on evolution and Genesis sets out each in the form its own defenders would sign, with its strongest difficulty, and then states what all of them confess together. That confession is not up for negotiation on any page: God made all things, human beings bear his image, sin and death are real, and Christ redeems.
+
+## The questions
+
+1. **Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?** The track record of natural explanation, the god of the gaps, what science presupposes, and what kind of question it can settle.
+2. **The church condemned Galileo. Hasn't religion always been at war with science?** What happened in 1616 and 1633 and what Galileo was and wasn't sentenced to, where the church was wrong, and how the "war" was written in the nineteenth century and taken apart since.
+3. **A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?** Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.
+4. **Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?** What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.
+5. **Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?** The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.
+
+## Words these pages use
+
+- **Methodological naturalism**: the working rule of science, to look for natural causes and test them. It is a rule of method, not by itself a claim that nothing exists but nature.
+- **Naturalism**: the view that nature is all there is, with no God or anything beyond it.
+- **God of the gaps**: the habit of appealing to God only where natural explanations are missing, so that God seems to shrink as knowledge grows. The phrase was made popular by the physicist Charles Coulson in the 1950s.
+- **Secondary causes**: the causes within creation, such as the laws of nature, through which, on the historic Christian view, God ordinarily acts.
+- **Conflict thesis**: the view, made popular by John William Draper (1874) and Andrew Dickson White (1896), that science and religion have always been at war.
+- **Fine-tuning**: the finding that some of the constants and starting conditions of physics fall within narrow ranges that allow life.
+- **Multiverse**: the proposal that our universe is one of a vast number of universes or regions, perhaps with different constants.
+
+## Where else to look
+
+- The argued answer "Do I have to choose between faith and science?" (/answers/do-i-have-to-choose-between-faith-and-science), the short form of this area.
+- The argued answers "Are miracles believable?" (/answers/are-miracles-believable) and "How should a Christian read Genesis 1?" (/answers/how-should-a-christian-read-genesis-1).
+- The Study Bible's notes on Genesis 1 (/study/bible/genesis/1), which set out the readings of the days without taking a side.

@@ -169,8 +169,44 @@
       "planned": 16,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "has-science-made-god-unnecessary",
+          "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+          "blurb": "The track record of natural explanation, the god of the gaps, what science presupposes, and what kind of question it can settle.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "galileo-and-the-war",
+          "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
+          "blurb": "What happened in 1616 and 1633 and what Galileo was and wasn't sentenced to, where the church was wrong, and how the \"war\" was written in the nineteenth century and taken apart since.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "miracles-and-the-laws-of-nature",
+          "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+          "blurb": "Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-beginning-and-fine-tuning",
+          "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+          "blurb": "What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "evolution-and-genesis",
+          "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+          "blurb": "The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "evil",
@@ -463,11 +499,145 @@
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
       "live": false
+    },
+    {
+      "claim": "Science and religion are incompatible in method: science can find out it is wrong, religion holds its claims by faith, scripture and authority",
+      "proponent": "Jerry A. Coyne",
+      "work": "Faith versus Fact",
+      "year": 2015,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Because a law like gravity exists, the universe can create itself from nothing, and no creator is needed",
+      "proponent": "Stephen Hawking and Leonard Mlodinow",
+      "work": "The Grand Design",
+      "year": 2010,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Darwin made it possible for an atheist to explain biological design, removing the strongest reason for belief",
+      "proponent": "Richard Dawkins",
+      "work": "The Blind Watchmaker",
+      "year": 1986,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Religion and science have been in conflict throughout history, with the church holding back the advance of knowledge",
+      "proponent": "John William Draper",
+      "work": "History of the Conflict between Religion and Science",
+      "year": 1874,
+      "area": "science",
+      "slug": "galileo-and-the-war",
+      "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
+      "live": false
+    },
+    {
+      "claim": "The history of science is a history of warfare with dogmatic theology",
+      "proponent": "Andrew Dickson White",
+      "work": "A History of the Warfare of Science with Theology in Christendom",
+      "year": 1896,
+      "area": "science",
+      "slug": "galileo-and-the-war",
+      "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
+      "live": false
+    },
+    {
+      "claim": "No testimony is sufficient to establish a miracle unless its falsehood would be more miraculous than the fact it reports",
+      "proponent": "David Hume",
+      "work": "An Enquiry Concerning Human Understanding",
+      "year": 1748,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "No human testimony can prove a miracle so as to make it a just foundation for a system of religion",
+      "proponent": "David Hume",
+      "work": "An Enquiry Concerning Human Understanding",
+      "year": 1748,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "Hume's argument against miracles, rightly read, still stands against its modern critics",
+      "proponent": "Robert J. Fogelin",
+      "work": "A Defense of Hume on Miracles",
+      "year": 2003,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "Physics shows how a universe can arise from nothing, so the Big Bang needs no creator",
+      "proponent": "Lawrence M. Krauss",
+      "work": "A Universe from Nothing",
+      "year": 2012,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "Fine-tuning may be explained by a multiverse of universes with different constants, of which we observe one that permits life",
+      "proponent": "Martin Rees",
+      "work": "Just Six Numbers",
+      "year": 1999,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "A designer would be at least as improbable as the design it is offered to explain",
+      "proponent": "Richard Dawkins",
+      "work": "The God Delusion",
+      "year": 2006,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "The evidence of fossils, biogeography and shared genes shows the common descent of living things, humans included",
+      "proponent": "Jerry A. Coyne",
+      "work": "Why Evolution Is True",
+      "year": 2009,
+      "area": "science",
+      "slug": "evolution-and-genesis",
+      "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+      "live": false
+    },
+    {
+      "claim": "Darwin removed the strongest reason to believe in a designer",
+      "proponent": "Richard Dawkins",
+      "work": "The Blind Watchmaker",
+      "year": 1986,
+      "area": "science",
+      "slug": "evolution-and-genesis",
+      "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
-    "how-can-god-be-three-and-one": "How can God be three and one?"
+    "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
+    "how-can-god-be-three-and-one": "How can God be three and one?",
+    "are-miracles-believable": "Are miracles believable?",
+    "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
+    "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?"
   }
 }
