@@ -10262,3 +10262,31 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 ## Titus complete (2026-11-20)
 
 All three chapters in plain words.
+
+## Philemon: the book page (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Single page; shortest; Paul writes part by hand; among the seven undisputed; Marcion and Muratorian lists; questioned in the 300s, defended by Jerome and Chrysostom | In a minute; Who wrote it | philemon/intro.json `overview`, `author` | Repository |
+| Rome about AD 60 to 62 (traditional, with Colossians); Ephesus mid-50s, about 120 miles (190 km) from Colossae; ‘more imprisonments’ (2 Corinthians 11:23); Caesarea about AD 57 to 59 | Where Paul was; timeline; map | philemon/intro.json `date`; colossians teaching timeline | Repository; BSB |
+| What the letter says of Philemon, Apphia, Archippus, Onesimus | People | BSB verses 1-19 | BSB text |
+| ‘Your very self’ read as Philemon's conversion through Paul (‘many take’) | People | Not stated in the repository's notes | Narrowed to "many take" |
+| Colossae from Colossians 4:9, 17 | People; map | philemon/intro.json `setting` | Repository; BSB |
+| Three accounts of how Onesimus came: ran away, perhaps stealing (Chrysostom, traditional); went to a friend of the master to intercede (Justinian's Digest; ‘some scholars’); sent by Philemon | People | philemon/intro.json `purpose`, `setting`; philemon/1.json `historical` | Repository, each as a reading; ‘and stayed too long’ cut |
+| Roman slavery: not race-based; manumission common; property; beaten, sold, separated; runaways hunted, branded | People | philemon/intro.json `setting`; philemon/1.json `cultural` | Repository |
+| Paul waits until verse 10; refreshed hearts frame (7, 20) | How it is built | philemon/1.json `literary` | Repository |
+| ‘In person and in the Lord’; Paul does not say slavery is wrong | What Paul asks | philemon/1.json `hard`, `words` (G1401) | Repository |
+| Three readings of what Paul hoped: welcome without punishment; freedom; sent back to help Paul (verses 13, 21) | What Paul asks | philemon/intro.json `purpose` | Repository. No side |
+| Letter's survival as a sign (‘some readers’) | What Paul asks | philemon/intro.json `reading` (Knox) | Narrowed |
+| Ignatius names Bishop Onesimus of Ephesus, early second century; identification possible, unproven | What Paul asks; timeline | philemon/intro.json `reading` | Repository (Knox not named) |
+| Fugitive Slave Act of 1850; defenders cited Philemon; abolitionists answered from verse 16; enslaved Christians heard differently; Paul's position; Gregory of Nyssa (fourth century) preached against slaveholding; evangelical abolitionists; slowness confessed | Misuse; timeline | philemon/1.json `hard` | Repository wording |
+| Atlantic slavery built on race and kidnapping; kidnapping punished by death | Misuse | ephesians/plain/6.json (5-9) | Word for word |
+| Deuteronomy 23:15-16; Exodus 21:16; Deuteronomy 15:15; Leviticus 25:40; Job 31:15 | Misuse; Old Testament | BSB | BSB text |
+| Luther's preface, ‘we are all Christ's Onesimus’ in effect; an analogy, not a hidden meaning | Charge it to my account | philemon/1.json `christ`; philemon/intro.json `christ` | Repository, paraphrased |
+| Koinōnia (verses 6, 17); splanchna (7, 12, 20); doulos; Onesimus a common slave name | Themes; words | philemon/1.json `words` | Repository |
+| Achrēstos and euchrēstos; chrēstos and Christos pronounced alike; onaimēn in verse 20 | Words; How to read | philemon/intro.json `reading`; philemon/1.json `cultural` | Repository |
+| Pliny to Sabinianus, early second century | Timeline | philemon/1.json `historical` | Repository (letter number not given on the page) |
+| Seed whose logic could not coexist with ownership (‘most readers today’) | Themes | philemon/intro.json `themes` | Repository wording |
+| Map: Colossae, Ephesus, Caesarea, Rome | Map | colossians teaching map coordinates | Repository |
