@@ -12244,3 +12244,27 @@ Cut before publishing: Rekhmire's painting (told in chapter 1); the BSB wording 
 | Exodus 12:41; Psalm 105:26 | 26-30 | BSB | BSB text |
 
 Cut before publishing: Jochebed's name as ‘the LORD is glory’; Moberly and Wellhausen by name (kept as views); the Septuagint's ‘cousin’ for Jochebed.
+
+## The plain notes on Exodus 7 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Moses ‘like God’, Aaron his prophet; a prophet speaks another's words | 1-7 | exodus/7.json `literary` | Repository |
+| Verse 5 answers 5:2 | 1-7 | exodus/7.json `story` | Repository |
+| Eighty and eighty-three; three forties ending at 120 (Deuteronomy 34:7) | 1-7 | exodus/7.json `historical` | Repository |
+| Acts 3:22; John 1:14; Romans 9:17 | 1-7 | BSB; exodus/7.json `christ` | BSB text |
+| Tannin as in Genesis 1:21; the uraeus; Ezekiel 29:3 | 8-13 | exodus/7.json `cultural` | Repository |
+| Magicians as lector priests; Genesis 41:8; Papyrus Westcar; Jannes and Jambres | 8-13 | exodus/7.json `historical` | Repository |
+| The magicians' arts: illusion or real power opposed to God; limited and exposed | 8-13 | exodus/7.json `hard` | Repository; no side |
+| 2 Timothy 3:8; Ezekiel 29:3; Deuteronomy 13:1-3; 2 Thessalonians 2:9; Exodus 8:19 | 8-13 | BSB | BSB text |
+| ‘Unyielding’ is kaved, ‘heavy’ | 14-19 | exodus/verses/7.json; exodus/verses/4.json (10) | Repository |
+| Three groups of three; the tenth apart; Rabbi Judah's memory aid in the Haggadah | 14-19 | exodus/7.json `literary` | Repository |
+| Pharaoh at the water; the Nile, Hapi, fish a staple | 14-19 | exodus/7.json `cultural`, `historical` | Repository |
+| Psalm 78:44; 105:29; Revelation 16:4 | 14-19 | BSB | BSB text |
+| The magicians add blood but cannot undo it; Pharaoh does not take it to heart | 20-25 | exodus/7.json `hard` | Repository |
+| Ipuwer: dated centuries earlier by most Egyptologists | 20-25 | exodus/7.json `historical` | Repository |
+| John 2:11 as an echo John does not draw | 20-25 | exodus/7.json `christ`; BSB | Repository |
+
+Cut before publishing: the reading of Pharaoh's morning walk as a rite (said only that the text does not say).
