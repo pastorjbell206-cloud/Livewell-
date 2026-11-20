@@ -93,6 +93,33 @@ const film: FilmDrawing = {
           />
         </Fade>
 
+        {/* Poster: the places the line will pass, small along the bottom:
+            the waters, a crowd of people, and the open gate of the city. */}
+        <Fade frame={frame} on={-1} off={0}>
+          <Shape d="M300,500C330,440 320,400 340,384H800V500Z" tone="g" />
+          <path fill={h.h2} d="M600,384H800V500H600Z" />
+          <Shape
+            d="M0,360C70,354 130,364 200,358S300,352 340,384C320,400 330,440 300,500H0Z"
+            tone="b"
+          />
+          <path
+            className="pl-f"
+            d="M30,400c20,-6 40,6 60,0M120,440c20,-6 40,6 60,0M40,470c20,-6 40,6 60,0"
+          />
+          {[360, 400, 440, 480, 520].map((x, n) => (
+            <Standing
+              key={x}
+              x={x}
+              y={384 - 62 * (n % 2 ? 0.75 : 0.9)}
+              s={n % 2 ? 0.75 : 0.9}
+              tone={(["c", "g", "b", "c", "g"] as const)[n]}
+            />
+          ))}
+          <Shape d="M580,384V300H640V284H760V300H800V384Z" tone="b" />
+          <path className="pl-o" d="M670,384V336a20,20 0 0 1 40,0V384Z" />
+          <path className="pl-l" d="M670,384V336a20,20 0 0 1 40,0V384Z" />
+        </Fade>
+
         {/* 0. The waters, and darkness over the deep. */}
         <Fade frame={frame} on={0} off={1}>
           <path fill={h.h1} d="M0,0H800V300H0Z" />

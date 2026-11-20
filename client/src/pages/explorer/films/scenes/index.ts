@@ -10,6 +10,10 @@ export const FILM_SCENES: Record<
 > = {
   "bible-two-minutes": () => import("./bible-two-minutes"),
   "holy-spirit": () => import("./holy-spirit"),
+  "god-with-his-people": () => import("./god-with-his-people"),
+  "who-god-is": () => import("./who-god-is"),
+  "why-jesus-died": () => import("./why-jesus-died"),
+  "how-salvation-works": () => import("./how-salvation-works"),
   "who-made-god": () => import("./who-made-god"),
 };
 

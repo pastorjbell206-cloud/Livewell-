@@ -1778,7 +1778,7 @@ async function main() {
         `<p class="pre-subtitle">${escapeHtml(f.line.younger)}</p>`,
         sec(`A moving picture in ${f.frames.length} parts`, `<ol>\n${f.frames.map(frame).join("\n")}\n</ol>`),
         sec("Think about it", `<p>${escapeHtml(f.think.younger)}</p><p>${escapeHtml(f.think.older)}</p>`),
-        f.differ ? sec("Where churches differ", `<p>${escapeHtml(f.differ.text)} ${f.differ.links.map((l) => `<a href="${escapeHtml(l.href)}">${escapeHtml(l.label)}</a>`).join(" and ")}.</p>`) : "",
+        f.differ ? sec("Where churches differ", `<p>${escapeHtml(f.differ.text)} ${f.differ.links.map((l, i, all) => `${i === 0 ? "" : i === all.length - 1 ? " and " : ", "}<a href="${escapeHtml(l.href)}">${escapeHtml(l.label)}</a>`).join("")}.</p>`) : "",
         sec("Where the Bible says it", `<ul>${(f.read || []).map((r) => `<li><a href="${escapeHtml(r.href)}">${escapeHtml(r.label)}</a></li>`).join("")}</ul>`),
         `<p><a href="/study/explorer#watch">Everything in Watch and learn</a></p>`,
       ]);
