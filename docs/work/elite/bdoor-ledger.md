@@ -11507,3 +11507,30 @@ Cut before publishing: a reading of how the Reformed and Arminian traditions eac
 | Claim | Part | Source | Checked by |
 |---|---|---|---|
 | 1, 2 and 3 John: the Ephesus label moved to the west of its point (as on the Ephesians and Revelation maps), since at 390 it crowded the drawing's ASIA label | Map | Screenshots of the served build at 390 and 1440 | Looked at |
+
+## The plain notes on Revelation 4 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The throne seen before any trouble; thronos fourteen times in eleven verses | 1-3 | revelation/4.json `story`, `words` (G2362) | Repository |
+| Temples to the emperor: Pergamum (29 BC), Smyrna (AD 26), Ephesus (Domitian's family); Suetonius on Domitian as lord and god; ‘our Lord and God’ (4:11) as a claim about who rules | 1-3 | revelation/4.json `historical` | Repository |
+| The voice of 4:1 is the risen Christ's from 1:10-13; John never describes God's form, as Ezekiel | 1-3 | revelation/4.json `christ`, `literary` | Repository |
+| The four ways of reading from chapter 4 on; dispensational reading of ‘Come up here’ against John's call into the vision; ‘God reigns now’ | 1-3 | revelation/4.json `hard`; revelation/intro.json `teaching` (ways) | Repository, no side |
+| Ezekiel 1:26, 28; Isaiah 6:1; Daniel 7:9 | 1-3 | BSB | BSB text |
+| The rings from the centre outward; lightning and thunder as Sinai | 4-5 | revelation/4.json `literary`, `cultural` | Repository |
+| The elders: tribes and apostles (21:12-14), the priestly divisions (1 Chronicles 24), an angelic council; the seven Spirits as the Spirit in fullness or seven angels | 4-5 | revelation/4.json `cultural`; revelation/plain/1.json (4-8 `hard`) | Repository, no side |
+| Exodus 19:16; Daniel 7:9; Zechariah 4:2 | 4-5 | BSB | BSB text |
+| The sea as chaos lying still; perhaps the bronze Sea of Solomon's temple | 6-8 | revelation/4.json `cultural` | Repository |
+| Zōon an ordinary word for an animal; the four as the whole of living creation | 6-8 | revelation/4.json `words` (G2226) | Repository |
+| Pantokratōr; LORD of Hosts in the Greek Old Testament; only 2 Corinthians 6:18 outside Revelation | 6-8 | revelation/4.json `words` (G3841) | Repository |
+| ‘Who was and is and is to come’ echoes Exodus 3:14 | 6-8 | revelation/4.json `christ` | Repository |
+| Symbols drawn from the Old Testament; no map of heaven drawn | 6-8 | revelation/intro.json `teaching` (kind); guides/reading-apocalyptic.json | Repository |
+| Ezekiel 1:10, 18; Isaiah 6:2, 3; Exodus 3:14 | 6-8 | BSB | BSB text |
+| Two hymns: who God is, what he has done; axios in acclamations of rulers, sung to the Lamb in chapter 5 | 9-11 | revelation/4.json `literary`, `words` (G0514) | Repository |
+| Tacitus: Tiridates laid his diadem before a statue of Nero in AD 63 | 9-11 | revelation/4.json `cultural` | Repository |
+| Creation the ground of God's right to rule; the Lamb worshipped in the same words; ‘true God from true God’ | 9-11 | revelation/4.json `doctrines`, `christ`; john/5.json (the Nicene phrase) | Repository |
+| Nehemiah 9:6; Psalm 33:6; Psalm 29:1 | 9-11 | BSB | BSB text |
+
+Cut before publishing: jasper and carnelian in the high priest's breastpiece (the BSB names the stones of Exodus 28 differently, so the link could not be shown from the text); the four creatures as signs of the four Gospels (not in the repository's notes).
