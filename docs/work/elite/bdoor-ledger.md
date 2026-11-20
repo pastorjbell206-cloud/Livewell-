@@ -8198,3 +8198,26 @@ One search (the source of 2:9). Scripture is the BSB in the repository.
 | 13:12; Philippians 2:8 (before the BSB's em-dash) | 10-16 | BSB | BSB text |
 
 Cut: the mystery cults of Eleusis (deep note, not checked); Origen and Jerome by name.
+
+## The plain notes on 1 Corinthians 3 (2026-11-20)
+
+One search (the Catechism on 3:15). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sarkinos (verse 1) and sarkikos (verse 3) | 1-4 | Greek text; deep note `words` | Repository |
+| Hosea 11:1, 3; Hebrews 5:12; 1 Peter 2:2; Proverbs 3:7 | 1-4 | BSB | BSB text |
+| Diakonoi; ‘God's’ first three times in verse 9 | 5-9 | Repository Greek (3:9: theou ... theou ... theou) | Script |
+| Isaiah 5:2; 61:3; Jeremiah 1:10; Psalm 127:1 | 5-9 | BSB | BSB text |
+| Architektōn; Corinth rebuilt with temples and colonnades paid for by the wealthy; stone and wood | 10-15 | Deep note `historical`, `cultural`; Roman-world portrait | Repository |
+| Isaiah 28:16; Malachi 3:2; Zechariah 13:9; 1 Chronicles 29:2 | 10-15 | BSB | BSB text |
+| Catholic teaching on purgatory: a final purification of those who die in God's grace and friendship but not fully purified; the Catechism speaks of a cleansing fire and refers to 1 Corinthians 3:15 and 1 Peter 1:7 (CCC 1030-1031); prayer for the dead | 10-15 | Catechism of the Catholic Church | Search: vatican.va ENG0015/__P2N.HTM; catholicnewsagency.com; usccb.org flipbook. Paraphrased |
+| Protestant reading: the builders' work tested, loss of reward not salvation; no purgatory | 10-15 | Deep note `hard` | Repository; stated as a view |
+| 3:17: believers who harm the church or outsiders | 10-15 | Deep note `hard` | Stated as a reading question |
+| Plural ‘you’; naos the inner shrine; temples of Apollo, Aphrodite, Asclepius | 16-17 | Greek text; deep note `cultural`; repository `setting` | Repository |
+| Exodus 29:45; Leviticus 26:12; Ezekiel 37:27; 1 Kings 8:27; John 2:19 | 16-17 | BSB | BSB text |
+| Job 5:13 spoken by Eliphaz (Job 4:1); Job 42:7 | 18-23 | BSB | BSB text |
+| Psalm 94:11 ‘man’ in the BSB, ‘the wise’ in Paul | 18-23 | BSB | BSB text. No claim about Paul's source text |
+| Romans 8:38; 8:6 | 18-23 | BSB | BSB text |
+
+Cut: milk and solid food as a common figure among ancient teachers (not checked); Solomon's temple materials (replaced by 1 Chronicles 29:2).
