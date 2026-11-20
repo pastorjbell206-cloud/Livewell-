@@ -12067,3 +12067,34 @@ Every claim in `client/public/bible/notes/exodus/intro.json`, field `teaching`. 
 | Map: Goshen and Canaan only, at the points Genesis's map already uses, each drawn roughly | map | genesis/intro.json `teaching.map` | Repository (no new point) |
 
 Cut before publishing: ‘more than three thousand years’ of Passover (no repository source); nomads leaving little behind (only in a pending question); powerful nations claiming the story for themselves (no repository source; replaced with 22:21 and Deuteronomy 5:15); the midwives among the Egyptians who acted well (their nationality is debated); every place for which the repository has no point (Rameses, Pithom, Succoth, the sea, Sinai, Midian) left off the map; no route drawn.
+
+## The plain notes on Exodus 1 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Exodus opens with ‘and’; the list repeats Genesis 46; the sons grouped by mothers; Joseph absent | 1-7 | exodus/verses/1.json (1-4) | Repository |
+| Seventy, and seventy-five in the Septuagint, a Dead Sea Scroll copy and Acts 7:14 | 1-7 | exodus/verses/1.json (5 `text`) | Repository |
+| Five verbs of increase from Genesis 1 and 9; sharats, the swarming of the fifth day | 1-7 | exodus/1.json `literary`; exodus/verses/1.json (6-7) | Repository |
+| Genesis 1:28; 9:1; 15:5; Deuteronomy 10:22; Acts 7:17 | 1-7 | BSB | BSB text |
+| Yada as acknowledgment; forgetting as the root of injustice | 8-14 | exodus/verses/1.json (8) | Repository |
+| Pharaoh from per-aa, ‘great house’ | 8-14 | exodus/verses/1.json (11 `history`) | Repository |
+| Early date and the kings of the 1400s; later date and Seti I or Ramesses II | 8-14 | exodus/1.json `historical` | Repository; no side |
+| Nitchakkemah from chakham; havah as at Babel | 8-14 | exodus/verses/1.json (9-10) | Repository |
+| Mas, the word for Solomon's crews (1 Kings 5:13) | 8-14 | exodus/1.json `cultural` | Repository |
+| Pithom and Rameses in the eastern Delta; Pi-Ramesses; an updated name; mud brick; Rekhmire's tomb | 8-14 | exodus/1.json `historical` | Repository |
+| Avad five times; befarekh framing 13-14 and in Leviticus 25:43; marar and the bitter herbs | 8-14 | exodus/verses/1.json (13-14) | Repository |
+| Genesis 15:13-14; Genesis 11:4; Leviticus 25:43; Deuteronomy 26:6; Acts 7:18 | 8-14 | BSB | BSB text |
+| The king unnamed, the midwives named | 15-21 | exodus/1.json `literary` | Repository |
+| Nationality debated (ha'ivriyyot); tradition of Moses' mother and sister; birthstools as two stones | 15-21 | exodus/1.json `cultural`; exodus/verses/1.json (15-16) | Repository |
+| First mention of God; ka'asher dibber; chayot from chayah | 15-21 | exodus/verses/1.json (17, 18-19) | Repository |
+| ‘He made for them houses’ | 15-21 | exodus/verses/1.json (20-21) | Repository |
+| The midwives' answer: Augustine (mercy rewarded, not the falsehood); Rahab and those who hid the innocent | 15-21 | exodus/1.json `hard` | Repository; no side |
+| Acts 5:29; Daniel 3:16-18; Joshua 2:4-6; Hebrews 11:31; Proverbs 9:10 | 15-21 | BSB | BSB text |
+| Nile and Hapi; the river of the first plague and of the army's end | 22 | exodus/verses/1.json (22 `history`); exodus/7.json | Repository |
+| ‘To the Hebrews’ from the Samaritan Pentateuch and Septuagint | 22 | exodus/verses/1.json (22 `text`) | Repository |
+| Herod and the pattern Matthew draws without quoting | 22 | exodus/1.json `christ` | Repository |
+| Acts 7:19; Matthew 2:16; Hebrews 11:23; 7:20; 14:28 | 22 | BSB | BSB text |
+
+Cut before publishing: Papyrus Brooklyn and the name Shiphrah; the debate over Tell el-Maskhuta or Tell er-Retabeh for Pithom; the habiru; the question in the deep note that points to patterns ‘today’ (no modern situation is named).
