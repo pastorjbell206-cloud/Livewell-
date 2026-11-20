@@ -5457,12 +5457,18 @@ repeating it; the book page was not edited.
 
 ### Sources
 
-All in `bdoor-ledger.md`, "The plain notes on Psalm 42" to "72". 14 web
-searches: 42 (1, the Gethsemane echo), 43 (1, the manuscripts joining 42 and
+All in `bdoor-ledger.md`, "The plain notes on Psalm 42" to "72". Corrected
+on 2026-11-20 to agree with the ledger: 18 ledger rows rest on a web search,
+and they cite these searches by psalm: 42 (the Gethsemane echo; the ledger
+counts it as one search shared with 43), 43 (the manuscripts joining 42 and
 43), 45 (2, the translations of 45:6 and the Targum), 46 (1, "be still" and
-Luther's hymn), 48 (1, Zaphon), 51 (2, 51:5 and 51:11), 63 (1, the morning
-psalm), 68 (2, the cloud-rider title and Ephesians 4:8), 69 (1, the New
-Testament uses and the curses), 72 (2, the Targum and Hammurabi). Scripts over
+Luther's hymn, two rows), 48 (1, Zaphon), 51 (2, 51:5 and 51:11, three rows),
+63 (1, the morning psalm), 68 (2, the cloud-rider title and Ephesians 4:8),
+69 (1, the New Testament uses, 69:5 and the curses, three rows), and 72 (2:
+Hammurabi's laws, in Harper's and King's translations, and the Targum). The
+list first printed here said "14 web searches" and did not give Hammurabi
+its own entry; the ledger's own headings add to 13 or 14, depending on
+whether 42 and 43 are counted apart. Scripts over
 the repository's Hebrew word data checked: the counts of YHWH and Elohim in
 Books One and Two (273 and 49; 28 and 198); tehom in 42:7 and Genesis 1:2;
 nimtsa me'od (46:1); 'imanu and Immanu-el; "take" (49:15, Genesis 5:24,
@@ -5599,3 +5605,165 @@ lh-*.json. No code changed.
 
 Psalm 73, the start of Book Three (73 to 89), in the same shape. Book Two took
 about 23,400 words: lighter psalms about 480 words, major ones 1,000 to 1,900.
+
+## Continuation: Psalms 73 to 106 (2026-11-20)
+
+Books Three (73 to 89) and Four (90 to 106), in the lighter shape James
+accepted. Most psalms are one passage; 73, 88, 89, 90, 91, 103 and 104 are
+at full depth (three passages each); 74, 77, 78, 82, 84, 95, 96, 105 and 106
+have two. `hard` appears only where a psalm has a difficulty of its own.
+Each note gained only `"plain": true` at its end. No code changed; the book
+page was not edited (no error found in it). Before starting, the "Sources"
+list of the Psalms 42 to 72 report was corrected to agree with the ledger
+(18 ledger rows rest on a search; Hammurabi's laws now its own entry; the
+old "14 web searches" explained).
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 73 | full | 3 | 1 (doubt met, not scolded) | 1,730 |
+| 74 | more room | 2 | none | 1,003 |
+| 75 | lighter | 1 | none | 487 |
+| 76 | lighter | 1 | none | 491 |
+| 77 | more room | 2 | 1 (care) | 958 |
+| 78 | more room | 2 | none | 1,032 |
+| 79 | lighter | 1 | 1 (to the book page) | 590 |
+| 80 | lighter | 1 | none | 554 |
+| 81 | lighter | 1 | none | 517 |
+| 82 | more room | 2 | 1 (82:6) | 959 |
+| 83 | lighter | 1 | 1 (the names) | 585 |
+| 84 | more room | 2 | 1 (84:11) | 977 |
+| 85 | lighter | 1 | none | 477 |
+| 86 | lighter | 1 | none | 490 |
+| 87 | lighter | 1 | none | 467 |
+| 88 | full | 3 | 1 (care) | 1,545 |
+| 89 | full | 3 | 1 | 1,656 |
+| 90 | full | 3 | 1 (grief) | 1,447 |
+| 91 | full | 3 | 2 | 1,524 |
+| 92 | lighter | 1 | none | 508 |
+| 93 | lighter | 1 | none | 446 |
+| 94 | lighter | 1 | 1 (to the book page) | 568 |
+| 95 | more room | 2 | none | 805 |
+| 96 | more room | 2 | none | 801 |
+| 97 | lighter | 1 | 1 (97:10) | 506 |
+| 98 | lighter | 1 | none | 476 |
+| 99 | lighter | 1 | none | 459 |
+| 100 | lighter | 1 | none (100:3 in hearers) | 509 |
+| 101 | lighter | 1 | 1 | 542 |
+| 102 | lighter | 1 | 1 (care) | 679 |
+| 103 | full | 3 | 2 | 1,576 |
+| 104 | full | 3 | 2 | 1,650 |
+| 105 | pair, more room | 2 | 1 (105:25) | 1,043 |
+| 106 | pair, more room | 2 | 1 | 1,169 |
+| Total | | 57 | 21 | 29,226 |
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 73" to "106". Nine web
+searches: 74 (1, Leviathan and Litan at Ugarit), 82 (2, the readings of 82:6;
+the Talmud's Sinai reading), 91 (1, Psalm 91 at Compline in the Rule of
+Benedict), 92 (1, shared with 93 and 94: the Mishnah's psalm for each day),
+100 (1, the written and margin readings of 100:3), 104 (1, the Great Hymn to
+the Aten). The rest rest on the BSB, the repository's deep notes, the book
+page, the site's context page on Psalm 91, earlier ledger rows, and scripts
+over the repository's Hebrew word data and headings: Asaph in 50 and 73-83;
+'akh three times in Psalm 73; laqach (73:24); "Do Not Destroy" (57-59, 75);
+elohim in 82:1, 6; the only Book Three heading naming David (86); the last
+Hebrew word of 88:18; Moses only in 90's heading; shuv (90:3, 13); ma'on
+(90:1, 91:9); the Sabbath only in 92's heading; "reigns" in 93, 96, 97, 99
+and none in 100-106; elilim (96:5); zarua "sown" (97:11); ruach (104:3, 4,
+29, 30); "Hallelujah" first at 104:35; verse counts (78 the second longest).
+
+### Cut or narrowed
+
+Cut (not verified this run): the Seleucid king and 167 BC (74, 79), 1
+Maccabees (79); 701 BC and the Greek heading's note (76); 722 BC and
+Hezekiah (78, 80); 597 BC (89, the event told from 2 Kings instead);
+Mowinckel and the enthronement festival (93, 97); the Greek headings of 91,
+94, 95, 104; the date of the Ugarit tablets; the fourteenth-century date of
+the Aten hymn; the century of Benedict's Rule; the Black Death and the
+amulets (in the Psalm 91 context page, not repeated); "Glorious things of
+thee are spoken" and "Old Hundredth" (hymns, not attempted). Narrowed:
+"the longest heading" to "one of the longest" (88); "the only heading that
+names a day" to "names the Sabbath" (92, since 18 names a day); the Talmud's
+reading of 82:6 given with no tractate or rabbi on the page; the Aten
+scholars not named on the page; "Jesus wept over Jerusalem" to "grieved"
+(81, Matthew 23:37); "Israel learned these words by heart" cut (86).
+Quotations caught by the strict script and the validator and fixed before
+commit: Isaiah 1:23, James 1:27, Romans 8:32, Matthew 4:6 (the devil's
+words with "he said" inside them), John 10:35 (BSB em-dashes), 105:17 and
+91:9 (em-dashes), and several capital letters.
+
+### Contested matters, and how they are stated
+
+73:24 (honour in this life, or hope beyond death; the book page's Sheol
+part). 74 (587/586 most scholars; a later attack suggested). Leviathan in
+74 and 104 (creation or the Red Sea; at Ugarit Baal's foe). 76 (the
+Assyrian withdrawal, or worship with no one battle). 78's date. 80 (the
+north under Assyria; prayed in Judah for the north). 81:3 (which feast).
+**82:6, on the page:** "Readers have given three main answers, and each is
+held by careful people. Some read them as human rulers and judges. They
+judged in God's name, so they were given a high title. ... Others read them
+as heavenly beings, members of God's council who were given charge over the
+nations and ruled them badly. ... An old Jewish reading, found in the
+Talmud, takes the words as spoken to Israel at Mount Sinai. ... None of
+these readings means that there are other gods equal to the LORD. ... These
+notes do not choose between them, and each can make sense of Jesus' words in
+John 10." 83 (which war). 87:4-6 (the nations as citizens, or Israelites
+scattered). 89 (Jewish and Christian readings of the promise, "They part
+over who Jesus is"; Book Four as an answer is "a reading of the book's
+order"). 90's heading (Moses; later; between). 98's victory (exile or
+exodus). 100:3 (two readings, "Both readings say something true"). 104
+(the Aten hymn, as a comparison scholars discuss; no position on the age of
+the earth or evolution). 105:25 (sovereignty and choice). 106:30-34 (three
+readings of the conquest texts; "No reading of these verses gives anyone
+today any right to harm another person or people").
+
+### Care lines included
+
+73:1-14 (doubt: "If you have doubts like these, this psalm does not scold
+you"). 77:1-9 (sleepless nights; a doctor, a pastor or a friend; Find Help).
+79 and 83 (no people today named as enemy; "no ground for contempt or
+hatred toward any people living today"). 88:13-18, the fullest (no
+diagnosis; do not carry it alone; a doctor, a pastor or a friend; "If you
+have thoughts of hurting yourself, speak to someone today"; a crisis line;
+the local emergency number, named only as that; Find Help; and for those
+who sit with someone in the dark). 90:7-12 (grief; no loss called
+deserved). 91 (not a guarantee; never a reason to refuse medical care; those
+who prayed it over someone they lost "did not pray wrong"). 94 (anxiety).
+102 (illness not punishment; sleeplessness and loneliness; Find Help). 103
+(healing not promised now; keep seeing a doctor; Find Help; the sentence on
+fathers). 106 (no blame on the Jewish people). No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` with its
+exit code read directly (never through a pipe), exit 0 each time; the strict
+quotation script (its last run over 73 to 106: 0 problems); and every passage
+printed field by field and read: all 57 sit under their right headings.
+
+At the end, one at a time: all 38 content-gate commands in ci.yml, exit 0
+each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 273
+chapters in plain words; no-emdash 260 files, 0; search index 733 entries up
+to date; passage index 623 files match; explorer index current;
+verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`: 147
+files passed, 7 skipped; 1,698 tests passed, 73 skipped. `pnpm build`:
+exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs` on port 4602;
+Playwright at 390 wide, deviceScaleFactor 1, `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 73 to 106: 34 chapters, 57 passages, 249 parts;
+each passage's heading and each part's heading and first 60 characters
+matched the data; the 36 passages without `hard` show no "The hard verse"
+heading; no sideways scroll; no console or page errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/ps88-390-p2.png` and `ps91-390-p1.png`
+(the site's sticky masthead shows across the middle of these element
+captures, as in earlier runs; it is the capture, not the page). Server
+stopped by PID, dist/ deleted, no lh-*.json. No code changed.
+
+### Next
+
+Psalm 107, the start of Book Five, in the same shape. Books Three and Four
+took about 29,200 words: lighter psalms about 500 words, major ones 1,450 to
+1,750. Book Five (107 to 150, with 119) is about one more long run, or two.

@@ -6731,3 +6731,473 @@ No modern ruler, party or nation in view.
 ## Book Two complete (2026-11-19)
 
 Psalms 42 to 72 now have plain notes. Next: Psalm 73, the start of Book Three.
+
+## The plain notes on Psalms 73 to 106: Books Three and Four (2026-11-20)
+
+Same lighter shape and strict quotation script as Psalms 42 to 72.
+"Repository deep note" means `client/public/bible/notes/psalms/<n>.json`;
+Hebrew facts come from the repository's word data
+(`client/public/bible/ch/psalms/<n>.json`). Headings were checked by a
+script over the BSB's verse 1 of every psalm.
+
+## The plain notes on Psalm 73 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Psalm 73 opens Book Three; Asaph in the headings of 50 and 73 to 83 | 1-14 | Book page ("Five books"); BSB headings | Script over BSB verse 1 |
+| Asaph a leader of the temple singers in David's day (1 Chronicles 16:7); his family sang on; a psalm of Asaph may come from a later singer of his line | 1-14 | Book page ("Who wrote the psalms"); repository deep note (historical) | Site's own teaching; BSB text |
+| 'akh ("surely", H0389) three times: verses 1, 13, 18 | 1-14 | Repository word data | Script |
+| Well-fed body a mark of wealth; washing hands as a claim of innocence (Psalm 26:6) | 1-14 | Repository deep note (cultural); BSB | Site's own teaching |
+| Job 21:7; Jeremiah 12:1; Job 42:7 (paraphrased); Luke 16:19-31; Matthew 5:8; Luke 12:15, 20; 2 Corinthians 4:18; John 10:28; Romans 8:38-39; Philippians 1:21 | all | BSB | BSB text |
+| What happened in the sanctuary is not said (Scripture, worship, presence): left open | 15-20 | Repository deep note (cultural) | Site's own teaching |
+| Levites had no land; "I am your portion" (Numbers 18:20) | 21-28 | Repository deep note; BSB | BSB text |
+| "Receive" (laqach, H3947) the word of Genesis 5:24; readings of 73:24 (honour in this life, or hope beyond death); the book page's part on Sheol | 21-28 | Repository word data; repository deep note (hard); book page ("Sheol") | Script; stated as views |
+
+Doubt is met, not scolded: the `hard` field of 1-14.
+
+## The plain notes on Psalm 74 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Maskil's meaning uncertain | 1-11 | Book page ("What the headings tell you") | Site's own teaching |
+| Most scholars connect it with 587 or 586 BC; a later attack suggested; "burned to the ground" fits Babylon best; a later singer of Asaph's line | 1-11 | Book page ("When they were written"); repository deep note (historical); 2 Kings 25:9 | Site's own teaching; BSB text. The Seleucid king and the year 167 BC not repeated (not verified this run) |
+| A temple thought the house of a god; its fall read as the god's defeat; banners as claims of victory | 1-11 | Repository deep note (cultural) | Site's own teaching |
+| Ugarit: Baal defeats a seven-headed sea monster, Litan or Lotan, linked by scholars with Leviathan; the sea as chaos; the psalm gives the victory to the LORD | 12-23 | Reformation Study Bible note on Ps 74:14 (biblegateway.com); biblicaltraining.org "sea monster"; NET Bible note (biblia.com) | Search. The date of the tablets not given (sources differ) |
+| Red Sea or creation, or both | 12-23 | Repository deep note (hard) | Stated as readings |
+| Lamentations 2:7; Matthew 24:2; John 2:19, 21; Isaiah 27:1; 51:10; Revelation 21:1; Exodus 14:21 | all | BSB | BSB text |
+
+No modern nation in view; anger in the prayer pointed to the book page's part on the cursing psalms.
+
+## The plain notes on Psalm 75 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Do Not Destroy" heads 57, 58, 59 and 75; probably a tune | BSB headings; repository deep note | Script |
+| Placed after 74 as God's answer: a possible reading of the arrangement | Repository deep note (historical) | Stated as "may have meant" |
+| The horn as strength (1 Samuel 2:1); the cup of judgment in the prophets; dregs | Repository deep note (cultural); BSB | BSB text |
+| 1 Samuel 2:7; Luke 1:52; Matthew 26:39 (Christians read the cup as judgment borne for others: a reading) | BSB | BSB text |
+
+## The plain notes on Psalm 76 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Salem an old name for Jerusalem (Genesis 14:18); sounds like shalom | Repository deep note (cultural); BSB | BSB text. "Sounds like" kept; no etymology claimed |
+| Many connect the psalm with the Assyrian withdrawal (2 Kings 19:35-36); others a worship song with no one battle | Repository deep note (historical) | Stated as views. The year 701 BC and the Greek heading's note not given (not verified this run) |
+| "Horse and rider" echoes Exodus 15:1; chariots the most feared weapon | Repository deep note (cultural); BSB | BSB text |
+| Isaiah 2:4; Matthew 5:9; Revelation 19:16 | BSB | BSB text |
+
+No modern army or nation in view.
+
+## The plain notes on Psalm 77 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jeduthun a leader of temple music with Asaph and Heman; also heads 39 and 62 | 1-9 | Repository deep note (historical); earlier ledger (Psalm 39, 62 headings) | Script over BSB headings |
+| The six questions echo Exodus 34:6 | 1-9 | BSB | BSB text (an observation, stated as such) |
+| Lifted hands the posture of prayer; the exodus told at Passover | all | Repository deep note (cultural) | Site's own teaching |
+| Habakkuk 3:10; Mark 6:48, 50; Matthew 26:39 | all | BSB | BSB text |
+
+Care line in 1-9 (sleeplessness; a doctor, a pastor, a friend; the Find Help page). No diagnosis of anyone.
+
+## The plain notes on Psalm 78 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second longest psalm (72 verses) after 119 (176) | 1-39 | BSB verse counts | Script |
+| Teaching children the story (Deuteronomy 6:20-21) | 1-39 | Repository deep note (cultural); BSB | BSB text |
+| Quail (Numbers 11), water from the rock (Exodus 17) | 1-39 | Repository deep note (cultural) | Site's own teaching |
+| Matthew 13:35 quotes 78:2; John 6:32; 1 Corinthians 10:11; John 10:11 | all | BSB | BSB text |
+| Shiloh the place of the Tent of Meeting (Joshua 18:1); the ark brought from Shiloh and captured (1 Samuel 4:4, 11); Jeremiah 7:12 | 40-72 | BSB | BSB text |
+| 78:65 how it looked from Israel's side (Psalm 121:4) | 40-72 | Repository deep note (hard) | Site's own teaching |
+| Ephraim and Joseph the leading northern tribes; dates debated (David or Solomon; after the north fell to Assyria) | 40-72 | Repository deep note (historical) | Stated as views; the year 722 BC and Hezekiah not given |
+
+## The plain notes on Psalm 79 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| A twin of 74; the destruction of 587 or 586 BC (most scholars) | Book page ("When they were written"); repository deep note (historical) | Site's own teaching. The Maccabean reading and 1 Maccabees not repeated |
+| The unburied dead a deep shame; a covenant curse (Deuteronomy 28:26) | Repository deep note (cultural); BSB | BSB text |
+| 79:6-7 nearly the words of Jeremiah 10:25; one drew on the other, or both on a known prayer | Repository deep note (historical); BSB | BSB text compared |
+| Revelation 6:10; Romans 12:19 | BSB | BSB text |
+| 79:6 and 12 pointed to the book page's part on the cursing psalms; "the nations" the armies of that ancient war; no people today named | Book page ("The cursing psalms") | Site's own teaching |
+
+## The plain notes on Psalm 80 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The chorus three times, growing (3, 7, 19) | BSB | BSB text |
+| Ephraim and Manasseh sons of Joseph; many connect the psalm with Assyria's crushing of the north; some think it prayed in Judah for the north | Repository deep note (historical) | Stated as views; no year given |
+| The chorus echoes Numbers 6:25 | Repository deep note (cultural); BSB | BSB text |
+| Vineyard walls; the vine a picture of Israel | Repository deep note (cultural) | Site's own teaching |
+| "The man at Your right hand": the king, or Israel (Exodus 4:22) | Repository deep note | Stated as readings |
+| Isaiah 5:1-2; Mark 12:1; John 15:1, 5 | BSB | BSB text |
+
+## The plain notes on Psalm 81 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Gittith also heads 8 and 84; meaning uncertain (Gath, wine press) | Repository deep note (historical); BSB headings | Script |
+| The feast of 81:3 debated (seventh month: trumpets and Tabernacles; or Passover) | Repository deep note (historical) | Stated as views |
+| The shofar a signal; the basket and Egypt's labour; Meribah "quarrelling" (Exodus 17:7) | Repository deep note (cultural); BSB | BSB text |
+| 81:9-10 echo Exodus 20:2 | BSB | BSB text |
+| Matthew 23:37; Hebrews 3:15; Romans 1:24 | BSB | BSB text |
+
+## The plain notes on Psalm 82 (2026-11-20)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Heaven pictured as a court; at Ugarit a chief god over an assembly of gods | 1-5 | Repository deep note (cultural); earlier ledger (Ugarit, Psalms 24 and 29) | Site's own teaching. The date of the Ugarit texts not given |
+| 1 Kings 22:19; Job 1:6; Isaiah 1:23; James 1:27; Luke 4:18 | 1-5 | BSB | BSB text |
+| elohim in 82:1 and 82:6; elohim for "the judges" in Exodus 21:6 | 6-8 | Repository word data; earlier ledger (Psalm 45 row) | Script |
+| John 10:34-36: Jesus' argument from the lesser to the greater (10:35 paraphrased, since the BSB sets "and the Scripture cannot be broken" between em-dashes) | 6-8 | BSB; repository deep note (christ) | BSB text |
+| Three readings of 82:6: human judges; heavenly beings of the council (verse 1, verse 7, 1 Kings 22, Job 1); none means gods equal to the LORD | 6-8 | Repository deep note (hard); biblehub.com "Does Psalm 82:6 suggest Israel's polytheism?"; christianity.com "Why Does Psalm 82:6 Say 'Ye Are Gods'?"; Heiser, SBL paper on Psalm 82 in John 10 (drmsh.com) | Search. Stated as views, no side; no scholar named on the page |
+| An old Jewish reading in the Talmud: spoken to Israel at Sinai, who might have been free of death but lost it through sin | 6-8 | Repository deep note (hard); intertextual.bible (Avodah Zarah 5a, the baraita of Rabbi Yosei, in translation) | Search. Paraphrased; tractate and rabbi not named on the page (met in translation on one site) |
+
+## The plain notes on Psalm 83 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The last psalm of Asaph | BSB headings | Script |
+| No single war matches the list; Jehoshaphat's day (2 Chronicles 20:1) one proposal; or a gathering of old enemies | Repository deep note (historical); BSB | Stated as views; no century given |
+| Sisera and Jabin (Judges 4:2); Oreb and Zeeb (Judges 7:25); Zebah and Zalmunna (Judges 8:21) | BSB | BSB text |
+| Chaff on the threshing floor | Repository deep note (cultural) | Site's own teaching |
+| Matthew 5:44; Luke 23:34; 1 Timothy 2:4 | BSB | BSB text |
+
+Hard: pointed to the book page's part on the cursing psalms; the names belong to that ancient world and give no ground for contempt toward any people today.
+
+## The plain notes on Psalm 84 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Three pilgrim feasts (Deuteronomy 16:16); walking in village groups | 1-7 | Repository deep note (cultural); BSB | BSB text |
+| "Pilgrimage" close to a word for raised roads; Baca unknown, a tree or (in the old Greek) "weeping" | 1-7 | Repository deep note (cultural) | Site's own teaching |
+| Korahites guarded the thresholds (1 Chronicles 9:19) | 8-12 | BSB; repository deep note | BSB text |
+| "Your anointed" the king | 8-12 | Repository deep note | Site's own teaching |
+| John 4:21, 23; Hebrews 12:22; Revelation 21:22; John 10:9; Romans 8:32 | all | BSB | BSB text |
+
+## The plain notes on Psalm 85 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 85:1 read by many of the return from Babylon (after 539 BC, the book page's timeline); hard years after (Haggai 1:6); others read it more widely | Book page (timeline); repository deep note (historical); BSB | Stated as views |
+| Land and covenant one relationship (Deuteronomy 28) | Repository deep note (cultural) | Site's own teaching |
+| Romans 3:26; 5:1; Luke 2:14; the cross as a Christian reading of 85:10 ("often read") | BSB | BSB text; stated as a reading |
+
+## The plain notes on Psalm 86 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The only heading in Book Three to name David | BSB headings 73 to 89 | Script |
+| 86:15 nearly Exodus 34:6; Jonah 4:2; Revelation 15:4 | BSB | BSB text compared |
+| Woven from lines found elsewhere in Scripture | Repository deep note (historical) | Site's own teaching |
+| "Son of Your maidservant" a household-born servant; chasid (verse 2) loyalty, not perfection | Repository deep note (cultural, hard); book page ("innocence") | Site's own teaching |
+
+## The plain notes on Psalm 87 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Rahab a poetic name for Egypt (Isaiah 30:7); the five peoples; Cush south of Egypt | Repository deep note (cultural); BSB | BSB text |
+| Registers of citizens | Repository deep note (cultural) | Site's own teaching |
+| Two readings of 87:4-6 (the nations as citizens; Israelites scattered among them) | Repository deep note (hard) | Stated as views |
+| Isaiah 19:25; Galatians 4:26; Revelation 7:9 | BSB | BSB text |
+
+No modern state or border in view.
+
+## The plain notes on Psalm 88 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| One of the longest headings; two sources (sons of Korah and Heman) | 1-9 | Book page ("Who wrote the psalms"); repository deep note (historical); BSB | BSB text. "The longest" narrowed to "one of the longest" |
+| Heman among David's musicians (1 Chronicles 15:19) and among famous wise men (1 Kings 4:31); one man or two unknown; Mahalath Leannoth uncertain | 1-9 | Repository deep note; BSB | BSB text |
+| Sheol, the Pit, the grave, Abaddon ("to perish"), the land of oblivion | 1-12 | Book page ("Sheol"); repository deep note (cultural) | Site's own teaching |
+| Lasting illness and being kept apart; friends staying away | 1-9 | Repository deep note (cultural) | Site's own teaching; the trouble left unnamed, as the psalm leaves it |
+| The one lament that never turns; ends "darkness is my closest companion" (88:18) | 13-18 | Book page ("Kinds of psalm", `hard` list) | Site's own teaching |
+| The last Hebrew word of 88:18 is "darkness" (machshakh, H4285) | 13-18 | Repository word data | Script |
+| Job 3:3; Lamentations 3:6; Mark 14:50; Matthew 26:38; Isaiah 26:19; Psalm 6:5; John 11:35; Mark 15:34; Hebrews 5:7; Isaiah 53:3; Romans 8:26 | all | BSB | BSB text |
+
+Care: the fullest care line of the run, in the form of the notes on Psalms 6 and 13 (no diagnosis; do not carry it alone; a doctor, a pastor, a friend; "If you have thoughts of hurting yourself, speak to someone today"; a crisis line; the local emergency number, named only as such; the Find Help page). No phone number; no detail of self-harm. No hopeful ending added to the psalm: the Easter hope is named in 10-12 as the New Testament's, "not in Psalm 88".
+
+## The plain notes on Psalm 89 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ethan in 1 Chronicles 15:19 and 1 Kings 4:31; one or two unknown | 1-18 | Repository deep note (historical); BSB | BSB text |
+| Neighbours' stories of a storm god defeating the sea; Rahab | 1-18 | Repository deep note (cultural); earlier row (Psalm 74, search) | Site's own teaching |
+| Tabor and Hermon in the north; Hermon the tallest peak | 1-18 | Repository deep note (cultural); earlier ledger (Psalm 42) | Site's own teaching |
+| Revelation 1:5 echoes 89:27 and 89:37; Luke 1:32 | 1-18 | BSB | BSB text compared (an observation) |
+| 2 Samuel 7:14, 16 sung back; a royal grant, given not earned, planning for discipline | 19-37 | Repository deep note (cultural); BSB | BSB text |
+| Jeremiah 33:21; Acts 2:30; 2 Corinthians 1:20 | 19-37 | BSB | BSB text |
+| Many connect 38-51 with the fall of David's line to Babylon; Jehoiachin king at eighteen, taken after three months (2 Kings 24:8, 15); after the fall no son of David ruled in Jerusalem; others think of an earlier defeat | 38-52 | Repository deep note (historical, hard); book page (timeline); BSB | BSB text; stated as views. The year 597 BC not given on the page |
+| 89:52 the doxology closing Book Three; the reading of Book Four as an answer is a reading of the order | 38-52 | Book page ("Five books") | Site's own teaching |
+| Jewish reading: the promise waits for a human Messiah still to come; Christian reading: kept in Jesus (Romans 1:3; Acts 13:34); "They part over who Jesus is" | 38-52 | Book page ("The king's psalms"); BSB | Site's own teaching; stated with respect, no side beyond the site's own Christian confession |
+| Jehoiachin released and honoured (2 Kings 25:27) | 38-52 | BSB; repository deep note (hard) | BSB text |
+
+## Book Three complete (2026-11-20)
+
+Psalms 73 to 89 now have plain notes.
+
+## The plain notes on Psalm 90 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Opens Book Four; the only heading naming Moses | 1-6 | Book page ("Five books"); BSB headings | Script |
+| "Man of God" (Deuteronomy 33:1); views of the heading: Moses' own (fits the wilderness, Numbers 14:29), later and set under his name to answer Psalm 89, a middle view | 1-6 | Repository deep note (historical, hard); book page ("Who wrote the psalms") | Stated as views, no side |
+| A watch of the night; grass after rain and in the hot wind | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Seventy or eighty the full measure of a long life, not the average; not a rule; Moses at 120 (Deuteronomy 34:7) | 7-12 | Repository deep note (cultural, hard); BSB | BSB text. The BSB's em-dashes in 90:10 kept out of the quotations |
+| "Return" (shuv, H7725) in 90:3 and 90:13; Exodus 32:12 | 13-17 | Repository word data; repository deep note; BSB | Script; BSB text |
+| Genesis 3:19; Isaiah 40:8; 2 Peter 3:8; James 4:14; Luke 12:20; John 11:25; 1 Thessalonians 4:13; Lamentations 3:23; 1 Corinthians 15:58 | all | BSB | BSB text |
+
+Care line for the grieving in 7-12: no loss called deserved; grief not a lack of faith; a pastor, a friend, a doctor; the Find Help page.
+
+## The plain notes on Psalm 91 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No heading; four names for God in two verses; the voices change (1, 2, 3 on, 14-16) | 1-8 | BSB; the site's context page "Does Psalm 91 Promise Protection From Harm?" (`client/public/context/guides/psalm-91-in-context.json`) | BSB text; site's own teaching |
+| The fowler, plague, lions and cobras; neighbours' many gods and charms | 1-8 | Repository deep note (cultural); context page | Site's own teaching |
+| Wings: a mother bird (Deuteronomy 32:11) | 1-8 | Repository deep note; BSB | BSB text |
+| "Dwelling" (ma'on, H4583) in 90:1 and 91:9 | 1-8 | Repository word data; context page | Script |
+| The Rule of Saint Benedict has Psalm 91 (Vulgate 90) sung every day at Compline | 1-8 | Rule of Benedict, chapter 18 (archive.osb.org; ccel.org; pressbooks.palni.org); Wikipedia "Compline" | Search. Century and the Black Death (in the context page) not repeated |
+| The devil quotes 91:11-12 (Matthew 4:6; Luke 4:10-11); "in all your ways" left out in both; Jesus answers from Deuteronomy 6:16 (Matthew 4:7); Massah (Exodus 17:7) | 9-13 | BSB; context page; earlier ledger (Matthew 4, Luke 4 rows) | BSB text compared |
+| Not a promise that no believer is harmed; never a reason to refuse medical care or run a risk to test God | 1-8, 9-13 | Context page ("The Tempter's Reading", "Praying It Through the Night") | Agrees with the site's own teaching |
+| Acts 12:2 and Peter freed; Luke 21:18; Matthew 23:37; Psalm 9:10; Matthew 27:43; Luke 10:19 | all | BSB; context page | BSB text |
+
+The context page is named on the page by its title; no link markup is added to the data.
+
+## The plain notes on Psalm 92 (2026-11-20)
+
+One web search (shared with Psalms 93 and 94).
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The only heading naming the Sabbath (Psalm 18's heading names "the day" of a rescue, not a day of the week) | BSB headings | Script; "names a day" narrowed |
+| The Mishnah lists a psalm the Levites sang in the temple each day; 92 for the Sabbath; still sung in Jewish Sabbath worship | Mishnah Tamid 7:4 as given by myjewishlearning.com "Psalms for Every Day of the Week"; outorah.org "Tamid 7:3-4"; mishnah.org; repository deep note (historical) | Search. The tractate not named on the page; "an early collection of Jewish teaching" |
+| Sabbath remembers creation (Exodus 20:11); palm and cedar; grass | Repository deep note (cultural); BSB | BSB text |
+| Psalm 1:3; Jeremiah 17:8; Mark 2:27; Hebrews 4:9 | BSB | BSB text |
+
+## The plain notes on Psalm 93 (2026-11-20)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The LORD reigns" a coronation cry; 93 and 95 to 99 sing the LORD is King; Book Four's answer to Psalm 89 a reading | Book page ("Five books"); BSB (96:10, 97:1, 99:1) | Site's own teaching; script |
+| The Mishnah's list: 93 on the sixth day | Search shared with 92 (myjewishlearning.com; outorah.org) | Search |
+| Neighbours' storm god and the sea; here no battle | Repository deep note (cultural); earlier row (Psalm 74) | Site's own teaching. Mowinckel and the enthronement festival (deep note) not repeated |
+| Mark 4:39, 41; Revelation 19:6 | BSB | BSB text |
+
+## The plain notes on Psalm 94 (2026-11-20)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The widow, foreigner and fatherless under God's protection (Exodus 22:22-23) | Repository deep note (cultural); BSB | BSB text |
+| "Corrupt throne": foreign rulers or Israel's own courts | Repository deep note (historical) | Stated as views |
+| The Mishnah's list: 94 on the fourth day | Search shared with 92 | Search. The Greek heading (deep note) not repeated |
+| Romans 12:19; Luke 18:7; 1 Peter 5:7 | BSB | BSB text |
+| "God of vengeance" pointed to the book page's part on the cursing psalms | Book page | Site's own teaching |
+
+Care line on anxiety (verse 19): a friend, a pastor or a doctor.
+
+## The plain notes on Psalm 95 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sung as worshippers entered the temple (many scholars) | 1-6 | Repository deep note (historical) | Stated as a view |
+| Gods of regions; bowing as before a king | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Massah "testing", Meribah "quarrelling" (Exodus 17:7); forty years; Numbers 14:22-23 | 7-11 | BSB; earlier row (Psalm 81) | BSB text |
+| A priest or prophet's warning after praise, or the psalm's own design | 7-11 | Repository deep note (hard) | Stated as views |
+| Hebrews 3:7-11, 13; 4:7 ("through David"), 9; Matthew 11:28; Philippians 2:10; Revelation 4:11 | all | BSB | BSB text |
+
+## The plain notes on Psalm 96 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nearly all in 1 Chronicles 16:23-33; that song made of lines in 105, 96, 106; which came first debated | 1-9 | Book page ("The Psalms and the temple"); repository deep note; BSB | BSB text compared (1 Chronicles 16:23) |
+| elohim and elilim ("worthless idols", H0457) in 96:5 | 1-9 | Repository word data; repository deep note (cultural) | Script |
+| Conquerors carried off defeated peoples' gods; nations invited into the courts | 1-9 | Repository deep note (cultural) | Site's own teaching |
+| Judgment as good news for the wronged; "equity" | 10-13 | Repository deep note; BSB | Site's own teaching |
+| Matthew 28:19; Revelation 14:6-7; Acts 17:31; Romans 8:21; Isaiah 55:12 | all | BSB | BSB text |
+
+No nation given a place before the judge.
+
+## The plain notes on Psalm 97 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sinai's fire and quaking (Exodus 19:18) | BSB | BSB text |
+| Baal pictured riding the clouds; the throne's raised base | Repository deep note (cultural); earlier ledger (Psalm 68, cloud rider, search) | Site's own teaching. Mowinckel not named |
+| "Distant shores" the coastlands | Repository deep note | Site's own teaching |
+| 97:11 "shines" is zarua, "sown" (H2232) | Repository word data | Script |
+| Hebrews 12:28; 1 John 1:5; Romans 12:9 | BSB | BSB text |
+
+## The plain notes on Psalm 98 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Heading one word; like 96 | BSB | BSB text |
+| "Right hand", "holy arm": Exodus 15:6; Isaiah 52:10; the return from exile (many scholars) or the exodus | Repository deep note (historical); BSB | Stated as views; the years 539/538 BC not given |
+| Victory music; the ram's horn at Solomon's anointing (1 Kings 1:39) | Repository deep note (cultural); BSB | BSB text |
+| Luke 2:30-31, 10; Luke 19:40 | BSB | BSB text |
+
+## The plain notes on Psalm 99 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The last "The LORD reigns" in Book Four (none in 100 to 106) | BSB | Script |
+| Cherubim on the ark, the empty throne, the footstool | Repository deep note (cultural) | Site's own teaching |
+| Exodus 32:14; 1 Samuel 12:23; Numbers 20:12 (forgiven, yet consequences) | Repository deep note (hard); BSB | BSB text |
+| Isaiah 6:3; Revelation 4:8; 1 Peter 1:16 | BSB | BSB text |
+
+## The plain notes on Psalm 100 (2026-11-20)
+
+One web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| todah: thanks, or the thank offering (Leviticus 7:12); sung with that offering (some), or a general label | Repository deep note (historical); BSB | Stated as views |
+| Gates then courts; "serve" both labour and worship | Repository deep note (cultural) | Site's own teaching |
+| 100:3: the written text lo' "not" and the margin's lo "His" (ketiv and qere, same sound); KJV text follows the first, most modern Bibles (the BSB) the second; ancient translations divided (Septuagint and Peshitta with "not"; Aquila, Jerome and the Targum with "His") | psalms.scriptura.org "The Text and Meaning of Ps. 100:3"; claudemariottini.com on ketiv and qere; Wikipedia "Psalm 100" (mirror); BSB | Search. The ancient versions not named on the page ("Ancient translations are divided too") |
+| John 10:14; Ephesians 2:10; 1 Thessalonians 5:18; Romans 12:1 | BSB | BSB text |
+
+## The plain notes on Psalm 101 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| A king's vow, perhaps at his crowning (many readers); a royal psalm | Book page ("Kinds of psalm"); repository deep note (historical) | Stated as a view |
+| Slander and flattery at court (Saul and David); rulers boasting of justice; the king begins with himself | Repository deep note (cultural) | Site's own teaching. Hammurabi not repeated here (see Psalm 72) |
+| "Administer justice every morning" (Jeremiah 21:12) | BSB | BSB text |
+| Matthew 7:3; 1 Timothy 3:2; Philippians 4:8 | BSB | BSB text |
+| 101:8 a king's vow under God; gives no one today the right to punish neighbours | Repository deep note (hard) | Site's own teaching |
+
+## The plain notes on Psalm 102 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The heading names a kind of person, kept for any sufferer | Repository deep note (historical); BSB | BSB text |
+| Ashes in mourning (Job 2:8); owls of ruined places; the flat roof | Repository deep note (cultural); BSB | BSB text |
+| After Babylon's destruction (most scholars), Zion's stones and dust | Repository deep note (historical) | Stated as most scholars' view |
+| One of the seven penitential psalms | Earlier row (Psalm 6 note, sixth-century grouping) | Earlier ledger |
+| Hebrews 1:10-12 quotes 102:25-27 of the Son; James 1:17; 2 Corinthians 4:16 | BSB | BSB text |
+
+Care: illness not a punishment (Job); sleeplessness and loneliness; a doctor, a pastor or a friend; the Find Help page.
+
+## The plain notes on Psalm 103 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Bless" as praise; nephesh the whole living self | 1-5 | Book page (key words); repository deep note (cultural) | Site's own teaching |
+| Eagle a word for large birds of prey; commentators suggest renewal after moulting | 1-5 | Repository deep note (cultural) | Stated as a suggestion |
+| Israel warned not to forget (Deuteronomy 8:11) | 1-5 | BSB | BSB text |
+| 103:3 not a promise that every illness is healed now; readings: one recovery turned to praise, all healing (medicine included) as God's gift, the resurrection; illness not a sign God has stopped loving | 1-5 | Repository deep note (hard) | Stated as readings |
+| 103:7-8 and Exodus 34:6 after the golden calf | 6-14 | Repository deep note (historical); BSB | BSB text compared |
+| East and west: the far-apart picture (the walking illustration offered as a way of seeing, "Whether or not the psalmist thought of it that way") | 6-14 | Observation | Not attributed to anyone |
+| 103:13 a claim about God, not about every human father; Psalm 27:10 | 6-14 | BSB | BSB text |
+| Grass after the winter rains; children's children | 15-22 | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 40:31; Matthew 8:16-17; Micah 7:19; Hebrews 8:12; Luke 15:20; Matthew 6:9; 1 Peter 1:24-25; Revelation 5:13 | all | BSB | BSB text |
+
+Care: 1-5 (illness; keep seeing a doctor; tell someone; the Find Help page). The father sentence names no person's life and says nothing of the site's author.
+
+## The plain notes on Psalm 104 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tent of the sky, waters above, foundations: a poet's pictures of the world as Israel saw it | 1-9 | Repository deep note (cultural) | Site's own teaching |
+| 104:6-9: creation (Genesis 1:2) or the flood (Genesis 9:11), or both | 1-9 | BSB; observation | Stated as readings |
+| No position on the age of the earth or evolution | 1-9 | Earlier note (Psalm 19's wording) | Site's own stance |
+| Springs and rain; wine, oil and bread the three great crops; cedars of Lebanon | 10-23 | Repository deep note (cultural) | Site's own teaching |
+| The Great Hymn to the Aten (Akhenaten): praise of the sun bringing day, sending people to work, caring for animals; similar order especially from 104:20; views: Israel's poets knew a form of it (Breasted, Assmann, Redford as reported), or a shared way of praising a creator and direct borrowing unlikely (Lichtheim, Mark S. Smith as reported) | 10-23 | Wikipedia "Great Hymn to the Aten"; University of Pretoria repository "The great Atonhymn and Psalm 104: a comparative approach"; Oxford Handbook of the Psalms chapter (abstract); repository deep note (historical) | Search. Stated as a comparison scholars discuss; no scholar named on the page; the fourteenth-century date not given |
+| Care for creation as stewards, with no political application | 10-23 | Genesis 2:15 (BSB) | Site's own stance |
+| ruach (H7307) in 104:3, 4, 29, 30: wind, breath, spirit | 24-35 | Repository word data | Script |
+| Leviathan made "to frolic"; elsewhere chaos | 24-35 | BSB; earlier row (Psalm 74) | BSB text |
+| "Hallelujah" first appears in the Psalms at 104:35 (BSB) | 24-35 | BSB | Script over all 150 psalms |
+| Job 38:11; John 1:3; Colossians 1:17; Matthew 6:26; Acts 14:17; Genesis 2:7; Acts 17:25; Romans 1:20; Genesis 1:31 | all | BSB | BSB text |
+
+## The plain notes on Psalm 105 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 105 and 106 a pair: one story as faithfulness and as failure | all | Repository deep notes; BSB | Stated as the shape of the pair |
+| 105:1-15 in 1 Chronicles 16:8-22; the song made of 105, 96, 106 | 1-15 | Book page; BSB (1 Chronicles 16:8) | BSB text |
+| After the exile (many) or earlier temple worship | 1-15 | Repository deep note (historical) | Stated as views |
+| The patriarchs as strangers; kings rebuked (Genesis 12 and 20); "anointed ones" and "prophets" given to them | 1-15 | Repository deep note (cultural); BSB | BSB text |
+| The land promise in Israel's ancient story; no modern border or state | 1-15 | Site's own stance | Stated plainly |
+| "Land of Ham": Mizraim among the sons of Ham (Genesis 10:6) | 16-45 | Repository deep note (cultural); BSB | BSB text |
+| Genesis 50:20; Acts 7:9-10; Exodus 2:24; Hebrews 11:9; Luke 1:72-73; Galatians 3:29 | all | BSB | BSB text |
+| 105:25: Exodus says Pharaoh hardened his heart and God hardened it; views on sovereignty and choice | 16-45 | Repository deep note (hard) | Stated as views |
+
+## The plain notes on Psalm 106 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Communal confession after the exile (Ezra 9, Nehemiah 9, Daniel 9; Daniel 9:5 quoted) | 1-23 | Repository deep note (cultural); BSB | BSB text |
+| "In the breach": a soldier in a broken wall | 1-23 | Picture from the text | Plain reading |
+| Romans 1:23 echoes 106:20; Romans 3:23; 1 Corinthians 10:6 | 1-23 | BSB | BSB text |
+| "Gather us from the nations": exiles, or a community waiting for the rest | 24-48 | Repository deep note (historical) | Stated as views |
+| Child sacrifice forbidden (Deuteronomy 12:31) and recorded of a king of Judah (2 Kings 21:6) | 24-48 | Repository deep note (cultural); BSB | BSB text |
+| 106:48 the doxology closing Book Four; 41:13, 72:18-19, 89:52; 1 Chronicles 16:34-36 | 24-48 | Book page ("Five books"); BSB | BSB text |
+| Phinehas (Numbers 25:7-8); readings of the conquest texts (one-time judgment; the language of ancient war; Canaanites surviving and joining Israel); the New Testament turns the fight against idols to the heart | 24-48 | Repository deep note (hard) | Stated as readings |
+| Romans 11:1, 29; 1 John 1:9 | 24-48 | BSB | BSB text |
+
+The confession is Israel's own; the note says it gives no ground to blame or look down on the Jewish people, and that no reading permits harm to anyone today.
+
+## Book Four complete (2026-11-20)
+
+Psalms 90 to 106 now have plain notes. Next: Psalm 107, the start of Book Five.
