@@ -278,6 +278,13 @@
           "blurb": "*Almah* and *parthenos* handled honestly, what Matthew does with Isaiah and with Hosea, the two accounts from Joseph's side and Mary's, Trypho and Celsus, the stories of Danaë and Augustus read and compared, and the confession of the creeds.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "did-jesus-predict-the-end-within-a-generation",
+          "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+          "blurb": "Schweitzer's prophet and Russell's lecture at full strength, the temple's fall in AD 70, Daniel's Son of Man coming to God, the transfiguration, Matthew 10:23, the confession that the Son does not know the day, and the main Christian readings with no scheme of the end chosen.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1151,6 +1158,26 @@
       "area": "jesus",
       "slug": "the-virgin-birth",
       "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+      "live": false
+    },
+    {
+      "claim": "Jesus expected the Son of Man to come before the Twelve returned from their mission, and the prediction was not fulfilled",
+      "proponent": "Albert Schweitzer",
+      "work": "The Quest of the Historical Jesus",
+      "year": 1906,
+      "area": "jesus",
+      "slug": "did-jesus-predict-the-end-within-a-generation",
+      "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+      "live": false
+    },
+    {
+      "claim": "Jesus thought his second coming would occur before the death of all the people living at the time, and so was not superlatively wise",
+      "proponent": "Bertrand Russell",
+      "work": "Why I Am Not a Christian",
+      "year": 1927,
+      "area": "jesus",
+      "slug": "did-jesus-predict-the-end-within-a-generation",
+      "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
       "live": false
     },
     {
