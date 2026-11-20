@@ -148,6 +148,24 @@ describe("VerseRef, sheet mode", () => {
     expect(await screen.findByText("[Not in the earliest manuscripts]")).toBeInTheDocument();
   });
 
+  it("marks printed verses the earliest manuscripts do not have, once around the run", async () => {
+    const user = userEvent.setup();
+    renderAt(<VerseRef reference="John 7:52-8:12" />);
+    await user.click(screen.getByRole("link", { name: "John 7:52-8:12" }));
+    const dialog = await screen.findByRole("dialog");
+    // The words are printed as they are, and the run across the chapter break is marked once.
+    expect(await within(dialog).findByText(/But Jesus went to the Mount of Olives\./)).toBeInTheDocument();
+    expect(within(dialog).getAllByText("Not in the earliest manuscripts")).toHaveLength(1);
+    expect(within(dialog).getAllByText("End of the verses not in the earliest manuscripts.")).toHaveLength(1);
+    const text = dialog.textContent ?? "";
+    const open = text.indexOf("Not in the earliest manuscripts");
+    const close = text.indexOf("End of the verses not in the earliest manuscripts.");
+    expect(text.indexOf("Look into it, and you will see")).toBeLessThan(open); // 7:52, outside
+    expect(open).toBeLessThan(text.indexOf("Then each went to his own home")); // 7:53, first inside
+    expect(text.indexOf("sin no more")).toBeLessThan(close); // 8:11, last inside
+    expect(close).toBeLessThan(text.indexOf("I am the light of the world")); // 8:12, outside
+  });
+
   it("sends a passage longer than three chapters to the Study Bible without fetching it", async () => {
     const user = userEvent.setup();
     renderAt(<VerseRef reference="Genesis 1-4" />);

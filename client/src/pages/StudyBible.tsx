@@ -69,6 +69,7 @@ import { Credits, Gloss, useLoad } from "@/pages/study-bible/shared";
 import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pages/study-bible/ChapterNotes";
 import { VerseEntry } from "@/pages/study-bible/VerseNotes";
 import { GoToPassage } from "@/pages/study-bible/GoToPassage";
+import { LaterClose, LaterOpen, laterEdge } from "@/components/LaterMark";
 import { SCRIPTURE_BOOKS } from "@/lib/scripture-ref";
 import { TextSize, useTextSize } from "@/components/TextSize";
 import {
@@ -603,18 +604,21 @@ const tapVerse = (v: BibleVerse, onVerse: (v: BibleVerse) => void) => () => {
 function ReadingText({ data, sel, onVerse, noted, marks, poetry, scale }: { data: BibleChapter; sel: Selection; onVerse: (v: BibleVerse) => void; noted: Set<number>; marks: Map<number, Mark>; poetry: boolean; scale: number }) {
   return (
     <div className={poetry ? "sb-text sb-text--poetry" : "sb-text"} style={{ maxWidth: "var(--w-read)", fontFamily: "var(--font-reading)", fontSize: `calc(var(--fs-read) * ${1.05 * scale})`, lineHeight: 1.75, color: "var(--ink)" }}>
-      {data.verses.map((v) => {
+      {data.verses.map((v, i) => {
         const active = sel?.verse.v === v.v;
         const mine = marks.get(v.v);
+        const edge = laterEdge(data.verses, i);
         return (
           // The number inside is the control a keyboard reaches; the tap on the words is the same act, made easier to hit.
           <span key={v.v} id={`v${v.v}`} className="sb-verse" data-active={active || undefined} data-mark={mine?.color} onClick={tapVerse(v, onVerse)}>
+            {edge?.open && <LaterOpen />}
             <VerseNum v={v} active={active} noted={noted.has(v.v)} mine={mine} onVerse={onVerse} />
             {!v.t ? (
               <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontStyle: "italic", color: "var(--ink-muted)" }}>[Not in the earliest manuscripts]</span>
             ) : poetry ? (
               poetryLines(v.t).map((line, i) => <span key={i} className="sb-line">{line} </span>)
             ) : v.t}{" "}
+            {edge?.close && <LaterClose />}
           </span>
         );
       })}
@@ -630,13 +634,17 @@ function ReadingText({ data, sel, onVerse, noted, marks, poetry, scale }: { data
 function ReadText({ data, poetry, scale, label }: { data: BibleTextChapter; poetry: boolean; scale: number; label: string }) {
   return (
     <div className={poetry ? "sb-text sb-text--read sb-text--poetry" : "sb-text sb-text--read"} style={{ fontSize: `calc(var(--fs-read) * ${1.15 * scale})` }} aria-label={`${label}, ${BIBLE_TRANSLATION}`} role="region">
-      {data.verses.map((v) =>
-        v.t ? (
+      {data.verses.map((v, i) => {
+        if (!v.t) return null;
+        const edge = laterEdge(data.verses, i);
+        return (
           <span key={v.v} id={`v${v.v}`} className="sb-verse sb-verse--read">
+            {edge?.open && <LaterOpen />}
             {poetry ? poetryLines(v.t).map((line, i) => <span key={i} className="sb-line">{line} </span>) : v.t}{" "}
+            {edge?.close && <LaterClose />}
           </span>
-        ) : null
-      )}
+        );
+      })}
     </div>
   );
 }
@@ -645,13 +653,16 @@ function Interlinear({ data, lang, sel, onVerse, onWord, noted }: { data: BibleC
   const script = lang === "H" ? HEB : GRK;
   return (
     <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "var(--s-4)" }}>
-      {data.verses.map((v) => {
+      {data.verses.map((v, i) => {
         const active = sel?.verse.v === v.v && sel.kind === "verse";
+        const edge = laterEdge(data.verses, i);
         return (
           <li key={v.v} id={`v${v.v}`} style={{ scrollMarginTop: "100px", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
             <p className="sb-verse" data-active={active || undefined} onClick={tapVerse(v, onVerse)} style={{ margin: "0 0 10px", fontFamily: "var(--font-reading)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)", maxWidth: "68ch" }}>
+              {edge?.open && <LaterOpen />}
               <VerseNum v={v} active={active} noted={noted.has(v.v)} onVerse={onVerse} />
               {v.t || <span style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>{LATER_NOTE}</span>}
+              {edge?.close && <> <LaterClose /></>}
             </p>
             {v.w.length === 0 ? (
               <p style={{ margin: 0, fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>
