@@ -28,8 +28,16 @@ const R = 44;
 function Tree({ x }: { x: number }) {
   return (
     <>
-      <Shape d={`M${x - 4},${Y + 30}V${Y + 6}h8V${Y + 30}Z`} tone="c" off={1.5} />
-      <Shape d={`M${x - 22},${Y - 4}a22,18 0 1,0 44,0a22,18 0 1,0 -44,0Z`} tone="g" off={2} />
+      <Shape
+        d={`M${x - 4},${Y + 30}V${Y + 6}h8V${Y + 30}Z`}
+        tone="c"
+        off={1.5}
+      />
+      <Shape
+        d={`M${x - 22},${Y - 4}a22,18 0 1,0 44,0a22,18 0 1,0 -44,0Z`}
+        tone="g"
+        off={2}
+      />
     </>
   );
 }
@@ -37,7 +45,11 @@ function Seed({ x }: { x: number }) {
   return (
     <>
       <path className="pl-l" d={`M${x - 26},${Y + 22}H${x + 26}`} />
-      <Shape d={`M${x},${Y - 16}C${x + 14},${Y - 6} ${x + 14},${Y + 12} ${x},${Y + 18}C${x - 14},${Y + 12} ${x - 14},${Y - 6} ${x},${Y - 16}Z`} tone="c" off={1.5} />
+      <Shape
+        d={`M${x},${Y - 16}C${x + 14},${Y - 6} ${x + 14},${Y + 12} ${x},${Y + 18}C${x - 14},${Y + 12} ${x - 14},${Y - 6} ${x},${Y - 16}Z`}
+        tone="c"
+        off={1.5}
+      />
       <path className="pl-f" d={`M${x},${Y - 12}V${Y + 14}`} />
     </>
   );
@@ -47,7 +59,10 @@ function Earth({ x, hatch }: { x: number; hatch: string }) {
     <>
       <Shape d={ring(x, Y, 28)} tone="b" off={2} />
       <path fill={hatch} d={`M${x},${Y - 28}a28,28 0 0 1 0,56Z`} />
-      <path className="pl-f" d={`M${x - 18},${Y - 10}c8,-4 12,4 20,0M${x - 6},${Y + 8}c8,-4 14,4 22,0M${x - 20},${Y + 16}c6,-2 8,2 12,0`} />
+      <path
+        className="pl-f"
+        d={`M${x - 18},${Y - 10}c8,-4 12,4 20,0M${x - 6},${Y + 8}c8,-4 14,4 22,0M${x - 20},${Y + 16}c6,-2 8,2 12,0`}
+      />
     </>
   );
 }
@@ -110,8 +125,22 @@ const film: FilmDrawing = {
         <Fade frame={frame} on={3} off={5}>
           <path className="pl-m" d={RAYS} />
         </Fade>
-        <Draw frame={frame} on={4} off={5} className="fp-gold" delay={400} d="M400,344H0" />
-        <Draw frame={frame} on={4} off={5} className="fp-gold" delay={400} d="M400,344H800" />
+        <Draw
+          frame={frame}
+          on={4}
+          off={5}
+          className="fp-gold"
+          delay={400}
+          d="M400,344H0"
+        />
+        <Draw
+          frame={frame}
+          on={4}
+          off={5}
+          className="fp-gold"
+          delay={400}
+          d="M400,344H800"
+        />
 
         {/* 4 on: the mountains rise under a light already there. */}
         <Fade frame={frame} on={4} from="up">
@@ -137,7 +166,10 @@ const film: FilmDrawing = {
         >
           <Fade frame={frame} on={1} from="right" delay={200}>
             <path className="pl-f" strokeDasharray="2 6" d={`M0,${Y}H70`} />
-            <path className="pl-k" d={`M24,${Y}a3,3 0 1,0 6,0a3,3 0 1,0 -6,0ZM44,${Y}a3,3 0 1,0 6,0a3,3 0 1,0 -6,0ZM64,${Y}a3,3 0 1,0 6,0a3,3 0 1,0 -6,0Z`} />
+            <path
+              className="pl-k"
+              d={`M24,${Y}a3,3 0 1,0 6,0a3,3 0 1,0 -6,0ZM44,${Y}a3,3 0 1,0 6,0a3,3 0 1,0 -6,0ZM64,${Y}a3,3 0 1,0 6,0a3,3 0 1,0 -6,0Z`}
+            />
           </Fade>
           <Fade frame={frame} on={1} from="right" delay={900}>
             <path className="pl-l" d={joint(120)} />
@@ -176,7 +208,13 @@ const film: FilmDrawing = {
 
         {/* 2 on: the frame round the whole row. */}
         <Draw frame={frame} on={2} delay={700} d="M160,214H640V318H160Z" />
-        <Draw frame={frame} on={2} delay={1000} className="pl-f" d="M152,206H648V326H152Z" />
+        <Draw
+          frame={frame}
+          on={2}
+          delay={1000}
+          className="pl-f"
+          d="M152,206H648V326H152Z"
+        />
 
         {/* 5: the bush that burned and was not burned up. */}
         <Fade frame={frame} on={5} from="up" delay={300}>
@@ -185,8 +223,14 @@ const film: FilmDrawing = {
             d="M330,482C318,462 330,440 352,444C356,426 378,420 392,432C404,418 428,420 436,436C456,432 474,450 468,468C474,474 472,482 466,482Z"
             tone="g"
           />
-          <path fill={h.h2} d="M400,432C412,420 428,420 436,436C456,432 474,450 468,468C474,474 472,482 466,482H400Z" />
-          <path className="pl-l" d="M400,482V452M400,466L380,448M400,462L422,444" />
+          <path
+            fill={h.h2}
+            d="M400,432C412,420 428,420 436,436C456,432 474,450 468,468C474,474 472,482 466,482H400Z"
+          />
+          <path
+            className="pl-l"
+            d="M400,482V452M400,466L380,448M400,462L422,444"
+          />
           <Flame x={400} y={424} s={2.1} gold />
         </Fade>
       </>

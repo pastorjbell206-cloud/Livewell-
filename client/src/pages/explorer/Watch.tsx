@@ -20,7 +20,13 @@ import {
 import { HeadArt, Roundel } from "./art";
 
 /** A film's small picture: the map's road, or a stop's roundel. */
-export function FilmMark({ mark, className }: { mark?: string; className?: string }) {
+export function FilmMark({
+  mark,
+  className,
+}: {
+  mark?: string;
+  className?: string;
+}) {
   return mark === "road" ? (
     <HeadArt />
   ) : (
@@ -41,11 +47,7 @@ export function Watch({
   const films: FilmSummary[] = index.films ?? [];
   if (!groups.length || !films.length) return null;
   return (
-    <section
-      className="wl-sec"
-      id={WATCH_ID}
-      aria-labelledby="wl-title"
-    >
+    <section className="wl-sec" id={WATCH_ID} aria-labelledby="wl-title">
       <div className="ex-wrap">
         <h2 className="ex-h2" id="wl-title">
           Watch and learn

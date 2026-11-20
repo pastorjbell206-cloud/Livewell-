@@ -73,7 +73,8 @@
   top: 44%;
   width: clamp(56px, 11vw, 84px);
   height: clamp(56px, 11vw, 84px);
-  margin: calc(clamp(56px, 11vw, 84px) / -2) 0 0 calc(clamp(56px, 11vw, 84px) / -2);
+  margin: calc(clamp(56px, 11vw, 84px) / -2) 0 0
+    calc(clamp(56px, 11vw, 84px) / -2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +82,9 @@
   border-radius: 50%;
   background: var(--ink);
   color: var(--bone);
-  box-shadow: 0 0 0 4px var(--art-paper), 0 0 0 5.5px var(--art-ink);
+  box-shadow:
+    0 0 0 4px var(--art-paper),
+    0 0 0 5.5px var(--art-ink);
   cursor: pointer;
 }
 
@@ -198,12 +201,16 @@
   grid-area: 1 / 1;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+  transition:
+    opacity 0.4s ease,
+    visibility 0s linear 0.4s;
 }
 .fp-cap.is-on {
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.5s ease 0.15s, visibility 0s;
+  transition:
+    opacity 0.5s ease 0.15s,
+    visibility 0s;
 }
 .fp-cap__name {
   margin: 0 0 6px;

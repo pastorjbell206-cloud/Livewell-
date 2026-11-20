@@ -16,8 +16,7 @@ import { Roundel } from "../../art";
 import { Fade, Travel, type FilmDrawing } from "../motion";
 
 /** The road: right along the top, back along the middle, right along the bottom. */
-const ROAD =
-  "M20,80H450C510,80 510,250 450,250H90C30,250 30,420 90,420H500";
+const ROAD = "M20,80H450C510,80 510,250 450,250H90C30,250 30,420 90,420H500";
 
 /** Where each stop stands on the road. */
 const AT: Record<string, [number, number]> = {

@@ -198,7 +198,9 @@ describe("the player's contract", () => {
   it("Replay returns to the first frame", () => {
     vi.useFakeTimers();
     render(player());
-    fireEvent.click(screen.getByRole("button", { name: "Picture 5: " + FILM.frames[4].name }));
+    fireEvent.click(
+      screen.getByRole("button", { name: "Picture 5: " + FILM.frames[4].name })
+    );
     expect(current()).toBe(5);
     fireEvent.click(
       screen.getByRole("button", { name: "Replay from the first picture" })
@@ -304,7 +306,9 @@ describe("the data", () => {
 
   it("says the Holy Spirit is God, a person, not a force", () => {
     const film = filmFile("holy-spirit");
-    expect(film.line.older).toContain("The Holy Spirit is God, a person, not a force.");
+    expect(film.line.older).toContain(
+      "The Holy Spirit is God, a person, not a force."
+    );
     expect(film.line.younger).toContain("He is a person, not a force.");
   });
 });
@@ -326,10 +330,7 @@ describe("the pages", () => {
     const sec = await screen.findByRole("region", { name: "Watch and learn" });
     for (const f of READY)
       expect(
-        within(sec)
-          .getByText(f.title)
-          .closest("a")
-          ?.getAttribute("href")
+        within(sec).getByText(f.title).closest("a")?.getAttribute("href")
       ).toBe(`/study/explorer/watch/${f.slug}`);
     for (const f of COMING) {
       const el = within(sec).getByText(f.title);
@@ -340,7 +341,9 @@ describe("the pages", () => {
   it("a stop links the films that belong to it", async () => {
     renderAt("/study/explorer/creation");
     const link = await screen.findByRole("link", { name: /Who made God\?/ });
-    expect(link.getAttribute("href")).toBe("/study/explorer/watch/who-made-god");
+    expect(link.getAttribute("href")).toBe(
+      "/study/explorer/watch/who-made-god"
+    );
     expect(
       screen.getByRole("link", { name: /The whole Bible in two minutes/ })
     ).toBeTruthy();
@@ -349,15 +352,22 @@ describe("the pages", () => {
   it("a film's page has the player, Think about it, and the chapters", async () => {
     renderAt("/study/explorer/watch/holy-spirit");
     expect(
-      await screen.findByRole("heading", { level: 1, name: "The Holy Spirit through the Bible" })
+      await screen.findByRole("heading", {
+        level: 1,
+        name: "The Holy Spirit through the Bible",
+      })
     ).toBeTruthy();
     expect(screen.getByRole("region", { name: /Moving picture/ })).toBeTruthy();
-    expect(screen.getByRole("heading", { name: "Think about it" })).toBeTruthy();
-    expect(screen.getByRole("link", { name: /Acts 8/ }).getAttribute("href")).toBe(
-      "/study/bible/acts/8"
-    );
+    expect(
+      screen.getByRole("heading", { name: "Think about it" })
+    ).toBeTruthy();
+    expect(
+      screen.getByRole("link", { name: /Acts 8/ }).getAttribute("href")
+    ).toBe("/study/bible/acts/8");
     await waitFor(() =>
-      expect(screen.getByRole("link", { name: /Next to watch: Who made God\?/ })).toBeTruthy()
+      expect(
+        screen.getByRole("link", { name: /Next to watch: Who made God\?/ })
+      ).toBeTruthy()
     );
   });
 });

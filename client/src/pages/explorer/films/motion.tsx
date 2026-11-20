@@ -27,8 +27,13 @@ export interface FilmDrawing {
 export const shown = (frame: number, on: number, off?: number) =>
   frame >= on && (off === undefined || frame < off);
 
-const delayStyle = (delay?: number, style?: CSSProperties): CSSProperties | undefined =>
-  delay || style ? { ...style, ...(delay ? { transitionDelay: `${delay}ms` } : {}) } : undefined;
+const delayStyle = (
+  delay?: number,
+  style?: CSSProperties
+): CSSProperties | undefined =>
+  delay || style
+    ? { ...style, ...(delay ? { transitionDelay: `${delay}ms` } : {}) }
+    : undefined;
 
 /** A line that draws itself from its start to its end. */
 export function Draw({

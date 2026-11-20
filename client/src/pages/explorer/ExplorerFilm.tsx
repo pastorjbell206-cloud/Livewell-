@@ -50,23 +50,24 @@ import "./films/film.css";
  * page's head is plain text (scripts/prerender-heads.mjs writes the same
  * from the film's file; explorer.test.tsx holds the two together).
  */
-export const FILM_META: Record<string, { title: string; description: string }> = {
-  "bible-two-minutes": {
-    title: "The whole Bible in two minutes: Bible Explorer",
-    description:
-      "The whole story of the Bible, from creation to the new creation, drawn as one road in nine pictures.",
-  },
-  "holy-spirit": {
-    title: "The Holy Spirit through the Bible: Bible Explorer",
-    description:
-      "The Holy Spirit from the first page of the Bible to the last, in eight moving pictures: the waters, the judges and kings, the promise, the Jordan, Pentecost, God's temple, and the last invitation.",
-  },
-  "who-made-god": {
-    title: "Who made God?: Bible Explorer",
-    description:
-      "A child's honest question, taken seriously in six moving pictures: why anything is here at all, and why the Bible says God has no beginning.",
-  },
-};
+export const FILM_META: Record<string, { title: string; description: string }> =
+  {
+    "bible-two-minutes": {
+      title: "The whole Bible in two minutes: Bible Explorer",
+      description:
+        "The whole story of the Bible, from creation to the new creation, drawn as one road in nine pictures.",
+    },
+    "holy-spirit": {
+      title: "The Holy Spirit through the Bible: Bible Explorer",
+      description:
+        "The Holy Spirit from the first page of the Bible to the last, in eight moving pictures: the waters, the judges and kings, the promise, the Jordan, Pentecost, God's temple, and the last invitation.",
+    },
+    "who-made-god": {
+      title: "Who made God?: Bible Explorer",
+      description:
+        "A child's honest question, taken seriously in six moving pictures: why anything is here at all, and why the Bible says God has no beginning.",
+    },
+  };
 
 type Loaded = { film: Film; index: ExplorerIndex };
 
@@ -235,7 +236,10 @@ function FilmPage({
               <p className="ex-care">
                 <LifeBuoy size={18} strokeWidth={1.75} aria-hidden="true" />
                 <span>
-                  {film.care.replace(/ or look at Find Help\.$/, " or look at ")}
+                  {film.care.replace(
+                    / or look at Find Help\.$/,
+                    " or look at "
+                  )}
                   {/ or look at Find Help\.$/.test(film.care) ? (
                     <>
                       <Link href="/help" className="ex-link">

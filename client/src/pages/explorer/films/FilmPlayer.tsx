@@ -29,13 +29,7 @@ import {
   type KeyboardEvent,
 } from "react";
 import { Link } from "wouter";
-import {
-  ArrowLeft,
-  ArrowRight,
-  Pause,
-  Play,
-  RotateCcw,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, Pause, Play, RotateCcw } from "lucide-react";
 import { PlateSvg } from "@/components/art/PlateSvg";
 import { VerseRef } from "@/components/VerseRef";
 import { prefersReducedMotion } from "@/lib/motion";
@@ -208,9 +202,7 @@ export default function FilmPlayer({
           )}
           {i < 0 && (
             <div className="fp-poster">
-              <p className="fp-poster__kicker">
-                A moving picture in {n} parts
-              </p>
+              <p className="fp-poster__kicker">A moving picture in {n} parts</p>
               <p className="fp-poster__title">{title}</p>
             </div>
           )}
