@@ -11366,3 +11366,31 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Map: Sodom and Gomorrah at the Genesis and 2 Peter maps' point, as a region; Egypt beyond the frame | Map | 2-peter/intro.json `teaching.map`; genesis/intro.json `teaching.map` | Repository |
 
 Cut before publishing: a claim that the copies of verses 22-23 differ between two and three groups (not in the repository's notes).
+
+## The plain notes on Jude (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jude as Judah; brother of James and of Jesus (Mark 6:3; John 7:5); servant, not brother; called, loved, kept; threes | 1-2 | jude/1.json `historical`, `literary`; jude/intro.json `author` | Repository |
+| Isaiah 43:1; Jeremiah 31:3; Psalm 121:8 | 1-2 | BSB | BSB text |
+| Epagōnizomai only here; the faith a deposit; grace into licence; despotēs | 3-4 | jude/1.json `words` (G1864), `doctrines`, `christ` | Repository |
+| Jeremiah 6:14; Isaiah 5:20 | 3-4 | BSB | BSB text |
+| Verse 5 manuscripts; angels as Genesis 6 read in 1 Enoch; Seth and rulers; Sodom readings; no side; care line | 5-7 | jude/1.json `christ`, `cultural`; genesis/plain/6.json; genesis/plain/19.json; romans/plain/1.json (care line) | Repository, no side; care line word for word |
+| Numbers 14:11, 29; Genesis 6:2; Genesis 19:1, 24; Amos 4:11; Leviticus 18:22 | 5-7 | BSB | BSB text |
+| Dreamers; Michael and Moses (Origen; Assumption and Testament of Moses); Cain, Balaam, Korah as stock examples; love feasts; spilas; wandering stars and sailors | 8-13 | jude/1.json `historical`, `cultural`, `words` (G4694); jude/intro.json `setting` | Repository |
+| Quoting a tradition is not calling it Scripture (Acts 17:28; Titus 1:12; 2 Timothy 3:8) | 8-13; 14-16 | jude/1.json `hard` | Repository |
+| Genesis 4:5; Numbers 22:7; Numbers 16:1-2; Daniel 10:13; Zechariah 3:2; Deuteronomy 34:6; Ezekiel 34:2; Isaiah 57:20; Proverbs 25:14 | 8-13 | BSB | BSB text |
+| 1 Enoch 1:9; composed over the last centuries before Christ; Qumran fragments; Jerome; Tertullian; the readings; the Ethiopian Bible | 14-16 | jude/1.json `historical`, `hard`; jude/intro.json `setting` | Repository |
+| Genesis 5:24; Deuteronomy 33:2; Zechariah 14:5; Numbers 14:29 | 14-16 | BSB | BSB text |
+| Verse 17 as a reason some give for a later date | 17-23 | jude/intro.json `author` | Repository |
+| Three groups to show mercy to; God keeps and believers keep | 17-23 | jude/1.json `literary`; jude/intro.json `themes` | Repository |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 17-23 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Zechariah 3:2, 4; Psalm 73:28 | 17-23 | BSB | BSB text |
+| The doxology prayed in churches since | 24-25 | jude/intro.json `overview` | Repository |
+| Psalm 121:3; Psalm 66:9; Isaiah 43:11; Psalm 16:11 | 24-25 | BSB | BSB text |
+
+Cut before publishing: a reading of verse 17 as simply the apostles' teaching (not in the repository's notes).
+
+## Jude complete (2026-11-20)
