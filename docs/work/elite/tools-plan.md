@@ -382,3 +382,30 @@ The Misused Bible Verses heading (its literal escape) now shows the tool's one n
 ### Not done in this run
 
 No tool besides the Wisdom Finder moved into the shell. No retirements, redirects, menu or catalogue changes. The 196 topics keep their five verses and old prose. The deep layer is not yet in the site search index (the topic pages are). The Westminster, Baptist Faith and Message, Methodist and Catholic Catechism references in the ledger were cited from knowledge and not opened.
+
+---
+
+## 13. Build 2, as built (2026-11-20): batch 1 of the other 196
+
+Fourteen topics written in full to the standard of the first twelve, one commit each; 26 of 208 are now written in full. Ledger rows for every new claim: `docs/work/elite/tools-ledger.md`.
+
+- **The rest of the misread layer:** money, parenting-struggles, sexual-purity, justice-and-the-poor, submitting-to-leaders, rest-and-sabbath, gossip-and-the-tongue. Every topic the Misused Bible Verses tool covered (`MISREAD_REQUIRED` in `validate-wisdom.mjs`) now carries the layer, so that tool is redundant whenever James agrees to retire it (not done; no tool was retired or re-listed).
+- **The gravest subjects, in the plan's order:** suicidal-thoughts, depression, despair-and-hope, self-hatred, toxic-relationships, addiction, alcohol-and-drinking. Pornography, the last of batch 1, is the first topic of the next run.
+- Each: ten or eleven passages with "where it stands" checked against the chapter's Study Bible notes; the often-misread layer where it applies (all but suicidal-thoughts and despair-and-hope, where none fits safely); the whole Bible's wisdom in four paragraphs; where Christians differ with shared ground first (left out on suicidal-thoughts, despair-and-hope and self-hatred, where no real division between churches bears on the reader's need); a question to sit with; a psalm to pray; care lines word for word from the plain notes on every heavy subject; the not-advice line on money (money), law (toxic-relationships) and medicine (suicidal-thoughts, depression, despair-and-hope, addiction, alcohol-and-drinking).
+- The heavy pages open their whole-Bible section with the path to help, name no means of self-harm, never validate despair, and say plainly that abuse is never the victim's fault and that submission language never applies to abuse.
+
+### Matching
+
+Twenty new sentences (`holdout2` in `wisdom-match.fixture.json`) were written and committed before `matching.json` was touched. Before: cases 100% / 100%, holdout 84.2% / 100%, holdout2 65.0% / 80.0% (top 1 / top 3). Four phrases were then added for known misses ("tempted to cheat", "friend lied about me", "retired and feel useless", "boss humiliated me"). After: cases 100% / 100%, holdout 100% / 100% (three of its sentences were the ones tuned for, so it is no longer clean), holdout2 65.0% / 80.0% (not tuned for; the honest number). "Will my dog go to heaven" lands on Heaven and Eternity; the real answer is the Find Help page "Will I see my pet again?", which the finder cannot point to. `wisdom-match.test.ts` reports holdout2 and holds floors under it.
+
+### Search
+
+`scripts/build-search-index.mjs` now indexes each written topic's often-misread verses (found by the saying people quote: "spare the rod", "touch not my anointed"), what the whole Bible says, and where Christians differ, each opening its own section of the topic page; the page scrolls to the section once loaded.
+
+### The two "Caring for Aging Parents"
+
+caring-for-aging-parents and caregiving still share one name (James to decide: merge or rename). The first no longer lists the second as a related subject, which showed as a link with the page's own name. Both still appear under the same name in the finder's Family area and A to Z list, each with its own first line, and both pages carry the same title in search results and the browser tab.
+
+### Not done in this run
+
+Pornography and batches 2 to 14 (182 topics). The holdout2 misses (control in a dating relationship, sex outside marriage, gossip about a coworker, care for the homeless, how much to give, infertility first) were left untuned so the number stays honest.
