@@ -11861,3 +11861,28 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Jeremiah 51:13; Proverbs 21:1 | 15-18 | BSB | BSB text |
 
 Cut before publishing: the historicists' particular identification of Babylon and the name of the church office the guide gives (kept in general terms, as in chapter 13); ‘the prophets described the fall of proud cities in the same language of stripping and burning’ (no repository source); a reading of the ten kings as client kings or provincial rulers (no repository source; replaced by the readings the Daniel 7 notes give).
+
+## The plain notes on Revelation 18 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The fall told through voices, no battle; announced at 14:8, carried out at 16:19 | 1-3 | revelation/18.json `story`, `literary` | Repository |
+| Isaiah 21:9's cry; kings, nations and merchants; emporos, a wholesale trader by sea; economic power | 1-3 | revelation/18.json `cultural`, `words` (G1713) | Repository |
+| Isaiah 21:9; Jeremiah 51:7 | 1-3 | BSB | BSB text |
+| ‘Come out of her’ (Jeremiah 51:45); separating from sins, not necessarily leaving a place; guilds and banquets; Thyatira and Laodicea | 4-8 | revelation/18.json `doctrines` (holiness); revelation/plain/13.json (16-18) | Repository |
+| ‘I sit as queen’ (Isaiah 47:8); strēniaō; God remembers | 4-8 | revelation/18.json `cultural`, `words` (G4763), `doctrines` (judgment) | Repository |
+| ‘Pay her back double’: spoken to heaven's agents, not Christians (Romans 12:19); double as full payment (Jeremiah 16:18); readers differ; the victims vindicated | 4-8 | revelation/18.json `hard` | Repository, no side |
+| Jeremiah 51:45; Isaiah 47:8; Jeremiah 16:18; Romans 12:19 | 4-8 | BSB | BSB text |
+| Three laments as a chorus, ‘Woe, woe’ and ‘in a single hour’; the funeral song; ouai; standing far off; grieving lost profit, not people | 9-19 | revelation/18.json `literary`, `cultural`, `words` (G3759) | Repository |
+| Ostia; grain, spices, silk, ivory, marble; citron wood; Laodicea and Ephesus in the trade; slaves as cargo; Ezekiel 27:13 | 9-19 | revelation/18.json `historical` | Repository |
+| Dust on the head; Ezekiel's lament over Tyre (26 to 27) | 9-19 | revelation/18.json `cultural` | Repository |
+| Rome not destroyed in an hour; the fire of AD 64; AD 410 and AD 455; four readings; no side; nothing of our day | 9-19 | revelation/18.json `historical` | Repository, no side |
+| Care line ‘A word for anyone who is being held, owned or forced to work today ...’ | 9-19 | 1-corinthians/plain/7.json (17-24 `hard`) | Word for word |
+| Ezekiel 26:17; 27:30; 27:13 | 9-19 | BSB | BSB text |
+| The millstone (Jeremiah 51:63-64); the silent city and the sounds of any town (Jeremiah 25:10); ‘again’ as a bell; all who had been slain | 20-24 | revelation/18.json `cultural`, `literary`, `doctrines` (judgment) | Repository |
+| Rejoicing over justice, not suffering; the oppressor's fall as rescue; the city of chapters 21 and 22 whose glory costs no one their life | 20-24 | revelation/18.json `hard`, `story` | Repository |
+| Jeremiah 51:63-64; 25:10 | 20-24 | BSB | BSB text |
+
+Cut before publishing: ‘the prophets often pictured a fallen city given over to wild animals’ (no repository source given for it here).
