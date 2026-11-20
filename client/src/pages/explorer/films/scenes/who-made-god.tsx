@@ -88,7 +88,7 @@ const TRACE: [number, number][] = [
 const RAYS = Array.from({ length: 7 }, (_, n) => {
   const top = 352 + n * 16;
   const foot = 196 + n * 68;
-  return `M${top - 3},0L${top + 3},0L${foot + 7},212L${foot - 7},212Z`;
+  return `M${top - 1},0L${top + 1},0L${foot + 2.5},208L${foot - 2.5},208Z`;
 }).join("");
 
 const film: FilmDrawing = {
@@ -104,14 +104,14 @@ const film: FilmDrawing = {
         <Fade frame={frame} on={3}>
           <path
             className="pl-paper"
-            d="M300,0H500L690,214C730,250 720,320 650,336H150C80,320 70,250 110,214Z"
+            d="M250,0H550C600,110 770,200 720,290C680,350 120,350 80,290C30,200 200,110 250,0Z"
           />
         </Fade>
         <Fade frame={frame} on={3} off={5}>
           <path className="pl-m" d={RAYS} />
         </Fade>
-        <Draw frame={frame} on={4} off={5} className="fp-gold" delay={400} d="M400,196H0" />
-        <Draw frame={frame} on={4} off={5} className="fp-gold" delay={400} d="M400,196H800" />
+        <Draw frame={frame} on={4} off={5} className="fp-gold" delay={400} d="M400,344H0" />
+        <Draw frame={frame} on={4} off={5} className="fp-gold" delay={400} d="M400,344H800" />
 
         {/* 4 on: the mountains rise under a light already there. */}
         <Fade frame={frame} on={4} from="up">
@@ -180,12 +180,14 @@ const film: FilmDrawing = {
 
         {/* 5: the bush that burned and was not burned up. */}
         <Fade frame={frame} on={5} from="up" delay={300}>
-          <path className="pl-l" d="M400,476V430M400,452L376,426M400,446L426,420M388,436L370,442M412,432L432,438" />
+          <path className="pl-l" d="M300,482H500" />
           <Shape
-            d="M352,440C340,418 356,398 376,404C380,386 404,380 414,394C432,384 452,402 446,420C460,428 456,446 440,448H360C350,448 346,444 352,440Z"
+            d="M330,482C318,462 330,440 352,444C356,426 378,420 392,432C404,418 428,420 436,436C456,432 474,450 468,468C474,474 472,482 466,482Z"
             tone="g"
           />
-          <Flame x={400} y={390} s={1.5} gold />
+          <path fill={h.h2} d="M400,432C412,420 428,420 436,436C456,432 474,450 468,468C474,474 472,482 466,482H400Z" />
+          <path className="pl-l" d="M400,482V452M400,466L380,448M400,462L422,444" />
+          <Flame x={400} y={424} s={2.1} gold />
         </Fade>
       </>
     );
