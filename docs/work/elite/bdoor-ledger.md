@@ -10575,3 +10575,31 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Once at the end of the ages; Isaiah 53:12; Ecclesiastes 12:14 | 23-28 | verses/9.json (25-26, 27-28); BSB | Repository; BSB text |
 | Verse 27 rules out repeated lives (‘many readers’); intermediate state views pointed to | 23-28 | verses/9.json (27-28 `theology`); 2-timothy/plain/4.json (6-8) | Repository |
 | Grief care line | 23-28 | 2-timothy/plain/1.json (8-12) | Word for word |
+
+## The plain notes on Hebrews 10 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shadow and substance (eikōn); repetition shows inadequacy; anamnēsis the word of Luke 22:19 | 1-4 | verses/10.json (1, 2-3) | Repository |
+| Isaiah 1:11; Hosea 6:6; 1 Samuel 15:22; Leviticus 4:20 | 1-4 | BSB | BSB text |
+| Old-covenant saints forgiven on the credit of the coming sacrifice (9:15) | 1-4 | verses/9.json (15 `theology`) | Repository |
+| Misuse named and rejected; Acts 2:22-28 pointer | 1-4 | acts/plain/2.json (22-28) | Repository wording |
+| Psalm 40 as Christ's words at the incarnation; sacrifice versus obedience; full name ‘Jesus Christ’ rare | 5-10 | verses/10.json (5, 6-7, 10) | Repository |
+| Psalm 40:6-8 BSB; Hebrew ‘ears’, Greek ‘a body’; how it arose unknown; readings | 5-10 | psalms/plain/40.json (6-10 `hard`); chapter deep note `literary` | Repository; BSB text |
+| No seat for priests; perielein; Psalm 110:1; ‘being sanctified’; Jeremiah 31:33-34 shortened; verse 18 a verdict | 11-18 | Chapter deep note `cultural`; verses/10.json (11-12, 13-14, 15-17, 18) | Repository; BSB |
+| One Greek sentence (19-25); three calls; paroxusmos; some had stopped meeting, perhaps fear or fatigue; ‘the Day’ | 19-25 | verses/10.json (19-20, 24-25); chapter deep note `cultural`, `literary` | Repository |
+| ‘Bodies washed’ heard of baptism by many | 19-25 | verses/10.json (21-22, 23 ‘perhaps the confession made at baptism’) | Repository (‘many readers’) |
+| Exodus 29:4; Ezekiel 36:25; Psalm 133:1; 40:9; ‘a great priest’ the Greek OT phrase for the high priest | 19-25 | BSB; verses/10.json (21-22) | BSB text; repository |
+| Care line on controlling leaders or churches | 19-25 | 2-corinthians/plain/11.json (16-21) | Word for word |
+| ‘Deliberately’ first; present participle a continuing course; ‘we’; lesser to greater | 26-31 | verses/10.json (26-27, 28-29) | Repository |
+| Deuteronomy 17:6 (apostasy case); Isaiah 26:11 (Greek wording fused); Deuteronomy 32:35-36 (Hebrew ‘vindicate’, Greek ‘judge’); Romans 12:19 | 26-31 | verses/10.json `ot` (26-27, 28-29, 30-31); BSB | Repository; BSB text |
+| Numbers 15:27-31 unintentional and defiant sins | 26-31 | Chapter deep note `words` (hekousios); BSB | Repository; BSB text |
+| Readings of 26-31 (Reformed outward setting apart; Arminian and Wesleyan; means; Catholic and Orthodox) | 26-31 | Chapter deep note `hard` | Repository, no side (Free Grace view and Owen omitted) |
+| 1 John 1:9 | 26-31 | BSB | BSB text |
+| Care line ‘If you are afraid that you have fallen away ...’ | 26-31 | galatians/plain/5.json (1-6) | Word for word |
+| Theatrizomenoi; prisoners fed by friends; confiscation by law or mob; Claudius about AD 49 and Acts 18:2 (for those placing readers in Rome) | 32-39 | verses/10.json (32-34); chapter deep note `historical`, `cultural` | Repository (Suetonius not named) |
+| Apoballō, throwing away a shield; hupomonē | 32-39 | verses/10.json (35-36) | Repository |
+| Isaiah 26:20; Habakkuk 2:3-4 BSB; Greek differences (coming one, shrinking back, order); Romans 1:17 | 32-39 | verses/10.json (37-38 `ot`); BSB | Repository; BSB text |
+| Acts 25:11; care lines on suffering and danger | 32-39 | BSB; 2-timothy intro `shame`; 1-thessalonians/plain/3.json (1-5) | BSB text; word for word |
