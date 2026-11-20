@@ -213,5 +213,10 @@
       "question": "Did scribes change the text to make Jesus look more divine?",
       "live": false
     }
-  ]
+  ],
+  "answers": {
+    "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
+    "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
+    "how-can-god-be-three-and-one": "How can God be three and one?"
+  }
 }

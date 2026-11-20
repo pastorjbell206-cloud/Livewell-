@@ -243,7 +243,9 @@ function scan(rel, abs = path.join(ROOT, rel)) {
     return;
   }
   if (!/\.(tsx?|json|txt|xml|md|html|mjs)$/.test(rel) || OWN.some((re) => re.test(rel))) return;
-  const m = pendingRe && fs.readFileSync(abs, "utf8").match(pendingRe);
+  // The sitemap and llms.txt write whole addresses; read them as paths.
+  const text = fs.readFileSync(abs, "utf8").replace(/https?:\/\/(?:www\.)?livewellbyjamesbell\.co(?=\/)/g, " ");
+  const m = pendingRe && text.match(pendingRe);
   if (m) fail(rel, `links the pending page ${m[1]}`);
 }
 if (pendingRe && !process.env.QUESTIONS_DIR) {
