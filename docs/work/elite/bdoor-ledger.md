@@ -10628,3 +10628,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Triumph to suffering: faith not measured by success | 32-40 | Chapter deep note `literary` | Repository |
 | Prosperity teaching named an error | 32-40 | CLAUDE.md guardrails; 1-timothy/plain/6.json | Repository |
 | Care line on prayers for rescue not answered; Daniel 3:17-18 | 32-40 | acts/plain/12.json (1-5) | Word for word (‘The church surely prayed for James too’ omitted) |
+
+## The plain notes on Hebrews 12 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Games across the Roman world; runners stripped weights; agōn; witnesses as those who finished | 1-3 | Chapter deep note `cultural` | Repository |
+| Archēgos and teleiōtēs; hupomonē | 1-3 | Chapter deep note `words` | Repository |
+| Crucifixion the death Rome kept for slaves and rebels | 1-3 | philippians/intro.json teaching (‘The song of Christ’) | Repository wording |
+| Isaiah 40:31; 53:3; Psalm 22:6; Psalm 110:1 | 1-3 | BSB | BSB text |
+| Not yet shed blood (12:4); paideia the whole upbringing; pedagogy; nothos no inheritance claim | 4-11 | Chapter deep note `historical`, `cultural`, `words` | Repository |
+| Proverbs 3:11-12 BSB; Hebrews' last line follows the Greek (‘every son He receives’) | 4-11 | Chapter deep note `historical` (Greek OT); BSB | Repository; BSB text |
+| Not every pain a penalty; Job's friends; John 9:3; not to stay in harm's way; human fathers ‘as they thought best’ | 4-11 | Chapter deep note `hard`; wisdom/entry/suffering.json | Repository |
+| Care lines: sickness and faith (2 Corinthians 12 form); child abuse a crime (Colossians 3 form); ‘Father’ a hard word (Romans 8 form) | 4-11 | 2-corinthians/plain/12.json (7-10); colossians/plain/3.json (20-21); romans/plain/8.json (12-17) | Word for word (‘this verse’ to ‘this passage’) |
+| Isaiah 35:3; Proverbs 4:26; Deuteronomy 29:18 | 12-17 | Chapter deep note `historical`; BSB | BSB text |
+| Esau traded lasting for immediate; Genesis 25:34; 27:38; 33:4 | 12-17 | Chapter deep note `cultural`; BSB | Repository; BSB text |
+| Two readings of ‘no ground for repentance’ | 12-17 | Chapter deep note `hard` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | 12-17; 25-29 | galatians/plain/5.json (1-6) | Word for word |
+| Sinai sources: Exodus 19:12, 16; Deuteronomy 5:25; Moses' fear from Deuteronomy 9:19 | 18-24 | Chapter deep note `historical`; BSB | Repository; BSB text |
+| Two long sentences ‘you have not come’ / ‘you have come’; lesser to greater | 18-24; 25-29 | Chapter deep note `literary` | Repository |
+| Psalm 48:2; Genesis 4:10 | 18-24 | BSB | BSB text |
+| Misuse named and rejected; Acts 2:22-28 pointer | 18-24 | acts/plain/2.json (22-28) | Repository wording |
+| Haggai 2:6 (Hebrews' wording differs, the writer usually following the Greek); Deuteronomy 4:24 | 25-29 | Chapter deep note `historical`; BSB | Repository; BSB text |
+| Asaleutos, unshakable | 25-29 | Chapter deep note `words` | Repository |
