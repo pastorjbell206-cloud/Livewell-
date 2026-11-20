@@ -8641,3 +8641,24 @@ Two searches. Scripture is the BSB in the repository, matched by the strict chec
 
 Cut: the deep note's "synagogue prayers that open with blessing God" (not checked);
 the riot named as fact.
+
+## The plain notes on 2 Corinthians 2 (2026-11-20)
+
+Three searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Painful visit not in Acts; "third time" (13:1); the tearful letter lost, or part in 10 to 13, or (a few) 1 Corinthians; no side | 1-4 | BSB; book page ledger | Ledger |
+| Jeremiah 9:1; Leviticus 19:17-18; Proverbs 27:6; Acts 20:31 | 1-4 | BSB | BSB text |
+| The offender: the man of 1 Corinthians 5 (older view) or one who wronged Paul at the painful visit (many today); no side | 5-11 | Deep notes on 2 and 7 | Repository; stated as views |
+| ‘Overwhelmed’ = katapinō, swallow; the same verb at 1 Corinthians 15:54 and 5:4 | 5-11 | Greek text (G2666) | Script over the repository's Greek |
+| Charizomai shares a root with charis | 5-11 | Deep note `words` | Repository |
+| Psalm 130:3-4; Micah 7:18; Genesis 50:17, 21; Matthew 18:22; Luke 17:3 | 5-11 | BSB | BSB text |
+| Safety lines by pointer to the 1 Corinthians 5:1-5 note (discipline never to silence the harmed or protect the harmer; crimes to the police); forgiveness not trust restored; Find Help | 5-11 | Repository | Repository wording |
+| Troas the crossing to Macedonia (Acts 16:8-11) | 12-17 | BSB | BSB text |
+| Roman triumph: chariot to the temple of Jupiter on the Capitol; soldiers, spoils, captives; some captives, often enemy leaders, killed afterwards (how often debated, so "some"); incense along the way | 12-17 | Reference works | Search: en.wikipedia.org "Roman triumph"; britannica.com "triumph"; penelope.uchicago.edu (Smith, Triumphus); strategypage.com (selective executions) |
+| Thriambeuō: captives (many) or members of the procession; the aroma from the triumph's incense or the sacrifices | 12-17 | Commentaries | Search: openbible.com and biblehub.com commentaries on 2:14; samstorms.org; Biblica 88 (2007) Hock. Two readings, no side; the causative reading left out |
+| Kapēleuō from kapēlos, a petty trader, often of wine, with a name for adulterating goods; teachers for pay | 12-17 | Lexicons (Thayer; Trench, Synonyms 62) | Search: biblehub.com Strong's 2585; modernliteralversion.org Trench 62. The Septuagint wording of Isaiah 1:22 not claimed; the BSB's Isaiah 1:22 quoted |
+| Exodus 29:18; Genesis 8:21; Ezekiel 20:41; Deuteronomy 30:15; Exodus 4:10; Isaiah 1:22 | 12-17 | BSB | BSB text |
+
+Cut: Titus as the bearer of the tearful letter stated as fact; prisoners "executed at the end" as a rule.
