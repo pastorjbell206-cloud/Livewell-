@@ -1,12 +1,15 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import InnerHead from "@/components/art/InnerHead";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { useProgress } from "@/hooks/useProgress";
 import { ARGUMENT_CASES, caseBySlug, type ArgumentCase } from "@/data/argumentCases";
 import { trackCaseStart, trackObjection, trackCaseComplete } from "@/lib/telemetry";
+import { toolById } from "@/lib/toolsList";
+import { ProgressLine, QuestionCard, ResultActions, ResultSection, ToolHead } from "@/components/tool-shell";
+import "./test-the-case.css";
 
 /**
  * Test the Case (/tools/test-the-case) is the "argued with, not preached at"
@@ -15,6 +18,15 @@ import { trackCaseStart, trackObjection, trackCaseComplete } from "@/lib/telemet
  * including what the move does not prove. Progress persists via useProgress so
  * a reader can leave and come back where they stopped. Unpublished cases show
  * an honest "In progress" and never dead-end.
+ *
+ * On the tool shell (2026-11-20): ToolHead with the tool's one name, the case
+ * picker as a QuestionCard, ProgressLine ("Move 2 of 6", Back, and the site's
+ * sentence when the browser will not save), ResultSection for where the case
+ * ends, ResultActions (Print, Start over with a confirm, Send to my phone).
+ * The place is still kept by useProgress under lw-test-the-case, the key it
+ * has always used and the one My Library reads (lib/myProgress.ts). Every
+ * case, move, objection, answer and closing line is unchanged
+ * (data/argumentCases.ts), and so is the logic below that walks them.
  */
 const PUBLISHED = ARGUMENT_CASES.filter((c) => c.published);
 const DEFAULT_CASE: ArgumentCase = PUBLISHED[0] ?? ARGUMENT_CASES[0];
@@ -26,16 +38,17 @@ function initialSlug(): string {
   return c && c.published ? c.slug : DEFAULT_CASE.slug;
 }
 
-const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
-
 export default function TestTheCase() {
+  const tool = toolById("test-the-case");
   const [slug, setSlug] = useState<string>(() => initialSlug());
   const active = caseBySlug(slug) ?? DEFAULT_CASE;
-  const { done, toggle, reset } = useProgress("lw-test-the-case");
+  const { done, toggle, persisted } = useProgress("lw-test-the-case");
 
   const keyFor = (stepId: string) => `${active.slug}:${stepId}`;
   const completed = useMemo(
     () => active.steps.filter((s) => done[keyFor(s.id)]).length,
+    // keyFor reads only `active`, which is listed (unchanged from before the move).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [active, done]
   );
 
@@ -96,21 +109,20 @@ export default function TestTheCase() {
     setOpenObjection(null);
   }
 
-  // minHeight keeps every control at the 44px tap target Apple and Google both
-  // specify; inline-flex centring keeps the label optically centred once the
-  // button is taller than its text.
-  const btn = {
-    fontFamily: "var(--U)",
-    fontSize: "13px",
-    fontWeight: 600,
-    borderRadius: "var(--radius-sm)",
-    cursor: "pointer",
-    padding: "10px 18px",
-    minHeight: "44px",
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-  } as const;
+  // After a move, the move's text takes focus, so a keyboard or screen reader
+  // user starts the new move at its top; not on a fresh load.
+  const moveRef = useRef<HTMLHeadingElement>(null);
+  const firstRender = useRef(true);
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    const h = moveRef.current ?? document.getElementById("ttc-end-h");
+    if (!h) return;
+    h.scrollIntoView?.({ block: "start" });
+    h.focus({ preventScroll: true });
+  }, [stepIdx, finished, slug]);
 
   return (
     <Layout>
@@ -120,102 +132,115 @@ export default function TestTheCase() {
         url="https://www.livewellbyjamesbell.co/tools/test-the-case"
       />
 
-      <InnerHead path="/tools/test-the-case" title={active.title} line={<>{active.intro}</>} plate="lantern" />
+      <ToolHead
+        path="/tools/test-the-case"
+        title={tool.name}
+        line={<>{active.intro}</>}
+        time={`About ${tool.time}`}
+        keeps="Where you stopped in each case, so you can leave and come back to it. It stays in this browser."
+        plate="lantern"
+      />
 
       {/* CASE PICKER */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-4)" }}>
-        <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "10px", alignItems: "center" }}>
-          <span style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink-muted)", marginRight: "4px" }}>The cases</span>
-          {ARGUMENT_CASES.map((c) =>
-            c.published ? (
-              <button key={c.slug} type="button" onClick={() => switchCase(c)} aria-pressed={c.slug === active.slug}
-                style={{ ...btn, background: c.slug === active.slug ? "var(--ink)" : "var(--card)", color: c.slug === active.slug ? "var(--bone)" : "var(--ink)", border: "1px solid var(--border)" }}>
-                {c.title}
-              </button>
-            ) : (
-              <span key={c.slug} title="This case is being written"
-                style={{ ...btn, background: "transparent", color: "var(--ink-muted)", border: "1px dashed var(--border)", cursor: "default" }}>
-                {c.title} · In progress
-              </span>
-            )
+      <section className="ts-band ts-band--warm ttc-pick no-print" aria-label="The cases">
+        <div className="ts-col">
+          <QuestionCard
+            question="The cases"
+            options={PUBLISHED.map((c) => ({ value: c.slug, label: c.title }))}
+            value={active.slug}
+            onChange={(v) => {
+              const next = caseBySlug(v);
+              if (next) switchCase(next);
+            }}
+            columns={2}
+          />
+          {ARGUMENT_CASES.some((c) => !c.published) && (
+            <p className="ttc-coming">
+              Being written:{" "}
+              {ARGUMENT_CASES.filter((c) => !c.published)
+                .map((c) => `${c.title} · In progress`)
+                .join("; ")}
+            </p>
           )}
         </div>
       </section>
 
       {/* THE STEP-THROUGH */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-7)" }}>
-        <div style={wrap}>
+      <section className="ts-band ttc-case" aria-labelledby="ttc-case-h">
+        <div className="ts-col">
+          <h2 id="ttc-case-h" className="ts-r__title">
+            {active.title}
+          </h2>
           {finished ? (
-            <div>
-              <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Where the case ends</div>
-              <p style={{ fontFamily: "var(--F)", fontSize: "clamp(20px, 2.6vw, 26px)", lineHeight: 1.5, color: "var(--ink)", marginBottom: "28px", maxWidth: "60ch" }}>
-                {active.close}
-              </p>
-              <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-                <button type="button" onClick={back} style={{ ...btn, background: "var(--card)", color: "var(--ink)", border: "1px solid var(--border)" }}>Back to the last step</button>
-                <button type="button" onClick={startOver} style={{ ...btn, background: "transparent", color: "var(--ink-muted)", border: "1px solid var(--border)" }}>Start this case over</button>
+            <ResultSection title="Where the case ends" id="ttc-end">
+              <p className="ttc-close">{active.close}</p>
+              <div className="ts-actions__row no-print">
+                <button type="button" onClick={back} className="btn btn--quiet ts-actions__btn">
+                  <ArrowLeft size={16} strokeWidth={1.75} aria-hidden="true" /> Back to the last step
+                </button>
               </div>
-              <div style={{ marginTop: "40px", paddingTop: "28px", borderTop: "1px solid var(--border)" }}>
-                <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "60ch", marginBottom: "16px" }}>
+              <div className="ttc-after">
+                <p>
                   No decision is required here, and none is being asked. If you want to keep going at your own pace, the Doubt and Faith essays take these questions apart one move at a time.
                 </p>
-                <Link href="/writing?track=doubt" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                <Link href="/writing?track=doubt" className="ttc-link">
                   Read the Doubt and Faith essays
                 </Link>
-                <div style={{ marginTop: "28px" }}>
+                <div className="no-print" style={{ marginTop: "28px" }}>
                   <NewsletterSignup variant="inline" source="test-the-case" audienceType="skeptic" title="The essays by email, through Substack" description="For the questions that do not fit on a web page. Leave your email here and finish on Substack. No altar call comes with it." />
                 </div>
               </div>
-            </div>
+              <ResultActions
+                title={tool.name}
+                summary={active.title}
+                onStartOver={startOver}
+                startOverClears="where you stopped in this case (other cases stay as they are)"
+              />
+            </ResultSection>
           ) : (
             <div>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "16px" }}>
-                <span aria-live="polite" style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard-text)" }}>
-                  Move {stepIdx + 1} of {active.steps.length}
-                </span>
-                {completed > 0 && (
-                  <button type="button" onClick={startOver} style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, color: "var(--ink-muted)", background: "none", border: "none", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "3px" }}>
-                    Start over
-                  </button>
-                )}
-              </div>
+              <ProgressLine step={stepIdx + 1} total={active.steps.length} unit="Move" onBack={back} saveFailed={!persisted} />
+              {completed > 0 && (
+                <button type="button" onClick={startOver} className="btn--text ttc-restart no-print">
+                  Start over
+                </button>
+              )}
 
-              <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)", marginBottom: "24px", maxWidth: "64ch" }}>
+              <h3 className="ttc-move" tabIndex={-1} ref={moveRef}>
+                <span className="sr-only">Move {stepIdx + 1}. </span>
                 {step.move}
-              </p>
+              </h3>
 
-              <div style={{ fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "10px" }}>
-                Not convinced? Push back.
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginBottom: "24px" }}>
+              <p className="ttc-push">Not convinced? Push back.</p>
+              <ul className="ttc-objections">
                 {step.objections.map((o, i) => {
                   const isOpen = openObjection === i;
                   return (
-                    <div key={i} style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", overflow: "hidden", background: "var(--card)" }}>
-                      <button type="button" onClick={() => toggleObjection(i)} aria-expanded={isOpen}
-                        style={{ width: "100%", textAlign: "left", padding: "14px var(--s-4)", background: "none", border: "none", cursor: "pointer", fontFamily: "var(--F)", fontSize: "17px", fontWeight: 500, color: isOpen ? "var(--mustard-text)" : "var(--ink)", lineHeight: 1.35 }}>
+                    <li key={i} className={`ttc-objection${isOpen ? " is-open" : ""}`}>
+                      <button type="button" onClick={() => toggleObjection(i)} aria-expanded={isOpen} aria-controls={`ttc-answer-${i}`} className="ttc-objection__q">
                         {o.label}
                       </button>
-                      {isOpen && (
-                        <p style={{ padding: "0 var(--s-4) 16px", margin: 0, fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink-muted)", borderTop: "1px solid var(--border)", paddingTop: "14px" }}>
-                          {o.response}
-                        </p>
-                      )}
-                    </div>
+                      <p id={`ttc-answer-${i}`} hidden={!isOpen} className="ttc-objection__a">
+                        {o.response}
+                      </p>
+                    </li>
                   );
                 })}
-              </div>
+              </ul>
 
-              <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", fontStyle: "italic", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px", marginBottom: "28px", maxWidth: "60ch" }}>
-                What this move does not settle: {step.grants}
-              </p>
+              <p className="ttc-grants">What this move does not settle: {step.grants}</p>
 
-              <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-                {stepIdx > 0 && (
-                  <button type="button" onClick={back} style={{ ...btn, background: "var(--card)", color: "var(--ink)", border: "1px solid var(--border)" }}>Back</button>
+              <div className="ts-nav no-print">
+                {stepIdx > 0 ? (
+                  <button type="button" onClick={back} className="btn--text">
+                    <ArrowLeft size={16} strokeWidth={1.75} aria-hidden="true" /> Back
+                  </button>
+                ) : (
+                  <span />
                 )}
-                <button type="button" onClick={advance} style={{ ...btn, background: "var(--ink)", color: "var(--bone)", border: "1px solid var(--ink)" }}>
+                <button type="button" onClick={advance} className="btn">
                   {isLast ? "See where it lands" : "That's fair, keep going"}
+                  <ArrowRight size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginLeft: 8 }} />
                 </button>
               </div>
             </div>

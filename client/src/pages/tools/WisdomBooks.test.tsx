@@ -3,7 +3,9 @@
  * theme's verses in book order opening to the verses around them, a chapter
  * under the Study Bible's outline, lines kept and chapters marked read kept
  * on the device, a page that opens where the reader left it, the storage
- * refusal sentence, and the teaching panel in the notes' own words.
+ * refusal sentence, and the teaching panel in the notes' own words. Then
+ * Ecclesiastes: its own themes, a chapter under its outline, its own saved
+ * place beside Proverbs', and how to read the book in the notes' own words.
  */
 import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
 import { render, screen, fireEvent, cleanup, within } from "@testing-library/react";
@@ -29,8 +31,8 @@ beforeEach(() => {
     "fetch",
     vi.fn(async (input: RequestInfo | URL) => {
       const url = String(input);
-      const m = /\/wisdom-books\/proverbs\/(.+\.json)$/.exec(url);
-      const file = m ? path.join(PUBLIC, "wisdom-books/proverbs", m[1]) : null;
+      const m = /\/wisdom-books\/(proverbs|ecclesiastes)\/(.+\.json)$/.exec(url);
+      const file = m ? path.join(PUBLIC, "wisdom-books", m[1], m[2]) : null;
       return file && fs.existsSync(file) ? new Response(fs.readFileSync(file, "utf8"), { status: 200 }) : new Response("{}", { status: 404 });
     }),
   );
@@ -104,5 +106,50 @@ describe("The Wisdom Books Explorer", () => {
     expect(screen.getByRole("heading", { name: notes.hard.q })).toBeInTheDocument();
     expect(screen.getByText("Do not answer a fool according to his folly, or you yourself will be like him.")).toBeInTheDocument();
     expect(screen.getByText("Answer a fool according to his folly, lest he become wise in his own eyes.")).toBeInTheDocument();
+  });
+});
+
+describe("Ecclesiastes in the Wisdom Books Explorer", () => {
+  it("reads Ecclesiastes by its own themes, with the introduction's theme word for word", async () => {
+    show();
+    fireEvent.click(await screen.findByRole("radio", { name: /^Ecclesiastes/ }));
+    expect(await screen.findByRole("group", { name: "How would you like to read Ecclesiastes?" })).toBeInTheDocument();
+    // No chapter a day for a book of twelve chapters.
+    expect(screen.queryByRole("radio", { name: /Today's chapter/ })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole("radio", { name: /By theme/ }));
+    fireEvent.click(await screen.findByRole("radio", { name: /^Futility: breath and vapor/ }));
+    expect(await screen.findByRole("heading", { name: "Futility: breath and vapor" })).toBeInTheDocument();
+    expect(screen.getByText(/From the Study Bible's introduction to Ecclesiastes: Hevel: breath, vapor, futility/)).toBeInTheDocument();
+    expect(await screen.findByRole("button", { name: /^Ecclesiastes 1:2\s*,\s*The verses around it$/ })).toBeInTheDocument();
+  });
+
+  it("lays a chapter out under its outline, and keeps its place apart from Proverbs'", async () => {
+    show();
+    fireEvent.click(await screen.findByRole("radio", { name: /^Ecclesiastes/ }));
+    fireEvent.click(await screen.findByRole("radio", { name: /Chapter by chapter/ }));
+    fireEvent.click(await screen.findByRole("button", { name: /^Ecclesiastes 3: A Time for Everything/ }));
+    expect(await screen.findByRole("heading", { name: "A Time for Everything, and Eternity in the Heart" })).toBeInTheDocument();
+    expect(screen.getByText("Ecclesiastes 3 of 12")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /^A time for everything/ })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("checkbox", { name: "I have read Ecclesiastes 3" }));
+    expect(JSON.parse(localStorage.getItem(`${KEY}-ecclesiastes`)!)).toMatchObject({ way: "chapter", chapter: 3, read: [3] });
+    expect(JSON.parse(localStorage.getItem(KEY)!)).toMatchObject({ book: "ecclesiastes", read: [] });
+    // Back to Proverbs: its own place, untouched.
+    fireEvent.click(screen.getByRole("radio", { name: /^Proverbs/ }));
+    expect(await screen.findByRole("group", { name: "How would you like to read Proverbs?" })).toBeInTheDocument();
+    expect(screen.queryByText(/chapters marked read/)).not.toBeInTheDocument();
+  });
+
+  it("teaches how to read Ecclesiastes in the notes' own words, each reading given", async () => {
+    localStorage.setItem(KEY, JSON.stringify({ book: "ecclesiastes", way: null, theme: null, chapter: 1, read: [], kept: [] }));
+    show();
+    expect(await screen.findByRole("heading", { name: "How to read Ecclesiastes" })).toBeInTheDocument();
+    for (const c of [1, 12]) {
+      const notes = JSON.parse(fs.readFileSync(path.join(PUBLIC, `bible/notes/ecclesiastes/${c}.json`), "utf8"));
+      expect(screen.getByRole("heading", { name: new RegExp(`^${notes.hard.q.replace(/[?()]/g, "\\$&")}`) })).toBeInTheDocument();
+      expect(screen.getByText(notes.hard.a.split("\n\n")[0])).toBeInTheDocument();
+    }
+    const intro = JSON.parse(fs.readFileSync(path.join(PUBLIC, "bible/notes/ecclesiastes/intro.json"), "utf8"));
+    expect(screen.getByText(intro.reading.split("\n\n")[1])).toBeInTheDocument();
   });
 });

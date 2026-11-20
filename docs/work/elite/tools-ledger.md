@@ -335,3 +335,208 @@ The Wisdom Books Explorer (`/tools/wisdom-books`) shows only three kinds of text
 | page, finder link | All 915 verses of Proverbs under twenty themes | counted by `scripts/validate-wisdom-books.mjs` from the BSB files |
 
 Nothing outside the repo was opened for this build.
+
+
+## Fifth build (2026-11-20): Pray the Psalms, Ecclesiastes, Spiritual Gifts and Test the Case on the shell
+
+Pray the Psalms shows four kinds of text: each psalm in the BSB, filled at build time; the Study Bible notes copied word for word and held so by `scripts/validate-pray-psalms.mjs` (each psalm's note title, summary and outline; the plain notes' care and ending paragraphs; four parts of the introduction); each kind label, given only with the note's own words as evidence, which the validator finds in the field named; and the sentences below, written for the page. Each psalm's line and guide was written from that psalm's Study Bible note (title, summary) and its plain note (each passage title and its "asks" paragraph), and agrees with them; the rows name the outside facts they lean on.
+
+| Where | Claim | Checked against |
+|---|---|---|
+| page, plan | The 150 psalms in a month, five a day, is the introduction suggestion; the split into morning and evening is this page's own, and said so | notes psalms/intro teaching "how-to-pray" ("Or read the 150 psalms in a month, five a day") |
+| page | Jews and Christians have prayed the Psalms daily; Jesus prayed words from them on the cross | intro teaching "in-a-minute" and "how-to-pray" (shown word for word on the page) |
+| kinds | Each kind label | the note words in each psalm's `src` or its kind group, checked by the validator |
+| Psalm 22 | Jesus prayed its first line from the cross | Mark 15:34 (BSB); plain 22 asks 1-11 |
+| Psalm 31 | Jesus prayed its fifth verse as he died | Luke 23:46 (BSB); plain 31 asks |
+| Psalm 3 | David fleeing his son | note psalms/3 summary (the heading) |
+| Psalm 34 | David pretending to be mad in an enemy city | plain 34 asks 1-10; the heading (BSB 34:1) |
+| Psalm 51 | After his sin with Bathsheba | note psalms/51 summary |
+| Psalm 57 | Hiding in a cave from Saul | note psalms/57 summary |
+| Psalm 63 | Christians have prayed it in the morning for centuries | plain 63 asks 1-5 |
+| Psalm 90 | A prayer headed with Moses' name | BSB 90:1 heading; intro author |
+| Psalm 102 | Headed for one who is afflicted | note psalms/102 historical; plain 102 asks |
+| Psalm 109 | Some read verses 6 to 19 as the enemies' curse | note psalms/109 historical ("Some interpreters, and some modern translations") |
+| Psalm 110 | The Old Testament text the New Testament quotes most often about Christ | intro keyChapters 110 |
+| Psalm 113 | The Hallel sung at the great festivals begins here | note psalms/113 story |
+| Psalm 119 | Twenty-two stanzas of eight verses, one for each letter | note psalms/119 summary and outline |
+| Psalm 137 | Exiles in Babylon | note psalms/137 summary and historical |
+| Psalm 88 | Never turns to trust; ends in darkness | note psalms/88 summary; plain 88 13-18 (shown word for word) |
+| Psalm 87 | Speaks of God's city, not any modern state or border | plain 87 asks |
+| Psalm 76 | Gives the victory to God and the lowly, not any modern army or nation | plain 76 asks |
+| Psalm 91 | Not a promise that no believer is harmed; never a reason to refuse a doctor | plain 91 hard 1-8 and 9-13 (both shown word for word) |
+| Psalm 1 | Line and guide | note psalms/1 title and summary; plain 1 1-3, 4-6 |
+| Psalm 2 | Line and guide | note psalms/2 title and summary; plain 2 1-3, 4-9, 10-12 |
+| Psalm 3 | Line and guide | note psalms/3 title and summary; plain 3 1-4, 5-8 |
+| Psalm 4 | Line and guide | note psalms/4 title and summary; plain 4 1-5, 6-8 |
+| Psalm 5 | Line and guide | note psalms/5 title and summary; plain 5 1-7, 8-12 |
+| Psalm 6 | Line and guide | note psalms/6 title and summary; plain 6 1-5, 6-10 |
+| Psalm 7 | Line and guide | note psalms/7 title and summary; plain 7 1-5, 6-11, 12-17 |
+| Psalm 8 | Line and guide | note psalms/8 title and summary; plain 8 1-2, 3-9 |
+| Psalm 9 | Line and guide | note psalms/9 title and summary; plain 9 1-12, 13-20 |
+| Psalm 10 | Line and guide | note psalms/10 title and summary; plain 10 1-11, 12-18 |
+| Psalm 11 | Line and guide | note psalms/11 title and summary; plain 11 1-7 |
+| Psalm 12 | Line and guide | note psalms/12 title and summary; plain 12 1-8 |
+| Psalm 13 | Line and guide | note psalms/13 title and summary; plain 13 1-6 |
+| Psalm 14 | Line and guide | note psalms/14 title and summary; plain 14 1-7 |
+| Psalm 15 | Line and guide | note psalms/15 title and summary; plain 15 1-5 |
+| Psalm 16 | Line and guide | note psalms/16 title and summary; plain 16 1-6, 7-11 |
+| Psalm 17 | Line and guide | note psalms/17 title and summary; plain 17 1-15 |
+| Psalm 18 | Line and guide | note psalms/18 title and summary; plain 18 1-19, 20-30, 31-50 |
+| Psalm 19 | Line and guide | note psalms/19 title and summary; plain 19 1-6, 7-14 |
+| Psalm 20 | Line and guide | note psalms/20 title and summary; plain 20 1-9 |
+| Psalm 21 | Line and guide | note psalms/21 title and summary; plain 21 1-13 |
+| Psalm 22 | Line and guide | note psalms/22 title and summary; plain 22 1-11, 12-21, 22-31 |
+| Psalm 23 | Line and guide | note psalms/23 title and summary; plain 23 1-4, 5-6 |
+| Psalm 24 | Line and guide | note psalms/24 title and summary; plain 24 1-6, 7-10 |
+| Psalm 25 | Line and guide | note psalms/25 title and summary; plain 25 1-22 |
+| Psalm 26 | Line and guide | note psalms/26 title and summary; plain 26 1-12 |
+| Psalm 27 | Line and guide | note psalms/27 title and summary; plain 27 1-6, 7-14 |
+| Psalm 28 | Line and guide | note psalms/28 title and summary; plain 28 1-9 |
+| Psalm 29 | Line and guide | note psalms/29 title and summary; plain 29 1-11 |
+| Psalm 30 | Line and guide | note psalms/30 title and summary; plain 30 1-12 |
+| Psalm 31 | Line and guide | note psalms/31 title and summary; plain 31 1-24 |
+| Psalm 32 | Line and guide | note psalms/32 title and summary; plain 32 1-5, 6-11 |
+| Psalm 33 | Line and guide | note psalms/33 title and summary; plain 33 1-22 |
+| Psalm 34 | Line and guide | note psalms/34 title and summary; plain 34 1-10, 11-22 |
+| Psalm 35 | Line and guide | note psalms/35 title and summary; plain 35 1-28 |
+| Psalm 36 | Line and guide | note psalms/36 title and summary; plain 36 1-12 |
+| Psalm 37 | Line and guide | note psalms/37 title and summary; plain 37 1-11, 12-26, 27-40 |
+| Psalm 38 | Line and guide | note psalms/38 title and summary; plain 38 1-22 |
+| Psalm 39 | Line and guide | note psalms/39 title and summary; plain 39 1-13 |
+| Psalm 40 | Line and guide | note psalms/40 title and summary; plain 40 1-5, 6-10, 11-17 |
+| Psalm 41 | Line and guide | note psalms/41 title and summary; plain 41 1-13 |
+| Psalm 42 | Line and guide | note psalms/42 title and summary; plain 42 1-5, 6-11 |
+| Psalm 43 | Line and guide | note psalms/43 title and summary; plain 43 1-5 |
+| Psalm 44 | Line and guide | note psalms/44 title and summary; plain 44 1-26 |
+| Psalm 45 | Line and guide | note psalms/45 title and summary; plain 45 1-9, 10-17 |
+| Psalm 46 | Line and guide | note psalms/46 title and summary; plain 46 1-3, 4-7, 8-11 |
+| Psalm 47 | Line and guide | note psalms/47 title and summary; plain 47 1-9 |
+| Psalm 48 | Line and guide | note psalms/48 title and summary; plain 48 1-14 |
+| Psalm 49 | Line and guide | note psalms/49 title and summary; plain 49 1-12, 13-20 |
+| Psalm 50 | Line and guide | note psalms/50 title and summary; plain 50 1-15, 16-23 |
+| Psalm 51 | Line and guide | note psalms/51 title and summary; plain 51 1-6, 7-12, 13-19 |
+| Psalm 52 | Line and guide | note psalms/52 title and summary; plain 52 1-9 |
+| Psalm 53 | Line and guide | note psalms/53 title and summary; plain 53 1-6 |
+| Psalm 54 | Line and guide | note psalms/54 title and summary; plain 54 1-7 |
+| Psalm 55 | Line and guide | note psalms/55 title and summary; plain 55 1-11, 12-23 |
+| Psalm 56 | Line and guide | note psalms/56 title and summary; plain 56 1-13 |
+| Psalm 57 | Line and guide | note psalms/57 title and summary; plain 57 1-11 |
+| Psalm 58 | Line and guide | note psalms/58 title and summary; plain 58 1-5, 6-11 |
+| Psalm 59 | Line and guide | note psalms/59 title and summary; plain 59 1-17 |
+| Psalm 60 | Line and guide | note psalms/60 title and summary; plain 60 1-12 |
+| Psalm 61 | Line and guide | note psalms/61 title and summary; plain 61 1-8 |
+| Psalm 62 | Line and guide | note psalms/62 title and summary; plain 62 1-12 |
+| Psalm 63 | Line and guide | note psalms/63 title and summary; plain 63 1-5, 6-11 |
+| Psalm 64 | Line and guide | note psalms/64 title and summary; plain 64 1-10 |
+| Psalm 65 | Line and guide | note psalms/65 title and summary; plain 65 1-13 |
+| Psalm 66 | Line and guide | note psalms/66 title and summary; plain 66 1-20 |
+| Psalm 67 | Line and guide | note psalms/67 title and summary; plain 67 1-7 |
+| Psalm 68 | Line and guide | note psalms/68 title and summary; plain 68 1-18, 19-35 |
+| Psalm 69 | Line and guide | note psalms/69 title and summary; plain 69 1-12, 13-21, 22-36 |
+| Psalm 70 | Line and guide | note psalms/70 title and summary; plain 70 1-5 |
+| Psalm 71 | Line and guide | note psalms/71 title and summary; plain 71 1-24 |
+| Psalm 72 | Line and guide | note psalms/72 title and summary; plain 72 1-7, 8-17, 18-20 |
+| Psalm 73 | Line and guide | note psalms/73 title and summary; plain 73 1-14, 15-20, 21-28 |
+| Psalm 74 | Line and guide | note psalms/74 title and summary; plain 74 1-11, 12-23 |
+| Psalm 75 | Line and guide | note psalms/75 title and summary; plain 75 1-10 |
+| Psalm 76 | Line and guide | note psalms/76 title and summary; plain 76 1-12 |
+| Psalm 77 | Line and guide | note psalms/77 title and summary; plain 77 1-9, 10-20 |
+| Psalm 78 | Line and guide | note psalms/78 title and summary; plain 78 1-39, 40-72 |
+| Psalm 79 | Line and guide | note psalms/79 title and summary; plain 79 1-13 |
+| Psalm 80 | Line and guide | note psalms/80 title and summary; plain 80 1-19 |
+| Psalm 81 | Line and guide | note psalms/81 title and summary; plain 81 1-16 |
+| Psalm 82 | Line and guide | note psalms/82 title and summary; plain 82 1-5, 6-8 |
+| Psalm 83 | Line and guide | note psalms/83 title and summary; plain 83 1-18 |
+| Psalm 84 | Line and guide | note psalms/84 title and summary; plain 84 1-7, 8-12 |
+| Psalm 85 | Line and guide | note psalms/85 title and summary; plain 85 1-13 |
+| Psalm 86 | Line and guide | note psalms/86 title and summary; plain 86 1-17 |
+| Psalm 87 | Line and guide | note psalms/87 title and summary; plain 87 1-7 |
+| Psalm 88 | Line and guide | note psalms/88 title and summary; plain 88 1-9, 10-12, 13-18 |
+| Psalm 89 | Line and guide | note psalms/89 title and summary; plain 89 1-18, 19-37, 38-52 |
+| Psalm 90 | Line and guide | note psalms/90 title and summary; plain 90 1-6, 7-12, 13-17 |
+| Psalm 91 | Line and guide | note psalms/91 title and summary; plain 91 1-8, 9-13, 14-16 |
+| Psalm 92 | Line and guide | note psalms/92 title and summary; plain 92 1-15 |
+| Psalm 93 | Line and guide | note psalms/93 title and summary; plain 93 1-5 |
+| Psalm 94 | Line and guide | note psalms/94 title and summary; plain 94 1-23 |
+| Psalm 95 | Line and guide | note psalms/95 title and summary; plain 95 1-6, 7-11 |
+| Psalm 96 | Line and guide | note psalms/96 title and summary; plain 96 1-9, 10-13 |
+| Psalm 97 | Line and guide | note psalms/97 title and summary; plain 97 1-12 |
+| Psalm 98 | Line and guide | note psalms/98 title and summary; plain 98 1-9 |
+| Psalm 99 | Line and guide | note psalms/99 title and summary; plain 99 1-9 |
+| Psalm 100 | Line and guide | note psalms/100 title and summary; plain 100 1-5 |
+| Psalm 101 | Line and guide | note psalms/101 title and summary; plain 101 1-8 |
+| Psalm 102 | Line and guide | note psalms/102 title and summary; plain 102 1-28 |
+| Psalm 103 | Line and guide | note psalms/103 title and summary; plain 103 1-5, 6-14, 15-22 |
+| Psalm 104 | Line and guide | note psalms/104 title and summary; plain 104 1-9, 10-23, 24-35 |
+| Psalm 105 | Line and guide | note psalms/105 title and summary; plain 105 1-15, 16-45 |
+| Psalm 106 | Line and guide | note psalms/106 title and summary; plain 106 1-23, 24-48 |
+| Psalm 107 | Line and guide | note psalms/107 title and summary; plain 107 1-16, 17-32, 33-43 |
+| Psalm 108 | Line and guide | note psalms/108 title and summary; plain 108 1-13 |
+| Psalm 109 | Line and guide | note psalms/109 title and summary; plain 109 1-20, 21-31 |
+| Psalm 110 | Line and guide | note psalms/110 title and summary; plain 110 1-3, 4, 5-7 |
+| Psalm 111 | Line and guide | note psalms/111 title and summary; plain 111 1-10 |
+| Psalm 112 | Line and guide | note psalms/112 title and summary; plain 112 1-10 |
+| Psalm 113 | Line and guide | note psalms/113 title and summary; plain 113 1-9 |
+| Psalm 114 | Line and guide | note psalms/114 title and summary; plain 114 1-8 |
+| Psalm 115 | Line and guide | note psalms/115 title and summary; plain 115 1-8, 9-18 |
+| Psalm 116 | Line and guide | note psalms/116 title and summary; plain 116 1-11, 12-19 |
+| Psalm 117 | Line and guide | note psalms/117 title and summary; plain 117 1-2 |
+| Psalm 118 | Line and guide | note psalms/118 title and summary; plain 118 1-14, 15-21, 22-29 |
+| Psalm 119 | Line and guide | note psalms/119 title and summary; plain 119 1-8, 9-16, 17-64, 65-104, 105-176 |
+| Psalm 120 | Line and guide | note psalms/120 title and summary; plain 120 1-7 |
+| Psalm 121 | Line and guide | note psalms/121 title and summary; plain 121 1-2, 3-8 |
+| Psalm 122 | Line and guide | note psalms/122 title and summary; plain 122 1-5, 6-9 |
+| Psalm 123 | Line and guide | note psalms/123 title and summary; plain 123 1-4 |
+| Psalm 124 | Line and guide | note psalms/124 title and summary; plain 124 1-8 |
+| Psalm 125 | Line and guide | note psalms/125 title and summary; plain 125 1-5 |
+| Psalm 126 | Line and guide | note psalms/126 title and summary; plain 126 1-6 |
+| Psalm 127 | Line and guide | note psalms/127 title and summary; plain 127 1-2, 3-5 |
+| Psalm 128 | Line and guide | note psalms/128 title and summary; plain 128 1-6 |
+| Psalm 129 | Line and guide | note psalms/129 title and summary; plain 129 1-8 |
+| Psalm 130 | Line and guide | note psalms/130 title and summary; plain 130 1-4, 5-8 |
+| Psalm 131 | Line and guide | note psalms/131 title and summary; plain 131 1-3 |
+| Psalm 132 | Line and guide | note psalms/132 title and summary; plain 132 1-18 |
+| Psalm 133 | Line and guide | note psalms/133 title and summary; plain 133 1-3 |
+| Psalm 134 | Line and guide | note psalms/134 title and summary; plain 134 1-3 |
+| Psalm 135 | Line and guide | note psalms/135 title and summary; plain 135 1-21 |
+| Psalm 136 | Line and guide | note psalms/136 title and summary; plain 136 1-9, 10-26 |
+| Psalm 137 | Line and guide | note psalms/137 title and summary; plain 137 1-4, 5-6, 7-9 |
+| Psalm 138 | Line and guide | note psalms/138 title and summary; plain 138 1-8 |
+| Psalm 139 | Line and guide | note psalms/139 title and summary; plain 139 1-12, 13-18, 19-24 |
+| Psalm 140 | Line and guide | note psalms/140 title and summary; plain 140 1-13 |
+| Psalm 141 | Line and guide | note psalms/141 title and summary; plain 141 1-10 |
+| Psalm 142 | Line and guide | note psalms/142 title and summary; plain 142 1-7 |
+| Psalm 143 | Line and guide | note psalms/143 title and summary; plain 143 1-12 |
+| Psalm 144 | Line and guide | note psalms/144 title and summary; plain 144 1-15 |
+| Psalm 145 | Line and guide | note psalms/145 title and summary; plain 145 1-7, 8-13, 14-21 |
+| Psalm 146 | Line and guide | note psalms/146 title and summary; plain 146 1-10 |
+| Psalm 147 | Line and guide | note psalms/147 title and summary; plain 147 1-11, 12-20 |
+| Psalm 148 | Line and guide | note psalms/148 title and summary; plain 148 1-6, 7-14 |
+| Psalm 149 | Line and guide | note psalms/149 title and summary; plain 149 1-9 |
+| Psalm 150 | Line and guide | note psalms/150 title and summary; plain 150 1-6 |
+
+Ecclesiastes in the explorer adds sixteen theme names and lines; each was checked against the verses tagged with it, and four draw on the introduction's own themes (shown word for word).
+
+| Theme | Claim | Checked against |
+|---|---|---|
+| breath | The key word hevel; verses calling something futile or a pursuit of the wind | intro themes "Hevel"; Ecclesiastes 1:2, 1:14, 2:11, 12:8 (BSB) |
+| cycles | Generations, sun, wind, rivers going round; no one remembered | Ecclesiastes 1:4-11 |
+| search | A king tests pleasure, works, wisdom and folly | Ecclesiastes 1:12-18, 2:1-12; note ecclesiastes/2 title |
+| toil | Labor, who inherits it, the mind that does not rest at night | Ecclesiastes 2:18-23 |
+| joy | Bread, wine, work and the people we love as God's gift | intro themes "Joy as God's gift"; Ecclesiastes 2:24, 3:13, 5:18-19, 9:7-9 |
+| death | One fate for wise and fool, righteous and wicked, people and animals | intro themes "Death, the great leveler"; Ecclesiastes 2:14-16, 3:19, 9:2 |
+| wisdom | Wisdom better than folly as light than darkness; a little folly spoils it | Ecclesiastes 2:13, 10:1 |
+| limits | God's work no one can fathom, the future, time and chance | intro themes "The limits of wisdom"; Ecclesiastes 3:11, 8:17, 9:11 |
+| time | A season for every purpose; the right time and way | Ecclesiastes 3:1-8, 8:5-6 |
+| injustice | Tears with no comforter; wickedness in the place of judgment; justice delayed | Ecclesiastes 4:1, 3:16, 8:11 |
+| wealth | Love of money never satisfied; riches hoarded or lost; wealth not enjoyed | Ecclesiastes 5:10, 5:13-14, 6:2 |
+| fear | Careful worship, vows kept, every deed brought into judgment | intro themes "The fear of God and his judgment"; Ecclesiastes 5:1-7, 12:13-14 |
+| words | Draw near to listen, let words be few, keep vows; the fool multiplies words | Ecclesiastes 5:1-5, 10:14 |
+| rulers | Under a king; rulers who err; the wise youth; the poor wise man forgotten | Ecclesiastes 8:2-4, 10:5-7, 4:13-14, 9:15 |
+| better | A good name, the house of mourning, a patient spirit, two rather than one | Ecclesiastes 7:1-2, 7:8, 4:9 |
+| youth | Rejoice while young; remember your Creator; the poem of old age | Ecclesiastes 11:9, 12:1-7; note ecclesiastes/12 outline ("old age and the approach of death") |
+| panel | The readings of hevel and of the epilogue | intro reading; notes ecclesiastes/1 and 12 hard (shown word for word) |
+
+Spiritual Gifts and Test the Case add no claim: every statement, case, move, objection, answer, band, reading and step is the same text as before the move (proved with `diff`, `tools-plan.md` section 16).
+
+Nothing outside the repo was opened for this build. The Brueggemann reading of the Psalms that section 7.3 allows was not opened and is not used.

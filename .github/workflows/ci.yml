@@ -58,6 +58,8 @@ jobs:
           node scripts/validate-wisdom.mjs
           node scripts/build-wisdom-books-index.mjs --check
           node scripts/validate-wisdom-books.mjs
+          node scripts/build-pray-psalms.mjs --check
+          node scripts/validate-pray-psalms.mjs
           node scripts/validate-verse-guides.mjs
           node scripts/validate-worlds.mjs
           node scripts/build-topics-index.mjs --check
