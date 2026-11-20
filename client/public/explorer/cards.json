@@ -291,7 +291,61 @@
         {"label": "The family catechism: did Jesus stay dead?", "href": "/family/catechism#q31"}
       ]
     },
-    { "id": "spirit", "title": "The Holy Spirit", "status": "coming" },
+    {
+      "id": "spirit",
+      "title": "The Holy Spirit",
+      "status": "finished",
+      "picture": "wind",
+      "pictureLabel": "A hillside in the wind: the grass and a tree bend the same way and a breath line sweeps across the sky; three people walk up a path together, and one small flame burns in the sky above them.",
+      "statement": {
+        "younger": "The Holy Spirit is God, the third person of the Trinity, not a force or a feeling. You cannot see him, as you cannot see the wind, but you can see what he does. He gives new life to people who trust Jesus, lives in every one of them, helps them pray, and slowly makes them more like Jesus.",
+        "older": "Christians confess the Holy Spirit as fully God, the third person of the Trinity, the one the Nicene Creed calls ‘the Lord and Giver of Life’, ‘who with the Father and the Son together is worshipped and glorified’. He gives new birth, joins believers to Christ, lives in every one of them, grows his fruit in them and gives gifts for the good of the whole church. All Christians confess this. Churches differ on whether some gifts, such as speaking in tongues, prophecy and healing, continue as they did in Acts, and on when and how a believer receives the Spirit; this card does not choose between them."
+      },
+      "quote": {
+        "ref": "John 3:8",
+        "text": "The wind blows where it wishes. You hear its sound, but you do not know where it comes from or where it is going. So it is with everyone born of the Spirit."
+      },
+      "rests": [
+        "Genesis 1:2",
+        "John 3:5-8",
+        "Acts 2:1-4",
+        "Acts 5:3-4",
+        "Romans 8:9-16",
+        "Galatians 5:22-23",
+        "1 Corinthians 12:4-11",
+        "Matthew 28:19"
+      ],
+      "question": {
+        "ask": "Is the Holy Spirit a person, or a power?",
+        "younger": "A person. The Bible says people can lie to the Holy Spirit and make him sad, and you can only do that to a person. When a man lied to the Holy Spirit, Peter told him he had lied to God. The Holy Spirit is not a part of God or a feeling: he is God, with the Father and the Son.",
+        "older": "A person, and God. LiveWell's Honest Answer on the Trinity points to Peter, who told a man who had chosen “to lie to the Holy Spirit” that “You have not lied to men, but to God” (Acts 5:3-4). Paul writes, “do not grieve the Holy Spirit of God” (Ephesians 4:30), and a power cannot be grieved. The creeds say each person is wholly God, not a third of God, and the answer adds that the Father, the Son and the Spirit never act apart. It also says plainly what remains a mystery: how one God is three persons is something no one can see to the bottom of, which is not the same as a contradiction."
+      },
+      "stops": [
+        "creation",
+        "land",
+        "exile",
+        "church"
+      ],
+      "catechism": [
+        41,
+        45,
+        63
+      ],
+      "deeper": [
+        {
+          "label": "How can God be three and one?",
+          "href": "/answers/how-can-god-be-three-and-one"
+        },
+        {
+          "label": "Where churches differ on the gifts: the Study Bible's notes on Acts 2",
+          "href": "/study/bible/acts/2"
+        },
+        {
+          "label": "The family catechism: who is the Holy Spirit?",
+          "href": "/family/catechism#q41"
+        }
+      ]
+    },
     {
       "id": "church",
       "title": "The church",
@@ -318,6 +372,62 @@
         {"label": "The family catechism: what is the church?", "href": "/family/catechism#q46"}
       ]
     },
-    { "id": "life-to-come", "title": "The life to come", "status": "coming" }
+    {
+      "id": "life-to-come",
+      "title": "The life to come",
+      "status": "finished",
+      "picture": "seed",
+      "pictureLabel": "A seed sown in the dark soil, shown in a cut through the ground, its root going down and its stalk rising into a full ear of wheat; far off, a city wall with its gate standing open and light coming from it.",
+      "statement": {
+        "younger": "Death is real and sad, but for those who belong to Jesus it is not the end. They go to be with him. One day Jesus will come back, raise their bodies new and whole, and make everything new, and God will wipe away every tear.",
+        "older": "Christians confess, in the words of the Apostles' Creed, ‘the resurrection of the body; and the life everlasting’. Jesus will return in glory to judge the living and the dead and to make all things new. The final hope is not a soul escaping the body but the body raised, as Christ's was: he is the firstfruits, and Paul compares the body to a seed that is sown and comes up new. Christians confess a real judgment, and they differ on how to understand what it will be like; the site's Honest Answer on hell adds, ‘Whatever hell is, it isn't what God wants for anyone.’ They also read the order and timing of the last events differently; all confess that Christ will come again, and no one knows the day or the hour."
+      },
+      "quote": {
+        "ref": "Revelation 21:4",
+        "text": "‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away."
+      },
+      "rests": [
+        "John 11:25-26",
+        "1 Corinthians 15:20-23",
+        "1 Corinthians 15:35-44",
+        "Philippians 1:21-23",
+        "2 Corinthians 5:1-8",
+        "Luke 23:43",
+        "Acts 17:31",
+        "Revelation 21:1-5"
+      ],
+      "question": {
+        "ask": "What happens when someone dies?",
+        "younger": "Their body stops, and that is real and sad; when his friend Lazarus died, Jesus cried. But the person does not stop being. The Bible says that people who trust Jesus go to be with him, and wait for the day he raises their bodies new. Christians do not all describe that waiting the same way, but they all hope for the same day. If someone you love has died, it helps to talk about it with a parent or another grown-up you trust.",
+        "older": "Death is real, and the Bible never pretends otherwise. Christians confess that the dead in Christ will be raised bodily when he returns. On the time between, the Study Bible's notes set out two readings. Most Christian traditions read Jesus' words to the dying man, “Truly I tell you, today you will be with Me in Paradise” (Luke 23:43), with Paul's wish to be “away from the body and at home with the Lord” (2 Corinthians 5:8), as a promise of being with Christ, awake and known, straight after death. Others place the comma after ‘today’ and hold that the dead sleep until the resurrection. Christians still differ on how to describe that time; the hope they share is the resurrection of the body. If a death has hit you hard, talk with a parent, a pastor or a leader you trust."
+      },
+      "stops": [
+        "cross",
+        "new-creation"
+      ],
+      "catechism": [
+        51,
+        52,
+        70
+      ],
+      "deeper": [
+        {
+          "label": "Between death and resurrection: the Study Bible's note on Luke 23",
+          "href": "/study/bible/luke/23"
+        },
+        {
+          "label": "Is hell forever, or does it end?",
+          "href": "/answers/is-hell-forever-or-does-it-end"
+        },
+        {
+          "label": "The family catechism: what happens when we die?",
+          "href": "/family/catechism#q70"
+        },
+        {
+          "label": "Find Help, when grief or fear is heavy",
+          "href": "/help"
+        }
+      ]
+    }
   ]
 }
