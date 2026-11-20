@@ -134,7 +134,8 @@ describe("the player's contract", () => {
     expect(visibleCaption()).toBe(FILM.line.younger);
     // Before Play, the caption panel lists the film's pictures in order.
     expect(
-      [...document.querySelectorAll(".fp-cap.is-on .fp-cap__list li")].map(
+      Array.from(
+        document.querySelectorAll(".fp-cap.is-on .fp-cap__list li"),
         li => li.textContent
       )
     ).toEqual(FILM.frames.map(f => f.name));
