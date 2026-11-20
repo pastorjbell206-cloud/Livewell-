@@ -9974,3 +9974,32 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Wine in ancient medicine; water often unsafe; Timothy perhaps abstaining as self-denial | 23-25 | Chapter deep note `cultural` | Repository |
 | Abstinence and moderation; what all agree; the drinking care line | 23-25 | ephesians/plain/5.json (15-20); wisdom/deep/alcohol-and-drinking.json | Word for word; ‘not medical advice’ added |
 | Psalm 104:15; Proverbs 20:1; Jeremiah 35:6; Ecclesiastes 12:14; Proverbs 28:13 | 23-25 | BSB | BSB text |
+
+## The plain notes on 1 Timothy 6 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Roman slavery: everywhere; kinds of work; sources; not race-based; manumission; property, beaten, sold, used sexually | 1-2 | Chapter deep note `historical`; ephesians/plain/6.json (5-9) | Repository wording |
+| Slaves and masters in the same church and household | 1-2 | Chapter deep note `historical` | Repository |
+| The hard part on slavery (no abolition commanded; seeds; Ephesians 6:9; 1:10; 1 Corinthians 7:21 most common reading; Philemon 1:16; Galatians 3:28; Atlantic misuse named wrong; kidnapping; mixed record; not an employment rule; pointer) | 1-2 | ephesians/plain/6.json (5-9); chapter deep note `hard` | Word for word where the verses allow, fitted to 6:1-2 |
+| Deuteronomy 10:17; Job 31:15; Leviticus 25:43; Deuteronomy 15:15; Exodus 21:16; Deuteronomy 23:15 | 1-2 | BSB | BSB text |
+| Travelling teachers charged fees, mocked as sellers of wisdom | 3-10 | Chapter deep note `cultural` | Repository |
+| Autarkeia prized by Stoics and Cynics; Paul's ground in God; Job 1:21; Ecclesiastes 5:15 | 3-10 | Chapter deep note `cultural` | Repository; BSB text |
+| ‘The love of money’ reading | 3-10 | wisdom/deep/money.json `misread` (1 Timothy 6:10) | Repository wording, near word for word |
+| Prosperity teaching; the giving care lines | 3-10 | 2-corinthians/plain/9.json (6-11) | Word for word (the definition and the closing paragraph) |
+| Psalm 49:17; Proverbs 23:4; 15:16; 30:8 | 3-10 | BSB | BSB text |
+| ‘Man of God’ of Moses, Samuel, Elijah, Elisha (Deuteronomy 33:1) | 11-16 | Chapter deep note `cultural` | Repository; BSB text |
+| Pilate prefect about AD 26 to 36; in the Apostles' Creed | 11-16 | Chapter deep note `historical` | Repository |
+| ‘King of kings’ used of ancient Near Eastern rulers; emperors' divine titles; given to God alone | 11-16 | Chapter deep note `historical` | Repository |
+| Deuteronomy 10:17; Daniel 2:47; Psalm 104:2; Exodus 33:20; Joshua 1:9 | 11-16 | BSB | BSB text |
+| Benefactors in Ephesus funding buildings, festivals, meals for honour and inscriptions | 17-21 | Chapter deep note `cultural` | Repository |
+| Parathēkē, a deposit left in trust | 17-21 | Standard lexicons | Standard |
+| ‘You’ plural in the last line | 17-21 | Greek text (humōn) | Repository text |
+| Wealth: what all agree; stewardship and simplicity views; no side; pointers | 17-21 | wisdom/deep/money.json `differ` | Repository wording, paraphrased. No side |
+| Proverbs 11:28; Psalm 62:10; Deuteronomy 8:18; Proverbs 19:17; 22:2 | 17-21 | BSB | BSB text |
+
+## 1 Timothy complete (2026-11-20)
+
+All six chapters in plain words. No web searches for this book.
