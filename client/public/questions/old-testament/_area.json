@@ -8,6 +8,11 @@
       "slug": "did-the-exodus-happen",
       "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
       "blurb": "What Egypt's silence does and doesn't show, the Delta, Rameses and Moses' Egyptian name, Merneptah's Israel, the date and the large numbers, and what remains open."
+    },
+    {
+      "slug": "jericho-and-the-conquest",
+      "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+      "blurb": "Kenyon's Jericho and the radiocarbon dates, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history."
     }
   ],
   "words": [
@@ -18,6 +23,10 @@
     {
       "term": "Merneptah Stele",
       "meaning": "an Egyptian victory inscription of about 1208 BC, the earliest known mention of Israel outside the Bible, naming Israel as a people in Canaan."
+    },
+    {
+      "term": "Tell",
+      "meaning": "a mound built up by a town rebuilt again and again on its own ruins; Tell es-Sultan is ancient Jericho."
     },
     {
       "term": "Elef",

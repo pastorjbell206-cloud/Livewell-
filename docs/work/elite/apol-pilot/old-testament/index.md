@@ -15,11 +15,13 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 ## The questions
 
 1. **No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?** What Egypt's silence does and doesn't show, the Delta, Rameses and Moses' Egyptian name, Merneptah's Israel, the date and the large numbers, and what remains open.
+2. **Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?** Kenyon's Jericho and the radiocarbon dates, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.
 
 ## Words these pages use
 
 - **Late Bronze Age**: in the archaeology of Canaan, roughly 1550 to 1200 BC, the period in which most scholars place the exodus and the entry into Canaan, whichever date they hold.
 - **Merneptah Stele**: an Egyptian victory inscription of about 1208 BC, the earliest known mention of Israel outside the Bible, naming Israel as a people in Canaan.
+- **Tell**: a mound built up by a town rebuilt again and again on its own ruins; Tell es-Sultan is ancient Jericho.
 - **Elef**: the Hebrew word usually translated "thousand," which can also name a clan or a military unit.
 
 ## Where else to look

@@ -239,6 +239,13 @@
           "blurb": "What Egypt's silence does and doesn't show, the Delta, Rameses and Moses' Egyptian name, Merneptah's Israel, the date and the large numbers, and what remains open.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "jericho-and-the-conquest",
+          "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+          "blurb": "Kenyon's Jericho and the radiocarbon dates, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -781,6 +788,26 @@
       "live": false
     },
     {
+      "claim": "Jericho's last walled city fell in the sixteenth century BC, and there was little or nothing there for Joshua to conquer",
+      "proponent": "Kathleen M. Kenyon",
+      "work": "Digging Up Jericho",
+      "year": 1957,
+      "area": "old-testament",
+      "slug": "jericho-and-the-conquest",
+      "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+      "live": false
+    },
+    {
+      "claim": "Israel emerged gradually from within Canaan, and the conquest stories are later legend",
+      "proponent": "William G. Dever",
+      "work": "Who Were the Early Israelites and Where Did They Come From?",
+      "year": 2003,
+      "area": "old-testament",
+      "slug": "jericho-and-the-conquest",
+      "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+      "live": false
+    },
+    {
       "claim": "Science and religion are incompatible in method: science can find out it is wrong, religion holds its claims by faith, scripture and authority",
       "proponent": "Jerry A. Coyne",
       "work": "Faith versus Fact",
@@ -917,6 +944,7 @@
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
     "how-can-god-be-three-and-one": "How can God be three and one?",
     "are-miracles-believable": "Are miracles believable?",
+    "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?"
   }
