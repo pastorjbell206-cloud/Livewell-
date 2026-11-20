@@ -8521,3 +8521,39 @@ One search (the place of 14:34-35 in the manuscripts). Scripture is the BSB in t
 | Isaiah 45:14; Deuteronomy 18:18; 2 Samuel 6:14; 1 Chronicles 25:1 | 36-40 | BSB | BSB text |
 
 Cut: Gordon Fee by name (met only in a secondary source); the Delphic priestess (deep note); the Vaticanus marks and Codex Fuldensis; manuscript dates.
+
+## The plain notes on 1 Corinthians 15 (2026-11-20)
+
+Two searches (Latter-day Saint baptism for the dead; Menander). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The bodily resurrection stated as the church's confession; the Nicene Creed ‘on the third day he rose again’ paraphrased | 1-11, 12-19 | CLAUDE.md confessional floor; the creed | Not quoted |
+| Received and passed on (also 11:23); four ‘that’ clauses; Cephas | 1-11 | Verse note 15:3 (`grammar`); apol-ledger | Repository; ledger |
+| Letter probably mid-50s; summary passed on at the founding and received before | 1-11 | Book page; Honest Answer ‘Did the resurrection actually happen?’ | Repository |
+| Scholars of many views, including some who do not believe Jesus rose, treat it as very early; many date it within a few years of the crucifixion | 1-11 | Honest Answer (client/src/data/answers.ts); apol-ledger rows on the formula (Pickup, JETS 2013; Lüdemann, about two years, via Craig) | Ledger. Stated as "many date it"; no scholar named |
+| Galatians 1:18-19; John 7:5; Acts 9:3-5 | 1-11 | BSB | BSB text |
+| Women at the tomb not listed; reason not known | 1-11 | BSB comparison | Stated as uncertain; the deep note's claim about women's testimony not used |
+| ‘Untimely birth’ used of a child born dead or too early | 1-11 | Verse notes on 15:8; deep note | Repository |
+| Isaiah 53:5, 9, 11; Psalm 16:10 (Acts 2:27); Hosea 6:2; Jonah 1:17; Matthew 12:40 | 1-11 | BSB | BSB text |
+| Many Greeks held the soul survives and mocked bodily resurrection; Acts 17:32 | 12-19 | Deep note `cultural`; BSB | Repository |
+| Paul a Pharisee hoping for the resurrection (Acts 23:6) | 12-19 | BSB | BSB text |
+| Job 19:26; Isaiah 26:19; Daniel 12:2; Psalm 49:15 | 12-19 | BSB | BSB text |
+| Firstfruits (Leviticus 23:10-11); Genesis 3:19; Psalm 110:1; Psalm 8:6 | 20-28 | BSB | BSB text |
+| Adam and Christ; no position on Adam's details; pointer to Romans 5 | 20-28 | Romans 5 plain note | Repository |
+| 15:28 not making the Son less than God | 20-28 | Deep note on 11:3 (`christ`); the creeds | Repository |
+| ‘All’ and ‘all in all’: universalist sentence word for word from Romans 5 and 11; other readings; what the creeds bind; pointers | 20-28 | Romans 5 and 11 plain notes; Honest Answer ‘Is hell forever, or does it end?’ | Repository |
+| Wild beasts literal or figurative; Acts 19:23-41; 2 Corinthians 1:8 | 29-34 | Deep note `cultural`; BSB | Stated as two readings |
+| Isaiah 22:12-13; Psalm 73:26 | 29-34 | BSB | BSB text |
+| ‘Bad company corrupts good character’ a line found in Menander, probably a common saying | 29-34 | Menander, Thais (fragment) | Search: openbible.com and biblehub.com commentaries; tips.translation.bible; intertextual.bible. Play's name not on the page |
+| Baptism for the dead: no one knows; readings; ‘those’, not ‘we’; no other passage | 29-34 | Verse note 15:29; deep note `hard` | Repository |
+| Latter-day Saint proxy baptism in temples, usually for members' ancestors; the dead free to accept or reject; appeal to 15:29 | 29-34 | The Church of Jesus Christ of Latter-day Saints | Search: churchofjesuschrist.org Gospel Topics "Baptisms for the Dead"; newsroom.churchofjesuschrist.org. In its holders' terms |
+| Psychikos and pneumatikos (also 2:14-15); ‘body’ on both sides; two scholarly pictures | 35-49 | Verse note 15:44 (Wright 2003; Martin 1995); repository Greek | Repository. No scholar named |
+| Genesis 2:7 with Paul's additions ‘first’ and ‘Adam’ | 35-49 | Verse note 15:45 | Repository |
+| John 12:24; Genesis 1:16; Luke 24:39 (before the BSB's dash), 43; Philippians 3:21 | 35-49 | BSB | BSB text |
+| 1 Thessalonians 4:13, 16; John 11:35; Romans 7 | 50-58 | BSB | BSB text |
+| Isaiah 25:8 and Hosea 13:14 in the BSB; Paul's wording differs; Hosea's setting read in more than one way | 50-58 | BSB; verse note 15:54-55 | BSB text. The Greek versions (Theodotion) not named |
+| Isaiah 65:23; ‘labor’ hard work | 50-58 | BSB | BSB text |
+| Grief care line; Find Help | 50-58 | Site care form | Repository |
+
+Cut: Theodotion and the Septuagint wording at 15:54; the claim that women's testimony carried little weight; a Roman citizen rarely condemned to the beasts; Chrysostom on the Marcionites; Wright and Martin by name.
