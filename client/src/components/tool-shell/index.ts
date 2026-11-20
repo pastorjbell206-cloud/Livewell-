@@ -35,5 +35,5 @@ export { default as ProgressLine } from "./ProgressLine";
 export { default as CheckPart } from "./CheckPart";
 export type { CheckPartProps, CheckStatement } from "./CheckPart";
 export { useToolProgress, progressKey, SAVE_FAILED } from "./useToolProgress";
-export { ResultSection, ResultReading, ScoreChart, ResultNext, ResultActions } from "./Result";
+export { focusResultTop, ResultSection, ResultReading, ScoreChart, ResultNext, ResultActions } from "./Result";
 export type { ScoreRow, NextStep, ResultActionsProps } from "./Result";

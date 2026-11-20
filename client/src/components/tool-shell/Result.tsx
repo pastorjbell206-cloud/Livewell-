@@ -27,6 +27,20 @@ export function ResultSection({ title, id, children, className }: { title: strin
 }
 
 /**
+ * Bring the reader to the top of a result as it appears: the safety question
+ * first when the page has one (components/SafetyCheck, "#safety-check-h"),
+ * else the reading's heading (`<id>-h`). Focus moves there too, so a screen
+ * reader starts where the eye does.
+ */
+export function focusResultTop(readingId: string) {
+  const h = document.getElementById("safety-check-h") ?? document.getElementById(`${readingId}-h`);
+  if (!h) return;
+  if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "-1");
+  h.scrollIntoView?.({ block: "start" });
+  h.focus({ preventScroll: true });
+}
+
+/**
  * The plain reading: what the answers suggest, in paragraphs. With an `id`,
  * its heading is `<id>-h` and can take focus, so a tool can move the reader
  * there when the result appears.

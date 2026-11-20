@@ -22,7 +22,7 @@ import { writeStoredJSON } from "@/lib/storage";
 import { copyToClipboard } from "@/lib/clipboard";
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { toolById } from "@/lib/toolsList";
-import { CheckPart, ResultActions, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
+import { CheckPart, focusResultTop, ResultActions, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
 
 /* ------------------------------------------------------------------ */
 /* Data                                                                */
@@ -819,9 +819,7 @@ export default function WholeLifeAssessment() {
   useEffect(() => {
     if (screen === -1) window.scrollTo(0, 0);
     if (screen === RESULTS_SCREEN) {
-      const h = document.getElementById("wla-result-h");
-      h?.scrollIntoView?.({ block: "start" });
-      h?.focus({ preventScroll: true });
+      focusResultTop("wla-result");
     }
   }, [screen]);
 
@@ -1107,7 +1105,7 @@ export default function WholeLifeAssessment() {
                 onNext={() => (isLast ? finish() : goTo(screen + 1))}
                 nextLabel={isLast ? "See the map" : "Continue"}
                 saveFailed={progress.saveFailed}
-                quiet={saved !== null && screen === saved.screen}
+                focusOnMount={!(saved !== null && screen === saved.screen)}
               />
             </div>
           </section>

@@ -9,7 +9,8 @@
  *
  * When the part changes, the page brings its heading into view and moves
  * focus there, so a keyboard or screen reader user starts the new part at
- * its top. A part the page opens on (a saved place) takes no focus.
+ * its top. The part a page opens on takes no focus unless `focusOnMount`
+ * (a part opened by Begin).
  */
 import { useEffect, useRef, type ReactNode } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -44,19 +45,19 @@ export interface CheckPartProps {
   /** What the Continue button says while the part is unfinished. */
   waitingLabel?: string;
   saveFailed?: boolean;
-  /** True when the page opened on this part (a saved place): no focus move. */
-  quiet?: boolean;
+  /** Move focus to the part's heading when it first appears (after Begin). */
+  focusOnMount?: boolean;
   /** Show the number beside each answer (default true). */
   numbered?: boolean;
   columns?: 1 | 2 | 3;
 }
 
 export default function CheckPart(props: CheckPartProps) {
-  const { step, total, unit = "Part", answered, questions, title, line, children, statements, options, value, onAnswer, onBack, backLabel = "Back", onNext, nextLabel, waitingLabel, saveFailed, quiet, numbered, columns } = props;
+  const { step, total, unit = "Part", answered, questions, title, line, children, statements, options, value, onAnswer, onBack, backLabel = "Back", onNext, nextLabel, waitingLabel, saveFailed, focusOnMount, numbered, columns } = props;
   const headRef = useRef<HTMLHeadingElement>(null);
   const first = useRef(true);
   useEffect(() => {
-    if (first.current && quiet) {
+    if (first.current && !focusOnMount) {
       first.current = false;
       return;
     }
@@ -65,7 +66,9 @@ export default function CheckPart(props: CheckPartProps) {
     if (!h) return;
     h.scrollIntoView?.({ block: "start" });
     h.focus({ preventScroll: true });
-  }, [step, quiet]);
+    // focusOnMount is read on the first run only.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [step]);
 
   const done = statements.filter((s) => value(s.id) !== null).length;
   const complete = done === statements.length;

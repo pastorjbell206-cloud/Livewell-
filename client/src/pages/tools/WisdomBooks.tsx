@@ -17,7 +17,7 @@
  * (`livewell-progress-wisdom-books`: the way in, the theme, the chapter,
  * chapters marked read, lines kept), ResultSection, ResultNext, ResultActions.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
 import { BookOpen, Check, ChevronLeft, ChevronRight, X } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -163,6 +163,9 @@ export default function WisdomBooks() {
   const [themeFailed, setThemeFailed] = useState<string | null>(null);
   const [themeNonce, setThemeNonce] = useState(0);
   const [open, setOpen] = useState<string | null>(null);
+  // Set when the reader picks a chapter or a theme: the view's heading takes
+  // focus (and comes into view) once its verses have arrived.
+  const wantView = useRef(false);
 
   const shownChapter =
     p.way === "today" ? today : p.way === "chapter" ? p.chapter : null;
@@ -192,6 +195,15 @@ export default function WisdomBooks() {
     };
   }, [p.way, p.theme, themeFile, themeNonce]);
 
+  useEffect(() => {
+    if (!wantView.current) return;
+    const h = document.getElementById("wb-view-h");
+    if (!h) return;
+    wantView.current = false;
+    h.scrollIntoView?.({ block: "start" });
+    h.focus({ preventScroll: true });
+  });
+
   const theme = useMemo(
     () => index?.themes.find(t => t.id === p.theme) ?? null,
     [index, p.theme]
@@ -212,20 +224,12 @@ export default function WisdomBooks() {
   const goChapter = (n: number) => {
     setOpen(null);
     place.set(x => ({ ...x, way: "chapter", chapter: n }));
-    requestAnimationFrame(() => {
-      const h = document.getElementById("wb-view-h");
-      h?.scrollIntoView?.({ block: "start" });
-      h?.focus({ preventScroll: true });
-    });
+    wantView.current = true;
   };
   const goTheme = (id: string) => {
     setOpen(null);
     place.set(x => ({ ...x, way: "theme", theme: id }));
-    requestAnimationFrame(() => {
-      const h = document.getElementById("wb-view-h");
-      h?.scrollIntoView?.({ block: "start" });
-      h?.focus({ preventScroll: true });
-    });
+    wantView.current = true;
   };
 
   // Chapter verses grouped under the Study Bible's outline.

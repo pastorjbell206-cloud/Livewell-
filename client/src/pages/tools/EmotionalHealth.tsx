@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 import { toolById } from "@/lib/toolsList";
-import { CheckPart, ResultActions, ResultNext, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
+import { CheckPart, focusResultTop, ResultActions, ResultNext, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
 
 interface Statement {
   text: string;
@@ -588,6 +588,8 @@ export default function EmotionalHealth() {
   const [opened] = useState(() => progress.resumed && Object.keys(progress.value.answers).length > 0);
   const [resumed, setResumed] = useState(opened);
   const [showResults, setShowResults] = useState(false);
+  // Back from the result (Change my answers): the first part takes focus.
+  const [fromResult, setFromResult] = useState(false);
 
   const allAnswered = STATEMENTS.every((_, i) => answers[i] !== undefined);
   const answeredCount = STATEMENTS.filter((_, i) => answers[i] !== undefined).length;
@@ -619,9 +621,7 @@ export default function EmotionalHealth() {
 
   useEffect(() => {
     if (!showResults) return;
-    const h = document.getElementById("eh-result-h");
-    h?.scrollIntoView?.({ block: "start" });
-    h?.focus({ preventScroll: true });
+    focusResultTop("eh-result");
   }, [showResults]);
 
   const handleReset = () => {
@@ -633,6 +633,7 @@ export default function EmotionalHealth() {
 
   const handleChangeAnswers = () => {
     setShowResults(false);
+    setFromResult(true);
     setResumed(false);
     persist(answers, 0);
   };
@@ -707,7 +708,7 @@ export default function EmotionalHealth() {
               onNext={() => (isLast ? handleSubmit() : goTo(step + 1))}
               nextLabel={isLast ? "See my results" : "Continue"}
               saveFailed={progress.saveFailed}
-              quiet={opened}
+              focusOnMount={fromResult}
             />
           </div>
         </section>

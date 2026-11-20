@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 import { toolById } from "@/lib/toolsList";
-import { CheckPart, ResultActions, ResultNext, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
+import { CheckPart, focusResultTop, ResultActions, ResultNext, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -495,6 +495,8 @@ export default function FinancialHealth() {
   const [opened] = useState(() => progress.resumed && (Object.keys(progress.value.answers).length > 0 || progress.value.step > 0));
   const [resumed, setResumed] = useState(opened);
   const [showResults, setShowResults] = useState(false);
+  // Back from the result (Change my answers): the first part takes focus.
+  const [fromResult, setFromResult] = useState(false);
 
   const persist = (nextAnswers: Record<number, number>, nextStep: number) => {
     progress.set({ answers: nextAnswers, step: nextStep, savedAt: new Date().toISOString() });
@@ -528,9 +530,7 @@ export default function FinancialHealth() {
 
   useEffect(() => {
     if (!showResults) return;
-    const h = document.getElementById("fh-result-h");
-    h?.scrollIntoView?.({ block: "start" });
-    h?.focus({ preventScroll: true });
+    focusResultTop("fh-result");
   }, [showResults]);
 
   const handleRestart = () => {
@@ -542,6 +542,7 @@ export default function FinancialHealth() {
 
   const handleChangeAnswers = () => {
     setShowResults(false);
+    setFromResult(true);
     setResumed(false);
     persist(answers, 0);
   };
@@ -620,7 +621,7 @@ export default function FinancialHealth() {
               onNext={handleNext}
               nextLabel={isLastCategory ? "See my results" : "Next section"}
               saveFailed={progress.saveFailed}
-              quiet={opened}
+              focusOnMount={fromResult}
             >
               <figure className="ts-verse">
                 <blockquote>
