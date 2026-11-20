@@ -1,7 +1,7 @@
 /**
- * Three self-checks on the tool shell (docs/work/elite/tools-plan.md,
- * section 15): the Whole-Life Assessment, the Emotional Health and the
- * Financial Health self-checks. Each must open on answers saved before the
+ * Five tools on the tool shell (docs/work/elite/tools-plan.md, sections 15
+ * and 16): the Whole-Life Assessment, the Emotional Health, Financial Health
+ * and Spiritual Gifts self-checks, and Test the Case. Each must open on answers saved before the
  * move (the same keys, the same shapes), say so in the site's own sentence
  * when the browser refuses to save, and answer to the keyboard: Tab reaches
  * a statement's answers, the arrow keys move between them, Space picks, and
@@ -17,6 +17,9 @@ import { TestProviders } from "@/test/harness";
 import EmotionalHealth from "./EmotionalHealth";
 import FinancialHealth from "./FinancialHealth";
 import WholeLifeAssessment from "../life/WholeLifeAssessment";
+import SpiritualGifts, { ITEMS as GIFT_ITEMS, SCALE as GIFT_SCALE } from "./SpiritualGifts";
+import TestTheCase from "./TestTheCase";
+import { ARGUMENT_CASES } from "@/data/argumentCases";
 
 function show(path: string, Page: ComponentType) {
   const { hook } = memoryLocation({ path });
@@ -180,5 +183,102 @@ describe("Whole-Life Assessment on the shell", () => {
     await user.keyboard("5");
     expect(within(first).getByRole("radio", { name: "Always" })).toBeChecked();
     expect(stored(KEY).answers.in1).toBe(5);
+  });
+});
+
+describe("Spiritual Gifts Self-Check on the shell", () => {
+  const KEY = "livewell-progress-spiritual-gifts";
+  const label = (v: number) => GIFT_SCALE.find((x) => x.value === v)!.label;
+
+  it("opens on answers and the part saved before the move", () => {
+    // What the page wrote before it moved: answers keyed by statement id, the part reached.
+    const answers = Object.fromEntries(GIFT_ITEMS.slice(0, 9).map((i) => [i.id, 4]));
+    window.localStorage.setItem(KEY, JSON.stringify({ answers, step: 1, savedAt: "2026-11-01T10:00:00.000Z" }));
+    show("/tools/spiritual-gifts", SpiritualGifts);
+    expect(screen.getByText("Picked up where you left off.")).toBeInTheDocument();
+    expect(screen.getByText("Part 2 of 4")).toBeInTheDocument();
+    expect(screen.getByText("9 of 32 answered")).toBeInTheDocument();
+    const ninth = screen.getByRole("group", { name: new RegExp(GIFT_ITEMS[8].text.slice(0, 30).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) });
+    expect(within(ninth).getByRole("radio", { name: label(4) })).toBeChecked();
+  });
+
+  it("says so in the site's own sentence when the browser will not save", () => {
+    show("/tools/spiritual-gifts", SpiritualGifts);
+    vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
+      throw new Error("QuotaExceededError");
+    });
+    fireEvent.click(screen.getAllByRole("radio", { name: label(3) })[0]);
+    expect(screen.getByText(/Couldn't save to this browser/)).toBeInTheDocument();
+  });
+
+  it("answers to the keyboard: Tab, the arrow keys, Space and the number keys", async () => {
+    const user = userEvent.setup();
+    show("/tools/spiritual-gifts", SpiritualGifts);
+    const first = screen.getByRole("group", { name: new RegExp(GIFT_ITEMS[0].text.slice(0, 30).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) });
+    within(first).getAllByRole("radio")[0].focus();
+    await user.keyboard(" ");
+    expect(within(first).getByRole("radio", { name: label(1) })).toBeChecked();
+    await user.keyboard("{ArrowDown}");
+    expect(within(first).getByRole("radio", { name: label(2) })).toBeChecked();
+    await user.keyboard("5");
+    expect(within(first).getByRole("radio", { name: label(5) })).toBeChecked();
+    expect(stored(KEY).answers[GIFT_ITEMS[0].id]).toBe(5);
+    // Tab moves on to the next statement's answers.
+    await user.tab();
+    const second = screen.getByRole("group", { name: new RegExp(GIFT_ITEMS[1].text.slice(0, 30).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) });
+    expect(within(second).getAllByRole("radio")).toContain(document.activeElement);
+  });
+});
+
+describe("Test the Case on the shell", () => {
+  const KEY = "lw-test-the-case";
+  const resurrection = ARGUMENT_CASES.find((c) => c.slug === "resurrection")!;
+  const hell = ARGUMENT_CASES.find((c) => c.slug === "hell")!;
+
+  it("opens where the reader stopped, from the place saved before the move", () => {
+    // useProgress's shape under the same key: each passed move, by case.
+    window.localStorage.setItem(KEY, JSON.stringify({ "resurrection:facts": true, "resurrection:early": true }));
+    show("/tools/test-the-case", TestTheCase);
+    expect(screen.getByRole("heading", { level: 1, name: "Test the Case for Christianity" })).toBeInTheDocument();
+    expect(screen.getByText(`Move 3 of ${resurrection.steps.length}`)).toBeInTheDocument();
+    expect(screen.getByText(resurrection.steps[2].move)).toBeInTheDocument();
+  });
+
+  it("walks a case to where it ends, keeping each move, and starts it over on request", () => {
+    show("/tools/test-the-case", TestTheCase);
+    for (let i = 0; i < resurrection.steps.length; i++) {
+      fireEvent.click(screen.getByRole("button", { name: i < resurrection.steps.length - 1 ? /That's fair, keep going/ : /See where it lands/ }));
+    }
+    expect(screen.getByRole("heading", { name: "Where the case ends" })).toBeInTheDocument();
+    expect(screen.getByText(resurrection.close)).toBeInTheDocument();
+    expect(stored(KEY)["resurrection:__finished"]).toBe(true);
+    fireEvent.click(screen.getByRole("button", { name: /Start over/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Yes, start over" }));
+    expect(screen.getByText(`Move 1 of ${resurrection.steps.length}`)).toBeInTheDocument();
+    expect(stored(KEY)["resurrection:facts"]).toBeUndefined();
+  });
+
+  it("says so in the site's own sentence when the browser will not save", () => {
+    show("/tools/test-the-case", TestTheCase);
+    vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
+      throw new Error("QuotaExceededError");
+    });
+    fireEvent.click(screen.getByRole("button", { name: /That's fair, keep going/ }));
+    expect(screen.getByText(/Couldn't save to this browser/)).toBeInTheDocument();
+  });
+
+  it("answers to the keyboard: the number keys pick a case, Enter opens an objection", async () => {
+    const user = userEvent.setup();
+    show("/tools/test-the-case", TestTheCase);
+    const picker = screen.getByRole("group", { name: "The cases" });
+    within(picker).getByRole("radio", { name: resurrection.title }).focus();
+    await user.keyboard(String(ARGUMENT_CASES.filter((c) => c.published).findIndex((c) => c.slug === "hell") + 1));
+    expect(within(picker).getByRole("radio", { name: hell.title })).toBeChecked();
+    expect(screen.getByRole("heading", { level: 2, name: hell.title })).toBeInTheDocument();
+    const q = screen.getByRole("button", { name: hell.steps[0].objections[0].label });
+    q.focus();
+    await user.keyboard("{Enter}");
+    expect(q).toHaveAttribute("aria-expanded", "true");
+    expect(screen.getByText(hell.steps[0].objections[0].response)).toBeVisible();
   });
 });
