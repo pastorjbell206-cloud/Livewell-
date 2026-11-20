@@ -7331,7 +7331,7 @@ No web search.
 | Claim | Passage | Source | Checked by |
 |---|---|---|---|
 | The taunt in Psalm 79:10; after the exile (many scholars) | 1-8 | Repository deep note (historical); BSB | Stated as "many scholars" |
-| Images made with care, rites to make the god dwell, fed, clothed, washed | 1-8 | Repository deep note (cultural); earlier ledger on mouth-opening rites, if any, not relied on | Stated generally, no rite named |
+| Images made with care; in Mesopotamia mouth-washing and mouth-opening rites (mis pi, pit pi) so the image could see, smell, eat; images offered food and dressed in fine robes | 1-8 | Repository deep note (cultural); mis pi as summarised | Search (added after the first commit): en.wikipedia.org Mis-pi; library.biblicalarchaeology.org "From Statue to God: The Opening of the Mouth Ritual" and "Worshiping Idols". No daily schedule claimed |
 | Isaiah 44:9; Jeremiah 10:5; Acts 17:29; Colossians 3:5; 1 John 5:21; 1 Corinthians 15:20 | all | BSB | BSB text |
 | Three calls as a temple liturgy; "those who fear the LORD" as all Israel or as Gentile worshippers | 9-18 | Repository deep note (historical) | Stated as two readings |
 | 115:4-8 repeated in 135:15-18 | 9-18 | BSB | BSB text compared |
