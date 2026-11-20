@@ -1,5 +1,5 @@
 {
-  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build), holdout3 (third build), holdout4 (fourth build) and holdout5 (sixth build) were each written and committed before matching.json was touched; holdout2 and holdout3 have since been tuned for, and holdout4's two misses were tuned for in the sixth build. holdout6 (seventh build, 25 sentences across the topics written in full) was written and committed before matching.json was touched for that build; its nine misses were the tuning set of the eighth build. holdout7 (eighth build, 30 sentences, each aimed at a different topic written in full, sixteen of them at topics written in the sixth and seventh builds) was written and committed before matching.json or the matcher was touched, and is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
+  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build), holdout3 (third build), holdout4 (fourth build) and holdout5 (sixth build) were each written and committed before matching.json was touched; holdout2 and holdout3 have since been tuned for, and holdout4's two misses were tuned for in the sixth build. holdout6 (seventh build, 25 sentences across the topics written in full) was written and committed before matching.json was touched for that build; its nine misses were the tuning set of the eighth build. holdout7 (eighth build, 30 sentences, each aimed at a different topic written in full, sixteen of them at topics written in the sixth and seventh builds) was written and committed before matching.json or the matcher was touched, and was the clean set of that build. Read by client/src/lib/wisdom-match.test.ts. holdout8 (ninth build, 24 sentences written by the coordinator, who had not seen the phrasings, each set to the topic written in full that its description names; a twenty-fifth, about a church split and distrust of pastors, was dropped because Church Hurt is not yet written in full) was committed before the matcher or matching.json was touched, and is the clean set; it is never tuned to.",
   "cases": [
     { "q": "my son walked away from the faith", "expect": ["wayward-child"] },
     { "q": "passed over for promotion and bitter", "expect": ["envy-and-comparison", "jealousy", "anger", "success-and-failure", "conflict-at-work", "when-life-is-unfair"] },
@@ -229,5 +229,31 @@
     { "q": "my husband checks my phone and wont let me see my friends", "expect": ["toxic-relationships"] },
     { "q": "ive relapsed again after 90 days clean", "expect": ["addiction"] },
     { "q": "my wife spends everything and i try to save and we fight about money constantly", "expect": ["money", "saving-and-spending", "marriage-conflict"] }
+  ],
+  "holdout8": [
+    { "q": "ever since the funeral i just go through the motions", "expect": ["grief"] },
+    { "q": "my stomach is in knots every sunday night before work", "expect": ["anxiety"] },
+    { "q": "my daughter hasnt spoken to me in three years and i dont know what i did", "expect": ["estrangement"] },
+    { "q": "he dumped me by text and im a mess", "expect": ["breakup"] },
+    { "q": "i keep bailing my sister out and im drowning", "expect": ["codependency"] },
+    { "q": "i lie awake planning how to make her pay", "expect": ["revenge"] },
+    { "q": "i cant stop looking at stuff on my phone late at night and i hate myself after", "expect": ["pornography"] },
+    { "q": "we lost the baby at eleven weeks", "expect": ["miscarriage"] },
+    { "q": "im so tired of changing my dads diapers and then feeling guilty for being tired", "expect": ["caregiving"] },
+    { "q": "the scan came back and its spread", "expect": ["serious-illness", "terminal-diagnosis"] },
+    { "q": "i dont know if i even believe any of this anymore", "expect": ["doubt"] },
+    { "q": "how could god let my son die", "expect": ["losing-a-child"] },
+    { "q": "thirty eight and still no ring, everyone at church pities me", "expect": ["singleness", "longing-for-marriage"] },
+    { "q": "i say yes to everything and then resent everybody", "expect": ["people-pleasing", "saying-no"] },
+    { "q": "my brain wont shut up at 3am", "expect": ["overthinking"] },
+    { "q": "what if the layoffs hit me next", "expect": ["fear-of-the-future"] },
+    { "q": "my best friend told everyone what i told her in confidence", "expect": ["betrayal", "gossip-and-the-tongue"] },
+    { "q": "i havent taken a real vacation since the kids were born", "expect": ["rest-and-sabbath"] },
+    { "q": "i want to be married but the only guy interested doesnt go to church", "expect": ["dating-a-nonbeliever"] },
+    { "q": "sometimes i think everyone would be fine if i just disappeared", "expect": ["suicidal-thoughts"] },
+    { "q": "my husband checks my phone and wont let me see my friends", "expect": ["toxic-relationships"] },
+    { "q": "we fight about money every single week", "expect": ["marriage-conflict", "money"] },
+    { "q": "im furious at my mother in law", "expect": ["anger"] },
+    { "q": "i drink more than i should and i hide it", "expect": ["addiction", "alcohol-and-drinking"] }
   ]
 }
