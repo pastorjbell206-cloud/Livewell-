@@ -12217,3 +12217,30 @@ Cut before publishing: the Saqqara relief; the names of the pharaohs on each dat
 | Psalm 13:1; Psalm 44:24; Exodus 6:1 | 22-23 | BSB | BSB text |
 
 Cut before publishing: Rekhmire's painting (told in chapter 1); the BSB wording ‘three-day journey’ (paraphrased).
+
+## The plain notes on Exodus 6 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Now you will see’ answers ‘why’; strong hand, let go and drive out | 1-8 | exodus/verses/6.json (1) | Repository |
+| ‘I am the LORD’ framing the speech like a decree; the first-person verbs | 1-8 | exodus/6.json `literary`; exodus/verses/6.json (2-3) | Repository |
+| The go'el and Leviticus 25; ga'al first used of God's act toward Israel | 1-8 | exodus/6.json `cultural`, `words` (H1350A) | Repository |
+| The outstretched arm and Egyptian royal imagery | 1-8 | exodus/6.json `cultural` | Repository |
+| The covenant formula; laqach as for taking a wife | 1-8 | exodus/verses/6.json (7) | Repository |
+| The four cups tied to verses 6-7 | 1-8 | exodus/6.json `cultural` | Repository |
+| 6:3: sources; knowing by experience (Rashi); the narrator's usage; no side | 1-8 | exodus/6.json `hard` | Repository; no side |
+| Jeremiah 31:33; Revelation 21:3; Galatians 4:5; Titus 2:14; Genesis 15:7; 4:26 | 1-8 | BSB; exodus/6.json `christ` | BSB text |
+| Kotser ruach, ‘shortness of breath’; failure explained, not condemned; avodah qashah | 9-13 | exodus/verses/6.json (9) | Repository |
+| Qal vachomer; aral sefatayim | 9-13 | exodus/verses/6.json (10-13); exodus/6.json `words` (H6189) | Repository |
+| Psalm 34:18; Jeremiah 6:10 (the BSB's ‘closed’) | 9-13 | BSB; exodus/6.json `words` (H6189) | BSB text |
+| The list stops at Levi; Nadab and Abihu, Korah, Phinehas; the three Levite clans and their tasks | 14-25 | exodus/6.json `historical`; exodus/verses/6.json (17-19, 21-22, 24-25) | Repository |
+| Phinehas ‘the Nubian’ and other Egyptian names in the family | 14-25 | exodus/verses/6.json (24-25) | Repository |
+| Elisheba of Judah, sister of Nahshon; Elisabet in Greek | 14-25 | exodus/verses/6.json (23) | Repository |
+| Amram's marriage and Leviticus 18:12; the 430 years and the genealogy; Genesis 15:16 | 14-25 | exodus/6.json `historical`, `cultural` | Repository |
+| Leviticus 18:12; Numbers 16:1; Matthew 1:4; Luke 1:5 | 14-25 | BSB | BSB text |
+| The order of names in 26-27; tsava' ‘hosts’; resumptive repetition | 26-30 | exodus/6.json `literary`; exodus/verses/6.json (26-27, 28-30) | Repository |
+| Exodus 12:41; Psalm 105:26 | 26-30 | BSB | BSB text |
+
+Cut before publishing: Jochebed's name as ‘the LORD is glory’; Moberly and Wellhausen by name (kept as views); the Septuagint's ‘cousin’ for Jochebed.
