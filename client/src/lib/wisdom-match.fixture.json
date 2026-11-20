@@ -1,5 +1,5 @@
 {
-  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build), holdout3 (third build), holdout4 (fourth build) and holdout5 (sixth build) were each written and committed before matching.json was touched; holdout2 and holdout3 have since been tuned for, and holdout4's two misses were tuned for in the sixth build, so holdout5 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
+  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build), holdout3 (third build), holdout4 (fourth build) and holdout5 (sixth build) were each written and committed before matching.json was touched; holdout2 and holdout3 have since been tuned for, and holdout4's two misses were tuned for in the sixth build. holdout6 (seventh build, 25 sentences across the topics written in full) was written and committed before matching.json was touched for that build, so holdout6 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
   "cases": [
     { "q": "my son walked away from the faith", "expect": ["wayward-child"] },
     { "q": "passed over for promotion and bitter", "expect": ["envy-and-comparison", "jealousy", "anger", "success-and-failure", "conflict-at-work", "when-life-is-unfair"] },
@@ -170,5 +170,32 @@
     { "q": "I work twice as hard as him and he got the credit and the raise", "expect": ["when-life-is-unfair", "envy-and-comparison", "status-and-recognition"] },
     { "q": "I copied answers on my exam and nobody knows", "expect": ["cheating", "honesty-and-integrity"] },
     { "q": "starting university in a city where I don't know a single person", "expect": ["going-to-college", "loneliness", "life-transitions"] }
+  ],
+  "holdout6": [
+    { "q": "my husband drinks every night and gets mean when hes drunk", "expect": ["alcohol-and-drinking", "addiction", "toxic-relationships"] },
+    { "q": "i cant stop looking at porn even tho i hate myself after", "expect": ["pornography", "sexual-purity", "temptation"] },
+    { "q": "the doctor said moms cancer is back and theres nothing more they can do", "expect": ["terminal-diagnosis", "facing-death", "losing-a-parent"] },
+    { "q": "we have been trying for a baby for four years and every month is another no", "expect": ["infertility"] },
+    { "q": "my wife died in march and i still set out two coffee cups", "expect": ["losing-a-spouse", "grief"] },
+    { "q": "i dont see the point of getting out of bed anymore", "expect": ["depression", "despair-and-hope", "suicidal-thoughts"] },
+    { "q": "everyone in my small group knows my business because somebody cant keep their mouth shut", "expect": ["gossip-and-the-tongue"] },
+    { "q": "the pastor told us we have to back his decision and not question it", "expect": ["submitting-to-leaders"] },
+    { "q": "i havent taken a real day off in like two years", "expect": ["rest-and-sabbath", "work-and-burnout"] },
+    { "q": "my back hurts every single day and nothing the doctors try helps", "expect": ["chronic-pain"] },
+    { "q": "i walked away from the accident and the other driver didnt", "expect": ["survivors-guilt", "sudden-loss"] },
+    { "q": "my daughter says she doesnt believe in god anymore and wont come to church with us", "expect": ["wayward-child", "parenting-adult-children", "raising-teenagers"] },
+    { "q": "we owe more on the credit cards than we make in a year", "expect": ["financial-hardship", "money"] },
+    { "q": "the families in our building have had no heat all winter and the landlord doesnt care", "expect": ["justice-and-the-poor"] },
+    { "q": "our 30 year old keeps asking us for money", "expect": ["parenting-adult-children", "money"] },
+    { "q": "my boyfriend and i are sleeping together and i know we shouldnt be", "expect": ["sexual-purity", "temptation"] },
+    { "q": "my dad pasted away last week and i never got to say goodbye", "expect": ["losing-a-parent", "grief"] },
+    { "q": "is my grandma really in heaven now or is she just gone", "expect": ["heaven-and-eternity", "grief"] },
+    { "q": "i hate the way i look and i hate who i am", "expect": ["self-hatred"] },
+    { "q": "every time i try to tell my husband how i feel he just shuts down", "expect": ["marriage-communication", "marriage-conflict"] },
+    { "q": "my girlfriend has been texting her ex behind my back", "expect": ["cheating", "betrayal"] },
+    { "q": "our newborn wont sleep and i feel like im failing as a mom", "expect": ["new-parenthood"] },
+    { "q": "i lost the baby at 12 weeks and everyone acts like it never happened", "expect": ["miscarriage"] },
+    { "q": "im taking care of my husband since his stroke and im worn out", "expect": ["caregiving", "serious-illness"] },
+    { "q": "my wife doesnt want me to touch her anymore", "expect": ["marriage-intimacy"] }
   ]
 }
