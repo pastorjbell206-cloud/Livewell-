@@ -641,3 +641,34 @@ Ancient and older texts are quoted only from public-domain translations read in 
 ### What remains in the area
 
 From the plan's eighteen: camels in Genesis, the authorship of the Pentateuch, David and Solomon (Tel Dan), what outside sources confirm (Merneptah, Mesha), Genesis 1 to 11 as a whole, slavery, the "angry God of the Old Testament", the Old Testament laws Christians don't keep, women in the law, the cursing psalms, sacrifice, and Abraham and Isaac. James's read of the five before the area goes live; each goes live by its `status` and the area's in `areas.json`.
+
+---
+
+## 14. Seventeenth run (2026-11-20): an editor's read of the Old Testament area, and the area on evil, suffering and judgment
+
+### The editor's read of the five Old Testament pieces and the area page
+
+An independent read, as an archaeologist skeptical of apologetics, as a Jewish reader, as a conservative scholar holding an early exodus and a sixth-century Daniel, and as a scholar holding the late dates. Thirty-eight changes, each in the record and the data (the record diff at 0), each with a before-and-after row in `apol-ledger.md` under "Seventeenth run". Every source the sixteenth run held only as secondary was rechecked. GitHub is still the only host this machine reaches, so each was either confirmed in a readable copy there or in the Study Bible's own notes, narrowed to what those confirm, or cut. Cut, because nothing could be opened: the 1995 radiocarbon study of Jericho, Frymer-Kensky's article, Friedman's *The Exodus*, the 2025 Qumran study (its preprint abstract, read on GitHub, says nothing of Daniel), and Heidel's *Gilgamesh Epic* (the one readable record gives a different year). Narrowed: Kitchen (now Hoffmeier, in the Note on Exodus 12's words), Kenyon's and Wood's specifics, Hazor's burning, the Merneptah date, Delitzsch and Finkel. One error was found and corrected from a primary text: the Canaanite page said an English captain defended the Mystic killing of 1637 "with these very chapters open," but Underhill's *Newes from America* (1638), read in full, points to Scripture in general and to David's war, never to Deuteronomy or Joshua; his own sentence is now quoted. For the readers named: the late-date believer now has a conclusion he can sign (Goldingay, in the Note on Daniel 7); the critic's best point about Belshazzar is stated; the young-earth and global-flood readers have their views in their own terms; "his people's understanding" became "an ancient world" in the accommodation reading. The Canaanite page mentions no modern conflict and gives no warrant against any people. All five and the area stay pending.
+
+### The area "evil" (pending)
+
+Slug `evil` (the plan's), title as in `areas.json`. Records in `docs/work/elite/apol-pilot/evil/` (index.md and five pieces), data in `client/public/questions/evil/`.
+
+| Piece | Address (pending) | Argued prose | Key |
+|---|---|---|---|
+| If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true? | /questions/evil/the-logical-problem-of-evil | 2,078 | ai |
+| Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely? | /questions/evil/the-evidential-problem-of-evil | 2,037 | aj |
+| Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them? | /questions/evil/natural-evil-and-animal-suffering | 2,137 | ak |
+| If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God? | /questions/evil/the-hiddenness-of-god | 1,939 | al |
+| How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil? | /questions/evil/hell-and-the-justice-of-god | 2,196 | am |
+
+Each piece's short answer opens with one plain sentence that the page argues and that the wisdom pages and Find Help are for someone hurting now, and the area page opens the same way. No page offers a reason for any particular suffering, and each says that some Christian answers are worse than silence or that no answer explains a particular evil, in agreement with the Honest Answer on suffering and the film "Why do bad things happen?". The philosophers' arguments (Mackie, Plantinga, Rowe, Wykstra, Hick, Draper, Adams, Schellenberg) are paraphrased from the Stanford Encyclopedia's and the Internet Encyclopedia's articles, read in full in GitHub copies; no living author is quoted. Quoted from texts read this run: Hume's *Dialogues*, Dostoevsky in Garnett's translation, Pascal's *Pensées* 430, Origen's *De Principiis* 1.6.2, Russell's lecture, the Augsburg and Westminster Confessions and the Athanasian Creed. Mackie's later concession and Rowe's note are stated as each said it, from the reference works that quote them; nothing is given as a head-count. The hell page sets out eternal conscious punishment and conditional immortality with the strongest difficulty of each and takes no side between them, states the hope of universal restoration as outside most confessions without contempt, speaks of no person's fate, says nothing of suicide, and carries a paragraph for a reader afraid for himself or for someone who has died. The pieces agree with the Honest Answers on suffering, natural evil, hell and those who never heard, with the wisdom topics on suffering and heaven and eternity, and with the Study Bible's notes on Job 1 and 42, Psalms 13 and 88, Isaiah 45, Luke 13, John 9, Romans 8, Mark 8 and 2 Thessalonians 1; none was contradicted. The questions test now knows the area (five pending pieces).
+
+### Found, for the editor of the Honest Answers (not changed: `answers.ts` is outside this run)
+
+- The hell answer's ledger row gives the essay title "The Problem of Hell: A Problem of Evil for Christians" (1993) to Thomas Talbott; the Stanford Encyclopedia's bibliography gives it to Marilyn McCord Adams (in Stump, ed., *Reasoned Faith*, Cornell, 1993). The answer's text ("Talbott argued that hell ... is a problem of evil that Christians have to answer among themselves") may rest on that conflation.
+- The hell answer closes "They don't disagree that a person can choose it", which those who hope for universal restoration, whom the same answer names, would not sign.
+
+### What remains in the area
+
+From the plan's twelve: Ehrman's *God's Problem* as a page of its own, evil done to children, why God doesn't stop the worst evils, prayer, the righteous suffering and the wicked prospering (Job, Psalm 73), God's sovereignty and evil, and grief and the argument. James's read of the five before the area goes live; each goes live by its `status` and the area's in `areas.json`.
