@@ -11556,3 +11556,28 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Daniel 7:10; Psalm 150:6; Revelation 19:10; 22:8-9 | 11-14 | BSB | BSB text |
 
 Cut before publishing: nothing beyond the deep note; Daniel 7's horns were left as the deep note's general ‘horns as strength’ without a quotation.
+
+## The plain notes on Revelation 6 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Each seal opened by the Lamb, each ‘Come’, each rider ‘given’: permitted and limited; the series follows Mark 13 | 1-4 | revelation/6.json `literary`, `christ` | Repository |
+| Parthia, its mounted archers, Carrhae (53 BC) and AD 62; the Pax Romana; the civil wars of AD 68 to 69 | 1-4 | revelation/6.json `historical` | Repository |
+| The four ways of reading applied to the seals; recapitulation from Victorinus of Pettau (died about 304) | 1-4 | guides/reading-apocalyptic.json (symbols; four ways); revelation/intro.json `teaching` | Repository, no side |
+| Zechariah 1:8; 6:2-3; Mark 13:7 | 1-4 | BSB | BSB text |
+| A denarius a day's wage (Matthew 20:2); a quart a day's ration; barley the grain of the poor; oil and wine: drought or Domitian's vineyard edict about AD 92 (Suetonius) | 5-8 | revelation/6.json `historical` | Repository, no side |
+| Chlōros, a corpse's colour; Hades for Sheol; a fourth as a limit; the keys (1:18) | 5-8 | revelation/6.json `cultural`, `doctrines` | Repository |
+| Disasters are not a verdict on those struck: Luke 13:4-5 and John 9:3 in the words already used | 5-8 | psalms/plain/38.json (1-22 `later`); 1-john/plain/5.json (16-17 `hard`) | Word for word |
+| Ezekiel 14:21; Zechariah 6:2; Luke 13:4-5; John 9:3; Mark 13:8 | 5-8 | BSB | BSB text |
+| Marturia and the word martyr; Antipas (2:13); blood at the base of the altar (Leviticus 4:7); lament psalms; white robes as vindication | 9-11 | revelation/6.json `words` (G3141), `cultural`; revelation/intro.json `teaching` (suffering) | Repository |
+| The cry for vengeance: Luke 23:34, Acts 7:60, Romans 12:19, ekdikeō, repentance kept open (9:20-21; 11:13; 14:6-7) | 9-11 | revelation/6.json `hard`, `words` (G1556) | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 9-11 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Leviticus 4:7; Psalm 79:5; Zechariah 1:12; Luke 23:34; Romans 12:19 | 9-11 | BSB | BSB text |
+| Day of the LORD images: Joel 2:31, Isaiah 34:4, Isaiah 2:19, Hosea 10:8, Luke 23:30; the social list from kings to slaves; orgē; ‘the wrath of the Lamb’ | 12-17 | revelation/6.json `cultural`, `literary`, `words` (G3709), `doctrines` | Repository |
+| Earthquakes of AD 17 (twelve cities, Sardis and Philadelphia) and about AD 60 (Laodicea), Tacitus | 12-17 | revelation/6.json `historical` | Repository |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 12-17 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Joel 2:31; Isaiah 34:4; Isaiah 2:19; Hosea 10:8; Matthew 24:36 | 12-17 | BSB | BSB text |
+
+Cut before publishing: who the rider on the white horse is (the repository's notes give no readings, so none is offered); ‘the scales echo a city under siege’ (no echo in the repository's notes); per-reading accounts of the sixth seal (the notes give the four ways in general only); a line likening the sixth seal to Isaiah's oracles on nations in his own time.
