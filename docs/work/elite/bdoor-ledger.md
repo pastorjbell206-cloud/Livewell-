@@ -12587,3 +12587,40 @@ Cut before publishing: a guess about who the ‘priests’ of verses 22 and 24 w
 | Joshua 8:31; John 4:23 | 22-26 | BSB | BSB text |
 
 Cut before publishing: the Genesis 19 care line (its wording speaks of ‘this story’ and could not be used whole); Kuntillet Ajrud; the Nash Papyrus (on the book page's timeline); Dawkins and Marcion by name; Maimonides on the first commandment.
+
+## The plain notes on Exodus 21 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Book of the Covenant named from 24:7; principles of chapter 20 applied to village life | 1-6 | exodus/21.json `story`; guides/reading-law.json (table) | Repository |
+| Case law with ‘if’; typical cases for judges to reason from; mishpatim as rulings | 1-6 | guides/reading-law.json (‘Two ways of giving law’); exodus/21.json `literary`, `words` (H4941G) | Repository |
+| Hammurabi's stela, about 1750 BC, found at Susa in 1901; shared cases; penalties by rank; law as God's word, not a king's decree | 1-6, 22-27 | exodus/21.json `historical`; context/guides/torah-and-the-law-codes.json | Repository |
+| Christian readings of the law: Aquinas, Calvin and Westminster (moral, ceremonial, civil); Lutheran law and gospel; dispensational and New Covenant readings | 1-6 | guides/reading-law.json (‘Christ and the Law’) | Repository; no side |
+| Debt as the road into servitude; the seventh-year release and the Sabbath; the pierced ear at the doorpost | 1-6 | exodus/21.json `cultural`, `story` | Repository |
+| Leviticus 25:44-46 lifelong holding of foreigners; regulate, not endorse (Christopher Wright; Matthew 19:8); critics' reply; both true to the text | 1-6 | guides/reading-law.json (‘Reading the laws that trouble’); exodus/21.json `hard` | Repository; no side |
+| Hammurabi put to death the one who sheltered a runaway; Deuteronomy 23:15-16 | 1-6 | context/guides/the-slavery-texts.json | Repository |
+| The Atlantic slave trade misuse paragraph | 1-6 | ephesians/plain/6.json and 1-timothy/plain/6.json (5-9 and 1-2 `hard`), reused; intro `teaching` (‘Rescue first’) | Repository |
+| Deuteronomy 15:12-15; Leviticus 25:40, 43; Jeremiah 34:14, 16; 1 Timothy 1:10 | 1-6, 7-11 | BSB | BSB text |
+| The daughter sold usually meant as a wife for the master or his son; her protections | 7-11 | exodus/21.json `cultural` | Repository |
+| The care line ‘A word for anyone who is being held, owned or forced to work today ...’ | 7-11 | 1-peter/plain/2.json (18-25 `hard`), word for word | Repository |
+| No police; the avenger of blood; refuge, later the cities of refuge; no shelter at the altar for murder; cursing a parent as repudiation | 12-17 | exodus/21.json `cultural` | Repository |
+| Joab at the altar and Exodus 21:14 | 12-17 | 1-kings/2.json | Repository |
+| Numbers 35:11, 31; Matthew 15:4 | 12-17 | BSB | BSB text |
+| A slave's killing a crime to be avenged; verse 21 ‘his silver’; the difficulty of proving intent; the loss of work as penalty; later misuse in the American South | 18-21 | exodus/21.json `hard` | Repository |
+| The care sentences ‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page ...’ | 18-21 | 1-peter/plain/2.json (18-25 `hard`), word for word | Repository |
+| Job 31:13-15; Ephesians 6:9 | 18-21 | BSB | BSB text |
+| Eye for eye as a limit for judges; the same law for all (Leviticus 24:22); Hammurabi's silver for commoners and slaves | 22-27 | exodus/21.json `historical`, `literary`; leviticus/24.json `historical`; matthew/plain/5.json (38-42) | Repository |
+| The Mishnah and Talmud on payment, not maiming | 22-27 | guides/reading-law.json; leviticus/24.json `historical` | Repository |
+| The master who maims a slave loses him | 22-27 | exodus/21.json `literary` | Repository |
+| 21:22: ‘children come out’; premature live birth or miscarriage, each with its reading of verse 23; both readings defended; cited in abortion debates | 22-27 | exodus/21.json `literary` | Repository; no side |
+| The rare word for ‘serious injury’, elsewhere only in Genesis 42:4, 38 and 44:29 | 22-27 | genesis/verses/42.json | Repository |
+| ‘These notes take no political position and speak for no party or law’; the care line ‘If you carry grief or guilt about a pregnancy ...’ | 22-27 | psalms/plain/139.json (13-18 `hard`), word for word | Repository |
+| Leviticus 24:20, 22; Deuteronomy 19:18, 21; Matthew 5:38-39 | 22-27 | BSB | BSB text |
+| The goring ox in Eshnunna and Hammurabi; accident and negligence; verse 35 nearly Eshnunna's law | 28-36 | exodus/21.json `historical`; guides/reading-law.json | Repository |
+| Kopher, ransom; no ransom for a murderer; the ox stoned as a life not property (Genesis 9:5) | 28-36 | exodus/21.json `words` (H3724A); guides/reading-law.json | Repository |
+| Zechariah 11:12-13 and Matthew 26:15 with Exodus 21:32 | 28-36 | zechariah/11.json; matthew/plain/26.json | Repository |
+| Mark 10:45 and the ransom | 28-36 | exodus/21.json `christ` | Repository |
+
+Cut before publishing: ‘in much of the ancient world a master who killed his slave answered to no one’ (no source in the repository); a guess that the pierced ear stopped later claims of forced service; ‘on every view these laws are not a code for any nation’ (theonomists hold otherwise).
