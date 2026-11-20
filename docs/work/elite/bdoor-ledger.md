@@ -12683,3 +12683,29 @@ Cut before publishing: that a seduced woman could find it hard to marry (no sour
 | Joshua 24:12; 1 Kings 4:21; Deuteronomy 9:5; Joshua 6:25 | 27-33 | BSB | BSB text |
 
 Cut before publishing: that ‘refreshed’ is built on the word for soul (the lexicon gives ‘to take breath’); the suggestion that the hornet stood for Egypt (the deep note calls it speculative).
+
+## The plain notes on Exodus 24 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 19 offers, 20 to 23 set out, 24 seals; the prophets' covenant | 1-2 | exodus/24.json `story` | Repository |
+| The graded approach, later built into court, holy place and inner room | 1-2 | exodus/24.json `literary` | Repository |
+| Nadab and Abihu: nearness no guarantee of faithfulness; Leviticus 10:1 | 1-2 | exodus/24.json `historical`; BSB | Repository |
+| Hebrews 12:24 | 1-2 | BSB | BSB text |
+| Ancient covenant ritual: written terms, reading, witnesses, oath, sacrifice, meal; twelve stones | 3-8 | exodus/24.json `historical` | Repository |
+| The second answer adds ‘we will be obedient’, literally we will hear | 3-8 | exodus/24.json `literary` | Repository |
+| Blood as life given up in death; altar and people bound; Genesis 15 compared; cleansing reading | 3-8 | exodus/24.json `cultural`, `words` (H1818) | Repository; no side |
+| The promise sincere and short-lived (chapter 32) | 3-8 | exodus/24.json `story` | Repository |
+| Mark 14:24; Luke 22:20; Jeremiah 31:31; Hebrews 9:18, 20; Leviticus 17:11 | 3-8 | BSB; exodus/24.json `christ` | BSB text |
+| Nothing of God's form; the pavement probably lapis lazuli; the meal from the peace offerings; Jacob and Laban | 9-11 | exodus/24.json `cultural` | Repository |
+| Seeing God: 33:20 and John 1:18; mediated vision; the Son; the Septuagint's ‘the place where’ | 9-11 | exodus/24.json `hard` | Repository; no side |
+| Genesis 31:54; Isaiah 25:6; Revelation 19:9 | 9-11 | BSB; exodus/24.json `christ` | BSB text |
+| Joshua as attendant; Hur and 17:12 | 12-18 | exodus/24.json `historical` | Repository |
+| Kavod; shakan, mishkan and Shekinah | 12-18 | exodus/24.json `words` (H3519, H7931) | Repository |
+| Six days and the seventh echo creation; the glory and 40:34 | 12-18 | exodus/24.json `literary` | Repository |
+| Deuteronomy 31:11, the law read every seventh year | 3-8 | BSB; exodus/24.json `historical` | BSB text |
+| Matthew 4:2 (a link of theme); Hebrews 12:29 | 12-18 | BSB; exodus/24.json `christ` | BSB text |
+
+Cut before publishing: a single-quoted ‘we will hear’ (not the BSB's wording; now said without quotation marks). Also cut: ‘the writer seems to look down, not up’ (no source).
