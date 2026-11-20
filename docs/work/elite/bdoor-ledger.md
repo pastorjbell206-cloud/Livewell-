@@ -9931,3 +9931,21 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Pillar: Ephesus famous for the temple of Artemis's columns | 14-16 | Chapter deep note `words` (G4769) | Repository |
 | 3:16 an early hymn or creed, six lines in three pairs of earth and heaven; mustērion | 14-16 | Chapter deep note `literary`, `words` (G3466) | Repository |
 | Exodus 40:34; 1 Kings 8:27; Psalm 22:27; Isaiah 52:10; 6:3 | 14-16 | BSB | BSB text |
+
+## The plain notes on 1 Timothy 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Later times’ already present; Mark 13:22; Acts 20:29-30 | 1-5 | Chapter deep note `historical` | Repository |
+| Currents behind the bans: Greek disdain of the body; Jewish food discipline; Essenes avoiding marriage (Josephus and Philo, not named here); resurrection already past (2 Timothy 2:18); angels who do not marry | 1-5 | Chapter deep note `historical` | Repository |
+| Singleness a gift (1 Corinthians 7:7); fasting (Matthew 6:16-18); Romans 14 | 1-5 | BSB references | BSB text |
+| Genesis 1:31; 2:24; Proverbs 18:22; Psalm 145:15; Genesis 9:3 | 1-5 | BSB | BSB text |
+| Gymnasium central to civic life; gumnazō | 6-10 | Chapter deep note `cultural` | Repository; standard lexicons |
+| 4:10 readings: two senses of Saviour (sōtēr used of benefactors); offered to all; ‘especially’ as ‘that is’; universalist reading; most reject it here (1:19; 6:9); no side | 6-10 | Chapter deep note `hard` | Repository wording. No side |
+| Psalm 1:2; Proverbs 4:13; Psalm 145:9; 36:6; Isaiah 43:11 | 6-10 | BSB | BSB text |
+| Youth could mean a man into his thirties; respect followed age | 11-16 | Chapter deep note `cultural` | Repository |
+| Public reading from the synagogue; few owned copies; reading, exhortation, teaching | 11-16 | Chapter deep note `cultural` | Repository |
+| Laying on of hands (Numbers 27:18-23; Acts 6:6; 13:3) | 11-16 | Chapter deep note `cultural` | Repository; BSB text |
+| Jeremiah 1:6-7; Psalm 119:9; Deuteronomy 31:11; Nehemiah 8:8; Numbers 27:18 | 11-16 | BSB | BSB text |
