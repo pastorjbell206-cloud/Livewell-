@@ -10290,3 +10290,31 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Pliny to Sabinianus, early second century | Timeline | philemon/1.json `historical` | Repository (letter number not given on the page) |
 | Seed whose logic could not coexist with ownership (‘most readers today’) | Themes | philemon/intro.json `themes` | Repository wording |
 | Map: Colossae, Ephesus, Caesarea, Rome | Map | colossians teaching map coordinates | Repository |
+
+## The plain notes on Philemon 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Colossae from Colossians 4:9, 17 (‘most readers’) | 1-3 | philemon/intro.json `setting` | Repository; BSB |
+| House churches gathered the household; letter read before all, perhaps Onesimus; deliberate | 1-3 | Chapter deep note `cultural` | Repository |
+| Numbers 6:25-26; Psalm 68:6 | 1-3 | BSB | BSB text |
+| Koinōnia; splanchna three times; thanksgiving prepares the request; 7 and 20 frame | 4-7 | Chapter deep note `words`, `literary` | Repository |
+| Psalm 133:1; Proverbs 25:11 | 4-7 | BSB | BSB text |
+| Command versus appeal; name delayed to verse 10; aged and in chains | 8-11 | Chapter deep note `literary` | Repository |
+| Onesimus a common slave name meaning useful; achrēstos and euchrēstos; chrēstos pronounced like Christos | 8-11 | Chapter deep note `cultural`, `words` (G3682) | Repository |
+| What is known and what is inferred; Chrysostom; the intercession distinction; sent by Philemon | 8-11 | philemon/intro.json `purpose`, `setting`; chapter deep note `historical` | Repository, each as a reading. No side |
+| Psalm 68:5; Deuteronomy 23:15-16 | 8-11 | BSB | BSB text |
+| ‘In person’ is en sarki, ‘in the flesh’ | 12-16 | Greek text of verse 16 | Repository text |
+| The hard part on slavery and its misuse (Paul's position; Gregory of Nyssa; abolitionists; Fugitive Slave Act 1850; enslaved Christians; slowness confessed) | 12-16 | Chapter deep note `hard`; ephesians/plain/6.json (5-9) for the Atlantic sentence | Repository wording |
+| Genesis 33:3-4; Leviticus 25:40; Job 31:15 | 12-16 | BSB | BSB text |
+| IOU in Paul's hand; debt and the greater debt; onaimēn in verse 20; guest room to see how he was received | 17-22 | Chapter deep note `literary`; philemon/intro.json `reading` | Repository |
+| Luther's preface, ‘in effect’ | 17-22 | Chapter deep note `christ` | Repository, paraphrased |
+| Three readings of verse 21; Ignatius and Bishop Onesimus, unproven | 17-22 | philemon/intro.json `purpose`, `reading` | Repository. No side |
+| Leviticus 6:5; Ruth 1:16 | 17-22 | BSB | BSB text |
+| Epaphras founded the church at Colossae (Colossians 1:7); Mark (Acts 15:37-39; 2 Timothy 4:11); Aristarchus of Thessalonica (Acts 27:2); Luke the physician, named by early writers as author; Demas (2 Timothy 4:10) | 23-25 | Chapter deep note `historical`; acts teaching timeline | Repository; BSB |
+| ‘Your’ plural in verse 25 | 23-25 | Greek text (humōn) | Repository text |
+| Numbers 6:24-25 | 23-25 | BSB | BSB text |
+
+## Philemon complete (2026-11-20)
