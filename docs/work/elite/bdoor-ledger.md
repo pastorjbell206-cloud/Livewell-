@@ -9684,3 +9684,36 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Rapture readings and confession | 15-18 | Chapter deep note `hard`; studyguides/end-times.json | Repository wording. No side; no dates; no events named |
 | Paul ‘we who are alive’: hoped, or spoke as one of the living; Philippians 1:21-23 | 15-18 | BSB; stated as readers' views | BSB text. No side |
 | Exodus 19:16; Psalm 47:5; Isaiah 27:13; Daniel 7:13; Psalm 16:11 | 15-18 | BSB | BSB text |
+
+## The plain notes on 1 Thessalonians 5 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Day of the Lord in the prophets; the thief picture from Jesus (Matthew 24:43) | 1-3 | Chapter deep note `historical`, `words` (G2812) | Repository |
+| ‘Peace and security’: Roman slogan on coins and inscriptions ("many scholars") or Jeremiah's false prophets | 1-3 | Chapter deep note `cultural` | Repository. No side |
+| No dates; predictions have come and gone; no event named | 1-3 | studyguides/end-times.json; Matthew 24:36; Acts 1:7 | Repository; BSB text |
+| Amos 5:18; Isaiah 13:6, 8; Jeremiah 6:14 | 1-3 | BSB | BSB text |
+| ‘Sons of’ a Hebrew idiom | 4-11 | Standard | Standard |
+| Night dark, unpoliced, drunkenness and crime | 4-11 | Chapter deep note `cultural` | Repository |
+| Armour from Isaiah 59:17; faith, love, hope from 1:3; ‘awake or asleep’ seems to mean living or dead; verse 10 an early statement of why Jesus died | 4-11 | Chapter deep note `literary`, `christ` | Repository |
+| Isaiah 59:17; 9:2; 60:1; Proverbs 23:35 | 4-11 | BSB | BSB text |
+| Leaders unnamed by title; kopiaō; proistēmi ‘preside, lead’ | 12-15 | Chapter deep note `historical`; lex/G (G4291) | Repository lexicon |
+| Ataktos used of soldiers out of rank | 12-15 | lex/G (G0813, Abbott-Smith) | Repository lexicon |
+| Leaders accountable; no authority covers abuse; the harmed free to go to another leader, a counselor or the authorities | 12-15 | wisdom/deep/submitting-to-leaders.json `differ.share`, `misread` (Hebrews 13:17) | Repository wording; last sentence word for word |
+| Ezekiel 34:4, 16; Leviticus 19:18; Proverbs 20:22; 25:21 | 12-15 | BSB | BSB text |
+| Commands two or three words in Greek | 16-22 | Chapter deep note `literary` | Repository |
+| Adialeiptōs recurring, not without any break; used of Paul's prayers (1:3; 2:13) | 16-22 | Chapter deep note `words` (G0089) | Repository |
+| Prophecy continues or ceased; no side | 16-22 | Chapter deep note `doctrines` (spirit) | Repository |
+| Dokimazō of testing metals | 16-22 | lex/G (G1381) | Repository lexicon |
+| Romans 8:28 line; sadness care lines | 16-22 | 2-corinthians/plain/4.json; psalms/plain/6.json | Word for word (the first fitted to ‘give thanks’) |
+| Habakkuk 3:18; Psalm 34:1; Daniel 6:10; Numbers 11:29; Deuteronomy 18:22 | 16-22 | BSB | BSB text |
+| Spirit, soul, body: three parts or the whole person | 23-28 | Chapter deep note `words` (G3648) | Repository. No side |
+| Holy kiss a family greeting; letters read aloud to the church | 23-28 | Chapter deep note `cultural` | Repository. Literacy claim cut |
+| Deuteronomy 7:9; Isaiah 26:3; Numbers 6:26 | 23-28 | BSB | BSB text |
+
+## 1 Thessalonians complete (2026-11-20)
+
+All five chapters in plain words. No web searches for this book: every claim rests on the
+repository's notes, lexicon and study guides.
