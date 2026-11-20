@@ -77,3 +77,30 @@ No candidate, party, platform, election or law is named. The people in the openi
 | Scripture (ESV): Matthew 4:8-9, 5:44; John 6:15, 18:36; Luke 6:15, 9:55; Mark 10:37, 12:17, 15:27; Romans 10:9; Acts 17:7; Philippians 3:20; Psalm 146:3 | ESV copy, by script | Words verified |
 
 Cut or held back: any sentence of Rauschenbusch in quotation marks; Niebuhr's sentence as a quotation; the numbers of the dead in the wars of religion; John 19:15 (left out so that no line could be read as blaming the Jewish people; John 18:36 is quoted only as far as "fighting").
+
+## 2. should-women-preach
+
+The essay states no position as James's. The people in the opening paragraph are types, not memories.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Phoebe: the word translated "servant" (Romans 16:1) is the word translated "deacon" elsewhere | Not opened this run (diakonos; Philippians 1:1, 1 Timothy 3:8) | Reference knowledge |
+| Most scholars think Phoebe carried the letter | Not opened this run | Reference knowledge, stated as scholars' opinion |
+| Prisca named before Aquila in Romans 16:3; Acts 18:26 | ESV copy | Verified |
+| Romans 16:7 can also be read "outstanding among the apostles" | Not opened this run; the 1889 editor's note in WD discusses both readings | Reference knowledge, partly seen |
+| Chrysostom (fourth century) read Junia as a woman counted an apostle: "should be even counted worthy of the appellation of apostle" | WD, Chrysostom, *Homilies on Romans*, Homily 31 (the NPNF text). The full sentence begins "Oh! how great is the devotion ... of this woman, that she"; the essay quotes only the clause without the exclamation points | Verbatim (clause) |
+| The English editor's note: prefers Junias; "that a woman should have been an apostle is out of the question" | WD, same file, note 13, signed G. B. S. | Verbatim. The essay says "in the nineteenth century"; the volume's year (1889) was not opened |
+| Many twentieth-century English Bibles printed "Junias"; no man of that name is known from another ancient source | Not opened this run | Reference knowledge |
+| 1 Corinthians 11:5 and 14:34-35 stand in the same letter; the two common readings of chapter 14 | ESV copy for the texts; the readings are paraphrase of each side | Verified / paraphrase |
+| "Exercise authority" renders a verb found once in the New Testament; its meaning is disputed | Not opened this run (authentein) | Reference knowledge |
+| King James Version: "usurp authority" | Not opened this run (1 Timothy 2:12, KJV) | Reference knowledge; two words quoted |
+| "Complementarian" as a name dates from the late 1980s | Not opened this run | Reference knowledge |
+| Tertullian, around 200: "And do you not know that you are (each) an Eve?" and "You are the devil's gateway" | WD, Tertullian, *On the Apparel of Women*, Book 1, ch. 1 (the ANF text) | Verbatim; date reference knowledge |
+| Pliny, around 112, questioned under torture two enslaved women "who were called deaconesses" | Repo, `scripts/data/history-sources/texts/eusebius-church-history-3.html` (McGiffert's translation of the letter in his note); date from the live essay `the-early-church-under-rome` | Verbatim |
+| Chalcedon, 451, canon 15: "receive the laying on of hands as a deaconess" | WD, Council of Chalcedon, The 30 Canons (the NPNF text) | Verbatim |
+| Quaker women preached in the 1600s; Antoinette Brown ordained by a Congregational church in New York in 1853; women missionaries sent abroad by churches that limited them at home | Not opened this run | Reference knowledge |
+| The creeds say nothing on who may preach | Creeds.json (Apostles', Nicene) | Verified |
+| Care line: "If you need someone sooner, [Find Help](/help) lists hotlines for abuse and sexual assault." | Repo, live essay `doubt-after-church-abuse`, reused whole | Site's own |
+| Scripture (ESV): John 20:18; Luke 24:11; Acts 2:17, 18:26, 21:9; 1 Corinthians 11:5, 12:7, 12:11, 13:12, 14:29, 14:34-35; Romans 16:1-3, 16:7; 1 Timothy 1:3, 2:11-14, 3:2; 2 Timothy 3:6; Philippians 4:3; Galatians 3:28; Matthew 20:26; Genesis 1:27-28 (cited) | ESV copy, by script | Words verified |
+
+Cut or held back: Margaret Fell's 1666 title, Catherine Booth, Phoebe Palmer, the 1956 Methodist and Presbyterian decisions, the 1987 and 1989 statements of the two modern camps, and the Catholic ruling of 1994 (none could be opened; none is needed for the argument); Judges 4 and Huldah were drafted and cut for length; any named modern scholar.
