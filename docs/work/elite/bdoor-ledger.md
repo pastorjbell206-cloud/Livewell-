@@ -9910,3 +9910,24 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Readings: the Saviour's birth (Genesis 3:15); safety in childbirth; family life against those who forbade marriage | 15 | Chapter deep note `hard` | Repository. No side |
 | Childless care lines | 15 | genesis/plain/30.json | Word for word (five sentences) |
 | Genesis 3:15-16; 1 Samuel 1:27; Isaiah 56:5 | 15 | BSB | BSB text |
+
+## The plain notes on 1 Timothy 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Episkopos, later ‘bishop’; seemingly the same as elder (Acts 20:17, 28) | 1-7 | Chapter deep note `words` (G1985), `historical` | Repository; BSB text |
+| Most qualities admired by pagan moralists; ‘able to teach’ and not a recent convert the distinctively Christian items; reputation with outsiders | 1-7 | Chapter deep note `cultural` | Repository |
+| Hospitality in a world of few inns; churches in homes; household as a public test | 1-7 | Chapter deep note `cultural` | Repository |
+| Church order views; no side | 1-7 | wisdom/deep/submitting-to-leaders.json `differ` | Repository wording, paraphrased |
+| ‘Husband of one wife’ four readings, literally ‘one-woman man’; complementarian (male terms, follows 2:12) and egalitarian (‘If anyone’, faithfulness, 5:9) readings; no side | 1-7 | Chapter deep note `hard` | Repository. No side |
+| Leaders accountable; no authority covers abuse; the harmed free to go elsewhere | 1-7 | wisdom/deep/submitting-to-leaders.json `differ.share`, `misread` | Repository wording; last sentence word for word, Find Help added |
+| Exodus 18:21; Deuteronomy 1:13; Ezekiel 34:2; Micah 3:11; Proverbs 16:18 | 1-7 | BSB | BSB text |
+| Diakonos, servant; Mark 10:45; little said of duties | 8-13 | Chapter deep note `words` (G1249) | Repository; BSB text |
+| Acts 6:1-6 as the beginning of deacons ("many see") | 8-13 | Chapter 5 deep note `historical` (Acts 6) | Repository, stated as a reading |
+| 3:11: wives (placement, verse 12) or women deacons (‘likewise’ in 8 and 11, no ‘their’, Phoebe, Pliny about AD 112); no side | 8-13 | Chapter deep note `hard`, `historical` | Repository. No side |
+| Numbers 11:17; Psalm 101:6-7; Proverbs 11:13 | 8-13 | BSB | BSB text |
+| Pillar: Ephesus famous for the temple of Artemis's columns | 14-16 | Chapter deep note `words` (G4769) | Repository |
+| 3:16 an early hymn or creed, six lines in three pairs of earth and heaven; mustērion | 14-16 | Chapter deep note `literary`, `words` (G3466) | Repository |
+| Exodus 40:34; 1 Kings 8:27; Psalm 22:27; Isaiah 52:10; 6:3 | 14-16 | BSB | BSB text |
