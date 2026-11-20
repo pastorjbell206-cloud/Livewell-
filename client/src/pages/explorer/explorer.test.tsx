@@ -252,7 +252,7 @@ describe("the map", () => {
 
   it("lists the finished doctrine cards and names the rest without links", async () => {
     renderAt("/study/explorer");
-    await screen.findByRole("heading", { name: "Why we believe" });
+    await screen.findByRole("heading", { name: /^Why we believe/ });
     for (const c of INDEX.cards.filter(x => x.status === "finished"))
       expect(
         screen.getByRole("heading", { name: c.title })
@@ -320,7 +320,12 @@ describe("the map", () => {
     expect(cross).toContain("is a lie that Christians must reject plainly");
     expect(cross).toContain("it is wrong to blame the Jewish people");
     renderAt("/study/explorer");
-    for (const name of ["God", "People made in God's image", "Sin", "The cross"]) {
+    for (const name of [
+      "God",
+      "People made in God's image",
+      "Sin",
+      "The cross",
+    ]) {
       const card = await screen.findByRole("group", { name });
       expect(within(card).getByRole("img")).toBeInTheDocument();
     }
@@ -328,6 +333,65 @@ describe("the map", () => {
     expect(
       within(cardCross).getByRole("link", { name: /Why did Jesus die\?/ })
     ).toBeInTheDocument();
+  });
+
+  it("what the Explorer holds: every part counted, every film, card, thread and map two taps away at most", async () => {
+    renderAt("/study/explorer");
+    const holds = await screen.findByRole("region", {
+      name: "What the Explorer holds",
+    });
+    const films = (INDEX.films ?? []).filter(f => f.status === "finished");
+    const cards = INDEX.cards.filter(c => c.status === "finished");
+    const threads = INDEX.threads.filter(t => t.status === "finished");
+    // Tap one: each part's link goes to a section on this page.
+    const hrefs = within(holds)
+      .getAllByRole("link")
+      .map(a => a.getAttribute("href")!);
+    for (const h of hrefs) {
+      expect(h.startsWith("#"), h).toBe(true);
+      expect(document.getElementById(h.slice(1)), h).not.toBeNull();
+    }
+    expect(
+      within(holds).getByText(`${films.length} moving pictures`)
+    ).toBeTruthy();
+    expect(within(holds).getByText(`${cards.length} cards`)).toBeTruthy();
+    expect(within(holds).getByText(`${threads.length} threads`)).toBeTruthy();
+    expect(within(holds).getByText(`${INDEX.stops.length} stops`)).toBeTruthy();
+    // Tap two: every film and both maps are links in Watch and learn; every
+    // card has a link in the list at the top of Why we believe; every thread
+    // is a button in the threads panel.
+    const watch = screen.getByRole("region", { name: /^Watch and learn/ });
+    for (const f of films)
+      expect(
+        within(watch).getByText(f.title).closest("a")?.getAttribute("href")
+      ).toBe(`/study/explorer/watch/${f.slug}`);
+    for (const [name, href] of [
+      ["Abraham's road", "/study/explorer/abrahams-road"],
+      ["Paul's travels", "/study/explorer/pauls-travels"],
+    ])
+      expect(
+        within(watch).getByText(name).closest("a")?.getAttribute("href")
+      ).toBe(href);
+    const jump = screen.getByRole("navigation", { name: "The cards" });
+    for (const c of cards)
+      expect(
+        within(jump).getByRole("link", { name: c.title }).getAttribute("href")
+      ).toBe(`#believe-${c.id}`);
+    for (const t of threads)
+      expect(
+        screen.getAllByRole("button", { name: new RegExp(t.name) }).length
+      ).toBeGreaterThan(0);
+    // Each heading carries its count.
+    expect(
+      screen.getByRole("heading", {
+        name: `Why we believe ${cards.length} cards`,
+      })
+    ).toBeTruthy();
+    expect(
+      screen.getByRole("heading", {
+        name: `Watch and learn ${films.length} moving pictures`,
+      })
+    ).toBeTruthy();
   });
 
   it("the Holy Spirit and life to come cards keep their limits, and show their films", async () => {
@@ -345,7 +409,9 @@ describe("the map", () => {
     const life = text("life-to-come");
     expect(life).toContain("Most Christian traditions read");
     expect(life).toContain("the dead sleep until the resurrection");
-    expect(life).toContain("Christians still differ on how to describe that time");
+    expect(life).toContain(
+      "Christians still differ on how to describe that time"
+    );
     expect(life).toContain("a parent or another grown-up you trust");
     expect(life).not.toMatch(/suicide|rapture/i);
     renderAt("/study/explorer");

@@ -668,7 +668,9 @@ describe("the pages", () => {
 
   it("the map's Watch and learn links each finished film and names the rest with no link", async () => {
     renderAt("/study/explorer");
-    const sec = await screen.findByRole("region", { name: "Watch and learn" });
+    const sec = await screen.findByRole("region", {
+      name: /^Watch and learn/,
+    });
     for (const f of READY)
       expect(
         within(sec).getByText(f.title).closest("a")?.getAttribute("href")
@@ -934,7 +936,9 @@ describe("the four films of 2026-11-20 (late): prayer, the two signs, the life t
     const all = words("prayer");
     expect(all).toMatch(/Prayer is not a promise that we will get what we ask/);
     expect(all).toMatch(/sometimes it is wait, and sometimes it is no/);
-    expect(all).not.toMatch(/always get|guarantee|enough faith,? (you|and)|pray this prayer/i);
+    expect(all).not.toMatch(
+      /always get|guarantee|enough faith,? (you|and)|pray this prayer/i
+    );
     expect(film.care).toMatch(/not because you prayed wrongly/);
     expect(film.care).toMatch(/or look at Find Help\.$/);
   });
@@ -949,21 +953,31 @@ describe("the four films of 2026-11-20 (late): prayer, the two signs, the life t
       /Many Baptist and free churches stress a memorial meal/,
     ])
       expect(older).toMatch(view);
-    expect(older).toMatch(/All agree that the meal proclaims the Lord's death until he comes/);
+    expect(older).toMatch(
+      /All agree that the meal proclaims the Lord's death until he comes/
+    );
     expect(older).toMatch(/this moving picture does not choose between them/);
     expect(film.differ?.text).toMatch(/does not choose between them/);
     // No form of the rite, and no church, is called the right one.
-    expect(words("baptism-and-supper")).not.toMatch(/\b(correct|right) (way|view|church)\b|the true church|you should be baptized/i);
+    expect(words("baptism-and-supper")).not.toMatch(
+      /\b(correct|right) (way|view|church)\b|the true church|you should be baptized/i
+    );
   });
 
   it("The life to come is gentle: two readings of the time between, a care line, nothing on any one person's end", () => {
     const film = filmFile("life-to-come");
     const all = words("life-to-come");
     expect(all).toMatch(/Most Christian traditions read/);
-    expect(all).toMatch(/Others hold that the dead sleep until the resurrection/);
+    expect(all).toMatch(
+      /Others hold that the dead sleep until the resurrection/
+    );
     expect(all).toMatch(/Christians still differ on how to describe that time/);
-    expect(all).not.toMatch(/suicide|took (his|her|their) own life|grave ?stone|skeleton|fire|burn|torment|rapture|antichrist|\b\d{4}\b/i);
-    expect(film.care).toMatch(/a parent, a pastor or another adult you trust, or look at Find Help\.$/);
+    expect(all).not.toMatch(
+      /suicide|took (his|her|their) own life|grave ?stone|skeleton|fire|burn|torment|rapture|antichrist|\b\d{4}\b/i
+    );
+    expect(film.care).toMatch(
+      /a parent, a pastor or another adult you trust, or look at Find Help\.$/
+    );
     expect(film.differ?.text).toMatch(/does not choose between them/);
   });
 
@@ -973,13 +987,24 @@ describe("the four films of 2026-11-20 (late): prayer, the two signs, the life t
     expect(all).toMatch(/1054/);
     expect(all).toMatch(/1517/);
     expect(all).toMatch(/That is a grief, not a joke/);
-    expect(all).toMatch(/This moving picture does not choose between the churches/);
-    expect(all).not.toMatch(/the true church|the right church|false church|heretic/i);
-    expect(film.differ?.links.map(l => l.href)).toContain("/theology/traditions");
+    expect(all).toMatch(
+      /This moving picture does not choose between the churches/
+    );
+    expect(all).not.toMatch(
+      /the true church|the right church|false church|heretic/i
+    );
+    expect(film.differ?.links.map(l => l.href)).toContain(
+      "/theology/traditions"
+    );
   });
 
   it("each runs past two minutes at both levels and so has a share cut under two minutes", () => {
-    for (const slug of ["prayer", "baptism-and-supper", "life-to-come", "so-many-churches"])
+    for (const slug of [
+      "prayer",
+      "baptism-and-supper",
+      "life-to-come",
+      "so-many-churches",
+    ])
       expect(filmFile(slug).share?.level, slug).toBe("younger");
   });
 });
