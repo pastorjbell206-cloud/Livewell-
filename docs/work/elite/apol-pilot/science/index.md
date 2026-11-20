@@ -25,6 +25,7 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 5. **Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?** The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.
 6. **The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?** What the sciences measure and how, what the text and its ancient copies say, the readings of the days each in its holders' terms with its hardest difficulty, and what all of them confess.
 7. **Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?** The fossil and genetic evidence as standard reference works state it, what it rules out and what it doesn't, the Christian views of Adam from a recent first pair to a figure for every human, each with what it must explain in Romans 5 and 1 Corinthians 15, and why what the doctrine of sin requires is itself where Christians differ.
+8. **Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?** What neuroscience shows and what it doesn't, the argument from causal closure at its strongest, the hard problem, and the three Christian views of the person, each with its hardest difficulty, under one hope of the resurrection of the body.
 
 ## Words these pages use
 
@@ -35,6 +36,8 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 - **Conflict thesis**: the view, made popular by John William Draper (1874) and Andrew Dickson White (1896), that science and religion have always been at war.
 - **Fine-tuning**: the finding that some of the constants and starting conditions of physics fall within narrow ranges that allow life.
 - **Multiverse**: the proposal that our universe is one of a vast number of universes or regions, perhaps with different constants.
+- **Physicalism**: the view that everything that exists is physical, or rests wholly on the physical; applied to the mind, the view that mental states are, or depend entirely on, states of the brain.
+- **Hard problem of consciousness**: the question, named by David Chalmers in 1995, why the brain's processing is accompanied by experience at all.
 - **Original sin**: the church's teaching that all human beings share a condition of sin that began with the first sin; traditions differ on whether it includes inherited guilt (the Augustinian view) or inherited mortality and corruption (the Eastern Orthodox view).
 - **Radiometric dating**: measuring the age of a rock or meteorite from the decay of radioactive elements, which turn into other elements at rates measured in the laboratory.
 
