@@ -56,6 +56,8 @@ jobs:
           node scripts/validate-grow-voice.mjs
           node scripts/build-wisdom-index.mjs --check
           node scripts/validate-wisdom.mjs
+          node scripts/build-wisdom-books-index.mjs --check
+          node scripts/validate-wisdom-books.mjs
           node scripts/validate-verse-guides.mjs
           node scripts/validate-worlds.mjs
           node scripts/build-topics-index.mjs --check

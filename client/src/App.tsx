@@ -143,6 +143,7 @@ const FamilyDevotionBuilder = lazy(() => import("./pages/tools/FamilyDevotionBui
 const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
 const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
+const WisdomBooks = lazy(() => import("./pages/tools/WisdomBooks"));
 const WorryJournal = lazy(() => import("./pages/tools/WorryJournal"));
 const PrayerPlanner = lazy(() => import("./pages/tools/PrayerPlanner"));
 const ConnectionPlanner = lazy(() => import("./pages/tools/ConnectionPlanner"));
@@ -626,6 +627,7 @@ function Router() {
         <Route path="/tools/rule-of-life" component={RuleOfLife} />
         <Route path="/tools/bible-on" component={BibleOnTopic} />
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
+        <Route path="/tools/wisdom-books" component={WisdomBooks} />
         <Route path="/tools/worry-journal" component={WorryJournal} />
         <Route path="/tools/prayer-planner" component={PrayerPlanner} />
         <Route path="/tools/connection-planner" component={ConnectionPlanner} />

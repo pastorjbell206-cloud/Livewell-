@@ -302,3 +302,36 @@ Not checked outside the repo in this run: the Westminster, Baptist Faith and Mes
 Second build (2026-11-20): the general-knowledge rows above (monastic and Anabaptist practice, baptism and church order by tradition, Catholic teaching on contraception, abstinence and moderation by tradition, the two counseling approaches) describe positions without quoting any document, and none was opened in this run.
 
 Third build (2026-11-20): the fourteen topics above (pornography and thirteen of batch 2) were checked against the Study Bible notes and plain notes named in each row; the Find Help pages on infertility and grief were followed where the rows say so. Nothing outside the repo was opened in this run. The intro's count of topics written in full is now forty.
+
+## Fourth build (2026-11-20): the Wisdom Books Explorer and three checks on the shell
+
+The three self-checks moved onto the tool shell (the Whole-Life Assessment, the Emotional Health and the Financial Health self-checks) add no claim: every statement, score band, reading, step, verse and next step is the same text as before the move (the data and scoring sections of each file are unchanged line for line). Their five and four Scripture passages were checked against the BSB in this run: all exact, Psalm 24:1 an exact excerpt (the BSB's verse 1 opens with the psalm's heading).
+
+The Wisdom Books Explorer (`/tools/wisdom-books`) shows only three kinds of text: Proverbs in the BSB, filled at build time; the Study Bible's own notes on Proverbs, copied word for word (each chapter's title, summary and outline; five of the introduction's themes; the introduction's counsel on reading a proverb; the hard question on 26:4-5), held word for word by `scripts/validate-wisdom-books.mjs`; and the sentences below, written for the tool. Each was checked against the verses tagged with it and the note named.
+
+| Where | Claim | Checked against |
+|---|---|---|
+| theme fear | Wisdom begins in reverence for the LORD | Proverbs 1:7, 9:10; notes proverbs/intro themes "The fear of the LORD" |
+| theme wisdom | Wisdom calls in the streets, is worth more than silver and gold, and was beside God when he made the world | Proverbs 1:20-21, 3:14-15, 8:10-11, 8:22-31; intro themes "Wisdom personified" |
+| theme ways | Two paths, of the righteous and the wicked, and where each ends | Proverbs 4:14-19; intro themes "Two ways" |
+| theme lord | People plan; the LORD weighs hearts, directs steps and has the last word | Proverbs 16:1-2, 16:9, 19:21, 21:30-31 |
+| theme teach | Receiving instruction, taking a rebuke, many counselors before a plan | Proverbs 12:1, 15:22, 20:18 |
+| theme fool | The fool, the mocker and the simple, and the same tendencies in the reader | notes proverbs/26 story ("help a young person recognize these people, and the same tendencies in himself"), words H3684 |
+| theme speech | Honest and lying lips, gentle and harsh answers, gossip, flattery, holding the tongue | intro themes "Words and speech"; Proverbs 10:19, 15:1, 26:20-28 |
+| theme anger | The hot temper and the slow one; quarrels start, spread and are calmed | Proverbs 15:18, 17:14, 26:20-21 |
+| theme pride | Haughty eyes, wise in one's own eyes, humility before honor | Proverbs 6:17, 3:7, 26:12, 15:33, 18:12 |
+| theme heart | Joy and sorrow, hope deferred, a crushed spirit, the heart the LORD searches | Proverbs 13:12, 15:13, 17:22, 18:14, 20:27, 21:2 |
+| theme friends | The friend who loves at all times, the neighbor, the company that shapes you | Proverbs 17:17, 27:10, 13:20 |
+| theme family | A father's and mother's teaching, training and correcting children, the joy and grief children bring | Proverbs 1:8, 22:6, 13:24, 10:1, 17:25 |
+| theme marriage | Warnings against adultery, the wife of your youth, the quarrelsome house, the woman of noble character | Proverbs 5-7, 5:18, 21:9, 31:10-31 |
+| theme work | The diligent and the idle hand, the ant at harvest, the field gone to thorns | Proverbs 10:4, 6:6-8, 24:30-34; intro themes "Work, wealth, and the poor" |
+| theme money | Riches and their limits, debt and putting up security, the poor, the open hand | Proverbs 11:28, 6:1-5, 22:7, 19:17, 11:24-25; intro themes "Work, wealth, and the poor" |
+| theme kindness | Loving devotion and faithfulness, mercy to the needy, good done to an enemy | Proverbs 3:3, 14:31, 25:21-22 |
+| theme honest | Honest scales and unequal weights, bribes, fraud, wealth gained too quickly | Proverbs 11:1, 20:10, 17:23, 20:17, 20:21 |
+| theme justice | Kings and rulers, the courts and the witness stand, partiality, the cause of the poor and the voiceless | Proverbs 16:10-15, 19:5, 24:23, 31:8-9 |
+| theme envy | Envying the wicked, fretting over evildoers, gloating over an enemy, leaving vengeance to the LORD | Proverbs 24:1, 24:17-20, 20:22 |
+| theme appetite | Wine and strong drink, the glutton and the ruler's table, too much honey, eyes never satisfied | Proverbs 20:1, 23:1-3, 23:20-21, 25:16, 27:20 |
+| page | One chapter for each day of the month; Proverbs has thirty-one chapters | the BSB files; notes proverbs/intro reading ("Many readers take one chapter a day, which fits a book of thirty-one chapters") |
+| page, finder link | All 915 verses of Proverbs under twenty themes | counted by `scripts/validate-wisdom-books.mjs` from the BSB files |
+
+Nothing outside the repo was opened for this build.

@@ -44,7 +44,7 @@
 
 /* Result. */
 .ts-r{margin:0 0 var(--s-5)}
-.ts-r__title{font-family:var(--F);font-size:var(--fs-h2,clamp(1.75rem,1.4rem + 1vw,2.25rem));font-weight:400;line-height:1.15;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
+.ts-r__title{font-family:var(--F);font-size:var(--fs-h2,clamp(1.75rem,1.4rem + 1vw,2.25rem));font-weight:400;line-height:1.15;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2);scroll-margin-top:84px;outline:none}
 .ts-r__prose p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 1em;max-width:var(--w-read)}
 .ts-chart{margin:0}
 .ts-chart__caption{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:0 0 12px}
@@ -52,7 +52,7 @@
 .ts-chart__row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"label value" "track track";gap:6px 12px;align-items:baseline}
 @media (min-width:720px){.ts-chart__row{grid-template-columns:minmax(10rem,14rem) minmax(0,1fr) 5.5rem;grid-template-areas:"label track value"}}
 .ts-chart__label{grid-area:label;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink)}
-.ts-chart__flag{margin-left:8px;font-size:12px;font-weight:600;color:var(--mustard-text)}
+.ts-chart__flag{display:inline-block;white-space:nowrap;margin-left:8px;font-size:12px;font-weight:600;color:var(--mustard-text)}
 .ts-chart__track{grid-area:track;height:10px;background:var(--bone-warm);border:1px solid var(--border);align-self:center}
 .ts-chart__bar{display:block;height:100%;background:var(--ink)}
 .ts-chart__row.is-start .ts-chart__bar{background:var(--mustard)}
@@ -72,9 +72,53 @@
 .ts-confirm{padding:14px 16px;background:var(--bone-warm);border-left:3px solid var(--mustard)}
 .ts-confirm__q{font-family:var(--U);font-size:15px;color:var(--ink);margin:0 0 10px}
 
+/* A check's page: a cream band, one reading column, and the parts of a
+ * self-check (a part's heading, the answered count, the questions, the
+ * Back and Continue row), then the result's own blocks (an area, its verse,
+ * its steps, the talk-to-a-person word). */
+.ts-band{background:var(--bone);padding:var(--s-4) var(--gutter) var(--s-5)}
+.ts-band--warm{background:var(--bone-warm)}
+.ts-col{max-width:46rem;margin:0 auto;min-width:0}
+.ts-resume{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:0 0 var(--s-3);padding:12px 16px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--mustard);border-radius:var(--radius-sm)}
+.ts-resume p{font-family:var(--U);font-size:15px;line-height:1.5;color:var(--ink);margin:0;flex:1 1 16rem}
+.ts-count{font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:6px 0 0}
+.ts-part__title{font-family:var(--F);font-size:var(--fs-h2,clamp(1.75rem,1.4rem + 1vw,2.25rem));font-weight:400;line-height:1.15;letter-spacing:-0.01em;color:var(--ink);margin:var(--s-3) 0 6px;outline:none;scroll-margin-top:84px}
+.ts-part__line{font-family:var(--B);font-size:16px;line-height:1.65;color:var(--ink-muted);margin:0 0 var(--s-3);max-width:60ch}
+.ts-qs{display:grid;gap:var(--s-4);margin:var(--s-3) 0}
+.ts-qs .ts-q__legend{font-family:var(--B);font-size:clamp(1.12rem,1.05rem + .3vw,1.25rem);font-weight:400;line-height:1.5}
+.ts-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:var(--s-4) 0 0;padding-top:var(--s-3);border-top:1px solid var(--border)}
+.ts-nav .btn:disabled{background:var(--bone-warm);color:var(--ink-muted);border-color:var(--border);cursor:not-allowed}
+.ts-part__title:focus,.ts-r__title:focus,#safety-check-h:focus{outline:none;box-shadow:none}
+#safety-check-h{scroll-margin-top:84px}
+.ts-r__prose .ts-r__score,.ts-r__score{font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink-muted);margin:0 0 10px}
+.ts-r__prose .ts-r__lead,.ts-r__lead{font-family:var(--F);font-size:clamp(1.25rem,1.1rem + .5vw,1.5rem);font-weight:500;line-height:1.4;color:var(--ink);margin:0 0 1em;max-width:var(--w-read)}
+.ts-r__more{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:12px 0 0}
+.ts-help{margin:var(--s-3) 0 0;padding:16px 20px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--mustard);border-radius:var(--radius-sm);max-width:var(--w-read)}
+.ts-help h3{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);margin:0 0 8px}
+.ts-help p{font-family:var(--B);font-size:16px;line-height:1.65;color:var(--ink);margin:0 0 10px}
+.ts-help a{font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.ts-help__links{display:flex;flex-direction:column;gap:6px}
+.ts-area{padding:var(--s-3) 0;border-top:1px solid var(--border)}
+.ts-area:first-of-type{border-top:0;padding-top:0}
+.ts-area__head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px;margin:0 0 10px}
+.ts-area__name{font-family:var(--F);font-size:clamp(1.35rem,1.2rem + .5vw,1.6rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0}
+.ts-area__level{font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink-muted)}
+.ts-area>p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 1em;max-width:var(--w-read)}
+.ts-area__label{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:var(--s-2) 0 8px}
+.ts-verse{margin:0 0 var(--s-2);padding:10px 0 10px 18px;border-left:3px solid var(--mustard);max-width:var(--w-read)}
+.ts-verse blockquote{margin:0}
+.ts-verse blockquote p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);font-style:italic;color:var(--ink);margin:0 0 6px}
+.ts-verse a{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.ts-steps{margin:0 0 var(--s-2);padding-left:1.4em;max-width:var(--w-read)}
+.ts-steps li{font-family:var(--font-reading);font-size:calc(var(--fs-read) - 1px);line-height:var(--lh-read);color:var(--ink);margin:0 0 .6em;padding-left:.2em}
+.ts-steps li::marker{font-family:var(--U);font-weight:600;color:var(--ink-muted)}
+
 /* One print sheet for every tool: the reading and its Scripture, nothing for the screen. */
 @media print{
-  .ts-actions,.ts-q__keys,.ts-progress__bar,.ts-facts{display:none !important}
+  .ts-actions,.ts-q__keys,.ts-progress__bar,.ts-facts,.ts-nav,.ts-resume{display:none !important}
+  .ts-band{padding:0 0 6pt}
+  .ts-area{break-inside:avoid-page;padding:6pt 0}
+  .ts-area>p,.ts-steps li,.ts-verse blockquote p,.ts-help p{font-size:10.5pt;line-height:1.45;margin:0 0 4pt}
   .ts-r{margin:0 0 10pt;break-inside:avoid-page}
   .ts-r__title{font-size:15pt;margin:0 0 4pt}
   .ts-r__prose p{font-size:10.5pt;line-height:1.45;margin:0 0 5pt;max-width:none}

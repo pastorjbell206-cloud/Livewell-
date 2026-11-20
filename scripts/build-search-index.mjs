@@ -205,6 +205,7 @@ const MAIN_PAGES = [
   { title: "Topics: the hard questions", href: "/topics", blurb: "The hard questions of faith, each with the answers, plans and tools that go with it.", keywords: "topics questions subjects issues" },
   { title: "Honest Answers", href: "/answers", blurb: "Short, direct answers to the questions people ask about the Christian faith.", keywords: "questions answers faq doubt objections apologetics" },
   { title: "What the Bible says", href: "/wisdom", blurb: "What Scripture says about the things people face, one subject to a page.", keywords: "bible verses about topics what does the bible say" },
+  { title: "The Wisdom Books Explorer", href: "/tools/wisdom-books", blurb: "Every verse of Proverbs gathered under twenty themes, a chapter for each day of the month, and the Study Bible's notes beside each chapter.", keywords: "proverbs by theme topic a chapter a day proverbs 31 days wisdom literature sayings fool sluggard tongue" },
   { title: "Eight-week plans", href: "/plans", blurb: "Plans that take one need a week at a time for eight weeks.", keywords: "plan plans weekly 8 week" },
   { title: "Self-checks", href: "/assessments", blurb: "Every self-check on the site in one place.", keywords: "assessment assessments quiz test inventory self-checks self checks" },
   { title: "Tools and resources", href: "/tools", blurb: "Every tool on the site, in one list.", keywords: "tools planners builders generators" },
