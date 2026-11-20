@@ -10238,3 +10238,27 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Psalm 130:8; Ezekiel 37:23; Isaiah 9:6 | 11-15 | BSB | BSB text |
 
 Narrowed: "Israel's law set limits that Roman law did not" to "set limits on slavery".
+
+## The plain notes on Titus 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Small groups meeting privately, refusing the gods, suspected; good conduct protected the church | 1-2 | Chapter deep note `cultural` | Repository |
+| Rulers: what Paul says and does not; Acts 5:29; misuse to defend tyranny and slavery rejected; how Christians differ; no side | 1-2 | romans/plain/13.json (1-7) | Near word for word, fitted (Kairos Document and the 1850s not repeated) |
+| Jeremiah 29:7; Daniel 6:4; Psalm 34:14 | 1-2 | BSB | BSB text |
+| Verses 4-7 one balanced sentence, perhaps from early teaching or worship; a trustworthy saying; Trinitarian pattern | 3-8 | Chapter deep note `literary`, `christ` | Repository |
+| Philanthrōpia a virtue of kings and benefactors; palingenesia, Matthew 19:28 | 3-8 | Chapter deep note `words`, `cultural` | Repository; BSB |
+| Baptism readings of 3:5; Acts 2:37-41 note; doctrine study | 3-8 | Chapter deep note `hard`; colossians/plain/2.json (6-15) | Repository wording. No side |
+| Exodus 34:6; Deuteronomy 9:5; Psalm 103:10; Ezekiel 36:25, 27; Joel 2:28; Psalm 51:10 | 3-8 | BSB | BSB text |
+| Hairetikos, later ‘heretic’, behaviour more than doctrine; two warnings first | 9-11 | Chapter deep note `words` (G0141) | Repository |
+| Discipline misuse, police line, word to the hurt | 9-11 | 1-corinthians/plain/5.json (1-5); 1-timothy/plain/5.json (17-22) | Word for word |
+| Proverbs 6:19; 26:20; 17:14; Psalm 133:1 | 9-11 | BSB | BSB text |
+| Artemas and Zenas known only here; Tychicus (Acts 20:4; Ephesians 6:21; Colossians 4:7); Apollos (Acts 18:24-28; 1 Corinthians 3:6); Nicopolis, ‘city of victory’, Epirus, Actium 31 BC; nomikos either law; travellers supplied by churches | 12-15 | Chapter deep note `historical`, `cultural` | Repository; BSB |
+| Winter ended most sea travel | 12-15 | 2-timothy/4.json `cultural` | Repository |
+| Deuteronomy 15:7-8; Isaiah 58:7; Proverbs 3:27 | 12-15 | BSB | BSB text |
+
+## Titus complete (2026-11-20)
+
+All three chapters in plain words.
