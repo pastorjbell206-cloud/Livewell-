@@ -12653,3 +12653,33 @@ Cut before publishing: ‘in much of the ancient world a master who killed his s
 | Acts 23:5; Luke 2:23; 1 Peter 2:9 | 28-31 | BSB | BSB text |
 
 Cut before publishing: that a seduced woman could find it hard to marry (no source); that torn meat was undrained of blood (no source); Deuteronomy 22:28-29 (a different case, better left to its own chapter).
+
+## The plain notes on Exodus 23 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The village court at the gate; false report, crowd, bribe and sympathy; no favor to the poor (Leviticus 19:15) | 1-9 | exodus/23.json `cultural` | Repository |
+| The enemy's ox and donkey: justice carried into daily life where a feud becomes neglect | 1-9 | exodus/23.json `cultural` | Repository |
+| Verse 9 repeats 22:21; Israel knows the soul (nephesh) of the stranger | 1-9 | exodus/23.json `literary` | Repository |
+| Leviticus 19:15; Amos 5:12; Proverbs 25:21; Romans 12:20; Matthew 5:44 | 1-9 | BSB | BSB text |
+| The Sabbath year and day justified by what they give others | 10-13 | exodus/23.json `literary` | Repository |
+| ‘Refreshed’: a verb meaning to take breath | 10-13 | lex/H (H5314, ‘to take breath, refresh oneself’) | Repository |
+| Christians differ on the Sabbath; pointer to the Exodus 16 note | 10-13 | exodus/plain/16.json | Repository; no side |
+| Leviticus 25:4; Deuteronomy 15:1; Mark 2:27 | 10-13 | BSB | BSB text |
+| The three feasts and the farming year; Abib March to April and barley; Weeks (34:22) and Pentecost; Ingathering, Booths or Tabernacles | 14-19 | exodus/23.json `historical` | Repository |
+| The Gezer Calendar, about the tenth century BC, beginning with two months of ingathering | 14-19 | exodus/23.json `historical` | Repository |
+| Chag, a pilgrimage festival; harvest tied to memory | 14-19 | exodus/23.json `words` (H2282) | Repository |
+| The goat in its mother's milk: reason never stated; the Ugarit theory widely doubted; mother and young; life and death; rabbinic meat and dairy | 14-19 | exodus/23.json `cultural` | Repository; no side |
+| Deuteronomy 16:16; 14:21; Acts 2:1; John 7:37; 1 Corinthians 15:20; the feasts as the Gospels' calendar | 14-19 | BSB; exodus/23.json `christ` | BSB text |
+| Malakh as messenger; ‘My Name is in him’; the name as presence and character | 20-26 | exodus/23.json `words` (H4397H), `hard` | Repository |
+| Three readings of the angel (the Son before the incarnation; a created angel as ambassador; God's own presence, with 33:2-3, 14-15) | 20-26 | exodus/23.json `hard` | Repository; no side |
+| Judges 2:2; Malachi 3:1 and John the Baptist; Philippians 2:9 | 20-26 | BSB; exodus/23.json `words`, `christ` | BSB text |
+| Verse 26 not a verdict on any woman; John 9:3 | 20-26 | BSB; the brief's care rule | BSB text |
+| The care line ‘If you carry grief or guilt about a pregnancy ...’ | 20-26 | psalms/plain/139.json (13-18 `hard`), word for word | Repository |
+| The nations as Israel remembered them; Hittites in Canaan; little by little; the hornet (three places; literal or panic); ideal borders reached under Solomon; the gods as the real danger | 27-33 | exodus/23.json `historical`, `words` (H6880), `doctrines` | Repository |
+| The conquest faced: Genesis 15:16; not because Israel was better; Rahab; no people today | 27-33 | genesis/plain/15.json (12-16 `hard`) | Repository |
+| Joshua 24:12; 1 Kings 4:21; Deuteronomy 9:5; Joshua 6:25 | 27-33 | BSB | BSB text |
+
+Cut before publishing: that ‘refreshed’ is built on the word for soul (the lexicon gives ‘to take breath’); the suggestion that the hornet stood for Egypt (the deep note calls it speculative).
