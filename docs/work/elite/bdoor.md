@@ -6838,3 +6838,132 @@ the measured run began at 5.30.
 
 Ephesians 4 in plain words (4:9 ‘descended’, 4:11 gifts, 4:26 anger), then 5
 (5:21-33 with the Genesis 16 safety lines) and 6 (6:5-9; 6:10-20).
+
+## Ephesians 4 to 6; Philippians: the book page and chapters 1 to 4; Colossians: the book page and chapters 1 to 4 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that".
+Ephesians was finished, then Philippians and Colossians, done as Galatians was.
+
+### The book pages
+
+**Ephesians.** The line in ‘How to read Ephesians’ now says every chapter is in plain
+words. Nothing else changed.
+
+**Philippians** (`/study/bible/philippians`). Data only, `teaching` appended to its
+intro. Eleven parts: in a minute; Who wrote it (Polycarp's letter paraphrased);
+Philippi, and how the church began (42 BC, Actium, the colony, Acts 16); Where Paul
+was, and when (Rome, Ephesus, Caesarea; no side); One letter, or more than one? (no
+side); How it is built; The song of Christ (2:5-11; the Nicene Creed and Chalcedon
+quoted from the repository as confession; ‘emptied’ by addition; kenotic theories
+named gently, teaching that Christ ceased to be God named as outside the confession);
+The big themes; Philippians and the Old Testament; What the letter is not (no
+prosperity reading of 4:13 or 4:19; no rebuke of the anxious; no contempt for Jews,
+with the Acts 2:22-28 pointer; no nation first); How to read. 9 hard passages, 11 key
+words, 8 timeline entries, one "mediterranean" map (Philippi, Thessalonica, Ephesus,
+Caesarea, Rome) with a map note, 8 Go deeper links. 2,846 words in the parts.
+
+**Colossians** (`/study/bible/colossians`). Twelve parts: in a minute; Who wrote it
+(both cases in their holders' terms, a middle view, no side, as the Ephesians page);
+Colossae, and a church Paul had never seen (Epaphras); When and where (Tacitus on
+Laodicea's earthquake); The teaching that troubled the church (only the letter's own
+words; no system named); The song of Christ (1:15; firstborn as heir; Nicene Creed;
+Arius and Nicaea named gently as outside the faith); How it is built; The big themes;
+Colossians and the Old Testament; The household passage (the abuse care lines word for
+word); What the letter is not; How to read. 7 hard passages, 10 key words, 6 timeline
+entries, one map (Colossae labelled; Laodicea and Hierapolis tappable without names,
+since the three sit on one point at this scale; Ephesus, Caesarea, Rome), 7 Go deeper
+links. 3,064 words.
+
+**Code.** None in the app. `teaching.test.tsx`: Philippians and Colossians added to the
+list of books with a teaching page, and one frame line each.
+
+### The chapters in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Ephesians 4 | 5 (walk worthy; the ascended Christ gives gifts; gifts to equip; old self and new; speech, anger, work, forgiveness) | 3,493 |
+| Ephesians 5 | 4 (imitate God; children of light; not drunk but filled; submit to one another, wives and husbands) | 3,272 |
+| Ephesians 6 | 4 (children and parents; slaves and masters; the armour and prayer; Tychicus) | 2,714 |
+| Philippians 1 | 5 | 2,753 |
+| Philippians 2 | 4 | 2,592 |
+| Philippians 3 | 4 | 2,508 |
+| Philippians 4 | 4 | 2,594 |
+| Colossians 1 | 5 | 2,999 |
+| Colossians 2 | 4 | 2,401 |
+| Colossians 3 | 6 (3:18-19 and 3:20-21 apart, so each hard part holds its care lines) | 3,615 |
+| Colossians 4 | 3 | 1,380 |
+
+Each chapter note gained only `"plain": true`. One commit per chapter and book page,
+with ledger rows. Contested matters stated in their holders' terms, no side: 4:8-10
+(incarnation, the dead, a few Pentecost); 4:11 (cessationist, continuationist,
+middle); 4:26 (as the anger topic); 5:18 (abstinence and moderation, as the alcohol
+topic); 5:21-33 (what all agree, then both readings of ‘head’ and verse 21); 6:5-9
+(no abolition commanded, one Master, the misuse named wrong, not an employment rule);
+Philippians 1:1 church order; 1:21-24 intermediate state; 2:12-13 grace and works;
+3:9 pistis Christou; Colossians 1:23 perseverance; 1:24 three readings; 2:11-12
+baptism; 2:16-17 the three Sabbath views. Stated as confession: Philippians 2:6-11 and
+Colossians 1:15 (Nicene Creed, Chalcedon). Care lines, all word for word from existing
+notes, no phone numbers: abuse (Genesis 16 form) at Ephesians 5:21-33, Colossians
+3:12-17 and 3:18-19; child harm (Matthew 18 form) at Ephesians 6:1-4 and Colossians
+3:20-21; anger (Psalm 4 form) at Ephesians 4:25-32; drinking (John 2 form) at 5:15-20;
+scrupulosity (2 Corinthians 13 form) at Ephesians 5:1-7 and Colossians 1:21-23;
+self-harm (2 Corinthians 1 form) at Philippians 1:19-26 and 4:4-9; anxiety (Matthew 6
+wording without its phone number) at Philippians 4:4-9; giving (2 Corinthians 9 form)
+at Philippians 4:15-23.
+
+### Sources
+
+All in `bdoor-ledger.md` under the two book pages and each chapter. 7 web searches:
+Ephesians 4: 1 (the Targum on Psalm 68:18); Philippians book page 2 (the colony and
+Actium; Polycarp 3.2); Colossians book page 4 (Colossae's and Hierapolis's
+coordinates; Tacitus on Laodicea). Greek checked over the repository's text (phroneō
+at 2:2, 2:5, 4:2, 4:10).
+
+### Cut or narrowed
+
+Cut: "humility the attitude of a slave" (Ephesians 4); "soldiers took turns guarding";
+the 1807 slave Bible (deep note, not repeated); Luke in the founding party at Philippi;
+the scholars of the kenosis debate and of the Colossian teaching (Gore, Forsyth,
+Mackintosh, Dunn, Gorman, Lightfoot, Arnold, Hooker); Antiochus III; "a slave could not
+inherit anything" (narrowed to "property, not an heir"); "Paul says he will boast in
+eight words" type counts. Narrowed: the Targum to "copies made centuries later";
+methistēmi and the soldiers' ranks of 2:5 to "some readers"; the baptism link at 2:11
+to "many of them read".
+
+### What was run, and what passed (watched)
+
+After each chapter: validate-bible-notes for the book, the strict quotation check (0
+problems), the search-index and passage-index checks and no-emdash, exit 0; every
+passage printed field by field under its heading. Part 1 gated before Philippians,
+Part 2 before Colossians: all 42 content-gate commands, `pnpm check`, `pnpm test` (157
+files, 1,835 tests), exit 0. At the end, after merging the latest branch, one at a
+time: all 42 content-gate commands exit 0 (validate-bible-notes: 382 chapters in plain
+words; search index 857 entries up to date; passage index 645 files match;
+verify-sources 22 texts intact); `pnpm check` exit 0; `pnpm test` exit 0 (158 files
+passed, 7 skipped; 1,837 tests passed, 73 skipped); `pnpm build`, `pnpm run sitemap`,
+`pnpm run prerender` (3,086 pages), `pnpm run audit:canonicals` (0 failures) exit 0.
+`pnpm build` was started at a one-minute load of 6.02, just over the limit; it passed.
+
+Served with `scripts/serve-like-vercel.mjs` on 4603 (another agent's 4652 and 4674
+also listening), Playwright at 390, deviceScaleFactor 1, /api/trpc, /api/track,
+/_vercel stubbed: all eleven chapters' passage headings, part headings in order and the
+start of every field matched the data (49 passages, 220 fields), no sideways scroll,
+no console errors. Book pages at 390 and 1440: every part a heading, every timeline
+entry, the "mediterranean" frame, the map note, no sideways scroll, no errors. Looked
+at: `/home/user/elite-shots/bdoor/ephesians5-390-*`, `philippians2-390-*`,
+`colossians3-390-*`, `philippians-book-*`, `philippians-map-*`, `colossians-book-*`,
+`colossians-map-*`, `ephesians-book-*`. Lighthouse (the ci.yml command form, three
+runs, CHROME_PATH Playwright's Chromium): `/study/bible/philippians` performance 92,
+accessibility 100, best practices 96, SEO 100, CLS 0.000; `/study/bible/colossians`
+87, 100, 96, 100, 0.000; `/study/bible/ephesians` 88, 100, 96, 100, 0.000. Server
+stopped by PID, dist/ and lh-*.json deleted.
+
+### Not done or not verified
+
+Polycarp, Tacitus and the Targum read only through search results, not a printed
+edition; all are paraphrased. Colossae's coordinate is the gazetteer's, shared with
+medieval Chonae (about 2 km off; invisible at the map's scale).
+
+### Next
+
+Colossians is complete. 1 Thessalonians: its book page, then chapters 1 to 5.
