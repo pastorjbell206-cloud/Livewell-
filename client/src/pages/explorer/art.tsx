@@ -369,6 +369,40 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M74,36l-4,-4" />
     </>
   ),
+  /* Did Jesus really come back to life?: the tomb, its stone rolled aside. */
+  "did-jesus-come-back-to-life": h => (
+    <>
+      <Shape d="M4,86V50C18,28 70,22 96,34V86Z" tone="b" />
+      <path fill={h} d="M70,30C82,30 92,32 96,34V86H76Z" />
+      <path className="pl-paper" d="M30,86V62a12,12 0 0 1 24,0V86Z" />
+      <path className="pl-l" d="M30,86V62a12,12 0 0 1 24,0V86Z" />
+      <Shape d="M58,86a14,14 0 1,1 28,0Z" tone="g" off={1.5} />
+      <path className="pl-l" d="M2,86H98" />
+    </>
+  ),
+  /* How the 66 books fit together: books on two shelves. */
+  "sixty-six-books": h => (
+    <>
+      <path className="pl-l" d="M8,48H92M8,86H92M8,14V86M92,14V86" />
+      <Shape d="M14,48V24h7v24ZM22,48V20h6v28ZM29,48V26h8v22Z" tone="c" off={1} />
+      <Shape d="M40,48V22h6v26ZM47,48V28h5v20ZM53,48V24h7v24Z" tone="g" off={1} />
+      <Shape d="M63,48V20h6v28ZM70,48V26h8v22ZM79,48V22h7v26Z" tone="b" off={1} />
+      <Shape d="M14,86V60h8v26ZM23,86V64h6v22ZM30,86V58h7v28Z" tone="g" off={1} />
+      <Shape d="M40,86V62h5v24ZM46,86V60h6v26ZM53,86V64h5v22ZM59,86V60h6v26Z" tone="b" off={1} />
+      <Shape d="M68,86V58h8v28ZM77,86V62h9v24Z" tone="c" off={1} />
+      <path fill={h} d="M8,86H92V90H8Z" />
+    </>
+  ),
+  /* What the church is: living stones laid into one house. */
+  "the-church": h => (
+    <>
+      <path className="pl-l" d="M10,40L50,12L90,40" />
+      <Shape d="M14,88V70H38V88ZM40,88V70H62V88ZM64,88V70H86V88Z" tone="c" off={1} />
+      <Shape d="M24,68V50H48V68ZM50,68V50H76V68Z" tone="g" off={1} />
+      <Shape d="M36,48V40H64V48Z" tone="b" off={1} />
+      <path fill={h} d="M14,84H86V88H14Z" />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */

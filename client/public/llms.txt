@@ -52,8 +52,9 @@ books). One page lists everything the site holds.
   browser, with every word as text under the picture at two reading levels:
   the whole Bible in two minutes, the Holy Spirit through the Bible, God with
   his people, who God is, why Jesus died, how salvation works, Who made God?,
-  and three short ones made to share: the Bible in a minute, the gospel in a
-  minute, and Does God exist?):
+  how the 66 books fit together, what the church is, Did Jesus really come
+  back to life?, and three short ones made to share: the Bible in a minute,
+  the gospel in a minute, and Does God exist?):
   https://www.livewellbyjamesbell.co/study/explorer/watch/bible-two-minutes
   https://www.livewellbyjamesbell.co/study/explorer/watch/holy-spirit
   https://www.livewellbyjamesbell.co/study/explorer/watch/god-with-his-people
@@ -64,6 +65,9 @@ books). One page lists everything the site holds.
   https://www.livewellbyjamesbell.co/study/explorer/watch/gospel-in-a-minute
   https://www.livewellbyjamesbell.co/study/explorer/watch/who-made-god
   https://www.livewellbyjamesbell.co/study/explorer/watch/does-god-exist
+  https://www.livewellbyjamesbell.co/study/explorer/watch/sixty-six-books
+  https://www.livewellbyjamesbell.co/study/explorer/watch/the-church
+  https://www.livewellbyjamesbell.co/study/explorer/watch/did-jesus-come-back-to-life
 - Paul's travels, in the Bible Explorer (a map of Acts that draws Paul's three
   trips and the voyage to Rome place by place, each with what happened there
   and its chapter, and the churches named in those years with the letters

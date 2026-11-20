@@ -25,7 +25,7 @@
   "films": [
     { "slug": "bible-two-minutes", "title": "The whole Bible in two minutes", "group": "story", "status": "finished" },
     { "slug": "bible-in-a-minute", "title": "The Bible in a minute", "group": "story", "status": "finished" },
-    { "slug": "sixty-six-books", "title": "How the 66 books fit together", "group": "story", "status": "coming" },
+    { "slug": "sixty-six-books", "title": "How the 66 books fit together", "group": "story", "status": "finished" },
 
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },
@@ -46,7 +46,7 @@
     { "slug": "how-salvation-works", "title": "How salvation works", "group": "beliefs", "status": "finished" },
     { "slug": "gospel-in-a-minute", "title": "The gospel in a minute", "group": "beliefs", "status": "finished" },
     { "slug": "spirit-in-a-believer", "title": "The Holy Spirit in a believer", "group": "beliefs", "status": "coming" },
-    { "slug": "the-church", "title": "What the church is", "group": "beliefs", "status": "coming" },
+    { "slug": "the-church", "title": "What the church is", "group": "beliefs", "status": "finished" },
     { "slug": "baptism-and-supper", "title": "Baptism and the Lord's Supper", "group": "beliefs", "status": "coming" },
     { "slug": "the-bible", "title": "The Bible: how we got it, and why trust it", "group": "beliefs", "status": "coming" },
     { "slug": "prayer", "title": "Prayer", "group": "beliefs", "status": "coming" },
@@ -57,7 +57,7 @@
     { "slug": "why-cant-i-see-god", "title": "Why can't I see God?", "group": "questions", "status": "coming" },
     { "slug": "why-bad-things-happen", "title": "Why do bad things happen?", "group": "questions", "status": "coming" },
     { "slug": "is-the-bible-true", "title": "Is the Bible true?", "group": "questions", "status": "coming" },
-    { "slug": "did-jesus-come-back-to-life", "title": "Did Jesus really come back to life?", "group": "questions", "status": "coming" },
+    { "slug": "did-jesus-come-back-to-life", "title": "Did Jesus really come back to life?", "group": "questions", "status": "finished" },
     { "slug": "when-we-die", "title": "What happens when we die?", "group": "questions", "status": "coming" },
     { "slug": "so-many-churches", "title": "Why are there so many churches?", "group": "questions", "status": "coming" },
     { "slug": "never-heard", "title": "What about people who never heard?", "group": "questions", "status": "coming" },
