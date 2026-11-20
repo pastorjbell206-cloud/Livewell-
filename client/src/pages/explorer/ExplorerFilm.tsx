@@ -41,7 +41,7 @@ import {
 import { Roundel } from "./art";
 import { LevelSwitch } from "./parts";
 import FilmPlayer from "./films/FilmPlayer";
-import { FilmMark, WATCH_ID } from "./Watch";
+import { WATCH_ID } from "./Watch";
 import "./explorer.css";
 import "./films/film.css";
 
@@ -160,11 +160,12 @@ function FilmPage({
         title={film.title}
         line={film.line[level]}
         art={
-          film.mark === "road" ? (
-            <FilmMark mark="road" />
-          ) : (
-            <Roundel slug={film.mark} className="ex-headmark" />
-          )
+          <Roundel
+            slug={
+              film.mark === "road" ? (film.stops[0] ?? "creation") : film.mark
+            }
+            className="ex-headmark"
+          />
         }
       >
         <p className="ex-note" style={{ marginTop: 0 }}>
