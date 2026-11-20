@@ -10090,3 +10090,31 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Repentance God's gift; correction gentle, not winning quarrels | 20-26 | Chapter deep note `doctrines` (repentance) | Repository |
 | Misuse, the police line, the word to the hurt | 20-26 | 1-corinthians/plain/5.json (1-5) | Word for word, with ‘These verses’ for ‘Church discipline’ in the first sentence and the victim clause added |
 | Jeremiah 18:4; Isaiah 52:11; Proverbs 15:1; 26:21; Isaiah 42:3; Ezekiel 18:23; 17:14 (Proverbs) | 14-26 | BSB | BSB text |
+
+## The plain notes on 2 Timothy 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Last days the whole time between the comings; Acts 2:17; Hebrews 1:2 | 1-5 | Chapter deep note `story`; BSB | Repository; BSB text |
+| List framed by lovers of self, money, pleasure; disordered love the root; morphōsis, outward shape | 1-5 | Chapter deep note `cultural`, `words` (G3446), `doctrines` (idolatry) | Repository |
+| No date, no modern group; Mark 13:32 | 1-5 | BSB; 1-thessalonians teaching (no date) | BSB text |
+| Deuteronomy 6:5; Isaiah 29:13; Jeremiah 7:4; Micah 6:8 | 1-5 | BSB | BSB text |
+| Churches met in homes; teachers visited households, perhaps while men were at work; the women particular people, not women in general | 6-9 | Chapter deep note `cultural` | Repository |
+| Jannes and Jambres unnamed in Exodus, named in Jewish tradition | 6-9 | Chapter deep note `cultural` | Repository |
+| ‘Disqualified’ the opposite of ‘approved’ (2:15) | 6-9 | Chapter 2 deep note `words` (G1384) | Repository |
+| Women must learn (1 Timothy 2:11) | 6-9 | BSB; 1-timothy/plain/2.json | BSB text |
+| Controlling-leader care lines | 6-9 | 2-corinthians/plain/11.json (16-21) | Word for word, with ‘; the Corinthians were taken in too’ left out |
+| Exodus 7:11-12; 8:18-19; Jeremiah 23:16; Proverbs 14:15 | 6-9 | BSB | BSB text |
+| Antioch, Iconium, Lystra (Acts 13:50; 14:5; 14:19); Timothy joined soon after (Acts 16:1-3) | 10-13 | Chapter deep note `historical` | Repository; BSB |
+| Persecution a normal mark of faithfulness | 10-13 | Chapter deep note `doctrines` (suffering) | Repository |
+| Not every discomfort persecution; no party lesson; Romans 12:14 | 10-13 | The run's brief; BSB | BSB text |
+| Hardship care lines | 10-13 | acts/plain/14.json (21-28) | Word for word (the last paragraph) |
+| Psalm 44:22; 34:19; Jeremiah 20:9; Daniel 3:18 | 10-13 | BSB | BSB text |
+| Scriptures then the Old Testament; Paul's letters circulating; John 5:39 | 14-17 | Chapter deep note `historical`, `christ` | Repository; BSB |
+| Theopneustos rare, early; exartizō, fitting out a ship or a workman | 14-17 | Chapter deep note `words` (G2315, G1822) | Repository |
+| What all confess; inerrancy and infallibility; no side; doctrine study | 14-17 | Chapter deep note `hard`; bible/doctrines/revelation.json `differ` | Repository wording, paraphrased. No side |
+| Psalm 19:7-8; 119:105; 33:6; 2 Samuel 23:2; Deuteronomy 32:47; 2 Peter 1:21 | 14-17 | BSB | BSB text |
+
+Cut: "People who set dates for Christ's return have always been wrong" (a claim beyond the sources; Mark 13:32 kept).
