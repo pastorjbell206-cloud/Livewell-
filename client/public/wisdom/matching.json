@@ -1291,11 +1291,30 @@
     "girlfriend isnt a christian",
     "not a christian",
     "doesnt believe",
-    "isnt a believer"
+    "isnt a believer",
+    "date someone who isnt a christian",
+    "dating a non christian",
+    "dating a nonbeliever",
+    "marry a nonbeliever",
+    "marry someone who isnt a christian",
+    "unequally yoked",
+    "boyfriend doesnt believe in god",
+    "girlfriend doesnt believe in god",
+    "missionary dating",
+    "different religion",
+    "he isnt saved",
+    "she isnt saved",
+    "not a believer",
+    "atheist boyfriend",
+    "atheist girlfriend",
+    "boyfriend not saved",
+    "girlfriend not saved",
+    "break up because hes not saved"
    ],
    "not": [],
    "related": [
-    "dating"
+    "dating",
+    "longing-for-marriage"
    ]
   },
   "saying-no": {
@@ -2496,7 +2515,12 @@
     "falling for someone",
     "should we get married"
    ],
-   "not": [],
+   "not": [
+    "isnt a christian",
+    "not a christian",
+    "nonbeliever",
+    "unequally yoked"
+   ],
    "related": [
     "dating-a-nonbeliever",
     "singleness",
