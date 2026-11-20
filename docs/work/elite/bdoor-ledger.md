@@ -7201,3 +7201,51 @@ The confession is Israel's own; the note says it gives no ground to blame or loo
 ## Book Four complete (2026-11-20)
 
 Psalms 90 to 106 now have plain notes. Next: Psalm 107, the start of Book Five.
+
+## The plain notes on Psalm 107 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 107 opens Book Five | 1-16 | Book page ("Five books") | Repository |
+| 106:47 "gather us from the nations" answered by 107:3 (an observation on the order) | 1-16 | BSB | BSB text; stated as the arranger's placing |
+| After the return from exile (many scholars), pointing to the book page's dates | 1-16 | Repository deep note (historical); book page ("When") | Stated as "many scholars think" |
+| Redeem: buy back or set free; a relative redeeming one sold for debt | 1-16 | Repository deep note; Leviticus 25 (site's teaching) | Plain meaning |
+| Refrains at 6, 13, 19, 28 and 8, 15, 21, 31 | all | BSB | Script count over the BSB text |
+| Gates of bronze and bars of iron as a strong city's defences; the sea as chaos in Israel's poetry; Israel not a seafaring people; thank offering with the story told | 1-32 | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 43:5; Luke 1:53; Luke 4:18; Jonah 1:4; Mark 4:39, 41; Matthew 8:8; 1 Samuel 2:8; Psalm 113:7; Luke 15:24 | all | BSB | BSB text |
+| Care: the psalm a thanksgiving, not a promise every prayer is answered alike (deep note `hard`); 107:17 not a rule that the sick are to blame; pointer to Psalm 88 and Find Help | 17-32 | Repository deep note (hard) | Stated plainly |
+
+Cut: Cyrus's date (the book page's 539 BC is pointed to instead); the Hebrew "sea" for the south in 107:3; the Dead Sea and Sodom for "fields of salt"; Phoenician shipping and Ezion-geber.
+
+## The plain notes on Psalm 108 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 108:1-5 nearly 57:7-11; 108:6-13 nearly 60:5-12 | Earlier ledger (Psalms 57, 60); BSB | BSB text compared |
+| Headings of 57 (the cave) and 60 (war); 108 drops both dark openings | BSB headings | BSB text |
+| Date of the combination unknown; after the exile (many) or earlier | Repository deep note (historical) | Stated as views |
+| 14 and 53 nearly the same; 70 repeats the end of 40 | Earlier ledger (Psalms 53, 70) | Earlier ledger |
+| Washbasin a lowly vessel; the sandal as scorn or as taking ownership (Ruth 4:7) | Repository deep note (cultural); BSB | Stated as two readings |
+| Genesis 49:10; Psalm 118:8; Romans 8:31 | BSB | BSB text |
+
+## The plain notes on Psalm 109 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A court setting; trial at the gate; accuser at the right hand | 1-20 | Repository deep note (historical, cultural) | Site's own teaching |
+| satan (H7854) in 109:6; the verb of the same root (H7853) in 4, 20, 29 | 1-20 | Repository word data | Script |
+| Deuteronomy 19:19 measure for measure for a false witness | 1-20 | BSB | BSB text |
+| Who speaks 6-19: enemies quoted (singular "him" between plural "they"), or the psalmist's own (verse 20); both held | 1-20 | Repository deep note (historical, hard) | Stated as two readings, no side |
+| The NRSV adds "They say" before 109:6 | 1-20 | NRSV as reproduced | Search: biblestudytools.com/nrs/psalms/109-6; biblia.com Ps 109:6 (NRSV, NRSVue). Only the two words quoted |
+| 109:8 quoted in Acts 1:20 with 69:25, for Judas's replacement | 1-20 | BSB | BSB text |
+| 109:9 on the book page's list of hard passages; the book page's four readings | 1-20 | Book page ("Cursing psalms", hard list) | Repository |
+| Exodus 22:22; Psalm 68:5; Luke 6:28; Matthew 27:39; Psalm 22:7; 1 Peter 2:23; Romans 12:14, 19 | all | BSB | BSB text |
+| The right hand of the accuser (6) and of God the defender (31) | 21-31 | BSB; repository deep note | Plain reading |
+
+The sentence "No reading of this psalm makes it right to harm anyone, least of all a child or a widow" stands at the end of the hard part. Ahithophel (deep note) not used.
