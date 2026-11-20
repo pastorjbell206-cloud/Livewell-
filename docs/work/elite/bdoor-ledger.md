@@ -8725,3 +8725,26 @@ Two searches. Scripture is the BSB in the repository, matched by the strict chec
 | Leviticus 4:24; 16:22; Isaiah 53:6, 10; Psalm 32:2; Ezekiel 33:11; 1 Peter 2:22; Galatians 3:13 | 18-21 | BSB | BSB text |
 
 Cut: N. T. Wright by name (deep note); Irenaeus's phrase (not checked).
+
+## The plain notes on 2 Corinthians 6 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Kairos a fitting moment | 1-10 | Deep note `words` | Repository |
+| Isaiah 49:8 in the BSB (Hebrew, future tense) and Paul's past tense; "may be following" the old Greek | 1-10 | BSB comparison | BSB text; the Greek version not claimed as checked |
+| Isaiah 49:8 follows a Servant Song (49:1-6) | 1-10 | Deep note `literary`; BSB | Repository |
+| Philippi beating and prison (Acts 16:22-24); Ephesus riot (Acts 19:23-41); 1 Thessalonians 2:9 | 1-10 | BSB | BSB text |
+| Isaiah 49:6; 55:6; Psalm 95:7-8; 44:22 | 1-10 | BSB | BSB text |
+| Vocative ‘Corinthians’, Paul seldom names a church so; ‘our mouth has been opened’, ‘our heart has been made wide’ (6:11) | 11-13 | Greek text (6:11); deep note `literary` | Repository |
+| 1 Corinthians 4:15; Psalm 119:32; Isaiah 60:5; Jeremiah 3:22 | 11-13 | BSB | BSB text |
+| Yoke; Deuteronomy 22:10; Leviticus 19:19; Psalm 106:28 ‘yoked themselves to Baal of Peor’ | 14-18 | BSB | BSB text |
+| Temple dining and civic life; 1 Corinthians 10:21; concern most likely idolatry | 14-18 | Deep note `cultural`; wrom-ledger (temple meals); BSB | Repository; "most readers think" |
+| Belial from Hebrew ‘worthlessness’ (H1100 at Deuteronomy 13:13); a name for Satan in some Jewish writings of the time; ‘Beliar’ in Paul's Greek; Beliar and heterozygeō only here in the New Testament | 14-18 | Hebrew and Greek text in the repository; book page search (Belial in the Scrolls and Jewish writings) | Script over the repository; "some Jewish writings" |
+| The chain: Leviticus 26:12; Ezekiel 37:27; Isaiah 52:11; Ezekiel 20:41 (close to); 2 Samuel 7:14 and 7:8; Isaiah 43:6 | 14-18 | Commentary notes | Search: bible.usccb.org NABRE note on 6:16-18; vatican.va NAB; wikipedia "2 Corinthians 6"; BSB texts compared. The Greek wording of Ezekiel 20:34 not claimed |
+| 1 Corinthians 7:12-13 (stay); 5:10 (not leave the world); 7:39; Jesus ate with sinners (Matthew 9:10-11); applications to marriage, business, organizations, worship as views; no side | 14-18 | BSB; deep note `hard` | Repository |
+| Insertion question in one sentence, pointing to the book page | 14-18 | Book page ledger | Ledger |
+| Safety line: not to stay in danger; pointer to the 1 Corinthians 7:10-16 note; Find Help | 14-18 | 1 Corinthians 7 plain note | Repository wording |
+
+Cut: the Dead Sea Scrolls named for Belial (summarised as "some Jewish writings").
