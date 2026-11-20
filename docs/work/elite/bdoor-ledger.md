@@ -11047,3 +11047,26 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Proverbs 26:11; Jeremiah 2:13; Ezekiel 18:24 | 17-22 | BSB | BSB text |
 
 Cut before publishing: why Peter calls Noah a preacher (‘perhaps his life and his building of the ark’); ‘glorious beings’ as angelic powers (now only what verse 11 says).
+
+## The plain notes on 2 Peter 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Beloved’ four times; prophets and apostles; ‘fell asleep’ for death; the fathers two readings; delay used by critics | 1-7 | 2-peter/3.json `literary`, `historical` | Repository, no side |
+| Greco-Roman belief in a stable or cyclical cosmos; creation by the word; flood as judgment | 1-7 | 2-peter/3.json `cultural`, `doctrines` | Repository |
+| No position on the age of the earth or the flood's extent | 1-7 | Instruction for this run | Stated, no claim |
+| Psalm 33:6; Genesis 1:6; 7:11; Malachi 4:1 | 1-7 | BSB | BSB text |
+| Psalm 90:4; not a formula for dates; makrothumeō ‘long-tempered’; the thief from Jesus' teaching; stoicheia two senses | 8-10 | 2-peter/3.json `literary`, `words`, `cultural`; 2-peter/intro.json `reading` | Repository |
+| 3:9 readings as with 1 Timothy 2:4; ‘all of them read them as sincere’ | 8-10 | 1-timothy/plain/2.json (1-7 `hard`); doctrines wording | Repository, no side |
+| 3:10: later manuscripts ‘burned up’, early ‘found’, BSB ‘laid bare’; destroyed or renewed; Romans 8:19-23; no scheme of the last days | 8-10 | 2-peter/3.json `hard` | Repository, no side |
+| Psalm 90:4; Ezekiel 33:11; Zephaniah 1:14; Isaiah 34:4 | 8-10 | BSB | BSB text |
+| New heaven and new earth, not a far-off heaven of souls; Paul's letters as Scripture, already twisted | 11-16 | 2-peter/3.json `doctrines`, `historical` | Repository |
+| Romans 2:4; Isaiah 65:17; 66:22; Psalm 85:10; Isaiah 11:9 | 11-16 | BSB | BSB text |
+| Knowledge from 1:2 to 3:18; doxology to Christ, praise elsewhere reserved for God | 17-18 | 2-peter/intro.json `themes`; 2-peter/3.json `christ` | Repository |
+| Psalm 89:52; Psalm 92:12 | 17-18 | BSB | BSB text |
+
+Cut before publishing: an account of how believers ‘hasten’ the day (the letter does not say).
+
+## 2 Peter complete (2026-11-20)
