@@ -9034,3 +9034,31 @@ No searches. Scripture is the BSB in the repository, matched by the strict check
 | Genesis 1:27; Isaiah 61:10; Genesis 12:3 | 26-29 | BSB | BSB text |
 
 Cut: the Jewish prayer thanking God for not being made a Gentile, a slave or a woman (deep note "some scholars note"; not checked here, and not needed).
+
+## The plain notes on Galatians 4 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Heir under guardians and managers until a date the father set | 1-7 | Deep note `cultural` | Repository |
+| Stoicheia: letters, first lessons, elements; some later writers used it for spirits; readers differ | 1-7 | Deep note `words` (stoicheion) | Repository |
+| Same verb ‘sent’ for the Son and the Spirit (exapesteilen, 4:4 and 4:6) | 1-7 | Greek text in the repository | Read from the chapter file |
+| The Trinity stated as confession; Galatians within about twenty-five years of the cross (cross 30 or 33; letter late 40s to mid 50s) | 1-7 | Book page dates; Acts book page | Arithmetic over the site's dates |
+| Roman adoption: new father, name, full inheritance | 1-7 | Deep note `cultural`, `words` (huiothesia) | Repository |
+| Abba Aramaic, Mark 14:36, Romans 8:15 | 1-7 | Deep note `words`; BSB | Repository |
+| Hosea 11:1; Exodus 4:22; Jeremiah 3:19; Exodus 20:2 | 1-7 | BSB | BSB text |
+| Galatian towns' temples and festivals | 8-11 | Deep note `historical` (pagan calendars) | Stated generally |
+| Special days most likely the Jewish calendar; some think the wording also fits pagan calendars | 8-11 | Deep note `historical` | Repository |
+| Romans 14:5; Sunday, Easter, Christmas kept by most; some keep the seventh-day Sabbath; some Jewish believers in Jesus keep Israel's feasts | 8-11 | BSB; common practice | Stated generally, no group named |
+| Exodus 20:2-3 | 8-11 | BSB | BSB text |
+| Illness unknown; eyes and the thorn as guesses | 12-20 | Deep note `historical` | Repository |
+| Sickness sometimes read as divine displeasure | 12-20 | Deep note `cultural` | Repository |
+| Isaiah 66:9; Leviticus 19:34 | 12-20 | BSB | BSB text |
+| The law as the five books, including Genesis | 21-31 | Standard | Standard |
+| Allēgoreō in 4:24 | 21-31 | Deep note `literary` | Repository |
+| ‘The present-day Jerusalem’ as the teachers' movement and claims, "many readers" | 21-31 | Deep note `hard` | Repository |
+| Isaiah 54:1 first to Jerusalem in exile; follows Isaiah 53; ‘Rejoice’ the old Greek | 21-31 | Deep note `literary`; BSB comparison | Stated generally |
+| Genesis 16:2; 21:9-10; Psalm 87:5; Isaiah 2:3; Romans 11:1; 7:12 | 21-31 | BSB | BSB text |
+| Hagar not judged; Ishmael honoured by Muslims; pointer to the Genesis 16:13-16 note | 21-31 | genesis/plain/16.json | Repository |
+| Contempt for Jews rejected; pointer to the Acts 2:22-28 note | 21-31 | acts/plain/2.json | Repository wording |
