@@ -45,6 +45,7 @@ import {
 } from "@/lib/explorer";
 import { Roundel } from "./art";
 import {
+  CycleActivity,
   hasScene,
   LevelSwitch,
   MatchActivity,
@@ -52,6 +53,7 @@ import {
   RevealActivity,
   Scene,
   TapActivity,
+  WalkActivity,
 } from "./parts";
 import "./explorer.css";
 
@@ -187,7 +189,9 @@ function StopPage({
   }
 
   const a = stop.activity;
-  const tapFirst = a?.kind === "tap" && hasScene(stop.scene);
+  // A picture to tap or walk through is the activity itself, so it comes first.
+  const tapFirst =
+    (a?.kind === "tap" || a?.kind === "walk") && hasScene(stop.scene);
   // Below the picture (warm cream), the sections alternate cream and warm cream.
   let band = 0;
   const tone = () => (band++ % 2 === 0 ? "ex-sec" : "ex-sec ex-sec--warm");
@@ -228,6 +232,14 @@ function StopPage({
         <div className="ex-wrap">
           {tapFirst && a?.kind === "tap" ? (
             <TapActivity
+              activity={a}
+              onDone={done}
+              doneBefore={doneBefore}
+              scene={stop.scene!}
+              sceneLabel={stop.sceneLabel ?? stop.title}
+            />
+          ) : tapFirst && a?.kind === "walk" ? (
+            <WalkActivity
               activity={a}
               onDone={done}
               doneBefore={doneBefore}
@@ -329,6 +341,13 @@ function StopPage({
             )}
             {a.kind === "match" && (
               <MatchActivity
+                activity={a}
+                onDone={done}
+                doneBefore={doneBefore}
+              />
+            )}
+            {a.kind === "cycle" && (
+              <CycleActivity
                 activity={a}
                 onDone={done}
                 doneBefore={doneBefore}

@@ -83,12 +83,51 @@ export interface TapSpot {
   x: number;
   y: number;
   day?: number;
+  /** A short name for the list under the picture, in place of "Day N". */
+  label?: string;
   text: string;
   ref: string;
+  /** How God begins to mend what this spot shows (the Fall). */
+  mend?: string;
+  mendRef?: string;
+}
+
+/** One step of a walk through a picture (the tabernacle, from the gate inward). */
+export interface WalkStep {
+  id: string;
+  name: string;
+  x: number;
+  y: number;
+  what: string;
+  whatRef: string;
+  later: string;
+  laterRef: string;
 }
 
 export type Activity =
-  | { kind: "tap"; title: string; prompt: string; spots: TapSpot[] }
+  | {
+      kind: "tap";
+      title: string;
+      prompt: string;
+      spots: TapSpot[];
+      /** Said when every spot is found. */
+      finish?: string;
+    }
+  | {
+      kind: "walk";
+      title: string;
+      prompt: string;
+      steps: WalkStep[];
+      finish: string;
+    }
+  | {
+      kind: "cycle";
+      title: string;
+      prompt: string;
+      stages: { id: string; name: string; text: string; ref: string }[];
+      again: { text: string; ref: string };
+      end: { title: string; text: string; ref: string };
+    }
   | {
       kind: "order";
       title: string;

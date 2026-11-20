@@ -18,6 +18,16 @@ Every factual claim in `client/public/explorer/` (the stops, `threads.json`, `ca
 | cross story | “Christ died for our sins”; “most of whom are still living” | BSB 1 Corinthians 15:3; 15:6 |
 | cross question | “if Christ has not been raised, our preaching is worthless, and so is your faith” | BSB 1 Corinthians 15:14 |
 | cross activity | “the Lamb of God, who takes away the sin of the world”; “our Passover lamb” | BSB John 1:29; 1 Corinthians 5:7 |
+| fall verses | Genesis 3:15; Genesis 3:21 (whole verses) | BSB, by the validator |
+| fall story and question | “you will be like God”; “altogether evil all the time”; “make a name for ourselves”; “Where are you?”; “set free from its bondage to decay” | BSB Genesis 3:5; 6:5; 11:4; 3:9; Romans 8:21 |
+| fall activity | “Where are you?”; “seedtime and harvest” | BSB Genesis 3:9; 8:22 |
+| sinai verses | Exodus 20:2-3 (the opening quotation mark of 20:2 left out); Exodus 25:8 (whole) | BSB, by the validator |
+| sinai story | “I am the LORD your God, who brought you out of the land of Egypt” (and the full verse at the older level); “on eagles’ wings”; “they are to make a sanctuary for Me, so that I may dwell among them”; “The LORD, the LORD God, is compassionate and gracious, slow to anger” and the longer form at the older level; “the life of the flesh is in the blood”; “love your neighbor as yourself” | BSB Exodus 20:2; 19:4; 25:8; 34:6; Leviticus 17:11; 19:18 |
+| sinai question | “but to fulfill them”; “one sacrifice for sins”; “the fulfillment of the law”; “I am the LORD your God, who brought you out” | BSB Matthew 5:17; Hebrews 10:12; Romans 13:10; Exodus 20:2 |
+| sinai activity | “I am the gate. If anyone enters through Me, he will be saved.”; “one sacrifice for sins”; “bodies washed with pure water”; “I am the light of the world.”; “I am the bread of life.”; “I will meet with you there.”; “made His dwelling among us”; “once for all by His own blood” | BSB John 10:9; Hebrews 10:12; 10:22; John 8:12; 6:35; Exodus 25:22; John 1:14; Hebrews 9:12 |
+| land verses | Judges 2:18 (whole); Ruth 1:16 trimmed to Ruth's promise from “wherever you go” | BSB, by the validator |
+| land story | “Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.”; “What is the meaning of these stones?”; “to this day”; “In those days there was no king in Israel; everyone did what was right in his own eyes” | BSB Joshua 1:9; 4:21; 6:25; Judges 21:25 |
+| land activity | the Judges 21:25 line again; “will never end” | BSB Judges 21:25; Luke 1:33 |
 | card: the Bible | 2 Timothy 3:16-17 (whole); “spoke from God as they were carried along by the Holy Spirit” | BSB, by the validator; 2 Peter 1:21 |
 | card: Jesus | John 1:14 (whole); “My Lord and my God” | BSB, by the validator; John 20:28 |
 
@@ -59,6 +69,33 @@ Every factual claim in `client/public/explorer/` (the stops, `threads.json`, `ca
 | Every thread line (garden, hiding, Jacob at Bethel, pillar, tabernacle, Shiloh, temple glory, glory leaving, Haggai's promise, the Word dwelling among us, the veil, God's temple, God's dwelling with man) | BSB at the reference given beside each line in `threads.json`; each reference is read by the validator |
 | Summaries of stops still being drawn: Assyria took the north; Babylon burned Jerusalem and the temple; Paul's news reaches Rome; a man after God's heart; a son whose kingdom will never end | BSB 2 Kings 17:6; 25:9; Acts 28:14; 1 Samuel 13:14; 2 Samuel 7:16 |
 
+| The Fall: one tree forbidden; the serpent's question and promise; both ate; fig leaves; hiding among the trees; “Where are you?”; the man blames the woman, the woman the serpent; thorns and thistles, toil, return to dust; garments of skin; sent out; cherubim and a whirling sword of flame on the east side guarding the way to the tree of life (all used in the drawing too) | BSB Genesis 2:16-17; 3:1-24 |
+| The serpent on its belly in the dust (the drawing) | BSB Genesis 3:14 |
+| Cain killed Abel; the mark on Cain so no one would kill him | BSB Genesis 4:8; 4:15 |
+| Wickedness before the flood; Noah and his family kept; the promise of seedtime and harvest | BSB Genesis 6:5-8; 7:1, 7; 8:22 |
+| Babel: a tower to the heavens, a name for themselves; language confused, people scattered | BSB Genesis 11:4-9 |
+| Christians have long read Genesis 3:15 as the first announcement of Jesus (the "protoevangelium") | Stated as a reading, not as the text's plain sense; the site's own Study Bible note on Genesis 3 (`client/public/bible/notes/genesis/3.json`: "Christian readers since the second century have heard in verse 15 the first announcement of the gospel") and the doctrine of sin (`client/public/bible/doctrines/sin.json`) |
+| Christians read some of Genesis 3 differently; all confess creation good, broken by human sin, loved by God | Wording takes no side; the sin doctrine's "differ" section (`client/public/bible/doctrines/sin.json`) shows the traditions differing |
+| Sinai: in the third month after leaving Egypt; camped before the mountain; cloud, fire, thunder, the people trembled | BSB Exodus 19:1-2, 16-18 |
+| The law given after the rescue: 20:2 states the rescue, 20:3 is the first command | BSB Exodus 20:2-3; site doctrine of the law (`client/public/bible/doctrines/law.json`, definition) says the same |
+| The golden calf called the gods who brought them out of Egypt; Moses pleads; God's name; the covenant renewed | BSB Exodus 32:1-4, 30-32; 34:6-10 |
+| Glory filled the tabernacle when it was finished | BSB Exodus 40:33-35 |
+| Leviticus: Day of Atonement once a year; only the high priest behind the veil; blood and atonement | BSB Leviticus 16:2, 34; 23:27; 17:11; Hebrews 9:7 |
+| The tabernacle's parts, each named as Exodus names it: the gate of the courtyard (east side, toward the sunrise, curtain of blue, purple and scarlet yarn); the altar of burnt offering (acacia overlaid with bronze, a horn at each corner); the bronze basin between the Tent of Meeting and the altar, for washing hands and feet; the lampstand of pure hammered gold, one piece, six branches, seven lamps (south side); the table of acacia wood with the Bread of the Presence, twelve loaves in two rows (north side); the gold altar of incense in front of the veil, incense morning and at twilight; the veil of blue, purple and scarlet yarn with cherubim, separating the Holy Place from the Most Holy Place; the ark of the Testimony, acacia overlaid with gold, the mercy seat and two cherubim of gold | BSB Exodus 25:10-37; 26:31-35; 27:1-2, 9-16; 30:1-8, 18-20; 40:2-8, 20-33; Leviticus 24:5-6. Hebrews 9:4 places the incense altar with the Most Holy Place; the stop follows Exodus 30:6 and 40:26 and does not quote Hebrews 9:4 |
+| North at the top of the plan and the gate on the east | The drawing's choice, consistent with Exodus 26:35 (table north, lampstand south) and 27:13 (east, toward the sunrise) |
+| Where the New Testament takes up each part | BSB John 10:9; Hebrews 10:10-12, 19-22; John 8:12; 6:35; Revelation 8:3-4; Mark 15:38; John 1:14; Hebrews 9:12 |
+| What Christians share on the law; that churches explain its place differently (three positions named, no side) | BSB Matthew 5:17; Hebrews 10:12; Romans 13:9-10; site doctrine of the law (`law.json`, "differ": the threefold division, law and gospel, the law of Christ) |
+| Many Jewish people today keep the Torah | A general statement only; no description of any community's practice beyond it |
+| Forty years in the wilderness after the spies' report; manna; Moses died in sight of the land | BSB Numbers 13:31; 14:33-34; Deuteronomy 8:2-4; 34:4-5 |
+| Joshua: the Jordan stopped, dry ground; twelve stones, one per tribe, set up at Gilgal; children asking what they mean | BSB Joshua 3:15-17; 4:1-9, 19-24 |
+| The conquest: cities destroyed and many killed, and the text says God commanded it | BSB Joshua 10:40; the Honest Answer `did-god-command-genocide` (Deuteronomy 20:16-17; Joshua 6:21) |
+| Rahab of Jericho spared, lived among the Israelites; in Jesus' line | BSB Joshua 6:25; Matthew 1:5 |
+| None of God's good promises failed | BSB Joshua 21:45 |
+| The judges' cycle and its stages; each time worse; Othniel, Deborah, Gideon; rest forty years (3:11, 5:31, 8:28); Gideon's ephod worshipped by all Israel | BSB Judges 2:11-19; 3:7-11; 4:4; 5:31; 6:6, 12-14; 8:27-28; 10:10 |
+| Ruth: set when the judges ruled; a Moabite; barley harvest; gleaning in Boaz's field; Obed the grandfather of David | BSB Ruth 1:1, 16, 22; 2:2-3, 8-9; 4:13-17 (the drawing's field, sheaves and gleaner) |
+| Jesus the son of David, whose kingdom will never end | BSB Luke 1:32-33 |
+| The answer to "Did God command killing?" | Sentences reused from the Honest Answer `did-god-command-genocide` in `client/src/data/answers.ts`: "On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly."; "Christians who hold the whole Bible to be God's word read these chapters in more than one way."; "Two things hold under all of them. The God of Joshua is the Father of Jesus. And nothing in these chapters gives anyone today a warrant for violence against anyone." One phrase turned from first person to third ("sets out the main readings, with the strength and the hard question of each, without pretending any of them makes the problem go away"). No new argument; nothing about any modern people, state or border |
+
 ## History and scholarship
 
 | Claim | Checked |
@@ -77,3 +114,6 @@ Every factual claim in `client/public/explorer/` (the stops, `threads.json`, `ca
 - Which Egyptian god each plague answered (a common teaching, but argued); the stop quotes Exodus 12:12 instead.
 - The women's testimony argument (that a woman's word counted little in court); not checked to the standard, so not used.
 - Any date for Abraham or the exodus; the story is told without them for this age.
+- Any date for the conquest or the judges, and any position on the flood's extent or on the details of a historical Adam.
+- Which tribes camped on which side of the tabernacle (Numbers 2): the drawing shows tents at the mountain's foot only, not a tribal plan.
+- Ruth 4:14 ("Blessed be the LORD") is not quoted: the site's forbidden-language rule covers "blessed".

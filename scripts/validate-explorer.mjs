@@ -38,7 +38,7 @@ const problems = [];
 const fail = (where, msg) => problems.push(`${where}: ${msg}`);
 
 const LEVELS = ["younger", "older"];
-const KINDS = new Set(["tap", "order", "match", "reveal"]);
+const KINDS = new Set(["tap", "order", "match", "reveal", "walk", "cycle"]);
 const norm = s =>
   s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
 
@@ -276,6 +276,11 @@ for (const { file, stop: s } of stops) {
       if (!sp.name || !sp.text)
         fail(`${w} activity ${sp.id}`, "needs a name and what it reveals");
       refRule(`${w} activity ${sp.id}`, sp.ref);
+      if (sp.mend || sp.mendRef) {
+        if (!sp.mend)
+          fail(`${w} activity ${sp.id}`, "has a mending reference but no line");
+        refRule(`${w} activity ${sp.id} mend`, sp.mendRef);
+      }
     }
   } else if (a.kind === "order") {
     ids(a.items ?? []);
@@ -304,6 +309,39 @@ for (const { file, stop: s } of stops) {
       if (!p.kept)
         fail(`${w} activity ${p.id}`, "needs where the promise is kept");
     }
+  } else if (a.kind === "walk") {
+    ids(a.steps ?? []);
+    if (!Array.isArray(a.steps) || a.steps.length < 3)
+      fail(`${w} activity`, "a walk needs three steps or more");
+    if (!a.finish) fail(`${w} activity`, "needs a line for the end of the walk");
+    for (const st of a.steps ?? []) {
+      if (!(st.x >= 0 && st.x <= 100 && st.y >= 0 && st.y <= 100))
+        fail(
+          `${w} activity ${st.id}`,
+          "is not placed on the picture (x and y are percentages)"
+        );
+      if (!st.name || !st.what || !st.later)
+        fail(
+          `${w} activity ${st.id}`,
+          "needs a name, what it was, and where the Bible takes it up"
+        );
+      refRule(`${w} activity ${st.id}`, st.whatRef);
+      refRule(`${w} activity ${st.id} later`, st.laterRef);
+    }
+  } else if (a.kind === "cycle") {
+    ids(a.stages ?? []);
+    if (!Array.isArray(a.stages) || a.stages.length < 3)
+      fail(`${w} activity`, "a cycle needs three stages or more");
+    for (const st of a.stages ?? []) {
+      if (!st.name || !st.text)
+        fail(`${w} activity ${st.id}`, "needs a name and what happens");
+      refRule(`${w} activity ${st.id}`, st.ref);
+    }
+    if (!a.again?.text) fail(`${w} activity`, "needs the turn round again");
+    refRule(`${w} activity again`, a.again?.ref);
+    if (!a.end?.title || !a.end?.text)
+      fail(`${w} activity`, "needs where the cycle leads");
+    refRule(`${w} activity end`, a.end?.ref);
   } else if (a.kind === "reveal") {
     ids(a.questions ?? []);
     if (!Array.isArray(a.questions) || a.questions.length < 2)

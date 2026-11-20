@@ -23,7 +23,7 @@
       "act": "fall",
       "actLabel": "Act Two",
       "actTitle": "The Fall",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "The first people did not trust God and did what he told them not to do. Sin and sadness came into the world, but God kept caring for them.",
         "older": "Adam and Eve reach for what God withheld, and the damage spreads: shame, blame, murder, the flood, a tower built to reach the sky. God judges, and he keeps showing mercy."
@@ -61,11 +61,11 @@
       "slug": "sinai",
       "n": 5,
       "title": "Sinai and the Tent",
-      "range": "Exodus 16 to Deuteronomy",
+      "range": "Exodus 19 to 40, and Leviticus",
       "act": "exodus",
       "actLabel": "Act Four",
       "actTitle": "Exodus and Sinai",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "At a mountain called Sinai, God gave his people his good laws and told them to build a tent where he would live among them.",
         "older": "Rescued people are given a way to live. At Sinai God makes a covenant with Israel, gives the law, and has them build the tabernacle so that he can dwell among them."
@@ -75,11 +75,11 @@
       "slug": "land",
       "n": 6,
       "title": "The Land and the Judges",
-      "range": "Joshua, Judges, Ruth",
+      "range": "Numbers to Ruth",
       "act": "land-judges",
       "actLabel": "Act Five",
       "actTitle": "The Land and the Judges",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "God brought his people into the land he had promised. They kept forgetting him, and God kept sending leaders to rescue them.",
         "older": "God keeps his word and gives the land. Then a cycle begins: the people turn away, trouble comes, they cry out, God sends a judge. Each time round it gets worse."
