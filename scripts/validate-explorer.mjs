@@ -545,6 +545,8 @@ for (const c of cards) {
     textRules(fw, film);
     levelPair(`${fw} line`, film.line, 240);
     if (!film.poster) fail(fw, "needs what the poster shows");
+    if (film.mark !== "road" && !slugs.has(film.mark))
+      fail(fw, `mark "${film.mark}" must be "road" or a stop's slug (its roundel)`);
     const frames = film.frames ?? [];
     if (frames.length < 5 || frames.length > 9)
       fail(fw, `has ${frames.length} frames; a moving picture has 5 to 9`);

@@ -548,6 +548,7 @@
         "younger": "The whole Bible as one story, from the garden to the city, in nine pictures.",
         "older": "The whole story of the Bible, from creation to the new creation, drawn as one road in nine pictures."
       },
+      "mark": "road",
       "frames": 9,
       "stops": [
         "creation",
@@ -570,6 +571,7 @@
         "younger": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force.",
         "older": "From the waters of Genesis 1 to the last invitation of Revelation 22, in eight pictures. The Holy Spirit is God, a person, not a force."
       },
+      "mark": "church",
       "frames": 8,
       "stops": [
         "church"
@@ -713,6 +715,7 @@
         "younger": "A real question, taken seriously, in six pictures: everything we know came from something, so where did God come from?",
         "older": "A child's honest question, taken seriously in six pictures: why anything is here at all, and why the Bible says God has no beginning."
       },
+      "mark": "creation",
       "frames": 6,
       "stops": [
         "creation"

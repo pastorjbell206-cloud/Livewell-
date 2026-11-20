@@ -91,6 +91,8 @@ export interface FilmSummary {
   group: FilmGroup;
   status: "finished" | "coming";
   line?: Leveled;
+  /** Its small picture: "road" (the map's road) or a stop's slug (that stop's roundel). */
+  mark?: string;
   frames?: number;
   /** The stops and "Why we believe" cards it belongs to. */
   stops?: string[];
@@ -119,6 +121,8 @@ export interface Film {
   group: FilmGroup;
   status: "finished";
   line: Leveled;
+  /** Its small picture: "road" or a stop's slug. */
+  mark: string;
   /** What the poster shows before Play. */
   poster: string;
   frames: FilmFrame[];

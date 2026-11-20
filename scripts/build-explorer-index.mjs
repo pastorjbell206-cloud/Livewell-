@@ -75,6 +75,7 @@ export function buildIndex() {
     return {
       ...f,
       line: film.line,
+      mark: film.mark,
       frames: film.frames.length,
       stops: film.stops,
       cards: film.cards,

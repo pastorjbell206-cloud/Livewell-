@@ -41,7 +41,7 @@ import {
 import { Roundel } from "./art";
 import { LevelSwitch } from "./parts";
 import FilmPlayer from "./films/FilmPlayer";
-import { WATCH_ID } from "./Watch";
+import { FilmMark, WATCH_ID } from "./Watch";
 import "./explorer.css";
 import "./films/film.css";
 
@@ -145,7 +145,6 @@ function FilmPage({
   const stops = film.stops
     .map(s => index.stops.find(x => x.slug === s))
     .filter(s => s && s.status === "finished");
-  const mark = film.stops[0] ?? "creation";
 
   return (
     <>
@@ -159,7 +158,13 @@ function FilmPage({
         doorHref={EXPLORER_PATH}
         title={film.title}
         line={film.line[level]}
-        art={<Roundel slug={mark} className="ex-headmark" />}
+        art={
+          film.mark === "road" ? (
+            <FilmMark mark="road" />
+          ) : (
+            <Roundel slug={film.mark} className="ex-headmark" />
+          )
+        }
       >
         <p className="ex-note" style={{ marginTop: 0 }}>
           Watch and learn. A moving picture in {film.frames.length} parts, with

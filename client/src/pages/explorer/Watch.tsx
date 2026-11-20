@@ -17,7 +17,16 @@ import {
   type FilmSummary,
   type Level,
 } from "@/lib/explorer";
-import { Roundel } from "./art";
+import { HeadArt, Roundel } from "./art";
+
+/** A film's small picture: the map's road, or a stop's roundel. */
+export function FilmMark({ mark, className }: { mark?: string; className?: string }) {
+  return mark === "road" ? (
+    <HeadArt />
+  ) : (
+    <Roundel slug={mark ?? "creation"} className={className} />
+  );
+}
 
 export const WATCH_ID = "watch";
 
@@ -62,10 +71,7 @@ export function Watch({
                       <li key={f.slug}>
                         <Link href={filmHref(f.slug)} className="wl-film">
                           <span className="wl-film__thumb" aria-hidden="true">
-                            <Roundel
-                              slug={f.stops?.[0] ?? "creation"}
-                              className="ex-roundel"
-                            />
+                            <FilmMark mark={f.mark} className="ex-roundel" />
                             <span className="wl-film__play">
                               <Play size={13} strokeWidth={2} />
                             </span>
