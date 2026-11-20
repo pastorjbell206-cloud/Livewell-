@@ -23,7 +23,6 @@ import {
   Hourglass,
   LifeBuoy,
   MessageCircle,
-  Tent,
 } from "lucide-react";
 
 import Layout from "@/components/Layout";
@@ -54,6 +53,7 @@ import {
   RevealActivity,
   Scene,
   TapActivity,
+  ThreadIcon,
   WalkActivity,
 } from "./parts";
 import "./explorer.css";
@@ -439,7 +439,7 @@ function StopPage({
                 className="ex-stop__thread"
                 style={{ marginTop: "var(--s-3)" }}
               >
-                <Tent size={18} strokeWidth={1.75} aria-hidden="true" />
+                <ThreadIcon id={thread.id} />
                 <span>
                   <strong style={{ fontFamily: "var(--U)", fontSize: 14 }}>
                     {thread.name}.
@@ -507,15 +507,29 @@ function StopPage({
               />
             </Link>
           ) : (
-            <Link href={EXPLORER_PATH} className="btn">
-              Back to the map
-              <ArrowRight
-                size={16}
-                strokeWidth={1.75}
-                aria-hidden="true"
-                style={{ marginLeft: 8 }}
-              />
-            </Link>
+            <>
+              <Link href={EXPLORER_PATH} className="btn">
+                The whole map
+                <ArrowRight
+                  size={16}
+                  strokeWidth={1.75}
+                  aria-hidden="true"
+                  style={{ marginLeft: 8 }}
+                />
+              </Link>
+              <Link
+                href={`${EXPLORER_PATH}#ex-believe-title`}
+                className="btn btn--quiet"
+              >
+                Why we believe
+                <ArrowRight
+                  size={16}
+                  strokeWidth={1.75}
+                  aria-hidden="true"
+                  style={{ marginLeft: 8 }}
+                />
+              </Link>
+            </>
           )}
         </div>
         {prevReady && (

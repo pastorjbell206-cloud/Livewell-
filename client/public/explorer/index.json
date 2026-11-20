@@ -121,7 +121,7 @@
       "act": "return-silence",
       "actLabel": "Act Eight",
       "actTitle": "The Return and the Silence",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "God brought some of his people home. They rebuilt the temple and the city walls, and then they waited a long time for God's promised king.",
         "older": "Some exiles come home under Persian rule and rebuild the temple and the walls, but no son of David sits on the throne. The Old Testament ends looking ahead, and roughly four centuries pass before the next page."
@@ -163,7 +163,7 @@
       "act": "church-spirit",
       "actLabel": "Act Ten",
       "actTitle": "The Church and the Spirit",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "Jesus went back to his Father and sent the Holy Spirit. His followers told the good news about Jesus to people everywhere.",
         "older": "Fifty days after Passover the Spirit comes. The church begins in Jerusalem and spreads, Jews and Gentiles together, until the news of Jesus reaches Rome."
@@ -173,11 +173,11 @@
       "slug": "new-creation",
       "n": 13,
       "title": "The New Creation",
-      "range": "Revelation",
+      "range": "Revelation 21 to 22, with 1 Corinthians 15 and Romans 8",
       "act": "new-creation",
       "actLabel": "Act Eleven",
       "actTitle": "The New Creation",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "One day Jesus will come back and make everything new. God will live with his people, and there will be no more crying or pain.",
         "older": "The story ends where it began, with God and his people together, in a garden that has become a city. Jesus returns, death is undone, and God makes his home with people for ever."
