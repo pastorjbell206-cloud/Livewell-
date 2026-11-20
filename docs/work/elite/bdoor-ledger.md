@@ -9367,3 +9367,26 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Paraboleuomai, a gambler's word | 19-30 | Standard lexicons | Standard |
 | Paul ‘less anxious’ (2:28) | 19-30 | BSB; wisdom/deep/anxiety.json | BSB text |
 | Proverbs 17:17; Isaiah 38:5; 50:6 | 19-30 | BSB | BSB text |
+
+## The plain notes on Philippians 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The opponents taught circumcision and law-keeping for Gentile believers; Galatians 2 and 5; Acts 15; perhaps not yet in Philippi | 1-3 | Deep note `historical` | Repository |
+| Dogs scavengers; ‘dogs’ an insult for those thought unclean or outside; Paul turns it | 1-3 | Deep note `cultural` | Repository, generalised (no group named as using it) |
+| Peritomē and katatomē | 1-3 | Deep note `cultural`; Greek text in the repository (3:2-3) | Repository |
+| A dispute among believers; Paul a Jew (3:5); Romans 9:3, 11:1; contempt for Jews rejected; pointer to the Acts 2:22-28 note; not a pattern for speech (as the Galatians 5:12 note) | 1-3 | acts/plain/2.json; galatians/plain/5.json; BSB | Repository wording |
+| Deuteronomy 10:16; 30:6; Jeremiah 4:4 | 1-3 | BSB | BSB text |
+| Seven items, four by birth and three achieved; Benjamin the tribe of Saul, Paul's Hebrew name; Pharisees respected; ‘faultless’ a public record | 4-11 | Deep note `literary`, `historical`, `cultural` | Repository |
+| Zēmia and kerdos bookkeeping words; skubalon coarse | 4-11 | Deep note `words` | Repository |
+| Echo of the hymn's shape | 4-11 | Deep note `literary` | Repository |
+| Pistis Christou two readings; Romans 3, Galatians 2; no side | 4-11 | Chapter note `hard` | Repository wording |
+| Genesis 17:12; 1 Samuel 9:1-2; Isaiah 64:6; Habakkuk 2:4; Daniel 12:2 | 4-11 | BSB | BSB text |
+| Race imagery from Greek athletic contests | 12-16 | Deep note `cultural` | Repository |
+| Isaiah 40:31; Psalm 42:1 | 12-16 | BSB | BSB text |
+| Enemies of the cross: the same group (belly as food laws, shame as circumcision) or believers treating freedom as licence; readers differ | 17-21 | Deep note `historical` | Repository. No side |
+| Colony; politeuma; emperor often hailed as saviour | 17-21 | Deep note `cultural`, `words` | Repository |
+| Nationalist readings an error, no one named; the cross belongs to no flag | 17-21 | CLAUDE.md guardrails; Ephesians book page | No factual claim |
+| Psalm 49:15; 17:15; Jeremiah 29:7 | 17-21 | BSB | BSB text |
