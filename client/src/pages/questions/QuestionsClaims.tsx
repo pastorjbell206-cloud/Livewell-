@@ -30,8 +30,8 @@ export default function QuestionsClaims() {
         noindex={pending}
       />
       <Waiting when={loading} />
-      <PageHead door="The case for the faith" doorHref={QUESTIONS_ROOM} title="Look up a claim" line="Each claim as its proponent makes it, with the page that answers it." width="var(--w-default)" />
-      {data && pending && <ReviewLine />}
+      <PageHead door="The case for the faith" doorHref={QUESTIONS_ROOM} title="Look up a claim" line="Each claim as its proponent makes it, with the page that answers it." width="var(--w-read)" />
+      {data && pending && <ReviewLine width="var(--w-read)" />}
 
       <section className="qx-sec">
         <div className="qx-read">

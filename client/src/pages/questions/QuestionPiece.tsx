@@ -99,8 +99,8 @@ export default function QuestionPiece() {
     <Layout>
       {p && <SEOMeta title={p.question} description={p.shortAnswer} url={`${SITE}${pieceHref(area, slug)}`} type="article" noindex={pending} />}
       <Waiting when={!failed && !p} />
-      <PageHead door={entry?.title ?? "The case for the faith"} doorHref={entry ? areaHref(area) : QUESTIONS_ROOM} title={listed?.question ?? "Opening the question…"} width="var(--w-default)" />
-      {listed && pending && <ReviewLine />}
+      <PageHead door={entry?.title ?? "The case for the faith"} doorHref={entry ? areaHref(area) : QUESTIONS_ROOM} title={listed?.question ?? "Opening the question…"} width="var(--w-read)" />
+      {listed && pending && <ReviewLine width="var(--w-read)" />}
 
       {failed ? (
         <LoadFailed what="This question" onRetry={() => { index.retry(); piece.retry(); }} backHref={entry ? areaHref(area) : QUESTIONS_ROOM} backLabel="Back to the area" />
@@ -113,7 +113,7 @@ export default function QuestionPiece() {
             </div>
 
             <nav className="qx-contents" id="contents" aria-labelledby="qx-contents-title">
-              <h2 id="qx-contents-title">In this piece</h2>
+              <h2 id="qx-contents-title" className="eyebrow">In this piece</h2>
               <ol>
                 {parts(p).map((x) => (
                   <li key={x.id}>

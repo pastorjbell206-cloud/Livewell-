@@ -30,9 +30,9 @@ export function useQFile<T>(key: string | null, load: () => Promise<T>) {
 }
 
 /** The quiet line a page not yet published carries under its head. */
-export function ReviewLine() {
+export function ReviewLine({ width }: { width?: string }) {
   return (
-    <p className="qx-review" role="note">
+    <p className="qx-review" role="note" style={width ? { maxWidth: width } : undefined}>
       <Eye aria-hidden="true" size={16} strokeWidth={1.75} />
       {REVIEW_LINE}
     </p>

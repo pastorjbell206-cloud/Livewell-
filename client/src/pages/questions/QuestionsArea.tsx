@@ -43,8 +43,8 @@ export default function QuestionsArea() {
     <Layout>
       {entry && a && <SEOMeta title={entry.title} description={a.intro.split("\n\n")[0]} url={`${SITE}${areaHref(slug)}`} noindex={pending} />}
       <Waiting when={!failed && !a} />
-      <PageHead door="The case for the faith" doorHref={QUESTIONS_ROOM} title={entry?.title ?? "Opening the area…"} width="var(--w-default)" />
-      {entry && pending && <ReviewLine />}
+      <PageHead door="The case for the faith" doorHref={QUESTIONS_ROOM} title={entry?.title ?? "Opening the area…"} width="var(--w-read)" />
+      {entry && pending && <ReviewLine width="var(--w-read)" />}
 
       {failed ? (
         <LoadFailed what="This area" onRetry={() => { index.retry(); page.retry(); }} backHref={QUESTIONS_ROOM} backLabel="All the areas" />
