@@ -12829,3 +12829,28 @@ Cut before publishing: a guess that the hand was filled with the first portion o
 | Hebrews 10:11-12; John 1:14; Revelation 21:3 | 38-46 | BSB; exodus/29.json `christ` | BSB text |
 
 Cut before publishing: ‘the time of creation’ for the seven days and ‘holiness almost like a force’ (neither in the notes).
+
+## The plain notes on Exodus 30 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| What keeps the sanctuary working; the calf below | 1-10 | exodus/30.json `story` | Repository |
+| Why here and not in chapter 25: a later supplement, or the priests' ongoing ministry | 1-10 | exodus/30.json `historical` | Repository; no side |
+| Small horned altars at Megiddo and Arad | 1-10 | exodus/30.json `historical` | Repository |
+| Leviticus 16:13; 2 Chronicles 26:16 (Uzziah); Psalm 141:2; Luke 1:11; Revelation 8:4 | 1-10 | BSB; exodus/30.json `historical`, `christ` | BSB text |
+| The shekel as a weight of about 11 to 12 grams; no coins | 11-16 | exodus/30.json `cultural` | Repository |
+| A census to muster or tax; twenty the age of service; counting as claiming; the ransom as confession | 11-16 | exodus/30.json `cultural`, `hard` | Repository |
+| The silver bases (38:25-28); the later temple tax (Matthew 17:24-27) | 11-16 | exodus/30.json `cultural` | Repository |
+| Counting not wrong in itself (Numbers); fear of counting debated | 11-16 | exodus/30.json `hard` | Repository; no side |
+| Exodus 38:26-27; 2 Samuel 24:10; Matthew 17:24; 1 Peter 1:18-19 | 11-16 | BSB | BSB text |
+| Psalm 24:4; Hebrews 10:22 | 17-21 | BSB | BSB text |
+| Myrrh and frankincense from southern Arabia and the Horn of Africa; cinnamon and cassia farther east; cane and onycha uncertain | 22-33, 34-38 | exodus/30.json `historical` | Repository |
+| Anointing as installing; why the recipe was protected | 22-33 | exodus/30.json `cultural`, `hard` | Repository |
+| ‘Cut off’: three readings | 22-33 | exodus/30.json `cultural` | Repository; no side |
+| Psalm 133:2; Luke 4:18 | 22-33 | BSB; exodus/30.json `christ` | BSB text |
+| Incense in ancient temples; ‘in front of the Testimony’ nearest the ark; the seven speeches and creation | 34-38 | exodus/30.json `cultural`, `literary` | Repository |
+| Revelation 8:3; 2 Corinthians 2:15 | 34-38 | BSB | BSB text |
+
+Cut before publishing: a paraphrase of verse 34 that had been set in quotation marks (now given as a list with only the BSB's words quoted).
