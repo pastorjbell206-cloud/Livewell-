@@ -11979,3 +11979,33 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Isaiah 60:19, 11, 3; 52:1 | 22-27 | BSB | BSB text |
 
 Cut before publishing: 2 Samuel 7:14 behind ‘he will be My son’ (no repository note makes the link); a reading of ‘the cowardly’ as those who denied Christ under pressure (narrowed to the word and its place beside ‘the one who overcomes’); ‘an ancient city shut its gates at night for fear of enemies’ (no repository source); a line that the list in verse 8 describes lives that go on without turning (replaced by the BSB's own ‘practices’ in 21:27 and 22:15).
+
+## The plain notes on Revelation 22 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last page returns to the first: garden, river, tree of life; the curse and the cherubim; the garden within a city | 1-5 | revelation/22.json `story`, `literary` | Repository |
+| Zōē; xulon and the cross (a link Revelation does not draw); katanathema and Genesis 3:17 | 1-5 | revelation/22.json `words` (G2222, G3586, G2652) | Repository |
+| One throne of God and the Lamb; healing of the nations; water as life | 1-5 | revelation/22.json `christ`, `cultural` | Repository |
+| Seeing God's face (Exodus 33:20); the barrier gone; the name on the forehead | 1-5 | revelation/22.json `cultural` | Repository |
+| Reigning restored, the rule given at creation | 1-5 | revelation/verses/20.json (6 `theology`) | Repository |
+| Genesis 2:9, 10; 3:24; Ezekiel 47:12; Zechariah 14:8; Psalm 46:4; Exodus 33:20 | 1-5 | BSB | BSB text |
+| The epilogue echoing the prologue (1:1, 3, 8); a collage of voices; ‘soon’ three times; two of the seven beatitudes here | 6-9 | revelation/22.json `literary` | Repository |
+| John stopped again from worshipping the angel (19:10) | 6-9 | revelation/19.json `doctrines` (god) | Repository |
+| Daniel 12:4 against 22:10 | 6-9 | revelation/intro.json `teaching` (kind) | Repository |
+| Do not seal; the time near; Alpha and Omega, First and Last, taken by Jesus (1:8; 21:6) | 10-15 | revelation/22.json `christ`, `literary` | Repository |
+| Washing robes (7:14); the right to the tree; ‘dogs’ an ancient insult for the shameless, those outside by their choice | 10-15 | revelation/22.json `doctrines` (salvation), `cultural` | Repository |
+| ‘Soon’: 2 Peter 3; the preterist answer; the character of the age; patience (2 Peter 3:8-9); held across the four readings; no date; Matthew 24:36 | 10-15 | revelation/22.json `hard`; revelation/intro.json `teaching` (not) | Repository, no side |
+| Isaiah 44:6 and Christ's ‘First and the Last’ | 10-15 | isaiah/44.json | Repository |
+| Isaiah 44:6; Genesis 3:24; 2 Peter 3:8, 9; Matthew 24:36 | 10-15 | BSB | BSB text |
+| ‘I, Jesus’ for the churches; Root and Offspring of David (Isaiah 11:1); the Morning Star, Venus (Numbers 24:17) | 16-17 | revelation/22.json `christ`, `cultural` | Repository |
+| Erchomai for his coming and the church's ‘Come’; the thirsty invited freely (Isaiah 55:1) | 16-17 | revelation/22.json `words` (G2064); isaiah/55.json | Repository |
+| Isaiah 55:1; 11:1; Numbers 24:17 | 16-17 | BSB | BSB text |
+| Hand copying; warnings against altering texts; Deuteronomy 4:2; 12:32; about this book, applied more widely by many | 18-21 | revelation/22.json `historical` | Repository |
+| Maranatha (1 Corinthians 16:22); the Didache, late first or early second century; the closing grace like a letter | 18-21 | revelation/22.json `historical`, `literary` | Repository |
+| 22:18-19 not a weapon against other Christians, their readings or a faithful translation | 18-21 | The task's rule; revelation/22.json `historical`; revelation/intro.json `teaching` (ways, millennium) | Repository |
+| Deuteronomy 4:2; 12:32 | 18-21 | BSB | BSB text |
+
+Cut before publishing: Amos 3:7, Proverbs 24:12 and Psalm 17:15 as Old Testament echoes (no repository note links them to this chapter); ‘Blessed is the one who keeps’ and ‘Blessed are those who wash their robes’ quoted only in part, as in chapters 14, 16, 19 and 20; a reading of 22:11 as fixing what people are becoming (narrowed to the plain words).
