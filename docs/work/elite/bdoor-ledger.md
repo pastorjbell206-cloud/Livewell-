@@ -7871,3 +7871,22 @@ Cut: the Amidah's "who gives life to the dead" (not checked); later rabbinic tra
 | Isaiah 53:11; Genesis 3:6 | 15-21 | BSB | BSB text |
 
 Cut: Gregory of Nyssa and other universalists by name; Ambrosiaster by name; 2 Baruch's "each his own Adam" line (deep note; not checked).
+
+## The plain notes on Romans 6 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Baptism the rite of entry; in water, often by immersion it seems; the New Testament does not describe the mode in detail | 1-4 | Repository deep note (`historical`) | Repository; "it seems", "many readers think" |
+| What all churches share on baptism; the differences pointed to the Acts 2:37-41 note | 1-4 | Acts 2 plain note | Repository; stated as teachings, no side |
+| Exodus 14:29; 1 Corinthians 10:1-2; Ezekiel 36:25-26; Galatians 3:27 | 1-4 | BSB | BSB text |
+| "Count" the same verb as "credited" (logizomai); hoplon usually weapons | 5-14 | Greek text; repository deep note (`cultural`) | Script; repository |
+| Readings of continuing sin (dethroned master; Reformed and Lutheran; Wesleyan entire sanctification) | 5-14 | Repository deep note (`hard`) | Stated as readings |
+| Psalm 116:16; Joshua 24:15; Deuteronomy 30:19 | 5-14 | BSB | BSB text |
+| Slavery everywhere; a large part of Rome slaves or former slaves; freed slaves owed duties; some hearers probably slaves | 15-23 | wrom-ledger (Scheidel; manumission; Romans 16 names); repository deep note | Ledger |
+| Paul's apology for the picture (6:19), read as the picture being too crude | 15-23 | BSB; standard reading | "Many readers take him to mean" |
+| Opsōnion, a soldier's pay; charisma, gift | 15-23 | Repository deep note (`cultural`) | Repository |
+| Exodus 20:2; Leviticus 25:42; Genesis 2:17; Ezekiel 18:4; Exodus 21:16; Philemon 1:16; the slavery Honest Answer | 15-23 | BSB; `answers.ts` | BSB text; Honest Answer pointed to by title |
+
+Cut: the mystery religions and the old argument that Paul borrowed from them (deep note; not checked).
