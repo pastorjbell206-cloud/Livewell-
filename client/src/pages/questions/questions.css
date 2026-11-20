@@ -1,0 +1,103 @@
+/* The apologetics library (/questions): the room, an area, a piece, the
+   claims index. Colour through tokens only; the reading text in the reading
+   face, in the reading column. */
+.qx-sec{padding:var(--s-5) var(--gutter) var(--s-6)}
+.qx-wrap{max-width:var(--w-default);margin:0 auto}
+.qx-read{max-width:var(--w-read);margin:0 auto}
+.qx-review{box-sizing:content-box;display:flex;gap:10px;align-items:flex-start;max-width:var(--w-default);margin:0 auto;padding:var(--s-2) var(--gutter) 0;font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted)}
+.qx-review svg{flex:none;margin-top:2px}
+
+/* Reading text */
+.qx-prose p,.qx-prose li{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink)}
+.qx-prose p{margin:0 0 1.1em}
+.qx-prose em{font-style:italic}
+.qx-prose a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+
+/* The short answer, set apart at the top */
+.qx-short{margin:0 0 var(--s-4);padding:var(--s-3);background:var(--card);border:1px solid var(--border);border-top:3px solid var(--mustard);border-radius:var(--radius-sm)}
+.qx-short .eyebrow{margin:0 0 var(--s-1)}
+.qx-short p:last-child{margin-bottom:0}
+
+/* The contents list and the way back to it */
+.qx-contents{margin:0 0 var(--s-4);padding:var(--s-2) 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.qx-contents .eyebrow{margin:0 0 4px}
+.qx-contents ol{list-style:none;margin:0;padding:0;counter-reset:qx}
+.qx-contents li{counter-increment:qx}
+.qx-contents a{display:flex;align-items:center;gap:12px;min-height:44px;font-family:var(--U);font-size:15px;line-height:1.35;color:var(--ink);text-decoration:none}
+.qx-contents a::before{content:counter(qx);flex:none;width:24px;font-weight:600;color:var(--ink-muted)}
+.qx-contents a:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px}
+.qx-part{margin-top:var(--s-5);scroll-margin-top:96px}
+.qx-part > h2,.qx-h2{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.15;letter-spacing:-.01em;color:var(--ink);margin:0 0 var(--s-2)}
+.qx-back{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--U);font-size:13px;font-weight:500;color:var(--ink-muted);text-decoration:none}
+.qx-back:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard)}
+
+/* The argument laid out */
+.qx-arg{margin:var(--s-3) 0;padding:var(--s-3);border:1px solid var(--border);border-left:3px solid var(--mustard);border-radius:var(--radius-sm);background:var(--card)}
+.qx-arg figcaption{font-family:var(--U);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--mustard-text);margin:0 0 var(--s-2)}
+.qx-arg ol{margin:0;padding-left:1.6em}
+.qx-arg li{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 .7em;padding-left:.2em}
+.qx-arg li::marker{font-family:var(--U);font-weight:600;color:var(--ink-muted)}
+.qx-arg li.qx-weight{font-weight:600}
+.qx-weight__tag{display:block;margin:2px 0 0;font-family:var(--U);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mustard-text)}
+.qx-arg .qx-so{margin:var(--s-2) 0 0;padding-top:var(--s-2);border-top:1px solid var(--border);font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);font-weight:600}
+
+/* Reading lists */
+.qx-list{list-style:none;margin:0;padding:0}
+.qx-list li{margin:0 0 .8em;padding-left:1.2em;text-indent:-1.2em;font-family:var(--font-reading);font-size:17px;line-height:1.5;color:var(--ink)}
+.qx-list li::before{content:"";display:inline-block;width:.45em;height:.45em;margin-right:.75em;background:var(--ink-muted);vertical-align:.15em}
+.qx-list p{display:inline;margin:0;font-size:inherit;line-height:inherit}
+
+/* Links to the Study Bible and the Honest Answers */
+.qx-links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.qx-links a{display:flex;align-items:center;gap:12px;min-height:52px;padding:10px 14px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card);color:var(--ink);text-decoration:none;font-family:var(--U);font-size:15px;line-height:1.35}
+.qx-links a:hover{border-color:var(--ink)}
+.qx-links svg{flex:none;color:var(--ink-muted)}
+.qx-links small{display:block;font-size:12.5px;color:var(--ink-muted)}
+
+/* The room's areas */
+.qx-areas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:clamp(12px,2vw,20px)}
+.qx-areas > li{display:flex}
+.qx-area{flex:1;display:flex;flex-direction:column;gap:8px;padding:clamp(18px,2.2vw,26px);border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bone-warm)}
+.qx-area__n{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}
+.qx-area__title{font-family:var(--F);font-size:clamp(1.3rem,1.15rem + .4vw,1.5rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0}
+.qx-area__count{margin-top:auto;padding-top:6px;font-family:var(--U);font-size:13.5px;color:var(--ink-muted)}
+a.qx-area{background:var(--card);color:inherit;text-decoration:none}
+a.qx-area .qx-area__count{color:var(--ink);font-weight:600;display:flex;align-items:center;gap:6px}
+a.qx-area:hover,a.qx-area:focus-visible{border-color:var(--borderdk);box-shadow:var(--shadow-card)}
+
+/* An area's list of pieces */
+.qx-pieces{list-style:none;margin:0;padding:0;counter-reset:qp;display:flex;flex-direction:column;gap:10px}
+.qx-pieces li{counter-increment:qp}
+.qx-pieces a{display:grid;grid-template-columns:28px 1fr;gap:4px 10px;padding:16px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card);color:var(--ink);text-decoration:none}
+.qx-pieces a::before{content:counter(qp);grid-row:span 2;font-family:var(--U);font-weight:600;color:var(--mustard-text);padding-top:4px}
+.qx-pieces a:hover{border-color:var(--ink)}
+.qx-pieces strong{font-family:var(--F);font-size:clamp(1.2rem,1.1rem + .3vw,1.35rem);font-weight:500;line-height:1.25}
+.qx-pieces span{font-family:var(--B);font-size:15px;line-height:1.55;color:var(--ink-muted)}
+
+.qx-words{margin:0;display:grid;gap:12px}
+.qx-words div{padding-bottom:12px;border-bottom:1px solid var(--border)}
+.qx-words dt{font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);margin:0 0 2px}
+.qx-words dd{margin:0;font-family:var(--font-reading);font-size:17px;line-height:1.55;color:var(--ink)}
+
+/* The claims index */
+.qx-claims{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.qx-claims li{padding:16px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card)}
+.qx-claims q{display:block;font-family:var(--F);font-size:clamp(1.2rem,1.1rem + .3vw,1.35rem);line-height:1.25;color:var(--ink);quotes:none}
+.qx-claims .qx-claims__who{margin:6px 0 10px;font-family:var(--B);font-size:14.5px;color:var(--ink-muted)}
+.qx-claims a{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-family:var(--U);font-size:14.5px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px}
+
+.qx-sec .btn{gap:8px}
+.qx-turn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:var(--s-5)}
+.qx-turn a{display:flex;flex-direction:column;gap:6px;min-height:64px;padding:14px 16px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--card);color:var(--ink);text-decoration:none}
+.qx-turn a:hover{border-color:var(--ink)}
+.qx-turn small{display:inline-flex;align-items:center;gap:6px;font-family:var(--U);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mustard-text)}
+.qx-turn span{font-family:var(--F);font-size:19px;line-height:1.25}
+.qx-turn__next{text-align:right;align-items:flex-end}
+@media (max-width:640px){
+  .qx-sec{padding-top:var(--s-4)}
+  .qx-short{padding:var(--s-2)}
+  .qx-arg{padding:var(--s-2)}
+  .qx-arg ol{padding-left:1.3em}
+  .qx-turn{grid-template-columns:minmax(0,1fr)}
+  .qx-turn__next{text-align:left;align-items:flex-start}
+}

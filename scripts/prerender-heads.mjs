@@ -24,6 +24,7 @@ import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
 import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
+import { loadQuestions } from "./lib/questions.mjs";
 
 dotenv.config();
 
@@ -1792,6 +1793,8 @@ async function main() {
     console.log(`[prerender] wrote ${n} Bible Explorer moving pictures`);
   }
 
+  wrote += prerenderQuestions(template);
+
   const studyBible = prerenderStudyBible(template);
   wrote += studyBible;
   console.log(`[prerender] wrote ${studyBible} Study Bible pages (books, chapters, acts, doctrines)`);
@@ -2127,6 +2130,115 @@ async function main() {
   if (shelfWrote) console.log(`[prerender] shelf: ${shelfWrote} essays written from the shelf (no database or static row)`);
 
   console.log(`[prerender] wrote ${wrote} per-route HTML files into ${DIST_DIR}`);
+}
+
+/**
+ * The apologetics library (client/public/questions/, scripts/lib/questions.mjs):
+ * the room, the claims index, each area with a page, and each piece, its
+ * whole text in the static shell for first paint. A pending page's head says
+ * noindex (the SPA's SEOMeta says the same) and its text carries the review
+ * line; none of them is in the sitemap. A live page lists only live pages.
+ */
+const QUESTIONS_REVIEW = "This page is being reviewed and is not yet published.";
+function prerenderQuestions(template) {
+  const q = loadQuestions(REPO_ROOT);
+  if (!q.areas.length) return 0;
+  let n = 0;
+  const review = (pending) => (pending ? `<p class="pre-subtitle">${escapeHtml(QUESTIONS_REVIEW)}</p>` : "");
+  const room = { name: "The case for the faith", path: "/questions" };
+  const write = (route, { title, description, pending, type = "website", crumbs, body }) => {
+    const head = buildHead({
+      title,
+      description,
+      url: `${SITE_URL}${route}`,
+      image: ogImageUrl(title),
+      type,
+      noindex: pending,
+      schemas: pending ? [] : [breadcrumbSchema([{ name: "Home", path: "" }, ...crumbs])],
+    });
+    writeRoute(template, { path: route }, head, body);
+    n++;
+  };
+  const shown = (a, pending) => a.pieces.filter((p) => p.live || pending);
+  const list = (items) => `<ul>\n${items.map((x) => `<li>${inline(x)}</li>`).join("\n")}\n</ul>`;
+
+  // The room and the claims index (pending while no area is live).
+  const roomPending = !q.roomLive;
+  write("/questions", {
+    title: "The case for the faith",
+    description: "Hard questions about Christianity, taken one at a time: the objection at its strongest, what is true in it, the evidence, the argument, and books on both sides.",
+    pending: roomPending,
+    crumbs: [room],
+    body: article([
+      `<p class="pre-eyebrow"><a href="/topics">Questions</a></p>`,
+      `<h1>The case for the faith</h1>`,
+      review(roomPending),
+      sec("Ten areas", `<ol>\n${q.areas.map((a) => {
+        const k = shown(a, roomPending).length;
+        return k && a.page ? `<li><a href="/questions/${escapeHtml(a.slug)}">${escapeHtml(a.title)}</a> (${k} ${k === 1 ? "piece" : "pieces"})</li>` : `<li>${escapeHtml(a.title)} (being written)</li>`;
+      }).join("\n")}\n</ol>`),
+    ]),
+  });
+  const claims = q.areas.flatMap((a) => a.pieces.filter((p) => p.live || roomPending).flatMap((p) => (p.claims || []).map((c) => ({ ...c, a, p }))));
+  write("/questions/claims", {
+    title: "Look up a claim",
+    description: "Claims made against the Christian faith, each with the work it comes from and a link to the page that answers it.",
+    pending: roomPending,
+    crumbs: [room, { name: "Look up a claim", path: "/questions/claims" }],
+    body: article([
+      `<p class="pre-eyebrow"><a href="/questions">The case for the faith</a></p>`,
+      `<h1>Look up a claim</h1>`,
+      review(roomPending),
+      `<ul>\n${claims.map((c) => `<li>${escapeHtml(c.claim)}. ${escapeHtml(c.proponent)}, <cite>${escapeHtml(c.work)}</cite> (${c.year}). <a href="/questions/${escapeHtml(c.a.slug)}/${escapeHtml(c.p.slug)}">${escapeHtml(c.p.question)}</a></li>`).join("\n")}\n</ul>`,
+    ]),
+  });
+
+  for (const a of q.areas.filter((x) => x.page)) {
+    const areaRoute = `/questions/${a.slug}`;
+    const pg = a.page;
+    write(areaRoute, {
+      title: a.title,
+      description: pg.intro.split("\n\n")[0],
+      pending: !a.live,
+      crumbs: [room, { name: a.title, path: areaRoute }],
+      body: article([
+        `<p class="pre-eyebrow"><a href="/questions">The case for the faith</a></p>`,
+        `<h1>${escapeHtml(a.title)}</h1>`,
+        review(!a.live),
+        mdToHtml(pg.intro),
+        sec("The questions", `<ol>\n${shown(a, !a.live).map((p) => `<li><a href="/questions/${escapeHtml(a.slug)}/${escapeHtml(p.slug)}">${escapeHtml(p.question)}</a></li>`).join("\n")}\n</ol>`),
+        sec("Words these pages use", `<dl>\n${(pg.words || []).map((w) => `<dt>${escapeHtml(w.term)}</dt><dd>${escapeHtml(w.meaning)}</dd>`).join("\n")}\n</dl>`),
+        sec("Where else to look", list(pg.elsewhere || [])),
+      ]),
+    });
+    for (const p of a.pieces) {
+      const route = `/questions/${a.slug}/${p.slug}`;
+      const parts = p.sections.map((s) =>
+        sec(s.heading, s.role === "argument"
+          ? [mdToHtml(s.intro), `<ol>\n${s.steps.map((t) => `<li>${inline(t)}</li>`).join("\n")}\n</ol>`, `<p><strong>${inline(s.conclusion)}</strong></p>`, mdToHtml(s.after)].join("\n")
+          : mdToHtml(s.body))
+      );
+      write(route, {
+        title: p.question,
+        description: p.shortAnswer,
+        pending: !p.live,
+        type: "article",
+        crumbs: [room, { name: a.title, path: areaRoute }, { name: p.question, path: route }],
+        body: article([
+          `<p class="pre-eyebrow"><a href="${areaRoute}">${escapeHtml(a.title)}</a></p>`,
+          `<h1>${escapeHtml(p.question)}</h1>`,
+          review(!p.live),
+          sec("The short answer", mdToHtml(p.shortAnswer)),
+          ...parts,
+          sec("Read the other side", list(p.otherSide || [])),
+          sec("Read further", list(p.further || [])),
+          sec("On the site", list(p.onSite || [])),
+        ]),
+      });
+    }
+  }
+  console.log(`[prerender] wrote ${n} pages of the questions library (${q.roomLive ? "room live" : "all pending, noindex"})`);
+  return n;
 }
 
 main().catch(err => {

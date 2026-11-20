@@ -12,6 +12,7 @@ import mysql from "mysql2/promise";
 import fs from "node:fs";
 import dotenv from "dotenv";
 import { essayDate, loadEssayShelf, loadTakenDown } from "./lib/shelf.mjs";
+import { liveQuestionPaths } from "./lib/questions.mjs";
 
 dotenv.config();
 
@@ -317,6 +318,13 @@ function manifestPages() {
     for (const m of src.matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)) pages.push({ url: `/answers/${m[1]}`, priority: "0.8", changefreq: "monthly" });
   } catch (err) {
     console.warn(`[sitemap] could not read the Honest Answers: ${err.message}`);
+  }
+  // The questions library: live pages only (scripts/lib/questions.mjs); a
+  // pending room, area or piece is noindex and never listed.
+  try {
+    for (const url of liveQuestionPaths()) pages.push({ url, priority: "0.8", changefreq: "monthly" });
+  } catch (err) {
+    console.warn(`[sitemap] could not read the questions library: ${err.message}`);
   }
   // The Study Bible: every book, every chapter, the eleven acts of the story,
   // and the doctrine pages (client/public/bible/*).

@@ -170,6 +170,12 @@ const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
 const Answers = lazy(() => import("./pages/Answers"));
 const AnswerPage = lazy(() => import("./pages/AnswerPage"));
+// The apologetics library (lib/questions): pending until James reads it, so
+// it is in no menu yet (siteCatalog.ts) and its pages say noindex.
+const QuestionsRoom = lazy(() => import("./pages/questions/QuestionsRoom"));
+const QuestionsClaims = lazy(() => import("./pages/questions/QuestionsClaims"));
+const QuestionsArea = lazy(() => import("./pages/questions/QuestionsArea"));
+const QuestionPiece = lazy(() => import("./pages/questions/QuestionPiece"));
 const Skeptics = lazy(() => import("./pages/Skeptics"));
 const Topics = lazy(() => import("./pages/Topics"));
 const Start = lazy(() => import("./pages/Start"));
@@ -645,6 +651,10 @@ function Router() {
         <Route path="/historic-faith" component={ToStudyRedirect} />
         <Route path="/answers/:slug" component={AnswerPage} />
         <Route path="/answers" component={Answers} />
+        <Route path="/questions/claims" component={QuestionsClaims} />
+        <Route path="/questions/:area/:slug" component={QuestionPiece} />
+        <Route path="/questions/:area" component={QuestionsArea} />
+        <Route path="/questions" component={QuestionsRoom} />
         <Route path="/skeptics" component={Skeptics} />
         <Route path="/topics/:slug" component={Topic} />
         <Route path="/topics" component={Topics} />

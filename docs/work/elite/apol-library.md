@@ -389,3 +389,95 @@ A New Testament textual critic (and, for the other areas, an Old Testament archa
 7. **Sensitive pages.** The church and the Jewish people, sexuality, abuse, the Crusades: do you want to read each before it goes live, and is there a view on sexuality you want stated as yours?
 8. **Your own voice.** The pilot uses none of your biography. If one fact (you came to faith from atheism) belongs in this area, say where.
 9. **The end of your message.** It stopped at "And". Whatever came next may change the plan.
+
+---
+
+## 7. The engineering stage (eleventh run, 2026-11-20): what was built and what was run
+
+### What James can open on the preview
+
+- `/questions`: the room. The plan's ten areas, each with its number of pieces; nine show "Being written" with no link; area 2 links to its page. "Look up a claim" leads to the claims index.
+- `/questions/text`: the area page (the pilot's index.md, word for word): its opening, its four questions, the words its pages use, where else to look.
+- `/questions/text/more-variants-than-words`, `/questions/text/copies-of-copies`, `/questions/text/passages-not-in-the-earliest-bibles`, `/questions/text/did-scribes-make-jesus-more-divine`: the four pieces.
+- `/questions/claims`: the claims index (eight claims, from the plan's own table in 2.1, each with its work and the piece that answers it).
+
+Every one of these pages is pending: it says `noindex, follow` (in the prerendered head and in the SPA's SEOMeta), carries the line "This page is being reviewed and is not yet published.", is in no menu (`siteCatalog.ts` is untouched), not in the sitemap, not in the search index, not in llms.txt, and is linked from no page outside the library.
+
+### The data
+
+`client/public/questions/`:
+
+- `areas.json`: the ten areas (slug, number, title, planned count, status).
+- `<area>/_area.json`: an area's own page (intro, its pieces with their one-line descriptions, words, where else to look, and `record`, the Markdown it came from).
+- `<area>/<slug>.json`: a piece. `question`, `status`, `shortAnswer` (Markdown), `sections` (each with a `role` among objection, concessions, evidence, argument, reply, unresolved, differ, and its own heading; the argument has `intro`, `steps`, `conclusion`, `after` and `weightStep`), `otherSide`, `further`, `onSite` (lists of Markdown lines), `objectionSource` (author, title, year), `ledger` (file, heading, key), `links` (Study Bible chapters, Honest Answers, an Explorer stop when one exists), `claims`, `record`.
+- `index.json`: the manifest, written by `scripts/build-questions-index.mjs` (with `--check` in CI). Shared reading code: `scripts/lib/questions.mjs` (scripts), `client/src/lib/questions.ts` (pages).
+
+### Pending and live
+
+A piece is live when its own `status` and its area's `status` in `areas.json` are both "live"; the room and the claims index are live when any area is. A live page lists only live pieces; a pending page also lists the pending pieces beside it, so James can read through them. The sitemap (`generate-sitemap.mjs`), the search index (`build-search-index.mjs`) and the link resolver (`scripts/lib/site-routes.mjs`) take live pages only, by the same rule.
+
+To make the text area live: set `"status": "live"` on each of its four piece files and on the area in `areas.json`, run `node scripts/build-questions-index.mjs` and `pnpm exec tsx scripts/build-search-index.mjs`, and add the room to the Questions door in `client/src/lib/siteCatalog.ts` (one entry; the door has room for a sixth) and, if wanted, one line in `client/public/llms.txt`. The validator then checks that no live page links a pending one.
+
+### The validator
+
+`scripts/validate-questions.mjs` (in the content-gates step) checks every [V] point of section 3: the short answer is one paragraph of 80 to 180 words; every role is present in the standard's order; the objection names its proponent and the proponent's work and year stand under "Read the other side"; at least two numbered steps, a conclusion beginning "So", and `weightStep` agreeing with the step the text says carries the weight; the ledger file holds the heading and the heading's block names the piece's key; two or more entries in each reading list, each with a year; 1,800 to 2,500 words of argued prose. And the house rules: no em-dash, none of CLAUDE.md's Forbidden Language, "!" only inside quotation marks, no "debunked" or "so-called", no "destroyed" said of an argument or a person. And the library's own: every link in the prose and every Study Bible, Honest Answer and Explorer link reaches a page; no live page links a pending one; the area page lists exactly its pieces under the same questions; the manifest is current; the plan's ten areas; and no pending address appears in `client/src` outside the library, the sitemap, the search index, llms.txt or llms-full.txt.
+
+Seeded faults, each in a copy of the data, each caught (`server/questions-validator.test.ts`, 27 cases plus the clean copy passing): short answer too short; two paragraphs; no concessions; no unresolved section; sections out of order; objection naming no proponent; the proponent's work missing from the other side; one book on the other side; a reading entry with no year; one step; the weight-bearing step marked wrong; a conclusion not beginning "So"; an em-dash; "tapestry"; "!" outside quotes; "debunked"; "so-called"; a link to no page; a missing Study Bible note; a missing Honest Answer; a ledger key the ledger does not name; a live piece linking a pending one; an area page leaving out a piece; a stale manifest; nine areas; a pending address in a page outside the library; a pending address in a sitemap. Run by hand as well: a pending address in a file under `client/src` and a full URL in llms.txt were both caught, then removed.
+
+### The pilot's prose is unchanged
+
+`scripts/diff-questions-record.mjs` rebuilds each Markdown file from the data and compares the two with whitespace collapsed: `ok` for all five (index.md 683 words; the four pieces 2,766, 2,212, 2,130 and 2,312 words with their lists). Only headings moved into fields. The Markdown files stay as the record. Argued prose (short answer and sections) is 2,450, 1,914, 1,932 and 2,031 words.
+
+### The Bible reader's mark
+
+`client/src/lib/later-passages.ts` names the two long passages the data flags `later` and prints: Mark 16:9-20 and John 7:53-8:11. A plain bracketed line in the reader's small italic note style sits before the first verse ("[The earliest manuscripts do not include Mark 16:9-20.]", "[The earliest manuscripts do not include John 7:53-8:11.]") and after the last ("[End of Mark 16:9-20.]", "[End of John 7:53-8:11.]"). John 8 repeats the opening line before verse 1, for a reader who starts there. It shows in the Study view (reading and original-language modes), the Read view, the guided walk's reading step, the verse sheet (only closing a passage when its last verse is shown) and the verse panel. No verse text changed. The BSB's own footnote wording could not be read from this machine (bereanbible.com does not resolve here; the tenth-run ledger records the same), so the words follow the site's own notes on Mark 16, John 7 and 8. There is no "Table mode" in the reader; /table redirects to /tools. John 3 rendered in both views before and after the change is byte for byte the same HTML; the tests hold that, and that the table names exactly the 24 printed `later` verses.
+
+### What was run
+
+pnpm check: pass. ESLint (changed TypeScript files): clean. Every command of the content-gates step, 40 including the two new ones, each exit code read directly: all 0. pnpm test: 152 files passed, 7 skipped; 1,776 tests passed, 73 skipped (site-structure and the route smoke test among them). pnpm build: 0. sitemap: no /questions address in it. prerender: 7 library pages written, all noindex. audit:canonicals: 2,351 URLs, 0 failures, 0 not prerendered. The served build (serve-like-vercel.mjs) at 390 and 1440: room, area, the four pieces, the claims index; Mark 16, John 8 and John 3 in the Read and Study views at 390: no sideways scroll, no console errors, both marks in place in Mark 16 and John 8, none in John 3. Mustard measured on the viewport shots at 0.06 to 0.96 percent. Lighthouse (the ci.yml script, median of three) on `/questions/text/more-variants-than-words`: accessibility 100, performance 74, best practices 96, CLS 0.000; SEO 66, because the page says noindex while it is pending.
+
+Seen and fixed on the screenshots: the review line sat indented from the head at 1440; the piece and area heads ran wide while the text sat in the reading column (both now on the reading column); the contents label fell into the display face; the reading-list marks were mustard (now muted).
+
+### Not done, and what the next stage needs
+
+- Not built: the glossary terms in /theology/glossary, the timeline picture, the passage index's "Go deeper" link from a chapter to the piece that treats it, links from the Honest Answers down to the library. All wait for the area to go live.
+- No piece has an Explorer stop yet (none exists on the subject).
+- James's read of the four pieces, and his answers to section 6, before anything goes live.
+
+---
+
+## 8. Eleventh run, continued (2026-11-20): five more pieces, and the text area goes live
+
+### Which five, and why
+
+The plan's list for area 2 (section 2) is a map, not a build order, and three of its next items (5, the Comma; 6, Luke 22:43-44; 8, Hebrews 2:9) are already treated inside the pilot's third and fourth pieces. So this run took the items not yet written in any form, in the order the lead's brief gave: the manuscript comparison with other ancient books (a question the plan's map lacked; it answers the apologists' own overclaim), plan item 9 with the method of an edition, items 12 and 5 together, item 14, and item 7.
+
+| Piece | Address (pending) | Argued prose | Ledger key |
+|---|---|---|---|
+| Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove? | /questions/text/compared-with-other-ancient-books | 2,151 words | e |
+| Who decides what the Greek New Testament says, and was there ever a single original to find? | /questions/text/who-decides-what-the-text-says | 2,074 | f |
+| Why do modern Bibles leave out verses the King James Version has? | /questions/text/king-james-and-the-missing-verses | 2,059 | g |
+| The Bible has been translated so many times. Hasn't the meaning been lost along the way? | /questions/text/lost-in-translation | 2,010 | h |
+| Was Jesus angry or compassionate when he healed the leper in Mark 1:41? | /questions/text/an-angry-jesus-mark-1-41 | 1,851 | i |
+
+Each is written first as Markdown in `docs/work/elite/apol-pilot/` and then as data in `client/public/questions/text/`; `diff-questions-record.mjs` shows all ten files (area page and nine pieces) identical to their records. Every fact is in `apol-ledger.md` under "Eleventh run" (38 searches; ehrmanblog.org and gutenberg.org do not resolve from here). The area page and `index.md` list all nine; a live area page shows only the live four.
+
+### Live (James, 2026-11-20: "leet the apologetics go live too")
+
+Live: the room `/questions` ("The case for the faith", a working name), the claims index `/questions/claims` (live claims only), the area `/questions/text`, and the four pilot pieces. The Questions door has its sixth room, "The case for the faith" (`siteCatalog.ts`, icon Library), with the text area and "Look up a claim" inside it. One line in `llms.txt`. The search index carries the room and the four live pieces. Still pending (noindex, the review line, in no list, sitemap, search index or llms.txt): the five pieces above.
+
+Tests changed to the new state (they had pinned "all pending"): `client/src/pages/questions/questions.test.tsx` (a live piece has no review line or noindex, a pending one keeps both; the area lists only live pieces; the claims page lists live claims; the menus link only live library pages; no file outside the library links a pending address) and `server/questions-validator.test.ts` (the seeded faults now use pending pieces, since copies-of-copies and /questions/text are live). No test pinned the number of rooms.
+
+### What was run
+
+Light gates after each piece (validate-questions, the manifest check, the record diff, no-emdash, links, pnpm check): all 0. Before the push, with the load under 6: pnpm test 152 files passed, 7 skipped, 1,780 tests passed, 73 skipped; all 40 content-gate commands 0; pnpm build 0; sitemap 0 (the seven live /questions addresses present, no pending one); prerender 0 (3,061 pages); audit:canonicals 0 failures over 2,362 URLs. Served build at 390 and 1440: the menu shows the new room (desktop panel and phone sheet); /questions, /questions/text, a live piece and /questions/claims have index robots and no review line; a pending piece has noindex and the review line; no sideways scroll; the only console errors are the local server's 404s for /api/track and the two Vercel analytics scripts, on every page alike. Lighthouse (ci.yml's script, median of three) on /questions/text/more-variants-than-words: performance 76, accessibility 100, best practices 96, SEO 100 (66 when it was noindex), CLS 0.000, LCP 5.0 s.
+
+Tried and reverted: preloading the manifest and the piece's JSON from the prerendered head (the page fetches them in turn). Both were fetched once, with no warning, but the medians were 71 and 74 and LCP stayed at 5.0 s, so the change went. The LCP is the moment the held prerendered text gives way to the React page, after the main bundle runs; raising it would need the page to hydrate the prerendered text instead of replacing it, or a smaller entry bundle, the same limit the chapter pages have (their CI floor is 70).
+
+### What remains in the area
+
+From the plan's fourteen: Luke 22:43-44 and Hebrews 2:9 as pages of their own (both now treated inside pilot pieces), "the earliest manuscripts are late and their dates are guesses" (Nongbri), the church fathers' quotations, and the Old Testament text (Masoretic text, Septuagint, Dead Sea Scrolls). The Comma has no separate page; the King James piece and the pilot's third piece carry it.
+
+### For James
+
+Read the five pending pieces; each becomes live by one line (its `status`). The room's name is still the working name. The King James piece speaks of King James Only believers as brothers and sisters and takes no side among the text positions; say if you want your own view stated.
