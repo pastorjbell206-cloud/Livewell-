@@ -18,6 +18,7 @@ The pages also say what history can't do. It can establish that Jesus lived, tha
 2. **Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?** Roman practice with the crucified, Jewish burial law, Yehohanan's tomb, Joseph of Arimathea, the women, and the earliest opponents' theft story.
 3. **Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?** The four natural explanations, each as its defenders put it, against the list Paul received, the persecutor and the unbelieving brother, and the word the witnesses chose.
 4. **The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?** Every difference set out, Tacitus and Suetonius on the fire of Rome as a test case, the conventions of ancient biography, and what all four agree on.
+5. **Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?** What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of "least probable," and where the question passes from history to the question of God.
 
 ## Words these pages use
 

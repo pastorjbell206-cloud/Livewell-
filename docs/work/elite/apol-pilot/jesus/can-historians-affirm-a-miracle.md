@@ -1,0 +1,81 @@
+---
+area: jesus
+slug: can-historians-affirm-a-miracle
+status: pending (not on the site; for James to read first)
+question: "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?"
+ledger: docs/work/elite/apol-ledger.md, "Fourteenth run", key "x"
+---
+
+# Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?
+
+## The short answer
+
+Ehrman is right about something important. History deals in probabilities, its methods can't observe God acting, and no historical argument proves the resurrection. Christians who say otherwise claim too much. But his argument shows less than it seems to. Historians can investigate whether a man executed on a Friday was buried, whether his tomb was found empty and whether people became convinced they had seen him alive, because those are public claims that leave traces. What they can't decide by method alone is whether "God raised him" is the best explanation of those facts, because that depends on whether there is a God who might act, a question history neither proves nor rules out. A rule that excludes every miracle in advance is a philosophical starting point, not a result of historical research. The resurrection is a historical claim about an event. Whether to believe it can't be settled by history alone.
+
+## The objection at its strongest
+
+Bart Ehrman, who taught for many years at the University of North Carolina and calls himself an agnostic, has pressed this argument in public debates, with William Lane Craig at the College of the Holy Cross on 28 March 2006 and with Michael Licona in 2009, and in *How Jesus Became God* (2014). He grants a great deal: that Jesus was crucified, that some of his followers came to believe soon afterward that God had raised him, and that some of them had visions of him. What he denies is that a historian, working as a historian, can ever conclude that a miracle happened.
+
+His reasoning runs like this. History can only establish what probably happened in the past. A miracle is, by its nature, the least probable of all events, the thing that happens almost never. So a miracle can never be the most probable account of anything, and the historian, who must give the most probable account, can never conclude that one occurred. Historians also share a method that looks for causes within the world. A historian can say what people believed and what they experienced. To say that God raised Jesus is to make a claim about God, and that is a theologian's claim, not a historian's.
+
+The argument has a longer history. In 1898 the German theologian Ernst Troeltsch, in an essay on historical and dogmatic method, set out three principles of historical method: that historical judgments are only ever more or less probable; that the past is to be understood by analogy with what we know of the present; and that every event is to be explained by its connection with other events. By the second principle, an event without analogy, such as a dead man rising, is precisely what a historian can't affirm. Put at full strength, the objection says that the resurrection can be believed, but it can't be known by history, and Christians who call it a historical fact are using a word whose rules forbid it.
+
+## What is true in it
+
+Much of this is simply right, and Christians should say so before they say anything else. History deals in probabilities. Its methods can't observe God, test him or measure his acts. No argument from the sources forces a conclusion the way a proof in geometry does, and the site's own answer on the resurrection says plainly that history can't prove a miracle. Troeltsch's principle of analogy is a good working rule. Historians, and the rest of us, rightly treat reports of the extraordinary with more suspicion than reports of the ordinary, and most reports of miracles, in every age and every religion, turn out to be mistaken, exaggerated or false.
+
+It is also true that Christians have sometimes spoken as if a historical case could replace faith, as if a reader who weighed the evidence properly would have no choice but to believe. That isn't how the New Testament presents it. Matthew records that when the eleven saw the risen Jesus, "they worshiped Him, but some doubted" (Matthew 28:17, BSB).
+
+## The evidence
+
+Begin with what Ehrman himself grants, because it is a good deal. He agrees that Jesus was crucified, that his followers came to believe within a short time that God had raised him, and that some of them had experiences they took to be seeing him. E. P. Sanders, no apologist, called the resurrection experiences "a fact" and said he didn't know what gave rise to them. Dale Allison, a careful critical scholar who is also a Christian, concluded that the tomb was probably found empty and that people did see Jesus after his death, while judging that history alone can't settle what that means. These are historical judgments about events. They are where the historical question properly lives.
+
+Then look at the argument's key step. "A miracle is the least probable event" can mean two different things. It can mean that, before looking at any evidence and given only what we know of how nature usually works, a resurrection is extremely unlikely. That is true, and no Christian should deny it. Or it can mean that a resurrection remains the least likely explanation whatever the evidence turns out to be. That second claim doesn't follow from the first. Events that are very unlikely in advance happen and are known to have happened, because the evidence for them is strong. William Lane Craig answered Ehrman along these lines, arguing that he had confused how likely an event is on our background knowledge alone with how likely it is once the evidence is added. Even David Hume, the classic critic of miracles, granted that unanimous testimony to eight days of darkness over the whole earth from the first of January 1600 ought to be received "as certain," though nothing like it had ever been observed. What Hume refused was a miracle offered as the foundation of a religion, and that was a judgment about religion, not a rule of evidence.
+
+Then the background. How likely a resurrection is in advance depends on what else is true. If there is no God, a dead man rising is about as unlikely as anything can be. If there is a God who made the world and has purposes in it, and if this man claimed to speak for him and was condemned for it, the event is still extraordinary, but it is no longer absurd. Historical method, by design, doesn't decide whether there is a God. That is why historians, as a guild, rightly work as if no miracle were in play. But a rule of method is not a discovery. When Troeltsch's principle of analogy is held as absolute, so that nothing without precedent can ever be affirmed, it doesn't weigh the evidence for the resurrection; it settles the question before the evidence is called. C. S. Lewis made the same point against Hume in *Miracles* (1947): to know that experience is uniform against miracles, we would already have to know that every report of one is false, and that is "arguing in a circle."
+
+Finally, notice that the debate has two sides among historians. Michael Licona, in *The Resurrection of Jesus: A New Historiographical Approach* (2010), argued that historians can, by their own criteria, judge that the resurrection best explains the facts most scholars grant, and Ehrman has argued in reply that they can't. That two well-trained historians disagree about it shows that the limit is not a settled rule of the discipline. It is a question about the discipline's assumptions, and those belong to philosophy.
+
+## The argument, laid out
+
+This is an argument about what historical method can and can't decide.
+
+1. Historians can investigate whether events that leave public traces took place: whether a man was executed and buried, whether his tomb was found empty, and whether others became convinced they had seen him alive.
+2. Whether "God raised him" is the best explanation of those events depends on how likely it is that God exists and would act, a question historical method by itself decides neither way.
+3. A rule that excludes every miracle from historical conclusions in advance is a philosophical commitment brought to the evidence, not a result drawn from it.
+
+So: Ehrman is right that history alone can't prove the resurrection, and right that historians as a guild shouldn't pretend their method can see God act. He is wrong if his argument is taken to show that the resurrection isn't a claim about history, or that a reasonable person can't conclude from the historical evidence, together with good reason to believe in God, that it happened.
+
+The weight sits on the second step. If the probability of a resurrection could be fixed without any view about God, Ehrman's argument would hold, and that is where a reader should test it.
+
+## The strongest reply, and an answer
+
+The strongest reply is that this opens a door nothing can close. If a historian may conclude that God raised Jesus, then he may conclude that God parted a sea, that an angel spoke to Muhammad or that a saint's relics healed the sick. Hume pointed out long ago that the miracles of rival religions cancel each other's evidence. The only stable rule is the one historians actually follow: explain events by causes in the world, and leave God out of it.
+
+That reply has real force, and the rule it defends is the right working rule for historians as a group. But it proves less than it claims. Allowing that an event might have a cause beyond nature is not the same as believing every report of one. Each claim still has to be weighed on its own evidence, and most will fail, as Hume rightly expected. The resurrection is not a report like the others. It was a public claim, made within weeks in the city where Jesus was buried, about a body and a tomb, by people who said they had seen him, some of whom had been his enemies. If its evidence is weak, it should be rejected like the rest. If it is strong, a rule that refuses even to weigh it isn't caution. It is a decision made in advance. A reader may still conclude that no God exists and that some natural explanation must be right. That is a coherent place to stand, and the site's page on the existence of God takes it seriously. But the reason will be a judgment about God, not a finding of historical method.
+
+## What remains unresolved
+
+There is no agreed method for setting the probability of God's acting before the evidence is weighed, and philosophers on both sides grant that the answer depends heavily on it. Whether historians should, as historians, ever name God as a cause is argued among historians and philosophers of history, and the Ehrman and Licona exchange is one round of a longer argument. What counts as a miracle, and how it relates to the ordinary order God upholds, is discussed among Christians themselves. And the question the historical argument leaves at the end, whether there is a God who raises the dead, is not one a historian's tools can answer.
+
+## Where Christians differ
+
+Christians differ on how much the historical case can carry. Some, Licona among them, hold that historical evidence can make the resurrection highly probable on historians' own terms. Others hold that history can only clear away objections and bring a reader to the question, and that faith rests on the apostles' testimony and the witness of the Spirit. Many stand between. What the church confesses is not in dispute among them. The resurrection is confessed as an event, not a symbol: Jesus was raised bodily, the body that died, on the third day. Paul staked everything on it, "And if Christ has not been raised, your faith is futile; you are still in your sins" (1 Corinthians 15:17, BSB), and that is a claim about something that happened, open to be weighed, and open to be wrong.
+
+## Read the other side
+
+- Bart D. Ehrman, *How Jesus Became God* (2014).
+- Ernst Troeltsch, "Über historische und dogmatische Methode" (1898).
+
+## Read further
+
+- Michael R. Licona, *The Resurrection of Jesus: A New Historiographical Approach* (2010).
+- Dale C. Allison Jr., *The Resurrection of Jesus: Apologetics, Polemics, History* (2021).
+- C. S. Lewis, *Miracles* (1947).
+- Craig S. Keener, *Miracles* (2011), two volumes.
+
+## On the site
+
+- "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?" (/questions/science/miracles-and-the-laws-of-nature), on Hume's argument in full.
+- The argued answers "Did the resurrection actually happen?" (/answers/did-the-resurrection-actually-happen) and "Does God actually exist?" (/answers/does-god-actually-exist).
+- The Study Bible's notes on Mark 16 (/study/bible/mark/16) and John 20 (/study/bible/john/20), on whether a historian can believe the tomb was empty and that Jesus rose.

@@ -1433,3 +1433,32 @@ Cut or not used: that crucifixion victims "often" lived for days (not checked; t
 | Luke begins in the temple; Acts ends in Rome | Repo (BSB Luke 1:8-9; Acts 28) | Verified |
 
 Cut or not used: "horizontally" as Ehrman's term (sources reverse his terms); Licona's count of Gospel pericopes (sources give 16 and 19); a claim that readers have "long" read Mark's silence as temporary (not checked). No living author is quoted.
+
+### x. "Bart Ehrman says historians can't conclude that a miracle happened" (can-historians-affirm-a-miracle)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman, agnostic, taught at UNC; grants the crucifixion, that some followers soon came to believe God had raised Jesus, and visions; holds that historians as historians can't conclude that God raised Jesus | Res ledger (corrections 16, 24, 32; NPR *Fresh Air* 2014 on *How Jesus Became God*, as summarized); HJ ledger | Verified (secondary), paraphrased |
+| Debate with William Lane Craig, College of the Holy Cross, Worcester, 28 March 2006, on whether there is historical evidence for the resurrection; Craig later argued that Ehrman confused the probability of the resurrection on background knowledge alone with its probability given the evidence | S: Holy Cross magazine and library records, ehrmanblog.org, physics.smu.edu transcript page, reasonablefaith.org, as summarized | Verified (secondary) |
+| Debate with Michael Licona, 2009 | Res ledger (correction 24) | Verified (secondary) |
+| Ehrman's reasoning: history establishes what probably happened; a miracle is by definition the least probable occurrence; so a historian can't conclude one; historical method works with methodological naturalism | S: quotewise.io (attributed quotation), a summary of the 2009 debate, ehrmanblog.org ("History is not the past"), a 2022 thesis evaluating his challenge, as summarized | Verified (secondary), paraphrased; no wording of his quoted (the attributed sentence was seen only on aggregators) |
+| Troeltsch, "Über historische und dogmatische Methode" (1898): criticism (judgments only more or less probable), analogy, correlation; read as excluding the miraculous | S: Wikipedia, Boston Collaborative Encyclopedia, encyclopedia.com (which gives 1900, the reprint date), as summarized | Verified (secondary), paraphrased; the German text not seen, so the title is given in the short form the sources use |
+| Matthew 28:17; 1 Corinthians 15:17 | Repo (BSB) | Quoted |
+| Sanders's two sentences (paraphrased here: "a fact"); Allison concluded the tomb probably empty and that people saw Jesus, while judging history alone can't settle the meaning | Res answer; Note (Mark 16, Luke 24, John 20) | Verified; "a fact" quoted (two words of a dead author's verified sentence) |
+| Hume, §99: eight days of darkness from 1 January 1600, philosophers "ought to receive it as certain"; his refusal of a miracle as the foundation of a religion | Thirteenth run row q (Hume, read word for word) | Quoted (three words) |
+| Hume, §95: rival miracles cancel | Thirteenth run row q | Verified, paraphrased |
+| Lewis, *Miracles* (1947): "arguing in a circle" | Thirteenth run row q (fifth run) | Quoted |
+| Licona, *The Resurrection of Jesus: A New Historiographical Approach* (2010): by historians' criteria the resurrection best explains the facts most scholars grant | Note (Luke 24); Res answer | Verified |
+| Keener, *Miracles* (2011), two volumes; Allison 2021 | Thirteenth run row q; Res answer | Verified |
+| Agreement: the site's answer says history can't prove the resurrection and can move a person from dismissing to weighing; the notes on Mark 16 and John 20 say historians disagree how far their discipline reaches and that the argument often turns on assumptions about what is possible | Repo (answers.ts; notes) | Agrees |
+
+Cut or not used: the attributed sentence "Historians can only establish what probably happened in the past, and by definition, miracles are the least probable of occurrences" as a quotation (aggregator only); "historians still recognize" Troeltsch's principles (not checked); Pannenberg (not checked). No living author is quoted.
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Crucified when Pilate governed Judea; preaching within weeks | Rows t, u (Pilate's term 26 to 36, Pentecost) | Verified |
+| 1 Corinthians 15:14 (paraphrased: the preaching worthless and the faith too) | Repo (BSB) | Paraphrased |
+| Testimonium Flavianum at *Antiquities* 18.63-64, expanded by copyists | Row t | Verified |
+| Criterion of embarrassment: the crucifixion and the women as examples | Rows t, u | Verified as a description |

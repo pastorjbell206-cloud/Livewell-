@@ -178,6 +178,13 @@
           "blurb": "Every difference set out, Tacitus and Suetonius on the fire of Rome as a test case, the conventions of ancient biography, and what all four agree on.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "can-historians-affirm-a-miracle",
+          "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+          "blurb": "What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of \"least probable,\" and where the question passes from history to the question of God.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -607,6 +614,26 @@
       "area": "jesus",
       "slug": "the-resurrection-accounts-disagree",
       "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
+      "live": false
+    },
+    {
+      "claim": "Historians can establish only what probably happened, and a miracle is by definition the least probable event, so a historian as a historian can never conclude that one occurred",
+      "proponent": "Bart D. Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "can-historians-affirm-a-miracle",
+      "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+      "live": false
+    },
+    {
+      "claim": "Historical method judges by probability, analogy and correlation, and so cannot affirm an event without analogy",
+      "proponent": "Ernst Troeltsch",
+      "work": "Über historische und dogmatische Methode",
+      "year": 1898,
+      "area": "jesus",
+      "slug": "can-historians-affirm-a-miracle",
+      "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
       "live": false
     },
     {
