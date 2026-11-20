@@ -1276,9 +1276,27 @@
     "want to be married",
     "single for so long",
     "will i ever marry",
-    "still single"
+    "still single",
+    "pray for a husband",
+    "pray for a wife",
+    "praying for a spouse",
+    "everyone is getting married but me",
+    "all my friends are married",
+    "too old to marry",
+    "will god give me a spouse",
+    "wish i had a husband",
+    "wish i had a wife",
+    "single and want to marry",
+    "still not married",
+    "never dated anyone",
+    "will i ever find a husband",
+    "will i ever find a wife",
+    "nobody has ever asked me out"
    ],
-   "not": [],
+   "not": [
+    "boyfriend isnt a christian",
+    "girlfriend isnt a christian"
+   ],
    "related": [
     "singleness",
     "dating",
