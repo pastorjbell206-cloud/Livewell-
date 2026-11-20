@@ -18,7 +18,7 @@ import { TakeItWithYou } from "@/components/TakeItWithYou";
 export function ResultSection({ title, id, children, className }: { title: string; id?: string; children: ReactNode; className?: string }) {
   return (
     <section className={`ts-r${className ? ` ${className}` : ""}`} aria-labelledby={id ? `${id}-h` : undefined}>
-      <h2 className="ts-r__title" id={id ? `${id}-h` : undefined}>
+      <h2 className="ts-r__title" id={id ? `${id}-h` : undefined} tabIndex={id ? -1 : undefined}>
         {title}
       </h2>
       {children}
@@ -26,10 +26,14 @@ export function ResultSection({ title, id, children, className }: { title: strin
   );
 }
 
-/** The plain reading: what the answers suggest, in paragraphs. */
-export function ResultReading({ title = "What this suggests", children }: { title?: string; children: ReactNode }) {
+/**
+ * The plain reading: what the answers suggest, in paragraphs. With an `id`,
+ * its heading is `<id>-h` and can take focus, so a tool can move the reader
+ * there when the result appears.
+ */
+export function ResultReading({ title = "What this suggests", id, children }: { title?: string; id?: string; children: ReactNode }) {
   return (
-    <ResultSection title={title} className="ts-r--reading">
+    <ResultSection title={title} id={id} className="ts-r--reading">
       <div className="ts-r__prose">{children}</div>
     </ResultSection>
   );

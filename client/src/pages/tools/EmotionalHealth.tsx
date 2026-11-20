@@ -1,15 +1,14 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
-import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
-import { ToolActions } from "@/components/ToolActions";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import { ArrowLeft, ChevronRight } from "lucide-react";
-import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { ArrowRight } from "lucide-react";
 import { SafetyCheck } from "@/components/SafetyCheck";
 import { SelfCheckHistory } from "@/components/SelfCheckHistory";
+import { toolById } from "@/lib/toolsList";
+import { CheckPart, ResultActions, ResultNext, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
 
 interface Statement {
   text: string;
@@ -552,7 +551,7 @@ function withItalics(text: string) {
 
 /* ── Saved progress (HS-5): survive a refresh mid-assessment ───── */
 
-const STORAGE_KEY = "livewell-progress-emotional-health";
+// Kept under livewell-progress-emotional-health: progressKey("emotional-health").
 
 interface StoredProgress {
   answers: Record<number, number>;
@@ -574,48 +573,59 @@ function isStoredProgress(x: unknown): x is StoredProgress {
   );
 }
 
+const RATING_OPTIONS = [1, 2, 3, 4, 5].map((v) => ({ value: String(v), label: `${v}: ${RATING_LABELS[v]}` }));
+
+/** The statements of one area, each with its place in STATEMENTS (the saved answers' key). */
+const statementsOf = (cat: string) => STATEMENTS.map((s, i) => ({ ...s, index: i })).filter((s) => s.category === cat);
+
 export default function EmotionalHealth() {
-  const [saved] = useState(() =>
-    readStoredJSON<StoredProgress | null>(STORAGE_KEY, isStoredProgress, null),
-  );
-  const [answers, setAnswers] = useState<Record<number, number>>(
-    saved?.answers ?? {},
-  );
+  const tool = toolById("emotional-health");
+  // The saved place (livewell-progress-emotional-health, the key and shape
+  // this check has always used), read and written through the tool shell.
+  const progress = useToolProgress<StoredProgress>("emotional-health", isStoredProgress, { answers: {}, step: 0, savedAt: "" });
+  const answers = progress.value.answers;
+  const step = Math.min(Math.max(Math.trunc(progress.value.step), 0), CATEGORIES.length - 1);
+  const [opened] = useState(() => progress.resumed && Object.keys(progress.value.answers).length > 0);
+  const [resumed, setResumed] = useState(opened);
   const [showResults, setShowResults] = useState(false);
-  const [resumed, setResumed] = useState(
-    () => saved !== null && Object.keys(saved.answers).length > 0,
-  );
-  const [persistFailed, setPersistFailed] = useState(false);
 
   const allAnswered = STATEMENTS.every((_, i) => answers[i] !== undefined);
+  const answeredCount = STATEMENTS.filter((_, i) => answers[i] !== undefined).length;
 
-  const persist = (nextAnswers: Record<number, number>) => {
-    setPersistFailed(
-      !writeStoredJSON(STORAGE_KEY, {
-        answers: nextAnswers,
-        step: 0,
-        savedAt: new Date().toISOString(),
-      }),
-    );
+  const persist = (nextAnswers: Record<number, number>, nextStep: number) => {
+    progress.set({ answers: nextAnswers, step: nextStep, savedAt: new Date().toISOString() });
   };
 
   const handleRate = (index: number, value: number) => {
-    const next = { ...answers, [index]: value };
-    setAnswers(next);
     setResumed(false);
-    persist(next);
+    persist({ ...answers, [index]: value }, step);
+  };
+
+  const goTo = (next: number) => {
+    setResumed(false);
+    persist(answers, next);
   };
 
   const handleSubmit = () => {
-    if (allAnswered) {
-      setShowResults(true);
-      persist(answers);
+    if (!allAnswered) {
+      // A part left unfinished (an older saved place): go back to it.
+      const missing = CATEGORIES.findIndex((c) => statementsOf(c).some((s) => answers[s.index] === undefined));
+      goTo(Math.max(0, missing));
+      return;
     }
+    setShowResults(true);
+    persist(answers, step);
   };
 
+  useEffect(() => {
+    if (!showResults) return;
+    const h = document.getElementById("eh-result-h");
+    h?.scrollIntoView?.({ block: "start" });
+    h?.focus({ preventScroll: true });
+  }, [showResults]);
+
   const handleReset = () => {
-    removeStoredJSON(STORAGE_KEY);
-    setAnswers({});
+    progress.clear();
     setShowResults(false);
     setResumed(false);
     window.scrollTo({ top: 0, behavior: scrollBehavior() });
@@ -624,8 +634,7 @@ export default function EmotionalHealth() {
   const handleChangeAnswers = () => {
     setShowResults(false);
     setResumed(false);
-    persist(answers);
-    window.scrollTo({ top: 0, behavior: scrollBehavior() });
+    persist(answers, 0);
   };
 
   // Calculate results
@@ -638,6 +647,11 @@ export default function EmotionalHealth() {
     return getCategoryResult(cat, score);
   });
   const overall = getOverallInterpretation(totalScore);
+  // The one area to start with: the lowest score, the first of any tie.
+  const startHere = categoryResults.reduce((low, c) => (c.score < low.score ? c : low), categoryResults[0]);
+
+  const cat = CATEGORIES[step];
+  const isLast = step === CATEGORIES.length - 1;
 
   return (
     <Layout>
@@ -657,835 +671,168 @@ export default function EmotionalHealth() {
         }}
       />
 
-      <InnerHead path="/tools/emotional-health" title="Emotional Health Self-Check" line="Fifteen statements about five parts of the inner life: self-awareness, boundaries, grief, forgiveness, and rest. It takes a few minutes. Answer for how things have really been lately, not how you wish they were." plate="compass">
-        <p className="pg-head__lede">This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device.</p>
-      </InnerHead>
+      <ToolHead
+        path="/tools/emotional-health"
+        title={tool.name}
+        line="Fifteen statements about five parts of the inner life: self-awareness, boundaries, grief, forgiveness, and rest. It takes a few minutes. Answer for how things have really been lately, not how you wish they were."
+        time={`About ${tool.time}`}
+        keeps="Your answers as you go, so a reload loses nothing, and the scores of each finished check, so the next one can show what has moved. All of it stays in this browser and is never sent anywhere."
+        notDiagnosis="This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device."
+        plate="compass"
+      />
 
-      {/* Content */}
-      <section style={{ padding: "48px 32px", background: "var(--bone)" }}>
-        <div className="wrap" style={{ maxWidth: "900px" }}>
-          {!showResults ? (
-            <>
-              {resumed && (
-                <div
-                  className="no-print"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "16px",
-                    flexWrap: "wrap",
-                    marginBottom: "24px",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: "13px",
-                      fontFamily: "var(--U)",
-                      color: "var(--ink-muted)",
-                    }}
-                  >
-                    Picked up where you left off.
-                  </span>
-                  <button
-                    onClick={handleReset}
-                    style={{
-                      fontSize: "13px",
-                      fontFamily: "var(--U)",
-                      fontWeight: 600,
-                      padding: "6px 14px",
-                      borderRadius: "4px",
-                      cursor: "pointer",
-                      background: "none",
-                      color: "var(--ink-muted)",
-                      border: "1px solid var(--border)",
-                    }}
-                  >
-                    Start fresh
-                  </button>
-                </div>
-              )}
-              {persistFailed && (
-                <p
-                  style={{
-                    fontSize: "13px",
-                    fontFamily: "var(--U)",
-                    color: "var(--ink-muted)",
-                    margin: "0 0 24px",
-                  }}
-                >
-                  Couldn't save to this browser — your work here will not
-                  survive a reload.
-                </p>
-              )}
-              {/* Assessment Form */}
-              {CATEGORIES.map((cat, ci) => {
-                const catStatements = STATEMENTS.map((s, i) => ({
-                  ...s,
-                  index: i,
-                })).filter((s) => s.category === cat);
-
-                return (
-                  <div
-                    key={cat}
-                    style={{
-                      background: "var(--card)",
-                      borderRadius: "8px",
-                      padding: "36px",
-                      marginBottom: "20px",
-                      borderTop:
-                        ci === 0 ? "4px solid var(--mustard)" : undefined,
-                    }}
-                  >
-                    <h3
-                      style={{
-                        fontSize: "13px",
-                        fontWeight: 700,
-                        letterSpacing: "0.15em",
-                        color: "var(--mustard-text)",
-                        fontFamily: "var(--U)",
-                        marginBottom: "24px",
-                      }}
-                    >
-                      {cat.toUpperCase()}
-                    </h3>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "28px",
-                      }}
-                    >
-                      {catStatements.map((s) => (
-                        <div key={s.index}>
-                          <p
-                            style={{
-                              fontSize: "16px",
-                              lineHeight: 1.7,
-                              color: "var(--ink)",
-                              fontFamily: "var(--B)",
-                              margin: "0 0 14px",
-                            }}
-                          >
-                            {s.text}
-                          </p>
-                          <div
-                            style={{
-                              display: "flex",
-                              gap: "8px",
-                              flexWrap: "wrap",
-                            }}
-                          >
-                            {[1, 2, 3, 4, 5].map((val) => (
-                              <button
-                                key={val}
-                                onClick={() => handleRate(s.index, val)}
-                                aria-pressed={answers[s.index] === val}
-                                style={{
-                                  padding: "8px 14px",
-                                  background:
-                                    answers[s.index] === val
-                                      ? "var(--mustard)"
-                                      : "var(--bone)",
-                                  color:
-                                    answers[s.index] === val
-                                      ? "var(--ink)"
-                                      : "var(--ink-muted)",
-                                  border: `1px solid ${
-                                    answers[s.index] === val
-                                      ? "var(--mustard)"
-                                      : "var(--border)"
-                                  }`,
-                                  borderRadius: "4px",
-                                  fontSize: "12px",
-                                  fontWeight: 600,
-                                  fontFamily: "var(--U)",
-                                  cursor: "pointer",
-                                  transition: "all 0.15s",
-                                  whiteSpace: "nowrap",
-                                }}
-                              >
-                                {val}: {RATING_LABELS[val]}
-                              </button>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })}
-
-              {/* Submit */}
-              <div style={{ textAlign: "center", marginTop: "12px" }}>
-                <button
-                  onClick={handleSubmit}
-                  disabled={!allAnswered}
-                  style={{
-                    padding: "14px 40px",
-                    background: allAnswered
-                      ? "var(--mustard)"
-                      : "var(--bone-muted)",
-                    color: allAnswered ? "var(--ink)" : "var(--ink-muted)",
-                    border: "none",
-                    borderRadius: "6px",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    fontFamily: "var(--U)",
-                    cursor: allAnswered ? "pointer" : "not-allowed",
-                    transition: "all 0.2s",
-                    letterSpacing: "0.05em",
-                  }}
-                >
-                  {allAnswered
-                    ? "SEE MY RESULTS"
-                    : `${Object.keys(answers).length} OF 15 ANSWERED`}
+      {!showResults ? (
+        <section className="ts-band" aria-label="The fifteen statements">
+          <div className="ts-col">
+            {resumed && (
+              <div className="ts-resume" role="status">
+                <p>Picked up where you left off.</p>
+                <button type="button" className="btn btn--quiet ts-actions__btn" onClick={handleReset}>
+                  Start fresh
                 </button>
               </div>
-            </>
-          ) : (
-            <>
-              {/* Results */}
-              <ToolActions toolName="Emotional Health Self-Check" onStartOver={handleReset} />
+            )}
+            <CheckPart
+              step={step + 1}
+              total={CATEGORIES.length}
+              answered={answeredCount}
+              questions={STATEMENTS.length}
+              title={cat}
+              statements={statementsOf(cat).map((s) => ({ id: String(s.index), text: s.text }))}
+              options={RATING_OPTIONS}
+              numbered={false}
+              value={(id) => (answers[Number(id)] !== undefined ? String(answers[Number(id)]) : null)}
+              onAnswer={(id, v) => handleRate(Number(id), Number(v))}
+              onBack={step > 0 ? () => goTo(step - 1) : undefined}
+              onNext={() => (isLast ? handleSubmit() : goTo(step + 1))}
+              nextLabel={isLast ? "See my results" : "Continue"}
+              saveFailed={progress.saveFailed}
+              quiet={opened}
+            />
+          </div>
+        </section>
+      ) : (
+        <>
+          <section className="ts-band">
+            <div className="ts-col">
               <SafetyCheck />
-              <SelfCheckHistory
-                id="emotional-health"
-                total={totalScore / 75}
-                areas={Object.fromEntries(categoryResults.map((c) => [c.name, c.score / c.maxScore]))}
-                answersKey={JSON.stringify(answers)}
-              />
-              {persistFailed && (
-                <p
-                  style={{
-                    fontSize: "13px",
-                    fontFamily: "var(--U)",
-                    color: "var(--ink-muted)",
-                    margin: "0 0 24px",
-                  }}
-                >
-                  Couldn't save to this browser — your work here will not
-                  survive a reload.
-                </p>
-              )}
-
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "24px",
-                  flexWrap: "wrap",
-                  marginBottom: "24px",
-                }}
-                className="no-print"
-              >
-                <button
-                  onClick={handleChangeAnswers}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                    padding: "8px 0",
-                    background: "none",
-                    border: "none",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    fontFamily: "var(--U)",
-                    color: "var(--ink)",
-                    cursor: "pointer",
-                    opacity: 0.7,
-                  }}
-                >
-                  <ArrowLeft size={16} />
-                  Change my answers
-                </button>
-                <button
-                  onClick={handleReset}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "6px",
-                    padding: "8px 0",
-                    background: "none",
-                    border: "none",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    fontFamily: "var(--U)",
-                    color: "var(--ink)",
-                    cursor: "pointer",
-                    opacity: 0.7,
-                  }}
-                >
-                  Take the self-check again
-                </button>
-              </div>
-
-              {/* Overall Score */}
-              <div
-                style={{
-                  background: "var(--card)",
-                  borderRadius: "8px",
-                  padding: "40px 36px",
-                  marginBottom: "28px",
-                  borderTop: "4px solid var(--mustard)",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "11px",
-                    fontWeight: 700,
-                    letterSpacing: "0.18em",
-                    color: "var(--mustard-text)",
-                    fontFamily: "var(--U)",
-                    marginBottom: "12px",
-                  }}
-                >
-                  YOUR EMOTIONAL HEALTH
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "baseline",
-                    gap: "16px",
-                    marginBottom: "8px",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: "clamp(36px, 5vw, 56px)",
-                      fontWeight: 400,
-                      fontFamily: "var(--F)",
-                      color: "var(--ink)",
-                      letterSpacing: "-0.02em",
-                      lineHeight: 1,
-                    }}
-                  >
-                    {totalScore}
-                  </span>
-                  <span
-                    style={{
-                      fontSize: "18px",
-                      fontFamily: "var(--B)",
-                      color: "var(--ink-muted)",
-                    }}
-                  >
-                    out of 75
-                  </span>
-                </div>
-                <h2
-                  style={{
-                    fontSize: "clamp(22px, 3vw, 30px)",
-                    fontWeight: 400,
-                    fontFamily: "var(--F)",
-                    color: "var(--ink)",
-                    letterSpacing: "-0.02em",
-                    margin: "16px 0",
-                  }}
-                >
-                  {overall.label}
-                </h2>
+              <ResultReading id="eh-result" title="Your emotional health">
+                <p className="ts-r__score">{totalScore} out of 75</p>
+                <p className="ts-r__lead">{overall.label}</p>
                 {overall.paragraphs.map((para, i) => (
-                  <p
-                    key={i}
-                    style={{
-                      fontSize: "16px",
-                      lineHeight: 1.8,
-                      color: "var(--ink)",
-                      fontFamily: "var(--B)",
-                      maxWidth: "68ch",
-                      margin: i === 0 ? 0 : "16px 0 0",
-                    }}
-                  >
-                    {withItalics(para)}
-                  </p>
+                  <p key={i}>{withItalics(para)}</p>
                 ))}
-
                 {overall.seekHelp && (
-                  <div
-                    style={{
-                      marginTop: "24px",
-                      background: "var(--bone)",
-                      border: "1px solid var(--border)",
-                      borderLeft: "3px solid var(--mustard)",
-                      borderRadius: "2px",
-                      padding: "20px 24px",
-                      maxWidth: "68ch",
-                    }}
-                  >
-                    <p style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--ink)", margin: "0 0 10px" }}>
-                      A word before the practical steps
-                    </p>
-                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.75, color: "var(--ink)", margin: "0 0 14px" }}>
+                  <aside className="ts-help" aria-labelledby="eh-help-h">
+                    <h3 id="eh-help-h">A word before the practical steps</h3>
+                    <p>
                       A score in this range is a reason to talk to a real person,
                       not just to try harder. A licensed counselor is the right
                       next step, and seeing one is not a failure of faith. And if
                       the depletion has turned into not wanting to be here, that
                       is not something to carry alone for another day.
                     </p>
-                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                      <a href="tel:988" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
-                        988 Suicide &amp; Crisis Lifeline: call or text 988, any hour →
-                      </a>
-                      <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", textDecoration: "none" }}>
-                        Find a licensed counselor near you →
+                    <div className="ts-help__links">
+                      <a href="tel:988">988 Suicide &amp; Crisis Lifeline: call or text 988, any hour</a>
+                      <a href="https://www.psychologytoday.com/us/therapists" target="_blank" rel="noopener noreferrer">
+                        Find a licensed counselor near you
                       </a>
                     </div>
-                  </div>
+                  </aside>
                 )}
+              </ResultReading>
+              {progress.saveFailed && <p className="ts-save-failed">{SAVE_FAILED}</p>}
 
-                {/* Score bar */}
-                <div
-                  style={{
-                    marginTop: "28px",
-                    background: "var(--bone)",
-                    borderRadius: "4px",
-                    height: "8px",
-                    overflow: "hidden",
-                  }}
-                >
-                  <div
-                    style={{
-                      width: `${(totalScore / 75) * 100}%`,
-                      height: "100%",
-                      background: "var(--mustard)",
-                      borderRadius: "4px",
-                      transition: "width 0.6s var(--ease)",
-                    }}
-                  />
-                </div>
-              </div>
+              <ResultSection title="Your five areas">
+                <ScoreChart
+                  caption="Each area out of 15. The lowest is marked as the place to start."
+                  max={15}
+                  rows={categoryResults.map((c) => ({ label: c.name, value: c.score, start: c.name === startHere.name, valueText: `${c.score} of 15 · ${c.level}` }))}
+                />
+              </ResultSection>
 
-              {/* The next step this band leads with */}
-              <div
-                style={{
-                  background: "var(--card)",
-                  borderRadius: "8px",
-                  padding: "36px",
-                  marginBottom: "28px",
-                  borderTop: "4px solid var(--mustard)",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "11px",
-                    fontWeight: 700,
-                    letterSpacing: "0.18em",
-                    color: "var(--mustard-text)",
-                    fontFamily: "var(--U)",
-                    marginBottom: "12px",
-                  }}
-                >
-                  YOUR NEXT STEP
+              <SelfCheckHistory
+                id="emotional-health"
+                total={totalScore / 75}
+                areas={Object.fromEntries(categoryResults.map((c) => [c.name, c.score / c.maxScore]))}
+                answersKey={JSON.stringify(answers)}
+              />
+
+              <ResultSection title="Your next step">
+                <div className="ts-r__prose">
+                  <p>{overall.next.lead}</p>
                 </div>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    lineHeight: 1.8,
-                    color: "var(--ink)",
-                    fontFamily: "var(--B)",
-                    maxWidth: "68ch",
-                    margin: "0 0 20px",
-                  }}
-                >
-                  {overall.next.lead}
-                </p>
-                <Link
-                  href={overall.next.href}
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    minHeight: "44px",
-                    padding: "12px 28px",
-                    background: "var(--mustard)",
-                    color: "var(--ink)",
-                    borderRadius: "6px",
-                    fontSize: "14px",
-                    fontFamily: "var(--U)",
-                    fontWeight: 600,
-                    textDecoration: "none",
-                  }}
-                >
+                <Link href={overall.next.href} className="btn">
                   {overall.next.cta}
-                  <ChevronRight size={16} />
+                  <ArrowRight size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginLeft: 8 }} />
                 </Link>
                 {overall.later && (
-                  <p
-                    style={{
-                      fontSize: "15px",
-                      lineHeight: 1.7,
-                      color: "var(--ink-muted)",
-                      fontFamily: "var(--B)",
-                      maxWidth: "68ch",
-                      margin: "20px 0 0",
-                    }}
-                  >
+                  <p className="ts-r__more">
                     {overall.later.lead}{" "}
-                    <Link
-                      href={overall.later.href}
-                      style={{
-                        color: "var(--ink)",
-                        fontWeight: 600,
-                        textDecoration: "none",
-                        borderBottom: "1px solid var(--mustard)",
-                      }}
-                    >
+                    <Link href={overall.later.href} className="btn--text" style={{ minHeight: 0, display: "inline" }}>
                       {overall.later.title}
                     </Link>
                   </p>
                 )}
-              </div>
+              </ResultSection>
 
-              {/* Category Breakdown */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "20px",
-                }}
-              >
-                {categoryResults.map((cat) => (
-                  <div
-                    key={cat.name}
-                    style={{
-                      background: "var(--card)",
-                      borderRadius: "8px",
-                      padding: "36px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "flex-start",
-                        flexWrap: "wrap",
-                        gap: "12px",
-                        marginBottom: "20px",
-                      }}
-                    >
-                      <h3
-                        style={{
-                          fontSize: "13px",
-                          fontWeight: 700,
-                          letterSpacing: "0.15em",
-                          color: "var(--mustard-text)",
-                          fontFamily: "var(--U)",
-                          margin: 0,
-                        }}
-                      >
-                        {cat.name.toUpperCase()}
+              <ResultSection title="Area by area">
+                {categoryResults.map((c) => (
+                  <article key={c.name} className="ts-area" aria-labelledby={`eh-${c.name.replace(/\W+/g, "-")}`}>
+                    <div className="ts-area__head">
+                      <h3 className="ts-area__name" id={`eh-${c.name.replace(/\W+/g, "-")}`}>
+                        {c.name}
                       </h3>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "baseline",
-                          gap: "8px",
-                        }}
-                      >
-                        <span
-                          style={{
-                            fontSize: "28px",
-                            fontFamily: "var(--F)",
-                            fontWeight: 400,
-                            color: "var(--ink)",
-                            lineHeight: 1,
-                          }}
-                        >
-                          {cat.score}
-                        </span>
-                        <span
-                          style={{
-                            fontSize: "13px",
-                            fontFamily: "var(--B)",
-                            color: "var(--ink-muted)",
-                          }}
-                        >
-                          / {cat.maxScore}
-                        </span>
-                        <span
-                          style={{
-                            fontSize: "12px",
-                            fontWeight: 600,
-                            fontFamily: "var(--U)",
-                            color:
-                              cat.level === "Strong"
-                                ? "var(--mustard-deep)"
-                                : cat.level === "Developing"
-                                  ? "var(--ink-muted)"
-                                  : "var(--ink)",
-                            background:
-                              cat.level === "Strong"
-                                ? "rgba(212,160,23,0.12)"
-                                : "var(--bone)",
-                            padding: "3px 10px",
-                            borderRadius: "3px",
-                            letterSpacing: "0.05em",
-                          }}
-                        >
-                          {cat.level}
-                        </span>
-                      </div>
+                      <span className="ts-area__level">
+                        {c.score} of {c.maxScore} · {c.level}
+                        {c.name === startHere.name ? " · Start here" : ""}
+                      </span>
                     </div>
-
-                    {/* Score bar */}
-                    <div
-                      style={{
-                        background: "var(--bone)",
-                        borderRadius: "4px",
-                        height: "6px",
-                        overflow: "hidden",
-                        marginBottom: "24px",
-                      }}
-                    >
-                      <div
-                        style={{
-                          width: `${(cat.score / cat.maxScore) * 100}%`,
-                          height: "100%",
-                          background: "var(--mustard)",
-                          borderRadius: "4px",
-                          transition: "width 0.6s var(--ease)",
-                        }}
-                      />
-                    </div>
-
-                    {/* What this level means in this area */}
-                    <p
-                      style={{
-                        fontSize: "16px",
-                        lineHeight: 1.75,
-                        color: "var(--ink)",
-                        fontFamily: "var(--B)",
-                        maxWidth: "68ch",
-                        margin: "0 0 24px",
-                      }}
-                    >
-                      {withItalics(cat.interpretation)}
-                    </p>
-
-                    {/* Scripture */}
-                    <div
-                      style={{
-                        background: "var(--bone)",
-                        padding: "20px 24px",
-                        borderRadius: "4px",
-                        borderLeft: "3px solid var(--mustard)",
-                        marginBottom: "24px",
-                      }}
-                    >
-                      <p
-                        style={{
-                          fontSize: "15px",
-                          lineHeight: 1.8,
-                          fontStyle: "italic",
-                          color: "var(--ink)",
-                          fontFamily: "var(--B)",
-                          margin: "0 0 8px",
-                        }}
-                      >
-                        {cat.scripture.text}
-                      </p>
-                      <Link
-                        href={`/theology/passage?ref=${encodeURIComponent(cat.scripture.ref)}`}
-                        style={{
-                          fontSize: "13px",
-                          fontWeight: 600,
-                          fontFamily: "var(--U)",
-                          color: "var(--mustard-text)",
-                          textDecoration: "none",
-                          borderBottom: "1px solid var(--mustard)",
-                          paddingBottom: "1px",
-                        }}
-                      >
-                        Read {cat.scripture.ref} in context
-                      </Link>
-                      <ScriptureNote rendering="bsb" />
-                    </div>
-
-                    {/* Practical steps */}
-                    <h4
-                      style={{
-                        fontSize: "12px",
-                        fontWeight: 700,
-                        letterSpacing: "0.12em",
-                        color: "var(--ink-muted)",
-                        fontFamily: "var(--U)",
-                        marginBottom: "16px",
-                      }}
-                    >
-                      PRACTICAL STEPS
-                    </h4>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "16px",
-                        marginBottom: "20px",
-                      }}
-                    >
-                      {cat.steps.map((step, i) => (
-                        <div key={i} style={{ display: "flex", gap: "14px" }}>
-                          <span
-                            style={{
-                              fontFamily: "var(--F)",
-                              fontSize: "22px",
-                              fontWeight: 400,
-                              color: "var(--mustard-text)",
-                              lineHeight: 1.2,
-                              flexShrink: 0,
-                              width: "24px",
-                              textAlign: "center",
-                            }}
-                          >
-                            {i + 1}
-                          </span>
-                          <p
-                            style={{
-                              fontSize: "15px",
-                              lineHeight: 1.7,
-                              color: "var(--ink)",
-                              fontFamily: "var(--B)",
-                              margin: 0,
-                            }}
-                          >
-                            {withItalics(step)}
-                          </p>
-                        </div>
+                    <p>{withItalics(c.interpretation)}</p>
+                    <figure className="ts-verse">
+                      <blockquote>
+                        <p>{c.scripture.text}</p>
+                      </blockquote>
+                      <figcaption>
+                        <Link href={`/theology/passage?ref=${encodeURIComponent(c.scripture.ref)}`}>Read {c.scripture.ref} in context</Link>
+                        <ScriptureNote rendering="bsb" />
+                      </figcaption>
+                    </figure>
+                    <h4 className="ts-area__label">Practical steps</h4>
+                    <ol className="ts-steps">
+                      {c.steps.map((s, i) => (
+                        <li key={i}>{withItalics(s)}</li>
                       ))}
-                    </div>
-
-                    {/* Next steps for this area at this level */}
-                    <h4
-                      style={{
-                        fontSize: "12px",
-                        fontWeight: 700,
-                        letterSpacing: "0.12em",
-                        color: "var(--ink-muted)",
-                        fontFamily: "var(--U)",
-                        marginBottom: "12px",
-                      }}
-                    >
-                      WHERE TO GO NEXT
-                    </h4>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "8px",
-                      }}
-                    >
-                      {cat.next.map((n) => (
-                        <Link
-                          key={n.href}
-                          href={n.href}
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "space-between",
-                            gap: "12px",
-                            padding: "14px 20px",
-                            background: "var(--bone)",
-                            borderRadius: "6px",
-                            textDecoration: "none",
-                            transition: "background 0.2s",
-                          }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.style.background = "var(--bone-warm)";
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.style.background = "var(--bone)";
-                          }}
-                        >
-                          <div>
-                            <span
-                              style={{
-                                fontSize: "10px",
-                                fontWeight: 700,
-                                letterSpacing: "0.15em",
-                                color: "var(--mustard-text)",
-                                fontFamily: "var(--U)",
-                                display: "block",
-                                marginBottom: "4px",
-                              }}
-                            >
-                              {n.kind.toUpperCase()}
-                            </span>
-                            <span
-                              style={{
-                                fontSize: "15px",
-                                fontFamily: "var(--F)",
-                                fontWeight: 400,
-                                fontStyle: "italic",
-                                color: "var(--ink)",
-                              }}
-                            >
-                              {n.title}
-                            </span>
-                          </div>
-                          <ChevronRight
-                            size={16}
-                            style={{ opacity: 0.4, flexShrink: 0 }}
-                          />
-                        </Link>
+                    </ol>
+                    <h4 className="ts-area__label">Where to go next</h4>
+                    <ul className="ts-next">
+                      {c.next.map((n) => (
+                        <li key={n.href}>
+                          <Link href={n.href} className="ts-next__link">
+                            <span className="ts-next__kind">{n.kind}</span>
+                            <span className="ts-next__label">{n.title}</span>
+                            <ArrowRight className="ts-next__arrow" size={18} strokeWidth={1.75} aria-hidden="true" />
+                          </Link>
+                        </li>
                       ))}
-                    </div>
-                  </div>
+                    </ul>
+                  </article>
                 ))}
-              </div>
+              </ResultSection>
 
-              {/* Bottom CTA */}
-              <a
-                href="/help"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  background: "var(--charcoal)",
-                  color: "var(--charcoal-fg)",
-                  borderRadius: "8px",
-                  padding: "24px 32px",
-                  textDecoration: "none",
-                  transition: "opacity 0.2s",
-                  marginTop: "28px",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.opacity = "0.9";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.opacity = "1";
-                }}
-              >
-                <div>
-                  <div
-                    style={{
-                      fontSize: "11px",
-                      fontWeight: 700,
-                      letterSpacing: "0.18em",
-                      color: "var(--mustard)",
-                      fontFamily: "var(--U)",
-                      marginBottom: "6px",
-                    }}
-                  >
-                    FIND HELP
-                  </div>
-                  <span
-                    style={{
-                      fontSize: "18px",
-                      fontFamily: "var(--F)",
-                      fontWeight: 400,
-                      fontStyle: "italic",
-                    }}
-                  >
-                    Start from what you are facing, in your own words
-                  </span>
-                </div>
-                <ChevronRight
-                  size={20}
-                  style={{ opacity: 0.5, flexShrink: 0 }}
-                />
-              </a>
-            </>
-          )}
-        </div>
-      </section>
+              <ResultNext title="Find Help" steps={[{ kind: "Find help", label: "Start from what you are facing, in your own words", href: "/help" }]} />
+
+              <ResultActions
+                title={tool.name}
+                kind="Self-check"
+                onChange={handleChangeAnswers}
+                onStartOver={handleReset}
+                startOverClears="your answers on this device (your past results stay)"
+              />
+            </div>
+          </section>
+        </>
+      )}
     </Layout>
   );
 }
