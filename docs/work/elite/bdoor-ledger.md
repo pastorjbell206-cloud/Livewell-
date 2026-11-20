@@ -7910,3 +7910,31 @@ Cut: the mystery religions and the old argument that Paul borrowed from them (de
 | Care line (repeated failure, addiction; doctor, pastor, counsellor, a group; Find Help) | 14-25 | Site's care rule | Pastoral line |
 
 Cut: Wesley by name (not confirmed); Kümmel (1929) and Stowers by name (not needed); Chrysostom's reading (not found).
+
+## The plain notes on Romans 8 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "No condemnation" a law-court word; the Spirit named a handful of times in chapters 1 to 7 and many in chapter 8 | 1-11 | BSB | Script count (1:4, 2:29, 5:5, 7:6 against 19 in chapter 8) |
+| Sin offering (Leviticus 4:3); Ezekiel 36:27; 37:14 | 1-11 | BSB | BSB text |
+| Abba, Aramaic for father; Jesus in Gethsemane (Mark 14:36); "Daddy" goes too far, grown children used it (Barr's 1988 article as summarised) | 12-17 | Barr, "Abba Isn't Daddy", JTS 39 (1988) | Search: thegospelcoalition.org "Does Abba mean Daddy?"; logos.com; rsc.byu.edu. Paraphrased; no scholar named on the page |
+| Huiothesia a legal term for adoption as a son with full rights of inheritance; the adopted son his new father's heir | 12-17 | NET translator's note; ISBE "Adoption" | Search: biblia.com (NET note on Romans 8:15); bibliaplus.org (ISBE). Augustus's adoption and cancelled debts not used (not confirmed) |
+| Galatians 3:28; Exodus 4:22; Hosea 11:1; Romans 9:4; Psalm 103:13; Numbers 14:3-4; Psalm 27:10 | 12-17 | BSB | BSB text |
+| The father care line in the Psalm 103 note's form ("this verse is not asking you to picture him ... not limited by the father you had") | 12-17 | Psalms 103 plain note | Repository wording, adapted |
+| Firstfruits; the three groans; "pains of childbirth" | 18-27 | BSB; standard | BSB text |
+| Genesis 3:17-18; Isaiah 65:17; 11:6, 9; Exodus 2:24 | 18-27 | BSB | BSB text |
+| God as the one who subjected creation (most readers) | 18-27 | Standard reading | Stated as "most readers" |
+| Wesley, "The General Deliverance", early 1780s, on Romans 8: the animals share in the restoration | 18-27 | Wesley, Sermon 60 | apol-ledger (verified) |
+| No political application | 18-27 | Brief's rule | Stated plainly |
+| Manuscripts differ at 8:28 on naming God; the repository's Greek lacks theos; the BSB has "God works" | 28-30 | Repository deep note (`hard`); Greek text | Script; stated generally |
+| Genesis 50:20 note's wording ("does not call evil good ... never a line to hand to someone in fresh grief ... If someone has hurt you, what they did was wrong ...") | 28-30 | Genesis 50 plain note | Repository wording, adapted |
+| Reformed, Arminian/Wesleyan and corporate readings of foreknew and predestined; the Honest Answer on choosing | 28-30 | Repository deep note; `answers.ts` | Stated as readings, no names, no side |
+| Genesis 50:20; 1:27; Jeremiah 1:5 | 28-30 | BSB | BSB text |
+| Paul's hardships (2 Corinthians 11:23-27); Nero and the Christians of Rome after July 64 | 31-39 | BSB; earlier ledger (Tacitus) | BSB; ledger |
+| Hupernikōmen, one word | 31-39 | Greek text | Script |
+| Genesis 22:12; Isaiah 50:8-9; Psalm 110:1; Psalm 44:17, 22 | 31-39 | BSB | BSB text |
+| Perseverance views (Reformed and Baptist; Wesleyan, Arminian and Catholic); John 10:28; Hebrews 6:4-6; "That fear is not usually the mark of someone who has fallen away" | 31-39 | `answers.ts` ("Can you lose your salvation?") | Repository; wording adapted from the Honest Answer |
+
+Cut: height and depth as astrological terms (not checked); Orthodox teaching on perseverance (not in the Honest Answer, not checked); Jeremias by name.
