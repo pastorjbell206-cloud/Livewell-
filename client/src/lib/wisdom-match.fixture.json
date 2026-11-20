@@ -1,5 +1,5 @@
 {
-  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. Read by client/src/lib/wisdom-match.test.ts.",
+  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build) and holdout3 (third build) were each written and committed before matching.json was touched; holdout2 has since been tuned for, so holdout3 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
   "cases": [
     { "q": "my son walked away from the faith", "expect": ["wayward-child"] },
     { "q": "passed over for promotion and bitter", "expect": ["envy-and-comparison", "jealousy", "anger", "success-and-failure", "conflict-at-work", "when-life-is-unfair"] },
