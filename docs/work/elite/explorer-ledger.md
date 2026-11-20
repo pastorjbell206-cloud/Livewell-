@@ -507,3 +507,25 @@ Deliberately left out of the three films: every first-person sentence of the ans
 | cards.json cross quote | 1 Peter 3:18, first sentence | BSB, by the validator |
 | cards.json cross question | Some leaders handed him over, Judas helped arrest him, Pilate had him crucified; the chief priests and council handed him over, Pilate condemned, Roman soldiers crucified; Jesus, his disciples and the first church were Jews; blaming the Jewish people is a lie Christians must reject plainly; all inside the guilt (Acts 4:27), every one of us (1 Corinthians 15:3); “I lay it down of My own accord” | The Cross stop's own story at both levels, word for word; BSB Acts 4:27; 1 Corinthians 15:3; John 10:18 |
 | art.tsx JORDAN, IMAGE_GARDEN, HIDING, CROSS_HILL | Drawings only: the Jordan with a figure in the water, a dove and light from beyond the edge; a man and a woman tending a garden by a pool; two people hiding among bushes with a light coming along the path; an empty cross on a hill at dawn | No face; God the Father never drawn (light from beyond the edge, as in the Who God is film); the light in the garden is never a figure (as in God with his people); no analogy for the Trinity |
+
+### Abraham's road (`abrahams-road.json`)
+
+| Where | Claim | Checked |
+|---|---|---|
+| every step | Each place is an id in the Genesis book page's checked list (`client/public/bible/notes/genesis/intro.json`, both maps); none added or copied | The validator; `abraham.test.tsx` |
+| names | Goshen's mark is drawn for "Egypt"; Moriah is named "The land of Moriah" | BSB Genesis 12:10 ("went down to Egypt"; no place in Egypt named); Genesis 22:2 ("the land of Moriah") |
+| intro | Abram until God gave the name Abraham | BSB Genesis 17:5 |
+| routeNote | Lines straight and dotted; the roads not known; a straight line may cross a corner of the sea; regions ringed and placed roughly; coasts as now; no dates, and the book page says when Abraham may have lived and why it is debated | The book page's own caption ("A sketch, not a survey ... not as they were then"); its timeline ("Traditionally about 2000 BC ... others think the stories cannot be dated") |
+| Ur | Terah, Abram, Sarai and Lot set out from “Ur of the Chaldeans” for Canaan; usually placed at Tell el-Muqayyar in southern Mesopotamia, where it is drawn; some propose a northern Ur near Haran | BSB Genesis 11:31; the Ur place line in genesis/intro.json, nearly word for word |
+| Haran | Settled at Haran; “Leave your country ...”; Abram seventy-five | BSB Genesis 11:31; 12:1, 4 |
+| Shechem | The Oak of Moreh; “I will give this land to your offspring”; an altar | BSB Genesis 12:6-7 |
+| Bethel | Tent between Bethel and Ai, an altar, called on the LORD's name; moved on toward the Negev, the dry country to the south | BSB Genesis 12:8-9; the Genesis page's Canaan map labels the Negev in the south |
+| Egypt | Famine; went down to Egypt; afraid for his life, passed Sarai off as his sister; Pharaoh sent them away; Genesis does not say where in Egypt | BSB Genesis 12:10-20 |
+| Back to Bethel | Up out of Egypt into the Negev, from place to place to Bethel and the altar; called on the LORD's name | BSB Genesis 13:1-4 |
+| Hebron | After Lot chose the plain of the Jordan, look north, south, east and west; the land to him and his offspring; the Oaks of Mamre at Hebron, an altar | BSB Genesis 13:10-18 |
+| part 3 line | The test one of the hardest stories; God stopped Abraham; the later law and prophets forbid offering a child; “something I never commanded, nor did it even enter My mind” | The Study Bible's Genesis 22 note (Leviticus 18:21; Deuteronomy 12:31; Jeremiah 7:31); BSB Jeremiah 7:31 |
+| Mamre | The LORD appeared by the Oaks of Mamre; the promise of a son; Isaac born when Abraham was a hundred | BSB Genesis 18:1-14; 21:5 |
+| Beersheba | The oath with Abimelech over a well; a tamarisk; “called upon the name of the LORD, the Eternal God”; living there when God tested him | BSB Genesis 21:25-33; 22:1, 19; the Genesis 22 note ("Abraham was living at Beersheba") |
+| The land of Moriah | God told Abraham to offer Isaac in “the land of Moriah”; God stopped him; a ram “in place of his son”; “The LORD Will Provide”; Genesis does not name the mountain; 2 Chronicles 3:1 says Solomon built the temple “on Mount Moriah”; the mark set there roughly, as the book page sets it | BSB Genesis 22:2, 12-14; 2 Chronicles 3:1; the Genesis 22 note ("not otherwise identified in Genesis"); the Moriah place line ("drawn there, roughly") |
+| Back to Hebron | Sarah died at Hebron; the field and cave of Machpelah near Mamre; Abraham died “at a ripe old age”; Isaac and Ishmael buried him there | BSB Genesis 23:2, 17-20; 25:8-9 |
+| left out | Any date; the Samaritan tradition of Mount Gerizim, Jubilees and Josephus (in the Genesis 22 note, linked by the chapter); Sodom; Hagar; Isaac's age | Deliberate: one or two sentences a place |

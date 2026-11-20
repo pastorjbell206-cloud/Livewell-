@@ -159,7 +159,7 @@ function quotationRule(where, value) {
 
 // ── Links ─────────────────────────────────────────────────────────────────
 /** The Explorer's rooms that are not stops: /study/explorer/<room>. */
-const ROOMS = new Set(["pauls-travels"]);
+const ROOMS = new Set(["pauls-travels", "abrahams-road"]);
 
 function linkRule(where, href, finished) {
   if (typeof href !== "string" || !href.startsWith("/"))
@@ -720,6 +720,67 @@ for (const c of cards) {
   }
   if (/\b(AD|BC) ?\d|\b\d{2,4} ?(AD|BC)\b/.test(JSON.stringify(t)))
     fail(tw, "gives a year; the dates of the trips and letters are debated, so the map gives none");
+}
+
+// ── Abraham's road: the second moving map ────────────────────────────────
+// abrahams-road.json names every place by its id in the Genesis book page's
+// maps (client/public/bible/notes/genesis/intro.json), so a place is checked
+// once; it may only rename one (Goshen drawn for "Egypt").
+{
+  const rw = "abrahams-road.json";
+  const r = read(path.join(DIR, "abrahams-road.json"));
+  const intro = read(path.join(ROOT, "client/public/bible/notes/genesis/intro.json"));
+  const placeIds = new Set(
+    intro.teaching.map.flatMap(m => (m.places ?? []).map(p => p.id))
+  );
+  if (r.frame !== "fertile-crescent")
+    fail(rw, `frame "${r.frame}" is not the Genesis page's "fertile-crescent"`);
+  for (const k of ["intro", "routeNote"])
+    if (typeof r[k] !== "string" || !r[k].trim()) fail(rw, `needs "${k}"`);
+  textRules(rw, r);
+  quotationRule(rw, r);
+  if (!/not known/.test(r.routeNote ?? ""))
+    fail(rw, "the route note must say the way between the places is not known");
+  if (/\b(AD|BC) ?\d|\b\d{2,4} ?(AD|BC)\b/.test(JSON.stringify(r)))
+    fail(rw, "gives a year; when Abraham lived is debated, so the map gives none");
+  for (const id of Object.keys(r.names ?? {}))
+    if (!placeIds.has(id)) fail(rw, `renames "${id}", which is not one of the Genesis page's places`);
+  const seenParts = new Set();
+  const used = new Set();
+  for (const part of r.parts ?? []) {
+    const w = `${rw} ${part.id}`;
+    if (!part.id || seenParts.has(part.id)) fail(w, "needs its own id");
+    seenParts.add(part.id);
+    if (!part.name || !part.range || !part.line) fail(w, "needs a name, a range and a line");
+    const ids = new Set();
+    (part.steps ?? []).forEach((st, i) => {
+      const sw = `${w} step ${i + 1}`;
+      if (!st.id || ids.has(st.id)) fail(sw, "needs its own id");
+      ids.add(st.id);
+      used.add(st.place);
+      if (!placeIds.has(st.place))
+        fail(sw, `place "${st.place}" is not one of the Genesis book page's checked places`);
+      if (!(i === 0 ? st.by === "start" : st.by === "land"))
+        fail(sw, `by "${st.by}": the first step starts, every other leg is "land"`);
+      if (!/^Genesis \d/.test(st.ref ?? "")) fail(sw, `ref "${st.ref}" is not in Genesis`);
+      refRule(sw, st.ref);
+      if (!st.text?.trim()) fail(sw, "says nothing of what happened there");
+      if (st.text && st.text.split(/(?<=[.”])\s+(?=[A-Z“])/).length > 2)
+        fail(sw, "keep what happened to one or two sentences");
+    });
+    if ((part.steps ?? []).length < 3) fail(w, "has fewer than three steps");
+  }
+  // Ur's place is debated, and the land of Moriah's mountain is not named in
+  // Genesis: both are said as the Genesis book page and its note say them.
+  const all = (r.parts ?? []).flatMap(p => p.steps ?? []);
+  const ur = all.find(st => st.place === "ur");
+  if (!ur || !/southern Mesopotamia/.test(ur.text) || !/northern Ur/.test(ur.text))
+    fail(rw, "Ur must be placed as the Genesis page places it, with the northern Ur proposal named");
+  const moriah = all.find(st => st.place === "moriah");
+  if (!moriah || !/does not say which mountain/.test(moriah.text) || !/2 Chronicles 3:1/.test(moriah.text))
+    fail(rw, "the land of Moriah must say Genesis does not name the mountain, and that 2 Chronicles 3:1 is a later book's link");
+  for (const need of ["ur", "haran", "shechem", "bethel", "goshen", "hebron", "moriah"])
+    if (!used.has(need)) fail(rw, `has no step at "${need}"`);
 }
 
 // ── The manifest ──────────────────────────────────────────────────────────

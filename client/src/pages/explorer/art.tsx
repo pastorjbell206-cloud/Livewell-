@@ -673,9 +673,12 @@ export const CHURCH_TABLE: Drawing = {
   ),
 };
 
-/** A dove in the hand, drawn round (0, 0): two wings and a body. */
+/**
+ * A dove coming down, drawn round (0, 0): wings raised, the body pointing
+ * down to its head, the tail fanned above. Mark 1:10 "like a dove".
+ */
 const DOVE =
-  "M0,-4C-8,-12 -18,-12 -24,-6C-16,-4 -10,-2 -2,2ZM0,-4C8,-12 18,-12 24,-6C16,-4 10,-2 2,2ZM-2,-4C-2,-8 2,-8 2,-4L1,8L0,12L-1,8Z";
+  "M-2,-4C-10,-14 -22,-20 -32,-19C-28,-15 -28,-13 -24,-11C-26,-8 -24,-6 -20,-6C-20,-3 -16,-2 -10,-1C-7,0 -4,0 -2,1ZM2,-4C10,-14 22,-20 32,-19C28,-15 28,-13 24,-11C26,-8 24,-6 20,-6C20,-3 16,-2 10,-1C7,0 4,0 2,1ZM-4,-6C-5,2 -4,9 0,15C4,9 5,2 4,-6C3,-9 -3,-9 -4,-6ZM-3,-8L-7,-17L0,-14L7,-17L3,-8Z";
 
 /**
  * The "God" card: the river Jordan at Jesus' baptism (Mark 1:9-11), the one
@@ -693,48 +696,47 @@ export const JORDAN: Drawing = {
     <>
       <path
         className="pl-f"
-        d="M200,0V50M176,0L188,48M224,0L212,48M150,0L178,46M250,0L222,46M124,0L168,44M276,0L232,44"
+        d="M200,20V62M178,20L188,60M222,20L212,60M154,20L178,58M246,20L222,58"
       />
       <path
         className="pl-l"
-        d="M20,58C60,44 104,62 146,48C160,44 172,46 182,54M380,58C340,44 296,62 254,48C240,44 228,46 218,54"
+        d="M10,66C50,52 96,70 140,56C156,51 170,54 182,62M390,66C350,52 304,70 260,56C244,51 230,54 218,62"
       />
-      <path className="pl-f" d="M48,70C80,62 110,72 140,64M352,70C320,62 290,72 260,64" />
+      <path className="pl-f" d="M40,80C72,72 104,82 134,74M360,80C328,72 296,82 266,74" />
       <Shape
-        d="M0,176C34,140 80,128 126,150C156,134 186,138 212,152C258,122 330,126 400,160V196H0Z"
+        d="M0,170C34,134 80,122 126,144C156,128 186,132 212,146C258,116 330,120 400,154V200H0Z"
         tone="g"
         off={4}
       />
-      <path fill={h.h1} d="M212,152C258,122 330,126 400,160V196H212Z" />
-      <Shape d="M0,196H400V240H0Z" tone="b" off={3} />
-      <path fill={h.hh} d="M0,214H400V240H0Z" />
-      <path
-        className="pl-f"
-        d="M22,206c10,-4 20,4 30,0M84,210c10,-4 20,4 30,0M276,206c10,-4 20,4 30,0M338,212c10,-4 20,4 30,0"
-      />
+      <path fill={h.h1} d="M212,146C258,116 330,120 400,154V200H212Z" />
       <Shape
-        d="M184,212L188,168C190,158 210,158 212,168L216,212Z"
+        d="M186,230L189,170C191,160 209,160 211,170L214,230Z"
         tone="c"
         off={2}
       />
-      <path className="pl-o" d="M189,148a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
-      <path className="pl-l" d="M189,148a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
-      <path className="pl-l" d="M168,212c10,8 54,8 64,0" />
-      <path className="pl-f" d="M156,220c14,8 74,8 88,0" />
-      <g transform="translate(200,96) scale(1.5)">
+      <path className="pl-o" d="M189,150a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M189,150a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <Shape d="M0,196H400V256H0Z" tone="b" off={3} />
+      <path fill={h.hh} d="M0,224H400V256H0Z" />
+      <path className="pl-l" d="M170,198c8,6 52,6 60,0" />
+      <path className="pl-f" d="M156,208c14,7 74,7 88,0" />
+      <path
+        className="pl-f"
+        d="M22,206c10,-4 20,4 30,0M84,212c10,-4 20,4 30,0M276,206c10,-4 20,4 30,0M338,214c10,-4 20,4 30,0"
+      />
+      <g transform="translate(200,98) scale(1.25)">
         <path className="pl-m" d={DOVE} />
-        <path className="pl-l" d={DOVE} style={{ strokeWidth: 1.5 }} />
+        <path className="pl-l" d={DOVE} style={{ strokeWidth: 1.6 }} />
       </g>
-      <path className="pl-f" strokeDasharray="3 5" d="M200,118V136" />
+      <path className="pl-f" strokeDasharray="3 5" d="M200,122V136" />
       <Shape
-        d="M0,300V248C60,238 120,242 170,254C230,242 320,238 400,250V300Z"
+        d="M0,300V250C60,240 120,244 170,254C230,244 320,240 400,252V300Z"
         tone="g"
         off={3}
       />
-      <path fill={h.h2} d="M0,276C80,268 300,266 400,274V300H0Z" />
       <path
         className="pl-l"
-        d="M38,252V222M46,252V212M54,254V226M350,250V218M358,250V208M366,250V222"
+        d="M38,254V226M46,254V216M54,256V230M350,252V222M358,252V212M366,252V226"
       />
     </>
   ),
@@ -755,110 +757,131 @@ export const IMAGE_GARDEN: Drawing = {
     <>
       <path
         className="pl-f"
-        d="M0,30L120,96M0,70L110,110M40,0L136,90M90,0L156,86M150,0L176,84"
+        d="M0,52L92,96M10,30L104,86M54,24L124,80M104,24L144,76"
       />
-      <path fill={h.h1} d="M0,196C80,176 150,184 200,190C260,178 330,172 400,184V200H0Z" />
-      <path className="pl-l" d="M0,196C80,176 150,184 200,190C260,178 330,172 400,184" />
-      <Shape d="M0,300V200H400V300Z" tone="g" off={3} />
-      <path fill={h.h2} d="M0,272C120,264 280,262 400,270V300H0Z" />
-      <Shape d="M312,196V160h8v36Z" tone="c" off={2} />
+      <path fill={h.h1} d="M0,156C80,136 150,144 200,150C260,138 330,132 400,144V160H0Z" />
+      <path className="pl-l" d="M0,156C80,136 150,144 200,150C260,138 330,132 400,144" />
+      <Shape d="M0,300V160H400V300Z" tone="g" off={3} />
+      <Shape d="M318,158V122h8v36Z" tone="c" off={2} />
       <Shape
-        d="M290,150a26,22 0 1,0 52,0a26,22 0 1,0 -52,0Z"
+        d="M296,112a26,22 0 1,0 52,0a26,22 0 1,0 -52,0Z"
         tone="g"
         off={3}
       />
-      <path fill={h.h2} d="M316,128a26,22 0 0 1 0,44Z" />
-      <Shape d="M262,226L266,232H274L278,226Z" tone="c" off={1.5} />
-      <path className="pl-l" d="M270,226V206M270,214l-8,-6M270,210l8,-7" />
-      <path className="pl-l" d="M232,234L250,196M246,190h10" />
+      <path fill={h.h2} d="M322,90a26,22 0 0 1 0,44Z" />
+      <Shape d="M256,196a16,6 0 0 1 32,0Z" tone="c" off={1.5} />
+      <path className="pl-l" d="M272,192V168M272,180l-9,-7M272,175l9,-8" />
+      <path className="pl-l" d="M236,200L252,160" />
+      <Shape d="M232,198l-6,12l10,4l6,-12Z" tone="b" off={1} />
       <Shape
-        d="M200,234L204,176C206,164 226,164 228,176L232,234Z"
+        d="M200,206L204,146C206,134 226,134 228,146L232,206Z"
         tone="c"
         off={2}
       />
-      <path className="pl-o" d="M205,152a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
-      <path className="pl-l" d="M205,152a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-o" d="M205,122a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M205,122a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
       <Shape
-        d="M76,238L82,178C84,166 104,166 106,178L114,238Z"
+        d="M70,210L76,148C78,136 98,136 100,148L108,210Z"
         tone="b"
         off={2}
       />
-      <path className="pl-o" d="M83,154a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
-      <path className="pl-l" d="M83,154a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-o" d="M77,124a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M77,124a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
       <Shape
-        d="M110,196C104,196 102,206 106,214C108,222 124,222 126,214C130,206 128,196 122,196V190H112Z"
+        d="M104,166C98,166 96,176 100,184C102,192 118,192 120,184C124,176 122,166 116,166V160H106Z"
         tone="c"
         off={1.5}
       />
       <Shape
-        d="M128,258a32,9 0 1,0 64,0a32,9 0 1,0 -64,0Z"
+        d="M126,226a36,10 0 1,0 72,0a36,10 0 1,0 -72,0Z"
         tone="b"
         off={1.5}
       />
-      <path className="pl-f" d="M138,258h12M168,256h14" />
-      <path className="pl-m" d="M160,250l3,6l6,2l-6,2l-3,6l-3,-6l-6,-2l6,-2Z" />
-      <path className="pl-l" d="M160,250l3,6l6,2l-6,2l-3,6l-3,-6l-6,-2l6,-2Z" style={{ strokeWidth: 1.25 }} />
+      <path fill={h.hh} d="M132,228a30,6 0 0 0 60,0Z" />
+      <path className="pl-m" d="M162,216l3,6l6,2l-6,2l-3,6l-3,-6l-6,-2l6,-2Z" />
+      <path
+        className="pl-l"
+        d="M162,216l3,6l6,2l-6,2l-3,6l-3,-6l-6,-2l6,-2Z"
+        style={{ strokeWidth: 1.25 }}
+      />
       <Shape
-        d="M340,240C336,232 342,226 348,228C350,222 360,222 362,228C368,226 374,232 370,240C372,246 364,250 358,246C352,250 342,248 340,240Z"
+        d="M336,206C332,198 338,192 344,194C346,188 356,188 358,194C364,192 370,198 366,206C368,212 360,216 354,212C348,216 338,214 336,206Z"
         tone="b"
         off={1.5}
       />
-      <path className="pl-l" d="M346,246V256M364,246V256" />
-      <Shape d="M366,228a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" tone="b" off={1} />
+      <path className="pl-l" d="M342,212V222M360,212V222" />
+      <Shape d="M362,194a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" tone="b" off={1} />
+      <path fill={h.h2} d="M0,262C120,254 280,252 400,260V300H0Z" />
     </>
   ),
 };
 
 /**
  * "Sin": the garden in the breeze of the day (Genesis 3:8-9). Two people
- * hide among the bushes; thorns grow at the edge of the path; a light (the
- * one mustard mark, never a figure) comes along the path toward them, as
- * God came looking and called, "Where are you?"
+ * hide behind a bush; thorns grow at the edge of the path; a light (the one
+ * mustard mark, never a figure) comes along the path toward them, as God
+ * came looking and called, "Where are you?"
  */
 export const HIDING: Drawing = {
   w: 400,
   h: 300,
   label:
-    "A garden in the evening breeze: two people hide among the bushes, thorns grow at the edge of the path, and a light comes along the path toward them.",
+    "A garden in the evening breeze: two people hide behind a bush, thorns grow at the edge of the path, and a light comes along the path toward them.",
   draw: h => (
     <>
-      <path fill={h.h1} d="M0,0H400V150H0Z" />
-      <path className="pl-f" d="M20,40c20,-6 40,6 60,0M260,30c20,-6 40,6 60,0" />
-      <Shape d="M0,300V150C100,140 300,140 400,150V300Z" tone="g" off={3} />
-      <path fill={h.h2} d="M0,262H400V300H0Z" />
-      <path className="pl-o" d="M400,176C330,186 290,196 250,214C210,232 170,248 120,300H200C230,262 270,236 400,206Z" />
-      <path className="pl-l" d="M400,176C330,186 290,196 250,214C210,232 170,248 120,300M200,300C230,262 270,236 400,206" />
-      <Shape d="M52,170V100h10v70Z" tone="c" off={2} />
+      <path fill={h.h1} d="M0,0H400V122H0Z" />
+      <Shape d="M0,300V122C100,112 300,112 400,122V300Z" tone="g" off={3} />
+      <Shape d="M52,150V92h10v58Z" tone="c" off={2} />
       <Shape
-        d="M14,90C14,58 42,44 58,48C76,40 104,56 100,86C108,104 88,122 64,116C40,124 10,114 14,90Z"
+        d="M16,84C16,56 42,44 58,48C76,40 102,54 98,80C106,96 88,112 64,106C40,114 12,104 16,84Z"
         tone="g"
         off={3}
       />
-      <path fill={h.h2} d="M60,48C76,40 104,56 100,86C108,104 88,122 64,116Z" />
-      <Shape d="M146,160V112h8v48Z" tone="c" off={2} />
+      <path fill={h.h2} d="M60,48C76,40 102,54 98,80C106,96 88,112 64,106Z" />
+      <Shape d="M352,140V96h8v44Z" tone="c" off={2} />
       <Shape
-        d="M120,106C118,80 140,68 152,72C168,66 184,80 182,100C188,116 170,128 150,124C132,130 116,122 120,106Z"
+        d="M328,90C326,66 346,56 356,60C370,54 386,66 384,84C390,98 374,110 356,106C340,112 324,104 328,90Z"
         tone="g"
         off={3}
       />
-      <path className="pl-o" d="M84,186a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
-      <path className="pl-l" d="M84,186a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
-      <path className="pl-o" d="M110,192a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
-      <path className="pl-l" d="M110,192a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
-      <Shape
-        d="M40,244C30,214 54,190 78,198C92,184 120,186 130,200C150,190 176,206 172,228C184,240 172,258 152,254C130,266 70,264 40,244Z"
-        tone="g"
-        off={3}
+      <path
+        className="pl-o"
+        d="M400,140C340,146 296,158 262,176C226,196 196,214 168,250H226C246,224 280,200 400,172Z"
       />
-      <path fill={h.h1} d="M40,244C30,214 54,190 78,198C92,184 120,186 130,200L120,254C90,262 62,258 40,244Z" />
       <path
         className="pl-l"
-        d="M230,300L246,270l6,8l4,-12l6,10l6,-14l4,10l8,-6M300,300l10,-20l4,8l6,-12l6,10l8,-10M180,300l8,-16l6,6l4,-10"
+        d="M400,140C340,146 296,158 262,176C226,196 196,214 168,250M226,250C246,224 280,200 400,172"
       />
-      <path className="pl-f" d="M318,170l14,-8M318,182l18,0M326,196l14,6M296,162l-6,-12M286,190l-12,6" />
-      <path className="pl-m" d="M308,182a12,12 0 1,0 24,0a12,12 0 1,0 -24,0Z" />
-      <path className="pl-l" d="M308,182a12,12 0 1,0 24,0a12,12 0 1,0 -24,0Z" />
-      <path className="pl-f" strokeDasharray="3 5" d="M300,190C280,198 260,206 240,214" />
+      <path className="pl-o" d="M96,170a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <path className="pl-l" d="M96,170a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <path className="pl-o" d="M126,176a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <path className="pl-l" d="M126,176a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <Shape
+        d="M40,240C28,210 52,184 78,190C92,176 124,178 136,192C158,182 186,200 182,224C194,238 180,256 158,250C134,262 68,262 40,240Z"
+        tone="g"
+        off={3}
+      />
+      <path
+        fill={h.h1}
+        d="M40,240C28,210 52,184 78,190C92,176 124,178 128,192L120,254C88,260 62,256 40,240Z"
+      />
+      <path
+        className="pl-l"
+        d="M238,252l10,-18l5,7l4,-11l6,9l5,-12l4,9l7,-5M300,240l9,-17l4,7l6,-11l5,9l7,-9M342,232l8,-14l4,6l5,-9"
+      />
+      <path
+        className="pl-f"
+        strokeDasharray="2 4"
+        d="M330,160a20,20 0 1,0 40,0a20,20 0 1,0 -40,0ZM318,160a32,32 0 1,0 64,0a32,32 0 1,0 -64,0Z"
+      />
+      <path className="pl-m" d="M341,160a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M341,160a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path
+        className="pl-f"
+        strokeDasharray="3 5"
+        d="M318,168C292,176 268,188 250,200"
+      />
+      <path fill={h.h2} d="M0,262H400V300H0Z" />
     </>
   ),
 };
@@ -878,32 +901,36 @@ export const CROSS_HILL: Drawing = {
     <>
       <path
         className="pl-f"
-        d="M312,150l-24,-40M330,146l-4,-48M348,148l18,-42M364,156l34,-30M298,158l-40,-20"
+        d="M322,118l-14,-26M338,114l-2,-30M354,116l12,-26M366,124l24,-18M308,126l-26,-12"
       />
-      <path className="pl-m" d="M296,172a38,38 0 0 1 76,0Z" />
-      <path className="pl-l" d="M296,172a38,38 0 0 1 76,0" />
-      <path className="pl-l" d="M220,172C280,160 340,158 400,166" />
-      <path fill={h.h1} d="M0,172C60,158 140,156 220,172H0Z" />
-      <path className="pl-l" d="M0,172C60,158 140,156 220,172" />
+      <path className="pl-m" d="M312,136a26,26 0 0 1 52,0Z" />
+      <path className="pl-l" d="M312,136a26,26 0 0 1 52,0" />
+      <path className="pl-l" d="M230,138C280,128 340,128 400,134" />
+      <path fill={h.h1} d="M0,140C60,126 140,124 230,138V142H0Z" />
+      <path className="pl-l" d="M0,140C60,126 140,124 230,138" />
       <Shape
-        d="M0,300V214C40,176 90,150 140,148C190,150 240,176 290,214C330,236 370,248 400,252V300Z"
+        d="M0,300V196C40,160 90,128 140,124C190,126 240,152 290,186C330,206 370,216 400,220V300Z"
         tone="g"
         off={4}
       />
-      <path fill={h.h2} d="M140,148C190,150 240,176 290,214C330,236 370,248 400,252V300H200C190,240 170,180 140,148Z" />
-      <path className="pl-k" d="M134,150V62h12V150ZM110,84H170v11H110Z" />
+      <path
+        fill={h.h2}
+        d="M140,124C190,126 240,152 290,186C330,206 370,216 400,220V300H216C206,236 180,160 140,124Z"
+      />
+      <path className="pl-k" d="M135,126V40h11V126ZM112,62H169v10H112Z" />
       <path
         className="pl-o"
-        d="M146,150C160,170 176,186 190,206C210,236 236,262 262,300H300C276,260 248,226 222,198C204,178 180,162 154,150Z"
+        d="M142,126C152,142 166,160 180,180C196,204 214,228 232,262H262C242,226 222,198 204,176C188,156 168,138 150,126Z"
       />
       <path
         className="pl-l"
-        d="M146,150C160,170 176,186 190,206C210,236 236,262 262,300M154,150C180,162 204,178 222,198C248,226 276,260 300,300"
+        d="M142,126C152,142 166,160 180,180C196,204 214,228 232,262M150,126C168,138 188,156 204,176C222,198 242,226 262,262"
       />
       <path
         className="pl-l"
-        d="M40,262l4,-12l4,12M60,270l4,-14l4,14M90,256l4,-10l4,10M340,274l4,-12l4,12M366,282l4,-14l4,14"
+        d="M40,232l4,-12l4,12M64,242l4,-14l4,14M96,226l4,-10l4,10M318,244l4,-12l4,12M346,252l4,-14l4,14"
       />
+      <path fill={h.h1} d="M0,270H400V300H0Z" />
     </>
   ),
 };
