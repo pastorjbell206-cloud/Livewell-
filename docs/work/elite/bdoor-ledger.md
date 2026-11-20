@@ -10778,3 +10778,25 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Eritheia ‘self-seeking, rivalry’; psuchikos ‘natural’; daimoniōdēs ‘demon-like’; eupeithēs ‘ready to obey’; anupokritos ‘unfeigned’ | 13-18 | lexicon G2052, G5591, G1141, G2138, G0505 | Repository |
 | Wisdom by its fruits; a portrait of Christ; peacemakers echo Matthew 5:9; chapter 4 follows | 13-18 | james/3.json `literary`, `christ`, `story` | Repository |
 | Proverbs 3:17; 11:2; 16:32; Isaiah 32:17 | 13-18 | BSB | BSB text |
+
+## The plain notes on James 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hēdonē, pleasure become a ruling power; quarrels from within | 1-6 | james/4.json `words` (G2237), `doctrines` | Repository |
+| ‘You kill’: three readings (violence before AD 66; Matthew 5:21-22; envy that wishes a rival dead); the text does not settle it | 1-6 | james/4.json `historical` | Repository, no side |
+| ‘Adulteresses’: the prophets' bride picture, feminine form for the covenant people; philia shared loyalties | 1-6 | james/4.json `cultural`, `words` (G5373) | Repository |
+| 4:5: not an exact quotation; two readings; the BSB capitalises Spirit | 1-6 | james/4.json `hard` | Repository, no side |
+| Proverbs 3:34 wording compared with James 4:6 (no claim about the Greek) | 1-6 | BSB | BSB text |
+| Jeremiah 3:20; Hosea 2:19; Exodus 34:14 | 1-6 | BSB | BSB text |
+| Ten commands in 7-10; the language of public repentance (Joel 2:12-13); Luke 14:11 | 7-10 | james/4.json `literary`, `cultural`, `christ` | Repository; BSB |
+| Zechariah 1:3; Psalm 24:4; Joel 2:12; Psalm 51:17 | 7-10 | BSB | BSB text |
+| Care line ‘Sometimes guilt that will not lift ...’ | 7-10 | 2-corinthians/plain/7.json (8-12 `hard`) | Word for word |
+| Slander and judging set oneself above the law; one Lawgiver and Judge | 11-12 | james/4.json `summary`, `christ` | Repository |
+| Leviticus 19:16; Psalm 101:5; Isaiah 33:22 | 11-12 | BSB | BSB text |
+| ‘Abuse and other crimes are to be reported ...’ | 11-12 | existing plain note wording (Hebrews and 1 Timothy notes) | Word for word |
+| ‘Come now’ again at 5:1; mobile merchants of the empire; not trade but leaving God out; atmis vapour; not fatalism; sin of omission | 13-17 | james/4.json `historical`, `literary`, `words` (G0822), `doctrines` | Repository |
+| Hevel in Psalm 39:5 and Ecclesiastes | 13-17 | james/4.json `words`; Psalm 39:5 Hebrew (H1892) | Repository text |
+| Proverbs 27:1; 16:9; Psalm 39:4-5; Proverbs 3:27 | 13-17 | BSB | BSB text |
