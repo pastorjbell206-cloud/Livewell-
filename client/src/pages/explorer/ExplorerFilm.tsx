@@ -189,8 +189,8 @@ function FilmPage({
         }
       >
         <p className="ex-note" style={{ marginTop: 0 }}>
-          Watch and learn. A moving picture in {film.frames.length} parts, with
-          no sound: every word is under the picture.
+          Watch and learn. A moving picture in {film.frames.length} parts.
+          Every word is under the picture, and Listen reads it aloud.
         </p>
       </PageHead>
 

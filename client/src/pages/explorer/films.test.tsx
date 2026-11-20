@@ -28,6 +28,12 @@ import path from "node:path";
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { isFilm, type ExplorerIndex, type Film } from "@/lib/explorer";
 import FilmPlayer, { frameMs } from "./films/FilmPlayer";
+import {
+  LISTEN_KEY,
+  refInWords,
+  speechTimeoutMs,
+  spokenText,
+} from "@/lib/film-voice";
 import { FILM_SCENES } from "./films/scenes";
 import ExplorerMap from "./ExplorerMap";
 import ExplorerStop from "./ExplorerStop";
@@ -261,6 +267,226 @@ describe("the player's contract", () => {
       for (let k = -1; k < (f.frames ?? 0); k++)
         expect(drawing.draw(hatch, k), `${f.slug} frame ${k}`).toBeTruthy();
     }
+  });
+});
+
+/**
+ * Listen: the device's voice. jsdom has no speechSynthesis, so it is stubbed
+ * and each sentence's end is fired by hand. No one has heard it here.
+ */
+class FakeUtterance {
+  text: string;
+  lang = "";
+  rate = 1;
+  voice: unknown = null;
+  onend: (() => void) | null = null;
+  onerror: ((e: { error: string }) => void) | null = null;
+  constructor(text: string) {
+    this.text = text;
+  }
+}
+function installVoice() {
+  const spoken: FakeUtterance[] = [];
+  const synth = {
+    speak: vi.fn((u: FakeUtterance) => {
+      spoken.push(u);
+    }),
+    cancel: vi.fn(),
+    pause: vi.fn(),
+    resume: vi.fn(),
+    paused: false,
+    speaking: false,
+    getVoices: () => [],
+  };
+  vi.stubGlobal("speechSynthesis", synth);
+  vi.stubGlobal("SpeechSynthesisUtterance", FakeUtterance);
+  return { synth, spoken, last: () => spoken[spoken.length - 1] };
+}
+const listenButton = () => screen.getByRole("button", { name: "Listen" });
+const said = (k: number, level: "younger" | "older" = "younger") =>
+  spokenText(FILM.frames[k], level);
+
+describe("Listen", () => {
+  it("is off by default and, off, never speaks", () => {
+    vi.useFakeTimers();
+    const { synth } = installVoice();
+    render(player());
+    expect(listenButton().getAttribute("aria-pressed")).toBe("false");
+    expect(screen.getByText("Read aloud by your device's voice.")).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    for (let k = 0; k < FILM.frames.length; k++)
+      advance(frameMs(FILM.frames[k].younger));
+    expect(current()).toBe(FILM.frames.length);
+    expect(synth.speak).not.toHaveBeenCalled();
+  });
+
+  it("on, speaks each frame in order and moves on only when the sentence ends", () => {
+    vi.useFakeTimers();
+    const { spoken, last } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    expect(listenButton().getAttribute("aria-pressed")).toBe("true");
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    expect(current()).toBe(1);
+    expect(last().text).toBe(said(0));
+    // The caption's own timer no longer moves it: it waits for the voice.
+    advance(frameMs(FILM.frames[0].younger) + 1000);
+    expect(current()).toBe(1);
+    for (let k = 1; k < FILM.frames.length; k++) {
+      act(() => last().onend?.());
+      advance(700);
+      expect(current()).toBe(k + 1);
+      expect(last().text).toBe(said(k));
+    }
+    expect(spoken.map(u => u.text)).toEqual(FILM.frames.map((_, k) => said(k)));
+    act(() => last().onend?.());
+    advance(700);
+    expect(screen.getByRole("button", { name: "Play again" })).toBeTruthy();
+    // Nothing is announced to a screen reader while the voice speaks.
+    expect(live()).toBe("");
+  });
+
+  it("moves on after a wait if the voice never says it has finished", () => {
+    vi.useFakeTimers();
+    installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    advance(speechTimeoutMs(said(0)) + 700);
+    expect(current()).toBe(2);
+  });
+
+  it("Pause stops the voice and holds; Play on says the frame again", () => {
+    vi.useFakeTimers();
+    const { synth, last } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    const first = last();
+    synth.cancel.mockClear();
+    fireEvent.click(screen.getByRole("button", { name: "Pause" }));
+    expect(synth.cancel).toHaveBeenCalled();
+    act(() => first.onend?.()); // a late end from the stopped sentence
+    advance(60_000);
+    expect(current()).toBe(1);
+    fireEvent.click(screen.getByRole("button", { name: "Play on" }));
+    expect(last()).not.toBe(first);
+    expect(last().text).toBe(said(0));
+  });
+
+  it("Back, Next and the frame buttons stop the voice and say the new frame; a playing film plays on", () => {
+    vi.useFakeTimers();
+    const { synth, last } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    synth.cancel.mockClear();
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(synth.cancel).toHaveBeenCalled();
+    expect(current()).toBe(2);
+    expect(last().text).toBe(said(1));
+    expect(screen.getByRole("button", { name: "Pause" })).toBeTruthy();
+    fireEvent.click(
+      screen.getByRole("button", { name: `Picture 4: ${FILM.frames[3].name}` })
+    );
+    expect(last().text).toBe(said(3));
+    fireEvent.click(screen.getByRole("button", { name: /^Back/ }));
+    expect(current()).toBe(3);
+    expect(last().text).toBe(said(2));
+    act(() => last().onend?.());
+    advance(700);
+    expect(current()).toBe(4);
+    expect(live()).toBe("");
+  });
+
+  it("stepping by hand while paused says the frame and stays there", () => {
+    vi.useFakeTimers();
+    const { last } = installVoice();
+    render(player("older"));
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(last().text).toBe(said(0, "older"));
+    act(() => last().onend?.());
+    advance(60_000);
+    expect(current()).toBe(1);
+    expect(live()).toBe("");
+  });
+
+  it("works with reduced motion, stepping by hand", () => {
+    motion(true);
+    vi.useFakeTimers();
+    const { last } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: /^Start/ }));
+    expect(last().text).toBe(said(0));
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(last().text).toBe(said(1));
+  });
+
+  it("where the device has no voice, falls back to the timed captions and says so", () => {
+    vi.useFakeTimers();
+    render(player());
+    fireEvent.click(listenButton());
+    expect(
+      screen.getByText(/Sound is not available on this device/)
+    ).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    advance(frameMs(FILM.frames[0].younger));
+    expect(current()).toBe(2);
+  });
+
+  it("if the voice fails, falls back to the timed captions and says so", () => {
+    vi.useFakeTimers();
+    const { last } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    act(() => last().onerror?.({ error: "synthesis-failed" }));
+    expect(
+      screen.getByText(/Sound is not available on this device/)
+    ).toBeTruthy();
+    advance(frameMs(FILM.frames[0].younger));
+    expect(current()).toBe(2);
+  });
+
+  it("keeps the choice on this device", () => {
+    installVoice();
+    const { unmount } = render(player());
+    fireEvent.click(listenButton());
+    expect(JSON.parse(window.localStorage.getItem(LISTEN_KEY) ?? "{}")).toEqual(
+      { v: 1, on: true }
+    );
+    unmount();
+    render(player());
+    expect(listenButton().getAttribute("aria-pressed")).toBe("true");
+  });
+
+  it("stops the voice when the player goes away", () => {
+    const { synth } = installVoice();
+    const { unmount } = render(player());
+    fireEvent.click(listenButton());
+    synth.cancel.mockClear();
+    unmount();
+    expect(synth.cancel).toHaveBeenCalled();
+  });
+
+  it("says references in words and the frame's verse after its caption", () => {
+    expect(refInWords("1 Corinthians 15:3-4")).toBe(
+      "First Corinthians chapter 15, verses 3 and 4"
+    );
+    expect(refInWords("Psalm 90:2")).toBe("Psalm 90, verse 2");
+    expect(refInWords("Mark 1:9-11")).toBe("Mark chapter 1, verses 9 to 11");
+    const withVerse = FILM.frames.find(f => f.verse)!;
+    const text = spokenText(withVerse, "younger");
+    expect(text.startsWith(withVerse.younger.replace(/\.$/, ""))).toBe(true);
+    expect(text).toContain(withVerse.verse!.text.replace(/\.$/, ""));
+    for (const f of READY)
+      for (const fr of filmFile(f.slug).frames)
+        for (const l of ["younger", "older"] as const)
+          expect(spokenText(fr, l), `${f.slug} ${fr.id} ${l}`).not.toMatch(
+            /\d:\d/
+          );
   });
 });
 

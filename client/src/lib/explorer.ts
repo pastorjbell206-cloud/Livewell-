@@ -113,6 +113,18 @@ export interface FilmFrame extends Leveled {
   /** What the picture shows once this frame has finished moving (read by a screen reader, and true with motion off). */
   still: string;
   verse?: { ref: string; text: string };
+  /** What Listen says for this frame where the caption reads badly aloud (lib/film-voice.ts); else the caption. */
+  say?: Partial<Leveled>;
+}
+
+/**
+ * A shorter cut of a film for a video file to share (scripts/export-film-video.mjs):
+ * some of its frames, in order, at one level, each with a shorter caption made
+ * only of sentences its own caption already has, and its verse or not.
+ */
+export interface FilmShareCut {
+  level: Level;
+  frames: { id: string; text?: string; verse?: boolean }[];
 }
 
 export interface Film {
@@ -136,6 +148,8 @@ export interface Film {
   deeper?: Link[];
   /** Where the film sends the reader when it ends. */
   end: Link;
+  /** The cut its shared video uses, where the whole film runs past two minutes. */
+  share?: FilmShareCut;
 }
 
 export interface ExplorerIndex {

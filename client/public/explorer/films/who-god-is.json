@@ -16,6 +16,9 @@
       "still": "An open scroll lies by a doorway, its lines of writing ruled across it, and one line shines gold.",
       "younger": "Every day God's people Israel said these words: “Hear, O Israel: The LORD our God, the LORD is One.” There is only one God. Christians believe that too, and everything else about God starts here.",
       "older": "The Bible begins where Israel began: “The LORD our God, the LORD is One” (Deuteronomy 6:4), Israel's daily confession. Jesus called it the most important commandment (Mark 12:29). The first Christians were Jews who prayed these words, and they never stopped. There is one God and no other.",
+      "say": {
+        "older": "The Bible begins where Israel began: “The LORD our God, the LORD is One”, Israel's daily confession. Jesus called it the most important commandment. The first Christians were Jews who prayed these words, and they never stopped. There is one God and no other."
+      },
       "verse": {
         "ref": "Deuteronomy 6:4",
         "text": "Hear, O Israel: The LORD our God, the LORD is One."
@@ -27,6 +30,9 @@
       "still": "Hills, a sea and the sky, with light coming in from beyond the top of the picture and falling on all of it. No figure is drawn: the Father is never pictured as a man.",
       "younger": "The Bible calls the Father God. Everything came from him, and we were made for him. Jesus taught his friends to pray to him as “Our Father in heaven.”",
       "older": "Paul takes Israel's own confession and says, “for us there is but one God, the Father, from whom all things came and for whom we exist” (1 Corinthians 8:6). The Father is God. The Bible gives no picture of him, and this film does not draw one. Jesus taught his followers to pray, “Our Father in heaven” (Matthew 6:9).",
+      "say": {
+        "older": "Paul takes Israel's own confession and says, “for us there is but one God, the Father, from whom all things came and for whom we exist”. The Father is God. The Bible gives no picture of him, and this film does not draw one. Jesus taught his followers to pray, “Our Father in heaven”."
+      },
       "verse": {
         "ref": "1 Corinthians 8:6",
         "text": "yet for us there is but one God, the Father, from whom all things came and for whom we exist."
@@ -38,6 +44,9 @@
       "still": "Inside a house with its door shut, Jesus stands among his friends. One of them, Thomas, stands facing him.",
       "younger": "The Bible calls the Son God too. John says, “the Word was God.” When Thomas saw Jesus alive again, he said to him, “My Lord and my God!” The Son became a man, Jesus, and he is still fully God.",
       "older": "John opens his Gospel, “In the beginning was the Word, and the Word was with God, and the Word was God” (John 1:1): with God, and God. When Thomas meets the risen Jesus behind locked doors he says, “My Lord and my God!” (John 20:26-28). The Son is fully God, and in Jesus he also became fully man.",
+      "say": {
+        "older": "John opens his Gospel, “In the beginning was the Word, and the Word was with God, and the Word was God”: with God, and God. When Thomas meets the risen Jesus behind locked doors he says, “My Lord and my God!” The Son is fully God, and in Jesus he also became fully man."
+      },
       "verse": {
         "ref": "John 1:1",
         "text": "In the beginning was the Word, and the Word was with God, and the Word was God."
@@ -49,6 +58,9 @@
       "still": "A line like wind runs over hills, a sea and a town, from one edge of the picture to the other, with a small gold flame at its end.",
       "younger": "The Bible calls the Holy Spirit God too. Nobody can go anywhere that God's Spirit is not. And when a man lied to the Holy Spirit, Peter told him that he had lied to God.",
       "older": "The Spirit is not a force God uses. The Bible speaks of him as God: when Ananias lied “to the Holy Spirit”, Peter told him, “You have not lied to men, but to God” (Acts 5:3-4). And he is everywhere, as only God is: “Where can I go to escape Your Spirit? Where can I flee from Your presence?” (Psalm 139:7).",
+      "say": {
+        "older": "The Spirit is not a force God uses. The Bible speaks of him as God: when Ananias lied “to the Holy Spirit”, Peter told him, “You have not lied to men, but to God”. And he is everywhere, as only God is: “Where can I go to escape Your Spirit? Where can I flee from Your presence?”"
+      },
       "verse": {
         "ref": "Psalm 139:7",
         "text": "Where can I go to escape Your Spirit? Where can I flee from Your presence?"
@@ -60,6 +72,9 @@
       "still": "Jesus stands in the river with green banks on each side. Above him the sky is torn open, and the Spirit comes down on him like a dove, shining.",
       "younger": "When Jesus was baptized, all three were there together: the Son in the water, the Spirit coming down on him like a dove, and the Father's voice from heaven saying, “You are My beloved Son.”",
       "older": "At the Jordan the three are seen together, and none of them is the other: the Son comes up out of the water, the Spirit descends on him like a dove, and the Father speaks from heaven, “You are My beloved Son; in You I am well pleased” (Mark 1:9-11). The Father is not the Son, and the Son is not the Spirit.",
+      "say": {
+        "older": "At the Jordan the three are seen together, and none of them is the other: the Son comes up out of the water, the Spirit descends on him like a dove, and the Father speaks from heaven, “You are My beloved Son; in You I am well pleased”. The Father is not the Son, and the Son is not the Spirit."
+      },
       "verse": {
         "ref": "Mark 1:11",
         "text": "And a voice came from heaven: “You are My beloved Son; in You I am well pleased.”"
@@ -71,6 +86,9 @@
       "still": "Jesus' friends stand on a hilltop, and roads run out from it to every edge of the picture.",
       "younger": "Before he went back to heaven, Jesus sent his friends to baptize people everywhere “in the name of the Father, and of the Son, and of the Holy Spirit.” One name, not three. There is one God, the Father, the Son, and the Holy Spirit.",
       "older": "The risen Jesus sends his followers out, baptizing “in the name of the Father, and of the Son, and of the Holy Spirit” (Matthew 28:19): one name. Christians say God is one in being and three in persons, each fully God, and one God. Or more simply: one what, three whos. Not three gods. Not one person in three masks. Not three parts.",
+      "say": {
+        "older": "The risen Jesus sends his followers out, baptizing “in the name of the Father, and of the Son, and of the Holy Spirit”: one name. Christians say God is one in being and three in persons, each fully God, and one God. Or more simply: one what, three whos. Not three gods. Not one person in three masks. Not three parts."
+      },
       "verse": {
         "ref": "Matthew 28:19",
         "text": "Therefore go and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Spirit,"
