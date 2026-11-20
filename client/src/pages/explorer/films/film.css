@@ -1,0 +1,480 @@
+/* The moving-picture player and its motions (FilmPlayer.tsx, motion.tsx).
+   Colour only through tokens. The stage is the art kit's frame at 16:10; the
+   one mustard mark of each frame is in the drawing; here mustard is only the
+   focus ring and the main button's underline. Motion is opacity, transform
+   and stroke-dashoffset, and none of it runs with motion turned off. */
+
+.fp {
+  max-width: 60rem;
+  margin: 0 auto;
+  outline: none;
+}
+.fp-screen {
+  position: relative;
+  aspect-ratio: 16 / 10;
+}
+.fp-screen > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.fp-screen:focus-visible {
+  outline: 2px solid var(--mustard);
+  outline-offset: 4px;
+}
+
+/* The poster: the title on a paper label, and one round Play. */
+.fp-poster {
+  position: absolute;
+  left: 4%;
+  bottom: 6%;
+  max-width: min(72%, 30rem);
+  padding: 10px 16px 12px;
+  background: var(--art-paper);
+  border: 1.5px solid var(--art-ink);
+  box-shadow: 4px 4px 0 var(--art-ink);
+  pointer-events: none;
+}
+.fp-poster__kicker {
+  margin: 0 0 2px;
+  font-family: var(--U);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--art-ink);
+}
+.fp-poster__title {
+  margin: 0;
+  font-family: var(--F);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 3.6vw, 2.3rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--art-ink);
+}
+.fp-poster__disc {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  width: clamp(56px, 11vw, 84px);
+  height: clamp(56px, 11vw, 84px);
+  margin: calc(clamp(56px, 11vw, 84px) / -2) 0 0 calc(clamp(56px, 11vw, 84px) / -2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bone);
+  box-shadow: 0 0 0 4px var(--art-paper), 0 0 0 5.5px var(--art-ink);
+  cursor: pointer;
+}
+
+/* The thin line under the stage: how far the film has gone. */
+.fp-progress {
+  height: 3px;
+  margin-top: 10px;
+  background: var(--border);
+  overflow: hidden;
+}
+.fp-progress__fill {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+  transform-origin: left center;
+  transition: transform 0.6s var(--motion-ease);
+}
+
+/* The controls. */
+.fp-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px 16px;
+  margin-top: 12px;
+}
+.fp-bar__main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.fp .btn {
+  gap: 8px;
+  min-height: 44px;
+}
+.fp .fp-play {
+  min-width: 7.6rem;
+  font-weight: 600;
+}
+.fp .fp-step {
+  padding: 0 14px;
+}
+.fp .fp-step--icon {
+  width: 48px;
+  padding: 0;
+}
+.fp .btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+@media (hover: none) {
+  .fp .btn:not(.btn--quiet):hover {
+    background: var(--ink);
+  }
+}
+.fp .btn:focus-visible,
+.fp-dot:focus-visible {
+  outline: 2px solid var(--mustard);
+  outline-offset: 2px;
+}
+
+/* The numbered frame buttons: two rows on a phone, one on a wider screen. */
+.fp-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--fp-cols, 5), 44px);
+  gap: 4px;
+}
+@media (min-width: 700px) {
+  .fp-dots {
+    display: flex;
+  }
+}
+.fp-dot {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--borderdk);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--ink);
+  font-family: var(--U);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.fp-dot.is-seen {
+  background: var(--bone-warm);
+}
+.fp-dot[aria-current="step"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bone);
+}
+.fp-hint {
+  margin: 8px 0 0;
+  font-family: var(--U);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+/* The captions: every one in the same cell, so the box never changes height. */
+.fp-captions {
+  display: grid;
+  margin-top: var(--s-3);
+}
+.fp-cap {
+  grid-area: 1 / 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+}
+.fp-cap.is-on {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease 0.15s, visibility 0s;
+}
+.fp-cap__name {
+  margin: 0 0 6px;
+  font-family: var(--U);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.fp-cap__n {
+  font-weight: 500;
+  color: var(--ink-muted);
+  margin-right: 6px;
+}
+.fp-cap__text {
+  margin: 0;
+  max-width: var(--w-read);
+  font-family: var(--font-reading);
+  font-size: var(--fs-read);
+  line-height: 1.6;
+  color: var(--ink);
+}
+.fp-cap__verse {
+  margin: 14px 0 0;
+  padding: 2px 0 2px 16px;
+  border-left: 2px solid var(--borderdk);
+  max-width: var(--w-read);
+}
+.fp-cap__verse p {
+  margin: 0;
+  font-family: var(--font-reading);
+  font-size: 17px;
+  line-height: 1.6;
+  font-style: normal;
+  color: var(--ink);
+}
+.fp-cap__verse .fp-cap__ref {
+  margin-top: 4px;
+  font-family: var(--U);
+  font-size: 14px;
+}
+.fp-cap__end {
+  margin: 14px 0 0;
+}
+
+/* ── The motions (motion.tsx) ──────────────────────────────────────────── */
+/* A line draws itself in; going away, it fades, then resets unseen. */
+.fp-screen .mv-draw {
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+  transition:
+    opacity 0.6s ease,
+    stroke-dashoffset 0s linear 0.6s;
+}
+.fp-screen .mv-draw.is-on {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  transition:
+    opacity 0.2s ease,
+    stroke-dashoffset 1.6s var(--motion-ease);
+}
+/* The light drawn as a line (Who made God?): mustard, the frame's one mark. */
+.fp-gold {
+  fill: none;
+  stroke: var(--mustard);
+  stroke-width: 5;
+}
+.fp-screen .mv-road {
+  stroke-dasharray: 1 1;
+  transition: stroke-dashoffset 2s var(--motion-ease);
+}
+.fp-screen .mv-fade {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition:
+    opacity 0.9s ease,
+    transform 1.1s var(--motion-ease);
+}
+.fp-screen .mv-from-up {
+  transform: translateY(18px);
+}
+.fp-screen .mv-from-down {
+  transform: translateY(-18px);
+}
+.fp-screen .mv-from-left {
+  transform: translateX(-24px);
+}
+.fp-screen .mv-from-right {
+  transform: translateX(24px);
+}
+.fp-screen .mv-from-grow {
+  transform: scale(0.55);
+}
+.fp-screen .mv-fade.is-on {
+  opacity: 1;
+  transform: none;
+}
+.fp-screen .mv-travel {
+  transition: transform 1.8s var(--motion-ease);
+}
+.fp-screen.is-still,
+.fp-screen.is-still * {
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fp-screen *,
+  .fp-cap,
+  .fp-progress__fill {
+    transition: none !important;
+  }
+}
+
+/* ── Watch and learn on the map, and a film's page ─────────────────────── */
+.wl-sec {
+  background: var(--charcoal);
+  color: var(--charcoal-fg);
+  padding: var(--s-6) var(--gutter);
+}
+.wl-sec .ex-h2 {
+  color: var(--charcoal-fg);
+}
+.wl-sec .ex-lede {
+  color: var(--charcoal-fg-muted);
+}
+.wl-groups {
+  display: grid;
+  gap: var(--s-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 900px) {
+  .wl-groups {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-5) var(--s-5);
+  }
+}
+.wl-group__name {
+  margin: 0 0 2px;
+  font-family: var(--F);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  color: var(--charcoal-fg);
+}
+.wl-group__line {
+  margin: 0 0 12px;
+  font-family: var(--U);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--charcoal-fg-muted);
+}
+.wl-films {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.wl-film {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--charcoal-line);
+  border-radius: var(--radius-sm);
+  color: var(--charcoal-fg);
+  text-decoration: none;
+}
+a.wl-film:hover,
+a.wl-film:focus-visible {
+  border-color: var(--charcoal-fg);
+}
+a.wl-film:focus-visible {
+  outline: 2px solid var(--mustard);
+  outline-offset: 2px;
+}
+.wl-film__thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border: 1.5px solid var(--art-ink);
+  background: var(--art-paper);
+  outline: 1px solid var(--charcoal-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--art-ink);
+}
+.wl-film__thumb svg.ex-roundel {
+  width: 58%;
+  height: auto;
+}
+.wl-film__play {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bone);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+}
+.wl-film__title {
+  display: block;
+  font-family: var(--F);
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.15;
+  text-decoration: underline;
+  text-decoration-color: var(--mustard);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.wl-film__line {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--U);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--charcoal-fg-muted);
+}
+.wl-coming {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.wl-coming li {
+  padding: 5px 12px;
+  border: 1px dashed var(--charcoal-line);
+  border-radius: 999px;
+  font-family: var(--U);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--charcoal-fg-muted);
+}
+.wl-coming__label {
+  margin: 12px 0 0;
+  font-family: var(--U);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--charcoal-fg-muted);
+}
+
+/* A stop's link to its moving pictures. */
+.ex-watch {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.ex-watch a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 14px 0 6px;
+  border: 1px solid var(--borderdk);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  font-family: var(--U);
+  font-size: 15px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.ex-watch a:hover {
+  border-color: var(--ink);
+}
+.ex-watch__play {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bone);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+}

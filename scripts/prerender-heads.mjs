@@ -861,6 +861,18 @@ const PAGE_BODIES = {
         `<p class="pre-subtitle">The whole Bible as one story, on one map, for ages 7 to 16. Follow the road from the garden to the city.</p>`,
         sec("The map", `<ol>\n${d.stops.map(stop).join("\n")}\n</ol>`),
         thread ? sec(`A thread through the whole Bible: ${thread.name}`, `<p>${escapeHtml(thread.line.older)}</p>`) : "",
+        (d.filmGroups || []).length
+          ? sec(
+              "Watch and learn",
+              (d.filmGroups || [])
+                .map((g) => {
+                  const mine = (d.films || []).filter((f) => f.group === g.id);
+                  const item = (f) => (f.status === "finished" ? `<li><a href="/study/explorer/watch/${escapeHtml(f.slug)}">${escapeHtml(f.title)}</a>: ${escapeHtml(f.line?.older ?? "")}</li>` : `<li>${escapeHtml(f.title)} (coming)</li>`);
+                  return `<h3>${escapeHtml(g.name)}</h3><p>${escapeHtml(g.line)}</p><ul>${mine.map(item).join("")}</ul>`;
+                })
+                .join("\n")
+            )
+          : "",
         cards.length ? sec("Why we believe", cards.map((c) => `<h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.statement.older)}</p>`).join("\n")) : "",
       ]),
     };
@@ -1735,6 +1747,46 @@ async function main() {
       n++;
     }
     console.log(`[prerender] wrote ${n} Bible Explorer stops`);
+  }
+
+  // A page per finished moving picture of the Bible Explorer
+  // (/study/explorer/watch/:slug). The head matches the page's own SEOMeta
+  // (FILM_META in ExplorerFilm.tsx, held to the film's file by a test); the
+  // body is every frame's caption at both reading levels, with its verse, so
+  // the film reads in full before the script arrives.
+  {
+    const d = readJsonSafe("client/public/explorer/index.json");
+    let n = 0;
+    for (const fs0 of (d?.films || []).filter((x) => x.status === "finished")) {
+      const f = readJsonSafe(`client/public/explorer/films/${fs0.slug}.json`);
+      if (!f) continue;
+      const route = `/study/explorer/watch/${f.slug}`;
+      const title = `${f.title}: Bible Explorer`;
+      const head = buildHead({
+        title,
+        description: f.line.older,
+        url: `${SITE_URL}${route}`,
+        image: ogImageUrl(title),
+        type: "article",
+        schemas: [breadcrumbSchema([{ name: "Home", path: "" }, { name: "Bible Explorer", path: "/study/explorer" }, { name: f.title, path: route }])],
+      });
+      const frame = (fr, i) =>
+        `<li><h3>${i + 1}. ${escapeHtml(fr.name)}</h3><p>${escapeHtml(fr.younger)}</p><p>${escapeHtml(fr.older)}</p>${fr.verse ? `<blockquote>${escapeHtml(fr.verse.text)} <strong>${escapeHtml(fr.verse.ref)}</strong></blockquote>` : ""}</li>`;
+      const body = article([
+        `<p class="pre-eyebrow"><a href="/study/explorer">Bible Explorer</a></p>`,
+        `<h1>${escapeHtml(f.title)}</h1>`,
+        `<p class="pre-subtitle">${escapeHtml(f.line.younger)}</p>`,
+        sec(`A moving picture in ${f.frames.length} parts`, `<ol>\n${f.frames.map(frame).join("\n")}\n</ol>`),
+        sec("Think about it", `<p>${escapeHtml(f.think.younger)}</p><p>${escapeHtml(f.think.older)}</p>`),
+        f.differ ? sec("Where churches differ", `<p>${escapeHtml(f.differ.text)} ${f.differ.links.map((l) => `<a href="${escapeHtml(l.href)}">${escapeHtml(l.label)}</a>`).join(" and ")}.</p>`) : "",
+        sec("Where the Bible says it", `<ul>${(f.read || []).map((r) => `<li><a href="${escapeHtml(r.href)}">${escapeHtml(r.label)}</a></li>`).join("")}</ul>`),
+        `<p><a href="/study/explorer#watch">Everything in Watch and learn</a></p>`,
+      ]);
+      writeRoute(template, { path: route }, head, body);
+      wrote++;
+      n++;
+    }
+    console.log(`[prerender] wrote ${n} Bible Explorer moving pictures`);
   }
 
   const studyBible = prerenderStudyBible(template);

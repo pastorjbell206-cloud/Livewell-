@@ -79,10 +79,67 @@ export interface Card {
   deeper?: Link[];
 }
 
+// ── Watch and learn: the moving pictures ─────────────────────────────────
+
+/** The four groups the moving pictures are listed under, in this order. */
+export type FilmGroup = "story" | "ideas" | "beliefs" | "questions";
+
+/** A moving picture as the map lists it (index.json, from films.json and each film's file). */
+export interface FilmSummary {
+  slug: string;
+  title: string;
+  group: FilmGroup;
+  status: "finished" | "coming";
+  line?: Leveled;
+  frames?: number;
+  /** The stops and "Why we believe" cards it belongs to. */
+  stops?: string[];
+  cards?: string[];
+}
+
+export interface FilmGroupInfo {
+  id: FilmGroup;
+  name: string;
+  line: string;
+}
+
+/** One frame of a moving picture: one drawing state and its caption at both levels. */
+export interface FilmFrame extends Leveled {
+  id: string;
+  /** A short name for the frame, on its dot. */
+  name: string;
+  /** What the picture shows once this frame has finished moving (read by a screen reader, and true with motion off). */
+  still: string;
+  verse?: { ref: string; text: string };
+}
+
+export interface Film {
+  slug: string;
+  title: string;
+  group: FilmGroup;
+  status: "finished";
+  line: Leveled;
+  /** What the poster shows before Play. */
+  poster: string;
+  frames: FilmFrame[];
+  think: Leveled;
+  read: Link[];
+  stops: string[];
+  cards: string[];
+  /** Where churches differ, said plainly, with where to read more. */
+  differ?: { text: string; links: Link[] };
+  care?: string;
+  deeper?: Link[];
+  /** Where the film sends the reader when it ends. */
+  end: Link;
+}
+
 export interface ExplorerIndex {
   stops: StopSummary[];
   threads: Thread[];
   cards: Card[];
+  filmGroups?: FilmGroupInfo[];
+  films?: FilmSummary[];
 }
 
 export interface TapSpot {
@@ -238,6 +295,35 @@ export const fetchExplorerIndex = () =>
   fetchJson("/explorer/index.json", isExplorerIndex);
 export const fetchStop = (slug: string) =>
   fetchJson(`/explorer/stops/${encodeURIComponent(slug)}.json`, isStop);
+
+export function isFilm(x: unknown): x is Film {
+  return (
+    isObj(x) &&
+    typeof x.slug === "string" &&
+    typeof x.title === "string" &&
+    Array.isArray(x.frames) &&
+    x.frames.length > 0 &&
+    isObj(x.line)
+  );
+}
+
+export const WATCH_PATH = `${EXPLORER_PATH}/watch`;
+export const filmHref = (slug: string) => `${WATCH_PATH}/${slug}`;
+export const fetchFilm = (slug: string) =>
+  fetchJson(`/explorer/films/${encodeURIComponent(slug)}.json`, isFilm);
+
+/** The finished moving pictures that belong to a stop or a card, in the map's order. */
+export function filmsFor(
+  index: ExplorerIndex | undefined | null,
+  where: { stop?: string; card?: string }
+): FilmSummary[] {
+  return (index?.films ?? []).filter(
+    f =>
+      f.status === "finished" &&
+      ((where.stop && f.stops?.includes(where.stop)) ||
+        (where.card && f.cards?.includes(where.card)))
+  );
+}
 
 // ── Threads ───────────────────────────────────────────────────────────────
 

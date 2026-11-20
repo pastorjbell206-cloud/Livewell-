@@ -8,7 +8,9 @@
  * we believe" cards are client/public/explorer/cards.json. The map loads one
  * small file, client/public/explorer/index.json, written here: every stop's
  * number, title, act, status and one-line summary at both reading levels,
- * the threads, and the cards. A stop's page loads its own file.
+ * the threads, the cards, and the moving pictures of "Watch and learn"
+ * (films.json, with each finished film's line from films/<slug>.json). A
+ * stop's page and a film's page load their own files.
  *
  * The act names come from the site's storyline (the eleven acts of the
  * Bible's Story, client/public/theology/biblical-theology-storyline.json), so
@@ -60,12 +62,32 @@ export function buildIndex() {
     });
   const { threads } = read(path.join(DIR, "threads.json"));
   const { cards } = read(path.join(DIR, "cards.json"));
+  // Watch and learn: every planned moving picture (films.json); a finished
+  // one adds its line, its number of frames and where it belongs from its
+  // own file (films/<slug>.json).
+  const catalogue = read(path.join(DIR, "films.json"));
+  const films = catalogue.films.map(f => {
+    if (f.status !== "finished") return f;
+    const file = path.join(DIR, "films", `${f.slug}.json`);
+    if (!fs.existsSync(file))
+      throw new Error(`film ${f.slug} is finished but has no films/${f.slug}.json`);
+    const film = read(file);
+    return {
+      ...f,
+      line: film.line,
+      frames: film.frames.length,
+      stops: film.stops,
+      cards: film.cards,
+    };
+  });
   return {
     about:
-      "Written by scripts/build-explorer-index.mjs from client/public/explorer/stops, threads.json and cards.json. Do not edit by hand.",
+      "Written by scripts/build-explorer-index.mjs from client/public/explorer/stops, threads.json, cards.json, films.json and films/. Do not edit by hand.",
     stops,
     threads,
     cards,
+    filmGroups: catalogue.groups,
+    films,
   };
 }
 

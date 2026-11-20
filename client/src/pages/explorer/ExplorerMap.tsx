@@ -31,6 +31,7 @@ import { LoadFailed } from "@/components/LoadFailed";
 import { VerseRef } from "@/components/VerseRef";
 import {
   fetchExplorerIndex,
+  filmsFor,
   stopHref,
   isBrokenState,
   threadStops,
@@ -45,7 +46,9 @@ import {
 } from "@/lib/explorer";
 import { HeadArt, MangerArt, Roundel } from "./art";
 import { LevelSwitch, ThreadIcon } from "./parts";
+import { Watch, WatchLinks } from "./Watch";
 import "./explorer.css";
+import "./films/film.css";
 
 /** Where each roundel sits across the road's column, in percent: a gentle S down the page. */
 const SWAY = [32, 68];
@@ -243,7 +246,16 @@ export default function ExplorerMap() {
         </div>
       </section>
 
-      {data && <Believe cards={data.cards} stops={data.stops} level={level} />}
+      {data && <Watch index={data} level={level} />}
+
+      {data && (
+        <Believe
+          cards={data.cards}
+          stops={data.stops}
+          level={level}
+          index={data}
+        />
+      )}
 
       <section
         className="ex-sec ex-sec--warm"
@@ -503,10 +515,12 @@ function Believe({
   cards,
   stops,
   level,
+  index,
 }: {
   cards: Card[];
   stops: StopSummary[];
   level: Level;
+  index: ExplorerIndex;
 }) {
   const ready = cards.filter(c => c.status === "finished");
   const soon = cards.filter(c => c.status !== "finished");
@@ -584,6 +598,12 @@ function Believe({
                     );
                   })}
                 </ul>
+                {filmsFor(index, { card: c.id }).length > 0 && (
+                  <>
+                    <h4>Watch and learn</h4>
+                    <WatchLinks index={index} card={c.id} />
+                  </>
+                )}
                 {c.deeper && c.deeper.length > 0 && (
                   <>
                     <h4>

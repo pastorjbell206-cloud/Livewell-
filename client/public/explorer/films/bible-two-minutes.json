@@ -1,0 +1,126 @@
+{
+  "slug": "bible-two-minutes",
+  "title": "The whole Bible in two minutes",
+  "group": "story",
+  "status": "finished",
+  "line": {
+    "younger": "The whole Bible as one story, from the garden to the city, in nine pictures.",
+    "older": "The whole story of the Bible, from creation to the new creation, drawn as one road in nine pictures."
+  },
+  "poster": "A road winds in three rows from the top left to the bottom right, with a faint ring for each stop along it. On the right are a tree in a garden and a city gate: the first stop and the last.",
+  "frames": [
+    {
+      "id": "made",
+      "name": "Made good",
+      "still": "The road begins at the top left, and the first stop stands on it: a tree in a garden. The same tree is shown large on the right.",
+      "younger": "God made everything out of nothing, and he made people to know him and to take care of his world.",
+      "older": "Before anything else, there is God. He speaks the world into being, calls it good, and makes people in his image to care for it under him.",
+      "verse": {
+        "ref": "Genesis 1:31",
+        "text": "And God looked upon all that He had made, and indeed, it was very good."
+      }
+    },
+    {
+      "id": "broken",
+      "name": "Broken",
+      "still": "The road goes on to the second stop: a garden gate with a sword across it, the way back shut. It is shown large on the right.",
+      "younger": "The first people did not trust God and did what he told them not to do. Sin and sadness came into the world, but God kept caring for them.",
+      "older": "Adam and Eve reach for what God withheld, and the damage spreads: shame, blame, murder, the flood, a tower built to reach the sky. God judges, and he keeps showing mercy."
+    },
+    {
+      "id": "promise",
+      "name": "A promise",
+      "still": "The third stop appears: a tent under the stars. God promised Abraham a family as many as the stars.",
+      "younger": "God chose Abraham and promised him a family as many as the stars, a land to live in, and a blessing for the whole world.",
+      "older": "God answers a scattered world by calling one man and making him a promise: a people, a land, and a blessing that will reach every family on earth.",
+      "verse": {
+        "ref": "Genesis 12:3",
+        "text": "and all the families of the earth will be blessed through you."
+      }
+    },
+    {
+      "id": "rescued",
+      "name": "Rescued and given God's law",
+      "still": "The road turns down and back. Two stops appear: a path through walls of water, and the mountain with the two tablets of the law.",
+      "younger": "Abraham's family became slaves in Egypt. God set them free on the night of the Passover and led them through the sea. At a mountain called Sinai he gave them his good laws and a tent where he would live among them.",
+      "older": "Abraham's family has become a nation of slaves. God hears them, spares them by the blood of a lamb, and opens a road through the sea. At Sinai he makes a covenant with Israel, gives the law, and has them build the tabernacle so that he can dwell among them.",
+      "verse": {
+        "ref": "Exodus 20:2",
+        "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery."
+      }
+    },
+    {
+      "id": "kingdom",
+      "name": "A land and a king",
+      "still": "Two more stops along the middle row: a sheaf of grain in the land, and a crown.",
+      "younger": "God brought his people into the land he had promised. They kept forgetting him, and he kept sending leaders to rescue them. Then God gave Israel kings, and he promised David that a king from his family would rule for ever.",
+      "older": "God keeps his word and gives the land, but the people keep turning away, and each time round it gets worse. Israel asks for a king. Saul fails; David loves God and fails badly too; and God promises him a son whose kingdom will never end.",
+      "verse": {
+        "ref": "2 Samuel 7:16",
+        "text": "Your house and kingdom will endure forever before Me, and your throne will be established forever."
+      }
+    },
+    {
+      "id": "exile",
+      "name": "Exile, and promises in the dark",
+      "still": "The road reaches the end of the middle row and turns down. Two stops appear: harps hung in a willow by a river, and a wall being built again with a lamp above it.",
+      "younger": "The people stopped listening to God, and they were taken far from home. Prophets promised that God would not give up on them. Some came home and rebuilt, and then they waited a long time for God's promised king.",
+      "older": "The kingdom splits, its kings lead the people to idols, and the prophets call them back. They will not come, and Babylon burns Jerusalem. Yet the prophets promise a new covenant and a coming king. Some exiles return and rebuild, but no son of David sits on the throne, and the Old Testament ends looking ahead.",
+      "verse": {
+        "ref": "Jeremiah 31:33",
+        "text": "I will put My law in their minds and inscribe it on their hearts. And I will be their God, and they will be My people."
+      }
+    },
+    {
+      "id": "jesus",
+      "name": "Jesus comes, dies and rises",
+      "still": "Along the bottom row two stops appear: a boat on the Sea of Galilee, and a hill with a cross beside an open tomb with its stone rolled away.",
+      "younger": "God the Son was born as a baby named Jesus. He healed people, taught about God's kingdom, and showed what God is like. Jesus died on a cross to take away the sin of the world. On the third day God raised him from the dead. He is alive.",
+      "older": "God keeps his promises in person. Jesus announces that God's kingdom has come near, heals and forgives, and speaks with an authority that belongs to God alone. He dies on a Roman cross at Passover, carrying the sin of the world, and on the third day God raises him bodily from the dead.",
+      "verse": {
+        "ref": "1 Corinthians 15:3-4",
+        "text": "that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures"
+      }
+    },
+    {
+      "id": "church",
+      "name": "The Spirit, and the church",
+      "still": "The next stop appears: a flame. The road runs on toward the end.",
+      "younger": "Jesus went back to his Father and sent the Holy Spirit. His followers told the good news about Jesus to people everywhere.",
+      "older": "Fifty days after Passover the Spirit comes. The church begins in Jerusalem and spreads, Jews and Gentiles together, until the news of Jesus reaches Rome.",
+      "verse": {
+        "ref": "Acts 1:8",
+        "text": "and you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
+      }
+    },
+    {
+      "id": "new",
+      "name": "All things new",
+      "still": "The road is finished. The last stop appears at the end: the city with its gate open and a tree of life beside it. Every stop now stands on the road, from the garden to the city.",
+      "younger": "One day Jesus will come back and make everything new. God will live with his people, and there will be no more crying or pain.",
+      "older": "The story ends where it began, with God and his people together, in a garden that has become a city. Jesus returns, death is undone, and God makes his home with people for ever.",
+      "verse": {
+        "ref": "Revelation 21:5",
+        "text": "Behold, I make all things new."
+      }
+    }
+  ],
+  "think": {
+    "younger": "The road starts in a garden and ends in a city. What stays the same from the first stop to the last?",
+    "older": "Where would you put yourself on this road? What has already happened, and what are Christians still waiting for?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Genesis 12", "href": "/study/bible/genesis/12" },
+    { "label": "Luke 24", "href": "/study/bible/luke/24" },
+    { "label": "Revelation 21", "href": "/study/bible/revelation/21" }
+  ],
+  "stops": ["creation", "new-creation"],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "The Bible's story in eleven parts", "href": "/study/bible/story" },
+    { "label": "The whole map", "href": "/study/explorer" }
+  ],
+  "end": { "label": "Start at stop 1: Creation", "href": "/study/explorer/creation" }
+}

@@ -1,5 +1,5 @@
 {
-  "about": "Written by scripts/build-explorer-index.mjs from client/public/explorer/stops, threads.json and cards.json. Do not edit by hand.",
+  "about": "Written by scripts/build-explorer-index.mjs from client/public/explorer/stops, threads.json, cards.json, films.json and films/. Do not edit by hand.",
   "stops": [
     {
       "slug": "creation",
@@ -513,6 +513,278 @@
     {
       "id": "life-to-come",
       "title": "The life to come",
+      "status": "coming"
+    }
+  ],
+  "filmGroups": [
+    {
+      "id": "story",
+      "name": "The big story",
+      "line": "The whole Bible from beginning to end."
+    },
+    {
+      "id": "ideas",
+      "name": "Big ideas",
+      "line": "Themes that run from the first page to the last."
+    },
+    {
+      "id": "beliefs",
+      "name": "What we believe",
+      "line": "What Christians everywhere confess, and where the Bible says it."
+    },
+    {
+      "id": "questions",
+      "name": "Good questions",
+      "line": "Honest questions children ask, answered from the Bible."
+    }
+  ],
+  "films": [
+    {
+      "slug": "bible-two-minutes",
+      "title": "The whole Bible in two minutes",
+      "group": "story",
+      "status": "finished",
+      "line": {
+        "younger": "The whole Bible as one story, from the garden to the city, in nine pictures.",
+        "older": "The whole story of the Bible, from creation to the new creation, drawn as one road in nine pictures."
+      },
+      "frames": 9,
+      "stops": [
+        "creation",
+        "new-creation"
+      ],
+      "cards": []
+    },
+    {
+      "slug": "sixty-six-books",
+      "title": "How the 66 books fit together",
+      "group": "story",
+      "status": "coming"
+    },
+    {
+      "slug": "holy-spirit",
+      "title": "The Holy Spirit through the Bible",
+      "group": "ideas",
+      "status": "finished",
+      "line": {
+        "younger": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force.",
+        "older": "From the waters of Genesis 1 to the last invitation of Revelation 22, in eight pictures. The Holy Spirit is God, a person, not a force."
+      },
+      "frames": 8,
+      "stops": [
+        "church"
+      ],
+      "cards": [
+        "spirit"
+      ]
+    },
+    {
+      "slug": "god-with-his-people",
+      "title": "God with his people",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "the-king",
+      "title": "The king",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "covenant",
+      "title": "Promises that build: the covenants",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "the-lamb",
+      "title": "Sacrifice and the Lamb",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "exile-and-home",
+      "title": "Exile and coming home",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "all-nations",
+      "title": "A blessing for all nations",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "kingdom-of-god",
+      "title": "The kingdom of God",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "light-and-darkness",
+      "title": "Light and darkness",
+      "group": "ideas",
+      "status": "coming"
+    },
+    {
+      "slug": "who-god-is",
+      "title": "Who God is",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "image-of-god",
+      "title": "Creation and the image of God",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "what-sin-is",
+      "title": "What sin is",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "who-jesus-is",
+      "title": "Who Jesus is",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "why-jesus-died",
+      "title": "Why Jesus died",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "the-resurrection",
+      "title": "The resurrection",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "how-salvation-works",
+      "title": "How salvation works",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "spirit-in-a-believer",
+      "title": "The Holy Spirit in a believer",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "the-church",
+      "title": "What the church is",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "baptism-and-supper",
+      "title": "Baptism and the Lord's Supper",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "the-bible",
+      "title": "The Bible: how we got it, and why trust it",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "prayer",
+      "title": "Prayer",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "life-to-come",
+      "title": "The life to come",
+      "group": "beliefs",
+      "status": "coming"
+    },
+    {
+      "slug": "who-made-god",
+      "title": "Who made God?",
+      "group": "questions",
+      "status": "finished",
+      "line": {
+        "younger": "A real question, taken seriously, in six pictures: everything we know came from something, so where did God come from?",
+        "older": "A child's honest question, taken seriously in six pictures: why anything is here at all, and why the Bible says God has no beginning."
+      },
+      "frames": 6,
+      "stops": [
+        "creation"
+      ],
+      "cards": [
+        "god"
+      ]
+    },
+    {
+      "slug": "why-cant-i-see-god",
+      "title": "Why can't I see God?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "why-bad-things-happen",
+      "title": "Why do bad things happen?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "is-the-bible-true",
+      "title": "Is the Bible true?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "did-jesus-come-back-to-life",
+      "title": "Did Jesus really come back to life?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "when-we-die",
+      "title": "What happens when we die?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "so-many-churches",
+      "title": "Why are there so many churches?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "never-heard",
+      "title": "What about people who never heard?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "temple-destroyed",
+      "title": "Why did God let his temple be destroyed?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "love-when-i-do-wrong",
+      "title": "Does God still love me when I do wrong?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "god-silent",
+      "title": "Why does God seem silent sometimes?",
+      "group": "questions",
+      "status": "coming"
+    },
+    {
+      "slug": "science-and-the-bible",
+      "title": "Are science and the Bible enemies?",
+      "group": "questions",
       "status": "coming"
     }
   ]

@@ -337,6 +337,9 @@ function manifestPages() {
     if (fs.existsSync("client/public/explorer/index.json"))
       for (const st of JSON.parse(fs.readFileSync("client/public/explorer/index.json", "utf8")).stops)
         if (st.status === "finished") pages.push({ url: `/study/explorer/${st.slug}`, priority: "0.7", changefreq: "monthly" });
+    if (fs.existsSync("client/public/explorer/index.json"))
+      for (const f of JSON.parse(fs.readFileSync("client/public/explorer/index.json", "utf8")).films || [])
+        if (f.status === "finished") pages.push({ url: `/study/explorer/watch/${f.slug}`, priority: "0.7", changefreq: "monthly" });
     pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides/whole-story-2027", priority: "0.8", changefreq: "monthly" });
