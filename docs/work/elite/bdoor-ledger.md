@@ -12529,3 +12529,28 @@ Added by the brief: no people living today is Amalek, and the passage permits no
 | Deuteronomy 1:13; Hebrews 7:25 | 24-27 | BSB | BSB text |
 
 Cut before publishing: a gloss on the meaning of Eliezer (not in the repository's notes; the BSB's own explanation used instead).
+
+## The plain notes on Exodus 19 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sign of 3:12 fulfilled; nearly a year at the mountain | 1-2 | exodus/19.json `story` | Repository |
+| Sinai's place: Jebel Musa since at least the fourth century and Saint Catherine's; Jebel Serbal, northern Sinai near Kadesh, northwest Arabia; no confirmation; only Elijah sent there later | 1-2 | exodus/19.json `historical` | Repository; no side |
+| Shavuot and the gift of the Torah | 1-2 | exodus/19.json `historical` | Repository |
+| 1 Kings 19:8; Galatians 4:25 and the loose use of ‘Arabia’ | 1-2 | BSB; exodus/19.json `historical` | Repository |
+| The covenant in miniature: done, asked, promised; ‘to Myself’ | 3-6 | exodus/19.json `literary`, `story` | Repository |
+| Segullah as a king's treasure (1 Chronicles 29:3); ‘the whole earth is Mine’; a kingdom of priests | 3-6 | exodus/19.json `cultural`, `story` | Repository |
+| Deuteronomy 32:11; 1 Peter 2:9; Revelation 5:10; Romans 11:29 (the 1 Peter 2 note's pointer) | 3-6 | BSB; exodus/19.json `christ`; 1-peter/plain/2.json | BSB text |
+| Moses as go-between before any law; no form of God described | 7-9 | exodus/19.json `literary` | Repository |
+| Exodus 24:3; Deuteronomy 4:12 | 7-9 | BSB | BSB text |
+| Washing, boundary, abstaining; Leviticus 15:18; holiness and the boundary of life and death; the shofar | 10-15 | exodus/19.json `cultural` | Repository |
+| Why God is dangerous to approach: holiness like fire; the boundary a mercy; reverence or distance; 24:9-11 | 10-15 | exodus/19.json `hard` | Repository; no side |
+| 1 Samuel 21:4-5; Hebrews 12:20 | 10-15 | BSB | BSB text |
+| The theophany's signs; the bush and the mountain; volcanic peaks proposed by Arabia's advocates | 16-19 | exodus/19.json `literary`, `historical` | Repository |
+| Hebrews 12:18-19, 24; Acts 2:2-3 (an echo Luke does not draw) | 16-19 | BSB; exodus/19.json `christ` | BSB text |
+| ‘Break through’ and ‘break out’ the same root | 20-25 | BSB; exodus/19.json `hard` | Repository |
+| Leviticus 10:1-2; Hebrews 12:28-29 | 20-25 | BSB | BSB text |
+
+Cut before publishing: a guess about who the ‘priests’ of verses 22 and 24 were before the priesthood was set up (not in the repository's notes).
