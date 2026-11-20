@@ -584,7 +584,27 @@
       "slug": "god-with-his-people",
       "title": "God with his people",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "From the first page to the last, God wants to live with his people. Follow one light from place to place, in nine pictures.",
+        "older": "One light, followed from a garden to a tent, a temple, a person, a people and a whole new world: the Bible's long answer to whether God can live with his people."
+      },
+      "mark": "god-with-his-people",
+      "frames": 9,
+      "stops": [
+        "sinai",
+        "creation",
+        "fall",
+        "kingdom",
+        "exile",
+        "jesus",
+        "cross",
+        "church",
+        "new-creation"
+      ],
+      "cards": [
+        "spirit"
+      ]
     },
     {
       "slug": "the-king",
@@ -630,9 +650,24 @@
     },
     {
       "slug": "who-god-is",
-      "title": "Who God is",
+      "title": "Who God is: Father, Son and Holy Spirit",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "There is one God, the Father, the Son, and the Holy Spirit. Eight pictures of what the Bible shows, and why every other picture breaks.",
+        "older": "One God in three persons: what the Bible shows, why the usual pictures break, and why the church kept the Bible's words instead. In eight pictures."
+      },
+      "mark": "who-god-is",
+      "frames": 8,
+      "stops": [
+        "jesus",
+        "church"
+      ],
+      "cards": [
+        "god",
+        "jesus",
+        "spirit"
+      ]
     },
     {
       "slug": "image-of-god",
@@ -654,9 +689,22 @@
     },
     {
       "slug": "why-jesus-died",
-      "title": "Why Jesus died",
+      "title": "Why did Jesus die?",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "What happened on the cross, and the Bible's own pictures of what it did for us, in eight pictures.",
+        "older": "What happened at the cross, and six pictures the Bible itself uses for what it did, held together, in eight moving pictures."
+      },
+      "mark": "why-jesus-died",
+      "frames": 8,
+      "stops": [
+        "cross"
+      ],
+      "cards": [
+        "cross",
+        "jesus"
+      ]
     },
     {
       "slug": "the-resurrection",
@@ -668,7 +716,22 @@
       "slug": "how-salvation-works",
       "title": "How salvation works",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "The good news of Jesus in nine pictures: what went wrong between people and God, what God did about it, and the new life he gives.",
+        "older": "The gospel in nine pictures: made for God, broken from him, and brought back by God's own act in Christ, a gift received by faith."
+      },
+      "mark": "how-salvation-works",
+      "frames": 9,
+      "stops": [
+        "cross",
+        "fall",
+        "new-creation"
+      ],
+      "cards": [
+        "cross",
+        "sin"
+      ]
     },
     {
       "slug": "spirit-in-a-believer",

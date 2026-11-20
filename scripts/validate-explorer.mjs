@@ -510,6 +510,8 @@ for (const c of cards) {
     path.join(ROOT, "client/src/pages/explorer/films/scenes/index.ts"),
     "utf8"
   );
+  const artSrc = fs.readFileSync(path.join(ROOT, "client/src/pages/explorer/art.tsx"), "utf8");
+  const filmEmblems = new Set([...artSrc.matchAll(/^  "?([a-z0-9-]+)"?: h => \(/gm)].map(m => m[1]));
   const cardIdsAll = new Set(read(path.join(DIR, "cards.json")).cards.map(c => c.id));
   const seen = new Set();
   for (const f of filmCatalogue.films ?? []) {
@@ -545,8 +547,10 @@ for (const c of cards) {
     textRules(fw, film);
     levelPair(`${fw} line`, film.line, 240);
     if (!film.poster) fail(fw, "needs what the poster shows");
-    if (film.mark !== "road" && !slugs.has(film.mark))
-      fail(fw, `mark "${film.mark}" must be "road" or a stop's slug (its roundel)`);
+    // A film's small picture: the map's road, a stop's roundel, or the film's
+    // own emblem in art.tsx (keyed by the film's slug).
+    if (film.mark !== "road" && !slugs.has(film.mark) && !(film.mark === film.slug && filmEmblems.has(film.slug)))
+      fail(fw, `mark "${film.mark}" must be "road", a stop's slug, or the film's own slug with an emblem in art.tsx`);
     const frames = film.frames ?? [];
     if (frames.length < 5 || frames.length > 9)
       fail(fw, `has ${frames.length} frames; a moving picture has 5 to 9`);
