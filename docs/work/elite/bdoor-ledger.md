@@ -8557,3 +8557,34 @@ Two searches (Latter-day Saint baptism for the dead; Menander). Scripture is the
 | Grief care line; Find Help | 50-58 | Site care form | Repository |
 
 Cut: Theodotion and the Septuagint wording at 15:54; the claim that women's testimony carried little weight; a Roman citizen rarely condemned to the beasts; Chrysostom on the Marcionites; Wright and Martin by name.
+
+## The plain notes on 1 Corinthians 16 (2026-11-20)
+
+One search (marana tha). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The collection for Jerusalem's poor from Galatia, Macedonia, Achaia; Galatians 2:10; Romans 15:26 | 1-4 | BSB; deep note `historical` | BSB text |
+| First day of the week; Acts 20:7; pointer to the Acts 20 note | 1-4 | Acts 20 plain note | Repository |
+| Giving regular, planned, proportionate; no tithe rule; 2 Corinthians 8:12; 9:7; pointer to the Genesis 14 note's two views | 1-4 | BSB; Genesis 14 plain note | Repository |
+| Deuteronomy 15:11; Proverbs 19:17; Deuteronomy 16:10, 17 (Feast of Weeks) | 1-4 | BSB | BSB text |
+| Ephesus in the province of Asia; two years (Acts 19:10); the riot (Acts 19:23-41); Timothy sent (Acts 19:22); Pentecost fifty days (Leviticus 23:16) | 5-12 | BSB; book page | BSB text |
+| Plans changed (2 Corinthians 1:15-16) | 5-12 | BSB | BSB text |
+| Proverbs 19:21 | 5-12 | BSB | BSB text |
+| Stephanas baptized by Paul (1:16); Achaia's capital Corinth (seat of the governor) | 13-18 | BSB; book page ledger | Ledger |
+| Stephanas and the others may have carried the letters; Paul does not say | 13-18 | Book page (16:17) | Stated as uncertain |
+| Deuteronomy 31:6; Joshua 1:9; Psalm 27:14; Leviticus 19:18 | 13-18 | BSB | BSB text |
+| Aquila and Prisca from Italy after Claudius's order (Acts 18:2); church in their house | 19-24 | BSB; Acts 18 plain note | BSB text |
+| Holy kiss among family and friends; 1 Peter 5:14; Romans 16:16 | 19-24 | Deep note `cultural`; BSB | Repository |
+| Letters dictated; closing line in the author's hand (16:21, quoted before the BSB's dash) | 19-24 | wrom-ledger (Tertius; Galatians 6:11) | Ledger |
+| Anathema: handed over to God's judgment; Galatians 1:8; Joshua 7:1; Deuteronomy 7:26 | 19-24 | BSB; repository Greek (16:22) | BSB text; script |
+| Marana tha Aramaic; two divisions (marana tha ‘Our Lord, come’; maran atha ‘Our Lord has come’); most read a prayer; also in the Didache | 19-24 | Lexicons and reference works | Search: biblehub.com Greek 3134; biblicaltraining.org "Maranatha"; encyclopedia.com; apol-ledger row on 16:22 (Bird, Theology of Work) |
+| Addressed to Jesus as Lord; a very early witness to worship of Jesus | 19-24 | apol-ledger (given as an inference) | Ledger |
+| Verse 22 may echo words used in worship; uncertain | 19-24 | Search above (liturgical use) | Stated as uncertain |
+| Numbers 6:24-25; Revelation 22:20 | 19-24 | BSB | BSB text |
+
+Cut: winter sailing (deep note; not checked); the Didache's place for the prayer (at the Supper) not stated; the Septuagint background of anathema.
+
+## 1 Corinthians complete (2026-11-20)
+
+All sixteen chapters of 1 Corinthians are in plain words. Every chapter note carries `"plain": true`.
