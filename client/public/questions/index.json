@@ -69,6 +69,13 @@
           "blurb": "Where the King James's Greek text came from, the verses one by one, and the case for the traditional text stated with respect.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "lost-in-translation",
+          "question": "The Bible has been translated so many times. Hasn't the meaning been lost along the way?",
+          "blurb": "How English Bibles are made, why they differ, what translation loses, and how a reader can find it.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -282,6 +289,16 @@
       "area": "text",
       "slug": "king-james-and-the-missing-verses",
       "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
+      "live": false
+    },
+    {
+      "claim": "Most modern English Bibles explain the text instead of translating it",
+      "proponent": "Robert Alter",
+      "work": "The Art of Bible Translation",
+      "year": 2019,
+      "area": "text",
+      "slug": "lost-in-translation",
+      "question": "The Bible has been translated so many times. Hasn't the meaning been lost along the way?",
       "live": false
     }
   ],

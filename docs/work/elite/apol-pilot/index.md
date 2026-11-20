@@ -23,6 +23,7 @@ The case these pages make is a modest one, and it is meant to be. They don't cla
 5. **Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?** The famous comparison with corrected figures, and the one question it answers.
 6. **Who decides what the Greek New Testament says, and was there ever a single original to find?** How a critical edition is made, step by step, and the serious question about the word "original".
 7. **Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?** Where the King James's Greek text came from, the verses one by one, and the case for the traditional text stated with respect.
+8. **The Bible has been translated so many times. Hasn't the meaning been lost along the way?** How English Bibles are made, why they differ, what translation loses, and how a reader can find it.
 
 ## Words these pages use
 
