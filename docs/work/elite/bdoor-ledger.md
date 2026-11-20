@@ -12192,3 +12192,28 @@ Cut before publishing: Har Karkom and Jebel al-Lawz by name; the Shasu of Yhw an
 | Genesis 50:24; Psalm 105:26; Hebrews 3:5-6 | 27-31 | BSB | BSB text |
 
 Cut before publishing: the Saqqara relief; the names of the pharaohs on each date (on the book page); Eliezer's name; the reading of halevi as pointing to the priesthood.
+
+## The plain notes on Exodus 5 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Pharaoh as son of the sun god and living Horus; many gods; the slave people's god unknown to him | 1-5 | exodus/5.json `cultural` | Repository |
+| The question of the plague chapters; ‘know that I am the LORD’ | 1-5 | exodus/5.json `story`, `literary` | Repository |
+| Chagag, the verb of the pilgrim feasts (23:14-17); worship as going and sacrificing; chapter 8 explains | 1-5 | exodus/5.json `cultural` | Repository |
+| The three-day request: modest first demand; true as far as it went; held back the plan, like the midwives | 1-5 | exodus/5.json `hard` | Repository; no side |
+| Exodus 7:5; 23:14; Romans 9:17 | 1-5 | BSB | BSB text |
+| Mud brick with straw; stone for temples and tombs; brick quotas in New Kingdom records | 6-14 | exodus/5.json `historical` | Repository |
+| Egyptian taskmasters, Israelite foremen, their position | 6-14 | exodus/5.json `historical` | Repository |
+| The two messenger formulas | 6-14 | exodus/5.json `literary` | Repository |
+| Work made heavy so no one thinks of God | 6-14 | exodus/5.json `cultural` | Repository |
+| Leviticus 25:43; Deuteronomy 5:15; Matthew 11:28 (a contrast Exodus does not predict) | 6-14 | BSB; exodus/5.json `christ` | BSB text |
+| ‘Stench’ as being made hateful; Genesis 34:30; the sword in Pharaoh's hand | 15-21 | exodus/5.json `cultural` | Repository |
+| The first rejection of Moses by his people; obedience bringing more suffering first | 15-21 | exodus/5.json `story`, `christ` | Repository |
+| Shoterim as the officers of Numbers 11:16 | 15-21 | exodus/5.json `historical` | Repository |
+| Acts 7:35; John 1:11; Numbers 11:16 | 15-21 | BSB | BSB text |
+| Moses' complaint in the shape of a lament | 22-23 | exodus/5.json `literary` | Repository |
+| Psalm 13:1; Psalm 44:24; Exodus 6:1 | 22-23 | BSB | BSB text |
+
+Cut before publishing: Rekhmire's painting (told in chapter 1); the BSB wording ‘three-day journey’ (paraphrased).
