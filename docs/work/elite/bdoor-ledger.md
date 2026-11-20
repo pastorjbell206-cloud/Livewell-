@@ -7688,3 +7688,54 @@ Cut: "Jewish readers have often read 149 as final justice" (deep note; not verif
 ## The Psalms complete (2026-11-20)
 
 All 150 psalms now have plain notes. Book Five (107 to 150) closed the book.
+
+## Romans's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/romans/intro.json`, field
+`teaching`. 7 searches, run on 2026-11-20. Ancient and modern writers are
+paraphrased unless marked. Scripture is the BSB in the repository, checked
+word for word by `scripts/validate-bible-notes.mjs` and a strict check that
+matches each quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul the author (1:1), agreed by nearly all; Tertius wrote it down (16:22); trained writers common | BSB; repository `author` | Repository |
+| Phoebe of Cenchrea (16:1-2); prostatis used of patrons; "very likely" carried the letter | BSB; wrom-ledger (prostatis; Phoebe as carrier "very likely") | Ledger |
+| Diakonos as servant or the office of deacon; readers differ | Greek text; standard lexicon sense | Stated as a reading question |
+| Doxology placed differently in manuscripts; chapter 16 once argued a separate note; most hold it belongs | Repository `author` | Repository |
+| About AD 57 (a year or two either way), from Corinth; the collection (15:25-26); three months in Greece (Acts 20:2-3); Gaius (16:23; 1 Corinthians 1:14) | Repository `date` | Repository; BSB text |
+| Erastus stone found at Corinth in 1929; identification disputed | wrom-ledger (IKorinthKent 232) | Ledger |
+| Arrest (Acts 21), two years at Caesarea (Acts 24:27), Rome as a prisoner (Acts 28) | BSB | BSB text |
+| Rome's Jewish community and synagogues; founder unknown; house churches (16:5, 14-15) | Repository `setting`, `historical` (Romans 1); Roman-world portrait | Repository; "many readers think" for several house churches |
+| Visitors from Rome at Pentecost | Acts 2:10 | BSB text |
+| Names in Romans 16: Jewish "fellow countrymen", Greek and Latin names, women; households of Aristobulus possibly slaves or freed slaves | BSB; Roman-world portrait ("a list of slaves and freedmen and hosts in Romans 16") | Stated as "may have been" |
+| Suetonius, Claudius 25.4, "Chrestus", most read Christus; AD 49 from Orosius, disputed; Acts 18:2 | wrom-ledger (verified) | Ledger |
+| Return after Claudius's death in 54; the Gentile-led interval and tensions over food and days as a reconstruction | Repository `setting`; brief | Stated as "a reconstruction and not something the letter says" |
+| Paul's reasons (1:10-15; 15:24, 28, 30-31; 3:8; 6:1, 15) and the views of the letter's purpose | BSB; repository `purpose` | Stated as views |
+| Habakkuk before the Babylonian conquest; 2:3 the appointed time; Hebrew 'emunah, steadiness or faithfulness | Repository doctrine study `justification` (ot); BSB | Repository |
+| Romans quotes the Old Testament more than any other letter of Paul | Repository `story` | Repository |
+| Paul quotes the Septuagint | Site guide septuagint-and-scripture | Repository |
+| Romans 8 names the Spirit more than any other chapter of Romans (19 times in the BSB) | BSB | Script count over Romans 1 to 16 |
+| Greek words: euangelion, dikaiosynē, dikaioō, pistis, charis, nomos, sarx, hamartia, pneuma, hilastērion, apolutrōsis, huiothesia, ethnē | Greek text in the repository (Strong's G2098, G1343, G1344, G4102, G5485, G3551, G4561, G266, G4151, G2435, G629, G5206, G1484) | Script |
+| Charis used of a patron's favour | Site guide patronage-and-grace | Repository |
+| "The righteousness of God" read as gift, as God's faithfulness, or both | Repository `themes` | Repository |
+| Lutheran and Reformed (Luther, Calvin); Catholic in Trent's words via the Catechism; 1999 Joint Declaration | Acts 13 plain note (word for word for Trent); repository doctrine study | Repository |
+| Orthodox: salvation as union with God (theosis); justification one picture among many; not cut off from healing in the church's life | Repository doctrine study `justification` (differ[2]) | Search: oca-type and academic summaries (orthodoxchristiantheology.com; modernreformation.org; learntheology.com), consistent; stated generally, no writer named |
+| E. P. Sanders, Paul and Palestinian Judaism (1977); covenantal nomism; James Dunn's 1982 Manson Memorial Lecture "The New Perspective on Paul"; N. T. Wright developed it | Sanders; Dunn | Search: bibleodyssey.com "Origins of the New Perspective on Paul"; Wikipedia "E. P. Sanders"; repository doctrine study. Wright named without a book (no title checked) |
+| Critics: weakens grace against human achievement | Repository doctrine study (differ[3]) | Stated as the critics' view; no names |
+| Pistis Christou; Romans 3:22, 3:26; Galatians 2:16; Philippians 3:9; Richard Hays, The Faith of Jesus Christ (1983); many still hold the traditional reading; some argue the early writers read "faith in" | Hays | Search: crossway.org; bibleodyssey.com "Faith of Christ"; thegospelcoalition.org; firstthings.com. Count of occurrences left vague ("a few times") because sources say seven or eight |
+| BSB 3:25 "atoning sacrifice", footnote "propitiation"; hilastērion the mercy seat in the Greek Old Testament (Exodus 25:17-22); Hebrews 9:5 | BSB; Septuagint | Search: biblestudytools.com BSB 3:25 (footnote "propitiation"); csbible.com on mercy seat |
+| Augustine, 386, a garden in Milan, a child's voice, "take up and read", Romans 13:13-14; Confessions 8.12 | Augustine, Confessions 8.12.29 | Search: christianhistoryinstitute.org "386 Augustine Converts"; christianitytoday.com; wheaton.edu reading guide. Paraphrased; season not given (sources differ) |
+| Luther lectured on Romans 1515-1516; the 1545 preface: hated "righteousness of God" as punishing justice, came to read it as the righteousness by which the just live by faith; date of the insight debated | Luther, Preface to the Latin Writings (1545) | Search: germanhistorydocs.org; pages.uoregon.edu; cambridge.org (Studies in Church History); repository doctrine study. Paraphrased |
+| Wesley, 24 May 1738, Aldersgate Street, Luther's preface to Romans read; "I felt my heart strangely warmed" | Wesley, Journal | facts-ledger (verified); repository doctrine study |
+| Barth's Römerbrief: begun 1916 as a pastor at Safenwil; printed December 1918, dated 1919; second edition rewritten, 1922; Göttingen 1921 | Barth | Search: Wikipedia "The Epistle to the Romans (Barth)"; barth.ptsem.edu; scielo.org.za. "Bombshell on the playground" not quoted (wording varies) |
+| Junia: oldest manuscripts favour the woman's name; "outstanding among" or "well known to" the apostles debated | Scholarship | Search: etsjets.org (Burer, JETS 58.4, 2015); evangelicaltextualcriticism.blogspot.com; Open Theology 2020. No scholar named on the page |
+| Claudius 41-54; Nero 54-68; Gallio about 51-52; fire of Rome July 64 (Tacitus) | wrom-ledger; earlier ledger (Mark, Acts) | Ledgers |
+| "That reading is false, and this site rejects it" | Acts 2 plain note | Repository wording |
+| Map: Corinth, Rome, Jerusalem on the "mediterranean" frame | wmap-ledger coordinates | Ledger. Illyricum not drawn (mostly north of the frame); Spain beyond the frame; both said in `mapNote` |
+
+Left out: Rome's population ("perhaps a million", repository `setting`,
+not checked); Wesley going "unwillingly" (not in the ledger, not searched);
+Calvin's "chief hinge" (not checked); the later churches that joined the
+Joint Declaration (not checked here); Karl Adam's "bombshell" line; the
+count of pistis Christou phrases; who founded the Roman church.
