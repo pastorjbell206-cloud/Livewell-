@@ -22,6 +22,7 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 6. **The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?** Spinoza's seams, Astruc's names and Wellhausen's four sources at full strength, the theory's later revisions, what Jesus and the apostles say of Moses, and the range of Christian views.
 7. **The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?** Marcion in Irenaeus's and Tertullian's report, Dawkins and Harnack, Exodus 34 and its echoes, judgment in Jesus' own teaching, and why the contrast is false and has fed contempt for Jews.
 8. **Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?** Leviticus 19 and Trypho's question at full strength, what the law says it was for, Acts 15, Mark 7 and Hebrews, love as the fulfillment of the law, and the threefold division, new covenant readings and law and gospel, each with its difficulty.
+9. **God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?** Genesis 22 read closely, Kant's objection at full strength, the Akedah as Jewish prayer remembers it, the law's and the prophets' horror of child sacrifice, what the story does and doesn't teach, and why it is never a model for harming anyone.
 
 ## Words these pages use
 
@@ -31,6 +32,7 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 - **Apocalyptic**: a kind of Jewish writing of the last centuries BC, full of visions and symbols, often set in the mouth of a figure from the past; scholars disagree about how much of Daniel belongs to it.
 - **Tell**: a mound built up by a town rebuilt again and again on its own ruins; Tell es-Sultan is ancient Jericho.
 - **Elef**: the Hebrew word usually translated "thousand," which can also name a clan or a military unit.
+- **Akedah**: Hebrew, "binding": the Jewish name for the story of Abraham and Isaac in Genesis 22, read at the New Year.
 - **Documentary hypothesis**: the theory, given its classic form by Julius Wellhausen in 1883, that the first five books were woven from four sources, called J, E, D and P.
 
 ## Where else to look

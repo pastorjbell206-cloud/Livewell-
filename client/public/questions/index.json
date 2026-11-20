@@ -394,6 +394,13 @@
           "blurb": "Leviticus 19 and Trypho's question at full strength, what the law says it was for, Acts 15, Mark 7 and Hebrews, love as the fulfillment of the law, and the threefold division, new covenant readings and law and gospel, each with its difficulty.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "abraham-and-isaac",
+          "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
+          "blurb": "Genesis 22 read closely, Kant's objection at full strength, the Akedah as Jewish prayer remembers it, the law's and the prophets' horror of child sacrifice, what the story does and doesn't teach, and why it is never a model for harming anyone.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1511,6 +1518,26 @@
       "area": "old-testament",
       "slug": "which-old-testament-laws",
       "question": "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?",
+      "live": false
+    },
+    {
+      "claim": "Abraham should have answered that he was certain he ought not to kill his son, but could never be certain that the voice was God's",
+      "proponent": "Immanuel Kant",
+      "work": "The Conflict of the Faculties",
+      "year": 1798,
+      "area": "old-testament",
+      "slug": "abraham-and-isaac",
+      "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
+      "live": false
+    },
+    {
+      "claim": "The binding of Isaac has taught three faiths to honor a father's willingness to sacrifice his child, and should no longer be held up as a model",
+      "proponent": "Carol Delaney",
+      "work": "Abraham on Trial",
+      "year": 1998,
+      "area": "old-testament",
+      "slug": "abraham-and-isaac",
+      "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
       "live": false
     },
     {

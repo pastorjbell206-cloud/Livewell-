@@ -1,0 +1,80 @@
+---
+area: old-testament
+slug: abraham-and-isaac
+status: pending (not on the site; for James to read first)
+question: "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?"
+ledger: docs/work/elite/apol-ledger.md, "Twenty-third run", key "bp"
+---
+
+# God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?
+
+## The short answer
+
+This page weighs a hard story; it is never a model for harming anyone, and anyone who feels pressed to harm a child or themselves in God's name should turn to Find Help (/help) now. Genesis 22 is one of the hardest chapters in the Bible, and the objection, pressed most sharply by Kant, deserves its full weight. But the chapter tells the reader at once that this is a test, God stops the knife, a ram dies in Isaac's place, and the rest of Scripture calls child sacrifice something God "never commanded, nor did it even enter My mind." Jewish tradition remembers the binding of Isaac in its prayers as a plea for mercy; Christians have read it as pointing to the Father who did not spare his own Son. The story teaches trust in God's promise when it seems contradicted. It gives no one permission to harm anyone, and it never has.
+
+## The objection at its strongest
+
+Read the command without the ending. "Take your son," God said, "your only son Isaac, whom you love, and go to the land of Moriah. Offer him there as a burnt offering on one of the mountains, which I will show you" (Genesis 22:2, BSB). Abraham doesn't argue, as he argued for Sodom. He rises early, cuts the wood, walks three days, lets the boy carry the wood for his own burning, binds him, and raises the knife. And the chapter praises him for it.
+
+Immanuel Kant, in *The Conflict of the Faculties* (1798), gave the objection its classic form. Abraham, he wrote, should have answered the voice that he was quite certain he ought not to kill his good son, but not certain, and could never become certain, that the voice speaking to him was God's, even if it sounded from heaven. On Kant's view, as the Study Bible's note on Genesis 22 sums it up, "a command that contradicts the moral law cannot be recognized as divine." Others have pressed the point from history: the anthropologist Carol Delaney, in *Abraham on Trial* (1998), argued, as the Study Bible's note on Genesis 22 summarizes her, that the story has taught Judaism, Christianity and Islam to honor a father's willingness to sacrifice his child, and should no longer be held up as a model. At full strength the objection says that a God who commands such a thing is not good, that a man who obeys it is not admirable, and that a story which praises both is dangerous.
+
+## What is true in it
+
+The command is real in the story, and so is the terror of it. Abraham is praised because, in God's words, "you have not withheld your only son" (Genesis 22:12, 16, BSB), and the New Testament praises him too: "By faith Abraham, when he was tested, offered up Isaac on the altar" (Hebrews 11:17, BSB). No reading that makes the chapter comfortable is honest. Søren Kierkegaard, in *Fear and Trembling* (1843), refused to soften it, and the note on Genesis 22 records that the book "insists on the terror of the story."
+
+Kant is right about something that matters for every reader. People have heard voices commanding terrible things and believed them to be God's, and a faith that cannot tell the difference is a danger to the vulnerable. Any reading of this chapter must make that difference plain, and the Study Bible's note says so directly: "The most dangerous misreading turns the chapter into a model to imitate, as if God might ask any parent to harm a child and faith would mean obeying."
+
+## The evidence
+
+Begin with the chapter itself, read closely. The first words tell the reader what Abraham doesn't know: "Some time later God tested Abraham" (Genesis 22:1, BSB). The narrator never lets the reader think the sacrifice is what God wants. The command names the cost in stages, "your son ... your only son Isaac, whom you love," because everything God had promised Abraham ran through this boy: "through Isaac your offspring will be reckoned" (Genesis 21:12, BSB). So the test is not whether Abraham will do evil but whether he will trust the God who promised when the promise and the command seem to collide. Abraham tells his servants, "The boy and I will go over there to worship, and then we will return to you" (Genesis 22:5, BSB), and tells Isaac, "God Himself will provide the lamb for the burnt offering, my son" (Genesis 22:8, BSB). God stops the knife: "Do not lay a hand on the boy or do anything to him" (Genesis 22:12, BSB). A ram dies "in place of his son," and Abraham names the place "The LORD Will Provide" (Genesis 22:13-14, BSB).
+
+Then the rest of the law and the prophets. Israel's neighbors did sacrifice children: the note on Genesis 22 records Mesha of Moab, who offered his firstborn on the city wall (2 Kings 3:27), and the long debate over the infant burials at Carthage. Israel's law forbade it absolutely: "You must not give any of your children to be sacrificed to Molech" (Leviticus 18:21, BSB); "They even burn their sons and daughters in the fire as sacrifices to their gods" (Deuteronomy 12:31, BSB), as a reason Israel must never worship that way. When kings of Judah did it anyway, the prophets answered for God: "something I never commanded, nor did it even enter My mind" (Jeremiah 7:31, BSB). Micah puts the offering of a firstborn at the extreme of false religion and answers it: "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?" (Micah 6:7-8, BSB). The law claimed every firstborn for God and required that he be redeemed, not killed: "every firstborn of your sons you must redeem" (Exodus 13:13, BSB). The Jewish scholar Jon Levenson argued, as the note records, that this law and the binding of Isaac belong together: God's claim on the beloved son is real, and it is met by substitution and redemption, not by death.
+
+Then the way Jewish tradition holds the story, in its own words. The chapter is called the Akedah, the binding, and it is read at the New Year. In the Talmud, Rabbi Abbahu explains why the ram's horn is blown: "Said the Holy One: blow before me with a ram's horn in order that I remember for you the binding of Isaac son of Abraham, and I will consider it as if you bound yourselves before me" (Rosh Hashanah 16a, in the English text of the Sefaria library). The New Year prayer of remembrance asks, in Simeon Singer's translation of the *Standard Prayer Book* (1915), that "the binding with which Abraham our father bound his son Isaac on the altar appear before thee," recalls how Abraham overbore his compassion to do God's will "with a perfect heart," and prays, "So may thy compassion overbear thine anger against us." And the *Ethics of the Fathers*, in the same prayer book, count it among Abraham's trials: "With ten trials our father Abraham was tried, and he stood firm in them all, to make known how great was the love of our father Abraham." In this tradition the story is remembered as a plea that God will be merciful to Abraham's children, not as a pattern for any father to follow.
+
+Last, what the story does not teach. It does not teach that God wants children harmed: it ends with the knife stopped, and the Scriptures that keep it forbid child sacrifice without exception. It does not teach that hearing a voice is enough to know God's will. And it gives no one, parent, pastor or anyone else, permission to harm anyone. No one should read this chapter as a pattern for harming anyone. If a voice, a vision, a teacher or a sense of calling ever tells you that God wants you to hurt a child, yourself or anyone else, it is not the voice of the God of this chapter, who stopped the knife and later said such a thing never entered his mind. Tell someone you trust today; if a child is in danger, call the police; and the site's Find Help page (/help) lists places to turn now.
+
+## The argument, laid out
+
+This is an argument about what the text says and how it is to be read, not a proof that the event happened as told.
+
+1. The chapter presents the command as a test whose end the reader is told from the start, and it ends with God forbidding the sacrifice and providing a substitute.
+2. The same Scriptures forbid child sacrifice absolutely, and say through Jeremiah that God never commanded it or intended it.
+3. Read within those Scriptures, the story teaches trust in God's promise and his provision of a substitute, and both the Jewish and the Christian traditions that keep it have read it that way, never as a warrant to harm a child.
+
+So: Genesis 22 doesn't show a God who wants children killed, and it gives no warrant for harming anyone; it remains a story of a command whose meaning is hard, and its difficulty is to be faced, not removed.
+
+The weight sits on the first step. If the test were only a story told afterward to soften a real demand, or if readers could not trust the narrator's "God tested Abraham," the chapter would show a God who commanded what the later prophets condemned, and Kant's objection would stand at full strength.
+
+## The strongest reply, and an answer
+
+The strongest reply is that the ending doesn't help. Abraham didn't know it was a test, and he was ready to kill. If his readiness is what the story praises, and Hebrews and James praise it, then the story honors a man for being willing to do what the moral law forbids because a voice told him to, which is Kant's whole point. Telling the reader it was a test only makes the question sharper: what kind of God tests that way?
+
+That reply should be granted much of its force. The note on Genesis 22 says that "Critics reply that these readings explain Abraham's faith without removing the moral scandal of the command itself," and that readers still differ on how to weigh the command against its outcome. This page doesn't claim to remove the scandal. It claims something narrower. Kant's argument assumes that Abraham had no reason to trust the voice beyond the voice itself. The story assumes the opposite: a God who had spoken to him for decades, kept a promise that had seemed impossible, and given him this son. Abraham's trust, as Hebrews reads it, was that "God could raise the dead" (Hebrews 11:19, BSB), so that the God who promised would keep his promise even through death. Whether that trust was reasonable can be argued. But it is not trust in an anonymous voice against conscience. It is trust in a known God whose goodness Abraham had reason to rely on, and the chapter vindicates that trust, not the act of killing.
+
+And Christians add what the story points toward. "He who did not spare His own Son but gave Him up for us all, how will He not also, along with Him, freely give us all things?" (Romans 8:32, BSB). In the end God asked of Abraham what he did not, in the end, require of him, and did himself what he would not let Abraham do. Jesus says of his life, "No one takes it from Me, but I lay it down of My own accord" (John 10:18, BSB). That doesn't answer every question the chapter raises. It does show that the Christian reading moves away from the knife, not toward it.
+
+## What remains unresolved
+
+How to weigh the command against its outcome is unresolved, and the note on Genesis 22 says plainly that readers still differ. Whether the story's first hearers took it as an account of an event, and how its parts came together, is argued. Isaac's age and what he knew are not told; later traditions filled the gap in different ways. And the Qur'an tells a similar story without naming the son, whom most Muslim commentators take to be Ishmael, as the note sets out.
+
+## Where Christians differ
+
+Christians differ on how to read the command. Some follow Kierkegaard in holding that the story cannot be justified by ordinary ethics and must be left as a terror of faith; some read it, with the note's account of Levenson, as God's claim on the beloved son met by substitution; and some stress, as Jewish tradition has often done, the narrator's word "tested" and the knife stopped. This page takes no side among them. All of them confess that God does not desire the death of children, that he provided the sacrifice he asked for, and that in Jesus Christ he gave his own Son.
+
+## Read the other side
+
+- Immanuel Kant, *The Conflict of the Faculties* (1798), the note on Abraham.
+- Carol Delaney, *Abraham on Trial* (1998), as the Study Bible's note on Genesis 22 summarizes it.
+
+## Read further
+
+- Søren Kierkegaard, *Fear and Trembling* (1843).
+- Jon D. Levenson, *The Death and Resurrection of the Beloved Son* (1993), as the note on Genesis 22 summarizes it.
+
+## On the site
+
+- The Study Bible's notes on Genesis 22 (/study/bible/genesis/22), which set out the chapter, its Jewish and Christian readings and the objections, and on Jeremiah 7 (/study/bible/jeremiah/7) and 2 Kings 3 (/study/bible/2-kings/3).
+- Find Help (/help), for anyone in danger or afraid for someone else.
+- "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?" (/questions/old-testament/the-command-to-destroy-the-canaanites), which treats Kant's question about knowing a command is God's.
+- The other questions in this area (/questions/old-testament).
