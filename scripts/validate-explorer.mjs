@@ -751,9 +751,10 @@ for (const c of cards) {
   const inFrame = pt =>
     Array.isArray(pt) && pt.length === 2 &&
     pt[0] >= 28 && pt[0] <= 38 && pt[1] >= 29 && pt[1] <= 49;
-  for (const line of r.avoid ?? [])
-    if (!Array.isArray(line) || line.length < 2 || !line.every(inFrame))
-      fail(rw, "every line in avoid must be two or more [latitude, longitude] points inside the frame");
+  for (const key of ["avoid", "rivers"])
+    for (const line of r[key] ?? [])
+      if (!Array.isArray(line) || line.length < 2 || !line.every(inFrame))
+        fail(rw, `every line in ${key} must be two or more [latitude, longitude] points inside the frame`);
   for (const part of r.parts ?? [])
     if (part.reach !== undefined && (!Array.isArray(part.reach) || !part.reach.every(inFrame)))
       fail(`${rw} ${part.id}`, "reach must be [latitude, longitude] points inside the frame");
