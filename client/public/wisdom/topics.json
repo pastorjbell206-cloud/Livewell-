@@ -560,24 +560,44 @@
       "application": "Say the specific thing you did, not the vague fact that something happened. Drop the word but, which cancels every clause before it. Do not demand forgiveness on your timeline, because the person you wounded does not owe you a quick release. And where you can, repair the actual damage, since the apology that changes nothing was never repentance, only regret at being caught.",
       "verses": [
         {
-          "ref": "Psalm 51:4",
-          "text": "Against You, You only, have I sinned and done what is evil in Your sight, so that You may be proved right when You speak and blameless when You judge."
+          "ref": "Genesis 3:12-13",
+          "text": "And the man answered, “The woman whom You gave me, she gave me fruit from the tree, and I ate it.” Then the LORD God said to the woman, “What is this you have done?” “The serpent deceived me,” she replied, “and I ate.”"
         },
         {
-          "ref": "Proverbs 28:13",
-          "text": "He who conceals his sins will not prosper, but whoever confesses and renounces them will find mercy."
+          "ref": "Psalm 51:3",
+          "text": "For I know my transgressions, and my sin is always before me."
         },
         {
-          "ref": "James 5:16",
-          "text": "Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man has great power to prevail."
+          "ref": "1 Samuel 15:30",
+          "text": "“I have sinned,” Saul replied. “Please honor me now before the elders of my people and before Israel. Come back with me, so that I may worship the LORD your God.”"
+        },
+        {
+          "ref": "Luke 19:8",
+          "text": "But Zacchaeus stood up and said to the Lord, “Look, Lord, half of my possessions I give to the poor, and if I have cheated anyone, I will repay it fourfold.”"
         },
         {
           "ref": "Matthew 5:23-24",
           "text": "So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar. First go and be reconciled to your brother; then come and offer your gift."
         },
         {
-          "ref": "1 John 1:9",
-          "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+          "ref": "Luke 15:18-21",
+          "text": "I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’"
+        },
+        {
+          "ref": "Proverbs 28:13",
+          "text": "He who conceals his sins will not prosper, but whoever confesses and renounces them will find mercy."
+        },
+        {
+          "ref": "2 Corinthians 7:10-11",
+          "text": "Godly sorrow brings repentance that leads to salvation without regret, but worldly sorrow brings death. Consider what this godly sorrow has produced in you: what earnestness, what eagerness to clear yourselves, what indignation, what alarm, what longing, what zeal, what vindication! In every way you have proved yourselves to be innocent in this matter."
+        },
+        {
+          "ref": "Numbers 5:5-7",
+          "text": "And the LORD said to Moses, “Tell the Israelites that when a man or woman acts unfaithfully against the LORD by committing any sin against another, that person is guilty and must confess the sin he has committed. He must make full restitution, add a fifth to its value, and give all this to the one he has wronged."
+        },
+        {
+          "ref": "James 5:16",
+          "text": "Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man has great power to prevail."
         }
       ],
       "related": [
