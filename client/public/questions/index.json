@@ -147,6 +147,13 @@
           "blurb": "What Luke says and what Josephus dates, the governors of Syria, Justin and Tertullian, the five proposed solutions with the weakness of each, and why the question is still open.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-two-genealogies",
+          "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+          "blurb": "Both lists set side by side, Julian's charge and Jerome's count, Africanus's levirate explanation in his own words with its weakness, Mary's line and the royal line, and what both lists affirm.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -562,6 +569,26 @@
       "area": "contradictions",
       "slug": "the-census-of-quirinius",
       "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke give Joseph different fathers and Jesus different lines from David, so the genealogies contradict each other",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-two-genealogies",
+      "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+      "live": false
+    },
+    {
+      "claim": "The two genealogies cannot be fully harmonized; each evangelist shaped the traditions he had for theological ends",
+      "proponent": "Raymond E. Brown",
+      "work": "The Birth of the Messiah",
+      "year": 1977,
+      "area": "contradictions",
+      "slug": "the-two-genealogies",
+      "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
       "live": false
     },
     {
