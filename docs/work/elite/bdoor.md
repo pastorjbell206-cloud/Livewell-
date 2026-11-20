@@ -7596,3 +7596,120 @@ that two omit one sentence each that named Paul or James in a way that would not
 ### Next
 
 Revelation 4 to 22, chapter by chapter, from the book page as written.
+
+## Continuation: Revelation 4 to 22 (2026-11-20)
+
+This finishes Revelation, and with it the New Testament: every chapter of all twenty-seven books
+now has its notes in plain words. The run was done in two sittings. The first wrote Revelation 4
+to 14, one commit a chapter, and its machine was restarted before it could write its report; that
+part is rebuilt here from the ledger and the data. The second checked those eleven chapters, made
+one repair, and wrote 15 to 22, one commit a chapter, each with its ledger rows.
+
+### The frame every chapter keeps
+
+Each chapter says first what John sees and hears, in order, in the BSB's words; then what the
+pictures draw on in the Old Testament, using only echoes the repository's notes support; then, for
+each contested picture, how the preterist, historicist, futurist and idealist readings take it,
+each in words its holders would sign, briefly and evenly, none chosen. Where the repository gives
+no account for one reading, the note gives only what it has (the rider of 6:2; the woman of 12 for
+historicists; the readings of 666 beyond the two the notes give). No figure, beast, horn, head,
+mark, number, city or event is tied to any modern nation, leader, church, office, movement,
+technology or event; no date is set, and no end-times scheme is drawn.
+
+### The chapters in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Revelation 4 | 4 | 2,585 |
+| Revelation 5 | 4 | 2,422 |
+| Revelation 6 | 4 | 2,930 |
+| Revelation 7 | 4 | 2,302 |
+| Revelation 8 | 3 | 1,837 |
+| Revelation 9 | 4 | 2,458 |
+| Revelation 10 | 3 | 1,729 |
+| Revelation 11 | 5 | 3,045 |
+| Revelation 12 | 4 | 2,929 |
+| Revelation 13 | 5 | 3,723 |
+| Revelation 14 | 4 | 2,655 |
+| Revelation 15 | 2 | 1,530 |
+| Revelation 16 | 4 | 2,917 |
+| Revelation 17 | 4 | 3,115 |
+| Revelation 18 | 4 | 2,545 |
+| Revelation 19 | 4 | 2,876 |
+| Revelation 20 | 4 | 3,180 |
+| Revelation 21 | 5 | 3,413 |
+| Revelation 22 | 5 | 3,040 |
+| **Total** | **76** | **51,231** |
+
+Each chapter note gained only `"plain": true`. Chapters 12, 13 and 20 rest also on their verse notes;
+the rest on the chapter deep notes, the book page, the guide to reading Revelation and Daniel, the
+doctrine studies (return, judgment, hell, new creation), the Honest Answer ‘Is hell forever, or does
+it end?’, the Daniel 7 and Isaiah notes that name Revelation, and the lexicon.
+
+### A repair in 4 to 14
+
+All eleven chapters were read for the rules (6, 7, 11, 12 and 13 in full). Nothing was found that
+named a modern figure, set a date or took a side. One defect of quotation was found by a new check
+of single-quoted Bible words: five phrases had drifted from the BSB (7:15, ‘He will spread’ for ‘The
+One seated on the throne will spread’; Daniel 7:25, ‘a time, times’ for ‘a time, and times’; 14:4,
+‘They have not’ for ‘These are the ones who have not’; 14:11, ‘no rest day or night’ for ‘Day and
+night there is no rest’; and in 15:3 the title shortened), and 14:8's note quoted 1 Peter 5:13 in
+another translation's words. Each now reads as the BSB does.
+
+### The hard places, and how they are stated
+
+The seals (6), the trumpets (8 to 9) and the bowls (15 to 16) in the four readings, with the
+question of sequence or retelling from Victorinus; famines, plagues, disasters and illness never read
+as God's judgment on the people they strike (Luke 13:4; John 9:3). The 144,000 and the multitude
+(7) in three readings, none turned against the Jewish people. The two witnesses (11) and the great
+city where their Lord was crucified, with the paragraph that the scene is no word against the Jewish
+people. The woman (12) as the church, Mary, or Israel and then the church. The beast, the mark and
+666 (13), the mark tied to no object, document, technology, payment, medicine or practice. Armageddon
+(16) with no map, no date and no modern state. Babylon (17 to 18) as Rome, Jerusalem or a world
+system, or a recurring pattern; the use of the picture by Christians against other Christians, and
+against nations, peoples and institutions, named plainly and none made; the image handled as a city,
+with nothing aimed at women. The rider (19) in the four readings, the bloody scene answered as the
+deep note answers it. The thousand years (20) exactly as the book page sets out its four views. Gog
+and Magog tied to no nation or people. The lake of fire in the three views the Honest Answer and the
+doctrine study give, with no side beyond the creed's ‘to judge both the quick and the dead’, and
+nothing said of the eternal state of any person. The new creation (21) as renewal or replacement,
+both bodily. ‘I am coming soon’ (22) in the readings, with no date; 22:18-19 about this book's words,
+not a weapon against other Christians, their readings, or a faithful translation.
+
+### Care lines, each word for word
+
+The fearful-conscience line from the Hebrews 6 note (6, 13, 14, 16, 19, 20, 21); the suffering line
+from the book page (6, 11, 12, 13); the grief line from the 1 Thessalonians 4 note (21:1-4) and its
+paragraph for one grieving someone who died without clear faith (20:11-15); the line for anyone held
+or forced to work, from the 1 Corinthians 7 note (18:9-19). Each points to Find Help. No phone
+numbers.
+
+### Cut or narrowed
+
+From the first sitting (4 to 14, from the ledger): the breastpiece stones behind 4:3; the four
+creatures as the four Gospels; who the first rider is; the scales as a siege; Genesis 22:17-18 (to
+keep ‘blessed’ out); ‘those who dwell on the earth’ as a fixed term; ‘nearly two thousand years’;
+Elijah's seven thousand; Sinai's cloud; the hidden ark; Isis and Horus, the Qumran hymn and Ugarit;
+the historicist identifications (kept in general terms); the history of the schools; the Sibylline
+Oracles; readings of 666 the notes do not give; ‘Blessed are the dead’ quoted in part. From the
+second (15 to 22): wrath that ‘does not go on for ever’ (it could be read as a side on final
+judgment); ‘in northern Israel’ for Megiddo; Leviticus 11 for the frogs; the prophets' stripping and
+burning of cities; the ten kings as client kings; the fallen city given to wild animals; Ezekiel's
+‘mountains of Israel’; Josephus on Magog; 2 Samuel 7:14 behind 21:7; the cowardly as deniers; the
+gates shut at night; Amos 3:7, Proverbs 24:12 and Psalm 17:15 as echoes; a reading of 22:11; the year
+count in 22's question; and each saying that begins ‘Blessed’ quoted only in part, as chapter 14
+began, so that the word stays out of the prose.
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for each chapter. No web searches.
+
+### What was run
+
+After each chapter: validate-bible-notes, the strict quotation check (0 problems), the search-index
+and passage-index checks and no-emdash, each exit 0. The final gates on the merged tree, and the
+served-build check of chapters 4 to 22 at 390 and 1440, are in the final report to the caller.
+
+### Next
+
+The Old Testament, from Exodus, in the plan's order (Genesis and Psalms are done).
