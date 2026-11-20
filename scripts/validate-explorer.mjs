@@ -158,6 +158,9 @@ function quotationRule(where, value) {
 }
 
 // ── Links ─────────────────────────────────────────────────────────────────
+/** The Explorer's rooms that are not stops: /study/explorer/<room>. */
+const ROOMS = new Set(["pauls-travels"]);
+
 function linkRule(where, href, finished) {
   if (typeof href !== "string" || !href.startsWith("/"))
     return fail(where, `has no internal href (${href})`);
@@ -165,7 +168,7 @@ function linkRule(where, href, finished) {
   if (film && !filmsReady.has(film[1]))
     return fail(where, `links ${href}, a moving picture that is not made yet`);
   const explorer = !film && href.match(/^\/study\/explorer\/([a-z0-9-]+)/);
-  if (explorer && !finished.has(explorer[1]))
+  if (explorer && !ROOMS.has(explorer[1]) && !finished.has(explorer[1]))
     return fail(where, `links ${href}, a stop that is still being drawn`);
   const r = resolveHref(href.replace(/#.*$/, ""));
   if (r.status === "missing")
@@ -637,6 +640,78 @@ for (const c of cards) {
       fail(fw, "a care line ends with \" or look at Find Help.\"");
     quotationRule(fw, film);
   }
+}
+
+// ── Paul's travels: the moving map ────────────────────────────────────────
+// travels.json names every place by its id in the Acts book page's map
+// (client/public/bible/notes/acts/intro.json), so a place is checked once.
+{
+  const tw = "travels.json";
+  const t = read(path.join(DIR, "travels.json"));
+  const intro = read(path.join(ROOT, "client/public/bible/notes/acts/intro.json"));
+  const placeIds = new Set(
+    intro.teaching.map.flatMap(m => (m.places ?? []).map(p => p.id))
+  );
+  if (t.frame !== "mediterranean")
+    fail(tw, `frame "${t.frame}" is not the Acts page's "mediterranean"`);
+  for (const k of ["intro", "routeNote", "churchesIntro", "churchesNote"])
+    if (typeof t[k] !== "string" || !t[k].trim()) fail(tw, `needs "${k}"`);
+  textRules(tw, t);
+  quotationRule(tw, t);
+  // "journeys" is forbidden; the long-established name is given once, as a
+  // plain gloss in the introduction, so a reader who searches for it finds it.
+  const gloss = JSON.stringify(t).match(/missionary journeys/gi) ?? [];
+  if (gloss.length !== 1 || !/often called his missionary journeys/.test(t.intro))
+    fail(tw, `"missionary journeys" must appear exactly once, as the introduction's gloss (found ${gloss.length})`);
+  if (!/does not number them/.test(t.intro))
+    fail(tw, "the introduction must say that Acts does not number the trips");
+  if (!/not known/.test(t.routeNote))
+    fail(tw, "the route note must say the exact way is not known");
+  const tripIds = ["first", "second", "third", "rome"];
+  if (JSON.stringify((t.trips ?? []).map(x => x.id)) !== JSON.stringify(tripIds))
+    fail(tw, `trips must be ${tripIds.join(", ")}, in that order`);
+  const place = (where, id) => {
+    if (!placeIds.has(id))
+      fail(where, `place "${id}" is not one of the Acts book page's checked places`);
+  };
+  for (const trip of t.trips ?? []) {
+    const w = `${tw} ${trip.id}`;
+    if (!trip.name || !trip.range || !trip.line) fail(w, "needs a name, a range and a line");
+    const ids = new Set();
+    (trip.steps ?? []).forEach((st, i) => {
+      const sw = `${w} step ${i + 1}`;
+      if (!st.id || ids.has(st.id)) fail(sw, "needs its own id");
+      ids.add(st.id);
+      place(sw, st.place);
+      for (const v of st.via ?? []) place(sw, v);
+      if (!(i === 0 ? st.by === "start" : ["sea", "land"].includes(st.by)))
+        fail(sw, `by "${st.by}": the first step starts, every other leg is "sea" or "land"`);
+      if (!/^Acts \d/.test(st.ref ?? "")) fail(sw, `ref "${st.ref}" is not in Acts`);
+      refRule(sw, st.ref);
+      if (!st.text?.trim()) fail(sw, "says nothing of what happened there");
+      if (st.text && st.text.split(/(?<=[.”])\s+(?=[A-Z“])/).length > 2)
+        fail(sw, "keep what happened to one or two sentences");
+    });
+    if ((trip.steps ?? []).length < 5) fail(w, "has fewer than five steps");
+  }
+  const churchIds = new Set();
+  for (const c of t.churches ?? []) {
+    const w = `${tw} church ${c.id}`;
+    if (!c.id || churchIds.has(c.id)) fail(w, "needs its own id");
+    churchIds.add(c.id);
+    if (!c.places?.length) fail(w, "has no place");
+    for (const p of c.places ?? []) place(w, p);
+    if (!["paul", "before"].includes(c.begun)) fail(w, `begun "${c.begun}" is not paul or before`);
+    if (c.begun === "before" && !/not begun by Paul/.test(c.text))
+      fail(w, "a church Paul did not begin must say so");
+    refRule(w, c.ref);
+    for (const l of c.letters ?? []) {
+      if (!l.name || !l.note) fail(w, `letter ${l.book} needs a name and a note`);
+      linkRule(`${w} letter ${l.book}`, `/study/bible/${l.book}`, finished);
+    }
+  }
+  if (/\b(AD|BC) ?\d|\b\d{2,4} ?(AD|BC)\b/.test(JSON.stringify(t)))
+    fail(tw, "gives a year; the dates of the trips and letters are debated, so the map gives none");
 }
 
 // ── The manifest ──────────────────────────────────────────────────────────

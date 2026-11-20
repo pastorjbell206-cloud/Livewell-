@@ -8,8 +8,9 @@
  * to it.
  */
 import { Link } from "wouter";
-import { Play } from "lucide-react";
+import { MapPin, Play } from "lucide-react";
 import {
+  TRAVELS_PATH,
   filmHref,
   filmsFor,
   type ExplorerIndex,
@@ -102,6 +103,34 @@ export function Watch({
               </li>
             );
           })}
+          <li>
+            <h3 className="wl-group__name" id="wl-g-maps">
+              Maps that move
+            </h3>
+            <p className="wl-group__line">
+              The places of the Bible, drawn on the map as the story goes.
+            </p>
+            <ul className="wl-films">
+              <li>
+                <Link href={TRAVELS_PATH} className="wl-film">
+                  <span className="wl-film__thumb" aria-hidden="true">
+                    <FilmMark mark="church" className="ex-roundel" />
+                    <span className="wl-film__play">
+                      <MapPin size={13} strokeWidth={2} />
+                    </span>
+                  </span>
+                  <span>
+                    <span className="wl-film__title">Paul&apos;s travels</span>
+                    <span className="wl-film__line">
+                      {level === "older"
+                        ? "Paul's three trips and the voyage to Rome, place by place, and the churches begun and the letters written to them."
+                        : "Follow Paul across the sea, one place at a time, and see the churches that began."}
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </section>

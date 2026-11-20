@@ -20,7 +20,9 @@ export const FORBIDDEN = [
 export const forbiddenRe = new RegExp(`\\b(${FORBIDDEN.map((w) => w.replace(/'/g, "['’]")).join("|")})\\b`, "gi");
 
 // Ordinary senses the list does not mean: foster care; Richard Foster (a
-// name, capitalized); book titles and named concepts; the literal road.
+// name, capitalized); book titles and named concepts; the literal road; the
+// long-established name for Paul's trips, given once as a plain gloss on the
+// Bible Explorer's map of them (validate-explorer.mjs holds it to once).
 export const ALLOWED = [
   /\bfoster (care|parent|parents|parenting|child|children|home|homes|family|families|system|kids?)\b/gi,
   /\bFoster\b/g,
@@ -29,6 +31,7 @@ export const ALLOWED = [
   /\bUnpacking Forgiveness\b/g,
   /\bUnlocking the Stress Cycle\b/g,
   /\bjourney to Jerusalem\b/gi,
+  /\boften called his missionary journeys\b/g,
 ];
 
 /** The text with each allowed sense blanked out, character for character. */

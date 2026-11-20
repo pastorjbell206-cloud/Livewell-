@@ -64,6 +64,11 @@ books). One page lists everything the site holds.
   https://www.livewellbyjamesbell.co/study/explorer/watch/gospel-in-a-minute
   https://www.livewellbyjamesbell.co/study/explorer/watch/who-made-god
   https://www.livewellbyjamesbell.co/study/explorer/watch/does-god-exist
+- Paul's travels, in the Bible Explorer (a map of Acts that draws Paul's three
+  trips and the voyage to Rome place by place, each with what happened there
+  and its chapter, and the churches named in those years with the letters
+  written to them):
+  https://www.livewellbyjamesbell.co/study/explorer/pauls-travels
 - Read the Bible in a year: the 2027 plan (a daily reading plan: all 1,189 chapters in
   365 days, in the order the story happened, each day linked to its chapters
   and, where one belongs, to a context guide):

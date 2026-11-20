@@ -843,6 +843,32 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Paul's travels: every trip's places in order with what happened there and
+  // its Acts reference, then the churches and the letters written to them
+  // (client/public/explorer/travels.json; places named as the Acts book page
+  // names them, client/public/bible/notes/acts/intro.json).
+  "/study/explorer/pauls-travels": async () => {
+    const t = readJsonSafe("client/public/explorer/travels.json");
+    const intro = readJsonSafe("client/public/bible/notes/acts/intro.json");
+    if (!t?.trips?.length || !intro) return null;
+    const names = new Map();
+    for (const m of intro.teaching.map) for (const p of m.places || []) if (!names.has(p.id)) names.set(p.id, p.name);
+    const trip = (tr) =>
+      sec(`${tr.name} (${tr.range})`, `<p>${escapeHtml(tr.line)}</p><ol>${tr.steps.map((st) => `<li><strong>${escapeHtml(st.name ?? names.get(st.place) ?? st.place)}.</strong> ${escapeHtml(st.text)} (${escapeHtml(st.ref)})</li>`).join("")}</ol>`);
+    const church = (c) =>
+      `<li><strong>${escapeHtml(c.name)}.</strong> ${escapeHtml(c.text)} (${escapeHtml(c.ref)})${c.letters.map((l) => ` <a href="/study/bible/${escapeHtml(l.book)}">${escapeHtml(l.name)}</a>: ${escapeHtml(l.note)}`).join("")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study/explorer">Bible Explorer</a></p>`,
+        `<h1>Paul's travels</h1>`,
+        `<p class="pre-subtitle">${escapeHtml(t.intro)}</p>`,
+        `<p>${escapeHtml(t.routeNote)}</p>`,
+        ...t.trips.map(trip),
+        sec("Churches and letters", `<p>${escapeHtml(t.churchesIntro)}</p><ol>${t.churches.map(church).join("")}</ol><p>${escapeHtml(t.churchesNote)}</p>`),
+        `<p><a href="/study/explorer">The whole map</a></p>`,
+      ]),
+    };
+  },
   // The Bible Explorer: every stop on the map with its line for younger and
   // older readers (client/public/explorer/index.json); a finished stop links
   // its own page, one still being drawn is named without a link.

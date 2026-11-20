@@ -859,6 +859,66 @@ const FRAMES: Record<MapFrameId, Frame> = {
   },
 };
 
+/** A frame's size and projection: the same numbers OneMap uses. */
+export function frameGeometry(frameId: MapFrameId) {
+  const f = FRAMES[frameId];
+  const b = MAP_FRAMES[frameId];
+  const W = Math.round((b.east - b.west) * f.kmLon * f.k);
+  const H = Math.round((b.north - b.south) * KM_LAT * f.k);
+  const x = (lon: number) => +((lon - b.west) * f.kmLon * f.k).toFixed(1);
+  const y = (lat: number) => +((b.north - lat) * KM_LAT * f.k).toFixed(1);
+  const pts = (list: LatLon[]) =>
+    list.map(([la, lo]) => `${x(lo)},${y(la)}`).join(" ");
+  return { W, H, x, y, pts };
+}
+
+/**
+ * A frame's drawing alone (its paper, seas, coasts, rivers and region names),
+ * for another page that draws its own marks on the same frame: the Bible
+ * Explorer's Paul's travels. `hatch` is a unique id for its pattern.
+ */
+export function FrameArt({
+  frameId,
+  hatch,
+}: {
+  frameId: MapFrameId;
+  hatch: string;
+}) {
+  const f = FRAMES[frameId];
+  const { W, H, x, y, pts } = frameGeometry(frameId);
+  const water = (list: LatLon[]) => (
+    <>
+      <polygon
+        className="pl-b"
+        points={pts(list)}
+        transform={`translate(${f.shift} ${f.shift})`}
+      />
+      <polygon points={pts(list)} fill={`url(#${hatch})`} />
+      <polygon className="pl-l" points={pts(list)} fill="none" />
+    </>
+  );
+  // Its own viewport, so the frame's "100%" fills mean the whole frame
+  // even when the page crops the view to one part of it.
+  return (
+    <svg x="0" y="0" width={W} height={H} viewBox={`0 0 ${W} ${H}`} overflow="visible">
+      <defs>
+        <pattern id={hatch} width="6" height="6" patternUnits="userSpaceOnUse">
+          <line
+            x1="0"
+            y1="3"
+            x2="6"
+            y2="3"
+            className="pl-hatch"
+            strokeWidth="0.8"
+          />
+        </pattern>
+      </defs>
+      <rect className="pl-paper" x="0" y="0" width={W} height={H} />
+      {f.draw({ x, y, pts, water, hatch })}
+    </svg>
+  );
+}
+
 /** Which side of its mark each name sits on, so close places do not collide. */
 const LABEL: Record<
   string,
