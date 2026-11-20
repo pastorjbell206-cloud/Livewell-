@@ -7938,3 +7938,185 @@ Cut: Wesley by name (not confirmed); Kümmel (1929) and Stowers by name (not nee
 | Perseverance views (Reformed and Baptist; Wesleyan, Arminian and Catholic); John 10:28; Hebrews 6:4-6; "That fear is not usually the mark of someone who has fallen away" | 31-39 | `answers.ts` ("Can you lose your salvation?") | Repository; wording adapted from the Honest Answer |
 
 Cut: height and depth as astrological terms (not checked); Orthodox teaching on perseverance (not in the Honest Answer, not checked); Jeremias by name.
+
+## The plain notes on Romans 9 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Exodus 32:32 (Moses: "blot me out"); Exodus 4:22 (Israel God's firstborn son); Romans 8:15, 8:38-39 | 1-5 | BSB | BSB text |
+| 9:5: BSB text reads "Christ, who is God over all"; the BSB footnote gives only another wording of the praise ("Or forever blessed"), not the punctuation; little punctuation in old copies; comma reading (most modern translations and most early writers) or a full stop and a separate blessing of God (some translations) | 1-5 | BSB footnote; repository verse note (9:5) | Search: openbible.com BSB Romans 9 (footnote); biblia.com NET note; bible.com NABRE. Footnote not quoted; no translation named |
+| Firstborn son normally the larger share; God reversing the order | 6-13 | Repository deep note (`cultural`) | Repository |
+| Genesis 21:12-13; 18:10, 14; 25:23; Malachi 1:2-3 | 6-13 | BSB | BSB text |
+| The "love and hate" idiom, Genesis 29:30-31, Luke 14:26, Deuteronomy 23:7; Reformed, Arminian/Wesleyan and corporate readings of Jacob and Esau | 6-13 | Genesis 25 plain note | Repository wording, reused nearly word for word |
+| Diatribe style (an imagined objector) | 14-18 | Repository deep note (`literary`) | Repository |
+| Exodus 33:18-19 (after the golden calf); Exodus 9:15-16; Paul follows the Greek with changes of his own | 14-18 | BSB; repository verse note (9:17) | BSB text; repository |
+| Pharaoh hardens his heart (Exodus 8:15, 8:32); God hardens it (Exodus 9:12; foretold 4:21); first said of God by the narrator at 9:12, after the sixth plague | 14-18 | BSB; repository verse note (9:18) | BSB text |
+| Reformed and Arminian readings of hardening, both keeping Pharaoh responsible | 14-18 | Repository verse and deep notes | Stated as readings, no side |
+| Isaiah 29:16; 45:9; Jeremiah 18:4, 6, 8; Hosea 2:23; 1:10; Isaiah 10:22; 1:9 | 19-29 | BSB | BSB text |
+| Westminster Confession 3.7: God "was pleased ... to pass by; and to ordain them to dishonour and wrath for their sin"; "the 1640s" | 19-29 | Westminster Confession of Faith 3.7 | Search: ccel.org (Schaff, Creeds); sermonindex.net (Shaw's exposition, "the decree of reprobation"); two phrases quoted |
+| Three readings of 9:22-23 (Reformed with or without "double predestination"; Arminian/Wesleyan, God's patience, 2:4; corporate) | 19-29 | Repository deep note (`hard`) and verse note (9:22) | Stated as readings, no names, no side |
+| Care line (afraid of not being chosen), in the form of the 8:31-39 care line | 19-29 | Romans 8 plain note | Repository wording, adapted |
+| Isaiah 28:16; 8:14; 1 Peter 2:6-8 | 30-33 | BSB | BSB text |
+| "Works" read two ways (traditional; new perspective) | 30-33 | Book page | Repository |
+| "For centuries some Christians used words ... That reading is false, and this site rejects it" | 30-33 | Book page ("What Romans is not"); Acts 2 plain note | Repository wording |
+
+Cut: Chrysostom's reading of "prepared" (named in the verse note, not checked
+here); Barth's reading of election (not checked); Edom's later history and
+John Hyrcanus; the RSV of 1946; Metzger and Harris by name.
+
+## The plain notes on Romans 10 (2026-11-20)
+
+No web searches; everything below rests on the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paul's own former zeal (Philippians 3:6; Acts 22:3; Galatians 1:14) | 1-4 | BSB; repository deep note (`historical`) | BSB text |
+| Telos: end or goal, or both; Matthew 5:17; Romans 7:12; 3:31 | 1-4 | Greek text (G5056); repository deep note | Stated as readings, no side |
+| 1 Samuel 12:23; Deuteronomy 30:6; Numbers 25:11; 1 Kings 19:10 | 1-4 | BSB | BSB text |
+| Kyrios for God's name in the Greek Old Testament; used of the emperor; Acts 25:26 "our sovereign one" (Greek "the lord"), Festus of the emperor (Nero) | 5-13 | Repository deep note (`historical`); wrom-ledger Part 4 (Acts 25:26) | Ledger; the cost of confessing stated generally (repository `cultural`) |
+| Leviticus 18:5; Deuteronomy 30:12, 14 in their setting; Isaiah 28:16; Joel 2:28, 32; Acts 2:21; 1 Corinthians 12:3 | 5-13 | BSB | BSB text |
+| Baptism and conversion differences pointed to Romans 6 and Acts 2 notes | 5-13 | Repository | Repository |
+| Messengers and heralds; Isaiah 52:7 in its setting | 14-21 | Repository deep note (`cultural`) | Repository; BSB text |
+| Isaiah 53:1; Psalm 19:4; Deuteronomy 32:21; Isaiah 65:1-2 | 14-21 | BSB | BSB text |
+| Most people could not read; letters read aloud | 14-21 | wrom-ledger Part 7 (Harris; reading aloud) | Ledger; stated generally |
+| Those who never heard: three answers (explicit faith; inclusivist; at or after death), no fate stated; the Honest Answer | 14-21 | Repository deep note (`hard`); `answers.ts` | Stated as views, no side |
+
+Cut: the date of the confession "Jesus is Lord" as earliest (stated only as
+"one of the oldest"); Deissmann's papyri on Nero as lord (not reached).
+
+## The plain notes on Romans 11 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1 Kings 19:10, 18 (Elijah, Jezebel); Deuteronomy 29:4; Isaiah 29:10; Psalm 69:22-23 | 1-10 | BSB | BSB text |
+| The Psalm 69 note's paragraph on Romans 11:9-10 | 1-10 | Psalms 69 plain note | Repository wording, word for word |
+| "Foreknew" as in 8:29; hardening readings as at 9:18 | 1-10 | Romans 8 and 9 plain notes | Repository |
+| First dough offered (Numbers 15:20); root as the patriarchs ("many readers"); Deuteronomy 32:21; Isaiah 42:6 | 11-16 | BSB; repository deep note | BSB text |
+| Supersessionism (replacement; harsher and milder "fulfilment" forms); covenant theology (one people); dispensational (distinct future for ethnic Israel); two-covenant (Jews in covenant through Moses apart from Christ, held by some, not most churches) | 11-16 | Overviews | Search: 1517.org "Did the church replace Israel"; learn.ligonier.org "The Church and Israel"; ethosinstitute.sg. Each stated in its holders' terms, no names, no side |
+| Vatican II, Nostra Aetate 4 (1965), citing Romans 11:28-29: God holds the Jews most dear for the sake of their fathers | 11-16 | Nostra Aetate 4 | Search: christianunity.va (Nostra Aetate 4); notredamedesion.org; cbcew.org.uk. Paraphrased |
+| "That reading is false, and this site rejects it"; no claim about any modern state | 11-16, 25-29 | Book page; Acts 2 and 28 plain notes | Repository wording |
+| Usual grafting: cultivated shoot onto wild stock; Paul's picture the reverse ("contrary to nature"); whether he had a farming practice in mind debated | 17-24 | Commentaries | Search: biblehub.com commentaries on 11:24; Columella not named (his text not reached) |
+| Jeremiah 11:16; Hosea 14:6 | 17-24 | BSB | BSB text |
+| Perseverance views on 11:20-22 (Reformed and Baptist; Wesleyan, Arminian and Catholic); the Honest Answer | 17-24 | `answers.ts`; Romans 8 plain note | Stated as views, no side |
+| "Mystery" as something hidden now revealed | 25-29 | Standard Pauline usage | Stated generally |
+| Isaiah 59:20-21 (BSB Hebrew-based "to Zion"; Paul follows the Greek "from Zion"); Isaiah 27:9; Jeremiah 31:34; Deuteronomy 7:8; Galatians 6:16 | 25-29 | BSB; repository deep note | BSB text |
+| Three readings of "all Israel"; "And so" two ways | 25-29 | Acts 28 plain note; repository deep note (`hard`) | Repository; no side |
+| "Consigned" (shut up together); universalist, two-groups, Reformed and Arminian readings of "everyone" | 30-36 | Romans 5 plain note (5:18) | Repository; no side |
+| Isaiah 40:13; Job 41:11 | 30-36 | BSB | BSB text |
+
+Cut: Columella by name; the 2015 Vatican document on 11:29 (found, not
+needed); Calvin by name for the "whole people of God" reading.
+
+## The plain notes on Romans 12 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Therefore" turns from God's mercy to the life that follows; 11:32 | 1-2 | BSB; repository deep note | BSB text |
+| Metamorphoō: used of Christ's transfiguration (Matthew 17:2; Mark 9:2) and of Christians (Romans 12:2) | 1-2 | Abbott-Smith lexicon in the repository (G3339) | Script over `lex/G` |
+| Psalm 51:17; Hosea 6:6; Psalm 50:14 | 1-2 | BSB | BSB text |
+| Body picture as in 1 Corinthians 12; prophecy "in proportion to his faith" read two ways | 3-8 | BSB; standard | BSB text; stated as readings |
+| Proverbs 3:7; Exodus 31:3; Numbers 11:29; Joel 2:28 | 3-8 | BSB | BSB text |
+| Gifts today (continuationist, cessationist, in between); pointer to Acts 2:1-4 | 3-8 | Acts 2 plain note | Repository; no side |
+| Anupokritos, unfeigned; built from hupokritēs, a stage actor | 9-13 | Abbott-Smith lexicon in the repository (G0505, G5273) | Script over `lex/G` |
+| Paul staying with Gaius (16:23); Phoebe "very likely" the carrier | 9-13 | BSB; book page | Repository |
+| Amos 5:15; Genesis 18:1-8; Deuteronomy 10:19; 15:7 | 9-13 | BSB | BSB text |
+| Matthew 5:44; Nero and the Christians of Rome a few years later | 14-21 | BSB; earlier ledger (Tacitus, Annals 15.44) | Ledger |
+| Deuteronomy 32:35; Leviticus 19:18; Proverbs 25:21-22; Paul follows the Greek | 14-21 | BSB | BSB text |
+| The Psalms book page's part on the cursing psalms, quoting Romans 12:19 | 14-21 | Psalms intro (`teaching`) | Repository |
+| Burning coals: shame leading to repentance (the reading many hold); judgment; an Egyptian penitence rite with a dish of burning coals, thinly attested and later | 14-21 | Commentaries; NTS article "Coals of Fire: Sign of Repentance or Revenge?" | Search: cambridge.org NTS abstract; biblegateway Reformation Study Bible note on Proverbs 25:22; tmcdaniel.palmerseminary.edu. No scholar named |
+| Safety lines ("Nothing in this passage asks anyone to stay where they or their children are in danger ... The Find Help page on this site lists places to turn.") | 14-21 | Genesis 16 plain note | Repository wording, word for word |
+
+Cut: the Roman fable of the belly and the members (not checked); masks in
+the ancient theatre; inns; early Christian writers on the coals (not checked).
+
+## The plain notes on Romans 13 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| About AD 57; Nero emperor 54-68, early in his reign; fire and killing of Christians July 64; tradition that Paul died in Rome under Nero | 1-7 | Book page; earlier ledger (Tacitus, Annals 15.44; Eusebius 2.25; 1 Clement 5) | Ledgers |
+| Claudius's expulsion of Jews "perhaps around AD 49" (disputed); Prisca and Aquila | 1-7 | wrom-ledger (Suetonius; Orosius) | Ledger |
+| Tacitus, Annals 13.50: the people's repeated complaints of the tax collectors' greed; Nero considered abolishing the indirect taxes; his advisers checked him; "around this time" (no year stated) | 1-7 | Tacitus | Search: sacred-texts.com Annals 13.50 (English and Latin); poetryintranslation.com Annals 13. Paraphrased |
+| Phoros (direct tax) and telos (tolls, customs) "most likely" | 1-7 | Repository deep note (`historical`) | Repository |
+| Mark 12:17; Daniel 2:21; Proverbs 8:15; Jeremiah 29:7; Exodus 1:17; Daniel 3:18; 6:10; Acts 5:29; Revelation 13 | 1-7 | BSB | BSB text |
+| 1850 sermons urging a religious duty to obey the law requiring the return of people who escaped slavery (e.g. Ichabod Spencer, "The Religious Duty of Obedience to Law", Brooklyn, 24 November 1850), answered by "God's laws paramount" (Nathaniel Colver, 1850) | 1-7 | Sermons | Search: gutenberg.org 13988; archive.org; library catalogues. Stated generally, no preacher, nation or law named; not claimed that each cited Romans 13 |
+| Kairos Document (1985) names Romans 13:1-7 as the first example of "State Theology" and rejects its use to give the apartheid state absolute, divine authority | 1-7 | Kairos Document, chapter 2 | Search: sahistory.org.za (document text); Wikipedia "Kairos Document". Paraphrased; no nation named |
+| Pacifist, just war (Augustine to Aquinas) sentences | 1-7 | Luke 6 plain note (and ledger line on Aquinas, Summa II-II q. 40) | Repository wording |
+| Death penalty: two views, no side; "Romans does not tell anyone which party or ruler to support" | 1-7 | Book page ("What Romans is not") | Repository |
+| Exodus 20:13-15, 17; Leviticus 19:18 in its chapter; Mark 12:31 | 8-10 | BSB | BSB text |
+| Augustine, 386, Milan garden, "take up and read", Romans 13:13-14 | 11-14 | Book page; earlier ledger (Confessions 8.12) | Repository wording |
+| Galatians 3:27; Isaiah 60:1; 59:17; Ephesians 6 | 11-14 | BSB | BSB text |
+| Nearness of the day read two ways | 11-14 | Standard readings | Stated as readings, no side |
+
+Cut: the "quinquennium" of Nero's good years (not checked); debt in Rome;
+Luther and Calvin on obedience; the Confessing Church (in the deep note, not
+needed); the year AD 58 for Annals 13.50 (said "around this time").
+
+## The plain notes on Romans 14 (2026-11-20)
+
+No web searches; the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Weak and strong most likely Jewish and Gentile believers over food laws, Sabbath and feasts ("most readers"); market meat from temples; avoiding meat as Daniel did; wider idol-meat scruples possible | 1-12 | Repository deep note (`historical`, `cultural`); book page (Rome reconstruction) | Repository; stated as the usual reading |
+| Jewish families keep food laws and Sabbath today | 1-12 | General knowledge | Stated generally, with respect |
+| Leviticus 11:44; Exodus 20:8; Daniel 1:8, 12; Isaiah 45:23; 49:18 | 1-12 | BSB | BSB text |
+| Galatians 5:2; Romans 16:17; "things indifferent" (adiaphora); creeds as a line for some, more for others | 1-12 | BSB; repository deep note (`hard`) | Stated as views, no side |
+| Koinos the ordinary Jewish word for ritually impure food | 13-23 | Repository deep note (`cultural`) | Repository |
+| Leviticus 19:14; Isaiah 52:7; Psalm 104:15; Mark 7:19; Acts 10:15 | 13-23 | BSB | BSB text |
+| Two readings of the food laws for believers (not binding; Jewish believers may keep them); "weak" as a wounded conscience, weighed differently | 13-23 | Standard readings | Stated as readings, no side |
+
+## The plain notes on Romans 15 (2026-11-20)
+
+No web searches; the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Psalm 69:9; John quotes the first half (John 2:17), Paul the second | 1-6 | BSB; Psalms 69 plain note | Repository |
+| "Accept one another" and the Roman reconstruction (book page) | 7-13 | Book page | Repository; conditional ("If") |
+| Psalm 18:49 = 2 Samuel 22:50; Deuteronomy 32:43; Psalm 117:1; Isaiah 11:1, 10; Paul follows the Greek at Isaiah 11:10; quotations from the Law, Prophets and Psalms | 7-13 | BSB; repository deep note (`literary`) | BSB text |
+| Pointer to the Israel-and-church views (11:11-16) | 7-13 | Romans 11 plain note | Repository |
+| Gentiles kept to the temple's outer court; leitourgos, priestly service | 14-21 | Repository deep note (`cultural`) | Repository |
+| Illyricum: the province on the east coast of the Adriatic, north and west of Macedonia; no visit in Acts; perhaps its border from Macedonia (Acts 20:1-2); the map note | 14-21 | Repository deep note (`historical`); book page `mapNote` | Repository |
+| Isaiah 52:15; 66:20 | 14-21 | BSB | BSB text |
+| The collection: 1 Corinthians 16:1-3; 2 Corinthians 8 and 9; Acts 24:17; gifts as bonds | 22-33 | BSB; repository deep note (`cultural`) | BSB text |
+| Acts 21:21, 27-33 (seized at the temple, arrested by the commander); two years at Caesarea; Rome as a prisoner; Acts 28:30-31 | 22-33 | BSB; book page | BSB text |
+| 1 Clement: "the limits of the west", Rome or Spain, tradition and uncertain | 22-33 | Acts 28 plain note; earlier ledger (1 Clement 5) | Repository wording |
+| Genesis 12:3; Isaiah 66:20; "some readers think" the collection a sign of the nations' gifts | 22-33 | BSB | Stated as some readers' view |
+
+Cut: the Muratorian fragment on Spain (not checked); "about AD 96" for 1
+Clement (the site says "usually dated near the end of the first century").
+
+## The plain notes on Romans 16 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letters of recommendation common | 1-2 | Repository deep note (`cultural`) | Repository |
+| Cenchrea Corinth's eastern port; Phoebe "very likely" the carrier; diakonos read two ways (Philippians 1:1; 1 Timothy 3:8); prostatis used of patrons | 1-2 | Book page; wrom-ledger; Greek text (G1249, G4368) | Repository; script |
+| Women deacons in many churches from early times (Pliny's two ministrae, wrom-ledger), others not | 1-2 | wrom-ledger Part 8 | Stated generally |
+| Complementarian and egalitarian paragraphs in the Acts 18 form | 1-2, 3-16 | Acts 18 plain note | Repository wording, adapted; no side |
+| Genesis 18:1-8; Deuteronomy 10:19; 2 Kings 4:9; Luke 8:3 | 1-2 | BSB | BSB text |
+| Prisca and Aquila: Acts 18:2, 18, 26; 1 Corinthians 16:19; Claudius's order | 3-16 | BSB; wrom-ledger | BSB text |
+| Ampliatus, Urbanus, Stachys, Hermes common slave and freed-slave names in Rome; no proof each was a slave; households of Aristobulus and Narcissus probably slaves and freedmen of great houses; identifications with famous men unconfirmed | 3-16 | Commentaries; repository deep note (`historical`, `cultural`) | Search: lifeandland.org (Franz on Romans 16, inscriptions); baonline.org "Learning from a List"; scotmcknight.substack.com. No famous man named |
+| Ten women named or mentioned | 3-16 | BSB | Count of the BSB text (Phoebe, Prisca, Mary, Junia, Tryphena, Tryphosa, Persis, Rufus's mother, Julia, Nereus's sister) |
+| Junia a common Latin woman's name; male "Junias" unattested; early writers almost without exception a woman; most scholars agree; some translations printed a man's name for centuries | 3-16 | Book page ledger (Burer, JETS 2015); scholarship | Search: cbeinternational.org; degruyterbrill.com (Open Theology 2020); etsjets.org (JETS 63.3). The "250 inscriptions" count not used |
+| "Outstanding among" or "well known to" the apostles; apostolos used of church messengers (2 Corinthians 8:23, Greek apostoloi, BSB "messengers") | 3-16 | Greek text (G0652, G1978); book page | Script; no scholar named |
+| Holy kiss (1 Corinthians 16:20; 2 Corinthians 13:12; 1 Thessalonians 5:26; 1 Peter 5:14) as family greeting | 3-16 | BSB; repository deep note | BSB text |
+| Rufus possibly Simon of Cyrene's son (Mark 15:21), uncertain | 3-16 | Repository deep note | Stated as uncertain |
+| Genesis 3:15; Proverbs 26:28; the warning read with chapter 14 | 17-20 | BSB | BSB text |
+| Timothy (1 Timothy 1:2); Tertius; trained writers common; Gaius (1 Corinthians 1:14); Erastus stone 1929, identification disputed | 21-24 | Book page; wrom-ledger | Repository |
+| 16:24 absent from the oldest copies; BSB leaves it empty | 21-24 | BSB text in the repository (verse 24 blank); repository deep note | Repository |
+| Numbers 6:24; Deuteronomy 33:27; Romans 1:5, 17; 11:33; 15:12 | 21-27 | BSB | BSB text |
+| Doxology: at the end of chapter 16 in many of the oldest copies; after 14:23 in others; after 15:33 in one very early papyrus (P46); omitted in a few later copies; explanations (shorter copies circulated); most editors print it at 16:25-27 | 25-27 | Textual notes | Search: biblia.com NET note on 16:25; scripturalmormonism.blogspot.com (Porter's commentary quoted). No manuscript named on the page |
+
+Cut: Lightfoot by name; Junia's "250 inscriptions"; the Domitilla catacomb;
+Herod's grandson and Claudius's freedman as identifications; Marcion.
