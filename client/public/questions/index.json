@@ -331,6 +331,13 @@
           "blurb": "Mackie's argument and its two hidden premises, Plantinga's free-will defence, Mackie's own later concession, the objection from heaven, and what a defence can and can't do.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-evidential-problem-of-evil",
+          "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+          "blurb": "Rowe's fawn and his argument, the inference from what we can't see, Wykstra's reply and skeptical theism, what it costs, Rowe's question about why God gives sufferers no assurance, and the answer Christians give in the cross.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1044,6 +1051,26 @@
       "area": "evil",
       "slug": "the-logical-problem-of-evil",
       "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+      "live": false
+    },
+    {
+      "claim": "There is intense suffering, like a fawn's slow death in a forest fire, that an all-powerful, all-knowing being could have prevented without losing any greater good, so probably there is no such being",
+      "proponent": "William L. Rowe",
+      "work": "The Problem of Evil and Some Varieties of Atheism",
+      "year": 1979,
+      "area": "evil",
+      "slug": "the-evidential-problem-of-evil",
+      "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+      "live": false
+    },
+    {
+      "claim": "The world's suffering makes it impossible to believe that it is ruled by a loving God",
+      "proponent": "Bart D. Ehrman",
+      "work": "God's Problem",
+      "year": 2008,
+      "area": "evil",
+      "slug": "the-evidential-problem-of-evil",
+      "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
       "live": false
     }
   ],
