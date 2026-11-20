@@ -12415,3 +12415,26 @@ Cut before publishing: Josephus's count of lambs; Petrie by name (only Mendenhal
 | Nehemiah 9:12; Psalm 78:14; Numbers 9:16; 1 Corinthians 10:1 | 20-22 | BSB | BSB text |
 
 Cut before publishing: ‘many Jews still wear them’ of tefillin (said only in the note's present tense, so cut); ‘four hundred years later’ of Joseph's bones (made ‘centuries later’).
+
+## The plain notes on Exodus 14 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sea as the Old Testament's great act of salvation; the plagues broke Pharaoh's will, the sea his power | 1-9 | exodus/14.json `story` | Repository |
+| Pi-hahiroth, Migdol, Baal-zephon not securely located; Migdol a fort; Baal of the north in the eastern Delta | 1-9 | exodus/14.json `historical` | Repository |
+| New Kingdom chariots, driver and archer | 1-9 | exodus/14.json `historical` | Repository |
+| Psalm 106:8; Romans 9:17 | 1-9 | BSB | BSB text |
+| ‘No graves in Egypt’ as sarcasm; the turn of seeing and fearing | 10-14 | exodus/14.json `cultural`, `literary` | Repository |
+| 2 Chronicles 20:17; Psalm 46:10 | 10-14 | BSB | BSB text |
+| The pillar moves behind; the clash of gods; the sea as chaos; Baal and Yam | 15-20 | exodus/14.json `cultural`, `literary` | Repository |
+| Isaiah 43:16; 51:10 | 15-20 | BSB; exodus/14.json `story` | BSB text |
+| The east wind; the morning watch; the wheels | 21-25 | exodus/14.json `cultural` | Repository |
+| Yam suph; the proposed crossing sites; a range of historians' views; no side | 21-25 | exodus/14.json `historical` | Repository; no side |
+| Joshua 4:23; Psalm 77:19-20; 1 Corinthians 10:2; Hebrews 11:29 | 21-25 | BSB; exodus/14.json `christ` | BSB text |
+| The repeated ‘walls of water’; fear moved from Egypt to God | 26-31 | exodus/14.json `literary` | Repository |
+| The drowned army; the rebuke of the angels; Ezekiel 18:23; hardening, Reformed and Arminian; no side | 26-31 | exodus/14.json `hard` | Repository; no side |
+| Exodus 15:1; Psalm 106:11-12; Proverbs 24:17; Ezekiel 18:23 | 26-31 | BSB | BSB text |
+
+Cut before publishing: chariot wheels said to lie on the sea floor (only in a pending apologetics piece, so not used as a source); Psalm 77:16-20 beyond the two verses quoted.
