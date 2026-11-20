@@ -730,6 +730,14 @@ describe("the pages", () => {
 });
 
 describe("the video export", () => {
+  it("every finished film has a poster for a shared link (1200 by 630)", () => {
+    for (const f of READY)
+      expect(
+        fs.existsSync(path.join(PUBLIC, `explorer/video/${f.slug}-poster.jpg`)),
+        f.slug
+      ).toBe(true);
+  });
+
   it("shows the whole film at a level, or its share cut with only the verses it keeps", () => {
     const whole = exportShots(FILM, "older", false);
     expect(whole.map(s => s.text)).toEqual(FILM.frames.map(f => f.older));
