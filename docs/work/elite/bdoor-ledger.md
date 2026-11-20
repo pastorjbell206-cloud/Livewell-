@@ -11886,3 +11886,32 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Jeremiah 51:63-64; 25:10 | 20-24 | BSB | BSB text |
 
 Cut before publishing: ‘the prophets often pictured a fallen city given over to wild animals’ (no repository source given for it here).
+
+## The plain notes on Revelation 19 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Heaven's answer to the laments; Hallelujah: Hebrew, ‘praise the LORD’, Yah; common in the Psalms; only here in the New Testament; four times, as choirs | 1-5 | revelation/19.json `story`, `cultural`, `literary`, `words` (G0239) | Repository |
+| ‘True and just’ as in 16:7; the martyrs' prayer (6:10) answered; the smoke from Isaiah 34:10 | 1-5 | revelation/19.json `doctrines` (judgment), `words` (G0239); revelation/14.json `cultural` | Repository |
+| Psalm 113:1; 106:1; Isaiah 34:10 | 1-5 | BSB | BSB text |
+| Pantokratōr, ‘the LORD of hosts’, nine times in Revelation; Caesar's claims; Handel's Messiah (1742) | 6-10 | revelation/19.json `words` (G3841); revelation/11.json and the chapter 11 rows | Repository |
+| God as husband (Isaiah 54:5; Hosea 2:19); Christ and the church (Ephesians 5:25-27); the two stages of a wedding; a man and a woman in a garden to a wedding | 6-10 | revelation/19.json `cultural`, `words` (G1062) | Repository |
+| The linen given and also the saints' righteous acts; grace and obedience | 6-10 | revelation/19.json `cultural`, `doctrines` (church) | Repository |
+| The angel refuses worship; the Lamb receives it (5:13) | 6-10 | revelation/19.json `doctrines` (god) | Repository; BSB |
+| Isaiah 54:5; Hosea 2:19; Psalm 97:1 | 6-10 | BSB | BSB text |
+| Heaven opened (4:1); Faithful and True (3:14); eyes of fire (1:14); crowns; the name only he knows | 11-16 | revelation/19.json `literary`, `cultural`, `christ` | Repository; BSB |
+| The robe dipped in blood: his own (5:9; 12:11), or his enemies' (Isaiah 63); no side | 11-16 | revelation/19.json `christ` | Repository, no side |
+| The Word of God (John 1:1, 14); the sword from the mouth (1:16; Isaiah 11:4); the iron scepter (Psalm 2:9); the armies do not fight | 11-16 | revelation/19.json `cultural`, `words` (G3056), `christ` | Repository |
+| The Roman triumph, white horses, reserved to the emperor's house; lord and saviour on coins and inscriptions | 11-16 | revelation/19.json `historical` | Repository |
+| The donkey and the second coming; the Nicene Creed's ‘quick and the dead’ | 11-16 | revelation/19.json `christ`, `doctrines` (messiah); revelation/intro.json `teaching` (millennium) | Repository |
+| The four readings of the rider; every tradition confesses the return; no date; Matthew 24:36 | 11-16 | revelation/19.json `historical` | Repository, no side |
+| Isaiah 11:4; Psalm 2:9; Isaiah 63:3; Zechariah 9:9; Matthew 24:36 | 11-16 | BSB | BSB text |
+| Two suppers; Ezekiel 39:17-20; the battle never fought; enemies taken in reverse order (18, 19, 20) | 17-21 | revelation/19.json `literary`, `story`, `cultural` | Repository |
+| Does it contradict the Gospels: oracles, the sword of the mouth, the robe already bloody; Matthew 25:31-46; John 5:28-29; the Jesus who wept over Jerusalem | 17-21 | revelation/19.json `hard` | Repository |
+| The lake of fire pointed on to chapter 20's views; nothing said of any person's eternal state | 17-21 | revelation/20.json `hard`; revelation/verses/20.json (10, 15) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 17-21 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Ezekiel 39:17; Genesis 19:24; Matthew 25:31 | 17-21 | BSB | BSB text |
+
+Cut before publishing: ‘Blessed are those who are invited’ quoted only in part, as in chapters 14 and 16; ‘the mountains of Israel’ in Ezekiel 39:17 (the quotation stops before it, so that no place in the modern world is brought into view).
