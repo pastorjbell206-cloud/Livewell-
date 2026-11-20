@@ -64,9 +64,10 @@ const film: FilmDrawing = {
     <>
       {/* 0. A light in the dark. */}
       <Fade frame={frame} on={0} off={1}>
-        <path fill={h.h3} d="M0,0H800V500H0Z" />
+        {/* The dark and the light keep their sense at night (film.css). */}
+        <path className="fp-dark" fill={h.h3} d="M0,0H800V500H0Z" />
         <path
-          className="pl-paper"
+          className="pl-paper fp-light"
           d="M330,250a70,70 0 1,0 140,0a70,70 0 1,0 -140,0Z"
         />
         <path
@@ -74,7 +75,7 @@ const film: FilmDrawing = {
           d="M378,250a22,22 0 1,0 44,0a22,22 0 1,0 -44,0Z"
         />
         <path
-          className="pl-l"
+          className="pl-l fp-on-light"
           d="M378,250a22,22 0 1,0 44,0a22,22 0 1,0 -44,0Z"
         />
       </Fade>
@@ -82,7 +83,7 @@ const film: FilmDrawing = {
         frame={frame}
         on={0}
         off={1}
-        className="pl-l"
+        className="pl-l fp-on-light"
         delay={500}
         d="M400,200V188M400,312V300M350,250H338M462,250H450M365,215l-9,-9M435,215l9,-9M365,285l-9,9M435,285l9,9"
       />

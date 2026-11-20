@@ -17,6 +17,9 @@
  *   a prayer from a psalm, and at least two next steps, each a real page;
  * - an "often misread" layer on every topic the old Misused Bible Verses
  *   tool covered (MISREAD_REQUIRED);
+ * - at least MIN_PHRASINGS everyday phrasings in matching.json (how a person
+ *   would say it, not the topic's title), so the Wisdom Finder can find every
+ *   topic the library has written in full;
  * - on a heavy subject (client/src/data/sensitive-pages.json), care lines,
  *   each found word for word in the Study Bible plain note it names;
  * - the prose: none of CLAUDE.md's forbidden words, no em-dash, no "--",
@@ -132,6 +135,9 @@ function checkProse(where, text, titles) {
   for (const m of setAsideAllowed(prose).matchAll(forbiddenRe)) fail(where, `forbidden word "${m[1]}"`);
 }
 
+// A topic written in full must be findable in a reader's own words.
+const MIN_PHRASINGS = 8;
+
 const answerQuestions = [...fs.readFileSync(path.join(ROOT, "client/src/data/answers.ts"), "utf8").matchAll(/question:\s*"([^"]+)"/g)].map((m) => normalize(m[1]));
 
 for (const f of deepFiles) {
@@ -201,6 +207,8 @@ for (const f of deepFiles) {
     }
     if (!fs.readFileSync(src, "utf8").includes(JSON.stringify(c.text).slice(1, -1))) fail(at, `care line not found word for word in ${c.from}: "${c.text}"`);
   }
+  const phrasings = new Set((matching.topics[id]?.phrases ?? []).map((p) => normalize(p)));
+  if (phrasings.size < MIN_PHRASINGS) fail(at, `written in full but has ${phrasings.size} everyday phrasings in matching.json (needs ${MIN_PHRASINGS})`);
   if (d.notAdvice && !["money", "law", "medicine"].includes(d.notAdvice)) fail(at, "notAdvice must be money, law or medicine");
 }
 

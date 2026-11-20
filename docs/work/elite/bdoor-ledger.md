@@ -10318,3 +10318,364 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Numbers 6:24-25 | 23-25 | BSB | BSB text |
 
 ## Philemon complete (2026-11-20)
+
+## Hebrews: the book page (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. Creed wording from `client/public/creeds/documents/`.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Begins without greeting, ends like a letter; ‘word of exhortation’ (13:22); readers once brave, now tired, tempted to drift back | In a minute; Readers | hebrews/intro.json `overview`, `purpose`; BSB 10:25, 10:32-34, 13:22 | Repository; BSB |
+| Thirteen chapters, about forty-five minutes aloud | In a minute | Estimate from the chapter count and length, as on earlier book pages | Estimate |
+| Writer unnamed; heard from those who heard the Lord (2:3); fine Greek; Greek Old Testament made in Egypt; knew Timothy (13:23) | Who wrote it | hebrews/intro.json `author` | Repository; BSB |
+| P46 about AD 200 places it after Romans; style noticed as unlike Paul's; Clement of Alexandria via Eusebius (Paul in Hebrew, Luke translating); Origen (thoughts Paul's, wording another's, only God knows), paraphrased as the intro paraphrases; Tertullian, Barnabas a Levite (Acts 4:36); Luther, Apollos (Acts 18:24); Harnack 1900, Priscilla; Luke, Silas, Clement of Rome; most scholars: unknown | Who wrote it; timeline | hebrews/intro.json `author` | Repository. No side; no direct quotation of Origen |
+| Accepted widely in the West only by the late 300s | Who wrote it; timeline | hebrews/intro.json `author` | Repository |
+| Title ancient, not part of the text; readers steeped in Israel's Scriptures; most think Jewish believers, some Gentile members; some argue mainly Gentile; synagogue safer | Readers | hebrews/intro.json `setting` | Repository |
+| ‘Those from Italy’: in Italy or Italians abroad; Rome suggested; Jerusalem, Alexandria proposed | Readers; map | hebrews/intro.json `setting` | Repository. No side |
+| Known to Clement of Rome (about AD 96); pre-70 case (present tense, no mention of the temple's fall, 8:13); post-70 case (tabernacle not temple); 60s most common, range 60 to 90 | Readers; timeline | hebrews/intro.json `date` | Repository. No side |
+| Claudius expulsion about AD 49 linked by some; Nero AD 64; no blood yet shed (12:4) | Timeline | hebrews/intro.json `date` | Repository |
+| Structure in six parts | How it is built | hebrews/intro.json `structure` | Repository |
+| Nicene Creed and Chalcedon wording (‘God of God, Light of Light, very God of very God ...’; ‘truly God and truly man’; ‘in all things like unto us, without sin’; the four ‘without’s) | The Son | creeds/documents/nicene-creed.json; chalcedonian-definition.json | Repository text |
+| ‘Learned obedience’ not once disobedient; ‘made perfect’ = complete, brought to the goal, for his office | The Son; words | hebrews/5.json `words` (G5218); hebrews/2.json `words` (G5048) | Repository |
+| Melchizedek: Genesis 14:18-20; Psalm 110:4; ‘without father or mother’ a point about Genesis' silence; other readings (heavenly being, the Son appearing); ‘like the Son of God’ a likeness | A priest like Melchizedek; words | genesis/plain/14.json (17-20 `later`, `hard`); psalms/plain/110.json (4) | Repository |
+| Kings from Judah, priests from Levi and Aaron | A priest like Melchizedek | psalms/plain/110.json (4 `hearers`) | Repository |
+| Law, tabernacle, priesthood God's gifts (2:2; 8:5; 5:4; 3:5); Romans 9:4 | Old covenant | BSB | BSB text |
+| ‘Obsolete’ and ‘takes away the first’ about the Sinai covenant arrangement read from Jeremiah 31; fault with the people (8:8) | Old covenant | hebrews/8.json `literary`, `hard` | Repository; BSB |
+| Romans 11:1; 11:28-29 | Old covenant | BSB | BSB text |
+| Views on Israel's place: replacement and fulfilment; covenant theology; dispensational; two-covenant (most churches do not teach it) | Old covenant | romans/plain/11.json (11-16 `hard`) | Repository wording, no side |
+| Contempt, expulsions and violence justified from the New Testament; ‘That reading is false. This site rejects it’; Acts 2:22-28 pointer | Old covenant; What it is not | acts/plain/2.json (22-28 `hard`); galatians/plain/4.json; hebrews/8.json `hard` (‘long and shameful history’) | Repository wording |
+| Since the Holocaust many churches repudiated teachings that fed hostility toward Jews | Old covenant | hebrews/8.json `hard` | Repository wording |
+| The five warning passages | Warnings; How it is built | hebrews/intro.json `reading` | Repository |
+| Reformed and Baptist (kept by God; warnings as means; never truly regenerated; hypothetical), Wesleyan, Arminian and Catholic (can forfeit; impossibility of final, deliberate apostasy) | Warnings | hebrews/6.json `hard`; romans/plain/8.json (31-39) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | Warnings | galatians/plain/5.json (1-6); 2-timothy/plain/2.json (11-13) | Word for word |
+| Honest Answer ‘Can you lose your salvation?’ | Warnings | client/src/data/answers.ts | Repository |
+| Heroes' flaws: Genesis 12 and 20 (wife as sister); Genesis 27; Exodus 2:12; Judges 6 (Gideon's signs) | Faith | BSB | BSB text |
+| Prosperity teaching named an error | Faith; What it is not | CLAUDE.md orthodoxy guardrails; 1-timothy/plain/6.json | Repository |
+| Greek Old Testament differences: Psalm 40:6; Psalm 8:5; Habakkuk 2:3-4; Genesis 47:31 | Old Testament | psalms/plain/40.json (6-10 `hard`); psalms/plain/8.json (3-9 `hearers`); BSB | Repository; BSB text |
+| Haggai 2:6 at Hebrews 12:26; Proverbs 3 at 12:5-6; Isaiah 8 at 2:13 | Old Testament | BSB | BSB text |
+| Key words: apaugasma, charaktēr, pararreō, archēgos, teleioō, katapausis, sabbatismos, diathēkē, ephapax, skia | Key words | hebrews/1, 2, 4, 8, 10, 12 `words` | Repository |
+| Jeremiah late seventh and early sixth centuries BC; Jerusalem destroyed 587 or 586 BC | Timeline | hebrews/8.json `historical` | Repository |
+| Map: Italy only, a region placed roughly near the frame's own ITALY label (40.6 N, 16.0 E); no place of writing or receiving claimed | Map | BookMap.tsx mediterranean frame label (39.95 N, 16.1 E); BSB 13:24 | Repository |
+| Deeper links: incarnation, offices, atonement, covenant, israel, perseverance, temple, faith | Go deeper | bible/doctrines.json | Repository |
+
+## The plain notes on Hebrews 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Verses 1-4 one sentence in Greek; rhythm; ‘in many ways’ | 1-4 | Chapter deep note `literary`; verses/1.json (1) | Repository |
+| Apaugasma (radiance); charaktēr (stamp, coin); katharismos (purification) | 1-4 | Chapter deep note `words` | Repository |
+| Angels and the giving of the law (2:2; Acts 7:53) | 1-4 | Chapter deep note `story` | Repository; BSB |
+| Priests stand, the Son sits (10:11) | 1-4 | Chapter deep note `doctrines` (atonement); BSB 10:11 | Repository; BSB |
+| ‘Became superior’ refers to the exaltation after humiliation (2:9) | 1-4 | verses/1.json (4) | Repository |
+| Nicene Creed and Chalcedon wording | 1-4; 5-6; 7-9 | creeds/documents | Repository text |
+| Amos 3:7; Numbers 12:8; Psalm 2:8; Psalm 33:6; Proverbs 8:27; Leviticus 16:30; Psalm 110:1 | 1-4 | BSB | BSB text |
+| Quotations introduced as God's speech | 5-6 | verses/1.json (5) | Repository |
+| Psalm 2 a royal psalm, many scholars think a coronation song | 5-6 | psalms/plain/2.json (1-3) | Repository |
+| 2 Samuel 7:12-14 (Solomon first); Psalm 89:27 (firstborn); Job 1:6 | 5-6 | BSB; chapter deep note `cultural`, `words` | BSB text; repository |
+| Deuteronomy 32:43 longer form in the Greek and a Dead Sea Scroll; BSB follows it; Psalm 97:7 | 5-6 | deuteronomy/32.json; verses/1.json (6) | Repository; BSB text |
+| ‘Today’ read of the coronation; of the resurrection (Acts 13:33) | 5-6 | verses/1.json (5); psalms/plain/2.json (4-9 `later`) | Repository; BSB |
+| ‘When God brings His firstborn’: birth, exaltation, return | 5-6 | verses/1.json (6) (Lane, Westcott; not named) | Repository |
+| Colossians 2:18, the worship of angels | 5-6; 10-14 | Chapter deep note `historical` | Repository; BSB |
+| Psalm 104:4: Hebrew mal'akh messenger or angel, ruach wind or spirit; Hebrews follows the Greek | 7-9 | lex H4397, H7307, G4151 (‘Heb.1:7 (LXX)’); verses/1.json (7) | Repository |
+| Psalm 45 a royal wedding song; translators differ; court language; elohim of rulers; Jewish readings | 7-9 | psalms/plain/45.json (1-9 `hard`); chapter deep note `hard` | Repository |
+| The Son God, yet not the Father (verses 8-9) | 7-9 | psalms/plain/45.json (1-9 `later`) | Repository |
+| Isaiah 9:6 | 7-9 | BSB | BSB text |
+| Psalm 102:1, 25-27; Hebrews' wording differs (‘O Lord’, ‘roll them up’), the writer usually following the Greek | 10-14 | BSB; hebrews/intro.json `reading` | BSB text; repository |
+| Psalm 110:1 most quoted or echoed; Matthew 22:42-45 | 10-14 | psalms/plain/110.json (1-3 `later`) | Repository; BSB |
+| Psalm 34:7; Philippians 2:10-11 takes up Isaiah; John 1:3 | 10-14 | Chapter deep note `hard`; BSB | Repository; BSB |
+| Angels continually sent to serve believers | 10-14 | verses/1.json (14) | Repository |
+
+## The plain notes on Hebrews 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| First of five warnings; pararreō (boat slipping past harbour, ring off a finger); slow drift | 1-4 | Chapter deep note `story`, `words` | Repository |
+| Argument from lesser to greater, a standard Jewish pattern | 1-4 | Chapter deep note `literary` | Repository |
+| Law through angels: not in Exodus, widespread tradition; Greek Deuteronomy 33:2; Acts 7:53; Galatians 3:19 | 1-4 | Chapter deep note `historical` | Repository; BSB |
+| Second generation (verse 3); signs as Acts describes | 1-4 | Chapter deep note `historical` | Repository |
+| Deuteronomy 33:2; 30:15; 26:8; Psalm 95:7-8 | 1-4 | BSB | BSB text |
+| Warning readings (Reformed and Baptist; Wesleyan, Arminian and Catholic); Romans 8:31-39 note; Honest Answer | 1-4 | romans/plain/8.json (31-39); 2-timothy/plain/2.json (11-13) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | 1-4 | galatians/plain/5.json (1-6) | Word for word |
+| Psalm 8:4-6 in its setting; Genesis 1:26; elohim; Greek ‘angels’ | 5-9 | psalms/plain/8.json (3-9); BSB | Repository; BSB text |
+| ‘A little’ in degree or for a little while; ‘taste death’ an idiom for dying; huper pantos | 5-9 | verses/2.json (7, 9) | Repository |
+| Extent of the atonement: all without exception; particular or definite; middle view; not universalism | 5-9 | 1-john/2.json `hard`; 2-peter/2.json `hard` | Repository wording, no side |
+| Archēgos, pioneer; family duties (kinsman-redeemer); not ashamed | 10-13 | Chapter deep note `cultural`, `words` | Repository |
+| Psalm 22:1, 22; Isaiah 8:17-18; Leviticus 25:48 | 10-13 | BSB | BSB text |
+| ‘Made perfect’ = completion; Greek OT word group for consecrating priests; 4:15; 7:26; Luke 2:52 | 10-13 | Chapter deep note `hard`, `words` | Repository; BSB |
+| Chalcedon wording | 10-13 | creeds/documents/chalcedonian-definition.json | Repository text |
+| Fear of death in the ancient world; funeral inscriptions; philosophers | 14-18 | Chapter deep note `cultural` | Repository |
+| Epilambanetai, to take by the hand; seed of Abraham Israel or all with Abraham's faith (Galatians 3:29) | 14-18 | verses/2.json (16) | Repository |
+| First use of ‘high priest’; hilaskomai | 14-18 | Chapter deep note `story`, `words` | Repository |
+| Genesis 3:15; Isaiah 25:8; Hosea 13:14; Leviticus 16:17; 1 Corinthians 15:26; John 11:35 | 14-18 | BSB | BSB text |
+| Death an enemy; victory won, full result to come; care lines on grief and self-harm | 14-18 | 2-timothy/plain/4.json (6-8); 2-timothy/plain/1.json (8-12) | Word for word |
+
+## The plain notes on Hebrews 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Only place Jesus called apostle; ‘whom we confess’ perhaps a confession at baptism | 1-6 | Chapter deep note `words`; verses/3.json (1) | Repository |
+| Moses revered in Jewish tradition; comparison respectful; both faithful | 1-6 | Chapter deep note `story`, `historical` | Repository |
+| House as building and household; therapōn an honoured attendant, not doulos | 1-6 | Chapter deep note `cultural`; verses/3.json (5) | Repository |
+| Numbers 12:7; Deuteronomy 34:10; 18:15 | 1-6 | BSB | BSB text |
+| Misuse named and rejected; Acts 2:22-28 pointer | 1-6 | acts/plain/2.json (22-28); hebrews/8.json `hard` | Repository wording |
+| ‘As the Holy Spirit says’ present tense | 7-11 | verses/3.json (7-8) | Repository |
+| Skleruno used of Pharaoh's heart | 7-11 | Chapter deep note `words` | Repository |
+| Massah ‘testing’, Meribah ‘quarrelling’; Exodus 17:7; the Greek translates the names | 7-11 | psalms/plain/95.json (7-11); verses/3.json (7-8) | Repository; BSB |
+| Forty years attached to seeing in Hebrews, to anger in the psalm; verse 17 returns to the psalm's order | 7-11 | verses/3.json (9, 17) | Repository |
+| Numbers 14:11, 22-23, 29-31; Joshua 21:44; 1 Corinthians 10:11; Psalm 95:1 | 7-11; 16-19 | BSB | BSB text |
+| Community in homes; mutual exhortation; ‘Today’ as the present age; sin a deceiver | 12-15 | Chapter deep note `cultural`; verses/3.json (13) | Repository |
+| Readings of verse 14 (Reformed evidence; Arminian and Wesleyan face value; means) | 12-15 | Chapter deep note `hard`; verses/3.json (14) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | 12-15 | galatians/plain/5.json (1-6) | Word for word |
+| Exodus 7:3; 17:3; Proverbs 27:17; Psalm 106:24-25; Deuteronomy 12:9 | 12-15; 16-19 | BSB | BSB text |
+| The redeemed themselves rebelled; apeitheō disobey or refuse to believe | 16-19 | verses/3.json (16, 18-19) | Repository |
+
+## The plain notes on Hebrews 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Wilderness generation had good news too; hearing not joined with faith | 1-5 | verses/4.json (2) | Repository |
+| ‘We enter’ present or sure future; many hold both | 1-5 | verses/4.json (3) | Repository |
+| God's rest finished since creation; God rested not from tiredness but completion | 1-5 | verses/4.json (3); chapter deep note `cultural` | Repository |
+| Genesis 2:2 BSB wording; Hebrews quotes the second half in the Greek wording | 1-5 | verses/4.json (4-5); BSB | Repository; BSB text |
+| Two texts linked by a shared word, a Jewish method | 1-5 | Chapter deep note `literary`; verses/4.json (4-5) | Repository (method not named) |
+| Joshua and Jesus the same name in Greek; Joshua 21:44; Joshua 1:13 | 6-11 | Chapter deep note `historical`; verses/4.json (8); BSB | Repository; BSB text |
+| Psalm 95 has no Hebrew heading; Greek heading names David | 6-11 | verses/4.json (6-7) | Repository |
+| Sabbatismos first known occurrence; Sabbath-keeping, not mere cessation; ‘people of God’ a title for Israel | 6-11 | verses/4.json (9); chapter deep note `words` | Repository |
+| Verse 10 readings: rest from works to earn standing; rest at life's end (Revelation 14:13); compatible | 6-11 | verses/4.json (10) | Repository |
+| Sabbath views: Seventh-day Adventists; Reformed and Presbyterian (Lord's Day); Lutherans, Baptists, evangelicals (fulfilled in Christ) | 6-11 | Chapter deep note `hard` | Repository wording, no side (Seventh Day Baptists and Westminster not named) |
+| Exodus 20:11; Deuteronomy 5:15 | 6-11 | BSB; chapter deep note `cultural` | BSB text |
+| Sword picture from cutting a sacrifice; soul and spirit poetic for the whole person; trichotomy and dichotomy, not settled | 12-13 | Chapter deep note `cultural`; verses/4.json (12) | Repository, no side |
+| Trachēlizō: wrestler's neck, sacrificial victim; logos wordplay | 12-13 | verses/4.json (13) | Repository |
+| Jeremiah 23:29; Isaiah 55:11; Psalm 139:1-2 | 12-13 | BSB | BSB text |
+| Hinge of the letter, opening the high-priest section to chapter 10 | 14-16 | Chapter deep note `story` | Repository |
+| Sumpathēsai (suffer with); weaknesses frailties not sins; proserchomai of priests approaching; parrēsia; throne of grace may echo the mercy seat | 14-16 | verses/4.json (15, 16) | Repository |
+| Chalcedon ‘in all things like unto us, without sin’; a complete human nature | 14-16 | creeds/documents/chalcedonian-definition.json; verses/4.json (15) | Repository text |
+| Leviticus 16:2; Exodus 25:22; Psalm 103:13-14; Isaiah 53:3 | 14-16 | BSB | BSB text |
+
+## The plain notes on Hebrews 5 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Three marks of a high priest; answered in reverse order | 1-4; 5-6 | Chapter deep note `literary` | Repository |
+| Day of Atonement: for his own sins first (Leviticus 16:6); Leviticus 9:7; Exodus 28:1; Korah (Numbers 16:40) | 1-4 | Chapter deep note `cultural`, `historical`; BSB | Repository; BSB text |
+| Kings from Judah, priests from Levi | 5-6 | psalms/plain/110.json (4) | Repository |
+| Psalm 110:4 in its setting; Genesis 14:18-20; Salem usually Jerusalem; most take Melchizedek as a real king | 5-6 | psalms/plain/110.json (4); genesis/plain/14.json (17-20) | Repository |
+| Melchizedek named in no other New Testament book; only Hebrews quotes Psalm 110:4 | 5-6 | Scan of the BSB text in the repository for ‘Melchizedek’ (Genesis 2, Psalms 1, Hebrews 11 verses) | Repository text |
+| Gethsemane most likely; perhaps the whole passion; prosenegkas a sacrificial verb; eulabeia reverence | 7-10 | Chapter deep note `historical`; verses/5.json (7) | Repository |
+| Mathein and pathein a Greek proverbial pair | 7-10 | verses/5.json (8) (Aeschylus, Herodotus; not named) | Repository |
+| Learning = experience of obeying at full cost, not from disobedience; teleioō used for ordaining priests in the Greek OT | 7-10 | verses/5.json (8, 9-10); chapter deep note `words` | Repository |
+| Three readings of ‘He was heard’ | 7-10 | Chapter deep note `hard` | Repository, no side |
+| Psalm 22:24; 116:1; Isaiah 50:5-6; Isaiah 45:17 (‘everlasting salvation’); Mark 14:36 | 7-10 | BSB; verses/5.json (9-10) | BSB text; repository |
+| Nicene Creed and Chalcedon wording | 7-10 | creeds/documents | Repository text |
+| Care line ‘please do not carry it alone. Tell someone you trust: a doctor, a pastor or a friend. The Find Help page ...’; psalms kept in God's book | 7-10 | psalms/plain/143.json (1-12); 2-corinthians/plain/4.json (13-18) | Word for word (opening clause adapted) |
+| Third warning begins; nōthros ‘you have become’; stoicheia; milk and solid food common image (1 Corinthians 3:1-2); gumnazō | 11-14 | verses/5.json (11, 12, 13-14); chapter deep note `cultural` | Repository |
+| ‘Oracles of God’ the phrase of Romans 3:2 | 11-14 | verses/5.json (12) | Repository; BSB |
+| 1 Kings 3:9; Psalm 34:8 | 11-14 | BSB | BSB text |
+
+## The plain notes on Hebrews 6 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Leaving’ like a builder leaving a foundation; three pairs; pherōmetha ‘let us be carried’; ‘if God permits’ | 1-3 | verses/6.json (1-2, 3) | Repository |
+| Foundations rooted in Judaism (washings, laying on of hands, resurrection, judgment); ‘baptisms’ plural, not the usual word | 1-3 | Chapter deep note `historical` | Repository |
+| Ezekiel 18:30; Genesis 15:6; Leviticus 1:4; Numbers 27:23; Daniel 12:2 | 1-3 | BSB | BSB text |
+| One group described five ways; ‘enlightened’ used of the readers (10:32); powers = miracles (2:4); parapiptō only here | 4-8 | verses/6.json (4, 5, 6); chapter deep note `words` | Repository |
+| Burning a worthless field; thorns and thistles (Genesis 3:17-18) | 4-8 | Chapter deep note `cultural`; BSB | Repository; BSB text |
+| Tertullian-era use: serious sins after baptism unforgivable (Tertullian not named) | 4-8 | Chapter deep note `historical` | Repository |
+| Readings: never regenerated; means of perseverance; hypothetical; Arminian and Wesleyan (final deliberate apostasy); Catholic and Orthodox (grace lost and restored); ‘while they are crucifying’ | 4-8 | Chapter deep note `hard`; verses/6.json (6) | Repository, no side (scholars not named; Free Grace view omitted for length) |
+| Turning against Christ himself, not everyday failure; concern a sign of tenderness | 4-8 | Chapter deep note `hard` | Repository |
+| Care line ‘If you are afraid that you have fallen away ...’ | 4-8 | galatians/plain/5.json (1-6) | Word for word |
+| Isaiah 5:2; Psalm 34:8 | 4-8 | BSB | BSB text |
+| ‘Beloved’ only here in Hebrews; perfect ‘we are persuaded’; Reformed and Arminian readings of verse 9 | 9-12 | verses/6.json (9) | Repository, no side |
+| Serving and still serving; nōthros repeats 5:11 | 9-12 | verses/6.json (10, 11-12) | Repository |
+| Deuteronomy 32:4; Proverbs 19:17; Psalm 27:14 | 9-12 | BSB | BSB text |
+| Oaths in the ancient world; God swore by himself; anchor an early Christian symbol in the catacombs; curtain; prodromos | 13-20 | Chapter deep note `cultural`; verses/6.json (16-18, 19-20) | Repository |
+| Genesis 22:16-17; Numbers 35:11; Leviticus 16:12; Psalm 110:4 | 13-20 | BSB | BSB text |
+| Oaths: Jesus' teaching on two levels of truth; Anabaptists of the 1500s; most churches; Hebrews 6:17 cited | 13-20 | matthew/plain/5.json (33-37 `hearers`, `hard`) | Repository, no side |
+
+## The plain notes on Hebrews 7 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Genesis 14:18-20; Salem usually Jerusalem (Psalm 76:2); priest of God Most High | 1-3 | genesis/plain/14.json (17-20); BSB | Repository; BSB text |
+| ‘King of righteousness’, ‘king of peace’ as Hebrews explains; Isaiah 9:7 | 1-3 | BSB 7:2; Isaiah 9:7 | BSB text |
+| Priestly descent required; Ezra 2:62 | 1-3 | Chapter deep note `cultural`; BSB | Repository; BSB text |
+| Silence of Scripture read as meaningful, a Jewish style of argument | 1-3 | Chapter deep note `cultural` | Repository |
+| Readings of verse 3: Genesis' silence (most); pre-incarnate Christ; Shem; heavenly figure in a Dead Sea Scroll | 1-3 | Chapter deep note `hard`, `historical`; genesis/plain/14.json (17-20 `hard`) | Repository, no side (11QMelchizedek and Philo not named) |
+| Tithe acknowledges superiority; blessing by the greater; descendants present in ancestors; ‘so to speak’ marks a figure | 4-10 | Chapter deep note `cultural`; verses/7.json (9-10) | Repository |
+| Numbers 18:21; Genesis 14:19; Genesis 35:11 | 4-10 | BSB | BSB text |
+| Tithe views; 2 Corinthians 9:7 | 4-10 | genesis/plain/14.json (17-20 `hard`) | Repository wording, no side |
+| Giving care line | 4-10 | 1-timothy/plain/6.json (3-10) | Word for word |
+| Perfection = access to God with a cleansed conscience; contrary-to-fact; Psalm 110 later than Moses | 11-19 | verses/7.json (11, 28) | Repository |
+| Judah, no priests; athetēsis a legal term for annulment; ‘former commandment’ the rule of descent | 11-19 | verses/7.json (12-14, 18-19) | Repository |
+| Psalm 19:7; Romans 7:12; 8:3; Genesis 49:10; 1 Corinthians 9:21 | 11-19 | BSB | BSB text |
+| Misuse named and rejected; Acts 2:22-28 pointer | 11-19 | acts/plain/2.json (22-28) | Repository wording |
+| Views of the law (threefold division; law of Christ) | 11-19 | doctrines/law.json `differ` | Repository, no side |
+| Oath; enguos, guarantor; first use of ‘covenant’; aparabatos; intercession continues; priest and offering one | 20-28 | verses/7.json (20-22, 23-25, 27); chapter deep note `words` | Repository |
+| Leviticus 16:6, 15; Isaiah 53:12; Psalm 110:4 | 20-28 | BSB | BSB text |
+| Chalcedon wording | 20-28 | creeds/documents/chalcedonian-definition.json | Repository text |
+
+## The plain notes on Hebrews 8 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Kephalaion main point or summary; ‘the Majesty’ a reverent name; true = real or original | 1-6 | verses/8.json (1-2) | Repository |
+| Verse 3 does not yet name the offering (9:14; 10:10) | 1-6 | verses/8.json (3) | Repository |
+| Copy and shadow; tupos; ancient temples as copies of heavenly ones; Plato and Jewish apocalyptic both suggested; thinking historical as well as spatial | 1-6 | Chapter deep note `cultural`, `words`; verses/8.json (4-5) | Repository (Philo not named) |
+| Mesitēs, used of Moses (Galatians 3:19) | 1-6 | verses/8.json (6) | Repository |
+| Exodus 25:8-9, 40; Psalm 110:1 | 1-6 | BSB | BSB text |
+| Longest Old Testament quotation in the New Testament | 7-13 | Chapter deep note `historical`; verses/8.json (8) | Repository |
+| God found fault with the people, not the law's holiness | 7-13 | Chapter deep note `literary`; verses/8.json (8) | Repository |
+| Four promises; God's ‘remembering’ is action | 7-13 | Chapter deep note `literary`; verses/8.json (12) | Repository |
+| Jeremiah late 600s and early 500s BC; destruction 587 or 586 BC; Book of Consolation (not named) | 7-13 | Chapter deep note `historical` | Repository |
+| Jeremiah 31:31-34 BSB; Greek ‘did not abide ... I disregarded them’ for Hebrew ‘they broke, though I was a husband’; ‘laws’ plural for ‘law’ | 7-13 | verses/8.json (9, 10); BSB | Repository; BSB text |
+| Ezekiel 36:26; Luke 22:20; Romans 11:1, 28-29 | 7-13 | BSB | BSB text |
+| Views on Israel's place; misuse named and rejected; Acts 2:22-28 pointer; churches since the Holocaust | 7-13 | romans/plain/11.json (11-16); acts/plain/2.json (22-28); hebrews/8.json `hard` | Repository wording, no side |
+| ‘Soon disappear’ read of the temple standing, or from Jeremiah's day | 7-13 | verses/8.json (13); hebrews/intro.json `date` | Repository, no side |
+
+## The plain notes on Hebrews 9 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tabernacle's two rooms and furnishings; twelve loaves renewed each Sabbath; the wilderness tent, not the temple | 1-10 | Chapter deep note `historical`; verses/9.json (2) | Repository |
+| Day of Atonement: bull for himself, goat for the people, scapegoat | 1-10 | Chapter deep note `historical`; Leviticus 16 | Repository; BSB |
+| Layout read as the Spirit's ‘not yet’; parabolē; external regulations | 1-10 | verses/9.json (8, 9-10) | Repository |
+| Exodus 26:33; Leviticus 16:2, 21, 30; Leviticus 4:20; Psalm 103:12; Exodus 30:6 | 1-10 | BSB | BSB text |
+| Saints of the old covenant forgiven on the credit of the sacrifice to come; Romans 3:25 | 1-10 | verses/9.json (15 `theology`) | Repository; BSB |
+| Misuse named and rejected; Acts 2:22-28 pointer | 1-10 | acts/plain/2.json (22-28) | Repository wording |
+| Incense altar puzzle: censer, or belonging in use; ‘we cannot discuss these things in detail’ | 1-10 | Chapter deep note `hard` | Repository |
+| ‘By his own blood’ the ground of entry, not carrying blood; eternal redemption; lutrōsis | 11-14 | verses/9.json (12); chapter deep note `words` | Repository |
+| Red heifer ashes for corpse impurity; lesser to greater; ‘eternal Spirit’ most often the Holy Spirit, some Christ's divine spirit; amōmos | 11-14 | Chapter deep note `cultural`; verses/9.json (13-14) | Repository |
+| Numbers 19:9; Psalm 51:10, 17; Isaiah 1:11; Micah 6:6-8 | 11-14 | BSB | BSB text |
+| Christ's death reaches back to transgressions under the first covenant | 15-22 | verses/9.json (15) | Repository |
+| Diathēkē covenant and will; BSB reads ‘will’; covenant reading and the curse | 15-22 | Chapter deep note `cultural`; verses/9.json (16-17) | Repository, no side |
+| Exodus 24:7-8; Hebrews adds water, scarlet wool, hyssop from other rites (Leviticus 14:4; Numbers 19:6) | 15-22 | Chapter deep note `historical`; BSB | Repository; BSB text |
+| ‘Almost’: flour for the poor (Leviticus 5:11); fire and water | 15-22 | verses/9.json (21-22) | Repository; BSB |
+| Leviticus 17:11; Genesis 22:8 | 15-22 | BSB | BSB text |
+| Ways of describing the atonement (penal substitution, not an angry Father against an unwilling Son; Christus Victor; love shown) | 15-22 | doctrines/atonement.json `differ` | Repository, no side |
+| Purifying heavenly things: readings; incense cloud ‘so that he will not die’ (Leviticus 16:13); appears openly | 23-28 | verses/9.json (23, 24) | Repository; BSB |
+| Once at the end of the ages; Isaiah 53:12; Ecclesiastes 12:14 | 23-28 | verses/9.json (25-26, 27-28); BSB | Repository; BSB text |
+| Verse 27 rules out repeated lives (‘many readers’); intermediate state views pointed to | 23-28 | verses/9.json (27-28 `theology`); 2-timothy/plain/4.json (6-8) | Repository |
+| Grief care line | 23-28 | 2-timothy/plain/1.json (8-12) | Word for word |
+
+## The plain notes on Hebrews 10 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shadow and substance (eikōn); repetition shows inadequacy; anamnēsis the word of Luke 22:19 | 1-4 | verses/10.json (1, 2-3) | Repository |
+| Isaiah 1:11; Hosea 6:6; 1 Samuel 15:22; Leviticus 4:20 | 1-4 | BSB | BSB text |
+| Old-covenant saints forgiven on the credit of the coming sacrifice (9:15) | 1-4 | verses/9.json (15 `theology`) | Repository |
+| Misuse named and rejected; Acts 2:22-28 pointer | 1-4 | acts/plain/2.json (22-28) | Repository wording |
+| Psalm 40 as Christ's words at the incarnation; sacrifice versus obedience; full name ‘Jesus Christ’ rare | 5-10 | verses/10.json (5, 6-7, 10) | Repository |
+| Psalm 40:6-8 BSB; Hebrew ‘ears’, Greek ‘a body’; how it arose unknown; readings | 5-10 | psalms/plain/40.json (6-10 `hard`); chapter deep note `literary` | Repository; BSB text |
+| No seat for priests; perielein; Psalm 110:1; ‘being sanctified’; Jeremiah 31:33-34 shortened; verse 18 a verdict | 11-18 | Chapter deep note `cultural`; verses/10.json (11-12, 13-14, 15-17, 18) | Repository; BSB |
+| One Greek sentence (19-25); three calls; paroxusmos; some had stopped meeting, perhaps fear or fatigue; ‘the Day’ | 19-25 | verses/10.json (19-20, 24-25); chapter deep note `cultural`, `literary` | Repository |
+| ‘Bodies washed’ heard of baptism by many | 19-25 | verses/10.json (21-22, 23 ‘perhaps the confession made at baptism’) | Repository (‘many readers’) |
+| Exodus 29:4; Ezekiel 36:25; Psalm 133:1; 40:9; ‘a great priest’ the Greek OT phrase for the high priest | 19-25 | BSB; verses/10.json (21-22) | BSB text; repository |
+| Care line on controlling leaders or churches | 19-25 | 2-corinthians/plain/11.json (16-21) | Word for word |
+| ‘Deliberately’ first; present participle a continuing course; ‘we’; lesser to greater | 26-31 | verses/10.json (26-27, 28-29) | Repository |
+| Deuteronomy 17:6 (apostasy case); Isaiah 26:11 (Greek wording fused); Deuteronomy 32:35-36 (Hebrew ‘vindicate’, Greek ‘judge’); Romans 12:19 | 26-31 | verses/10.json `ot` (26-27, 28-29, 30-31); BSB | Repository; BSB text |
+| Numbers 15:27-31 unintentional and defiant sins | 26-31 | Chapter deep note `words` (hekousios); BSB | Repository; BSB text |
+| Readings of 26-31 (Reformed outward setting apart; Arminian and Wesleyan; means; Catholic and Orthodox) | 26-31 | Chapter deep note `hard` | Repository, no side (Free Grace view and Owen omitted) |
+| 1 John 1:9 | 26-31 | BSB | BSB text |
+| Care line ‘If you are afraid that you have fallen away ...’ | 26-31 | galatians/plain/5.json (1-6) | Word for word |
+| Theatrizomenoi; prisoners fed by friends; confiscation by law or mob; Claudius about AD 49 and Acts 18:2 (for those placing readers in Rome) | 32-39 | verses/10.json (32-34); chapter deep note `historical`, `cultural` | Repository (Suetonius not named) |
+| Apoballō, throwing away a shield; hupomonē | 32-39 | verses/10.json (35-36) | Repository |
+| Isaiah 26:20; Habakkuk 2:3-4 BSB; Greek differences (coming one, shrinking back, order); Romans 1:17 | 32-39 | verses/10.json (37-38 `ot`); BSB | Repository; BSB text |
+| Acts 25:11; care lines on suffering and danger | 32-39 | BSB; 2-timothy intro `shame`; 1-thessalonians/plain/3.json (1-5) | BSB text; word for word |
+
+## The plain notes on Hebrews 11 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. There are no verse notes for Hebrews 11 to 13; the chapter deep notes and other repository notes were used.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hupostasis (foundation; the word of 1:3); elegchos (proof) | 1-3 | Chapter deep note `words` | Repository |
+| Lists of heroes a familiar Jewish form; praised for faith in the promise | 1-3 | Chapter deep note `cultural` (Sirach, 1 Maccabees not named) | Repository |
+| Genesis 1:3; Psalm 33:9; age-of-earth questions not settled | 1-3 | BSB; psalms/plain/8.json (3-9 `hard`) | BSB text; repository, no side |
+| ‘By faith’ one word repeated (anaphora) | 4-7 | Chapter deep note `literary` | Repository |
+| Genesis 4:4; 5:24 (Hebrews' wording differs, the writer usually following the Greek); 6:22 | 4-7 | BSB; hebrews/intro.json `reading` | BSB text; repository |
+| Strangers and resident foreigners; Abraham owned only a burial plot (Genesis 23) | 8-16 | Chapter deep note `cultural` | Repository |
+| Genesis 12:1; 18:12; 23:4; Psalm 39:12; Jeremiah 29:7; Deuteronomy 10:19 | 8-16 | BSB | BSB text |
+| ‘Isaac’ means ‘he laughs’ | 8-16 | genesis/plain/21.json (1-7) | Repository |
+| Genesis 21:12; 22:8; 50:25; Exodus 13:19 | 17-22 | BSB | BSB text |
+| Genesis 47:31 ‘bed’ and Hebrews 11:21 ‘staff’: mittah (H4296) and matteh (H4294) share the consonants מטה; the vowel-marked Hebrew reads ‘bed’ | 17-22 | lex/H (H4294, H4296); genesis/49.json on traditional vowels | Repository |
+| Genesis 22 readings; ‘not like the gods who demanded children’; care line on harming a child | 17-22 | genesis/plain/22.json (1-2 `hard`) | Repository; word for word |
+| Moses' parents; Exodus 2:2, 11-12; Joshua 2:9, 11; 6:25; James 2:25; Matthew 1:5 | 23-31 | BSB | BSB text |
+| Rahab's lie: Augustine (always wrong, praised despite it); deceiving unjust violence; Hebrew midwives (Exodus 1); agreement on the focus | 23-31 | joshua/2.json `hard` | Repository, no side |
+| Allusions: Daniel 6; Daniel 3; 1 Kings 17; 2 Kings 4; Maccabean martyrs about 167 BC under Antiochus IV; Isaiah sawn in two (a Jewish tradition) | 32-40 | Chapter deep note `historical` | Repository (Martyrdom of Isaiah and 2 Maccabees not named) |
+| Names out of order (Barak before Gideon; Jephthah before Samson); Samson's prayer (Judges 16:28); Jephthah's vow, most common reading and minority view; Judges as decline | 32-40 | Chapter deep note `historical`, `hard`; judges/11.json | Repository |
+| Triumph to suffering: faith not measured by success | 32-40 | Chapter deep note `literary` | Repository |
+| Prosperity teaching named an error | 32-40 | CLAUDE.md guardrails; 1-timothy/plain/6.json | Repository |
+| Care line on prayers for rescue not answered; Daniel 3:17-18 | 32-40 | acts/plain/12.json (1-5) | Word for word (‘The church surely prayed for James too’ omitted) |
+
+## The plain notes on Hebrews 12 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Games across the Roman world; runners stripped weights; agōn; witnesses as those who finished | 1-3 | Chapter deep note `cultural` | Repository |
+| Archēgos and teleiōtēs; hupomonē | 1-3 | Chapter deep note `words` | Repository |
+| Crucifixion the death Rome kept for slaves and rebels | 1-3 | philippians/intro.json teaching (‘The song of Christ’) | Repository wording |
+| Isaiah 40:31; 53:3; Psalm 22:6; Psalm 110:1 | 1-3 | BSB | BSB text |
+| Not yet shed blood (12:4); paideia the whole upbringing; pedagogy; nothos no inheritance claim | 4-11 | Chapter deep note `historical`, `cultural`, `words` | Repository |
+| Proverbs 3:11-12 BSB; Hebrews' last line follows the Greek (‘every son He receives’) | 4-11 | Chapter deep note `historical` (Greek OT); BSB | Repository; BSB text |
+| Not every pain a penalty; Job's friends; John 9:3; not to stay in harm's way; human fathers ‘as they thought best’ | 4-11 | Chapter deep note `hard`; wisdom/entry/suffering.json | Repository |
+| Care lines: sickness and faith (2 Corinthians 12 form); child abuse a crime (Colossians 3 form); ‘Father’ a hard word (Romans 8 form) | 4-11 | 2-corinthians/plain/12.json (7-10); colossians/plain/3.json (20-21); romans/plain/8.json (12-17) | Word for word (‘this verse’ to ‘this passage’) |
+| Isaiah 35:3; Proverbs 4:26; Deuteronomy 29:18 | 12-17 | Chapter deep note `historical`; BSB | BSB text |
+| Esau traded lasting for immediate; Genesis 25:34; 27:38; 33:4 | 12-17 | Chapter deep note `cultural`; BSB | Repository; BSB text |
+| Two readings of ‘no ground for repentance’ | 12-17 | Chapter deep note `hard` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | 12-17; 25-29 | galatians/plain/5.json (1-6) | Word for word |
+| Sinai sources: Exodus 19:12, 16; Deuteronomy 5:25; Moses' fear from Deuteronomy 9:19 | 18-24 | Chapter deep note `historical`; BSB | Repository; BSB text |
+| Two long sentences ‘you have not come’ / ‘you have come’; lesser to greater | 18-24; 25-29 | Chapter deep note `literary` | Repository |
+| Psalm 48:2; Genesis 4:10 | 18-24 | BSB | BSB text |
+| Misuse named and rejected; Acts 2:22-28 pointer | 18-24 | acts/plain/2.json (22-28) | Repository wording |
+| Haggai 2:6 (Hebrews' wording differs, the writer usually following the Greek); Deuteronomy 4:24 | 25-29 | Chapter deep note `historical`; BSB | Repository; BSB text |
+| Asaleutos, unshakable | 25-29 | Chapter deep note `words` | Repository |
+
+## The plain notes on Hebrews 13 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Philoxenia ‘love of strangers’; inns' poor reputation; prisoners depended on friends; visiting drew suspicion | 1-6 | Chapter deep note `cultural`, `words` | Repository |
+| Genesis 18:2; Genesis 19; Joshua 1:5; Deuteronomy 31:6; Psalm 118:6; Proverbs 30:8 | 1-6 | Chapter deep note `cultural`; BSB | BSB text |
+| Abuse-in-marriage care line; money line ‘these notes are not financial advice’ | 1-6 | 1-corinthians/plain/7.json (10-16); 1-timothy/plain/6.json (3-10) | Word for word |
+| Verse 7 leaders of the past; ‘outcome’; strange teachings about foods (Jewish food laws, sacrificial meals, other rules) | 7-9 | Chapter deep note `literary`, `cultural` | Repository |
+| Deuteronomy 32:7; Psalm 102:27; Leviticus 11 | 7-9 | BSB | BSB text |
+| Controlling-leader care line (shortened) | 7-9 | 2-corinthians/plain/11.json (16-21) | Word for word, two sentences omitted |
+| Sin-offering bodies burned outside the camp (Leviticus 16:27; 6:30); outside the camp for the unclean and condemned; Jesus crucified outside the walls | 10-16 | Chapter deep note `cultural`; BSB; John 19:17 | Repository; BSB text |
+| Altar = cross, some the Lord's Supper; readings differ | 10-16 | Chapter deep note `cultural` (foods); hebrews/intro.json `purpose` | Repository, narrowed to ‘most likely’ and ‘some readers’ |
+| Exodus 33:7; Psalm 50:14; Hosea 14:2 | 10-16 | BSB | BSB text |
+| ‘The camp’ and retreat into the synagogue (‘some readers’); misuse named and rejected | 10-16 | hebrews/intro.json `overview`, `setting`; acts/plain/2.json (22-28) | Repository wording |
+| Leaders watch over souls, give account; trust not blind obedience; 1 Peter 5:3; Acts 5:29; church orders differ; misuse of 13:17 | 17-19 | Chapter deep note `hard`; wisdom/entry/submitting-to-leaders.json (`application`, `deep.misread` on Hebrews 13:17) | Repository |
+| ‘Nothing in this passage shields a leader who does harm ...’ | 17-19 | 1-timothy/plain/3.json (1-7) | Word for word |
+| Crimes to the police; a church meeting no substitute | 17-19 | 1-timothy/plain/5.json (17-22) | Repository wording |
+| Ezekiel 34:2, 23; Psalm 23:1 | 17-19 | BSB | BSB text |
+| Benediction one of the richest; ‘word of exhortation’ the phrase of Acts 13:15; Timothy released, no other record | 20-25 | Chapter deep note `literary`, `historical` | Repository |
+| ‘Those from Italy’ two readings | 20-25 | Chapter deep note `historical`; hebrews/intro.json `setting` | Repository, no side |
+| Isaiah 63:11; Zechariah 9:11; Numbers 6:26 | 20-25 | BSB | BSB text |
+
+## Hebrews complete (2026-11-20)

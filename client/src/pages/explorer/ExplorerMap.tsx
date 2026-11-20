@@ -12,9 +12,14 @@
  *    eleven acts of the Bible's Story (/study/bible/story). A finished stop
  *    opens its own page; a stop still being drawn shows its summary and says
  *    so, with no link. "You are here" marks the last stop opened.
- * 4. "Why we believe": the core doctrines as cards, each resting on its
- *    passages and pointing back to the stops that teach it.
- * 5. For parents and leaders.
+ * 4. "What the Explorer holds": every part of the room counted, each a
+ *    link to its own section, so any film, card, thread or map is two taps
+ *    from here at most (the counts also stand beside each heading).
+ * 5. "Watch and learn" (Watch.tsx): the moving pictures and the maps that move.
+ * 6. "Why we believe": the core doctrines as cards, each resting on its
+ *    passages and pointing back to the stops that teach it, with a list of
+ *    the cards at the top of the section.
+ * 7. For parents and leaders.
  *
  * Data: client/public/explorer/index.json (scripts/build-explorer-index.mjs).
  */
@@ -45,7 +50,7 @@ import {
   type ThreadStop,
 } from "@/lib/explorer";
 import { CardArt, CARD_PICTURES, HeadArt, Roundel } from "./art";
-import { LevelSwitch, ThreadIcon } from "./parts";
+import { Count, LevelSwitch, ThreadIcon } from "./parts";
 import { Watch, WatchLinks } from "./Watch";
 import "./explorer.css";
 import "./films/film.css";
@@ -155,8 +160,9 @@ export default function ExplorerMap() {
 
       <section className="ex-sec ex-sec--warm" aria-labelledby="ex-map-title">
         <div className="ex-wrap">
-          <h2 className="ex-h2" id="ex-map-title">
+          <h2 className="ex-h2 ex-anchor" id="ex-map-title">
             The map
+            {data && <Count n={data.stops.length} what="stops" />}
           </h2>
           <p className="ex-lede">
             Thirteen stops, from the first page to the last.{" "}
@@ -173,8 +179,14 @@ export default function ExplorerMap() {
               />
             </div>
             <div className="ex-panel">
-              <h2 className="ex-panel__title">
+              <h2 className="ex-panel__title ex-anchor" id="ex-threads">
                 Threads that run through the whole Bible
+                {data && (
+                  <Count
+                    n={data.threads.filter(t => t.status === "finished").length}
+                    what="threads"
+                  />
+                )}
               </h2>
               {data ? (
                 <Threads
@@ -246,6 +258,8 @@ export default function ExplorerMap() {
         </div>
       </section>
 
+      {data && <Holds index={data} />}
+
       {data && <Watch index={data} level={level} />}
 
       {data && (
@@ -289,6 +303,72 @@ export default function ExplorerMap() {
         </div>
       </section>
     </Layout>
+  );
+}
+
+/**
+ * "What the Explorer holds": every part of the room, counted, each a link to
+ * its section; from there any film, card, thread or map is one more tap.
+ * Only finished parts are counted; what is still being made is named after.
+ */
+function Holds({ index }: { index: ExplorerIndex }) {
+  const films = (index.films ?? []).filter(f => f.status === "finished");
+  const filmsSoon = (index.films ?? []).length - films.length;
+  const threads = index.threads.filter(t => t.status === "finished");
+  const threadsSoon = index.threads.length - threads.length;
+  const cards = index.cards.filter(c => c.status === "finished");
+  const cardsSoon = index.cards.length - cards.length;
+  const groups = index.filmGroups ?? [];
+  const plural = (n: number, one: string, many: string) =>
+    `${n} ${n === 1 ? one : many}`;
+  const soon = [
+    filmsSoon ? plural(filmsSoon, "moving picture", "moving pictures") : "",
+    threadsSoon ? plural(threadsSoon, "thread", "threads") : "",
+    cardsSoon ? plural(cardsSoon, "card", "cards") : "",
+  ].filter(Boolean);
+  return (
+    <section className="ex-sec ex-sec--tight" aria-labelledby="ex-holds-title">
+      <div className="ex-wrap">
+        <h2 className="ex-h2" id="ex-holds-title">
+          What the Explorer holds
+        </h2>
+        <ul className="ex-holds">
+          <li>
+            <a href="#ex-map-title">The map</a>
+            <span>{plural(index.stops.length, "stop", "stops")}</span>
+          </li>
+          <li>
+            <a href="#ex-threads">Threads</a>
+            <span>{plural(threads.length, "thread", "threads")}</span>
+          </li>
+          <li>
+            <a href="#watch">Watch and learn</a>
+            <span>
+              {plural(films.length, "moving picture", "moving pictures")}
+            </span>
+            <ul>
+              {groups.map(g => (
+                <li key={g.id}>
+                  <a href={`#wl-g-${g.id}`}>{g.name}</a>
+                  <span>{films.filter(f => f.group === g.id).length}</span>
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li>
+            <a href="#wl-g-maps">Maps that move</a>
+            <span>2 maps</span>
+          </li>
+          <li>
+            <a href="#ex-believe-title">Why we believe</a>
+            <span>{plural(cards.length, "card", "cards")}</span>
+          </li>
+        </ul>
+        {soon.length > 0 && (
+          <p className="ex-note">Still being made: {soon.join(", ")}.</p>
+        )}
+      </div>
+    </section>
   );
 }
 
@@ -528,13 +608,23 @@ function Believe({
   return (
     <section className="ex-sec" aria-labelledby="ex-believe-title">
       <div className="ex-wrap">
-        <h2 className="ex-h2" id="ex-believe-title">
+        <h2 className="ex-h2 ex-anchor" id="ex-believe-title">
           Why we believe
+          <Count n={ready.length} what="cards" />
         </h2>
         <p className="ex-lede">
           What Christians everywhere confess, one card at a time: what it says,
           where the Bible says it, and the question people ask.
         </p>
+        <nav aria-label="The cards" className="ex-holds__jump">
+          <ul>
+            {ready.map(c => (
+              <li key={c.id}>
+                <a href={`#believe-${c.id}`}>{c.title}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <div className="ex-cards">
           {ready.map(c => (
             <div

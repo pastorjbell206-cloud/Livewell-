@@ -548,7 +548,7 @@ for (const c of cards) {
       fail(w, "is finished but has no file in films/");
       continue;
     }
-    if (!scenesSrc.includes(`"${f.slug}": () => import(`))
+    if (!scenesSrc.includes(`"${f.slug}": () => import(`) && !scenesSrc.includes(`\n  ${f.slug}: () => import(`))
       fail(w, "has no drawing listed in films/scenes/index.ts");
     const film = read(file);
     const fw = `films/${f.slug}.json`;
@@ -725,7 +725,8 @@ for (const c of cards) {
 // ── Abraham's road: the second moving map ────────────────────────────────
 // abrahams-road.json names every place by its id in the Genesis book page's
 // maps (client/public/bible/notes/genesis/intro.json), so a place is checked
-// once; it may only rename one (Goshen drawn for "Egypt").
+// once; it may only rename one (Goshen drawn for "Egypt", Hebron without
+// "(Mamre)").
 {
   const rw = "abrahams-road.json";
   const r = read(path.join(DIR, "abrahams-road.json"));
@@ -745,6 +746,34 @@ for (const c of cards) {
     fail(rw, "gives a year; when Abraham lived is debated, so the map gives none");
   for (const id of Object.keys(r.names ?? {}))
     if (!placeIds.has(id)) fail(rw, `renames "${id}", which is not one of the Genesis page's places`);
+  // The lines the names keep off, and a part's reach, are [latitude, longitude]
+  // points inside the frame (longitude 29 to 49 east, latitude 28 to 38 north).
+  const inFrame = pt =>
+    Array.isArray(pt) && pt.length === 2 &&
+    pt[0] >= 28 && pt[0] <= 38 && pt[1] >= 29 && pt[1] <= 49;
+  for (const line of r.avoid ?? [])
+    if (!Array.isArray(line) || line.length < 2 || !line.every(inFrame))
+      fail(rw, "every line in avoid must be two or more [latitude, longitude] points inside the frame");
+  for (const part of r.parts ?? [])
+    if (part.reach !== undefined && (!Array.isArray(part.reach) || !part.reach.every(inFrame)))
+      fail(`${rw} ${part.id}`, "reach must be [latitude, longitude] points inside the frame");
+  // A part may be drawn on the Genesis page's close-up of Canaan (longitude
+  // 34 to 36.4 east, latitude 30.8 to 33.7 north), if every place is inside it.
+  {
+    const all = intro.teaching.map.flatMap(m => m.places ?? []);
+    for (const part of r.parts ?? []) {
+      if (part.frame === undefined) continue;
+      if (part.frame !== "canaan") {
+        fail(`${rw} ${part.id}`, `frame "${part.frame}" is not "canaan"`);
+        continue;
+      }
+      for (const st of part.steps ?? []) {
+        const p = all.find(x => x.id === st.place);
+        if (p && !(p.lat >= 30.8 && p.lat <= 33.7 && p.lon >= 34 && p.lon <= 36.4))
+          fail(`${rw} ${part.id}`, `"${st.place}" lies outside the close-up of Canaan`);
+      }
+    }
+  }
   const seenParts = new Set();
   const used = new Set();
   for (const part of r.parts ?? []) {

@@ -997,3 +997,15 @@ export function ChooseActivity({
     </Shell>
   );
 }
+
+/** A count set beside a heading: the number, and what is counted for a screen reader. */
+export function Count({ n, what }: { n: number; what: string }) {
+  return (
+    <>
+      {" "}
+      <span className="ex-count">
+        {n} <span className="sr-only">{what}</span>
+      </span>
+    </>
+  );
+}

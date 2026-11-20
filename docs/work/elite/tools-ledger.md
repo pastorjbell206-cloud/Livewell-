@@ -730,3 +730,145 @@ James in the explorer: thirteen theme names and lines, each checked against the 
 | panel | Romans 3's hard question is about the cross, so the panel uses Romans 4's | note romans/3 hard |
 
 The quiet focus mark and the keys hint add no claim. Nothing outside the repo was opened for this build.
+
+## Seventh build (2026-11-20): twelve topics
+
+Every claim below was written against the site's own notes; "note" is `client/public/bible/notes/<book>/<n>.json` and its `verses/` file, "plain" its `plain/` file. Nothing outside the repo was opened. The care lines are checked word for word by `validate-wisdom.mjs`.
+
+| Topic | Claim | Checked against |
+|---|---|---|
+| estrangement | Jacob favored Joseph; the brothers could not speak a kind word; their pain real, what they did evil; Jacob's sin to show the favor | Genesis 37:3-4; note genesis/37 verses 3-4; plain genesis/37 1-4 hard |
+| estrangement | The estrangement begins with speech that cannot happen and ends when the brothers talk with Joseph | note genesis/45 verse 15 (verses file) |
+| estrangement | Psalm 69's speaker estranged from his brothers and mocked for his zeal | Psalm 69:7-9; note psalms/69 historical and summary |
+| estrangement | Twenty years after deceiving Esau, Jacob afraid of four hundred men; prayer centered on confession, then a plain request | Genesis 32:6, 9-12; note genesis/32 verses 10-11 |
+| estrangement | Esau and Jacob bury Isaac together; rivalry ends in a shared duty; the plain note's question about peace waiting that long | Genesis 35:29; note genesis/35 verses 28-29; plain genesis/35 27-29 asks |
+| estrangement | Abram appeals to kinship rather than rank and lets Lot choose | Genesis 13:8-9; note genesis/13 verses 8-9 |
+| estrangement | David lets Absalom return but will not see him for two years; neither justice nor repentance was part of the return; revolt followed | 2 Samuel 14:24, 28, 33; note 2-samuel/14 summary and hard |
+| estrangement | Paul and Barnabas part over Mark, who had deserted them; years later Paul asks for Mark | Acts 15:37-40; plain acts/15 36-41; 2 Timothy 4:11 |
+| estrangement | The father runs before the son finishes; the emotional center; word to those whose father was absent or hurt them | note luke/15 verses 20-21; plain luke/15 20-24 hard |
+| estrangement | The older son refuses; the father pleads; the story ends open; keep the door open as far as you safely can | note luke/15 verses 28, 31-32; plain luke/15 25-32 hard |
+| estrangement | Peace if possible, on your part; never means staying in danger | Romans 12:18; plain romans/12 14-21 hard |
+| estrangement | Elijah sent to turn the hearts of fathers and children; Luke 1:17 applies it to John | Malachi 4:5-6; note malachi/4 summary; Luke 1:17 |
+| estrangement | Luke 14:26: first place, not cruelty; Jesus repeated honor your parents; cared for his mother; 1 Timothy 5:8; groups that used it to cut people off read it wrongly; safety is not disloyalty | plain luke/14 25-33 hard; note luke/14 pastoral |
+| dating | It is not good to be alone; the one-flesh union answers it; a single person is not half a person | Genesis 2:18, 24; note genesis/2 verses 18, 24; plain genesis/2 18-25 hard |
+| dating | The refrain not to awaken love until the time is right; three readings; she is not ashamed of desire | Song of Songs 2:7, 8:4; note song-of-solomon/2 hard |
+| dating | The LORD sees the heart; the youngest son chosen | 1 Samuel 16:6-7, 11-13; note 1-samuel/16 summary |
+| dating | Proverbs 31 is praise, not a performance standard; the fear of the LORD open to every believer | note proverbs/31 hard |
+| dating | The servant's sign tested character; Rebekah's decision was hers | note genesis/24 hard and verses 57-58 |
+| dating | Ruth placed her reputation in Boaz's hands; he responded with honor rather than advantage | note ruth/3 hard |
+| dating | 1 Corinthians 13 never asks anyone to hide abuse or stay in danger | plain 1-corinthians/13 4-7 hard |
+| dating | Paul prays from prison that love abound in knowledge and insight | Philippians 1:9-11; note philippians/1 summary |
+| dating | Fruit of the Spirit set against works of the flesh | Galatians 5:19-23; note galatians/5 summary |
+| dating | 2 Corinthians 6:14 with 1 Corinthians 7:39; does not ask anyone to leave a spouse; Christians differ on its reach | note 2-corinthians/6 hard; plain 2-corinthians/6 14-18 hard |
+| dating | Guard your heart: in Hebrew thought the heart is thinking, deciding, remembering, desiring; guarding means one's whole inner orientation; heart, mouth, eyes, feet | note proverbs/4 cultural and literary |
+| dating-a-nonbeliever | Paul's first concern most likely idol worship; Christians differ how far it reaches; the notes do not choose; a believer should not split loyalty to Christ | plain 2-corinthians/6 14-18 hard (the "differ" section follows it) |
+| dating-a-nonbeliever | Solomon's heart turned gradually through his loves; wisdom no guarantee | 1 Kings 11:1-4; note 1-kings/11 hard |
+| dating-a-nonbeliever | Ruth a Moabite embraced by Israel's God and people, great-grandmother of David | note ruth/1 hard |
+| dating-a-nonbeliever | A believer married to a willing unbeliever should not divorce; how do you know whether you will save | 1 Corinthians 7:12-16; plain 2-corinthians/6 14-18 hard |
+| dating-a-nonbeliever | The Song: love as strong as death; the book teaches the goodness of love within faithful commitment | note song-of-solomon/8 hard |
+| dating-a-nonbeliever | Counting the cost warns against casual following | note luke/14 verses 28-30 and hard |
+| dating-a-nonbeliever | Explaining hope with gentleness | note 1-peter/3 summary |
+| dating-a-nonbeliever | Proverbs 3's promises are proverbs, not contracts | note proverbs/3 hard |
+| dating-a-nonbeliever | The LORD my portion: language of the land division and the priests' share; plain note: other goods not worthless | note psalms/16 verse 5; plain psalms/16 1-6 hard |
+| dating-a-nonbeliever | Amos 3:3 is the first of a chain of cause-and-effect questions leading to the prophet's compulsion to speak | Amos 3:3-8; note amos/3 summary (no verse note exists for 3:3) |
+| breakup | God near the brokenhearted; afflictions many; a verse to rest on | note psalms/34 summary and hard; plain psalms/34 11-22 hard |
+| breakup | Leah names three sons for her hope of her husband's love, the fourth for praise; God saw her | note genesis/29 verses 31-35; plain genesis/29 31-35 hard |
+| breakup | Psalm 147 sets God's power beside his care for the lowly | note psalms/147 summary |
+| breakup | Fourteen pairs of opposites; everything beautiful in its time | note ecclesiastes/3 summary |
+| breakup | Zion as a deserted wife called back; forsaking brief, compassion everlasting | note isaiah/54 summary and hard |
+| breakup | Lamentations 3: pain not censored; hope chosen rather than felt | note lamentations/3 hard |
+| breakup | Two kinds of sorrow | 2 Corinthians 7:8-11; note 2-corinthians/7 summary |
+| breakup | Do not dwell on the former things: a new exodus from Babylon | note isaiah/43 summary |
+| breakup | Come to me: an invitation, a yoke made for two; rest does not replace other help | note matthew/11 verses 28-30; plain matthew/11 28-30 hard |
+| breakup | Nothing can separate; no condemnation to no separation | note romans/8 verses 38-39 |
+| breakup | Jeremiah 29:11 given to exiles, plural, seventy years; written against prophets of quick relief | note jeremiah/29 hard |
+| longing-for-marriage | Proverbs 13:12 one of the Bible's most honest lines about longing | note proverbs/13 summary |
+| longing-for-marriage | Seven years seemed a few days; the tenderest line; Laban's words never quite promise | note genesis/29 verses 18-20 |
+| longing-for-marriage | Naomi's blessing of rest in a husband's home; famine and three deaths | Ruth 1:1-9; note ruth/1 summary |
+| longing-for-marriage | Pour out your hearts; status and wealth a breath | note psalms/62 summary |
+| longing-for-marriage | Father of the fatherless, defender of widows; settles the lonely in families | Psalm 68:5-6; note psalms/68 summary |
+| longing-for-marriage | Each has his own gift; the word to single readers | 1 Corinthians 7:7-8; plain 1-corinthians/7 8-9 hard |
+| longing-for-marriage | Anna, married seven years, widowed to eighty-four; a portrait of Israel waiting; first in Luke to speak of Jesus in the temple; a life called empty can be full | Luke 2:36-38; note luke/2 verses 36-38; plain luke/2 36-40 hard |
+| longing-for-marriage | Contentment learned; a prisoner's peace | plain philippians/4 10-14 hard |
+| longing-for-marriage | Hope chosen rather than felt | note lamentations/3 hard |
+| longing-for-marriage | The unwearied God gives strength to the weary | note isaiah/40 verses 29-31 |
+| longing-for-marriage | Psalm 37:4: delight first; desires change; not a trick for getting things | plain psalms/37 1-11 hard |
+| singleness | Three kinds of eunuchs; the third forgo marriage for the kingdom; a gift, neither ranked higher | note matthew/19 verses 10-12 and theology note; plain matthew/19 10-12 hard |
+| singleness | Advice not to marry was not a law; those who marry have not sinned; Paul honors both | plain 1-corinthians/7 25-35 hard |
+| singleness | Remain in the situation in which God called you | note 1-corinthians/7 summary |
+| singleness | Eunuchs promised a name better than sons and daughters; faithfulness, not ancestry or body | note isaiah/56 summary and hard |
+| singleness | The hundredfold is the new family of believers, with persecutions | plain mark/10 23-31 hard |
+| singleness | Jesus opens his family, not closes it | plain matthew/12 46-50 hard |
+| singleness | The church as a family | plain 1-timothy/5 1-2 heading |
+| singleness | Laying down life for friends defines the measure | note john/15 verses 12-13 |
+| singleness | Philip's four unmarried daughters prophesied | Acts 21:9 |
+| singleness | The marriage of the Lamb; the bride made ready | note revelation/19 summary |
+| singleness | Catholic Latin-rite celibacy and religious life; Orthodox married priests and celibate bishops; Protestant stress on verse 11; Augsburg Confession 1530 | plain matthew/19 10-12 hard; note matthew/19 (cites Augsburg Confession article 23, Catechism 1579, 1618-1620) |
+| revenge | Do not seek revenge in the same sentence as love your neighbor; the chapter's center; I am the LORD | note leviticus/19 summary |
+| revenge | Sayings on fair judgment and refusing revenge; gloating over a fallen enemy | note proverbs/24 summary |
+| revenge | David spares Saul; restraint and trust in God's timing, not silence before injustice; he confronts and flees | note 1-samuel/24 summary and hard |
+| revenge | Abigail turns David back; grievance real, planned revenge sin; servants who had done nothing | note 1-samuel/25 summary and hard |
+| revenge | Am I in the place of God refuses the judge's role; Genesis 50:20 never a reason to explain away abuse | note genesis/50 verse 19; plain genesis/50 15-21 hard |
+| revenge | Romans 12:19 never means staying in danger | plain romans/12 14-21 hard |
+| revenge | The authority an agent of retribution; crimes reported to the police | Romans 13:4; plain matthew/18 15-17 hard; plain 1-corinthians/13 4-7 hard |
+| revenge | Christ did not retaliate; the passage does not require anyone who can escape abuse to remain | note 1-peter/2 hard |
+| revenge | Father, forgive them; prayer and indifference side by side; no one may use his death to justify hatred | note luke/23 verse 34; plain luke/23 32-38 hard |
+| revenge | Psalm 58 a prayer, not an action; no reading makes it right to harm anyone | note psalms/58 hard; plain psalms/58 6-11 hard |
+| revenge | Eye for eye a principle for judges limiting punishment | note matthew/5 verse 38 |
+| revenge | Turn the other cheek not a command to stay; John 18:23; Acts 22:25; pacifist, Luther's two kinds of duty, just war; the notes do not decide | plain matthew/5 38-42 hard |
+| betrayal | The deepest wound from a close friend who walked to the house of God | note psalms/55 summary |
+| betrayal | Verse 10 may be a raw wish; Jesus washed the betrayer's feet | plain psalms/41 1-13 hard |
+| betrayal | David weeping on the Mount of Olives; Ahithophel among the conspirators; Hushai sent back | 2 Samuel 15:30-34; note 2-samuel/15 summary |
+| betrayal | Luke does not narrate the kiss; Jesus names the act | note luke/22 verses 47-48 |
+| betrayal | Micah: friends and household untrustworthy; he resolves to wait for God | note micah/7 summary |
+| betrayal | Proverbs 25 copied by Hezekiah's scribes | note proverbs/25 summary |
+| betrayal | Paul deserted, forgives those who failed from fear, leaves Alexander to God, warns Timothy; never asks anyone to stay near great harm | plain 2-timothy/4 14-18 hard |
+| betrayal | Peter's denial not the end of him; word sent to his brothers | plain matthew/26 69-75 hard |
+| betrayal | Three questions by a charcoal fire answer three denials; all agree Peter failed and was restored | note john/21 verses 15-17; plain john/21 15-17 hard |
+| betrayal | He hands the matter to God and does not take revenge | plain psalms/55 12-23 hard |
+| betrayal | Luke 17:4 misused to send people back; rebuke first; words alone do not make it safe | plain luke/17 1-4 hard |
+| reconciliation | Worship waits for reconciliation; not going back to someone dangerous | note matthew/5 verses 23-24; plain matthew/5 21-26 hard |
+| reconciliation | The brothers recall Joseph's anguish; first time the reader learns he pleaded | note genesis/42 verse 21 |
+| reconciliation | Like seeing the face of God; the second face he did not expect to survive; they parted, both readings held | note genesis/33 verse 10 and hard |
+| reconciliation | Confess, repay in full plus a fifth | Numbers 5:6-7; note numbers/5 summary |
+| reconciliation | Zacchaeus answers with deeds; Jesus' welcome came first | note luke/19 verse 8; plain luke/19 1-10 hard |
+| reconciliation | Paul pays what is owed, writes before the church, says he is coming; never used to send anyone back to mistreatment | plain philemon/1 12-16 and 17-22 hard |
+| reconciliation | Euodia and Syntyche, two women leaders; a companion asked to help | Philippians 4:2-3; note philippians/4 summary |
+| reconciliation | God reconciled us and gave the ministry of reconciliation; new creation | note 2-corinthians/5 summary |
+| reconciliation | Christ our peace; the cross killed the hostility; the wall was hostility, not a people | note ephesians/2 verses 14-16; plain ephesians/2 11-22 hard |
+| reconciliation | Matthew 18 misused; no one afraid goes alone; equal ground; crimes to the police | plain matthew/18 15-17 hard; note matthew/18 verse 15 |
+| conflict-with-others | Quarrels from desires at war within | note james/4 summary |
+| conflict-with-others | The damage of quarrels; a dry crust in peace | note proverbs/17 summary |
+| conflict-with-others | A gentle answer; the chapter returns to the tongue | note proverbs/15 summary |
+| conflict-with-others | Quick to listen beside the call to be doers of the word | note james/1 summary |
+| conflict-with-others | First your own eye, then you see clearly to help | note matthew/7 verses 3-5; plain matthew/7 1-6 hard |
+| conflict-with-others | The meddler, the gossip, the quarreler | note proverbs/26 summary |
+| conflict-with-others | Isaac's wells; Rehoboth; first speech not about fear | note genesis/26 verses 19-22 |
+| conflict-with-others | Neither side may despise or judge the other | note romans/14 summary; plain romans/14 13-23 hard |
+| conflict-with-others | Truthful speech, words that build up | note ephesians/4 summary |
+| conflict-with-others | Galatians 6:1 misused to keep wrongs quiet; restoring to Christ is not restoring to trust | plain galatians/6 1-5 hard |
+| deep-friendship | Verse 24 difficult in Hebrew; ohev, one who loves; dabaq used of Genesis 2:24 and Ruth 1:14 | note proverbs/18 literary and words (H0157H) |
+| deep-friendship | A friend loves at all times among the chapter's best known lines | note proverbs/17 summary |
+| deep-friendship | Honest friends and honest rebuke | note proverbs/27 summary |
+| deep-friendship | The man alone with no heir; two better than one; a cord of three strands | note ecclesiastes/4 summary |
+| deep-friendship | Three friends sit with Job in silence seven days | Job 2:11-13; note job/2 summary |
+| deep-friendship | The friends' persistence is what Jesus calls faith | note mark/2 verses 3-5 |
+| deep-friendship | Jesus loved all three; love placed first so the delay is read in its light | note john/11 verses 5-6 |
+| deep-friendship | Laying down life for friends defines the measure; friends, not servants | note john/15 verses 12-15 |
+| deep-friendship | Onesiphorus searched Rome; Paul's thanks plain whatever else is uncertain | plain 2-timothy/1 13-18 hard |
+| deep-friendship | 1 Corinthians 15:33 about company that denies the resurrection; believers friends with people of every faith | note 1-corinthians/15 verses 33-34; plain 2-corinthians/6 14-18 hard |
+| codependency | Love your neighbor given unasked; two commands joined | note mark/12 verse 31 |
+| codependency | The word "also" matters | note philippians/2 verse 4 |
+| codependency | Carry one another's burdens; each his own load | Galatians 6:2, 5; note galatians/6 summary |
+| codependency | Fear of man a snare | note proverbs/29 summary |
+| codependency | Jesus prays before dawn and declines the crowds for his purpose | note mark/1 verses 35-39 |
+| codependency | Martha served anxious and resentful; Jesus invites her to sit | plain luke/10 38-42 hard |
+| codependency | Jethro: not good, you will wear yourselves out | Exodus 18:17-18, 21-23 |
+| codependency | What lasts is what the LORD builds | note psalms/127 hard |
+| codependency | Love bears all things never means hiding abuse; record keeping not a failure of love | plain 1-corinthians/13 4-7 hard |
+| codependency | Deny yourself: no to self as master; the self saved; seeking safety not a failure to carry the cross | plain luke/9 23-27 hard |
+| codependency | "Codependency is not a word the Bible uses, and this page cannot diagnose anyone" | a statement about the page itself; no clinical claim is made |
+
+No new claim outside Scripture and the notes: no statistic, study, scholar or date was added except those the notes themselves give (the Augsburg Confession of 1530 in singleness, as the plain note on Matthew 19 states it).
+
+The finder: holdout6 and the phrasings add no factual claim. The Find Help side tab fix adds none.
