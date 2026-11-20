@@ -673,3 +673,149 @@ Searches this answer: 10 (Whitcomb and Morris; Kline and Noordtzij; C. John Coll
 | Apostles' Creed "Maker of heaven and earth"; Nicene "and of all things visible and invisible" | Repo creeds | Quoted |
 
 No fact about James is used, and no position is taken on the age of the earth or evolution. Cut from the old answer: "When I was an atheist the science was a real barrier, and learning that the church has held several faithful readings of this chapter mattered more to me than winning any single argument about it." (a recollection and feeling of his that cannot be confirmed). Kept in its own words: the whole first paragraph's opening three sentences; "Genesis 1 answers who and why, and it may simply not be pitched at the modern question of how."; "Hold on tight to the Creator, and hold the mechanism loosely." The old answer's sentence on Collins and BioLogos is rewritten with the founding year checked.
+
+# Tenth run (2026-11-20): the pilot area "Can we trust the text of the New Testament?", and the library map
+
+Pieces: `docs/work/elite/apol-pilot/` (index.md; more-variants-than-words.md, "a"; copies-of-copies.md, "b"; passages-added.md, "c"; orthodox-corruption.md, "d"). Plan: `docs/work/elite/apol-library.md`. Method words as above. "WTB ledger" means `docs/work/essays/ledgers/why-trust-the-bible.md`, three closing runs and a final read. "S" is a WebSearch run in this run (43 in all); the search tool returns summaries of pages, so a "verified" row below rests on secondary pages (Wikipedia, publishers, reviews, journal records) unless it says otherwise. "Repo" is a file in this repository. "Note" means a Study Bible note in `client/public/bible/notes/` that the pilot agrees with; no fact rests on a note alone. No direct fetch of any page worked (biblehub.com failed to resolve).
+
+## Quotations of living authors
+
+| Quotation | Piece | How verified | Result |
+|---|---|---|---|
+| Ehrman, *Misquoting Jesus*: "there are more variations among our manuscripts than there are words in the New Testament" | a | WTB ledger, correction 26 (printed with pp. 89-90) | Quoted |
+| Ehrman, appendix to *Misquoting Jesus*: "essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament" | a | WTB ledger, correction 32 (exact-phrase matches) | Quoted |
+| Ehrman, *Misquoting Jesus* p. 5: "we don't actually have the original writings of the New Testament" | b | WTB ledger, final read (CCW review quotes p. 5) | Quoted |
+| Ehrman, same page: "are copies of these writings, made years later" | b | WTB ledger, final read; the source continues with an em-dash, so the quotation stops before it and the rest is paraphrased | Quoted in part |
+
+No other living author is quoted. Searched and not used as quotations: "most of these differences are completely immaterial and insignificant" (found only as a reviewer's paraphrase, S); "copies of the copies of the copies" (one secondary source); Wallace's own sentences (paraphrased); the BSB's footnote wording (not found).
+
+## Numbers and estimates
+
+| Claim | Piece | How verified | Result |
+|---|---|---|---|
+| Estimates of variants in *Misquoting Jesus*: about 200,000 to 400,000 | a | S: Mark D. Roberts and a summary page both attribute the range to the book; the exact sentence was not seen | Stated as the range he reported, no quotation |
+| Gurry, "The Number of Variants in the Greek New Testament: A Proposed Estimate," *NTS* 62 (2016): about 500,000, excluding spelling; higher than earlier figures by his own account | a | S: Wikipedia "Textual variants in the New Testament" citing the article; Wallace's blog (2016) on the spelling exclusion | Verified (secondary) |
+| Epp suggested as many as 750,000 (2014) | a | S: same Wikipedia article | Verified (secondary); year not stated in the piece |
+| About 138,000 words in the Greek New Testament | a (short answer) | WTB ledger ("about 400,000 against about 138,000 words") | Verified |
+| 5,838 Greek manuscripts in Wallace's 2013 CSNTM tally; 2,926 minuscules and 2,462 lectionaries; minuscules from 835 on, lectionaries mostly eighth to sixteenth centuries | a | WTB ledger, final read | Verified; the piece says "mostly from the eighth and ninth centuries onward" |
+| Wallace: more than 10,000 Latin manuscripts and as many as 5,000 in other ancient languages | a | WTB ledger, correction 27 (Baptist Press) | Verified |
+| Wallace's four kinds of variants; viable and meaningful less than 1 percent; no cardinal belief at stake | a | S: The Gospel Coalition interview excerpting *Reinventing Jesus*; Probe and DTS pages; a later Logos episode gives a lower figure | Verified, paraphrased |
+| More than 140 New Testament papyri known, most fragments | a | S: Wikipedia "List of New Testament papyri" ("over 140") | Verified (secondary) |
+| P75 and Vaticanus agree at about 85 percent in wording, sequence and omissions (Porter 1962, a 1961 estimate) | a, b | WTB ledger (second run) | Verified; "on the usual dating" added because Nongbri's later date would narrow the gap |
+| First printed Greek New Testament, Erasmus, 1516; Comma added in the third edition, 1522 | a, c, index | WTB ledger (Scrivener; de Jonge 1980) | Verified |
+| Sixteen single verses left empty and two long passages flagged `later` in the site's BSB data | c | Repo: script over `client/public/bible/text/*/*.json` (Acts 8:37, 15:34, 24:7, 28:29; John 5:4; Luke 17:36, 23:17; Matthew 17:21, 18:11, 23:14; Mark 7:16, 9:44, 9:46, 11:26, 15:28; Romans 16:24; Mark 16:9-20 and John 7:53 to 8:11 printed and flagged) | Verified. The reader shows "[Not in the earliest manuscripts]" only for empty verses (`StudyBible.tsx`, `VerseRef.tsx`), so the pilot does not say the printed passages are marked on the site |
+
+## Manuscripts and dates
+
+| Claim | Piece | How verified | Result |
+|---|---|---|---|
+| P52: scrap of John 18 (18:31-33, 37-38) in Manchester; Roberts 100 to 150; Nongbri argues the range must include the later second and early third centuries | a, b | WTB ledger (second run) | Verified |
+| P66 traditionally about 200 (Martin); Nongbri early or mid fourth century; Orsini disputes | b | S: Wikipedia "Papyrus 66"; Orsini on the ETC blog | Verified (secondary) |
+| P75 175 to 225 (Martin and Kasser); Orsini late third to early fourth; Nongbri fourth; INTF 200 to 225; rebound and repaired in antiquity; now in the Vatican Library | b | S: Wikipedia "Papyrus 75" and Nongbri's argument as summarized; WTB ledger for the dates | Verified (secondary) |
+| P46 and P75 about 175 to 225; P66 early third originally | a | WTB ledger | Verified |
+| Sinaiticus mid-fourth century, oldest complete New Testament | a, b | WTB ledger (Scrivener; British Library) | Verified |
+| Vaticanus fourth century, Vatican Library, generally a little older than Sinaiticus | a, b | S: Wikipedia "Codex Vaticanus"; JW and BAS pages | Verified (secondary) |
+| Alexandrinus fifth century, British Library | b | S: same results | Verified (secondary) |
+| Codex Bezae: first surviving Greek manuscript with John 7:53 to 8:11; dated "around the fifth century" in the piece | c | S: JETS article and others (400s or 500s); note on John 8 gives around 400 | Verified; the piece gives the wider range |
+| Wallace announced a first-century Mark fragment in a February 2012 debate with Ehrman; published 2018 as P.Oxy. 83.5345 (Colomo and Obbink), late second or early third century; Wallace apologized | b | S: Christianity Today (May 2018), Ehrman's blog, Wikipedia "Papyrus 137" | Verified |
+| The "all but eleven verses" story: Sir David Dalrymple (Lord Hailes), a secondhand nineteenth-century report; *Myths and Mistakes* has a chapter on the fathers (Andrew Blaski) | b | S: affinity.org.uk review; IVP listing; islamic-awareness page on the citations | Verified that the claim exists, its secondhand source and the chapter; the book's own verdict was not seen, so the piece says only that the claim needs correcting and that the book was written to correct claims of this kind |
+
+## The early church on variants
+
+| Claim | Piece | How verified | Result |
+|---|---|---|---|
+| Celsus charged that believers reworked the Gospel threefold, fourfold and manifold; Origen, *Against Celsus* 2.27, named the followers of Marcion and Valentinus (and perhaps Lucian) | b | S: BKV text of *Contra Celsum* 2.27 (English and German); Coogan, *Novum Testamentum* 2023 | Verified, paraphrased |
+| Irenaeus, *Against Heresies* 5.30.1: knew 616 and 666; 666 in "the most approved and ancient copies" | a, b | S: credohouse; Wikipedia "Number of the beast"; Lookadoo article | Verified (secondary); the three words are given as his, in translation |
+| Origen, *Commentary on Matthew* 15.14: complained of differences among manuscripts from careless and from presumptuous copyists | b | S: University of Pennsylvania page with a translation; Scherbenske on the Oxford Patristics blog | Verified, paraphrased (exact wording not printed) |
+| Eusebius to Marinus: almost all copies of Mark ended at 16:8; Jerome repeated it | b, c | S: The Gospel Coalition article; confessional bibliology page | Verified, paraphrased |
+| Irenaeus quotes Mark 16:19 "towards the conclusion of his Gospel" (*Against Heresies* 3.10.5 or 3.10.6; numbering differs) | c | S: Text & Canon Institute article quoting the translation | Verified; section number left out |
+| Papias's story of a woman accused of many sins, reported by Eusebius, *Church History* 3.39; widely identified with the adulteress story; details may differ | c | S: early church texts and commentary results | Verified |
+| Irenaeus around 180, four Gospels; of Lyon | b | WTB ledger | Verified |
+
+## The passages
+
+| Claim | Piece | How verified | Result |
+|---|---|---|---|
+| Mark 16:9-20 absent from Sinaiticus and Vaticanus; in the great majority of later manuscripts; scholars divided on a deliberate end at 16:8 or a lost ending; a minority defend the passage | c | WTB ledger (Scrivener); S (Gospel Coalition, Irenaeus results); note on Mark 16 agrees | Verified |
+| ESV prints Mark 16:9-20 and John 7:53 to 8:11 in double brackets with a note | c | WTB ledger ("[[" in the ESV copy; the Mark footnote reported by search) | Verified |
+| Mark 16:8 ESV "they said nothing to anyone, for they were afraid" | c | WTB ledger (matched, second pass) | Quoted |
+| John 7:53 to 8:11 absent from P66, P75, Sinaiticus, Vaticanus | c | S: JETS 61.2 (Kaczorowski) and others; WTB ledger (Scrivener: omitted in אABCT) | Verified |
+| KJV 1 John 5:7 wording; ESV and BSB "For there are three that testify"; Latin origin; handful of late Greek manuscripts; Greek fathers of the fourth century never quoted it; modern translations omit it including those by Trinitarian scholars | c | WTB ledger, all lines | Verified, quoted |
+| Luke 22:43-44 absent from P75, Vaticanus, Alexandrinus; present in most later manuscripts; known to Justin and Irenaeus; Ehrman and Plunkett, *CBQ* 1983, added against docetism; others argue original; NA brackets or omits | c, d | S: Tyndale House (Jongkind), dossier pages, Ehrman's blog; note on Luke 22 agrees | Verified. The sources conflict on which hand of Sinaiticus omits them, so Sinaiticus is not named |
+| BSB on this site prints Luke 22:43-44 with no flag | c | Repo (`client/public/bible/text/luke/22.json`) | Verified |
+| Acts 8:37 absent from P45, P74, Sinaiticus, Vaticanus; in Old Latin and some later Greek; in Erasmus's text; modern Bibles put it in a note | c | S: Wikipedia "Confession of the Ethiopian Eunuch", apparatus pages | Verified. Alexandrinus is not named (sources conflict). The verse is described, not quoted |
+| The site's BSB shows Acts 8:37 as "[Not in the earliest manuscripts]" | c | Repo (`StudyBible.tsx` line 614; data `later: true`, empty text) | Verified |
+| Mark 1:41: most read "moved with compassion", Bezae and some Old Latin "angry"; Ehrman argues "angry" original (*Bible Review*, Winter 2005, "Did Jesus Get Angry or Agonize?"; his blog) | a | S | Verified |
+| Matthew 24:36 "nor the Son": present in the oldest manuscripts, lacking in the majority including the Byzantine; Metzger judged omission for doctrinal difficulty more probable | a, b, d | S: Metzger's *Textual Commentary* as quoted (Watchtower page), translation commentary; the oldest witnesses from an advocacy page citing א* B D | Verified (secondary). BSB Matthew 24:36 and Mark 13:32 both have "nor the Son" (repo) |
+| Revelation 13:18, 616 in P115 and Ephraemi | a | S: Lookadoo, Wikipedia | Verified (the piece names only "some early manuscripts") |
+| Hebrews 2:9: "apart from God" in a few manuscripts and fathers; Origen knew both; Ehrman argues it original; manuscript evidence favors "by the grace of God"; Hartog 2014 and Miller 2010 against | a, d | S: NTS 2023 article, Galaxie (Hartog), CSL thesis | Verified |
+| John 1:18: P66 and P75 read "God" (monogenes theos); later manuscripts "Son"; Ehrman argues "Son" original and "God" an orthodox change; disputed | d | S: several pages incl. an NTS article page; Metzger's committee preferred "God" | Verified (secondary); the piece says scholars still argue |
+| 1 Timothy 3:16: "who" in Sinaiticus and the earlier witnesses; "God" later; ΟΣ and ΘΣ differ by two strokes; Alexandrinus disputed | d | S: Wikipedia "God manifested in the flesh"; Christianity Today 1995 | Verified; Alexandrinus not named |
+| Mark 1:1 "Son of God" missing from some important witnesses; Wasserman, *JTS* 62 (2011), argues original | d | S: Lund University record of the article; note on Mark 1 agrees | Verified; the piece does not attribute the addition view to Ehrman |
+| Mark 10:18 ESV "Why do you call me good? No one is good except God alone." | d | Earlier ledger rows (essay ledger, ESV confirmed by search) | Quoted |
+| Mark 13:32 BSB has "nor the Son" | d | Repo | Verified; "in the standard text" |
+
+## Ehrman's thesis and the early high view of Jesus
+
+| Claim | Piece | How verified | Result |
+|---|---|---|---|
+| *The Orthodox Corruption of Scripture*, OUP 1993; 2nd ed. July 2011 with an afterword; proto-orthodox scribes of the second and third centuries; four controversies (adoptionism, separationism, docetism, patripassianism) | d | S: Ehrman's site and blog, Logos, Google Books | Verified, paraphrased |
+| Ehrman: Moody, Wheaton, Princeton Seminary under Metzger, agnostic; *Misquoting Jesus* a surprise bestseller | a | WTB ledger | Verified |
+| Metzger an ordained Presbyterian minister (1939) | a, d | WTB ledger | Verified |
+| 1 Corinthians written in the mid-50s, most likely Ephesus; Ehrman's chart 54 to 55 | d | S: Wikipedia (53 to 57, Ephesus), Ehrman's chronology page; earlier ledger "mid-50s" | Verified |
+| 1 Corinthians 8:6 ESV wording; Bauckham reads it as placing Jesus within the Shema, others disagree | d | Earlier ledger rows (ESV copy and search; Bauckham 2008) | Quoted; verified |
+| *Marana tha*, "Our Lord, come", Aramaic, 1 Corinthians 16:22 | d | Earlier ledger row | Verified |
+| Philippians from prison; Rome around 60 to 62 the majority view; Ephesus in the mid-50s a serious alternative; 2:6-11 widely but not universally held pre-Pauline | d | S: Wikipedia, USCCB introduction, Ehrman's blog | Verified |
+| Philippians 2:10-11 ESV "every knee should bow ... every tongue confess that Jesus Christ is Lord"; uses Isaiah 45:23 | d | Earlier ledger rows | Quoted (from "every knee") |
+| "in the form of God" (Philippians 2:6) | d | Repo: the same four words in the BSB (`philippians/2.json`) and the ESV ("though he was in the form of God", quoted in a site essay) | Quoted as four words |
+| Pliny to Trajan around 112, a hymn to Christ "as to a god" | d | Earlier ledger row | Verified, quoted |
+| Ignatius, *To the Ephesians* 18.2, "our God, Jesus the Christ" (Lake's translation); traditionally under Trajan (98 to 117); Pervo 135 to 140, Barnes 140s | d | S: Perseids text, Wikipedia | Verified; the dating debate stated |
+| Hurtado, *One God, One Lord* (1988), *Lord Jesus Christ* (2003): devotion early among Jewish believers | d | Earlier ledger rows | Verified, paraphrased |
+| Ehrman, *How Jesus Became God* (2014): divine status came after belief in the resurrection | d | Earlier ledger rows | Verified, paraphrased |
+| Crucifixion around 30 or 33 (for "about twenty-five years") | d | Earlier ledger (resurrection answer) | Verified |
+
+## Other claims in the pieces
+
+| Claim | Piece | How verified | Result |
+|---|---|---|---|
+| Tacitus, *Annals* 1 to 6 in a single medieval manuscript | a | WTB ledger | Verified |
+| Copies made in Egypt, Syria and Italy | b | WTB ledger (Scrivener) | Verified |
+| Haines-Eitzen, *Guardians of Letters* (OUP, 2000): scribes were also readers, in private networks; no evidence of specialized training | b | S: BMCR review, TC review, catalogues | Verified, paraphrased |
+| Ehrman: early copyists mostly not professionals; the earliest scribes worse than later ones | b | WTB ledger (Reformation21 summary); S (Ehrman's blog) | Verified, paraphrased |
+| Parker, *The Living Text of the Gospels* (CUP, 1997): the search for an original Gospel text overlooks how the early church handed on its traditions | a, b | S: publisher and catalogue records | Verified, paraphrased |
+| 1 Corinthians 15:3-7 and 15:6 | b | WTB ledger | Quoted |
+| Chicago Statement 1978 (named in the plan only) | plan | Earlier ledger | Verified |
+
+## Books named (pilot lists and the map)
+
+| Book | How verified |
+|---|---|
+| Ehrman, *Misquoting Jesus* (2005) | WTB ledger |
+| Ehrman, *The Orthodox Corruption of Scripture* (1993; 2nd ed. 2011) | S |
+| Ehrman, *How Jesus Became God* (2014); *Lost Christianities* (2003); *Did Jesus Exist?* (2012); *God's Problem* (2008) | Earlier ledgers |
+| Ehrman, *Jesus, Interrupted* (2009); *Forged* (2011) | S (Ehrman's site, WorldCat, Kirkus) |
+| Ehrman, *Jesus Before the Gospels* (2016) | S (most sources 2016; one gives 2017) |
+| Metzger and Ehrman, *The Text of the New Testament*, 4th ed. (OUP, 2005) | S (closes the earlier "standard bibliography" note) |
+| Metzger, *A Textual Commentary on the Greek New Testament* (UBS 1971; 2nd ed. 1994) | S |
+| Aland and Aland, *The Text of the New Testament* (Eerdmans and Brill, 1987; 2nd ed. 1989), trans. Erroll F. Rhodes | S |
+| Hixson and Gurry, eds., *Myths and Mistakes in New Testament Textual Criticism* (IVP Academic, 2019); Hixson is listed first | S |
+| Stewart, ed., *The Reliability of the New Testament: Bart D. Ehrman and Daniel B. Wallace in Dialogue* (Fortress, 2011) | S (one listing gives 2007; the publisher gives 2011) |
+| Komoszewski, Sawyer and Wallace, *Reinventing Jesus* (Kregel, 2006) | S |
+| Wallace, ed., *Revisiting the Corruption of the New Testament* (Kregel, 2011) | S |
+| Hurtado, *The Earliest Christian Artifacts* (Eerdmans, 2006) | S |
+| Nongbri, *God's Library* (Yale, 2018) | S |
+| Haines-Eitzen 2000; Parker 1997; Gurry 2016 | S (above) |
+| Hurtado 1988 and 2003; Bauckham 2008; Bird, Evans and others 2014 | Earlier ledgers |
+| Map: Krauss, *A Universe from Nothing* (Free Press, 2012); Hawking and Mlodinow, *The Grand Design* (Bantam, 2010) | S |
+| Map: Nagel, *Mind and Cosmos* (OUP, 2012); Coyne, *Why Evolution Is True* (Viking, 2009) | S |
+| Map: Venema and McKnight, *Adam and the Genome* (Brazos, 2017) | S |
+| Map: Finkelstein and Silberman, *The Bible Unearthed* (Free Press, 2001); Hoffmeier, *Israel in Egypt* (OUP, 1996) | S |
+| Map: Kenyon at Jericho 1952 to 1958; Wood, *Biblical Archaeology Review* 16:2 (1990); Bienkowski's reply | S |
+| Map: Sapir-Hen and Ben-Yosef, camels in the Aravah, late tenth century BC, journal *Tel Aviv*, announced February 2014 | S (the query's "Sapir-Hazan" was wrong; the name is Sapir-Hen) |
+| Map: Carrier, *On the Historicity of Jesus* (Sheffield Phoenix, 2014) | S |
+| Map: Pagels, *The Gnostic Gospels* (Random House, 1979); Bauer, *Orthodoxy and Heresy in Earliest Christianity* (German 1934) | S (the 1971 English edition was not confirmed and is not given) |
+| Map: Dawkins 2006; Coyne 2015; Mackie 1955, 1982; Rowe 1979; Draper 1989; Schellenberg 1993; Wielenberg 2014; Oppy 2006; Clifford 1877; Freud 1927; Loftus 2013; Hick 1989; Morriston 2009; Avalos 2011; Russell 1927; Dennett 1991; Rees 1999; Numbers 2009; Hitchens 2007; Burridge 1992; Bauckham 2006; Schweitzer 1906 | Earlier ledgers |
+
+Searched and left unnamed in the map because the title or year was not confirmed: John J. Collins's Daniel commentary; Kugel, *How to Read the Bible*; Vines and Gagnon on sexuality (named in results, year and publisher not confirmed); Raymond Brown's *Birth of the Messiah* date (results gave 1977, 1979 and 1993 printings); Strauss's *Life of Jesus* (1835) and Wellhausen's *Prolegomena* (1878) (no result); Dawkins's *The Blind Watchmaker*; Carroll's *The Big Picture*; Swamidass's *The Genealogical Adam and Eve*; Ehrman's essay "A Leper in the Hands of an Angry Jesus" (title not found by search).
+
+No fact about James is used in the pilot. No position is taken on inerrancy's wording, the age of the earth, evolution, Adam, or which manuscript tradition to follow.

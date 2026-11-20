@@ -33,6 +33,7 @@ import { RefText, VerseRef } from "@/components/VerseRef";
 import {
   EXPLORER_PATH,
   fetchExplorerIndex,
+  filmsFor,
   fetchStop,
   stopHref,
   threadsAt,
@@ -43,6 +44,8 @@ import {
   type Stop,
 } from "@/lib/explorer";
 import { Roundel } from "./art";
+import { WatchLinks } from "./Watch";
+import "./films/film.css";
 import {
   ChooseActivity,
   CycleActivity,
@@ -469,6 +472,17 @@ function StopPage({
                 </li>
               ))}
             </ul>
+            {filmsFor(index, { stop: slug }).length > 0 && (
+              <>
+                <h2
+                  className="ex-panel__title"
+                  style={{ marginTop: "var(--s-3)" }}
+                >
+                  Watch and learn
+                </h2>
+                <WatchLinks index={index} stop={slug} />
+              </>
+            )}
           </div>
         </div>
       </section>

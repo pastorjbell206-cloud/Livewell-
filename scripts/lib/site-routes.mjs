@@ -83,6 +83,8 @@ function paramSources() {
     "/topics/:slug": slugsFrom(json("client/public/topics/index.json")?.pages),
     "/answers/:slug": answerSlugs(),
     // The Bible Explorer: a stop has its own page once it is finished.
+    // Watch and learn: a moving picture has its own page once it is made.
+    "/study/explorer/watch/:slug": new Set((json("client/public/explorer/index.json")?.films || []).filter((f) => f.status === "finished").map((f) => f.slug)),
     "/study/explorer/:slug": new Set((json("client/public/explorer/index.json")?.stops || []).filter((s) => s.status === "finished").map((s) => s.slug)),
     "/study/bible/:book": new Set(books.keys()),
   };

@@ -1,0 +1,91 @@
+---
+area: can-we-trust-the-text
+slug: did-scribes-make-jesus-more-divine
+status: pending (not on the site; for James to read first)
+question: "Did scribes change the text to make Jesus look more divine?"
+ledger: docs/work/elite/apol-ledger.md, "Tenth run: the pilot area"
+---
+
+# Did scribes change the text to make Jesus look more divine?
+
+## The short answer
+
+Sometimes, yes. In a few places copyists changed a word or a phrase so that a passage said more plainly what they already believed about Christ, and in a few others they softened words that seemed to say too little. Bart Ehrman made the case in detail in *The Orthodox Corruption of Scripture* (1993), and on many of his examples he is right. But the changes are visible because older readings survive beside them, which is how scholars found them. And they can't be where belief in Jesus' divinity came from, for a plain reason: the copyists were making the text match a faith they already held. That faith can be dated without any disputed reading at all. Within about twenty-five years of the crucifixion, in a letter no one doubts Paul wrote, Jesus is set inside Israel's confession of the one God, and within about thirty he is given the honor Isaiah gave to God alone.
+
+## The objection at its strongest
+
+Ehrman's argument deserves to be stated as he made it. In the second and third centuries, Christians argued fiercely about who Jesus was. Some, whom later writers called adoptionists, held that he was a man whom God adopted as his Son. Others, the docetists, held that he only seemed to be human. Others separated the divine Christ from the human Jesus. Still others so stressed his oneness with the Father that the two could hardly be told apart. The party that won, which Ehrman calls proto-orthodox, copied the books that became the New Testament. Ehrman argues that in the heat of these arguments their copyists occasionally altered the text against their opponents, and he gathers his examples under those four controversies. The book was published by Oxford University Press in 1993, and a second edition in 2011 added a survey of the debate since.
+
+His examples are real. In John 1:18, the earliest papyri, P66 and P75, call Jesus "the only God" (or "the only begotten God"), while most later manuscripts call him "the only Son." Ehrman argues that "Son" is original and "God" a change made to rule out anyone who thought Jesus merely a man. In 1 Timothy 3:16 the older manuscripts say Christ "was manifested in the flesh"; later ones read "God was manifested in the flesh," a change made easy by the fact that in Greek capitals the abbreviation for God and the word for "who" differ by two small strokes. In Hebrews 2:9 a few manuscripts and some early writers say Jesus tasted death "apart from God," where most say "by the grace of God," and Ehrman argues that the startling "apart from God" is original and was changed. In Luke 22:43-44, Ehrman and Mark Plunkett argued in 1983 that the angel and the bloody sweat were added to show that Jesus truly suffered in the flesh, against those who denied it. And in Matthew 24:36, the words "nor the Son," in which Jesus says he doesn't know the day or hour, are missing from most later manuscripts, very likely because they troubled copyists.
+
+Put together, the case is this. If scribes changed the text to make Jesus higher, then the high Christology we read in the New Testament may in part be their work, and the faith of the creeds may rest on a text the winners shaped.
+
+## What is true in it
+
+A good deal. Copyists did sometimes alter the text for theological reasons. Matthew 24:36 is the clearest case: Bruce Metzger, an ordained Presbyterian minister and no friend to skepticism, judged that "nor the Son" was original and was dropped because of the difficulty it raised. The reading "God was manifested in the flesh" in 1 Timothy 3:16 is almost certainly a later change. Ehrman may be right about Hebrews 2:9, though the manuscript evidence leans the other way. Christians who say that scribes never changed anything for doctrinal reasons are wrong, and they should stop saying it.
+
+It is also true that the party that won the arguments did the copying. That fact should make any reader alert to bias.
+
+## What the evidence shows
+
+Look first at how the changes were found. Each of Ehrman's examples is known because other manuscripts kept the older reading. "Nor the Son" survives in the oldest copies of Matthew, and the same saying in Mark 13:32 keeps it in the standard text. "Who was manifested in the flesh" survives in Codex Sinaiticus. "Apart from God" in Hebrews 2:9 was known to Origen in the third century. The copyists didn't erase the evidence of what they changed. They changed some copies, and others kept the older words. That is the opposite of a successful cover-up.
+
+Look next at which way the readings run, because it isn't one way. In John 1:18 the reading that calls Jesus "God" is the older, found in the two earliest papyri, and it is the one Ehrman thinks was the change. Scholars still argue about it, and some who share his method think "God" is original. In Mark 1:1 the words "the Son of God" are missing from a few important witnesses, and some scholars think they were added. Tommy Wasserman argued in the *Journal of Theological Studies* in 2011 that they are original and were lost by accident. Some of the hard sayings that might have embarrassed a copyist were never touched in most of the tradition at all. Mark's Jesus still says, "Why do you call me good? No one is good except God alone" (Mark 10:18). A copying tradition determined to make Jesus look more divine left a great deal standing that a determined editor would have smoothed.
+
+Then look at what the changes do. In nearly every case the change makes a passage say more plainly something the copyist already believed and already found elsewhere in Scripture. "God was manifested in the flesh" says outright what John 1:14 says when it states that the Word, who was God, became flesh. The disputed readings sharpen the faith. They don't create it. Ehrman's own title points this way: a corruption is "orthodox" because orthodoxy came first.
+
+## Where the high view of Jesus comes from
+
+That leads to the decisive evidence, which has nothing to do with copyists. Leave every disputed reading aside and read only what nobody doubts.
+
+Paul's first letter to the Corinthians was written in the mid-50s, most likely from Ephesus; Ehrman himself dates it to 54 or 55. In it Paul takes the Shema, Israel's daily confession that the Lord is one, and writes: "yet for us there is one God, the Father, from whom are all things and for whom we exist, and one Lord, Jesus Christ, through whom are all things and through whom we exist" (1 Corinthians 8:6). Richard Bauckham has argued that Paul is placing Jesus inside the Shema itself, dividing its words between the Father and the Lord Jesus, though other scholars read the verse differently. At the end of the same letter Paul writes an Aramaic prayer, *Marana tha*, "Our Lord, come" (1 Corinthians 16:22), a prayer addressed to Jesus that Paul expected Greek readers in Corinth to know in the language of the first Jewish believers.
+
+Paul's letter to the Philippians was written from prison, on the majority view in Rome around 60 to 62, though many scholars place it in Ephesus in the mid-50s. In it Paul writes of Christ who was "in the form of God" and took the form of a servant, and then says that God gave him the name above every name, so that at the name of Jesus "every knee should bow ... and every tongue confess that Jesus Christ is Lord" (Philippians 2:10-11). Those words take up Isaiah 45:23, where the one God of Israel swears that to him every knee shall bow. Many scholars think the passage was a hymn or poem older than the letter itself, though not all agree.
+
+Outside the New Testament, the evidence agrees. Around 112 the Roman governor Pliny wrote to the emperor Trajan that Christians met before dawn and sang a hymn to Christ "as to a god." Ignatius of Antioch, traditionally dated to the reign of Trajan, though some scholars place him later, calls him "our God, Jesus the Christ" (*To the Ephesians* 18.2). Larry Hurtado, in *One God, One Lord* (1988) and *Lord Jesus Christ* (2003), argued that devotion to Jesus as divine appeared among Jewish believers at the very start, not by slow growth over generations. Even Ehrman, in *How Jesus Became God* (2014), argues that Jesus' followers came to call him divine once they believed God had raised him, which puts the belief in the first years, not in the scribal arguments of the second and third centuries. Scholars who agree that the belief was early still disagree about what "divine" meant to those first believers.
+
+## The argument, laid out
+
+This is an argument about where a belief came from, set against the dates of the evidence.
+
+1. The theologically motivated changes that copyists made to the New Testament were made in the second century or later, and they can be identified because older readings survive beside them.
+2. Belief that Jesus shares the identity and honor of Israel's one God is attested in Paul's undisputed letters of the 50s and early 60s, in passages whose wording is not in doubt, and in outside sources by about 112.
+3. A belief attested decades before the changes, in texts the changes didn't touch, can't have been produced by those changes.
+
+So: copyists sometimes made the text say more plainly what the church believed about Jesus, but they didn't create that belief. It was there before them.
+
+The second step carries the weight, and the real argument among scholars is over what those early passages mean, not over whether scribes invented them. Whether 1 Corinthians 8:6 places Jesus inside the Shema, or only beside it, is a question a reader can weigh with the Greek and with Bauckham and his critics. It isn't a question about copyists.
+
+## The strongest reply, and an answer
+
+The strongest reply goes further back. Yes, the skeptic says, Paul's letters are early. But the letters we have were themselves copied by the winners. How do you know Paul's own wording in 1 Corinthians 8:6 or Philippians 2 wasn't adjusted in the first copies, before any manuscript we have?
+
+It's fair to ask. The answer is that the argument now has to assume what it can't show. For Ehrman's examples there is evidence: older readings, competing manuscripts, early writers who knew both. For a change in 1 Corinthians 8:6 or Philippians 2 no one has produced any. The passages are woven into the argument of their letters, and Paul builds his appeal to humility in Philippians 2 on the passage about Christ. A theory that a change happened precisely where no evidence of change exists can't be refuted, which is a sign that it is no longer a historical argument. And the high view of Jesus is not confined to a few lines a copyist could have touched. It runs through the prayer *Marana tha*, through Paul's habit of applying to Jesus words the scriptures used of the Lord of Israel, and on into the worship Pliny describes.
+
+## What remains unresolved
+
+The original wording of John 1:18 and Hebrews 2:9 is still argued, and either could go either way. So could Mark 1:1. More important, scholars disagree deeply about what the earliest Christians meant when they worshiped Jesus. Some scholars read the earliest evidence as a lower view that grew into the creeds' confession over time. Hurtado and Bauckham argue that the decisive step, placing Jesus within the worship due to the one God, was taken at the start. That debate is about the meaning of texts everyone accepts, and it is where the question really lives. This page doesn't settle it. It argues only that the copyists aren't the answer to it.
+
+## Where Christians differ
+
+Christians agree on the confession at stake. The deity of Christ is first-order: it is what the creeds bind and what the church confesses, not a question this platform puts to a vote. They differ on lesser things here: which reading is original in John 1:18 or Hebrews 2:9, and how much of Philippians 2:6-11 Paul composed himself. Neither question changes what the church confesses. Both can be argued among believers without suspicion.
+
+## Read the other side
+
+- Bart D. Ehrman, *The Orthodox Corruption of Scripture: The Effect of Early Christological Controversies on the Text of the New Testament* (1993; 2nd ed., 2011).
+- Bart D. Ehrman, *How Jesus Became God* (2014).
+- Bart D. Ehrman, *Misquoting Jesus* (2005).
+
+## Read further
+
+- Daniel B. Wallace, ed., *Revisiting the Corruption of the New Testament: Manuscript, Patristic, and Apocryphal Evidence* (2011). A reply to Ehrman's book, chapter by chapter, from Wallace and his former students.
+- Larry W. Hurtado, *Lord Jesus Christ: Devotion to Jesus in Earliest Christianity* (2003), and *One God, One Lord* (1988).
+- Richard Bauckham, *Jesus and the God of Israel* (2008).
+- Michael F. Bird, Craig A. Evans and others, *How God Became Jesus* (2014). A reply to Ehrman's 2014 book.
+- Bruce M. Metzger, *A Textual Commentary on the Greek New Testament* (1971; 2nd ed., 1994).
+
+## On the site
+
+- The argued answer "Was Jesus just a good teacher?" (/answers/was-jesus-just-a-good-teacher), which sets out the early worship of Jesus at more length and agrees with this page.
+- The argued answer "How can God be three and one?" (/answers/how-can-god-be-three-and-one).
+- The Study Bible's text notes on Mark 1, Luke 22 and Luke 3, which give the manuscript evidence for several of the readings above.
