@@ -11264,3 +11264,29 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Map: Ephesus at the Pauline maps' point; the letter names no place | Map | ephesians/intro.json `teaching.map`; 2-john/1.json `historical` | Repository |
 
 Cut before publishing: the claim that the letter moves between singular and plural ‘you’ (not in the repository's notes); the Greek eklektē (not checked in the lexicon); Psalm 26:3, to keep ‘your truth’ out even inside Scripture.
+
+## The plain notes on 2 John (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The elder's title; tradition's John; the lady a church or a woman; kuria as a name | 1-3 | 2-john/intro.json `author`, `setting`; 2-john/1.json `cultural` | Repository, no side |
+| ‘Truth’ five times in the first four verses; truth abiding | 1-3 | 2-john/1.json `literary`, `words` (G0225) | Repository |
+| Galatians 4:26; Revelation 21:2; Acts 16:15; Colossians 4:15; Numbers 6:24-26; Psalm 117:2 | 1-3 | BSB | BSB text |
+| Love defined as walking in his commands, and the command as walking in love | 4-6 | 2-john/1.json `literary`, `doctrines` (law) | Repository |
+| Leviticus 19:18; Deuteronomy 11:1; Psalm 119:35 | 4-6 | BSB | BSB text |
+| Deceivers the same as 1 John 2:19, travelling; planos; docetism; ‘run ahead’ as more advanced faith; didachē two senses | 7-9 | 2-john/1.json `historical`, `words` (G4108, G1322); 2-john/intro.json `setting` | Repository |
+| Antichrist in John's letters; other readings; identifications made, none made here | 7-9 | 1-john/2.json `historical`; 2-thessalonians/plain/2.json; bible/guides/reading-apocalyptic.json | Repository; instruction for this run |
+| Deuteronomy 13:3; Jeremiah 23:16; Jeremiah 6:16 | 7-9 | BSB | BSB text |
+| House churches; travelling teachers; the greeting as formal welcome and blessing | 10-11 | 2-john/1.json `cultural` | Repository |
+| How far the principle extends; few think it forbids kindness to unbelievers | 10-11 | 2-john/1.json `hard` | Repository, no side |
+| ‘Jesus ate with tax collectors and sinners. Believers are to be friends ... Nothing here gives anyone a reason to look down on unbelievers.’ | 10-11 | 2-corinthians/plain/6.json (14-18 `hard`) | Word for word |
+| Care line ‘A word to anyone who has been hurt by a church's discipline ...’, without the sentence naming Paul | 10-11 | 1-corinthians/plain/5.json (1-5 `hard`) | Word for word, one sentence omitted |
+| Genesis 18:3; Deuteronomy 10:19; Psalm 34:18 | 10-11 | BSB | BSB text |
+| Face to face as a common wish in ancient letters; papyrus, reed pens and ink | 12-13 | 2-john/1.json `cultural` | Repository |
+| Exodus 33:11; Psalm 133:1; 1 John 1:4 | 12-13 | BSB | BSB text |
+
+Cut before publishing: ‘face to face’ as literally ‘mouth to mouth’ (not checked in the lexicon); Psalm 119:1 (to keep ‘blessed’ out).
+
+## 2 John complete (2026-11-20)
