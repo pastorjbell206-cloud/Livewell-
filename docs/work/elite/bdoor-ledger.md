@@ -8946,3 +8946,33 @@ check that matches each quotation to the verse it cites.
 Cut: Lightfoot and Ramsay by name; the year 278 BC; the date of Luther's table
 remark; the year Pilgrim's Progress appeared; Pessinus and Cybele (kept for the
 5:12 note if checked there).
+
+## The plain notes on Galatians 1 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter opening form; apostle "one sent"; resurrection named in the first sentence | 1-5 | Deep note `cultural`, `literary`; BSB | Repository |
+| ‘Grace and peace’: a Greek greeting word and the Jewish wish of peace joined | 1-5 | Standard; earlier ledger (Romans 1, 1 Corinthians 1) | Ledger |
+| Two ages, this age and the age to come, in Jewish thought; the new age broken in | 1-5 | Deep note `literary` | Repository |
+| Salvation God's own act through the cross, as confession | 1-5 | BSB 1:4; CLAUDE.md confessional floor | Stated as confession |
+| Numbers 6:25-26; Isaiah 53:12; Psalm 115:1 | 1-5 | BSB | BSB text |
+| No thanksgiving (only Titus besides); letters read aloud | 6-10 | Deep note `cultural` | Repository |
+| Metatithēmi used of changing sides, turning away | 6-10 | Standard lexicons | Stated generally |
+| Euangelion used for news of victory or a ruler's birth | 6-10 | Deep note `words` (G2098) | Repository |
+| Anathema, in the Greek Old Testament for what is handed over to God; Paul includes himself | 6-10 | Deep note `words` (G0331), `hard` | Repository |
+| Not a licence to curse or harm; pointer to the 1 Corinthians 16:22 note; Romans 14 | 6-10 | Deep note `hard`; 1-corinthians/plain/16.json | Repository wording |
+| Deuteronomy 13:2-3; Isaiah 52:7; 1 Samuel 16:7 | 6-10 | BSB | BSB text |
+| Pharisees a movement keeping the law and its traditions; Philippians 3:5 | 11-17 | Deep note `historical`; BSB | Repository |
+| Zeal recalling Phinehas (Numbers 25) | 11-17 | Deep note `words` (G2207), `cultural` | Repository. The Maccabees not named |
+| ‘Reveal His Son in me’ two senses; Acts 9 the outward story | 11-17 | Deep note `words` (G0602); BSB | Stated as readings |
+| Arabia most likely the Nabataean kingdom; Aretas (2 Corinthians 11:32); what Paul did there unknown | 11-17 | Deep note `historical`; Acts 9 ledger row on Aretas IV | Repository; ledger |
+| 1 Corinthians 15:3 and revelation: two different questions, "most readers" | 11-17 | Commentaries' standard harmonisation | Stated as most readers' view |
+| Jeremiah 1:5; Isaiah 49:1, 6; Numbers 25:11 | 11-17 | BSB | BSB text |
+| Cephas Aramaic for rock; Peter in Greek | 18-24 | Deep note `historical`; John 1:42 | Repository |
+| Three years possibly by inclusive counting | 18-24 | Deep note `historical` | Repository |
+| James the Lord's brother; John 7:5; 1 Corinthians 15:7; three readings of ‘brother’, pointer to the Mark 3:31-35 note | 18-24 | BSB; mark/plain/3.json | Repository |
+| Acts 9:26-30 differences (Barnabas; Tarsus); Paul's oath | 18-24 | BSB | BSB text |
+| Tarsus in Cilicia (Acts 22:3) | 18-24 | BSB | BSB text |
+| 1 Samuel 12:5; Isaiah 61:3 | 18-24 | BSB | BSB text |
