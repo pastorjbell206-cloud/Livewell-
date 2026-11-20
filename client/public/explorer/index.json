@@ -557,6 +557,22 @@
       "cards": []
     },
     {
+      "slug": "bible-in-a-minute",
+      "title": "The Bible in a minute",
+      "group": "story",
+      "status": "finished",
+      "line": {
+        "younger": "The whole Bible as one story, short enough to share, in eight pictures along one road.",
+        "older": "One book, one story: the whole Bible from creation to the new creation, short enough to share, in eight pictures along one road."
+      },
+      "mark": "bible-in-a-minute",
+      "frames": 8,
+      "stops": [
+        "creation"
+      ],
+      "cards": []
+    },
+    {
       "slug": "sixty-six-books",
       "title": "How the 66 books fit together",
       "group": "story",
@@ -734,6 +750,24 @@
       ]
     },
     {
+      "slug": "gospel-in-a-minute",
+      "title": "The gospel in a minute",
+      "group": "beliefs",
+      "status": "finished",
+      "line": {
+        "younger": "The good news of Jesus, short enough to share, in seven pictures: what went wrong, what God did about it, and the gift he gives.",
+        "older": "The gospel in seven pictures, short enough to share: made for God, broken from him, and brought back by God's own act in Christ, a gift received by faith."
+      },
+      "mark": "gospel-in-a-minute",
+      "frames": 7,
+      "stops": [
+        "cross"
+      ],
+      "cards": [
+        "cross"
+      ]
+    },
+    {
       "slug": "spirit-in-a-believer",
       "title": "The Holy Spirit in a believer",
       "group": "beliefs",
@@ -779,6 +813,24 @@
         "older": "A child's honest question, taken seriously in six pictures: why anything is here at all, and why the Bible says God has no beginning."
       },
       "mark": "creation",
+      "frames": 6,
+      "stops": [
+        "creation"
+      ],
+      "cards": [
+        "god"
+      ]
+    },
+    {
+      "slug": "does-god-exist",
+      "title": "Does God exist?",
+      "group": "questions",
+      "status": "finished",
+      "line": {
+        "younger": "One of the biggest questions there is, taken slowly and honestly in six pictures: why is there anything at all?",
+        "older": "The argument from why anything exists at all, in six pictures: what it shows, what it does not, and where to weigh the case against."
+      },
+      "mark": "does-god-exist",
       "frames": 6,
       "stops": [
         "creation"

@@ -87,6 +87,21 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The good news of Jesus in nine moving pictures: made for God, turned away, unable to mend it, and brought back by God's own act in Christ, a gift received by faith.",
     },
+    "bible-in-a-minute": {
+      title: "The Bible in a minute: Bible Explorer",
+      description:
+        "One book, one story: the whole Bible from creation to the new creation, short enough to share, in eight pictures along one road.",
+    },
+    "gospel-in-a-minute": {
+      title: "The gospel in a minute: Bible Explorer",
+      description:
+        "The gospel in seven pictures, short enough to share: made for God, broken from him, and brought back by God's own act in Christ, a gift received by faith.",
+    },
+    "does-god-exist": {
+      title: "Does God exist?: Bible Explorer",
+      description:
+        "The argument from why anything exists at all, in six pictures: what it shows, what it does not, and where to weigh the case against.",
+    },
     "who-made-god": {
       title: "Who made God?: Bible Explorer",
       description:

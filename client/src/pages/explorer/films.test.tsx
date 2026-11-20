@@ -492,7 +492,7 @@ describe("Listen", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the seven finished films", () => {
+  it("lists the four groups and the ten finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -501,13 +501,62 @@ describe("the data", () => {
     ]);
     expect(READY.map(f => f.slug)).toEqual([
       "bible-two-minutes",
+      "bible-in-a-minute",
       "holy-spirit",
       "god-with-his-people",
       "who-god-is",
       "why-jesus-died",
       "how-salvation-works",
+      "gospel-in-a-minute",
       "who-made-god",
+      "does-god-exist",
     ]);
+  });
+
+  it("the three films cut for sharing are short, stand alone, and end by pointing to the site, never pressing", () => {
+    for (const slug of [
+      "gospel-in-a-minute",
+      "bible-in-a-minute",
+      "does-god-exist",
+    ]) {
+      const film = filmFile(slug);
+      expect(film.frames.length, slug).toBeGreaterThanOrEqual(6);
+      expect(film.frames.length, slug).toBeLessThanOrEqual(8);
+      const all = JSON.stringify(film);
+      expect(all).not.toMatch(
+        /pray this prayer|pray after me|right now|before it is too late|decide today/i
+      );
+      // Third person: never the site's author speaking.
+      for (const fr of film.frames)
+        for (const l of ["younger", "older"] as const)
+          expect(fr[l], `${slug} ${fr.id}`).not.toMatch(
+            /\b(I|I'm|I've|my|me)\b/
+          );
+    }
+    const gospel = filmFile("gospel-in-a-minute");
+    expect(gospel.frames.filter(f => f.verse).map(f => f.verse!.ref)).toEqual([
+      "1 Corinthians 15:3-4",
+    ]);
+    const last = gospel.frames[gospel.frames.length - 1];
+    for (const l of ["younger", "older"] as const) {
+      expect(last[l]).toContain("www.livewellbyjamesbell.co");
+      expect(last[l]).toMatch(/pastor/);
+    }
+  });
+
+  it("Does God exist? claims only what the Honest Answer claims, says what it does not show, and sends the reader to the answer", () => {
+    const film = filmFile("does-god-exist");
+    const shows = film.frames.find(f => f.id === "shows")!;
+    expect(shows.younger).toContain(
+      "This does not prove that Christianity is true"
+    );
+    expect(shows.younger).toContain("believing in God is reasonable");
+    expect(shows.older).toContain("isn't yet Christianity");
+    expect(film.end.href).toBe("/answers/does-god-actually-exist");
+    expect(film.deeper?.map(d => d.href)).toContain(
+      "/answers/does-god-actually-exist"
+    );
+    expect(film.frames[film.frames.length - 1].older).toContain("still say no");
   });
 
   it("loads every finished film, and every frame has both captions and its finished picture in words", () => {
