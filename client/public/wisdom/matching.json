@@ -2559,6 +2559,30 @@
     "singleness",
     "longing-for-marriage"
    ]
+  },
+  "singleness": {
+   "phrases": [
+    "single christian",
+    "single at church",
+    "single in my thirties",
+    "single in my forties",
+    "single and happy",
+    "gift of singleness",
+    "is singleness a calling",
+    "celibate",
+    "only single person",
+    "church treats singles",
+    "stay single",
+    "single the rest of my life",
+    "god wants me single",
+    "single after divorce"
+   ],
+   "not": [],
+   "related": [
+    "longing-for-marriage",
+    "loneliness",
+    "deep-friendship"
+   ]
   }
  }
 }
