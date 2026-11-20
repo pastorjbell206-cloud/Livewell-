@@ -37,7 +37,7 @@ async function open(address: string, view: "study" | "read") {
   await waitFor(() => expect(document.getElementById("v1")).not.toBeNull(), { timeout: 5000 });
 }
 
-const lines = () => [...document.querySelectorAll(".sb-later")].map((n) => n.textContent);
+const lines = () => Array.from(document.querySelectorAll(".sb-later")).map((n) => n.textContent);
 
 describe("the reader's mark on a later passage", () => {
   for (const view of ["study", "read"] as const) {
