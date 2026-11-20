@@ -189,11 +189,12 @@ const film: FilmDrawing = {
             className="pl-f"
             d="M60,276h60M300,272h80M560,270h70M180,306h90M470,300h60"
           />
-          {/* A boat drawn up on the shore. */}
-          <Shape d="M600,346H720C712,370 612,370 600,346Z" tone="c" off={1.5} />
           <path className="pl-l" d="M0,346C200,340 600,342 800,340" />
           <Shape d="M0,500V346C200,340 600,342 800,340V500Z" tone="g" off={2} />
           <path fill={h.h3} d="M0,420H800V500H0Z" />
+          {/* A boat drawn up on the shore, over the water's edge. */}
+          <Shape d="M600,338H724C714,364 612,364 600,338Z" tone="c" off={1.5} />
+          <path className="pl-l" d="M662,338V300M662,304l28,30H662" />
           {/* The charcoal fire, fish laid on it, bread beside. */}
           <Shape
             d="M352,430C352,414 448,414 448,430C448,446 352,446 352,430Z"

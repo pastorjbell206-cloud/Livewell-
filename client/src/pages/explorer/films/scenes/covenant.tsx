@@ -6,7 +6,7 @@
  * stands open as a gateway.
  *
  *   0  The bow in the clouds    hills after rain, a rainbow; the first stone (a bow)
- *   1  Count the stars          a tent under the stars, a man looking up; a star stone
+ *   1  Count the stars          a tent under the stars, a man outside it; a star stone
  *   2  Rescued, then the law    the mountain in cloud, two tablets; a tablets stone
  *   3  A throne for ever        a throne on a hill, a line of marks; a crown stone
  *   4  A new covenant promised  broken tablets, a person with a heart; a heart stone
@@ -193,7 +193,7 @@ const film: FilmDrawing = {
           d="M60,420A170,170 0 0 1 400,420M80,420A150,150 0 0 1 380,420M100,420A130,130 0 0 1 360,420"
         />
         <Shape
-          d="M0,420C60,360 140,340 220,360C300,380 360,350 440,370V420Z"
+          d="M0,420C60,360 140,340 220,360C300,380 350,356 390,372C414,382 432,402 444,420Z"
           tone="g"
           off={3}
         />
@@ -205,7 +205,7 @@ const film: FilmDrawing = {
         />
       </Fade>
 
-      {/* 1. A tent under the stars, and Abram looking up. */}
+      {/* 1. A tent under the stars, and Abram standing outside it. */}
       <Fade frame={frame} on={1} off={2} from="up">
         <Shape d="M130,420L200,330L270,420Z" tone="c" off={2} />
         <path className="pl-l" d="M200,330V420M188,420L200,380L212,420" />
