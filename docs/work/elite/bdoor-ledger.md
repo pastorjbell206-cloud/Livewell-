@@ -6872,3 +6872,63 @@ Two web searches.
 | John 10:34-36: Jesus' argument from the lesser to the greater (10:35 paraphrased, since the BSB sets "and the Scripture cannot be broken" between em-dashes) | 6-8 | BSB; repository deep note (christ) | BSB text |
 | Three readings of 82:6: human judges; heavenly beings of the council (verse 1, verse 7, 1 Kings 22, Job 1); none means gods equal to the LORD | 6-8 | Repository deep note (hard); biblehub.com "Does Psalm 82:6 suggest Israel's polytheism?"; christianity.com "Why Does Psalm 82:6 Say 'Ye Are Gods'?"; Heiser, SBL paper on Psalm 82 in John 10 (drmsh.com) | Search. Stated as views, no side; no scholar named on the page |
 | An old Jewish reading in the Talmud: spoken to Israel at Sinai, who might have been free of death but lost it through sin | 6-8 | Repository deep note (hard); intertextual.bible (Avodah Zarah 5a, the baraita of Rabbi Yosei, in translation) | Search. Paraphrased; tractate and rabbi not named on the page (met in translation on one site) |
+
+## The plain notes on Psalm 83 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The last psalm of Asaph | BSB headings | Script |
+| No single war matches the list; Jehoshaphat's day (2 Chronicles 20:1) one proposal; or a gathering of old enemies | Repository deep note (historical); BSB | Stated as views; no century given |
+| Sisera and Jabin (Judges 4:2); Oreb and Zeeb (Judges 7:25); Zebah and Zalmunna (Judges 8:21) | BSB | BSB text |
+| Chaff on the threshing floor | Repository deep note (cultural) | Site's own teaching |
+| Matthew 5:44; Luke 23:34; 1 Timothy 2:4 | BSB | BSB text |
+
+Hard: pointed to the book page's part on the cursing psalms; the names belong to that ancient world and give no ground for contempt toward any people today.
+
+## The plain notes on Psalm 84 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Three pilgrim feasts (Deuteronomy 16:16); walking in village groups | 1-7 | Repository deep note (cultural); BSB | BSB text |
+| "Pilgrimage" close to a word for raised roads; Baca unknown, a tree or (in the old Greek) "weeping" | 1-7 | Repository deep note (cultural) | Site's own teaching |
+| Korahites guarded the thresholds (1 Chronicles 9:19) | 8-12 | BSB; repository deep note | BSB text |
+| "Your anointed" the king | 8-12 | Repository deep note | Site's own teaching |
+| John 4:21, 23; Hebrews 12:22; Revelation 21:22; John 10:9; Romans 8:32 | all | BSB | BSB text |
+
+## The plain notes on Psalm 85 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 85:1 read by many of the return from Babylon (after 539 BC, the book page's timeline); hard years after (Haggai 1:6); others read it more widely | Book page (timeline); repository deep note (historical); BSB | Stated as views |
+| Land and covenant one relationship (Deuteronomy 28) | Repository deep note (cultural) | Site's own teaching |
+| Romans 3:26; 5:1; Luke 2:14; the cross as a Christian reading of 85:10 ("often read") | BSB | BSB text; stated as a reading |
+
+## The plain notes on Psalm 86 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The only heading in Book Three to name David | BSB headings 73 to 89 | Script |
+| 86:15 nearly Exodus 34:6; Jonah 4:2; Revelation 15:4 | BSB | BSB text compared |
+| Woven from lines found elsewhere in Scripture | Repository deep note (historical) | Site's own teaching |
+| "Son of Your maidservant" a household-born servant; chasid (verse 2) loyalty, not perfection | Repository deep note (cultural, hard); book page ("innocence") | Site's own teaching |
+
+## The plain notes on Psalm 87 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Rahab a poetic name for Egypt (Isaiah 30:7); the five peoples; Cush south of Egypt | Repository deep note (cultural); BSB | BSB text |
+| Registers of citizens | Repository deep note (cultural) | Site's own teaching |
+| Two readings of 87:4-6 (the nations as citizens; Israelites scattered among them) | Repository deep note (hard) | Stated as views |
+| Isaiah 19:25; Galatians 4:26; Revelation 7:9 | BSB | BSB text |
+
+No modern state or border in view.
