@@ -1554,3 +1554,24 @@ Cut or not used: Ramsay's "Syrian enrolment of 8 BC" (a chapter title seen in a 
 | James led the Jerusalem church until around 62 | Fourteenth-run rows t, v | Verified |
 
 Cut or not used: the name-equivalence harmonization (Heli and Jacob as names of one man) seen only in a blog forum; the equation of Matthan and Matthat (not checked); the counter-missionary objection's sources beyond the Note.
+
+### aa. "How did Judas die?" (how-did-judas-die)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Matthew 27:3-10 (27:5 "So Judas threw the silver into the temple and left. Then he went away and hanged himself"; 27:6 "blood money"; 27:7-8; 27:9 "what was spoken through Jeremiah the prophet"); Acts 1:15-20 (1:18-19 in full; 1:20 the psalms); Zechariah 11:12-13; Jeremiah 18:1-3, 19:1-2, 32:6-15; 2 Samuel 17:23; Acts 12:23 | Repo (BSB, script) | Quoted or described |
+| Greek of Acts 1:18 *prēnēs genomenos* (glossed "headlong having fallen"); Matthew 27:5 *apēgxato* | Repo (`bible/ch`, TAGNT) | Verified |
+| Papias, fragment 3: "Judas walked about in this world a sad example of impiety; for his body having swollen to such an extent that he could not pass where a chariot could pass easily, he was crushed by the chariot, so that his bowels gushed out"; Papias early in the second century | ANF, read this run (`scrollmapper` copy); earlier rows (Papias around 110 to 130) | Quoted (the last clause); the fuller version through Apollinaris (Note, Matthew 27) not quoted |
+| Augustine, *Harmony of the Gospels* 3.7: some codices omit Jeremiah's name; "a majority of codices contain the name of Jeremiah" and the "more ancient Greek exemplars"; "it may have been the case, that when Matthew was engaged in composing his Gospel, the word Jeremiah occurred to his mind, in accordance with a familiar experience, instead of Zechariah"; then his reason that the prophets speak in one Spirit | NPNF text, read this run in `HistoricalChristianFaith/Commentaries-Database` (source title "The Harmony of the Gospels, Book 3, Chapter 7") | Quoted (one sentence); the rest paraphrased |
+| NPNF first series, vol. 6 (Augustine: Sermon on the Mount, Harmony, Homilies), 1888 | S: Logos record (print date 1888), CCEL and sacred-texts tables of contents | Verified (secondary); translator not named (not confirmed) |
+| Ehrman, *Jesus, Interrupted* (2009), the two deaths as a contradiction | S: NPR (2009) and blog summaries and critiques of the book (page about 47 cited by one) | Verified (secondary), paraphrased |
+| The harmonizations (the body fell after the hanging; the priests bought the field with his money, so he could be said to have acquired it) and the view of independent traditions agreeing on essentials | Note (Acts 1, hard question) | Verified (repo) |
+| *prēnēs* as "swollen": a minority proposal (Chase, *JTS* 1912, as reported); the usual sense "headlong" or "face down" | S (B-Greek forum; Gordon, *Evangelical Quarterly* 1971; Roger Pearse on Papias) | Verified (secondary); no name or date given in the piece |
+| "Jeremiah": the combined allusion to Zechariah 11 and Jeremiah 18, 19 and 32, naming the greater prophet as Mark 1:2 names Isaiah; almost all manuscripts name Jeremiah; Augustine's suggestion | Note (Matthew 27, literary and text) | Verified (repo) |
+| Matthew and Luke independent of each other (Luke not using Matthew), the view most scholars hold | Earlier rows (Matthew and Luke used Mark; the two-source view, authors area) | Verified as the majority view; "probably" kept |
+| Akeldama placed since at least the fourth century at the lower end of the Hinnom Valley; Avni and Greenhut, *The Akeldama Tombs* (1996) | Note (Matthew 27, historical) | Verified (repo) |
+| Brown, *The Death of the Messiah* (1994) | Fourteenth-run row u | Verified |
+| Chicago, article 13: "variant selections of material in parallel accounts, or the use of free citations" | Chicago, read this run | Quoted |
+| Judas and Peter, two failures on one night | Note (Matthew 27, story) | Agrees |
+
+Care: the page names Judas's death and quotes Scripture's words for it, with no further detail, and its "On the site" list points to /help (the Find Help page) for a reader whom the subject touches. Cut or not used: Chase's name and date; the claim that the harmonization of a fall after hanging is the "oldest" (not checked; Papias's version through Apollinaris was itself used to harmonize).
