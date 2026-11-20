@@ -235,6 +235,7 @@ const finder = {
   synonyms: matching.synonyms,
   concepts: matching.concepts ?? [],
   safety: matching.safety ?? {},
+  safetyPairs: matching.safetyPairs ?? [],
   areas: matching.areas,
   topics: finderTopics,
   daily,

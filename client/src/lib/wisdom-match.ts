@@ -29,7 +29,9 @@
  *   and rest, church and its leaders, housing and unfairness) adds the
  *   library's own word for the thing to any sentence that names a member.
  * Safety comes first: a sentence carrying a safety word (matching.json
- * "safety", set only by the rewrites for self-harm, abuse and danger) puts
+ * "safety", set only by the rewrites for self-harm, abuse and danger, and by
+ * "safetyPairs": control said of a partner, such as "my husband checks my
+ * phone and wont let me see my friends") puts
  * that word's help topic first, whatever else scores, and its own related
  * subjects next.
  * When fewer than three topics score near the best, the best topic's related
@@ -71,12 +73,24 @@ export interface FinderConcept {
   adds: string;
 }
 
+/**
+ * Two words that together mean danger though neither does alone: a control
+ * word (a rewrite of "checks my phone", "wont let me see") after a partner
+ * word ("husband", "girlfriend") adds a safety word.
+ */
+export interface FinderSafetyPair {
+  word: string;
+  with: string[];
+  adds: string;
+}
+
 export interface FinderIndex {
   rewrites: Record<string, string>;
   synonyms: Record<string, string>;
   concepts?: FinderConcept[];
   /** A word a safety rewrite adds, and the help topic it puts first. */
   safety?: Record<string, string>;
+  safetyPairs?: FinderSafetyPair[];
   areas: FinderArea[];
   topics: FinderTopic[];
 }
@@ -212,6 +226,13 @@ export function queryWords(index: FinderIndex, sentence: string): Set<string> {
     const more = index.synonyms[raw] ?? inflected(lex, raw, s);
     if (more) addAll(more);
     for (const c of lex.conceptsByStem.get(s) ?? []) addAll(c.adds);
+  }
+  // A control word counts as danger only when a partner word comes before it
+  // ("my husband checks my phone"), not after it ("my dad wont let me see my boyfriend").
+  for (const pair of index.safetyPairs ?? []) {
+    const at = toks.findIndex((t) => t.s === stem(normalize(pair.word)));
+    const partners = new Set(pair.with.map((w) => stem(normalize(w))));
+    if (at > 0 && toks.slice(0, at).some((t) => partners.has(t.s))) addAll(pair.adds);
   }
   return out;
 }

@@ -1,5 +1,5 @@
 {
- "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. concepts: groups of words (illness, family roles, work and rest, church and its leaders, housing and unfairness), each matched by stem, adding the library's own word for the thing. safety: a word the self-harm, abuse and danger rewrites add, and the help topic it puts first. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
+ "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. concepts: groups of words (illness, family roles, work and rest, church and its leaders, housing and unfairness), each matched by stem, adding the library's own word for the thing. safety: a word the self-harm, abuse and danger rewrites add, and the help topic it puts first. safetyPairs: a control word (added by rewrites such as \"checks my phone\" and \"wont let me see\") said with a partner word adds a safety word, so control by a husband, wife, boyfriend or girlfriend puts the help topic first. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
  "rewrites": {
   "passed away": "died",
   "pass away": "die",
@@ -33,7 +33,7 @@
   "kill myself": "suicide helpnow",
   "end it all": "suicide helpnow",
   "not be here": "suicide",
-  "want to die": "suicide",
+  "want to die": "suicide helpnow",
   "dont want to be alive": "suicide helpnow",
   "dont want to live": "suicide helpnow",
   "better off dead": "suicide helpnow",
@@ -85,7 +85,42 @@
   "mom hits me": "abuse abusenow",
   "mother hits me": "abuse abusenow",
   "stepdad hits me": "abuse abusenow",
-  "stepmom hits me": "abuse abusenow"
+  "stepmom hits me": "abuse abusenow",
+  "if i disappeared": "suicide helpnow",
+  "if i just disappeared": "suicide helpnow",
+  "want to disappear": "suicide helpnow",
+  "wish i could disappear": "suicide helpnow",
+  "fine without me": "suicide helpnow",
+  "happier without me": "suicide helpnow",
+  "everyone would be fine if i": "suicide helpnow",
+  "everyone would be better off if i": "suicide helpnow",
+  "wish i could just disappear": "suicide helpnow",
+  "want to just disappear": "suicide helpnow",
+  "checks my phone": "coercion",
+  "checks my texts": "coercion",
+  "goes through my phone": "coercion",
+  "reads my texts": "coercion",
+  "reads all my texts": "coercion",
+  "reads my messages": "coercion",
+  "tracks my location": "coercion",
+  "tracks my phone": "coercion",
+  "wont let me see": "coercion",
+  "wont let me talk to": "coercion",
+  "wont let me have friends": "coercion",
+  "wont let me have a phone": "coercion",
+  "wont let me have money": "coercion",
+  "wont let me leave": "coercion",
+  "wont let me go anywhere": "coercion",
+  "keeps me from seeing": "coercion",
+  "keeps me from my": "coercion",
+  "controls all the money": "coercion",
+  "controls all my money": "coercion",
+  "controls the money": "coercion",
+  "controls everything": "coercion",
+  "controls me": "coercion",
+  "isolates me": "coercion",
+  "takes my phone": "coercion",
+  "took my phone": "coercion"
  },
  "synonyms": {
   "son": "child",
@@ -318,6 +353,22 @@
   "helpnow": "suicidal-thoughts",
   "abusenow": "toxic-relationships"
  },
+ "safetyPairs": [
+  {
+   "word": "coercion",
+   "with": [
+    "husband",
+    "wife",
+    "boyfriend",
+    "girlfriend",
+    "partner",
+    "fiance",
+    "fiancee",
+    "spouse"
+   ],
+   "adds": "abusenow"
+  }
+ ],
  "areas": [
   {
    "id": "mind",
