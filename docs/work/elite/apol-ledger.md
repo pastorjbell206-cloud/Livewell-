@@ -2805,3 +2805,31 @@ Further sources for this piece, GH: "CE Nicaea" (*Catholic Encyclopedia*, "The F
 
 Agreement: the essay "Who Decided What Books Are in the Bible?", the Nicaea essay, the guides on the New Testament canon and the Apocrypha, the Study Bible's guide to the canon, and this library's page on the four Gospels and the rest; none is contradicted, and the page does not repeat their accounts of the four Gospels' reception or the Old Testament dispute beyond a sentence each. Cut or not used: the later legend of books sorted under an altar (in the guide; not needed); Laodicea's list (no readable text of its canon 60 reached); the Ethiopian canon (no source read).
 
+### bl. "Didn't Paul, rather than Jesus, invent Christianity?" (did-paul-invent-christianity)
+
+Further sources for this piece, GH: "BT-JI" (Ehrman's own text from *Jesus, Interrupted* (2009), "from page 85 onwards" as the reader says, on Paul and Matthew, read aloud with the reader's own comments marked off ("my own voice so to speak"), Blogging Theology recording of 16 December 2020, `IslamicRevival/IslamicRevival.github.io`, `docs/blogging_theology/Some_key_differences_between_Paul_and_the_Gospel_writers.md`; paraphrased, never quoted); "CE Paul" (*Catholic Encyclopedia*, "St. Paul", 11567b).
+
+| Claim | How verified | Result |
+|---|---|---|
+| Wrede's study of Paul (1904) "famously called the apostle the second founder of Christianity"; Sanders, *Paul and Palestinian Judaism* (1977), "covenantal nomism", the Torah "God's gracious gift" | Note (Luke 10) | Quoted as the note's words; Wrede's title is not given on the page (the note says only "study of Paul"; no copy reached), and the claims index carries "Paul" from that description |
+| Critics who make Paul "the creator of theology, the founder of the Church", opposed to "the religion of love and liberty which Christ came to announce"; the phrase "second founder of Christianity" | CE Paul; a second, independent report of the phrase in A. T. Robertson's *Paul the Interpreter of Christ* (`deeproots/books`, `robertson/paul-the-interpreter-of-christ/book.txt`: "He is called the second founder of Christianity") | Quoted from CE; Robertson used only to confirm the phrase (his book's year not confirmed, so not listed) |
+| Ehrman, *Jesus, Interrupted* (2009): for Paul no one justified by works of the law, believers seeking it "in danger of losing" salvation (Galatians 5:4); Matthew 5:17-19; Matthew 25, salvation for those "who have never even heard of Jesus"; "anyone who reads the gospel of matthew and then reads the letter to the galatians would never suspect that there was a reason or a way to reconcile" them | BT-JI | Paraphrased, said to be a reading of the passage |
+| Ehrman, 2021: Paul did not come up with the death and resurrection ("people were saying that already that's why paul was persecuting people"); his revelation that Gentiles need not become Jews; the disagreement with James and Peter "not about christology"; all agreed Jesus' death and resurrection puts a person right with God | BT-INT | Paraphrased, "as an automatic transcript of it records" |
+| 1 Corinthians 15:3-7: "received" and "passed on", "the technical terms for transmitting tradition", the Aramaic Cephas; "many scholars, including many who do not share Christian faith, date his receipt of it to within a few years of the crucifixion" | Note (1 Corinthians 15); BSB (script) | Quoted |
+| 1 Corinthians 11:23-25 "closely matches Luke 22:19-20" | Note (1 Corinthians 11) | Quoted as the note's words |
+| Galatians 1:18-19 (three years, fifteen days, Cephas and James), 2:1 (fourteen years), 2:9 (quoted from "gave me and Barnabas", since the BSB's verse sets "those reputed to be pillars" between dashes), 2:11 | BSB (script; 2:9 and the ellipsis in 2:11 by hand) | Quoted |
+| Paul's citations of the Lord: 1 Corinthians 7:10, 9:14, 11:23-25; 1 Thessalonians 4:15 | BSB | Quoted and referenced |
+| Shared with the Gospels: Abba (Mark 14:36; Galatians 4:6), "Love your neighbor as yourself" (Mark 12:31; Galatians 5:14), divorce (1 Corinthians 7:10-11; Mark 10:9), the kingdom of God (Romans 14:17) | BSB | Referenced and quoted |
+| Paul the Jew: Romans 11:1, 9:3, 15:8 | BSB (script) | Quoted |
+| The reply's texts: Romans 2:6; Matthew 20:28, 26:28, 15:24, 28:19; Luke 18:14 | BSB (script) | Quoted and referenced |
+| The argued answer "Did the resurrection actually happen?" on 1 Corinthians 15:3-7 | `answers.ts` | Agrees |
+
+Care: Paul is named a Jew in the short answer and the evidence; the page says that a Judaism of earning set against Paul's grace is a caricature and gives the Jewish pattern in the note's words; the Antioch quarrel is described as about table fellowship, not about Jewish error. Cut or not used: Wrede's German title and the English translation (not in any source read); Nietzsche and Jefferson on Paul (no readable copy confirmed); James Tabor's lectures (transcripts exist in `the-nazarene/way`, but his published books, which that archive asks to be cited, were not reached); the claim that Paul's gospel and Matthew's cannot be reconciled is Ehrman's and is stated as his.
+
+### The area page (index.md), with the five new questions
+
+| Claim | How verified | Result |
+|---|---|---|
+| The five new questions and blurbs; the intro's added sentences | Rows bh to bl | Agrees with each page |
+| Words: Ancient biography (Guide, section 1; Plutarch; Suetonius); Q (Guide, section 4) | As named | Verified |
+

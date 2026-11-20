@@ -193,6 +193,13 @@
           "blurb": "What Nicaea's surviving acts do and don't contain, Constantine's letter ordering Bibles, his own bishop's list of disputed books, the Muratorian fragment, Athanasius in 367 and the African councils, the novel's claim named as fiction, and the edges that still differ.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "did-paul-invent-christianity",
+          "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+          "blurb": "Wrede's \"second founder\" and Ehrman's contrast of Paul and Matthew at full strength, what Paul says he received, his meetings with Peter, James and John, what he shares with the Jesus of the Gospels, and Paul the Jew.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1013,6 +1020,26 @@
       "area": "authors",
       "slug": "did-constantine-decide-the-bible",
       "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+      "live": false
+    },
+    {
+      "claim": "Paul's teaching that no one is justified by the law cannot be reconciled with Matthew's Jesus on the law and the judgment",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+      "live": false
+    },
+    {
+      "claim": "Paul was the second founder of Christianity",
+      "proponent": "William Wrede",
+      "work": "Paul",
+      "year": 1904,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
       "live": false
     },
     {
