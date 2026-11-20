@@ -8221,3 +8221,23 @@ One search (the Catechism on 3:15). Scripture is the BSB in the repository.
 | Romans 8:38; 8:6 | 18-23 | BSB | BSB text |
 
 Cut: milk and solid food as a common figure among ancient teachers (not checked); Solomon's temple materials (replaced by 1 Chronicles 29:2).
+
+## The plain notes on 1 Corinthians 4 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Oikonomos a household manager, often a trusted slave or freedman; hypēretēs an assistant; anakrinō | 1-5 | Deep note `cultural`, `words`; Greek text | Repository |
+| 1 Samuel 16:7; Jeremiah 17:10; Ecclesiastes 12:14; Daniel 2:22; Matthew 7:1; 5:12 | 1-5 | BSB | BSB text |
+| ‘Beyond what is written’: the Scriptures quoted, or a saying the Corinthians knew | 6-7 | Commentary options | Stated as two readings |
+| Physioō six times in 1 Corinthians (4:6, 18, 19; 5:2; 8:1; 13:4), once more in the New Testament (Colossians 2:18) | 6-7 | Repository Greek (G5448) | Script |
+| Deuteronomy 8:17-18; 1 Chronicles 29:14 | 6-7 | BSB | BSB text |
+| Triumph with captives at the end, or the arena with the condemned last | 8-13 | Deep note `cultural` | Stated as two pictures readers see |
+| Hand work looked down on; teachers paid by patrons or fees; Acts 18:3; 20:34 | 8-13 | Roman-world portrait (work); BSB | wrom-ledger; BSB text |
+| Peripsēma and perikatharma: scrapings, sweepings, used of people thought worthless | 8-13 | Deep note `cultural`, `words` | Repository. The scapegoat sense not used |
+| Psalm 44:22 (Romans 8:36); Lamentations 3:45; Isaiah 53:3; Luke 6:28; Matthew 8:20 | 8-13 | BSB | BSB text |
+| Paidagōgos a slave who took a boy to school and watched his conduct | 14-21 | Deep note `cultural` | Repository |
+| Timothy: 2 Corinthians 1:19; Acts 16:1; Acts 19:22 | 14-21 | BSB | BSB text |
+| Proverbs 3:12; Deuteronomy 8:5; Proverbs 13:24; Psalm 2:9; 11:1 | 14-21 | BSB | BSB text |
+| Care line for readers with an absent or harmful father (Psalm 27:10; Find Help) | 14-21 | Romans 8 plain note form | Repository |
