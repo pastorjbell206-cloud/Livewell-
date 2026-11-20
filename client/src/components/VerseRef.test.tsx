@@ -148,6 +148,25 @@ describe("VerseRef, sheet mode", () => {
     expect(await screen.findByText("[Not in the earliest manuscripts]")).toBeInTheDocument();
   });
 
+  it("marks where Mark 16:9-20 begins and ends, and leaves verse 8 as it was", async () => {
+    const user = userEvent.setup();
+    renderAt(<VerseRef reference="Mark 16:7-20" />);
+    await user.click(screen.getByRole("link", { name: "Mark 16:7-20" }));
+    const dialog = await screen.findByRole("dialog", { name: "Mark 16:7–20" });
+    const notes = await within(dialog).findAllByRole("note");
+    expect(notes.map((n) => n.textContent)).toEqual(["[The earliest manuscripts do not include Mark 16:9-20.]", "[End of Mark 16:9-20.]"]);
+    expect(within(dialog).getByText(/did not say a word to anyone/)).toBeInTheDocument();
+  });
+
+  it("does not close a passage the sheet shows only part of", async () => {
+    const user = userEvent.setup();
+    renderAt(<VerseRef reference="Mark 16:9-11" />);
+    await user.click(screen.getByRole("link", { name: "Mark 16:9-11" }));
+    const dialog = await screen.findByRole("dialog", { name: "Mark 16:9–11" });
+    const notes = await within(dialog).findAllByRole("note");
+    expect(notes.map((n) => n.textContent)).toEqual(["[The earliest manuscripts do not include Mark 16:9-20.]"]);
+  });
+
   it("sends a passage longer than three chapters to the Study Bible without fetching it", async () => {
     const user = userEvent.setup();
     renderAt(<VerseRef reference="Genesis 1-4" />);

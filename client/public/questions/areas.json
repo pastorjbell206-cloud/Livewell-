@@ -1,0 +1,75 @@
+{
+  "_note": "The ten areas of the library, in the plan's order (docs/work/elite/apol-library.md, section 2). An area's pieces live in client/public/questions/<slug>/; its own page text in <slug>/_area.json once it is written. status: pending or live; nothing pending reaches a menu, the sitemap, the search index or llms.txt. Rebuild the manifest with scripts/build-questions-index.mjs.",
+  "areas": [
+    {
+      "slug": "god",
+      "n": 1,
+      "title": "God, faith and reason",
+      "planned": 16,
+      "status": "pending"
+    },
+    {
+      "slug": "text",
+      "n": 2,
+      "title": "Can we trust the text of the New Testament?",
+      "planned": 14,
+      "status": "pending"
+    },
+    {
+      "slug": "authors",
+      "n": 3,
+      "title": "Who wrote the Gospels and the New Testament, when, and who chose the books",
+      "planned": 16,
+      "status": "pending"
+    },
+    {
+      "slug": "contradictions",
+      "n": 4,
+      "title": "Contradictions and hard passages",
+      "planned": 20,
+      "status": "pending"
+    },
+    {
+      "slug": "jesus",
+      "n": 5,
+      "title": "The historical Jesus and the resurrection",
+      "planned": 16,
+      "status": "pending"
+    },
+    {
+      "slug": "old-testament",
+      "n": 6,
+      "title": "The Old Testament: history, archaeology, violence and law",
+      "planned": 18,
+      "status": "pending"
+    },
+    {
+      "slug": "science",
+      "n": 7,
+      "title": "Science",
+      "planned": 16,
+      "status": "pending"
+    },
+    {
+      "slug": "evil",
+      "n": 8,
+      "title": "Evil, suffering and judgment",
+      "planned": 12,
+      "status": "pending"
+    },
+    {
+      "slug": "morality",
+      "n": 9,
+      "title": "Morality, sexuality and the church's record",
+      "planned": 14,
+      "status": "pending"
+    },
+    {
+      "slug": "religions",
+      "n": 10,
+      "title": "Other religions, and those who never heard",
+      "planned": 10,
+      "status": "pending"
+    }
+  ]
+}

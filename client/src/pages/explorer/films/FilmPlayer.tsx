@@ -19,6 +19,9 @@
  * - It pauses when it is scrolled out of view or the tab is hidden.
  * - Every caption is laid in the same grid cell, so the box is as tall as the
  *   longest one from the start and nothing below it moves while it plays.
+ *   The box is drawn as a panel: before Play it holds the film's line and the
+ *   names of its pictures in order; on a frame the caption sits at the top
+ *   and the verse at the foot, so a short caption reads as designed.
  */
 import {
   useCallback,
@@ -293,10 +296,16 @@ export default function FilmPlayer({
 
       <div className="fp-captions">
         <div
-          className={`fp-cap${i < 0 ? " is-on" : ""}`}
+          className={`fp-cap fp-cap--intro${i < 0 ? " is-on" : ""}`}
           aria-hidden={i < 0 ? undefined : true}
         >
-          <p className="fp-cap__text">{intro[level]}</p>
+          <p className="fp-cap__lede">{intro[level]}</p>
+          <p className="fp-cap__name">In this moving picture</p>
+          <ol className="fp-cap__list">
+            {frames.map(f => (
+              <li key={f.id}>{f.name}</li>
+            ))}
+          </ol>
         </div>
         {frames.map((f, k) => (
           <div

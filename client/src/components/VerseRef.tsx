@@ -24,6 +24,7 @@ import { LoadFailed } from "@/components/LoadFailed";
 import { formatRef, parseScriptureRef, refHref, type ScriptureRef } from "@/lib/scripture-ref";
 import { splitScriptureRefs } from "@/lib/scripture-find";
 import { chaptersOf, loadPassage, type PassageVerse } from "@/lib/verse-text";
+import { LATER_LINE_STYLE, laterMarks } from "@/lib/later-passages";
 
 export type VerseRefMode = "sheet" | "link";
 
@@ -155,19 +156,25 @@ function Passage({ parsed }: { parsed: ScriptureRef }) {
   const labelled = new Set(groups.map((g) => g.c)).size > 1;
   return (
     <>
-      {groups.map((g, i) => (
-        <div key={`${g.c}-${i}`} className="st-passage">
-          {labelled && <p className="st-passage__chapter">Chapter {g.c}</p>}
-          <p className="st-passage__text">
-            {g.verses.map((v) => (
-              <Fragment key={v.v}>
-                <sup className="st-passage__n">{v.v}</sup>
-                {v.t || <span className="st-passage__later">[Not in the earliest manuscripts]</span>}{" "}
-              </Fragment>
-            ))}
-          </p>
-        </div>
-      ))}
+      {groups.map((g, i) => {
+        const later = laterMarks(parsed.book.slug, g.c, g.verses);
+        const laterLine = (text?: string) => text && <span className="st-passage__later" role="note" style={LATER_LINE_STYLE}>{text}</span>;
+        return (
+          <div key={`${g.c}-${i}`} className="st-passage">
+            {labelled && <p className="st-passage__chapter">Chapter {g.c}</p>}
+            <p className="st-passage__text">
+              {g.verses.map((v) => (
+                <Fragment key={v.v}>
+                  {laterLine(later.before.get(v.v))}
+                  <sup className="st-passage__n">{v.v}</sup>
+                  {v.t || <span className="st-passage__later">[Not in the earliest manuscripts]</span>}{" "}
+                  {laterLine(later.after.get(v.v))}
+                </Fragment>
+              ))}
+            </p>
+          </div>
+        );
+      })}
       <ScriptureNote rendering="bsb" />
     </>
   );

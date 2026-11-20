@@ -62,6 +62,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The Holy Spirit from the first page of the Bible to the last, in eight moving pictures: the waters, the judges and kings, the promise, the Jordan, Pentecost, God's temple, and the last invitation.",
     },
+    "god-with-his-people": {
+      title: "God with his people: Bible Explorer",
+      description:
+        "One light followed through the whole Bible in nine moving pictures: the garden, the tent, the temple, Jesus, the Spirit in God's people, and the city where God lives with them for ever.",
+    },
+    "who-god-is": {
+      title: "Who God is: Father, Son and Holy Spirit: Bible Explorer",
+      description:
+        "One God in three persons, in eight moving pictures: what the Bible shows of the Father, the Son and the Holy Spirit, why the usual pictures break, and why Christians keep the Bible's words.",
+    },
+    "why-jesus-died": {
+      title: "Why did Jesus die?: Bible Explorer",
+      description:
+        "What happened at the cross, and the Bible's own pictures of what it did, in eight moving pictures: the Passover lamb, a ransom, in our place, victory, love shown, and enemies made friends.",
+    },
+    "how-salvation-works": {
+      title: "How salvation works: Bible Explorer",
+      description:
+        "The good news of Jesus in nine moving pictures: made for God, turned away, unable to mend it, and brought back by God's own act in Christ, a gift received by faith.",
+    },
     "who-made-god": {
       title: "Who made God?: Bible Explorer",
       description:
@@ -221,9 +241,9 @@ function FilmPage({
                 <Scale size={18} strokeWidth={1.75} aria-hidden="true" />
                 <span>
                   <strong>Where churches differ.</strong> {film.differ.text}{" "}
-                  {film.differ.links.map((l, n) => (
+                  {film.differ.links.map((l, n, all) => (
                     <span key={l.href}>
-                      {n > 0 && " and "}
+                      {n > 0 && (n === all.length - 1 ? " and " : ", ")}
                       <Link href={l.href} className="ex-link">
                         {l.label}
                       </Link>

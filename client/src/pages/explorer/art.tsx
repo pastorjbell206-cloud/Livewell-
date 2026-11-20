@@ -246,6 +246,79 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M44,84c-2,4 -8,6 -10,10M50,84c0,4 -2,8 -2,12" />
     </>
   ),
+  /*
+   * Marks for the moving pictures that are not one stop's own picture
+   * (films/<slug>.json "mark"): each teaches its film at a glance.
+   */
+  /* How salvation works: a gap no one can cross, and a way laid from God's side. */
+  "how-salvation-works": h => (
+    <>
+      <path className="pl-f" d="M84,10l-8,14M96,18l-12,10M100,34H86" />
+      <Shape d="M-4,100V64H38L42,100Z" tone="g" />
+      <Shape d="M58,100L62,44H104V100Z" tone="c" />
+      <path fill={h} d="M42,100L38,64H50L58,100Z" />
+      <path className="pl-l" d="M38,64L42,100M58,100L62,44" />
+      <path
+        className="pl-l"
+        strokeDasharray="4 4"
+        d="M70,42C64,20 38,22 28,52"
+      />
+      <Shape d="M17,64L19,52C20,49 26,49 27,52L29,64Z" tone="b" off={1.5} />
+      <path className="pl-o" d="M19,45a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" />
+    </>
+  ),
+  /* Who God is: the Jordan, where the Son, the Spirit and the Father's voice are together. */
+  "who-god-is": h => (
+    <>
+      <path fill={h} d="M0,0H100V30L58,30L52,22L46,30H0Z" />
+      <path className="pl-l" d="M0,30H46L52,22L58,30H100" />
+      <path
+        className="pl-o"
+        d="M52,40C44,32 34,32 28,38C36,40 42,42 50,46ZM52,40C60,32 70,32 76,38C68,40 62,42 54,46ZM50,40C50,36 54,36 54,40L53,52L52,56L51,52Z"
+      />
+      <Shape d="M44,86L46,70C47,64 57,64 58,70L60,86Z" tone="c" off={1.5} />
+      <path className="pl-o" d="M47,62a5,5 0 1,0 10,0a5,5 0 1,0 -10,0Z" />
+      <Shape d="M0,100V80C30,76 70,76 100,80V100Z" tone="b" />
+      <path className="pl-f" d="M10,88c6,-3 12,3 18,0M70,90c6,-3 12,3 18,0" />
+    </>
+  ),
+  /* God with his people: the tent in the camp, the cloud standing over it. */
+  "god-with-his-people": h => (
+    <>
+      <path className="pl-l" d="M6,84H94" />
+      <Shape
+        d="M44,40C34,40 32,30 40,26C38,16 50,12 54,20C60,14 70,20 66,28C72,32 68,40 60,40Z"
+        tone="b"
+        off={1.5}
+      />
+      <Shape d="M26,84V58L50,46L74,58V84Z" tone="c" />
+      <path fill={h} d="M50,46L74,58V84H50Z" />
+      <path className="pl-k" d="M45,84V66H55V84Z" />
+      <Shape d="M6,84L14,70L22,84Z" tone="g" off={1.5} />
+      <Shape d="M78,84L86,70L94,84Z" tone="g" off={1.5} />
+    </>
+  ),
+  /* Why did Jesus die?: the Passover lamb. */
+  "why-jesus-died": h => (
+    <>
+      <path className="pl-l" d="M8,82H92" />
+      <path className="pl-l" d="M36,64V82M44,66V82M62,66V82M70,64V82" />
+      <Shape
+        d="M30,52C26,44 34,38 40,40C44,34 52,34 56,38C62,34 70,38 70,44C76,46 76,56 70,58C70,66 60,68 56,64C50,70 40,68 38,64C30,66 26,58 30,52Z"
+        tone="b"
+      />
+      <path
+        fill={h}
+        d="M56,38C62,34 70,38 70,44C76,46 76,56 70,58C70,66 60,68 56,64Z"
+      />
+      <Shape
+        d="M70,40C72,32 82,30 86,36C90,42 86,50 80,50C76,50 72,46 70,40Z"
+        tone="b"
+        off={1.5}
+      />
+      <path className="pl-l" d="M74,36l-4,-4" />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */

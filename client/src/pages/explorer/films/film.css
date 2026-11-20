@@ -60,11 +60,13 @@
     padding: 6px 10px 8px;
     box-shadow: 3px 3px 0 var(--art-ink);
   }
+  /* On a phone the label is the title alone, so the drawing shows: the
+     number of parts is in the panel under the picture. */
   .fp-poster__kicker {
-    font-size: 11px;
+    display: none;
   }
   .fp-poster__title {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 }
 .fp-poster__disc {
@@ -201,13 +203,28 @@
   color: var(--ink-muted);
 }
 
-/* The captions: every one in the same cell, so the box never changes height. */
+/* The captions: every one in the same cell, so the box never changes height.
+   The box is a panel, as tall as the longest caption: the caption at its top,
+   the verse at its foot, and before Play the film's line and its pictures in
+   order. */
 .fp-captions {
   display: grid;
   margin-top: var(--s-3);
+  padding: 18px 20px 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--ink);
+  border-radius: var(--radius-sm);
+}
+@media (max-width: 559px) {
+  .fp-captions {
+    padding: 14px 14px 16px;
+  }
 }
 .fp-cap {
   grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
   opacity: 0;
   transition:
@@ -234,15 +251,58 @@
   margin-right: 6px;
 }
 .fp-cap__text {
-  margin: 0;
+  margin: 0 0 14px;
   max-width: var(--w-read);
   font-family: var(--font-reading);
   font-size: var(--fs-read);
   line-height: 1.6;
   color: var(--ink);
 }
+.fp-cap__lede {
+  margin: 0 0 18px;
+  max-width: 34ch;
+  font-family: var(--F);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 3.2vw, 1.9rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.fp-cap__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: fp;
+  display: grid;
+  gap: 6px 24px;
+  font-family: var(--U);
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+@media (min-width: 560px) {
+  .fp-cap__list {
+    display: block;
+    columns: 2;
+    column-gap: 24px;
+  }
+}
+.fp-cap__list li {
+  counter-increment: fp;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 6px;
+  break-inside: avoid;
+}
+.fp-cap__list li::before {
+  content: counter(fp);
+  flex: none;
+  width: 1.6em;
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
 .fp-cap__verse {
-  margin: 14px 0 0;
+  margin: auto 0 0;
   padding: 2px 0 2px 16px;
   border-left: 2px solid var(--borderdk);
   max-width: var(--w-read);
@@ -286,6 +346,25 @@
   fill: none;
   stroke: var(--mustard);
   stroke-width: 5;
+}
+/* A picture crossed out (Who God is: the pictures that break): one ink stroke. */
+.fp-strike {
+  fill: none;
+  stroke: var(--art-ink);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+/* God with his people: the thread along the top, and the curtain's tear. */
+.fp-thread {
+  fill: none;
+  stroke: var(--art-ink);
+  stroke-width: 3;
+}
+.fp-tear {
+  fill: none;
+  stroke: var(--art-ink);
+  stroke-width: 4;
+  stroke-linejoin: miter;
 }
 .fp-screen .mv-road {
   stroke-dasharray: 1 1;
