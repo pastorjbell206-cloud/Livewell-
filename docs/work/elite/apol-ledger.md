@@ -1891,3 +1891,24 @@ Cut or not used: Mackie's birthplace and posts (not verified this run); Planting
 | The John 9 and Luke 13 notes: Jesus refuses to read the blindness or the tower as punishment | Notes (John 9, Luke 13), read this run | Agrees |
 
 Cut or not used: the description of Rowe's second case (left undescribed for the reader's sake); any statement of how many philosophers hold the evidential argument to be unanswered (the page says only that it "hasn't been refuted", the IEP's own framing of a live debate).
+
+### ak. "How can a good God allow earthquakes, cancer and the suffering of animals?" (natural-evil-and-animal-suffering)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Hume, *Dialogues* (1779), part 11, Philo: "pouring forth from her lap, without discernment or parental care, her maimed and abortive children" | Natural evil answer row (GITenberg #4583, lines 2893-2894); Hume (GH) re-fetched this run | Quoted (the quotation stops inside Hume's sentence, before its exclamation) |
+| Darwin to Asa Gray, 22 May 1860: "I cannot persuade myself that a beneficent and omnipotent God would have designedly created the Ichneumonidae with the express intention of their feeding within the living bodies of Caterpillars, or that a cat should play with mice." *Life and Letters*, vol. 2 (1887) | Natural evil answer row (GITenberg #2088) | Quoted |
+| Draper, "Pain and Pleasure: An Evidential Problem for Theists," *Noûs* 23 (1989): 331-350; inspired by Hume; the hypothesis of indifference (no benevolent or malevolent action by nonhuman persons); three sets of observations about pain and pleasure (moral agents and other sentient beings, biologically useful, and pain not known to be biologically useful); the pattern more probable on indifference than on theism; his argument that indifference is at least as probable as theism beforehand, which the SEP judges far from clear | SEP evil, 3.3 (quoting Draper 1989, 13 and 26), and bibliography | Verified; paraphrased (a living author) |
+| Long history of predation and disease before humans "on the history most geologists and biologists accept" | Natural evil answer ("If the earth is as old as most geologists hold"); the science area's evolution page | Stated as their view, not the site's |
+| Lisbon, 1 November 1755, All Saints' Day; Malagrida's pamphlet of 1756 | Natural evil answer rows | Verified |
+| Lewis, *The Problem of Pain* (1940): a shared world needs fixed laws; some mighty created power at work for ill before humanity | Natural evil answer rows | Verified; paraphrased |
+| Swinburne, *Providence and the Problem of Evil* (1998): responsibility needs knowledge learned from regular natural processes | Natural evil answer row; IEP evidential, 4c ("Swinburne's 'free will theodicy for natural evil'") | Verified; paraphrased |
+| Hick (1966), soul-making; the SEP's criticism that it gives no justification for animal pain and that much suffering destroys | SEP evil, 7.1 | Verified; paraphrased |
+| Southgate, *The Groaning of Creation* (2008): the "only way" argument; God suffers with creatures and redeems victims | Natural evil answer row | Verified; paraphrased |
+| Murray, *Nature Red in Tooth and Claw* (Oxford, 2008); the site's answer does not find the view believable | Natural evil answer row and text | Verified; agrees |
+| Wesley, "The General Deliverance," on Romans 8, early 1780s | Natural evil answer row | Verified |
+| Many who hold that animal death came through human sin hold a young earth | Natural evil answer ("Many hold that animal death came into the world through human sin, and most of them hold that the earth is young") | Agrees |
+| Luke 13:4-5; Psalm 104:21; Job 39:30; Romans 8:20-22; Colossians 1:20; Genesis 1:31; Matthew 10:29; Isaiah 65:25; Psalm 145:9; Revelation 21:5 | Repo (BSB, script; Psalm 104:21 and 145:9 checked by hand, since the script reads "Psalms") | Quoted |
+| The Romans 8 and Luke 13 notes | Notes, read this run | Agree |
+
+Cut or not used: Tooley's own stance on God (not verified this run; the SEP article is cited without naming its author's view); Ward and Brownlee on plate tectonics (in the answer; not needed here); any count of years of animal suffering beyond "hundreds of millions of years" as most geologists and biologists hold it.
