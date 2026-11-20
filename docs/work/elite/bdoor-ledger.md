@@ -9166,7 +9166,7 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Claim | Passage | Source | Checked by |
 |---|---|---|---|
 | ‘Ruler of the power of the air’ the devil, pictured as ruling the unseen spaces | 1-10 | Deep note; standard commentaries | Stated generally |
-| The ‘with’ verbs (synezōopoiēsen, synēgeiren, synekathisen) | 1-10 | Greek text in the repository (2:5-6) | Read from the chapter file |
+| The ‘with’ verbs (sunezōopoiēsen, sunēgeiren, sunekathisen) | 1-10 | Greek text in the repository (2:5-6) | Read from the chapter file |
 | Poiēma something made | 1-10 | Standard lexicons | Standard |
 | Protestant, Catholic and Orthodox accounts of grace and works, as on the Romans book page; Joint Declaration 1999, paragraph 15 quoted in part | 1-10 | Romans book page ledger; JDDJ | Search: firstthings.com "Two Languages of Salvation"; e-n.org.uk "JDDJ: By grace alone?"; ecumenism.net LWF text (paragraph 15). Quoted to "accepted by God" only |
 | Paul and James answer different questions, "many readers" | 1-10 | Standard harmonisation; Romans 3 plain note | Stated as many readers' view |
@@ -9176,3 +9176,18 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Cornerstone the first stone setting the line | 11-22 | Standard | Standard |
 | ‘Abolishing’ readings (the law as a wall; the covenant fulfilled; moral heart stands); Romans 7:12; 11:1; 13:8-10; contempt for Jews rejected, pointer to the Acts 2:22-28 note | 11-22 | Deep note; acts/plain/2.json | Repository. No side |
 | Isaiah 57:19; 28:16; Psalm 118:22; Exodus 29:45 | 11-22 | BSB | BSB text |
+
+## The plain notes on Ephesians 3 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Arrest after the charge of bringing a Gentile into the temple (Acts 21:27-29) | 1-13 | Deep note `historical`; BSB | Repository |
+| Mystery cults kept secret rites; Paul uses the word as Daniel 2 does | 1-13 | Deep note `cultural` | Repository. Eleusis, Isis and Mithras not named |
+| Three ‘together’ words in 3:6 (sugklēronoma, sussōma, summetocha) | 1-13 | Greek text in the repository | Read from the chapter file |
+| Elachistoterō, a comparative added to a superlative | 1-13 | Greek text in the repository (3:8) | Read from the chapter file. "A word Paul made up" not claimed |
+| Genesis 12:3; Isaiah 49:6; Daniel 2:28 | 1-13 | BSB | BSB text |
+| Jews usually prayed standing; kneeling for earnestness | 14-21 | Deep note `cultural` (Luke 18:11, 13) | Repository |
+| Patēr and patria wordplay (3:14-15) | 14-21 | Greek text in the repository | Read from the chapter file |
+| 1 Kings 8:27; Psalm 103:11; 139:8 | 14-21 | BSB | BSB text |
