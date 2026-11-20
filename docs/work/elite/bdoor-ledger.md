@@ -9140,3 +9140,21 @@ Scripture is the BSB in the repository, checked word for word by
 
 Cut: Ignatius and Polycarp by name; the Laodicean letter identified as fact; the
 date of Paul's Ephesus stay given more closely than "the mid-50s".
+
+## The plain notes on Ephesians 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Saints’ for all believers; ‘grace and peace’ a Greek and a Jewish greeting joined | 1-2 | Standard; earlier ledger (Romans 1) | Ledger |
+| ‘In Ephesus’ missing in P46, Sinaiticus, Vaticanus; Marcion; two views; pointer to the book page | 1-2 | Book page ledger | Ledger. No side |
+| Leviticus 19:2; Deuteronomy 7:7; Daniel 7:18 | 1-2 | BSB | BSB text |
+| 1:3-14 one sentence in Greek; Jewish blessing form; the Father, Son and Spirit shape; three refrains | 3-14 | Deep note `literary`, `cultural` | Repository |
+| Adoption, redemption, seal, pledge from daily life | 3-14 | Deep note `cultural` | Repository |
+| Election readings (Reformed; Arminian and Wesleyan; corporate) in the Romans 8 and 9 notes' terms; John 6:37; 1 Timothy 2:4; Honest Answer pointer; care line in the Romans 9:19-29 form | 3-14 | romans/plain/8.json; romans/plain/9.json; client/src/data/answers.ts | Repository wording. No side |
+| Luke 1:68; Deuteronomy 7:6-8; Exodus 19:5; Ezekiel 36:27 | 3-14 | BSB | BSB text |
+| Heart as the centre of the person; ‘His inheritance in the saints’ two readings | 15-23 | Standard; deep note | Stated as readings |
+| Ephesus known for magic (Acts 19:19) | 15-23 | BSB; repository `setting` | Repository |
+| Psalm 110 the psalm most read of Christ in the early church | 15-23 | Standard (most-quoted Old Testament text in the New Testament) | Stated as "more than any other"; repository Acts 2 and Mark 12 notes |
+| Psalm 110:1; Psalm 8:6; Isaiah 11:2 | 15-23 | BSB | BSB text |
