@@ -3397,6 +3397,25 @@
     "betrayal",
     "deep-friendship"
    ]
+  },
+  "kindness": {
+   "phrases": [
+    "show kindness",
+    "unkind to people",
+    "rude to people",
+    "short with my family",
+    "compassion for others",
+    "harsh with people",
+    "be kinder",
+    "kind to strangers",
+    "help someone in need"
+   ],
+   "not": [],
+   "related": [
+    "gentleness",
+    "encouraging-others",
+    "serving-others"
+   ]
   }
  }
 }
