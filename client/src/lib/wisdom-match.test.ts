@@ -100,6 +100,9 @@
  *   holdout4 (15) 100%  / 100%   holdout5 (15) 86.7% / 100%
  *   holdout6 (25) 100%  / 100%   holdout7 (30) 73.3% / 86.7%
  *   holdout8 (24) 54.2% / 75.0% (the clean set; never tuned to)
+ * Then twelve more topics were written in full (their pages and phrasings
+ * feed the weights). End of the ninth build: holdout4 93.3% / 100%,
+ * holdout7 76.7% / 86.7%, holdout8 54.2% / 75.0%; the rest as above.
  * The floors below sit just under those, so a change to the data that makes
  * the finder worse fails here by name.
  */
@@ -190,7 +193,7 @@ describe("wisdom matcher", () => {
     expect(holdout5.top3).toBeGreaterThanOrEqual(0.95);
     expect(holdout6.top1).toBeGreaterThanOrEqual(0.95);
     expect(holdout6.top3).toBeGreaterThanOrEqual(0.95);
-    expect(holdout7.top1).toBeGreaterThanOrEqual(0.73);
+    expect(holdout7.top1).toBeGreaterThanOrEqual(0.76);
     expect(holdout7.top3).toBeGreaterThanOrEqual(0.86);
     // The clean set, written by someone else: reported, and held just under what it scored.
     expect(holdout8.top1).toBeGreaterThanOrEqual(0.54);
