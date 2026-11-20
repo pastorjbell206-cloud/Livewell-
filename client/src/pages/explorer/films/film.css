@@ -60,11 +60,13 @@
     padding: 6px 10px 8px;
     box-shadow: 3px 3px 0 var(--art-ink);
   }
+  /* On a phone the label is the title alone, so the drawing shows: the
+     number of parts is in the panel under the picture. */
   .fp-poster__kicker {
-    font-size: 11px;
+    display: none;
   }
   .fp-poster__title {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 }
 .fp-poster__disc {

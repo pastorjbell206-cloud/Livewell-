@@ -243,6 +243,25 @@ The films have no sound by design in this stage, and every word is on the page. 
 - Not verified: a screen reader by ear (the live region's text and the picture's names were read from the page); a real phone; sound (there is none by design).
 - No dependency was added.
 
+## Watch and learn: four more films and two fixes (2026-11-20)
+
+Four films, each built in the order the plan asked, each with captions at both levels, a `still` sentence for every frame, BSB verses checked by the validator, "Think about it", "Where the Bible says it", deeper links, its own mark in the list (a film may now carry its own emblem in `art.tsx`, keyed by its slug; the validator accepts the road, a stop's slug, or that), a page that is prerendered, in the sitemap, the search index and llms.txt. Every claim has a ledger row.
+
+1. **How salvation works** (What we believe, 9 frames; James should read it before it is published). The central picture: one land with God's side on the right, open to a light from beyond the picture's edge, and ours on the left. It cracks and our side slides away (we turned away); people pile up blocks to reach across and fall short (we cannot mend it); one gold line comes from the light, crosses the gap and comes down on our side where the Son now stands (God comes to us: the Father sends the Son in love); at the cross the land itself is joined again and the seam is drawn in gold (God mends it; no plank or bridge for anyone to walk over); the tomb opens; one person turns with open hands and the line comes down to where they stand (faith receives, it does not climb); a lit house, others, a flame, a young tree (new life); the city gate open (the life to come). "Where churches differ" (baptism, God's choosing and ours, falling away; no side), no altar call, no prayer to repeat, a care line for a reader who feels too bad to be forgiven or afraid, and the end: talk with a parent, a pastor or a leader.
+2. **Who God is: Father, Son and Holy Spirit** (What we believe, 8 frames), built from the Honest Answer "How can God be three and one?" and catechism Q4 and Q76: one God (Deuteronomy 6:4); the Father, shown only by the world under a light from beyond the edge; the Son (John 1:1; Thomas, John 20:28); the Spirit as wind and flame (Acts 5:3-4; Psalm 139:7); the three at the Jordan (the Holy Spirit film's own drawing); one name (Matthew 28:19); "Pictures that break": water, a clover and three people, each crossed out with one line, with modalism and tritheism named only at the older level and only as the answer names them (the clover gets no heresy's name, since the answer gives none); and a wonder to receive, with the creed's words as the site quotes them. Its poster is the Jordan, so the crossed-out pictures are never shown un-crossed.
+3. **God with his people** (Big ideas, 9 frames): the thread moving. Along the top, the map's own roundels for its nine places, inked one a frame, solid where near and dotted where apart; below, one gold light (never a figure) goes from the garden to beyond the guarded gate, into the tent, the temple, out east over the hill, to Jesus by the lake with a tent drawn round him, through the torn curtain, to the people as the temple's pillars, and into the city's open gate. Each frame's first sentence is the thread's own line, word for word.
+4. **Why did Jesus die?** (What we believe, 8 frames): what happened (the Cross stop's own sentences: who handed him over, condemned and crucified him; blaming the Jewish people rejected as a lie); the Passover lamb; a ransom; in our place (burdens carried from people to the cross; "not an angry Father against an unwilling Son"); victory; love shown; enemies made friends; all six held together round the empty cross, the tomb open at dawn: "the cross is not the end of the story", with the Cross stop as the way on. Where churches differ: the atonement pictures and Isaiah 53's readings, no side.
+
+**Fix 1, the caption box on a phone.** Before (`explorer-shots/film-page-390.png`, the old shot): the box was as tall as the longest caption, so before Play and on a short caption it left half a screen of blank page under the picture. After: the box is drawn as a panel (card, a thin ink rule on its left) of the same reserved height, so layout shift stays zero; before Play it holds the film's line set large and "In this moving picture" with the frames' names in order; on a frame the caption sits at the top and the verse at the panel's foot, so a short caption reads as designed. On a phone the poster's label is the title alone (the part count is in the panel).
+
+**Fix 2, the posters.** Who made God?: the whole chain of links running back into a ring with a question mark (it was one tree in a ring). The Holy Spirit: under the breath line, small, the places it will pass (the water, a crowd, the city's open gate). The two-minutes poster was already full and is unchanged.
+
+Shared code touched only where needed: `FilmPlayer.tsx` (the intro panel), `film.css` (the panel, the strike, thread and tear strokes, the phone label), `ExplorerFilm.tsx` (FILM_META; "Where churches differ" now joins three links with commas), `prerender-heads.mjs` (the same join), `art.tsx` (four film emblems), `validate-explorer.mjs` (a film's own emblem).
+
+### The order to build next
+
+(5) *The resurrection*, (6) *Why do bad things happen?*, (7) *Is the Bible true?*, (8) *How the 66 books fit together*, then as planned above.
+
 ## Questions only James can answer
 
 1. Is "Bible Explorer" the name he wants, everywhere?
@@ -252,7 +271,8 @@ The films have no sound by design in this stage, and every word is on the page. 
 5. Which stops should come next, in what order?
 6. Watch and learn: is "Watch and learn" the name he wants for the moving pictures, everywhere?
 7. Narration: should the films have a voice, and whose: his own, recorded; another reader's; or a synthesised voice (named as such)?
-8. Which films first, after the pilot? The proposed order begins with How salvation works, which he should read before it is published.
+8. How salvation works is built and waits for his reading before he wants it public: is its central picture (one land broken in two and mended from God's side), its "Where churches differ" note and its ending what he wants?
+9. Who God is crosses out three common pictures of the Trinity; is he content to show them at all, crossed out, for this age?
 
 ## What was run for the second three (2026-11-19)
 
