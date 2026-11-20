@@ -8,6 +8,7 @@
  * only each one's name, the words people use for it, and a line to show.
  *
  *   Wisdom topics        client/public/wisdom/topics.json      -> /wisdom/<id>
+ *   Wisdom in depth      client/public/wisdom/deep/<id>.json   -> /wisdom/<id>#misread, #whole, #differ
  *   Honest Answers       client/src/data/answers.ts            -> /answers/<slug>
  *   Family devotions     client/public/family-devotions*.json  -> /family/devotions/<id> (every live strand)
  *   Family Catechism     client/public/family-catechism.json   -> /family/catechism
@@ -79,6 +80,61 @@ function wisdom() {
     keywords: (t.keywords ?? []).map(str).filter(Boolean).join(" · "),
     href: `/wisdom/${t.id}`,
   }));
+}
+
+/**
+ * The deep sections of a topic written in full (wisdom/deep/<id>.json), each
+ * opening at its own section of /wisdom/<id>: the often-misread verses (found
+ * by the saying people quote, such as "spare the rod"), what the whole Bible
+ * says, and where Christians differ. A topic not yet written in full adds
+ * nothing.
+ */
+function wisdomDeep() {
+  const dir = path.join(PUB, "wisdom/deep");
+  if (!fs.existsSync(dir)) return [];
+  const labels = new Map(readJson("wisdom/topics.json").topics.map((t) => [t.id, str(t.label)]));
+  const sayings = (s) => [...str(s).matchAll(/“([^”]+)”/g)].map((m) => m[1]);
+  const many = (n, one, more) => (n > 1 ? more : one);
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .flatMap((f) => {
+      const d = readJson(`wisdom/deep/${f}`);
+      const label = labels.get(d.id);
+      if (!label) return [];
+      const href = `/wisdom/${d.id}`;
+      const out = [];
+      const misread = d.misread ?? [];
+      if (misread.length) {
+        const refs = misread.map((m) => str(m.ref));
+        const n = refs.length;
+        out.push({
+          title: `${label}: often misread`,
+          blurb: `${refs.join("; ")}: how ${many(n, "it is", "they are")} often taken, and what ${many(n, "it says", "they say")} where ${many(n, "it stands", "they stand")}.`,
+          facet: "Often misread",
+          keywords: `misread misused verse out of context ${refs.join(" ")} ${misread.flatMap((m) => sayings(m.taken)).join(" ")}`.trim(),
+          href: `${href}#misread`,
+        });
+      }
+      out.push({
+        title: `${label}: what the whole Bible says`,
+        blurb: clip((d.whole ?? [])[0]),
+        facet: "The whole Bible",
+        keywords: `what does the bible say ${(d.passages ?? []).map((p) => str(p.ref)).join(" ")}`,
+        href: `${href}#whole`,
+      });
+      if (d.differ) {
+        out.push({
+          title: `${label}: where Christians differ`,
+          blurb: clip(d.differ.share),
+          facet: "Where Christians differ",
+          keywords: `christians disagree views denominations ${(d.differ.views ?? []).map((v) => str(v.name)).join(" ")}`,
+          href: `${href}#differ`,
+        });
+      }
+      return out;
+    });
 }
 
 function answers() {
@@ -363,7 +419,7 @@ export function buildSearchIndex() {
       source("Church History", "/theology/history", history()),
       source("Family Devotions", "/family/devotions", [...devotions(), ...seasonal()]),
       source("Family Catechism", "/family/catechism", catechism()),
-      source("What the Bible Says", "/wisdom", wisdom()),
+      source("What the Bible Says", "/wisdom", [...wisdom(), ...wisdomDeep()]),
     ],
   };
 }
