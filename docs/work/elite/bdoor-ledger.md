@@ -9249,3 +9249,29 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Abuse care lines | 21-33 | genesis/plain/16.json; romans/plain/12.json | Word for word, no phone number |
 | Genesis 2:24 BSB ‘they’; Paul and Matthew 19:5 ‘the two’ | 21-33 | BSB | BSB text |
 | Isaiah 54:5; Hosea 2:19; Ezekiel 16:9; Malachi 2:14 | 21-33 | BSB | BSB text |
+
+## The plain notes on Ephesians 6 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter read aloud with children present; Roman father's lifelong legal power; harsh discipline common; ‘do not provoke’ a limit ordinary codes lacked | 1-4 | Deep note `cultural`; context guide household-codes-in-context | Repository |
+| Paideia, the whole upbringing | 1-4 | Deep note `words` | Repository |
+| Paul's ‘go well with you’ from Deuteronomy 5:16 | 1-4 | BSB Exodus 20:12, Deuteronomy 5:16 | BSB text |
+| Child-harm care lines ("Abuse of a child is a crime ... not your fault") | 1-4 | matthew/plain/18.json; luke/plain/17.json | Word for word, no phone number; Find Help line from romans/plain/7.json |
+| Deuteronomy 6:7; Proverbs 1:8; Psalm 127:3 | 1-4 | BSB | BSB text |
+| Roman slavery: everywhere; kinds of work; capture, birth, debt, abandonment, sale; not race-based; many urban slaves could hope for freedom; legally property, bought, sold, beaten, separated, used sexually; Christians slaves and masters in one church | 5-9 | Deep note `historical` | Repository |
+| Doulos slave and servant one word | 5-9 | Deep note `words` | Repository |
+| Paul does not command abolition; revolts crushed; what he changes; 1 Corinthians 7:21 "most common reading of a debated verse"; Philemon 16; Galatians 3:28 | 5-9 | Chapter note `hard`; BSB | Repository; BSB text |
+| Ephesians 6:5 used in the Atlantic slave trade and American South to demand obedience and defend slavery; Christian abolitionists drew on the Bible; Atlantic slavery race-based and built on kidnapping | 5-9 | Chapter note `hard`; context guide the-slavery-texts; Honest Answer ‘Why didn't the Bible just ban slavery?’ | Repository. The 1807 selection named in the deep note not repeated; no denomination named |
+| Not a simple rule for employment | 5-9 | Task brief; standard | No factual claim |
+| Deuteronomy 10:17; Job 31:15; Leviticus 25:43; Deuteronomy 15:15; Exodus 21:16; Deuteronomy 23:15 | 5-9 | BSB | BSB text |
+| Paul may have been chained to a guard; Roman armour pieces | 10-20 | Deep note `cultural` | Repository |
+| ‘Stand’ repeated; only the sword strikes; prayer completes | 10-20 | Deep note `literary` | Repository |
+| Palē from wrestling | 10-20 | Deep note `words` | Repository |
+| Armour from Isaiah: 59:17 breastplate and helmet; 11:5 belt (righteousness, faithfulness; Paul's is truth); 52:7 feet; 49:2 and 11:4 sword and mouth; shield not from Isaiah, Psalm 28:7 | 10-20 | BSB | BSB text, each reference read |
+| No licence for aggression; the cross belongs to no flag | 10-20 | Book page `not` part; CLAUDE.md guardrails | Repository wording |
+| 2 Corinthians 10:4 | 10-20 | BSB | BSB text |
+| Tychicus from Asia (Acts 20:4); Colossians 4:7-9 with Onesimus; sent at the same time "many readers"; no personal greetings fits a circular letter | 21-24 | Deep note `historical`, `literary`; BSB | Repository |
+| Numbers 6:24-26 | 21-24 | BSB | BSB text |
