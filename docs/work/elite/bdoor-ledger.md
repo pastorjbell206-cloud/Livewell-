@@ -10679,3 +10679,40 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Isaiah 63:11; Zechariah 9:11; Numbers 6:26 | 20-25 | BSB | BSB text |
 
 ## Hebrews complete (2026-11-20)
+
+## James: the book page (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Five chapters, 108 verses; about fifteen minutes aloud; sayings strung together; pictures (wave, mirror, spark, mist, farmer) | In a minute; How to read | james/intro.json `overview`, `reading` | Repository; the reading time an estimate, as on earlier book pages |
+| Readers poor, cheated of wages, dragged to court; favouritism; quarrels; business plans | In a minute | james/intro.json `setting`, `purpose`; BSB 2:2-6, 4:1-2, 4:13, 5:4 | Repository; BSB |
+| James = Jacob; several men; James son of Zebedee killed about AD 44 (Acts 12:2), probably too early | Who wrote it; timeline | james/intro.json `author` | Repository; BSB |
+| The brother of Jesus: Mark 6:3; John 7:5; 1 Corinthians 15:7; Galatians 1:19; 2:9; Acts 15; Josephus, stoned at Ananus's instigation about AD 62 | Who wrote it; timeline | james/intro.json `author`; bible/guides/canon.json | Repository; BSB |
+| Three views of his relation to Jesus (Protestant, Orthodox, Catholic after Jerome); Mark 3:31-35 note | Who wrote it | james/intro.json `author`; mark/plain/3.json | Repository, no side |
+| Case for James (plain signature, Jewish character, echoes of Jesus, fit with Acts 15; chairein in Acts 15:23) | Who wrote it | james/intro.json `author`; james/1.json `historical` | Repository |
+| Pseudonymity (Greek, slow acceptance, a later Pauline slogan); mediating view; replies (bilingual Galilee, a helper, limited circulation) | Who wrote it | james/intro.json `author` | Repository, no side |
+| Eusebius listed it among the disputed books (the 300s); Athanasius 367; North African councils; Luther 1522 ‘an epistle of straw’ by comparison | Who wrote it; Faith and works; timeline | james/intro.json `author`; bible/guides/canon.json | Repository |
+| Dispersion: Jews outside the land since the Assyrian and Babylonian exiles; two readings | Readers; key words | james/intro.json `setting`; james/1.json `historical`; lexicon G1290 | Repository, no side |
+| Day labourers, merchants, fall and spring rains fitting Palestine and Syria; synagōgē in 2:2 | Readers | james/intro.json `setting`; james/2.json `historical`; james/5.json `historical` | Repository |
+| Dates: before 62 if James; mid-40s case (no circumcision dispute, council about AD 49, simple church); late 50s or early 60s; 70 to 100 if pseudonymous; Origen the earliest to quote by name in the 200s | Readers; timeline | james/intro.json `date` | Repository, no side |
+| Linking words (chairein, chara; lacking); structure in five parts; 1:26-27 sets the agenda | How it is built | james/1.json `literary`; james/intro.json `structure` | Repository |
+| Romans 3:28; Genesis 15:6; Galatians 5:6; Luke 7:35; Ephesians 2:8-10 | Faith and works; How to read | BSB | BSB text |
+| What all confess; the Joint Declaration of 1999 wording | Faith and works | ephesians/plain/2.json (1-10 `hard`); doctrines/justification.json `history` | Repository wording |
+| Three words (justify, faith, works) and the misused-slogan reading | Faith and works | james/2.json `hard`, `words`; james/intro.json `themes` | Repository |
+| Protestant (verdict by faith alone, works as fruit; Westminster 1646: faith the only instrument, never alone); Catholic (grace first, truly made righteous; Trent 1547 reads 2:24 as growth in justification); Orthodox (union with God, justification one picture, never a dividing question in the East) | Faith and works | doctrines/justification.json `history`, `differ`; james/2.json `hard` | Repository, no side |
+| Deuteronomy 24:15; Amos 8:4; Luke 6:20, 24; Leviticus 19:18 | The rich and the poor | BSB | BSB text |
+| Particular wrongs named, no party programme | The rich and the poor; What it is not | james/intro.json `themes`; CLAUDE.md orthodoxy guardrails | Repository |
+| Bit, rudder, spark; likeness of God; ‘we all stumble’; two wisdoms | The tongue | james/3.json `cultural`, `doctrines`, `literary` | Repository; BSB |
+| Peirasmos both trial and temptation; God tempts no one; Job; ‘full of compassion and mercy’ | Trials | james/1.json `words`, `hard`; james/5.json `doctrines` | Repository; BSB |
+| Care line ‘Not every hardship comes from following Jesus ...’ | Trials | acts/plain/14.json (21-28 `hard`) | Word for word |
+| Elders; oil as medicine and for setting apart; Mark 6:13; readings of the promise (sōzō, egeirō; God's will and 2 Corinthians 12:7-9; Catholic and Orthodox sacrament; Protestant medicine or sign); ‘If he has sinned’ | Prayer for the sick; What it is not | james/5.json `cultural`, `words`, `hard` | Repository, no side |
+| Care line ‘It needs to be said plainly. The Bible does not teach that sickness comes ...’ | Prayer for the sick | 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| Echoes of Jesus: Matthew 7:7, 7:26, 5:7, 5:9, 6:19, 7:1, 5:37; Luke 6:20, 24 | James and Jesus | james/intro.json `christ`; james/1.json to 5.json `christ`; BSB | Repository; BSB text |
+| Proverbs, Leviticus 19:18, the commandments, the Shema, the prophets' adultery picture; Proverbs 3:34 wording differs from James 4:6; New Testament writers often quote the Greek (stated generally) | Old Testament | james/2.json `cultural`; james/4.json `cultural`; hebrews/intro.json teaching; BSB | Repository; BSB text. No claim made about the Greek of Proverbs 3:34 itself |
+| Prosperity teaching named an error | What it is not | CLAUDE.md orthodoxy guardrails | Repository |
+| Key words: diaspora, peirasmos, dipsuchos, poiētēs, thrēskeia, prosōpolēmpsia (‘receiving the face’), erga, dikaioō, Gehenna, philia, makrothumia, presbuteroi | Key words | james/1.json to 5.json `words`; lexicon G1290, G4382, G3115; colossians notes on G4382 | Repository |
+| Abraham, Rahab, Elijah (1 Kings 17 to 18); Claudius and the famine (Acts 11:28-30); revolt AD 66 | Timeline | james/1.json `historical`; james/4.json `historical`; BSB | Repository; BSB |
+| Map: Jerusalem only (31.778 N, 35.235 E, as on the Mark and Acts maps), with a line that the letter names no place; mapNote says so | Map | mark/intro.json, acts/intro.json teaching maps; james/1.json `historical` | Repository. A place the letter does not name, because the map band needs one; said so on the page |
+| Deeper links: faith, justification, wisdom, suffering, wealth, justice-poor, prayer, law | Go deeper | bible/doctrines.json | Repository |
