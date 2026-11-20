@@ -7330,3 +7330,144 @@ notes, so those chapters rest on the chapter deep notes and other notes.
 ### Next
 
 Hebrews is complete. James: its book page, then chapters 1 to 5.
+
+## James, 1 Peter and 2 Peter: the book pages and every chapter (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". Hebrews was finished;
+this run first made two small fixes left from it, then did James, 1 Peter and 2 Peter, one commit
+for each book page and each chapter, with its ledger rows. It stopped at the end of 2 Peter, a book
+boundary, to leave room for the full gates and the served-build checks. 1 John is not begun.
+
+### Two fixes to Hebrews
+
+In the 8:7-13 hard part, Romans 11:28-29 no longer begins a sentence with a lowercase word: "And of
+Israel, Paul writes that “regarding election, ...”". In the book page's covenant part the Acts
+2:22-28 pointer now follows the sentence it explains: "That reading is false. This site rejects it,
+and the note on Acts 2:22-28 sets out why."
+
+### The book pages
+
+**James** (`/study/bible/james`). Thirteen parts: in a minute; Who wrote it (the brother of Jesus as
+the church has long held, Josephus on his death about AD 62, the three views of his relation to
+Jesus, the case for and the case for a later writer, no side); Who it was written to, and when; How
+it is built; Faith and works: James and Paul (what all confess; three words; Protestant, Catholic and
+Orthodox readings of 2:24 from the doctrine study; Luther's 1522 preface; no side); The rich and the
+poor (no party programme); The tongue and the wisdom from above; Trials, temptation and the good
+Father (not punishment; the Acts 14 care line); Prayer for the sick (the readings; the 2 Corinthians
+12 illness line word for word); James and the teaching of Jesus; James and the Old Testament; What
+the letter is not; How to read. 13 hard passages, 12 key words, 15 timeline entries, 8 Go deeper
+links. 4,011 words in the parts. **Map:** James names no place on earth. The map band needs one, so
+it shows Jerusalem alone on the "israel" frame, with a line and a map note that say the letter names
+no place and that this is where the James the church names as writer led the church.
+
+**1 Peter.** Twelve parts: in a minute; Who wrote it (Silvanus; Polycarp, Papias, Irenaeus; the later
+writer case and the replies; no side); Where Peter was, and when (Babylon most likely Rome; no side
+on the date); Who it was written to; How it is built; Suffering and the glory to follow; Chosen, and
+the people of God (election readings; Israel's titles; the views on Israel as the Romans 11 note
+states them; the misuse rejected with the Acts 2:22-28 pointer); Rulers, slaves, wives and husbands
+(the slavery wording of the Ephesians 6 and 1 Timothy 6 notes; complementarian and egalitarian
+readings; the abuse lines word for word); Christ, the spirits in prison, and baptism (three readings,
+no side; baptism readings, no side; 4:6); Old Testament; What it is not; How to read. 14 hard
+passages, 12 key words, 12 timeline entries, 8 links. 3,517 words. **Map** on the "mediterranean"
+frame: the five provinces as rough regions (Pontus, Cappadocia and Bithynia placed from two web
+searches; Asia and Galatia near the drawing's own labels) and Rome as ‘Babylon’.
+
+**2 Peter.** Twelve parts: in a minute; Who wrote it (the doubts named honestly: Eusebius, Jerome,
+Calvin, the five modern reasons; the replies; no side beyond receiving it as Scripture); When, and to
+whom; How it is built; Sharing the divine nature, and growing (theosis and the Western reading; 1:10
+readings); The prophets, the apostles, and Scripture; Jesus in 2 Peter; False teachers, and the
+letter of Jude (Tartarus; the overlap with Jude; 1 Enoch only as the notes state it); The day of the
+Lord (a thousand years not a formula; 3:9 readings; the manuscripts at 3:10; destroyed or renewed;
+no scheme; no position on the age of the earth or the flood's extent); Old Testament; What it is
+not; How to read. 12 hard passages, 12 key words, 11 timeline entries, 8 links. 3,118 words. **Map**
+on the "canaan" frame: Sodom and Gomorrah, as one rough region at the Genesis map's point; the holy
+mountain is not named, so it is not drawn.
+
+**Code.** None in the app. `teaching.test.tsx`: the three books added to the list of books with a
+teaching page, and frame lines for 1 Peter ("mediterranean") and 2 Peter ("canaan"); James uses the
+default "israel" frame.
+
+### The chapters in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| James 1 | 5 | 3,407 |
+| James 2 | 3 (14-26 kept whole for the faith and works part) | 2,378 |
+| James 3 | 3 | 2,157 |
+| James 4 | 4 | 2,462 |
+| James 5 | 4 | 2,859 |
+| 1 Peter 1 | 5 | 2,887 |
+| 1 Peter 2 | 4 | 2,995 |
+| 1 Peter 3 | 4 | 2,854 |
+| 1 Peter 4 | 3 | 2,065 |
+| 1 Peter 5 | 4 | 2,104 |
+| 2 Peter 1 | 4 | 2,527 |
+| 2 Peter 2 | 4 | 2,855 |
+| 2 Peter 3 | 4 | 2,268 |
+| **Total** | **51** | **33,818** |
+
+Each chapter note gained only `"plain": true`. None of these books has verse notes; the chapters rest
+on the chapter deep notes, the intros, the doctrine studies, the canon guide, other plain notes and the
+lexicon. Care lines, all word for word from existing notes, no phone numbers, Find Help named: hard
+places (2 Corinthians 1) at James 1:1-4 and 1 Peter 1:3-9; the restless conscience (Colossians 1) at
+James 1:5-8; leaders (1 Thessalonians 5) at James 3:1-5; anger (Ephesians 4) at James 3:6-12; guilt
+(2 Corinthians 7) at James 4:7-10; crimes reported at James 4:11-12 and 1 Peter 3:1-7; hardship
+(Acts 14) at James 5:7-12 and 1 Peter 4:12-19; illness (2 Corinthians 12) at James 5:13-18; harm in a
+church (Galatians 6) at James 5:19-20; being chosen (Ephesians 1) at 1 Peter 1:1-2 and 2 Peter
+1:3-11; danger and slavery (1 Thessalonians 3; 1 Corinthians 7) at 1 Peter 2:18-25; abuse in marriage
+(Titus 2) at 1 Peter 3:1-7; controlling leaders (2 Corinthians 11) at 1 Peter 5:1-4 and 2 Peter 2:1-3;
+anxiety and self-harm (Philippians 4) at 1 Peter 5:5-7; sadness (1 Thessalonians 5) at 1 Peter
+5:8-11; falling away (Galatians 5) at 2 Peter 2:17-22.
+
+### Sources
+
+All in `bdoor-ledger.md`. Two web searches, both for the rough placing of Bithynia, Pontus and
+Cappadocia on the 1 Peter map (Bithynia's region near 40.5 N, 31.0 E; Amasya 40.65 N, 35.83 E;
+Cappadocia's region 38.66 N, 34.85 E). Everything else rests on the repository.
+
+### Cut or narrowed
+
+Cut: ‘lured away’ as a fishing word; ‘the life itself is the crown’; whether the rich man of James
+1:10 is a believer; ‘Go in peace’ as the usual Jewish farewell; an imagined excuse for favouritism;
+the unpaid wages likened to Abel's blood; cattle fattened on their day of slaughter; ‘deeply’ as
+‘stretched out’ (1 Peter 1:22); household codes ‘rarely told the husband anything’; the four verbs of
+1 Peter 5:10 as pictures of mending; why Noah is called a preacher; ‘glorious beings’ as angelic
+powers; how believers ‘hasten’ the day; Luther's warmer later readers. Narrowed: Proverbs 3:34 in
+James 4:6 to a plain comparison of the BSB wordings, with no claim about the Greek; 2 Peter 3:9 to the
+1 Timothy 2:4 note's readings; Eusebius to ‘the 300s’.
+
+### What was run, and what passed (watched)
+
+After each chapter: validate-bible-notes, the strict quotation check (0 problems), the search-index
+and passage-index checks and no-emdash, exit 0. After James and after 1 Peter: all 46 content-gate
+commands, `pnpm check`, `pnpm test` (162 files, 1,890 tests), exit 0. After merging the latest branch:
+all 46 content-gate commands exit 0 (430 chapters in plain words; search index 930 entries; passage
+index 664 files; verify-sources 22 texts); `pnpm check` exit 0; `pnpm test` exit 0 (162 files passed,
+7 skipped; 1,898 tests passed, 73 skipped); `pnpm build`, `pnpm run sitemap`, `pnpm run prerender`
+(3,135 pages), `pnpm run audit:canonicals` exit 0. Each heavy command waited for a one-minute load
+under 6; once (the canonical audit) `uptime` ran in the same call as the command rather than alone,
+though it was read (3.08) before the audit's result.
+
+Served with `scripts/serve-like-vercel.mjs` on 4603, Playwright at 390 and at 1440, /api stubbed: all
+13 chapters' passage headings and the start of every field matched the data at both widths (51
+passages, 478 field checks), no sideways scroll, no console errors. The three book pages at 390 and
+1440: every part (13, 12, 12), every timeline entry (15, 12, 11), the frame (israel, mediterranean,
+canaan), the map note, no sideways scroll, no errors. Looked at the maps and pages in
+`/home/user/elite-shots/bdoor/` (`james-map-390.png`, `james-book-1440.png`, `1-peter-map-390.png`,
+`1-peter-map-1440.png`, `2-peter-map-390.png`, `1-peter3-390-last.png`). Two map faults were seen and
+fixed: Galatia's mark covered the drawing's GALATIA label, and the Sodom and Gomorrah label ran off
+the right edge at 390. The served copies were refreshed and looked at again. Server stopped by PID.
+No Lighthouse run this time.
+
+### Not done or not verified
+
+1 John not begun. The three provinces' points rest on search results (Wikipedia and mirrors, a
+cities table), not a survey. The Greek Old Testament's wording was not read; where Peter's or James's
+wording differs from the BSB's Old Testament, the notes say so and say only that the writers often
+follow the Greek. The James map shows a place the letter does not name, because the map band cannot
+be left empty without a code change.
+
+### Next
+
+1 John: its book page (who ‘the elder’ and John are; the antichrists named without any modern
+group; assurance without fear), then chapters 1 to 5; then 2 John, 3 John and Jude.

@@ -1,0 +1,81 @@
+---
+area: jesus
+slug: how-did-jesus-become-god
+status: pending (not on the site; for James to read first)
+question: "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?"
+ledger: docs/work/elite/apol-ledger.md, "Twenty-first run", key "bc"
+---
+
+# Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?
+
+## The short answer
+
+Christian thinking about Jesus did grow. The language of Nicaea, "of one substance with the Father," is not in the New Testament, and some early texts speak of Jesus being declared Son of God at his resurrection. Bart Ehrman builds on those texts a careful case that the first believers thought God had exalted a man, and that belief in a Son who existed before creation came later. But the earliest writings we can date, Paul's letters from the 50s, already hold both together: the Son God sent, through whom all things came, and the crucified man God exalted. In the same letters Jesus is prayed to in Aramaic, called on as the Lord of Joel's promise and given the words Isaiah kept for God alone, by Jews who confessed the Shema. The high view of Jesus was there at the start. Whether it is true depends on who he was and on what happened at Easter.
+
+## The objection at its strongest
+
+The New Testament scholar Bart Ehrman set out the case in *How Jesus Became God* (2014). As the Study Bible's note on Mark 1 summarizes his argument, early Christians first thought Jesus was exalted to divine sonship at his resurrection, then pushed the moment back to his baptism, as Mark does, and later to his birth and to a time before creation. John's Gospel, on this account, with its Word who "was God" (John 1:1, BSB), is the end of a development, not a record of what Jesus or his first followers believed, as the note on John 1 reports Ehrman's view. And the cause of the whole movement, as the note on John 20 gives his account, was that the disciples sincerely had visions of Jesus after his death.
+
+The texts the case rests on are real. Paul opens his letter to the Romans with a summary whose terse parallel lines, as the Study Bible's note on Romans 1 says, sound like a formula: Jesus "was a descendant of David according to the flesh, and who through the Spirit of holiness was declared with power to be the Son of God by His resurrection from the dead" (Romans 1:3-4, BSB). Read alone, that sounds like an appointment. Peter's first sermon in Acts ends, "God has made this Jesus, whom you crucified, both Lord and Christ" (Acts 2:36, BSB). Paul's sermon in Acts 13 applies the psalm's line for the day of the king's installation, "You are My Son; today I have become Your Father," to God "raising up Jesus" (Acts 13:33, BSB). In Mark, the earliest Gospel, there is no birth story and no prologue, and Jesus is first called Son by a voice at his baptism (Mark 1:11). Jewish scholars add, as the note on Mark 1 records, that "Son of God" in the Hebrew Bible is a royal and covenant title that never implied divinity.
+
+At full strength the objection says this. The Greek and Roman world was full of men made gods: Justin Martyr, writing to the emperor in his *First Apology*, could point to "the emperors who die among yourselves, whom you deem worthy of deification" (chapter 21, in the *Ante-Nicene Fathers* translation). The first Jewish followers of Jesus did something milder and more Jewish: they believed God had raised his Messiah and seated him in heaven. Over three centuries that faith was raised step by step until a council confessed him "very God of very God." On this view the church didn't discover who Jesus was. It promoted him.
+
+## What is true in it
+
+A great deal. Christian language about Jesus did develop. The Nicene Creed's "being of one substance with the Father" answered fourth-century questions in fourth-century words, and no one should pretend Paul wrote it. The Gospels differ in how openly they speak: John's Jesus says "before Abraham was born, I am" (John 8:58, BSB), and Mark's Jesus says nothing like it. Some second-century Christians did hold that Jesus was a man on whom the Spirit came at the Jordan; the note on Mark 1 records that Theodotus taught this in Rome and that Bishop Victor excommunicated him for it. And Christians have sometimes defended the deity of Christ by quoting John as if no historian had ever asked when John wrote.
+
+It is also true that the texts Ehrman reads as exaltation say what they say. Romans 1:4 does speak of a declaration at the resurrection, Acts 2:36 does say God "made" Jesus Lord and Christ, and Acts 13:33 does tie "today" to the raising of Jesus. A reader who comes to them with the creed in hand and finds only the creed in them has not read them.
+
+## The evidence
+
+The question is not whether thought about Jesus developed. It is what the earliest layer looked like, and that layer can be dated. Paul's undisputed letters were written in the 50s, about twenty to twenty-five years after the crucifixion, and they quote and assume material that is older still: the summary of the gospel he "received" (1 Corinthians 15:3), a passage in Philippians that many scholars, as the note on Philippians 2 says, have taken as a hymn older than the letter, and prayers in Aramaic, the language of the first Jerusalem believers.
+
+In that earliest layer, exaltation and pre-existence stand side by side. The same Romans 1 that speaks of a declaration at the resurrection begins "regarding His Son" (Romans 1:3, BSB), so that, as the note on Romans 1 explains, the one already called Son is installed as Son-of-God-in-power, the reading of C. E. B. Cranfield and most commentators. Paul writes that "God sent His Son, born of a woman" (Galatians 4:4, BSB), which assumes a Son to send. And in Philippians the same passage that says "God exalted Him to the highest place" first says that he was "existing in the form of God" and "did not consider equality with God something to be grasped, but emptied Himself, taking the form of a servant, being made in human likeness" (Philippians 2:6-7, 9, BSB). James Dunn, in *Christology in the Making* (1980), argued that this contrasts Christ with Adam and need not mean a life before his birth; most interpreters, as the note on Philippians 2 records, grant the echo of Adam but hold that the passage still describes a Son who existed before he became human, and N. T. Wright and Gordon Fee answer that "being made in human likeness" only makes sense if the subject was not human before.
+
+Then there is worship, which is harder to explain away than titles. Paul ends a letter to Greek-speaking Corinthians with an Aramaic prayer, "Come, O Lord" (1 Corinthians 16:22, BSB), *maranatha*, which, as the note there says, shows an early prayer passed from Aramaic-speaking believers to Gentile churches. Acts has the first martyr die praying, "Lord Jesus, receive my spirit" (Acts 7:59, BSB). Paul takes Joel's promise, "everyone who calls on the name of the LORD will be saved" (Joel 2:32, BSB), and applies it to Jesus: "Everyone who calls on the name of the Lord will be saved" (Romans 10:13, BSB), where the Lord on whom they call is the one confessed in verse 9 as "Jesus is Lord." He reworks Israel's confession, "The LORD our God, the LORD is One" (Deuteronomy 6:4, BSB), into "one God, the Father, from whom all things came" and "one Lord, Jesus Christ, through whom all things came" (1 Corinthians 8:6, BSB), giving Jesus a part in creation. And he takes God's oath in Isaiah, "Every knee will bow before Me" (Isaiah 45:23, BSB), from a chapter that says "I am God, and there is no other" (Isaiah 45:22, BSB), and writes that "at the name of Jesus every knee should bow" (Philippians 2:10, BSB). About AD 112 a Roman governor reported that Christians "addressed a form of prayer to Christ, as to a divinity" (Pliny, *Letters* 10.96, in Melmoth's translation).
+
+Larry Hurtado, in *Lord Jesus Christ* (2003), argued from this pattern of worship that a high view of Jesus was early, not late, as the note on Mark 1 records; he and Richard Bauckham, in *God Crucified* (1998), argue, as the note on Philippians 2 puts it, that the language taken from Isaiah is "not a borrowing of language for a lesser figure" but includes Jesus within the identity of Israel's one God, "while the confession still ends 'to the glory of God the Father'."
+
+## The argument, laid out
+
+This is an inference to the best explanation, about the earliest Christian belief and not yet about whether it was true.
+
+1. Within about twenty-five years of the crucifixion, Paul's letters speak of Jesus as the Son God sent, through whom all things came, who existed in the form of God, and they direct to him prayer, the calling on the name of the Lord and the words Isaiah kept for God alone.
+2. Paul gives these not as his own innovations but as what the churches already shared, including Aramaic-speaking believers in Judea, and in the letter where he records how he opposed Peter to his face, he records no dispute about this.
+3. Jewish monotheists of the period did not give that kind of worship to angels or exalted human beings, so a slow growth from an exalted man to a divine Son would be expected to leave a gap between the earliest exaltation texts and the worship, and the earliest layer shows none.
+
+So: the high view of Jesus was not a late development out of a faith that first saw only an exalted man; exaltation and divine pre-existence appear together in the earliest sources that can be dated, and what remains to be weighed is whether that faith was true.
+
+The weight sits on the third step. If Jewish devotion of the time could give such honour to an exalted figure who was not God, the worship of Jesus proves less than the argument needs, and that is exactly where the strongest reply presses.
+
+## The strongest reply, and an answer
+
+The strongest reply is that Judaism in the time of Jesus was not as tidy as the third step assumes. Jewish texts speak of exalted angels, of a heavenly Son of Man, of Wisdom beside God at creation. Daniel Boyarin, writing as a Jewish scholar in *The Jewish Gospels* (2012), argues, as the note on Daniel 7 records, that Daniel's vision presents a second divine figure enthroned beside the Ancient of Days and that this expectation was at home in Judaism before Jesus. If so, a Jew could honour an exalted figure as divine in some sense without thinking him the one God, and Paul's language may mean that. Ehrman himself, as the English Wikipedia's article on adoptionism reports his view, holds that the exaltation and incarnation ways of speaking existed alongside each other. On that view Paul could already have had a high view of Christ without holding the God of the creeds.
+
+That reply is serious and should not be waved away. Two things can still be said. First, Boyarin's argument cuts against the slow-development story as much as for it. If a divine figure beside God was a Jewish idea before Jesus, then the earliest Christians didn't need Greek hero cults or three centuries to call Jesus divine; they could do it at once, in Jewish terms, which is what the letters show. Second, the evidence is not only that Jesus was given exalted titles but that he was given worship: prayer, the invoked name, the oath of Isaiah 45, a share in creation. The note on John 1 records that the rabbis later condemned belief in "two powers in heaven," a polemic Alan Segal traced (1977), which shows that Jewish teachers came to see such devotion as a breach of the Shema. That is the sharpest form of the question, and it is the one Christians answered by confessing one God in three persons. The creeds came later. The worship they explain did not.
+
+## What remains unresolved
+
+How much of Nicaea's meaning Paul's words carry is a real question, and the history of the fourth century shows that Christians who prayed to Jesus could still disagree about what he was. Whether Philippians 2 speaks of pre-existence is argued among believing scholars, as Dunn's reading shows. How Mark's Christology should be read on its own terms, and how far Jewish ideas of exalted figures explain it, is still argued. And the argument above reaches only the earliest Christian belief. Whether Jesus was what they worshipped him as is a further question, which turns on what he claimed and on the resurrection, and other pages in this area take those up.
+
+## Where Christians differ
+
+Christians differ on how to describe the path from the New Testament to Nicaea: some see the creeds as stating plainly what the apostles already confessed, others as a true unfolding, under pressure of later questions, of what was there in seed. They differ on how to read Romans 1:4 and Philippians 2 in detail, and on how much weight to give the Gospel of John in a historical argument. What all who confess the historic faith hold together is the confession itself, that Jesus Christ is "the only-begotten Son of God, begotten of his Father before all worlds, God of God, Light of Light, very God of very God, begotten, not made," and truly man, and that his first followers were not wrong to call on his name.
+
+## Read the other side
+
+- Bart Ehrman, *How Jesus Became God* (2014).
+- James Dunn, *Christology in the Making* (1980).
+
+## Read further
+
+- Larry Hurtado, *Lord Jesus Christ* (2003).
+- Richard Bauckham, *Jesus and the God of Israel* (2008).
+- Martin Hengel, *Studies in Early Christology* (1995).
+
+## On the site
+
+- The argued answer "Was Jesus just a good teacher?" (/answers/was-jesus-just-a-good-teacher), which this page agrees with and takes further on the earliest worship.
+- The Study Bible's notes on Philippians 2 (/study/bible/philippians/2), Romans 1 (/study/bible/romans/1), 1 Corinthians 8 (/study/bible/1-corinthians/8) and Mark 1 (/study/bible/mark/1).
+- "Did scribes make Jesus more divine?" (/questions/text/did-scribes-make-jesus-more-divine), on the copies.
+- The other questions in this area (/questions/jesus).
