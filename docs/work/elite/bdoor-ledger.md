@@ -9156,5 +9156,5 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Luke 1:68; Deuteronomy 7:6-8; Exodus 19:5; Ezekiel 36:27 | 3-14 | BSB | BSB text |
 | Heart as the centre of the person; ‘His inheritance in the saints’ two readings | 15-23 | Standard; deep note | Stated as readings |
 | Ephesus known for magic (Acts 19:19) | 15-23 | BSB; repository `setting` | Repository |
-| Psalm 110 the psalm most read of Christ in the early church | 15-23 | Standard (most-quoted Old Testament text in the New Testament) | Stated as "more than any other"; repository Acts 2 and Mark 12 notes |
+| Psalm 110 read of Christ's rising and reign in Mark 12:36, Acts 2:34-36, Hebrews 1:13 | 15-23 | BSB | BSB text. "More than any other" cut (the Mark 12 run could not confirm it) |
 | Psalm 110:1; Psalm 8:6; Isaiah 11:2 | 15-23 | BSB | BSB text |
