@@ -182,7 +182,7 @@ export default function WisdomTopic() {
       <SEOMeta title={title} description={description} keywords={entry.keywords.join(", ")} url={canonical} structuredData={[articleSchema, breadcrumbSchema]} />
 
       <div className="wz-page">
-        <InnerHead path="/wisdom" title={entry.label} line={entry.framing}>
+        <InnerHead path="/wisdom" title={entry.label} line={entry.framing} plate="book">
           <p className="wz-meta">
             {area && (
               <>

@@ -55,13 +55,6 @@ async function loadContext(v: EntryVerse): Promise<Loaded> {
       section = hit.t;
     }
   }
-  if (note && !section) {
-    const hit = note.outline.find((o) => {
-      const [a, b] = verseRange(o.v);
-      return v.v1 >= a && v.v1 <= b;
-    });
-    section = hit?.t ?? null;
-  }
   const verses = text.verses.filter((x) => x.v >= Math.max(1, from) && x.v <= to);
   return { title: note?.title ?? chapterName(v.ref), from, to, verses, plain: Boolean(note?.plain), section };
 }

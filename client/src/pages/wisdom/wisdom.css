@@ -29,12 +29,12 @@
 /* A passage. */
 .wz-verses{display:flex;flex-direction:column;gap:var(--s-3);margin-bottom:var(--s-3)}
 .wz-verse{padding:0 0 var(--s-3);border-bottom:1px solid var(--border)}
-.wz-verse__quote{margin:0;padding:0 0 0 18px;border-left:2px solid var(--ink)}
+.wz-verse__quote{margin:0;padding:0 0 0 18px;border-left:2px solid var(--ink) !important;font-family:var(--font-reading) !important;font-style:normal}
 .wz-verse__text{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 6px}
 .wz-verse__ref{display:block;font-family:var(--U);font-style:normal;font-size:13.5px;font-weight:600;letter-spacing:.02em;color:var(--ink-muted)}
 .wz-verse__where{font-family:var(--font-reading);font-size:16.5px;line-height:1.6;color:var(--ink-muted);margin:12px 0 0 20px}
-.wz-verse__tools{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;margin:10px 0 0 14px}
-.wz-verse__open,.wz-verse__mini{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 6px;font-family:var(--U);font-size:14.5px;font-weight:500;color:var(--ink);background:transparent;border:0;cursor:pointer}
+.wz-verse__tools{display:flex;flex-wrap:wrap;align-items:center;gap:0 4px;margin:8px 0 0 12px}
+.wz-verse__open,.wz-verse__mini{display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;padding:0 6px;font-family:var(--U);font-size:14.5px;font-weight:500;color:var(--ink);background:transparent;border:0;cursor:pointer}
 .wz-verse__open{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.25em}
 .wz-verse__mini{color:var(--ink-muted)}
 .wz-verse__mini:hover{color:var(--ink)}
@@ -82,7 +82,7 @@
 /* A question to sit with, and the prayer. */
 .wz-sit{padding:var(--s-3) 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .wz-sit__q{font-family:var(--F);font-size:clamp(1.6rem,1.3rem + 1vw,2.2rem);font-weight:400;line-height:1.25;color:var(--ink);margin:0;text-wrap:balance}
-.wz-prayer{margin:0;padding:18px 20px;background:var(--bone-warm);border-radius:var(--radius-sm)}
+.wz-prayer{margin:0;padding:18px 20px;background:var(--bone-warm);border-radius:var(--radius-sm);border-left:0 !important;font-family:var(--font-reading) !important}
 .wz-prayer p{font-family:var(--font-reading);font-style:italic;font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 8px}
 .wz-prayer cite{font-family:var(--U);font-style:normal;font-size:13.5px;font-weight:600;color:var(--ink-muted)}
 .wz-care{margin:0 0 var(--s-4);padding:16px 18px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--ink);border-radius:var(--radius-sm)}
@@ -162,3 +162,5 @@
 }
 .wf-inline{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .wf-foot{list-style:none;margin:var(--s-3) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:0 24px}
+/* Small labels that are headings for structure: the site's heading face is set with !important (brand-override.css). */
+.wz-sec__kicker,.wz-misread__h,.wz-care__title{font-family:var(--U) !important;font-weight:600 !important;letter-spacing:.02em}

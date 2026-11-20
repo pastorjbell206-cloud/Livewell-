@@ -127,6 +127,18 @@ function place(ref) {
 /** A verse that ends its sentence can stand alone (the verse of the day draws only from these). */
 const endsSentence = (text) => /[.?!][”’"')]*$/.test(text.trim());
 
+/** The passage opens a sentence: a capital first, and the verse before it (if any) ended its own sentence. */
+function startsSentence(v) {
+  if (!/^[\u201c\u2018"']?[A-Z]/.test(v.text)) return false;
+  if (v.v1 <= 1) return true;
+  const book = readRef(v.ref)?.book.name;
+  try {
+    return endsSentence(passage(`${book} ${v.chapter}:${v.v1 - 1}`).text);
+  } catch {
+    return false;
+  }
+}
+
 const firstSentence = (s) => {
   const m = s.match(/^.*?[.?!](?=\s|$)/);
   return (m ? m[0] : s).trim();
@@ -179,8 +191,9 @@ for (const t of topics) {
       ...(p.context ? { context: p.context, contextAt: placeFields(p.context) } : {}),
       ...(p.where ? { where: p.where } : {}),
     }));
-    // The verse of the day draws only from verses that end their sentence, so it is never cut mid-sentence.
-    const whole = versesOut.find((v) => v.whole);
+    // The verse of the day draws only from passages that are a whole sentence: they open on a capital
+    // (after any quotation mark) and end their sentence, so one is never cut mid-sentence. Short ones only.
+    const whole = versesOut.find((v) => v.whole && startsSentence(v) && v.text.length <= 240);
     if (whole) daily.push({ id: t.id, label: t.label, ref: whole.ref, text: whole.text });
     const entry = {
       id: t.id,

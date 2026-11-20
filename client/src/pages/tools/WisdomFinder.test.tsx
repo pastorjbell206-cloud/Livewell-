@@ -73,6 +73,7 @@ describe("WisdomFinder", () => {
   it("draws the verse of the day only from whole sentences (Psalm 92:14 runs into verse 15)", () => {
     expect(finder.daily.length).toBeGreaterThan(150);
     for (const d of finder.daily) expect(d.text.trim(), d.ref).toMatch(/[.?!][”’"')]*$/);
+    for (const d of finder.daily) expect(d.text, d.ref).toMatch(/^[“‘"']?[A-Z]/);
     expect(finder.daily.some((d) => d.ref === "Psalm 92:14")).toBe(false);
     for (let i = 0; i < 40; i++) expect(verseForToday(finder.daily, new Date(2027, 0, 1 + i))).not.toBeNull();
   });
