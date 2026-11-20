@@ -3096,6 +3096,28 @@
     "persecution-and-opposition",
     "people-pleasing"
    ]
+  },
+  "need-for-control": {
+   "phrases": [
+    "control freak",
+    "have to control everything",
+    "micromanage everyone",
+    "need to be in control",
+    "everything depends on me",
+    "cant trust anyone else to do it",
+    "need everything planned",
+    "loosen my grip",
+    "control everything",
+    "planned out",
+    "if i let go everything"
+   ],
+   "not": [],
+   "related": [
+    "surrender",
+    "trusting-god",
+    "overthinking",
+    "fear-of-the-future"
+   ]
   }
  }
 }
