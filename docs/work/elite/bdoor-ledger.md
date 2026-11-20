@@ -9314,3 +9314,31 @@ check. Creed wording is quoted from `client/public/creeds/documents/`.
 
 Cut: Luke as one of the founding party; the Latin names of the colony; the number of
 settlers after Actium; the scholars named in the deep note on 2:6-11.
+
+## The plain notes on Philippians 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paul not ‘apostle’ here, as at the start of most of his letters; doulos | 1-2 | BSB openings of Paul's letters; standard | BSB text read (Romans to Titus) |
+| ‘Saints’ all believers; ‘grace and peace’ a Greek and a Jewish greeting | 1-2 | Earlier ledger (Romans 1; Ephesians 1) | Ledger |
+| Overseers and deacons one of the earliest mentions; episkopos later bishop; plural; probably the elders | 1-2 | Deep note `cultural` | Repository |
+| Church order: Catholic, Orthodox, Anglican (bishops, priests, deacons); Presbyterian and Reformed (elders governing together); Baptist and congregational (pastors and deacons, a self-governing congregation); no side | 1-2 | Standard descriptions of church order | Stated generally, each in its own terms. No side |
+| Deuteronomy 34:5; Exodus 18:21; Numbers 6:26 | 1-2 | BSB | BSB text |
+| Koinonia; prayer, gifts (4:15-16), Epaphroditus; Lydia (Acts 16:15) | 3-11 | Deep note `words`; BSB | Repository |
+| Splanchna, the inward parts | 3-11 | Standard lexicons | Standard |
+| Psalm 138:8; Psalm 1:3; Jeremiah 17:8 | 3-11 | BSB | BSB text |
+| Praetorium the emperor's guard or a governor's headquarters | 12-18 | Deep note `historical`, `words` | Repository. "Soldiers took turns" cut (not checked) |
+| Rivals believers with bad motives, not false teaching | 12-18 | Deep note `historical` | Repository |
+| Genesis 50:20; Isaiah 55:11 | 12-18 | BSB | BSB text |
+| Outcome of the trial undecided | 19-26 | Deep note `historical` | Repository |
+| 1:19 matches the old Greek of Job 13:16 | 19-26 | Deep note `literary` | Repository; BSB Job 13:16 quoted as the BSB has it |
+| Intermediate state: most, with Christ at once, aware; some, sleep; 2 Corinthians 5:8; Luke 23:43; no side; doctrine study pointer | 19-26 | Chapter note `hard`; 2-corinthians/plain/5.json; doctrines/intermediate.json | Repository wording. No side |
+| Self-harm care line | 19-26 | 2-corinthians/plain/1.json | Word for word, no phone number |
+| Psalm 73:25-26; 16:11 | 19-26 | BSB | BSB text |
+| Politeuomai; Philippi a colony | 27-30 | Deep note `cultural`; book page ledger | Repository |
+| Sunathleō, athletes striving together | 27-30 | Chapter 4 deep note `cultural` | Repository. "Battlefield" cut |
+| Pressure on believers who would not honour the gods and the emperor, "probably" | 27-30 | Deep note `historical` | Repository wording |
+| Paul and Silas beaten and jailed in Philippi (Acts 16:22-24) | 27-30 | BSB | BSB text |
+| Psalm 27:1; Isaiah 41:10; Psalm 116:15 | 27-30 | BSB | BSB text |
