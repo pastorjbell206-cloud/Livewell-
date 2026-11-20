@@ -1,0 +1,428 @@
+{
+  "about": "Paul's travels, the Bible Explorer's moving map (/study/explorer/pauls-travels). Every place is named by its id in client/public/bible/notes/acts/intro.json (the Acts book page's own checked places, teaching.map), never copied here, so a place is checked once. Each trip is an ordered list of steps: the place, how Acts says the leg into it was made (sea: Acts says they sailed; land: overland, or Acts does not say), any named places passed on the way (via), the Acts reference, and one or two sentences of what happened there. The churches view lists the churches Acts names in these years, in order, and the New Testament letters written to them. scripts/validate-explorer.mjs is the gate; docs/work/elite/explorer-ledger.md holds every claim.",
+  "frame": "mediterranean",
+  "intro": "Acts follows Paul across the eastern Mediterranean, by road and by sea, from Antioch in Syria to Rome. These trips are often called his missionary journeys. Acts itself does not number them: first, second and third is a later way of counting that makes them easier to follow.",
+  "routeNote": "The lines join the places in the order Acts names them. Acts does not say which roads or sea lanes were used, so every line is drawn straight and the exact way is not known. Dashes mark the legs Acts says were sailed; dots mark the rest, overland or not said.",
+  "trips": [
+    {
+      "id": "first",
+      "name": "The first trip",
+      "range": "Acts 13 to 14",
+      "line": "Paul and Barnabas, sent out from Antioch, cross Cyprus and preach in the towns of southern Galatia, then come home the way they went.",
+      "steps": [
+        {
+          "id": "sent",
+          "place": "antioch",
+          "by": "start",
+          "ref": "Acts 13:1-3",
+          "text": "While the church in Antioch is worshiping and fasting, the Holy Spirit says, “Set apart for Me Barnabas and Saul for the work to which I have called them.” The church prays, lays hands on them and sends them off."
+        },
+        {
+          "id": "salamis",
+          "place": "salamis",
+          "by": "sea",
+          "ref": "Acts 13:4-5",
+          "text": "They go down to the port of Seleucia and sail to Cyprus. At Salamis they preach in the synagogues, with John, also called Mark, as their helper."
+        },
+        {
+          "id": "paphos",
+          "place": "paphos",
+          "by": "land",
+          "ref": "Acts 13:6-12",
+          "text": "At Paphos the governor, Sergius Paulus, wants to hear the word of God; when a sorcerer who opposes them is struck blind for a time, the governor believes. From here on Acts calls Saul by his other name, Paul."
+        },
+        {
+          "id": "perga",
+          "place": "perga",
+          "by": "sea",
+          "ref": "Acts 13:13",
+          "text": "They sail to Perga in Pamphylia, near the south coast of what is now Turkey. John Mark leaves them here and goes back to Jerusalem."
+        },
+        {
+          "id": "pisidian-antioch",
+          "place": "pisidian-antioch",
+          "by": "land",
+          "ref": "Acts 13:14-52",
+          "text": "In the synagogue Paul tells Israel's story, from Egypt to David, and says that it leads to Jesus, whom God raised from the dead. Many want to hear more and the word spreads through the region, but some of the city's leading people are stirred up against Paul and Barnabas and drive them out."
+        },
+        {
+          "id": "iconium",
+          "place": "iconium",
+          "by": "land",
+          "ref": "Acts 14:1-6",
+          "text": "A great number of Jews and Greeks believe here. The city is divided, and when Paul and Barnabas learn of a plan to stone them, they leave for Lystra and Derbe."
+        },
+        {
+          "id": "lystra",
+          "place": "lystra",
+          "by": "land",
+          "ref": "Acts 14:8-20",
+          "text": "Paul heals a man who had never walked, and the crowd takes him and Barnabas for gods; they rush in to stop it: “We too are only men, human like you.” Later, people who had opposed them in Antioch and Iconium turn the crowd, and Paul is stoned and left for dead; but when the disciples gather round him, he gets up."
+        },
+        {
+          "id": "derbe",
+          "place": "derbe",
+          "by": "land",
+          "ref": "Acts 14:20-21",
+          "text": "The next day Paul and Barnabas go on to Derbe, preach the good news there and make many disciples. The exact site of Derbe is not certain."
+        },
+        {
+          "id": "back",
+          "place": "pisidian-antioch",
+          "name": "Back through the towns",
+          "by": "land",
+          "via": ["lystra", "iconium"],
+          "ref": "Acts 14:21-23",
+          "text": "They go back the way they came, through Lystra, Iconium and Antioch, encouraging the new believers: “We must endure many hardships to enter the kingdom of God.” In each church they appoint elders, with prayer and fasting."
+        },
+        {
+          "id": "perga-again",
+          "place": "perga",
+          "name": "Perga again",
+          "by": "land",
+          "ref": "Acts 14:24-25",
+          "text": "Through Pisidia they come down to Pamphylia, speak the word in Perga, and go on to the port of Attalia."
+        },
+        {
+          "id": "home",
+          "place": "antioch",
+          "name": "Home to Antioch",
+          "by": "sea",
+          "ref": "Acts 14:26-28",
+          "text": "From Attalia they sail back to Antioch. They gather the church and tell all that God had done through them, and how He had opened the door of faith to the Gentiles."
+        }
+      ]
+    },
+    {
+      "id": "second",
+      "name": "The second trip",
+      "range": "Acts 15:36 to 18:22",
+      "line": "Paul and Silas visit the towns of the first trip, then cross into Macedonia and Greece: Philippi, Thessalonica, Berea, Athens and Corinth.",
+      "steps": [
+        {
+          "id": "parting",
+          "place": "antioch",
+          "by": "start",
+          "ref": "Acts 15:36-40",
+          "text": "Paul wants to go back and see how the believers are doing in every town where they preached. He and Barnabas disagree so sharply about taking John Mark that they part: Barnabas sails for Cyprus with Mark, and Paul chooses Silas."
+        },
+        {
+          "id": "timothy",
+          "place": "lystra",
+          "by": "land",
+          "via": ["derbe"],
+          "ref": "Acts 15:41-16:5",
+          "text": "Through Syria and Cilicia, strengthening the churches, Paul comes to Derbe and then to Lystra. Here a disciple named Timothy, well spoken of by the believers, goes on with them."
+        },
+        {
+          "id": "troas",
+          "place": "troas",
+          "by": "land",
+          "ref": "Acts 16:6-10",
+          "text": "The Holy Spirit keeps them from speaking the word in the province of Asia, and the way into Bithynia is closed as well, so they go down to Troas on the coast. In the night Paul sees a man of Macedonia pleading, “Come over to Macedonia and help us.”"
+        },
+        {
+          "id": "philippi",
+          "place": "philippi",
+          "by": "sea",
+          "ref": "Acts 16:11-40",
+          "text": "They sail by way of Samothrace and Neapolis to Philippi, a Roman colony. Lydia and her household are baptized by the river; then Paul and Silas are beaten and put in prison, and after an earthquake in the night the jailer and his household believe."
+        },
+        {
+          "id": "thessalonica",
+          "place": "thessalonica",
+          "by": "land",
+          "ref": "Acts 17:1-10",
+          "text": "For three Sabbaths Paul reasons from the Scriptures in the synagogue, and some Jews, many God-fearing Greeks and a number of leading women believe. When a mob sets the city in an uproar, the believers send Paul and Silas away by night."
+        },
+        {
+          "id": "berea",
+          "place": "berea",
+          "by": "land",
+          "ref": "Acts 17:10-14",
+          "text": "The people of Berea receive the message eagerly and examine the Scriptures every day to see whether it is true, and many believe. When trouble follows Paul from Thessalonica, the believers send him to the coast."
+        },
+        {
+          "id": "athens",
+          "place": "athens",
+          "by": "land",
+          "ref": "Acts 17:15-34",
+          "text": "In a city full of idols, Paul speaks at the Areopagus about an altar inscribed “TO AN UNKNOWN GOD” and about the God who made the world. Some mock when he speaks of the resurrection; a few believe, among them Dionysius and a woman named Damaris."
+        },
+        {
+          "id": "corinth",
+          "place": "corinth",
+          "by": "land",
+          "ref": "Acts 18:1-17",
+          "text": "Paul stays a year and a half, working as a tentmaker with Aquila and Priscilla and teaching the word of God. Crispus, the synagogue leader, believes with his whole household; when Paul is brought before the governor Gallio, Gallio refuses to judge the case."
+        },
+        {
+          "id": "ephesus",
+          "place": "ephesus",
+          "by": "sea",
+          "ref": "Acts 18:18-21",
+          "text": "He sails with Priscilla and Aquila to Ephesus and reasons in the synagogue there. Asked to stay longer, he answers, “I will come back to you if God is willing.”"
+        },
+        {
+          "id": "jerusalem",
+          "place": "jerusalem",
+          "by": "sea",
+          "via": ["caesarea"],
+          "ref": "Acts 18:22",
+          "text": "He sails on and lands at Caesarea, then goes up and greets the church at Jerusalem."
+        },
+        {
+          "id": "home",
+          "place": "antioch",
+          "name": "Home to Antioch",
+          "by": "land",
+          "ref": "Acts 18:22-23",
+          "text": "Then he goes down to Antioch, where the trip began, and spends some time there."
+        }
+      ]
+    },
+    {
+      "id": "third",
+      "name": "The third trip",
+      "range": "Acts 18:23 to 21:17",
+      "line": "Paul's long stay in Ephesus, a last visit to Macedonia and Greece, and the road to Jerusalem.",
+      "steps": [
+        {
+          "id": "setting-out",
+          "place": "antioch",
+          "by": "start",
+          "ref": "Acts 18:23",
+          "text": "After some time in Antioch, Paul sets out again and goes from place to place through the region of Galatia and Phrygia, strengthening all the disciples."
+        },
+        {
+          "id": "ephesus",
+          "place": "ephesus",
+          "by": "land",
+          "ref": "Acts 19:1-41",
+          "text": "He comes through the interior to Ephesus and teaches daily for two years in the lecture hall of Tyrannus, so that people all over the province of Asia hear the word of the Lord. Then the silversmiths who make shrines of the goddess Artemis, afraid for their trade, start a riot that fills the theatre."
+        },
+        {
+          "id": "philippi",
+          "place": "philippi",
+          "by": "land",
+          "ref": "Acts 20:1-6",
+          "text": "Paul goes through Macedonia and stays three months in Greece; Acts does not name the towns, so the line runs straight to Philippi. Because of a plot against him, he goes back through Macedonia and sails from Philippi after the Feast of Unleavened Bread."
+        },
+        {
+          "id": "troas",
+          "place": "troas",
+          "by": "sea",
+          "ref": "Acts 20:6-12",
+          "text": "At Troas the believers gather on the first day of the week to break bread, and Paul talks until midnight. A young man named Eutychus falls asleep, falls from a third-storey window and is picked up dead; Paul goes down and takes him in his arms, and the boy is taken home alive."
+        },
+        {
+          "id": "miletus",
+          "place": "miletus",
+          "by": "sea",
+          "ref": "Acts 20:13-38",
+          "text": "Hurrying to reach Jerusalem by Pentecost if he can, Paul sails past Ephesus and sends for the elders of its church to meet him at Miletus. He says goodbye, they kneel and pray together, and they weep, because he has told them they will not see his face again."
+        },
+        {
+          "id": "tyre",
+          "place": "tyre",
+          "by": "sea",
+          "ref": "Acts 21:1-6",
+          "text": "By Cos, Rhodes and Patara they sail south of Cyprus to Tyre and stay seven days with the disciples there. When they leave, the believers, with their wives and children, kneel on the beach and pray with them."
+        },
+        {
+          "id": "caesarea",
+          "place": "caesarea",
+          "by": "sea",
+          "ref": "Acts 21:7-14",
+          "text": "By way of Ptolemais they come to Caesarea and stay with Philip the evangelist. A prophet named Agabus binds his own hands and feet with Paul's belt to show that Paul will be bound in Jerusalem, and Paul answers that he is ready even to die for the name of the Lord Jesus."
+        },
+        {
+          "id": "jerusalem",
+          "place": "jerusalem",
+          "by": "land",
+          "ref": "Acts 21:15-17",
+          "text": "They go up to Jerusalem, and the believers welcome them gladly. About a week later Paul is seized in the temple and arrested (Acts 21:27-33), and he is held for two years at Caesarea before he is sent to Rome."
+        }
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "The voyage to Rome",
+      "range": "Acts 27 to 28",
+      "line": "Paul, a prisoner who has appealed to Caesar, sails for Rome: a storm, a shipwreck on Malta, and two years in Rome.",
+      "steps": [
+        {
+          "id": "caesarea",
+          "place": "caesarea",
+          "by": "start",
+          "ref": "Acts 25:11-12",
+          "text": "After two years held at Caesarea, Paul appeals to Caesar, and so he is sent to Rome as a prisoner, in the care of a centurion named Julius (Acts 27:1)."
+        },
+        {
+          "id": "sidon",
+          "place": "sidon",
+          "by": "sea",
+          "ref": "Acts 27:3",
+          "text": "The next day the ship lands at Sidon, and Julius treats Paul kindly, letting him visit his friends and receive their care."
+        },
+        {
+          "id": "fair-havens",
+          "place": "fair-havens",
+          "by": "sea",
+          "ref": "Acts 27:4-12",
+          "text": "Against the wind they sail by way of Myra, where they change to a ship bound for Italy, and work slowly along the coast of Crete to Fair Havens. Paul warns that sailing on will bring great loss, but the ship sails on."
+        },
+        {
+          "id": "malta",
+          "place": "malta",
+          "by": "sea",
+          "ref": "Acts 27:13-28:2",
+          "text": "A storm drives the ship for fourteen days, and Paul tells everyone to take courage, for not one life will be lost. The ship runs aground and breaks up, everyone reaches land safely, and on Malta the islanders show them “extraordinary kindness.”"
+        },
+        {
+          "id": "syracuse",
+          "place": "syracuse",
+          "by": "sea",
+          "ref": "Acts 28:11-12",
+          "text": "After three months on Malta they sail in another ship and put in at Syracuse in Sicily for three days."
+        },
+        {
+          "id": "puteoli",
+          "place": "puteoli",
+          "by": "sea",
+          "ref": "Acts 28:13-14",
+          "text": "By way of Rhegium they reach Puteoli in Italy, where they find believers who ask them to stay a week."
+        },
+        {
+          "id": "rome",
+          "place": "rome",
+          "by": "land",
+          "ref": "Acts 28:15-31",
+          "text": "Believers from Rome come out as far as the Forum of Appius and the Three Taverns to meet him, and Paul thanks God and is encouraged. In Rome he lives two years under guard in a rented house, welcoming all who come, and Acts ends with him proclaiming the kingdom of God boldly and freely."
+        }
+      ]
+    }
+  ],
+  "churchesIntro": "The churches Acts names in these years, in the order they appear, and the New Testament letters written to them. Antioch and Rome were not begun by Paul, and the map says so. No years are given: the order is Acts' own, and the dates of the trips and of the letters are debated in detail.",
+  "churches": [
+    {
+      "id": "antioch",
+      "name": "Antioch in Syria",
+      "places": ["antioch"],
+      "begun": "before",
+      "ref": "Acts 11:19-26",
+      "text": "Believers scattered after Stephen's death bring the good news to Antioch, and some speak to Greeks as well; a great number turn to the Lord. This church was not begun by Paul: Barnabas brings him here, the disciples are first called Christians here, and this church sends him out (Acts 13:1-3).",
+      "letters": []
+    },
+    {
+      "id": "galatia",
+      "name": "The towns of southern Galatia",
+      "places": ["pisidian-antioch", "iconium", "lystra", "derbe"],
+      "begun": "paul",
+      "ref": "Acts 13:14-14:23",
+      "text": "On the first trip Paul and Barnabas preach in Pisidian Antioch, Iconium, Lystra and Derbe, and on the way back they appoint elders for the believers in each church (Acts 14:23).",
+      "letters": [
+        {
+          "book": "galatians",
+          "name": "Galatians",
+          "note": "Written “To the churches of Galatia” (Galatians 1:2). Whether these are the towns of Acts 13 and 14 or churches farther north is debated; the book page sets out both views."
+        }
+      ]
+    },
+    {
+      "id": "philippi",
+      "name": "Philippi",
+      "places": ["philippi"],
+      "begun": "paul",
+      "ref": "Acts 16:12-40",
+      "text": "Lydia and her household are baptized here, and then the jailer and his household. Before Paul leaves, he goes to Lydia's house to encourage the believers (Acts 16:40).",
+      "letters": [
+        {
+          "book": "philippians",
+          "name": "Philippians",
+          "note": "Written “To all the saints in Christ Jesus at Philippi” (Philippians 1:1)."
+        }
+      ]
+    },
+    {
+      "id": "thessalonica",
+      "name": "Thessalonica",
+      "places": ["thessalonica"],
+      "begun": "paul",
+      "ref": "Acts 17:1-9",
+      "text": "Some Jews, many God-fearing Greeks and a number of leading women believe here, in spite of the uproar that drives Paul away.",
+      "letters": [
+        {
+          "book": "1-thessalonians",
+          "name": "1 Thessalonians",
+          "note": "Written “To the church of the Thessalonians” (1 Thessalonians 1:1)."
+        },
+        {
+          "book": "2-thessalonians",
+          "name": "2 Thessalonians",
+          "note": "Written to the same church (2 Thessalonians 1:1)."
+        }
+      ]
+    },
+    {
+      "id": "berea",
+      "name": "Berea",
+      "places": ["berea"],
+      "begun": "paul",
+      "ref": "Acts 17:10-12",
+      "text": "Many believe here, along with a number of prominent Greek women and men. No letter to Berea is in the New Testament.",
+      "letters": []
+    },
+    {
+      "id": "corinth",
+      "name": "Corinth",
+      "places": ["corinth"],
+      "begun": "paul",
+      "ref": "Acts 18:1-11",
+      "text": "Paul teaches here for a year and a half; Crispus, the synagogue leader, believes with his household, and many Corinthians believe and are baptized.",
+      "letters": [
+        {
+          "book": "1-corinthians",
+          "name": "1 Corinthians",
+          "note": "Written “To the church of God in Corinth” (1 Corinthians 1:2)."
+        },
+        {
+          "book": "2-corinthians",
+          "name": "2 Corinthians",
+          "note": "Written to the same church (2 Corinthians 1:1)."
+        }
+      ]
+    },
+    {
+      "id": "ephesus",
+      "name": "Ephesus",
+      "places": ["ephesus"],
+      "begun": "paul",
+      "ref": "Acts 19:1-10",
+      "text": "Paul reasons in the synagogue here, then teaches for two years; later he sends for “the elders of the church” to meet him at Miletus (Acts 20:17).",
+      "letters": [
+        {
+          "book": "ephesians",
+          "name": "Ephesians",
+          "note": "Written “To the saints in Ephesus” (Ephesians 1:1). Those words are missing from the earliest surviving manuscripts, and many think the letter was meant to be carried from church to church, with Ephesus its best-known destination; the book page explains."
+        }
+      ]
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "places": ["rome"],
+      "begun": "before",
+      "ref": "Acts 28:14-15",
+      "text": "This church was not begun by Paul. Nobody knows who first founded it; Paul himself never claims it, and when he writes to it he has not yet visited (Romans 1:13). Believers from Rome come out to meet him as he arrives (Acts 28:15).",
+      "letters": [
+        {
+          "book": "romans",
+          "name": "Romans",
+          "note": "Written before Paul had been to Rome (Romans 1:13)."
+        }
+      ]
+    }
+  ],
+  "churchesNote": "The letter to the Colossians was also written to a church Paul did not begin: it had been planted by Epaphras, one of its own people (Colossians 1:7; 4:12). Colossae is not drawn on this map."
+}

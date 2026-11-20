@@ -319,3 +319,80 @@ Deliberately left out of the films: any analogy for the Trinity offered as true 
 | `say` texts | Each is its frame's caption with a bracketed reference left to the caption (or, once, said in words); a verse after a caption is the frame's own verse with its reference in words | Generated from the captions and read; the validator holds every spoken line to the captions' rules and the BSB |
 
 Deliberately left out of the three: the fine-tuning and moral arguments (the answer makes them, but the brief allowed at most one further strand and the contingency argument is enough for six frames; the film says “one reason Christians give”); the kalam and the dates of Craig, Borde, Guth and Vilenkin; any first-person sentence of the Honest Answer (it speaks as James; the film never does); any “pray this prayer”, countdown or fear; any claim not on the site already.
+
+## Paul's travels: the moving map (2026-11-20)
+
+Every place is an id in `client/public/bible/notes/acts/intro.json` (the Acts book page's checked places; their coordinates and sources are in `docs/work/elite/wmap-ledger.md`); Tyre and Sidon come from that file's first map. No place was added. Every “quotation” in `travels.json` is checked against the BSB by `validate-explorer.mjs`; each sentence below was read against the repo's BSB text of its reference.
+
+| Where | Claim | Checked |
+|---|---|---|
+| intro | Acts follows Paul from Antioch in Syria to Rome by road and by sea; Acts does not number the trips (the numbering is a later convenience); "often called his missionary journeys" | Acts 13 to 28 read; no ordinal in Acts; the gloss is the long-established name, used once, by allowance in `scripts/lib/forbidden-language.mjs` |
+| route note | Acts gives the order of places, not the roads or sea lanes; legs marked sea only where Acts says they sailed | Each leg's verb read in the BSB (sailed: 13:4, 13:13, 14:26, 16:11, 18:18-22, 20:6, 20:13-15, 21:1-3, 27:2-8, 28:11-13) |
+| first 1 Antioch | Holy Spirit's words “Set apart for Me Barnabas and Saul for the work to which I have called them.”; prayer, laying on of hands, sent off | BSB Acts 13:1-3 |
+| first 2 Salamis | Seleucia, sailed to Cyprus, preached in the synagogues at Salamis, John (Mark) their helper | BSB Acts 13:4-5; "John, also called Mark" Acts 15:37 |
+| first 3 Paphos | Sergius Paulus wants to hear the word; a sorcerer opposes, is blind for a time; the proconsul believes; Saul also called Paul | BSB Acts 13:6-12 (13:9) |
+| first 4 Perga | sailed to Perga in Pamphylia; John left to return to Jerusalem | BSB Acts 13:13 |
+| first 5 Pisidian Antioch | Paul's synagogue address runs from Egypt to David to Jesus raised; word spread through the region; the city's leading men and women stirred up persecution and drove them out | BSB Acts 13:16-37, 13:49-50 (opponents named by their place in the city, not as a people) |
+| first 6 Iconium | a great number of Jews and Greeks believed; city divided; plan to stone them; fled to Lystra and Derbe | BSB Acts 14:1-6 |
+| first 7 Lystra | man lame from birth healed; taken for gods; “We too are only men, human like you.”; people from Antioch and Iconium won over the crowd; stoned, dragged out, presumed dead; got up when the disciples gathered round | BSB Acts 14:8-20 |
+| first 8 Derbe | preached and made many disciples; the site is not certain | BSB Acts 14:20-21; intro.json's own Derbe line (Kerti Höyük, Devri Şehri) |
+| first 9 back | returned through Lystra, Iconium, Antioch; “We must endure many hardships to enter the kingdom of God.”; elders appointed in each church with prayer and fasting | BSB Acts 14:21-23 |
+| first 10-11 | through Pisidia to Pamphylia, spoke in Perga, down to Attalia; sailed to Antioch; reported how He had opened the door of faith to the Gentiles | BSB Acts 14:24-28 |
+| second 1 | Paul's wish to revisit; sharp disagreement over Mark; Barnabas sails for Cyprus with Mark; Paul chooses Silas | BSB Acts 15:36-40 |
+| second 2 | through Syria and Cilicia; Derbe then Lystra; Timothy well spoken of | BSB Acts 15:41-16:3 |
+| second 3 Troas | Spirit kept them from speaking in Asia; Bithynia closed; down to Troas; “Come over to Macedonia and help us.” | BSB Acts 16:6-10 |
+| second 4 Philippi | Samothrace, Neapolis, Roman colony of Philippi; Lydia and household baptized by the river; Paul and Silas beaten and imprisoned; earthquake; jailer and household believe | BSB Acts 16:11-34 |
+| second 5 Thessalonica | three Sabbaths reasoning from the Scriptures; some Jews, many God-fearing Greeks, leading women believe; mob, uproar; sent away by night | BSB Acts 17:1-10 |
+| second 6 Berea | received the message eagerly, examined the Scriptures daily; many believed; trouble from Thessalonica; sent to the coast | BSB Acts 17:10-14 |
+| second 7 Athens | city full of idols; Areopagus; altar “TO AN UNKNOWN GOD”; the God who made the world; some mock at the resurrection; Dionysius and Damaris believe | BSB Acts 17:16-34 |
+| second 8 Corinth | a year and a half; tentmakers with Aquila and Priscilla; Crispus and household believe; Gallio refuses to judge | BSB Acts 18:1-17 |
+| second 9 Ephesus | sailed with Priscilla and Aquila; reasoned in the synagogue; “I will come back to you if God is willing.” | BSB Acts 18:18-21 |
+| second 10-11 | landed at Caesarea, went up and greeted the church at Jerusalem, went down to Antioch, spent some time there | BSB Acts 18:22-23 (the BSB names Jerusalem) |
+| third 1 | from place to place through the region of Galatia and Phrygia, strengthening the disciples | BSB Acts 18:23 |
+| third 2 Ephesus | through the interior; daily discussions in the lecture hall of Tyrannus for two years; all in the province of Asia heard; the silversmiths' riot in the theatre | BSB Acts 19:1, 19:8-10, 19:23-41 |
+| third 3 Philippi | through Macedonia; three months in Greece (no towns named); a plot; back through Macedonia; sailed from Philippi after the Feast of Unleavened Bread | BSB Acts 20:1-6 |
+| third 4 Troas | first day of the week, breaking bread, Paul talks until midnight; Eutychus falls from the third story, picked up dead; Paul embraces him; taken home alive | BSB Acts 20:7-12 |
+| third 5 Miletus | hurrying for Pentecost; sails past Ephesus; elders sent for; knelt and prayed; wept; would not see his face again | BSB Acts 20:16-38 |
+| third 6 Tyre | Cos, Rhodes, Patara; passed south of Cyprus; seven days with the disciples at Tyre; prayer on the beach with wives and children | BSB Acts 21:1-6 |
+| third 7 Caesarea | Ptolemais; Philip the evangelist; Agabus binds himself with Paul's belt; Paul ready to die for the name of the Lord Jesus | BSB Acts 21:7-14 |
+| third 8 Jerusalem | welcomed gladly; about a week later seized in the temple and arrested; two years at Caesarea, then sent to Rome | BSB Acts 21:17, 21:26-33, 24:27, 25:11-12 |
+| rome 1 | two years at Caesarea; appeal to Caesar; centurion Julius | BSB Acts 24:27; 25:11-12; 27:1 |
+| rome 2 Sidon | Julius treated Paul with consideration, let him visit friends | BSB Acts 27:3 |
+| rome 3 Fair Havens | against the wind; Myra, an Alexandrian ship for Italy; along Crete to Fair Havens; Paul warns of loss; they sail on | BSB Acts 27:4-13 |
+| rome 4 Malta | storm; fourteen days; take courage, no loss of life; ran aground, stern broken up, all safe; “extraordinary kindness.” | BSB Acts 27:14-28:2 |
+| rome 5-6 | three months; Alexandrian ship; Syracuse three days; Rhegium; Puteoli, brothers, a week | BSB Acts 28:11-14 |
+| rome 7 Rome | brothers came as far as the Forum of Appius and the Three Taverns; Paul encouraged, thanked God; two years in a rented house under guard; proclaimed the kingdom boldly and freely | BSB Acts 28:15-31 |
+
+## Churches and letters (2026-11-20)
+
+| Where | Claim | Checked |
+|---|---|---|
+| intro | No years given; the dates of the trips and letters are debated | The site's book pages (Galatians, Philippians, 1 and 2 Thessalonians, 1 and 2 Corinthians, Ephesians, Romans, Colossians) each give their dates as ranges and views; the map gives none, and the validator fails any "AD" or "BC" year in `travels.json` |
+| Antioch | begun by believers scattered after Stephen's death, some speaking to Greeks; a great number turned to the Lord; Barnabas brought Saul; first called Christians; sends Paul out; not begun by Paul | BSB Acts 11:19-26; 13:1-3 |
+| Galatian towns | elders appointed in each church | BSB Acts 14:23 |
+| Galatians | “To the churches of Galatia”; which churches is debated (north or south Galatia) | BSB Galatians 1:2; `notes/galatians/intro.json` date section (both theories) |
+| Philippi | Lydia and household baptized; the jailer and household; Lydia's house, the brothers | BSB Acts 16:14-15, 16:33-34, 16:40; Philippians 1:1 address quoted |
+| Thessalonica | some Jews, many God-fearing Greeks, leading women | BSB Acts 17:4; 1 Thessalonians 1:1 address quoted; 2 Thessalonians 1:1 to the same church |
+| Berea | many believed, with prominent Greek women and men; no NT letter to Berea | BSB Acts 17:12 |
+| Corinth | a year and a half; Crispus; many Corinthians believed and were baptized | BSB Acts 18:8-11; 1 Corinthians 1:2 address quoted; 2 Corinthians 1:1 |
+| Ephesus | synagogue, then two years; “the elders of the church” | BSB Acts 19:8-10, 20:17; Ephesians 1:1 address quoted; "in Ephesus" missing from the earliest manuscripts and the circular-letter view, as `notes/ephesians/intro.json` (setting) words it |
+| Rome | not begun by Paul; nobody knows who founded it; Paul never claims it; not yet visited when he wrote | `notes/romans/intro.json` setting ("Nobody knows who first founded the church; Paul himself never claims it, and he says he has not yet visited (1:13)"); BSB Romans 1:13; Acts 28:15 |
+| Colossae note | planted by Epaphras, one of its own people; not on the map | `notes/colossians/intro.json` ("The church had been planted by Epaphras, one of its own people"); BSB Colossians 1:7, 4:12 |
+
+## Three films (2026-11-20)
+
+| Where | Claim | Checked |
+|---|---|---|
+| did-jesus-come-back-to-life, every frame | Each sentence is the Honest Answer "Did the resurrection actually happen?" (`client/src/data/answers.ts`) turned to the third person or shortened: the case stronger than most have been told; not a proof, history can't prove a miracle; crucified under Pilate, Tacitus who despised Christians recorded it; followers convinced they had seen him alive, early; Paul passes on a summary he received; most scholars, including many with no stake in Christianity, date it within a few years; Paul persecuted the church; James did not believe (John 7:5), later led the Jerusalem church; preaching began in Jerusalem within weeks where the claim was easiest to refute; the empty tomb more disputed; opponents argued how, not whether; the vision theory deserves its due, grief does produce visions, Paul was hunting not mourning, James didn't believe while Jesus lived; each natural explanation covers part and strains at the rest; history can't prove it but can move a person from dismissing to weighing; depends on whether God can act; you can weigh it all and still say no | The answer, side by side |
+| did-jesus-come-back-to-life verses | 1 Corinthians 15:3-5 (from "that Christ died"); John 7:5; Matthew 28:17 | BSB, by the validator (the answer quotes the ESV; the film quotes the BSB) |
+| did-jesus-come-back-to-life, younger level | "more than once, and many of them together" | BSB 1 Corinthians 15:5-7 (more than five hundred at once) |
+| did-jesus-come-back-to-life, frame 7 | Christians believe God raised Jesus in his body and that the whole story stands on it | CLAUDE.md's confessional floor (the bodily resurrection); BSB 1 Corinthians 15:14, 17 |
+| sixty-six-books | The Protestant Bible, the one most English readers hold, has sixty-six books, thirty-nine and twenty-seven, in Hebrew, a little Aramaic and Greek; Roman Catholic and Orthodox Bibles include further books in the Old Testament; many books name no author; the Christian order groups by kind: five books of law, the historical books Joshua to Esther, poetry and wisdom Job to the Song of Solomon, the prophets with four long books before twelve short; the Hebrew Bible has the same books in another order, Law, Prophets, Writings; four Gospels each a portrait of the life, teaching, death and resurrection of Jesus; the letters Romans through Jude, Paul's thirteen first (named here only as letters that name Paul), then Hebrews whose author is not named, then seven more; Revelation an apocalyptic vision; the New Testament writers quote the Old on nearly every page and claim its story reaches its goal in Jesus of Nazareth | `client/public/bible/guides/what-is-the-bible.json`, read side by side; `client/public/bible/books.json` (39 OT, 27 NT) |
+| sixty-six-books shelves | 5, 12, 5, 17 and 4, 1, 21, 1 books | `books.json` in its order: Genesis to Deuteronomy, Joshua to Esther, Job to Song of Solomon, Isaiah to Malachi; Matthew to John, Acts, Romans to Jude, Revelation |
+| sixty-six-books verse | Luke 24:27 (whole) | BSB, by the validator |
+| the-church | The church is the whole company of God's people, gathered by the Spirit around Christ, called to worship God, love one another, and make him known to the world; God saves us into a family, not alone; worship, hear his Word, share the Lord's Supper, help one another follow Jesus all the way home | Family catechism Q46 and Q60 (`client/public/family-catechism.json`) |
+| the-church pictures | one body, many parts, none can say it does not need the others; living stones built into a spiritual house, Christ the stone it rests on; members of God's household; the apostles' teaching, fellowship, breaking of bread, prayer; make disciples of all nations, with you always | BSB 1 Corinthians 12:12, 21; 1 Peter 2:5-7; Ephesians 2:19; Acts 2:42; Matthew 28:19-20 |
+| the-church, where churches differ and care line | Shared: the command to baptize in the threefold name, one Lord; differ on who and how to baptize and how churches are led; no side; the care line on being hurt in a church | The Church and the Spirit stop's own `differ` and `care` (`stops/church.json`), shortened; the gifts question is left to that stop |
+| the-church verses | 1 Corinthians 12:12; 1 Peter 2:5; Acts 2:42; Matthew 28:19-20; Ephesians 4:4-5 (to "one baptism") | BSB, by the validator |
+
+Deliberately left out of the three films: the women's testimony argument (not used anywhere in the Explorer); any first-person sentence of the Honest Answer; the Hume, Ehrman, Wright, Allison and bar Kosiba material (the film points to the answer for the full case); any authorship or date for a biblical book; a count of the Catholic and Orthodox books (the guide gives it); any form of church government, baptism or Supper drawn as the right one.

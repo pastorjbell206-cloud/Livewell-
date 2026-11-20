@@ -168,6 +168,7 @@ const HowToStudy = lazy(() => import("./pages/HowToStudy"));
 const ExplorerMap = lazy(() => import("./pages/explorer/ExplorerMap"));
 const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
+const ExplorerTravels = lazy(() => import("./pages/explorer/ExplorerTravels"));
 const Answers = lazy(() => import("./pages/Answers"));
 const AnswerPage = lazy(() => import("./pages/AnswerPage"));
 // The apologetics library (lib/questions): pending until James reads it, so
@@ -603,6 +604,7 @@ function Router() {
         <Route path="/study/bible" component={StudyBible} />
         <Route path="/study/how-to-study" component={HowToStudy} />
         <Route path="/study/explorer/watch/:slug" component={ExplorerFilm} />
+        <Route path="/study/explorer/pauls-travels" component={ExplorerTravels} />
         <Route path="/study/explorer/:slug" component={ExplorerStop} />
         <Route path="/study/explorer" component={ExplorerMap} />
         <Route path="/study" component={Study} />

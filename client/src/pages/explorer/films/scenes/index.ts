@@ -18,6 +18,9 @@ export const FILM_SCENES: Record<
   "gospel-in-a-minute": () => import("./gospel-in-a-minute"),
   "bible-in-a-minute": () => import("./bible-in-a-minute"),
   "does-god-exist": () => import("./does-god-exist"),
+  "did-jesus-come-back-to-life": () => import("./did-jesus-come-back-to-life"),
+  "sixty-six-books": () => import("./sixty-six-books"),
+  "the-church": () => import("./the-church"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;
