@@ -5457,12 +5457,18 @@ repeating it; the book page was not edited.
 
 ### Sources
 
-All in `bdoor-ledger.md`, "The plain notes on Psalm 42" to "72". 14 web
-searches: 42 (1, the Gethsemane echo), 43 (1, the manuscripts joining 42 and
+All in `bdoor-ledger.md`, "The plain notes on Psalm 42" to "72". Corrected
+on 2026-11-20 to agree with the ledger: 18 ledger rows rest on a web search,
+and they cite these searches by psalm: 42 (the Gethsemane echo; the ledger
+counts it as one search shared with 43), 43 (the manuscripts joining 42 and
 43), 45 (2, the translations of 45:6 and the Targum), 46 (1, "be still" and
-Luther's hymn), 48 (1, Zaphon), 51 (2, 51:5 and 51:11), 63 (1, the morning
-psalm), 68 (2, the cloud-rider title and Ephesians 4:8), 69 (1, the New
-Testament uses and the curses), 72 (2, the Targum and Hammurabi). Scripts over
+Luther's hymn, two rows), 48 (1, Zaphon), 51 (2, 51:5 and 51:11, three rows),
+63 (1, the morning psalm), 68 (2, the cloud-rider title and Ephesians 4:8),
+69 (1, the New Testament uses, 69:5 and the curses, three rows), and 72 (2:
+Hammurabi's laws, in Harper's and King's translations, and the Targum). The
+list first printed here said "14 web searches" and did not give Hammurabi
+its own entry; the ledger's own headings add to 13 or 14, depending on
+whether 42 and 43 are counted apart. Scripts over
 the repository's Hebrew word data checked: the counts of YHWH and Elohim in
 Books One and Two (273 and 49; 28 and 198); tehom in 42:7 and Genesis 1:2;
 nimtsa me'od (46:1); 'imanu and Immanu-el; "take" (49:15, Genesis 5:24,

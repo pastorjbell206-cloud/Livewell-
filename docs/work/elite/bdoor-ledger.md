@@ -6731,3 +6731,54 @@ No modern ruler, party or nation in view.
 ## Book Two complete (2026-11-19)
 
 Psalms 42 to 72 now have plain notes. Next: Psalm 73, the start of Book Three.
+
+## The plain notes on Psalms 73 to 106: Books Three and Four (2026-11-20)
+
+Same lighter shape and strict quotation script as Psalms 42 to 72.
+"Repository deep note" means `client/public/bible/notes/psalms/<n>.json`;
+Hebrew facts come from the repository's word data
+(`client/public/bible/ch/psalms/<n>.json`). Headings were checked by a
+script over the BSB's verse 1 of every psalm.
+
+## The plain notes on Psalm 73 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Psalm 73 opens Book Three; Asaph in the headings of 50 and 73 to 83 | 1-14 | Book page ("Five books"); BSB headings | Script over BSB verse 1 |
+| Asaph a leader of the temple singers in David's day (1 Chronicles 16:7); his family sang on; a psalm of Asaph may come from a later singer of his line | 1-14 | Book page ("Who wrote the psalms"); repository deep note (historical) | Site's own teaching; BSB text |
+| 'akh ("surely", H0389) three times: verses 1, 13, 18 | 1-14 | Repository word data | Script |
+| Well-fed body a mark of wealth; washing hands as a claim of innocence (Psalm 26:6) | 1-14 | Repository deep note (cultural); BSB | Site's own teaching |
+| Job 21:7; Jeremiah 12:1; Job 42:7 (paraphrased); Luke 16:19-31; Matthew 5:8; Luke 12:15, 20; 2 Corinthians 4:18; John 10:28; Romans 8:38-39; Philippians 1:21 | all | BSB | BSB text |
+| What happened in the sanctuary is not said (Scripture, worship, presence): left open | 15-20 | Repository deep note (cultural) | Site's own teaching |
+| Levites had no land; "I am your portion" (Numbers 18:20) | 21-28 | Repository deep note; BSB | BSB text |
+| "Receive" (laqach, H3947) the word of Genesis 5:24; readings of 73:24 (honour in this life, or hope beyond death); the book page's part on Sheol | 21-28 | Repository word data; repository deep note (hard); book page ("Sheol") | Script; stated as views |
+
+Doubt is met, not scolded: the `hard` field of 1-14.
+
+## The plain notes on Psalm 74 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Maskil's meaning uncertain | 1-11 | Book page ("What the headings tell you") | Site's own teaching |
+| Most scholars connect it with 587 or 586 BC; a later attack suggested; "burned to the ground" fits Babylon best; a later singer of Asaph's line | 1-11 | Book page ("When they were written"); repository deep note (historical); 2 Kings 25:9 | Site's own teaching; BSB text. The Seleucid king and the year 167 BC not repeated (not verified this run) |
+| A temple thought the house of a god; its fall read as the god's defeat; banners as claims of victory | 1-11 | Repository deep note (cultural) | Site's own teaching |
+| Ugarit: Baal defeats a seven-headed sea monster, Litan or Lotan, linked by scholars with Leviathan; the sea as chaos; the psalm gives the victory to the LORD | 12-23 | Reformation Study Bible note on Ps 74:14 (biblegateway.com); biblicaltraining.org "sea monster"; NET Bible note (biblia.com) | Search. The date of the tablets not given (sources differ) |
+| Red Sea or creation, or both | 12-23 | Repository deep note (hard) | Stated as readings |
+| Lamentations 2:7; Matthew 24:2; John 2:19, 21; Isaiah 27:1; 51:10; Revelation 21:1; Exodus 14:21 | all | BSB | BSB text |
+
+No modern nation in view; anger in the prayer pointed to the book page's part on the cursing psalms.
+
+## The plain notes on Psalm 75 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Do Not Destroy" heads 57, 58, 59 and 75; probably a tune | BSB headings; repository deep note | Script |
+| Placed after 74 as God's answer: a possible reading of the arrangement | Repository deep note (historical) | Stated as "may have meant" |
+| The horn as strength (1 Samuel 2:1); the cup of judgment in the prophets; dregs | Repository deep note (cultural); BSB | BSB text |
+| 1 Samuel 2:7; Luke 1:52; Matthew 26:39 (Christians read the cup as judgment borne for others: a reading) | BSB | BSB text |
