@@ -9884,3 +9884,29 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Handed to Satan: removal from fellowship; bodily suffering some think; purpose correction | 18-20 | Chapter deep note `hard`, `cultural` | Repository. No side |
 | Church practices of discipline; misuse; police (Romans 13:4); word to the hurt | 18-20 | 1-corinthians/plain/5.json | Word for word, except its sentence on ‘a church protected a wrongdoer’ |
 | Psalm 31:24; Proverbs 4:23; Psalm 32:5; 34:18 | 18-20 | BSB | BSB text |
+
+## The plain notes on 1 Timothy 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nero if the early 60s; Christians a suspected minority; Jeremiah 29:7 | 1-7 | Chapter deep note `historical` | Repository. Josephus on sacrifices for the emperor not repeated |
+| 2:5-6 perhaps an early creed | 1-7 | Chapter deep note `literary` | Repository |
+| Mesitēs; antilutron only here, a strengthened form of Mark 10:45's word | 1-7 | Chapter deep note `words` (G3316, G0487) | Repository |
+| Prayer for rulers no party lesson; pointer to the context guide | 1-7 | context/guides (the-kingdom-is-not-a-platform) | Repository; no factual claim |
+| ‘Everyone’: all without exception; all kinds (Reformed); universalist reading, rejected by most; no side | 1-7 | Chapter 4 deep note `hard` (on 4:10); standard descriptions | Repository; stated generally. No side |
+| Ezra 6:10; Proverbs 21:1; Deuteronomy 6:4; Isaiah 45:22; Ezekiel 18:32; Job 9:33; Isaiah 53:12 | 1-7 | BSB | BSB text |
+| Raised hands the common posture; holy hands, no anger | 8-10 | Chapter deep note `cultural` | Repository |
+| Moral writers on hair, gold, pearls, costly clothes; wealth display; rich and poor women | 8-10 | Chapter deep note `cultural` | Repository |
+| Kosmeō, to arrange, adorn | 8-10 | Standard lexicons | Standard |
+| Psalm 141:2; 24:3-4; Isaiah 3:16; Proverbs 31:30; 1 Samuel 16:7 | 8-10 | BSB | BSB text |
+| Women taught when many thought not; quietness the learner's posture | 11-14 | Chapter deep note `cultural` | Repository |
+| Authenteō only here, rare before; ‘quiet’ word family as in verse 2 | 11-14 | Chapter deep note `words` (G0831), `literary` | Repository |
+| Ephesus setting: 4:3; 5:13, 15; 2 Timothy 3:6 | 11-14 | Chapter deep note `historical` | Repository; BSB text |
+| Agreement; complementarian (two tasks of one kind, creation order, 1 Corinthians 11:8-9, chapter 3); egalitarian (domineer, Ephesus false teaching, Eve as picture, present tense, 1 Corinthians 11:5, Acts 18:26, Romans 16:1, 7); Chrysostom's reading of verse 14 rejected by most today (Chrysostom not named); man/woman also husband/wife; pointers to the chapter note and the Acts 18:24-28 note; no side | 11-14 | Chapter deep note `hard`; acts/plain/18.json | Repository wording. No side |
+| Genesis 2:7, 18; 3:13; Judges 4:4; 2 Kings 22:14 | 11-14 | BSB | BSB text |
+| Verse 15 singular to plural; ‘the childbearing’; teknogonia only here | 15 | Chapter deep note `hard`, `words` (G5042) | Repository |
+| Readings: the Saviour's birth (Genesis 3:15); safety in childbirth; family life against those who forbade marriage | 15 | Chapter deep note `hard` | Repository. No side |
+| Childless care lines | 15 | genesis/plain/30.json | Word for word (five sentences) |
+| Genesis 3:15-16; 1 Samuel 1:27; Isaiah 56:5 | 15 | BSB | BSB text |
