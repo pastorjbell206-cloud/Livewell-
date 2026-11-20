@@ -9390,3 +9390,29 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Colony; politeuma; emperor often hailed as saviour | 17-21 | Deep note `cultural`, `words` | Repository |
 | Nationalist readings an error, no one named; the cross belongs to no flag | 17-21 | CLAUDE.md guardrails; Ephesians book page | No factual claim |
 | Psalm 49:15; 17:15; Jeremiah 29:7 | 17-21 | BSB | BSB text |
+
+## The plain notes on Philippians 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Stephanos a victor's wreath | 1-3 | Standard lexicons | Standard |
+| Euodia and Syntyche leaders; ‘labored with’ the athletes' word of 1:27; Paul takes no side; Lydia and the women first converts (Acts 16:13-15) | 1-3 | Deep note `cultural`; BSB | Repository |
+| ‘Agree’ the same ‘mind’ verb as 2:2 and 2:5 | 1-3 | Greek text in the repository (phroneō in 2:2, 2:5, 4:2) | Read from the chapter files |
+| True yokefellow unknown (Epaphroditus, Luke, Timothy, the church); Clement otherwise unknown | 1-3 | Deep note `cultural`, `historical` | Repository |
+| Exodus 32:32; Daniel 12:1; Psalm 133:1 | 1-3 | BSB | BSB text |
+| ‘The Lord is near’ in place or time | 4-9 | Standard commentaries | Stated as two readings |
+| Phroureō a soldier's word, to guard | 4-9 | Standard lexicons | Standard |
+| Verse 8 like the virtue lists of the moral teachers | 4-9 | Deep note `literary` | Repository |
+| 4:6 not a switch; practice; peace promised, not every request; Paul anxious (2:27-28; 2 Corinthians 11:28); medical help not forbidden | 4-9 | wisdom/deep/anxiety.json `misread` | Repository wording, largely word for word |
+| Care lines: "This passage is not a rebuke ... not blame" and "A doctor, a counselor, medicine, one trusted person who will stay" (matthew/plain/6.json, without its phone number); self-harm line (2-corinthians/plain/1.json) | 4-9 | Repository | Word for word; no phone number |
+| Psalm 55:22; 145:18; Isaiah 26:3; Habakkuk 3:17-18 | 4-9 | BSB | BSB text |
+| Autarkēs a Stoic word; the verb ‘learned the secret’ used of initiation | 10-14 | Deep note `cultural` | Repository |
+| 4:13 in context; printed on sports shirts and wristbands; pointer to the context guide | 10-14 | Context guide philippians-4-13-in-context; repository `reading`; CLAUDE.md worked example | Repository |
+| Deuteronomy 8:3; Proverbs 30:8-9; Psalm 23:1 | 10-14 | BSB | BSB text |
+| Gifts carried expectations of return | 15-23 | Deep note `cultural`; context guide patronage-and-grace | Repository |
+| Household of Caesar the imperial staff of slaves and freedmen | 15-23 | Chapter 4 deep note `historical` | Repository |
+| Macedonian churches gave out of poverty (2 Corinthians 8:1-2) | 15-23 | BSB | BSB text |
+| Prosperity teaching an error, no one named; giving care line | 15-23 | 2-corinthians/plain/9.json | Word for word, no phone number |
+| Exodus 29:18; Genesis 22:14; Deuteronomy 15:10; Psalm 34:10 | 15-23 | BSB | BSB text |
