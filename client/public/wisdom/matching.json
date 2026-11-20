@@ -2615,6 +2615,30 @@
     "loneliness",
     "deep-friendship"
    ]
+  },
+  "reconciliation": {
+   "phrases": [
+    "make things right",
+    "make peace with",
+    "want to reconcile",
+    "fix our friendship",
+    "mend the relationship",
+    "restore the relationship",
+    "patch things up",
+    "reach out after years",
+    "repair the relationship",
+    "make amends",
+    "say im sorry after all these years",
+    "reconcile with my",
+    "make up after a fight"
+   ],
+   "not": [],
+   "related": [
+    "estrangement",
+    "forgiveness",
+    "apologizing-well",
+    "conflict-with-others"
+   ]
   }
  }
 }
