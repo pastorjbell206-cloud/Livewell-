@@ -11784,3 +11784,23 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Daniel 7:13; Joel 3:13; Isaiah 63:3 | 14-20 | BSB | BSB text |
 
 Cut before publishing: ‘Blessed are the dead’ quoted only in part, and the count of the book's sayings beginning ‘Blessed’, so that the word stays out of the prose; universal restoration (named in the doctrine study, pointed to rather than set out, since the deep note gives two views).
+
+## The plain notes on Revelation 15 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shortest chapter; worship frames each series; the bowls set up for chapter 16 | 1-4 | revelation/15.json `story`, `literary` | Repository |
+| Teleō, completed (John 19:28); wrath as settled opposition to evil | 1-4 | revelation/15.json `words` (G5055); revelation/plain/6.json (12-17) | Repository |
+| The sea of glass (4:6) mixed with fire; the Red Sea shore; the exodus kept at Passover; a new exodus hoped for under Rome | 1-4 | revelation/15.json `historical`, `cultural` | Repository |
+| The only naming of Moses; one story of rescue; Christ our Passover lamb (1 Corinthians 5:7) | 1-4 | revelation/15.json `words` (G3475), `christ` | Repository |
+| The song praises God only, not the singers or the Lamb; the hope of the nations | 1-4 | revelation/15.json `christ`, `doctrines` (mission) | Repository |
+| Exodus 15:1, 11; Psalm 111:2; Deuteronomy 32:4; Jeremiah 10:7; Psalm 86:9; 1 Corinthians 5:7 | 1-4 | BSB | BSB text |
+| The tabernacle of the Testimony; the tablets in the ark; no tabernacle or temple standing; the heavenly original (Hebrews 8:5) | 5-8 | revelation/15.json `historical` | Repository |
+| Priestly linen and golden sashes (1:13); golden bowls for offerings; 5:8's bowls of prayer and the answer to the saints' prayers (6:10) | 5-8 | revelation/15.json `cultural`, `words` (G5357) | Repository |
+| Smoke and glory: the tabernacle (Exodus 40:34-35), Solomon's temple (1 Kings 8:10-11), Isaiah 6:4; holiness as unapproachable majesty | 5-8 | revelation/15.json `cultural`, `doctrines` (holiness) | Repository |
+| Sequence or retelling of seals, trumpets and bowls (Victorinus of Pettau); the first four bowls match the first four trumpets in full measure; no side | 5-8 | revelation/plain/8.json (1-5 `hard`); revelation/16.json `story`, `literary` | Repository, no side |
+| Exodus 40:35; 1 Kings 8:11; Isaiah 6:4; Exodus 25:16 | 5-8 | BSB | BSB text |
+
+Cut before publishing: ‘wrath ... does not go on for ever’ and ‘God's wrath has an end’, which could be read as taking a side on final judgment (narrowed to the series of plagues having an end); the date of Psalm 139:14 as a source for ‘wonderful works’ (the deep note gives it, but the line was not needed).
