@@ -7577,3 +7577,26 @@ One web search.
 | No modern nation in view; nothing against the people of any land today | 7-9 | Site's stance | Stated plainly |
 
 Care line for rage (heard; hand it to God; a pastor, a friend, a counsellor; danger or fear of hurting someone: help today; Find Help). Lamentations 4:10 not quoted (care). Cut: Nebuchadnezzar's 597 deportation; the rabbinic reading of Edom as Rome.
+
+## The plain notes on Psalms 138 and 139 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 138 to 145 the last run of psalms headed "of David" (146 to 150 open with Hallelujah) | 138 | BSB headings | Script over 138-150 |
+| "Before the gods": the nations' gods, the heavenly beings, or human rulers | 138 | Repository deep note (cultural) | Stated as readings. The Septuagint's "angels" not given |
+| Praying toward the temple: 1 Kings 8:29; Daniel 6:10 | 138 | BSB | BSB text |
+| 138:8's refrain as Psalm 136's | 138 | BSB | BSB text compared |
+| Luke 1:51-52; James 4:6; Philippians 1:6 | 138 | BSB | BSB text |
+| The four directions as the known world; the far sea the Mediterranean; Sheol and the book page | 139 | Repository deep note (cultural); book page ("Sheol") | Site's own teaching |
+| Jonah 1:3; Jeremiah 23:24; Hebrews 4:13; Acts 17:27; Romans 8:39 | 139 | BSB | BSB text |
+| Knitting and weaving pictures; "depths of the earth" probably the womb; Job 10:11 | 139 | Repository deep note (cultural); BSB | Stated as "probably" |
+| Jeremiah 1:5; Ephesians 2:10; Matthew 10:30; John 9:3 | 139 | BSB | BSB text |
+| Every person, with any disability or illness, made by God and precious | 139 | Brief's instruction; John 9:3 | Stated plainly |
+| The abortion debate: what the text says; Christians apply it with care and do not all draw every conclusion alike; no political position, party or law | 139 | Brief's instruction | Stated plainly |
+| Care line for grief or guilt about a pregnancy or the loss of a child (gentleness, a trusted pastor or friend, Find Help) | 139 | Site's care rule | Stated plainly |
+| A falsely accused person (some scholars); "hate" as reject; "perfect hatred" as complete refusal to side with evil; pointer to the book page's cursing psalms | 139 | Repository deep note (historical, hard); book page | Stated as readings |
+| Psalm 26:2; 1 Corinthians 4:4; Matthew 5:44; Romans 12:9 | 139 | BSB | BSB text |
+
+Cut: the Aramaic-like words in 139 and the dating debate (not needed); the Septuagint heading for 138; C. S. Lewis (deep note).
