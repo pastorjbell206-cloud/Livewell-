@@ -9584,3 +9584,27 @@ and the strict check.
 Cut: Malherbe and Dio Chrysostom by name; the expulsion of Jews from Rome under Claudius
 as a reading of 2:16; Darby and the Left Behind novels by name; the Roman ‘pax and
 securitas’ slogan (kept for the chapter).
+
+## The plain notes on 1 Thessalonians 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Very likely the oldest surviving letter; Jesus named with the Father (verse 1) | 1-3 | Repository intro `overview`; chapter deep note `christ` | Repository |
+| ‘Grace and peace’ a Greek and a Jewish greeting | 1-3 | Earlier ledger (Romans 1; Ephesians 1) | Ledger |
+| Kopos, hard tiring toil; endurance under a load | 1-3 | Standard lexicons | Standard |
+| Numbers 6:26; Psalm 130:5; Isaiah 40:31; Leviticus 19:18 | 1-3 | BSB | BSB text |
+| Election known by its fruit, not speculation | 4-8 | Chapter deep note `words` (G1589) | Repository |
+| Plērophoria, full assurance | 4-8 | Standard lexicons | Standard |
+| The mob, Jason, sent away by night (Acts 17:5-10); hostility from neighbours (2:14); not honouring the gods looked disloyal | 4-8 | BSB; chapter deep note `cultural` | BSB text; repository |
+| Imitation of a teacher's life | 4-8 | Chapter deep note `story`, `literary` | Repository, stated generally |
+| Macedonia north, Achaia south with Corinth its capital; news along the Via Egnatia | 4-8 | Chapter deep note `historical` | Repository |
+| Election: Reformed, Arminian and Wesleyan, corporate; no side; pointers to the Ephesians 1:3-14 note and the Honest Answer | 4-8 | ephesians/plain/1.json; Ephesians book page | Repository wording. No side |
+| Deuteronomy 7:7-8; Isaiah 55:11; 49:6; 45:22 | 4-8 | BSB | BSB text |
+| 9-10 perhaps echo early missionary preaching ("many scholars") | 9-10 | Chapter deep note `literary` | Repository |
+| Gods in family meals, guilds, festivals, honours to Rome; thought to protect the city | 9-10 | Chapter deep note `cultural` | Repository |
+| Anamenō used only here in the New Testament | 9-10 | Chapter deep note `words` (G0362) | Repository |
+| Wrath and the Day of the Lord in the prophets | 9-10 | Chapter deep note `cultural` | Repository |
+| Psalm 115:4-5; Jeremiah 10:10; 1 Samuel 7:3; Jeremiah 16:19; Isaiah 25:9; Zephaniah 1:15 | 9-10 | BSB | BSB text |
+| Idols today; doctrine study pointer | 9-10 | Chapter deep note `doctrines` (idolatry); doctrines.json | Repository |
