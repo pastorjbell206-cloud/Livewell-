@@ -149,6 +149,8 @@ describe("WisdomFinder", () => {
     const deep = area.topics.filter((id) => byId.get(id)?.deep);
     const btn = screen.getByRole("button", { name: new RegExp(`^${area.name}`) });
     expect(btn.textContent).toContain(`${deep.length} written in full of ${area.topics.length}`);
+    // Name and count are read as two phrases, not run together.
+    expect(btn.textContent).toContain(`${area.name}, ${deep.length}`);
     expect(btn.getAttribute("aria-expanded")).toBe("false");
     const panel = document.getElementById(btn.getAttribute("aria-controls") ?? "")!;
     expect(panel.hidden).toBe(true);

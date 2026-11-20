@@ -249,6 +249,8 @@ export default function WisdomFinder() {
                       <li key={a.id}>
                         <button type="button" className="wf-browse__area" aria-expanded={open} aria-controls={`wf-browse-${a.id}`} onClick={() => setBrowse(open ? null : a.id)}>
                           <span className="wf-browse__name">{a.name}</span>
+                          {/* So a screen reader says "name, 16 written in full of 16", not the two run together. */}
+                          <span className="sr-only">, </span>
                           <span className="wf-browse__count">
                             {list.length} written in full of {a.topics.length}
                           </span>
