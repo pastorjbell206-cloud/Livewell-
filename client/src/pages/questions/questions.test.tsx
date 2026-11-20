@@ -2,9 +2,11 @@
  * The apologetics library's pages (pages/questions, lib/questions) read from
  * the committed files in client/public/questions:
  * the data loads in the shapes the pages expect; the room lists the plan's ten
- * areas with only the pilot area linked; a pending piece renders word for word
- * with noindex and the review line, its argument as a numbered list with the
- * weight-bearing step marked; and nothing outside the library links it.
+ * areas with only the text area linked, and is live with it (James,
+ * 2026-11-20); a live piece renders word for word with no review line and no
+ * noindex, its argument as a numbered list with the weight-bearing step marked;
+ * a pending piece keeps noindex and the review line; and nothing outside the
+ * library links a pending page.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -48,11 +50,13 @@ const index = read<QIndex>("questions/index.json");
 const text = index.areas.find((a) => a.slug === "text")!;
 
 describe("the questions library's data", () => {
-  it("lists the plan's ten areas, and the pilot area's four pieces, all pending", () => {
+  it("lists the plan's ten areas; the text area and its four pilot pieces are live, the later pieces pending", () => {
     expect(index.areas.map((a) => a.n)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-    expect(index.roomLive).toBe(false);
-    expect(text.pieces.map((p) => p.slug)).toEqual(["more-variants-than-words", "copies-of-copies", "passages-not-in-the-earliest-bibles", "did-scribes-make-jesus-more-divine"]);
-    expect(text.pieces.every((p) => p.status === "pending" && !p.live)).toBe(true);
+    expect(index.roomLive).toBe(true);
+    expect(text.live).toBe(true);
+    expect(text.pieces.filter((p) => p.live).map((p) => p.slug)).toEqual(["more-variants-than-words", "copies-of-copies", "passages-not-in-the-earliest-bibles", "did-scribes-make-jesus-more-divine"]);
+    expect(text.pieces.filter((p) => !p.live).every((p) => p.status === "pending")).toBe(true);
+    expect(text.pieces.some((p) => !p.live)).toBe(true);
     expect(index.areas.filter((a) => a.pieces.length > 0).map((a) => a.slug)).toEqual(["text"]);
   });
 
@@ -75,37 +79,39 @@ describe("the questions library's data", () => {
 });
 
 describe("the room", () => {
-  it("lists ten areas, links only the pilot area, and says it is not yet published", async () => {
+  it("lists ten areas, links only the text area, and is published", async () => {
     at("/questions", <QuestionsRoom />);
     await waitFor(() => expect(document.querySelectorAll(".qx-areas > li")).toHaveLength(10));
     const links = Array.from(document.querySelectorAll(".qx-areas a")).map((a) => a.getAttribute("href"));
     expect(links).toEqual(["/questions/text"]);
     expect(screen.getAllByText("Being written")).toHaveLength(9);
     expect(screen.getByText("4 pieces")).toBeInTheDocument();
-    expect(screen.getByText(REVIEW_LINE)).toBeInTheDocument();
-    await waitFor(() => expect(robots()).toContain("noindex"));
+    expect(screen.queryByText(REVIEW_LINE)).toBeNull();
+    expect(robots()).not.toContain("noindex");
   });
 });
 
 describe("the area", () => {
-  it("opens with its own text and lists its four pieces", async () => {
+  it("opens with its own text and lists only its four live pieces", async () => {
     at("/questions/text", <QuestionsArea />);
     expect(await screen.findByRole("heading", { level: 1, name: "Can we trust the text of the New Testament?" })).toBeInTheDocument();
     await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(4));
-    expect(screen.getByText(REVIEW_LINE)).toBeInTheDocument();
+    const listed = Array.from(document.querySelectorAll(".qx-pieces a")).map((a) => a.getAttribute("href"));
+    for (const p of text.pieces.filter((x) => !x.live)) expect(listed).not.toContain(`/questions/text/${p.slug}`);
+    expect(screen.queryByText(REVIEW_LINE)).toBeNull();
     expect(screen.getByText("Autograph")).toBeInTheDocument();
   });
 });
 
-describe("a pending piece", () => {
-  it("renders the short answer, the contents, the steps with the weight marked, the reading lists, noindex and the review line", async () => {
+describe("a piece", () => {
+  it("live: renders the short answer, the contents, the steps with the weight marked and the reading lists, with no review line and no noindex", async () => {
     const piece = read<QPiece>("questions/text/passages-not-in-the-earliest-bibles.json");
     at("/questions/text/passages-not-in-the-earliest-bibles", <QuestionPiece />);
     expect(await screen.findByRole("heading", { level: 1, name: piece.question })).toBeInTheDocument();
     await waitFor(() => expect(document.querySelector(".qx-short")).not.toBeNull());
     expect(document.querySelector(".qx-short")?.textContent).toContain("The last twelve verses of Mark (16:9-20)");
-    expect(screen.getByText(REVIEW_LINE)).toBeInTheDocument();
-    await waitFor(() => expect(robots()).toContain("noindex"));
+    expect(screen.queryByText(REVIEW_LINE)).toBeNull();
+    expect(robots()).not.toContain("noindex");
 
     const contents = screen.getByRole("navigation", { name: "In this piece" });
     const hrefs = within(contents).getAllByRole("link").map((a) => a.getAttribute("href"));
@@ -121,6 +127,14 @@ describe("a pending piece", () => {
     expect(screen.getByRole("heading", { name: "Read the other side" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Read further" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Mark 16/ })).toHaveAttribute("href", "/study/bible/mark/16");
+  });
+
+  it("pending: says noindex and carries the review line", async () => {
+    const pending = text.pieces.find((p) => !p.live)!;
+    at(`/questions/text/${pending.slug}`, <QuestionPiece />);
+    expect(await screen.findByRole("heading", { level: 1, name: pending.question })).toBeInTheDocument();
+    expect(await screen.findByText(REVIEW_LINE)).toBeInTheDocument();
+    await waitFor(() => expect(robots()).toContain("noindex"));
   });
 
   it("prints every paragraph of its prose", async () => {
@@ -141,14 +155,19 @@ describe("the claims index", () => {
   it("lists each claim with its work and the piece that answers it", async () => {
     at("/questions/claims", <QuestionsClaims />);
     expect(await screen.findByText("The Johannine Comma")).toBeInTheDocument();
-    expect(document.querySelectorAll(".qx-claims li")).toHaveLength(index.claims.length);
+    expect(document.querySelectorAll(".qx-claims li")).toHaveLength(index.claims.filter((c) => c.live).length);
     expect(screen.getAllByRole("link", { name: /Two famous passages/ })[0]).toHaveAttribute("href", "/questions/text/passages-not-in-the-earliest-bibles");
   });
 });
 
 describe("nothing pending is linked from outside the library", () => {
-  it("is not in the site catalogue (the menus)", () => {
-    expect(JSON.stringify([DOORS, allEntries()])).not.toMatch(/"\/questions/);
+  const live = new Set(["/questions", "/questions/claims", ...index.areas.filter((a) => a.live).map((a) => `/questions/${a.slug}`), ...index.areas.flatMap((a) => a.pieces.filter((p) => p.live).map((p) => `/questions/${a.slug}/${p.slug}`))]);
+  const pendingPaths = index.areas.flatMap((a) => [...(a.live ? [] : [`/questions/${a.slug}`]), ...a.pieces.filter((p) => !p.live).map((p) => `/questions/${a.slug}/${p.slug}`)]);
+
+  it("the site catalogue (the menus) links only live library pages", () => {
+    const linked = Array.from(JSON.stringify([DOORS, allEntries()]).matchAll(/"(\/questions[^"]*)"/g), (m) => m[1]);
+    expect(linked).toContain("/questions");
+    for (const h of linked) expect(live.has(h), h).toBe(true);
   });
 
   it("is linked from no page or data file outside the library", () => {
@@ -158,7 +177,8 @@ describe("nothing pending is linked from outside the library", () => {
         const p = path.join(dir, e.name);
         if (e.isDirectory()) { if (!p.endsWith(path.join("pages", "questions"))) walk(p); continue; }
         if (!/\.(tsx?|json)$/.test(e.name) || /\.test\.tsx?$/.test(e.name) || p.endsWith("App.tsx") || p.endsWith(path.join("lib", "questions.ts"))) continue;
-        if (/(?<![A-Za-z0-9_/}.-])\/questions(?=["'`/#?)\s]|$)/m.test(fs.readFileSync(p, "utf8"))) hits.push(path.relative(SRC, p));
+        const src = fs.readFileSync(p, "utf8");
+        for (const q of pendingPaths) if (new RegExp(`(?<![A-Za-z0-9_/}.-])${q.replace(/[/-]/g, "\\$&")}(?=["'\`#?)\\s]|$)`, "m").test(src)) hits.push(`${path.relative(SRC, p)} ${q}`);
       }
     };
     walk(SRC);

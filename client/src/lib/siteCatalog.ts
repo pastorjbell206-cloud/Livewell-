@@ -200,6 +200,13 @@ export const DOORS: Door[] = [
       },
       { id: "questions.skeptics", name: "For skeptics", line: "Where to start if you do not believe, or are not sure.", href: "/skeptics", icon: "ShieldQuestion" },
       {
+        id: "questions.case", name: "The case for the faith", line: "The hard objections at full strength, with the evidence and the argument.", href: "/questions", icon: "Library",
+        inside: [
+          { id: "questions.text", name: "Can we trust the text of the New Testament?", line: "Manuscripts, variants and what the evidence shows.", href: "/questions/text", icon: "Library" },
+          { id: "questions.claims", name: "Look up a claim", line: "Each claim the library answers, with the page that answers it.", href: "/questions/claims", icon: "Search" },
+        ],
+      },
+      {
         id: "questions.believe", name: "What Christians believe", line: "Short studies of what the Bible teaches, one belief at a time.", href: "/study/bible/doctrines", icon: "Lightbulb", count: { n: 62, of: "studies" },
         inside: [
           { id: "questions.glossary", name: "Theology glossary", line: "The words theology uses, in plain terms.", href: "/theology/glossary", icon: "BookMarked" },
