@@ -13,7 +13,8 @@
  *   the table, the Jordan, the garden, the hiding, the cross on the hill,
  *   the hillside in the wind, the seed and the harvest.
  *
- * Mustard is kept for the map's one mark (where you are), so no emblem uses it.
+ * Mustard is kept for the map's one mark (where you are), so no stop's emblem
+ * uses it; a film's own emblem may carry one gold mark, as its drawing does.
  */
 import { useId, type ReactNode } from "react";
 import { PlateSvg, type Drawing } from "@/components/art/PlateSvg";
