@@ -7825,3 +7825,24 @@ Cut: Josephus on the AD 19 expulsion; the chiasm named as such (described as "a 
 | Readings of "uphold the law" (Genesis's witness; the Spirit, 8:4; the moral law as guide) | 27-31 | Standard readings | Stated as readings |
 
 Cut: the "Romans road" and other popular uses of 3:23; Anselm and Abelard by name (seen only in secondary summaries); "Christus Victor" claimed as the view of named fathers.
+
+## The plain notes on Romans 4 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sirach (second century BC): Abraham kept the law of the Most High, found faithful when tested; 1 Maccabees 2:52 ties Genesis 15:6 to faithfulness when tested (Genesis 22) | 1-8 | Sirach 44:20; 1 Maccabees 2:52 | Search: biblegateway.com and biblestudytools.com (1 Maccabees 2:52); ascensionpress.com (Sirach 44); cejsh.icm.edu.pl (Nawrot). Paraphrased; repository deep note (`historical`) |
+| Logizomai a bookkeeping word, used again and again in the chapter | 1-8 | Repository deep note (`cultural`) | Repository |
+| Exodus 23:7; Proverbs 17:15; Psalm 32:1-2 (Paul follows the Greek); the shared-word method of reading | 1-8 | BSB; repository deep note | BSB text; repository |
+| Paul and James (James 2:21; Galatians 5:6); Genesis 15:1-6 plain note pointed to | 1-8 | Repository deep note (`hard`); Genesis 15 plain note | Stated as readings |
+| Genesis 15 before 17; Ishmael born at 86 (16:16), circumcised at 13 (17:24-25): more than thirteen years | 9-12 | BSB | BSB text |
+| A seal confirming a document or ownership | 9-12 | Standard | General |
+| Colossians 2:11-12; infant and believer's baptism as differing church practice | 9-12 | BSB; Acts 2 plain note (churches differ) | Stated as practices, no side |
+| Heir of the world; Genesis 12:3; 17:5; 22:18; Genesis 1:3; Isaiah 48:13 | 13-17 | BSB | BSB text |
+| Romans 7:12-13 on the law holy and sin shown as sin | 13-17 | BSB | BSB text |
+| Genesis 15:5; 16; 17:17; 18:12, 14; 21:2; Hebrews 11:12 | 18-25 | BSB | BSB text |
+| Isaiah 53:12 behind 4:25 ("many readers"); the Greek of Isaiah has the servant "handed over" (paredothē) because of their sins | 18-25 | Septuagint Isaiah 53:12 | Standard (Rahlfs text); stated as "many readers hear" |
+| Paradidōmi in 1:24-28 and 4:25 | 18-25 | Repository deep note (Romans 1 `words`) | Repository |
+
+Cut: the Amidah's "who gives life to the dead" (not checked); later rabbinic tradition that Abraham kept the whole law (deep note; not checked).
