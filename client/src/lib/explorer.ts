@@ -37,7 +37,8 @@ export interface StopSummary {
 }
 
 export interface ThreadStop {
-  state: "near" | "apart";
+  /** One of the states the thread's key names ("near" or "apart" for the dwelling thread). */
+  state: string;
   line: string;
   ref: string;
 }
@@ -47,9 +48,16 @@ export interface Thread {
   name: string;
   status: "finished" | "coming";
   line: Leveled;
-  key?: { near: string; apart: string };
+  /** The thread's own states, in the order the key lists them: state → what its line means. */
+  key?: Record<string, string>;
+  /** The states drawn as a broken line (default: "apart"). Every other state is solid. */
+  broken?: string[];
   stops?: Record<string, ThreadStop>;
 }
+
+/** Is this state of the thread drawn as a broken line? */
+export const isBrokenState = (thread: Thread | undefined, state: string) =>
+  (thread?.broken ?? ["apart"]).includes(state);
 
 export interface Link {
   label: string;
@@ -159,7 +167,8 @@ export type Activity =
       kind: "order";
       title: string;
       prompt: string;
-      items: { id: string; text: string; ref: string }[];
+      /** `when` (a date) and `then` (one line) show once the item is in its place (the Return). */
+      items: { id: string; text: string; ref: string; when?: string; then?: string }[];
       start: string[];
     }
   | {
@@ -175,6 +184,8 @@ export type Activity =
       }[];
       /** Said when every pair is right (Abraham's default names three promises). */
       finish?: string;
+      /** What each left-hand line is called (default "promise"; the New Creation's are pictures). */
+      noun?: string;
     }
   | {
       kind: "reveal";

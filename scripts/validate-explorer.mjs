@@ -294,7 +294,12 @@ for (const { file, stop: s } of stops) {
     ids(a.items ?? []);
     if (!Array.isArray(a.items) || a.items.length < 3)
       fail(`${w} activity`, "an order needs three items or more");
-    for (const it of a.items ?? []) refRule(`${w} activity ${it.id}`, it.ref);
+    for (const it of a.items ?? []) {
+      refRule(`${w} activity ${it.id}`, it.ref);
+      for (const k of ["when", "then"])
+        if (k in it && !(typeof it[k] === "string" && it[k].trim()))
+          fail(`${w} activity ${it.id}`, `"${k}" must be a line of text`);
+    }
     const want = (a.items ?? []).map(x => x.id);
     const start = a.start ?? [];
     if (
@@ -317,6 +322,8 @@ for (const { file, stop: s } of stops) {
       if (!p.kept)
         fail(`${w} activity ${p.id}`, "needs where the promise is kept");
     }
+    if ("noun" in a && !(typeof a.noun === "string" && /^[a-z ]+$/.test(a.noun)))
+      fail(`${w} activity`, `"noun" must be a plain lowercase word`);
   } else if (a.kind === "walk") {
     ids(a.steps ?? []);
     if (!Array.isArray(a.steps) || a.steps.length < 3)
@@ -400,17 +407,31 @@ for (const t of threads) {
   if (!t.name) fail(w, "needs a name");
   levelPair(`${w} line`, t.line);
   if (t.status === "finished") {
-    if (!t.key?.near || !t.key?.apart)
-      fail(w, "needs the key for its two kinds of line");
+    // A thread names its own states in its key (the dwelling thread: near
+    // and apart); `broken` lists the ones drawn as a broken line, by default
+    // "apart". Every state a stop uses must be one the key names.
+    const states = Object.keys(t.key ?? {});
+    if (states.length < 2 || states.some(k => !(typeof t.key[k] === "string" && t.key[k].trim())))
+      fail(w, "needs a key naming at least two states, each with what its line means");
+    const broken = t.broken ?? ["apart"];
+    if (!Array.isArray(broken)) fail(w, "broken must be a list of states");
+    else if ("broken" in t)
+      for (const b of broken)
+        if (!states.includes(b))
+          fail(w, `draws "${b}" broken, but its key does not name that state`);
     const entries = Object.entries(t.stops ?? {});
     if (entries.length < 3) fail(w, "lights too few stops to show a theme");
     for (const [slug, at] of entries) {
       if (!slugs.has(slug)) fail(w, `lights "${slug}", which is not a stop`);
-      if (!["near", "apart"].includes(at.state))
-        fail(`${w} ${slug}`, `state "${at.state}" is not near or apart`);
+      if (!states.includes(at.state))
+        fail(
+          `${w} ${slug}`,
+          `state "${at.state}" is not one its key names (${states.join(", ")})`
+        );
       if (!at.line) fail(`${w} ${slug}`, "needs its one line");
       refRule(`${w} ${slug}`, at.ref);
     }
+    quotationRule(w, t);
   } else if (t.status === "coming") {
     if (t.stops)
       fail(w, "is coming but already lights stops; mark it finished");

@@ -20,7 +20,7 @@
  */
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
-import { Check, Hourglass, MapPin, PenLine, Tent } from "lucide-react";
+import { Check, Hourglass, MapPin, PenLine } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -32,6 +32,7 @@ import { VerseRef } from "@/components/VerseRef";
 import {
   fetchExplorerIndex,
   stopHref,
+  isBrokenState,
   threadStops,
   useExplorerProgress,
   SAVE_FAILED,
@@ -43,7 +44,7 @@ import {
   type ThreadStop,
 } from "@/lib/explorer";
 import { HeadArt, MangerArt, Roundel } from "./art";
-import { LevelSwitch } from "./parts";
+import { LevelSwitch, ThreadIcon } from "./parts";
 import "./explorer.css";
 
 /** Where each roundel sits across the road's column, in percent: a gentle S down the page. */
@@ -155,8 +156,10 @@ export default function ExplorerMap() {
             The map
           </h2>
           <p className="ex-lede">
-            Thirteen stops, from the first page to the last. The ones with a
-            link are ready to open; the rest are being drawn.
+            Thirteen stops, from the first page to the last.{" "}
+            {data && data.stops.some(s => s.status !== "finished")
+              ? "The ones with a link are ready to open; the rest are being drawn."
+              : "Open any stop, or start at the first and follow Next to the end."}
           </p>
           <div className="ex-controls">
             <div className="ex-panel">
@@ -229,6 +232,7 @@ export default function ExplorerMap() {
                       : false
                   }
                   threadName={thread?.name}
+                  thread={thread}
                   visited={progress.visited.includes(s.slug)}
                   done={progress.done.includes(s.slug)}
                   here={s.slug === here}
@@ -303,7 +307,7 @@ function Threads({
                 aria-pressed={active === t.id}
                 onClick={() => onToggle(t.id)}
               >
-                <Tent size={18} strokeWidth={1.75} aria-hidden="true" />
+                <ThreadIcon id={t.id} />
                 {t.name}
               </button>
             </li>
@@ -328,12 +332,11 @@ function Threads({
             <p className="ex-thread-about">{on.line[level]}</p>
             {on.key && (
               <ul className="ex-key">
-                <li>
-                  <KeyLine /> {on.key.near}
-                </li>
-                <li>
-                  <KeyLine apart /> {on.key.apart}
-                </li>
+                {Object.entries(on.key).map(([state, means]) => (
+                  <li key={state}>
+                    <KeyLine apart={isBrokenState(on, state)} /> {means}
+                  </li>
+                ))}
               </ul>
             )}
             <p className="ex-note">
@@ -377,6 +380,7 @@ function StopRow({
   litPrev,
   litNext,
   threadName,
+  thread,
   visited,
   done,
   here,
@@ -389,6 +393,7 @@ function StopRow({
   litPrev: boolean;
   litNext: boolean;
   threadName?: string;
+  thread?: Thread;
   visited: boolean;
   done: boolean;
   here: boolean;
@@ -398,7 +403,7 @@ function StopRow({
   const finished = stop.status === "finished";
   const side = i % 2 === 0 ? "left" : "right";
   const litClass = lit
-    ? `ex-road__lit${lit.state === "apart" ? " ex-road__lit--apart" : ""}`
+    ? `ex-road__lit${isBrokenState(thread, lit.state) ? " ex-road__lit--apart" : ""}`
     : "";
   const pinClass = `ex-pin${finished ? "" : " ex-pin--drawing"}${lit ? " is-lit" : ""}${here ? " is-here" : ""}`;
   const pinStyle = { left: `${x}%` };
@@ -482,7 +487,7 @@ function StopRow({
         )}
         {lit && (
           <p className="ex-stop__thread">
-            <Tent size={18} strokeWidth={1.75} aria-hidden="true" />
+            <ThreadIcon id={thread?.id} />
             <span>
               <span className="sr-only">{threadName}: </span>
               {lit.line} <VerseRef reference={lit.ref} />

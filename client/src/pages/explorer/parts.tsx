@@ -19,7 +19,9 @@ import {
   ArrowRight,
   ArrowUp,
   Check,
+  Crown,
   RotateCcw,
+  Tent,
   X,
 } from "lucide-react";
 import PlateFrame from "@/components/art/PlateFrame";
@@ -69,6 +71,12 @@ export function LevelSwitch({
   );
 }
 
+/** A thread's mark: the tent for God with his people, the crown for the king. */
+export function ThreadIcon({ id }: { id?: string }) {
+  const Icon = id === "king" ? Crown : Tent;
+  return <Icon size={18} strokeWidth={1.75} aria-hidden="true" />;
+}
+
 const SCENES: Record<string, () => Promise<{ default: Drawing }>> = {
   creation: () => import("./scenes/creation"),
   abraham: () => import("./scenes/abraham"),
@@ -80,6 +88,9 @@ const SCENES: Record<string, () => Promise<{ default: Drawing }>> = {
   kingdom: () => import("./scenes/kingdom"),
   exile: () => import("./scenes/exile"),
   jesus: () => import("./scenes/jesus"),
+  return: () => import("./scenes/return"),
+  church: () => import("./scenes/church"),
+  "new-creation": () => import("./scenes/new-creation"),
 };
 
 export const hasScene = (name: string | undefined) => !!name && name in SCENES;
@@ -326,12 +337,18 @@ export function OrderActivity({
                 {i + 1}
               </span>
               <span className="ex-order__text">
+                {right && it.when && (
+                  <b className="ex-order__when">{it.when}. </b>
+                )}
                 {it.text}
                 {right && (
                   <>
                     {" "}
                     <VerseRef reference={it.ref} />
                   </>
+                )}
+                {right && it.then && (
+                  <span className="ex-order__then">{it.then}</span>
                 )}
               </span>
               <span className="ex-order__moves">
@@ -395,13 +412,15 @@ export function MatchActivity({
   const [chosen, setChosen] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState(false);
   const [said, setSaid] = useState("");
+  const noun = activity.noun ?? "promise";
+  const Noun = noun.charAt(0).toUpperCase() + noun.slice(1);
 
   const check = () => {
     const missing = activity.pairs.filter(p => !chosen[p.id]).length;
     if (missing) {
       setChecked(false);
       setSaid(
-        `Choose an answer for every promise first (${missing} still to choose).`
+        `Choose an answer for every ${noun} first (${missing} still to choose).`
       );
       return;
     }
@@ -427,7 +446,7 @@ export function MatchActivity({
           return (
             <fieldset key={p.id}>
               <legend>
-                Promise {n + 1}: “{p.promise}” <small>({p.promiseRef})</small>
+                {Noun} {n + 1}: “{p.promise}” <small>({p.promiseRef})</small>
               </legend>
               {options.map(o => (
                 <label key={o.id} className="ex-choice">
@@ -449,7 +468,8 @@ export function MatchActivity({
                   {ok ? (
                     <>
                       <Check size={16} strokeWidth={1.75} aria-hidden="true" />{" "}
-                      Kept: <VerseRef reference={p.keptRef} />
+                      {activity.noun ? "Yes" : "Kept"}:{" "}
+                      <RefText text={p.keptRef} />
                     </>
                   ) : (
                     <>

@@ -879,6 +879,16 @@ h3.ex-panel__title,
   font-size: 16px;
   line-height: 1.45;
 }
+.ex-order__when {
+  font-family: var(--U);
+  font-weight: 600;
+}
+.ex-order__then {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  color: var(--ink-muted);
+}
 .ex-order__moves {
   display: flex;
   gap: 6px;
@@ -1064,6 +1074,19 @@ h3.ex-panel__title,
 }
 .ex-walk__nav .btn {
   min-height: 44px;
+}
+/*
+ * The step buttons' primary (Next, Start, Round again) stays inked on a
+ * touch screen. A tap leaves :hover stuck on, and the family's hover
+ * (ink mixed toward bone) then read as a greyed, disabled button.
+ */
+@media (hover: none) {
+  .ex-walk__nav .btn:not(.btn--quiet):hover {
+    background: var(--ink);
+  }
+}
+.ex-walk__nav .btn:not(.btn--quiet) {
+  font-weight: 600;
 }
 
 /* Round the wheel: the stages in a ring, the current one inked. */

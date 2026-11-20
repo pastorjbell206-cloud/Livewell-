@@ -4,9 +4,120 @@
   "act": "return-silence",
   "title": "The Return and the Waiting",
   "range": "Ezra, Nehemiah, Esther, Malachi",
-  "status": "drawing",
+  "status": "finished",
   "summary": {
     "younger": "God brought some of his people home. They rebuilt the temple and the city walls, and then they waited a long time for God's promised king.",
     "older": "Some exiles come home under Persian rule and rebuild the temple and the walls, but no son of David sits on the throne. The Old Testament ends looking ahead, and roughly four centuries pass before the next page."
+  },
+  "scene": "return",
+  "sceneLabel": "Jerusalem being rebuilt. In front, builders on a new stone wall: one carries a basket of stones on his shoulder with one hand and holds a spear upright in the other, and another lays a stone with a sword at his side. Behind the wall, on the hill, a small new temple, plainer than Solomon's. In the window of a house by the wall, one lamp is still burning: home again, and still waiting.",
+  "story": {
+    "younger": [
+      "God's people had been in Babylon for many years. Then a new king, Cyrus of Persia, took over Babylon, and he let the people go home to Jerusalem and build God's house again. God had promised this through the prophet Jeremiah, and now it was coming true.",
+      "Some of the people went home, but not all of them. They rebuilt the altar and began the temple. When the first stones were laid, many people shouted for joy. But some of the old people, who could still remember Solomon's beautiful temple, cried out loud, because this one was so much smaller.",
+      "The work was hard and slow, and people who lived nearby tried to stop it. God sent two prophets, Haggai and Zechariah, to cheer the builders on, and at last the temple was finished. Later a teacher named Ezra came and taught the people God's law. A man named Nehemiah came to lead the rebuilding of the city walls. The workers kept watch while they built, and the wall was finished in fifty-two days.",
+      "They were home again. But some things were still missing. There was no king from David's family on the throne, and the Bible does not say that the cloud of God's glory came to fill this temple, as it had filled Solomon's. The last prophet in the Old Testament, Malachi, said God would send a messenger to get the way ready, and then the Lord would come to his temple.",
+      "Then the Old Testament stops. About four hundred years went by before the next part of the story. Like a lamp left burning in a window for someone who is coming home, God's people kept waiting for the promised king."
+    ],
+    "older": [
+      "In 539 BC Babylon fell to Cyrus of Persia, and about a year later he let the exiles go home and rebuild the house of the LORD in Jerusalem (Ezra 1:1-4). Ezra says this happened “to fulfill the word of the LORD spoken through Jeremiah.” Persia allowed many deported peoples to go home and rebuild their temples, and a clay inscription from about 539 BC, the Cyrus Cylinder, describes that policy, though it does not mention the Jews. Only some went home. Many stayed in Persian lands, which is where the book of Esther is set.",
+      "The returning exiles rebuilt the altar and laid the temple's foundation. Many shouted for joy, but “many of the older priests, Levites, and family heads who had seen the first temple wept loudly” (Ezra 3:12). Haggai asked them, “Does it not appear to you like nothing in comparison?” (Haggai 2:3). The work stalled for years under local opposition, until Haggai and Zechariah urged the builders on, and the temple was finished in the sixth year of King Darius (Ezra 6:15), around 515 BC (some count 516). The dedication was kept “with joy” (Ezra 6:16). Ezra reports sacrifices and priests in their places, but no cloud filling the house, as one had filled Solomon's temple (1 Kings 8:10-11). Haggai held out the promise instead: “I will fill this house with glory” (Haggai 2:7).",
+      "Ezra, a priest and a teacher of the law, came around 458 BC, and Nehemiah, the king's cupbearer, around 445 BC. Nehemiah led the rebuilding of Jerusalem's walls under threat from the peoples around: the laborers who carried materials “worked with one hand and held a weapon with the other” (Nehemiah 4:17), and “the wall was completed in fifty-two days” (Nehemiah 6:15). Then Ezra read the law aloud to the gathered people from daybreak until noon, and the Levites helped them understand it (Nehemiah 8:3, 8). But the same books end with the people falling back into old wrongs (Nehemiah 13), and there is still no son of David on the throne.",
+      "Malachi, the last of the prophets in the Christian Old Testament, ends looking ahead: “Behold, I will send My messenger, who will prepare the way before Me. Then the Lord whom you seek will suddenly come to His temple” (Malachi 3:1), and God will send “Elijah the prophet” to turn the hearts of fathers and children to each other (Malachi 4:5-6). Mark opens his Gospel with that promise, and John the Baptist appears in the wilderness (Mark 1:2-4).",
+      "Between Malachi and John come roughly four centuries that the Old Testament does not narrate. Alexander the Great conquered Persia in the 330s BC and spread the Greek language and way of life, and the Hebrew Scriptures were put into Greek in Alexandria. In 167 BC a Greek king, Antiochus IV, defiled the temple; the Maccabees rose against him, and the temple was dedicated again in 164 BC, the beginning of Hanukkah, which John's Gospel calls the Feast of Dedication (John 10:22). Rome took Jerusalem in 63 BC. In these years the synagogue, the Pharisees and the Sadducees took the shape they have in the Gospels. Christians have sometimes called these the silent years, because no prophet in the Bible speaks in them. For the Jewish people they were anything but silent: they prayed, studied, argued, suffered for their faith and wrote, and the world Jesus was born into was made in them."
+    ]
+  },
+  "god": {
+    "younger": "God keeps his promises, even when it takes a long time. He brought his people home, just as he said. And he asks his people to trust him while they wait.",
+    "older": "God is faithful to his word: the exiles come home as Jeremiah said they would. He is also more patient than people find easy. The return is real but small, and God teaches his people to wait on a promise larger than anything they rebuilt. Paul says that “when the time had fully come, God sent His Son” (Galatians 4:4)."
+  },
+  "verses": [
+    {
+      "ref": "Nehemiah 8:8",
+      "text": "So they read from the Book of the Law of God, explaining it and giving insight, so that the people could understand what was being read."
+    },
+    {
+      "ref": "Malachi 3:1",
+      "text": "Behold, I will send My messenger, who will prepare the way before Me."
+    }
+  ],
+  "read": [
+    { "label": "Ezra 1", "href": "/study/bible/ezra/1" },
+    { "label": "Ezra 3", "href": "/study/bible/ezra/3" },
+    { "label": "Haggai 2", "href": "/study/bible/haggai/2" },
+    { "label": "Nehemiah 4", "href": "/study/bible/nehemiah/4" },
+    { "label": "Nehemiah 8", "href": "/study/bible/nehemiah/8" },
+    { "label": "Malachi 3", "href": "/study/bible/malachi/3" },
+    { "label": "Malachi 4", "href": "/study/bible/malachi/4" }
+  ],
+  "care": "Waiting can be hard, especially waiting for something to get better at home, or for a prayer to be answered. If you are carrying a long wait, you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "Why did God make them wait so long?",
+    "answer": [
+      "The honest answer begins with what the Bible does not say. It never explains why the wait was about four hundred years and not forty. Jesus told his friends, “It is not for you to know times or seasons that the Father has fixed by His own authority” (Acts 1:7). Anyone who claims to know the whole reason is saying more than the text does.",
+      "What the Bible does say is that the timing was not an accident. Paul writes that “when the time had fully come, God sent His Son” (Galatians 4:4). From God's side the wait had an end, even when, from the people's side, it only felt long.",
+      "And waiting runs all through Scripture. Abraham waited twenty-five years for Isaac. Israel lived four hundred and thirty years in Egypt. A psalm says, “I wait for the LORD; my soul does wait” (Psalm 130:5). The waiting years were not empty: people prayed, read the Scriptures, kept the feasts and gave their lives for their faith. The New Testament says Christians are waiting too, for Jesus to come again. In the Bible, faith is very often the patience to trust a promise that has not yet arrived."
+    ]
+  },
+  "deeper": [
+    {
+      "label": "Jewish life in Jesus' day: the world the waiting years made",
+      "href": "/resources/context/world/jewish-life-in-jesus-day"
+    },
+    {
+      "label": "What kind of Messiah was Israel waiting for?",
+      "href": "/resources/context/messianic-expectation"
+    },
+    {
+      "label": "Malachi 3 in the Study Bible",
+      "href": "/study/bible/malachi/3"
+    }
+  ],
+  "talk": {
+    "younger": "Some old people cried when they saw the new temple, because they remembered the old one. Have you ever felt happy and sad at the same time? What were you waiting for?",
+    "older": "God's people were home again, but the king had not come. What is something you are waiting for that you cannot hurry? What helps you keep trusting while you wait?"
+  },
+  "activity": {
+    "kind": "order",
+    "title": "From the decree to the voice in the wilderness",
+    "prompt": "Five things happened between the exiles coming home and the start of the Gospels. Move them into the order they happened, then check. Each one shows its date when it is in the right place.",
+    "items": [
+      {
+        "id": "decree",
+        "text": "King Cyrus lets the exiles go home to rebuild the house of the LORD.",
+        "ref": "Ezra 1:1-4",
+        "when": "About 538 BC",
+        "then": "Only some went home, but the promise through Jeremiah had come true."
+      },
+      {
+        "id": "temple",
+        "text": "The new temple is finished, and the people celebrate with joy.",
+        "ref": "Ezra 6:15-16",
+        "when": "Around 515 BC",
+        "then": "It was smaller than Solomon's, and the old people remembered."
+      },
+      {
+        "id": "wall",
+        "text": "Nehemiah's builders finish the wall of Jerusalem in fifty-two days.",
+        "ref": "Nehemiah 6:15",
+        "when": "Around 445 BC",
+        "then": "They worked with one hand and kept watch with the other."
+      },
+      {
+        "id": "dedication",
+        "text": "After the Maccabees' revolt, the temple is dedicated again: the first Hanukkah.",
+        "ref": "John 10:22",
+        "when": "164 BC",
+        "then": "This is in the years the Old Testament does not tell. John's Gospel calls the feast the Feast of Dedication."
+      },
+      {
+        "id": "voice",
+        "text": "John the Baptist appears in the wilderness, a voice getting the way ready.",
+        "ref": "Mark 1:2-4",
+        "when": "About AD 28 or 29",
+        "then": "The messenger Malachi promised has come. The king is near."
+      }
+    ],
+    "start": ["wall", "voice", "decree", "dedication", "temple"]
   }
 }

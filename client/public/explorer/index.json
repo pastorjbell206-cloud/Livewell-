@@ -121,7 +121,7 @@
       "act": "return-silence",
       "actLabel": "Act Eight",
       "actTitle": "The Return and the Silence",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "God brought some of his people home. They rebuilt the temple and the city walls, and then they waited a long time for God's promised king.",
         "older": "Some exiles come home under Persian rule and rebuild the temple and the walls, but no son of David sits on the throne. The Old Testament ends looking ahead, and roughly four centuries pass before the next page."
@@ -163,7 +163,7 @@
       "act": "church-spirit",
       "actLabel": "Act Ten",
       "actTitle": "The Church and the Spirit",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "Jesus went back to his Father and sent the Holy Spirit. His followers told the good news about Jesus to people everywhere.",
         "older": "Fifty days after Passover the Spirit comes. The church begins in Jerusalem and spreads, Jews and Gentiles together, until the news of Jesus reaches Rome."
@@ -173,11 +173,11 @@
       "slug": "new-creation",
       "n": 13,
       "title": "The New Creation",
-      "range": "Revelation",
+      "range": "Revelation 21 to 22, with 1 Corinthians 15 and Romans 8",
       "act": "new-creation",
       "actLabel": "Act Eleven",
       "actTitle": "The New Creation",
-      "status": "drawing",
+      "status": "finished",
       "summary": {
         "younger": "One day Jesus will come back and make everything new. God will live with his people, and there will be no more crying or pain.",
         "older": "The story ends where it began, with God and his people together, in a garden that has become a city. Jesus returns, death is undone, and God makes his home with people for ever."
@@ -286,10 +286,84 @@
     {
       "id": "king",
       "name": "The king",
-      "status": "coming",
+      "status": "finished",
       "line": {
         "younger": "God's people wait for a good king, and Jesus is that king.",
         "older": "People made to rule under God want to rule without him. The story looks for the true king, the son of David, who reigns by serving."
+      },
+      "key": {
+        "reigns": "God's rule is shown, or his king is on the throne",
+        "waited": "The king is promised, or the throne stands empty"
+      },
+      "broken": [
+        "waited"
+      ],
+      "stops": {
+        "creation": {
+          "state": "reigns",
+          "line": "God made people in his image to rule over his world under him, caring for it as he would.",
+          "ref": "Genesis 1:28"
+        },
+        "fall": {
+          "state": "waited",
+          "line": "People grabbed at ruling without God. Then God promised that the woman's seed would crush the serpent's head.",
+          "ref": "Genesis 3:15"
+        },
+        "abraham": {
+          "state": "waited",
+          "line": "God promised Abraham, “kings will descend from you.”",
+          "ref": "Genesis 17:6"
+        },
+        "rescue": {
+          "state": "reigns",
+          "line": "At the sea God showed who really rules, and Moses and Israel sang, “The LORD will reign forever and ever!”",
+          "ref": "Exodus 15:18"
+        },
+        "sinai": {
+          "state": "reigns",
+          "line": "At Sinai, God, Israel's true king, made his people “a kingdom of priests and a holy nation.”",
+          "ref": "Exodus 19:6"
+        },
+        "land": {
+          "state": "waited",
+          "line": "Judges ends sadly: “In those days there was no king in Israel; everyone did what was right in his own eyes.”",
+          "ref": "Judges 21:25"
+        },
+        "kingdom": {
+          "state": "reigns",
+          "line": "God promised David a son whose kingdom would last: “your throne will be established forever.”",
+          "ref": "2 Samuel 7:16"
+        },
+        "exile": {
+          "state": "waited",
+          "line": "When Babylon took Jerusalem, David's throne was lost. Isaiah had promised a child who “will reign on the throne of David.”",
+          "ref": "Isaiah 9:6-7"
+        },
+        "return": {
+          "state": "waited",
+          "line": "The people came home, but no son of David sat on the throne. Zechariah told them, “See, your King comes to you.”",
+          "ref": "Zechariah 9:9"
+        },
+        "jesus": {
+          "state": "reigns",
+          "line": "Jesus announced that “the kingdom of God is near,” and Peter said he was the Christ, the promised king.",
+          "ref": "Mark 1:15"
+        },
+        "cross": {
+          "state": "reigns",
+          "line": "The soldiers crowned Jesus with thorns, and the charge over the cross read “THE KING OF THE JEWS.” On the third day God raised him.",
+          "ref": "Mark 15:26"
+        },
+        "church": {
+          "state": "reigns",
+          "line": "God seated the risen Jesus at his right hand and made him “head over everything for the church,” which is his body.",
+          "ref": "Ephesians 1:20-23"
+        },
+        "new-creation": {
+          "state": "reigns",
+          "line": "At the end, “The throne of God and of the Lamb will be within the city,” and his people reign with him for ever.",
+          "ref": "Revelation 22:3-5"
+        }
       }
     },
     {

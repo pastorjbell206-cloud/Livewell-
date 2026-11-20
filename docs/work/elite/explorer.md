@@ -5,7 +5,7 @@ James asked (2026-11-19) for a way to explain the whole Bible to young people ag
 ## What is built
 
 - **The map** (`/study/explorer`): one road drawn down the page, from the garden to the city, with a roundel for each of thirteen stops. Every stop is named, placed and summed up in one line at both reading levels, so the whole arc can be read end to end today. A finished stop opens its own page; a stop still being drawn says so and has no link.
-- **Ten finished stops** (four in the pilot, three added on 2026-11-19, three more on 2026-11-20), each with a drawn scene, the story at both levels, "What this shows us about God", one or two verses quoted exactly from the BSB (each opens the site's verse panel), "Read it yourself" (Study Bible chapters), and one activity:
+- **All thirteen stops finished** (four in the pilot, three added on 2026-11-19, six more on 2026-11-20), each with a drawn scene, the story at both levels, "What this shows us about God", one or two verses quoted exactly from the BSB (each opens the site's verse panel), "Read it yourself" (Study Bible chapters), and one activity:
   - `/study/explorer/creation`: tap the picture to find the seven days.
   - `/study/explorer/abraham`: match each of God's three promises to where the Bible shows it kept.
   - `/study/explorer/rescue`: put four events of the rescue in order.
@@ -16,8 +16,11 @@ James asked (2026-11-19) for a way to explain the whole Bible to young people ag
   - `/study/explorer/kingdom`: "What makes a good king?", five moments from the stories of Saul, David and Solomon; for each the reader taps "He trusted God" or "He grabbed for himself" and sees what the Bible says and the verse; it ends on the promise of a king who will not fail (2 Samuel 7:16; Luke 1:32-33).
   - `/study/explorer/exile`: "Promises in the dark", four promises from Jeremiah, Ezekiel and Isaiah matched to where the New Testament takes each up (Luke 22:20; Acts 2:1-4; Acts 8:32-35; Luke 1:32-33).
   - `/study/explorer/jesus`: "Who is this?", five things Jesus did by the Sea of Galilee in Mark's order, marked on the picture and taken with Next (or tapped); each says what he did, what people said, and who the Gospel says he is, ending on Peter's answer and handing on to the Cross.
+  - `/study/explorer/return`: "From the decree to the voice in the wilderness", five events put in order (Cyrus's decree, the temple finished, Nehemiah's wall, the first Hanukkah, John the Baptist); each shows its date and one line once it is in place.
+  - `/study/explorer/church`: "Out to the ends of the earth", Acts 1:8 as three faint rings on the picture and five numbered places walked with Next (the upper room, Samaria, the desert road, Caesarea, Antioch and the ship); each says what happened there and which ring it is.
+  - `/study/explorer/new-creation`: "The end of the road is the beginning, made new", four pictures from Genesis 2 and 3 (the guarded tree of life, the river, God walking in the garden, the curse) matched to what Revelation 21 and 22 say of each. Its foot leads to the whole map and to "Why we believe".
 - **Two reading levels**, "Ages 7 to 11" and "Ages 12 to 16" (the Family door's younger and older bands, `lib/familyTable.ts`), one tap, kept on the device. The older level adds the why, an honest hard question with its answer, and links to go deeper (Honest Answers, context guides).
-- **One thread**, "God with his people", lit across the whole map: a solid line where God lives among his people, a broken line where the closeness is lost or waited for (the fall, the exile, the return), and one line with its verse at each of the thirteen stops. Four more threads are named as coming.
+- **Two threads**, lit across the whole map, each with one line and its verse at each of the thirteen stops. "God with his people": a solid line where God lives among his people, a broken line where the closeness is lost or waited for (the fall, the exile, the return). "The king" (2026-11-20): solid where God's rule is shown or his king is on the throne (creation, the sea, Sinai, David, Jesus, the cross, the right hand, the throne in the city), broken where the king is promised or the throne stands empty (the fall, Abraham, the judges, the exile, the return). A thread now names its own states in its key, and `broken` lists the states drawn broken (default "apart"), so the first thread renders exactly as before. Three more threads are named as coming.
 - **"Why we believe"**: two finished cards (The Bible; Jesus, God and man) with a picture, a plain statement at both levels, a quoted verse, the passages it rests on, a question people ask, the stops that teach it, and the family catechism questions that say the same. Eight more are named as coming, without links.
 - **Progress** on the device (`livewell-progress-explorer-v1`, through `lib/storage.ts`): stops visited, activities done, the level, and "You are here" on the map. No account, no API procedure.
 
@@ -38,13 +41,13 @@ The site's Bible's Story (`/study/bible/story`, the eleven acts in `client/publi
 | 6 | The Land and the Judges | Five | finished |
 | 7 | The Kingdom | Six | finished |
 | 8 | The Prophets and Exile | Seven | finished |
-| 9 | The Return and the Waiting | Eight ("the Silence" in the storyline; "the Waiting" for a child) | drawing |
+| 9 | The Return and the Waiting | Eight ("the Silence" in the storyline; "the Waiting" for a child) | finished |
 | 10 | Jesus Comes | Nine (added split) | finished |
 | 11 | The Cross and the Empty Tomb | Nine (added split) | finished |
-| 12 | The Church and the Spirit | Ten | drawing |
-| 13 | The New Creation | Eleven | drawing |
+| 12 | The Church and the Spirit | Ten | finished |
+| 13 | The New Creation | Eleven | finished |
 
-## The plan for the stops still to draw (three now; the Fall, Sinai, the Land, the Kingdom, the Exile and Jesus Comes below are finished)
+## The plan the stops were drawn from (all finished; kept as the record of each stop's first idea)
 
 Each needs: a scene (an 800 by 600 drawing in `client/src/pages/explorer/scenes/`, one line in `SCENES` in `parts.tsx`), the story at both levels, God, one or two verses, chapters, an older-level question with its answer and deeper links, a talk prompt, a care line where it touches death, fear or guilt, and one activity. All of it is data in `client/public/explorer/stops/<slug>.json`; only the drawing is code.
 
@@ -62,7 +65,7 @@ Each needs: a scene (an 800 by 600 drawing in `client/src/pages/explorer/scenes/
 
 ## The threads still to light
 
-Each is data in `threads.json` (`status: "finished"`, a line and a verse at each stop it runs through): **The promise** (Noah, Abraham, Sinai, David, the new covenant); **The lamb** (garments, Isaac and the ram, Passover, the altar, Isaiah 53, the Lamb of God, the Lamb on the throne); **The king** (Adam's rule, the judges' "no king", David, the exile's lost throne, Jesus the son of David, the throne in the city); **A blessing for every nation** (Babel, Abraham, Rahab and Ruth, Jonah, the wise men, Pentecost, every tribe and tongue).
+Each is data in `threads.json` (`status: "finished"`, a key naming its own states, `broken` for the states drawn as a broken line, a line and a verse at each stop it runs through). **The king** is finished (2026-11-20). Still to light: **The promise** (Noah, Abraham, Sinai, David, the new covenant); **The lamb** (garments, Isaac and the ram, Passover, the altar, Isaiah 53, the Lamb of God, the Lamb on the throne); **The king** (Adam's rule, the judges' "no king", David, the exile's lost throne, Jesus the son of David, the throne in the city); **A blessing for every nation** (Babel, Abraham, Rahab and Ruth, Jonah, the wise men, Pentecost, every tribe and tongue).
 
 ## The cards still to write
 
@@ -70,7 +73,7 @@ God (one God, Father, Son and Spirit); People made in God's image; Sin; The cros
 
 ## What to add next
 
-1. The nine stops above, two at a time (the drawing is the long part).
+1. ~~The nine stops above~~ (finished 2026-11-20).
 2. **How the Bible fits together**: one picture of the 66 books as a library on shelves (Law, History, Wisdom, Prophets, Gospels, Acts, Letters, Revelation), tap a shelf, see where its books sit on the map.
 3. **A timeline strip** under the map, with the few dates the site already holds (`client/public/bible/story.json`), shown only at the older level.
 4. **Printable pages**: one sheet per stop (the drawing in outline to colour, the story at the younger level, the activity on paper), built like the existing PDFs (`scripts/build-pdfs.mjs`).
@@ -203,10 +206,28 @@ The Bible door already lists six rooms (`client/src/lib/siteCatalog.ts`), so Bib
 - Lighthouse on `/study/explorer/jesus` (median of three): performance 93, accessibility 100, best practices 96, SEO 100, CLS 0.000.
 - Screenshots in `/home/user/elite-shots/explorer/`; `kingdom-390.png`, `exile-390.png`, `jesus-390.png` in `docs/work/elite/explorer-shots/`.
 
-## What to draw next
+## The last three (2026-11-20): the Return and the Waiting, the Church and the Spirit, the New Creation
 
-The Return and the Waiting (stop 9), so that Next walks every stop from Creation to the Cross with nothing skipped; then the Church and the Spirit, and the New Creation. After that, the four threads still to light (the king thread now has its turning point drawn at the Kingdom).
+- **Next now walks all thirteen stops** from Creation to the New Creation with nothing skipped, and every stop's head says "Stop N of 13" in the same place (the test walks the chain and reads the label on each). The last stop's foot offers "The whole map" and "Why we believe". The map's "This stop is being drawn" state is no longer shown (no stop needs it); its code path stays, kept by a test that serves one stop as being drawn, and Next skips such a stop.
+- **Shared code changed only where a stop needed it.** The order activity takes an optional `when` and `then` per item, shown once the item is in its place (the Return); match takes an optional `noun` (the New Creation's "pictures"; Abraham and the Exile still say "Promise"). A thread names its own states (`key`, `broken`), with validator support (every state a stop uses must be one the key names; `broken` must name key states) and the validator's quotation rule now runs over the threads too. The crown marks the king thread, the tent the dwelling thread.
+- **The scenes.** The Return: the new wall going up in courses, unfinished on the right; a builder with a basket of stones on his shoulder and a spear in his other hand (Nehemiah 4:17 as the BSB words it), another laying a stone with his sword at his side; a small, plain temple on the hill with smoke from its altar; a house by the wall with one clay lamp burning in its window (the mustard mark). The Church: the upper room open to the street, full of people sitting close, one flame above them (the mustard mark); three faint dotted rings spreading from that room (Acts 1:8); the road out of the gate past a village on a hill, a chariot with its reader, to a port with a colonnade and a tower, and a ship with a full sail. The New Creation: Creation's frame come home, larger: the same horizon, but no sea and no sun or moon; the city wall with its gate standing open and its doors swung back; the river from the gate toward us with a tree of life on each bank; people walking in along the roads carrying gifts; the light (the mustard mark) shining from the open gate and every window, its rays across the sky. A first try drew the light as a star above the city, which read as a sun, and then behind the gate tower, which read as a crown; both were cut.
+- **Wording on the hard places.** The years between the Testaments are told in five plain sentences drawn from the storyline and the Jewish-life portrait, and the name "the silent years" is given as a Christian name, with the Jewish years "anything but silent". The glory: only that Ezra reports no cloud. The church's failures: named as kinds of wrong without a list, with the New Testament's own rebukes, reusing the Honest Answers' sentences. Baptism, the gifts and leadership: what churches share, then three differences, "This stop does not choose between them." The end times: what the creeds confess together; the thousand years, the rapture and the order of the last events named as differences, no side, no dates, no news. Judgment: told as hope that wrongs will be named, with the Honest Answer on hell quoted for "a real judgment, and they differ on how to understand" it. No altar call: an invitation to wonder and to talk with a parent, a pastor or a leader. Care lines on waiting, on being hurt in or by a church, and on grief and fear of death or judgment.
+- **The button fix.** On a phone, a tap leaves `:hover` stuck on a button, and the site's press feedback (`:active` at 0.68 opacity) sat on top of the hover mix: the walk's "Next" read as a grey, disabled button. Under `(hover: none)` the walk and cycle's primary button keeps its ink, and it is set at weight 600; it stays the one button family (`.btn`, ink with the mustard rule). Measured after taps: day ink on bone, night bone on ink.
+
+## What was run for the last three (2026-11-20)
+
+- `pnpm check` clean; ESLint on every changed file clean.
+- All 38 commands of the content-gates step in `.github/workflows/ci.yml`: exit 0 (each read directly).
+- `pnpm test`: 147 files passed, 7 skipped (1,708 tests passed, 73 skipped); the Explorer file has 29 tests.
+- `pnpm build`, sitemap (13 Explorer stops), prerender (13 Explorer stop pages), `audit:canonicals`: every audited page canonicalises to itself.
+- On the served build (`scripts/serve-like-vercel.mjs`, port 4621): each new stop at 390 and 1440, day and night, both levels (24 pages), no sideways scroll and no console errors; each new activity completed by touch emulation and by keyboard alone; Next walked from stop 1 to 13 by keyboard, "Stop N of 13" read on each; both threads lit at all thirteen stops by Enter.
+- Lighthouse (`scripts/lighthouse-median.mjs`, median of three): `/study/explorer` performance 90, accessibility 100, best practices 96, SEO 100, CLS 0.000; `/study/explorer/new-creation` performance 91, accessibility 100, best practices 96, SEO 100, CLS 0.000.
+- Screenshots in `/home/user/elite-shots/explorer/`; `return-390.png`, `church-390.png`, `newcreation-390.png`, `king-thread-1440.png`, a fresh `sinai-390.png` and `map-390.png` in `docs/work/elite/explorer-shots/`. The Kingdom and the Exile were re-shot and match their earlier shots.
+
+## What to make next
+
+The road is walkable end to end. Next, in the order of the plan above: How salvation works (James reads it first); Paul's travels, opened from the Church and the Spirit (its stop already points ahead in one line, with no link); the Holy Spirit theme and the three threads still to light (the thread shape now allows their own states); the library of the 66 books; the eight remaining cards; printable pages and a parent or leader guide.
 
 ## Not done in the pilot
 
-Three stops (the Return, the Church, the New Creation), four threads and eight cards, as planned above. James has not yet read any of the writing. No printable pages, no parent guide. Axe was not run separately (Lighthouse's accessibility audit is axe-based and scored 100 on both pages).
+Three threads (the promise, the lamb, a blessing for every nation) and eight cards, as planned above. James has not yet read any of the writing. No printable pages, no parent guide. Axe was not run separately (Lighthouse's accessibility audit is axe-based and scored 100 on both pages).
