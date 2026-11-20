@@ -29,6 +29,7 @@ import {
 } from "@/lib/explorer";
 import ExplorerMap from "./ExplorerMap";
 import ExplorerStop from "./ExplorerStop";
+import { MOVING_MAPS } from "./Watch";
 
 vi.mock("@vercel/analytics", () => ({ track: vi.fn() }));
 
@@ -357,6 +358,12 @@ describe("the map", () => {
     expect(within(holds).getByText(`${cards.length} cards`)).toBeTruthy();
     expect(within(holds).getByText(`${threads.length} threads`)).toBeTruthy();
     expect(within(holds).getByText(`${INDEX.stops.length} stops`)).toBeTruthy();
+    // The moving maps are counted from their list, not typed.
+    expect(within(holds).getByText(`${MOVING_MAPS.length} maps`)).toBeTruthy();
+    expect(MOVING_MAPS.map(m => m.title)).toEqual([
+      "Abraham's road",
+      "Paul's travels",
+    ]);
     // Tap two: every film and both maps are links in Watch and learn; every
     // card has a link in the list at the top of Why we believe; every thread
     // is a button in the threads panel.
