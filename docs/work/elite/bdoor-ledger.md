@@ -9608,3 +9608,30 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Wrath and the Day of the Lord in the prophets | 9-10 | Chapter deep note `cultural` | Repository |
 | Psalm 115:4-5; Jeremiah 10:10; 1 Samuel 7:3; Jeremiah 16:19; Isaiah 25:9; Zephaniah 1:15 | 9-10 | BSB | BSB text |
 | Idols today; doctrine study pointer | 9-10 | Chapter deep note `doctrines` (idolatry); doctrines.json | Repository |
+
+## The plain notes on 1 Thessalonians 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Philippi: stripped, beaten with rods, stocks (Acts 16:22-24); citizens beaten without trial (Acts 16:37) | 1-6 | BSB; chapter deep note `historical` | BSB text |
+| Travelling speakers seeking fees, patrons, followers; critics called many flatterers, greedy, vain | 1-6 | Chapter deep note `cultural` | Repository. Malherbe and Dio Chrysostom not named |
+| Whether Paul answered real accusations is debated | 1-6 | Chapter deep note `literary` | Repository |
+| Dokimazō, to test (as metal) | 1-6 | Standard lexicons | Standard |
+| Jeremiah 1:8; 20:9; 17:10; 1 Samuel 16:7; Proverbs 29:25; 26:28 | 1-6 | BSB | BSB text |
+| Trophos a wet nurse or a mother nursing her own children | 7-12 | Chapter deep note `words` (G5162) | Repository |
+| Nēpioi (infants) or ēpioi (gentle), one letter; BSB ‘gentle’; scholars divided | 7-12 | Chapter deep note `words` (G3516) | Repository |
+| Tentmaker or leatherworker (Acts 18:3); manual labour looked down on by the elite | 7-12 | Chapter deep note `cultural` | Repository; BSB text |
+| Father responsible for moral teaching | 7-12 | Chapter deep note `cultural` | Repository |
+| Isaiah 66:13; 49:15; Numbers 11:12; Psalm 103:13; Deuteronomy 1:31; Psalm 27:10 | 7-12 | BSB | BSB text |
+| Father care lines | 7-12 | 1-corinthians/plain/4.json | Word for word (the opening question and the closing three sentences); the middle sentence fitted to this passage |
+| The word ‘at work’ | 13-16 | BSB verse 13; chapter deep note `doctrines` | Repository |
+| Thessalonians suffered from Gentile countrymen; Judean churches from some Jewish neighbours; Paul once a persecutor (Galatians 1:13, 22-23) | 13-16 | Chapter deep note `historical`, `hard` | Repository; BSB text |
+| Persecutors compared, not peoples; prophets' criticism from inside; Romans 9:3; 11:1; ‘wrath’ debated; minority interpolation view, no manuscript lacks the verses, most accept them | 13-16 | Chapter deep note `hard`, `historical` | Repository |
+| ‘Christ-killers’ misuse; rejection; all people inside the guilt; pointer | 13-16 | acts/plain/2.json (22-28) | Repository wording |
+| 1 Kings 19:10; Jeremiah 11:21; 26:23; 2 Chronicles 36:15; Jeremiah 23:29 | 13-16 | BSB | BSB text |
+| Aporphanizō, to be orphaned | 17-20 | Chapter deep note `literary` | Repository |
+| Parousia a ruler's official visit; first use for Jesus here | 17-20 | Chapter deep note `words` (G3952) | Repository |
+| Stephanos, a winner's wreath | 17-20 | Standard lexicons | Standard |
+| Isaiah 62:3; Proverbs 17:6; Zechariah 3:1-2; Daniel 10:12-13 | 17-20 | BSB | BSB text |
