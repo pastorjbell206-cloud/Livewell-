@@ -1,0 +1,70 @@
+{
+  "slug": "cross",
+  "n": 11,
+  "act": "christ",
+  "added": "Act Nine (Christ, the Center) is two stops here: Jesus comes, then the cross and the empty tomb, so a young reader meets them as their own place on the map.",
+  "title": "The Cross and the Empty Tomb",
+  "range": "The end of each Gospel",
+  "status": "finished",
+  "summary": {
+    "younger": "Jesus died on a cross to take away the sin of the world. On the third day God raised him from the dead. He is alive.",
+    "older": "Jesus dies on a Roman cross at Passover, carrying the sin of the world, and on the third day God raises him bodily from the dead."
+  },
+  "scene": "cross",
+  "sceneLabel": "Sunday morning outside Jerusalem. Three empty crosses stand on a far hill by the city wall. Nearby, in a garden, a tomb cut into the rock stands open, its round stone rolled away, as the sun comes up and three women walk toward it.",
+  "story": {
+    "younger": [
+      "Some of the leaders in Jerusalem wanted to get rid of Jesus. One of his own friends, Judas, helped them arrest him at night. They handed him over to Pilate, the Roman governor, and Pilate had him put to death on a cross.",
+      "Jesus had done nothing wrong. He died to take away the sin of the world, like the Passover lamb that died in the place of others. Before he died he said, “It is finished.”",
+      "His friends laid his body in a tomb cut into the rock, and a big stone was rolled across the door.",
+      "Very early on Sunday morning, some women came to the tomb. The stone was rolled away, and his body was not there. Two men in shining clothes said to them, “He is not here; He has risen!” Later Jesus came to his friends. He was alive, with a real body they could touch, and he ate a piece of fish in front of them."
+    ],
+    "older": [
+      "Every Gospel slows down here and gives many chapters to one week. Jesus comes to Jerusalem at Passover, the feast that remembered the lamb whose blood saved Israel's firstborn. At supper he takes bread and a cup and speaks of his body given and his blood poured out for many.",
+      "Who put Jesus to death? The Gospels answer with care. The chief priests and their council handed him over; Pilate, the Roman governor, condemned him; Roman soldiers crucified him. Jesus himself, his disciples and the first church were Jews, and blaming the Jewish people for his death is a lie that Christians must reject plainly. The New Testament places all people inside the guilt: Herod, Pilate, the Gentiles and the people of Israel together (Acts 4:27), and in the end every one of us, because “Christ died for our sins” (1 Corinthians 15:3).",
+      "It did not end there. On the third day the tomb was empty, and Jesus appeared alive to Peter, to the Twelve, and to more than five hundred people at once, “most of whom are still living” when Paul wrote the list down (1 Corinthians 15:5-6). He wrote it within about twenty-five years of the events, passing on what he himself had been taught, while the witnesses could still be asked."
+    ]
+  },
+  "god": {
+    "younger": "God loves us so much that he gave his Son. Jesus is stronger than death.",
+    "older": "At the cross God does not wait for people to fix themselves. He comes and carries the cost himself (Romans 5:8). At the tomb he shows that death does not get the last word, for Jesus or for anyone who belongs to him."
+  },
+  "verses": [
+    { "ref": "Romans 5:8", "text": "But God proves His love for us in this: While we were still sinners, Christ died for us." },
+    { "ref": "Luke 24:5-6", "text": "Why do you look for the living among the dead? He is not here; He has risen!" }
+  ],
+  "read": [
+    { "label": "Luke 23", "href": "/study/bible/luke/23" },
+    { "label": "Luke 24", "href": "/study/bible/luke/24" },
+    { "label": "John 19", "href": "/study/bible/john/19" },
+    { "label": "John 20", "href": "/study/bible/john/20" },
+    { "label": "1 Corinthians 15", "href": "/study/bible/1-corinthians/15" }
+  ],
+  "care": "This stop tells of a real death. If it brings up fear, sadness or guilt, talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "Did it really happen, or is the resurrection a story that grew over time?",
+    "answer": [
+      "It is the right question to ask, because Christianity stands or falls on it. Paul said so himself: “if Christ has not been raised, our preaching is worthless, and so is your faith” (1 Corinthians 15:14).",
+      "The earliest list of witnesses was written down while those witnesses were alive and could be questioned, and it was already a summary Paul had been taught. People still weigh the evidence differently. The site's Honest Answer sets out the case, and the strongest objections to it, at more length."
+    ]
+  },
+  "deeper": [
+    { "label": "Did the resurrection actually happen?", "href": "/answers/did-the-resurrection-actually-happen" },
+    { "label": "Why was crucifixion so shameful in the Roman world?", "href": "/resources/context/honor-status-and-the-cross" }
+  ],
+  "talk": {
+    "younger": "Jesus is alive. What would you like to ask him? Talk about it with a parent or a leader.",
+    "older": "If the resurrection happened, what changes? If it did not, what changes? Talk it through with someone you trust."
+  },
+  "activity": {
+    "kind": "reveal",
+    "title": "Think, then look",
+    "prompt": "Think about each question first. Then show the answer and see if you were right.",
+    "questions": [
+      { "id": "women", "q": "Who were the first people to find the tomb empty?", "a": "Women who had followed Jesus, very early on Sunday morning. Luke names Mary Magdalene, Joanna, and Mary the mother of James.", "ref": "Luke 24:1-10" },
+      { "id": "veil", "q": "What happened to the great curtain in the temple when Jesus died?", "a": "It tore in two from top to bottom. That curtain closed off the most holy place, where God was present. Torn from the top, it shows that God himself has opened the way to him.", "ref": "Mark 15:37-38" },
+      { "id": "lamb", "q": "Why do Christians call Jesus the Lamb of God?", "a": "Because, like the Passover lamb in Egypt, he died in the place of others. John the Baptist called him “the Lamb of God, who takes away the sin of the world,” and Paul calls him “our Passover lamb.”", "ref": "John 1:29; 1 Corinthians 5:7" },
+      { "id": "ghost", "q": "Was Jesus a ghost after he rose?", "a": "No. He told his friends to touch him and see that a ghost does not have flesh and bones, and he ate a piece of fish in front of them.", "ref": "Luke 24:39-43" }
+    ]
+  }
+}

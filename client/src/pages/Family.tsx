@@ -38,6 +38,7 @@ import {
   MessagesSquare,
   Sprout,
   UsersRound,
+  Map as MapIcon,
   Wrench,
   type LucideIcon,
 } from "lucide-react";
@@ -248,6 +249,12 @@ export default function Family() {
               </li>
             ))}
           </ul>
+          <p className="lw-newline">
+            <MapIcon aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              For ages 7 to 16: <Link href="/study/explorer">Bible Explorer</Link>, the whole Bible as one story on one illustrated map.
+            </span>
+          </p>
         </div>
       </section>
 

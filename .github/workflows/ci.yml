@@ -41,6 +41,8 @@ jobs:
           node scripts/validate-content-integrity.mjs
           node scripts/validate-skeptic-track.mjs
           node scripts/validate-answers.mjs
+          node scripts/build-questions-index.mjs --check
+          node scripts/validate-questions.mjs
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
           node scripts/validate-needs.mjs
@@ -63,6 +65,8 @@ jobs:
           node scripts/build-bible-text.mjs --check
           node scripts/build-bible-search.mjs --check
           node scripts/build-story-plan.mjs --check
+          node scripts/build-explorer-index.mjs --check
+          node scripts/validate-explorer.mjs
           node scripts/validate-bible-notes.mjs
           node scripts/verify-sources.mjs
 

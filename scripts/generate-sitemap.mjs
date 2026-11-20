@@ -12,6 +12,7 @@ import mysql from "mysql2/promise";
 import fs from "node:fs";
 import dotenv from "dotenv";
 import { essayDate, loadEssayShelf, loadTakenDown } from "./lib/shelf.mjs";
+import { liveQuestionPaths } from "./lib/questions.mjs";
 
 dotenv.config();
 
@@ -318,6 +319,13 @@ function manifestPages() {
   } catch (err) {
     console.warn(`[sitemap] could not read the Honest Answers: ${err.message}`);
   }
+  // The questions library: live pages only (scripts/lib/questions.mjs); a
+  // pending room, area or piece is noindex and never listed.
+  try {
+    for (const url of liveQuestionPaths()) pages.push({ url, priority: "0.8", changefreq: "monthly" });
+  } catch (err) {
+    console.warn(`[sitemap] could not read the questions library: ${err.message}`);
+  }
   // The Study Bible: every book, every chapter, the eleven acts of the story,
   // and the doctrine pages (client/public/bible/*).
   try {
@@ -331,6 +339,15 @@ function manifestPages() {
       pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/search", priority: "0.6", changefreq: "monthly" });
     pages.push({ url: "/study/how-to-study", priority: "0.8", changefreq: "monthly" });
+    // The Bible Explorer: the map, and each stop once it is finished (a stop
+    // still being drawn has no link and no place in the sitemap).
+    pages.push({ url: "/study/explorer", priority: "0.8", changefreq: "monthly" });
+    if (fs.existsSync("client/public/explorer/index.json"))
+      for (const st of JSON.parse(fs.readFileSync("client/public/explorer/index.json", "utf8")).stops)
+        if (st.status === "finished") pages.push({ url: `/study/explorer/${st.slug}`, priority: "0.7", changefreq: "monthly" });
+    if (fs.existsSync("client/public/explorer/index.json"))
+      for (const f of JSON.parse(fs.readFileSync("client/public/explorer/index.json", "utf8")).films || [])
+        if (f.status === "finished") pages.push({ url: `/study/explorer/watch/${f.slug}`, priority: "0.7", changefreq: "monthly" });
     pages.push({ url: "/study/bible/doctrines", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/guides/whole-story-2027", priority: "0.8", changefreq: "monthly" });

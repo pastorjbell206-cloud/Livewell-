@@ -54,7 +54,7 @@ describe("Mark's teaching introduction", () => {
   it("only the four Gospels, Acts and Genesis have one so far, and every other book's introduction still has the fields its page draws", () => {
     for (const b of BOOKS) {
       const d: BookIntro = json(`bible/notes/${b.slug}/intro.json`);
-      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke", "acts", "genesis", "psalms"].includes(b.slug));
+      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke", "acts", "genesis", "psalms", "romans", "1-corinthians"].includes(b.slug));
       expect(typeof d.overview).toBe("string");
     }
   });
@@ -302,6 +302,8 @@ describe("a map's frame", () => {
       const frames = bookMaps(t.teaching.map).map((m) => m.frame);
       if (b.slug === "genesis") expect(frames).toEqual(["fertile-crescent", "canaan"]);
       else if (b.slug === "acts") expect(frames).toEqual(["israel", "mediterranean"]);
+      else if (b.slug === "romans") expect(frames).toEqual(["mediterranean"]);
+      else if (b.slug === "1-corinthians") expect(frames).toEqual(["mediterranean"]);
       else expect(frames, b.slug).toEqual(["israel"]);
     }
   });

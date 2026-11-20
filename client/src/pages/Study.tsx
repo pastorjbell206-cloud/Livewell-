@@ -18,7 +18,7 @@
  */
 import { lazy, Suspense } from "react";
 import { Link } from "wouter";
-import { BookMarked, BookOpenText, Compass, Landmark, Library, ScrollText, Sprout, Users, Wrench } from "lucide-react";
+import { BookMarked, BookOpenText, Compass, Landmark, Library, Map as MapIcon, ScrollText, Sprout, Users, Wrench } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -126,6 +126,12 @@ export default function Study() {
             <span>
               New to the Bible? Begin with <Link href="/study/bible/john">the Gospel of John</Link>, or{" "}
               <Link href="/start">start here</Link>.
+            </span>
+          </p>
+          <p className="lw-newline">
+            <MapIcon aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              For ages 7 to 16: <Link href="/study/explorer">Bible Explorer</Link>, the Bible's story on one illustrated map.
             </span>
           </p>
         </div>

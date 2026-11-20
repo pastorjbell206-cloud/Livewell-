@@ -40,6 +40,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { devotionsIn } from "./lib/family-devotion-file.mjs";
 import { STRANDS } from "./lib/family-index.mjs";
+import { loadQuestions } from "./lib/questions.mjs";
 
 import { ANSWERS } from "../client/src/data/answers.ts";
 
@@ -91,6 +92,18 @@ function answers() {
   }));
 }
 
+/** The questions library's live pieces (scripts/lib/questions.mjs); a pending piece is never searched. */
+function questions() {
+  return loadQuestions(ROOT).areas.flatMap((a) =>
+    a.pieces.filter((p) => p.live).map((p) => ({
+      title: str(p.question),
+      blurb: clip(p.shortAnswer),
+      keywords: `${str(a.title)} ${(p.claims || []).map((c) => str(c.claim)).join(" ")}`.trim(),
+      href: `/questions/${a.slug}/${p.slug}`,
+    }))
+  );
+}
+
 /**
  * The site's main pages, by the plain names a visitor types. `keywords` are
  * the other words people use for the page; they are matched, never shown.
@@ -100,6 +113,15 @@ function answers() {
 const MAIN_PAGES = [
   { title: "The Study Bible", href: "/study/bible", blurb: "Every book and chapter of the Bible, with study notes and the Hebrew and Greek beneath each word.", keywords: "study bible read scripture books chapters notes hebrew greek who wrote the bible" },
   { title: "Study the Bible: where to start", href: "/study", blurb: "The Study Bible, church history, the creeds, and guides to reading Scripture in the world it was written in.", keywords: "bible study learn start begin how to read the bible" },
+  { title: "Bible Explorer", href: "/study/explorer", blurb: "The whole Bible as one story on one illustrated map, for ages 7 to 16.", keywords: "kids children teens youth young people bible map pictures story of the bible for kids teenagers illustrated explorer" },
+  { title: "Watch and learn", href: "/study/explorer#watch", blurb: "Short moving pictures for ages 7 to 16: the whole Bible's story, big ideas, what we believe, and good questions.", keywords: "kids children teens video animation animated explainer moving pictures films watch bible explorer" },
+  { title: "The whole Bible in two minutes", href: "/study/explorer/watch/bible-two-minutes", blurb: "The whole story of the Bible, from creation to the new creation, drawn as one road in nine pictures.", keywords: "kids children teens bible overview summary story animation video watch explorer" },
+  { title: "The Holy Spirit through the Bible", href: "/study/explorer/watch/holy-spirit", blurb: "The Holy Spirit from the first page of the Bible to the last, in eight moving pictures.", keywords: "kids children teens holy spirit pentecost dove animation video watch explorer" },
+  { title: "God with his people", href: "/study/explorer/watch/god-with-his-people", blurb: "One light followed from the garden to the tent, the temple, Jesus, the church and the city, in nine moving pictures.", keywords: "kids children teens tabernacle temple presence glory dwelling god with us animation video watch explorer" },
+  { title: "Who God is: Father, Son and Holy Spirit", href: "/study/explorer/watch/who-god-is", blurb: "One God in three persons, in eight moving pictures, and why the usual pictures break.", keywords: "kids children teens trinity three in one father son holy spirit animation video watch explorer" },
+  { title: "Why did Jesus die?", href: "/study/explorer/watch/why-jesus-died", blurb: "What happened at the cross, and the Bible's own pictures of what it did, in eight moving pictures.", keywords: "kids children teens cross atonement passover lamb ransom forgiveness animation video watch explorer" },
+  { title: "How salvation works", href: "/study/explorer/watch/how-salvation-works", blurb: "The good news of Jesus in nine moving pictures: grace, faith and new life.", keywords: "kids children teens gospel saved salvation grace faith forgiveness animation video watch explorer" },
+  { title: "Who made God?", href: "/study/explorer/watch/who-made-god", blurb: "A child's honest question, taken seriously in six moving pictures.", keywords: "kids children teens who made god where did god come from eternal animation video watch explorer" },
   { title: "The story of the Bible", href: "/study/bible/story", blurb: "The whole Bible as one story, told in eleven acts.", keywords: "storyline overview big picture summary of the bible" },
   { title: "What the Bible teaches", href: "/study/bible/doctrines", blurb: "The main teachings of the faith, each followed through the chapters that teach it.", keywords: "doctrine doctrines theology beliefs" },
   { title: "Guides to reading the Bible", href: "/study/bible/guides", blurb: "Short guides to what the Bible is, how it came to us, and how to read it.", keywords: "how to read the bible who wrote the bible canon translations" },
@@ -329,6 +351,8 @@ export function buildSearchIndex() {
     sources: [
       source("Main Pages", "/", [...mainPages(), ...worlds()]),
       source("Honest Answers", "/answers", answers()),
+      // Only once a piece is live, so a pending library leaves the index as it was.
+      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),
       source("Doctrine", "/study/bible/doctrines", doctrines()),

@@ -1,0 +1,146 @@
+{
+  "slug": "church",
+  "n": 12,
+  "act": "church-spirit",
+  "title": "The Church and the Spirit",
+  "range": "Acts and the Letters",
+  "status": "finished",
+  "summary": {
+    "younger": "Jesus went back to his Father and sent the Holy Spirit. His followers told the good news about Jesus to people everywhere.",
+    "older": "Fifty days after Passover the Spirit comes. The church begins in Jerusalem and spreads, Jews and Gentiles together, until the news of Jesus reaches Rome."
+  },
+  "scene": "church",
+  "sceneLabel": "Jerusalem, with a house whose upper room is open to the street, full of people sitting close together, and a flame above them. Three faint rings spread out from that room across the whole picture. A road leaves the city by its gate and winds past a village on a hill and a traveller's chariot, down to a port by the sea, where a ship with a full sail is heading out: the good news going out.",
+  "story": {
+    "younger": [
+      "After Jesus rose from the dead, he spent forty days with his friends. He told them to wait in Jerusalem for the Holy Spirit, and he said, “you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.” Then he was taken up, and a cloud hid him from their sight. Two men dressed in white told them that Jesus would come back in the same way.",
+      "A few days later, at the feast called Pentecost, his followers were all together in one place. A sound like a rushing wind filled the house. Flames like fire rested on each of them, and they were all filled with the Holy Spirit. Visitors from many countries were in Jerusalem, and each one heard them speaking in his own language. Peter told the crowd about Jesus, and about three thousand people were baptized that day.",
+      "The first believers were Jews, like Jesus himself. They listened to the apostles' teaching, prayed, ate together, and shared what they had with anyone in need. Then the good news went further: to Samaria, to an official from faraway Ethiopia, to an officer in the Roman army, and to the city of Antioch, where people from many nations believed. The good news crossed every line.",
+      "A man named Saul hunted down Jesus' followers. But on the road to Damascus a light from heaven flashed around him, and Jesus spoke to him. Saul, who was also called Paul, became one of Jesus' greatest messengers. He travelled by land and sea starting churches, and he wrote letters to them. Many of those letters are in our Bible.",
+      "The church is not a building. It is people. Paul calls them the body of Christ, and he says God's Spirit lives in them, the way God lived in his temple. Churches today do some things in different ways, like how they baptize and how they are led. But they share the most important things: one Lord Jesus, one Holy Spirit, and good news for everyone."
+    ],
+    "older": [
+      "Luke wrote Acts as the second half of one story. His Gospel told “all that Jesus began to do and to teach” (Acts 1:1); Acts tells what Jesus went on doing through his Spirit and his people. For forty days the risen Jesus showed himself alive (Acts 1:3). Then he gave his friends their task, “you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth” (Acts 1:8), and he was taken up, and “a cloud hid Him from their sight” (Acts 1:9). Two men in white said he would come back in the same way (Acts 1:11).",
+      "Pentecost, the Jewish Feast of Weeks, came fifty days after Passover, and Jerusalem was full of pilgrims. A sound like wind filled the house, “tongues like flames of fire” rested on each of them, they were all filled with the Holy Spirit, and visitors “from every nation under heaven” heard them in their own languages (Acts 2:1-6). Many readers think of Babel, where the languages were confused and the nations scattered (Genesis 11:9): here people of many languages hear one message. Peter preached Jesus crucified and raised, and “about three thousand were added to the believers that day” (Acts 2:41). They devoted themselves “to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer” (Acts 2:42).",
+      "The first church was Jewish. Peter, the apostles and the three thousand were Jews, and they kept meeting in the temple courts (Acts 2:46), as Jesus himself, his disciples and the crowds who welcomed him were Jews. Then the news crossed one line after another. Scattered by persecution, the believers took it to Samaria (Acts 8:4-8). Philip told it to a court official from Ethiopia, the far southern edge of the known world (Acts 8:26-39). The Spirit came on a Roman centurion's household while Peter was still speaking (Acts 10:44-45). In Antioch Greeks believed. “The disciples were first called Christians at Antioch” (Acts 11:26). The great question of the early church was whether Gentiles had to become Jews to follow Jesus, and the apostles and elders in Jerusalem answered that they did not (Acts 15:19-29).",
+      "Saul, a Pharisee (Philippians 3:5), approved of Stephen's death and set out to destroy the church (Acts 8:1-3). Near Damascus a light flashed around him and he heard, “Saul, Saul, why do you persecute Me?” (Acts 9:4). The hunter became the church's great planter. Saul, also called Paul, crossed the eastern Mediterranean by road and by sea, starting churches in city after city, and the letters he and others wrote to those churches make up much of the New Testament. Acts ends with Paul in Rome: “Boldly and freely he proclaimed the kingdom of God and taught about the Lord Jesus Christ” (Acts 28:31). Paul's travels will have a map of their own in the Explorer later.",
+      "In the New Testament the church is never a building. It is a people. “Now you are the body of Christ, and each of you is a member of it” (1 Corinthians 12:27). Paul asks a quarrelling church, “Do you not know that you yourselves are God’s temple, and that God’s Spirit dwells in you?” (1 Corinthians 3:16). Jews and Gentiles together are “being built together into a dwelling place for God in His Spirit” (Ephesians 2:22). The God who lived among his people in a tent and a temple now lives in his people."
+    ]
+  },
+  "god": {
+    "younger": "God keeps his promise to send the Holy Spirit. He wants people from every country to know him. And he can change anyone, even someone who was fighting against him.",
+    "older": "God the Holy Spirit is given to all God's people, not to a chosen few (Acts 2:17). God keeps the promise he made to Abraham, a blessing for all the families of the earth, by making one people out of people who were divided. And he turns enemies into family: the man who hunted the church became its teacher."
+  },
+  "verses": [
+    {
+      "ref": "Acts 1:8",
+      "text": "But you will receive power when the Holy Spirit comes upon you, and you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
+    },
+    {
+      "ref": "1 Corinthians 3:16",
+      "text": "Do you not know that you yourselves are God’s temple, and that God’s Spirit dwells in you?"
+    }
+  ],
+  "read": [
+    { "label": "Acts 1", "href": "/study/bible/acts/1" },
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "Acts 8", "href": "/study/bible/acts/8" },
+    { "label": "Acts 9", "href": "/study/bible/acts/9" },
+    { "label": "Acts 10", "href": "/study/bible/acts/10" },
+    { "label": "1 Corinthians 12", "href": "/study/bible/1-corinthians/12" },
+    { "label": "Ephesians 2", "href": "/study/bible/ephesians/2" }
+  ],
+  "differ": {
+    "text": "Where churches differ. Churches share the command Jesus gave, to baptize “in the name of the Father, and of the Son, and of the Holy Spirit” (Matthew 28:19), and they confess that the Spirit is the gift of the risen Jesus to his whole church. They differ on who should be baptized (those old enough to confess faith, or also the children of believers) and how (by going under the water, or by pouring or sprinkling it); on whether gifts such as speaking in tongues continue today as in Acts; and on how churches are led (by bishops, by elders, or by the congregation deciding together). These are questions on which faithful churches differ while confessing one Lord. This stop does not choose between them.",
+    "label": "The Study Bible's notes on Acts 2 set out each view in its own words.",
+    "href": "/study/bible/acts/2"
+  },
+  "care": "If you have been hurt in a church, or by someone at church, what was done to you was wrong, and it was not your fault. You do not have to keep it to yourself. Talk with a parent or another adult you trust, or look at Find Help.",
+  "question": {
+    "ask": "If the church is God's people, why has it done so much harm?",
+    "answer": [
+      "It is a fair question, and the honest answer starts by saying the harm is real. People in churches, leaders among them, have lied, bullied, covered up wrongs done to the weak, and used God's name to get their own way. Christians should say so plainly, and no church gets to point at another.",
+      "The New Testament does not hide this. Paul wrote to the church in Corinth because there were quarrels and divisions among them (1 Corinthians 1:10-11; 11:18). In Revelation the risen Jesus sends letters to seven churches, and most of them get a hard word; to one he says, “You have abandoned your first love” (Revelation 2:4). Jesus' sternest warnings in the Gospels were for religious people. The Bible never pretends that God's people cannot do wrong. It calls them to turn back, and it says they will answer to him.",
+      "The site's Honest Answer on whether you can be a Christian without church names the gap between the church that hurts people and the family in Acts 2 that shared what it had. Then it says, ‘the failures of the counterfeit do not abolish the original. You cannot be disappointed by a forgery unless you carry the image of the genuine article it failed to be.’ The harm done in Jesus' name is measured, and judged, by Jesus himself."
+    ]
+  },
+  "deeper": [
+    {
+      "label": "Can you be a Christian without going to church?",
+      "href": "/answers/can-you-be-a-christian-without-church"
+    },
+    {
+      "label": "What if I'm done with church but not with Jesus?",
+      "href": "/answers/done-with-church-but-not-jesus"
+    },
+    {
+      "label": "Acts 2 in the Study Bible: baptism, the gifts, and the first church",
+      "href": "/study/bible/acts/2"
+    }
+  ],
+  "talk": {
+    "younger": "The church is people, not a building. Who are some people who have helped you know God? How could you help someone else?",
+    "older": "The good news crossed lines people thought could never be crossed: Jews and Samaritans, Jews and Romans. What lines divide people where you live, and what would it look like for a church to cross them?"
+  },
+  "activity": {
+    "kind": "walk",
+    "title": "Out to the ends of the earth",
+    "prompt": "Jesus said the news about him would go out like rings on water: Jerusalem, then Judea and Samaria, then the ends of the earth. Follow it out from the upper room. Use the Next button, or tap a number on the picture.",
+    "intro": "There are five places, from the upper room in Jerusalem to a ship heading out to sea. Start in the upper room.",
+    "laterLabel": "On Jesus' map.",
+    "restart": "Back to Jerusalem",
+    "steps": [
+      {
+        "id": "jerusalem",
+        "name": "Jerusalem: the Spirit comes",
+        "x": 20,
+        "y": 58,
+        "what": "At Pentecost, Jesus' followers were together in one place. Flames like fire rested on each of them, and they were all filled with the Holy Spirit. Visitors from many nations heard them in their own languages. Peter told them about Jesus, and about three thousand were baptized.",
+        "whatRef": "Acts 2:1-41",
+        "later": "The first ring: Jerusalem. The first believers were Jews, in the city where Jesus died and rose.",
+        "laterRef": "Acts 1:8"
+      },
+      {
+        "id": "samaria",
+        "name": "Samaria: Philip",
+        "x": 55,
+        "y": 35,
+        "what": "When persecution scattered the believers, they told the news wherever they went. Philip went to a city in Samaria. Between Jews and Samaritans lay a long and painful history, yet the crowds listened, and there was great joy in that city.",
+        "whatRef": "Acts 8:4-8",
+        "later": "The second ring: Judea and Samaria.",
+        "laterRef": "Acts 1:8"
+      },
+      {
+        "id": "road",
+        "name": "The desert road: an official from Ethiopia",
+        "x": 52,
+        "y": 74,
+        "what": "An angel sent Philip to the desert road from Jerusalem to Gaza. There an official of the queen of Ethiopia sat in his chariot, reading Isaiah. Philip told him the good news about Jesus, and the official was baptized and went on his way rejoicing.",
+        "whatRef": "Acts 8:26-39",
+        "later": "Toward the ends of the earth. To people around the Mediterranean, Ethiopia was the far southern edge of the known world.",
+        "laterRef": "Acts 1:8"
+      },
+      {
+        "id": "caesarea",
+        "name": "Caesarea: a Roman officer",
+        "x": 72,
+        "y": 56,
+        "what": "In the port city of Caesarea lived Cornelius, an officer in the Roman army who prayed to God. God sent Peter to his house. While Peter was still speaking, the Holy Spirit came on everyone listening, and Peter's friends were amazed that the Spirit was given to Gentiles too.",
+        "whatRef": "Acts 10:44-48",
+        "later": "The line between Jew and Gentile is crossed. Peter said that God “does not show favoritism, but welcomes those from every nation who fear Him and do what is right.”",
+        "laterRef": "Acts 10:34-35"
+      },
+      {
+        "id": "ship",
+        "name": "Antioch, and a ship: the news goes out",
+        "x": 84,
+        "y": 87,
+        "what": "In Antioch, Greeks believed too, and the disciples were first called Christians there. Saul, who had hunted the church until the risen Jesus met him on the road to Damascus, was sent out from Antioch with Barnabas. Saul, also called Paul, sailed from place to place starting churches, and at last he taught about Jesus in Rome.",
+        "whatRef": "Acts 11:19-26; Acts 13:1-4; Acts 28:30-31",
+        "later": "The ends of the earth. The book of Acts stops in Rome, and the news is still going out.",
+        "laterRef": "Acts 28:30-31"
+      }
+    ],
+    "finish": "All five seen. From one room in Jerusalem the good news went out to the ends of the earth, and it is still going."
+  }
+}

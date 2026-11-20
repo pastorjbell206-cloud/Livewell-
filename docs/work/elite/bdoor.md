@@ -5234,3 +5234,1119 @@ Psalm 11 onward, in the same shape. At this depth a psalm takes about 1,300
 words; 140 more psalms is roughly 180,000 words. A lighter shape (one passage
 for most short psalms, `hard` only where a real difficulty exists) would serve
 readers of the many short psalms better; that is for the lead to decide.
+
+## Continuation: Psalms 11 to 41 (2026-11-19)
+
+James, on 2026-11-19: "finish the psalms and the rest of the bible doing
+that". The lead's lighter shape is the rule from Psalm 11 on: most psalms are
+one passage for the whole psalm (about 450 to 700 words), with `hard` only
+where the psalm has a difficulty of its own; the major psalms of Book One
+(16, 18, 19, 22, 23, 24, 27, 32, 34, 37, 40) are at full depth, in two or
+three passages.
+
+**Code.** None changed. The validator (`prose(... p.hard ...)` runs only when
+`p.hard != null`), the type (`hard?: string` in `client/src/lib/bible-notes.ts`)
+and `PlainPassages.tsx` (a part with no text returns `null`, so no heading)
+already let `hard` be absent; Psalm 8:1-2 had shipped without one. The
+rendered check below confirms no "The hard verse" heading appears for a
+passage without it.
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 11 | lighter | 1 | none | 494 |
+| 12 | lighter | 1 | none | 451 |
+| 13 | lighter | 1 | care line | 578 |
+| 14 | lighter | 1 | yes | 626 |
+| 15 | lighter | 1 | yes | 584 |
+| 16 | full | 2 | 2 | 1,250 |
+| 17 | lighter | 1 | one line to the book page | 500 |
+| 18 | full | 3 | 3 | 1,753 |
+| 19 | full | 2 | 2 | 1,129 |
+| 20 | lighter | 1 | short | 505 |
+| 21 | lighter | 1 | short | 485 |
+| 22 | full | 3 | 3 | 2,186 |
+| 23 | full | 2 | 1 | 1,132 |
+| 24 | full | 2 | 1 | 936 |
+| 25 | lighter | 1 | none | 533 |
+| 26 | lighter | 1 | one line to the book page | 500 |
+| 27 | full | 2 | 2 | 1,144 |
+| 28 | lighter | 1 | short | 464 |
+| 29 | lighter | 1 | none | 548 |
+| 30 | lighter | 1 | yes | 540 |
+| 31 | lighter | 1 | short | 520 |
+| 32 | full | 2 | 2 | 1,067 |
+| 33 | lighter | 1 | none | 469 |
+| 34 | full | 2 | 2 | 1,192 |
+| 35 | lighter | 1 | short | 470 |
+| 36 | lighter | 1 | none | 450 |
+| 37 | full | 3 | 2 | 1,632 |
+| 38 | lighter | 1 | yes, care | 722 |
+| 39 | lighter | 1 | yes, care | 615 |
+| 40 | full | 3 | 2 | 1,417 |
+| 41 | lighter | 1 | yes | 614 |
+| Total | | 46 | 36 | 25,506 |
+
+Lighter psalms: 20, averaging 531 words. Full psalms: 11, averaging 1,350.
+Each note gained only `"plain": true` at its end.
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 11" to "41". 14 web
+searches: Psalm 16 (1), 19 (2), 22 (3), 23 (2), 24 (1), 24 and 29 together
+(1, Ugarit), 37 (1), 40 (1), and none for the other 23 psalms, whose claims
+rest on the BSB, the repository's deep notes and Hebrew data, and earlier
+ledger rows. Scripts over the repository's Hebrew and headings checked: the
+alphabet patterns of 25, 33, 34 and 37; Miktam (16, 56-60), Maskil (from 32),
+Jeduthun (39, 62, 77), "for remembrance" (38, 70); kasah and nasa repeated in
+32:1 and 32:5; mabbul only in Genesis 6 to 11 and 29:10; hevel three times in
+Psalm 39 and in Ecclesiastes 1:2; the doubled verb of 40:1 and "ears You dug"
+in 40:6.
+
+### Cut or narrowed
+
+Cut (not verified this run): Justin Martyr and Tertullian on 22:16, Pesikta
+Rabbati, Bach and Handel, Peter Flint by name, the Givat HaMivtar skeleton
+(all in Psalm 22's deep note); Papyrus Amherst 63 (Psalm 20); the Targum's
+"King Messiah" (Psalm 21); the year Ugarit was found; the host's duty to
+protect a fugitive guest (Psalm 23); "Israel was not a sea-going people"; "a
+broken pot was not mended"; Babylon's creation-by-combat story (Psalm 33).
+Narrowed: Psalm 13 "one of the shortest laments in the Psalms" (not "the
+shortest in the Bible"); Psalm 24 on Ascension Day became "Many Christians
+read verses 7 to 10 of Jesus going up into heaven"; Psalm 31:5 "Many
+Christians say it before sleep" became an invitation; Hammurabi "in his law
+code" (prologue or epilogue left unstated, since sources differ); the Nahal
+Hever fragment "about the first century AD". One error caught by script and
+fixed: a draft said "hide" (32:3-4) and "hiding place" (32:7) were one Hebrew
+word; they are not, and the sentence now names the words that are repeated
+(32:1 and 32:5).
+
+### Contested matters, and how they are stated
+
+Psalm 16:10 (did David mean resurrection: three views, all agreeing the
+apostles read it of an event). Psalm 19 (one poem or two; "Christians hold
+different views on those, and Psalm 19 does not take a side" on the age of
+the earth and evolution). Psalm 22:1 (the book page's three readings, "They
+are not enemies"; Jewish readings with respect: Megillah 15b and Esther,
+Purim, Rashi's Israel in exile). Psalm 22:16 (ka'ari and the verb; Jewish
+and Christian cases; "no one needs to accuse the other side of bad faith").
+Psalm 23 (tsalmavet: "shadow of death" or "deep darkness"). Psalm 27 (one
+psalm or two). Psalm 30's heading (three readings; "These notes leave it
+open"). Psalm 34's Abimelech (title or slip). John 19:36 (Psalm 34:20, the
+Passover law, or both). Psalm 37:25 (three readings; one use ruled out).
+Psalm 40:6 and Hebrews 10:5 (Hebrew "ears", Greek "a body"; two readings).
+Royal psalms 18, 20, 21: no modern nation or army.
+
+**Psalm 22:1, on the page:** "The book page on the Psalms sets out the three
+main ways Christians have read the cry ... Christians often hold these
+together. They are not enemies. Jewish readers have long read the psalm in
+other ways, and those deserve to be known. The Talmud (Megillah 15b) pictures
+Queen Esther speaking its first line as she went in, uncalled and in danger,
+to the Persian king. ... The medieval teacher Rashi read the ‘I’ of the
+psalm as the people of Israel in exile, crying to God through a long night."
+
+**Psalm 22:16, on the page:** "Here the ancient copies differ, and it is
+honest to say so. The standard Hebrew text, called the Masoretic text, reads
+a word that means ‘like a lion’ ... Other old witnesses have a verb instead.
+The Greek translation, made by Jewish scholars before the time of Jesus,
+reads ‘they dug’. A small Psalms fragment from the Judean desert, found at
+Nahal Hever and copied about the first century AD, has a spelling that many
+scholars read as a verb, though others say the letter is too faint or the
+scribe too careless to be sure. ... the Gospels never quote this verse, so
+nothing in the Christian reading of Psalm 22 depends on settling it."
+
+**Psalm 23 care line:** "If you are grieving, this psalm does not ask you to
+feel calm. Read it slowly, and let the shepherd be with you in the valley you
+are in. Grief is not a failure of faith. If your grief has become too heavy
+to carry, please tell someone you trust, a pastor, a friend or a doctor. The
+Find Help page on this site lists places to turn."
+
+**Psalm 38 on illness:** "If you are ill, this psalm does not mean God is
+punishing you. Please do not let anyone tell you that it does."
+
+Other care lines: 13 (shortened from Psalm 6, pointing back to it), 22:1-11,
+27:7-14 (parents who left), 30, 32 (illness not a sign of hidden sin), 39
+(wanting to "be no more"), 40:1-5. No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` passed with
+no exceptions, the strict quotation script (case and punctuation kept, no
+em-dash, no "..." inside a quotation, no `!` outside quoted Scripture) was
+run, and every passage was printed field by field and read; all 46 sit under
+their right headings. The strict script's last run over 11 to 41 flags only
+reviewed false positives: "blessed" inside quoted Scripture or as a verb, the
+`!` of quoted Scripture in two titles (24:7-10, 26), and three quotations whose
+reference stands before the quote rather than after it.
+
+At the end, one at a time: all 36 content-gate commands in ci.yml, exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 208 chapters in
+plain words; validate-no-emdash 260 files, 0; search index 732 entries up to
+date; passage index 623 files match; verify-sources 22 texts intact). `pnpm
+check`: exit 0. `pnpm test`: 146 files passed, 7 skipped; 1,679 tests passed,
+73 skipped. `pnpm build`: exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs` on port 4603;
+Playwright at 390 wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 11 to 41: 46 passages, 220 parts. Each passage's
+heading and each part's heading and first 60 characters matched the data. The
+10 passages without `hard` show no "The hard verse" heading. No sideways
+scroll, no console or page errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/ps13-390-p0.png` (lighter shape),
+`ps22-390-p0.png` to `p2.png`, `ps23-390-p0.png` and `p1.png`. Server stopped
+by PID, dist/ deleted, no lh-*.json. No code changed, so no ESLint run and no
+Genesis or Acts check was needed.
+
+### Next
+
+Psalm 42, the start of Book Two, in the same lighter shape. At this rate a
+lighter psalm takes about 530 words and a major one about 1,350. One run
+covered 31 psalms (11 full, 20 lighter) in about 25,500 words. Book Two
+(42 to 72) and Book Three (73 to 89) together make one run of about the same
+size. The remaining 109 psalms come to roughly four runs.
+
+## Continuation: Psalms 42 to 72 (2026-11-19)
+
+All of Book Two, in the lighter shape James accepted ("finish the psalms and
+the rest of the bible doing that", 2026-11-19). Most psalms are one passage;
+the major psalms of Book Two (42 and 43 as one poem, 46, 51, 63, 69, 72) are
+at full depth in two or three passages, and 45, 49, 50, 55, 58 and 68 have a
+little more room in two. `hard` appears only where a psalm has a difficulty
+of its own. Each note gained only `"plain": true` at its end. No code changed.
+The notes point to the book page for Sheol, the cursing psalms, the
+headings, "of David", claims of innocence and the royal psalms instead of
+repeating it; the book page was not edited.
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 42 | full (with 43) | 2 | care line | 1,115 |
+| 43 | full (with 42) | 1 | none | 484 |
+| 44 | lighter | 1 | yes | 675 |
+| 45 | more room | 2 | 1 (45:6) | 1,107 |
+| 46 | full | 3 | 1 (no modern city) | 1,198 |
+| 47 | lighter | 1 | none | 479 |
+| 48 | lighter | 1 | short | 504 |
+| 49 | more room | 2 | 1 (49:15) | 816 |
+| 50 | more room | 2 | 1 | 902 |
+| 51 | full | 3 | 2 | 1,929 |
+| 52 | lighter | 1 | short | 535 |
+| 53 | lighter | 1 | none (points to 14) | 480 |
+| 54 | lighter | 1 | none | 436 |
+| 55 | more room | 2 | 1 (to the book page) | 874 |
+| 56 | lighter | 1 | none | 451 |
+| 57 | lighter | 1 | none | 440 |
+| 58 | more room | 2 | 1 (58:6-10) | 1,037 |
+| 59 | lighter | 1 | short | 499 |
+| 60 | lighter | 1 | none | 477 |
+| 61 | lighter | 1 | none | 447 |
+| 62 | lighter | 1 | none | 461 |
+| 63 | full | 2 | 1 | 975 |
+| 64 | lighter | 1 | none | 431 |
+| 65 | lighter | 1 | none | 433 |
+| 66 | lighter | 1 | yes (66:18) | 502 |
+| 67 | lighter | 1 | none | 453 |
+| 68 | more room | 2 | 2 | 1,075 |
+| 69 | full | 3 | 2 | 1,739 |
+| 70 | lighter | 1 | none (points to 40) | 454 |
+| 71 | lighter | 1 | none | 588 |
+| 72 | full | 3 | 1 | 1,406 |
+| Total | | 47 | 20 | 23,402 |
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 42" to "72". Corrected
+on 2026-11-20 to agree with the ledger: 18 ledger rows rest on a web search,
+and they cite these searches by psalm: 42 (the Gethsemane echo; the ledger
+counts it as one search shared with 43), 43 (the manuscripts joining 42 and
+43), 45 (2, the translations of 45:6 and the Targum), 46 (1, "be still" and
+Luther's hymn, two rows), 48 (1, Zaphon), 51 (2, 51:5 and 51:11, three rows),
+63 (1, the morning psalm), 68 (2, the cloud-rider title and Ephesians 4:8),
+69 (1, the New Testament uses, 69:5 and the curses, three rows), and 72 (2:
+Hammurabi's laws, in Harper's and King's translations, and the Targum). The
+list first printed here said "14 web searches" and did not give Hammurabi
+its own entry; the ledger's own headings add to 13 or 14, depending on
+whether 42 and 43 are counted apart. Scripts over
+the repository's Hebrew word data checked: the counts of YHWH and Elohim in
+Books One and Two (273 and 49; 28 and 198); tehom in 42:7 and Genesis 1:2;
+nimtsa me'od (46:1); 'imanu and Immanu-el; "take" (49:15, Genesis 5:24,
+73:24); bara (51:10); "Holy Spirit" in the Old Testament only at 51:11 and
+Isaiah 63:10-11; elem in 58:1; 'akh six times in Psalm 62; dumiyah (62:1,
+65:1); hevel (62:9); "fat and fatness" (63:5); the word for dawn (63:1);
+dabaq (63:8, Genesis 2:24, Ruth 1:14); "the river" (66:6). The BSB was
+compared for 53 and 14, 57:7-11 and 108:1-5, 60:5-12 and 108:6-13, 70 and
+40:13-17, 71 and 31, and the "of David" headings after 72.
+
+### Cut or narrowed
+
+Cut (not verified this run, or met only secondhand): the claim that the Greek
+translators used the same word (perilypos) in the refrain of 42 and 43 and in
+Mark 14:34; the Peshitta's "gave" at 68:18; Rashi, Kimchi and Ibn Ezra on
+Psalm 72 (met only in Gill); Calvin on 51:5 (secondhand); the rabbinic
+tradition that David was born of an unlawful union (secondary only);
+Chrysostom's saying on Psalm 63 (secondhand), Athanasius and Benedict;
+Mowinckel by name (47); Mesopotamian texts on feeding the gods (50); the
+Greek heading of Psalm 71; the 701 BC and Maccabean dates (44, 46, 48);
+Ahithophel's death (55); the year of Luther's hymn. Narrowed: the Targum on
+45 ("speaks to the king of this psalm as the anointed one", not "King
+Messiah", since editions differ); the Apostolic Constitutions ("church
+orders from the fourth century, such as ..."); Hammurabi paraphrased with no
+quotation marks and no prologue or epilogue named; "Some Bibles" for the
+NASB's "cease striving"; Romans 2:6 as words found in 62:12 and Proverbs
+24:12; 1 Samuel 24 as "Soon after" the Ziph chase. Two wordings in the brief
+are not the BSB and were not used: 56:8 reads "Put my tears in Your bottle",
+and 71:9 reads "Do not discard me in my old age".
+
+### Contested matters, and how they are stated
+
+The Elohistic Psalms: an observation from the Hebrew counts, "No one knows for
+sure why the collectors did this." 42 and 43 as one poem (most readers; some
+medieval copies join them). 45:6 (vocative "O God" in most Bibles; court
+language and elohim of judges; "your divine throne" and "your throne is from
+God"; Jewish readings to the king or to God; the Targum; "Both readings are
+held in good faith"). 46:10 ("let go", "stop"; a command first to the
+nations). 47 (a yearly feast of God's kingship: a view the Old Testament does
+not describe directly). 48 and 46 (no modern city or state). 49:15 (rescue
+from early death, or hope beyond it). 50 (two readings of the prophets on
+sacrifice). 51:4 (three readings). 51:5 (Western original sin after
+Augustine, some adding shared guilt; Orthodox ancestral sin; a poetic
+reading). 51:11 (the Spirit for a task in the Old Testament; John 14:16 and
+Ephesians 1:13; traditions that teach a believer can fall away; "not a cause
+for division"). 51:18-19 (later addition or David's own). 54 ("strangers").
+58:1 (elem or elim; human judges or unseen powers). 59:11 and 13. 60 (the
+numbers 12,000 and 18,000; three explanations, "these notes leave it open";
+victory heading and defeat psalm). 63 (which wilderness flight). 67:6 (thanks
+or prayer). 68:18 and Ephesians 4:8 (the Targum's "gave"; a conqueror
+receives and gives; Acts 2:33). 69 (the pattern reading; the curses beside
+Luke 23:34). 70 (the meaning of "to bring remembrance"). 71 (David or an
+older worshipper; "a portent"). 72 (Solomon's prayer, David's, or a
+coronation psalm; Jewish and Christian readings; 72:20).
+
+**Psalm 51's heading and Bathsheba, on the page:** "The heading points to 2
+Samuel 11 and 12, and it is right to say plainly what happened. King David
+saw Bathsheba, the wife of Uriah, one of his soldiers, while Uriah was away at
+war. “Then David sent messengers to get her” (2 Samuel 11:4). He was the
+king, and he used his power over her. She became pregnant. To hide what he
+had done, David sent a letter to his commander ... Uriah died. The Bible puts
+the blame on David. ... Nothing in the story or the psalm blames Bathsheba."
+
+**51:5, on the page:** "Christians have read it in different ways. Many in the
+Western church, following Augustine, read it as teaching original sin: that
+since Adam every person is born with a nature already bent toward sin, and
+some add that they share Adam's guilt (Romans 5:12). Orthodox Christians speak
+of ancestral sin: we inherit death and a pull toward sin, but not guilt.
+Others read the verse as a poem's way of saying that David's sin goes all the
+way down, as far back as he has been alive. Whichever reading is right, the
+‘I’ of the verse is David. It does not say that his mother sinned by
+conceiving him, that the love of husband and wife is sinful, or that a baby is
+anything less than precious to God."
+
+**58:6-10, on the page:** "This is one of the hardest passages in the Psalms,
+and the book page lists verse 10 among them. These notes do not soften the
+words. They say what they say. The book page's part on the cursing psalms sets
+out four ways Christians read lines like these ... Thoughtful believers hold
+each view, and these notes do not choose between them. One thing is not open:
+no reading of this psalm has ever made it right to harm anyone."
+
+**Psalm 69's curses beside "Father, forgive them", on the page:** "Most
+Christian readers do not put these curses in Jesus' mouth. They say the New
+Testament takes the psalmist's sufferings as a pattern for Jesus, but the
+curses remain David's own prayer. Jesus, the Son of David, prayed the opposite
+way. ... Others read the curses as God's real judgment on those who finally
+reject him. On that reading the New Testament applies them not as personal
+revenge but as a sober warning, as Acts does of Judas." On Romans 11:9-10:
+Paul writes "with grief, not scorn", the hardening is "in part" and for a
+time, and "These verses give no one any reason to blame or look down on the
+Jewish people".
+
+### Care lines included
+
+42:1-5 (the downcast soul; no diagnosis of anyone; the Psalm 13 form with the
+Find Help page). 51:1-6 (a guilt-laden reader: 1 John 1:9; and, separately,
+anyone harmed by a person with power over them: "What was done to you was
+wrong, and it was not your fault ... The Find Help page on this site lists
+places to turn"). 55:12-23 (the betrayed, with the Find Help page). 58:6-11
+(a parent who lost a baby). 68:1-18 (the fatherless and the lonely). 69:1-12
+(the sinking and the shame, with the Find Help page). 71 (the old, those who
+care for them, and an old person low in spirit). No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` and the
+strict quotation script, and every passage printed field by field and read;
+all 47 passages sit under their right headings. One slip: the Psalm 70 commit
+(ca0fda48) went in while the validator flagged "Aha, aha!" in single marks
+(the check's output was piped and its exit code hidden); it was fixed in the
+Psalm 72 commit, and the validator has passed with exit 0 since. The strict
+script's last run over 42 to 72 flags only reviewed false positives: the `!`
+of quoted Scripture in three titles (55, 69:13-21, 70), "Your truth" in 43's
+Scripture title, and "be blessed" as a verb inside Scripture (72).
+
+At the end, one at a time: all 38 content-gate commands in ci.yml, exit 0
+each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 239
+chapters in plain words; no-emdash 260 files, 0; search index 733 entries up
+to date; passage index 623 files match; explorer index current; verify-sources
+22 texts intact). `pnpm check`: exit 0. `pnpm test`: 147 files passed, 7
+skipped; 1,693 tests passed, 73 skipped. `pnpm build`: exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs` on port 4601;
+Playwright at 390 wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 42 to 72: 47 passages, 208 parts. Each passage's
+heading and each part's heading and first 60 characters matched the data. The
+27 passages without `hard` show no "The hard verse" heading. No sideways
+scroll, no console or page errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/ps51-390-p0.png` to `p2.png` and
+`ps69-390-p0.png` to `p2.png`. Server stopped by PID, dist/ deleted, no
+lh-*.json. No code changed.
+
+### Next
+
+Psalm 73, the start of Book Three (73 to 89), in the same shape. Book Two took
+about 23,400 words: lighter psalms about 480 words, major ones 1,000 to 1,900.
+
+## Continuation: Psalms 73 to 106 (2026-11-20)
+
+Books Three (73 to 89) and Four (90 to 106), in the lighter shape James
+accepted. Most psalms are one passage; 73, 88, 89, 90, 91, 103 and 104 are
+at full depth (three passages each); 74, 77, 78, 82, 84, 95, 96, 105 and 106
+have two. `hard` appears only where a psalm has a difficulty of its own.
+Each note gained only `"plain": true` at its end. No code changed; the book
+page was not edited (no error found in it). Before starting, the "Sources"
+list of the Psalms 42 to 72 report was corrected to agree with the ledger
+(18 ledger rows rest on a search; Hammurabi's laws now its own entry; the
+old "14 web searches" explained).
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 73 | full | 3 | 1 (doubt met, not scolded) | 1,730 |
+| 74 | more room | 2 | none | 1,003 |
+| 75 | lighter | 1 | none | 487 |
+| 76 | lighter | 1 | none | 491 |
+| 77 | more room | 2 | 1 (care) | 958 |
+| 78 | more room | 2 | none | 1,032 |
+| 79 | lighter | 1 | 1 (to the book page) | 590 |
+| 80 | lighter | 1 | none | 554 |
+| 81 | lighter | 1 | none | 517 |
+| 82 | more room | 2 | 1 (82:6) | 959 |
+| 83 | lighter | 1 | 1 (the names) | 585 |
+| 84 | more room | 2 | 1 (84:11) | 977 |
+| 85 | lighter | 1 | none | 477 |
+| 86 | lighter | 1 | none | 490 |
+| 87 | lighter | 1 | none | 467 |
+| 88 | full | 3 | 1 (care) | 1,545 |
+| 89 | full | 3 | 1 | 1,656 |
+| 90 | full | 3 | 1 (grief) | 1,447 |
+| 91 | full | 3 | 2 | 1,524 |
+| 92 | lighter | 1 | none | 508 |
+| 93 | lighter | 1 | none | 446 |
+| 94 | lighter | 1 | 1 (to the book page) | 568 |
+| 95 | more room | 2 | none | 805 |
+| 96 | more room | 2 | none | 801 |
+| 97 | lighter | 1 | 1 (97:10) | 506 |
+| 98 | lighter | 1 | none | 476 |
+| 99 | lighter | 1 | none | 459 |
+| 100 | lighter | 1 | none (100:3 in hearers) | 509 |
+| 101 | lighter | 1 | 1 | 542 |
+| 102 | lighter | 1 | 1 (care) | 679 |
+| 103 | full | 3 | 2 | 1,576 |
+| 104 | full | 3 | 2 | 1,650 |
+| 105 | pair, more room | 2 | 1 (105:25) | 1,043 |
+| 106 | pair, more room | 2 | 1 | 1,169 |
+| Total | | 57 | 21 | 29,226 |
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 73" to "106". Nine web
+searches: 74 (1, Leviathan and Litan at Ugarit), 82 (2, the readings of 82:6;
+the Talmud's Sinai reading), 91 (1, Psalm 91 at Compline in the Rule of
+Benedict), 92 (1, shared with 93 and 94: the Mishnah's psalm for each day),
+100 (1, the written and margin readings of 100:3), 104 (1, the Great Hymn to
+the Aten). The rest rest on the BSB, the repository's deep notes, the book
+page, the site's context page on Psalm 91, earlier ledger rows, and scripts
+over the repository's Hebrew word data and headings: Asaph in 50 and 73-83;
+'akh three times in Psalm 73; laqach (73:24); "Do Not Destroy" (57-59, 75);
+elohim in 82:1, 6; the only Book Three heading naming David (86); the last
+Hebrew word of 88:18; Moses only in 90's heading; shuv (90:3, 13); ma'on
+(90:1, 91:9); the Sabbath only in 92's heading; "reigns" in 93, 96, 97, 99
+and none in 100-106; elilim (96:5); zarua "sown" (97:11); ruach (104:3, 4,
+29, 30); "Hallelujah" first at 104:35; verse counts (78 the second longest).
+
+### Cut or narrowed
+
+Cut (not verified this run): the Seleucid king and 167 BC (74, 79), 1
+Maccabees (79); 701 BC and the Greek heading's note (76); 722 BC and
+Hezekiah (78, 80); 597 BC (89, the event told from 2 Kings instead);
+Mowinckel and the enthronement festival (93, 97); the Greek headings of 91,
+94, 95, 104; the date of the Ugarit tablets; the fourteenth-century date of
+the Aten hymn; the century of Benedict's Rule; the Black Death and the
+amulets (in the Psalm 91 context page, not repeated); "Glorious things of
+thee are spoken" and "Old Hundredth" (hymns, not attempted). Narrowed:
+"the longest heading" to "one of the longest" (88); "the only heading that
+names a day" to "names the Sabbath" (92, since 18 names a day); the Talmud's
+reading of 82:6 given with no tractate or rabbi on the page; the Aten
+scholars not named on the page; "Jesus wept over Jerusalem" to "grieved"
+(81, Matthew 23:37); "Israel learned these words by heart" cut (86).
+Quotations caught by the strict script and the validator and fixed before
+commit: Isaiah 1:23, James 1:27, Romans 8:32, Matthew 4:6 (the devil's
+words with "he said" inside them), John 10:35 (BSB em-dashes), 105:17 and
+91:9 (em-dashes), and several capital letters.
+
+### Contested matters, and how they are stated
+
+73:24 (honour in this life, or hope beyond death; the book page's Sheol
+part). 74 (587/586 most scholars; a later attack suggested). Leviathan in
+74 and 104 (creation or the Red Sea; at Ugarit Baal's foe). 76 (the
+Assyrian withdrawal, or worship with no one battle). 78's date. 80 (the
+north under Assyria; prayed in Judah for the north). 81:3 (which feast).
+**82:6, on the page:** "Readers have given three main answers, and each is
+held by careful people. Some read them as human rulers and judges. They
+judged in God's name, so they were given a high title. ... Others read them
+as heavenly beings, members of God's council who were given charge over the
+nations and ruled them badly. ... An old Jewish reading, found in the
+Talmud, takes the words as spoken to Israel at Mount Sinai. ... None of
+these readings means that there are other gods equal to the LORD. ... These
+notes do not choose between them, and each can make sense of Jesus' words in
+John 10." 83 (which war). 87:4-6 (the nations as citizens, or Israelites
+scattered). 89 (Jewish and Christian readings of the promise, "They part
+over who Jesus is"; Book Four as an answer is "a reading of the book's
+order"). 90's heading (Moses; later; between). 98's victory (exile or
+exodus). 100:3 (two readings, "Both readings say something true"). 104
+(the Aten hymn, as a comparison scholars discuss; no position on the age of
+the earth or evolution). 105:25 (sovereignty and choice). 106:30-34 (three
+readings of the conquest texts; "No reading of these verses gives anyone
+today any right to harm another person or people").
+
+### Care lines included
+
+73:1-14 (doubt: "If you have doubts like these, this psalm does not scold
+you"). 77:1-9 (sleepless nights; a doctor, a pastor or a friend; Find Help).
+79 and 83 (no people today named as enemy; "no ground for contempt or
+hatred toward any people living today"). 88:13-18, the fullest (no
+diagnosis; do not carry it alone; a doctor, a pastor or a friend; "If you
+have thoughts of hurting yourself, speak to someone today"; a crisis line;
+the local emergency number, named only as that; Find Help; and for those
+who sit with someone in the dark). 90:7-12 (grief; no loss called
+deserved). 91 (not a guarantee; never a reason to refuse medical care; those
+who prayed it over someone they lost "did not pray wrong"). 94 (anxiety).
+102 (illness not punishment; sleeplessness and loneliness; Find Help). 103
+(healing not promised now; keep seeing a doctor; Find Help; the sentence on
+fathers). 106 (no blame on the Jewish people). No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` with its
+exit code read directly (never through a pipe), exit 0 each time; the strict
+quotation script (its last run over 73 to 106: 0 problems); and every passage
+printed field by field and read: all 57 sit under their right headings.
+
+At the end, one at a time: all 38 content-gate commands in ci.yml, exit 0
+each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 273
+chapters in plain words; no-emdash 260 files, 0; search index 733 entries up
+to date; passage index 623 files match; explorer index current;
+verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`: 147
+files passed, 7 skipped; 1,698 tests passed, 73 skipped. `pnpm build`:
+exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs` on port 4602;
+Playwright at 390 wide, deviceScaleFactor 1, `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 73 to 106: 34 chapters, 57 passages, 249 parts;
+each passage's heading and each part's heading and first 60 characters
+matched the data; the 36 passages without `hard` show no "The hard verse"
+heading; no sideways scroll; no console or page errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/ps88-390-p2.png` and `ps91-390-p1.png`
+(the site's sticky masthead shows across the middle of these element
+captures, as in earlier runs; it is the capture, not the page). Server
+stopped by PID, dist/ deleted, no lh-*.json. No code changed.
+
+### Next
+
+Psalm 107, the start of Book Five, in the same shape. Books Three and Four
+took about 29,200 words: lighter psalms about 500 words, major ones 1,450 to
+1,750. Book Five (107 to 150, with 119) is about one more long run, or two.
+
+## Continuation: Psalms 107 to 150 (2026-11-20)
+
+Book Five, which completes the Psalms, in the lighter shape James accepted
+("finish the psalms and the rest of the bible doing that", 2026-11-19). Most
+psalms are one passage; 107, 110, 118, 119, 121, 130, 137, 139 and 145 are at
+full depth (two to five passages); 109, 115, 116, 122, 127 and 128 (a pair),
+136 and 146 to 150 have a little more room. `hard` appears only where a psalm
+has a difficulty of its own. Each chapter note gained only `"plain": true`.
+No code changed; the book page was not edited (no error found). The Songs of
+Ascents' background is explained once, in 120, and 121 to 134 point back; the
+Hallel is explained once, in 113. Psalm 119 has five passages, not 22: what it
+is and how it is built (22 stanzas of eight lines, each line of a stanza
+beginning with its letter, verified over the Hebrew; the eight words as the
+BSB renders them, counted by script: law, testimonies, precepts, statutes,
+commandments, judgments or ordinances, word, and word or promise; all but
+verses 3, 37, 90 and 122 use one), then 9-16 (a young man's way), 17-64
+(delight: law as gift), 65-104 (the word in affliction, 67, 71, 75, with a
+care line), 105-176 (the lamp, and the lost sheep of the last verse).
+
+### Per psalm
+
+| Psalm | Shape | Passages | `hard` | Words |
+|---|---|---|---|---|
+| 107 | full | 3 | 1 | 1,803 |
+| 108 | lighter | 1 | 0 | 537 |
+| 109 | more room | 2 | 1 | 1,286 |
+| 110 | full | 3 | 1 | 1,786 |
+| 111 | lighter | 1 | 0 | 562 |
+| 112 | lighter | 1 | 1 | 571 |
+| 113 | lighter | 1 | 1 | 643 |
+| 114 | lighter | 1 | 0 | 521 |
+| 115 | more room | 2 | 0 | 953 |
+| 116 | more room | 2 | 1 | 1,068 |
+| 117 | short | 1 | 0 | 388 |
+| 118 | full | 3 | 1 | 1,528 |
+| 119 | full | 5 | 2 | 2,617 |
+| 120 | lighter | 1 | 0 | 576 |
+| 121 | full | 2 | 1 | 983 |
+| 122 | more room | 2 | 1 | 953 |
+| 123 | short | 1 | 0 | 416 |
+| 124 | lighter | 1 | 0 | 496 |
+| 125 | lighter | 1 | 1 | 507 |
+| 126 | lighter | 1 | 0 | 474 |
+| 127 | more room | 2 | 1 | 978 |
+| 128 | more room | 1 | 1 | 584 |
+| 129 | lighter | 1 | 1 | 553 |
+| 130 | full | 2 | 1 | 890 |
+| 131 | short | 1 | 0 | 426 |
+| 132 | lighter | 1 | 1 | 718 |
+| 133 | short | 1 | 0 | 396 |
+| 134 | short | 1 | 0 | 372 |
+| 135 | lighter | 1 | 1 | 589 |
+| 136 | more room | 2 | 1 | 960 |
+| 137 | full | 3 | 1 | 1,540 |
+| 138 | lighter | 1 | 0 | 486 |
+| 139 | full | 3 | 1 | 1,480 |
+| 140 | lighter | 1 | 1 | 547 |
+| 141 | lighter | 1 | 0 | 510 |
+| 142 | lighter | 1 | 1 | 585 |
+| 143 | lighter | 1 | 1 | 551 |
+| 144 | lighter | 1 | 1 | 630 |
+| 145 | full | 3 | 0 | 1,223 |
+| 146 | more room | 1 | 0 | 536 |
+| 147 | more room | 2 | 0 | 788 |
+| 148 | more room | 2 | 0 | 677 |
+| 149 | more room | 1 | 1 | 540 |
+| 150 | more room | 1 | 0 | 451 |
+| Total | | 70 | 26 | 35,678 |
+
+**Whole book (Psalms 1 to 150): 150 psalms, 242 passages, 127,103 words** in
+plain words (happening, hearers, later, hard, asks).
+
+### Sources
+
+All in `bdoor-ledger.md`, "The plain notes on Psalm 107" to "Psalms 148 to
+150". Fourteen web searches: 109 (1, the NRSV's "They say" at 109:6), 110 (3:
+the Talmud's Abraham reading; Ibn Ezra and Kimhi on David; a rabbinic Messiah
+reading), 113 (1, Mishnah Pesachim 10:6-7), 115 (1, mis pi and pit pi), 120 (1,
+Mishnah Sukkah 5:4 and the fifteen steps), 130 (1, the penitential psalms and
+Luther's 1524 hymn), 136 (1, the Great Hallel, Pesachim 118a), 137 (1, the
+weekday custom of saying 137 before grace and the modern Jewish debate on
+137:9), 145 (1, the nun line in 11QPs(a), the Greek, the Syriac). Scripts over
+the repository's Hebrew and the BSB: 109's satan root; 111 and 112 and 119
+acrostics; 119's eight words; 121's shamar six times; 122's shalom; 127's
+yedid; 136's refrain 26 times; 145's missing nun; 146's adam/adamah; Ezra 7:9's
+ma'alah; the shortest psalm (117), the longest chapter (119); "Hallelujah"
+openings and closings; "Hallelujah" in the New Testament only in Revelation 19.
+
+### Cut or narrowed
+
+Cut: Cyrus's date (107, 126, 147: the book page's 539 BC pointed to instead);
+Rowley, Pfeiffer, Treves, the Hasmonean date, Tutankhamun's footstools, Keel,
+Justin and Hezekiah, Philo, 2 Enoch, Luther, Calvin, Hay and Hengel (110); Rashi
+by name on 110 (sources disagree); the location of the midrash on 110:1 (given
+without a reference); Ugarit's Prince Sea (114); Sennacherib and 701 BC (124 to
+126); the rare forgiveness word in 130:4; funerals and Lent customs (116, 130);
+the Septuagint headings of 138, 143, 144; Hermon's height (133); the "middle
+chapter of the Bible" (117); Easter use of 118 as a custom; snow in Jerusalem
+(147); "Jewish readers have often read 149 as final justice" (deep note, not
+verified); the Maccabean date of 149. Narrowed: "the only psalm dated by its
+first line" to "its first line tells us roughly when" (137); "often read at
+funerals" to "can be a comfort" (116:15); "Many believers pray it" to "You may
+pray it" (121); the Greek witnesses to 145's nun line to "some copies" because
+editions differ; the Mishnah's fifteen steps stated with "it does not say these
+were the songs they sang there". Quotations caught by the strict script and the
+validator and fixed before commit: lowercase BSB openings (109:16, 115:7,
+124:3-5, 137:3, 144:15, 146:8, 148:11), Ruth 2:4's comma, Matthew 10:29-31,
+an ellipsis in Colossians 3:16 (replaced by Ephesians 5:19), Luke 19:41-42 run
+across "and said" (now 19:42 alone), and a title with an exclamation mark (117)
+and one with an ellipsis (134).
+
+### Contested matters, and how they are stated
+
+109:6-19: the enemies' curse quoted, or the psalmist's own words; both held,
+no side. 110:1: "Jewish and Christian readers have answered differently, and
+each reading deserves respect"; the Talmud (Abraham), Ibn Ezra and Kimhi
+(David), some rabbinic writings (the King Messiah to come), modern scholars (a
+crowning oracle), the Christian reading; "Neither reading is dishonest. ...
+They part over who Jesus is". 110:5-7 battle poetry, no modern nation. 118:22,
+the builders in Acts 4 "those particular leaders. It is never a charge against
+the Jewish people, which this site rejects." 120: the meaning of "Songs of
+Ascents" (pilgrims, likely not certain; the Mishnah's steps; the return).
+122:6: no claim about any modern state; three Christian applications, no
+side. 132: conditional or unconditional promise; Jewish and Christian hopes.
+137:8-9: the book page's four readings, one sentence each, no side; Jewish
+wrestling stated only as far as verified. 139: the abortion debate (what the
+text says; Christians do not all draw every conclusion alike; no political
+position). 139:19-22: "hate" as reject; pointer to the book page. 145: the
+nun line lost early or added later; both held. 149:6-9: battle poetry; no
+warrant for violence; the sword as the word of God given as a reading.
+
+### Care lines included
+
+109 ("No reading of this psalm makes it right to harm anyone, least of all a
+child or a widow"). 107 (not every prayer answered alike; the sick not to
+blame; Psalm 88 and Find Help). 113 and 127 (the childlessness lines of the
+Luke 1 note word for word; 127 adds that a home without children, or a single
+person, is not less blessed in God's eyes); 128 points back. 116:15 (grief;
+Find Help). 119:71 (not a line for another's pain; Find Help). 121:7 (not a
+promise of no harm; the Psalm 91 note; "it is not because you trusted God too
+little"). 130 (in the form of the Psalm 13 note). 137 (rage heard; hand it to
+God; a trusted person; help today; Find Help). 139 (every person, with any
+disability or illness, made by God and precious; grief or guilt about a
+pregnancy or the loss of a child met with gentleness; a trusted pastor or
+friend; Find Help). 142 (loneliness; Find Help). 143 (a faint spirit; Find
+Help). 146 (no modern figure in view). No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` with its
+exit code read directly, exit 0 each time; the strict quotation script (its
+last run over 107 to 150: 0 problems); every passage printed field by field and
+read: all 70 sit under their right headings.
+
+At the end, one at a time: all 38 content-gate commands in ci.yml, exit 0 each
+(validate-bible-notes: 66 introductions, 1,189 chapter notes, 317 chapters in
+plain words; no-emdash 260 files, 0; search index 733 entries up to date;
+passage index 623 files match; explorer index current; verify-sources 22
+texts intact). `pnpm check`: exit 0. `pnpm test`: 147 files passed, 7
+skipped; 1,701 tests passed, 73 skipped. `pnpm build`: exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs --port 4603`;
+Playwright at 390 wide, deviceScaleFactor 1, `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 107 to 150: 44 chapters, 70 passages, 306 parts;
+the whole book, Psalms 1 to 150: 150 chapters, 242 passages, 1,081 parts. Each
+passage's heading and each part's heading and first 60 characters matched the
+data; the 129 passages without `hard` show no "The hard verse" heading; no
+sideways scroll; no console or page errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/ps119-390-p0.png`, `ps137-390-p2.png`,
+`ps139-390-p1.png` (the sticky masthead shows across the middle of these
+element captures, as in earlier runs; it is the capture, not the page).
+Server stopped by PID, dist/ deleted, no lh-*.json. No code changed.
+
+### Next
+
+The Psalms are complete. The next book in the lighter shape is whichever
+James names next.
+
+## Romans: the book page and Romans 1 to 8 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". The
+Psalms were finished; Romans is the first of the New Testament letters.
+
+### The book page (`/study/bible/romans`, same address)
+
+Data only, in `client/public/bible/notes/romans/intro.json`, field `teaching`
+(the rest of the file untouched; the field appended). Fourteen headed parts:
+Romans in a minute; Who wrote it (Paul; Tertius, 16:22; Phoebe "very likely"
+the carrier, 16:1-2; diakonos read two ways; the form of chapter 16); When
+and where (Corinth, about AD 57); The churches in Rome (house churches; the
+names of chapter 16; Claudius "about AD 49, disputed"; the return after 54 as
+"a reconstruction and not something the letter says"); Why Paul wrote (his
+own reasons, then the views); The argument in one page; Romans and the Old
+Testament (Habakkuk 2:4 in its place; Abraham; Adam); Key words, plainly
+(faith, grace, law, flesh, sin, the Spirit); Righteousness and ‘justified’
+(Lutheran and Reformed, Catholic in Trent's words, Orthodox, the 1999 Joint
+Declaration; no side); ‘Works of the law’: two readings (traditional; the new
+perspective: Sanders 1977, Dunn's 1982 lecture, Wright; no side); ‘Faith in
+Christ’ or ‘the faithfulness of Christ’ (Hays 1983; no side); Romans in the
+church's history (Augustine 386, Luther 1515-16 and 1545, Wesley 24 May
+1738, Barth 1919/1922, Sanders 1977, the Joint Declaration 1999); What
+Romans is not (not only a private road to heaven; not against the Jewish
+people; not a political programme; not loose verses); How to read Romans.
+Then 12 hard passages (1:18, 1:26, 2:14, 3:25, 5:12, 7:14, 8:28, 9:13, 9:18,
+11:26, 13:1, 16:7), 14 key words, a timeline of 14 entries, one map on the
+"mediterranean" frame (Corinth, Rome, Jerusalem), a `mapNote` (Spain beyond
+the west edge; Illyricum mostly beyond the top edge), and six Go deeper pages.
+
+Words: 4,759 in the fourteen parts.
+
+**Code.** None in the app. `client/src/pages/study-bible/teaching.test.tsx`:
+Romans added to the list of books with a teaching page, and one line letting
+Romans's map use the "mediterranean" frame. Nothing else.
+
+### Romans 1 to 8 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Romans 1 | 5 (Paul, servant and apostle: the gospel about God's Son; ‘I long to see you’; ‘I am not ashamed of the gospel’; the truth pushed away, and glory exchanged; ‘God gave them over’) | 3,978 |
+| Romans 2 | 5 (‘You who pass judgment’; ‘According to his deeds’; the law written on the heart; ‘You who teach others’; circumcision of the heart) | 3,178 |
+| Romans 3 | 4 (‘Much in every way’: God stays faithful; ‘There is no one righteous’; ‘But now’: righteousness from God, and the cross; no boasting, one God, the law upheld) | 2,911 |
+| Romans 4 | 4 (Abraham believed, and David's blessing; before circumcision: the father of all who believe; the promise rests on grace; ‘Against all hope’: raised for our justification) | 2,585 |
+| Romans 5 | 4 (peace with God, and hope that does not disappoint; ‘While we were still sinners’; sin and death through one man; the gift is not like the trespass) | 2,724 |
+| Romans 6 | 3 (‘Shall we continue in sin?’ baptized into his death; dead to sin, alive to God; slaves of righteousness, and the gift of God) | 2,005 |
+| Romans 7 | 3 (free from the law, joined to Christ; is the law sin?; ‘I do not do what I want’) | 2,197 |
+| Romans 8 | 5 (‘No condemnation’; ‘Abba, Father’: children and heirs; creation groans, and the Spirit helps; ‘All things work together for good’; ‘Who shall separate us?’) | 3,559 |
+| Total | 33 | 23,137 |
+
+Every passage has a `hard` part but Romans 1:8-15. Every Old Testament
+quotation is named by book and verse and read in its own place (the chain of
+3:10-18 one by one). After each chapter every passage was printed field by
+field: all 33 sit under their right headings. Each chapter note gained only
+`"plain": true`. One commit per chapter, with its ledger rows.
+
+### Sources
+
+All in `bdoor-ledger.md` under "Romans's book page" and "The plain notes on
+Romans 1" to "8". 20 web searches: 8 for the book page, then 2, 1, 2, 1, 1,
+0, 3 and 2. Reused: the Roman-world and Jewish-life portraits and wrom-ledger
+(Claudius, Erastus, prostatis, Phoebe, slavery, Priene), facts-ledger (Wesley),
+apol-ledger (Wesley's "General Deliverance"), the justification doctrine
+study, the Acts 2 and 13 notes, the Genesis 15 and 50 notes, the Psalm 103
+note, and the Honest Answers. A strict quotation check matched every
+double-quoted Scripture to the verse it cites, exact in case and punctuation.
+
+### Cut or narrowed
+
+Cut: Rome's population; Wesley going "unwillingly"; Calvin's "chief hinge";
+the later signers of the Joint Declaration; Karl Adam's line on Barth;
+Campbell's reading of 1:18-32; ancient same-sex practices described in
+detail; Josephus on the AD 19 expulsion; the Amidah's "gives life to the
+dead"; rabbinic Abraham keeping the whole law; Anselm and Abelard by name;
+Ambrosiaster, Gregory of Nyssa, Kümmel, Stowers, Jeremias by name; Wesley on
+Romans 7 (the search did not confirm his reading, so he is not named there);
+the mystery religions; height and depth as star-words; Augustus's adoption.
+Narrowed: Phoebe "very likely"; 1:26 "which most readers take in the same
+sense"; the Shema "recited", not "daily"; the 8:28 manuscripts stated
+generally (the repository's Greek lacks theos; the BSB has "God works").
+
+### Contested matters, and how they are stated
+
+Authorship (agreed); date (about 57); the Roman setting (a reconstruction);
+purpose (views); natural knowledge of God (Vatican I 1870, Belgic Confession,
+Barth 1934; no side); 1:26-27 (below); who 2:1 addresses; judgment by works
+(three readings); the Gentiles of 2:14 and those who never heard (Honest
+Answer); "true Jew" in 2:28-29; how deep sin reaches; 3:25 and the atonement
+(below); "uphold the law"; Paul and James; baptism (what all share; the Acts
+2:37-41 note for the differences); original sin and 5:12 (below); "all" in
+5:18 (universalist, Reformed, Arminian; no side); continuing sin (Reformed,
+Lutheran, Wesleyan); the law's continuing use; the "I" of Romans 7 (below);
+Abba; 8:28-30 and perseverance (below). "Justified" in the three traditions
+and the works-of-the-law and pistis Christou readings on the book page; each
+says "These notes do not choose".
+
+### Care lines
+
+1:24-32 (gay readers and those who love them); 5:1-5 (suffering, the Genesis
+50 form, Find Help, the suffering Honest Answer); 7:14-25 (repeated failure
+and addiction: doctor, pastor, counsellor, a group, Find Help); 8:12-17 (an
+absent or harmful father, the Psalm 103 form); 8:28-30 (fresh grief, harm,
+danger, Find Help); 8:31-39 (afraid of having lost God's love). 2:17-24
+carries the Acts 2 sentences rejecting the use of such texts against the
+Jewish people. No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check and `validate-bible-notes`
+(romans), exit 0. At the end, all 38 content-gate commands of ci.yml, one at
+a time: exit 0 each (validate-bible-notes: 325 chapters in plain words;
+search index 733 entries up to date; passage index 623 files match;
+verify-sources 22 texts intact). `pnpm check`: clean. `pnpm test`: 147 files
+passed, 7 skipped; 1,708 tests passed, 73 skipped. ESLint on the changed
+test: clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,042
+pages), `pnpm run audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (no stray servers
+on 4600 to 4699 before or after) and looked with Playwright
+(deviceScaleFactor 1; /api/trpc, /api/track and /_vercel stubbed). Book page
+at 390 and 1440: 14 of 14 parts as headings, 14 of 14 timeline entries, one
+map on the "mediterranean" frame, the map note shown, no place name over
+another name, a mark or the frame's region names, no sideways scroll, no
+console or page errors. Romans 1 to 8 at 390: every passage heading, its
+part headings in order and the first 60 characters under each matched the
+data (1: 24 of 24 fields; 2: 25; 3: 20; 4: 20; 5: 20; 6: 15; 7: 15; 8: 25), no
+sideways scroll, no errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/romans-*` (book page top, contents, the
+justified part, timeline, map, at both widths) and `romans1-390-*`,
+`romans8-390-*`. Lighthouse (ci.yml command, three runs, on
+`/study/bible/romans`, after prerender): performance 88, accessibility 100,
+best practices 96, SEO 100, CLS 0.000. (A first run before prerender scored
+performance 55 and CLS 0.918, because the page was not yet prerendered; the
+ci job prerenders first.) Server stopped by PID, dist/ deleted, no
+lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient and modern writer (all paraphrased, apart
+from Wesley's "heart strangely warmed" and Trent's phrase); the BSB footnote
+at 3:25 seen only through a Bible site; Orthodox teaching stated generally.
+
+### Next
+
+Romans 9 in plain words, then 10 to 16.
+
+## Continuation: Romans 9 to 16 (2026-11-20)
+
+Romans 9 to 16 in plain words, which completes the book. Data only: one
+`plain/<n>.json` per chapter and `"plain": true` added to each chapter note
+(no other change to those files). No code changed. One commit per chapter,
+with its ledger rows.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Romans 9 | 5 (‘Deep sorrow’: Paul's grief for his own people; ‘God's word has not failed’: Isaac, Jacob and Esau; ‘Is God unjust?’ Mercy, and Pharaoh; the potter and the clay, and a people from Jews and Gentiles; the stumbling stone) | 3,978 |
+| Romans 10 | 3 (zeal without knowledge, and ‘Christ is the end of the law’; ‘The word is near you’; ‘How can they hear?’) | 2,407 |
+| Romans 11 | 5 (‘Did God reject His people?’ The remnant; a stumble, not a fall; the olive tree; ‘All Israel will be saved’; mercy on everyone, and ‘O, the depth’) | 3,660 |
+| Romans 12 | 4 (living sacrifices; one body, many gifts; love must be sincere; ‘Overcome evil with good’) | 2,313 |
+| Romans 13 | 3 (the governing authorities; the one debt that stays: love; ‘The night is nearly over’) | 1,859 |
+| Romans 14 | 2 (the weak and the strong; ‘Do not destroy the work of God for the sake of food’) | 1,589 |
+| Romans 15 | 4 (‘Christ did not please Himself’; ‘Accept one another’; from Jerusalem to Illyricum; Jerusalem, Rome and Spain) | 2,380 |
+| Romans 16 | 5 (Phoebe; ‘Greet’: a church of names; a warning and a promise; greetings from Corinth, and Tertius; ‘To the only wise God be glory’) | 2,939 |
+| Total, 9 to 16 | 31 | 21,125 |
+| **Whole book, 1 to 16** | **64** | **44,262** |
+
+Passages without a `hard` part: 12:9-13, 13:8-10, 15:1-6, 15:14-21,
+16:21-24. Every Old Testament quotation is named by book and verse and read
+in its own setting; where Paul follows the Greek and the BSB's Old Testament
+follows the Hebrew (Isaiah 11:10, 59:20, Exodus 9:16, Proverbs 25:22), the
+note says so.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Romans 9" to "16". 12
+web searches: 2, 0, 3, 1, 3, 0, 0, 3 (BSB footnote at 9:5; Westminster
+Confession 3.7; grafting; Nostra Aetate 4; the views of Israel and the
+church; burning coals; Tacitus, Annals 13.50; the Kairos Document; the 1850
+sermons on obeying the fugitive slave law; Junia; slave names in Romans 16;
+the doxology's places in the manuscripts). Reused word for word or nearly:
+the Genesis 25 paragraph on Jacob and Esau, the Psalm 69 paragraph on
+Romans 11:9-10, the Acts 28 readings of 11:26 and its 1 Clement wording,
+the Acts 2 and book-page sentences rejecting contempt for Jews, the Romans 5
+readings of "all", the Romans 8 care line and perseverance views, the Acts 18
+complementarian and egalitarian paragraphs, the Luke 6 pacifist and just war
+sentences, the Genesis 16 safety lines, the book page's Augustine sentences.
+Lexicon checks over the repository's Greek (metamorphoō, anupokritos,
+apostolos, diakonos, prostatis).
+
+### Cut or narrowed
+
+Cut: Chrysostom and Barth by name on 9:22; Calvin by name on 11:26;
+Columella; Lightfoot; the Domitilla catacomb; Junia's "250 inscriptions";
+Herod's grandson and Claudius's freedman as identifications; Marcion; the
+Roman fable of the belly; theatre masks; inns; debt in Rome; Nero's "good
+years"; the Muratorian fragment; Luther and Calvin on obedience; the
+Confessing Church. Narrowed: Annals 13.50 "around this time" (no year); the
+1850s sermons stated without naming a preacher, nation or law, and not
+claimed to cite Romans 13; the 9:5 footnote described, not quoted (it
+concerns the wording of the praise, not the punctuation); "Junias" said to
+be unattested, not "nowhere"; P46 called "one very early papyrus".
+
+### Contested matters, and how they are stated
+
+9:5 (comma or full stop; most modern translations and early writers read it
+of Christ); Jacob and Esau (Reformed, Arminian/Wesleyan, peoples or persons);
+hardening (Reformed; Arminian reading of Exodus's order); 9:22-23 (Reformed
+with Westminster 3.7's own words and "double predestination" as some call
+it; Arminian/Wesleyan; corporate); "as if by works" (traditional; new
+perspective); telos (end, goal, both); 10:9 not a formula; those who never
+heard (three answers, no fate); Israel and the church (supersessionism with
+its harsh and "fulfilment" forms, covenant theology, dispensational,
+two-covenant); falling away at 11:20-22; "all Israel" (three readings; "And
+so"); "everyone" at 11:32 (universalist, two groups, Reformed, Arminian);
+gifts today; burning coals; withdrawal from "this world"; 13:1-7
+(disobedience, pacifist and just war, the death penalty); the nearness of
+the day; the food laws for believers; where conscience ends and the gospel
+begins; whether Paul's prayer for Jerusalem was answered; Phoebe and Junia
+(complementarian and egalitarian, Acts 18 form); the doxology. Each says
+these notes do not choose.
+
+### Care lines
+
+9:19-29 (afraid of not being chosen, in the 8:31-39 form: pastor, friend,
+counsellor, Find Help); 12:14-21 (the Genesis 16 safety lines word for word:
+abuse, a local domestic violence line, Find Help). 9:30-33, 10:14-21,
+11:1-10, 11:11-16, 11:17-24 and 11:25-29 each say that these chapters give
+no ground for contempt for Jews; 11:11-16 and 11:25-29 say no claim is made
+about any modern state. No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs romans`, exit 0; every passage printed field by
+field, all 31 under their right headings. At the end, one at a time: all 38
+content-gate commands of ci.yml, exit 0 each (validate-bible-notes: 333
+chapters in plain words; search index 733 entries up to date; passage index
+623 files match; verify-sources 22 texts intact). `pnpm check`: clean.
+`pnpm test`: 147 files passed, 7 skipped; 1,708 tests passed, 73 skipped.
+`pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,042 pages): exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (no listener on
+4600 to 4699 before or after) and checked with Playwright at 390 wide,
+deviceScaleFactor 1, /api/trpc, /api/track and /_vercel stubbed. All sixteen
+chapters: every passage heading, its part headings in order, and the first
+60 characters under each matched the data: 64 passages, 314 fields
+(9: 25; 10: 15; 11: 25; 12: 19; 13: 14; 14: 10; 15: 18; 16: 24; 1 to 8 as
+before). No sideways scroll, no console or page errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/romans9-390-*`, `romans11-390-*`,
+`romans13-390-*`. Server stopped by PID, dist/ deleted, no lh-*.json.
+Lighthouse not run (no code changed).
+
+### Next
+
+Romans is complete. The next book in the plain-words layer is for the lead
+to choose.
+
+## 1 Corinthians: the book page and chapters 1 to 8 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". Romans
+was finished; 1 Corinthians is next, done exactly as Romans was.
+
+### The book page (`/study/bible/1-corinthians`, same address)
+
+Data only, in `client/public/bible/notes/1-corinthians/intro.json`, field `teaching`
+(appended; the rest of the file untouched). Eleven headed parts: 1 Corinthians in
+a minute; Who wrote it (Paul with Sosthenes, 1:1; his own hand, 16:21; 1 Clement
+near the end of the first century; one letter or several, as views); When and
+where (Ephesus, "until Pentecost", 16:8; Gallio at Delphi, most 51 to 52, some 50
+to 51; about AD 53 to 55); Corinth: the city (146 BC, 44 BC colony, Strabo's
+freedmen and Pawlak's mixed settlers, two harbours, Erastus stone with the
+identification disputed, the Isthmian Games, the thousand temple prostitutes as
+Strabo's claim about the older city, doubted); The church in Corinth (1:26, "not
+many, but some", house churches and patrons, status lines); How the letter came
+about (Chloe's people, the letter of 7:1, the lost letter of 5:9, the painful
+visit and tearful letter in broad strokes, no side); How it is built (the two
+halves, "Now about", the outline, slogans as translators' judgments); The big
+themes (cross, body, love, resurrection); 1 Corinthians and the Old Testament;
+What the letter is not (how readers decide what was for Corinth and what is for
+every church, and that they decide differently); How to read 1 Corinthians. Then
+12 hard passages (1:17, 3:15, 5:5, 6:9, 7:10-16, 7:21, 8:4-6, 11:2-16, 11:27-30,
+14:34-35, 15:29, 16:22), 14 key words, a timeline of 12 entries, one map on the
+"mediterranean" frame (Corinth, Ephesus, Jerusalem; Cenchrea too close to Corinth
+to label apart, said in `mapNote` with Macedonia), and seven Go deeper links.
+
+Words: 4,075 in the eleven parts.
+
+**Code.** None in the app. `client/src/pages/study-bible/teaching.test.tsx`:
+1 Corinthians added to the list of books with a teaching page, and one line
+letting its map use the "mediterranean" frame. Nothing else.
+
+### 1 Corinthians 1 to 8 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 1 | 4 (thanks for a troubled church; ‘I follow Paul’; the message of the cross; God chose the lowly) | 2,987 |
+| 2 | 3 (Christ crucified; God's hidden wisdom; taught by the Spirit, the mind of Christ) | 1,980 |
+| 3 | 5 (infants in Christ; planting and watering; the foundation and the fire; God's temple; all things are yours) | 2,861 |
+| 4 | 4 (servants and stewards; ‘What do you have that you did not receive?’; a spectacle; a father's warning) | 2,521 |
+| 5 | 3 (the man and his father's wife, ‘hand this man over to Satan’; the old leaven and the Passover lamb; not the world but the church) | 2,374 |
+| 6 | 4 (lawsuits; ‘that is what some of you were’; ‘Everything is permissible for me’; the body a temple of the Spirit) | 3,351 |
+| 7 | 6 (husband and wife; the unmarried and widows; divorce and mixed marriages; remain as called, circumcision and slavery; the time is short; the engaged couple and widows) | 5,427 |
+| 8 | 3 (knowledge and love; one God and one Lord; the weak conscience) | 2,243 |
+| Total | 32 | 23,744 |
+
+Passages without a `hard` part: 1:1-9, 1:26-31, 2:1-5, 3:1-4, 3:5-9, 3:16-17,
+3:18-23, 4:6-7, 4:8-13, 5:6-8, 6:12-14, 7:36-40, 8:1-3. Every Old Testament
+quotation is named by book and verse and read in its own setting; where Paul's
+wording follows the old Greek and the BSB's Old Testament follows the Hebrew
+(Isaiah 29:14 at 1:19, Isaiah 40:13 at 2:16, Psalm 94:11 at 3:20), the note says
+so, and 2:9 is stated as a quotation no single verse matches. Each chapter note
+gained only `"plain": true`. One commit per chapter, with its ledger rows.
+
+### Sources
+
+All in `bdoor-ledger.md` under "1 Corinthians's book page" and "The plain notes on
+1 Corinthians 1" to "8". 15 web searches: book page 5 (Strabo 8.6.20; 1 Clement
+47; the Corinthian correspondence; the Isthmian Games; "to Corinthianize", not
+confirmed and cut); chapter 2: 1 (the source of 2:9); chapter 3: 1 (the Catechism
+on 3:15); chapter 6: 4 (Roman courts and status; the BSB at 6:9; arsenokoitai and
+Leviticus; prostitution); chapter 7: 4 (7:21; the Pauline privilege; Westminster
+24.6; the Augustan marriage laws). Reused: wrom-ledger and the Roman-world
+portrait, wmap-ledger, apol-ledger (Bauckham 2008 on 8:6; dating), the Acts 18,
+Mark 10, Matthew 18 and 19, Genesis 16 and 37, Romans 1, 8, 13 and 14 plain
+notes. Lexicon checks over the repository's Greek (physioō, adikoi, malakoi,
+arsenokoitai, douloō, the 2:1 variant, sōma hymōn).
+
+### Cut or narrowed
+
+Cut: "to Corinthianize" and the old city's jokes; 1 Clement's year and words in
+quotation marks; Origen, Jerome and the Apocalypse of Elijah by name (met only in
+summaries); Tertullian, Augustine, Aquinas (deep note on chapter 1); the
+Alexamenos graffito; the mystery cults of Eleusis; milk and solid food as a
+common figure among teachers; Roman law on stepmothers; banquets ending with
+prostitutes; Caligula's tax; girls' age at marriage; surgery to hide
+circumcision; grain shortages named as fact for "the present crisis".
+Narrowed: Strabo "seems to have been describing" the older city; the tearful
+letter "many scholars think"; arsenokoitai "many scholars think" from Leviticus,
+"no clear use before Paul is known"; the BSB footnote at 6:9 not quoted (not
+found); Scheidel's estimate unnamed; the Nicene Creed paraphrased.
+
+### Contested matters, and how they are stated
+
+Authorship of the whole (one letter or several); the Corinthian correspondence
+and 2 Corinthians' unity; ‘I follow Christ’ (party or irony); baptism (pointer
+to Acts 2:37-41); the rulers of this age (human, spiritual, both); 2:9's source;
+3:15 (Catholic purgatory in the Catechism's terms, Protestant testing of the
+builders' work; no side); 3:17; ‘beyond what is written’; 5:5 (exclusion, or
+bodily suffering too; church discipline practices; no side); 6:1-8 (never suing,
+or a last step; mediation); 6:9-10 (historic and majority reading, the
+exploitative-practices reading, the reply; no side); 7:1 (slogan or Paul's
+view); charisma in 7:7; 7:10-16 (no remarriage while both live, with the
+Pauline privilege; divorce without remarriage; adultery and desertion, with
+Westminster 24.6 and the Orthodox practice; wider pastoral grounds; no side,
+since this waits on James); 7:16 (hope or release); 7:21 (two translations, no
+side); "the present crisis" (three views); 7:36-38 (three readings); 8:6 stated
+as the confessional floor, with Bauckham's reading and "some read it more
+modestly"; where conscience ends and the gospel begins. Each says these notes do
+not choose, except 8:6, confessed.
+
+### Care lines
+
+1:18-25 (contempt for Jews rejected); 4:14-21 (absent or harmful father, the
+Romans 8 form; the "rod" no licence to hurt anyone); 5:1-5 (discipline never to
+silence a victim or protect an abuser; crimes to the police, Romans 13:4;
+harmed by discipline or shunning: Psalm 34:18, Find Help); 5:9-13; 6:1-8 (not a
+rule against reporting a crime); 6:9-11 (the Romans 1 care line word for word);
+6:15-20 (the Genesis 37 trafficking line); 7:1-7 (consent within marriage;
+coercion is abuse; the Genesis 16 safety lines word for word); 7:8-9 (single
+readers; widows); 7:10-16 (Genesis 16 safety lines; Find Help; the divorce
+Honest Answer); 7:17-24 (no one told to accept bondage; anyone held or forced:
+Find Help). No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs 1-corinthians`, exit 0; every passage printed field
+by field, all 32 under their right headings. After merging the latest
+`claude/todo-implementation-hhp4bm`, one at a time: all 38 content-gate commands
+of ci.yml, exit 0 each (validate-bible-notes: 341 chapters in plain words;
+search index 741 entries up to date; passage index 623 files match;
+verify-sources 22 texts intact). `pnpm check`: clean. `pnpm test`: 148 files
+passed, 7 skipped; 1,729 tests passed, 73 skipped. ESLint on the changed test:
+clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,049 pages),
+`pnpm run audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (no listener on 4600 to
+4699 before or after) and checked with Playwright (deviceScaleFactor 1;
+/api/trpc, /api/track and /_vercel stubbed). Book page at 390 and 1440: 11 of 11
+parts as headings, 12 of 12 timeline entries, one map on the "mediterranean"
+frame, the map note shown, no place name over another name, a mark or the
+frame's region names, no sideways scroll, no console or page errors. Chapters 1
+to 8 at 390: every passage heading, its part headings in order and the first 60
+characters under each matched the data (1: 18 fields; 2: 14; 3: 21; 4: 18;
+5: 14; 6: 19; 7: 29; 8: 14), no sideways scroll, no errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/cor-book-*`, `cor-map-*`, `cor6-390-*`,
+`cor7-390-*`. Lighthouse (ci.yml command, three runs, on
+`/study/bible/1-corinthians`, after prerender): performance 92, accessibility
+100, best practices 96, SEO 100, CLS 0.000. Server stopped by PID, dist/
+deleted, no lh-*.json.
+
+### Next
+
+1 Corinthians 9 in plain words, then 10 to 16.

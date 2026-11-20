@@ -12,6 +12,7 @@
  */
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { builtFrom } from "./built-files.mjs";
+import { liveQuestionPaths } from "./questions.mjs";
 import { join } from "node:path";
 
 const ROOT = new URL("../..", import.meta.url).pathname;
@@ -82,6 +83,10 @@ function paramSources() {
     "/family/devotions/:id": slugsFrom(json("client/public/family/index.json")?.devotions, "id"),
     "/topics/:slug": slugsFrom(json("client/public/topics/index.json")?.pages),
     "/answers/:slug": answerSlugs(),
+    // The Bible Explorer: a stop has its own page once it is finished.
+    // Watch and learn: a moving picture has its own page once it is made.
+    "/study/explorer/watch/:slug": new Set((json("client/public/explorer/index.json")?.films || []).filter((f) => f.status === "finished").map((f) => f.slug)),
+    "/study/explorer/:slug": new Set((json("client/public/explorer/index.json")?.stops || []).filter((s) => s.status === "finished").map((s) => s.slug)),
     "/study/bible/:book": new Set(books.keys()),
   };
 }
@@ -138,6 +143,11 @@ export function resolveHref(rawHref) {
       else if (pp[i] !== parts[i]) { ok = false; break; }
     }
     if (!ok) continue;
+    // The questions library: an area or a piece is a page once it is live
+    // (scripts/lib/questions.mjs); a pending one is not linked from anywhere.
+    if (pattern === "/questions/:area" || pattern === "/questions/:area/:slug") {
+      return liveQuestionPaths(ROOT).includes(href) ? { status: "ok" } : { status: "missing" };
+    }
     if (pattern === "/study/bible/:book/:chapter") {
       const n = books.get(vals[":book"]);
       return n && +vals[":chapter"] >= 1 && +vals[":chapter"] <= n ? { status: "ok" } : { status: "missing" };

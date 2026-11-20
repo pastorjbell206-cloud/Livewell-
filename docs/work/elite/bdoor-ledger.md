@@ -5817,3 +5817,2534 @@ A stricter script than the validator (keeping case and punctuation, and
 refusing an em-dash) found four quotations that the validator's looser match
 passed: Numbers 6:25 ("may" in lower case), Psalm 9:12 ("For"), 9:20
 ("let"), 89:52 (its exclamation mark). All four now match the BSB exactly.
+
+## The plain notes on Psalms 11 to 41: the lighter shape (2026-11-19)
+
+From Psalm 11 on, most psalms have one passage for the whole psalm and a
+`hard` part only where the psalm has a difficulty of its own (the validator,
+the type and the page already allowed `hard` to be absent: Psalm 8:1-2 had
+none). Scripture is the BSB in the repository, checked by a strict script
+(case and punctuation kept, no em-dash, no "..." inside a quotation) as well
+as by the validator. "Repository deep note" means the existing note at
+`client/public/bible/notes/psalms/<n>.json`.
+
+## The plain notes on Psalm 11 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Fleeing to the hills and caves; David in the hill country (1 Samuel 23:14) | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| "Foundations" most likely the moral and legal order of society | Repository deep note (cultural) | Stated as "most likely" |
+| Fiery coals and sulfur recall Sodom (Genesis 19:24) | BSB | BSB text |
+| Matthew 5:8; Revelation 22:4; Matthew 10:28; Hebrews 12:28 | BSB | BSB text |
+
+## The plain notes on Psalm 12 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Agreements mostly spoken; "a heart and a heart" | Repository deep note (cultural) | Site's own teaching |
+| Silver refined by heat; seven as completeness | Repository deep note (cultural) | Site's own teaching |
+| Proverbs 30:5; 2 Samuel 22:31; Psalm 18:30; Matthew 5:37; James 3:5 | BSB | BSB text |
+
+## The plain notes on Psalm 13 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "How long" four times in verses 1-2 | BSB | BSB text |
+| The face of God as favour (Numbers 6:25); "forget" as ceasing to act for someone; bright eyes as life | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| A lament with all its steps; used on the book page as the model lament | Book page, "Kinds of psalm" | Site's own teaching. "The shortest lament in the Bible" not stated (not checked); "one of the shortest laments in the Psalms" |
+| Habakkuk 1:2; Revelation 6:10; Hebrews 13:5 with Deuteronomy 31:6 | BSB | BSB text |
+| Care line shortened from Psalm 6's, pointing back to it | Psalm 6 plain note | Site's own wording |
+
+## The plain notes on Psalm 14 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Nabal "fool": morally senseless, not unintelligent; 1 Samuel 25:25 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Psalm 14 appears again as Psalm 53, "God" where 14 often has "the LORD" | Repository deep note (historical); BSB 53:1 | BSB text |
+| Romans 3:9-12 draws on 14:1-3; Luke 12:20 | BSB | BSB text |
+
+"There is no God": practical godlessness, pointing to the book page (10:4)
+and the Psalm 10 note; honest unbelievers not the target; Paul turns the
+words on everyone.
+
+## The plain notes on Psalm 15 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The tent David pitched for the ark (2 Samuel 6:17) | Repository deep note (historical); BSB | BSB text |
+| "Abide" as living as a guest | Repository deep note (cultural) | Site's own teaching |
+| Psalms 15 and 24 called entrance psalms by many scholars | Repository deep note on Psalm 24 (literary) | Stated as "many scholars call" |
+| No interest on loans to the poor (Exodus 22:25); loans after a bad harvest; interest and loss of land | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Isaiah 33:14-15; Micah 6:8; Matthew 5:37; Luke 19:8; Ephesians 2:8, 10; Hebrews 10:19 | BSB | BSB text |
+
+Not earning God's favour: the psalm given to a people already rescued; grace
+opens the door (Ephesians 2:8; Hebrews 10:19), good works follow (2:10).
+
+## The plain notes on Psalm 16 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Miktam meaning unknown; heads 16 and 56 to 60 | 1-6 | BSB headings by script; repository deep note | Script |
+| Land shared by lot (Joshua 14 to 19), measuring cord; Levites' portion the LORD (Numbers 18:20) | 1-6 | Repository deep note (cultural); BSB | BSB text |
+| Verses 3-4 hard to translate; versions differ | 1-6 | Repository deep note (literary) | Site's own teaching |
+| "Conscience" is "kidneys"; the right hand as protector's place | 7-11 | Repository deep note (cultural) | Site's own teaching |
+| Holy One (hasid) built on hesed | 7-11 | Psalm 4 ledger row (chasid) | Earlier ledger |
+| Shachat can mean "the pit"; some modern Bibles (NRSV, NLT) have "the Pit"; the Greek has "corruption/decay", and Acts quotes the Greek | 7-11 | biblehub.com commentaries on 16:10 and Acts 2:27 (Ellicott, Pulpit); tips.translation.bible on 16:10 | Search. The Greek word not named; the "mistaken derivation" view not stated |
+| Acts 2:25-32; 13:35-37; 1 Corinthians 15:20; Psalm 73:26; Lamentations 3:24; Matthew 22:37; Philippians 3:8 (paraphrased) | both | BSB | BSB text |
+
+Contested: whether David meant resurrection (three views, none chosen; all
+agree the apostles read it of an event).
+
+## The plain notes on Psalm 17 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Righteous plea" a legal term; cases at the town gate before elders | Repository deep note (cultural) | Site's own teaching |
+| Apple of the eye: the pupil, "little man of the eye"; Song of Moses (Deuteronomy 32:10-11) | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Ruth 2:12; Matthew 23:37; 1 John 3:2 | BSB | BSB text |
+
+Innocence: one sentence pointing to the book page.
+
+## The plain notes on Psalm 18 (2026-11-19)
+
+No web search. The Ugarit comparison in the deep note is not used here (kept
+for Psalm 29, where it was searched).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Same song as 2 Samuel 22, same heading; a royal thanksgiving | 1-19 | Repository deep note (historical, literary); BSB 2 Samuel 22:1 | BSB text |
+| Wilderness cliffs and strongholds; horn as strength | 1-19 | Repository deep note (cultural) | Site's own teaching |
+| Theophany like Sinai (Exodus 19:16) | 1-19 | Repository deep note (cultural); BSB | BSB text |
+| Frame of verses 20 and 24 around 25-26 | 20-30 | Repository deep note (literary) | Site's own teaching |
+| David spares Saul twice (1 Samuel 24 and 26) | 20-30 | BSB | BSB text |
+| "Shrewd" from a word for twisting (patal) | 20-30 | Standard lexicon | Stated plainly; no more claimed |
+| Lamp: clay dish with a wick; David's lamp (1 Kings 11:36) | 20-30 | BSB; common knowledge | BSB text |
+| "Blameless" as whole-hearted, loyal | 20-30 | Book page ("When a psalmist says he is innocent") | Site's own teaching |
+| A bow of bronze need not be literal | 31-50 | Repository deep note (cultural) | Site's own teaching |
+| Luke 1:69; Matthew 14:31; Colossians 1:13; John 8:12; Hebrews 4:15; 2 Samuel 7:16; 2 Samuel 11; Luke 1:32; Romans 15:9; 2 Corinthians 10:4; Matthew 5:44 | all | BSB | BSB text |
+
+No modern nation or army; the war lines read as history, under the praise of
+verse 49 and 2 Corinthians 10:4. Cut: "Israel was not a sea-going people" (not
+checked).
+
+## The plain notes on Psalm 19 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two halves; one poem or two joined, debated | 1-6 | Repository deep note (historical); psalms.scriptura.org "The Unity of Psalm 19" | Search. Both views stated |
+| C. S. Lewis, Reflections on the Psalms (1958), "the greatest poem in the Psalter and one of the greatest lyrics in the world" | 1-6 | workingpreacher.org (Psalm 19 commentary, dating the book 1958, with the page 63); supersummary.com quotes | Search. Given without quotation marks, as his judgment |
+| Shamash the Mesopotamian sun god, also god of justice | 1-6 | intertextual.bible (Code of Hammurabi and Psalm 19:6); Stellenbosch Theological Journal 10.3 (2024); Sarna as reported | Search. The popular "Hammurabi receives the laws from Shamash" not stated (the 2024 article qualifies it) |
+| Bridegroom and champion images | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| "God" once in 1-6, "the LORD" seven times in 7-14 | 7-14 | BSB | Count by hand on the BSB text |
+| Torah as teaching; go'el, the kinsman-redeemer (Ruth 4:14) | 7-14 | Book page key words; BSB | Site's own teaching; BSB text |
+| Unintentional and defiant sins (Numbers 15:27-30) | 7-14 | BSB | BSB text |
+| Romans 10:18; 1:20; 7:12; John 1:9, 14; Matthew 4:4; Hebrews 4:12 | both | BSB | BSB text |
+
+No position on the age of the earth or evolution ("Christians hold different
+views ... Psalm 19 does not take a side"); the sun's course read as poetry of
+what the eye sees.
+
+## The plain notes on Psalm 20 (2026-11-19)
+
+No web search. Papyrus Amherst 63 (in the deep note) is not used: not searched.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Royal psalm before battle; offerings before battle; used in the temple (many scholars) | Repository deep note (historical, cultural) | Stated as "many scholars" |
+| Chariots the strongest weapon; Israel in the hills had few for much of its history; Exodus 15:4 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Isaiah 31:1; Proverbs 21:31; 1 Samuel 17:45; Acts 2:33 | BSB | BSB text |
+
+No modern nation's army in view (pointing to the book page).
+
+## The plain notes on Psalm 21 (2026-11-19)
+
+No web search. The Targum's "King Messiah" (in the deep note) is not used: not searched.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Twin of Psalm 20; framed by God's strength (verses 1, 13) | BSB; repository deep note | BSB text |
+| "Live forever" as court language (1 Kings 1:31); 2 Samuel 7:16 | Repository deep note (cultural); BSB | BSB text |
+| "Furnace" a household clay oven | Repository deep note (cultural) | Site's own teaching |
+| Hebrews 2:9; Revelation 19:12; John 11:25 | BSB | BSB text |
+
+## The plain notes on Psalm 22 (2026-11-19)
+
+Three web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The Doe of the Dawn" most likely a tune | 1-11 | Repository deep note (historical) | Stated as "most likely" |
+| Complaint and memory alternating; the turn in the middle of verse 21; the second half answering the first (despised, face, cry; birth and a people yet unborn) | all | Repository deep note (literary); BSB | BSB text |
+| Mark 15:34 Aramaic; Matthew 27:46-47 "Eli", Elijah; Mark 15:29; Matthew 27:43; 2 Corinthians 5:21 | 1-11 | BSB | BSB text |
+| Three Christian readings of the cry | 1-11 | Book page, "Why have You forsaken me?" | Site's own teaching (pointed to, summarised) |
+| Talmud Megillah 15b: Esther speaks the first line as she goes in to the king; the psalm read at Purim in some communities | 1-11 | thetorah.com "My God, My God, Why Have You Forsaken Me? Jesus or Esther"; ezrabrand.com on Megillah 15a-b; etzion.org.il | Search. "In some Jewish communities" |
+| Rashi reads the "I" as Israel in exile | 1-11 | Chabad (Rashi on Psalm 22); sefaria; hebrewbible.app | Search |
+| Bashan's cattle (Amos 4:1); dogs as scavengers; wild oxen extinct; water, wax, potsherd | 12-21 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| Masoretic ka'ari "like a lion"; Jewish translations follow it; Isaiah 38:13; the Greek "they dug" (made before Jesus); Nahal Hever fragment (5/6HevPs, first century AD) with a final vav read by many as a verb, disputed (faint letter, careless scribe); one letter (yod or vav) apart; the Gospels never quote 22:16 | 12-21 | en.wikipedia.org "They have pierced my hands and my feet"; lxxscrolls.substack.com; jewsforjudaism.org chapter 37d; torahresource.com; Strawn named in the results (not named on the page); repository deep note (text, hard) | Search. Each view stated; no side. Scholars and the date range of the fragment not given beyond "about the first century AD" |
+| All four Gospels: garments divided (Mark 15:24; Matthew 27:35; Luke 23:34; John 19:23-24) | 12-21 | BSB | BSB text |
+| Vows kept with a peace offering eaten in a shared meal | 22-31 | Repository deep note (cultural; Leviticus 7) | Site's own teaching |
+| Hebrews 2:11-12; John 20:17; Isaiah 45:22; Revelation 7:9; John 19:30 ("often set beside") | 22-31 | BSB | BSB text |
+
+Care: "If you feel forsaken right now and the feeling will not lift ..." with
+Find Help. Cut: Justin Martyr and Tertullian on verse 16, Pesikta Rabbati,
+Bach, Handel, Flint by name, the Givat HaMivtar skeleton (all in the deep
+note; not searched this run).
+
+## The plain notes on Psalm 23 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shepherding hard work in dry country; rod a club, staff for guiding | 1-4 | Repository deep note (cultural) | Site's own teaching |
+| David the shepherd (1 Samuel 17:34-35); "You will shepherd My people" (2 Samuel 5:2) | 1-4 | BSB | BSB text |
+| Kings called themselves shepherds; Hammurabi does so in his law code | 1-4 | en.wikipedia.org "Code of Hammurabi"; intertextual.bible; vision.org "Shepherds of the People"; Cardiff (Johnson) | Search. "In his law code" (prologue or epilogue: sources differ, so neither named) |
+| Tsalmavet: "shadow" + "death", or "deep darkness"; many modern Bibles "darkest valley" or "deep darkness"; the Greek "shadow of death"; the repository's Strong's gloss "deep darkness" | 1-4 | psalms.scriptura.org "The Meaning of צלמות in Psalm 23:4"; biblicaltraining.org; chaimbentorah.com; Strong's H6757 in the repository | Search; repository data |
+| Anointing a guest's head (Luke 7:46) | 5-6 | BSB | BSB text |
+| "Mercy" is hesed (H2617), "follow" is pursue (H7291) | 5-6 | Repository word data for 23:6 | Script |
+| Ezekiel 34:15; Isaiah 40:11; John 10:11; Luke 15:4; Hebrews 13:20; Revelation 7:17; 19:9; John 14:2 | both | BSB | BSB text |
+
+Care: "Grief is not a failure of faith. If your grief has become too heavy to
+carry, please tell someone you trust, a pastor, a friend or a doctor. The Find
+Help page on this site lists places to turn." Cut: the host's duty to protect
+a fugitive guest (the deep note's claim; cut on Psalm 5's run too, not checked).
+
+## The plain notes on Psalm 24 (2026-11-19)
+
+Two web searches (the Mishnah; the Ugarit search shared with Psalm 29).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Mishnah Tamid 7:4: Psalm 24 the Levites' song for the first day of the week | 1-6 | outorah.org "Song of the Day" and Tamid 7:3-4; seforimblog.com; en.wikipedia.org "Shir shel yom" | Search |
+| Ugarit: the storm god Baal fights the sea god Yam and wins kingship | 1-6 | worldhistory.org "Yamm"; obitel-minsk.com "The Bible and the Ugaritic literature"; Christianity Today (1960) | Search. Stated as what the Ugarit poems say, not as a source of the psalm |
+| Entrance psalm like Psalm 15 | 1-6 | Repository deep note (literary, historical) | Site's own teaching |
+| Gates with towers, lintel as head; LORD of Hosts and the ark | 7-10 | Repository deep note (cultural) | Site's own teaching |
+| The ark brought in (2 Samuel 6:15), "many readers"; or a festival procession | 7-10 | Repository deep note (historical); BSB | Both readings stated |
+| 1 Corinthians 10:26; Matthew 5:8; Isaiah 6:3, 5-7; Hebrews 9:24; John 1:14; 1 Corinthians 2:8 | both | BSB | BSB text |
+
+Narrowed: "sung on Ascension Day from early times" (not checked) became "Many
+Christians read verses 7 to 10 of Jesus going up into heaven". Not earning
+God's favour: the hard part points to Psalm 15's note and Hebrews 9:24.
+
+## The plain notes on Psalm 25 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Acrostic with a gap or two (no vav, two resh, no qof); a last verse outside the alphabet beginning with pe, as in Psalm 34 | First Hebrew letter of each verse in the repository's `ch/psalms/25.json` and `34.json` | Script |
+| Verse 22 widening to all Israel, "many scholars" | Repository deep note (historical) | Stated as a scholarly view |
+| Shame as public; "wait" as watchful hope | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 40:31; Romans 5:5; John 14:6; James 1:5; Luke 18:13 | BSB | BSB text |
+
+## The plain notes on Psalm 26 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Hard cases taken to the priests (Deuteronomy 17:8-9) | BSB; repository deep note (historical) | BSB text |
+| Hand-washing: Deuteronomy 21:6-7; Exodus 30:19 | BSB; repository deep note (cultural) | BSB text |
+| "Kidneys and heart" | Repository deep note (cultural) | Site's own teaching |
+| Matthew 27:24; Psalm 51:7; 1 John 1:9 | BSB | BSB text |
+
+Innocence: one sentence pointing to the book page.
+
+## The plain notes on Psalm 27 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Light as life and favour; stronghold, rock | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Taking hold of the horns of the altar (1 Kings 1:50) | 1-6 | BSB; repository deep note | BSB text |
+| Two halves: two psalms joined, or one (shared words checked in the BSB) | 7-14 | Repository deep note (historical); BSB | Both views stated |
+| Family as security in a kinship society | 7-14 | Repository deep note (cultural) | Site's own teaching |
+| John 1:5; 8:12; 1 John 1:5; Luke 10:42; Hebrews 13:6; Isaiah 49:15; Matthew 26:60; Joshua 1:9 | both | BSB | BSB text |
+
+27:1 carries two em-dashes in the BSB: quoted in four pieces. Care: verse 10,
+for readers whose parents left or hurt them; someone trusted, a counsellor,
+Find Help.
+
+## The plain notes on Psalm 28 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The Pit (bor) a cistern, in poetry the grave; hands raised toward the inner sanctuary | Repository deep note (cultural) | Site's own teaching |
+| A priest's word between verses 5 and 6, or a change in prayer | Repository deep note (historical) | Two readings |
+| 1 Kings 8:30; 1 Timothy 2:8; Matthew 7:15; Isaiah 40:11 | BSB | BSB text |
+
+Verse 4: one sentence pointing to the book page's cursing psalms part.
+
+## The plain notes on Psalm 29 (2026-11-19)
+
+One web search (shared with Psalm 24).
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The voice of the LORD" seven times | BSB | Count by hand |
+| Sirion is Hermon (Deuteronomy 3:9) | BSB | BSB text |
+| "Heavenly beings" is "sons of God(s)" | Repository deep note (cultural); Psalm 8 row on elohim | Site's own teaching |
+| Ugarit poems: Baal's voice is thunder, rider on the clouds, conflict with the sea; scholars compare Psalm 29; some think its words for Baal were given to the LORD | obitel-minsk.com; christianitytoday.com (1960) "Prophets and Canaanites"; intertextual.bible; Mark Smith (2014) as summarised | Search. Stated as a comparison, "not something the psalm says" |
+| Mabbul only in Genesis 6 to 11 and Psalm 29:10 | Strong's H3999 counted over the repository's Hebrew | Script |
+| Baal and rain, 1 Kings 18 | BSB; repository deep note | BSB text |
+| John 12:28-29; Matthew 8:26-27; Luke 2:14 ("some readers hear it") | BSB | BSB text |
+
+Cut: the date Ugarit was found (1929 in the deep note; not searched).
+
+## The plain notes on Psalm 30 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The heading's puzzle: David's palace; the temple site (1 Chronicles 22:1); a later use. Left open | Repository deep note (historical); BSB | Three readings stated |
+| Sackcloth of goat hair worn in grief; dancing in public joy | Repository deep note (cultural) | Site's own teaching |
+| John 16:20; Luke 6:21; 2 Corinthians 4:17; Revelation 21:4 | BSB | BSB text |
+
+Hard: "joy comes in the morning" not a promise that grief is short; points
+to Psalm 6.
+
+## The plain notes on Psalm 31 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Luke 23:46 from Psalm 31:5; Jesus adds "Father" | BSB; book page ("How the New Testament uses the Psalms") | BSB text |
+| "Terror on every side" also in Jeremiah 20:10 | BSB | BSB text |
+| Acts 7:59; 1 Peter 4:19 | BSB | BSB text |
+
+Narrowed: "Many Christians say it before sleep" (not checked) became an
+invitation; "a broken pot was not mended" cut. Verse 10 (iniquity and
+strength) points to Psalms 32 and 38.
+
+## The plain notes on Psalm 32 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Maskil uncertain; first at Psalm 32 (also 42, 44, 45, 52-55, 74, 78, 88, 89, 142) | 1-5 | BSB headings by script | Script |
+| Three words for wrong (rebellion, missing the mark, crookedness); forgiven, covered, not counted | 1-5 | Standard lexicons; repository word notes | Site's own teaching |
+| "Covered" (32:1) and "hide" (32:5) both H3680 kasah; "forgiven" and "forgave" both H5375 nasa | 1-5 | Repository Strong's data for 32:1, 5 | Script |
+| One of the seven penitential psalms | 1-5 | Psalm 6 ledger row | Earlier ledger |
+| Romans 4:6-7; Proverbs 28:13; 1 John 1:9; James 5:16; John 9:2-3 | 1-5 | BSB | BSB text |
+| Isaiah 55:6; Luke 15:21; 2 Corinthians 7:10 | 6-11 | BSB | BSB text |
+
+Illness not presented as punishment for hidden sin ("It does not say that
+every illness has a sin behind it"); a guilt-laden heart pointed to Psalm 51
+and James 5:16. An earlier draft said "hide" (3-4) and "hiding place" (7)
+were one word; the script showed they are not, and the sentence was changed.
+
+## The plain notes on Psalm 33 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| No heading (with 1, 2, 10 in Psalms 1 to 41) | Psalm 9 ledger row | Script (earlier) |
+| 22 verses, not an alphabet poem | First Hebrew letters of 33 in the repository | Script |
+| Ruach breath, wind, Spirit | Standard | Site's own teaching |
+| Genesis 1:3; John 1:3; Hebrews 11:3; Revelation 5:9 | BSB | BSB text |
+
+## The plain notes on Psalm 34 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| David at Gath feigning madness; the king there is Achish (1 Samuel 21:10-13); Abimelech a title (Genesis 20, 26) or a slip in a later note | 1-10 | BSB; repository deep note (historical) | BSB text; both views stated |
+| Alphabet poem: no vav, extra last verse with pe | 1-10 | First Hebrew letters in the repository | Script |
+| The angel of the LORD speaking as God (Exodus 3:2-6) | 1-10 | BSB; repository deep note (cultural) | BSB text |
+| 1 Peter 2:3; Hebrews 1:14; 2 Kings 6:17 | 1-10 | BSB | BSB text |
+| 1 Peter 3:10-12 quotes 34:12-16; Matthew 5:4, 9 | 11-22 | BSB | BSB text |
+| John 19:36: Psalm 34:20, or the Passover law (Exodus 12:46; Numbers 9:12), or both | 11-22 | BSB | BSB text; the readings stated, none chosen |
+
+Hard (34:10): believers do go hungry; the psalm is thanks and teaching, not
+a contract; points to Psalms 37 and 73.
+
+## The plain notes on Psalm 35 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Contend" a legal word; battle and court | Repository deep note (cultural) | Site's own teaching |
+| The false witness punished (Deuteronomy 19:18-19) | BSB; repository deep note (historical) | BSB text |
+| John 15:25 from 35:19 or 69:4; Matthew 26:59-60; Matthew 5:44 | BSB | BSB text |
+
+Cursing lines: pointing to the book page, and "No reading of this psalm
+makes it right to harm anyone."
+
+## The plain notes on Psalm 36 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The servant of the LORD" in a heading only here and in Psalm 18 | BSB headings | Read in the BSB text |
+| "Oracle" a prophet's word; 36:1 hard Hebrew, translations differ | Repository deep note (cultural) | Site's own teaching |
+| River of delights "may recall Eden" | Common reading | Stated as "may" |
+| Romans 3:18; John 4:14; Revelation 22:1 | BSB | BSB text |
+
+## The plain notes on Psalm 37 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Wisdom psalm; alphabet poem roughly every second verse | 1-11 | Book page (acrostics); first Hebrew letters in the repository | Script |
+| "Do not fret" in 1, 7, 8; "inherit the land" in 9, 11, 22, 29, 34 | all | BSB | Read in the BSB text |
+| Land as the family's share; seized by the powerful; grass after winter rains | 1-11, 27-40 | Repository deep note (historical, cultural) | Site's own teaching |
+| Matthew 5:5 nearly the same as the Greek of Psalm 37:11; Hebrew anawim behind "meek"; the Hebrew for "land" also means "earth" | 1-11 | en.wikipedia.org "Matthew 5:5"; intertextual.bible; israelbiblecenter.com "They Shall Inherit the Earth?" | Search. The article difference between the Greek texts not stated |
+| Loans in lean years; no interest (Exodus 22:25) | 12-26 | Repository deep note (cultural); BSB | BSB text |
+| Ruth 1:1; Luke 16:20-21; Acts 11:28-29; James 2:5; Psalm 73:2-3, 17, 26; Romans 4:13; 2 Peter 3:13; 1 Peter 5:7; Jeremiah 31:33; Hebrews 11:13; Revelation 21:1; Matthew 6:19 | all | BSB | BSB text |
+
+The hard question stated: "It is honest to say plainly: the righteous do
+sometimes go hungry. The Bible itself says so." Three readings of 37:25 (one
+man's witness; how God's world usually works; the end of the story); one use
+ruled out (blaming the poor); Psalm 73 as the deeper answer. 37:8 has an
+em-dash in the BSB and is quoted only before it; 37:23's word "journey" is
+not quoted.
+
+## The plain notes on Psalm 38 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Opens with the words of Psalm 6:1; one of the seven penitential psalms | BSB; Psalm 6 ledger row | BSB text |
+| "For remembrance" also heads Psalm 70; meaning uncertain | BSB headings by script; repository deep note | Script |
+| Sickness assumed a sign of God's anger; friends keeping away; doctors but little medicine | Repository deep note (cultural); Psalm 6 note | Site's own teaching |
+| Job 6:4; John 9:3; Luke 13:4-5; Isaiah 53:7; Luke 23:49; Romans 8:1; James 5:14 | BSB | BSB text |
+
+Illness and sin, on the page: "If you are ill, this psalm does not mean God
+is punishing you. Please do not let anyone tell you that it does." Guilt met
+with Psalms 32 and 51 and Romans 8:1; a doctor "is wise; it is not a lack of
+faith"; Find Help.
+
+## The plain notes on Psalm 39 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Jeduthun, a music leader (1 Chronicles 16:41); also heads 62 and 77 | BSB; headings by script | Script; BSB text |
+| Handbreadth a small measure | Repository deep note (cultural) | Site's own teaching |
+| Hevel (H1892) three times (39:5, 6, 11); the same word as Ecclesiastes 1:2 "futility" | Repository Strong's data | Script |
+| Foreigner and stranger: resident aliens protected by the law | Repository deep note (cultural) | Site's own teaching |
+| James 4:14; Luke 12:20; Hebrews 11:13; 1 Peter 2:11; Job 7:16 | BSB | BSB text |
+
+Care: "If you feel that you want to ‘be no more’, please do not carry that
+alone. Speak to someone today ..." with Find Help; no number.
+
+## The plain notes on Psalm 40 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Waited patiently" a doubled verb (H6960 twice) | 1-5 | Repository Hebrew data for 40:1 | Script |
+| A cistern with mud: Jeremiah 38:6 | 1-5 | BSB | BSB text |
+| Hebrew 40:6 "ears You dug for me" (H241, H3738); the Greek "a body You prepared", which Hebrews 10:5 follows; some Greek copies differ; how the Greek arose not known; Exodus 21:6 link uncertain | 6-10 | Repository Hebrew data; biblehub.com commentaries on 40:6 and "Does Hebrews 10:5-7 alter Psalm 40?"; ccel.org (ESV note on 40:6); Reformation Study Bible note | Script; search. Both readings stated; the manuscripts not named |
+| Deuteronomy 17:18 (the king's copy of the law), "may be" | 6-10 | BSB; repository deep note | BSB text |
+| 1 Samuel 15:22; Hosea 6:6; Hebrews 10:5-7, 10; Matthew 26:39 | 6-10 | BSB | BSB text |
+| 40:13-17 is Psalm 70 with small changes; Psalm 53 repeats 14 | 11-17 | BSB compared | BSB text |
+| Romans 15:6; Revelation 5:9; Luke 4:18 | all | BSB | BSB text |
+
+40:5 and 40:7 carry em-dashes in the BSB: quoted only before them.
+
+## The plain notes on Psalm 41 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sharing bread as a bond of loyalty | Repository deep note | Site's own teaching |
+| Ahithophel (2 Samuel 15:12, 31), "many readers"; not named in the psalm | BSB; repository deep note (historical) | BSB text |
+| 41:13 closes Book One; the four doxologies; 106:48 nearly the same words | Book page ("Five books"); BSB | BSB text |
+| John 13:18 omits "whom I trusted"; John 6:64; Mark 14:18; Matthew 5:7; John 13:5 | BSB | BSB text |
+
+Illness and sin: points to the Psalm 38 note. Verse 10: points to the book
+page's cursing psalms part.
+
+## The plain notes on Psalms 42 to 72: Book Two (2026-11-19)
+
+Same lighter shape and strict quotation script as Psalms 11 to 41.
+"Repository deep note" means `client/public/bible/notes/psalms/<n>.json`.
+Hebrew counts come from the repository's word data
+(`client/public/bible/ch/psalms/<n>.json`, Strong's numbers).
+
+## The plain notes on Psalm 42 (2026-11-19)
+
+One web search (shared with Psalm 43).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Book Two is Psalms 42 to 72; sons of Korah headings 42 to 49 (43 has none) | 1-5 | Book page ("Five books"); BSB headings | Script over BSB verse 1 |
+| Korah's line did not die out (Numbers 26:11); temple singers | 1-5 | BSB; book page | BSB text |
+| Hebrew YHWH (H3068) 273 times and Elohim (H0430) 49 in Psalms 1 to 41; 28 and 198 in 42 to 72; "Elohistic Psalms" for 42 to 83 (the deep note's term) | 1-5 | Repository word data; repository deep note (literary) | Script. Stated as "about"; the reason left open ("No one knows for sure") |
+| Seasonal streams; the feasts (Deuteronomy 16:16) | 1-5 | Repository deep note (cultural); BSB | Site's own teaching |
+| Hermon the tallest peak, feeding the Jordan; Mizar "small mountain", named nowhere else, two readings | 6-11 | Repository deep note | Site's own teaching |
+| "Deep" is tehom (H8415) in 42:7 and Genesis 1:2 | 6-11 | Repository word data | Script |
+| 42:8 the only "LORD" in Psalm 42 | 6-11 | BSB | BSB text |
+| Mark 14:34 heard as an echo of the refrain, "an echo, not a quotation" | 6-11 | Commentaries | Search: openbible.com; studia.reviste.ubbcluj.ro (Sacra Scripta article: "in some way an echo of the refrain"); friarmusings.com. The claim that the Greek translators used the same word (perilypos) was not confirmed against a critical edition, so it is not made |
+| Psalm 63:1; 84:2; John 7:37; Matthew 27:43; Jonah 2:3 ("swept over me") | all | BSB | BSB text |
+
+Care line in the Psalm 13 form; no diagnosis of anyone.
+
+## The plain notes on Psalm 43 (2026-11-19)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| One poem with 42: no heading, shared refrain (42:5, 11; 43:5); some medieval Hebrew manuscripts join them; most interpreters read them together | Reformation Study Bible note; Working Preacher commentaries on Psalm 43 | Search: biblegateway.com (Reformation Study Bible, Ps 42); workingpreacher.org. "From the Middle Ages" kept, since the sources say medieval |
+| 43:2's second question repeats 42:9 | BSB | BSB text |
+| Law-court language of "vindicate" and "plead my case"; the lyre | Repository deep note (cultural) | Site's own teaching |
+| John 8:12; John 14:6; Hebrews 10:19, 22 | BSB | BSB text |
+
+## The plain notes on Psalm 44 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Defeat read as a god's verdict in the ancient world | Repository deep note (cultural) | Site's own teaching |
+| No event named; proposals (the kings, Assyria, the exile) | Repository deep note (historical) | Stated as suggestions only. The Maccabean proposal and 701 BC not repeated |
+| Spreading hands as prayer posture | Repository deep note (cultural) | Site's own teaching |
+| 1 Kings 18:27; Psalm 121:4; Romans 8:35-37; Mark 4:38; John 9:3 | BSB | BSB text |
+| 44:22 on the book page's list of hard passages | Book page (`teaching.hard`) | Repository |
+
+## The plain notes on Psalm 45 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Royal wedding song; heading "A love song", "The Lilies"; the king not named; Solomon a common guess; used at more than one wedding (a view) | 1-9 | Repository deep note (historical); BSB | Site's own teaching. Ahab not repeated |
+| Ophir gold (1 Kings 9:28); ivory as wealth; anointing | 1-9 | BSB; repository deep note | BSB text |
+| Hebrews 1:8-9 quotes 45:6-7; Isaiah 9:6 | 1-9 | BSB | BSB text |
+| 45:6 readings: vocative "O God" (most English Bibles); court language and elohim of judges (Exodus 21:6, BSB "the judges"); "your divine throne" (RSV, NJB), "your throne is of God" (RSV footnote, Kirkpatrick); Jewish readers to the king or to God | 1-9 | Translation commentary | Search: tips.translation.bible "Translation commentary on Psalm 45:6-7"; biblehub.com commentaries 45:6; nyc.scriptura.org. Translations not named on the page. Rashi not named (not found) |
+| The Targum addresses the king of 45:3 (Hebrew numbering) as the anointed king | 1-9 | Aramaic Bible translation of the Targum of Psalms (biblia.com); Sutcliffe; Strack-Billerbeck as reproduced | Search. Narrowed: "speaks to the king of this psalm as the anointed one, the word that gives us 'Messiah'"; "King Messiah" not quoted, since editions differ |
+| Leaving one's people; Tyre a Phoenician trading city; "Daughter of Tyre" a poetic name | 10-17 | Repository deep note (cultural) | Site's own teaching |
+| Ruth 1:16; 2 Corinthians 11:2; Revelation 19:7; Ephesians 5:21-33 (pointed to, views unstated) | 10-17 | BSB | BSB text |
+
+## The plain notes on Psalm 46 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Alamoth also in 1 Chronicles 15:20; like the word for young women; perhaps a high range; uncertain | 1-3 | BSB; repository deep note | BSB text; stated as uncertain |
+| 46:1 "a help ... found exceedingly" (nimtsa me'od) | 1-3 | Repository word data | Script |
+| Jerusalem has no river; spring and cisterns; Eden's river (Genesis 2:10); Ezekiel 47:1 | 4-7 | Repository deep note (cultural); BSB | Site's own teaching; BSB text |
+| "With us" 'imanu (46:7) and Immanu-el (Isaiah 7:14) | 4-7 | Repository word data | Script |
+| Link to 701 BC (2 Kings 18 and 19) a view; temple use another | 4-7 | Repository deep note | Stated as views; no date given |
+| No modern city or nation in view | 4-7 | Book page ("The king's psalms") | Site's own teaching |
+| "Be still": harpu from raphah, "let go", "stop", "drop", "relax"; NASB "Cease striving"; the setting of war; a command to the nations | 8-11 | Hebrew word studies; commentaries | Search: equip.org "Be Still and Know"; christiancourier.com; hebrewwordlessons.com; repository word data (H7503, "be quiet"). NASB not named on the page ("Some Bibles") |
+| Luther's "A Mighty Fortress Is Our God" drawn from Psalm 46 | 8-11 | Repository deep note; equip.org | Search. One line; no year given (the late-1520s date was not confirmed this run) |
+| Mark 4:39; Revelation 21:1; Matthew 1:23; Matthew 28:20; Revelation 22:1; Exodus 14:14; Isaiah 2:4 | all | BSB | BSB text |
+
+## The plain notes on Psalm 47 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Clapping and shouting at a coronation (2 Kings 11:12) | Repository deep note (cultural); BSB | BSB text |
+| Shofar; "ascended" as God going up to his throne, perhaps with the ark; 2 Samuel 6:15 | Repository deep note; BSB | BSB text; "Many think" |
+| A yearly feast of God's kingship: a scholarly proposal the Old Testament does not describe directly | Repository deep note (historical) | Stated as a view; Mowinckel not named |
+| Shields as rulers | Repository deep note (cultural) | Site's own teaching |
+| Genesis 12:3; Galatians 3:29; Acts 1:9 ("Many Christians also read verse 5 of Jesus going up", as with Psalm 24) | BSB; earlier ledger (Psalm 24) | BSB text. Ascension Day not named |
+
+## The plain notes on Psalm 48 (2026-11-19)
+
+One web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Zaphon a mountain in the north (Syria, Jebel al-Aqra), Baal's home in Ugaritic texts; Zion given its name as a claim for the LORD | NET Bible note (biblia.com); Constable and Utley notes (sermonindex.net); israelbiblicalstudies.com | Search. Jebel al-Aqra not named on the page |
+| Ships of Tarshish; Isaiah 2:16 | Repository deep note; earlier ledger (Tarshish); BSB | BSB text |
+| The fleeing kings unnamed; a failed Assyrian siege one view, general celebration another | Repository deep note | Stated as views, no date |
+| Jeremiah 7:4; Matthew 5:35; Hebrews 12:22 | BSB | BSB text |
+| No modern city or state | Book page; Psalm 46 note | Site's own teaching |
+
+## The plain notes on Psalm 49 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A wisdom psalm | 1-12 | Book page ("Kinds of psalm") | Site's own teaching |
+| Ransom of a forfeit life by payment (Exodus 21:30) | 1-12 | Repository deep note; BSB | BSB text |
+| Lands named after their owners (49:11); verses 11, 13 and 14 hard Hebrew, translations differ | 1-12 | Repository deep note | Site's own teaching |
+| "Take me" (H3947) in 49:15, Genesis 5:24 and 73:24 | 13-20 | Repository word data | Script |
+| Death as shepherd set against Psalm 23 | 13-20 | BSB | BSB text |
+| Two readings of 49:15 | 13-20 | Book page ("Sheol"); repository deep note (`hard`) | Site's own teaching |
+| Luke 12:20; 1 Timothy 6:7; Mark 10:45; 1 Corinthians 15:20 | all | BSB | BSB text |
+
+## The plain notes on Psalm 50 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Asaph a leader of temple singers | 1-15 | Book page ("Who wrote the psalms") | Site's own teaching |
+| Burnt offering wholly burned; thank offering partly eaten (Leviticus 7:12); vows | 1-15 | Repository deep note (cultural); BSB | BSB text |
+| Neighbouring peoples thought gods needed feeding | 1-15 | Repository deep note (cultural) | Site's own teaching. "Mesopotamian texts" not named |
+| Heaven and earth as covenant witnesses; the prophets' courtroom language | 1-15 | Repository deep note | Site's own teaching. "Covenant lawsuit" not used |
+| Two readings of the prophets on sacrifice | 1-15 | Repository deep note (`hard`) | Stated as views |
+| Charges match the Ten Commandments | 16-23 | BSB (Exodus 20) | BSB text |
+| Hosea 6:6; Micah 6:8; Hebrews 13:15; Mark 7:6; Romans 2:4 | all | BSB | BSB text |
+
+50:10 carries an em-dash in the BSB: quoted in two parts, each before or after it.
+
+## The plain notes on Psalm 51 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The heading and 2 Samuel 11 and 12: David sent for Bathsheba (11:4), the king used his power over her; Uriah killed by David's order (11:15); "evil in the sight of the LORD" (11:27); "You are that man!" (12:7); nothing blames Bathsheba | 1-6 | BSB | BSB text. "used his power over her" is the brief's direction, grounded in "sent messengers to get her" |
+| Three words for wrong | 1-6 | Earlier ledger (Psalm 32) | Earlier ledger |
+| One of the seven penitential psalms | 1-6 | Earlier ledger (Psalm 6) | Earlier ledger |
+| Romans 3:4 quotes 51:4 in a slightly different form (BSB "victorious" for "blameless") | 1-6 | BSB both | BSB text |
+| "Against You only": three readings (wrong to a person is a wrong against God; courtroom; David accepts the charge about Uriah); Genesis 39:9 | 1-6 | Repository deep note (`hard`); BSB | Stated as readings |
+| 51:5: Western reading after Augustine (original sin; some add shared guilt, Romans 5:12); Orthodox ancestral sin (death and a pull toward sin, not guilt); a poetic reading (sin as far back as he has lived) | 1-6 | Earlier ledger (original sin row: stgeorgegreenville.org, saintjohnchurch.org); biblehub.com commentaries 51:5; redeeminggod.com | Search. Calvin not named (met in a secondary citation). The rabbinic tradition that David was born of an unlawful union was met only in secondary sources and is not used. Nothing said against mothers, marriage or babies |
+| Hyssop for sprinkling (Exodus 12:22; skin disease; contact with the dead) | 7-12 | Repository deep note (cultural); BSB | BSB text |
+| "Create" (bara, H1254) in 51:10 and Genesis 1:1; only God its subject | 7-12 | Repository word data; earlier ledger (Genesis 1 bara row) | Script; earlier ledger |
+| 1 Samuel 16:13-14: the Spirit on David, departed from Saul; David's fear of Saul's fate | 7-12 | BSB; biblehub.com commentaries 51:11; bibleref.com | Search; BSB text |
+| "Holy Spirit" in the Old Testament only at Psalm 51:11 and Isaiah 63:10-11 (BSB) | 7-12 | BSB | Script over the BSB Old Testament |
+| Views on losing the Spirit: Spirit for a task in the Old Testament; John 14:16, Ephesians 1:13; traditions that teach a believer can fall away; "not a cause for division" | 7-12 | Earlier ledger (perseverance rows, John 10); bibleref.com; jackcottrell.com | Earlier ledger; search. No side |
+| Bloodguilt; no sacrifice listed for defiant sin (Numbers 15:30) | 13-19 | Repository deep note; BSB | BSB text |
+| 51:18-19: later addition in or after the exile (many scholars), or David's prayer for the city | 13-19 | Repository deep note (historical) | Stated as views |
+| Ezekiel 36:26; Isaiah 1:18; Hebrews 9:14; 2 Samuel 12:13; Luke 18:13; John 21:15-17; Matthew 5:4; 1 John 1:9 | all | BSB | BSB text |
+
+Care lines: a guilt-laden reader (1 John 1:9); a separate line for anyone
+harmed by a person with power over them ("it was not your fault"), with the
+Find Help page.
+
+## The plain notes on Psalm 52 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Doeg, Ahimelech at Nob, bread and Goliath's sword, 85 priests (1 Samuel 21-22; 22:18, 22) | BSB; repository deep note | BSB text |
+| Headings tied to David's flight from Saul in Book Two: 52, 54, 56, 57, 59 | BSB headings | Read from the BSB verse 1 of each |
+| Olive trees live long, regrow from roots; oil for food, light, anointing | Repository deep note (cultural) | Site's own teaching |
+| James 1:10; James 3; Jeremiah 11:16; Romans 11:17; Proverbs 24:17 | BSB | BSB text |
+
+## The plain notes on Psalm 53 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Nearly Psalm 14; "God" for "the LORD" throughout; verse 5 differs (14:5-6) | BSB 14 and 53 compared | Script; BSB text |
+| Mahalath (also Psalm 88), meaning unknown | Repository deep note; BSB | BSB headings |
+| Unburied bones a disgrace | Repository deep note (cultural) | Site's own teaching |
+| Romans 3:10-11; Romans 11:26 | BSB | BSB text |
+
+## The plain notes on Psalm 54 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Ziph in Judah; 1 Samuel 23:19, 27-28; David spares Saul (1 Samuel 24:6) | BSB; repository deep note | BSB text |
+| "Strangers" odd for fellow Judeans: two readings | Repository deep note (historical) | Stated as views |
+| Name as character; freewill offering | Repository deep note (cultural) | Site's own teaching |
+| Romans 12:19 | BSB | BSB text |
+
+## The plain notes on Psalm 55 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No event named; Absalom's revolt and Ahithophel (2 Samuel 15:31) a common suggestion; the psalm names no one | 1-11 | Repository deep note; earlier ledger (Psalm 41); BSB | BSB text. Ahithophel's death not mentioned |
+| Doves nest in cliffs and wild places | 1-11 | Repository deep note (cultural) | Site's own teaching |
+| Meals and worship as bonds of loyalty; "violates his covenant" | 12-23 | Repository deep note (cultural); BSB | Site's own teaching |
+| Daniel 6:10; Numbers 16:30; 1 Kings 19:4; Matthew 23:37; Luke 22:48; 1 Peter 5:7 | all | BSB | BSB text |
+
+Care line for the betrayed, with the Find Help page. 55:15 points to the book
+page's cursing psalms part. 55:19 has an em-dash in the BSB and is not quoted.
+
+## The plain notes on Psalm 56 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Gath a Philistine city; 1 Samuel 21:12-13; Psalm 34 linked to the same day; Samuel does not say "seized" | BSB; repository deep note | BSB text |
+| Miktam (16, 56-60) meaning unknown | Earlier ledger (Psalm 16); book page | Earlier ledger |
+| Skin bottle; God's book as a king's records | Repository deep note (cultural) | Site's own teaching |
+| 56:8 in the BSB reads "Put my tears in Your bottle" (the brief's "You have collected my tears" is not the BSB wording); quoted before its em-dash | BSB | BSB text |
+| Hebrews 13:6 quotes Psalm 118:6 ("almost the same words" as 56:4, 11); Luke 12:7; Revelation 7:17 | BSB | BSB text |
+
+## The plain notes on Psalm 57 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Two caves: Adullam (1 Samuel 22:1) and En-gedi (1 Samuel 24); the heading does not say which; 57:6 fits En-gedi (a reading) | BSB; repository deep note | BSB text |
+| Wings of a mother bird; Ruth 2:12 | Repository deep note; BSB | BSB text |
+| 57:7-11 nearly the same as 108:1-5 | BSB compared | BSB text |
+| Matthew 23:37; Romans 12:19 | BSB | BSB text |
+
+## The plain notes on Psalm 58 (2026-11-19)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Judges forbidden bribes (Deuteronomy 16:19); corrupt courts a breach of covenant | 1-5 | BSB; repository deep note | BSB text |
+| 58:1 Hebrew reads elem "silence" (H0482); many revise a vowel to elim; BSB "rulers"; human judges or unseen powers (Psalm 82) | 1-5 | Repository word data; repository deep note (historical) | Script; stated as views |
+| Snake charming known in the ancient world | 1-5 | Repository deep note (cultural); Ecclesiastes 10:11 | Site's own teaching |
+| 58:9 among the hardest lines to translate; pot and thorns | 6-11 | Repository deep note (cultural) | Site's own teaching; 58:9 has em-dashes and is not quoted |
+| Feet in blood a battlefield image of total victory | 6-11 | Repository deep note (`hard`) | Site's own teaching |
+| The four readings of the cursing psalms, "no reading ... has ever made it right to harm anyone" | 6-11 | Book page ("The cursing psalms"; `teaching.hard` lists 58:10) | Site's own teaching, restated without names |
+| Amos 5:24; Luke 18:7; Revelation 6:10; 19:2; Matthew 5:44; Romans 12:19 | all | BSB | BSB text |
+
+Care line for a parent who lost a baby (58:8). The text is quoted, not softened.
+
+## The plain notes on Psalm 59 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 1 Samuel 19:11-12, Michal and the window | BSB | BSB text |
+| Half-wild town dogs; "dogs" an insult | Repository deep note (cultural) | Site's own teaching |
+| "All the nations": a later royal setting (some scholars) or David as anointed heir | Repository deep note (historical) | Stated as views |
+| Two readings of 59:11 and 59:13 | Repository deep note (`hard`) | Stated as views |
+| Acts 9:24-25; 2 Corinthians 11:33 | BSB | BSB text |
+
+## The plain notes on Psalm 60 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Heading: 12,000 (Joab); 2 Samuel 8:13 18,000 (David); 1 Chronicles 18:12 18,000 (Abishai); three explanations, none certain | BSB; repository deep note (`hard`) | BSB text. The Aram/Edom reading at 2 Samuel 8:13 not discussed |
+| Defeat in the psalm, victory in the heading: two readings | Repository deep note (`hard`) | Stated as views |
+| Shechem and Succoth (Genesis 33:17-18); Judah's scepter (Genesis 49:10); washbasin; sandal and land (Ruth 4:7), "may mean" | Repository deep note (cultural); BSB | BSB text |
+| 60:5-12 nearly the same as 108:6-13 | BSB compared | BSB text |
+| 2 Corinthians 12:9 | BSB | BSB text |
+
+## The plain notes on Psalm 61 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| No occasion; the flight from Absalom an old suggestion; a soldier or exile another | Repository deep note (historical) | Stated as views |
+| A guest under the host's protection | Repository deep note (cultural) | Site's own teaching |
+| "Many generations" read later of David's line | Repository deep note; book page ("The king's psalms") | Site's own teaching |
+| Isaiah 32:2; 1 Timothy 2:2 | BSB | BSB text |
+
+## The plain notes on Psalm 62 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Jeduthun also in 39 and 77 | Earlier ledger (Psalm 39) | Earlier ledger |
+| 'akh (H0389) six times, verses 1, 2, 4, 5, 6, 9 | Repository word data | Script |
+| 62:1 "silence" (dumiyah, H1747) | Repository word data | Script |
+| hevel (H1892) twice in 62:9; also Ecclesiastes | Repository word data; earlier ledger (Psalm 39) | Script |
+| Mudbrick walls; merchants' scales | Repository deep note (cultural) | Site's own teaching |
+| Matthew 6:19; Romans 2:6 quotes 62:12 | BSB | BSB text |
+
+## The plain notes on Psalm 63 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Wilderness of Judah; little rain | 1-5 | Repository deep note (cultural) | Site's own teaching |
+| David there twice (1 Samuel 23-24; 2 Samuel 15:25, the ark left); "the king" (63:11) favours the second; the heading does not say | 1-5 | BSB; repository deep note | BSB text; stated as a reading |
+| "Fat and fatness" (H2459, H1880) in 63:5 | 1-5 | Repository word data | Script |
+| "Earnestly I seek" (H7836) related to the word for dawn; the Greek "rise early"; the morning psalm of the early church; the Apostolic Constitutions (fourth century) | 1-5 | Wikipedia "Psalm 63"; Cambridge Bible note (biblehub.com); studylight.org; johnmarkhicks.com | Search. Narrowed to "Christian church orders from the fourth century, such as the Apostolic Constitutions, name it for prayer at dawn". Chrysostom's saying (met only secondhand), Athanasius and Benedict not used |
+| "Clings" dabaq (H1692) in 63:8, Genesis 2:24, Ruth 1:14 | 6-11 | Repository word data | Script |
+| Watches of the night; jackals; oaths in God's name | 6-11 | Repository deep note (cultural) | Site's own teaching |
+| Matthew 4:2; John 4:14; Matthew 5:6; Philippians 1:21; John 10:28; Ruth 2:12 | all | BSB | BSB text |
+
+Psalm 62's note was corrected in the commit for Psalms 64 to 66: Romans 2:6 uses words found in
+both 62:12 and Proverbs 24:12 (BSB), so the note no longer says Paul quotes the
+psalm alone.
+
+## The plain notes on Psalm 64 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Archery from cover; slander as a weapon in courts and towns | Repository deep note (cultural) | Site's own teaching |
+| "Suddenly" in 64:4 and 64:7 | BSB | BSB text |
+| Head-shaking as scorn | Repository deep note | Site's own teaching |
+| Proverbs 26:27; James 3:8; Luke 12:3 | BSB | BSB text |
+
+## The plain notes on Psalm 65 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Rain-fed land unlike Egypt and Mesopotamia; autumn and spring rains (Deuteronomy 11:14); Baal credited with rain | Repository deep note (cultural); BSB | BSB text |
+| A harvest festival setting (not named) | Repository deep note (historical) | Stated as "sounds like" |
+| 65:1 dumiyah "silence" (H1747), as in 62:1 | Repository word data | Script |
+| 65:3 "atone" kaphar (H3722) | Repository word data | Script (not named on the page) |
+| Acts 14:17; Matthew 5:45; Isaiah 55:10-11 | BSB | BSB text |
+
+## The plain notes on Psalm 66 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 66:6 the sea (Exodus 14) and "the river" (H5104) fitting the Jordan (Joshua 3:17) | Repository word data; repository deep note | Script; BSB text |
+| Refining silver | Repository deep note (cultural) | Site's own teaching |
+| No event named | Repository deep note (historical) | Proposals (701 BC, the return) not repeated |
+| 66:18 "cherished" as holding on to sin; Isaiah 59:2; Proverbs 28:13 | Repository deep note (`hard`); BSB | BSB text |
+| Isaiah 43:2; Malachi 3:3; 1 Peter 1:7 | BSB | BSB text |
+
+## The plain notes on Psalm 67 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 67:1 echoes the priestly blessing (Numbers 6:24-25), "you" to "us" | Repository deep note (cultural); BSB | BSB text |
+| Shining face as favour | Repository deep note (cultural) | Site's own teaching |
+| Harvest setting; 67:6 can be read as a prayer for a future harvest | Repository deep note (historical) | Stated as views |
+| Genesis 12:3; Luke 2:31-32; Isaiah 49:6; Revelation 7:9 | BSB | BSB text |
+
+## The plain notes on Psalm 68 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 68:1 repeats Numbers 10:35; 68:7-8 close to Judges 5:4-5; the ark procession (many readers) | 1-18 | BSB; repository deep note | BSB text |
+| Ugaritic "rider of the clouds" (rkb 'rpt) a title of Baal; the psalm gives it to the LORD | 1-18 | NET Bible note (biblia.com); Lexham Bible Dictionary "Rider on the Clouds"; Barker, Bibliotheca Sacra 1976 | Search. "Deserts" alternative not raised on the page |
+| Bashan east of Galilee; taller mountains than Zion | 1-18 | Repository deep note (cultural) | Site's own teaching |
+| 68:18 "received" and Ephesians 4:8 "gave"; the Targum reads "gave" of Moses; a conqueror receives and gives; Acts 2:33 | 1-18 | biblehub.com commentaries Ephesians 4:8; samstorms.org "Ephesians 4:7-10"; b-hebrew list (2001) | Search. The Peshitta not named (not confirmed); stated as readings |
+| Psalm 68 among the hardest Hebrew texts; 68:13 uncertain | 1-18 | Repository deep note (historical) | Site's own teaching |
+| 68:19 "bears our burden" or "bears us up" | 19-35 | Translations (BSB; ESV "bears us up") | Stated as "can also be read" |
+| Miriam's tambourine (Exodus 15:20); tribes south and north; Cush south of Egypt | 19-35 | BSB; repository word data | BSB text |
+| Acts 8:27; Colossians 2:15; John 14:18; James 1:27 | all | BSB | BSB text |
+
+68:21-23 point to the book page's cursing psalms part. 68:4, 17, 23, 24 and
+32 carry em-dashes in the BSB and are quoted only up to them.
+
+## The plain notes on Psalm 69 (2026-11-19)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Deep water and mire as pictures of death; the gate; sackcloth and fasting | 1-12 | Repository deep note (cultural) | Site's own teaching |
+| "Of David"; the closing verses dated after the exile by many scholars | 1-12 | Repository deep note (historical); book page | Stated as views |
+| New Testament uses: 69:9 in John 2:17 and Romans 15:3; 69:4 (and 35:19) in John 15:25; 69:21 and the gall and sour wine (Matthew 27:34, 48; John 19:28-30); 69:25 in Acts 1:20; 69:22-23 in Romans 11:9-10 | all | BSB; biblehub.com "Is Psalm 69 originally about Jesus?"; Lange (biblehub.com); International Standard Bible Encyclopedia summaries | BSB text; search |
+| 69:5's confession keeps Christians from applying the whole psalm to Jesus; a pattern (typological) reading | 1-12, 22-36 | Lange; Spurgeon's Treasury (reformedreader.org) as summarised | Search. Paraphrased; no names on the page |
+| Gall a bitter, poisonous plant; sour wine the common drink | 13-21 | Repository deep note; BSB | Site's own teaching |
+| Exodus 34:6 behind "loving devotion" and "compassion"; Mark 14:50 | 13-21 | BSB | BSB text |
+| The Book of Life; Exodus 32:32 | 22-36 | Repository deep note (cultural); BSB | BSB text |
+| Romans 9:2; 11:11; 11:25 (Paul's grief, "in part", warning against pride); nothing blames the Jewish people | 22-36 | BSB | BSB text |
+| Readings of the curses beside Luke 23:34: not put in Jesus' mouth (the contrast of David and the Son of David, 1 Peter 2:23); God's judgment on final rejection, applied soberly (Acts 1:20); the book page's four readings | 22-36 | Commentaries as summarised; book page | Search; stated as views, no side |
+
+Care line where the sinking and the shame are described (69:1-12). 69:4 has an
+em-dash in the BSB and is quoted only before it.
+
+## The plain notes on Psalm 70 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Psalm 70 nearly the same as 40:13-17; "God" for "the LORD" (40:16 and 70:4) | BSB compared; earlier ledger (Psalm 40) | BSB text |
+| "To bring remembrance" also heads 38; memorial portion (Leviticus 2:2) or a plea to be remembered | Earlier ledger (Psalm 38); repository deep note | Stated as views |
+| "Aha, aha" as gloating; honour and shame; "poor and needy" | Repository deep note (cultural) | Site's own teaching |
+| Luke 18:7-8; Matthew 5:3 | BSB | BSB text |
+
+## The plain notes on Psalm 71 (2026-11-19)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| No heading (with 43, rare in Book Two); David in old age or an older worshipper | BSB; repository deep note | BSB text; stated as views. The Greek heading not mentioned (not checked) |
+| 71:1-3 close to 31:1-3; 71:12 echoes 22:11 | BSB compared | BSB text |
+| Respect for the aged (Leviticus 19:32); the old dependent on family | Repository deep note (cultural); BSB | BSB text |
+| "A portent": two readings | Repository deep note (cultural) | Stated as views |
+| 71:9 BSB "Do not discard me in my old age" (the brief's "cast me off" is not the BSB wording) | BSB | BSB text |
+| Isaiah 46:4; Luke 2:37-38; 2 Corinthians 4:16; Matthew 27:43 | BSB | BSB text |
+
+A word for the old and for those who care for them; a care line for an old
+person low in spirit.
+
+Psalm 70's note was corrected in the commit for Psalm 72: "Aha, aha!" now sits
+in double marks with its verse, as quoted Scripture (the validator flagged the
+exclamation mark inside single marks after the Psalm 70 commit).
+
+## The plain notes on Psalm 72 (2026-11-19)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Of Solomon" one of two (with 127); "by", "for" or "about"; Solomon's prayer (1 Kings 3:9), David's for his son, or a coronation psalm | 1-7 | Book page; repository deep note (historical); BSB | Stated as views |
+| Hammurabi's laws: so the strong would not oppress the weak, and justice for the orphan and widow | 1-7 | Harper's translation (Online Library of Liberty); King's translation (sacred-texts.com; oll.libertyfund.org) | Search. Paraphrased, no quotation marks; prologue or epilogue left unstated (translations place the phrases differently) |
+| A just reign thought to make the land fruitful | 1-7 | Repository deep note (cultural) | Site's own teaching |
+| Euphrates, Tarshish, Sheba in southern Arabia (1 Kings 10:1) | 8-17 | Repository deep note; BSB | BSB text |
+| 72:17 echoes Genesis 12:3 | 8-17 | BSB | BSB text |
+| No king met the ideal; Solomon's heavy yoke (1 Kings 12:4); the kingdom split | 8-17 | BSB | BSB text |
+| The Targum adds "Messiah" at 72:1 (the King Messiah); many Jewish readers look for the king still to come; Christians read it of Jesus | 8-17 | Gill's commentary (sacred-texts.com); prophecytoday.uk; Cambridge Bible (sermonindex.net); book page ("The king's psalms") | Search. Rashi, Kimchi and Ibn Ezra met only in Gill's summary and not named |
+| 72:18-20 the close of Book Two; the doxologies | 18-20 | Book page ("Five books"); BSB | BSB text |
+| Psalms headed "of David" after 72: 86, 101, 103, 108-110, 122, 124, 131, 133, 138-145 (18) | 18-20 | BSB headings by script (132 mentions David in its text, not its heading, and is left out) | Script; "more than a dozen" |
+| 72:20 once closed an earlier collection (many), or marks a section | 18-20 | Repository deep note (historical) | Stated as views |
+| Isaiah 11:4; 9:7; Luke 4:18; Proverbs 31:8; Matthew 12:42; 2:11; 25:40; Habakkuk 2:14; Revelation 11:15 | all | BSB | BSB text |
+
+No modern ruler, party or nation in view.
+
+## Book Two complete (2026-11-19)
+
+Psalms 42 to 72 now have plain notes. Next: Psalm 73, the start of Book Three.
+
+## The plain notes on Psalms 73 to 106: Books Three and Four (2026-11-20)
+
+Same lighter shape and strict quotation script as Psalms 42 to 72.
+"Repository deep note" means `client/public/bible/notes/psalms/<n>.json`;
+Hebrew facts come from the repository's word data
+(`client/public/bible/ch/psalms/<n>.json`). Headings were checked by a
+script over the BSB's verse 1 of every psalm.
+
+## The plain notes on Psalm 73 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Psalm 73 opens Book Three; Asaph in the headings of 50 and 73 to 83 | 1-14 | Book page ("Five books"); BSB headings | Script over BSB verse 1 |
+| Asaph a leader of the temple singers in David's day (1 Chronicles 16:7); his family sang on; a psalm of Asaph may come from a later singer of his line | 1-14 | Book page ("Who wrote the psalms"); repository deep note (historical) | Site's own teaching; BSB text |
+| 'akh ("surely", H0389) three times: verses 1, 13, 18 | 1-14 | Repository word data | Script |
+| Well-fed body a mark of wealth; washing hands as a claim of innocence (Psalm 26:6) | 1-14 | Repository deep note (cultural); BSB | Site's own teaching |
+| Job 21:7; Jeremiah 12:1; Job 42:7 (paraphrased); Luke 16:19-31; Matthew 5:8; Luke 12:15, 20; 2 Corinthians 4:18; John 10:28; Romans 8:38-39; Philippians 1:21 | all | BSB | BSB text |
+| What happened in the sanctuary is not said (Scripture, worship, presence): left open | 15-20 | Repository deep note (cultural) | Site's own teaching |
+| Levites had no land; "I am your portion" (Numbers 18:20) | 21-28 | Repository deep note; BSB | BSB text |
+| "Receive" (laqach, H3947) the word of Genesis 5:24; readings of 73:24 (honour in this life, or hope beyond death); the book page's part on Sheol | 21-28 | Repository word data; repository deep note (hard); book page ("Sheol") | Script; stated as views |
+
+Doubt is met, not scolded: the `hard` field of 1-14.
+
+## The plain notes on Psalm 74 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Maskil's meaning uncertain | 1-11 | Book page ("What the headings tell you") | Site's own teaching |
+| Most scholars connect it with 587 or 586 BC; a later attack suggested; "burned to the ground" fits Babylon best; a later singer of Asaph's line | 1-11 | Book page ("When they were written"); repository deep note (historical); 2 Kings 25:9 | Site's own teaching; BSB text. The Seleucid king and the year 167 BC not repeated (not verified this run) |
+| A temple thought the house of a god; its fall read as the god's defeat; banners as claims of victory | 1-11 | Repository deep note (cultural) | Site's own teaching |
+| Ugarit: Baal defeats a seven-headed sea monster, Litan or Lotan, linked by scholars with Leviathan; the sea as chaos; the psalm gives the victory to the LORD | 12-23 | Reformation Study Bible note on Ps 74:14 (biblegateway.com); biblicaltraining.org "sea monster"; NET Bible note (biblia.com) | Search. The date of the tablets not given (sources differ) |
+| Red Sea or creation, or both | 12-23 | Repository deep note (hard) | Stated as readings |
+| Lamentations 2:7; Matthew 24:2; John 2:19, 21; Isaiah 27:1; 51:10; Revelation 21:1; Exodus 14:21 | all | BSB | BSB text |
+
+No modern nation in view; anger in the prayer pointed to the book page's part on the cursing psalms.
+
+## The plain notes on Psalm 75 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "Do Not Destroy" heads 57, 58, 59 and 75; probably a tune | BSB headings; repository deep note | Script |
+| Placed after 74 as God's answer: a possible reading of the arrangement | Repository deep note (historical) | Stated as "may have meant" |
+| The horn as strength (1 Samuel 2:1); the cup of judgment in the prophets; dregs | Repository deep note (cultural); BSB | BSB text |
+| 1 Samuel 2:7; Luke 1:52; Matthew 26:39 (Christians read the cup as judgment borne for others: a reading) | BSB | BSB text |
+
+## The plain notes on Psalm 76 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Salem an old name for Jerusalem (Genesis 14:18); sounds like shalom | Repository deep note (cultural); BSB | BSB text. "Sounds like" kept; no etymology claimed |
+| Many connect the psalm with the Assyrian withdrawal (2 Kings 19:35-36); others a worship song with no one battle | Repository deep note (historical) | Stated as views. The year 701 BC and the Greek heading's note not given (not verified this run) |
+| "Horse and rider" echoes Exodus 15:1; chariots the most feared weapon | Repository deep note (cultural); BSB | BSB text |
+| Isaiah 2:4; Matthew 5:9; Revelation 19:16 | BSB | BSB text |
+
+No modern army or nation in view.
+
+## The plain notes on Psalm 77 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jeduthun a leader of temple music with Asaph and Heman; also heads 39 and 62 | 1-9 | Repository deep note (historical); earlier ledger (Psalm 39, 62 headings) | Script over BSB headings |
+| The six questions echo Exodus 34:6 | 1-9 | BSB | BSB text (an observation, stated as such) |
+| Lifted hands the posture of prayer; the exodus told at Passover | all | Repository deep note (cultural) | Site's own teaching |
+| Habakkuk 3:10; Mark 6:48, 50; Matthew 26:39 | all | BSB | BSB text |
+
+Care line in 1-9 (sleeplessness; a doctor, a pastor, a friend; the Find Help page). No diagnosis of anyone.
+
+## The plain notes on Psalm 78 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second longest psalm (72 verses) after 119 (176) | 1-39 | BSB verse counts | Script |
+| Teaching children the story (Deuteronomy 6:20-21) | 1-39 | Repository deep note (cultural); BSB | BSB text |
+| Quail (Numbers 11), water from the rock (Exodus 17) | 1-39 | Repository deep note (cultural) | Site's own teaching |
+| Matthew 13:35 quotes 78:2; John 6:32; 1 Corinthians 10:11; John 10:11 | all | BSB | BSB text |
+| Shiloh the place of the Tent of Meeting (Joshua 18:1); the ark brought from Shiloh and captured (1 Samuel 4:4, 11); Jeremiah 7:12 | 40-72 | BSB | BSB text |
+| 78:65 how it looked from Israel's side (Psalm 121:4) | 40-72 | Repository deep note (hard) | Site's own teaching |
+| Ephraim and Joseph the leading northern tribes; dates debated (David or Solomon; after the north fell to Assyria) | 40-72 | Repository deep note (historical) | Stated as views; the year 722 BC and Hezekiah not given |
+
+## The plain notes on Psalm 79 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| A twin of 74; the destruction of 587 or 586 BC (most scholars) | Book page ("When they were written"); repository deep note (historical) | Site's own teaching. The Maccabean reading and 1 Maccabees not repeated |
+| The unburied dead a deep shame; a covenant curse (Deuteronomy 28:26) | Repository deep note (cultural); BSB | BSB text |
+| 79:6-7 nearly the words of Jeremiah 10:25; one drew on the other, or both on a known prayer | Repository deep note (historical); BSB | BSB text compared |
+| Revelation 6:10; Romans 12:19 | BSB | BSB text |
+| 79:6 and 12 pointed to the book page's part on the cursing psalms; "the nations" the armies of that ancient war; no people today named | Book page ("The cursing psalms") | Site's own teaching |
+
+## The plain notes on Psalm 80 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The chorus three times, growing (3, 7, 19) | BSB | BSB text |
+| Ephraim and Manasseh sons of Joseph; many connect the psalm with Assyria's crushing of the north; some think it prayed in Judah for the north | Repository deep note (historical) | Stated as views; no year given |
+| The chorus echoes Numbers 6:25 | Repository deep note (cultural); BSB | BSB text |
+| Vineyard walls; the vine a picture of Israel | Repository deep note (cultural) | Site's own teaching |
+| "The man at Your right hand": the king, or Israel (Exodus 4:22) | Repository deep note | Stated as readings |
+| Isaiah 5:1-2; Mark 12:1; John 15:1, 5 | BSB | BSB text |
+
+## The plain notes on Psalm 81 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Gittith also heads 8 and 84; meaning uncertain (Gath, wine press) | Repository deep note (historical); BSB headings | Script |
+| The feast of 81:3 debated (seventh month: trumpets and Tabernacles; or Passover) | Repository deep note (historical) | Stated as views |
+| The shofar a signal; the basket and Egypt's labour; Meribah "quarrelling" (Exodus 17:7) | Repository deep note (cultural); BSB | BSB text |
+| 81:9-10 echo Exodus 20:2 | BSB | BSB text |
+| Matthew 23:37; Hebrews 3:15; Romans 1:24 | BSB | BSB text |
+
+## The plain notes on Psalm 82 (2026-11-20)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Heaven pictured as a court; at Ugarit a chief god over an assembly of gods | 1-5 | Repository deep note (cultural); earlier ledger (Ugarit, Psalms 24 and 29) | Site's own teaching. The date of the Ugarit texts not given |
+| 1 Kings 22:19; Job 1:6; Isaiah 1:23; James 1:27; Luke 4:18 | 1-5 | BSB | BSB text |
+| elohim in 82:1 and 82:6; elohim for "the judges" in Exodus 21:6 | 6-8 | Repository word data; earlier ledger (Psalm 45 row) | Script |
+| John 10:34-36: Jesus' argument from the lesser to the greater (10:35 paraphrased, since the BSB sets "and the Scripture cannot be broken" between em-dashes) | 6-8 | BSB; repository deep note (christ) | BSB text |
+| Three readings of 82:6: human judges; heavenly beings of the council (verse 1, verse 7, 1 Kings 22, Job 1); none means gods equal to the LORD | 6-8 | Repository deep note (hard); biblehub.com "Does Psalm 82:6 suggest Israel's polytheism?"; christianity.com "Why Does Psalm 82:6 Say 'Ye Are Gods'?"; Heiser, SBL paper on Psalm 82 in John 10 (drmsh.com) | Search. Stated as views, no side; no scholar named on the page |
+| An old Jewish reading in the Talmud: spoken to Israel at Sinai, who might have been free of death but lost it through sin | 6-8 | Repository deep note (hard); intertextual.bible (Avodah Zarah 5a, the baraita of Rabbi Yosei, in translation) | Search. Paraphrased; tractate and rabbi not named on the page (met in translation on one site) |
+
+## The plain notes on Psalm 83 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The last psalm of Asaph | BSB headings | Script |
+| No single war matches the list; Jehoshaphat's day (2 Chronicles 20:1) one proposal; or a gathering of old enemies | Repository deep note (historical); BSB | Stated as views; no century given |
+| Sisera and Jabin (Judges 4:2); Oreb and Zeeb (Judges 7:25); Zebah and Zalmunna (Judges 8:21) | BSB | BSB text |
+| Chaff on the threshing floor | Repository deep note (cultural) | Site's own teaching |
+| Matthew 5:44; Luke 23:34; 1 Timothy 2:4 | BSB | BSB text |
+
+Hard: pointed to the book page's part on the cursing psalms; the names belong to that ancient world and give no ground for contempt toward any people today.
+
+## The plain notes on Psalm 84 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Three pilgrim feasts (Deuteronomy 16:16); walking in village groups | 1-7 | Repository deep note (cultural); BSB | BSB text |
+| "Pilgrimage" close to a word for raised roads; Baca unknown, a tree or (in the old Greek) "weeping" | 1-7 | Repository deep note (cultural) | Site's own teaching |
+| Korahites guarded the thresholds (1 Chronicles 9:19) | 8-12 | BSB; repository deep note | BSB text |
+| "Your anointed" the king | 8-12 | Repository deep note | Site's own teaching |
+| John 4:21, 23; Hebrews 12:22; Revelation 21:22; John 10:9; Romans 8:32 | all | BSB | BSB text |
+
+## The plain notes on Psalm 85 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 85:1 read by many of the return from Babylon (after 539 BC, the book page's timeline); hard years after (Haggai 1:6); others read it more widely | Book page (timeline); repository deep note (historical); BSB | Stated as views |
+| Land and covenant one relationship (Deuteronomy 28) | Repository deep note (cultural) | Site's own teaching |
+| Romans 3:26; 5:1; Luke 2:14; the cross as a Christian reading of 85:10 ("often read") | BSB | BSB text; stated as a reading |
+
+## The plain notes on Psalm 86 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The only heading in Book Three to name David | BSB headings 73 to 89 | Script |
+| 86:15 nearly Exodus 34:6; Jonah 4:2; Revelation 15:4 | BSB | BSB text compared |
+| Woven from lines found elsewhere in Scripture | Repository deep note (historical) | Site's own teaching |
+| "Son of Your maidservant" a household-born servant; chasid (verse 2) loyalty, not perfection | Repository deep note (cultural, hard); book page ("innocence") | Site's own teaching |
+
+## The plain notes on Psalm 87 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Rahab a poetic name for Egypt (Isaiah 30:7); the five peoples; Cush south of Egypt | Repository deep note (cultural); BSB | BSB text |
+| Registers of citizens | Repository deep note (cultural) | Site's own teaching |
+| Two readings of 87:4-6 (the nations as citizens; Israelites scattered among them) | Repository deep note (hard) | Stated as views |
+| Isaiah 19:25; Galatians 4:26; Revelation 7:9 | BSB | BSB text |
+
+No modern state or border in view.
+
+## The plain notes on Psalm 88 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| One of the longest headings; two sources (sons of Korah and Heman) | 1-9 | Book page ("Who wrote the psalms"); repository deep note (historical); BSB | BSB text. "The longest" narrowed to "one of the longest" |
+| Heman among David's musicians (1 Chronicles 15:19) and among famous wise men (1 Kings 4:31); one man or two unknown; Mahalath Leannoth uncertain | 1-9 | Repository deep note; BSB | BSB text |
+| Sheol, the Pit, the grave, Abaddon ("to perish"), the land of oblivion | 1-12 | Book page ("Sheol"); repository deep note (cultural) | Site's own teaching |
+| Lasting illness and being kept apart; friends staying away | 1-9 | Repository deep note (cultural) | Site's own teaching; the trouble left unnamed, as the psalm leaves it |
+| The one lament that never turns; ends "darkness is my closest companion" (88:18) | 13-18 | Book page ("Kinds of psalm", `hard` list) | Site's own teaching |
+| The last Hebrew word of 88:18 is "darkness" (machshakh, H4285) | 13-18 | Repository word data | Script |
+| Job 3:3; Lamentations 3:6; Mark 14:50; Matthew 26:38; Isaiah 26:19; Psalm 6:5; John 11:35; Mark 15:34; Hebrews 5:7; Isaiah 53:3; Romans 8:26 | all | BSB | BSB text |
+
+Care: the fullest care line of the run, in the form of the notes on Psalms 6 and 13 (no diagnosis; do not carry it alone; a doctor, a pastor, a friend; "If you have thoughts of hurting yourself, speak to someone today"; a crisis line; the local emergency number, named only as such; the Find Help page). No phone number; no detail of self-harm. No hopeful ending added to the psalm: the Easter hope is named in 10-12 as the New Testament's, "not in Psalm 88".
+
+## The plain notes on Psalm 89 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ethan in 1 Chronicles 15:19 and 1 Kings 4:31; one or two unknown | 1-18 | Repository deep note (historical); BSB | BSB text |
+| Neighbours' stories of a storm god defeating the sea; Rahab | 1-18 | Repository deep note (cultural); earlier row (Psalm 74, search) | Site's own teaching |
+| Tabor and Hermon in the north; Hermon the tallest peak | 1-18 | Repository deep note (cultural); earlier ledger (Psalm 42) | Site's own teaching |
+| Revelation 1:5 echoes 89:27 and 89:37; Luke 1:32 | 1-18 | BSB | BSB text compared (an observation) |
+| 2 Samuel 7:14, 16 sung back; a royal grant, given not earned, planning for discipline | 19-37 | Repository deep note (cultural); BSB | BSB text |
+| Jeremiah 33:21; Acts 2:30; 2 Corinthians 1:20 | 19-37 | BSB | BSB text |
+| Many connect 38-51 with the fall of David's line to Babylon; Jehoiachin king at eighteen, taken after three months (2 Kings 24:8, 15); after the fall no son of David ruled in Jerusalem; others think of an earlier defeat | 38-52 | Repository deep note (historical, hard); book page (timeline); BSB | BSB text; stated as views. The year 597 BC not given on the page |
+| 89:52 the doxology closing Book Three; the reading of Book Four as an answer is a reading of the order | 38-52 | Book page ("Five books") | Site's own teaching |
+| Jewish reading: the promise waits for a human Messiah still to come; Christian reading: kept in Jesus (Romans 1:3; Acts 13:34); "They part over who Jesus is" | 38-52 | Book page ("The king's psalms"); BSB | Site's own teaching; stated with respect, no side beyond the site's own Christian confession |
+| Jehoiachin released and honoured (2 Kings 25:27) | 38-52 | BSB; repository deep note (hard) | BSB text |
+
+## Book Three complete (2026-11-20)
+
+Psalms 73 to 89 now have plain notes.
+
+## The plain notes on Psalm 90 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Opens Book Four; the only heading naming Moses | 1-6 | Book page ("Five books"); BSB headings | Script |
+| "Man of God" (Deuteronomy 33:1); views of the heading: Moses' own (fits the wilderness, Numbers 14:29), later and set under his name to answer Psalm 89, a middle view | 1-6 | Repository deep note (historical, hard); book page ("Who wrote the psalms") | Stated as views, no side |
+| A watch of the night; grass after rain and in the hot wind | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Seventy or eighty the full measure of a long life, not the average; not a rule; Moses at 120 (Deuteronomy 34:7) | 7-12 | Repository deep note (cultural, hard); BSB | BSB text. The BSB's em-dashes in 90:10 kept out of the quotations |
+| "Return" (shuv, H7725) in 90:3 and 90:13; Exodus 32:12 | 13-17 | Repository word data; repository deep note; BSB | Script; BSB text |
+| Genesis 3:19; Isaiah 40:8; 2 Peter 3:8; James 4:14; Luke 12:20; John 11:25; 1 Thessalonians 4:13; Lamentations 3:23; 1 Corinthians 15:58 | all | BSB | BSB text |
+
+Care line for the grieving in 7-12: no loss called deserved; grief not a lack of faith; a pastor, a friend, a doctor; the Find Help page.
+
+## The plain notes on Psalm 91 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No heading; four names for God in two verses; the voices change (1, 2, 3 on, 14-16) | 1-8 | BSB; the site's context page "Does Psalm 91 Promise Protection From Harm?" (`client/public/context/guides/psalm-91-in-context.json`) | BSB text; site's own teaching |
+| The fowler, plague, lions and cobras; neighbours' many gods and charms | 1-8 | Repository deep note (cultural); context page | Site's own teaching |
+| Wings: a mother bird (Deuteronomy 32:11) | 1-8 | Repository deep note; BSB | BSB text |
+| "Dwelling" (ma'on, H4583) in 90:1 and 91:9 | 1-8 | Repository word data; context page | Script |
+| The Rule of Saint Benedict has Psalm 91 (Vulgate 90) sung every day at Compline | 1-8 | Rule of Benedict, chapter 18 (archive.osb.org; ccel.org; pressbooks.palni.org); Wikipedia "Compline" | Search. Century and the Black Death (in the context page) not repeated |
+| The devil quotes 91:11-12 (Matthew 4:6; Luke 4:10-11); "in all your ways" left out in both; Jesus answers from Deuteronomy 6:16 (Matthew 4:7); Massah (Exodus 17:7) | 9-13 | BSB; context page; earlier ledger (Matthew 4, Luke 4 rows) | BSB text compared |
+| Not a promise that no believer is harmed; never a reason to refuse medical care or run a risk to test God | 1-8, 9-13 | Context page ("The Tempter's Reading", "Praying It Through the Night") | Agrees with the site's own teaching |
+| Acts 12:2 and Peter freed; Luke 21:18; Matthew 23:37; Psalm 9:10; Matthew 27:43; Luke 10:19 | all | BSB; context page | BSB text |
+
+The context page is named on the page by its title; no link markup is added to the data.
+
+## The plain notes on Psalm 92 (2026-11-20)
+
+One web search (shared with Psalms 93 and 94).
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The only heading naming the Sabbath (Psalm 18's heading names "the day" of a rescue, not a day of the week) | BSB headings | Script; "names a day" narrowed |
+| The Mishnah lists a psalm the Levites sang in the temple each day; 92 for the Sabbath; still sung in Jewish Sabbath worship | Mishnah Tamid 7:4 as given by myjewishlearning.com "Psalms for Every Day of the Week"; outorah.org "Tamid 7:3-4"; mishnah.org; repository deep note (historical) | Search. The tractate not named on the page; "an early collection of Jewish teaching" |
+| Sabbath remembers creation (Exodus 20:11); palm and cedar; grass | Repository deep note (cultural); BSB | BSB text |
+| Psalm 1:3; Jeremiah 17:8; Mark 2:27; Hebrews 4:9 | BSB | BSB text |
+
+## The plain notes on Psalm 93 (2026-11-20)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The LORD reigns" a coronation cry; 93 and 95 to 99 sing the LORD is King; Book Four's answer to Psalm 89 a reading | Book page ("Five books"); BSB (96:10, 97:1, 99:1) | Site's own teaching; script |
+| The Mishnah's list: 93 on the sixth day | Search shared with 92 (myjewishlearning.com; outorah.org) | Search |
+| Neighbours' storm god and the sea; here no battle | Repository deep note (cultural); earlier row (Psalm 74) | Site's own teaching. Mowinckel and the enthronement festival (deep note) not repeated |
+| Mark 4:39, 41; Revelation 19:6 | BSB | BSB text |
+
+## The plain notes on Psalm 94 (2026-11-20)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The widow, foreigner and fatherless under God's protection (Exodus 22:22-23) | Repository deep note (cultural); BSB | BSB text |
+| "Corrupt throne": foreign rulers or Israel's own courts | Repository deep note (historical) | Stated as views |
+| The Mishnah's list: 94 on the fourth day | Search shared with 92 | Search. The Greek heading (deep note) not repeated |
+| Romans 12:19; Luke 18:7; 1 Peter 5:7 | BSB | BSB text |
+| "God of vengeance" pointed to the book page's part on the cursing psalms | Book page | Site's own teaching |
+
+Care line on anxiety (verse 19): a friend, a pastor or a doctor.
+
+## The plain notes on Psalm 95 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sung as worshippers entered the temple (many scholars) | 1-6 | Repository deep note (historical) | Stated as a view |
+| Gods of regions; bowing as before a king | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Massah "testing", Meribah "quarrelling" (Exodus 17:7); forty years; Numbers 14:22-23 | 7-11 | BSB; earlier row (Psalm 81) | BSB text |
+| A priest or prophet's warning after praise, or the psalm's own design | 7-11 | Repository deep note (hard) | Stated as views |
+| Hebrews 3:7-11, 13; 4:7 ("through David"), 9; Matthew 11:28; Philippians 2:10; Revelation 4:11 | all | BSB | BSB text |
+
+## The plain notes on Psalm 96 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nearly all in 1 Chronicles 16:23-33; that song made of lines in 105, 96, 106; which came first debated | 1-9 | Book page ("The Psalms and the temple"); repository deep note; BSB | BSB text compared (1 Chronicles 16:23) |
+| elohim and elilim ("worthless idols", H0457) in 96:5 | 1-9 | Repository word data; repository deep note (cultural) | Script |
+| Conquerors carried off defeated peoples' gods; nations invited into the courts | 1-9 | Repository deep note (cultural) | Site's own teaching |
+| Judgment as good news for the wronged; "equity" | 10-13 | Repository deep note; BSB | Site's own teaching |
+| Matthew 28:19; Revelation 14:6-7; Acts 17:31; Romans 8:21; Isaiah 55:12 | all | BSB | BSB text |
+
+No nation given a place before the judge.
+
+## The plain notes on Psalm 97 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sinai's fire and quaking (Exodus 19:18) | BSB | BSB text |
+| Baal pictured riding the clouds; the throne's raised base | Repository deep note (cultural); earlier ledger (Psalm 68, cloud rider, search) | Site's own teaching. Mowinckel not named |
+| "Distant shores" the coastlands | Repository deep note | Site's own teaching |
+| 97:11 "shines" is zarua, "sown" (H2232) | Repository word data | Script |
+| Hebrews 12:28; 1 John 1:5; Romans 12:9 | BSB | BSB text |
+
+## The plain notes on Psalm 98 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Heading one word; like 96 | BSB | BSB text |
+| "Right hand", "holy arm": Exodus 15:6; Isaiah 52:10; the return from exile (many scholars) or the exodus | Repository deep note (historical); BSB | Stated as views; the years 539/538 BC not given |
+| Victory music; the ram's horn at Solomon's anointing (1 Kings 1:39) | Repository deep note (cultural); BSB | BSB text |
+| Luke 2:30-31, 10; Luke 19:40 | BSB | BSB text |
+
+## The plain notes on Psalm 99 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The last "The LORD reigns" in Book Four (none in 100 to 106) | BSB | Script |
+| Cherubim on the ark, the empty throne, the footstool | Repository deep note (cultural) | Site's own teaching |
+| Exodus 32:14; 1 Samuel 12:23; Numbers 20:12 (forgiven, yet consequences) | Repository deep note (hard); BSB | BSB text |
+| Isaiah 6:3; Revelation 4:8; 1 Peter 1:16 | BSB | BSB text |
+
+## The plain notes on Psalm 100 (2026-11-20)
+
+One web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| todah: thanks, or the thank offering (Leviticus 7:12); sung with that offering (some), or a general label | Repository deep note (historical); BSB | Stated as views |
+| Gates then courts; "serve" both labour and worship | Repository deep note (cultural) | Site's own teaching |
+| 100:3: the written text lo' "not" and the margin's lo "His" (ketiv and qere, same sound); KJV text follows the first, most modern Bibles (the BSB) the second; ancient translations divided (Septuagint and Peshitta with "not"; Aquila, Jerome and the Targum with "His") | psalms.scriptura.org "The Text and Meaning of Ps. 100:3"; claudemariottini.com on ketiv and qere; Wikipedia "Psalm 100" (mirror); BSB | Search. The ancient versions not named on the page ("Ancient translations are divided too") |
+| John 10:14; Ephesians 2:10; 1 Thessalonians 5:18; Romans 12:1 | BSB | BSB text |
+
+## The plain notes on Psalm 101 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| A king's vow, perhaps at his crowning (many readers); a royal psalm | Book page ("Kinds of psalm"); repository deep note (historical) | Stated as a view |
+| Slander and flattery at court (Saul and David); rulers boasting of justice; the king begins with himself | Repository deep note (cultural) | Site's own teaching. Hammurabi not repeated here (see Psalm 72) |
+| "Administer justice every morning" (Jeremiah 21:12) | BSB | BSB text |
+| Matthew 7:3; 1 Timothy 3:2; Philippians 4:8 | BSB | BSB text |
+| 101:8 a king's vow under God; gives no one today the right to punish neighbours | Repository deep note (hard) | Site's own teaching |
+
+## The plain notes on Psalm 102 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The heading names a kind of person, kept for any sufferer | Repository deep note (historical); BSB | BSB text |
+| Ashes in mourning (Job 2:8); owls of ruined places; the flat roof | Repository deep note (cultural); BSB | BSB text |
+| After Babylon's destruction (most scholars), Zion's stones and dust | Repository deep note (historical) | Stated as most scholars' view |
+| One of the seven penitential psalms | Earlier row (Psalm 6 note, sixth-century grouping) | Earlier ledger |
+| Hebrews 1:10-12 quotes 102:25-27 of the Son; James 1:17; 2 Corinthians 4:16 | BSB | BSB text |
+
+Care: illness not a punishment (Job); sleeplessness and loneliness; a doctor, a pastor or a friend; the Find Help page.
+
+## The plain notes on Psalm 103 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Bless" as praise; nephesh the whole living self | 1-5 | Book page (key words); repository deep note (cultural) | Site's own teaching |
+| Eagle a word for large birds of prey; commentators suggest renewal after moulting | 1-5 | Repository deep note (cultural) | Stated as a suggestion |
+| Israel warned not to forget (Deuteronomy 8:11) | 1-5 | BSB | BSB text |
+| 103:3 not a promise that every illness is healed now; readings: one recovery turned to praise, all healing (medicine included) as God's gift, the resurrection; illness not a sign God has stopped loving | 1-5 | Repository deep note (hard) | Stated as readings |
+| 103:7-8 and Exodus 34:6 after the golden calf | 6-14 | Repository deep note (historical); BSB | BSB text compared |
+| East and west: the far-apart picture (the walking illustration offered as a way of seeing, "Whether or not the psalmist thought of it that way") | 6-14 | Observation | Not attributed to anyone |
+| 103:13 a claim about God, not about every human father; Psalm 27:10 | 6-14 | BSB | BSB text |
+| Grass after the winter rains; children's children | 15-22 | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 40:31; Matthew 8:16-17; Micah 7:19; Hebrews 8:12; Luke 15:20; Matthew 6:9; 1 Peter 1:24-25; Revelation 5:13 | all | BSB | BSB text |
+
+Care: 1-5 (illness; keep seeing a doctor; tell someone; the Find Help page). The father sentence names no person's life and says nothing of the site's author.
+
+## The plain notes on Psalm 104 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tent of the sky, waters above, foundations: a poet's pictures of the world as Israel saw it | 1-9 | Repository deep note (cultural) | Site's own teaching |
+| 104:6-9: creation (Genesis 1:2) or the flood (Genesis 9:11), or both | 1-9 | BSB; observation | Stated as readings |
+| No position on the age of the earth or evolution | 1-9 | Earlier note (Psalm 19's wording) | Site's own stance |
+| Springs and rain; wine, oil and bread the three great crops; cedars of Lebanon | 10-23 | Repository deep note (cultural) | Site's own teaching |
+| The Great Hymn to the Aten (Akhenaten): praise of the sun bringing day, sending people to work, caring for animals; similar order especially from 104:20; views: Israel's poets knew a form of it (Breasted, Assmann, Redford as reported), or a shared way of praising a creator and direct borrowing unlikely (Lichtheim, Mark S. Smith as reported) | 10-23 | Wikipedia "Great Hymn to the Aten"; University of Pretoria repository "The great Atonhymn and Psalm 104: a comparative approach"; Oxford Handbook of the Psalms chapter (abstract); repository deep note (historical) | Search. Stated as a comparison scholars discuss; no scholar named on the page; the fourteenth-century date not given |
+| Care for creation as stewards, with no political application | 10-23 | Genesis 2:15 (BSB) | Site's own stance |
+| ruach (H7307) in 104:3, 4, 29, 30: wind, breath, spirit | 24-35 | Repository word data | Script |
+| Leviathan made "to frolic"; elsewhere chaos | 24-35 | BSB; earlier row (Psalm 74) | BSB text |
+| "Hallelujah" first appears in the Psalms at 104:35 (BSB) | 24-35 | BSB | Script over all 150 psalms |
+| Job 38:11; John 1:3; Colossians 1:17; Matthew 6:26; Acts 14:17; Genesis 2:7; Acts 17:25; Romans 1:20; Genesis 1:31 | all | BSB | BSB text |
+
+## The plain notes on Psalm 105 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 105 and 106 a pair: one story as faithfulness and as failure | all | Repository deep notes; BSB | Stated as the shape of the pair |
+| 105:1-15 in 1 Chronicles 16:8-22; the song made of 105, 96, 106 | 1-15 | Book page; BSB (1 Chronicles 16:8) | BSB text |
+| After the exile (many) or earlier temple worship | 1-15 | Repository deep note (historical) | Stated as views |
+| The patriarchs as strangers; kings rebuked (Genesis 12 and 20); "anointed ones" and "prophets" given to them | 1-15 | Repository deep note (cultural); BSB | BSB text |
+| The land promise in Israel's ancient story; no modern border or state | 1-15 | Site's own stance | Stated plainly |
+| "Land of Ham": Mizraim among the sons of Ham (Genesis 10:6) | 16-45 | Repository deep note (cultural); BSB | BSB text |
+| Genesis 50:20; Acts 7:9-10; Exodus 2:24; Hebrews 11:9; Luke 1:72-73; Galatians 3:29 | all | BSB | BSB text |
+| 105:25: Exodus says Pharaoh hardened his heart and God hardened it; views on sovereignty and choice | 16-45 | Repository deep note (hard) | Stated as views |
+
+## The plain notes on Psalm 106 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Communal confession after the exile (Ezra 9, Nehemiah 9, Daniel 9; Daniel 9:5 quoted) | 1-23 | Repository deep note (cultural); BSB | BSB text |
+| "In the breach": a soldier in a broken wall | 1-23 | Picture from the text | Plain reading |
+| Romans 1:23 echoes 106:20; Romans 3:23; 1 Corinthians 10:6 | 1-23 | BSB | BSB text |
+| "Gather us from the nations": exiles, or a community waiting for the rest | 24-48 | Repository deep note (historical) | Stated as views |
+| Child sacrifice forbidden (Deuteronomy 12:31) and recorded of a king of Judah (2 Kings 21:6) | 24-48 | Repository deep note (cultural); BSB | BSB text |
+| 106:48 the doxology closing Book Four; 41:13, 72:18-19, 89:52; 1 Chronicles 16:34-36 | 24-48 | Book page ("Five books"); BSB | BSB text |
+| Phinehas (Numbers 25:7-8); readings of the conquest texts (one-time judgment; the language of ancient war; Canaanites surviving and joining Israel); the New Testament turns the fight against idols to the heart | 24-48 | Repository deep note (hard) | Stated as readings |
+| Romans 11:1, 29; 1 John 1:9 | 24-48 | BSB | BSB text |
+
+The confession is Israel's own; the note says it gives no ground to blame or look down on the Jewish people, and that no reading permits harm to anyone today.
+
+## Book Four complete (2026-11-20)
+
+Psalms 90 to 106 now have plain notes. Next: Psalm 107, the start of Book Five.
+
+## The plain notes on Psalm 107 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 107 opens Book Five | 1-16 | Book page ("Five books") | Repository |
+| 106:47 "gather us from the nations" answered by 107:3 (an observation on the order) | 1-16 | BSB | BSB text; stated as the arranger's placing |
+| After the return from exile (many scholars), pointing to the book page's dates | 1-16 | Repository deep note (historical); book page ("When") | Stated as "many scholars think" |
+| Redeem: buy back or set free; a relative redeeming one sold for debt | 1-16 | Repository deep note; Leviticus 25 (site's teaching) | Plain meaning |
+| Refrains at 6, 13, 19, 28 and 8, 15, 21, 31 | all | BSB | Script count over the BSB text |
+| Gates of bronze and bars of iron as a strong city's defences; the sea as chaos in Israel's poetry; Israel not a seafaring people; thank offering with the story told | 1-32 | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 43:5; Luke 1:53; Luke 4:18; Jonah 1:4; Mark 4:39, 41; Matthew 8:8; 1 Samuel 2:8; Psalm 113:7; Luke 15:24 | all | BSB | BSB text |
+| Care: the psalm a thanksgiving, not a promise every prayer is answered alike (deep note `hard`); 107:17 not a rule that the sick are to blame; pointer to Psalm 88 and Find Help | 17-32 | Repository deep note (hard) | Stated plainly |
+
+Cut: Cyrus's date (the book page's 539 BC is pointed to instead); the Hebrew "sea" for the south in 107:3; the Dead Sea and Sodom for "fields of salt"; Phoenician shipping and Ezion-geber.
+
+## The plain notes on Psalm 108 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 108:1-5 nearly 57:7-11; 108:6-13 nearly 60:5-12 | Earlier ledger (Psalms 57, 60); BSB | BSB text compared |
+| Headings of 57 (the cave) and 60 (war); 108 drops both dark openings | BSB headings | BSB text |
+| Date of the combination unknown; after the exile (many) or earlier | Repository deep note (historical) | Stated as views |
+| 14 and 53 nearly the same; 70 repeats the end of 40 | Earlier ledger (Psalms 53, 70) | Earlier ledger |
+| Washbasin a lowly vessel; the sandal as scorn or as taking ownership (Ruth 4:7) | Repository deep note (cultural); BSB | Stated as two readings |
+| Genesis 49:10; Psalm 118:8; Romans 8:31 | BSB | BSB text |
+
+## The plain notes on Psalm 109 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A court setting; trial at the gate; accuser at the right hand | 1-20 | Repository deep note (historical, cultural) | Site's own teaching |
+| satan (H7854) in 109:6; the verb of the same root (H7853) in 4, 20, 29 | 1-20 | Repository word data | Script |
+| Deuteronomy 19:19 measure for measure for a false witness | 1-20 | BSB | BSB text |
+| Who speaks 6-19: enemies quoted (singular "him" between plural "they"), or the psalmist's own (verse 20); both held | 1-20 | Repository deep note (historical, hard) | Stated as two readings, no side |
+| The NRSV adds "They say" before 109:6 | 1-20 | NRSV as reproduced | Search: biblestudytools.com/nrs/psalms/109-6; biblia.com Ps 109:6 (NRSV, NRSVue). Only the two words quoted |
+| 109:8 quoted in Acts 1:20 with 69:25, for Judas's replacement | 1-20 | BSB | BSB text |
+| 109:9 on the book page's list of hard passages; the book page's four readings | 1-20 | Book page ("Cursing psalms", hard list) | Repository |
+| Exodus 22:22; Psalm 68:5; Luke 6:28; Matthew 27:39; Psalm 22:7; 1 Peter 2:23; Romans 12:14, 19 | all | BSB | BSB text |
+| The right hand of the accuser (6) and of God the defender (31) | 21-31 | BSB; repository deep note | Plain reading |
+
+The sentence "No reading of this psalm makes it right to harm anyone, least of all a child or a widow" stands at the end of the hard part. Ahithophel (deep note) not used.
+
+## The plain notes on Psalm 110 (2026-11-20)
+
+Three web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| LORD (the name) and Lord (adon, master) | 1-3 | Book page (key words) | Repository |
+| Right hand as honour (1 Kings 2:19); footstool as victory | 1-3 | Repository deep note (cultural); BSB | BSB text |
+| A crowning oracle (many scholars) or David's own words about a greater king | 1-3 | Repository deep note (historical, hard); book page ("Royal psalms") | Stated as views |
+| 110:1 the Old Testament verse most quoted or echoed in the New Testament | 1-3 | Book page; earlier ledger (book page row) | Repository; attributed to the book page |
+| Matthew 22:42-43, 46; Acts 2:34; Hebrews 1:13; 1 Corinthians 15:25; Romans 1:3-4; Mark 14:62; Revelation 19:15 | all | BSB | BSB text |
+| The Talmud reads verses 1 and 4 of Abraham (Nedarim 32b; also Sanhedrin 108b reported) | 1-3 | Talmud as summarised | Search: yu.edu (Sacks submissions PDF, Nedarim 32b); aish.com "Psalm 110 – Two Lords"; wikipedia Psalm 110. Tractate not named on the page |
+| Abraham ibn Ezra and David Kimhi read it as a poet writing about David | 1-3 | Medieval commentaries as translated | Search: scripturalmormonism.blogspot.com (Ibn Ezra and Radak on Psalm 110, translated); wikipedia Psalm 110 (Kimhi, Gershonides). Paraphrased. Rashi not named (sources disagree) |
+| Some rabbinic writings read 110:1 of the King Messiah | 1-3 | Midrash on Psalms (chapter 18) as reported | Search: alhatorah.org Tehillim 110:1; psalms.scriptura.org; patheos (polemical, used only with the others). Location disputed, so no reference given on the page |
+| Christian reading; David's authorship held by some, a crowning song pointing forward by others | 1-3 | Mark 12 plain note wording; book page ("Royal psalms") | Repository |
+| "Neither reading is dishonest. ... They part over who Jesus is" | 1-3 | Book page ("Royal psalms") | Repository |
+| Kings from Judah, priests from Levi and Aaron; Uzziah's leprosy (2 Chronicles 26:16-21, "skin disease") | 4 | BSB; repository deep note | BSB text |
+| Melchizedek in Genesis 14:18 and Psalm 110:4 only in the Old Testament; Salem usually Jerusalem | 4 | Earlier ledger (Genesis 14); Genesis 14 plain note | Repository |
+| Hebrews 5:6; 7:16; 7:24-25 | 4 | BSB | BSB text |
+| 110:3, 6 hard Hebrew; 110:7 a warrior drinking (or a crowning rite at a spring); "lift up the head" as restored | 1-3, 5-7 | Repository deep note (historical, cultural) | Stated as "probably" and "some scholars" |
+| Battle poetry; no modern nation or war; no reason to fight in God's name | 5-7 | Site's own stance | Stated plainly |
+
+Cut: Rowley (1950), Pfeiffer, Treves and the Hasmonean date; 1 Maccabees 14:41; Tutankhamun's footstools; Keel; Justin and Hezekiah; Philo; 11Q13 (in the Genesis 14 note already); 2 Enoch; Luther, Calvin, Hay, Hengel; Rashi by name.
+
+## The plain notes on Psalm 111 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 111 and 112 twin acrostics: 22 short lines, two per verse in 1 to 8, three in 9 and 10 | Repository deep notes (literary); book page (acrostics) | Script over the repository's Hebrew: first letters at each verse and atnah run he/bet, gimel/dalet ... resh/tav (aleph at 'odeh after Hallelujah) |
+| Hints of the exodus, Passover, manna, the land | Repository deep note (historical) | Stated as hints |
+| Exodus 34:6; Proverbs 9:10; 1:7; Luke 1:49, 68 | BSB | BSB text |
+| Fear of the LORD as awe and trust | Repository deep note (cultural) | Site's own teaching |
+
+## The plain notes on Psalm 112 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Echoes of 111 in 112 (righteousness endures forever; gracious and compassionate) | BSB | BSB text compared |
+| Psalm 1:1-2; 2 Corinthians 9:9; Matthew 5:16; Proverbs 31:20 | BSB | BSB text |
+| Lending without interest to the poor; horn as honour; bad news | Repository deep note (cultural) | Site's own teaching |
+| 112:3 not a promise of wealth; prosperity teaching named as not the psalm's | Repository deep note (hard) | Stated plainly |
+
+112:4 has an em-dash in the BSB and is quoted only before it.
+
+## The plain notes on Psalm 113 (2026-11-20)
+
+One web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 113 to 118 the Hallel, sung at the feasts and probably at Passover | Book page ("The temple"); earlier ledger (Mark 14, Mishnah Pesachim 10) | Repository |
+| Mishnah (written down around AD 200): at Passover the Hallel begun before the meal, to 113:9 (Shammai) or 114:8 (Hillel), and completed over the fourth cup | Mishnah Pesachim 10:6-7 | Search: sefaria.org sheets on Pesachim 10; mishnah.org Pesachim 10:6. Schools not named on the page; "how much was fixed in Jesus' day is not certain" |
+| Matthew 26:30 "when they had sung a hymn": many think the end of the Hallel | Book page; earlier ledger (Mark 14) | Stated as "many think" |
+| The dump as the rubbish heap where outcasts sat; childlessness as grief and shame | Repository deep note (cultural); Luke 1 plain note | Site's own teaching |
+| 1 Samuel 2:5, 8; Luke 1:52; Philippians 2:8 | BSB | BSB text |
+| Care lines on childlessness, word for word from the Luke 1 and Genesis 25 plain notes ("Many faithful people long for children ... a counsellor.") | Luke 1 and Genesis 25 plain notes | Copied exactly |
+
+## The plain notes on Psalm 114 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sea, Jordan, Sinai, rock: Exodus 14:21-22; Joshua 3:16; Exodus 19:18; Exodus 17:6 | Repository deep note (historical); BSB | BSB text |
+| Foreign tongue the Egyptians; flint the hardest desert stone | Repository deep note (cultural) | Site's own teaching |
+| Sung before the Passover meal by some (Hillel's school) | Mishnah Pesachim 10:6 (row above) | Search (Psalm 113 row) |
+| Habakkuk 3:10; Mark 4:41; 1 Corinthians 10:4 | BSB | BSB text |
+
+Cut: Ugarit's Prince Sea and Judge River (not re-searched for this psalm); 114 and 115 joined in the Greek (the book page already says so).
+
+## The plain notes on Psalm 115 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The taunt in Psalm 79:10; after the exile (many scholars) | 1-8 | Repository deep note (historical); BSB | Stated as "many scholars" |
+| Images made with care; in Mesopotamia mouth-washing and mouth-opening rites (mis pi, pit pi) so the image could see, smell, eat; images offered food and dressed in fine robes | 1-8 | Repository deep note (cultural); mis pi as summarised | Search (added after the first commit): en.wikipedia.org Mis-pi; library.biblicalarchaeology.org "From Statue to God: The Opening of the Mouth Ritual" and "Worshiping Idols". No daily schedule claimed |
+| Isaiah 44:9; Jeremiah 10:5; Acts 17:29; Colossians 3:5; 1 John 5:21; 1 Corinthians 15:20 | all | BSB | BSB text |
+| Three calls as a temple liturgy; "those who fear the LORD" as all Israel or as Gentile worshippers | 9-18 | Repository deep note (historical) | Stated as two readings |
+| 115:4-8 repeated in 135:15-18 | 9-18 | BSB | BSB text compared |
+| 115:17 and Sheol; pointer to the book page | 9-18 | Book page ("Sheol") | Repository |
+
+## The plain notes on Psalm 116 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Echoes of Psalm 18:4 and 56:13 | 1-11 | Repository deep note (historical); BSB | BSB text |
+| "Why are you downcast, O my soul?" (42:5; 43:5) | 1-11 | BSB | BSB text |
+| 116:10-11 hard Hebrew; translations differ | 1-11 | Repository deep note (historical) | Stated plainly |
+| 2 Corinthians 4:13 quotes 116:10 in its Greek form; Romans 3:4 | 1-11 | Repository deep note; BSB | BSB text |
+| Vows paid at the temple; thanksgiving offering shared (Leviticus 7:12); cup of salvation "probably" a cup at that meal | 12-19 | Repository deep note (cultural); BSB | Stated as "probably" |
+| yaqar (H3368) "precious": costly, weighty, used of jewels; not gladness at death | 12-19 | Repository word data; deep note key word | Script; site's own teaching |
+| "Son of Your maidservant": a slave born in the household (Exodus 21:4) | 12-19 | Repository deep note (cultural) | BSB text |
+| 1 Corinthians 11:25; Matthew 26:39; Romans 6:22; Hebrews 13:15; John 11:35; 1 Thessalonians 4:13 | 12-19 | BSB | BSB text |
+
+Care line on 116:15 for the grieving (a pastor, a friend, a counsellor; Find Help). 116:1 has an em-dash in the BSB and is quoted only before it.
+
+## The plain notes on Psalm 117 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The shortest psalm: 2 verses, 28 words in the BSB | BSB | Script over all 150 psalms |
+| Call and reason, the simplest hymn shape | Repository deep note (cultural) | Site's own teaching |
+| Genesis 12:3; Romans 15:8-11; Isaiah 56:7; Revelation 7:9 | BSB | BSB text |
+
+Cut: "the middle chapter of the Bible" (not attempted).
+
+## The plain notes on Psalm 118 (2026-11-20)
+
+No web search (earlier ledger rows reused).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Closes the Hallel; three groups as in 115 | 1-14 | Book page; BSB | BSB text |
+| A king after battle, or the people after the exile | 1-14 | Repository deep note (historical) | Stated as two readings |
+| 118:14 word for word Exodus 15:2; Isaiah 12:2 | 1-14 | BSB | BSB text compared |
+| Hebrews 13:6; Romans 12:21; John 10:9; Hebrews 12:6-7 | all | BSB | BSB text |
+| Gate exchanges as in Psalms 15 and 24 | 15-21 | Repository deep note (cultural) | Site's own teaching |
+| Cornerstone: foundation stone or top stone, both readings | 22-29 | Repository deep note (cultural) | Stated as both |
+| Hosanna from 118:25, first a plea, later also praise | 22-29 | Earlier ledger (Mark 11) | Earlier ledger |
+| Mishnah (around AD 200): branches waved at 118:25 at Tabernacles | 22-29 | Earlier ledger (John 7, Mishnah Sukkah 3:9) | Earlier ledger |
+| Matthew 21:9, 42; Acts 4:5-11 (rulers, elders, scribes, the high priest's family); 1 Peter 2:7; Ephesians 2:20 | 22-29 | BSB | BSB text |
+| "The builders there are those particular leaders. It is never a charge against the Jewish people, which this site rejects." | 22-29 | Acts 2 plain note wording ("never a charge against the Jewish people, which this site rejects") | Repository |
+| Palm Sunday named as the church's name for the day | 22-29 | Common Christian usage | Plain usage |
+| "Many Christians read it of the day Jesus rose" | 22-29 | A reading, stated as such | Stated as a reading |
+
+Cut: the liturgical use of Psalm 118 at Easter as a custom (not searched); Luther and 118:17.
+
+## The plain notes on Psalm 119 (2026-11-20)
+
+No web search. Five passages, not 22.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Longest psalm and longest chapter in the Bible: 176 verses | 1-8 | BSB | Script over every chapter in the repository (next: Numbers 7, 89) |
+| 22 stanzas of eight verses, each verse in a stanza beginning with that stanza's letter, aleph to taw | 1-8 | Repository deep note (literary); book page (acrostics) | Script over the repository's Hebrew: first letters run 8 x each of the 22 letters in order |
+| Eight words and the BSB's renderings: torah "law" (25); edut/edah "testimonies" (23); piqqudim "precepts" (21); chuqqim "statutes" (22); mitsvot "commandments" (22); mishpatim "judgments", sometimes "ordinances" (23); dabar "word" (24); imrah "word" or "promise" (19) | 1-8 | Repository word data aligned with the BSB text | Script (Strong's H8451, H5715/H5713, H6490, H2706/H2708, H4687, H4941, H1697, H0565 counted; BSB English words checked verse by verse) |
+| All but four verses (3, 37, 90, 122) use one of the eight words | 1-8 | Same data | Script |
+| Author and date unknown; after the exile (many) or earlier | 1-8 | Repository deep note (historical) | Stated as views |
+| Meditate as murmuring; heart as the centre of the person; wineskin by the fire; honey, gold and silver | 9-104 | Repository deep note (cultural) | Site's own teaching |
+| Torah as teaching from a God who had already rescued; Jewish reading of the law as gift; Paul on works of the law | 17-64 | Repository deep note (cultural, hard) | Stated as readings |
+| Psalm 1:2; Matthew 4:4 (Deuteronomy 8:3); 2 Timothy 3:15-16; Romans 7:12, 22; James 1:25; Matthew 5:17; Hebrews 12:11; Romans 15:4; Proverbs 6:23; John 8:12; Isaiah 53:6; Luke 15:4; John 10:11 | all | BSB | BSB text |
+| Care on 119:71: the speaker's own testimony, not a line for another's pain; not every hardship a punishment; Find Help | 65-104 | Site's care rule | Stated plainly |
+
+119:103 has an em-dash in the BSB and is quoted only before it. Cut: the Hebrew letter names as printed in Bibles (not checked against the BSB's own print); stanza-a-day reading as a custom (given as a suggestion only).
+
+Also in this commit: Psalm 116's hard part no longer says verse 15 "is often read at funerals" (a custom not checked); it now says the verse "can be a comfort to anyone who has lost someone who loved God."
+
+## The plain notes on Psalm 120 (2026-11-20)
+
+One web search. The Songs of Ascents' background is explained here once; 121 to 134 point back.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Three pilgrim feasts (Deuteronomy 16:16); "going up" to Jerusalem in the hills; Luke 2:42 | BSB; repository deep notes (120, 121) | BSB text |
+| The pilgrim reading likely, not certain | Book page ("Kinds of psalm") | Repository |
+| Mishnah (around AD 200): fifteen steps between the Court of Israel and the Court of the Women, matching the fifteen Songs of Ascents, where Levites stood with instruments at Tabernacles; it does not say they sang these psalms there | Mishnah Sukkah 5:4; Middot 2:5 | Search: sefaria.org sheets on Sukkah 5:3-6; chabad.org "The Fifteen Steps"; Booij, Biblica 91 (2010) 241-255 (bsw.org), for the caution. Courts not named on the page; Booij not named |
+| Ezra 7:9 uses ma'alah (H4609), the heading's word, for the return from Babylon | Repository word data | Script (Ezra 7:9 and Psalm 120:1) |
+| Meshech (Genesis 10:2) and Kedar (Genesis 25:13), far apart, read as pictures | Repository deep note (cultural); BSB | BSB text |
+| Broom tree coals burn hot; the tongue as arrow and fire | Repository deep note (cultural) | Site's own teaching |
+| James 3:6; Matthew 5:9; Romans 12:18 | BSB | BSB text |
+
+## The plain notes on Psalm 121 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Roads on foot, rough and dangerous (Luke 10:30) | 1-2 | Repository deep note (cultural); BSB | BSB text |
+| The hills as Jerusalem's hills or as the high places; both held | 1-2 | Repository deep note (cultural) | Stated as two readings |
+| "Maker of heaven and earth" also at 124:8 and 134:3 | 1-2 | BSB | BSB text |
+| shamar (H8104) six times (3, 4, 5, 7 twice, 8); BSB "Protector", "guard", "preserve", "watch over" | 3-8 | Repository word data; BSB | Script |
+| John 11:41; Hebrews 12:2; John 17:15; Matthew 10:29-31; Romans 8:35-39 | all | BSB | BSB text |
+| 121:7 not a promise of no harm; pointer to the Psalm 91 note; "all evil" as final ruin (some); nephesh as the whole self | 3-8 | Repository deep note (hard); Psalm 91 plain note | Stated as readings |
+
+Cut: sunstroke and 2 Kings 4; the moon as a cause of harm in ancient belief (not checked).
+
+## The plain notes on Psalm 122 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Of David": author or collection; many date it after the temple | 1-5 | Book page ("Who wrote them"); repository deep note (historical) | Stated as views |
+| "United together" as compact layout or united people | 1-5 | Repository deep note (cultural) | Stated as two readings |
+| Thrones of judgment; the king as final court | 1-5 | Repository deep note (cultural) | Site's own teaching |
+| shalom (H7965) at 6, 7, 8; Jerusalem's sound | 6-9 | Repository word data | Script |
+| Luke 2:41; Hebrews 12:22; Luke 19:42; Jeremiah 29:7; Matthew 5:9 | all | BSB | BSB text |
+| Applications held by Christians (the city; the heavenly Jerusalem; both) | 6-9 | Repository deep note (hard) | Stated as views, no side |
+| "These notes make no claim about any modern state, government, border or conflict, and nothing here is said against any people who live in that land." | 6-9 | Brief's rule; site's stance | Stated plainly |
+
+## The plain notes on Psalms 123 to 126 (2026-11-20)
+
+No web search. Each points back to Psalm 120 for the Songs of Ascents.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| Servants watching the hand; master and mistress | 123 | Repository deep note (cultural) | Site's own teaching |
+| "Arrogant" as those at ease, "proud" as lofty; after the exile (many scholars); Nehemiah 4:4; 2:19 | 123 | Repository deep note (historical, cultural); BSB | Stated as "many scholars" |
+| Mark 10:47; Luke 18:13; 1 Peter 4:14 | 123 | BSB | BSB text |
+| A call and response; which rescue unknown (a particular one, the return, or any) | 124 | Repository deep note (historical) | Stated as views |
+| Numbers 16:30-33 (swallowed alive); flash floods in dry stream beds; water as chaos | 124 | Repository deep note (cultural); BSB | Site's own teaching |
+| Fowler's snare: a bird freed only if the snare breaks; Proverbs 6:5 | 124 | Repository deep note (cultural); BSB | BSB text |
+| Romans 8:31; 2 Corinthians 1:10 | 124 | BSB | BSB text |
+| Jerusalem among higher hills, the Mount of Olives to the east; Zion (2 Samuel 5:7) | 125 | Repository deep note (cultural); BSB | Site's own teaching |
+| The scepter of the wicked; after the exile (many) or earlier | 125 | Repository deep note (historical) | Stated as "many scholars" |
+| Land allotted by lot (Joshua 14-19) | 125 | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 54:10; John 10:28; Hebrews 12:28; Psalm 130:3 | 125 | BSB | BSB text |
+| 125:4 not a merit system | 125 | Repository deep note (hard) | Stated plainly |
+| The return after 539 BC, as the book page says; "restored the fortunes" as in Job 42:10; most read it of the return | 126 | Book page ("When"); repository deep note (historical) | Repository |
+| Negev stream beds filling with winter rain; seed grain as costly hope | 126 | Repository deep note (cultural) | Site's own teaching |
+| John 16:20; Matthew 5:4; Galatians 6:9 | 126 | BSB | BSB text |
+
+Cut: Sennacherib and 701 BC (124, 125, 126); Ezra 1 and Cyrus by name (the book page's date pointed to instead).
+
+## The plain notes on Psalms 127 and 128, a pair (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| The only Song of Ascents headed "Of Solomon" | 127 | BSB headings 120-134 | BSB text |
+| yedid (H3039) in 127:2; Jedidiah (2 Samuel 12:25); heading perhaps added by someone who saw the links (many scholars) | 127 | Repository word data; repository deep note (historical); BSB | Script; stated as "many scholars" |
+| House as household and dynasty (2 Samuel 7:11) | 127 | Repository deep note (cultural); BSB | BSB text |
+| The gate as the place of disputes (Ruth 4:1); "probably" a dispute, not a battle | 127 | Repository deep note (cultural) | Stated as "probably" |
+| Matthew 7:24; Mark 4:27; 1 Corinthians 3:6; Matthew 6:33; Matthew 19:14; Isaiah 56:5; 1 Corinthians 7:7; Mark 3:35 | 127 | BSB | BSB text |
+| Childlessness care lines word for word from the Luke 1 and Genesis 25 plain notes; "a gift is not a wage" (deep note hard); "A home without children, or a single person, is not less blessed in God's eyes" | 127 | Luke 1, Genesis 25 plain notes; repository deep note (hard) | Copied exactly |
+| Eating one's harvest not a given; vine and olive (Deuteronomy 8:8); olive shoots around an old tree ("may lie behind") | 128 | Repository deep note (cultural); BSB | Stated as "may" |
+| A priestly blessing at the end ("as a priest might speak it") | 128 | Repository deep note (historical) | Stated as a likeness |
+| Zechariah 8:4-5; John 15:5; Ephesians 6:4 | 128 | BSB | BSB text |
+| Not a promise of family or plenty; Job; the care lines pointed back to 127 | 128 | Repository deep note (hard) | Stated plainly |
+
+127:2 has an em-dash in the BSB; the two halves are quoted separately, neither containing it.
+
+## The plain notes on Psalms 129 to 131 (2026-11-20)
+
+One web search (for 130).
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| "From my youth" as Israel's beginnings (Hosea 11:1) | 129 | Repository deep note (historical); BSB | BSB text |
+| Ploughing the back: wounds, or a people walked over (Isaiah 51:23); cords of the plough | 129 | Repository deep note (cultural); BSB | Stated as two readings |
+| Flat earth roofs; rooftop grass withering; harvest greetings (Ruth 2:4) | 129 | Repository deep note (cultural); BSB | BSB text |
+| Matthew 13:6; 2 Corinthians 4:9 | 129 | BSB | BSB text |
+| 129:5-8 a mild cursing prayer; book page pointer; "No reading of it makes it right to harm anyone" | 129 | Book page ("Cursing psalms"); repository deep note (hard) | Repository |
+| Depths as deep waters (Psalm 69:2) | 130 | Repository deep note (cultural); BSB | BSB text |
+| 130:3 cited in the book page's part on innocence | 130 | Book page ("Innocence") | Repository |
+| The seven penitential psalms (6, 32, 38, 51, 102, 130, 143), known since at least the sixth century (Cassiodorus); "De profundis" | 130 | Encyclopedia summaries | Search: wikipedia.org "Penitential psalm"; religiousaffections.org on settings of Psalm 130. Cassiodorus not named on the page |
+| Luther's hymn on Psalm 130 ("Aus tiefer Not"), first printed 1524 (Walter's hymnal, Wittenberg) | 130 | Hymnology summaries | Search: hymnologyarchive.com "Aus tiefer Not"; hymnary.org; bach-cantatas.com. Composition 1523 or 1524 varies, so "first printed in 1524" |
+| Watchmen through the night | 130 | Repository deep note (cultural) | Site's own teaching |
+| "Wait" (qavah) per the book page's key words | 130 | Book page (words) | Repository |
+| 1 John 1:9; Romans 3:23-24; Romans 8:1; Luke 2:25; Matthew 1:21; Ephesians 1:7 | 130 | BSB | BSB text |
+| Care line in the form of the Psalm 13 note (a doctor, a pastor or a friend; thoughts of self-harm; Find Help) | 130 | Psalm 13 plain note | Repository |
+| Weaning later than today; Hannah (1 Samuel 1:24); Isaac's feast (Genesis 21:8) | 131 | Repository deep note (cultural); BSB | BSB text |
+| Lifted heart and raised eyes as pride | 131 | Repository deep note (cultural) | Site's own teaching |
+| Matthew 18:3; 11:29; Philippians 4:11 | 131 | BSB | BSB text |
+
+Cut: the rare word for forgiveness in 130:4 and its other two uses (not checked); funerals and Lent customs for 130; Bach's cantata; the mother-image as a claim about the singer's sex (131).
+
+## The plain notes on Psalms 132 to 134 (2026-11-20)
+
+No web search. The Songs of Ascents end at 134.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| The longest Song of Ascents (18 verses) | 132 | BSB | Script over 120-134 |
+| The ark brought up (2 Samuel 6:15); Nathan's promise (2 Samuel 7); "may have been sung in a procession" | 132 | Repository deep note (historical, cultural); BSB | BSB text; stated as "may" |
+| Kiriath-jearim twenty years (1 Samuel 7:2); "fields of Jaar" generally taken as that town, "town of forests"; Ephrathah as Bethlehem's area (Micah 5:2), explained in more than one way | 132 | Repository deep note (historical) | Stated as views |
+| Numbers 10:35; 1 Chronicles 28:2; 1 Kings 11:36; 2 Samuel 7:15; Luke 1:32-33, 69; Acts 2:30 | 132 | BSB | BSB text |
+| Conditional and unconditional readings; 587 or 586 BC (book page); Jewish and Christian hopes per the book page's royal psalms part | 132 | Repository deep note (hard); book page | Stated as views |
+| Pilgrims of every tribe; or kin keeping family land undivided (Deuteronomy 25:5 phrase) | 133 | Repository deep note (historical) | Stated as readings |
+| Aaron's anointing (Exodus 29:7); Hermon's heavy dew; dew in the dry months | 133 | Repository deep note (cultural); BSB | Site's own teaching |
+| John 17:21; Acts 4:32; Ephesians 4:3 | 133 | BSB | BSB text |
+| Night service in the temple (1 Chronicles 9:33); serving as standing; lifted hands | 134 | Repository deep note (cultural); BSB | BSB text |
+| Echo of Numbers 6:24; "Maker of heaven and earth" in 121:2, 124:8, 134:3 | 134 | BSB | BSB text |
+| 1 Timothy 2:8; Revelation 7:15 | 134 | BSB | BSB text |
+
+Cut: Hermon's height in feet (133); the Mishnah's steps again (134, pointed back to 120).
+
+## The plain notes on Psalms 135 and 136 (2026-11-20)
+
+One web search (for 136).
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 135:15-18 nearly 115:4-8; 135:7 matches Jeremiah 10:13; 135:14 repeats Deuteronomy 32:36; 135:4 and Exodus 19:5 | 135 | BSB | BSB text compared |
+| After the exile by a temple singer (many) or older shared worship language | 135 | Repository deep note (historical) | Stated as views |
+| Storm and rain credited to Baal by Canaanites | 135 | Repository deep note (cultural); earlier ledger (Psalm 29, Baal) | Site's own teaching |
+| Sihon and Og (Numbers 21:23-24) | 135, 136 | BSB | BSB text |
+| "House of Levi" added in 135:20 beside 115 and 118's three groups | 135 | BSB | BSB text compared |
+| 1 Peter 2:9; Matthew 5:45; Acts 14:17 | 135 | BSB | BSB text |
+| The refrain "His loving devotion endures forever" 26 times, once in each verse; hesed (H2617) 26 times | 136 | BSB; repository word data | Script |
+| Call and response (Ezra 3:11 "sang responsively"); the refrain at 1 Chronicles 16:34 and 2 Chronicles 5:13 | 136 | Repository deep note (historical, cultural); BSB | BSB text |
+| The Talmud calls 136 the Great Hallel; Rabbi Yohanan links the name to 136:25 (food for every creature); said at the Passover meal after the Hallel to this day | 136 | Talmud Pesachim 118a as summarised; modern liturgy | Search: etzion.org.il "118a Great Hallel"; sefaria.org.il Pesachim 118a; wikipedia "Hallel". Tractate and teacher not named on the page; other opinions (134-136, 135-136) not given |
+| "Mighty hand and outstretched arm" as Deuteronomy's phrase | 136 | Repository deep note (cultural) | Site's own teaching |
+| Lamentations 3:22-23; Romans 8:39; Luke 1:48; Matthew 6:26; Ezekiel 18:23 | 136 | BSB | BSB text |
+| Conquest and firstborn texts: pointer to the Psalm 106 note's readings; "No reading of these verses gives anyone today a right to harm another person or people" | 135, 136 | Psalm 106 plain note | Repository |
+
+## The plain notes on Psalm 137 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| After the fall of Jerusalem in 587 or 586 BC | 1-4 | Book page ("When") | Repository |
+| Exiles in southern Mesopotamia; Ezekiel by the Kebar (Ezekiel 1:1); written after the exile (many) or in Babylon | 1-4 | Repository deep note (historical); BSB | Stated as views |
+| 2 Kings 25:7, 9; Lamentations 2:11; Isaiah 13:16; Jeremiah 51:24; Obadiah 1:11; Jeremiah 29:7 | all | BSB | BSB text |
+| Harp as temple music; songs of Zion (Psalms 46, 48) | 1-4 | Repository deep note (cultural) | Site's own teaching |
+| Self-curse as a form of solemn oath; the harpist's right hand and tongue | 5-6 | Repository deep note (cultural) | Site's own teaching |
+| Jewish custom: Psalm 137 said before the blessing after meals on weekdays (Psalm 126 on Sabbaths and festivals), in memory of the temple; the weekday custom less common now | 5-6 | Jewish custom as described | Search: thetorah.com "Psalm 137:9: A Galus Tehilah: Time to Cancel a Minhag?"; outorah.org; sefaria.org.il sheet "Introduction to Birkat Hamazon Part 3"; wikipedia Psalm 137 |
+| "Jewish readers have wrestled with this verse too, and modern Jewish writers have debated it openly" | 7-9 | TheTorah.com symposium on 137:9 ("Violent Fantasies on the Rivers of Babylon") and its article asking whether the custom should end | Search (row above). No rabbi or writer named; no position attributed |
+| Edom from Esau; cheering the fall (Obadiah 1:11) | 7-9 | Repository deep note (historical); BSB | BSB text |
+| The four Christian readings, one sentence each; Bonhoeffer and Lewis as the book page names them | 7-9 | Book page ("Cursing psalms") | Repository |
+| "One thing is not open. No reading of these psalms has ever made it right to harm anyone, least of all a child." | 7-9 | Book page ("Cursing psalms"), word for word | Copied exactly |
+| Revelation 18:2; 6:10; 21:2; Romans 12:19; Luke 23:34; Ephesians 4:26; Hebrews 11:16; 13:14; Philippians 3:20 | all | BSB | BSB text |
+| No modern nation in view; nothing against the people of any land today | 7-9 | Site's stance | Stated plainly |
+
+Care line for rage (heard; hand it to God; a pastor, a friend, a counsellor; danger or fear of hurting someone: help today; Find Help). Lamentations 4:10 not quoted (care). Cut: Nebuchadnezzar's 597 deportation; the rabbinic reading of Edom as Rome.
+
+## The plain notes on Psalms 138 and 139 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 138 to 145 the last run of psalms headed "of David" (146 to 150 open with Hallelujah) | 138 | BSB headings | Script over 138-150 |
+| "Before the gods": the nations' gods, the heavenly beings, or human rulers | 138 | Repository deep note (cultural) | Stated as readings. The Septuagint's "angels" not given |
+| Praying toward the temple: 1 Kings 8:29; Daniel 6:10 | 138 | BSB | BSB text |
+| 138:8's refrain as Psalm 136's | 138 | BSB | BSB text compared |
+| Luke 1:51-52; James 4:6; Philippians 1:6 | 138 | BSB | BSB text |
+| The four directions as the known world; the far sea the Mediterranean; Sheol and the book page | 139 | Repository deep note (cultural); book page ("Sheol") | Site's own teaching |
+| Jonah 1:3; Jeremiah 23:24; Hebrews 4:13; Acts 17:27; Romans 8:39 | 139 | BSB | BSB text |
+| Knitting and weaving pictures; "depths of the earth" probably the womb; Job 10:11 | 139 | Repository deep note (cultural); BSB | Stated as "probably" |
+| Jeremiah 1:5; Ephesians 2:10; Matthew 10:30; John 9:3 | 139 | BSB | BSB text |
+| Every person, with any disability or illness, made by God and precious | 139 | Brief's instruction; John 9:3 | Stated plainly |
+| The abortion debate: what the text says; Christians apply it with care and do not all draw every conclusion alike; no political position, party or law | 139 | Brief's instruction | Stated plainly |
+| Care line for grief or guilt about a pregnancy or the loss of a child (gentleness, a trusted pastor or friend, Find Help) | 139 | Site's care rule | Stated plainly |
+| A falsely accused person (some scholars); "hate" as reject; "perfect hatred" as complete refusal to side with evil; pointer to the book page's cursing psalms | 139 | Repository deep note (historical, hard); book page | Stated as readings |
+| Psalm 26:2; 1 Corinthians 4:4; Matthew 5:44; Romans 12:9 | 139 | BSB | BSB text |
+
+Cut: the Aramaic-like words in 139 and the dating debate (not needed); the Septuagint heading for 138; C. S. Lewis (deep note).
+
+## The plain notes on Psalms 140 to 143 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 140:3 quoted in Romans 3:13 | 140 | BSB | BSB text compared |
+| Snares, nets, lures from hunting; head shielded as a helmet | 140 | Repository deep note (cultural) | Site's own teaching |
+| Selah three times (3, 5, 8) | 140 | BSB | BSB text |
+| Proverbs 25:21-22 quoted in Romans 12:20 | 140 | BSB | BSB text |
+| Incense morning and evening (Exodus 30:7-8); the evening offering | 141 | BSB; repository deep note | BSB text |
+| 141:5-7 among the hardest to translate; text may be damaged; versions differ | 141 | Repository deep note (historical, hard) | Stated as uncertain |
+| Revelation 8:3; James 3:2; Proverbs 27:6; Matthew 26:41 | 141 | BSB | BSB text |
+| The caves: Adullam (1 Samuel 22:1-2) and En-gedi (1 Samuel 24); the heading does not say which; Psalm 57's heading | 142 | Repository deep note (historical); BSB | BSB text |
+| The right hand as the defender's place | 142 | BSB (109:31; 110:5; 16:8) | BSB text |
+| Matthew 26:56; John 16:32; 2 Timothy 4:16-17 | 142 | BSB | BSB text |
+| Care line for the lonely (a pastor, a friend, a neighbour; despair or thoughts of self-harm: speak to someone today; Find Help) | 142 | Site's care rule | Stated plainly |
+| 143 the last of the seven penitential psalms (pointer to the Psalm 130 row) | 143 | Earlier row (Psalm 130 search) | Earlier ledger |
+| 143:2 echoed in Romans 3:20 and Galatians 2:16 | 143 | BSB | BSB text |
+| Care line on 143:4; 143:12 pointed to the book page's cursing psalms | 143 | Site's care rule; book page | Repository |
+
+Cut: the Septuagint's Absalom note on 143 (not checked); David's life settings for 140 and 141.
+
+## The plain notes on Psalms 144 and 145 (2026-11-20)
+
+One web search (for 145).
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| Borrowings: Psalm 18:34 (and 18:2), 8:4, 39:5 | 144 | BSB; repository deep note (historical) | BSB text compared |
+| Put together later from older royal songs (many) or David's own | 144 | Repository deep note (historical) | Stated as views |
+| God coming down in storm as at Sinai; peace in a farming society | 144 | Repository deep note (cultural) | Site's own teaching |
+| Hebrews 2:6-9; James 4:14; Revelation 5:9; Ephesians 6:12; Luke 12:15 | 144 | BSB | BSB text |
+| Not a promise of wealth; "training for war" gives no one today a reason to fight in God's name | 144 | Repository deep note (hard); site's stance | Stated plainly |
+| The only heading "A Psalm of praise" (tehillah), the singular of Tehillim | 145 | Repository deep note (historical); book page ("The name") | Script over all 150 BSB headings: "A Psalm of praise" only at 145 |
+| Acrostic; no nun line in the traditional Hebrew (the repository's Hebrew runs mem at 13, samekh at 14) | 145 | Repository word data | Script |
+| A nun line in 11QPs(a), some copies of the Greek (Swete has it, Rahlfs not), the Syriac, one medieval Hebrew manuscript; lost early (some) or added (others) | 145 | Text-critical summaries | Search: puritanboard.com thread on 145 (MT, 11QPsa, LXX); workingpreacher.org commentary on 145; reformedmasora.substack.com; wikipedia Psalm 145. "Some copies of the Greek" because editions differ |
+| The BSB includes the line as the second half of 145:13 | 145 | BSB | BSB text |
+| 145:8 is Exodus 34:6 again; also 103:8, 111:4; Joel 2:13; Jonah 4:2 | 145 | BSB | BSB text |
+| Psalm 145 in Jewish morning prayer every day | 145 | Book page ("The temple") | Repository |
+| "Kingdom" four times in 11-13; "all" throughout | 145 | BSB | BSB text |
+| 1 Timothy 1:17; Revelation 11:15; Matthew 11:28; 6:26; Romans 10:13; James 4:8 | 145 | BSB | BSB text |
+
+Cut: the Septuagint's Goliath note on 144; the Qumran line's "God" for "the LORD" (detail not needed); the Talmud's reason for the missing nun.
+
+## The plain notes on Psalms 146 and 147 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 146 to 150 each begin and end with "Hallelujah!" (BSB) | 146 | BSB | Script over all 150 psalms |
+| 146 to 150 as the close of Book Five and of the book (many readers); 145 to 150 in Jewish morning prayer | 146 | Book page ("Five books", "The temple") | Repository |
+| adam (146:3) and adamah (146:4); Genesis 2:7 | 146 | Repository word data; BSB | Script |
+| The warning applies to every ruler and party alike; no modern figure in view | 146 | Brief's rule | Stated plainly |
+| Psalm 118:9; Matthew 11:5; James 1:27 | 146 | BSB | BSB text |
+| After the exile: building Jerusalem, gathering exiles (many scholars); Nehemiah 12:27 | 147 | Repository deep note (historical); BSB | Stated as "many scholars" |
+| Ravens unclean (Leviticus 11:15) | 147 | BSB | BSB text |
+| The horse as the war's strongest weapon | 147 | Repository deep note (cultural) | Site's own teaching |
+| 147 split in two in the Greek | 147 | Book page ("Numbering") | Repository |
+| Isaiah 40:26; 61:1; Luke 12:24; Romans 3:2; John 1:1, 14 | 147 | BSB | BSB text |
+
+Cut: Cyrus's decree date and the Nehemiah dedication as the setting (147); snow in Jerusalem's hills (not checked).
+
+## The plain notes on Psalms 148 to 150 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| Heavens then earth, as Genesis 1:1; waters above the skies (Genesis 1:7) | 148 | BSB | BSB text |
+| Sun, moon and stars worshipped by Israel's neighbours, here worshippers | 148 | Repository deep note; site's teaching | Stated generally |
+| Revelation 5:13; Romans 8:21; Luke 19:40 | 148 | BSB | BSB text |
+| Miriam's tambourine (Exodus 15:20); "upon their beds" read two ways | 149 | Repository deep note (cultural); BSB | Stated as two readings |
+| After the exile (many scholars); "the judgment written" limits the action to God's decree | 149 | Repository deep note (historical, hard) | Stated as "many scholars" |
+| Battle poetry; no warrant for violence today; past misuse named as wrong; the sword as the word of God (Ephesians 6:17; Hebrews 4:12) given as a reading | 149 | Brief's rule; repository deep note (hard); BSB | Stated plainly |
+| Matthew 26:52; 2 Corinthians 10:4 | 149 | BSB | BSB text |
+| Shofar, harp and lyre, tambourine and dance, cymbals | 150 | Repository deep note (cultural) | Site's own teaching |
+| Tehillim; the five Hallelujah psalms as the close (many readers) | 150 | Book page ("The name", "Five books") | Repository |
+| "Hallelujah" in the New Testament only in Revelation 19 (four times) | 150 | BSB | Script over every chapter's text |
+| Luke 23:46 from Psalm 31:5 (the book page); Ephesians 5:19; Genesis 2:7 | 150 | BSB; book page ("New Testament") | BSB text |
+
+Cut: "Jewish readers have often read 149 as final justice" (deep note; not verified); the Maccabean dating of 149; Psalm 150 in the daily offices; the Second Temple date (516 BC).
+
+## The Psalms complete (2026-11-20)
+
+All 150 psalms now have plain notes. Book Five (107 to 150) closed the book.
+
+## Romans's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/romans/intro.json`, field
+`teaching`. 8 searches, run on 2026-11-20. Ancient and modern writers are
+paraphrased unless marked. Scripture is the BSB in the repository, checked
+word for word by `scripts/validate-bible-notes.mjs` and a strict check that
+matches each quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul the author (1:1), agreed by nearly all; Tertius wrote it down (16:22); trained writers common | BSB; repository `author` | Repository |
+| Phoebe of Cenchrea (16:1-2); prostatis used of patrons; "very likely" carried the letter | BSB; wrom-ledger (prostatis; Phoebe as carrier "very likely") | Ledger |
+| Diakonos as servant or the office of deacon; readers differ | Greek text; standard lexicon sense | Stated as a reading question |
+| Doxology placed differently in manuscripts; chapter 16 once argued a separate note; most hold it belongs | Repository `author` | Repository |
+| About AD 57 (a year or two either way), from Corinth; the collection (15:25-26); three months in Greece (Acts 20:2-3); Gaius (16:23; 1 Corinthians 1:14) | Repository `date` | Repository; BSB text |
+| Erastus stone found at Corinth in 1929; identification disputed | wrom-ledger (IKorinthKent 232) | Ledger |
+| Arrest (Acts 21), two years at Caesarea (Acts 24:27), Rome as a prisoner (Acts 28) | BSB | BSB text |
+| Rome's Jewish community and synagogues; founder unknown; house churches (16:5, 14-15) | Repository `setting`, `historical` (Romans 1); Roman-world portrait | Repository; "many readers think" for several house churches |
+| Visitors from Rome at Pentecost | Acts 2:10 | BSB text |
+| Names in Romans 16: Jewish "fellow countrymen", Greek and Latin names, women; households of Aristobulus possibly slaves or freed slaves | BSB; Roman-world portrait ("a list of slaves and freedmen and hosts in Romans 16") | Stated as "may have been" |
+| Suetonius, Claudius 25.4, "Chrestus", most read Christus; AD 49 from Orosius, disputed; Acts 18:2 | wrom-ledger (verified) | Ledger |
+| Return after Claudius's death in 54; the Gentile-led interval and tensions over food and days as a reconstruction | Repository `setting`; brief | Stated as "a reconstruction and not something the letter says" |
+| Paul's reasons (1:10-15; 15:24, 28, 30-31; 3:8; 6:1, 15) and the views of the letter's purpose | BSB; repository `purpose` | Stated as views |
+| Habakkuk before the Babylonian conquest; 2:3 the appointed time; Hebrew 'emunah, steadiness or faithfulness | Repository doctrine study `justification` (ot); BSB | Repository |
+| Romans quotes the Old Testament more than any other letter of Paul | Repository `story` | Repository |
+| Paul quotes the Septuagint | Site guide septuagint-and-scripture | Repository |
+| Romans 8 names the Spirit more than any other chapter of Romans (19 times in the BSB) | BSB | Script count over Romans 1 to 16 |
+| Greek words: euangelion, dikaiosynē, dikaioō, pistis, charis, nomos, sarx, hamartia, pneuma, hilastērion, apolutrōsis, huiothesia, ethnē | Greek text in the repository (Strong's G2098, G1343, G1344, G4102, G5485, G3551, G4561, G266, G4151, G2435, G629, G5206, G1484) | Script |
+| Charis used of a patron's favour | Site guide patronage-and-grace | Repository |
+| "The righteousness of God" read as gift, as God's faithfulness, or both | Repository `themes` | Repository |
+| Lutheran and Reformed (Luther, Calvin); Catholic in Trent's words via the Catechism; 1999 Joint Declaration | Acts 13 plain note (word for word for Trent); repository doctrine study | Repository |
+| Orthodox: salvation as union with God (theosis); justification one picture among many; not cut off from healing in the church's life | Repository doctrine study `justification` (differ[2]) | Search: oca-type and academic summaries (orthodoxchristiantheology.com; modernreformation.org; learntheology.com), consistent; stated generally, no writer named |
+| E. P. Sanders, Paul and Palestinian Judaism (1977); covenantal nomism; James Dunn's 1982 Manson Memorial Lecture "The New Perspective on Paul"; N. T. Wright developed it | Sanders; Dunn | Search: bibleodyssey.com "Origins of the New Perspective on Paul"; Wikipedia "E. P. Sanders"; repository doctrine study. Wright named without a book (no title checked) |
+| Critics: weakens grace against human achievement | Repository doctrine study (differ[3]) | Stated as the critics' view; no names |
+| Pistis Christou; Romans 3:22, 3:26; Galatians 2:16; Philippians 3:9; Richard Hays, The Faith of Jesus Christ (1983); many still hold the traditional reading; some argue the early writers read "faith in" | Hays | Search: crossway.org; bibleodyssey.com "Faith of Christ"; thegospelcoalition.org; firstthings.com. Count of occurrences left vague ("a few times") because sources say seven or eight |
+| BSB 3:25 "atoning sacrifice", footnote "propitiation"; hilastērion the mercy seat in the Greek Old Testament (Exodus 25:17-22); Hebrews 9:5 | BSB; Septuagint | Search: biblestudytools.com BSB 3:25 (footnote "propitiation"); csbible.com on mercy seat |
+| Augustine, 386, a garden in Milan, a child's voice, "take up and read", Romans 13:13-14; Confessions 8.12 | Augustine, Confessions 8.12.29 | Search: christianhistoryinstitute.org "386 Augustine Converts"; christianitytoday.com; wheaton.edu reading guide. Paraphrased; season not given (sources differ) |
+| Luther lectured on Romans 1515-1516; the 1545 preface: hated "righteousness of God" as punishing justice, came to read it as the righteousness by which the just live by faith; date of the insight debated | Luther, Preface to the Latin Writings (1545) | Search: germanhistorydocs.org; pages.uoregon.edu; cambridge.org (Studies in Church History); repository doctrine study. Paraphrased |
+| Wesley, 24 May 1738, Aldersgate Street, Luther's preface to Romans read; "I felt my heart strangely warmed" | Wesley, Journal | facts-ledger (verified); repository doctrine study |
+| Barth's Römerbrief: begun 1916 as a pastor at Safenwil; printed December 1918, dated 1919; second edition rewritten, 1922; Göttingen 1921 | Barth | Search: Wikipedia "The Epistle to the Romans (Barth)"; barth.ptsem.edu; scielo.org.za. "Bombshell on the playground" not quoted (wording varies) |
+| Junia: oldest manuscripts favour the woman's name; "outstanding among" or "well known to" the apostles debated | Scholarship | Search: etsjets.org (Burer, JETS 58.4, 2015); evangelicaltextualcriticism.blogspot.com; Open Theology 2020. No scholar named on the page |
+| Claudius 41-54; Nero 54-68; Gallio about 51-52; fire of Rome July 64 (Tacitus) | wrom-ledger; earlier ledger (Mark, Acts) | Ledgers |
+| "That reading is false, and this site rejects it" | Acts 2 plain note | Repository wording |
+| Map: Corinth, Rome, Jerusalem on the "mediterranean" frame | wmap-ledger coordinates | Ledger. Illyricum not drawn (mostly north of the frame); Spain beyond the frame; both said in `mapNote` |
+
+Left out: Rome's population ("perhaps a million", repository `setting`,
+not checked); Wesley going "unwillingly" (not in the ledger, not searched);
+Calvin's "chief hinge" (not checked); the later churches that joined the
+Joint Declaration (not checked here); Karl Adam's "bombshell" line; the
+count of pistis Christou phrases; who founded the Roman church.
+
+## The plain notes on Romans 1 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter opening: sender, receiver, "greetings" (chairein); grace and peace | 1-7 | wrom-ledger (papyrus letter form); repository deep note (`cultural`) | Ledger |
+| Doulos, slave; Moses the servant of the LORD (Joshua 1:1) | 1-7 | Repository deep note; BSB | Repository; BSB text |
+| Priene inscription, about 9 BC: Augustus's birthday the beginning of good news | 1-7 | Earlier ledger (Mark); wrom-ledger | Ledgers |
+| 1:3-4 possibly an early confession ("some scholars") | 1-7 | Repository deep note (`literary`) | Stated as "some scholars think" |
+| "Obedience that comes from faith" read two ways; same phrase at 16:26 | 1-7 | BSB; Greek hupakoēn pisteōs | Stated as readings |
+| 2 Samuel 7:12, 14; Psalm 2:7; Acts 13:33; Genesis 12:3; Jeremiah 1:5; Galatians 1:15 | 1-7 | BSB | BSB text |
+| Barbaroi, those who did not speak Greek; wise and foolish as educated and uneducated | 8-15 | Earlier ledger (Acts 28, barbaroi); repository deep note | Ledger; repository |
+| 15:20-22 the reason for delay | 8-15 | BSB | BSB text |
+| Isaiah 49:6 (Acts 13:47); Isaiah 52:7 (Romans 10:15); Psalm 126:5-6 | 8-15 | BSB | BSB text |
+| Crucifixion for slaves, bandits, rebels | 16-17 | wrom-ledger (Hengel via the site's guide) | Ledger |
+| "From start to finish" is ek pisteōs eis pistin, "from faith to faith"; three readings | 16-17 | Greek text in the repository | Script; stated as readings |
+| Habakkuk 1:6, 2:3, 2:4; 'emunah steadiness or faithfulness; Psalm 98:2; Isaiah 28:16 as quoted in Romans 10:11 | 16-17 | BSB; repository doctrine study | BSB text; repository. "Some readers hear" the echo |
+| Justification views in brief, pointing to the book page | 16-17 | Book page | Repository |
+| Statues of gods in human form in Rome; Egypt's animal gods | 18-23 | Repository deep note (`cultural`) | Repository |
+| Wisdom of Solomon 13-14: knowledge of the Maker from his works, idolatry folly and the root of moral ruin, idolatry and sexual sin linked; probably first century BC; in Catholic and Orthodox Bibles | 18-23, 24-32 | Wisdom of Solomon | Search: etsjets.org ("Idolatry and Sinfulness in Wisdom of Solomon and Romans"); hts.org.za (Punt: dated 220 BC to AD 30, after 30 BC generally preferred); intertextual.bible. Canon status as the earlier ledger's Sirach row. Wisdom 14 paraphrased |
+| Orgē; "is being revealed" present tense | 18-23 | Greek text (apokaluptetai) | Script |
+| "Exchanged" three times (23, 25, 26); "gave them over" three times; paradidōmi also at 4:25 and 8:32 | 18-23, 24-32 | Repository deep note (`literary`, `words`) | Repository; BSB text |
+| Psalm 19:1; Exodus 32:4; Psalm 106:20; Jeremiah 2:11; Deuteronomy 4:16-18; Genesis 1:26 | 18-23 | BSB | BSB text |
+| First Vatican Council (1870): God known with certainty by natural reason from created things; Belgic Confession Article 2: knowledge of God from creation and providence; Barth's "No!" to Brunner (1934) | 18-23 | Dei Filius; Belgic Confession; Barth | Search: christianitytoday.com "Reviewing Revelation" (1967); theologicalstudies.net (Smith on Brunner); people.bu.edu (Barth). Paraphrased; stated as views, no side |
+| Vice lists a common form in Jewish and Greek moral writing | 24-32 | Repository deep note (`cultural`) | Repository |
+| Psalm 81:12; Genesis 1:27; Leviticus 18:22; Leviticus 19:11-18; Exodus 20:12 | 24-32 | BSB | BSB text |
+| The two readings of 1:26-27 (historic and majority; excess and exploitation in Paul's world); the reply from creation | 24-32 | Repository deep note (`hard`) | Stated as readings; no scholars named (Hays, Gagnon, Brownson in the deep note not repeated) |
+| "Due penalty" read within Paul's argument, not as illness sent as punishment | 24-32 | Site's care rule | Pastoral line |
+
+Cut: Campbell's reading of 1:18-32 as a voiced opponent (deep note; not checked); whether 1:26 speaks of women with women or of other acts (stated as "most readers take in the same sense"); ancient same-sex practices described in detail (not checked, so the second reading is stated as its holders see Paul's world).
+
+## The plain notes on Romans 2 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The diatribe: an imagined listener addressed as "O man"; whom Paul has in mind read two ways | 1-5 | Repository introduction (`reading`); deep note (`literary`) | Repository; stated as readings |
+| Chrēstotēs, kindness | 1-5 | Repository deep note (`words`) | Repository |
+| 2 Samuel 12:7; Exodus 34:6; Joel 2:13; Zephaniah 1:15 | 1-5 | BSB | BSB text |
+| 2:6-11 built as a mirror (chiasm); prosōpolēmpsia "receiving the face" | 6-11 | Repository deep note (`literary`, `words`) | Repository |
+| Psalm 62:12; Proverbs 24:12; Deuteronomy 10:17 | 6-11 | BSB | BSB text |
+| Three readings of judgment by deeds (the law's standard; believers renewed by the Spirit; works as fruit and evidence) | 6-11 | Repository deep note (`hard`) | Stated as readings, no names |
+| The law read aloud in synagogues on the Sabbath; Greek idea of a natural law | 12-16 | Jewish-life portrait; standard | Stated generally |
+| Suneidēsis; conscience weak (1 Corinthians 8:7) | 12-16 | Repository deep note (`words`); BSB | Repository; BSB text |
+| Jeremiah 31:33; Ezekiel 36:26-27; Psalm 139:23 | 12-16 | BSB | BSB text |
+| Two readings of the Gentiles of 2:14; the Honest Answer on those who never heard | 12-16 | Repository; `answers.ts` ("judged by the light they had") | Stated as readings; Honest Answer pointed to, not quoted |
+| Jewish pride in the law and the calling to be a light true, not caricature; God-fearers | 17-24 | Repository deep note (`historical`) | Repository |
+| "Rob temples": Deuteronomy 7:25-26; two readings; uncertain | 17-24 | Repository deep note | Stated as uncertain. Josephus on the AD 19 Fulvia affair (deep note) not used: not checked |
+| Isaiah 52:5 in Paul follows the Greek, which has "because of you" and "among the Gentiles", absent from the Hebrew; Ezekiel 36:20 | 17-24 | Septuagint | Search: tips.translation.bible (translation commentary on Romans 2:24); preceptaustin.org; biblehub.com commentaries |
+| Not a charge against the Jewish people: "For centuries many Christians ... This site rejects it." | 17-24 | Acts 2 plain note, word for word for the sentences reused | Repository wording |
+| Isaiah 42:6; Exodus 20:14-15; Romans 9:2; 11:1; 11:18-20 | 17-24 | BSB | BSB text |
+| Circumcision the covenant sign (Genesis 17) and chief marker of Jewishness; strange to many Greeks and Romans | 25-29 | Repository deep note (`cultural`) | Repository |
+| Judah linked to praise (Genesis 29:35) | 25-29 | BSB; repository deep note | BSB text |
+| Deuteronomy 10:16; 30:6; Jeremiah 4:4; 9:25; Ezekiel 36:27; Romans 3:2 | 25-29 | BSB | BSB text |
+
+Cut: Josephus on the AD 19 expulsion; the chiasm named as such (described as "a mirror"); Stoic writers by name on natural law.
+
+## The plain notes on Romans 3 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The very words of God" (BSB), "oracles" in older Bibles: the Scriptures | 1-8 | BSB; standard rendering (logia) | BSB text |
+| Mē genoito, "may it never be", "God forbid" in older Bibles; used repeatedly in Romans | 1-8 | Repository deep note (`literary`); Greek text | Repository; standard |
+| Psalm 51:4 in Paul follows the Greek ("victorious"); Psalm 51 after Bathsheba (its heading); Psalm 116:11; Deuteronomy 4:8 | 1-8 | BSB (Romans 3:4 and Psalm 51:4 compared) | BSB text |
+| The slander of 3:8, answered in chapter 6 | 1-8 | Repository deep note (`historical`) | Repository |
+| The chain (catena): Psalm 14:1-3 (53:1-3); Ecclesiastes 7:20; Psalm 5:9; 140:3; 10:7; Isaiah 59:7-8; Psalm 36:1; the body from throat to eyes | 9-20 | Repository deep note (`literary`); BSB | BSB text, each source verse read in place |
+| Psalm 143:2 behind 3:20 | 9-20 | Repository doctrine study; BSB | BSB text |
+| Reformed: sin touches every part, not maximal evil; Catholic and Orthodox: nature wounded, not wholly corrupted | 9-20 | Standard confessional positions | Stated generally, no documents named |
+| Law court, slave market, temple; redemption the price of a slave's or prisoner's freedom; Exodus 6:6 | 21-26 | Repository deep note (`cultural`); BSB | Repository; BSB text |
+| Hilastērion: the mercy seat in the Septuagint; Leviticus 16:14-15; Exodus 25:22; Hebrews 9:5 | 21-26 | Repository deep note; BSB | BSB text |
+| BSB "atoning sacrifice", footnote "propitiation" | 21-26 | BSB | Book-page search (biblestudytools.com) |
+| C. H. Dodd for expiation (1935); Leon Morris for propitiation (The Apostolic Preaching of the Cross, 1955) | 21-26 | Dodd; Morris | Search: en.wikipedia.org "Propitiation"; biblicaltraining.org; tyndalebulletin.org (Bailey). Paraphrased |
+| Gustaf Aulén, Christus Victor (Swedish 1930, English 1931): victory over sin, death and the devil; held the early writers' view | 21-26 | Aulén | Search: en.wikipedia.org "Christus Victor"; librarything; secondary summaries. "Bishop" not used (not seen) |
+| Penal substitution; obedience; moral influence; the objection and the reply | 21-26 | Repository deep note (`hard`) | Stated as views, no side |
+| Nicene Creed "for us men and for our salvation" | 21-26 | `client/public/creeds/` | Repository text |
+| Isaiah 53:5, 11; Genesis 15:6; pistis Christou pointer to the book page | 21-26 | BSB; book page | BSB text |
+| Boasting in public life of the Roman world | 27-31 | Honor-and-shame portrait (stated generally) | Stated generally |
+| Deuteronomy 6:4 recited in Jewish prayer; Isaiah 45:22; Jeremiah 9:23-24 | 27-31 | Jewish-life portrait; earlier ledger (Mark 12, Berakhot 1:1); BSB | BSB text; "recited", not "daily" |
+| Readings of "uphold the law" (Genesis's witness; the Spirit, 8:4; the moral law as guide) | 27-31 | Standard readings | Stated as readings |
+
+Cut: the "Romans road" and other popular uses of 3:23; Anselm and Abelard by name (seen only in secondary summaries); "Christus Victor" claimed as the view of named fathers.
+
+## The plain notes on Romans 4 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sirach (second century BC): Abraham kept the law of the Most High, found faithful when tested; 1 Maccabees 2:52 ties Genesis 15:6 to faithfulness when tested (Genesis 22) | 1-8 | Sirach 44:20; 1 Maccabees 2:52 | Search: biblegateway.com and biblestudytools.com (1 Maccabees 2:52); ascensionpress.com (Sirach 44); cejsh.icm.edu.pl (Nawrot). Paraphrased; repository deep note (`historical`) |
+| Logizomai a bookkeeping word, used again and again in the chapter | 1-8 | Repository deep note (`cultural`) | Repository |
+| Exodus 23:7; Proverbs 17:15; Psalm 32:1-2 (Paul follows the Greek); the shared-word method of reading | 1-8 | BSB; repository deep note | BSB text; repository |
+| Paul and James (James 2:21; Galatians 5:6); Genesis 15:1-6 plain note pointed to | 1-8 | Repository deep note (`hard`); Genesis 15 plain note | Stated as readings |
+| Genesis 15 before 17; Ishmael born at 86 (16:16), circumcised at 13 (17:24-25): more than thirteen years | 9-12 | BSB | BSB text |
+| A seal confirming a document or ownership | 9-12 | Standard | General |
+| Colossians 2:11-12; infant and believer's baptism as differing church practice | 9-12 | BSB; Acts 2 plain note (churches differ) | Stated as practices, no side |
+| Heir of the world; Genesis 12:3; 17:5; 22:18; Genesis 1:3; Isaiah 48:13 | 13-17 | BSB | BSB text |
+| Romans 7:12-13 on the law holy and sin shown as sin | 13-17 | BSB | BSB text |
+| Genesis 15:5; 16; 17:17; 18:12, 14; 21:2; Hebrews 11:12 | 18-25 | BSB | BSB text |
+| Isaiah 53:12 behind 4:25 ("many readers"); the Greek of Isaiah has the servant "handed over" (paredothē) because of their sins | 18-25 | Septuagint Isaiah 53:12 | Standard (Rahlfs text); stated as "many readers hear" |
+| Paradidōmi in 1:24-28 and 4:25 | 18-25 | Repository deep note (Romans 1 `words`) | Repository |
+
+Cut: the Amidah's "who gives life to the dead" (not checked); later rabbinic tradition that Abraham kept the whole law (deep note; not checked).
+
+## The plain notes on Romans 5 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Augustus as bringer of peace; the Roman peace on coins and monuments; access as introduction to a king; katallagē, making peace between parties at war | 1-5, 6-11 | Repository deep note (`cultural`) | Repository |
+| Kauchaomai "rejoice" is the boasting word; the chain of 5:3-4; dokimē as tested character | 1-5 | Repository deep note (`literary`); Greek text | Repository; standard lexicon sense |
+| The Spirit named at 1:4 and 2:29, then filling chapter 8 | 1-5 | BSB | Script count |
+| Isaiah 32:17; Psalm 22:5; Joel 2:28; Psalm 34:18 | 1-5 | BSB | BSB text |
+| Care line: not a line for fresh grief; Find Help; the suffering Honest Answer | 1-5 | Genesis 50 plain note form; `answers.ts` | Repository wording, adapted |
+| Ancient praise for dying for a friend, benefactor or city | 6-11 | Repository deep note (`cultural`) | Repository |
+| Greater-to-lesser argument known in Jewish interpretation | 6-11 | Repository deep note (`literary`) | Repository |
+| Isaiah 53:6; Hosea 14:4; Zephaniah 1:15 | 6-11 | BSB | BSB text |
+| 4 Ezra and 2 Baruch on Adam's sin and each person's responsibility | 12-14 | Repository deep note (`historical`) | Repository; stated without dates or quotation |
+| Typos, pattern | 12-14 | Greek text | Standard |
+| Western original sin (Augustine; present in Adam or Adam as appointed head); Orthodox ancestral sin (death and a bent nature, not guilt) | 12-14 | Repository deep note (`hard`); search | Search: catenabible.com (Romans 5:12); mdpi.com Religions 15 (2024); secondary pages quoting Kelly and Meyendorff. Stated as teachings, no side |
+| Old Latin "in quo" ("in whom"), followed by Augustine (and Ambrosiaster before him); most modern translations "because" | 12-14 | Search as above; repository deep note | Ambrosiaster not named on the page |
+| Historical Adam: views; the Honest Answer on Genesis 1 | 12-14 | Repository deep note (`hard`); `answers.ts` | Stated as views, no position |
+| Genesis 2:17; 3:19; 5:5; 1 Corinthians 15:22 | 12-14 | BSB | BSB text |
+| Universalist, Reformed and Arminian/Wesleyan readings of "all" and "the many" | 15-21 | Standard positions; apol-ledger (universalism refused by most churches) | Stated as readings, no names, no side |
+| Isaiah 53:11; Genesis 3:6 | 15-21 | BSB | BSB text |
+
+Cut: Gregory of Nyssa and other universalists by name; Ambrosiaster by name; 2 Baruch's "each his own Adam" line (deep note; not checked).
+
+## The plain notes on Romans 6 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Baptism the rite of entry; in water, often by immersion it seems; the New Testament does not describe the mode in detail | 1-4 | Repository deep note (`historical`) | Repository; "it seems", "many readers think" |
+| What all churches share on baptism; the differences pointed to the Acts 2:37-41 note | 1-4 | Acts 2 plain note | Repository; stated as teachings, no side |
+| Exodus 14:29; 1 Corinthians 10:1-2; Ezekiel 36:25-26; Galatians 3:27 | 1-4 | BSB | BSB text |
+| "Count" the same verb as "credited" (logizomai); hoplon usually weapons | 5-14 | Greek text; repository deep note (`cultural`) | Script; repository |
+| Readings of continuing sin (dethroned master; Reformed and Lutheran; Wesleyan entire sanctification) | 5-14 | Repository deep note (`hard`) | Stated as readings |
+| Psalm 116:16; Joshua 24:15; Deuteronomy 30:19 | 5-14 | BSB | BSB text |
+| Slavery everywhere; a large part of Rome slaves or former slaves; freed slaves owed duties; some hearers probably slaves | 15-23 | wrom-ledger (Scheidel; manumission; Romans 16 names); repository deep note | Ledger |
+| Paul's apology for the picture (6:19), read as the picture being too crude | 15-23 | BSB; standard reading | "Many readers take him to mean" |
+| Opsōnion, a soldier's pay; charisma, gift | 15-23 | Repository deep note (`cultural`) | Repository |
+| Exodus 20:2; Leviticus 25:42; Genesis 2:17; Ezekiel 18:4; Exodus 21:16; Philemon 1:16; the slavery Honest Answer | 15-23 | BSB; `answers.ts` | BSB text; Honest Answer pointed to by title |
+
+Cut: the mystery religions and the old argument that Paul borrowed from them (deep note; not checked).
+
+## The plain notes on Romans 7 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Those who know the law" read two ways; a law binds the living | 1-6 | BSB; standard | Stated as readings |
+| Deuteronomy 24:2; Hosea 2:19; Jeremiah 31:33; Ezekiel 36:27 | 1-6 | BSB | BSB text |
+| Views of the law's continuing use (moral commands distinguished from worship and national laws; stress on Christ's teaching and the Spirit) | 1-6 | Standard positions | Stated generally, no side |
+| Echoes of Adam, Israel at Sinai, or Paul's own youth in 7:7-13 | 7-13 | Repository deep note (`hard`) | Stated as readings |
+| The tenth commandment the one wholly about the heart | 7-13 | BSB (Exodus 20:17) | BSB text; standard observation |
+| Leviticus 18:5; Genesis 3:13; Exodus 20:17 | 7-13 | BSB | BSB text |
+| Ovid, Metamorphoses 7 (about line 20): Medea sees and approves the better, follows the worse; the motif behind 7:15, 19 | 14-25 | Ovid | Search: feminaeromanae.org (Latin text); static.topoi.org (von Bendemann on Rom 7:15b); intertextual.bible. Paraphrased; "a little before Paul" (Ovid died about AD 17) |
+| The "I": (1) believer: Augustine later, after first reading otherwise, in the Pelagian controversy; Luther, Calvin and much of the Lutheran and Reformed tradition; (2) a person under the law seen from faith: many early church writers and many modern scholars; (3) speech in character: Adam, Israel, anyone; Origen read it so | 14-25 | History of interpretation | Search: sharperiron.org; logos.com (Dodson); midamerica.edu journal (2020); biblicalelearning.org (Dockery, GTJ 2.2, 1981); outlook.reformedfellowship.net ("with few exceptions all ... Augustinian or Reformed"). Luther and Calvin named at the level of their traditions |
+| Wesley's reading of 7:14 | 14-25 | Wesley, Notes | Search: wesley notes pages; the results did not confirm that he read it of a person before faith, so Wesley is not named |
+| Psalm 1:2; 119:97; Jeremiah 17:9; Psalm 51:10 | 14-25 | BSB | BSB text |
+| Care line (repeated failure, addiction; doctor, pastor, counsellor, a group; Find Help) | 14-25 | Site's care rule | Pastoral line |
+
+Cut: Wesley by name (not confirmed); Kümmel (1929) and Stowers by name (not needed); Chrysostom's reading (not found).
+
+## The plain notes on Romans 8 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "No condemnation" a law-court word; the Spirit named a handful of times in chapters 1 to 7 and many in chapter 8 | 1-11 | BSB | Script count (1:4, 2:29, 5:5, 7:6 against 19 in chapter 8) |
+| Sin offering (Leviticus 4:3); Ezekiel 36:27; 37:14 | 1-11 | BSB | BSB text |
+| Abba, Aramaic for father; Jesus in Gethsemane (Mark 14:36); "Daddy" goes too far, grown children used it (Barr's 1988 article as summarised) | 12-17 | Barr, "Abba Isn't Daddy", JTS 39 (1988) | Search: thegospelcoalition.org "Does Abba mean Daddy?"; logos.com; rsc.byu.edu. Paraphrased; no scholar named on the page |
+| Huiothesia a legal term for adoption as a son with full rights of inheritance; the adopted son his new father's heir | 12-17 | NET translator's note; ISBE "Adoption" | Search: biblia.com (NET note on Romans 8:15); bibliaplus.org (ISBE). Augustus's adoption and cancelled debts not used (not confirmed) |
+| Galatians 3:28; Exodus 4:22; Hosea 11:1; Romans 9:4; Psalm 103:13; Numbers 14:3-4; Psalm 27:10 | 12-17 | BSB | BSB text |
+| The father care line in the Psalm 103 note's form ("this verse is not asking you to picture him ... not limited by the father you had") | 12-17 | Psalms 103 plain note | Repository wording, adapted |
+| Firstfruits; the three groans; "pains of childbirth" | 18-27 | BSB; standard | BSB text |
+| Genesis 3:17-18; Isaiah 65:17; 11:6, 9; Exodus 2:24 | 18-27 | BSB | BSB text |
+| God as the one who subjected creation (most readers) | 18-27 | Standard reading | Stated as "most readers" |
+| Wesley, "The General Deliverance", early 1780s, on Romans 8: the animals share in the restoration | 18-27 | Wesley, Sermon 60 | apol-ledger (verified) |
+| No political application | 18-27 | Brief's rule | Stated plainly |
+| Manuscripts differ at 8:28 on naming God; the repository's Greek lacks theos; the BSB has "God works" | 28-30 | Repository deep note (`hard`); Greek text | Script; stated generally |
+| Genesis 50:20 note's wording ("does not call evil good ... never a line to hand to someone in fresh grief ... If someone has hurt you, what they did was wrong ...") | 28-30 | Genesis 50 plain note | Repository wording, adapted |
+| Reformed, Arminian/Wesleyan and corporate readings of foreknew and predestined; the Honest Answer on choosing | 28-30 | Repository deep note; `answers.ts` | Stated as readings, no names, no side |
+| Genesis 50:20; 1:27; Jeremiah 1:5 | 28-30 | BSB | BSB text |
+| Paul's hardships (2 Corinthians 11:23-27); Nero and the Christians of Rome after July 64 | 31-39 | BSB; earlier ledger (Tacitus) | BSB; ledger |
+| Hupernikōmen, one word | 31-39 | Greek text | Script |
+| Genesis 22:12; Isaiah 50:8-9; Psalm 110:1; Psalm 44:17, 22 | 31-39 | BSB | BSB text |
+| Perseverance views (Reformed and Baptist; Wesleyan, Arminian and Catholic); John 10:28; Hebrews 6:4-6; "That fear is not usually the mark of someone who has fallen away" | 31-39 | `answers.ts` ("Can you lose your salvation?") | Repository; wording adapted from the Honest Answer |
+
+Cut: height and depth as astrological terms (not checked); Orthodox teaching on perseverance (not in the Honest Answer, not checked); Jeremias by name.
+
+## The plain notes on Romans 9 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Exodus 32:32 (Moses: "blot me out"); Exodus 4:22 (Israel God's firstborn son); Romans 8:15, 8:38-39 | 1-5 | BSB | BSB text |
+| 9:5: BSB text reads "Christ, who is God over all"; the BSB footnote gives only another wording of the praise ("Or forever blessed"), not the punctuation; little punctuation in old copies; comma reading (most modern translations and most early writers) or a full stop and a separate blessing of God (some translations) | 1-5 | BSB footnote; repository verse note (9:5) | Search: openbible.com BSB Romans 9 (footnote); biblia.com NET note; bible.com NABRE. Footnote not quoted; no translation named |
+| Firstborn son normally the larger share; God reversing the order | 6-13 | Repository deep note (`cultural`) | Repository |
+| Genesis 21:12-13; 18:10, 14; 25:23; Malachi 1:2-3 | 6-13 | BSB | BSB text |
+| The "love and hate" idiom, Genesis 29:30-31, Luke 14:26, Deuteronomy 23:7; Reformed, Arminian/Wesleyan and corporate readings of Jacob and Esau | 6-13 | Genesis 25 plain note | Repository wording, reused nearly word for word |
+| Diatribe style (an imagined objector) | 14-18 | Repository deep note (`literary`) | Repository |
+| Exodus 33:18-19 (after the golden calf); Exodus 9:15-16; Paul follows the Greek with changes of his own | 14-18 | BSB; repository verse note (9:17) | BSB text; repository |
+| Pharaoh hardens his heart (Exodus 8:15, 8:32); God hardens it (Exodus 9:12; foretold 4:21); first said of God by the narrator at 9:12, after the sixth plague | 14-18 | BSB; repository verse note (9:18) | BSB text |
+| Reformed and Arminian readings of hardening, both keeping Pharaoh responsible | 14-18 | Repository verse and deep notes | Stated as readings, no side |
+| Isaiah 29:16; 45:9; Jeremiah 18:4, 6, 8; Hosea 2:23; 1:10; Isaiah 10:22; 1:9 | 19-29 | BSB | BSB text |
+| Westminster Confession 3.7: God "was pleased ... to pass by; and to ordain them to dishonour and wrath for their sin"; "the 1640s" | 19-29 | Westminster Confession of Faith 3.7 | Search: ccel.org (Schaff, Creeds); sermonindex.net (Shaw's exposition, "the decree of reprobation"); two phrases quoted |
+| Three readings of 9:22-23 (Reformed with or without "double predestination"; Arminian/Wesleyan, God's patience, 2:4; corporate) | 19-29 | Repository deep note (`hard`) and verse note (9:22) | Stated as readings, no names, no side |
+| Care line (afraid of not being chosen), in the form of the 8:31-39 care line | 19-29 | Romans 8 plain note | Repository wording, adapted |
+| Isaiah 28:16; 8:14; 1 Peter 2:6-8 | 30-33 | BSB | BSB text |
+| "Works" read two ways (traditional; new perspective) | 30-33 | Book page | Repository |
+| "For centuries some Christians used words ... That reading is false, and this site rejects it" | 30-33 | Book page ("What Romans is not"); Acts 2 plain note | Repository wording |
+
+Cut: Chrysostom's reading of "prepared" (named in the verse note, not checked
+here); Barth's reading of election (not checked); Edom's later history and
+John Hyrcanus; the RSV of 1946; Metzger and Harris by name.
+
+## The plain notes on Romans 10 (2026-11-20)
+
+No web searches; everything below rests on the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paul's own former zeal (Philippians 3:6; Acts 22:3; Galatians 1:14) | 1-4 | BSB; repository deep note (`historical`) | BSB text |
+| Telos: end or goal, or both; Matthew 5:17; Romans 7:12; 3:31 | 1-4 | Greek text (G5056); repository deep note | Stated as readings, no side |
+| 1 Samuel 12:23; Deuteronomy 30:6; Numbers 25:11; 1 Kings 19:10 | 1-4 | BSB | BSB text |
+| Kyrios for God's name in the Greek Old Testament; used of the emperor; Acts 25:26 "our sovereign one" (Greek "the lord"), Festus of the emperor (Nero) | 5-13 | Repository deep note (`historical`); wrom-ledger Part 4 (Acts 25:26) | Ledger; the cost of confessing stated generally (repository `cultural`) |
+| Leviticus 18:5; Deuteronomy 30:12, 14 in their setting; Isaiah 28:16; Joel 2:28, 32; Acts 2:21; 1 Corinthians 12:3 | 5-13 | BSB | BSB text |
+| Baptism and conversion differences pointed to Romans 6 and Acts 2 notes | 5-13 | Repository | Repository |
+| Messengers and heralds; Isaiah 52:7 in its setting | 14-21 | Repository deep note (`cultural`) | Repository; BSB text |
+| Isaiah 53:1; Psalm 19:4; Deuteronomy 32:21; Isaiah 65:1-2 | 14-21 | BSB | BSB text |
+| Most people could not read; letters read aloud | 14-21 | wrom-ledger Part 7 (Harris; reading aloud) | Ledger; stated generally |
+| Those who never heard: three answers (explicit faith; inclusivist; at or after death), no fate stated; the Honest Answer | 14-21 | Repository deep note (`hard`); `answers.ts` | Stated as views, no side |
+
+Cut: the date of the confession "Jesus is Lord" as earliest (stated only as
+"one of the oldest"); Deissmann's papyri on Nero as lord (not reached).
+
+## The plain notes on Romans 11 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1 Kings 19:10, 18 (Elijah, Jezebel); Deuteronomy 29:4; Isaiah 29:10; Psalm 69:22-23 | 1-10 | BSB | BSB text |
+| The Psalm 69 note's paragraph on Romans 11:9-10 | 1-10 | Psalms 69 plain note | Repository wording, word for word |
+| "Foreknew" as in 8:29; hardening readings as at 9:18 | 1-10 | Romans 8 and 9 plain notes | Repository |
+| First dough offered (Numbers 15:20); root as the patriarchs ("many readers"); Deuteronomy 32:21; Isaiah 42:6 | 11-16 | BSB; repository deep note | BSB text |
+| Supersessionism (replacement; harsher and milder "fulfilment" forms); covenant theology (one people); dispensational (distinct future for ethnic Israel); two-covenant (Jews in covenant through Moses apart from Christ, held by some, not most churches) | 11-16 | Overviews | Search: 1517.org "Did the church replace Israel"; learn.ligonier.org "The Church and Israel"; ethosinstitute.sg. Each stated in its holders' terms, no names, no side |
+| Vatican II, Nostra Aetate 4 (1965), citing Romans 11:28-29: God holds the Jews most dear for the sake of their fathers | 11-16 | Nostra Aetate 4 | Search: christianunity.va (Nostra Aetate 4); notredamedesion.org; cbcew.org.uk. Paraphrased |
+| "That reading is false, and this site rejects it"; no claim about any modern state | 11-16, 25-29 | Book page; Acts 2 and 28 plain notes | Repository wording |
+| Usual grafting: cultivated shoot onto wild stock; Paul's picture the reverse ("contrary to nature"); whether he had a farming practice in mind debated | 17-24 | Commentaries | Search: biblehub.com commentaries on 11:24; Columella not named (his text not reached) |
+| Jeremiah 11:16; Hosea 14:6 | 17-24 | BSB | BSB text |
+| Perseverance views on 11:20-22 (Reformed and Baptist; Wesleyan, Arminian and Catholic); the Honest Answer | 17-24 | `answers.ts`; Romans 8 plain note | Stated as views, no side |
+| "Mystery" as something hidden now revealed | 25-29 | Standard Pauline usage | Stated generally |
+| Isaiah 59:20-21 (BSB Hebrew-based "to Zion"; Paul follows the Greek "from Zion"); Isaiah 27:9; Jeremiah 31:34; Deuteronomy 7:8; Galatians 6:16 | 25-29 | BSB; repository deep note | BSB text |
+| Three readings of "all Israel"; "And so" two ways | 25-29 | Acts 28 plain note; repository deep note (`hard`) | Repository; no side |
+| "Consigned" (shut up together); universalist, two-groups, Reformed and Arminian readings of "everyone" | 30-36 | Romans 5 plain note (5:18) | Repository; no side |
+| Isaiah 40:13; Job 41:11 | 30-36 | BSB | BSB text |
+
+Cut: Columella by name; the 2015 Vatican document on 11:29 (found, not
+needed); Calvin by name for the "whole people of God" reading.
+
+## The plain notes on Romans 12 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Therefore" turns from God's mercy to the life that follows; 11:32 | 1-2 | BSB; repository deep note | BSB text |
+| Metamorphoō: used of Christ's transfiguration (Matthew 17:2; Mark 9:2) and of Christians (Romans 12:2) | 1-2 | Abbott-Smith lexicon in the repository (G3339) | Script over `lex/G` |
+| Psalm 51:17; Hosea 6:6; Psalm 50:14 | 1-2 | BSB | BSB text |
+| Body picture as in 1 Corinthians 12; prophecy "in proportion to his faith" read two ways | 3-8 | BSB; standard | BSB text; stated as readings |
+| Proverbs 3:7; Exodus 31:3; Numbers 11:29; Joel 2:28 | 3-8 | BSB | BSB text |
+| Gifts today (continuationist, cessationist, in between); pointer to Acts 2:1-4 | 3-8 | Acts 2 plain note | Repository; no side |
+| Anupokritos, unfeigned; built from hupokritēs, a stage actor | 9-13 | Abbott-Smith lexicon in the repository (G0505, G5273) | Script over `lex/G` |
+| Paul staying with Gaius (16:23); Phoebe "very likely" the carrier | 9-13 | BSB; book page | Repository |
+| Amos 5:15; Genesis 18:1-8; Deuteronomy 10:19; 15:7 | 9-13 | BSB | BSB text |
+| Matthew 5:44; Nero and the Christians of Rome a few years later | 14-21 | BSB; earlier ledger (Tacitus, Annals 15.44) | Ledger |
+| Deuteronomy 32:35; Leviticus 19:18; Proverbs 25:21-22; Paul follows the Greek | 14-21 | BSB | BSB text |
+| The Psalms book page's part on the cursing psalms, quoting Romans 12:19 | 14-21 | Psalms intro (`teaching`) | Repository |
+| Burning coals: shame leading to repentance (the reading many hold); judgment; an Egyptian penitence rite with a dish of burning coals, thinly attested and later | 14-21 | Commentaries; NTS article "Coals of Fire: Sign of Repentance or Revenge?" | Search: cambridge.org NTS abstract; biblegateway Reformation Study Bible note on Proverbs 25:22; tmcdaniel.palmerseminary.edu. No scholar named |
+| Safety lines ("Nothing in this passage asks anyone to stay where they or their children are in danger ... The Find Help page on this site lists places to turn.") | 14-21 | Genesis 16 plain note | Repository wording, word for word |
+
+Cut: the Roman fable of the belly and the members (not checked); masks in
+the ancient theatre; inns; early Christian writers on the coals (not checked).
+
+## The plain notes on Romans 13 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| About AD 57; Nero emperor 54-68, early in his reign; fire and killing of Christians July 64; tradition that Paul died in Rome under Nero | 1-7 | Book page; earlier ledger (Tacitus, Annals 15.44; Eusebius 2.25; 1 Clement 5) | Ledgers |
+| Claudius's expulsion of Jews "perhaps around AD 49" (disputed); Prisca and Aquila | 1-7 | wrom-ledger (Suetonius; Orosius) | Ledger |
+| Tacitus, Annals 13.50: the people's repeated complaints of the tax collectors' greed; Nero considered abolishing the indirect taxes; his advisers checked him; "around this time" (no year stated) | 1-7 | Tacitus | Search: sacred-texts.com Annals 13.50 (English and Latin); poetryintranslation.com Annals 13. Paraphrased |
+| Phoros (direct tax) and telos (tolls, customs) "most likely" | 1-7 | Repository deep note (`historical`) | Repository |
+| Mark 12:17; Daniel 2:21; Proverbs 8:15; Jeremiah 29:7; Exodus 1:17; Daniel 3:18; 6:10; Acts 5:29; Revelation 13 | 1-7 | BSB | BSB text |
+| 1850 sermons urging a religious duty to obey the law requiring the return of people who escaped slavery (e.g. Ichabod Spencer, "The Religious Duty of Obedience to Law", Brooklyn, 24 November 1850), answered by "God's laws paramount" (Nathaniel Colver, 1850) | 1-7 | Sermons | Search: gutenberg.org 13988; archive.org; library catalogues. Stated generally, no preacher, nation or law named; not claimed that each cited Romans 13 |
+| Kairos Document (1985) names Romans 13:1-7 as the first example of "State Theology" and rejects its use to give the apartheid state absolute, divine authority | 1-7 | Kairos Document, chapter 2 | Search: sahistory.org.za (document text); Wikipedia "Kairos Document". Paraphrased; no nation named |
+| Pacifist, just war (Augustine to Aquinas) sentences | 1-7 | Luke 6 plain note (and ledger line on Aquinas, Summa II-II q. 40) | Repository wording |
+| Death penalty: two views, no side; "Romans does not tell anyone which party or ruler to support" | 1-7 | Book page ("What Romans is not") | Repository |
+| Exodus 20:13-15, 17; Leviticus 19:18 in its chapter; Mark 12:31 | 8-10 | BSB | BSB text |
+| Augustine, 386, Milan garden, "take up and read", Romans 13:13-14 | 11-14 | Book page; earlier ledger (Confessions 8.12) | Repository wording |
+| Galatians 3:27; Isaiah 60:1; 59:17; Ephesians 6 | 11-14 | BSB | BSB text |
+| Nearness of the day read two ways | 11-14 | Standard readings | Stated as readings, no side |
+
+Cut: the "quinquennium" of Nero's good years (not checked); debt in Rome;
+Luther and Calvin on obedience; the Confessing Church (in the deep note, not
+needed); the year AD 58 for Annals 13.50 (said "around this time").
+
+## The plain notes on Romans 14 (2026-11-20)
+
+No web searches; the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Weak and strong most likely Jewish and Gentile believers over food laws, Sabbath and feasts ("most readers"); market meat from temples; avoiding meat as Daniel did; wider idol-meat scruples possible | 1-12 | Repository deep note (`historical`, `cultural`); book page (Rome reconstruction) | Repository; stated as the usual reading |
+| Jewish families keep food laws and Sabbath today | 1-12 | General knowledge | Stated generally, with respect |
+| Leviticus 11:44; Exodus 20:8; Daniel 1:8, 12; Isaiah 45:23; 49:18 | 1-12 | BSB | BSB text |
+| Galatians 5:2; Romans 16:17; "things indifferent" (adiaphora); creeds as a line for some, more for others | 1-12 | BSB; repository deep note (`hard`) | Stated as views, no side |
+| Koinos the ordinary Jewish word for ritually impure food | 13-23 | Repository deep note (`cultural`) | Repository |
+| Leviticus 19:14; Isaiah 52:7; Psalm 104:15; Mark 7:19; Acts 10:15 | 13-23 | BSB | BSB text |
+| Two readings of the food laws for believers (not binding; Jewish believers may keep them); "weak" as a wounded conscience, weighed differently | 13-23 | Standard readings | Stated as readings, no side |
+
+## The plain notes on Romans 15 (2026-11-20)
+
+No web searches; the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Psalm 69:9; John quotes the first half (John 2:17), Paul the second | 1-6 | BSB; Psalms 69 plain note | Repository |
+| "Accept one another" and the Roman reconstruction (book page) | 7-13 | Book page | Repository; conditional ("If") |
+| Psalm 18:49 = 2 Samuel 22:50; Deuteronomy 32:43; Psalm 117:1; Isaiah 11:1, 10; Paul follows the Greek at Isaiah 11:10; quotations from the Law, Prophets and Psalms | 7-13 | BSB; repository deep note (`literary`) | BSB text |
+| Pointer to the Israel-and-church views (11:11-16) | 7-13 | Romans 11 plain note | Repository |
+| Gentiles kept to the temple's outer court; leitourgos, priestly service | 14-21 | Repository deep note (`cultural`) | Repository |
+| Illyricum: the province on the east coast of the Adriatic, north and west of Macedonia; no visit in Acts; perhaps its border from Macedonia (Acts 20:1-2); the map note | 14-21 | Repository deep note (`historical`); book page `mapNote` | Repository |
+| Isaiah 52:15; 66:20 | 14-21 | BSB | BSB text |
+| The collection: 1 Corinthians 16:1-3; 2 Corinthians 8 and 9; Acts 24:17; gifts as bonds | 22-33 | BSB; repository deep note (`cultural`) | BSB text |
+| Acts 21:21, 27-33 (seized at the temple, arrested by the commander); two years at Caesarea; Rome as a prisoner; Acts 28:30-31 | 22-33 | BSB; book page | BSB text |
+| 1 Clement: "the limits of the west", Rome or Spain, tradition and uncertain | 22-33 | Acts 28 plain note; earlier ledger (1 Clement 5) | Repository wording |
+| Genesis 12:3; Isaiah 66:20; "some readers think" the collection a sign of the nations' gifts | 22-33 | BSB | Stated as some readers' view |
+
+Cut: the Muratorian fragment on Spain (not checked); "about AD 96" for 1
+Clement (the site says "usually dated near the end of the first century").
+
+## The plain notes on Romans 16 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letters of recommendation common | 1-2 | Repository deep note (`cultural`) | Repository |
+| Cenchrea Corinth's eastern port; Phoebe "very likely" the carrier; diakonos read two ways (Philippians 1:1; 1 Timothy 3:8); prostatis used of patrons | 1-2 | Book page; wrom-ledger; Greek text (G1249, G4368) | Repository; script |
+| Women deacons in many churches from early times (Pliny's two ministrae, wrom-ledger), others not | 1-2 | wrom-ledger Part 8 | Stated generally |
+| Complementarian and egalitarian paragraphs in the Acts 18 form | 1-2, 3-16 | Acts 18 plain note | Repository wording, adapted; no side |
+| Genesis 18:1-8; Deuteronomy 10:19; 2 Kings 4:9; Luke 8:3 | 1-2 | BSB | BSB text |
+| Prisca and Aquila: Acts 18:2, 18, 26; 1 Corinthians 16:19; Claudius's order | 3-16 | BSB; wrom-ledger | BSB text |
+| Ampliatus, Urbanus, Stachys, Hermes common slave and freed-slave names in Rome; no proof each was a slave; households of Aristobulus and Narcissus probably slaves and freedmen of great houses; identifications with famous men unconfirmed | 3-16 | Commentaries; repository deep note (`historical`, `cultural`) | Search: lifeandland.org (Franz on Romans 16, inscriptions); baonline.org "Learning from a List"; scotmcknight.substack.com. No famous man named |
+| Ten women named or mentioned | 3-16 | BSB | Count of the BSB text (Phoebe, Prisca, Mary, Junia, Tryphena, Tryphosa, Persis, Rufus's mother, Julia, Nereus's sister) |
+| Junia a common Latin woman's name; male "Junias" unattested; early writers almost without exception a woman; most scholars agree; some translations printed a man's name for centuries | 3-16 | Book page ledger (Burer, JETS 2015); scholarship | Search: cbeinternational.org; degruyterbrill.com (Open Theology 2020); etsjets.org (JETS 63.3). The "250 inscriptions" count not used |
+| "Outstanding among" or "well known to" the apostles; apostolos used of church messengers (2 Corinthians 8:23, Greek apostoloi, BSB "messengers") | 3-16 | Greek text (G0652, G1978); book page | Script; no scholar named |
+| Holy kiss (1 Corinthians 16:20; 2 Corinthians 13:12; 1 Thessalonians 5:26; 1 Peter 5:14) as family greeting | 3-16 | BSB; repository deep note | BSB text |
+| Rufus possibly Simon of Cyrene's son (Mark 15:21), uncertain | 3-16 | Repository deep note | Stated as uncertain |
+| Genesis 3:15; Proverbs 26:28; the warning read with chapter 14 | 17-20 | BSB | BSB text |
+| Timothy (1 Timothy 1:2); Tertius; trained writers common; Gaius (1 Corinthians 1:14); Erastus stone 1929, identification disputed | 21-24 | Book page; wrom-ledger | Repository |
+| 16:24 absent from the oldest copies; BSB leaves it empty | 21-24 | BSB text in the repository (verse 24 blank); repository deep note | Repository |
+| Numbers 6:24; Deuteronomy 33:27; Romans 1:5, 17; 11:33; 15:12 | 21-27 | BSB | BSB text |
+| Doxology: at the end of chapter 16 in many of the oldest copies; after 14:23 in others; after 15:33 in one very early papyrus (P46); omitted in a few later copies; explanations (shorter copies circulated); most editors print it at 16:25-27 | 25-27 | Textual notes | Search: biblia.com NET note on 16:25; scripturalmormonism.blogspot.com (Porter's commentary quoted). No manuscript named on the page |
+
+Cut: Lightfoot by name; Junia's "250 inscriptions"; the Domitilla catacomb;
+Herod's grandson and Claudius's freedman as identifications; Marcion.
+
+## 1 Corinthians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/1-corinthians/intro.json`,
+field `teaching`. 5 searches, run on 2026-11-20. Ancient and modern writers are
+paraphrased. Scripture is the BSB in the repository, checked word for word by
+`scripts/validate-bible-notes.mjs` and a strict check that matches each
+quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul with Sosthenes (1:1); nearly all accept Paul as author; greeting in his own hand (16:21) | BSB; repository `author` | Repository |
+| Sosthenes of Acts 18:17 perhaps the same man, uncertain | BSB; Acts 18 plain note | Repository |
+| 1 Clement, from the church in Rome to Corinth, near the end of the first century, tells them to take up Paul's letter about himself, Cephas and Apollos, because they had made parties even then (47) | 1 Clement 47 | Search: cts.perseids.org (Lake translation, 47.1-47.5); lexundria.com; ets.galaxie.com JETS 39.1. Paraphrased; no year given beyond "near the end of the first century" |
+| Some scholars think the letter joins more than one letter; most read it as one | Repository `author` | Stated as views |
+| Written at Ephesus (16:8); Paul two to three years there (Acts 19:10; 20:31); about AD 53 to 55 | BSB; repository `date`; apol-ledger (Wikipedia 53 to 57, Ehrman 54 to 55) | Ledger |
+| Gallio inscription at Delphi; most 51 to 52, some 50 to 51 | wrom-ledger | Ledger |
+| Year and a half in Corinth (Acts 18:11); Titus Justus (Acts 18:7) | BSB | BSB text |
+| Corinth destroyed 146 BC, refounded 44 BC as a colony; Strabo: largely freed slaves; mixed settlers (Pawlak); seat of the governor of Achaia; Lechaeum and Cenchrea | wrom-ledger; Acts 18 plain ledger rows | Ledger |
+| Erastus pavement found 1929; identification disputed; date argued | wrom-ledger (IKorinthKent 232) | Ledger |
+| Isthmian Games every two years, for Poseidon, belonged to Corinth | Isthmia | Search: en.wikipedia.org "Isthmia (sanctuary)"; ferrelljenkins.blog. The games' site in Paul's day (Corinth or Isthmia) not stated |
+| Strabo 8.6.20: more than a thousand temple slaves, courtesans, at Aphrodite's temple; describes the older city; doubted | Strabo | Search: biblicalstudies.org.uk (Baugh, citing Ferguson and the OCD); old.biblicalarchaeology.org; en.wikipedia.org "Temple of Aphrodite at Acrocorinth". Stated as "seems to have been describing" |
+| Dining rooms held few; others in the courtyard | Roman-world portrait (Murphy-O'Connor 1983) | wrom-ledger |
+| Chloe's household; earlier lost letter (5:9); Stephanas, Fortunatus, Achaicus (16:17); peri de openings (7:1, 7:25, 8:1, 12:1, 16:1, 16:12) | BSB; repository `purpose` | BSB text |
+| Painful visit (2 Corinthians 2:1); tearful letter (2:4), many think lost, others in 2 Corinthians 10 to 13; partition of 2 Corinthians debated | Scholarship | Search: zondervanacademic.com "four letters"; en.wikipedia.com "2 Corinthians"; lists.ibiblio.org corpus-paul. Stated as views, "these notes do not choose" |
+| 6:12 printed as a slogan in quotation marks in the BSB; translators judge 7:1, 8:1, 8:4 | BSB text (6:12 marks; 7:1, 8:1, 8:4 unmarked); repository `reading`, `cultural` | Repository |
+| Crucifixion kept for slaves and rebels | Roman-world portrait (Hengel) | wrom-ledger |
+| Paul's quotations sometimes follow the old Greek translation | Comparison of BSB Isaiah 29:14 with 1 Corinthians 1:19 | BSB text |
+| Old Testament quotations named: Isaiah 29:14, Jeremiah 9:24, Job 5:13, Psalm 94:11, Leviticus 18:8, Deuteronomy 17:7, Exodus 12, Genesis 2:24, Psalm 110, Psalm 8, Genesis 2:7, Isaiah 25:8, Hosea 13:14, Deuteronomy 6:4 | BSB | BSB text |
+| Map: Corinth, Ephesus, Jerusalem on the "mediterranean" frame | wmap-ledger coordinates | Ledger. Cenchrea too close to Corinth to label apart: said in `mapNote` |
+
+Cut: "to Corinthianize" and the old city's jokes (not confirmed by the search);
+1 Clement's year (AD 96) and its wording in quotation marks; Strabo's own
+words; Origen by name.
+
+## The plain notes on 1 Corinthians 1 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter form; charis for the usual greeting; shalom | 1-9 | Romans 1 plain note (same form) | Repository |
+| Ekklēsia: the citizens' assembly; the Greek Old Testament's word for Israel's assembly | 1-9 | Earlier ledger (Acts 5:11 row) | Ledger |
+| Joel 2:32; Amos 5:18; Deuteronomy 32:4; 4:7 | 1-9 | BSB | BSB text |
+| Apollos of Alexandria (Acts 18:24-28); Cephas the Aramaic name of Peter; Peter's visit unknown; no rivalry among the leaders (16:12) | 10-17 | BSB; deep note `historical`; Acts 18 plain note | Repository |
+| Teachers of rhetoric with followers | 10-17 | Deep note `cultural` | Stated generally, no names |
+| ‘I follow Christ’: a fourth party or Paul's irony | 10-17 | Commentary options | Stated as two readings |
+| Chloe's household probably slaves or workers; Crispus (Acts 18:8); Gaius (Romans 16:23) "may be" | 10-17 | Deep note; BSB | Repository |
+| Psalm 133:1; John 17:21; Matthew 28:19; 12:13; Romans 6:3; baptism views pointed to the Acts 2:37-41 note | 10-17 | BSB; repository | BSB text |
+| Crucifixion for slaves, bandits, rebels; Cicero, For Rabirius 16, paraphrased | 18-25 | Roman-world portrait | wrom-ledger |
+| Deuteronomy 21:23; skandalon; mōria | 18-25 | BSB; Greek text | Repository |
+| Isaiah 29:14 in the Hebrew (BSB) and Paul's wording close to the old Greek; Isaiah 29:13; 19:12; 33:18; 28:16; 8:14 | 18-25 | BSB; comparison | BSB text. The Greek translation's wording not quoted |
+| ‘Jews demand signs and Greeks search for wisdom’ two ways of asking for proof; contempt for Jews rejected | 18-25 | BSB context (verse 24) | Site's standing line (Romans book page) |
+| Wise, powerful, well-born = educated, influential, good families; ‘not many’ means some; Gaius, Crispus | 26-31 | Roman-world portrait; BSB | Repository |
+| Jeremiah 9:23-24 matches wise, strong, rich; 1 Samuel 2:8; Deuteronomy 7:7 | 26-31 | BSB | BSB text |
+
+Cut: Tertullian, Augustine and Aquinas by name (deep note); the Alexamenos graffito.
+
+## The plain notes on 1 Corinthians 2 (2026-11-20)
+
+One search (the source of 2:9). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Philippi, Thessalonica, Berea, Athens before Corinth (Acts 16 to 17); tentmaking; Acts 18:9 | 1-5 | BSB; Acts 18 plain note | Repository |
+| Orators performing for fans and fees; hand work looked down on | 1-5 | Deep note `cultural`; Roman-world portrait (work) | Repository. Stated generally |
+| Apodeixis a speaker's word for proof | 1-5 | Deep note `cultural` | Repository |
+| 2:1 ‘testimony’ or ‘mystery’ in the old copies; BSB ‘testimony’ | 1-5 | Repository Greek (mystērion tagged NA28, NA27, WH); BSB text | Script |
+| Exodus 4:10; Jeremiah 1:6; Jeremiah 9:23 | 1-5 | BSB | BSB text |
+| Teleios; mystery as God's plan now made known | 6-9 | Greek text; deep note `words` | Repository |
+| Rulers of this age: human, spiritual (Ephesians 6:12), both | 6-9 | Deep note `historical` | Stated as three readings |
+| 2:9 matches no Old Testament verse exactly; closest Isaiah 64:4 ("wait for Him"); echoes of Isaiah 65:17, 52:15; some in the early church thought it came from a lost book | 6-9 | BSB; search: biblehub.com commentaries on 2:9; evidenceunseen.com; intertextual.bible | Search. Origen and the Apocalypse of Elijah not named (met only in summaries) |
+| Psalm 2:2 read of Jesus's death in Acts 4:25-27 | 6-9 | BSB | BSB text |
+| Psychikos, pneumatikos | 10-16 | Greek text (G5591, G4152); deep note `words` | Repository |
+| Isaiah 40:13 Hebrew ‘Spirit’, Paul and the old Greek ‘mind’ (nous); Romans 11:34; Ezekiel 36:27 | 10-16 | BSB; repository Greek (G3563) | BSB text; script |
+| 13:12; Philippians 2:8 (before the BSB's em-dash) | 10-16 | BSB | BSB text |
+
+Cut: the mystery cults of Eleusis (deep note, not checked); Origen and Jerome by name.
+
+## The plain notes on 1 Corinthians 3 (2026-11-20)
+
+One search (the Catechism on 3:15). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sarkinos (verse 1) and sarkikos (verse 3) | 1-4 | Greek text; deep note `words` | Repository |
+| Hosea 11:1, 3; Hebrews 5:12; 1 Peter 2:2; Proverbs 3:7 | 1-4 | BSB | BSB text |
+| Diakonoi; ‘God's’ first three times in verse 9 | 5-9 | Repository Greek (3:9: theou ... theou ... theou) | Script |
+| Isaiah 5:2; 61:3; Jeremiah 1:10; Psalm 127:1 | 5-9 | BSB | BSB text |
+| Architektōn; Corinth rebuilt with temples and colonnades paid for by the wealthy; stone and wood | 10-15 | Deep note `historical`, `cultural`; Roman-world portrait | Repository |
+| Isaiah 28:16; Malachi 3:2; Zechariah 13:9; 1 Chronicles 29:2 | 10-15 | BSB | BSB text |
+| Catholic teaching on purgatory: a final purification of those who die in God's grace and friendship but not fully purified; the Catechism speaks of a cleansing fire and refers to 1 Corinthians 3:15 and 1 Peter 1:7 (CCC 1030-1031); prayer for the dead | 10-15 | Catechism of the Catholic Church | Search: vatican.va ENG0015/__P2N.HTM; catholicnewsagency.com; usccb.org flipbook. Paraphrased |
+| Protestant reading: the builders' work tested, loss of reward not salvation; no purgatory | 10-15 | Deep note `hard` | Repository; stated as a view |
+| 3:17: believers who harm the church or outsiders | 10-15 | Deep note `hard` | Stated as a reading question |
+| Plural ‘you’; naos the inner shrine; temples of Apollo, Aphrodite, Asclepius | 16-17 | Greek text; deep note `cultural`; repository `setting` | Repository |
+| Exodus 29:45; Leviticus 26:12; Ezekiel 37:27; 1 Kings 8:27; John 2:19 | 16-17 | BSB | BSB text |
+| Job 5:13 spoken by Eliphaz (Job 4:1); Job 42:7 | 18-23 | BSB | BSB text |
+| Psalm 94:11 ‘man’ in the BSB, ‘the wise’ in Paul | 18-23 | BSB | BSB text. No claim about Paul's source text |
+| Romans 8:38; 8:6 | 18-23 | BSB | BSB text |
+
+Cut: milk and solid food as a common figure among ancient teachers (not checked); Solomon's temple materials (replaced by 1 Chronicles 29:2).
+
+## The plain notes on 1 Corinthians 4 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Oikonomos a household manager, often a trusted slave or freedman; hypēretēs an assistant; anakrinō | 1-5 | Deep note `cultural`, `words`; Greek text | Repository |
+| 1 Samuel 16:7; Jeremiah 17:10; Ecclesiastes 12:14; Daniel 2:22; Matthew 7:1; 5:12 | 1-5 | BSB | BSB text |
+| ‘Beyond what is written’: the Scriptures quoted, or a saying the Corinthians knew | 6-7 | Commentary options | Stated as two readings |
+| Physioō six times in 1 Corinthians (4:6, 18, 19; 5:2; 8:1; 13:4), once more in the New Testament (Colossians 2:18) | 6-7 | Repository Greek (G5448) | Script |
+| Deuteronomy 8:17-18; 1 Chronicles 29:14 | 6-7 | BSB | BSB text |
+| Triumph with captives at the end, or the arena with the condemned last | 8-13 | Deep note `cultural` | Stated as two pictures readers see |
+| Hand work looked down on; teachers paid by patrons or fees; Acts 18:3; 20:34 | 8-13 | Roman-world portrait (work); BSB | wrom-ledger; BSB text |
+| Peripsēma and perikatharma: scrapings, sweepings, used of people thought worthless | 8-13 | Deep note `cultural`, `words` | Repository. The scapegoat sense not used |
+| Psalm 44:22 (Romans 8:36); Lamentations 3:45; Isaiah 53:3; Luke 6:28; Matthew 8:20 | 8-13 | BSB | BSB text |
+| Paidagōgos a slave who took a boy to school and watched his conduct | 14-21 | Deep note `cultural` | Repository |
+| Timothy: 2 Corinthians 1:19; Acts 16:1; Acts 19:22 | 14-21 | BSB | BSB text |
+| Proverbs 3:12; Deuteronomy 8:5; Proverbs 13:24; Psalm 2:9; 11:1 | 14-21 | BSB | BSB text |
+| Care line for readers with an absent or harmful father (Psalm 27:10; Find Help) | 14-21 | Romans 8 plain note form | Repository |
+
+## The plain notes on 1 Corinthians 5 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘His father's wife’ almost certainly the stepmother; the woman not addressed, so many think not a member | 1-5 | Deep note `cultural` | Repository; stated as "many readers" |
+| Why the church did nothing: a patron few would challenge, or bodily conduct thought not to matter | 1-5 | Deep note `cultural` | Stated as two readings |
+| Leviticus 18:8, 24; Deuteronomy 22:30; 17:7 | 1-5 | BSB | BSB text |
+| ‘Hand over to Satan’: exclusion from the fellowship (most readers), or bodily suffering as well (11:30); purpose ‘that his spirit may be saved’ | 1-5 | Deep note `hard`, `words` | Stated as readings |
+| 1 Timothy 1:20; 2 Corinthians 2:7; the identification with 2 Corinthians 2:5-11 uncertain | 1-5 | BSB; deep note `historical` | BSB text |
+| Church practice of discipline (Communion withheld; elders; the congregation; pastoral care); reporting abuse and crimes to the police (Romans 13:4) | 1-5 | Matthew 18 plain note, word for word or nearly | Repository |
+| Care line for those harmed by discipline or shunning (Psalm 34:18; Find Help) | 1-5 | Romans 8 plain note form | Repository |
+| Leaven a lump of old fermented dough; Passover clearing of leaven | 6-8 | Deep note `cultural`, `words`; Exodus 12:15 | Repository; BSB text |
+| Exodus 12:13, 15; John 1:29; 1 Peter 1:19; Matthew 13:33; Mark 8:15; all four Gospels place the death at Passover | 6-8 | BSB; deep note `words` | BSB text |
+| Earlier letter lost (verse 9), misread as withdrawal from the whole city | 9-13 | Deep note `historical` | Repository |
+| Eating together a sign of acceptance; the shared meal with the Lord's Supper | 9-13 | Deep note `cultural` | Repository |
+| Deuteronomy 17:7; 13:5; 19:19; 22:21; 24:7 (refrain); John 17:15; Matthew 9:12; 2 Thessalonians 3:15 | 9-13 | BSB | BSB text |
+
+Cut: any claim about Roman law on stepmothers beyond Paul's own words (not checked).
+
+## The plain notes on 1 Corinthians 6 (2026-11-20)
+
+Four searches (Roman courts and status; the BSB wording at 6:9; arsenokoitai and Leviticus; prostitution in the Roman world). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Civil cases under Roman law in a colony; wealth and rank carried large advantages; hard for a person of low standing to sue a superior and win; litigation a contest for honour; the litigants most likely of some means | 1-8 | Scholarship on Roman courts and 1 Corinthians 6 | Search: heurist.huma-num.fr (Judaism and Rome, citing Garnsey 1970); biblicalelearning.org (Meadors); resolve.cambridge.org (NTS, "Rich and poor in the courts of Corinth"); readingacts.com. No scholar named on the page |
+| Jewish communities among Gentiles settled disputes among themselves | 1-8 | Deep note `historical` | Repository; stated generally |
+| Daniel 7:22; Deuteronomy 1:16; Proverbs 25:8; Matthew 5:25, 40 | 1-8 | BSB | BSB text |
+| Not a rule against reporting crime; abuse and crimes to the police (Romans 13:4); Paul's appeal (Acts 25:11) and citizenship (Acts 22:25); mediation | 1-8 | Matthew 18 plain note line; BSB | Repository; BSB text |
+| ‘Wicked’ (verse 9) and ‘unrighteous’ (verse 1) the same word, adikoi | 9-11 | Repository Greek (G0094 at 6:1 and 6:9) | Script |
+| Vice lists a common form | 9-11 | Romans 1 plain note | Repository |
+| Malakoi ‘soft ones’, used of fine clothing (Matthew 11:8; also Luke 7:25); of men thought unmanly, often the passive partner | 9-11 | Repository Greek (G3120 at Matthew 11:8, Luke 7:25, 1 Corinthians 6:9); deep note `hard` | Script; repository |
+| Arsenokoitai only here and 1 Timothy 1:10; no clear earlier use known; ‘male’ and ‘bed’; many scholars think it formed from the Greek of Leviticus 18:22 and 20:13 | 9-11 | Repository Greek (G0733); scholarship | Search: bibleodyssey.org "Illicit Sex: Word Study"; baptistnews.com; tidsskrift.dk (Instone-Brewer, HIPHIL Novum 2020). Stated as "many scholars think" |
+| BSB ‘men who submit to or perform homosexual acts’ renders the two words together; ‘submit to’ and ‘perform’ for passive and active | 9-11 | BSB text | Search: biblestudytools.com BSB 6:9; tips.translation.bible. The BSB footnote's wording was not found and is not quoted |
+| Historic and majority reading; the exploitative-practices reading; the reply; no side | 9-11 | Romans 1 plain note form; deep note `hard` | Repository |
+| Care line for gay readers and those who love them | 9-11 | Romans 1 plain note, word for word | Repository |
+| Leviticus 18:22; 20:13; 19:35-36; Ezekiel 36:25; Isaiah 1:18; Titus 3:5 | 9-11 | BSB | BSB text |
+| 6:12-13 printed in quotation marks in the BSB; a translator's judgment; slogan perhaps a twist of Paul's teaching on freedom; the body a shell | 12-14 | BSB text; deep note `cultural` | Repository |
+| Genesis 2:7; Psalm 139:14; Mark 7:18-21; Galatians 5:13 | 12-14 | BSB | BSB text |
+| Prostitution legal and widespread in the Roman world; not counted a disgrace for men in moderation; many prostitutes slaves put to it by owners | 15-20 | Popular and reference histories | Search: historyhit.com; Wikipedia "Prostitution in ancient Rome" (mirror); brewminate.com. Stated generally; Caligula's tax not used |
+| Strabo's thousand temple prostitutes: the older city, doubted | 15-20 | Book page ledger | Ledger |
+| Bought at a price: the slave market | 15-20 | Deep note `cultural`, `words` | Repository |
+| 6:19 ‘your’ plural, ‘body’ singular | 15-20 | Repository Greek (to sōma hymōn) | Script |
+| Genesis 2:24; 39:12; Proverbs 5:5; Exodus 15:13; Isaiah 43:1; 1 Peter 1:19 | 15-20 | BSB | BSB text |
+| Trafficking care line | 15-20 | Genesis 37 plain note, word for word with one sentence added | Repository |
+
+Cut: banquets ending in prostitution (deep note; not confirmed); Caligula's tax.
+
+## The plain notes on 1 Corinthians 7 (2026-11-20)
+
+Four searches (7:21; the Pauline privilege; Westminster Confession 24.6; the Augustan marriage laws). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 unmarked in the BSB; many take it as a quotation of the Corinthians' letter; others as Paul's view | 1-7 | BSB text; deep note `story` | Stated as two readings |
+| Mutual pairs in 7:2-4 unusual in ancient writing on marriage; men's use of prostitutes not counted a disgrace | 1-7 | Deep note `literary`; chapter 6 search (prostitution) | Repository; ledger. Stated as "rarely" |
+| ‘Mutual consent’ (verse 5); 13:4-5 | 1-7 | BSB | BSB text |
+| Consent within marriage; coercion is abuse; Genesis 16 safety lines word for word; Find Help | 1-7 | Genesis 16 plain note | Repository |
+| Charisma read two ways | 1-7 | Deep note `words` | Repository |
+| Genesis 2:18, 24; Proverbs 5:18; Ecclesiastes 9:9; Song of Solomon 2:16; Exodus 21:10 | 1-7 | BSB | BSB text |
+| Augustus's laws of 18 BC and AD 9: penalties on the unmarried, rewards for children; widows and divorced women expected to remarry within a set time | 8-9 | Lex Julia de maritandis ordinibus; Lex Papia Poppaea | Search: en.wikipedia.org "Lex Papia Poppaea"; penelope.uchicago.edu (Smith's dictionary); csun.edu handout; scriptaclassica.org (Geiger). The periods (one year, six months) not stated |
+| Whether Paul had been married not known | 8-9 | BSB silence | Stated as unknown |
+| Genesis 1:28; Isaiah 56:5; Jeremiah 16:2; Matthew 19:11-12; Psalm 68:5 | 8-9 | BSB | BSB text |
+| Word to single readers | 8-9 | Matthew 19 plain note, adapted | Repository |
+| Roman divorce by either spouse, by leaving | 10-16 | Deep note `cultural`; Mark 10 plain note (Roman wives could divorce) | Repository |
+| Douloō in 7:15 | 10-16 | Repository Greek (G1402) | Script |
+| Sanctified spouse and holy children not saved without faith | 10-16 | Deep note `doctrines` | Repository |
+| 7:16 read as hope or as release | 10-16 | Commentary options | Stated as two readings |
+| Catholic, Orthodox, Protestant views; some scholars: separation without remarriage; many count abuse | 10-16 | Mark 10 and Matthew 19 plain notes, word for word or nearly | Repository |
+| Pauline privilege (canon 1143): one of two unbaptized spouses baptized, the other departs, the first marriage can be dissolved and the believer marry again | 10-16 | Code of Canon Law | Search: en.wikipedia.org "Pauline privilege"; canonlawmadeeasy.com; encyclopedia.com. Paraphrased |
+| Westminster Confession (1646) 24.6: adultery and wilful desertion that cannot be remedied the only grounds that dissolve the bond | 10-16 | Westminster Confession | Search: sermonaudio PDF of the 1646 text; monergism.com; pcahistory.org (PCA 1992 report). Paraphrased |
+| Genesis 2:24; Mark 10:9, 11-12; Matthew 19:9; Deuteronomy 24:1-4; Malachi 2:14; Ezra 10:3 | 10-16 | BSB | BSB text |
+| Slavery everywhere; Scheidel's estimate of at least a tenth; frequent manumission | 17-24 | Roman-world portrait | wrom-ledger. Scheidel not named |
+| 7:21 read two ways (‘take the opportunity’ or ‘make use of your condition’); scholars long divided | 17-24 | Repository Greek (mallon chrēsai); translation notes | Search: biblegateway.com Theology of Work commentary; tips.translation.bible; old-tips.translation.bible. No other translation quoted |
+| Genesis 17:10; Galatians 5:6; 6:15; Exodus 20:2; Leviticus 25:42; Exodus 21:16; Deuteronomy 23:15; 1 Timothy 1:10; Philemon 1:16 | 17-24 | BSB | BSB text |
+| Care line for anyone held or forced to work | 17-24 | Genesis 37 plain note | Repository |
+| ‘Present crisis’: a local hardship (such as food shortage), the pressures of the whole time before Christ's return, or the end expected soon | 25-35 | Deep note `historical`; commentary options | Stated as views; no famine claimed as fact |
+| 1 John 2:17; 1 Peter 4:7; Romans 13:11; Mark 13:17; Luke 10:41-42 | 25-35 | BSB | BSB text |
+| 7:36-38 three readings (engaged man; father, King James Version; celibate couple); the verb ‘give in marriage’ | 36-40 | Deep note `hard` | Repository |
+| Romans 7:2; Psalm 68:5; Ruth; 1 Timothy 5:14 | 36-40 | BSB | BSB text |
+
+Cut: girls' age at marriage (deep note); surgery to hide circumcision (deep note; not checked); grain shortages named as fact; the "three years" of Suetonius.
+
+## The plain notes on 1 Corinthians 8 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Temples of Apollo, Aphrodite, Asclepius; meat from sacrifices eaten at temple feasts and sold; dining rooms at the Asclepius sanctuary; the Sarapis invitation papyrus (P.Oxy. 110) | 1-3 | Roman-world portrait | wrom-ledger (Fotopoulos 2003; P.Oxy. 110) |
+| Temple meals at birthdays, weddings, guilds, festivals; refusing cost standing; meat rare for the poor except at festivals | 1-3 | Deep note `historical`; Roman-world portrait (meat for festivals and the well off) | Repository |
+| 8:1 unmarked in the BSB; many translators take it as the Corinthians' words | 1-3 | BSB text; deep note `cultural` | Repository |
+| Physioō; oikodomeō | 1-3 | Greek text; deep note `words` | Repository |
+| Hosea 13:4; Exodus 2:25; Galatians 4:9; Jeremiah 9:24 | 1-3 | BSB | BSB text |
+| Emperors honoured as divine in the east; kyrios a ruler's title | 4-6 | Roman-world portrait | wrom-ledger |
+| The Shema (Deuteronomy 6:4), recited; ‘Lord’ and ‘God’ in its Greek form; Mark 12:29 | 4-6 | BSB; Romans notes ("recited") | Repository |
+| Paul writing about twenty to twenty-five years after the crucifixion | 4-6 | explorer-ledger (the site's dating) | Ledger |
+| Bauckham, Jesus and the God of Israel (2008), reads 8:6 as placing Jesus inside the Shema; some read it more modestly | 4-6 | apol-ledger (search) | Ledger |
+| The Nicene Creed's pairing of one God, the Father, and one Lord, Jesus Christ, through whom all things were made | 4-6 | The creed, paraphrased | Not quoted |
+| Psalm 96:5; Isaiah 44:6; Jeremiah 10:5; Deuteronomy 10:17; Psalm 33:6; Proverbs 3:19; John 1:1, 3 | 4-6 | BSB | BSB text |
+| The ‘weak’ recent converts; conscience (syneidēsis) | 7-13 | Deep note `cultural`, `words` | Repository |
+| Leviticus 19:14; Numbers 25:2; Exodus 34:15; Daniel 1:8; Matthew 18:6; Romans 14:21; Galatians 2:3-5 | 7-13 | BSB | BSB text |
+
+Also in this commit: 3:10-15 `happening`, a colon before a quotation that starts in lower case (no change of words).

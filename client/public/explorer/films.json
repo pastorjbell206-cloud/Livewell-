@@ -1,0 +1,66 @@
+{
+  "about": "Watch and learn: every moving picture planned for the Bible Explorer, in the order the map lists them. A finished film has its own file in films/<slug>.json and a page at /study/explorer/watch/<slug>; one still coming is named here only, with no link. scripts/build-explorer-index.mjs copies this into index.json; scripts/validate-explorer.mjs checks it.",
+  "groups": [
+    {
+      "id": "story",
+      "name": "The big story",
+      "line": "The whole Bible from beginning to end."
+    },
+    {
+      "id": "ideas",
+      "name": "Big ideas",
+      "line": "Themes that run from the first page to the last."
+    },
+    {
+      "id": "beliefs",
+      "name": "What we believe",
+      "line": "What Christians everywhere confess, and where the Bible says it."
+    },
+    {
+      "id": "questions",
+      "name": "Good questions",
+      "line": "Honest questions children ask, answered from the Bible."
+    }
+  ],
+  "films": [
+    { "slug": "bible-two-minutes", "title": "The whole Bible in two minutes", "group": "story", "status": "finished" },
+    { "slug": "sixty-six-books", "title": "How the 66 books fit together", "group": "story", "status": "coming" },
+
+    { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
+    { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },
+    { "slug": "the-king", "title": "The king", "group": "ideas", "status": "coming" },
+    { "slug": "covenant", "title": "Promises that build: the covenants", "group": "ideas", "status": "coming" },
+    { "slug": "the-lamb", "title": "Sacrifice and the Lamb", "group": "ideas", "status": "coming" },
+    { "slug": "exile-and-home", "title": "Exile and coming home", "group": "ideas", "status": "coming" },
+    { "slug": "all-nations", "title": "A blessing for all nations", "group": "ideas", "status": "coming" },
+    { "slug": "kingdom-of-god", "title": "The kingdom of God", "group": "ideas", "status": "coming" },
+    { "slug": "light-and-darkness", "title": "Light and darkness", "group": "ideas", "status": "coming" },
+
+    { "slug": "who-god-is", "title": "Who God is: Father, Son and Holy Spirit", "group": "beliefs", "status": "finished" },
+    { "slug": "image-of-god", "title": "Creation and the image of God", "group": "beliefs", "status": "coming" },
+    { "slug": "what-sin-is", "title": "What sin is", "group": "beliefs", "status": "coming" },
+    { "slug": "who-jesus-is", "title": "Who Jesus is", "group": "beliefs", "status": "coming" },
+    { "slug": "why-jesus-died", "title": "Why did Jesus die?", "group": "beliefs", "status": "finished" },
+    { "slug": "the-resurrection", "title": "The resurrection", "group": "beliefs", "status": "coming" },
+    { "slug": "how-salvation-works", "title": "How salvation works", "group": "beliefs", "status": "finished" },
+    { "slug": "spirit-in-a-believer", "title": "The Holy Spirit in a believer", "group": "beliefs", "status": "coming" },
+    { "slug": "the-church", "title": "What the church is", "group": "beliefs", "status": "coming" },
+    { "slug": "baptism-and-supper", "title": "Baptism and the Lord's Supper", "group": "beliefs", "status": "coming" },
+    { "slug": "the-bible", "title": "The Bible: how we got it, and why trust it", "group": "beliefs", "status": "coming" },
+    { "slug": "prayer", "title": "Prayer", "group": "beliefs", "status": "coming" },
+    { "slug": "life-to-come", "title": "The life to come", "group": "beliefs", "status": "coming" },
+
+    { "slug": "who-made-god", "title": "Who made God?", "group": "questions", "status": "finished" },
+    { "slug": "why-cant-i-see-god", "title": "Why can't I see God?", "group": "questions", "status": "coming" },
+    { "slug": "why-bad-things-happen", "title": "Why do bad things happen?", "group": "questions", "status": "coming" },
+    { "slug": "is-the-bible-true", "title": "Is the Bible true?", "group": "questions", "status": "coming" },
+    { "slug": "did-jesus-come-back-to-life", "title": "Did Jesus really come back to life?", "group": "questions", "status": "coming" },
+    { "slug": "when-we-die", "title": "What happens when we die?", "group": "questions", "status": "coming" },
+    { "slug": "so-many-churches", "title": "Why are there so many churches?", "group": "questions", "status": "coming" },
+    { "slug": "never-heard", "title": "What about people who never heard?", "group": "questions", "status": "coming" },
+    { "slug": "temple-destroyed", "title": "Why did God let his temple be destroyed?", "group": "questions", "status": "coming" },
+    { "slug": "love-when-i-do-wrong", "title": "Does God still love me when I do wrong?", "group": "questions", "status": "coming" },
+    { "slug": "god-silent", "title": "Why does God seem silent sometimes?", "group": "questions", "status": "coming" },
+    { "slug": "science-and-the-bible", "title": "Are science and the Bible enemies?", "group": "questions", "status": "coming" }
+  ]
+}

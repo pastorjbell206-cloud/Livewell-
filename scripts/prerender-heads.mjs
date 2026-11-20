@@ -24,6 +24,7 @@ import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
 import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
+import { loadQuestions } from "./lib/questions.mjs";
 
 dotenv.config();
 
@@ -839,6 +840,41 @@ const PAGE_BODIES = {
         `<p class="pre-subtitle">Seven steps that work on any chapter. Learn them here, then try them on a real one.</p>`,
         sec("Seven steps, in order", `<ol>\n${STUDY_STEPS.map((s) => `<li><strong>${escapeHtml(s.title)}.</strong> ${escapeHtml(s.what)}</li>`).join("\n")}\n</ol>\n<p>${escapeHtml(KEPT_HERE)}</p>`),
         `<p><a href="/study/bible/john/3?study=walk">Try it on John 3</a></p>`,
+      ]),
+    };
+  },
+  // The Bible Explorer: every stop on the map with its line for younger and
+  // older readers (client/public/explorer/index.json); a finished stop links
+  // its own page, one still being drawn is named without a link.
+  "/study/explorer": async () => {
+    const d = readJsonSafe("client/public/explorer/index.json");
+    if (!d?.stops?.length) return null;
+    const stop = (st) => {
+      const name = st.status === "finished" ? `<a href="/study/explorer/${escapeHtml(st.slug)}">${escapeHtml(st.title)}</a>` : escapeHtml(st.title);
+      return `<li><h3>${st.n}. ${name}</h3><p>${escapeHtml(st.summary.younger)}</p><p>${escapeHtml(st.summary.older)}</p>${st.status === "finished" ? "" : "<p>This stop is being drawn.</p>"}</li>`;
+    };
+    const thread = (d.threads || []).find((t) => t.status === "finished");
+    const cards = (d.cards || []).filter((c) => c.status === "finished");
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Bible Explorer</h1>`,
+        `<p class="pre-subtitle">The whole Bible as one story, on one map, for ages 7 to 16. Follow the road from the garden to the city.</p>`,
+        sec("The map", `<ol>\n${d.stops.map(stop).join("\n")}\n</ol>`),
+        thread ? sec(`A thread through the whole Bible: ${thread.name}`, `<p>${escapeHtml(thread.line.older)}</p>`) : "",
+        (d.filmGroups || []).length
+          ? sec(
+              "Watch and learn",
+              (d.filmGroups || [])
+                .map((g) => {
+                  const mine = (d.films || []).filter((f) => f.group === g.id);
+                  const item = (f) => (f.status === "finished" ? `<li><a href="/study/explorer/watch/${escapeHtml(f.slug)}">${escapeHtml(f.title)}</a>: ${escapeHtml(f.line?.older ?? "")}</li>` : `<li>${escapeHtml(f.title)} (coming)</li>`);
+                  return `<h3>${escapeHtml(g.name)}</h3><p>${escapeHtml(g.line)}</p><ul>${mine.map(item).join("")}</ul>`;
+                })
+                .join("\n")
+            )
+          : "",
+        cards.length ? sec("Why we believe", cards.map((c) => `<h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.statement.older)}</p>`).join("\n")) : "",
       ]),
     };
   },
@@ -1676,6 +1712,86 @@ async function main() {
     console.log(`[prerender] wrote ${answers.length} Honest Answer pages`);
   }
 
+  // A page per finished stop of the Bible Explorer (/study/explorer/:slug).
+  // The head is the stop's own (its title, its line for older readers); the
+  // body is the story at both reading levels, the verses, and the chapters.
+  {
+    const d = readJsonSafe("client/public/explorer/index.json");
+    let n = 0;
+    for (const st of (d?.stops || []).filter((x) => x.status === "finished")) {
+      const s = readJsonSafe(`client/public/explorer/stops/${st.slug}.json`);
+      if (!s) continue;
+      const route = `/study/explorer/${s.slug}`;
+      const title = `${s.title}: Bible Explorer`;
+      const head = buildHead({
+        title,
+        description: s.summary.older,
+        url: `${SITE_URL}${route}`,
+        image: ogImageUrl(title),
+        type: "article",
+        schemas: [breadcrumbSchema([{ name: "Home", path: "" }, { name: "Bible Explorer", path: "/study/explorer" }, { name: s.title, path: route }])],
+      });
+      const paras = (list) => (list || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n");
+      const body = article([
+        `<p class="pre-eyebrow"><a href="/study/explorer">Bible Explorer</a></p>`,
+        `<h1>${escapeHtml(s.title)}</h1>`,
+        `<p class="pre-subtitle">${escapeHtml(s.summary.younger)}</p>`,
+        sec("The story, for ages 7 to 11", paras(s.story?.younger)),
+        sec("The story, for ages 12 to 16", paras(s.story?.older)),
+        sec("What this shows us about God", `<p>${escapeHtml(s.god?.younger ?? "")}</p><p>${escapeHtml(s.god?.older ?? "")}</p>`),
+        (s.verses || []).map((v) => `<blockquote>${escapeHtml(v.text)} <strong>${escapeHtml(v.ref)}</strong></blockquote>`).join("\n"),
+        sec("Read it yourself", `<ul>${(s.read || []).map((r) => `<li><a href="${escapeHtml(r.href)}">${escapeHtml(r.label)}</a></li>`).join("")}</ul>`),
+        `<p><a href="/study/explorer">The whole map</a></p>`,
+      ]);
+      writeRoute(template, { path: route }, head, body);
+      wrote++;
+      n++;
+    }
+    console.log(`[prerender] wrote ${n} Bible Explorer stops`);
+  }
+
+  // A page per finished moving picture of the Bible Explorer
+  // (/study/explorer/watch/:slug). The head matches the page's own SEOMeta
+  // (FILM_META in ExplorerFilm.tsx, held to the film's file by a test); the
+  // body is every frame's caption at both reading levels, with its verse, so
+  // the film reads in full before the script arrives.
+  {
+    const d = readJsonSafe("client/public/explorer/index.json");
+    let n = 0;
+    for (const fs0 of (d?.films || []).filter((x) => x.status === "finished")) {
+      const f = readJsonSafe(`client/public/explorer/films/${fs0.slug}.json`);
+      if (!f) continue;
+      const route = `/study/explorer/watch/${f.slug}`;
+      const title = `${f.title}: Bible Explorer`;
+      const head = buildHead({
+        title,
+        description: f.line.older,
+        url: `${SITE_URL}${route}`,
+        image: ogImageUrl(title),
+        type: "article",
+        schemas: [breadcrumbSchema([{ name: "Home", path: "" }, { name: "Bible Explorer", path: "/study/explorer" }, { name: f.title, path: route }])],
+      });
+      const frame = (fr, i) =>
+        `<li><h3>${i + 1}. ${escapeHtml(fr.name)}</h3><p>${escapeHtml(fr.younger)}</p><p>${escapeHtml(fr.older)}</p>${fr.verse ? `<blockquote>${escapeHtml(fr.verse.text)} <strong>${escapeHtml(fr.verse.ref)}</strong></blockquote>` : ""}</li>`;
+      const body = article([
+        `<p class="pre-eyebrow"><a href="/study/explorer">Bible Explorer</a></p>`,
+        `<h1>${escapeHtml(f.title)}</h1>`,
+        `<p class="pre-subtitle">${escapeHtml(f.line.younger)}</p>`,
+        sec(`A moving picture in ${f.frames.length} parts`, `<ol>\n${f.frames.map(frame).join("\n")}\n</ol>`),
+        sec("Think about it", `<p>${escapeHtml(f.think.younger)}</p><p>${escapeHtml(f.think.older)}</p>`),
+        f.differ ? sec("Where churches differ", `<p>${escapeHtml(f.differ.text)} ${f.differ.links.map((l, i, all) => `${i === 0 ? "" : i === all.length - 1 ? " and " : ", "}<a href="${escapeHtml(l.href)}">${escapeHtml(l.label)}</a>`).join("")}.</p>`) : "",
+        sec("Where the Bible says it", `<ul>${(f.read || []).map((r) => `<li><a href="${escapeHtml(r.href)}">${escapeHtml(r.label)}</a></li>`).join("")}</ul>`),
+        `<p><a href="/study/explorer#watch">Everything in Watch and learn</a></p>`,
+      ]);
+      writeRoute(template, { path: route }, head, body);
+      wrote++;
+      n++;
+    }
+    console.log(`[prerender] wrote ${n} Bible Explorer moving pictures`);
+  }
+
+  wrote += prerenderQuestions(template);
+
   const studyBible = prerenderStudyBible(template);
   wrote += studyBible;
   console.log(`[prerender] wrote ${studyBible} Study Bible pages (books, chapters, acts, doctrines)`);
@@ -2011,6 +2127,115 @@ async function main() {
   if (shelfWrote) console.log(`[prerender] shelf: ${shelfWrote} essays written from the shelf (no database or static row)`);
 
   console.log(`[prerender] wrote ${wrote} per-route HTML files into ${DIST_DIR}`);
+}
+
+/**
+ * The apologetics library (client/public/questions/, scripts/lib/questions.mjs):
+ * the room, the claims index, each area with a page, and each piece, its
+ * whole text in the static shell for first paint. A pending page's head says
+ * noindex (the SPA's SEOMeta says the same) and its text carries the review
+ * line; none of them is in the sitemap. A live page lists only live pages.
+ */
+const QUESTIONS_REVIEW = "This page is being reviewed and is not yet published.";
+function prerenderQuestions(template) {
+  const q = loadQuestions(REPO_ROOT);
+  if (!q.areas.length) return 0;
+  let n = 0;
+  const review = (pending) => (pending ? `<p class="pre-subtitle">${escapeHtml(QUESTIONS_REVIEW)}</p>` : "");
+  const room = { name: "The case for the faith", path: "/questions" };
+  const write = (route, { title, description, pending, type = "website", crumbs, body }) => {
+    const head = buildHead({
+      title,
+      description,
+      url: `${SITE_URL}${route}`,
+      image: ogImageUrl(title),
+      type,
+      noindex: pending,
+      schemas: pending ? [] : [breadcrumbSchema([{ name: "Home", path: "" }, ...crumbs])],
+    });
+    writeRoute(template, { path: route }, head, body);
+    n++;
+  };
+  const shown = (a, pending) => a.pieces.filter((p) => p.live || pending);
+  const list = (items) => `<ul>\n${items.map((x) => `<li>${inline(x)}</li>`).join("\n")}\n</ul>`;
+
+  // The room and the claims index (pending while no area is live).
+  const roomPending = !q.roomLive;
+  write("/questions", {
+    title: "The case for the faith",
+    description: "Hard questions about Christianity, taken one at a time: the objection at its strongest, what is true in it, the evidence, the argument, and books on both sides.",
+    pending: roomPending,
+    crumbs: [room],
+    body: article([
+      `<p class="pre-eyebrow"><a href="/topics">Questions</a></p>`,
+      `<h1>The case for the faith</h1>`,
+      review(roomPending),
+      sec("Ten areas", `<ol>\n${q.areas.map((a) => {
+        const k = shown(a, roomPending).length;
+        return k && a.page ? `<li><a href="/questions/${escapeHtml(a.slug)}">${escapeHtml(a.title)}</a> (${k} ${k === 1 ? "piece" : "pieces"})</li>` : `<li>${escapeHtml(a.title)} (being written)</li>`;
+      }).join("\n")}\n</ol>`),
+    ]),
+  });
+  const claims = q.areas.flatMap((a) => a.pieces.filter((p) => p.live || roomPending).flatMap((p) => (p.claims || []).map((c) => ({ ...c, a, p }))));
+  write("/questions/claims", {
+    title: "Look up a claim",
+    description: "Claims made against the Christian faith, each with the work it comes from and a link to the page that answers it.",
+    pending: roomPending,
+    crumbs: [room, { name: "Look up a claim", path: "/questions/claims" }],
+    body: article([
+      `<p class="pre-eyebrow"><a href="/questions">The case for the faith</a></p>`,
+      `<h1>Look up a claim</h1>`,
+      review(roomPending),
+      `<ul>\n${claims.map((c) => `<li>${escapeHtml(c.claim)}. ${escapeHtml(c.proponent)}, <cite>${escapeHtml(c.work)}</cite> (${c.year}). <a href="/questions/${escapeHtml(c.a.slug)}/${escapeHtml(c.p.slug)}">${escapeHtml(c.p.question)}</a></li>`).join("\n")}\n</ul>`,
+    ]),
+  });
+
+  for (const a of q.areas.filter((x) => x.page)) {
+    const areaRoute = `/questions/${a.slug}`;
+    const pg = a.page;
+    write(areaRoute, {
+      title: a.title,
+      description: pg.intro.split("\n\n")[0],
+      pending: !a.live,
+      crumbs: [room, { name: a.title, path: areaRoute }],
+      body: article([
+        `<p class="pre-eyebrow"><a href="/questions">The case for the faith</a></p>`,
+        `<h1>${escapeHtml(a.title)}</h1>`,
+        review(!a.live),
+        mdToHtml(pg.intro),
+        sec("The questions", `<ol>\n${shown(a, !a.live).map((p) => `<li><a href="/questions/${escapeHtml(a.slug)}/${escapeHtml(p.slug)}">${escapeHtml(p.question)}</a></li>`).join("\n")}\n</ol>`),
+        sec("Words these pages use", `<dl>\n${(pg.words || []).map((w) => `<dt>${escapeHtml(w.term)}</dt><dd>${escapeHtml(w.meaning)}</dd>`).join("\n")}\n</dl>`),
+        sec("Where else to look", list(pg.elsewhere || [])),
+      ]),
+    });
+    for (const p of a.pieces) {
+      const route = `/questions/${a.slug}/${p.slug}`;
+      const parts = p.sections.map((s) =>
+        sec(s.heading, s.role === "argument"
+          ? [mdToHtml(s.intro), `<ol>\n${s.steps.map((t) => `<li>${inline(t)}</li>`).join("\n")}\n</ol>`, `<p><strong>${inline(s.conclusion)}</strong></p>`, mdToHtml(s.after)].join("\n")
+          : mdToHtml(s.body))
+      );
+      write(route, {
+        title: p.question,
+        description: p.shortAnswer,
+        pending: !p.live,
+        type: "article",
+        crumbs: [room, { name: a.title, path: areaRoute }, { name: p.question, path: route }],
+        body: article([
+          `<p class="pre-eyebrow"><a href="${areaRoute}">${escapeHtml(a.title)}</a></p>`,
+          `<h1>${escapeHtml(p.question)}</h1>`,
+          review(!p.live),
+          sec("The short answer", mdToHtml(p.shortAnswer)),
+          ...parts,
+          sec("Read the other side", list(p.otherSide || [])),
+          sec("Read further", list(p.further || [])),
+          sec("On the site", list(p.onSite || [])),
+        ]),
+      });
+    }
+  }
+  console.log(`[prerender] wrote ${n} pages of the questions library (${q.roomLive ? "room live" : "all pending, noindex"})`);
+  return n;
 }
 
 main().catch(err => {

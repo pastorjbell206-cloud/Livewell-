@@ -43,6 +43,7 @@ import {
 } from "@/lib/bible";
 import { fetchDoctrines, fetchIntro, hardQuestions, paragraphs, type ChapterNote } from "@/lib/bible-notes";
 import { readWalks, saveWalk, type WalkEntry } from "@/lib/bible-desk";
+import { LATER_LINE_STYLE, laterMarks } from "@/lib/later-passages";
 import { copyToClipboard } from "@/lib/clipboard";
 import { KEPT_HERE, NOTICE_QUESTIONS, STUDY_STEPS, type StudyStep } from "@/lib/study-method";
 import { LoadFailed } from "@/components/LoadFailed";
@@ -199,13 +200,17 @@ const Missing = ({ children }: { children: ReactNode }) => <p className="wk__mis
 
 function ReadStep({ data, book, chapter, label }: BodyProps) {
   const poetry = isPoetry(book.slug, chapter);
+  const later = laterMarks(book.slug, chapter, data.verses);
+  const laterLine = (text?: string) => text && <span className="wk__later" role="note" style={LATER_LINE_STYLE}>{text}</span>;
   return (
     <figure className="wk__card wk__card--text">
       <div className={poetry ? "wk__scripture wk__scripture--poetry" : "wk__scripture"}>
         {data.verses.filter((v) => v.t).map((v) => (
           <span key={v.v} className="wk__verse">
+            {laterLine(later.before.get(v.v))}
             <sup>{v.v}</sup>
             {poetry ? poetryLines(v.t).map((line, i) => <span key={i} className="wk__line">{line} </span>) : `${v.t} `}
+            {laterLine(later.after.get(v.v))}
           </span>
         ))}
       </div>

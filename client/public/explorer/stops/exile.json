@@ -1,0 +1,137 @@
+{
+  "slug": "exile",
+  "n": 8,
+  "act": "prophets-exile",
+  "title": "The Prophets and Exile",
+  "range": "1 Kings 12 to 2 Kings 25, and the Prophets",
+  "status": "finished",
+  "summary": {
+    "younger": "The people stopped listening to God. Prophets warned them, but they would not turn back, and they were taken far from home.",
+    "older": "The kingdom splits, its kings lead the people to idols, and God sends prophets to call them back. They will not come. Assyria takes the north and Babylon burns Jerusalem, yet the prophets promise a new covenant and a coming king."
+  },
+  "scene": "exile",
+  "sceneLabel": "By a river in Babylon. On the near bank, under willow trees, two people sit with their heads bowed, and two harps hang from the willow branches. Far away on the horizon, across the plain, the broken walls of Jerusalem. In front, a tree that has been cut down to a stump, and from the stump one small green shoot is growing.",
+  "story": {
+    "younger": [
+      "After King Solomon died, the kingdom split in two: Israel in the north and Judah in the south. Many of their kings led the people to worship idols instead of God.",
+      "God kept sending prophets. A prophet is not mainly someone who tells the future. A prophet is someone God sends to speak his word to the people: to call them back to God, to tell them to be fair to the poor, and to give them hope.",
+      "But the people would not listen. The army of Assyria took the northern kingdom away. Later the army of Babylon broke down the walls of Jerusalem and burned the temple, and many people were taken far away to Babylon. This is called the exile.",
+      "It was a very sad time. By the rivers of Babylon the people sat and cried, and they hung up their harps, because they could not sing. They had lost their homes, their city and the temple.",
+      "But God had not left them. The prophet Ezekiel saw God's glory right there in Babylon, far from home. Daniel prayed to God every day. And God gave the prophets promises for the dark: a new covenant, new hearts with his own Spirit inside, and a king from David's family. Isaiah said that “a shoot will spring up from the stump of Jesse.” Even when David's family tree looked cut down, God would bring new life."
+    ],
+    "older": [
+      "Solomon's son Rehoboam answered the people harshly, and around 930 BC the kingdom split (1 Kings 12:13-20). Ten tribes in the north became Israel; Judah in the south kept Jerusalem and David's line. The first northern king set up two golden calves and told the people, “Here, O Israel, are your gods” (1 Kings 12:28).",
+      "For more than three centuries God sent prophets: Elijah, Amos, Hosea, Isaiah, Micah, Jeremiah and others. A prophet was not mainly a fortune-teller. A prophet spoke God's word to the people of his own day: about worship (“Turn from your wicked ways”, 2 Kings 17:13), about justice for the poor (“let justice roll on like a river”, Amos 5:24), and about hope.",
+      "The people did not turn back; “they would not listen” (2 Kings 17:14). In 722 BC Assyria captured Samaria and carried the northern tribes away (2 Kings 17:6). In 587 or 586 BC (historians give either year) Babylon's army broke into Jerusalem, burned the temple and the palace, and carried many of the people into exile (2 Kings 25:8-11).",
+      "The exile was grief, and the Bible does not hurry past it. “By the rivers of Babylon we sat and wept when we remembered Zion” (Psalm 137:1). Lamentations mourns the city that lies lonely (Lamentations 1:1). Yet God went with his people. Ezekiel, “among the exiles by the River Kebar” (Ezekiel 1:1), saw the glory of the LORD there, and God said, “I have been a sanctuary for them in the countries to which they have gone” (Ezekiel 11:16). Daniel prayed toward Jerusalem three times a day (Daniel 6:10), and Jeremiah told the exiles to pray for the city where they lived (Jeremiah 29:7).",
+      "In the dark, the prophets spoke their greatest promises. Jeremiah: a new covenant, the law written on hearts, sins remembered no more (Jeremiah 31:31-34). Ezekiel: a new heart and God's own Spirit within (Ezekiel 36:26-27). Isaiah: a child who will reign on David's throne for ever (Isaiah 9:6-7), a shoot from the stump of Jesse (Isaiah 11:1), and a servant who suffers for others: “He was pierced for our transgressions” (Isaiah 53:5). Christians, from the first church on, read that servant as Jesus (Acts 8:32-35). Many Jewish readers, especially since the Middle Ages, read him as the people of Israel, whom Isaiah calls God's servant (Isaiah 49:3), and some older Jewish writings read him as the Messiah."
+    ]
+  },
+  "god": {
+    "younger": "God is patient and warns his people many times. Even when they lose everything, he goes with them, and he keeps promising new life.",
+    "older": "God is just: he does not pretend that turning away from him costs nothing, and the exile is that cost. He is also faithful: he goes with his people into Babylon, and in the darkest years he promises more than they had lost, a covenant written on the heart (Jeremiah 31:33)."
+  },
+  "verses": [
+    {
+      "ref": "Psalm 137:1",
+      "text": "By the rivers of Babylon we sat and wept when we remembered Zion."
+    },
+    {
+      "ref": "Jeremiah 31:33",
+      "text": "I will put My law in their minds and inscribe it on their hearts. And I will be their God, and they will be My people."
+    }
+  ],
+  "read": [
+    {
+      "label": "1 Kings 12",
+      "href": "/study/bible/1-kings/12"
+    },
+    {
+      "label": "2 Kings 17",
+      "href": "/study/bible/2-kings/17"
+    },
+    {
+      "label": "2 Kings 25",
+      "href": "/study/bible/2-kings/25"
+    },
+    {
+      "label": "Psalm 137",
+      "href": "/study/bible/psalms/137"
+    },
+    {
+      "label": "Jeremiah 31",
+      "href": "/study/bible/jeremiah/31"
+    },
+    {
+      "label": "Ezekiel 36",
+      "href": "/study/bible/ezekiel/36"
+    },
+    {
+      "label": "Isaiah 53",
+      "href": "/study/bible/isaiah/53"
+    }
+  ],
+  "care": "This stop tells of people who lost their home and were taken far away. If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "Why would God let his own temple be destroyed?",
+    "answer": [
+      "The prophets' answer is hard to hear. For centuries God warned his people, prophet after prophet, and “they would not listen” (2 Kings 17:14). The exile was not God losing a battle to Babylon's gods. It was God doing what he had said he would do. A God who never let his people face the cost of turning away would not be taking them seriously.",
+      "The prophets also show that the temple was never a box that held God. Ezekiel, already an exile, saw the glory of the LORD by a river in Babylon (Ezekiel 1:28), and later, in a vision, saw it leave the temple in Jerusalem before the city fell (Ezekiel 10:18). Solomon had said it on the day the temple was finished: even the highest heaven cannot contain God (1 Kings 8:27).",
+      "And the Bible does not treat the people's grief as small. Lamentations and Psalm 137 keep raw sorrow in Scripture itself. Not every loss is a punishment; when his disciples asked whose sin made a man blind, Jesus said, “Neither this man nor his parents sinned” (John 9:3). This loss, the prophets said, came at the end of a long turning away, and it was not the end of God's love: “His mercies never fail. They are new every morning” (Lamentations 3:22-23)."
+    ]
+  },
+  "deeper": [
+    {
+      "label": "Isaiah 53 in the Study Bible: how Christians and Jewish readers read the servant",
+      "href": "/study/bible/isaiah/53"
+    },
+    {
+      "label": "What does Jeremiah 29:11 really mean?",
+      "href": "/resources/context/jeremiah-29-11-in-context"
+    },
+    {
+      "label": "If God is good, why is there suffering?",
+      "href": "/answers/if-god-is-good-why-suffering"
+    }
+  ],
+  "talk": {
+    "younger": "The people hung up their harps because they were too sad to sing. When you feel very sad, what helps? What did God promise his people when they were sad?",
+    "older": "The prophets spoke about worship, about fairness to the poor, and about hope. Which of the three do you think people most need to hear today, and why?"
+  },
+  "activity": {
+    "kind": "match",
+    "title": "Promises in the dark",
+    "prompt": "In the dark years, the prophets passed on God's promises. Match each promise to where the New Testament takes it up, then check.",
+    "pairs": [
+      {
+        "id": "covenant",
+        "promise": "I will make a new covenant with the house of Israel and with the house of Judah.",
+        "promiseRef": "Jeremiah 31:31",
+        "kept": "At his last supper, Jesus took the cup and said, “This cup is the new covenant in My blood.”",
+        "keptRef": "Luke 22:20"
+      },
+      {
+        "id": "spirit",
+        "promise": "I will put My Spirit within you",
+        "promiseRef": "Ezekiel 36:27",
+        "kept": "On the day of Pentecost, Jesus' followers were all filled with the Holy Spirit.",
+        "keptRef": "Acts 2:1-4"
+      },
+      {
+        "id": "servant",
+        "promise": "He was led like a lamb to the slaughter",
+        "promiseRef": "Isaiah 53:7",
+        "kept": "Philip read this very passage with an official from Ethiopia, and told him the good news about Jesus.",
+        "keptRef": "Acts 8:32-35"
+      },
+      {
+        "id": "king",
+        "promise": "He will reign on the throne of David and over his kingdom",
+        "promiseRef": "Isaiah 9:7",
+        "kept": "An angel told Mary that God would give her son the throne of his father David, and that his kingdom would never end.",
+        "keptRef": "Luke 1:32-33"
+      }
+    ],
+    "finish": "All four, matched. The promises made in the dark were not forgotten."
+  }
+}
