@@ -43,6 +43,11 @@
       "slug": "is-the-mind-just-the-brain",
       "question": "Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?",
       "blurb": "What neuroscience shows and what it doesn't, the argument from causal closure at its strongest, the hard problem, and the three Christian views of the person, each with its hardest difficulty, under one hope of the resurrection of the body."
+    },
+    {
+      "slug": "neuroscience-and-free-will",
+      "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+      "blurb": "Libet's experiments and what has become of their interpretation, determinism, compatibilism and libertarian freedom, the Reformed and Arminian accounts each in its own terms, and why responsibility before God is confessed by both."
     }
   ],
   "words": [
@@ -73,6 +78,14 @@
     {
       "term": "Multiverse",
       "meaning": "the proposal that our universe is one of a vast number of universes or regions, perhaps with different constants."
+    },
+    {
+      "term": "Compatibilism",
+      "meaning": "the view that free will is compatible with determinism; **libertarian freedom** is the view that some free choices are not determined by prior events."
+    },
+    {
+      "term": "Readiness potential",
+      "meaning": "a build-up of electrical activity in the brain that precedes a movement, measured in Benjamin Libet's experiments."
     },
     {
       "term": "Physicalism",

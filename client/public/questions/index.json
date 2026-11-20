@@ -475,6 +475,13 @@
           "blurb": "What neuroscience shows and what it doesn't, the argument from causal closure at its strongest, the hard problem, and the three Christian views of the person, each with its hardest difficulty, under one hope of the resurrection of the body.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "neuroscience-and-free-will",
+          "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+          "blurb": "Libet's experiments and what has become of their interpretation, determinism, compatibilism and libertarian freedom, the Reformed and Arminian accounts each in its own terms, and why responsibility before God is confessed by both.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1759,6 +1766,26 @@
       "live": false
     },
     {
+      "claim": "The experience of consciously willing an action is an illusion",
+      "proponent": "Daniel M. Wegner",
+      "work": "The Illusion of Conscious Will",
+      "year": 2002,
+      "area": "science",
+      "slug": "neuroscience-and-free-will",
+      "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+      "live": false
+    },
+    {
+      "claim": "The conscious intention to move cannot be the true cause of an action, because it comes after the brain's readiness potential",
+      "proponent": "Benjamin Libet",
+      "work": "Unconscious Cerebral Initiative and the Role of Conscious Will in Voluntary Action",
+      "year": 1985,
+      "area": "science",
+      "slug": "neuroscience-and-free-will",
+      "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+      "live": false
+    },
+    {
       "claim": "God's omnipotence, God's goodness and the existence of evil cannot all be true, so belief in God is positively irrational",
       "proponent": "J. L. Mackie",
       "work": "Evil and Omnipotence",
@@ -1985,6 +2012,7 @@
     "why-didnt-the-bible-just-ban-slavery": "Why didn't the Bible just ban slavery?",
     "what-did-the-new-atheists-get-right": "What did the New Atheists get right?",
     "christianity-and-islam-differences": "What do Christianity and Islam actually dispute?",
+    "does-god-choose-us-or-do-we-choose-him": "Does God choose us, or do we choose him?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
     "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"
