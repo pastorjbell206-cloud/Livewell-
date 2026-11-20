@@ -1,0 +1,81 @@
+{
+  "id": "caregiving",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "John 19:26-27",
+      "context": "John 19:25-27",
+      "where": "From the cross, in his own agony, Jesus sees his mother and gives her into the care of the disciple he loved, and from that hour the disciple takes her into his home. The site's plain note says many Protestants read it chiefly as a son's care for his mother, and Catholic and Orthodox Christians often see more in it as well; both honor love that kept working to the end."
+    },
+    {
+      "ref": "John 13:14-15",
+      "context": "John 13:12-15",
+      "where": "Jesus, their Lord and Teacher, washes his disciples' feet and tells them to do as he has done. Much of caregiving is exactly this kind of work: bodily, humble, unglamorous and close. The plain note adds that his example is love freely given, not a command to stay under someone who abuses you."
+    },
+    {
+      "ref": "2 Samuel 19:35",
+      "context": "2 Samuel 19:33-37",
+      "where": "When David offers to bring the eighty-year-old Barzillai to court, the old man answers with an honest picture of age: he can no longer taste what he eats or hear the singers, and he does not want to be a burden. Scripture lets an old man speak about what he has lost. Hearing a parent say such things is part of caring for them."
+    },
+    {
+      "ref": "Ruth 2:11-12",
+      "context": "Ruth 2:10-12",
+      "where": "Boaz tells Ruth he has heard everything she has done for her mother-in-law since her husband died, and he blesses her: may the LORD repay your work, you who have taken refuge under his wings. Ruth's daily care for an older woman was noticed, by people and by God."
+    },
+    {
+      "ref": "Matthew 25:36",
+      "context": "Matthew 25:34-40",
+      "where": "In Jesus' picture of the judgment, the King says, I was sick and you looked after me, and those he welcomes are surprised. The site's note sets out two readings of who the least of these are, his followers or all who suffer. On either reading, care given to the sick is counted as given to Christ."
+    },
+    {
+      "ref": "1 Kings 19:5-7",
+      "context": "1 Kings 19:5-8",
+      "where": "Elijah, exhausted and afraid after Carmel, lies down under a broom tree and sleeps. An angel touches him twice, gives him bread and water, and tells him to eat, because what lies ahead is too much for him. God's first answer to a worn-out servant is sleep and food, before any new task."
+    },
+    {
+      "ref": "Isaiah 40:29-31",
+      "context": "Isaiah 40:28-31",
+      "where": "The prophet admits that even young men grow tired and fall, and says that the unwearied God gives strength to the weary. The note says the chapter that began with comfort ends with endurance. The promise is strength for the road, not the end of tiredness."
+    },
+    {
+      "ref": "Galatians 6:9",
+      "context": "Galatians 6:9-10",
+      "where": "Paul tells the churches not to grow weary in doing good, because the harvest comes in due time to those who do not give up. He knows doing good is wearying. He does not say it will feel rewarding every day."
+    },
+    {
+      "ref": "Hebrews 6:10",
+      "context": "Hebrews 6:10-12",
+      "where": "The writer tells his readers that God is not unjust and will not forget the work and love they have shown in serving his people. The note says this is the ground of his confidence in them. A great deal of caregiving is done where no one sees it, and God does not forget it."
+    },
+    {
+      "ref": "Psalm 71:18",
+      "context": "Psalm 71:17-18",
+      "where": "An old singer asks God not to forsake him when he is gray, until he has told the next generation of God's power. Many parents in decline still have this to give: the story of what God has done in their lives. A caregiver can make room to hear it."
+    }
+  ],
+  "whole": [
+    "There comes a day when the parent who carried you cannot carry themselves. You help them dress, manage their pills, sit with them at appointments, and answer the same question again. Some days they are grateful. Some days they are angry, frightened or no longer quite themselves, and you are grieving a person who is still alive. Caregivers often lose sleep, health, friendships and work, and many feel guilty both for how tired they are and for the moments they wish it were over. If you are near the end of your strength, please tell someone today: a doctor, your pastor, a friend, or the people on the Find Help page.",
+    "Scripture honors this work and does not pretend it is easy. Jesus, dying, arranged care for his mother. Ruth's care for Naomi was seen and blessed. Jesus washed feet and told his friends to do the same, and he said that whoever looks after the sick looks after him. The Bible also lets the old speak plainly about what they have lost, as Barzillai did, and it shows God meeting a worn-out prophet with sleep and food before anything else. The weight of caregiving comes partly from the work itself, and partly from the belief, which many of us hold without saying it, that a good child or a good Christian should be able to do it alone and never resent it.",
+    "So the wisdom here begins with permission. Rest is not a betrayal; even Elijah had to sleep and eat. Ask for help early and specifically, from siblings, the church and professional carers, and let it count as care, not failure. Learn what you can about your parent's illness, and take the medical decisions to doctors and the legal ones to those who know the law. Keep a little of your own life: a friend, a walk, an hour of quiet. Expect grief along the way and let yourself feel it. Where your parent is still able, listen to their story, and bless them with the dignity of being treated as a person, not a task. If a parent's illness makes them aggressive, your safety matters too, and getting help is not disobedience.",
+    "Underneath it is the God who carries his people from birth to old age, who knows what it is to be weak in a body, and who does not forget the work and love shown to those in need. Paul says not to grow weary in doing good, and he does not pretend it is not wearying. The harvest comes in due time. Until then, every meal brought, every hand held and every night watched is seen by the One who says, I was sick and you looked after me."
+  ],
+  "sit": "What is one thing you could let someone else do for your parent this week, and one thing you could do for yourself without guilt?",
+  "prayer": {
+    "ref": "Psalm 61:1-2",
+    "lead": "Two verses for a caregiver whose heart is faint: a cry to be led to the rock that is higher than I."
+  },
+  "next": [
+    { "kind": "Find Help", "label": "Caring for my parent is wearing me out", "href": "/help/caregiving" },
+    { "kind": "Study guide", "label": "When Our Parents Grow Old", "href": "/studyguides/when-our-parents-grow-old" },
+    { "kind": "Reading", "label": "Caring for Aging Parents", "href": "/life/caring-for-aging-parents" },
+    { "kind": "Reading", "label": "Caring for the Dying", "href": "/life/caring-for-the-dying" },
+    { "kind": "Wisdom", "label": "Aging and the Changing Body", "href": "/wisdom/aging" }
+  ],
+  "careLines": [
+    { "from": "matthew/plain/11", "text": "If you are worn out, by grief, by guilt, by caring for someone, or by a kind of religion that felt like a weight you could never lift, these words are spoken to you." },
+    { "from": "psalms/plain/130", "text": "Tell someone you trust: a doctor, a pastor or a friend." },
+    { "from": "john/plain/13", "text": "Seeking safety and help is not disobedience." },
+    { "from": "psalms/plain/130", "text": "The Find Help page on this site lists places to turn." }
+  ],
+  "notAdvice": "medicine"
+}

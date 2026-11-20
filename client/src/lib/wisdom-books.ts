@@ -1,7 +1,7 @@
 /**
  * The Wisdom Books Explorer's data (/tools/wisdom-books): the files
  * scripts/build-wisdom-books-index.mjs writes under
- * client/public/wisdom-books/<book>/ for Proverbs and Ecclesiastes. Every
+ * client/public/wisdom-books/<book>/ for Proverbs, Ecclesiastes and James. Every
  * verse is the BSB as the repo holds it; every chapter title, summary,
  * outline and teaching paragraph is the Study Bible's own note on the book,
  * word for word.
@@ -34,8 +34,8 @@ export interface WbIndex {
     reading: string[];
     /** Proverbs: the hard question on 26:4-5, with the two verses. */
     pair?: { refs: string; verses: { c: number; v: number; t: string }[]; q: string; a: string[] };
-    /** Ecclesiastes: the hard questions on the chapters its source names. */
-    hard?: { c: number; q: string; a: string[] }[];
+    /** Ecclesiastes and James: the hard questions on the chapters the source names; `book` names another book's chapter (James: Romans 4). */
+    hard?: { c: number; book?: string; q: string; a: string[] }[];
   };
 }
 
@@ -60,13 +60,16 @@ export interface WbThemeFile {
   verses: { c: number; v: number; t: string }[];
 }
 
-export type WbBook = "proverbs" | "ecclesiastes";
+export type WbBook = "proverbs" | "ecclesiastes" | "james";
 export const WB_BOOKS: { id: WbBook; name: string; chapters: number }[] = [
   { id: "proverbs", name: "Proverbs", chapters: 31 },
   { id: "ecclesiastes", name: "Ecclesiastes", chapters: 12 },
+  { id: "james", name: "James", chapters: 5 },
 ];
-export const bookName = (b: WbBook) => (b === "ecclesiastes" ? "Ecclesiastes" : "Proverbs");
-export const bookChapters = (b: WbBook) => (b === "ecclesiastes" ? 12 : 31);
+const bookOf = (b: WbBook) => WB_BOOKS.find(x => x.id === b) ?? WB_BOOKS[0];
+export const bookName = (b: WbBook) => bookOf(b).name;
+export const bookChapters = (b: WbBook) => bookOf(b).chapters;
+export const isWbBook = (x: unknown): x is WbBook => WB_BOOKS.some(b => b.id === x);
 
 const base = (b: WbBook) => `/wisdom-books/${b}`;
 

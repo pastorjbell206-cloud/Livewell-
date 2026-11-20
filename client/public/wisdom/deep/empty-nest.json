@@ -1,0 +1,74 @@
+{
+  "id": "empty-nest",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "Psalm 127:4",
+      "context": "Psalm 127:3-5",
+      "where": "The psalm calls children a heritage from the LORD and then compares them to arrows in a warrior's hand. An arrow is made to be sent. The site's plain note adds that the verses praise children as a gift and do not make a home without them, or a single person, less blessed in God's eyes."
+    },
+    {
+      "ref": "Ecclesiastes 3:1",
+      "context": "Ecclesiastes 3:1-8",
+      "where": "The Teacher's poem sets out a time for everything in pairs of opposites: to be born and to die, to plant and to uproot, to embrace and to refrain. The note says he goes on to say God has made everything beautiful in its time. The years of a full house were a season, and so is this one."
+    },
+    {
+      "ref": "Genesis 12:4",
+      "context": "Genesis 12:1-4",
+      "where": "God calls Abram to leave his country and his father's house, and Abram goes. The note says the narrator reports no reply and no hesitation, and marks the moment with his age: seventy-five. The great call of Genesis came to a man well past his first half of life."
+    },
+    {
+      "ref": "Joshua 14:10-11",
+      "context": "Joshua 14:10-12",
+      "where": "Caleb, now eighty-five, reminds Joshua of the promise Moses made him forty-five years before and asks for the hill country still held by strong enemies. He does not ask for a quiet corner. The note says Joshua blesses him and gives it to him."
+    },
+    {
+      "ref": "Luke 2:37",
+      "context": "Luke 2:36-38",
+      "where": "Anna had been married seven years and widowed into great old age, and she worshipped in the temple night and day. The site's plain note says she shows that a life many would call empty can be full before God, and that Luke gives her the last word in the scene: she speaks about the child to everyone waiting for redemption."
+    },
+    {
+      "ref": "Psalm 92:14",
+      "context": "Psalm 92:12-15",
+      "where": "This is the only psalm whose heading names the Sabbath. The righteous, planted in God's house, flourish like the palm and the cedar and still bear fruit in old age. The psalm treats the later years as a time of fruit, not only of decline."
+    },
+    {
+      "ref": "Ecclesiastes 4:9-10",
+      "context": "Ecclesiastes 4:9-12",
+      "where": "Right after meeting a man who toils alone with no one to share it, the Teacher praises companionship: two are better than one, because when one falls the other lifts him up. For many couples the quiet house is the first time in years they have faced each other without children between them."
+    },
+    {
+      "ref": "1 Thessalonians 2:7-8",
+      "context": "1 Thessalonians 2:7-12",
+      "where": "Paul describes his care for a young church as a nursing mother's and a father's: he shared not only the gospel but his own life. The love and patience that raise a family are exactly what Paul says the church's young believers need. The skills of parenting are not retired when the children leave."
+    },
+    {
+      "ref": "Mark 10:29-30",
+      "context": "Mark 10:28-31",
+      "where": "Jesus promises that no one who leaves home and family for his sake will fail to receive a hundredfold now, houses and brothers and sisters and mothers and children, along with persecutions. The site's plain note says these are the new family of believers who share their homes and lives, not a promise of money. The family of God has room for parents whose own house has emptied."
+    },
+    {
+      "ref": "2 Corinthians 4:16",
+      "context": "2 Corinthians 4:16-18",
+      "where": "Paul says that though the outer self is wasting away, the inner self is being renewed day by day. The plain note is careful that he says this of his own suffering and is not telling anyone their pain is light. Midlife often brings the first plain signs of the outer self wearing out, and Paul says something else is growing at the same time."
+    }
+  ],
+  "whole": [
+    "The day comes with a car loaded and a room left half empty. For some parents it is a relief they feel guilty about. For many it is a grief no one prepared them for: the house is quiet at dinner, the calendar is suddenly blank, and the question underneath is who am I now, when for twenty years the answer was mostly a parent. Some couples find they have little left to say to each other without the children's lives to talk about. Others discover a freedom they had forgotten. Often all of this arrives with other changes at once, aging parents, a body slowing down, work that has peaked or ended.",
+    "Scripture treats the leaving as the point of the raising. A man leaves his father and mother in the second chapter of the Bible, and the psalm calls children arrows, made to be sent. The grief is real, because something good has ended, but the Bible does not call it failure. Much of the ache comes from having built so much of our identity on being needed, which is natural and also a kind of quiet idol. God's own measure of a person was never their usefulness to their children.",
+    "So the wisdom here is to receive this as a new season with its own calling. Abram was seventy-five when God called him to go, Caleb was eighty-five when he asked for a hill country full of giants, and Anna was old and widowed when she spoke about the child to all who were waiting. Turn toward your husband or wife on purpose, as two who are better than one, and learn each other again. Let your children become adult friends rather than projects, and bless them from a distance. Then take the patience and love that raised a family and give them to the church, where Paul says young believers need nursing mothers and encouraging fathers, and where many have no parents of their own in the faith.",
+    "The Christian hope here is not that life gets smaller in its second half. It is that God plants his people in his house so that they bear fruit in old age, and that the inner self is being renewed day by day even as the outer self wears. The quiet in the house is real. It can also be the space where a calling that was waiting underneath the busy years is finally heard."
+  ],
+  "sit": "If no one needed you to do anything this week, what would you want your time to be for, and who in your church could use what you learned raising your children?",
+  "prayer": {
+    "ref": "Psalm 90:12",
+    "lead": "One line from the prayer of Moses, for a season when the days feel different."
+  },
+  "next": [
+    { "kind": "Reading", "label": "The Empty Nest and Midlife", "href": "/life/the-empty-nest-and-midlife" },
+    { "kind": "Wisdom", "label": "Parenting Adult Children", "href": "/wisdom/parenting-adult-children" },
+    { "kind": "Wisdom", "label": "Life Transitions", "href": "/wisdom/life-transitions" },
+    { "kind": "Study guide", "label": "Aging and Legacy", "href": "/studyguides/aging-and-legacy" },
+    { "kind": "Reading", "label": "Marriage: The Long Covenant", "href": "/life/marriage-the-long-covenant" }
+  ]
+}
