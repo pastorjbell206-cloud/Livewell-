@@ -11336,3 +11336,33 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Numbers 6:26; Isaiah 43:1 | 13-14 | BSB | BSB text |
 
 ## 3 John complete (2026-11-20)
+
+## Jude: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Meant to write of salvation, wrote an alarm; intruders; examples; nature pictures; two traditions; mercy and praise; about five minutes aloud | In a minute | jude/intro.json `overview` | Repository; reading time an estimate |
+| Jude the Greek form of Judah; James the Lord's brother (Galatians 1:19); Mark 6:3; John 7:5; servant, not brother | Who wrote it | jude/intro.json `author`; jude/1.json `historical` | Repository; BSB |
+| Hegesippus via Eusebius on Jude's grandsons before Domitian | Who wrote it; timeline | jude/intro.json `author`; jude/1.json `historical` | Repository |
+| Pseudonymity case (Greek, verse 17) and replies; no side | Who wrote it | jude/intro.json `author` | Repository, no side |
+| Jerome: many rejected it over Enoch; Tertullian valued Enoch; Eusebius disputed; Peshitta lacks Jude; Muratorian list includes it | Who wrote it; Enoch; timeline | jude/1.json `hard`; bible/guides/canon.json | Repository |
+| Date 50 to 80, or later if pseudonymous; readers Jewish or used to Jewish reading; love feasts; dreamers | When | jude/intro.json `date`, `setting`; jude/1.json `cultural` | Repository |
+| Fond of threes; ‘these men’; framed by keeping | How it is built | jude/1.json `literary`, `words` (G5083I) | Repository |
+| Epagōnizomai only here; the faith a deposit; despotēs used of God | Contend | jude/1.json `words` (G1864), `christ`, `doctrines` | Repository |
+| Verse 5: ‘Jesus’ in several early manuscripts, the BSB follows; others ‘the Lord’ or ‘God’ | Examples; Jesus | jude/1.json `christ`; jude/intro.json `christ` | Repository |
+| Angels of verse 6 as Genesis 6 read in 1 Enoch; Seth and rulers readings; no side | Examples | jude/1.json `cultural`; genesis/plain/6.json (1-4 `hard`); 2-peter/plain/2.json (4-10 `hard`) | Repository, no side |
+| Verse 7: what all agree; the traditional reading; the hospitality reading; ‘other flesh’ read by some as the angels; no side; no contempt | Examples | genesis/plain/19.json (4-11 `hard`) | Repository, no side; flagged in the run report |
+| Care line ‘If you are gay, or love someone who is ...’ | Examples | romans/plain/1.json (24-32 `hard`) | Word for word |
+| Michael and Moses' body; Origen: the Assumption of Moses; the Testament of Moses' lost ending | Enoch | jude/intro.json `setting`; jude/1.json `historical` | Repository |
+| 1 Enoch 1:9; composed over the last centuries before Christ; Aramaic fragments at Qumran; Ethiopian Bible | Enoch; timeline | jude/intro.json `setting`; bible/guides/reading-apocalyptic.json | Repository |
+| Quoting not endorsing: Acts 17:28; Titus 1:12; 2 Timothy 3:8; common ground; the Ethiopian church | Enoch | jude/1.json `hard`; jude/intro.json `reading` | Repository |
+| Overlap with 2 Peter 2:1 to 3:3; most think 2 Peter used Jude; others; no side; borrowing would not trouble ancient readers | Jude and 2 Peter | 2-peter/intro.json `teaching` (false-teachers) | Repository, as the 2 Peter page states it |
+| P72 holds 1 Peter, 2 Peter and Jude | Jude and 2 Peter; timeline | 2-peter/intro.json `teaching` (when) | Repository |
+| Three groups to show mercy to; God keeps and believers keep | Build, pray, keep | jude/1.json `literary`; jude/intro.json `themes` | Repository |
+| Daniel 10:13; Zechariah 3:2; Deuteronomy 34:6; Numbers 14:29; Genesis 19:24; Numbers 22:7; Numbers 16; Genesis 5:24; Deuteronomy 33:2; Zechariah 14:5; Genesis 19:1 | Old Testament; Enoch | BSB | BSB text |
+| Key words: epagōnizomai, despotēs, tēreō, spilas; wandering stars and sailors | Key words | jude/1.json `words`, `cultural` | Repository |
+| Map: Sodom and Gomorrah at the Genesis and 2 Peter maps' point, as a region; Egypt beyond the frame | Map | 2-peter/intro.json `teaching.map`; genesis/intro.json `teaching.map` | Repository |
+
+Cut before publishing: a claim that the copies of verses 22-23 differ between two and three groups (not in the repository's notes).
