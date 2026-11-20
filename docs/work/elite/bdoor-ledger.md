@@ -11445,3 +11445,28 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | ‘Do not be afraid’ the first word; the First and the Last (Isaiah 44:6); keys of Death and Hades; verse 19 as an outline, readers differ | 17-20 | revelation/1.json `christ`, `literary` | Repository |
 | The angels of the churches read four ways (messenger, bishop, guardian angel, the church itself) | 17-20 | lexicon G0032 (Rev 1:20 entry) | Repository, no side |
 | Isaiah 44:6; Ezekiel 1:28; Daniel 10:9-10; 1 Samuel 2:6 | 17-20 | BSB | BSB text |
+
+## The plain notes on Revelation 2 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The pattern of the seven messages; the refrain; its place before or after the promise | 1-7 | revelation/2.json `literary` | Repository |
+| Ephesus: port, temple of Artemis, imperial temples; Paul (Acts 19); John's link; the silting harbour as some commentators' echo | 1-7 | revelation/2.json `historical` | Repository |
+| Nicolaitans otherwise unknown; Irenaeus about 180 linked them with Nicolas (Acts 6:5); many doubt it | 1-7 | revelation/2.json `cultural`; acts plain note on 6:1-7 | Repository |
+| Genesis 2:9; 3:22-24; Jeremiah 2:2 | 1-7 | BSB | BSB text |
+| Smyrna: port north of Ephesus; temple to Roma 195 BC; to Tiberius AD 26; destroyed about 600 BC and refounded; Polycarp | 8-11 | revelation/2.json `historical` | Repository |
+| Ten as limited fullness; stephanos the victor's wreath; Smyrna's games | 8-11 | bible/guides/reading-apocalyptic.json (Numbers and time); revelation/2.json `words` (G4735), `doctrines` | Repository |
+| ‘Synagogue of Satan’: a local conflict in Smyrna; slander perhaps to the authorities; loss of Judaism's legal protection; Satan as accuser; Romans 2:28-29; John a Jew; the twelve tribes on the city (21:12); later misuse confessed | 8-11 | revelation/2.json `hard`, `cultural` | Repository |
+| ‘That reading is false. This site rejects it, and the note on Acts 2:22-28 sets out why.’ | 8-11 | hebrews/intro.json `teaching` (covenant part, as repaired in the last run) | Word for word |
+| Isaiah 41:10; Daniel 1:12; Isaiah 44:6; Romans 2:29; Revelation 21:12 | 8-11 | BSB | BSB text |
+| Pergamum: Attalid capital, bequeathed 133 BC; altar of Zeus; Asclepius; first temple to Augustus and Roma 29 BC; the governor's power; guild banquets; Balaam at Peor; white stones | 12-17 | revelation/2.json `historical`, `cultural`, `christ` | Repository |
+| Four explanations of ‘the throne of Satan’; no side | 12-17 | revelation/2.json `cultural` | Repository, no side |
+| Numbers 25:1-2; Numbers 31:16; Exodus 16:31; Isaiah 62:2 | 12-17 | BSB | BSB text |
+| Thyatira: trade guilds; Lydia (Acts 16:14); Jezebel from Ahab's queen (1 Kings 16, 21); time to repent | 18-29 | revelation/2.json `historical`, `cultural`, `doctrines` | Repository |
+| Jezebel is Christ's name for her; nothing else is known; not a label for any woman or group today | 18-29 | revelation/2.json; instruction for this run | Repository; stated, no claim |
+| Not a rule for illness; John 9:3; the illness care line | 18-29 | 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| 1 Kings 21:25; Jeremiah 17:10; Psalm 2:8-9; Revelation 22:16 | 18-29 | BSB | BSB text |
+
+Cut before publishing: Antipas as the only martyr named in the book (not checked in the repository); ‘ten days most likely means a short time’ (now the guide's ‘limited fullness’).
