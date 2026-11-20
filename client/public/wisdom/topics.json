@@ -6089,6 +6089,10 @@
       "application": "Find a church and a community of believers within the first weeks, before isolation and the crowd do their work, since no one keeps the faith alone on a campus built to erode it. Decide your convictions now, in advance, rather than in the moment of pressure. Ask hard questions out loud and chase the answers, for honest faith is not afraid of the lecture hall. And keep the habits, prayer, Scripture, and worship, that hold a soul in a new place.",
       "verses": [
         {
+          "ref": "Daniel 1:8",
+          "text": "But Daniel made up his mind that he would not defile himself with the king’s food or wine. So he asked the chief official for permission not to defile himself."
+        },
+        {
           "ref": "Ecclesiastes 12:1",
           "text": "Remember your Creator in the days of your youth, before the days of adversity come and the years approach of which you will say, “I find no pleasure in them,”"
         },
@@ -6097,16 +6101,32 @@
           "text": "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding."
         },
         {
-          "ref": "1 Timothy 4:12",
-          "text": "Let no one despise your youth, but set an example for the believers in speech, in conduct, in love, in faith, in purity."
+          "ref": "Genesis 28:15-16",
+          "text": "Look, I am with you, and I will watch over you wherever you go, and I will bring you back to this land. For I will not leave you until I have done what I have promised you.” When Jacob woke up, he thought, “Surely the LORD is in this place, and I was unaware of it.”"
         },
         {
-          "ref": "Daniel 1:8",
-          "text": "But Daniel made up his mind that he would not defile himself with the king’s food or wine. So he asked the chief official for permission not to defile himself."
+          "ref": "Psalm 139:9-10",
+          "text": "If I rise on the wings of the dawn, if I settle by the farthest sea, even there Your hand will guide me; Your right hand will hold me fast."
         },
         {
-          "ref": "Romans 12:2",
-          "text": "Do not be conformed to this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what is the good, pleasing, and perfect will of God."
+          "ref": "Proverbs 13:20",
+          "text": "He who walks with the wise will become wise, but the companion of fools will be destroyed."
+        },
+        {
+          "ref": "Hebrews 10:24-25",
+          "text": "And let us consider how to spur one another on to love and good deeds. Let us not neglect meeting together, as some have made a habit, but let us encourage one another, and all the more as you see the Day approaching."
+        },
+        {
+          "ref": "Acts 17:11",
+          "text": "Now the Bereans were more noble-minded than the Thessalonians, for they received the message with great eagerness and examined the Scriptures every day to see if these teachings were true."
+        },
+        {
+          "ref": "1 Peter 3:15",
+          "text": "But in your hearts sanctify Christ as Lord. Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you. But respond with gentleness and respect,"
+        },
+        {
+          "ref": "Acts 17:23",
+          "text": "For as I walked around and examined your objects of worship, I even found an altar with this inscription: TO AN UNKNOWN GOD. Therefore what you worship as something unknown, I now proclaim to you."
         }
       ],
       "related": [
