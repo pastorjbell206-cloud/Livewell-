@@ -7664,3 +7664,27 @@ No web search.
 | Isaiah 40:26; 61:1; Luke 12:24; Romans 3:2; John 1:1, 14 | 147 | BSB | BSB text |
 
 Cut: Cyrus's decree date and the Nehemiah dedication as the setting (147); snow in Jerusalem's hills (not checked).
+
+## The plain notes on Psalms 148 to 150 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| Heavens then earth, as Genesis 1:1; waters above the skies (Genesis 1:7) | 148 | BSB | BSB text |
+| Sun, moon and stars worshipped by Israel's neighbours, here worshippers | 148 | Repository deep note; site's teaching | Stated generally |
+| Revelation 5:13; Romans 8:21; Luke 19:40 | 148 | BSB | BSB text |
+| Miriam's tambourine (Exodus 15:20); "upon their beds" read two ways | 149 | Repository deep note (cultural); BSB | Stated as two readings |
+| After the exile (many scholars); "the judgment written" limits the action to God's decree | 149 | Repository deep note (historical, hard) | Stated as "many scholars" |
+| Battle poetry; no warrant for violence today; past misuse named as wrong; the sword as the word of God (Ephesians 6:17; Hebrews 4:12) given as a reading | 149 | Brief's rule; repository deep note (hard); BSB | Stated plainly |
+| Matthew 26:52; 2 Corinthians 10:4 | 149 | BSB | BSB text |
+| Shofar, harp and lyre, tambourine and dance, cymbals | 150 | Repository deep note (cultural) | Site's own teaching |
+| Tehillim; the five Hallelujah psalms as the close (many readers) | 150 | Book page ("The name", "Five books") | Repository |
+| "Hallelujah" in the New Testament only in Revelation 19 (four times) | 150 | BSB | Script over every chapter's text |
+| Luke 23:46 from Psalm 31:5 (the book page); Ephesians 5:19; Genesis 2:7 | 150 | BSB; book page ("New Testament") | BSB text |
+
+Cut: "Jewish readers have often read 149 as final justice" (deep note; not verified); the Maccabean dating of 149; Psalm 150 in the daily offices; the Second Temple date (516 BC).
+
+## The Psalms complete (2026-11-20)
+
+All 150 psalms now have plain notes. Book Five (107 to 150) closed the book.
