@@ -1,5 +1,5 @@
 {
- "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
+ "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. concepts: groups of words (illness, family roles, work and rest, church and its leaders, housing and unfairness), each matched by stem, adding the library's own word for the thing. safety: a word the self-harm, abuse and danger rewrites add, and the help topic it puts first. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
  "rewrites": {
   "passed away": "died",
   "pass away": "die",
@@ -30,14 +30,51 @@
   "the baby": "baby",
   "go to church": "church",
   "going to church": "church",
-  "kill myself": "suicide",
-  "end it all": "suicide",
+  "kill myself": "suicide helpnow",
+  "end it all": "suicide helpnow",
   "not be here": "suicide",
   "want to die": "suicide",
-  "dont want to be alive": "suicide",
-  "dont want to live": "suicide",
-  "better off dead": "suicide",
-  "hurt myself": "selfharm"
+  "dont want to be alive": "suicide helpnow",
+  "dont want to live": "suicide helpnow",
+  "better off dead": "suicide helpnow",
+  "hurt myself": "selfharm helpnow",
+  "cut myself": "selfharm helpnow",
+  "harm myself": "selfharm helpnow",
+  "take my own life": "suicide helpnow",
+  "end my life": "suicide helpnow",
+  "wish i were dead": "suicide helpnow",
+  "wish i was dead": "suicide helpnow",
+  "no reason to live": "suicide helpnow",
+  "dont want to wake up": "suicide helpnow",
+  "beats me": "abuse abusenow",
+  "beat me": "abuse abusenow",
+  "he hits me": "abuse abusenow",
+  "she hits me": "abuse abusenow",
+  "choked me": "abuse abusenow",
+  "chokes me": "abuse abusenow",
+  "shoved me": "abuse abusenow",
+  "abused me": "abuse abusenow",
+  "abusing me": "abuse abusenow",
+  "raped me": "abuse abusenow",
+  "sexually abused": "abuse abusenow",
+  "molested": "abuse abusenow",
+  "threatened to kill me": "danger abusenow",
+  "threatens to kill me": "danger abusenow",
+  "afraid for my life": "danger abusenow",
+  "fear for my life": "danger abusenow",
+  "not safe at home": "danger abusenow",
+  "scared he will hurt me": "danger abusenow",
+  "scared she will hurt me": "danger abusenow",
+  "afraid he will hurt me": "danger abusenow",
+  "afraid she will hurt me": "danger abusenow",
+  "going to hurt me": "danger abusenow",
+  "day off": "rest",
+  "time off": "rest",
+  "small group": "church group",
+  "nothing more they can do": "terminal",
+  "nothing more to be done": "terminal",
+  "nothing else they can do": "terminal",
+  "better off without me": "suicide helpnow"
  },
  "synonyms": {
   "son": "child",
@@ -172,6 +209,103 @@
   "lord": "god",
   "jesus": "god",
   "christ": "god"
+ },
+ "concepts": [
+  {
+   "name": "illness",
+   "words": [
+    "cancer",
+    "tumor",
+    "tumour",
+    "stroke",
+    "dementia",
+    "alzheimers",
+    "parkinsons",
+    "chemo",
+    "chemotherapy",
+    "leukemia",
+    "lymphoma",
+    "diagnosis",
+    "diagnosed",
+    "hospital",
+    "hospitalized",
+    "surgery",
+    "disease",
+    "illness",
+    "sickness",
+    "biopsy",
+    "oncologist",
+    "transplant",
+    "dialysis"
+   ],
+   "adds": "illness"
+  },
+  {
+   "name": "family roles",
+   "words": [
+    "brother",
+    "sister",
+    "sibling",
+    "grandma",
+    "grandmother",
+    "grandpa",
+    "grandfather",
+    "granny",
+    "nana",
+    "stepmom",
+    "stepdad",
+    "stepmother",
+    "stepfather",
+    "stepson",
+    "stepdaughter"
+   ],
+   "adds": "family"
+  },
+  {
+   "name": "work and rest",
+   "words": [
+    "vacation",
+    "weekend",
+    "overtime",
+    "workaholic",
+    "overworked"
+   ],
+   "adds": "rest work"
+  },
+  {
+   "name": "church and its leaders",
+   "words": [
+    "pastor",
+    "minister",
+    "priest",
+    "elder",
+    "deacon",
+    "bishop",
+    "reverend",
+    "preacher",
+    "leadership",
+    "leader"
+   ],
+   "adds": "leader"
+  },
+  {
+   "name": "housing and unfairness",
+   "words": [
+    "landlord",
+    "tenant",
+    "eviction",
+    "evicted",
+    "evict",
+    "homeless",
+    "slumlord",
+    "unaffordable"
+   ],
+   "adds": "poor justice"
+  }
+ ],
+ "safety": {
+  "helpnow": "suicidal-thoughts",
+  "abusenow": "toxic-relationships"
  },
  "areas": [
   {
@@ -479,7 +613,9 @@
     "child left",
     "child lost faith",
     "child is an atheist",
-    "child no longer believes"
+    "child no longer believes",
+    "child doesnt believe",
+    "child wont come to church"
    ],
    "not": [],
    "related": [
@@ -1775,7 +1911,9 @@
     "betrayed by my",
     "used me and left",
     "business partner stole",
-    "partner took the money"
+    "partner took the money",
+    "texting her ex",
+    "texting his ex"
    ],
    "not": [],
    "related": [
@@ -1862,7 +2000,10 @@
     "cheaters prosper",
     "work harder and get nothing",
     "took credit for my work",
-    "dishonest people get ahead"
+    "dishonest people get ahead",
+    "he got the credit",
+    "she got the credit",
+    "got the raise"
    ],
    "not": [],
    "related": [
@@ -2026,7 +2167,9 @@
     "copied answers",
     "plagiarized",
     "cheating on taxes",
-    "cheated at work"
+    "cheated at work",
+    "texting her ex",
+    "texting his ex"
    ],
    "not": [
     "diet"
@@ -2252,7 +2395,11 @@
     "badmouthing",
     "trash talking",
     "words i cant take back",
-    "gossip"
+    "gossip",
+    "cant keep their mouth shut",
+    "knows my business",
+    "everyone knows my business",
+    "told everyone my business"
    ],
    "not": [],
    "related": [
@@ -2275,7 +2422,10 @@
     "exploited workers",
     "poverty",
     "people struggling to survive",
-    "how should christians help"
+    "how should christians help",
+    "landlord doesnt care",
+    "no heat",
+    "slumlord"
    ],
    "not": [],
    "related": [
@@ -2334,7 +2484,10 @@
     "terminal cancer",
     "terminal",
     "palliative care",
-    "given months"
+    "given months",
+    "cancer is back",
+    "cancer came back",
+    "stopped treatment"
    ],
    "not": [
     "clean",
@@ -2468,7 +2621,9 @@
     "physical affection",
     "romance is gone",
     "no intimacy",
-    "no sex in our marriage"
+    "no sex in our marriage",
+    "doesnt want me to touch",
+    "pulls away when i touch"
    ],
    "not": [],
    "related": [
@@ -2532,7 +2687,11 @@
     "work on sunday",
     "feel guilty resting",
     "guilty taking a break",
-    "work seven days a week"
+    "work seven days a week",
+    "no day off",
+    "real day off",
+    "never take a day off",
+    "no time off"
    ],
    "not": [],
    "related": [
@@ -2553,7 +2712,11 @@
     "obey the government",
     "authority over me",
     "spiritual abuse",
-    "pastor abuses power"
+    "pastor abuses power",
+    "question the pastor",
+    "not question",
+    "back his decision",
+    "questioning leadership"
    ],
    "not": [],
    "related": [
@@ -2715,12 +2878,31 @@
     "lost myself in this relationship",
     "lost myself taking care of"
    ],
-   "not": [],
+   "not": [
+    "say no to anyone"
+   ],
    "related": [
     "people-pleasing",
     "setting-boundaries",
     "saying-no",
     "identity-and-worth"
+   ]
+  },
+  "division-in-the-church": {
+   "phrases": [
+    "church split",
+    "church is splitting",
+    "split the church",
+    "church divided",
+    "church fight",
+    "factions in the church",
+    "church vote"
+   ],
+   "not": [],
+   "related": [
+    "church-hurt",
+    "submitting-to-leaders",
+    "finding-a-church"
    ]
   }
  }
