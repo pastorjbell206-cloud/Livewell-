@@ -11534,3 +11534,25 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Nehemiah 9:6; Psalm 33:6; Psalm 29:1 | 9-11 | BSB | BSB text |
 
 Cut before publishing: jasper and carnelian in the high priest's breastpiece (the BSB names the stones of Exodus 28 differently, so the link could not be shown from the text); the four creatures as signs of the four Gospels (not in the repository's notes).
+
+## The plain notes on Revelation 5 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Biblion as book, deed or will; seven seals as fully shut; the scroll as God's purposes of judgment and redemption | 1-4 | revelation/5.json `words` (G0975), `story` | Repository |
+| The scroll read as a Roman will sealed by seven witnesses, as Daniel 12:4's sealed book, or as Ezekiel 2:9-10's scroll | 1-4 | revelation/5.json `historical` | Repository, no side |
+| Ezekiel 2:9-10; Daniel 12:4 | 1-4 | BSB | BSB text |
+| Lion of Judah (Genesis 49:9-10); Root of David (Isaiah 11); hearing then seeing; victory by sacrificial death | 5-7 | revelation/5.json `cultural`, `literary` | Repository |
+| Arnion a small word; twenty-eight times of Christ; ‘as slain’, alive and marked; horns as strength, seven eyes from Zechariah 4:10; the Lamb shares the throne and takes the scroll | 5-7 | revelation/5.json `words` (G0721, G4969), `cultural`, `christ` | Repository |
+| Genesis 49:9-10; Isaiah 11:1, 10; Exodus 12:13; Isaiah 53:7; Zechariah 4:10 | 5-7 | BSB | BSB text |
+| Harps and incense from temple worship; incense as the prayers of the saints; ‘saints’ as all God's people | 8-10 | revelation/5.json `cultural` | Repository |
+| New song for a fresh act of salvation; agorazō as a purchase moving ownership; every nation; kingdom and priests from Sinai | 8-10 | revelation/5.json `cultural`, `words` (G0059), `doctrines` | Repository |
+| Psalm 141:2; Psalm 96:1; Isaiah 42:10; Exodus 19:6 | 8-10 | BSB | BSB text |
+| Widening circles of worship and growing hymns; the sevenfold acclamation; the joint doxology | 11-14 | revelation/5.json `literary` | Repository |
+| Imperial acclamations, hymns and incense to images; Nero's trained applauders (Suetonius, Tacitus); the hymns redirect them | 11-14 | revelation/5.json `historical` | Repository |
+| One God and the worship of the Lamb; 19:10 and 22:8-9; Nicene Creed 325 and 381; early devotion to Jesus | 11-14 | revelation/5.json `hard`, `christ` | Repository |
+| Daniel 7:10; Psalm 150:6; Revelation 19:10; 22:8-9 | 11-14 | BSB | BSB text |
+
+Cut before publishing: nothing beyond the deep note; Daniel 7's horns were left as the deep note's general ‘horns as strength’ without a quotation.
