@@ -11290,3 +11290,28 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 Cut before publishing: ‘face to face’ as literally ‘mouth to mouth’ (not checked in the lexicon); Psalm 119:1 (to keep ‘blessed’ out).
 
 ## 2 John complete (2026-11-20)
+
+## 3 John: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Shortest book of the New Testament by word count; fourteen verses in the BSB; one papyrus sheet; about two minutes aloud | In a minute | 3-john/intro.json `overview`; BSB | Repository; reading time an estimate |
+| The elder; tradition's John; shared vocabulary; Papias' ‘elder John’; no side | Who wrote it | 3-john/intro.json `author` | Repository, no side |
+| The elder's standing over several churches; workers reporting back; a local leader resisting | Who wrote it | 3-john/intro.json `author`; 3-john/1.json `historical` | Repository |
+| Eusebius: disputed but widely known; the Peshitta; 367 | Who wrote it; timeline | bible/guides/canon.json | Repository |
+| Gaius a common name (Macedonia, Derbe, Corinth); Diotrephes ‘nourished by Zeus’; three readings of the quarrel; Demetrius and letters of recommendation | Gaius, Diotrephes and Demetrius | 3-john/1.json `historical`, `cultural`; 3-john/intro.json `setting` | Repository, no side |
+| Date 85 to 100, region of Ephesus; no doctrinal dispute | When | 3-john/intro.json `date`; 3-john/1.json `historical` | Repository |
+| Inns; networks; ‘send on’ as a duty (Romans 15:24; Titus 3:13); nothing from the Gentiles; the Didache | When; timeline | 3-john/1.json `cultural`; 3-john/intro.json `setting` | Repository |
+| The ordinary letter form; Gaius praised, Diotrephes rebuked, Demetrius commended; ‘Beloved’ four times | How it is built | 3-john/1.json `literary` | Repository |
+| Health wishes in papyrus letters; euodoō ‘good road’, not money; a friend's prayer, not a promise | ‘That you may prosper’ | 3-john/1.json `hard`, `cultural`; 3-john/intro.json `reading` | Repository |
+| ‘This is often called prosperity teaching, or the prosperity gospel. It is one of the things this site does not teach as true. Many who teach it are sincere, and many who believe it are hoping for help in hard times. They deserve care, not scorn. But it is a mistake’ | ‘That you may prosper’ | 1-timothy/plain/6.json (3-10 `hard`) | Word for word |
+| Care line ‘It needs to be said plainly. The Bible does not teach that sickness comes from too little faith ...’ | ‘That you may prosper’ | 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| Care line ‘If you gave money because you were pressed or frightened ...’ | ‘That you may prosper’ | 1-timothy/plain/6.json (3-10 `hard`) | Word for word |
+| Synergos as Paul's word for co-workers; propempō | Fellow workers; key words | 3-john/1.json `words` (G4904, G4311) | Repository |
+| Philoprōteuō only here; Diotrephes' acts; the lost letter, perhaps 2 John | The leader who loves to be first | 3-john/1.json `words` (G5383), `historical` | Repository |
+| Care line ‘If you have been harmed by a controlling leader or church ...’ | The leader who loves to be first | 2-corinthians/plain/11.json (16-21 `hard`) | Word for word |
+| ‘The Name’ as Jesus | Jesus | 3-john/1.json `christ` | Repository |
+| Genesis 18:2; 1 Kings 17; Deuteronomy 10:19; Psalm 1:3; Proverbs 22:1; Numbers 16; Proverbs 16:18; Mark 9:35; John 13:20 | Old Testament and elsewhere | BSB | BSB text |
+| Map: Ephesus at the Pauline maps' point; the letter names no place | Map | ephesians/intro.json `teaching.map`; 3-john/1.json `historical` | Repository |
