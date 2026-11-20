@@ -10740,3 +10740,23 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Deuteronomy 10:18; Psalm 68:5; Isaiah 1:17; Proverbs 10:19; Proverbs 14:17; Psalm 19:7 | 19-27 | BSB | BSB text |
 
 Cut before publishing: ‘lured away’ as a fishing and hunting word (the lexicon supports only ‘bait’ for ‘enticed’); ‘the life itself is the crown’; whether the rich man of 1:10 is a believer (not in the repository's notes).
+
+## The plain notes on James 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Prosōpolēmpsia ‘receiving the face’; clothing and rings marked rank; seating by status | 1-7 | james/2.json `cultural`; colossians plain note wording on the same word; lexicon G4382 | Repository |
+| Synagōgē for the meeting, a sign of an early Jewish-Christian setting | 1-7 | james/2.json `historical`, `words` | Repository |
+| Poor labourers; rich drag them to court over debts or wages; some rich most likely outsiders | 1-7 | james/2.json `historical` | Repository |
+| Leviticus 19:15; Proverbs 22:2; Proverbs 14:31; 1 Samuel 16:7 | 1-7 | BSB | BSB text |
+| Royal law the second commandment; the law one; the law that gives freedom; mercy echoes Matthew 5:7 | 8-13 | james/2.json `cultural`, `doctrines`, `literary` | Repository |
+| Leviticus 19:18; Mark 12:31; Exodus 20:13-14; Hosea 6:6; Micah 6:8; Matthew 23:23 | 8-13 | BSB | BSB text |
+| ‘Claims’; the diatribe and imagined objector; the Shema; demons believe | 14-26 | james/2.json `literary`, `cultural`, `words` | Repository |
+| Argē ‘without work’; Vaticanus, Ephraemi and 1739 against Sinaiticus, Alexandrinus and the majority (stated as ‘some manuscripts’) | 14-26 | james/2.json `literary` | Repository |
+| Abraham and Rahab paired; Genesis 15 then Genesis 22 decades later; body without breath | 14-26 | james/2.json `hard`, `literary` | Repository |
+| Genesis 15:6; 22:12; 2 Chronicles 20:7; Isaiah 41:8; Joshua 2:4, 11; 6:25; Isaiah 58:7; Romans 3:28; Galatians 5:6 | 14-26 | BSB | BSB text |
+| The hard part: what all confess; three words; Protestant, Catholic (Trent 1547), Orthodox; the 1999 statement paraphrased | 14-26 | james/2.json `hard`; doctrines/justification.json; ephesians/plain/2.json (1-10 `hard`) | Repository, no side |
+
+Cut before publishing: ‘Go in peace’ as the usual Jewish farewell; an imagined excuse for favouritism.
