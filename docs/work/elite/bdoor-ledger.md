@@ -7517,3 +7517,23 @@ One web search (for 130).
 | Matthew 18:3; 11:29; Philippians 4:11 | 131 | BSB | BSB text |
 
 Cut: the rare word for forgiveness in 130:4 and its other two uses (not checked); funerals and Lent customs for 130; Bach's cantata; the mother-image as a claim about the singer's sex (131).
+
+## The plain notes on Psalms 132 to 134 (2026-11-20)
+
+No web search. The Songs of Ascents end at 134.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| The longest Song of Ascents (18 verses) | 132 | BSB | Script over 120-134 |
+| The ark brought up (2 Samuel 6:15); Nathan's promise (2 Samuel 7); "may have been sung in a procession" | 132 | Repository deep note (historical, cultural); BSB | BSB text; stated as "may" |
+| Kiriath-jearim twenty years (1 Samuel 7:2); "fields of Jaar" generally taken as that town, "town of forests"; Ephrathah as Bethlehem's area (Micah 5:2), explained in more than one way | 132 | Repository deep note (historical) | Stated as views |
+| Numbers 10:35; 1 Chronicles 28:2; 1 Kings 11:36; 2 Samuel 7:15; Luke 1:32-33, 69; Acts 2:30 | 132 | BSB | BSB text |
+| Conditional and unconditional readings; 587 or 586 BC (book page); Jewish and Christian hopes per the book page's royal psalms part | 132 | Repository deep note (hard); book page | Stated as views |
+| Pilgrims of every tribe; or kin keeping family land undivided (Deuteronomy 25:5 phrase) | 133 | Repository deep note (historical) | Stated as readings |
+| Aaron's anointing (Exodus 29:7); Hermon's heavy dew; dew in the dry months | 133 | Repository deep note (cultural); BSB | Site's own teaching |
+| John 17:21; Acts 4:32; Ephesians 4:3 | 133 | BSB | BSB text |
+| Night service in the temple (1 Chronicles 9:33); serving as standing; lifted hands | 134 | Repository deep note (cultural); BSB | BSB text |
+| Echo of Numbers 6:24; "Maker of heaven and earth" in 121:2, 124:8, 134:3 | 134 | BSB | BSB text |
+| 1 Timothy 2:8; Revelation 7:15 | 134 | BSB | BSB text |
+
+Cut: Hermon's height in feet (133); the Mishnah's steps again (134, pointed back to 120).
