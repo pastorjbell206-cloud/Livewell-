@@ -1921,12 +1921,24 @@
     "afraid of the future",
     "scared of the future",
     "terrified of the future",
-    "future"
+    "future",
+    "what if something bad happens",
+    "worried about whats coming",
+    "dread the future",
+    "uncertain future",
+    "dont know whats going to happen",
+    "worried about tomorrow",
+    "what if i lose everything",
+    "afraid of what is coming",
+    "imagining the worst",
+    "worst case scenario"
    ],
    "not": [],
    "related": [
     "anxiety",
-    "trusting-god"
+    "trusting-god",
+    "need-for-control",
+    "fear-and-courage"
    ]
   },
   "betrayal": {
