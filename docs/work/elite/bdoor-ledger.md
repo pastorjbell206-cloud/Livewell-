@@ -11507,3 +11507,505 @@ Cut before publishing: a reading of how the Reformed and Arminian traditions eac
 | Claim | Part | Source | Checked by |
 |---|---|---|---|
 | 1, 2 and 3 John: the Ephesus label moved to the west of its point (as on the Ephesians and Revelation maps), since at 390 it crowded the drawing's ASIA label | Map | Screenshots of the served build at 390 and 1440 | Looked at |
+
+## The plain notes on Revelation 4 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The throne seen before any trouble; thronos fourteen times in eleven verses | 1-3 | revelation/4.json `story`, `words` (G2362) | Repository |
+| Temples to the emperor: Pergamum (29 BC), Smyrna (AD 26), Ephesus (Domitian's family); Suetonius on Domitian as lord and god; ‘our Lord and God’ (4:11) as a claim about who rules | 1-3 | revelation/4.json `historical` | Repository |
+| The voice of 4:1 is the risen Christ's from 1:10-13; John never describes God's form, as Ezekiel | 1-3 | revelation/4.json `christ`, `literary` | Repository |
+| The four ways of reading from chapter 4 on; dispensational reading of ‘Come up here’ against John's call into the vision; ‘God reigns now’ | 1-3 | revelation/4.json `hard`; revelation/intro.json `teaching` (ways) | Repository, no side |
+| Ezekiel 1:26, 28; Isaiah 6:1; Daniel 7:9 | 1-3 | BSB | BSB text |
+| The rings from the centre outward; lightning and thunder as Sinai | 4-5 | revelation/4.json `literary`, `cultural` | Repository |
+| The elders: tribes and apostles (21:12-14), the priestly divisions (1 Chronicles 24), an angelic council; the seven Spirits as the Spirit in fullness or seven angels | 4-5 | revelation/4.json `cultural`; revelation/plain/1.json (4-8 `hard`) | Repository, no side |
+| Exodus 19:16; Daniel 7:9; Zechariah 4:2 | 4-5 | BSB | BSB text |
+| The sea as chaos lying still; perhaps the bronze Sea of Solomon's temple | 6-8 | revelation/4.json `cultural` | Repository |
+| Zōon an ordinary word for an animal; the four as the whole of living creation | 6-8 | revelation/4.json `words` (G2226) | Repository |
+| Pantokratōr; LORD of Hosts in the Greek Old Testament; only 2 Corinthians 6:18 outside Revelation | 6-8 | revelation/4.json `words` (G3841) | Repository |
+| ‘Who was and is and is to come’ echoes Exodus 3:14 | 6-8 | revelation/4.json `christ` | Repository |
+| Symbols drawn from the Old Testament; no map of heaven drawn | 6-8 | revelation/intro.json `teaching` (kind); guides/reading-apocalyptic.json | Repository |
+| Ezekiel 1:10, 18; Isaiah 6:2, 3; Exodus 3:14 | 6-8 | BSB | BSB text |
+| Two hymns: who God is, what he has done; axios in acclamations of rulers, sung to the Lamb in chapter 5 | 9-11 | revelation/4.json `literary`, `words` (G0514) | Repository |
+| Tacitus: Tiridates laid his diadem before a statue of Nero in AD 63 | 9-11 | revelation/4.json `cultural` | Repository |
+| Creation the ground of God's right to rule; the Lamb worshipped in the same words; ‘true God from true God’ | 9-11 | revelation/4.json `doctrines`, `christ`; john/5.json (the Nicene phrase) | Repository |
+| Nehemiah 9:6; Psalm 33:6; Psalm 29:1 | 9-11 | BSB | BSB text |
+
+Cut before publishing: jasper and carnelian in the high priest's breastpiece (the BSB names the stones of Exodus 28 differently, so the link could not be shown from the text); the four creatures as signs of the four Gospels (not in the repository's notes).
+
+## The plain notes on Revelation 5 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Biblion as book, deed or will; seven seals as fully shut; the scroll as God's purposes of judgment and redemption | 1-4 | revelation/5.json `words` (G0975), `story` | Repository |
+| The scroll read as a Roman will sealed by seven witnesses, as Daniel 12:4's sealed book, or as Ezekiel 2:9-10's scroll | 1-4 | revelation/5.json `historical` | Repository, no side |
+| Ezekiel 2:9-10; Daniel 12:4 | 1-4 | BSB | BSB text |
+| Lion of Judah (Genesis 49:9-10); Root of David (Isaiah 11); hearing then seeing; victory by sacrificial death | 5-7 | revelation/5.json `cultural`, `literary` | Repository |
+| Arnion a small word; twenty-eight times of Christ; ‘as slain’, alive and marked; horns as strength, seven eyes from Zechariah 4:10; the Lamb shares the throne and takes the scroll | 5-7 | revelation/5.json `words` (G0721, G4969), `cultural`, `christ` | Repository |
+| Genesis 49:9-10; Isaiah 11:1, 10; Exodus 12:13; Isaiah 53:7; Zechariah 4:10 | 5-7 | BSB | BSB text |
+| Harps and incense from temple worship; incense as the prayers of the saints; ‘saints’ as all God's people | 8-10 | revelation/5.json `cultural` | Repository |
+| New song for a fresh act of salvation; agorazō as a purchase moving ownership; every nation; kingdom and priests from Sinai | 8-10 | revelation/5.json `cultural`, `words` (G0059), `doctrines` | Repository |
+| Psalm 141:2; Psalm 96:1; Isaiah 42:10; Exodus 19:6 | 8-10 | BSB | BSB text |
+| Widening circles of worship and growing hymns; the sevenfold acclamation; the joint doxology | 11-14 | revelation/5.json `literary` | Repository |
+| Imperial acclamations, hymns and incense to images; Nero's trained applauders (Suetonius, Tacitus); the hymns redirect them | 11-14 | revelation/5.json `historical` | Repository |
+| One God and the worship of the Lamb; 19:10 and 22:8-9; Nicene Creed 325 and 381; early devotion to Jesus | 11-14 | revelation/5.json `hard`, `christ` | Repository |
+| Daniel 7:10; Psalm 150:6; Revelation 19:10; 22:8-9 | 11-14 | BSB | BSB text |
+
+Cut before publishing: nothing beyond the deep note; Daniel 7's horns were left as the deep note's general ‘horns as strength’ without a quotation.
+
+## The plain notes on Revelation 6 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Each seal opened by the Lamb, each ‘Come’, each rider ‘given’: permitted and limited; the series follows Mark 13 | 1-4 | revelation/6.json `literary`, `christ` | Repository |
+| Parthia, its mounted archers, Carrhae (53 BC) and AD 62; the Pax Romana; the civil wars of AD 68 to 69 | 1-4 | revelation/6.json `historical` | Repository |
+| The four ways of reading applied to the seals; recapitulation from Victorinus of Pettau (died about 304) | 1-4 | guides/reading-apocalyptic.json (symbols; four ways); revelation/intro.json `teaching` | Repository, no side |
+| Zechariah 1:8; 6:2-3; Mark 13:7 | 1-4 | BSB | BSB text |
+| A denarius a day's wage (Matthew 20:2); a quart a day's ration; barley the grain of the poor; oil and wine: drought or Domitian's vineyard edict about AD 92 (Suetonius) | 5-8 | revelation/6.json `historical` | Repository, no side |
+| Chlōros, a corpse's colour; Hades for Sheol; a fourth as a limit; the keys (1:18) | 5-8 | revelation/6.json `cultural`, `doctrines` | Repository |
+| Disasters are not a verdict on those struck: Luke 13:4-5 and John 9:3 in the words already used | 5-8 | psalms/plain/38.json (1-22 `later`); 1-john/plain/5.json (16-17 `hard`) | Word for word |
+| Ezekiel 14:21; Zechariah 6:2; Luke 13:4-5; John 9:3; Mark 13:8 | 5-8 | BSB | BSB text |
+| Marturia and the word martyr; Antipas (2:13); blood at the base of the altar (Leviticus 4:7); lament psalms; white robes as vindication | 9-11 | revelation/6.json `words` (G3141), `cultural`; revelation/intro.json `teaching` (suffering) | Repository |
+| The cry for vengeance: Luke 23:34, Acts 7:60, Romans 12:19, ekdikeō, repentance kept open (9:20-21; 11:13; 14:6-7) | 9-11 | revelation/6.json `hard`, `words` (G1556) | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 9-11 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Leviticus 4:7; Psalm 79:5; Zechariah 1:12; Luke 23:34; Romans 12:19 | 9-11 | BSB | BSB text |
+| Day of the LORD images: Joel 2:31, Isaiah 34:4, Isaiah 2:19, Hosea 10:8, Luke 23:30; the social list from kings to slaves; orgē; ‘the wrath of the Lamb’ | 12-17 | revelation/6.json `cultural`, `literary`, `words` (G3709), `doctrines` | Repository |
+| Earthquakes of AD 17 (twelve cities, Sardis and Philadelphia) and about AD 60 (Laodicea), Tacitus | 12-17 | revelation/6.json `historical` | Repository |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 12-17 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Joel 2:31; Isaiah 34:4; Isaiah 2:19; Hosea 10:8; Matthew 24:36 | 12-17 | BSB | BSB text |
+
+Cut before publishing: who the rider on the white horse is (the repository's notes give no readings, so none is offered); ‘the scales echo a city under siege’ (no echo in the repository's notes); per-reading accounts of the sixth seal (the notes give the four ways in general only); a line likening the sixth seal to Isaiah's oracles on nations in his own time.
+
+## The plain notes on Revelation 7 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The pause answers 6:17; four as the number of the world | 1-3 | revelation/7.json `story`; guides/reading-apocalyptic.json (numbers) | Repository |
+| Sphragizō; brands, soldiers' marks, devotees' signs; sealed on the forehead as open belonging; Ephesians 1:13; sealing does not exempt from suffering | 1-3 | revelation/7.json `historical`, `words` (G4972) | Repository |
+| Ezekiel 9 (the man with the writing case); Passover; the four winds of Zechariah 6:5 and Daniel 7:2 | 1-3 | revelation/7.json `cultural` | Repository |
+| Ezekiel 9:4; Exodus 12:13; Daniel 7:2; Zechariah 6:5 | 1-3 | BSB | BSB text |
+| 144,000 as twelve times twelve times a thousand, completeness; the list like a military census (Numbers 1) | 4-8 | revelation/7.json `literary` | Repository |
+| Judah first; Dan missing; Joseph for Ephraim; Levi included; idolatry suggested, not certain | 4-8 | revelation/7.json `cultural` | Repository |
+| Readings of the 144,000: dispensational futurist, Jewish Christians in the early church, one people seen two ways (Bauckham; Galatians 3:29; 14:1-5); no side | 4-8 | revelation/7.json `hard`; guides/reading-apocalyptic.json (symbols) | Repository, no side |
+| Numbers 1:2, 3; Galatians 3:29 | 4-8 | BSB | BSB text |
+| The multitude answers 6:17; every nation; Abraham's promise; palms at Tabernacles and victories; salvation belongs to God and the Lamb | 9-12 | revelation/7.json `cultural`, `literary`, `doctrines` | Repository |
+| Genesis 15:5; Leviticus 23:40 | 9-12 | BSB | BSB text |
+| The elder's question in the manner of Zechariah; thlipsis; robes white in blood; skēnoō and John 1:14; bodily hope; the Lamb as shepherd (John 10:11) | 13-17 | revelation/7.json `literary`, `words` (G2347, G4637, G4165), `doctrines`, `christ` | Repository |
+| ‘The great tribulation’: Daniel 12:1, Matthew 24:21; preterist, futurist and idealist readings (the deep note gives no historicist account, so none is offered); Acts 14:22 | 13-17 | revelation/7.json `historical`, `words` (G2347) | Repository, no side |
+| Isaiah 49:10; Isaiah 25:8; Daniel 12:1; Psalm 23:1; Matthew 24:21; Acts 14:22 | 13-17 | BSB | BSB text |
+
+Cut before publishing: Genesis 22:17-18 (swapped for Genesis 15:5 so that ‘blessed’ stays out even inside Scripture); any claim about which group today calls itself the 144,000.
+
+## The plain notes on Revelation 8 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sigē, used twice in the New Testament; three readings of the silence | 1-5 | revelation/8.json `words` (G4602) | Repository, no side |
+| The golden altar; incense morning and evening while the people prayed (Luke 1:9-10); prayers rising; the censer's fire as Ezekiel 10:2; the trumpets as the answer to prayer | 1-5 | revelation/8.json `cultural`, `literary`, `doctrines` | Repository |
+| Prayer through Christ who always lives to intercede (Hebrews 7:25) | 1-5 | revelation/8.json `christ` | Repository |
+| Sequence or recapitulation (Victorinus); 6:12-17, 11:15-19, 16:17-21; no side | 1-5 | revelation/8.json `hard` | Repository, no side |
+| Zephaniah 1:7; Habakkuk 2:20; Exodus 30:7; Ezekiel 10:2; Hebrews 7:25 | 1-5 | BSB | BSB text |
+| Trumpets for worship, war and alarm (Numbers 10; Joel 2:1; Jericho); exodus plagues (Exodus 9; 7); the Passover Lamb's greater exodus | 6-9 | revelation/8.json `cultural`, `historical`, `christ` | Repository |
+| A fourth, a third, everything; partial judgments as warning (9:20-21) | 6-9 | revelation/8.json `literary`, `doctrines` | Repository |
+| Vesuvius, AD 79, as a possible echo, not named and not accepted by all; Jeremiah 51:25; creation groaning (Romans 8:19-22) | 6-9 | revelation/8.json `historical`, `doctrines` | Repository |
+| The four ways of reading the trumpets as the deep note gives them | 6-9 | revelation/8.json `historical` | Repository, no side |
+| ‘And nothing here makes anyone's illness or death ...’ (John 9:3) | 6-9 | 1-john/plain/5.json (16-17 `hard`) | Word for word |
+| Exodus 9:23; Exodus 7:20; Joel 2:1; Jeremiah 51:25 | 6-9 | BSB | BSB text |
+| Land, sea, fresh water, sky: the four regions; four and three; the three woes fall on people in chapters 9 to 11 | 10-13 | revelation/8.json `literary`, `story` | Repository |
+| Apsinthos; wormwood as the bitterness of idolatry and injustice (Jeremiah 9:15; Amos 5:7); darkness as the ninth plague | 10-13 | revelation/8.json `words` (G0894), `cultural`, `historical` | Repository |
+| Jeremiah 9:15; Amos 5:7; Exodus 10:22 | 10-13 | BSB | BSB text |
+
+Cut before publishing: a line reading ‘those who dwell on the earth’ as a fixed term for those who refuse God (not supported in the repository's notes on this chapter); no star, mountain or plague tied to any event of our day.
+
+## The plain notes on Revelation 9 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first two woes strike people and come from below; the sealed of chapter 7 exempt | 1-6 | revelation/9.json `story` | Repository |
+| Abussos as a prison of spirits (Luke 8:31) and the deep of Genesis 1:2; ‘given’ and ‘told’: evil neither free nor final | 1-6 | revelation/9.json `words` (G0012), `cultural`, `doctrines` | Repository |
+| Locusts barred from plants; a locust's life of several months and the five months; numbers as scale and limit | 1-6 | revelation/9.json `cultural`, `historical` | Repository |
+| 9:6 read as a picture of misery, not a permission; care line ‘If you have thoughts of hurting yourself ...’ | 1-6 | philippians/plain/4.json (4-9 `hard`) | Word for word |
+| Exodus 10:14-15; Joel 2:10; Genesis 1:2; Revelation 21:4 | 1-6 | BSB | BSB text |
+| ‘Like’ as the language of vision; Abaddon and Apollyon; Apollo and the locust uncertain; handing over (Romans 1:24-28) | 7-12 | revelation/9.json `literary`, `cultural`, `words` (G0623), `hard` | Repository |
+| Joel 1:6; 2:4-5; Job 26:6; Proverbs 15:11 | 7-12 | BSB | BSB text |
+| The voice from the golden altar; the Euphrates (Genesis 15:18; Isaiah 8:7); Rome's eastern frontier; Parthian archers | 13-19 | revelation/9.json `historical` | Repository |
+| The hard question of the plagues; the four ways as the deep note gives them; no army or war of our day named | 13-19 | revelation/9.json `hard`, `historical` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 13-19 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Genesis 15:18; Isaiah 8:7 | 13-19 | BSB | BSB text |
+| Metanoeō; five churches called, four refusals (9:20, 21; 16:9, 11); idolatry as root; the list after the Ten Commandments; pharmakeia; suffering alone does not change a heart; Romans 2:4 | 20-21 | revelation/9.json `words` (G3340), `literary`, `doctrines`, `christ` | Repository |
+| Psalm 115:4-5, 7; Daniel 5:23; Romans 2:4 | 20-21 | BSB | BSB text |
+
+Cut before publishing: nothing drawn from outside the deep note; no river, army or number tied to any nation or war of our day.
+
+## The plain notes on Revelation 10 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The interlude turns from judgment to witness after 9:20-21 | 1-4 | revelation/10.json `story` | Repository |
+| The angel described like Christ in chapter 1 and the throne of chapter 4; on sea and land; a few identify him with Christ; no side | 1-4 | revelation/10.json `literary`, `christ` | Repository, no side |
+| Biblaridion, a diminutive of the scroll of chapter 5; open | 1-4 | revelation/10.json `words` (G0974), `literary` | Repository |
+| Thunder as God's voice; Psalm 29's seven voices; the thunders sealed: three readings (a cancelled series; 2 Corinthians 12:4; Daniel's sealed book); no schemes on what is not told | 1-4 | revelation/10.json `cultural`, `hard`, `doctrines` (Deuteronomy 29:29) | Repository, no side |
+| Psalm 29:3; Daniel 12:9; Deuteronomy 29:29; 2 Corinthians 12:4 | 1-4 | BSB | BSB text |
+| The raised hand as an oath (Deuteronomy 32:40); swearing by the Creator | 5-7 | revelation/10.json `cultural` | Repository |
+| Chronos, ‘time no longer’ in the King James Version, meaning no more delay; 6:11 | 5-7 | revelation/10.json `words` (G5550) | Repository |
+| 2 Peter 3:4-9; Jewish writers on delay after AD 70 | 5-7 | revelation/10.json `historical` | Repository |
+| Mustērion as a purpose once hidden, now revealed (Ephesians 3:3-6) | 5-7 | revelation/10.json `words` (G3466) | Repository |
+| First century, church history or the very end depends on the school; a commissioning scene on all | 5-7 | revelation/10.json `historical` | Repository, no side |
+| Daniel 12:7; Deuteronomy 32:40; Amos 3:7; 2 Peter 3:9 | 5-7 | BSB | BSB text |
+| Eating the scroll (Ezekiel 2:8 to 3:3, 3:14; Jeremiah 15:16); sweet and bitter as the shape of the gospel | 8-11 | revelation/10.json `cultural`, `christ` | Repository |
+| Prophēteuō as forthtelling; John in the line of Jeremiah (1:10) and Daniel | 8-11 | revelation/10.json `words` (G4395), `historical` | Repository |
+| Same scroll as chapter 5 or a separate message: debated | 8-11 | revelation/10.json `literary`, `words` (G0974) | Repository, no side |
+| Ezekiel 3:3, 14; Jeremiah 15:16; Jeremiah 1:10 | 8-11 | BSB | BSB text |
+
+Cut before publishing: ‘nearly two thousand years’ (a count of years left out; the question is put without one); a per-school account of the oath beyond the deep note's three.
+
+## The plain notes on Revelation 11 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Measuring (metreō) as ownership and protection; inner court kept, outer court exposed | 1-2 | revelation/11.json `words` (G3354), `cultural` | Repository |
+| 42 months and 1,260 days; Daniel 7:25 and 12:7; Antiochus IV, 167 BC; rededication 164 BC and Hanukkah; half of seven as limited distress | 1-2 | revelation/11.json `historical`; guides/reading-apocalyptic.json (numbers) | Repository |
+| The temple: preterist (before AD 70, the Jewish war; the date question), futurist, historicist, idealist (1 Corinthians 3:16); no side; nothing of our day | 1-2 | revelation/11.json `hard`, `historical` | Repository, no side |
+| Ezekiel 40:3; Zechariah 2:1-2; Daniel 7:25; Luke 21:24; 1 Corinthians 3:16 | 1-2 | BSB | BSB text |
+| Two witnesses (Deuteronomy 19:15); olive trees and lampstands from Zechariah 4 (Joshua and Zerubbabel); lampstands as churches (1:20); Elijah's and Moses' powers; Luke 4:25 | 3-6 | revelation/11.json `cultural`, `doctrines` | Repository |
+| Martus; ‘the faithful witness’ (1:5); the second-century shift toward ‘martyr’ | 3-6 | revelation/11.json `words` (G3144) | Repository |
+| Fire from the mouth read as the word, not arms | 3-6 | revelation/intro.json `teaching` (judgment: the sword from his mouth) | Repository |
+| Readings of the witnesses: Peter and Paul; two future prophets; Enoch and Elijah; Moses and Elijah; faithful groups; the witnessing church; no side; no one of our day named | 3-6 | revelation/11.json `hard` | Repository, no side |
+| Zechariah 4:3, 14; 1 Kings 17:1; Luke 4:25; 2 Kings 1:10; Exodus 7:20; Deuteronomy 19:15 | 3-6 | BSB | BSB text |
+| The beast from the Abyss; unburied bodies as dishonour (Psalm 79:2-3); gifts as at Purim (Esther 9:19, 22); the witnesses' story as Jesus' story | 7-10 | revelation/11.json `cultural`, `christ` | Repository |
+| The great city: Jerusalem, or the world against God (16:19; 18:10); no side | 7-10 | revelation/11.json `hard` | Repository, no side |
+| No word against the Jewish people; a Roman governor gave the order; ‘That reading is false. This site rejects it, and the note on Acts 2:22-28 sets out why.’ | 7-10 | acts/plain/2.json (22-28 `hard`); revelation/plain/3.json (7-9 `hard`) | Repository; pointer word for word |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 7-10 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Psalm 79:2-3; Esther 9:22 | 7-10 | BSB | BSB text |
+| A compressed gospel; Ezekiel 37; ascension in a cloud (Acts 1:9); 11:13 against 9:20-21 | 11-14 | revelation/11.json `literary`, `christ`; revelation/9.json `story` | Repository |
+| Ezekiel 37:10; Acts 1:9 | 11-14 | BSB | BSB text |
+| Basileia singular, one kingdom; Psalm 2; ‘His Christ’ as Messiah; Handel's Messiah (1742) | 15-19 | revelation/11.json `words` (G0932), `doctrines`, `christ`; guides/reading-apocalyptic.json | Repository |
+| ‘Is to come’ dropped from God's title; judgment of the dead, reward, those who destroy the earth | 15-19 | revelation/11.json `literary`, `doctrines` | Repository |
+| The ark (kibōtos); lost in 587 or 586 BC; Jeremiah 3:16; the storm signs with hail | 15-19 | revelation/11.json `cultural`, `words` (G2787G), `literary` | Repository |
+| Psalm 2:2, 6; Daniel 7:14; Jeremiah 3:16 | 15-19 | BSB | BSB text |
+
+Cut before publishing: seven thousand as an echo of Elijah's seven thousand (not in the repository's notes on this chapter); the cloud as Sinai's cloud (likewise); 2 Maccabees on the hidden ark (left out as not needed).
+
+## The plain notes on Revelation 12 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The deep story behind the churches' suffering; chapters 12 to 14 as the centre; sēmeion as a symbol | 1-6 | revelation/12.json `story`, `literary`, `words` (G4592) | Repository |
+| The woman's crown and Joseph's dream; Zion in labour; the dragon red like the second horse, its crowns, Daniel's horns; the child of Psalm 2:9; birth to ascension; Herod (Matthew 2:16) | 1-6 | revelation/12.json `cultural`, `christ`; revelation/verses/12.json (1, 2, 3-4, 5) | Repository |
+| The wilderness prepared in advance; manna and Elijah fed | 1-6 | revelation/verses/12.json (6) | Repository |
+| Leto, Python and Apollo, Ephesus' claim; Isis and Horus left out; emperors and Apollo | 1-6 | revelation/12.json `historical` | Repository |
+| The woman: Hippolytus (church), Oecumenius (Mary), the Assumption lectionary, Protestant and modern (Israel, then the church); layered; no side | 1-6 | revelation/verses/12.json (1 `history`); revelation/12.json `hard` | Repository, no side |
+| The flight to Pella (Eusebius, Church History 3.5.3) as one reading; the third of the stars and Milton (1667); Daniel 8:10 | 1-6 | revelation/verses/12.json (6, 3-4 `history`) | Repository, no side |
+| Genesis 37:9; Micah 4:10; Isaiah 66:7; Psalm 74:13-14; Isaiah 27:1; Ezekiel 29:3; Daniel 7:7; Daniel 8:10; Psalm 2:9; Genesis 3:15 | 1-6 | BSB | BSB text |
+| Michael (‘Who is like God?’) in Daniel; Michael not Christ fights; the titles; Genesis never calls the serpent Satan; ‘hurled’ three times | 7-9 | revelation/verses/12.json (7-8, 9) | Repository |
+| Diabolos as slanderous; Satan as adversary or accuser | 7-9 | lex G1228; revelation/12.json `cultural` | Repository |
+| The timing of Satan's fall: primordial (Isaiah 14; Ezekiel 28 in their setting), futurist, the cross and ascension (Luke 10:18; John 12:31); no side | 7-9 | revelation/12.json `hard` | Repository, no side |
+| Daniel 12:1; Zechariah 3:1; Genesis 3:15; Luke 10:18; John 12:31 | 7-9 | BSB | BSB text |
+| The hymn as the key; katēgōr; no court can condemn (Romans 8:33-34); nikaō redefined; the fury of a defeated enemy | 10-12 | revelation/12.json `literary`, `words` (G6051, G3528), `doctrines`; revelation/verses/12.json (10, 11, 12) | Repository |
+| 12:11 honoured without commending death; Mark 8:35 in paraphrase | 10-12 | revelation/verses/12.json (11 `refs`); instruction for this run | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 10-12 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Zechariah 3:1, 4; Psalm 2:2; Psalm 96:11; Romans 8:33 | 10-12 | BSB | BSB text |
+| Pursued or persecuted; the eagle's wings (Exodus 19:4); protected in, not taken out; the earth helps (Numbers 16:32; Exodus 15:12); two marks; the seed of Genesis 3:15; the dragon on the shore | 13-17 | revelation/verses/12.json (13-14, 15-16, 17) | Repository |
+| Exodus 19:4; Numbers 16:32; Exodus 15:12; Exodus 16:35; 1 Kings 17:4 | 13-17 | BSB | BSB text |
+
+Cut before publishing: Isis and Horus (kept to the one myth the note ties to Asia); the Qumran hymn on labour; Ugarit's seven-headed serpent. No historicist account of the woman is offered, since the repository's notes give none.
+
+## The plain notes on Revelation 13 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Thērion sixteen times; the beast in the dragon's image; blasphemous names; Sebastos, divi filius, Domitian's ‘our Lord and God’ (Suetonius) | 1-4 | revelation/13.json `words` (G2342); revelation/verses/13.json (1) | Repository |
+| Daniel's four beasts in one; imperial power as such; the dragon's power, throne and authority | 1-4 | revelation/13.json `cultural`; revelation/verses/13.json (2) | Repository |
+| The wound ‘as slain’ parodies 5:6; ‘Who is like the beast?’ parodies Exodus 15:11 and Michael's name | 1-4 | revelation/13.json `literary`; revelation/verses/13.json (3, 4) | Repository |
+| The four readings of the beast (Rome and the seven hills; historicists matching rulers and churches of their own times, in general terms only; a final ruler; a recurring pattern); the healed head (Nero's death in 68, the return rumour, Tacitus and Suetonius; or the near collapse; or a parody only); no identification of our day | 1-4 | revelation/13.json `hard`, `historical`; revelation/verses/13.json (3); revelation/intro.json `teaching` (ways) | Repository, no side |
+| Daniel 7:3, 4, 5, 6, 7; Exodus 15:11 | 1-4 | BSB | BSB text |
+| ‘Given’ four times; 42 months; God's dwelling is his people; the saints conquered, and victory as faithfulness; 5:9's peoples claimed | 5-8 | revelation/verses/13.json (5-6, 7) | Repository |
+| ‘From the foundation of the world’ with ‘written’ (BSB, ESV, 17:8) or with ‘slain’ (KJV, NIV); meant to steady, not frighten | 5-8 | revelation/verses/13.json (8); revelation/13.json `literary` | Repository, no side |
+| Antiochus IV: December 167 BC and December 164 BC | 5-8 | revelation/verses/13.json (5-6) | Repository |
+| Daniel 7:8, 21, 25 | 5-8 | BSB | BSB text |
+| The refrain without ‘what the Spirit says’; hupomonē; faith as faithfulness; no sword and no surrender; Matthew 4:8-10; Matthew 26:52 | 9-10 | revelation/verses/13.json (9-10); revelation/13.json `words` (G5281), `christ` | Repository |
+| The textual split of 13:10 (older text in the BSB; the King James reading); honoured without commending death | 9-10 | revelation/verses/13.json (9-10 `text`); revelation/13.json `christ` | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 9-10 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Jeremiah 15:2; Daniel 3:18; Matthew 4:10; Matthew 26:52 | 9-10 | BSB | BSB text |
+| The lamb-like beast; the false prophet (16:13); religion serving power; the koinon, high priests of Asia, Asiarchs (Acts 19:31) | 11-15 | revelation/verses/13.json (11-12) | Repository |
+| Fire like Elijah's; Deuteronomy 13; Mark 13:22; breath given to the image (Genesis 2:7) | 11-15 | revelation/verses/13.json (13-14, 15) | Repository |
+| Pliny to Trajan, about AD 112 (Letters 10.96), the image, incense and wine, cursing Christ | 11-15 | revelation/verses/13.json (15) | Repository |
+| Romans 13:1 and Revelation 13; Oscar Cullmann, The State in the New Testament (1956) | 11-15 | revelation/verses/13.json (2 `theology`) | Repository |
+| 1 Kings 18:38; Deuteronomy 13:1-3; Daniel 3:5-6; Romans 13:1 | 11-15 | BSB | BSB text |
+| Merism of everyone; the mark against the seal (7:3) and Deuteronomy 6:8; brands and marks; charagma on documents and coins; the mark as name or number; guilds and banquets; Thyatira and Laodicea | 16-18 | revelation/13.json `historical`, `cultural`, `words` (G5480); revelation/verses/13.json (16-17) | Repository |
+| Letters as numbers; the Pompeii graffito (545); psēphizō, counting with pebbles | 16-18 | revelation/13.json `cultural`, `words` (G5585); revelation/verses/13.json (18) | Repository |
+| 666: Irenaeus weighed names and declined; Nero Caesar in Hebrew letters; 616 in P115 and a fifth-century codex; Nero the best-known solution; the symbol of falling short; 888; Solomon's 666 talents (1 Kings 10:14); no side; no application to our day | 16-18 | revelation/13.json `hard`; revelation/verses/13.json (18); guides/reading-apocalyptic.json (numbers) | Repository, no side |
+| The mark goes with worshipping the beast (14:9); care line ‘If you are afraid that you have fallen away from God ...’ | 16-18 | BSB 14:9; hebrews/plain/6.json (4-8 `hard`) | BSB text; word for word |
+| Deuteronomy 6:8; 1 Kings 10:14 | 16-18 | BSB | BSB text |
+
+Cut before publishing: the historicist identification named in the deep note (given here only in general terms, as the book page gives it); the history of the schools (Ribera, Alcázar, Darby, Scofield), kept to the book page; Bauckham's thērion and triangular-number notes; the Sibylline Oracles; ‘the mark cannot be received by accident’ (narrowed to what 14:9 says); a line giving futurist and idealist readings of the number itself (the notes give them for the beast, not the number).
+
+## The plain notes on Revelation 14 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The counter-vision to chapter 13; a preview of the ending before the bowls | 1-5 | revelation/14.json `story` | Repository |
+| Zion (Psalm 2:6; Joel 2:32); firstfruits (Leviticus 23:10; 1 Corinthians 15:20); following the Lamb as discipleship | 1-5 | revelation/14.json `cultural`, `words` (G0536), `christ` | Repository |
+| ‘Virgins’: not against marriage (Hebrews 13:4); soldiers on campaign (Deuteronomy 23:9-10; 1 Samuel 21:5); idolatry as adultery (2 Corinthians 11:2); banquets and licence (2:14, 20) | 1-5 | revelation/14.json `historical`, `cultural` | Repository |
+| The 144,000 read as in chapter 7; no side | 1-5 | revelation/7.json `hard` | Repository, no side |
+| Psalm 2:6; Joel 2:32; Leviticus 23:10; Zephaniah 3:13; Hebrews 13:4; 2 Corinthians 11:2 | 1-5 | BSB | BSB text |
+| Three angels: invitation, announcement, warning; the eternal gospel to every nation | 6-8 | revelation/14.json `literary`, `doctrines` | Repository |
+| Babylon: 587 or 586 BC; Cyrus, 539 BC; a code name; 1 Peter 5:13 as Rome; thumos wordplay | 6-8 | revelation/14.json `historical`, `words` (G2372) | Repository |
+| Babylon: Rome; Jerusalem; a final world city or system; the recurring city of pride; no side; nothing of our day | 6-8 | revelation/14.json `historical` | Repository, no side |
+| Isaiah 21:9; Jeremiah 51:7 | 6-8 | BSB | BSB text |
+| The cup (Psalm 75:8; Jeremiah 25:15); undiluted wine; Sodom (Genesis 19:24); Edom's smoke (Isaiah 34:9-10); judgment in the Lamb's presence; hupomonē; rest and deeds that follow | 9-13 | revelation/14.json `cultural`, `doctrines`, `words` (G5281) | Repository |
+| 14:11: eternal conscious punishment and conditional immortality as the deep note gives them; the doctrine study on hell; no side; nothing said of any person's eternal state | 9-13 | revelation/14.json `hard`; bible/doctrines/hell.json `differ` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 9-13 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Psalm 75:8; Jeremiah 25:15; Genesis 19:24; Isaiah 34:10 | 9-13 | BSB | BSB text |
+| One like the Son of Man (Daniel 7:13; Mark 14:62); the golden crown; drepanon seven times; harvest as the end of the age (Matthew 13:39) | 14-20 | revelation/14.json `christ`, `words` (G1407) | Repository |
+| Two harvests: both judgment (Joel 3:13), or the righteous gathered and the wicked judged; no side; grapes trodden; 1,600 stadia about 300 km, the length of the land, four squared times a hundred; toward 19:15 | 14-20 | revelation/14.json `literary`, `cultural` | Repository, no side |
+| Daniel 7:13; Joel 3:13; Isaiah 63:3 | 14-20 | BSB | BSB text |
+
+Cut before publishing: ‘Blessed are the dead’ quoted only in part, and the count of the book's sayings beginning ‘Blessed’, so that the word stays out of the prose; universal restoration (named in the doctrine study, pointed to rather than set out, since the deep note gives two views).
+
+## The plain notes on Revelation 15 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shortest chapter; worship frames each series; the bowls set up for chapter 16 | 1-4 | revelation/15.json `story`, `literary` | Repository |
+| Teleō, completed (John 19:28); wrath as settled opposition to evil | 1-4 | revelation/15.json `words` (G5055); revelation/plain/6.json (12-17) | Repository |
+| The sea of glass (4:6) mixed with fire; the Red Sea shore; the exodus kept at Passover; a new exodus hoped for under Rome | 1-4 | revelation/15.json `historical`, `cultural` | Repository |
+| The only naming of Moses; one story of rescue; Christ our Passover lamb (1 Corinthians 5:7) | 1-4 | revelation/15.json `words` (G3475), `christ` | Repository |
+| The song praises God only, not the singers or the Lamb; the hope of the nations | 1-4 | revelation/15.json `christ`, `doctrines` (mission) | Repository |
+| Exodus 15:1, 11; Psalm 111:2; Deuteronomy 32:4; Jeremiah 10:7; Psalm 86:9; 1 Corinthians 5:7 | 1-4 | BSB | BSB text |
+| The tabernacle of the Testimony; the tablets in the ark; no tabernacle or temple standing; the heavenly original (Hebrews 8:5) | 5-8 | revelation/15.json `historical` | Repository |
+| Priestly linen and golden sashes (1:13); golden bowls for offerings; 5:8's bowls of prayer and the answer to the saints' prayers (6:10) | 5-8 | revelation/15.json `cultural`, `words` (G5357) | Repository |
+| Smoke and glory: the tabernacle (Exodus 40:34-35), Solomon's temple (1 Kings 8:10-11), Isaiah 6:4; holiness as unapproachable majesty | 5-8 | revelation/15.json `cultural`, `doctrines` (holiness) | Repository |
+| Sequence or retelling of seals, trumpets and bowls (Victorinus of Pettau); the first four bowls match the first four trumpets in full measure; no side | 5-8 | revelation/plain/8.json (1-5 `hard`); revelation/16.json `story`, `literary` | Repository, no side |
+| Exodus 40:35; 1 Kings 8:11; Isaiah 6:4; Exodus 25:16 | 5-8 | BSB | BSB text |
+
+Cut before publishing: ‘wrath ... does not go on for ever’ and ‘God's wrath has an end’, which could be read as taking a side on final judgment (narrowed to the series of plagues having an end); Psalm 139:14 as a second source for ‘wonderful works’ (the deep note gives it; Psalm 111:2 was enough).
+
+## The plain notes on Revelation 16 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The bowls told quickly, without the interludes; the trumpets' pattern in full measure; the plagues of Egypt (sores, blood, darkness, frogs, hail); Pharaoh's hardening | 1-7 | revelation/16.json `story`, `cultural`, `literary` | Repository |
+| ‘Who is and was’ without ‘is to come’ (as at 11:17); blood for blood; the altar of 6:9-10 answered; dikaios as setting right | 1-7 | revelation/16.json `cultural`, `doctrines` (judgment), `words` (G1342); revelation/plain/11.json (15-19) | Repository |
+| The four readings of the bowls; no side; disasters and illness not read as judgment on particular people (Luke 13:4; John 9:3); nothing of our day | 1-7 | revelation/intro.json `teaching` (ways); revelation/plain/6.json (5-8 `hard`); revelation/plain/8.json (6-9 `hard`) | Repository, no side |
+| Exodus 9:10; 7:20, 21; Deuteronomy 32:4; Luke 13:4; John 9:3 | 1-7 | BSB | BSB text |
+| The beast's throne (13:2) darkened; cursing three times, no repentance twice; blasphēmeō, worshippers become like the beast (13:6); pain does not of itself bring repentance, a gift and a turning | 8-11 | revelation/16.json `literary`, `doctrines` (repentance), `words` (G0987) | Repository |
+| The open door: 11:13 and 14:6-7 | 8-11 | BSB; revelation/plain/11.json (11-14) | BSB text |
+| Exodus 10:22; 9:34 | 8-11 | BSB | BSB text |
+| The Euphrates and Parthia (9:14); the Nero-return rumour; Herodotus on Cyrus, 539 BC; the Red Sea and the Jordan dried | 12-16 | revelation/16.json `historical` | Repository |
+| The frogs: unclean under the Law, Egypt's frogs, from the three mouths, deceiving words | 12-16 | revelation/16.json `cultural` | Repository |
+| ‘Like a thief’: suddenness not secrecy (Matthew 24:43; 1 Thessalonians 5:2); Laodicea's garments (3:18) | 12-16 | revelation/16.json `cultural`, `words` (G2812), `christ` | Repository |
+| Har Megiddo; the fortress and the plain; Deborah and Barak (Judges 5:19); Josiah killed by Neco, 609 BC (2 Kings 23:29; Zechariah 12:11); no mountain as such; the mount of assembly (Isaiah 14:13) | 12-16 | revelation/16.json `historical`, `words` (G0717) | Repository |
+| Armageddon's four readings; no battle described, the kings only gathered (19:19-21; 20:8-9); no date, no map, nothing of our day; Matthew 24:36 | 12-16 | revelation/16.json `hard`; revelation/intro.json `teaching` (ways) | Repository, no side |
+| Judges 5:19; 2 Kings 23:29; Zechariah 12:11; Exodus 14:21; 8:6; Matthew 24:36 | 12-16 | BSB | BSB text |
+| ‘It is done’ one Greek word; John 19:30; the storm closing each series (8:5; 11:19); Tacitus on AD 17; Laodicea about AD 60; the talent, almost a hundred pounds; hail in Egypt and at Beth-horon | 17-21 | revelation/16.json `historical`, `cultural`, `literary`, `christ` | Repository |
+| God remembered Noah (Genesis 8:1) | 17-21 | BSB | BSB text |
+| A word for the frightened; care line ‘If you are afraid that you have fallen away from God ...’ | 17-21 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Exodus 9:24; Joshua 10:11; Jeremiah 51:7; John 19:30 | 17-21 | BSB | BSB text |
+
+Cut before publishing: ‘in northern Israel’ for Megiddo (kept to ‘an ancient fortress’, so that no modern state is in view); Leviticus 11:10-12 quoted for the frogs (the verses speak of water creatures, so the note says only that frogs were unclean); ‘Blessed is the one who remains awake’ quoted only in part, as in chapter 14; ‘Megiddo stood on a low hill’ (the deep note says it stood in a plain).
+
+## The plain notes on Revelation 17 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 17 and 18 slow down the seventh bowl; Babylon named at 14:8 and 16:19, seen here; the beast of chapter 13; the woman as the city and its culture of wealth | 1-6 | revelation/17.json `story` | Repository |
+| The goddess Roma; temples in Asia; Pergamum, Smyrna and Ephesus competing; the goddess turned into a prostitute | 1-6 | revelation/17.json `cultural` | Repository |
+| Pornē as the prophets used it (Tyre, Isaiah 23:15-18; Nineveh, Nahum 3:4); idolatry and economic compromise, not first private conduct | 1-6 | revelation/17.json `cultural`, `words` (G4204) | Repository |
+| Purple and scarlet; the golden cup (Jeremiah 51:7); the name on the forehead against the seal (7:3; 14:1); evil made attractive | 1-6 | revelation/17.json `cultural`, `questions` | Repository |
+| Babylon's four readings: Rome, or for some Jerusalem; historicists naming a church power of their own day (general terms only); a final city or world system; a recurring pattern; combined readings; no side | 1-6 | revelation/17.json `hard`; revelation/14.json `historical`; revelation/intro.json `teaching` (ways) | Repository, no side |
+| The picture turned by Christians on other Christians: Reformers' identifications; commentaries written partly to answer the Protestant readings (Alcázar, named in the ledger only) | 1-6 | revelation/17.json `hard`; guides/reading-apocalyptic.json (four ways) | Repository |
+| Nations, peoples, leaders and institutions named as Babylon, every naming failed; 18:4's call to look at one's own compromise; nothing of our day named | 1-6 | revelation/17.json `hard` | Repository |
+| If Jerusalem, no word against the Jewish people (the paragraph from the Revelation 11 note, with the Acts 2:22-28 pointer) | 1-6 | revelation/plain/11.json (7-10 `hard`) | Word for word |
+| No woman the target of the picture | 1-6 | The task's rule; revelation/17.json `cultural` | Repository |
+| Jeremiah 51:7, 13; Isaiah 23:17; Nahum 3:4 | 1-6 | BSB | BSB text |
+| Vision and interpretation (Daniel 7); ‘a mind with wisdom’; musterion; ‘was, and is not, and yet will be’ as a parody of 1:4, 8 | 7-11 | revelation/17.json `literary`, `words` (G3466) | Repository |
+| Seven hills; Roman writers; Vespasian's coin (AD 69 to 79) with Roma on seven hills; mountains as kingdoms | 7-11 | revelation/17.json `historical`, `words` (G3735) | Repository |
+| Counting the kings from Julius Caesar or Augustus; Galba, Otho, Vitellius; Nero or Vespasian as the sixth; the eighth and the Nero rumour; seven as completeness; no side | 7-11 | revelation/17.json `historical` | Repository, no side |
+| Four readings of the kings; no king, head or horn named as anything of our day | 7-11 | revelation/intro.json `teaching` (ways) | Repository, no side |
+| Daniel 7:7, 24; 2:35, 44 | 7-11 | BSB | BSB text |
+| Ten kings from Daniel's fourth beast; Lord of lords (Deuteronomy 10:17), on the robe in 19:16; called, chosen and faithful; God and wealth (Matthew 6:24) | 12-14 | revelation/17.json `christ` | Repository |
+| The ten horns: kings or kingdoms from the Roman empire (the traditional reading of Daniel); futurists' ten kings at the end; horns as strength and royal power, a power with many kings; no side; nothing of our day | 12-14 | daniel/7.json; daniel/verses/7.json; revelation/intro.json `teaching` (ways) | Repository, no side |
+| Deuteronomy 10:17; Psalm 2:2 | 12-14 | BSB | BSB text |
+| The waters as the peoples (5:9); the beast turning on the city; 17:17, evil never in charge and destroying itself | 15-18 | revelation/17.json `doctrines` (sovereignty, judgment) | Repository |
+| Rome's sea-borne trade from Spain to India; Babylon as a code for Rome (1 Peter 5:13); 587 or 586 BC and AD 70 | 15-18 | revelation/17.json `historical` | Repository |
+| ‘Come, I will show you’ in 17:1 and 21:9; two women, two cities, wilderness and mountain | 15-18 | revelation/17.json `literary` | Repository |
+| Jeremiah 51:13; Proverbs 21:1 | 15-18 | BSB | BSB text |
+
+Cut before publishing: the historicists' particular identification of Babylon and the name of the church office the guide gives (kept in general terms, as in chapter 13); ‘the prophets described the fall of proud cities in the same language of stripping and burning’ (no repository source); a reading of the ten kings as client kings or provincial rulers (no repository source; replaced by the readings the Daniel 7 notes give).
+
+## The plain notes on Revelation 18 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The fall told through voices, no battle; announced at 14:8, carried out at 16:19 | 1-3 | revelation/18.json `story`, `literary` | Repository |
+| Isaiah 21:9's cry; kings, nations and merchants; emporos, a wholesale trader by sea; economic power | 1-3 | revelation/18.json `cultural`, `words` (G1713) | Repository |
+| Isaiah 21:9; Jeremiah 51:7 | 1-3 | BSB | BSB text |
+| ‘Come out of her’ (Jeremiah 51:45); separating from sins, not necessarily leaving a place; guilds and banquets; Thyatira and Laodicea | 4-8 | revelation/18.json `doctrines` (holiness); revelation/plain/13.json (16-18) | Repository |
+| ‘I sit as queen’ (Isaiah 47:8); strēniaō; God remembers | 4-8 | revelation/18.json `cultural`, `words` (G4763), `doctrines` (judgment) | Repository |
+| ‘Pay her back double’: spoken to heaven's agents, not Christians (Romans 12:19); double as full payment (Jeremiah 16:18); readers differ; the victims vindicated | 4-8 | revelation/18.json `hard` | Repository, no side |
+| Jeremiah 51:45; Isaiah 47:8; Jeremiah 16:18; Romans 12:19 | 4-8 | BSB | BSB text |
+| Three laments as a chorus, ‘Woe, woe’ and ‘in a single hour’; the funeral song; ouai; standing far off; grieving lost profit, not people | 9-19 | revelation/18.json `literary`, `cultural`, `words` (G3759) | Repository |
+| Ostia; grain, spices, silk, ivory, marble; citron wood; Laodicea and Ephesus in the trade; slaves as cargo; Ezekiel 27:13 | 9-19 | revelation/18.json `historical` | Repository |
+| Dust on the head; Ezekiel's lament over Tyre (26 to 27) | 9-19 | revelation/18.json `cultural` | Repository |
+| Rome not destroyed in an hour; the fire of AD 64; AD 410 and AD 455; four readings; no side; nothing of our day | 9-19 | revelation/18.json `historical` | Repository, no side |
+| Care line ‘A word for anyone who is being held, owned or forced to work today ...’ | 9-19 | 1-corinthians/plain/7.json (17-24 `hard`) | Word for word |
+| Ezekiel 26:17; 27:30; 27:13 | 9-19 | BSB | BSB text |
+| The millstone (Jeremiah 51:63-64); the silent city and the sounds of any town (Jeremiah 25:10); ‘again’ as a bell; all who had been slain | 20-24 | revelation/18.json `cultural`, `literary`, `doctrines` (judgment) | Repository |
+| Rejoicing over justice, not suffering; the oppressor's fall as rescue; the city of chapters 21 and 22 whose glory costs no one their life | 20-24 | revelation/18.json `hard`, `story` | Repository |
+| Jeremiah 51:63-64; 25:10 | 20-24 | BSB | BSB text |
+
+Cut before publishing: ‘the prophets often pictured a fallen city given over to wild animals’ (no repository source given for it here).
+
+## The plain notes on Revelation 19 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Heaven's answer to the laments; Hallelujah: Hebrew, ‘praise the LORD’, Yah; common in the Psalms; only here in the New Testament; four times, as choirs | 1-5 | revelation/19.json `story`, `cultural`, `literary`, `words` (G0239) | Repository |
+| ‘True and just’ as in 16:7; the martyrs' prayer (6:10) answered; the smoke from Isaiah 34:10 | 1-5 | revelation/19.json `doctrines` (judgment), `words` (G0239); revelation/14.json `cultural` | Repository |
+| Psalm 113:1; 106:1; Isaiah 34:10 | 1-5 | BSB | BSB text |
+| Pantokratōr, ‘the LORD of hosts’, nine times in Revelation; Caesar's claims; Handel's Messiah (1742) | 6-10 | revelation/19.json `words` (G3841); revelation/11.json and the chapter 11 rows | Repository |
+| God as husband (Isaiah 54:5; Hosea 2:19); Christ and the church (Ephesians 5:25-27); the two stages of a wedding; a man and a woman in a garden to a wedding | 6-10 | revelation/19.json `cultural`, `words` (G1062) | Repository |
+| The linen given and also the saints' righteous acts; grace and obedience | 6-10 | revelation/19.json `cultural`, `doctrines` (church) | Repository |
+| The angel refuses worship; the Lamb receives it (5:13) | 6-10 | revelation/19.json `doctrines` (god) | Repository; BSB |
+| Isaiah 54:5; Hosea 2:19; Psalm 97:1 | 6-10 | BSB | BSB text |
+| Heaven opened (4:1); Faithful and True (3:14); eyes of fire (1:14); crowns; the name only he knows | 11-16 | revelation/19.json `literary`, `cultural`, `christ` | Repository; BSB |
+| The robe dipped in blood: his own (5:9; 12:11), or his enemies' (Isaiah 63); no side | 11-16 | revelation/19.json `christ` | Repository, no side |
+| The Word of God (John 1:1, 14); the sword from the mouth (1:16; Isaiah 11:4); the iron scepter (Psalm 2:9); the armies do not fight | 11-16 | revelation/19.json `cultural`, `words` (G3056), `christ` | Repository |
+| The Roman triumph, white horses, reserved to the emperor's house; lord and saviour on coins and inscriptions | 11-16 | revelation/19.json `historical` | Repository |
+| The donkey and the second coming; the Nicene Creed's ‘quick and the dead’ | 11-16 | revelation/19.json `christ`, `doctrines` (messiah); revelation/intro.json `teaching` (millennium) | Repository |
+| The four readings of the rider; every tradition confesses the return; no date; Matthew 24:36 | 11-16 | revelation/19.json `historical` | Repository, no side |
+| Isaiah 11:4; Psalm 2:9; Isaiah 63:3; Zechariah 9:9; Matthew 24:36 | 11-16 | BSB | BSB text |
+| Two suppers; Ezekiel 39:17-20; the battle never fought; enemies taken in reverse order (18, 19, 20) | 17-21 | revelation/19.json `literary`, `story`, `cultural` | Repository |
+| Does it contradict the Gospels: oracles, the sword of the mouth, the robe already bloody; Matthew 25:31-46; John 5:28-29; the Jesus who wept over Jerusalem | 17-21 | revelation/19.json `hard` | Repository |
+| The lake of fire pointed on to chapter 20's views; nothing said of any person's eternal state | 17-21 | revelation/20.json `hard`; revelation/verses/20.json (10, 15) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 17-21 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Ezekiel 39:17; Genesis 19:24; Matthew 25:31 | 17-21 | BSB | BSB text |
+
+Cut before publishing: ‘Blessed are those who are invited’ quoted only in part, as in chapters 14 and 16; ‘the mountains of Israel’ in Ezekiel 39:17 (the quotation stops before it, so that no place in the modern world is brought into view).
+
+## The plain notes on Revelation 20 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last and oldest enemy; ‘ancient serpent’ to Genesis 3 | 1-3 | revelation/20.json `story` | Repository |
+| A single angel; the key of 9:1 and 1:18; deceiving the nations the one thing stopped; dei, ‘must’; no initiative of the dragon's own | 1-3 | revelation/verses/20.json (1, 2-3) | Repository |
+| Deō and the strong man (Mark 3:27; Matthew 12:28-29); readings point to 4-6 | 1-3 | revelation/20.json `words` (G1210), `christ`; revelation/verses/20.json (2-3 `theology`) | Repository, no side |
+| Rebel angels bound in earlier Jewish writings; 2 Peter 2:4; Jude 6; Isaiah 24:21-22 behind the pattern | 1-3 | revelation/verses/20.json (1 `history`, `ot`) | Repository |
+| Isaiah 24:21-22; Genesis 3:15 | 1-3 | BSB | BSB text |
+| Beheading a Roman method; Paul by tradition; the verdict of Roman courts reversed; Daniel's thrones; the souls of 6:9 | 4-6 | revelation/20.json `historical`; revelation/verses/20.json (4) | Repository |
+| ‘A thousand years’ six times; mille and annus; only here in the Bible | 4-6 | revelation/20.json `historical`, `literary` | Repository |
+| Ezēsan; 2:8; the consistency argument and its answer (Alford and Kline, named in the ledger only) | 4-6 | revelation/verses/20.json (4, 5 `grammar`) | Repository, no side |
+| Priests of God and of Christ (1:6; 5:10; Exodus 19:6); vocation; the second death four times (2:11; 20:6, 14; 21:8) | 4-6 | revelation/verses/20.json (6) | Repository |
+| The four millennial views as the book page gives them, each with its holders' grounds and names; not dividing the creeds; what all confess; no side | 4-6 | revelation/intro.json `teaching` (millennium); bible/doctrines/return.json `differ` | Repository, no side |
+| Daniel 7:9, 22; Exodus 19:6 | 4-6 | BSB | BSB text |
+| The nations still follow the deceiver; the heart made new | 7-10 | revelation/verses/20.json (7-8 `theology`) | Repository |
+| Gog of the land of Magog, a northern king, in Ezekiel 38 to 39; in Revelation all nations; no nation named | 7-10 | revelation/20.json `cultural`; revelation/verses/20.json (7-8) | Repository |
+| Parembolē, Israel's camp; no battle; God acts (Ezekiel 38:22; 39:6) | 7-10 | revelation/verses/20.json (9) | Repository |
+| One battle told twice, or a later battle (R. Fowler White's argument, in the ledger only); no side | 7-10 | revelation/20.json `literary`; revelation/verses/20.json (7-8 `grammar`) | Repository, no side |
+| The lake of fire: the traditional view, conditional immortality (the beast and false prophet as powers; ‘the second death’), universal restoration not generally affirmed; no side; what is confessed | 7-10 | client/src/data/answers.ts (is-hell-forever-or-does-it-end); bible/doctrines/hell.json `differ`; revelation/verses/20.json (10, 15) | Repository, no side |
+| Ezekiel 38:2, 22; 39:6; Matthew 25:46; 10:28 | 7-10 | BSB | BSB text |
+| Megas and leukos; the throne unnamed, read as God's shared with the Lamb (22:1; John 5:22) | 11-15 | revelation/verses/20.json (11) | Repository |
+| Great and small; the sea's dead and the ancient fear of no grave; the general resurrection in the creeds | 11-15 | revelation/20.json `cultural`; revelation/verses/20.json (12, 13) | Repository |
+| Books of deeds and the Book of Life (21:27; 13:8); works and grace side by side (Romans 2:6; 3:23-24) | 11-15 | revelation/verses/20.json (12 `theology`); revelation/20.json `doctrines` (salvation) | Repository |
+| Death and Hades thrown away; 1 Corinthians 15:26 | 11-15 | revelation/verses/20.json (14); revelation/20.json `christ` | Repository |
+| Nothing of any person's eternal state; the Book of Life meant to steady (13:8) | 11-15 | revelation/plain/13.json (5-8); revelation/plain/14.json (9-13) | Repository |
+| Grief line ‘If you are grieving someone who died without clear faith ...’ | 11-15 | 1-thessalonians/plain/4.json (13-14 `hard`) | Word for word |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 11-15 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Daniel 7:10; 12:1, 2; Ezekiel 33:11 | 11-15 | BSB | BSB text |
+
+Cut before publishing: Josephus's identification of Magog with the Scythians (so that Gog and Magog are tied to no people at all); ‘Blessed and holy are those’ quoted only in part, as in chapters 14, 16 and 19; the scholars on each side of the ezēsan and one-battle debates, kept to the verse notes.
+
+## The plain notes on Revelation 21 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everything heading here; Genesis 1:1 to a new heaven and earth; Isaiah 65:17 | 1-4 | revelation/21.json `story`; isaiah/65.json | Repository |
+| Kainos, new in kind or quality; the word alone cannot settle it | 1-4 | revelation/21.json `words` (G2537) | Repository |
+| The sea as chaos and the beast's source (Daniel 7:3; 13:1), and Patmos's separation | 1-4 | revelation/21.json `cultural` | Repository |
+| Skēnē, tent; the tabernacle; John 1:14; the covenant formula (Leviticus 26:12; Ezekiel 37:27) | 1-4 | revelation/21.json `cultural`, `words` (G4633) | Repository |
+| Suffering real, ended and answered; the resurrection of the body and the life of the world to come; not an escape of souls | 1-4 | revelation/21.json `doctrines` (hope, creation), `hard`; the Nicene Creed as the site quotes it | Repository |
+| Renewal or replacement (Romans 8:21; 2 Peter 3); both confess a physical new creation; no side | 1-4 | revelation/21.json `hard`, `doctrines` (creation); bible/doctrines/new-creation.json `differ` | Repository, no side |
+| Grief line ‘If you are grieving someone who has died, these verses do not ask you to stop grieving ...’ | 1-4 | 1-thessalonians/plain/4.json (13-14 `hard`) | Word for word |
+| Isaiah 65:17, 19; 25:8; 35:10; 62:5; Leviticus 26:12; Ezekiel 37:27; Genesis 1:1; John 1:14; Romans 8:21 | 1-4 | BSB; isaiah/65.json, 35.json, 62.json (Revelation 21 named) | BSB text |
+| The One on the throne speaks; ‘all things new’, not ‘new things’; ‘It is done!’ (16:17); Alpha and Omega (22:13) | 5-8 | revelation/21.json `literary`, `christ`; bible/doctrines/new-creation.json `differ` | Repository |
+| The water given freely (Isaiah 55:1; 22:17) | 5-8 | isaiah/55.json | Repository |
+| ‘The cowardly’ as the fearful, beside the one who overcomes; those outside ‘practice’ (21:27; 22:15) | 5-8 | BSB; bible/lex (deilos) | BSB text; lexicon |
+| Nothing of any person's eternal state; Peter restored (John 21:17); care line ‘If you are afraid that you have fallen away from God ...’ | 5-8 | hebrews/plain/6.json (4-8 `hard`); BSB | Word for word; BSB text |
+| ‘Come, I will show you’ (17:1 and 21:9); wilderness and mountain; the bride a people; jasper (4:3); tribes and apostles one city | 9-14 | revelation/21.json `literary`, `cultural`, `words` (G3565), `doctrines` (church) | Repository |
+| Ezekiel 48:31; Isaiah 54:11-12 | 9-14 | BSB; isaiah/54.json (Revelation 21:19-21 named); revelation/21.json `cultural` | BSB text |
+| The cube and the Most Holy Place (1 Kings 6:20); stadion about 185 m, 12,000 stadia about 2,200 km or 1,400 miles; 144 cubits about 65 m, height or thickness not said; twelves | 15-21 | revelation/21.json `historical`, `cultural`, `literary` | Repository |
+| The breastpiece (Exodus 28:17-21); ancient stone names uncertain | 15-21 | revelation/21.json `cultural` | Repository |
+| A literal city or a picture of the people of God, or both; the hope bodily and shared; no side | 15-21 | revelation/21.json `hard` | Repository, no side |
+| 1 Kings 6:20; Exodus 28:21 | 15-21 | BSB | BSB text |
+| No naos; God and the Lamb the temple; the Lamb the lamp (18:23); kings bring their glory; culture cleansed (Mouw's reading, in the ledger only) | 22-27 | revelation/21.json `words` (G3485), `christ`, `questions`; isaiah/60.json | Repository |
+| Nothing unclean (Isaiah 52:1); the Lamb's Book of Life | 22-27 | isaiah/verses/52.json; revelation/21.json `christ` | Repository |
+| Isaiah 60:19, 11, 3; 52:1 | 22-27 | BSB | BSB text |
+
+Cut before publishing: 2 Samuel 7:14 behind ‘he will be My son’ (no repository note makes the link); a reading of ‘the cowardly’ as those who denied Christ under pressure (narrowed to the word and its place beside ‘the one who overcomes’); ‘an ancient city shut its gates at night for fear of enemies’ (no repository source); a line that the list in verse 8 describes lives that go on without turning (replaced by the BSB's own ‘practices’ in 21:27 and 22:15).
+
+## The plain notes on Revelation 22 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last page returns to the first: garden, river, tree of life; the curse and the cherubim; the garden within a city | 1-5 | revelation/22.json `story`, `literary` | Repository |
+| Zōē; xulon and the cross (a link Revelation does not draw); katanathema and Genesis 3:17 | 1-5 | revelation/22.json `words` (G2222, G3586, G2652) | Repository |
+| One throne of God and the Lamb; healing of the nations; water as life | 1-5 | revelation/22.json `christ`, `cultural` | Repository |
+| Seeing God's face (Exodus 33:20); the barrier gone; the name on the forehead | 1-5 | revelation/22.json `cultural` | Repository |
+| Reigning restored, the rule given at creation | 1-5 | revelation/verses/20.json (6 `theology`) | Repository |
+| Genesis 2:9, 10; 3:24; Ezekiel 47:12; Zechariah 14:8; Psalm 46:4; Exodus 33:20 | 1-5 | BSB | BSB text |
+| The epilogue echoing the prologue (1:1, 3, 8); a collage of voices; ‘soon’ three times; two of the seven beatitudes here | 6-9 | revelation/22.json `literary` | Repository |
+| John stopped again from worshipping the angel (19:10) | 6-9 | revelation/19.json `doctrines` (god) | Repository |
+| Daniel 12:4 against 22:10 | 6-9 | revelation/intro.json `teaching` (kind) | Repository |
+| Do not seal; the time near; Alpha and Omega, First and Last, taken by Jesus (1:8; 21:6) | 10-15 | revelation/22.json `christ`, `literary` | Repository |
+| Washing robes (7:14); the right to the tree; ‘dogs’ an ancient insult for the shameless, those outside by their choice | 10-15 | revelation/22.json `doctrines` (salvation), `cultural` | Repository |
+| ‘Soon’: 2 Peter 3; the preterist answer; the character of the age; patience (2 Peter 3:8-9); held across the four readings; no date; Matthew 24:36 | 10-15 | revelation/22.json `hard`; revelation/intro.json `teaching` (not) | Repository, no side |
+| Isaiah 44:6 and Christ's ‘First and the Last’ | 10-15 | isaiah/44.json | Repository |
+| Isaiah 44:6; Genesis 3:24; 2 Peter 3:8, 9; Matthew 24:36 | 10-15 | BSB | BSB text |
+| ‘I, Jesus’ for the churches; Root and Offspring of David (Isaiah 11:1); the Morning Star, Venus (Numbers 24:17) | 16-17 | revelation/22.json `christ`, `cultural` | Repository |
+| Erchomai for his coming and the church's ‘Come’; the thirsty invited freely (Isaiah 55:1) | 16-17 | revelation/22.json `words` (G2064); isaiah/55.json | Repository |
+| Isaiah 55:1; 11:1; Numbers 24:17 | 16-17 | BSB | BSB text |
+| Hand copying; warnings against altering texts; Deuteronomy 4:2; 12:32; about this book, applied more widely by many | 18-21 | revelation/22.json `historical` | Repository |
+| Maranatha (1 Corinthians 16:22); the Didache, late first or early second century; the closing grace like a letter | 18-21 | revelation/22.json `historical`, `literary` | Repository |
+| 22:18-19 not a weapon against other Christians, their readings or a faithful translation | 18-21 | The task's rule; revelation/22.json `historical`; revelation/intro.json `teaching` (ways, millennium) | Repository |
+| Deuteronomy 4:2; 12:32 | 18-21 | BSB | BSB text |
+
+Cut before publishing: Amos 3:7, Proverbs 24:12 and Psalm 17:15 as Old Testament echoes (no repository note links them to this chapter); ‘Blessed is the one who keeps’ and ‘Blessed are those who wash their robes’ quoted only in part, as in chapters 14, 16, 19 and 20; a reading of 22:11 as fixing what people are becoming (narrowed to the plain words).

@@ -69,6 +69,12 @@ for (const [word, id] of Object.entries(matching.safety ?? {})) {
   if (!ids.has(id)) fail("matching.json", `safety word "${word}" names unknown topic "${id}"`);
   if (!Object.values(matching.rewrites).some((v) => v.split(/\s+/).includes(word))) fail("matching.json", `safety word "${word}" is added by no rewrite`);
 }
+for (const pair of matching.safetyPairs ?? []) {
+  const added = (w) => Object.values(matching.rewrites).some((v) => v.split(/\s+/).includes(w));
+  if (!pair.word || !Array.isArray(pair.with) || !pair.with.length || !pair.adds) fail("matching.json", "a safety pair needs a word, the words it must be said with, and the safety word it adds");
+  else if (!added(pair.word)) fail("matching.json", `safety pair word "${pair.word}" is added by no rewrite`);
+  else if (!(pair.adds in (matching.safety ?? {}))) fail("matching.json", `safety pair adds "${pair.adds}", which is not a safety word`);
+}
 for (const c of matching.concepts ?? []) {
   if (!c.name || !Array.isArray(c.words) || !c.words.length || !c.adds) fail("matching.json", `concept "${c.name ?? "?"}" needs a name, member words and the words it adds`);
 }
