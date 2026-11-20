@@ -7297,3 +7297,42 @@ No web search.
 | 112:3 not a promise of wealth; prosperity teaching named as not the psalm's | Repository deep note (hard) | Stated plainly |
 
 112:4 has an em-dash in the BSB and is quoted only before it.
+
+## The plain notes on Psalm 113 (2026-11-20)
+
+One web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| 113 to 118 the Hallel, sung at the feasts and probably at Passover | Book page ("The temple"); earlier ledger (Mark 14, Mishnah Pesachim 10) | Repository |
+| Mishnah (written down around AD 200): at Passover the Hallel begun before the meal, to 113:9 (Shammai) or 114:8 (Hillel), and completed over the fourth cup | Mishnah Pesachim 10:6-7 | Search: sefaria.org sheets on Pesachim 10; mishnah.org Pesachim 10:6. Schools not named on the page; "how much was fixed in Jesus' day is not certain" |
+| Matthew 26:30 "when they had sung a hymn": many think the end of the Hallel | Book page; earlier ledger (Mark 14) | Stated as "many think" |
+| The dump as the rubbish heap where outcasts sat; childlessness as grief and shame | Repository deep note (cultural); Luke 1 plain note | Site's own teaching |
+| 1 Samuel 2:5, 8; Luke 1:52; Philippians 2:8 | BSB | BSB text |
+| Care lines on childlessness, word for word from the Luke 1 and Genesis 25 plain notes ("Many faithful people long for children ... a counsellor.") | Luke 1 and Genesis 25 plain notes | Copied exactly |
+
+## The plain notes on Psalm 114 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sea, Jordan, Sinai, rock: Exodus 14:21-22; Joshua 3:16; Exodus 19:18; Exodus 17:6 | Repository deep note (historical); BSB | BSB text |
+| Foreign tongue the Egyptians; flint the hardest desert stone | Repository deep note (cultural) | Site's own teaching |
+| Sung before the Passover meal by some (Hillel's school) | Mishnah Pesachim 10:6 (row above) | Search (Psalm 113 row) |
+| Habakkuk 3:10; Mark 4:41; 1 Corinthians 10:4 | BSB | BSB text |
+
+Cut: Ugarit's Prince Sea and Judge River (not re-searched for this psalm); 114 and 115 joined in the Greek (the book page already says so).
+
+## The plain notes on Psalm 115 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The taunt in Psalm 79:10; after the exile (many scholars) | 1-8 | Repository deep note (historical); BSB | Stated as "many scholars" |
+| Images made with care, rites to make the god dwell, fed, clothed, washed | 1-8 | Repository deep note (cultural); earlier ledger on mouth-opening rites, if any, not relied on | Stated generally, no rite named |
+| Isaiah 44:9; Jeremiah 10:5; Acts 17:29; Colossians 3:5; 1 John 5:21; 1 Corinthians 15:20 | all | BSB | BSB text |
+| Three calls as a temple liturgy; "those who fear the LORD" as all Israel or as Gentile worshippers | 9-18 | Repository deep note (historical) | Stated as two readings |
+| 115:4-8 repeated in 135:15-18 | 9-18 | BSB | BSB text compared |
+| 115:17 and Sheol; pointer to the book page | 9-18 | Book page ("Sheol") | Repository |
