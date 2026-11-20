@@ -8468,3 +8468,23 @@ One search (Livy's fable of the body). Scripture is the BSB in the repository, m
 | Numbers 11:16-17, 25 | 27-31 | BSB | BSB text |
 
 Cut: the priestess at Delphi and the cults of Dionysus (deep note; not checked); Stoic writers on the body (not checked); "ship's pilot" as the meaning of kybernēsis itself (narrowed to "related to").
+
+## The plain notes on 1 Corinthians 13 (2026-11-20)
+
+One search (ancient mirrors; Corinthian bronze). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The chapter set between chapters on gifts in a quarrelling church; read at weddings | 1-3 | BSB context | Repository |
+| Gong and cymbal loud bronze instruments | 1-3 | Deep note `cultural` | Stated generally; cults of Cybele and Dionysus not used |
+| 13:3 ‘boast’ (NA28, NA27, Westcott and Hort) or ‘be burned’ (other editions); one letter apart; BSB follows the first | 1-3 | Repository Greek (edition tags at 13:3); deep note `historical` | Script |
+| Deuteronomy 6:5; Leviticus 19:18; Mark 12:30-31; Micah 6:8; Matthew 17:20 | 1-3 | BSB | BSB text |
+| Physioō at 13:4 (also 4:6, 18; 5:2; 8:1); aschēmoneō at 13:5 and 7:36; makrothymeō; logizomai | 4-7 | Repository Greek (13:4-5; 7:36); chapter 4 ledger row | Script |
+| Exodus 34:6; Proverbs 10:12; 24:11; Isaiah 1:17; Psalm 103:12; Romans 13:4 | 4-7 | BSB | BSB text |
+| Not a command to stay silent about abuse or keep no record of harm; Genesis 16 safety lines word for word; Find Help | 4-7 | Genesis 16 plain note | Repository |
+| Mirrors polished metal, usually bronze, dim image | 8-13 | Encyclopedia of the Bible "Mirror" (biblegateway.com); hypr.bible realia | Search. Corinth's fame for bronze or mirrors not used (no ancient source found) |
+| Ainigma a riddle; may recall Numbers 12:8 | 8-13 | Repository Greek (13:12); deep note `cultural` | Script; "may" |
+| ‘The perfect’: completed New Testament (some cessationists); Christ's return (most, all continuationists); maturity; after death | 8-13 | Deep note `words`; Acts 2 plain note | Stated as views |
+| Exodus 33:11; Numbers 12:8; Psalm 17:15; Jeremiah 31:3 | 8-13 | BSB | BSB text |
+
+Cut: Plato's Symposium and the claim that agapē was rare in classical Greek (deep note; not checked); Corinthian bronze as famous; Cybele and Dionysus.
