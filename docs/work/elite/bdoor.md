@@ -7205,3 +7205,128 @@ listing), not an official survey. The run report commit was followed by the cont
 
 Hebrews: its book page (author unknown; the old covenant and the Jewish people with the greatest
 care; the warning passages), then chapters 1 to 13.
+
+## Hebrews: the book page and every chapter (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". Philemon was
+finished; this run did Hebrews, the book page and chapters 1 to 13, one commit each with its ledger
+rows.
+
+### The book page
+
+**Hebrews** (`/study/bible/hebrews`). Data only, `teaching` appended to its intro. Thirteen parts: in a
+minute; Who wrote it: no one knows (what the letter shows; P46; Clement of Alexandria via Eusebius;
+Origen in the intro's own paraphrase, not quoted; Tertullian and Barnabas; Luther and Apollos; Harnack
+and Priscilla; Luke, Silas, Clement of Rome; each a suggestion, no side); Who it was written to, and
+when (what the letter shows; ‘Those from Italy’ read two ways; the pre-70 and post-70 cases, no side);
+How it is built; The Son: truly God and truly man (Nicene Creed and Chalcedon from the repository's
+creed texts, as confession; ‘learned obedience’ and ‘made perfect’); A priest like Melchizedek
+(Genesis' silence, the other readings named); The old covenant and the Jewish people (a Jew writing
+from inside Israel's Scriptures; the law, tabernacle and priesthood God's gifts; 8:13 and 10:9 about a
+covenant arrangement; Romans 11:1 and 11:28-29; the views on Israel's place as the Romans 11 note
+states them, no side; the misuse named and rejected, with the Acts 2:22-28 pointer); The warning
+passages (Reformed and Baptist; Wesleyan, Arminian and Catholic; no side; the Romans 8:31-39 note and
+the Honest Answer; the Galatians 5 care line); Faith that looks ahead (flaws shown; faith does not
+guarantee rescue; prosperity teaching named an error); Hebrews and the Old Testament (the Greek Old
+Testament differences); The big themes; What the letter is not; How to read. 14 hard passages, 12 key
+words, 11 timeline entries, 8 Go deeper links. 4,380 words in the parts.
+
+**The map.** The map band cannot be dropped without a code change, and the validator needs a place, so
+the map carries only Italy, as 13:24 states it: a region placed roughly on the "mediterranean" frame,
+near the drawing's own ITALY label, with a map note that the letter does not say where it was written
+from or to and that the map does not guess.
+
+**Code.** None in the app. `teaching.test.tsx`: Hebrews added to the list of books with a teaching page,
+and one frame line.
+
+### The chapters in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Hebrews 1 | 4 (1-4, 5-6, 7-9, 10-14: the seven quotations split so each Old Testament note fits) | 3,933 |
+| Hebrews 2 | 4 | 3,393 |
+| Hebrews 3 | 4 | 2,709 |
+| Hebrews 4 | 4 | 2,605 |
+| Hebrews 5 | 4 | 2,502 |
+| Hebrews 6 | 4 | 2,707 |
+| Hebrews 7 | 4 | 3,235 |
+| Hebrews 8 | 2 (1-6, 7-13) | 2,041 |
+| Hebrews 9 | 4 | 3,261 |
+| Hebrews 10 | 6 | 4,366 |
+| Hebrews 11 | 6 | 4,037 |
+| Hebrews 12 | 5 | 3,659 |
+| Hebrews 13 | 5 | 3,305 |
+| **Total** | **56** | **41,753** |
+
+Each chapter note gained only `"plain": true`. The Old Testament notes quote each passage Hebrews
+quotes from the BSB, say what it meant in its own setting, and say where Hebrews follows the Greek:
+Psalm 104:4, Psalm 102:25-27, Deuteronomy 32:43 (the BSB follows the longer form), Psalm 8:5, Psalm
+95:8-10 (Massah and Meribah; the forty years) and its heading, Genesis 2:2, Jeremiah 31:32 (‘a
+husband to them’ and ‘I disregarded them’), Psalm 40:6 (‘a body’), Deuteronomy 32:35-36, Habakkuk
+2:3-4, Genesis 5:24, Genesis 47:31 (‘bed’ and ‘staff’ from the same consonants, checked in the
+lexicon), Proverbs 3:12, Haggai 2:6.
+
+The misuse of the letter against Jews and Judaism is named and rejected with the Acts 2:22-28 pointer
+on the book page and at 3:1-6, 7:11-19, 8:7-13, 9:1-10, 10:1-4, 12:18-24 and 13:10-16. The warning
+passages (2:1-4, 3:12-15, 6:4-8, 10:26-31, 12:12-17, 12:25-29) set out the readings without a side and
+carry the Galatians 5 care line word for word. Christ's deity and humanity are stated in the creeds'
+words at 1:1-4, 1:5-6, 1:7-9, 2:5-9, 2:10-13, 4:14-16, 5:7-10 and 7:20-28. Other care lines, all from
+existing notes, no phone numbers, Find Help named: grief and self-harm (2 Timothy 4) at 2:14-18; grief
+(2 Timothy 1) at 9:23-28; tears (Psalm 143) at 5:7-10; giving (1 Timothy 6) at 7:4-10; controlling
+leaders (2 Corinthians 11) at 10:19-25 and 13:7-9; danger (1 Thessalonians 3) at 10:32-39; harming a
+child (Genesis 22) at 11:17-22; prayers for rescue (Acts 12) at 11:32-40; sickness and faith (2
+Corinthians 12), child abuse (Colossians 3) and ‘Father’ (Romans 8) at 12:4-11; abuse in marriage (1
+Corinthians 7) and money (1 Timothy 6) at 13:1-6; leaders (1 Timothy 3) and the police (1 Timothy 5)
+at 13:17-19.
+
+### Sources
+
+All in `bdoor-ledger.md`. No web searches: the Hebrews deep notes and verse notes (1 to 10; 11 to 13
+have none), the intro, other plain notes (Psalms, Genesis, Romans, Acts, the Pastorals), the doctrine
+studies (atonement, law), the wisdom topics (suffering, chronic pain, submitting to leaders), the
+Honest Answers, the creed texts and the lexicon.
+
+### Cut or narrowed
+
+Cut: ‘Salem is close to shalom’ (the text's own gloss kept); ‘felt temptation's pull more’; ‘the sin
+like a long robe’; the people waiting outside on the Day of Atonement; ‘a promise that piles up
+negatives’ (13:5); ‘the only time Hebrews names the resurrection’; ‘the most shameful death’ (the
+Philippians page's wording used); ‘mature believers who could not read’; Westminster, Seventh Day
+Baptists, Schreiner and Caneday, Lane, Westcott, Owen, Philo, 11QMelchizedek, Sirach and 1 Maccabees
+by name; the Free Grace reading (length). Narrowed: Harnack to the intro's words; ‘the eternal Spirit’
+to most and some; the Greek of Psalm 102, Genesis 5:24 and Haggai 2:6 to ‘the writer usually follows
+the Greek’; ‘most hold’ on the law to many and others; the altar of 13:10 to ‘most likely’. Kept after
+checking: Hebrews alone quotes Psalm 110:4 (a scan of the BSB finds Melchizedek in no other New
+Testament book).
+
+### What was run, and what passed (watched)
+
+After each chapter: validate-bible-notes, the strict quotation check (0 problems), the search-index
+and passage-index checks and no-emdash, exit 0; every passage printed field by field under its
+heading. After chapter 6: all 46 content-gate commands, `pnpm check` and `pnpm test` (162 files, 1,888
+tests), exit 0. After merging the latest branch: all 46 content-gate commands exit 0 (417 chapters in
+plain words; search index 899 entries; passage index 653 files; verify-sources 22 texts); `pnpm check`
+exit 0; `pnpm test` exit 0 (162 files passed, 7 skipped; 1,890 tests passed, 73 skipped); `pnpm
+build`, `pnpm run sitemap`, `pnpm run prerender` (3,125 pages), `pnpm run audit:canonicals` exit 0.
+The same commands were run again after this report's commit.
+
+Served with `scripts/serve-like-vercel.mjs` on 4603, Playwright at 390, /api stubbed: all 13 chapters'
+passage headings and the start of every field matched the data (56 passages, 270 fields), no sideways
+scroll, no console errors. The book page at 390 and 1440: 13 of 13 parts, 11 of 11 timeline entries,
+the "mediterranean" frame, the map note, no sideways scroll, no errors. Looked at:
+`/home/user/elite-shots/bdoor/hebrews-book-390.png`, `hebrews-book-1440.png`, `hebrews-map-390.png`,
+`hebrews-map-1440.png`, `hebrews6-390-top.png`, `hebrews6-390-last.png`, `hebrews8-390-top.png`,
+`hebrews8-390-last.png`. Lighthouse (the ci.yml form, three runs, CHROME_PATH Playwright's Chromium),
+median: `/study/bible/hebrews` performance 90, accessibility 100, best practices 96, SEO 100, CLS
+0.000. Server stopped by PID, dist/ and lh-*.json deleted.
+
+### Not done or not verified
+
+The Greek Old Testament's own wording was not read; differences are stated from the repository's
+notes, the lexicon and the BSB, and where no note states the Greek reading the text says only that
+Hebrews' wording differs and that the writer usually follows the Greek. Hebrews 11 to 13 have no verse
+notes, so those chapters rest on the chapter deep notes and other notes.
+
+### Next
+
+Hebrews is complete. James: its book page, then chapters 1 to 5.

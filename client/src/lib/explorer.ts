@@ -369,6 +369,10 @@ export interface Trip {
   steps: TravelStep[];
   /** Show the whole frame, not a view cropped to this part's places (Abraham's first part). */
   whole?: boolean;
+  /** Abraham's road: a part that stays inside Canaan is drawn on the Genesis book page's close-up ("canaan") frame. */
+  frame?: "canaan";
+  /** Points ([latitude, longitude]) the cropped view also takes in, so a coast or gulf at its edge is shown whole rather than cut to a stray shape. */
+  reach?: [number, number][];
 }
 
 export interface TravelChurch {
@@ -415,6 +419,8 @@ export interface AbrahamsRoad {
   routeNote: string;
   /** The map's own name for a place, where the book page's name is not the one Genesis uses here (Goshen drawn for Egypt). */
   names?: Record<string, string>;
+  /** Lines the place names keep off ([latitude, longitude] points): the coast, the Jordan and the Dead Sea as the frame draws them. */
+  avoid?: [number, number][][];
   parts: Trip[];
 }
 
