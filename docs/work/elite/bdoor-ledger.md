@@ -12736,3 +12736,25 @@ Cut before publishing: a single-quoted ‘we will hear’ (not the BSB's wording
 | Genesis 2:12; 3:24; Revelation 1:20; John 8:12 (a link of theme) | 31-40 | BSB; exodus/25.json `christ` | BSB text |
 
 Cut before publishing: ‘the tent had no windows’ (no source). Narrowed: ‘one loaf for each tribe’ and ‘the bread stood for the twelve tribes’ became twelve loaves, the number of the tribes, set out on behalf of the people (Leviticus 24:8 says no more).
+
+## The plain notes on Exodus 26 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Royal colors; cherubim as in a heavenly throne room, as at Eden | 1-14 | exodus/26.json `cultural` | Repository |
+| Goat hair as ordinary tent cloth; plain outside, splendid within | 1-14 | exodus/26.json `cultural` | Repository |
+| ‘A unit’; the idiom a woman to her sister | 1-14 | exodus/26.json `literary` | Repository |
+| 2 Samuel 7:6; Ezekiel 10:1; John 1:14 | 1-14 | BSB; exodus/26.json `christ` | BSB text |
+| About 30 by 10 cubits; instructions not a blueprint; frames solid or open; roof debated | 15-30 | exodus/26.json `historical`, `words` (H7175) | Repository |
+| Bronze, silver, gold inward; entrance east | 15-30 | exodus/26.json `cultural` | Repository |
+| Ezekiel 8:16 and a contrast with sun worship | 15-30 | exodus/26.json `cultural` | Repository |
+| Wellhausen (late nineteenth century); critical view; Ramesses II's Kadesh reliefs; Hetepheres' frame at Giza; differences from the temple; Shiloh and 2 Samuel 7:6 | 15-30 | exodus/26.json `hard`, `historical` | Repository; no side |
+| 1 Kings 6:20; Joshua 18:1 | 15-30 | BSB | BSB text |
+| The Most Holy Place as a cube in most reconstructions | 31-37 | exodus/26.json `historical` | Repository |
+| Paroket; it hid the ark and shielded the priests; once a year on the Day of Atonement | 31-37 | exodus/26.json `words` (H6532), `story` | Repository |
+| Leviticus 16:2; Hebrews 9:8; 10:20; Mark 15:38 | 31-37 | BSB; exodus/26.json `christ` | BSB text |
+| A shadow is real; God truly met his people | 31-37 | hebrews/plain/8.json (1-6 `hard`) | Repository |
+
+Cut before publishing: nothing beyond the wording of the idiom (single quotation marks removed, since it is not the BSB's wording).
