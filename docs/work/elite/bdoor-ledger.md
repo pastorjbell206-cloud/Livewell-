@@ -8262,3 +8262,32 @@ No new search. Scripture is the BSB in the repository.
 | Deuteronomy 17:7; 13:5; 19:19; 22:21; 24:7 (refrain); John 17:15; Matthew 9:12; 2 Thessalonians 3:15 | 9-13 | BSB | BSB text |
 
 Cut: any claim about Roman law on stepmothers beyond Paul's own words (not checked).
+
+## The plain notes on 1 Corinthians 6 (2026-11-20)
+
+Four searches (Roman courts and status; the BSB wording at 6:9; arsenokoitai and Leviticus; prostitution in the Roman world). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Civil cases under Roman law in a colony; wealth and rank carried large advantages; hard for a person of low standing to sue a superior and win; litigation a contest for honour; the litigants most likely of some means | 1-8 | Scholarship on Roman courts and 1 Corinthians 6 | Search: heurist.huma-num.fr (Judaism and Rome, citing Garnsey 1970); biblicalelearning.org (Meadors); resolve.cambridge.org (NTS, "Rich and poor in the courts of Corinth"); readingacts.com. No scholar named on the page |
+| Jewish communities among Gentiles settled disputes among themselves | 1-8 | Deep note `historical` | Repository; stated generally |
+| Daniel 7:22; Deuteronomy 1:16; Proverbs 25:8; Matthew 5:25, 40 | 1-8 | BSB | BSB text |
+| Not a rule against reporting crime; abuse and crimes to the police (Romans 13:4); Paul's appeal (Acts 25:11) and citizenship (Acts 22:25); mediation | 1-8 | Matthew 18 plain note line; BSB | Repository; BSB text |
+| ‘Wicked’ (verse 9) and ‘unrighteous’ (verse 1) the same word, adikoi | 9-11 | Repository Greek (G0094 at 6:1 and 6:9) | Script |
+| Vice lists a common form | 9-11 | Romans 1 plain note | Repository |
+| Malakoi ‘soft ones’, used of fine clothing (Matthew 11:8; also Luke 7:25); of men thought unmanly, often the passive partner | 9-11 | Repository Greek (G3120 at Matthew 11:8, Luke 7:25, 1 Corinthians 6:9); deep note `hard` | Script; repository |
+| Arsenokoitai only here and 1 Timothy 1:10; no clear earlier use known; ‘male’ and ‘bed’; many scholars think it formed from the Greek of Leviticus 18:22 and 20:13 | 9-11 | Repository Greek (G0733); scholarship | Search: bibleodyssey.org "Illicit Sex: Word Study"; baptistnews.com; tidsskrift.dk (Instone-Brewer, HIPHIL Novum 2020). Stated as "many scholars think" |
+| BSB ‘men who submit to or perform homosexual acts’ renders the two words together; ‘submit to’ and ‘perform’ for passive and active | 9-11 | BSB text | Search: biblestudytools.com BSB 6:9; tips.translation.bible. The BSB footnote's wording was not found and is not quoted |
+| Historic and majority reading; the exploitative-practices reading; the reply; no side | 9-11 | Romans 1 plain note form; deep note `hard` | Repository |
+| Care line for gay readers and those who love them | 9-11 | Romans 1 plain note, word for word | Repository |
+| Leviticus 18:22; 20:13; 19:35-36; Ezekiel 36:25; Isaiah 1:18; Titus 3:5 | 9-11 | BSB | BSB text |
+| 6:12-13 printed in quotation marks in the BSB; a translator's judgment; slogan perhaps a twist of Paul's teaching on freedom; the body a shell | 12-14 | BSB text; deep note `cultural` | Repository |
+| Genesis 2:7; Psalm 139:14; Mark 7:18-21; Galatians 5:13 | 12-14 | BSB | BSB text |
+| Prostitution legal and widespread in the Roman world; not counted a disgrace for men in moderation; many prostitutes slaves put to it by owners | 15-20 | Popular and reference histories | Search: historyhit.com; Wikipedia "Prostitution in ancient Rome" (mirror); brewminate.com. Stated generally; Caligula's tax not used |
+| Strabo's thousand temple prostitutes: the older city, doubted | 15-20 | Book page ledger | Ledger |
+| Bought at a price: the slave market | 15-20 | Deep note `cultural`, `words` | Repository |
+| 6:19 ‘your’ plural, ‘body’ singular | 15-20 | Repository Greek (to sōma hymōn) | Script |
+| Genesis 2:24; 39:12; Proverbs 5:5; Exodus 15:13; Isaiah 43:1; 1 Peter 1:19 | 15-20 | BSB | BSB text |
+| Trafficking care line | 15-20 | Genesis 37 plain note, word for word with one sentence added | Repository |
+
+Cut: banquets ending in prostitution (deep note; not confirmed); Caligula's tax.
