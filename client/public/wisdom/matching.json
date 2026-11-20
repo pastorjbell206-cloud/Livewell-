@@ -1365,13 +1365,23 @@
     "passed over",
     "passed over for promotion",
     "office politics",
-    "boss humiliated me"
+    "boss humiliated me",
+    "my manager yells at me",
+    "coworker is undermining me",
+    "boss plays favorites",
+    "team is at war",
+    "colleague spreads rumors about me",
+    "hostile work environment",
+    "manager blames me for everything",
+    "cant stand my coworker"
    ],
    "not": [],
    "related": [
     "envy-and-comparison",
     "anger",
-    "work-and-burnout"
+    "work-and-burnout",
+    "conflict-with-others",
+    "gossip-and-the-tongue"
    ]
   },
   "envy-and-comparison": {
