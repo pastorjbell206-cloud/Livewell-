@@ -12359,3 +12359,37 @@ Cut before publishing: Isaiah 19:25 (its wording would bring ‘Blessed’ into 
 | Exodus 7:3-4; Romans 9:18; 11:33 | 9-10 | BSB | BSB text |
 
 Cut before publishing: the identification of particular Egyptian princes with the firstborn (speculation, per the note).
+
+## The plain notes on Exodus 12 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Protection now through a lamb and a meal; earlier exemptions without an act | 1-13 | exodus/12.json `story` | Repository |
+| Abib, Nisan; the year beginning with redemption; the full moon | 1-13 | exodus/12.json `historical` | Repository |
+| Seh covers sheep and goats; the best of the flock; kept four days, roasted whole, nothing left | 1-13 | exodus/12.json `cultural` | Repository |
+| Leaven; bitter herbs (m. Pesachim 2:6) and the root of 1:14 | 1-13 | exodus/12.json `cultural` | Repository |
+| Pesach and pasach; the blood protects because God promised to see it | 1-13 | exodus/12.json `words`, `hard` | Repository |
+| Origins (Rost's shepherds' rite, 1943, unnamed; Segal) and meanings (substitution; protective covenant meal; the Mekhilta); no side | 1-13 | exodus/12.json `hard` | Repository; no side |
+| Joshua 5:10; John 1:29; 1 Corinthians 5:7; 1 Peter 1:19; Leviticus 17:11 | 1-13 | BSB; exodus/12.json `christ` | BSB text |
+| The search for leaven by lamplight (m. Pesachim 1:1); the feast for foreigner and native | 14-20 | exodus/12.json `cultural` | Repository |
+| AD 70 and the Seder (m. Pesachim 10); four cups; the bone; the Samaritans on Gerizim | 14-20 | exodus/12.json `cultural` | Repository |
+| Deuteronomy 16:3; 1 Corinthians 5:7-8 | 14-20 | BSB | BSB text |
+| Hyssop (Origanum syriacum); mezuzah; ‘the destroyer’ under God's command | 21-28 | exodus/12.json `cultural`, `hard` | Repository |
+| Four questions in the Torah and the Haggadah's four sons; avodah as ‘service’; obedience framing the night (28, 50) | 21-28 | exodus/12.json `literary` | Repository |
+| Deuteronomy 6:20; Exodus 13:8; Psalm 51:7; John 19:29 | 21-28 | BSB | BSB text |
+| The great cry the same noun as 3:7; ‘bless me also’; the dough in kneading bowls | 29-36 | exodus/12.json `literary`; BSB | Repository |
+| No Egyptian text; Finkelstein and Silberman, Hoffmeier (views, unnamed) | 29-36 | exodus/12.json `historical` | Repository; no side |
+| The firstborn: crime, Egypt's gods and god-king (12:12), Israel spared under blood and redeemed, Deuteronomy 32:39, God gives his Son; the Talmud's angels; the spilled wine | 29-36 | exodus/12.json `hard` | Repository |
+| The care line ‘If you have lost a child, or carry a grief like hers ...’ and the Find Help sentence | 29-36 | john/plain/19.json (23-27 `hard`), word for word | Repository |
+| Psalm 105:36; Hebrews 11:28; Romans 8:32 | 29-36 | BSB | BSB text |
+| Rameses as Pi-Ramesses; an updated name on the early date; Succoth in the Wadi Tumilat | 37-42 | exodus/12.json `historical` | Repository |
+| Shimmurim, God's vigil and Israel's; ‘the LORD's divisions’ | 37-42 | exodus/12.json `literary` | Repository |
+| 430 years: Masoretic, Septuagint and Samaritan readings; about 215; Galatians 3:17; Genesis 15:13 | 37-42 | exodus/12.json `text` | Repository |
+| 600,000: as written (Numbers 1:46; 26:51), or elef as clan or unit (Judges 6:15; Mendenhall 1958; Humphreys 1998); each reading's difficulty; doubts of scale; no side | 37-42 | exodus/12.json `historical`; exodus/intro.json `date`, `reading` | Repository; no side |
+| Numbers 1:46; Galatians 3:17; Acts 7:6; Genesis 12:3 | 37-42 | BSB | BSB text |
+| Who may eat; one law for native and foreigner | 43-51 | BSB | BSB text |
+| John 19:36 drawing on 12:46, Numbers 9:12 and Psalm 34:20; Revelation 5:9 and the foreigners of verse 48 | 43-51 | exodus/12.json `christ`; BSB | Repository |
+
+Cut before publishing: Josephus's count of lambs; Petrie by name (only Mendenhall and Humphreys are dated in the note); the Elephantine papyrus (on the book page); Rashi's question about where the Torah begins; the reading of Genesis 12:3 with ‘blessed’ (quoted only in part).
