@@ -434,6 +434,13 @@
           "blurb": "The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe. Find Help (/help) is at the top of the page and at its end.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "does-religion-poison-everything",
+          "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+          "blurb": "The New Atheists' charge and Paine's, the French wars of religion and the Thirty Years' War, what those wars were also about, Paine's own witness to the revolutionary tribunals, and idolatry under any banner.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1368,6 +1375,26 @@
       "slug": "abuse-and-cover-up",
       "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
       "live": false
+    },
+    {
+      "claim": "Religion poisons everything, and its crimes, unlike those of atheist regimes, are committed in the name of God",
+      "proponent": "Christopher Hitchens",
+      "work": "God Is Not Great: How Religion Poisons Everything",
+      "year": 2007,
+      "area": "morality",
+      "slug": "does-religion-poison-everything",
+      "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+      "live": false
+    },
+    {
+      "claim": "The persecutions and religious wars that laid Europe in blood and ashes came from belief in revelation itself",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795,
+      "area": "morality",
+      "slug": "does-religion-poison-everything",
+      "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+      "live": false
     }
   ],
   "answers": {
@@ -1383,6 +1410,7 @@
     "are-miracles-believable": "Are miracles believable?",
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "why-didnt-the-bible-just-ban-slavery": "Why didn't the Bible just ban slavery?",
+    "what-did-the-new-atheists-get-right": "What did the New Atheists get right?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
     "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"

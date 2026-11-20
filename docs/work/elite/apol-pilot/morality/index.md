@@ -20,6 +20,7 @@ Pages on morality itself and on sexuality, which the plan also places in this ar
 2. **Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?** Paine's charge, Augustine's turn and Aquinas's argument for death, the Spanish Inquisition and the *conversos*, the Protestant executions in Zurich and Geneva, the early church's refusal of force, and the case for liberty made from inside the faith.
 3. **Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?** Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Baptists' founding in 1845 and their apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.
 4. **Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?** The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe. Find Help (/help) is at the top of the page and at its end.
+5. **Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?** The New Atheists' charge and Paine's, the French wars of religion and the Thirty Years' War, what those wars were also about, Paine's own witness to the revolutionary tribunals, and idolatry under any banner.
 
 ## Words these pages use
 
@@ -29,6 +30,7 @@ Pages on morality itself and on sexuality, which the plan also places in this ar
 - **Inquisition**: a church tribunal for finding and judging heresy; the Spanish Inquisition, founded in 1478 under the crown, was abolished in 1834.
 - **Converso**: a Jew, or a descendant of Jews, baptized in medieval Spain, often under pressure.
 - **Donatists**: a North African church that broke with the catholic bishops after the persecution under Diocletian, and was suppressed by imperial law from 405.
+- **Wars of religion**: the wars fought in Europe between Catholics and Protestants after the Reformation, among them the French civil wars of 1562 to 1598 and the Thirty Years' War of 1618 to 1648.
 - **Christian nationalism**: the error of making the cross the badge of a people's power, so that its enemies are treated as God's enemies and devotion is measured by willingness to fight.
 
 ## Where else to look
