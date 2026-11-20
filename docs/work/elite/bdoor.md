@@ -7759,13 +7759,13 @@ Counted by script over each passage's title and five prose fields.
 | Exodus 12 | 6 | 4,133 |
 | Exodus 13 | 5 | 2,013 |
 | Exodus 14 | 5 | 2,388 |
-| Exodus 15 | 5 | 2,045 |
+| Exodus 15 | 5 | 2,044 |
 | Exodus 16 | 5 | 2,472 |
 | Exodus 17 | 4 | 1,770 |
 | Exodus 18 | 5 | 2,098 |
 | Exodus 19 | 6 | 2,277 |
-| Exodus 20 | 6 | 3,182 |
-| **Total** | **96** | **47,042** |
+| Exodus 20 | 6 | 3,176 |
+| **Total** | **96** | **48,035** |
 
 ### The hard places, and how they are stated
 
