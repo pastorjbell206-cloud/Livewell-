@@ -9086,3 +9086,31 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Ezekiel 36:27; Jeremiah 31:33; Genesis 4:7 | 16-21 | BSB | BSB text |
 | Fruit singular, one harvest; stoicheō keeping in line | 22-26 | Deep note `literary`; standard lexicons | Repository |
 | Psalm 1:3; Isaiah 32:15, 17; Exodus 34:6 | 22-26 | BSB | BSB text |
+
+## The plain notes on Galatians 6 (2026-11-20)
+
+No new searches (the 6:16 search for the book page is reused). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Katartizō used of setting bones and mending nets | 1-5 | Earlier ledger (2 Corinthians 13: Mark 1:19); standard lexicons | Ledger |
+| ‘Law of Christ’ the way of love Christ taught and lived (5:14) | 1-5 | Deep note; standard | Repository |
+| Baros (burden) and phortion (load) | 1-5 | Greek text in the repository (6:2, 6:5) | Read from the chapter file |
+| Restoring a person not the same as restoring trust; crimes reported; pointer to the 1 Corinthians 5:1-5 note; care line (talk with someone outside the situation; Find Help) | 1-5 | 1-corinthians/plain/5.json | Repository wording, no phone number |
+| Leviticus 19:17; 2 Samuel 12:13; Psalm 68:19 | 1-5 | BSB | BSB text |
+| Support for teachers (1 Corinthians 9:14); sowing and reaping; households provided for their own | 6-10 | Deep note `cultural`; BSB | Repository |
+| Prosperity teaching named as an error, no one named; Job 42:7; care line (pressure to give; not financial advice; Find Help) in the 2 Corinthians 9:6-11 form | 6-10 | 2-corinthians/plain/9.json | Repository wording |
+| Proverbs 22:8; Hosea 8:7; Proverbs 11:25; Deuteronomy 25:4; 1 Corinthians 9:9 | 6-10 | BSB | BSB text |
+| Large letters, reasons unknown; scribe and closing in Paul's hand | 11-16 | Deep note `historical` | Repository |
+| Kanōn a measuring line, a standard | 11-16 | Standard lexicons | Standard |
+| 6:16 three readings; kai "even" (BSB) or "and" (many other English Bibles); Romans 11:26; pointer to the Romans 9 to 11 notes; no contempt for Jews | 11-16 | Deep note `hard`; book page search (bible-researcher.com; tips.translation.bible; preceptaustin.org) | Stated as readings, no side; no scholar named |
+| Psalm 125:5; 128:6; Isaiah 54:10; 65:17; Jeremiah 9:24 | 11-16 | BSB | BSB text |
+| Stigmata used for brands on slaves, sometimes soldiers and devotees; Lystra (Acts 14:19); 2 Corinthians 11:24-25 | 17-18 | Deep note `cultural`, `historical` | Repository |
+| ‘Brothers’ the last word before ‘Amen’ | 17-18 | BSB 6:18 | BSB text |
+| Isaiah 44:5; Numbers 6:24-25 | 17-18 | BSB | BSB text |
+
+Cut: "only here does Paul end a letter with ‘brothers’" (not checked).
+
+## Galatians complete (2026-11-20)
+
+All six chapters in plain words. Galatians searches: 7 for the book page, 1 for chapter 5.
