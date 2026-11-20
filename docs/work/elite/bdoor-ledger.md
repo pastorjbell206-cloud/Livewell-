@@ -12624,3 +12624,32 @@ Cut before publishing: the Genesis 19 care line (its wording speaks of ‘this s
 | Mark 10:45 and the ransom | 28-36 | exodus/21.json `christ` | Repository |
 
 Cut before publishing: ‘in much of the ancient world a master who killed his slave answered to no one’ (no source in the repository); a guess that the pierced ear stopped later claims of forced service; ‘on every view these laws are not a code for any nation’ (theonomists hold otherwise).
+
+## The plain notes on Exodus 22 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A farming and herding economy; no banks, insurers or police | 1-4, 5-15 | exodus/22.json `historical` | Repository |
+| Restitution as the aim; Hammurabi up to thirtyfold and death for a thief who could not pay; Israel's thief sold, not executed | 1-4 | exodus/22.json `historical`, `doctrines` | Repository |
+| The burglar at night unseen and possibly armed; after sunrise bloodshed | 1-4 | exodus/22.json `cultural` | Repository |
+| Luke 19:8; Ephesians 4:28 | 1-4 | BSB | BSB text |
+| Degrees of responsibility; elohim taken by the BSB as the judges; the oath; the torn carcass as proof; Amos 3:12 | 5-15 | exodus/22.json `literary`, `cultural` | Repository |
+| The bride-price (mohar); the man must pay and marry if the father agrees | 16-17 | exodus/22.json `cultural` | Repository |
+| The care line ‘A word for anyone who has been sexually assaulted ...’ | 16-17 | 1-thessalonians/plain/4.json, word for word | Repository |
+| 1 Thessalonians 4:4, 6; 1 Corinthians 6:18 | 16-17 | BSB | BSB text |
+| The change of voice at verse 18; God speaking in the first person | 18-20, 21-27 | exodus/22.json `literary`, `story` | Repository |
+| Sorcery as treason against the covenant King, beside verse 20 | 18-20 | exodus/22.json `hard` | Repository |
+| Herem, devoted wholly to God, often for destruction | 18-20 | joshua and deuteronomy deep notes on the ban (herem), found by search of the repository | Repository |
+| Witch trials in early modern Europe and colonial America, Salem 1692, mostly women, many innocent; the law's own safeguards; civil penalties not carried over (moral, ceremonial, civil); repentance at Ephesus | 18-20 | exodus/22.json `hard` | Repository |
+| Deuteronomy 18:10; Galatians 5:20; Acts 19:19 | 18-20 | BSB | BSB text |
+| The ger; memory turned into duty; measure for measure in verse 24; God defends the weak even against his own people | 21-27 | exodus/22.json `words` (H1616), `literary`, `doctrines` | Repository |
+| Interest normal in the ancient world; neshek forbidden to the poor | 21-27 | exodus/22.json `historical`, `words` (H5392) | Repository |
+| The cloak as blanket; the Mesad Hashavyahu letter, late seventh century BC | 21-27 | exodus/22.json `historical`, `cultural` | Repository |
+| Channun and 34:6 | 21-27 | exodus/22.json `words` (H2587) | Repository |
+| Leviticus 19:34; Deuteronomy 10:18; Matthew 25:35; Luke 6:35; James 1:27 | 21-27 | BSB; exodus/22.json `christ` | BSB text |
+| Firstborn redeemed (13:13); holiness from altar to table | 28-31 | exodus/22.json `christ`, `doctrines` | Repository |
+| Acts 23:5; Luke 2:23; 1 Peter 2:9 | 28-31 | BSB | BSB text |
+
+Cut before publishing: that a seduced woman could find it hard to marry (no source); that torn meat was undrained of blood (no source); Deuteronomy 22:28-29 (a different case, better left to its own chapter).
