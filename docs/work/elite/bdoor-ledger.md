@@ -7386,3 +7386,23 @@ No web search (earlier ledger rows reused).
 | "Many Christians read it of the day Jesus rose" | 22-29 | A reading, stated as such | Stated as a reading |
 
 Cut: the liturgical use of Psalm 118 at Easter as a custom (not searched); Luther and 118:17.
+
+## The plain notes on Psalm 119 (2026-11-20)
+
+No web search. Five passages, not 22.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Longest psalm and longest chapter in the Bible: 176 verses | 1-8 | BSB | Script over every chapter in the repository (next: Numbers 7, 89) |
+| 22 stanzas of eight verses, each verse in a stanza beginning with that stanza's letter, aleph to taw | 1-8 | Repository deep note (literary); book page (acrostics) | Script over the repository's Hebrew: first letters run 8 x each of the 22 letters in order |
+| Eight words and the BSB's renderings: torah "law" (25); edut/edah "testimonies" (23); piqqudim "precepts" (21); chuqqim "statutes" (22); mitsvot "commandments" (22); mishpatim "judgments", sometimes "ordinances" (23); dabar "word" (24); imrah "word" or "promise" (19) | 1-8 | Repository word data aligned with the BSB text | Script (Strong's H8451, H5715/H5713, H6490, H2706/H2708, H4687, H4941, H1697, H0565 counted; BSB English words checked verse by verse) |
+| All but four verses (3, 37, 90, 122) use one of the eight words | 1-8 | Same data | Script |
+| Author and date unknown; after the exile (many) or earlier | 1-8 | Repository deep note (historical) | Stated as views |
+| Meditate as murmuring; heart as the centre of the person; wineskin by the fire; honey, gold and silver | 9-104 | Repository deep note (cultural) | Site's own teaching |
+| Torah as teaching from a God who had already rescued; Jewish reading of the law as gift; Paul on works of the law | 17-64 | Repository deep note (cultural, hard) | Stated as readings |
+| Psalm 1:2; Matthew 4:4 (Deuteronomy 8:3); 2 Timothy 3:15-16; Romans 7:12, 22; James 1:25; Matthew 5:17; Hebrews 12:11; Romans 15:4; Proverbs 6:23; John 8:12; Isaiah 53:6; Luke 15:4; John 10:11 | all | BSB | BSB text |
+| Care on 119:71: the speaker's own testimony, not a line for another's pain; not every hardship a punishment; Find Help | 65-104 | Site's care rule | Stated plainly |
+
+119:103 has an em-dash in the BSB and is quoted only before it. Cut: the Hebrew letter names as printed in Bibles (not checked against the BSB's own print); stanza-a-day reading as a custom (given as a suggestion only).
+
+Also in this commit: Psalm 116's hard part no longer says verse 15 "is often read at funerals" (a custom not checked); it now says the verse "can be a comfort to anyone who has lost someone who loved God."
