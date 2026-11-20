@@ -156,8 +156,10 @@ export default function ExplorerMap() {
             The map
           </h2>
           <p className="ex-lede">
-            Thirteen stops, from the first page to the last. The ones with a
-            link are ready to open; the rest are being drawn.
+            Thirteen stops, from the first page to the last.{" "}
+            {data && data.stops.some(s => s.status !== "finished")
+              ? "The ones with a link are ready to open; the rest are being drawn."
+              : "Open any stop, or start at the first and follow Next to the end."}
           </p>
           <div className="ex-controls">
             <div className="ex-panel">

@@ -507,7 +507,9 @@ function StopPage({
               />
             </Link>
           ) : (
-            <>
+            <span
+              style={{ display: "flex", flexWrap: "wrap", gap: "var(--s-2)" }}
+            >
               <Link href={EXPLORER_PATH} className="btn">
                 The whole map
                 <ArrowRight
@@ -529,7 +531,7 @@ function StopPage({
                   style={{ marginLeft: 8 }}
                 />
               </Link>
-            </>
+            </span>
           )}
         </div>
         {prevReady && (

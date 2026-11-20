@@ -148,21 +148,23 @@ const scene: Drawing = {
         d="M96,236V220M68,256l-10,-8M124,256l10,-8M64,282H52M128,282h12M70,306l-10,6M122,306l10,6"
       />
       {/* The clay lamp: a bowl with a spout, and its flame. */}
-      <Shape
-        d="M60,350c0,-18 20,-26 40,-24c14,0 24,6 32,2l-6,12c-4,6 -10,10 -26,10Z"
-        tone="c"
-        off={2}
-      />
-      <path className="pl-k" d="M88,334a6,3 0 1,0 12,0a6,3 0 1,0 -12,0Z" />
-      <path className="pl-l" d="M62,342c-10,-2 -12,-12 -4,-16" />
-      <path
-        className="pl-m"
-        d="M128,326C114,316 112,298 124,276C126,292 140,300 134,318C133,322 131,325 128,326Z"
-      />
-      <path
-        className="pl-l"
-        d="M128,326C114,316 112,298 124,276C126,292 140,300 134,318C133,322 131,325 128,326Z"
-      />
+      <g transform="translate(96 350) scale(1.15) translate(-96 -350)">
+        <Shape
+          d="M60,350c0,-18 20,-26 40,-24c14,0 24,6 32,2l-6,12c-4,6 -10,10 -26,10Z"
+          tone="c"
+          off={2}
+        />
+        <path className="pl-k" d="M88,334a6,3 0 1,0 12,0a6,3 0 1,0 -12,0Z" />
+        <path className="pl-l" d="M62,342c-10,-2 -12,-12 -4,-16" />
+        <path
+          className="pl-m"
+          d="M128,326C114,316 112,298 124,276C126,292 140,300 134,318C133,322 131,325 128,326Z"
+        />
+        <path
+          className="pl-l"
+          d="M128,326C114,316 112,298 124,276C126,292 140,300 134,318C133,322 131,325 128,326Z"
+        />
+      </g>
 
       {/* The builder with the basket on his shoulder and the spear in his other hand. */}
       {builder(300, 362, "b")}
