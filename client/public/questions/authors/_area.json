@@ -1,0 +1,32 @@
+{
+  "slug": "authors",
+  "title": "Who wrote the Gospels and the New Testament, when, and who chose the books",
+  "record": "docs/work/elite/apol-pilot/authors/index.md",
+  "intro": "The text pages in this library ask whether we can know what the New Testament's authors wrote. This area asks the questions that come before it. Who were the authors? How long after Jesus did they write, and how did what he said and did reach them in the meantime? Why does the church read these four Gospels and not the others that circulated under apostles' names, and are some of the letters in the New Testament written under names that weren't their authors'?\n\nThese are the questions on which skeptical scholarship has spoken most confidently to ordinary readers, and Bart Ehrman's books, *Jesus, Interrupted*, *Forged* and *Lost Christianities* among them, have done more than any to carry them out of the seminar room. They are also questions on which Christian scholars themselves disagree. Faithful Christians hold different views on when the Gospels were written, whether the apostle Matthew wrote the Gospel that bears his name, and whether Paul wrote every letter that carries his. The pages that follow say so where it's true, and they take no side where the church's confession doesn't.\n\nWhat the pages argue is narrower than either a skeptic or an anxious believer might expect. They don't claim that the traditional authorship of every book can be proved. They argue that the Gospels were written within the lifetime of people who had known Jesus, that the tradition behind them was handed on with more care than a game of telephone, that the church chose its four Gospels long before any emperor took an interest and for reasons it gave in the open, and that the hard questions about disputed letters, though real, don't touch what the creeds confess. Each page states the objection as its strongest proponents would, says what is true in it, sets out the evidence with names and dates a reader can check, and ends with books on both sides.",
+  "pieces": [
+    {
+      "slug": "the-gospels-are-anonymous",
+      "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
+      "blurb": "What the titles and the earliest witnesses show, and what \"anonymous\" does and doesn't mean."
+    }
+  ],
+  "words": [
+    {
+      "term": "Synoptic Gospels",
+      "meaning": "Matthew, Mark and Luke, so called because they can be set side by side and seen together. Most scholars think Mark was written first and used by the other two."
+    },
+    {
+      "term": "Papias",
+      "meaning": "a bishop of Hierapolis in Asia Minor early in the second century, whose reports about Mark and Matthew survive in quotations by the historian Eusebius."
+    },
+    {
+      "term": "Canon",
+      "meaning": "the list of books a church receives as Scripture, from a Greek word for a measuring rule."
+    }
+  ],
+  "elsewhere": [
+    "The essay \"Who Decided What Books Are in the Bible?\" (/writing/who-decided-what-books-are-in-the-bible), on how the New Testament was gathered.",
+    "The Study Bible's introductions to the four Gospels, which set out the authorship and dating views at each book: Matthew (/study/bible/matthew), Mark (/study/bible/mark), Luke (/study/bible/luke) and John (/study/bible/john).",
+    "The area on the text of the New Testament (/questions/text), on what the manuscripts show about the wording."
+  ]
+}
