@@ -159,6 +159,7 @@
   .wz-sit__q{font-size:14pt}
   .wz-prayer{background:transparent;padding:0 0 0 8pt;border-left:1pt solid var(--ink)}
   .wz-link{min-height:0}
+  .wz-page .pg-head__art{display:none}
 }
 .wf-inline{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .wf-foot{list-style:none;margin:var(--s-3) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:0 24px}

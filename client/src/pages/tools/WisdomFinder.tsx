@@ -111,13 +111,20 @@ export default function WisdomFinder() {
     setDraft(q);
     setAsked(q);
     place.set((p) => ({ ...p, q }));
-    requestAnimationFrame(() => resultsRef.current?.focus());
+    requestAnimationFrame(() => {
+      resultsRef.current?.focus({ preventScroll: true });
+      resultsRef.current?.scrollIntoView({ block: "start" });
+    });
   };
 
   const confident = result?.confident ?? false;
   const matches = result?.matches ?? [];
   const best = confident ? matches[0] : null;
-  const rest = confident ? matches.slice(1, 6) : matches.slice(0, 3);
+  // Two topics share a name (caregiving, caring-for-aging-parents): list a name once.
+  const seenLabels = new Set<string>(best ? [best.topic.label] : []);
+  const rest = (confident ? matches.slice(1) : matches.filter((m) => m.score >= 4))
+    .filter((m) => !seenLabels.has(m.topic.label) && seenLabels.add(m.topic.label))
+    .slice(0, confident ? 5 : 3);
 
   return (
     <Layout>
@@ -213,7 +220,7 @@ export default function WisdomFinder() {
         <>
           <section className="wz-band" aria-labelledby="wf-results-h" hidden={!asked}>
             <div className="wz-col">
-              <h2 id="wf-results-h" className="wz-sec__title" tabIndex={-1} ref={resultsRef}>
+              <h2 id="wf-results-h" className="wz-sec__title" tabIndex={-1} ref={resultsRef} style={{ scrollMarginTop: "84px" }}>
                 {asked ? <>For &ldquo;{asked}&rdquo;</> : "Results"}
               </h2>
               <p className="wf-results__count" role="status" aria-live="polite">
