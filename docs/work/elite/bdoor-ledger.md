@@ -8976,3 +8976,29 @@ No searches. Scripture is the BSB in the repository, matched by the strict check
 | Acts 9:26-30 differences (Barnabas; Tarsus); Paul's oath | 18-24 | BSB | BSB text |
 | Tarsus in Cilicia (Acts 22:3) | 18-24 | BSB | BSB text |
 | 1 Samuel 12:5; Isaiah 61:3 | 18-24 | BSB | BSB text |
+
+## The plain notes on Galatians 2 (2026-11-20)
+
+No new searches (the book page searches on the council and Galatians 2 are reused). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Fourteen years from the call or the first visit | 1-5 | Deep note `historical` | Repository |
+| Barnabas a Levite from Cyprus (Acts 4:36); brought Paul to the apostles (Acts 9:27); Titus a Greek, a test case | 1-5 | BSB; deep note `cultural` | Repository |
+| ‘Running in vain’ a race picture | 1-5 | Standard; 1 Corinthians 9:24-27 | Stated generally |
+| Galatians 2 and Acts 11 and 15: three views; pointers to the Acts 11:27-30 and 15:6-11 notes and the book page | 1-5 | acts/plain/11.json; acts/plain/15.json | Repository. No side |
+| Genesis 17:10; 15:6; 12:3; Isaiah 56:7 | 1-5 | BSB | BSB text |
+| Pillars; right hand of fellowship a public gesture of agreement; one gospel, two fields | 6-10 | Deep note `cultural`, `literary` | Repository |
+| The collection for Jerusalem (Romans 15:26; 2 Corinthians 8 and 9) | 6-10 | BSB; 2 Corinthians notes | Repository |
+| Deuteronomy 10:17; 15:11 | 6-10 | BSB | BSB text |
+| Antioch's church the first with many Gentile members (Acts 11:19-26); meals and belonging; food laws kept many Jews from ordinary meals with Gentiles; Acts 10:28 | 11-14 | Deep note `cultural`, `historical`; BSB | Repository |
+| Pressure in Judea on Jews seen to compromise with Gentiles in those years, "may" explain the fear | 11-14 | Deep note `historical` | Stated as a possibility |
+| Whether James sent the men with that message not known | 11-14 | BSB 2:12 | Stated as unknown |
+| Peter: Acts 10; Acts 15:11; 1 Corinthians 3:22; 15:5; 2 Peter 3:15; how the quarrel ended not told | 11-14 | BSB | BSB text |
+| Leviticus 19:17; Proverbs 27:6; 2 Samuel 12:7 | 11-14 | BSB | BSB text |
+| Where the speech to Peter ends is debated | 15-21 | Deep note `literary` | Repository |
+| ‘Gentile sinners’ common Jewish usage | 15-21 | Deep note `cultural` | Repository |
+| Dikaioō four times in verses 16 and 17 | 15-21 | Deep note `words` | Repository |
+| Psalm 143:2 echoed in 2:16 | 15-21 | Commentaries (cross-reference standard) | BSB text; stated as an echo |
+| Works of the law and pistis Christou readings | 15-21 | Book page; Romans book page ledger | Ledger. No side |
+| Genesis 15:6; Ezekiel 36:26 | 15-21 | BSB | BSB text |
