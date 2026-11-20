@@ -38,9 +38,9 @@
     { "slug": "light-and-darkness", "title": "Light and darkness", "group": "ideas", "status": "coming" },
 
     { "slug": "who-god-is", "title": "Who God is: Father, Son and Holy Spirit", "group": "beliefs", "status": "finished" },
-    { "slug": "image-of-god", "title": "Creation and the image of God", "group": "beliefs", "status": "coming" },
-    { "slug": "what-sin-is", "title": "What sin is", "group": "beliefs", "status": "coming" },
-    { "slug": "who-jesus-is", "title": "Who Jesus is", "group": "beliefs", "status": "coming" },
+    { "slug": "image-of-god", "title": "Creation and the image of God", "group": "beliefs", "status": "finished" },
+    { "slug": "what-sin-is", "title": "What sin is", "group": "beliefs", "status": "finished" },
+    { "slug": "who-jesus-is", "title": "Who Jesus is", "group": "beliefs", "status": "finished" },
     { "slug": "why-jesus-died", "title": "Why did Jesus die?", "group": "beliefs", "status": "finished" },
     { "slug": "the-resurrection", "title": "The resurrection", "group": "beliefs", "status": "coming" },
     { "slug": "how-salvation-works", "title": "How salvation works", "group": "beliefs", "status": "finished" },

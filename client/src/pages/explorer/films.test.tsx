@@ -492,7 +492,7 @@ describe("Listen", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the sixteen finished films", () => {
+  it("lists the four groups and the nineteen finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -506,6 +506,9 @@ describe("the data", () => {
       "holy-spirit",
       "god-with-his-people",
       "who-god-is",
+      "image-of-god",
+      "what-sin-is",
+      "who-jesus-is",
       "why-jesus-died",
       "how-salvation-works",
       "gospel-in-a-minute",
@@ -591,7 +594,7 @@ describe("the data", () => {
   });
 
   it("has no file for a film not made yet", () => {
-    expect(COMING.length).toBeGreaterThan(20);
+    expect(COMING.length).toBeGreaterThan(15);
     for (const f of COMING)
       expect(
         fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
@@ -872,6 +875,49 @@ describe("the three films of 2026-11-20 (suffering, the Bible, the Spirit)", () 
       "is-the-bible-true",
       "spirit-in-a-believer",
     ])
+      expect(filmFile(slug).share?.level, slug).toBe("younger");
+  });
+});
+
+describe("the three belief films of 2026-11-20 night (image, sin, Jesus)", () => {
+  const captions = (slug: string) =>
+    filmFile(slug)
+      .frames.flatMap(fr => [fr.younger, fr.older, fr.still])
+      .join(" ");
+
+  it("Creation and the image of God takes no side on the age of the earth or evolution", () => {
+    const film = filmFile("image-of-god");
+    const all = captions("image-of-god");
+    expect(all).toMatch(
+      /takes no side on the age of the earth or on evolution/
+    );
+    expect(film.differ?.text).toMatch(/takes no side/);
+    expect(all).not.toMatch(
+      /billion|million years|thousand years old|young earth|old earth|evolved|fossil|dinosaur|\bAdam\b|flood/i
+    );
+    expect(all).toMatch(/given, not earned/);
+  });
+
+  it("What sin is never tells a reader they are bad, keeps grace in view and help visible", () => {
+    const film = filmFile("what-sin-is");
+    const younger = film.frames.map(f => f.younger).join(" ");
+    expect(younger).not.toMatch(/you are bad|bad person|worthless person/i);
+    expect(younger).toMatch(/does not make anyone worthless/);
+    expect(film.frames.at(-1)!.younger).toMatch(/Where are you\?/);
+    expect(film.care).toMatch(/Nobody is too bad to be forgiven/);
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+  });
+
+  it("Who Jesus is: fully God and fully man, one person, never half and half", () => {
+    const all = captions("who-jesus-is");
+    expect(all).toMatch(/fully God and fully man/);
+    expect(all).toMatch(/not half God and half man/i);
+    expect(all).toMatch(/not a man who (later )?became God/);
+    expect(all).not.toMatch(/\bface\b|halo/i);
+  });
+
+  it("each runs past two minutes at the older level and so has a share cut", () => {
+    for (const slug of ["image-of-god", "what-sin-is", "who-jesus-is"])
       expect(filmFile(slug).share?.level, slug).toBe("younger");
   });
 });

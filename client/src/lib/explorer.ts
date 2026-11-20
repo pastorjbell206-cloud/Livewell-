@@ -367,6 +367,8 @@ export interface Trip {
   range: string;
   line: string;
   steps: TravelStep[];
+  /** Show the whole frame, not a view cropped to this part's places (Abraham's first part). */
+  whole?: boolean;
 }
 
 export interface TravelChurch {
@@ -403,6 +405,32 @@ export function isTravels(x: unknown): x is Travels {
 
 export const fetchTravels = () =>
   fetchJson("/explorer/travels.json", isTravels);
+
+// ── Abraham's road: the second moving map ─────────────────────────────────
+
+/** Abraham's road (abrahams-road.json): parts in the shape of Paul's trips, on the Genesis page's frame. */
+export interface AbrahamsRoad {
+  frame: "fertile-crescent";
+  intro: string;
+  routeNote: string;
+  /** The map's own name for a place, where the book page's name is not the one Genesis uses here (Goshen drawn for Egypt). */
+  names?: Record<string, string>;
+  parts: Trip[];
+}
+
+export const ABRAHAMS_ROAD_PATH = `${EXPLORER_PATH}/abrahams-road`;
+
+export function isAbrahamsRoad(x: unknown): x is AbrahamsRoad {
+  return (
+    isObj(x) &&
+    x.frame === "fertile-crescent" &&
+    Array.isArray(x.parts) &&
+    x.parts.length > 0
+  );
+}
+
+export const fetchAbrahamsRoad = () =>
+  fetchJson("/explorer/abrahams-road.json", isAbrahamsRoad);
 
 // ── Threads ───────────────────────────────────────────────────────────────
 
