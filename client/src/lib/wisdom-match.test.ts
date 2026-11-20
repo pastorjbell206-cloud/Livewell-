@@ -33,7 +33,16 @@
  *   holdout3 (15) top 1 53.3%  top 3 73.3% (untouched; the honest number)
  * On 2026-11-20 (fourth build) fifteen more sentences, holdout4, were written
  * and committed before matching.json was touched, and measured: top 1 86.7%,
- * top 3 100%. It is the clean set from here.
+ * top 3 100%. Then phrases and "not" phrases were added, by data only, for
+ * the seven holdout3 misses (a few months to live, years of back pain, the
+ * friend who died in the crash, a teenage son killed by a drunk driver, a
+ * body growing old, a mother now gone, a miscarriage at eight weeks). After:
+ *   cases    (74) top 1 100%   top 3 100%
+ *   holdout  (19) top 1 100%   top 3 100%
+ *   holdout2 (20) top 1 100%   top 3 100%
+ *   holdout3 (15) top 1 100%   top 3 100% (tuned for in this build; no
+ *                 longer a clean holdout)
+ *   holdout4 (15) top 1 86.7%  top 3 100% (untouched; the honest number)
  * The floors below sit under those, so a change to the data that makes the
  * finder worse fails here by name.
  */
@@ -100,8 +109,8 @@ describe("wisdom matcher", () => {
     expect(holdout.top3).toBeGreaterThanOrEqual(0.9);
     expect(holdout2.top1).toBeGreaterThanOrEqual(0.9);
     expect(holdout2.top3).toBeGreaterThanOrEqual(0.95);
-    expect(holdout3.top1).toBeGreaterThanOrEqual(0.5);
-    expect(holdout3.top3).toBeGreaterThanOrEqual(0.7);
+    expect(holdout3.top1).toBeGreaterThanOrEqual(0.9);
+    expect(holdout3.top3).toBeGreaterThanOrEqual(0.95);
     expect(holdout4.top1).toBeGreaterThanOrEqual(0.8);
     expect(holdout4.top3).toBeGreaterThanOrEqual(0.9);
   });
