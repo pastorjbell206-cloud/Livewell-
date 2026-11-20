@@ -128,7 +128,11 @@ describe("WisdomFinder", () => {
     const pick = chips[1];
     const name = pick.textContent ?? "";
     const area = finder.areas.find((a) => a.name === name)!;
+    const countBefore = document.querySelector(".wf-results__count")?.textContent;
     fireEvent.click(pick);
+    // The visible line above the chips keeps its words, so the chips do not move; the narrowing is announced in a status that takes no room.
+    expect(document.querySelector(".wf-results__count")?.textContent).toBe(countBefore);
+    expect(group.querySelector('.sr-only[role="status"]')?.textContent).toMatch(new RegExp(`in ${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`));
     expect(pick.getAttribute("aria-pressed")).toBe("true");
     expect(await screen.findByText(new RegExp(`subjects? in ${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`))).toBeInTheDocument();
     const href = document.querySelector(".wf-best")?.getAttribute("href") ?? "";

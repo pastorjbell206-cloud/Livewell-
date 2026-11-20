@@ -242,11 +242,9 @@ export default function WisdomFinder() {
                   ? ""
                   : !data
                     ? "Opening the library…"
-                    : picked
-                      ? `Showing ${matches.length} ${matches.length === 1 ? "subject" : "subjects"} in ${picked.name}, closest first. Choose it again to see them all.`
-                      : confident
-                        ? `${matches.length} ${matches.length === 1 ? "subject fits" : "subjects fit"} what you wrote, closest first.`
-                        : "Nothing in the library fits that well."}
+                    : (result?.confident ?? false)
+                      ? `${result?.matches.length} ${result?.matches.length === 1 ? "subject fits" : "subjects fit"} what you wrote, closest first.`
+                      : "Nothing in the library fits that well."}
               </p>
               {data && asked && choices.length > 0 && (
                 <div className="wf-choose" role="group" aria-labelledby="wf-choose-q">
@@ -262,6 +260,10 @@ export default function WisdomFinder() {
                       </li>
                     ))}
                   </ul>
+                  {/* Announced, and takes no room, so the chips never move when one is picked. */}
+                  <p className="sr-only" role="status" aria-live="polite">
+                    {picked ? `Showing ${matches.length} ${matches.length === 1 ? "subject" : "subjects"} in ${picked.name}, closest first. Choose it again to see them all.` : ""}
+                  </p>
                 </div>
               )}
               {data && asked && best && (
