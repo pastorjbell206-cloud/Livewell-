@@ -7093,3 +7093,40 @@ No web search.
 | Cherubim on the ark, the empty throne, the footstool | Repository deep note (cultural) | Site's own teaching |
 | Exodus 32:14; 1 Samuel 12:23; Numbers 20:12 (forgiven, yet consequences) | Repository deep note (hard); BSB | BSB text |
 | Isaiah 6:3; Revelation 4:8; 1 Peter 1:16 | BSB | BSB text |
+
+## The plain notes on Psalm 100 (2026-11-20)
+
+One web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| todah: thanks, or the thank offering (Leviticus 7:12); sung with that offering (some), or a general label | Repository deep note (historical); BSB | Stated as views |
+| Gates then courts; "serve" both labour and worship | Repository deep note (cultural) | Site's own teaching |
+| 100:3: the written text lo' "not" and the margin's lo "His" (ketiv and qere, same sound); KJV text follows the first, most modern Bibles (the BSB) the second; ancient translations divided (Septuagint and Peshitta with "not"; Aquila, Jerome and the Targum with "His") | psalms.scriptura.org "The Text and Meaning of Ps. 100:3"; claudemariottini.com on ketiv and qere; Wikipedia "Psalm 100" (mirror); BSB | Search. The ancient versions not named on the page ("Ancient translations are divided too") |
+| John 10:14; Ephesians 2:10; 1 Thessalonians 5:18; Romans 12:1 | BSB | BSB text |
+
+## The plain notes on Psalm 101 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| A king's vow, perhaps at his crowning (many readers); a royal psalm | Book page ("Kinds of psalm"); repository deep note (historical) | Stated as a view |
+| Slander and flattery at court (Saul and David); rulers boasting of justice; the king begins with himself | Repository deep note (cultural) | Site's own teaching. Hammurabi not repeated here (see Psalm 72) |
+| "Administer justice every morning" (Jeremiah 21:12) | BSB | BSB text |
+| Matthew 7:3; 1 Timothy 3:2; Philippians 4:8 | BSB | BSB text |
+| 101:8 a king's vow under God; gives no one today the right to punish neighbours | Repository deep note (hard) | Site's own teaching |
+
+## The plain notes on Psalm 102 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The heading names a kind of person, kept for any sufferer | Repository deep note (historical); BSB | BSB text |
+| Ashes in mourning (Job 2:8); owls of ruined places; the flat roof | Repository deep note (cultural); BSB | BSB text |
+| After Babylon's destruction (most scholars), Zion's stones and dust | Repository deep note (historical) | Stated as most scholars' view |
+| One of the seven penitential psalms | Earlier row (Psalm 6 note, sixth-century grouping) | Earlier ledger |
+| Hebrews 1:10-12 quotes 102:25-27 of the Son; James 1:17; 2 Corinthians 4:16 | BSB | BSB text |
+
+Care: illness not a punishment (Job); sleeplessness and loneliness; a doctor, a pastor or a friend; the Find Help page.
