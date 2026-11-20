@@ -11727,3 +11727,35 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Exodus 19:4; Numbers 16:32; Exodus 15:12; Exodus 16:35; 1 Kings 17:4 | 13-17 | BSB | BSB text |
 
 Cut before publishing: Isis and Horus (kept to the one myth the note ties to Asia); the Qumran hymn on labour; Ugarit's seven-headed serpent. No historicist account of the woman is offered, since the repository's notes give none.
+
+## The plain notes on Revelation 13 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Thērion sixteen times; the beast in the dragon's image; blasphemous names; Sebastos, divi filius, Domitian's ‘our Lord and God’ (Suetonius) | 1-4 | revelation/13.json `words` (G2342); revelation/verses/13.json (1) | Repository |
+| Daniel's four beasts in one; imperial power as such; the dragon's power, throne and authority | 1-4 | revelation/13.json `cultural`; revelation/verses/13.json (2) | Repository |
+| The wound ‘as slain’ parodies 5:6; ‘Who is like the beast?’ parodies Exodus 15:11 and Michael's name | 1-4 | revelation/13.json `literary`; revelation/verses/13.json (3, 4) | Repository |
+| The four readings of the beast (Rome and the seven hills; historicists matching rulers and churches of their own times, in general terms only; a final ruler; a recurring pattern); the healed head (Nero's death in 68, the return rumour, Tacitus and Suetonius; or the near collapse; or a parody only); no identification of our day | 1-4 | revelation/13.json `hard`, `historical`; revelation/verses/13.json (3); revelation/intro.json `teaching` (ways) | Repository, no side |
+| Daniel 7:3, 4, 5, 6, 7; Exodus 15:11 | 1-4 | BSB | BSB text |
+| ‘Given’ four times; 42 months; God's dwelling is his people; the saints conquered, and victory as faithfulness; 5:9's peoples claimed | 5-8 | revelation/verses/13.json (5-6, 7) | Repository |
+| ‘From the foundation of the world’ with ‘written’ (BSB, ESV, 17:8) or with ‘slain’ (KJV, NIV); meant to steady, not frighten | 5-8 | revelation/verses/13.json (8); revelation/13.json `literary` | Repository, no side |
+| Antiochus IV: December 167 BC and December 164 BC | 5-8 | revelation/verses/13.json (5-6) | Repository |
+| Daniel 7:8, 21, 25 | 5-8 | BSB | BSB text |
+| The refrain without ‘what the Spirit says’; hupomonē; faith as faithfulness; no sword and no surrender; Matthew 4:8-10; Matthew 26:52 | 9-10 | revelation/verses/13.json (9-10); revelation/13.json `words` (G5281), `christ` | Repository |
+| The textual split of 13:10 (older text in the BSB; the King James reading); honoured without commending death | 9-10 | revelation/verses/13.json (9-10 `text`); revelation/13.json `christ` | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 9-10 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Jeremiah 15:2; Daniel 3:18; Matthew 4:10; Matthew 26:52 | 9-10 | BSB | BSB text |
+| The lamb-like beast; the false prophet (16:13); religion serving power; the koinon, high priests of Asia, Asiarchs (Acts 19:31) | 11-15 | revelation/verses/13.json (11-12) | Repository |
+| Fire like Elijah's; Deuteronomy 13; Mark 13:22; breath given to the image (Genesis 2:7) | 11-15 | revelation/verses/13.json (13-14, 15) | Repository |
+| Pliny to Trajan, about AD 112 (Letters 10.96), the image, incense and wine, cursing Christ | 11-15 | revelation/verses/13.json (15) | Repository |
+| Romans 13:1 and Revelation 13; Oscar Cullmann, The State in the New Testament (1956) | 11-15 | revelation/verses/13.json (2 `theology`) | Repository |
+| 1 Kings 18:38; Deuteronomy 13:1-3; Daniel 3:5-6; Romans 13:1 | 11-15 | BSB | BSB text |
+| Merism of everyone; the mark against the seal (7:3) and Deuteronomy 6:8; brands and marks; charagma on documents and coins; the mark as name or number; guilds and banquets; Thyatira and Laodicea | 16-18 | revelation/13.json `historical`, `cultural`, `words` (G5480); revelation/verses/13.json (16-17) | Repository |
+| Letters as numbers; the Pompeii graffito (545); psēphizō, counting with pebbles | 16-18 | revelation/13.json `cultural`, `words` (G5585); revelation/verses/13.json (18) | Repository |
+| 666: Irenaeus weighed names and declined; Nero Caesar in Hebrew letters; 616 in P115 and a fifth-century codex; Nero the best-known solution; the symbol of falling short; 888; Solomon's 666 talents (1 Kings 10:14); no side; no application to our day | 16-18 | revelation/13.json `hard`; revelation/verses/13.json (18); guides/reading-apocalyptic.json (numbers) | Repository, no side |
+| The mark goes with worshipping the beast (14:9); care line ‘If you are afraid that you have fallen away from God ...’ | 16-18 | BSB 14:9; hebrews/plain/6.json (4-8 `hard`) | BSB text; word for word |
+| Deuteronomy 6:8; 1 Kings 10:14 | 16-18 | BSB | BSB text |
+
+Cut before publishing: the historicist identification named in the deep note (given here only in general terms, as the book page gives it); the history of the schools (Ribera, Alcázar, Darby, Scofield), kept to the book page; Bauckham's thērion and triangular-number notes; the Sibylline Oracles; ‘the mark cannot be received by accident’ (narrowed to what 14:9 says); a line giving futurist and idealist readings of the number itself (the notes give them for the beast, not the number).
