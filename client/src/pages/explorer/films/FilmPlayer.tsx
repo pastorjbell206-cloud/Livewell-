@@ -295,7 +295,7 @@ export default function FilmPlayer({
 
       <p className="fp-hint" id={hintId}>
         {still
-          ? "Motion is turned off on this device, so each picture appears finished. Step through with Next, or with the arrow keys."
+          ? "Motion is off on this device, so each picture appears finished. Step through with Next or the arrow keys."
           : "Press Play to watch, or step through by hand with Back and Next. The arrow keys work too."}
       </p>
 

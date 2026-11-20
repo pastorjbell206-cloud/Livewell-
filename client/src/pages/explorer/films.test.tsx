@@ -232,7 +232,7 @@ describe("the player's contract", () => {
     render(player());
     expect(screen.queryByRole("button", { name: /^Play/ })).toBeNull();
     expect(document.querySelector(".fp-screen.is-still")).toBeTruthy();
-    expect(screen.getByText(/Motion is turned off on this device/)).toBeTruthy();
+    expect(screen.getByText(/Motion is off on this device/)).toBeTruthy();
     fireEvent.click(screen.getByRole("button", { name: /^Start/ }));
     expect(current()).toBe(1);
     expect(live()).toContain(FILM.frames[0].younger);

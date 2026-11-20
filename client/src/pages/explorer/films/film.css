@@ -52,6 +52,21 @@
   letter-spacing: -0.02em;
   color: var(--art-ink);
 }
+@media (max-width: 559px) {
+  .fp-poster {
+    left: 3%;
+    bottom: 5%;
+    max-width: 62%;
+    padding: 6px 10px 8px;
+    box-shadow: 3px 3px 0 var(--art-ink);
+  }
+  .fp-poster__kicker {
+    font-size: 11px;
+  }
+  .fp-poster__title {
+    font-size: 1.15rem;
+  }
+}
 .fp-poster__disc {
   position: absolute;
   left: 50%;
