@@ -10716,3 +10716,27 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Abraham, Rahab, Elijah (1 Kings 17 to 18); Claudius and the famine (Acts 11:28-30); revolt AD 66 | Timeline | james/1.json `historical`; james/4.json `historical`; BSB | Repository; BSB |
 | Map: Jerusalem only (31.778 N, 35.235 E, as on the Mark and Acts maps), with a line that the letter names no place; mapNote says so | Map | mark/intro.json, acts/intro.json teaching maps; james/1.json `historical` | Repository. A place the letter does not name, because the map band needs one; said so on the page |
 | Deeper links: faith, justification, wisdom, suffering, wealth, justice-poor, prayer, law | Go deeper | bible/doctrines.json | Repository |
+
+## The plain notes on James 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. James has no verse notes; these rest on the chapter deep note, the intro and the lexicon.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Servant’ from a brother who did not believe (John 7:5); the Dispersion, two readings; chairein leads to chara | 1-4 | james/1.json `historical`, `literary`, `christ`; james/intro.json `setting` | Repository, no side |
+| Teleios: full-grown, complete (‘mature’, often ‘perfect’) | 1-4 | lexicon G5046; Greek text of verse 4 | Repository |
+| Joy not pretending; Job as endurance (5:11); no claim that suffering is punishment | 1-4 | james/1.json `doctrines`; james/5.json `doctrines` | Repository |
+| Genesis 22:1; Deuteronomy 8:2; Proverbs 17:3; Genesis 49:28; Deuteronomy 28:64; 30:3 | 1-4 | BSB | BSB text |
+| Care line ‘If you are in a hard place now ...’ | 1-4 | 2-corinthians/plain/1.json (1-7 `hard`) | Word for word |
+| ‘Lacking’ links 4 and 5; wisdom the skill of living rightly; wave on the sea; dipsuchos ‘two-souled’, unknown before James, again at 4:8 | 5-8 | james/1.json `literary`, `doctrines`, `words`, `cultural` | Repository |
+| 1 Kings 3:9; Proverbs 2:6; Psalm 86:11; Psalm 119:113; Mark 9:24 | 5-8 | BSB | BSB text |
+| Care line ‘If you are a person whose conscience never rests ...’ | 5-8 | colossians/plain/1.json (21-23 `hard`) | Word for word |
+| Reversal of rich and poor; scorching heat perhaps the east wind; 4:13-14 | 9-11 | james/1.json `cultural`, `summary` | Repository |
+| Isaiah 40:6-8; Psalm 103:15-16; 1 Samuel 2:7 | 9-11 | BSB | BSB text |
+| Peirasmos both trial and temptation; God never the source; deleazō from ‘bait’; birth imagery; firstfruits; Father of lights; crown of life a victor's reward | 12-18 | james/1.json `words`, `cultural`, `doctrines`; lexicon G1185; revelation note on 2:10 (‘the victor's reward’) | Repository |
+| Genesis 3:6, 13; Leviticus 23:10; Genesis 1:16; Malachi 3:6 | 12-18 | BSB | BSB text |
+| Testing versus temptation; Genesis 22:1 same verb in the Greek Old Testament; Genesis 50:20; God sovereign and never the author of sin | 12-18 | james/1.json `hard` | Repository |
+| Quick to listen; the word planted; bronze mirrors; the perfect law of freedom; thrēskeia; orphans and widows the most exposed; episkeptomai ‘visit’; 26-27 set the agenda | 19-27 | james/1.json `cultural`, `words`, `literary`; lexicon G1980 | Repository |
+| Deuteronomy 10:18; Psalm 68:5; Isaiah 1:17; Proverbs 10:19; Proverbs 14:17; Psalm 19:7 | 19-27 | BSB | BSB text |
+
+Cut before publishing: ‘lured away’ as a fishing and hunting word (the lexicon supports only ‘bait’ for ‘enticed’); ‘the life itself is the crown’; whether the rich man of 1:10 is a believer (not in the repository's notes).
