@@ -473,6 +473,10 @@ Fifteen new sentences (`holdout4`) were written and committed before `matching.j
 
 holdout4's misses, left alone: "I want to believe but I keep thinking it's all made up" puts Assurance of Faith before Doubt; "I said yes to everything and now I'm drowning" puts Setting Boundaries before Saying No.
 
+### Checked on the served build
+
+At 390 and 1440, day and night: each of the three checks taken from the first question to the result by keyboard only (Tab, an arrow, a number key, Enter on Continue) and by tap; resume after a reload; Change my answers keeps every answer (30 of 30, 15 of 15, 12 of 12); a save written by the old pages seeded and opened (3 of 30, 3 of 15, 4 of 12, the right answers checked); print preview; no sideways scroll; no console errors beyond the local server's missing Vercel analytics scripts and /api/track. The explorer end to end at both widths, day and night, and by keyboard (number key and arrow), and the Wisdom Finder's link to it. Lighthouse median (13.6.0): /tools/wisdom-books performance 88, accessibility 100, best practices 96, SEO 66 (the page is noindex on purpose), CLS 0; /tools/emotional-health performance 85, accessibility 100, best practices 96, SEO 100, CLS 0. Screenshots: `docs/work/elite/tools-shots/run4-*`.
+
 ### Not done in this run
 
 Ecclesiastes, Job and James in the explorer; Pray the Psalms; the other Life Check parts (Spiritual Gifts, Marriage, the short form); the 168 wisdom topics still in their first form; any retirement or listing.
