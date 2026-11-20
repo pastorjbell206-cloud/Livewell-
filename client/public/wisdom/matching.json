@@ -74,7 +74,18 @@
   "nothing more they can do": "terminal",
   "nothing more to be done": "terminal",
   "nothing else they can do": "terminal",
-  "better off without me": "suicide helpnow"
+  "better off without me": "suicide helpnow",
+  "husband hits me": "abuse abusenow",
+  "wife hits me": "abuse abusenow",
+  "boyfriend hits me": "abuse abusenow",
+  "girlfriend hits me": "abuse abusenow",
+  "partner hits me": "abuse abusenow",
+  "dad hits me": "abuse abusenow",
+  "father hits me": "abuse abusenow",
+  "mom hits me": "abuse abusenow",
+  "mother hits me": "abuse abusenow",
+  "stepdad hits me": "abuse abusenow",
+  "stepmom hits me": "abuse abusenow"
  },
  "synonyms": {
   "son": "child",
@@ -1827,7 +1838,6 @@
    "phrases": [
     "controls everything",
     "scares me",
-    "hits me",
     "afraid of my husband",
     "afraid of my wife",
     "afraid of my partner",

@@ -260,6 +260,15 @@ describe("wisdom matcher", () => {
     firstIs("my wife abused me for years", "toxic-relationships");
   });
 
+  it("reads hitting as abuse when a person hits the reader, not when grief hits them or a toddler does", () => {
+    firstIs("my husband hits me", "toxic-relationships");
+    firstIs("she hit me again last night", "toxic-relationships");
+    const grief = findTopics(prep, "its been a year and the grief still hits me out of nowhere");
+    expect(grief.matches[0].topic.id).toBe("grief");
+    expect(grief.matches.map((m) => m.topic.id)).not.toContain("toxic-relationships");
+    expect(findTopics(prep, "my toddler hits me").matches[0].topic.id).toBe("parenting-young-children");
+  });
+
   it("puts the help topic first for danger, five new ways of saying it", () => {
     firstIs("he threatened to kill me if i leave", "toxic-relationships");
     firstIs("i am afraid for my life", "toxic-relationships");
