@@ -16,7 +16,7 @@ Two convictions run through the area. The first is that the religions really do 
 
 ## The questions
 
-1. **Aren't all religions basically the same, different paths up one mountain to the same God?** Hick's pluralism at full strength, the parable of the elephant and the claim hidden in it, what the religions actually say about God, Jesus and salvation, and why pluralism is one more particular view.
+1. **Aren't all religions basically the same, different paths up one mountain to the same God?** Hick's pluralism at full strength, the parable of the elephant and what it assumes, what the religions actually say about God, Jesus and salvation, and why pluralism is one more particular view.
 2. **Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?** John 14:6 and Acts 4:12 where they stand, why every view of the religions excludes others, the difference between a claim and the way it is held, and the church's sins in carrying it.
 3. **What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?** The moral argument, what Scripture says and doesn't say, the main Christian answers in their holders' terms, each with its hardest question and no side taken, and a word for anyone grieving.
 4. **Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?** Judaism and Islam described from their own sources, what Christianity shares with each and where it truly differs, the church's wrongs against Jews named and rejected, the views of Israel's place set out without choosing, and the earliest Christians' Shema.
@@ -27,8 +27,8 @@ Two convictions run through the area. The first is that the religions really do 
 - **Pluralism**: the view that the great religions are equally valid responses to one ultimate reality, none of them the one true way.
 - **Exclusivism**: the view that one religion's central claims are true and those that contradict them are false; on salvation, often called restrictivism when it holds that a person must hear the gospel and believe in this life to be saved.
 - **Inclusivism**: the view that salvation comes only through Christ, but that Christ may save some who never knew his name.
-- **Universal restoration**: the hope that God will in the end reconcile all people to himself; held by Origen and Gregory of Nyssa and by some since, condemned by the Fifth General Council in 553, and outside most of the church's confessions.
-- **Tawhid**: in Islam, the oneness of God, without partner or equal.
+- **Universal restoration**: the hope that God will in the end reconcile all people to himself; held by Origen and Gregory of Nyssa and by some since, anathematized at Constantinople in the sixth century (whether by the Fifth General Council of 553 itself is disputed among historians), and generally rejected by the church's councils and confessions.
+- **Tawhid**: in Islam, the oneness and uniqueness of God, which is central to the faith.
 - **Shema**: the confession of Deuteronomy 6:4, "Hear, O Israel: The LORD our God, the LORD is One," which Jesus called the first commandment and which Judaism placed in its public prayer from early times.
 - **Torah**: in Judaism, the law of Moses, with the oral tradition the rabbis set down in the Mishnah and the Talmud.
 - **Supersessionism**: the teaching, also called replacement theology, that the church has taken Israel's place as God's people; one of several Christian views of Israel's place, which many churches now reject.
