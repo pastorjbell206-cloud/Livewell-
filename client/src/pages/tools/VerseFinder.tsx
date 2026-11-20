@@ -197,7 +197,7 @@ export default function VerseFinder() {
   };
 
   const handleShare = async (ref: string, text: string) => {
-    const shareText = `\u{1F4D6} ${ref} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/verse-finder)`;
+    const shareText = `${ref} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/verse-finder)`;
     const ok = await copyToClipboard(shareText);
     if (!ok) {
       setCopyFailed(ref);

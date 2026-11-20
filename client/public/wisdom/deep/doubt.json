@@ -1,0 +1,84 @@
+{
+  "id": "doubt",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "Mark 9:24",
+      "context": "Mark 9:20-27",
+      "where": "A father has brought his suffering son to Jesus' disciples, who could not help. When Jesus says everything is possible for one who believes, the father answers with the most honest prayer in the Gospels. Jesus heals the boy. Mixed faith is still brought, and still heard."
+    },
+    {
+      "ref": "Matthew 11:2-3",
+      "context": "Matthew 11:1-6",
+      "where": "John the Baptist, who had pointed to Jesus at the Jordan, is now in Herod's prison and sends to ask if Jesus is really the one. Jesus does not rebuke him. He sends back evidence from the prophets and what was happening, and then praises John to the crowd."
+    },
+    {
+      "ref": "Matthew 28:17",
+      "context": "Matthew 28:16-20",
+      "where": "On a mountain in Galilee, the eleven see the risen Jesus. They worship him, and Matthew adds plainly that some doubted. Jesus comes closer and gives the commission to all of them."
+    },
+    {
+      "ref": "Luke 24:38-39",
+      "context": "Luke 24:36-43",
+      "where": "The risen Jesus stands among frightened disciples who think they are seeing a ghost. He asks why doubts rise in their hearts, and then invites them to look and touch. Then he eats in front of them."
+    },
+    {
+      "ref": "Psalm 73:16-17",
+      "context": "Psalm 73:13-17",
+      "where": "Asaph has watched the wicked prosper and nearly concluded that faithfulness was wasted. He says so in the psalm. What changed him was not winning the argument alone but going into God's presence and seeing the end of things."
+    },
+    {
+      "ref": "Habakkuk 1:2",
+      "context": "Habakkuk 1:2-4",
+      "where": "A prophet opens his book by complaining to God about violence and injustice that God seems to ignore. God answers him, and Habakkuk keeps arguing. The book is kept in Scripture, questions and all."
+    },
+    {
+      "ref": "Jude 1:22",
+      "context": "Jude 1:20-23",
+      "where": "Jude writes a hard-edged letter about false teachers, and still tells the church to have mercy on those who doubt. Doubters are to be met with mercy, not suspicion."
+    },
+    {
+      "ref": "1 Corinthians 15:17",
+      "context": "1 Corinthians 15:12-19",
+      "where": "Some in Corinth denied that the dead are raised. Paul does not ask them to believe regardless of the facts. He says that if Christ has not been raised, their faith is futile. Christian faith stakes itself on something that happened."
+    }
+  ],
+  "misread": [
+    {
+      "ref": "John 20:27",
+      "context": "John 20:24-29",
+      "taken": "“Doubting Thomas” has become a name for someone weak in faith, and this verse is used to tell doubters to stop asking questions.",
+      "says": "Thomas was not there when Jesus first appeared, and said he would not believe without seeing the wounds. A week later Jesus comes to him and offers exactly what he asked for. “Stop doubting and believe” is spoken to a man holding out his hand to the evidence, and Thomas answers with one of the fullest confessions of Jesus in the Gospels: “My Lord and my God!” Jesus then blesses those who believe without seeing, which includes every later reader. The story meets the doubter. It does not shame him."
+    }
+  ],
+  "whole": [
+    "Doubt arrives in different ways. For some it is an argument they cannot answer. For some it is a prayer that met silence, or suffering that seemed to disprove a good God. For some it is the church: people who taught them the faith turned out to be cruel or false, and the faith seemed to fall with them. Many doubting Christians feel they must hide it, because in their church questions sounded like betrayal.",
+    "The Bible is full of people who doubted out loud. A psalmist nearly gave up, a prophet complained, John the Baptist sent a question from prison, and some disciples doubted on the very mountain where they worshiped the risen Christ. Scripture does not treat these questions as sins. What it treats as dangerous is hardness of heart: a refusal to look, to ask, or to be answered. The opposite of faith in the Bible is not a question. It is turning away from the one who can answer it.",
+    "So the wisdom here is to bring doubt into the open, before God and before people who can bear it. Name which kind it is, because each kind needs a different answer: an argument needs evidence and patient thought, grief needs time and company, and a church wound needs honesty about what went wrong. Christianity rests on events that can be examined, above all the resurrection, and it has faced hard questions for two thousand years. Keep praying the father's prayer. Many have found that faith which has been through its questions holds more weight than faith that never asked."
+  ],
+  "differ": {
+    "share": "Christians agree that God welcomes honest questions, that faith is trust in God and not the absence of every question, and that the resurrection of Jesus is the center of the faith.",
+    "views": [
+      {
+        "name": "Doubt as a trial to pass through",
+        "body": "Some traditions treat doubt mainly as a trial of faith to be answered and outgrown, and stress assurance and settled conviction as the healthy state of a believer."
+      },
+      {
+        "name": "Doubt as part of a growing faith",
+        "body": "Others, including many who draw on the Psalms and on writers of the contemplative tradition, see seasons of doubt and darkness as a normal part of a maturing faith, through which God deepens trust."
+      }
+    ],
+    "after": "Both bring the doubter to Christ rather than away from him."
+  },
+  "sit": "Is your doubt mostly a question of the mind, a wound, or a grief, and who could you tell which it is?",
+  "prayer": {
+    "ref": "Psalm 73:25-26",
+    "lead": "The psalmist who nearly gave up ends here. These verses can be prayed even before they feel true."
+  },
+  "next": [
+    { "kind": "Honest Answer", "label": "What if Christianity is wrong?", "href": "/answers/what-if-christianity-is-wrong" },
+    { "kind": "Honest Answer", "label": "Did the resurrection actually happen?", "href": "/answers/did-the-resurrection-actually-happen" },
+    { "kind": "Find Help", "label": "Doubt", "href": "/help/doubt" },
+    { "kind": "Study guide", "label": "Doubt", "href": "/studyguides/doubt" }
+  ]
+}

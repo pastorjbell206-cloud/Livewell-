@@ -1,0 +1,104 @@
+{
+  "id": "suffering",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "Job 2:13",
+      "context": "Job 2:11-13",
+      "where": "Job has lost his children, his wealth and his health. Three friends come and sit on the ground with him for seven days without a word. Many readers think it is the best thing they do in the whole book."
+    },
+    {
+      "ref": "Job 42:7",
+      "context": "Job 42:7-9",
+      "where": "After chapters of the friends explaining that Job must have sinned to suffer so, God says they have not spoken about him rightly, as Job has. The tidy explanation is the one God rejects."
+    },
+    {
+      "ref": "John 9:2-3",
+      "context": "John 9:1-7",
+      "where": "The disciples assume a man's blindness must be punishment for someone's sin. Jesus rejects the assumption and then heals him. Suffering is not always a sign of guilt."
+    },
+    {
+      "ref": "Luke 13:4-5",
+      "context": "Luke 13:1-5",
+      "where": "Jesus is asked about recent disasters: worshipers killed by Pilate, eighteen people killed when a tower fell. He denies that the victims were worse sinners than anyone else, and turns the question toward everyone's need to repent."
+    },
+    {
+      "ref": "Psalm 22:1",
+      "context": "Psalm 22:1-5",
+      "where": "David cries out to a God who seems to have abandoned him, and in the same breath remembers that God rescued his people before. The psalm moves from abandonment to praise over its length, but it begins here."
+    },
+    {
+      "ref": "Matthew 27:46",
+      "context": "Matthew 27:45-50",
+      "where": "On the cross Jesus prays the first line of Psalm 22 aloud. The Son of God takes the cry of the abandoned into his own mouth. Whatever else suffering is, God has not stayed outside it."
+    },
+    {
+      "ref": "Isaiah 53:3",
+      "context": "Isaiah 53:1-3",
+      "where": "The servant of the LORD in Isaiah is a man of sorrows, familiar with grief, despised by those who see him. Christians from the New Testament on have read this as a portrait of Jesus."
+    },
+    {
+      "ref": "Romans 8:18",
+      "context": "Romans 8:18-25",
+      "where": "Paul, who had been beaten, shipwrecked and imprisoned, weighs present suffering against the glory to come and finds them not comparable. He does not call the suffering small; he calls the glory greater."
+    },
+    {
+      "ref": "Romans 8:26",
+      "context": "Romans 8:26-27",
+      "where": "When suffering leaves a person without words to pray, the Spirit prays for them with groans too deep for words. Even the inability to pray is held."
+    },
+    {
+      "ref": "2 Corinthians 1:3-4",
+      "context": "2 Corinthians 1:3-7",
+      "where": "Paul opens a letter written after severe trouble by praising the God of all comfort, who comforts people in their troubles so that they can comfort others. Suffering received this way can become a way of helping others."
+    },
+    {
+      "ref": "2 Corinthians 12:9",
+      "context": "2 Corinthians 12:7-10",
+      "where": "Paul asked three times for his “thorn in my flesh” to be taken away. The answer was not removal but grace enough, and power shown in weakness. Paul kept praying until he heard that answer."
+    }
+  ],
+  "misread": [
+    {
+      "ref": "Romans 8:28",
+      "context": "Romans 8:26-30",
+      "taken": "This verse is often quoted in the first days of a loss, as if it meant that everything that happens is good, or that a believer will soon see the happy reason for it.",
+      "says": "Paul says something more modest and more solid: God works all things together for the good of those who love him. The “all things” include the sufferings and groaning he has just described, and the trouble, famine and sword he names a few verses later. He does not call those things good. He says they cannot defeat God's purpose. And the good is defined in the next verse: being shaped into the likeness of Christ, which is more than comfort or success. It is a promise to hold, not a sentence to say to someone who is grieving."
+    }
+  ],
+  "whole": [
+    "Suffering sometimes comes all at once and sometimes in waves that do not stop: a diagnosis, then a job, then a marriage, then a child. Underneath the pain is a question that can be louder than the pain: why is this happening, and why would God let it. Many sufferers have also been given answers they did not ask for, that it must be for a reason, that they must have done something, that God is teaching them a lesson. Those answers often hurt more than silence.",
+    "The Bible does not explain every suffering, and it rejects the easy explanations people reach for. Job's friends insist that suffering always follows sin, and God says they were wrong. Jesus refuses to read a blind man's condition or a fallen tower as punishment. Scripture places suffering inside a larger story: a good world broken by sin, a creation groaning like a woman in labor, and a God who has not stayed outside it. The deepest answer it gives is not a reason but a person. In Jesus, God enters suffering himself, cries the psalm of the abandoned on a cross, and rises from the dead.",
+    "So the wisdom here is not to solve suffering but to carry it before God honestly. Lament is not a lack of faith. The psalms give words for it, and the Spirit prays when there are none. Let others sit with you the way Job's friends did before they started talking. Ask God for relief, as Paul did, and keep asking. Hold on to what is promised: that nothing can separate those in Christ from God's love, that God is at work toward a good larger than comfort, and that a day is coming when suffering will end. Hope does not cancel the pain now. It gives it somewhere to go."
+  ],
+  "differ": {
+    "share": "Christians agree that God is good and sovereign, that suffering is real and often undeserved, that God is present with those who suffer, and that in the end he will put all things right.",
+    "views": [
+      {
+        "name": "God ordains all things",
+        "body": "Some Christians, especially in the Reformed tradition, teach that God ordains everything that happens, suffering included, for purposes that are good even when hidden, while never being the author of evil."
+      },
+      {
+        "name": "God permits, and brings good from it",
+        "body": "Others teach that God permits suffering in a world where creatures have real freedom and creation is broken, without willing each evil, and works to bring good out of it."
+      }
+    ],
+    "after": "Both teach that God is never the enemy of the sufferer, and both point to the cross and the resurrection. The Honest Answer “If God is good, why is there so much suffering?” sets out the question for someone who is not sure God is there at all."
+  },
+  "sit": "Which of the answers you have been given has hurt you most, and what would it be like to bring the question itself to God, without an answer attached?",
+  "prayer": {
+    "ref": "Psalm 13:1-2, 5-6",
+    "lead": "Psalm 13 asks “How long?” four times before it can say anything else. It is a prayer for the middle of it."
+  },
+  "next": [
+    { "kind": "Honest Answer", "label": "If God is good, why is there so much suffering?", "href": "/answers/if-god-is-good-why-suffering" },
+    { "kind": "Honest Answer", "label": "Is it okay to be angry at God?", "href": "/answers/is-it-okay-to-be-angry-at-god" },
+    { "kind": "Find Help", "label": "Suffering", "href": "/help/suffering" },
+    { "kind": "Study guide", "label": "Lament", "href": "/studyguides/lament" }
+  ],
+  "careLines": [
+    { "from": "psalms/plain/88", "text": "If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country." },
+    { "from": "psalms/plain/88", "text": "If you are in danger right now, call your local emergency number." },
+    { "from": "psalms/plain/88", "text": "The Find Help page on this site lists places to turn." }
+  ]
+}
