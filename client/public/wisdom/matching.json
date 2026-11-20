@@ -3551,6 +3551,25 @@
     "people-pleasing",
     "success-and-failure"
    ]
+  },
+  "saving-and-spending": {
+   "phrases": [
+    "cant stop spending",
+    "impulse buying",
+    "saving for retirement or emergencies",
+    "living paycheck to paycheck",
+    "feel guilty spending money",
+    "credit card shopping",
+    "need a budget",
+    "online shopping every night",
+    "save for a rainy day"
+   ],
+   "not": [],
+   "related": [
+    "money",
+    "greed",
+    "financial-hardship"
+   ]
   }
  }
 }

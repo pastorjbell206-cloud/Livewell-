@@ -10046,6 +10046,10 @@
       "application": "Make a simple plan and live inside it, giving a portion first, saving a portion next, and spending what remains without guilt and without grasping. Put a pause between the want and the buy, since most impulses die if you wait a day. Stay out of the debt that makes you a servant to the lender, and gather steadily rather than chasing the quick win. Hold it all loosely, as a steward and not an owner, and let generosity loosen the grip of fear.",
       "verses": [
         {
+          "ref": "Proverbs 6:6-8",
+          "text": "Walk in the manner of the ant, O slacker; observe its ways and become wise. Without a commander, without an overseer or ruler, it prepares its provisions in summer; it gathers its food at harvest."
+        },
+        {
           "ref": "Proverbs 21:20",
           "text": "Precious treasures and oil are in the dwelling of the wise, but a foolish man consumes them."
         },
@@ -10054,16 +10058,32 @@
           "text": "Dishonest wealth will dwindle, but what is earned through hard work will be multiplied."
         },
         {
-          "ref": "Proverbs 22:7",
-          "text": "The rich rule over the poor, and the borrower is slave to the lender."
+          "ref": "Genesis 41:34-36",
+          "text": "Let Pharaoh take action and appoint commissioners over the land to take a fifth of the harvest of Egypt during the seven years of abundance. Under the authority of Pharaoh, let them collect all the excess food from these good years, that they may come and lay up the grain to be preserved as food in the cities. This food will be a reserve for the land during the seven years of famine to come upon the land of Egypt. Then the country will not perish in the famine.”"
         },
         {
-          "ref": "Luke 12:15",
-          "text": "And He said to them, “Watch out! Guard yourselves against every form of greed, for one’s life does not consist in the abundance of his possessions.”"
+          "ref": "Proverbs 27:23-24",
+          "text": "Be sure to know the state of your flocks, and pay close attention to your herds; for riches are not forever, nor does a crown endure to every generation."
         },
         {
-          "ref": "1 Timothy 6:6",
-          "text": "Of course, godliness with contentment is great gain."
+          "ref": "Ecclesiastes 11:1-2",
+          "text": "Cast your bread upon the waters, for after many days you will find it again. Divide your portion among seven, or even eight, for you do not know what disaster may befall the land."
+        },
+        {
+          "ref": "John 6:12",
+          "text": "And when everyone was full, He said to His disciples, “Gather the pieces that are left over, so that nothing will be wasted.”"
+        },
+        {
+          "ref": "Mark 14:4-6",
+          "text": "Some of those present, however, expressed their indignation to one another: “Why this waste of perfume? It could have been sold for over three hundred denarii and the money given to the poor.” And they scolded her. But Jesus said, “Leave her alone; why are you bothering her? She has done a beautiful deed to Me."
+        },
+        {
+          "ref": "Luke 16:10-11",
+          "text": "Whoever is faithful with very little will also be faithful with much, and whoever is dishonest with very little will also be dishonest with much. So if you have not been faithful with worldly wealth, who will entrust you with true riches?"
+        },
+        {
+          "ref": "Luke 15:13",
+          "text": "After a few days, the younger son got everything together and journeyed to a distant country, where he squandered his wealth in wild living."
         }
       ],
       "related": [
