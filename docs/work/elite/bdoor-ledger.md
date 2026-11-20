@@ -11024,3 +11024,26 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Muthoi as myths of the gods; eyewitness evidence in law and history; transfiguration in the Gospels; Tabor and Hermon; morning star probably Christ; pherō of a ship (Acts 27:15, 17) | 16-21 | 2-peter/1.json `cultural`, `historical`, `christ`, `words` (G5342) | Repository |
 | Two readings of 1:20; Catholic, Orthodox and Protestant emphases; 3:16 | 16-21 | 2-peter/1.json `hard` | Repository, no side |
 | Psalm 2:7; Isaiah 42:1; Numbers 24:17; Psalm 119:105; 2 Samuel 23:2; Jeremiah 23:16 | 16-21 | BSB | BSB text |
+
+## The plain notes on 2 Peter 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Danger from inside; despotēs a slave's owner; greed and exploitation; judgment not asleep (3:4-9 to come) | 1-3 | 2-peter/2.json `words` (G1203), `doctrines`; 2-peter/intro.json `setting`, `reading` | Repository |
+| Extent of the atonement: Christ died for all; particular redemption and its readings of verse 1 | 1-3 | 2-peter/2.json `hard` | Repository, no side |
+| Care line ‘If you have been harmed by a controlling leader or church ...’ | 1-3 | 2-corinthians/plain/11.json (16-21 `hard`) | Word for word |
+| Deuteronomy 13:3; Jeremiah 14:14; Ezekiel 34:10 | 1-3 | BSB | BSB text |
+| One conditional sentence; judgment paired with rescue; tartaroō and Tartarus in Greek and Jewish use; Genesis 6:1-4 as read in tradition; holding before judgment | 4-10 | 2-peter/2.json `literary`, `cultural`, `words` (G5020) | Repository |
+| 1 Enoch's imprisoned angels; the Seth and kings readings of Genesis 6; Jude 6-7 and 14-15; most think 2 Peter used Jude | 4-10 | 1-peter/3.json `historical`; genesis/plain/6.json; bible/guides/canon.json; 2-peter/2.json `historical` | Repository, no side |
+| No position on the flood's extent or the age of the earth | 4-10 | Instruction for this run | Stated, no claim |
+| Genesis 6:2; 7:1; 19:16, 24; Luke 17:26, 28 | 4-10 | BSB | BSB text |
+| Prophetic denunciation style; love feasts (Jude 12); deleazō ‘seduce’ (bait); gumnazō ‘trained’; Balaam | 11-16 | 2-peter/2.json `literary`, `cultural`; lexicon G1185, G1128 | Repository |
+| Numbers 22:28, 31; Deuteronomy 23:4; Numbers 31:16 | 11-16 | BSB | BSB text |
+| Freedom and Epicurean-like denial of judgment; a slave to whatever masters him; proverbs (Proverbs 26:11) | 17-22 | 2-peter/2.json `cultural`, `words` (G1657), `literary` | Repository |
+| Arminian and Wesleyan; Reformed readings of 20-22; the pastoral point | 17-22 | 2-peter/2.json `hard` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 17-22 | galatians/plain/5.json (1-6 `hard`) | Word for word |
+| Proverbs 26:11; Jeremiah 2:13; Ezekiel 18:24 | 17-22 | BSB | BSB text |
+
+Cut before publishing: why Peter calls Noah a preacher (‘perhaps his life and his building of the ark’); ‘glorious beings’ as angelic powers (now only what verse 11 says).
