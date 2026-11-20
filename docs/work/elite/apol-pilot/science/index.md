@@ -23,6 +23,7 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 3. **A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?** Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.
 4. **Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?** What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.
 5. **Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?** The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.
+6. **The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?** What the sciences measure and how, what the text and its ancient copies say, the readings of the days each in its holders' terms with its hardest difficulty, and what all of them confess.
 
 ## Words these pages use
 
@@ -33,6 +34,7 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 - **Conflict thesis**: the view, made popular by John William Draper (1874) and Andrew Dickson White (1896), that science and religion have always been at war.
 - **Fine-tuning**: the finding that some of the constants and starting conditions of physics fall within narrow ranges that allow life.
 - **Multiverse**: the proposal that our universe is one of a vast number of universes or regions, perhaps with different constants.
+- **Radiometric dating**: measuring the age of a rock or meteorite from the decay of radioactive elements, which turn into other elements at rates measured in the laboratory.
 
 ## Where else to look
 
