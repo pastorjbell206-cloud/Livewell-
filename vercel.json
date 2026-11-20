@@ -1,4 +1,9 @@
 {
+  "git": {
+    "deploymentEnabled": {
+      "claude/todo-implementation-hhp4bm": false
+    }
+  },
   "buildCommand": "pnpm run build:vercel",
   "outputDirectory": "dist/public",
   "trailingSlash": false,

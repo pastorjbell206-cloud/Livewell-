@@ -476,7 +476,10 @@
     "child turned his back",
     "child turned her back",
     "child mocks faith",
-    "child left"
+    "child left",
+    "child lost faith",
+    "child is an atheist",
+    "child no longer believes"
    ],
    "not": [],
    "related": [
@@ -496,7 +499,12 @@
     "constant worry",
     "worry about everything",
     "nervous all the time",
-    "what if"
+    "what if",
+    "heart racing",
+    "on edge all the time",
+    "worst case",
+    "chest gets tight",
+    "anxious all the time"
    ],
    "not": [],
    "related": [
@@ -522,7 +530,10 @@
     "now she's gone",
     "now he's gone",
     "she's gone",
-    "he's gone"
+    "he's gone",
+    "first christmas without",
+    "missing someone",
+    "anniversary of the death"
    ],
    "not": [],
    "related": [
@@ -545,7 +556,11 @@
     "bitterness",
     "resentment",
     "resent",
-    "hold a grudge"
+    "hold a grudge",
+    "lash out",
+    "short fuse",
+    "seething",
+    "road rage"
    ],
    "not": [
     "angry at god",
@@ -574,7 +589,10 @@
     "paycheck to paycheck",
     "foreclosure",
     "bankrupt",
-    "evicted"
+    "evicted",
+    "cant pay rent",
+    "in debt",
+    "collection agency"
    ],
    "not": [
     "gamble"
@@ -593,7 +611,11 @@
     "how much money",
     "rich",
     "wealth",
-    "provision"
+    "provision",
+    "tithing",
+    "budget",
+    "saving money",
+    "money worries"
    ],
    "not": [],
    "related": [
@@ -619,7 +641,8 @@
     "what he did",
     "what she did",
     "what they did",
-    "never forgive"
+    "never forgive",
+    "hold a grudge"
    ],
    "not": [
     "forgive myself",
@@ -648,7 +671,8 @@
     "doubt god",
     "is christianity true",
     "dont know what i believe",
-    "believe any of it"
+    "believe any of it",
+    "not sure god is real"
    ],
    "not": [],
    "related": [
@@ -719,7 +743,12 @@
     "dead end job",
     "work matter to god",
     "meaningful work",
-    "purpose in my work"
+    "purpose in my work",
+    "gods will for my life",
+    "whats my purpose",
+    "called to ministry",
+    "sense of calling",
+    "gods plan for my life"
    ],
    "not": [],
    "related": [
@@ -797,7 +826,27 @@
     "cut me off",
     "no contact",
     "not speaking",
-    "cut off"
+    "cut off",
+    "estranged son",
+    "estranged daughter",
+    "estranged from my",
+    "disowned me",
+    "blocked my number",
+    "went no contact",
+    "havent seen my grandkids",
+    "wont let me see my grandchildren",
+    "family wont talk to me",
+    "havent spoken in years",
+    "cut off my parents",
+    "cut off my mother",
+    "cut off my father",
+    "son stopped talking to me",
+    "daughter stopped talking to me",
+    "hasnt spoken to me",
+    "hasnt talked to me",
+    "havent spoken to my",
+    "son wont speak to me",
+    "daughter wont speak to me"
    ],
    "not": [],
    "related": [
@@ -813,7 +862,16 @@
     "wife cheated",
     "husband cheated",
     "after the affair",
-    "unfaithful"
+    "unfaithful",
+    "rebuild trust",
+    "he had an affair",
+    "she had an affair",
+    "stay after cheating",
+    "can our marriage survive",
+    "affair partner",
+    "forgive an affair",
+    "found out about the affair",
+    "should i stay or leave"
    ],
    "not": [],
    "related": [
@@ -873,7 +931,12 @@
     "looking at porn",
     "watching porn",
     "porn addiction",
-    "cant stop looking"
+    "cant stop looking",
+    "caught my husband watching porn",
+    "explicit videos",
+    "onlyfans",
+    "cant stop watching porn",
+    "porn"
    ],
    "not": [],
    "related": [
@@ -888,7 +951,17 @@
     "drink too much",
     "every night drink",
     "drinking problem",
-    "need a drink"
+    "need a drink",
+    "can christians drink",
+    "is drinking a sin",
+    "is it a sin to drink",
+    "hungover",
+    "hangover",
+    "alcoholic",
+    "cant stop drinking",
+    "wine every night",
+    "drinks every night",
+    "blackout drunk"
    ],
    "not": [
     "drunk driver"
@@ -905,7 +978,14 @@
     "the doctor said",
     "bad news from the doctor",
     "diagnosed with",
-    "test results"
+    "test results",
+    "in the hospital",
+    "surgery",
+    "chemo",
+    "heart attack",
+    "stroke",
+    "biopsy",
+    "scared of the results"
    ],
    "not": [],
    "related": [
@@ -942,7 +1022,13 @@
     "cant get pregnant",
     "trying to conceive",
     "ivf",
-    "no children"
+    "no children",
+    "negative pregnancy test",
+    "childless",
+    "want a baby so badly",
+    "trying for a baby",
+    "fertility treatments",
+    "fertility doctor"
    ],
    "not": [],
    "related": [
@@ -959,7 +1045,17 @@
     "dementia",
     "alzheimers",
     "aging parent",
-    "nursing home"
+    "nursing home",
+    "assisted living",
+    "memory care",
+    "parents getting old",
+    "move mom in with us",
+    "move dad in with us",
+    "take away the car keys",
+    "elderly parent",
+    "aging parents",
+    "parents need more help",
+    "cant live alone"
    ],
    "not": [],
    "related": [
@@ -1070,13 +1166,28 @@
     "make them pay",
     "ruined my life",
     "get even",
-    "want them to suffer"
+    "want them to suffer",
+    "pay them back",
+    "payback",
+    "teach them a lesson",
+    "make him pay",
+    "make her pay",
+    "ruin his life",
+    "ruin her life",
+    "they deserve to suffer",
+    "eye for an eye",
+    "turn the other cheek",
+    "fantasize about getting even",
+    "get back at my ex",
+    "expose him publicly",
+    "expose her publicly"
    ],
    "not": [],
    "related": [
     "forgiveness",
     "anger",
-    "loving-your-enemies"
+    "loving-your-enemies",
+    "betrayal"
    ]
   },
   "facing-death": {
@@ -1085,7 +1196,14 @@
     "afraid to die",
     "scared of death",
     "fear of death",
-    "dying soon"
+    "dying soon",
+    "not long left",
+    "prepare to die",
+    "end of my life",
+    "last days",
+    "making peace before i die",
+    "how do i die well",
+    "close to the end"
    ],
    "not": [],
    "related": [
@@ -1099,7 +1217,17 @@
     "teen is out of control",
     "out of control",
     "teenage son",
-    "teenage daughter"
+    "teenage daughter",
+    "teen wont talk to me",
+    "slams the door",
+    "slams her door",
+    "slams his door",
+    "vaping",
+    "on the phone all the time",
+    "rolls her eyes",
+    "sixteen year old",
+    "fifteen year old",
+    "sneaking out at night"
    ],
    "not": [
     "was killed",
@@ -1163,9 +1291,27 @@
     "want to be married",
     "single for so long",
     "will i ever marry",
-    "still single"
+    "still single",
+    "pray for a husband",
+    "pray for a wife",
+    "praying for a spouse",
+    "everyone is getting married but me",
+    "all my friends are married",
+    "too old to marry",
+    "will god give me a spouse",
+    "wish i had a husband",
+    "wish i had a wife",
+    "single and want to marry",
+    "still not married",
+    "never dated anyone",
+    "will i ever find a husband",
+    "will i ever find a wife",
+    "nobody has ever asked me out"
    ],
-   "not": [],
+   "not": [
+    "boyfriend isnt a christian",
+    "girlfriend isnt a christian"
+   ],
    "related": [
     "singleness",
     "dating",
@@ -1178,11 +1324,30 @@
     "girlfriend isnt a christian",
     "not a christian",
     "doesnt believe",
-    "isnt a believer"
+    "isnt a believer",
+    "date someone who isnt a christian",
+    "dating a non christian",
+    "dating a nonbeliever",
+    "marry a nonbeliever",
+    "marry someone who isnt a christian",
+    "unequally yoked",
+    "boyfriend doesnt believe in god",
+    "girlfriend doesnt believe in god",
+    "missionary dating",
+    "different religion",
+    "he isnt saved",
+    "she isnt saved",
+    "not a believer",
+    "atheist boyfriend",
+    "atheist girlfriend",
+    "boyfriend not saved",
+    "girlfriend not saved",
+    "break up because hes not saved"
    ],
    "not": [],
    "related": [
-    "dating"
+    "dating",
+    "longing-for-marriage"
    ]
   },
   "saying-no": {
@@ -1221,12 +1386,26 @@
     "he left me",
     "ex boyfriend",
     "ex girlfriend",
-    "my ex"
+    "my ex",
+    "got dumped",
+    "heartbroken",
+    "broken heart",
+    "miss my ex",
+    "engagement ended",
+    "called off the engagement",
+    "relationship ended",
+    "ex moved on",
+    "ex has someone new",
+    "ended our relationship",
+    "still in love with my ex",
+    "girlfriend ended things",
+    "boyfriend ended things"
    ],
    "not": [],
    "related": [
     "forgiveness",
-    "loneliness"
+    "loneliness",
+    "dating"
    ]
   },
   "losing-a-spouse": {
@@ -1237,7 +1416,12 @@
     "widow",
     "widower",
     "lost my husband",
-    "lost my wife"
+    "lost my wife",
+    "alone after forty years",
+    "first year without him",
+    "first year without her",
+    "my husband is gone",
+    "my wife is gone"
    ],
    "not": [],
    "related": [
@@ -1300,7 +1484,12 @@
     "lost my mom",
     "lost my dad",
     "lost my mother",
-    "lost my father"
+    "lost my father",
+    "both parents gone",
+    "father passed",
+    "mother passed",
+    "orphan now",
+    "parent died"
    ],
    "not": [],
    "related": [
@@ -1391,7 +1580,12 @@
     "self loathing",
     "disgusted with myself",
     "hate who i see",
-    "hate the person in the mirror"
+    "hate the person in the mirror",
+    "im ugly",
+    "hate my body",
+    "not good enough",
+    "everything wrong with me",
+    "cant stand myself"
    ],
    "not": [],
    "related": [
@@ -1407,7 +1601,11 @@
     "dont want to be alive",
     "no reason to live",
     "want to die",
-    "end my life"
+    "end my life",
+    "thoughts of suicide",
+    "suicidal",
+    "dont want to wake up",
+    "wish i were dead"
    ],
    "not": [],
    "related": [
@@ -1422,7 +1620,12 @@
     "lost hope",
     "give up",
     "hopeless",
-    "whats the point"
+    "whats the point",
+    "nothing will ever change",
+    "lost all hope",
+    "too far gone",
+    "hope is gone",
+    "ready to give up"
    ],
    "not": [],
    "related": [
@@ -1437,7 +1640,20 @@
     "toxic family",
     "toxic parents",
     "my family is hard",
-    "family drama"
+    "family drama",
+    "my mom screams",
+    "mother screams",
+    "parents yell at me",
+    "dread the holidays",
+    "narcissistic mother",
+    "narcissistic father",
+    "my family hates me",
+    "black sheep",
+    "mother in law",
+    "father in law",
+    "parents favor my brother",
+    "parents favor my sister",
+    "never good enough for my parents"
    ],
    "not": [],
    "related": [
@@ -1544,12 +1760,29 @@
     "friend betrayed",
     "stabbed me in the back",
     "lied about me",
-    "friend lied about me"
+    "friend lied about me",
+    "backstabbed",
+    "best friend betrayed me",
+    "business partner cheated me",
+    "told my secret",
+    "shared my secret",
+    "broke my trust",
+    "cant trust anyone",
+    "went behind my back",
+    "friend turned on me",
+    "two faced friend",
+    "pastor betrayed",
+    "betrayed by my",
+    "used me and left",
+    "business partner stole",
+    "partner took the money"
    ],
    "not": [],
    "related": [
     "forgiveness",
-    "reconciliation"
+    "reconciliation",
+    "revenge",
+    "marriage-after-an-affair"
    ]
   },
   "addiction": {
@@ -1558,7 +1791,18 @@
     "addiction",
     "cant stop using",
     "relapse",
-    "pills"
+    "pills",
+    "back on drugs",
+    "relapsed",
+    "cant quit",
+    "rehab",
+    "detox",
+    "high all the time",
+    "need it to get through the day",
+    "my son is using",
+    "overdosed",
+    "using drugs again",
+    "hooked on pills"
    ],
    "not": [],
    "related": [
@@ -1613,7 +1857,12 @@
     "life is unfair",
     "so unfair",
     "not fair",
-    "wicked prosper"
+    "wicked prosper",
+    "why do they get ahead",
+    "cheaters prosper",
+    "work harder and get nothing",
+    "took credit for my work",
+    "dishonest people get ahead"
    ],
    "not": [],
    "related": [
@@ -1626,7 +1875,16 @@
     "kids moved out",
     "house is quiet",
     "house is so quiet",
-    "children left home"
+    "children left home",
+    "last child left",
+    "kids are gone",
+    "all the kids gone",
+    "miss my kids",
+    "youngest left home",
+    "who am i without the kids",
+    "kids grown and gone",
+    "house feels empty",
+    "last of our kids"
    ],
    "not": [],
    "related": [
@@ -1645,7 +1903,14 @@
     "hurts every day",
     "hurt every day",
     "hurt every single day",
-    "pain for years"
+    "pain for years",
+    "fibromyalgia",
+    "migraines",
+    "pain never goes away",
+    "chronic illness",
+    "autoimmune",
+    "flare up",
+    "arthritis"
    ],
    "not": [],
    "related": [
@@ -1674,7 +1939,13 @@
     "why do good people suffer",
     "good people suffer",
     "why is there evil",
-    "innocent suffer"
+    "innocent suffer",
+    "why do bad things happen",
+    "god let this happen",
+    "evil in the world",
+    "children suffer",
+    "how can a good god",
+    "where was god"
    ],
    "not": [],
    "related": [
@@ -1723,7 +1994,15 @@
     "so sad",
     "dark place",
     "cant get out of bed",
-    "feel empty"
+    "feel empty",
+    "numb inside",
+    "nothing matters",
+    "sad all the time",
+    "dead inside",
+    "dark cloud",
+    "cant feel anything",
+    "stopped caring about everything",
+    "no energy for anything"
    ],
    "not": [],
    "related": [
@@ -1734,7 +2013,20 @@
   "cheating": {
    "phrases": [
     "cheated on me",
-    "cheating on"
+    "cheating on",
+    "he cheated",
+    "she cheated",
+    "cheating on me",
+    "seeing someone else",
+    "seeing someone",
+    "emotional affair",
+    "cheat on a test",
+    "cheat on an exam",
+    "copied homework",
+    "copied answers",
+    "plagiarized",
+    "cheating on taxes",
+    "cheated at work"
    ],
    "not": [
     "diet"
@@ -1764,7 +2056,16 @@
     "grown daughter",
     "adult son",
     "adult daughter",
-    "grown children"
+    "grown children",
+    "kids in their twenties",
+    "moved back home",
+    "adult child",
+    "son in law",
+    "daughter in law",
+    "adult kids",
+    "lend money to my son",
+    "lend money to my daughter",
+    "grown kids"
    ],
    "not": [],
    "related": [
@@ -1840,7 +2141,14 @@
     "yell at my kids",
     "hard to parent",
     "bad parent",
-    "failing as a parent"
+    "failing as a parent",
+    "worn out parenting",
+    "dont know how to parent",
+    "kids wont listen",
+    "discipline my kids",
+    "single parent",
+    "single mom",
+    "single dad"
    ],
    "not": [],
    "related": [
@@ -1851,7 +2159,17 @@
   "sibling-conflict": {
    "phrases": [
     "my brother",
-    "my sister"
+    "my sister",
+    "fight with my brother",
+    "fight with my sister",
+    "siblings",
+    "brother wont speak to me",
+    "sister wont speak to me",
+    "fighting over the inheritance",
+    "fighting over the estate",
+    "parents favored",
+    "my brothers wont help",
+    "my sisters wont help"
    ],
    "not": [],
    "related": [
@@ -1903,7 +2221,16 @@
     "sleeping together",
     "sex before marriage",
     "sex outside marriage",
-    "sleeping together and not married"
+    "sleeping together and not married",
+    "sleeping with my boyfriend",
+    "sleeping with my girlfriend",
+    "hookups",
+    "living together",
+    "waiting until marriage",
+    "purity",
+    "lust",
+    "sex with my boyfriend",
+    "sex with my girlfriend"
    ],
    "not": [],
    "related": []
@@ -1914,20 +2241,47 @@
     "behind his back",
     "behind their back",
     "something cruel about",
-    "spreading rumors"
+    "spreading rumors",
+    "talking behind my back",
+    "rumors about me",
+    "gossip at church",
+    "people talking about me",
+    "said something i regret",
+    "cant keep a secret",
+    "slander",
+    "badmouthing",
+    "trash talking",
+    "words i cant take back",
+    "gossip"
    ],
    "not": [],
-   "related": []
+   "related": [
+    "honesty-and-integrity",
+    "conflict-with-others"
+   ]
   },
   "justice-and-the-poor": {
    "phrases": [
     "homeless",
     "homeless people",
     "care about the poor",
-    "people in poverty"
+    "people in poverty",
+    "help the poor",
+    "unfair wages",
+    "racism",
+    "oppressed",
+    "food bank",
+    "refugees",
+    "exploited workers",
+    "poverty",
+    "people struggling to survive",
+    "how should christians help"
    ],
    "not": [],
-   "related": []
+   "related": [
+    "generosity-and-giving",
+    "when-life-is-unfair"
+   ]
   },
   "giving-to-the-church": {
    "phrases": [
@@ -1940,12 +2294,31 @@
    "related": []
   },
   "marriage-communication": {
-   "phrases": [],
+   "phrases": [
+    "we dont talk",
+    "doesnt listen to me",
+    "talk past each other",
+    "cant talk to my husband",
+    "cant talk to my wife",
+    "silent treatment",
+    "stonewalling",
+    "only talk about the kids",
+    "feel unheard",
+    "communicate better",
+    "barely talk",
+    "husband never listens",
+    "wife never listens",
+    "husband shuts me out",
+    "wife shuts me out"
+   ],
    "not": [
     "cant get pregnant",
     "cant have children"
    ],
-   "related": []
+   "related": [
+    "marriage-conflict",
+    "marriage-intimacy"
+   ]
   },
   "terminal-diagnosis": {
    "phrases": [
@@ -1956,7 +2329,12 @@
     "not much time left",
     "prognosis",
     "stage four",
-    "hospice"
+    "hospice",
+    "incurable",
+    "terminal cancer",
+    "terminal",
+    "palliative care",
+    "given months"
    ],
    "not": [
     "clean",
@@ -1975,7 +2353,11 @@
     "why did i survive",
     "should have been me",
     "i survived",
-    "only one who survived"
+    "only one who survived",
+    "why me and not them",
+    "i lived and they died",
+    "why was i spared",
+    "guilty for surviving"
    ],
    "not": [],
    "related": [
@@ -1990,12 +2372,355 @@
     "growing old",
     "old age",
     "body can't do",
-    "body cant do"
+    "body cant do",
+    "memory slipping",
+    "turning seventy",
+    "turning eighty",
+    "my body is failing",
+    "cant do what i used to",
+    "losing my independence",
+    "old and useless",
+    "wrinkles and gray hair",
+    "body slowing down",
+    "feeling my age"
    ],
    "not": [],
    "related": [
     "retirement",
     "chronic-pain"
+   ]
+  },
+  "caregiving": {
+   "phrases": [
+    "taking care of my husband",
+    "taking care of my wife",
+    "caring for my husband",
+    "caring for my wife",
+    "caregiver",
+    "full time care",
+    "worn out caring",
+    "no break from caring",
+    "bathe and feed",
+    "look after him all day",
+    "look after her all day",
+    "sick spouse at home",
+    "caregiver burnout"
+   ],
+   "not": [],
+   "related": [
+    "serious-illness",
+    "rest-and-sabbath"
+   ]
+  },
+  "going-to-college": {
+   "phrases": [
+    "leaving for college",
+    "starting college",
+    "freshman year",
+    "dorm",
+    "college roommate",
+    "away at school",
+    "university",
+    "first year at uni",
+    "homesick at college",
+    "faith in college",
+    "losing faith at college",
+    "son leaving for college",
+    "daughter leaving for college",
+    "going away to school"
+   ],
+   "not": [],
+   "related": [
+    "empty-nest",
+    "loneliness",
+    "life-transitions"
+   ]
+  },
+  "heaven-and-eternity": {
+   "phrases": [
+    "what is heaven like",
+    "where do we go when we die",
+    "is heaven real",
+    "afterlife",
+    "life after death",
+    "in heaven",
+    "see my loved ones again",
+    "what happens when we die",
+    "eternal life",
+    "new heaven and new earth",
+    "will we know each other in heaven"
+   ],
+   "not": [],
+   "related": [
+    "grief",
+    "facing-death",
+    "the-resurrection"
+   ]
+  },
+  "marriage-intimacy": {
+   "phrases": [
+    "sexless marriage",
+    "not intimate",
+    "doesnt want sex",
+    "different sex drives",
+    "rejected in bed",
+    "in the bedroom",
+    "physical affection",
+    "romance is gone",
+    "no intimacy",
+    "no sex in our marriage"
+   ],
+   "not": [],
+   "related": [
+    "marriage-communication",
+    "marriage-conflict",
+    "sexual-purity"
+   ]
+  },
+  "new-parenthood": {
+   "phrases": [
+    "new baby",
+    "newborn",
+    "new mom",
+    "new dad",
+    "first baby",
+    "no sleep with the baby",
+    "postpartum",
+    "baby blues",
+    "becoming a parent",
+    "first time parent",
+    "baby wont stop crying",
+    "brought the baby home"
+   ],
+   "not": [],
+   "related": [
+    "parenting-young-children",
+    "anxiety",
+    "marriage-communication"
+   ]
+  },
+  "parenting-young-children": {
+   "phrases": [
+    "toddler",
+    "tantrums",
+    "preschooler",
+    "potty training",
+    "bedtime battles",
+    "little kids",
+    "young children",
+    "terrible twos",
+    "discipline a toddler",
+    "spanking",
+    "my three year old",
+    "my four year old",
+    "my five year old"
+   ],
+   "not": [],
+   "related": [
+    "parenting-struggles",
+    "new-parenthood",
+    "patience"
+   ]
+  },
+  "rest-and-sabbath": {
+   "phrases": [
+    "sabbath",
+    "day of rest",
+    "cant slow down",
+    "no time to rest",
+    "keep the sabbath",
+    "work on sunday",
+    "feel guilty resting",
+    "guilty taking a break",
+    "work seven days a week"
+   ],
+   "not": [],
+   "related": [
+    "work-and-burnout",
+    "busyness-and-overwhelm",
+    "work-life-balance"
+   ]
+  },
+  "submitting-to-leaders": {
+   "phrases": [
+    "obey my pastor",
+    "submit to authority",
+    "disagree with my pastor",
+    "controlling pastor",
+    "church leaders",
+    "elders",
+    "boss tells me to lie",
+    "obey the government",
+    "authority over me",
+    "spiritual abuse",
+    "pastor abuses power"
+   ],
+   "not": [],
+   "related": [
+    "church-hurt",
+    "guilt-and-conscience"
+   ]
+  },
+  "dating": {
+   "phrases": [
+    "christian dating",
+    "how do i know if hes the one",
+    "how do i know if shes the one",
+    "dating apps",
+    "first date",
+    "is it ok to date",
+    "how long should we date",
+    "should we get engaged",
+    "red flags dating",
+    "started dating",
+    "dating someone new",
+    "crush on",
+    "falling for someone",
+    "should we get married or wait",
+    "is he the right person to marry",
+    "is she the right person to marry"
+   ],
+   "not": [
+    "isnt a christian",
+    "not a christian",
+    "nonbeliever",
+    "unequally yoked"
+   ],
+   "related": [
+    "dating-a-nonbeliever",
+    "singleness",
+    "longing-for-marriage"
+   ]
+  },
+  "singleness": {
+   "phrases": [
+    "single christian",
+    "single at church",
+    "single in my thirties",
+    "single in my forties",
+    "single and happy",
+    "gift of singleness",
+    "is singleness a calling",
+    "celibate",
+    "only single person",
+    "church treats singles",
+    "stay single",
+    "single the rest of my life",
+    "god wants me single",
+    "single after divorce"
+   ],
+   "not": [],
+   "related": [
+    "longing-for-marriage",
+    "loneliness",
+    "deep-friendship"
+   ]
+  },
+  "reconciliation": {
+   "phrases": [
+    "make things right",
+    "make peace with",
+    "want to reconcile",
+    "fix our friendship",
+    "mend the relationship",
+    "restore the relationship",
+    "patch things up",
+    "reach out after years",
+    "repair the relationship",
+    "make amends",
+    "say im sorry after all these years",
+    "reconcile with my",
+    "make up after a fight"
+   ],
+   "not": [],
+   "related": [
+    "estrangement",
+    "forgiveness",
+    "apologizing-well",
+    "conflict-with-others"
+   ]
+  },
+  "conflict-with-others": {
+   "phrases": [
+    "argument with my friend",
+    "fight with my neighbor",
+    "neighbor dispute",
+    "hard conversation",
+    "how do i confront",
+    "confront someone",
+    "we keep arguing",
+    "tension at church",
+    "people at church fighting",
+    "disagreement with",
+    "cant get along with",
+    "clash with",
+    "family group chat",
+    "argument got out of hand"
+   ],
+   "not": [
+    "husband",
+    "wife",
+    "boss",
+    "coworker"
+   ],
+   "related": [
+    "reconciliation",
+    "conflict-at-work",
+    "anger",
+    "gossip-and-the-tongue"
+   ]
+  },
+  "deep-friendship": {
+   "phrases": [
+    "no close friends",
+    "dont have any real friends",
+    "how to make friends",
+    "make friends as an adult",
+    "friends drifted away",
+    "best friend moved away",
+    "want a best friend",
+    "shallow friendships",
+    "nobody to call",
+    "friendship ended",
+    "lost touch with friends",
+    "true friend",
+    "good friend"
+   ],
+   "not": [
+    "boyfriend",
+    "girlfriend"
+   ],
+   "related": [
+    "loneliness",
+    "betrayal",
+    "singleness"
+   ]
+  },
+  "codependency": {
+   "phrases": [
+    "codependent",
+    "enabling",
+    "i keep rescuing",
+    "cover for his drinking",
+    "cover for her drinking",
+    "make excuses for him",
+    "make excuses for her",
+    "my whole life revolves around",
+    "responsible for his feelings",
+    "responsible for her feelings",
+    "cant say no to him",
+    "cant say no to her",
+    "need to be needed",
+    "fix everyone",
+    "lost myself in this relationship",
+    "lost myself taking care of"
+   ],
+   "not": [],
+   "related": [
+    "people-pleasing",
+    "setting-boundaries",
+    "saying-no",
+    "identity-and-worth"
    ]
   }
  }
