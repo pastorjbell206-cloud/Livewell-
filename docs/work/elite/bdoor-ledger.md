@@ -8488,3 +8488,36 @@ One search (ancient mirrors; Corinthian bronze). Scripture is the BSB in the rep
 | Exodus 33:11; Numbers 12:8; Psalm 17:15; Jeremiah 31:3 | 8-13 | BSB | BSB text |
 
 Cut: Plato's Symposium and the claim that agapē was rare in classical Greek (deep note; not checked); Corinthian bronze as famous; Cybele and Dionysus.
+
+## The plain notes on 1 Corinthians 14 (2026-11-20)
+
+One search (the place of 14:34-35 in the manuscripts). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Oikodomē the key word; prophecy mostly not foretelling | 1-5 | Deep note `words` | Repository |
+| Numbers 11:29; Joel 2:28; Jeremiah 23:28; Nehemiah 8:8 | 1-5 | BSB | BSB text |
+| Corinth a port with two harbours | 6-19 | Book page ledger | Ledger |
+| Barbaros at 14:11 | 6-19 | Repository Greek | Script |
+| Amen kept in Greek-speaking churches (14:16) | 6-19 | BSB | BSB text |
+| Tongues: unlearned human languages (Acts 2:6), or a prayer language; pointer to Acts 2 | 6-19 | Deep note `words`; Acts 2 plain note | Stated as readings |
+| Numbers 10:9; Joel 2:1; Psalm 150:3; 41:13 | 6-19 | BSB | BSB text |
+| Isaiah 28:11-12 in the BSB; Paul's own form; Assyrian invaders; foreign speech a sign of judgment | 20-25 | BSB; deep note `historical` | BSB text. No claim about Paul's source text |
+| 14:22 read with Isaiah | 20-25 | Deep note `historical` | Stated as "many readers" |
+| Zechariah 8:23; Isaiah 45:14 | 20-25 | BSB | BSB text |
+| House meeting with many taking part (14:26); prophecies weighed; spirits subject to prophets | 26-33 | BSB; deep note `historical` | BSB text |
+| Sigaō three times (14:28, 30, 34) | 26-33 | Deep note `words`; repository Greek | Script |
+| 14:33 quoted before the BSB's dash | 26-33 | BSB | BSB text |
+| Deuteronomy 18:22; Genesis 1; Exodus 25 to 40 | 26-33 | BSB | BSB text |
+| 11:5 women pray and prophesy; so not total silence on the usual readings | 34-35 | BSB; book page | Repository |
+| Philo: markets, council halls, law courts for men; the house for women | 34-35 | whon-ledger (Philo, Special Laws 3.169-171) | Ledger. Paraphrased |
+| No Old Testament verse commands women's silence; ‘the law’ as Genesis, Scripture's principle, or custom | 34-35 | Deep note `hard` | Stated as readings |
+| Every known Greek copy has 14:34-35; in a few ‘Western’ copies (and manuscript 88) they stand after verse 40; some scholars: a margin note copied in; many others: Paul's words, moved by a copyist | 34-35 | Text-critical scholarship | Search: zondervanacademic.com ("Why would 1 Cor 14:34-35 be an interpolation?"); cbeinternational.org (the case for authenticity; quotation-refutation); mdpi.com Religions 2022. No scholar named; manuscript 88 and dates not on the page |
+| Readings: weighing prophecies; disruptive questions; a rule for that setting; general rule with 1 Timothy 2:12; a Corinthian saying rejected (14:36); later addition; the historic reading | 34-35 | Deep note `hard`; search above | Stated as readings |
+| Complementarian and egalitarian paragraphs | 34-35 | Acts 18 and Romans 16 plain notes, opening sentences word for word | Repository |
+| Judges 4:4; 2 Kings 22:14; Exodus 15:20; Joel 2:28; Genesis 3:16; Acts 18:26; Romans 16:1 | 34-35 | BSB | BSB text |
+| 14:38 ‘ignored’ (NA28, NA27, Tyndale House, SBL, Westcott and Hort) or ‘let him be ignorant’ in other copies | 36-40 | Repository Greek (edition tag at 14:38) | Script |
+| Tongues today: continuing command or ceased; pointer to Acts 2 | 36-40 | Acts 2 plain note | Repository |
+| Isaiah 45:14; Deuteronomy 18:18; 2 Samuel 6:14; 1 Chronicles 25:1 | 36-40 | BSB | BSB text |
+
+Cut: Gordon Fee by name (met only in a secondary source); the Delphic priestess (deep note); the Vaticanus marks and Codex Fuldensis; manuscript dates.
