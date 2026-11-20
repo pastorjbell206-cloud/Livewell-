@@ -2326,11 +2326,23 @@
    "phrases": [
     "mentally exhausted",
     "brain fog",
-    "cant think"
+    "cant think",
+    "mind is fried",
+    "running on empty",
+    "cant concentrate",
+    "too tired to think",
+    "worn out",
+    "drained all the time",
+    "exhausted all the time",
+    "nothing left to give",
+    "tired all the time"
    ],
    "not": [],
    "related": [
-    "exhaustion"
+    "exhaustion",
+    "work-and-burnout",
+    "rest-and-sabbath",
+    "depression"
    ]
   },
   "depression": {
