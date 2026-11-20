@@ -11124,3 +11124,20 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Map: Ephesus at the point used on the Pauline maps; the letter names no place | Map | ephesians/intro.json `teaching.map`; 1-john/intro.json `setting` | Repository |
 
 Cut before publishing: a Wesleyan gloss on ‘faults and failings’ (not in the repository); ‘most readers’ on water and blood (now ‘many’, with the other readings); a link to the Questions page on missing passages (the guide is linked instead, to keep one name per page).
+
+## The plain notes on 1 John 1 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The opening echoes John's Gospel; one long Greek sentence before ‘we proclaim’; pselaphaō ‘touched’ as in Luke 24:39 | 1-4 | 1-john/1.json `literary`, `words` (G5584) | Repository |
+| Against teaching that Christ only seemed to have a body (docetism; Cerinthus) | 1-4 | 1-john/1.json `historical` | Repository |
+| Koinōnia as partnership, used of business partners and friends | 1-4 | 1-john/1.json `cultural`, `words` (G2842) | Repository |
+| Genesis 1:1; Psalm 36:9; Exodus 29:45; John 1:1, 14 | 1-4 | BSB | BSB text |
+| Light in Greek thought; the Dead Sea Scrolls' sons of light and darkness; light in the Old Testament; moral edge | 5-7 | 1-john/1.json `cultural` | Repository |
+| Psalm 27:1; Isaiah 60:19; Genesis 1:3; Leviticus 16:30 | 5-7 | BSB | BSB text |
+| Homologeō ‘to say the same thing’; forgiveness just because it rests on Christ's sacrifice | 8-10 | 1-john/1.json `words` (G3670), `doctrines` | Repository |
+| Why keep confessing: standing and relationship; the ongoing character of the Christian life | 8-10 | 1-john/1.json `hard` | Repository |
+| Leviticus 16:21; Psalm 32:5; Proverbs 28:13; Psalm 130:3-4; Romans 5:1 | 8-10 | BSB | BSB text |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 8-10 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
