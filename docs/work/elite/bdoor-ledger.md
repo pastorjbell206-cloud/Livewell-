@@ -10800,3 +10800,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | ‘Come now’ again at 5:1; mobile merchants of the empire; not trade but leaving God out; atmis vapour; not fatalism; sin of omission | 13-17 | james/4.json `historical`, `literary`, `words` (G0822), `doctrines` | Repository |
 | Hevel in Psalm 39:5 and Ecclesiastes | 13-17 | james/4.json `words`; Psalm 39:5 Hebrew (H1892) | Repository text |
 | Proverbs 27:1; 16:9; Psalm 39:4-5; Proverbs 3:27 | 13-17 | BSB | BSB text |
+
+## The plain notes on James 5 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Prophetic oracle; ‘Come now’ as in 4:13; spoken over oppressors for the oppressed | 1-6 | james/5.json `literary` | Repository |
+| Wealth stored as clothes, metals, grain; day labourers paid each evening; Lord of Hosts (Sabaoth); verse 6 two readings | 1-6 | james/5.json `cultural`, `historical` | Repository, no side |
+| Leviticus 19:13; Deuteronomy 24:15; Jeremiah 22:13; Malachi 3:5; Isaiah 5:8-9 | 1-6 | BSB | BSB text |
+| Makrothumeō ‘long-tempered’; autumn and spring rains; parousia a ruler's visit; no date given | 7-12 | james/5.json `words`, `historical`, `doctrines` | Repository |
+| The Judge at the door (Mark 13:29); prophets and Job; oaths by heaven and earth; Matthew 5:33-37 nearly word for word | 7-12 | james/5.json `christ`, `cultural` | Repository |
+| Deuteronomy 11:14; Psalm 37:7; Job 42:12; Exodus 34:6; Leviticus 19:12 | 7-12 | BSB | BSB text |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 7-12 | acts/plain/14.json (21-28 `hard`) | Word for word |
+| Elders from the synagogue pattern; oil as medicine (Luke 10:34) and for setting apart; aleiphō the ordinary word; Mark 6:13; sōzō and egeirō | 13-18 | james/5.json `cultural`, `words`, `hard` | Repository |
+| Readings: all pray for the sick; promise now and in the resurrection; God's will and 2 Corinthians 12:7-9; Catholic and Orthodox sacrament; Protestant medicine or sign; not against medical care; ‘If he has sinned’ | 13-18 | james/5.json `hard`; acts/plain/3.json (1-10 `hard`: ‘All of them pray for the sick’) | Repository, no side |
+| John 9:3; 1 Kings 17:1; 18:42, 45; Psalm 30:2; 32:5; Proverbs 28:13 | 13-18 | BSB | BSB text |
+| Care line ‘It needs to be said plainly. The Bible does not teach that sickness comes ...’ | 13-18 | 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| Planaō to wander, as sheep (Matthew 18:12-13); kaluptō of forgiveness (Psalm 32, 85:2); no farewell; Luke 15 | 19-20 | lexicon G4105, G2572; james/5.json `literary`, `christ` | Repository |
+| Ezekiel 34:4, 16; Psalm 23:3; Proverbs 10:12; Psalm 85:2 | 19-20 | BSB | BSB text |
+| Care line ‘If you have been harmed by someone in a church ...’ | 19-20 | galatians/plain/6.json (1-5 `hard`) | Word for word |
+
+Cut before publishing: the cry of the wages likened to Abel's blood; ‘cattle eating their fill on the day they are killed’ (an interpretation the notes do not give).
+
+## James complete (2026-11-20)
