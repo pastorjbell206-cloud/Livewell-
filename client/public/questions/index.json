@@ -165,6 +165,41 @@
           "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "what-kind-of-writing-are-the-gospels",
+          "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+          "blurb": "The form critics' \"folk literature\" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's \"memoirs\" and Luke's preface, and what the genre does and doesn't establish.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-synoptic-problem",
+          "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+          "blurb": "The Synoptic problem set out fairly, Mark's priority, Q and the main alternatives with no side taken, what copying shows and what it doesn't, the sources skeptics themselves count, and the witnesses outside the problem.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "is-john-history-or-theology",
+          "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+          "blurb": "Every difference from the first three Gospels conceded, Strauss, Ehrman and Clement's \"spiritual Gospel\", John's own account of how he wrote, what in John fits Jerusalem before AD 70, and why theology and history are not alternatives.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-constantine-decide-the-bible",
+          "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+          "blurb": "What Nicaea's surviving acts do and don't contain, Constantine's letter ordering Bibles, his own bishop's list of disputed books, the Muratorian fragment, Athanasius in 367 and the African councils, the novel's claim named as fiction, and the edges that still differ.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-paul-invent-christianity",
+          "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+          "blurb": "Wrede's \"second founder\" and Ehrman's contrast of Paul and Matthew at full strength, what Paul says he received, his meetings with Peter, James and John, what he shares with the Jesus of the Gospels, and Paul the Jew.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -261,14 +296,14 @@
         {
           "slug": "how-did-jesus-become-god",
           "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
-          "blurb": "Ehrman's case and the texts it rests on, Paul's letters as the earliest layer, exaltation and pre-existence side by side, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
+          "blurb": "Ehrman's case in his own words and the texts it rests on, his reading of Paul's pre-existent Christ as a being below God and the angel of the Lord, Paul's letters as the earliest layer, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
           "status": "pending",
           "live": false
         },
         {
           "slug": "did-jesus-claim-to-be-god",
           "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
-          "blurb": "What Jesus does not say, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
+          "blurb": "What Jesus does not say, Ehrman's tests of the sayings, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
           "status": "pending",
           "live": false
         },
@@ -915,6 +950,96 @@
       "area": "authors",
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "The Gospels are not biographies but folk literature, units of community tradition strung together by editors",
+      "proponent": "Rudolf Bultmann",
+      "work": "The History of the Synoptic Tradition",
+      "year": 1921,
+      "area": "authors",
+      "slug": "what-kind-of-writing-are-the-gospels",
+      "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke used Mark and a lost sayings source, so for the stories all three tell there is one witness, not three",
+      "proponent": "B. H. Streeter",
+      "work": "The Four Gospels",
+      "year": 1924,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "live": false
+    },
+    {
+      "claim": "There was no Q: Luke used Matthew as well as Mark",
+      "proponent": "Mark Goodacre",
+      "work": "The Case Against Q",
+      "year": 2002,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' divine claims in John belong to John's distinctive theology, not to the historical record of what Jesus said",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "authors",
+      "slug": "is-john-history-or-theology",
+      "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+      "live": false
+    },
+    {
+      "claim": "John's Gospel is largely myth",
+      "proponent": "David Friedrich Strauss",
+      "work": "Life of Jesus",
+      "year": 1835,
+      "area": "authors",
+      "slug": "is-john-history-or-theology",
+      "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+      "live": false
+    },
+    {
+      "claim": "The emperor Constantine had a new Bible made and left out the gospels that showed Jesus as a mortal man",
+      "proponent": "Dan Brown",
+      "work": "The Da Vinci Code",
+      "year": 2003,
+      "area": "authors",
+      "slug": "did-constantine-decide-the-bible",
+      "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+      "live": false
+    },
+    {
+      "claim": "The party that won compiled the canonical books and told the story of its victory",
+      "proponent": "Bart D. Ehrman",
+      "work": "Lost Christianities",
+      "year": 2003,
+      "area": "authors",
+      "slug": "did-constantine-decide-the-bible",
+      "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+      "live": false
+    },
+    {
+      "claim": "Paul's teaching that no one is justified by the law cannot be reconciled with Matthew's Jesus on the law and the judgment",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+      "live": false
+    },
+    {
+      "claim": "Paul was the second founder of Christianity",
+      "proponent": "William Wrede",
+      "work": "Paul",
+      "year": 1904,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
       "live": false
     },
     {

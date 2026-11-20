@@ -35,6 +35,10 @@ export const FILM_SCENES: Record<
   "the-bible": () => import("./the-bible"),
   "the-king": () => import("./the-king"),
   "love-when-i-do-wrong": () => import("./love-when-i-do-wrong"),
+  covenant: () => import("./covenant"),
+  "the-lamb": () => import("./the-lamb"),
+  "exile-and-home": () => import("./exile-and-home"),
+  "kingdom-of-god": () => import("./kingdom-of-god"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

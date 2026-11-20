@@ -530,6 +530,56 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <Shape d="M72,36c-3,-5 -3,-12 0,-18c3,6 3,13 0,18ZM80,34c-3,-5 -3,-12 0,-18c3,6 3,13 0,18ZM88,36c-3,-5 -3,-12 0,-18c3,6 3,13 0,18Z" tone="c" off={0.8} />
     </>
   ),
+  /* Promises that build: an arch of five stones, its keystone gold. */
+  covenant: h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M32,84L14,84L20.5,63.4L35.2,73.7Z" tone="c" off={0.8} />
+      <Shape d="M35.7,73.1L21.3,62.3L38.2,50L44.1,67Z" tone="c" off={0.8} />
+      <Shape d="M55.9,67L61.8,50L78.7,62.3L64.3,73.1Z" tone="c" off={0.8} />
+      <Shape d="M64.8,73.7L79.5,63.4L86,84L68,84Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M44.8,66.8L39.6,49.5L60.4,49.5L55.2,66.8Z" />
+      <path className="pl-l" d="M44.8,66.8L39.6,49.5L60.4,49.5L55.2,66.8Z" />
+      <path className="pl-f" d="M28,34a22,22 0 0 1 44,0M34,34a16,16 0 0 1 32,0" />
+    </>
+  ),
+  /* Sacrifice and the Lamb: a lamb standing, gold. */
+  "the-lamb": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M30,70V84M40,72V84M56,72V84M64,70V84" />
+      <path className="pl-m" d="M26,58C20,46 34,38 44,40C52,34 66,38 68,48C76,52 74,66 66,68C60,74 32,74 28,68C20,66 18,60 26,58Z" />
+      <path className="pl-l" d="M26,58C20,46 34,38 44,40C52,34 66,38 68,48C76,52 74,66 66,68C60,74 32,74 28,68C20,66 18,60 26,58Z" />
+      <path className="pl-m" d="M66,46C68,36 82,34 84,44C84,50 78,54 72,52C68,51 66,49 66,46Z" />
+      <path className="pl-l" d="M66,46C68,36 82,34 84,44C84,50 78,54 72,52C68,51 66,49 66,46ZM70,40l-6,-5" />
+    </>
+  ),
+  /* Exile and coming home: a road over the hills to a city with its gate open and lit. */
+  "exile-and-home": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M48,62V38h6v-4h5v4h10v-4h5v4h10v-4h5v4h3V62Z" tone="c" off={1} />
+      <path className="pl-m" d="M64,62V52a6,6 0 0 1 12,0V62Z" />
+      <path className="pl-l" d="M64,62V52a6,6 0 0 1 12,0V62Z" />
+      <path className="pl-f" d="M70,62C60,70 36,76 8,82M72,62C66,72 44,80 20,86" />
+      <path className="pl-l" d="M14,66c2,-4 4,-4 6,0M22,70c2,-4 4,-4 6,0" />
+    </>
+  ),
+  /* The kingdom of God: a tree grown from a mustard seed, birds in its branches. */
+  "kingdom-of-god": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M56,84C57,72 57,62 55,54H63C61,62 61,72 62,84Z" tone="c" off={0.8} />
+      <Shape d="M30,52C26,36 42,24 56,28C66,16 86,22 86,36C94,42 90,56 80,56C72,62 44,62 38,58C30,60 26,56 30,52Z" tone="g" off={1} />
+      <path className="pl-l" d="M40,40C42,36 46,36 48,40M70,34C72,30 76,30 78,34" />
+      <path className="pl-m" d="M18,82C18,78 28,78 28,82C28,85 18,85 18,82Z" />
+      <path className="pl-l" d="M18,82C18,78 28,78 28,82C28,85 18,85 18,82Z" />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */
