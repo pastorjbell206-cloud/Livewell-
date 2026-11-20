@@ -62,6 +62,13 @@
           "blurb": "How a critical edition is made, step by step, and the serious question about the word \"original\".",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "king-james-and-the-missing-verses",
+          "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
+          "blurb": "Where the King James's Greek text came from, the verses one by one, and the case for the traditional text stated with respect.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -255,6 +262,26 @@
       "area": "text",
       "slug": "who-decides-what-the-text-says",
       "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
+      "live": false
+    },
+    {
+      "claim": "The Greek text behind the Revised Version and modern Bibles rests on a few corrupt manuscripts; the traditional text the church used is right",
+      "proponent": "John William Burgon",
+      "work": "The Revision Revised",
+      "year": 1883,
+      "area": "text",
+      "slug": "king-james-and-the-missing-verses",
+      "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
+      "live": false
+    },
+    {
+      "claim": "The reading of the majority of manuscripts, the Byzantine text, is usually original",
+      "proponent": "Maurice Robinson and William Pierpont",
+      "work": "The New Testament in the Original Greek: Byzantine Textform",
+      "year": 2005,
+      "area": "text",
+      "slug": "king-james-and-the-missing-verses",
+      "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
       "live": false
     }
   ],

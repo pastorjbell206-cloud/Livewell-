@@ -870,3 +870,32 @@ Cut or not used: the "bibliographical test" as a phrase and its origin in Chaunc
 | Metzger, *Textual Commentary* (1971; 1994); Metzger and Ehrman (2005); Aland and Aland (1987; 1989); Hixson and Gurry (2019); Ehrman (2005) | Tenth run | Verified |
 
 Cut or not used: the year and editors of the first Nestle edition (1898, not confirmed); Münster as the institute's seat (not in results); Griesbach's rule of the shorter reading and Lachmann's 1831 edition (no result); A. E. Housman's 1922 caution on the harder reading (found, not needed); the UBS letter ratings (not searched); the SBL edition's text at John 7:53 to 8:11 (only in a Study Bible note). No living author is quoted in this piece.
+
+## g. "Why do modern Bibles leave out verses the King James Version has?" (king-james-and-the-missing-verses)
+
+| Claim | How verified | Result |
+|---|---|---|
+| KJV 1 John 5:7 wording ("For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one"); Comma via Latin, a handful of late Greek manuscripts, some in the margin; not quoted by fourth-century Greek theologians | Tenth run; WTB ledger (Metzger: eight Greek manuscripts, four in the margin by later hands) | Quoted; verified |
+| Erasmus left the Comma out in 1516 and 1519, added it in 1522 | Tenth run (1516, 1522); note on 1 John 5 (1516, 1519, 1522) | Verified; the 1519 edition rests on the note and agrees with the tenth run's "first two editions" wording in the WTB essay |
+| KJV doxology of the Lord's Prayer ("for thine is the kingdom, and the power, and the glory, for ever"); missing from Sinaiticus, Vaticanus, Bezae; Tertullian, Origen, Cyprian lack it; early liturgical use (Didache) | Row f | Verified |
+| Acts 8:37 described (the eunuch confesses that Jesus Christ is the Son of God) | Tenth run | Described, not quoted |
+| Revised Version NT 1881; Burgon, *The Revision Revised* (John Murray, 1883), three *Quarterly Review* articles and a reply to Bishop Ellicott; attacked the RV and its Greek text, chiefly Westcott and Hort's; Hort's system "destitute of historical foundation"; heavy attention to codices B and Aleph; Burgon Dean of Chichester (1813-1888) | S: Project Gutenberg record and text (as summarized; the host does not resolve here), CCEL, Logos, ATLA | Verified (secondary). Paraphrased ("no foundation in history"); the claim that Burgon called the codices "the most corrupt" was cut as not seen |
+| Westcott and Hort's text built mainly on Vaticanus and Sinaiticus | Row f | Verified; the piece says the RV's Greek text "leaned heavily on" the two codices |
+| Robinson and Pierpont, *The New Testament in the Original Greek: Byzantine Textform* (Chilton, 2005); Hodges and Farstad, *The Greek New Testament According to the Majority Text*, 2nd ed. (Thomas Nelson, 1985) | S: faithalone.org, bible-researcher.com, ebible.org introductions | Verified (secondary). The 1982 first edition was not confirmed; the piece gives the 1985 second edition. Middle initials cut (not confirmed) |
+| Westminster Confession 1.8: the Scriptures in the original languages "kept pure in all ages"; a ground for the confessional (Textus Receptus) position, disputed among Reformed writers | S: ETS paper "Kept Pure in All Ages"; Confessional Bibliology; Heidelblog (2021); Puritanboard | Verified; four words quoted. The confession's date is not given in the piece |
+| Edward F. Hills's *The King James Version Defended* | S (twice): the book and Hills (1912-1981) found, the year not | Not named in the piece |
+| Erasmus's Revelation manuscript borrowed from Johannes Reuchlin, missing its last page; Revelation 22:16-21 translated from the Latin back into Greek; some TR defenders dispute this; the identification with minuscule 2814 uncertain | S: Wikipedia "Minuscule 2814" and "Textus Receptus"; *Spectrum* (Andrews University, 2018); Ehrman's blog titles; textus-receptus.com | Verified (secondary); the piece says "is widely held" and names the dispute; 2814 not named |
+| Stephanus (Robert Estienne) 1550; Beza's editions (1565, 1582, 1588-89, 1598, 1611); KJV NT generally said to rest on Stephanus and Beza | S: Wikipedia "Textus Receptus" | Verified (secondary); the piece says "printed editions in this line" |
+| The name Textus Receptus from the preface of an Elzevir edition, Leiden, 1633: a text "now received by all" | S: Wikipedia "Textus Receptus"; Heidelblog (2021, "a publishers blurb", 1633) | Verified (secondary); paraphrased |
+| KJV 1611 margin at Luke 17:36: "This 36. verse is wanting in most of the Greek copies" | S: 1611 transcriptions (bibelkommentare.de, freely-given.org), textus-receptus.com, Grace Life Bible Church lessons | Verified; the piece quotes "is wanting in most of the Greek copies" |
+| Sixteen empty verse numbers in the site's BSB (list) | Tenth run (Repo) | Verified |
+| Mark 9:44 and 9:46 repeat 9:48; absent from Sinaiticus and Vaticanus | S: Confessional Bibliology dossier, UASV, Biblehub (as summarized); note on Mark 9 agrees | Verified (secondary) |
+| Matthew 18:11 absent from the earliest witnesses; borrowed from Luke 19:10 | S: as above (Metzger as quoted); note on Matthew 18 agrees | Verified (secondary) |
+| Matthew 24:36 "nor the Son" in the oldest manuscripts, missing from most later ones and the KJV | Tenth run; note on Matthew 24 (TR and KJV lack it) | Verified |
+| John 1:18: P66 and P75 read "God"; KJV "only begotten Son" | Tenth run; note on John (intro) | Verified |
+| Eusebius commented on the ending of Mark | Tenth run | Verified |
+| Luke 22:43-44 bracketed in the standard critical edition; in the KJV | Tenth run | Verified |
+| James R. White, *The King James Only Controversy* (Bethany House, 1995; 2nd ed., 2009); D. A. Carson, *The King James Version Debate: A Plea for Realism* (Baker, 1979) | S | Verified |
+| Metzger, *Textual Commentary* (1971; 1994) | Tenth run | Verified |
+
+Cut or not used: Hills's book (year not found); David Norton's *A Textual History of the King James Bible* (one result gives 2004 in a file name; the year and first name were not confirmed, so it was taken off the list); the 1769 Blayney text and its 24,000 differences in spelling and punctuation (found, S, not needed); the translators' preface, "The Translators to the Reader" by Miles Smith: its wording ("containeth the word of God, nay, is the word of God") was not confirmed by search, so it is not quoted or paraphrased; the date of the Westminster Confession. No living author is quoted in this piece.
