@@ -8883,3 +8883,28 @@ Two searches. Scripture is the BSB in the repository, matched by the strict chec
 | Third visit implies the painful visit (2:1); parents save for children; 1 Corinthians 4:15; the trickery charge tied to the collection ("seems") | 14-18 | Deep note `historical`, `cultural`; BSB | Repository |
 | Proverbs 13:22; 1 Samuel 12:3 | 14-18 | BSB | BSB text |
 | 1 Corinthians 1:11; Jeremiah 9:1; 3:22 | 19-21 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 13 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two earlier visits (Acts 18; 2:1) | 1-4 | BSB; book page | Repository |
+| Deuteronomy 19:15; Matthew 18:16; two readings of the witnesses (visits as witnesses; fair evidence); Isaiah 53:3 | 1-4 | Deep note `cultural`; BSB | Stated as readings, no side |
+| Dokimazō of testing metal; adokimos three times (13:5-7); katartisis only at 13:9; katartizō of mending nets (Mark 1:19) and at 13:11 | 5-10 | Deep note `words`; Greek text (G1381, G0096, G2676, G2675) | Script |
+| Lamentations 3:40; Psalm 139:23-24; Proverbs 17:3; Jeremiah 1:10 | 5-10 | BSB | BSB text |
+| Assurance: God's promises; a changed life; the Spirit's witness (Romans 8:16); falling away disputed; no side; pointers to the Romans 8:31-39 note and the Honest Answer ‘Can you lose your salvation?’ | 5-10 | Deep note `hard`; romans/plain/8.json | Repository |
+| Care line for the scrupulous: 1 John 3:20; pointer to the 7:8-12 note; anxiety not a failure of faith; pastor, friend, counsellor, doctor; Find Help | 5-10 | 2 Corinthians 7 plain note form | Repository wording |
+| Holy kiss a family greeting; Romans 16:16; 1 Corinthians 16:20; Justin in Rome, about a hundred years later, describes the kiss after the prayers (First Apology 65, about AD 150 to 155) | 11-14 | Deep note `cultural`; Justin | Search: bkv.unifr.ch First Apology 65 ("Having ended the prayers, we salute one another with a kiss"); wordonfire.org. Paraphrased; the work not named |
+| Some Bibles join 12 and 13 so that the blessing is 13:13 (Vulgate, Douay-Rheims, Jerusalem Bible) | 11-14 | Versification | Search: en.wikipedia.org "2 Corinthians 13"; biblia.com ESV 13:13-14. Bibles not named |
+| Koinōnia at 13:14 and 8:4; two senses | 11-14 | Deep note `words` | Repository |
+| Numbers 6:24-26; Exodus 34:6; Psalm 133:1; Matthew 28:19 | 11-14 | BSB | BSB text |
+| The Trinity as confession; Nicene Creed ‘very God of very God’ and ‘the Lord and Giver of Life’; about twenty-five years after the cross (cross AD 30 or 33, letter 55 to 56) | 11-14 | `client/public/creeds/documents/nicene-creed.json`; book page dates; Gospel book pages' dates | Repository |
+| Honest Answer ‘How can God be three and one?’; the Explorer film ‘Who God is’ | 11-14 | client/src/data/answers.ts; client/public/explorer/films/who-god-is.json | Repository |
+
+Cut: 1 Clement (deep note), not needed.
+
+## 2 Corinthians complete (2026-11-20)
+
+All thirteen chapters in plain words. Twelve web searches for chapters 8 to 13, listed above.
