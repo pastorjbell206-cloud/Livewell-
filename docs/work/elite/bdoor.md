@@ -7678,7 +7678,7 @@ not a weapon against other Christians, their readings, or a faithful translation
 
 ### Care lines, each word for word
 
-The fearful-conscience line from the Hebrews 6 note (6, 13, 14, 16, 19, 20, 21); the suffering line
+The fearful-conscience line from the Hebrews 6 note (6, 9, 13, 14, 16, 19, 20, 21); the suffering line
 from the book page (6, 11, 12, 13); the grief line from the 1 Thessalonians 4 note (21:1-4) and its
 paragraph for one grieving someone who died without clear faith (20:11-15); the line for anyone held
 or forced to work, from the 1 Corinthians 7 note (18:9-19). Each points to Find Help. No phone
