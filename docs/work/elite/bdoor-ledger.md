@@ -8093,3 +8093,30 @@ No web searches; the BSB, the repository and earlier ledgers.
 
 Cut: the Muratorian fragment on Spain (not checked); "about AD 96" for 1
 Clement (the site says "usually dated near the end of the first century").
+
+## The plain notes on Romans 16 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letters of recommendation common | 1-2 | Repository deep note (`cultural`) | Repository |
+| Cenchrea Corinth's eastern port; Phoebe "very likely" the carrier; diakonos read two ways (Philippians 1:1; 1 Timothy 3:8); prostatis used of patrons | 1-2 | Book page; wrom-ledger; Greek text (G1249, G4368) | Repository; script |
+| Women deacons in many churches from early times (Pliny's two ministrae, wrom-ledger), others not | 1-2 | wrom-ledger Part 8 | Stated generally |
+| Complementarian and egalitarian paragraphs in the Acts 18 form | 1-2, 3-16 | Acts 18 plain note | Repository wording, adapted; no side |
+| Genesis 18:1-8; Deuteronomy 10:19; 2 Kings 4:9; Luke 8:3 | 1-2 | BSB | BSB text |
+| Prisca and Aquila: Acts 18:2, 18, 26; 1 Corinthians 16:19; Claudius's order | 3-16 | BSB; wrom-ledger | BSB text |
+| Ampliatus, Urbanus, Stachys, Hermes common slave and freed-slave names in Rome; no proof each was a slave; households of Aristobulus and Narcissus probably slaves and freedmen of great houses; identifications with famous men unconfirmed | 3-16 | Commentaries; repository deep note (`historical`, `cultural`) | Search: lifeandland.org (Franz on Romans 16, inscriptions); baonline.org "Learning from a List"; scotmcknight.substack.com. No famous man named |
+| Ten women named or mentioned | 3-16 | BSB | Count of the BSB text (Phoebe, Prisca, Mary, Junia, Tryphena, Tryphosa, Persis, Rufus's mother, Julia, Nereus's sister) |
+| Junia a common Latin woman's name; male "Junias" unattested; early writers almost without exception a woman; most scholars agree; some translations printed a man's name for centuries | 3-16 | Book page ledger (Burer, JETS 2015); scholarship | Search: cbeinternational.org; degruyterbrill.com (Open Theology 2020); etsjets.org (JETS 63.3). The "250 inscriptions" count not used |
+| "Outstanding among" or "well known to" the apostles; apostolos used of church messengers (2 Corinthians 8:23, Greek apostoloi, BSB "messengers") | 3-16 | Greek text (G0652, G1978); book page | Script; no scholar named |
+| Holy kiss (1 Corinthians 16:20; 2 Corinthians 13:12; 1 Thessalonians 5:26; 1 Peter 5:14) as family greeting | 3-16 | BSB; repository deep note | BSB text |
+| Rufus possibly Simon of Cyrene's son (Mark 15:21), uncertain | 3-16 | Repository deep note | Stated as uncertain |
+| Genesis 3:15; Proverbs 26:28; the warning read with chapter 14 | 17-20 | BSB | BSB text |
+| Timothy (1 Timothy 1:2); Tertius; trained writers common; Gaius (1 Corinthians 1:14); Erastus stone 1929, identification disputed | 21-24 | Book page; wrom-ledger | Repository |
+| 16:24 absent from the oldest copies; BSB leaves it empty | 21-24 | BSB text in the repository (verse 24 blank); repository deep note | Repository |
+| Numbers 6:24; Deuteronomy 33:27; Romans 1:5, 17; 11:33; 15:12 | 21-27 | BSB | BSB text |
+| Doxology: at the end of chapter 16 in many of the oldest copies; after 14:23 in others; after 15:33 in one very early papyrus (P46); omitted in a few later copies; explanations (shorter copies circulated); most editors print it at 16:25-27 | 25-27 | Textual notes | Search: biblia.com NET note on 16:25; scripturalmormonism.blogspot.com (Porter's commentary quoted). No manuscript named on the page |
+
+Cut: Lightfoot by name; Junia's "250 inscriptions"; the Domitilla catacomb;
+Herod's grandson and Claudius's freedman as identifications; Marcion.
