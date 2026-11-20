@@ -164,5 +164,19 @@
     { "label": "What is faith? (the family catechism)", "href": "/family/catechism#q36" },
     { "label": "What is repentance? (the family catechism)", "href": "/family/catechism#q37" }
   ],
-  "end": { "label": "Go to the stop: The Cross and the Empty Tomb", "href": "/study/explorer/cross" }
+  "end": { "label": "Go to the stop: The Cross and the Empty Tomb", "href": "/study/explorer/cross" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "made", "text": "God made people in his own image, to know him, to love him and to be happy with him for ever.", "verse": false },
+      { "id": "turned", "text": "But people turned away from God and went their own way. The Bible calls that sin. Sin is when we do not love God and others the way we should, and everyone has done it.", "verse": false },
+      { "id": "cannot", "verse": false },
+      { "id": "comes", "text": "So God came to us. God the Father loved the world so much that he sent his Son. Jesus, the Son of God, became a man and lived among us.", "verse": false },
+      { "id": "cross", "verse": false },
+      { "id": "tomb", "text": "Jesus was buried, but on the third day God raised him from the dead. He is alive.", "verse": false },
+      { "id": "trust", "text": "How is this gift received? By trusting Jesus and turning back to God. Faith is not one more job to earn it. Grace is God's love that you do not have to earn.", "verse": false },
+      { "id": "new-life", "verse": false },
+      { "id": "to-come", "verse": false }
+    ]
+  }
 }

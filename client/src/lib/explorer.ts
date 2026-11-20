@@ -150,6 +150,8 @@ export interface Film {
   end: Link;
   /** The cut its shared video uses, where the whole film runs past two minutes. */
   share?: FilmShareCut;
+  /** Video files of the film kept on the site, by shape (scripts/export-film-video.mjs). */
+  video?: Partial<Record<"square" | "vertical" | "wide", { href: string; mb: number }>>;
 }
 
 export interface ExplorerIndex {

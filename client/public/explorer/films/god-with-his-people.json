@@ -157,5 +157,19 @@
     { "label": "The thread on the whole map: God with his people", "href": "/study/explorer" },
     { "label": "Walk into the tent (the Sinai stop)", "href": "/study/explorer/sinai" }
   ],
-  "end": { "label": "See the thread on the whole map", "href": "/study/explorer" }
+  "end": { "label": "See the thread on the whole map", "href": "/study/explorer" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "garden", "verse": false },
+      { "id": "shut", "verse": false },
+      { "id": "tent", "verse": false },
+      { "id": "temple", "verse": false },
+      { "id": "leaves", "verse": false },
+      { "id": "word", "verse": false },
+      { "id": "curtain", "verse": true },
+      { "id": "spirit", "verse": false },
+      { "id": "city", "verse": true }
+    ]
+  }
 }

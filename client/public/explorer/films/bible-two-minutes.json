@@ -123,5 +123,19 @@
     { "label": "The Bible's story in eleven parts", "href": "/study/bible/story" },
     { "label": "The whole map", "href": "/study/explorer" }
   ],
-  "end": { "label": "Start at stop 1: Creation", "href": "/study/explorer/creation" }
+  "end": { "label": "Start at stop 1: Creation", "href": "/study/explorer/creation" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "made", "verse": false },
+      { "id": "broken", "verse": false },
+      { "id": "promise", "verse": false },
+      { "id": "rescued", "verse": false },
+      { "id": "kingdom", "verse": false },
+      { "id": "exile", "verse": false },
+      { "id": "jesus", "verse": false },
+      { "id": "church", "verse": false },
+      { "id": "new", "verse": true }
+    ]
+  }
 }

@@ -146,5 +146,18 @@
     { "label": "What happened on the cross? (the family catechism)", "href": "/family/catechism#q30" },
     { "label": "Did the resurrection actually happen? (an Honest Answer)", "href": "/answers/did-the-resurrection-actually-happen" }
   ],
-  "end": { "label": "The cross is not the end of the story: go to the stop, The Cross and the Empty Tomb", "href": "/study/explorer/cross" }
+  "end": { "label": "The cross is not the end of the story: go to the stop, The Cross and the Empty Tomb", "href": "/study/explorer/cross" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "happened", "verse": false },
+      { "id": "lamb", "verse": false },
+      { "id": "ransom", "text": "A ransom is a price paid to set a prisoner free. Jesus said he came to give his life as a ransom for many.", "verse": false },
+      { "id": "place", "verse": false },
+      { "id": "victory", "text": "On the cross Jesus fought sin, death and the devil, and he won.", "verse": false },
+      { "id": "love", "verse": true },
+      { "id": "friends", "verse": false },
+      { "id": "together", "verse": false }
+    ]
+  }
 }

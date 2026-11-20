@@ -11,13 +11,15 @@
  * the way on: back to the stop it belongs to, the next moving picture, and
  * the whole list.
  */
-import { useCallback, useEffect, useState } from "react";
+import { Suspense, lazy, useCallback, useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import {
   ArrowLeft,
   ArrowRight,
   BookOpen,
+  Download,
   LifeBuoy,
+  Link2,
   MessageCircle,
   Scale,
 } from "lucide-react";
@@ -27,6 +29,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import { LoadFailed } from "@/components/LoadFailed";
 import { RefText } from "@/components/VerseRef";
+import { copyToClipboard } from "@/lib/clipboard";
 import {
   EXPLORER_PATH,
   fetchExplorerIndex,
@@ -37,11 +40,13 @@ import {
   SAVE_FAILED,
   type ExplorerIndex,
   type Film,
+  type Level,
 } from "@/lib/explorer";
 import { Roundel } from "./art";
 import { LevelSwitch } from "./parts";
 import FilmPlayer from "./films/FilmPlayer";
 import { WATCH_ID } from "./Watch";
+import type { ExportShape } from "./films/FilmExport";
 import "./explorer.css";
 import "./films/film.css";
 
@@ -91,6 +96,30 @@ export const FILM_META: Record<string, { title: string; description: string }> =
 
 type Loaded = { film: Film; index: ExplorerIndex };
 
+/** The video layout, opened only by scripts/export-film-video.mjs (?export=square|vertical|wide). */
+const FilmExport = lazy(() => import("./films/FilmExport"));
+
+/** What ?export= asks for, if anything. */
+function exportAsk(): {
+  shape: ExportShape;
+  level: Level;
+  cut: boolean;
+} | null {
+  try {
+    const q = new URLSearchParams(window.location.search);
+    const shape = q.get("export");
+    if (shape !== "square" && shape !== "vertical" && shape !== "wide")
+      return null;
+    return {
+      shape,
+      level: q.get("level") === "older" ? "older" : "younger",
+      cut: q.get("cut") === "share",
+    };
+  } catch {
+    return null;
+  }
+}
+
 function useFilm(slug: string) {
   const [res, setRes] = useState<{ key: string; data: Loaded | null } | null>(
     null
@@ -115,6 +144,14 @@ export default function ExplorerFilm() {
   const slug = params?.slug ?? "";
   const { data, retry } = useFilm(slug);
   const explorer = useExplorerProgress();
+  const [ask] = useState(exportAsk);
+
+  if (ask && data)
+    return (
+      <Suspense fallback={null}>
+        <FilmExport film={data.film} {...ask} />
+      </Suspense>
+    );
 
   return (
     <Layout>
@@ -173,6 +210,7 @@ function FilmPage({
         title={meta?.title ?? `${film.title}: Bible Explorer`}
         description={meta?.description ?? film.line.older}
         url={url}
+        image={`https://www.livewellbyjamesbell.co/explorer/video/${film.slug}-poster.jpg`}
       />
       <PageHead
         door="Bible Explorer"
@@ -189,8 +227,8 @@ function FilmPage({
         }
       >
         <p className="ex-note" style={{ marginTop: 0 }}>
-          Watch and learn. A moving picture in {film.frames.length} parts.
-          Every word is under the picture, and Listen reads it aloud.
+          Watch and learn. A moving picture in {film.frames.length} parts. Every
+          word is under the picture, and Listen reads it aloud.
         </p>
       </PageHead>
 
@@ -218,6 +256,7 @@ function FilmPage({
             level={level}
             end={film.end}
           />
+          <ShareFilm url={url} video={film.video} />
         </div>
       </section>
 
@@ -366,5 +405,47 @@ function FilmPage({
         )}
       </nav>
     </>
+  );
+}
+
+/**
+ * Share: copy the film's address (the one clipboard helper), and, where the
+ * film's video file is kept on the site, download it to post elsewhere.
+ */
+function ShareFilm({ url, video }: { url: string; video: Film["video"] }) {
+  const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
+  const files = (["square", "vertical"] as const)
+    .map(k => (video?.[k] ? { shape: k, ...video[k]! } : null))
+    .filter(Boolean) as { shape: string; href: string; mb: number }[];
+  return (
+    <div className="fp-share">
+      <button
+        type="button"
+        className="btn btn--quiet"
+        onClick={async () =>
+          setState((await copyToClipboard(url)) ? "copied" : "failed")
+        }
+      >
+        <Link2 size={18} strokeWidth={1.75} aria-hidden="true" />
+        Share
+      </button>
+      {files.map(f => (
+        <a key={f.shape} className="btn btn--quiet" href={f.href} download>
+          <Download size={18} strokeWidth={1.75} aria-hidden="true" />
+          Download the video
+          <span className="fp-share__meta">
+            {f.shape === "square" ? "square" : "tall, for a phone"}, MP4, {f.mb}{" "}
+            MB
+          </span>
+        </a>
+      ))}
+      <p className="fp-share__note" aria-live="polite">
+        {state === "copied"
+          ? "Link copied. Paste it anywhere to share this moving picture."
+          : state === "failed"
+            ? `This browser would not copy it. The address is ${url}`
+            : ""}
+      </p>
+    </div>
   );
 }

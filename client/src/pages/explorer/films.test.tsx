@@ -38,6 +38,7 @@ import { FILM_SCENES } from "./films/scenes";
 import ExplorerMap from "./ExplorerMap";
 import ExplorerStop from "./ExplorerStop";
 import ExplorerFilm, { FILM_META } from "./ExplorerFilm";
+import FilmExport, { exportShots } from "./films/FilmExport";
 
 vi.mock("@vercel/analytics", () => ({ track: vi.fn() }));
 
@@ -647,5 +648,77 @@ describe("the pages", () => {
         screen.getByRole("link", { name: /Next to watch: God with his people/ })
       ).toBeTruthy()
     );
+  });
+
+  it("a film's page offers Share, which copies the film's address", async () => {
+    const writeText = vi.fn(async () => undefined);
+    vi.stubGlobal("navigator", { ...navigator, clipboard: { writeText } });
+    renderAt("/study/explorer/watch/who-made-god");
+    fireEvent.click(await screen.findByRole("button", { name: "Share" }));
+    await waitFor(() => expect(screen.getByText(/Link copied/)).toBeTruthy());
+    expect(writeText).toHaveBeenCalledWith(
+      "https://www.livewellbyjamesbell.co/study/explorer/watch/who-made-god"
+    );
+  });
+
+  it("?export= lays the film out as a video: no site chrome, an opening and a closing card", async () => {
+    renderAt("/study/explorer/watch/who-made-god?export=square");
+    const main = await waitFor(() => {
+      const m = document.querySelector("main.fx.fx--square");
+      expect(m).toBeTruthy();
+      return m as HTMLElement;
+    });
+    expect(document.querySelector("header nav, footer")).toBeNull();
+    expect(
+      within(main).getByRole("heading", { level: 1, name: FILM.title })
+    ).toBeTruthy();
+    expect(main.textContent).toContain("LiveWell by James Bell");
+    expect(main.textContent).toContain(
+      "www.livewellbyjamesbell.co/study/explorer/watch/who-made-god"
+    );
+    window.history.pushState({}, "", "/");
+  });
+});
+
+describe("the video export", () => {
+  it("shows the whole film at a level, or its share cut with only the verses it keeps", () => {
+    const whole = exportShots(FILM, "older", false);
+    expect(whole.map(s => s.text)).toEqual(FILM.frames.map(f => f.older));
+    for (const f of READY) {
+      const film = filmFile(f.slug);
+      if (!film.share) continue;
+      const cut = exportShots(film, "younger", true);
+      expect(cut.length, f.slug).toBe(film.share.frames.length);
+      film.share.frames.forEach((sf, k) => {
+        expect(cut[k].id).toBe(sf.id);
+        expect(Boolean(cut[k].verse)).toBe(
+          sf.verse !== false &&
+            Boolean(film.frames.find(x => x.id === sf.id)?.verse)
+        );
+        if (sf.text) expect(cut[k].text).toBe(sf.text);
+      });
+    }
+  });
+
+  it("is driven a frame at a time by the export script, and keeps no timer", async () => {
+    vi.useFakeTimers();
+    render(
+      <FilmExport film={FILM} shape="vertical" level="younger" cut={false} />
+    );
+    await act(async () => {
+      await vi.runAllTimersAsync();
+    });
+    const api = window.__lwExport!;
+    expect(api.shape).toBe("vertical");
+    expect(api.shots).toHaveLength(FILM.frames.length);
+    expect(document.querySelector(".fx-card--open.is-on")).toBeTruthy();
+    act(() => api.show(2));
+    expect(document.querySelector(".fx-card.is-on")).toBeNull();
+    expect(
+      document.querySelector(".fx-cap.is-on .fx-cap__text")?.textContent
+    ).toBe(FILM.frames[2].younger);
+    act(() => api.show(FILM.frames.length));
+    expect(document.querySelector(".fx-card--close.is-on")).toBeTruthy();
+    expect(vi.getTimerCount()).toBe(0);
   });
 });

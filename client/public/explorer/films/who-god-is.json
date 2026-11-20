@@ -185,5 +185,18 @@
   "end": {
     "label": "Watch next: The Holy Spirit through the Bible",
     "href": "/study/explorer/watch/holy-spirit"
+  },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "one", "verse": false },
+      { "id": "father", "verse": false },
+      { "id": "son", "verse": false },
+      { "id": "spirit", "verse": false },
+      { "id": "jordan", "verse": false },
+      { "id": "name", "verse": false },
+      { "id": "pictures", "text": "People often try to explain this with a picture, and every picture breaks.", "verse": false },
+      { "id": "wonder", "text": "So Christians do not try to make God small enough to fit in a picture. They keep the Bible's own words, and the church's old creed, and they worship. God has always been love, and he made us to share in it.", "verse": false }
+    ]
   }
 }

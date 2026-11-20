@@ -1762,11 +1762,14 @@ async function main() {
       if (!f) continue;
       const route = `/study/explorer/watch/${f.slug}`;
       const title = `${f.title}: Bible Explorer`;
+      // A shared link shows the film's own opening card (its poster,
+      // written by scripts/export-film-video.mjs, 1200 by 630).
+      const poster = `client/public/explorer/video/${f.slug}-poster.jpg`;
       const head = buildHead({
         title,
         description: f.line.older,
         url: `${SITE_URL}${route}`,
-        image: ogImageUrl(title),
+        image: fs.existsSync(poster) ? `${SITE_URL}/explorer/video/${f.slug}-poster.jpg` : ogImageUrl(title),
         type: "article",
         schemas: [breadcrumbSchema([{ name: "Home", path: "" }, { name: "Bible Explorer", path: "/study/explorer" }, { name: f.title, path: route }])],
       });

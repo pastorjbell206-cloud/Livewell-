@@ -137,5 +137,18 @@
     { "label": "How can God be three and one? (an Honest Answer)", "href": "/answers/how-can-god-be-three-and-one" },
     { "label": "Who is the Holy Spirit? (the family catechism)", "href": "/family/catechism#q41" }
   ],
-  "end": { "label": "Go to the stop: The Church and the Spirit", "href": "/study/explorer/church" }
+  "end": { "label": "Go to the stop: The Church and the Spirit", "href": "/study/explorer/church" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "waters", "verse": true },
+      { "id": "few", "verse": false },
+      { "id": "promise", "verse": false },
+      { "id": "jordan", "verse": false },
+      { "id": "advocate", "text": "On the night before he died, Jesus promised that the Father would send the Holy Spirit to be with his friends for ever. Jesus called him “another Advocate”: someone who stands with you and speaks for you.", "verse": false },
+      { "id": "pentecost", "verse": false },
+      { "id": "temple", "verse": false },
+      { "id": "come", "verse": false }
+    ]
+  }
 }
