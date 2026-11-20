@@ -48,6 +48,79 @@
   color: var(--alert);
   margin: var(--s-2) 0 0;
 }
+/* A count beside a heading ("What the Explorer holds"). */
+.ex-count {
+  display: inline-block;
+  margin-left: 0.6em;
+  padding: 0 0.55em;
+  font-family: var(--U);
+  font-size: 0.5em;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  vertical-align: 0.35em;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-pill);
+}
+.ex-anchor {
+  scroll-margin-top: 90px;
+}
+.ex-holds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0 var(--s-4);
+  margin: var(--s-2) 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--U);
+}
+.ex-holds > li {
+  border-top: 1px solid var(--border);
+  padding: 4px 0 var(--s-1);
+}
+.ex-holds a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--mustard);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+.ex-holds span {
+  margin-left: 0.6em;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+.ex-holds ul {
+  margin: 0;
+  padding: 0 0 0 var(--s-2);
+  list-style: none;
+}
+.ex-holds ul a {
+  font-weight: 400;
+}
+.ex-holds__jump ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--s-3);
+  margin: 0 0 var(--s-3);
+  padding: 0;
+  list-style: none;
+  font-family: var(--U);
+}
+.ex-holds__jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--mustard);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
 .ex-link {
   color: var(--ink);
   text-decoration: underline;

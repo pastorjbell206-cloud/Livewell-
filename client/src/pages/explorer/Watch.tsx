@@ -20,6 +20,7 @@ import {
   type Level,
 } from "@/lib/explorer";
 import { HeadArt, Roundel } from "./art";
+import { Count } from "./parts";
 
 /** A film's small picture: the map's road, or a stop's roundel. */
 export function FilmMark({
@@ -53,6 +54,10 @@ export function Watch({
       <div className="ex-wrap">
         <h2 className="ex-h2" id="wl-title">
           Watch and learn
+          <Count
+            n={films.filter(f => f.status === "finished").length}
+            what="moving pictures"
+          />
         </h2>
         <p className="ex-lede">
           Short moving pictures, drawn in the same hand as the map. Press Play
@@ -65,8 +70,9 @@ export function Watch({
             const soon = mine.filter(f => f.status !== "finished");
             return (
               <li key={g.id}>
-                <h3 className="wl-group__name" id={`wl-g-${g.id}`}>
+                <h3 className="wl-group__name ex-anchor" id={`wl-g-${g.id}`}>
                   {g.name}
+                  <Count n={ready.length} what="moving pictures" />
                 </h3>
                 <p className="wl-group__line">{g.line}</p>
                 {ready.length > 0 && (
@@ -105,8 +111,9 @@ export function Watch({
             );
           })}
           <li>
-            <h3 className="wl-group__name" id="wl-g-maps">
+            <h3 className="wl-group__name ex-anchor" id="wl-g-maps">
               Maps that move
+              <Count n={2} what="maps" />
             </h3>
             <p className="wl-group__line">
               The places of the Bible, drawn on the map as the story goes.

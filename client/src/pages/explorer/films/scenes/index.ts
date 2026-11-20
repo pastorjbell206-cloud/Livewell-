@@ -27,6 +27,10 @@ export const FILM_SCENES: Record<
   "image-of-god": () => import("./image-of-god"),
   "what-sin-is": () => import("./what-sin-is"),
   "who-jesus-is": () => import("./who-jesus-is"),
+  prayer: () => import("./prayer"),
+  "baptism-and-supper": () => import("./baptism-and-supper"),
+  "life-to-come": () => import("./life-to-come"),
+  "so-many-churches": () => import("./so-many-churches"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

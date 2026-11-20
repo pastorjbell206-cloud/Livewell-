@@ -152,6 +152,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "What Christians confess about the Holy Spirit living in a believer, in seven moving pictures: joined to Christ, children of God, fruit and gifts, help to pray, and where churches differ.",
     },
+    prayer: {
+      title: "Prayer: Bible Explorer",
+      description:
+        "What prayer is, in seven moving pictures for children and teenagers: talking with God as Father, the Lord's Prayer, thanks, asking, saying sorry, waiting, and the Spirit's help.",
+    },
+    "baptism-and-supper": {
+      title: "Baptism and the Lord's Supper: Bible Explorer",
+      description:
+        "The two signs Jesus gave his church, in seven moving pictures: what every church shares in baptism and the Lord's Supper, and where faithful churches differ, without taking a side.",
+    },
+    "life-to-come": {
+      title: "The life to come: Bible Explorer",
+      description:
+        "What Christians believe about death and what comes after, in seven gentle moving pictures: not the end, with Christ, the body raised, every wrong put right, and all things new.",
+    },
+    "so-many-churches": {
+      title: "Why are there so many churches?: Bible Explorer",
+      description:
+        "How one church became many, in seven moving pictures of one tree: East and West, the Reformation, the many branches since, and the one root they still share.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

@@ -139,18 +139,35 @@ export function prepare(index: FinderIndex): Prepared {
   return { index, topics, byId: new Map(index.topics.map((t) => [t.id, t])) };
 }
 
-/** The sentence's words, with the rewrites and synonyms applied, stemmed. */
+/**
+ * The sentence's words, with the rewrites and synonyms applied, stemmed.
+ * A rewrite is matched word by word on stems, as phrases are, so "hurting
+ * myself", "ending it all" and "credit cards" meet "hurt myself", "end it all"
+ * and "credit card". Rewrites apply in order, so one rewrite's words can
+ * complete a later one ("do not want to live" becomes "dont want to live").
+ */
 export function queryWords(index: FinderIndex, sentence: string): Set<string> {
-  let s = ` ${normalize(sentence)} `;
+  const words = (text: string) =>
+    normalize(text)
+      .split(" ")
+      .filter(Boolean)
+      .map((raw) => ({ raw, s: stem(raw) }));
+  const toks = words(sentence);
   for (const [from, to] of Object.entries(index.rewrites)) {
-    const f = ` ${normalize(from)} `;
-    if (s.includes(f)) s = s.split(f).join(` ${f.trim()} ${to} `);
+    const f = words(from).map((w) => w.s);
+    if (!f.length) continue;
+    const add = words(to);
+    for (let i = 0; i + f.length <= toks.length; i++) {
+      if (!f.every((x, j) => toks[i + j].s === x)) continue;
+      toks.splice(i + f.length, 0, ...add);
+      i += f.length + add.length - 1;
+    }
   }
   const out = new Set<string>();
-  for (const w of s.split(/\s+/)) {
-    if (!w || STOP.has(w)) continue;
-    out.add(stem(w));
-    const more = index.synonyms[w];
+  for (const { raw, s } of toks) {
+    if (STOP.has(raw)) continue;
+    out.add(s);
+    const more = index.synonyms[raw];
     if (more) for (const m of more.split(/\s+/)) if (m) contentWords(m).forEach((x) => out.add(x));
   }
   return out;
