@@ -1,0 +1,106 @@
+{
+  "area": "authors",
+  "slug": "four-gospels-and-the-rest",
+  "status": "pending",
+  "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Twelfth run (2026-11-20): the editor's read of the text area's five, and the area \"Who wrote the Gospels, when, and the canon\"",
+    "key": "m"
+  },
+  "record": "docs/work/elite/apol-pilot/authors/four-gospels-and-the-rest.md",
+  "objectionSource": {
+    "author": "Bart D. Ehrman",
+    "title": "Lost Christianities",
+    "year": 2003
+  },
+  "shortAnswer": "There were other gospels, and early Christianity was more varied than the church's later histories liked to admit. But the four Gospels weren't picked from a field of equals, and no emperor or council chose them. They are the earliest we have, written in the first century, and by the late second century churches from Gaul to Egypt were reading them in worship and calling them the only four. The others came later, mostly in the second century, and most of them present a Jesus whose teaching the earliest sources don't support. The Council of Nicaea in 325 didn't discuss the books of the Bible at all. It's true that the church judged books partly by whether their teaching agreed with the faith it had received, and critics like Bart Ehrman are right to say so. Whether that judgment was fair depends on a historical question this page sets out: which faith was there first.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "In December 1945, near the town of Nag Hammadi in Egypt, a collection of ancient books was found, and among them was the full text of a gospel attributed to Thomas. Over the following decades other texts came to light or were reread: a gospel fragment under Peter's name, a gospel in which Mary Magdalene teaches the other disciples, and, published in 2006, a Gospel of Judas. Elaine Pagels's *The Gnostic Gospels* (1979) brought such texts to a wide readership. Here, it seemed, were the voices the church had silenced.\n\nThe scholarly case behind this picture goes back to Walter Bauer, who argued in 1934 that in some regions of the early church what was later called heresy came first, and that the form of Christianity centered on Rome later won and wrote the history. Bart Ehrman's *Lost Christianities* (2003) carried the argument to a wide audience. In the second and third centuries, he argues, there were many Christianities: Jewish Christians who kept the law, Marcionites who rejected the Old Testament and its God, various groups often called Gnostic, and the party he calls proto-orthodox. The proto-orthodox won. They compiled the canonical books, standardized belief, and told the story of their victory, and the historian Eusebius told it as though orthodoxy had always been the faith of the majority. Some of the losers' books survive only in their opponents' summaries. Others survived only because someone buried them.\n\nThe popular version adds an emperor. Constantine, it says, called the Council of Nicaea in 325, and the bishops there voted on which books would be in the Bible. Put at full strength, the objection says that the New Testament is a list drawn up by the winners of a long argument, and that the gospels they left out were left out because they taught something else, not because they were less true."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "More than many Christians have been told. Early Christianity was diverse, and Paul's own letters show it: he wrote Galatians against people who preached, he said, another gospel. The winners did write the surviving histories. Some rival texts do survive only in summaries by their opponents; the Gospel of the Ebionites, for example, is known only from brief quotations in the fourth-century writer Epiphanius. And Ehrman is right that the church judged books by their teaching. Alongside a book's link to the apostles and its use across the churches, the early church asked whether it agreed with the rule of faith, the summary of apostolic teaching new Christians confessed at baptism. That is a theological test, and the church applied it.\n\nChristians have also told the story too neatly. The borders of the New Testament were argued for centuries. Early in the fourth century Eusebius listed James, Jude, 2 Peter and 2 and 3 John as books disputed by some, and Revelation was doubted in parts of the East long after. Irenaeus's reasons for exactly four Gospels, that there are four zones of the world and four winds, won't persuade a modern reader. And apologists have sometimes waved away the other gospels as obviously absurd without reading them or describing them in terms their students would recognize."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Begin with the other gospels themselves, as their students describe them. The Gospel of Thomas is a collection of 114 sayings attributed to Jesus, some close to sayings in Matthew, Mark and Luke and some quite unlike them. It has no story of Jesus' life and says nothing of his death and resurrection. Its full text survives in Coptic from Nag Hammadi; Greek fragments found earlier at Oxyrhynchus were recognized as Thomas only after the Coptic text turned up. Most scholars date its composition to the second century, though some argue that parts of it are earlier, and scholars are divided on whether it should be called Gnostic at all, a label many now question. The Gospel of Peter is known chiefly from a fragment found at Akhmim in Egypt in 1886 or 1887, in a copy made centuries after it was composed; it tells of Jesus' death and resurrection. Paul Foster, in his 2010 commentary, preferred a date in the second half of the second century. The Gospel of Judas survives in a Coptic copy whose papyrus has been radiocarbon dated to between about 220 and 340; Irenaeus, around 180, mentions a Gospel of Judas, probably the same work, so it was probably composed in the second century. The Gospel of Mary survives in Coptic in a fifth-century book acquired in 1896 and published in 1955, and in two Greek fragments from the third century; Karen King dates it early in the second century, Christopher Tuckett within its first half, and its central figure is Mary Magdalene.\n\nSet those dates beside the four. Most scholars date the four Gospels to the first century, Mark around 70 and John in the 90s, and the other gospels to the second. None of these four has a serious claim, by the usual scholarly dating, to be earlier than the four in the New Testament, and only Thomas has serious defenders for an early date for part of its contents.\n\nNow trace when the four were received. In the 150s Justin Martyr described a Christian Sunday in which \"the memoirs of the apostles or the writings of the prophets are read, as long as time permits,\" and he said the memoirs are called Gospels. Around 180 Irenaeus wrote, \"It is not possible that the Gospels can be either more or fewer in number than they are.\" Tatian, soon after 172, wove the Gospels into a single harmony whose title means \"through the four,\" and it was used in Syrian churches for centuries. Around 200, Serapion, bishop of Antioch, found a church reading a gospel under Peter's name. He first let it be read, then learned it was being used to support a heresy, read it himself, and judged that much in it was sound and some things added. That is not a council imposing a list. It's a bishop reading a book and judging it against what his churches had received. Charles Hill, surveying this evidence in *Who Chose the Gospels?* (2010), concluded in effect that no one chose them. They were received.\n\nFinally, Nicaea. Constantine did call the council in 325, and a few hundred bishops came. They dealt with Arius's teaching that the Son was a created being, and wrote a creed against it; with a schism in Egypt; with how the date of Easter should be kept; and with twenty canons on church order. None of their surviving decisions concerns the books of the Bible. The earliest list we have that matches our New Testament's twenty-seven books exactly comes from Athanasius, bishop of Alexandria, in his Easter letter of 367, more than forty years later, and where he sets out the list he doesn't mention Nicaea. Eusebius records that Constantine ordered \"fifty copies of the sacred Scriptures\" for the churches of his new city, copies of books the churches already read."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is a historical argument about what the church did and why.",
+      "steps": [
+        "The four Gospels were written in the first century, and by the late second century they were read in worship as Scripture across the churches, before any council met or any emperor took an interest.",
+        "The other gospels were written later, most of them in the second century, and they present Jesus' teaching in ways that the earliest sources, Paul's letters and the four, don't support.",
+        "The church's tests, a book's link to the apostles, its use across the churches and its agreement with the faith handed down, were stated openly and applied over generations, and the disputed books were argued over in public."
+      ],
+      "conclusion": "So: the church didn't pick four Gospels from many equals and suppress the rest. It received four early ones and declined later ones, and it said why. Ehrman is right that theology was part of the judgment. Whether that was fair depends on whether the faith the church held was the earliest faith, and the evidence for that is earlier than any of the gospels it declined.",
+      "after": "The weight sits on the second step. It is the one the objection must overturn, because if the declined gospels were as early as the four and as close to Jesus, the church's choice would look like the winners' preference.",
+      "weightStep": 2
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply says the argument is circular. You date the four early and the others late, and you call the four's teaching the earliest faith. But the dates and the judgment of what is earliest were both shaped by the winners. Paul's letters themselves show rival teachers in the first generation. If the proto-orthodox were one party among several from the start, then using their books to measure the others simply repeats their victory.\n\nThere's real force in that, and part of it should be granted: Christianity was never a single uniform movement, and Paul's letters prove it. But the reply needs more than diversity. It needs the rival forms to be as early as the one that won, and here the evidence runs the other way. Paul's letters, the earliest Christian writings we have, show disagreement and also show the core that was shared. Paul says that he set out his gospel before the leaders in Jerusalem, that James, Peter and John gave him the right hand of fellowship, and that whether it was he or they who preached, this is what was preached: Christ's death for sins, his burial, his resurrection on the third day. That is the faith of the four Gospels, attested in the 50s by a man who knew its first leaders. None of the declined gospels is attested that early. The teaching most often called Gnostic, for which the world's maker is a lesser being and salvation comes through knowledge, has no clear first-century witness of its own; at most, scholars debate whether some New Testament letters already argue against early forms of it.\n\nAs for Bauer, scholars have tested his readings of particular regions, Edessa among them, and many have found them unpersuasive, among them Andreas Köstenberger and Michael Kruger in *The Heresy of Orthodoxy* (2010). The debate continues. But a reader can grant Bauer's main point, that the second century was more varied than Eusebius said, without granting the conclusion that the four Gospels were a late party's choice."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "The date of the Gospel of Thomas, and whether any of its sayings preserve independent early tradition, are open questions on which careful scholars disagree. So is the date of the Muratorian fragment, the early list of accepted books traditionally placed in the late second century, which some scholars, most fully Geoffrey Hahneman, place in the fourth. How much the church's canon was shaped in answer to Marcion, who around 144 kept only an edited Luke and ten letters of Paul, is argued. And the borders of the New Testament were settled by reception, not by a single act, so the question of when the canon was closed has no single date."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ on what makes the canon the canon, and this page takes no side. Catholic teaching, as the First Vatican Council put it in 1870, holds these books sacred because they were written under the Holy Spirit's inspiration, not because the church approved them afterward. Protestant confessions such as the Anglican Articles speak of receiving the books of the New Testament as they are commonly received. Churches also differ on the books of the Old Testament that Catholics call deuterocanonical and Protestants the Apocrypha, a question the site's essay on the canon sets out. All of them confess the same four Gospels. Whatever else divides the churches, the four were never in dispute among them, and no church that confesses the creeds reads a fifth."
+    }
+  ],
+  "otherSide": [
+    "Bart D. Ehrman, *Lost Christianities* (2003).",
+    "Walter Bauer, *Orthodoxy and Heresy in Earliest Christianity* (German 1934).",
+    "Elaine Pagels, *The Gnostic Gospels* (1979)."
+  ],
+  "further": [
+    "Charles E. Hill, *Who Chose the Gospels? Probing the Great Gospel Conspiracy* (2010).",
+    "Andreas J. Köstenberger and Michael J. Kruger, *The Heresy of Orthodoxy* (2010)."
+  ],
+  "onSite": [
+    "The essay \"Who Decided What Books Are in the Bible?\" (/writing/who-decided-what-books-are-in-the-bible), on Athanasius, Marcion, the Muratorian fragment and the disputed books.",
+    "The essay \"The Council of Nicaea: What Was Decided in 325\" (/writing/the-council-of-nicaea-what-was-decided-in-325), on what the council did.",
+    "\"The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?\" (/questions/authors/the-gospels-are-anonymous), on Serapion and the gospel under Peter's name."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "galatians",
+        "chapter": 1
+      },
+      {
+        "book": "galatians",
+        "chapter": 2
+      }
+    ],
+    "answers": [
+      "why-would-anyone-trust-the-bible"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The proto-orthodox party won the struggles of the second and third centuries, compiled the New Testament and wrote the history of its own victory",
+      "proponent": "Bart D. Ehrman",
+      "work": "Lost Christianities",
+      "year": 2003
+    },
+    {
+      "claim": "In some regions of the early church what was later called heresy came first",
+      "proponent": "Walter Bauer",
+      "work": "Orthodoxy and Heresy in Earliest Christianity",
+      "year": 1934
+    }
+  ]
+}

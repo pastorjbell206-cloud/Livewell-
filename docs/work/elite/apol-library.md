@@ -481,3 +481,48 @@ From the plan's fourteen: Luke 22:43-44 and Hebrews 2:9 as pages of their own (b
 ### For James
 
 Read the five pending pieces; each becomes live by one line (its `status`). The room's name is still the working name. The King James piece speaks of King James Only believers as brothers and sisters and takes no side among the text positions; say if you want your own view stated.
+
+---
+
+## 9. Twelfth run (2026-11-20): the text area's five go live, and the authors area opens
+
+### The editor's read, and the five made live
+
+One editor's read of each of the five pending text pieces against section 3 and CLAUDE.md's revision pass. Changes (each in the Markdown record and the data, the record diff at 0; rows in `apol-ledger.md`, "Twelfth run"):
+
+- compared-with-other-ancient-books: "for about half a century" became "for decades" (no length of time was verified).
+- who-decides-what-the-text-says: the third step now says the earliest text reached is the text of the second and third centuries, not the second alone (the papyri's dates are argued).
+- king-james-and-the-missing-verses: the first step said a verse is missing from a modern Bible "only if" it was original, which doesn't follow; it now says words have been taken out of God's word only if they belonged to the text as first written. Majority-text editors are no longer counted among those who "keep to the King James".
+- lost-in-translation: Robert Alter was listed among translators who agree "on what Jesus did and said", but he translated the Hebrew Bible, not the New Testament; the sentence now names Hart, the King James translators and the modern committees. Modern versions are said to be made from "scholarly editions ... made from the manuscripts" (the standard Hebrew edition isn't built on the earliest manuscripts). The link to the shelf essay restored (below).
+- an-angry-jesus-mark-1-41: "anyone who says the question is closed hasn't read them" became "the question is best left open"; "the church has always read four Gospels side by side" became "the church kept four Gospels side by side" (Tatian's harmony was read in Syrian churches for centuries).
+- Found while reading for the new area: two pieces said Ehrman "teaches at" the University of North Carolina; he retired in 2025 (the canon essay's ledger). Both now say he taught there for many years, including the live more-variants-than-words.
+
+Then `"status": "live"` on all five; the manifest and the search index rebuilt. The text area page lists nine live pieces; the claims index lists fifteen live claims; the search index carries all nine pieces; the sitemap carries them after `pnpm run sitemap`; llms.txt names the room, not each piece, so it needed no change.
+
+### The shelf-essay link in lost-in-translation
+
+The eleventh run dropped a link to "How the Bible Gets Translated by the Room You're In" because the validator called the address missing. The essay is public: `client/src/lib/shelf.json` lists `how-the-bible-gets-translated-by` with status "live", it is in the sitemap, and other public essays link it. Its text lives only in the database (as do twelve other live shelf essays), so `scripts/lib/site-routes.mjs`, which read only the repository's essay files, couldn't see it, while `validate-links.mjs` already counted shelf essays. The resolver was plainly incomplete, so it now counts every essay the shelf makes public (`server/site-routes-shelf.test.ts`: the live database-only essay resolves; a held-back shelf essay with no copy stays missing), and the link is restored in "On the site".
+
+### The authors area (pending)
+
+Slug `authors` (the plan's), title as in `areas.json`. Records in `docs/work/elite/apol-pilot/authors/` (index.md and five pieces), data in `client/public/questions/authors/`. The plan's order for the area lists eyewitnesses and genre before oral tradition, but section 4.5 puts Ehrman's *Forged* and *Lost Christianities* claims first; this run took the five the lead's brief named, which fold plan items 1, 2, 3, 5, 8 to 13 into five pages.
+
+| Piece | Address (pending) | Argued prose | Key |
+|---|---|---|---|
+| The Gospels are anonymous. Weren't the names added later? | /questions/authors/the-gospels-are-anonymous | 2,280 | j |
+| Weren't the Gospels written decades after Jesus by people who never met him? | /questions/authors/written-decades-later | 2,155 | k |
+| Isn't oral tradition a game of telephone? | /questions/authors/stories-changed-in-the-telling | 2,061 | l |
+| Didn't the church pick four Gospels and suppress the rest? | /questions/authors/four-gospels-and-the-rest | 2,122 | m |
+| Weren't some New Testament letters forged? | /questions/authors/forgeries-in-the-new-testament | 2,035 | n |
+
+Every fact is in the ledger under "Twelfth run" (about 37 searches; bkv.unifr.ch does not resolve from here, so Justin's *Dialogue* 103 could not be read and was cut). Much rests on rows already verified from primary texts in the canon essay's and the Nicaea essay's ledgers and on the Study Bible's verified rows (`bdoor-ledger.md`). The pieces agree with the Study Bible's introductions to the Gospels, Acts, Romans and the disputed letters, which already set out the authorship and dating views; no disagreement was found. No living author is quoted. Tests moved to the new state: the text area's nine pieces live, the authors area pending (`questions.test.tsx`, `questions-validator.test.ts`).
+
+### What was run
+
+Light gates after each piece (validate-questions, the manifest check, the record diff, no-emdash, links, pnpm check): all 0. Before the push: pnpm test 153 files passed, 7 skipped, 1,782 tests passed, 73 skipped; all 40 content-gate commands 0; pnpm build 0 (started with the 1-minute load at 6.3, above the brief's limit of 6, a slip; it passed). Then, each started with the load under 6: sitemap 0 (eleven /questions addresses besides the room: the claims index, the text area and its nine pieces; nothing under /questions/authors; the sitemap file is built, not committed); prerender 0 (3,067 pages; the newly live pieces say index, the authors pages noindex); audit:canonicals 0 failures, 0 not prerendered, 2,367 sitemap URLs.
+
+Served build (`serve-like-vercel.mjs`, port 4631, Playwright at 390 with /api/trpc, /api/track and /_vercel stubbed): each of the five newly live pieces has index robots, no review line, no sideways scroll and no console errors; /questions/text lists all nine pieces; site search finds each of the five ("King James Version", "leper", "translated", "Homer", "original text"); /questions/authors and /questions/authors/the-gospels-are-anonymous say noindex and carry the review line, and search for "anonymous" finds no library page. Screenshots in /home/user/elite-shots/apol6/. The server was stopped and dist/ deleted. Lighthouse was not run (no page design changed).
+
+### What remains
+
+Text area (from the plan's fourteen): Luke 22:43-44 and Hebrews 2:9 as pages of their own, Nongbri on the dating of papyri, the church fathers' quotations, the Old Testament text. Authors area (plan items not yet a page of their own): what genre the Gospels are (Burridge), the Synoptic problem and Q, whether John is history or theology, the Gospel of Thomas at length, why not the Shepherd, the Didache or the Gospel of Peter, the Apocrypha, and whether Constantine created Christianity's Bible (partly in piece m). James's read of the five authors pieces before they go live; each goes live by its `status` and the area's in `areas.json`.

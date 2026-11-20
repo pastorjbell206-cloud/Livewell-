@@ -566,7 +566,54 @@ for (const c of cards) {
       if (!(typeof fr.still === "string" && fr.still.trim().length > 20))
         fail(at, "needs the words for its finished picture (still), for reduced motion and screen readers");
       if (fr.verse) verseRule(`${at} verse`, fr.verse);
+      // What Listen says (client/src/lib/film-voice.ts): the frame's say text
+      // at each level, or its caption. It must be there, and it must not leave
+      // a reference in figures for a voice to stumble over ("3:16"). Any
+      // Scripture it quotes is held to the BSB by quotationRule below, as the
+      // captions are.
+      if (fr.say !== undefined) {
+        if (!fr.say || typeof fr.say !== "object" || Array.isArray(fr.say))
+          fail(at, "say must be an object with younger and/or older text");
+        else
+          for (const k of Object.keys(fr.say))
+            if (!LEVELS.includes(k)) fail(at, `say has "${k}"; only younger and older`);
+      }
+      for (const l of LEVELS) {
+        const said = fr.say?.[l] ?? fr[l];
+        if (typeof said !== "string" || !said.trim())
+          fail(at, `has nothing to say aloud for ${l} readers`);
+        else if (/\d:\d/.test(said))
+          fail(`${at} ${l}`, "would be read aloud with a reference in figures; give it a say with the reference in words, or leave the reference to the caption");
+      }
     });
+    // A share cut (the video file's shorter version): frames of this film in
+    // order, at one level, each caption made only of sentences the frame's
+    // own caption already has, so the cut adds no new wording.
+    if (film.share) {
+      const sh = film.share;
+      const at = `${fw} share`;
+      if (!LEVELS.includes(sh.level)) fail(at, `level "${sh.level}" is not younger or older`);
+      const ids = frames.map(fr => fr.id);
+      let last = -1;
+      if (!Array.isArray(sh.frames) || sh.frames.length < 4)
+        fail(at, "needs at least four frames");
+      for (const [k, sf] of (sh.frames ?? []).entries()) {
+        const idx = ids.indexOf(sf.id);
+        if (idx < 0) { fail(`${at}[${k}]`, `names no frame "${sf.id}"`); continue; }
+        if (idx <= last) fail(`${at}[${k}]`, "is out of the film's order");
+        last = idx;
+        if (sf.text !== undefined) {
+          const fr = frames[idx];
+          const own = new Set(
+            LEVELS.flatMap(l => (fr[l] ?? "").split(/(?<=[.?!”])\s+(?=[A-Z“‘])/)).map(x => x.trim())
+          );
+          for (const sentence of sf.text.split(/(?<=[.?!”])\s+(?=[A-Z“‘])/))
+            if (!own.has(sentence.trim()))
+              fail(`${at}[${k}]`, `says "${sentence}", which is not a sentence of the frame's own caption`);
+          if (/\d:\d/.test(sf.text)) fail(`${at}[${k}]`, "holds a reference in figures; leave it to the verse");
+        }
+      }
+    }
     levelPair(`${fw} think`, film.think);
     if (!Array.isArray(film.read) || !film.read.length)
       fail(fw, "needs Study Bible chapters (Where the Bible says it)");

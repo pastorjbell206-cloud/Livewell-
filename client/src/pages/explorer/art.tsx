@@ -298,6 +298,56 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <Shape d="M78,84L86,70L94,84Z" tone="g" off={1.5} />
     </>
   ),
+  /* The gospel in a minute: the land joined again under an empty cross, the tomb open beside it. */
+  "gospel-in-a-minute": h => (
+    <>
+      <Shape d="M-4,100V70H104V100Z" tone="g" />
+      <path fill={h} d="M50,70L46,82L52,92L48,100H104V70Z" />
+      <path className="pl-l" d="M50,70L46,82L52,92L48,100" />
+      <Shape d="M34,70V24H40V36H50V42H40V70Z" tone="c" off={1.5} />
+      <Shape d="M62,70V54a14,14 0 0 1 28,0V70Z" tone="b" off={1.5} />
+      <path className="pl-k" d="M70,70V58a6,6 0 0 1 12,0V70Z" />
+      <path className="pl-o" d="M84,70a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M84,70a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+    </>
+  ),
+  /* The Bible in a minute: an open book with one road running across both pages. */
+  "bible-in-a-minute": h => (
+    <>
+      <Shape
+        d="M6,78V30C22,24 38,26 50,34C62,26 78,24 94,30V78C78,72 62,74 50,82C38,74 22,72 6,78Z"
+        tone="b"
+      />
+      <path fill={h} d="M50,34C62,26 78,24 94,30V78C78,72 62,74 50,82Z" />
+      <path className="pl-l" d="M50,34V82" />
+      <path
+        className="pl-l"
+        strokeDasharray="5 4"
+        d="M14,64C24,52 34,62 42,50S58,40 64,52S80,62 88,44"
+      />
+      <path className="pl-o" d="M10,64a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" />
+      <path className="pl-l" d="M10,64a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" />
+      <path className="pl-o" d="M84,44a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" />
+      <path className="pl-l" d="M84,44a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" />
+    </>
+  ),
+  /* Does God exist?: the chain of things framed small, resting in light from beyond the edge. */
+  "does-god-exist": h => (
+    <>
+      <path
+        className="pl-f"
+        d="M30,0L38,40M50,0V40M70,0L62,40M14,8L30,42M86,8L70,42"
+      />
+      <Shape d="M10,44H90V76H10Z" tone="b" />
+      <path fill={h} d="M10,70H90V76H10Z" />
+      <path className="pl-o" d="M18,60a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M18,60a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <Shape d="M38,60a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" tone="g" off={1} />
+      <Shape d="M58,60a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" tone="c" off={1} />
+      <path className="pl-l" d="M34,60H38M54,60H58M74,60H80" />
+      <path className="pl-l" d="M82,60h1M86,60h1" />
+    </>
+  ),
   /* Why did Jesus die?: the Passover lamb. */
   "why-jesus-died": h => (
     <>
