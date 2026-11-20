@@ -867,3 +867,45 @@ describe("the king thread", () => {
     ).toContain("/study/explorer?thread=king");
   });
 });
+
+describe("the Holy Spirit, promise and lamb threads", () => {
+  const cases = [
+    { id: "spirit", broken: "promised", skip: ["fall"] },
+    { id: "promise", broken: "waited", skip: ["creation"] },
+    { id: "lamb", broken: "points", skip: ["creation"] },
+  ];
+  for (const c of cases)
+    it(`${c.id}: lights the stops it names, broken where its key says, with each line`, async () => {
+      const t = INDEX.threads.find(x => x.id === c.id)!;
+      expect(t.status).toBe("finished");
+      const want = ROAD.filter(s => !c.skip.includes(s));
+      expect(threadStops(t, INDEX.stops).map(x => x.slug)).toEqual(want);
+      expect(t.broken).toEqual([c.broken]);
+      renderAt("/study/explorer");
+      await screen.findByRole("heading", { name: "Creation" });
+      fireEvent.click(screen.getByRole("button", { name: t.name }));
+      const lit = Array.from(document.querySelectorAll("[data-lit]"));
+      expect(lit.map(el => el.id.replace(/^stop-/, ""))).toEqual(want);
+      for (const means of Object.values(t.key!))
+        expect(screen.getByText(means)).toBeInTheDocument();
+      expect(
+        screen.getByText(`Lit at ${want.length} stops.`, { exact: false })
+      ).toBeInTheDocument();
+      for (const slug of want) {
+        const row = document.getElementById(`stop-${slug}`)!;
+        expect(row.textContent).toContain(t.stops![slug].line);
+        expect(Boolean(row.querySelector(".ex-road__lit--apart")), slug).toBe(
+          t.stops![slug].state === c.broken
+        );
+      }
+    });
+
+  it("the lamb thread gives both readings of Isaiah's servant, and no thread blames a people", () => {
+    const lamb = INDEX.threads.find(x => x.id === "lamb")!;
+    expect(lamb.stops!.exile.line).toContain("Christians");
+    expect(lamb.stops!.exile.line).toContain("Jewish readers");
+    expect(JSON.stringify(INDEX.threads)).not.toMatch(
+      /the Jews (killed|crucified)/i
+    );
+  });
+});

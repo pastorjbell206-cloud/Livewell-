@@ -20,6 +20,8 @@ import {
   ArrowUp,
   Check,
   Crown,
+  Flame,
+  Rainbow,
   RotateCcw,
   Tent,
   X,
@@ -71,10 +73,43 @@ export function LevelSwitch({
   );
 }
 
-/** A thread's mark: the tent for God with his people, the crown for the king. */
+/**
+ * A thread's mark: the tent for God with his people, the crown for the king,
+ * a flame for the Holy Spirit, the bow in the clouds for the promise, and a
+ * lamb (drawn here in the icons' own line, as the set has none) for the lamb.
+ */
 export function ThreadIcon({ id }: { id?: string }) {
-  const Icon = id === "king" ? Crown : Tent;
+  if (id === "lamb") return <LambIcon />;
+  const Icon =
+    id === "king"
+      ? Crown
+      : id === "spirit"
+        ? Flame
+        : id === "promise"
+          ? Rainbow
+          : Tent;
   return <Icon size={18} strokeWidth={1.75} aria-hidden="true" />;
+}
+
+function LambIcon() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M15 15.5H6c-1.7 0-2.8-1.5-2.2-3-1-1.4 0-3.3 1.7-3.3.4-1.5 2.2-2.2 3.5-1.4 1-1.2 3-1.2 3.9 0 1-.5 2.2-.3 2.9.4" />
+      <path d="M15.5 8.5h2.2a2.8 2.8 0 0 1 2.8 2.8v.4a2.3 2.3 0 0 1-2.3 2.3H15v1.5" />
+      <path d="M17.5 8.5 18.6 6.6" />
+      <path d="M7 15.5V20M10 15.5V20M13 15.5V20" />
+    </svg>
+  );
 }
 
 const SCENES: Record<string, () => Promise<{ default: Drawing }>> = {
@@ -771,7 +806,11 @@ export function CycleActivity({
           })}
         </ol>
         <p className="ex-wheel__hub" aria-hidden="true">
-          {at === n ? "And round again" : finished ? "Waiting for a king" : "Round it goes"}
+          {at === n
+            ? "And round again"
+            : finished
+              ? "Waiting for a king"
+              : "Round it goes"}
         </p>
       </div>
       <div className="ex-walk ex-walk--open" aria-live="polite">
@@ -809,7 +848,8 @@ export function CycleActivity({
           onClick={() => {
             if (at === 0) return;
             setAt(at - 1);
-            if (at - 1 === 0) requestAnimationFrame(() => next.current?.focus());
+            if (at - 1 === 0)
+              requestAnimationFrame(() => next.current?.focus());
           }}
         >
           <ArrowLeft
