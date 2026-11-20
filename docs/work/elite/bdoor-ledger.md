@@ -10952,3 +10952,25 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Proverbs 11:31 quoted in its Greek form; the BSB of Proverbs compared | 12-19 | 1-peter/4.json `literary`; BSB | Repository; BSB text |
 | Ezekiel 9:6; Malachi 3:2; Isaiah 11:2; Psalm 31:5 | 12-19 | BSB | BSB text |
 | Care line ‘Not every hardship comes from following Jesus ...’ | 12-19 | acts/plain/14.json (21-28 `hard`) | Word for word |
+
+## The plain notes on 1 Peter 5 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Fellow elder and witness; poimainō as in John 21:16; God's flock; the three temptations including profit from support; archipoimēn only here; victors' wreaths that withered | 1-4 | 1-peter/5.json `historical`, `words`, `cultural`, `doctrines` | Repository |
+| Psalm 23:1; Ezekiel 34:2, 4; Jeremiah 3:15 | 1-4 | BSB | BSB text |
+| Care line ‘If you have been harmed by a controlling leader or church ...’ | 1-4 | 2-corinthians/plain/11.json (16-21 `hard`) | Word for word |
+| Humility for all; Proverbs 3:34 as in James 4:6; casting a load on an animal; an invitation, not a rebuke | 5-7 | 1-peter/5.json `literary`, `words` (G3308), `hard`, `doctrines` | Repository |
+| Deuteronomy 26:8 (‘mighty hand’); Psalm 138:6; Psalm 55:22 | 5-7 | BSB | BSB text |
+| Care lines ‘This passage is not a rebuke of people who live with an anxiety disorder ...’ and ‘If you have thoughts of hurting yourself, speak to someone today ...’ | 5-7 | philippians/plain/4.json (4-9 `hard`) | Word for word |
+| Paired commands; lions hunting the isolated or weak; believers throughout the world; four verbs | 8-11 | 1-peter/5.json `literary`, `cultural` | Repository |
+| Psalm 22:13; Job 1:7; Isaiah 40:31 | 8-11 | BSB | BSB text |
+| Care line ‘If sadness has settled on you ...’ | 8-11 | 1-thessalonians/plain/5.json (16-22 `hard`) | Word for word |
+| Summary of purpose; Silvanus = Silas; Babylon most likely Rome, AD 70 usage, Revelation, few literal readings; John Mark (Acts 12:12); Papias on Mark; kiss of love | 12-14 | 1-peter/5.json `historical`, `cultural`, `words` | Repository |
+| Psalm 137:1; Jeremiah 29:7 | 12-14 | BSB | BSB text |
+
+Cut before publishing: the four verbs as pictures of mending (the notes say only that they build a fitting close).
+
+## 1 Peter complete (2026-11-20)
