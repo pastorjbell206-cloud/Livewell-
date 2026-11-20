@@ -8120,3 +8120,37 @@ Clement (the site says "usually dated near the end of the first century").
 
 Cut: Lightfoot by name; Junia's "250 inscriptions"; the Domitilla catacomb;
 Herod's grandson and Claudius's freedman as identifications; Marcion.
+
+## 1 Corinthians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/1-corinthians/intro.json`,
+field `teaching`. 5 searches, run on 2026-11-20. Ancient and modern writers are
+paraphrased. Scripture is the BSB in the repository, checked word for word by
+`scripts/validate-bible-notes.mjs` and a strict check that matches each
+quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul with Sosthenes (1:1); nearly all accept Paul as author; greeting in his own hand (16:21) | BSB; repository `author` | Repository |
+| Sosthenes of Acts 18:17 perhaps the same man, uncertain | BSB; Acts 18 plain note | Repository |
+| 1 Clement, from the church in Rome to Corinth, near the end of the first century, tells them to take up Paul's letter about himself, Cephas and Apollos, because they had made parties even then (47) | 1 Clement 47 | Search: cts.perseids.org (Lake translation, 47.1-47.5); lexundria.com; ets.galaxie.com JETS 39.1. Paraphrased; no year given beyond "near the end of the first century" |
+| Some scholars think the letter joins more than one letter; most read it as one | Repository `author` | Stated as views |
+| Written at Ephesus (16:8); Paul two to three years there (Acts 19:10; 20:31); about AD 53 to 55 | BSB; repository `date`; apol-ledger (Wikipedia 53 to 57, Ehrman 54 to 55) | Ledger |
+| Gallio inscription at Delphi; most 51 to 52, some 50 to 51 | wrom-ledger | Ledger |
+| Year and a half in Corinth (Acts 18:11); Titus Justus (Acts 18:7) | BSB | BSB text |
+| Corinth destroyed 146 BC, refounded 44 BC as a colony; Strabo: largely freed slaves; mixed settlers (Pawlak); seat of the governor of Achaia; Lechaeum and Cenchrea | wrom-ledger; Acts 18 plain ledger rows | Ledger |
+| Erastus pavement found 1929; identification disputed; date argued | wrom-ledger (IKorinthKent 232) | Ledger |
+| Isthmian Games every two years, for Poseidon, belonged to Corinth | Isthmia | Search: en.wikipedia.org "Isthmia (sanctuary)"; ferrelljenkins.blog. The games' site in Paul's day (Corinth or Isthmia) not stated |
+| Strabo 8.6.20: more than a thousand temple slaves, courtesans, at Aphrodite's temple; describes the older city; doubted | Strabo | Search: biblicalstudies.org.uk (Baugh, citing Ferguson and the OCD); old.biblicalarchaeology.org; en.wikipedia.org "Temple of Aphrodite at Acrocorinth". Stated as "seems to have been describing" |
+| Dining rooms held few; others in the courtyard | Roman-world portrait (Murphy-O'Connor 1983) | wrom-ledger |
+| Chloe's household; earlier lost letter (5:9); Stephanas, Fortunatus, Achaicus (16:17); peri de openings (7:1, 7:25, 8:1, 12:1, 16:1, 16:12) | BSB; repository `purpose` | BSB text |
+| Painful visit (2 Corinthians 2:1); tearful letter (2:4), many think lost, others in 2 Corinthians 10 to 13; partition of 2 Corinthians debated | Scholarship | Search: zondervanacademic.com "four letters"; en.wikipedia.com "2 Corinthians"; lists.ibiblio.org corpus-paul. Stated as views, "these notes do not choose" |
+| 6:12 printed as a slogan in quotation marks in the BSB; translators judge 7:1, 8:1, 8:4 | BSB text (6:12 marks; 7:1, 8:1, 8:4 unmarked); repository `reading`, `cultural` | Repository |
+| Crucifixion kept for slaves and rebels | Roman-world portrait (Hengel) | wrom-ledger |
+| Paul's quotations sometimes follow the old Greek translation | Comparison of BSB Isaiah 29:14 with 1 Corinthians 1:19 | BSB text |
+| Old Testament quotations named: Isaiah 29:14, Jeremiah 9:24, Job 5:13, Psalm 94:11, Leviticus 18:8, Deuteronomy 17:7, Exodus 12, Genesis 2:24, Psalm 110, Psalm 8, Genesis 2:7, Isaiah 25:8, Hosea 13:14, Deuteronomy 6:4 | BSB | BSB text |
+| Map: Corinth, Ephesus, Jerusalem on the "mediterranean" frame | wmap-ledger coordinates | Ledger. Cenchrea too close to Corinth to label apart: said in `mapNote` |
+
+Cut: "to Corinthianize" and the old city's jokes (not confirmed by the search);
+1 Clement's year (AD 96) and its wording in quotation marks; Strabo's own
+words; Origen by name.
