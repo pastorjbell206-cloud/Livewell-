@@ -6091,3 +6091,114 @@ at 3:25 seen only through a Bible site; Orthodox teaching stated generally.
 ### Next
 
 Romans 9 in plain words, then 10 to 16.
+
+## Continuation: Romans 9 to 16 (2026-11-20)
+
+Romans 9 to 16 in plain words, which completes the book. Data only: one
+`plain/<n>.json` per chapter and `"plain": true` added to each chapter note
+(no other change to those files). No code changed. One commit per chapter,
+with its ledger rows.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Romans 9 | 5 (‘Deep sorrow’: Paul's grief for his own people; ‘God's word has not failed’: Isaac, Jacob and Esau; ‘Is God unjust?’ Mercy, and Pharaoh; the potter and the clay, and a people from Jews and Gentiles; the stumbling stone) | 3,978 |
+| Romans 10 | 3 (zeal without knowledge, and ‘Christ is the end of the law’; ‘The word is near you’; ‘How can they hear?’) | 2,407 |
+| Romans 11 | 5 (‘Did God reject His people?’ The remnant; a stumble, not a fall; the olive tree; ‘All Israel will be saved’; mercy on everyone, and ‘O, the depth’) | 3,660 |
+| Romans 12 | 4 (living sacrifices; one body, many gifts; love must be sincere; ‘Overcome evil with good’) | 2,313 |
+| Romans 13 | 3 (the governing authorities; the one debt that stays: love; ‘The night is nearly over’) | 1,859 |
+| Romans 14 | 2 (the weak and the strong; ‘Do not destroy the work of God for the sake of food’) | 1,589 |
+| Romans 15 | 4 (‘Christ did not please Himself’; ‘Accept one another’; from Jerusalem to Illyricum; Jerusalem, Rome and Spain) | 2,380 |
+| Romans 16 | 5 (Phoebe; ‘Greet’: a church of names; a warning and a promise; greetings from Corinth, and Tertius; ‘To the only wise God be glory’) | 2,939 |
+| Total, 9 to 16 | 31 | 21,125 |
+| **Whole book, 1 to 16** | **64** | **44,262** |
+
+Passages without a `hard` part: 12:9-13, 13:8-10, 15:1-6, 15:14-21,
+16:21-24. Every Old Testament quotation is named by book and verse and read
+in its own setting; where Paul follows the Greek and the BSB's Old Testament
+follows the Hebrew (Isaiah 11:10, 59:20, Exodus 9:16, Proverbs 25:22), the
+note says so.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on Romans 9" to "16". 12
+web searches: 2, 0, 3, 1, 3, 0, 0, 3 (BSB footnote at 9:5; Westminster
+Confession 3.7; grafting; Nostra Aetate 4; the views of Israel and the
+church; burning coals; Tacitus, Annals 13.50; the Kairos Document; the 1850
+sermons on obeying the fugitive slave law; Junia; slave names in Romans 16;
+the doxology's places in the manuscripts). Reused word for word or nearly:
+the Genesis 25 paragraph on Jacob and Esau, the Psalm 69 paragraph on
+Romans 11:9-10, the Acts 28 readings of 11:26 and its 1 Clement wording,
+the Acts 2 and book-page sentences rejecting contempt for Jews, the Romans 5
+readings of "all", the Romans 8 care line and perseverance views, the Acts 18
+complementarian and egalitarian paragraphs, the Luke 6 pacifist and just war
+sentences, the Genesis 16 safety lines, the book page's Augustine sentences.
+Lexicon checks over the repository's Greek (metamorphoō, anupokritos,
+apostolos, diakonos, prostatis).
+
+### Cut or narrowed
+
+Cut: Chrysostom and Barth by name on 9:22; Calvin by name on 11:26;
+Columella; Lightfoot; the Domitilla catacomb; Junia's "250 inscriptions";
+Herod's grandson and Claudius's freedman as identifications; Marcion; the
+Roman fable of the belly; theatre masks; inns; debt in Rome; Nero's "good
+years"; the Muratorian fragment; Luther and Calvin on obedience; the
+Confessing Church. Narrowed: Annals 13.50 "around this time" (no year); the
+1850s sermons stated without naming a preacher, nation or law, and not
+claimed to cite Romans 13; the 9:5 footnote described, not quoted (it
+concerns the wording of the praise, not the punctuation); "Junias" said to
+be unattested, not "nowhere"; P46 called "one very early papyrus".
+
+### Contested matters, and how they are stated
+
+9:5 (comma or full stop; most modern translations and early writers read it
+of Christ); Jacob and Esau (Reformed, Arminian/Wesleyan, peoples or persons);
+hardening (Reformed; Arminian reading of Exodus's order); 9:22-23 (Reformed
+with Westminster 3.7's own words and "double predestination" as some call
+it; Arminian/Wesleyan; corporate); "as if by works" (traditional; new
+perspective); telos (end, goal, both); 10:9 not a formula; those who never
+heard (three answers, no fate); Israel and the church (supersessionism with
+its harsh and "fulfilment" forms, covenant theology, dispensational,
+two-covenant); falling away at 11:20-22; "all Israel" (three readings; "And
+so"); "everyone" at 11:32 (universalist, two groups, Reformed, Arminian);
+gifts today; burning coals; withdrawal from "this world"; 13:1-7
+(disobedience, pacifist and just war, the death penalty); the nearness of
+the day; the food laws for believers; where conscience ends and the gospel
+begins; whether Paul's prayer for Jerusalem was answered; Phoebe and Junia
+(complementarian and egalitarian, Acts 18 form); the doxology. Each says
+these notes do not choose.
+
+### Care lines
+
+9:19-29 (afraid of not being chosen, in the 8:31-39 form: pastor, friend,
+counsellor, Find Help); 12:14-21 (the Genesis 16 safety lines word for word:
+abuse, a local domestic violence line, Find Help). 9:30-33, 10:14-21,
+11:1-10, 11:11-16, 11:17-24 and 11:25-29 each say that these chapters give
+no ground for contempt for Jews; 11:11-16 and 11:25-29 say no claim is made
+about any modern state. No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs romans`, exit 0; every passage printed field by
+field, all 31 under their right headings. At the end, one at a time: all 38
+content-gate commands of ci.yml, exit 0 each (validate-bible-notes: 333
+chapters in plain words; search index 733 entries up to date; passage index
+623 files match; verify-sources 22 texts intact). `pnpm check`: clean.
+`pnpm test`: 147 files passed, 7 skipped; 1,708 tests passed, 73 skipped.
+`pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,042 pages): exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (no listener on
+4600 to 4699 before or after) and checked with Playwright at 390 wide,
+deviceScaleFactor 1, /api/trpc, /api/track and /_vercel stubbed. All sixteen
+chapters: every passage heading, its part headings in order, and the first
+60 characters under each matched the data: 64 passages, 314 fields
+(9: 25; 10: 15; 11: 25; 12: 19; 13: 14; 14: 10; 15: 18; 16: 24; 1 to 8 as
+before). No sideways scroll, no console or page errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/romans9-390-*`, `romans11-390-*`,
+`romans13-390-*`. Server stopped by PID, dist/ deleted, no lh-*.json.
+Lighthouse not run (no code changed).
+
+### Next
+
+Romans is complete. The next book in the plain-words layer is for the lead
+to choose.
