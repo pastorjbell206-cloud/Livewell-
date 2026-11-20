@@ -9416,3 +9416,35 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Macedonian churches gave out of poverty (2 Corinthians 8:1-2) | 15-23 | BSB | BSB text |
 | Prosperity teaching an error, no one named; giving care line | 15-23 | 2-corinthians/plain/9.json | Word for word, no phone number |
 | Exodus 29:18; Genesis 22:14; Deuteronomy 15:10; Psalm 34:10 | 15-23 | BSB | BSB text |
+
+## Colossians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/colossians/intro.json`, field
+`teaching`. 3 searches, run on 2026-11-20. Views are paraphrased; no modern scholar is
+named. Scripture is the BSB in the repository, checked by the validator and the strict
+check.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul and Timothy (1:1); signature in Paul's hand (4:18); received by the early church; in the earliest collections | Repository `author`; BSB | Repository |
+| The case against Paul's authorship (style; cosmic headship; raised already, 2:12, 3:1, against Romans 6) and the case for (style and secretary; theology from Paul's; the names shared with Philemon); a middle view, Timothy writing in Paul's life; no side, as on the Ephesians page | Repository `author` | Repository. Dunn not named |
+| Colossae in the Lycus valley, Phrygia, province of Asia; about 190 km (120 miles) east of Ephesus; Laodicea about 16 km (10 miles); Hierapolis a little farther; wool and dyed cloth; overshadowed by Laodicea; never fully excavated | Repository `setting` | Repository |
+| Mixed population; a large Jewish community long settled | Repository `setting` | Repository. Antiochus III and 200 BC not repeated |
+| Church mostly Gentile (1:21, 27; 2:13); met in homes, probably Philemon's (Philemon 2) | Repository `setting`; BSB | Repository |
+| Epaphras from Colossae (4:12); planted the church (1:7); Acts 19:10; "may" have heard it in Ephesus | Chapter 1 deep note `historical`; BSB | Repository |
+| Place and date: Rome 60 to 62 most; Ephesus mid-50s some; Caesarea 57 to 59 a few; 70 to 90 on the later view; no side | Repository `date` | Repository |
+| Tacitus records an earthquake at Laodicea about AD 60 (Annals 14.27); the letter's silence used both ways | Repository `date` | Search: classicalwisdom.com Tacitus Annals XIV; Perseus citation 14.27; Ramsay (1895) via digi.ub.uni-heidelberg.de. The claim that Colossae and Hierapolis fell in the same quake not made |
+| The teaching described only by the letter's own words (2:8, 11, 16, 18, 21, 23); reconstructions differ; no name given | Chapter 2 deep note `historical`; repository `setting` | Repository. Lightfoot, Arnold and Hooker not named; no system named |
+| 1:15-20 a hymn "many scholars"; two halves | Chapter 1 deep note `literary` | Repository |
+| Firstborn the heir, first place; Psalm 89:27; not a created being; Nicene Creed quoted; Arius taught the Son the first of God's creatures; Nicaea 325 | creeds/documents/nicene-creed.json (intro and text); BSB | Read from the files |
+| Unseen powers feared; disarmed at the cross; the triumph | Chapter 1 and 2 deep notes `cultural` | Repository |
+| Genesis 1:26-27; Jeremiah 10:12; Proverbs 8:30; Exodus 4:22; Psalm 89:27; Deuteronomy 10:16, 30:6; Psalm 110:1 | BSB | BSB text |
+| Household passage: Roman household writers; three changes; what all agree; two readings pointed to; abuse care lines word for word | Context guide household-codes-in-context; chapter 3 deep note; genesis/plain/16.json; romans/plain/12.json | Repository; care lines word for word |
+| Misuse of the slave verses wrong | Chapter 3 deep note `hard` | Repository |
+| Three Jewish fellow workers (4:10-11) | BSB | BSB text |
+| Map: Colossae 37.787, 29.26 | Gazetteers | Search: Wikipedia "Colossae" (37°47′12″N 29°15′36″E, shared with Chonae); denizli.ktb.gov.tr (2 km north of Honaz); pau.edu.tr Kolossai project. Close enough at the map's scale |
+| Map: Hierapolis 37.925, 29.126 | Gazetteers | Search: topostext.org "Hierapolis (Phrygia)" (37.9175, 29.1318); Wikipedia (37.925, 29.1258); turkisharchaeonews.net (37.9269, 29.1292) |
+| Map: Laodicea, Ephesus, Caesarea, Rome | Ephesians book page ledger; wmap-ledger | Ledger |
+
+Cut: the names of the scholars behind each reconstruction of the Colossian teaching;
+Antiochus III; the Latin Epistle to the Laodiceans.
