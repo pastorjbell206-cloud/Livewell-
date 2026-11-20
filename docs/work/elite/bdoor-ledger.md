@@ -8072,3 +8072,24 @@ No web searches; the BSB, the repository and earlier ledgers.
 | Koinos the ordinary Jewish word for ritually impure food | 13-23 | Repository deep note (`cultural`) | Repository |
 | Leviticus 19:14; Isaiah 52:7; Psalm 104:15; Mark 7:19; Acts 10:15 | 13-23 | BSB | BSB text |
 | Two readings of the food laws for believers (not binding; Jewish believers may keep them); "weak" as a wounded conscience, weighed differently | 13-23 | Standard readings | Stated as readings, no side |
+
+## The plain notes on Romans 15 (2026-11-20)
+
+No web searches; the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Psalm 69:9; John quotes the first half (John 2:17), Paul the second | 1-6 | BSB; Psalms 69 plain note | Repository |
+| "Accept one another" and the Roman reconstruction (book page) | 7-13 | Book page | Repository; conditional ("If") |
+| Psalm 18:49 = 2 Samuel 22:50; Deuteronomy 32:43; Psalm 117:1; Isaiah 11:1, 10; Paul follows the Greek at Isaiah 11:10; quotations from the Law, Prophets and Psalms | 7-13 | BSB; repository deep note (`literary`) | BSB text |
+| Pointer to the Israel-and-church views (11:11-16) | 7-13 | Romans 11 plain note | Repository |
+| Gentiles kept to the temple's outer court; leitourgos, priestly service | 14-21 | Repository deep note (`cultural`) | Repository |
+| Illyricum: the province on the east coast of the Adriatic, north and west of Macedonia; no visit in Acts; perhaps its border from Macedonia (Acts 20:1-2); the map note | 14-21 | Repository deep note (`historical`); book page `mapNote` | Repository |
+| Isaiah 52:15; 66:20 | 14-21 | BSB | BSB text |
+| The collection: 1 Corinthians 16:1-3; 2 Corinthians 8 and 9; Acts 24:17; gifts as bonds | 22-33 | BSB; repository deep note (`cultural`) | BSB text |
+| Acts 21:21, 27-33 (seized at the temple, arrested by the commander); two years at Caesarea; Rome as a prisoner; Acts 28:30-31 | 22-33 | BSB; book page | BSB text |
+| 1 Clement: "the limits of the west", Rome or Spain, tradition and uncertain | 22-33 | Acts 28 plain note; earlier ledger (1 Clement 5) | Repository wording |
+| Genesis 12:3; Isaiah 66:20; "some readers think" the collection a sign of the nations' gifts | 22-33 | BSB | Stated as some readers' view |
+
+Cut: the Muratorian fragment on Spain (not checked); "about AD 96" for 1
+Clement (the site says "usually dated near the end of the first century").
