@@ -233,6 +233,8 @@ const finder = {
   about: "Built by scripts/build-wisdom-index.mjs from topics/*.json, deep/*.json and matching.json. Do not edit by hand.",
   rewrites: matching.rewrites,
   synonyms: matching.synonyms,
+  concepts: matching.concepts ?? [],
+  safety: matching.safety ?? {},
   areas: matching.areas,
   topics: finderTopics,
   daily,

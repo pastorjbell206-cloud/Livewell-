@@ -58,6 +58,38 @@ describe("WisdomFinder", () => {
     expect(document.querySelector('.wf-none a[href="/help"]')).not.toBeNull();
   });
 
+  it("sets a nearly-as-close subject beside the first, not under it", async () => {
+    render(
+      <TestProviders>
+        <WisdomFinder />
+      </TestProviders>,
+    );
+    await waitFor(() => expect(screen.getByText("Browse by area of life")).toBeInTheDocument());
+    fireEvent.change(screen.getByRole("searchbox", { name: "What are you facing?" }), {
+      target: { value: "the doctor said moms cancer is back and theres nothing more they can do" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    expect(await screen.findByText("Just as close")).toBeInTheDocument();
+    const cards = Array.from(document.querySelectorAll(".wf-best")).map((a) => a.getAttribute("href"));
+    expect(cards[0]).toBe("/wisdom/serious-illness");
+    expect(cards).toContain("/wisdom/terminal-diagnosis");
+  });
+
+  it("puts the help topic first for self-harm, with Find Help under it", async () => {
+    render(
+      <TestProviders>
+        <WisdomFinder />
+      </TestProviders>,
+    );
+    await waitFor(() => expect(screen.getByText("Browse by area of life")).toBeInTheDocument());
+    fireEvent.change(screen.getByRole("searchbox", { name: "What are you facing?" }), { target: { value: "i have been cutting myself again" } });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    expect(await screen.findByText(/subjects? fits? what you wrote/)).toBeInTheDocument();
+    expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/suicidal-thoughts");
+    expect(document.querySelector('.wf-safety a[href="/help"]')).not.toBeNull();
+    expect(screen.queryByText("Just as close")).toBeNull();
+  });
+
   it("lists an area's subjects when an area is chosen", async () => {
     render(
       <TestProviders>

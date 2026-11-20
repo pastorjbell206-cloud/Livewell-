@@ -122,7 +122,11 @@ export default function WisdomFinder() {
   const best = confident ? matches[0] : null;
   // Two topics share a name (caregiving, caring-for-aging-parents): list a name once.
   const seenLabels = new Set<string>(best ? [best.topic.label] : []);
+  // Topics scoring nearly as high as the first are shown beside it, not under it.
+  const close = (result?.close ?? []).filter((m) => !seenLabels.has(m.topic.label) && seenLabels.add(m.topic.label)).slice(0, 2);
+  const closeIds = new Set(close.map((m) => m.topic.id));
   const rest = (confident ? matches.slice(1) : matches.filter((m) => m.score >= 4))
+    .filter((m) => !closeIds.has(m.topic.id))
     .filter((m) => !seenLabels.has(m.topic.label) && seenLabels.add(m.topic.label))
     .slice(0, confident ? 5 : 3);
 
@@ -235,13 +239,46 @@ export default function WisdomFinder() {
               {data && asked && best && (
                 <>
                   <Link href={`/wisdom/${best.topic.id}`} className="wf-best">
-                    <p className="wf-best__kicker">Closest to what you wrote{best.topic.deep ? " · written in full" : ""}</p>
+                    <p className="wf-best__kicker">
+                      {close.length ? "Close to what you wrote" : "Closest to what you wrote"}
+                      {best.topic.deep ? " · written in full" : ""}
+                    </p>
                     <h3 className="wf-best__title">{best.topic.label}</h3>
                     <p className="wf-best__line">{best.topic.line}</p>
                     <span className="wf-best__go">
                       Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
                     </span>
                   </Link>
+                  {best.safety && (
+                    <p className="wf-safety">
+                      If you are in danger or thinking of hurting yourself,{" "}
+                      <Link href="/help" className="wf-inline">
+                        Find Help
+                      </Link>{" "}
+                      lists places to turn now.
+                    </p>
+                  )}
+                  {close.length > 0 && (
+                    <>
+                      <h3 className="wz-sec__kicker" style={{ marginTop: "var(--s-3)" }}>
+                        Just as close
+                      </h3>
+                      <ul className="wf-close">
+                        {close.map((m) => (
+                          <li key={m.topic.id}>
+                            <Link href={`/wisdom/${m.topic.id}`} className="wf-best wf-best--close">
+                              <p className="wf-best__kicker">Also close to what you wrote{m.topic.deep ? " · written in full" : ""}</p>
+                              <h4 className="wf-best__title">{m.topic.label}</h4>
+                              <p className="wf-best__line">{m.topic.line}</p>
+                              <span className="wf-best__go">
+                                Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
                   {rest.length > 0 && (
                     <>
                       <h3 className="wz-sec__kicker" style={{ marginTop: "var(--s-3)" }}>
