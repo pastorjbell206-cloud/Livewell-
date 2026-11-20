@@ -3524,6 +3524,24 @@
     "rest-and-sabbath",
     "marriage-communication"
    ]
+  },
+  "status-and-recognition": {
+   "phrases": [
+    "nobody notices my work",
+    "want people to recognize me",
+    "need the credit",
+    "jealous when coworkers get praised",
+    "obsessed with my follower count",
+    "want a bigger title",
+    "checking how many likes",
+    "wish someone would thank me"
+   ],
+   "not": [],
+   "related": [
+    "pride",
+    "people-pleasing",
+    "success-and-failure"
+   ]
   }
  }
 }
