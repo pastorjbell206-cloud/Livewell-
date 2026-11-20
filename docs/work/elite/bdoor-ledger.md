@@ -7449,3 +7449,27 @@ No web search.
 | Luke 2:41; Hebrews 12:22; Luke 19:42; Jeremiah 29:7; Matthew 5:9 | all | BSB | BSB text |
 | Applications held by Christians (the city; the heavenly Jerusalem; both) | 6-9 | Repository deep note (hard) | Stated as views, no side |
 | "These notes make no claim about any modern state, government, border or conflict, and nothing here is said against any people who live in that land." | 6-9 | Brief's rule; site's stance | Stated plainly |
+
+## The plain notes on Psalms 123 to 126 (2026-11-20)
+
+No web search. Each points back to Psalm 120 for the Songs of Ascents.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| Servants watching the hand; master and mistress | 123 | Repository deep note (cultural) | Site's own teaching |
+| "Arrogant" as those at ease, "proud" as lofty; after the exile (many scholars); Nehemiah 4:4; 2:19 | 123 | Repository deep note (historical, cultural); BSB | Stated as "many scholars" |
+| Mark 10:47; Luke 18:13; 1 Peter 4:14 | 123 | BSB | BSB text |
+| A call and response; which rescue unknown (a particular one, the return, or any) | 124 | Repository deep note (historical) | Stated as views |
+| Numbers 16:30-33 (swallowed alive); flash floods in dry stream beds; water as chaos | 124 | Repository deep note (cultural); BSB | Site's own teaching |
+| Fowler's snare: a bird freed only if the snare breaks; Proverbs 6:5 | 124 | Repository deep note (cultural); BSB | BSB text |
+| Romans 8:31; 2 Corinthians 1:10 | 124 | BSB | BSB text |
+| Jerusalem among higher hills, the Mount of Olives to the east; Zion (2 Samuel 5:7) | 125 | Repository deep note (cultural); BSB | Site's own teaching |
+| The scepter of the wicked; after the exile (many) or earlier | 125 | Repository deep note (historical) | Stated as "many scholars" |
+| Land allotted by lot (Joshua 14-19) | 125 | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 54:10; John 10:28; Hebrews 12:28; Psalm 130:3 | 125 | BSB | BSB text |
+| 125:4 not a merit system | 125 | Repository deep note (hard) | Stated plainly |
+| The return after 539 BC, as the book page says; "restored the fortunes" as in Job 42:10; most read it of the return | 126 | Book page ("When"); repository deep note (historical) | Repository |
+| Negev stream beds filling with winter rain; seed grain as costly hope | 126 | Repository deep note (cultural) | Site's own teaching |
+| John 16:20; Matthew 5:4; Galatians 6:9 | 126 | BSB | BSB text |
+
+Cut: Sennacherib and 701 BC (124, 125, 126); Ezra 1 and Cyrus by name (the book page's date pointed to instead).
