@@ -11315,3 +11315,24 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | ‘The Name’ as Jesus | Jesus | 3-john/1.json `christ` | Repository |
 | Genesis 18:2; 1 Kings 17; Deuteronomy 10:19; Psalm 1:3; Proverbs 22:1; Numbers 16; Proverbs 16:18; Mark 9:35; John 13:20 | Old Testament and elsewhere | BSB | BSB text |
 | Map: Ephesus at the Pauline maps' point; the letter names no place | Map | ephesians/intro.json `teaching.map`; 3-john/1.json `historical` | Repository |
+
+## The plain notes on 3 John (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gaius a common name, not identified; health wishes in papyrus letters; euodoō | 1-4 | 3-john/1.json `historical`, `cultural`, `hard` | Repository |
+| Prosperity teaching sentences and the illness care line | 1-4 | 1-timothy/plain/6.json (3-10 `hard`); 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| 1 Samuel 20:42; Psalm 1:3; Proverbs 3:7-8 | 1-4 | BSB | BSB text |
+| Travel, inns, networks; ‘send on’ (Romans 15:24; Titus 3:13); nothing from the Gentiles; wandering teachers on public gifts; synergos | 5-8 | 3-john/1.json `cultural`, `words` (G4311, G4904) | Repository |
+| Genesis 18:2; Deuteronomy 10:19; Deuteronomy 14:27 | 5-8 | BSB | BSB text |
+| The earlier letter, perhaps 2 John; Diotrephes' name; three readings of the quarrel; philoprōteuō | 9-10 | 3-john/1.json `historical`, `words` (G5383) | Repository, no side |
+| Care line ‘If you have been harmed by a controlling leader or church ...’ | 9-10 | 2-corinthians/plain/11.json (16-21 `hard`) | Word for word |
+| Numbers 16:3; Ezekiel 34:2; Proverbs 16:18; Mark 9:35 | 9-10 | BSB | BSB text |
+| Verse 11 as the moral between the two men; verse 12 a letter of recommendation; Demetrius the carrier | 11-12 | 3-john/1.json `literary`, `cultural` | Repository |
+| Amos 5:14; Psalm 34:14; Proverbs 22:1 | 11-12 | BSB | BSB text |
+| The ending parallels 2 John; shalom | 13-14 | 3-john/1.json `literary`; lexicon H7965 | Repository |
+| Numbers 6:26; Isaiah 43:1 | 13-14 | BSB | BSB text |
+
+## 3 John complete (2026-11-20)
