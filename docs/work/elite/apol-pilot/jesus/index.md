@@ -1,0 +1,30 @@
+---
+area: jesus
+status: pending (not on the site; for James to read first)
+ledger: docs/work/elite/apol-ledger.md, "Fourteenth run"
+---
+
+# The historical Jesus and the resurrection
+
+Christianity is not a philosophy that happens to have a founder. It stands on claims about a man who lived in Galilee and Judea under Roman rule, who was crucified when Pontius Pilate governed Judea, and who, his followers said within weeks, had been raised from the dead. Paul put the stakes plainly: if Christ has not been raised, the preaching is worthless and so is the faith. That makes the questions in this area different from most. They are questions of history, and they can be argued with the tools historians use on any ancient life: the dates of the sources, who wrote them and why, what outsiders said, and which explanation best accounts for what all sides grant.
+
+The pages take the hardest forms of the doubts. Some skeptics hold that Jesus never lived at all. Many more grant that he lived and died but doubt that he was buried in a known tomb, and explain the first Christians' conviction that they had seen him alive by grief, by legend or by fraud. Others point to the differences among the four Easter accounts. And some of the most careful, Bart Ehrman among them, argue that whatever happened, a historian working as a historian can never conclude that a miracle took place. Each objection is stated in the form its defenders would sign, with what is true in it granted first.
+
+The pages also say what history can't do. It can establish that Jesus lived, that he was crucified, and that his followers were soon and sincerely convinced that God had raised him. It can weigh the explanations of those facts. It can't compel faith, and it can't settle by itself whether there is a God who could raise the dead. The church confesses the resurrection of Jesus as an event, bodily and in history, not as a symbol. These pages argue that the confession is reasonable; they don't pretend that argument can take the place of trust.
+
+## The questions
+
+1. **Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?** Paul's meeting with Jesus' brother, Josephus and the disputed passage shown as it stands, Tacitus, Pliny and Suetonius, and the case that Jesus began as a heavenly figure, at its strongest.
+
+## Words these pages use
+
+- **Testimonium Flavianum**: the paragraph about Jesus in Josephus's *Antiquities of the Jews* (18.63-64), "the testimony of Flavius" Josephus, which Christian copyists expanded.
+- **Mythicism**: the view that there was no historical Jesus, and that the Christian story began with a heavenly figure later placed in history.
+- **Inference to the best explanation**: the way historians argue, by asking which account explains the most of the agreed evidence with the least strain.
+- **Criterion of embarrassment**: the historians' rule that a detail awkward for the people who told it, such as a crucifixion or women as the first witnesses, is unlikely to have been invented by them.
+
+## Where else to look
+
+- The argued answer "Did the resurrection actually happen?" (/answers/did-the-resurrection-actually-happen), the short form of this area.
+- The argued answers "Was Jesus just a good teacher?" (/answers/was-jesus-just-a-good-teacher) and "Are miracles believable?" (/answers/are-miracles-believable).
+- The Study Bible's notes on the resurrection chapters: Matthew 28 (/study/bible/matthew/28), Mark 16 (/study/bible/mark/16), Luke 24 (/study/bible/luke/24), John 20 (/study/bible/john/20) and 1 Corinthians 15 (/study/bible/1-corinthians/15).
