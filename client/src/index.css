@@ -856,6 +856,10 @@ img{display:block;max-width:100%}
 .st-passage__text{font-family:var(--font-reading);font-size:1.1875rem;line-height:1.65;color:var(--ink);margin:0 0 var(--s-3)}
 .st-passage__n{font-family:var(--U);font-size:.6em;font-weight:600;color:var(--mustard-text);line-height:0;margin-right:.3em}
 .st-passage__later{font-family:var(--U);font-size:.8em;font-style:italic;color:var(--ink-muted)}
+/* Printed verses the earliest manuscripts do not have: a quiet label and brackets (LaterMark.tsx). */
+.bible-later{color:var(--ink-muted);cursor:auto}
+.bible-later__label{font-family:var(--U);font-size:.68em;font-style:italic;letter-spacing:.01em;white-space:nowrap}
+.bible-later__bracket{font-family:var(--font-reading)}
 .st-passage__status{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3)}
 
 /* Stepper: the step fills the screen (less the header) so Back and Next sit

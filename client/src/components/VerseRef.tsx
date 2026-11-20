@@ -17,6 +17,7 @@
  * plain text: never a link to nowhere.
  */
 import { Fragment, useEffect, useMemo, useState, type CSSProperties, type MouseEvent, type ReactNode } from "react";
+import { LaterClose, LaterOpen, laterEdge } from "@/components/LaterMark";
 import { Link } from "wouter";
 import { Sheet } from "@/components/study/Sheet";
 import ScriptureNote from "@/components/ScriptureNote";
@@ -159,12 +160,18 @@ function Passage({ parsed }: { parsed: ScriptureRef }) {
         <div key={`${g.c}-${i}`} className="st-passage">
           {labelled && <p className="st-passage__chapter">Chapter {g.c}</p>}
           <p className="st-passage__text">
-            {g.verses.map((v) => (
-              <Fragment key={v.v}>
-                <sup className="st-passage__n">{v.v}</sup>
-                {v.t || <span className="st-passage__later">[Not in the earliest manuscripts]</span>}{" "}
-              </Fragment>
-            ))}
+            {g.verses.map((v) => {
+              // A run is read across the whole passage, so John 7:53-8:11 opens once and closes once.
+              const edge = laterEdge(verses, verses.indexOf(v));
+              return (
+                <Fragment key={v.v}>
+                  {edge?.open && <LaterOpen />}
+                  <sup className="st-passage__n">{v.v}</sup>
+                  {v.t || <span className="st-passage__later">[Not in the earliest manuscripts]</span>}{" "}
+                  {edge?.close && <LaterClose />}
+                </Fragment>
+              );
+            })}
           </p>
         </div>
       ))}
