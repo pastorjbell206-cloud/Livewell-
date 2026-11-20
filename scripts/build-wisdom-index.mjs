@@ -145,6 +145,7 @@ const placeFields = (ref) => {
 const topics = Array.from(byId.values()).sort((a, b) => a.label.localeCompare(b.label));
 const outTopics = [];
 const finderTopics = [];
+const daily = [];
 const entries = new Map();
 
 for (const t of topics) {
@@ -178,6 +179,9 @@ for (const t of topics) {
       ...(p.context ? { context: p.context, contextAt: placeFields(p.context) } : {}),
       ...(p.where ? { where: p.where } : {}),
     }));
+    // The verse of the day draws only from verses that end their sentence, so it is never cut mid-sentence.
+    const whole = versesOut.find((v) => v.whole);
+    if (whole) daily.push({ id: t.id, label: t.label, ref: whole.ref, text: whole.text });
     const entry = {
       id: t.id,
       label: t.label,
@@ -218,6 +222,7 @@ const finder = {
   synonyms: matching.synonyms,
   areas: matching.areas,
   topics: finderTopics,
+  daily,
 };
 
 const outputs = new Map();

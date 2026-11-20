@@ -1,0 +1,164 @@
+/* The wisdom library: the Wisdom Finder (pages/tools/WisdomFinder.tsx) and
+ * the topic pages (pages/WisdomTopic.tsx). Tokens only. The one memorable
+ * thing is the verse in its place: a passage opens to the paragraph around
+ * it, with the verse itself marked. Mustard stays punctuation: that mark,
+ * the misread page's "what it says" edge, and the chosen answer. */
+
+.wz-band{background:var(--bone);padding:var(--s-4) var(--gutter)}
+.wz-band--warm{background:var(--bone-warm)}
+.wz-band--care{padding-top:0;padding-bottom:0}
+.wz-band--care aside{margin:0 0 var(--s-2) !important;max-width:none !important}
+.wz-col{max-width:var(--w-default);margin:0 auto}
+.wz-col>*{max-width:46rem}
+
+.wz-meta{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:14px 0 0}
+.wz-meta a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wz-head-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+
+.wz-jump{display:flex;flex-wrap:wrap;gap:4px 18px;padding:0 0 var(--s-2);margin:0 0 var(--s-3);border-bottom:1px solid var(--border)}
+.wz-jump a{display:inline-flex;align-items:center;min-height:44px;font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink);text-decoration:none}
+.wz-jump a:hover,.wz-jump a:focus-visible{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.25em}
+
+.wz-sec{margin:0 0 var(--s-5);scroll-margin-top:84px}
+.wz-sec__title{font-family:var(--F);font-size:var(--fs-h2,clamp(1.75rem,1.4rem + 1vw,2.25rem));font-weight:400;line-height:1.15;letter-spacing:-0.01em;color:var(--ink);margin:0 0 10px}
+.wz-sec__kicker{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:0 0 10px}
+.wz-sec__lede{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-3);max-width:60ch}
+.wz-link{display:inline-flex;align-items:center;min-height:44px;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.25em}
+.wz-link:hover{text-decoration-thickness:2px}
+
+/* A passage. */
+.wz-verses{display:flex;flex-direction:column;gap:var(--s-3);margin-bottom:var(--s-3)}
+.wz-verse{padding:0 0 var(--s-3);border-bottom:1px solid var(--border)}
+.wz-verse__quote{margin:0;padding:0 0 0 18px;border-left:2px solid var(--ink)}
+.wz-verse__text{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 6px}
+.wz-verse__ref{display:block;font-family:var(--U);font-style:normal;font-size:13.5px;font-weight:600;letter-spacing:.02em;color:var(--ink-muted)}
+.wz-verse__where{font-family:var(--font-reading);font-size:16.5px;line-height:1.6;color:var(--ink-muted);margin:12px 0 0 20px}
+.wz-verse__tools{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;margin:10px 0 0 14px}
+.wz-verse__open,.wz-verse__mini{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 6px;font-family:var(--U);font-size:14.5px;font-weight:500;color:var(--ink);background:transparent;border:0;cursor:pointer}
+.wz-verse__open{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.25em}
+.wz-verse__mini{color:var(--ink-muted)}
+.wz-verse__mini:hover{color:var(--ink)}
+.wz-verse__mini[aria-pressed="true"]{color:var(--ink)}
+.wz-verse__chev{transition:transform .2s var(--motion-ease)}
+.wz-verse__open[aria-expanded="true"] .wz-verse__chev{transform:rotate(180deg)}
+.wz-context{margin:8px 0 0 20px;padding:16px 18px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm)}
+.wz-context[hidden]{display:none}
+.wz-context__wait{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:0}
+.wz-context__head{font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink);margin:0 0 10px}
+.wz-context__section{font-weight:400;color:var(--ink-muted)}
+.wz-context__text{font-family:var(--font-reading);font-size:17px;line-height:1.7;color:var(--ink-muted);margin:0}
+.wz-context__text sup{font-family:var(--U);font-size:10.5px;font-weight:600;color:var(--ink-muted);margin-right:3px}
+.wz-context__v.is-mine{color:var(--ink)}
+.wz-context__text mark{background:transparent;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:2px;text-underline-offset:.22em;text-decoration-skip-ink:auto}
+.wz-context__links{list-style:none;margin:12px 0 0;padding:10px 0 0;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:0 20px}
+
+/* Often misread. */
+.wz-misread{padding:var(--s-3) 0;border-top:1px solid var(--border)}
+.wz-misread__pair{display:grid;gap:14px;margin:16px 0 4px}
+@media (min-width:760px){.wz-misread__pair{grid-template-columns:1fr 1fr;gap:20px}}
+.wz-misread__side{padding:14px 16px;background:var(--bone-warm);border-radius:var(--radius-sm)}
+.wz-misread__side--says{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--mustard)}
+.wz-misread__h{font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink);margin:0 0 6px}
+.wz-misread__side p{font-family:var(--font-reading);font-size:16.5px;line-height:1.6;color:var(--ink);margin:0}
+
+/* The whole Bible, and the background. */
+.wz-prose p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 1em;max-width:var(--w-read)}
+.wz-lenses{display:grid;gap:var(--s-3)}
+.wz-col>.wz-lenses{max-width:none}
+@media (min-width:900px){.wz-lenses{grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:var(--s-4)}}
+.wz-lens__title{font-family:var(--F);font-size:clamp(1.3rem,1.15rem + .4vw,1.55rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0 0 8px}
+.wz-lens p{font-family:var(--font-reading);font-size:16.5px;line-height:1.65;color:var(--ink);margin:0}
+
+/* Where Christians differ: the views side by side, equal weight. */
+.wz-differ__share,.wz-differ__after{font-family:var(--font-reading);font-size:17px;line-height:1.6;color:var(--ink);margin:0 0 var(--s-2)}
+.wz-differ__after{margin-top:var(--s-2);color:var(--ink-muted)}
+.wz-differ{display:grid;gap:12px}
+.wz-col>.wz-sec .wz-differ{max-width:none}
+@media (min-width:760px){.wz-differ{grid-template-columns:repeat(auto-fit,minmax(0,1fr))}}
+.wz-differ__view{padding:16px 18px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm)}
+.wz-differ__name{font-family:var(--F);font-size:1.3rem;font-weight:500;line-height:1.2;color:var(--ink);margin:0 0 6px}
+.wz-differ__view p{font-family:var(--font-reading);font-size:16px;line-height:1.6;color:var(--ink);margin:0}
+
+/* A question to sit with, and the prayer. */
+.wz-sit{padding:var(--s-3) 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.wz-sit__q{font-family:var(--F);font-size:clamp(1.6rem,1.3rem + 1vw,2.2rem);font-weight:400;line-height:1.25;color:var(--ink);margin:0;text-wrap:balance}
+.wz-prayer{margin:0;padding:18px 20px;background:var(--bone-warm);border-radius:var(--radius-sm)}
+.wz-prayer p{font-family:var(--font-reading);font-style:italic;font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 8px}
+.wz-prayer cite{font-family:var(--U);font-style:normal;font-size:13.5px;font-weight:600;color:var(--ink-muted)}
+.wz-care{margin:0 0 var(--s-4);padding:16px 18px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--ink);border-radius:var(--radius-sm)}
+.wz-care__title{font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);margin:0 0 6px}
+.wz-care p{font-family:var(--font-reading);font-size:16.5px;line-height:1.6;color:var(--ink);margin:0}
+.wz-notadvice{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:0 0 var(--s-4)}
+
+.wz-chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.wz-chip{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font-family:var(--U);font-size:14.5px;font-weight:500;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:var(--radius-pill);text-decoration:none}
+.wz-chip:hover,.wz-chip:focus-visible{border-color:var(--ink)}
+
+.wz-missing__title{font-family:var(--F);font-size:var(--fs-h1);font-weight:400;color:var(--ink);margin:0 0 12px}
+.wz-missing__line{font-family:var(--B);font-size:16px;color:var(--ink-muted);margin:0 auto 24px;max-width:46ch}
+.wz-missing__actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.wz-col>.wz-missing__title,.wz-col>.wz-missing__line,.wz-col>.wz-missing__actions{max-width:none}
+
+/* The Wisdom Finder. */
+.wf-ask{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-4) var(--gutter) var(--s-5)}
+.wf-ask__label{display:block;font-family:var(--F);font-size:clamp(1.5rem,1.25rem + .9vw,2.1rem);font-weight:400;line-height:1.2;color:var(--charcoal-fg);margin:0 0 6px}
+.wf-ask__help{font-family:var(--U);font-size:14.5px;line-height:1.55;color:var(--charcoal-fg-muted);margin:0 0 14px;max-width:60ch}
+.wf-ask__form{display:flex;flex-wrap:wrap;gap:10px;max-width:46rem}
+.wf-ask__input{flex:1 1 18rem;min-height:56px;padding:12px 16px;font-family:var(--font-reading);font-size:18px;color:var(--ink);background:var(--card);border:1px solid var(--charcoal-line);border-radius:var(--radius-sm)}
+.wf-ask__input:focus-visible{outline:2px solid var(--mustard);outline-offset:2px}
+.wf-ask__form .btn{gap:8px;min-height:56px}
+.wf-try{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none;max-width:60rem}
+.wf-try button{min-height:44px;padding:0 14px;font-family:var(--U);font-size:14px;color:var(--charcoal-fg);background:transparent;border:1px solid var(--charcoal-line);border-radius:var(--radius-pill);cursor:pointer;text-align:left}
+.wf-try button:hover,.wf-try button:focus-visible{border-color:var(--charcoal-fg)}
+.wf-resume{font-family:var(--U);font-size:14px;color:var(--charcoal-fg-muted);margin:14px 0 0}
+.wf-resume button{min-height:44px;padding:0;margin-left:6px;font:inherit;font-weight:600;color:var(--charcoal-fg);background:none;border:0;cursor:pointer;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.25em}
+
+.wf-results__count{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:0 0 12px}
+.wf-best{display:block;padding:22px 22px 20px;background:var(--card);border:1px solid var(--border);border-top:3px solid var(--ink);border-radius:var(--radius-sm);text-decoration:none;color:var(--ink)}
+.wf-best:hover,.wf-best:focus-visible{border-color:var(--borderdk);border-top-color:var(--ink)}
+.wf-best__kicker{font-family:var(--U);font-size:12.5px;font-weight:600;color:var(--ink-muted);margin:0 0 6px}
+.wf-best__title{font-family:var(--F);font-size:clamp(1.8rem,1.5rem + 1vw,2.4rem);font-weight:400;line-height:1.1;color:var(--ink);margin:0 0 8px}
+.wf-best__line{font-family:var(--font-reading);font-size:17px;line-height:1.6;color:var(--ink);margin:0 0 12px;max-width:60ch}
+.wf-best__go{display:inline-flex;align-items:center;gap:8px;font-family:var(--U);font-size:15px;font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.25em}
+.wf-list{list-style:none;margin:var(--s-2) 0 0;padding:0;border-top:1px solid var(--border)}
+.wf-list a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;align-items:center;min-height:56px;padding:12px 0;border-bottom:1px solid var(--border);color:var(--ink);text-decoration:none}
+.wf-list__name{font-family:var(--F);font-size:1.3rem;font-weight:500;line-height:1.2}
+.wf-list__line{grid-column:1;font-family:var(--U);font-size:14px;line-height:1.5;color:var(--ink-muted)}
+.wf-list a:hover .wf-list__name,.wf-list a:focus-visible .wf-list__name{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wf-list__arrow{grid-column:2;grid-row:1 / span 2;color:var(--ink-muted)}
+.wf-full{font-family:var(--U);font-size:12px;font-weight:600;color:var(--ink-muted);margin-left:8px;white-space:nowrap}
+.wf-none{padding:20px 22px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm)}
+.wf-none__title{font-family:var(--F);font-size:1.6rem;font-weight:400;color:var(--ink);margin:0 0 8px}
+.wf-none p{font-family:var(--font-reading);font-size:17px;line-height:1.6;color:var(--ink);margin:0 0 10px}
+.wf-today{padding:18px 0 0}
+.wf-today__text{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 6px;max-width:var(--w-read)}
+.wf-today__ref{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:0}
+.wf-today__ref a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wf-az summary{display:flex;align-items:center;min-height:48px;font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);cursor:pointer}
+.wf-az__filter{width:100%;max-width:26rem;min-height:48px;padding:10px 14px;font-family:var(--U);font-size:16px;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);margin:8px 0 14px}
+.wf-az__list{list-style:none;margin:0;padding:0;columns:1;column-gap:var(--s-4)}
+@media (min-width:720px){.wf-az__list{columns:2}}
+@media (min-width:1100px){.wf-az__list{columns:3}}
+.wf-az__list li{break-inside:avoid}
+.wf-az__list a{display:flex;align-items:center;min-height:44px;font-family:var(--U);font-size:15px;color:var(--ink);text-decoration:none}
+.wf-az__list a:hover,.wf-az__list a:focus-visible{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wf-col>*{max-width:none}
+
+@media print{
+  .wz-band{padding:4pt 0 !important;background:transparent !important}
+  .wz-col>*{max-width:none}
+  .wz-sec{margin:0 0 10pt;break-inside:auto}
+  .wz-sec__title{font-size:15pt;margin:0 0 4pt}
+  .wz-sec__lede{display:none}
+  .wz-verse{padding:0 0 6pt;break-inside:avoid}
+  .wz-verse__text,.wz-prose p,.wz-prayer p{font-size:10.5pt;line-height:1.45;max-width:none}
+  .wz-verse__where,.wz-lens p,.wz-misread__side p,.wz-differ__view p,.wz-care p{font-size:9.5pt;line-height:1.45}
+  .wz-verse__tools,.wz-context,.wz-head-actions,.wz-jump,.wz-chips{display:none !important}
+  .wz-misread__pair,.wz-differ,.wz-lenses{display:block}
+  .wz-misread__side,.wz-differ__view{margin:0 0 4pt;padding:4pt 6pt;background:transparent;border:0.5pt solid var(--border)}
+  .wz-sit__q{font-size:14pt}
+  .wz-prayer{background:transparent;padding:0 0 0 8pt;border-left:1pt solid var(--ink)}
+  .wz-link{min-height:0}
+}
+.wf-inline{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.wf-foot{list-style:none;margin:var(--s-3) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:0 24px}

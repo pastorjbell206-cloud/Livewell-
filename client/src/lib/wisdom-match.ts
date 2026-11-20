@@ -168,7 +168,7 @@ export function scoreTopic(p: PreparedTopic, q: Set<string>): number {
     if (!ph.words.every((w) => q.has(w))) continue;
     phraseScore += 4 + 3 * (ph.words.length - 1) + (ph.curated ? 2 : 0);
   }
-  for (const w of q) {
+  for (const w of Array.from(q)) {
     let best = 0;
     if (p.label.has(w)) best = 4;
     else if (p.keyWords.has(w)) best = 2;
@@ -177,7 +177,7 @@ export function scoreTopic(p: PreparedTopic, q: Set<string>): number {
   }
   let words = 0;
   let framing = 0;
-  for (const v of covered.values()) {
+  for (const v of Array.from(covered.values())) {
     if (v === 0.5) framing += v;
     else words += v;
   }
