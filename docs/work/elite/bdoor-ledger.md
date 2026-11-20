@@ -12854,3 +12854,31 @@ Cut before publishing: ‘the time of creation’ for the seven days and ‘holi
 | Revelation 8:3; 2 Corinthians 2:15 | 34-38 | BSB | BSB text |
 
 Cut before publishing: a paraphrase of verse 34 that had been set in quotation marks (now given as a list with only the BSB's words quoted).
+
+## The plain notes on Exodus 31 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The plans complete; God names the builders, then tells Israel when to stop | 1-11, 12-17 | exodus/31.json `story` | Repository |
+| Bezalel the first person said to be filled with the Spirit; the gift is craft | 1-11 | exodus/31.json `doctrines` (spirit) | Repository |
+| Chokhmah as practical skill; skill, ability and knowledge as in Proverbs 3:19-20 | 1-11 | exodus/31.json `words` (H2451), `doctrines` (wisdom) | Repository |
+| Former brickmakers; Egypt's craftsmen; the gifts of 12:35-36 | 1-11 | exodus/31.json `historical` | Repository |
+| Ugarit: a craftsman god builds Baal's palace; Exodus reverses it | 1-11 | exodus/31.json `cultural` | Repository |
+| Judah and Dan, the most honored and one of the lesser tribes; Hur possible, not stated | 1-11 | exodus/31.json `historical` | Repository |
+| Exodus 35:34; Proverbs 3:19-20; 1 Corinthians 12:4, 7; 3:16 | 1-11 | BSB; exodus/31.json `christ` | BSB text |
+| The seventh speech on the seventh day; the same word for work (melakhah) for the craft and for what must stop | 12-17 | exodus/31.json `literary`, `words` (H4399) | Repository |
+| The Sabbath as a sign, like the rainbow and circumcision; a sign in time | 12-17 | exodus/31.json `cultural`, `words` (H0226H) | Repository |
+| Israel's plainest difference from its neighbors | 12-17 | exodus/31.json `cultural` | Repository |
+| ‘Was refreshed’ related to the word for breath; the same verb in 23:12 | 12-17 | exodus/31.json `literary`; ch/exodus/23.json and 31.json (both H5314) | Repository |
+| The Mishnah (about AD 200), thirty-nine kinds of work, linked by the Talmud to the building of the tabernacle | 12-17 | exodus/31.json `cultural` | Repository |
+| The penalty: Numbers 15:32-36; the sign of the covenant, nearer treason; the Mishnah on a court that executed once in seven years; no Christian tradition applies it | 12-17 | exodus/31.json `hard` | Repository |
+| The Christian views of the Sabbath (seventh-day; Reformed and Puritan; Catholic, Lutheran and others; dispensational and New Covenant) | 12-17 | exodus/plain/16.json (22-30 `hard`), wording reused | Repository; no side |
+| Genesis 2:2; Ezekiel 20:12; Mark 2:27-28; Hebrews 4:9; Colossians 2:16 | 12-17 | BSB; exodus/31.json `christ` | BSB text |
+| The Testimony as the tablets of the covenant, kept in the ark (25:16) | 18 | exodus/16.json; exodus/37.json; BSB | Repository |
+| The finger of God: the magicians at 8:19 | 18 | BSB | BSB text |
+| Verse 18 as story turning toward chapter 32; God's design and the people's design | 18 | exodus/31.json `story`, `literary` | Repository |
+| Deuteronomy 9:10; Luke 11:20; 2 Corinthians 3:3; Jeremiah 31:33 | 18 | BSB; exodus/31.json `christ` | BSB text |
+
+Cut before publishing: that the tablets are called the Testimony ‘because they bear witness’ (no source for the gloss).
