@@ -1,7 +1,7 @@
 ---
 area: can-we-trust-the-text
 slug: lost-in-translation
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "The Bible has been translated so many times. Hasn't the meaning been lost along the way?"
 ledger: docs/work/elite/apol-ledger.md, "Eleventh run: five more pieces in the text area"
 ---
@@ -32,7 +32,7 @@ And it is true that most readers can't check their translation for themselves. C
 
 ## The evidence
 
-Start with how English Bibles have actually been made. William Tyndale's New Testament of 1526 was the first in English translated from the Greek. The King James translators of 1611 worked from the Hebrew and from the printed Greek of their day. Modern versions translate from critical editions of the Hebrew and Greek built on the earliest manuscripts, as other pages in this area describe. None of these is a translation of a translation. Each goes back to the original languages, and so the errors of one English version don't pass into the next. A new translator starts again from the source.
+Start with how English Bibles have actually been made. William Tyndale's New Testament of 1526 was the first in English translated from the Greek. The King James translators of 1611 worked from the Hebrew and from the printed Greek of their day. Modern versions translate from scholarly editions of the Hebrew and Greek made from the manuscripts, as other pages in this area describe for the Greek. None of these is a translation of a translation. Each goes back to the original languages, and so the errors of one English version don't pass into the next. A new translator starts again from the source.
 
 Then look at why English versions differ. Eugene Nida set out in *Toward a Science of Translating* (1964) two orientations a translator can take. Formal equivalence keeps as close as it can to the form of the original, its word order and its images. Dynamic equivalence, later called functional equivalence, aims to produce in a new reader the effect the original had on its first readers, in natural current speech. Nida treated these as poles with many grades between them, and nearly every English Bible stands somewhere on that line. Neither end is simply right. A formal translation can leave a modern reader with English no one speaks. A functional one can decide for the reader what the original left open, which is Alter's complaint.
 
@@ -58,7 +58,7 @@ The weight sits on the second step. It is the one Alter's critique tests most, b
 
 The strongest reply grants all this and says it helps only scholars. Most people read one Bible, trust it, and never see a footnote. The committees that make the main English versions share broad theological commitments. So in practice the ordinary reader gets one tradition's reading presented as the text itself, and his freedom to compare is a freedom he will never use.
 
-That is a fair description of how many people read, and it should worry the church more than the skeptic. But it is an argument for reading more carefully, not evidence that the meaning is lost. Two things count against the stronger conclusion. First, translations made by people with very different convictions agree on the substance. Alter writes as a scholar of Hebrew literature, Hart as a theologian who has argued that all will be saved, the King James translators were Reformation Protestants, and the modern committees range across the churches. On what Jesus did and said, on his death and what his followers proclaimed about it, they agree. They differ at known places. Second, no reader of any ancient text reads without trusting translators, and with the Bible he has more of them to trust, more independent of one another, and more openly argued about, than with any other book. That is the same pattern this area has found with the manuscripts: many witnesses, compared in the open, with the doubtful places known.
+That is a fair description of how many people read, and it should worry the church more than the skeptic. But it is an argument for reading more carefully, not evidence that the meaning is lost. Two things count against the stronger conclusion. First, translations made by people with very different convictions agree on the substance. Hart translated the New Testament as a theologian who has argued that all will be saved, the King James translators were Reformation Protestants, and the modern committees range across the churches. On what Jesus did and said, on his death and what his followers proclaimed about it, their translations agree. They differ at known places. Second, no reader of any ancient text reads without trusting translators, and with the Bible he has more of them to trust, more independent of one another, and more openly argued about, than with any other book. That is the same pattern this area has found with the manuscripts: many witnesses, compared in the open, with the doubtful places known.
 
 ## What remains unresolved
 
@@ -83,4 +83,5 @@ Faithful Christians differ over which translation to read, and this page takes n
 
 - "Why do modern Bibles leave out verses the King James Version has?" (/questions/text/king-james-and-the-missing-verses), on the King James and its Greek text.
 - The argued answer "Is hell forever, or does it end?" (/answers/is-hell-forever-or-does-it-end), on the question *aiōnios* raises.
+- The essay "How the Bible Gets Translated by the Room You're In" (/writing/how-the-bible-gets-translated-by), on how the community a reader belongs to shapes what the text seems to say.
 - The Study Bible's notes on Romans 3, Matthew 25, Matthew 1 and Mark 5, which this page agrees with.

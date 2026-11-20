@@ -6617,3 +6617,104 @@ lh-*.json.
 ### Next
 
 2 Corinthians 8 in plain words, then 9 to 13.
+
+## Continuation: 2 Corinthians 8 to 13 (2026-11-20)
+
+2 Corinthians 8 to 13 in plain words, which completes the book. Data only: one
+`plain/<n>.json` per chapter and `"plain": true` added to each chapter note (no
+other change to those files). The book page was not edited. No code changed. One
+commit per chapter, with its ledger rows.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 8 | 3 (the grace given to Macedonia; ‘though He was rich, yet for your sakes He became poor’; Titus and the brothers, care to do what is right) | 2,310 |
+| 9 | 3 (be ready; sowing and reaping, ‘God loves a cheerful giver’; ‘His indescribable gift’) | 1,964 |
+| 10 | 3 (‘the weapons of our warfare’; ‘his letters are weighty’; ‘boast in the Lord’) | 1,789 |
+| 11 | 5 (godly jealousy; free of charge and ‘false apostles’; speaking as a fool; the forty lashes and the list of sufferings; down the wall in a basket) | 3,164 |
+| 12 | 5 (the third heaven; the thorn in the flesh; the signs of an apostle; ‘not your possessions, but you’; fears for the visit) | 2,809 |
+| 13 | 3 (the third visit; ‘Examine yourselves’; the closing grace) | 1,967 |
+| Total, 8 to 13 | 22 | 14,003 |
+| **Whole book, 1 to 13** | **44** | **32,287** |
+
+Passages without a `hard` part: 8:1-7, 8:16-24, 9:1-5, 9:12-15, 10:7-11, 10:12-18,
+11:1-6, 11:30-33, 12:11-13, 12:14-18, 12:19-21, 13:1-4. Old Testament quotations named
+by book and verse in their setting; where Paul's wording follows the old Greek
+(Proverbs 3:4 at 8:21; the line the old Greek adds after Proverbs 22:8 at 9:7) the
+note says so and quotes the BSB's Hebrew-based text. The book ends with one line
+pointing to Galatians.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on 2 Corinthians 8" to "13". 10
+web searches: 8: 1 (Proverbs 3:4 in the old Greek); 9: 1 (Proverbs 22:8 addition);
+10: 1 (intrusive thoughts and scrupulosity); 11: 2 (Satan as an angel of light in
+the Adam and Eve retelling; the corona muralis); 12: 2 (the third heaven in Jewish
+writings; the thorn readings); 13: 2 (the 13:13/13:14 numbering; Justin on the
+kiss). Reused: the Matthew 10 and Acts 5 rows on the forty lashes (Mishnah Makkot
+3:10), the Acts 9 row on Aretas, the Luke 23 row on Paradise, the book page ledger
+on the super-apostles, the Nicene Creed in the repository, the Matthew 8 and Acts 3
+care form, the Romans 8 assurance pointer, the 2 Corinthians 7 scrupulosity form.
+
+### Cut or narrowed
+
+Cut: guesses at the two brothers' names (8:18, 22); guesses at Paul's looks and
+voice; the Greek of 8:21; the Life of Adam and Eve by title and date; Baur and
+Barrett by name; malaria, epilepsy and migraine as thorn guesses; Testament of
+Levi by name; 1 Clement; "almost everyone has intrusive thoughts" (not found).
+Narrowed: 2 Enoch "whose date is debated"; the corona muralis as "some readers
+think", with the doubt stated; Hosea 10:12 "may echo"; Proverbs 21:22 "some readers
+hear"; Isaiah 60:5 as "some readers think"; the trickery charge "seems" tied to the
+collection.
+
+### Contested matters, and how they are stated
+
+Unity of the letter at chapter 10 (one sentence, pointing to the book page); the
+super-apostles (same as the false apostles, most; Jerusalem leaders invoked, a few;
+no side); Psalm 112:9 (the righteous man or God; readers differ); the witnesses of
+13:1 (visits, or fair evidence); the third heaven and Paradise (one place, most; two
+stages, some); the thorn (illness, eyes, speech, persecution, a person, inner
+temptation: guesses, no one knows); healing today (not a rule that God will not
+heal; pointer to the Matthew 8 and Acts 3 form); assurance (God's promises, a
+changed life, the Spirit's witness; falling away; no side; Romans 8 note and the
+Honest Answer); the tithe (pointer to Genesis 14). Stated as confession, not view:
+the Son's pre-existence and incarnation at 8:9 (Nicene Creed); the Trinity at 13:14;
+prosperity teaching named an error, without attacking anyone. No political lesson
+from 8:13-15. 11:24 stated plainly as no charge against the Jewish people.
+
+### Care lines
+
+9:6-11 (gave under pressure or promised a return: not your failure; pastor or
+friend; not financial advice; Find Help); 10:1-6 (unwanted intrusive thoughts: not
+sin; anxiety or OCD treatable; doctor, counsellor, pastor, friend; Find Help);
+11:16-21 (harmed by a controlling leader or church: wrong, not your fault; free to
+step away; crimes reported; Find Help); 12:7-10 (prayed and not healed; chronic
+illness or disability not a failure of faith; Find Help); 13:5-10 (the scrupulous;
+1 John 3:20; the 7:8-12 note; counsellor, doctor; Find Help). No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs 2-corinthians`, exit 0; every passage printed field by
+field, all 22 under their right headings. Strict check over all thirteen chapters:
+0 problems. After merging the latest `claude/todo-implementation-hhp4bm`, one at a
+time, each after a load check: all 40 content-gate commands of ci.yml, exit 0 each
+(validate-bible-notes: 362 chapters in plain words; search index 753 entries up to
+date; passage index 623 files match; verify-sources 22 texts intact). `pnpm check`:
+exit 0. `pnpm test`: exit 0, 153 files passed, 7 skipped; 1,801 tests passed, 73
+skipped. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,070 pages),
+`pnpm run audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4603 (no listener on 4600 to
+4699 before; afterwards only another agent's 4652) and checked with Playwright at
+390 wide, deviceScaleFactor 1, /api/trpc, /api/track and /_vercel stubbed. All
+thirteen chapters: every passage heading, its part headings in order and the first
+60 characters under each matched the data: 44 passages, 199 fields (8: 13; 9: 13;
+10: 13; 11: 23; 12: 22; 13: 14; 1 to 7 as before, 101). No sideways scroll, no
+console or page errors. Screenshots looked at: `/home/user/elite-shots/bdoor/cor2-9-390-*`,
+`cor2-12-390-*`. Server stopped by PID, dist/ deleted, no lh-*.json. Lighthouse not
+run (no code or book page changed).
+
+### Next
+
+2 Corinthians is complete. Galatians was not begun: its book page (with the
+"mediterranean" map and the teaching.test.tsx line), then chapters 1 to 6.

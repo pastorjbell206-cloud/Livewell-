@@ -1,0 +1,86 @@
+/* The tool shell (components/tool-shell/): one look for every tool's top,
+ * question card, progress line, result and actions, and one print sheet.
+ * Tokens only. Mustard marks the one thing that matters on a screen: the
+ * chosen answer's edge, the progress fill, the "start here" bar. */
+
+/* ToolHead: how long, and what this keeps. */
+.ts-facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:18px 0 0;padding:0}
+.ts-fact{display:flex;flex-direction:column;gap:2px;min-width:0}
+.ts-fact dt{display:inline-flex;align-items:center;gap:6px;font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted)}
+.ts-fact dd{margin:0;font-family:var(--U);font-size:15px;line-height:1.5;color:var(--ink);max-width:46ch}
+.ts-note{font-family:var(--U);font-size:14px;line-height:1.55;color:var(--ink-muted);margin:14px 0 0;max-width:60ch}
+
+/* QuestionCard. */
+.ts-q{border:0;margin:0;padding:0;min-width:0}
+.ts-q__legend{display:block;padding:0;margin:0 0 6px;font-family:var(--F);font-size:clamp(1.45rem,1.2rem + .8vw,1.9rem);font-weight:500;line-height:1.2;color:var(--ink);text-wrap:balance}
+.ts-q__help{font-family:var(--B);font-size:16px;line-height:1.6;color:var(--ink-muted);margin:0 0 14px;max-width:60ch}
+.ts-q__options{display:grid;gap:10px;margin-top:14px}
+@media (min-width:720px){
+  .ts-q__options--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ts-q__options--3{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+.ts-q__option{position:relative;display:flex;align-items:flex-start;gap:14px;min-height:56px;padding:14px 16px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;transition:border-color .15s var(--motion-ease),background .15s var(--motion-ease)}
+.ts-q__option:hover{border-color:var(--borderdk)}
+.ts-q__option.is-on{border-color:var(--ink);border-left-color:var(--mustard);background:var(--bone-warm)}
+.ts-q__input{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.ts-q__option:has(.ts-q__input:focus-visible){outline:2px solid var(--ink);outline-offset:2px}
+.ts-q__input:focus-visible+.ts-q__mark{outline:2px solid var(--ink);outline-offset:2px}
+.ts-q__mark{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:1px solid var(--borderdk);border-radius:var(--radius-pill);font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink-muted)}
+.ts-q__option.is-on .ts-q__mark{background:var(--ink);border-color:var(--ink);color:var(--bone)}
+.ts-q__text{display:flex;flex-direction:column;gap:3px;min-width:0;padding-top:3px}
+.ts-q__label{font-family:var(--U);font-size:16px;font-weight:500;line-height:1.35;color:var(--ink)}
+.ts-q__hint{font-family:var(--U);font-size:14px;line-height:1.45;color:var(--ink-muted)}
+.ts-q__keys{font-family:var(--U);font-size:12.5px;color:var(--ink-muted);margin:10px 0 0}
+@media (pointer:coarse){.ts-q__keys{display:none}}
+
+/* ProgressLine. */
+.ts-progress{margin:0 0 var(--s-3)}
+.ts-progress__row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ts-progress__words{font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink);margin:0}
+.ts-progress__section{color:var(--ink-muted);font-weight:400}
+.ts-progress__bar{height:3px;background:var(--border);margin-top:8px;overflow:hidden}
+.ts-progress__bar>span{display:block;height:100%;background:var(--mustard);transition:width .3s var(--motion-ease)}
+.ts-save-failed{font-family:var(--U);font-size:13.5px;color:var(--ink-muted);margin:8px 0 0}
+
+/* Result. */
+.ts-r{margin:0 0 var(--s-5)}
+.ts-r__title{font-family:var(--F);font-size:var(--fs-h2,clamp(1.75rem,1.4rem + 1vw,2.25rem));font-weight:400;line-height:1.15;letter-spacing:-0.01em;color:var(--ink);margin:0 0 var(--s-2)}
+.ts-r__prose p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 1em;max-width:var(--w-read)}
+.ts-chart{margin:0}
+.ts-chart__caption{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:0 0 12px}
+.ts-chart__rows{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.ts-chart__row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"label value" "track track";gap:6px 12px;align-items:baseline}
+@media (min-width:720px){.ts-chart__row{grid-template-columns:minmax(10rem,14rem) minmax(0,1fr) 5.5rem;grid-template-areas:"label track value"}}
+.ts-chart__label{grid-area:label;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink)}
+.ts-chart__flag{margin-left:8px;font-size:12px;font-weight:600;color:var(--mustard-text)}
+.ts-chart__track{grid-area:track;height:10px;background:var(--bone-warm);border:1px solid var(--border);align-self:center}
+.ts-chart__bar{display:block;height:100%;background:var(--ink)}
+.ts-chart__row.is-start .ts-chart__bar{background:var(--mustard)}
+.ts-chart__value{grid-area:value;font-family:var(--U);font-size:14px;color:var(--ink-muted);text-align:right}
+.ts-next{list-style:none;margin:0;padding:0;border-top:1px solid var(--border)}
+.ts-next__link{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"kind arrow" "label arrow";gap:2px 16px;align-items:center;min-height:56px;padding:14px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--ink)}
+.ts-next__kind{grid-area:kind;font-family:var(--U);font-size:12.5px;font-weight:600;color:var(--ink-muted)}
+.ts-next__label{grid-area:label;font-family:var(--F);font-size:clamp(1.2rem,1.1rem + .3vw,1.35rem);font-weight:500;line-height:1.25;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+.ts-next__arrow{grid-area:arrow;color:var(--ink-muted);transition:transform .2s var(--motion-ease)}
+.ts-next__link:hover .ts-next__label,.ts-next__link:focus-visible .ts-next__label{text-decoration-color:var(--mustard)}
+.ts-next__link:hover .ts-next__arrow{transform:translateX(3px)}
+
+/* ResultActions. */
+.ts-actions{display:flex;flex-direction:column;gap:12px;margin:var(--s-3) 0}
+.ts-actions__row{display:flex;flex-wrap:wrap;gap:10px}
+.ts-actions__btn{gap:8px;min-height:44px;padding:0 16px;font-size:14.5px}
+.ts-confirm{padding:14px 16px;background:var(--bone-warm);border-left:3px solid var(--mustard)}
+.ts-confirm__q{font-family:var(--U);font-size:15px;color:var(--ink);margin:0 0 10px}
+
+/* One print sheet for every tool: the reading and its Scripture, nothing for the screen. */
+@media print{
+  .ts-actions,.ts-q__keys,.ts-progress__bar,.ts-facts{display:none !important}
+  .ts-r{margin:0 0 10pt;break-inside:avoid-page}
+  .ts-r__title{font-size:15pt;margin:0 0 4pt}
+  .ts-r__prose p{font-size:10.5pt;line-height:1.45;margin:0 0 5pt;max-width:none}
+  .ts-chart__track{border-color:var(--ink)}
+  .ts-chart__bar{background:var(--ink) !important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .ts-next__link{min-height:0;padding:3pt 0}
+  .ts-next__label{font-size:11pt}
+  .ts-next__link::after{content:" (" attr(href) ")";font-family:var(--U);font-size:8.5pt;color:var(--ink-muted)}
+}

@@ -481,3 +481,74 @@ From the plan's fourteen: Luke 22:43-44 and Hebrews 2:9 as pages of their own (b
 ### For James
 
 Read the five pending pieces; each becomes live by one line (its `status`). The room's name is still the working name. The King James piece speaks of King James Only believers as brothers and sisters and takes no side among the text positions; say if you want your own view stated.
+
+---
+
+## 9. Twelfth run (2026-11-20): the text area's five go live, and the authors area opens
+
+### The editor's read, and the five made live
+
+One editor's read of each of the five pending text pieces against section 3 and CLAUDE.md's revision pass. Changes (each in the Markdown record and the data, the record diff at 0; rows in `apol-ledger.md`, "Twelfth run"):
+
+- compared-with-other-ancient-books: "for about half a century" became "for decades" (no length of time was verified).
+- who-decides-what-the-text-says: the third step now says the earliest text reached is the text of the second and third centuries, not the second alone (the papyri's dates are argued).
+- king-james-and-the-missing-verses: the first step said a verse is missing from a modern Bible "only if" it was original, which doesn't follow; it now says words have been taken out of God's word only if they belonged to the text as first written. Majority-text editors are no longer counted among those who "keep to the King James".
+- lost-in-translation: Robert Alter was listed among translators who agree "on what Jesus did and said", but he translated the Hebrew Bible, not the New Testament; the sentence now names Hart, the King James translators and the modern committees. Modern versions are said to be made from "scholarly editions ... made from the manuscripts" (the standard Hebrew edition isn't built on the earliest manuscripts). The link to the shelf essay restored (below).
+- an-angry-jesus-mark-1-41: "anyone who says the question is closed hasn't read them" became "the question is best left open"; "the church has always read four Gospels side by side" became "the church kept four Gospels side by side" (Tatian's harmony was read in Syrian churches for centuries).
+- Found while reading for the new area: two pieces said Ehrman "teaches at" the University of North Carolina; he retired in 2025 (the canon essay's ledger). Both now say he taught there for many years, including the live more-variants-than-words.
+
+Then `"status": "live"` on all five; the manifest and the search index rebuilt. The text area page lists nine live pieces; the claims index lists fifteen live claims; the search index carries all nine pieces; the sitemap carries them after `pnpm run sitemap`; llms.txt names the room, not each piece, so it needed no change.
+
+### The shelf-essay link in lost-in-translation
+
+The eleventh run dropped a link to "How the Bible Gets Translated by the Room You're In" because the validator called the address missing. The essay is public: `client/src/lib/shelf.json` lists `how-the-bible-gets-translated-by` with status "live", it is in the sitemap, and other public essays link it. Its text lives only in the database (as do twelve other live shelf essays), so `scripts/lib/site-routes.mjs`, which read only the repository's essay files, couldn't see it, while `validate-links.mjs` already counted shelf essays. The resolver was plainly incomplete, so it now counts every essay the shelf makes public (`server/site-routes-shelf.test.ts`: the live database-only essay resolves; a held-back shelf essay with no copy stays missing), and the link is restored in "On the site".
+
+### The authors area (pending)
+
+Slug `authors` (the plan's), title as in `areas.json`. Records in `docs/work/elite/apol-pilot/authors/` (index.md and five pieces), data in `client/public/questions/authors/`. The plan's order for the area lists eyewitnesses and genre before oral tradition, but section 4.5 puts Ehrman's *Forged* and *Lost Christianities* claims first; this run took the five the lead's brief named, which fold plan items 1, 2, 3, 5, 8 to 13 into five pages.
+
+| Piece | Address (pending) | Argued prose | Key |
+|---|---|---|---|
+| The Gospels are anonymous. Weren't the names added later? | /questions/authors/the-gospels-are-anonymous | 2,280 | j |
+| Weren't the Gospels written decades after Jesus by people who never met him? | /questions/authors/written-decades-later | 2,155 | k |
+| Isn't oral tradition a game of telephone? | /questions/authors/stories-changed-in-the-telling | 2,061 | l |
+| Didn't the church pick four Gospels and suppress the rest? | /questions/authors/four-gospels-and-the-rest | 2,122 | m |
+| Weren't some New Testament letters forged? | /questions/authors/forgeries-in-the-new-testament | 2,035 | n |
+
+Every fact is in the ledger under "Twelfth run" (about 37 searches; bkv.unifr.ch does not resolve from here, so Justin's *Dialogue* 103 could not be read and was cut). Much rests on rows already verified from primary texts in the canon essay's and the Nicaea essay's ledgers and on the Study Bible's verified rows (`bdoor-ledger.md`). The pieces agree with the Study Bible's introductions to the Gospels, Acts, Romans and the disputed letters, which already set out the authorship and dating views; no disagreement was found. No living author is quoted. Tests moved to the new state: the text area's nine pieces live, the authors area pending (`questions.test.tsx`, `questions-validator.test.ts`).
+
+### What was run
+
+Light gates after each piece (validate-questions, the manifest check, the record diff, no-emdash, links, pnpm check): all 0. Before the push: pnpm test 153 files passed, 7 skipped, 1,782 tests passed, 73 skipped; all 40 content-gate commands 0; pnpm build 0 (started with the 1-minute load at 6.3, above the brief's limit of 6, a slip; it passed). Then, each started with the load under 6: sitemap 0 (eleven /questions addresses besides the room: the claims index, the text area and its nine pieces; nothing under /questions/authors; the sitemap file is built, not committed); prerender 0 (3,067 pages; the newly live pieces say index, the authors pages noindex); audit:canonicals 0 failures, 0 not prerendered, 2,367 sitemap URLs.
+
+Served build (`serve-like-vercel.mjs`, port 4631, Playwright at 390 with /api/trpc, /api/track and /_vercel stubbed): each of the five newly live pieces has index robots, no review line, no sideways scroll and no console errors; /questions/text lists all nine pieces; site search finds each of the five ("King James Version", "leper", "translated", "Homer", "original text"); /questions/authors and /questions/authors/the-gospels-are-anonymous say noindex and carry the review line, and search for "anonymous" finds no library page. Screenshots in /home/user/elite-shots/apol6/. The server was stopped and dist/ deleted. Lighthouse was not run (no page design changed).
+
+### What remains
+
+Text area (from the plan's fourteen): Luke 22:43-44 and Hebrews 2:9 as pages of their own, Nongbri on the dating of papyri, the church fathers' quotations, the Old Testament text. Authors area (plan items not yet a page of their own): what genre the Gospels are (Burridge), the Synoptic problem and Q, whether John is history or theology, the Gospel of Thomas at length, why not the Shepherd, the Didache or the Gospel of Peter, the Apocrypha, and whether Constantine created Christianity's Bible (partly in piece m). James's read of the five authors pieces before they go live; each goes live by its `status` and the area's in `areas.json`.
+
+---
+
+## 10. Thirteenth run (2026-11-20): an editor's read of the authors area, and the science area
+
+### The editor's read of the five authors pieces
+
+An independent read of the five pending authors pieces, first as a hostile, well-read skeptic and then as a careful conservative scholar, against their twelfth-run ledger rows, the Study Bible introductions and the Honest Answers. Twenty-four changes, each in the record and the data (the record diff at 0), each with a ledger row under "Thirteenth run". The main ones: piece k said the Gospels were written decades later "on any dating", though it cites Crossley's date for Mark within a decade of the crucifixion, and its first step contradicted itself; k also gave Byrskog an argument and a stance not verified, and said Peter, James and John "still preached" in churches when most of the Gospels were written. Piece l said Bauckham conceded the unreliability of memory "in the same book" (it was a blog post and an interview). Piece m said churches from Gaul to Egypt called the four "the only four" (only Irenaeus is verified saying so) and that only Thomas has defenders for early material. Piece n said every article of the creeds is taught in letters "no one doubts" (the virgin birth is taught in the Gospels; a few have doubted all of Paul) and named Tiro, whom the sources didn't. Piece j called Mark and Luke men "of no standing" and said the church "always" confessed Hebrews. No living author is quoted in the five. All five and the area stay pending.
+
+### The science area (pending)
+
+Slug `science` (the plan's), title "Science" as in `areas.json`. Records in `docs/work/elite/apol-pilot/science/` (index.md and five pieces), data in `client/public/questions/science/`. The plan lists sixteen questions for the area; this run took the five that answer "the claims of science" as a skeptic puts them, folding plan items 1 to 6 and 9 to 12 into five pages.
+
+| Piece | Address (pending) | Argued prose | Key |
+|---|---|---|---|
+| Science keeps explaining what people once put down to God. Hasn't it made God unnecessary? | /questions/science/has-science-made-god-unnecessary | 2,051 | o |
+| The church condemned Galileo. Hasn't religion always been at war with science? | /questions/science/galileo-and-the-war | 2,073 | p |
+| A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one? | /questions/science/miracles-and-the-laws-of-nature | 2,068 | q |
+| Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him? | /questions/science/the-beginning-and-fine-tuning | 2,046 | r |
+| Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall? | /questions/science/evolution-and-genesis | 2,363 | s |
+
+The site takes no position on the age of the earth, evolution, a historical Adam's details or the flood's extent: the evolution page sets out young-earth creation, old-earth creation (day-age), evolutionary creation, the framework, analogical-day and cosmic-temple readings, and what intelligent design is and is not, each in its defenders' terms with its hardest difficulty, unranked, and then what all of them confess. Hume is quoted from the Selby-Bigge text of the *Enquiry*, read word for word in this run. Galileo's dates (1616, 1633, 1758, 1835, 1992) and what he was and wasn't sentenced to each have a ledger row. Scripture is quoted from the site's Berean Standard Bible and marked BSB. No living author is quoted.
+
+### What remains in the science area
+
+From the plan's sixteen: the mind and the soul, free will and neuroscience, near-death experiences, life on other planets, artificial intelligence (an answer exists), whether the great scientists were believers, and Adam and the genome as a page of its own. James's read of the five before the area goes live; each goes live by its `status` and the area's in `areas.json`.

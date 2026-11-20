@@ -53,36 +53,36 @@
           "slug": "compared-with-other-ancient-books",
           "question": "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?",
           "blurb": "The famous comparison with corrected figures, and the one question it answers.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "who-decides-what-the-text-says",
           "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
           "blurb": "How a critical edition is made, step by step, and the serious question about the word \"original\".",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "king-james-and-the-missing-verses",
           "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
           "blurb": "Where the King James's Greek text came from, the verses one by one, and the case for the traditional text stated with respect.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "lost-in-translation",
           "question": "The Bible has been translated so many times. Hasn't the meaning been lost along the way?",
           "blurb": "How English Bibles are made, why they differ, what translation loses, and how a reader can find it.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "an-angry-jesus-mark-1-41",
           "question": "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?",
           "blurb": "Ehrman's case for an angry Jesus, the few witnesses behind it, and what the verse can and can't change.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -93,8 +93,44 @@
       "planned": 16,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-gospels-are-anonymous",
+          "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
+          "blurb": "What the titles and the earliest witnesses show, and what \"anonymous\" does and doesn't mean.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "written-decades-later",
+          "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
+          "blurb": "The usual dates and the reasons for them, the case for earlier dates, Paul's letters from before the Gospels, and what a gap of a lifetime allows.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "stories-changed-in-the-telling",
+          "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
+          "blurb": "Form criticism, memory research, the debate over controlled tradition, and what changed and what stayed across the Gospels.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "four-gospels-and-the-rest",
+          "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
+          "blurb": "The other gospels and their dates, how the four were received, what Nicaea did and didn't do, and what is true in \"the winners write history\".",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "forgeries-in-the-new-testament",
+          "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+          "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "contradictions",
@@ -133,8 +169,44 @@
       "planned": 16,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "has-science-made-god-unnecessary",
+          "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+          "blurb": "The track record of natural explanation, the god of the gaps, what science presupposes, and what kind of question it can settle.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "galileo-and-the-war",
+          "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
+          "blurb": "What happened in 1616 and 1633 and what Galileo was and wasn't sentenced to, where the church was wrong, and how the \"war\" was written in the nineteenth century and taken apart since.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "miracles-and-the-laws-of-nature",
+          "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+          "blurb": "Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-beginning-and-fine-tuning",
+          "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+          "blurb": "What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "evolution-and-genesis",
+          "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+          "blurb": "The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "evil",
@@ -256,7 +328,7 @@
       "area": "text",
       "slug": "compared-with-other-ancient-books",
       "question": "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The search for one original text of the Gospels misunderstands how the early church handed them on",
@@ -266,7 +338,7 @@
       "area": "text",
       "slug": "who-decides-what-the-text-says",
       "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
-      "live": false
+      "live": true
     },
     {
       "claim": "\"Original text\" has several meanings, and the field has rarely said which it means",
@@ -276,7 +348,7 @@
       "area": "text",
       "slug": "who-decides-what-the-text-says",
       "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Greek text behind the Revised Version and modern Bibles rests on a few corrupt manuscripts; the traditional text the church used is right",
@@ -286,7 +358,7 @@
       "area": "text",
       "slug": "king-james-and-the-missing-verses",
       "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The reading of the majority of manuscripts, the Byzantine text, is usually original",
@@ -296,7 +368,7 @@
       "area": "text",
       "slug": "king-james-and-the-missing-verses",
       "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Most modern English Bibles explain the text instead of translating it",
@@ -306,7 +378,7 @@
       "area": "text",
       "slug": "lost-in-translation",
       "question": "The Bible has been translated so many times. Hasn't the meaning been lost along the way?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Mark 1:41 originally said Jesus became angry; scribes changed it to compassion",
@@ -316,12 +388,256 @@
       "area": "text",
       "slug": "an-angry-jesus-mark-1-41",
       "question": "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?",
+      "live": true
+    },
+    {
+      "claim": "The Gospels circulated without names; the names Matthew, Mark, Luke and John were attached in the second century to give them apostolic authority",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "authors",
+      "slug": "the-gospels-are-anonymous",
+      "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
+      "live": false
+    },
+    {
+      "claim": "The disciples were unlettered Aramaic speakers who could not have written the Greek Gospels",
+      "proponent": "Bart D. Ehrman",
+      "work": "Forged",
+      "year": 2011,
+      "area": "authors",
+      "slug": "the-gospels-are-anonymous",
+      "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
+      "live": false
+    },
+    {
+      "claim": "The Gospel writers were far removed from the events, never saw Jesus and had no contact with eyewitnesses",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus Before the Gospels",
+      "year": 2016,
+      "area": "authors",
+      "slug": "written-decades-later",
+      "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
+      "live": false
+    },
+    {
+      "claim": "Acts, and so Luke, was written in the early second century",
+      "proponent": "Richard I. Pervo",
+      "work": "Dating Acts",
+      "year": 2006,
+      "area": "authors",
+      "slug": "written-decades-later",
+      "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
+      "live": false
+    },
+    {
+      "claim": "Memory is reconstructive, and the stories about Jesus were reshaped in each retelling before the Gospels were written",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus Before the Gospels",
+      "year": 2016,
+      "area": "authors",
+      "slug": "stories-changed-in-the-telling",
+      "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
+      "live": false
+    },
+    {
+      "claim": "Many Gospel stories and sayings were created by the early communities that used them",
+      "proponent": "Rudolf Bultmann",
+      "work": "The History of the Synoptic Tradition",
+      "year": 1921,
+      "area": "authors",
+      "slug": "stories-changed-in-the-telling",
+      "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
+      "live": false
+    },
+    {
+      "claim": "Kenneth Bailey's model of informally controlled oral tradition is not supported by his own evidence",
+      "proponent": "Theodore J. Weeden",
+      "work": "Kenneth Bailey's Theory of Oral Tradition: A Theory Contested by Its Evidence",
+      "year": 2009,
+      "area": "authors",
+      "slug": "stories-changed-in-the-telling",
+      "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
+      "live": false
+    },
+    {
+      "claim": "The proto-orthodox party won the struggles of the second and third centuries, compiled the New Testament and wrote the history of its own victory",
+      "proponent": "Bart D. Ehrman",
+      "work": "Lost Christianities",
+      "year": 2003,
+      "area": "authors",
+      "slug": "four-gospels-and-the-rest",
+      "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
+      "live": false
+    },
+    {
+      "claim": "In some regions of the early church what was later called heresy came first",
+      "proponent": "Walter Bauer",
+      "work": "Orthodoxy and Heresy in Earliest Christianity",
+      "year": 1934,
+      "area": "authors",
+      "slug": "four-gospels-and-the-rest",
+      "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
+      "live": false
+    },
+    {
+      "claim": "Several New Testament letters under the names of Paul and Peter were written by others who claimed to be them, and are forgeries",
+      "proponent": "Bart D. Ehrman",
+      "work": "Forged",
+      "year": 2011,
+      "area": "authors",
+      "slug": "forgeries-in-the-new-testament",
+      "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "Ancient pagan, Jewish and Christian writers treated a false claim of authorship as deceit, not as an accepted convention",
+      "proponent": "Bart D. Ehrman",
+      "work": "Forgery and Counterforgery",
+      "year": 2013,
+      "area": "authors",
+      "slug": "forgeries-in-the-new-testament",
+      "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "Science and religion are incompatible in method: science can find out it is wrong, religion holds its claims by faith, scripture and authority",
+      "proponent": "Jerry A. Coyne",
+      "work": "Faith versus Fact",
+      "year": 2015,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Because a law like gravity exists, the universe can create itself from nothing, and no creator is needed",
+      "proponent": "Stephen Hawking and Leonard Mlodinow",
+      "work": "The Grand Design",
+      "year": 2010,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Darwin made it possible for an atheist to explain biological design, removing the strongest reason for belief",
+      "proponent": "Richard Dawkins",
+      "work": "The Blind Watchmaker",
+      "year": 1986,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Religion and science have been in conflict throughout history, with the church holding back the advance of knowledge",
+      "proponent": "John William Draper",
+      "work": "History of the Conflict between Religion and Science",
+      "year": 1874,
+      "area": "science",
+      "slug": "galileo-and-the-war",
+      "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
+      "live": false
+    },
+    {
+      "claim": "The history of science is a history of warfare with dogmatic theology",
+      "proponent": "Andrew Dickson White",
+      "work": "A History of the Warfare of Science with Theology in Christendom",
+      "year": 1896,
+      "area": "science",
+      "slug": "galileo-and-the-war",
+      "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
+      "live": false
+    },
+    {
+      "claim": "No testimony is sufficient to establish a miracle unless its falsehood would be more miraculous than the fact it reports",
+      "proponent": "David Hume",
+      "work": "An Enquiry Concerning Human Understanding",
+      "year": 1748,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "No human testimony can prove a miracle so as to make it a just foundation for a system of religion",
+      "proponent": "David Hume",
+      "work": "An Enquiry Concerning Human Understanding",
+      "year": 1748,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "Hume's argument against miracles, rightly read, still stands against its modern critics",
+      "proponent": "Robert J. Fogelin",
+      "work": "A Defense of Hume on Miracles",
+      "year": 2003,
+      "area": "science",
+      "slug": "miracles-and-the-laws-of-nature",
+      "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "Physics shows how a universe can arise from nothing, so the Big Bang needs no creator",
+      "proponent": "Lawrence M. Krauss",
+      "work": "A Universe from Nothing",
+      "year": 2012,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "Fine-tuning may be explained by a multiverse of universes with different constants, of which we observe one that permits life",
+      "proponent": "Martin Rees",
+      "work": "Just Six Numbers",
+      "year": 1999,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "A designer would be at least as improbable as the design it is offered to explain",
+      "proponent": "Richard Dawkins",
+      "work": "The God Delusion",
+      "year": 2006,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "The evidence of fossils, biogeography and shared genes shows the common descent of living things, humans included",
+      "proponent": "Jerry A. Coyne",
+      "work": "Why Evolution Is True",
+      "year": 2009,
+      "area": "science",
+      "slug": "evolution-and-genesis",
+      "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
+      "live": false
+    },
+    {
+      "claim": "Darwin removed the strongest reason to believe in a designer",
+      "proponent": "Richard Dawkins",
+      "work": "The Blind Watchmaker",
+      "year": 1986,
+      "area": "science",
+      "slug": "evolution-and-genesis",
+      "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
       "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
-    "how-can-god-be-three-and-one": "How can God be three and one?"
+    "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
+    "how-can-god-be-three-and-one": "How can God be three and one?",
+    "are-miracles-believable": "Are miracles believable?",
+    "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
+    "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?"
   }
 }

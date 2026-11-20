@@ -3,7 +3,7 @@
  * the committed files in client/public/questions:
  * the data loads in the shapes the pages expect; the room lists the plan's ten
  * areas with only the text area linked, and is live with it (James,
- * 2026-11-20); a live piece renders word for word with no review line and no
+ * 2026-11-20), its nine pieces live and the authors area pending; a live piece renders word for word with no review line and no
  * noindex, its argument as a numbered list with the weight-bearing step marked;
  * a pending piece keeps noindex and the review line; and nothing outside the
  * library links a pending page.
@@ -48,21 +48,28 @@ afterEach(() => {
 
 const index = read<QIndex>("questions/index.json");
 const text = index.areas.find((a) => a.slug === "text")!;
+const authors = index.areas.find((a) => a.slug === "authors")!;
+const science = index.areas.find((a) => a.slug === "science")!;
 
 describe("the questions library's data", () => {
-  it("lists the plan's ten areas; the text area and its four pilot pieces are live, the later pieces pending", () => {
+  it("lists the plan's ten areas; the text area and its nine pieces are live, the authors and science areas and their pieces pending", () => {
     expect(index.areas.map((a) => a.n)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(index.roomLive).toBe(true);
     expect(text.live).toBe(true);
-    expect(text.pieces.filter((p) => p.live).map((p) => p.slug)).toEqual(["more-variants-than-words", "copies-of-copies", "passages-not-in-the-earliest-bibles", "did-scribes-make-jesus-more-divine"]);
-    expect(text.pieces.filter((p) => !p.live).every((p) => p.status === "pending")).toBe(true);
-    expect(text.pieces.some((p) => !p.live)).toBe(true);
-    expect(index.areas.filter((a) => a.pieces.length > 0).map((a) => a.slug)).toEqual(["text"]);
+    expect(text.pieces.map((p) => p.slug)).toEqual(["more-variants-than-words", "copies-of-copies", "passages-not-in-the-earliest-bibles", "did-scribes-make-jesus-more-divine", "compared-with-other-ancient-books", "who-decides-what-the-text-says", "king-james-and-the-missing-verses", "lost-in-translation", "an-angry-jesus-mark-1-41"]);
+    expect(text.pieces.every((p) => p.live)).toBe(true);
+    expect(authors.live).toBe(false);
+    expect(authors.pieces.length).toBeGreaterThan(0);
+    expect(authors.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
+    expect(science.live).toBe(false);
+    expect(science.pieces.length).toBe(5);
+    expect(science.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
+    expect(index.areas.filter((a) => a.pieces.length > 0).map((a) => a.slug)).toEqual(["text", "authors", "science"]);
   });
 
   it("gives every piece the parts the pages render", () => {
-    for (const p of text.pieces) {
-      const piece = read<QPiece>(`questions/text/${p.slug}.json`);
+    for (const [a, p] of [...text.pieces.map((p) => ["text", p] as const), ...authors.pieces.map((p) => ["authors", p] as const), ...science.pieces.map((p) => ["science", p] as const)]) {
+      const piece = read<QPiece>(`questions/${a}/${p.slug}.json`);
       expect(piece.question).toBe(p.question);
       expect(piece.sections.map((s) => s.role)).toEqual(expect.arrayContaining(["objection", "concessions", "evidence", "argument", "reply", "unresolved", "differ"]));
       const arg = piece.sections.find((s) => s.role === "argument");
@@ -85,17 +92,17 @@ describe("the room", () => {
     const links = Array.from(document.querySelectorAll(".qx-areas a")).map((a) => a.getAttribute("href"));
     expect(links).toEqual(["/questions/text"]);
     expect(screen.getAllByText("Being written")).toHaveLength(9);
-    expect(screen.getByText("4 pieces")).toBeInTheDocument();
+    expect(screen.getByText("9 pieces")).toBeInTheDocument();
     expect(screen.queryByText(REVIEW_LINE)).toBeNull();
     expect(robots()).not.toContain("noindex");
   });
 });
 
 describe("the area", () => {
-  it("opens with its own text and lists only its four live pieces", async () => {
+  it("opens with its own text and lists its nine live pieces", async () => {
     at("/questions/text", <QuestionsArea />);
     expect(await screen.findByRole("heading", { level: 1, name: "Can we trust the text of the New Testament?" })).toBeInTheDocument();
-    await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(4));
+    await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(9));
     const listed = Array.from(document.querySelectorAll(".qx-pieces a")).map((a) => a.getAttribute("href"));
     for (const p of text.pieces.filter((x) => !x.live)) expect(listed).not.toContain(`/questions/text/${p.slug}`);
     expect(screen.queryByText(REVIEW_LINE)).toBeNull();
@@ -126,12 +133,12 @@ describe("a piece", () => {
 
     expect(screen.getByRole("heading", { name: "Read the other side" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Read further" })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /Mark 16/ })).toHaveAttribute("href", "/study/bible/mark/16");
+    expect(screen.getAllByRole("link", { name: /Mark 16/ }).map((a) => a.getAttribute("href"))).toContain("/study/bible/mark/16");
   });
 
   it("pending: says noindex and carries the review line", async () => {
-    const pending = text.pieces.find((p) => !p.live)!;
-    at(`/questions/text/${pending.slug}`, <QuestionPiece />);
+    const pending = authors.pieces.find((p) => !p.live)!;
+    at(`/questions/authors/${pending.slug}`, <QuestionPiece />);
     expect(await screen.findByRole("heading", { level: 1, name: pending.question })).toBeInTheDocument();
     expect(await screen.findByText(REVIEW_LINE)).toBeInTheDocument();
     await waitFor(() => expect(robots()).toContain("noindex"));

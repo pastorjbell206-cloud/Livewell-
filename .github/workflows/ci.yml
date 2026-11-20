@@ -54,6 +54,8 @@ jobs:
           node scripts/build-family-year.mjs --check
           node scripts/build-family-index.mjs --check
           node scripts/validate-grow-voice.mjs
+          node scripts/build-wisdom-index.mjs --check
+          node scripts/validate-wisdom.mjs
           node scripts/validate-verse-guides.mjs
           node scripts/validate-worlds.mjs
           node scripts/build-topics-index.mjs --check

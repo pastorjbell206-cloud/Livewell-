@@ -5,7 +5,7 @@ import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { useState } from "react";
-import { ArrowLeft, BookOpen, AlertTriangle, Scale, Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowLeft, BookOpen, AlertTriangle, Scale, Lightbulb, ChevronDown, ChevronUp, Coins, Flame, Gem, HeartPulse, HandHeart, Hammer, Flower2, FlameKindling, Baby, Heart, CircleHelp, Users, Moon, MessageCircle, type LucideIcon } from "lucide-react";
 
 import NextStep from "@/components/NextStep";
 /* ─────────────────────────────────────────────────── types ── */
@@ -1066,34 +1066,31 @@ const TOPICS: Topic[] = [
 
 /* ─────────────────────────────────────────── icon component ── */
 
+const TOPIC_ICONS: Record<string, LucideIcon> = {
+  coins: Coins,
+  flame: Flame,
+  rings: Gem,
+  "heart-pulse": HeartPulse,
+  "hand-heart": HandHeart,
+  hammer: Hammer,
+  candle: Flower2,
+  "flame-kindling": FlameKindling,
+  baby: Baby,
+  heart: Heart,
+  scale: Scale,
+  "circle-help": CircleHelp,
+  shepherd: Users,
+  moon: Moon,
+  "message-circle": MessageCircle,
+};
+
 function TopicIcon({ icon, size = 32 }: { icon: string; size?: number }) {
-  const s: React.CSSProperties = {
-    width: size,
-    height: size,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: size * 0.55,
-    lineHeight: 1,
-  };
-  const map: Record<string, string> = {
-    coins: "\u{1FA99}",
-    flame: "\u{1F525}",
-    rings: "\u{1F48D}",
-    "heart-pulse": "\u{1FA76}",
-    "hand-heart": "\u{1FAF6}",
-    hammer: "\u{1F528}",
-    candle: "\u{1F56F}️",
-    "flame-kindling": "\u{1F4A2}",
-    baby: "\u{1F476}",
-    heart: "❤️",
-    scale: "⚖️",
-    "circle-help": "❓",
-    shepherd: "\u{1F9D1}‍\u{1F33E}",
-    moon: "\u{1F319}",
-    "message-circle": "\u{1F4AC}",
-  };
-  return <span style={s}>{map[icon] || "\u{1F4D6}"}</span>;
+  const Icon = TOPIC_ICONS[icon] ?? BookOpen;
+  return (
+    <span style={{ width: size, height: size, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--ink)", flexShrink: 0 }}>
+      <Icon size={Math.round(size * 0.75)} strokeWidth={1.75} aria-hidden="true" />
+    </span>
+  );
 }
 
 /* ──────────────────────────────────────── passage accordion ── */
@@ -1357,7 +1354,7 @@ export default function BibleReference() {
       />
 
       {/* ── Hero ── */}
-      <InnerHead path="/tools/bible-says" title="What the Bible Actually Says About\u2026" line="Not proof-texts. Not devotional platitudes. The full biblical data on 15 life topics, with context, common misuses, interpretive range, and what the passages actually teach." plate="book" />
+      <InnerHead path="/tools/bible-says" title="Misused Bible Verses: What They Actually Mean" line="Not proof-texts. Not devotional platitudes. The full biblical data on 15 life topics, with context, common misuses, interpretive range, and what the passages actually teach." plate="book" />
 
       {/* ── Content ── */}
       <section

@@ -1047,16 +1047,9 @@ export default function TheologyGlossary() {
     whiteSpace: "nowrap",
   };
 
-  const categoryColor = (cat: Category): string => {
-    const map: Record<Category, string> = {
-      Doctrine: "var(--accent-sienna)",
-      "Biblical Studies": "var(--ok)",
-      "Church History": "var(--accent-violet)",
-      "Worship & Practice": "var(--accent-slate)",
-      "Philosophy & Ethics": "var(--accent-bronze)",
-    };
-    return map[cat] || "var(--ink-muted)";
-  };
+  // One palette for every category: the label names it; colour does not have to
+  // (the old purple, teal and brown were off the site's palette).
+  const categoryColor = (_cat: Category): string => "var(--ink-muted)";
 
   /* ------------------------------------------------------------------ */
   /*  Structured data                                                    */
