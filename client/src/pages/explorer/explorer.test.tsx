@@ -86,7 +86,7 @@ afterEach(() => {
 });
 
 describe("the data", () => {
-  it("has every act of the Bible's story, numbered without a gap, seven stops finished", () => {
+  it("has every act of the Bible's story, numbered without a gap, ten stops finished", () => {
     expect(INDEX.stops.map(s => s.n)).toEqual(INDEX.stops.map((_, i) => i + 1));
     expect(new Set(INDEX.stops.map(s => s.act)).size).toBe(11);
     expect(FINISHED.map(s => s.slug)).toEqual([
@@ -98,6 +98,7 @@ describe("the data", () => {
       "land",
       "kingdom",
       "exile",
+      "jesus",
       "cross",
     ]);
     for (const s of INDEX.stops) {
@@ -116,6 +117,7 @@ describe("the data", () => {
       "cycle",
       "choose",
       "match",
+      "walk",
       "reveal",
     ]);
   });
@@ -459,6 +461,36 @@ describe("a stop", () => {
     await waitFor(() => expect(stored().done).toContain("exile"));
   });
 
+  it("who is this: five steps in Mark's order, each with what people said and who the Gospel says he is, ending on Peter's answer", async () => {
+    renderAt("/study/explorer/jesus");
+    const act = stopFile("jesus").activity!;
+    if (act.kind !== "walk") throw new Error("jesus is a walk activity");
+    await screen.findByRole("heading", { name: act.title });
+    expect(screen.getByText(act.intro!)).toBeInTheDocument();
+    fireEvent.click(
+      screen.getByRole("button", { name: `Start: ${act.steps[0].name}` })
+    );
+    act.steps.forEach((st, i) => {
+      expect(
+        screen.getByRole("heading", { level: 3, name: st.name })
+      ).toBeInTheDocument();
+      expect(document.querySelector(".ex-walk__asked")!.textContent).toContain(
+        st.asked!
+      );
+      expect(document.querySelector(".ex-walk__later")!.textContent).toContain(
+        act.laterLabel!
+      );
+      if (i < act.steps.length - 1)
+        fireEvent.click(
+          screen.getByRole("button", { name: `Next: ${act.steps[i + 1].name}` })
+        );
+    });
+    expect(screen.getByRole("button", { name: act.restart! })).toBeInTheDocument();
+    expect(screen.getByText(act.finish)).toBeInTheDocument();
+    expect(act.finish).toContain("You are the Christ");
+    await waitFor(() => expect(stored().done).toContain("jesus"));
+  });
+
   it("think, then look: each answer is behind its own button, and all of them shown is done", async () => {
     renderAt("/study/explorer/cross");
     const act = stopFile("cross").activity!;
@@ -516,6 +548,19 @@ describe("a stop", () => {
       cleanup();
     }
     expect(chain).toEqual(FINISHED.map(s => s.slug));
+    // Unbroken from Creation to the Cross; the Return is still being drawn.
+    expect(chain).toEqual([
+      "creation",
+      "fall",
+      "abraham",
+      "rescue",
+      "sinai",
+      "land",
+      "kingdom",
+      "exile",
+      "jesus",
+      "cross",
+    ]);
   });
 
   it("shows the older level's care line and question on the newer stops", async () => {
@@ -523,7 +568,7 @@ describe("a stop", () => {
       EXPLORER_PROGRESS_KEY,
       JSON.stringify({ v: 1, level: "older", visited: [], done: [], last: null })
     );
-    for (const slug of ["fall", "sinai", "land", "kingdom", "exile"]) {
+    for (const slug of ["fall", "sinai", "land", "kingdom", "exile", "jesus"]) {
       const s = stopFile(slug);
       renderAt(`/study/explorer/${slug}`);
       await screen.findByRole("heading", { name: "A question people ask" });

@@ -79,6 +79,7 @@ const SCENES: Record<string, () => Promise<{ default: Drawing }>> = {
   land: () => import("./scenes/land"),
   kingdom: () => import("./scenes/kingdom"),
   exile: () => import("./scenes/exile"),
+  jesus: () => import("./scenes/jesus"),
 };
 
 export const hasScene = (name: string | undefined) => !!name && name in SCENES;

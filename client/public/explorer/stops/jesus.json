@@ -4,10 +4,166 @@
   "act": "christ",
   "title": "Jesus Comes",
   "range": "Matthew, Mark, Luke, John",
-  "status": "drawing",
+  "status": "finished",
   "summary": {
     "younger": "God the Son was born as a baby named Jesus. He healed people, taught about God's kingdom, and showed what God is like.",
     "older": "God keeps his promises in person. Jesus, born of Mary, announces that God's kingdom has come near, heals and forgives, calls twelve disciples, and speaks with an authority that belongs to God alone."
   },
-  "added": "Act Nine (Christ, the Center) is two stops here: Jesus comes, then the cross and the empty tomb."
+  "added": "Act Nine (Christ, the Center) is two stops here: Jesus comes, then the cross and the empty tomb.",
+  "scene": "jesus",
+  "sceneLabel": "One picture of the Sea of Galilee that brings together things Mark tells there. Jesus sits in a boat a little off the shore, teaching a crowd sitting on the beach. On the slope, a farmer sows seed, as in the story Jesus told. On the right, a house in Capernaum with an opening made in its roof, and a man walking home carrying his mat. By the water, a tax booth. Out on the lake the wind is rising, and over the far hills the sun is coming up.",
+  "story": {
+    "younger": [
+      "God had promised a king from David's family. At last the promised one came. He was born as a baby in Bethlehem, King David's town, and he was named Jesus. He grew up in the small town of Nazareth in Galilee, a Jewish boy in a Jewish family.",
+      "John wrote, “The Word became flesh and made His dwelling among us.” That means God the Son became a real human being and came to live among his people.",
+      "When Jesus was about thirty, he was baptized in the river Jordan. The Spirit came down on him like a dove, and a voice from heaven said, “You are My beloved Son; in You I am well pleased.”",
+      "Then Jesus began to tell people that “the kingdom of God is near.” He taught with stories. He healed people who were sick. He welcomed people others kept away from. He forgave people's sins. Once, out on the lake, he told a storm to be still, and it was calm.",
+      "People kept asking who he could be. One day Jesus asked his friends, “Who do you say I am?” Peter answered, “You are the Christ”: the king God had promised. But some of the leaders were angry with Jesus, and the road he walked led on to Jerusalem, and to a cross."
+    ],
+    "older": [
+      "Four Gospels tell the story, each from its own angle, and they agree on the frame. Jesus was born in Bethlehem, “the city of David,” to Mary, who was pledged to Joseph, a man “from the house and line of David” (Luke 2:4-7). He grew up in Nazareth in Galilee, a Jew among Jews, going to the synagogue on the Sabbath “as was His custom” and up to Jerusalem for the Passover (Luke 4:16; Luke 2:41-42). John says what this was: “The Word became flesh and made His dwelling among us” (John 1:14). The God who had lived among his people in a tent and a temple now lived among them as one of them.",
+      "Mark begins with his baptism in the Jordan. As he comes up out of the water, the Spirit comes down on him like a dove, and the Father's voice says, “You are My beloved Son; in You I am well pleased” (Mark 1:9-11). Father, Son and Spirit are all there at the start. Then Jesus announces that “the kingdom of God is near” (Mark 1:15).",
+      "What he did showed what that kingdom is like. He taught in stories a crowd could carry home. He healed the sick, and he touched a man with leprosy whom everyone else kept away from (Mark 1:40-42). He ate with tax collectors and sinners (Mark 2:15-17). He calmed a storm with a word (Mark 4:39). He chose twelve disciples (Mark 3:14), a number that recalls the twelve tribes of Israel (Matthew 19:28).",
+      "And he spoke with an authority that belonged to God. When he told a man who could not walk, “Son, your sins are forgiven,” some of the scribes thought, “Who can forgive sins but God alone?” (Mark 2:5-7). They were right about that much. Either Jesus was claiming what was not his, or he was who Mark says he is. Claims like this are why some of the Pharisees and the supporters of King Herod began plotting against him (Mark 3:6). The opposition came from particular leaders, not from his people: Jesus himself, his disciples and the crowds who welcomed him were Jews, and the crowd “listened to Him with delight” (Mark 12:37).",
+      "On the road north, near Caesarea Philippi, Jesus asked who people said he was: John the Baptist, Elijah, one of the prophets. “But what about you?” he asked. “Who do you say I am?” Peter answered, “You are the Christ” (Mark 8:27-29), the anointed king the prophets had promised. From then on Jesus began to teach them that he must suffer, be killed, and rise again (Mark 8:31), and he went up the road to Jerusalem ahead of them (Mark 10:32). The next stop goes with him there."
+    ]
+  },
+  "god": {
+    "younger": "God keeps his promises in person. In Jesus, God came close. He healed, forgave and welcomed people, and he showed us what God is like.",
+    "older": "God does not only send messages; he comes himself (John 1:14). In Jesus, the promised son of David and God with us are one person. What Jesus does, forgiving sins and stilling the sea, the Old Testament says God does."
+  },
+  "verses": [
+    {
+      "ref": "John 1:14",
+      "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
+    },
+    {
+      "ref": "Mark 4:41",
+      "text": "Who is this, that even the wind and the sea obey Him?"
+    }
+  ],
+  "read": [
+    {
+      "label": "Luke 2",
+      "href": "/study/bible/luke/2"
+    },
+    {
+      "label": "John 1",
+      "href": "/study/bible/john/1"
+    },
+    {
+      "label": "Mark 1",
+      "href": "/study/bible/mark/1"
+    },
+    {
+      "label": "Mark 2",
+      "href": "/study/bible/mark/2"
+    },
+    {
+      "label": "Mark 4",
+      "href": "/study/bible/mark/4"
+    },
+    {
+      "label": "Mark 8",
+      "href": "/study/bible/mark/8"
+    }
+  ],
+  "care": "Jesus healed many people. Some people have prayed for someone to be healed, and the healing did not come. The Bible does not say that happens because of too little faith. If this is on your heart, talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "Did Jesus really exist, and can we trust the Gospels?",
+    "answer": [
+      "It is a fair question, and the site's Honest Answers take it seriously. Writers outside the church confirm the center. Tacitus, early in the second century and with no sympathy for the movement, recorded that ‘Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus.’ Josephus, a Jewish historian writing in the 90s, mentions ‘the brother of Jesus, the so-called Christ, James by name.’",
+      "On the Gospels and the rest of the Bible, the Honest Answer puts it this way: the evidence for how the Bible was copied, collected and written is stronger than the rumors about it, and much of that evidence comes from skeptical scholars. We have what was written, with the uncertain places marked in the margins. Where the history can be checked, it has often held up. None of that proves the Bible's claims true. It clears away the bad reasons for dismissing it, and it leaves the real question standing: what to make of Jesus.",
+      "That is the question this stop keeps asking. The Honest Answers set out the case, and the strongest objections to it, at more length."
+    ]
+  },
+  "deeper": [
+    {
+      "label": "Why would anyone trust the Bible?",
+      "href": "/answers/why-would-anyone-trust-the-bible"
+    },
+    {
+      "label": "Was Jesus just a good teacher?",
+      "href": "/answers/was-jesus-just-a-good-teacher"
+    },
+    {
+      "label": "Did the Gospels get Jesus right?",
+      "href": "/resources/context/did-the-gospels-get-jesus-right"
+    }
+  ],
+  "talk": {
+    "younger": "People who met Jesus kept wondering who he was. If you had been in the boat when the storm stopped, what would you have asked?",
+    "older": "Jesus asked, “Who do you say I am?” Why might that question matter more than what other people say about him?"
+  },
+  "activity": {
+    "kind": "walk",
+    "title": "Who is this?",
+    "prompt": "Five things Jesus did by the Sea of Galilee, in the order Mark tells them. Step through with Next, or tap a number on the picture. Each time, see what people said, and who the Gospel says Jesus is.",
+    "intro": "There are five things to see, in the order Mark tells them. Start at the house with the opening in its roof.",
+    "laterLabel": "Who the Gospel says he is.",
+    "restart": "Back to the house",
+    "steps": [
+      {
+        "id": "roof",
+        "name": "He forgave sins",
+        "x": 90,
+        "y": 69,
+        "what": "Four friends lowered a man who could not walk through an opening in the roof. Jesus said to him, “Son, your sins are forgiven.”",
+        "whatRef": "Mark 2:3-5",
+        "asked": "Some of the scribes thought, “Who can forgive sins but God alone?”",
+        "askedRef": "Mark 2:7",
+        "later": "Jesus called himself the Son of Man, who “has authority on earth to forgive sins.”",
+        "laterRef": "Mark 2:10"
+      },
+      {
+        "id": "mat",
+        "name": "He healed",
+        "x": 71,
+        "y": 89,
+        "what": "Jesus told the man to get up, pick up his mat and go home. At once he got up and walked out in front of them all.",
+        "whatRef": "Mark 2:11-12",
+        "asked": "Everyone was amazed and praised God: “We have never seen anything like this!”",
+        "askedRef": "Mark 2:12",
+        "later": "Jesus healed the man so that they would know he had authority to forgive. The healing they could see showed the forgiving they could not.",
+        "laterRef": "Mark 2:10-11"
+      },
+      {
+        "id": "booth",
+        "name": "He welcomed people others kept out",
+        "x": 75.5,
+        "y": 57.5,
+        "what": "Jesus saw Levi sitting at his tax booth and said, “Follow Me.” Then he ate at Levi's house with many tax collectors and sinners.",
+        "whatRef": "Mark 2:14-15",
+        "asked": "Some scribes who were Pharisees asked, “Why does He eat with tax collectors and sinners?”",
+        "askedRef": "Mark 2:16",
+        "later": "Jesus answered that he came like a doctor to the sick: “I have not come to call the righteous, but sinners.”",
+        "laterRef": "Mark 2:17"
+      },
+      {
+        "id": "sower",
+        "name": "He taught with stories",
+        "x": 11,
+        "y": 70,
+        "what": "So many people came that Jesus sat in a boat and taught the crowd on the shore with stories. One began, “Listen! A farmer went out to sow his seed.”",
+        "whatRef": "Mark 4:1-3",
+        "asked": "In his home town people asked, “Where did this man get these ideas?”",
+        "askedRef": "Mark 6:2",
+        "later": "His stories were about the kingdom of God, the kingdom he said had come near.",
+        "laterRef": "Mark 4:26; Mark 1:15"
+      },
+      {
+        "id": "storm",
+        "name": "He calmed a storm",
+        "x": 87.5,
+        "y": 41.5,
+        "what": "That evening, out on the lake, a violent storm came up. Jesus said to the wind and the sea, “Silence!” and “Be still!” and it was perfectly calm.",
+        "whatRef": "Mark 4:37-39",
+        "asked": "His friends asked one another, “Who is this, that even the wind and the sea obey Him?”",
+        "askedRef": "Mark 4:41",
+        "later": "In the Psalms, it is the LORD who calms the storm and hushes the waves.",
+        "laterRef": "Psalm 107:29"
+      }
+    ],
+    "finish": "Later Jesus asked his friends, “Who do you say I am?” Peter answered, “You are the Christ” (Mark 8:29): the king God had promised to David. Where that king went next is the next stop."
+  }
 }

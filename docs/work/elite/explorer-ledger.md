@@ -34,6 +34,10 @@ Every factual claim in `client/public/explorer/` (the stops, `threads.json`, `ca
 | exile verses | Psalm 137:1 (whole); Jeremiah 31:33 trimmed to God's words from “I will put My law” (the opening quotation mark of the verse left out) | BSB, by the validator |
 | exile story and question | “a shoot will spring up from the stump of Jesse”; “Here, O Israel, are your gods”; “Turn from your wicked ways”; “let justice roll on like a river”; “they would not listen”; “By the rivers of Babylon we sat and wept when we remembered Zion”; “among the exiles by the River Kebar”; “I have been a sanctuary for them in the countries to which they have gone”; “He was pierced for our transgressions”; “Neither this man nor his parents sinned”; “His mercies never fail. They are new every morning” | BSB Isaiah 11:1; 1 Kings 12:28; 2 Kings 17:13, 14; Amos 5:24; Psalm 137:1; Ezekiel 1:1; 11:16; Isaiah 53:5; John 9:3; Lamentations 3:22-23 |
 | exile activity | promises: Jeremiah 31:31 (from “I will make”); Ezekiel 36:27 (“I will put My Spirit within you”); Isaiah 53:7 (“He was led like a lamb to the slaughter”); Isaiah 9:7 (“He will reign on the throne of David and over his kingdom”); kept: “This cup is the new covenant in My blood” | BSB, by the validator (the promise field); Luke 22:20 |
+| jesus verses | John 1:14 (whole); Mark 4:41 trimmed to the disciples' question | BSB, by the validator |
+| jesus story | “The Word became flesh and made His dwelling among us”; “You are My beloved Son; in You I am well pleased”; “the kingdom of God is near”; “the city of David”; “from the house and line of David”; “as was His custom”; “Son, your sins are forgiven”; “Who can forgive sins but God alone?”; “listened to Him with delight”; “But what about you?”; “Who do you say I am?”; “You are the Christ” | BSB John 1:14; Mark 1:11, 15; Luke 2:4; 4:16; Mark 2:5, 7; 12:37; 8:29 |
+| jesus activity | “Son, your sins are forgiven”; “Who can forgive sins but God alone?”; “has authority on earth to forgive sins”; “We have never seen anything like this!”; “Follow Me”; “Why does He eat with tax collectors and sinners?”; “I have not come to call the righteous, but sinners”; “Listen! A farmer went out to sow his seed”; “Where did this man get these ideas?”; “Silence!” and “Be still!”; “Who is this, that even the wind and the sea obey Him?”; “Who do you say I am?”; “You are the Christ” | BSB Mark 2:5, 7, 10, 12, 14, 16, 17; 4:3; 6:2; 4:39, 41; 8:29 |
+| jesus question | Tacitus, ‘Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus’; Josephus, ‘the brother of Jesus, the so-called Christ, James by name’ | Not checked anew: reused word for word, with the sentences around them, from the Honest Answer `why-would-anyone-trust-the-bible` in `client/src/data/answers.ts` (its "On the third" paragraph), where they are already cited (Tacitus, Annals 15.44); single quotation marks here so the validator does not read them as Scripture |
 | card: the Bible | 2 Timothy 3:16-17 (whole); “spoke from God as they were carried along by the Holy Spirit” | BSB, by the validator; 2 Peter 1:21 |
 | card: Jesus | John 1:14 (whole); “My Lord and my God” | BSB, by the validator; John 20:28 |
 
@@ -132,6 +136,22 @@ Every factual claim in `client/public/explorer/` (the stops, `threads.json`, `ca
 | Isaiah calls Israel God's servant | BSB Isaiah 49:3 (also 41:8) |
 | Christians from the first church read the servant as Jesus; many Jewish readers, especially since the Middle Ages, read him as Israel; some older Jewish writings read him as the Messiah | BSB Acts 8:35; the site's Study Bible note `client/public/bible/notes/isaiah/53.json` (Rashi, Ibn Ezra and Kimhi from the eleventh century; the Targum calls the Servant the Messiah; Levine and Brettler, *The Bible With and Without Jesus*, 2020, on the national reading coming to dominate in the Middle Ages) |
 | Not every loss is a punishment | BSB John 9:2-3 |
+| Jesus Comes: born in Bethlehem, the city of David; Mary pledged to Joseph of David's line; laid in a manger | BSB Luke 1:26-27; 2:4-7 |
+| Grew up in Nazareth; the synagogue on the Sabbath as his custom; the Passover at Jerusalem with his parents | BSB Luke 2:39-42, 51-52; 4:16 |
+| About thirty at the start of his ministry | BSB Luke 3:23 |
+| Baptized by John in the Jordan; the Spirit like a dove; the voice from heaven | BSB Mark 1:9-11 |
+| Touched a man with leprosy; others kept away from him | BSB Mark 1:40-42; the site's note `client/public/bible/notes/matthew/plain/8.json` (Leviticus 13:46: he lived alone outside the camp) |
+| Four friends, the roof opened, the man lowered on his mat, forgiven, healed, walked out (the drawing's house, roof and mat) | BSB Mark 2:1-12 |
+| Levi at the tax booth by the sea; the meal with tax collectors and sinners (the drawing's booth) | BSB Mark 2:13-17 |
+| Taught from a boat to the crowd along the shore; the parable of the sower, birds on the path (the drawing) | BSB Mark 4:1-4 |
+| That evening the storm on the lake; calmed with a word | BSB Mark 4:35-41 |
+| The LORD calms the storm (Psalms) | BSB Psalm 107:29 (also 89:9) |
+| Twelve disciples, a number that recalls the twelve tribes | BSB Mark 3:14; Matthew 19:28 |
+| Some Pharisees with the Herodians plotted against him; the crowd listened with delight; Jesus, his disciples and the crowds were Jews | BSB Mark 3:6; 12:37. Wording follows `client/public/bible/notes/acts/plain/2.json` ("Jesus himself, his disciples, and the crowds who welcomed him were Jews") and the Cross stop |
+| Caesarea Philippi: who people say; Peter's answer; then the teaching that he must suffer, be killed and rise; the road up to Jerusalem | BSB Mark 8:27-31; 10:32-33 |
+| The sun over Galilee in the drawing (a light has dawned) | BSB Matthew 4:13-16 (quoting Isaiah 9:1-2) |
+| The care line on healing: prayer for healing that did not come is not a sign of too little faith | The site's note `client/public/bible/notes/matthew/plain/8.json` (verses 1-4): "The Bible does not teach that sickness comes from too little faith" |
+| The answer on the Gospels | Sentences reused from the Honest Answer `why-would-anyone-trust-the-bible` (its opening paragraph), one sentence ("The books were recognized ... not voted in by a council.") left out; "Writers outside the church confirm the center." from the same answer |
 
 ## History and scholarship
 
