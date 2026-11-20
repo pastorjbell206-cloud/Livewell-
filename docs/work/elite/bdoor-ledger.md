@@ -7165,3 +7165,39 @@ One web search.
 | Leviathan made "to frolic"; elsewhere chaos | 24-35 | BSB; earlier row (Psalm 74) | BSB text |
 | "Hallelujah" first appears in the Psalms at 104:35 (BSB) | 24-35 | BSB | Script over all 150 psalms |
 | Job 38:11; John 1:3; Colossians 1:17; Matthew 6:26; Acts 14:17; Genesis 2:7; Acts 17:25; Romans 1:20; Genesis 1:31 | all | BSB | BSB text |
+
+## The plain notes on Psalm 105 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 105 and 106 a pair: one story as faithfulness and as failure | all | Repository deep notes; BSB | Stated as the shape of the pair |
+| 105:1-15 in 1 Chronicles 16:8-22; the song made of 105, 96, 106 | 1-15 | Book page; BSB (1 Chronicles 16:8) | BSB text |
+| After the exile (many) or earlier temple worship | 1-15 | Repository deep note (historical) | Stated as views |
+| The patriarchs as strangers; kings rebuked (Genesis 12 and 20); "anointed ones" and "prophets" given to them | 1-15 | Repository deep note (cultural); BSB | BSB text |
+| The land promise in Israel's ancient story; no modern border or state | 1-15 | Site's own stance | Stated plainly |
+| "Land of Ham": Mizraim among the sons of Ham (Genesis 10:6) | 16-45 | Repository deep note (cultural); BSB | BSB text |
+| Genesis 50:20; Acts 7:9-10; Exodus 2:24; Hebrews 11:9; Luke 1:72-73; Galatians 3:29 | all | BSB | BSB text |
+| 105:25: Exodus says Pharaoh hardened his heart and God hardened it; views on sovereignty and choice | 16-45 | Repository deep note (hard) | Stated as views |
+
+## The plain notes on Psalm 106 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Communal confession after the exile (Ezra 9, Nehemiah 9, Daniel 9; Daniel 9:5 quoted) | 1-23 | Repository deep note (cultural); BSB | BSB text |
+| "In the breach": a soldier in a broken wall | 1-23 | Picture from the text | Plain reading |
+| Romans 1:23 echoes 106:20; Romans 3:23; 1 Corinthians 10:6 | 1-23 | BSB | BSB text |
+| "Gather us from the nations": exiles, or a community waiting for the rest | 24-48 | Repository deep note (historical) | Stated as views |
+| Child sacrifice forbidden (Deuteronomy 12:31) and recorded of a king of Judah (2 Kings 21:6) | 24-48 | Repository deep note (cultural); BSB | BSB text |
+| 106:48 the doxology closing Book Four; 41:13, 72:18-19, 89:52; 1 Chronicles 16:34-36 | 24-48 | Book page ("Five books"); BSB | BSB text |
+| Phinehas (Numbers 25:7-8); readings of the conquest texts (one-time judgment; the language of ancient war; Canaanites surviving and joining Israel); the New Testament turns the fight against idols to the heart | 24-48 | Repository deep note (hard) | Stated as readings |
+| Romans 11:1, 29; 1 John 1:9 | 24-48 | BSB | BSB text |
+
+The confession is Israel's own; the note says it gives no ground to blame or look down on the Jewish people, and that no reading permits harm to anyone today.
+
+## Book Four complete (2026-11-20)
+
+Psalms 90 to 106 now have plain notes. Next: Psalm 107, the start of Book Five.
