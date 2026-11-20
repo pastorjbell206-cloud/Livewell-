@@ -23,7 +23,7 @@ import { FLAME, Flame, Seated, Standing, ring } from "./figures";
 const SPARK: [number, number][] = [
   [700, 196],
   [748, 186],
-  [400, 160],
+  [400, 268],
   [210, 236],
   [400, 120],
   [690, 92],
@@ -129,19 +129,19 @@ const film: FilmDrawing = {
           <path fill={h.h1} d="M400,410V500H520V410C480,388 440,384 400,388Z" />
           {/* Gideon, blowing the ram's horn. */}
           <Standing x={160} y={330} tone="b" />
-          <Shape d="M168,338C188,334 204,320 212,302l9,4C214,328 196,346 170,348Z" tone="c" off={1.5} />
+          <Shape d="M168,334C182,336 194,328 200,314l13,3C209,334 190,346 168,342Z" tone="c" off={1.5} />
           {/* David, the horn of oil over his head. */}
           <Standing x={400} y={322} tone="c" />
-          <Shape d="M378,282C392,268 414,262 436,268l-2,10C416,276 398,282 388,292Z" tone="c" off={1.5} />
-          <path className="pl-k" d="M384,296a3,4 0 1,0 6,0a3,4 0 1,0 -6,0Z" />
+          <Shape d="M404,300L428,266l13,9Z" tone="c" off={1.5} />
+          <path className="pl-k" d="M399,306a2.5,3.5 0 1,0 5,0a2.5,3.5 0 1,0 -5,0Z" />
           {/* A prophet, with a scroll. */}
           <Standing x={640} y={330} tone="g" />
           <Shape d="M648,354h26v34h-26Z" tone="c" off={1.5} />
           <path className="pl-l" d="M648,354a4,4 0 0 1 0,8M674,380a4,4 0 0 0 0,8" />
         </Fade>
-        <Draw frame={frame} on={1} off={2} delay={200} d="M120,40C90,120 200,200 160,300" />
-        <Draw frame={frame} on={1} off={2} delay={1100} d="M400,30C360,90 450,140 400,180" />
-        <Draw frame={frame} on={1} off={2} delay={2000} d="M690,40C720,120 600,200 640,300" />
+        <Draw frame={frame} on={1} off={2} delay={200} d="M30,70C90,40 150,90 130,160S170,250 186,290" />
+        <Draw frame={frame} on={1} off={2} delay={1100} d="M270,60C330,30 390,80 370,150S410,240 420,266" />
+        <Draw frame={frame} on={1} off={2} delay={2000} d="M770,70C710,40 650,90 670,160S630,250 614,290" />
 
         {/* 2. The promise: a new heart, and the Spirit on all people. */}
         <Fade frame={frame} on={2} off={3}>
@@ -162,9 +162,9 @@ const film: FilmDrawing = {
           <path fill={h.h2} d="M210,191C215,171 240,154 270,176C310,206 290,270 210,330Z" />
         </Fade>
         <Fade frame={frame} on={2} off={3}>
-          <path className="pl-l" d="M420,440H790" />
-          {MANY.map(([x, y, s, t]) => (
-            <Standing key={x} x={x} y={y} s={s} tone={t} />
+          <path className="pl-l" d="M430,386H790" />
+          {MANY.map(([x, , s, t]) => (
+            <Standing key={x} x={x} y={384 - 62 * s} s={s} tone={t} />
           ))}
         </Fade>
         <Draw
@@ -172,7 +172,7 @@ const film: FilmDrawing = {
           on={2}
           off={3}
           delay={900}
-          d="M430,190C510,140 590,220 670,170S760,150 790,180"
+          d="M430,180C510,130 590,210 670,160S760,140 790,170"
         />
         <Draw
           frame={frame}
@@ -180,37 +180,34 @@ const film: FilmDrawing = {
           off={3}
           delay={1600}
           className="pl-f"
-          d="M500,190V270M600,200V276M700,186V280M760,176V290"
+          d="M486,196c-10,14 6,22 -4,36M566,204c-10,14 6,22 -4,36M646,190c-10,14 6,22 -4,36M726,184c-10,14 6,22 -4,36"
         />
 
         {/* 3. The Jordan: the sky breaks open and the Spirit comes down like a dove. */}
         <Fade frame={frame} on={3} off={4}>
-          <Shape d="M0,500V300C120,280 200,300 290,320L250,500Z" tone="g" />
-          <Shape d="M800,500V300C680,280 600,300 510,320L550,500Z" tone="g" />
-          <Standing x={400} y={258} tone="c" s={1.2} />
-          <Shape
-            d="M200,500L280,330C340,322 460,322 520,330L600,500Z"
-            tone="b"
-          />
-          <path fill={h.h2} d="M200,500L280,330C340,322 460,322 520,330L600,500Z" />
+          <Shape d="M0,348V268C140,250 300,262 400,270C520,258 660,248 800,264V348Z" tone="g" />
+          <Standing x={400} y={262} tone="c" s={1.2} />
+          <Shape d="M0,430V330C200,322 600,322 800,330V430Z" tone="b" />
+          <path fill={h.h2} d="M0,430V330C200,322 600,322 800,330V430Z" />
           <path
             className="pl-f"
-            d="M300,360c20,-6 40,6 60,0M440,360c20,-6 40,6 60,0M270,420c24,-6 48,6 72,0M460,420c24,-6 48,6 72,0"
+            d="M60,360c20,-6 40,6 60,0M200,392c24,-6 48,6 72,0M520,392c24,-6 48,6 72,0M660,356c20,-6 40,6 60,0M330,350c14,-4 28,4 40,0M430,350c14,-4 28,4 40,0"
           />
+          <Shape d="M0,500V424C200,410 600,410 800,424V500Z" tone="g" />
         </Fade>
         <Fade frame={frame} on={3} off={4}>
-          <Travel frame={k} at={[[60, 0], [60, 0], [60, 0], [60, 0], [0, 0]]}>
-            <path fill={h.h3} d="M0,0H400L380,20L404,44L372,70L392,96H0Z" />
-            <path className="pl-l" d="M400,0L380,20L404,44L372,70L392,96" />
+          <Travel frame={k} at={[[0, 0], [0, 0], [0, 0], [0, 0], [-70, 0]]}>
+            <path fill={h.h3} d="M0,0H400L384,22L406,48L378,76L398,104L380,128H0Z" />
+            <path className="pl-l" d="M400,0L384,22L406,48L378,76L398,104L380,128H0" />
           </Travel>
-          <Travel frame={k} at={[[-60, 0], [-60, 0], [-60, 0], [-60, 0], [0, 0]]}>
-            <path fill={h.h3} d="M800,0H400L380,20L404,44L372,70L392,96H800Z" />
-            <path className="pl-l" d="M400,0L380,20L404,44L372,70L392,96" />
+          <Travel frame={k} at={[[0, 0], [0, 0], [0, 0], [0, 0], [70, 0]]}>
+            <path fill={h.h3} d="M800,0H400L384,22L406,48L378,76L398,104L380,128H800Z" />
+            <path className="pl-l" d="M400,0L384,22L406,48L378,76L398,104L380,128H800" />
           </Travel>
         </Fade>
-        <Draw frame={frame} on={3} off={4} delay={1300} className="pl-f" d="M360,110L330,180M440,110L470,180M400,104V140" />
+        <Draw frame={frame} on={3} off={4} delay={1300} className="pl-f" d="M352,132L322,188M448,132L478,188M400,134V150" />
         <Fade frame={frame} on={3} off={4}>
-          <Travel frame={k} at={[[400, 60], [400, 60], [400, 60], [400, 60], [400, 196]]}>
+          <Travel frame={k} at={[[400, 40], [400, 40], [400, 40], [400, 40], [400, 200]]}>
             <path className="pl-m" d={DOVE_WINGS} />
             <path className="pl-l" d={DOVE_WINGS} />
             <path className="pl-m" d={DOVE_BODY} />
@@ -262,7 +259,7 @@ const film: FilmDrawing = {
 
         {/* 6. God's temple: the people are its pillars, and the Spirit lives in them. */}
         <Fade frame={frame} on={6} off={7}>
-          <path className="pl-l" d="M130,440H670M150,422H650" />
+          <path className="pl-l" d="M130,366H670M150,352H650" />
         </Fade>
         <Draw frame={frame} on={6} off={7} delay={900} d="M150,206L400,108L650,206Z" />
         <Draw frame={frame} on={6} off={7} delay={1300} d="M150,222H650" />
