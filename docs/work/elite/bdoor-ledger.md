@@ -9717,3 +9717,32 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 
 All five chapters in plain words. No web searches for this book: every claim rests on the
 repository's notes, lexicon and study guides.
+
+## 2 Thessalonians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/2-thessalonians/intro.json`, field
+`teaching`. No new searches: every claim is carried by the repository's intro and chapter
+notes, the wisdom topic, or earlier ledger rows. No modern scholar is named. Scripture is
+the BSB in the repository, checked by the validator and the strict check.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Same senders and church; persecution; ‘the Day has already come’; some not working | Repository `overview`, `setting` | Repository |
+| Signature (3:17); received by the early church; in the earliest lists | Repository `author` | Repository; BSB text |
+| The case against Paul (close following of 1 Thessalonians, cooler tone, sudden end versus prior signs, the signature and the warning of 2:2) and the case for (similarity expected, firmness for correction, Mark 13 holds both, a forged letter would explain the signature); no side; the church received it; the writer called Paul as the letter does | Repository `author`; Ephesians and Colossians book pages (form) | Repository wording, each in its holders' terms. No side |
+| If Paul, Corinth AD 50 or 51 (Acts 18:5); later view AD 70 to 100 | Repository `date` | Repository |
+| Spirit, message, letter (2:2); a forged letter or a misunderstanding; meaning of ‘has come’ unclear | Chapter 2 deep note `historical` | Repository |
+| Causes of idleness: excitement about the end; patrons and clients; both may combine | Chapter 3 deep note `historical` | Repository |
+| 1:5-10: comfort to victims; vengeance God's (Romans 12:19; Deuteronomy 32:35); eternal conscious separation (most through history) and conditional immortality; no side; pointers | Chapter 1 deep note `hard`, `cultural`, `words` (G3639); answers.ts (is-hell-forever-or-does-it-end) | Repository wording. No side |
+| Confession: Christ will come to judge the living and the dead | The Apostles' and Nicene Creeds | Stated as confession |
+| 2:1-12 readings: a single future figure (Irenaeus onward); Paul's century (Caligula's statue AD 40, dropped at his death AD 41; Nero; the war to AD 70); the papacy (many Reformers; confessions of the time); a recurring power; restrainer: Roman Empire (Tertullian), the Spirit or the Spirit through the church, the gospel, Michael, God; Augustine admitted he did not know; no reading certain; no identification | Chapter 2 deep note `hard`, `historical`, `words` (G2722); repository `reading` | Repository wording. No side; no living person, church, nation or movement named as the figure |
+| 3:10 for the able who refused; help the weak (1 Thessalonians 5:14); care for widows, orphans, the sick (Acts 6:1; 1 Timothy 5:3-16); never against the poor; views beyond the church | Chapter 3 deep note `hard` | Repository |
+| Charity and neighbour first, or just laws and public provision too; both called to give and act | wisdom/deep/justice-and-the-poor.json `differ` | Repository wording, paraphrased. No side |
+| Paul's right to support (3:9; 1 Corinthians 9) | Chapter 3 deep note `cultural` | Repository |
+| Isaiah 66:15; 2:10 (the LORD's words spoken of Jesus); Daniel 11:36, 31; Antiochus IV, 167 BC; Ezekiel 28:2; Isaiah 11:4; Psalm 81:12; Exodus 20:9; Deuteronomy 15:11 | Chapter 1 and 2 deep notes `cultural`, `historical`, `christ`; BSB | Repository; BSB text |
+| Parousia and apokalupsis used of both Christ and the lawless one | Chapter 2 deep note `cultural` | Repository |
+| Map: Thessalonica, Corinth, Jerusalem | wmap-ledger | Ledger |
+| Timeline: Irenaeus late second century; Tertullian a little later | Repository `reading`; earlier ledger (Irenaeus, Against Heresies) | Repository; ledger. No dates given beyond the centuries |
+
+Cut: the Westminster Confession by name and date; Gaius as Caligula's other name; the
+firstfruits variant (kept for chapter 2).
