@@ -832,7 +832,7 @@ describe("the three films of 2026-11-20 (suffering, the Bible, the Spirit)", () 
       /teach(es|ing)? you a lesson|you deserved|God is punishing/i
     );
     // "Everything happens for a reason" is named only to be refused.
-    for (const m of all.matchAll(/happens? for a reason[^.]*\./g))
+    for (const m of Array.from(all.matchAll(/happens? for a reason[^.]*\./g)))
       expect(m[0]).toMatch(/isn't theology/);
     expect(all).toMatch(/Nobody can explain/);
     expect(all).toMatch(/not God paying you back/);
