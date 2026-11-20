@@ -97,5 +97,27 @@
     { "q": "the news makes me afraid", "expect": ["the-news-and-fear"] },
     { "q": "I just retired and feel useless", "expect": ["retirement"] },
     { "q": "asdf qwerty", "expect": [] }
+  ],
+  "holdout2": [
+    { "q": "my pastor yelled at me in front of the elders and I don't trust him anymore", "expect": ["submitting-to-leaders", "church-hurt"] },
+    { "q": "I drink every night to fall asleep", "expect": ["alcohol-and-drinking", "addiction"] },
+    { "q": "I don't want to be alive anymore", "expect": ["suicidal-thoughts", "despair-and-hope", "depression"] },
+    { "q": "my boyfriend checks my phone and won't let me see my friends", "expect": ["toxic-relationships", "codependency"] },
+    { "q": "I look in the mirror and hate who I see", "expect": ["self-hatred", "body-image", "identity-and-worth"] },
+    { "q": "we keep sleeping together and we're not married", "expect": ["sexual-purity", "lust", "dating"] },
+    { "q": "I never take a day off and I'm running on empty", "expect": ["rest-and-sabbath", "exhaustion", "work-and-burnout"] },
+    { "q": "I said something cruel about a coworker behind her back", "expect": ["gossip-and-the-tongue"] },
+    { "q": "my toddler throws tantrums and I'm losing it", "expect": ["parenting-young-children", "parenting-struggles", "anger"] },
+    { "q": "should christians care about homeless people", "expect": ["justice-and-the-poor", "serving-others"] },
+    { "q": "how much of my paycheck should I give", "expect": ["giving-to-the-church", "generosity-and-giving", "money", "stewardship"] },
+    { "q": "everything feels gray and I can't feel anything", "expect": ["depression", "numbness"] },
+    { "q": "I've relapsed again after six months clean", "expect": ["addiction", "breaking-bad-habits"] },
+    { "q": "my sister and I fight about mom's care", "expect": ["sibling-conflict", "caring-for-aging-parents", "caregiving", "difficult-family"] },
+    { "q": "I'm terrified of dying", "expect": ["facing-death", "fear-and-courage", "heaven-and-eternity"] },
+    { "q": "my wife wants a baby and we can't get pregnant", "expect": ["infertility"] },
+    { "q": "I keep comparing my life to everyone on instagram", "expect": ["comparison-online", "envy-and-comparison", "social-media"] },
+    { "q": "the church elders want me to step down", "expect": ["submitting-to-leaders", "serving-in-the-church", "church-hurt"] },
+    { "q": "I feel like there's no point to anything", "expect": ["purpose-and-meaning", "despair-and-hope", "depression"] },
+    { "q": "I'm addicted to porn and ashamed", "expect": ["pornography", "shame", "lust"] }
   ]
 }
