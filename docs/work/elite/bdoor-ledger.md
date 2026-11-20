@@ -10603,3 +10603,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Apoballō, throwing away a shield; hupomonē | 32-39 | verses/10.json (35-36) | Repository |
 | Isaiah 26:20; Habakkuk 2:3-4 BSB; Greek differences (coming one, shrinking back, order); Romans 1:17 | 32-39 | verses/10.json (37-38 `ot`); BSB | Repository; BSB text |
 | Acts 25:11; care lines on suffering and danger | 32-39 | BSB; 2-timothy intro `shame`; 1-thessalonians/plain/3.json (1-5) | BSB text; word for word |
+
+## The plain notes on Hebrews 11 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. There are no verse notes for Hebrews 11 to 13; the chapter deep notes and other repository notes were used.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hupostasis (foundation; the word of 1:3); elegchos (proof) | 1-3 | Chapter deep note `words` | Repository |
+| Lists of heroes a familiar Jewish form; praised for faith in the promise | 1-3 | Chapter deep note `cultural` (Sirach, 1 Maccabees not named) | Repository |
+| Genesis 1:3; Psalm 33:9; age-of-earth questions not settled | 1-3 | BSB; psalms/plain/8.json (3-9 `hard`) | BSB text; repository, no side |
+| ‘By faith’ one word repeated (anaphora) | 4-7 | Chapter deep note `literary` | Repository |
+| Genesis 4:4; 5:24 (Hebrews' wording differs, the writer usually following the Greek); 6:22 | 4-7 | BSB; hebrews/intro.json `reading` | BSB text; repository |
+| Strangers and resident foreigners; Abraham owned only a burial plot (Genesis 23) | 8-16 | Chapter deep note `cultural` | Repository |
+| Genesis 12:1; 18:12; 23:4; Psalm 39:12; Jeremiah 29:7; Deuteronomy 10:19 | 8-16 | BSB | BSB text |
+| ‘Isaac’ means ‘he laughs’ | 8-16 | genesis/plain/21.json (1-7) | Repository |
+| Genesis 21:12; 22:8; 50:25; Exodus 13:19 | 17-22 | BSB | BSB text |
+| Genesis 47:31 ‘bed’ and Hebrews 11:21 ‘staff’: mittah (H4296) and matteh (H4294) share the consonants מטה; the vowel-marked Hebrew reads ‘bed’ | 17-22 | lex/H (H4294, H4296); genesis/49.json on traditional vowels | Repository |
+| Genesis 22 readings; ‘not like the gods who demanded children’; care line on harming a child | 17-22 | genesis/plain/22.json (1-2 `hard`) | Repository; word for word |
+| Moses' parents; Exodus 2:2, 11-12; Joshua 2:9, 11; 6:25; James 2:25; Matthew 1:5 | 23-31 | BSB | BSB text |
+| Rahab's lie: Augustine (always wrong, praised despite it); deceiving unjust violence; Hebrew midwives (Exodus 1); agreement on the focus | 23-31 | joshua/2.json `hard` | Repository, no side |
+| Allusions: Daniel 6; Daniel 3; 1 Kings 17; 2 Kings 4; Maccabean martyrs about 167 BC under Antiochus IV; Isaiah sawn in two (a Jewish tradition) | 32-40 | Chapter deep note `historical` | Repository (Martyrdom of Isaiah and 2 Maccabees not named) |
+| Names out of order (Barak before Gideon; Jephthah before Samson); Samson's prayer (Judges 16:28); Jephthah's vow, most common reading and minority view; Judges as decline | 32-40 | Chapter deep note `historical`, `hard`; judges/11.json | Repository |
+| Triumph to suffering: faith not measured by success | 32-40 | Chapter deep note `literary` | Repository |
+| Prosperity teaching named an error | 32-40 | CLAUDE.md guardrails; 1-timothy/plain/6.json | Repository |
+| Care line on prayers for rescue not answered; Daniel 3:17-18 | 32-40 | acts/plain/12.json (1-5) | Word for word (‘The church surely prayed for James too’ omitted) |
