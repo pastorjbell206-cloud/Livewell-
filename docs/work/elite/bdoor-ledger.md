@@ -9767,3 +9767,27 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Kataxioō: a life that fits the calling, by grace | 11-12 | Chapter deep note `words` (G2661) | Repository |
 | Glory frames verses 10 and 12 | 11-12 | Chapter deep note `literary` | Repository |
 | Isaiah 49:3; Psalm 115:1; Isaiah 30:18 | 11-12 | BSB | BSB text |
+
+## The plain notes on 2 Thessalonians 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Spirit, message, letter; forged letter or misreading of 1 Thessalonians; ‘has come’ unclear; persecution as the end begun, or a spiritual resurrection (2 Timothy 2:18) | 1-2 | Chapter deep note `historical` | Repository; BSB text |
+| Saleuō, shaken as by wind; throeō, troubled as by an alarm, as in Mark 13:7 | 1-2 | lex/G (G4531, G2360) | Repository lexicon |
+| Mark 13:5, 7; Jeremiah 29:8; Psalm 46:1-2 | 1-2 | BSB | BSB text |
+| Apostasia: revolt or falling away; within the church, the world, or both; ‘departure’ argued by a few, rejected by most | 3-8 | Chapter deep note `words` (G0646) | Repository |
+| Antiochus IV, 167 BC; Caligula, AD 40, order delayed, dropped at his death; emperors honoured with temples, priests, sacrifices | 3-8 | Chapter deep note `historical`, `cultural` | Repository |
+| Katechō neuter then masculine: a force and a person | 3-8 | Chapter deep note `words` (G2722) | Repository |
+| Parousia and revelation words used of both | 3-8 | Chapter deep note `cultural` | Repository |
+| Readings of the figure and the restrainer; Augustine; no reading certain; no identification; pointer | 3-8 | Chapter deep note `hard`; intro `reading` | Repository wording. No side |
+| Daniel 11:36, 31; Isaiah 14:14; Ezekiel 28:2; Isaiah 11:4 | 3-8 | BSB; chapter deep note `christ` | BSB text |
+| Signs and wonders the same words as genuine miracles | 9-12 | Chapter deep note `cultural` | Repository |
+| Judgment as giving people what they chose (Romans 1:24) | 9-12 | Chapter deep note `doctrines` (judgment) | Repository; BSB text |
+| Deuteronomy 13:3; Psalm 81:11-12; Proverbs 1:31; 1 Kings 22:22-23 | 9-12 | BSB | BSB text |
+| From the beginning or firstfruits, one letter; Romans 16:5; 1 Corinthians 16:15 | 13-17 | Chapter deep note `words` (G0536) | Repository |
+| Paradosis the apostles' teaching | 13-17 | Chapter 3 deep note `words` (G3862); chapter 2 `cultural` | Repository |
+| Catholic and Orthodox (Scripture and handed-down teaching together) and Protestant (the apostles' traditions now in Scripture) readings of 2:15; no side | 13-17 | Standard descriptions | Stated generally, each in its own terms. No side |
+| Jesus named first in the prayer (2:16) | 13-17 | Chapter deep note `christ` | Repository |
+| Deuteronomy 7:6; Jeremiah 31:3; Deuteronomy 6:7; Jeremiah 6:16; Isaiah 40:1 | 13-17 | BSB | BSB text |
