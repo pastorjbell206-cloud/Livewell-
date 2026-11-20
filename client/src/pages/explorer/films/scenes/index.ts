@@ -21,6 +21,9 @@ export const FILM_SCENES: Record<
   "did-jesus-come-back-to-life": () => import("./did-jesus-come-back-to-life"),
   "sixty-six-books": () => import("./sixty-six-books"),
   "the-church": () => import("./the-church"),
+  "why-bad-things-happen": () => import("./why-bad-things-happen"),
+  "is-the-bible-true": () => import("./is-the-bible-true"),
+  "spirit-in-a-believer": () => import("./spirit-in-a-believer"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

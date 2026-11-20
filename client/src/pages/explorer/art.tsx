@@ -403,6 +403,35 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path fill={h} d="M14,84H86V88H14Z" />
     </>
   ),
+  /* Why do bad things happen?: a bowl, broken and mended, the mending shown. */
+  "why-bad-things-happen": h => (
+    <>
+      <path className="pl-l" d="M10,80H90" />
+      <Shape d="M18,40H82C80,64 66,78 50,78C34,78 20,64 18,40Z" tone="c" />
+      <path fill={h} d="M66,40H82C80,62 70,74 60,77Z" />
+      <path className="pl-l" d="M18,40C30,46 70,46 82,40" />
+      <path className="pl-l" d="M40,42L36,54L42,62L38,77M60,42L63,52L57,62L61,77" />
+    </>
+  ),
+  /* Is the Bible true?: a scroll, and copies of it. */
+  "is-the-bible-true": h => (
+    <>
+      <path className="pl-f" d="M30,40L62,26M30,40L62,58M30,40L62,86" />
+      <Shape d="M12,30H48V50H12Z" tone="c" off={1.5} />
+      <path className="pl-f" d="M18,37H42M18,43H38" />
+      <Shape d="M60,20H90V32H60ZM60,52H90V64H60ZM60,80H90V92H60Z" tone="b" off={1} />
+      <path fill={h} d="M80,20H90V32H80ZM80,52H90V64H80ZM80,80H90V92H80Z" />
+    </>
+  ),
+  /* The Holy Spirit in a believer: a vine, its branches and fruit. */
+  "spirit-in-a-believer": h => (
+    <>
+      <path className="pl-l" d="M50,94C48,76 54,64 50,50C47,40 52,30 50,20" />
+      <path className="pl-l" d="M50,58C40,54 28,58 16,50M50,58C60,54 72,58 84,50M50,36C42,30 34,30 26,22M50,36C58,30 66,30 74,22" />
+      <Shape d="M20,58a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM68,58a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM44,26a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" tone="c" off={1} />
+      <path fill={h} d="M0,94H100V100H0Z" />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */

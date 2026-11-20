@@ -1,0 +1,170 @@
+{
+  "slug": "is-the-bible-true",
+  "title": "Is the Bible true?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "is-the-bible-true",
+  "line": {
+    "younger": "Can we trust a book so old, copied by hand for hundreds of years? An honest look in eight pictures.",
+    "older": "Why would anyone trust the Bible? Eight pictures on how it was copied, what can be checked, what that proves, and what it does not."
+  },
+  "poster": "An open book on a table, and above it a ring with a question mark.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "A fair question",
+      "still": "An open book lies on a table, with a ribbon marking its place. Above it hangs a ring with a question mark.",
+      "younger": "Is the Bible true? People ask whether we can trust a book so old, written out by hand for hundreds of years. That is a fair question to ask.",
+      "older": "Why would anyone trust the Bible? The strongest critics know the manuscripts well, and their points are fair: we don't have the originals, the copies differ, and the Gospels tell some things differently. The question is what those facts add up to."
+    },
+    {
+      "id": "copies",
+      "name": "Copies of copies",
+      "still": "One scroll on the left, with lines running from it to three more scrolls.",
+      "younger": "None of the first pages the writers wrote has survived. What we have are copies, written out by hand, and copies of those copies.",
+      "older": "We don't have the originals, and nobody should pretend otherwise. What we have are handwritten copies, the earliest of them fragments, the fullest of them from the fourth century."
+    },
+    {
+      "id": "not-a-whisper",
+      "name": "Not a whispering game",
+      "still": "Many scrolls are spread across the picture, joined by lines in every direction, not in one single row.",
+      "younger": "But it was not like a whispering game, where one message passes down one line. The books were copied in many places at once, the old copies were kept, and people compared them.",
+      "older": "The telephone game is the wrong picture. The New Testament was written, not whispered. It was copied in many places at once, the older copies weren't destroyed when new ones were made, and early Christians compared copies and argued about differences. That is why scholars can find most of the mistakes."
+    },
+    {
+      "id": "thousands",
+      "name": "Thousands of copies",
+      "still": "Rows and rows of copies fill the picture, scrolls and bound books together.",
+      "younger": "There are more than five thousand old copies of the New Testament in Greek, more than for any book of the Greeks or Romans. Most differences between them are small, like spelling.",
+      "older": "There are more than five thousand Greek manuscripts of the New Testament, whole or in part, so every slip in every copy counts. Most differences are spelling, word order or a skipped line. The places where the wording is really in doubt are known and marked in modern Bibles, such as the end of Mark."
+    },
+    {
+      "id": "caves",
+      "name": "Found in a cave",
+      "still": "By the mouth of a cave stands a clay jar, its lid off, and a scroll beside it.",
+      "younger": "In 1947, in caves near the Dead Sea, people found a scroll of Isaiah about a thousand years older than the oldest copy known before. Most of the differences are spelling.",
+      "older": "Before 1947 the oldest complete Hebrew Bible was copied in 1008. Then the caves near Qumran gave up a complete scroll of Isaiah, usually dated to the second century before Christ, about a thousand years older. Most of its differences from the later text are spelling and small points of grammar.",
+      "verse": {
+        "ref": "Isaiah 40:8",
+        "text": "The grass withers and the flowers fall, but the word of our God stands forever."
+      }
+    },
+    {
+      "id": "checked",
+      "name": "Where it can be checked",
+      "still": "A carved stone stands on the ground, lines cut across its face.",
+      "younger": "Where the Bible's history can be checked, it has often held up. A stone with the name of Pontius Pilate on it was found in 1961.",
+      "older": "Luke says he investigated everything carefully, and claims like his can be tested. Where the history can be checked it has often held up: a stone at Caesarea naming Pilate as prefect of Judea, found in 1961; an inscription from Tel Dan, found in 1993, naming the House of David.",
+      "verse": {
+        "ref": "Luke 1:3",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you"
+      }
+    },
+    {
+      "id": "does-not-prove",
+      "name": "What this does not prove",
+      "still": "A balance stands on the table, its two pans level.",
+      "younger": "None of this proves everything the Bible says. It shows that the Bible was copied with care and written close to what happened. The biggest question is still about Jesus.",
+      "older": "None of this proves the Bible is the word of God. It shows that the book is what it presents itself as: a carefully kept record, written close to the events, by people who expected to be checked. It leaves the real question standing: what to make of Jesus."
+    },
+    {
+      "id": "read-it",
+      "name": "Read it yourself",
+      "still": "The open book lies on the table again, the balance beside it.",
+      "younger": "The best way to find out is to read it. Start with one Gospel, like Mark, with a parent or a leader, and ask your questions as you go.",
+      "older": "Read one Gospel whole, the way you would read any ancient source, and argue with the book instead of with a rumor about it. The full case, and the case against at its strongest, is the Honest Answer: Why would anyone trust the Bible?",
+      "verse": {
+        "ref": "John 20:31",
+        "text": "But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."
+      }
+    }
+  ],
+  "think": {
+    "younger": "If you could ask someone who knew Jesus one question, what would it be? Which Gospel would you like to read first?",
+    "older": "Which of the facts in this film surprised you most? What would it take for you to trust an ancient book, any ancient book?"
+  },
+  "read": [
+    {
+      "label": "Luke 1",
+      "href": "/study/bible/luke/1"
+    },
+    {
+      "label": "Isaiah 40",
+      "href": "/study/bible/isaiah/40"
+    },
+    {
+      "label": "John 20",
+      "href": "/study/bible/john/20"
+    },
+    {
+      "label": "2 Timothy 3",
+      "href": "/study/bible/2-timothy/3"
+    },
+    {
+      "label": "2 Peter 1",
+      "href": "/study/bible/2-peter/1"
+    }
+  ],
+  "stops": [
+    "return",
+    "church"
+  ],
+  "cards": [
+    "bible"
+  ],
+  "deeper": [
+    {
+      "label": "Why would anyone trust the Bible? (an Honest Answer, with the case against at its strongest)",
+      "href": "/answers/why-would-anyone-trust-the-bible"
+    },
+    {
+      "label": "Can we trust the text of the New Testament? (the hardest questions, one at a time)",
+      "href": "/questions/text"
+    },
+    {
+      "label": "How the 66 books fit together (a moving picture)",
+      "href": "/study/explorer/watch/sixty-six-books"
+    }
+  ],
+  "share": {
+    "level": "younger",
+    "frames": [
+      {
+        "id": "question",
+        "verse": false
+      },
+      {
+        "id": "copies",
+        "verse": false
+      },
+      {
+        "id": "not-a-whisper",
+        "verse": false
+      },
+      {
+        "id": "thousands",
+        "verse": false
+      },
+      {
+        "id": "caves",
+        "verse": true
+      },
+      {
+        "id": "checked",
+        "verse": false
+      },
+      {
+        "id": "does-not-prove",
+        "verse": false
+      },
+      {
+        "id": "read-it",
+        "verse": true
+      }
+    ]
+  },
+  "end": {
+    "label": "Read the Honest Answer: Why would anyone trust the Bible?",
+    "href": "/answers/why-would-anyone-trust-the-bible"
+  }
+}

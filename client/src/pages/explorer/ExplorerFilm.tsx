@@ -122,6 +122,21 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "A child's honest question, taken seriously in six moving pictures: why anything is here at all, and why the Bible says God has no beginning.",
     },
+    "why-bad-things-happen": {
+      title: "Why do bad things happen?: Bible Explorer",
+      description:
+        "An honest answer for children and teenagers, in eight moving pictures: what the Bible says about pain, what nobody can explain, the cross, and the promise that every tear will be wiped away.",
+    },
+    "is-the-bible-true": {
+      title: "Is the Bible true?: Bible Explorer",
+      description:
+        "Can we trust a book copied by hand for centuries? Eight moving pictures on the copies, the Dead Sea Scrolls, what can be checked, and what that does and does not prove.",
+    },
+    "spirit-in-a-believer": {
+      title: "The Holy Spirit in a believer: Bible Explorer",
+      description:
+        "What Christians confess about the Holy Spirit living in a believer, in seven moving pictures: joined to Christ, children of God, fruit and gifts, help to pray, and where churches differ.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

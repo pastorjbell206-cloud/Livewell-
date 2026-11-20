@@ -1098,7 +1098,19 @@
       "slug": "spirit-in-a-believer",
       "title": "The Holy Spirit in a believer",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "The Holy Spirit is God, and he lives in everyone who belongs to Jesus. Seven pictures of what he does there.",
+        "older": "What Christians everywhere confess about the Holy Spirit in a believer, in seven pictures: joined to Christ, children of God, fruit and gifts, help to pray, and where churches differ."
+      },
+      "mark": "spirit-in-a-believer",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [
+        "spirit"
+      ]
     },
     {
       "slug": "the-church",
@@ -1188,13 +1200,40 @@
       "slug": "why-bad-things-happen",
       "title": "Why do bad things happen?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "A hard and honest question, in eight pictures: what the Bible says about pain, what it does not explain, and who has the last word.",
+        "older": "Suffering is the strongest reason people give for not believing. Eight pictures on what Christians can honestly say, what they cannot, and the hope they hold."
+      },
+      "mark": "why-bad-things-happen",
+      "frames": 8,
+      "stops": [
+        "fall",
+        "cross",
+        "new-creation"
+      ],
+      "cards": [
+        "life-to-come"
+      ]
     },
     {
       "slug": "is-the-bible-true",
       "title": "Is the Bible true?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Can we trust a book so old, copied by hand for hundreds of years? An honest look in eight pictures.",
+        "older": "Why would anyone trust the Bible? Eight pictures on how it was copied, what can be checked, what that proves, and what it does not."
+      },
+      "mark": "is-the-bible-true",
+      "frames": 8,
+      "stops": [
+        "return",
+        "church"
+      ],
+      "cards": [
+        "bible"
+      ]
     },
     {
       "slug": "did-jesus-come-back-to-life",
