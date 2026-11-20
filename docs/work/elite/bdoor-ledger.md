@@ -10062,3 +10062,31 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Psalm 38:11; 142:4; Proverbs 17:17; 18:24; Psalm 121:7 | 13-18 | BSB | BSB text |
 
 Cut: "Paul had no children of his own that we know of" (no source).
+
+## The plain notes on 2 Timothy 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Four generations in 2:2; faith handed on, not invented | 1-7 | Chapter deep note `doctrines` (church) | Repository |
+| Soldiers' long terms, undivided loyalty, clear of civilian business; athletes' wreath forfeited for breaking rules; farmer's first share | 1-7 | Chapter deep note `cultural` | Repository (the marriage rule not carried over) |
+| Deuteronomy 31:7; 2 Kings 2:9; Psalm 71:18; Proverbs 27:18; 2:6 | 1-7 | BSB | BSB text |
+| Kakourgos the word Luke uses of the two crucified with Jesus; Philippians 1:12-14 | 8-10 | Chapter deep note `historical` | Repository; BSB |
+| Raised: the answer to those who said the resurrection had passed; descended from David, 2 Samuel 7:12-16 | 8-10 | Chapter deep note `christ` | Repository; BSB |
+| 2 Samuel 7:12-13; Psalm 89:4; Isaiah 11:1; 26:19; 40:8 | 8-10 | BSB | BSB text |
+| An early hymn or confession, four conditional lines; Matthew 10:33; the turn in the fourth line; Peter restored | 11-13 | Chapter deep note `literary`, `hard` | Repository; BSB (John 21:15-17) |
+| Romans 6:8 (sunapothnēskō, Romans 6:3-8) | 11-13 | Chapter deep note `words` (G4880) | Repository; BSB |
+| Two readings of 2:12-13; many prefer the first (1 Corinthians 1:9; 1 Thessalonians 5:24) | 11-13 | Chapter deep note `hard` | Repository wording. No side |
+| Assurance views; Romans 8:31-39 note; Honest Answer; the care paragraph | 11-13 | galatians/plain/5.json (1-6) | Word for word, the verse number fitted |
+| 2 Chronicles 15:2; Deuteronomy 32:4; Lamentations 3:22-23; Numbers 23:19 | 11-13 | BSB | BSB text |
+| Orthotomeō, cut straight; dokimos, tested metal or full-weight coin | 14-19 | Chapter deep note `words` (G3718, G1384) | Repository |
+| Hymenaeus (1 Timothy 1:20); Philetus otherwise unknown; resurrection spiritualized; body a prison; Corinth (1 Corinthians 15:12) | 14-19 | Chapter deep note `historical` | Repository; BSB |
+| Seals marked ownership; God's side and his people's; Numbers 16:5 | 14-19 | Chapter deep note `cultural`, `doctrines` | Repository; BSB |
+| Numbers 16:26 behind the second saying | 14-19 | Not in the repository | Narrowed to "some readers hear" |
+| 1 Corinthians 15:13-17 | 14-19 | BSB | BSB text |
+| Vessels of precious metal and of wood and clay, including for waste | 20-26 | Chapter deep note `cultural` | Repository |
+| ‘Youthful passions’ including love of winning an argument | 20-26 | Not in the repository | Narrowed to "some readers think" |
+| Repentance God's gift; correction gentle, not winning quarrels | 20-26 | Chapter deep note `doctrines` (repentance) | Repository |
+| Misuse, the police line, the word to the hurt | 20-26 | 1-corinthians/plain/5.json (1-5) | Word for word, with ‘These verses’ for ‘Church discipline’ in the first sentence and the victim clause added |
+| Jeremiah 18:4; Isaiah 52:11; Proverbs 15:1; 26:21; Isaiah 42:3; Ezekiel 18:23; 17:14 (Proverbs) | 14-26 | BSB | BSB text |
