@@ -10038,3 +10038,27 @@ One web search this run (for Titus's Nicopolis, below); none for this page. Scri
 | Map points: Rome, Ephesus, Troas, Miletus, Corinth, Thessalonica, Lystra, Iconium, Pisidian Antioch | Map | Coordinates already used on the acts, galatians and 2 Corinthians maps | Repository |
 
 Cut: "around the world today many believers know what that verse means" (no source here); "the call to turn from evil found across the prophets" narrowed to "the many calls in the Old Testament".
+
+## The plain notes on 2 Timothy 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘My true child’ (1 Timothy 1:2); tears perhaps at their last parting (‘many readers think’) | 1-5 | BSB; chapter deep note `story` | BSB text; narrowed |
+| Timothy's Greek father; Lois and Eunice; Scripture taught early in Jewish homes; ‘as did my forefathers’, faith in Christ not a break from Israel's God | 1-5 | Chapter deep note `cultural`; Acts 16:1 | Repository; BSB |
+| Deuteronomy 6:7; Psalm 145:4; 78:4; Exodus 3:15 | 1-5 | BSB | BSB text |
+| Anazōpureō, coals fanned; deilia, timidity; fear not lack of ability the danger | 6-7 | Chapter deep note `words` (G0329, G1167) | Repository |
+| Laying on of hands a commissioning; 1 Timothy 4:14 | 6-7 | Chapter deep note `cultural` | Repository; BSB |
+| Joshua 1:9; Numbers 27:18; Isaiah 41:10 | 6-7 | BSB | BSB text |
+| Anxiety care lines (Philippians 2:27-28; 2 Corinthians 11:28; illnesses; Honest Answer; self-harm line) | 6-7 | philippians/plain/4.json (4-9) | Word for word, fitted from ‘this verse’ and ‘Be anxious for nothing’ to verse 7 |
+| Prison a disgrace shared by friends | 8-12 | Chapter deep note `cultural` | Repository |
+| Grace in Christ before time; ‘appearing’ his coming; death’s power broken | 8-12 | Chapter deep note `christ` | Repository |
+| Isaiah 25:8; Hosea 13:14 quoted in 1 Corinthians 15:54-55; Psalm 16:10; Daniel 12:2; Psalm 31:5 (David's), Luke 23:46; 1 Corinthians 15:26 | 8-12 | BSB | BSB text |
+| Grief care lines | 8-12 | 1-thessalonians/plain/4.json (13-14) | Word for word (the second paragraph) |
+| Province of Asia, Ephesus; ‘everyone deserted’ probably believers from Asia who might have supported him, not all; Phygelus and Hermogenes otherwise unknown; prisoners depended on friends; ‘refreshed’ practical help | 13-18 | Chapter deep note `historical`, `cultural` | Repository |
+| Parathēkē, a deposit | 13-18 | Chapter deep note `words` (G3866) | Repository |
+| Onesiphorus: Catholic and Orthodox reading (prayer for the dead); Protestant answer; no side | 13-18 | Chapter deep note `hard` | Repository wording, paraphrased; 2 Maccabees not carried over. No side |
+| Psalm 38:11; 142:4; Proverbs 17:17; 18:24; Psalm 121:7 | 13-18 | BSB | BSB text |
+
+Cut: "Paul had no children of his own that we know of" (no source).
