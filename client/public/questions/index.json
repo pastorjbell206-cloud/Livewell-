@@ -264,6 +264,13 @@
           "blurb": "Ehrman's case and the texts it rests on, Paul's letters as the earliest layer, exaltation and pre-existence side by side, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "did-jesus-claim-to-be-god",
+          "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+          "blurb": "What Jesus does not say, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1087,6 +1094,36 @@
       "area": "jesus",
       "slug": "how-did-jesus-become-god",
       "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+      "live": false
+    },
+    {
+      "claim": "Jesus did not claim to be God; John's high view of him is a late development",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "\"Son of Man\" in Jesus' Aramaic could be a modest way of saying \"I\", not a claim to Daniel's figure",
+      "proponent": "Geza Vermes",
+      "work": "Jesus the Jew",
+      "year": 1973,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "Jesus used \"son of man\" in its ordinary Aramaic sense, and the references to Daniel were added by the early church",
+      "proponent": "Maurice Casey",
+      "work": "Son of Man",
+      "year": 1979,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
       "live": false
     },
     {

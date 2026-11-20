@@ -2527,3 +2527,23 @@ Living scholars are paraphrased only from the Study Bible's notes (named, with t
 | Romans 1:3-4; Acts 2:36; Acts 13:33; John 1:1; John 8:58; Galatians 4:4; Philippians 2:6-7, 9, 10; 1 Corinthians 16:22; Acts 7:59; Joel 2:32; Romans 10:13; Deuteronomy 6:4; 1 Corinthians 8:6; Isaiah 45:22, 23 | Repo (BSB; script, and by hand for the combined Philippians quotation) | Quoted |
 
 Agreement: the Honest Answer "Was Jesus just a good teacher?" makes the same argument from Paul's Aramaic prayer, 1 Corinthians 8:6, Philippians 2:10 and Hurtado; this page goes further on Ehrman's texts, Romans 10:13 and Joel, and the Jewish ideas of a second power. The notes on Philippians 2, Romans 1, 1 Corinthians 8 and 16, Mark 1, John 1 and Daniel 7 agree. Cut or not used: Ehrman's biography (his university and his description of himself, which rested on earlier rows from search summaries); Bousset's *Kyrios Christos* (a Wikipedia copy only); any claim that "most scholars" date the high christology early (the Wikipedia copy says "a majority", unsourced in the copy); Ehrman's reading of Paul's Christ as an angel (not in any source read).
+
+### bd. "Isn't the claim that Jesus said he was God a product of John's Gospel?" (did-jesus-claim-to-be-god)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman, *How Jesus Became God* (2014): John's high view a late development, not what Jesus or his first followers believed | Note (John 1, "hard") | Paraphrased, attributed to the note |
+| Some modern historical critics hold that the historical Jesus made no claim to divinity and that the Johannine discourses reflect the later church | Note (John 10) | Paraphrased |
+| "Son of man" can mean a human being; Vermes, *Jesus the Jew* (1973), a modest way of saying "I"; Casey, *Son of Man* (1979), the Daniel references added by the church, and humanity in general at Mark 2:28 | Notes (Mark 2; Daniel 7) | Paraphrased (Casey and Vermes not quoted) |
+| "Son of God" a royal and covenant title that never implied divinity | Note (Mark 1) | Paraphrased |
+| Johansson (*JSNT*, 2011): forgiveness everywhere God's prerogative, mediated by priests and intercessors; Hägerland, *Jesus and the Forgiveness of Sins* (2012): Jesus forgave as a prophet; Vermes: within a Galilean holy man's authority | Note (Mark 2) | Paraphrased, both sides |
+| Sanders, *Jesus and Judaism* (1985): Sabbath disputes the kind observant Jews had among themselves | Note (Mark 2) | Paraphrased |
+| The Mishnah defines blasphemy narrowly as pronouncing the divine name, which Jesus did not do; some think the charge a pretext; Bock (1998) and Adela Yarbro Collins: claiming God's right hand and to come as judge a claim to share God's honor | Note (Mark 14) | Paraphrased |
+| Raymond Brown (*The Death of the Messiah*, 1994): some Jerusalem authorities took part in handing Jesus over; the decision and execution Roman; *Nostra Aetate* (1965) | Notes (Mark 15; Mark 14; Matthew 27) | Paraphrased |
+| C. H. Dodd (*More New Testament Studies*, 1968): an older parable of the apprenticed son in John 5:19-20 | Note (John 5) | Paraphrased |
+| Lewis, "the most embarrassing verse in the Bible", of Mark 13:30 | Note (Mark 13: "Lewis, a believer, called verse 30 the most embarrassing verse in the Bible in his essay 'The World's Last Night'"); Lewis WLN (the essay's text, one transcript copy); a second, independent page (`Dizzy-marville/The-Preterist-Perspective`) calls the verse by the same phrase | Quoted, the phrase only |
+| Mark around 70 | The jesus area's verified rows | Agrees ("around forty years") |
+| Mark 2:5, 2:7, 2:10, 2:28; Mark 10:18 (with an ellipsis); Mark 13:32; Matthew 5:22; Matthew 12:6; Matthew 11:27; Mark 8:38; Mark 14:61-62 (with an ellipsis); Psalm 110:1; Daniel 7:13-14; John 5:18; John 10:30, 10:33; John 8:58; John 20:31; Mark 12:35-37 and Mark 15:26 (referenced) | Repo (BSB; script, and by hand for the ellipses and the Psalm) | Quoted |
+| Nicene Creed: "very God of very God"; "was made man" | Repo | Quoted |
+
+Agreement: the Honest Answer "Was Jesus just a good teacher?" makes the same case from Mark 2, Matthew 5 and Mark 14:62 and grants that scholars argue over which sayings go back to Jesus; this page adds the Sabbath, Matthew 11:27, Psalm 110 and the scholars on each side. The notes on Mark 1, 2, 14 and 15, Daniel 7 and John 1, 5 and 10 agree; the trial is framed as the notes frame it. Cut or not used: John Hick's 1993 survey of scholars (a Wikipedia copy only); Hurtado's reported view that Jesus made no claim to divinity during his life (the Wikipedia copy marks it "failed verification"); any count of how often Jesus says "Son of Man".

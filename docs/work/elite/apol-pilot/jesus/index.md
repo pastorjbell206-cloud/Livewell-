@@ -20,6 +20,7 @@ The pages also say what history can't do. It can establish that Jesus lived, tha
 4. **The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?** Every difference set out, Tacitus and Suetonius on the fire of Rome as a test case, the conventions of ancient biography, and what all four agree on.
 5. **Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?** What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of "least probable," and where the question passes from history to the question of God.
 6. **Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?** Ehrman's case and the texts it rests on, Paul's letters as the earliest layer, exaltation and pre-existence side by side, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.
+7. **In Matthew, Mark and Luke, Jesus never says "I am God." Isn't the claim that he did a product of John's Gospel, written decades later?** What Jesus does not say, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, "But I tell you," the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.
 
 ## Words these pages use
 
@@ -27,6 +28,7 @@ The pages also say what history can't do. It can establish that Jesus lived, tha
 - **Mythicism**: the view that there was no historical Jesus, and that the Christian story began with a heavenly figure later placed in history.
 - **Inference to the best explanation**: the way historians argue, by asking which account explains the most of the agreed evidence with the least strain.
 - **Christology**: what Christians believe and teach about who Jesus is; an exaltation christology speaks of God raising Jesus to a high place, an incarnation christology of a Son who existed before he became human.
+- **Son of Man**: the phrase Jesus uses of himself in all four Gospels; in Aramaic it can mean simply a human being, and in Daniel 7:13-14 it names the figure who comes with the clouds and receives everlasting dominion.
 - **Criterion of embarrassment**: the historians' rule that a detail awkward for the people who told it, such as a crucifixion or women as the first witnesses, is unlikely to have been invented by them.
 
 ## Where else to look
