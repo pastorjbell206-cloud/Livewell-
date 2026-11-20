@@ -1,0 +1,109 @@
+{
+  "slug": "why-cant-i-see-god",
+  "title": "Why can't I see God?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "why-cant-i-see-god",
+  "line": {
+    "younger": "An honest question, in seven pictures: why no one can see God with their eyes, and the ways he has made himself known, most of all in Jesus.",
+    "older": "Why is God unseen? Seven pictures on the family catechism's answer: God is Spirit, known in what he made, in his word, and most clearly in Jesus, with the hard objection named fairly."
+  },
+  "poster": "A child stands on a green hill under a wide sky, and a tree beside them bends in a wind that is not drawn.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "A real question",
+      "still": "A child stands on a green hill under a wide, empty sky, a single tree beside them.",
+      "younger": "Why can't I see God? It is a good question, and lots of grown-ups ask it too. The Bible gives an honest answer: we cannot see God with our eyes, because God is Spirit.",
+      "older": "If God is real, why can't anyone see him? It is a fair question, and the Bible does not dodge it. Jesus said, “God is Spirit.” The family catechism answers: we cannot see God with our eyes because he is Spirit. He is not made of anything, because nothing made him.",
+      "verse": {
+        "ref": "John 4:24",
+        "text": "God is Spirit, and His worshipers must worship Him in spirit and in truth."
+      }
+    },
+    {
+      "id": "unseen",
+      "name": "Real things we cannot see",
+      "still": "Wind blows across the hill: the tree bends, the grass leans the same way and leaves fly past, but the wind itself is not drawn.",
+      "younger": "We know lots of real things we cannot see: the wind, love, our own thoughts. You cannot see the wind, but you can see the trees bend and feel it on your face.",
+      "older": "The catechism says we know real things we cannot see all the time, like love, or the wind, or our own thoughts. No one has ever seen the wind. Everyone has seen a tree bend in it."
+    },
+    {
+      "id": "made",
+      "name": "In what he made",
+      "still": "Night over the hill: the sky is full of stars, with far hills under them.",
+      "younger": "God has shown us something of himself in the world he made. The stars and the sky cannot tell us everything about God, but they tell us that he is great and wise.",
+      "older": "Christians call this general revelation: what God shows of himself to every person through the created world. Paul says God's “invisible qualities, His eternal power and divine nature, have been clearly seen” in what he made. The Study Bible adds the limit: creation leaves every person accountable, but it is special revelation that tells the good news.",
+      "verse": {
+        "ref": "Psalm 19:1",
+        "text": "The heavens declare the glory of God; the skies proclaim the work of His hands."
+      }
+    },
+    {
+      "id": "spoken",
+      "name": "He has spoken",
+      "still": "Morning on the hill. On a flat rock an open scroll is set out between its two rollers, lines of writing across it.",
+      "younger": "God has also spoken. He spoke to people long ago, and their words were written down for us in the Bible. When God met his people at Mount Sinai, they saw no shape at all. They heard his voice.",
+      "older": "God did not leave people to guess. He spoke first, to Abraham, to Moses and through the prophets, and their words were written down. At Sinai, Moses reminded Israel, “You heard the sound of the words, but saw no form; there was only a voice.” Israel's God is known by what he says and does, not by an image."
+    },
+    {
+      "id": "jesus",
+      "name": "God we could see",
+      "still": "By a lake a man stands among a crowd of people, and a child stands close beside him.",
+      "younger": "Then God came close enough to see. Jesus is God the Son, who became a man that people could see and touch and hear. When his friend Philip asked to see the Father, Jesus said, “Anyone who has seen Me has seen the Father.”",
+      "older": "The catechism's answer goes further: God has made himself known most clearly in Jesus, who is God we could see and touch and hear. John ends the opening of his Gospel with exactly this. In the catechism's words, we do not know God by squinting harder; we know him because he came close.",
+      "verse": {
+        "ref": "John 1:18",
+        "text": "No one has ever seen God, but the one and only Son, who is Himself God and is at the Father’s side, has made Him known."
+      }
+    },
+    {
+      "id": "light",
+      "name": "Enough light",
+      "still": "Night again. A small gold lamp stands on the path up the hill and lights the next few steps, while the rest of the hill is dark.",
+      "younger": "God does not force anyone to see him. But he is never far away. Paul told a crowd in Athens that God made people to look for him and find him, and that “He is not far from each one of us.”",
+      "older": "Thinkers have argued about this for a long time. The philosopher J. L. Schellenberg argued that a perfectly loving God would not leave a sincere, open-minded person unable to believe in him. The site's Honest Answer on whether God exists does not pretend that is fully answered. It points to Blaise Pascal's thought that God has given enough light for those who want to see, and enough darkness for those who don't.",
+      "verse": {
+        "ref": "Acts 17:27",
+        "text": "God intended that they would seek Him and perhaps reach out for Him and find Him, though He is not far from each one of us."
+      }
+    },
+    {
+      "id": "face",
+      "name": "Face to face",
+      "still": "Morning breaks over the hill. Light comes from beyond the top of the picture and falls across the child on the path.",
+      "younger": "The Bible promises that one day God's people will see him. Now we know him by what he made, by his word, and most of all by Jesus. Then we will see him face to face.",
+      "older": "Christian hope ends where this question begins. Paul says that now we see only a dim reflection, but then face to face, and the Bible's last chapter says of God's servants, “They will see His face.” Jesus also left a word for everyone who has never seen him: “blessed are those who have not seen and yet have believed.”",
+      "verse": {
+        "ref": "1 Corinthians 13:12",
+        "text": "Now we see but a dim reflection as in a mirror; then we shall see face to face."
+      }
+    }
+  ],
+  "think": {
+    "younger": "What are some real things you cannot see? What does Jesus show you about what God is like?",
+    "older": "Why do you think God made himself known in a person, and not only in the sky or a book? What would it mean to read the Gospels as his answer to this question?"
+  },
+  "read": [
+    { "label": "John 1", "href": "/study/bible/john/1" },
+    { "label": "John 4", "href": "/study/bible/john/4" },
+    { "label": "Psalm 19", "href": "/study/bible/psalms/19" },
+    { "label": "Romans 1", "href": "/study/bible/romans/1" },
+    { "label": "Deuteronomy 4", "href": "/study/bible/deuteronomy/4" },
+    { "label": "John 14", "href": "/study/bible/john/14" },
+    { "label": "Acts 17", "href": "/study/bible/acts/17" },
+    { "label": "1 Corinthians 13", "href": "/study/bible/1-corinthians/13" },
+    { "label": "John 20", "href": "/study/bible/john/20" },
+    { "label": "Revelation 22", "href": "/study/bible/revelation/22" }
+  ],
+  "stops": ["creation", "jesus"],
+  "cards": ["god"],
+  "deeper": [
+    { "label": "The family catechism: how do we know God is real if we cannot see him?", "href": "/family/catechism#q67" },
+    { "label": "Does God actually exist? (an Honest Answer, with the case against at its strongest)", "href": "/answers/does-god-actually-exist" },
+    { "label": "God speaks: revelation, in the Study Bible", "href": "/study/bible/doctrines/revelation" },
+    { "label": "Who made God? (a moving picture)", "href": "/study/explorer/watch/who-made-god" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "question", "verse": false}, {"id": "unseen", "verse": false}, {"id": "made", "verse": true}, {"id": "spoken", "verse": false}, {"id": "jesus", "verse": true}, {"id": "light", "verse": false}, {"id": "face", "verse": false}]},
+  "end": { "label": "Read John 1 in the Study Bible", "href": "/study/bible/john/1" }
+}

@@ -54,16 +54,16 @@
 
     { "slug": "who-made-god", "title": "Who made God?", "group": "questions", "status": "finished" },
     { "slug": "does-god-exist", "title": "Does God exist?", "group": "questions", "status": "finished" },
-    { "slug": "why-cant-i-see-god", "title": "Why can't I see God?", "group": "questions", "status": "coming" },
+    { "slug": "why-cant-i-see-god", "title": "Why can't I see God?", "group": "questions", "status": "finished" },
     { "slug": "why-bad-things-happen", "title": "Why do bad things happen?", "group": "questions", "status": "finished" },
     { "slug": "is-the-bible-true", "title": "Is the Bible true?", "group": "questions", "status": "finished" },
     { "slug": "did-jesus-come-back-to-life", "title": "Did Jesus really come back to life?", "group": "questions", "status": "finished" },
-    { "slug": "when-we-die", "title": "What happens when we die?", "group": "questions", "status": "coming" },
+    { "slug": "when-we-die", "title": "What happens when we die?", "group": "questions", "status": "finished" },
     { "slug": "so-many-churches", "title": "Why are there so many churches?", "group": "questions", "status": "finished" },
     { "slug": "never-heard", "title": "What about people who never heard?", "group": "questions", "status": "coming" },
     { "slug": "temple-destroyed", "title": "Why did God let his temple be destroyed?", "group": "questions", "status": "coming" },
     { "slug": "love-when-i-do-wrong", "title": "Does God still love me when I do wrong?", "group": "questions", "status": "finished" },
-    { "slug": "god-silent", "title": "Why does God seem silent sometimes?", "group": "questions", "status": "coming" },
-    { "slug": "science-and-the-bible", "title": "Are science and the Bible enemies?", "group": "questions", "status": "coming" }
+    { "slug": "god-silent", "title": "Why does God seem silent sometimes?", "group": "questions", "status": "finished" },
+    { "slug": "science-and-the-bible", "title": "Are science and the Bible enemies?", "group": "questions", "status": "finished" }
   ]
 }

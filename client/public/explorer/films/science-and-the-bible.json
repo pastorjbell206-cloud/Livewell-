@@ -1,0 +1,103 @@
+{
+  "slug": "science-and-the-bible",
+  "title": "Are science and the Bible enemies?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "science-and-the-bible",
+  "line": {
+    "younger": "Do you have to choose between loving God and loving science? Seven pictures on why the answer is no, and on what Christians agree and disagree about.",
+    "older": "Faith and science, in seven pictures, from the site's Honest Answer and the family catechism: the old war story, two kinds of question, a God who is not in the gaps, and the questions Christians still disagree on."
+  },
+  "poster": "A table by a window at night: an open book on one side, a small telescope on the other, and stars outside.",
+  "frames": [
+    {
+      "id": "choose",
+      "name": "Do I have to choose?",
+      "still": "A table by a window at night: an open book lies on one side and a small telescope stands on the other.",
+      "younger": "Some people say that science and the Bible are enemies, and that you have to pick one. Christians say you do not have to choose. The family catechism says a child can love both.",
+      "older": "Do you have to choose between faith and science? The site's Honest Answer says no. It also says the strong objection is not a war but something quieter: science keeps explaining what God was once used to explain, so maybe God is only a name for what we have not figured out yet."
+    },
+    {
+      "id": "war",
+      "name": "An old story",
+      "still": "A taut rope is drawn across the table between the book and the telescope, as if the two were pulling against each other.",
+      "younger": "The idea that science and faith are at war is a story that was told in the 1800s. People who study the history of science have found that it is mostly wrong. The church has sometimes got things wrong too, and it should say so.",
+      "older": "In 1874 John William Draper, and in 1896 Andrew Dickson White, gave the modern world its picture of two armies. Historians of science, believers and unbelievers alike, have since taken that story apart. The church has also sometimes fought science and lost, and deserved to: in 1633 the Roman Inquisition found Galileo ‘vehemently suspect of heresy’ for holding that the earth moves around the sun."
+    },
+    {
+      "id": "lab",
+      "name": "Scientists who believed",
+      "still": "A page shows a tall laboratory doorway with its two doors standing open, and lines of carved writing on the stone above them.",
+      "younger": "Many great scientists have loved God. When a famous science laboratory opened in Cambridge, its doors carried words from the Psalms: “Great are the works of the LORD.”",
+      "older": "The record keeps breaking the war story. James Clerk Maxwell had a verse from the Psalms carved in Latin on the doors of the Cavendish Laboratory at Cambridge in the 1870s. In 1927 Georges Lemaître, a physicist and a priest, argued that the universe is expanding. None of that proves Christianity true, and plenty of great scientists have been unbelievers. It shows that the war is a story about science, not a finding of it.",
+      "verse": {
+        "ref": "Psalm 111:2",
+        "text": "Great are the works of the LORD; they are pondered by all who delight in them."
+      }
+    },
+    {
+      "id": "kettle",
+      "name": "Different questions",
+      "still": "On the table a kettle stands beside a cup, steam rising from its spout.",
+      "younger": "The Bible and science answer different questions. The Bible tells us who made the world and why. Science studies how the world works. Why is the kettle boiling? Because the water is hot, and because someone wanted tea. Both answers are true.",
+      "older": "The Honest Answer gives a homely picture. Water boils because the molecules are agitated. The kettle is on because someone wanted tea. Both answers are true, and they don't compete. The catechism says the same for children: the Bible tells us who made the world and why, and science studies how the world works."
+    },
+    {
+      "id": "author",
+      "name": "Not in the gaps",
+      "still": "A book lies open on the table with a pen resting across its page, lines of writing filling both pages.",
+      "younger": "God is not only the answer to things we do not understand yet. He made the whole world that scientists study, and he holds it together. The Bible says of Jesus, “in Him all things hold together.”",
+      "older": "The answer's reply is an old one. Thomas Aquinas taught in the thirteenth century that God works through the causes he made, not in competition with them. An author is the cause of every line in a novel without being one of its characters. That cuts both ways: if God is not found in the gaps, Christians cannot argue for him from the gaps either.",
+      "verse": {
+        "ref": "Colossians 1:17",
+        "text": "He is before all things, and in Him all things hold together."
+      }
+    },
+    {
+      "id": "differ",
+      "name": "Where Christians differ",
+      "still": "Three people stand round the table, each with an open book, and the same light from the window falls on all three.",
+      "younger": "Christians who love the Bible do not all agree about how long ago God made the world, or exactly how he did it. The catechism says faithful Christians hold different views on the timing and method of creation. What every Christian shares is that God made it all on purpose.",
+      "older": "Some of the sharpest arguments are among Christians. Some read the days of Genesis 1 as ordinary days and hold that the earth is thousands of years old. Some accept the long ages of the earth and the universe and hold that God acted directly at points in the history of life. Some hold that God made living things, human beings included, through evolution. Each is held by believers who take Scripture seriously, and each has hard questions to answer. This moving picture takes no side."
+    },
+    {
+      "id": "search",
+      "name": "Search it out",
+      "still": "The window stands open to a night full of stars, one of them gold; the telescope points out at them, and the open book lies beside it.",
+      "younger": "So you can love God and love science. The catechism says a child can love both, marveling at God as the Maker behind it all. Finding out how his world works is part of the wonder.",
+      "older": "Albert Einstein, who did not believe in a personal God, wrote that the world's being comprehensible is ‘a miracle’. The Honest Answer ends with Proverbs: science is that searching, and Christians have every reason to love it. Science hands us a magnificent description of the house. It cannot tell us whether anyone lives there.",
+      "verse": {
+        "ref": "Proverbs 25:2",
+        "text": "It is the glory of God to conceal a matter and the glory of kings to search it out."
+      }
+    }
+  ],
+  "think": {
+    "younger": "What is something in God's world you would love to find out more about? How could finding out be a way to wonder at him?",
+    "older": "Water boils because of molecules, and because someone wanted tea. Where else do two true answers to two different questions get mixed up?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Psalm 19", "href": "/study/bible/psalms/19" },
+    { "label": "Psalm 111", "href": "/study/bible/psalms/111" },
+    { "label": "Colossians 1", "href": "/study/bible/colossians/1" },
+    { "label": "Proverbs 25", "href": "/study/bible/proverbs/25" }
+  ],
+  "stops": ["creation"],
+  "cards": ["god"],
+  "differ": {
+    "text": "Christians who love Scripture differ on the age of the earth and on how God made living things: some read the days of Genesis 1 as ordinary days, some accept long ages and hold that God acted directly at points, and some hold that God made life through evolution. Every one of them confesses that God made everything that is, from nothing, by his word, that it was good, and that human beings bear his image. This moving picture does not choose between them. The readings are set out in",
+    "links": [
+      { "label": "the Honest Answer on how to read Genesis 1", "href": "/answers/how-should-a-christian-read-genesis-1" },
+      { "label": "the Honest Answer on faith and science", "href": "/answers/do-i-have-to-choose-between-faith-and-science" }
+    ]
+  },
+  "deeper": [
+    { "label": "Do I have to choose between faith and science? (an Honest Answer, with the case against at its strongest)", "href": "/answers/do-i-have-to-choose-between-faith-and-science" },
+    { "label": "How should a Christian read Genesis 1?", "href": "/answers/how-should-a-christian-read-genesis-1" },
+    { "label": "The family catechism: did God make dinosaurs, and how does science fit with the Bible?", "href": "/family/catechism#q71" },
+    { "label": "The stop: Creation", "href": "/study/explorer/creation" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "choose", "verse": false}, {"id": "war", "verse": false}, {"id": "lab", "verse": false}, {"id": "kettle", "verse": false}, {"id": "author", "verse": false}, {"id": "differ", "verse": false}, {"id": "search", "verse": true}]},
+  "end": { "label": "Read the Honest Answer: Do I have to choose between faith and science?", "href": "/answers/do-i-have-to-choose-between-faith-and-science" }
+}

@@ -212,6 +212,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The kingdom of God in seven moving pictures, from a tiny seed to a great tree: God's rule, the kingdom come near in Jesus, its signs, not of this world, and already and not yet.",
     },
+    "why-cant-i-see-god": {
+      title: "Why can't I see God?: Bible Explorer",
+      description:
+        "An honest question in seven moving pictures: why no one can see God with their eyes, and how he has made himself known in what he made, in his word, and most clearly in Jesus.",
+    },
+    "when-we-die": {
+      title: "What happens when we die?: Bible Explorer",
+      description:
+        "A gentle answer in seven moving pictures: death is real and sad, not the end for those who belong to Jesus, and Christians can grieve with hope.",
+    },
+    "god-silent": {
+      title: "Why does God seem silent sometimes?: Bible Explorer",
+      description:
+        "When prayer feels unanswered, in seven moving pictures: David's How long?, Elijah and the still, small voice, and Jesus' own cry from the cross.",
+    },
+    "science-and-the-bible": {
+      title: "Are science and the Bible enemies?: Bible Explorer",
+      description:
+        "Faith and science in seven moving pictures: the old war story, two kinds of question, a God who is not in the gaps, and where Christians disagree.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

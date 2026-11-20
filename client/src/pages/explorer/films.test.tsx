@@ -492,7 +492,7 @@ describe("Listen", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the thirty-one finished films", () => {
+  it("lists the four groups and the thirty-five finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -526,11 +526,15 @@ describe("the data", () => {
       "life-to-come",
       "who-made-god",
       "does-god-exist",
+      "why-cant-i-see-god",
       "why-bad-things-happen",
       "is-the-bible-true",
       "did-jesus-come-back-to-life",
+      "when-we-die",
       "so-many-churches",
       "love-when-i-do-wrong",
+      "god-silent",
+      "science-and-the-bible",
     ]);
   });
 
@@ -606,7 +610,7 @@ describe("the data", () => {
   });
 
   it("has no file for a film not made yet", () => {
-    expect(COMING.length).toBeGreaterThan(5);
+    expect(COMING.length).toBeGreaterThan(0);
     for (const f of COMING)
       expect(
         fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
@@ -1215,6 +1219,97 @@ describe("the four films of 2026-11-20 (sixth run): the covenants, the Lamb, exi
       "the-lamb",
       "exile-and-home",
       "kingdom-of-god",
+    ]) {
+      const film = filmFile(slug);
+      expect(film.frames.length, slug).toBe(7);
+      expect(film.share?.level, slug).toBe("younger");
+    }
+  });
+});
+
+describe("the four Good questions of 2026-11-20 (seventh run): seeing God, dying, silence, science", () => {
+  const words = (slug: string) => JSON.stringify(filmFile(slug));
+  const catechism = JSON.parse(
+    fs.readFileSync(path.join(PUBLIC, "family-catechism.json"), "utf8")
+  ) as { number: number; answer: string; commentary: string }[];
+  const q = (n: number) => catechism.find(c => c.number === n)!;
+
+  it("Why can't I see God? rests on the catechism's own answer and never draws God", () => {
+    const film = filmFile("why-cant-i-see-god");
+    expect(q(67).answer).toContain(
+      "we know real things we cannot see all the time, like love, or the wind, or our own thoughts"
+    );
+    expect(words("why-cant-i-see-god")).toContain(
+      "we know real things we cannot see all the time, like love, or the wind, or our own thoughts"
+    );
+    expect(q(67).commentary).toContain(
+      "We do not know God by squinting harder. We know him because he came close."
+    );
+    expect(film.frames.find(f => f.id === "light")!.older).toMatch(
+      /does not pretend that is fully answered/
+    );
+    expect(film.deeper?.map(d => d.href)).toContain("/family/catechism#q67");
+  });
+
+  it("What happens when we die? agrees with The life to come, keeps its care line word for word, and names both readings only at the older level", () => {
+    const film = filmFile("when-we-die");
+    const all = words("when-we-die");
+    expect(film.care).toBe(filmFile("life-to-come").care);
+    const between = film.frames.find(f => f.id === "with-him")!;
+    expect(between.older).toMatch(/Others hold that the dead sleep until the resurrection/);
+    expect(between.younger).not.toMatch(/sleep/);
+    expect(between.younger).toMatch(/do not all describe that time the same way/);
+    expect(all).not.toMatch(
+      /grave|coffin|funeral|buried|suicide|accident|cancer|illness|hell|purgatory|rapture|millenni/i
+    );
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+    expect(film.differ?.links.map(l => l.href)).toContain(
+      "/study/bible/doctrines/intermediate"
+    );
+  });
+
+  it("Why does God seem silent sometimes? quotes Jesus' cry exactly, never blames weak faith, and reuses an existing care line whole", () => {
+    const film = filmFile("god-silent");
+    const all = words("god-silent");
+    expect(all).toContain("My God, My God, why have You forsaken Me?");
+    expect(all).toContain("The lament was an act of faith, not its collapse.");
+    expect(all).not.toMatch(/lack (of )?faith|not enough faith|more faith|weak faith/i);
+    const returnStop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/return.json"), "utf8")
+    );
+    expect(film.care).toBe(returnStop.care);
+    expect(
+      fs.readFileSync(
+        path.join(PUBLIC, "wisdom/entry/feeling-far-from-god.json"),
+        "utf8"
+      )
+    ).toContain("The lament was an act of faith, not its collapse.");
+  });
+
+  it("Are science and the Bible enemies? takes no side on the age of the earth or evolution and links only live answer pages", () => {
+    const film = filmFile("science-and-the-bible");
+    const all = words("science-and-the-bible");
+    expect(film.frames.find(f => f.id === "differ")!.older).toMatch(
+      /This moving picture takes no side\./
+    );
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+    expect(all).not.toMatch(
+      /young earth is|old earth is|evolution is (true|false)|global flood|local flood|historical Adam/i
+    );
+    // Only the answers' own pages, never an essay that is not on the shelf.
+    for (const href of [
+      ...(film.deeper ?? []).map(d => d.href),
+      ...(film.differ?.links ?? []).map(d => d.href),
+    ])
+      expect(href).not.toMatch(/^\/writing\//);
+  });
+
+  it("each has seven frames and a share cut at the younger level", () => {
+    for (const slug of [
+      "why-cant-i-see-god",
+      "when-we-die",
+      "god-silent",
+      "science-and-the-bible",
     ]) {
       const film = filmFile(slug);
       expect(film.frames.length, slug).toBe(7);
