@@ -2347,3 +2347,102 @@ Checked and confirmed in a second source, and left as they were: the Rhineland m
 Care, as read this run. The abuse page: Find Help and the police are in its first sentence and its last paragraph; it tells no one to trust, return or forgive; it states no law and now says it is not legal advice; it names no act. The Crusades and Inquisition pages: each massacre named (Worms and Mainz; Jerusalem's Muslims and the Jews burned in their synagogue; Constantinople; the burnings of *conversos*; the expulsion of 1492); nothing is said of Islam or Judaism beyond the history; the one comparative fact (the Turkish conquests before 1095) corrects a false claim and says it lessens nothing. The slavery page: the enslaved are named as the first to resist; Douglass is named in the short answer; no claim is made about what the enslaved thought.
 
 Not reached, and therefore cut or not used: Kamen's book; any second source for the 10,667 figure, for the 2022 report's length or the list's size; Hillenbrand's book and the Riley-Smiths'; Franz's population estimate; John Paul II's statements on 1204; Innocent III's prohibition before Zara; the day of the expulsion edict (Lea gives 30 March, the Wikipedia copy 31 March).
+
+## The area "religions" (pieces and keys)
+
+Pieces: `docs/work/elite/apol-pilot/religions/` and `client/public/questions/religions/`: the area page index.md; are-all-religions-the-same.md, "ax"; is-it-arrogant-to-say-jesus-is-the-only-way.md, "ay"; those-who-never-heard.md, "az"; judaism-islam-and-jesus.md, "ba"; only-a-christian-because-of-where-you-were-born.md, "bb". The plan's slug (`religions`) and title ("Other religions, and those who never heard", as in `areas.json`). Of the plan's ten questions this run took items 7 with 1 (all religions the same; the only way), 1 again as the charge of arrogance, 5 (those who never heard), 2 with 3 (Islam, and Judaism and Jesus, in one page), and 6 (where you were born).
+
+Sources, and the words used for them below. Reference work read in full this run: "SEP Diversity" (the Stanford Encyclopedia of Philosophy, "Religious Diversity (Pluralism)", first published 2004, revised 2020, in `tylermarcuscross/philosophers-gpt`, `entries/Religious Diversity Pluralism.txt`), which quotes Hick (1980, 1983, 1984, 1997a), Smith (1976), Runzo (1988) and Plantinga (1997, 2000) and summarizes Rahner, Himma, Quinn, Heim and Mutahhari; "SEP Ultimates" ("God and Other Ultimates", 2021, same repository). Primary texts read word for word, all public domain, all GH: "Mill" (John Stuart Mill, *On Liberty*, GITenberg #34901; its introduction: "_Liberty_ was published in 1859"); "Schechter" (Solomon Schechter, *Studies in Judaism*, first series, GITenberg #48890, introduction dated "CAMBRIDGE, _February 1896_", essay "The Dogmas of Judaism"); "Abrahams" (Israel Abrahams, *Judaism*, GITenberg #6971, title page "Reader in Talmudic and Rabbinic Literature, University of Cambridge", foreword "the writer is himself a Jew"; no year is printed in the copy, so none is given and the book is not in a reading list); "Pickthall" (the Qur'an in Mohammed Marmaduke Pickthall's translation, the Tanzil text in `Q-Translate/translations`, `en.pickthall.txt`, whose footer names the translator; title and year, *The Meaning of the Glorious Koran* (1930), from three independent GitHub project notes: `SafhaJournal/pickthall-modernized` and `embabel-worlds/realm-quran` READMEs, `co-codin/Bible-RAG` docs/DECISIONS.md; public domain in the United States since 1 January 2026; checked against Rodwell's translation, GITenberg #2800 and #3434, for sense only); "CE Islam" (*Catholic Encyclopedia*, "Mohammed and Mohammedanism", 10424a, used only for the five pillars). "Note" is the Study Bible's note in the repository; "Answer row" a row already verified in this ledger for an Honest Answer, reused and marked, not rechecked against a primary this run. Scripture is quoted from the BSB and checked by script. No living author is quoted: Hick (who died in 2012) and Wilfred Cantwell Smith (who died in 2000) are quoted only as the SEP quotes them, and neither death date was confirmed in a readable source this run; Himma, Runzo, Plantinga, Heim, Quinn's heirs, Bauckham, Boyarin and Hurtado are paraphrased from named reference entries or notes. No consensus is given as a percentage or head-count.
+
+### ax. "Aren't all religions basically the same?" (are-all-religions-the-same)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Hick, *An Interpretation of Religion: Human Responses to the Transcendent* (Yale, 1989): the Real; the traditions as culturally shaped responses | SEP Diversity, section 7 and bibliography | Paraphrased |
+| Hick 1984 ("The Philosophy of World Religions," *Scottish Journal of Theology*): each great religion "constitutes a valid context of salvation/liberation; but none constitutes the one and only such context"; "the transformation from self-centeredness to Reality-centeredness"; "pluralistic theory becomes inevitable" | SEP Diversity, section 7 (Hick 1984, 229, 231, 232) | Quoted as the SEP quotes them |
+| Hick 1983: "the differences of belief between (and within) the traditions are legion" | SEP Diversity (Hick 1983, 487) | Quoted as the SEP quotes it |
+| Transformational parity disputed; the secular-commitment objection | SEP Diversity, section 7 | Paraphrased, attributed |
+| Heim: pluralists such as Hick are "inclusivists in disguise"; one path, self to Reality | SEP Diversity, section 7 (Heim 1995) | Paraphrased; Heim's title not given (the copy prints "Salvation:", which may be a slip) |
+| Hick's criterion: the virtues love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control (Hick 1997b, 164) | SEP Diversity; Galatians 5:22-23 (BSB) | The SEP's list matches the BSB word for word; the page says the encyclopedia's list does |
+| Hick's reply to D'Costa, "The Possibility of Religious Pluralism: A Reply to Gavin D'Costa," *Religious Studies* 33 (1997): pluralism a philosophical hypothesis | Title and year: SEP Diversity bibliography; the content: Answer row (fifth run, "is Jesus the only way") | Paraphrased "as the site's Honest Answer reports the exchange" |
+| Quinn, "Toward Thinner Theologies" (2000): a Kantian approach; thinning one's theology | SEP Diversity, section 4 | Paraphrased |
+| Newbigin, *The Gospel in a Pluralist Society* (1989): the elephant parable told from the view of one who sees the whole | Answer row (fifth run), given "as the site's Honest Answer ... puts it in paraphrase" | Paraphrased; "missionary bishop" from the same row |
+| Shankara's Brahman generally read as impersonal; Ramanuja, the first comprehensive critic, Brahman the Divine Person; emptiness in Buddhism; nirvana and moksha | SEP Ultimates (sections on models of Brahman; "everything is empty on Buddhism"; "nirvana ... moksha") | Paraphrased; no dates (the copy dates Shankara "788–820 BCE", an evident slip, not used) |
+| Hillel to the would-be proselyte "in the reign of Herod": "What thou hatest do unto no man; that is the whole Law, the rest is commentary" | Abrahams, chapter 3 | Quoted, as Abrahams tells it |
+| Qur'an 4:157 | Pickthall | Quoted, with the sentence on traditions of interpretation; "not all have read it alike": Answer row (Islam answer: Lawson 2009) |
+| Jewish readers have generally held that the Messianic age did not come | Note (Mark 16) | Paraphrased |
+| Plantinga, "Pluralism: A Defense of Religious Exclusivism," in Meeker and Quinn, eds., *The Philosophical Challenge of Religious Diversity* (Oxford, 2000), pp. 172-192 | SEP Diversity bibliography | Verified (the Honest Answer cites the 1995 first printing; this page the reprint the SEP cites) |
+| Hick, *God Has Many Names* (London: Macmillan, 1980) | SEP Diversity bibliography | Verified |
+| Acts 17:22, 17:27; 1 Corinthians 13:12, 15:17; Galatians 5:22-23 | Repo (BSB, script) | Quoted |
+
+Agreement: the Honest Answer "Is Jesus really the only way to God?" gives the same deductive argument from contradiction and the same answer to the parable; this page goes further on Hick's reasons, his criterion and the other traditions. The Study Bible's notes on Acts 17 and John 14 agree. Cut or not used: the parable's sources (a Buddhist sutta, Saxe's poem; no readable copy found); "British" for Hick; Wilfred Cantwell Smith's biography.
+
+### ay. "Isn't it arrogant to say that Jesus is the only way?" (is-it-arrogant-to-say-jesus-is-the-only-way)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Smith 1976, 14: "except at the cost of insensitivity or delinquency, it is morally not possible actually to go out into the world and say to devout, intelligent fellow human beings [that] we believe that we know God and we are right; you believe that you know God, and you are totally wrong" | SEP Diversity, section 6 | Quoted as the SEP quotes it, with its bracket; Smith's book title not in the copy's bibliography, so only the year is given and he is not in a reading list |
+| Hick 1989, 235: exclusivists often show "a sort of arbitrariness or arrogance"; Runzo 1988, 348: exclusivism "highly presumptive" and "morally repugnant" | SEP Diversity, section 6; bibliography: Runzo, "God, Commitment, and Other Faiths: Pluralism vs. Relativism," *Faith and Philosophy* 5 (1988): 343-364 | Paraphrased (Runzo living; his words not quoted) |
+| Exclusivists' reply: not arrogant to share what one is justified in believing, for the other's good | SEP Diversity, section 6 | Paraphrased, attributed "as the Stanford Encyclopedia sets out the reply" |
+| The John 14 note: Jesus "does not say he knows the way or teaches the way, but that he is the way"; the Acts 4 note: "Peter is not a powerful man imposing his religion on the weak; he is a prisoner on trial before the powerful" | Note (John 14; Acts 4) | Quoted |
+| John 14:5-6; Acts 4:12-13; Ephesians 2:8-9; Acts 17:26-27; Revelation 7:9; 1 Peter 3:15; Luke 9:55; 1 Corinthians 15:17; 1 Timothy 2:4 | Repo (BSB, script) | Quoted |
+| Baptism under threat; the church's record | The morality area's verified rows (Lea, the Rhineland) | Agrees; not repeated in detail |
+
+Agreement: the Honest Answer on the only way (Plantinga's parity, the setting of John 14:6 and Acts 4:12) and the notes on John 14 and Acts 4. Cut: Smith's description as a scholar of Islam and Asia; the claim that pluralism is a minority view (no count).
+
+### az. "What about the people who never heard of Jesus?" (those-who-never-heard)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Himma, "Finding a High Road: The Moral Case for Salvific Pluralism," *International Journal for Philosophy of Religion* (2002): God would not punish the non-culpable; non-Christian beliefs generally not culpable; no objective argument settles the matter; traditions elastic; beliefs largely beyond direct control (Himma 2002, 18) | SEP Diversity, section 7 and bibliography | Paraphrased (living author) |
+| Hick 1980, 44: the religion a person holds depends "in the great majority of cases" upon "where he was born"; Hick "the most influential proponent of pluralism" | SEP Diversity, section 7 | Quoted in part (the SEP's em-dashed figure "98 to 99 percent" is left out) |
+| Some exclusivists answer that God's ways are above ours; the more common belief today that those who die in early childhood enter God's presence (Basinger 1992) | SEP Diversity, section 7 | Paraphrased, attributed |
+| Rahner: God can apply the fruit of Christ's death and resurrection to those who never heard, as to Israel before Christ | SEP Diversity, section 7 | Paraphrased |
+| Pinnock, *A Wideness in God's Mercy* (1992); *Lumen Gentium* 16 (1964) | Note (John 14) | Verified (Note) |
+| Sanders, Fackre and Nash, *What About Those Who Have Never Heard?* (IVP, 1995) | Answer row (fifth run) | Listed only |
+| Middle-knowledge answer to the restrictivist's difficulty | Answer row (Craig 1989), given "as the site's Honest Answer on those who never heard reports" | Paraphrased, no name |
+| Origen and Gregory of Nyssa; the Fifth General Council's condemnation of universal reconciliation, 553; outside most confessions | The hell page's verified rows (seventeenth and eighteenth runs: SEP "Heaven and Hell in Christian Thought") | Agrees with the hell page word for word in substance |
+| Genesis 18:25, 15:6, 14:18; Hebrews 11:13, 9:27; Job 1:8; Acts 10:2, 11:14, 4:12; 1 Timothy 2:4-5; Romans 2:12, 2:15, 10:14; Luke 12:48; 1 Peter 4:6; Colossians 1:20; Matthew 25:46; John 5:22, 6:37; 2 Samuel 12:23 | Repo (BSB, script) | Quoted |
+
+Care: the short answer's first sentence points a grieving reader to the closing paragraph; the closing paragraph of "Where Christians differ" speaks to anyone thinking of someone who has died, names no one's fate, and links grief, heaven and eternity, and Find Help; no side is taken among restrictivism, inclusivism and the hope of a meeting after death; universal restoration is stated as the church has generally judged it, without contempt. Agreement: the Honest Answer on those who never heard (the same distinction between salvation by Christ and knowledge of his name; the same texts; the same three answers), the hell page, and the notes on John 14 and Acts 4. Cut: Dillard's hunter (an answer row only); any claim that each view has defenders in every tradition (unverified).
+
+### ba. "Isn't Christianity the faith that strayed from the God of Abraham?" (judaism-islam-and-jesus)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Schechter 1896, "The Dogmas of Judaism": "The unity of God is the keystone of dogmatic Judaism"; "'I am the first,' He tells them, which implies that he had no father, and the words, 'There is no God besides me,' mean that he has no son"; "the world is judged by grace, yet all according to the works wrought" | Schechter, lines 5775 to 5797 | Quoted (the second with "He tells them" elided); these are Schechter's summaries of rabbinic sayings, said so |
+| Abrahams: "the deep-seated conviction that the Pauline Christianity was a denial of the Jewish monotheism"; the Mishnah compiled about 200, "an oral tradition reduced to writing"; the Talmud in two recensions; Maimonides's thirteen principles, listed; "never confirmed by any body of Rabbis"; in the orthodox prayer books; the divided view of a personal Messiah; Greenstone's words "universal peace, an age of justice and of righteousness, an age in which all men will recognise that God is One and His name One" | Abrahams, chapters 1, 3, 7 | Quoted and paraphrased. Abrahams's pages on Zionism and a modern state are not used |
+| Qur'an 112:3, 4:171, 4:157, 33:40, 29:46, 3:45, 3:95 | Pickthall | Quoted; 112:1 and the end of 4:171 are not quoted (each has an exclamation) |
+| *Tawhid*, the oneness of God without partner | Answer row (Islam answer) | Paraphrased |
+| The five pillars: "the recital of the Creed and prayers, fasting, almsgiving, and the pilgrimage to Mecca" | CE Islam | Paraphrased |
+| Matthew 27:25's reading "used to justify contempt, expulsions, and mob violence against Jewish communities"; *Nostra Aetate* (1965) | Note (Matthew 27) | Quoted |
+| Worms and Mainz 1096; Luther, *On the Jews and Their Lies* (1543); Protestant churches' repudiation of the teaching of contempt | Note (John 16) | Verified (Note) |
+| "That reading is false, and this site rejects it"; the views of Israel's place (replacement, fulfilment, covenant theology, dispensational, two-covenant); "Nothing here is a claim about any modern state" | Note (Romans 11, plain) | Followed, no side taken |
+| Bauckham (*Jesus and the God of Israel*, 2008), Hurtado (*Lord Jesus Christ*, 2003), Boyarin, writing as a Jewish scholar | Note (John 1) | Paraphrased as the note gives them; Hurtado's subtitle from the Islam answer's source list (answer row) |
+| The Jewish objection that the Messiah was to defeat Israel's enemies, rebuild the temple and gather the exiles; Deuteronomy 21:23 | Note (Mark 8) | Paraphrased |
+| Nicene Creed: "begotten, not made, being of one substance with the Father" | Repo (`client/public/creeds/documents/nicene-creed.json`) | Quoted |
+| The crucifixion under Pilate attested by Christian and Roman sources | The jesus area's rows (Tacitus, *Annals* 15.44, fourteenth run) | Agrees |
+| Deuteronomy 6:4, 21:23; Mark 12:29, 8:31; Acts 3:13; Galatians 1:14; 1 Corinthians 8:6, 15:17; Romans 11:18, 11:29 | Repo (BSB, script) | Quoted |
+
+Care and fairness: each faith is described from its own scholars or scripture, in terms its adherents would sign; the Christian wrongs against Jews are named and rejected in the site's own words; Christian killing of Muslims in 1099 is named; no modern state or conflict is in view; no side is taken among the views of Israel's place or on whether Christians and Muslims worship the same God (the Islam answer's question, left to it). Cut: Abrahams's year; the Talmud quoted directly (not needed); "English Muslim" for Pickthall (not seen in a source).
+
+### bb. "Aren't you only a Christian because of where you were born?" (only-a-christian-because-of-where-you-were-born)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Mill, *On Liberty* (1859), chapter 2: "his party, his sect, his church, his class of society"; "it never troubles him that mere accident has decided which of these numerous worlds is the object of his reliance, and that the same causes which make him a Churchman in London, would have made him a Buddhist or a Confucian in Pekin"; "ages are no more infallible than individuals; every age having held many opinions which subsequent ages have deemed not only false but absurd" | Mill, lines 1075 to 1092 | Quoted |
+| Hick: "religious allegiance depends in the great majority of cases on the accident of birth"; "being born in our particular part of the world carries with it the privilege of knowing the full religious truth" (Hick 1997a, 287) | SEP Diversity, section 7 | Quoted as the SEP quotes them |
+| Plantinga's reply: the correlation need not be weighed in isolation from one's other beliefs (Plantinga 2000, 187; 1997, 198) | SEP Diversity, section 7 | Paraphrased, attributed |
+| Loftus, *The Outsider Test for Faith* (2013), and the Honest Answer's acceptance of the test | Answer row (first run) and the answer's own text ("What if Christianity is wrong?") | Paraphrased "as the site's Honest Answer reports it" |
+| Peterson, Hasker, Reichenbach and Basinger, *Reason and Religious Belief*, 5th ed. (Oxford, 2013) | SEP Diversity bibliography | Verified |
+| 1 Thessalonians 5:21; Acts 17:11, 17:26-27, 2:9-11; 1 Corinthians 1:23; Galatians 1:14; Genesis 12:1; Joshua 24:2; John 1:13; Ephesians 2:9 | Repo (BSB, script) | Quoted |
+
+Agreement: the Honest Answer "What if Christianity is wrong?" (the outsider's test accepted) and "Is Jesus really the only way to God?" (the birthplace reply). Cut: any statistic of belief by country; the claim that secular upbringing makes unbelief "far more likely" (no source; now a general statement); Plantinga's Madagascar sentence (an answer row only).
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| The objectors and sources named (Hick, Mill, Schechter, Abrahams, the Qur'an in Pickthall's translation) | Rows ax to bb | Verified |
+| Words: pluralism, exclusivism and restrictivism, inclusivism (SEP Diversity); universal restoration and 553 (the hell page's rows); *tawhid* (answer row); Shema (Deuteronomy 6:4, BSB; Mark 12:29; Abrahams: "the earliest passage put into the public liturgy"); Torah with the Mishnah and Talmud (Abrahams); supersessionism (Note, Romans 11 plain; Note, Hebrews 8); genetic fallacy | As named | Verified |
+| The care paragraph for a reader thinking of someone who has died | The hell page's and the evil area's wording; /wisdom/grief, /wisdom/heaven-and-eternity, /help | Agrees |

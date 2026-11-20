@@ -451,8 +451,44 @@
       "planned": 10,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "are-all-religions-the-same",
+          "question": "Aren't all religions basically the same, different paths up one mountain to the same God?",
+          "blurb": "Hick's pluralism at full strength, the parable of the elephant and the claim hidden in it, what the religions actually say about God, Jesus and salvation, and why pluralism is one more particular view.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
+          "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
+          "blurb": "John 14:6 and Acts 4:12 where they stand, why every view of the religions excludes others, the difference between a claim and the way it is held, and the church's sins in carrying it.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "those-who-never-heard",
+          "question": "What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?",
+          "blurb": "The moral argument, what Scripture says and doesn't say, the main Christian answers in their holders' terms, each with its hardest question and no side taken, and a word for anyone grieving.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "judaism-islam-and-jesus",
+          "question": "Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?",
+          "blurb": "Judaism and Islam described from their own sources, what Christianity shares with each and where it truly differs, the church's wrongs against Jews named and rejected, the views of Israel's place set out without choosing, and the earliest Christians' Shema.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "only-a-christian-because-of-where-you-were-born",
+          "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
+          "blurb": "Mill, Hick and the outsider's test, the genetic fallacy and its subtler cousin, a faith that began among converts, and why birthplace is a reason to examine a belief, not to dismiss it.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     }
   ],
   "claims": [
@@ -1395,11 +1431,82 @@
       "slug": "does-religion-poison-everything",
       "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
       "live": false
+    },
+    {
+      "claim": "The great religions are different culturally shaped responses to one ultimate Real, each a valid context of salvation and none the one and only",
+      "proponent": "John Hick",
+      "work": "An Interpretation of Religion",
+      "year": 1989,
+      "area": "religions",
+      "slug": "are-all-religions-the-same",
+      "question": "Aren't all religions basically the same, different paths up one mountain to the same God?",
+      "live": false
+    },
+    {
+      "claim": "Those who hold that their own religion alone is true often show arbitrariness or arrogance",
+      "proponent": "John Hick",
+      "work": "An Interpretation of Religion",
+      "year": 1989,
+      "area": "religions",
+      "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
+      "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
+      "live": false
+    },
+    {
+      "claim": "Religious exclusivism is presumptuous and morally objectionable",
+      "proponent": "Joseph Runzo",
+      "work": "God, Commitment, and Other Faiths: Pluralism vs. Relativism",
+      "year": 1988,
+      "area": "religions",
+      "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
+      "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
+      "live": false
+    },
+    {
+      "claim": "A just God would not deny salvation to devout people of other faiths, who are not to blame for their beliefs",
+      "proponent": "Kenneth Himma",
+      "work": "Finding a High Road: The Moral Case for Salvific Pluralism",
+      "year": 2002,
+      "area": "religions",
+      "slug": "those-who-never-heard",
+      "question": "What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?",
+      "live": false
+    },
+    {
+      "claim": "The unity of God is the keystone of Judaism, and God's word that there is no God beside him means that he has no son",
+      "proponent": "Solomon Schechter",
+      "work": "Studies in Judaism",
+      "year": 1896,
+      "area": "religions",
+      "slug": "judaism-islam-and-jesus",
+      "question": "Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?",
+      "live": false
+    },
+    {
+      "claim": "The same causes that make a man a Churchman in London would have made him a Buddhist or a Confucian in Peking",
+      "proponent": "John Stuart Mill",
+      "work": "On Liberty",
+      "year": 1859,
+      "area": "religions",
+      "slug": "only-a-christian-because-of-where-you-were-born",
+      "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
+      "live": false
+    },
+    {
+      "claim": "The religion a person holds depends in the great majority of cases on where he was born",
+      "proponent": "John Hick",
+      "work": "God Has Many Names",
+      "year": 1980,
+      "area": "religions",
+      "slug": "only-a-christian-because-of-where-you-were-born",
+      "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
     "if-god-is-good-why-suffering": "If God is good, why is there so much suffering?",
+    "what-if-christianity-is-wrong": "What if Christianity is wrong?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
     "is-it-okay-to-be-angry-at-god": "Is it okay to be angry at God?",
@@ -1411,6 +1518,7 @@
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "why-didnt-the-bible-just-ban-slavery": "Why didn't the Bible just ban slavery?",
     "what-did-the-new-atheists-get-right": "What did the New Atheists get right?",
+    "christianity-and-islam-differences": "What do Christianity and Islam actually dispute?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
     "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"
