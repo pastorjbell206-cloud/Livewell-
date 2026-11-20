@@ -9791,3 +9791,37 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Catholic and Orthodox (Scripture and handed-down teaching together) and Protestant (the apostles' traditions now in Scripture) readings of 2:15; no side | 13-17 | Standard descriptions | Stated generally, each in its own terms. No side |
 | Jesus named first in the prayer (2:16) | 13-17 | Chapter deep note `christ` | Repository |
 | Deuteronomy 7:6; Jeremiah 31:3; Deuteronomy 6:7; Jeremiah 6:16; Isaiah 40:1 | 13-17 | BSB | BSB text |
+
+## The plain notes on 2 Thessalonians 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Trechō, to run, used of runners in a race | 1-5 | lex/G (G5143) | Repository lexicon |
+| Opposition in Corinth (Acts 18:12-13) | 1-5 | BSB | BSB text |
+| Pistis and pistos wordplay (verses 2-3); stērizō as in 1 Thessalonians 3:2 | 1-5 | BSB; chapter word list | BSB text; repository |
+| Kateuthunō, to make straight, guide | 1-5 | lex/G (G2720) | Repository lexicon |
+| ‘Christ's perseverance’: given by Christ or shown by him | 1-5 | Chapter deep note `christ` | Repository. No side |
+| Psalm 147:15; 140:1; 121:7; Deuteronomy 32:4; Lamentations 3:23 | 1-5 | BSB | BSB text |
+| Earlier mentions (1 Thessalonians 4:11-12; 5:14); able people refusing; wordplay ergazomenous and periergazomenous | 6-13 | Chapter deep note `story`, `literary`, `hard` | Repository |
+| Causes: excitement about the end; patrons and clients; may combine | 6-13 | Chapter deep note `historical` | Repository |
+| Ataktōs, out of order, soldiers breaking ranks | 6-13 | Chapter deep note `words` (G0814) | Repository |
+| Paul's right to support (1 Corinthians 9); elite contempt for manual work | 6-13 | Chapter deep note `cultural` | Repository |
+| Not against the poor; help the weak; widows, orphans, sick; views beyond the church | 6-13 | Chapter deep note `hard` | Repository |
+| The Proverbs saying a generalization, not a verdict on every poor person | 6-13 | wisdom/deep/money.json `misread` (Proverbs 10:4) | Repository wording, paraphrased |
+| Charity and neighbour first; just laws and public provision; both called to act | 6-13 | wisdom/deep/justice-and-the-poor.json `differ` | Repository wording, paraphrased. No side |
+| Exodus 20:9; Proverbs 10:5; Deuteronomy 15:11; Leviticus 19:9-10; Ruth 2:2-3; Proverbs 19:17; 13:23; Isaiah 40:29 | 6-13 | BSB | BSB text |
+| Household churches and shared meals; shame; the offender still a brother | 14-18 | Chapter deep note `cultural`, `doctrines` | Repository |
+| ‘Lord of peace’ a title of God given to Jesus | 14-18 | Chapter deep note `christ` | Repository |
+| Scribe and autograph closing line | 14-18 | Chapter deep note `cultural` | Repository |
+| Church practices of discipline; misuse; crimes to the police (Romans 13:4); the word to the hurt | 14-18 | 1-corinthians/plain/5.json | Word for word, except its sentence on ‘a church protected a wrongdoer’ |
+| Leviticus 19:17; Proverbs 27:5-6; Numbers 6:26; Psalm 34:18 | 14-18 | BSB | BSB text |
+
+## 2 Thessalonians complete (2026-11-20)
+
+All three chapters in plain words. No web searches for this book. One sentence on the book
+page (the part on 2:1-12) was changed in the chapter 2 commit, to match the chapter: it no
+longer says that everyone who named the figure ‘has been wrong’, since that would take a
+side against readings that place him in Paul's own century; it now says that those who
+named someone of their own day and expected the end at once saw the end not come.
