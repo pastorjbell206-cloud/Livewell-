@@ -7623,3 +7623,25 @@ No web search.
 | Care line on 143:4; 143:12 pointed to the book page's cursing psalms | 143 | Site's care rule; book page | Repository |
 
 Cut: the Septuagint's Absalom note on 143 (not checked); David's life settings for 140 and 141.
+
+## The plain notes on Psalms 144 and 145 (2026-11-20)
+
+One web search (for 145).
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| Borrowings: Psalm 18:34 (and 18:2), 8:4, 39:5 | 144 | BSB; repository deep note (historical) | BSB text compared |
+| Put together later from older royal songs (many) or David's own | 144 | Repository deep note (historical) | Stated as views |
+| God coming down in storm as at Sinai; peace in a farming society | 144 | Repository deep note (cultural) | Site's own teaching |
+| Hebrews 2:6-9; James 4:14; Revelation 5:9; Ephesians 6:12; Luke 12:15 | 144 | BSB | BSB text |
+| Not a promise of wealth; "training for war" gives no one today a reason to fight in God's name | 144 | Repository deep note (hard); site's stance | Stated plainly |
+| The only heading "A Psalm of praise" (tehillah), the singular of Tehillim | 145 | Repository deep note (historical); book page ("The name") | Script over all 150 BSB headings: "A Psalm of praise" only at 145 |
+| Acrostic; no nun line in the traditional Hebrew (the repository's Hebrew runs mem at 13, samekh at 14) | 145 | Repository word data | Script |
+| A nun line in 11QPs(a), some copies of the Greek (Swete has it, Rahlfs not), the Syriac, one medieval Hebrew manuscript; lost early (some) or added (others) | 145 | Text-critical summaries | Search: puritanboard.com thread on 145 (MT, 11QPsa, LXX); workingpreacher.org commentary on 145; reformedmasora.substack.com; wikipedia Psalm 145. "Some copies of the Greek" because editions differ |
+| The BSB includes the line as the second half of 145:13 | 145 | BSB | BSB text |
+| 145:8 is Exodus 34:6 again; also 103:8, 111:4; Joel 2:13; Jonah 4:2 | 145 | BSB | BSB text |
+| Psalm 145 in Jewish morning prayer every day | 145 | Book page ("The temple") | Repository |
+| "Kingdom" four times in 11-13; "all" throughout | 145 | BSB | BSB text |
+| 1 Timothy 1:17; Revelation 11:15; Matthew 11:28; 6:26; Romans 10:13; James 4:8 | 145 | BSB | BSB text |
+
+Cut: the Septuagint's Goliath note on 144; the Qumran line's "God" for "the LORD" (detail not needed); the Talmud's reason for the missing nun.
