@@ -24,6 +24,7 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 4. **Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?** What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.
 5. **Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?** The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.
 6. **The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?** What the sciences measure and how, what the text and its ancient copies say, the readings of the days each in its holders' terms with its hardest difficulty, and what all of them confess.
+7. **Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?** The fossil and genetic evidence as standard reference works state it, what it rules out and what it doesn't, the Christian views of Adam from a recent first pair to a figure for every human, each with what it must explain in Romans 5 and 1 Corinthians 15, and why what the doctrine of sin requires is itself where Christians differ.
 
 ## Words these pages use
 
@@ -34,6 +35,7 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 - **Conflict thesis**: the view, made popular by John William Draper (1874) and Andrew Dickson White (1896), that science and religion have always been at war.
 - **Fine-tuning**: the finding that some of the constants and starting conditions of physics fall within narrow ranges that allow life.
 - **Multiverse**: the proposal that our universe is one of a vast number of universes or regions, perhaps with different constants.
+- **Original sin**: the church's teaching that all human beings share a condition of sin that began with the first sin; traditions differ on whether it includes inherited guilt (the Augustinian view) or inherited mortality and corruption (the Eastern Orthodox view).
 - **Radiometric dating**: measuring the age of a rock or meteorite from the decay of radioactive elements, which turn into other elements at rates measured in the laboratory.
 
 ## Where else to look
