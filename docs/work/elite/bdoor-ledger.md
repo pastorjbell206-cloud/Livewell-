@@ -11830,3 +11830,34 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Exodus 9:24; Joshua 10:11; Jeremiah 51:7; John 19:30 | 17-21 | BSB | BSB text |
 
 Cut before publishing: ‘in northern Israel’ for Megiddo (kept to ‘an ancient fortress’, so that no modern state is in view); Leviticus 11:10-12 quoted for the frogs (the verses speak of water creatures, so the note says only that frogs were unclean); ‘Blessed is the one who remains awake’ quoted only in part, as in chapter 14; ‘Megiddo stood on a low hill’ (the deep note says it stood in a plain).
+
+## The plain notes on Revelation 17 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 17 and 18 slow down the seventh bowl; Babylon named at 14:8 and 16:19, seen here; the beast of chapter 13; the woman as the city and its culture of wealth | 1-6 | revelation/17.json `story` | Repository |
+| The goddess Roma; temples in Asia; Pergamum, Smyrna and Ephesus competing; the goddess turned into a prostitute | 1-6 | revelation/17.json `cultural` | Repository |
+| Pornē as the prophets used it (Tyre, Isaiah 23:15-18; Nineveh, Nahum 3:4); idolatry and economic compromise, not first private conduct | 1-6 | revelation/17.json `cultural`, `words` (G4204) | Repository |
+| Purple and scarlet; the golden cup (Jeremiah 51:7); the name on the forehead against the seal (7:3; 14:1); evil made attractive | 1-6 | revelation/17.json `cultural`, `questions` | Repository |
+| Babylon's four readings: Rome, or for some Jerusalem; historicists naming a church power of their own day (general terms only); a final city or world system; a recurring pattern; combined readings; no side | 1-6 | revelation/17.json `hard`; revelation/14.json `historical`; revelation/intro.json `teaching` (ways) | Repository, no side |
+| The picture turned by Christians on other Christians: Reformers' identifications; commentaries written partly to answer the Protestant readings (Alcázar, named in the ledger only) | 1-6 | revelation/17.json `hard`; guides/reading-apocalyptic.json (four ways) | Repository |
+| Nations, peoples, leaders and institutions named as Babylon, every naming failed; 18:4's call to look at one's own compromise; nothing of our day named | 1-6 | revelation/17.json `hard` | Repository |
+| If Jerusalem, no word against the Jewish people (the paragraph from the Revelation 11 note, with the Acts 2:22-28 pointer) | 1-6 | revelation/plain/11.json (7-10 `hard`) | Word for word |
+| No woman the target of the picture | 1-6 | The task's rule; revelation/17.json `cultural` | Repository |
+| Jeremiah 51:7, 13; Isaiah 23:17; Nahum 3:4 | 1-6 | BSB | BSB text |
+| Vision and interpretation (Daniel 7); ‘a mind with wisdom’; musterion; ‘was, and is not, and yet will be’ as a parody of 1:4, 8 | 7-11 | revelation/17.json `literary`, `words` (G3466) | Repository |
+| Seven hills; Roman writers; Vespasian's coin (AD 69 to 79) with Roma on seven hills; mountains as kingdoms | 7-11 | revelation/17.json `historical`, `words` (G3735) | Repository |
+| Counting the kings from Julius Caesar or Augustus; Galba, Otho, Vitellius; Nero or Vespasian as the sixth; the eighth and the Nero rumour; seven as completeness; no side | 7-11 | revelation/17.json `historical` | Repository, no side |
+| Four readings of the kings; no king, head or horn named as anything of our day | 7-11 | revelation/intro.json `teaching` (ways) | Repository, no side |
+| Daniel 7:7, 24; 2:35, 44 | 7-11 | BSB | BSB text |
+| Ten kings from Daniel's fourth beast; Lord of lords (Deuteronomy 10:17), on the robe in 19:16; called, chosen and faithful; God and wealth (Matthew 6:24) | 12-14 | revelation/17.json `christ` | Repository |
+| The ten horns: kings or kingdoms from the Roman empire (the traditional reading of Daniel); futurists' ten kings at the end; horns as strength and royal power, a power with many kings; no side; nothing of our day | 12-14 | daniel/7.json; daniel/verses/7.json; revelation/intro.json `teaching` (ways) | Repository, no side |
+| Deuteronomy 10:17; Psalm 2:2 | 12-14 | BSB | BSB text |
+| The waters as the peoples (5:9); the beast turning on the city; 17:17, evil never in charge and destroying itself | 15-18 | revelation/17.json `doctrines` (sovereignty, judgment) | Repository |
+| Rome's sea-borne trade from Spain to India; Babylon as a code for Rome (1 Peter 5:13); 587 or 586 BC and AD 70 | 15-18 | revelation/17.json `historical` | Repository |
+| ‘Come, I will show you’ in 17:1 and 21:9; two women, two cities, wilderness and mountain | 15-18 | revelation/17.json `literary` | Repository |
+| Jeremiah 51:13; Proverbs 21:1 | 15-18 | BSB | BSB text |
+
+Cut before publishing: the historicists' particular identification of Babylon and the name of the church office the guide gives (kept in general terms, as in chapter 13); ‘the prophets described the fall of proud cities in the same language of stripping and burning’ (no repository source); a reading of the ten kings as client kings or provincial rulers (no repository source; replaced by the readings the Daniel 7 notes give).
