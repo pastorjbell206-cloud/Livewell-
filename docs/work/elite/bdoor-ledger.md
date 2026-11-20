@@ -7130,3 +7130,38 @@ No web search.
 | Hebrews 1:10-12 quotes 102:25-27 of the Son; James 1:17; 2 Corinthians 4:16 | BSB | BSB text |
 
 Care: illness not a punishment (Job); sleeplessness and loneliness; a doctor, a pastor or a friend; the Find Help page.
+
+## The plain notes on Psalm 103 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Bless" as praise; nephesh the whole living self | 1-5 | Book page (key words); repository deep note (cultural) | Site's own teaching |
+| Eagle a word for large birds of prey; commentators suggest renewal after moulting | 1-5 | Repository deep note (cultural) | Stated as a suggestion |
+| Israel warned not to forget (Deuteronomy 8:11) | 1-5 | BSB | BSB text |
+| 103:3 not a promise that every illness is healed now; readings: one recovery turned to praise, all healing (medicine included) as God's gift, the resurrection; illness not a sign God has stopped loving | 1-5 | Repository deep note (hard) | Stated as readings |
+| 103:7-8 and Exodus 34:6 after the golden calf | 6-14 | Repository deep note (historical); BSB | BSB text compared |
+| East and west: the far-apart picture (the walking illustration offered as a way of seeing, "Whether or not the psalmist thought of it that way") | 6-14 | Observation | Not attributed to anyone |
+| 103:13 a claim about God, not about every human father; Psalm 27:10 | 6-14 | BSB | BSB text |
+| Grass after the winter rains; children's children | 15-22 | Repository deep note (cultural) | Site's own teaching |
+| Isaiah 40:31; Matthew 8:16-17; Micah 7:19; Hebrews 8:12; Luke 15:20; Matthew 6:9; 1 Peter 1:24-25; Revelation 5:13 | all | BSB | BSB text |
+
+Care: 1-5 (illness; keep seeing a doctor; tell someone; the Find Help page). The father sentence names no person's life and says nothing of the site's author.
+
+## The plain notes on Psalm 104 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tent of the sky, waters above, foundations: a poet's pictures of the world as Israel saw it | 1-9 | Repository deep note (cultural) | Site's own teaching |
+| 104:6-9: creation (Genesis 1:2) or the flood (Genesis 9:11), or both | 1-9 | BSB; observation | Stated as readings |
+| No position on the age of the earth or evolution | 1-9 | Earlier note (Psalm 19's wording) | Site's own stance |
+| Springs and rain; wine, oil and bread the three great crops; cedars of Lebanon | 10-23 | Repository deep note (cultural) | Site's own teaching |
+| The Great Hymn to the Aten (Akhenaten): praise of the sun bringing day, sending people to work, caring for animals; similar order especially from 104:20; views: Israel's poets knew a form of it (Breasted, Assmann, Redford as reported), or a shared way of praising a creator and direct borrowing unlikely (Lichtheim, Mark S. Smith as reported) | 10-23 | Wikipedia "Great Hymn to the Aten"; University of Pretoria repository "The great Atonhymn and Psalm 104: a comparative approach"; Oxford Handbook of the Psalms chapter (abstract); repository deep note (historical) | Search. Stated as a comparison scholars discuss; no scholar named on the page; the fourteenth-century date not given |
+| Care for creation as stewards, with no political application | 10-23 | Genesis 2:15 (BSB) | Site's own stance |
+| ruach (H7307) in 104:3, 4, 29, 30: wind, breath, spirit | 24-35 | Repository word data | Script |
+| Leviathan made "to frolic"; elsewhere chaos | 24-35 | BSB; earlier row (Psalm 74) | BSB text |
+| "Hallelujah" first appears in the Psalms at 104:35 (BSB) | 24-35 | BSB | Script over all 150 psalms |
+| Job 38:11; John 1:3; Colossians 1:17; Matthew 6:26; Acts 14:17; Genesis 2:7; Acts 17:25; Romans 1:20; Genesis 1:31 | all | BSB | BSB text |
