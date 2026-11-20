@@ -287,9 +287,9 @@
             "region": true,
             "line": "The cities God condemned in Lot's day, ‘reducing them to ashes’ (2:6; Genesis 19). Where they stood is not known. Drawn at the south end of the Dead Sea, one of the places proposed, roughly.",
             "label": {
-              "dx": 8,
+              "dx": -8,
               "dy": 4,
-              "anchor": "start",
+              "anchor": "end",
               "text": "Sodom and Gomorrah"
             }
           }

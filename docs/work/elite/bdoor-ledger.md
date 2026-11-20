@@ -11070,3 +11070,10 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 Cut before publishing: an account of how believers ‘hasten’ the day (the letter does not say).
 
 ## 2 Peter complete (2026-11-20)
+
+## Map fixes after looking (2026-11-20)
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| 1 Peter: Galatia moved to 38.95 N, 32.4 E so its mark no longer covers the drawing's GALATIA label; still ‘placed roughly’ | Map | Screenshot of the served build at 1440 | Looked at |
+| 2 Peter: the Sodom and Gomorrah label set to the west of its point, since at 390 it ran off the right edge | Map | Screenshot of the served build at 390 | Looked at |
