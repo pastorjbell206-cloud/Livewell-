@@ -3379,6 +3379,24 @@
     "kindness",
     "loneliness"
    ]
+  },
+  "keeping-confidence": {
+   "phrases": [
+    "keep a secret",
+    "cant keep a secret",
+    "promised not to tell",
+    "someone confided in me",
+    "should i tell anyone",
+    "friend told me something private",
+    "is it gossip to share a prayer request",
+    "keep it between us"
+   ],
+   "not": [],
+   "related": [
+    "gossip-and-the-tongue",
+    "betrayal",
+    "deep-friendship"
+   ]
   }
  }
 }
