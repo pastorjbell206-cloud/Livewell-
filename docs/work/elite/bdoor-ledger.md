@@ -7556,3 +7556,24 @@ One web search (for 136).
 | "Mighty hand and outstretched arm" as Deuteronomy's phrase | 136 | Repository deep note (cultural) | Site's own teaching |
 | Lamentations 3:22-23; Romans 8:39; Luke 1:48; Matthew 6:26; Ezekiel 18:23 | 136 | BSB | BSB text |
 | Conquest and firstborn texts: pointer to the Psalm 106 note's readings; "No reading of these verses gives anyone today a right to harm another person or people" | 135, 136 | Psalm 106 plain note | Repository |
+
+## The plain notes on Psalm 137 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| After the fall of Jerusalem in 587 or 586 BC | 1-4 | Book page ("When") | Repository |
+| Exiles in southern Mesopotamia; Ezekiel by the Kebar (Ezekiel 1:1); written after the exile (many) or in Babylon | 1-4 | Repository deep note (historical); BSB | Stated as views |
+| 2 Kings 25:7, 9; Lamentations 2:11; Isaiah 13:16; Jeremiah 51:24; Obadiah 1:11; Jeremiah 29:7 | all | BSB | BSB text |
+| Harp as temple music; songs of Zion (Psalms 46, 48) | 1-4 | Repository deep note (cultural) | Site's own teaching |
+| Self-curse as a form of solemn oath; the harpist's right hand and tongue | 5-6 | Repository deep note (cultural) | Site's own teaching |
+| Jewish custom: Psalm 137 said before the blessing after meals on weekdays (Psalm 126 on Sabbaths and festivals), in memory of the temple; the weekday custom less common now | 5-6 | Jewish custom as described | Search: thetorah.com "Psalm 137:9: A Galus Tehilah: Time to Cancel a Minhag?"; outorah.org; sefaria.org.il sheet "Introduction to Birkat Hamazon Part 3"; wikipedia Psalm 137 |
+| "Jewish readers have wrestled with this verse too, and modern Jewish writers have debated it openly" | 7-9 | TheTorah.com symposium on 137:9 ("Violent Fantasies on the Rivers of Babylon") and its article asking whether the custom should end | Search (row above). No rabbi or writer named; no position attributed |
+| Edom from Esau; cheering the fall (Obadiah 1:11) | 7-9 | Repository deep note (historical); BSB | BSB text |
+| The four Christian readings, one sentence each; Bonhoeffer and Lewis as the book page names them | 7-9 | Book page ("Cursing psalms") | Repository |
+| "One thing is not open. No reading of these psalms has ever made it right to harm anyone, least of all a child." | 7-9 | Book page ("Cursing psalms"), word for word | Copied exactly |
+| Revelation 18:2; 6:10; 21:2; Romans 12:19; Luke 23:34; Ephesians 4:26; Hebrews 11:16; 13:14; Philippians 3:20 | all | BSB | BSB text |
+| No modern nation in view; nothing against the people of any land today | 7-9 | Site's stance | Stated plainly |
+
+Care line for rage (heard; hand it to God; a pastor, a friend, a counsellor; danger or fear of hurting someone: help today; Find Help). Lamentations 4:10 not quoted (care). Cut: Nebuchadnezzar's 597 deportation; the rabbinic reading of Edom as Rome.
