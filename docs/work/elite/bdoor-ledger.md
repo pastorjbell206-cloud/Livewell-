@@ -7473,3 +7473,22 @@ No web search. Each points back to Psalm 120 for the Songs of Ascents.
 | John 16:20; Matthew 5:4; Galatians 6:9 | 126 | BSB | BSB text |
 
 Cut: Sennacherib and 701 BC (124, 125, 126); Ezra 1 and Cyrus by name (the book page's date pointed to instead).
+
+## The plain notes on Psalms 127 and 128, a pair (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| The only Song of Ascents headed "Of Solomon" | 127 | BSB headings 120-134 | BSB text |
+| yedid (H3039) in 127:2; Jedidiah (2 Samuel 12:25); heading perhaps added by someone who saw the links (many scholars) | 127 | Repository word data; repository deep note (historical); BSB | Script; stated as "many scholars" |
+| House as household and dynasty (2 Samuel 7:11) | 127 | Repository deep note (cultural); BSB | BSB text |
+| The gate as the place of disputes (Ruth 4:1); "probably" a dispute, not a battle | 127 | Repository deep note (cultural) | Stated as "probably" |
+| Matthew 7:24; Mark 4:27; 1 Corinthians 3:6; Matthew 6:33; Matthew 19:14; Isaiah 56:5; 1 Corinthians 7:7; Mark 3:35 | 127 | BSB | BSB text |
+| Childlessness care lines word for word from the Luke 1 and Genesis 25 plain notes; "a gift is not a wage" (deep note hard); "A home without children, or a single person, is not less blessed in God's eyes" | 127 | Luke 1, Genesis 25 plain notes; repository deep note (hard) | Copied exactly |
+| Eating one's harvest not a given; vine and olive (Deuteronomy 8:8); olive shoots around an old tree ("may lie behind") | 128 | Repository deep note (cultural); BSB | Stated as "may" |
+| A priestly blessing at the end ("as a priest might speak it") | 128 | Repository deep note (historical) | Stated as a likeness |
+| Zechariah 8:4-5; John 15:5; Ephesians 6:4 | 128 | BSB | BSB text |
+| Not a promise of family or plenty; Job; the care lines pointed back to 127 | 128 | Repository deep note (hard) | Stated plainly |
+
+127:2 has an em-dash in the BSB; the two halves are quoted separately, neither containing it.
