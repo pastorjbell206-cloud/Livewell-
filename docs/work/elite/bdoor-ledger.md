@@ -6969,3 +6969,35 @@ No web search.
 ## Book Three complete (2026-11-20)
 
 Psalms 73 to 89 now have plain notes.
+
+## The plain notes on Psalm 90 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Opens Book Four; the only heading naming Moses | 1-6 | Book page ("Five books"); BSB headings | Script |
+| "Man of God" (Deuteronomy 33:1); views of the heading: Moses' own (fits the wilderness, Numbers 14:29), later and set under his name to answer Psalm 89, a middle view | 1-6 | Repository deep note (historical, hard); book page ("Who wrote the psalms") | Stated as views, no side |
+| A watch of the night; grass after rain and in the hot wind | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Seventy or eighty the full measure of a long life, not the average; not a rule; Moses at 120 (Deuteronomy 34:7) | 7-12 | Repository deep note (cultural, hard); BSB | BSB text. The BSB's em-dashes in 90:10 kept out of the quotations |
+| "Return" (shuv, H7725) in 90:3 and 90:13; Exodus 32:12 | 13-17 | Repository word data; repository deep note; BSB | Script; BSB text |
+| Genesis 3:19; Isaiah 40:8; 2 Peter 3:8; James 4:14; Luke 12:20; John 11:25; 1 Thessalonians 4:13; Lamentations 3:23; 1 Corinthians 15:58 | all | BSB | BSB text |
+
+Care line for the grieving in 7-12: no loss called deserved; grief not a lack of faith; a pastor, a friend, a doctor; the Find Help page.
+
+## The plain notes on Psalm 91 (2026-11-20)
+
+One web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No heading; four names for God in two verses; the voices change (1, 2, 3 on, 14-16) | 1-8 | BSB; the site's context page "Does Psalm 91 Promise Protection From Harm?" (`client/public/context/guides/psalm-91-in-context.json`) | BSB text; site's own teaching |
+| The fowler, plague, lions and cobras; neighbours' many gods and charms | 1-8 | Repository deep note (cultural); context page | Site's own teaching |
+| Wings: a mother bird (Deuteronomy 32:11) | 1-8 | Repository deep note; BSB | BSB text |
+| "Dwelling" (ma'on, H4583) in 90:1 and 91:9 | 1-8 | Repository word data; context page | Script |
+| The Rule of Saint Benedict has Psalm 91 (Vulgate 90) sung every day at Compline | 1-8 | Rule of Benedict, chapter 18 (archive.osb.org; ccel.org; pressbooks.palni.org); Wikipedia "Compline" | Search. Century and the Black Death (in the context page) not repeated |
+| The devil quotes 91:11-12 (Matthew 4:6; Luke 4:10-11); "in all your ways" left out in both; Jesus answers from Deuteronomy 6:16 (Matthew 4:7); Massah (Exodus 17:7) | 9-13 | BSB; context page; earlier ledger (Matthew 4, Luke 4 rows) | BSB text compared |
+| Not a promise that no believer is harmed; never a reason to refuse medical care or run a risk to test God | 1-8, 9-13 | Context page ("The Tempter's Reading", "Praying It Through the Night") | Agrees with the site's own teaching |
+| Acts 12:2 and Peter freed; Luke 21:18; Matthew 23:37; Psalm 9:10; Matthew 27:43; Luke 10:19 | all | BSB; context page | BSB text |
+
+The context page is named on the page by its title; no link markup is added to the data.
