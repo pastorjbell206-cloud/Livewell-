@@ -10,6 +10,7 @@
 import { Link } from "wouter";
 import { MapPin, Play } from "lucide-react";
 import {
+  ABRAHAMS_ROAD_PATH,
   TRAVELS_PATH,
   filmHref,
   filmsFor,
@@ -111,6 +112,24 @@ export function Watch({
               The places of the Bible, drawn on the map as the story goes.
             </p>
             <ul className="wl-films">
+              <li>
+                <Link href={ABRAHAMS_ROAD_PATH} className="wl-film">
+                  <span className="wl-film__thumb" aria-hidden="true">
+                    <FilmMark mark="abraham" className="ex-roundel" />
+                    <span className="wl-film__play">
+                      <MapPin size={13} strokeWidth={2} />
+                    </span>
+                  </span>
+                  <span>
+                    <span className="wl-film__title">Abraham&apos;s road</span>
+                    <span className="wl-film__line">
+                      {level === "older"
+                        ? "From Ur to Haran and into Canaan, down to Egypt and back, to Hebron, Beersheba and the land of Moriah, place by place."
+                        : "Follow Abraham from his home in Ur to the land God promised, one place at a time."}
+                    </span>
+                  </span>
+                </Link>
+              </li>
               <li>
                 <Link href={TRAVELS_PATH} className="wl-film">
                   <span className="wl-film__thumb" aria-hidden="true">

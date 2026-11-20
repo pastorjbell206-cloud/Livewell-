@@ -72,11 +72,19 @@ books). One page lists everything the site holds.
   https://www.livewellbyjamesbell.co/study/explorer/watch/why-bad-things-happen
   https://www.livewellbyjamesbell.co/study/explorer/watch/is-the-bible-true
   https://www.livewellbyjamesbell.co/study/explorer/watch/spirit-in-a-believer
+  https://www.livewellbyjamesbell.co/study/explorer/watch/image-of-god
+  https://www.livewellbyjamesbell.co/study/explorer/watch/what-sin-is
+  https://www.livewellbyjamesbell.co/study/explorer/watch/who-jesus-is
 - Paul's travels, in the Bible Explorer (a map of Acts that draws Paul's three
   trips and the voyage to Rome place by place, each with what happened there
   and its chapter, and the churches named in those years with the letters
   written to them):
   https://www.livewellbyjamesbell.co/study/explorer/pauls-travels
+- Abraham's road, in the Bible Explorer (a map of Genesis that draws
+  Abraham's road place by place, from Ur and Haran into Canaan, down to Egypt
+  and back, to Hebron, Beersheba and the land of Moriah, each with what
+  happened there and its chapter):
+  https://www.livewellbyjamesbell.co/study/explorer/abrahams-road
 - Read the Bible in a year: the 2027 plan (a daily reading plan: all 1,189 chapters in
   365 days, in the order the story happened, each day linked to its chapters
   and, where one belongs, to a context guide):

@@ -144,6 +144,7 @@ const RuleOfLife = lazy(() => import("./pages/tools/RuleOfLife"));
 const BibleOnTopic = lazy(() => import("./pages/tools/BibleOnTopic"));
 const WisdomFinder = lazy(() => import("./pages/tools/WisdomFinder"));
 const WisdomBooks = lazy(() => import("./pages/tools/WisdomBooks"));
+const PrayPsalms = lazy(() => import("./pages/tools/PrayPsalms"));
 const WorryJournal = lazy(() => import("./pages/tools/WorryJournal"));
 const PrayerPlanner = lazy(() => import("./pages/tools/PrayerPlanner"));
 const ConnectionPlanner = lazy(() => import("./pages/tools/ConnectionPlanner"));
@@ -170,6 +171,7 @@ const ExplorerMap = lazy(() => import("./pages/explorer/ExplorerMap"));
 const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
 const ExplorerTravels = lazy(() => import("./pages/explorer/ExplorerTravels"));
+const ExplorerAbraham = lazy(() => import("./pages/explorer/ExplorerAbraham"));
 const Answers = lazy(() => import("./pages/Answers"));
 const AnswerPage = lazy(() => import("./pages/AnswerPage"));
 // The apologetics library (lib/questions): pending until James reads it, so
@@ -606,6 +608,7 @@ function Router() {
         <Route path="/study/how-to-study" component={HowToStudy} />
         <Route path="/study/explorer/watch/:slug" component={ExplorerFilm} />
         <Route path="/study/explorer/pauls-travels" component={ExplorerTravels} />
+        <Route path="/study/explorer/abrahams-road" component={ExplorerAbraham} />
         <Route path="/study/explorer/:slug" component={ExplorerStop} />
         <Route path="/study/explorer" component={ExplorerMap} />
         <Route path="/study" component={Study} />
@@ -628,6 +631,7 @@ function Router() {
         <Route path="/tools/bible-on" component={BibleOnTopic} />
         <Route path="/tools/wisdom-finder" component={WisdomFinder} />
         <Route path="/tools/wisdom-books" component={WisdomBooks} />
+        <Route path="/tools/pray-the-psalms" component={PrayPsalms} />
         <Route path="/tools/worry-journal" component={WorryJournal} />
         <Route path="/tools/prayer-planner" component={PrayerPlanner} />
         <Route path="/tools/connection-planner" component={ConnectionPlanner} />

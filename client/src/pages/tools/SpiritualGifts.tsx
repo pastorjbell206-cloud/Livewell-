@@ -21,21 +21,24 @@
  * order, because 1 Corinthians 12:21-26 ranks no part of the body above
  * another. The miraculous gifts are left out on purpose; see ScopeNote.
  *
- * Progress saves to this browser only (lib/storage,
- * livewell-progress-spiritual-gifts), and SelfCheckHistory keeps past results.
+ * Progress saves to this browser only (the tool shell's useToolProgress,
+ * through lib/storage, under livewell-progress-spiritual-gifts, the key and
+ * shape this check has always used), and SelfCheckHistory keeps past results.
+ * On the tool shell (2026-11-20): ToolHead, CheckPart one part at a time,
+ * ResultReading, ScoreChart, ResultSection, ResultActions. Every statement,
+ * answer label, score, band, reading, step, verse and link is unchanged.
  */
-import { useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import { ArrowLeft, ArrowRight, ChevronRight, Printer } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
-import { ToolActions } from "@/components/ToolActions";
 import { SelfCheckHistory } from "@/components/SelfCheckHistory";
 import { CrisisBlock } from "@/components/CrisisBlock";
-import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { toolById } from "@/lib/toolsList";
 import { scrollBehavior } from "@/lib/motion";
+import { CheckPart, focusResultTop, ResultActions, ResultReading, ResultSection, SAVE_FAILED, ScoreChart, ToolHead, useToolProgress } from "@/components/tool-shell";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -752,14 +755,6 @@ function withItalics(text: string) {
     .map((part, i) => (i % 2 === 1 ? <em key={i}>{part}</em> : part));
 }
 
-const eyebrow = {
-  fontSize: "11px",
-  fontWeight: 700,
-  letterSpacing: "0.18em",
-  color: "var(--mustard-text)",
-  fontFamily: "var(--U)",
-  margin: "0 0 12px",
-} as const;
 const card = {
   background: "var(--card)",
   border: "1px solid var(--border)",
@@ -774,27 +769,6 @@ const body = {
   color: "var(--ink)",
   maxWidth: "68ch",
   margin: "0 0 16px",
-} as const;
-const quiet = {
-  display: "inline-flex",
-  alignItems: "center",
-  gap: "8px",
-  minHeight: "44px",
-  padding: "10px 20px",
-  borderRadius: "var(--radius-sm)",
-  cursor: "pointer",
-  background: "none",
-  color: "var(--ink)",
-  border: "1px solid var(--border)",
-  fontFamily: "var(--U)",
-  fontSize: "14px",
-  fontWeight: 600,
-} as const;
-const saveFailedLine = {
-  fontSize: "13px",
-  fontFamily: "var(--U)",
-  color: "var(--ink-muted)",
-  margin: "0 0 24px",
 } as const;
 
 /** A passage set apart, with the reference linked to its context and the translation named. */
@@ -896,124 +870,86 @@ interface AreaResultData {
 function AreaResult({ r }: { r: AreaResultData }) {
   const headingId = `area-${r.area.id}`;
   return (
-    <section aria-labelledby={headingId} style={card}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "12px", marginBottom: "8px" }}>
-        <h3 id={headingId} style={{ fontFamily: "var(--F)", fontSize: "24px", fontWeight: 500, color: "var(--ink)", letterSpacing: "-0.01em", margin: 0 }}>
+    <section aria-labelledby={headingId} className="ts-area">
+      <div className="ts-area__head">
+        <h3 id={headingId} className="ts-area__name">
           {r.area.name}
         </h3>
-        <span
-          style={{
-            fontFamily: "var(--U)",
-            fontSize: "12px",
-            fontWeight: 600,
-            letterSpacing: "0.08em",
-            color: r.level === "clear" ? "var(--mustard-text)" : "var(--ink-muted)",
-            background: "var(--bone-warm)",
-            padding: "4px 12px",
-            borderRadius: "var(--radius-sm)",
-          }}
-        >
+        <span className="ts-area__level">
           {LEVEL_LABELS[r.level]} · {r.score}/{AREA_MAX}
         </span>
       </div>
-      <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", maxWidth: "68ch", margin: "0 0 4px" }}>
-        {r.area.description}
-      </p>
-      <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 20px" }}>
-        Where Scripture names it: {r.area.named}
-      </p>
+      <p className="ts-area__desc">{r.area.description}</p>
+      <p className="ts-area__named">Where Scripture names it: {r.area.named}</p>
 
       {/* What this level means in this area */}
-      <p style={body}>{withItalics(r.guide.interpretation)}</p>
+      <p>{withItalics(r.guide.interpretation)}</p>
 
       <Passage refText={r.area.scripture.ref} text={r.area.scripture.text} />
 
       {/* Practical steps for this area at this level */}
-      <h4 style={{ ...eyebrow, color: "var(--ink-muted)", letterSpacing: "0.12em", fontSize: "12px" }}>PRACTICAL STEPS</h4>
-      <ol style={{ margin: "0 0 20px", paddingLeft: "1.3em", maxWidth: "68ch" }}>
+      <h4 className="ts-area__label">Practical steps</h4>
+      <ol className="ts-steps">
         {r.guide.steps.map((step) => (
-          <li key={step} style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "10px" }}>
-            {withItalics(step)}
-          </li>
+          <li key={step}>{withItalics(step)}</li>
         ))}
       </ol>
 
       {/* Live pages for this area at this level */}
-      <h4 style={{ ...eyebrow, color: "var(--ink-muted)", letterSpacing: "0.12em", fontSize: "12px" }}>WHERE TO GO NEXT</h4>
-      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+      <h4 className="ts-area__label">Where to go next</h4>
+      <ul className="ts-next">
         {r.guide.next.map((n) => (
-          <Link
-            key={n.href}
-            href={n.href}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              gap: "12px",
-              padding: "14px 20px",
-              background: "var(--bone)",
-              borderRadius: "var(--radius-sm)",
-              textDecoration: "none",
-            }}
-          >
-            <span>
-              <span style={{ display: "block", fontSize: "10px", fontWeight: 700, letterSpacing: "0.15em", color: "var(--mustard-text)", fontFamily: "var(--U)", marginBottom: "4px" }}>
-                {n.kind.toUpperCase()}
-              </span>
-              <span style={{ fontSize: "16px", fontFamily: "var(--F)", fontStyle: "italic", color: "var(--ink)" }}>{n.title}</span>
-            </span>
-            <ChevronRight size={16} aria-hidden="true" style={{ opacity: 0.4, flexShrink: 0 }} />
-          </Link>
+          <li key={n.href}>
+            <Link href={n.href} className="ts-next__link">
+              <span className="ts-next__kind">{n.kind}</span>
+              <span className="ts-next__label">{n.title}</span>
+              <ArrowRight className="ts-next__arrow" size={18} strokeWidth={1.75} aria-hidden="true" />
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
 
 /* ── The page ──────────────────────────────────────────────────── */
 
+const SCALE_OPTIONS = SCALE.map((s) => ({ value: String(s.value), label: s.label }));
+
 export default function SpiritualGifts() {
-  const [saved] = useState(() => readStoredJSON<StoredProgress | null>(STORAGE_KEY, isStoredProgress, null));
-  const [step, setStep] = useState(() => (saved ? Math.min(Math.max(Math.trunc(saved.step), 0), PARTS - 1) : 0));
-  const [answers, setAnswers] = useState<Answers>(saved?.answers ?? {});
-  const [showResults, setShowResults] = useState(false);
+  const tool = toolById("spiritual-gifts");
+  // The saved place (livewell-progress-spiritual-gifts, the key and shape this
+  // check has always used), read and written through the tool shell.
+  const progress = useToolProgress<StoredProgress>("spiritual-gifts", isStoredProgress, { answers: {}, step: 0, savedAt: "" });
+  const answers = progress.value.answers;
+  const step = Math.min(Math.max(Math.trunc(progress.value.step), 0), PARTS - 1);
   const [resumed, setResumed] = useState(
-    () => saved !== null && (Object.keys(saved.answers).length > 0 || saved.step > 0),
+    () => progress.resumed && (Object.keys(progress.value.answers).length > 0 || progress.value.step > 0),
   );
-  const [persistFailed, setPersistFailed] = useState(false);
-  const resultsRef = useRef<HTMLElement>(null);
+  const [showResults, setShowResults] = useState(false);
+  // Back from the result (Change my answers): the first part takes focus.
+  const [fromResult, setFromResult] = useState(false);
 
   const persist = (nextAnswers: Answers, nextStep: number) => {
-    setPersistFailed(
-      !writeStoredJSON(STORAGE_KEY, {
-        answers: nextAnswers,
-        step: nextStep,
-        savedAt: new Date().toISOString(),
-      }),
-    );
+    progress.set({ answers: nextAnswers, step: nextStep, savedAt: new Date().toISOString() });
   };
 
   const partItems = ITEMS.slice(step * PER_PART, (step + 1) * PER_PART);
   const answeredCount = ITEMS.filter((i) => answers[i.id] !== undefined).length;
-  const partDone = partItems.every((i) => answers[i.id] !== undefined);
   const partAnswered = partItems.filter((i) => answers[i.id] !== undefined).length;
   const isLast = step === PARTS - 1;
 
   const goTo = (nextStep: number) => {
-    setStep(nextStep);
+    setResumed(false);
     persist(answers, nextStep);
-    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const handleRate = (id: string, value: number) => {
-    const next = { ...answers, [id]: value };
-    setAnswers(next);
     setResumed(false);
-    persist(next, step);
+    persist({ ...answers, [id]: value }, step);
   };
 
   const handleNext = () => {
-    if (!partDone) return;
     if (!isLast) {
       goTo(step + 1);
       return;
@@ -1025,16 +961,15 @@ export default function SpiritualGifts() {
     }
     setShowResults(true);
     persist(answers, step);
-    setTimeout(() => {
-      resultsRef.current?.focus({ preventScroll: true });
-      resultsRef.current?.scrollIntoView({ behavior: scrollBehavior() });
-    }, 100);
   };
 
+  useEffect(() => {
+    if (!showResults) return;
+    focusResultTop("sg-result");
+  }, [showResults]);
+
   const handleRestart = () => {
-    removeStoredJSON(STORAGE_KEY);
-    setAnswers({});
-    setStep(0);
+    progress.clear();
     setShowResults(false);
     setResumed(false);
     window.scrollTo({ top: 0, behavior: scrollBehavior() });
@@ -1042,10 +977,9 @@ export default function SpiritualGifts() {
 
   const handleChangeAnswers = () => {
     setShowResults(false);
-    setStep(0);
+    setFromResult(true);
     setResumed(false);
     persist(answers, 0);
-    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
 
   const results: AreaResultData[] = AREAS.map((area) => {
@@ -1061,6 +995,9 @@ export default function SpiritualGifts() {
   const mixed = results.filter((r) => mixedIds.includes(r.area.id)).map((r) => r.area.name);
   const totalScore = results.reduce((s, r) => s + r.score, 0);
   const bandQuotesScripture = band.paragraphs.some((p) => p.includes("“"));
+  // The chart marks one area to begin with: the first of the strongest, since
+  // a gift is seen first where it has already been used.
+  const best = results.reduce((hi, r) => (r.score > hi.score ? r : hi), results[0]);
 
   return (
     <Layout>
@@ -1081,25 +1018,26 @@ export default function SpiritualGifts() {
         }}
       />
 
-      <InnerHead path="/tools/spiritual-gifts" title="Spiritual Gifts Self-Check" line="Thirty-two statements about what you've actually done in eight areas the New Testament names among the Spirit's gifts, from teaching and mercy to hospitality and sharing the faith. It takes about ten minutes. Answer for what has really happened, not for what you hope is true." plate="compass">
-        <p className="pg-head__lede">This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device.</p>
-      </InnerHead>
+      <ToolHead
+        path="/tools/spiritual-gifts"
+        title={tool.name}
+        line="Thirty-two statements about what you've actually done in eight areas the New Testament names among the Spirit's gifts, from teaching and mercy to hospitality and sharing the faith. It takes about ten minutes. Answer for what has really happened, not for what you hope is true."
+        time={`About ${tool.time}`}
+        keeps="Your answers as you go, so a reload loses nothing, and the scores of each finished check, so the next one can show what has moved. All of it stays in this browser and is never sent anywhere."
+        notDiagnosis="This is a self-check for reflection, not a test or a diagnosis, and your answers stay on this device."
+        plate="compass"
+      />
 
       {!showResults ? (
-        <section style={{ padding: "48px 32px 80px", background: "var(--bone)" }}>
-          <div className="wrap" style={{ maxWidth: "760px" }}>
+        <section className="ts-band" aria-label="The thirty-two statements">
+          <div className="ts-col">
             {resumed && (
-              <div className="no-print" style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap", marginBottom: "24px" }}>
-                <span style={{ fontSize: "13px", fontFamily: "var(--U)", color: "var(--ink-muted)" }}>Picked up where you left off.</span>
-                <button type="button" onClick={handleRestart} style={{ ...quiet, minHeight: "36px", padding: "6px 14px", fontSize: "13px", color: "var(--ink-muted)" }}>
+              <div className="ts-resume no-print" role="status">
+                <p>Picked up where you left off.</p>
+                <button type="button" className="btn btn--quiet ts-actions__btn" onClick={handleRestart}>
                   Start fresh
                 </button>
               </div>
-            )}
-            {persistFailed && (
-              <p role="status" style={saveFailedLine}>
-                Couldn't save to this browser — your work here will not survive a reload.
-              </p>
             )}
 
             {step === 0 && (
@@ -1132,219 +1070,58 @@ export default function SpiritualGifts() {
               </>
             )}
 
-            {/* Progress */}
-            <div className="no-print" style={{ margin: "8px 0 24px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "8px", marginBottom: "8px" }}>
-                <span style={{ ...eyebrow, margin: 0 }}>
-                  PART {step + 1} OF {PARTS}
-                </span>
-                <span style={{ fontSize: "13px", fontFamily: "var(--U)", color: "var(--ink-muted)" }}>
-                  {answeredCount} of {ITEMS.length} answered
-                </span>
-              </div>
-              <div style={{ height: "4px", background: "var(--bone-muted)", borderRadius: "2px", overflow: "hidden" }}>
-                <div style={{ height: "100%", width: `${(answeredCount / ITEMS.length) * 100}%`, background: "var(--mustard)", transition: "width 0.4s var(--ease)" }} />
-              </div>
-            </div>
-
-            {/* Statements */}
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                handleNext();
-              }}
-            >
-              {partItems.map((item) => {
-                const n = ITEMS.indexOf(item) + 1;
-                return (
-                  <fieldset key={item.id} style={{ ...card, minWidth: 0, margin: "0 0 16px", padding: "24px clamp(18px, 4vw, 32px)" }}>
-                    <legend style={{ float: "left", width: "100%", padding: 0, margin: "0 0 14px", fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.6, color: "var(--ink)" }}>
-                      <span style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--mustard-text)" }}>{n}.</span>{" "}
-                      {item.text}
-                    </legend>
-                    <div style={{ clear: "both", display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                      {SCALE.map((s) => {
-                        const on = answers[item.id] === s.value;
-                        return (
-                          <label
-                            key={s.value}
-                            style={{
-                              display: "inline-flex",
-                              alignItems: "center",
-                              gap: "8px",
-                              minHeight: "44px",
-                              padding: "8px 14px",
-                              border: `1px solid ${on ? "var(--mustard)" : "var(--border)"}`,
-                              borderRadius: "var(--radius-pill)",
-                              background: on ? "var(--mustard)" : "var(--bone)",
-                              color: "var(--ink)",
-                              fontFamily: "var(--U)",
-                              fontSize: "14px",
-                              fontWeight: on ? 600 : 500,
-                              cursor: "pointer",
-                            }}
-                          >
-                            <input
-                              type="radio"
-                              name={item.id}
-                              value={s.value}
-                              checked={on}
-                              onChange={() => handleRate(item.id, s.value)}
-                              style={{ accentColor: "var(--ink)" }}
-                            />
-                            {s.label}
-                          </label>
-                        );
-                      })}
-                    </div>
-                  </fieldset>
-                );
-              })}
-
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "12px", flexWrap: "wrap", marginTop: "24px" }}>
-                <button
-                  type="button"
-                  onClick={() => goTo(step - 1)}
-                  disabled={step === 0}
-                  style={{ ...quiet, border: "none", paddingLeft: 0, color: step === 0 ? "var(--bone-muted)" : "var(--ink-muted)", cursor: step === 0 ? "default" : "pointer" }}
-                >
-                  <ArrowLeft size={16} aria-hidden="true" />
-                  Previous part
-                </button>
-                <button
-                  type="submit"
-                  disabled={!partDone}
-                  style={{
-                    ...quiet,
-                    border: "none",
-                    padding: "12px 28px",
-                    background: partDone ? "var(--mustard)" : "var(--bone-muted)",
-                    color: partDone ? "var(--ink)" : "var(--ink-muted)",
-                    cursor: partDone ? "pointer" : "not-allowed",
-                  }}
-                >
-                  {!partDone
-                    ? `Answer all eight to go on (${partAnswered} of ${PER_PART})`
-                    : isLast
-                      ? "See my results"
-                      : "Next part"}
-                  {partDone && <ArrowRight size={16} aria-hidden="true" />}
-                </button>
-              </div>
-            </form>
+            <CheckPart
+              step={step + 1}
+              total={PARTS}
+              answered={answeredCount}
+              questions={ITEMS.length}
+              title={`Part ${step + 1}: eight statements, one from each area`}
+              statements={partItems.map((item) => ({ id: item.id, text: `${ITEMS.indexOf(item) + 1}. ${item.text}` }))}
+              options={SCALE_OPTIONS}
+              numbered={false}
+              value={(id) => (answers[id] !== undefined ? String(answers[id]) : null)}
+              onAnswer={(id, v) => handleRate(id, Number(v))}
+              onBack={step > 0 ? () => goTo(step - 1) : undefined}
+              backLabel="Previous part"
+              onNext={handleNext}
+              nextLabel={isLast ? "See my results" : "Next part"}
+              waitingLabel={`Answer all eight to go on (${partAnswered} of ${PER_PART})`}
+              saveFailed={progress.saveFailed}
+              focusOnMount={fromResult}
+            />
           </div>
         </section>
       ) : (
-        <section
-          ref={resultsRef}
-          tabIndex={-1}
-          role="region"
-          aria-label="Your spiritual gifts results"
-          style={{ padding: "48px 32px 40px", background: "var(--bone)", outline: "none" }}
-        >
-          <div className="wrap" style={{ maxWidth: "800px" }}>
-            <ToolActions toolName="Spiritual Gifts Self-Check" onStartOver={handleRestart} />
-            <SelfCheckHistory
-              id="spiritual-gifts"
-              total={totalScore / (ITEMS.length * 5)}
-              areas={Object.fromEntries(results.map((r) => [r.area.name, r.score / AREA_MAX]))}
-              answersKey={JSON.stringify(answers)}
-            />
-            {persistFailed && (
-              <p role="status" style={saveFailedLine}>
-                Couldn't save to this browser — your work here will not survive a reload.
-              </p>
-            )}
-
-            <div className="no-print" style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "24px" }}>
-              <button type="button" onClick={handleChangeAnswers} style={quiet}>
-                <ArrowLeft size={16} aria-hidden="true" />
-                Change my answers
-              </button>
-              <button type="button" onClick={handleRestart} style={quiet}>
-                Take the self-check again
-              </button>
-            </div>
+        <section className="ts-band" role="region" aria-label="Your spiritual gifts results">
+          <div className="ts-col">
+            <ResultReading id="sg-result" title={band.label}>
+              {shown.list.length > 0 && (
+                <p className="ts-r__score">
+                  {shown.lead} {shown.list.map((r) => r.area.name).join(", ")}
+                </p>
+              )}
+              {band.paragraphs.map((para, i) => (
+                <p key={i}>{withItalics(para)}</p>
+              ))}
+              {bandQuotesScripture && <ScriptureNote rendering="bsb" />}
+            </ResultReading>
+            {progress.saveFailed && <p className="ts-save-failed">{SAVE_FAILED}</p>}
 
             {mixed.length > 0 && (
-              <div role="note" aria-label="Answers worth a second look" style={{ ...card, borderLeft: "3px solid var(--mustard)" }}>
-                <p style={{ ...body, marginBottom: "12px" }}>
+              <div role="note" aria-label="Answers worth a second look" className="ts-help">
+                <p>
                   In {mixed.length === 1 ? "one area" : `${mixed.length} areas`}, you called a statement true and also
                   called its opposite true: {mixed.join("; ")}. That often happens when answering quickly, and those
                   areas may read higher than they should. It may be worth a second look.
                 </p>
-                <button type="button" onClick={handleChangeAnswers} className="no-print" style={quiet}>
+                <button type="button" onClick={handleChangeAnswers} className="btn btn--quiet ts-actions__btn no-print">
                   Look at my answers again
                 </button>
               </div>
             )}
 
-            {/* Overall reading */}
-            <div style={{ ...card, borderTop: "4px solid var(--mustard)" }}>
-              <p style={eyebrow}>YOUR RESULTS</p>
-              <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(26px, 3.6vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.15, color: "var(--ink)", margin: "0 0 16px" }}>
-                {band.label}
-              </h2>
-              {shown.list.length > 0 && (
-                <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px", margin: "0 0 20px" }}>
-                  <span style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}>{shown.lead}</span>
-                  {shown.list.map((r) => (
-                    <span key={r.area.id} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink)", background: "var(--bone-warm)", padding: "4px 10px", borderRadius: "var(--radius-pill)" }}>
-                      {r.area.name}
-                    </span>
-                  ))}
-                </div>
-              )}
-              {band.paragraphs.map((para, i) => (
-                <p key={i} style={{ ...body, marginBottom: i === band.paragraphs.length - 1 ? 0 : "16px" }}>
-                  {withItalics(para)}
-                </p>
-              ))}
-              {bandQuotesScripture && (
-                <div style={{ marginTop: "20px" }}>
-                  <ScriptureNote rendering="bsb" />
-                </div>
-              )}
-            </div>
-
-            {/* The next step this band leads with */}
-            <div style={{ ...card, borderTop: "4px solid var(--mustard)" }}>
-              <p style={eyebrow}>YOUR NEXT STEP</p>
-              <p style={{ ...body, margin: "0 0 20px" }}>{band.next.lead}</p>
-              <Link
-                href={band.next.href}
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  minHeight: "44px",
-                  padding: "12px 28px",
-                  background: "var(--mustard)",
-                  color: "var(--ink)",
-                  borderRadius: "var(--radius-sm)",
-                  fontSize: "14px",
-                  fontFamily: "var(--U)",
-                  fontWeight: 600,
-                  textDecoration: "none",
-                }}
-              >
-                {band.next.cta}
-                <ChevronRight size={16} aria-hidden="true" />
-              </Link>
-              <p style={{ ...body, fontSize: "15px", color: "var(--ink-muted)", margin: "20px 0 0" }}>
-                {band.later.lead}{" "}
-                <Link href={band.later.href} style={{ color: "var(--ink)", fontWeight: 600, textDecoration: "none", borderBottom: "1px solid var(--mustard)" }}>
-                  {band.later.title}
-                </Link>
-              </p>
-            </div>
-
-            <ScopeNote id="scope-after" heading="What this self-check left out, and why" />
-
-            {/* All eight areas, in the same order for everyone */}
-            <div style={card}>
-              <h2 style={{ ...eyebrow, fontSize: "13px", letterSpacing: "0.15em", margin: "0 0 12px" }}>YOUR EIGHT AREAS</h2>
-              <p style={{ ...body, fontSize: "15px", color: "var(--ink-muted)" }}>
+            <ResultSection title="Your eight areas">
+              <p className="ts-r__more" style={{ marginTop: 0 }}>
                 The areas appear in the same order for everyone, and the order ranks nothing. Each is scored from 4 to
                 20.
               </p>
@@ -1352,45 +1129,53 @@ export default function SpiritualGifts() {
                 refText="1 Corinthians 12:21"
                 text="The eye cannot say to the hand, “I do not need you.” Nor can the head say to the feet, “I do not need you.”"
               />
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                {results.map((r) => (
-                  <div key={r.area.id}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "12px", marginBottom: "6px" }}>
-                      <span style={{ fontFamily: "var(--F)", fontSize: "18px", fontWeight: 500, color: "var(--ink)" }}>{r.area.name}</span>
-                      <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--ink-muted)", whiteSpace: "nowrap" }}>
-                        {LEVEL_LABELS[r.level]} · {r.score}/{AREA_MAX}
-                      </span>
-                    </div>
-                    <div style={{ height: "8px", background: "var(--bone)", borderRadius: "4px", overflow: "hidden" }}>
-                      <div style={{ height: "100%", width: `${(r.score / AREA_MAX) * 100}%`, background: "var(--mustard)", borderRadius: "4px" }} />
-                    </div>
-                  </div>
-                ))}
+              <ScoreChart
+                caption="Each area from 4 to 20, in the same order for everyone. The first of the strongest is marked as a place to start."
+                max={AREA_MAX}
+                rows={results.map((r) => ({ label: r.area.name, value: r.score, start: r.area.id === best.area.id, valueText: `${LEVEL_LABELS[r.level]} · ${r.score}/${AREA_MAX}` }))}
+              />
+            </ResultSection>
+
+            <SelfCheckHistory
+              id="spiritual-gifts"
+              total={totalScore / (ITEMS.length * 5)}
+              areas={Object.fromEntries(results.map((r) => [r.area.name, r.score / AREA_MAX]))}
+              answersKey={JSON.stringify(answers)}
+            />
+
+            {/* The next step this band leads with */}
+            <ResultSection title="Your next step">
+              <div className="ts-r__prose">
+                <p>{band.next.lead}</p>
               </div>
-            </div>
+              <Link href={band.next.href} className="btn">
+                {band.next.cta}
+                <ArrowRight size={16} strokeWidth={1.75} aria-hidden="true" style={{ marginLeft: 8 }} />
+              </Link>
+              <p className="ts-r__more">
+                {band.later.lead}{" "}
+                <Link href={band.later.href} className="btn--text" style={{ minHeight: 0, display: "inline" }}>
+                  {band.later.title}
+                </Link>
+              </p>
+            </ResultSection>
+
+            <ScopeNote id="scope-after" heading="What this self-check left out, and why" />
 
             {/* Each area at its level */}
-            {results.map((r) => (
-              <AreaResult key={r.area.id} r={r} />
-            ))}
+            <ResultSection title="Area by area">
+              {results.map((r) => (
+                <AreaResult key={r.area.id} r={r} />
+              ))}
+            </ResultSection>
 
-            {/* Actions */}
-            <div className="no-print" style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap", marginTop: "32px" }}>
-              <button
-                type="button"
-                onClick={() => window.print()}
-                style={{ ...quiet, border: "none", background: "var(--charcoal)", color: "var(--charcoal-fg)" }}
-              >
-                <Printer size={16} aria-hidden="true" />
-                Print results
-              </button>
-              <button type="button" onClick={handleChangeAnswers} style={quiet}>
-                Change my answers
-              </button>
-              <button type="button" onClick={handleRestart} style={quiet}>
-                Take the self-check again
-              </button>
-            </div>
+            <ResultActions
+              title={tool.name}
+              kind="Self-check"
+              onChange={handleChangeAnswers}
+              onStartOver={handleRestart}
+              startOverClears="your answers on this device (your past results stay)"
+            />
           </div>
         </section>
       )}

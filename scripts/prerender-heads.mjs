@@ -880,6 +880,29 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Abraham's road: every part's places in order with what happened there and
+  // its Genesis reference (client/public/explorer/abrahams-road.json; places
+  // named as the Genesis book page names them, or as the road renames them).
+  "/study/explorer/abrahams-road": async () => {
+    const r = readJsonSafe("client/public/explorer/abrahams-road.json");
+    const intro = readJsonSafe("client/public/bible/notes/genesis/intro.json");
+    if (!r?.parts?.length || !intro) return null;
+    const names = new Map();
+    for (const m of intro.teaching.map) for (const p of m.places || []) if (!names.has(p.id)) names.set(p.id, (r.names || {})[p.id] ?? p.name);
+    const part = (pt) =>
+      sec(`${pt.name} (${pt.range})`, `<p>${escapeHtml(pt.line)}</p><ol>${pt.steps.map((st) => `<li><strong>${escapeHtml(st.name ?? names.get(st.place) ?? st.place)}.</strong> ${escapeHtml(st.text)} (${escapeHtml(st.ref)})</li>`).join("")}</ol>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study/explorer">Bible Explorer</a></p>`,
+        `<h1>Abraham's road</h1>`,
+        `<p class="pre-subtitle">${escapeHtml(r.intro)}</p>`,
+        `<p>${escapeHtml(r.routeNote)}</p>`,
+        ...r.parts.map(part),
+        `<p><a href="/study/explorer/abraham">Stop 3: Abraham and the Promise</a></p>`,
+        `<p><a href="/study/explorer">The whole map</a></p>`,
+      ]),
+    };
+  },
   // The Bible Explorer: every stop on the map with its line for younger and
   // older readers (client/public/explorer/index.json); a finished stop links
   // its own page, one still being drawn is named without a link.

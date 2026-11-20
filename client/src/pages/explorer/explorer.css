@@ -1400,6 +1400,16 @@ h3.ex-panel__title,
   stroke: var(--art-paper);
   stroke-width: calc(var(--tv-u) * 0.5px);
 }
+/* A river's name (the fertile-crescent frame), sized to the view like the regions. */
+.tv-frame .bk-map__water {
+  font-family: var(--U);
+  font-style: italic;
+  font-size: calc(var(--tv-u) * 1.7px);
+  fill: var(--ink-muted);
+  paint-order: stroke;
+  stroke: var(--art-paper);
+  stroke-width: calc(var(--tv-u) * 0.5px);
+}
 .tv-frame .bk-map__river {
   fill: none;
   stroke: var(--art-ink);
@@ -1442,6 +1452,11 @@ h3.ex-panel__title,
 .tv-ring {
   fill: none;
   stroke: var(--mustard);
+}
+/* A region placed roughly (Abraham's road: Egypt, the land of Moriah). */
+.tv-region {
+  fill: none;
+  stroke: var(--art-ink);
 }
 .tv-name {
   font-family: var(--U);
