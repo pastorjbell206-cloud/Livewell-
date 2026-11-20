@@ -11603,3 +11603,26 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Isaiah 49:10; Isaiah 25:8; Daniel 12:1; Psalm 23:1; Matthew 24:21; Acts 14:22 | 13-17 | BSB | BSB text |
 
 Cut before publishing: Genesis 22:17-18 (swapped for Genesis 15:5 so that ‘blessed’ stays out even inside Scripture); any claim about which group today calls itself the 144,000.
+
+## The plain notes on Revelation 8 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sigē, used twice in the New Testament; three readings of the silence | 1-5 | revelation/8.json `words` (G4602) | Repository, no side |
+| The golden altar; incense morning and evening while the people prayed (Luke 1:9-10); prayers rising; the censer's fire as Ezekiel 10:2; the trumpets as the answer to prayer | 1-5 | revelation/8.json `cultural`, `literary`, `doctrines` | Repository |
+| Prayer through Christ who always lives to intercede (Hebrews 7:25) | 1-5 | revelation/8.json `christ` | Repository |
+| Sequence or recapitulation (Victorinus); 6:12-17, 11:15-19, 16:17-21; no side | 1-5 | revelation/8.json `hard` | Repository, no side |
+| Zephaniah 1:7; Habakkuk 2:20; Exodus 30:7; Ezekiel 10:2; Hebrews 7:25 | 1-5 | BSB | BSB text |
+| Trumpets for worship, war and alarm (Numbers 10; Joel 2:1; Jericho); exodus plagues (Exodus 9; 7); the Passover Lamb's greater exodus | 6-9 | revelation/8.json `cultural`, `historical`, `christ` | Repository |
+| A fourth, a third, everything; partial judgments as warning (9:20-21) | 6-9 | revelation/8.json `literary`, `doctrines` | Repository |
+| Vesuvius, AD 79, as a possible echo, not named and not accepted by all; Jeremiah 51:25; creation groaning (Romans 8:19-22) | 6-9 | revelation/8.json `historical`, `doctrines` | Repository |
+| The four ways of reading the trumpets as the deep note gives them | 6-9 | revelation/8.json `historical` | Repository, no side |
+| ‘And nothing here makes anyone's illness or death ...’ (John 9:3) | 6-9 | 1-john/plain/5.json (16-17 `hard`) | Word for word |
+| Exodus 9:23; Exodus 7:20; Joel 2:1; Jeremiah 51:25 | 6-9 | BSB | BSB text |
+| Land, sea, fresh water, sky: the four regions; four and three; the three woes fall on people in chapters 9 to 11 | 10-13 | revelation/8.json `literary`, `story` | Repository |
+| Apsinthos; wormwood as the bitterness of idolatry and injustice (Jeremiah 9:15; Amos 5:7); darkness as the ninth plague | 10-13 | revelation/8.json `words` (G0894), `cultural`, `historical` | Repository |
+| Jeremiah 9:15; Amos 5:7; Exodus 10:22 | 10-13 | BSB | BSB text |
+
+Cut before publishing: a line reading ‘those who dwell on the earth’ as a fixed term for those who refuse God (not supported in the repository's notes on this chapter); no star, mountain or plague tied to any event of our day.
