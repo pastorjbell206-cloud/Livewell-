@@ -168,6 +168,13 @@
           "blurb": "The Passover calendar from Exodus and Josephus, every time note in the four Gospels, the four solutions with their weaknesses, the hour, and the frame all four share.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "numbers-in-samuel-kings-and-chronicles",
+          "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
+          "blurb": "The differences set out from the English and the Hebrew, where the BSB has already chosen a reading, the Greek translation and the Dead Sea Scrolls, who killed Goliath, and what copying can and can't explain.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -633,6 +640,16 @@
       "area": "contradictions",
       "slug": "the-day-of-the-crucifixion",
       "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+      "live": false
+    },
+    {
+      "claim": "Comparing Kings and Chronicles with each other shows confusion and contradiction in the Bible",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795,
+      "area": "contradictions",
+      "slug": "numbers-in-samuel-kings-and-chronicles",
+      "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
       "live": false
     },
     {
