@@ -1,0 +1,40 @@
+{
+ "book": "ecclesiastes",
+ "name": "Ecclesiastes",
+ "chapters": 12,
+ "verses": 222,
+ "about": "Source of the Wisdom Books Explorer's Ecclesiastes (/tools/wisdom-books). Each verse is tagged by hand with one or more themes fitted to this book; 'heading' marks the book's heading. Verse text is never typed here: scripts/build-wisdom-books-index.mjs fills it from the BSB. noteTheme names a theme in the Study Bible's introduction to Ecclesiastes (client/public/bible/notes/ecclesiastes/intro.json), shown word for word. The teaching panel is the introduction's counsel on reading the book and the hard questions on chapters 1 and 12, word for word.",
+ "teaching": { "hard": [1, 12] },
+ "themes": [
+  { "id": "breath", "name": "Futility: breath and vapor", "line": "The book's key word, hevel, and every verse that calls something futile or a pursuit of the wind.", "noteTheme": "Hevel: breath, vapor, futility", "deeper": ["purpose-and-meaning", "restlessness"] },
+  { "id": "cycles", "name": "Nothing new under the sun", "line": "Generations, sun, wind and rivers going round and round, and no one remembered.", "deeper": ["purpose-and-meaning", "time-and-priorities"] },
+  { "id": "search", "name": "The Teacher's search", "line": "A king tests pleasure, great works, wisdom and folly to see what is worthwhile, and reports what he found.", "deeper": ["purpose-and-meaning", "doubt"] },
+  { "id": "toil", "name": "Toil and what it gains", "line": "Labor under the sun, what it earns, who inherits it, and the mind that does not rest at night.", "deeper": ["work-and-burnout", "work-life-balance"] },
+  { "id": "joy", "name": "Eat, drink and enjoy: the gift of God", "line": "Bread, wine, work and the people we love, received day by day as the portion God gives.", "noteTheme": "Joy as God's gift", "deeper": ["joy", "gratitude", "contentment"] },
+  { "id": "death", "name": "Death comes to all", "line": "One fate for the wise and the fool, the righteous and the wicked, people and animals.", "noteTheme": "Death, the great leveler", "deeper": ["facing-death", "aging"] },
+  { "id": "wisdom", "name": "Wisdom and folly", "line": "Wisdom is better than folly as light is better than darkness, and a little folly can spoil it.", "deeper": ["decisions-and-guidance", "self-control"] },
+  { "id": "limits", "name": "What no one can know", "line": "The work of God that no one can fathom, the future no one can see, and time and chance.", "noteTheme": "The limits of wisdom", "deeper": ["gods-sovereignty", "fear-of-the-future", "need-for-control"] },
+  { "id": "time", "name": "A time for everything", "line": "A season for every purpose, the right time and way, and the hour no one knows.", "deeper": ["time-and-priorities", "waiting-on-god"] },
+  { "id": "injustice", "name": "Oppression and injustice", "line": "Tears with no comforter, wickedness in the place of judgment, and justice delayed.", "deeper": ["when-life-is-unfair", "justice-and-the-poor", "the-problem-of-evil"] },
+  { "id": "wealth", "name": "Wealth and what it cannot buy", "line": "The love of money that is never satisfied, riches hoarded or lost, and wealth its owner cannot enjoy.", "deeper": ["money", "greed", "contentment"] },
+  { "id": "fear", "name": "Fear God", "line": "Careful worship, vows kept, and the God who will bring every deed into judgment.", "noteTheme": "The fear of God and his judgment", "deeper": ["the-fear-of-the-lord", "keeping-promises"] },
+  { "id": "words", "name": "Words, vows and listening", "line": "Drawing near to listen, letting words be few, keeping vows, and the fool who multiplies words.", "deeper": ["gossip-and-the-tongue", "keeping-promises"] },
+  { "id": "rulers", "name": "Kings and those in power", "line": "Living under a king, rulers who err, the wise youth, and the poor wise man no one remembered.", "deeper": ["submitting-to-leaders", "justice-and-the-poor"] },
+  { "id": "better", "name": "What is better", "line": "The Teacher's comparisons: a good name, the house of mourning, a patient spirit, and two rather than one.", "deeper": ["deep-friendship", "loneliness", "patience"] },
+  { "id": "youth", "name": "Youth, age and remembering your Creator", "line": "Rejoice while you are young, remember your Creator before the days of darkness, and the poem of old age.", "deeper": ["aging", "facing-death"] }
+ ],
+ "tags": {
+  "1": [["1", "heading search"], ["2", "breath"], ["3", "toil cycles"], ["4-11", "cycles"], ["12", "search"], ["13", "search limits"], ["14", "search breath"], ["15", "limits"], ["16", "search wisdom"], ["17", "search breath"], ["18", "wisdom limits"]],
+  "2": [["1", "search breath"], ["2-3", "search"], ["4-6", "search toil wealth"], ["7-8", "search wealth"], ["9", "search wisdom"], ["10", "search toil"], ["11", "toil breath"], ["12", "search wisdom"], ["13", "wisdom"], ["14", "wisdom death"], ["15", "wisdom death breath"], ["16", "wisdom death"], ["17", "toil breath"], ["18", "toil death"], ["19", "toil breath"], ["20", "toil"], ["21", "toil breath"], ["22", "toil"], ["23", "toil breath"], ["24-25", "joy"], ["26", "joy wealth breath"]],
+  "3": [["1-8", "time"], ["9", "toil"], ["10", "toil limits"], ["11", "time limits"], ["12-13", "joy"], ["14", "fear"], ["15", "cycles fear"], ["16", "injustice"], ["17", "injustice fear time"], ["18", "death"], ["19", "death breath"], ["20", "death"], ["21", "death limits"], ["22", "joy limits"]],
+  "4": [["1", "injustice"], ["2-3", "injustice death better"], ["4", "toil breath"], ["5", "wisdom toil"], ["6", "better toil"], ["7", "breath"], ["8", "toil wealth breath"], ["9-12", "better"], ["13", "better rulers wisdom"], ["14-15", "rulers"], ["16", "rulers breath"]],
+  "5": [["1-6", "fear words"], ["7", "fear words breath"], ["8-9", "injustice rulers"], ["10", "wealth breath"], ["11-14", "wealth"], ["15", "wealth death"], ["16", "death toil breath"], ["17", "toil"], ["18", "joy"], ["19", "joy wealth"], ["20", "joy"]],
+  "6": [["1", "wealth"], ["2", "wealth breath"], ["3", "wealth death better"], ["4", "death better breath"], ["5", "death better"], ["6", "death wealth"], ["7", "toil"], ["8", "wisdom"], ["9", "better breath"], ["10", "cycles limits"], ["11", "words breath"], ["12", "limits breath death"]],
+  "7": [["1-4", "better death"], ["5", "better wisdom"], ["6", "wisdom breath"], ["7", "injustice wisdom"], ["8-9", "better wisdom"], ["10", "better wisdom"], ["11", "wisdom"], ["12", "wisdom wealth"], ["13-14", "limits time"], ["15", "injustice breath"], ["16-17", "wisdom"], ["18", "fear wisdom"], ["19", "wisdom rulers"], ["20", "wisdom"], ["21-22", "words"], ["23-24", "search limits"], ["25-29", "search"]],
+  "8": [["1", "wisdom"], ["2-4", "rulers"], ["5", "rulers time"], ["6", "time"], ["7", "limits"], ["8", "death limits"], ["9", "rulers injustice"], ["10", "injustice breath"], ["11", "injustice"], ["12-13", "fear"], ["14", "injustice breath"], ["15", "joy"], ["16-17", "search limits"]],
+  "9": [["1", "limits"], ["2-3", "death"], ["4", "better death"], ["5-6", "death"], ["7-8", "joy"], ["9", "joy breath"], ["10", "joy death"], ["11", "time limits"], ["12", "time death limits"], ["13", "wisdom"], ["14", "rulers"], ["15", "wisdom"], ["16", "wisdom better"], ["17", "wisdom words better"], ["18", "wisdom better"]],
+  "10": [["1-3", "wisdom"], ["4", "rulers"], ["5-7", "rulers injustice"], ["8-9", "toil"], ["10", "toil wisdom"], ["11", "toil"], ["12-13", "words wisdom"], ["14", "words wisdom limits"], ["15", "toil wisdom"], ["16", "rulers"], ["17", "rulers time"], ["18", "toil"], ["19", "wealth"], ["20", "words rulers"]],
+  "11": [["1-2", "wealth limits"], ["3-4", "limits time"], ["5", "limits"], ["6", "toil limits time"], ["7", "youth joy"], ["8", "youth joy breath"], ["9", "youth joy fear"], ["10", "youth breath"]],
+  "12": [["1", "youth fear"], ["2-7", "youth death"], ["8", "breath"], ["9-11", "search words wisdom"], ["12", "search words"], ["13-14", "fear"]]
+ }
+}

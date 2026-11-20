@@ -74,6 +74,9 @@ describe("WisdomTopic", () => {
     expect(container.querySelectorAll(".wz-verse").length).toBeGreaterThanOrEqual(5);
     expect(container.querySelectorAll(".wz-verse__where").length).toBe(container.querySelectorAll(".wz-verse").length);
     expect(container.querySelector(".wz-prayer cite")?.textContent).toMatch(/^Psalm /);
+    // The psalm opens in Pray the Psalms and in the Study Bible (Psalm 130:5-7).
+    expect(container.querySelector('#pray a[href="/tools/pray-the-psalms?psalm=130"]')).toHaveTextContent("Pray Psalm 130 slowly");
+    expect(container.querySelector('#pray a[href="/study/bible/psalms/130"]')).toBeTruthy();
     // wayward-child is a heavy subject: Find Help sits above the first verse.
     const help = container.querySelector('a[href="/help"]');
     const firstVerse = container.querySelector(".wz-verse");

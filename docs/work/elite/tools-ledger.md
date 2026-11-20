@@ -1,6 +1,6 @@
 # Tools ledger: the claims in the rebuilt Wisdom Finder
 
-Every factual claim the 2026-11-20 builds added (the forty topics written in full in `client/public/wisdom/deep/`, the finder and topic pages), with where it was checked. Scripture is not listed: every verse and prayer is filled from the BSB in `client/public/bible/ch/` by reference at build time, and `scripts/validate-wisdom.mjs` holds every verse and every quotation of three words or more in the prose to the BSB word for word. "Note" means the site's own Study Bible note for that chapter (`client/public/bible/notes/<book>/<n>.json`, its `verses/` and `plain/` files); where a note exists for a passage, the topic's sentence about the passage was written to agree with it.
+Every factual claim the 2026-11-20 builds added (the fifty-six topics written in full in `client/public/wisdom/deep/`, the finder and topic pages), with where it was checked. Scripture is not listed: every verse and prayer is filled from the BSB in `client/public/bible/ch/` by reference at build time, and `scripts/validate-wisdom.mjs` holds every verse and every quotation of three words or more in the prose to the BSB word for word. "Note" means the site's own Study Bible note for that chapter (`client/public/bible/notes/<book>/<n>.json`, its `verses/` and `plain/` files); where a note exists for a passage, the topic's sentence about the passage was written to agree with it.
 
 | Topic | Claim | Checked against |
 |---|---|---|
@@ -335,3 +335,398 @@ The Wisdom Books Explorer (`/tools/wisdom-books`) shows only three kinds of text
 | page, finder link | All 915 verses of Proverbs under twenty themes | counted by `scripts/validate-wisdom-books.mjs` from the BSB files |
 
 Nothing outside the repo was opened for this build.
+
+
+## Fifth build (2026-11-20): Pray the Psalms, Ecclesiastes, Spiritual Gifts and Test the Case on the shell
+
+Pray the Psalms shows four kinds of text: each psalm in the BSB, filled at build time; the Study Bible notes copied word for word and held so by `scripts/validate-pray-psalms.mjs` (each psalm's note title, summary and outline; the plain notes' care and ending paragraphs; four parts of the introduction); each kind label, given only with the note's own words as evidence, which the validator finds in the field named; and the sentences below, written for the page. Each psalm's line and guide was written from that psalm's Study Bible note (title, summary) and its plain note (each passage title and its "asks" paragraph), and agrees with them; the rows name the outside facts they lean on.
+
+| Where | Claim | Checked against |
+|---|---|---|
+| page, plan | The 150 psalms in a month, five a day, is the introduction suggestion; the split into morning and evening is this page's own, and said so | notes psalms/intro teaching "how-to-pray" ("Or read the 150 psalms in a month, five a day") |
+| page | Jews and Christians have prayed the Psalms daily; Jesus prayed words from them on the cross | intro teaching "in-a-minute" and "how-to-pray" (shown word for word on the page) |
+| kinds | Each kind label | the note words in each psalm's `src` or its kind group, checked by the validator |
+| Psalm 22 | Jesus prayed its first line from the cross | Mark 15:34 (BSB); plain 22 asks 1-11 |
+| Psalm 31 | Jesus prayed its fifth verse as he died | Luke 23:46 (BSB); plain 31 asks |
+| Psalm 3 | David fleeing his son | note psalms/3 summary (the heading) |
+| Psalm 34 | David pretending to be mad in an enemy city | plain 34 asks 1-10; the heading (BSB 34:1) |
+| Psalm 51 | After his sin with Bathsheba | note psalms/51 summary |
+| Psalm 57 | Hiding in a cave from Saul | note psalms/57 summary |
+| Psalm 63 | Christians have prayed it in the morning for centuries | plain 63 asks 1-5 |
+| Psalm 90 | A prayer headed with Moses' name | BSB 90:1 heading; intro author |
+| Psalm 102 | Headed for one who is afflicted | note psalms/102 historical; plain 102 asks |
+| Psalm 109 | Some read verses 6 to 19 as the enemies' curse | note psalms/109 historical ("Some interpreters, and some modern translations") |
+| Psalm 110 | The Old Testament text the New Testament quotes most often about Christ | intro keyChapters 110 |
+| Psalm 113 | The Hallel sung at the great festivals begins here | note psalms/113 story |
+| Psalm 119 | Twenty-two stanzas of eight verses, one for each letter | note psalms/119 summary and outline |
+| Psalm 137 | Exiles in Babylon | note psalms/137 summary and historical |
+| Psalm 88 | Never turns to trust; ends in darkness | note psalms/88 summary; plain 88 13-18 (shown word for word) |
+| Psalm 87 | Speaks of God's city, not any modern state or border | plain 87 asks |
+| Psalm 76 | Gives the victory to God and the lowly, not any modern army or nation | plain 76 asks |
+| Psalm 91 | Not a promise that no believer is harmed; never a reason to refuse a doctor | plain 91 hard 1-8 and 9-13 (both shown word for word) |
+| Psalm 1 | Line and guide | note psalms/1 title and summary; plain 1 1-3, 4-6 |
+| Psalm 2 | Line and guide | note psalms/2 title and summary; plain 2 1-3, 4-9, 10-12 |
+| Psalm 3 | Line and guide | note psalms/3 title and summary; plain 3 1-4, 5-8 |
+| Psalm 4 | Line and guide | note psalms/4 title and summary; plain 4 1-5, 6-8 |
+| Psalm 5 | Line and guide | note psalms/5 title and summary; plain 5 1-7, 8-12 |
+| Psalm 6 | Line and guide | note psalms/6 title and summary; plain 6 1-5, 6-10 |
+| Psalm 7 | Line and guide | note psalms/7 title and summary; plain 7 1-5, 6-11, 12-17 |
+| Psalm 8 | Line and guide | note psalms/8 title and summary; plain 8 1-2, 3-9 |
+| Psalm 9 | Line and guide | note psalms/9 title and summary; plain 9 1-12, 13-20 |
+| Psalm 10 | Line and guide | note psalms/10 title and summary; plain 10 1-11, 12-18 |
+| Psalm 11 | Line and guide | note psalms/11 title and summary; plain 11 1-7 |
+| Psalm 12 | Line and guide | note psalms/12 title and summary; plain 12 1-8 |
+| Psalm 13 | Line and guide | note psalms/13 title and summary; plain 13 1-6 |
+| Psalm 14 | Line and guide | note psalms/14 title and summary; plain 14 1-7 |
+| Psalm 15 | Line and guide | note psalms/15 title and summary; plain 15 1-5 |
+| Psalm 16 | Line and guide | note psalms/16 title and summary; plain 16 1-6, 7-11 |
+| Psalm 17 | Line and guide | note psalms/17 title and summary; plain 17 1-15 |
+| Psalm 18 | Line and guide | note psalms/18 title and summary; plain 18 1-19, 20-30, 31-50 |
+| Psalm 19 | Line and guide | note psalms/19 title and summary; plain 19 1-6, 7-14 |
+| Psalm 20 | Line and guide | note psalms/20 title and summary; plain 20 1-9 |
+| Psalm 21 | Line and guide | note psalms/21 title and summary; plain 21 1-13 |
+| Psalm 22 | Line and guide | note psalms/22 title and summary; plain 22 1-11, 12-21, 22-31 |
+| Psalm 23 | Line and guide | note psalms/23 title and summary; plain 23 1-4, 5-6 |
+| Psalm 24 | Line and guide | note psalms/24 title and summary; plain 24 1-6, 7-10 |
+| Psalm 25 | Line and guide | note psalms/25 title and summary; plain 25 1-22 |
+| Psalm 26 | Line and guide | note psalms/26 title and summary; plain 26 1-12 |
+| Psalm 27 | Line and guide | note psalms/27 title and summary; plain 27 1-6, 7-14 |
+| Psalm 28 | Line and guide | note psalms/28 title and summary; plain 28 1-9 |
+| Psalm 29 | Line and guide | note psalms/29 title and summary; plain 29 1-11 |
+| Psalm 30 | Line and guide | note psalms/30 title and summary; plain 30 1-12 |
+| Psalm 31 | Line and guide | note psalms/31 title and summary; plain 31 1-24 |
+| Psalm 32 | Line and guide | note psalms/32 title and summary; plain 32 1-5, 6-11 |
+| Psalm 33 | Line and guide | note psalms/33 title and summary; plain 33 1-22 |
+| Psalm 34 | Line and guide | note psalms/34 title and summary; plain 34 1-10, 11-22 |
+| Psalm 35 | Line and guide | note psalms/35 title and summary; plain 35 1-28 |
+| Psalm 36 | Line and guide | note psalms/36 title and summary; plain 36 1-12 |
+| Psalm 37 | Line and guide | note psalms/37 title and summary; plain 37 1-11, 12-26, 27-40 |
+| Psalm 38 | Line and guide | note psalms/38 title and summary; plain 38 1-22 |
+| Psalm 39 | Line and guide | note psalms/39 title and summary; plain 39 1-13 |
+| Psalm 40 | Line and guide | note psalms/40 title and summary; plain 40 1-5, 6-10, 11-17 |
+| Psalm 41 | Line and guide | note psalms/41 title and summary; plain 41 1-13 |
+| Psalm 42 | Line and guide | note psalms/42 title and summary; plain 42 1-5, 6-11 |
+| Psalm 43 | Line and guide | note psalms/43 title and summary; plain 43 1-5 |
+| Psalm 44 | Line and guide | note psalms/44 title and summary; plain 44 1-26 |
+| Psalm 45 | Line and guide | note psalms/45 title and summary; plain 45 1-9, 10-17 |
+| Psalm 46 | Line and guide | note psalms/46 title and summary; plain 46 1-3, 4-7, 8-11 |
+| Psalm 47 | Line and guide | note psalms/47 title and summary; plain 47 1-9 |
+| Psalm 48 | Line and guide | note psalms/48 title and summary; plain 48 1-14 |
+| Psalm 49 | Line and guide | note psalms/49 title and summary; plain 49 1-12, 13-20 |
+| Psalm 50 | Line and guide | note psalms/50 title and summary; plain 50 1-15, 16-23 |
+| Psalm 51 | Line and guide | note psalms/51 title and summary; plain 51 1-6, 7-12, 13-19 |
+| Psalm 52 | Line and guide | note psalms/52 title and summary; plain 52 1-9 |
+| Psalm 53 | Line and guide | note psalms/53 title and summary; plain 53 1-6 |
+| Psalm 54 | Line and guide | note psalms/54 title and summary; plain 54 1-7 |
+| Psalm 55 | Line and guide | note psalms/55 title and summary; plain 55 1-11, 12-23 |
+| Psalm 56 | Line and guide | note psalms/56 title and summary; plain 56 1-13 |
+| Psalm 57 | Line and guide | note psalms/57 title and summary; plain 57 1-11 |
+| Psalm 58 | Line and guide | note psalms/58 title and summary; plain 58 1-5, 6-11 |
+| Psalm 59 | Line and guide | note psalms/59 title and summary; plain 59 1-17 |
+| Psalm 60 | Line and guide | note psalms/60 title and summary; plain 60 1-12 |
+| Psalm 61 | Line and guide | note psalms/61 title and summary; plain 61 1-8 |
+| Psalm 62 | Line and guide | note psalms/62 title and summary; plain 62 1-12 |
+| Psalm 63 | Line and guide | note psalms/63 title and summary; plain 63 1-5, 6-11 |
+| Psalm 64 | Line and guide | note psalms/64 title and summary; plain 64 1-10 |
+| Psalm 65 | Line and guide | note psalms/65 title and summary; plain 65 1-13 |
+| Psalm 66 | Line and guide | note psalms/66 title and summary; plain 66 1-20 |
+| Psalm 67 | Line and guide | note psalms/67 title and summary; plain 67 1-7 |
+| Psalm 68 | Line and guide | note psalms/68 title and summary; plain 68 1-18, 19-35 |
+| Psalm 69 | Line and guide | note psalms/69 title and summary; plain 69 1-12, 13-21, 22-36 |
+| Psalm 70 | Line and guide | note psalms/70 title and summary; plain 70 1-5 |
+| Psalm 71 | Line and guide | note psalms/71 title and summary; plain 71 1-24 |
+| Psalm 72 | Line and guide | note psalms/72 title and summary; plain 72 1-7, 8-17, 18-20 |
+| Psalm 73 | Line and guide | note psalms/73 title and summary; plain 73 1-14, 15-20, 21-28 |
+| Psalm 74 | Line and guide | note psalms/74 title and summary; plain 74 1-11, 12-23 |
+| Psalm 75 | Line and guide | note psalms/75 title and summary; plain 75 1-10 |
+| Psalm 76 | Line and guide | note psalms/76 title and summary; plain 76 1-12 |
+| Psalm 77 | Line and guide | note psalms/77 title and summary; plain 77 1-9, 10-20 |
+| Psalm 78 | Line and guide | note psalms/78 title and summary; plain 78 1-39, 40-72 |
+| Psalm 79 | Line and guide | note psalms/79 title and summary; plain 79 1-13 |
+| Psalm 80 | Line and guide | note psalms/80 title and summary; plain 80 1-19 |
+| Psalm 81 | Line and guide | note psalms/81 title and summary; plain 81 1-16 |
+| Psalm 82 | Line and guide | note psalms/82 title and summary; plain 82 1-5, 6-8 |
+| Psalm 83 | Line and guide | note psalms/83 title and summary; plain 83 1-18 |
+| Psalm 84 | Line and guide | note psalms/84 title and summary; plain 84 1-7, 8-12 |
+| Psalm 85 | Line and guide | note psalms/85 title and summary; plain 85 1-13 |
+| Psalm 86 | Line and guide | note psalms/86 title and summary; plain 86 1-17 |
+| Psalm 87 | Line and guide | note psalms/87 title and summary; plain 87 1-7 |
+| Psalm 88 | Line and guide | note psalms/88 title and summary; plain 88 1-9, 10-12, 13-18 |
+| Psalm 89 | Line and guide | note psalms/89 title and summary; plain 89 1-18, 19-37, 38-52 |
+| Psalm 90 | Line and guide | note psalms/90 title and summary; plain 90 1-6, 7-12, 13-17 |
+| Psalm 91 | Line and guide | note psalms/91 title and summary; plain 91 1-8, 9-13, 14-16 |
+| Psalm 92 | Line and guide | note psalms/92 title and summary; plain 92 1-15 |
+| Psalm 93 | Line and guide | note psalms/93 title and summary; plain 93 1-5 |
+| Psalm 94 | Line and guide | note psalms/94 title and summary; plain 94 1-23 |
+| Psalm 95 | Line and guide | note psalms/95 title and summary; plain 95 1-6, 7-11 |
+| Psalm 96 | Line and guide | note psalms/96 title and summary; plain 96 1-9, 10-13 |
+| Psalm 97 | Line and guide | note psalms/97 title and summary; plain 97 1-12 |
+| Psalm 98 | Line and guide | note psalms/98 title and summary; plain 98 1-9 |
+| Psalm 99 | Line and guide | note psalms/99 title and summary; plain 99 1-9 |
+| Psalm 100 | Line and guide | note psalms/100 title and summary; plain 100 1-5 |
+| Psalm 101 | Line and guide | note psalms/101 title and summary; plain 101 1-8 |
+| Psalm 102 | Line and guide | note psalms/102 title and summary; plain 102 1-28 |
+| Psalm 103 | Line and guide | note psalms/103 title and summary; plain 103 1-5, 6-14, 15-22 |
+| Psalm 104 | Line and guide | note psalms/104 title and summary; plain 104 1-9, 10-23, 24-35 |
+| Psalm 105 | Line and guide | note psalms/105 title and summary; plain 105 1-15, 16-45 |
+| Psalm 106 | Line and guide | note psalms/106 title and summary; plain 106 1-23, 24-48 |
+| Psalm 107 | Line and guide | note psalms/107 title and summary; plain 107 1-16, 17-32, 33-43 |
+| Psalm 108 | Line and guide | note psalms/108 title and summary; plain 108 1-13 |
+| Psalm 109 | Line and guide | note psalms/109 title and summary; plain 109 1-20, 21-31 |
+| Psalm 110 | Line and guide | note psalms/110 title and summary; plain 110 1-3, 4, 5-7 |
+| Psalm 111 | Line and guide | note psalms/111 title and summary; plain 111 1-10 |
+| Psalm 112 | Line and guide | note psalms/112 title and summary; plain 112 1-10 |
+| Psalm 113 | Line and guide | note psalms/113 title and summary; plain 113 1-9 |
+| Psalm 114 | Line and guide | note psalms/114 title and summary; plain 114 1-8 |
+| Psalm 115 | Line and guide | note psalms/115 title and summary; plain 115 1-8, 9-18 |
+| Psalm 116 | Line and guide | note psalms/116 title and summary; plain 116 1-11, 12-19 |
+| Psalm 117 | Line and guide | note psalms/117 title and summary; plain 117 1-2 |
+| Psalm 118 | Line and guide | note psalms/118 title and summary; plain 118 1-14, 15-21, 22-29 |
+| Psalm 119 | Line and guide | note psalms/119 title and summary; plain 119 1-8, 9-16, 17-64, 65-104, 105-176 |
+| Psalm 120 | Line and guide | note psalms/120 title and summary; plain 120 1-7 |
+| Psalm 121 | Line and guide | note psalms/121 title and summary; plain 121 1-2, 3-8 |
+| Psalm 122 | Line and guide | note psalms/122 title and summary; plain 122 1-5, 6-9 |
+| Psalm 123 | Line and guide | note psalms/123 title and summary; plain 123 1-4 |
+| Psalm 124 | Line and guide | note psalms/124 title and summary; plain 124 1-8 |
+| Psalm 125 | Line and guide | note psalms/125 title and summary; plain 125 1-5 |
+| Psalm 126 | Line and guide | note psalms/126 title and summary; plain 126 1-6 |
+| Psalm 127 | Line and guide | note psalms/127 title and summary; plain 127 1-2, 3-5 |
+| Psalm 128 | Line and guide | note psalms/128 title and summary; plain 128 1-6 |
+| Psalm 129 | Line and guide | note psalms/129 title and summary; plain 129 1-8 |
+| Psalm 130 | Line and guide | note psalms/130 title and summary; plain 130 1-4, 5-8 |
+| Psalm 131 | Line and guide | note psalms/131 title and summary; plain 131 1-3 |
+| Psalm 132 | Line and guide | note psalms/132 title and summary; plain 132 1-18 |
+| Psalm 133 | Line and guide | note psalms/133 title and summary; plain 133 1-3 |
+| Psalm 134 | Line and guide | note psalms/134 title and summary; plain 134 1-3 |
+| Psalm 135 | Line and guide | note psalms/135 title and summary; plain 135 1-21 |
+| Psalm 136 | Line and guide | note psalms/136 title and summary; plain 136 1-9, 10-26 |
+| Psalm 137 | Line and guide | note psalms/137 title and summary; plain 137 1-4, 5-6, 7-9 |
+| Psalm 138 | Line and guide | note psalms/138 title and summary; plain 138 1-8 |
+| Psalm 139 | Line and guide | note psalms/139 title and summary; plain 139 1-12, 13-18, 19-24 |
+| Psalm 140 | Line and guide | note psalms/140 title and summary; plain 140 1-13 |
+| Psalm 141 | Line and guide | note psalms/141 title and summary; plain 141 1-10 |
+| Psalm 142 | Line and guide | note psalms/142 title and summary; plain 142 1-7 |
+| Psalm 143 | Line and guide | note psalms/143 title and summary; plain 143 1-12 |
+| Psalm 144 | Line and guide | note psalms/144 title and summary; plain 144 1-15 |
+| Psalm 145 | Line and guide | note psalms/145 title and summary; plain 145 1-7, 8-13, 14-21 |
+| Psalm 146 | Line and guide | note psalms/146 title and summary; plain 146 1-10 |
+| Psalm 147 | Line and guide | note psalms/147 title and summary; plain 147 1-11, 12-20 |
+| Psalm 148 | Line and guide | note psalms/148 title and summary; plain 148 1-6, 7-14 |
+| Psalm 149 | Line and guide | note psalms/149 title and summary; plain 149 1-9 |
+| Psalm 150 | Line and guide | note psalms/150 title and summary; plain 150 1-6 |
+
+Ecclesiastes in the explorer adds sixteen theme names and lines; each was checked against the verses tagged with it, and four draw on the introduction's own themes (shown word for word).
+
+| Theme | Claim | Checked against |
+|---|---|---|
+| breath | The key word hevel; verses calling something futile or a pursuit of the wind | intro themes "Hevel"; Ecclesiastes 1:2, 1:14, 2:11, 12:8 (BSB) |
+| cycles | Generations, sun, wind, rivers going round; no one remembered | Ecclesiastes 1:4-11 |
+| search | A king tests pleasure, works, wisdom and folly | Ecclesiastes 1:12-18, 2:1-12; note ecclesiastes/2 title |
+| toil | Labor, who inherits it, the mind that does not rest at night | Ecclesiastes 2:18-23 |
+| joy | Bread, wine, work and the people we love as God's gift | intro themes "Joy as God's gift"; Ecclesiastes 2:24, 3:13, 5:18-19, 9:7-9 |
+| death | One fate for wise and fool, righteous and wicked, people and animals | intro themes "Death, the great leveler"; Ecclesiastes 2:14-16, 3:19, 9:2 |
+| wisdom | Wisdom better than folly as light than darkness; a little folly spoils it | Ecclesiastes 2:13, 10:1 |
+| limits | God's work no one can fathom, the future, time and chance | intro themes "The limits of wisdom"; Ecclesiastes 3:11, 8:17, 9:11 |
+| time | A season for every purpose; the right time and way | Ecclesiastes 3:1-8, 8:5-6 |
+| injustice | Tears with no comforter; wickedness in the place of judgment; justice delayed | Ecclesiastes 4:1, 3:16, 8:11 |
+| wealth | Love of money never satisfied; riches hoarded or lost; wealth not enjoyed | Ecclesiastes 5:10, 5:13-14, 6:2 |
+| fear | Careful worship, vows kept, every deed brought into judgment | intro themes "The fear of God and his judgment"; Ecclesiastes 5:1-7, 12:13-14 |
+| words | Draw near to listen, let words be few, keep vows; the fool multiplies words | Ecclesiastes 5:1-5, 10:14 |
+| rulers | Under a king; rulers who err; the wise youth; the poor wise man forgotten | Ecclesiastes 8:2-4, 10:5-7, 4:13-14, 9:15 |
+| better | A good name, the house of mourning, a patient spirit, two rather than one | Ecclesiastes 7:1-2, 7:8, 4:9 |
+| youth | Rejoice while young; remember your Creator; the poem of old age | Ecclesiastes 11:9, 12:1-7; note ecclesiastes/12 outline ("old age and the approach of death") |
+| panel | The readings of hevel and of the epilogue | intro reading; notes ecclesiastes/1 and 12 hard (shown word for word) |
+
+Spiritual Gifts and Test the Case add no claim: every statement, case, move, objection, answer, band, reading and step is the same text as before the move (proved with `diff`, `tools-plan.md` section 16).
+
+Nothing outside the repo was opened for this build. The Brueggemann reading of the Psalms that section 7.3 allows was not opened and is not used.
+
+## Sixth build (2026-11-20): sixteen topics, James in the explorer
+
+The sixteen topics written in full in this build, each claim with the note it agrees with. Care lines are not listed one by one: `scripts/validate-wisdom.mjs` finds each word for word in the plain note it names. Where a row says "general description" the claim describes a church's practice from common knowledge and quotes nothing; no confession, catechism or scholar was opened outside the repo.
+
+| Topic | Claim | Checked against |
+|---|---|---|
+| when-life-is-unfair | The singer of Psalm 73 was likely a temple singer of Asaph's guild; he finds his answer in the sanctuary | note psalms/73 historical; plain psalms/73 1-14 and 15-20 |
+| when-life-is-unfair | Jeremiah takes God to court; God answers with a harder assignment (men and horses) | Jeremiah 12:1-5; note jeremiah/12 summary |
+| when-life-is-unfair | Habakkuk opens with complaint: law paralyzed, God seems not to listen; then the watchtower and the vision for its appointed time | notes habakkuk/1 and habakkuk/2 summaries |
+| when-life-is-unfair | The Teacher sees the wicked honored at burial, delayed justice encouraging evil, and commends enjoyment | note ecclesiastes/8 summary; Ecclesiastes 8:10-15 |
+| when-life-is-unfair | Psalm 37 is an old man's counsel repeated across forty verses | note psalms/37 summary |
+| when-life-is-unfair | In the vineyard parable no one was cheated; the story ends on a question | note matthew/20 verse 15; plain matthew/20 8-16 hard |
+| when-life-is-unfair | The widow and the judge works by contrast | note luke/18 verses 6-8; plain luke/18 1-8 hard |
+| when-life-is-unfair | Romans 12:19 never means staying where someone hurts you | plain romans/12 14-21 hard |
+| when-life-is-unfair | Genesis 50:20 much loved and often misused; never handed to fresh grief or used to explain away abuse | plain genesis/50 15-21 hard |
+| when-life-is-unfair | Galatians 6:7 does not mean every hardship is a harvest of one's own sin; Job's friends and Job 42:7 | plain galatians/6 6-10 hard |
+| the-problem-of-evil | The sufferer of Psalm 22 does not doubt God exists; Jesus prayed its first line on the cross | note psalms/22 verse 1; Matthew 27:46 |
+| the-problem-of-evil | Job is never told the reason the reader is shown; God answers with questions | note job/38 hard; Job 1-2; Honest Answer if-god-is-good-why-suffering |
+| the-problem-of-evil | God's verdict falls on the friends; their sacrifice accepted when Job prays | Job 42:7-9; note job/42 summary |
+| the-problem-of-evil | Cruelty and accident are no measure of the victims' guilt | note luke/13 verses 4-5; plain luke/13 1-5 hard |
+| the-problem-of-evil | Disability is not punishment; verse 3 does not mean God made a man blind as a show | plain john/9 1-7 hard |
+| the-problem-of-evil | Some at the tomb asked why he could not have kept Lazarus from dying | John 11:37 |
+| the-problem-of-evil | Creation subjected to futility; Paul's hope is creation set free | plain romans/8 18-27 hard; note romans/8 verses 20-21 |
+| the-problem-of-evil | The speakers assumed the Servant was punished by God, then saw he carried their sorrows | note isaiah/53 verses 3-4 |
+| the-problem-of-evil | Habakkuk ends trembling and resolving to rejoice | note habakkuk/3 summary |
+| the-problem-of-evil | Isaiah 45:7: ra means calamity, the opposite of shalom; spoken of nations, Babylon; no second power; God not the author of sin (James 1:13) | note isaiah/45 hard and words (H7451B); note isaiah/45 summary (addressed to Cyrus) |
+| the-problem-of-evil | Reformed: God ordains all, not author of sin, guilt kept; Arminian: God permits what he does not will and overrules | plain genesis/50 15-21 hard (both views, "These notes take no side"); note isaiah/45 hard |
+| marriage-communication | James writes to scattered believers under trial; faith shows in controlled speech | note james/1 summary |
+| marriage-communication | Proverbs 15 keeps returning to the tongue and sets the LORD who sees beside it | note proverbs/15 summary |
+| marriage-communication | Proverbs 12 is above all about words, lying and truthful, rash and wise | note proverbs/12 summary |
+| marriage-communication | Proverbs 20's center: no one can claim a pure heart | note proverbs/20 summary |
+| marriage-communication | Proverbs 25 copied by Hezekiah's scribes | Proverbs 25:1; note proverbs/25 summary |
+| marriage-communication | Ephesians 4:25-32 shows the new self on an ordinary day | plain ephesians/4 25-32 |
+| marriage-communication | The man blames the woman and God; both end with "and I ate" | note genesis/3 verses 12-13 |
+| marriage-communication | Song of Songs 2: the beloved's voice, the little foxes, mutual belonging | note song-of-songs/2 summary |
+| marriage-communication | Ephesians 4:26: Paul quotes the psalm, neither commands nor forbids anger; put away rage five verses later; the sunset saying reflects a common ancient view that disputes be settled before the day's end | plain ephesians/4 25-32 hard; note ephesians/4 cultural |
+| marriage-intimacy | The one-flesh union answers the not good of verse 18; the chapter ends naked and unashamed | note genesis/2 verses 24-25 |
+| marriage-intimacy | Song 5: she hesitates, he has gone, she searches | note song-of-songs/5 summary |
+| marriage-intimacy | Song 8:6-7 is the book's great statement | note song-of-songs/8 summary |
+| marriage-intimacy | Proverbs 5: forbidden woman sweet then bitter; joy in the wife of one's youth | note proverbs/5 summary |
+| marriage-intimacy | A newly married man exempt from war for a year among laws protecting the poor | Deuteronomy 24:5; note deuteronomy/24 summary |
+| marriage-intimacy | The Teacher's counsel after "one fate": eat with joy, love your wife | note ecclesiastes/9 summary |
+| marriage-intimacy | Ephesians 5: both readings of headship set out, no side; the one flesh speaks of Christ and the church | note ephesians/5 hard; plain ephesians/5 21-33 hard; Ephesians 5:31-32 |
+| marriage-intimacy | Proverbs 31 closes with an acrostic poem praising a wife | note proverbs/31 summary |
+| marriage-intimacy | 1 Corinthians 7:3-5 misused; mutual consent; forcing or pressuring is abuse; love not self-seeking (13:5) | plain 1-corinthians/7 1-7 hard (care lines word for word) |
+| marriage-intimacy | Catholic teaching on openness to life and natural family planning; most Protestant and many Orthodox Christians permit contraception | general description, as in the existing sexual-purity topic; not quoted from a catechism |
+| marriage-intimacy | Two readings of Onan's sin | note genesis/38 hard (both readings) |
+| marriage-after-an-affair | Malachi 2: the LORD witness between a man and the wife of his youth; offerings not accepted | Malachi 2:13-16; note malachi/2 summary |
+| marriage-after-an-affair | Proverbs 6 sets adultery beside theft; no payment settles it | Proverbs 6:30-35; note proverbs/6 summary |
+| marriage-after-an-affair | Nathan's parable and "You are that man"; David confesses | note 2-samuel/12 summary |
+| marriage-after-an-affair | Psalm 51's heading ties it to Nathan after Bathsheba; David confesses without excuse | Psalm 51:1 heading (BSB); note psalms/51 summary |
+| marriage-after-an-affair | Godly and worldly sorrow; what godly sorrow produced in Corinth | 2 Corinthians 7:8-11; note 2-corinthians/7 summary |
+| marriage-after-an-affair | Hosea told to love his wife again; her waiting is preparation, not rejection | note hosea/3 summary and hard |
+| marriage-after-an-affair | Forgiveness is not the same as trusting again; it can take time | plain colossians/3 12-17 hard (care lines word for word) |
+| marriage-after-an-affair | Luke 17: rebuke, repent, forgive; no ceiling; misused to send people back | note luke/17 verses 3-4; plain luke/17 1-4 hard |
+| marriage-after-an-affair | Only Matthew has the exception; Catholic, Orthodox, most Protestant, betrothal readings; notes do not decide | plain matthew/19 1-9 hard |
+| marriage-after-an-affair | Joel's promise follows a locust plague and a call to return | note joel/2 summary |
+| marriage-after-an-affair | 1 Corinthians 13:5 does not tell anyone to keep quiet about harm; love rejoices in the truth | plain 1-corinthians/13 4-7 hard |
+| cheating | The seventh commandment stands between life and property | note exodus/20 verse 14 |
+| cheating | David stayed in Jerusalem in the spring; the chapter ends "evil in the sight of the LORD" | 2 Samuel 11:1, 27; note 2-samuel/11 summary |
+| cheating | Joseph's reasons in rising order; refuses even to be near her | note genesis/39 verses 8-9; plain genesis/39 7-10 |
+| cheating | Proverbs 11 opens in the marketplace with dishonest scales | note proverbs/11 summary |
+| cheating | Luke 16:10-12: three contrasts press one point | note luke/16 verses 10-12 |
+| cheating | Psalm 15 describes a guest of God, not how one earns entry | plain psalms/15 1-5 hard |
+| cheating | Judas's kiss; Jesus answers "Friend" | note matthew/26 verses 47-50 |
+| cheating | Peter's three denials answered by three confessions | note john/21 verse 17 |
+| cheating | Matthew 7:1 forbids condemning judgment; Jesus expects the speck removed (7:5) and confrontation (18:15) | plain matthew/7 1-6 hard |
+| cheating | Zacchaeus repaid those he had cheated | Luke 19:8 |
+| parenting-young-children | Deuteronomy 6:20-25 is a catechism; the answer is a story; the child has watched the laws kept | note deuteronomy/6 verses 20, 21-23 |
+| parenting-young-children | Jesus is angry at the disciples, takes the children in his arms and blesses them | plain mark/10 13-16; note mark/10 verses 15-16 |
+| parenting-young-children | Welcoming a child in Jesus' name welcomes him | note matthew/18 verse 5 |
+| parenting-young-children | God taught Ephraim to walk and bent down to feed | Hosea 11:3-4; note hosea/11 summary |
+| parenting-young-children | God comforts as a mother; Isaiah's last chapter | Isaiah 66:12-13; note isaiah/66 summary |
+| parenting-young-children | The father passes on what his own father taught | note proverbs/4 summary |
+| parenting-young-children | Timothy's faith first in Lois and Eunice; Scriptures from infancy; Paul in prison | 2 Timothy 1:5, 3:15; note 2-timothy/1 summary |
+| parenting-young-children | Hannah's dedication not commanded of parents; she visited yearly and made clothes (2:19) | note 1-samuel/1 hard |
+| parenting-young-children | Eli teaches Samuel to answer; Eli's sons corrupt | note 1-samuel/3 summary; 1 Samuel 2:12 |
+| parenting-young-children | Jesus really learned and grew as a human being | plain luke/2 41-52 hard |
+| parenting-young-children | Proverbs 22:6 is a generalization, not a contract; readings of "the way he should go" | note proverbs/22 hard |
+| parenting-young-children | Churches that baptize infants and those that dedicate and baptize believers | notes colossians/2 (both views), mark/10 (Luther's order of 1526 and the 1549 Book of Common Prayer read Mark 10:13-16 at infant baptism); list of churches is general description |
+| raising-teenagers | Proverbs 1: the book's purpose for the young; the father warns against a gang that ambushes the innocent | note proverbs/1 summary; Proverbs 1:8-19 |
+| raising-teenagers | The LORD disciplines the one he loves, as a father the son he delights in | Proverbs 3:11-12 |
+| raising-teenagers | Joseph is seventeen; Jacob repeats Isaac's favoritism (25:28); children see the rankings | note genesis/37 verses 3-4; plain genesis/37 1-4 hard |
+| raising-teenagers | Psalm 119's second stanza: how can a young man keep his way pure | plain psalms/119 9-16 |
+| raising-teenagers | Rejoice in youth, know God will judge | Ecclesiastes 11:9-10; note ecclesiastes/11 summary |
+| raising-teenagers | Timothy told not to let anyone despise his youth | plain 1-timothy/4 11-16 |
+| raising-teenagers | Jeremiah protests he is a youth; God knew and appointed him before birth | note jeremiah/1 summary |
+| raising-teenagers | John encourages every age group; young men are strong | note 1-john/2 summary; 1 John 2:14 |
+| raising-teenagers | The father divides his property between both sons | note luke/15 verses 11-12 |
+| raising-teenagers | "Obey your parents in the Lord": obedience belongs to Christ first; verse 4 limits the parent; never used to keep a child quiet about abuse | plain ephesians/6 1-4 hard (care lines word for word) |
+| parenting-adult-children | Mary states the need and leaves the response to her son; "Do whatever He tells you" | note john/2 verses 3-5; plain john/2 1-5 hard |
+| parenting-adult-children | Naomi blesses her daughters-in-law to go; Orpah goes, Ruth stays | Ruth 1:8-14; note ruth/1 summary |
+| parenting-adult-children | Rebekah plans every step; the family split; Jacob twenty years with Laban | note genesis/27 verses 8-10; Genesis 31:41 |
+| parenting-adult-children | Samuel's sons took bribes | 1 Samuel 8:1-5; note 1-samuel/8 summary |
+| parenting-adult-children | The elder's joy at his children in the truth; written to Gaius | note 3-john/1 summary |
+| parenting-adult-children | Do not despise your mother when she is old | Proverbs 23:22 |
+| parenting-adult-children | Jacob blesses Joseph's sons, crossing his hands; blessing a gift not a right | note genesis/48 verses 15-16; plain genesis/48 13-20 hard |
+| parenting-adult-children | The priestly blessing puts God's name on Israel | Numbers 6:22-27; note numbers/6 summary |
+| parenting-adult-children | Honor includes practical support; Jesus rebuked using religion to avoid caring for parents | plain 1-timothy/5; plain luke/9 (Mark 7:10-13); plain ephesians/6 1-4 hard ("in the Lord") |
+| new-parenthood | Warrior and shepherd in one picture; the same arm does both | note isaiah/40 verses 10-11 |
+| new-parenthood | The birth told in one plain sentence; no room; census under Augustus | note luke/2 verses 6-7; plain luke/2 1-7 |
+| new-parenthood | Mary's reflection set against the crowd's passing wonder | note luke/2 verse 19 |
+| new-parenthood | Sarah's laughter turned to joy; no promise of a child to every couple | note genesis/21 verses 6-7; plain genesis/21 1-7 hard |
+| new-parenthood | The labor picture may hurt a mother who lost a baby; grief not carried alone | plain john/16 16-24 hard (care line word for word) |
+| new-parenthood | God was his God before he could know it | note psalms/22 verses 9-10 |
+| new-parenthood | Babylon's gods carried; the LORD carries his people | note isaiah/46 summary |
+| new-parenthood | Moses' mother hid him; first in a chain of women who save Moses | note exodus/2 verse 2 |
+| new-parenthood | Naomi takes Obed on her lap; the women celebrate | Ruth 4:13-17; note ruth/4 summary |
+| new-parenthood | The invitation is not one more demand; a yoke is made for two | plain matthew/11 28-30 hard |
+| new-parenthood | 1 Timothy 2:15: three readings; on every reading not saved by having children; worth not dependent on bearing children | plain 1-timothy/2 15 hard |
+| new-parenthood | Postpartum changes can shape mood | life/the-heavy-mind ("postpartum chemistry") |
+| empty-nest | Children as arrows; a home without children not less blessed | Psalm 127:3-5; plain psalms/127 3-5 hard |
+| empty-nest | Fourteen pairs; everything beautiful in its time | note ecclesiastes/3 summary |
+| empty-nest | Abram goes without reply at seventy-five | note genesis/12 verse 4 |
+| empty-nest | Caleb at eighty-five asks for Hebron, held by the Anakim; Joshua blesses him | note joshua/14 summary; Joshua 14:10-12 |
+| empty-nest | Anna married seven years, widowed, worshipped night and day; Luke gives her the last word | plain luke/2 36-40 and hard |
+| empty-nest | Psalm 92 is the only psalm whose heading names the Sabbath | plain psalms/92 1-15 |
+| empty-nest | Two are better than one follows the man who toils alone | note ecclesiastes/4 summary |
+| empty-nest | Paul as a nursing mother and a father | 1 Thessalonians 2:7-12; note 1-thessalonians/2 summary |
+| empty-nest | The hundredfold is the new family of believers, with persecutions, not money | plain mark/10 23-31 hard |
+| empty-nest | "Light and momentary" is Paul's testimony, not a line for others | plain 2-corinthians/4 13-18 hard |
+| going-to-college | Daniel and friends trained in Chaldean language and literature, given new names; God gave them understanding (1:17); refused the king's food | Daniel 1:4, 8, 17; note daniel/1 summary |
+| going-to-college | Remember your Creator before old age; the house falling silent | note ecclesiastes/12 summary |
+| going-to-college | The fear of the LORD is reverent awe; between Wisdom's and Folly's feasts | note proverbs/9 (summary and words); note proverbs/1 |
+| going-to-college | God's promise to Jacob turns personal; Jacob wakes unaware God was there | note genesis/28 verses 15-17 |
+| going-to-college | Nowhere to flee God's presence | plain psalms/139 1-12 |
+| going-to-college | Hebrews: some had made a habit of not meeting | Hebrews 10:25; note hebrews/10 verses 24-25 |
+| going-to-college | Bereans examined the Scriptures daily; called noble-minded | Acts 17:11; plain acts/17 10-15 |
+| going-to-college | Paul at Athens began from common ground, then called to repent and named the resurrection | plain acts/17 22-28 hard |
+| going-to-college | Romans 12:2: not withdrawal; "this world" is the pattern of life that ignores God | plain romans/12 1-2 hard |
+| caring-for-aging-parents | The fifth command is the first to carry a promise; parents honored as those through whom God gives life | note exodus/20 verse 12 |
+| caring-for-aging-parents | Rise before the aged, in the chapter of love your neighbor | Leviticus 19:18, 32; note leviticus/19 summary |
+| caring-for-aging-parents | Children and grandchildren repay their parents; pleasing to God | 1 Timothy 5:3-4; plain 1-timothy/5 3-8 |
+| caring-for-aging-parents | Corban: a vow ruled to outrank the fifth commandment | note mark/7 verses 11-12 |
+| caring-for-aging-parents | Joseph at once turns to practical care for Jacob in Goshen | note genesis/45 verses 9-11 |
+| caring-for-aging-parents | Ruth pledges herself to Naomi; the book ends in David's line | Ruth 1:16-18, 4:17-22; note ruth/1 summary |
+| caring-for-aging-parents | Jethro: the task is too heavy; share the load | Exodus 18:17-23; note exodus/18 summary |
+| caring-for-aging-parents | Carry one another's burdens; each carries his own load | Galatians 6:2, 5 |
+| caring-for-aging-parents | "Worse than an unbeliever" concerns those who could care and would not; never a reason to shame | plain 1-timothy/5 3-8 hard (care line word for word) |
+| caregiving | Jesus entrusts his mother to the beloved disciple; readings of the scene | note john/19 verses 26-27; plain john/19 23-27 hard |
+| caregiving | Foot washing as example; not a command to stay under abuse | note john/13 verses 12-15; plain john/13 12-20 hard (care line word for word) |
+| caregiving | Barzillai at eighty cannot taste or hear the singers | 2 Samuel 19:33-37; note 2-samuel/19 summary |
+| caregiving | Boaz has heard all Ruth did for Naomi; refuge under God's wings | Ruth 2:10-12; note ruth/2 summary |
+| caregiving | "I was sick and you looked after Me"; two readings of the least of these | note matthew/25 verses 35-36; plain matthew/25 31-40 hard |
+| caregiving | An angel feeds Elijah twice; he travels to Horeb | 1 Kings 19:5-8; note 1-kings/19 summary |
+| caregiving | The chapter that began with comfort ends with endurance | note isaiah/40 verses 29-31 |
+| caregiving | God will not forget the work and love shown to the saints | note hebrews/6 verse 10 |
+| difficult-family | "Though my father and mother forsake me": the hurt named; "receive" means gathered in; not unwanted | plain psalms/27 7-14 hard (care line word for word) |
+| difficult-family | Joseph sold for twenty shekels; human trafficking named a crime | plain genesis/37 25-28 hard; note genesis/37 verse 28 |
+| difficult-family | Saul curses Jonathan and hurls a spear; Jonathan leaves in anger and next morning warns David | 1 Samuel 20:30-35; note 1-samuel/20 summary |
+| difficult-family | Amnon rapes Tamar; Absalom tells her to be quiet; David furious but does nothing | 2 Samuel 13:20-22; note 2-samuel/13 summary |
+| difficult-family | Jesus' family thought him out of his mind; James later a leader (Galatians 1:19) | plain mark/3 20-21 hard |
+| difficult-family | His brothers did not believe; he would not let family set his timetable | plain john/7 1-9 hard |
+| difficult-family | "Not peace but a sword" is not a call to violence nor to cut off family; Micah 7:6 | plain matthew/10 34-39 hard; note matthew/10 verses 35-36 |
+| difficult-family | Mizpah: a boundary between two men who did not trust each other; twenty years cheated | plain genesis/31 43-55 hard |
+| difficult-family | Romans 12: blessing an enemy never means staying in danger | plain romans/12 14-21 hard (care lines word for word) |
+| difficult-family | Obey your parents never used to keep a child quiet about abuse | plain ephesians/6 1-4 hard; plain colossians/3 |
+| difficult-family | Forgiveness misused to tell abused people to forgive quickly, keep quiet, go back | plain matthew/18 21-35 hard |
+| difficult-family | It was not your fault | plain genesis/34 (care line word for word) |
+| sibling-conflict | Sin crouching at the door; "Where is your brother?" echoes 3:9; Cain's lie | Genesis 4:6-9; note genesis/4 verse 9 |
+| sibling-conflict | Esau's grief hardens into a plan to kill Jacob; echoes Cain and Abel | note genesis/27 verse 41 |
+| sibling-conflict | Esau runs and they both weep; the reverse of what Jacob prepared; Jacob declines to travel together | note genesis/33 verse 4 and summary |
+| sibling-conflict | Joseph weeps over each brother; only then they talk; Judah's offer | note genesis/45 verses 14-15; Genesis 44:33 |
+| sibling-conflict | Martha served anxious and resentful; Jesus says her name with love | plain luke/10 38-42 hard |
+| sibling-conflict | Jesus refuses to arbitrate an inheritance and warns against greed | note luke/12 verses 13-14 |
+| sibling-conflict | The older brother is anyone grown hard toward the one who came home; not a picture of the Jewish people | plain luke/15 25-32 hard |
+| sibling-conflict | Worship waits for reconciliation; never means going back to someone dangerous | note matthew/5 verses 23-24; plain matthew/5 21-26 hard (care line word for word) |
+
+James in the explorer: thirteen theme names and lines, each checked against the verses tagged with it; five draw on the introduction's own themes (shown word for word).
+
+| Theme | Claim | Checked against |
+|---|---|---|
+| trials | Joy in trials, testing grows perseverance; the prophets and Job as examples of patience | intro themes "Trials and endurance"; James 1:2-4, 1:12, 5:10-11 |
+| wisdom | Ask God for wisdom without doubting; wisdom from above against jealousy and selfish ambition | intro themes "Wisdom from above"; James 1:5-8, 3:13-18 |
+| faith | Doers of the word; faith dead without deeds; Abraham and Rahab | intro themes "Faith and deeds"; James 1:22-25, 2:14-26 |
+| rich | The lowly lifted and the rich brought low; favoritism; wages withheld; riches rot | intro themes "The poor and the rich"; James 1:9-11, 2:1-7, 5:1-6 |
+| tongue | Quick to listen; the tongue a fire; slander, complaining; yes and no | intro themes "Speech"; James 1:19, 3:1-12, 4:11, 5:9, 5:12 |
+| law | Love your neighbor; the law of freedom; orphans and widows; mercy over judgment | James 1:25, 1:27, 2:8-13 |
+| desire | Temptation from one's own desires, not from God; quarrels from passions within | James 1:13-16, 4:1-3 |
+| prayer | Ask in faith; wrong motives; the prayer of faith for the suffering, sick and sinner | James 1:5-8, 4:2-3, 5:13-18 |
+| humble | God opposes the proud; submit, draw near, grieve, confess | James 4:6-10, 5:16 |
+| world | Friendship with the world; the rich fade in their pursuits; boasting about tomorrow; life a mist | James 1:10-11, 4:4, 4:13-16 |
+| giver | The unchanging Father of every good gift; new birth; tempts no one; full of compassion | James 1:13, 1:17-18, 4:6, 5:11 |
+| coming | The crown of life; judgment without mercy; the Judge at the door; patience until the Lord comes | James 1:12, 2:13, 5:7-9 |
+| together | No favoritism; a brother or sister in need; confession and prayer; bringing back the one who wanders | James 2:1-4, 2:15-16, 5:16, 5:19-20 |
+| panel | How to read James; faith and deeds with Paul, every reading given, no side | intro reading; note james/2 hard; note romans/4 hard (shown word for word) |
+| panel | Romans 3's hard question is about the cross, so the panel uses Romans 4's | note romans/3 hard |
+
+The quiet focus mark and the keys hint add no claim. Nothing outside the repo was opened for this build.

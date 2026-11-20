@@ -1,11 +1,18 @@
 /**
- * The Wisdom Books Explorer (/tools/wisdom-books): the book of Proverbs read
- * three ways. Today's chapter (the day of the month, the old habit of a
- * chapter a day), every verse on one of twenty themes in book order, or the
- * book chapter by chapter. Each chapter is laid out under the Study Bible's
- * own outline, title and summary; any verse in a theme opens to the verses
- * around it; and a fixed panel teaches, in the Study Bible's own words, how
- * to read a proverb (a pattern, not a promise; Proverbs 26:4-5 side by side).
+ * The Wisdom Books Explorer (/tools/wisdom-books): Proverbs, Ecclesiastes and
+ * the Letter of James.
+ * Proverbs read three ways: today's chapter (the day of the month, the old
+ * habit of a chapter a day), every verse on one of twenty themes in book
+ * order, or chapter by chapter. Ecclesiastes read two ways: every verse on
+ * one of sixteen themes fitted to that book, or chapter by chapter; James the
+ * same two ways, under thirteen themes fitted to the letter. Each
+ * chapter is laid out under the Study Bible's own outline, title and summary;
+ * any verse in a theme opens to the verses around it; and a fixed panel
+ * teaches in the Study Bible's own words how to read the book (a proverb: a
+ * pattern, not a promise, with 26:4-5 side by side; Ecclesiastes: the
+ * readings of hevel and of the epilogue, given side by side, no side taken;
+ * James: faith and deeds with Paul, the readings the notes on James 2 and
+ * Romans 4 give, no side taken).
  *
  * Content as data (client/public/wisdom-books/, built and checked by
  * scripts/build-wisdom-books-index.mjs and scripts/validate-wisdom-books.mjs):
@@ -14,8 +21,11 @@
  * by its address and from the Wisdom Finder, and noindex.
  *
  * Built on the tool shell: ToolHead, QuestionCard, useToolProgress
- * (`livewell-progress-wisdom-books`: the way in, the theme, the chapter,
- * chapters marked read, lines kept), ResultSection, ResultNext, ResultActions.
+ * (`livewell-progress-wisdom-books`: the book, and Proverbs' way in, theme,
+ * chapter, chapters marked read and lines kept, in the shape it has always
+ * had; `livewell-progress-wisdom-books-ecclesiastes` and
+ * `livewell-progress-wisdom-books-james`: the same for those books),
+ * ResultSection, ResultNext, ResultActions.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
@@ -33,12 +43,17 @@ import {
   useToolProgress,
 } from "@/components/tool-shell";
 import {
+  WB_BOOKS,
+  bookChapters,
+  bookName,
   fetchWbChapter,
   fetchWbIndex,
   fetchWbTheme,
+  isWbBook,
   outlineStart,
   studyHref,
   todaysChapter,
+  type WbBook,
   type WbChapter,
   type WbIndex,
   type WbThemeFile,
@@ -54,6 +69,8 @@ interface Kept {
 }
 
 interface Place {
+  /** The book shown; kept in Proverbs' place only (absent means Proverbs). */
+  book?: WbBook;
   way: Way | null;
   theme: string | null;
   chapter: number;
@@ -72,6 +89,7 @@ const isPlace = (x: unknown): x is Place => {
   return (
     !!p &&
     typeof p === "object" &&
+    (p.book === undefined || isWbBook(p.book)) &&
     (p.way === null ||
       p.way === "today" ||
       p.way === "theme" ||
@@ -88,16 +106,23 @@ const isPlace = (x: unknown): x is Place => {
 };
 
 const KEEP_MAX = 12;
-const ref = (c: number, v: number) => `Proverbs ${c}:${v}`;
+const refIn = (b: WbBook) => (c: number, v: number) => `${bookName(b)} ${c}:${v}`;
 
-function useChapter(n: number | null) {
+function useChapter(n: number | null, book: WbBook) {
   const [cache, setCache] = useState<Map<number, WbChapter>>(new Map());
   const [failed, setFailed] = useState<number | null>(null);
   const [nonce, setNonce] = useState(0);
+  // A new book starts a new cache.
+  const [cacheBook, setCacheBook] = useState(book);
+  if (cacheBook !== book) {
+    setCacheBook(book);
+    setCache(new Map());
+    setFailed(null);
+  }
   useEffect(() => {
-    if (n === null || cache.has(n)) return;
+    if (n === null || cache.has(n) || cacheBook !== book) return;
     let stale = false;
-    fetchWbChapter(n)
+    fetchWbChapter(n, book)
       .then(d => {
         if (!stale) setCache(m => new Map(m).set(n, d));
       })
@@ -107,12 +132,12 @@ function useChapter(n: number | null) {
     return () => {
       stale = true;
     };
-  }, [n, cache, nonce]);
+  }, [n, cache, nonce, book, cacheBook]);
   return {
     get: (c: number) => cache.get(c) ?? null,
     load: (c: number) =>
       !cache.has(c) &&
-      fetchWbChapter(c)
+      fetchWbChapter(c, book)
         .then(d => setCache(m => new Map(m).set(c, d)))
         .catch(() => undefined),
     failed,
@@ -127,10 +152,12 @@ function KeepButton({
   verse,
   kept,
   onToggle,
+  refOf,
 }: {
   verse: Kept;
   kept: boolean;
   onToggle: () => void;
+  refOf: (c: number, v: number) => string;
 }) {
   return (
     <button
@@ -141,25 +168,51 @@ function KeepButton({
     >
       {kept ? <Check size={14} strokeWidth={2} aria-hidden="true" /> : null}
       Keep this line
-      <span className="sr-only"> ({ref(verse.c, verse.v)})</span>
+      <span className="sr-only"> ({refOf(verse.c, verse.v)})</span>
     </button>
   );
 }
 
 export default function WisdomBooks() {
   const today = todaysChapter();
-  const place = useToolProgress<Place>("wisdom-books", isPlace, {
+  const main = useToolProgress<Place>("wisdom-books", isPlace, {
     way: null,
     theme: null,
     chapter: today,
     read: [],
     kept: [],
   });
+  const ecc = useToolProgress<Place>("wisdom-books-ecclesiastes", isPlace, {
+    way: null,
+    theme: null,
+    chapter: 1,
+    read: [],
+    kept: [],
+  });
+  const jas = useToolProgress<Place>("wisdom-books-james", isPlace, {
+    way: null,
+    theme: null,
+    chapter: 1,
+    read: [],
+    kept: [],
+  });
+  const book: WbBook = main.value.book ?? "proverbs";
+  const isProverbs = book === "proverbs";
+  const place = isProverbs ? main : book === "james" ? jas : ecc;
   const p = place.value;
-  const [index, setIndex] = useState<WbIndex | null>(null);
+  const name = bookName(book);
+  const total = bookChapters(book);
+  const ref = refIn(book);
+  // The index of the book shown; one loaded for another book is not shown.
+  const [loaded, setLoaded] = useState<{ book: WbBook; data: WbIndex } | null>(
+    null
+  );
+  const index = loaded?.book === book ? loaded.data : null;
   const [indexFailed, setIndexFailed] = useState(false);
   const [indexNonce, setIndexNonce] = useState(0);
-  const [themeFile, setThemeFile] = useState<WbThemeFile | null>(null);
+  const [themeFile, setThemeFile] = useState<
+    (WbThemeFile & { book: WbBook }) | null
+  >(null);
   const [themeFailed, setThemeFailed] = useState<string | null>(null);
   const [themeNonce, setThemeNonce] = useState(0);
   const [open, setOpen] = useState<string | null>(null);
@@ -168,32 +221,36 @@ export default function WisdomBooks() {
   const wantView = useRef(false);
 
   const shownChapter =
-    p.way === "today" ? today : p.way === "chapter" ? p.chapter : null;
-  const chapters = useChapter(shownChapter);
+    p.way === "today" && isProverbs
+      ? today
+      : p.way === "chapter"
+        ? Math.min(p.chapter, total)
+        : null;
+  const chapters = useChapter(shownChapter, book);
   const chapter = shownChapter !== null ? chapters.get(shownChapter) : null;
 
   useEffect(() => {
     let stale = false;
-    fetchWbIndex()
-      .then(d => !stale && setIndex(d))
+    fetchWbIndex(book)
+      .then(d => !stale && setLoaded({ book, data: d }))
       .catch(() => !stale && setIndexFailed(true));
     return () => {
       stale = true;
     };
-  }, [indexNonce]);
+  }, [indexNonce, book]);
 
   useEffect(() => {
     if (p.way !== "theme" || !p.theme) return;
-    if (themeFile?.id === p.theme) return;
+    if (themeFile?.id === p.theme && themeFile.book === book) return;
     let stale = false;
     const id = p.theme;
-    fetchWbTheme(id)
-      .then(d => !stale && setThemeFile(d))
+    fetchWbTheme(id, book)
+      .then(d => !stale && setThemeFile({ ...d, book }))
       .catch(() => !stale && setThemeFailed(id));
     return () => {
       stale = true;
     };
-  }, [p.way, p.theme, themeFile, themeNonce]);
+  }, [p.way, p.theme, themeFile, themeNonce, book]);
 
   useEffect(() => {
     if (!wantView.current) return;
@@ -275,11 +332,16 @@ export default function WisdomBooks() {
         time="Five minutes for a chapter; as long as you like for a theme"
         keeps="The chapters you mark read and the lines you keep stay in this browser and are never sent anywhere."
         plate="book"
-      />
+      >
+        <p className="ts-note">
+          Ecclesiastes and the Letter of James are here too, each by its own
+          themes and chapter by chapter: choose the book below.
+        </p>
+      </ToolHead>
 
       {indexFailed ? (
         <LoadFailed
-          what="Proverbs by theme"
+          what={`${name} by theme`}
           onRetry={() => {
             setIndexFailed(false);
             setIndexNonce(n => n + 1);
@@ -292,13 +354,35 @@ export default function WisdomBooks() {
           <section className="ts-band wb-pick" aria-label="How to read">
             <div className="ts-col">
               <QuestionCard
-                question="How would you like to read Proverbs?"
+                question="Which book?"
+                options={WB_BOOKS.map(b => ({
+                  value: b.id,
+                  label: b.name,
+                  hint:
+                    b.id === "proverbs"
+                      ? "Thirty-one chapters of sayings on wisdom and folly, gathered under twenty themes."
+                      : b.id === "james"
+                        ? "Five chapters of the New Testament's wisdom letter, on trials, faith and deeds, wealth and the tongue, gathered under thirteen themes of its own."
+                        : "Twelve chapters of the Teacher's search under the sun, gathered under sixteen themes of its own.",
+                }))}
+                value={book}
+                onChange={v => {
+                  setOpen(null);
+                  main.set(x => ({ ...x, book: v as WbBook }));
+                }}
+              />
+              <QuestionCard
+                question={`How would you like to read ${name}?`}
                 options={[
-                  {
-                    value: "today",
-                    label: `Today's chapter: Proverbs ${today}`,
-                    hint: "One chapter for each day of the month, the whole chapter.",
-                  },
+                  ...(isProverbs
+                    ? [
+                        {
+                          value: "today",
+                          label: `Today's chapter: Proverbs ${today}`,
+                          hint: "One chapter for each day of the month, the whole chapter.",
+                        },
+                      ]
+                    : []),
                   {
                     value: "theme",
                     label: "By theme",
@@ -309,10 +393,14 @@ export default function WisdomBooks() {
                   {
                     value: "chapter",
                     label: "Chapter by chapter",
-                    hint: "Thirty-one chapters, each under the Study Bible's outline.",
+                    hint: isProverbs
+                      ? "Thirty-one chapters, each under the Study Bible's outline."
+                      : book === "james"
+                        ? "Five chapters, each under the Study Bible's outline."
+                        : "Twelve chapters, each under the Study Bible's outline.",
                   },
                 ]}
-                value={p.way}
+                value={!isProverbs && p.way === "today" ? null : p.way}
                 onChange={v => {
                   setOpen(null);
                   place.set(x => ({ ...x, way: v as Way }));
@@ -320,7 +408,7 @@ export default function WisdomBooks() {
               />
               {p.read.length > 0 && (
                 <p className="ts-count" style={{ marginTop: "var(--s-2)" }}>
-                  {p.read.length} of 31 chapters marked read
+                  {p.read.length} of {total} chapters marked read
                 </p>
               )}
               {place.saveFailed && (
@@ -375,7 +463,7 @@ export default function WisdomBooks() {
                       >
                         <span aria-hidden="true">{c.n}</span>
                         <span className="sr-only">
-                          Proverbs {c.n}: {c.title}
+                          {name} {c.n}: {c.title}
                           {read(c.n) ? ", marked read" : ""}
                         </span>
                         {read(c.n) && (
@@ -400,19 +488,19 @@ export default function WisdomBooks() {
               <div className="ts-col">
                 {chapters.failed === shownChapter ? (
                   <LoadFailed
-                    what={`Proverbs ${shownChapter}`}
+                    what={`${name} ${shownChapter}`}
                     onRetry={chapters.retry}
                   />
                 ) : !chapter ? (
                   <p className="ts-count" role="status">
-                    Opening Proverbs {shownChapter}…
+                    Opening {name} {shownChapter}…
                   </p>
                 ) : (
                   <>
                     <p className="wb-kicker">
-                      {p.way === "today"
+                      {p.way === "today" && isProverbs
                         ? `Today's chapter · Proverbs ${chapter.n}`
-                        : `Proverbs ${chapter.n} of 31`}
+                        : `${name} ${chapter.n} of ${total}`}
                     </p>
                     <h2
                       id="wb-view-h"
@@ -424,8 +512,8 @@ export default function WisdomBooks() {
                     </h2>
                     <p className="ts-part__line">{chapter.summary}</p>
                     <p className="wb-source">
-                      Title, summary and outline from the Study Bible's notes on
-                      Proverbs {chapter.n}.
+                      Title, summary and outline from the Study Bible's notes on{" "}
+                      {name} {chapter.n}.
                     </p>
                     {sections.map(s =>
                       s.verses.length ? (
@@ -469,6 +557,7 @@ export default function WisdomBooks() {
                                         </button>
                                       ))}
                                     <KeepButton
+                                      refOf={ref}
                                       verse={{ c: chapter.n, v: v.v, t: v.t }}
                                       kept={isKeptLine(chapter.n, v.v)}
                                       onToggle={() =>
@@ -494,15 +583,18 @@ export default function WisdomBooks() {
                           checked={read(chapter.n)}
                           onChange={() => toggleRead(chapter.n)}
                         />{" "}
-                        I have read Proverbs {chapter.n}
+                        I have read {name} {chapter.n}
                       </label>
-                      <Link href={studyHref(chapter.n)} className="btn--text">
+                      <Link
+                        href={studyHref(chapter.n, undefined, book)}
+                        className="btn--text"
+                      >
                         <BookOpen
                           size={16}
                           strokeWidth={1.75}
                           aria-hidden="true"
                         />{" "}
-                        The Study Bible's notes on Proverbs {chapter.n}
+                        The Study Bible's notes on {name} {chapter.n}
                       </Link>
                     </div>
                     <div className="ts-nav no-print">
@@ -517,18 +609,18 @@ export default function WisdomBooks() {
                             strokeWidth={1.75}
                             aria-hidden="true"
                           />{" "}
-                          Proverbs {chapter.n - 1}
+                          {name} {chapter.n - 1}
                         </button>
                       ) : (
                         <span />
                       )}
-                      {chapter.n < 31 && (
+                      {chapter.n < total && (
                         <button
                           type="button"
                           className="btn--text"
                           onClick={() => goChapter(chapter.n + 1)}
                         >
-                          Proverbs {chapter.n + 1}{" "}
+                          {name} {chapter.n + 1}{" "}
                           <ChevronRight
                             size={16}
                             strokeWidth={1.75}
@@ -547,7 +639,7 @@ export default function WisdomBooks() {
             <section className="ts-band wb-view" aria-labelledby="wb-view-h">
               <div className="ts-col">
                 <p className="wb-kicker">
-                  A theme in Proverbs · {theme.count} verses
+                  A theme in {name} · {theme.count} verses
                 </p>
                 <h2
                   id="wb-view-h"
@@ -564,7 +656,7 @@ export default function WisdomBooks() {
                     aria-label={`From the Study Bible: ${theme.note.title}`}
                   >
                     <p className="wb-note__kicker">
-                      From the Study Bible's introduction to Proverbs:{" "}
+                      From the Study Bible's introduction to {name}:{" "}
                       {theme.note.title}
                     </p>
                     <p>{theme.note.body}</p>
@@ -578,7 +670,9 @@ export default function WisdomBooks() {
                       setThemeNonce(n => n + 1);
                     }}
                   />
-                ) : !themeFile || themeFile.id !== theme.id ? (
+                ) : !themeFile ||
+                  themeFile.id !== theme.id ||
+                  themeFile.book !== book ? (
                   <p className="ts-count" role="status">
                     Gathering the verses…
                   </p>
@@ -640,24 +734,25 @@ export default function WisdomBooks() {
                                       className="btn--text"
                                       onClick={() => goChapter(v.c)}
                                     >
-                                      Read all of Proverbs {v.c} here
+                                      Read all of {name} {v.c} here
                                     </button>
                                     <Link
-                                      href={studyHref(v.c)}
+                                      href={studyHref(v.c, undefined, book)}
                                       className="btn--text"
                                     >
-                                      Notes on Proverbs {v.c}
+                                      Notes on {name} {v.c}
                                     </Link>
                                   </p>
                                 </>
                               ) : (
                                 <p className="ts-count" role="status">
-                                  Opening Proverbs {v.c}…
+                                  Opening {name} {v.c}…
                                 </p>
                               ))}
                           </div>
                           <div className="wb-verse__tools">
                             <KeepButton
+                              refOf={ref}
                               verse={v}
                               kept={isKeptLine(v.c, v.v)}
                               onToggle={() => toggleKeep(v)}
@@ -721,34 +816,61 @@ export default function WisdomBooks() {
             <section className="ts-band wb-teach" aria-labelledby="wb-teach-h">
               <div className="ts-col">
                 <h2 id="wb-teach-h" className="ts-r__title">
-                  How to read a proverb
+                  {isProverbs ? "How to read a proverb" : `How to read ${name}`}
                 </h2>
                 <p className="wb-source">
-                  In the words of the Study Bible's notes on Proverbs.
+                  In the words of the Study Bible's notes on {name}
+                  {index.teaching.hard?.some(h => h.book)
+                    ? ` and ${Array.from(new Set(index.teaching.hard.flatMap(h => (h.book ? [h.book] : [])))).join(" and ")}`
+                    : ""}
+                  .
                 </p>
                 <div className="ts-r__prose">
                   {index.teaching.reading.map((para, i) => (
                     <p key={i}>{para}</p>
                   ))}
                 </div>
-                <h3 className="wb-sec__title">{index.teaching.pair.q}</h3>
-                <div className="wb-pair">
-                  {index.teaching.pair.verses.map(v => (
-                    <figure key={v.v} className="ts-verse">
-                      <blockquote>
-                        <p>{v.t}</p>
-                      </blockquote>
-                      <figcaption className="wb-kept__ref">
-                        {ref(v.c, v.v)}
-                      </figcaption>
-                    </figure>
-                  ))}
-                </div>
-                <div className="ts-r__prose">
-                  {index.teaching.pair.a.map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
-                </div>
+                {index.teaching.pair && (
+                  <>
+                    <h3 className="wb-sec__title">{index.teaching.pair.q}</h3>
+                    <div className="wb-pair">
+                      {index.teaching.pair.verses.map(v => (
+                        <figure key={v.v} className="ts-verse">
+                          <blockquote>
+                            <p>{v.t}</p>
+                          </blockquote>
+                          <figcaption className="wb-kept__ref">
+                            {ref(v.c, v.v)}
+                          </figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                    <div className="ts-r__prose">
+                      {index.teaching.pair.a.map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))}
+                    </div>
+                  </>
+                )}
+                {index.teaching.hard?.map(h => (
+                  <div key={`${h.book ?? name}-${h.c}`}>
+                    <h3 className="wb-sec__title">
+                      {h.q}{" "}
+                      <span className="wb-sec__range">
+                        From the notes on {h.book ?? name} {h.c}
+                      </span>
+                    </h3>
+                    <div className="ts-r__prose">
+                      {h.a.map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+                <p className="wb-more">
+                  The wisdom books teach; the Psalms pray.{" "}
+                  <Link href="/tools/pray-the-psalms">Pray the Psalms</Link> finds a psalm for where you are and lets you pray it slowly.
+                </p>
                 <ResultActions
                   title="The Wisdom Books Explorer"
                   summary="Proverbs by theme and by day, with the Study Bible's notes."

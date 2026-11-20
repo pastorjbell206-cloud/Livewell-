@@ -1,0 +1,81 @@
+---
+area: god
+slug: the-moral-argument-and-euthyphro
+status: pending (not on the site; for James to read first)
+question: "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?"
+ledger: docs/work/elite/apol-ledger.md, "Eighteenth run", key "aq"
+---
+
+# Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?
+
+## The short answer
+
+Nearly everyone, believer or not, lives as though some things are really wrong whatever anyone thinks. The moral argument asks what best explains that: obligations that bind every person and that ordinary people can know. Christians answer that they rest on a God who is goodness itself. Some atheist philosophers, Erik Wielenberg among them, answer that the basic moral truths are necessary and need nothing beneath them; others hold that morality is an evolved human practice with no authority beyond us. Plato's Euthyphro poses a real dilemma for the view that right is simply whatever God happens to command, and the classical Christian answer takes neither of its horns. The argument doesn't prove God, and it doesn't claim that unbelievers can't be good. If it is sound, it shows a personal and good ground of moral obligation. Who that God is, it doesn't yet say.
+
+## The objection at its strongest
+
+The objection comes in three parts. The first is the oldest. In Plato's *Euthyphro* Socrates asks "whether the pious or holy is beloved by the gods because it is holy, or holy because it is beloved of the gods" (in Benjamin Jowett's translation). Put in terms of one God: does God command what is right because it is right, or is it right because God commands it? If the first, rightness is a standard that holds independently of God, and morality needs no God. If the second, then had God commanded cruelty, cruelty would have been right, and to call God good says only that he does what he wills.
+
+The second is that morality doesn't need God because it stands on its own. Erik Wielenberg, an atheist philosopher, has defended what he calls "godless normative realism" in *Value and Virtue in a Godless Universe* (2005) and *Robust Ethics* (2014). As the Stanford Encyclopedia of Philosophy's article on moral arguments sets out his view, the most basic moral truths are basic and necessary: they are not derived from natural facts or from any more fundamental fact. Every explanation has to end somewhere. The theist ends at God; on Wielenberg's view the explanation ends at the moral truths themselves, and the theist owes a reason why that stopping place is worse.
+
+The third comes from biology. Our moral sense, on this view, is the product of natural selection working on social animals, refined by culture. J. L. Mackie argued in *Ethics: Inventing Right and Wrong* (1977) that objective moral values would be strange things, unlike anything else science finds, and concluded that there are none: morality is something human beings make. Sharon Street argued in 2006 that if evolution shaped our moral judgments, the realist faces a dilemma: either those judgments have no relation to the moral truths, in which case it would be luck if they matched, or they track those truths, which she judged scientifically implausible. At full strength the objection says that God is either unnecessary for morality or makes it arbitrary, and that the moral sense the argument appeals to has a natural history that explains it without him.
+
+## What is true in it
+
+Begin with what Christians should grant without reserve. Unbelievers are often good, sometimes better than believers, and they know right from wrong. Paul said as much: Gentiles who don't have the law "show that the work of the law is written on their hearts, their consciences also bearing witness" (Romans 2:15, BSB). The moral argument is not a claim that atheists can't be moral or can't know morality. It is a claim about what morality is.
+
+The Euthyphro is a real problem for one view, the view that rightness is nothing but the content of whatever God wills, with no reason in God's nature why he wills it. Any Christian who holds something close to that view meets the dilemma at full strength. Wielenberg's view is a serious alternative, and so is the evolutionary account of how moral feeling arose; Christians differ on how much of that history to accept, and nothing here depends on settling it. Philosophers are divided on the foundations of ethics, and the Stanford Encyclopedia of Philosophy's article on moral arguments observes that no single account of them enjoys wide support. And the Euthyphro bites hardest at one place Christians can't avoid: the Old Testament records commands to kill that look like the cruelty a good God would not command, a question the site's argued answer "Did God command genocide in the Old Testament?" takes up without an easy answer.
+
+## The evidence
+
+There are several moral arguments, not one. Immanuel Kant held in 1788 that the theoretical proofs of God fail but that a moral agent must will the highest good, a world where virtue and happiness meet, and so must postulate a God able to bring it about. Richard Swinburne has argued more modestly that our awareness of moral truth is more to be expected if God exists than if he doesn't. The version that has drawn the most attention in recent decades starts from moral obligation. Robert Merrihew Adams set it out in *Finite and Infinite Goods* (1999); what follows is his argument as the Stanford Encyclopedia summarizes it, not his own words. Obligations, he argued, are constituted by the requirements of social relationships, but not every relationship can generate a moral obligation, since some social systems are evil and their demands have no moral force. What could? If a good and loving God exists and made every person, the relation of each person to God has the features moral obligation needs: it is objective, it gives a reason that matters supremely, it outranks every other demand, and it can judge every human system.
+
+Adams's account answers the Euthyphro by a distinction. It locates goodness in God's nature and obligation in his commands. God's commands make actions obligatory, but they are not arbitrary, because God is essentially good and his commands are necessarily aimed at the good. This is close to the older answer of Thomas Aquinas, who wrote that "God alone is good essentially," because in God alone "essence is existence," and that other things are good by sharing in his goodness (*Summa Theologiae* I, q. 6, a. 3, in the English Dominican translation). Goodness, on this view, is neither a rule God might have written differently nor a law above him that he obeys. It is what God is.
+
+Against Wielenberg, two points carry weight. The first is Mackie's: if objective moral facts would be strange in a world of matter, Wielenberg's brute and necessary moral facts are no less strange, and they may be stranger in a universe with no mind at its source than in one grounded in a person. The second is Street's dilemma, which bears on Wielenberg more than on the theist. The Stanford article notes that it is not evolution by itself that makes moral knowledge improbable, but evolution together with the view that the process was unguided. Wielenberg answers that the laws which produced our moral sense may themselves be necessary, so the match between our beliefs and the moral truths is no accident. That is a coherent reply, and the article remarks that many philosophers will see it as a heavy price to pay to avoid theism. The theist has a simpler account: the same good God grounds the moral truths and made creatures able to know them.
+
+## The argument, laid out
+
+This is an inference to the best explanation. It doesn't claim to prove God from premises no one can deny; it asks which account makes best sense of something nearly everyone already believes.
+
+1. There are objective moral obligations: some things are required of every person whatever any person or society thinks, and failing them makes a person rightly blamed.
+2. Such obligations need a ground that can both bind every person and be known by them: something with authority, not merely a fact about what we feel or agree.
+3. A good and loving God, whose commands express his own nature and who made human beings able to know the good, grounds such obligations better than the alternatives: agreement, which can't bind against the society that agrees; evolved feeling, which explains why we feel bound but not that we are; and brute moral facts, which bind without anyone to whom we answer.
+
+So: objective moral obligation is evidence for a good God. It doesn't prove him, but it makes his existence more likely than it would otherwise be.
+
+The weight sits on the third step. Mackie and anti-realists such as Street deny the first step, and their view is consistent, though it gives up the conviction that cruelty would be wrong even if everyone approved it. Wielenberg grants the first step and denies the third, holding that necessary moral facts ground obligation as well as God does. The Euthyphro also targets the third step, charging that grounding obligation in God's commands makes it either arbitrary or redundant. A reader who finds brute moral facts as satisfying a stopping place as a good God will reject the third step, and that is a reasonable place to disagree.
+
+## The strongest reply, and an answer
+
+The strongest reply moves the dilemma back a step. Grant that goodness is God's nature. Is God's nature good because it meets the standard of goodness, in which case the standard is independent of him? Or is whatever God's nature happens to be called good, in which case the word is empty? And this is Wielenberg's parity again: if the theist may stop at a God who is good by nature, the atheist may stop at moral truths that are true by necessity.
+
+The answer is that the relocated dilemma assumes what it needs to prove, that there must be a standard either outside God or created by him. The classical view denies both. God's nature is not measured against a standard above it, and it is not chosen, so it is neither external nor arbitrary. It is the standard, as the length of a measuring rod is not checked against itself. Every account has a final standard; the question is what kind of thing it is. The Christian claim is that the final standard is a person who is good, and that this fits the shape of obligation better than an abstract fact does. Moral obligation is experienced as being answerable. Guilt is much like owing someone. A brute moral truth can't command, can't be wronged, and can't forgive; a good God can. That is not a knock-down reply. Reasonable people weigh it differently, and Wielenberg's view is a real alternative that this page doesn't claim to have refuted.
+
+If the argument succeeds, it shows a personal ground of obligation who is good. It doesn't show that this God is the God of Israel who brought his people out of Egypt, that he is Father, Son and Holy Spirit, or that he forgives. Christians confess those things because of what they hold God has done in history, above all in raising Jesus from the dead, a historical claim that the library's area on the historical Jesus and the resurrection takes up. Jesus himself put the moral argument's conclusion in a sentence: "No one is good except God alone" (Mark 10:18, BSB).
+
+## What remains unresolved
+
+Whether moral truths could be necessary and need no ground is unresolved, and it is the main disagreement between the theist and the atheist realist. Whether evolutionary explanations of moral feeling undermine moral knowledge, and for whom, is argued among philosophers of every belief. How divine commands relate to moral obligation, whether they constitute it, as Adams held, or reveal a natural law grounded in God's wisdom, as Aquinas held, is debated among Christians. And the commands to kill in the Old Testament remain the hardest case for any account of God's goodness.
+
+## Where Christians differ
+
+Christians differ on how morality depends on God. The natural law tradition that runs through Aquinas holds that the moral law is grounded in God's wisdom and in human nature as God made it, and can be known in large part by reason. Divine command theorists, in the line of Philip Quinn and Robert Adams, hold that moral obligation is constituted by God's commands, given by a God who is good. Christians also differ on how far conscience can be trusted after the fall. What all confess is that God is good and the source of all goodness, that his law is written on human hearts, and that he has shown what he requires: "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?" (Micah 6:8, BSB).
+
+## Read the other side
+
+- Erik J. Wielenberg, *Robust Ethics: The Metaphysics and Epistemology of Godless Normative Realism* (2014).
+- J. L. Mackie, *Ethics: Inventing Right and Wrong* (1977).
+- Sharon Street, "A Darwinian Dilemma for Realist Theories of Value," *Philosophical Studies* (2006).
+
+## Read further
+
+- Robert Merrihew Adams, *Finite and Infinite Goods* (1999).
+- Philip L. Quinn, *Divine Commands and Moral Requirements* (1978).
+- Thomas Aquinas, *Summa Theologiae*, part I, question 6 (written about 1265 to 1274).
+
+## On the site
+
+- The argued answer "Can you be good without God?" (/answers/can-you-be-good-without-god), which sets out this argument in shorter form and which this page agrees with and goes further than.
+- The argued answer "Did God command genocide in the Old Testament?" (/answers/did-god-command-genocide), on the hardest case.
+- The Study Bible's notes on Romans 2 (/study/bible/romans/2) and Micah 6 (/study/bible/micah/6).

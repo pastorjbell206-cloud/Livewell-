@@ -365,12 +365,21 @@ export default function WisdomFinder() {
                 </div>
               )}
               <div className="wz-sec">
-                <h3 className="wz-sec__kicker">Proverbs by theme</h3>
+                <h3 className="wz-sec__kicker">Proverbs, Ecclesiastes and James by theme</h3>
                 <p className="wf-results__count" style={{ margin: "0 0 8px" }}>
-                  All 915 verses of Proverbs gathered under twenty themes, a chapter for each day of the month, and the Study Bible's notes beside each chapter.
+                  All 915 verses of Proverbs gathered under twenty themes, a chapter for each day of the month, all 222 verses of Ecclesiastes under sixteen themes of its own, and all 108 verses of the Letter of James under thirteen, with the Study Bible's notes beside each chapter.
                 </p>
                 <Link href="/tools/wisdom-books" className="wz-link">
                   Open the Wisdom Books Explorer
+                </Link>
+              </div>
+              <div className="wz-sec">
+                <h3 className="wz-sec__kicker">A psalm to pray</h3>
+                <p className="wf-results__count" style={{ margin: "0 0 8px" }}>
+                  All 150 psalms, found by how you are today or by morning and evening, each with a guide to praying it drawn from the Study Bible's notes.
+                </p>
+                <Link href="/tools/pray-the-psalms" className="wz-link">
+                  Open Pray the Psalms
                 </Link>
               </div>
               {data && (

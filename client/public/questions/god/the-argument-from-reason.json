@@ -1,0 +1,102 @@
+{
+  "area": "god",
+  "slug": "the-argument-from-reason",
+  "status": "pending",
+  "question": "If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Eighteenth run (2026-11-20): an independent editor's read of the evil area, and the area \"God, faith and reason\"",
+    "key": "ar"
+  },
+  "record": "docs/work/elite/apol-pilot/god/the-argument-from-reason.md",
+  "objectionSource": {
+    "author": "Daniel C. Dennett",
+    "title": "Consciousness Explained",
+    "year": 1991
+  },
+  "shortAnswer": "Two facts about us are harder to explain than they look: that we are conscious, that there is something it is like to be us, and that we can reason our way to truths, including truths far from anything that helped our ancestors survive. Naturalists, who hold that nature is all there is, answer that both are products of the brain and of natural selection, and they have serious arguments: neuroscience keeps finding the brain at work in every thought, and selection plausibly favors minds that get the world right. Christians answer that both facts fit better a world whose source is itself a mind. The argument from reason and consciousness is not a proof, and it is weaker if neuroscience closes the gap it points to. If it is sound, it shows that mind is more basic than matter. It doesn't yet show which God, or what he has done.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "Start with the strongest naturalist picture. Every year neuroscience ties more of mental life to the brain: perception, memory, emotion, decision, even the sense of self can be changed by damage, drugs or stimulation of particular regions. Daniel Dennett argued in *Consciousness Explained* (1991) that there is no inner theater in the brain where experience is shown to a watching self, and no extra ingredient beyond the brain's own processing to be explained. Other philosophers hold that conscious states are functional states of a system, or states that represent the world in a certain way, and some, the eliminativists, argue that consciousness as we ordinarily conceive it doesn't exist at all, so that there is no deep problem to solve. On every one of these views, consciousness is what brains do.\n\nThen the reliability of reason. On the naturalist picture our minds were shaped by natural selection, and selection, its defenders argue, favors minds that get the world right. A creature that believes the cliff edge is solid ground, or the lion a friendly cat, doesn't survive to reproduce, and a false belief that happens to produce the right action in one situation will produce the wrong one in the next. Reasoning in general, the capacity to draw inferences and test them, would have paid its way across countless situations, and once it existed it could be turned to mathematics and science. On that view nothing about our capacity to know needs anything beyond nature to explain it.\n\nAt full strength the objection says that the argument from reason is an argument from ignorance. It points at what neuroscience and evolutionary biology haven't yet explained and puts God in the gap, and every gap of that kind in the history of science has closed. And a God who made minds explains nothing about how minds work, since \"God did it\" names no mechanism."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "Much of it. The dependence of the mind on the brain is real and well established, and a Christian account of the person has to make full room for it. Scripture itself never treats the human being as a ghost in a body. And the record of arguments that put God in a gap of scientific knowledge is poor; a God who fills holes in science should be expected to shrink as the holes close. If the argument here were only that science hasn't yet explained consciousness, it would deserve that fate.\n\nThe evolutionary reply also has real force. Selection doesn't favor truth as such, but for beliefs about food, predators and the lie of the land, true beliefs usually guide behavior better than false ones, and the Christian argument built on the opposite claim has drawn sharp criticism from philosophers. And it is fair to say that theism doesn't explain how consciousness arises from or relates to the brain. Christians who use this argument should claim no more than it gives."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Darwin himself put the doubt about reason plainly. In a letter of 3 July 1881 to William Graham, after telling Graham that his book had expressed Darwin's own \"inward conviction\" that \"the Universe is not the result of chance,\" Darwin added: \"But then with me the horrid doubt always arises whether the convictions of man's mind, which has been developed from the mind of the lower animals, are of any value or at all trustworthy. Would any one trust in the convictions of a monkey's mind, if there are any convictions in such a mind?\" (*The Life and Letters of Charles Darwin*, vol. 1, 1887). Darwin raised the doubt against a belief in design. If it reaches that belief, it is hard to see why it should stop there, and his own theory is a conviction of the same mind.\n\nAlvin Plantinga made a doubt of the same kind into an argument, first in *Warrant and Proper Function* (1993) and later in *Where the Conflict Really Lies* (2011). As the Stanford Encyclopedia of Philosophy's article on religion and science summarizes it, if both naturalism and evolution are true, it is unlikely that our cognitive faculties are reliable, so the person who believes both has a reason to doubt every belief those faculties produce, naturalism included. The conflict, on his view, is not between science and religion but between science and naturalism. His central point is that true beliefs and beliefs that help survival overlap without being the same, since many different combinations of belief and desire would produce the same useful behavior. The argument is contested, and a volume of essays on it, *Naturalism Defeated?* (2002), edited by James Beilby, shows how hard.\n\nConsciousness raises a separate question. David Chalmers named it \"the hard problem\" in 1995: even when every function of the brain has been explained, the question remains why any of that processing is accompanied by experience. Thomas Nagel, an atheist, had pressed it in 1974 by asking what it is like to be a bat, and Joseph Levine called it, in 1983, the explanatory gap between the physical facts and the felt quality of experience. The Internet Encyclopedia of Philosophy's article on the hard problem sets out the naturalist responses at their strongest: views that reduce consciousness to function or representation, the view that the gap lies in our concepts rather than in reality, the eliminativist view that the problem is confused, and the \"mysterian\" view that the answer exists but is beyond the reach of minds like ours. Each has able defenders, and none commands agreement."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is an inference to the best explanation, part of a cumulative case rather than a proof.",
+      "steps": [
+        "Human beings are conscious, and we reason: we come to believe things because we see that they follow from what we know, and we rightly trust this, since every argument, for God or against him, depends on it.",
+        "If naturalism is true, consciousness and the reliability of reason must both be the products of physical processes that aim at nothing, and there is serious reason to doubt that such processes can account for subjective experience at all, or give us grounds to trust our reasoning about matters remote from survival, such as mathematics, metaphysics and the origin of the universe.",
+        "If God exists, the source of the world is itself a mind that knows, and creatures made to know it, able to grasp truth and aware of themselves, are what one would expect."
+      ],
+      "conclusion": "So: consciousness and reason are more to be expected if God exists than if naturalism is true. They are evidence, not proof, and their weight depends on whether naturalism can close the gaps the second step names.",
+      "after": "The weight sits on the second step. Reductive physicalists deny it for consciousness, holding that experience is brain processing correctly described, and naturalist critics of Plantinga deny it for reason, holding that selection favors reliable faculties. Eliminativists deny part of the first step, that consciousness as we conceive it exists at all. The critic who says that God explains nothing denies the explanatory value of the third step. A reader who expects neuroscience to explain experience as it explained digestion will reject the second step, and that is a reasonable place to stand.",
+      "weightStep": 2
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply is that the argument is a god of the gaps after all. Questions that once seemed beyond science, such as how living things grow and reproduce, have yielded to it. Consciousness seems mysterious now because the science is young. And the theist's alternative names no process; to say a mind made minds is not to explain how a mind works.\n\nThe reply deserves a careful answer, because the gap here is of a different kind from the gaps that closed. Explaining life meant explaining functions, how cells take in energy, divide and copy themselves, and functions are what science explains well. The hard problem, as Chalmers framed it, concerns what remains when every function has been explained. Naturalist philosophers themselves divide on whether it can be closed, and some think it can't be by minds like ours. The argument from reason is not a gap in data at all. It concerns whether, on naturalism, the faculties that produce all our science can be trusted, and that question can't be settled by more science, since any science offered would come from the faculties in question. And the theist's claim is not offered as a mechanism. It is offered as an account of what kind of reality makes minds at home in it: if the world comes from a mind, its being intelligible to minds is no accident. \"In the beginning was the Word\" (John 1:1, BSB), and the Study Bible's note on that chapter observes that for Greek readers *logos* named the rational principle that orders the universe.\n\nIf the argument is sound, it shows that mind is more basic than matter, and that the source of the world knows. That is not yet the God who called Abraham, became man in Jesus and raised him from the dead. Christians confess those things because of what they hold God has done in history, a claim to be weighed as history, which the library's area on the historical Jesus and the resurrection takes up."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "Whether the hard problem can be solved within physical science is unresolved, and it is one of the most argued questions in philosophy. Whether Plantinga's argument succeeds turns on probability judgments that critics and defenders still dispute. How a conscious mind relates to the brain it depends on is unexplained on every view, theism included. And whether a machine could ever be conscious, which bears on all of this, is a question no one can yet answer."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ on what a human person is. Some hold that the soul is a distinct substance joined to the body. Thomas Aquinas held that the soul is the form of the body, so that the person is complete only as soul and body together, and many follow him. Some Christian philosophers hold that a person is wholly physical and rest their hope on the resurrection of the body rather than a separable soul; Dean Zimmerman's essay \"Should a Christian Be a Mind-Body Dualist?\" (2004) sets out the question. Christians also differ on evolution, and this argument takes no side: it concerns whether the process that made us was unguided, not whether it occurred. What all confess is that human beings are made in the image of God, \"So God created man in His own image\" (Genesis 1:27, BSB), formed from the dust and given the breath of life (Genesis 2:7), and that they will be raised in the body."
+    }
+  ],
+  "otherSide": [
+    "Daniel C. Dennett, *Consciousness Explained* (1991).",
+    "Paul M. Churchland, \"Eliminative Materialism and the Propositional Attitudes,\" *Journal of Philosophy* (1981).",
+    "James Beilby, ed., *Naturalism Defeated? Essays on Plantinga's Evolutionary Argument against Naturalism* (2002)."
+  ],
+  "further": [
+    "Alvin Plantinga, *Where the Conflict Really Lies* (2011).",
+    "David J. Chalmers, *The Conscious Mind: In Search of a Fundamental Theory* (1996).",
+    "Thomas Nagel, \"What Is It Like to Be a Bat?\" (1974)."
+  ],
+  "onSite": [
+    "The argued answer \"What makes us human in the age of AI?\" (/answers/what-makes-us-human-in-the-age-of-ai), on Nagel, Dennett and the image of God.",
+    "The argued answer \"Is believing anything on faith irrational?\" (/answers/is-faith-irrational).",
+    "The Study Bible's notes on Genesis 1 (/study/bible/genesis/1) and John 1 (/study/bible/john/1)."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "genesis",
+        "chapter": 1
+      },
+      {
+        "book": "john",
+        "chapter": 1
+      }
+    ],
+    "answers": [
+      "what-makes-us-human-in-the-age-of-ai",
+      "is-faith-irrational"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "There is no inner theater where experience is shown to a self, and nothing in consciousness beyond the brain's own processing",
+      "proponent": "Daniel C. Dennett",
+      "work": "Consciousness Explained",
+      "year": 1991
+    }
+  ]
+}

@@ -480,3 +480,124 @@ At 390 and 1440, day and night: each of the three checks taken from the first qu
 ### Not done in this run
 
 Ecclesiastes, Job and James in the explorer; Pray the Psalms; the other Life Check parts (Spiritual Gifts, Marriage, the short form); the 168 wisdom topics still in their first form; any retirement or listing.
+
+---
+
+## 16. Build 5, as built (2026-11-20): Pray the Psalms, Ecclesiastes, two more tools on the shell
+
+Retires, renames, merges and re-lists nothing; `toolsList.ts`, `siteCatalog.ts` and the menus are untouched. Ledger rows: `docs/work/elite/tools-ledger.md`, "Fifth build".
+
+### Pray the Psalms (`/tools/pray-the-psalms`), all 150 psalms
+
+The plan's working name and the first part of 7.3. Built as a new page at its own address, not over Prayers for When You Have No Words: the prayer list (Prayer Planner) and the evening worry page (Worry Journal) are merges, and merges wait on James, so `/tools/prayer-generator`, `/tools/prayer-planner` and `/tools/worry-journal` are unchanged.
+
+- **Data:** `client/public/pray-psalms/psalms.json`, written by hand: for each of the 150 psalms its kinds, one to five of twenty "when" tags, one line on what it prays and a short guide to praying it (both written against the psalm's plain note, `client/public/bible/notes/psalms/plain/<n>.json`), and which of the plain note's paragraphs to show word for word (care, and for Psalm 88 how it ends). A kind is given only where the Study Bible's notes give it: each carries the note's own words as evidence (the psalm's own note, or a group sentence a note names, such as the seven Penitential Psalms in the note on Psalm 6, the enthronement psalms in the note on Psalm 47, the cursing psalms in the note on Psalm 58, the Songs of Ascents in the note on Psalm 120, and the introduction's "Kinds of psalm"). Where the note hedges ("often classed as", "many scholars"), the page says "Often read as". Twenty-two psalms carry no kind: the notes give them none, and the page says it does not guess. Fourteen kinds: lament (31), lament of the people (11), thanksgiving (11), praise (22), trust (11), wisdom (13), royal (11), the LORD reigns (7), Song of Zion (2), Israel's story (4), liturgy (3), penitential (7), cursing psalm (6), Song of ascents (15).
+- **The twenty when tags** (psalms each): Afraid (21); Under threat (19); Grieving (12); Guilty (10); Angry with God, or asking why (11); Betrayed or falsely accused (19); Alone (10); Far from God (17); Awake in the night (13); Sick or in pain (8); Growing old, or facing death (9); Watching wrong win (19); Waiting (14); At a loss for words (14); Thankful (22); Full of praise (35); Wanting to live wisely (19); Starting the day (18); Ending the day (9); Before worship (32).
+- **Build and gate:** `scripts/build-pray-psalms.mjs` (with `--check`) fills every psalm from the BSB, copies each Study Bible note's title, summary and outline (the plain notes have no title or summary of their own, so the chapter note's are used), the plain notes' care and ending paragraphs, and four parts of the book page (The Psalms in a minute; How to read and pray a psalm; Kinds of psalm; The cursing psalms), all word for word. `scripts/validate-pray-psalms.mjs` holds all 150 present and tagged, every kind backed by the note's words in the field it names, every group's psalms named in its sentence, the prose rules (no forbidden words, em-dash, "--", emoji, "!" or quotation marks: Scripture is shown from the BSB, never typed), every plain-note paragraph that points to help or says no reading makes it right to harm anyone carried by its psalm (44 psalms carry care), the nine heavy psalms named in the brief carrying care, Psalm 88's ending, every verse, title, summary, care paragraph and teaching panel word for word, stanzas covering each psalm in order, and the plan reading all 150 once in thirty days. Both are in the content-gates step of CI.
+- **The page:** on the shell (`ToolHead`, `QuestionCard`, `useToolProgress` under `livewell-progress-pray-psalms`, `ResultSection`, `ResultActions`). Three ways in: "How are you today?" (the twenty tags), "Morning and evening" (a plan made for this page and said so: the Study Bible introduction's suggestion of the 150 psalms in a month, five a day, here three in the morning and two in the evening in the book's order; on the 31st, Psalm 1 and Psalm 150), and "All 150" (a grid, narrowed by kind). A psalm opens on the page: kind, title and summary from the notes, the care paragraphs before the text with Find Help, what it prays, how to pray it, the notes' words behind each kind, the whole psalm under the Study Bible's outline, and for a cursing psalm the book page's part on the cursing psalms word for word. "Pray it slowly" shows one outline part at a time (a part longer than ten verses is split evenly; Psalm 119 is its 22 stanzas of eight), in large type, with Back and Next, the arrow keys and Escape, and no timer; at the end of Psalm 88 it shows the plain note's own words on how the psalm ends. "Keep this psalm" and "I prayed this today" stay on the device. `?psalm=N` opens a psalm. Find Help is in the head on every screen. Prints the open psalm with its guide.
+- **Where it is:** route in `App.tsx`, prerendered with its own head and `noindex`, in the site search (`MAIN_PAGES`), linked once from the Wisdom Finder's "More ways in" and once from the Wisdom Books Explorer. Not in the sitemap (noindex), `toolsList.ts`, `siteCatalog.ts` or any menu.
+
+### Ecclesiastes in the Wisdom Books Explorer
+
+`client/public/wisdom-books/ecclesiastes.json`: all 222 verses tagged by hand under sixteen themes fitted to the book (Futility: breath and vapor; Nothing new under the sun; The Teacher's search; Toil and what it gains; Eat, drink and enjoy: the gift of God; Death comes to all; Wisdom and folly; What no one can know; A time for everything; Oppression and injustice; Wealth and what it cannot buy; Fear God; Words, vows and listening; Kings and those in power; What is better; Youth, age and remembering your Creator), four of them tied to the introduction's own themes. Ecclesiastes has chapter notes, so each chapter sits under the Study Bible's outline, title and summary. The panel "How to read Ecclesiastes" is the introduction's counsel on reading the book and the hard questions on chapters 1 and 12, word for word: the readings of hevel (meaningless or empty, transience, enigma or absurdity) and of the epilogue, each given, no side taken. The build and validator now take each book in turn (Proverbs' built files are byte for byte unchanged). The page asks which book first; Ecclesiastes has no "today's chapter" and keeps its own place under `livewell-progress-wisdom-books-ecclesiastes`; Proverbs keeps its key and shape, with an optional `book` field, so old saves open as before. The head's line still says "All of Proverbs" (intro wording was not to change); a note under it says Ecclesiastes is here too. Job and James wait.
+
+### Two more kept tools on the shell
+
+The next two in the build order with no decision waiting: the Spiritual Gifts Self-Check (the last Life Check part not waiting on James; the Marriage check and the short form are excluded) and Test the Case (7.6, next in the order).
+
+- **Spiritual Gifts:** `ToolHead` (name and time from `toolsList.ts`, the not-a-diagnosis line once), `CheckPart` for each part of eight, the result as `ResultReading` (the band's label as its heading), the "second look" note, `ScoreChart` (ink bars, mustard on the first of the strongest areas), the history, the next step, the scope note, area by area, `ResultActions`. Proof: `diff` of the file before and after shows the types, data, scoring and saved-progress sections identical (old lines 40 to 744 equal new lines 43 to 747), and `withItalics`, `Passage` and `ScopeNote` identical; only the imports, three unused style objects, `AreaResult`'s markup and the page component changed. Same key and shape (`livewell-progress-spiritual-gifts`, `{ answers, step, savedAt }`). The contract test passes with one line changed ("PART 1 OF 4" now reads "Part 1 of 4").
+- **Test the Case:** `ToolHead` (the tool's one name, the case's own introduction as the line), the case picker as a `QuestionCard`, `ProgressLine` ("Move 3 of 5", Back, and the save-failure sentence the page never showed), the end of a case as a `ResultSection` with `ResultActions` (Start over now asks first). The cases (`data/argumentCases.ts`) are untouched, and `diff` shows the walking logic identical apart from reading `persisted` instead of the unused `reset` and the line that reads the tool's name. The place stays under `lw-test-the-case` (useProgress's shape), which My Library reads, so it was not moved to a shell key.
+- **Tests:** `pages/tools/self-checks-shell.test.tsx` gains seven: resume from a pre-move save, storage refusal and the keyboard for each, and a case walked to its end and started over.
+
+### Times that contradict the page's own words (left for James)
+
+| Page | Head (from `toolsList.ts`) | The page's own words |
+|---|---|---|
+| `/life/assessment` | About 15 minutes, once a year | "about eight minutes" |
+| `/tools/emotional-health` | About 10 minutes | "It takes a few minutes." |
+| `/tools/financial-health` | About 8 minutes | "It takes a few minutes." |
+
+No other page on the shell contradicts itself (Spiritual Gifts says "about ten minutes" and the list says 10; Test the Case and the Wisdom Finder state no time of their own).
+
+### Not done in this run
+
+The prayer list and evening worry page inside Pray the Psalms (merges, waiting on James); a written prayer "in the psalm's movement" (7.3); Job and James in the explorer; the Brueggemann reading named in 7.3 (not opened, so not used); any retirement or listing.
+
+---
+
+## 17. Build 6, as built (2026-11-20): sixteen topics, James in the explorer, holdout5, quiet focus
+
+Retires, renames, merges and re-lists nothing; `toolsList.ts`, `siteCatalog.ts` and the menus are untouched; the new page states stay noindex and unlisted. Ledger rows: `docs/work/elite/tools-ledger.md`, "Sixth build". Screenshots: `docs/work/elite/tools-shots/run6-*`.
+
+### Sixteen topics written in full (56 of 208)
+
+when-life-is-unfair and the-problem-of-evil (the end of batch 2), then batch 3 in the plan's order up to sibling-conflict: marriage-communication, marriage-intimacy, marriage-after-an-affair, cheating, parenting-young-children, raising-teenagers, parenting-adult-children, new-parenthood, empty-nest, going-to-college, caring-for-aging-parents, caregiving, difficult-family, sibling-conflict. One commit each. estrangement, the last of batch 3, opens the next run.
+
+- Each: ten or eleven passages, each "where it stands" written against that chapter's Study Bible note and plain note and agreeing with them; the whole Bible's wisdom in four paragraphs (symptom, cause, wisdom, hope); a question; a psalm; next steps only to live pages.
+- **Often misread** where a verse on the subject really is commonly misread: Genesis 50:20 and Galatians 6:7 (when-life-is-unfair), Isaiah 45:7 (the-problem-of-evil), Ephesians 4:26 (marriage-communication), 1 Corinthians 7:4-5 (marriage-intimacy), 1 Corinthians 13:5 (marriage-after-an-affair), Matthew 7:1 (cheating), Proverbs 22:6 (parenting-young-children), Ephesians 6:1 (raising-teenagers), Exodus 20:12 (parenting-adult-children and difficult-family, each from its own side), 1 Timothy 2:15 (new-parenthood, verse 15 only; the church-order question of verses 11 to 14 is not raised), Romans 12:2 (going-to-college), 1 Timothy 5:8 (caring-for-aging-parents), Matthew 18:21-22 (difficult-family). None on empty-nest, caregiving or sibling-conflict, where none fits.
+- **Where Christians differ** only where faithful churches really do differ, shared ground first, following the notes: how God rules over evil (the-problem-of-evil; Reformed and Arminian as the plain note on Genesis 50 and the note on Isaiah 45 give them), contraception (marriage-intimacy; Catholic teaching and most Protestant and many Orthodox churches, with both readings of Onan from the note on Genesis 38), divorce and remarriage after adultery (marriage-after-an-affair; Catholic, Orthodox and Protestant readings exactly as the plain note on Matthew 19 gives them, no side), infant baptism and believer's baptism (parenting-young-children; the notes on Colossians 2 and Mark 10). Left out elsewhere.
+- **Care lines**, word for word from the plain notes, on every page where a reader may be in danger or deep distress: difficult-family (the heavy one: abuse), marriage-communication, marriage-intimacy, marriage-after-an-affair, raising-teenagers (a child being harmed), new-parenthood, caregiving, caring-for-aging-parents, when-life-is-unfair, cheating, sibling-conflict. **Not-advice lines:** law on marriage-after-an-affair; medicine on new-parenthood and caregiving.
+- difficult-family and marriage-after-an-affair open their whole-Bible section with the path to help. Abuse is named as never the victim's fault; no passage about honor, submission, forgiveness or peace is applied to staying in danger, and the misread layer on difficult-family takes up exactly that misuse (Exodus 20:12, Matthew 18:21-22). No page answers the eternal state of anyone. Nothing on any page raises the age of the earth, Adam's details or the flood (Genesis 2 and 3 are read only for marriage and for blame-shifting, as the notes read them). The plain note on Luke 15's older brother rejects the reading that he stands for the Jewish people; sibling-conflict follows it.
+- **The pray link:** every topic written in full now opens its psalm in Pray the Psalms (`/tools/pray-the-psalms?psalm=N`) and in the Study Bible, from the prayer section (`WisdomTopic.tsx`; the page test holds it).
+
+### The Letter of James in the Wisdom Books Explorer
+
+`client/public/wisdom-books/james.json`: all 108 verses tagged by hand under thirteen themes fitted to the letter (Trials and endurance; Wisdom from above; Faith and deeds; The poor and the rich; The tongue; The royal law and mercy; Desire, temptation and sin; Asking and praying; Humility and drawing near to God; The world and tomorrow; God the giver; The Lord's coming and his judgment; One another), five of them tied to the introduction's own five themes and shown in its words. Each chapter sits under the Study Bible's outline, title and summary. The panel "How to read James" is the introduction's counsel on reading the letter (including that the commonest misreading sets James against Paul), the hard question on James 2 and the hard question on Romans 4, word for word: the readings of justify, faith and works, Trent's reading and the Protestant one, no side taken. Romans 3's own hard question is about the cross, not faith and works, so the panel uses Romans 4's, which answers James 2 directly. The build and validator take a hard question from another book as `{ book, c }` and show its book's name; Proverbs' and Ecclesiastes' built files are byte for byte unchanged. James keeps its own place under `livewell-progress-wisdom-books-james`. The finder's "More ways in" and the site search's entry name James.
+
+**Job was not started.** 42 chapters and 1,070 verses tagged by hand, read in its speeches, is a run of its own; starting it without finishing would leave a book half tagged.
+
+### Matching
+
+Fifteen new sentences (`holdout5`) were written and committed before `matching.json` was touched. Then holdout4's two misses were fixed by data only: "want to believe" and "all made up" on doubt, and a new entry for saying-no ("yes to everything", "too many commitments", "overcommitted", "take on too much").
+
+| Set | Before | After |
+|---|---|---|
+| cases (74) | 100% / 100% | 100% / 100% |
+| holdout (19) | 100% / 100% | 100% / 100% |
+| holdout2 (20) | 100% / 100% | 100% / 100% |
+| holdout3 (15) | 100% / 100% | 100% / 100% |
+| holdout4 (15) | 86.7% / 100% | 100% / 100% (now tuned for) |
+| holdout5 (15) | 26.7% / 60.0% | 26.7% / 60.0% (untouched; the clean set) |
+
+holdout5 is the honest number and it is low: the new topics' own words (seeing someone, slams the door, brought the baby home, screams at me, got the credit, copied answers) are not yet in the matching data. It should be tuned only after a sixth holdout is written. `wisdom-match.test.ts` reports holdout5 and holds floors under it.
+
+### Focus and the keys hint
+
+- Headings the page moves focus to (a check's part, a result such as the Spiritual Gifts reading, the safety question, a psalm, the slow-reading title) showed the site's boxed two-tone ring (`brand-override.css`, `!important`). They now show the quiet mark the site uses for focused links, a mustard underline (`tool-shell.css`); controls keep the full ring, and nothing removes focus visibility. Checked on the served build at 390 and 1440: `#sg-result-h` and `.pp-slow__title` focused with `:focus-visible`, no outline, a mustard underline.
+- "Keys 1 to N pick an answer" now shows only where the primary pointer is fine (`@media (pointer:fine)`), with no user-agent sniffing. On the served build at 390: with touch emulation it is hidden; without touch emulation (a narrow desktop window, pointer fine) it shows, which is what the rule intends.
+
+### Not done in this run
+
+estrangement and batches 4 to 14 (152 topics). Job in the explorer. holdout5's misses. Any retirement, rename, merge or listing (all in the list below).
+
+---
+
+## Decisions waiting on James
+
+Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.
+
+**Retirements and merges (one-hop permanent redirects; page files kept):**
+
+1. **How Close Is Each Party to the Bible?** `/nation/scorecard`. Off the Tools door; keep as a /nation reading without the tally and the red, orange and green dots, or retire it to `/nation`. (Section 8.1)
+2. **What Shapes the Way You Read the Bible?** `/tools/which-lens` and **Do You Hold Both Sides to the Same Standard?** `/disruption/consistency`. Merge into the Examen of loyalties (a new page, no label as a result), then redirect both to it. (Sections 8.2, 7.8)
+3. **Theology Quiz** `/tools/theology-quiz`, with `/quiz`. Retire to `/start`. (Section 8.3)
+4. **Which view do I lean toward?** `/theology/which-view`. Move each quiz onto its comparison page in Where Christians differ, then redirect to `/theology/compare`. (Section 8.4)
+5. **Where Are You With God?** `/diagnostic`. Becomes the short form of the Life Check (`/life/assessment?length=short`), its words kept. (Sections 8.5, 15)
+6. **Misused Bible Verses** `/tools/bible-says`. Every topic it covered now carries the misread layer; retire to `/tools/wisdom-finder`. (Section 13)
+7. **The seven folded tools**: `/tools/bible-on`, `/tools/verse-finder`, `/tools/parenting-verses` (to `/tools/wisdom-finder`); `/tools/deep-bible` (to `/study/bible`, keeping My Library's reading of `lw-deep-bible`); `/tools/bible-study` (to `/study/how-to-study`); `/tools/life-audit` (to `/life/assessment`, keeping its history key); `/tools/glossary` (to `/theology/glossary`). Section 3 reads James's words of 2026-11-20 as allowing these; none has been done, and build order step 4 waits on section 8. (Sections 3, 11)
+8. **Saved Items** `/tools/saved`. Show saved verses and prayers in My Library, then redirect to `/my-library`. (Section 3)
+9. **Prayer Planner** `/tools/prayer-planner` and **The Worry Journal** `/tools/worry-journal`. Merge into Pray the Psalms as its prayer list and evening page (storage keys carried over), then redirect. **Prayers for When You Have No Words** `/tools/prayer-generator`: whether Pray the Psalms replaces it at that address or stays at `/tools/pray-the-psalms` with the twelve written prayers kept inside it. (Sections 7.3, 16)
+10. **Proverbs in 31 Days** `/tools/proverbs-31`. Whether the Wisdom Books Explorer (`/tools/wisdom-books`) replaces it at that address, or it redirects there. (Sections 7.2, 15)
+11. **The two "Caring for Aging Parents" topics** `/wisdom/caring-for-aging-parents` and `/wisdom/caregiving`. Merge, or rename one. Both are now written in full, with distinct emphases (the first: the duty and the decisions; the second: the daily work and the carer's own strength), and both still carry the same name in the finder, the A to Z list, search and the browser tab. (Sections 12, 13, 14, 17)
+
+**Names and listings (each new page is noindex and unlisted until named):**
+
+12. **The Wisdom Books Explorer** `/tools/wisdom-books`: its name (the plan's working name), its place on the Tools door and in `toolsList.ts` and `siteCatalog.ts`, then the noindex off and the sitemap. Its head line still says "All of Proverbs" although Ecclesiastes and James are in it; the wording was left for him. (Sections 15, 16, 17)
+13. **Pray the Psalms** `/tools/pray-the-psalms`: its name, its listing, then the noindex off and the sitemap. (Section 16)
+14. **The Tools door's six rooms** in `siteCatalog.ts` (Bible wisdom, Pray, Check your life, Hard questions, Rhythms and decisions, Plans and guides) and the moves to other doors: Read the Study Bible `/study/bible` and Search the Bible `/study/bible/search` (Bible door), Theology glossary `/theology/glossary` and Where Christians differ `/theology/compare` (Questions door), Quotes `/tools/quotes` (Essays door), What Would a Biblical Government Look Like? `/nation/policy` (/nation). (Sections 3, 6)
+
+**Wording on pages already built:**
+
+15. **Times that contradict the page's own words**: `/life/assessment` (head: about 15 minutes; page: about eight minutes), `/tools/emotional-health` (about 10 minutes; "a few minutes"), `/tools/financial-health` (about 8 minutes; "a few minutes"). Which is right. (Sections 15, 16)
+16. **The Emotional Health Self-Check's lowest level** `/tools/emotional-health` is named "Critical". Keep or rename. (Section 15)
+17. **The Marriage Health Self-Check's "leave a copy with us"** `/tools/marriage-assessment` posts answers to `/api/contact`, unlike every other check; the plan calls its removal required, and the check waits on the shell until it is done. (Sections 3, 7.5, 15)

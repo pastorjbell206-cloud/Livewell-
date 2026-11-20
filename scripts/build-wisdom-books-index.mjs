@@ -1,25 +1,32 @@
 #!/usr/bin/env node
 /**
  * build-wisdom-books-index.mjs: the Wisdom Books Explorer's files
- * (/tools/wisdom-books), built from one hand-written source,
- * client/public/wisdom-books/proverbs.json (each verse of Proverbs tagged
- * with its themes), the Berean Standard Bible in client/public/bible/ch/
- * (the verse text, never typed by hand), and the Study Bible's own notes on
- * Proverbs in client/public/bible/notes/proverbs/ (chapter titles, summaries
- * and outlines, the introduction's themes, its counsel on how to read a
- * proverb, and the hard question on 26:4-5), all copied word for word.
+ * (/tools/wisdom-books), built for each book from one hand-written source,
+ * client/public/wisdom-books/<book>.json (each verse tagged with its themes),
+ * the Berean Standard Bible in client/public/bible/ch/ (the verse text, never
+ * typed by hand), and the Study Bible's own notes on the book in
+ * client/public/bible/notes/<book>/ (chapter titles, summaries and outlines,
+ * the introduction's themes and its counsel on reading the book, and the
+ * hard questions the teaching panel shows), all copied word for word.
  *
- * Writes, under client/public/wisdom-books/proverbs/:
+ * Books: Proverbs (the panel: how to read a proverb, and the hard question on
+ * 26:4-5), Ecclesiastes (the panel: how to read the book, and the hard
+ * questions on chapters 1 and 12, named in its source's teaching.hard) and
+ * James (the panel: how to read the letter, and the hard questions on James 2
+ * and on Romans 4, faith and deeds with Paul; an entry of teaching.hard may
+ * name another book's chapter as { book, c }).
+ *
+ * Writes, under client/public/wisdom-books/<book>/:
  *   index.json          the themes (with counts and the notes they draw on),
- *                       the 31 chapters (title, summary, verse count), and
- *                       the teaching panel
+ *                       the chapters (title, summary, verse count), and the
+ *                       teaching panel
  *   chapter/<n>.json    one chapter: its verses with their themes, its outline
  *   theme/<id>.json     one theme: every verse on it, in book order
  *
  *   node scripts/build-wisdom-books-index.mjs           write the files
  *   node scripts/build-wisdom-books-index.mjs --check   fail if any differ (CI)
  *
- * scripts/validate-wisdom-books.mjs checks the source and the result.
+ * scripts/validate-wisdom-books.mjs checks the sources and the result.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -27,12 +34,17 @@ import { fileURLToPath } from "node:url";
 import { passage } from "./lib/bsb.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SRC = path.join(ROOT, "client/public/wisdom-books/proverbs.json");
-const OUT = path.join(ROOT, "client/public/wisdom-books/proverbs");
-const NOTES = path.join(ROOT, "client/public/bible/notes/proverbs");
 const TOPICS = path.join(ROOT, "client/public/wisdom/topics.json");
 const CHECK = process.argv.includes("--check");
 const readJson = (f) => JSON.parse(fs.readFileSync(f, "utf8"));
+
+/** The books the explorer reads, in the order it offers them. */
+export const BOOKS = ["proverbs", "ecclesiastes", "james"];
+export const srcOf = (book) => path.join(ROOT, `client/public/wisdom-books/${book}.json`);
+export const outOf = (book) => path.join(ROOT, `client/public/wisdom-books/${book}`);
+export const notesOf = (book) => path.join(ROOT, `client/public/bible/notes/${book}`);
+/** A book's size: from its source, or Proverbs' own (its source predates the field). */
+export const sizeOf = (src) => ({ chapters: src.chapters ?? 31, verses: src.verses ?? 915 });
 
 /** "4" or "4-9" to the verse numbers it covers. */
 export function rangeOf(r) {
@@ -43,8 +55,26 @@ export function rangeOf(r) {
   return Array.from({ length: b - a + 1 }, (_, i) => a + i);
 }
 
-export function build() {
-  const src = readJson(SRC);
+/** A book's name as the Study Bible gives it ("romans" is Romans). */
+const bookTitle = (slug) => readJson(path.join(ROOT, "client/public/bible/books.json")).find((b) => b.slug === slug)?.name ?? slug;
+
+/**
+ * One hard question on the teaching panel: a chapter of the book itself (a
+ * number), or of another book ({ book, c }), whose name is then shown with it.
+ */
+export function hardOf(book, entry) {
+  const other = typeof entry === "object" && entry !== null;
+  const slug = other ? entry.book : book;
+  const c = other ? entry.c : entry;
+  const h = readJson(path.join(notesOf(slug), `${c}.json`)).hard;
+  return { c, h, from: other ? bookTitle(slug) : null };
+}
+
+export function build(book = "proverbs") {
+  const src = readJson(srcOf(book));
+  const NOTES = notesOf(book);
+  const name = src.name ?? "Proverbs";
+  const { chapters: count } = sizeOf(src);
   const intro = readJson(path.join(NOTES, "intro.json"));
   const topics = new Map(readJson(TOPICS).topics.map((t) => [t.id, t]));
   const themeIds = src.themes.map((t) => t.id);
@@ -66,9 +96,9 @@ export function build() {
   const files = new Map();
   const chapters = [];
   const byTheme = new Map(themeIds.map((id) => [id, []]));
-  for (let c = 1; c <= 31; c++) {
+  for (let c = 1; c <= count; c++) {
     const note = readJson(path.join(NOTES, `${c}.json`));
-    const verses = passage(`Proverbs ${c}`).verses.map(({ v, t }) => {
+    const verses = passage(`${name} ${c}`).verses.map(({ v, t }) => {
       const themes = ordered(tagsOf.get(`${c}:${v}`) ?? new Set());
       for (const id of themes) if (byTheme.has(id)) byTheme.get(id).push({ c, v, t });
       return { v, t, themes };
@@ -96,42 +126,59 @@ export function build() {
     };
   });
 
-  const hard = readJson(path.join(NOTES, "26.json")).hard;
+  let teaching;
+  if (src.teaching?.hard) {
+    teaching = {
+      reading: intro.reading.split(/\n\n+/),
+      hard: src.teaching.hard.map((entry) => {
+        const { c, h, from } = hardOf(book, entry);
+        return { c, ...(from ? { book: from } : {}), q: h.q, a: h.a.split(/\n\n+/) };
+      }),
+    };
+  } else {
+    const hard = readJson(path.join(NOTES, "26.json")).hard;
+    teaching = {
+      reading: intro.reading.split(/\n\n+/),
+      pair: { refs: "Proverbs 26:4-5", verses: passage("Proverbs 26:4-5").verses, q: hard.q, a: hard.a.split(/\n\n+/) },
+    };
+  }
   files.set("index.json", {
-    book: "Proverbs",
+    book: name,
     verses: chapters.reduce((n, c) => n + c.verses, 0),
     themes,
     chapters,
-    teaching: {
-      reading: intro.reading.split(/\n\n+/),
-      pair: { refs: "Proverbs 26:4-5", verses: passage("Proverbs 26:4-5").verses, q: hard.q, a: hard.a.split(/\n\n+/) },
-    },
+    teaching,
   });
   return files;
 }
 
 function main() {
-  const files = build();
   const stale = [];
-  for (const [rel, data] of files) {
-    const f = path.join(OUT, rel);
-    const text = JSON.stringify(data) + "\n";
-    const now = fs.existsSync(f) ? fs.readFileSync(f, "utf8") : null;
-    if (now === text) continue;
-    if (CHECK) stale.push(rel);
-    else {
-      fs.mkdirSync(path.dirname(f), { recursive: true });
-      fs.writeFileSync(f, text);
+  let total = 0;
+  for (const book of BOOKS) {
+    const files = build(book);
+    const OUT = outOf(book);
+    total += files.size;
+    for (const [rel, data] of files) {
+      const f = path.join(OUT, rel);
+      const text = JSON.stringify(data) + "\n";
+      const now = fs.existsSync(f) ? fs.readFileSync(f, "utf8") : null;
+      if (now === text) continue;
+      if (CHECK) stale.push(`${book}/${rel}`);
+      else {
+        fs.mkdirSync(path.dirname(f), { recursive: true });
+        fs.writeFileSync(f, text);
+      }
     }
-  }
-  // Nothing left over from an earlier build.
-  for (const dir of ["chapter", "theme"]) {
-    const d = path.join(OUT, dir);
-    if (!fs.existsSync(d)) continue;
-    for (const name of fs.readdirSync(d)) {
-      if (files.has(`${dir}/${name}`)) continue;
-      if (CHECK) stale.push(`${dir}/${name} (left over)`);
-      else fs.rmSync(path.join(d, name));
+    // Nothing left over from an earlier build.
+    for (const dir of ["chapter", "theme"]) {
+      const d = path.join(OUT, dir);
+      if (!fs.existsSync(d)) continue;
+      for (const name of fs.readdirSync(d)) {
+        if (files.has(`${dir}/${name}`)) continue;
+        if (CHECK) stale.push(`${book}/${dir}/${name} (left over)`);
+        else fs.rmSync(path.join(d, name));
+      }
     }
   }
   if (CHECK) {
@@ -139,8 +186,8 @@ function main() {
       console.error(`build-wisdom-books-index: ${stale.length} file(s) out of date; run node scripts/build-wisdom-books-index.mjs\n  ${stale.slice(0, 10).join("\n  ")}`);
       process.exit(1);
     }
-    console.log(`build-wisdom-books-index: ${files.size} files up to date`);
-  } else console.log(`build-wisdom-books-index: wrote ${files.size} files to client/public/wisdom-books/proverbs/`);
+    console.log(`build-wisdom-books-index: ${total} files up to date`);
+  } else console.log(`build-wisdom-books-index: wrote ${total} files under client/public/wisdom-books/ (${BOOKS.join(", ")})`);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

@@ -1,0 +1,87 @@
+{
+  "slug": "god",
+  "title": "God, faith and reason",
+  "record": "docs/work/elite/apol-pilot/god/index.md",
+  "intro": "These pages take up the question beneath every other in the library: whether there is a God at all. They set out the classical arguments, from the existence of the world, from the idea of God, from moral obligation and from the mind itself, each in numbered premises, with the objections that David Hume, Immanuel Kant, Bertrand Russell and their modern heirs have pressed against it, and with the premise each objection denies. They say where an argument is weak and where philosophers are divided. None of them is offered as a proof that compels belief. Together they are a case to be weighed, and a thoughtful person can weigh it and still say no.\n\nThey also say what such arguments can't do. At most they reach a necessary being on which the world depends, a source of the world that knows, and a good ground of moral obligation. They don't reach the Trinity, the incarnation or the cross. Christians confess one God, Father, Son and Holy Spirit, Maker of heaven and earth, as the creeds confess him, and the bridge from the God the philosophers argue about to the God who raised Jesus from the dead is a historical question, which the library's area on the historical Jesus and the resurrection takes up.",
+  "pieces": [
+    {
+      "slug": "the-cosmological-argument",
+      "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
+      "blurb": "Leibniz's argument from contingency and the kalam, each in its premises; Hume's three objections, Russell's brute fact and Kant's charge of borrowing; quantum events and the \"universe from nothing\"; and what a necessary being would and wouldn't be."
+    },
+    {
+      "slug": "who-made-god",
+      "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
+      "blurb": "Mill's father and Russell, Dawkins's gambit, what the arguments actually claim, God's simplicity, the burden of proof and the teapot."
+    },
+    {
+      "slug": "the-ontological-argument",
+      "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
+      "blurb": "Anselm's prayer and argument, Gaunilo's island, Aquinas and Kant, the modern modal version and its symmetry, and why God's existence, if real, is necessary."
+    },
+    {
+      "slug": "the-moral-argument-and-euthyphro",
+      "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
+      "blurb": "The argument from moral obligation, Wielenberg's godless realism, Mackie and Street, the Euthyphro dilemma and the classical answer, and what the argument shows."
+    },
+    {
+      "slug": "the-argument-from-reason",
+      "question": "If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?",
+      "blurb": "Darwin's \"horrid doubt,\" Plantinga's argument and its critics, the hard problem of consciousness and the naturalist answers to it, and whether this is a god of the gaps."
+    }
+  ],
+  "words": [
+    {
+      "term": "Contingent",
+      "meaning": "existing, but able not to have existed; dependent on something else for its existence."
+    },
+    {
+      "term": "Necessary being",
+      "meaning": "a being that could not fail to exist and does not depend on anything else for its existence."
+    },
+    {
+      "term": "Principle of sufficient reason",
+      "meaning": "the principle that whatever exists or is true has an explanation of why it is so."
+    },
+    {
+      "term": "Kalam argument",
+      "meaning": "the argument that whatever begins to exist has a cause, that the universe began to exist, and so that the universe has a cause."
+    },
+    {
+      "term": "Aseity",
+      "meaning": "God's self-existence, his being uncaused and not sustained by anything outside himself."
+    },
+    {
+      "term": "Divine simplicity",
+      "meaning": "the classical teaching that God has no parts and is not composed of anything."
+    },
+    {
+      "term": "Ontological argument",
+      "meaning": "an argument that God exists drawn from the idea of God alone, without appeal to the world."
+    },
+    {
+      "term": "Euthyphro dilemma",
+      "meaning": "the question, from Plato's dialogue, whether something is good because God commands it or God commands it because it is good."
+    },
+    {
+      "term": "Divine command theory",
+      "meaning": "the view that moral obligation is constituted by the commands of God."
+    },
+    {
+      "term": "Naturalism",
+      "meaning": "the view that nature is all there is, with no God or anything beyond it."
+    },
+    {
+      "term": "Hard problem of consciousness",
+      "meaning": "the question why physical processes in the brain are accompanied by experience at all."
+    }
+  ],
+  "elsewhere": [
+    "The argued answer \"Does God actually exist?\" (/answers/does-god-actually-exist), the short form of this area's case.",
+    "The argued answer \"Can you be good without God?\" (/answers/can-you-be-good-without-god).",
+    "The argued answer \"Is believing anything on faith irrational?\" (/answers/is-faith-irrational).",
+    "The Study Bible's notes on Romans 1 (/study/bible/romans/1), Acts 17 (/study/bible/acts/17) and Exodus 3 (/study/bible/exodus/3).",
+    "\"Does God exist?\" (/study/explorer/watch/does-god-exist) and \"Who made God?\" (/study/explorer/watch/who-made-god), the Bible Explorer's films for younger readers.",
+    "The Nicene Creed (/resources/creeds/nicene-creed)."
+  ]
+}
