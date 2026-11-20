@@ -623,3 +623,33 @@ Deliberately left out of the three films: every first-person sentence of the ans
 | churches 7 | Jesus prayed for all who would believe through the disciples' message, that all of them may be one, so that the world may believe | BSB John 17:20-21 |
 | churches think | Paul begged the church in Corinth to have no divisions | BSB 1 Corinthians 1:10 |
 | all four, drawings | No face; no figure for God or the Spirit (a light, a flame); no form of a rite drawn as the right one, two ways side by side the same size; no branch of the tree larger, higher, cut off or withered | Deliberate (the brief's doctrine care) |
+
+## Run of 2026-11-20 (fifth run): Hebron's name, the last thread, four films
+
+### Abraham's road: Hebron's name
+
+| Where | Claim | Checked |
+|---|---|---|
+| avoid, rivers | The coast and the Dead Sea (with their drawn shadow) and the Jordan (a river, no shadow) the names keep off | `BookMap.tsx`: the fertile-crescent frame's `shift: 2` (the water drawn again 2 units down and right of its line; 2.5 used to cover the line's width); the Jordan is drawn as a line with no water. Used only to place names, never drawn |
+
+### The thread: A blessing for every nation
+
+Every line's quotation is the BSB of a chapter the thread cites, checked by the validator; the references below were read in the BSB, and in the Study Bible's notes where named, for what each line says without quoting.
+
+| Thread, stop | Claim | Checked |
+|---|---|---|
+| nations creation | God blessed the first people and told them to fill the earth; Paul says that from one man God made every nation | BSB Genesis 1:28; Acts 17:26 (Paul's speech at the Areopagus, Acts 17:22) |
+| nations fall | At Babel people built a tower to make a name for themselves; the LORD scattered them over the face of all the earth | BSB Genesis 11:4-9 |
+| nations abraham | God chose one family for the sake of every family; all the families of the earth blessed through Abram | BSB Genesis 12:1-3 |
+| nations rescue | A mixed multitude went up with Israel from Egypt; from the start others went with God's people | BSB Exodus 12:38; the Study Bible's Exodus 12 note ("The people who leave Egypt already include “a mixed multitude”") |
+| nations sinai | Love the foreigner living among you as yourself, for you were foreigners in Egypt | BSB Leviticus 19:34 |
+| nations land | Rahab of Jericho and Ruth from Moab joined God's people; Ruth's words to Naomi | BSB Joshua 6:25; Ruth 1:4, 16; the Land stop ("Rahab of Jericho confesses Israel's God and is spared") |
+| nations kingdom | At the temple Solomon prayed for the foreigner from a distant land, that all the peoples of the earth would know God's name | BSB 1 Kings 8:41-43 |
+| nations exile | God sent Jonah to Nineveh and cared about the great city; Isaiah: a servant who would be a light for the nations | BSB Jonah 1:2; 4:11; Isaiah 49:6. Jonah is filed at this stop because the stop holds "the Prophets" (its range) and 2 Kings 14:25 names him in the kings' time; no date given |
+| nations return | After the return Malachi heard: my name will be great among the nations | BSB Malachi 1:11; Malachi is filed at the Return stop by its range ("Ezra, Nehemiah, Esther, Malachi") |
+| nations jesus | Magi from the east came to worship the child; Simeon: a light for revelation to the Gentiles | BSB Matthew 2:1-2; Luke 2:25-32 |
+| nations cross | The risen Jesus sent his friends to make disciples of all nations | BSB Matthew 28:16-19 |
+| nations church | At Pentecost people from many lands heard the wonders of God in their own languages; Peter: God welcomes those from every nation who fear him | BSB Acts 2:5-11 (the crowd "Jews ... from every nation under heaven", and converts: the line says "people from many lands", not Gentiles); Acts 10:34-35 |
+| nations new-creation | A multitude too large to count from every nation and tribe and people and tongue before the throne; the leaves of the tree for the healing of the nations | BSB Revelation 7:9; 22:2 |
+| nations, left out | No modern state, people or border; no people spoken of with contempt (Babel is the builders' pride, Nineveh is God's care); no blame on the Jewish people; Babel's age and place not given | Deliberate (the brief's doctrine care); `explorer.test.tsx` holds it |
+| nations icon | Lucide's "Users" (people together), in the icon set's own line | The site's icon set |

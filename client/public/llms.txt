@@ -45,8 +45,9 @@ books). One page lists everything the site holds.
   time): https://www.livewellbyjamesbell.co/study/how-to-study
 - Bible Explorer (the whole Bible as one story on one illustrated map, for
   ages 7 to 16, written at two reading levels, with a drawn scene, verses and
-  an activity at each finished stop, the theme of God living with his people
-  traced through every stop, and short cards on what Christians believe):
+  an activity at each finished stop, six themes traced through the stops (God
+  with his people, the king, the Holy Spirit, the promise, the lamb, and a
+  blessing for every nation), and short cards on what Christians believe):
   https://www.livewellbyjamesbell.co/study/explorer
 - Watch and learn, in the Bible Explorer (short moving pictures drawn in the
   browser, with every word as text under the picture at two reading levels:

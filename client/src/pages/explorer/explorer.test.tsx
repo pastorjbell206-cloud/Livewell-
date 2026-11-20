@@ -1006,6 +1006,7 @@ describe("the Holy Spirit, promise and lamb threads", () => {
     { id: "spirit", broken: "promised", skip: ["fall"] },
     { id: "promise", broken: "waited", skip: ["creation"] },
     { id: "lamb", broken: "points", skip: ["creation"] },
+    { id: "nations", broken: "promised", skip: [] as string[] },
   ];
   for (const c of cases)
     it(`${c.id}: lights the stops it names, broken where its key says, with each line`, async () => {
@@ -1032,6 +1033,20 @@ describe("the Holy Spirit, promise and lamb threads", () => {
         );
       }
     });
+
+  it("a blessing for every nation runs from Genesis 12:3 to Revelation 7:9, with no modern state and no contempt", () => {
+    const t = INDEX.threads.find(x => x.id === "nations")!;
+    expect(t.stops!.abraham.ref).toBe("Genesis 12:3");
+    expect(t.stops!.abraham.line).toContain(
+      "all the families of the earth will be blessed through you"
+    );
+    expect(t.stops!["new-creation"].ref).toContain("Revelation 7:9");
+    const text = JSON.stringify(t);
+    expect(text).not.toMatch(
+      /\b(Israeli|Palestin|Iraq|Iran|Syria|Egyptian state|Jordan(ian)? state|today's|modern)\b/i
+    );
+    expect(text).not.toMatch(/\b(pagan|heathen|wicked nation|godless)\b/i);
+  });
 
   it("the lamb thread gives both readings of Isaiah's servant, and no thread blames a people", () => {
     const lamb = INDEX.threads.find(x => x.id === "lamb")!;
