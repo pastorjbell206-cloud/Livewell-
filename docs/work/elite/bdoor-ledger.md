@@ -9858,3 +9858,29 @@ named. Scripture is the BSB in the repository, checked by the validator and the 
 | Mesitēs; antilutron; authenteō only here; episkopos; diakonos; presbuteros; autarkeia a Stoic word | Chapter 2, 3, 6 deep notes `words`, `cultural` | Repository |
 | Pliny about AD 112, two slave women called ministers | Chapter 3 deep note `historical` | Repository |
 | Map: Ephesus, Philippi, Thessalonica, Lystra | wmap-ledger | Ledger (Macedonia shown by two of its cities, with the line that the letter does not say where Paul was) |
+
+## The plain notes on 1 Timothy 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘God our Savior’ recurring; ‘mercy’ added to the greeting | 1-2 | Repository `themes`; chapter deep note `literary` | Repository |
+| Isaiah 43:11; Numbers 6:24, 26; Exodus 34:6 | 1-2 | BSB | BSB text |
+| Trip to Macedonia not in Acts | 3-7 | Chapter deep note `historical` | Repository |
+| Myths and genealogies, perhaps stories built on Old Testament family lists ("many think") | 3-7 | Chapter deep note `historical` | Repository |
+| Oikonomia, household management | 3-7 | Chapter deep note `words` (G3622) | Repository |
+| Deuteronomy 29:29; Ecclesiastes 12:12; Leviticus 19:18; Psalm 51:10 | 3-7 | BSB | BSB text |
+| List follows the second half of the Ten Commandments; slave traders often kidnapped | 8-11 | Chapter deep note `cultural` | Repository |
+| Hugiainō, healthy | 8-11 | Chapter deep note `words` (G5198) | Repository |
+| Arsenokoitai rare, only here and 1 Corinthians 6:9, no clear earlier use, ‘male’ and ‘bed’; seemingly formed from the Greek of Leviticus 18:22 and 20:13 | 8-11 | 1-corinthians/plain/6.json; chapter deep note `cultural` | Repository |
+| Both readings, no side, the three plain things, the care line | 8-11 | 1-corinthians/plain/6.json (9-11) | Word for word, the list of named sins and the verse of grace changed to this chapter's (verse 15) |
+| Psalm 19:7; Exodus 20:12-16; 21:16; Genesis 1:27 | 8-11 | BSB | BSB text |
+| Blasphemer, persecutor, violent (Acts 8:3); ‘shown mercy’ passive; first trustworthy saying | 12-17 | Chapter deep note `words` (G1653), `literary` | Repository; BSB text |
+| Hubristēs, insolent and violent | 12-17 | Standard lexicons | Standard |
+| Isaiah 1:18; Psalm 103:10; 51:13; 145:13; 90:2 | 12-17 | BSB | BSB text |
+| Prophecies over Timothy (4:14); military and nautical images; conscience | 18-20 | Chapter deep note `literary`, `words` (G4893) | Repository |
+| Hymenaeus (2 Timothy 2:17-18); Alexander (2 Timothy 4:14), perhaps not the same | 18-20 | Chapter deep note `cultural` | Repository |
+| Handed to Satan: removal from fellowship; bodily suffering some think; purpose correction | 18-20 | Chapter deep note `hard`, `cultural` | Repository. No side |
+| Church practices of discipline; misuse; police (Romans 13:4); word to the hurt | 18-20 | 1-corinthians/plain/5.json | Word for word, except its sentence on ‘a church protected a wrongdoer’ |
+| Psalm 31:24; Proverbs 4:23; Psalm 32:5; 34:18 | 18-20 | BSB | BSB text |
