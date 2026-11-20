@@ -8832,3 +8832,32 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Kanōn, measuring rod, rule, measured area | 12-18 | Deep note `cultural`, `words` | Repository |
 | Corinth founded by Paul (Acts 18); Spain (Romans 15:24) | 12-18 | BSB | BSB text |
 | Jeremiah 9:23-24 summed up at 10:17 and 1 Corinthians 1:31; Proverbs 27:2; 1 Samuel 2:3 | 12-18 | BSB | BSB text. The old Greek of 1 Samuel 2:10 not claimed |
+
+## The plain notes on 2 Corinthians 11 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jewish betrothal binding; Joseph ‘her husband’ before the wedding (Matthew 1:19); the father presents the bride | 1-6 | Deep note `cultural`; BSB | Repository |
+| Zēlos, godly jealousy; Exodus 34:14; Isaiah 54:5; Hosea 2:19; Genesis 3:1, 13 (pointer to the Genesis 3:1-7 note) | 1-6 | Deep note `words`; BSB | BSB text |
+| Idiōtēs ‘unpolished’ at 11:6 | 1-6 | Greek text | Repository |
+| Super-apostles: views and no side, pointing to the book page | 1-6, 7-15 | Book page ledger | Ledger |
+| Patronage and refusing support; Acts 18:3; Philippians 4:15-16; 1 Corinthians 9:14 | 7-15 | Deep note `cultural`; BSB | Repository |
+| Metaschēmatizō three times in 11:13-15 | 7-15 | Greek text; deep note `words` | Repository |
+| A Jewish retelling of Adam and Eve (date uncertain) has Satan take an angel's bright form to deceive Eve; whether Paul knew it not known | 7-15 | Reference works | Search: en.wikipedia.org "Life of Adam and Eve"; intertextual.bible (Life of Adam and Eve and 2 Corinthians 11:14); Word Biblical Commentary excerpt. Title and date not given |
+| Jeremiah 5:31; Ezekiel 34:2; Matthew 7:15-16; Job 1:6 | 7-15 | BSB | BSB text |
+| 11:20 Greek: katadouloō, katesthiō (devour), lambanō (take), epairō, derō eis prosōpon | 16-21 | Greek text | Repository |
+| Self-praise common and mocked as vulgar | 16-21 | Deep note `cultural` | Stated generally |
+| Spiritual abuse named; a leader who exploits, humiliates or controls not to be obeyed; care line (wrong, not your fault; free to step away; report crimes; pastor or counsellor outside that church; Find Help) | 16-21 | Brief; book page ‘What the letter is not’; 1 Corinthians 13:4-7 note form | Repository wording, no phone number |
+| Ezekiel 34:3-4; Matthew 20:25-26; 1 Peter 5:3; 4:5; 13:10 | 16-21 | BSB | BSB text |
+| Forty lashes: Deuteronomy 25:2-3; the Mishnah's thirty-nine, later | 22-29 | Earlier ledger (Matthew 10; Acts 5: Makkot 3:10) | Ledger |
+| Synagogue discipline of a member; Paul kept going to synagogues; Romans 9:3; not a charge against the Jewish people; pointer to the Acts 2:22-28 note | 22-29 | Deep note `historical`; Acts plain notes' wording | Repository wording |
+| Beaten with rods by Roman officials at Philippi (Acts 16:22, 37); stoned at Lystra (Acts 14:19); Acts 27 later than the letter | 22-29 | BSB | BSB text |
+| Kindynos eight times in 11:26 | 22-29 | Greek text (G2794) | Script count |
+| Jeremiah 20:2, 7, 9 | 22-29 | BSB | BSB text |
+| Aretas IV, Nabataeans, about 9 BC to AD 40; debated authority in Damascus; both dangers (Acts 9:23-25) | 30-33 | Earlier ledger (Acts 9) | Ledger |
+| The Roman wall crown (corona muralis) for the first soldier over an enemy wall; some read 11:32-33 as playing on it, others doubt the Corinthians would have known it | 30-33 | Scholarship | Search: cambridge.org NTS 68 (2022), Pawlak, "Paul's Escape from Damascus (2 Cor 11.32-3) and the corona muralis"; tobias-lib.uni-tuebingen.de record. No scholar named in the note |
+| Joshua 2:15; 1 Samuel 19:12 | 30-33 | BSB | BSB text |
+
+Cut: the deep note's Tübingen school, Baur and Barrett by name; the Life of Adam and Eve by title; "hunter catches prey" for lambanō.
