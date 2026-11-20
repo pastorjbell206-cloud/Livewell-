@@ -2781,3 +2781,27 @@ Cut or not used: any statistic beyond the guide's; the International Q Project's
 
 Not claimed: that any discourse is verbatim; that the archaeology proves the discourses. Cut or not used: the Gabbatha pavement (the note on John 19 was not found to give an excavation, so nothing is said); Jacob's well and Aenon (not needed); any count of scholars.
 
+### bk. "Didn't Constantine, or the Council of Nicaea, decide which books went into the Bible?" (did-constantine-decide-the-bible)
+
+Further sources for this piece, GH: "CE Nicaea" (*Catholic Encyclopedia*, "The First Council of Nicaea", 11044a), "CE Canon NT" ("Canon of the New Testament", 03274a), "CE Muratorian" (10642a), "CE Athanasius" (02035a), "CE Eusebius" (05617b), all in `gustavo-depaula/ember`; "VC" (Eusebius, *Life of Constantine*, NPNF second series vol. 1, `jennica/jennica.github.io`, `NPNF2-01/Npnf2-01-30.htm`, book 4, chapter XXXVI by the copy's own heading); "Athanasius 39" (Festal Letter 39, "From Letter XXXIX. (for 367.)", NPNF second series vol. 4, same capture, `NPNF2-04/Npnf2-04-93.htm`); "Nicaea canons" (NPNF second series vol. 14, same capture, `NPNF2-14/Npnf2-14-13.htm`, canon I); "Essay" (`client/public/essays/who-decided-what-books-are-in-the-bible.json`); "Guide NT canon" (`client/public/theology/nt-canon.json`); "Guide Apocrypha" (`client/public/theology/apocrypha.json`).
+
+| Claim | How verified | Result |
+|---|---|---|
+| *The Da Vinci Code* (2003): a scholar tells the heroine that Constantine had a new Bible made and left out the gospels showing Jesus as a mortal man; retellings place it at Nicaea | Essay (its summary); Guide NT canon | Paraphrased, said to be the essay's summary; the novel was not opened |
+| Constantine put the public conveyances and posts at the bishops' disposal, opened the council as honorary president; two bishops who refused were exiled | CE Nicaea | Paraphrased |
+| Ehrman, *Lost Christianities* (2003): the proto-orthodox compiled the canon and told their victory as the majority's faith | This library's page four-gospels-and-the-rest (its rows in the twelfth run) | Paraphrased "as this library's page ... sets out his case" |
+| Three pieces of Nicaea's acts survive (creed, canons, synodal decree); Easter and the Meletian schism; the twenty canons' subjects (clerics who castrated themselves, lapsed, interest, standing for prayer on Sundays and in the Paschal season) | CE Nicaea; Nicaea canons (canon I) | Paraphrased; no canon names a book of Scripture (all twenty checked in CE's list) |
+| Constantine's letter: "fifty copies of the sacred Scriptures"; "the provision and use of which you know to be most needful for the instruction of the Church"; parchment, legible, professional transcribers | VC 4.36 (two copies: `jennica`, and `scrollmapper/bible_databases_deuterocanonical`, life-of-constantine-book-4) | Quoted and paraphrased |
+| Eusebius 3.25: "the holy quaternion of the Gospels"; accepted, disputed ("which are nevertheless recognized by many": James, Jude, 2 Peter, 2 and 3 John), rejected; Revelation "if it really seem proper" and "which some, as I said, reject" | Eusebius book 3 (McGiffert) | Quoted (the copy's footnote numbers left out) |
+| Eusebius attended Nicaea and wrote Constantine's life | The site's Nicaea essay | Agrees |
+| The *Church History*'s tenth book finished between 323 and 326 | CE Eusebius ("records the defeat of Licinius in 323, and must have been completed before the death and disgrace of Crispus in 326") | Paraphrased, said to be the encyclopedia's reckoning |
+| Muratorian fragment: published by Muratori in 1740; an early medieval copy (CE: eighth century; the Essay: seventh or eighth, so neither is given); four Gospels, Acts, thirteen letters of Paul; the Shepherd read privately, not publicly; forged letters to the Laodiceans and Alexandrians rejected; late second century near Rome by most, fourth century argued by Sundberg (1973) and Hahneman (1992) | CE Muratorian; Guide (canon) | Paraphrased |
+| Athanasius 367: "These are fountains of salvation ... Let no man add to these, neither let him take ought from these" | Athanasius 39 | Quoted |
+| Athanasius driven out of his city five times; his exiles, the first under Constantine (Treves) | Essay; CE Athanasius | Paraphrased |
+| Councils at Hippo (393), Carthage (397, 419) formulated catalogues; the East Syrian church's shorter canon; no clear trace of Revelation in Chrysostom | CE Canon NT | Paraphrased |
+| The twenty-seven books shared by Catholic, Orthodox and Protestant Bibles | Guide NT canon | Agrees |
+| Seven deuterocanonical books; Trent, April 1546; the Orthodox keep these "along with a few more"; the Protestant shorter canon | Guide Apocrypha; Essay | Paraphrased |
+| Kruger, *Canon Revisited* (2012); Metzger, *The Canon of the New Testament* (1987); F. F. Bruce, *The Canon of Scripture* (1988); the two theologies of canon | Guide (canon); Guide NT canon | Listed and paraphrased |
+
+Agreement: the essay "Who Decided What Books Are in the Bible?", the Nicaea essay, the guides on the New Testament canon and the Apocrypha, the Study Bible's guide to the canon, and this library's page on the four Gospels and the rest; none is contradicted, and the page does not repeat their accounts of the four Gospels' reception or the Old Testament dispute beyond a sentence each. Cut or not used: the later legend of books sorted under an altar (in the guide; not needed); Laodicea's list (no readable text of its canon 60 reached); the Ethiopian canon (no source read).
+
