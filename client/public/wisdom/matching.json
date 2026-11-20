@@ -2669,6 +2669,32 @@
     "anger",
     "gossip-and-the-tongue"
    ]
+  },
+  "deep-friendship": {
+   "phrases": [
+    "no close friends",
+    "dont have any real friends",
+    "how to make friends",
+    "make friends as an adult",
+    "friends drifted away",
+    "best friend moved away",
+    "want a best friend",
+    "shallow friendships",
+    "nobody to call",
+    "friendship ended",
+    "lost touch with friends",
+    "true friend",
+    "good friend"
+   ],
+   "not": [
+    "boyfriend",
+    "girlfriend"
+   ],
+   "related": [
+    "loneliness",
+    "betrayal",
+    "singleness"
+   ]
   }
  }
 }
