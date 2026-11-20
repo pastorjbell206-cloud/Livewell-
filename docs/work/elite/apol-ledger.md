@@ -1230,6 +1230,29 @@ Cut: Psalm 93:1 as a text used against Galileo (not confirmed); "most astronomer
 
 Cut: Earman as one "who writes as no defender of Christianity" (not checked); reports "with names and dates" (not in the reviews); the disciples "would not retract" (narrowed in an earlier ledger); the subtitles of Earman's and Keener's books (not confirmed).
 
+### r. "Can't physics explain the Big Bang and fine-tuning without God?" (the-beginning-and-fine-tuning)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Kalam revived by Craig, 1979 | God answer | Verified ("medieval" cut, not checked) |
+| Several constants in narrow life-permitting ranges (gravity, vacuum energy); Weinberg 1989, about 120 orders of magnitude; Rees, Astronomer Royal, no religious belief, *Just Six Numbers* (1999), takes the multiverse seriously; Hoyle's superintellect (paraphrase); Robin Collins on the universe generator; Lewis and Barnes, *A Fortunate Universe: Life in a Finely Tuned Cosmos* (2016) | God answer | Verified; the Hoyle words paraphrased |
+| Hawking and Mlodinow (2010) | Row o | Verified (secondary), paraphrased |
+| Krauss, *A Universe from Nothing* (2012) | Tenth run map (S); S: Wikipedia, reviews | Verified |
+| Carter, the anthropic principle, IAU Symposium 63 in Kraków, September 1973, for Copernicus's 500th birthday; published 1974 | S: Ellis's editorial note (*Gen. Rel. Grav.* 2011), Carter 1974 PDF | Verified (secondary) |
+| The Big Bang theory does not by itself show an absolute beginning; the laws break down at the earliest times; a quantum theory of gravity needed; proposals of a bounce | S: arXiv 2409.20299 review ("we are unable to determine if the Universe started with an initial singularity"), Scientific American, Wikipedia "Gravitational singularity" | Verified (secondary), paraphrased |
+| Pius XII, 22 November 1951 ("Un'ora"), widely read as saying the new cosmology confirmed creation; Lemaître reported uneasy; the details disputed (Pontifical University of the Holy Cross article) | S: inters.org ("The Pius XII - Lemaître Affair"), arXiv 2310.19175, Aleteia | Verified (secondary); stated as "reported" and "disputed" |
+| McGrew, McGrew and Vestrup, "Probabilities and the Fine-Tuning Argument: A Sceptical View," *Mind* 110 (2001): no probability can be assigned to a constant falling in a finite interval if its possible values have no bound | S: library records, Pruss's summary (*Philosophia Christi*) | Verified (secondary), paraphrased |
+| Lemaître 1927 (two years before Hubble), 1931 primeval atom; Hoyle, BBC, 1949, "this 'big bang' idea"; Penzias and Wilson, Bell Labs, 1964, published 1965 | Second run; /faq rows | Verified, the three words quoted |
+| Hoyle a steady-state theorist (1948, with Gold and Bondi); the background radiation of 1965 the decisive blow | S: Astronomy.com, Scientific American blog, New World Encyclopedia | Verified (secondary) |
+| Planck: about 13.8 billion years (13.787 ± 0.020) | Row (index) | Verified |
+| Borde, Guth and Vilenkin 2003; Carroll's objection on quantum effects | God answer | Verified |
+| Aquinas, reason cannot show the world began; Leibniz 1714 | God answer | Verified |
+| Albert, *New York Times* review of Krauss, March 2012: Krauss never justifies what he calls "nothing"; Krauss's starting point a quantum vacuum | S: Wikipedia (David Albert; A Universe from Nothing), NYT scan, Physics Today, Discover | Verified (secondary), paraphrased; the phrase on relativistic quantum fields not confirmed and not used |
+| Dawkins, *The God Delusion* (2006), the designer at least as improbable | God answer | Verified, paraphrased |
+| Russell 1948 quotation | God answer | Quoted |
+| Romans 1:20 | Repo (BSB) | Quoted |
+| Swinburne, *The Existence of God*, 2nd ed. (2004); Pruss, *The Principle of Sufficient Reason: A Reassessment* (2006) | God answer | Verified |
+
 ### The area page (index.md)
 
 | Claim | How verified | Result |

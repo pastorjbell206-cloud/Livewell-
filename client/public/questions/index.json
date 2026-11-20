@@ -191,6 +191,13 @@
           "blurb": "Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-beginning-and-fine-tuning",
+          "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+          "blurb": "What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -564,6 +571,36 @@
       "area": "science",
       "slug": "miracles-and-the-laws-of-nature",
       "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
+      "live": false
+    },
+    {
+      "claim": "Physics shows how a universe can arise from nothing, so the Big Bang needs no creator",
+      "proponent": "Lawrence M. Krauss",
+      "work": "A Universe from Nothing",
+      "year": 2012,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "Fine-tuning may be explained by a multiverse of universes with different constants, of which we observe one that permits life",
+      "proponent": "Martin Rees",
+      "work": "Just Six Numbers",
+      "year": 1999,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
+      "live": false
+    },
+    {
+      "claim": "A designer would be at least as improbable as the design it is offered to explain",
+      "proponent": "Richard Dawkins",
+      "work": "The God Delusion",
+      "year": 2006,
+      "area": "science",
+      "slug": "the-beginning-and-fine-tuning",
+      "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
       "live": false
     }
   ],
