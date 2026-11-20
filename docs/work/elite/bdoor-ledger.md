@@ -7688,3 +7688,253 @@ Cut: "Jewish readers have often read 149 as final justice" (deep note; not verif
 ## The Psalms complete (2026-11-20)
 
 All 150 psalms now have plain notes. Book Five (107 to 150) closed the book.
+
+## Romans's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/romans/intro.json`, field
+`teaching`. 8 searches, run on 2026-11-20. Ancient and modern writers are
+paraphrased unless marked. Scripture is the BSB in the repository, checked
+word for word by `scripts/validate-bible-notes.mjs` and a strict check that
+matches each quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul the author (1:1), agreed by nearly all; Tertius wrote it down (16:22); trained writers common | BSB; repository `author` | Repository |
+| Phoebe of Cenchrea (16:1-2); prostatis used of patrons; "very likely" carried the letter | BSB; wrom-ledger (prostatis; Phoebe as carrier "very likely") | Ledger |
+| Diakonos as servant or the office of deacon; readers differ | Greek text; standard lexicon sense | Stated as a reading question |
+| Doxology placed differently in manuscripts; chapter 16 once argued a separate note; most hold it belongs | Repository `author` | Repository |
+| About AD 57 (a year or two either way), from Corinth; the collection (15:25-26); three months in Greece (Acts 20:2-3); Gaius (16:23; 1 Corinthians 1:14) | Repository `date` | Repository; BSB text |
+| Erastus stone found at Corinth in 1929; identification disputed | wrom-ledger (IKorinthKent 232) | Ledger |
+| Arrest (Acts 21), two years at Caesarea (Acts 24:27), Rome as a prisoner (Acts 28) | BSB | BSB text |
+| Rome's Jewish community and synagogues; founder unknown; house churches (16:5, 14-15) | Repository `setting`, `historical` (Romans 1); Roman-world portrait | Repository; "many readers think" for several house churches |
+| Visitors from Rome at Pentecost | Acts 2:10 | BSB text |
+| Names in Romans 16: Jewish "fellow countrymen", Greek and Latin names, women; households of Aristobulus possibly slaves or freed slaves | BSB; Roman-world portrait ("a list of slaves and freedmen and hosts in Romans 16") | Stated as "may have been" |
+| Suetonius, Claudius 25.4, "Chrestus", most read Christus; AD 49 from Orosius, disputed; Acts 18:2 | wrom-ledger (verified) | Ledger |
+| Return after Claudius's death in 54; the Gentile-led interval and tensions over food and days as a reconstruction | Repository `setting`; brief | Stated as "a reconstruction and not something the letter says" |
+| Paul's reasons (1:10-15; 15:24, 28, 30-31; 3:8; 6:1, 15) and the views of the letter's purpose | BSB; repository `purpose` | Stated as views |
+| Habakkuk before the Babylonian conquest; 2:3 the appointed time; Hebrew 'emunah, steadiness or faithfulness | Repository doctrine study `justification` (ot); BSB | Repository |
+| Romans quotes the Old Testament more than any other letter of Paul | Repository `story` | Repository |
+| Paul quotes the Septuagint | Site guide septuagint-and-scripture | Repository |
+| Romans 8 names the Spirit more than any other chapter of Romans (19 times in the BSB) | BSB | Script count over Romans 1 to 16 |
+| Greek words: euangelion, dikaiosynē, dikaioō, pistis, charis, nomos, sarx, hamartia, pneuma, hilastērion, apolutrōsis, huiothesia, ethnē | Greek text in the repository (Strong's G2098, G1343, G1344, G4102, G5485, G3551, G4561, G266, G4151, G2435, G629, G5206, G1484) | Script |
+| Charis used of a patron's favour | Site guide patronage-and-grace | Repository |
+| "The righteousness of God" read as gift, as God's faithfulness, or both | Repository `themes` | Repository |
+| Lutheran and Reformed (Luther, Calvin); Catholic in Trent's words via the Catechism; 1999 Joint Declaration | Acts 13 plain note (word for word for Trent); repository doctrine study | Repository |
+| Orthodox: salvation as union with God (theosis); justification one picture among many; not cut off from healing in the church's life | Repository doctrine study `justification` (differ[2]) | Search: oca-type and academic summaries (orthodoxchristiantheology.com; modernreformation.org; learntheology.com), consistent; stated generally, no writer named |
+| E. P. Sanders, Paul and Palestinian Judaism (1977); covenantal nomism; James Dunn's 1982 Manson Memorial Lecture "The New Perspective on Paul"; N. T. Wright developed it | Sanders; Dunn | Search: bibleodyssey.com "Origins of the New Perspective on Paul"; Wikipedia "E. P. Sanders"; repository doctrine study. Wright named without a book (no title checked) |
+| Critics: weakens grace against human achievement | Repository doctrine study (differ[3]) | Stated as the critics' view; no names |
+| Pistis Christou; Romans 3:22, 3:26; Galatians 2:16; Philippians 3:9; Richard Hays, The Faith of Jesus Christ (1983); many still hold the traditional reading; some argue the early writers read "faith in" | Hays | Search: crossway.org; bibleodyssey.com "Faith of Christ"; thegospelcoalition.org; firstthings.com. Count of occurrences left vague ("a few times") because sources say seven or eight |
+| BSB 3:25 "atoning sacrifice", footnote "propitiation"; hilastērion the mercy seat in the Greek Old Testament (Exodus 25:17-22); Hebrews 9:5 | BSB; Septuagint | Search: biblestudytools.com BSB 3:25 (footnote "propitiation"); csbible.com on mercy seat |
+| Augustine, 386, a garden in Milan, a child's voice, "take up and read", Romans 13:13-14; Confessions 8.12 | Augustine, Confessions 8.12.29 | Search: christianhistoryinstitute.org "386 Augustine Converts"; christianitytoday.com; wheaton.edu reading guide. Paraphrased; season not given (sources differ) |
+| Luther lectured on Romans 1515-1516; the 1545 preface: hated "righteousness of God" as punishing justice, came to read it as the righteousness by which the just live by faith; date of the insight debated | Luther, Preface to the Latin Writings (1545) | Search: germanhistorydocs.org; pages.uoregon.edu; cambridge.org (Studies in Church History); repository doctrine study. Paraphrased |
+| Wesley, 24 May 1738, Aldersgate Street, Luther's preface to Romans read; "I felt my heart strangely warmed" | Wesley, Journal | facts-ledger (verified); repository doctrine study |
+| Barth's Römerbrief: begun 1916 as a pastor at Safenwil; printed December 1918, dated 1919; second edition rewritten, 1922; Göttingen 1921 | Barth | Search: Wikipedia "The Epistle to the Romans (Barth)"; barth.ptsem.edu; scielo.org.za. "Bombshell on the playground" not quoted (wording varies) |
+| Junia: oldest manuscripts favour the woman's name; "outstanding among" or "well known to" the apostles debated | Scholarship | Search: etsjets.org (Burer, JETS 58.4, 2015); evangelicaltextualcriticism.blogspot.com; Open Theology 2020. No scholar named on the page |
+| Claudius 41-54; Nero 54-68; Gallio about 51-52; fire of Rome July 64 (Tacitus) | wrom-ledger; earlier ledger (Mark, Acts) | Ledgers |
+| "That reading is false, and this site rejects it" | Acts 2 plain note | Repository wording |
+| Map: Corinth, Rome, Jerusalem on the "mediterranean" frame | wmap-ledger coordinates | Ledger. Illyricum not drawn (mostly north of the frame); Spain beyond the frame; both said in `mapNote` |
+
+Left out: Rome's population ("perhaps a million", repository `setting`,
+not checked); Wesley going "unwillingly" (not in the ledger, not searched);
+Calvin's "chief hinge" (not checked); the later churches that joined the
+Joint Declaration (not checked here); Karl Adam's "bombshell" line; the
+count of pistis Christou phrases; who founded the Roman church.
+
+## The plain notes on Romans 1 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter opening: sender, receiver, "greetings" (chairein); grace and peace | 1-7 | wrom-ledger (papyrus letter form); repository deep note (`cultural`) | Ledger |
+| Doulos, slave; Moses the servant of the LORD (Joshua 1:1) | 1-7 | Repository deep note; BSB | Repository; BSB text |
+| Priene inscription, about 9 BC: Augustus's birthday the beginning of good news | 1-7 | Earlier ledger (Mark); wrom-ledger | Ledgers |
+| 1:3-4 possibly an early confession ("some scholars") | 1-7 | Repository deep note (`literary`) | Stated as "some scholars think" |
+| "Obedience that comes from faith" read two ways; same phrase at 16:26 | 1-7 | BSB; Greek hupakoēn pisteōs | Stated as readings |
+| 2 Samuel 7:12, 14; Psalm 2:7; Acts 13:33; Genesis 12:3; Jeremiah 1:5; Galatians 1:15 | 1-7 | BSB | BSB text |
+| Barbaroi, those who did not speak Greek; wise and foolish as educated and uneducated | 8-15 | Earlier ledger (Acts 28, barbaroi); repository deep note | Ledger; repository |
+| 15:20-22 the reason for delay | 8-15 | BSB | BSB text |
+| Isaiah 49:6 (Acts 13:47); Isaiah 52:7 (Romans 10:15); Psalm 126:5-6 | 8-15 | BSB | BSB text |
+| Crucifixion for slaves, bandits, rebels | 16-17 | wrom-ledger (Hengel via the site's guide) | Ledger |
+| "From start to finish" is ek pisteōs eis pistin, "from faith to faith"; three readings | 16-17 | Greek text in the repository | Script; stated as readings |
+| Habakkuk 1:6, 2:3, 2:4; 'emunah steadiness or faithfulness; Psalm 98:2; Isaiah 28:16 as quoted in Romans 10:11 | 16-17 | BSB; repository doctrine study | BSB text; repository. "Some readers hear" the echo |
+| Justification views in brief, pointing to the book page | 16-17 | Book page | Repository |
+| Statues of gods in human form in Rome; Egypt's animal gods | 18-23 | Repository deep note (`cultural`) | Repository |
+| Wisdom of Solomon 13-14: knowledge of the Maker from his works, idolatry folly and the root of moral ruin, idolatry and sexual sin linked; probably first century BC; in Catholic and Orthodox Bibles | 18-23, 24-32 | Wisdom of Solomon | Search: etsjets.org ("Idolatry and Sinfulness in Wisdom of Solomon and Romans"); hts.org.za (Punt: dated 220 BC to AD 30, after 30 BC generally preferred); intertextual.bible. Canon status as the earlier ledger's Sirach row. Wisdom 14 paraphrased |
+| Orgē; "is being revealed" present tense | 18-23 | Greek text (apokaluptetai) | Script |
+| "Exchanged" three times (23, 25, 26); "gave them over" three times; paradidōmi also at 4:25 and 8:32 | 18-23, 24-32 | Repository deep note (`literary`, `words`) | Repository; BSB text |
+| Psalm 19:1; Exodus 32:4; Psalm 106:20; Jeremiah 2:11; Deuteronomy 4:16-18; Genesis 1:26 | 18-23 | BSB | BSB text |
+| First Vatican Council (1870): God known with certainty by natural reason from created things; Belgic Confession Article 2: knowledge of God from creation and providence; Barth's "No!" to Brunner (1934) | 18-23 | Dei Filius; Belgic Confession; Barth | Search: christianitytoday.com "Reviewing Revelation" (1967); theologicalstudies.net (Smith on Brunner); people.bu.edu (Barth). Paraphrased; stated as views, no side |
+| Vice lists a common form in Jewish and Greek moral writing | 24-32 | Repository deep note (`cultural`) | Repository |
+| Psalm 81:12; Genesis 1:27; Leviticus 18:22; Leviticus 19:11-18; Exodus 20:12 | 24-32 | BSB | BSB text |
+| The two readings of 1:26-27 (historic and majority; excess and exploitation in Paul's world); the reply from creation | 24-32 | Repository deep note (`hard`) | Stated as readings; no scholars named (Hays, Gagnon, Brownson in the deep note not repeated) |
+| "Due penalty" read within Paul's argument, not as illness sent as punishment | 24-32 | Site's care rule | Pastoral line |
+
+Cut: Campbell's reading of 1:18-32 as a voiced opponent (deep note; not checked); whether 1:26 speaks of women with women or of other acts (stated as "most readers take in the same sense"); ancient same-sex practices described in detail (not checked, so the second reading is stated as its holders see Paul's world).
+
+## The plain notes on Romans 2 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The diatribe: an imagined listener addressed as "O man"; whom Paul has in mind read two ways | 1-5 | Repository introduction (`reading`); deep note (`literary`) | Repository; stated as readings |
+| Chrēstotēs, kindness | 1-5 | Repository deep note (`words`) | Repository |
+| 2 Samuel 12:7; Exodus 34:6; Joel 2:13; Zephaniah 1:15 | 1-5 | BSB | BSB text |
+| 2:6-11 built as a mirror (chiasm); prosōpolēmpsia "receiving the face" | 6-11 | Repository deep note (`literary`, `words`) | Repository |
+| Psalm 62:12; Proverbs 24:12; Deuteronomy 10:17 | 6-11 | BSB | BSB text |
+| Three readings of judgment by deeds (the law's standard; believers renewed by the Spirit; works as fruit and evidence) | 6-11 | Repository deep note (`hard`) | Stated as readings, no names |
+| The law read aloud in synagogues on the Sabbath; Greek idea of a natural law | 12-16 | Jewish-life portrait; standard | Stated generally |
+| Suneidēsis; conscience weak (1 Corinthians 8:7) | 12-16 | Repository deep note (`words`); BSB | Repository; BSB text |
+| Jeremiah 31:33; Ezekiel 36:26-27; Psalm 139:23 | 12-16 | BSB | BSB text |
+| Two readings of the Gentiles of 2:14; the Honest Answer on those who never heard | 12-16 | Repository; `answers.ts` ("judged by the light they had") | Stated as readings; Honest Answer pointed to, not quoted |
+| Jewish pride in the law and the calling to be a light true, not caricature; God-fearers | 17-24 | Repository deep note (`historical`) | Repository |
+| "Rob temples": Deuteronomy 7:25-26; two readings; uncertain | 17-24 | Repository deep note | Stated as uncertain. Josephus on the AD 19 Fulvia affair (deep note) not used: not checked |
+| Isaiah 52:5 in Paul follows the Greek, which has "because of you" and "among the Gentiles", absent from the Hebrew; Ezekiel 36:20 | 17-24 | Septuagint | Search: tips.translation.bible (translation commentary on Romans 2:24); preceptaustin.org; biblehub.com commentaries |
+| Not a charge against the Jewish people: "For centuries many Christians ... This site rejects it." | 17-24 | Acts 2 plain note, word for word for the sentences reused | Repository wording |
+| Isaiah 42:6; Exodus 20:14-15; Romans 9:2; 11:1; 11:18-20 | 17-24 | BSB | BSB text |
+| Circumcision the covenant sign (Genesis 17) and chief marker of Jewishness; strange to many Greeks and Romans | 25-29 | Repository deep note (`cultural`) | Repository |
+| Judah linked to praise (Genesis 29:35) | 25-29 | BSB; repository deep note | BSB text |
+| Deuteronomy 10:16; 30:6; Jeremiah 4:4; 9:25; Ezekiel 36:27; Romans 3:2 | 25-29 | BSB | BSB text |
+
+Cut: Josephus on the AD 19 expulsion; the chiasm named as such (described as "a mirror"); Stoic writers by name on natural law.
+
+## The plain notes on Romans 3 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The very words of God" (BSB), "oracles" in older Bibles: the Scriptures | 1-8 | BSB; standard rendering (logia) | BSB text |
+| Mē genoito, "may it never be", "God forbid" in older Bibles; used repeatedly in Romans | 1-8 | Repository deep note (`literary`); Greek text | Repository; standard |
+| Psalm 51:4 in Paul follows the Greek ("victorious"); Psalm 51 after Bathsheba (its heading); Psalm 116:11; Deuteronomy 4:8 | 1-8 | BSB (Romans 3:4 and Psalm 51:4 compared) | BSB text |
+| The slander of 3:8, answered in chapter 6 | 1-8 | Repository deep note (`historical`) | Repository |
+| The chain (catena): Psalm 14:1-3 (53:1-3); Ecclesiastes 7:20; Psalm 5:9; 140:3; 10:7; Isaiah 59:7-8; Psalm 36:1; the body from throat to eyes | 9-20 | Repository deep note (`literary`); BSB | BSB text, each source verse read in place |
+| Psalm 143:2 behind 3:20 | 9-20 | Repository doctrine study; BSB | BSB text |
+| Reformed: sin touches every part, not maximal evil; Catholic and Orthodox: nature wounded, not wholly corrupted | 9-20 | Standard confessional positions | Stated generally, no documents named |
+| Law court, slave market, temple; redemption the price of a slave's or prisoner's freedom; Exodus 6:6 | 21-26 | Repository deep note (`cultural`); BSB | Repository; BSB text |
+| Hilastērion: the mercy seat in the Septuagint; Leviticus 16:14-15; Exodus 25:22; Hebrews 9:5 | 21-26 | Repository deep note; BSB | BSB text |
+| BSB "atoning sacrifice", footnote "propitiation" | 21-26 | BSB | Book-page search (biblestudytools.com) |
+| C. H. Dodd for expiation (1935); Leon Morris for propitiation (The Apostolic Preaching of the Cross, 1955) | 21-26 | Dodd; Morris | Search: en.wikipedia.org "Propitiation"; biblicaltraining.org; tyndalebulletin.org (Bailey). Paraphrased |
+| Gustaf Aulén, Christus Victor (Swedish 1930, English 1931): victory over sin, death and the devil; held the early writers' view | 21-26 | Aulén | Search: en.wikipedia.org "Christus Victor"; librarything; secondary summaries. "Bishop" not used (not seen) |
+| Penal substitution; obedience; moral influence; the objection and the reply | 21-26 | Repository deep note (`hard`) | Stated as views, no side |
+| Nicene Creed "for us men and for our salvation" | 21-26 | `client/public/creeds/` | Repository text |
+| Isaiah 53:5, 11; Genesis 15:6; pistis Christou pointer to the book page | 21-26 | BSB; book page | BSB text |
+| Boasting in public life of the Roman world | 27-31 | Honor-and-shame portrait (stated generally) | Stated generally |
+| Deuteronomy 6:4 recited in Jewish prayer; Isaiah 45:22; Jeremiah 9:23-24 | 27-31 | Jewish-life portrait; earlier ledger (Mark 12, Berakhot 1:1); BSB | BSB text; "recited", not "daily" |
+| Readings of "uphold the law" (Genesis's witness; the Spirit, 8:4; the moral law as guide) | 27-31 | Standard readings | Stated as readings |
+
+Cut: the "Romans road" and other popular uses of 3:23; Anselm and Abelard by name (seen only in secondary summaries); "Christus Victor" claimed as the view of named fathers.
+
+## The plain notes on Romans 4 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sirach (second century BC): Abraham kept the law of the Most High, found faithful when tested; 1 Maccabees 2:52 ties Genesis 15:6 to faithfulness when tested (Genesis 22) | 1-8 | Sirach 44:20; 1 Maccabees 2:52 | Search: biblegateway.com and biblestudytools.com (1 Maccabees 2:52); ascensionpress.com (Sirach 44); cejsh.icm.edu.pl (Nawrot). Paraphrased; repository deep note (`historical`) |
+| Logizomai a bookkeeping word, used again and again in the chapter | 1-8 | Repository deep note (`cultural`) | Repository |
+| Exodus 23:7; Proverbs 17:15; Psalm 32:1-2 (Paul follows the Greek); the shared-word method of reading | 1-8 | BSB; repository deep note | BSB text; repository |
+| Paul and James (James 2:21; Galatians 5:6); Genesis 15:1-6 plain note pointed to | 1-8 | Repository deep note (`hard`); Genesis 15 plain note | Stated as readings |
+| Genesis 15 before 17; Ishmael born at 86 (16:16), circumcised at 13 (17:24-25): more than thirteen years | 9-12 | BSB | BSB text |
+| A seal confirming a document or ownership | 9-12 | Standard | General |
+| Colossians 2:11-12; infant and believer's baptism as differing church practice | 9-12 | BSB; Acts 2 plain note (churches differ) | Stated as practices, no side |
+| Heir of the world; Genesis 12:3; 17:5; 22:18; Genesis 1:3; Isaiah 48:13 | 13-17 | BSB | BSB text |
+| Romans 7:12-13 on the law holy and sin shown as sin | 13-17 | BSB | BSB text |
+| Genesis 15:5; 16; 17:17; 18:12, 14; 21:2; Hebrews 11:12 | 18-25 | BSB | BSB text |
+| Isaiah 53:12 behind 4:25 ("many readers"); the Greek of Isaiah has the servant "handed over" (paredothē) because of their sins | 18-25 | Septuagint Isaiah 53:12 | Standard (Rahlfs text); stated as "many readers hear" |
+| Paradidōmi in 1:24-28 and 4:25 | 18-25 | Repository deep note (Romans 1 `words`) | Repository |
+
+Cut: the Amidah's "who gives life to the dead" (not checked); later rabbinic tradition that Abraham kept the whole law (deep note; not checked).
+
+## The plain notes on Romans 5 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Augustus as bringer of peace; the Roman peace on coins and monuments; access as introduction to a king; katallagē, making peace between parties at war | 1-5, 6-11 | Repository deep note (`cultural`) | Repository |
+| Kauchaomai "rejoice" is the boasting word; the chain of 5:3-4; dokimē as tested character | 1-5 | Repository deep note (`literary`); Greek text | Repository; standard lexicon sense |
+| The Spirit named at 1:4 and 2:29, then filling chapter 8 | 1-5 | BSB | Script count |
+| Isaiah 32:17; Psalm 22:5; Joel 2:28; Psalm 34:18 | 1-5 | BSB | BSB text |
+| Care line: not a line for fresh grief; Find Help; the suffering Honest Answer | 1-5 | Genesis 50 plain note form; `answers.ts` | Repository wording, adapted |
+| Ancient praise for dying for a friend, benefactor or city | 6-11 | Repository deep note (`cultural`) | Repository |
+| Greater-to-lesser argument known in Jewish interpretation | 6-11 | Repository deep note (`literary`) | Repository |
+| Isaiah 53:6; Hosea 14:4; Zephaniah 1:15 | 6-11 | BSB | BSB text |
+| 4 Ezra and 2 Baruch on Adam's sin and each person's responsibility | 12-14 | Repository deep note (`historical`) | Repository; stated without dates or quotation |
+| Typos, pattern | 12-14 | Greek text | Standard |
+| Western original sin (Augustine; present in Adam or Adam as appointed head); Orthodox ancestral sin (death and a bent nature, not guilt) | 12-14 | Repository deep note (`hard`); search | Search: catenabible.com (Romans 5:12); mdpi.com Religions 15 (2024); secondary pages quoting Kelly and Meyendorff. Stated as teachings, no side |
+| Old Latin "in quo" ("in whom"), followed by Augustine (and Ambrosiaster before him); most modern translations "because" | 12-14 | Search as above; repository deep note | Ambrosiaster not named on the page |
+| Historical Adam: views; the Honest Answer on Genesis 1 | 12-14 | Repository deep note (`hard`); `answers.ts` | Stated as views, no position |
+| Genesis 2:17; 3:19; 5:5; 1 Corinthians 15:22 | 12-14 | BSB | BSB text |
+| Universalist, Reformed and Arminian/Wesleyan readings of "all" and "the many" | 15-21 | Standard positions; apol-ledger (universalism refused by most churches) | Stated as readings, no names, no side |
+| Isaiah 53:11; Genesis 3:6 | 15-21 | BSB | BSB text |
+
+Cut: Gregory of Nyssa and other universalists by name; Ambrosiaster by name; 2 Baruch's "each his own Adam" line (deep note; not checked).
+
+## The plain notes on Romans 6 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Baptism the rite of entry; in water, often by immersion it seems; the New Testament does not describe the mode in detail | 1-4 | Repository deep note (`historical`) | Repository; "it seems", "many readers think" |
+| What all churches share on baptism; the differences pointed to the Acts 2:37-41 note | 1-4 | Acts 2 plain note | Repository; stated as teachings, no side |
+| Exodus 14:29; 1 Corinthians 10:1-2; Ezekiel 36:25-26; Galatians 3:27 | 1-4 | BSB | BSB text |
+| "Count" the same verb as "credited" (logizomai); hoplon usually weapons | 5-14 | Greek text; repository deep note (`cultural`) | Script; repository |
+| Readings of continuing sin (dethroned master; Reformed and Lutheran; Wesleyan entire sanctification) | 5-14 | Repository deep note (`hard`) | Stated as readings |
+| Psalm 116:16; Joshua 24:15; Deuteronomy 30:19 | 5-14 | BSB | BSB text |
+| Slavery everywhere; a large part of Rome slaves or former slaves; freed slaves owed duties; some hearers probably slaves | 15-23 | wrom-ledger (Scheidel; manumission; Romans 16 names); repository deep note | Ledger |
+| Paul's apology for the picture (6:19), read as the picture being too crude | 15-23 | BSB; standard reading | "Many readers take him to mean" |
+| Opsōnion, a soldier's pay; charisma, gift | 15-23 | Repository deep note (`cultural`) | Repository |
+| Exodus 20:2; Leviticus 25:42; Genesis 2:17; Ezekiel 18:4; Exodus 21:16; Philemon 1:16; the slavery Honest Answer | 15-23 | BSB; `answers.ts` | BSB text; Honest Answer pointed to by title |
+
+Cut: the mystery religions and the old argument that Paul borrowed from them (deep note; not checked).
+
+## The plain notes on Romans 7 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Those who know the law" read two ways; a law binds the living | 1-6 | BSB; standard | Stated as readings |
+| Deuteronomy 24:2; Hosea 2:19; Jeremiah 31:33; Ezekiel 36:27 | 1-6 | BSB | BSB text |
+| Views of the law's continuing use (moral commands distinguished from worship and national laws; stress on Christ's teaching and the Spirit) | 1-6 | Standard positions | Stated generally, no side |
+| Echoes of Adam, Israel at Sinai, or Paul's own youth in 7:7-13 | 7-13 | Repository deep note (`hard`) | Stated as readings |
+| The tenth commandment the one wholly about the heart | 7-13 | BSB (Exodus 20:17) | BSB text; standard observation |
+| Leviticus 18:5; Genesis 3:13; Exodus 20:17 | 7-13 | BSB | BSB text |
+| Ovid, Metamorphoses 7 (about line 20): Medea sees and approves the better, follows the worse; the motif behind 7:15, 19 | 14-25 | Ovid | Search: feminaeromanae.org (Latin text); static.topoi.org (von Bendemann on Rom 7:15b); intertextual.bible. Paraphrased; "a little before Paul" (Ovid died about AD 17) |
+| The "I": (1) believer: Augustine later, after first reading otherwise, in the Pelagian controversy; Luther, Calvin and much of the Lutheran and Reformed tradition; (2) a person under the law seen from faith: many early church writers and many modern scholars; (3) speech in character: Adam, Israel, anyone; Origen read it so | 14-25 | History of interpretation | Search: sharperiron.org; logos.com (Dodson); midamerica.edu journal (2020); biblicalelearning.org (Dockery, GTJ 2.2, 1981); outlook.reformedfellowship.net ("with few exceptions all ... Augustinian or Reformed"). Luther and Calvin named at the level of their traditions |
+| Wesley's reading of 7:14 | 14-25 | Wesley, Notes | Search: wesley notes pages; the results did not confirm that he read it of a person before faith, so Wesley is not named |
+| Psalm 1:2; 119:97; Jeremiah 17:9; Psalm 51:10 | 14-25 | BSB | BSB text |
+| Care line (repeated failure, addiction; doctor, pastor, counsellor, a group; Find Help) | 14-25 | Site's care rule | Pastoral line |
+
+Cut: Wesley by name (not confirmed); Kümmel (1929) and Stowers by name (not needed); Chrysostom's reading (not found).
+
+## The plain notes on Romans 8 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "No condemnation" a law-court word; the Spirit named a handful of times in chapters 1 to 7 and many in chapter 8 | 1-11 | BSB | Script count (1:4, 2:29, 5:5, 7:6 against 19 in chapter 8) |
+| Sin offering (Leviticus 4:3); Ezekiel 36:27; 37:14 | 1-11 | BSB | BSB text |
+| Abba, Aramaic for father; Jesus in Gethsemane (Mark 14:36); "Daddy" goes too far, grown children used it (Barr's 1988 article as summarised) | 12-17 | Barr, "Abba Isn't Daddy", JTS 39 (1988) | Search: thegospelcoalition.org "Does Abba mean Daddy?"; logos.com; rsc.byu.edu. Paraphrased; no scholar named on the page |
+| Huiothesia a legal term for adoption as a son with full rights of inheritance; the adopted son his new father's heir | 12-17 | NET translator's note; ISBE "Adoption" | Search: biblia.com (NET note on Romans 8:15); bibliaplus.org (ISBE). Augustus's adoption and cancelled debts not used (not confirmed) |
+| Galatians 3:28; Exodus 4:22; Hosea 11:1; Romans 9:4; Psalm 103:13; Numbers 14:3-4; Psalm 27:10 | 12-17 | BSB | BSB text |
+| The father care line in the Psalm 103 note's form ("this verse is not asking you to picture him ... not limited by the father you had") | 12-17 | Psalms 103 plain note | Repository wording, adapted |
+| Firstfruits; the three groans; "pains of childbirth" | 18-27 | BSB; standard | BSB text |
+| Genesis 3:17-18; Isaiah 65:17; 11:6, 9; Exodus 2:24 | 18-27 | BSB | BSB text |
+| God as the one who subjected creation (most readers) | 18-27 | Standard reading | Stated as "most readers" |
+| Wesley, "The General Deliverance", early 1780s, on Romans 8: the animals share in the restoration | 18-27 | Wesley, Sermon 60 | apol-ledger (verified) |
+| No political application | 18-27 | Brief's rule | Stated plainly |
+| Manuscripts differ at 8:28 on naming God; the repository's Greek lacks theos; the BSB has "God works" | 28-30 | Repository deep note (`hard`); Greek text | Script; stated generally |
+| Genesis 50:20 note's wording ("does not call evil good ... never a line to hand to someone in fresh grief ... If someone has hurt you, what they did was wrong ...") | 28-30 | Genesis 50 plain note | Repository wording, adapted |
+| Reformed, Arminian/Wesleyan and corporate readings of foreknew and predestined; the Honest Answer on choosing | 28-30 | Repository deep note; `answers.ts` | Stated as readings, no names, no side |
+| Genesis 50:20; 1:27; Jeremiah 1:5 | 28-30 | BSB | BSB text |
+| Paul's hardships (2 Corinthians 11:23-27); Nero and the Christians of Rome after July 64 | 31-39 | BSB; earlier ledger (Tacitus) | BSB; ledger |
+| Hupernikōmen, one word | 31-39 | Greek text | Script |
+| Genesis 22:12; Isaiah 50:8-9; Psalm 110:1; Psalm 44:17, 22 | 31-39 | BSB | BSB text |
+| Perseverance views (Reformed and Baptist; Wesleyan, Arminian and Catholic); John 10:28; Hebrews 6:4-6; "That fear is not usually the mark of someone who has fallen away" | 31-39 | `answers.ts` ("Can you lose your salvation?") | Repository; wording adapted from the Honest Answer |
+
+Cut: height and depth as astrological terms (not checked); Orthodox teaching on perseverance (not in the Honest Answer, not checked); Jeremias by name.
