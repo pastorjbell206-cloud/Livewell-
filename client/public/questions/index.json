@@ -246,6 +246,13 @@
           "blurb": "Kenyon's Jericho and the radiocarbon dates, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-command-to-destroy-the-canaanites",
+          "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
+          "blurb": "The command and the ban in their setting, the limits the books set on it, Kant's question about knowing a command is God's, the main Christian readings and what each must carry, and why none licenses violence today.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -805,6 +812,26 @@
       "area": "old-testament",
       "slug": "jericho-and-the-conquest",
       "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+      "live": false
+    },
+    {
+      "claim": "A perfectly good God would not command the killing of children, so either God is not good or the Bible is wrong that he commanded it",
+      "proponent": "Wes Morriston",
+      "work": "Did God Command Genocide? A Challenge to the Biblical Inerrantist",
+      "year": 2009,
+      "area": "old-testament",
+      "slug": "the-command-to-destroy-the-canaanites",
+      "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
+      "live": false
+    },
+    {
+      "claim": "No one can be as certain that a voice is God's as that killing an innocent child is wrong",
+      "proponent": "Immanuel Kant",
+      "work": "The Conflict of the Faculties",
+      "year": 1798,
+      "area": "old-testament",
+      "slug": "the-command-to-destroy-the-canaanites",
+      "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
       "live": false
     },
     {
