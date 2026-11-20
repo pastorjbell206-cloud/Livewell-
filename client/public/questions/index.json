@@ -285,6 +285,13 @@
           "blurb": "Schweitzer's prophet and Russell's lecture at full strength, the temple's fall in AD 70, Daniel's Son of Man coming to God, the transfiguration, Matthew 10:23, the confession that the Son does not know the day, and the main Christian readings with no scheme of the end chosen.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "did-the-disciples-die-for-their-belief",
+          "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
+          "blurb": "Gibbon's doubt at full strength, how thin the evidence is for most of the Twelve, what is well attested for Peter, Paul and the two Jameses with the sources named, and why the argument shows sincerity, not truth.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1178,6 +1185,26 @@
       "area": "jesus",
       "slug": "did-jesus-predict-the-end-within-a-generation",
       "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+      "live": false
+    },
+    {
+      "claim": "The stories of the apostles' deaths are legends of a credulous antiquity; martyrdom was gradually bestowed on apostles beyond Peter, Paul and James",
+      "proponent": "Edward Gibbon",
+      "work": "The History of the Decline and Fall of the Roman Empire",
+      "year": 1776,
+      "area": "jesus",
+      "slug": "did-the-disciples-die-for-their-belief",
+      "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
+      "live": false
+    },
+    {
+      "claim": "The disciples sincerely had visions of Jesus after his death, so their sincerity shows nothing about whether he rose",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "did-the-disciples-die-for-their-belief",
+      "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
       "live": false
     },
     {

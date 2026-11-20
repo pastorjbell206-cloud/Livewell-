@@ -72,7 +72,7 @@ describe("the questions library's data", () => {
     expect(science.pieces.length).toBe(5);
     expect(science.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
     expect(jesus.live).toBe(false);
-    expect(jesus.pieces.length).toBe(5);
+    expect(jesus.pieces.length).toBe(10);
     expect(jesus.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
     expect(contradictions.live).toBe(false);
     expect(contradictions.pieces.length).toBe(5);
