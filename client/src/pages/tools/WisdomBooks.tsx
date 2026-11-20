@@ -749,6 +749,10 @@ export default function WisdomBooks() {
                     <p key={i}>{para}</p>
                   ))}
                 </div>
+                <p className="wb-more">
+                  Proverbs teaches; the Psalms pray.{" "}
+                  <Link href="/tools/pray-the-psalms">Pray the Psalms</Link> finds a psalm for where you are and lets you pray it slowly.
+                </p>
                 <ResultActions
                   title="The Wisdom Books Explorer"
                   summary="Proverbs by theme and by day, with the Study Bible's notes."

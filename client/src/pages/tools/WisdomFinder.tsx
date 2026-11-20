@@ -373,6 +373,15 @@ export default function WisdomFinder() {
                   Open the Wisdom Books Explorer
                 </Link>
               </div>
+              <div className="wz-sec">
+                <h3 className="wz-sec__kicker">A psalm to pray</h3>
+                <p className="wf-results__count" style={{ margin: "0 0 8px" }}>
+                  All 150 psalms, found by how you are today or by morning and evening, each with a guide to praying it drawn from the Study Bible's notes.
+                </p>
+                <Link href="/tools/pray-the-psalms" className="wz-link">
+                  Open Pray the Psalms
+                </Link>
+              </div>
               {data && (
                 <details className="wf-az wz-sec">
                   <summary>Every subject, A to Z ({data.topics.length})</summary>
