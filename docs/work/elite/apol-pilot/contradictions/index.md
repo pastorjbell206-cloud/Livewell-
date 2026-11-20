@@ -23,7 +23,7 @@ The pages also take no side between the ways Christians confess Scripture's trut
 ## Words these pages use
 
 - **Inerrancy**: the conviction that Scripture in its original writings is without error in all that it affirms; its best-known modern statement is the Chicago Statement of 1978.
-- **Infallibility**: as used here, the conviction that Scripture never fails in what God gave it to teach, the way of salvation and of life with him.
+- **Infallibility**: as used here, the conviction that Scripture never fails in what God gave it to teach, the way of salvation and of life with him. Christians who hold to inerrancy confess Scripture infallible too; the Chicago Statement says the two "may be distinguished, but not separated."
 - **Harmonization**: an explanation that shows how two accounts that seem to conflict can both be true.
 - **Parallel account**: a second telling of the same event, as Chronicles retells Samuel and Kings, or as the four Gospels tell the passion.
 - **Masoretic text**: the standard Hebrew text of the Old Testament, preserved by Jewish scribes; the Leningrad Codex, copied early in the eleventh century, is its oldest complete copy.
