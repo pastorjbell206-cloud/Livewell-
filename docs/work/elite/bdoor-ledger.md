@@ -8682,3 +8682,25 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Katoptrizomai, reflect or behold as in a mirror; metamorphoō as at Matthew 17:2; ‘from glory into glory’ word for word | 12-18 | Greek text (G2734, G3339; apo doxēs eis doxan) | Script over the repository's Greek |
 | Contempt for Jews rejected in the site's wording; Romans 9:2; 10:1; 11:1; Luke 24:27 | 12-18 | Acts 2 and Romans 11 plain notes; BSB | Repository wording |
 | Exodus 34:33-34; 33:18, 20; Deuteronomy 29:4; Psalm 119:18; Isaiah 61:1; Genesis 1:27; Galatians 5:13 | 12-18 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 4 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ekkakeō, lose heart, verses 1 and 16 | 1-6 | Deep note `words`; Greek text (G1573) | Repository |
+| ‘The god of this age’ most take as Satan; John 12:31 | 1-6 | Deep note; BSB | Worded "most readers" |
+| ‘Jesus Christ as Lord’ possibly among the first confessions; doulos, servant or slave (4:5) | 1-6 | Deep note `christ`; Greek text (G1401) | Repository; "may be" |
+| Light at Paul's conversion (Acts 9:3); "many readers think" Paul has it in mind | 1-6 | BSB | BSB text; worded as a reading |
+| Genesis 1:3; 1:27; Isaiah 9:2; Colossians 1:15; Exodus 33:18; John 12:31 | 1-6 | BSB | BSB text |
+| Clay jars cheap, common, breakable; valuables kept in earthenware (Jeremiah 32:14) | 7-12 | Deep note `cultural`; BSB | Repository |
+| The play on words in 4:8 (aporoumenoi, exaporoumenoi); the 1:8 word | 7-12 | Deep note `literary`; Greek text (G1820) | Repository |
+| Isaiah 64:8; Jeremiah 18:6; Job 4:19; Psalm 73:26; Isaiah 42:3; 40:29 | 7-12 | BSB | BSB text |
+| Care line (not crushed is not a test; 1:8; 7:6; Find Help; thoughts of self-harm) | 7-12 | Psalms 42 form | Repository wording |
+| Paul's ‘I believed, therefore I spoke’ the three words of the old Greek (Psalm 115:1 there); the Hebrew hard, versions differ; the BSB follows the Hebrew | 13-18 | Commentaries | Search: preceptaustin.org on 4:13-15 (episteusa, dio elalēsa); tips.translation.bible on Psalm 116:10; intertextual.bible |
+| Greek thinkers on body and soul, stated generally | 13-18 | Deep note `cultural` | Repository |
+| Baros, weight, set against elaphron, light; kabod from a root meaning heavy, "may be" | 13-18 | Greek text (G0922, G1645); deep note `words`; standard Hebrew lexicons | Repository |
+| Stoned and dragged out, presumed dead (Acts 14:19) | 13-18 | BSB | BSB text |
+| Care line on 4:17: Paul's own testimony, never a line for fresh pain; the Romans 8:28 note's wording; Romans 12:15; Psalm 13:1; Find Help | 13-18 | Romans 8 plain note | Repository wording |
+| Psalm 116:8, 10; 39:4; 30:5; Isaiah 40:31 | 13-18 | BSB | BSB text |
