@@ -10213,3 +10213,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | ‘To the pure’ applies Mark 7:18-23 | 12-16 | Chapter deep note `christ` | Repository |
 | Contempt for peoples named as misuse; Genesis 1:27 | 12-16 | The run's brief; BSB | BSB text |
 | Genesis 1:31; Psalm 24:4; 15:2; Isaiah 29:13; Proverbs 20:11 | 12-16 | BSB | BSB text |
+
+## The plain notes on Titus 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sōphrōn family through the chapter (verses 2, 4, 5, 6, 12) | 1-5; 6-8 | Chapter deep note `cultural`, `words` (G4998) | Repository |
+| Older women teachers of good; slander and wine failings attributed to older women in ancient comic and moral writing; younger women's list matched Roman ideals | 1-5 | Chapter deep note `cultural` | Repository |
+| Churches in households; critics said the movement disrupted families; purpose clauses | 1-5 | Chapter deep note `historical` | Repository |
+| Wives: what all agree; complementarian and egalitarian readings; no side | 1-5 | Chapter deep note `hard`; ephesians/plain/5.json (21-33) | Repository wording, paraphrased. No side |
+| Abuse care lines (two paragraphs) | 1-5 | ephesians/plain/5.json (21-33) | Word for word |
+| Leviticus 19:32; Proverbs 16:31; 31:26; Psalm 71:18; Genesis 2:24 | 1-5 | BSB | BSB text |
+| Titus relatively young; example in good works and speech | 6-8 | Chapter deep note `cultural` | Repository |
+| Proverbs 20:29; Psalm 119:9; 1 Samuel 2:26; Ecclesiastes 12:1 | 6-8 | BSB | BSB text |
+| Roman slavery described; slaves addressed as moral agents; pilfering a common complaint; Crete included | 9-10 | ephesians/plain/6.json (5-9); chapter deep note `historical` | Repository wording |
+| Words to masters elsewhere (Ephesians 6:9; Colossians 4:1) | 9-10 | BSB | BSB text |
+| The hard part on slavery | 9-10 | ephesians/plain/6.json (5-9) | Word for word, fitted to 2:9-10 (‘submit’, ‘verses like these’, ‘work honestly and with good faith’) |
+| Exodus 21:16; Deuteronomy 23:15; 15:12; Job 31:15; Deuteronomy 10:17 | 9-10 | BSB | BSB text |
+| Paideuō; epiphaneia; two appearings; periousios echoing Exodus 19:5 | 11-15 | Chapter deep note `words`, `literary`, `christ` | Repository |
+| 2:13 one person in most translations and for most readers; confession; John 1:1; 20:28; Hebrews 1:8 | 11-15 | titus/intro.json `christ`; chapter deep note `christ`; romans/verses/9.json | Repository wording |
+| ‘Savior’ of God three times and of Jesus three times | 11-15 | titus/intro.json `themes` | Repository |
+| Psalm 130:8; Ezekiel 37:23; Isaiah 9:6 | 11-15 | BSB | BSB text |
+
+Narrowed: "Israel's law set limits that Roman law did not" to "set limits on slavery".
