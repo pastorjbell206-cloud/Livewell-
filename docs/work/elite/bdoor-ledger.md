@@ -9114,3 +9114,29 @@ Cut: "only here does Paul end a letter with ‘brothers’" (not checked).
 ## Galatians complete (2026-11-20)
 
 All six chapters in plain words. Galatians searches: 7 for the book page, 1 for chapter 5.
+
+## Ephesians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/ephesians/intro.json`, field
+`teaching`. 2 searches, run on 2026-11-20. Views are paraphrased; no scholar is named.
+Scripture is the BSB in the repository, checked word for word by
+`scripts/validate-bible-notes.mjs` and the strict check.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul named (1:1; 3:1); received by the early church; known to second-century writers; almost no one doubted it until the modern period | Repository `author` | Repository |
+| The case against Paul's authorship (style, 1:3-14 one sentence, realized salvation, universal church, 2:20, Colossians parallels, distance) and the case for (subject, secretaries, Tychicus with both letters, a circular, the church's rejection of false writings); no side | Repository `author`; BSB 6:21-22, Colossians 4:7-8 | Repository. Each side stated in its own terms; "These notes do not choose" |
+| Ephesus the leading city of Asia, a port; temple of Artemis among the wonders; Acts 19 (two years, magic books, silversmiths' riot) | Repository `setting`; BSB | Repository |
+| ‘In Ephesus’ absent from P46 (about AD 200) and from Sinaiticus and Vaticanus as first written; Marcion's text ‘To the Laodiceans’ (Tertullian); circular-letter view; Colossians 4:16; the words in every early version (the case for originality) | Repository `setting`; textual commentaries | Search: bibleleaguetrust.org (citing Metzger's Textual Commentary); biblicalstudies.org.uk GTJ 2.1 (Black); cbtseminary.org (Arnold's case that the phrase is original, "the only reading found in all extant versions"). No side |
+| Prisoner (3:1; 4:1; 6:20); Rome about AD 60 to 62 (Acts 28:30) most often; Caesarea (Acts 23 to 26) or Ephesus by some; AD 80 to 100 on the later view; before the early 100s | Repository `date`; Acts book page timeline | Repository |
+| Caesarea about AD 57 to 59; Ephesus in the mid-50s (1 Corinthians book page: 1 Corinthians from Ephesus about 53 to 55) | Repository `date`; 1 Corinthians book page ledger | Ledger |
+| Miletus farewell (Acts 20:17-38), about AD 57 | BSB; Romans book page (Romans about 57, then the journey to Jerusalem) | Repository |
+| Roman household described by earlier writers as ruled by its male head; Paul speaks to the weaker first and asks more of the stronger | Context guide `household-codes-in-context` (Aristotle's form) | Repository. Aristotle not named on the book page |
+| Old Testament: Psalm 110:1 and Psalm 8:6 (1:20-22); Isaiah 57:19 (2:17); Psalm 68:18 (4:8); Zechariah 8:16 (4:25); Psalm 4:4 (4:26); Genesis 2:24 (5:31); the fifth commandment (6:2-3); Isaiah 59:17 (armour) | BSB; deep notes | BSB text. The old Greek stated generally |
+| Trinity, salvation by grace through the cross, Christ's resurrection: confession | CLAUDE.md confessional floor | No factual claim |
+| Contempt for Jews rejected, pointer to the Acts 2:22-28 note; the household passages give no one the right to control; prosperity and nationalist readings named as errors without naming anyone | acts/plain/2.json; CLAUDE.md guardrails | Repository wording |
+| Map: Ephesus, Caesarea, Rome | wmap-ledger | Ledger |
+| Map: Laodicea 37.836, 29.108 | Gazetteers | Search: topostext.org "Laodikea (Phrygia)" (37.836, 29.109); turkisharchaeonews.net (37.835854, 29.107891); Wikipedia "Laodicea on the Lycus" (37.83583, 29.10750) |
+
+Cut: Ignatius and Polycarp by name; the Laodicean letter identified as fact; the
+date of Paul's Ephesus stay given more closely than "the mid-50s".
