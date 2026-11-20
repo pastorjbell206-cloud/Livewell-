@@ -420,6 +420,13 @@
           "blurb": "Paine's charge, Augustine's turn and Aquinas's argument for death, the Spanish Inquisition and the *conversos*, the Protestant executions in Zurich and Geneva, the early church's refusal of force, and the case for liberty made from inside the faith.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "slavery-and-conquest",
+          "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
+          "blurb": "Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Baptists' founding in 1845 and their apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1334,6 +1341,16 @@
       "slug": "the-inquisition",
       "question": "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?",
       "live": false
+    },
+    {
+      "claim": "The Bible endorses slavery, and the slaveholders who quoted it were reading it, not misreading it",
+      "proponent": "Hector Avalos",
+      "work": "Slavery, Abolitionism, and the Ethics of Biblical Scholarship",
+      "year": 2011,
+      "area": "morality",
+      "slug": "slavery-and-conquest",
+      "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
+      "live": false
     }
   ],
   "answers": {
@@ -1348,6 +1365,7 @@
     "is-faith-irrational": "Is believing anything on faith irrational?",
     "are-miracles-believable": "Are miracles believable?",
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
+    "why-didnt-the-bible-just-ban-slavery": "Why didn't the Bible just ban slavery?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
     "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"

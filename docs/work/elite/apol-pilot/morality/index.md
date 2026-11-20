@@ -18,6 +18,7 @@ Pages on morality itself and on sexuality, which the plan also places in this ar
 
 1. **Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?** Hume's verdict, the preaching at Clermont and the promise of forgiveness, the massacres of 1096 and 1099 and the sack of Constantinople, the conquests that came before, and the cross made a soldier's badge.
 2. **Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?** Paine's charge, Augustine's turn and Aquinas's argument for death, the Spanish Inquisition and the *conversos*, the Protestant executions in Zurich and Geneva, the early church's refusal of force, and the case for liberty made from inside the faith.
+3. **Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?** Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Baptists' founding in 1845 and their apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.
 
 ## Words these pages use
 
