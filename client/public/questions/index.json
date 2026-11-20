@@ -373,6 +373,13 @@
           "blurb": "George Smith's tablets, Atrahasis and Gilgamesh quoted from the British Museum's translation, Delitzsch and Finkel, what a shared story can and can't show, the differences that make Genesis an answer, and the readings of the flood's extent.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "who-wrote-the-first-five-books",
+          "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
+          "blurb": "Spinoza's seams, Astruc's names and Wellhausen's four sources at full strength, the theory's later revisions, what Jesus and the apostles say of Moses, and the range of Christian views.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1430,6 +1437,26 @@
       "area": "old-testament",
       "slug": "the-flood-and-babylon",
       "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
+      "live": false
+    },
+    {
+      "claim": "The five books were woven from sources written centuries after Moses, and the priestly law came last, not first",
+      "proponent": "Julius Wellhausen",
+      "work": "Prolegomena to the History of Israel",
+      "year": 1883,
+      "area": "old-testament",
+      "slug": "who-wrote-the-first-five-books",
+      "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
+      "live": false
+    },
+    {
+      "claim": "The five books were written by someone who lived long after Moses",
+      "proponent": "Baruch Spinoza",
+      "work": "Theological-Political Treatise",
+      "year": 1670,
+      "area": "old-testament",
+      "slug": "who-wrote-the-first-five-books",
+      "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
       "live": false
     },
     {

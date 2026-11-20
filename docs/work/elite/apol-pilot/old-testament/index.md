@@ -19,6 +19,7 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 3. **Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?** The command and the ban in their setting, the limits the books set on it, Kant's question about knowing a command is God's, the main Christian readings and what each must carry, and why none licenses violence today.
 4. **Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?** Porphyry's case in Jerome's report, the modern case from chapter 11, the loanwords and Darius the Mede, Belshazzar, the Qumran copies, 1 Maccabees and Ben Sira, what the date turns on and what it doesn't decide.
 5. **Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?** George Smith's tablets, Atrahasis and Gilgamesh quoted from the British Museum's translation, Delitzsch and Finkel, what a shared story can and can't show, the differences that make Genesis an answer, and the readings of the flood's extent.
+6. **The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?** Spinoza's seams, Astruc's names and Wellhausen's four sources at full strength, the theory's later revisions, what Jesus and the apostles say of Moses, and the range of Christian views.
 
 ## Words these pages use
 
@@ -28,6 +29,7 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 - **Apocalyptic**: a kind of Jewish writing of the last centuries BC, full of visions and symbols, often set in the mouth of a figure from the past; scholars disagree about how much of Daniel belongs to it.
 - **Tell**: a mound built up by a town rebuilt again and again on its own ruins; Tell es-Sultan is ancient Jericho.
 - **Elef**: the Hebrew word usually translated "thousand," which can also name a clan or a military unit.
+- **Documentary hypothesis**: the theory, given its classic form by Julius Wellhausen in 1883, that the first five books were woven from four sources, called J, E, D and P.
 
 ## Where else to look
 
