@@ -8814,3 +8814,21 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Leitourgia: public service paid by a rich citizen; priests' service in the old Greek; ‘liturgy’ | 12-15 | Deep note `words`, `cultural` | Repository |
 | Anekdiēgētos only here; most take the gift as Christ | 12-15 | Deep note `words`, `christ` | Repository; "most readers" |
 | 1 Chronicles 29:9; Psalm 106:2; Isaiah 60:5 ("some readers think"; Paul does not say so) | 12-15 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 10 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Change of tone; the two views in one sentence, pointing to the book page | 1-6 | Book page ‘One letter or several?’ | Repository |
+| Siege warfare in a Roman colony; ochyrōma, stronghold; aichmalōtizō, capture with a spear; epieikeia, gentleness | 1-6 | Deep note `cultural`, `words` | Repository |
+| Matthew 11:29; Proverbs 21:22 ("some readers hear"); Zechariah 4:6; 1 Samuel 17:45; Jeremiah 23:29; Ephesians 6:12 | 1-6 | BSB | BSB text |
+| Not against persons; no licence for aggression or ‘spiritual warfare’ against persons | 1-6 | Brief; deep note `doctrines` | Stated plainly |
+| Unwanted intrusive thoughts: not chosen, not sin; can be part of anxiety or obsessive-compulsive disorder (scrupulosity a form of OCD); treatable; doctor, counsellor, pastor, friend, Find Help | 1-6 | Clinical overviews | Search: simplypsychology.org and psychcentral.com on scrupulosity; ocd.app. "Almost everyone has them" not found and not said |
+| Public speaking as art and show in Greek cities | 7-11 | Deep note `cultural` | Stated generally |
+| What Paul looked like or how he spoke not known | 7-11 | BSB | Guesses (weak voice, illness) not given |
+| Jeremiah 1:10; 1 Samuel 16:7; Exodus 4:10; 13:10 | 7-11 | BSB | BSB text |
+| Kanōn, measuring rod, rule, measured area | 12-18 | Deep note `cultural`, `words` | Repository |
+| Corinth founded by Paul (Acts 18); Spain (Romans 15:24) | 12-18 | BSB | BSB text |
+| Jeremiah 9:23-24 summed up at 10:17 and 1 Corinthians 1:31; Proverbs 27:2; 1 Samuel 2:3 | 12-18 | BSB | BSB text. The old Greek of 1 Samuel 2:10 not claimed |
