@@ -3590,6 +3590,25 @@
     "contentment",
     "money"
    ]
+  },
+  "generosity-and-giving": {
+   "phrases": [
+    "hard for me to give",
+    "how do i help the poor",
+    "feel guilty not giving",
+    "giving to charity",
+    "stingy with money",
+    "donate to a good cause",
+    "learn to be generous",
+    "share my money with others",
+    "tight fisted with money"
+   ],
+   "not": [],
+   "related": [
+    "giving-to-the-church",
+    "greed",
+    "justice-and-the-poor"
+   ]
   }
  }
 }
