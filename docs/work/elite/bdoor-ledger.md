@@ -13036,3 +13036,26 @@ Cut before publishing: ‘under the whip’ of the building for Pharaoh (the boo
 | A shadow is real; God truly met his people | 35-38 | hebrews/plain/8.json (1-6 `hard`); exodus/plain/26.json | Repository |
 
 Cut before publishing: a reason for building the house before the furniture (‘the sensible order of building’; the deep note gives none); that Paul thanked the Philippians ‘in the words of this chapter’ (he does not quote it).
+
+## The plain notes on Exodus 37 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| From the innermost object outward; follows 25:10-40; the purpose lines left out, 25:22 not repeated | 1-9 | exodus/37.json `literary`, `story` | Repository |
+| Bezalel named at 37:1 | 1-9 | BSB; exodus/36.json `literary` | BSB text |
+| The ark's size; carried by four men; Egypt's chests with poles and winged figures; no image, only written words | 1-9 | exodus/37.json `historical` | Repository |
+| Thrones with winged guardians and footstools; the throne of an unseen King; the empty space | 1-9 | exodus/37.json `cultural` | Repository |
+| 1 Samuel 4:4; Psalm 132:7; 1 Kings 8:9; Romans 3:25 and hilasterion; Hebrews 9:5 | 1-9 | BSB; exodus/37.json `cultural`, `words` (H3727), `christ` | BSB text |
+| What happened to the ark: 1 Kings 8:6; 2 Chronicles 35:3; 587 or 586 BC and 2 Kings 25:13-17; 2 Maccabees; Aksum; no evidence for modern claims; Jeremiah 3:16; Revelation 11:19 | 1-9 | exodus/37.json `hard` | Repository |
+| Twelve loaves renewed each Sabbath; meals before statues elsewhere | 10-16 | exodus/37.json `cultural`; exodus/plain/25.json | Repository |
+| Leviticus 24:8; John 6:35 (a link of theme) | 10-16 | BSB; exodus/37.json `christ` | BSB text |
+| Menorah; an almond tree; the talent; the first tree to blossom; the tree of life (many interpreters) | 17-24 | exodus/37.json `cultural`, `words` (H4501) | Repository |
+| ‘Shaped like almond blossoms’ and the verb to watch; Jeremiah 1:11-12 | 17-24 | exodus/37.json `words` (H8246) | Repository |
+| A lasting sign of the Jewish people; the Arch of Titus and AD 70 | 17-24 | exodus/37.json `historical`, `words` (H4501) | Repository |
+| Zechariah 4:2; Revelation 1:12-13 | 17-24 | BSB; exodus/37.json `christ` | BSB text |
+| The incense altar placed with the golden furniture | 25-29 | exodus/37.json `literary` | Repository |
+| Psalm 141:2; Revelation 8:3 | 25-29 | BSB | BSB text |
+
+Cut before publishing: ‘the most holy object goes to the craftsman God called by name’ (no source); ‘the people who lived by God's gift of bread were kept always before him’ (a meaning the text does not give); the echo of two angels in the tomb (John 20:12), which the deep note itself calls only suggestive; the menorah in a modern state's emblem (no modern state is in view in these notes).
