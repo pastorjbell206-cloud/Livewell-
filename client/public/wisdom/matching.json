@@ -2284,12 +2284,23 @@
    "phrases": [
     "the news",
     "news makes me",
-    "headlines"
+    "headlines",
+    "watching the news",
+    "world is falling apart",
+    "doomscrolling",
+    "afraid of whats happening in the world",
+    "everything in the world is so scary",
+    "cant stop reading the news",
+    "news gives me anxiety",
+    "the election scares me",
+    "wars and rumors"
    ],
    "not": [],
    "related": [
     "anxiety",
-    "information-overload"
+    "information-overload",
+    "fear-of-the-future",
+    "outrage-culture"
    ]
   },
   "retirement": {
