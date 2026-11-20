@@ -10,7 +10,8 @@
  * - Roundel: the ring an emblem sits in, on the map and at the top of a stop.
  * - HeadArt: the road from a garden to a city, for the top of the map.
  * - The "Why we believe" cards' pictures (CardArt): the manger, the tomb,
- *   the table, the Jordan, the garden, the hiding, the cross on the hill.
+ *   the table, the Jordan, the garden, the hiding, the cross on the hill,
+ *   the hillside in the wind, the seed and the harvest.
  *
  * Mustard is kept for the map's one mark (where you are), so no emblem uses it.
  */
@@ -935,6 +936,184 @@ export const CROSS_HILL: Drawing = {
   ),
 };
 
+/**
+ * "The Holy Spirit": a hillside in the wind. The wind itself is never drawn,
+ * only what it moves (John 3:8): the grass and a tree bent one way, and a
+ * breath line across the sky. Three people walk up the path together under
+ * one small flame (the one mustard mark), set in the sky above them, never
+ * on a head. No figure stands for the Spirit.
+ */
+export const SPIRIT_WIND: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "A hillside in the wind: the grass and a tree bend the same way and a breath line sweeps across the sky; three people walk up a path together, and one small flame burns in the sky above them.",
+  draw: h => (
+    <>
+      <path
+        className="pl-l"
+        d="M0,66C70,40 140,86 214,62C262,46 300,54 330,44"
+      />
+      <path
+        className="pl-f"
+        d="M20,92C90,72 150,104 224,84M60,40C120,24 170,44 230,30M250,98C300,86 340,92 372,80"
+      />
+      <Shape
+        d="M0,300V182C70,150 150,136 236,150C300,140 360,148 400,160V300Z"
+        tone="g"
+        off={4}
+      />
+      <path
+        fill={h.h2}
+        d="M236,150C300,140 360,148 400,160V300H262C254,236 246,190 236,150Z"
+      />
+      <Shape d="M318,170L322,124h8L330,170Z" tone="c" off={2} />
+      <Shape
+        d="M298,122C294,100 318,86 338,92C360,86 382,102 376,122C384,138 360,146 342,140C322,148 300,140 298,122Z"
+        tone="g"
+        off={3}
+      />
+      <path
+        fill={h.h2}
+        d="M338,92C360,86 382,102 376,122C384,138 360,146 342,140Z"
+      />
+      <path
+        className="pl-o"
+        d="M150,300C170,262 196,224 214,190C222,176 228,164 232,152H244C240,166 234,180 228,194C212,228 196,262 186,300Z"
+      />
+      <path
+        className="pl-l"
+        d="M150,300C170,262 196,224 214,190C222,176 228,164 232,152M186,300C196,262 212,228 228,194C234,180 240,166 244,152"
+      />
+      <path
+        className="pl-l"
+        d="M28,236q8,-14 20,-20M40,240q8,-16 22,-22M60,236q6,-12 18,-16M86,250q8,-14 20,-20M98,254q8,-16 22,-22M270,232q8,-14 20,-20M284,236q8,-16 22,-22M300,230q6,-12 18,-16M330,252q8,-14 20,-20M344,256q8,-16 22,-22"
+      />
+      <Shape
+        d="M190,242L194,198C196,188 212,188 214,198L218,242Z"
+        tone="c"
+        off={2}
+      />
+      <path className="pl-o" d="M194,178a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M194,178a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <Shape
+        d="M218,226L222,188C224,180 236,180 238,188L242,226Z"
+        tone="b"
+        off={2}
+      />
+      <path className="pl-o" d="M222,170a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M222,170a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <Shape
+        d="M160,262L165,212C167,200 185,200 187,212L192,262Z"
+        tone="g"
+        off={2}
+      />
+      <path className="pl-o" d="M165,190a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M165,190a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <g transform="translate(206,104) scale(1.3)">
+        <path
+          className="pl-m"
+          d="M0,-17C5,-10 10,-4 10,3A10,10 0 0 1 -10,3C-10,-4 -5,-10 0,-17Z"
+        />
+        <path
+          className="pl-l"
+          d="M0,-17C5,-10 10,-4 10,3A10,10 0 0 1 -10,3C-10,-4 -5,-10 0,-17Z"
+          style={{ strokeWidth: 1.7 }}
+        />
+        <path
+          className="pl-l"
+          d="M-1,8C-6,4 -4,-2 0,-6C1,-1 5,2 2,8"
+          style={{ strokeWidth: 1.4 }}
+        />
+      </g>
+    </>
+  ),
+};
+
+/**
+ * "The life to come": a seed and a harvest (1 Corinthians 15:36-37). The
+ * ground is cut away to show a seed sown in the dark soil, its root going
+ * down and its stalk going up into a full ear of wheat in the morning. Far
+ * off, the city's wall with its gate standing open, light coming from it
+ * (the one mustard mark). No grave and no figure.
+ */
+export const SEED_HARVEST: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "A seed sown in the dark soil, shown in a cut through the ground, its root going down and its stalk rising into a full ear of wheat; far off, a city wall with its gate standing open and light coming from it.",
+  draw: h => (
+    <>
+      <path
+        className="pl-f"
+        d="M318,96l-8,-24M330,92l2,-26M342,96l12,-22M306,104l-22,-12M354,104l22,-14"
+      />
+      <path
+        className="pl-o"
+        d="M262,140V112h18v-8h10v8h20v-8h10v8h20v-8h10v8h18V140Z"
+      />
+      <path
+        fill={h.h1}
+        d="M262,140V112h18v-8h10v8h20v-8h10v8h20v-8h10v8h18V140Z"
+      />
+      <path
+        className="pl-l"
+        d="M262,140V112h18v-8h10v8h20v-8h10v8h20v-8h10v8h18V140"
+      />
+      <path className="pl-m" d="M318,140V124a12,12 0 0 1 24,0V140Z" />
+      <path className="pl-l" d="M318,140V124a12,12 0 0 1 24,0V140" />
+      <path className="pl-l" d="M0,142C90,134 180,136 262,140M368,140H400" />
+      <Shape d="M0,300V170C120,160 260,158 400,166V300Z" tone="g" off={3} />
+      <path fill={h.h3} d="M0,186C120,178 260,176 400,184V300H0Z" />
+      <path className="pl-l" d="M0,186C120,178 260,176 400,184" />
+      <path
+        className="pl-l"
+        d="M40,172q6,-10 14,-14M52,174q4,-12 12,-16M300,168q6,-10 14,-14M312,170q4,-12 12,-16M352,172q6,-10 14,-14"
+      />
+      <path
+        className="pl-o"
+        d="M128,226a14,9 -20 1,0 28,0a14,9 -20 1,0 -28,0Z"
+      />
+      <path
+        className="pl-c"
+        d="M128,226a14,9 -20 1,0 28,0a14,9 -20 1,0 -28,0Z"
+        transform="translate(1.5,1)"
+      />
+      <path
+        className="pl-l"
+        d="M128,226a14,9 -20 1,0 28,0a14,9 -20 1,0 -28,0Z"
+      />
+      <path
+        className="pl-l"
+        d="M140,234C136,242 130,248 122,254M146,234C150,244 158,250 166,256M142,236C142,244 144,250 140,258"
+      />
+      <path
+        className="pl-l"
+        d="M144,218C146,196 142,170 146,140C148,120 150,104 152,92"
+      />
+      <path
+        className="pl-l"
+        d="M146,176C130,166 118,164 104,168M147,152C164,142 176,142 190,148M150,122C136,114 126,114 114,120"
+      />
+      <path className="pl-l" d="M152,92V50" />
+      {[0, 1, 2, 3].map(k => (
+        <g key={k}>
+          <Shape
+            d={`M151,${88 - k * 10}c-10,-2 -14,-10 -12,-16c8,2 13,8 12,16Z`}
+            tone="c"
+            off={1}
+          />
+          <Shape
+            d={`M153,${83 - k * 10}c10,-2 14,-10 12,-16c-8,2 -13,8 -12,16Z`}
+            tone="c"
+            off={1}
+          />
+        </g>
+      ))}
+    </>
+  ),
+};
+
 const CARD_ART: Record<string, Drawing> = {
   manger: MANGER,
   tomb: EMPTY_TOMB,
@@ -943,6 +1122,8 @@ const CARD_ART: Record<string, Drawing> = {
   image: IMAGE_GARDEN,
   hiding: HIDING,
   cross: CROSS_HILL,
+  wind: SPIRIT_WIND,
+  seed: SEED_HARVEST,
 };
 
 /** The pictures a "Why we believe" card can show, besides the book (scripts/validate-explorer.mjs reads this list). */

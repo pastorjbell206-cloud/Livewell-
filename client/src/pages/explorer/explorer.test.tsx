@@ -329,6 +329,35 @@ describe("the map", () => {
       within(cardCross).getByRole("link", { name: /Why did Jesus die\?/ })
     ).toBeInTheDocument();
   });
+
+  it("the Holy Spirit and life to come cards keep their limits, and show their films", async () => {
+    const cards = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/cards.json"), "utf8")
+    ).cards as { id: string; [k: string]: unknown }[];
+    const text = (id: string) => JSON.stringify(cards.find(c => c.id === id));
+    // The Spirit: a person, God; the gifts named as a difference, no side.
+    const spirit = text("spirit");
+    expect(spirit).toContain("not a force or a feeling");
+    expect(spirit).toContain("this card does not choose between them");
+    expect(spirit).not.toMatch(/\bI\b|\bwater\b|\bclover\b|\begg\b/);
+    // The life to come: both readings of the time between death and the
+    // resurrection, as the Study Bible's notes give them; a trusted adult.
+    const life = text("life-to-come");
+    expect(life).toContain("Most Christian traditions read");
+    expect(life).toContain("the dead sleep until the resurrection");
+    expect(life).toContain("Christians still differ on how to describe that time");
+    expect(life).toContain("a parent or another grown-up you trust");
+    expect(life).not.toMatch(/suicide|rapture/i);
+    renderAt("/study/explorer");
+    for (const name of ["The Holy Spirit", "The life to come"]) {
+      const card = await screen.findByRole("group", { name });
+      expect(within(card).getByRole("img")).toBeInTheDocument();
+    }
+    const scard = screen.getByRole("group", { name: "The Holy Spirit" });
+    expect(
+      within(scard).getByRole("link", { name: /The Holy Spirit in a believer/ })
+    ).toBeInTheDocument();
+  });
 });
 
 describe("a stop", () => {

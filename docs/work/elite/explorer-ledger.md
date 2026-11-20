@@ -557,3 +557,33 @@ Deliberately left out of the three films: every first-person sentence of the ans
 | who-jesus-is 7 | Near Caesarea Philippi; “Who do you say I am?”; Peter's answer; the Honest Answer weighs the good-teacher view and why the earliest sources make it hard to hold | BSB Matthew 16:13-16; the Honest Answer's first paragraph and last section, third person |
 | all three, verses | Every `verse` | BSB, by the validator |
 | all three, drawings | No face; God never drawn (light from beyond the edge; a light on the path); Jesus one figure drawn the same in every picture, never doubled, never with a halo; nothing in the creation film shows how or when (no fossils, no ages) | Deliberate (the brief's doctrine care) |
+
+## Run of 2026-11-20 (late): the last two cards, four films, the map fixes
+
+### Abraham's road: the map fixes
+
+| Where | Claim | Checked |
+|---|---|---|
+| names.hebron | The map names the place "Hebron"; the steps name the Oaks of Mamre in words | The Genesis book page names it "Hebron (Mamre)"; Genesis 13:18; 18:1 (BSB) |
+| avoid | The coast, the Dead Sea and the Jordan the names keep off | The points `BookMap.tsx` draws the fertile-crescent frame's MED_COAST, DEAD_SEA_FAR and JORDAN_FAR by, copied; used only to place names, never drawn |
+| egypt reach | The view takes in the head of the Gulf of Suez | `BookMap.tsx` GULF_SUEZ (head at 29.97 N); a point at 29.8 N, 32.9 E |
+| moriah frame and reach | The third part is drawn on the Genesis book page's close-up of Canaan; the view takes in the Dead Sea and the coast | `MAP_FRAMES.canaan` (34 to 36.4 E, 30.8 to 33.7 N); Hebron, Beersheba and the land of Moriah all inside it; the routeNote says so |
+
+### The "Why we believe" cards: The Holy Spirit, The life to come
+
+| Where | Claim | Checked |
+|---|---|---|
+| spirit statement (younger) | God, the third person of the Trinity, not a force or a feeling; gives new life, lives in everyone who trusts Jesus, helps them pray, makes them more like Jesus | Catechism Q41, Q45, Q63; BSB Romans 8:9, 26 |
+| spirit statement (older) | ‘the Lord and Giver of Life’, ‘who with the Father and the Son together is worshipped and glorified’ | The Nicene Creed as the site gives it (`client/public/creeds/documents/nicene-creed.json`), word for word |
+| spirit statement (older) | New birth, joined to Christ, lives in every believer, fruit, gifts for the good of the whole church; the gifts and when and how the Spirit is received named as differences, no side | Catechism Q41 to Q45, Q63; the Holy Spirit films' own "Where churches differ" (holy-spirit.json, spirit-in-a-believer.json); BSB 1 Corinthians 12:7 |
+| spirit quote | John 3:8 (the closing quotation mark of Jesus' speech left off) | BSB, by the validator |
+| spirit question (younger) | People can lie to the Holy Spirit and grieve him; Peter told a man he had lied to God | BSB Acts 5:3-4; Ephesians 4:30 |
+| spirit question (older) | “to lie to the Holy Spirit”; “You have not lied to men, but to God” (the "!" left off at the trim); “do not grieve the Holy Spirit of God” | BSB Acts 5:3-4; Ephesians 4:30, by the validator |
+| spirit question (older) | Each person wholly God, not a third of God; the three never act apart; a mystery is something no one can see to the bottom of, not a contradiction | The Honest Answer "How can God be three and one?" (its creeds paragraph, its Gregory of Nyssa paragraph and its opening), in the third person |
+| life statement (younger) | Death real and sad; for those who belong to Jesus not the end; they go to be with him; Jesus will come back, raise their bodies, make everything new, wipe away every tear | Catechism Q51, Q52, Q70; BSB Revelation 21:4 |
+| life statement (older) | ‘the resurrection of the body; and the life everlasting’ | The Apostles' Creed as the site gives it (`apostles-creed.json`), word for word |
+| life statement (older) | Christ the firstfruits; the body like a seed sown and raised; a real judgment, Christians differ on what it will be like; ‘Whatever hell is, it isn't what God wants for anyone.’; the last events read differently, no one knows the day or hour | BSB 1 Corinthians 15:20, 35-44; the New Creation stop's older question and "Where Christians differ" (its own quotation of the Honest Answer on hell); the Honest Answer "Is hell forever, or does it end?" word for word; BSB Matthew 24:36 |
+| life quote | Revelation 21:4 | BSB, by the validator |
+| life question (younger) | When Lazarus died Jesus wept; those who trust Jesus go to be with him and wait for the raising of their bodies; Christians describe the waiting differently | BSB John 11:35; catechism Q70; the Study Bible's notes on Luke 23 ("intermediate", and the hard question) and 2 Corinthians 5 ("hope") |
+| life question (older) | “Truly I tell you, today you will be with Me in Paradise”; “away from the body and at home with the Lord”; most traditions read them as conscious fellowship with Christ right after death; others place the comma after ‘today’ and hold that the dead sleep until the resurrection; Christians still differ on how to describe that time; the shared hope is the resurrection of the body | BSB Luke 23:43; 2 Corinthians 5:8; the Luke 23 note's "intermediate" doctrine note and hard question, nearly word for word; the 2 Corinthians 5 "hope" note |
+| both cards, drawings | The wind never drawn, only what it moves; one small flame in the sky, never on a head, no figure for the Spirit; a seed, a stalk and a far gate, no grave and no figure | Deliberate (the brief's doctrine care) |
