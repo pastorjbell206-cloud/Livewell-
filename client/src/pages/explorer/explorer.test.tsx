@@ -97,6 +97,7 @@ describe("the data", () => {
       "sinai",
       "land",
       "kingdom",
+      "exile",
       "cross",
     ]);
     for (const s of INDEX.stops) {
@@ -114,6 +115,7 @@ describe("the data", () => {
       "walk",
       "cycle",
       "choose",
+      "match",
       "reveal",
     ]);
   });
@@ -438,6 +440,25 @@ describe("a stop", () => {
     await waitFor(() => expect(stored().done).toContain("abraham"));
   });
 
+  it("promises in the dark: four promises matched to where the New Testament takes them up, with the stop's own last line", async () => {
+    renderAt("/study/explorer/exile");
+    const act = stopFile("exile").activity!;
+    if (act.kind !== "match") throw new Error("exile is a match activity");
+    await screen.findByRole("heading", { name: act.title });
+    const groups = screen
+      .getAllByRole("group")
+      .filter(
+        g => g.tagName === "FIELDSET" && /^Promise \d/.test(g.textContent ?? "")
+      );
+    expect(groups).toHaveLength(4);
+    act.pairs.forEach((p, i) =>
+      fireEvent.click(within(groups[i]).getByRole("radio", { name: p.kept }))
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Check my answers" }));
+    expect(screen.getByText(act.finish!)).toBeInTheDocument();
+    await waitFor(() => expect(stored().done).toContain("exile"));
+  });
+
   it("think, then look: each answer is behind its own button, and all of them shown is done", async () => {
     renderAt("/study/explorer/cross");
     const act = stopFile("cross").activity!;
@@ -502,7 +523,7 @@ describe("a stop", () => {
       EXPLORER_PROGRESS_KEY,
       JSON.stringify({ v: 1, level: "older", visited: [], done: [], last: null })
     );
-    for (const slug of ["fall", "sinai", "land", "kingdom"]) {
+    for (const slug of ["fall", "sinai", "land", "kingdom", "exile"]) {
       const s = stopFile(slug);
       renderAt(`/study/explorer/${slug}`);
       await screen.findByRole("heading", { name: "A question people ask" });
