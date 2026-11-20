@@ -8769,3 +8769,28 @@ No new search. Scripture is the BSB in the repository, matched by the strict che
 
 Cut: the ancient friendship formula behind ‘live and die together’ (not checked);
 Judas set against Peter (kept out for the care rule on self-harm).
+
+## The plain notes on 2 Corinthians 8 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Macedonia the province of northern Greece; churches at Philippi, Thessalonica, Berea (Acts 16 and 17); their suffering (1 Thessalonians 1:6); gifts to Paul (Philippians 4:15-16) | 1-7 | BSB; book page | BSB text |
+| ‘Saints’ all God's people; Jerusalem's poor; famine under Claudius (Acts 11:28-30); Galatians 2:10; Romans 15:27 | 1-7 | BSB; deep note `historical` | BSB text |
+| Charis seven times in chapter 8 (verses 1, 4, 6, 7, 9, 16, 19); koinōnia at 8:4 | 1-7 | Greek text (G5485, G2842) | Script count over the repository's Greek |
+| Patronage: gifts brought honour and obligation | 1-7 | Deep note `cultural`; book page `deeper` (the site's context guide on patronage and grace) | Repository |
+| Deuteronomy 15:10; Exodus 25:2; 35:5; 1 Chronicles 29:14 | 1-7 | BSB | BSB text |
+| Ptōcheuō only at 8:9 in the New Testament | 8-15 | Greek text (G4433) | Script |
+| Pre-existence: Philippians 2:6-7; Matthew 8:20; the Nicene Creed's ‘for us men and for our salvation came down from heaven’ and ‘was made man’ | 8-15 | BSB; `client/public/creeds/documents/nicene-creed.json` | Repository wording |
+| Isotēs, equality or fairness | 8-15 | Deep note `words` | Repository |
+| Exodus 16:17-18, 20; Isaiah 53:12; Psalm 34:6; 1 Corinthians 1:5 | 8-15 | BSB | BSB text |
+| 8:9 not a promise of money; the book page's ‘What the letter is not’ | 8-15 | Book page; CLAUDE.md guardrail | Repository |
+| No political lesson drawn from 8:13-15 | 8-15 | Brief | Stated as the notes' choice |
+| The two brothers unnamed; no one knows who they were | 16-24 | BSB | Guesses (Luke, Barnabas and others) not given |
+| Apostoloi ekklēsiōn at 8:23 | 16-24 | Greek text | Repository |
+| 8:21 echoes Proverbs 3:4 in the old Greek ("provide things honest in the sight of the Lord, and of men", Brenton) | 16-24 | Translation commentary; LXX text | Search: tips.translation.bible on 2 Corinthians 8:21; blueletterbible.org LXX Proverbs 3; ccel.org Brenton Proverbs 3. Paraphrased |
+| 2 Kings 12:10; 1 Samuel 12:3 | 16-24 | BSB | BSB text |
+| Honest accounts in churches; not financial or legal advice | 16-24 | CLAUDE.md "Inform; do not pose as the professional" | Stated as principle |
+
+Cut: the Greek wording of 8:21 (the repository has the indicative pronooumen; not discussed); guesses at the brothers' names.
