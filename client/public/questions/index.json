@@ -257,6 +257,41 @@
           "blurb": "What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of \"least probable,\" and where the question passes from history to the question of God.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "how-did-jesus-become-god",
+          "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+          "blurb": "Ehrman's case and the texts it rests on, Paul's letters as the earliest layer, exaltation and pre-existence side by side, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-jesus-claim-to-be-god",
+          "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+          "blurb": "What Jesus does not say, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-virgin-birth",
+          "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+          "blurb": "*Almah* and *parthenos* handled honestly, what Matthew does with Isaiah and with Hosea, the two accounts from Joseph's side and Mary's, Trypho and Celsus, the stories of Danaë and Augustus read and compared, and the confession of the creeds.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-jesus-predict-the-end-within-a-generation",
+          "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+          "blurb": "Schweitzer's prophet and Russell's lecture at full strength, the temple's fall in AD 70, Daniel's Son of Man coming to God, the transfiguration, Matthew 10:23, the confession that the Son does not know the day, and the main Christian readings with no scheme of the end chosen.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-the-disciples-die-for-their-belief",
+          "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
+          "blurb": "Gibbon's doubt at full strength, how thin the evidence is for most of the Twelve, what is well attested for Peter, Paul and the two Jameses with the sources named, and why the argument shows sincerity, not truth.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -456,7 +491,7 @@
         {
           "slug": "are-all-religions-the-same",
           "question": "Aren't all religions basically the same, different paths up one mountain to the same God?",
-          "blurb": "Hick's pluralism at full strength, the parable of the elephant and the claim hidden in it, what the religions actually say about God, Jesus and salvation, and why pluralism is one more particular view.",
+          "blurb": "Hick's pluralism at full strength, the parable of the elephant and what it assumes, what the religions actually say about God, Jesus and salvation, and why pluralism is one more particular view.",
           "status": "pending",
           "live": false
         },
@@ -1060,6 +1095,116 @@
       "area": "jesus",
       "slug": "can-historians-affirm-a-miracle",
       "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' first followers believed God had exalted a man at the resurrection; the belief that he was God from before creation came later",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "how-did-jesus-become-god",
+      "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+      "live": false
+    },
+    {
+      "claim": "Philippians 2 contrasts Christ with Adam and need not speak of a life before his birth",
+      "proponent": "James Dunn",
+      "work": "Christology in the Making",
+      "year": 1980,
+      "area": "jesus",
+      "slug": "how-did-jesus-become-god",
+      "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+      "live": false
+    },
+    {
+      "claim": "Jesus did not claim to be God; John's high view of him is a late development",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "\"Son of Man\" in Jesus' Aramaic could be a modest way of saying \"I\", not a claim to Daniel's figure",
+      "proponent": "Geza Vermes",
+      "work": "Jesus the Jew",
+      "year": 1973,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "Jesus used \"son of man\" in its ordinary Aramaic sense, and the references to Daniel were added by the early church",
+      "proponent": "Maurice Casey",
+      "work": "Son of Man",
+      "year": 1979,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "Jesus was conceived in the ordinary way, possibly outside marriage, and the virgin birth arose later",
+      "proponent": "Gerd Lüdemann",
+      "work": "Virgin Birth?",
+      "year": 1998,
+      "area": "jesus",
+      "slug": "the-virgin-birth",
+      "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke inherited a tradition of an illegitimate conception",
+      "proponent": "Jane Schaberg",
+      "work": "The Illegitimacy of Jesus",
+      "year": 1987,
+      "area": "jesus",
+      "slug": "the-virgin-birth",
+      "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+      "live": false
+    },
+    {
+      "claim": "Jesus expected the Son of Man to come before the Twelve returned from their mission, and the prediction was not fulfilled",
+      "proponent": "Albert Schweitzer",
+      "work": "The Quest of the Historical Jesus",
+      "year": 1906,
+      "area": "jesus",
+      "slug": "did-jesus-predict-the-end-within-a-generation",
+      "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+      "live": false
+    },
+    {
+      "claim": "Jesus thought his second coming would occur before the death of all the people living at the time, and so was not superlatively wise",
+      "proponent": "Bertrand Russell",
+      "work": "Why I Am Not a Christian",
+      "year": 1927,
+      "area": "jesus",
+      "slug": "did-jesus-predict-the-end-within-a-generation",
+      "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+      "live": false
+    },
+    {
+      "claim": "The stories of the apostles' deaths are legends of a credulous antiquity; martyrdom was gradually bestowed on apostles beyond Peter, Paul and James",
+      "proponent": "Edward Gibbon",
+      "work": "The History of the Decline and Fall of the Roman Empire",
+      "year": 1776,
+      "area": "jesus",
+      "slug": "did-the-disciples-die-for-their-belief",
+      "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
+      "live": false
+    },
+    {
+      "claim": "The disciples sincerely had visions of Jesus after his death, so their sincerity shows nothing about whether he rose",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "did-the-disciples-die-for-their-belief",
+      "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
       "live": false
     },
     {

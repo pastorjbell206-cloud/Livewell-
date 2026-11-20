@@ -872,3 +872,164 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 No new claim outside Scripture and the notes: no statistic, study, scholar or date was added except those the notes themselves give (the Augsburg Confession of 1530 in singleness, as the plain note on Matthew 19 states it).
 
 The finder: holdout6 and the phrasings add no factual claim. The Find Help side tab fix adds none.
+
+## Eighth build (2026-11-20): the matcher, whole sentences, twelve topics
+
+Every claim below was written against the site's own notes; "note" is `client/public/bible/notes/<book>/<n>.json` and its `verses/` file, "plain" its `plain/` file. Nothing outside the repo was opened. The care lines are checked word for word by `validate-wisdom.mjs`.
+
+| Topic | Claim | Checked against |
+|---|---|---|
+| people-pleasing | The fear of man a snare; trust in God frees from others' approval | Proverbs 29:25; note proverbs/29 summary and doctrine "faith" |
+| people-pleasing | Saul blames the troops, then says he feared the people; obedience better than sacrifice | 1 Samuel 15:24; note 1-samuel/15 summary |
+| people-pleasing | Leaders believed but kept silent for fear of expulsion; loved praise from men; the synagogue the center of prayer, friendships and help; not a verdict on the Jewish people; a mirror for every reader; Nicodemus and Joseph came into the open at Jesus' death | John 12:42-43; note john/12 verses 42-43 (history); plain john/12 37-43 hearers and asks |
+| people-pleasing | The warning of John 5:44 is for every religious person, Christians included; many hold back because of what others would think | plain john/5 41-47 hard and asks |
+| people-pleasing | Some said Paul made the gospel easy so Gentiles would like him; plainly not trying to be popular | plain galatians/1 6-10 hearers |
+| people-pleasing | Peter drew back for fear; a moment of fear in a good man under pressure, keeping faith with both sides; actions did not match beliefs; the friendship continued | plain galatians/2 11-14 hard |
+| people-pleasing | Exiles living in fear of an oppressor; God answers with comfort | note isaiah/51 summary and historical |
+| people-pleasing | Not from deceit, greed or desire for praise; gentle like a nursing mother; whose approval, where flattery has crept in | note 1-thessalonians/2 summary; plain 1-thessalonians/2 1-6 asks |
+| people-pleasing | Real righteousness spoiled by the wish for an audience; the Father's well done worth more than the crowd's | note matthew/6 verse 1; plain matthew/6 1-4 hard |
+| people-pleasing | Universal praise is a warning sign | note luke/6 verse 26 |
+| people-pleasing | Honest friends and honest rebuke | note proverbs/27 summary |
+| people-pleasing | 1 Corinthians 10:33 in the argument on idol food: the good of many, not his own; giving up freedom for another's faith | plain 1-corinthians/10 23-33 happening and hearers |
+| people-pleasing | Romans 12:18 never means staying in danger or keeping silent about harm | plain romans/12 14-21 hard |
+| people-pleasing | Psalm 118's question: people do not have the last word over someone God holds | plain psalms/118 1-14 asks |
+| setting-boundaries | Jesus prays before dawn, declines to return to the crowds; his reason is his purpose | note mark/1 verses 35-37, 38-39 |
+| setting-boundaries | Growth of ministry and habit of prayer side by side | note luke/5 verses 15-16 |
+| setting-boundaries | Jesus does not entrust himself; does not trust excitement that goes no deeper | note john/2 verses 23-25; plain john/2 23-25 hard |
+| setting-boundaries | Invited four times to Ono by men meaning harm; sees through each scheme and keeps working | Nehemiah 6:1-4; note nehemiah/6 summary |
+| setting-boundaries | Jethro: not good, you will wear yourselves out; appoint capable God-fearing men; Moses does | Exodus 18:17-18, 21-24; note exodus/18 summary |
+| setting-boundaries | Carry one another's burdens and each his own load; what load is yours that you hand to someone else | note galatians/6 summary; plain galatians/6 1-5 asks |
+| setting-boundaries | Honest speech makes oaths unnecessary; a life where every word counts | note matthew/5 verse 37; plain matthew/5 33-37 asks |
+| setting-boundaries | Words of the wise warn against befriending the hot-tempered | note proverbs/22 summary |
+| setting-boundaries | Keep away from those able but unwilling to work; warn as brothers; never a word against the poor, sick, unemployed or carers | note 2-thessalonians/3 summary and hard; plain 2-thessalonians/3 6-13 hard |
+| setting-boundaries | Proverbs 25 copied by Hezekiah's scribes; sayings on restraint and self-control | note proverbs/25 summary |
+| setting-boundaries | Philippians 2:4: "also" matters; Paul does not forbid care for one's own affairs; is humility real or a low opinion that keeps you at the centre | note philippians/2 verse 4; plain philippians/2 1-4 asks |
+| setting-boundaries | Luke 6:30 a call to an open hand, not a rule to hand over what will harm; loving an enemy not trusting someone still dangerous | plain luke/6 27-36 hard |
+| setting-boundaries | Psalm 16:5-6: land divided by lot; the Levites' share; the LORD as portion | note psalms/16 verses 5-6 (history) |
+| saying-no | Come away and rest; no time to eat; the crowd came and he saw sheep without a shepherd | note mark/6 verses 30-31; plain mark/6 30-44 asks |
+| saying-no | Widows overlooked; the Twelve decline to wait on tables; seven chosen; practical service not less spiritual | note acts/6 summary; plain acts/6 1-7 asks |
+| saying-no | Counting the cost of the tower; building a mark of status in Herodian Palestine; an unfinished project an embarrassment | note luke/14 verses 28-30 (history) |
+| saying-no | Rash vows among the chapter's daily matters | note proverbs/20 summary |
+| saying-no | Listen more than speak; keep vows; how to come before God | note ecclesiastes/5 summary |
+| saying-no | The crowd wanted to make him king by force; the wrong kind of king; wanting Jesus on our own terms | note john/6 verse 15; plain john/6 1-15 hard and asks |
+| saying-no | Daniel resolves, asks permission; the ten-day test | note daniel/1 summary |
+| saying-no | A gift according to what one has; Paul does not order; give from what Christ gave, not guilt | plain 2-corinthians/8 8-15 asks |
+| saying-no | Psalm 127 does not tell you to stop working; worry not the same as work; rest as trust | plain psalms/127 1-2 asks |
+| saying-no | Fourteen pairs of opposites | note ecclesiastes/3 summary |
+| saying-no | Luke 10:38-42 not a ranking; go and do; one who serves; trouble was anxious and resentful serving; Jesus sees how much she carries | plain luke/10 38-42 hard |
+| saying-no | Jesus leaves Capernaum for the neighboring towns; the work the Father gave | Mark 1:38; John 17:4 (Scripture) |
+| saying-no | Psalm 131: set down questions and ambitions; be quiet with God while they wait | plain psalms/131 1-3 asks |
+| loving-your-enemies | "Hate your enemy" an added line the law does not contain; command grounded in God's character | note matthew/5 verses 43, 44-45 |
+| loving-your-enemies | God kind to the ungrateful; Luke has "merciful" where Matthew has "perfect" | note luke/6 verses 35, 36 |
+| loving-your-enemies | The law commands help for an enemy's stray animal; laws for honest courts | note matthew/5 verse 43 (history); note exodus/23 summary |
+| loving-your-enemies | Feed a hungry enemy, in the Hezekiah collection | note proverbs/25 summary |
+| loving-your-enemies | Arameans led into Samaria, fed and sent home | note 2-kings/6 summary; 2 Kings 6:23 |
+| loving-your-enemies | Jonah furious God spared Nineveh; he knew God was gracious; God asks whether he should not care | note jonah/4 summary |
+| loving-your-enemies | Prayer and indifference side by side; ignorance does not make a wrong right; forgiving not saying the wrong was right or staying in danger; no one may use his death to justify hatred of any people | note luke/23 verse 34; plain luke/23 32-38 hard and asks |
+| loving-your-enemies | Stephen dies forgiving as his Lord did; Saul became Paul, shown mercy | plain acts/7 54-60 hard |
+| loving-your-enemies | Love came first; the cross shows God's heart; make the first move toward peace | plain romans/5 6-11 hard and asks |
+| loving-your-enemies | Repay insult with blessing; unity and compassion | note 1-peter/3 summary |
+| loving-your-enemies | Loving an enemy not pretending or trusting someone dangerous; wanting their good, praying, refusing to wish harm; turn the other cheek not a command to stay; safety and law not disobedience | plain matthew/5 43-48 hard; plain luke/6 27-36 hard |
+| loving-your-enemies | Burning coals: two readings; overcome evil with good wants the enemy's good | plain romans/12 14-21 hard |
+| loving-your-enemies | Pacifist, Luther's two kinds of duty, just war; the notes do not decide; all condemn hatred | plain luke/6 27-36 hard; note luke/6 hard ("Did Jesus mean these commands literally") |
+| loving-your-enemies | Psalm 37: your anger will not fix it, and God will | plain psalms/37 1-11 asks |
+| when-someone-wont-change | Jesus loves the rich man; the only refused call in Mark; Mark does not say what became of him | note mark/10 verses 20-21, 22 |
+| when-someone-wont-change | Lament over Jerusalem; spoken by a Jew who loved the city; his last word "how often I have longed" | note matthew/23 verse 37; plain matthew/23 37-39 hard and asks |
+| when-someone-wont-change | God's heart recoils from destroying Ephraim; the more he called the farther they ran | note hosea/11 summary |
+| when-someone-wont-change | The sour-grapes proverb forbidden; each lives or dies by his own ways; the closing plea: turn and live | note ezekiel/18 summary |
+| when-someone-wont-change | The Lord not slow but patient; answer to scoffers who said nothing changes | note 2-peter/3 summary |
+| when-someone-wont-change | One more year; the reader never learns what the tree did; mercy that gives time and real work | note luke/13 verses 8-9; plain luke/13 6-9 hard |
+| when-someone-wont-change | Rebuke, then forgive; forgiveness names the wrong, not the same as trust; repeated "I repent" without turning; words alone do not make it safe | note luke/17 verse 3; plain luke/17 1-4 hard |
+| when-someone-wont-change | The fool returning to folly; three portraits | note proverbs/26 summary |
+| when-someone-wont-change | God sends grieving Samuel to Bethlehem | note 1-samuel/16 summary |
+| when-someone-wont-change | 1 Corinthians 13:7 never asks anyone to hide abuse or stay; love rejoices in truth; keeping a record not a failure of love | plain 1-corinthians/13 4-7 hard |
+| when-someone-wont-change | The son came to his senses when he had nothing left | plain luke/15 11-19 asks |
+| when-someone-wont-change | Psalm 130: still waiting when it ends; morning will come because God's love keeps its word | plain psalms/130 5-8 hard and asks |
+| overthinking | Psalm 77: sleepless; thinking of God at first brought groans; he kept asking; a temple singer; lost sleep worth taking to a doctor | note psalms/77 summary; plain psalms/77 1-9 hard and asks |
+| overthinking | He found comfort not in his feelings but in what God had done; the exodus | plain psalms/77 10-20 asks; note psalms/77 summary |
+| overthinking | God knows the worst about you and has not let go | plain psalms/139 1-12 asks |
+| overthinking | Philippians 4: a practice, not a switch; not a rebuke of anxiety disorders or depression; what the mind dwells on | plain philippians/4 4-9 hard and asks |
+| overthinking | The wilderness of Judah; remember at night rather than force sleep or worry; his grip on you | note psalms/63 summary; plain psalms/63 6-11 asks |
+| overthinking | Trust the LORD rather than your own understanding | note proverbs/3 summary |
+| overthinking | Perfect peace for those who trust, in the strong city | note isaiah/26 summary |
+| overthinking | Ask God for wisdom without doubting; trials, rich and poor, temptation | note james/1 summary |
+| overthinking | The Teacher tried to be wise and found wisdom beyond reach | note ecclesiastes/7 summary |
+| overthinking | The seed grows while he sleeps; only in Mark; the point is growth without him; where are we forcing growth | note mark/4 verses 26-27; plain mark/4 26-29 asks |
+| overthinking | 2 Corinthians 10:5 about rival teaching, not a technique for pushing thoughts out; unwanted thoughts not sin; trying harder makes them louder; anxiety or OCD treatable | plain 2-corinthians/10 1-6 hard |
+| overthinking | Psalm 4:8 prayed slowly; see a doctor if sleeplessness lasts weeks | plain psalms/4 6-8 asks |
+| fear-and-courage | Do not fear: created, redeemed, called by name, with them through water and fire | note isaiah/43 summary |
+| fear-and-courage | "Whom shall I fear" asked because there is something to fear; anguish later in the psalm; courage is trust that holds when fear is present | plain psalms/27 1-6 hard |
+| fear-and-courage | After the four kings and Sodom's wealth, God speaks to both fears; Abram's honest worry not scolded; the stars | note genesis/15 verse 1; plain genesis/15 1-6 asks |
+| fear-and-courage | Trapped by the sea; stand firm; the sea divided | note exodus/14 summary |
+| fear-and-courage | Not that the sheep is never in danger but the shepherd never leaves; "You are with me" in the valley | plain psalms/23 1-4 hard |
+| fear-and-courage | David learned it pretending to be mad in an enemy city | plain psalms/34 1-10 asks |
+| fear-and-courage | Sparrows the cheapest food; least to greater; name your fear beside the sparrow | note matthew/10 verses 29-31; plain matthew/10 26-33 asks |
+| fear-and-courage | Comfort as revelation; he saw them straining from the mountain | note mark/6 verses 49-50; plain mark/6 45-52 asks |
+| fear-and-courage | Gethsemane: real human horror at death; freely gave his will; said his sorrow aloud | note mark/14 verses 35-36; plain mark/14 32-42 hard |
+| fear-and-courage | John on Patmos falls as dead; the risen Christ's right hand | note revelation/1 summary; Revelation 1:17-18; Luke 2:10 |
+| fear-and-courage | 2 Timothy 1:7 about courage in Timothy's work; Paul admits anxiety; not a rebuke of anxiety disorders; getting help not a lack of faith | plain 2-timothy/1 6-7 hard |
+| fear-and-courage | Psalm 56:3: when I am afraid; trust is what you do with it | plain psalms/56 1-13 asks |
+| fear-of-the-future | A man hunted, grieving, abandoned; "My times are in Your hands" for days out of control | note psalms/31 summary; plain psalms/31 1-24 asks |
+| fear-of-the-future | Humility about the future | note proverbs/27 summary |
+| fear-of-the-future | A day's portion; hoarded manna rotted; the Sabbath portion kept; forty years | note exodus/16 summary |
+| fear-of-the-future | Mercies new every morning in the middle of despair; he resolves to wait | note lamentations/3 summary |
+| fear-of-the-future | A proverb of practical realism; one day at a time; not a rebuke of anxiety disorders | note matthew/6 verse 34; plain matthew/6 25-34 hard |
+| fear-of-the-future | Bold generous action in an uncertain future | note ecclesiastes/11 summary |
+| fear-of-the-future | Babylon's gods carried on animals; God carries his people; declares the end from the beginning | note isaiah/46 summary |
+| fear-of-the-future | Not afraid of bad news; steadiness from trust, not from having no trouble | plain psalms/112 1-10 asks |
+| fear-of-the-future | Her worth lies in the fear of the LORD; praise, not a performance standard | note proverbs/31 summary and hard |
+| fear-of-the-future | Hebrews 13:5 not a promise of riches; content because God will never leave | plain hebrews/13 1-6 hard and asks |
+| fear-of-the-future | Proverbs 16: people plan, the LORD decides outcomes; a proverb a generalization, not a contract | note proverbs/16 summary; note proverbs/22 hard |
+| fear-of-the-future | Psalm 121 does not promise no harm; God keeps the one who trusts; a blessing to carry out the door | plain psalms/121 3-8 hard and asks; note psalms/121 summary |
+| fear-of-the-future | Jesus predicts his death | note mark/10 summary; James 4:15 |
+| the-news-and-fear | God our refuge; not because nothing bad happens but who is with you; puts God next to the trouble | note psalms/46 summary; plain psalms/46 1-3 asks |
+| the-news-and-fear | Do not call conspiracy what they call conspiracy; fear the Lord, a sanctuary for some; Assyria | note isaiah/8 summary |
+| the-news-and-fear | News of Galileans killed by Pilate; Jesus names the assumption and denies it; turns the question to the living | note luke/13 verses 1, 2-3; plain luke/13 1-5 hard |
+| the-news-and-fear | Tribulation but courage; he does not deny trouble; victory real now, not yet complete | note john/16 verse 33; plain john/16 25-33 hard |
+| the-news-and-fear | Sayings on hasty answers and lawsuits | note proverbs/18 summary |
+| the-news-and-fear | Letter to exiles of 597 BC: houses, gardens, families, pray for Babylon; prophets of a quick return | note jeremiah/29 summary |
+| the-news-and-fear | Order to kill the wise men; prayer; the stone that becomes a mountain | note daniel/2 summary |
+| the-news-and-fear | God sits and laughs; the posture is the argument; the first Christians prayed it for courage | note psalms/2 verse 4; plain psalms/2 1-3 asks |
+| the-news-and-fear | Short commands about sincere love | note romans/12 summary |
+| the-news-and-fear | Habakkuk waits quietly for the day of distress; rejoices though crops fail | note habakkuk/3 summary |
+| the-news-and-fear | Wars and earthquakes in every age; not a countdown; the first danger is being fooled; who tells you what the news means | plain mark/13 5-13 hard and asks |
+| information-overload | The eye not satisfied; the Teacher explored everything and found wisdom a source of grief | note ecclesiastes/1 summary |
+| information-overload | The frame narrator; many books; fear God and keep his commandments | note ecclesiastes/12 summary and hard |
+| information-overload | Guard heart, speech, eyes, steps; the heart in Hebrew thought thinks, decides, remembers, desires | note proverbs/4 summary, cultural and literary |
+| information-overload | The thorny ground: worries, deceit of wealth, desire for other things; none scandalous, all ordinary; a life too full | note mark/4 verses 18-19; plain mark/4 13-20 asks |
+| information-overload | Psalm 1: meditate day and night; drifting become sitting; read a few lines slowly | plain psalms/1 1-3 asks |
+| information-overload | Knowledge puffs up, love builds up; knowledge without love can destroy a believer; being right over the person | note 1-corinthians/8 summary; plain 1-corinthians/8 1-3 asks |
+| information-overload | Athenians and new ideas; Paul's trouble sent him toward people | Acts 17:21; plain acts/17 16-21 asks |
+| information-overload | Not in wind, earthquake or fire, but a still, small voice; new work for Elijah | note 1-kings/19 summary |
+| information-overload | Envoys to Egypt without asking; repentance and rest refused; the LORD longs to be gracious | note isaiah/30 summary |
+| information-overload | Love abounding in knowledge; pray that their love grows wiser | plain philippians/1 3-11 asks |
+| information-overload | Matthew 6:22-23 in context about how a person looks at money; the ancient picture of the eye as a lamp | note matthew/6 verses 22-23 (and history) |
+| information-overload | Psalm 131: be quiet with God while they wait | plain psalms/131 1-3 asks |
+| courage | Moses at 120; the LORD goes with them; Joshua charged publicly | note deuteronomy/31 summary |
+| courage | Be strong and courageous; keep the Book of the Law in his mouth | note joshua/1 summary |
+| courage | Forty days of taunts; Saul and soldiers paralyzed; David refuses the armor | note 1-samuel/17 summary |
+| courage | Silence will not save her; a three-day fast; to the king unsummoned; if I perish | note esther/4 summary |
+| courage | Able to deliver, but even if he does not; a fourth figure in the fire | note daniel/3 summary |
+| courage | One command refused; respectful; no resistance to arrest; prayed for courage, not revenge; not permission to disobey any law | plain acts/4 13-22 hard |
+| courage | A council member takes the risk of honoring Jesus; Joseph waited a long time before he was brave | note mark/15 verses 42-43; plain mark/15 40-47 asks |
+| courage | Rescue before rebuke; little faith not no faith; not a rebuke of anxiety | note matthew/14 verses 30-31; plain matthew/14 22-33 hard |
+| courage | Courage joined to love | plain 1-corinthians/16 13-18 asks |
+| courage | 520 BC; builders who think the temple looks like nothing | note haggai/2 summary |
+| courage | Philippians 4:13 from prison; all things are hunger and plenty; a prisoner's peace, not a slogan for ambition | plain philippians/4 10-14 hard |
+| courage | Psalm 27 ends before the answer; wait said twice | plain psalms/27 7-14 asks |
+| need-for-control | The densest group of sayings about the LORD: people plan, the LORD decides outcomes | note proverbs/16 summary |
+| need-for-control | Plans of the heart beside the purpose of the LORD that stands | note proverbs/19 summary |
+| need-for-control | Rebuke of those who plan as if tomorrow were theirs to command | note james/4 summary |
+| need-for-control | Ten years; Sarai names the LORD as the reason; Abram agrees; neither asks God; her pain real but no excuse; Hagar paid | note genesis/16 summary, verse 2; plain genesis/16 1-6 hard |
+| need-for-control | Rebekah plans every step; Esau vows to kill; Jacob flees | note genesis/27 verses 8-10 and summary |
+| need-for-control | Saul offers the offering as the troops scatter; the kingdom will not endure | note 1-samuel/13 summary |
+| need-for-control | Be still is letting go of control; what are you gripping | plain psalms/46 8-11 asks |
+| need-for-control | No power over the wind or the day of death; no one can comprehend the work of God | note ecclesiastes/8 summary |
+| need-for-control | Questions confronting despair with the size of God; God needs no counselor | note isaiah/40 verses 12, 13-14 |
+| need-for-control | Peter recoils; harder to be served than to serve; Jesus knew where he came from and picked up a towel | note john/13 verses 6-7; plain john/13 1-11 asks |
+| need-for-control | The rich fool: not against saving or planning; Joseph and the ant; greed and storing up for himself; a life with no one else in it | plain luke/12 13-21 hard |
+| need-for-control | Psalm 62: rest is stopping the inner struggle; he has to tell his own soul | plain psalms/62 1-12 asks |
+
+No new claim outside Scripture and the notes: no statistic, study, scholar or date was added except those the notes themselves give (Hezekiah's scribes, 597 BC for Jeremiah's letter, 520 BC for Haggai, Herodian Palestine, Augustine, Aquinas, Luther, the Anabaptists and Mennonites, as the notes state them). Two sentences first drafted on The News and Fear and When You Are Afraid ("more bad news in a morning than their grandparents heard in a month"; "Scripture says do not be afraid more often than almost anything else") were cut before commit because no note supports them.
+
+The matcher, the whole-sentence widening and the phrasings add no factual claim. The concept table and safety words are matching data, not content shown to a reader.

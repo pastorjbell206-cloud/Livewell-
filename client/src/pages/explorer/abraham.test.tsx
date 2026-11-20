@@ -135,3 +135,71 @@ describe("the road", () => {
     ).not.toBeNull();
   });
 });
+
+describe("Abraham's road: names keep off the coast", () => {
+  it("names Hebron clear of the coast and the Dead Sea, shadows included, at both sizes", async () => {
+    const { placeNames, frameFor, boxFor } = await import("./RouteMap");
+    const part = ROAD.parts.find(p => p.id === "egypt")!;
+    const frame = frameFor("fertile-crescent");
+    const all = Array.from(new Set(part.steps.map(s => s.place))).map(
+      id => ({ ...(PLACES.get(id) as object), id }) as never
+    );
+    const reach = (part.reach ?? []).map(
+      ([lat, lon], i) =>
+        ({ id: `r${i}`, name: "", lat, lon, refs: [], line: "" }) as never
+    );
+    const box = boxFor(frame, [...all, ...reach]);
+    const u = box.w / 100;
+    // Every coast and lake line, and the same line moved by its shadow.
+    const segs: number[][] = [];
+    for (const line of ROAD.avoid ?? [])
+      for (let i = 1; i < line.length; i++)
+        for (const s of [0, 2.5])
+          segs.push([
+            frame.x(line[i - 1][1]) + s,
+            frame.y(line[i - 1][0]) + s,
+            frame.x(line[i][1]) + s,
+            frame.y(line[i][0]) + s,
+          ]);
+    const dist = (px: number, py: number, [ax, ay, bx, by]: number[]) => {
+      const dx = bx - ax;
+      const dy = by - ay;
+      const t = Math.max(
+        0,
+        Math.min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy))
+      );
+      return Math.hypot(px - ax - t * dx, py - ay - t * dy);
+    };
+    for (const wide of [true, false]) {
+      const names = placeNames(
+        frame,
+        all,
+        box,
+        u,
+        wide,
+        [
+          part.steps.map(
+            s => all.find(p => (p as { id: string }).id === s.place)!
+          ),
+        ],
+        [],
+        p => ROAD.names?.[p.id] ?? p.name,
+        ROAD.avoid,
+        ROAD.rivers
+      );
+      const r = names.get("hebron")!.r;
+      let near = Infinity;
+      for (const sg of segs)
+        for (let k = 0; k <= 20; k++)
+          for (const [x, y] of [
+            [r.x + (r.w * k) / 20, r.y],
+            [r.x + (r.w * k) / 20, r.y + r.h],
+            [r.x, r.y + (r.h * k) / 20],
+            [r.x + r.w, r.y + (r.h * k) / 20],
+          ])
+            near = Math.min(near, dist(x, y, sg));
+      expect(names.get("hebron")!.room).toBe(true);
+      expect(near / u).toBeGreaterThan(0.5);
+    }
+  });
+});

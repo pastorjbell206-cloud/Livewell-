@@ -1,5 +1,5 @@
 {
- "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
+ "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. concepts: groups of words (illness, family roles, work and rest, church and its leaders, housing and unfairness), each matched by stem, adding the library's own word for the thing. safety: a word the self-harm, abuse and danger rewrites add, and the help topic it puts first. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
  "rewrites": {
   "passed away": "died",
   "pass away": "die",
@@ -30,14 +30,62 @@
   "the baby": "baby",
   "go to church": "church",
   "going to church": "church",
-  "kill myself": "suicide",
-  "end it all": "suicide",
+  "kill myself": "suicide helpnow",
+  "end it all": "suicide helpnow",
   "not be here": "suicide",
   "want to die": "suicide",
-  "dont want to be alive": "suicide",
-  "dont want to live": "suicide",
-  "better off dead": "suicide",
-  "hurt myself": "selfharm"
+  "dont want to be alive": "suicide helpnow",
+  "dont want to live": "suicide helpnow",
+  "better off dead": "suicide helpnow",
+  "hurt myself": "selfharm helpnow",
+  "cut myself": "selfharm helpnow",
+  "harm myself": "selfharm helpnow",
+  "take my own life": "suicide helpnow",
+  "end my life": "suicide helpnow",
+  "wish i were dead": "suicide helpnow",
+  "wish i was dead": "suicide helpnow",
+  "no reason to live": "suicide helpnow",
+  "dont want to wake up": "suicide helpnow",
+  "beats me": "abuse abusenow",
+  "beat me": "abuse abusenow",
+  "he hits me": "abuse abusenow",
+  "she hits me": "abuse abusenow",
+  "choked me": "abuse abusenow",
+  "chokes me": "abuse abusenow",
+  "shoved me": "abuse abusenow",
+  "abused me": "abuse abusenow",
+  "abusing me": "abuse abusenow",
+  "raped me": "abuse abusenow",
+  "sexually abused": "abuse abusenow",
+  "molested": "abuse abusenow",
+  "threatened to kill me": "danger abusenow",
+  "threatens to kill me": "danger abusenow",
+  "afraid for my life": "danger abusenow",
+  "fear for my life": "danger abusenow",
+  "not safe at home": "danger abusenow",
+  "scared he will hurt me": "danger abusenow",
+  "scared she will hurt me": "danger abusenow",
+  "afraid he will hurt me": "danger abusenow",
+  "afraid she will hurt me": "danger abusenow",
+  "going to hurt me": "danger abusenow",
+  "day off": "rest",
+  "time off": "rest",
+  "small group": "church group",
+  "nothing more they can do": "terminal",
+  "nothing more to be done": "terminal",
+  "nothing else they can do": "terminal",
+  "better off without me": "suicide helpnow",
+  "husband hits me": "abuse abusenow",
+  "wife hits me": "abuse abusenow",
+  "boyfriend hits me": "abuse abusenow",
+  "girlfriend hits me": "abuse abusenow",
+  "partner hits me": "abuse abusenow",
+  "dad hits me": "abuse abusenow",
+  "father hits me": "abuse abusenow",
+  "mom hits me": "abuse abusenow",
+  "mother hits me": "abuse abusenow",
+  "stepdad hits me": "abuse abusenow",
+  "stepmom hits me": "abuse abusenow"
  },
  "synonyms": {
   "son": "child",
@@ -172,6 +220,103 @@
   "lord": "god",
   "jesus": "god",
   "christ": "god"
+ },
+ "concepts": [
+  {
+   "name": "illness",
+   "words": [
+    "cancer",
+    "tumor",
+    "tumour",
+    "stroke",
+    "dementia",
+    "alzheimers",
+    "parkinsons",
+    "chemo",
+    "chemotherapy",
+    "leukemia",
+    "lymphoma",
+    "diagnosis",
+    "diagnosed",
+    "hospital",
+    "hospitalized",
+    "surgery",
+    "disease",
+    "illness",
+    "sickness",
+    "biopsy",
+    "oncologist",
+    "transplant",
+    "dialysis"
+   ],
+   "adds": "illness"
+  },
+  {
+   "name": "family roles",
+   "words": [
+    "brother",
+    "sister",
+    "sibling",
+    "grandma",
+    "grandmother",
+    "grandpa",
+    "grandfather",
+    "granny",
+    "nana",
+    "stepmom",
+    "stepdad",
+    "stepmother",
+    "stepfather",
+    "stepson",
+    "stepdaughter"
+   ],
+   "adds": "family"
+  },
+  {
+   "name": "work and rest",
+   "words": [
+    "vacation",
+    "weekend",
+    "overtime",
+    "workaholic",
+    "overworked"
+   ],
+   "adds": "rest work"
+  },
+  {
+   "name": "church and its leaders",
+   "words": [
+    "pastor",
+    "minister",
+    "priest",
+    "elder",
+    "deacon",
+    "bishop",
+    "reverend",
+    "preacher",
+    "leadership",
+    "leader"
+   ],
+   "adds": "leader"
+  },
+  {
+   "name": "housing and unfairness",
+   "words": [
+    "landlord",
+    "tenant",
+    "eviction",
+    "evicted",
+    "evict",
+    "homeless",
+    "slumlord",
+    "unaffordable"
+   ],
+   "adds": "poor justice"
+  }
+ ],
+ "safety": {
+  "helpnow": "suicidal-thoughts",
+  "abusenow": "toxic-relationships"
  },
  "areas": [
   {
@@ -479,7 +624,9 @@
     "child left",
     "child lost faith",
     "child is an atheist",
-    "child no longer believes"
+    "child no longer believes",
+    "child doesnt believe",
+    "child wont come to church"
    ],
    "not": [],
    "related": [
@@ -1355,13 +1502,24 @@
     "yes to everything",
     "too many commitments",
     "overcommitted",
-    "take on too much"
+    "take on too much",
+    "cant say no",
+    "always say yes",
+    "spread too thin",
+    "stretched too thin",
+    "volunteer for everything",
+    "said yes to too much",
+    "committee at church",
+    "too many committees",
+    "tell my boss no",
+    "learn to say no"
    ],
    "not": [],
    "related": [
     "people-pleasing",
     "setting-boundaries",
-    "busyness-and-overwhelm"
+    "busyness-and-overwhelm",
+    "rest-and-sabbath"
    ]
   },
   "people-pleasing": {
@@ -1370,13 +1528,27 @@
     "cant say no",
     "want everyone to like me",
     "what people think",
-    "afraid to disappoint"
+    "afraid to disappoint",
+    "afraid of disappointing people",
+    "need everyone to approve",
+    "keep everyone happy",
+    "cant handle anyone being upset with me",
+    "worried what everyone thinks of me",
+    "afraid of letting people down",
+    "need approval",
+    "fear of man",
+    "say yes so nobody gets upset",
+    "someone upset with me",
+    "afraid theyll be mad",
+    "care what people think",
+    "say yes because im afraid"
    ],
    "not": [],
    "related": [
     "saying-no",
     "setting-boundaries",
-    "identity-and-worth"
+    "identity-and-worth",
+    "codependency"
    ]
   },
   "breakup": {
@@ -1666,7 +1838,6 @@
    "phrases": [
     "controls everything",
     "scares me",
-    "hits me",
     "afraid of my husband",
     "afraid of my wife",
     "afraid of my partner",
@@ -1707,12 +1878,26 @@
     "cant sleep",
     "lie awake",
     "overthink",
-    "spiral"
+    "spiral",
+    "replay conversations",
+    "keep replaying",
+    "cant turn my brain off",
+    "thoughts wont stop",
+    "obsessing over everything",
+    "over analyze everything",
+    "second guess everything",
+    "same thoughts over and over",
+    "intrusive thoughts",
+    "brain wont shut off",
+    "mind wont shut off",
+    "second guess"
    ],
    "not": [],
    "related": [
     "anxiety",
-    "peace"
+    "peace",
+    "need-for-control",
+    "indecision"
    ]
   },
   "procrastination-and-laziness": {
@@ -1746,12 +1931,24 @@
     "afraid of the future",
     "scared of the future",
     "terrified of the future",
-    "future"
+    "future",
+    "what if something bad happens",
+    "worried about whats coming",
+    "dread the future",
+    "uncertain future",
+    "dont know whats going to happen",
+    "worried about tomorrow",
+    "what if i lose everything",
+    "afraid of what is coming",
+    "imagining the worst",
+    "worst case scenario"
    ],
    "not": [],
    "related": [
     "anxiety",
-    "trusting-god"
+    "trusting-god",
+    "need-for-control",
+    "fear-and-courage"
    ]
   },
   "betrayal": {
@@ -1775,7 +1972,9 @@
     "betrayed by my",
     "used me and left",
     "business partner stole",
-    "partner took the money"
+    "partner took the money",
+    "texting her ex",
+    "texting his ex"
    ],
    "not": [],
    "related": [
@@ -1862,7 +2061,10 @@
     "cheaters prosper",
     "work harder and get nothing",
     "took credit for my work",
-    "dishonest people get ahead"
+    "dishonest people get ahead",
+    "he got the credit",
+    "she got the credit",
+    "got the raise"
    ],
    "not": [],
    "related": [
@@ -2026,7 +2228,9 @@
     "copied answers",
     "plagiarized",
     "cheating on taxes",
-    "cheated at work"
+    "cheated at work",
+    "texting her ex",
+    "texting his ex"
    ],
    "not": [
     "diet"
@@ -2090,12 +2294,23 @@
    "phrases": [
     "the news",
     "news makes me",
-    "headlines"
+    "headlines",
+    "watching the news",
+    "world is falling apart",
+    "doomscrolling",
+    "afraid of whats happening in the world",
+    "everything in the world is so scary",
+    "cant stop reading the news",
+    "news gives me anxiety",
+    "the election scares me",
+    "wars and rumors"
    ],
    "not": [],
    "related": [
     "anxiety",
-    "information-overload"
+    "information-overload",
+    "fear-of-the-future",
+    "outrage-culture"
    ]
   },
   "retirement": {
@@ -2252,7 +2467,11 @@
     "badmouthing",
     "trash talking",
     "words i cant take back",
-    "gossip"
+    "gossip",
+    "cant keep their mouth shut",
+    "knows my business",
+    "everyone knows my business",
+    "told everyone my business"
    ],
    "not": [],
    "related": [
@@ -2275,7 +2494,10 @@
     "exploited workers",
     "poverty",
     "people struggling to survive",
-    "how should christians help"
+    "how should christians help",
+    "landlord doesnt care",
+    "no heat",
+    "slumlord"
    ],
    "not": [],
    "related": [
@@ -2334,7 +2556,10 @@
     "terminal cancer",
     "terminal",
     "palliative care",
-    "given months"
+    "given months",
+    "cancer is back",
+    "cancer came back",
+    "stopped treatment"
    ],
    "not": [
     "clean",
@@ -2468,7 +2693,9 @@
     "physical affection",
     "romance is gone",
     "no intimacy",
-    "no sex in our marriage"
+    "no sex in our marriage",
+    "doesnt want me to touch",
+    "pulls away when i touch"
    ],
    "not": [],
    "related": [
@@ -2532,7 +2759,11 @@
     "work on sunday",
     "feel guilty resting",
     "guilty taking a break",
-    "work seven days a week"
+    "work seven days a week",
+    "no day off",
+    "real day off",
+    "never take a day off",
+    "no time off"
    ],
    "not": [],
    "related": [
@@ -2553,7 +2784,11 @@
     "obey the government",
     "authority over me",
     "spiritual abuse",
-    "pastor abuses power"
+    "pastor abuses power",
+    "question the pastor",
+    "not question",
+    "back his decision",
+    "questioning leadership"
    ],
    "not": [],
    "related": [
@@ -2715,12 +2950,183 @@
     "lost myself in this relationship",
     "lost myself taking care of"
    ],
-   "not": [],
+   "not": [
+    "say no to anyone"
+   ],
    "related": [
     "people-pleasing",
     "setting-boundaries",
     "saying-no",
     "identity-and-worth"
+   ]
+  },
+  "division-in-the-church": {
+   "phrases": [
+    "church split",
+    "church is splitting",
+    "split the church",
+    "church divided",
+    "church fight",
+    "factions in the church",
+    "church vote"
+   ],
+   "not": [],
+   "related": [
+    "church-hurt",
+    "submitting-to-leaders",
+    "finding-a-church"
+   ]
+  },
+  "setting-boundaries": {
+   "phrases": [
+    "need boundaries",
+    "set boundaries",
+    "people walk all over me",
+    "people take advantage of me",
+    "everyone takes advantage of me",
+    "cant set limits",
+    "always available to everyone",
+    "draw a line with",
+    "drained by my family",
+    "keeps showing up unannounced",
+    "how do i set boundaries",
+    "set limits",
+    "calls me all day"
+   ],
+   "not": [],
+   "related": [
+    "saying-no",
+    "people-pleasing",
+    "codependency",
+    "toxic-relationships"
+   ]
+  },
+  "loving-your-enemies": {
+   "phrases": [
+    "love my enemies",
+    "love someone who hurt me",
+    "how do i love someone i hate",
+    "pray for someone who hurt me",
+    "be kind to someone who wronged me",
+    "someone who hates me",
+    "pray for my enemies",
+    "people who persecute me",
+    "love the person who",
+    "love your enemies",
+    "love your enemy"
+   ],
+   "not": [],
+   "related": [
+    "revenge",
+    "forgiveness",
+    "persecution-and-opposition"
+   ]
+  },
+  "when-someone-wont-change": {
+   "phrases": [
+    "he wont change",
+    "she wont change",
+    "keeps making the same choices",
+    "promised he would stop",
+    "keeps breaking promises",
+    "refuses to get help",
+    "waiting for him to change",
+    "waiting for her to change",
+    "how long do i keep hoping",
+    "still wont stop",
+    "says he will quit and never does",
+    "will never change no matter"
+   ],
+   "not": [],
+   "related": [
+    "codependency",
+    "addiction",
+    "setting-boundaries",
+    "wayward-child"
+   ]
+  },
+  "fear-and-courage": {
+   "phrases": [
+    "scared all the time",
+    "afraid something bad will happen",
+    "panic attack",
+    "cant stop being afraid",
+    "fear is controlling my life",
+    "waiting for test results and scared",
+    "afraid to die",
+    "scared to death",
+    "terrified all the time",
+    "afraid of everything"
+   ],
+   "not": [],
+   "related": [
+    "courage",
+    "anxiety",
+    "fear-of-the-future"
+   ]
+  },
+  "information-overload": {
+   "phrases": [
+    "overwhelmed by information",
+    "cant focus on anything",
+    "constantly scrolling",
+    "too many notifications",
+    "brain feels fried",
+    "attention span is gone",
+    "consuming too much content",
+    "information overload",
+    "drowning in information",
+    "on my phone all day"
+   ],
+   "not": [],
+   "related": [
+    "technology-and-distraction",
+    "social-media",
+    "the-news-and-fear"
+   ]
+  },
+  "courage": {
+   "phrases": [
+    "need courage",
+    "brave enough",
+    "too scared to speak up",
+    "afraid to stand up for",
+    "afraid to tell the truth",
+    "such a coward",
+    "scared to take the risk",
+    "stand up for what is right",
+    "afraid to step out",
+    "find the courage",
+    "afraid to speak up",
+    "too scared to report"
+   ],
+   "not": [],
+   "related": [
+    "fear-and-courage",
+    "persecution-and-opposition",
+    "people-pleasing"
+   ]
+  },
+  "need-for-control": {
+   "phrases": [
+    "control freak",
+    "have to control everything",
+    "micromanage everyone",
+    "need to be in control",
+    "everything depends on me",
+    "cant trust anyone else to do it",
+    "need everything planned",
+    "loosen my grip",
+    "control everything",
+    "planned out",
+    "if i let go everything"
+   ],
+   "not": [],
+   "related": [
+    "surrender",
+    "trusting-god",
+    "overthinking",
+    "fear-of-the-future"
    ]
   }
  }

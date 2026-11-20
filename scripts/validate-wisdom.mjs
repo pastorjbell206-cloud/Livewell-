@@ -64,6 +64,15 @@ for (const [id, m] of Object.entries(matching.topics)) {
   for (const r of m.related ?? []) if (!ids.has(r)) fail("matching.json", `${id}: related "${r}" is not a topic`);
 }
 
+// The finder's safety words each put a real topic first, and each is added by a rewrite.
+for (const [word, id] of Object.entries(matching.safety ?? {})) {
+  if (!ids.has(id)) fail("matching.json", `safety word "${word}" names unknown topic "${id}"`);
+  if (!Object.values(matching.rewrites).some((v) => v.split(/\s+/).includes(word))) fail("matching.json", `safety word "${word}" is added by no rewrite`);
+}
+for (const c of matching.concepts ?? []) {
+  if (!c.name || !Array.isArray(c.words) || !c.words.length || !c.adds) fail("matching.json", `concept "${c.name ?? "?"}" needs a name, member words and the words it adds`);
+}
+
 // Every verse, word for word, and every chapter it links to.
 let verses = 0;
 for (const t of topics) {

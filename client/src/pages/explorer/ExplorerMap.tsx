@@ -51,7 +51,7 @@ import {
 } from "@/lib/explorer";
 import { CardArt, CARD_PICTURES, HeadArt, Roundel } from "./art";
 import { Count, LevelSwitch, ThreadIcon } from "./parts";
-import { Watch, WatchLinks } from "./Watch";
+import { MOVING_MAPS, Watch, WatchLinks } from "./Watch";
 import "./explorer.css";
 import "./films/film.css";
 
@@ -357,7 +357,7 @@ function Holds({ index }: { index: ExplorerIndex }) {
           </li>
           <li>
             <a href="#wl-g-maps">Maps that move</a>
-            <span>2 maps</span>
+            <span>{plural(MOVING_MAPS.length, "map", "maps")}</span>
           </li>
           <li>
             <a href="#ex-believe-title">Why we believe</a>

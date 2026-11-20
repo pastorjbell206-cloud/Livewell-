@@ -29,7 +29,7 @@
 
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },
-    { "slug": "the-king", "title": "The king", "group": "ideas", "status": "coming" },
+    { "slug": "the-king", "title": "The king", "group": "ideas", "status": "finished" },
     { "slug": "covenant", "title": "Promises that build: the covenants", "group": "ideas", "status": "coming" },
     { "slug": "the-lamb", "title": "Sacrifice and the Lamb", "group": "ideas", "status": "coming" },
     { "slug": "exile-and-home", "title": "Exile and coming home", "group": "ideas", "status": "coming" },
@@ -42,13 +42,13 @@
     { "slug": "what-sin-is", "title": "What sin is", "group": "beliefs", "status": "finished" },
     { "slug": "who-jesus-is", "title": "Who Jesus is", "group": "beliefs", "status": "finished" },
     { "slug": "why-jesus-died", "title": "Why did Jesus die?", "group": "beliefs", "status": "finished" },
-    { "slug": "the-resurrection", "title": "The resurrection", "group": "beliefs", "status": "coming" },
+    { "slug": "the-resurrection", "title": "The resurrection", "group": "beliefs", "status": "finished" },
     { "slug": "how-salvation-works", "title": "How salvation works", "group": "beliefs", "status": "finished" },
     { "slug": "gospel-in-a-minute", "title": "The gospel in a minute", "group": "beliefs", "status": "finished" },
     { "slug": "spirit-in-a-believer", "title": "The Holy Spirit in a believer", "group": "beliefs", "status": "finished" },
     { "slug": "the-church", "title": "What the church is", "group": "beliefs", "status": "finished" },
     { "slug": "baptism-and-supper", "title": "Baptism and the Lord's Supper", "group": "beliefs", "status": "finished" },
-    { "slug": "the-bible", "title": "The Bible: how we got it, and why trust it", "group": "beliefs", "status": "coming" },
+    { "slug": "the-bible", "title": "The Bible: how we got it", "group": "beliefs", "status": "finished" },
     { "slug": "prayer", "title": "Prayer", "group": "beliefs", "status": "finished" },
     { "slug": "life-to-come", "title": "The life to come", "group": "beliefs", "status": "finished" },
 
@@ -62,7 +62,7 @@
     { "slug": "so-many-churches", "title": "Why are there so many churches?", "group": "questions", "status": "finished" },
     { "slug": "never-heard", "title": "What about people who never heard?", "group": "questions", "status": "coming" },
     { "slug": "temple-destroyed", "title": "Why did God let his temple be destroyed?", "group": "questions", "status": "coming" },
-    { "slug": "love-when-i-do-wrong", "title": "Does God still love me when I do wrong?", "group": "questions", "status": "coming" },
+    { "slug": "love-when-i-do-wrong", "title": "Does God still love me when I do wrong?", "group": "questions", "status": "finished" },
     { "slug": "god-silent", "title": "Why does God seem silent sometimes?", "group": "questions", "status": "coming" },
     { "slug": "science-and-the-bible", "title": "Are science and the Bible enemies?", "group": "questions", "status": "coming" }
   ]

@@ -45,8 +45,9 @@ books). One page lists everything the site holds.
   time): https://www.livewellbyjamesbell.co/study/how-to-study
 - Bible Explorer (the whole Bible as one story on one illustrated map, for
   ages 7 to 16, written at two reading levels, with a drawn scene, verses and
-  an activity at each finished stop, the theme of God living with his people
-  traced through every stop, and short cards on what Christians believe):
+  an activity at each finished stop, six themes traced through the stops (God
+  with his people, the king, the Holy Spirit, the promise, the lamb, and a
+  blessing for every nation), and short cards on what Christians believe):
   https://www.livewellbyjamesbell.co/study/explorer
 - Watch and learn, in the Bible Explorer (short moving pictures drawn in the
   browser, with every word as text under the picture at two reading levels:
@@ -56,8 +57,9 @@ books). One page lists everything the site holds.
   believer, Did Jesus really come back to life?, Why do bad things happen?,
   Is the Bible true?, creation and the image of God, what sin is, who Jesus
   is, prayer, baptism and the Lord's Supper, the life to come, Why are there
-  so many churches?, and three short ones made to share: the Bible in a
-  minute, the gospel in a minute, and Does God exist?):
+  so many churches?, the resurrection, the Bible: how we got it, the king,
+  Does God still love me when I do wrong?, and three short ones made to
+  share: the Bible in a minute, the gospel in a minute, and Does God exist?):
   https://www.livewellbyjamesbell.co/study/explorer/watch/bible-two-minutes
   https://www.livewellbyjamesbell.co/study/explorer/watch/holy-spirit
   https://www.livewellbyjamesbell.co/study/explorer/watch/god-with-his-people
@@ -81,6 +83,10 @@ books). One page lists everything the site holds.
   https://www.livewellbyjamesbell.co/study/explorer/watch/baptism-and-supper
   https://www.livewellbyjamesbell.co/study/explorer/watch/life-to-come
   https://www.livewellbyjamesbell.co/study/explorer/watch/so-many-churches
+  https://www.livewellbyjamesbell.co/study/explorer/watch/the-resurrection
+  https://www.livewellbyjamesbell.co/study/explorer/watch/the-bible
+  https://www.livewellbyjamesbell.co/study/explorer/watch/the-king
+  https://www.livewellbyjamesbell.co/study/explorer/watch/love-when-i-do-wrong
 - Paul's travels, in the Bible Explorer (a map of Acts that draws Paul's three
   trips and the voyage to Rome place by place, each with what happened there
   and its chapter, and the churches named in those years with the letters
