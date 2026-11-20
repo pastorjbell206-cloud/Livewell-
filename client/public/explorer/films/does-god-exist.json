@@ -1,0 +1,76 @@
+{
+  "slug": "does-god-exist",
+  "title": "Does God exist?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "does-god-exist",
+  "line": {
+    "younger": "One of the biggest questions there is, taken slowly and honestly in six pictures: why is there anything at all?",
+    "older": "The argument from why anything exists at all, in six pictures: what it shows, what it does not, and where to weigh the case against."
+  },
+  "poster": "A row of rings joined like a chain: a tree, the seed it grew from, another tree, the earth and the sun, running back to the left into a ring with a question mark.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "A fair question",
+      "still": "A row of rings joined like a chain: a tree, the seed it grew from, another tree, the earth and the sun, running back to the left into a ring with a question mark.",
+      "younger": "Does God really exist? It is a big, honest question, and people who think hard have answered it in different ways. Here is one reason Christians give, taken slowly.",
+      "older": "Does God actually exist? The case against is stronger than many believers admit, and nothing here forces anyone to agree. But there are reasons, each open to inspection, and they are worth weighing."
+    },
+    {
+      "id": "something",
+      "name": "Something rather than nothing",
+      "still": "The chain runs back to the left: the seed, another tree, the earth, the sun, and then dots running off the edge of the picture.",
+      "younger": "Everything we know came from something. A tree came from a seed. The earth, the sun, the whole universe: each could have been different, or not been at all.",
+      "older": "In 1714 Gottfried Leibniz set down what he took to be the first question we have a right to ask: why is there something rather than nothing? The universe, all of space, time, matter and energy, could have been different, or not been at all."
+    },
+    {
+      "id": "more-chain",
+      "name": "More than more chain",
+      "still": "The whole chain, made smaller, now sits inside a frame in the middle of an empty page.",
+      "younger": "Even a chain that went back for ever would not answer the question. A longer chain is still a chain that needs explaining.",
+      "older": "This argument does not need the universe to have had a beginning. Even a chain that went back for ever would still need explaining. Making it longer does not make the question go away. It makes it bigger."
+    },
+    {
+      "id": "what-god-means",
+      "name": "What Christians mean by God",
+      "still": "Light comes into the picture from beyond its top edge, and the framed chain rests in it. The light is not one of the links, and it has no edge inside the picture.",
+      "younger": "So Christians believe God is not one more thing in the universe, needing a maker in his turn. He is the reason there is anything at all. Nothing made him.",
+      "older": "Every account of reality has to stop somewhere. One stops at a universe that happens to exist when it need not have. The other stops at a being that could not fail to exist, not made of space, time or matter. That is a large part of what believers in one God mean by the word.",
+      "verse": {
+        "ref": "Acts 17:24",
+        "text": "The God who made the world and everything in it is the Lord of heaven and earth"
+      }
+    },
+    {
+      "id": "shows",
+      "name": "What this shows, and what it does not",
+      "still": "The framed chain still rests in the light. Below it stands a balance, its two pans level.",
+      "younger": "This does not prove that Christianity is true, and it does not force anyone to believe. It shows that believing in God is reasonable, not foolish.",
+      "older": "None of this is a proof in the mathematician's sense, and it isn't yet Christianity. It does not show that God is three persons, or that he became a man. It shows that belief in God is reasonable. For Christians the rest rests on a question of history: whether Jesus was raised from the dead."
+    },
+    {
+      "id": "weigh",
+      "name": "Weigh it for yourself",
+      "still": "The framed chain rests in the light, the balance stands level below it, and beside it lies an open book.",
+      "younger": "Some careful thinkers do not agree, and you can think about all of this and still say no. The whole case, and the strongest answers against it, are in the Honest Answer on LiveWell: Does God actually exist?",
+      "older": "Bertrand Russell answered that the universe is ‘just there, and that's all’. That is the step where an honest person can disagree. You can weigh all of this and still say no; what you can't honestly say is that there's nothing to weigh. The full case, and the case against at its strongest, is the Honest Answer: Does God actually exist?"
+    }
+  ],
+  "think": {
+    "younger": "Why do you think there is something, instead of nothing at all? Ask a parent or a leader what they think.",
+    "older": "Every explanation has to stop somewhere. Where do you think it stops, and why?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Psalm 90", "href": "/study/bible/psalms/90" },
+    { "label": "Acts 17", "href": "/study/bible/acts/17" }
+  ],
+  "stops": ["creation"],
+  "cards": ["god"],
+  "deeper": [
+    { "label": "Does God actually exist? (an Honest Answer, with the case against at its strongest)", "href": "/answers/does-god-actually-exist" },
+    { "label": "Who made God? (the moving picture for younger children)", "href": "/study/explorer/watch/who-made-god" }
+  ],
+  "end": { "label": "Read the Honest Answer: Does God actually exist?", "href": "/answers/does-god-actually-exist" }
+}

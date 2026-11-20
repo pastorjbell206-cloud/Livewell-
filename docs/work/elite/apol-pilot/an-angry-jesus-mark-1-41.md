@@ -1,7 +1,7 @@
 ---
 area: can-we-trust-the-text
 slug: an-angry-jesus-mark-1-41
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?"
 ledger: docs/work/elite/apol-ledger.md, "Eleventh run: five more pieces in the text area"
 ---
@@ -52,13 +52,13 @@ The third step carries the weight, because the objection's real claim is about J
 
 The strongest reply turns the argument around. Very well, it says, Mark's Jesus is angry in places and the change here was small. But look at what you've just conceded about Matthew and Luke. They didn't only omit anger here. They omitted it at 3:5 and at 10:14 too. So the softening of Jesus didn't begin with copyists in the second century. It began with the evangelists themselves, who reshaped Mark's Jesus to suit their own picture. That isn't a textual problem. It's a historical one, and it's worse.
 
-The reply is right that it isn't a textual problem, and it should be answered as the different question it is. That Matthew and Luke wrote their own Gospels, drawing on Mark and shaping what they took, is not a discovery that threatens the faith. It has been studied openly for generations, and the church has always read four Gospels side by side, not one harmony. Each evangelist chose what to tell and how. Matthew and Luke leaving out Mark's report of anger is a choice of emphasis. They don't contradict it; nowhere do they say Jesus was never angry, and Matthew tells of Jesus overturning the tables in the temple and pronouncing woes on the scribes and Pharisees. Readers have Mark too, and the church kept him, anger and all, in the same Bible. A movement determined to soften Jesus would not have kept the Gospel that shows his anger most plainly. How the four Gospels relate to one another, and what their differences mean for history, are questions the site's other pages take up.
+The reply is right that it isn't a textual problem, and it should be answered as the different question it is. That Matthew and Luke wrote their own Gospels, drawing on Mark and shaping what they took, is not a discovery that threatens the faith. It has been studied openly for generations, and the church kept four Gospels side by side, not one harmony. Each evangelist chose what to tell and how. Matthew and Luke leaving out Mark's report of anger is a choice of emphasis. They don't contradict it; nowhere do they say Jesus was never angry, and Matthew tells of Jesus overturning the tables in the temple and pronouncing woes on the scribes and Pharisees. Readers have Mark too, and the church kept him, anger and all, in the same Bible. A movement determined to soften Jesus would not have kept the Gospel that shows his anger most plainly. How the four Gospels relate to one another, and what their differences mean for history, are questions the site's other pages take up.
 
 The other half of the reply, the question of how many other changes we can't see, is the one the earlier pages in this area answer. This variant is evidence for that answer, not against it. A change made early enough to stand in nearly every manuscript we have, if that is what happened here, still left its trace in one corner of the tradition.
 
 ## What remains unresolved
 
-The original word in Mark 1:41 is unresolved. Careful scholars who share the same evidence and the same method come down on different sides, and anyone who says the question is closed hasn't read them. If the word is anger, what Jesus was angry at is open too. Some read it as anger at the leprosy and what it had done to the man, cut off from family and worship. Ehrman has suggested that the man's request itself provoked it. Others read it as anger at the law's exclusion of the sick, or at the forces opposed to God that Mark shows Jesus confronting from the start. The Study Bible's note on Mark 1 puts it well: "whether the text says compassion or anger, the Jesus of this chapter is intensely engaged with suffering and with what causes it."
+The original word in Mark 1:41 is unresolved. Careful scholars who share the same evidence and the same method come down on different sides, and the question is best left open. If the word is anger, what Jesus was angry at is open too. Some read it as anger at the leprosy and what it had done to the man, cut off from family and worship. Ehrman has suggested that the man's request itself provoked it. Others read it as anger at the law's exclusion of the sick, or at the forces opposed to God that Mark shows Jesus confronting from the start. The Study Bible's note on Mark 1 puts it well: "whether the text says compassion or anger, the Jesus of this chapter is intensely engaged with suffering and with what causes it."
 
 ## Where Christians differ
 

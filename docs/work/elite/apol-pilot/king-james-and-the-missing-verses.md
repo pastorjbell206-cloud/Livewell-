@@ -1,7 +1,7 @@
 ---
 area: can-we-trust-the-text
 slug: king-james-and-the-missing-verses
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?"
 ledger: docs/work/elite/apol-ledger.md, "Eleventh run: five more pieces in the text area"
 ---
@@ -18,7 +18,7 @@ The worry usually starts with a Bible open on a kitchen table. A reader looks up
 
 The serious case behind that question is older than any modern controversy. When the Revised Version of the New Testament appeared in England in 1881, with a new Greek text behind it that leaned heavily on two fourth-century codices, Vaticanus and Sinaiticus, John William Burgon, the Dean of Chichester, answered it in a series of articles collected as *The Revision Revised* (1883). Burgon argued that the revisers' theory had no foundation in history, that their trust in the two codices was misplaced, and that the text the church had actually read for centuries, preserved in the great majority of manuscripts, was far more likely to be right than a few old copies that had sat unused.
 
-Those who keep to the King James or its Greek text today make the case in several forms. Some hold that the reading of the majority of manuscripts, the Byzantine text, is usually original, and Maurice Robinson and William Pierpont have edited a Greek New Testament on that principle (2005). Some, especially in Reformed churches, hold to the printed Greek text of the Reformation as the text God has kept, citing the Westminster Confession's statement that the Scriptures in their original languages have been "kept pure in all ages". Some hold that the King James translation itself is the preserved word of God in English. Under all of them lies one conviction: God promised to preserve his word, and it isn't credible that he left the church for centuries with a corrupted text, to be repaired by scholars from a handful of manuscripts.
+Those who defend the King James, its Greek text or the reading of most manuscripts make the case today in several forms. Some hold that the reading of the majority of manuscripts, the Byzantine text, is usually original, and Maurice Robinson and William Pierpont have edited a Greek New Testament on that principle (2005). Some, especially in Reformed churches, hold to the printed Greek text of the Reformation as the text God has kept, citing the Westminster Confession's statement that the Scriptures in their original languages have been "kept pure in all ages". Some hold that the King James translation itself is the preserved word of God in English. Under all of them lies one conviction: God promised to preserve his word, and it isn't credible that he left the church for centuries with a corrupted text, to be repaired by scholars from a handful of manuscripts.
 
 ## What is true in it
 
@@ -40,7 +40,7 @@ The differences don't all run one way. In Matthew 24:36 the oldest manuscripts h
 
 This is an argument about which text is earlier, set against what each side's evidence shows.
 
-1. A verse is missing from a modern Bible only if it belonged to the text as first written, so the question is which reading is older, not which printed Bible is older.
+1. Words have been taken out of God's word only if they belonged to the text as first written, so the question is which reading is older, not which printed Bible is older.
 2. For the verses at issue, the evidence is of one kind: absence from the oldest witnesses in several regions, presence in later ones, and in many cases a visible source for the addition, such as a parallel Gospel, the church's worship, or the Latin.
 3. The King James translators worked from printed editions made between 1516 and 1611 from late manuscripts, before most of the oldest witnesses were known, and they themselves noted variants.
 4. The changes modern editions make run in both directions and leave every doctrine of the creeds where it was.
