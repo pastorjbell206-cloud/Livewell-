@@ -263,6 +263,34 @@ describe("the map", () => {
       expect(li.querySelector("a")).toBeNull();
     }
   });
+
+  it("the resurrection and church cards keep their limits, and show their films", async () => {
+    const cards = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/cards.json"), "utf8")
+    ).cards as { id: string; [k: string]: unknown }[];
+    const text = (id: string) => JSON.stringify(cards.find(c => c.id === id));
+    // The resurrection card reuses the Honest Answer's limits, in the third
+    // person: not a proof, and the women's testimony argument is not used.
+    const res = text("resurrection");
+    expect(res).toContain("History can't prove a miracle");
+    expect(res).toContain("still say no");
+    expect(res).not.toMatch(/\bI\b|\bwomen\b|testimony/);
+    // The church card says what all share and that it does not choose.
+    const church = text("church");
+    expect(church).toContain("this card does not choose between them");
+    expect(church).toContain("one Lord");
+    renderAt("/study/explorer");
+    const card = await screen.findByRole("group", { name: "The church" });
+    expect(
+      within(card).getByRole("link", { name: /What the church is/ })
+    ).toBeInTheDocument();
+    const rcard = screen.getByRole("group", { name: "The resurrection" });
+    expect(
+      within(rcard).getByRole("link", {
+        name: /Did Jesus really come back to life\?/,
+      })
+    ).toBeInTheDocument();
+  });
 });
 
 describe("a stop", () => {
@@ -837,5 +865,47 @@ describe("the king thread", () => {
         .getAllByRole("link", { name: "Follow it on the map" })
         .map(a => a.getAttribute("href"))
     ).toContain("/study/explorer?thread=king");
+  });
+});
+
+describe("the Holy Spirit, promise and lamb threads", () => {
+  const cases = [
+    { id: "spirit", broken: "promised", skip: ["fall"] },
+    { id: "promise", broken: "waited", skip: ["creation"] },
+    { id: "lamb", broken: "points", skip: ["creation"] },
+  ];
+  for (const c of cases)
+    it(`${c.id}: lights the stops it names, broken where its key says, with each line`, async () => {
+      const t = INDEX.threads.find(x => x.id === c.id)!;
+      expect(t.status).toBe("finished");
+      const want = ROAD.filter(s => !c.skip.includes(s));
+      expect(threadStops(t, INDEX.stops).map(x => x.slug)).toEqual(want);
+      expect(t.broken).toEqual([c.broken]);
+      renderAt("/study/explorer");
+      await screen.findByRole("heading", { name: "Creation" });
+      fireEvent.click(screen.getByRole("button", { name: t.name }));
+      const lit = Array.from(document.querySelectorAll("[data-lit]"));
+      expect(lit.map(el => el.id.replace(/^stop-/, ""))).toEqual(want);
+      for (const means of Object.values(t.key!))
+        expect(screen.getByText(means)).toBeInTheDocument();
+      expect(
+        screen.getByText(`Lit at ${want.length} stops.`, { exact: false })
+      ).toBeInTheDocument();
+      for (const slug of want) {
+        const row = document.getElementById(`stop-${slug}`)!;
+        expect(row.textContent).toContain(t.stops![slug].line);
+        expect(Boolean(row.querySelector(".ex-road__lit--apart")), slug).toBe(
+          t.stops![slug].state === c.broken
+        );
+      }
+    });
+
+  it("the lamb thread gives both readings of Isaiah's servant, and no thread blames a people", () => {
+    const lamb = INDEX.threads.find(x => x.id === "lamb")!;
+    expect(lamb.stops!.exile.line).toContain("Christians");
+    expect(lamb.stops!.exile.line).toContain("Jewish readers");
+    expect(JSON.stringify(INDEX.threads)).not.toMatch(
+      /the Jews (killed|crucified)/i
+    );
   });
 });

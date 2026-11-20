@@ -477,6 +477,9 @@ for (const c of cards) {
   }
   if (!c.picture || !c.pictureLabel)
     fail(w, "needs a picture and what it shows");
+  // The pictures a card can show (ExplorerMap's Believe, art.tsx).
+  if (c.picture && !["book", "manger", "tomb", "table"].includes(c.picture))
+    fail(w, `picture "${c.picture}" is not one the page draws (book, manger, tomb, table)`);
   levelPair(`${w} statement`, c.statement);
   verseRule(`${w} quote`, c.quote ?? {});
   if (!Array.isArray(c.rests) || c.rests.length < 2)

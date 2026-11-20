@@ -1,0 +1,184 @@
+{
+  "slug": "why-bad-things-happen",
+  "title": "Why do bad things happen?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "why-bad-things-happen",
+  "line": {
+    "younger": "A hard and honest question, in eight pictures: what the Bible says about pain, what it does not explain, and who has the last word.",
+    "older": "Suffering is the strongest reason people give for not believing. Eight pictures on what Christians can honestly say, what they cannot, and the hope they hold."
+  },
+  "poster": "A clay bowl on a table, a crack running down its side.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "A hard question",
+      "still": "A clay bowl on a table, a crack running down its side. Above it, a storm cloud with rain.",
+      "younger": "Why do bad things happen? People get sick, storms wreck homes, and people hurt each other. It is one of the hardest questions there is, and it is right to ask it.",
+      "older": "If God is good, why is there so much suffering? It is the strongest reason people give for not believing, and it deserves an honest answer, not a slogan."
+    },
+    {
+      "id": "broken",
+      "name": "Not how it should be",
+      "still": "The bowl has broken into three pieces, which lie apart on the table.",
+      "younger": "The Bible never pretends that pain is good. When Jesus' friend Lazarus died, Jesus cried.",
+      "older": "The suffering is real, and much of it looks pointless from where we stand. Some of the answers Christians reach for first are worse than silence. Telling a grieving mother that everything happens for a reason isn't theology.",
+      "verse": {
+        "ref": "John 11:35",
+        "text": "Jesus wept."
+      }
+    },
+    {
+      "id": "not-a-punishment",
+      "name": "Not a punishment",
+      "still": "The three pieces of the bowl still lie apart on the table.",
+      "younger": "Nobody can explain why each bad thing happens. When a tower fell and killed eighteen people, Jesus said they were not worse than anyone else. When something bad happens to you, it is not God paying you back.",
+      "older": "Nobody can explain any one illness or disaster, and it is wise to be wary of anyone who says he can. Jesus refused the old reading that people who suffer must be worse than others: of the eighteen killed when the tower in Siloam fell, he said they were not.",
+      "verse": {
+        "ref": "Luke 13:4-5",
+        "text": "Or those eighteen who were killed when the tower of Siloam collapsed on them: Do you think that they were more sinful than all the others living in Jerusalem? No, I tell you."
+      }
+    },
+    {
+      "id": "allowed-to-ask",
+      "name": "Allowed to ask",
+      "still": "Night has come. A person sits beside the broken pieces under a sky full of stars.",
+      "younger": "In the Bible, people bring their sadness and their questions straight to God. Job asked God why, again and again. God never told him the reason, but he did not turn him away.",
+      "older": "In the book of Job the reader is shown a reason for Job's suffering, and Job is never told it. When God speaks, he gives no explanation, only questions about the stars and the sea. Job was not told why. But he was allowed to ask.",
+      "verse": {
+        "ref": "Job 42:5",
+        "text": "My ears had heard of You, but now my eyes have seen You."
+      }
+    },
+    {
+      "id": "god-came",
+      "name": "God came into it",
+      "still": "Beside the broken pieces, on a far hill, stands an empty cross.",
+      "younger": "Christians believe God did not stay far away from pain. Jesus, God the Son, became a man who could be hurt. He was hurt, and he died on a cross.",
+      "older": "What Christianity offers is not an explanation but an event. God didn't stay outside the suffering. The Son became a man with a body that could be hurt, and on the cross he prayed the first line of Psalm 22.",
+      "verse": {
+        "ref": "Matthew 27:46",
+        "text": "My God, My God, why have You forsaken Me?"
+      }
+    },
+    {
+      "id": "mended",
+      "name": "Not the last word",
+      "still": "The three pieces have come back together into one bowl. Each crack is filled with a line of gold, so the mending shows.",
+      "younger": "Then God raised Jesus to life. Even after he rose, his hands still had the marks of the nails. He knows what it is to be hurt.",
+      "older": "If he was raised, then suffering is real evil, and it won't win. The risen Jesus still carried the marks of the nails, and he showed them to Thomas.",
+      "verse": {
+        "ref": "John 20:27",
+        "text": "Then Jesus said to Thomas, “Put your finger here and look at My hands."
+      }
+    },
+    {
+      "id": "all-new",
+      "name": "All things new",
+      "still": "The mended bowl stands on the table in morning light, and green plants grow round it.",
+      "younger": "God promises a day when he will wipe away every tear, and there will be no more death or crying or pain.",
+      "older": "The Bible's last picture is of God himself wiping away every tear. That doesn't tell anyone why. It tells them who has the last word, and that he has carried the wound himself.",
+      "verse": {
+        "ref": "Revelation 21:4",
+        "text": "‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away."
+      }
+    },
+    {
+      "id": "not-alone",
+      "name": "Not alone",
+      "still": "Two people sit together at the table beside the mended bowl.",
+      "younger": "If something bad is happening to you, or you feel very sad, you do not have to carry it alone. Tell a parent or another grown-up you trust. You can tell God about it too.",
+      "older": "If you're in the middle of it, you don't need an argument tonight. You need someone to sit with you. Talk with a parent, a pastor or another adult you trust, or look at Find Help. Job, too, was allowed to bring it all to God."
+    }
+  ],
+  "think": {
+    "younger": "When you feel sad or hurt, who could you talk to? What would you like to tell God about it?",
+    "older": "What answers to suffering have you heard that made things worse? What difference would it make that God did not stay outside the pain?"
+  },
+  "read": [
+    {
+      "label": "Job 42",
+      "href": "/study/bible/job/42"
+    },
+    {
+      "label": "Luke 13",
+      "href": "/study/bible/luke/13"
+    },
+    {
+      "label": "John 11",
+      "href": "/study/bible/john/11"
+    },
+    {
+      "label": "Matthew 27",
+      "href": "/study/bible/matthew/27"
+    },
+    {
+      "label": "Revelation 21",
+      "href": "/study/bible/revelation/21"
+    }
+  ],
+  "stops": [
+    "fall",
+    "cross",
+    "new-creation"
+  ],
+  "cards": [
+    "life-to-come"
+  ],
+  "care": "If something hard is happening to you or to someone you love, you do not have to carry it alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "If God is good, why is there so much suffering? (an Honest Answer, with the objection at full strength)",
+      "href": "/answers/if-god-is-good-why-suffering"
+    },
+    {
+      "label": "Why does God allow earthquakes, cancer, and animal suffering?",
+      "href": "/answers/why-does-god-allow-natural-disasters"
+    },
+    {
+      "label": "Find Help: people you can talk to",
+      "href": "/help"
+    }
+  ],
+  "share": {
+    "level": "younger",
+    "frames": [
+      {
+        "id": "question",
+        "verse": false
+      },
+      {
+        "id": "broken",
+        "verse": true
+      },
+      {
+        "id": "not-a-punishment",
+        "verse": false
+      },
+      {
+        "id": "allowed-to-ask",
+        "verse": true
+      },
+      {
+        "id": "god-came",
+        "verse": true
+      },
+      {
+        "id": "mended",
+        "verse": true
+      },
+      {
+        "id": "all-new",
+        "verse": false
+      },
+      {
+        "id": "not-alone",
+        "verse": false
+      }
+    ]
+  },
+  "end": {
+    "label": "Read the Honest Answer: If God is good, why is there so much suffering?",
+    "href": "/answers/if-god-is-good-why-suffering"
+  }
+}

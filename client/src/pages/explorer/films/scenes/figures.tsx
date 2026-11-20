@@ -32,20 +32,26 @@ export function Standing({
   );
 }
 
-/** A seated figure, head and shoulders: head at (x, y). */
+/**
+ * A seated figure, head and shoulders: head at (x, y). `body` is how far the
+ * body reaches below the head (34 by default); a figure seated behind a table
+ * takes a longer one, so the table's front hides the rest.
+ */
 export function Seated({
   x,
   y,
   tone = "c",
+  body = 34,
 }: {
   x: number;
   y: number;
   tone?: Tone;
+  body?: number;
 }) {
   return (
     <g>
       <Shape
-        d={`M${x - 15},${y + 34}C${x - 15},${y + 18} ${x - 9},${y + 10} ${x},${y + 10}C${x + 9},${y + 10} ${x + 15},${y + 18} ${x + 15},${y + 34}Z`}
+        d={`M${x - 15},${y + body}C${x - 15},${y + 18} ${x - 9},${y + 10} ${x},${y + 10}C${x + 9},${y + 10} ${x + 15},${y + 18} ${x + 15},${y + body}Z`}
         tone={tone}
         off={1.5}
       />

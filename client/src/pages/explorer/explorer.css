@@ -1445,18 +1445,13 @@ h3.ex-panel__title,
 }
 .tv-name {
   font-family: var(--U);
-  font-size: calc(var(--tv-u) * 3.1px);
+  font-size: calc(var(--tv-u) * 3.1px); /* set again inline, for the placement */
   font-weight: 500;
   fill: var(--art-ink);
   paint-order: stroke;
   stroke: var(--art-paper);
   stroke-width: calc(var(--tv-u) * 0.7px);
   stroke-linejoin: round;
-}
-@media (min-width: 900px) {
-  .tv-name {
-    font-size: calc(var(--tv-u) * 2.2px);
-  }
 }
 .tv-place[data-state="ahead"] .tv-name {
   fill: var(--ink-muted);
