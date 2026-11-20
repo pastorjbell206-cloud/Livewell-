@@ -6718,3 +6718,123 @@ run (no code or book page changed).
 
 2 Corinthians is complete. Galatians was not begun: its book page (with the
 "mediterranean" map and the teaching.test.tsx line), then chapters 1 to 6.
+
+## Galatians: the book page and chapters 1 to 6; Ephesians: the book page and chapters 1 to 3 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". 2
+Corinthians was finished; Galatians is next, done as 2 Corinthians was, then
+Ephesians as far as room allowed.
+
+### The book pages
+
+**Galatians** (`/study/bible/galatians`). Data only, `teaching` appended to
+`client/public/bible/notes/galatians/intro.json`. Twelve parts: Galatians in a
+minute; Who wrote it; Who were the Galatians? North or south (no side); When it was
+written (Galatians 2 and Acts 11 or 15, the council about AD 48 to 50, late 40s or
+50s; no side); What had gone wrong in Galatia (the teachers' case in their own
+terms; a quarrel among Jewish believers in Jesus); How it is built; The big themes
+(grace and the cross as God's own act, confessed); Galatians and the Old Testament;
+‘Works of the law’ and ‘faith in Christ’: the readings (no side); Galatians in the
+church's history (Luther's commentary of 1535; Bunyan, Grace Abounding, 1666); What
+the letter is not (not against the Jewish people, with the Acts 2:22-28 pointer; not
+against the law; not licence; not contempt for other Christians; not about any
+nation; no prosperity reading); How to read Galatians. 11 hard passages, 13 key
+words, 12 timeline entries, one map on the "mediterranean" frame (Ancyra, the four
+southern towns unlabelled, Tarsus, Antioch, Damascus, Jerusalem) with a map note,
+eight Go deeper links. 4,570 words in the parts.
+
+**Ephesians** (`/study/bible/ephesians`). `teaching` appended to its intro. Eleven
+parts: in a minute; Who wrote it (both cases in their holders' terms; no side;
+received by the church as Paul's); Ephesus, and the words ‘in Ephesus’ (P46,
+Sinaiticus, Vaticanus; Marcion; no side); When and where; How it is built; The big
+themes (grace, the Trinity confessed); Ephesians and the Old Testament; ‘Chosen in
+Him’ (Reformed, Arminian and Wesleyan, corporate; no side); The household passages
+(with the Genesis 16 safety lines word for word); What the letter is not; How to
+read Ephesians. 10 hard passages, 12 key words, 8 timeline entries, one map
+(Ephesus, Laodicea, Caesarea, Rome), nine Go deeper links. About 3,120 words.
+
+**Code.** None in the app. `teaching.test.tsx`: Galatians and Ephesians added to the
+list of books with a teaching page, and one frame line each. Nothing else.
+
+### The chapters in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Galatians 1 | 4 | 3,057 |
+| Galatians 2 | 4 (Titus; the right hand of fellowship; Peter at Antioch; justified by faith) | 3,178 |
+| Galatians 3 | 6 | 3,989 |
+| Galatians 4 | 4 (sons and heirs; holy days; ‘my children’; Hagar and Sarah) | 2,928 |
+| Galatians 5 | 5 | 3,064 |
+| Galatians 6 | 4 | 2,488 |
+| **Galatians, whole book** | **27** | **18,704** |
+| Ephesians 1 | 3 | 2,099 |
+| Ephesians 2 | 2 | 1,814 |
+| Ephesians 3 | 2 | 1,121 |
+
+Each chapter note gained only `"plain": true`. One commit per chapter with its
+ledger rows. Contested matters are stated in their holders' terms with no side
+taken, pointing to the Acts 11, 15, 18, Acts 2:37-41, Romans 3, 8, 9 and 11,
+1 Corinthians 5 and 16, Genesis 16 and Mark 3 notes. Care lines: Galatians 4:1-7
+(a hard father), 5:1-6 (afraid of having fallen away; Romans 8 form), 5:16-21
+(addiction; Romans 7 form), 6:1-5 (restoring a person is not restoring trust;
+crimes reported), 6:6-10 (pressure to give; prosperity teaching an error; not
+financial advice); Ephesians 1:3-14 (afraid of not being chosen). No phone numbers.
+
+### Sources
+
+All in `bdoor-ledger.md` under the two book pages and the chapter sections. 13 web
+searches: Galatians book page 7 (Ancyra and the province; Bunyan; north and south;
+Ankara coordinates; the Israel of God; Luther; the council's date), Galatians 5: 1
+(Pessinus and the galli), Ephesians book page 2 (‘in Ephesus’; Laodicea's
+coordinates), Ephesians 2: 1 (Joint Declaration paragraph 15), plus the council
+search reused. Greek checked over the repository's text (exapesteilen at 4:4 and 4:6;
+baros and phortion; the ‘with’ verbs of Ephesians 2:5-6; the three ‘together’ words
+of 3:6; elachistoterō; patēr and patria).
+
+### Cut or narrowed
+
+Cut: Lightfoot and Ramsay by name; 278 BC; the date of Luther's table remark; the
+Jewish prayer about Gentile, slave and woman (3:28); "only here does Paul end a
+letter with ‘brothers’"; "a word Paul made up" (Ephesians 3:8); "the psalm most
+read of Christ" (Ephesians 1, narrowed to three New Testament references);
+Ignatius and Polycarp. Narrowed: enkoptō "may picture" a runner cut in on; the
+galli at 5:12 as "some readers think", with the doubt; "the present-day Jerusalem"
+as "many readers"; Bunyan quoted only in a four-word phrase.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems), validate-bible-notes,
+the search-index and passage-index checks and no-emdash, exit 0; every passage
+printed field by field under its heading. Part 1 gated before Ephesians was begun:
+all 42 content-gate commands, `pnpm check`, `pnpm test` (156 files, 1,823 tests),
+exit 0. At the end, after merging the latest branch, one at a time: all 42
+content-gate commands exit 0 (validate-bible-notes: 371 chapters in plain words;
+search index 829 entries up to date; passage index 635 files match; verify-sources
+22 texts intact); `pnpm check` exit 0; `pnpm test` exit 0 (157 files passed, 7
+skipped; 1,835 tests passed, 73 skipped); `pnpm build`, `pnpm run sitemap`,
+`pnpm run prerender` (3,080 pages), `pnpm run audit:canonicals` exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on 4603 (no other listener in
+4600 to 4699), Playwright at 390, deviceScaleFactor 1, /api/trpc, /api/track,
+/_vercel stubbed: all nine chapters' headings, part headings in order and the first
+60 characters of every field matched the data (156 fields), no sideways scroll, no
+console errors. Book pages at 390 and 1440: every part a heading, every timeline
+entry, the "mediterranean" frame, the map note, no sideways scroll, no errors.
+Looked at: `/home/user/elite-shots/bdoor/gal-*`, `gal1-390-*`, `gal4-390-*`,
+`eph-*`, `eph2-390-*`. Lighthouse (the ci.yml command form, three runs) on
+`/study/bible/galatians`: performance 91, accessibility 100, best practices 96, SEO
+100, CLS 0.000. Server stopped by PID, dist/ and lh-*.json deleted.
+
+### Not done or not verified
+
+Ephesians 4 to 6 not written (stopped at a chapter boundary for room); the book
+page's household part carries the safety lines and points to the existing chapter
+notes on 5 and 6. Lighthouse not run on the Ephesians page. Exact wording of
+Luther's remark and of Bunyan beyond the four-word phrase not read in a primary
+text. A first Lighthouse attempt began at load 6.16 and failed to launch Chrome;
+the measured run began at 5.30.
+
+### Next
+
+Ephesians 4 in plain words (4:9 ‘descended’, 4:11 gifts, 4:26 anger), then 5
+(5:21-33 with the Genesis 16 safety lines) and 6 (6:5-9; 6:10-20).

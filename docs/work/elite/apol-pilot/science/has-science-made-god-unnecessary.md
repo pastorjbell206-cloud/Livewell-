@@ -20,7 +20,7 @@ The objection doesn't need the old picture of a war. It needs only the track rec
 
 Stephen Hawking and Leonard Mlodinow pressed the argument to the edge of the cosmos in *The Grand Design* (2010), arguing that because a law like gravity exists, the universe can create itself from nothing, and that no creator is needed to set it going. Put at full strength, the objection says this: a hypothesis that explains nothing science can't explain better is idle, and an idle hypothesis should be dropped. God is that hypothesis.
 
-The argument is older than its modern advocates. Aquinas set it out himself, as the second objection to his own answer to whether God exists: everything in the world seems accountable to other principles, natural things to nature and voluntary things to human reason and will, and so, in a common English translation, "there is no need to suppose God's existence."
+The argument is older than its modern advocates. Aquinas set it out himself, as the second objection to his own answer to whether God exists: everything in the world seems accountable to other principles, natural things to nature and voluntary things to human reason and will, and so, in the English Dominican translation, "there is no need to suppose God's existence."
 
 ## What is true in it
 
@@ -64,7 +64,7 @@ Second, the reply says Christian belief makes no difference anyone could check, 
 
 ## What remains unresolved
 
-Whether the intelligibility of the world really points beyond itself is argued. Alvin Plantinga pressed a version of it in *Where the Conflict Really Lies* (2011), arguing that there is "superficial conflict but deep concord" between science and belief in God, and "superficial concord but deep conflict" between science and naturalism, the view that nature is all there is. His argument has drawn serious replies, and no one should rest everything on its strongest form. Whether a brute-fact universe is an acceptable stopping point is one of the oldest questions in philosophy, and it remains open. And how God acts in particular events in a world whose regularities he upholds is a question Christians themselves still discuss.
+Whether the intelligibility of the world really points beyond itself is argued. Alvin Plantinga pressed a version of it in *Where the Conflict Really Lies* (2011), arguing that the conflict between science and belief in God is shallow and the agreement deep, while between science and naturalism, the view that nature is all there is, the agreement is shallow and the conflict deep. His argument has drawn serious replies, and no one should rest everything on its strongest form. Whether a brute-fact universe is an acceptable stopping point is one of the oldest questions in philosophy, and it remains open. And how God acts in particular events in a world whose regularities he upholds is a question Christians themselves still discuss.
 
 ## Where Christians differ
 
