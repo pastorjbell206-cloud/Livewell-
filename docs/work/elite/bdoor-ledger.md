@@ -9062,3 +9062,27 @@ No searches. Scripture is the BSB in the repository, matched by the strict check
 | Genesis 16:2; 21:9-10; Psalm 87:5; Isaiah 2:3; Romans 11:1; 7:12 | 21-31 | BSB | BSB text |
 | Hagar not judged; Ishmael honoured by Muslims; pointer to the Genesis 16:13-16 note | 21-31 | genesis/plain/16.json | Repository |
 | Contempt for Jews rejected; pointer to the Acts 2:22-28 note | 21-31 | acts/plain/2.json | Repository wording |
+
+## The plain notes on Galatians 5 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Yoke a picture of servitude; Jewish writers spoke well of the yoke of the law; Matthew 11:29-30; Acts 15:10 | 1-6 | Deep note `cultural`; BSB | Repository |
+| Timothy circumcised (Acts 16:3); circumcision in itself nothing (5:6; 6:15) | 1-6 | BSB | BSB text |
+| 5:4 readings (Reformed and Baptist; Wesleyan, Arminian, Catholic); falling into law; Paul still says ‘brothers’ and is confident (5:10); pointers to the Romans 8:31-39 note and the Honest Answer ‘Can you lose your salvation?’; care line in the Romans 8 form | 1-6 | Deep note `hard`; romans/plain/8.json; client/src/data/answers.ts | Repository wording. No side |
+| Deuteronomy 30:6; Jeremiah 4:4 | 1-6 | BSB | BSB text |
+| Enkoptō "may picture" cutting in on a runner | 7-12 | Standard lexicons | Narrowed to "may" |
+| Leaven kept from the last batch; removed at Passover (Exodus 12:15); 1 Corinthians 5:6-8 | 7-12 | Deep note `cultural`; BSB | Repository |
+| Rumour that Paul preached circumcision; 1 Corinthians 9:20; Acts 16:3 | 7-12 | Deep note `historical` | Repository |
+| Cybele's chief shrine at Pessinus in Galatia; her priests (galli) castrated themselves; some read 5:12 as alluding to them, others doubt it | 7-12 | Deep note `historical`; reference works | Search: en.wikipedia.org "Galli" (Pessinus, self-castration); human.libretexts.org "Magna Mater and the Galli"; corpus-paul list archive (the debate on 5:12). Stated as "some readers think", the doubt stated |
+| Deuteronomy 23:1; Isaiah 56:3-5; Acts 8:38 | 7-12 | BSB | BSB text |
+| Aphormē a base of operations; douleuō to serve as a slave | 13-15 | Standard lexicons | Standard |
+| Leviticus 19:18; Mark 12:31; Micah 6:8 | 13-15 | BSB | BSB text |
+| Flesh not the body as bad | 16-21 | Deep note `words`; standard | Repository |
+| Fifteen acts; eight of them sins of community life; pharmakeia drugs and spells; ancient vice and virtue lists | 16-21 | Deep note `cultural`, `literary`; count of 5:19-21 | BSB text counted |
+| 1 Corinthians 6:11; care line in the Romans 7:14-25 form (doctor, pastor, counsellor, a group, Find Help) | 16-21 | BSB; romans/plain/7.json | Repository wording, no phone number |
+| Ezekiel 36:27; Jeremiah 31:33; Genesis 4:7 | 16-21 | BSB | BSB text |
+| Fruit singular, one harvest; stoicheō keeping in line | 22-26 | Deep note `literary`; standard lexicons | Repository |
+| Psalm 1:3; Isaiah 32:15, 17; Exodus 34:6 | 22-26 | BSB | BSB text |
