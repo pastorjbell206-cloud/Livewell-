@@ -1326,7 +1326,19 @@
       "slug": "the-king",
       "title": "The king",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God's people waited a long time for a good king. Seven pictures follow one crown, from a shepherd boy to a cross to a throne that lasts for ever.",
+        "older": "The king through the whole Bible in seven pictures: God's rule, the shepherd king, the promise to David, the empty throne, the son of David, the King on a cross, and the kingdom."
+      },
+      "mark": "the-king",
+      "frames": 7,
+      "stops": [
+        "kingdom",
+        "exile",
+        "jesus"
+      ],
+      "cards": []
     },
     {
       "slug": "covenant",
@@ -1462,7 +1474,20 @@
       "slug": "the-resurrection",
       "title": "The resurrection",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "What Christians believe happened on the third day, and why it matters, in seven pictures: a tomb, a breakfast, a stone split in two and the first sheaf of a harvest.",
+        "older": "What the resurrection is and what it means, in seven pictures: buried, raised on the third day in his body, never to die again, and the firstfruits of the harvest still to come."
+      },
+      "mark": "the-resurrection",
+      "frames": 7,
+      "stops": [
+        "cross",
+        "new-creation"
+      ],
+      "cards": [
+        "resurrection"
+      ]
     },
     {
       "slug": "how-salvation-works",
@@ -1559,9 +1584,23 @@
     },
     {
       "slug": "the-bible",
-      "title": "The Bible: how we got it, and why trust it",
+      "title": "The Bible: how we got it",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "How the Bible came to us, in seven pictures: many writers, words spoken and written down, scrolls and ink, copies made by hand, a new kind of book, and every language.",
+        "older": "How the Bible reached us, in seven pictures: many writers over many centuries, dictation and scrolls, copying by hand, the codex, the books received as Scripture, and translation."
+      },
+      "mark": "the-bible",
+      "frames": 7,
+      "stops": [
+        "sinai",
+        "return",
+        "church"
+      ],
+      "cards": [
+        "bible"
+      ]
     },
     {
       "slug": "prayer",
@@ -1737,7 +1776,20 @@
       "slug": "love-when-i-do-wrong",
       "title": "Does God still love me when I do wrong?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Everyone does wrong sometimes. Does God stop loving us then? Jesus answered with a story about a son who ran away and a father who ran too.",
+        "older": "An honest question answered with Jesus' own story of the lost son, in seven pictures, as the Study Bible's notes on Luke 15 read it: grace that runs ahead, and wrong that still matters."
+      },
+      "mark": "love-when-i-do-wrong",
+      "frames": 7,
+      "stops": [
+        "fall",
+        "cross"
+      ],
+      "cards": [
+        "sin"
+      ]
     },
     {
       "slug": "god-silent",

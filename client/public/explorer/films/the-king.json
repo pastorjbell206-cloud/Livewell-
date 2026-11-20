@@ -1,0 +1,124 @@
+{
+  "slug": "the-king",
+  "title": "The king",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "the-king",
+  "line": {
+    "younger": "God's people waited a long time for a good king. Seven pictures follow one crown, from a shepherd boy to a cross to a throne that lasts for ever.",
+    "older": "The king through the whole Bible in seven pictures: God's rule, the shepherd king, the promise to David, the empty throne, the son of David, the King on a cross, and the kingdom."
+  },
+  "poster": "Hills under a wide sky, and high in the light above them a small gold crown that no one wears.",
+  "frames": [
+    {
+      "id": "god-king",
+      "name": "God is King",
+      "still": "Hills and fields under a wide sky, and high in the light above them a small gold crown that no one wears.",
+      "younger": "Before there was ever a king in Israel, God was King. He made the world and rules over all of it, and he made people to look after his world under him.",
+      "older": "The Bible begins with God's rule: he made people in his image to rule over his world under him, caring for it as he would. In one sense God has always been king. The story is about that rule being refused, and then reclaimed.",
+      "verse": {
+        "ref": "Psalm 103:19",
+        "text": "The LORD has established His throne in heaven, and His kingdom rules over all."
+      }
+    },
+    {
+      "id": "shepherd",
+      "name": "A shepherd king",
+      "still": "Sheep graze on a hillside, a shepherd's staff stands in the grass, and the gold crown comes down to rest on its crook.",
+      "younger": "God's people asked for a king like the other nations had. After King Saul, God chose David, the youngest son, who was out looking after the sheep. God wanted a king who would care for his people like a shepherd.",
+      "older": "Israel asked for a king “like all the other nations,” and God told Samuel that they had rejected him as their king; still he gave them one. After Saul, God passed over the older sons of Jesse and chose the youngest, David, from the sheepfolds. A king in Israel was meant to rule under God, not in his place.",
+      "verse": {
+        "ref": "Psalm 78:70-71",
+        "text": "He chose David His servant and took him from the sheepfolds; from tending the ewes He brought him to be shepherd of His people Jacob, of Israel His inheritance."
+      }
+    },
+    {
+      "id": "promise",
+      "name": "A promise for ever",
+      "still": "A throne stands on the hill of Jerusalem with the crown above it, and from the throne a line of small marks runs on across the picture and off its edge.",
+      "younger": "God made David a great promise. A king from David's family would rule for ever, and his kingdom would never end.",
+      "older": "David wanted to build God a house. Instead God promised to build David a house, a family line, and to establish the throne of his descendant's kingdom for ever. The rest of the Old Testament plants promises along Israel's story, and they gather force as the story goes wrong.",
+      "verse": {
+        "ref": "2 Samuel 7:16",
+        "text": "Your house and kingdom will endure forever before Me, and your throne will be established forever."
+      }
+    },
+    {
+      "id": "empty",
+      "name": "The empty throne",
+      "still": "The city wall lies broken, the throne stands empty, and the crown lies on the ground; beside them a cut stump has one green shoot.",
+      "younger": "Many of the kings after David turned away from God and led the people to worship idols. At last the army of Babylon broke down Jerusalem's walls, and no king sat on David's throne. But the prophets promised a new king from David's family, like a green shoot from a tree that has been cut down.",
+      "older": "Many of David's sons led the people away from God, and the prophets' warnings went unheard. When Babylon took Jerusalem, David's throne was lost, and even after the people came home no son of David sat on it. Yet in the dark the prophets spoke of a king to come: “a shoot will spring up from the stump of Jesse.”",
+      "verse": {
+        "ref": "Isaiah 9:7",
+        "text": "He will reign on the throne of David and over his kingdom, to establish and sustain it with justice and righteousness from that time and forevermore."
+      }
+    },
+    {
+      "id": "son-of-david",
+      "name": "The son of David",
+      "still": "A road leads up to the city gate, and along it a crowd waves branches as one rider comes in on a donkey.",
+      "younger": "Then Jesus was born into David's family. An angel said that God would give him the throne of David, and that his kingdom would never end. When Jesus rode into Jerusalem on a donkey, the crowds shouted, “Hosanna to the Son of David!”",
+      "older": "Luke tells of the angel's message to Mary: God would give her son the throne of his father David. Jesus announced that the kingdom of God was near, and he came into Jerusalem humble and riding on a donkey, as Zechariah had pictured the coming king, while the crowds shouted, “Hosanna to the Son of David!”",
+      "verse": {
+        "ref": "Luke 1:32-33",
+        "text": "The Lord God will give Him the throne of His father David, and He will reign over the house of Jacob forever. His kingdom will never end!"
+      }
+    },
+    {
+      "id": "cross",
+      "name": "A king on a cross",
+      "still": "An empty cross on a hill at dusk, a board fixed at its top, and a ring of thorns lying at its foot.",
+      "younger": "But Jesus was not the kind of king people expected. Soldiers made fun of him with a crown of thorns, and the sign on his cross said “THE KING OF THE JEWS.” He came to serve and to give his life for others, and on the third day God raised him.",
+      "older": "The soldiers crowned Jesus with thorns, and the charge over the cross read “THE KING OF THE JEWS.” He had told his friends that he came not to be served but to serve, and to give his life as a ransom for many. This king reigns by serving. On the third day God raised him.",
+      "verse": {
+        "ref": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      }
+    },
+    {
+      "id": "kingdom",
+      "name": "The kingdom",
+      "still": "A city on a hill with its gate standing open and light pouring out of it, the gold crown high above the gate, and people walking toward it along the roads.",
+      "younger": "God raised Jesus and gave him the highest place. His kingdom is not a country with borders and soldiers. It is God's good rule, and it grows wherever people follow Jesus. One day it will come in full, and his people will live with him for ever.",
+      "older": "Jesus told Pilate, “My kingdom is not of this world.” His kingdom is not a territory or a party but God's own rule, begun in him, present wherever it is received, and complete only when he returns. That is why Christians pray, “Your kingdom come.” The Bible's last pages show the throne of God and of the Lamb within the city.",
+      "verse": {
+        "ref": "Revelation 22:3",
+        "text": "The throne of God and of the Lamb will be within the city, and His servants will worship Him."
+      }
+    }
+  ],
+  "think": {
+    "younger": "What makes a good king? How is Jesus different from the kings in the story?",
+    "older": "Jesus said his kingdom is not of this world. What goes wrong when people try to make God's kingdom into a country or a party?"
+  },
+  "read": [
+    { "label": "1 Samuel 8", "href": "/study/bible/1-samuel/8" },
+    { "label": "1 Samuel 16", "href": "/study/bible/1-samuel/16" },
+    { "label": "2 Samuel 7", "href": "/study/bible/2-samuel/7" },
+    { "label": "Isaiah 9", "href": "/study/bible/isaiah/9" },
+    { "label": "Isaiah 11", "href": "/study/bible/isaiah/11" },
+    { "label": "Luke 1", "href": "/study/bible/luke/1" },
+    { "label": "Matthew 21", "href": "/study/bible/matthew/21" },
+    { "label": "Mark 15", "href": "/study/bible/mark/15" },
+    { "label": "John 18", "href": "/study/bible/john/18" },
+    { "label": "Matthew 6", "href": "/study/bible/matthew/6" },
+    { "label": "Revelation 22", "href": "/study/bible/revelation/22" }
+  ],
+  "stops": ["kingdom", "exile", "jesus"],
+  "cards": [],
+  "differ": {
+    "text": "Christians all pray for God's kingdom to come, and confess that Christ will come again and that his kingdom will have no end. They differ on how the kingdom and the church are related now, and on how its coming in full will unfold. This moving picture does not choose between them. The views are set out in",
+    "links": [
+      { "label": "the Study Bible's study of the kingdom of God", "href": "/study/bible/doctrines/kingdom" }
+    ]
+  },
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "The kingdom of God: what the Bible teaches, and where Christians differ", "href": "/study/bible/doctrines/kingdom" },
+    { "label": "The Messiah: the promised king", "href": "/study/bible/doctrines/messiah" },
+    { "label": "Follow the king thread through every stop on the map", "href": "/study/explorer?thread=king" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "god-king", "verse": true}, {"id": "shepherd", "verse": false}, {"id": "promise", "verse": true}, {"id": "empty", "text": "At last the army of Babylon broke down Jerusalem's walls, and no king sat on David's throne. But the prophets promised a new king from David's family, like a green shoot from a tree that has been cut down.", "verse": false}, {"id": "son-of-david", "verse": false}, {"id": "cross", "text": "Soldiers made fun of him with a crown of thorns, and the sign on his cross said “THE KING OF THE JEWS.” He came to serve and to give his life for others, and on the third day God raised him.", "verse": false}, {"id": "kingdom", "text": "God raised Jesus and gave him the highest place. His kingdom is not a country with borders and soldiers. It is God's good rule, and it grows wherever people follow Jesus.", "verse": true}]},
+  "end": { "label": "Go to the stop: The Kingdom", "href": "/study/explorer/kingdom" }
+}
