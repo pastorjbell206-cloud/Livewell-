@@ -1521,10 +1521,10 @@
   },
   "numbness": {
    "phrases": [
-    "feel nothing",
+    "feel nothing inside",
     "cant feel anything",
     "dont feel anything",
-    "feel empty",
+    "empty inside",
     "numb",
     "numb inside",
     "feel dead inside",
@@ -2326,11 +2326,11 @@
    "phrases": [
     "mentally exhausted",
     "brain fog",
-    "cant think",
+    "cant think straight",
     "mind is fried",
     "running on empty",
     "cant concentrate",
-    "too tired to think",
+    "too tired to focus",
     "worn out",
     "drained all the time",
     "exhausted all the time",
@@ -3282,6 +3282,26 @@
     "trusting-god",
     "overthinking",
     "fear-of-the-future"
+   ]
+  },
+  "sensitivity": {
+   "phrases": [
+    "too sensitive",
+    "cry easily",
+    "overwhelmed by noise",
+    "take things personally",
+    "highly sensitive",
+    "too emotional",
+    "hurt easily",
+    "cant handle criticism",
+    "my emotions overwhelm me",
+    "sensitive person"
+   ],
+   "not": [],
+   "related": [
+    "anxiety",
+    "kindness",
+    "loneliness"
    ]
   }
  }
