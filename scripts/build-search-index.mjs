@@ -40,6 +40,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { devotionsIn } from "./lib/family-devotion-file.mjs";
 import { STRANDS } from "./lib/family-index.mjs";
+import { loadQuestions } from "./lib/questions.mjs";
 
 import { ANSWERS } from "../client/src/data/answers.ts";
 
@@ -89,6 +90,18 @@ function answers() {
     keywords: `${str(a.essayTitle)} ${str(a.essaySlug).replace(/-/g, " ")} ${str(a.askedAs)}`.trim(),
     href: `/answers/${a.slug}`,
   }));
+}
+
+/** The questions library's live pieces (scripts/lib/questions.mjs); a pending piece is never searched. */
+function questions() {
+  return loadQuestions(ROOT).areas.flatMap((a) =>
+    a.pieces.filter((p) => p.live).map((p) => ({
+      title: str(p.question),
+      blurb: clip(p.shortAnswer),
+      keywords: `${str(a.title)} ${(p.claims || []).map((c) => str(c.claim)).join(" ")}`.trim(),
+      href: `/questions/${a.slug}/${p.slug}`,
+    }))
+  );
 }
 
 /**
@@ -338,6 +351,8 @@ export function buildSearchIndex() {
     sources: [
       source("Main Pages", "/", [...mainPages(), ...worlds()]),
       source("Honest Answers", "/answers", answers()),
+      // Only once a piece is live, so a pending library leaves the index as it was.
+      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),
       source("Doctrine", "/study/bible/doctrines", doctrines()),
