@@ -8219,24 +8219,44 @@
       "application": "Get the loop out of your head and onto the table, in prayer or with a trusted friend, since thoughts circle worst in the dark. Decide what is actually yours to act on today and release the rest, which is most of it, to God. Set the mind deliberately on what is true rather than what is feared, and break the spiral with the body, a walk, work, the company of others. And if the thoughts become intrusive and will not stop, a counselor can help you learn the tools to quiet them.",
       "verses": [
         {
+          "ref": "Psalm 77:6-9",
+          "text": "At night I remembered my song; in my heart I mused, and my spirit pondered: “Will the Lord spurn us forever and never show His favor again? Is His loving devotion gone forever? Has His promise failed for all time? Has God forgotten to be gracious? Has His anger shut off His compassion?” Selah"
+        },
+        {
+          "ref": "Psalm 77:11-12",
+          "text": "I will remember the works of the LORD; yes, I will remember Your wonders of old. I will reflect on all You have done and ponder Your mighty deeds."
+        },
+        {
+          "ref": "Psalm 139:1-4",
+          "text": "O LORD, You have searched me and known me. You know when I sit and when I rise; You understand my thoughts from afar. You search out my path and my lying down; You are aware of all my ways. Even before a word is on my tongue, You know all about it, O LORD."
+        },
+        {
           "ref": "Philippians 4:8",
           "text": "Finally, brothers, whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think on these things."
+        },
+        {
+          "ref": "Psalm 63:6-7",
+          "text": "When I remember You on my bed, I think of You through the watches of the night. For You are my help; I will sing for joy in the shadow of Your wings."
+        },
+        {
+          "ref": "Proverbs 3:5-6",
+          "text": "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He will make your paths straight."
         },
         {
           "ref": "Isaiah 26:3",
           "text": "You will keep in perfect peace the steadfast of mind, because he trusts in You."
         },
         {
-          "ref": "2 Corinthians 10:5",
-          "text": "We tear down arguments and every presumption set up against the knowledge of God; and we take captive every thought to make it obedient to Christ."
+          "ref": "James 1:5",
+          "text": "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him."
         },
         {
-          "ref": "Matthew 6:34",
-          "text": "Therefore do not worry about tomorrow, for tomorrow will worry about itself. Today has enough trouble of its own."
+          "ref": "Ecclesiastes 7:14",
+          "text": "In the day of prosperity, be joyful, but in the day of adversity, consider this: God has made one of these along with the other, so that a man cannot discover anything that will come after him."
         },
         {
-          "ref": "Psalm 139:23",
-          "text": "Search me, O God, and know my heart; test me and know my concerns."
+          "ref": "Mark 4:26-27",
+          "text": "Jesus also said, “The kingdom of God is like a man who scatters seed on the ground. Night and day he sleeps and wakes, and the seed sprouts and grows, though he knows not how."
         }
       ],
       "related": [

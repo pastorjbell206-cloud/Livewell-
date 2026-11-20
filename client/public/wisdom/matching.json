@@ -1868,12 +1868,26 @@
     "cant sleep",
     "lie awake",
     "overthink",
-    "spiral"
+    "spiral",
+    "replay conversations",
+    "keep replaying",
+    "cant turn my brain off",
+    "thoughts wont stop",
+    "obsessing over everything",
+    "over analyze everything",
+    "second guess everything",
+    "same thoughts over and over",
+    "intrusive thoughts",
+    "brain wont shut off",
+    "mind wont shut off",
+    "second guess"
    ],
    "not": [],
    "related": [
     "anxiety",
-    "peace"
+    "peace",
+    "need-for-control",
+    "indecision"
    ]
   },
   "procrastination-and-laziness": {
