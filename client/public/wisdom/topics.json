@@ -3134,24 +3134,44 @@
       "application": "Let your doctors and a hospice team care for your body and ease your pain, for this is mercy, not surrender. Tell your family the things that must be said, set your affairs in order, and let your pastor and church walk these days with you, praying, visiting, carrying communion to your room. Grieve what you are losing, and hold, underneath the grief, the promise that the One who conquered the grave goes before you into it.",
       "verses": [
         {
+          "ref": "Isaiah 38:1-3",
+          "text": "In those days Hezekiah became mortally ill. The prophet Isaiah son of Amoz came to him and said, “This is what the LORD says: ‘Put your house in order, for you are about to die; you will not recover.’” Then Hezekiah turned his face to the wall and prayed to the LORD, saying, “Please, O LORD, remember how I have walked before You faithfully and with wholehearted devotion; I have done what was good in Your sight.” And Hezekiah wept bitterly."
+        },
+        {
+          "ref": "Mark 14:35-36",
+          "text": "Going a little farther, He fell to the ground and prayed that, if it were possible, the hour would pass from Him. “Abba, Father,” He said, “all things are possible for You. Take this cup from Me. Yet not what I will, but what You will.”"
+        },
+        {
+          "ref": "Psalm 39:4-5",
+          "text": "“Show me, O LORD, my end and the measure of my days. Let me know how fleeting my life is. You, indeed, have made my days as handbreadths, and my lifetime as nothing before You. Truly each man at his best exists as but a breath. Selah"
+        },
+        {
           "ref": "Psalm 90:12",
           "text": "So teach us to number our days, that we may present a heart of wisdom."
         },
         {
-          "ref": "Psalm 23:4",
-          "text": "Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me; Your rod and Your staff, they comfort me."
+          "ref": "Psalm 31:15",
+          "text": "My times are in Your hands; deliver me from my enemies and from those who pursue me."
+        },
+        {
+          "ref": "Philippians 1:21-23",
+          "text": "For to me, to live is Christ, and to die is gain. But if I go on living in the body, this will mean fruitful labor for me. So what shall I choose? I do not know. I am torn between the two. I desire to depart and be with Christ, which is far better indeed."
+        },
+        {
+          "ref": "2 Timothy 4:6-8",
+          "text": "For I am already being poured out like a drink offering, and the time of my departure is at hand. I have fought the good fight, I have finished the race, I have kept the faith. From now on there is laid up for me the crown of righteousness, which the Lord, the righteous Judge, will award to me on that day—and not only to me, but to all who crave His appearing."
+        },
+        {
+          "ref": "John 14:1-3",
+          "text": "“Do not let your hearts be troubled. You believe in God; believe in Me as well. In My Father’s house are many rooms. If it were not so, would I have told you that I am going there to prepare a place for you? And if I go and prepare a place for you, I will come back and welcome you into My presence, so that you also may be where I am."
+        },
+        {
+          "ref": "John 11:25-26",
+          "text": "Jesus said to her, “I am the resurrection and the life. Whoever believes in Me will live, even though he dies. And everyone who lives and believes in Me will never die. Do you believe this?”"
         },
         {
           "ref": "1 Corinthians 15:26",
           "text": "The last enemy to be destroyed is death."
-        },
-        {
-          "ref": "Philippians 1:21",
-          "text": "For to me, to live is Christ, and to die is gain."
-        },
-        {
-          "ref": "John 11:25",
-          "text": "Jesus said to her, “I am the resurrection and the life. Whoever believes in Me will live, even though he dies."
         }
       ],
       "related": [
