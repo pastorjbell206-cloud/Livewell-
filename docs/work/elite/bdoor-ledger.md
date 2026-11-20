@@ -11394,3 +11394,32 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 Cut before publishing: a reading of verse 17 as simply the apostles' teaching (not in the repository's notes).
 
 ## Jude complete (2026-11-20)
+
+## Revelation: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Apokalupsis, its first word; the course of the visions; real churches under pressure; read in many ways and used to set dates that passed | In a minute | revelation/intro.json `overview` | Repository; reading time an estimate |
+| No scheme, no date, no identification of any modern nation, leader, church or event | In a minute; Four ways; What it is not | Instruction for this run | Stated, no claim |
+| John named four times; servant, brother, prophet; not an apostle by claim; Justin, Irenaeus; Dionysius of Alexandria; John the seer; defenders; links with the Gospel | Who wrote it; timeline | revelation/intro.json `author`; bible/guides/reading-apocalyptic.json (setting and date) | Repository, no side |
+| Muratorian list includes Revelation; doubted in parts of the Greek East; Eusebius undecided; the Peshitta lacks it; not read in the Orthodox liturgy | Who wrote it; timeline | bible/guides/canon.json (sections 4, 5); bible/doctrines/canon.json `history` | Repository |
+| Domitian 81 to 96, about 95, Irenaeus about 180; 2:4; the late-60s case (chapter 11, 17:9-11, 666 as ‘Nero Caesar’ in Hebrew) | When; timeline | revelation/intro.json `date` | Repository, no side |
+| Seven cities in a loop from the coast; imperial cult; guild banquets; local pressures; Antipas | When | revelation/intro.json `setting`; revelation/1.json `cultural` | Repository |
+| Apocalypse, prophecy, letter; the genre's span (250 BC to AD 250); Daniel 7 to 12; several hundred allusions; numbers as qualities; hear-and-see; sealed and unsealed (Daniel 12:4; 22:10) | What kind of book | revelation/intro.json `reading`; bible/guides/reading-apocalyptic.json | Repository |
+| The structure; series of sevens successive or recapitulating | How it is built | revelation/intro.json `structure`; bible/guides/reading-apocalyptic.json | Repository |
+| Preterist (partial and full; Latin ‘past’); historicist (dominant Protestant reading to the 1800s, still held); futurist (Justin, Irenaeus; Darby; Ladd); idealist (Tyconius, Augustine); combined readings | Four ways | bible/guides/reading-apocalyptic.json (Four ways of reading Revelation); revelation/intro.json `reading` | Repository, no side |
+| Identifications of beasts and horns with rulers of each generation have come and gone | Four ways | bible/guides/reading-apocalyptic.json (Reading Daniel and Revelation well) | Repository |
+| Amillennial, postmillennial, historic premillennial, dispensational premillennial, each as its holders put it; second-order; Matthew 12:29; 13:31-33 | The thousand years | bible/doctrines/return.json `differ`; bible/guides/reading-apocalyptic.json (The thousand years) | Repository, no side |
+| Nicene Creed: ‘shall come again, with glory, to judge both the quick and the dead’ | The thousand years | creeds/documents/nicene-creed.json | Repository, exact phrase |
+| The Lion and the Lamb; titles; worship; the conflict over worship | The Lamb | revelation/intro.json `christ`, `themes` | Repository; BSB |
+| The pattern of the seven messages; Smyrna and Philadelphia unrebuked; Nicolaitans unknown; Jezebel from Kings; 3:10 and the rapture | The seven churches | revelation/2.json, 3.json `literary`, `cultural`, `hard`; revelation/3.json `story` | Repository |
+| Martus and martyr; 2:9-10; 2:13; 6:10; 21:4 | Suffering | revelation/1.json `words` (G3144); revelation/intro.json `themes` | Repository; BSB |
+| Care line ‘Not every hardship comes from following Jesus ...’ | Suffering | acts/plain/14.json (21-28 `hard`) | Word for word |
+| Judgment pictures from the plagues and prophets; the sword from his mouth (1:16; 19:15); new creation; the tree of life | Judgment | revelation/intro.json `story`, `themes`; bible/guides/reading-apocalyptic.json | Repository; BSB |
+| Daniel 7:13; Isaiah 6:3; Exodus 19:6; Zechariah 12:10; Isaiah 65:17; Isaiah 25:8; Daniel 2:44; Matthew 24:36 | Old Testament; Four ways | BSB | BSB text |
+| Timeline: 29 BC Pergamum's temple; AD 17 earthquake (Sardis, Philadelphia); about 60 Laodicea; 64; 70; Domitian; Polycarp at Smyrna mid-second century | Timeline | revelation/2.json, 3.json `historical`; revelation/intro.json `date` | Repository |
+| Map: Ephesus and Laodicea only, at the points used on the Pauline maps; the other five cities and Patmos described in words, not drawn | Map | ephesians/intro.json `teaching.map`; revelation/2.json, 3.json `historical`; revelation/1.json `historical` | Repository; no new points |
+
+Cut before publishing: ‘widely read in the West from early on’; ‘echoes ... in nearly every verse’ (now ‘several hundred allusions’, the guide's figure); ‘most who hold it today are partial preterists’; a paragraph naming the question each reading faces (the guide gives no such question for the preterist reading, so all four were cut to keep the readings even).
