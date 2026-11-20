@@ -1,0 +1,82 @@
+---
+area: old-testament
+slug: did-the-exodus-happen
+status: pending (not on the site; for James to read first)
+question: "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?"
+ledger: docs/work/elite/apol-ledger.md, "Sixteenth run", key "ad"
+---
+
+# No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?
+
+## The short answer
+
+The silence is real, and it shouldn't be explained away. No Egyptian text mentions Israel's slavery, the plagues or the departure, and no camp of a great multitude has been found in Sinai. But silence of that kind is what historians would expect even if a people of herders left Egypt, since Egypt's surviving records seldom note foreign laborers who left and nomads leave little that lasts. What the evidence does show fits the story's setting: Semitic peoples living and working in the eastern Nile Delta, a royal city named Rameses, Egyptian names in Moses' own family, and a people called Israel already in Canaan by about 1208 BC. The date, the route and above all the numbers are argued, among Christians as among others. An exodus from Egypt remains a reasonable historical conclusion. It can't be proved by archaeology, and archaeology hasn't disproved it.
+
+## The objection at its strongest
+
+The objection's most influential modern statement is *The Bible Unearthed* (2001), by the archaeologist Israel Finkelstein and the historian Neil Asher Silberman. They set the story beside the evidence and found the evidence missing at every point where it ought to be.
+
+The numbers come first. Exodus says that "The Israelites journeyed from Rameses to Succoth with about 600,000 men on foot, besides women and children" (Exodus 12:37, BSB), and the census in Numbers totals the fighting men at "603,550" (Numbers 1:46, BSB). With women, children and the old, that is a nation of two million or more, larger than the whole population of Canaan in the period. A company that size, wandering for forty years, would have left something behind: pottery, hearths, graves. Finkelstein and Silberman reported that the Sinai has yielded nothing that fits a great encampment in the Late Bronze Age, when the exodus is usually placed. Egypt, a state that recorded much, says nothing of the plagues, the death of its firstborn or the loss of its army. And when villages of the people who would become Israel appear in the central hill country after about 1200 BC, their houses, pottery and way of life look like those of the Canaanites around them, not like a people newly arrived from Egypt. And the settlers were few, in small villages.
+
+So, they argued, the exodus is best understood as a later national epic: the story took its shape centuries after the events it describes, its details drawn from the world in which it was written rather than the world it describes. Put at full strength, the objection says that the exodus is a story about Israel's identity, told well and believed sincerely, but not an event a historian can place in time.
+
+## What is true in it
+
+A great deal. The story as told can't be confirmed by any direct evidence from Egypt or Sinai, and there is no use pretending it can. The large numbers are a real difficulty, not an invention of critics: two million people on the road would have been an exodus out of all proportion to the land they entered, and the hill-country villages of the following centuries were small. The early Israelite villages do share much of their material culture with Canaan. And the Study Bible's own note on Exodus 12 records plainly that no Egyptian text mentions the death of the firstborn or Israel's departure.
+
+Christians have sometimes made this worse by claiming too much. Chariot wheels said to lie on the floor of the Red Sea, or a pharaoh of the exodus named with confidence: claims of this kind circulate widely, and they don't survive scrutiny. A reader who has been handed them as proof has been given something to lose. Whatever case there is for the exodus has to be made from the evidence that holds.
+
+## The evidence
+
+Begin with what the silence means. The absence of something from the record counts as evidence against it only when the record is the kind that would have kept it. The Egyptologist James Hoffmeier argued in *Israel in Egypt* (1997) that the Egyptian background of the story is genuine and early, and that Egypt's royal records rarely record defeats; a humiliation of Egypt is the last thing its monuments would preserve. The Study Bible's introduction to Exodus notes that defenders of the story's history count the silence unsurprising for that reason. Nomads, for their part, live in tents and leave little that a survey can find. None of that proves the story. It does mean that the silence weighs less than it first seems.
+
+Then the setting. Semitic peoples from Canaan are well attested in the eastern Delta through the second millennium BC, and a line of foreign rulers, the Hyksos, governed northern Egypt for about a century before they were driven out around 1550 BC. Exodus says the Israelites built "Pithom and Rameses as store cities for Pharaoh" (Exodus 1:11, BSB). Rameses is usually identified with Pi-Ramesse, the great residence of Ramesses II, who reigned about 1279 to 1213 BC, near modern Qantir, though those who date the exodus earlier take the name as a later updating. A painting in the tomb of the vizier Rekhmire, from the fifteenth century BC, shows laborers, some of them foreigners, making bricks under overseers. An Egyptian letter of the late thirteenth century, Papyrus Anastasi VI, records a frontier official letting herdsmen from Edom pass a border fort into the Delta, to the pools of Pithom, to keep themselves and their flocks alive. The Study Bible's notes on Exodus 1, 12 and 13 set these out. They don't prove an exodus. They show that the story's picture of Semites coming and going across Egypt's eastern border, and doing forced labor in its building projects, fits what is known.
+
+The names point the same way. Moses is most likely an Egyptian name, from the word for "born" or "son" found in royal names such as Thutmose and Ramesses, and Phinehas, Aaron's grandson, is an Egyptian name meaning "the Nubian." These names cluster in the family of Levi, the tribe of priests. Some scholars, as the Study Bible's introduction to Exodus records, think the escape of a smaller group grew into the story of the whole nation, and the Egyptian names in Levi's family are one reason they give. One need not accept that reconstruction to see the point: a writer inventing the story centuries later in Judah would have had no reason to give its heroes Egyptian names.
+
+Then Israel itself. Late in the thirteenth century BC, about 1208, Pharaoh Merneptah set up a victory inscription that, near its close, lists his conquests in Canaan: "Israel is desolated, her seed is not" (in the translation printed by the *Catholic Encyclopedia* of 1909). The sign written with the name marks a people rather than a city, so by the late thirteenth century a group called Israel was already in Canaan, settled enough for a pharaoh to claim he had crushed it. That fits a thirteenth-century exodus or an earlier one, and it sets a limit on how late the story's origins can be put.
+
+Finally the numbers, where Christians themselves have offered different readings. Some take the 600,000 as written, pointing out that Exodus and Numbers agree. Others note that the Hebrew word *elef*, "thousand," can also name a clan or a military unit, as in Gideon's "my clan is the weakest in Manasseh" (Judges 6:15, where the word is the same); Flinders Petrie, George Mendenhall (*Journal of Biblical Literature*, 1958) and Colin Humphreys (*Vetus Testamentum*, 1998) worked out versions of that reading, which would make the company far smaller. Each reading has its difficulty: the first has to explain the archaeology of Canaan, the second has to explain why the census totals add up as thousands. The date is argued in the same way. Counting back from 1 Kings 6:1, which places the exodus 480 years before the fourth year of Solomon, gives about 1446 BC; the name Rameses and the pattern of new villages in the hill country point many to the thirteenth century, reading the 480 years as a round figure for twelve generations.
+
+## The argument, laid out
+
+This is an inference to the best explanation, about what the evidence permits and what it suggests.
+
+1. The absence of Egyptian records of the exodus and of remains of a great encampment in Sinai is what one would expect, given the nature of Egypt's surviving records and of nomadic life, even if a group of Israel's ancestors did leave Egypt; so the silence counts against the story's numbers more than against the event.
+2. The positive evidence fits an origin in Egypt: the story's setting matches the eastern Delta of the second millennium, its central family bears Egyptian names that a later inventor would have had no reason to supply, and a people whose founding memory, law and worship rest on having been slaves there is more easily explained by a real departure than by an invented one.
+3. Israel was in Canaan as a people by about 1208 BC, so the memory belongs to the people's earliest period, not to a late reconstruction alone.
+
+So: the exodus can't be proved from archaeology, and its date and scale remain open, but a departure from Egypt by some of Israel's ancestors is the best explanation of the evidence, and the claim that archaeology has shown it never happened goes beyond what archaeology can show.
+
+The weight sits on the second step. If the Egyptian features of the story are better explained as later borrowings, and if peoples commonly invent humble origins for themselves, the argument weakens to an argument from silence on both sides, and that is where it should be tested.
+
+## The strongest reply, and an answer
+
+The strongest reply attacks the second step directly. Peoples do invent humble origins. Livy, telling Rome's founding story, says that to people his new city Romulus opened a sanctuary, and "Hither fled from the neighbouring states, without distinction whether freemen or slaves, crowds of all sorts, desirous of change" (*History of Rome* 1.8, in D. Spillan's translation). A founding story of slaves and refugees can serve a people's sense of itself; it needn't be a memory. And the Egyptian details could have come from the long contact between Judah and Egypt in later centuries. So the critic concludes that nothing in the story requires a real exodus.
+
+Part of that should be granted. The argument from an embarrassing origin is weaker than apologists sometimes make it, and Livy's asylum shows why. But the cases differ in a way that matters. Rome's humble beginnings are a detail in its legend; Israel's slavery is the center of its whole life. Its law begins, "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery" (Exodus 20:2, BSB). Its harvest confession recited, "the Egyptians mistreated us and afflicted us, putting us to hard labor" (Deuteronomy 26:6, BSB). Its prophets measured its sin against that rescue: "out of Egypt I called My son" (Hosea 11:1, BSB). The memory runs through Israel's law, its worship and its eighth-century prophets Hosea and Amos, and through poetry such as the Song of the Sea in Exodus 15, which many scholars, Frank Moore Cross and David Noel Freedman among them, have argued from its language is among the oldest poems in the Hebrew Bible, though others date it later, as the Study Bible's note on Exodus 15 records. And the Egyptian names belong to a priestly family remembered as founders, not to later decoration. None of this compels belief. It does mean that the simplest account of why Israel remembered itself as freed slaves is that some of its ancestors were.
+
+## What remains unresolved
+
+The date is unresolved, the fifteenth century and the thirteenth both having defenders. So is the scale: whether the numbers are to be taken as written, read as units, or understood in some other way. The route of the departure, the place of the crossing and the location of Mount Sinai are argued, and Hoffmeier's *Ancient Israel in Sinai* (2005) is one careful attempt at them. How large the group was that left Egypt, and how it related to the people already in the hill country, is not known. Whether further work in the Delta or Sinai will ever add direct evidence is unknown, though the ground of the Delta keeps little.
+
+## Where Christians differ
+
+Christians agree that the God of Israel rescued his people, and they read that rescue as the pattern of the gospel itself. Paul writes that "our forefathers were all under the cloud, and that they all passed through the sea" (1 Corinthians 10:1, BSB). On the historical questions they differ, and the site takes no side among them. Many hold the early date and take the numbers as written; many hold the thirteenth-century date; some read *elef* as a unit and the company as far smaller; and some, who still confess the Bible as God's word, think the story preserves the memory of a smaller group's escape told as the founding story of the whole people. What all of them confess is what Israel confessed: the LORD is the God who hears the cry of the oppressed and brings his people out of slavery, and he did it in history, not only in a story.
+
+## Read the other side
+
+- Israel Finkelstein and Neil Asher Silberman, *The Bible Unearthed* (2001).
+- William G. Dever, *Who Were the Early Israelites and Where Did They Come From?* (2003), on Israel's origins within Canaan.
+
+## Read further
+
+- James K. Hoffmeier, *Israel in Egypt* (1997).
+- James K. Hoffmeier, *Ancient Israel in Sinai* (2005).
+- K. A. Kitchen, *On the Reliability of the Old Testament* (2003), which argues that much of the Old Testament's picture fits the second millennium BC.
+
+## On the site
+
+- The Study Bible's notes on Exodus 1 (/study/bible/exodus/1), Exodus 12 (/study/bible/exodus/12) and the introduction to Exodus, which set out the dates, the store cities and the numbers.
+- The other questions in this area (/questions/old-testament).
+- What it was like: the Old Testament's world (/resources/context/world/old-testament-world), on the land, its peoples and the Merneptah inscription.

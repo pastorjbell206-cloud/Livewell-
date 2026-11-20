@@ -6967,3 +6967,120 @@ medieval Chonae (about 2 km off; invisible at the map's scale).
 ### Next
 
 Colossians is complete. 1 Thessalonians: its book page, then chapters 1 to 5.
+
+## 1 Thessalonians, 2 Thessalonians and 1 Timothy: the book pages and every chapter (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". Colossians was
+finished; this run did 1 Thessalonians, 2 Thessalonians and 1 Timothy, as Philippians was. It
+stopped at the end of 1 Timothy, a book boundary, to leave room for the full gates and the
+served-build checks. 2 Timothy, Titus and Philemon are not begun.
+
+### The book pages
+
+**1 Thessalonians** (`/study/bible/1-thessalonians`). Data only, `teaching` appended to its
+intro. Eleven parts: in a minute; Who wrote it; Thessalonica, and how the church began; When and
+where (the Gallio inscription); How it is built; The Lord's coming: what all confess, and where
+Christians differ (the confession stated; pretribulation, midtribulation and prewrath,
+posttribulation, and no separate rapture, each in its holders' terms; no side, no date, no
+event named); Paul's hard words in 2:14-16 (Paul a Jew; particular people in particular places;
+persecutors compared, not peoples; Romans 9:3 and 11:1; the misuse named and rejected; the Acts
+2:22-28 pointer); The big themes; and the Old Testament; What the letter is not; How to read.
+8 hard passages, 11 key words, 8 timeline entries, one "mediterranean" map (Philippi,
+Thessalonica, Athens, Corinth), 8 Go deeper links. 3,186 words.
+
+**2 Thessalonians.** Ten parts: in a minute; Who wrote it (both cases in their holders' terms,
+no side, received as Paul's, the writer called Paul); When, and what had gone wrong; How it is
+built; God's justice, and the judgment (1:5-10; both views of ‘eternal destruction’ as the
+chapter note states them; no side); The man of lawlessness, and what restrains him (the main
+readings, none certain, no one identified, written to steady the frightened); ‘If anyone is
+unwilling to work’ (never against the poor, the sick, the disabled, the unemployed or those
+receiving help; the justice-and-the-poor topic's two views); themes; Old Testament; How to read.
+7 hard passages, 10 key words, 8 timeline entries, map (Thessalonica, Corinth, Jerusalem), 8
+Go deeper links. 2,937 words.
+
+**1 Timothy.** Thirteen parts: in a minute; Who wrote it: the Pastoral Letters (both cases, a
+middle way, no side, received as Paul's); Ephesus, and Timothy; When; The teaching that troubled
+the church; How it is built; Women in the church (what all agree, both readings, 2:15, the
+childless care lines, the Acts 18:24-28 pointer); Leaders: character first (church order, the
+phrase ‘husband of one wife’, 3:11, 5:19-21 and the police line); Godliness is not a means of
+gain; themes; Old Testament; What the letter is not; How to read. 12 hard passages, 12 key
+words, 10 timeline entries, map (Ephesus, Philippi, Thessalonica, Lystra), 8 Go deeper links.
+3,648 words.
+
+**Code.** None in the app. `teaching.test.tsx`: the three books added to the list of books with
+a teaching page, and one frame line each.
+
+### The chapters in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 1 Thessalonians 1 | 3 | 2,145 |
+| 1 Thessalonians 2 | 4 | 2,797 |
+| 1 Thessalonians 3 | 3 | 1,779 |
+| 1 Thessalonians 4 | 4 (13-14 grief, 15-18 the readings) | 3,157 |
+| 1 Thessalonians 5 | 5 | 2,965 |
+| 2 Thessalonians 1 | 3 | 1,762 |
+| 2 Thessalonians 2 | 4 | 2,592 |
+| 2 Thessalonians 3 | 3 | 2,255 |
+| 1 Timothy 1 | 5 | 3,113 |
+| 1 Timothy 2 | 4 (11-14 and 15 apart, for the 3,000-character limit) | 3,047 |
+| 1 Timothy 3 | 3 | 2,038 |
+| 1 Timothy 4 | 3 | 1,947 |
+| 1 Timothy 5 | 5 | 3,010 |
+| 1 Timothy 6 | 4 | 2,924 |
+| **Total** | **53** | **35,531** |
+
+Each chapter note gained only `"plain": true`. Care lines, all from existing notes, no phone
+numbers, Find Help named: grief (2 Corinthians 5); a hard father (1 Corinthians 4); danger
+(Genesis 16 form); sexual assault (Genesis 34) and shame (1 Corinthians 6); sadness (Psalm 6);
+leaders (the submitting-to-leaders topic); discipline and the police (1 Corinthians 5) at 2
+Thessalonians 3, 1 Timothy 1 and 5; the 1 Corinthians 6:9 note's readings and care line at 1
+Timothy 1:8-11; childless (Genesis 30); drinking (Ephesians 5); giving (2 Corinthians 9).
+
+### Sources
+
+All in `bdoor-ledger.md`. No web searches: every claim rests on the repository's deep notes,
+its lexicon (`lex/G`), the wisdom topics, the end-times study guide and earlier ledger rows.
+
+### Cut or narrowed
+
+Cut: Malherbe and Dio Chrysostom; P. N. Harrison and Luke as secretary; John Chrysostom by name;
+the Westminster Confession by name; Josephus on sacrifices for the emperor; Darby and the Left
+Behind novels; the Claudius expulsion as a reading of 1 Thessalonians 2:16; ‘used of plants’
+(huperauxanō); ‘like a sentry’; ‘to care for’ (proistēmi); a literacy claim; a slave and a free
+man greeting with a kiss; ‘the pleasure of power’. Narrowed: Daniel 10 to the text's words;
+‘vindicated by the Spirit’ to "many read this of his resurrection"; "everyone who named the man
+of lawlessness has been wrong" (a side taken against readings placing him in Paul's century) to
+"those who named someone of their own day and expected the end at once saw the end not come".
+
+### What was run, and what passed (watched)
+
+After each chapter: validate-bible-notes, the strict quotation check (0 problems), the
+search-index and passage-index checks and no-emdash, exit 0; every passage printed field by
+field. Each book gated before the next: all content-gate commands, `pnpm check`, `pnpm test`
+(158 files, 1,837 tests), exit 0. At the end, after merging the latest branch (which added two
+gates): all 44 content-gate commands exit 0 (396 chapters in plain words; search index 861
+entries; passage index 645 files; verify-sources 22 texts); `pnpm check` exit 0; `pnpm test`
+exit 0 (160 files passed, 7 skipped; 1,861 tests passed, 73 skipped); `pnpm build`, `pnpm run
+sitemap`, `pnpm run prerender` (3,102 pages), `pnpm run audit:canonicals` exit 0. `pnpm build`
+was started at a one-minute load of 7.18, over the limit (the check was read but not waited on);
+it passed, and every later heavy command waited for the load to fall to 6 or below.
+
+Served with `scripts/serve-like-vercel.mjs` on 4603, Playwright at 390, /api stubbed: all 14
+chapters' passage headings and the start of every field matched the data (53 passages, 244
+fields), no sideways scroll, no console errors. Book pages at 390 and 1440: every part, every
+timeline entry, the frame, the map note, no sideways scroll, no errors. The 1 Thessalonians map
+at 390 had Athens's name touching Corinth's; Athens's label was moved above its point
+(committed), the server restarted (it caches files) and the map looked at again. Looked at:
+`/home/user/elite-shots/bdoor/1-thessalonians2-390-*`, `1-timothy2-390-*`,
+`1-thessalonians-map-*` (and `-v2`), `2-thessalonians-map-*`, `1-timothy-map-*`, `*-book-*`.
+Lighthouse (the ci.yml form, three runs, CHROME_PATH Playwright's Chromium), median:
+`/study/bible/1-thessalonians` performance 92, accessibility 100, best practices 96, SEO 100,
+CLS 0.000; `/2-thessalonians` 91, 100, 96, 100, 0.000; `/1-timothy` 89, 100, 96, 100, 0.000.
+The map fix was checked by validate-bible-notes, no-emdash and the teaching test (33 passed),
+not by a full rebuild. Server stopped by PID, dist/ and lh-*.json deleted.
+
+### Next
+
+2 Timothy: its book page (3:16 and the views of Scripture's authority), then chapters 1 to 4;
+then Titus and Philemon.

@@ -157,7 +157,7 @@
         },
         {
           "slug": "how-did-judas-die",
-          "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+          "question": "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?",
           "blurb": "The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about \"Jeremiah\" in Matthew 27:9, and the core the accounts share.",
           "status": "pending",
           "live": false
@@ -231,8 +231,44 @@
       "planned": 18,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "did-the-exodus-happen",
+          "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
+          "blurb": "What Egypt's silence does and doesn't show, the Delta, Rameses and Moses' Egyptian name, Merneptah's Israel, the date and the large numbers, and what remains open.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "jericho-and-the-conquest",
+          "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+          "blurb": "Kenyon's Jericho, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-command-to-destroy-the-canaanites",
+          "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
+          "blurb": "The command and the ban in their setting, the limits the books set on it, Kant's question about knowing a command is God's, the main Christian readings and what each must carry, and why none licenses violence today.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "when-was-daniel-written",
+          "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
+          "blurb": "Porphyry's case in Jerome's report, the modern case from chapter 11, the loanwords and Darius the Mede, Belshazzar, the Qumran copies, 1 Maccabees and Ben Sira, what the date turns on and what it doesn't decide.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-flood-and-babylon",
+          "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
+          "blurb": "George Smith's tablets, Atrahasis and Gilgamesh quoted from the British Museum's translation, Delitzsch and Finkel, what a shared story can and can't show, the differences that make Genesis an answer, and the readings of the flood's extent.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "science",
@@ -287,8 +323,44 @@
       "planned": 12,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-logical-problem-of-evil",
+          "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+          "blurb": "Mackie's argument and its two hidden premises, Plantinga's free-will defence, Mackie's own later concession, the objection from heaven, and what a defence can and can't do.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-evidential-problem-of-evil",
+          "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+          "blurb": "Rowe's fawn and his argument, the inference from what we can't see, Wykstra's reply and skeptical theism, what it costs, Rowe's question about why God gives sufferers no assurance, and the answer Christians give in the cross.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "natural-evil-and-animal-suffering",
+          "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
+          "blurb": "Hume's Philo and Darwin's wasps, Draper's hypothesis of indifference, why free will doesn't reach it, the answers from law, growth, long processes and a fallen creation with the cost of each, and the hope of Romans 8.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-hiddenness-of-god",
+          "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
+          "blurb": "Schellenberg's argument from nonresistant nonbelief, the hiddenness the psalms already pray, Pascal's light and obscurity, the reasons Christian philosophers give and their limits, and God found in the cross.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "hell-and-the-justice-of-god",
+          "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+          "blurb": "Russell, Adams and Ivan Karamazov on proportion, what all Christians confess about judgment, eternal conscious punishment, conditional immortality and the hope of restoration each in its holders' words with its hardest difficulty, and a word for anyone afraid.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "morality",
@@ -613,13 +685,13 @@
       "live": false
     },
     {
-      "claim": "Matthew says Judas hanged himself and Acts says he fell and burst open, so the two accounts of his death contradict each other",
+      "claim": "Matthew and Acts give two incompatible accounts of how Judas died, so the two contradict each other",
       "proponent": "Bart D. Ehrman",
       "work": "Jesus, Interrupted",
       "year": 2009,
       "area": "contradictions",
       "slug": "how-did-judas-die",
-      "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+      "question": "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?",
       "live": false
     },
     {
@@ -753,6 +825,106 @@
       "live": false
     },
     {
+      "claim": "Archaeology has found no trace of the exodus in Egypt or Sinai, and the story is best read as a later national epic",
+      "proponent": "Israel Finkelstein and Neil Asher Silberman",
+      "work": "The Bible Unearthed",
+      "year": 2001,
+      "area": "old-testament",
+      "slug": "did-the-exodus-happen",
+      "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
+      "live": false
+    },
+    {
+      "claim": "Two million Israelites wandering forty years would have left remains in Sinai, and none have been found",
+      "proponent": "Israel Finkelstein and Neil Asher Silberman",
+      "work": "The Bible Unearthed",
+      "year": 2001,
+      "area": "old-testament",
+      "slug": "did-the-exodus-happen",
+      "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
+      "live": false
+    },
+    {
+      "claim": "Jericho's last walled city fell in the sixteenth century BC, and there was little or nothing there for Joshua to conquer",
+      "proponent": "Kathleen M. Kenyon",
+      "work": "Digging Up Jericho",
+      "year": 1957,
+      "area": "old-testament",
+      "slug": "jericho-and-the-conquest",
+      "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+      "live": false
+    },
+    {
+      "claim": "Israel emerged gradually from within Canaan, and the conquest stories are later legend",
+      "proponent": "William G. Dever",
+      "work": "Who Were the Early Israelites and Where Did They Come From?",
+      "year": 2003,
+      "area": "old-testament",
+      "slug": "jericho-and-the-conquest",
+      "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
+      "live": false
+    },
+    {
+      "claim": "A perfectly good God would not command the killing of children, so either God is not good or the Bible is wrong that he commanded it",
+      "proponent": "Wes Morriston",
+      "work": "Did God Command Genocide? A Challenge to the Biblical Inerrantist",
+      "year": 2009,
+      "area": "old-testament",
+      "slug": "the-command-to-destroy-the-canaanites",
+      "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
+      "live": false
+    },
+    {
+      "claim": "No one can be as certain that a voice is God's as that killing an innocent child is wrong",
+      "proponent": "Immanuel Kant",
+      "work": "The Conflict of the Faculties",
+      "year": 1798,
+      "area": "old-testament",
+      "slug": "the-command-to-destroy-the-canaanites",
+      "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
+      "live": false
+    },
+    {
+      "claim": "Daniel was written by someone living under Antiochus Epiphanes, who related the past rather than foretelling the future",
+      "proponent": "Porphyry, as reported by Jerome",
+      "work": "Jerome, Commentary on Daniel, in Gleason L. Archer's translation",
+      "year": 1958,
+      "area": "old-testament",
+      "slug": "when-was-daniel-written",
+      "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
+      "live": false
+    },
+    {
+      "claim": "Daniel was completed between 167 and 164 BC: its prophecy of the Greek kings is exact down to Antiochus IV and wrong about his death",
+      "proponent": "John J. Collins",
+      "work": "Daniel",
+      "year": 1993,
+      "area": "old-testament",
+      "slug": "when-was-daniel-written",
+      "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
+      "live": false
+    },
+    {
+      "claim": "Much of the Old Testament, its flood story among it, came from Babylon",
+      "proponent": "Friedrich Delitzsch",
+      "work": "Babel und Bibel",
+      "year": 1902,
+      "area": "old-testament",
+      "slug": "the-flood-and-babylon",
+      "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
+      "live": false
+    },
+    {
+      "claim": "The flood story came into the Bible from Babylon",
+      "proponent": "Irving Finkel",
+      "work": "The Ark Before Noah",
+      "year": 2014,
+      "area": "old-testament",
+      "slug": "the-flood-and-babylon",
+      "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
+      "live": false
+    },
+    {
       "claim": "Science and religion are incompatible in method: science can find out it is wrong, religion holds its claims by faith, scripture and authority",
       "proponent": "Jerry A. Coyne",
       "work": "Faith versus Fact",
@@ -881,14 +1053,108 @@
       "slug": "evolution-and-genesis",
       "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
       "live": false
+    },
+    {
+      "claim": "God's omnipotence, God's goodness and the existence of evil cannot all be true, so belief in God is positively irrational",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955,
+      "area": "evil",
+      "slug": "the-logical-problem-of-evil",
+      "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+      "live": false
+    },
+    {
+      "claim": "An all-powerful God could have made free people who always in fact choose the good, so the appeal to free will fails",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955,
+      "area": "evil",
+      "slug": "the-logical-problem-of-evil",
+      "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+      "live": false
+    },
+    {
+      "claim": "There is intense suffering, like a fawn's slow death in a forest fire, that an all-powerful, all-knowing being could have prevented without losing any greater good, so probably there is no such being",
+      "proponent": "William L. Rowe",
+      "work": "The Problem of Evil and Some Varieties of Atheism",
+      "year": 1979,
+      "area": "evil",
+      "slug": "the-evidential-problem-of-evil",
+      "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+      "live": false
+    },
+    {
+      "claim": "The world's suffering makes it impossible to believe that it is ruled by a loving God",
+      "proponent": "Bart D. Ehrman",
+      "work": "God's Problem",
+      "year": 2008,
+      "area": "evil",
+      "slug": "the-evidential-problem-of-evil",
+      "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+      "live": false
+    },
+    {
+      "claim": "The pattern of pain and pleasure in nature is what we would expect if nothing behind nature cared about its creatures, and much less what we would expect if a good God made it",
+      "proponent": "Paul Draper",
+      "work": "Pain and Pleasure: An Evidential Problem for Theists",
+      "year": 1989,
+      "area": "evil",
+      "slug": "natural-evil-and-animal-suffering",
+      "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
+      "live": false
+    },
+    {
+      "claim": "No good and all-powerful God would have designed wasps whose young feed inside living caterpillars",
+      "proponent": "Charles Darwin",
+      "work": "Letter to Asa Gray, 22 May 1860",
+      "year": 1860,
+      "area": "evil",
+      "slug": "natural-evil-and-animal-suffering",
+      "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
+      "live": false
+    },
+    {
+      "claim": "A perfectly loving God would make a relationship with himself possible for everyone capable of it who does not resist, so the existence of nonresistant unbelievers shows there is no such God",
+      "proponent": "J. L. Schellenberg",
+      "work": "Divine Hiddenness and Human Reason",
+      "year": 1993,
+      "area": "evil",
+      "slug": "the-hiddenness-of-god",
+      "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
+      "live": false
+    },
+    {
+      "claim": "No one who is really profoundly humane can believe in everlasting punishment, so Christ's belief in hell is a defect in his moral character",
+      "proponent": "Bertrand Russell",
+      "work": "Why I Am Not a Christian",
+      "year": 1927,
+      "area": "evil",
+      "slug": "hell-and-the-justice-of-god",
+      "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+      "live": false
+    },
+    {
+      "claim": "No sin committed by a finite creature in a life of ambiguity and ignorance could deserve an infinite penalty",
+      "proponent": "Marilyn McCord Adams",
+      "work": "The Problem of Hell: A Problem of Evil for Christians",
+      "year": 1993,
+      "area": "evil",
+      "slug": "hell-and-the-justice-of-god",
+      "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
+    "if-god-is-good-why-suffering": "If God is good, why is there so much suffering?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
+    "is-it-okay-to-be-angry-at-god": "Is it okay to be angry at God?",
     "how-can-god-be-three-and-one": "How can God be three and one?",
+    "what-about-those-who-never-heard": "What about those who never heard of Jesus?",
     "are-miracles-believable": "Are miracles believable?",
+    "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?"
   }

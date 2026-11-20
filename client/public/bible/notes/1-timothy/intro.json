@@ -29,5 +29,369 @@
     { "ch": 3, "why": "Sets out the character required of overseers and deacons and names the church the pillar and foundation of the truth, closing with an early Christian hymn." },
     { "ch": 4, "why": "Defends the goodness of creation against false asceticism and gives Timothy a portrait of faithful ministry." },
     { "ch": 6, "why": "The New Testament's fullest warning about the love of money, and a charge to fight the good fight of the faith." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "1 Timothy in a minute",
+        "body": "1 Timothy is a letter from Paul to Timothy, his younger friend and fellow worker, whom he had left in charge of the church in Ephesus. It has 6 chapters and can be read aloud in about twenty minutes.\n\nThe church in Ephesus was in trouble. Some of its own teachers had gone wrong. They spun long speculations out of myths and family trees, wanted to be teachers of the law without understanding it, forbade marriage and certain foods, and treated religion as a way to make money. Paul writes to tell Timothy how to stop them, and, just as much, how the church should live: how it should pray, who should lead it and what kind of people they must be, how it should care for widows and honour its elders, and how rich and poor, slave and free, should behave.\n\nPaul says what the letter is for: “so that you will know how each one must conduct himself in God’s household, which is the church of the living God, the pillar and foundation of the truth” (3:15). And he says what all teaching is for: “The goal of our instruction is the love that comes from a pure heart, a clear conscience, and a sincere faith” (1:5).\n\nThe letter is practical, but its practical words are wrapped around some of the shortest and clearest confessions of faith in the Bible. “Christ Jesus came into the world to save sinners, of whom I am the worst” (1:15). “For there is one God, and there is one mediator between God and men, the man Christ Jesus” (2:5).\n\nSome passages in this letter are among the most debated in all of Scripture, especially what it says about women (2:8-15) and about church leaders (3:1-13). These notes set out the main readings fairly and take no side where faithful churches differ."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it: the Pastoral Letters",
+        "body": "1 Timothy, 2 Timothy and Titus are often called the Pastoral Letters, a name used since the 1700s, because they are written to men caring for churches. All three open with Paul's name, and 1 Timothy is full of personal detail: Paul's past as a persecutor (1:12-16), his travels (1:3), his hopes to come soon (3:14).\n\nThe church received them as Paul's from early on. Irenaeus, around AD 180, quotes 1 Timothy and names Paul as its writer, and it is in the list of accepted books known as the Muratorian list, usually dated to the late second century. But Marcion, a second-century teacher whose views the church rejected, did not include the Pastoral Letters in his collection of Paul's letters, and the oldest surviving copy of Paul's letters, a papyrus from around AD 200, does not have them, though its last pages are lost.\n\nSince the early 1800s many scholars have concluded that a later follower of Paul wrote these letters in his name. Here are their reasons, as they would put them. The words and style differ from the letters nearly everyone accepts as Paul's: words like ‘godliness’ and ‘sound teaching’ are common here and rare elsewhere. The church seems more settled, with overseers, deacons and an enrolled list of widows. The false teaching looks to some like movements of the second century. And Paul's travels in these letters are hard to fit into the story of Acts. On this view, the letters are a faithful attempt to apply Paul's teaching to a later generation, in a world where writing in a revered teacher's name was a known practice.\n\nMany other scholars hold that Paul wrote them. Here are their reasons, as they would put them. Different words fit a different subject and a different kind of letter, written to trusted fellow workers rather than to whole churches. The church order is simple, with no single bishop over the elders. The false teaching fits the first century, a mix of Jewish speculation and strict rules about the body. The travels fit a time after Acts ends, if Paul was released from his first imprisonment in Rome, as early writers report. And the early church rejected letters it knew were written under a false name. Some take a middle way: that Paul gave a trusted secretary freedom with the wording.\n\nThese notes do not choose. Both views are held by careful scholars, and readers on both sides take the letters as Scripture. The church received them as Paul's and has read them as Scripture from the beginning. These notes speak of the writer as Paul, as the letters do."
+      },
+      {
+        "id": "ephesus",
+        "h": "Ephesus, and Timothy",
+        "body": "Ephesus was one of the great cities of the Roman world, a port on the west coast of what is now Turkey and the leading city of the province of Asia. Its temple of the goddess Artemis was counted among the wonders of the ancient world, and the city was known for magic and religion of every kind.\n\nPaul had spent about three years there (Acts 19; 20:31), and a large church had grown up, meeting in homes across the city. When he said goodbye to its elders, he warned them: “Even from your own number, men will rise up and distort the truth to draw away disciples after them” (Acts 20:30). This letter shows that warning coming true.\n\nTimothy came from Lystra, in what is now central Turkey. His mother was a Jewish believer and his father a Greek (Acts 16:1). He had travelled with Paul for years, been sent on hard errands (1 Corinthians 4:17; 1 Thessalonians 3:2), and is named beside Paul at the start of six of his letters. Paul calls him “my true child in the faith” (1:2).\n\nHe was younger than many in the church: “Let no one despise your youth” (4:12). He seems to have had poor health (5:23). And his task was hard. He was not starting a church. He was correcting one, and some of the people he had to correct were its own teachers."
+      },
+      {
+        "id": "when",
+        "h": "When it was written",
+        "body": "Paul says he had left Ephesus for Macedonia, in northern Greece, and asked Timothy to stay (1:3). Acts does not tell of this trip.\n\nIf Paul wrote the letter, it most likely comes from a time after Acts ends. Acts closes with Paul under guard in Rome for two years (Acts 28:30-31). Early Christian writers report that he was released and travelled again before a second imprisonment and his death: Clement of Rome, around AD 96, says Paul reached ‘the limit of the west’, and the historian Eusebius, in the 300s, tells of a release and a second imprisonment. On this view 1 Timothy was written around AD 62 to 64. A few who hold that Paul wrote it try to fit it within the years Acts covers, though the details fit awkwardly.\n\nScholars who think a later follower wrote it usually date it between about AD 80 and 110.\n\nEither way, the church in Ephesus is a generation old or less, and its trouble comes from inside."
+      },
+      {
+        "id": "teachers",
+        "h": "The teaching that troubled the church",
+        "body": "Paul never sets out the false teaching in full. He only describes it in passing, so it is wise to say only what the letter shows.\n\nThe teachers were taken up with “myths and endless genealogies, which promote speculation” (1:4), perhaps long stories spun out of the family lists and figures of the Old Testament. They wanted “to be teachers of the law, but they do not understand what they are saying” (1:7). They forbade marriage and required people to keep away from certain foods (4:3). They loved arguments and quarrels over words (6:4). They treated godliness “as a means of gain” (6:5). And they claimed a special ‘knowledge’ (6:20).\n\nScholars have tried to name this teaching. Many see a mix of Jewish speculation with strict rules about the body. Some see an early form of the movements later called Gnostic, which prized secret knowledge; others think that label comes too early. These notes do not give it a name the letter does not give it.\n\nWhat is plain is how Paul answers it. He does not answer speculation with more speculation. He answers with the gospel, with the goodness of God's creation (4:4), and with a life of love, a clean conscience and sincere faith (1:5). For Paul, teaching is ‘sound’, literally healthy, when it makes people well."
+      },
+      {
+        "id": "built",
+        "h": "How it is built",
+        "body": "Greeting and the charge (1:1-20). Stay in Ephesus and stop the false teachers. The law is good when used rightly. Paul's own story: the worst of sinners, shown mercy. Fight the good fight.\n\nPrayer and worship (chapter 2). Pray for everyone, including rulers, because God wants everyone to be saved, and there is one mediator, Christ Jesus. How men and women should conduct themselves in worship.\n\nLeaders (3:1-13). What overseers and deacons must be like: character first.\n\nThe heart of it (3:14-16). Why Paul writes, and a short song about Christ: “He appeared in the flesh, was vindicated by the Spirit, was seen by angels, was proclaimed among the nations, was believed in throughout the world, was taken up in glory” (3:16).\n\nA good servant (chapter 4). The false teachers forbid marriage and foods, but everything God made is good. Train yourself for godliness. Do not let anyone despise your youth.\n\nGod's household (5:1 to 6:2). Treat older people as parents and younger as brothers and sisters. Care for widows in need. Honour elders who lead well, and deal fairly with accusations against them. Slaves and masters.\n\nGodliness and money (6:3-21). False teachers want gain; godliness with contentment is great gain. The love of money is a root of all kinds of evil. A last charge to Timothy, and a word to the rich."
+      },
+      {
+        "id": "women",
+        "h": "Women in the church (2:8-15): what all agree, and how Christians differ",
+        "body": "Paul writes, “I do not permit a woman to teach or to exercise authority over a man; she is to remain quiet. For Adam was formed first, and then Eve” (2:12-13). These are among the most debated words in the New Testament. Christians who share the same faith in Christ read them differently. It is a question that divides faithful churches, not the faith, and these notes do not choose.\n\nMuch is agreed. Men and women are equally made in God's image and equally saved by grace. Paul tells women to learn (2:11), when many in his world did not think women needed religious teaching. He tells men to pray ‘without anger or dissension’ (2:8). And nothing in this passage gives anyone leave to belittle, silence or control a woman, or to treat her as less than a sister in Christ.\n\nComplementarian Christians believe that men and women are equal in worth, and that God has given them different callings in the church, with the office of pastor or elder, and teaching the gathered church with that authority, given to qualified men. They note that Paul grounds his words in the order of creation, Adam formed first, not in local custom, so they believe the rule is meant to last. Many read ‘to teach or to exercise authority’ as two normal tasks of an elder.\n\nEgalitarian Christians believe that men and women are equal in worth and that every role in the church, including pastor and teacher, is open to both, as God gifts them. They note that this letter is shaped from start to finish by false teaching in Ephesus that had drawn in some women (5:13-15), and read Paul's words as aimed at that problem. Many read the rare word for ‘exercise authority’ as closer to ‘domineer’, and the mention of Eve's deception as a picture of women being misled by the false teachers.\n\nThe chapter note on 1 Timothy 2 sets out both readings more fully, and the note on Acts 18:24-28, where Priscilla teaches Apollos, shows how each side reads that scene.\n\nVerse 15 is a further puzzle: “Women, however, will be saved through childbearing, if they continue in faith, love, and holiness, with self-control.” Some read it as the birth of the Saviour through a woman; some as a promise of safety in childbirth; some as women living out their salvation in ordinary family life, against teachers who forbade marriage. On every reading it does not mean that a woman is saved by having children. No woman's salvation or worth depends on bearing children. Many faithful people long for children and never have them, or lose them before birth. Childlessness is not a judgment from God, and it does not measure your faith. Your longing is seen."
+      },
+      {
+        "id": "leaders",
+        "h": "Leaders: character first (3:1-13; 5:17-22)",
+        "body": "Chapter 3 says what overseers and deacons must be like. Almost every item is about character, not talent: “above reproach, the husband of but one wife, temperate, self-controlled, respectable, hospitable, able to teach, not dependent on wine, not violent but gentle, peaceable, and free of the love of money” (3:2-3). He must manage his own home well, not be a recent convert, and have a good name with outsiders. Only one item, ‘able to teach’, is a skill. The rest is the kind of person he is.\n\nChurches today are ordered in different ways, and each reads these verses in its own light. Catholic, Orthodox and Anglican churches, and Methodist churches in their own form, are led by bishops who oversee many congregations. Presbyterian and Reformed churches are led by elders who govern together. Baptist, Congregational and many free churches hold that each local congregation, under Christ, chooses its own leaders. These notes do not choose.\n\nChristians also read ‘the husband of but one wife’ in several ways: a man faithful in marriage, a ban on having more than one wife, a ban on remarriage after divorce, or a rule that leaders be married. And in verse 11 ‘the women’ may be the wives of deacons or women who were deacons themselves. Phoebe is called a deacon in Romans 16:1. Churches also differ on whether the office of overseer is open to women, as the part above sets out. These notes do not choose on any of these.\n\nWhat all can see is that character comes before gifting. A gifted leader who is violent, greedy or harsh does not meet Paul's standard, however well he preaches. And nothing here shields a leader who does harm. Paul says an accusation against an elder needs ‘two or three witnesses’ (5:19), so that leaders are not ruined by gossip. But he also says that those who persist in sin are to be rebuked in front of everyone, and that all of it must be done ‘without bias’, with nothing done ‘out of partiality’ (5:20-21). That verse must never be used to silence a report of abuse, or to keep a crime from the police. Abuse and other crimes are reported to the police and the proper authorities. A church meeting is never a substitute for that."
+      },
+      {
+        "id": "money",
+        "h": "Godliness is not a means of gain",
+        "body": "Money runs all through this letter. Leaders must be ‘free of the love of money’ (3:3). The false teachers treated godliness ‘as a means of gain’ (6:5). And near the end Paul writes some of the Bible's most quoted words about money.\n\n“Of course, godliness with contentment is great gain. For we brought nothing into the world, so we cannot carry anything out of it” (6:6-7). “Those who want to be rich, however, fall into temptation” (6:9). “For the love of money is the root of all kinds of evil” (6:10).\n\nThat verse is often misquoted as ‘money is the root of all evil’. Paul does not say money is evil, or that it is the only root of evil. He says the love of money is a root from which every kind of evil can grow. And he aims it at people who wanted to be rich, some of them religious teachers.\n\nAny teaching that treats faith as a way to get rich, that promises health and wealth to those who give or believe enough, takes the very path Paul warns against. That teaching, often called prosperity teaching, is an error, whoever teaches it. The people caught up in it, often poor and hoping, deserve care, not scorn.\n\nPaul does not condemn the rich. He tells them “not to be conceited and not to put their hope in the uncertainty of wealth, but in God, who richly provides all things for us to enjoy” (6:17), and “to be generous and ready to share” (6:18). Wealth is a trust, to be held loosely and given freely."
+      },
+      {
+        "id": "themes",
+        "h": "The big themes",
+        "body": "Sound teaching and a good conscience. ‘Sound’ means healthy. True teaching makes people well; false teaching spreads like a disease. And teaching is never apart from life: some ‘shipwrecked their faith’ by throwing away a good conscience (1:19). Paul tells Timothy, “Pay close attention to your life and to your teaching” (4:16).\n\nThe church as God's household. The church is ‘God's household’ (3:15). Leaders must care for their own homes well. Members are to treat one another as fathers, mothers, brothers and sisters (5:1-2). Families care for their own. The church is a family under God, not a club.\n\nGodliness. The word means reverence for God lived out in everyday life. It comes more often in these three letters than anywhere else in the New Testament. Paul tells Timothy to train for it as an athlete trains (4:7-8).\n\nGod the Saviour of all people. God “wants everyone to be saved and to come to the knowledge of the truth” (2:4). Christ “gave Himself as a ransom for all” (2:6). That is why the church prays for everyone, including rulers.\n\nMercy for the worst. Paul calls himself the worst of sinners, shown mercy as an example of Christ's patience ‘to those who would believe in Him’ (1:16). No one is beyond it.\n\nWealth and contentment. Contentment, generosity and hope in God, not in riches."
+      },
+      {
+        "id": "old-testament",
+        "h": "1 Timothy and the Old Testament",
+        "body": "Paul says “the law is good, if one uses it legitimately” (1:8), and the list of lawbreakers that follows runs in the order of the second half of the Ten Commandments: those who dishonour parents, murderers, the sexually immoral, ‘slave traders’, liars. In the ancient world slave traders often kidnapped people to sell them, and the law said, “Whoever kidnaps another man must be put to death” (Exodus 21:16).\n\n‘One God’ (2:5) is Israel's great confession: “Hear, O Israel: The LORD our God, the LORD is One” (Deuteronomy 6:4). Paul adds ‘one mediator’, Christ Jesus.\n\nIn 2:13-14 Paul refers to the story of Adam and Eve: “Then the LORD God formed man from the dust of the ground” (Genesis 2:7), and Eve's words, “The serpent deceived me” (Genesis 3:13). How he uses the story is part of the debate described above.\n\n‘Every creation of God is good’ (4:4) echoes the first page of the Bible: “And God looked upon all that He had made, and indeed, it was very good” (Genesis 1:31).\n\nThe care of widows is everywhere in the law and the Psalms: “A father of the fatherless, and a defender of the widows, is God in His holy habitation” (Psalm 68:5). Paul quotes the law about the ox, “Do not muzzle an ox while it is treading out the grain” (Deuteronomy 25:4), for paying those who teach. And the rule of ‘two or three witnesses’ (5:19) is the law's: “A matter must be established by the testimony of two or three witnesses” (Deuteronomy 19:15).\n\nAnd on money Paul sounds like Job and the Teacher: “Naked I came from my mother’s womb, and naked I will return” (Job 1:21)."
+      },
+      {
+        "id": "not",
+        "h": "What the letter is not",
+        "body": "It is not a licence to silence the harmed. Its words on discipline (1:20) and on accusations against elders (5:19) protect the innocent and correct the wrongdoer. They must never be used to protect someone who has done harm, to silence someone who has been harmed, or to keep a crime from the police.\n\nIt is not a promise of wealth. It warns that the love of money is a root of all kinds of evil, and it names those who treat godliness as gain.\n\nIt is not a defence of slavery. Paul writes to slaves in a world he could not change, and he names slave traders among the lawbreakers (1:10). The notes on chapter 6 say more.\n\nIt is not a reason for contempt toward any person. The list in 1:9-10 includes liars and murderers alongside sexual sins, so that no reader stands outside it, and Paul's next words call himself the worst of sinners.\n\nIt is not against marriage, food or the body. The false teachers forbade marriage and foods; Paul says that “every creation of God is good, and nothing that is received with thanksgiving should be rejected” (4:4).\n\nAnd it is not a call to put any ruler or party first. Paul asks the church to pray “for kings and all those in authority” (2:2), whoever they are, so that believers may live quiet and godly lives. Prayer for rulers is not the same as loyalty to a side, and the letter's one King is God: “the King of kings and Lord of lords” (6:15)."
+      },
+      {
+        "id": "reading",
+        "h": "How to read 1 Timothy",
+        "body": "Read it as a real letter to a real person in a particular crisis. At each step, ask what problem in Ephesus Paul is facing.\n\nWatch for the ‘trustworthy sayings’ (1:15; 3:1; 4:9), which seem to quote early Christian teaching, and for the contrast between healthy teaching and the sick speculation of the false teachers.\n\nNotice the short songs and confessions about Christ (1:15; 2:5-6; 3:16; 6:15-16). The letter's rules are built around them.\n\nWhere the letter is debated, on women, on church leaders and on who wrote it, read the case of more than one side before you settle, and notice that Christians who share the same faith in Christ reach different conclusions. Hold your own view as one who may yet be taught.\n\nAnd let the letter ask you its questions. Is your faith producing love from a pure heart? Are you content? Whom do you pray for, including those in power? And if you lead anyone, is your character the kind Paul describes?\n\nThe notes on each chapter go through it passage by passage in plain words."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 8,
+        "ref": "1:8-11",
+        "line": "The list of lawbreakers, and the word the BSB renders ‘homosexuals’. Both readings, and three things that are plain on either."
+      },
+      {
+        "ch": 1,
+        "v": 20,
+        "ref": "1:20",
+        "line": "‘Handed over to Satan.’ Church discipline meant to correct, and never to silence the harmed."
+      },
+      {
+        "ch": 2,
+        "v": 1,
+        "ref": "2:1-2",
+        "line": "‘For kings and all those in authority.’ Prayer for every ruler, and no party lesson."
+      },
+      {
+        "ch": 2,
+        "v": 12,
+        "ref": "2:11-14",
+        "line": "‘I do not permit a woman to teach or to exercise authority.’ What all agree, and the complementarian and egalitarian readings."
+      },
+      {
+        "ch": 2,
+        "v": 15,
+        "ref": "2:15",
+        "line": "‘Saved through childbearing.’ The main readings, and why no woman's worth depends on bearing children."
+      },
+      {
+        "ch": 3,
+        "v": 2,
+        "ref": "3:2",
+        "line": "‘The husband of but one wife.’ Four readings of one phrase."
+      },
+      {
+        "ch": 3,
+        "v": 11,
+        "ref": "3:11",
+        "line": "‘The women.’ Deacons' wives, or women deacons?"
+      },
+      {
+        "ch": 4,
+        "v": 10,
+        "ref": "4:10",
+        "line": "‘The Savior of everyone, and especially of those who believe.’ What the verse says, and does not say."
+      },
+      {
+        "ch": 5,
+        "v": 19,
+        "ref": "5:19-20",
+        "line": "Accusations against elders: fairness to the accused, and never a way to silence a report of abuse."
+      },
+      {
+        "ch": 5,
+        "v": 23,
+        "ref": "5:23",
+        "line": "‘Use a little wine.’ Abstinence and moderation, each fairly."
+      },
+      {
+        "ch": 6,
+        "v": 1,
+        "ref": "6:1-2",
+        "line": "Slaves and masters. Why Paul did not command the end of slavery, and the misuse of these verses."
+      },
+      {
+        "ch": 6,
+        "v": 10,
+        "ref": "6:10",
+        "line": "‘The love of money is the root of all kinds of evil.’ Not money itself, and not a promise of wealth."
+      }
+    ],
+    "words": [
+      {
+        "word": "Sound teaching",
+        "line": "Greek hugiainō, to be healthy. Teaching that makes people spiritually well (1:10; 6:3)."
+      },
+      {
+        "word": "Godliness",
+        "line": "Greek eusebeia, reverence for God lived out in daily life. More common in these letters than anywhere else in the New Testament (4:7-8; 6:6)."
+      },
+      {
+        "word": "Conscience",
+        "line": "The inner sense that judges your own conduct. Throw away a good conscience and faith runs aground (1:19)."
+      },
+      {
+        "word": "Trustworthy saying",
+        "line": "Paul's mark for a saying of the early church that he quotes and stands behind (1:15; 3:1; 4:9)."
+      },
+      {
+        "word": "Mediator",
+        "line": "Greek mesitēs, a go-between who brings two sides together. ‘One mediator between God and men, the man Christ Jesus’ (2:5)."
+      },
+      {
+        "word": "Ransom",
+        "line": "A price paid to set others free. Christ ‘gave Himself as a ransom for all’ (2:6)."
+      },
+      {
+        "word": "Exercise authority",
+        "line": "Greek authenteō, used only here in the New Testament (2:12). Some read it as to lead or have authority; others as to domineer."
+      },
+      {
+        "word": "Overseer",
+        "line": "Greek episkopos, one who watches over. Later the word for bishop; in this letter a local church leader, it seems the same person as an elder (3:1)."
+      },
+      {
+        "word": "Deacon",
+        "line": "Greek diakonos, servant. A recognized group in the church, chosen for character (3:8-13)."
+      },
+      {
+        "word": "Elder",
+        "line": "Greek presbuteros. Leaders of the church; those who lead well, especially in preaching and teaching, deserve ‘double honor’ (5:17)."
+      },
+      {
+        "word": "Contentment",
+        "line": "Greek autarkeia, a word the Stoic teachers prized. For Paul, contentment rests in God, who provides (6:6-8)."
+      },
+      {
+        "word": "What has been entrusted",
+        "line": "The faith handed to Timothy to guard, like money left with a trusted friend (6:20)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About AD 49 or 50",
+        "what": "Paul meets Timothy at Lystra, and Timothy joins him (Acts 16:1-3).",
+        "kind": "story"
+      },
+      {
+        "when": "The mid-50s",
+        "what": "Paul spends about three years in Ephesus. A large church grows up (Acts 19; 20:31).",
+        "kind": "story"
+      },
+      {
+        "when": "Soon after",
+        "what": "Paul says goodbye to the elders of Ephesus and warns that false teachers will rise from among them (Acts 20:17-38).",
+        "kind": "story"
+      },
+      {
+        "when": "About AD 60 to 62",
+        "what": "Paul under guard in Rome for two years, where Acts ends (Acts 28:30-31).",
+        "kind": "story"
+      },
+      {
+        "when": "About AD 62 to 64, if Paul wrote it",
+        "what": "Released, Paul travels again. He leaves Timothy in Ephesus, goes on to Macedonia, and writes 1 Timothy.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 80 to 110, on another view",
+        "what": "Scholars who think a follower of Paul wrote the Pastoral Letters usually date them here.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 96",
+        "what": "Clement of Rome writes that Paul reached ‘the limit of the west’, which many take as a sign of travels after Acts.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 112",
+        "what": "The Roman governor Pliny writes of questioning two slave women whom the Christians called ministers.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 180",
+        "what": "Irenaeus quotes 1 Timothy and names Paul as its writer.",
+        "kind": "book"
+      },
+      {
+        "when": "The 1700s",
+        "what": "The name ‘Pastoral Letters’ comes into use for 1 and 2 Timothy and Titus.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "mediterranean",
+        "title": "Ephesus, Macedonia, and Timothy's home",
+        "places": [
+          {
+            "id": "ephesus",
+            "name": "Ephesus",
+            "lat": 37.941,
+            "lon": 27.342,
+            "refs": [
+              "1:3"
+            ],
+            "line": "The leading city of Asia, with its great temple of Artemis. Paul left Timothy here to correct the church's own teachers (1:3).",
+            "label": {
+              "dx": 7,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "philippi",
+            "name": "Philippi",
+            "lat": 41.013,
+            "lon": 24.286,
+            "refs": [
+              "1:3"
+            ],
+            "line": "A city of Macedonia. Paul says he went on to Macedonia (1:3); the letter does not say where in it he was.",
+            "label": {
+              "dx": 7,
+              "dy": 0,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "thessalonica",
+            "name": "Thessalonica",
+            "lat": 40.64,
+            "lon": 22.936,
+            "refs": [
+              "1:3"
+            ],
+            "line": "The capital of Macedonia, where Paul had founded a church years before (Acts 17). The letter does not say whether he was here.",
+            "label": {
+              "dx": -7,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "lystra",
+            "name": "Lystra",
+            "lat": 37.602,
+            "lon": 32.338,
+            "refs": [
+              "1:2"
+            ],
+            "line": "Timothy's home town, where Paul met him, the son of a Jewish believing mother and a Greek father (Acts 16:1).",
+            "label": {
+              "dx": 7,
+              "dy": 4,
+              "anchor": "start"
+            }
+          }
+        ]
+      }
+    ],
+    "mapNote": "Timothy stayed in Ephesus, in the province of Asia. Paul had gone on to Macedonia, across the Aegean Sea. Timothy's home was Lystra, far inland.",
+    "deeper": [
+      {
+        "href": "/resources/context/women-in-the-ancient-world",
+        "name": "How Did the Bible Treat Women Compared to Its World?",
+        "line": "Behind ‘a woman must learn’ (2:11) and the debate over 2:12",
+        "icon": "people"
+      },
+      {
+        "href": "/study/bible/doctrines/leadership",
+        "name": "Leadership and Office in the Church",
+        "line": "The doctrine study behind overseers, deacons and elders (3:1-13; 5:17)",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/money-texts-we-explain-away",
+        "name": "What Does the Bible Say About Wealth and the Poor?",
+        "line": "Behind ‘the love of money’ (6:10) and the charge to the rich (6:17)",
+        "icon": "scroll"
+      },
+      {
+        "href": "/answers/what-does-the-bible-say-about-money",
+        "name": "What does the Bible say about money?",
+        "line": "The Honest Answer behind ‘godliness with contentment’ (6:6)",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/the-slavery-texts",
+        "name": "What Does the Bible Actually Say About Slavery?",
+        "line": "Behind ‘slave traders’ (1:10) and the words to slaves (6:1-2)",
+        "icon": "scroll"
+      },
+      {
+        "href": "/answers/why-didnt-the-bible-just-ban-slavery",
+        "name": "Why didn't the Bible just ban slavery?",
+        "line": "The Honest Answer behind 6:1-2",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/the-cities-of-paul",
+        "name": "Which Cities Did Paul Write To?",
+        "line": "Ephesus and the cities of Paul's letters",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/doctrines/salvation",
+        "name": "Salvation by Grace Through Faith",
+        "line": "The doctrine study behind ‘Christ Jesus came into the world to save sinners’ (1:15)",
+        "icon": "book"
+      }
+    ]
+  }
 }
