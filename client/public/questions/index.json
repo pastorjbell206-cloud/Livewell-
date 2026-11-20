@@ -157,7 +157,7 @@
         },
         {
           "slug": "how-did-judas-die",
-          "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+          "question": "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?",
           "blurb": "The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about \"Jeremiah\" in Matthew 27:9, and the core the accounts share.",
           "status": "pending",
           "live": false
@@ -649,13 +649,13 @@
       "live": false
     },
     {
-      "claim": "Matthew says Judas hanged himself and Acts says he fell and burst open, so the two accounts of his death contradict each other",
+      "claim": "Matthew and Acts give two incompatible accounts of how Judas died, so the two contradict each other",
       "proponent": "Bart D. Ehrman",
       "work": "Jesus, Interrupted",
       "year": 2009,
       "area": "contradictions",
       "slug": "how-did-judas-die",
-      "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+      "question": "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?",
       "live": false
     },
     {

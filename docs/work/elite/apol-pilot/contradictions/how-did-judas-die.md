@@ -2,15 +2,15 @@
 area: contradictions
 slug: how-did-judas-die
 status: pending (not on the site; for James to read first)
-question: "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?"
+question: "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?"
 ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "aa"
 ---
 
-# Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?
+# Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?
 
 ## The short answer
 
-Perhaps, but not obviously, and the honest answer has to say both. Matthew says Judas threw the silver into the temple and took his own life, and the chief priests used the money to buy a potter's field, called the Field of Blood. Acts says that "with the reward for his wickedness Judas bought a field; there he fell headlong and burst open," and the field was called Akeldama, Field of Blood. The accounts differ on how he died, who bought the field and why it got its name. The common harmonization, that the body fell after the hanging, is possible but adds what neither text says, and a third account from Papias shows the story was told more than one way early on. What the two accounts share is more solid: a sudden and shameful death, a field near Jerusalem bought with the betrayal money, and a name for it that people there still used.
+Perhaps, but not obviously, and the honest answer has to say both. Matthew says Judas threw the silver into the temple and took his own life, and the chief priests used the money to buy a potter's field, called the Field of Blood. Acts says that "with the reward for his wickedness Judas bought a field; there he fell headlong and burst open," and the field was called Akeldama, Field of Blood. The accounts differ on how he died, who bought the field and why it got its name. The common harmonization, that the body fell after the death Matthew describes, is possible but adds what neither text says, and a third account from Papias shows the story was told more than one way early on. What the two accounts share is more solid: a sudden and shameful death, a field near Jerusalem bought with the betrayal money, and a name for it that people there still used.
 
 ## The objection at its strongest
 
@@ -22,7 +22,7 @@ In Matthew, Judas, "filled with remorse," brings the thirty pieces of silver bac
 
 In Acts, Peter tells the believers that Scripture had to be fulfilled concerning Judas, and Luke adds: "Now with the reward for his wickedness Judas bought a field; there he fell headlong and burst open in the middle, and all his intestines spilled out. This became known to all who lived in Jerusalem, so they called that field in their own language Akeldama, that is, Field of Blood" (Acts 1:18-19, BSB).
 
-The differences are not one but three. In Matthew Judas dies by hanging; in Acts by a fall that bursts him open. In Matthew the priests buy the field; in Acts Judas buys it. In Matthew the field is the Field of Blood because it was bought with blood money; in Acts because Judas's blood was spilled on it. And Matthew's Judas gives the money back, while the Judas of Acts uses it. Matthew then adds a puzzle of his own: he says the purchase fulfilled "what was spoken through Jeremiah the prophet" (Matthew 27:9, BSB), but the words he quotes about thirty pieces of silver and the potter come mainly from Zechariah 11:12-13.
+The differences are not one but three. In Matthew Judas takes his own life; in Acts he dies in a fall. In Matthew the priests buy the field; in Acts Judas buys it. In Matthew the field is the Field of Blood because it was bought with blood money; in Acts because Judas's blood was spilled on it. And Matthew's Judas gives the money back, while the Judas of Acts uses it. Matthew then adds a puzzle of his own: he says the purchase fulfilled "what was spoken through Jeremiah the prophet" (Matthew 27:9, BSB), but the words he quotes about thirty pieces of silver and the potter come mainly from Zechariah 11:12-13.
 
 There is a third account too. Papias, early in the second century, told of a Judas whose body swelled until he could not pass where a chariot could, so that "he was crushed by the chariot, so that his bowels gushed out" (fragment 3, in the Ante-Nicene Fathers translation). Put at full strength, the objection says that three incompatible deaths for the same man, each shaped by a different writer's use of Scripture, are what legend looks like. The early church remembered that the betrayer came to a bad end; it didn't remember how.
 
