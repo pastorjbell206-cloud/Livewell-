@@ -1047,3 +1047,36 @@ Cut: Kloppenborg, "*Evocatio deorum* and the Date of Mark," *JBL* 124 (2005): th
 | John's Gospel tells of the Baptist, the feeding, the entry, Pilate, the crucifixion and the empty tomb | Repo (BSB John 1, 6, 12, 18-20) | Verified |
 
 Cut: Bailey's sorting of which kinds of material are fixed and which flexible (not found in two searches); "over decades" of Bailey's observation; McIver on details varying "as memory always does" (not in the reviews); Bartlett's memory experiments (not searched); the Latin terms for Jesus' exact words and his voice; a named harmonizer of the two blind men (the Matthew 20 note names one; the page gives the view unattributed). No living author is quoted.
+
+### m. "Didn't the church pick four and suppress the rest?" (four-gospels-and-the-rest)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Full text of Thomas found near Nag Hammadi in December 1945; Greek fragments from Oxyrhynchus recognized only afterward | WDC ledger line 130 | Verified. "A farmer" and "a jar" were cut (not checked) |
+| Thomas: 114 sayings; no narrative, no death and resurrection; scholars divided on whether it is Gnostic; "Gnosticism" as a category questioned | S: Biblical Archaeology Society, Bible Odyssey ("Was the Gospel of Thomas Gnostic?"), ehrmanblog.org overview, as summarized | Verified (secondary) |
+| Most scholars date Thomas to the second century; some earlier | WDC ledger line 135 (Wikipedia "Gospel of Thomas") | Verified |
+| Gospel of Peter: fragment found at Akhmim, winter 1886-87, in a much later copy (fifth or eighth to ninth century, sources differ); death and resurrection; Paul Foster's 2010 commentary prefers the second half of the second century | S: Wikipedia "Gospel of Peter", a dissertation record, as summarized | Verified (secondary). Foster's book title not confirmed, so it is not listed; "the risen Jesus emerging from the tomb" cut |
+| Serapion around 200: allowed it, learned of its use for heresy, read it, much sound and some things added | WDC ledger line 120 | Verified |
+| Gospel of Judas: Codex Tchacos; English translation published early 2006 by the National Geographic Society; radiocarbon 220 to 340; Irenaeus around 180 mentions a Gospel of Judas (Book 1, ch. 31), identity with the Coptic text probable, not certain; composed in the second century | S: Wikipedia, National Geographic, Christian Century review, New World Encyclopedia, as summarized | Verified (secondary); "probably" kept twice |
+| Gospel of Mary: Coptic in a fifth-century codex (Berlin) found or bought in 1896, published by Till in 1955; Greek fragments P.Rylands 463 (early third century) and P.Oxy. 3525 (third century); King, early second century; Tuckett, first half; Mary Magdalene the central figure (King) | S: New World Encyclopedia, Wikipedia, earlychristianwritings.com, as summarized | Verified (secondary). King's 2003 book not confirmed and not listed |
+| Four Gospels first century (Mark around 70, John 90s), others second | WDC ledger line 135; row k | Verified |
+| Justin, 150s: "the memoirs of the apostles or the writings of the prophets are read, as long as time permits"; memoirs "which are called Gospels" | WDC ledger lines 65 to 67 (*First Apology* 66, 67, ANF) | Quoted |
+| Irenaeus around 180: "It is not possible that the Gospels can be either more or fewer in number than they are."; four zones, four winds | WDC ledger lines 69, 70 (*Against Heresies* 3.11.8, ANF) | Quoted |
+| Tatian's Diatessaron: a harmony composed shortly after 172, the title understood as "through the four"; preeminent in Syrian churches for centuries; Theodoret replaced more than two hundred copies with the four Gospels in the fifth century | S: Gorgias Encyclopedic Dictionary of the Syriac Heritage, Catholic Encyclopedia (New Advent), as summarized | Verified (secondary). (Also supports the editor's change to piece i) |
+| Charles E. Hill, *Who Chose the Gospels? Probing the Great Gospel Conspiracy* (OUP, 2010): acceptance widespread; no one chose them | S: catalog records, Denver Journal (Blomberg), TGC review, WTJ review, as summarized | Verified (secondary), paraphrased ("concluded in effect"); not quoted |
+| Constantine called Nicaea in 325; a few hundred bishops; Arius and the creed; the Melitian schism; the date of Easter; twenty canons; nothing on Scripture's canon | Nicaea ledger lines 11, 26 (via WDC), 65, 105; WDC ledger lines 23 to 26 | Verified |
+| Athanasius, Festal Letter 39 (367): the first extant list of exactly the twenty-seven; no mention of Nicaea where he sets out the list | WDC ledger lines 4, 11, 14 | Verified |
+| Constantine ordered "fifty copies of the sacred Scriptures" for Constantinople (Eusebius, *Life of Constantine* 4.36) | WDC ledger lines 31, 32 | Quoted |
+| Bauer 1934 (English 1971); Ehrman, *Lost Christianities* (2003): Ebionites, Marcionites, Gnostic groups, proto-orthodox who compiled the canon and won; Eusebius's history | WDC ledger lines 126 to 128 | Verified, paraphrased |
+| The church's tests (apostolic origin, use across churches, rule of faith); the rule of faith confessed at baptism; Ehrman: correct theology the leading criterion | WDC ledger lines 117, 119, 127a | Verified |
+| Gospel of the Ebionites known only from brief quotations in Epiphanius | WDC ledger line 129 | Verified; "fourth-century" for Epiphanius is general knowledge, not searched |
+| Eusebius's disputed books (James, Jude, 2 Peter, 2 and 3 John); Cyril of Jerusalem around 350 without Revelation | WDC ledger lines 89, 100 | Verified |
+| Marcion: around 144; edited Luke, ten letters of Paul; Harnack's thesis and its critics | WDC ledger lines 75, 79, 82, 83 | Verified |
+| Muratorian fragment: traditionally late second century; Hahneman (1992) fourth century | WDC ledger lines 115, 116 | Verified |
+| Pagels, *The Gnostic Gospels* (1979) | Tenth run | Verified |
+| Köstenberger and Kruger, *The Heresy of Orthodoxy* (Crossway, 2010): a reply to the Bauer thesis and Ehrman; addresses Bauer on Edessa | S: publisher listings, apocryphicity.ca review, as summarized | Verified (secondary) |
+| Galatians 1:8-9 (another gospel); 2:2, 2:9 (set before the leaders; James, Cephas, John, right hand of fellowship); 1 Corinthians 15:11 | Repo (BSB) | Described |
+| First Vatican Council (1870): sacred because written under inspiration, not because approved afterward; Anglican Article VI: received "as they are commonly received" | WDC ledger lines 138, 139 | Verified, paraphrased |
+| Twenty-seven books held by nearly every church, the Ethiopian narrow canon included | WDC ledger line 55 | Verified |
+
+Cut: Thomas Robinson, *The Bauer Thesis Examined* (not found); Michael Williams, *Rethinking "Gnosticism"* (the thesis was not confirmed); Foster's title; King's 2003 book; Pagels's thesis as a claim line (not confirmed in her words); that the Gnostic teaching "has no first-century witness" (narrowed: no clear witness of its own, with the debate over New Testament letters named); "Constantine's one recorded act concerning Scripture" (not checked; now "Eusebius records"); the Orthodox churches' account of the canon (not checked). No living author is quoted.

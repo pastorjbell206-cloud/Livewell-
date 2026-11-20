@@ -115,6 +115,13 @@
           "blurb": "Form criticism, memory research, the debate over controlled tradition, and what changed and what stayed across the Gospels.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "four-gospels-and-the-rest",
+          "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
+          "blurb": "The other gospels and their dates, how the four were received, what Nicaea did and didn't do, and what is true in \"the winners write history\".",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -408,6 +415,26 @@
       "area": "authors",
       "slug": "stories-changed-in-the-telling",
       "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
+      "live": false
+    },
+    {
+      "claim": "The proto-orthodox party won the struggles of the second and third centuries, compiled the New Testament and wrote the history of its own victory",
+      "proponent": "Bart D. Ehrman",
+      "work": "Lost Christianities",
+      "year": 2003,
+      "area": "authors",
+      "slug": "four-gospels-and-the-rest",
+      "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
+      "live": false
+    },
+    {
+      "claim": "In some regions of the early church what was later called heresy came first",
+      "proponent": "Walter Bauer",
+      "work": "Orthodoxy and Heresy in Earliest Christianity",
+      "year": 1934,
+      "area": "authors",
+      "slug": "four-gospels-and-the-rest",
+      "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
       "live": false
     }
   ],
