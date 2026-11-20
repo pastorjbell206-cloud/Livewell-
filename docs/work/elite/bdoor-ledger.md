@@ -11083,3 +11083,44 @@ Cut before publishing: an account of how believers ‘hasten’ the day (the let
 | Claim | Part | Source | Checked by |
 |---|---|---|---|
 | The map notes of Hebrews, James, 1 Peter and 2 Peter began with a stray ‘| ’ that showed on the page; removed, wording unchanged | Map note | The authoring script's own fault (it kept the field separator) | Data read; validator |
+
+
+## 1 John: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| No greeting, writer, readers or farewell; a sermon written down; ‘little children’; about twenty minutes aloud | In a minute; How to read | 1-john/intro.json `overview`, `reading` | Repository; reading time an estimate |
+| The split (2:19); the teaching denied Christ come in the flesh; three marks: belief, obedience, love | In a minute; Three marks | 1-john/intro.json `overview`, `setting`, `purpose` | Repository |
+| The writer an eyewitness among a group (1:1-3); older leader's authority | Who wrote it | 1-john/intro.json `author` | Repository; BSB |
+| Second-century attribution to John son of Zebedee; Irenaeus about 180 quotes it as John's; vocabulary close to the Gospel; same circle, many think same hand | Who wrote it; timeline | 1-john/intro.json `author` | Repository |
+| Papias names the apostle John and ‘the elder John’; survives in Eusebius (Church History 3.39); Eusebius read two men | Who wrote it; timeline | 1-john/intro.json `author`; john/intro.json `teaching` (who) | Repository |
+| 2 and 3 John open ‘The elder’; the elder the apostle, another John, or a circle; no side | Who wrote it | 2-john/intro.json `author`; 3-john/intro.json `author` | Repository; BSB |
+| By about 200 the four Gospels, Acts, Paul, 1 Peter and 1 John agreed across the churches | Who wrote it; timeline | bible/guides/canon.json (section 5) | Repository |
+| Date about 85 to 100; a minority in the 60s; Ephesus tradition; house churches | When | 1-john/intro.json `date`, `setting` | Repository |
+| Docetism (dokeō, to seem); Irenaeus on Cerinthus | When | 1-john/intro.json `setting`; 1-john/1.json `historical` | Repository |
+| The ‘If we say’ claims (1:6, 8, 10) and ‘whoever says’ (2:4, 6, 9; 4:20) | How it is built | 1-john/1.json, 2.json `literary`; BSB | Repository; BSB |
+| 1:8-10 beside 3:6-9: present tense (BSB ‘keeps on sinning’); a particular sin or lawlessness; the ideal; Wesleyan freedom from willful sin; no side | Sin | 1-john/3.json `hard` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | Sin; Chapter 5 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| ‘Antichrist’ only in John's letters (2:18, 22; 4:3; 2 John 7); many antichrists; ‘anti’ against or in place of; Mark 13:22; 2 Thessalonians 2:3 | Antichrists | 1-john/2.json `historical`, `words` (G0500) | Repository; BSB |
+| Identifications with a pope, a sultan, an emperor or a dictator have been made; these notes make none | Antichrists | bible/guides/reading-apocalyptic.json (Reading Daniel and Revelation well); 2-thessalonians/plain/2.json (3-8 `hard`) | Repository; instruction for this run |
+| 2:19 and perseverance: Reformed; Arminian and Wesleyan; Lutheran; Catholic | Antichrists | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| ‘God is love’ not ‘love is God’; love defined by sending the Son; no public welfare in Rome; love and judgment not rivals | God is love | 1-john/4.json `cultural`, `hard`; 1-john/3.json `cultural` | Repository |
+| Water and blood: baptism and death, against Cerinthus' teaching; John 19:34; the sacraments | Jesus | 1-john/5.json `historical` | Repository |
+| 2:2 ‘the whole world’: not universalism (5:12); Arminian, Lutheran, evangelical; definite atonement (John 11:52); sufficient for all, effective for believers | Jesus | 1-john/2.json `hard` | Repository, no side |
+| 5:20 ‘the true God’: the Son or the Father debated; many read it of Christ | Jesus | 1-john/5.json `christ`; 1-john/intro.json `christ` | Repository |
+| Nicene Creed wording | Jesus | creeds/documents/nicene-creed.json `text` | Repository, exact phrases |
+| Assurance: Reformed, Wesleyan, Lutheran, Catholic (Trent's ‘without a special revelation’) | ‘So that you may know’ | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Care line ‘If you are a person whose conscience never rests ...’ | ‘So that you may know’ | colossians/plain/1.json (21-23 `hard`) | Word for word |
+| 5:7-8: Latin origin; a handful of late Greek manuscripts, some in the margin; Erasmus 1516, third edition 1522; King James; fourth-century Greek theologians did not quote it; most modern translations leave it out | Chapter 5; timeline | questions/text/passages-not-in-the-earliest-bibles.json (section 3); 1-john/5.json `historical` | Repository (live page's wording) |
+| Textus Receptus holders defend it from the Latin tradition and providence | Chapter 5 | theology/textual-criticism.json `biblicalEvidence` (1 John 5:7-8) | Repository |
+| Trinity confessed at Nicaea (325) and Constantinople (381) without it | Chapter 5; timeline | bible/guides/how-we-got-the-new-testament.json (section 6) | Repository |
+| Sin that leads to death: bodily death (Acts 5; 1 Corinthians 11:30); final rejection; blasphemy against the Spirit; Numbers 15:30; John does not forbid prayer | Chapter 5 | 1-john/5.json `hard` | Repository, no side |
+| Nothing about any person's state; no illness or death as judgment; John 9:3 | Chapter 5 | Instruction for this run; BSB | Stated, no claim |
+| Psalm 27:1; Leviticus 16:21; Psalm 32:5; Genesis 4:8; Leviticus 19:18; John 13:34; Jeremiah 31:33; Deuteronomy 19:15; Exodus 20:3 | Old Testament | 1-john/1.json, 3.json, 5.json `cultural`, `historical`; BSB | BSB text |
+| Anointing: kings, priests, prophets; most read the Spirit, some the gospel | Old Testament; key words | 1-john/2.json `cultural` | Repository |
+| Key words: koinōnia, homologeō, paraklētos, hilasmos, menō, antichristos, chrisma, anomia, agapē, marturia, eidōlon | Key words | 1-john/1.json to 5.json `words`; 2.json `cultural` | Repository |
+| Map: Ephesus at the point used on the Pauline maps; the letter names no place | Map | ephesians/intro.json `teaching.map`; 1-john/intro.json `setting` | Repository |
+
+Cut before publishing: a Wesleyan gloss on ‘faults and failings’ (not in the repository); ‘most readers’ on water and blood (now ‘many’, with the other readings); a link to the Questions page on missing passages (the guide is linked instead, to keep one name per page).
