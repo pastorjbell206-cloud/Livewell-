@@ -352,6 +352,13 @@
           "blurb": "Schellenberg's argument from nonresistant nonbelief, the hiddenness the psalms already pray, Pascal's light and obscurity, the reasons Christian philosophers give and their limits, and God found in the cross.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "hell-and-the-justice-of-god",
+          "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+          "blurb": "Russell, Adams and Ivan Karamazov on proportion, what all Christians confess about judgment, eternal conscious punishment, conditional immortality and the hope of restoration each in its holders' words with its hardest difficulty, and a word for anyone afraid.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1115,6 +1122,26 @@
       "area": "evil",
       "slug": "the-hiddenness-of-god",
       "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
+      "live": false
+    },
+    {
+      "claim": "No one who is really profoundly humane can believe in everlasting punishment, so Christ's belief in hell is a defect in his moral character",
+      "proponent": "Bertrand Russell",
+      "work": "Why I Am Not a Christian",
+      "year": 1927,
+      "area": "evil",
+      "slug": "hell-and-the-justice-of-god",
+      "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+      "live": false
+    },
+    {
+      "claim": "No sin committed by a finite creature in a life of ambiguity and ignorance could deserve an infinite penalty",
+      "proponent": "Marilyn McCord Adams",
+      "work": "The Problem of Hell: A Problem of Evil for Christians",
+      "year": 1993,
+      "area": "evil",
+      "slug": "hell-and-the-justice-of-god",
+      "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
       "live": false
     }
   ],

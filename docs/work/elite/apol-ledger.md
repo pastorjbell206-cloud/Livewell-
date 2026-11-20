@@ -1930,3 +1930,39 @@ Cut or not used: Tooley's own stance on God (not verified this run; the SEP arti
 | Those who never heard: left open as the Bible leaves it | The Honest Answer "What about those who never heard of Jesus?" | Agrees; no side taken |
 
 Cut or not used: Schellenberg's nationality and post (not verified); a 2015 book by him (its title not confirmed in the bibliography read); James 2:19 (its BSB text holds an em-dash and an exclamation; Hebrews 11:6 used instead).
+
+### am. "How could a good God punish anyone forever?" (hell-and-the-justice-of-god)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Russell, *Why I Am Not a Christian*, lecture in London, 1927: Christ believed in hell, a defect in his moral character; "I do not myself feel that any person who is really profoundly humane can believe in everlasting punishment."; hell-fire a doctrine of cruelty | The lecture's text read this run in a copy on GitHub (`yogthos/revenant`, `data/corpus/russell/why_i_am_not_a_christian.txt`, line 57); hell answer row (date and place) | Quoted |
+| Mill, *An Examination of Sir William Hamilton's Philosophy* (1865): he would call no being good who is not good in the sense meant of persons, and if sent to hell for refusing, to hell he would go | Hell answer row; Fitzjames Stephen's 1866 review quoting the passage, in a copy on GitHub (`shsr04/showcase`, text 12002) | Paraphrased (Mill's own text not read this run, so not quoted) |
+| Adams, "The Problem of Hell: A Problem of Evil for Christians," in Eleonore Stump, ed., *Reasoned Faith* (Cornell University Press, 1993), pp. 301-27; the question how a finite sin in a context of ambiguity, ignorance and illusion could deserve an infinite penalty | SEP providence bibliography (`Divine Providence.txt`, M. M. Adams 1993); SEP heaven and hell, 2.1 ("what Marilyn McCord Adams and many others see as the most crucial question of all ... (See Adams 1993, 313)"); her Christian account of horrors: IEP evidential, 4c | Verified; paraphrased. Note for the editor: the hell answer's ledger row gives this essay's title to Thomas Talbott; the SEP bibliography gives it to Adams. Reported, not changed (answers.ts is outside this run) |
+| Ivan: "What good can hell do, since those children have already been tortured? And what becomes of harmony, if there is hell? I want to forgive. I want to embrace. I don't want more suffering."; Alyosha's answer | Garnett (GH), book 5, chapter 4, read this run | Quoted |
+| Nicene Creed: "shall come again, with glory, to judge both the quick and the dead" | Repo (`client/public/creeds/documents/nicene-creed.json`), read this run | Quoted |
+| The three primary views and their holders: Augustinian, Arminian, universalist; the Fifth General Council's condemnation of universal reconciliation in 553 and its commitment to a final division; "most major theologians over the subsequent thousand years" accepting it; conditional immortality and the "self-created hell" as forms of final separation | SEP heaven and hell, sections 1 and 1.1 | Verified; paraphrased |
+| Augustine taught everlasting punishment in *The City of God* | SEP heaven and hell, section 2 and bibliography | Verified; no year given |
+| Augsburg Confession, article 17: Christ will condemn ungodly men and devils "to be tormented without end"; it condemns those who think there will be an end to the punishments of the condemned | Confessions (GH), read this run | Quoted (the first); the second paraphrased. The article's next clause, on "certain Jewish opinions", is not quoted or used |
+| Westminster Confession, chapter 33: the wicked "shall be cast aside into eternal torments, and punished with everlasting destruction, from the presence of the Lord" | Confessions (GH), read this run | Quoted. No year is given for either confession (neither copy states one) |
+| Athanasian Creed: "they that have done evil into everlasting fire" | Confessions (GH, `athanasian-creed.html`), read this run | Quoted in part ("they that have done evil", "into everlasting fire") |
+| Aquinas, *Summa Theologiae* I-II q.87 a.4: sin's two sides, the infinite good turned from | Hell answer row | Paraphrased |
+| Lewis, *The Problem of Pain* (1940): the damned "rebels to the end", the doors of hell locked on the inside | Hell answer row (quoted there); SEP heaven and hell, section 3 (quoting Lewis 1944, 115) | Paraphrased here (Lewis's book not read this run) |
+| Fudge, *The Fire That Consumes* (1982); Stott in Edwards and Stott, *Essentials* (1988), tentatively | Hell answer row | Verified |
+| Origen, *De Principiis* 1.6.2: "For the end is always like the beginning" | ANF Origen (GH, `anf04-45.htm`), read this run | Quoted (from "the end") |
+| Gregory of Nyssa's hope of restoration; Talbott, a Christian philosopher, *The Inescapable Love of God* (Universal Publishers, 1999) | Hell answer rows | Verified |
+| Kvanvig, *The Problem of Hell* (Oxford, 1993) | Hell answer row; SEP heaven and hell (Kvanvig 1993) | Verified |
+| The 2 Thessalonians 1 note: the traditional view held by most of the church through history, and conditional immortality, both taking judgment seriously | Note (2 Thessalonians 1, hard question), read this run | Agrees |
+| Acts 17:31; Revelation 20:12; Ezekiel 18:23; 1 Timothy 2:4; Acts 4:12; Matthew 25:46; 1 Timothy 6:16; Matthew 10:28; Romans 6:23; Revelation 14:11; Colossians 1:20; 1 Corinthians 15:28; Luke 16:26; Romans 3:26; John 5:22 (with an ellipsis, checked by hand); John 6:37; Genesis 18:25 (its last sentence only; the verse's first half holds an em-dash) | Repo (BSB, script) | Quoted |
+
+Care: the page speaks of no person's fate; it says nothing of anyone who has died by suicide; a paragraph for a reader afraid for himself or for someone who has died stands in the reply section, with Find Help and a pastor named. No side is taken between eternal conscious punishment and conditional immortality; the hope of restoration is stated as outside most confessions, without contempt, as the hell answer states it ("the church has generally not affirmed universal salvation").
+
+Cut or not used: Mill's three words (his text not read); Lewis's sentence as a quotation (the book not read); the confessions' years (not printed in the copies read); Balthasar's "hope" for all (not verified); "a growing number" of conditionalists (a trend not verified).
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Hume's *Dialogues* (1779); Mackie 1955; Rowe 1979; the arguments from animal suffering, hiddenness and hell | Rows ai to am | Verified |
+| "Some of their answers have been worse than silence" | The suffering answer and the film "Why do bad things happen?" | Agrees |
+| Defence, theodicy, logical and evidential problem, libertarian freedom, skeptical theism, conditional immortality | IEP evidential (1, 4b, 4c); IEP logical; SEP skeptical theism; SEP heaven and hell; Note (2 Thessalonians 1) | Verified |
+| What all confess, stated as confession | The creeds (repo) | Stated as confession |
