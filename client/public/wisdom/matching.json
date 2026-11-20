@@ -3054,6 +3054,26 @@
     "anxiety",
     "fear-of-the-future"
    ]
+  },
+  "information-overload": {
+   "phrases": [
+    "overwhelmed by information",
+    "cant focus on anything",
+    "constantly scrolling",
+    "too many notifications",
+    "brain feels fried",
+    "attention span is gone",
+    "consuming too much content",
+    "information overload",
+    "drowning in information",
+    "on my phone all day"
+   ],
+   "not": [],
+   "related": [
+    "technology-and-distraction",
+    "social-media",
+    "the-news-and-fear"
+   ]
   }
  }
 }
