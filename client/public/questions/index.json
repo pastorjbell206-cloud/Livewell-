@@ -323,8 +323,16 @@
       "planned": 12,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-logical-problem-of-evil",
+          "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+          "blurb": "Mackie's argument and its two hidden premises, Plantinga's free-will defence, Mackie's own later concession, the objection from heaven, and what a defence can and can't do.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "morality",
@@ -1017,10 +1025,31 @@
       "slug": "evolution-and-genesis",
       "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
       "live": false
+    },
+    {
+      "claim": "God's omnipotence, God's goodness and the existence of evil cannot all be true, so belief in God is positively irrational",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955,
+      "area": "evil",
+      "slug": "the-logical-problem-of-evil",
+      "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+      "live": false
+    },
+    {
+      "claim": "An all-powerful God could have made free people who always in fact choose the good, so the appeal to free will fails",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955,
+      "area": "evil",
+      "slug": "the-logical-problem-of-evil",
+      "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
+    "if-god-is-good-why-suffering": "If God is good, why is there so much suffering?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
     "how-can-god-be-three-and-one": "How can God be three and one?",

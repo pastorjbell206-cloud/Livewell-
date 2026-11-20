@@ -1,0 +1,108 @@
+{
+  "area": "evil",
+  "slug": "the-logical-problem-of-evil",
+  "status": "pending",
+  "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Seventeenth run (2026-11-20): an independent editor's read of the old-testament area, and the area \"Evil, suffering and judgment\"",
+    "key": "ai"
+  },
+  "record": "docs/work/elite/apol-pilot/evil/the-logical-problem-of-evil.md",
+  "objectionSource": {
+    "author": "J. L. Mackie",
+    "title": "Evil and Omnipotence",
+    "year": 1955
+  },
+  "shortAnswer": "This page weighs an argument; for someone who is hurting now, the pages on suffering (/wisdom/suffering) and on losing a child (/wisdom/losing-a-child), and Find Help (/help), are the better place to start. In 1955 the philosopher J. L. Mackie argued that God's power, God's goodness and the existence of evil can't all be true together. The answer that met his argument, the free-will defence that Alvin Plantinga set out in 1974, needed only to show that a good God could have a reason to permit evil, and Mackie himself later granted that his charge of contradiction did not stand. That is a real result, and a narrow one. It explains no one's suffering, it doesn't by itself reach earthquakes or disease, and it rests on a view of freedom some Christians don't hold. What Christians confess is larger than the defence: evil is a real enemy, and God has met it in the cross and will end it.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "The question is older than Christianity. A Christian teacher, Lactantius, preserved it early in the fourth century in order to answer it, crediting it to Epicurus: \"if He is both willing and able, which alone is suitable to God, from what source then are evils? or why does He not remove them?\" In 1779 David Hume gave the same questions to the skeptic Philo in his *Dialogues Concerning Natural Religion*: \"Is he willing to prevent evil, but not able? then is he impotent. Is he able, but not willing? then is he malevolent. Is he both able and willing? whence then is evil?\" Philo's verdict was that \"EPICURUS's old questions are yet unanswered.\"\n\nThe philosopher J. L. Mackie gave the questions their sharpest modern form in \"Evil and Omnipotence,\" published in the journal *Mind* in 1955. He didn't argue that evil makes God unlikely. He argued that belief in God is not merely unsupported but irrational, because its central claims contradict one another. The three claims, \"God is omnipotent,\" \"God is wholly good\" and \"evil exists,\" don't contradict each other on their face, and Mackie said so. The contradiction appears once two further principles are added, which he took to be part of what the words mean: that a good being always eliminates evil as far as it can, and that there are no limits to what an omnipotent being can do. Put those together and a wholly good, all-powerful God would leave no evil at all.\n\nMackie anticipated the obvious reply. Christians say evil comes from the misuse of freedom, and that freedom is worth its cost. Mackie asked, in substance, why an all-powerful God couldn't have made people who are free and who always in fact choose the good. If it is possible for one person on one occasion to choose freely and rightly, it seems possible for every person on every occasion to do so, and a God who could make such a world and made this one instead is either not wholly good or not all-powerful. At full strength the objection is not that the believer lacks evidence. It is that the believer's own creed, spelled out, contradicts itself."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "Mackie was right that many popular answers fail. To say evil is an illusion is to deny what every sufferer knows and what Scripture never denies. To say God simply has his reasons, and stop there, is not yet an answer to a charge of contradiction. And Mackie was right that the problem is the believer's own. Christians, more than anyone, insist that God is good and evil is evil, and they can't escape the argument by weakening either word.\n\nChristians should also concede that their worst answers have done harm. When a grieving parent is told that God needed another angel, or that everything happens for a reason, the speaker has offered an explanation Scripture never gives. Job's friends offered explanations of that kind at length, and at the end of the book God says to Eliphaz, \"you have not spoken about Me accurately, as My servant Job has\" (Job 42:7, BSB). The site's Honest Answer on suffering says it plainly: some of the answers Christians reach for first are worse than silence."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "An argument that claims a contradiction has a high bar. It must show that the claims can't possibly all be true, so it is answered by showing one consistent possibility, even one that no one can prove actual. That is the difference between a theodicy, which claims to give God's actual reasons, and a defence, which claims only that a reason is possible. Plantinga offered a defence in *God, Freedom, and Evil* (1974), and its logic is the heart of the matter.\n\nHe granted Mackie's premise about omnipotence in its proper sense: an all-powerful being can do anything that is not self-contradictory. Then he denied that a good being must eliminate every evil it can. A good being may permit an evil if the only way to prevent it would cost a good that outweighs it. Plantinga proposed such a good: a world containing creatures who are significantly free, free to do right and wrong in matters that count, is better than a world of creatures who can only do right. Making such a world, on his account, is a cooperative venture between God and the free creatures in it. God can create free persons and set them in circumstances, but if he causes them to do only what is right, they are not doing it freely.\n\nThat is his answer to Mackie's sharpest move. Whether a free creature would choose rightly in a given situation is not up to God if the creature is truly free, so it is possible that in any world God could make, free creatures would sometimes go wrong. Plantinga needed only that this is possible, not that it is true. And if it is possible, then it is possible that God could not create a world containing moral good without the risk of moral evil, and the contradiction disappears.\n\nThe defence was examined hard. In *The Miracle of Theism*, published in 1982 after his death, Mackie conceded that since such a defence is formally possible, the problem of evil does not, after all, show that the central doctrines of theism are logically inconsistent, though he went on to ask whether the defence offered a real solution. William Rowe, the atheist philosopher whose own argument from evil is the subject of the next page, wrote in a note to his 1979 article that no one, in his judgment, had succeeded in establishing that God and evil are logically inconsistent. Both men pressed the problem of evil hard; neither held that the charge of contradiction had been made good."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is a defence, not a theodicy: it argues that a set of claims is consistent, which requires only one possible story in which they are all true.",
+      "steps": [
+        "A wholly good being permits an evil it could prevent only if it has a reason that justifies permitting it, such as a greater good that could not be had without the risk of that evil.",
+        "A world of creatures significantly free to do right and wrong may be better than a world without such freedom, and it is possible that in any world God could create, some free creatures would freely do wrong.",
+        "Not even an all-powerful being can cause creatures to freely do only what is right, since freedom of that kind is not something one person can cause in another."
+      ],
+      "conclusion": "So: it is possible that an all-powerful and wholly good God permits moral evil for the sake of free creatures, and the existence of God and the existence of evil are not shown to contradict each other.",
+      "after": "The weight sits on the second step. If it could be shown that a world of free creatures who always choose rightly was within God's power to create, the defence would fail, and that is where critics have pressed it.",
+      "weightStep": 2
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply grants the logic and attacks the second step at its most vulnerable point: heaven. Christians believe that the redeemed in the life to come will be free and will never sin. If that world is possible, then a world of free creatures who never do wrong is possible after all, and Mackie's question returns. Why didn't God begin there? A second reply asks about the scale of evil. Even if freedom is worth some evil, it is hard to see that it is worth Auschwitz, and a good God, like a good parent or a good police officer, might be expected to stop the worst uses of freedom without abolishing freedom itself. And a third observes that the defence says nothing about disease, earthquakes or the suffering of animals, which no human choice causes.\n\nThese are serious, and they are the reason the defence is a small result. Christians answer the first in more than one way. Some hold that the freedom of the redeemed is a freedom that has been formed through a history of choosing, healed and confirmed by grace, and that a creature can't begin where the redeemed end any more than a person can be born with a lifetime's character. Others answer that the freedom of heaven is the gift of beholding God face to face, which removes every temptation by the sight of the good, and that this sight is given at the end of the story, not at its beginning. Neither answer is a proof, and the question is fairly called open. But neither restores the contradiction, which needed it to be impossible that God has a reason. The reply from scale presses the evidential argument, not the logical one, and the next page takes it up. The reply from natural evil is true as stated, and the page on natural evil and animal suffering takes it up on its own ground.\n\nWhat the defence can't do, the Christian faith never claimed it could. Christians do not believe they know why a particular evil was permitted. They believe that evil is real evil and an enemy, that God takes no pleasure in it, and that he has entered it in the person of his Son, who cried from the cross, \"My God, My God, why have You forsaken Me?\" (Matthew 27:46, BSB), and was raised. In Dostoevsky's novel *The Brothers Karamazov*, when Ivan asks whether anyone in the whole world could have the right to forgive the torturer of a child, his brother Alyosha answers that \"there is a Being and He can forgive everything, all and for all, because He gave His innocent blood for all and everything\" (in Constance Garnett's translation). That is not an argument for consistency. It is the Christian claim the argument only clears room for."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "Whether a world of free creatures who never sin was open to God at the beginning is unresolved, and it turns on what freedom is, which philosophers have argued over for two thousand years. Whether the possibility the defence needs is a real possibility or merely a formal one is still debated. And the defence leaves untouched the questions that hurt most: why this child, why this disease, why this much. Those are questions the evidential argument presses and that the book of Job refuses to answer with a formula."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ on the defence itself. Plantinga's argument assumes that freedom requires that a choice not be determined by anything outside the chooser, God included. Many Christians in the Reformed tradition, who hold that God ordains whatever comes to pass without being the author of sin, don't accept that view of freedom, and they answer Mackie differently: God permits evil for a good he knows and we don't, and his permission is not his approval. Christians in the Arminian, Wesleyan, Catholic and Orthodox traditions more often welcome the appeal to freedom. The site takes no side between these, which concern how God's sovereignty and human freedom fit together, a question faithful churches have divided over for centuries.\n\nWhat all of them confess is the floor beneath the argument: God is wholly good and almighty, the Maker of heaven and earth; evil is not his creature but the ruin of what he made; and in Christ crucified and risen he has met it and will end it, when \"He will wipe away every tear from their eyes, and there will be no more death or mourning or crying or pain\" (Revelation 21:4, BSB)."
+    }
+  ],
+  "otherSide": [
+    "J. L. Mackie, \"Evil and Omnipotence,\" *Mind* (1955).",
+    "J. L. Mackie, *The Miracle of Theism* (1982), which keeps the argument from evil while granting the point above.",
+    "David Hume, *Dialogues Concerning Natural Religion* (1779), parts 10 and 11."
+  ],
+  "further": [
+    "Alvin Plantinga, *God, Freedom, and Evil* (1974).",
+    "Daniel Howard-Snyder, ed., *The Evidential Argument from Evil* (1996), with essays from both sides.",
+    "Fyodor Dostoevsky, *The Brothers Karamazov* (1880), book 5, chapter 4, \"Rebellion.\""
+  ],
+  "onSite": [
+    "The argued answer \"If God is good, why is there so much suffering?\" (/answers/if-god-is-good-why-suffering), the short form of this area's questions.",
+    "The Study Bible's notes on Job 1 (/study/bible/job/1) and Job 42 (/study/bible/job/42).",
+    "\"Why do bad things happen?\" (/study/explorer/watch/why-bad-things-happen), the Bible Explorer's film for younger readers.",
+    "Suffering (/wisdom/suffering) and Find Help (/help), for anyone reading this in the middle of it."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "job",
+        "chapter": 1
+      },
+      {
+        "book": "job",
+        "chapter": 42
+      }
+    ],
+    "answers": [
+      "if-god-is-good-why-suffering"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "God's omnipotence, God's goodness and the existence of evil cannot all be true, so belief in God is positively irrational",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955
+    },
+    {
+      "claim": "An all-powerful God could have made free people who always in fact choose the good, so the appeal to free will fails",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955
+    }
+  ]
+}
