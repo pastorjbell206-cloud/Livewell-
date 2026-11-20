@@ -10504,3 +10504,27 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Oaths in the ancient world; God swore by himself; anchor an early Christian symbol in the catacombs; curtain; prodromos | 13-20 | Chapter deep note `cultural`; verses/6.json (16-18, 19-20) | Repository |
 | Genesis 22:16-17; Numbers 35:11; Leviticus 16:12; Psalm 110:4 | 13-20 | BSB | BSB text |
 | Oaths: Jesus' teaching on two levels of truth; Anabaptists of the 1500s; most churches; Hebrews 6:17 cited | 13-20 | matthew/plain/5.json (33-37 `hearers`, `hard`) | Repository, no side |
+
+## The plain notes on Hebrews 7 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Genesis 14:18-20; Salem usually Jerusalem (Psalm 76:2); priest of God Most High | 1-3 | genesis/plain/14.json (17-20); BSB | Repository; BSB text |
+| ‘King of righteousness’, ‘king of peace’ as Hebrews explains; Isaiah 9:7 | 1-3 | BSB 7:2; Isaiah 9:7 | BSB text |
+| Priestly descent required; Ezra 2:62 | 1-3 | Chapter deep note `cultural`; BSB | Repository; BSB text |
+| Silence of Scripture read as meaningful, a Jewish style of argument | 1-3 | Chapter deep note `cultural` | Repository |
+| Readings of verse 3: Genesis' silence (most); pre-incarnate Christ; Shem; heavenly figure in a Dead Sea Scroll | 1-3 | Chapter deep note `hard`, `historical`; genesis/plain/14.json (17-20 `hard`) | Repository, no side (11QMelchizedek and Philo not named) |
+| Tithe acknowledges superiority; blessing by the greater; descendants present in ancestors; ‘so to speak’ marks a figure | 4-10 | Chapter deep note `cultural`; verses/7.json (9-10) | Repository |
+| Numbers 18:21; Genesis 14:19; Genesis 35:11 | 4-10 | BSB | BSB text |
+| Tithe views; 2 Corinthians 9:7 | 4-10 | genesis/plain/14.json (17-20 `hard`) | Repository wording, no side |
+| Giving care line | 4-10 | 1-timothy/plain/6.json (3-10) | Word for word |
+| Perfection = access to God with a cleansed conscience; contrary-to-fact; Psalm 110 later than Moses | 11-19 | verses/7.json (11, 28) | Repository |
+| Judah, no priests; athetēsis a legal term for annulment; ‘former commandment’ the rule of descent | 11-19 | verses/7.json (12-14, 18-19) | Repository |
+| Psalm 19:7; Romans 7:12; 8:3; Genesis 49:10; 1 Corinthians 9:21 | 11-19 | BSB | BSB text |
+| Misuse named and rejected; Acts 2:22-28 pointer | 11-19 | acts/plain/2.json (22-28) | Repository wording |
+| Views of the law (threefold division; law of Christ) | 11-19 | doctrines/law.json `differ` | Repository, no side |
+| Oath; enguos, guarantor; first use of ‘covenant’; aparabatos; intercession continues; priest and offering one | 20-28 | verses/7.json (20-22, 23-25, 27); chapter deep note `words` | Repository |
+| Leviticus 16:6, 15; Isaiah 53:12; Psalm 110:4 | 20-28 | BSB | BSB text |
+| Chalcedon wording | 20-28 | creeds/documents/chalcedonian-definition.json | Repository text |
