@@ -498,7 +498,53 @@
     {
       "id": "resurrection",
       "title": "The resurrection",
-      "status": "coming"
+      "status": "finished",
+      "picture": "tomb",
+      "pictureLabel": "A tomb cut in the rock of a garden at first light, its round stone rolled aside and its doorway open and empty; on a far hill, an empty cross.",
+      "statement": {
+        "younger": "Jesus did not stay dead. On the third day God raised him from the grave, in his body, and he is alive. Because he lives, death is not the end for those who belong to him.",
+        "older": "Christians confess that on the third day Jesus rose bodily from the grave: an event, not a picture or a nice idea about spring. The whole faith stands on it; Paul says that if Christ has not been raised, faith is futile. And Christ is the firstfruits: his rising is the start of the resurrection promised to all who belong to him."
+      },
+      "quote": {
+        "ref": "1 Corinthians 15:20",
+        "text": "But Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep."
+      },
+      "rests": [
+        "1 Corinthians 15:3-8",
+        "1 Corinthians 15:17-20",
+        "Luke 24:1-7",
+        "John 20:1-18",
+        "Acts 2:24",
+        "Matthew 28:17"
+      ],
+      "question": {
+        "ask": "How could anyone know that Jesus really rose?",
+        "younger": "No one can prove it the way you prove a sum. But there are things almost every historian agrees on: Jesus really died; very soon his followers were sure they had seen him alive; two people who did not believe, Paul and Jesus' brother James, came to believe; and his friends began telling people in Jerusalem, where he was buried. Other explanations each fit part of this and struggle with the rest. Christians believe God raised him.",
+        "older": "History can't prove a miracle, and LiveWell's Honest Answer does not pretend it can. It starts from a short list of facts that nearly every historian of the period accepts, skeptics included: Jesus was crucified, his followers were soon convinced they had seen him alive, a persecutor and a doubting brother came to believe the same, and the preaching began in the city where he was buried. Each natural explanation covers part of the evidence and strains at the rest. Whether a person can accept the one that covers all of it depends on whether they have already decided that God can't act. You can weigh it all and still say no; even among the eleven, when they saw him, some doubted (Matthew 28:17)."
+      },
+      "stops": [
+        "cross",
+        "church",
+        "new-creation"
+      ],
+      "catechism": [
+        31,
+        52
+      ],
+      "deeper": [
+        {
+          "label": "Did the resurrection actually happen?",
+          "href": "/answers/did-the-resurrection-actually-happen"
+        },
+        {
+          "label": "Does God actually exist? (the question this one turns on)",
+          "href": "/answers/does-god-actually-exist"
+        },
+        {
+          "label": "The family catechism: did Jesus stay dead?",
+          "href": "/family/catechism#q31"
+        }
+      ]
     },
     {
       "id": "spirit",
@@ -508,7 +554,57 @@
     {
       "id": "church",
       "title": "The church",
-      "status": "coming"
+      "status": "finished",
+      "picture": "table",
+      "pictureLabel": "People of different kinds seated together round one table, with an open book, bread and a cup on it, under one roof and one lamp.",
+      "statement": {
+        "younger": "The church is God's family who follow Jesus together. It is not first a building. It is people, gathered by God's Spirit around Jesus, to worship God, to love one another and to tell others about him.",
+        "older": "The church is the whole company of God's people, gathered by the Spirit around Christ, called to worship God, love one another, and make him known to the world; that is how the family catechism words it. Paul calls it one body with many parts, and Peter a house of living stones. God saves people into a family, not alone."
+      },
+      "quote": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      },
+      "rests": [
+        "Acts 2:42-47",
+        "1 Corinthians 12:12-27",
+        "1 Peter 2:4-10",
+        "Ephesians 4:4-6",
+        "1 Corinthians 11:23-26",
+        "Matthew 28:18-20",
+        "Hebrews 10:24-25"
+      ],
+      "question": {
+        "ask": "If there is one church, why do churches do things so differently?",
+        "younger": "Churches do some things differently, like how they baptize and how they are led. But all who trust Jesus belong to his one church, with one Lord. Faithful Christians differ on these things and still call one another brothers and sisters.",
+        "older": "Churches share the confession of one Lord, the command Jesus gave to baptize in the name of the Father, the Son and the Holy Spirit, and the meal he gave, which proclaims “the Lord’s death until He comes” (1 Corinthians 11:26). They differ on who should be baptized (those old enough to confess faith, or also the children of believers) and how (by going under the water, or by pouring or sprinkling it), on what happens in the Lord's Supper, and on how churches are led (by bishops, by elders, or by the congregation deciding together). Faithful churches differ on these while confessing one Lord, and this card does not choose between them. The Study Bible's notes on Acts 2 and 1 Corinthians 11 set out each view."
+      },
+      "stops": [
+        "church",
+        "new-creation"
+      ],
+      "catechism": [
+        46,
+        60
+      ],
+      "deeper": [
+        {
+          "label": "Baptism: the Study Bible's notes on Acts 2",
+          "href": "/study/bible/acts/2"
+        },
+        {
+          "label": "The Lord's Supper: the Study Bible's notes on 1 Corinthians 11",
+          "href": "/study/bible/1-corinthians/11"
+        },
+        {
+          "label": "Can you be a Christian without going to church?",
+          "href": "/answers/can-you-be-a-christian-without-church"
+        },
+        {
+          "label": "The family catechism: what is the church?",
+          "href": "/family/catechism#q46"
+        }
+      ]
     },
     {
       "id": "life-to-come",

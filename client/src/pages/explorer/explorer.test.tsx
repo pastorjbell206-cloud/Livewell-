@@ -263,6 +263,34 @@ describe("the map", () => {
       expect(li.querySelector("a")).toBeNull();
     }
   });
+
+  it("the resurrection and church cards keep their limits, and show their films", async () => {
+    const cards = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/cards.json"), "utf8")
+    ).cards as { id: string; [k: string]: unknown }[];
+    const text = (id: string) => JSON.stringify(cards.find(c => c.id === id));
+    // The resurrection card reuses the Honest Answer's limits, in the third
+    // person: not a proof, and the women's testimony argument is not used.
+    const res = text("resurrection");
+    expect(res).toContain("History can't prove a miracle");
+    expect(res).toContain("still say no");
+    expect(res).not.toMatch(/\bI\b|\bwomen\b|testimony/);
+    // The church card says what all share and that it does not choose.
+    const church = text("church");
+    expect(church).toContain("this card does not choose between them");
+    expect(church).toContain("one Lord");
+    renderAt("/study/explorer");
+    const card = await screen.findByRole("group", { name: "The church" });
+    expect(
+      within(card).getByRole("link", { name: /What the church is/ })
+    ).toBeInTheDocument();
+    const rcard = screen.getByRole("group", { name: "The resurrection" });
+    expect(
+      within(rcard).getByRole("link", {
+        name: /Did Jesus really come back to life\?/,
+      })
+    ).toBeInTheDocument();
+  });
 });
 
 describe("a stop", () => {

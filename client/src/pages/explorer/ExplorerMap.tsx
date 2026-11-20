@@ -44,7 +44,7 @@ import {
   type Thread,
   type ThreadStop,
 } from "@/lib/explorer";
-import { HeadArt, MangerArt, Roundel } from "./art";
+import { ChurchTableArt, HeadArt, MangerArt, Roundel, TombArt } from "./art";
 import { LevelSwitch, ThreadIcon } from "./parts";
 import { Watch, WatchLinks } from "./Watch";
 import "./explorer.css";
@@ -548,6 +548,10 @@ function Believe({
                 <PlateFrame ratio={null}>
                   {c.picture === "manger" ? (
                     <MangerArt label={c.pictureLabel} />
+                  ) : c.picture === "tomb" ? (
+                    <TombArt label={c.pictureLabel} />
+                  ) : c.picture === "table" ? (
+                    <ChurchTableArt label={c.pictureLabel} />
                   ) : (
                     <Plate name="book" />
                   )}
