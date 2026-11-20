@@ -12162,3 +12162,33 @@ Cut before publishing: ‘used nowhere else in the Bible’ of tevah (not in the
 | Deuteronomy 15:13; Genesis 15:14; Exodus 12:35 | 16-22 | BSB | BSB text |
 
 Cut before publishing: Har Karkom and Jebel al-Lawz by name; the Shasu of Yhw and the Kenite hypothesis (kept for the book page's timeline and 6:3); Gregory of Nyssa's virgin-birth reading of the bush; the Huguenot seal and the Church of Scotland emblem; Tel Rehov's hives; the KJV's ‘backside of the desert’; the BSB wording ‘three-day journey’ (paraphrased, to keep the word out).
+
+## The plain notes on Exodus 4 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The objection answers 3:18 in its own words negated | 1-9 | exodus/verses/4.json (1) | Repository |
+| The uraeus and the first sign; the tail and trust; tsara'at as a range of skin diseases (Leviticus 13 and 14); the Nile sign previews 7:17-21 | 1-9 | exodus/4.json `cultural`; exodus/verses/4.json (8-9) | Repository |
+| Signs with a ‘voice’ (leqol ha'ot) | 1-9 | exodus/verses/4.json (8-9) | Repository |
+| Numbers 12:10; John 20:31 | 1-9 | BSB | BSB text |
+| Kevad-peh, the same ‘heavy’ as Pharaoh's heart; the three explanations of Moses' difficulty | 10-17 | exodus/verses/4.json (10); exodus/verses/7.json | Repository |
+| Ehyeh im-pikha; the four adjectives | 10-17 | exodus/verses/4.json (11-12) | Repository |
+| Disability not punishment; every person made by God, precious, no mistake | 10-17 | john/plain/9.json (1-7 `hard`) and psalms/plain/139.json (13-18 `hearers`), sentences reused word for word | Repository |
+| The fifth answer a refusal; the burning nose; Aaron glad; ‘as God’ a role | 10-17 | exodus/verses/4.json (13, 14, 15-17); exodus/4.json `literary` | Repository |
+| Deuteronomy 18:18; Jeremiah 1:9; Mark 7:37; John 9:3 | 10-17 | BSB; exodus/4.json `christ` | BSB text |
+| Jethro's leave; ‘staff of God’; the firstborn's double share and the heir to the throne | 18-23 | exodus/verses/4.json (18-20); exodus/4.json `cultural` | Repository |
+| Shallach and avad together; the last plague announced first; chazaq in the Piel | 18-23 | exodus/verses/4.json (21, 22-23) | Repository |
+| Hardening in three ways; not said of God in the first five plagues; three verbs; Reformed and Arminian; the strengthening reading | 18-23 | exodus/9.json `hard`; exodus/14.json `hard`; exodus/verses/4.json (21) | Repository; no side |
+| Hosea 11:1 looking back; Matthew 2:15 typological; Matthew 2:20 echoing 4:19 | 18-23 | exodus/4.json `christ`; exodus/verses/4.json (18-20) | Repository |
+| Hosea 11:1; Matthew 2:15, 20; Romans 9:17 | 18-23 | BSB | BSB text |
+| 4:24-26 obscure; the unnamed ‘him’; the Septuagint's angel; ‘feet’ open, perhaps a euphemism | 24-26 | exodus/4.json `hard`; exodus/verses/4.json (24, 25-26) | Repository |
+| Circumcision on the eighth day; Egyptians practised a form; flint at Gilgal | 24-26 | exodus/4.json `cultural` | Repository |
+| Three readings: the neglected sign, the preview of Passover, an older tradition | 24-26 | exodus/4.json `hard` | Repository; no side |
+| Karat as in Genesis 17:14 | 24-26 | exodus/verses/4.json (25-26) | Repository |
+| Genesis 17:14; Joshua 5:2; Romans 2:29 | 24-26 | BSB | BSB text |
+| Pagash in 24 and 27; the frame of belief; paqad from Genesis 50:24 | 27-31 | exodus/verses/4.json (27-28, 29-31); exodus/4.json `literary` | Repository |
+| Genesis 50:24; Psalm 105:26; Hebrews 3:5-6 | 27-31 | BSB | BSB text |
+
+Cut before publishing: the Saqqara relief; the names of the pharaohs on each date (on the book page); Eliezer's name; the reading of halevi as pointing to the priesthood.
