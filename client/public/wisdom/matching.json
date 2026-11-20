@@ -1864,13 +1864,22 @@
     "burnout",
     "burned out at work",
     "work is crushing",
-    "overworked"
+    "overworked",
+    "dread going to work",
+    "my job is killing me",
+    "working too many hours",
+    "boss expects too much",
+    "cant stop working",
+    "answering emails at midnight",
+    "no time off",
+    "work never ends"
    ],
    "not": [],
    "related": [
     "exhaustion",
     "rest-and-sabbath",
-    "work-life-balance"
+    "work-life-balance",
+    "mental-exhaustion"
    ]
   },
   "identity-and-worth": {
