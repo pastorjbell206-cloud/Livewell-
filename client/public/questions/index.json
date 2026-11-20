@@ -345,6 +345,13 @@
           "blurb": "Hume's Philo and Darwin's wasps, Draper's hypothesis of indifference, why free will doesn't reach it, the answers from law, growth, long processes and a fallen creation with the cost of each, and the hope of Romans 8.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-hiddenness-of-god",
+          "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
+          "blurb": "Schellenberg's argument from nonresistant nonbelief, the hiddenness the psalms already pray, Pascal's light and obscurity, the reasons Christian philosophers give and their limits, and God found in the cross.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1099,6 +1106,16 @@
       "slug": "natural-evil-and-animal-suffering",
       "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
       "live": false
+    },
+    {
+      "claim": "A perfectly loving God would make a relationship with himself possible for everyone capable of it who does not resist, so the existence of nonresistant unbelievers shows there is no such God",
+      "proponent": "J. L. Schellenberg",
+      "work": "Divine Hiddenness and Human Reason",
+      "year": 1993,
+      "area": "evil",
+      "slug": "the-hiddenness-of-god",
+      "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
+      "live": false
     }
   ],
   "answers": {
@@ -1106,7 +1123,9 @@
     "if-god-is-good-why-suffering": "If God is good, why is there so much suffering?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
+    "is-it-okay-to-be-angry-at-god": "Is it okay to be angry at God?",
     "how-can-god-be-three-and-one": "How can God be three and one?",
+    "what-about-those-who-never-heard": "What about those who never heard of Jesus?",
     "are-miracles-believable": "Are miracles believable?",
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",

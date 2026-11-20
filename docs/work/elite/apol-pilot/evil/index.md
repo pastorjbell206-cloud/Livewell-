@@ -17,6 +17,7 @@ These pages take the arguments one at a time. Each states the argument in the fo
 1. **If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?** Mackie's argument and its two hidden premises, Plantinga's free-will defence, Mackie's own later concession, the objection from heaven, and what a defence can and can't do.
 2. **Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?** Rowe's fawn and his argument, the inference from what we can't see, Wykstra's reply and skeptical theism, what it costs, Rowe's question about why God gives sufferers no assurance, and the answer Christians give in the cross.
 3. **Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?** Hume's Philo and Darwin's wasps, Draper's hypothesis of indifference, why free will doesn't reach it, the answers from law, growth, long processes and a fallen creation with the cost of each, and the hope of Romans 8.
+4. **If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?** Schellenberg's argument from nonresistant nonbelief, the hiddenness the psalms already pray, Pascal's light and obscurity, the reasons Christian philosophers give and their limits, and God found in the cross.
 
 ## Words these pages use
 

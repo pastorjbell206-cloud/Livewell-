@@ -1912,3 +1912,21 @@ Cut or not used: the description of Rowe's second case (left undescribed for the
 | The Romans 8 and Luke 13 notes | Notes, read this run | Agree |
 
 Cut or not used: Tooley's own stance on God (not verified this run; the SEP article is cited without naming its author's view); Ward and Brownlee on plate tectonics (in the answer; not needed here); any count of years of animal suffering beyond "hundreds of millions of years" as most geologists and biologists hold it.
+
+### al. "Don't sincere unbelievers show that there is no such God?" (the-hiddenness-of-god)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Schellenberg, *Divine Hiddenness and Human Reason* (Ithaca: Cornell University Press, 1993); "More than anyone else, Schellenberg has shaped the contemporary debate"; the argument's three steps and the subargument for premise 2 (perfect love, openness to relationship, belief required for relationship) | SEP hiddenness, introduction, section 2 and bibliography | Verified; paraphrased (a living author) |
+| His later replacement of culpability by resistance (2007; "I now see this focus on culpability and inculpability as a mistake", 2015) | SEP hiddenness, section 2 | Verified; paraphrased |
+| *The Wisdom to Doubt* (Cornell, 2007) | SEP hiddenness, bibliography | Verified |
+| The theistic explanations: freedom and moral development (Hick 1966; Murray, "Coercion and the Hiddenness of God," *American Philosophical Quarterly* 30 (1993); Swinburne); motives (Howard-Snyder); complacency (Kierkegaard, *Philosophical Fragments*, 1844); God's purpose of moral transformation (Moser); no single explanation total; the difficulty of discerning nonresistance; Schellenberg's reply that relationship with God is the greatest good and the goods can be had within it | SEP hiddenness, section 3 and bibliography | Verified; paraphrased |
+| Howard-Snyder and Moser, eds., *Divine Hiddenness: New Essays* (Cambridge University Press, 2002) | SEP hiddenness, bibliography | Verified |
+| Pascal, *Pensées* 430, published 1670 after his death: "has willed to make Himself quite recognisable"; "to appear openly to those who seek Him with all their heart, and to be hidden from those who flee from Him with all their heart"; "There is enough light for those who only desire to see, and enough obscurity for those who have a contrary disposition." | Pascal (GH, `izak/books`, `18269-h-4.html`, fragment 430), read this run; Trotter as translator and the year 1670: the third run's rows ("Pascal, *Pensées*, Trotter translation (GITenberg #18269)") | Quoted |
+| The dark night of the soul; Jesus' cry of dereliction as experience of abandonment | SEP hiddenness, introduction | Verified |
+| Luther's Heidelberg Disputation (1518): the theologian of the cross against the theologian of glory | Note (Mark 8), read this run | Agrees, paraphrased |
+| Psalm 88 as a gift to sufferers, bringing despair to God without tidying it | Note (Psalm 88, hard question), read this run | Agrees, paraphrased |
+| Isaiah 45:15; Romans 1:20; Psalm 13:1; Psalm 88:14; Jeremiah 29:13; Acts 17:27; Hebrews 11:6; Isaiah 53:3; John 14:9; Romans 8:39 | Repo (BSB, script; the two psalms checked by hand) | Quoted |
+| Those who never heard: left open as the Bible leaves it | The Honest Answer "What about those who never heard of Jesus?" | Agrees; no side taken |
+
+Cut or not used: Schellenberg's nationality and post (not verified); a 2015 book by him (its title not confirmed in the bibliography read); James 2:19 (its BSB text holds an em-dash and an exclamation; Hebrews 11:6 used instead).
