@@ -231,8 +231,16 @@
       "planned": 18,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "did-the-exodus-happen",
+          "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
+          "blurb": "What Egypt's silence does and doesn't show, the Delta, Rameses and Moses' Egyptian name, Merneptah's Israel, the date and the large numbers, and what remains open.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "science",
@@ -750,6 +758,26 @@
       "area": "jesus",
       "slug": "can-historians-affirm-a-miracle",
       "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+      "live": false
+    },
+    {
+      "claim": "Archaeology has found no trace of the exodus in Egypt or Sinai, so a single, unified exodus did not happen and the story is a later national epic",
+      "proponent": "Israel Finkelstein and Neil Asher Silberman",
+      "work": "The Bible Unearthed",
+      "year": 2001,
+      "area": "old-testament",
+      "slug": "did-the-exodus-happen",
+      "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
+      "live": false
+    },
+    {
+      "claim": "Two million Israelites wandering forty years would have left remains in Sinai, and none have been found",
+      "proponent": "Israel Finkelstein and Neil Asher Silberman",
+      "work": "The Bible Unearthed",
+      "year": 2001,
+      "area": "old-testament",
+      "slug": "did-the-exodus-happen",
+      "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
       "live": false
     },
     {
