@@ -45,6 +45,7 @@ import {
 } from "@/lib/explorer";
 import { Roundel } from "./art";
 import {
+  ChooseActivity,
   CycleActivity,
   hasScene,
   LevelSwitch,
@@ -341,6 +342,13 @@ function StopPage({
             )}
             {a.kind === "match" && (
               <MatchActivity
+                activity={a}
+                onDone={done}
+                doneBefore={doneBefore}
+              />
+            )}
+            {a.kind === "choose" && (
+              <ChooseActivity
                 activity={a}
                 onDone={done}
                 doneBefore={doneBefore}

@@ -38,7 +38,15 @@ const problems = [];
 const fail = (where, msg) => problems.push(`${where}: ${msg}`);
 
 const LEVELS = ["younger", "older"];
-const KINDS = new Set(["tap", "order", "match", "reveal", "walk", "cycle"]);
+const KINDS = new Set([
+  "tap",
+  "order",
+  "match",
+  "reveal",
+  "walk",
+  "cycle",
+  "choose",
+]);
 const norm = s =>
   s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
 
@@ -327,7 +335,15 @@ for (const { file, stop: s } of stops) {
         );
       refRule(`${w} activity ${st.id}`, st.whatRef);
       refRule(`${w} activity ${st.id} later`, st.laterRef);
+      if (st.asked || st.askedRef) {
+        if (!st.asked)
+          fail(`${w} activity ${st.id}`, "has a reference for what people said but no words");
+        refRule(`${w} activity ${st.id} asked`, st.askedRef);
+      }
     }
+    for (const k of ["intro", "laterLabel", "restart"])
+      if (k in a && !(typeof a[k] === "string" && a[k].trim()))
+        fail(`${w} activity`, `"${k}" must be a line of text`);
   } else if (a.kind === "cycle") {
     ids(a.stages ?? []);
     if (!Array.isArray(a.stages) || a.stages.length < 3)
@@ -341,6 +357,25 @@ for (const { file, stop: s } of stops) {
     refRule(`${w} activity again`, a.again?.ref);
     if (!a.end?.title || !a.end?.text)
       fail(`${w} activity`, "needs where the cycle leads");
+    refRule(`${w} activity end`, a.end?.ref);
+  } else if (a.kind === "choose") {
+    ids(a.moments ?? []);
+    if (!Array.isArray(a.moments) || a.moments.length < 3)
+      fail(`${w} activity`, "a choice needs three moments or more");
+    if (!a.options?.trust || !a.options?.grasp)
+      fail(`${w} activity`, "needs the words for both choices");
+    const answers = new Set((a.moments ?? []).map(m => m.answer));
+    if (answers.size < 2)
+      fail(`${w} activity`, "every moment has the same answer; give both kinds");
+    for (const m of a.moments ?? []) {
+      if (!m.who || !m.text || !m.why)
+        fail(`${w} activity ${m.id}`, "needs who, what happened, and why");
+      if (!["trust", "grasp"].includes(m.answer))
+        fail(`${w} activity ${m.id}`, `answer "${m.answer}" is not trust or grasp`);
+      refRule(`${w} activity ${m.id}`, m.ref);
+    }
+    if (!a.end?.title || !a.end?.text)
+      fail(`${w} activity`, "needs where the choices lead");
     refRule(`${w} activity end`, a.end?.ref);
   } else if (a.kind === "reveal") {
     ids(a.questions ?? []);

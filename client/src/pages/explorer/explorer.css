@@ -1143,3 +1143,78 @@ h3.ex-panel__title,
       color 0.2s ease;
   }
 }
+
+/* Trust or grab: one moment at a time, two buttons, the Bible's answer under them. */
+.ex-choose {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.ex-choose > li {
+  padding: var(--s-2);
+  border: 1px solid var(--borderdk);
+  border-radius: var(--radius-sm);
+  background: var(--bone);
+}
+.ex-choose__who {
+  font-family: var(--U);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-muted);
+  margin: 0 0 4px;
+}
+.ex-choose__text {
+  font-family: var(--font-reading);
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+.ex-choose__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ex-choose__btn {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--borderdk);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  color: var(--ink);
+  font-family: var(--U);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ex-choose__btn:hover {
+  border-color: var(--ink);
+}
+.ex-choose__btn[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bone);
+}
+.ex-choose__btn:focus-visible {
+  outline: 3px solid var(--mustard);
+  outline-offset: 2px;
+}
+.ex-choose__why {
+  font-family: var(--B);
+  font-size: 15.5px;
+  line-height: 1.55;
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.ex-choose__why b svg {
+  vertical-align: -3px;
+}
+.ex-walk--end {
+  margin-top: var(--s-2);
+}
+.ex-walk__asked {
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
