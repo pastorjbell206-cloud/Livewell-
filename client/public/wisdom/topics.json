@@ -560,24 +560,44 @@
       "application": "Say the specific thing you did, not the vague fact that something happened. Drop the word but, which cancels every clause before it. Do not demand forgiveness on your timeline, because the person you wounded does not owe you a quick release. And where you can, repair the actual damage, since the apology that changes nothing was never repentance, only regret at being caught.",
       "verses": [
         {
-          "ref": "Psalm 51:4",
-          "text": "Against You, You only, have I sinned and done what is evil in Your sight, so that You may be proved right when You speak and blameless when You judge."
+          "ref": "Genesis 3:12-13",
+          "text": "And the man answered, “The woman whom You gave me, she gave me fruit from the tree, and I ate it.” Then the LORD God said to the woman, “What is this you have done?” “The serpent deceived me,” she replied, “and I ate.”"
         },
         {
-          "ref": "Proverbs 28:13",
-          "text": "He who conceals his sins will not prosper, but whoever confesses and renounces them will find mercy."
+          "ref": "Psalm 51:3",
+          "text": "For I know my transgressions, and my sin is always before me."
         },
         {
-          "ref": "James 5:16",
-          "text": "Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man has great power to prevail."
+          "ref": "1 Samuel 15:30",
+          "text": "“I have sinned,” Saul replied. “Please honor me now before the elders of my people and before Israel. Come back with me, so that I may worship the LORD your God.”"
+        },
+        {
+          "ref": "Luke 19:8",
+          "text": "But Zacchaeus stood up and said to the Lord, “Look, Lord, half of my possessions I give to the poor, and if I have cheated anyone, I will repay it fourfold.”"
         },
         {
           "ref": "Matthew 5:23-24",
           "text": "So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar. First go and be reconciled to your brother; then come and offer your gift."
         },
         {
-          "ref": "1 John 1:9",
-          "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+          "ref": "Luke 15:18-21",
+          "text": "I will get up and go back to my father and say to him, “Father, I have sinned against heaven and against you. I am no longer worthy to be called your son. Make me like one of your hired servants.”’ So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him. The son declared, ‘Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.’"
+        },
+        {
+          "ref": "Proverbs 28:13",
+          "text": "He who conceals his sins will not prosper, but whoever confesses and renounces them will find mercy."
+        },
+        {
+          "ref": "2 Corinthians 7:10-11",
+          "text": "Godly sorrow brings repentance that leads to salvation without regret, but worldly sorrow brings death. Consider what this godly sorrow has produced in you: what earnestness, what eagerness to clear yourselves, what indignation, what alarm, what longing, what zeal, what vindication! In every way you have proved yourselves to be innocent in this matter."
+        },
+        {
+          "ref": "Numbers 5:5-7",
+          "text": "And the LORD said to Moses, “Tell the Israelites that when a man or woman acts unfaithfully against the LORD by committing any sin against another, that person is guilty and must confess the sin he has committed. He must make full restitution, add a fifth to its value, and give all this to the one he has wronged."
+        },
+        {
+          "ref": "James 5:16",
+          "text": "Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous man has great power to prevail."
         }
       ],
       "related": [
@@ -3151,16 +3171,36 @@
           "text": "But exhort one another daily, as long as it is called today, so that none of you may be hardened by sin’s deceitfulness."
         },
         {
+          "ref": "Acts 4:36-37",
+          "text": "Joseph, a Levite from Cyprus, whom the apostles called Barnabas (meaning Son of Encouragement), sold a field he owned, brought the money, and laid it at the apostles’ feet."
+        },
+        {
+          "ref": "Acts 9:26-27",
+          "text": "When Saul arrived in Jerusalem, he tried to join the disciples, but they were all afraid of him, not believing that he was a disciple. Then Barnabas brought him to the apostles and described how Saul had seen the Lord, who spoke to him on the road to Damascus, and how Saul had spoken boldly in that city in the name of Jesus."
+        },
+        {
           "ref": "Proverbs 12:25",
           "text": "Anxiety weighs down the heart of a man, but a good word cheers it up."
         },
         {
-          "ref": "Galatians 6:2",
-          "text": "Carry one another’s burdens, and in this way you will fulfill the law of Christ."
+          "ref": "Isaiah 35:3-4",
+          "text": "Strengthen the limp hands and steady the feeble knees! Say to those with anxious hearts: “Be strong, do not fear! Behold, your God will come with vengeance. With divine retribution He will come to save you.”"
         },
         {
-          "ref": "Proverbs 25:11",
-          "text": "A word fitly spoken is like apples of gold in settings of silver."
+          "ref": "Ephesians 4:29",
+          "text": "Let no unwholesome talk come out of your mouths, but only what is helpful for building up the one in need and bringing grace to those who listen."
+        },
+        {
+          "ref": "2 Corinthians 7:6-7",
+          "text": "But God, who comforts the downcast, comforted us by the arrival of Titus, and not only by his arrival, but also by the comfort he had received from you. He told us about your longing, your mourning, and your zeal for me, so that I rejoiced all the more."
+        },
+        {
+          "ref": "Romans 1:11-12",
+          "text": "For I long to see you so that I may impart to you some spiritual gift to strengthen you, that is, that you and I may be mutually encouraged by each other’s faith."
+        },
+        {
+          "ref": "2 Timothy 1:16-17",
+          "text": "May the Lord grant mercy to the household of Onesiphorus, because he has often refreshed me and was unashamed of my chains. Indeed, when he arrived in Rome, he searched diligently until he found me."
         }
       ],
       "related": [
@@ -4240,6 +4280,22 @@
           "text": "A gentle answer turns away wrath, but a harsh word stirs up anger."
         },
         {
+          "ref": "Proverbs 25:15",
+          "text": "Through patience a ruler can be persuaded, and a gentle tongue can break a bone."
+        },
+        {
+          "ref": "Numbers 12:3",
+          "text": "Now Moses was a very humble man, more so than any man on the face of the earth."
+        },
+        {
+          "ref": "Isaiah 40:11",
+          "text": "He tends His flock like a shepherd; He gathers the lambs in His arms and carries them close to His heart. He gently leads the nursing ewes."
+        },
+        {
+          "ref": "Matthew 21:5",
+          "text": "“Say to the Daughter of Zion, ‘See, your King comes to you, gentle and riding on a donkey, on a colt, the foal of a donkey.’”"
+        },
+        {
           "ref": "Matthew 5:5",
           "text": "Blessed are the meek, for they will inherit the earth."
         },
@@ -4248,12 +4304,16 @@
           "text": "Let your gentleness be apparent to all. The Lord is near."
         },
         {
-          "ref": "Galatians 6:1",
-          "text": "Brothers, if someone is caught in a trespass, you who are spiritual should restore him with a spirit of gentleness. But watch yourself, or you also may be tempted."
+          "ref": "Galatians 5:22-23",
+          "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law."
         },
         {
-          "ref": "Matthew 11:29",
-          "text": "Take My yoke upon you and learn from Me; for I am gentle and humble in heart, and you will find rest for your souls."
+          "ref": "1 Peter 3:15-16",
+          "text": "But in your hearts sanctify Christ as Lord. Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you. But respond with gentleness and respect, keeping a clear conscience, so that those who slander you may be put to shame by your good behavior in Christ."
+        },
+        {
+          "ref": "James 3:17",
+          "text": "But the wisdom from above is first of all pure, then peace-loving, gentle, accommodating, full of mercy and good fruit, impartial, and sincere."
         }
       ],
       "related": [
@@ -6017,20 +6077,40 @@
           "text": "A gossip reveals a secret, but a trustworthy person keeps a confidence."
         },
         {
+          "ref": "Luke 2:19",
+          "text": "But Mary treasured up all these things and pondered them in her heart."
+        },
+        {
+          "ref": "Proverbs 25:9-10",
+          "text": "Argue your case with your neighbor without betraying another’s confidence, lest the one who hears may disgrace you, and your infamy never go away."
+        },
+        {
           "ref": "Proverbs 16:28",
           "text": "A perverse man spreads dissension, and a gossip divides close friends."
         },
         {
-          "ref": "Proverbs 17:9",
-          "text": "Whoever conceals an offense promotes love, but he who brings it up separates friends."
+          "ref": "Proverbs 26:20",
+          "text": "Without wood, a fire goes out; without gossip, a conflict ceases."
         },
         {
-          "ref": "Proverbs 20:19",
-          "text": "He who reveals secrets is a constant gossip; avoid the one who babbles with his lips."
+          "ref": "Judges 16:16-18",
+          "text": "Finally, after she had pressed him daily with her words and pleaded until he was sick to death, Samson told her all that was in his heart: “My hair has never been cut, because I have been a Nazirite to God from my mother’s womb. If I am shaved, my strength will leave me, and I will become as weak as any other man.” When Delilah realized that he had revealed to her all that was in his heart, she sent this message to the lords of the Philistines: “Come up once more, for he has revealed to me all that is in his heart.” Then the lords of the Philistines came to her, bringing the money in their hands."
+        },
+        {
+          "ref": "Leviticus 19:16",
+          "text": "You must not go about spreading slander among your people. You must not endanger the life of your neighbor. I am the LORD."
         },
         {
           "ref": "James 1:26",
           "text": "If anyone considers himself religious and yet does not bridle his tongue, he deceives his heart and his religion is worthless."
+        },
+        {
+          "ref": "Matthew 18:15",
+          "text": "If your brother sins against you, go and confront him privately. If he listens to you, you have won your brother over."
+        },
+        {
+          "ref": "John 15:15",
+          "text": "No longer do I call you servants, for a servant does not understand what his master is doing. But I have called you friends, because everything I have learned from My Father I have made known to you."
         }
       ],
       "related": [
@@ -6133,24 +6213,44 @@
       "application": "Kindness is mostly small and unrecorded, the patient word, the unhurried attention, the help no one will know you gave. Look hardest at how you treat the people who can do nothing for you, the server, the stranger, the one already down. Let your kindness cost you something, since the kindness that costs nothing changes nothing. And remember that you have received a mercy you never earned, which is the only soil where real kindness grows.",
       "verses": [
         {
-          "ref": "Ephesians 4:32",
-          "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
-        },
-        {
-          "ref": "Colossians 3:12",
-          "text": "Therefore, as the elect of God, holy and beloved, clothe yourselves with hearts of compassion, kindness, humility, gentleness, and patience."
-        },
-        {
           "ref": "Micah 6:8",
           "text": "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?"
+        },
+        {
+          "ref": "Luke 10:33-35",
+          "text": "But when a Samaritan on a journey came upon him, he looked at him and had compassion. He went to him and bandaged his wounds, pouring on oil and wine. Then he put him on his own animal, brought him to an inn, and took care of him. The next day he took out two denarii and gave them to the innkeeper. ‘Take care of him,’ he said, ‘and on my return I will repay you for any additional expense.’"
+        },
+        {
+          "ref": "Ruth 2:11-12",
+          "text": "Boaz replied, “I have been made fully aware of all you have done for your mother-in-law since the death of your husband, how you left your father and mother and the land of your birth, and how you came to a people you did not know before. May the LORD repay your work, and may you receive a rich reward from the LORD, the God of Israel, under whose wings you have taken refuge.”"
+        },
+        {
+          "ref": "2 Samuel 9:7",
+          "text": "“Do not be afraid,” said David, “for surely I will show you kindness for the sake of your father Jonathan. I will restore to you all the land of your grandfather Saul, and you will always eat at my table.”"
+        },
+        {
+          "ref": "Proverbs 19:17",
+          "text": "Kindness to the poor is a loan to the LORD, and He will repay the lender."
+        },
+        {
+          "ref": "Proverbs 12:10",
+          "text": "A righteous man regards the life of his animal, but the tender mercies of the wicked are only cruelty."
+        },
+        {
+          "ref": "Mark 1:41",
+          "text": "Moved with compassion, Jesus reached out His hand and touched the man. “I am willing,” He said. “Be clean!”"
+        },
+        {
+          "ref": "Acts 28:2",
+          "text": "The islanders showed us extraordinary kindness. They kindled a fire and welcomed all of us because it was raining and cold."
         },
         {
           "ref": "Romans 2:4",
           "text": "Or do you disregard the riches of His kindness, tolerance, and patience, not realizing that God’s kindness leads you to repentance?"
         },
         {
-          "ref": "Proverbs 11:17",
-          "text": "A kind man benefits himself, but a cruel man brings trouble on himself."
+          "ref": "Titus 3:4-5",
+          "text": "But when the kindness of God our Savior and His love for mankind appeared, He saved us, not by the righteous deeds we had done, but according to His mercy, through the washing of new birth and renewal by the Holy Spirit."
         }
       ],
       "related": [
@@ -7507,24 +7607,44 @@
       "application": "Treat rest as obedience, not reward, and put real Sabbath and real sleep back into your week before you collapse. Cut what you can actually cut, since burnout is often the bill for a life with no margin and no word of no in it. Eat, sleep, and walk, the physical mercies God gave Elijah, and let people share the load you were never meant to carry alone. And if the exhaustion does not lift with rest, if it dulls your sleep, your hope, or your will to go on, see a doctor or counselor, for sustained burnout and depression are real and treatable, not weakness to be ashamed of.",
       "verses": [
         {
-          "ref": "Matthew 11:28-29",
-          "text": "Come to Me, all you who are weary and burdened, and I will give you rest. Take My yoke upon you and learn from Me; for I am gentle and humble in heart, and you will find rest for your souls."
+          "ref": "1 Kings 19:5-8",
+          "text": "Then he lay down under the broom tree and fell asleep. Suddenly an angel touched him and said, “Get up and eat.” And he looked around, and there by his head was a cake of bread baked over hot coals, and a jar of water. So he ate and drank and lay down again. A second time the angel of the LORD returned and touched him, saying, “Get up and eat, or the journey will be too much for you.” So he got up and ate and drank. And strengthened by that food, he walked forty days and forty nights until he reached Horeb, the mountain of God."
+        },
+        {
+          "ref": "John 4:6",
+          "text": "Since Jacob’s well was there, Jesus, weary from His journey, sat down by the well. It was about the sixth hour."
+        },
+        {
+          "ref": "Isaiah 40:28-31",
+          "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary; His understanding is beyond searching out. He gives power to the faint and increases the strength of the weak. Even youths grow tired and weary, and young men stumble and fall. But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint."
+        },
+        {
+          "ref": "Numbers 11:16-17",
+          "text": "Then the LORD said to Moses, “Bring Me seventy of the elders of Israel known to you as leaders and officers of the people. Bring them to the Tent of Meeting and have them stand there with you. And I will come down and speak with you there, and I will take some of the Spirit that is on you and put that Spirit on them. They will help you bear the burden of the people, so that you do not have to bear it by yourself."
+        },
+        {
+          "ref": "Psalm 6:6",
+          "text": "I am weary from groaning; all night I flood my bed with weeping and drench my couch with tears."
+        },
+        {
+          "ref": "2 Corinthians 4:16",
+          "text": "Therefore we do not lose heart. Though our outer self is wasting away, yet our inner self is being renewed day by day."
+        },
+        {
+          "ref": "Psalm 23:2-3",
+          "text": "He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the paths of righteousness for the sake of His name."
         },
         {
           "ref": "Psalm 127:2",
           "text": "In vain you rise early and stay up late, toiling for bread to eat— for He gives sleep to His beloved."
         },
         {
-          "ref": "1 Kings 19:5-7",
-          "text": "Then he lay down under the broom tree and fell asleep. Suddenly an angel touched him and said, “Get up and eat.” And he looked around, and there by his head was a cake of bread baked over hot coals, and a jar of water. So he ate and drank and lay down again. A second time the angel of the LORD returned and touched him, saying, “Get up and eat, or the journey will be too much for you.”"
+          "ref": "Mark 6:31",
+          "text": "And He said to them, “Come with Me privately to a solitary place, and let us rest for a while.” For many people were coming and going, and they did not even have time to eat."
         },
         {
-          "ref": "Exodus 20:9-10",
-          "text": "Six days you shall labor and do all your work, but the seventh day is a Sabbath to the LORD your God, on which you must not do any work—neither you, nor your son or daughter, nor your manservant or maidservant or livestock, nor the foreigner within your gates."
-        },
-        {
-          "ref": "Isaiah 40:29",
-          "text": "He gives power to the faint and increases the strength of the weak."
+          "ref": "Ecclesiastes 12:12",
+          "text": "And by these, my son, be further warned: There is no end to the making of many books, and much study wearies the body."
         }
       ],
       "related": [
@@ -7981,24 +8101,44 @@
       "application": "Do not trust the numbness as if it were the truth about you or about God. Keep returning to the ordinary acts, prayer, work, the table, even when they carry no feeling, since faithfulness does not wait on emotion. Name what you have stopped letting yourself feel, and let one safe person near it. If the deadness persists for weeks, dulls your sleep and appetite, or pulls you toward harm, see a doctor or counselor, for this can be the face of depression and is not a thing to carry alone.",
       "verses": [
         {
-          "ref": "Ezekiel 36:26",
-          "text": "I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh."
+          "ref": "Psalm 38:6-8",
+          "text": "I am bent and brought low; all day long I go about mourning. For my loins are full of burning pain, and no soundness remains in my body. I am numb and badly crushed; I groan in anguish of heart."
+        },
+        {
+          "ref": "Genesis 45:26-27",
+          "text": "“Joseph is still alive,” they said, “and he is ruler over all the land of Egypt!” But Jacob was stunned, for he did not believe them. However, when they relayed all that Joseph had told them, and when he saw the wagons that Joseph had sent to carry him back, the spirit of their father Jacob was revived."
+        },
+        {
+          "ref": "1 Samuel 30:4-6",
+          "text": "So David and the troops with him lifted up their voices and wept until they had no strength left to weep. David’s two wives, Ahinoam of Jezreel and Abigail the widow of Nabal of Carmel, had been taken captive. And David was greatly distressed because the people spoke of stoning him, because the soul of every man grieved for his sons and daughters. But David found strength in the LORD his God."
         },
         {
           "ref": "Psalm 42:5",
           "text": "Why are you downcast, O my soul? Why the unease within me? Put your hope in God, for I will yet praise Him for the salvation of His presence."
         },
         {
-          "ref": "Psalm 143:7",
-          "text": "Answer me quickly, O LORD; my spirit fails. Do not hide Your face from me, or I will be like those who descend to the Pit."
+          "ref": "Psalm 143:4-6",
+          "text": "My spirit grows faint within me; my heart is dismayed inside me. I remember the days of old; I meditate on all Your works; I consider the work of Your hands. I stretch out my hands to You; my soul thirsts for You like a parched land. Selah"
         },
         {
-          "ref": "Lamentations 3:22-23",
-          "text": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+          "ref": "Psalm 102:3-4",
+          "text": "For my days vanish like smoke, and my bones burn like glowing embers. My heart is afflicted, and withered like grass; I even forget to eat my bread."
         },
         {
-          "ref": "John 11:35",
-          "text": "Jesus wept."
+          "ref": "Lamentations 3:17-23",
+          "text": "My soul has been deprived of peace; I have forgotten what prosperity is. So I say, “My strength has perished, along with my hope from the LORD.” Remember my affliction and wandering, the wormwood and the gall. Surely my soul remembers and is humbled within me. Yet I call this to mind, and therefore I have hope: Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+        },
+        {
+          "ref": "Romans 8:26",
+          "text": "In the same way, the Spirit helps us in our weakness. For we do not know how we ought to pray, but the Spirit Himself intercedes for us with groans too deep for words."
+        },
+        {
+          "ref": "Isaiah 42:3",
+          "text": "A bruised reed He will not break and a smoldering wick He will not extinguish; He will faithfully bring forth justice."
+        },
+        {
+          "ref": "John 11:33-35",
+          "text": "When Jesus saw her weeping, and the Jews who had come with her also weeping, He was deeply moved in spirit and troubled. “Where have you put him?” He asked. “Come and see, Lord,” they answered. Jesus wept."
         }
       ],
       "related": [
@@ -8660,20 +8800,40 @@
           "text": "Peace I leave with you; My peace I give to you. I do not give to you as the world gives. Do not let your hearts be troubled; do not be afraid."
         },
         {
-          "ref": "Philippians 4:7",
-          "text": "And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+          "ref": "Philippians 4:6-7",
+          "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
         },
         {
-          "ref": "Isaiah 26:3",
-          "text": "You will keep in perfect peace the steadfast of mind, because he trusts in You."
+          "ref": "Numbers 6:24-26",
+          "text": "‘May the LORD bless you and keep you; may the LORD cause His face to shine upon you and be gracious to you; may the LORD lift up His countenance toward you and give you peace.’"
+        },
+        {
+          "ref": "Romans 5:1-2",
+          "text": "Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ, through whom we have gained access by faith into this grace in which we stand. And we rejoice in the hope of the glory of God."
         },
         {
           "ref": "Colossians 3:15",
           "text": "Let the peace of Christ rule in your hearts, for to this you were called as members of one body. And be thankful."
         },
         {
-          "ref": "Romans 12:18",
-          "text": "If it is possible on your part, live at peace with everyone."
+          "ref": "Mark 4:38-39",
+          "text": "But Jesus was in the stern, sleeping on the cushion. So they woke Him and said, “Teacher, don’t You care that we are perishing?” Then Jesus got up and rebuked the wind and the sea. “Silence!” He commanded. “Be still!” And the wind died down, and it was perfectly calm."
+        },
+        {
+          "ref": "Jeremiah 6:14",
+          "text": "They dress the wound of My people with very little care, saying, ‘Peace, peace,’ when there is no peace at all."
+        },
+        {
+          "ref": "Judges 6:23-24",
+          "text": "But the LORD said to him, “Peace be with you. Do not be afraid, for you will not die.” So Gideon built an altar to the LORD there and called it The LORD Is Peace. To this day it stands in Ophrah of the Abiezrites."
+        },
+        {
+          "ref": "Isaiah 32:16-18",
+          "text": "Then justice will inhabit the wilderness, and righteousness will dwell in the fertile field. The work of righteousness will be peace; the service of righteousness will be quiet confidence forever. Then my people will dwell in a peaceful place, in safe and secure places of rest."
+        },
+        {
+          "ref": "Matthew 5:9",
+          "text": "Blessed are the peacemakers, for they will be called sons of God."
         }
       ],
       "related": [
@@ -9232,24 +9392,44 @@
       "application": "Stop searching for a hidden purpose as if it were buried treasure and start with what is already in front of you, the people and work God has placed in your hands. Ask not only what you want but what you are for, what gifts and what need have met in you. And let your meaning rest on being loved by God rather than on being impressive, since the first never fails and the second always will.",
       "verses": [
         {
-          "ref": "Ephesians 2:10",
-          "text": "For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance as our way of life."
+          "ref": "Genesis 2:15",
+          "text": "Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it."
         },
         {
-          "ref": "Jeremiah 29:11",
-          "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope."
-        },
-        {
-          "ref": "Ecclesiastes 12:13",
-          "text": "When all has been heard, the conclusion of the matter is this: Fear God and keep His commandments, because this is the whole duty of man."
-        },
-        {
-          "ref": "Micah 6:8",
-          "text": "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?"
+          "ref": "Psalm 8:3-5",
+          "text": "When I behold Your heavens, the work of Your fingers, the moon and the stars, which You have set in place— what is man that You are mindful of him, or the son of man that You care for him? You made him a little lower than the angels; You crowned him with glory and honor."
         },
         {
           "ref": "Colossians 1:16",
           "text": "For in Him all things were created, things in heaven and on earth, visible and invisible, whether thrones or dominions or rulers or authorities. All things were created through Him and for Him."
+        },
+        {
+          "ref": "Ephesians 2:10",
+          "text": "For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance as our way of life."
+        },
+        {
+          "ref": "Matthew 22:37-39",
+          "text": "Jesus declared, “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment. And the second is like it: ‘Love your neighbor as yourself.’"
+        },
+        {
+          "ref": "Mark 8:35-36",
+          "text": "For whoever wants to save his life will lose it, but whoever loses his life for My sake and for the gospel will save it. What does it profit a man to gain the whole world, yet forfeit his soul?"
+        },
+        {
+          "ref": "1 Corinthians 10:31",
+          "text": "So whether you eat or drink or whatever you do, do it all to the glory of God."
+        },
+        {
+          "ref": "1 Peter 4:10-11",
+          "text": "As good stewards of the manifold grace of God, each of you should use whatever gift he has received to serve one another. If anyone speaks, he should speak as one conveying the words of God. If anyone serves, he should serve with the strength God provides, so that in all things God may be glorified through Jesus Christ, to whom be the glory and the power forever and ever. Amen."
+        },
+        {
+          "ref": "Psalm 90:12",
+          "text": "So teach us to number our days, that we may present a heart of wisdom."
+        },
+        {
+          "ref": "Ecclesiastes 12:13",
+          "text": "When all has been heard, the conclusion of the matter is this: Fear God and keep His commandments, because this is the whole duty of man."
         }
       ],
       "related": [
@@ -9507,24 +9687,44 @@
       "application": "Stop expecting the next thing to settle you, and let the restlessness drive you toward God rather than away from him. Practice a real stillness, a Sabbath, a walk, an hour without a screen, long enough to hear what the noise has been covering. Ask whether the unease is the soul's true hunger or only an unwillingness to sit with yourself, since both wear the same face. And put your roots down somewhere, since restlessness often heals not by moving on but by staying put.",
       "verses": [
         {
-          "ref": "Psalm 62:1",
-          "text": "For the choirmaster. According to Jeduthun. A Psalm of David. In God alone my soul finds rest; my salvation comes from Him."
+          "ref": "Ecclesiastes 3:11",
+          "text": "He has made everything beautiful in its time. He has also set eternity in the hearts of men, yet they cannot fathom the work that God has done from beginning to end."
         },
         {
-          "ref": "Matthew 11:28",
-          "text": "Come to Me, all you who are weary and burdened, and I will give you rest."
+          "ref": "Ecclesiastes 2:10-11",
+          "text": "Anything my eyes desired, I did not deny myself. I refused my heart no pleasure. For my heart took delight in all my work, and this was the reward for all my labor. Yet when I considered all the works that my hands had accomplished and what I had toiled to achieve, I found everything to be futile, a pursuit of the wind; there was nothing to be gained under the sun."
         },
         {
-          "ref": "Ecclesiastes 1:14",
-          "text": "I have seen all the things that are done under the sun, and have found them all to be futile, a pursuit of the wind."
+          "ref": "Isaiah 55:1-2",
+          "text": "“Come, all you who are thirsty, come to the waters; and you without money, come, buy, and eat! Come, buy wine and milk without money and without cost! Why spend money on that which is not bread, and your labor on that which does not satisfy? Listen carefully to Me, and eat what is good, and your soul will delight in the richest of foods."
         },
         {
-          "ref": "Hebrews 4:9-10",
-          "text": "There remains, then, a Sabbath rest for the people of God. For whoever enters God’s rest also rests from his own work, just as God did from His."
+          "ref": "John 4:13-14",
+          "text": "Jesus said to her, “Everyone who drinks this water will be thirsty again. But whoever drinks the water I give him will never thirst. Indeed, the water I give him will become in him a fount of water springing up to eternal life.”"
         },
         {
-          "ref": "Psalm 23:2",
-          "text": "He makes me lie down in green pastures; He leads me beside quiet waters."
+          "ref": "Psalm 63:1",
+          "text": "O God, You are my God. Earnestly I seek You; my soul thirsts for You. My body yearns for You in a dry and weary land without water."
+        },
+        {
+          "ref": "Jeremiah 2:13",
+          "text": "“For My people have committed two evils: They have forsaken Me, the fountain of living water, and they have dug their own cisterns— broken cisterns that cannot hold water."
+        },
+        {
+          "ref": "Hebrews 4:9-11",
+          "text": "There remains, then, a Sabbath rest for the people of God. For whoever enters God’s rest also rests from his own work, just as God did from His. Let us, therefore, make every effort to enter that rest, so that no one will fall by following the same pattern of disobedience."
+        },
+        {
+          "ref": "Philippians 4:11-12",
+          "text": "I am not saying this out of need, for I have learned to be content regardless of my circumstances. I know how to live humbly, and I know how to abound. I am accustomed to any and every situation—to being filled and being hungry, to having plenty and having need."
+        },
+        {
+          "ref": "Isaiah 30:15",
+          "text": "For the Lord GOD, the Holy One of Israel, has said: “By repentance and rest you would be saved; your strength would lie in quiet confidence— but you were not willing.”"
+        },
+        {
+          "ref": "Hebrews 11:13-16",
+          "text": "All these people died in faith, without having received the things they were promised. However, they saw them and welcomed them from afar. And they acknowledged that they were strangers and exiles on the earth. Now those who say such things show that they are seeking a country of their own. If they had been thinking of the country they had left, they would have had opportunity to return. Instead, they were longing for a better country, a heavenly one. Therefore God is not ashamed to be called their God, for He has prepared a city for them."
         }
       ],
       "related": [
@@ -10279,24 +10479,44 @@
       "application": "Receive your sensitivity as a gift and a calling, the raw material of compassion, rather than a wound to be ashamed of. Learn to govern it, so that feeling deeply does not mean being ruled by every feeling, and bring the strongest emotions to God before you act on them. Guard your inputs wisely, since a tender heart can be flooded, and give it the rest and the boundaries it needs. And let the same depth that makes you hurt make you kind, turning what you feel into how you love.",
       "verses": [
         {
-          "ref": "Romans 12:15",
-          "text": "Rejoice with those who rejoice; weep with those who weep."
-        },
-        {
           "ref": "Matthew 9:36",
           "text": "When He saw the crowds, He was moved with compassion for them, because they were harassed and helpless, like sheep without a shepherd."
         },
         {
-          "ref": "Colossians 3:12",
-          "text": "Therefore, as the elect of God, holy and beloved, clothe yourselves with hearts of compassion, kindness, humility, gentleness, and patience."
-        },
-        {
-          "ref": "Proverbs 4:23",
-          "text": "Guard your heart with all diligence, for from it flow springs of life."
+          "ref": "Genesis 43:30",
+          "text": "Joseph hurried out because he was moved to tears for his brother, and he went to a private room to weep."
         },
         {
           "ref": "Psalm 56:8",
           "text": "You have taken account of my wanderings. Put my tears in Your bottle— are they not in Your book?"
+        },
+        {
+          "ref": "Romans 12:15",
+          "text": "Rejoice with those who rejoice; weep with those who weep."
+        },
+        {
+          "ref": "Proverbs 25:20",
+          "text": "Like one who removes a garment on a cold day or vinegar poured on a wound is one who sings songs to a heavy heart."
+        },
+        {
+          "ref": "Proverbs 14:10",
+          "text": "The heart knows its own bitterness, and no stranger shares in its joy."
+        },
+        {
+          "ref": "2 Corinthians 11:28-29",
+          "text": "Apart from these external trials, I face daily the pressure of my concern for all the churches. Who is weak, and I am not weak? Who is led into sin, and I do not burn with grief?"
+        },
+        {
+          "ref": "Jeremiah 9:1",
+          "text": "Oh, that my head were a spring of water, and my eyes a fountain of tears! I would weep day and night over the slain daughter of my people."
+        },
+        {
+          "ref": "1 Peter 3:8",
+          "text": "Finally, all of you, be like-minded and sympathetic, love as brothers, be tenderhearted and humble."
+        },
+        {
+          "ref": "Hebrews 4:15",
+          "text": "For we do not have a high priest who is unable to sympathize with our weaknesses, but we have one who was tempted in every way that we are, yet was without sin."
         }
       ],
       "related": [
@@ -13693,24 +13913,44 @@
       "application": "Treat your limits as a message, not an enemy, and ask what the exhaustion is trying to tell you. Build a real stop into your week and defend it before the work eats it. Refuse the lie that your worth rises and falls with your output. And if the burnout has hollowed out your sleep, your joy, and your love for the people closest to you, get help, because that is not weakness but stewardship of the one body you were given.",
       "verses": [
         {
-          "ref": "Matthew 11:28",
-          "text": "Come to Me, all you who are weary and burdened, and I will give you rest."
-        },
-        {
           "ref": "Exodus 23:12",
           "text": "For six days you are to do your work, but on the seventh day you must cease, so that your ox and your donkey may rest and the son of your maidservant may be refreshed, as well as the foreign resident."
         },
         {
-          "ref": "Psalm 127:2",
-          "text": "In vain you rise early and stay up late, toiling for bread to eat— for He gives sleep to His beloved."
+          "ref": "Deuteronomy 5:13-15",
+          "text": "Six days you shall labor and do all your work, but the seventh day is a Sabbath to the LORD your God, on which you must not do any work—neither you, nor your son or daughter, nor your manservant or maidservant, nor your ox or donkey or any of your livestock, nor the foreigner within your gates, so that your manservant and maidservant may rest as you do. Remember that you were a slave in the land of Egypt, and that the LORD your God brought you out of there with a mighty hand and an outstretched arm. That is why the LORD your God has commanded you to keep the Sabbath day."
         },
         {
-          "ref": "Mark 6:31",
-          "text": "And He said to them, “Come with Me privately to a solitary place, and let us rest for a while.” For many people were coming and going, and they did not even have time to eat."
+          "ref": "Exodus 18:17-18",
+          "text": "But Moses’ father-in-law said to him, “What you are doing is not good. Surely you and these people with you will wear yourselves out, because the task is too heavy for you. You cannot handle it alone."
         },
         {
           "ref": "Ecclesiastes 4:6",
           "text": "Better one handful with tranquility than two handfuls with toil and pursuit of the wind."
+        },
+        {
+          "ref": "Ecclesiastes 2:22-24",
+          "text": "For what does a man get for all the toil and striving with which he labors under the sun? Indeed, all his days are filled with grief, and his task is sorrowful; even at night, his mind does not rest. This too is futile. Nothing is better for a man than to eat and drink and enjoy his work. I have also seen that this is from the hand of God."
+        },
+        {
+          "ref": "Proverbs 23:4-5",
+          "text": "Do not wear yourself out to get rich; be wise enough to restrain yourself. When you glance at wealth, it disappears, for it makes wings for itself and flies like an eagle to the sky."
+        },
+        {
+          "ref": "Nehemiah 4:10",
+          "text": "Meanwhile, the people of Judah said: “The strength of the laborer fails, and there is so much rubble that we will never be able to rebuild the wall.”"
+        },
+        {
+          "ref": "Mark 2:27-28",
+          "text": "Then Jesus declared, “The Sabbath was made for man, not man for the Sabbath. Therefore, the Son of Man is Lord even of the Sabbath.”"
+        },
+        {
+          "ref": "James 5:4",
+          "text": "Look, the wages you withheld from the workmen who mowed your fields are crying out against you. The cries of the harvesters have reached the ears of the Lord of Hosts."
+        },
+        {
+          "ref": "Psalm 104:23",
+          "text": "Man goes forth to his work and to his labor until evening."
         }
       ],
       "related": [
