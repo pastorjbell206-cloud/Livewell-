@@ -10357,3 +10357,32 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Jeremiah late seventh and early sixth centuries BC; Jerusalem destroyed 587 or 586 BC | Timeline | hebrews/8.json `historical` | Repository |
 | Map: Italy only, a region placed roughly near the frame's own ITALY label (40.6 N, 16.0 E); no place of writing or receiving claimed | Map | BookMap.tsx mediterranean frame label (39.95 N, 16.1 E); BSB 13:24 | Repository |
 | Deeper links: incarnation, offices, atonement, covenant, israel, perseverance, temple, faith | Go deeper | bible/doctrines.json | Repository |
+
+## The plain notes on Hebrews 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Verses 1-4 one sentence in Greek; rhythm; ‘in many ways’ | 1-4 | Chapter deep note `literary`; verses/1.json (1) | Repository |
+| Apaugasma (radiance); charaktēr (stamp, coin); katharismos (purification) | 1-4 | Chapter deep note `words` | Repository |
+| Angels and the giving of the law (2:2; Acts 7:53) | 1-4 | Chapter deep note `story` | Repository; BSB |
+| Priests stand, the Son sits (10:11) | 1-4 | Chapter deep note `doctrines` (atonement); BSB 10:11 | Repository; BSB |
+| ‘Became superior’ refers to the exaltation after humiliation (2:9) | 1-4 | verses/1.json (4) | Repository |
+| Nicene Creed and Chalcedon wording | 1-4; 5-6; 7-9 | creeds/documents | Repository text |
+| Amos 3:7; Numbers 12:8; Psalm 2:8; Psalm 33:6; Proverbs 8:27; Leviticus 16:30; Psalm 110:1 | 1-4 | BSB | BSB text |
+| Quotations introduced as God's speech | 5-6 | verses/1.json (5) | Repository |
+| Psalm 2 a royal psalm, many scholars think a coronation song | 5-6 | psalms/plain/2.json (1-3) | Repository |
+| 2 Samuel 7:12-14 (Solomon first); Psalm 89:27 (firstborn); Job 1:6 | 5-6 | BSB; chapter deep note `cultural`, `words` | BSB text; repository |
+| Deuteronomy 32:43 longer form in the Greek and a Dead Sea Scroll; BSB follows it; Psalm 97:7 | 5-6 | deuteronomy/32.json; verses/1.json (6) | Repository; BSB text |
+| ‘Today’ read of the coronation; of the resurrection (Acts 13:33) | 5-6 | verses/1.json (5); psalms/plain/2.json (4-9 `later`) | Repository; BSB |
+| ‘When God brings His firstborn’: birth, exaltation, return | 5-6 | verses/1.json (6) (Lane, Westcott; not named) | Repository |
+| Colossians 2:18, the worship of angels | 5-6; 10-14 | Chapter deep note `historical` | Repository; BSB |
+| Psalm 104:4: Hebrew mal'akh messenger or angel, ruach wind or spirit; Hebrews follows the Greek | 7-9 | lex H4397, H7307, G4151 (‘Heb.1:7 (LXX)’); verses/1.json (7) | Repository |
+| Psalm 45 a royal wedding song; translators differ; court language; elohim of rulers; Jewish readings | 7-9 | psalms/plain/45.json (1-9 `hard`); chapter deep note `hard` | Repository |
+| The Son God, yet not the Father (verses 8-9) | 7-9 | psalms/plain/45.json (1-9 `later`) | Repository |
+| Isaiah 9:6 | 7-9 | BSB | BSB text |
+| Psalm 102:1, 25-27; Hebrews' wording differs (‘O Lord’, ‘roll them up’), the writer usually following the Greek | 10-14 | BSB; hebrews/intro.json `reading` | BSB text; repository |
+| Psalm 110:1 most quoted or echoed; Matthew 22:42-45 | 10-14 | psalms/plain/110.json (1-3 `later`) | Repository; BSB |
+| Psalm 34:7; Philippians 2:10-11 takes up Isaiah; John 1:3 | 10-14 | Chapter deep note `hard`; BSB | Repository; BSB |
+| Angels continually sent to serve believers | 10-14 | verses/1.json (14) | Repository |
