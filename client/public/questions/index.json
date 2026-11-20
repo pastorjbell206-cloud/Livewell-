@@ -405,8 +405,16 @@
       "planned": 14,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-crusades",
+          "question": "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?",
+          "blurb": "Hume's verdict, the preaching at Clermont and the promise of forgiveness, the massacres of 1096 and 1099 and the sack of Constantinople, the conquests that came before, and the cross made a soldier's badge.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "religions",
@@ -1298,6 +1306,16 @@
       "area": "evil",
       "slug": "hell-and-the-justice-of-god",
       "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+      "live": false
+    },
+    {
+      "claim": "The Crusades were the most signal and durable monument of human folly, made possible by a church that offered holy war as an atonement for every violation of justice",
+      "proponent": "David Hume",
+      "work": "The History of England",
+      "year": 1762,
+      "area": "morality",
+      "slug": "the-crusades",
+      "question": "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?",
       "live": false
     }
   ],
