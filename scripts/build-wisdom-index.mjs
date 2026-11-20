@@ -132,7 +132,11 @@ const firstSentence = (s) => {
   return (m ? m[0] : s).trim();
 };
 
-const fill = (ref) => passage(ref).text;
+// The verse's words exactly; a psalm quoted from verse 1 drops its heading ("For the choirmaster. A Psalm of David."), as the Study Bible's reading text does.
+const fill = (ref) => {
+  const r = readRef(ref);
+  return r && r.book.slug === "psalms" && r.parts[0].v1 === 1 ? readingText(ref) : passage(ref).text;
+};
 const placeFields = (ref) => {
   const at = place(ref);
   return { slug: at.slug, chapter: at.chapter, v1: at.v1, v2: at.v2 };
