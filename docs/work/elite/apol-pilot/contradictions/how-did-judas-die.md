@@ -1,7 +1,7 @@
 ---
 area: contradictions
 slug: how-did-judas-die
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?"
 ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "aa"
 ---

@@ -1,7 +1,7 @@
 ---
 area: contradictions
 slug: the-two-genealogies
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?"
 ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "z"
 ---

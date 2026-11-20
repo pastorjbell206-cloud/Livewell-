@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: the-god-of-the-old-testament
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-third run", key "bn"
 ---

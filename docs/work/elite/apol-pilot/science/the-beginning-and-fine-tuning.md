@@ -1,7 +1,7 @@
 ---
 area: science
 slug: the-beginning-and-fine-tuning
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?"
 ledger: docs/work/elite/apol-ledger.md, "Thirteenth run", key "r"
 ---

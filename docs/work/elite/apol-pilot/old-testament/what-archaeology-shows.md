@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: what-archaeology-shows
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Archaeologists have found no trace of the exodus, a Jericho without walls, and little sign of a great kingdom under David and Solomon. Does archaeology confirm the Old Testament, or undermine it?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-third run", key "bq"
 ---

@@ -1,7 +1,7 @@
 ---
 area: science
 slug: miracles-and-the-laws-of-nature
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?"
 ledger: docs/work/elite/apol-ledger.md, "Thirteenth run", key "q"
 ---

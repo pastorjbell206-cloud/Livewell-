@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: which-old-testament-laws
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-third run", key "bo"
 ---

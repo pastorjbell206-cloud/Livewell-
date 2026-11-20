@@ -1,7 +1,7 @@
 ---
 area: god
 slug: the-ontological-argument
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?"
 ledger: docs/work/elite/apol-ledger.md, "Eighteenth run", key "ap"
 ---

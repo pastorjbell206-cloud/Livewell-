@@ -1,7 +1,7 @@
 ---
 area: religions
 slug: those-who-never-heard
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?"
 ledger: docs/work/elite/apol-ledger.md, "Twentieth run", key "az"
 ---

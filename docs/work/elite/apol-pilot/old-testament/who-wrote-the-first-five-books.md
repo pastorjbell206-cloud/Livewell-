@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: who-wrote-the-first-five-books
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-third run", key "bm"
 ---

@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: abraham-and-isaac
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-third run", key "bp"
 ---

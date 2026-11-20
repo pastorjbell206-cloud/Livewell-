@@ -110,6 +110,7 @@ export function buildQuestionsIndex(root = REPO) {
       slug: a.slug,
       n: a.n,
       title: a.title,
+      ...(a.line ? { line: a.line } : {}),
       planned: a.planned,
       status: a.status,
       live: a.live,

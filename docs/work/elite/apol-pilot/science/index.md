@@ -1,7 +1,7 @@
 ---
 area: science
 slug: science
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 title: "Science"
 proposed address: /questions/science
 ---

@@ -2,10 +2,13 @@
  * The apologetics library's pages (pages/questions, lib/questions) read from
  * the committed files in client/public/questions:
  * the data loads in the shapes the pages expect; the room lists the plan's ten
- * areas with only the text area linked, and is live with it (James,
- * 2026-11-20), its nine pieces live and the god, authors, contradictions, jesus, old-testament, science, evil, morality and religions areas pending; a live piece renders word for word with no review line and no
- * noindex, its argument as a numbered list with the weight-bearing step marked;
- * a pending piece keeps noindex and the review line; and nothing outside the
+ * areas, each linked, with its one line and its number of live pieces, and is
+ * live (James, 2026-11-20: "publish all of this when ready"); every piece that
+ * has had its second read is live, and the pieces still waiting for one (the
+ * five newest in science and in morality) are pending; a live piece renders
+ * word for word with no review line and no noindex, its argument as a numbered
+ * list with the weight-bearing step marked; a pending piece keeps noindex and
+ * the review line and is listed on no live page; and nothing outside the
  * library links a pending page.
  */
 import fs from "node:fs";
@@ -57,42 +60,29 @@ const evil = index.areas.find((a) => a.slug === "evil")!;
 const god = index.areas.find((a) => a.slug === "god")!;
 const morality = index.areas.find((a) => a.slug === "morality")!;
 const religions = index.areas.find((a) => a.slug === "religions")!;
+/** The morality pieces written after the area went live, pending until their second read. */
+const MORALITY_PENDING: string[] = [];
 
 describe("the questions library's data", () => {
-  it("lists the plan's ten areas; the text area and its nine pieces are live, the god, authors, contradictions, jesus, old-testament, science, evil, morality and religions areas and their pieces pending", () => {
+  const PENDING: Record<string, string[]> = {
+    science: ["how-old-is-the-earth", "adam-eve-and-human-origins", "is-the-mind-just-the-brain", "neuroscience-and-free-will", "near-death-experiences"],
+    morality: MORALITY_PENDING,
+  };
+  const LIVE_COUNT: Record<string, number> = { god: 5, text: 9, authors: 10, contradictions: 5, jesus: 10, "old-testament": 10, science: 5, evil: 5, morality: 5, religions: 5 };
+
+  it("lists the plan's ten areas, all live, each with its line; only the pieces still waiting for a second read are pending", () => {
     expect(index.areas.map((a) => a.n)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(index.roomLive).toBe(true);
-    expect(text.live).toBe(true);
+    expect(index.areas.map((a) => a.slug)).toEqual(["god", "text", "authors", "contradictions", "jesus", "old-testament", "science", "evil", "morality", "religions"]);
+    for (const a of index.areas) {
+      expect(a.live, a.slug).toBe(true);
+      expect((a.line ?? "").length, a.slug).toBeGreaterThan(20);
+      const pending = a.pieces.filter((p) => !p.live).map((p) => p.slug);
+      expect(pending, a.slug).toEqual(PENDING[a.slug] ?? []);
+      expect(a.pieces.filter((p) => p.live).length, a.slug).toBe(LIVE_COUNT[a.slug]);
+      for (const p of a.pieces) expect(p.live, p.slug).toBe(p.status === "live");
+    }
     expect(text.pieces.map((p) => p.slug)).toEqual(["more-variants-than-words", "copies-of-copies", "passages-not-in-the-earliest-bibles", "did-scribes-make-jesus-more-divine", "compared-with-other-ancient-books", "who-decides-what-the-text-says", "king-james-and-the-missing-verses", "lost-in-translation", "an-angry-jesus-mark-1-41"]);
-    expect(text.pieces.every((p) => p.live)).toBe(true);
-    expect(authors.live).toBe(false);
-    expect(authors.pieces.length).toBeGreaterThan(0);
-    expect(authors.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(science.live).toBe(false);
-    expect(science.pieces.length).toBe(10);
-    expect(science.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(jesus.live).toBe(false);
-    expect(jesus.pieces.length).toBe(10);
-    expect(jesus.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(contradictions.live).toBe(false);
-    expect(contradictions.pieces.length).toBe(5);
-    expect(contradictions.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(oldTestament.live).toBe(false);
-    expect(oldTestament.pieces.length).toBe(10);
-    expect(oldTestament.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(evil.live).toBe(false);
-    expect(evil.pieces.length).toBe(5);
-    expect(evil.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(god.live).toBe(false);
-    expect(god.pieces.length).toBeGreaterThan(0);
-    expect(god.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(morality.live).toBe(false);
-    expect(morality.pieces.length).toBe(5);
-    expect(morality.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(religions.live).toBe(false);
-    expect(religions.pieces.length).toBe(5);
-    expect(religions.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
-    expect(index.areas.filter((a) => a.pieces.length > 0).map((a) => a.slug)).toEqual(["god", "text", "authors", "contradictions", "jesus", "old-testament", "science", "evil", "morality", "religions"]);
   });
 
   it("gives every piece the parts the pages render", () => {
@@ -114,13 +104,18 @@ describe("the questions library's data", () => {
 });
 
 describe("the room", () => {
-  it("lists ten areas, links only the text area, and is published", async () => {
+  it("lists ten areas, each linked with its line and its number of live pieces, and is published", async () => {
     at("/questions", <QuestionsRoom />);
     await waitFor(() => expect(document.querySelectorAll(".qx-areas > li")).toHaveLength(10));
     const links = Array.from(document.querySelectorAll(".qx-areas a")).map((a) => a.getAttribute("href"));
-    expect(links).toEqual(["/questions/text"]);
-    expect(screen.getAllByText("Being written")).toHaveLength(9);
-    expect(screen.getByText("9 pieces")).toBeInTheDocument();
+    expect(links).toEqual(index.areas.map((a) => `/questions/${a.slug}`));
+    expect(screen.queryByText("Being written")).toBeNull();
+    const cards = Array.from(document.querySelectorAll(".qx-areas > li"));
+    index.areas.forEach((a, i) => {
+      const n = a.pieces.filter((p) => p.live).length;
+      expect(cards[i].textContent, a.slug).toContain(a.line!);
+      expect(cards[i].querySelector(".qx-area__count")?.textContent?.trim(), a.slug).toBe(`${n} pieces`);
+    });
     expect(screen.queryByText(REVIEW_LINE)).toBeNull();
     expect(robots()).not.toContain("noindex");
   });
@@ -135,6 +130,18 @@ describe("the area", () => {
     for (const p of text.pieces.filter((x) => !x.live)) expect(listed).not.toContain(`/questions/text/${p.slug}`);
     expect(screen.queryByText(REVIEW_LINE)).toBeNull();
     expect(screen.getByText("Autograph")).toBeInTheDocument();
+  });
+});
+
+describe("an area with pieces still waiting for a second read", () => {
+  it("lists its live pieces and none of the pending ones", async () => {
+    at("/questions/science", <QuestionsArea />);
+    expect(await screen.findByRole("heading", { level: 1, name: "Science" })).toBeInTheDocument();
+    await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(5));
+    const listed = Array.from(document.querySelectorAll(".qx-pieces a")).map((a) => a.getAttribute("href"));
+    expect(listed).toEqual(science.pieces.filter((p) => p.live).map((p) => `/questions/science/${p.slug}`));
+    expect(screen.queryByText(REVIEW_LINE)).toBeNull();
+    expect(robots()).not.toContain("noindex");
   });
 });
 
@@ -165,8 +172,8 @@ describe("a piece", () => {
   });
 
   it("pending: says noindex and carries the review line", async () => {
-    const pending = authors.pieces.find((p) => !p.live)!;
-    at(`/questions/authors/${pending.slug}`, <QuestionPiece />);
+    const pending = science.pieces.find((p) => !p.live)!;
+    at(`/questions/science/${pending.slug}`, <QuestionPiece />);
     expect(await screen.findByRole("heading", { level: 1, name: pending.question })).toBeInTheDocument();
     expect(await screen.findByText(REVIEW_LINE)).toBeInTheDocument();
     await waitFor(() => expect(robots()).toContain("noindex"));

@@ -150,14 +150,16 @@ function answers() {
 
 /** The questions library's live pieces (scripts/lib/questions.mjs); a pending piece is never searched. */
 function questions() {
-  return loadQuestions(ROOT).areas.flatMap((a) =>
-    a.pieces.filter((p) => p.live).map((p) => ({
+  return loadQuestions(ROOT).areas.flatMap((a) => [
+    // A live area's own page, by its title and the line the room shows.
+    ...(a.live && a.page ? [{ title: str(a.title), blurb: str(a.line || ""), keywords: "case for the faith apologetics", href: `/questions/${a.slug}` }] : []),
+    ...a.pieces.filter((p) => p.live).map((p) => ({
       title: str(p.question),
       blurb: clip(p.shortAnswer),
       keywords: `${str(a.title)} ${(p.claims || []).map((c) => str(c.claim)).join(" ")}`.trim(),
       href: `/questions/${a.slug}/${p.slug}`,
-    }))
-  );
+    })),
+  ]);
 }
 
 /**

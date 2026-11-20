@@ -1,7 +1,7 @@
 ---
 area: science
 slug: has-science-made-god-unnecessary
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?"
 ledger: docs/work/elite/apol-ledger.md, "Thirteenth run", key "o"
 ---

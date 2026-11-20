@@ -1,7 +1,7 @@
 ---
 area: god
 slug: the-cosmological-argument
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?"
 ledger: docs/work/elite/apol-ledger.md, "Eighteenth run", key "an"
 ---
