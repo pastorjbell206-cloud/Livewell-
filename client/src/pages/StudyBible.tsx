@@ -13,7 +13,7 @@
  * layer (introductions, notes, the story path) follows docs/BIBLE-NOTES-SPEC.md.
  * The story and doctrine pages live in StudyBibleStory and StudyBibleDoctrines.
  */
-import { lazy, Suspense, useEffect, useId, useMemo, useState, type CSSProperties, type ReactNode } from "react";
+import { Fragment, lazy, Suspense, useEffect, useId, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { Link, useRoute, useSearch } from "wouter";
 import { useLocationProperty } from "wouter/use-browser-location";
 import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, NotebookPen, PencilLine, X } from "lucide-react";
@@ -70,6 +70,7 @@ import { ChapterHead, ChapterNotesBody, OutlinePanel, useStoryPlace } from "@/pa
 import { VerseEntry } from "@/pages/study-bible/VerseNotes";
 import { GoToPassage } from "@/pages/study-bible/GoToPassage";
 import { SCRIPTURE_BOOKS } from "@/lib/scripture-ref";
+import { LATER_LINE_STYLE, laterMarks, laterPassageOf, type LaterMarks } from "@/lib/later-passages";
 import { TextSize, useTextSize } from "@/components/TextSize";
 import {
   chapterMarks,
@@ -496,13 +497,13 @@ function Reader({ books, book, chapter }: { books: BibleBook[]; book: BibleBook;
             {failed && !(reading ? readData : data) ? (
               <LoadFailed what={`${book.name} ${chapter}`} onRetry={() => { setFailedKey(null); setNonce((n) => n + 1); }} backHref={`/study/bible/${book.slug}`} backLabel={`All of ${book.name}`} />
             ) : reading ? (
-              readData ? <ReadText data={readData} poetry={isPoetry(book.slug, chapter)} scale={textSize.scale} label={`${chapterBookName(book)} ${chapter}`} /> : <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {chapterBookName(book)} {chapter}…</p>
+              readData ? <ReadText data={readData} later={laterMarks(book.slug, chapter, readData.verses)} poetry={isPoetry(book.slug, chapter)} scale={textSize.scale} label={`${chapterBookName(book)} ${chapter}`} /> : <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {chapterBookName(book)} {chapter}…</p>
             ) : !data ? (
               <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Opening {chapterBookName(book)} {chapter}…</p>
             ) : mode === "reading" ? (
-              <ReadingText data={data} sel={sel} onVerse={onVerse} noted={noted} marks={mine} poetry={isPoetry(book.slug, chapter)} scale={textSize.scale} />
+              <ReadingText data={data} later={laterMarks(book.slug, chapter, data.verses)} sel={sel} onVerse={onVerse} noted={noted} marks={mine} poetry={isPoetry(book.slug, chapter)} scale={textSize.scale} />
             ) : (
-              <Interlinear data={data} lang={lang} sel={sel} onVerse={onVerse} onWord={onWord} noted={noted} />
+              <Interlinear data={data} later={laterMarks(book.slug, chapter, data.verses)} lang={lang} sel={sel} onVerse={onVerse} onWord={onWord} noted={noted} />
             )}
             {(reading ? readData : data) && (
               <>
@@ -594,21 +595,28 @@ function VerseNum({ v, active, noted, mine, onVerse }: { v: BibleVerse; active: 
   );
 }
 
+/** The bracketed line at the start and end of a passage the earliest manuscripts do not include (lib/later-passages). */
+function LaterLine({ text }: { text?: string }) {
+  return text ? <span className="sb-later" role="note" style={LATER_LINE_STYLE}>{text}</span> : null;
+}
+
 /** A tap anywhere on a verse opens it, unless the reader is selecting its words to copy. */
 const tapVerse = (v: BibleVerse, onVerse: (v: BibleVerse) => void) => () => {
   if (typeof window !== "undefined" && window.getSelection?.()?.toString()) return;
   onVerse(v);
 };
 
-function ReadingText({ data, sel, onVerse, noted, marks, poetry, scale }: { data: BibleChapter; sel: Selection; onVerse: (v: BibleVerse) => void; noted: Set<number>; marks: Map<number, Mark>; poetry: boolean; scale: number }) {
+function ReadingText({ data, later, sel, onVerse, noted, marks, poetry, scale }: { data: BibleChapter; later: LaterMarks; sel: Selection; onVerse: (v: BibleVerse) => void; noted: Set<number>; marks: Map<number, Mark>; poetry: boolean; scale: number }) {
   return (
     <div className={poetry ? "sb-text sb-text--poetry" : "sb-text"} style={{ maxWidth: "var(--w-read)", fontFamily: "var(--font-reading)", fontSize: `calc(var(--fs-read) * ${1.05 * scale})`, lineHeight: 1.75, color: "var(--ink)" }}>
       {data.verses.map((v) => {
         const active = sel?.verse.v === v.v;
         const mine = marks.get(v.v);
         return (
-          // The number inside is the control a keyboard reaches; the tap on the words is the same act, made easier to hit.
-          <span key={v.v} id={`v${v.v}`} className="sb-verse" data-active={active || undefined} data-mark={mine?.color} onClick={tapVerse(v, onVerse)}>
+          <Fragment key={v.v}>
+          <LaterLine text={later.before.get(v.v)} />
+          {/* The number inside is the control a keyboard reaches; the tap on the words is the same act, made easier to hit. */}
+          <span id={`v${v.v}`} className="sb-verse" data-active={active || undefined} data-mark={mine?.color} onClick={tapVerse(v, onVerse)}>
             <VerseNum v={v} active={active} noted={noted.has(v.v)} mine={mine} onVerse={onVerse} />
             {!v.t ? (
               <span style={{ fontFamily: "var(--U)", fontSize: "14px", fontStyle: "italic", color: "var(--ink-muted)" }}>[Not in the earliest manuscripts]</span>
@@ -616,6 +624,8 @@ function ReadingText({ data, sel, onVerse, noted, marks, poetry, scale }: { data
               poetryLines(v.t).map((line, i) => <span key={i} className="sb-line">{line} </span>)
             ) : v.t}{" "}
           </span>
+          <LaterLine text={later.after.get(v.v)} />
+          </Fragment>
         );
       })}
     </div>
@@ -627,21 +637,25 @@ function ReadingText({ data, sel, onVerse, noted, marks, poetry, scale }: { data
  * numbers, no note dots, no marks and nothing to tap. Each verse keeps its
  * #v anchor, so a link to a verse still lands on it.
  */
-function ReadText({ data, poetry, scale, label }: { data: BibleTextChapter; poetry: boolean; scale: number; label: string }) {
+function ReadText({ data, later, poetry, scale, label }: { data: BibleTextChapter; later: LaterMarks; poetry: boolean; scale: number; label: string }) {
   return (
     <div className={poetry ? "sb-text sb-text--read sb-text--poetry" : "sb-text sb-text--read"} style={{ fontSize: `calc(var(--fs-read) * ${1.15 * scale})` }} aria-label={`${label}, ${BIBLE_TRANSLATION}`} role="region">
       {data.verses.map((v) =>
         v.t ? (
-          <span key={v.v} id={`v${v.v}`} className="sb-verse sb-verse--read">
-            {poetry ? poetryLines(v.t).map((line, i) => <span key={i} className="sb-line">{line} </span>) : v.t}{" "}
-          </span>
+          <Fragment key={v.v}>
+            <LaterLine text={later.before.get(v.v)} />
+            <span id={`v${v.v}`} className="sb-verse sb-verse--read">
+              {poetry ? poetryLines(v.t).map((line, i) => <span key={i} className="sb-line">{line} </span>) : v.t}{" "}
+            </span>
+            <LaterLine text={later.after.get(v.v)} />
+          </Fragment>
         ) : null
       )}
     </div>
   );
 }
 
-function Interlinear({ data, lang, sel, onVerse, onWord, noted }: { data: BibleChapter; lang: "H" | "G"; sel: Selection; onVerse: (v: BibleVerse) => void; onWord: (v: BibleVerse, i: number) => void; noted: Set<number> }) {
+function Interlinear({ data, later, lang, sel, onVerse, onWord, noted }: { data: BibleChapter; later: LaterMarks; lang: "H" | "G"; sel: Selection; onVerse: (v: BibleVerse) => void; onWord: (v: BibleVerse, i: number) => void; noted: Set<number> }) {
   const script = lang === "H" ? HEB : GRK;
   return (
     <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "var(--s-4)" }}>
@@ -649,6 +663,7 @@ function Interlinear({ data, lang, sel, onVerse, onWord, noted }: { data: BibleC
         const active = sel?.verse.v === v.v && sel.kind === "verse";
         return (
           <li key={v.v} id={`v${v.v}`} style={{ scrollMarginTop: "100px", paddingBottom: "var(--s-3)", borderBottom: "1px solid var(--border)" }}>
+            <LaterLine text={later.before.get(v.v)} />
             <p className="sb-verse" data-active={active || undefined} onClick={tapVerse(v, onVerse)} style={{ margin: "0 0 10px", fontFamily: "var(--font-reading)", fontSize: "17px", lineHeight: 1.65, color: "var(--ink)", maxWidth: "68ch" }}>
               <VerseNum v={v} active={active} noted={noted.has(v.v)} onVerse={onVerse} />
               {v.t || <span style={{ fontStyle: "italic", color: "var(--ink-muted)" }}>{LATER_NOTE}</span>}
@@ -672,6 +687,7 @@ function Interlinear({ data, lang, sel, onVerse, onWord, noted }: { data: BibleC
                 })}
               </div>
             )}
+            <LaterLine text={later.after.get(v.v)} />
           </li>
         );
       })}
@@ -860,6 +876,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
 
   const script = lang === "H" ? HEB : GRK;
   const refLabel = `${chapterBookName(book)} ${chapter}:${verse.v}`;
+  const laterOf = verse.t && verse.later ? laterPassageOf(book.slug, chapter, verse.v) : null;
   const xrefs = useMemo(() => (verse.x ?? []).filter((r) => parseRef(r, books) !== null), [verse.x, books]);
 
   // What was copied belongs to the verse it was copied from; another verse starts clean.
@@ -887,6 +904,7 @@ function VerseStudy({ books, book, chapter, verse, lang, setSel, data, verseNote
   return (
     <div>
       <p style={{ margin: "10px 0 0", fontFamily: "var(--font-reading)", fontSize: "18px", lineHeight: 1.6, color: "var(--ink)" }}>{verse.t || <i style={{ color: "var(--ink-muted)" }}>{LATER_NOTE}</i>}</p>
+      {laterOf && <p className="sb-later" style={{ ...LATER_LINE_STYLE, margin: "6px 0 0" }}>[The earliest manuscripts do not include {laterOf.name}.]</p>}
 
       <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", margin: "10px 0 0" }}>
         {verse.t && <button type="button" onClick={() => copy("verse")} style={pillBtn}>{copyLabel("verse", "Copy verse")}</button>}
