@@ -22,7 +22,7 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 
 ## Words these pages use
 
-- **Late Bronze Age**: in the archaeology of Canaan, roughly 1550 to 1200 BC, the period in which most scholars place the exodus and the entry into Canaan, whichever date they hold.
+- **Late Bronze Age**: in the archaeology of Canaan, roughly 1550 to 1200 BC, the period in which both dates proposed for the exodus and the entry into Canaan fall.
 - **Merneptah Stele**: an Egyptian victory inscription of about 1208 BC, the earliest known mention of Israel outside the Bible, naming Israel as a people in Canaan.
 - **Herem**: the ban, in which a city and its people were devoted wholly to a god, with no plunder for the victors; Israel's neighbors practiced it too.
 - **Apocalyptic**: a kind of Jewish writing of the last centuries BC, full of visions and symbols, often set in the mouth of a figure from the past; scholars disagree about how much of Daniel belongs to it.
@@ -32,5 +32,7 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 ## Where else to look
 
 - The argued answer "Why would anyone trust the Bible?" (/answers/why-would-anyone-trust-the-bible), the short form of the questions about the Bible's history.
+- The argued answer "Did God command genocide in the Old Testament?" (/answers/did-god-command-genocide), which sets out the main readings of the conquest commands.
+- The argued answer "How should a Christian read Genesis 1?" (/answers/how-should-a-christian-read-genesis-1), on reading Genesis in its world.
 - What it was like: the Old Testament's world (/resources/context/world/old-testament-world), the land, its peoples and its inscriptions.
 - The Study Bible's introductions and notes on Exodus (/study/bible/exodus/1), Joshua (/study/bible/joshua/6), Genesis (/study/bible/genesis/6) and Daniel (/study/bible/daniel/11), which treat these passages verse by verse.

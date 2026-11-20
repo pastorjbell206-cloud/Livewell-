@@ -1775,3 +1775,13 @@ Cut or not used: Greek historians and Belshazzar (not verified); a claim that th
 | "Genesis speaks into a shared memory; the differences show what it wants to say about God" | Note (Genesis 6, historical) | Agrees (paraphrased) |
 
 Cut or not used: Ea's plea quoted in full (the line runs on into "be long-suffering", and a cut mid-line would mislead); a claim that global-flood readers take the tablets as corrupted memories (not verified for a named holder); Berossus (Budge quotes him through Cory, 1832; not needed); the Ark Tablet's provenance (the accounts differ).
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Digs at Jericho, Ai and Hazor; Egypt's silence on the exodus; George Smith's tablets read in London in December 1872; Porphyry against Daniel in the third century; the conquest commands among the hardest words in Scripture | Rows ad to ah | Verified |
+| Late Bronze Age roughly 1550 to 1200 BC in Canaan | Note (Exodus introduction: the Hyksos driven out around 1550; Joshua introduction: new settlements around 1200); the standard periodization, not separately searched | Verified as the standard range, given as "roughly" |
+| Merneptah Stele about 1208 BC, the earliest known mention of Israel outside the Bible | WOT ledger | Verified (secondary) |
+| Herem; tell; elef; apocalyptic, described | Notes (Joshua 6, Deuteronomy 20, Exodus 12, Daniel introduction) | Verified (repo) |
+| What all confess: the God of Israel is the Father of Jesus Christ, he acted in Israel's history and spoke in its Scriptures | The creeds (the site's texts in `client/public/creeds/`); Genocide answer (Marcion) | Stated as confession |
