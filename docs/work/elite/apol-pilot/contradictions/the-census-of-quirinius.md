@@ -10,7 +10,7 @@ ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "y"
 
 ## The short answer
 
-He may have, and an honest answer has to say so. Luke places Jesus' birth "in the time of Herod king of Judea" and ties it to "the first census to take place while Quirinius was governor of Syria." Josephus, our fullest source for the period, says Quirinius came to take the census of Judea after Herod's son Archelaus was deposed, a date that works out to AD 6, while Herod died, on the usual reckoning, in 4 BC. No ancient source outside Luke, and the Christian writers who follow him, describes an earlier census in Herod's kingdom. Several solutions have been proposed: a different reading of Luke's Greek, an earlier office for Quirinius, a registration begun under Herod and finished later, a later date for Herod's death. Each has defenders, each has a real weakness, and none commands general agreement. The question is open. What it touches is the date of a census, not whether Jesus was born under Herod in David's town.
+On the evidence historians can weigh, he may have, and an honest answer has to say so. Luke places Jesus' birth "in the time of Herod king of Judea" and ties it to "the first census to take place while Quirinius was governor of Syria." Josephus, our fullest source for the period, says Quirinius came to take the census of Judea after Herod's son Archelaus was deposed, a date that works out to AD 6, while Herod died, on the usual reckoning, in 4 BC. No ancient source outside Luke, and the Christian writers who follow him, describes an earlier census in Herod's kingdom. Several solutions have been proposed: a different reading of Luke's Greek, an earlier office for Quirinius, a registration begun under Herod and finished later, a later date for Herod's death. Each has defenders, each has a real weakness, and none commands general agreement. The question is open. What it touches is the date of a census, not whether Jesus was born under Herod in David's town.
 
 ## The objection at its strongest
 
@@ -24,7 +24,7 @@ Luke, by contrast, sets the birth in Herod's lifetime. His story opens "In the t
 
 Most of it. The dates are as the critics give them: Josephus is clear that Quirinius's census of Judea followed the deposition of Archelaus, and Luke is clear that Jesus was born under Herod the Great. Luke's own chronology points the same way, since he says Jesus was "about thirty years old" (Luke 3:23, BSB) when he began his work after the fifteenth year of Tiberius, around AD 28 or 29, which puts the birth in Herod's last years, not in AD 6. The difficulty can't be blamed on a copyist; the Study Bible's note on Luke 2 records that no manuscript alters Quirinius's name or the word "first." No surviving source describes a Roman census in Herod's kingdom.
 
-Christians have sometimes claimed far more than the evidence allows. The same Catholic reference work of 1910 said that William Ramsay had shown that Schürer's objections "all fall to the ground." They haven't. Ramsay's arguments are still worth reading, and some of them still have defenders, but no historian can now say the question is closed in Luke's favor, and a reader who was told it was has been misled.
+Christians have sometimes claimed far more than the evidence allows. The same Catholic reference work of 1910 said that William Ramsay had shown that Schürer's objections "all fall to the ground." They haven't. Ramsay's arguments are still worth reading, and some of them still have defenders, but the evidence now available doesn't allow anyone to say the question is closed in Luke's favor, and a reader who was told it was has been misled.
 
 ## The evidence
 
@@ -40,7 +40,7 @@ The second proposes an earlier office for Quirinius. Ramsay pointed to an inscri
 
 The third follows Tertullian. Perhaps a registration was begun under Saturninus or Varus, connected with the oath of loyalty Josephus mentions, and Luke names it by the man under whom the counting became famous. This fits Tertullian's independent-looking tradition and Herod's dependence on Rome. Its weakness is that it is a reconstruction: no source links the oath to a census, and Tertullian may simply have inferred Saturninus from the list of governors.
 
-The fourth moves Herod's death. A minority of scholars, following W. E. Filmer in 1966 and Andrew Steinmann in 2009, date it to 1 BC rather than 4 BC. That helps other parts of the chronology, but it still leaves seven years between Herod and Quirinius's census, so it doesn't solve this problem by itself.
+The fourth moves Herod's death. A minority of scholars, following W. E. Filmer in 1966 and Andrew Steinmann in 2009, date it to 1 BC rather than 4 BC. That helps other parts of the chronology, but it still leaves six or seven years between Herod and Quirinius's census, so it doesn't solve this problem by itself.
 
 The fifth is the critics' own: Luke erred. Its strength is simplicity. Its weakness is that Luke elsewhere handles Roman officials and titles with care, as the Study Bible's notes on Luke 3 and Acts record, and that he plainly knew the census of Judas's revolt as a landmark. Critics reply, fairly, that care elsewhere doesn't guarantee accuracy here.
 
@@ -49,8 +49,8 @@ The fifth is the critics' own: Luke erred. Its strength is simplicity. Its weakn
 This is an argument about what an unresolved difficulty does and doesn't show.
 
 1. Luke dates Jesus' birth under Herod the Great and links it to a registration while Quirinius governed Syria; Josephus dates Quirinius's census of Judea to AD 6, after Herod's death; and no ancient source independent of Luke describes an earlier census in Herod's kingdom.
-2. Each proposed reconciliation is possible, but none is established by evidence that historians generally accept, so on present evidence the question is unresolved, and that Luke misdated the census is a live possibility.
-3. Whether Jesus was born, of David's line, in the last years of Herod does not hang on the census: Matthew, writing independently of Luke, places the birth under Herod in Bethlehem, and Luke's own chronology of Jesus' ministry points to the same years.
+2. Each proposed reconciliation is possible, but none is established by evidence that historians generally accept, so on present evidence the question is unresolved, and on the historical evidence alone the possibility that Luke misdated the census can't be ruled out.
+3. Whether Jesus was born, of David's line, in the last years of Herod does not hang on the census: Matthew, who on most scholars' view wrote independently of Luke, places the birth under Herod in Bethlehem, and Luke's own chronology of Jesus' ministry points to the same years.
 
 So: the census of Quirinius is a real and open difficulty for Luke's dating, which a fair reader should neither explain away nor treat as settled against him, and it leaves the time and setting of Jesus' birth where both Gospels put it.
 
@@ -68,7 +68,7 @@ The date of the census Luke describes, and whether it can be fitted to Herod's l
 
 ## Where Christians differ
 
-Christians answer this passage according to how they confess Scripture's truthfulness, and the site takes no side among them. Christians who hold to inerrancy, in the form the Chicago Statement of 1978 gave it, confess that Scripture in its original writings is without error in all that it affirms, history included. They hold that Luke's statement is true when rightly understood, favor one of the reconciliations above or hold the question in suspense, and follow the Statement's fourteenth article: "We deny that alleged errors and discrepancies that have not yet been resolved vitiate the truth claims of the Bible." Christians who hold Scripture to be infallible in what God gave it to teach, the way of salvation and of life with him, hold that a misdated census would not touch that teaching, and some of them think Luke did misdate it. Both confess together, with the Nicene Creed, that the Holy Spirit "spake by the prophets," and both receive Scripture as the church's final authority for faith and life. All of them confess that the Son of God was born of the Virgin Mary as a real child, in a real town, under a real king.
+Christians answer this passage according to how they confess Scripture's truthfulness, and the site takes no side among them. Christians who hold to inerrancy, in the form the Chicago Statement of 1978 gave it, confess that Scripture in its original writings is without error in all that it affirms, history included. They hold that Luke's statement is true when rightly understood, favor one of the reconciliations above or hold the question in suspense, and follow the Statement's fourteenth article: "We deny that alleged errors and discrepancies that have not yet been resolved vitiate the truth claims of the Bible." Christians who hold Scripture to be infallible in what God gave it to teach, the way of salvation and of life with him, hold that a misdated census would not touch that teaching, and some of them think Luke did misdate it. Both confess together, with the Nicene Creed, that the Holy Spirit "spake by the prophets," and both receive Scripture as the church's final authority for faith and life. All of them confess with the creeds that the Son of God was born of the Virgin Mary, a real child in real history.
 
 ## Read the other side
 
