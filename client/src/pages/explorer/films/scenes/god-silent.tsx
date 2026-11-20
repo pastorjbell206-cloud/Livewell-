@@ -165,7 +165,9 @@ const film: FilmDrawing = {
             tone="g"
             off={3}
           />
-          <path className="pl-k" d="M536,420V384a26,26 0 0 1 52,0V420Z" />
+          {/* The cave's mouth: ink by day, night paper by night, dark either way. */}
+          <path className="pl-k fp-dark" d="M536,420V384a26,26 0 0 1 52,0V420Z" />
+          <path className="pl-l" d="M536,420V384a26,26 0 0 1 52,0V420Z" />
           <Shape d="M0,500V420H800V500Z" tone="g" off={2} />
           <path fill={h.h3} d="M0,456H800V500H0Z" />
           <Shape d="M262,420l8,-22l26,-6l12,28Z" tone="b" off={1} />

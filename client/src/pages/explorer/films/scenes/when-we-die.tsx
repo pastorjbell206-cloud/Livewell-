@@ -72,7 +72,7 @@ const film: FilmDrawing = {
           <path className="fp-dark" fill={h.h1} d={SKY} />
           {/* The first pale band of morning, low along the horizon. */}
           <path
-            className="pl-paper"
+            className="pl-paper fp-light"
             d="M0,372H360C440,352 520,284 600,254C680,230 760,226 800,226V272C760,272 680,276 600,300C520,330 440,400 360,420H0Z"
           />
           {STARS.map(([x, y]) => (
