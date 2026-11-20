@@ -11759,3 +11759,28 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Deuteronomy 6:8; 1 Kings 10:14 | 16-18 | BSB | BSB text |
 
 Cut before publishing: the historicist identification named in the deep note (given here only in general terms, as the book page gives it); the history of the schools (Ribera, Alcázar, Darby, Scofield), kept to the book page; Bauckham's thērion and triangular-number notes; the Sibylline Oracles; ‘the mark cannot be received by accident’ (narrowed to what 14:9 says); a line giving futurist and idealist readings of the number itself (the notes give them for the beast, not the number).
+
+## The plain notes on Revelation 14 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The counter-vision to chapter 13; a preview of the ending before the bowls | 1-5 | revelation/14.json `story` | Repository |
+| Zion (Psalm 2:6; Joel 2:32); firstfruits (Leviticus 23:10; 1 Corinthians 15:20); following the Lamb as discipleship | 1-5 | revelation/14.json `cultural`, `words` (G0536), `christ` | Repository |
+| ‘Virgins’: not against marriage (Hebrews 13:4); soldiers on campaign (Deuteronomy 23:9-10; 1 Samuel 21:5); idolatry as adultery (2 Corinthians 11:2); banquets and licence (2:14, 20) | 1-5 | revelation/14.json `historical`, `cultural` | Repository |
+| The 144,000 read as in chapter 7; no side | 1-5 | revelation/7.json `hard` | Repository, no side |
+| Psalm 2:6; Joel 2:32; Leviticus 23:10; Zephaniah 3:13; Hebrews 13:4; 2 Corinthians 11:2 | 1-5 | BSB | BSB text |
+| Three angels: invitation, announcement, warning; the eternal gospel to every nation | 6-8 | revelation/14.json `literary`, `doctrines` | Repository |
+| Babylon: 587 or 586 BC; Cyrus, 539 BC; a code name; 1 Peter 5:13 as Rome; thumos wordplay | 6-8 | revelation/14.json `historical`, `words` (G2372) | Repository |
+| Babylon: Rome; Jerusalem; a final world city or system; the recurring city of pride; no side; nothing of our day | 6-8 | revelation/14.json `historical` | Repository, no side |
+| Isaiah 21:9; Jeremiah 51:7 | 6-8 | BSB | BSB text |
+| The cup (Psalm 75:8; Jeremiah 25:15); undiluted wine; Sodom (Genesis 19:24); Edom's smoke (Isaiah 34:9-10); judgment in the Lamb's presence; hupomonē; rest and deeds that follow | 9-13 | revelation/14.json `cultural`, `doctrines`, `words` (G5281) | Repository |
+| 14:11: eternal conscious punishment and conditional immortality as the deep note gives them; the doctrine study on hell; no side; nothing said of any person's eternal state | 9-13 | revelation/14.json `hard`; bible/doctrines/hell.json `differ` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 9-13 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Psalm 75:8; Jeremiah 25:15; Genesis 19:24; Isaiah 34:10 | 9-13 | BSB | BSB text |
+| One like the Son of Man (Daniel 7:13; Mark 14:62); the golden crown; drepanon seven times; harvest as the end of the age (Matthew 13:39) | 14-20 | revelation/14.json `christ`, `words` (G1407) | Repository |
+| Two harvests: both judgment (Joel 3:13), or the righteous gathered and the wicked judged; no side; grapes trodden; 1,600 stadia about 300 km, the length of the land, four squared times a hundred; toward 19:15 | 14-20 | revelation/14.json `literary`, `cultural` | Repository, no side |
+| Daniel 7:13; Joel 3:13; Isaiah 63:3 | 14-20 | BSB | BSB text |
+
+Cut before publishing: ‘Blessed are the dead’ quoted only in part, and the count of the book's sayings beginning ‘Blessed’, so that the word stays out of the prose; universal restoration (named in the doctrine study, pointed to rather than set out, since the deep note gives two views).
