@@ -9746,3 +9746,24 @@ the BSB in the repository, checked by the validator and the strict check.
 
 Cut: the Westminster Confession by name and date; Gaius as Caligula's other name; the
 firstfruits variant (kept for chapter 2).
+
+## The plain notes on 2 Thessalonians 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Weeks or months after the first letter; persecution continuing | 1-4 | Chapter deep note `story`, `historical` | Repository |
+| ‘Obligated’ as thanks owed | 1-4 | Chapter deep note `literary` | Repository |
+| Huperauxanō, to grow beyond measure | 1-4 | lex/G (G5232, Abbott-Smith) | Repository lexicon. "Used of plants" cut |
+| Pressure from neighbours, family, guilds, officials; abandoning the gods a danger; ‘another king’ (Acts 17:7); no imperial policy yet | 1-4 | Chapter deep note `historical` | Repository |
+| Psalm 1:3; 92:12; Proverbs 4:18; Jeremiah 9:24 | 1-4 | BSB | BSB text |
+| Reciprocity in the ancient world; vengeance left to God (Deuteronomy 32:35; Romans 12:19) | 5-10 | Chapter deep note `cultural` | Repository; BSB text |
+| Anesis, a loosening, relief, the opposite of thlipsis | 5-10 | lex/G (G0425) | Repository lexicon |
+| Apokalupsis, unveiling; Jesus Lord now though hidden | 5-10 | Chapter deep note `words` (G0602) | Repository |
+| Blazing fire and Isaiah 2:10, 19, 21; Isaiah 66:15; the LORD's words spoken of Jesus | 5-10 | Chapter deep note `cultural` | Repository; BSB text |
+| Judgment comforts victims; eternal conscious separation (most) and conditional immortality; both serious; no side; pointers | 5-10 | Chapter deep note `hard`, `words` (G3639); doctrines.json (hell); answers.ts | Repository wording. No side |
+| Psalm 94:3; 37:7; Isaiah 66:5; Ezekiel 33:11 | 5-10 | BSB | BSB text |
+| Kataxioō: a life that fits the calling, by grace | 11-12 | Chapter deep note `words` (G2661) | Repository |
+| Glory frames verses 10 and 12 | 11-12 | Chapter deep note `literary` | Repository |
+| Isaiah 49:3; Psalm 115:1; Isaiah 30:18 | 11-12 | BSB | BSB text |
