@@ -15,6 +15,7 @@ The pages also say what history can't do. It can establish that Jesus lived, tha
 ## The questions
 
 1. **Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?** Paul's meeting with Jesus' brother, Josephus and the disputed passage shown as it stands, Tacitus, Pliny and Suetonius, and the case that Jesus began as a heavenly figure, at its strongest.
+2. **Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?** Roman practice with the crucified, Jewish burial law, Yehohanan's tomb, Joseph of Arimathea, the women, and the earliest opponents' theft story.
 
 ## Words these pages use
 

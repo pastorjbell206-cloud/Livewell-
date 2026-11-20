@@ -1356,3 +1356,32 @@ Pieces: `docs/work/elite/apol-pilot/jesus/` and `client/public/questions/jesus/`
 | Reading lists: Ehrman, *Did Jesus Exist?* (2012), an agnostic; Sanders, *The Historical Figure of Jesus* (1993); Van Voorst, *Jesus Outside the New Testament* (Eerdmans, 2000); Meier, *A Marginal Jew*, vol. 1 (1991), a Josephan core with Christian additions | HJ ledger; Res answer (Sanders); S: library record (Van Voorst, Eerdmans 2000, 248 pp.), Olson and other summaries of Meier's reconstruction | Verified (secondary for Van Voorst and Meier) |
 
 Cut or not used: Thallus and Mara bar Serapion (not checked); the claim that the consensus "has never been tested by method" as Carrier's reply (not seen); Tacitus as a senator (not checked); the Rank-Raglan hero scale in Carrier's method (not checked). No living author is quoted.
+
+### u. "Was Jesus really buried in a known tomb, and was it found empty?" (the-empty-tomb)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman, *How Jesus Became God* (2014): the crucified usually left on crosses for scavengers, burial in a common grave part of the punishment; hard to see why Pilate would make an exception, given his record; if no known tomb, the empty-tomb stories are later; self-described agnostic; taught many years at UNC | Res ledger (corrections 17, 29: ehrmanblog.org/?p=36276 as quoted; pp. 156-57 per the Aquila Report); Note (John 19, the would-be king); HJ ledger (agnostic); twelfth-run row (UNC, retired 2025) | Verified (secondary), paraphrased; none of his wording quoted |
+| Crossan, *Jesus: A Revolutionary Biography* (1994), the same argument earlier | Res ledger (final read correction 40); Note (John 19) | Verified |
+| Executed on a Roman charge of sedition | Note (Mark 15) | Verified |
+| Paul's list names no women and no empty tomb; Mark the first narrative, around 70; Mark ends at 16:8 in the oldest manuscripts; the women's silence read by some critics as explaining why the story was unknown | Note (Mark 16, hard questions; 1 Corinthians 15); Res ledger (Scrivener on 16:8); Repo (BSB 16:8) | Verified |
+| Gospel of Peter: second century, Akhmim in the 1880s; names the centurion Petronius, seven seals, soldiers watch two figures bring Jesus out | Note (Matthew 28) | Verified ("Jesus brought out" paraphrases the note) |
+| Varus crucified about two thousand rebels after Herod's death | Note (John 19, *Antiquities* 17.295); HJ ledger (Perseus Whiston, *War* 2.5.2) | Verified |
+| The guard story only in Matthew; many critical scholars, Brown (*The Death of the Messiah*, 1994) among them, judge it grew in Christian circles to answer the theft charge; Brown judged the burial by Joseph very probably historical | Note (Matthew 28, John 19) | Verified (repo) |
+| 1 Corinthians 15:3-4; most scholars, including many with no stake in Christianity, think the summary took shape within a few years | Repo (BSB); Res ledger (correction 31, Pickup *JETS* 2013, Lüdemann, Carrier) | Quoted; verified ("most", no count) |
+| Deuteronomy 21:23 | Repo (BSB) | Quoted |
+| *Jewish War* 4.317: "the Jews used to take so much care of the burial of men, that they took down those that were condemned and crucified, and buried them before the going down of the sun"; the setting, the dead cast away unburied | Whiston (Gutenberg #2850), read this run | Quoted |
+| Evans: in Judea in peacetime the Romans respected the custom; Roman law allowed burial of the executed on request | Res ledger (correction 30, the Logos guest post, as summarized) | Verified (secondary), paraphrased |
+| Yehohanan: 1968, Giv'at ha-Mivtar, family tomb, iron nail through the heel; Ehrman: one case tells us little | Res ledger (corrections 25, 4; the Yehohanan line) | Verified |
+| Mark 15:43 "Joseph of Arimathea, a prominent Council member"; Luke 23:51 "had not consented to their decision or action"; all four Gospels give him the burial; Matthew 27:60 his own new tomb | Repo (BSB); Note (John 19) | Quoted |
+| Mary Magdalene, alone or with other women, first at the tomb in all four | Res ledger (correction 3); Repo (BSB Matthew 28:1, Mark 16:1, Luke 24:10, John 20:1) | Verified |
+| *Antiquities* 4.219: "let not the testimony of women be admitted" | Whiston (Gutenberg #2848), read this run | Quoted |
+| Celsus: "A half-frantic woman, as you state" | Crombie (Gutenberg #70693, *Against Celsus* 2.55), read this run; Res ledger | Quoted |
+| The formal list leaves the women out, perhaps because women's testimony carried little weight | Note (1 Corinthians 15) | Verified (repo) |
+| Matthew 28:13 quoted; 28:15 the story still told; Justin, *Dialogue* 108, around 160; Tertullian, *On the Shows* 30, around 200, the gardener and the lettuces | Repo (BSB); Note (Matthew 28); Res ledger (Justin, ANF) | Quoted (Matthew); paraphrased |
+| Preaching in Jerusalem within weeks | Res ledger (Pentecost, Acts 2) | Verified |
+| Pinchas Lapide, an Orthodox Jew, accepted the resurrection as an event without accepting Jesus as Messiah | Note (Mark 16, Luke 24) | Verified (repo) |
+| Borg: the truth of Easter does not depend on whether the tomb was empty | Res ledger (Borg rows) | Verified (secondary), paraphrased |
+| Reading lists: Brown 1994; Allison, *Resurrecting Jesus* (2005); Wright 2003; Bird, Evans and others 2014 | Note (Brown, Allison); Res answer (Wright, Bird and Evans) | Verified |
+
+Cut or not used: the Nazareth Inscription (its date and link to Christianity uncertain, per the note); the Mishnah on women's oath (not needed); a claim that Arimathea's location is known (the note says only that Joseph is tied to a real place; the piece says "a named town"); the claim that "many historians who are not Christians" accept the empty tomb (not counted; one is named). No living author is quoted.

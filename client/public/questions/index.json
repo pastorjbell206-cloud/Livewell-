@@ -157,6 +157,13 @@
           "blurb": "Paul's meeting with Jesus' brother, Josephus and the disputed passage shown as it stands, Tacitus, Pliny and Suetonius, and the case that Jesus began as a heavenly figure, at its strongest.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-empty-tomb",
+          "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
+          "blurb": "Roman practice with the crucified, Jewish burial law, Yehohanan's tomb, Joseph of Arimathea, the women, and the earliest opponents' theft story.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -526,6 +533,26 @@
       "area": "jesus",
       "slug": "did-jesus-exist",
       "question": "Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?",
+      "live": false
+    },
+    {
+      "claim": "Jesus was probably not given a decent burial in a known tomb, so the stories of an empty tomb arose later",
+      "proponent": "Bart D. Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "the-empty-tomb",
+      "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' body was probably dealt with as crucified bodies usually were, and the honorable burial by Joseph of Arimathea arose later",
+      "proponent": "John Dominic Crossan",
+      "work": "Jesus: A Revolutionary Biography",
+      "year": 1994,
+      "area": "jesus",
+      "slug": "the-empty-tomb",
+      "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
       "live": false
     },
     {
