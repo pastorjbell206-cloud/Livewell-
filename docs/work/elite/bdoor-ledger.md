@@ -6822,3 +6822,53 @@ No web search.
 | Shiloh the place of the Tent of Meeting (Joshua 18:1); the ark brought from Shiloh and captured (1 Samuel 4:4, 11); Jeremiah 7:12 | 40-72 | BSB | BSB text |
 | 78:65 how it looked from Israel's side (Psalm 121:4) | 40-72 | Repository deep note (hard) | Site's own teaching |
 | Ephraim and Joseph the leading northern tribes; dates debated (David or Solomon; after the north fell to Assyria) | 40-72 | Repository deep note (historical) | Stated as views; the year 722 BC and Hezekiah not given |
+
+## The plain notes on Psalm 79 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| A twin of 74; the destruction of 587 or 586 BC (most scholars) | Book page ("When they were written"); repository deep note (historical) | Site's own teaching. The Maccabean reading and 1 Maccabees not repeated |
+| The unburied dead a deep shame; a covenant curse (Deuteronomy 28:26) | Repository deep note (cultural); BSB | BSB text |
+| 79:6-7 nearly the words of Jeremiah 10:25; one drew on the other, or both on a known prayer | Repository deep note (historical); BSB | BSB text compared |
+| Revelation 6:10; Romans 12:19 | BSB | BSB text |
+| 79:6 and 12 pointed to the book page's part on the cursing psalms; "the nations" the armies of that ancient war; no people today named | Book page ("The cursing psalms") | Site's own teaching |
+
+## The plain notes on Psalm 80 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The chorus three times, growing (3, 7, 19) | BSB | BSB text |
+| Ephraim and Manasseh sons of Joseph; many connect the psalm with Assyria's crushing of the north; some think it prayed in Judah for the north | Repository deep note (historical) | Stated as views; no year given |
+| The chorus echoes Numbers 6:25 | Repository deep note (cultural); BSB | BSB text |
+| Vineyard walls; the vine a picture of Israel | Repository deep note (cultural) | Site's own teaching |
+| "The man at Your right hand": the king, or Israel (Exodus 4:22) | Repository deep note | Stated as readings |
+| Isaiah 5:1-2; Mark 12:1; John 15:1, 5 | BSB | BSB text |
+
+## The plain notes on Psalm 81 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Gittith also heads 8 and 84; meaning uncertain (Gath, wine press) | Repository deep note (historical); BSB headings | Script |
+| The feast of 81:3 debated (seventh month: trumpets and Tabernacles; or Passover) | Repository deep note (historical) | Stated as views |
+| The shofar a signal; the basket and Egypt's labour; Meribah "quarrelling" (Exodus 17:7) | Repository deep note (cultural); BSB | BSB text |
+| 81:9-10 echo Exodus 20:2 | BSB | BSB text |
+| Matthew 23:37; Hebrews 3:15; Romans 1:24 | BSB | BSB text |
+
+## The plain notes on Psalm 82 (2026-11-20)
+
+Two web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Heaven pictured as a court; at Ugarit a chief god over an assembly of gods | 1-5 | Repository deep note (cultural); earlier ledger (Ugarit, Psalms 24 and 29) | Site's own teaching. The date of the Ugarit texts not given |
+| 1 Kings 22:19; Job 1:6; Isaiah 1:23; James 1:27; Luke 4:18 | 1-5 | BSB | BSB text |
+| elohim in 82:1 and 82:6; elohim for "the judges" in Exodus 21:6 | 6-8 | Repository word data; earlier ledger (Psalm 45 row) | Script |
+| John 10:34-36: Jesus' argument from the lesser to the greater (10:35 paraphrased, since the BSB sets "and the Scripture cannot be broken" between em-dashes) | 6-8 | BSB; repository deep note (christ) | BSB text |
+| Three readings of 82:6: human judges; heavenly beings of the council (verse 1, verse 7, 1 Kings 22, Job 1); none means gods equal to the LORD | 6-8 | Repository deep note (hard); biblehub.com "Does Psalm 82:6 suggest Israel's polytheism?"; christianity.com "Why Does Psalm 82:6 Say 'Ye Are Gods'?"; Heiser, SBL paper on Psalm 82 in John 10 (drmsh.com) | Search. Stated as views, no side; no scholar named on the page |
+| An old Jewish reading in the Talmud: spoken to Israel at Sinai, who might have been free of death but lost it through sin | 6-8 | Repository deep note (hard); intertextual.bible (Avodah Zarah 5a, the baraita of Rabbi Yosei, in translation) | Search. Paraphrased; tractate and rabbi not named on the page (met in translation on one site) |
