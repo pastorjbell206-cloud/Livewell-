@@ -11672,3 +11672,32 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Ezekiel 3:3, 14; Jeremiah 15:16; Jeremiah 1:10 | 8-11 | BSB | BSB text |
 
 Cut before publishing: ‘nearly two thousand years’ (a count of years left out; the question is put without one); a per-school account of the oath beyond the deep note's three.
+
+## The plain notes on Revelation 11 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Measuring (metreō) as ownership and protection; inner court kept, outer court exposed | 1-2 | revelation/11.json `words` (G3354), `cultural` | Repository |
+| 42 months and 1,260 days; Daniel 7:25 and 12:7; Antiochus IV, 167 BC; rededication 164 BC and Hanukkah; half of seven as limited distress | 1-2 | revelation/11.json `historical`; guides/reading-apocalyptic.json (numbers) | Repository |
+| The temple: preterist (before AD 70, the Jewish war; the date question), futurist, historicist, idealist (1 Corinthians 3:16); no side; nothing of our day | 1-2 | revelation/11.json `hard`, `historical` | Repository, no side |
+| Ezekiel 40:3; Zechariah 2:1-2; Daniel 7:25; Luke 21:24; 1 Corinthians 3:16 | 1-2 | BSB | BSB text |
+| Two witnesses (Deuteronomy 19:15); olive trees and lampstands from Zechariah 4 (Joshua and Zerubbabel); lampstands as churches (1:20); Elijah's and Moses' powers; Luke 4:25 | 3-6 | revelation/11.json `cultural`, `doctrines` | Repository |
+| Martus; ‘the faithful witness’ (1:5); the second-century shift toward ‘martyr’ | 3-6 | revelation/11.json `words` (G3144) | Repository |
+| Fire from the mouth read as the word, not arms | 3-6 | revelation/intro.json `teaching` (judgment: the sword from his mouth) | Repository |
+| Readings of the witnesses: Peter and Paul; two future prophets; Enoch and Elijah; Moses and Elijah; faithful groups; the witnessing church; no side; no one of our day named | 3-6 | revelation/11.json `hard` | Repository, no side |
+| Zechariah 4:3, 14; 1 Kings 17:1; Luke 4:25; 2 Kings 1:10; Exodus 7:20; Deuteronomy 19:15 | 3-6 | BSB | BSB text |
+| The beast from the Abyss; unburied bodies as dishonour (Psalm 79:2-3); gifts as at Purim (Esther 9:19, 22); the witnesses' story as Jesus' story | 7-10 | revelation/11.json `cultural`, `christ` | Repository |
+| The great city: Jerusalem, or the world against God (16:19; 18:10); no side | 7-10 | revelation/11.json `hard` | Repository, no side |
+| No word against the Jewish people; a Roman governor gave the order; ‘That reading is false. This site rejects it, and the note on Acts 2:22-28 sets out why.’ | 7-10 | acts/plain/2.json (22-28 `hard`); revelation/plain/3.json (7-9 `hard`) | Repository; pointer word for word |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 7-10 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Psalm 79:2-3; Esther 9:22 | 7-10 | BSB | BSB text |
+| A compressed gospel; Ezekiel 37; ascension in a cloud (Acts 1:9); 11:13 against 9:20-21 | 11-14 | revelation/11.json `literary`, `christ`; revelation/9.json `story` | Repository |
+| Ezekiel 37:10; Acts 1:9 | 11-14 | BSB | BSB text |
+| Basileia singular, one kingdom; Psalm 2; ‘His Christ’ as Messiah; Handel's Messiah (1742) | 15-19 | revelation/11.json `words` (G0932), `doctrines`, `christ`; guides/reading-apocalyptic.json | Repository |
+| ‘Is to come’ dropped from God's title; judgment of the dead, reward, those who destroy the earth | 15-19 | revelation/11.json `literary`, `doctrines` | Repository |
+| The ark (kibōtos); lost in 587 or 586 BC; Jeremiah 3:16; the storm signs with hail | 15-19 | revelation/11.json `cultural`, `words` (G2787G), `literary` | Repository |
+| Psalm 2:2, 6; Daniel 7:14; Jeremiah 3:16 | 15-19 | BSB | BSB text |
+
+Cut before publishing: seven thousand as an echo of Elijah's seven thousand (not in the repository's notes on this chapter); the cloud as Sinai's cloud (likewise); 2 Maccabees on the hidden ark (left out as not needed).
