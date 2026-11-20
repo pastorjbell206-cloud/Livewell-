@@ -51,15 +51,19 @@ books). One page lists everything the site holds.
 - Watch and learn, in the Bible Explorer (short moving pictures drawn in the
   browser, with every word as text under the picture at two reading levels:
   the whole Bible in two minutes, the Holy Spirit through the Bible, God with
-  his people, who God is, why Jesus died, how salvation works, and Who made
-  God?):
+  his people, who God is, why Jesus died, how salvation works, Who made God?,
+  and three short ones made to share: the Bible in a minute, the gospel in a
+  minute, and Does God exist?):
   https://www.livewellbyjamesbell.co/study/explorer/watch/bible-two-minutes
   https://www.livewellbyjamesbell.co/study/explorer/watch/holy-spirit
   https://www.livewellbyjamesbell.co/study/explorer/watch/god-with-his-people
   https://www.livewellbyjamesbell.co/study/explorer/watch/who-god-is
   https://www.livewellbyjamesbell.co/study/explorer/watch/why-jesus-died
   https://www.livewellbyjamesbell.co/study/explorer/watch/how-salvation-works
+  https://www.livewellbyjamesbell.co/study/explorer/watch/bible-in-a-minute
+  https://www.livewellbyjamesbell.co/study/explorer/watch/gospel-in-a-minute
   https://www.livewellbyjamesbell.co/study/explorer/watch/who-made-god
+  https://www.livewellbyjamesbell.co/study/explorer/watch/does-god-exist
 - Read the Bible in a year: the 2027 plan (a daily reading plan: all 1,189 chapters in
   365 days, in the order the story happened, each day linked to its chapters
   and, where one belongs, to a context guide):
@@ -127,6 +131,9 @@ books). One page lists everything the site holds.
   politics? https://www.livewellbyjamesbell.co/topics/faith-politics-and-the-flag
 - How do we hand the faith to our kids in a secular age?
   https://www.livewellbyjamesbell.co/topics/raising-children-in-a-secular-age
+- The case for the faith (the hard objections argued at full strength, with the
+  evidence, the argument in steps and books on both sides; first area: can we
+  trust the text of the New Testament?): https://www.livewellbyjamesbell.co/questions
 - Honest answers to hard questions (short answers, with the essay or book that
   goes further where one is on the site): https://www.livewellbyjamesbell.co/answers
   Each answer has its own page:

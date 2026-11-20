@@ -6350,3 +6350,270 @@ deleted, no lh-*.json.
 ### Next
 
 1 Corinthians 9 in plain words, then 10 to 16.
+
+## Continuation: 1 Corinthians 9 to 16 (2026-11-20)
+
+1 Corinthians 9 to 16 in plain words, which completes the book. Data only: one
+`plain/<n>.json` per chapter and `"plain": true` added to each chapter note (no
+other change to those files). The book page was not edited. No code changed. One
+commit per chapter, with its ledger rows.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 9 | 4 (‘Am I not free?’ the right to be supported; ‘I would rather die’: the gospel free of charge; ‘all things to all people’; the race and the prize) | 3,131 |
+| 10 | 4 (‘and that rock was Christ’; warnings for us, and a way out; the table of the Lord and the table of demons; ‘do it all to the glory of God’) | 2,946 |
+| 11 | 5 (heads and coverings; ‘nor is man independent of woman’; ‘it is not the Lord's Supper you eat’; ‘This is My body, which is for you’; ‘in an unworthy manner’ and ‘wait for one another’) | 4,166 |
+| 12 | 5 (‘Jesus is Lord’; different gifts, the same Spirit; one body in one Spirit; many parts and honour for the weaker; ‘now you are the body of Christ’) | 2,829 |
+| 13 | 3 (‘but have not love’; ‘love is patient, love is kind’; ‘when the perfect comes’) | 1,920 |
+| 14 | 6 (prophecy; ‘five coherent words’; ‘God is truly among you’; order; ‘women are to be silent in the churches’; ‘do not forbid speaking in tongues’) | 3,525 |
+| 15 | 6 (‘of first importance’; ‘if Christ has not been raised’; firstfruits and ‘God all in all’; baptized for the dead; the seed and the body; ‘where, O Death, is your sting?’) | 4,506 |
+| 16 | 4 (the collection; travel plans, Timothy and Apollos; ‘do everything in love’; ‘Come, O Lord’) | 2,262 |
+| Total, 9 to 16 | 37 | 25,285 |
+| **Whole book, 1 to 16** | **69** | **49,029** |
+
+Passages without a `hard` part: 9:13-18, 10:23-33, 11:17-22, 12:1-3, 12:14-26,
+13:1-3, 14:1-5, 14:20-25, 14:26-33, 15:1-11, 16:5-12, 16:13-18. Every Old
+Testament quotation is named by book and verse and read in its setting; where
+Paul's wording differs from the BSB's Old Testament (Isaiah 28:11 at 14:21,
+Isaiah 25:8 and Hosea 13:14 at 15:54-55), the note says so without naming a Greek
+version it could not check. The book ends with one line pointing to 2 Corinthians.
+
+### Sources
+
+All in `bdoor-ledger.md` under "The plain notes on 1 Corinthians 9" to "16". 19
+web searches: 9: 1 (Isthmian crown); 10: 2 (the travelling well; the cup of
+blessing); 11: 6 (capite velato; Roman women's covering; the Catholic codes of
+1917 and 1983; Amish, Mennonite and Brethren covering; the Catechism and the
+Orthodox on the Eucharist; Westminster 29.7); 12: 1 (Livy's fable); 13: 1
+(ancient mirrors); 14: 1 (14:34-35 in the manuscripts); 15: 2 (Latter-day Saint
+practice; Menander); 16: 1 (marana tha). Reused: the Acts 2 views on tongues and
+baptism, the Acts 8 Spirit-baptism readings, the Acts 18 and Romans 16
+complementarian and egalitarian sentences, the Romans 5 and 11 readings of "all",
+the Romans 8 perseverance views, the Genesis 16 safety lines, the Genesis 14
+tithe views, the Acts 20 first-day note, the Matthew 26 and Luke 22 Supper views
+(extended), the Honest Answer and apol-ledger on the date of 15:3-7, the
+whon-ledger (Philo), the wrom-ledger (dining rooms, temple meals, P.Oxy. 110).
+Greek checks over the repository's text (exousia, kerdainō, adokimos,
+hypōpiazō, oikonomia, the 10:9 and 13:3 and 14:38 readings, koinōnia, exousia
+at 11:10, anti at 11:15, anaxiōs, diakrinō, kybernēsis, aschēmoneō, barbaros,
+psychikos and pneumatikos, marana tha).
+
+### Cut or narrowed
+
+Cut: training months of athletes; Corinthian bronze as famous; the Augustus
+statue by name; Bruce Winter, Gordon Fee, N. T. Wright and Dale Martin by name;
+the Delphic priestess and the cults of Dionysus and Cybele; Stoic writers on the
+body; Plato's Symposium and agapē's rarity; the rabbinic use of Psalm 24:1;
+Orthodox women's covering; the Lutheran teaching that the unworthy also receive;
+Theodotion and the Septuagint at 15:54; the weight of women's testimony;
+Chrysostom on the Marcionites; winter sailing; the Didache's setting for marana
+tha. Narrowed: the travelling well "later Jewish writings", "debated"; the cup of
+blessing "may echo", date not given; the Western placement of 14:34-35 without
+manuscript names or dates; kybernēsis "related to" the pilot's word; the
+creed's date as "many date it within a few years".
+
+### Contested matters, and how they are stated
+
+Paying ministers (no rule beyond the text; nothing licensing demands; nothing
+against paid pastors); ‘all things to all people’ (limits stated from Galatians
+2); ‘disqualified’ (Reformed and Baptist; Wesleyan, Arminian and Catholic; no
+side); ‘that rock was Christ’ (presence or type); 10:13 (not about suffering:
+stated plainly); demons; kephalē (authority, source, prominence); covering today
+(continuing practice; principle in a cultural form; hair); ‘because of the
+angels’ (uncertain); complementarian and egalitarian (Acts 18 form, at 11:2-16
+and 14:34-35); the Lord's Supper (Catholic, Orthodox, Lutheran, Reformed,
+memorial, each in its own terms); 11:27-30 (not softened; no reading of illness
+today as punishment); who may come to the table (one sentence); gifts today
+(pointer to Acts 2); Spirit baptism at 12:13; apostles today; 12:31; tongues
+(languages or a prayer language); ‘the perfect’; 14:34-35 (six readings and the
+manuscript fact); ‘do not forbid tongues’; ‘all’ and ‘all in all’ (universalist
+and other readings; what the creeds bind); 15:29 (unknown; Latter-day Saint
+practice in its holders' terms); ‘spiritual body’ (not non-physical: stated
+plainly); the tithe (pointer to Genesis 14); 16:22 (a handing over to God, not a
+licence). The resurrection (15) is stated as the church's confession, not a view.
+
+### Care lines
+
+10:6-13 (the overwhelmed: not weak, not alone, pastor, friend, doctor,
+counsellor, Find Help, help now for anyone thinking of ending their life);
+11:27-34 (the scrupulous reader afraid of the table; John 6:37; illness not to
+be read as punishment); 13:4-7 (abuse: the Genesis 16 safety lines word for
+word, Find Help, a record of harm is not a failure of love); 15:50-58 (the
+grieving; Find Help); 9:24-27 (afraid of being disqualified). 11:2-16 and
+14:34-35 each say nothing permits demeaning women; 11:2-16 that no church should
+despise another over covering. No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs 1-corinthians`, exit 0; every passage printed field by
+field, all 37 under their right headings. Strict check over all sixteen
+chapters at the end: 0 problems. After merging the latest
+`claude/todo-implementation-hhp4bm`, one at a time: all 40 content-gate commands
+of ci.yml, exit 0 each (validate-bible-notes: 349 chapters in plain words;
+search index 741 entries up to date; passage index 623 files match;
+verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`: exit 0, 152
+files passed, 7 skipped; 1,779 tests passed, 73 skipped. `pnpm build`,
+`pnpm run sitemap`, `pnpm run prerender` (3,056 pages), `pnpm run
+audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (only other agents'
+4620 and 4631 listening in 4600 to 4699, before and after) and checked with
+Playwright at 390 wide, deviceScaleFactor 1, /api/trpc, /api/track and /_vercel
+stubbed. All sixteen chapters: every passage heading, its part headings in order
+and the first 60 characters under each matched the data: 69 passages, 320
+fields (9: 19; 10: 19; 11: 24; 12: 23; 13: 14; 14: 27; 15: 29; 16: 18; 1 to 8 as
+before, 147). No sideways scroll, no console or page errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/cor11-390-*`, `cor13-390-*`, `cor15-390-*`.
+Server stopped by PID, dist/ deleted, no lh-*.json. Lighthouse not run (no code
+changed).
+
+### Next
+
+1 Corinthians is complete. The next book is for the lead to choose
+(2 Corinthians follows naturally).
+
+## 2 Corinthians: the book page and chapters 1 to 7 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that".
+1 Corinthians was finished; 2 Corinthians is next, done exactly as 1 Corinthians was.
+
+### The book page (`/study/bible/2-corinthians`, same address)
+
+Data only, in `client/public/bible/notes/2-corinthians/intro.json`, field `teaching`
+(appended; the rest of the file untouched). Eleven headed parts: 2 Corinthians in a
+minute (the most personal letter, a wounded pastor and a church he loves); Who wrote
+it (Paul with Timothy, 1:1; Silvanus "most take" to be Silas); When and where
+(Macedonia, 2:13 and 7:5, city not named, Philippi "often suggested"; about AD 55 to
+56; Gallio as in the other pages; Acts 20:2-3 and Romans 15:26 after); What happened
+between the two letters (painful visit, 2:1 and 13:1; the offender, two views; the
+tearful letter, 2:4, lost or in 10 to 13 or (a few) 1 Corinthians, no side; Titus,
+7:6); One letter or several? (the three seams; one letter written over time; two or
+more joined; no side); The ‘super-apostles’ (only what the text says; the views; no
+side; a quarrel about method, not birth); How it is built (1 to 7, 8 to 9, 10 to 13);
+The big themes (comfort, power in weakness, new covenant, reconciliation, generosity);
+2 Corinthians and the Old Testament; What the letter is not (not a manual for
+demanding loyalty; not a promise of no suffering; not fundraising or prosperity; not
+against the Jewish people); How to read 2 Corinthians. Then 12 hard passages (1:8-9,
+2:5-11, 3:6, 3:14-16, 5:1-10, 5:21, 6:14, 8:9, 11:13-15, 12:2-4, 12:7-9, 13:5), 12
+key words, a timeline of 11 entries, one map on the "mediterranean" frame (Corinth,
+Philippi, Troas, Ephesus, Jerusalem, Damascus) with a map note, and eight Go deeper
+links. Words: 3,998 in the eleven parts.
+
+**Code.** None in the app. `client/src/pages/study-bible/teaching.test.tsx`: 2
+Corinthians added to the list of books with a teaching page, and one line letting
+its map use the "mediterranean" frame. Nothing else.
+
+### 2 Corinthians 1 to 7 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 1 | 3 (‘The God of all comfort’; ‘We despaired even of life’; changed plans and ‘Yes’ in Christ) | 3,152 |
+| 2 | 3 (‘Through many tears I wrote you’; ‘Forgive and comfort him’; led in triumph, the aroma of Christ) | 2,353 |
+| 3 | 3 (‘You yourselves are our letter’; letter and Spirit, old covenant and new; the veil, and freedom) | 2,626 |
+| 4 | 3 (‘We do not lose heart’; treasure in jars of clay; ‘light and momentary affliction’) | 2,415 |
+| 5 | 3 (the earthly tent and the heavenly house; ‘Christ's love compels us’, a new creation; reconciled to God, the great exchange) | 2,720 |
+| 6 | 3 (‘now is the day of salvation’ and hardships; ‘our hearts are open wide’; ‘do not be unequally yoked’) | 2,541 |
+| 7 | 4 (‘make room for us’; Titus comes; godly and worldly sorrow; joy and confidence) | 2,477 |
+| Total | 22 | 18,284 |
+
+Passages without a `hard` part: 2:1-4, 2:12-17, 3:1-3, 4:1-6, 5:11-17, 6:11-13, 7:1-4,
+7:5-7, 7:13-16. Every Old Testament quotation is named by book and verse and read in
+its setting; where Paul's wording differs from the BSB's Old Testament (Psalm 116:10
+at 4:13, following the old Greek's three words, checked; Isaiah 49:8 at 6:2, "may be"
+following the old Greek; the chain at 6:16-18, Ezekiel 20:41 "close to", 2 Samuel 7:8's
+‘LORD of Hosts’), the note says so. Each chapter note gained only `"plain": true`.
+One commit per chapter, with its ledger rows.
+
+### Sources
+
+All in `bdoor-ledger.md` under "2 Corinthians's book page" and "The plain notes on 2
+Corinthians 1" to "7". 14 web searches: book page 4 (date and partition; the
+super-apostles; 6:14 to 7:1 and Belial; Silvanus); chapter 1: 2 (arrabōn; the
+hardship in Asia); 2: 3 (thriambeuō; the Roman triumph; kapēleuō); 3: 1 (letters of
+recommendation); 4: 1 (Psalm 116:10 and the old Greek); 5: 2 (5:21 readings; the
+participatory reading); 6: 1 (the 6:16-18 chain). Reused: the 1 Corinthians book page
+ledger, wrom-ledger, wmap-ledger, the Acts 9 row on Aretas, the doctrine study ‘Death
+and the Intermediate State’, the Explorer's New Creation stop, the Acts 2, Romans 3, 8,
+9, 11, 1 Corinthians 5, 7, 10, 11, 15 and Genesis 27 plain notes. Greek and Hebrew
+checks over the repository's text (paraklēsis counts, kauchaomai, exaporeomai,
+katapinō, katargeō, katoptrizomai, metamorphoō, apo doxēs eis doxan, doulos,
+heterozygeō, Beliar, H1100, ḥaṭṭāʾt at Leviticus 4:3).
+
+### Cut or narrowed
+
+Cut: Baur, Barrett, Betz and N. T. Wright by name (deep notes); synagogue prayers
+opening with blessing; the riot named as the Asia hardship; Titus as bearer of the
+tearful letter; captives "executed at the end" as a rule; the causative reading of
+thriambeuō; the Greek of Isaiah 1:22 and Ezekiel 20:34; the archaeology of Corinth's
+bema; Irenaeus's exchange phrase; the Dead Sea Scrolls by name for Belial; the
+ancient friendship formula behind 7:3; Judas beside Peter (care rule); the date of
+the Damascus escape. Narrowed: Silvanus "most take him to be" Silas; Philippi "often
+suggested"; Belial a name for Satan in "some Jewish writings"; the Isaiah 49:8 wording
+"may be" the old Greek.
+
+### Contested matters, and how they are stated
+
+Unity of the letter (three seams; one letter over time; two or more joined; no
+side); the tearful letter (lost, in 10 to 13, or 1 Corinthians; no side); the
+offender of 2:5-11 (1 Corinthians 5 or one who wronged Paul; no side); the
+super-apostles (same as the false apostles, most; Jerusalem leaders invoked, a
+minority; law-observant or Hellenistic; no side); the Asia hardship (unknown);
+thriambeuō (captives or procession members); the aroma (triumph or sacrifice); ‘the
+letter kills’ (not a rule for hidden meanings, "most readers today"); ‘the Lord is the
+Spirit’ (two readings); ‘reflect’ or ‘behold’; the god of this age ("most" Satan); the
+intermediate state (conscious with Christ, most; the heavenly house at death; soul
+sleep; no side); judgment of believers (not a second trial, pointing to Romans 2 and 1
+Corinthians 3); 5:21 (sin offering; imputation in the Reformed tradition; union and
+participation in the Orthodox and some Western readers; no side beyond the Nicene
+line); new creation (person and world); 6:14 (idolatry first; marriage, business,
+organizations, worship as applications; no side); 6:14 to 7:1 as insertion (one
+sentence, pointing to the book page).
+
+### Care lines
+
+1:1-7 (comfort is not a claim that suffering is good; Find Help); 1:8-11 (Paul given
+more than he could bear; the 1 Corinthians 10:13 note; not alone; doctor, pastor,
+friend; "If you have thoughts of hurting yourself, speak to someone today"; crisis
+line; emergency number; Find Help); 2:5-11 (forgiving is not putting others back in
+danger; the 1 Corinthians 5 safety lines by pointer; crimes to the police; Find
+Help); 3:12-18 (contempt for Jews named and rejected); 4:7-12 (feeling crushed is not
+failure; self-harm line; Find Help); 4:13-18 (4:17 Paul's own testimony, never for
+fresh pain, the Romans 8:28 note's wording; Find Help); 5:1-10 (the grieving; Find
+Help); 6:14-18 (not a reason to leave a spouse; not to stay in danger, pointing to the
+1 Corinthians 7:10-16 note; Find Help); 7:8-12 (the scrupulous: guilt that will not
+lift is not proof of worldly sorrow; counsellor, doctor; Find Help; no licence to
+wound). No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs 2-corinthians`, exit 0; every passage printed field by
+field, all 22 under their right headings. Strict check over all seven chapters at the
+end: 0 problems. `teaching.test.tsx` alone after the book page: 33 tests passed.
+After merging the latest `claude/todo-implementation-hhp4bm`, one at a time: all 40
+content-gate commands of ci.yml, exit 0 each (validate-bible-notes: 356 chapters in
+plain words; search index 745 entries up to date; passage index 623 files match;
+verify-sources 22 texts intact). `pnpm check`: exit 0. `pnpm test`: exit 0, 152
+files passed, 7 skipped; 1,780 tests passed, 73 skipped. ESLint on the changed test:
+clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,061 pages),
+`pnpm run audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (no listener on 4600 to
+4699 before or after) and checked with Playwright (deviceScaleFactor 1; /api/trpc,
+/api/track and /_vercel stubbed). Book page at 390 and 1440: 11 of 11 parts as
+headings, 11 of 11 timeline entries, one map on the "mediterranean" frame, the map
+note shown, no place name over another name, a mark or the frame's region names, no
+sideways scroll, no console or page errors. Chapters 1 to 7 at 390: every passage
+heading, its part headings in order and the first 60 characters under each matched
+the data (1: 15 fields; 2: 13; 3: 14; 4: 14; 5: 14; 6: 14; 7: 17; 101 in all), no
+sideways scroll, no errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/cor2-book-*`, `cor2-map-*`, `cor2-1-390-*`,
+`cor2-5-390-*`. Lighthouse (the ci.yml command form, three runs, on
+`/study/bible/2-corinthians`, after prerender): performance 87, accessibility 100,
+best practices 96, SEO 100, CLS 0.000. Server stopped by PID, dist/ deleted, no
+lh-*.json.
+
+### Next
+
+2 Corinthians 8 in plain words, then 9 to 13.
