@@ -76,6 +76,13 @@
           "blurb": "How English Bibles are made, why they differ, what translation loses, and how a reader can find it.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "an-angry-jesus-mark-1-41",
+          "question": "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?",
+          "blurb": "Ehrman's case for an angry Jesus, the few witnesses behind it, and what the verse can and can't change.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -299,6 +306,16 @@
       "area": "text",
       "slug": "lost-in-translation",
       "question": "The Bible has been translated so many times. Hasn't the meaning been lost along the way?",
+      "live": false
+    },
+    {
+      "claim": "Mark 1:41 originally said Jesus became angry; scribes changed it to compassion",
+      "proponent": "Bart D. Ehrman",
+      "work": "A Leper in the Hands of an Angry Jesus",
+      "year": 2003,
+      "area": "text",
+      "slug": "an-angry-jesus-mark-1-41",
+      "question": "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?",
       "live": false
     }
   ],

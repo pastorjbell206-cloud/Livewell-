@@ -24,6 +24,7 @@ The case these pages make is a modest one, and it is meant to be. They don't cla
 6. **Who decides what the Greek New Testament says, and was there ever a single original to find?** How a critical edition is made, step by step, and the serious question about the word "original".
 7. **Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?** Where the King James's Greek text came from, the verses one by one, and the case for the traditional text stated with respect.
 8. **The Bible has been translated so many times. Hasn't the meaning been lost along the way?** How English Bibles are made, why they differ, what translation loses, and how a reader can find it.
+9. **Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?** Ehrman's case for an angry Jesus, the few witnesses behind it, and what the verse can and can't change.
 
 ## Words these pages use
 
