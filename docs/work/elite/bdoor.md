@@ -6913,9 +6913,9 @@ at Philippians 4:15-23.
 
 ### Sources
 
-All in `bdoor-ledger.md` under the two book pages and each chapter. 7 web searches:
+All in `bdoor-ledger.md` under the two book pages and each chapter. 6 web searches:
 Ephesians 4: 1 (the Targum on Psalm 68:18); Philippians book page 2 (the colony and
-Actium; Polycarp 3.2); Colossians book page 4 (Colossae's and Hierapolis's
+Actium; Polycarp 3.2); Colossians book page 3 (Colossae's and Hierapolis's
 coordinates; Tacitus on Laodicea). Greek checked over the repository's text (phroneō
 at 2:2, 2:5, 4:2, 4:10).
 
@@ -6925,8 +6925,8 @@ Cut: "humility the attitude of a slave" (Ephesians 4); "soldiers took turns guar
 the 1807 slave Bible (deep note, not repeated); Luke in the founding party at Philippi;
 the scholars of the kenosis debate and of the Colossian teaching (Gore, Forsyth,
 Mackintosh, Dunn, Gorman, Lightfoot, Arnold, Hooker); Antiochus III; "a slave could not
-inherit anything" (narrowed to "property, not an heir"); "Paul says he will boast in
-eight words" type counts. Narrowed: the Targum to "copies made centuries later";
+inherit anything" (narrowed to "property, not an heir"); two wrong word counts
+("eight words", "five words"). Narrowed: the Targum to "copies made centuries later";
 methistēmi and the soldiers' ranks of 2:5 to "some readers"; the baptism link at 2:11
 to "many of them read".
 
