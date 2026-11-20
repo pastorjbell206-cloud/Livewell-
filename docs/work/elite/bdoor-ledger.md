@@ -12316,3 +12316,25 @@ Cut before publishing: nothing beyond the deep note's wording.
 | Psalm 24:1; 1 Timothy 2:8; 2 Corinthians 7:10 | 27-35 | BSB | BSB text |
 
 Cut before publishing: nothing beyond the deep note's wording.
+
+## The plain notes on Exodus 10 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The new purpose: to tell children and grandchildren | 1-6 | exodus/10.json `literary` | Repository |
+| The desert locust's swarming phase | 1-6 | exodus/10.json `historical` | Repository |
+| Deuteronomy 6:20-21; Psalm 78:4 | 1-6 | BSB | BSB text |
+| The officials turn; Pharaoh's offers as leashes; the twisted blessing | 7-11 | exodus/10.json `story`, `cultural` | Repository |
+| Deuteronomy 31:12; Acts 2:39 | 7-11 | BSB | BSB text |
+| East wind; west wind as a ‘sea wind’; the root ‘remain’ through the chapter | 12-20 | exodus/10.json `historical`, `literary` | Repository |
+| Joel 2:2 echoing the chapter | 12-20 | exodus/10.json `historical` | Repository |
+| Why ordinary Egyptians suffered: solidarity, national oppression (1:22; 1:13), warnings and escape (9:20), favor (11:3; 12:36); Isaiah 19 | 12-20 | exodus/10.json `hard` | Repository |
+| Joel 2:2; Psalm 78:46; Isaiah 19:22 | 12-20 | BSB | BSB text |
+| Re, Amun-Re, Son of Re; the khamsin; Israel's light | 21-23 | exodus/10.json `cultural`, `historical` | Repository |
+| Psalm 105:28; Mark 15:33 (an echo, not a stated fulfillment); John 8:12; Colossians 1:13 | 21-23 | BSB; exodus/10.json `christ` | BSB text |
+| ‘Not a hoof’; seeing the king's face as access; the irony of the death threat | 24-29 | exodus/10.json `cultural`, `literary` | Repository |
+| Romans 12:1; Hebrews 11:27 | 24-29 | BSB | BSB text |
+
+Cut before publishing: Isaiah 19:25 (its wording would bring ‘Blessed’ into the prose; 19:22 makes the same point).
