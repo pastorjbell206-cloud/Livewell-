@@ -999,3 +999,29 @@ Pieces: `docs/work/elite/apol-pilot/authors/` and `client/public/questions/autho
 | Kok, *The Gospel on the Margins* (2015); Bauckham, *Jesus and the Eyewitnesses* (2006) | Bdoor rows 26, 27; Tenth run | Verified |
 
 Cut: Justin, *Dialogue* 103 ("composed by his apostles and those who followed them"): the exact words were not found and bkv.unifr.ch does not resolve; the specific title wording of P66 and P75 (not confirmed); the date of Hengel's English *The Four Gospels*; a claim that ancient anonymous books tended to collect several names (not verified, so it was cut in the editor's pass); Polycarp as a hearer of John (only the note's "claimed a link"). No living author is quoted.
+
+### k. "Weren't the Gospels written decades after Jesus by people who never met him?" (written-decades-later)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Crucifixion around 30 or 33 | Tenth run | Verified |
+| Most date Mark late 60s to early 70s; chapter 13 the crux, both readings; Matthew about 80 to 95 (majority); Luke about 75 to 90 (majority); John the 90s | Note (Mark, Matthew, Luke, John intros); Bdoor rows 559, 1790, 2472; WDC ledger line 135; HJ ledger line 52 (Mark around 70) | Verified |
+| Matthew 22:7 (the burned city) and Luke 21:20 and 19:43 read as looking back on 70; answers: stock judgment imagery, siege oracles, genuine prediction | Note (Matthew, Luke intros); Repo (BSB Luke 21:20, 19:43; Mark 13:2) | Verified (repo) |
+| Ignatius and the Didache appear to know Matthew; Marcion used a form of Luke by about 144; P52 usually first half of second century, debated | Note (Matthew, Luke, John intros); Tenth run (P52); Tenth run (Ignatius traditionally under Trajan, later dates argued) | Verified; "on the usual dating" kept for Ignatius |
+| Papias knew of writings by Mark and Matthew; Papias reports Mark had not heard the Lord | Bdoor rows 22, 554 | Verified |
+| Harnack (1911), Robinson, *Redating the New Testament* (1976), Hemer (1989): Acts in the early 60s; ends with Paul in Rome about 60 to 62 | Note (Luke and Acts intros); Bdoor rows 1790, 2472 (Robinson 1976); Repo (Acts 28:30-31) | Verified (Robinson by search in Bdoor; Harnack and Hemer rest on the note) |
+| James G. Crossley, *The Date of Mark's Gospel: Insight from the Law in Earliest Christianity* (T&T Clark, 2004): late 30s to early 40s, from Mark's assumption that Jesus fully kept the law; chapter 13 read against other settings, the Caligula crisis among them | S: publisher and library records, reviews, as summarized | Verified (secondary), paraphrased. "His statue in the temple" describes the Caligula crisis (general history, AD 40, not separately searched) |
+| Pervo, *Dating Acts* (Polebridge, 2006): about AD 115 | Bdoor row 4786 | Verified |
+| 1 Thessalonians about 49 to 51; 1 Corinthians mid-50s | WDC ledger line 136; Tenth run | Verified |
+| 1 Corinthians 15:3-7 summary received and handed on; 15:6 ESV "most of whom are still alive"; most scholars, including many with no stake in Christianity, think it took shape within a few years | Pagan-myths essay ledger line 248 (ESV); resurrection essay ledger line 122; Note on 1 Corinthians 15 | Quoted (four words); verified |
+| Galatians 1:18-19: three years, Cephas, fifteen days, James; 2:9 James, Cephas and John, pillars | Repo (BSB) | Described |
+| "Within about twenty-five years": 1 Corinthians in the mid-50s against a crucifixion around 30 or 33 | Arithmetic from the rows above | Verified |
+| Ehrman, *Jesus Before the Gospels* (2016): the evangelists neither witnessed Jesus' life nor had contact with eyewitnesses; uses cognitive psychology, sociology, anthropology | S: National Catholic Reporter review, Historical Jesus Research serial review, TGC review, as summarized; Tenth run (title and year) | Verified (secondary), paraphrased |
+| Arrian wrote about four centuries after Alexander's campaigns, chiefly from Ptolemy and Aristobulus, who served with Alexander; A. B. Bosworth judged him unreliable | S: Wikipedia "Anabasis of Alexander", Iranica, UBC blog, as summarized | Verified (secondary) |
+| Bauckham, *Jesus and the Eyewitnesses* (2006); second edition (Eerdmans, 2017) answering critics | Tenth run; S (Wikipedia, publisher ISBN) | Verified |
+| Bauckham: Simon of Cyrene, father of Alexander and Rufus (Mark 15:21), named as people readers knew; Matthew 27:32 and Luke 23:26 omit the sons; named minor figures as possible sources; the Gospel names fit Tal Ilan's lexicon of Palestinian Jewish names | S: TGC article on inconspicuous evidence, arXiv 2403.14883 (Wilson), NTS 2022 "Name Recall in the Synoptic Gospels", as summarized; Repo (BSB) | Verified (secondary), paraphrased |
+| The name statistics challenged (Wilson 2024 and others) | S: same | Verified (secondary); no critic is named in the piece |
+| Samuel Byrskog, "The Eyewitnesses as Interpreters of the Past: Reflections on Richard Bauckham's *Jesus and the Eyewitnesses*," *JSHJ* 6 (2008) 157-168 | S: Lund University record | Verified. The piece describes the article by its title's point |
+| Bauckham (2015 blog post and an interview): eyewitness memory can be very unreliable; his arguments don't guarantee the accuracy of everything in the Gospels | S: historicaljesusresearch.blogspot.com (2015), as quoted | Verified (secondary), paraphrased (no quotation of a living author) |
+
+Cut: Kloppenborg, "*Evocatio deorum* and the Date of Mark," *JBL* 124 (2005): the citation was confirmed (S) but not its argument, so it isn't used; that Robinson "was not a conservative" (not searched); "the fullest surviving account" of Alexander (not confirmed; "one of the main surviving accounts"); that Peter, James and John were prominent "for decades" (Galatians shows them in the years Paul describes); Byrskog as "broadly sympathetic" (not confirmed); Bauckham's own sentences (paraphrased). No living author is quoted.

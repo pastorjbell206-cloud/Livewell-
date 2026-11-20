@@ -101,6 +101,13 @@
           "blurb": "What the titles and the earliest witnesses show, and what \"anonymous\" does and doesn't mean.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "written-decades-later",
+          "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
+          "blurb": "The usual dates and the reasons for them, the case for earlier dates, Paul's letters from before the Gospels, and what a gap of a lifetime allows.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -344,6 +351,26 @@
       "area": "authors",
       "slug": "the-gospels-are-anonymous",
       "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
+      "live": false
+    },
+    {
+      "claim": "The Gospel writers were far removed from the events, never saw Jesus and had no contact with eyewitnesses",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus Before the Gospels",
+      "year": 2016,
+      "area": "authors",
+      "slug": "written-decades-later",
+      "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
+      "live": false
+    },
+    {
+      "claim": "Acts, and so Luke, was written in the early second century",
+      "proponent": "Richard I. Pervo",
+      "work": "Dating Acts",
+      "year": 2006,
+      "area": "authors",
+      "slug": "written-decades-later",
+      "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
       "live": false
     }
   ],
