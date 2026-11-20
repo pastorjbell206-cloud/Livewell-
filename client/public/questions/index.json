@@ -165,6 +165,13 @@
           "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "what-kind-of-writing-are-the-gospels",
+          "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+          "blurb": "The form critics' \"folk literature\" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's \"memoirs\" and Luke's preface, and what the genre does and doesn't establish.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -915,6 +922,16 @@
       "area": "authors",
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "The Gospels are not biographies but folk literature, units of community tradition strung together by editors",
+      "proponent": "Rudolf Bultmann",
+      "work": "The History of the Synoptic Tradition",
+      "year": 1921,
+      "area": "authors",
+      "slug": "what-kind-of-writing-are-the-gospels",
+      "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
       "live": false
     },
     {

@@ -21,10 +21,12 @@ What the pages argue is narrower than either a skeptic or an anxious believer mi
 3. **Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?** Form criticism, memory research, the debate over controlled tradition, and what changed and what stayed across the Gospels.
 4. **There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?** The other gospels and their dates, how the four were received, what Nicaea did and didn't do, and what is true in "the winners write history".
 5. **Weren't some New Testament letters forged in the names of Paul and Peter?** The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.
+6. **The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?** The form critics' "folk literature" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's "memoirs" and Luke's preface, and what the genre does and doesn't establish.
 
 ## Words these pages use
 
 - **Synoptic Gospels**: Matthew, Mark and Luke, so called because they can be set side by side and seen together. Most scholars think Mark was written first and used by the other two.
+- **Ancient biography**: the Greek and Roman *bios* or Life, a book about one person's public career, words and death, written to show his character; its writers selected, compressed and arranged by topic.
 - **Papias**: a bishop of Hierapolis in Asia Minor early in the second century, whose reports about Mark and Matthew survive in quotations by the historian Eusebius.
 - **Canon**: the list of books a church receives as Scripture, from a Greek word for a measuring rule.
 - **Pseudepigraphy**: writing under the name of someone who did not write the work. Whether a given case was a deception or an accepted convention is debated.
