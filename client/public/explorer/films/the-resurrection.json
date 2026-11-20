@@ -1,0 +1,113 @@
+{
+  "slug": "the-resurrection",
+  "title": "The resurrection",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "the-resurrection",
+  "line": {
+    "younger": "What Christians believe happened on the third day, and why it matters, in seven pictures: a tomb, a breakfast, a stone split in two and the first sheaf of a harvest.",
+    "older": "What the resurrection is and what it means, in seven pictures: buried, raised on the third day in his body, never to die again, and the firstfruits of the harvest still to come."
+  },
+  "poster": "A garden at first light: a tomb cut in the rock stands open, its great stone rolled aside and light shining from inside; on a far hill, an empty cross.",
+  "frames": [
+    {
+      "id": "buried",
+      "name": "Buried",
+      "still": "Evening in a garden: a tomb cut into the rock, a great round stone rolled across its door, and on a far hill an empty cross.",
+      "younger": "Jesus really died on the cross. That evening a man named Joseph wrapped his body in a clean linen cloth, laid it in a new tomb cut into the rock, and rolled a great stone across the door.",
+      "older": "Christians confess that Jesus died and was buried. Joseph of Arimathea, a disciple, laid the body in his own new tomb cut into the rock and rolled a great stone across the entrance. The summary Paul passed on puts the burial between the death and the rising, because the one who was raised is the one who was buried.",
+      "verse": {
+        "ref": "1 Corinthians 15:3-4",
+        "text": "that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures"
+      }
+    },
+    {
+      "id": "third-day",
+      "name": "The third day",
+      "still": "First light: the stone has rolled aside from the tomb's door and light shines out of the empty doorway, while three women stand near with jars of spices.",
+      "younger": "Very early on the first day of the week, some women came to the tomb with spices. The stone had been rolled away, and Jesus' body was not there. Two men in shining clothes asked them a question.",
+      "older": "Very early on the first day of the week the women came with the spices they had prepared, found the stone rolled away, and did not find the body. All four Gospels tell of the empty tomb that morning. The question they were asked is the whole story in one sentence.",
+      "verse": {
+        "ref": "Luke 24:5-6",
+        "text": "Why do you look for the living among the dead? He is not here; He has risen!"
+      }
+    },
+    {
+      "id": "sent",
+      "name": "Sent to tell",
+      "still": "In the garden by the open tomb, two people stand facing each other.",
+      "younger": "Mary Magdalene stayed by the tomb, crying. Then someone said her name, “Mary,” and she knew it was Jesus. He sent her to tell his friends, and she went to them and said, “I have seen the Lord!”",
+      "older": "John tells of Mary Magdalene weeping outside the tomb. She took the risen Jesus for the gardener until he said her name. He sent her to his brothers with a message, and she went and announced to the disciples, “I have seen the Lord!” The first news of Easter was a message to be carried."
+    },
+    {
+      "id": "body",
+      "name": "In his body",
+      "still": "A page over the garden shows a lake at morning: a charcoal fire with fish and bread on it, a boat drawn up on the shore, and friends round the fire with one more standing among them.",
+      "younger": "Jesus was not a ghost. He let his friends see his hands and feet, and he ate a piece of fish in front of them. One morning he made them breakfast on a fire by the lake. For forty days he kept appearing to them.",
+      "older": "The risen Jesus is not a ghost or a memory. He told his frightened friends to look at his hands and feet, and he ate broiled fish in front of them. Yet his body was also changed: he came among them behind locked doors, and he was not always recognized at first. Christians confess that God raised the same body that had been buried, now made new.",
+      "verse": {
+        "ref": "Luke 24:39",
+        "text": "Look at My hands and My feet. It is I Myself."
+      }
+    },
+    {
+      "id": "never-again",
+      "name": "Never to die again",
+      "still": "The open tomb in full daylight, and the great stone lies on the ground beside it, split in two.",
+      "younger": "When Jesus raised his friend Lazarus, Lazarus came back to the life he had before. Jesus' own rising was something new. He was raised into a life that death can never touch again.",
+      "older": "Jesus had called Lazarus out of his tomb, still bound in strips of linen, back to the life he had before. Jesus' own rising was different: he was raised into a life on the far side of death. Peter told the crowd at Pentecost that it was impossible for death to keep its hold on him.",
+      "verse": {
+        "ref": "Romans 6:9",
+        "text": "For we know that since Christ was raised from the dead, He cannot die again; death no longer has dominion over Him."
+      }
+    },
+    {
+      "id": "firstfruits",
+      "name": "The firstfruits",
+      "still": "A page over the garden shows a field at harvest: one gold sheaf, gathered and tied, stands in front, and behind it the whole field ripens.",
+      "younger": "At harvest time God's people brought the first sheaf of grain to God, a sign that the whole harvest was coming. The Bible calls Jesus' rising the firstfruits. One day God will raise everyone who belongs to Jesus, too.",
+      "older": "Under the law, Israel brought “a sheaf of the firstfruits of your harvest” to the priest: the first sheaf, and the promise of the rest. Paul uses that picture for Easter. Christ's rising is the first sheaf of the harvest that will be the resurrection of all God's people: “Christ the firstfruits; then at His coming, those who belong to Him.”",
+      "verse": {
+        "ref": "1 Corinthians 15:20",
+        "text": "But Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep."
+      }
+    },
+    {
+      "id": "because",
+      "name": "Because he lives",
+      "still": "Morning over the garden: the open tomb with its split stone, wheat growing in front, and a path running out to a city wall where people are walking.",
+      "younger": "Because Jesus is alive, death is not the end for those who belong to him. His rising shows that he is Lord, and that what he did on the cross was enough. Christians meet on Sunday, the first day of the week, because that is the day the tomb was found empty.",
+      "older": "Paul says that if Christ has not been raised, faith is futile. Because he was raised, the forgiveness won at the cross is sealed, death is not the final word over anyone who belongs to him, and the body and the world God made matter. Every Sunday gathering is a small Easter. It does not take away grief; it gives grief a hope.",
+      "verse": {
+        "ref": "John 14:19",
+        "text": "Because I live, you also will live."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jesus' friends were very sad on the Friday and full of joy on the Sunday. What changed?",
+    "older": "Paul says that if Christ has not been raised, faith is futile. Why would he stake everything on one event, and not on a teaching?"
+  },
+  "read": [
+    { "label": "Matthew 27", "href": "/study/bible/matthew/27" },
+    { "label": "Luke 24", "href": "/study/bible/luke/24" },
+    { "label": "John 20", "href": "/study/bible/john/20" },
+    { "label": "John 21", "href": "/study/bible/john/21" },
+    { "label": "Leviticus 23", "href": "/study/bible/leviticus/23" },
+    { "label": "John 11", "href": "/study/bible/john/11" },
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "Romans 6", "href": "/study/bible/romans/6" },
+    { "label": "1 Corinthians 15", "href": "/study/bible/1-corinthians/15" }
+  ],
+  "stops": ["cross", "new-creation"],
+  "cards": ["resurrection"],
+  "care": "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Did Jesus really come back to life? (a moving picture: the case for it, and the case against)", "href": "/study/explorer/watch/did-jesus-come-back-to-life" },
+    { "label": "The resurrection: what the Bible teaches, and the errors the church has refused", "href": "/study/bible/doctrines/resurrection" },
+    { "label": "Did the resurrection actually happen?", "href": "/answers/did-the-resurrection-actually-happen" },
+    { "label": "The family catechism: did Jesus stay dead?", "href": "/family/catechism#q31" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "buried", "verse": false}, {"id": "third-day", "verse": true}, {"id": "sent", "text": "Then someone said her name, “Mary,” and she knew it was Jesus. He sent her to tell his friends, and she went to them and said, “I have seen the Lord!”", "verse": false}, {"id": "body", "text": "Jesus was not a ghost. He let his friends see his hands and feet, and he ate a piece of fish in front of them.", "verse": true}, {"id": "never-again", "verse": false}, {"id": "firstfruits", "verse": false}, {"id": "because", "text": "Because Jesus is alive, death is not the end for those who belong to him. His rising shows that he is Lord, and that what he did on the cross was enough.", "verse": true}]},
+  "end": { "label": "Go to the stop: The Cross and the Empty Tomb", "href": "/study/explorer/cross" }
+}

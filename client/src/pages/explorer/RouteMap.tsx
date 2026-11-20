@@ -117,6 +117,9 @@ export type PlacedName = { at: NameAt; r: Rect; room: boolean };
  */
 export const nameSize = (wide: boolean) => (wide ? 2.2 : 3.1);
 
+/** How far below and right of a coast or lake its drawn shadow reaches, in the frame's units (BookMap's shift on these frames, and its line). */
+const SHADOW = 2.5;
+
 const WIDE_QUERY = "(min-width: 900px)";
 function subscribeWide(cb: () => void) {
   if (typeof window === "undefined" || !window.matchMedia) return () => {};
@@ -151,7 +154,9 @@ export function placeNames(
   extra: { x: number; y: number; w: number; h: number }[] = [],
   nameOf: NameOf = ownName,
   /** Lines drawn by the frame (a coast, a lake) that a name should not cross. */
-  avoid: [number, number][][] = []
+  avoid: [number, number][][] = [],
+  /** Rivers drawn by the frame: kept off as well, but drawn with no shadow. */
+  rivers: [number, number][][] = []
 ): Map<string, PlacedName> {
   const fs = nameSize(wide) * u;
   type R = { x: number; y: number; w: number; h: number };
@@ -177,9 +182,15 @@ export function placeNames(
           y: a.y + ((b.y - a.y) * k) / n,
         });
     }
-  // The frame's own lines to keep off, as points a little closer than a name's height.
+  // The frame's own lines to keep off, as points a little closer than a name's
+  // height; a coast or a lake with its shadow too, since BookMap draws the
+  // water again a little below and to the right of its line.
   const shore: { x: number; y: number }[] = [];
-  for (const line of avoid)
+  const lines = [
+    ...avoid.map(line => ({ line, shadow: SHADOW })),
+    ...rivers.map(line => ({ line, shadow: 0 })),
+  ];
+  for (const { line, shadow } of lines)
     for (let i = 1; i < line.length; i++) {
       const a = { x: frame.x(line[i - 1][1]), y: frame.y(line[i - 1][0]) };
       const b = { x: frame.x(line[i][1]), y: frame.y(line[i][0]) };
@@ -188,10 +199,11 @@ export function placeNames(
         Math.ceil(Math.hypot(b.x - a.x, b.y - a.y) / (0.5 * u))
       );
       for (let k = 0; k <= n; k++)
-        shore.push({
-          x: a.x + ((b.x - a.x) * k) / n,
-          y: a.y + ((b.y - a.y) * k) / n,
-        });
+        for (const s of shadow ? [0, shadow] : [0])
+          shore.push({
+            x: a.x + ((b.x - a.x) * k) / n + s,
+            y: a.y + ((b.y - a.y) * k) / n + s,
+          });
     }
   const spots = (p: MapPlace, w: number) => {
     const c = pt(p);
@@ -208,12 +220,18 @@ export function placeNames(
       [0.9, { x: c.x - diag, y: c.y + diag + asc, anchor: "end" }],
       [1.1, { x: c.x, y: c.y - vert, anchor: "middle" }],
       [1.1, { x: c.x, y: c.y + vert + asc, anchor: "middle" }],
-      // On a map with the frame's lines to keep off (Abraham's road), two
-      // spots farther off, for a name hemmed in by a coast and a lake.
-      ...(avoid.length
+      // On a map with the frame's lines to keep off (Abraham's road), more
+      // spots for a name hemmed in by a coast and a lake (Hebron, between the
+      // coast and the Dead Sea): below, set a little to one side of the mark;
+      // farther above and below; and farther below to either side.
+      ...(lines.length
         ? ([
+            [2, { x: c.x + 2 * u, y: c.y + vert + asc, anchor: "end" }],
+            [2, { x: c.x - 2 * u, y: c.y + vert + asc, anchor: "start" }],
             [6, { x: c.x, y: c.y - 2 * vert, anchor: "middle" }],
             [6, { x: c.x, y: c.y + 2 * vert + asc, anchor: "middle" }],
+            [6.5, { x: c.x - diag, y: c.y + 3 * vert + asc, anchor: "end" }],
+            [6.5, { x: c.x + diag, y: c.y + 3 * vert + asc, anchor: "start" }],
           ] as [number, NameAt][])
         : []),
     ];
@@ -515,6 +533,7 @@ export function TripMap({
   nameOf = ownName,
   listLabel,
   avoid,
+  rivers,
 }: {
   frame: Frame;
   trip: Trip;
@@ -527,6 +546,8 @@ export function TripMap({
   listLabel?: string;
   /** The frame's lines the names keep off (see placeNames). */
   avoid?: [number, number][][];
+  /** The frame's rivers the names keep off (see placeNames). */
+  rivers?: [number, number][][];
 }) {
   const [at, setAt] = useState(0);
   const steps = trip.steps;
@@ -575,9 +596,10 @@ export function TripMap({
       [route],
       [],
       nameOf,
-      avoid
+      avoid,
+      rivers
     );
-  }, [frame, all, box, wide, steps, places, nameOf, avoid]);
+  }, [frame, all, box, wide, steps, places, nameOf, avoid, rivers]);
 
   const legs = steps.map((s, i) => {
     if (i === 0) return null;

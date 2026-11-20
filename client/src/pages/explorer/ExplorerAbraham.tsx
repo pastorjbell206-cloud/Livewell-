@@ -206,6 +206,7 @@ function RoadPage({ road, places }: Loaded) {
           note={road.routeNote}
           book={GENESIS}
           avoid={road.avoid}
+          rivers={road.rivers}
           listLabel={`The places in this part: ${part.name}`}
         />
       </div>
