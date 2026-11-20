@@ -11236,3 +11236,31 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Exodus 20:3; Isaiah 44:9; Jeremiah 10:10; John 1:1; John 20:28 | 18-21 | BSB | BSB text |
 
 ## 1 John complete (2026-11-20)
+
+## 2 John: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Thirteen verses; one papyrus sheet; about two minutes aloud | In a minute | 2-john/intro.json `overview`; bible/guides/reading-letters.json | Repository; reading time an estimate |
+| Presbuteros, older man or leader; a title needing no explaining | Who wrote it | 2-john/intro.json `author` | Repository |
+| Tradition named the apostle; vocabulary matches 1 John; one writer or circle; Papias' ‘elder John’ | Who wrote it | 2-john/intro.json `author`; john/intro.json `teaching` | Repository, no side |
+| Eusebius: 2 and 3 John disputed but widely known; the Peshitta lacks them; 367 Athanasius | Who wrote it; timeline | bible/guides/canon.json (section 5) | Repository |
+| The lady a church (her elect sister another church) or a real woman; kuria also a name | The chosen lady | 2-john/intro.json `setting`; 2-john/1.json `cultural` | Repository, no side |
+| Galatians 4:26; Revelation 21:2; Acts 16:15; Colossians 4:15 | The chosen lady | BSB | BSB text |
+| Date about 85 to 100, close to 1 John; order uncertain | When | 2-john/intro.json `date` | Repository |
+| Travelling teachers relied on hospitality; inns few and disreputable | When | 2-john/intro.json `setting`; 3-john/intro.json `setting` | Repository |
+| The deceivers the same movement as 1 John 2:19; docetism; ‘run ahead’ as a more advanced faith | When; Deceivers | 2-john/intro.json `setting`; 2-john/1.json `historical` | Repository |
+| ‘Truth’ five times in the first four verses; love and commands in a loop | How it is built; Truth and love | 2-john/1.json `literary`; 2-john/intro.json `themes` | Repository |
+| Identifications made; these notes make none | Deceivers | bible/guides/reading-apocalyptic.json; 2-thessalonians/plain/2.json | Repository; instruction for this run |
+| ‘The teaching of Christ’: about Christ or given by him | Deceivers; key words | 2-john/1.json `words` (G1322) | Repository |
+| 10-11: house church platform; the greeting as formal welcome and blessing; the readings of how far it extends | ‘Do not receive him’ | 2-john/1.json `cultural`, `hard`; 2-john/intro.json `reading` | Repository, no side |
+| ‘Jesus ate with tax collectors and sinners. Believers are to be friends, neighbours, coworkers and good citizens with people of every faith and none. Nothing here gives anyone a reason to look down on unbelievers.’ | ‘Do not receive him’ | 2-corinthians/plain/6.json (14-18 `hard`) | Word for word |
+| Care line ‘A word to anyone who has been hurt by a church's discipline ...’, with the sentence naming Paul left out | ‘Do not receive him’ | 1-corinthians/plain/5.json (1-5 `hard`) | Word for word, one sentence omitted |
+| Nicene Creed wording | Jesus | creeds/documents/nicene-creed.json | Repository, exact phrases |
+| Psalm 119:30; Leviticus 19:18; Deuteronomy 13:3; Jeremiah 23:16; Genesis 18:3; Psalm 34:18 | Old Testament; ‘Do not receive him’ | BSB | BSB text |
+| Key words: presbuteros, kuria, alētheia, agapē, planos, antichrist, didachē | Key words | 2-john/1.json `words`; 2-john/intro.json | Repository |
+| Map: Ephesus at the Pauline maps' point; the letter names no place | Map | ephesians/intro.json `teaching.map`; 2-john/1.json `historical` | Repository |
+
+Cut before publishing: the claim that the letter moves between singular and plural ‘you’ (not in the repository's notes); the Greek eklektē (not checked in the lexicon); Psalm 26:3, to keep ‘your truth’ out even inside Scripture.
