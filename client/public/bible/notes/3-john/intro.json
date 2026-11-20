@@ -206,9 +206,9 @@
             ],
             "line": "The letter names no place. Early tradition places John's last years here, in the Roman province of Asia, and the church has long linked the letters of John with him there.",
             "label": {
-              "dx": 8,
-              "dy": -6,
-              "anchor": "start"
+              "dx": -7,
+              "dy": 4,
+              "anchor": "end"
             }
           }
         ]

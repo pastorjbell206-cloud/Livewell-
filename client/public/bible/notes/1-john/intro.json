@@ -311,9 +311,9 @@
             ],
             "line": "The letter names no place. Early tradition places John's last years here, in the Roman province of Asia, and most readers think the churches that saw the split of 2:19 were in this region.",
             "label": {
-              "dx": 8,
-              "dy": -6,
-              "anchor": "start"
+              "dx": -7,
+              "dy": 4,
+              "anchor": "end"
             }
           }
         ]

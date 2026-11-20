@@ -11501,3 +11501,9 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 Cut before publishing: a reading of how the Reformed and Arminian traditions each take 3:5 in particular (the repository's doctrine study does not discuss the verse; the general views are given instead).
 
 ## Stopped here: Revelation 1 to 3 complete (2026-11-20)
+
+## Map labels after looking (2026-11-20)
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| 1, 2 and 3 John: the Ephesus label moved to the west of its point (as on the Ephesians and Revelation maps), since at 390 it crowded the drawing's ASIA label | Map | Screenshots of the served build at 390 and 1440 | Looked at |
