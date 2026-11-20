@@ -7045,3 +7045,51 @@ No web search.
 | Massah "testing", Meribah "quarrelling" (Exodus 17:7); forty years; Numbers 14:22-23 | 7-11 | BSB; earlier row (Psalm 81) | BSB text |
 | A priest or prophet's warning after praise, or the psalm's own design | 7-11 | Repository deep note (hard) | Stated as views |
 | Hebrews 3:7-11, 13; 4:7 ("through David"), 9; Matthew 11:28; Philippians 2:10; Revelation 4:11 | all | BSB | BSB text |
+
+## The plain notes on Psalm 96 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nearly all in 1 Chronicles 16:23-33; that song made of lines in 105, 96, 106; which came first debated | 1-9 | Book page ("The Psalms and the temple"); repository deep note; BSB | BSB text compared (1 Chronicles 16:23) |
+| elohim and elilim ("worthless idols", H0457) in 96:5 | 1-9 | Repository word data; repository deep note (cultural) | Script |
+| Conquerors carried off defeated peoples' gods; nations invited into the courts | 1-9 | Repository deep note (cultural) | Site's own teaching |
+| Judgment as good news for the wronged; "equity" | 10-13 | Repository deep note; BSB | Site's own teaching |
+| Matthew 28:19; Revelation 14:6-7; Acts 17:31; Romans 8:21; Isaiah 55:12 | all | BSB | BSB text |
+
+No nation given a place before the judge.
+
+## The plain notes on Psalm 97 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Sinai's fire and quaking (Exodus 19:18) | BSB | BSB text |
+| Baal pictured riding the clouds; the throne's raised base | Repository deep note (cultural); earlier ledger (Psalm 68, cloud rider, search) | Site's own teaching. Mowinckel not named |
+| "Distant shores" the coastlands | Repository deep note | Site's own teaching |
+| 97:11 "shines" is zarua, "sown" (H2232) | Repository word data | Script |
+| Hebrews 12:28; 1 John 1:5; Romans 12:9 | BSB | BSB text |
+
+## The plain notes on Psalm 98 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Heading one word; like 96 | BSB | BSB text |
+| "Right hand", "holy arm": Exodus 15:6; Isaiah 52:10; the return from exile (many scholars) or the exodus | Repository deep note (historical); BSB | Stated as views; the years 539/538 BC not given |
+| Victory music; the ram's horn at Solomon's anointing (1 Kings 1:39) | Repository deep note (cultural); BSB | BSB text |
+| Luke 2:30-31, 10; Luke 19:40 | BSB | BSB text |
+
+## The plain notes on Psalm 99 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The last "The LORD reigns" in Book Four (none in 100 to 106) | BSB | Script |
+| Cherubim on the ark, the empty throne, the footstool | Repository deep note (cultural) | Site's own teaching |
+| Exodus 32:14; 1 Samuel 12:23; Numbers 20:12 (forgiven, yet consequences) | Repository deep note (hard); BSB | BSB text |
+| Isaiah 6:3; Revelation 4:8; 1 Peter 1:16 | BSB | BSB text |
