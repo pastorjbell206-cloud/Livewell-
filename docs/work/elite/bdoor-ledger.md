@@ -10003,3 +10003,318 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 ## 1 Timothy complete (2026-11-20)
 
 All six chapters in plain words. No web searches for this book.
+
+## 2 Timothy: the book page (2026-11-20)
+
+One web search this run (for Titus's Nicopolis, below); none for this page. Scripture is the BSB in the repository, matched by the strict check and the validator.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Personal details: Lois, Eunice, the cloak with Carpus at Troas, Trophimus at Miletus | Who wrote it | BSB 1:5; 4:13; 4:20 | BSB text |
+| Received as Paul's early; in the Muratorian list (late second century) | Who wrote it | 2-timothy/intro.json `author` | Repository |
+| Authorship case pointed to the 1 Timothy page, not restated | Who wrote it | 1-timothy/intro.json `teaching` ‘Who wrote it: the Pastoral Letters’ | Repository |
+| Some count 2 Timothy the strongest claim of the three; Luke proposed as secretary (‘some have suggested’) | Who wrote it | 2-timothy/intro.json `author` | Repository wording, narrowed |
+| Rome, chains, Onesiphorus searching, first defense; harsher than Acts 28 | Where Paul was | BSB 1:8, 16-17; 2:9; 4:16; Acts 28:30-31; chapter 1 deep note `historical` | BSB text; repository |
+| Acts ends about AD 60 to 62 | Where Paul was | acts/intro.json `teaching` timeline | Repository |
+| Clement of Rome about AD 96, ‘the limit of the west’; Eusebius in the 300s on release and second imprisonment | Where Paul was | 1-timothy/intro.json `teaching` (‘When it was written’), earlier ledger rows; 2-timothy/intro.json `date` | Repository |
+| Tradition: executed in Rome under Nero; beheaded as a citizen; Nero died AD 68 | Where Paul was; timeline | Chapter 4 deep note `historical`; 2-timothy/intro.json `date` | Repository, stated as tradition |
+| Fire of July 64; Nero blamed Christians (Tacitus) | Where Paul was; timeline | acts/intro.json timeline; 2-timothy/intro.json `setting` | Repository |
+| Dates: AD 64 to 67 if Paul; a few earlier; AD 80 to 110 on the other view | Where Paul was | 2-timothy/intro.json `date` | Repository |
+| Timothy from Lystra; Jewish believing mother, Greek father; Mark turned back (Acts 13:13) | Timothy | BSB Acts 16:1; 13:13; 2 Timothy 4:11 | BSB text |
+| Prison a public disgrace shared by friends | Suffering without shame | Chapter 1 deep note `cultural` | Repository |
+| Persecutions at Antioch, Iconium, Lystra (Acts 13:50; 14:5; 14:19) | Suffering; map | Chapter 3 deep note `historical`; BSB | BSB text |
+| Theopneustos rare, one of its earliest uses; breathed out (Psalm 33:6); Scriptures then the Old Testament; 2 Peter 3:15-16 | Scripture | Chapter 3 deep note `words` (G2315), `historical` | Repository; BSB |
+| What all confess; not dictation; 2 Peter 1:21 | Scripture | Chapter 3 deep note `hard` | Repository wording; BSB |
+| Inerrancy and infallibility, each in its holders' terms; no side | Scripture | bible/doctrines/revelation.json `differ` (Detailed inerrancy; Infallibility); chapter 3 deep note `hard` | Repository wording, paraphrased; no names carried over. No side |
+| Farewell form: Moses, Joshua 23-24, Acts 20 | Paul's farewell | 2-timothy/intro.json `reading` | Repository |
+| Crown a victor's wreath; analusis, untying a boat or striking a tent; drink offering (Numbers 15) | Paul's farewell; words | Chapter 4 deep note `cultural`, `words` | Repository; BSB |
+| Care line ‘you do not have to carry it alone’; Find Help | Suffering; farewell | 1-corinthians/plain/15.json (50-58) | Phrase word for word |
+| Jannes and Jambres unnamed in the Old Testament; named in Jewish tradition | Old Testament | Chapter 3 deep note `cultural` | Repository (Targums and the Damascus Document not named here) |
+| 2:19 sayings from Numbers 16:5 | Old Testament | Chapter 2 deep note `doctrines` | Repository; BSB |
+| ‘Last days’ the whole time between Christ's comings | What it is not; words | Chapter 3 deep note `story` | Repository |
+| ‘Vulnerable women’ particular people, not women in general | What it is not | Chapter 3 deep note `cultural` | Repository |
+| Psalm 22:21; Psalm 62:12 (deep note); Psalm 22 prayed by Jesus (Mark 15:34) | Old Testament | Chapter 4 deep note `historical`, `hard`; BSB | BSB text |
+| Irenaeus (late second century) names Linus first leader in Rome; takes him to be the Linus of 4:21 | Timeline | Chapter 4 deep note `historical` | Repository |
+| Map points: Rome, Ephesus, Troas, Miletus, Corinth, Thessalonica, Lystra, Iconium, Pisidian Antioch | Map | Coordinates already used on the acts, galatians and 2 Corinthians maps | Repository |
+
+Cut: "around the world today many believers know what that verse means" (no source here); "the call to turn from evil found across the prophets" narrowed to "the many calls in the Old Testament".
+
+## The plain notes on 2 Timothy 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘My true child’ (1 Timothy 1:2); tears perhaps at their last parting (‘many readers think’) | 1-5 | BSB; chapter deep note `story` | BSB text; narrowed |
+| Timothy's Greek father; Lois and Eunice; Scripture taught early in Jewish homes; ‘as did my forefathers’, faith in Christ not a break from Israel's God | 1-5 | Chapter deep note `cultural`; Acts 16:1 | Repository; BSB |
+| Deuteronomy 6:7; Psalm 145:4; 78:4; Exodus 3:15 | 1-5 | BSB | BSB text |
+| Anazōpureō, coals fanned; deilia, timidity; fear not lack of ability the danger | 6-7 | Chapter deep note `words` (G0329, G1167) | Repository |
+| Laying on of hands a commissioning; 1 Timothy 4:14 | 6-7 | Chapter deep note `cultural` | Repository; BSB |
+| Joshua 1:9; Numbers 27:18; Isaiah 41:10 | 6-7 | BSB | BSB text |
+| Anxiety care lines (Philippians 2:27-28; 2 Corinthians 11:28; illnesses; Honest Answer; self-harm line) | 6-7 | philippians/plain/4.json (4-9) | Word for word, fitted from ‘this verse’ and ‘Be anxious for nothing’ to verse 7 |
+| Prison a disgrace shared by friends | 8-12 | Chapter deep note `cultural` | Repository |
+| Grace in Christ before time; ‘appearing’ his coming; death’s power broken | 8-12 | Chapter deep note `christ` | Repository |
+| Isaiah 25:8; Hosea 13:14 quoted in 1 Corinthians 15:54-55; Psalm 16:10; Daniel 12:2; Psalm 31:5 (David's), Luke 23:46; 1 Corinthians 15:26 | 8-12 | BSB | BSB text |
+| Grief care lines | 8-12 | 1-thessalonians/plain/4.json (13-14) | Word for word (the second paragraph) |
+| Province of Asia, Ephesus; ‘everyone deserted’ probably believers from Asia who might have supported him, not all; Phygelus and Hermogenes otherwise unknown; prisoners depended on friends; ‘refreshed’ practical help | 13-18 | Chapter deep note `historical`, `cultural` | Repository |
+| Parathēkē, a deposit | 13-18 | Chapter deep note `words` (G3866) | Repository |
+| Onesiphorus: Catholic and Orthodox reading (prayer for the dead); Protestant answer; no side | 13-18 | Chapter deep note `hard` | Repository wording, paraphrased; 2 Maccabees not carried over. No side |
+| Psalm 38:11; 142:4; Proverbs 17:17; 18:24; Psalm 121:7 | 13-18 | BSB | BSB text |
+
+Cut: "Paul had no children of his own that we know of" (no source).
+
+## The plain notes on 2 Timothy 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Four generations in 2:2; faith handed on, not invented | 1-7 | Chapter deep note `doctrines` (church) | Repository |
+| Soldiers' long terms, undivided loyalty, clear of civilian business; athletes' wreath forfeited for breaking rules; farmer's first share | 1-7 | Chapter deep note `cultural` | Repository (the marriage rule not carried over) |
+| Deuteronomy 31:7; 2 Kings 2:9; Psalm 71:18; Proverbs 27:18; 2:6 | 1-7 | BSB | BSB text |
+| Kakourgos the word Luke uses of the two crucified with Jesus; Philippians 1:12-14 | 8-10 | Chapter deep note `historical` | Repository; BSB |
+| Raised: the answer to those who said the resurrection had passed; descended from David, 2 Samuel 7:12-16 | 8-10 | Chapter deep note `christ` | Repository; BSB |
+| 2 Samuel 7:12-13; Psalm 89:4; Isaiah 11:1; 26:19; 40:8 | 8-10 | BSB | BSB text |
+| An early hymn or confession, four conditional lines; Matthew 10:33; the turn in the fourth line; Peter restored | 11-13 | Chapter deep note `literary`, `hard` | Repository; BSB (John 21:15-17) |
+| Romans 6:8 (sunapothnēskō, Romans 6:3-8) | 11-13 | Chapter deep note `words` (G4880) | Repository; BSB |
+| Two readings of 2:12-13; many prefer the first (1 Corinthians 1:9; 1 Thessalonians 5:24) | 11-13 | Chapter deep note `hard` | Repository wording. No side |
+| Assurance views; Romans 8:31-39 note; Honest Answer; the care paragraph | 11-13 | galatians/plain/5.json (1-6) | Word for word, the verse number fitted |
+| 2 Chronicles 15:2; Deuteronomy 32:4; Lamentations 3:22-23; Numbers 23:19 | 11-13 | BSB | BSB text |
+| Orthotomeō, cut straight; dokimos, tested metal or full-weight coin | 14-19 | Chapter deep note `words` (G3718, G1384) | Repository |
+| Hymenaeus (1 Timothy 1:20); Philetus otherwise unknown; resurrection spiritualized; body a prison; Corinth (1 Corinthians 15:12) | 14-19 | Chapter deep note `historical` | Repository; BSB |
+| Seals marked ownership; God's side and his people's; Numbers 16:5 | 14-19 | Chapter deep note `cultural`, `doctrines` | Repository; BSB |
+| Numbers 16:26 behind the second saying | 14-19 | Not in the repository | Narrowed to "some readers hear" |
+| 1 Corinthians 15:13-17 | 14-19 | BSB | BSB text |
+| Vessels of precious metal and of wood and clay, including for waste | 20-26 | Chapter deep note `cultural` | Repository |
+| ‘Youthful passions’ including love of winning an argument | 20-26 | Not in the repository | Narrowed to "some readers think" |
+| Repentance God's gift; correction gentle, not winning quarrels | 20-26 | Chapter deep note `doctrines` (repentance) | Repository |
+| Misuse, the police line, the word to the hurt | 20-26 | 1-corinthians/plain/5.json (1-5) | Word for word, with ‘These verses’ for ‘Church discipline’ in the first sentence and the victim clause added |
+| Jeremiah 18:4; Isaiah 52:11; Proverbs 15:1; 26:21; Isaiah 42:3; Ezekiel 18:23; 17:14 (Proverbs) | 14-26 | BSB | BSB text |
+
+## The plain notes on 2 Timothy 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Last days the whole time between the comings; Acts 2:17; Hebrews 1:2 | 1-5 | Chapter deep note `story`; BSB | Repository; BSB text |
+| List framed by lovers of self, money, pleasure; disordered love the root; morphōsis, outward shape | 1-5 | Chapter deep note `cultural`, `words` (G3446), `doctrines` (idolatry) | Repository |
+| No date, no modern group; Mark 13:32 | 1-5 | BSB; 1-thessalonians teaching (no date) | BSB text |
+| Deuteronomy 6:5; Isaiah 29:13; Jeremiah 7:4; Micah 6:8 | 1-5 | BSB | BSB text |
+| Churches met in homes; teachers visited households, perhaps while men were at work; the women particular people, not women in general | 6-9 | Chapter deep note `cultural` | Repository |
+| Jannes and Jambres unnamed in Exodus, named in Jewish tradition | 6-9 | Chapter deep note `cultural` | Repository |
+| ‘Disqualified’ the opposite of ‘approved’ (2:15) | 6-9 | Chapter 2 deep note `words` (G1384) | Repository |
+| Women must learn (1 Timothy 2:11) | 6-9 | BSB; 1-timothy/plain/2.json | BSB text |
+| Controlling-leader care lines | 6-9 | 2-corinthians/plain/11.json (16-21) | Word for word, with ‘; the Corinthians were taken in too’ left out |
+| Exodus 7:11-12; 8:18-19; Jeremiah 23:16; Proverbs 14:15 | 6-9 | BSB | BSB text |
+| Antioch, Iconium, Lystra (Acts 13:50; 14:5; 14:19); Timothy joined soon after (Acts 16:1-3) | 10-13 | Chapter deep note `historical` | Repository; BSB |
+| Persecution a normal mark of faithfulness | 10-13 | Chapter deep note `doctrines` (suffering) | Repository |
+| Not every discomfort persecution; no party lesson; Romans 12:14 | 10-13 | The run's brief; BSB | BSB text |
+| Hardship care lines | 10-13 | acts/plain/14.json (21-28) | Word for word (the last paragraph) |
+| Psalm 44:22; 34:19; Jeremiah 20:9; Daniel 3:18 | 10-13 | BSB | BSB text |
+| Scriptures then the Old Testament; Paul's letters circulating; John 5:39 | 14-17 | Chapter deep note `historical`, `christ` | Repository; BSB |
+| Theopneustos rare, early; exartizō, fitting out a ship or a workman | 14-17 | Chapter deep note `words` (G2315, G1822) | Repository |
+| What all confess; inerrancy and infallibility; no side; doctrine study | 14-17 | Chapter deep note `hard`; bible/doctrines/revelation.json `differ` | Repository wording, paraphrased. No side |
+| Psalm 19:7-8; 119:105; 33:6; 2 Samuel 23:2; Deuteronomy 32:47; 2 Peter 1:21 | 14-17 | BSB | BSB text |
+
+Cut: "People who set dates for Christ's return have always been wrong" (a claim beyond the sources; Mark 13:32 kept).
+
+## The plain notes on 2 Timothy 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Oath-like charge before God and Christ the judge; five commands, reason, four more | 1-5 | Chapter deep note `literary` | Repository |
+| Euangelistēs three times (Acts 21:8; Ephesians 4:11) | 1-5 | Chapter deep note `words` (G2099) | Repository |
+| Ezekiel 33:7; Isaiah 30:10; Jeremiah 5:31; Psalm 96:13 | 1-5 | BSB | BSB text |
+| Drink offering (Numbers 15); Philippians 2:17; analusis, untying a boat or striking a tent; Philippians 1:23; stephanos a victor's wreath; race and fight from the games | 6-8 | Chapter deep note `cultural`, `words` | Repository; BSB |
+| Intermediate state views pointed to the doctrine study, no side | 6-8 | philippians/plain/1.json (19-26); 2-corinthians/plain/5.json | Repository |
+| Death an enemy; Jesus wept (John 11:35) | 6-8 | 2-corinthians/plain/1.json (1-7) | Repository |
+| Care lines: grief and ‘do not want to go on’; self-harm and emergency | 6-8 | 1-corinthians/plain/15.json (50-58); philippians/plain/1.json (19-26) | Word for word, the two joined |
+| Numbers 15:5; Psalm 116:15; 23:4; Ecclesiastes 12:7; Daniel 12:3 | 6-8 | BSB | BSB text |
+| Demas earlier with Paul (Colossians 4:14; Philemon 1:24); Mark's split and reconciliation (Acts 13:13; 15:37-39; Colossians 4:10); Tychicus | 9-13 | Chapter deep note `historical` | Repository; BSB |
+| Luke wrote the Gospel and Acts, as early writers report | 9-13 | acts/intro.json `teaching` timeline (Irenaeus, Muratorian) | Repository, stated as report |
+| Winter closed the sea (Acts 27:9-12); prison cold; parchment costlier than papyrus; contents unknown, suggestions | 9-13 | Chapter deep note `cultural` | Repository |
+| Psalm 41:9; 55:12; 27:10; Proverbs 27:10 | 9-13 | BSB | BSB text |
+| First defense a preliminary hearing; lion's mouth from Psalm 22:21, not literal; citizens not thrown to beasts | 14-18 | Chapter deep note `historical` | Repository |
+| Alexander: name common, not certainly the man of 1 Timothy 1:20 | 14-18 | 1-timothy/plain/1.json (18-20) | Repository |
+| Forgiving the deserters (Luke 23:34); John 16:32 not used | 14-18 | Chapter deep note `christ` | Repository; BSB |
+| Alexander hard part: fear versus opposition; Romans 12:19; Revelation 6:10; mercy and justice | 14-18 | Chapter deep note `hard` | Repository wording, paraphrased |
+| Care paragraph (heavy burden, seek help and safety) | 14-18 | acts/plain/14.json (21-28) | Word for word, with the authorities sentence added |
+| Psalm 62:12; Proverbs 24:12; Deuteronomy 32:35; Proverbs 20:22; Psalm 22:21; Daniel 6:22 | 14-18 | BSB | BSB text |
+| Prisca and Aquila (Acts 18; Romans 16:3-4); Erastus and Trophimus (Acts 19:22; 20:4) | 19-22 | Chapter deep note `historical`; BSB | BSB text |
+| Eubulus, Pudens, Claudia unknown; Irenaeus on Linus, early, unconfirmed | 19-22 | Chapter deep note `historical` | Repository |
+| ‘You’ plural in the last line | 19-22 | Greek text (humōn) | Repository text |
+| Ruth 2:4; Numbers 6:24-25 | 19-22 | BSB | BSB text |
+
+## 2 Timothy complete (2026-11-20)
+
+All four chapters in plain words.
+
+## Titus: the book page (2026-11-20)
+
+One web search: the coordinates of Nicopolis in Epirus (results from Wikipedia and its mirrors, a travel listing and a heritage listing agree on about 39.008 N, 20.734 E, about 7 km north of Preveza). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Received as Paul's; Muratorian list; Irenaeus and Clement of Alexandria quote it; Marcion left it out | Who wrote it | titus/intro.json `author` | Repository |
+| Authorship pointed to the 1 Timothy page; Crete not in Acts; the two views of the setting | Who wrote it | 1-timothy/intro.json `teaching`; titus/1.json `historical` | Repository |
+| Crete large and mountainous; joined with Cyrene in one province; Philo mentions Jews there; Cretans at Pentecost (Acts 2:11) | Crete | titus/intro.json `setting`; titus/1.json `historical` | Repository; BSB |
+| Acts mentions Crete only on the voyage; Fair Havens (Acts 27:7-13) | Crete; map | titus/intro.json `author`; titus/3.json `historical`; acts teaching map (Fair Havens 34.93, 24.8) | Repository; BSB |
+| AD 62 to 64 if Paul; 80 to 110 on the other view | Crete; timeline | titus/intro.json `date` | Repository |
+| Nicopolis in Epirus, founded by Augustus for Actium, 31 BC; most scholars think this one | Crete; map; timeline | titus/3.json `historical`; philippians teaching timeline (Actium 31 BC) | Repository; coordinates by the search above |
+| Cretans' reputation; Epimenides (about the sixth century BC) by tradition, reported by Clement of Alexandria and others; Callimachus; tomb of Zeus; a verb ‘to lie’ from the name; irony; not every Cretan | Crete; the Cretan saying | titus/1.json `cultural`, `words` (G0893) | Repository (Clement not named on the page) |
+| Titus a Gentile not circumcised (Galatians 2:1-3); Corinth (2 Corinthians 7:6-7; 8:6, 16-17); Dalmatia (2 Timothy 4:10); not in Acts | Titus | titus/intro.json `setting`; BSB | BSB text |
+| Elders in every town (Acts 14:23); elder and overseer interchangeable; oikonomos; the readings of 1:6; church order and women pointed to 1 Timothy | Elders | titus/1.json `historical`, `literary`, `words`, `hard`; 1-timothy/plain/3.json | Repository. No side |
+| ‘Those of the circumcision’ Jewish believers or Jews pressing the law; myths; purity rules; money | The circumcision group | titus/1.json `historical` | Repository |
+| Dispute among believers, not against Jews; Romans 7:12; misuse rejected; Acts 2:22-28 pointer | The circumcision group | philippians/plain/3.json (1-3); galatians/plain/4.json (21-31) | Near word for word |
+| Contempt for any people named as misuse | The Cretan saying | The run's brief; titus/1.json `cultural` | Stated by the site |
+| Household passage: outsiders' scrutiny; critics said the faith disrupted families; older women teachers; sōphrōn for every group | Household | titus/2.json `historical`, `cultural`, `words` (G4998) | Repository |
+| Wives: complementarian and egalitarian readings, each in its holders' terms; no side | Household | titus/2.json `hard`; ephesians/plain/5.json (21-33) | Repository wording, paraphrased. No side |
+| Abuse care lines | Household | ephesians/plain/5.json (21-33) | Word for word |
+| Slavery: no abolition commanded; Atlantic misuse named wrong | Household | ephesians/plain/6.json (5-9) | Word for word where it fits |
+| Paideuō; epiphaneia used of a god's manifestation or a ruler's arrival; two appearings | Grace | titus/2.json `words`, `literary` | Repository |
+| 2:13 taken by most translations and readers as one person; not resting on this verse alone (John 1:1; 20:28; Hebrews 1:8) | Grace | titus/intro.json `christ`; titus/2.json `christ`; romans/verses/9.json | Repository wording |
+| Periousios; Exodus 19:5; Deuteronomy 7:6 | Grace; Old Testament | titus/2.json `words` (G4041) | Repository; BSB |
+| Trinitarian pattern of 3:4-7 | Mercy | titus/3.json `literary`, `christ` | Repository |
+| Baptism readings of 3:5: Catholic, Orthodox, Lutheran; Reformed and Presbyterian; Baptist and evangelical; no side | Mercy | titus/3.json `hard` | Repository wording. No side |
+| Small groups meeting privately suspected; good conduct | Good neighbours | titus/3.json `cultural` | Repository |
+| Acts 5:29; the notes on Romans 13 | Good neighbours | romans/plain/13.json | Repository |
+| Hairetikos, later ‘heretic’, behaviour more than doctrine; two warnings first | Good neighbours; words | titus/3.json `words` (G0141) | Repository |
+| Not used against the harmed; police | Good neighbours | 1-corinthians/plain/5.json (1-5) | Wording drawn from it |
+| Philanthrōpia; palingenesia (Matthew 19:28) | Words | titus/3.json `words` | Repository |
+| Numbers 23:19; Exodus 34:6; Ezekiel 36:25, 27; Joel 2:28; Jeremiah 29:7 | Old Testament | BSB | BSB text |
+| Galatians 2:1-3 about AD 48 to 50 ‘on many readings’ | Timeline | galatians/intro.json `teaching` timeline (the Acts 15 meeting, about AD 48 to 50; many think Galatians 2 tells of it) | Repository, narrowed |
+| Pentecost AD 30 or 33 | Timeline | acts/intro.json timeline | Repository |
+
+Cut: "Perhaps some of them carried the news home"; "Titus had come to faith through Paul" (only ‘my true child’ is in the text).
+
+## The plain notes on Titus 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Opening surpassed clearly only by Romans; key themes packed in; ‘Savior’ given to God and Christ | 1-4 | Chapter deep note `literary`, `christ` | Repository |
+| Apseudēs set against verse 12 | 1-4 | Chapter deep note `words` (G0893) | Repository |
+| Titus a Gentile | 1-4 | titus/intro.json `setting` | Repository |
+| Numbers 23:19; Genesis 12:3; Jeremiah 9:24 | 1-4 | BSB | BSB text |
+| Epidiorthoō, putting right what remains; elders in every town (Acts 14:23); elder and overseer interchangeable | 5-9 | Chapter deep note `words` (G1930), `historical`, `literary` | Repository; BSB |
+| Oikonomos, household manager; five nots, six musts, one hold | 5-9 | Chapter deep note `words` (G3623), `literary` | Repository |
+| Roman household expectations | 5-9 | Chapter deep note `cultural` | Repository |
+| Church order, ‘one-woman man’ readings, leaders' accountability and the care line | 5-9 | 1-timothy/plain/3.json (1-7) | Word for word, fitted |
+| Pistos: believers or faithful children | 5-9 | Chapter deep note `words` (G4103), `hard` | Repository |
+| Exodus 18:21; Deuteronomy 1:13; Ezekiel 34:2; Proverbs 16:32 | 5-9 | BSB | BSB text |
+| Circumcision group: Jewish believers pressing the law; myths, commands, purity; money; like Ephesus | 10-11 | Chapter deep note `historical` | Repository |
+| Not against Jews; Romans 9:3; 11:1; 7:12; misuse rejected; Acts 2:22-28 note; not a pattern | 10-11 | philippians/plain/3.json (1-3) | Near word for word, fitted |
+| Micah 3:11; Isaiah 56:11; Proverbs 11:1 | 10-11 | BSB | BSB text |
+| Epimenides by tradition (sixth century BC); Callimachus; Zeus's tomb; a verb ‘to lie’; irony; not every Cretan; goal their soundness | 12-16 | Chapter deep note `cultural` | Repository |
+| ‘To the pure’ applies Mark 7:18-23 | 12-16 | Chapter deep note `christ` | Repository |
+| Contempt for peoples named as misuse; Genesis 1:27 | 12-16 | The run's brief; BSB | BSB text |
+| Genesis 1:31; Psalm 24:4; 15:2; Isaiah 29:13; Proverbs 20:11 | 12-16 | BSB | BSB text |
+
+## The plain notes on Titus 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sōphrōn family through the chapter (verses 2, 4, 5, 6, 12) | 1-5; 6-8 | Chapter deep note `cultural`, `words` (G4998) | Repository |
+| Older women teachers of good; slander and wine failings attributed to older women in ancient comic and moral writing; younger women's list matched Roman ideals | 1-5 | Chapter deep note `cultural` | Repository |
+| Churches in households; critics said the movement disrupted families; purpose clauses | 1-5 | Chapter deep note `historical` | Repository |
+| Wives: what all agree; complementarian and egalitarian readings; no side | 1-5 | Chapter deep note `hard`; ephesians/plain/5.json (21-33) | Repository wording, paraphrased. No side |
+| Abuse care lines (two paragraphs) | 1-5 | ephesians/plain/5.json (21-33) | Word for word |
+| Leviticus 19:32; Proverbs 16:31; 31:26; Psalm 71:18; Genesis 2:24 | 1-5 | BSB | BSB text |
+| Titus relatively young; example in good works and speech | 6-8 | Chapter deep note `cultural` | Repository |
+| Proverbs 20:29; Psalm 119:9; 1 Samuel 2:26; Ecclesiastes 12:1 | 6-8 | BSB | BSB text |
+| Roman slavery described; slaves addressed as moral agents; pilfering a common complaint; Crete included | 9-10 | ephesians/plain/6.json (5-9); chapter deep note `historical` | Repository wording |
+| Words to masters elsewhere (Ephesians 6:9; Colossians 4:1) | 9-10 | BSB | BSB text |
+| The hard part on slavery | 9-10 | ephesians/plain/6.json (5-9) | Word for word, fitted to 2:9-10 (‘submit’, ‘verses like these’, ‘work honestly and with good faith’) |
+| Exodus 21:16; Deuteronomy 23:15; 15:12; Job 31:15; Deuteronomy 10:17 | 9-10 | BSB | BSB text |
+| Paideuō; epiphaneia; two appearings; periousios echoing Exodus 19:5 | 11-15 | Chapter deep note `words`, `literary`, `christ` | Repository |
+| 2:13 one person in most translations and for most readers; confession; John 1:1; 20:28; Hebrews 1:8 | 11-15 | titus/intro.json `christ`; chapter deep note `christ`; romans/verses/9.json | Repository wording |
+| ‘Savior’ of God three times and of Jesus three times | 11-15 | titus/intro.json `themes` | Repository |
+| Psalm 130:8; Ezekiel 37:23; Isaiah 9:6 | 11-15 | BSB | BSB text |
+
+Narrowed: "Israel's law set limits that Roman law did not" to "set limits on slavery".
+
+## The plain notes on Titus 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Small groups meeting privately, refusing the gods, suspected; good conduct protected the church | 1-2 | Chapter deep note `cultural` | Repository |
+| Rulers: what Paul says and does not; Acts 5:29; misuse to defend tyranny and slavery rejected; how Christians differ; no side | 1-2 | romans/plain/13.json (1-7) | Near word for word, fitted (Kairos Document and the 1850s not repeated) |
+| Jeremiah 29:7; Daniel 6:4; Psalm 34:14 | 1-2 | BSB | BSB text |
+| Verses 4-7 one balanced sentence, perhaps from early teaching or worship; a trustworthy saying; Trinitarian pattern | 3-8 | Chapter deep note `literary`, `christ` | Repository |
+| Philanthrōpia a virtue of kings and benefactors; palingenesia, Matthew 19:28 | 3-8 | Chapter deep note `words`, `cultural` | Repository; BSB |
+| Baptism readings of 3:5; Acts 2:37-41 note; doctrine study | 3-8 | Chapter deep note `hard`; colossians/plain/2.json (6-15) | Repository wording. No side |
+| Exodus 34:6; Deuteronomy 9:5; Psalm 103:10; Ezekiel 36:25, 27; Joel 2:28; Psalm 51:10 | 3-8 | BSB | BSB text |
+| Hairetikos, later ‘heretic’, behaviour more than doctrine; two warnings first | 9-11 | Chapter deep note `words` (G0141) | Repository |
+| Discipline misuse, police line, word to the hurt | 9-11 | 1-corinthians/plain/5.json (1-5); 1-timothy/plain/5.json (17-22) | Word for word |
+| Proverbs 6:19; 26:20; 17:14; Psalm 133:1 | 9-11 | BSB | BSB text |
+| Artemas and Zenas known only here; Tychicus (Acts 20:4; Ephesians 6:21; Colossians 4:7); Apollos (Acts 18:24-28; 1 Corinthians 3:6); Nicopolis, ‘city of victory’, Epirus, Actium 31 BC; nomikos either law; travellers supplied by churches | 12-15 | Chapter deep note `historical`, `cultural` | Repository; BSB |
+| Winter ended most sea travel | 12-15 | 2-timothy/4.json `cultural` | Repository |
+| Deuteronomy 15:7-8; Isaiah 58:7; Proverbs 3:27 | 12-15 | BSB | BSB text |
+
+## Titus complete (2026-11-20)
+
+All three chapters in plain words.
+
+## Philemon: the book page (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Single page; shortest; Paul writes part by hand; among the seven undisputed; Marcion and Muratorian lists; questioned in the 300s, defended by Jerome and Chrysostom | In a minute; Who wrote it | philemon/intro.json `overview`, `author` | Repository |
+| Rome about AD 60 to 62 (traditional, with Colossians); Ephesus mid-50s, about 120 miles (190 km) from Colossae; ‘more imprisonments’ (2 Corinthians 11:23); Caesarea about AD 57 to 59 | Where Paul was; timeline; map | philemon/intro.json `date`; colossians teaching timeline | Repository; BSB |
+| What the letter says of Philemon, Apphia, Archippus, Onesimus | People | BSB verses 1-19 | BSB text |
+| ‘Your very self’ read as Philemon's conversion through Paul (‘many take’) | People | Not stated in the repository's notes | Narrowed to "many take" |
+| Colossae from Colossians 4:9, 17 | People; map | philemon/intro.json `setting` | Repository; BSB |
+| Three accounts of how Onesimus came: ran away, perhaps stealing (Chrysostom, traditional); went to a friend of the master to intercede (Justinian's Digest; ‘some scholars’); sent by Philemon | People | philemon/intro.json `purpose`, `setting`; philemon/1.json `historical` | Repository, each as a reading; ‘and stayed too long’ cut |
+| Roman slavery: not race-based; manumission common; property; beaten, sold, separated; runaways hunted, branded | People | philemon/intro.json `setting`; philemon/1.json `cultural` | Repository |
+| Paul waits until verse 10; refreshed hearts frame (7, 20) | How it is built | philemon/1.json `literary` | Repository |
+| ‘In person and in the Lord’; Paul does not say slavery is wrong | What Paul asks | philemon/1.json `hard`, `words` (G1401) | Repository |
+| Three readings of what Paul hoped: welcome without punishment; freedom; sent back to help Paul (verses 13, 21) | What Paul asks | philemon/intro.json `purpose` | Repository. No side |
+| Letter's survival as a sign (‘some readers’) | What Paul asks | philemon/intro.json `reading` (Knox) | Narrowed |
+| Ignatius names Bishop Onesimus of Ephesus, early second century; identification possible, unproven | What Paul asks; timeline | philemon/intro.json `reading` | Repository (Knox not named) |
+| Fugitive Slave Act of 1850; defenders cited Philemon; abolitionists answered from verse 16; enslaved Christians heard differently; Paul's position; Gregory of Nyssa (fourth century) preached against slaveholding; evangelical abolitionists; slowness confessed | Misuse; timeline | philemon/1.json `hard` | Repository wording |
+| Atlantic slavery built on race and kidnapping; kidnapping punished by death | Misuse | ephesians/plain/6.json (5-9) | Word for word |
+| Deuteronomy 23:15-16; Exodus 21:16; Deuteronomy 15:15; Leviticus 25:40; Job 31:15 | Misuse; Old Testament | BSB | BSB text |
+| Luther's preface, ‘we are all Christ's Onesimus’ in effect; an analogy, not a hidden meaning | Charge it to my account | philemon/1.json `christ`; philemon/intro.json `christ` | Repository, paraphrased |
+| Koinōnia (verses 6, 17); splanchna (7, 12, 20); doulos; Onesimus a common slave name | Themes; words | philemon/1.json `words` | Repository |
+| Achrēstos and euchrēstos; chrēstos and Christos pronounced alike; onaimēn in verse 20 | Words; How to read | philemon/intro.json `reading`; philemon/1.json `cultural` | Repository |
+| Pliny to Sabinianus, early second century | Timeline | philemon/1.json `historical` | Repository (letter number not given on the page) |
+| Seed whose logic could not coexist with ownership (‘most readers today’) | Themes | philemon/intro.json `themes` | Repository wording |
+| Map: Colossae, Ephesus, Caesarea, Rome | Map | colossians teaching map coordinates | Repository |
+
+## The plain notes on Philemon 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Colossae from Colossians 4:9, 17 (‘most readers’) | 1-3 | philemon/intro.json `setting` | Repository; BSB |
+| House churches gathered the household; letter read before all, perhaps Onesimus; deliberate | 1-3 | Chapter deep note `cultural` | Repository |
+| Numbers 6:25-26; Psalm 68:6 | 1-3 | BSB | BSB text |
+| Koinōnia; splanchna three times; thanksgiving prepares the request; 7 and 20 frame | 4-7 | Chapter deep note `words`, `literary` | Repository |
+| Psalm 133:1; Proverbs 25:11 | 4-7 | BSB | BSB text |
+| Command versus appeal; name delayed to verse 10; aged and in chains | 8-11 | Chapter deep note `literary` | Repository |
+| Onesimus a common slave name meaning useful; achrēstos and euchrēstos; chrēstos pronounced like Christos | 8-11 | Chapter deep note `cultural`, `words` (G3682) | Repository |
+| What is known and what is inferred; Chrysostom; the intercession distinction; sent by Philemon | 8-11 | philemon/intro.json `purpose`, `setting`; chapter deep note `historical` | Repository, each as a reading. No side |
+| Psalm 68:5; Deuteronomy 23:15-16 | 8-11 | BSB | BSB text |
+| ‘In person’ is en sarki, ‘in the flesh’ | 12-16 | Greek text of verse 16 | Repository text |
+| The hard part on slavery and its misuse (Paul's position; Gregory of Nyssa; abolitionists; Fugitive Slave Act 1850; enslaved Christians; slowness confessed) | 12-16 | Chapter deep note `hard`; ephesians/plain/6.json (5-9) for the Atlantic sentence | Repository wording |
+| Genesis 33:3-4; Leviticus 25:40; Job 31:15 | 12-16 | BSB | BSB text |
+| IOU in Paul's hand; debt and the greater debt; onaimēn in verse 20; guest room to see how he was received | 17-22 | Chapter deep note `literary`; philemon/intro.json `reading` | Repository |
+| Luther's preface, ‘in effect’ | 17-22 | Chapter deep note `christ` | Repository, paraphrased |
+| Three readings of verse 21; Ignatius and Bishop Onesimus, unproven | 17-22 | philemon/intro.json `purpose`, `reading` | Repository. No side |
+| Leviticus 6:5; Ruth 1:16 | 17-22 | BSB | BSB text |
+| Epaphras founded the church at Colossae (Colossians 1:7); Mark (Acts 15:37-39; 2 Timothy 4:11); Aristarchus of Thessalonica (Acts 27:2); Luke the physician, named by early writers as author; Demas (2 Timothy 4:10) | 23-25 | Chapter deep note `historical`; acts teaching timeline | Repository; BSB |
+| ‘Your’ plural in verse 25 | 23-25 | Greek text (humōn) | Repository text |
+| Numbers 6:24-25 | 23-25 | BSB | BSB text |
+
+## Philemon complete (2026-11-20)
