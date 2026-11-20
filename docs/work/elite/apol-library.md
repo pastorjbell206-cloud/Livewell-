@@ -460,7 +460,7 @@ The plan's list for area 2 (section 2) is a map, not a build order, and three of
 | The Bible has been translated so many times. Hasn't the meaning been lost along the way? | /questions/text/lost-in-translation | 2,010 | h |
 | Was Jesus angry or compassionate when he healed the leper in Mark 1:41? | /questions/text/an-angry-jesus-mark-1-41 | 1,851 | i |
 
-Each is written first as Markdown in `docs/work/elite/apol-pilot/` and then as data in `client/public/questions/text/`; `diff-questions-record.mjs` shows all ten files (area page and nine pieces) identical to their records. Every fact is in `apol-ledger.md` under "Eleventh run" (36 searches; ehrmanblog.org and gutenberg.org do not resolve from here). The area page and `index.md` list all nine; a live area page shows only the live four.
+Each is written first as Markdown in `docs/work/elite/apol-pilot/` and then as data in `client/public/questions/text/`; `diff-questions-record.mjs` shows all ten files (area page and nine pieces) identical to their records. Every fact is in `apol-ledger.md` under "Eleventh run" (38 searches; ehrmanblog.org and gutenberg.org do not resolve from here). The area page and `index.md` list all nine; a live area page shows only the live four.
 
 ### Live (James, 2026-11-20: "leet the apologetics go live too")
 
