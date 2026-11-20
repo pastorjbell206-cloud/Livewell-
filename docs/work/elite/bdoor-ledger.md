@@ -9158,3 +9158,21 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Ephesus known for magic (Acts 19:19) | 15-23 | BSB; repository `setting` | Repository |
 | Psalm 110 read of Christ's rising and reign in Mark 12:36, Acts 2:34-36, Hebrews 1:13 | 15-23 | BSB | BSB text. "More than any other" cut (the Mark 12 run could not confirm it) |
 | Psalm 110:1; Psalm 8:6; Isaiah 11:2 | 15-23 | BSB | BSB text |
+
+## The plain notes on Ephesians 2 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Ruler of the power of the air’ the devil, pictured as ruling the unseen spaces | 1-10 | Deep note; standard commentaries | Stated generally |
+| The ‘with’ verbs (synezōopoiēsen, synēgeiren, synekathisen) | 1-10 | Greek text in the repository (2:5-6) | Read from the chapter file |
+| Poiēma something made | 1-10 | Standard lexicons | Standard |
+| Protestant, Catholic and Orthodox accounts of grace and works, as on the Romans book page; Joint Declaration 1999, paragraph 15 quoted in part | 1-10 | Romans book page ledger; JDDJ | Search: firstthings.com "Two Languages of Salvation"; e-n.org.uk "JDDJ: By grace alone?"; ecumenism.net LWF text (paragraph 15). Quoted to "accepted by God" only |
+| Paul and James answer different questions, "many readers" | 1-10 | Standard harmonisation; Romans 3 plain note | Stated as many readers' view |
+| ‘This’ (touto) in 2:8 neuter, not matching faith or grace; two readings | 1-10 | Greek text in the repository; standard grammars | Stated as readings |
+| Ezekiel 37:14; Exodus 34:6; Deuteronomy 9:4; James 2:17 | 1-10 | BSB | BSB text |
+| Temple barrier notices in Greek and Latin; one found complete in 1871; Acts 21:28-29; whether Paul had it in mind left open | 11-22 | Earlier ledger (Mark 11; Luke 17; Acts 21; Jewish-life portrait) | Ledger |
+| Cornerstone the first stone setting the line | 11-22 | Standard | Standard |
+| ‘Abolishing’ readings (the law as a wall; the covenant fulfilled; moral heart stands); Romans 7:12; 11:1; 13:8-10; contempt for Jews rejected, pointer to the Acts 2:22-28 note | 11-22 | Deep note; acts/plain/2.json | Repository. No side |
+| Isaiah 57:19; 28:16; Psalm 118:22; Exodus 29:45 | 11-22 | BSB | BSB text |
