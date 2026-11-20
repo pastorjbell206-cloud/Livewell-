@@ -7890,3 +7890,23 @@ No web search.
 | Exodus 20:2; Leviticus 25:42; Genesis 2:17; Ezekiel 18:4; Exodus 21:16; Philemon 1:16; the slavery Honest Answer | 15-23 | BSB; `answers.ts` | BSB text; Honest Answer pointed to by title |
 
 Cut: the mystery religions and the old argument that Paul borrowed from them (deep note; not checked).
+
+## The plain notes on Romans 7 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Those who know the law" read two ways; a law binds the living | 1-6 | BSB; standard | Stated as readings |
+| Deuteronomy 24:2; Hosea 2:19; Jeremiah 31:33; Ezekiel 36:27 | 1-6 | BSB | BSB text |
+| Views of the law's continuing use (moral commands distinguished from worship and national laws; stress on Christ's teaching and the Spirit) | 1-6 | Standard positions | Stated generally, no side |
+| Echoes of Adam, Israel at Sinai, or Paul's own youth in 7:7-13 | 7-13 | Repository deep note (`hard`) | Stated as readings |
+| The tenth commandment the one wholly about the heart | 7-13 | BSB (Exodus 20:17) | BSB text; standard observation |
+| Leviticus 18:5; Genesis 3:13; Exodus 20:17 | 7-13 | BSB | BSB text |
+| Ovid, Metamorphoses 7 (about line 20): Medea sees and approves the better, follows the worse; the motif behind 7:15, 19 | 14-25 | Ovid | Search: feminaeromanae.org (Latin text); static.topoi.org (von Bendemann on Rom 7:15b); intertextual.bible. Paraphrased; "a little before Paul" (Ovid died about AD 17) |
+| The "I": (1) believer: Augustine later, after first reading otherwise, in the Pelagian controversy; Luther, Calvin and much of the Lutheran and Reformed tradition; (2) a person under the law seen from faith: many early church writers and many modern scholars; (3) speech in character: Adam, Israel, anyone; Origen read it so | 14-25 | History of interpretation | Search: sharperiron.org; logos.com (Dodson); midamerica.edu journal (2020); biblicalelearning.org (Dockery, GTJ 2.2, 1981); outlook.reformedfellowship.net ("with few exceptions all ... Augustinian or Reformed"). Luther and Calvin named at the level of their traditions |
+| Wesley's reading of 7:14 | 14-25 | Wesley, Notes | Search: wesley notes pages; the results did not confirm that he read it of a person before faith, so Wesley is not named |
+| Psalm 1:2; 119:97; Jeremiah 17:9; Psalm 51:10 | 14-25 | BSB | BSB text |
+| Care line (repeated failure, addiction; doctor, pastor, counsellor, a group; Find Help) | 14-25 | Site's care rule | Pastoral line |
+
+Cut: Wesley by name (not confirmed); Kümmel (1929) and Stowers by name (not needed); Chrysostom's reading (not found).
