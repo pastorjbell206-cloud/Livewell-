@@ -38,6 +38,13 @@
           "blurb": "The argument from moral obligation, Wielenberg's godless realism, Mackie and Street, the Euthyphro dilemma and the classical answer, and what the argument shows.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-argument-from-reason",
+          "question": "If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?",
+          "blurb": "Darwin's \"horrid doubt,\" Plantinga's argument and its critics, the hard problem of consciousness and the naturalist answers to it, and whether this is a god of the gaps.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -531,6 +538,16 @@
       "area": "god",
       "slug": "the-moral-argument-and-euthyphro",
       "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
+      "live": false
+    },
+    {
+      "claim": "There is no inner theater where experience is shown to a self, and nothing in consciousness beyond the brain's own processing",
+      "proponent": "Daniel C. Dennett",
+      "work": "Consciousness Explained",
+      "year": 1991,
+      "area": "god",
+      "slug": "the-argument-from-reason",
+      "question": "If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?",
       "live": false
     },
     {
@@ -1293,9 +1310,11 @@
     "how-can-god-be-three-and-one": "How can God be three and one?",
     "what-about-those-who-never-heard": "What about those who never heard of Jesus?",
     "can-you-be-good-without-god": "Can you be good without God?",
+    "is-faith-irrational": "Is believing anything on faith irrational?",
     "are-miracles-believable": "Are miracles believable?",
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
-    "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?"
+    "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
+    "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"
   }
 }

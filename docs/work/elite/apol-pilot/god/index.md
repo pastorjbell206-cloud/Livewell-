@@ -16,6 +16,7 @@ They also say what such arguments can't do. At most they reach a necessary being
 2. **If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?** Mill's father and Russell, Dawkins's gambit, what the arguments actually claim, God's simplicity, the burden of proof and the teapot.
 3. **Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?** Anselm's prayer and argument, Gaunilo's island, Aquinas and Kant, the modern modal version and its symmetry, and why God's existence, if real, is necessary.
 4. **Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?** The argument from moral obligation, Wielenberg's godless realism, Mackie and Street, the Euthyphro dilemma and the classical answer, and what the argument shows.
+5. **If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?** Darwin's "horrid doubt," Plantinga's argument and its critics, the hard problem of consciousness and the naturalist answers to it, and whether this is a god of the gaps.
 
 ## Words these pages use
 

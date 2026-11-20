@@ -2115,3 +2115,35 @@ Cut or not used: Gödel's argument (SEP section 7; too technical); Malcolm and H
 Agreement: the Honest Answer "Can you be good without God?" (read this run) sets out Darwin, Wielenberg, the Euthyphro, Aquinas, Adams, Street and Mackie; this page agrees with it at every point and goes further (the moral arguments distinguished; Adams's account of obligation; the relocated dilemma). It differs in form only: the answer's argument has five premises and puts the weight on the fifth ("the main accounts without God each leave at least one of them unexplained"); this page's three steps put the weight on the third, the same claim. The answer cites a survey percentage; this page gives none. The Notes on Romans 2 and Micah 6 agree.
 
 Cut or not used: the measuring-rod comparison is the page's own; Ockham and medieval voluntarism (not verified this run); Wielenberg's own sentence (an abstract quoted in an earlier ledger, not seen this run).
+
+### ar. "If our minds are products of unguided evolution, can we trust them?" (the-argument-from-reason)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Darwin to W. Graham, Down, 3 July 1881, on *The Creed of Science*: Graham had expressed Darwin's "inward conviction" that "the Universe is not the result of chance"; "But then with me the horrid doubt always arises whether the convictions of man's mind, which has been developed from the mind of the lower animals, are of any value or at all trustworthy. Would any one trust in the convictions of a monkey's mind, if there are any convictions in such a mind?" | Darwin (GH, vol. 1, 1887), lines 9545 to 9582 | Quoted. Between the two quoted parts the edition prints Francis Darwin's bracketed note on the Duke of Argyll; Darwin's letter runs on from "chance." to "But then" |
+| Dennett, *Consciousness Explained* (1991): no inner theater, no extra ingredient | AI-answer rows (the answer "What makes us human in the age of AI?", read this run); IEP "Hard Problem", bibliography (Boston: Little, Brown, 1991) | Paraphrased (living author) |
+| Functional, representational and eliminativist views; the phenomenal concepts strategy; mysterianism | IEP "Hard Problem", sections 3 and 4; SEP "Consciousness", 5.2 (McGinn) | Paraphrased |
+| Plantinga's argument: first formulated in 1993; if naturalism and evolution are both true, reliable faculties are unlikely; the conflict is between science and naturalism (2011) | SEP "Religion and Science", section 2 ("first formulated in 1993"; "Plantinga (2011)"); IEP "Philosophy of Religion", bibliography (*Warrant and Proper Function*, Oxford, 1993); the science-answer row (*Where the Conflict Really Lies*, Oxford, 2011) | Paraphrased |
+| True and survival-promoting beliefs overlap but are not the same; many belief-desire combinations fit one behavior; criticized by Elliott Sober | Wikipedia copy of "Alvin Plantinga" (`taniki/comp.soc-of-philosophy`, `datasets/pages/Alvin_Plantinga.html`, section "Evolutionary argument against naturalism") | Verified (tertiary); paraphrased; Sober named only as a critic |
+| Beilby, ed., *Naturalism Defeated? Essays on Plantinga's Evolutionary Argument against Naturalism* (Cornell, 2002) | IEP "Philosophy of Religion", bibliography | Verified; contents not described |
+| Chalmers named the hard problem (1995, "Facing up to the Problem of Consciousness," *Journal of Consciousness Studies*); the functions-then-experience framing; *The Conscious Mind* (Oxford, 1996) | IEP "Hard Problem", sections 1 and 2, bibliography | Paraphrased (living author); his own beliefs about God not stated (not verified) |
+| Nagel, an atheist, "What Is It Like to Be a Bat?" (1974) | IEP "Hard Problem", 2b; SEP "Atheism and Agnosticism" (Nagel 1997: 130-131, an atheist); AI-answer row (title) | Verified |
+| Levine (1983), the explanatory gap | SEP "Consciousness", 5.2; IEP "Hard Problem", 2c | Verified |
+| Churchland, "Eliminative Materialism and the Propositional Attitudes," *Journal of Philosophy* 78 (1981) | IEP "Hard Problem", bibliography | Verified |
+| John 1:1; the John 1 note: for Greek readers *logos* named "the rational principle that orders the universe" | Repo (BSB); Note (John 1), read this run | Quoted |
+| Genesis 1:27 (quoted); Genesis 2:7 (described) | Repo (BSB, script) | Quoted or described |
+| Aquinas: the soul the form of the body, the person complete only with the body | SEP "Dualism", section 2 (Aquinas, I qq. 75-76, 89) | Paraphrased |
+| Zimmerman, "Should a Christian Be a Mind-Body Dualist?" (2004), in *Contemporary Debates in Philosophy of Religion* | SEP "Dualism", bibliography | Verified; only the title is relied on |
+| The argument takes no side on evolution; it concerns whether the process was unguided | SEP "Religion and Science" (Plantinga's conflict is with naturalism) | Agrees with the science area's evolution page, which takes no side |
+
+Agreement: the AI answer gives Nagel and Dennett and the image of God; this page agrees and takes up the argument from reason, which no Honest Answer treats. The first-run ledger removed "the argument from consciousness as a claim that materialism has not resolved it" from an earlier answer as unchecked; this page states the claim only as the IEP and SEP state the debate (the hard problem named, the responses set out, none commanding agreement).
+
+Cut or not used: Nagel's *Mind and Cosmos* (2012), named in the plan's map, because no readable copy or reference entry was reached this run; C. S. Lewis's argument in *Miracles* and Anscombe's reply (not read); Haldane's sentence of 1927 (no copy found); vitalism as a named episode (the reply is stated in general terms).
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| The arguments and objectors named (Hume, Kant, Russell; Leibniz and the kalam; Gaunilo, Aquinas, the modal version; Wielenberg, Mackie, Street, the Euthyphro; Darwin, Plantinga, the hard problem) | Rows an to ar | Verified |
+| What the arguments reach and don't; the confessional floor (one God, Father, Son and Holy Spirit, Maker of heaven and earth) | The creeds (repo); rows an to ar | Stated as confession; the bridge to the resurrection named as historical, with no link to the pending jesus area |
+| The words (contingent, necessary being, principle of sufficient reason, kalam, aseity, divine simplicity, ontological argument, Euthyphro dilemma, divine command theory, naturalism, hard problem) | SEP "Cosmological Argument", "Divine Simplicity", "Moral Arguments"; IEP "Hard Problem"; Note (Exodus 3, aseity) | Verified |
