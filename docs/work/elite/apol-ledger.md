@@ -2737,3 +2737,23 @@ Pieces: `docs/work/elite/apol-pilot/authors/` and `client/public/questions/autho
 
 Cut or not used: any date or percentage for the shift from form criticism to biography beyond the guide's "largely given way"; Philostratus's date (none in a source read); the English title of Strauss; Burridge's, Talbert's and Bauckham's middle initials; "which many evangelicals hold" of the Chicago Statement (no count read).
 
+### bi. "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness?" (the-synoptic-problem)
+
+| Claim | How verified | Result |
+|---|---|---|
+| About ninety percent of Mark in Matthew, a little over half in Luke; Matthew and Luke seldom agree in order against Mark; about 220 to 235 verses of double tradition; the Baptist's words word for word; Matthew's Magi, Luke's prodigal son | Guide (section 4) | Paraphrased, the figures as the guide gives them |
+| Streeter, *The Four Gospels* (1924), the classic English form of the Two-Source view; Lachmann 1835, Holtzmann 1863; the majority view | Guide (section 4) | Paraphrased and marked as the guide's account; Streeter not reached |
+| Farrer, "On Dispensing with Q" (1955); Goodacre, *The Case Against Q* (2002); the minor agreements; "Who hit You?" | Guide; Matthew 26:68, Luke 22:64, Mark 14:65 (BSB, script) | Paraphrased; quoted |
+| Griesbach (1780s); Farmer, *The Synoptic Problem: A Critical Analysis* (1964); Linnemann, *Is There a Synoptic Problem?* (1992); Wenham, *Redating Matthew, Mark and Luke* (1991); oral and written tradition overlapping | Guide | Paraphrased, marked |
+| Matthew and Luke smooth Mark's Greek and soften statements; Mark 6:5 and Matthew 13:58 | Guide; BSB (script) | Paraphrased; quoted |
+| Mark 10:18, Luke 18:19 ("Why do you call Me good?" word for word), Matthew 19:17 | BSB (script) | Quoted |
+| Augustine, *Harmony of the Gospels* 1.2, about 400: Mark "follows him closely, and looks like his attendant and epitomizer"; the order Matthew, Mark, Luke, John | Augustine (two copies); the date from the Guide | Quoted; translator not named (not printed in either copy) |
+| Papias: Mark wrote down Peter's teaching (*Church History* 3.39.15) | Eusebius (McGiffert) | Paraphrased |
+| Ehrman, *How Jesus Became God* (2014), counts Paul, Mark, Q, M and L as "numerous earlier sources" | BT-HJBG | Paraphrased, said to be a reading of the section |
+| The Last Supper tradition in 1 Corinthians 11:23-25 "closely matches Luke 22:19-20" | Note (1 Corinthians 11) | Quoted as the note's words |
+| Dodd, *Historical Tradition in the Fourth Gospel* (1963), John independent; Neirynck, John used the Synoptics | Guide (section 5) | Paraphrased, marked |
+| Kloppenborg, *The Formation of Q* (1987) | Guide | Listed |
+| Luke 1:2-3; 1 Corinthians 15:3-7 | BSB (script) | Quoted, referenced |
+
+Cut or not used: any statistic beyond the guide's; the International Q Project's edition (named in the guide; not needed); the translator's name for Augustine.
+

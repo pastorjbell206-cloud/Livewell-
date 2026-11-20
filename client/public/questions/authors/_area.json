@@ -33,6 +33,11 @@
       "slug": "what-kind-of-writing-are-the-gospels",
       "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
       "blurb": "The form critics' \"folk literature\" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's \"memoirs\" and Luke's preface, and what the genre does and doesn't establish."
+    },
+    {
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "blurb": "The Synoptic problem set out fairly, Mark's priority, Q and the main alternatives with no side taken, what copying shows and what it doesn't, the sources skeptics themselves count, and the witnesses outside the problem."
     }
   ],
   "words": [
@@ -43,6 +48,10 @@
     {
       "term": "Ancient biography",
       "meaning": "the Greek and Roman *bios* or Life, a book about one person's public career, words and death, written to show his character; its writers selected, compressed and arranged by topic."
+    },
+    {
+      "term": "Q",
+      "meaning": "from the German *Quelle*, \"source\": a lost collection of Jesus' sayings that, on the most widely held solution to the Synoptic problem, Matthew and Luke both used; others hold that it never existed."
     },
     {
       "term": "Papias",

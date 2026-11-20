@@ -172,6 +172,13 @@
           "blurb": "The form critics' \"folk literature\" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's \"memoirs\" and Luke's preface, and what the genre does and doesn't establish.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-synoptic-problem",
+          "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+          "blurb": "The Synoptic problem set out fairly, Mark's priority, Q and the main alternatives with no side taken, what copying shows and what it doesn't, the sources skeptics themselves count, and the witnesses outside the problem.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -932,6 +939,26 @@
       "area": "authors",
       "slug": "what-kind-of-writing-are-the-gospels",
       "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke used Mark and a lost sayings source, so for the stories all three tell there is one witness, not three",
+      "proponent": "B. H. Streeter",
+      "work": "The Four Gospels",
+      "year": 1924,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "live": false
+    },
+    {
+      "claim": "There was no Q: Luke used Matthew as well as Mark",
+      "proponent": "Mark Goodacre",
+      "work": "The Case Against Q",
+      "year": 2002,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
       "live": false
     },
     {
