@@ -7938,3 +7938,30 @@ Cut: Wesley by name (not confirmed); Kümmel (1929) and Stowers by name (not nee
 | Perseverance views (Reformed and Baptist; Wesleyan, Arminian and Catholic); John 10:28; Hebrews 6:4-6; "That fear is not usually the mark of someone who has fallen away" | 31-39 | `answers.ts` ("Can you lose your salvation?") | Repository; wording adapted from the Honest Answer |
 
 Cut: height and depth as astrological terms (not checked); Orthodox teaching on perseverance (not in the Honest Answer, not checked); Jeremias by name.
+
+## The plain notes on Romans 9 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Exodus 32:32 (Moses: "blot me out"); Exodus 4:22 (Israel God's firstborn son); Romans 8:15, 8:38-39 | 1-5 | BSB | BSB text |
+| 9:5: BSB text reads "Christ, who is God over all"; the BSB footnote gives only another wording of the praise ("Or forever blessed"), not the punctuation; little punctuation in old copies; comma reading (most modern translations and most early writers) or a full stop and a separate blessing of God (some translations) | 1-5 | BSB footnote; repository verse note (9:5) | Search: openbible.com BSB Romans 9 (footnote); biblia.com NET note; bible.com NABRE. Footnote not quoted; no translation named |
+| Firstborn son normally the larger share; God reversing the order | 6-13 | Repository deep note (`cultural`) | Repository |
+| Genesis 21:12-13; 18:10, 14; 25:23; Malachi 1:2-3 | 6-13 | BSB | BSB text |
+| The "love and hate" idiom, Genesis 29:30-31, Luke 14:26, Deuteronomy 23:7; Reformed, Arminian/Wesleyan and corporate readings of Jacob and Esau | 6-13 | Genesis 25 plain note | Repository wording, reused nearly word for word |
+| Diatribe style (an imagined objector) | 14-18 | Repository deep note (`literary`) | Repository |
+| Exodus 33:18-19 (after the golden calf); Exodus 9:15-16; Paul follows the Greek with changes of his own | 14-18 | BSB; repository verse note (9:17) | BSB text; repository |
+| Pharaoh hardens his heart (Exodus 8:15, 8:32); God hardens it (Exodus 9:12; foretold 4:21); first said of God by the narrator at 9:12, after the sixth plague | 14-18 | BSB; repository verse note (9:18) | BSB text |
+| Reformed and Arminian readings of hardening, both keeping Pharaoh responsible | 14-18 | Repository verse and deep notes | Stated as readings, no side |
+| Isaiah 29:16; 45:9; Jeremiah 18:4, 6, 8; Hosea 2:23; 1:10; Isaiah 10:22; 1:9 | 19-29 | BSB | BSB text |
+| Westminster Confession 3.7: God "was pleased ... to pass by; and to ordain them to dishonour and wrath for their sin"; "the 1640s" | 19-29 | Westminster Confession of Faith 3.7 | Search: ccel.org (Schaff, Creeds); sermonindex.net (Shaw's exposition, "the decree of reprobation"); two phrases quoted |
+| Three readings of 9:22-23 (Reformed with or without "double predestination"; Arminian/Wesleyan, God's patience, 2:4; corporate) | 19-29 | Repository deep note (`hard`) and verse note (9:22) | Stated as readings, no names, no side |
+| Care line (afraid of not being chosen), in the form of the 8:31-39 care line | 19-29 | Romans 8 plain note | Repository wording, adapted |
+| Isaiah 28:16; 8:14; 1 Peter 2:6-8 | 30-33 | BSB | BSB text |
+| "Works" read two ways (traditional; new perspective) | 30-33 | Book page | Repository |
+| "For centuries some Christians used words ... That reading is false, and this site rejects it" | 30-33 | Book page ("What Romans is not"); Acts 2 plain note | Repository wording |
+
+Cut: Chrysostom's reading of "prepared" (named in the verse note, not checked
+here); Barth's reading of election (not checked); Edom's later history and
+John Hyrcanus; the RSV of 1946; Metzger and Harris by name.
