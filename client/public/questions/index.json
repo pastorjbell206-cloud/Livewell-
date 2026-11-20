@@ -243,7 +243,7 @@
         {
           "slug": "jericho-and-the-conquest",
           "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
-          "blurb": "Kenyon's Jericho and the radiocarbon dates, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.",
+          "blurb": "Kenyon's Jericho, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.",
           "status": "pending",
           "live": false
         },
@@ -323,8 +323,44 @@
       "planned": 12,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-logical-problem-of-evil",
+          "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+          "blurb": "Mackie's argument and its two hidden premises, Plantinga's free-will defence, Mackie's own later concession, the objection from heaven, and what a defence can and can't do.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-evidential-problem-of-evil",
+          "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+          "blurb": "Rowe's fawn and his argument, the inference from what we can't see, Wykstra's reply and skeptical theism, what it costs, Rowe's question about why God gives sufferers no assurance, and the answer Christians give in the cross.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "natural-evil-and-animal-suffering",
+          "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
+          "blurb": "Hume's Philo and Darwin's wasps, Draper's hypothesis of indifference, why free will doesn't reach it, the answers from law, growth, long processes and a fallen creation with the cost of each, and the hope of Romans 8.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-hiddenness-of-god",
+          "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
+          "blurb": "Schellenberg's argument from nonresistant nonbelief, the hiddenness the psalms already pray, Pascal's light and obscurity, the reasons Christian philosophers give and their limits, and God found in the cross.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "hell-and-the-justice-of-god",
+          "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+          "blurb": "Russell, Adams and Ivan Karamazov on proportion, what all Christians confess about judgment, eternal conscious punishment, conditional immortality and the hope of restoration each in its holders' words with its hardest difficulty, and a word for anyone afraid.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "morality",
@@ -789,7 +825,7 @@
       "live": false
     },
     {
-      "claim": "Archaeology has found no trace of the exodus in Egypt or Sinai, so a single, unified exodus did not happen and the story is a later national epic",
+      "claim": "Archaeology has found no trace of the exodus in Egypt or Sinai, and the story is best read as a later national epic",
       "proponent": "Israel Finkelstein and Neil Asher Silberman",
       "work": "The Bible Unearthed",
       "year": 2001,
@@ -879,7 +915,7 @@
       "live": false
     },
     {
-      "claim": "The Judeans learned the flood story in Babylon during the exile",
+      "claim": "The flood story came into the Bible from Babylon",
       "proponent": "Irving Finkel",
       "work": "The Ark Before Noah",
       "year": 2014,
@@ -1017,13 +1053,106 @@
       "slug": "evolution-and-genesis",
       "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
       "live": false
+    },
+    {
+      "claim": "God's omnipotence, God's goodness and the existence of evil cannot all be true, so belief in God is positively irrational",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955,
+      "area": "evil",
+      "slug": "the-logical-problem-of-evil",
+      "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+      "live": false
+    },
+    {
+      "claim": "An all-powerful God could have made free people who always in fact choose the good, so the appeal to free will fails",
+      "proponent": "J. L. Mackie",
+      "work": "Evil and Omnipotence",
+      "year": 1955,
+      "area": "evil",
+      "slug": "the-logical-problem-of-evil",
+      "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
+      "live": false
+    },
+    {
+      "claim": "There is intense suffering, like a fawn's slow death in a forest fire, that an all-powerful, all-knowing being could have prevented without losing any greater good, so probably there is no such being",
+      "proponent": "William L. Rowe",
+      "work": "The Problem of Evil and Some Varieties of Atheism",
+      "year": 1979,
+      "area": "evil",
+      "slug": "the-evidential-problem-of-evil",
+      "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+      "live": false
+    },
+    {
+      "claim": "The world's suffering makes it impossible to believe that it is ruled by a loving God",
+      "proponent": "Bart D. Ehrman",
+      "work": "God's Problem",
+      "year": 2008,
+      "area": "evil",
+      "slug": "the-evidential-problem-of-evil",
+      "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
+      "live": false
+    },
+    {
+      "claim": "The pattern of pain and pleasure in nature is what we would expect if nothing behind nature cared about its creatures, and much less what we would expect if a good God made it",
+      "proponent": "Paul Draper",
+      "work": "Pain and Pleasure: An Evidential Problem for Theists",
+      "year": 1989,
+      "area": "evil",
+      "slug": "natural-evil-and-animal-suffering",
+      "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
+      "live": false
+    },
+    {
+      "claim": "No good and all-powerful God would have designed wasps whose young feed inside living caterpillars",
+      "proponent": "Charles Darwin",
+      "work": "Letter to Asa Gray, 22 May 1860",
+      "year": 1860,
+      "area": "evil",
+      "slug": "natural-evil-and-animal-suffering",
+      "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
+      "live": false
+    },
+    {
+      "claim": "A perfectly loving God would make a relationship with himself possible for everyone capable of it who does not resist, so the existence of nonresistant unbelievers shows there is no such God",
+      "proponent": "J. L. Schellenberg",
+      "work": "Divine Hiddenness and Human Reason",
+      "year": 1993,
+      "area": "evil",
+      "slug": "the-hiddenness-of-god",
+      "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
+      "live": false
+    },
+    {
+      "claim": "No one who is really profoundly humane can believe in everlasting punishment, so Christ's belief in hell is a defect in his moral character",
+      "proponent": "Bertrand Russell",
+      "work": "Why I Am Not a Christian",
+      "year": 1927,
+      "area": "evil",
+      "slug": "hell-and-the-justice-of-god",
+      "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+      "live": false
+    },
+    {
+      "claim": "No sin committed by a finite creature in a life of ambiguity and ignorance could deserve an infinite penalty",
+      "proponent": "Marilyn McCord Adams",
+      "work": "The Problem of Hell: A Problem of Evil for Christians",
+      "year": 1993,
+      "area": "evil",
+      "slug": "hell-and-the-justice-of-god",
+      "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
+    "if-god-is-good-why-suffering": "If God is good, why is there so much suffering?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
+    "is-it-okay-to-be-angry-at-god": "Is it okay to be angry at God?",
     "how-can-god-be-three-and-one": "How can God be three and one?",
+    "what-about-those-who-never-heard": "What about those who never heard of Jesus?",
     "are-miracles-believable": "Are miracles believable?",
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
