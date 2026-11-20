@@ -1,14 +1,18 @@
 /**
- * The Wisdom Books Explorer (/tools/wisdom-books): Proverbs and Ecclesiastes.
+ * The Wisdom Books Explorer (/tools/wisdom-books): Proverbs, Ecclesiastes and
+ * the Letter of James.
  * Proverbs read three ways: today's chapter (the day of the month, the old
  * habit of a chapter a day), every verse on one of twenty themes in book
  * order, or chapter by chapter. Ecclesiastes read two ways: every verse on
- * one of sixteen themes fitted to that book, or chapter by chapter. Each
+ * one of sixteen themes fitted to that book, or chapter by chapter; James the
+ * same two ways, under thirteen themes fitted to the letter. Each
  * chapter is laid out under the Study Bible's own outline, title and summary;
  * any verse in a theme opens to the verses around it; and a fixed panel
  * teaches in the Study Bible's own words how to read the book (a proverb: a
  * pattern, not a promise, with 26:4-5 side by side; Ecclesiastes: the
- * readings of hevel and of the epilogue, given side by side, no side taken).
+ * readings of hevel and of the epilogue, given side by side, no side taken;
+ * James: faith and deeds with Paul, the readings the notes on James 2 and
+ * Romans 4 give, no side taken).
  *
  * Content as data (client/public/wisdom-books/, built and checked by
  * scripts/build-wisdom-books-index.mjs and scripts/validate-wisdom-books.mjs):
@@ -19,8 +23,9 @@
  * Built on the tool shell: ToolHead, QuestionCard, useToolProgress
  * (`livewell-progress-wisdom-books`: the book, and Proverbs' way in, theme,
  * chapter, chapters marked read and lines kept, in the shape it has always
- * had; `livewell-progress-wisdom-books-ecclesiastes`: the same for
- * Ecclesiastes), ResultSection, ResultNext, ResultActions.
+ * had; `livewell-progress-wisdom-books-ecclesiastes` and
+ * `livewell-progress-wisdom-books-james`: the same for those books),
+ * ResultSection, ResultNext, ResultActions.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "wouter";
@@ -44,6 +49,7 @@ import {
   fetchWbChapter,
   fetchWbIndex,
   fetchWbTheme,
+  isWbBook,
   outlineStart,
   studyHref,
   todaysChapter,
@@ -83,7 +89,7 @@ const isPlace = (x: unknown): x is Place => {
   return (
     !!p &&
     typeof p === "object" &&
-    (p.book === undefined || p.book === "proverbs" || p.book === "ecclesiastes") &&
+    (p.book === undefined || isWbBook(p.book)) &&
     (p.way === null ||
       p.way === "today" ||
       p.way === "theme" ||
@@ -183,9 +189,16 @@ export default function WisdomBooks() {
     read: [],
     kept: [],
   });
+  const jas = useToolProgress<Place>("wisdom-books-james", isPlace, {
+    way: null,
+    theme: null,
+    chapter: 1,
+    read: [],
+    kept: [],
+  });
   const book: WbBook = main.value.book ?? "proverbs";
   const isProverbs = book === "proverbs";
-  const place = isProverbs ? main : ecc;
+  const place = isProverbs ? main : book === "james" ? jas : ecc;
   const p = place.value;
   const name = bookName(book);
   const total = bookChapters(book);
@@ -321,8 +334,8 @@ export default function WisdomBooks() {
         plate="book"
       >
         <p className="ts-note">
-          Ecclesiastes is here too, by its own themes and chapter by chapter:
-          choose the book below.
+          Ecclesiastes and the Letter of James are here too, each by its own
+          themes and chapter by chapter: choose the book below.
         </p>
       </ToolHead>
 
@@ -348,7 +361,9 @@ export default function WisdomBooks() {
                   hint:
                     b.id === "proverbs"
                       ? "Thirty-one chapters of sayings on wisdom and folly, gathered under twenty themes."
-                      : "Twelve chapters of the Teacher's search under the sun, gathered under sixteen themes of its own.",
+                      : b.id === "james"
+                        ? "Five chapters of the New Testament's wisdom letter, on trials, faith and deeds, wealth and the tongue, gathered under thirteen themes of its own."
+                        : "Twelve chapters of the Teacher's search under the sun, gathered under sixteen themes of its own.",
                 }))}
                 value={book}
                 onChange={v => {
@@ -380,7 +395,9 @@ export default function WisdomBooks() {
                     label: "Chapter by chapter",
                     hint: isProverbs
                       ? "Thirty-one chapters, each under the Study Bible's outline."
-                      : "Twelve chapters, each under the Study Bible's outline.",
+                      : book === "james"
+                        ? "Five chapters, each under the Study Bible's outline."
+                        : "Twelve chapters, each under the Study Bible's outline.",
                   },
                 ]}
                 value={!isProverbs && p.way === "today" ? null : p.way}
@@ -802,7 +819,11 @@ export default function WisdomBooks() {
                   {isProverbs ? "How to read a proverb" : `How to read ${name}`}
                 </h2>
                 <p className="wb-source">
-                  In the words of the Study Bible's notes on {name}.
+                  In the words of the Study Bible's notes on {name}
+                  {index.teaching.hard?.some(h => h.book)
+                    ? ` and ${Array.from(new Set(index.teaching.hard.flatMap(h => (h.book ? [h.book] : [])))).join(" and ")}`
+                    : ""}
+                  .
                 </p>
                 <div className="ts-r__prose">
                   {index.teaching.reading.map((para, i) => (
@@ -832,11 +853,11 @@ export default function WisdomBooks() {
                   </>
                 )}
                 {index.teaching.hard?.map(h => (
-                  <div key={h.c}>
+                  <div key={`${h.book ?? name}-${h.c}`}>
                     <h3 className="wb-sec__title">
                       {h.q}{" "}
                       <span className="wb-sec__range">
-                        From the notes on {name} {h.c}
+                        From the notes on {h.book ?? name} {h.c}
                       </span>
                     </h3>
                     <div className="ts-r__prose">

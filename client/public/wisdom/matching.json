@@ -634,6 +634,8 @@
   },
   "doubt": {
    "phrases": [
+    "want to believe",
+    "all made up",
     "not sure i believe",
     "dont believe anymore",
     "losing my faith",
@@ -1181,6 +1183,20 @@
    "not": [],
    "related": [
     "dating"
+   ]
+  },
+  "saying-no": {
+   "phrases": [
+    "yes to everything",
+    "too many commitments",
+    "overcommitted",
+    "take on too much"
+   ],
+   "not": [],
+   "related": [
+    "people-pleasing",
+    "setting-boundaries",
+    "busyness-and-overwhelm"
    ]
   },
   "people-pleasing": {

@@ -3,9 +3,10 @@
  * validate-wisdom-books.mjs: the gate on the Wisdom Books Explorer
  * (/tools/wisdom-books). Run after scripts/build-wisdom-books-index.mjs.
  *
- For each book (Proverbs, Ecclesiastes), the source
+ For each book (Proverbs, Ecclesiastes, James), the source
  * (client/public/wisdom-books/<book>.json):
- * - every verse of the book (915 in Proverbs, 222 in Ecclesiastes) carries at
+ * - every verse of the book (915 in Proverbs, 222 in Ecclesiastes, 108 in
+ *   James) carries at
  *   least one theme (or the "heading" mark), every tag names a real theme,
  *   every range is a real stretch of its chapter, and no theme is left with
  *   fewer than ten verses;
@@ -18,7 +19,8 @@
  * - every verse is the BSB word for word (client/public/bible/ch/);
  * - every chapter title, summary and outline, every introduction theme, the
  *   reading counsel and the hard questions on the teaching panel (Proverbs
- *   26:4-5; Ecclesiastes 1 and 12) are the Study Bible's notes word for word;
+ *   26:4-5; Ecclesiastes 1 and 12; James 2 and Romans 4) are the Study
+ *   Bible's notes word for word;
  * - each theme file holds exactly the verses tagged with it, in book order.
  *
  *   node scripts/validate-wisdom-books.mjs
@@ -28,7 +30,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { passage } from "./lib/bsb.mjs";
 import { forbiddenRe, setAsideAllowed } from "./lib/forbidden-language.mjs";
-import { BOOKS, notesOf, outOf, rangeOf, sizeOf, srcOf } from "./build-wisdom-books-index.mjs";
+import { BOOKS, hardOf, notesOf, outOf, rangeOf, sizeOf, srcOf } from "./build-wisdom-books-index.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (f) => JSON.parse(fs.readFileSync(f, "utf8"));
@@ -146,10 +148,10 @@ for (const book of BOOKS) {
   }
   if (index.teaching.reading.join("\n\n") !== intro.reading) fail(`${book}/index.json`, "the reading counsel is not the introduction's word for word");
   if (src.teaching?.hard) {
-    src.teaching.hard.forEach((c, i) => {
-      const hard = readJson(path.join(NOTES, `${c}.json`)).hard;
+    src.teaching.hard.forEach((entry, i) => {
+      const { c, h: hard, from } = hardOf(book, entry);
       const got = index.teaching.hard?.[i];
-      if (!got || got.c !== c || got.q !== hard.q || got.a.join("\n\n") !== hard.a) fail(`${book}/index.json`, `the hard question on chapter ${c} is not the note's word for word`);
+      if (!got || got.c !== c || (got.book ?? null) !== from || got.q !== hard.q || got.a.join("\n\n") !== hard.a) fail(`${book}/index.json`, `the hard question on ${from ?? name} ${c} is not the note's word for word`);
     });
   } else {
     const hard = readJson(path.join(NOTES, "26.json")).hard;
