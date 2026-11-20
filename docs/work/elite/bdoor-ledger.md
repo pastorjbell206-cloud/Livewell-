@@ -8588,3 +8588,184 @@ Cut: winter sailing (deep note; not checked); the Didache's place for the prayer
 ## 1 Corinthians complete (2026-11-20)
 
 All sixteen chapters of 1 Corinthians are in plain words. Every chapter note carries `"plain": true`.
+
+## 2 Corinthians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/2-corinthians/intro.json`,
+field `teaching`. 4 searches, run on 2026-11-20. Scholars are not named;
+views are paraphrased. Scripture is the BSB in the repository, checked word for
+word by `scripts/validate-bible-notes.mjs` and a strict check that matches each
+quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul with Timothy (1:1); nearly all accept Paul as author; the open question is unity, not authorship | BSB; repository `author` | Repository |
+| Silvanus a fuller, Latin form of Silas; most identify him with Paul's companion in Acts | Reference works | Search: biblicaltraining.org "Silvanus"; blueletterbible.org G4610. Worded "most take him to be" |
+| Written from Macedonia (2:13; 7:5; 8:1; 9:2); city not named; Philippi "often suggested"; about AD 55 to 56 | BSB; repository `date`; reference works | Search: jesuswalk.com introduction; internationalstandardbible.com "Corinthians, Second Epistle"; soniclight.com notes (Macedonia, 55 to 56) |
+| 1 Corinthians about AD 53 to 55 from Ephesus; Gallio most 51 to 52, some 50 to 51 | 1 Corinthians book page ledger; wrom-ledger | Ledger |
+| Three months in Greece (Acts 20:2-3), most likely Corinth, Romans written there "most think"; Achaia gave (Romans 15:26); arrest in Jerusalem (Acts 21; 24:17) | BSB; Romans and Acts book pages | Repository |
+| Painful visit (2:1; 13:1-2); "third time" (12:14; 13:1); the offender of 2:5-11 and 7:12 two views; tearful letter (2:4; 7:8) lost, or part in 10 to 13, or (a few) 1 Corinthians; no side | BSB; 1 Corinthians book page ledger (zondervanacademic, Wikipedia, corpus-paul); deep notes on 2 and 7 | Ledger. "These notes do not choose" |
+| Unity: 10 to 13 a separate letter (before 1 to 9 as the tearful letter, or after on fresh news); 8 and 9 separate notes; 6:14 to 7:1 placed from elsewhere; one letter written over time or turning to the minority; no manuscript has it in pieces | Scholarship | Search: jesuswalk.com; soniclight.com; biblestudytools study notes ("no manuscript evidence"); ehrmanblog.org and cambridge.org NTS (6:14 to 7:1 interpolation); mdpi.com Religions 15 (2024) 538 (four positions). Stated as views, no side, no names |
+| Rivals: Hebrews (11:22), letters of recommendation (3:1), speech (11:6; 10:10), support (11:7-9), visions (12:1); ‘super-apostles’ irony; same group as ‘false apostles’ (most) or Jerusalem leaders invoked (minority); law-observant or Hellenistic preachers | BSB; repository `setting`; deep notes on 10 and 11 | Search: biblehub.com Q&A; biblestudytools CSB apologetics notes; tips.translation.bible on 11:5. No scholar named |
+| Aretas's governor in Damascus (11:32-33) | BSB; Acts 9 ledger row (Aretas IV) | Ledger. No date given on the book page |
+| Paraklēsis with its verb more often in 2 Corinthians than any other New Testament book (29; Acts 26); kauchaomai 20 of 37 New Testament uses | Greek text in the repository (G3874, G3870, G2744) | Script count over `client/public/bible/ch` |
+| Old Testament quotations named: Psalm 116:10 (4:13), Isaiah 49:8 (6:2), Leviticus, Ezekiel, Isaiah, 2 Samuel (6:16-18), Exodus 16:18 (8:15), Psalm 112:9 (9:9), Jeremiah 9:24 (10:17), Deuteronomy 19:15 (13:1); Exodus 34:29-35; Jeremiah 31:33; Ezekiel 36:26 | BSB | BSB text. Paul's following of the old Greek stated generally; each case in the chapter notes |
+| Map: Corinth, Philippi, Troas, Ephesus, Jerusalem, Damascus on the "mediterranean" frame | wmap-ledger and the Acts map coordinates | Ledger. Damascus (33.513, 36.27) inside the frame |
+
+Cut: the deep note's scholar names (Baur, Barrett, Betz); "most personal" kept as
+a description, not a claim about scholars; the date of the Damascus escape.
+
+## The plain notes on 2 Corinthians 1 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter form; Achaia the province of southern Greece | 1-7 | 1 Corinthians 1 plain note; deep note | Repository |
+| ‘Comfort’ ten times in verses 3 to 7 (noun and verb) | 1-7 | Greek text (G3874, G3870) | Script count |
+| Paraklēsis from "call to one's side"; Paraclete in John | 1-7 | Deep note `words`; standard lexicons | Repository |
+| Thlipsis, pressure | 1-7 | Deep note `words` | Repository |
+| Israel's prayers bless God (Psalm 41:13; 72:18) | 1-7 | BSB | BSB text. "Synagogue prayers" (deep note) not used |
+| Exodus 34:6; Isaiah 40:1; 51:12; 66:13; Psalm 119:50; 94:19; 23:4; John 11:35 | 1-7 | BSB | BSB text |
+| Care line: suffering not called good; Find Help | 1-7 | Site form (Romans 8:28 note) | Repository wording |
+| The hardship in Asia unknown; the Ephesus riot most often suggested; objections ("Asia", not "Ephesus"; Acts does not show his life in danger); illness, imprisonment | 8-11 | Commentaries | Search: biblehub.com and openbible.com commentaries on 1:8; studylight.org; ccel.org Barnes. Stated as guesses, "no one knows" |
+| Exaporeomai at 1:8 and 4:8 only | 8-11 | Greek text (G1820) | Script count |
+| 1 Samuel 2:6; Deuteronomy 32:39; Psalm 116:3, 8; Jonah 2:2; Isaiah 38:1; 1 Kings 19:4; Psalm 31:22 | 8-11 | BSB | BSB text |
+| Care line on 1:8-9: pointer to the 1 Corinthians 10:13 note; the Psalms 88 despair form; 7:6 | 8-11 | Repository | Repository wording, no phone number |
+| Plans of 1 Corinthians 16:5; honour and a man's word | 12-24 | BSB; deep note `cultural` | Repository |
+| Amen, Hebrew "it is true", "so be it" | 12-24 | Standard lexicons | Standard |
+| Anointing shares a root with Christ; seal marks ownership and genuineness | 12-24 | Deep note `cultural` | Repository |
+| Arrabōn a business word for a down payment, common in the papyri; Hebrew ʿērābôn of Genesis 38:17-18 | 12-24 | Lexicons (Thayer, LSJ, Frisk) | Search: lsj.gr; biblehub.com Strong's 728; biblestudytools lexicon. Phoenician route not used |
+| Silvanus a fuller Latin form of Silas; most identify him with Paul's companion | 12-24 | Reference works | Book page search (biblicaltraining.org; blueletterbible.org) |
+| Deuteronomy 7:9; Numbers 23:19; Matthew 5:37; James 5:12; 1 Samuel 16:13; Genesis 38:17; Joel 2:28; 12:7-9 | 12-24 | BSB | BSB text |
+
+Cut: the deep note's "synagogue prayers that open with blessing God" (not checked);
+the riot named as fact.
+
+## The plain notes on 2 Corinthians 2 (2026-11-20)
+
+Three searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Painful visit not in Acts; "third time" (13:1); the tearful letter lost, or part in 10 to 13, or (a few) 1 Corinthians; no side | 1-4 | BSB; book page ledger | Ledger |
+| Jeremiah 9:1; Leviticus 19:17-18; Proverbs 27:6; Acts 20:31 | 1-4 | BSB | BSB text |
+| The offender: the man of 1 Corinthians 5 (older view) or one who wronged Paul at the painful visit (many today); no side | 5-11 | Deep notes on 2 and 7 | Repository; stated as views |
+| ‘Overwhelmed’ = katapinō, swallow; the same verb at 1 Corinthians 15:54 and 5:4 | 5-11 | Greek text (G2666) | Script over the repository's Greek |
+| Charizomai shares a root with charis | 5-11 | Deep note `words` | Repository |
+| Psalm 130:3-4; Micah 7:18; Genesis 50:17, 21; Matthew 18:22; Luke 17:3 | 5-11 | BSB | BSB text |
+| Safety lines by pointer to the 1 Corinthians 5:1-5 note (discipline never to silence the harmed or protect the harmer; crimes to the police); forgiveness not trust restored; Find Help | 5-11 | Repository | Repository wording |
+| Troas the crossing to Macedonia (Acts 16:8-11) | 12-17 | BSB | BSB text |
+| Roman triumph: chariot to the temple of Jupiter on the Capitol; soldiers, spoils, captives; some captives, often enemy leaders, killed afterwards (how often debated, so "some"); incense along the way | 12-17 | Reference works | Search: en.wikipedia.org "Roman triumph"; britannica.com "triumph"; penelope.uchicago.edu (Smith, Triumphus); strategypage.com (selective executions) |
+| Thriambeuō: captives (many) or members of the procession; the aroma from the triumph's incense or the sacrifices | 12-17 | Commentaries | Search: openbible.com and biblehub.com commentaries on 2:14; samstorms.org; Biblica 88 (2007) Hock. Two readings, no side; the causative reading left out |
+| Kapēleuō from kapēlos, a petty trader, often of wine, with a name for adulterating goods; teachers for pay | 12-17 | Lexicons (Thayer; Trench, Synonyms 62) | Search: biblehub.com Strong's 2585; modernliteralversion.org Trench 62. The Septuagint wording of Isaiah 1:22 not claimed; the BSB's Isaiah 1:22 quoted |
+| Exodus 29:18; Genesis 8:21; Ezekiel 20:41; Deuteronomy 30:15; Exodus 4:10; Isaiah 1:22 | 12-17 | BSB | BSB text |
+
+Cut: Titus as the bearer of the tearful letter stated as fact; prisoners "executed at the end" as a rule.
+
+## The plain notes on 2 Corinthians 3 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letters of recommendation ordinary; many survive on papyrus; usually praise the bearer, then a request; tied to patronage and status | 1-3 | Papyrology | Search: tyche.univie.ac.at (Blumell, letters of introduction); berlpap.smb.museum "Letter of Recommendation"; jgrchj.net 12 (Yoon); nec.ro (Tamas, patronage). Deep note `cultural` |
+| Acts 18:27; Romans 16:1-2; Exodus 31:18; Jeremiah 31:31-34; Ezekiel 36:26-27 | 1-3, 4-11 | BSB | BSB text |
+| Gramma, something written; Romans 7:12; Romans 3:31; Luke 22:20 | 4-11 | BSB; deep note `words` | Repository |
+| "The letter kills" taken by some as a rule for hidden meanings; most think not | 4-11 | Deep note `doctrines` | Stated generally, no names |
+| Lesser-to-greater argument a Jewish form | 4-11 | Deep note `literary` | Repository; worded "often argued" |
+| Katargeō: fade, be brought to an end, be set aside; Exodus does not say the shine faded | 4-11 | Greek text (G2673 at 3:7, 11, 13, 14); Exodus 34:29-35 BSB; deep note `cultural` | Repository |
+| Deuteronomy 30:6; Psalm 19:7 | 4-11 | BSB | BSB text |
+| Moses read every Sabbath (Acts 15:21); Paul a Pharisee (Philippians 3:5) | 12-18 | BSB | BSB text |
+| 3:16 echoes Exodus 34:34 | 12-18 | BSB comparison; deep note `literary` | BSB text |
+| ‘The Lord is the Spirit’: two readings, neither erasing the distinction | 12-18 | Deep note `doctrines` | Repository; no side |
+| Katoptrizomai, reflect or behold as in a mirror; metamorphoō as at Matthew 17:2; ‘from glory into glory’ word for word | 12-18 | Greek text (G2734, G3339; apo doxēs eis doxan) | Script over the repository's Greek |
+| Contempt for Jews rejected in the site's wording; Romans 9:2; 10:1; 11:1; Luke 24:27 | 12-18 | Acts 2 and Romans 11 plain notes; BSB | Repository wording |
+| Exodus 34:33-34; 33:18, 20; Deuteronomy 29:4; Psalm 119:18; Isaiah 61:1; Genesis 1:27; Galatians 5:13 | 12-18 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 4 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ekkakeō, lose heart, verses 1 and 16 | 1-6 | Deep note `words`; Greek text (G1573) | Repository |
+| ‘The god of this age’ most take as Satan; John 12:31 | 1-6 | Deep note; BSB | Worded "most readers" |
+| ‘Jesus Christ as Lord’ possibly among the first confessions; doulos, servant or slave (4:5) | 1-6 | Deep note `christ`; Greek text (G1401) | Repository; "may be" |
+| Light at Paul's conversion (Acts 9:3); "many readers think" Paul has it in mind | 1-6 | BSB | BSB text; worded as a reading |
+| Genesis 1:3; 1:27; Isaiah 9:2; Colossians 1:15; Exodus 33:18; John 12:31 | 1-6 | BSB | BSB text |
+| Clay jars cheap, common, breakable; valuables kept in earthenware (Jeremiah 32:14) | 7-12 | Deep note `cultural`; BSB | Repository |
+| The play on words in 4:8 (aporoumenoi, exaporoumenoi); the 1:8 word | 7-12 | Deep note `literary`; Greek text (G1820) | Repository |
+| Isaiah 64:8; Jeremiah 18:6; Job 4:19; Psalm 73:26; Isaiah 42:3; 40:29 | 7-12 | BSB | BSB text |
+| Care line (not crushed is not a test; 1:8; 7:6; Find Help; thoughts of self-harm) | 7-12 | Psalms 42 form | Repository wording |
+| Paul's ‘I believed, therefore I spoke’ the three words of the old Greek (Psalm 115:1 there); the Hebrew hard, versions differ; the BSB follows the Hebrew | 13-18 | Commentaries | Search: preceptaustin.org on 4:13-15 (episteusa, dio elalēsa); tips.translation.bible on Psalm 116:10; intertextual.bible |
+| Greek thinkers on body and soul, stated generally | 13-18 | Deep note `cultural` | Repository |
+| Baros, weight, set against elaphron, light; kabod from a root meaning heavy, "may be" | 13-18 | Greek text (G0922, G1645); deep note `words`; standard Hebrew lexicons | Repository |
+| Stoned and dragged out, presumed dead (Acts 14:19) | 13-18 | BSB | BSB text |
+| Care line on 4:17: Paul's own testimony, never a line for fresh pain; the Romans 8:28 note's wording; Romans 12:15; Psalm 13:1; Find Help | 13-18 | Romans 8 plain note | Repository wording |
+| Psalm 116:8, 10; 39:4; 30:5; Isaiah 40:31 | 13-18 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 5 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paul a tentmaker (Acts 18:3); some in Corinth denied the resurrection (1 Corinthians 15:12); Greek ideas of the soul set free, stated generally | 1-10 | BSB; deep note `historical` | Repository |
+| Intermediate state: most, conscious with Christ awaiting the resurrection; some, the heavenly house the resurrection body at death; some, soul sleep; no side; pointers to the doctrine study, 1 Corinthians 15 and the Explorer's New Creation stop | 1-10 | The site's doctrine study ‘Death and the Intermediate State’ (Adventist, Milton, Overton, Calvin, Westminster 32, all there verified); Explorer stop `new-creation` | Repository; no names repeated |
+| Bēma the judge's platform; Acts 18:12 | 1-10 | Deep note `cultural`; BSB | Repository. Archaeology of Corinth's bema not claimed |
+| Judgment of believers not a second trial (Romans 8:1); pointers to Romans 2:6-11 and 1 Corinthians 3:10-15 notes | 1-10 | Repository | Repository wording |
+| Care line for the grieving (John 11:35; 1 Thessalonians 4:13; Find Help) | 1-10 | 1 Corinthians 15:50-58 form | Repository wording |
+| Isaiah 38:12; Psalm 39:12; Job 19:26; Psalm 17:15; Daniel 12:2; Isaiah 25:8; Ecclesiastes 12:14; Philippians 1:23 | 1-10 | BSB | BSB text |
+| Verse 17 verbless in Greek; person made new and belonging to the new creation | 11-17 | Deep note `words` | Repository |
+| Isaiah 43:18-19; 65:17; Revelation 21:5; Isaiah 53:4-5 | 11-17 | BSB | BSB text |
+| Reconciliation language in the Greek world; God never said to be reconciled to us | 18-21 | Deep note `cultural`, `words` | Repository |
+| Ḥaṭṭāʾt (H2403) both sin and sin offering, both in Leviticus 4:3 | 18-21 | Hebrew text in the repository | Script over `client/public/bible/ch/leviticus/4.json` |
+| 5:21 readings: sin offering (IVP; Romans 8:3); treated as sin, imputation in the Reformed tradition; union and participation, Eastern Orthodox and some Western readers; no side; the Nicene Creed line | 18-21 | Commentaries | Search: biblegateway.com IVP NT Commentary "A Ministry of Reconciliation"; biblehub.com commentaries; ccel.org Barnes; christianitytoday.com (Gorman, theosis); orthodoxchristiantheology.com; monergism.com (Bird). No names in the note |
+| Leviticus 4:24; 16:22; Isaiah 53:6, 10; Psalm 32:2; Ezekiel 33:11; 1 Peter 2:22; Galatians 3:13 | 18-21 | BSB | BSB text |
+
+Cut: N. T. Wright by name (deep note); Irenaeus's phrase (not checked).
+
+## The plain notes on 2 Corinthians 6 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Kairos a fitting moment | 1-10 | Deep note `words` | Repository |
+| Isaiah 49:8 in the BSB (Hebrew, future tense) and Paul's past tense; "may be following" the old Greek | 1-10 | BSB comparison | BSB text; the Greek version not claimed as checked |
+| Isaiah 49:8 follows a Servant Song (49:1-6) | 1-10 | Deep note `literary`; BSB | Repository |
+| Philippi beating and prison (Acts 16:22-24); Ephesus riot (Acts 19:23-41); 1 Thessalonians 2:9 | 1-10 | BSB | BSB text |
+| Isaiah 49:6; 55:6; Psalm 95:7-8; 44:22 | 1-10 | BSB | BSB text |
+| Vocative ‘Corinthians’, Paul seldom names a church so; ‘our mouth has been opened’, ‘our heart has been made wide’ (6:11) | 11-13 | Greek text (6:11); deep note `literary` | Repository |
+| 1 Corinthians 4:15; Psalm 119:32; Isaiah 60:5; Jeremiah 3:22 | 11-13 | BSB | BSB text |
+| Yoke; Deuteronomy 22:10; Leviticus 19:19; Psalm 106:28 ‘yoked themselves to Baal of Peor’ | 14-18 | BSB | BSB text |
+| Temple dining and civic life; 1 Corinthians 10:21; concern most likely idolatry | 14-18 | Deep note `cultural`; wrom-ledger (temple meals); BSB | Repository; "most readers think" |
+| Belial from Hebrew ‘worthlessness’ (H1100 at Deuteronomy 13:13); a name for Satan in some Jewish writings of the time; ‘Beliar’ in Paul's Greek; Beliar and heterozygeō only here in the New Testament | 14-18 | Hebrew and Greek text in the repository; book page search (Belial in the Scrolls and Jewish writings) | Script over the repository; "some Jewish writings" |
+| The chain: Leviticus 26:12; Ezekiel 37:27; Isaiah 52:11; Ezekiel 20:41 (close to); 2 Samuel 7:14 and 7:8; Isaiah 43:6 | 14-18 | Commentary notes | Search: bible.usccb.org NABRE note on 6:16-18; vatican.va NAB; wikipedia "2 Corinthians 6"; BSB texts compared. The Greek wording of Ezekiel 20:34 not claimed |
+| 1 Corinthians 7:12-13 (stay); 5:10 (not leave the world); 7:39; Jesus ate with sinners (Matthew 9:10-11); applications to marriage, business, organizations, worship as views; no side | 14-18 | BSB; deep note `hard` | Repository |
+| Insertion question in one sentence, pointing to the book page | 14-18 | Book page ledger | Ledger |
+| Safety line: not to stay in danger; pointer to the 1 Corinthians 7:10-16 note; Find Help | 14-18 | 1 Corinthians 7 plain note | Repository wording |
+
+Cut: the Dead Sea Scrolls named for Belial (summarised as "some Jewish writings").
+
+## The plain notes on 2 Corinthians 7 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 closes 6:14-18; ‘make room’ answers 6:12; the three denials may answer charges; rivals took money (11:20) | 1-4 | Deep note `literary`; BSB | Repository; "may" |
+| Leviticus 11:44; Psalm 103:13; 51:10 | 1-4 | BSB | BSB text |
+| 7:5 resumes 2:13; joined letters or a turning aside; no side | 5-7 | Deep notes on 2 and 7; book page | Repository |
+| Titus a Greek (Galatians 2:3); carriers explained letters and brought reports | 5-7 | BSB; deep note `cultural` | Repository |
+| Isaiah 57:15; Psalm 34:18; 42:5; Proverbs 25:25 | 5-7 | BSB | BSB text |
+| Metanoia, a turning of the whole person; the two sorrows as the passage shows them | 8-12 | Deep note `words`, `doctrines` | Repository |
+| The one harmed: Paul or another member; not said | 8-12 | Deep note `historical` | Repository |
+| 2 Samuel 12:13; Psalm 51:12, 17; Joel 2:13; Luke 22:62; John 21:17 | 8-12 | BSB | BSB text |
+| Pointer to the Genesis 27:30-40 note on Hebrews 12:17 (which quotes 7:10) | 8-12 | genesis/plain/27.json | Repository |
+| Care line for the scrupulous (not the mark of one turned away; 1 John 1:9; John 6:37; anxiety and depression not a failure of faith; pastor, friend, counsellor, doctor; Find Help); no licence to wound | 8-12 | Romans 9 and 1 Corinthians 11 plain notes (the form) | Repository wording |
+| ‘Fear and trembling’ humble respect (Philippians 2:12); Psalm 2:11; Isaiah 66:2; Psalm 133:1 | 13-16 | Deep note `cultural`; BSB | BSB text |
+
+Cut: the ancient friendship formula behind ‘live and die together’ (not checked);
+Judas set against Peter (kept out for the care rule on self-harm).
