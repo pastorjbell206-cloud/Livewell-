@@ -12916,3 +12916,30 @@ Cut before publishing: that the tablets are called the Testimony ‘because they
 | Romans 9:3; Revelation 3:5; Galatians 3:13 | 30-35 | BSB; exodus/32.json `christ`; romans/plain/9.json | BSB text |
 
 Cut before publishing: Jeroboam's sons' names beside Aaron's (true to the deep note, but it leads a new reader away from the chapter); the Ugaritic poem of Anat and Mot (the same).
+
+## The plain notes on Exodus 33 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everything promised, without God himself; the tabernacle existed so that God could dwell among them (25:8) | 1-6 | exodus/33.json `story` | Repository |
+| Stiff-necked: an ox that will not bend its neck to the yoke | 1-6 | exodus deep notes (found by search) | Repository |
+| Jewelry taken off in mourning and repentance; the calf's ornaments; 35:22; the same gold | 1-6 | exodus/33.json `cultural` | Repository |
+| Horeb as Sinai; milk and honey; date or grape syrup; the Tel Rehov beehives, tenth or ninth century BC | 1-6 | exodus/33.json `historical` | Repository |
+| Genesis 35:4; Exodus 35:22 | 1-6 | BSB | BSB text |
+| The tent outside the camp: a temporary tent, or an older tradition; a regular practice | 7-11 | exodus/33.json `historical` | Repository; no side |
+| A people who now worship at a distance | 7-11 | exodus/33.json `cultural` | Repository |
+| Face to face as an idiom; a king's face as admission to his presence; Abraham the friend of God | 7-11 | exodus/33.json `cultural` | Repository |
+| Numbers 12:8; James 2:23; John 15:15 | 7-11 | BSB | BSB text |
+| Moses holds God to his words; bold prayer welcomed | 12-17 | exodus/33.json `doctrines` (prayer) | Repository |
+| Presence is the word for face (panim); know (yada) and favor (chen) | 12-17 | exodus/33.json `words` (H6440H, H3045, H2580), `literary` | Repository |
+| What sets Israel apart is that God goes with it | 12-17 | exodus/33.json `doctrines` (god) | Repository |
+| Matthew 1:23; 28:20; 11:28 | 12-17 | BSB; exodus/33.json `christ` | BSB text |
+| Three rising requests; kavod; God answers with goodness and his name | 18-23 | exodus/33.json `literary`, `words` (H3519) | Repository |
+| ‘I will have mercy’ in its setting: not a word about turning people away, but mercy as God's free gift to a people who deserved nothing | 18-23 | romans/plain/9.json (14-18 `ot`), wording reused | Repository |
+| Face to face and ‘no one can see Me and live’: the idiom; Numbers 12; the ‘back’ as what can be known from God's works; the Son before the incarnation, or not | 18-23 | exodus/33.json `hard` | Repository; no side |
+| Revealed truly, not fully | 18-23 | exodus/33.json `doctrines` (revelation) | Repository |
+| 1 Kings 19:13 (Elijah at Horeb, 19:8-11); John 1:18, 14; 2 Corinthians 4:6; Romans 9:15; Revelation 22:4 | 18-23 | BSB; exodus/33.json `christ` | BSB text |
+
+Cut before publishing: that Joshua ‘is learning where a leader's strength comes from’ (no source); the counts of ‘know’ and ‘favor’ (seven and five in the Hebrew, which the English does not show).
