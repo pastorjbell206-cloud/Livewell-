@@ -96,6 +96,7 @@ describe("the data", () => {
       "rescue",
       "sinai",
       "land",
+      "kingdom",
       "cross",
     ]);
     for (const s of INDEX.stops) {
@@ -112,6 +113,7 @@ describe("the data", () => {
       "order",
       "walk",
       "cycle",
+      "choose",
       "reveal",
     ]);
   });
@@ -332,6 +334,41 @@ describe("a stop", () => {
     await waitFor(() => expect(stored().done).toContain("land"));
   });
 
+  it("what makes a good king: each moment is two buttons, the answer and its verse show, and all chosen is done", async () => {
+    renderAt("/study/explorer/kingdom");
+    const act = stopFile("kingdom").activity!;
+    if (act.kind !== "choose") throw new Error("kingdom is a choose activity");
+    await screen.findByRole("heading", { name: act.title });
+    const groups = screen
+      .getAllByRole("group")
+      .filter(g => g.classList.contains("ex-choose__options"));
+    expect(groups).toHaveLength(act.moments.length);
+    expect(screen.getByText(`0 of ${act.moments.length} chosen.`)).toBeInTheDocument();
+    // The first one wrong on purpose, then put right; the rest right.
+    act.moments.forEach((m, i) => {
+      const wrong = m.answer === "trust" ? "grasp" : "trust";
+      const pick = i === 0 ? wrong : m.answer;
+      const b = within(groups[i]).getByRole("button", { name: act.options[pick] });
+      fireEvent.click(b);
+      expect(b).toHaveAttribute("aria-pressed", "true");
+      const li = groups[i].closest("li")!;
+      expect(li.textContent).toContain(m.why);
+      expect(li.textContent).toContain(i === 0 ? "Not quite." : "Yes.");
+    });
+    fireEvent.click(
+      within(groups[0]).getByRole("button", { name: act.options[act.moments[0].answer] })
+    );
+    expect(
+      screen.getByText(
+        `You chose for all ${act.moments.length}, and ${act.moments.length} matched what the Bible says.`
+      )
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 3, name: act.end.title })
+    ).toBeInTheDocument();
+    await waitFor(() => expect(stored().done).toContain("kingdom"));
+  });
+
   it("put in order: moves by buttons, says how many are right, and finishes in the true order", async () => {
     renderAt("/study/explorer/rescue");
     const act = stopFile("rescue").activity!;
@@ -460,12 +497,12 @@ describe("a stop", () => {
     expect(chain).toEqual(FINISHED.map(s => s.slug));
   });
 
-  it("shows the older level's care line and question on the three new stops", async () => {
+  it("shows the older level's care line and question on the newer stops", async () => {
     window.localStorage.setItem(
       EXPLORER_PROGRESS_KEY,
       JSON.stringify({ v: 1, level: "older", visited: [], done: [], last: null })
     );
-    for (const slug of ["fall", "sinai", "land"]) {
+    for (const slug of ["fall", "sinai", "land", "kingdom"]) {
       const s = stopFile(slug);
       renderAt(`/study/explorer/${slug}`);
       await screen.findByRole("heading", { name: "A question people ask" });

@@ -28,6 +28,9 @@ Every factual claim in `client/public/explorer/` (the stops, `threads.json`, `ca
 | land verses | Judges 2:18 (whole); Ruth 1:16 trimmed to Ruth's promise from “wherever you go” | BSB, by the validator |
 | land story | “Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.”; “What is the meaning of these stones?”; “to this day”; “In those days there was no king in Israel; everyone did what was right in his own eyes” | BSB Joshua 1:9; 4:21; 6:25; Judges 21:25 |
 | land activity | the Judges 21:25 line again; “will never end” | BSB Judges 21:25; Luke 1:33 |
+| kingdom verses | 1 Samuel 16:7 trimmed to God's words from “the LORD does not see”; 2 Samuel 7:16 (whole) | BSB, by the validator |
+| kingdom story and question | “like all the other nations”; “appoint a king to judge us like all the other nations”; “they have rejected Me as their king”; “obedience is better than sacrifice”; “the LORD sees the heart” and the longer form; “the sweet psalmist of Israel”; “I will raise up your descendant after you”; “I will establish the throne of his kingdom forever”; “the thing that David had done was evil in the sight of the LORD”; “You are that man!”; “I have sinned against the LORD”; “The LORD has taken away your sin”; “an understanding heart”; “the glory of the LORD filled the house of the LORD”; “Even heaven, the highest heaven, cannot contain You, much less this temple I have built”; “a clean heart”; “the son of David” | BSB 1 Samuel 8:5, 8:7; 15:22; 16:7; 2 Samuel 23:1; 7:12-13; 11:27; 12:7; 12:13; 1 Kings 3:9; 8:11; 8:27; Psalm 51:10; Matthew 1:1 (each read in the repo's BSB; each also checked by the validator's quotation rule) |
+| kingdom activity | “your throne will be established forever”; “His kingdom will never end” (the BSB's exclamation mark left outside the trimmed quotation) | BSB 2 Samuel 7:16; Luke 1:33 |
 | card: the Bible | 2 Timothy 3:16-17 (whole); “spoke from God as they were carried along by the Holy Spirit” | BSB, by the validator; 2 Peter 1:21 |
 | card: Jesus | John 1:14 (whole); “My Lord and my God” | BSB, by the validator; John 20:28 |
 
@@ -95,6 +98,23 @@ Every factual claim in `client/public/explorer/` (the stops, `threads.json`, `ca
 | Ruth: set when the judges ruled; a Moabite; barley harvest; gleaning in Boaz's field; Obed the grandfather of David | BSB Ruth 1:1, 16, 22; 2:2-3, 8-9; 4:13-17 (the drawing's field, sheaves and gleaner) |
 | Jesus the son of David, whose kingdom will never end | BSB Luke 1:32-33 |
 | The answer to "Did God command killing?" | Sentences reused from the Honest Answer `did-god-command-genocide` in `client/src/data/answers.ts`: "On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly."; "Christians who hold the whole Bible to be God's word read these chapters in more than one way."; "Two things hold under all of them. The God of Joshua is the Father of Jesus. And nothing in these chapters gives anyone today a warrant for violence against anyone." One phrase turned from first person to third ("sets out the main readings, with the strength and the hard question of each, without pretending any of them makes the problem go away"). No new argument; nothing about any modern people, state or border |
+| The Kingdom: the people ask for a king like the nations; God says they have rejected him as king; Saul a head taller than anyone; Saul offers the sacrifice himself when Samuel is late and the troops slip away, and makes excuses; Samuel says his kingdom will not endure | BSB 1 Samuel 8:5-7, 20; 9:2; 13:8-14; 15:22-23 |
+| Jesse's sons pass before Samuel; the youngest, tending the sheep, is anointed | BSB 1 Samuel 16:6-13 |
+| David played the harp (the drawing's harp) | BSB 1 Samuel 16:23 |
+| Many psalms carry David's name | BSB Psalm headings (e.g. Psalm 23:1, 51:1, "A Psalm of David"); the site's Psalm 51 note (`client/public/bible/notes/psalms/51.json`: "the second collection of David's psalms (51 to 72)") |
+| David and Goliath: he trusted the LORD to deliver him | BSB 1 Samuel 17:37, 45-47 |
+| David spared Saul in the cave, his men urging him to kill him | BSB 1 Samuel 24:3-10 |
+| David took Jerusalem (the fortress of Zion, the City of David) and brought up the ark | BSB 2 Samuel 5:6-7; 6:12-15 |
+| David wanted to build God a house; God promised him a son whose throne lasts for ever, disciplined but never losing God's loving devotion | BSB 2 Samuel 7:1-16 |
+| David's sin: in the spring he stayed in Jerusalem; he sent for Bathsheba, the wife of Uriah, and slept with her; she became pregnant; he had Uriah put at the front of the battle to be killed; she mourned her husband; David took her as his wife; the thing was evil in the LORD's sight | BSB 2 Samuel 11:1-5, 14-17, 26-27; 12:9 ("You put Uriah the Hittite to the sword and took his wife as your own") |
+| Nathan's story of the rich man and the poor man's lamb; David confessed and was forgiven; the sword would not depart from his house | BSB 2 Samuel 12:1-14 |
+| Psalm 51 is headed as David's prayer when Nathan came to him | BSB Psalm 51:1 (heading); site note `psalms/51.json` |
+| Solomon at Gibeon asked for an understanding heart; God was pleased | BSB 1 Kings 3:5-12 |
+| The temple: built of stone finished at the quarry; cedar from Lebanon; two bronze pillars at the porch, Jachin and Boaz (the drawing) | BSB 1 Kings 5:6; 6:7; 7:15-21 |
+| The cloud and the glory filled the temple | BSB 1 Kings 8:10-11 |
+| Solomon in old age: his wives turned his heart after other gods; high places for their gods; the kingdom to be torn away from his son | BSB 1 Kings 11:3-13 |
+| Matthew calls Jesus the son of David; the angel says the Lord God will give him the throne of his father David and his kingdom will never end | BSB Matthew 1:1; Luke 1:32-33 |
+| Jewish and Christian readers both have long heard in the promise to David the hope of a coming king from David's line; Christians believe it is Jesus; Jewish tradition still waits | The site's context guide `client/public/context/guides/messianic-expectation.json` (God's promise to David kept alive through the prophets; Psalm of Solomon 17's hope for the son of David). Web search 2026-11-20: My Jewish Learning, "Who is the Messiah?", https://www.myjewishlearning.com/article/who-is-the-messiah/ ; Jewish Virtual Library, "The Messiah", https://www.jewishvirtuallibrary.org/the-messiah (the Messiah a human descendant of David, still awaited; Maimonides' account). Stated with "still waits" only, no description of any community beyond it |
 
 ## History and scholarship
 

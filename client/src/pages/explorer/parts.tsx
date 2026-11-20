@@ -77,6 +77,7 @@ const SCENES: Record<string, () => Promise<{ default: Drawing }>> = {
   fall: () => import("./scenes/fall"),
   sinai: () => import("./scenes/sinai"),
   land: () => import("./scenes/land"),
+  kingdom: () => import("./scenes/kingdom"),
 };
 
 export const hasScene = (name: string | undefined) => !!name && name in SCENES;
@@ -405,7 +406,9 @@ export function MatchActivity({
     setChecked(true);
     const right = activity.pairs.filter(p => chosen[p.id] === p.id).length;
     if (right === activity.pairs.length) {
-      setSaid("All three promises, kept. God does what he says.");
+      setSaid(
+        activity.finish ?? "All three promises, kept. God does what he says."
+      );
       onDone();
     } else
       setSaid(
@@ -595,15 +598,21 @@ export function WalkActivity({
             <p>
               {step.what} <VerseRef reference={step.whatRef} />
             </p>
+            {step.asked && (
+              <p className="ex-walk__asked">
+                <b>What people said.</b> {step.asked}{" "}
+                {step.askedRef && <VerseRef reference={step.askedRef} />}
+              </p>
+            )}
             <p className="ex-walk__later">
-              <b>Where the Bible takes it up.</b> {step.later}{" "}
-              <RefText text={step.laterRef} />
+              <b>{activity.laterLabel ?? "Where the Bible takes it up."}</b>{" "}
+              {step.later} <RefText text={step.laterRef} />
             </p>
           </>
         ) : (
           <p>
-            There are {n} steps, from the gate of the courtyard to the ark.
-            Start at the gate.
+            {activity.intro ??
+              `There are ${n} steps, from the gate of the courtyard to the ark. Start at the gate.`}
           </p>
         )}
       </div>
@@ -638,7 +647,7 @@ export function WalkActivity({
           {at === null
             ? `Start: ${steps[0].name}`
             : at === n - 1
-              ? "Back to the gate"
+              ? (activity.restart ?? "Back to the gate")
               : `Next: ${steps[at + 1].name}`}
           <ArrowRight
             size={16}
@@ -819,6 +828,110 @@ export function CycleActivity({
           )}
         </button>
       </div>
+    </Shell>
+  );
+}
+
+/**
+ * Trust or grab: a moment from a king's story at a time, each with two
+ * buttons. Choosing shows whether that is what the Bible says and why, with
+ * the verse; a choice can be changed. When every moment has an answer, the
+ * end says where the story goes next. Choosing every moment is done.
+ */
+export function ChooseActivity({
+  activity,
+  onDone,
+  doneBefore,
+}: Props<"choose">) {
+  const id = useId();
+  const { moments, options, end } = activity;
+  const [chosen, setChosen] = useState<Record<string, "trust" | "grasp">>({});
+  const reported = useRef(false);
+  const answered = moments.filter(m => chosen[m.id]).length;
+  const right = moments.filter(m => chosen[m.id] === m.answer).length;
+  const all = answered === moments.length;
+
+  useEffect(() => {
+    if (all && !reported.current) {
+      reported.current = true;
+      onDone();
+    }
+  }, [all, onDone]);
+
+  return (
+    <Shell activity={activity} doneBefore={doneBefore} id={id}>
+      <ol className="ex-choose">
+        {moments.map((m, n) => {
+          const pick = chosen[m.id];
+          const head = `${id}-${m.id}`;
+          return (
+            <li key={m.id}>
+              <p className="ex-choose__who" id={head}>
+                <span aria-hidden="true">{n + 1}. </span>
+                {m.who}
+              </p>
+              <p className="ex-choose__text">{m.text}</p>
+              <div
+                className="ex-choose__options"
+                role="group"
+                aria-labelledby={head}
+              >
+                {(["trust", "grasp"] as const).map(k => (
+                  <button
+                    key={k}
+                    type="button"
+                    className="ex-choose__btn"
+                    aria-pressed={pick === k}
+                    onClick={() => setChosen(c => ({ ...c, [m.id]: k }))}
+                  >
+                    {options[k]}
+                  </button>
+                ))}
+              </div>
+              <div aria-live="polite">
+                {pick && (
+                  <p className="ex-choose__why">
+                    <b>
+                      {pick === m.answer ? (
+                        <>
+                          <Check
+                            size={16}
+                            strokeWidth={1.75}
+                            aria-hidden="true"
+                          />{" "}
+                          Yes. {options[m.answer]}.
+                        </>
+                      ) : (
+                        <>
+                          <X size={16} strokeWidth={1.75} aria-hidden="true" />{" "}
+                          Not quite. {options[m.answer]}.
+                        </>
+                      )}
+                    </b>{" "}
+                    {m.why} <RefText text={m.ref} />
+                  </p>
+                )}
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+      <p
+        className={`ex-act__result${all ? " ex-act__result--ok" : ""}`}
+        aria-live="polite"
+      >
+        {all
+          ? `You chose for all ${moments.length}, and ${right} matched what the Bible says.`
+          : `${answered} of ${moments.length} chosen.`}
+      </p>
+      {all && (
+        <div className="ex-walk ex-walk--end">
+          <h3 className="ex-walk__name">{end.title}</h3>
+          <p>
+            {end.text} <RefText text={end.ref} />
+          </p>
+        </div>
+      )}
     </Shell>
   );
 }

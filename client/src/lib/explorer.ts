@@ -102,6 +102,19 @@ export interface WalkStep {
   whatRef: string;
   later: string;
   laterRef: string;
+  /** What the people in the story asked or said (Jesus Comes). */
+  asked?: string;
+  askedRef?: string;
+}
+
+/** One moment of a king's story, to judge: did he trust God or grab for himself? */
+export interface ChooseMoment {
+  id: string;
+  who: string;
+  text: string;
+  answer: "trust" | "grasp";
+  why: string;
+  ref: string;
 }
 
 export type Activity =
@@ -119,6 +132,20 @@ export type Activity =
       prompt: string;
       steps: WalkStep[];
       finish: string;
+      /** Said before the first step (Sinai's default names the gate and the ark). */
+      intro?: string;
+      /** The heading over "later" (default: where the Bible takes it up). */
+      laterLabel?: string;
+      /** The last step's button, back to the first (default: back to the gate). */
+      restart?: string;
+    }
+  | {
+      kind: "choose";
+      title: string;
+      prompt: string;
+      options: { trust: string; grasp: string };
+      moments: ChooseMoment[];
+      end: { title: string; text: string; ref: string };
     }
   | {
       kind: "cycle";
@@ -146,6 +173,8 @@ export type Activity =
         kept: string;
         keptRef: string;
       }[];
+      /** Said when every pair is right (Abraham's default names three promises). */
+      finish?: string;
     }
   | {
       kind: "reveal";
