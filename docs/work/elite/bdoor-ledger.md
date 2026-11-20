@@ -12128,3 +12128,37 @@ Cut before publishing: Papyrus Brooklyn and the name Shiphrah; the debate over T
 | Exodus 3:7; 22:23; Luke 1:72 | 23-25 | BSB | BSB text |
 
 Cut before publishing: ‘used nowhere else in the Bible’ of tevah (not in the repository's note); the identification of the princess with Bithiah; ha'almah and Isaiah 7:14 (outside the chapter's point); the 120 years of Moses' life.
+
+## The plain notes on Exodus 3 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Forty years in Midian (Acts 7:30); shepherding humble; Jacob and Laban | 1-6 | exodus/3.json `story`, `cultural` | Repository |
+| Horeb and Sinai; Jebel Musa since the fourth century; Egeria in the early 380s; Justinian's monastery; northern Sinai and northwest Arabia | 1-6 | exodus/3.json `historical` | Repository; no side |
+| Mal'akh; the angel and God speaking without a break; Justin Martyr and the created-messenger reading | 1-6 | exodus/3.json `words` (H4397H), `christ` | Repository; no side |
+| Ra'ah repeated; seneh rare and sounding like Sinai; the fire of 19:18; Exodus Rabbah 2:5 | 1-6 | exodus/3.json `literary`, `words` (H5572) | Repository |
+| Sandals as reverence; qodesh first used of a place; hiding the face | 1-6 | exodus/3.json `cultural`, `words` (H6944G) | Repository |
+| Joshua 5:15; Exodus 33:20; Deuteronomy 33:16; Mark 12:26-27 | 1-6 | BSB | BSB text |
+| ‘Seeing, I have seen’; I have seen, heard, know; ‘I am sending you’ | 7-10 | exodus/3.json `literary` | Repository |
+| 'Oni and the oppression of 1:11 | 7-10 | exodus/3.json `words` (H6040) | Repository |
+| Milk and honey about twenty times; devash; Sinuhe's land of Yaa | 7-10 | exodus/3.json `historical` | Repository |
+| The roll of peoples; Hittites in Canaan | 7-10 | exodus/3.json `historical` | Repository |
+| Acts 7:34; Genesis 50:24; Isaiah 63:9 | 7-10 | BSB; exodus/3.json `christ` | BSB text |
+| Five objections; the call pattern (Habel, not named); Gideon and Jeremiah; mi anokhi and ehyeh | 11-12 | exodus/3.json `story`, `literary` | Repository |
+| Judges 6:16; Jeremiah 1:8; Matthew 28:20 | 11-12 | BSB; exodus/3.json `christ` | BSB text |
+| Names and power; Isis and Ra | 13-15 | exodus/3.json `cultural` | Repository |
+| Ehyeh asher ehyeh; the future footnote; Septuagint egō eimi ho ōn; Aquila and Theodotion | 13-15 | exodus/3.json `text`, `words` (H1961) | Repository |
+| YHWH about 6,800 times; Adonai; LORD in small capitals | 13-15 | exodus/3.json `words` (H3068G) | Repository |
+| Self-existence, freedom, presence; Berakhot 9b; Aquinas; Maimonides; Buber | 13-15 | exodus/3.json `words` (H1961), `interpretation` | Repository; no side |
+| Revelation 1:8; John 8:58 and the stones; Isaiah's ‘I am He’ in the same Greek | 13-15 | exodus/3.json `christ`; BSB | Repository |
+| Exodus 34:6; Revelation 1:8; John 8:58; Isaiah 43:10 | 13-15 | BSB | BSB text |
+| Elders as heads of families; paqod paqadti and Genesis 50:24-25 | 16-22 | exodus/3.json `cultural`, `words` (H6485I) | Repository |
+| The preview of the book (4:29-31; 5; 7 to 12; 12:35-36) | 16-22 | exodus/3.json `literary` | Repository |
+| The Deir el-Medina absence register (EA 5634), fortieth year of Ramesses II | 16-22 | exodus/3.json `cultural` | Repository |
+| Sha'al ‘ask’, not ‘borrow’; reqam and Deuteronomy 15:13-15 | 16-22 | exodus/3.json `text`, `cultural` | Repository |
+| Marcion; Irenaeus and Tertullian; Sanhedrin 91a; the three-day request read two ways; the gold in the calf and the tabernacle | 16-22 | exodus/3.json `hard` | Repository; no side |
+| Deuteronomy 15:13; Genesis 15:14; Exodus 12:35 | 16-22 | BSB | BSB text |
+
+Cut before publishing: Har Karkom and Jebel al-Lawz by name; the Shasu of Yhw and the Kenite hypothesis (kept for the book page's timeline and 6:3); Gregory of Nyssa's virgin-birth reading of the bush; the Huguenot seal and the Church of Scotland emblem; Tel Rehov's hives; the KJV's ‘backside of the desert’; the BSB wording ‘three-day journey’ (paraphrased, to keep the word out).
