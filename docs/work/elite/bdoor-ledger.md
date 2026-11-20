@@ -7537,3 +7537,22 @@ No web search. The Songs of Ascents end at 134.
 | 1 Timothy 2:8; Revelation 7:15 | 134 | BSB | BSB text |
 
 Cut: Hermon's height in feet (133); the Mishnah's steps again (134, pointed back to 120).
+
+## The plain notes on Psalms 135 and 136 (2026-11-20)
+
+One web search (for 136).
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 135:15-18 nearly 115:4-8; 135:7 matches Jeremiah 10:13; 135:14 repeats Deuteronomy 32:36; 135:4 and Exodus 19:5 | 135 | BSB | BSB text compared |
+| After the exile by a temple singer (many) or older shared worship language | 135 | Repository deep note (historical) | Stated as views |
+| Storm and rain credited to Baal by Canaanites | 135 | Repository deep note (cultural); earlier ledger (Psalm 29, Baal) | Site's own teaching |
+| Sihon and Og (Numbers 21:23-24) | 135, 136 | BSB | BSB text |
+| "House of Levi" added in 135:20 beside 115 and 118's three groups | 135 | BSB | BSB text compared |
+| 1 Peter 2:9; Matthew 5:45; Acts 14:17 | 135 | BSB | BSB text |
+| The refrain "His loving devotion endures forever" 26 times, once in each verse; hesed (H2617) 26 times | 136 | BSB; repository word data | Script |
+| Call and response (Ezra 3:11 "sang responsively"); the refrain at 1 Chronicles 16:34 and 2 Chronicles 5:13 | 136 | Repository deep note (historical, cultural); BSB | BSB text |
+| The Talmud calls 136 the Great Hallel; Rabbi Yohanan links the name to 136:25 (food for every creature); said at the Passover meal after the Hallel to this day | 136 | Talmud Pesachim 118a as summarised; modern liturgy | Search: etzion.org.il "118a Great Hallel"; sefaria.org.il Pesachim 118a; wikipedia "Hallel". Tractate and teacher not named on the page; other opinions (134-136, 135-136) not given |
+| "Mighty hand and outstretched arm" as Deuteronomy's phrase | 136 | Repository deep note (cultural) | Site's own teaching |
+| Lamentations 3:22-23; Romans 8:39; Luke 1:48; Matthew 6:26; Ezekiel 18:23 | 136 | BSB | BSB text |
+| Conquest and firstborn texts: pointer to the Psalm 106 note's readings; "No reading of these verses gives anyone today a right to harm another person or people" | 135, 136 | Psalm 106 plain note | Repository |
