@@ -10118,3 +10118,36 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Psalm 19:7-8; 119:105; 33:6; 2 Samuel 23:2; Deuteronomy 32:47; 2 Peter 1:21 | 14-17 | BSB | BSB text |
 
 Cut: "People who set dates for Christ's return have always been wrong" (a claim beyond the sources; Mark 13:32 kept).
+
+## The plain notes on 2 Timothy 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Oath-like charge before God and Christ the judge; five commands, reason, four more | 1-5 | Chapter deep note `literary` | Repository |
+| Euangelistēs three times (Acts 21:8; Ephesians 4:11) | 1-5 | Chapter deep note `words` (G2099) | Repository |
+| Ezekiel 33:7; Isaiah 30:10; Jeremiah 5:31; Psalm 96:13 | 1-5 | BSB | BSB text |
+| Drink offering (Numbers 15); Philippians 2:17; analusis, untying a boat or striking a tent; Philippians 1:23; stephanos a victor's wreath; race and fight from the games | 6-8 | Chapter deep note `cultural`, `words` | Repository; BSB |
+| Intermediate state views pointed to the doctrine study, no side | 6-8 | philippians/plain/1.json (19-26); 2-corinthians/plain/5.json | Repository |
+| Death an enemy; Jesus wept (John 11:35) | 6-8 | 2-corinthians/plain/1.json (1-7) | Repository |
+| Care lines: grief and ‘do not want to go on’; self-harm and emergency | 6-8 | 1-corinthians/plain/15.json (50-58); philippians/plain/1.json (19-26) | Word for word, the two joined |
+| Numbers 15:5; Psalm 116:15; 23:4; Ecclesiastes 12:7; Daniel 12:3 | 6-8 | BSB | BSB text |
+| Demas earlier with Paul (Colossians 4:14; Philemon 1:24); Mark's split and reconciliation (Acts 13:13; 15:37-39; Colossians 4:10); Tychicus | 9-13 | Chapter deep note `historical` | Repository; BSB |
+| Luke wrote the Gospel and Acts, as early writers report | 9-13 | acts/intro.json `teaching` timeline (Irenaeus, Muratorian) | Repository, stated as report |
+| Winter closed the sea (Acts 27:9-12); prison cold; parchment costlier than papyrus; contents unknown, suggestions | 9-13 | Chapter deep note `cultural` | Repository |
+| Psalm 41:9; 55:12; 27:10; Proverbs 27:10 | 9-13 | BSB | BSB text |
+| First defense a preliminary hearing; lion's mouth from Psalm 22:21, not literal; citizens not thrown to beasts | 14-18 | Chapter deep note `historical` | Repository |
+| Alexander: name common, not certainly the man of 1 Timothy 1:20 | 14-18 | 1-timothy/plain/1.json (18-20) | Repository |
+| Forgiving the deserters (Luke 23:34); John 16:32 not used | 14-18 | Chapter deep note `christ` | Repository; BSB |
+| Alexander hard part: fear versus opposition; Romans 12:19; Revelation 6:10; mercy and justice | 14-18 | Chapter deep note `hard` | Repository wording, paraphrased |
+| Care paragraph (heavy burden, seek help and safety) | 14-18 | acts/plain/14.json (21-28) | Word for word, with the authorities sentence added |
+| Psalm 62:12; Proverbs 24:12; Deuteronomy 32:35; Proverbs 20:22; Psalm 22:21; Daniel 6:22 | 14-18 | BSB | BSB text |
+| Prisca and Aquila (Acts 18; Romans 16:3-4); Erastus and Trophimus (Acts 19:22; 20:4) | 19-22 | Chapter deep note `historical`; BSB | BSB text |
+| Eubulus, Pudens, Claudia unknown; Irenaeus on Linus, early, unconfirmed | 19-22 | Chapter deep note `historical` | Repository |
+| ‘You’ plural in the last line | 19-22 | Greek text (humōn) | Repository text |
+| Ruth 2:4; Numbers 6:24-25 | 19-22 | BSB | BSB text |
+
+## 2 Timothy complete (2026-11-20)
+
+All four chapters in plain words.
