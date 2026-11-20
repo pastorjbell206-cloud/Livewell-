@@ -9448,3 +9448,27 @@ check.
 
 Cut: the names of the scholars behind each reconstruction of the Colossian teaching;
 Antiochus III; the Latin Epistle to the Laodiceans.
+
+## The plain notes on Colossians 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. Creed wording from `client/public/creeds/documents/nicene-creed.json`.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paul had not met them (2:1); Epaphras one of their own (4:12) | 1-8 | BSB | BSB text |
+| Faith, love, hope together (1 Corinthians 13:13) | 1-8 | BSB | BSB text |
+| Genesis 1:28; Isaiah 55:11 | 1-8 | BSB | BSB text |
+| ‘Fill’ a key word against a promised fuller life | 9-14 | Repository `themes` | Repository |
+| Inheritance and rescue drawn from Israel's history | 9-14 | Deep note `cultural` | Repository |
+| Methistēmi, to move; "some readers" hear the moving of peoples | 9-14 | Standard lexicons | Narrowed to "some readers" |
+| Exodus 6:6; 15:13; Psalm 16:5; Isaiah 9:2 | 9-14 | BSB | BSB text |
+| 1:15-20 a hymn "many scholars"; two halves with ‘firstborn’ and ‘all things’ | 15-20 | Deep note `literary` | Repository |
+| Thrones, dominions, rulers, authorities as names for powers | 15-20 | Deep note `cultural` | Repository |
+| Firstborn the heir; Psalm 89:27; Nicene Creed quoted; John 1:3; Arius; Nicaea 325 | 15-20 | creeds/documents/nicene-creed.json; BSB | Read from the files |
+| Genesis 1:26; Jeremiah 10:12; Psalm 104:24 | 15-20 | BSB | BSB text |
+| Amōmos used of a sacrifice without defect | 21-23 | Standard lexicons | Standard |
+| Perseverance views (Reformed and Baptist; Wesleyan, Arminian, Catholic, Orthodox); no side; pointers to the Romans 8:31-39 note and the Honest Answer; scrupulosity care line | 21-23 | galatians/plain/5.json; 2-corinthians/plain/13.json; romans/plain/8.json | Repository wording; care line word for word |
+| Isaiah 59:2; Ezekiel 36:25; Psalm 103:12 | 21-23 | BSB | BSB text |
+| Mystery religions' secret rites | 24-29 | Earlier ledger (Ephesians 3: deep note `cultural`) | Ledger |
+| 1:24 readings: messianic woes; union with Christ (Acts 9:4); suffering in carrying the gospel; none a lack in the cross; Hebrews 10:10 | 24-29 | Deep note `hard` | Repository wording. No side |
+| Daniel 2:28; Isaiah 49:6; 53:4 | 24-29 | BSB | BSB text |
