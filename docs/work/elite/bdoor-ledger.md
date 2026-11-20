@@ -7798,3 +7798,30 @@ Cut: Campbell's reading of 1:18-32 as a voiced opponent (deep note; not checked)
 | Deuteronomy 10:16; 30:6; Jeremiah 4:4; 9:25; Ezekiel 36:27; Romans 3:2 | 25-29 | BSB | BSB text |
 
 Cut: Josephus on the AD 19 expulsion; the chiasm named as such (described as "a mirror"); Stoic writers by name on natural law.
+
+## The plain notes on Romans 3 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "The very words of God" (BSB), "oracles" in older Bibles: the Scriptures | 1-8 | BSB; standard rendering (logia) | BSB text |
+| Mē genoito, "may it never be", "God forbid" in older Bibles; used repeatedly in Romans | 1-8 | Repository deep note (`literary`); Greek text | Repository; standard |
+| Psalm 51:4 in Paul follows the Greek ("victorious"); Psalm 51 after Bathsheba (its heading); Psalm 116:11; Deuteronomy 4:8 | 1-8 | BSB (Romans 3:4 and Psalm 51:4 compared) | BSB text |
+| The slander of 3:8, answered in chapter 6 | 1-8 | Repository deep note (`historical`) | Repository |
+| The chain (catena): Psalm 14:1-3 (53:1-3); Ecclesiastes 7:20; Psalm 5:9; 140:3; 10:7; Isaiah 59:7-8; Psalm 36:1; the body from throat to eyes | 9-20 | Repository deep note (`literary`); BSB | BSB text, each source verse read in place |
+| Psalm 143:2 behind 3:20 | 9-20 | Repository doctrine study; BSB | BSB text |
+| Reformed: sin touches every part, not maximal evil; Catholic and Orthodox: nature wounded, not wholly corrupted | 9-20 | Standard confessional positions | Stated generally, no documents named |
+| Law court, slave market, temple; redemption the price of a slave's or prisoner's freedom; Exodus 6:6 | 21-26 | Repository deep note (`cultural`); BSB | Repository; BSB text |
+| Hilastērion: the mercy seat in the Septuagint; Leviticus 16:14-15; Exodus 25:22; Hebrews 9:5 | 21-26 | Repository deep note; BSB | BSB text |
+| BSB "atoning sacrifice", footnote "propitiation" | 21-26 | BSB | Book-page search (biblestudytools.com) |
+| C. H. Dodd for expiation (1935); Leon Morris for propitiation (The Apostolic Preaching of the Cross, 1955) | 21-26 | Dodd; Morris | Search: en.wikipedia.org "Propitiation"; biblicaltraining.org; tyndalebulletin.org (Bailey). Paraphrased |
+| Gustaf Aulén, Christus Victor (Swedish 1930, English 1931): victory over sin, death and the devil; held the early writers' view | 21-26 | Aulén | Search: en.wikipedia.org "Christus Victor"; librarything; secondary summaries. "Bishop" not used (not seen) |
+| Penal substitution; obedience; moral influence; the objection and the reply | 21-26 | Repository deep note (`hard`) | Stated as views, no side |
+| Nicene Creed "for us men and for our salvation" | 21-26 | `client/public/creeds/` | Repository text |
+| Isaiah 53:5, 11; Genesis 15:6; pistis Christou pointer to the book page | 21-26 | BSB; book page | BSB text |
+| Boasting in public life of the Roman world | 27-31 | Honor-and-shame portrait (stated generally) | Stated generally |
+| Deuteronomy 6:4 recited in Jewish prayer; Isaiah 45:22; Jeremiah 9:23-24 | 27-31 | Jewish-life portrait; earlier ledger (Mark 12, Berakhot 1:1); BSB | BSB text; "recited", not "daily" |
+| Readings of "uphold the law" (Genesis's witness; the Spirit, 8:4; the moral law as guide) | 27-31 | Standard readings | Stated as readings |
+
+Cut: the "Romans road" and other popular uses of 3:23; Anselm and Abelard by name (seen only in secondary summaries); "Christus Victor" claimed as the view of named fathers.
