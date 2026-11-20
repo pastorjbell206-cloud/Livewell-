@@ -6932,3 +6932,40 @@ No web search.
 | Isaiah 19:25; Galatians 4:26; Revelation 7:9 | BSB | BSB text |
 
 No modern state or border in view.
+
+## The plain notes on Psalm 88 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| One of the longest headings; two sources (sons of Korah and Heman) | 1-9 | Book page ("Who wrote the psalms"); repository deep note (historical); BSB | BSB text. "The longest" narrowed to "one of the longest" |
+| Heman among David's musicians (1 Chronicles 15:19) and among famous wise men (1 Kings 4:31); one man or two unknown; Mahalath Leannoth uncertain | 1-9 | Repository deep note; BSB | BSB text |
+| Sheol, the Pit, the grave, Abaddon ("to perish"), the land of oblivion | 1-12 | Book page ("Sheol"); repository deep note (cultural) | Site's own teaching |
+| Lasting illness and being kept apart; friends staying away | 1-9 | Repository deep note (cultural) | Site's own teaching; the trouble left unnamed, as the psalm leaves it |
+| The one lament that never turns; ends "darkness is my closest companion" (88:18) | 13-18 | Book page ("Kinds of psalm", `hard` list) | Site's own teaching |
+| The last Hebrew word of 88:18 is "darkness" (machshakh, H4285) | 13-18 | Repository word data | Script |
+| Job 3:3; Lamentations 3:6; Mark 14:50; Matthew 26:38; Isaiah 26:19; Psalm 6:5; John 11:35; Mark 15:34; Hebrews 5:7; Isaiah 53:3; Romans 8:26 | all | BSB | BSB text |
+
+Care: the fullest care line of the run, in the form of the notes on Psalms 6 and 13 (no diagnosis; do not carry it alone; a doctor, a pastor, a friend; "If you have thoughts of hurting yourself, speak to someone today"; a crisis line; the local emergency number, named only as such; the Find Help page). No phone number; no detail of self-harm. No hopeful ending added to the psalm: the Easter hope is named in 10-12 as the New Testament's, "not in Psalm 88".
+
+## The plain notes on Psalm 89 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ethan in 1 Chronicles 15:19 and 1 Kings 4:31; one or two unknown | 1-18 | Repository deep note (historical); BSB | BSB text |
+| Neighbours' stories of a storm god defeating the sea; Rahab | 1-18 | Repository deep note (cultural); earlier row (Psalm 74, search) | Site's own teaching |
+| Tabor and Hermon in the north; Hermon the tallest peak | 1-18 | Repository deep note (cultural); earlier ledger (Psalm 42) | Site's own teaching |
+| Revelation 1:5 echoes 89:27 and 89:37; Luke 1:32 | 1-18 | BSB | BSB text compared (an observation) |
+| 2 Samuel 7:14, 16 sung back; a royal grant, given not earned, planning for discipline | 19-37 | Repository deep note (cultural); BSB | BSB text |
+| Jeremiah 33:21; Acts 2:30; 2 Corinthians 1:20 | 19-37 | BSB | BSB text |
+| Many connect 38-51 with the fall of David's line to Babylon; Jehoiachin king at eighteen, taken after three months (2 Kings 24:8, 15); after the fall no son of David ruled in Jerusalem; others think of an earlier defeat | 38-52 | Repository deep note (historical, hard); book page (timeline); BSB | BSB text; stated as views. The year 597 BC not given on the page |
+| 89:52 the doxology closing Book Three; the reading of Book Four as an answer is a reading of the order | 38-52 | Book page ("Five books") | Site's own teaching |
+| Jewish reading: the promise waits for a human Messiah still to come; Christian reading: kept in Jesus (Romans 1:3; Acts 13:34); "They part over who Jesus is" | 38-52 | Book page ("The king's psalms"); BSB | Site's own teaching; stated with respect, no side beyond the site's own Christian confession |
+| Jehoiachin released and honoured (2 Kings 25:27) | 38-52 | BSB; repository deep note (hard) | BSB text |
+
+## Book Three complete (2026-11-20)
+
+Psalms 73 to 89 now have plain notes.
