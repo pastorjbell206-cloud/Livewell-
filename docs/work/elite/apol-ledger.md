@@ -1575,3 +1575,22 @@ Cut or not used: the name-equivalence harmonization (Heli and Jacob as names of 
 | Judas and Peter, two failures on one night | Note (Matthew 27, story) | Agrees |
 
 Care: the page names Judas's death and quotes Scripture's words for it, with no further detail, and its "On the site" list points to /help (the Find Help page) for a reader whom the subject touches. Cut or not used: Chase's name and date; the claim that the harmonization of a fall after hanging is the "oldest" (not checked; Papias's version through Apollinaris was itself used to harmonize).
+
+### ab. "Don't the Gospels disagree about when Jesus died?" (the-day-of-the-crucifixion)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Mark 14:12, 14:16; 15:25; 15:33-34; 15:42; Luke 22:7-8, 22:15; Matthew 26:17; John 1:29; 13:1; 18:28 (quoted from "to avoid being defiled"); 19:14 (first sentence only); 19:31; 19:33, 36; 19:42; Exodus 12:6, 12:46; 1 Corinthians 5:7 | Repo (BSB, script; Mark 14:16 checked by hand, since one reference covers two verses) | Quoted or described. John 18:28 and 19:31 are paraphrased where the BSB says "the Jews", with the subject named from the context (those who brought Jesus from Caiaphas; the authorities), as the Notes on John 13 and 19 do ("the priests") |
+| Greek of John 19:14 (*hōs hektē*, "about the sixth") and Mark 15:25 (*hōra tritē*) | Repo (`bible/ch`, TAGNT) | Verified |
+| Josephus, *Jewish War* 6.423: "upon the coming of that feast which is called the Passover, when they slay their sacrifices, from the ninth hour till the eleventh" | Whiston (Gutenberg #2850, the fourteenth run's clone), read this run | Quoted |
+| Josephus, *Antiquities* 16.163, Augustus's decree: "that they be not obliged to go before any judge on the sabbath day, nor on the day of the preparation to it, after the ninth hour" | Whiston (#2848), read this run; Note (John 19 cites *Antiquities* 16.163 for Preparation as Friday) | Quoted |
+| Lambs slaughtered on the afternoon of 14 Nisan, eaten that night (15 Nisan); the seven days of Unleavened Bread; Preparation = Friday (Mark 15:42; Didache 8:1) | Note (Mark 14, John 19) | Verified (repo) |
+| Humphreys and Waddington, *Nature* (1983): 14 Nisan a Friday in AD 30 (7 April) and AD 33 (3 April) | Note (John 18, John 19) | Verified (repo) |
+| The four solutions and their holders: Meier, *A Marginal Jew* vol. 1 (1991), Brown, *The Death of the Messiah* (1994), Benedict XVI, *Jesus of Nazareth: Holy Week* (2011) for John's date; Jeremias, *The Eucharistic Words of Jesus* (the meal's Passover marks); Carson, *The Gospel According to John* (1991), Blomberg, *The Historical Reliability of John's Gospel* (2001), Zahn, the festival reading; Jaubert, *La date de la Cène* (1957); Humphreys, *The Mystery of the Last Supper* (2011) | Note (John 13, John 19, Mark 14) | Verified (repo); every view paraphrased |
+| Ehrman, *Jesus, Interrupted* (2009): John changed the date to present Jesus as the Passover lamb | Note (John 13, John 19) | Verified (repo), paraphrased |
+| Manuscripts: a few read "third" at John 19:14 (L, Delta, a corrector of Sinaiticus); a few of each Gospel changed to match the other; the explanation later associated with Eusebius (confused numerals); the great majority and modern editions read the sixth in John | Note (John 19 text; Mark 15 text) | Verified (repo) |
+| John counting from midnight: proposed by older writers, doubted by most now; broad blocks of the day | Note (John 19) | Verified (repo) |
+| Tacitus names Pilate as the governor under whom Christ was executed | Fourteenth-run row t (Church and Brodribb) | Verified |
+| Chicago, article 13: "a lack of modern technical precision", "the topical arrangement of material" | Chicago, read this run | Quoted |
+
+Cut or not used: the Babylonian Talmud's dating of an execution "on the eve of Passover" (b. Sanhedrin 43a, in the Notes), left out because the page doesn't need it and the passage needs more framing than a dating point allows; Augustine's explanation of Mark's third hour (*Harmony* 3.13), which assigns the crucifixion to a crowd's shout and so lays the death on Jews, left out under the brief's rule on the trial.

@@ -17,6 +17,7 @@ The pages also take no side between the ways Christians confess Scripture's trut
 1. **Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?** What Luke says and what Josephus dates, the governors of Syria, Justin and Tertullian, the five proposed solutions with the weakness of each, and why the question is still open.
 2. **Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?** Both lists set side by side, Julian's charge and Jerome's count, Africanus's levirate explanation in his own words with its weakness, Mary's line and the royal line, and what both lists affirm.
 3. **Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?** The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about "Jeremiah" in Matthew 27:9, and the core the accounts share.
+4. **Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?** The Passover calendar from Exodus and Josephus, every time note in the four Gospels, the four solutions with their weaknesses, the hour, and the frame all four share.
 
 ## Words these pages use
 

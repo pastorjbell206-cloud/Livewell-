@@ -161,6 +161,13 @@
           "blurb": "The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about \"Jeremiah\" in Matthew 27:9, and the core the accounts share.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-day-of-the-crucifixion",
+          "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+          "blurb": "The Passover calendar from Exodus and Josephus, every time note in the four Gospels, the four solutions with their weaknesses, the hour, and the frame all four share.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -606,6 +613,26 @@
       "area": "contradictions",
       "slug": "how-did-judas-die",
       "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+      "live": false
+    },
+    {
+      "claim": "The Synoptic Gospels put the crucifixion on the day after the Passover meal and John on the day the lambs were killed, so they contradict each other on the day Jesus died",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-day-of-the-crucifixion",
+      "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+      "live": false
+    },
+    {
+      "claim": "John moved the day and hour of the crucifixion so that Jesus would die as the Passover lambs were slaughtered",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-day-of-the-crucifixion",
+      "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
       "live": false
     },
     {
