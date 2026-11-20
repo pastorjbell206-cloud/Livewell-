@@ -7336,3 +7336,53 @@ No web search.
 | Three calls as a temple liturgy; "those who fear the LORD" as all Israel or as Gentile worshippers | 9-18 | Repository deep note (historical) | Stated as two readings |
 | 115:4-8 repeated in 135:15-18 | 9-18 | BSB | BSB text compared |
 | 115:17 and Sheol; pointer to the book page | 9-18 | Book page ("Sheol") | Repository |
+
+## The plain notes on Psalm 116 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Echoes of Psalm 18:4 and 56:13 | 1-11 | Repository deep note (historical); BSB | BSB text |
+| "Why are you downcast, O my soul?" (42:5; 43:5) | 1-11 | BSB | BSB text |
+| 116:10-11 hard Hebrew; translations differ | 1-11 | Repository deep note (historical) | Stated plainly |
+| 2 Corinthians 4:13 quotes 116:10 in its Greek form; Romans 3:4 | 1-11 | Repository deep note; BSB | BSB text |
+| Vows paid at the temple; thanksgiving offering shared (Leviticus 7:12); cup of salvation "probably" a cup at that meal | 12-19 | Repository deep note (cultural); BSB | Stated as "probably" |
+| yaqar (H3368) "precious": costly, weighty, used of jewels; not gladness at death | 12-19 | Repository word data; deep note key word | Script; site's own teaching |
+| "Son of Your maidservant": a slave born in the household (Exodus 21:4) | 12-19 | Repository deep note (cultural) | BSB text |
+| 1 Corinthians 11:25; Matthew 26:39; Romans 6:22; Hebrews 13:15; John 11:35; 1 Thessalonians 4:13 | 12-19 | BSB | BSB text |
+
+Care line on 116:15 for the grieving (a pastor, a friend, a counsellor; Find Help). 116:1 has an em-dash in the BSB and is quoted only before it.
+
+## The plain notes on Psalm 117 (2026-11-20)
+
+No web search.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The shortest psalm: 2 verses, 28 words in the BSB | BSB | Script over all 150 psalms |
+| Call and reason, the simplest hymn shape | Repository deep note (cultural) | Site's own teaching |
+| Genesis 12:3; Romans 15:8-11; Isaiah 56:7; Revelation 7:9 | BSB | BSB text |
+
+Cut: "the middle chapter of the Bible" (not attempted).
+
+## The plain notes on Psalm 118 (2026-11-20)
+
+No web search (earlier ledger rows reused).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Closes the Hallel; three groups as in 115 | 1-14 | Book page; BSB | BSB text |
+| A king after battle, or the people after the exile | 1-14 | Repository deep note (historical) | Stated as two readings |
+| 118:14 word for word Exodus 15:2; Isaiah 12:2 | 1-14 | BSB | BSB text compared |
+| Hebrews 13:6; Romans 12:21; John 10:9; Hebrews 12:6-7 | all | BSB | BSB text |
+| Gate exchanges as in Psalms 15 and 24 | 15-21 | Repository deep note (cultural) | Site's own teaching |
+| Cornerstone: foundation stone or top stone, both readings | 22-29 | Repository deep note (cultural) | Stated as both |
+| Hosanna from 118:25, first a plea, later also praise | 22-29 | Earlier ledger (Mark 11) | Earlier ledger |
+| Mishnah (around AD 200): branches waved at 118:25 at Tabernacles | 22-29 | Earlier ledger (John 7, Mishnah Sukkah 3:9) | Earlier ledger |
+| Matthew 21:9, 42; Acts 4:5-11 (rulers, elders, scribes, the high priest's family); 1 Peter 2:7; Ephesians 2:20 | 22-29 | BSB | BSB text |
+| "The builders there are those particular leaders. It is never a charge against the Jewish people, which this site rejects." | 22-29 | Acts 2 plain note wording ("never a charge against the Jewish people, which this site rejects") | Repository |
+| Palm Sunday named as the church's name for the day | 22-29 | Common Christian usage | Plain usage |
+| "Many Christians read it of the day Jesus rose" | 22-29 | A reading, stated as such | Stated as a reading |
+
+Cut: the liturgical use of Psalm 118 at Easter as a custom (not searched); Luther and 118:17.
