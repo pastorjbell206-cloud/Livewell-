@@ -38,8 +38,6 @@ function initialSlug(): string {
   return c && c.published ? c.slug : DEFAULT_CASE.slug;
 }
 
-const wrap = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
-
 export default function TestTheCase() {
   const tool = toolById("test-the-case");
   const [slug, setSlug] = useState<string>(() => initialSlug());
@@ -49,6 +47,8 @@ export default function TestTheCase() {
   const keyFor = (stepId: string) => `${active.slug}:${stepId}`;
   const completed = useMemo(
     () => active.steps.filter((s) => done[keyFor(s.id)]).length,
+    // keyFor reads only `active`, which is listed (unchanged from before the move).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [active, done]
   );
 
