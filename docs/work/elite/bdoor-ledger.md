@@ -8120,3 +8120,231 @@ Clement (the site says "usually dated near the end of the first century").
 
 Cut: Lightfoot by name; Junia's "250 inscriptions"; the Domitilla catacomb;
 Herod's grandson and Claudius's freedman as identifications; Marcion.
+
+## 1 Corinthians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/1-corinthians/intro.json`,
+field `teaching`. 5 searches, run on 2026-11-20. Ancient and modern writers are
+paraphrased. Scripture is the BSB in the repository, checked word for word by
+`scripts/validate-bible-notes.mjs` and a strict check that matches each
+quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul with Sosthenes (1:1); nearly all accept Paul as author; greeting in his own hand (16:21) | BSB; repository `author` | Repository |
+| Sosthenes of Acts 18:17 perhaps the same man, uncertain | BSB; Acts 18 plain note | Repository |
+| 1 Clement, from the church in Rome to Corinth, near the end of the first century, tells them to take up Paul's letter about himself, Cephas and Apollos, because they had made parties even then (47) | 1 Clement 47 | Search: cts.perseids.org (Lake translation, 47.1-47.5); lexundria.com; ets.galaxie.com JETS 39.1. Paraphrased; no year given beyond "near the end of the first century" |
+| Some scholars think the letter joins more than one letter; most read it as one | Repository `author` | Stated as views |
+| Written at Ephesus (16:8); Paul two to three years there (Acts 19:10; 20:31); about AD 53 to 55 | BSB; repository `date`; apol-ledger (Wikipedia 53 to 57, Ehrman 54 to 55) | Ledger |
+| Gallio inscription at Delphi; most 51 to 52, some 50 to 51 | wrom-ledger | Ledger |
+| Year and a half in Corinth (Acts 18:11); Titus Justus (Acts 18:7) | BSB | BSB text |
+| Corinth destroyed 146 BC, refounded 44 BC as a colony; Strabo: largely freed slaves; mixed settlers (Pawlak); seat of the governor of Achaia; Lechaeum and Cenchrea | wrom-ledger; Acts 18 plain ledger rows | Ledger |
+| Erastus pavement found 1929; identification disputed; date argued | wrom-ledger (IKorinthKent 232) | Ledger |
+| Isthmian Games every two years, for Poseidon, belonged to Corinth | Isthmia | Search: en.wikipedia.org "Isthmia (sanctuary)"; ferrelljenkins.blog. The games' site in Paul's day (Corinth or Isthmia) not stated |
+| Strabo 8.6.20: more than a thousand temple slaves, courtesans, at Aphrodite's temple; describes the older city; doubted | Strabo | Search: biblicalstudies.org.uk (Baugh, citing Ferguson and the OCD); old.biblicalarchaeology.org; en.wikipedia.org "Temple of Aphrodite at Acrocorinth". Stated as "seems to have been describing" |
+| Dining rooms held few; others in the courtyard | Roman-world portrait (Murphy-O'Connor 1983) | wrom-ledger |
+| Chloe's household; earlier lost letter (5:9); Stephanas, Fortunatus, Achaicus (16:17); peri de openings (7:1, 7:25, 8:1, 12:1, 16:1, 16:12) | BSB; repository `purpose` | BSB text |
+| Painful visit (2 Corinthians 2:1); tearful letter (2:4), many think lost, others in 2 Corinthians 10 to 13; partition of 2 Corinthians debated | Scholarship | Search: zondervanacademic.com "four letters"; en.wikipedia.com "2 Corinthians"; lists.ibiblio.org corpus-paul. Stated as views, "these notes do not choose" |
+| 6:12 printed as a slogan in quotation marks in the BSB; translators judge 7:1, 8:1, 8:4 | BSB text (6:12 marks; 7:1, 8:1, 8:4 unmarked); repository `reading`, `cultural` | Repository |
+| Crucifixion kept for slaves and rebels | Roman-world portrait (Hengel) | wrom-ledger |
+| Paul's quotations sometimes follow the old Greek translation | Comparison of BSB Isaiah 29:14 with 1 Corinthians 1:19 | BSB text |
+| Old Testament quotations named: Isaiah 29:14, Jeremiah 9:24, Job 5:13, Psalm 94:11, Leviticus 18:8, Deuteronomy 17:7, Exodus 12, Genesis 2:24, Psalm 110, Psalm 8, Genesis 2:7, Isaiah 25:8, Hosea 13:14, Deuteronomy 6:4 | BSB | BSB text |
+| Map: Corinth, Ephesus, Jerusalem on the "mediterranean" frame | wmap-ledger coordinates | Ledger. Cenchrea too close to Corinth to label apart: said in `mapNote` |
+
+Cut: "to Corinthianize" and the old city's jokes (not confirmed by the search);
+1 Clement's year (AD 96) and its wording in quotation marks; Strabo's own
+words; Origen by name.
+
+## The plain notes on 1 Corinthians 1 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter form; charis for the usual greeting; shalom | 1-9 | Romans 1 plain note (same form) | Repository |
+| Ekklēsia: the citizens' assembly; the Greek Old Testament's word for Israel's assembly | 1-9 | Earlier ledger (Acts 5:11 row) | Ledger |
+| Joel 2:32; Amos 5:18; Deuteronomy 32:4; 4:7 | 1-9 | BSB | BSB text |
+| Apollos of Alexandria (Acts 18:24-28); Cephas the Aramaic name of Peter; Peter's visit unknown; no rivalry among the leaders (16:12) | 10-17 | BSB; deep note `historical`; Acts 18 plain note | Repository |
+| Teachers of rhetoric with followers | 10-17 | Deep note `cultural` | Stated generally, no names |
+| ‘I follow Christ’: a fourth party or Paul's irony | 10-17 | Commentary options | Stated as two readings |
+| Chloe's household probably slaves or workers; Crispus (Acts 18:8); Gaius (Romans 16:23) "may be" | 10-17 | Deep note; BSB | Repository |
+| Psalm 133:1; John 17:21; Matthew 28:19; 12:13; Romans 6:3; baptism views pointed to the Acts 2:37-41 note | 10-17 | BSB; repository | BSB text |
+| Crucifixion for slaves, bandits, rebels; Cicero, For Rabirius 16, paraphrased | 18-25 | Roman-world portrait | wrom-ledger |
+| Deuteronomy 21:23; skandalon; mōria | 18-25 | BSB; Greek text | Repository |
+| Isaiah 29:14 in the Hebrew (BSB) and Paul's wording close to the old Greek; Isaiah 29:13; 19:12; 33:18; 28:16; 8:14 | 18-25 | BSB; comparison | BSB text. The Greek translation's wording not quoted |
+| ‘Jews demand signs and Greeks search for wisdom’ two ways of asking for proof; contempt for Jews rejected | 18-25 | BSB context (verse 24) | Site's standing line (Romans book page) |
+| Wise, powerful, well-born = educated, influential, good families; ‘not many’ means some; Gaius, Crispus | 26-31 | Roman-world portrait; BSB | Repository |
+| Jeremiah 9:23-24 matches wise, strong, rich; 1 Samuel 2:8; Deuteronomy 7:7 | 26-31 | BSB | BSB text |
+
+Cut: Tertullian, Augustine and Aquinas by name (deep note); the Alexamenos graffito.
+
+## The plain notes on 1 Corinthians 2 (2026-11-20)
+
+One search (the source of 2:9). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Philippi, Thessalonica, Berea, Athens before Corinth (Acts 16 to 17); tentmaking; Acts 18:9 | 1-5 | BSB; Acts 18 plain note | Repository |
+| Orators performing for fans and fees; hand work looked down on | 1-5 | Deep note `cultural`; Roman-world portrait (work) | Repository. Stated generally |
+| Apodeixis a speaker's word for proof | 1-5 | Deep note `cultural` | Repository |
+| 2:1 ‘testimony’ or ‘mystery’ in the old copies; BSB ‘testimony’ | 1-5 | Repository Greek (mystērion tagged NA28, NA27, WH); BSB text | Script |
+| Exodus 4:10; Jeremiah 1:6; Jeremiah 9:23 | 1-5 | BSB | BSB text |
+| Teleios; mystery as God's plan now made known | 6-9 | Greek text; deep note `words` | Repository |
+| Rulers of this age: human, spiritual (Ephesians 6:12), both | 6-9 | Deep note `historical` | Stated as three readings |
+| 2:9 matches no Old Testament verse exactly; closest Isaiah 64:4 ("wait for Him"); echoes of Isaiah 65:17, 52:15; some in the early church thought it came from a lost book | 6-9 | BSB; search: biblehub.com commentaries on 2:9; evidenceunseen.com; intertextual.bible | Search. Origen and the Apocalypse of Elijah not named (met only in summaries) |
+| Psalm 2:2 read of Jesus's death in Acts 4:25-27 | 6-9 | BSB | BSB text |
+| Psychikos, pneumatikos | 10-16 | Greek text (G5591, G4152); deep note `words` | Repository |
+| Isaiah 40:13 Hebrew ‘Spirit’, Paul and the old Greek ‘mind’ (nous); Romans 11:34; Ezekiel 36:27 | 10-16 | BSB; repository Greek (G3563) | BSB text; script |
+| 13:12; Philippians 2:8 (before the BSB's em-dash) | 10-16 | BSB | BSB text |
+
+Cut: the mystery cults of Eleusis (deep note, not checked); Origen and Jerome by name.
+
+## The plain notes on 1 Corinthians 3 (2026-11-20)
+
+One search (the Catechism on 3:15). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sarkinos (verse 1) and sarkikos (verse 3) | 1-4 | Greek text; deep note `words` | Repository |
+| Hosea 11:1, 3; Hebrews 5:12; 1 Peter 2:2; Proverbs 3:7 | 1-4 | BSB | BSB text |
+| Diakonoi; ‘God's’ first three times in verse 9 | 5-9 | Repository Greek (3:9: theou ... theou ... theou) | Script |
+| Isaiah 5:2; 61:3; Jeremiah 1:10; Psalm 127:1 | 5-9 | BSB | BSB text |
+| Architektōn; Corinth rebuilt with temples and colonnades paid for by the wealthy; stone and wood | 10-15 | Deep note `historical`, `cultural`; Roman-world portrait | Repository |
+| Isaiah 28:16; Malachi 3:2; Zechariah 13:9; 1 Chronicles 29:2 | 10-15 | BSB | BSB text |
+| Catholic teaching on purgatory: a final purification of those who die in God's grace and friendship but not fully purified; the Catechism speaks of a cleansing fire and refers to 1 Corinthians 3:15 and 1 Peter 1:7 (CCC 1030-1031); prayer for the dead | 10-15 | Catechism of the Catholic Church | Search: vatican.va ENG0015/__P2N.HTM; catholicnewsagency.com; usccb.org flipbook. Paraphrased |
+| Protestant reading: the builders' work tested, loss of reward not salvation; no purgatory | 10-15 | Deep note `hard` | Repository; stated as a view |
+| 3:17: believers who harm the church or outsiders | 10-15 | Deep note `hard` | Stated as a reading question |
+| Plural ‘you’; naos the inner shrine; temples of Apollo, Aphrodite, Asclepius | 16-17 | Greek text; deep note `cultural`; repository `setting` | Repository |
+| Exodus 29:45; Leviticus 26:12; Ezekiel 37:27; 1 Kings 8:27; John 2:19 | 16-17 | BSB | BSB text |
+| Job 5:13 spoken by Eliphaz (Job 4:1); Job 42:7 | 18-23 | BSB | BSB text |
+| Psalm 94:11 ‘man’ in the BSB, ‘the wise’ in Paul | 18-23 | BSB | BSB text. No claim about Paul's source text |
+| Romans 8:38; 8:6 | 18-23 | BSB | BSB text |
+
+Cut: milk and solid food as a common figure among ancient teachers (not checked); Solomon's temple materials (replaced by 1 Chronicles 29:2).
+
+## The plain notes on 1 Corinthians 4 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Oikonomos a household manager, often a trusted slave or freedman; hypēretēs an assistant; anakrinō | 1-5 | Deep note `cultural`, `words`; Greek text | Repository |
+| 1 Samuel 16:7; Jeremiah 17:10; Ecclesiastes 12:14; Daniel 2:22; Matthew 7:1; 5:12 | 1-5 | BSB | BSB text |
+| ‘Beyond what is written’: the Scriptures quoted, or a saying the Corinthians knew | 6-7 | Commentary options | Stated as two readings |
+| Physioō six times in 1 Corinthians (4:6, 18, 19; 5:2; 8:1; 13:4), once more in the New Testament (Colossians 2:18) | 6-7 | Repository Greek (G5448) | Script |
+| Deuteronomy 8:17-18; 1 Chronicles 29:14 | 6-7 | BSB | BSB text |
+| Triumph with captives at the end, or the arena with the condemned last | 8-13 | Deep note `cultural` | Stated as two pictures readers see |
+| Hand work looked down on; teachers paid by patrons or fees; Acts 18:3; 20:34 | 8-13 | Roman-world portrait (work); BSB | wrom-ledger; BSB text |
+| Peripsēma and perikatharma: scrapings, sweepings, used of people thought worthless | 8-13 | Deep note `cultural`, `words` | Repository. The scapegoat sense not used |
+| Psalm 44:22 (Romans 8:36); Lamentations 3:45; Isaiah 53:3; Luke 6:28; Matthew 8:20 | 8-13 | BSB | BSB text |
+| Paidagōgos a slave who took a boy to school and watched his conduct | 14-21 | Deep note `cultural` | Repository |
+| Timothy: 2 Corinthians 1:19; Acts 16:1; Acts 19:22 | 14-21 | BSB | BSB text |
+| Proverbs 3:12; Deuteronomy 8:5; Proverbs 13:24; Psalm 2:9; 11:1 | 14-21 | BSB | BSB text |
+| Care line for readers with an absent or harmful father (Psalm 27:10; Find Help) | 14-21 | Romans 8 plain note form | Repository |
+
+## The plain notes on 1 Corinthians 5 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘His father's wife’ almost certainly the stepmother; the woman not addressed, so many think not a member | 1-5 | Deep note `cultural` | Repository; stated as "many readers" |
+| Why the church did nothing: a patron few would challenge, or bodily conduct thought not to matter | 1-5 | Deep note `cultural` | Stated as two readings |
+| Leviticus 18:8, 24; Deuteronomy 22:30; 17:7 | 1-5 | BSB | BSB text |
+| ‘Hand over to Satan’: exclusion from the fellowship (most readers), or bodily suffering as well (11:30); purpose ‘that his spirit may be saved’ | 1-5 | Deep note `hard`, `words` | Stated as readings |
+| 1 Timothy 1:20; 2 Corinthians 2:7; the identification with 2 Corinthians 2:5-11 uncertain | 1-5 | BSB; deep note `historical` | BSB text |
+| Church practice of discipline (Communion withheld; elders; the congregation; pastoral care); reporting abuse and crimes to the police (Romans 13:4) | 1-5 | Matthew 18 plain note, word for word or nearly | Repository |
+| Care line for those harmed by discipline or shunning (Psalm 34:18; Find Help) | 1-5 | Romans 8 plain note form | Repository |
+| Leaven a lump of old fermented dough; Passover clearing of leaven | 6-8 | Deep note `cultural`, `words`; Exodus 12:15 | Repository; BSB text |
+| Exodus 12:13, 15; John 1:29; 1 Peter 1:19; Matthew 13:33; Mark 8:15; all four Gospels place the death at Passover | 6-8 | BSB; deep note `words` | BSB text |
+| Earlier letter lost (verse 9), misread as withdrawal from the whole city | 9-13 | Deep note `historical` | Repository |
+| Eating together a sign of acceptance; the shared meal with the Lord's Supper | 9-13 | Deep note `cultural` | Repository |
+| Deuteronomy 17:7; 13:5; 19:19; 22:21; 24:7 (refrain); John 17:15; Matthew 9:12; 2 Thessalonians 3:15 | 9-13 | BSB | BSB text |
+
+Cut: any claim about Roman law on stepmothers beyond Paul's own words (not checked).
+
+## The plain notes on 1 Corinthians 6 (2026-11-20)
+
+Four searches (Roman courts and status; the BSB wording at 6:9; arsenokoitai and Leviticus; prostitution in the Roman world). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Civil cases under Roman law in a colony; wealth and rank carried large advantages; hard for a person of low standing to sue a superior and win; litigation a contest for honour; the litigants most likely of some means | 1-8 | Scholarship on Roman courts and 1 Corinthians 6 | Search: heurist.huma-num.fr (Judaism and Rome, citing Garnsey 1970); biblicalelearning.org (Meadors); resolve.cambridge.org (NTS, "Rich and poor in the courts of Corinth"); readingacts.com. No scholar named on the page |
+| Jewish communities among Gentiles settled disputes among themselves | 1-8 | Deep note `historical` | Repository; stated generally |
+| Daniel 7:22; Deuteronomy 1:16; Proverbs 25:8; Matthew 5:25, 40 | 1-8 | BSB | BSB text |
+| Not a rule against reporting crime; abuse and crimes to the police (Romans 13:4); Paul's appeal (Acts 25:11) and citizenship (Acts 22:25); mediation | 1-8 | Matthew 18 plain note line; BSB | Repository; BSB text |
+| ‘Wicked’ (verse 9) and ‘unrighteous’ (verse 1) the same word, adikoi | 9-11 | Repository Greek (G0094 at 6:1 and 6:9) | Script |
+| Vice lists a common form | 9-11 | Romans 1 plain note | Repository |
+| Malakoi ‘soft ones’, used of fine clothing (Matthew 11:8; also Luke 7:25); of men thought unmanly, often the passive partner | 9-11 | Repository Greek (G3120 at Matthew 11:8, Luke 7:25, 1 Corinthians 6:9); deep note `hard` | Script; repository |
+| Arsenokoitai only here and 1 Timothy 1:10; no clear earlier use known; ‘male’ and ‘bed’; many scholars think it formed from the Greek of Leviticus 18:22 and 20:13 | 9-11 | Repository Greek (G0733); scholarship | Search: bibleodyssey.org "Illicit Sex: Word Study"; baptistnews.com; tidsskrift.dk (Instone-Brewer, HIPHIL Novum 2020). Stated as "many scholars think" |
+| BSB ‘men who submit to or perform homosexual acts’ renders the two words together; ‘submit to’ and ‘perform’ for passive and active | 9-11 | BSB text | Search: biblestudytools.com BSB 6:9; tips.translation.bible. The BSB footnote's wording was not found and is not quoted |
+| Historic and majority reading; the exploitative-practices reading; the reply; no side | 9-11 | Romans 1 plain note form; deep note `hard` | Repository |
+| Care line for gay readers and those who love them | 9-11 | Romans 1 plain note, word for word | Repository |
+| Leviticus 18:22; 20:13; 19:35-36; Ezekiel 36:25; Isaiah 1:18; Titus 3:5 | 9-11 | BSB | BSB text |
+| 6:12-13 printed in quotation marks in the BSB; a translator's judgment; slogan perhaps a twist of Paul's teaching on freedom; the body a shell | 12-14 | BSB text; deep note `cultural` | Repository |
+| Genesis 2:7; Psalm 139:14; Mark 7:18-21; Galatians 5:13 | 12-14 | BSB | BSB text |
+| Prostitution legal and widespread in the Roman world; not counted a disgrace for men in moderation; many prostitutes slaves put to it by owners | 15-20 | Popular and reference histories | Search: historyhit.com; Wikipedia "Prostitution in ancient Rome" (mirror); brewminate.com. Stated generally; Caligula's tax not used |
+| Strabo's thousand temple prostitutes: the older city, doubted | 15-20 | Book page ledger | Ledger |
+| Bought at a price: the slave market | 15-20 | Deep note `cultural`, `words` | Repository |
+| 6:19 ‘your’ plural, ‘body’ singular | 15-20 | Repository Greek (to sōma hymōn) | Script |
+| Genesis 2:24; 39:12; Proverbs 5:5; Exodus 15:13; Isaiah 43:1; 1 Peter 1:19 | 15-20 | BSB | BSB text |
+| Trafficking care line | 15-20 | Genesis 37 plain note, word for word with one sentence added | Repository |
+
+Cut: banquets ending in prostitution (deep note; not confirmed); Caligula's tax.
+
+## The plain notes on 1 Corinthians 7 (2026-11-20)
+
+Four searches (7:21; the Pauline privilege; Westminster Confession 24.6; the Augustan marriage laws). Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 unmarked in the BSB; many take it as a quotation of the Corinthians' letter; others as Paul's view | 1-7 | BSB text; deep note `story` | Stated as two readings |
+| Mutual pairs in 7:2-4 unusual in ancient writing on marriage; men's use of prostitutes not counted a disgrace | 1-7 | Deep note `literary`; chapter 6 search (prostitution) | Repository; ledger. Stated as "rarely" |
+| ‘Mutual consent’ (verse 5); 13:4-5 | 1-7 | BSB | BSB text |
+| Consent within marriage; coercion is abuse; Genesis 16 safety lines word for word; Find Help | 1-7 | Genesis 16 plain note | Repository |
+| Charisma read two ways | 1-7 | Deep note `words` | Repository |
+| Genesis 2:18, 24; Proverbs 5:18; Ecclesiastes 9:9; Song of Solomon 2:16; Exodus 21:10 | 1-7 | BSB | BSB text |
+| Augustus's laws of 18 BC and AD 9: penalties on the unmarried, rewards for children; widows and divorced women expected to remarry within a set time | 8-9 | Lex Julia de maritandis ordinibus; Lex Papia Poppaea | Search: en.wikipedia.org "Lex Papia Poppaea"; penelope.uchicago.edu (Smith's dictionary); csun.edu handout; scriptaclassica.org (Geiger). The periods (one year, six months) not stated |
+| Whether Paul had been married not known | 8-9 | BSB silence | Stated as unknown |
+| Genesis 1:28; Isaiah 56:5; Jeremiah 16:2; Matthew 19:11-12; Psalm 68:5 | 8-9 | BSB | BSB text |
+| Word to single readers | 8-9 | Matthew 19 plain note, adapted | Repository |
+| Roman divorce by either spouse, by leaving | 10-16 | Deep note `cultural`; Mark 10 plain note (Roman wives could divorce) | Repository |
+| Douloō in 7:15 | 10-16 | Repository Greek (G1402) | Script |
+| Sanctified spouse and holy children not saved without faith | 10-16 | Deep note `doctrines` | Repository |
+| 7:16 read as hope or as release | 10-16 | Commentary options | Stated as two readings |
+| Catholic, Orthodox, Protestant views; some scholars: separation without remarriage; many count abuse | 10-16 | Mark 10 and Matthew 19 plain notes, word for word or nearly | Repository |
+| Pauline privilege (canon 1143): one of two unbaptized spouses baptized, the other departs, the first marriage can be dissolved and the believer marry again | 10-16 | Code of Canon Law | Search: en.wikipedia.org "Pauline privilege"; canonlawmadeeasy.com; encyclopedia.com. Paraphrased |
+| Westminster Confession (1646) 24.6: adultery and wilful desertion that cannot be remedied the only grounds that dissolve the bond | 10-16 | Westminster Confession | Search: sermonaudio PDF of the 1646 text; monergism.com; pcahistory.org (PCA 1992 report). Paraphrased |
+| Genesis 2:24; Mark 10:9, 11-12; Matthew 19:9; Deuteronomy 24:1-4; Malachi 2:14; Ezra 10:3 | 10-16 | BSB | BSB text |
+| Slavery everywhere; Scheidel's estimate of at least a tenth; frequent manumission | 17-24 | Roman-world portrait | wrom-ledger. Scheidel not named |
+| 7:21 read two ways (‘take the opportunity’ or ‘make use of your condition’); scholars long divided | 17-24 | Repository Greek (mallon chrēsai); translation notes | Search: biblegateway.com Theology of Work commentary; tips.translation.bible; old-tips.translation.bible. No other translation quoted |
+| Genesis 17:10; Galatians 5:6; 6:15; Exodus 20:2; Leviticus 25:42; Exodus 21:16; Deuteronomy 23:15; 1 Timothy 1:10; Philemon 1:16 | 17-24 | BSB | BSB text |
+| Care line for anyone held or forced to work | 17-24 | Genesis 37 plain note | Repository |
+| ‘Present crisis’: a local hardship (such as food shortage), the pressures of the whole time before Christ's return, or the end expected soon | 25-35 | Deep note `historical`; commentary options | Stated as views; no famine claimed as fact |
+| 1 John 2:17; 1 Peter 4:7; Romans 13:11; Mark 13:17; Luke 10:41-42 | 25-35 | BSB | BSB text |
+| 7:36-38 three readings (engaged man; father, King James Version; celibate couple); the verb ‘give in marriage’ | 36-40 | Deep note `hard` | Repository |
+| Romans 7:2; Psalm 68:5; Ruth; 1 Timothy 5:14 | 36-40 | BSB | BSB text |
+
+Cut: girls' age at marriage (deep note); surgery to hide circumcision (deep note; not checked); grain shortages named as fact; the "three years" of Suetonius.
+
+## The plain notes on 1 Corinthians 8 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Temples of Apollo, Aphrodite, Asclepius; meat from sacrifices eaten at temple feasts and sold; dining rooms at the Asclepius sanctuary; the Sarapis invitation papyrus (P.Oxy. 110) | 1-3 | Roman-world portrait | wrom-ledger (Fotopoulos 2003; P.Oxy. 110) |
+| Temple meals at birthdays, weddings, guilds, festivals; refusing cost standing; meat rare for the poor except at festivals | 1-3 | Deep note `historical`; Roman-world portrait (meat for festivals and the well off) | Repository |
+| 8:1 unmarked in the BSB; many translators take it as the Corinthians' words | 1-3 | BSB text; deep note `cultural` | Repository |
+| Physioō; oikodomeō | 1-3 | Greek text; deep note `words` | Repository |
+| Hosea 13:4; Exodus 2:25; Galatians 4:9; Jeremiah 9:24 | 1-3 | BSB | BSB text |
+| Emperors honoured as divine in the east; kyrios a ruler's title | 4-6 | Roman-world portrait | wrom-ledger |
+| The Shema (Deuteronomy 6:4), recited; ‘Lord’ and ‘God’ in its Greek form; Mark 12:29 | 4-6 | BSB; Romans notes ("recited") | Repository |
+| Paul writing about twenty to twenty-five years after the crucifixion | 4-6 | explorer-ledger (the site's dating) | Ledger |
+| Bauckham, Jesus and the God of Israel (2008), reads 8:6 as placing Jesus inside the Shema; some read it more modestly | 4-6 | apol-ledger (search) | Ledger |
+| The Nicene Creed's pairing of one God, the Father, and one Lord, Jesus Christ, through whom all things were made | 4-6 | The creed, paraphrased | Not quoted |
+| Psalm 96:5; Isaiah 44:6; Jeremiah 10:5; Deuteronomy 10:17; Psalm 33:6; Proverbs 3:19; John 1:1, 3 | 4-6 | BSB | BSB text |
+| The ‘weak’ recent converts; conscience (syneidēsis) | 7-13 | Deep note `cultural`, `words` | Repository |
+| Leviticus 19:14; Numbers 25:2; Exodus 34:15; Daniel 1:8; Matthew 18:6; Romans 14:21; Galatians 2:3-5 | 7-13 | BSB | BSB text |
+
+Also in this commit: 3:10-15 `happening`, a colon before a quotation that starts in lower case (no change of words).

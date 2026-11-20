@@ -6202,3 +6202,151 @@ Lighthouse not run (no code changed).
 
 Romans is complete. The next book in the plain-words layer is for the lead
 to choose.
+
+## 1 Corinthians: the book page and chapters 1 to 8 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". Romans
+was finished; 1 Corinthians is next, done exactly as Romans was.
+
+### The book page (`/study/bible/1-corinthians`, same address)
+
+Data only, in `client/public/bible/notes/1-corinthians/intro.json`, field `teaching`
+(appended; the rest of the file untouched). Eleven headed parts: 1 Corinthians in
+a minute; Who wrote it (Paul with Sosthenes, 1:1; his own hand, 16:21; 1 Clement
+near the end of the first century; one letter or several, as views); When and
+where (Ephesus, "until Pentecost", 16:8; Gallio at Delphi, most 51 to 52, some 50
+to 51; about AD 53 to 55); Corinth: the city (146 BC, 44 BC colony, Strabo's
+freedmen and Pawlak's mixed settlers, two harbours, Erastus stone with the
+identification disputed, the Isthmian Games, the thousand temple prostitutes as
+Strabo's claim about the older city, doubted); The church in Corinth (1:26, "not
+many, but some", house churches and patrons, status lines); How the letter came
+about (Chloe's people, the letter of 7:1, the lost letter of 5:9, the painful
+visit and tearful letter in broad strokes, no side); How it is built (the two
+halves, "Now about", the outline, slogans as translators' judgments); The big
+themes (cross, body, love, resurrection); 1 Corinthians and the Old Testament;
+What the letter is not (how readers decide what was for Corinth and what is for
+every church, and that they decide differently); How to read 1 Corinthians. Then
+12 hard passages (1:17, 3:15, 5:5, 6:9, 7:10-16, 7:21, 8:4-6, 11:2-16, 11:27-30,
+14:34-35, 15:29, 16:22), 14 key words, a timeline of 12 entries, one map on the
+"mediterranean" frame (Corinth, Ephesus, Jerusalem; Cenchrea too close to Corinth
+to label apart, said in `mapNote` with Macedonia), and seven Go deeper links.
+
+Words: 4,075 in the eleven parts.
+
+**Code.** None in the app. `client/src/pages/study-bible/teaching.test.tsx`:
+1 Corinthians added to the list of books with a teaching page, and one line
+letting its map use the "mediterranean" frame. Nothing else.
+
+### 1 Corinthians 1 to 8 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| 1 | 4 (thanks for a troubled church; ‘I follow Paul’; the message of the cross; God chose the lowly) | 2,987 |
+| 2 | 3 (Christ crucified; God's hidden wisdom; taught by the Spirit, the mind of Christ) | 1,980 |
+| 3 | 5 (infants in Christ; planting and watering; the foundation and the fire; God's temple; all things are yours) | 2,861 |
+| 4 | 4 (servants and stewards; ‘What do you have that you did not receive?’; a spectacle; a father's warning) | 2,521 |
+| 5 | 3 (the man and his father's wife, ‘hand this man over to Satan’; the old leaven and the Passover lamb; not the world but the church) | 2,374 |
+| 6 | 4 (lawsuits; ‘that is what some of you were’; ‘Everything is permissible for me’; the body a temple of the Spirit) | 3,351 |
+| 7 | 6 (husband and wife; the unmarried and widows; divorce and mixed marriages; remain as called, circumcision and slavery; the time is short; the engaged couple and widows) | 5,427 |
+| 8 | 3 (knowledge and love; one God and one Lord; the weak conscience) | 2,243 |
+| Total | 32 | 23,744 |
+
+Passages without a `hard` part: 1:1-9, 1:26-31, 2:1-5, 3:1-4, 3:5-9, 3:16-17,
+3:18-23, 4:6-7, 4:8-13, 5:6-8, 6:12-14, 7:36-40, 8:1-3. Every Old Testament
+quotation is named by book and verse and read in its own setting; where Paul's
+wording follows the old Greek and the BSB's Old Testament follows the Hebrew
+(Isaiah 29:14 at 1:19, Isaiah 40:13 at 2:16, Psalm 94:11 at 3:20), the note says
+so, and 2:9 is stated as a quotation no single verse matches. Each chapter note
+gained only `"plain": true`. One commit per chapter, with its ledger rows.
+
+### Sources
+
+All in `bdoor-ledger.md` under "1 Corinthians's book page" and "The plain notes on
+1 Corinthians 1" to "8". 15 web searches: book page 5 (Strabo 8.6.20; 1 Clement
+47; the Corinthian correspondence; the Isthmian Games; "to Corinthianize", not
+confirmed and cut); chapter 2: 1 (the source of 2:9); chapter 3: 1 (the Catechism
+on 3:15); chapter 6: 4 (Roman courts and status; the BSB at 6:9; arsenokoitai and
+Leviticus; prostitution); chapter 7: 4 (7:21; the Pauline privilege; Westminster
+24.6; the Augustan marriage laws). Reused: wrom-ledger and the Roman-world
+portrait, wmap-ledger, apol-ledger (Bauckham 2008 on 8:6; dating), the Acts 18,
+Mark 10, Matthew 18 and 19, Genesis 16 and 37, Romans 1, 8, 13 and 14 plain
+notes. Lexicon checks over the repository's Greek (physioō, adikoi, malakoi,
+arsenokoitai, douloō, the 2:1 variant, sōma hymōn).
+
+### Cut or narrowed
+
+Cut: "to Corinthianize" and the old city's jokes; 1 Clement's year and words in
+quotation marks; Origen, Jerome and the Apocalypse of Elijah by name (met only in
+summaries); Tertullian, Augustine, Aquinas (deep note on chapter 1); the
+Alexamenos graffito; the mystery cults of Eleusis; milk and solid food as a
+common figure among teachers; Roman law on stepmothers; banquets ending with
+prostitutes; Caligula's tax; girls' age at marriage; surgery to hide
+circumcision; grain shortages named as fact for "the present crisis".
+Narrowed: Strabo "seems to have been describing" the older city; the tearful
+letter "many scholars think"; arsenokoitai "many scholars think" from Leviticus,
+"no clear use before Paul is known"; the BSB footnote at 6:9 not quoted (not
+found); Scheidel's estimate unnamed; the Nicene Creed paraphrased.
+
+### Contested matters, and how they are stated
+
+Authorship of the whole (one letter or several); the Corinthian correspondence
+and 2 Corinthians' unity; ‘I follow Christ’ (party or irony); baptism (pointer
+to Acts 2:37-41); the rulers of this age (human, spiritual, both); 2:9's source;
+3:15 (Catholic purgatory in the Catechism's terms, Protestant testing of the
+builders' work; no side); 3:17; ‘beyond what is written’; 5:5 (exclusion, or
+bodily suffering too; church discipline practices; no side); 6:1-8 (never suing,
+or a last step; mediation); 6:9-10 (historic and majority reading, the
+exploitative-practices reading, the reply; no side); 7:1 (slogan or Paul's
+view); charisma in 7:7; 7:10-16 (no remarriage while both live, with the
+Pauline privilege; divorce without remarriage; adultery and desertion, with
+Westminster 24.6 and the Orthodox practice; wider pastoral grounds; no side,
+since this waits on James); 7:16 (hope or release); 7:21 (two translations, no
+side); "the present crisis" (three views); 7:36-38 (three readings); 8:6 stated
+as the confessional floor, with Bauckham's reading and "some read it more
+modestly"; where conscience ends and the gospel begins. Each says these notes do
+not choose, except 8:6, confessed.
+
+### Care lines
+
+1:18-25 (contempt for Jews rejected); 4:14-21 (absent or harmful father, the
+Romans 8 form; the "rod" no licence to hurt anyone); 5:1-5 (discipline never to
+silence a victim or protect an abuser; crimes to the police, Romans 13:4;
+harmed by discipline or shunning: Psalm 34:18, Find Help); 5:9-13; 6:1-8 (not a
+rule against reporting a crime); 6:9-11 (the Romans 1 care line word for word);
+6:15-20 (the Genesis 37 trafficking line); 7:1-7 (consent within marriage;
+coercion is abuse; the Genesis 16 safety lines word for word); 7:8-9 (single
+readers; widows); 7:10-16 (Genesis 16 safety lines; Find Help; the divorce
+Honest Answer); 7:17-24 (no one told to accept bondage; anyone held or forced:
+Find Help). No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check (0 problems) and
+`validate-bible-notes.mjs 1-corinthians`, exit 0; every passage printed field
+by field, all 32 under their right headings. After merging the latest
+`claude/todo-implementation-hhp4bm`, one at a time: all 38 content-gate commands
+of ci.yml, exit 0 each (validate-bible-notes: 341 chapters in plain words;
+search index 741 entries up to date; passage index 623 files match;
+verify-sources 22 texts intact). `pnpm check`: clean. `pnpm test`: 148 files
+passed, 7 skipped; 1,729 tests passed, 73 skipped. ESLint on the changed test:
+clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,049 pages),
+`pnpm run audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (no listener on 4600 to
+4699 before or after) and checked with Playwright (deviceScaleFactor 1;
+/api/trpc, /api/track and /_vercel stubbed). Book page at 390 and 1440: 11 of 11
+parts as headings, 12 of 12 timeline entries, one map on the "mediterranean"
+frame, the map note shown, no place name over another name, a mark or the
+frame's region names, no sideways scroll, no console or page errors. Chapters 1
+to 8 at 390: every passage heading, its part headings in order and the first 60
+characters under each matched the data (1: 18 fields; 2: 14; 3: 21; 4: 18;
+5: 14; 6: 19; 7: 29; 8: 14), no sideways scroll, no errors. Screenshots looked
+at: `/home/user/elite-shots/bdoor/cor-book-*`, `cor-map-*`, `cor6-390-*`,
+`cor7-390-*`. Lighthouse (ci.yml command, three runs, on
+`/study/bible/1-corinthians`, after prerender): performance 92, accessibility
+100, best practices 96, SEO 100, CLS 0.000. Server stopped by PID, dist/
+deleted, no lh-*.json.
+
+### Next
+
+1 Corinthians 9 in plain words, then 10 to 16.
