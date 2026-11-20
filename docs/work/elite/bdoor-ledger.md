@@ -12709,3 +12709,30 @@ Cut before publishing: that ‘refreshed’ is built on the word for soul (the l
 | Matthew 4:2 (a link of theme); Hebrews 12:29 | 12-18 | BSB; exodus/24.json `christ` | BSB text |
 
 Cut before publishing: a single-quoted ‘we will hear’ (not the BSB's wording; now said without quotation marks). Also cut: ‘the writer seems to look down, not up’ (no source).
+
+## The plain notes on Exodus 25 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A building plan first; 25 to 31, 32 to 34, 35 to 40; the goal of the exodus is God dwelling among them | 1-9 | exodus/25.json `story` | Repository |
+| Mishkan as dwelling place | 1-9 | exodus/25.json `words` (H4908) | Repository |
+| Murex dye from Phoenicia; scarlet from an insect; acacia; tachash uncertain | 1-9 | exodus/25.json `cultural` | Repository |
+| Tavnit; what Moses saw not said | 1-9 | exodus/25.json `words` (H8403) | Repository |
+| Center outward, the order of holiness | 1-9 | exodus/25.json `literary` | Repository |
+| No allegory of every board and peg | 1-9 | The brief's rule | Repository |
+| Why a tent: 1 Kings 8:27; Acts 7:48; no image; real presence and accommodation fit together | 1-9 | exodus/25.json `hard` | Repository |
+| Hebrews 8:5 (a shadow is real); John 1:14 and the tent verb; 2 Corinthians 9:7 | 1-9 | BSB; hebrews/plain/8.json (1-6); exodus/25.json `christ` | BSB text |
+| The cubit and the ark's size; the poles | 10-22 | exodus/25.json `cultural` | Repository |
+| Kapporet and kipper; hilasterion and Romans 3:25 | 10-22 | exodus/25.json `words` (H3727), `christ` | Repository |
+| Ahiram's throne with winged sphinxes; Tutankhamun's gilded shrines on poles; no figure on the throne; the footstool | 10-22 | exodus/25.json `historical` | Repository |
+| The ark lost most likely in 587 or 586 BC; Jeremiah 3:16 | 10-22 | exodus/25.json `historical` | Repository |
+| Psalm 99:1; 1 Chronicles 28:2; Hebrews 9:4-5 | 10-22 | BSB | BSB text |
+| Twelve loaves renewed every Sabbath, eaten by the priests; meals before statues in other temples | 23-30 | exodus/25.json `cultural`; leviticus/24.json `cultural` | Repository |
+| Leviticus 24:8; John 6:35 (a link of theme) | 23-30 | BSB; exodus/25.json `christ` | BSB text |
+| The almond-tree lampstand; a talent about 75 pounds, varying | 31-40 | exodus/25.json `cultural` | Repository |
+| Echoes of Eden: gold and onyx, cherubim, a tree-shaped lamp | 31-40 | exodus/25.json `literary` | Repository |
+| Genesis 2:12; 3:24; Revelation 1:20; John 8:12 (a link of theme) | 31-40 | BSB; exodus/25.json `christ` | BSB text |
+
+Cut before publishing: ‘the tent had no windows’ (no source). Narrowed: ‘one loaf for each tribe’ and ‘the bread stood for the twelve tribes’ became twelve loaves, the number of the tribes, set out on behalf of the people (Leviticus 24:8 says no more).
