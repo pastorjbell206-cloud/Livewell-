@@ -3463,6 +3463,28 @@
     "identity-and-worth",
     "despair-and-hope"
    ]
+  },
+  "work-life-balance": {
+   "phrases": [
+    "never home for dinner",
+    "miss my kids games",
+    "married to my job",
+    "work comes before my family",
+    "no time for my family",
+    "kids barely see me",
+    "wife says i work too much",
+    "husband is always at the office",
+    "laptop on vacation",
+    "checking work email at home",
+    "cant switch off after work",
+    "work takes all my time"
+   ],
+   "not": [],
+   "related": [
+    "work-and-burnout",
+    "rest-and-sabbath",
+    "marriage-communication"
+   ]
   }
  }
 }
