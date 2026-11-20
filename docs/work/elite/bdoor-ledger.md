@@ -11423,3 +11423,25 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Map: Ephesus and Laodicea only, at the points used on the Pauline maps; the other five cities and Patmos described in words, not drawn | Map | ephesians/intro.json `teaching.map`; revelation/2.json, 3.json `historical`; revelation/1.json `historical` | Repository; no new points |
 
 Cut before publishing: ‘widely read in the West from early on’; ‘echoes ... in nearly every verse’ (now ‘several hundred allusions’, the guide's figure); ‘most who hold it today are partial preterists’; a paragraph naming the question each reading faces (the guide gives no such question for the preterist reading, so all four were cut to keep the readings even).
+
+## The plain notes on Revelation 1 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Apokalupsis as unveiling; not a riddle; reading aloud; three kinds of writing | 1-3 | revelation/1.json `words` (G0602), `cultural`, `literary` | Repository |
+| ‘Soon’ and ‘near’: preterist, futurist (2 Peter 3:8), idealist readings; all agree the book was urgent for its first readers | 1-3 | revelation/1.json `hard` | Repository, no side |
+| Amos 3:7; Daniel 2:22, 28 | 1-3 | BSB | BSB text |
+| ‘Who is and was and is to come’ reworks Exodus 3:14; three titles; Exodus 19:6; Daniel 7:13 and Zechariah 12:10 combined in verse 7 | 4-8 | revelation/1.json `literary`, `christ`, `doctrines` | Repository |
+| Seven Spirits: the Holy Spirit in fullness (Isaiah 11:2; Zechariah 4) or seven angelic beings; no side | 4-8 | revelation/1.json `doctrines` (trinity); bible/guides/reading-apocalyptic.json | Repository, no side |
+| Exodus 3:14; Exodus 19:6; Daniel 7:13; Zechariah 12:10; Isaiah 44:6 | 4-8 | BSB | BSB text |
+| Patmos southwest of Ephesus; exile as a Roman punishment; tradition of release; the Lord's day; kuriakos used of the emperor's things; the cities in a loop on a road | 9-11 | revelation/1.json `historical`, `cultural`, `words` (G2960) | Repository |
+| Suffering from faithfulness, not punishment | 9-11 | revelation/1.json `historical`; instruction for this run | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 9-11 | acts/plain/14.json (21-28 `hard`) | Word for word |
+| Ezekiel 11:1; Exodus 19:16 | 9-11 | BSB | BSB text |
+| Daniel 7 and 10; Ancient of Days' white hair given to the Son of Man; robe and sash of priest or king; Ezekiel 43:2; lampstands from tabernacle and Zechariah 4 | 12-16 | revelation/1.json `cultural`, `christ` | Repository |
+| Daniel 7:9, 13; Daniel 10:6; Ezekiel 43:2; Exodus 25:31; Zechariah 4:2 | 12-16 | BSB | BSB text |
+| ‘Do not be afraid’ the first word; the First and the Last (Isaiah 44:6); keys of Death and Hades; verse 19 as an outline, readers differ | 17-20 | revelation/1.json `christ`, `literary` | Repository |
+| The angels of the churches read four ways (messenger, bishop, guardian angel, the church itself) | 17-20 | lexicon G0032 (Rev 1:20 entry) | Repository, no side |
+| Isaiah 44:6; Ezekiel 1:28; Daniel 10:9-10; 1 Samuel 2:6 | 17-20 | BSB | BSB text |
