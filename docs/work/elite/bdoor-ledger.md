@@ -11626,3 +11626,25 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Jeremiah 9:15; Amos 5:7; Exodus 10:22 | 10-13 | BSB | BSB text |
 
 Cut before publishing: a line reading ‘those who dwell on the earth’ as a fixed term for those who refuse God (not supported in the repository's notes on this chapter); no star, mountain or plague tied to any event of our day.
+
+## The plain notes on Revelation 9 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first two woes strike people and come from below; the sealed of chapter 7 exempt | 1-6 | revelation/9.json `story` | Repository |
+| Abussos as a prison of spirits (Luke 8:31) and the deep of Genesis 1:2; ‘given’ and ‘told’: evil neither free nor final | 1-6 | revelation/9.json `words` (G0012), `cultural`, `doctrines` | Repository |
+| Locusts barred from plants; a locust's life of several months and the five months; numbers as scale and limit | 1-6 | revelation/9.json `cultural`, `historical` | Repository |
+| 9:6 read as a picture of misery, not a permission; care line ‘If you have thoughts of hurting yourself ...’ | 1-6 | philippians/plain/4.json (4-9 `hard`) | Word for word |
+| Exodus 10:14-15; Joel 2:10; Genesis 1:2; Revelation 21:4 | 1-6 | BSB | BSB text |
+| ‘Like’ as the language of vision; Abaddon and Apollyon; Apollo and the locust uncertain; handing over (Romans 1:24-28) | 7-12 | revelation/9.json `literary`, `cultural`, `words` (G0623), `hard` | Repository |
+| Joel 1:6; 2:4-5; Job 26:6; Proverbs 15:11 | 7-12 | BSB | BSB text |
+| The voice from the golden altar; the Euphrates (Genesis 15:18; Isaiah 8:7); Rome's eastern frontier; Parthian archers | 13-19 | revelation/9.json `historical` | Repository |
+| The hard question of the plagues; the four ways as the deep note gives them; no army or war of our day named | 13-19 | revelation/9.json `hard`, `historical` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 13-19 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Genesis 15:18; Isaiah 8:7 | 13-19 | BSB | BSB text |
+| Metanoeō; five churches called, four refusals (9:20, 21; 16:9, 11); idolatry as root; the list after the Ten Commandments; pharmakeia; suffering alone does not change a heart; Romans 2:4 | 20-21 | revelation/9.json `words` (G3340), `literary`, `doctrines`, `christ` | Repository |
+| Psalm 115:4-5, 7; Daniel 5:23; Romans 2:4 | 20-21 | BSB | BSB text |
+
+Cut before publishing: nothing drawn from outside the deep note; no river, army or number tied to any nation or war of our day.
