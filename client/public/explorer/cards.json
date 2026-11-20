@@ -1,6 +1,61 @@
 {
   "cards": [
-    { "id": "god", "title": "God", "status": "coming" },
+    {
+      "id": "god",
+      "title": "God",
+      "status": "finished",
+      "picture": "jordan",
+      "pictureLabel": "The river Jordan between low hills: a figure stands in the water, a dove comes down through an opening in the sky, and light falls from beyond the top of the picture.",
+      "statement": {
+        "younger": "There is one God. He made everything, he never began and he will never end, and nothing made him. The Bible shows him to us as the Father, the Son and the Holy Spirit: one God, not three.",
+        "older": "There is one true and living God: Spirit, without beginning or end, the maker of everything that is. The Bible speaks of the Father, the Son and the Holy Spirit each as God, and keeps the three distinct, yet there is one God. The church says it this way: one in being and three in persons, each fully God, and one God. The family catechism calls it ‘not a riddle to solve but a wonder to receive’."
+      },
+      "quote": {
+        "ref": "Matthew 28:19",
+        "text": "baptizing them in the name of the Father, and of the Son, and of the Holy Spirit"
+      },
+      "rests": [
+        "Deuteronomy 6:4",
+        "John 4:24",
+        "Psalm 90:2",
+        "John 1:1",
+        "Acts 5:3-4",
+        "Mark 1:9-11",
+        "Matthew 28:19",
+        "2 Corinthians 13:14"
+      ],
+      "question": {
+        "ask": "How could anyone know that God is really there?",
+        "younger": "No one can prove it the way you prove a sum, and some careful thinkers do not believe it. But Christians give reasons. Everything we know came from something, and the whole universe could have been different, or not been at all. So why is there anything? Christians believe the answer is God, who is not one more thing needing a maker. And they believe God has shown himself most fully in Jesus.",
+        "older": "LiveWell's Honest Answer does not claim a proof in the mathematician's sense. It weighs reasons, each open to inspection: that anything exists at all, when the universe could have been different or not been at all; that the universe is fit for life; and that some things are really wrong. It gives the case against at its strongest, including Bertrand Russell's reply that the universe is ‘just there, and that's all’, and it says plainly that this is the step where an honest person can disagree. Even if the reasons succeed, they do not yet show that God is three persons or that he became a man; for Christians that rests on whether Jesus was raised. A person can weigh all of it and still say no. What nobody can honestly say is that there is nothing to weigh."
+      },
+      "stops": [
+        "creation",
+        "sinai",
+        "jesus",
+        "church"
+      ],
+      "catechism": [
+        2,
+        3,
+        4,
+        76
+      ],
+      "deeper": [
+        {
+          "label": "Does God actually exist?",
+          "href": "/answers/does-god-actually-exist"
+        },
+        {
+          "label": "How can God be three and one?",
+          "href": "/answers/how-can-god-be-three-and-one"
+        },
+        {
+          "label": "The family catechism: is God one, or is God three?",
+          "href": "/family/catechism#q4"
+        }
+      ]
+    },
     {
       "id": "bible",
       "title": "The Bible",
@@ -25,8 +80,114 @@
         { "label": "The family catechism: how has God spoken to us?", "href": "/family/catechism#q12" }
       ]
     },
-    { "id": "image", "title": "People made in God's image", "status": "coming" },
-    { "id": "sin", "title": "Sin", "status": "coming" },
+    {
+      "id": "image",
+      "title": "People made in God's image",
+      "status": "finished",
+      "picture": "image",
+      "pictureLabel": "A man and a woman in a garden at morning: one plants a young tree, the other carries a jar of water, and a still pool between them gives back the light.",
+      "statement": {
+        "younger": "God made people, boys and girls, in his own image. That means every person was made to know God, to show what he is like, and to take care of his world. It is God's gift, so every person matters, whatever they can or cannot do.",
+        "older": "In the ancient world a king could be called the image of a god. Genesis gives that dignity to every human being, male and female. The family catechism says it means we were made to know God, to reflect his character, and to rule over and care for his world as those who answer to him. The image is given, not earned, so it does not rise and fall with what a person can do."
+      },
+      "quote": {
+        "ref": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them."
+      },
+      "rests": [
+        "Genesis 1:26-28",
+        "Genesis 2:7",
+        "Genesis 9:6",
+        "Psalm 8:3-5",
+        "James 3:9",
+        "Colossians 3:10"
+      ],
+      "question": {
+        "ask": "Why should every person be worth the same, when people are so different?",
+        "younger": "People are good at different things, and some cannot do much at all, like a tiny baby or someone who is very ill. If being worth something depended on what you can do, some people would be worth less. Christians believe every person's worth is given by God, who made them in his image, so nobody can earn it and nobody can lose it. Many people who do not believe in God also believe every person matters, and they live it well.",
+        "older": "LiveWell's Honest Answer starts from something nearly everyone already believes: a newborn, a man with advanced dementia and the most gifted adult in the room have equal worth. Abilities come in degrees and can be lost, so a worth that rested on them would come in degrees and could be lost. A worth that is given by God, not earned, is equal and can't be lost. The answer says plainly that this is an argument about what best explains a belief most people share, not a proof; that people who don't believe in God hold the same belief sincerely and live it well; and that it doesn't show that anyone who rejects God values people less."
+      },
+      "stops": [
+        "creation",
+        "fall",
+        "new-creation"
+      ],
+      "catechism": [
+        6,
+        7,
+        8
+      ],
+      "deeper": [
+        {
+          "label": "What makes us human in the age of AI?",
+          "href": "/answers/what-makes-us-human-in-the-age-of-ai"
+        },
+        {
+          "label": "How should a Christian read Genesis 1?",
+          "href": "/answers/how-should-a-christian-read-genesis-1"
+        },
+        {
+          "label": "The family catechism: what does it mean to be made in God's image?",
+          "href": "/family/catechism#q7"
+        }
+      ]
+    },
+    {
+      "id": "sin",
+      "title": "Sin",
+      "status": "finished",
+      "picture": "hiding",
+      "pictureLabel": "A garden in the evening breeze: two people hide among the bushes, thorns grow at the edge of the path, and a light comes along the path toward them.",
+      "statement": {
+        "younger": "Sin is when we do not love God and other people the way we should: doing what God says not to do, or not doing what he says to do. Everyone has sinned. Sin breaks things between us and God, and between people. But God comes looking for us, and he sent Jesus to bring us home.",
+        "older": "The family catechism calls sin any failure to love God and others as we should, whether by doing what God forbids or by failing to do what he commands. At its root it is not trusting that God is good, and putting ourselves in his place. Everyone has sinned, and the damage runs every way: with God, with each other, inside ourselves, and with the world. Yet in the same chapter that tells of the first sin, God comes looking and calls, “Where are you?”"
+      },
+      "quote": {
+        "ref": "Romans 3:23-24",
+        "text": "for all have sinned and fall short of the glory of God, and are justified freely by His grace through the redemption that is in Christ Jesus."
+      },
+      "rests": [
+        "Genesis 3:1-9",
+        "Mark 12:30-31",
+        "Isaiah 59:2",
+        "Romans 3:23-24",
+        "Luke 15:11-24",
+        "Luke 19:10",
+        "1 John 1:9"
+      ],
+      "question": {
+        "ask": "Does God stop loving people when they do wrong?",
+        "younger": "No. God does not wait for people to be good before he loves them. The Bible says that while we were still sinners, Christ died for us. Jesus told a story about a son who ran away and wasted everything. When he came home, his father ran to meet him and hugged him. When we do wrong, we can tell God we are sorry, and he forgives us because of Jesus.",
+        "older": "The family catechism answers no: God's love for his children does not rise when they are good or fall when they are bad, because it was never based on them in the first place. It came first: “While we were still sinners, Christ died for us” (Romans 5:8). In Jesus' story of the lost son, the father sees him while he is “still in the distance”, is “filled with compassion”, and runs (Luke 15:20). Sin is serious, and it grieves God; that is why the cross was needed. But the way home stays open: “If we confess our sins, He is faithful and just to forgive us our sins” (1 John 1:9)."
+      },
+      "stops": [
+        "fall",
+        "land",
+        "kingdom",
+        "exile",
+        "cross"
+      ],
+      "catechism": [
+        15,
+        17,
+        59,
+        74
+      ],
+      "deeper": [
+        {
+          "label": "Sin: what the Bible teaches, and where Christians differ",
+          "href": "/study/bible/doctrines/sin"
+        },
+        {
+          "label": "The family catechism: what is sin?",
+          "href": "/family/catechism#q15"
+        },
+        {
+          "label": "The family catechism: will God ever stop loving me if I am bad?",
+          "href": "/family/catechism#q74"
+        }
+      ]
+    },
     {
       "id": "jesus",
       "title": "Jesus, God and man",
@@ -52,7 +213,59 @@
         { "label": "The family catechism: who is Jesus Christ?", "href": "/family/catechism#q25" }
       ]
     },
-    { "id": "cross", "title": "The cross", "status": "coming" },
+    {
+      "id": "cross",
+      "title": "The cross",
+      "status": "finished",
+      "picture": "cross",
+      "pictureLabel": "An empty cross on a hill at first light, with a path from the foot of the picture leading up to it and the sun rising behind the far hills.",
+      "statement": {
+        "younger": "Jesus never did anything wrong, but he died on a cross for our sins. Nobody forced him: the Father sent the Son because he loves us, and the Son gave his life freely. At the cross God mended what sin broke, and on the third day Jesus rose again.",
+        "older": "Christians confess that Christ died for our sins according to the Scriptures, and that the cross is God's own act of love: the Father sent the Son, and the Son laid down his life of his own accord. It is not an angry Father against an unwilling Son. The Bible uses many pictures for what the cross did: the Passover lamb, a ransom, our sins borne in our place, victory over sin, death and the devil, love shown, and enemies made friends. Christians hold them together, and some traditions put one at the centre. The creed does not choose a theory; it says he came ‘for us men and for our salvation’."
+      },
+      "quote": {
+        "ref": "1 Peter 3:18",
+        "text": "For Christ also suffered for sins once for all, the righteous for the unrighteous, to bring you to God."
+      },
+      "rests": [
+        "Mark 15:22-39",
+        "Isaiah 53:4-6",
+        "Mark 10:45",
+        "John 10:17-18",
+        "Romans 5:8",
+        "1 Corinthians 15:3-4",
+        "Colossians 2:13-15",
+        "2 Corinthians 5:18-19"
+      ],
+      "question": {
+        "ask": "Who put Jesus to death?",
+        "younger": "Some of the leaders in Jerusalem wanted to get rid of Jesus. One of his own friends, Judas, helped them arrest him at night. They handed him over to Pilate, the Roman governor, and Pilate had him put to death on a cross. Jesus and his first friends were Jewish, and it is wrong to blame the Jewish people for his death. The Bible says he died for the sins of every one of us, and that he gave his life freely.",
+        "older": "The Gospels answer with care. The chief priests and their council handed him over; Pilate, the Roman governor, condemned him; Roman soldiers crucified him. Jesus himself, his disciples and the first church were Jews, and blaming the Jewish people for his death is a lie that Christians must reject plainly. The New Testament places all people inside the guilt: Herod, Pilate, the Gentiles and the people of Israel together (Acts 4:27), and in the end every one of us, because “Christ died for our sins” (1 Corinthians 15:3). And Jesus said of his life, “No one takes it from Me, but I lay it down of My own accord” (John 10:18)."
+      },
+      "stops": [
+        "rescue",
+        "sinai",
+        "cross"
+      ],
+      "catechism": [
+        29,
+        30
+      ],
+      "deeper": [
+        {
+          "label": "Ways of explaining the cross: the Study Bible's note on Romans 3",
+          "href": "/study/bible/romans/3"
+        },
+        {
+          "label": "The family catechism: why did Jesus have to die?",
+          "href": "/family/catechism#q29"
+        },
+        {
+          "label": "Did the resurrection actually happen?",
+          "href": "/answers/did-the-resurrection-actually-happen"
+        }
+      ]
+    },
     {
       "id": "resurrection",
       "title": "The resurrection",

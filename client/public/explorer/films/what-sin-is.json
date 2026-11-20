@@ -1,0 +1,161 @@
+{
+  "slug": "what-sin-is",
+  "title": "What sin is",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "fall",
+  "line": {
+    "younger": "What sin is, what it breaks, and what God does about it, in six pictures.",
+    "older": "Sin at its root, the four things it breaks, why it touches everyone, and the God who comes looking. In six pictures."
+  },
+  "poster": "A person stands in the middle of four lines: one up to a light from beyond the edge, one across to another person, one down to the ground and a growing plant, and one round the person themself.",
+  "frames": [
+    {
+      "id": "love",
+      "name": "Made to love",
+      "still": "A person stands in the middle of four lines: one up to a light from beyond the top of the picture, one across to another person, one down to a young plant in the ground, and one in a circle round the person themself.",
+      "younger": "God made people to love him with all their heart, and to love other people as much as themselves. Everything was meant to fit together: people with God, with each other, with themselves, and with the world.",
+      "older": "Jesus summed up what God asks in two commands: love the Lord your God with all your heart, soul, mind and strength, and love your neighbor as yourself. Made for that love, people were joined to God, to each other, to themselves and to the world he gave them.",
+      "verse": {
+        "ref": "Mark 12:30",
+        "text": "Love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength."
+      }
+    },
+    {
+      "id": "reach",
+      "name": "Not trusting",
+      "still": "The person turns away from the light and reaches toward the fruit on a tree, and the line up to the light grows thin.",
+      "younger": "The first people did not trust that God was good. They wanted to decide for themselves what was good and what was bad, so they did the one thing God had told them not to do.",
+      "older": "In Genesis 3 the serpent does not start with the fruit. He starts by making God sound mean, then promises, “you will be like God.” At its root, sin is not trusting that God is good, and wanting to be our own god, deciding good and evil for ourselves."
+    },
+    {
+      "id": "broken",
+      "name": "What it breaks",
+      "still": "The four lines break one after another: the line to the light, the line to the other person, the line to the plant, which turns to thorns, and the circle round the person.",
+      "younger": "Then things broke. They hid from God. They blamed each other. They felt ashamed. And the ground grew thorns. Sin breaks things between us and God, and between people.",
+      "older": "The damage runs in every direction at once: they hide from God, cover their shame, blame each other, and the ground grows thorns. Isaiah says it plainly: “your iniquities have built barriers between you and your God.”",
+      "verse": {
+        "ref": "Isaiah 59:2",
+        "text": "But your iniquities have built barriers between you and your God, and your sins have hidden His face from you, so that He does not hear."
+      }
+    },
+    {
+      "id": "what",
+      "name": "What sin is",
+      "still": "The person stands alone with the broken ends of the lines around them, turned in on themself.",
+      "younger": "Sin is when we do not love God and others the way we should. It can be doing what God says not to do, like lying or being unkind. It can also be not doing what he says to do, like not helping someone who needs it.",
+      "older": "The family catechism defines it: sin is any failure to love God and others as we should, whether by doing what God forbids or by failing to do what he commands. It is more than a list of wrong things done. It is love turned in on ourselves."
+    },
+    {
+      "id": "everyone",
+      "name": "Everyone",
+      "still": "A crowd of people of every size stands together, each with a broken line beside them.",
+      "younger": "Everyone has sinned: grown-ups and children, people long ago and people today. That does not make anyone worthless. It means everyone needs God's help.",
+      "older": "Paul says it without exception: “all have sinned and fall short of the glory of God.” No one is outside it and no one is above it, the people who wrote the Bible included. But the same sentence goes straight on to grace.",
+      "verse": {
+        "ref": "Romans 3:23-24",
+        "text": "for all have sinned and fall short of the glory of God, and are justified freely by His grace through the redemption that is in Christ Jesus."
+      }
+    },
+    {
+      "id": "looking",
+      "name": "God comes looking",
+      "still": "A light comes along a path toward a person sitting alone, and where it reaches the broken lines, they are joined again in gold.",
+      "younger": "But God did not leave people on their own. In the garden he came looking and called, “Where are you?” And he sent Jesus to find people and bring them home. When we do wrong, we can tell God we are sorry, and he forgives us because of Jesus.",
+      "older": "Judgment is never the only word. God comes looking and calls, “Where are you?” Jesus said he came “to seek and to save the lost”, and at the cross God himself mends what sin broke. The way home stays open: “If we confess our sins, He is faithful and just to forgive us our sins.”",
+      "verse": {
+        "ref": "Luke 19:10",
+        "text": "For the Son of Man came to seek and to save the lost."
+      }
+    }
+  ],
+  "think": {
+    "younger": "When you have done something wrong, what helps you go back and say sorry? What does God do when people come back to him? Talk about it with a parent or a leader.",
+    "older": "Why do hiding and blaming come so naturally? Where do you see the four broken relationships around you, and where do you see them being mended?"
+  },
+  "read": [
+    {
+      "label": "Genesis 3",
+      "href": "/study/bible/genesis/3"
+    },
+    {
+      "label": "Isaiah 59",
+      "href": "/study/bible/isaiah/59"
+    },
+    {
+      "label": "Romans 3",
+      "href": "/study/bible/romans/3"
+    },
+    {
+      "label": "Luke 15",
+      "href": "/study/bible/luke/15"
+    },
+    {
+      "label": "1 John 1",
+      "href": "/study/bible/1-john/1"
+    }
+  ],
+  "stops": [
+    "fall"
+  ],
+  "cards": [
+    "sin"
+  ],
+  "differ": {
+    "text": "All Christians confess that every person has sinned and needs God's grace, and that God himself comes to save. How the first sin reaches everyone after it is debated, and churches word it differently. This moving picture does not choose between them. The traditions are set out in",
+    "links": [
+      {
+        "label": "the Study Bible's page on sin",
+        "href": "/study/bible/doctrines/sin"
+      }
+    ]
+  },
+  "care": "Thinking about sin can bring up guilt or fear. Nobody is too bad to be forgiven, and nobody has to carry it alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "What is sin? (the family catechism)",
+      "href": "/family/catechism#q15"
+    },
+    {
+      "label": "Will God ever stop loving me if I am bad? (the family catechism)",
+      "href": "/family/catechism#q74"
+    },
+    {
+      "label": "What should we do when we sin? (the family catechism)",
+      "href": "/family/catechism#q59"
+    }
+  ],
+  "share": {
+    "level": "younger",
+    "frames": [
+      {
+        "id": "love",
+        "verse": false
+      },
+      {
+        "id": "reach",
+        "verse": true
+      },
+      {
+        "id": "broken",
+        "verse": true
+      },
+      {
+        "id": "what",
+        "verse": true
+      },
+      {
+        "id": "everyone",
+        "verse": true
+      },
+      {
+        "id": "looking",
+        "verse": true
+      }
+    ]
+  },
+  "end": {
+    "label": "Go to the stop: The Fall",
+    "href": "/study/explorer/fall"
+  }
+}

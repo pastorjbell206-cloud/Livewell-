@@ -132,6 +132,21 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "Can we trust a book copied by hand for centuries? Eight moving pictures on the copies, the Dead Sea Scrolls, what can be checked, and what that does and does not prove.",
     },
+    "image-of-god": {
+      title: "Creation and the image of God: Bible Explorer",
+      description:
+        "Creation out of nothing, a world called very good, and every person made in God's image, in seven moving pictures: what it means, why it is a gift, and what Christians leave open.",
+    },
+    "what-sin-is": {
+      title: "What sin is: Bible Explorer",
+      description:
+        "What sin is at its root, the four things it breaks, why it touches everyone, and the God who comes looking, in six moving pictures for children and teenagers.",
+    },
+    "who-jesus-is": {
+      title: "Who Jesus is: Bible Explorer",
+      description:
+        "Jesus, the Word with God from the beginning, born as a man, fully God and fully man in one person, in seven moving pictures, and the question he asked his friends.",
+    },
     "spirit-in-a-believer": {
       title: "The Holy Spirit in a believer: Bible Explorer",
       description:
