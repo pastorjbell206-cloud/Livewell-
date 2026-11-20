@@ -12804,3 +12804,28 @@ Cut before publishing: nothing.
 | 1 Peter 2:9; Revelation 1:13; a pattern, not a hidden prediction | 39-43 | BSB; exodus/28.json `christ`; hebrews/plain/8.json | BSB text |
 
 Cut before publishing: a guess that the hand was filled with the first portion of offerings (the notes give the idiom as installing in office); that Jewish worship continued in prayer (the guide says study and interpretation). Also cut: ‘carried with strength and with love’ (a meaning the text does not give the shoulders and the heart).
+
+## The plain notes on Exodus 29 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The ceremony carried out in Leviticus 8 | 1-9 | exodus/29.json `story` | Repository |
+| Washing, anointing; the anointed one as the source of Messiah and Christ | 1-9 | exodus/29.json `cultural`, `christ` | Repository |
+| Hebrews 5:4; Leviticus 8:30 | 1-9 | BSB | BSB text |
+| Three sacrifices in order: sin, burnt, ordination meal | 10-18 | exodus/29.json `literary` | Repository |
+| Laying on of hands identifies the offerer with the offering | 10-18 | exodus/29.json `cultural` | Repository |
+| Sacrifice universal; not food for God, not bribes; God's provision; prophets on the heart; Christians and fulfilment; Jewish stress after AD 70 on prayer, Torah study and kindness | 10-18 | exodus/29.json `hard`, `historical` | Repository; no side |
+| Psalm 50:13; Hosea 6:6; Hebrews 13:12 | 10-18 | BSB | BSB text |
+| Blood on ear, thumb and toe, not explained; read as the whole person; the same in Leviticus 14:14 | 19-28 | exodus/29.json `cultural` | Repository |
+| To fill the hand; Moses fills their hands | 19-28 | exodus/29.json `cultural` | Repository |
+| Fat for God; breast and thigh for the priests; the fat tail of broad-tailed sheep | 19-28 | exodus/29.json `cultural` | Repository |
+| Leviticus 14:14; Romans 12:1 | 19-28 | BSB | BSB text |
+| The ordination meal; garments passed on; seven days; the altar made most holy | 29-37 | BSB text of verses 29-37; exodus/29.json `literary` | BSB text |
+| John 17:17; Luke 1:9 | 29-37 | BSB; exodus/29.json `historical` | BSB text |
+| The tamid offered for centuries; its loss a disaster (Daniel 8:11) | 38-46 | exodus/29.json `historical` | Repository |
+| God the subject of every verb; ‘know that I am the LORD’ turned from judgment to presence; the exodus so that God might dwell | 38-46 | exodus/29.json `literary`, `story` | Repository |
+| Hebrews 10:11-12; John 1:14; Revelation 21:3 | 38-46 | BSB; exodus/29.json `christ` | BSB text |
+
+Cut before publishing: ‘the time of creation’ for the seven days and ‘holiness almost like a force’ (neither in the notes).
