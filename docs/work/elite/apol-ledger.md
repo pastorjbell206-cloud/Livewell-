@@ -2091,3 +2091,27 @@ Cut or not used: Mill's own text (not read; given only as Russell quotes it); Wi
 Agreement: the Note on Psalm 14 (the psalm's fool is not a philosopher) is followed; the Note on Exodus 3 (self-existence) agrees. The God answer does not treat the ontological argument; nothing on the site contradicts this page.
 
 Cut or not used: Gödel's argument (SEP section 7; too technical); Malcolm and Hartshorne (named in the SEP; not needed); Barth's reading of the *Proslogion* (not verified); Descartes's own words (his text not read this run).
+
+### aq. "Isn't morality just evolved instinct or social agreement? And doesn't the Euthyphro show that goodness can't depend on God?" (the-moral-argument-and-euthyphro)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Plato, *Euthyphro*: "whether the pious or holy is beloved by the gods because it is holy, or holy because it is beloved of the gods" | Jowett (GH), lines 717 to 720 | Quoted, translator named; no date is given for the translation (the copy prints none) |
+| The dilemma as applied to one God, and its two horns | SEP "Moral Arguments for the Existence of God", section 3 | Paraphrased |
+| Wielenberg, atheist; "godless normative realism"; moral truths basic, not derived from natural or further metaphysical facts; *Value and Virtue in a Godless Universe* (Cambridge, 2005), *Robust Ethics* (2014) | SEP "Moral Arguments", section 3 and bibliography; sixth-run rows (the essay ledger) for *Robust Ethics* and its subtitle | Paraphrased (living author); no sentence of his quoted |
+| Mackie, *Ethics: Inventing Right and Wrong* (1977): non-natural moral qualities "queer"; error theory | SEP "Moral Arguments", sections 2 and 3, bibliography (Harmondsworth: Penguin, 1977); sixth-run rows | Paraphrased |
+| Street, "A Darwinian Dilemma for Realist Theories of Value," *Philosophical Studies* 127 (2006): the dilemma | SEP "Moral Arguments", section 4, bibliography | Paraphrased |
+| No single account of the foundations of ethics enjoys wide support | SEP "Moral Arguments", section 3 ("no single metaethical theory seems to enjoy widespread support among philosophers") | Attributed to the article; no count |
+| Romans 2:15; Mark 10:18; Micah 6:8 | Repo (BSB, script) | Quoted |
+| Kant (1788): theoretical proofs fail; the highest good; God as a postulate of practical reason | SEP "Moral Arguments", section 1 | Paraphrased |
+| Swinburne (2004): moral awareness more to be expected if God exists | SEP "Moral Arguments", section 4 | Paraphrased |
+| Adams, *Finite and Infinite Goods* (Oxford, 1999): obligations constituted by social requirements; not every relationship; God's commands; objective, motivating, overriding, critical of social systems; the right/good distinction; commands necessarily aimed at the good | SEP "Moral Arguments", section 3, bibliography | Paraphrased, "as the Stanford Encyclopedia summarizes it" |
+| Aquinas, I q.6 a.3: "God alone is good essentially"; "in Whom alone essence is existence"; I q.6 a.4: everything "called good from the divine goodness" | Aquinas (GH), lines 2765 to 2800 and 2832 to 2880 | Quoted (a.3); a.4 paraphrased ("good by sharing in his goodness") |
+| Mackie's queerness may bear more sharply on Wielenberg's brute facts, which may seem less odd in a universe grounded in a person | SEP "Moral Arguments", section 3 | Paraphrased, attributed |
+| Not evolution alone but evolution with naturalism makes moral knowledge improbable; Wielenberg's reply (necessary natural laws); "many philosophers will see this view of natural laws as paying a heavy price to avoid theism" | SEP "Moral Arguments", section 4 | Paraphrased, attributed to the article |
+| Quinn, *Divine Commands and Moral Requirements* (Oxford: Clarendon, 1978); the revival of divine command theory due to Quinn and Adams | SEP "Moral Arguments", section 3, bibliography | Verified |
+| The genocide answer as the hardest case | `client/src/data/answers.ts` ("Did God command genocide in the Old Testament?") | Agrees |
+
+Agreement: the Honest Answer "Can you be good without God?" (read this run) sets out Darwin, Wielenberg, the Euthyphro, Aquinas, Adams, Street and Mackie; this page agrees with it at every point and goes further (the moral arguments distinguished; Adams's account of obligation; the relocated dilemma). It differs in form only: the answer's argument has five premises and puts the weight on the fifth ("the main accounts without God each leave at least one of them unexplained"); this page's three steps put the weight on the third, the same claim. The answer cites a survey percentage; this page gives none. The Notes on Romans 2 and Micah 6 agree.
+
+Cut or not used: the measuring-rod comparison is the page's own; Ockham and medieval voluntarism (not verified this run); Wielenberg's own sentence (an abstract quoted in an earlier ledger, not seen this run).

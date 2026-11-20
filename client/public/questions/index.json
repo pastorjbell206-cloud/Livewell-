@@ -31,6 +31,13 @@
           "blurb": "Anselm's prayer and argument, Gaunilo's island, Aquinas and Kant, the modern modal version and its symmetry, and why God's existence, if real, is necessary.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-moral-argument-and-euthyphro",
+          "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
+          "blurb": "The argument from moral obligation, Wielenberg's godless realism, Mackie and Street, the Euthyphro dilemma and the classical answer, and what the argument shows.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -494,6 +501,36 @@
       "area": "god",
       "slug": "the-ontological-argument",
       "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
+      "live": false
+    },
+    {
+      "claim": "The basic moral truths are necessary and need no foundation in God or anything else",
+      "proponent": "Erik J. Wielenberg",
+      "work": "Robust Ethics",
+      "year": 2014,
+      "area": "god",
+      "slug": "the-moral-argument-and-euthyphro",
+      "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
+      "live": false
+    },
+    {
+      "claim": "Objective moral values would be strange things unlike anything else in the world, so there are none; morality is invented",
+      "proponent": "J. L. Mackie",
+      "work": "Ethics: Inventing Right and Wrong",
+      "year": 1977,
+      "area": "god",
+      "slug": "the-moral-argument-and-euthyphro",
+      "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
+      "live": false
+    },
+    {
+      "claim": "If evolution shaped our moral judgments, it would be luck if they matched objective moral truths",
+      "proponent": "Sharon Street",
+      "work": "A Darwinian Dilemma for Realist Theories of Value",
+      "year": 2006,
+      "area": "god",
+      "slug": "the-moral-argument-and-euthyphro",
+      "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
       "live": false
     },
     {
@@ -1255,6 +1292,7 @@
     "is-it-okay-to-be-angry-at-god": "Is it okay to be angry at God?",
     "how-can-god-be-three-and-one": "How can God be three and one?",
     "what-about-those-who-never-heard": "What about those who never heard of Jesus?",
+    "can-you-be-good-without-god": "Can you be good without God?",
     "are-miracles-believable": "Are miracles believable?",
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
