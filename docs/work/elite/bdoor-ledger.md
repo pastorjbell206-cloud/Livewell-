@@ -12291,3 +12291,28 @@ Cut before publishing: the reading of Pharaoh's morning walk as a rite (said onl
 | Genesis 43:32; Hebrews 3:15 | 25-32 | BSB | BSB text |
 
 Cut before publishing: nothing beyond the deep note's wording.
+
+## The plain notes on Exodus 9 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Horses, donkeys, camels as wealth and power; the camel debate | 1-7 | exodus/9.json `historical` | Repository; no side |
+| Apis at Memphis; Hathor; the text stresses loss and exemption | 1-7 | exodus/9.json `cultural` | Repository |
+| ‘All the livestock’ as sweeping language or the animals ‘in the field’ | 1-7 | exodus/9.json `literary` | Repository |
+| Psalm 78:48 | 1-7 | BSB | BSB text |
+| Soot from a kiln; Deuteronomy 4:20 ‘iron furnace’; a public sign-act | 8-12 | exodus/9.json `cultural` | Repository |
+| First time the narrator says the LORD hardened (9:12) | 8-12 | exodus/9.json `story`, `hard` | Repository |
+| Hardening in three ways with every reference; judicial (Arminian, many Jewish readers), sovereign (Augustinian and Reformed); the strengthening reading; no side | 8-12 | exodus/9.json `hard`; exodus/14.json `hard` | Repository; no side |
+| Deuteronomy 28:27; Romans 9:16, 18 | 8-12 | BSB | BSB text |
+| God's purpose speech; ‘I have made you stand’ and the magicians who could not stand | 13-21 | exodus/9.json `literary` | Repository |
+| The first offered way of escape, taken by some officials | 13-21 | exodus/9.json `story`; exodus/10.json `hard` | Repository |
+| Romans 9:17; Philippians 2:9-10 | 13-21 | BSB; exodus/9.json `christ` | BSB text |
+| Hail rare in Egypt; ‘since it became a nation’ a strong claim | 22-26 | exodus/9.json `historical` | Repository |
+| Psalm 105:32-33; Revelation 16:21 | 22-26 | BSB | BSB text |
+| Spreading the hands in prayer | 27-35 | exodus/9.json `cultural` | Repository |
+| Flax, barley, wheat and spelt; late winter or early spring; linen and barley | 27-35 | exodus/9.json `historical` | Repository |
+| Psalm 24:1; 1 Timothy 2:8; 2 Corinthians 7:10 | 27-35 | BSB | BSB text |
+
+Cut before publishing: nothing beyond the deep note's wording.
