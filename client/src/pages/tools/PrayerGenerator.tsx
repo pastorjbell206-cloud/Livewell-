@@ -179,7 +179,7 @@ export default function PrayerGenerator() {
   };
 
   const shareLine = (label: string, text: string) =>
-    `\u{1F64F} ${label} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/prayer-generator)`;
+    `${label} — ${text} — via LiveWell by James Bell (livewellbyjamesbell.co/tools/prayer-generator)`;
 
   const handleCopy = async () => {
     if (!prayer) return;

@@ -1,0 +1,94 @@
+{
+  "id": "temptation",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "Genesis 3:6",
+      "context": "Genesis 3:1-7",
+      "where": "The first temptation in the Bible. The serpent questions God's word and his goodness, and the fruit looks good, pleasing and desirable. Temptation usually comes dressed as something good, with a doubt about God attached."
+    },
+    {
+      "ref": "James 1:13-15",
+      "context": "James 1:12-15",
+      "where": "James refuses to let anyone blame God for temptation. It grows from a person's own desires, and he traces its path like a birth: desire conceives, gives birth to sin, and sin grown up brings death. The earlier it is stopped, the better."
+    },
+    {
+      "ref": "Matthew 4:1",
+      "context": "Matthew 4:1-11",
+      "where": "Right after his baptism, the Spirit leads Jesus into the wilderness, where he fasts and is tempted by the devil. He answers each temptation with Scripture from Deuteronomy. Being tempted is not itself sin; Jesus was tempted."
+    },
+    {
+      "ref": "Hebrews 4:15-16",
+      "context": "Hebrews 4:14-16",
+      "where": "Jesus is called a high priest who was tempted in every way we are, yet without sin. Because he understands, the tempted can come to God's throne with confidence and find help at the time they need it."
+    },
+    {
+      "ref": "Romans 7:19",
+      "context": "Romans 7:14-25",
+      "where": "Paul describes the war between wanting good and doing evil. Interpreters differ on whether he speaks of his life before Christ or as a believer, but readers in every age have recognized themselves here. The passage ends in a cry for rescue and thanks to God through Jesus Christ."
+    },
+    {
+      "ref": "Matthew 26:41",
+      "context": "Matthew 26:36-46",
+      "where": "In Gethsemane Jesus finds his disciples asleep and warns them to watch and pray so that they will not fall into temptation. He knows their willing spirit and their weak bodies."
+    },
+    {
+      "ref": "Genesis 39:12",
+      "context": "Genesis 39:6-12",
+      "where": "Potiphar's wife presses Joseph day after day. When she grabs him, he leaves his cloak in her hand and runs. Sometimes the wise answer to temptation is not to argue with it but to leave."
+    },
+    {
+      "ref": "2 Timothy 2:22",
+      "context": "2 Timothy 2:20-26",
+      "where": "Paul tells Timothy to flee youthful passions and to pursue righteousness, faith, love and peace, together with others who call on the Lord. Fleeing is paired with pursuing, and with company."
+    },
+    {
+      "ref": "James 5:16",
+      "context": "James 5:13-18",
+      "where": "James tells believers to confess their sins to each other and pray for each other. Hidden sin keeps its power; sin brought into the light among people who pray loses some of it."
+    },
+    {
+      "ref": "1 John 1:9",
+      "context": "1 John 1:8-10",
+      "where": "John writes to believers who still sin, and warns against pretending otherwise. The answer to falling again is confession, and God's faithfulness to forgive."
+    }
+  ],
+  "misread": [
+    {
+      "ref": "1 Corinthians 10:13",
+      "context": "1 Corinthians 10:11-13",
+      "taken": "This verse is often turned into the saying “God won't give you more than you can handle,” and used about illness, grief or trouble of every kind.",
+      "says": "Paul is warning the Corinthians about temptation, especially the pull of idolatry, using Israel in the wilderness as the example. The promise is that no temptation is unique, that God is faithful, and that with the temptation he will provide a way out so that you can stand. It promises strength to stand, not a life without testing, and it is not a promise that suffering will never be more than a person can bear. Paul himself wrote of hardship \u201cfar beyond our ability to endure\u201d (2 Corinthians 1:8)."
+    }
+  ],
+  "whole": [
+    "Most people who type “temptation” are not asking about a single moment. They are asking about a pattern: the same sin, the same place, the same promise to stop, the same failure. Shame grows with every round, and shame makes the next round easier, because it pushes the struggle into hiding. Many come to believe they are uniquely weak, or that God must be tired of them.",
+    "The Bible is honest about how temptation works. It usually arrives as something good, with a whisper that God is holding out on you. It grows from desire, slowly, and gains strength in secret. And it is common to everyone: Paul says no temptation has seized anyone except what is common to man, and Jesus himself was tempted. Being tempted is not sin. Feeding the desire, hiding it, and telling yourself it is the last time, again, is how it becomes one.",
+    "So Scripture's wisdom is both humble and practical. Watch and pray, because the body is weak. Know your patterns and leave early, like Joseph, rather than arguing in the doorway. Do not fight alone: confess to someone you trust and let them pray with you. When you fall, do not hide; confess to God, who is faithful to forgive, and get up. And remember the high priest who was tempted and did not sin, who understands, and before whom you can come with confidence. Change often comes slowly, but it comes, and the way out God promises is real."
+  ],
+  "differ": {
+    "share": "Christians agree that temptation is not sin, that God gives strength and a way out, that confession and forgiveness are for believers who fall, and that the struggle is a real part of the Christian life.",
+    "views": [
+      {
+        "name": "Paul as a believer",
+        "body": "Many in the tradition of Augustine and the Reformers read Romans 7:14-25 as Paul's own struggle as a Christian, a war that continues until the life to come."
+      },
+      {
+        "name": "Life under the law",
+        "body": "Many early Greek interpreters, and many scholars today, read the passage as describing life under the law without the Spirit, with Romans 8 showing the freedom of life in the Spirit that follows."
+      }
+    ],
+    "after": "Both read Romans 8 as the answer: there is no condemnation for those in Christ Jesus, and the Spirit gives life."
+  },
+  "sit": "Where and when does this temptation usually find you, and what would it look like to leave that place earlier this week?",
+  "prayer": {
+    "ref": "Psalm 51:10-12",
+    "lead": "Psalm 51 is the prayer of someone who fell badly. These lines ask God for a new heart, not just another resolution."
+  },
+  "next": [
+    { "kind": "Find Help", "label": "Pornography", "href": "/help/pornography" },
+    { "kind": "Find Help", "label": "Addiction", "href": "/help/addiction" },
+    { "kind": "Study guide", "label": "Habits and formation", "href": "/studyguides/habits-and-formation" },
+    { "kind": "Reading", "label": "Desire and Temptation", "href": "/life/desire-and-temptation" }
+  ]
+}
