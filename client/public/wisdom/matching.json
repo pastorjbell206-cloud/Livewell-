@@ -120,7 +120,14 @@
   "controls me": "coercion",
   "isolates me": "coercion",
   "takes my phone": "coercion",
-  "took my phone": "coercion"
+  "took my phone": "coercion",
+  "am i saved": "saved salvation",
+  "really saved": "saved salvation",
+  "im saved": "saved salvation",
+  "be saved": "saved salvation",
+  "get saved": "saved salvation",
+  "being saved": "saved salvation",
+  "truly saved": "saved salvation"
  },
  "synonyms": {
   "son": "child",
@@ -1089,7 +1096,17 @@
     "unemployed",
     "out of work",
     "no job",
-    "laid off"
+    "laid off",
+    "lost my position",
+    "company is downsizing",
+    "they eliminated my job",
+    "been job hunting for months",
+    "cant find work",
+    "nobody will hire me",
+    "my husband lost his job",
+    "severance ran out",
+    "my position was cut",
+    "lost my livelihood"
    ],
    "not": [],
    "related": [
@@ -1355,13 +1372,23 @@
     "passed over",
     "passed over for promotion",
     "office politics",
-    "boss humiliated me"
+    "boss humiliated me",
+    "my manager yells at me",
+    "coworker is undermining me",
+    "boss plays favorites",
+    "team is at war",
+    "colleague spreads rumors about me",
+    "hostile work environment",
+    "manager blames me for everything",
+    "cant stand my coworker"
    ],
    "not": [],
    "related": [
     "envy-and-comparison",
     "anger",
-    "work-and-burnout"
+    "work-and-burnout",
+    "conflict-with-others",
+    "gossip-and-the-tongue"
    ]
   },
   "envy-and-comparison": {
@@ -2069,12 +2096,21 @@
     "feel like a failure",
     "im a failure",
     "i failed",
-    "let everyone down"
+    "disappointed everyone who believed in me",
+    "my business failed",
+    "failed the exam again",
+    "everyone knows i messed up",
+    "never good enough",
+    "made it to the top and feel empty",
+    "scared of failing",
+    "my whole life is a failure",
+    "cant get anything right"
    ],
    "not": [],
    "related": [
     "self-doubt",
-    "identity-and-worth"
+    "identity-and-worth",
+    "status-and-recognition"
    ]
   },
   "fear-of-the-future": {
@@ -2446,12 +2482,22 @@
     "quit my job",
     "new career",
     "change careers",
-    "something meaningful"
+    "something meaningful",
+    "hate my job and want out",
+    "thinking of switching careers",
+    "go back to school for something new",
+    "start my own business",
+    "leave a good paying job",
+    "feel called to different work",
+    "stuck in the wrong career",
+    "too old to start over",
+    "offered a job in another city"
    ],
    "not": [],
    "related": [
     "calling-and-purpose",
-    "big-decisions"
+    "big-decisions",
+    "job-loss"
    ]
   },
   "the-news-and-fear": {
@@ -2482,12 +2528,21 @@
     "just retired",
     "retired",
     "after retirement",
-    "retired and feel useless"
+    "retired and feel useless",
+    "retiring next year",
+    "no reason to get up in the morning",
+    "miss my old job",
+    "husband retired and is always home",
+    "what do i do now that im retired",
+    "retired and bored",
+    "stopped working and feel lost",
+    "pension and savings wont last"
    ],
    "not": [],
    "related": [
     "aging",
-    "purpose-and-meaning"
+    "purpose-and-meaning",
+    "saving-and-spending"
    ]
   },
   "lukewarm-faith": {
@@ -2674,10 +2729,22 @@
     "give from my paycheck",
     "how much should i give",
     "tithe",
-    "tithing"
+    "tithing",
+    "should i tithe before or after taxes",
+    "cant afford to tithe",
+    "pastor keeps asking for money",
+    "church always asking for money",
+    "offering plate on sunday",
+    "give ten percent to church",
+    "dont trust how church spends money",
+    "seed faith offering"
    ],
    "not": [],
-   "related": []
+   "related": [
+    "generosity-and-giving",
+    "money",
+    "greed"
+   ]
   },
   "marriage-communication": {
    "phrases": [
@@ -3462,6 +3529,124 @@
     "calling-and-purpose",
     "identity-and-worth",
     "despair-and-hope"
+   ]
+  },
+  "work-life-balance": {
+   "phrases": [
+    "never home for dinner",
+    "miss my kids games",
+    "married to my job",
+    "work comes before my family",
+    "no time for my family",
+    "kids barely see me",
+    "wife says i work too much",
+    "husband is always at the office",
+    "laptop on vacation",
+    "checking work email at home",
+    "cant switch off after work",
+    "work takes all my time"
+   ],
+   "not": [],
+   "related": [
+    "work-and-burnout",
+    "rest-and-sabbath",
+    "marriage-communication"
+   ]
+  },
+  "status-and-recognition": {
+   "phrases": [
+    "nobody notices my work",
+    "want people to recognize me",
+    "need the credit",
+    "jealous when coworkers get praised",
+    "obsessed with my follower count",
+    "want a bigger title",
+    "checking how many likes",
+    "wish someone would thank me"
+   ],
+   "not": [],
+   "related": [
+    "pride",
+    "people-pleasing",
+    "success-and-failure"
+   ]
+  },
+  "saving-and-spending": {
+   "phrases": [
+    "cant stop spending",
+    "impulse buying",
+    "saving for retirement or emergencies",
+    "living paycheck to paycheck",
+    "feel guilty spending money",
+    "credit card shopping",
+    "need a budget",
+    "online shopping every night",
+    "save for a rainy day"
+   ],
+   "not": [
+    "salvation"
+   ],
+   "related": [
+    "money",
+    "greed",
+    "financial-hardship"
+   ]
+  },
+  "greed": {
+   "phrases": [
+    "cant stop wanting things",
+    "jealous of their money",
+    "obsessed with money",
+    "more stuff never satisfies",
+    "greedy for money",
+    "money hungry",
+    "wanting what others own",
+    "covet my neighbors house",
+    "chasing money at any cost",
+    "never satisfied with my income"
+   ],
+   "not": [],
+   "related": [
+    "generosity-and-giving",
+    "contentment",
+    "money"
+   ]
+  },
+  "generosity-and-giving": {
+   "phrases": [
+    "hard for me to give",
+    "how do i help the poor",
+    "feel guilty not giving",
+    "giving to charity",
+    "stingy with money",
+    "donate to a good cause",
+    "learn to be generous",
+    "share my money with others",
+    "tight fisted with money"
+   ],
+   "not": [],
+   "related": [
+    "giving-to-the-church",
+    "greed",
+    "justice-and-the-poor"
+   ]
+  },
+  "consumerism-and-stuff": {
+   "phrases": [
+    "shopping makes me feel better",
+    "too much stuff in my house",
+    "cant stop buying things",
+    "retail therapy",
+    "keeping up with the neighbors",
+    "always want the newest phone",
+    "house full of clutter",
+    "amazon packages every day"
+   ],
+   "not": [],
+   "related": [
+    "contentment",
+    "greed",
+    "saving-and-spending"
    ]
   }
  }

@@ -10,7 +10,7 @@
  *   2  What all share the river and the table side by side, one gold line above
  *   3  Who?           a parent holding a baby by a bowl of water | a grown
  *                     person standing in a river
- *   4  How?           water poured from a jug over a bowed head | a person
+ *   4  How?           water poured from a jug over a head | a person
  *                     going down under the water of a river
  *   5  The Supper     the bread and the cup alone
  *   6  One Lord       the river and the table again, one gold line above

@@ -1737,7 +1737,20 @@
       "slug": "why-cant-i-see-god",
       "title": "Why can't I see God?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "An honest question, in seven pictures: why no one can see God with their eyes, and the ways he has made himself known, most of all in Jesus.",
+        "older": "Why is God unseen? Seven pictures on the family catechism's answer: God is Spirit, known in what he made, in his word, and most clearly in Jesus, with the hard objection named fairly."
+      },
+      "mark": "why-cant-i-see-god",
+      "frames": 7,
+      "stops": [
+        "creation",
+        "jesus"
+      ],
+      "cards": [
+        "god"
+      ]
     },
     {
       "slug": "why-bad-things-happen",
@@ -1800,7 +1813,20 @@
       "slug": "when-we-die",
       "title": "What happens when we die?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "A gentle answer to a big question, in seven pictures: what the Bible says happens when someone who belongs to Jesus dies, and why Christians can be sad and hopeful at once.",
+        "older": "The question most people first ask beside a loss, answered plainly in seven pictures from the family catechism and the Study Bible, with the honest limits of what Christians know."
+      },
+      "mark": "when-we-die",
+      "frames": 7,
+      "stops": [
+        "new-creation",
+        "cross"
+      ],
+      "cards": [
+        "life-to-come"
+      ]
     },
     {
       "slug": "so-many-churches",
@@ -1855,13 +1881,38 @@
       "slug": "god-silent",
       "title": "Why does God seem silent sometimes?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "When you pray and nothing seems to happen, you are in good company. Seven pictures of people in the Bible who felt it too, and what God did.",
+        "older": "The felt silence of God, in seven pictures: the psalms of lament, Elijah at the mountain and Jesus' own cry from the cross, as the Study Bible and the site's page on feeling far from God read them."
+      },
+      "mark": "god-silent",
+      "frames": 7,
+      "stops": [
+        "return",
+        "cross"
+      ],
+      "cards": [
+        "god"
+      ]
     },
     {
       "slug": "science-and-the-bible",
       "title": "Are science and the Bible enemies?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Do you have to choose between loving God and loving science? Seven pictures on why the answer is no, and on what Christians agree and disagree about.",
+        "older": "Faith and science, in seven pictures, from the site's Honest Answer and the family catechism: the old war story, two kinds of question, a God who is not in the gaps, and the questions Christians still disagree on."
+      },
+      "mark": "science-and-the-bible",
+      "frames": 7,
+      "stops": [
+        "creation"
+      ],
+      "cards": [
+        "god"
+      ]
     }
   ]
 }
