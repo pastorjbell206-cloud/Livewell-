@@ -1,7 +1,7 @@
 ---
 area: can-we-trust-the-text
 slug: who-decides-what-the-text-says
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Who decides what the Greek New Testament says, and was there ever a single original to find?"
 ledger: docs/work/elite/apol-ledger.md, "Eleventh run: five more pieces in the text area"
 ---
@@ -44,7 +44,7 @@ This is an argument about a method and what its results can bear.
 
 1. A critical edition prints, at each place, the reading its editors judge earliest by stated criteria, and prints the main alternatives and their witnesses beneath it, so that each decision can be checked by anyone with the evidence.
 2. Editions made independently, by different teams with different methods and convictions, agree on the great bulk of the text and disagree at a small and known number of places.
-3. The earliest text the evidence reaches is the text circulating in the second century, and where the evidence shows early variation or revision, as in the Lord's Prayer or the ending of Mark, the variation is visible in the witnesses.
+3. The earliest text the evidence reaches is the text circulating in the second and third centuries, and where the evidence shows early variation or revision, as in the Lord's Prayer or the ending of Mark, the variation is visible in the witnesses.
 
 So: no one decides what the New Testament says by authority, and the field's caution about the word "original" marks the limit of the method without emptying its results. What the editions print is the earliest text the evidence can reach, and the evidence gives no sign of a different text standing behind it, except in the places where it shows one.
 

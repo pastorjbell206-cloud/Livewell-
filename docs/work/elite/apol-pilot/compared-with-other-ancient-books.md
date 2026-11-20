@@ -1,7 +1,7 @@
 ---
 area: can-we-trust-the-text
 slug: compared-with-other-ancient-books
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?"
 ledger: docs/work/elite/apol-ledger.md, "Eleventh run: five more pieces in the text area"
 ---
@@ -14,7 +14,7 @@ It's true, and it proves less than it's often made to. Counted honestly, the New
 
 ## The objection at its strongest
 
-For about half a century, popular Christian apologetics has made a comparison one of its first moves. Historians trust what Caesar and Tacitus wrote, the argument goes, though their works survive in a handful of late copies. The New Testament survives in thousands, some of them within a few generations of its writing. So anyone who doubts the New Testament's text but not Caesar's is applying a double standard. A chart usually follows, listing authors, numbers of copies and the gap in years, with Homer's Iliad in a distant second place.
+For decades, popular Christian apologetics has made a comparison one of its first moves. Historians trust what Caesar and Tacitus wrote, the argument goes, though their works survive in a handful of late copies. The New Testament survives in thousands, some of them within a few generations of its writing. So anyone who doubts the New Testament's text but not Caesar's is applying a double standard. A chart usually follows, listing authors, numbers of copies and the gap in years, with Homer's Iliad in a distant second place.
 
 Bart Ehrman, who teaches at the University of North Carolina and is among the best-known textual critics alive, grants the premise and denies the conclusion. In his textbook *The New Testament: A Historical Introduction to the Early Christian Writings* (6th ed., 2016), he grants that the New Testament is better attested than any other book from the ancient world. But he presses two objections. The first is that abundance isn't the same as earliness. The great majority of the manuscripts are medieval, and we have few from the first centuries, which is when changes were most likely to be made. A thousand copies made in the eleventh century tell you very well what the eleventh century read. The second objection goes deeper. Ehrman asks his readers to suppose that we had more manuscripts of Plato than of the New Testament, and whether that would make Plato more trustworthy. His answer is no. Knowing what an ancient author wrote is one question. Whether what he wrote is true is another, and no pile of manuscripts can answer it.
 

@@ -945,3 +945,21 @@ Cut or not used: full-Bible counts (756, 779; undated); Nida's employer; "decade
 | The harder-reading rule since the eighteenth century | Row f (Bengel) | Verified |
 
 Cut or not used: a 1999 Baylor dissertation by M. A. Proctor for the angry reading, and earlier commentators (Kilpatrick, Turner, Taylor, Manson) said to have adopted it (met only in secondary summaries); Metzger's explanation that verse 43 prompted the change (reported secondhand, so the piece gives the argument without his name); Bill Mounce's remarks on the NIV footnote; a Syriac explanation of the change (not found). No living author is quoted in this piece; the titles of Ehrman's essay and article are given as titles.
+
+# Twelfth run (2026-11-20): the editor's read of the text area's five, and the area "Who wrote the Gospels, when, and the canon"
+
+Method words as in the eleventh run. "S" is a WebSearch run in this run; the search tool returns summaries of pages, so "verified (secondary)" means a search summary of an encyclopedia, a publisher, a review, a catalogue, a journal record or a blog, not the primary text. "Tenth run" and "Eleventh run" mean rows in the sections above; "Repo" means a file in this repository. No book or primary text was read from this machine.
+
+## The editor's read of the five (changed facts and wording)
+
+| Piece | Change | Why, and how verified | Result |
+|---|---|---|---|
+| e | "For about half a century" becomes "For decades" (how long apologists have used the comparison) | The eleventh run cut the McDowell date (no result), so no length of time was verified | Softened; no new fact |
+| f | Step 3: the earliest text reached is the text circulating "in the second and third centuries", not "in the second century" | Tenth run rows: P66 and P75 around 200 on the usual dating and later on Nongbri's; P52 debated. "Second century" alone overclaimed | Corrected |
+| g | Step 1 rewritten: words have been taken out of God's word only if they belonged to the text as first written (the old step said a verse is "missing from a modern Bible only if" it was original, which does not follow) | Logic, no new fact | Corrected |
+| g | Majority-text editors (Robinson and Pierpont) are no longer counted among those who "keep to the King James"; the sentence now names those who defend the King James, its Greek text or the reading of most manuscripts | Eleventh run row g (their edition follows the majority, not the Textus Receptus) | Corrected |
+| h | Alter taken out of the list of translators who agree "on what Jesus did and said": he translated the Hebrew Bible, not the New Testament. Hart is now said to have translated the New Testament | Eleventh run row h (Alter has translated the Hebrew Bible; Hart, *The New Testament: A Translation*, 2017) | Corrected |
+| h | Modern versions translate from "scholarly editions of the Hebrew and Greek made from the manuscripts" (not "critical editions ... built on the earliest manuscripts", which does not describe the standard Hebrew edition) | General description, narrowed; "as other pages in this area describe for the Greek" | Narrowed |
+| h | Link restored: the shelf essay "How the Bible Gets Translated by the Room You're In" (/writing/how-the-bible-gets-translated-by) | Repo: `client/src/lib/shelf.json` lists it with status "live"; it is in `client/public/sitemap.xml`; `validate-links.mjs` counts shelf essays as pages. `scripts/lib/site-routes.mjs` did not read the shelf, so the eleventh run's validator could not resolve it; the resolver now counts public shelf essays (test: `server/site-routes-shelf.test.ts`) | Restored |
+| i | "anyone who says the question is closed hasn't read them" becomes "the question is best left open" | Tone (a jab at unnamed readers) | Softened |
+| i | "the church has always read four Gospels side by side, not one harmony" becomes "the church kept four Gospels side by side" | A Gospel harmony (Tatian's) was read in some Syriac churches for a time, so "always read" overclaimed; the narrower sentence needs no new fact | Narrowed |

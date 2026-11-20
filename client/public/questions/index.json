@@ -53,36 +53,36 @@
           "slug": "compared-with-other-ancient-books",
           "question": "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?",
           "blurb": "The famous comparison with corrected figures, and the one question it answers.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "who-decides-what-the-text-says",
           "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
           "blurb": "How a critical edition is made, step by step, and the serious question about the word \"original\".",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "king-james-and-the-missing-verses",
           "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
           "blurb": "Where the King James's Greek text came from, the verses one by one, and the case for the traditional text stated with respect.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "lost-in-translation",
           "question": "The Bible has been translated so many times. Hasn't the meaning been lost along the way?",
           "blurb": "How English Bibles are made, why they differ, what translation loses, and how a reader can find it.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "an-angry-jesus-mark-1-41",
           "question": "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?",
           "blurb": "Ehrman's case for an angry Jesus, the few witnesses behind it, and what the verse can and can't change.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -256,7 +256,7 @@
       "area": "text",
       "slug": "compared-with-other-ancient-books",
       "question": "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The search for one original text of the Gospels misunderstands how the early church handed them on",
@@ -266,7 +266,7 @@
       "area": "text",
       "slug": "who-decides-what-the-text-says",
       "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
-      "live": false
+      "live": true
     },
     {
       "claim": "\"Original text\" has several meanings, and the field has rarely said which it means",
@@ -276,7 +276,7 @@
       "area": "text",
       "slug": "who-decides-what-the-text-says",
       "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Greek text behind the Revised Version and modern Bibles rests on a few corrupt manuscripts; the traditional text the church used is right",
@@ -286,7 +286,7 @@
       "area": "text",
       "slug": "king-james-and-the-missing-verses",
       "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The reading of the majority of manuscripts, the Byzantine text, is usually original",
@@ -296,7 +296,7 @@
       "area": "text",
       "slug": "king-james-and-the-missing-verses",
       "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Most modern English Bibles explain the text instead of translating it",
@@ -306,7 +306,7 @@
       "area": "text",
       "slug": "lost-in-translation",
       "question": "The Bible has been translated so many times. Hasn't the meaning been lost along the way?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Mark 1:41 originally said Jesus became angry; scribes changed it to compassion",
@@ -316,7 +316,7 @@
       "area": "text",
       "slug": "an-angry-jesus-mark-1-41",
       "question": "Was Jesus angry or compassionate when he healed the leper in Mark 1:41? Did scribes soften him?",
-      "live": false
+      "live": true
     }
   ],
   "answers": {

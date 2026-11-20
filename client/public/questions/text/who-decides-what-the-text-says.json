@@ -1,7 +1,7 @@
 {
   "area": "text",
   "slug": "who-decides-what-the-text-says",
-  "status": "pending",
+  "status": "live",
   "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
   "ledger": {
     "file": "docs/work/elite/apol-ledger.md",
@@ -38,7 +38,7 @@
       "steps": [
         "A critical edition prints, at each place, the reading its editors judge earliest by stated criteria, and prints the main alternatives and their witnesses beneath it, so that each decision can be checked by anyone with the evidence.",
         "Editions made independently, by different teams with different methods and convictions, agree on the great bulk of the text and disagree at a small and known number of places.",
-        "The earliest text the evidence reaches is the text circulating in the second century, and where the evidence shows early variation or revision, as in the Lord's Prayer or the ending of Mark, the variation is visible in the witnesses."
+        "The earliest text the evidence reaches is the text circulating in the second and third centuries, and where the evidence shows early variation or revision, as in the Lord's Prayer or the ending of Mark, the variation is visible in the witnesses."
       ],
       "conclusion": "So: no one decides what the New Testament says by authority, and the field's caution about the word \"original\" marks the limit of the method without emptying its results. What the editions print is the earliest text the evidence can reach, and the evidence gives no sign of a different text standing behind it, except in the places where it shows one.",
       "after": "The weight sits on the third step, because it is where Parker's challenge bites. A reader can test it by asking for the cases: Parker's own examples are drawn from variation we can see, which is what the step claims. What the step can't do is reach behind the second century, and the reply below takes that up.",
