@@ -482,6 +482,13 @@
           "blurb": "Libet's experiments and what has become of their interpretation, determinism, compatibilism and libertarian freedom, the Reformed and Arminian accounts each in its own terms, and why responsibility before God is confessed by both.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "near-death-experiences",
+          "question": "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?",
+          "blurb": "What is reported and how researchers explain it, as a reference work sets out both sides, why the evidence is at an impasse, and why Christian hope rests on the resurrection of Jesus, not on reports from the edge of death; with a word for the grieving and for anyone thinking of death.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1783,6 +1790,16 @@
       "area": "science",
       "slug": "neuroscience-and-free-will",
       "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+      "live": false
+    },
+    {
+      "claim": "Accurate perceptions reported during near-death experiences, which the senses could not have supplied, are evidence that a person can survive the body",
+      "proponent": "J. P. Moreland and Gary Habermas",
+      "work": "Beyond Death",
+      "year": 1998,
+      "area": "science",
+      "slug": "near-death-experiences",
+      "question": "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?",
       "live": false
     },
     {

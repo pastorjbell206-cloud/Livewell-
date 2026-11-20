@@ -69,7 +69,7 @@ describe("the questions library's data", () => {
     expect(authors.pieces.length).toBeGreaterThan(0);
     expect(authors.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
     expect(science.live).toBe(false);
-    expect(science.pieces.length).toBe(9);
+    expect(science.pieces.length).toBe(10);
     expect(science.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
     expect(jesus.live).toBe(false);
     expect(jesus.pieces.length).toBe(10);
