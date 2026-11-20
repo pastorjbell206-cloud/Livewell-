@@ -8326,3 +8326,25 @@ Four searches (7:21; the Pauline privilege; Westminster Confession 24.6; the Aug
 | Romans 7:2; Psalm 68:5; Ruth; 1 Timothy 5:14 | 36-40 | BSB | BSB text |
 
 Cut: girls' age at marriage (deep note); surgery to hide circumcision (deep note; not checked); grain shortages named as fact; the "three years" of Suetonius.
+
+## The plain notes on 1 Corinthians 8 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Temples of Apollo, Aphrodite, Asclepius; meat from sacrifices eaten at temple feasts and sold; dining rooms at the Asclepius sanctuary; the Sarapis invitation papyrus (P.Oxy. 110) | 1-3 | Roman-world portrait | wrom-ledger (Fotopoulos 2003; P.Oxy. 110) |
+| Temple meals at birthdays, weddings, guilds, festivals; refusing cost standing; meat rare for the poor except at festivals | 1-3 | Deep note `historical`; Roman-world portrait (meat for festivals and the well off) | Repository |
+| 8:1 unmarked in the BSB; many translators take it as the Corinthians' words | 1-3 | BSB text; deep note `cultural` | Repository |
+| Physioō; oikodomeō | 1-3 | Greek text; deep note `words` | Repository |
+| Hosea 13:4; Exodus 2:25; Galatians 4:9; Jeremiah 9:24 | 1-3 | BSB | BSB text |
+| Emperors honoured as divine in the east; kyrios a ruler's title | 4-6 | Roman-world portrait | wrom-ledger |
+| The Shema (Deuteronomy 6:4), recited; ‘Lord’ and ‘God’ in its Greek form; Mark 12:29 | 4-6 | BSB; Romans notes ("recited") | Repository |
+| Paul writing about twenty to twenty-five years after the crucifixion | 4-6 | explorer-ledger (the site's dating) | Ledger |
+| Bauckham, Jesus and the God of Israel (2008), reads 8:6 as placing Jesus inside the Shema; some read it more modestly | 4-6 | apol-ledger (search) | Ledger |
+| The Nicene Creed's pairing of one God, the Father, and one Lord, Jesus Christ, through whom all things were made | 4-6 | The creed, paraphrased | Not quoted |
+| Psalm 96:5; Isaiah 44:6; Jeremiah 10:5; Deuteronomy 10:17; Psalm 33:6; Proverbs 3:19; John 1:1, 3 | 4-6 | BSB | BSB text |
+| The ‘weak’ recent converts; conscience (syneidēsis) | 7-13 | Deep note `cultural`, `words` | Repository |
+| Leviticus 19:14; Numbers 25:2; Exodus 34:15; Daniel 1:8; Matthew 18:6; Romans 14:21; Galatians 2:3-5 | 7-13 | BSB | BSB text |
+
+Also in this commit: 3:10-15 `happening`, a colon before a quotation that starts in lower case (no change of words).
