@@ -10990,24 +10990,44 @@
       "application": "Say the guilt out loud to God and to a wise person, rather than letting it run in the dark where it only grows. A trauma-informed counselor and your pastor can help you tell the true story, that you are not God, that you could not have held back death, and that living is not a crime. Where there is real wrong, bring it to the cross, which is built exactly for that, and refuse the lie that honoring the dead requires the slow destruction of your own life.",
       "verses": [
         {
+          "ref": "Acts 12:2",
+          "text": "He had James, the brother of John, put to death with the sword."
+        },
+        {
+          "ref": "Ecclesiastes 9:11",
+          "text": "I saw something else under the sun: The race is not to the swift, nor the battle to the strong; neither is the bread to the wise, nor the wealth to the intelligent, nor the favor to the skillful. For time and chance happen to all."
+        },
+        {
+          "ref": "Luke 13:4",
+          "text": "Or those eighteen who were killed when the tower of Siloam collapsed on them: Do you think that they were more sinful than all the others living in Jerusalem?"
+        },
+        {
+          "ref": "John 21:21-22",
+          "text": "When Peter saw him, he asked, “Lord, what about him?” Jesus answered, “If I want him to remain until I return, what is that to you? You follow Me!”"
+        },
+        {
+          "ref": "2 Samuel 18:33",
+          "text": "The king was shaken and went up to the gate chamber and wept. And as he walked, he cried out, “O my son Absalom! My son, my son Absalom! If only I had died instead of you, O Absalom, my son, my son!”"
+        },
+        {
           "ref": "Romans 8:1",
           "text": "Therefore, there is now no condemnation for those who are in Christ Jesus."
         },
         {
-          "ref": "1 John 3:20",
-          "text": "Even if our hearts condemn us, God is greater than our hearts, and He knows all things."
+          "ref": "1 John 3:19-20",
+          "text": "And by this we will know that we belong to the truth, and will assure our hearts in His presence: Even if our hearts condemn us, God is greater than our hearts, and He knows all things."
         },
         {
-          "ref": "Psalm 103:12",
-          "text": "As far as the east is from the west, so far has He removed our transgressions from us."
+          "ref": "2 Corinthians 7:10",
+          "text": "Godly sorrow brings repentance that leads to salvation without regret, but worldly sorrow brings death."
         },
         {
-          "ref": "Psalm 56:8",
-          "text": "You have taken account of my wanderings. Put my tears in Your bottle— are they not in Your book?"
+          "ref": "Isaiah 43:1-2",
+          "text": "Now this is what the LORD says— He who created you, O Jacob, and He who formed you, O Israel: “Do not fear, for I have redeemed you; I have called you by your name; you are Mine! When you pass through the waters, I will be with you; and when you go through the rivers, they will not overwhelm you. When you walk through the fire, you will not be scorched; the flames will not set you ablaze."
         },
         {
-          "ref": "Isaiah 43:1",
-          "text": "Now this is what the LORD says— He who created you, O Jacob, and He who formed you, O Israel: “Do not fear, for I have redeemed you; I have called you by your name; you are Mine!"
+          "ref": "Psalm 116:8-9",
+          "text": "For You have delivered my soul from death, my eyes from tears, my feet from stumbling. I will walk before the LORD in the land of the living."
         }
       ],
       "related": [
