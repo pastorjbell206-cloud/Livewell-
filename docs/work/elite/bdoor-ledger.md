@@ -7001,3 +7001,47 @@ One web search.
 | Acts 12:2 and Peter freed; Luke 21:18; Matthew 23:37; Psalm 9:10; Matthew 27:43; Luke 10:19 | all | BSB; context page | BSB text |
 
 The context page is named on the page by its title; no link markup is added to the data.
+
+## The plain notes on Psalm 92 (2026-11-20)
+
+One web search (shared with Psalms 93 and 94).
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The only heading naming the Sabbath (Psalm 18's heading names "the day" of a rescue, not a day of the week) | BSB headings | Script; "names a day" narrowed |
+| The Mishnah lists a psalm the Levites sang in the temple each day; 92 for the Sabbath; still sung in Jewish Sabbath worship | Mishnah Tamid 7:4 as given by myjewishlearning.com "Psalms for Every Day of the Week"; outorah.org "Tamid 7:3-4"; mishnah.org; repository deep note (historical) | Search. The tractate not named on the page; "an early collection of Jewish teaching" |
+| Sabbath remembers creation (Exodus 20:11); palm and cedar; grass | Repository deep note (cultural); BSB | BSB text |
+| Psalm 1:3; Jeremiah 17:8; Mark 2:27; Hebrews 4:9 | BSB | BSB text |
+
+## The plain notes on Psalm 93 (2026-11-20)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| "The LORD reigns" a coronation cry; 93 and 95 to 99 sing the LORD is King; Book Four's answer to Psalm 89 a reading | Book page ("Five books"); BSB (96:10, 97:1, 99:1) | Site's own teaching; script |
+| The Mishnah's list: 93 on the sixth day | Search shared with 92 (myjewishlearning.com; outorah.org) | Search |
+| Neighbours' storm god and the sea; here no battle | Repository deep note (cultural); earlier row (Psalm 74) | Site's own teaching. Mowinckel and the enthronement festival (deep note) not repeated |
+| Mark 4:39, 41; Revelation 19:6 | BSB | BSB text |
+
+## The plain notes on Psalm 94 (2026-11-20)
+
+| Claim | Source | Checked by |
+|---|---|---|
+| The widow, foreigner and fatherless under God's protection (Exodus 22:22-23) | Repository deep note (cultural); BSB | BSB text |
+| "Corrupt throne": foreign rulers or Israel's own courts | Repository deep note (historical) | Stated as views |
+| The Mishnah's list: 94 on the fourth day | Search shared with 92 | Search. The Greek heading (deep note) not repeated |
+| Romans 12:19; Luke 18:7; 1 Peter 5:7 | BSB | BSB text |
+| "God of vengeance" pointed to the book page's part on the cursing psalms | Book page | Site's own teaching |
+
+Care line on anxiety (verse 19): a friend, a pastor or a doctor.
+
+## The plain notes on Psalm 95 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sung as worshippers entered the temple (many scholars) | 1-6 | Repository deep note (historical) | Stated as a view |
+| Gods of regions; bowing as before a king | 1-6 | Repository deep note (cultural) | Site's own teaching |
+| Massah "testing", Meribah "quarrelling" (Exodus 17:7); forty years; Numbers 14:22-23 | 7-11 | BSB; earlier row (Psalm 81) | BSB text |
+| A priest or prophet's warning after praise, or the psalm's own design | 7-11 | Repository deep note (hard) | Stated as views |
+| Hebrews 3:7-11, 13; 4:7 ("through David"), 9; Matthew 11:28; Philippians 2:10; Revelation 4:11 | all | BSB | BSB text |
