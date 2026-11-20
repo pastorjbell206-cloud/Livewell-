@@ -7965,3 +7965,23 @@ Cut: height and depth as astrological terms (not checked); Orthodox teaching on 
 Cut: Chrysostom's reading of "prepared" (named in the verse note, not checked
 here); Barth's reading of election (not checked); Edom's later history and
 John Hyrcanus; the RSV of 1946; Metzger and Harris by name.
+
+## The plain notes on Romans 10 (2026-11-20)
+
+No web searches; everything below rests on the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paul's own former zeal (Philippians 3:6; Acts 22:3; Galatians 1:14) | 1-4 | BSB; repository deep note (`historical`) | BSB text |
+| Telos: end or goal, or both; Matthew 5:17; Romans 7:12; 3:31 | 1-4 | Greek text (G5056); repository deep note | Stated as readings, no side |
+| 1 Samuel 12:23; Deuteronomy 30:6; Numbers 25:11; 1 Kings 19:10 | 1-4 | BSB | BSB text |
+| Kyrios for God's name in the Greek Old Testament; used of the emperor; Acts 25:26 "our sovereign one" (Greek "the lord"), Festus of the emperor (Nero) | 5-13 | Repository deep note (`historical`); wrom-ledger Part 4 (Acts 25:26) | Ledger; the cost of confessing stated generally (repository `cultural`) |
+| Leviticus 18:5; Deuteronomy 30:12, 14 in their setting; Isaiah 28:16; Joel 2:28, 32; Acts 2:21; 1 Corinthians 12:3 | 5-13 | BSB | BSB text |
+| Baptism and conversion differences pointed to Romans 6 and Acts 2 notes | 5-13 | Repository | Repository |
+| Messengers and heralds; Isaiah 52:7 in its setting | 14-21 | Repository deep note (`cultural`) | Repository; BSB text |
+| Isaiah 53:1; Psalm 19:4; Deuteronomy 32:21; Isaiah 65:1-2 | 14-21 | BSB | BSB text |
+| Most people could not read; letters read aloud | 14-21 | wrom-ledger Part 7 (Harris; reading aloud) | Ledger; stated generally |
+| Those who never heard: three answers (explicit faith; inclusivist; at or after death), no fate stated; the Honest Answer | 14-21 | Repository deep note (`hard`); `answers.ts` | Stated as views, no side |
+
+Cut: the date of the confession "Jesus is Lord" as earliest (stated only as
+"one of the oldest"); Deissmann's papyri on Nero as lord (not reached).
