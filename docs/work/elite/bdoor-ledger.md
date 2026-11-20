@@ -10434,3 +10434,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Care line ‘If you are afraid that you have fallen away ...’ | 12-15 | galatians/plain/5.json (1-6) | Word for word |
 | Exodus 7:3; 17:3; Proverbs 27:17; Psalm 106:24-25; Deuteronomy 12:9 | 12-15; 16-19 | BSB | BSB text |
 | The redeemed themselves rebelled; apeitheō disobey or refuse to believe | 16-19 | verses/3.json (16, 18-19) | Repository |
+
+## The plain notes on Hebrews 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Wilderness generation had good news too; hearing not joined with faith | 1-5 | verses/4.json (2) | Repository |
+| ‘We enter’ present or sure future; many hold both | 1-5 | verses/4.json (3) | Repository |
+| God's rest finished since creation; God rested not from tiredness but completion | 1-5 | verses/4.json (3); chapter deep note `cultural` | Repository |
+| Genesis 2:2 BSB wording; Hebrews quotes the second half in the Greek wording | 1-5 | verses/4.json (4-5); BSB | Repository; BSB text |
+| Two texts linked by a shared word, a Jewish method | 1-5 | Chapter deep note `literary`; verses/4.json (4-5) | Repository (method not named) |
+| Joshua and Jesus the same name in Greek; Joshua 21:44; Joshua 1:13 | 6-11 | Chapter deep note `historical`; verses/4.json (8); BSB | Repository; BSB text |
+| Psalm 95 has no Hebrew heading; Greek heading names David | 6-11 | verses/4.json (6-7) | Repository |
+| Sabbatismos first known occurrence; Sabbath-keeping, not mere cessation; ‘people of God’ a title for Israel | 6-11 | verses/4.json (9); chapter deep note `words` | Repository |
+| Verse 10 readings: rest from works to earn standing; rest at life's end (Revelation 14:13); compatible | 6-11 | verses/4.json (10) | Repository |
+| Sabbath views: Seventh-day Adventists; Reformed and Presbyterian (Lord's Day); Lutherans, Baptists, evangelicals (fulfilled in Christ) | 6-11 | Chapter deep note `hard` | Repository wording, no side (Seventh Day Baptists and Westminster not named) |
+| Exodus 20:11; Deuteronomy 5:15 | 6-11 | BSB; chapter deep note `cultural` | BSB text |
+| Sword picture from cutting a sacrifice; soul and spirit poetic for the whole person; trichotomy and dichotomy, not settled | 12-13 | Chapter deep note `cultural`; verses/4.json (12) | Repository, no side |
+| Trachēlizō: wrestler's neck, sacrificial victim; logos wordplay | 12-13 | verses/4.json (13) | Repository |
+| Jeremiah 23:29; Isaiah 55:11; Psalm 139:1-2 | 12-13 | BSB | BSB text |
+| Hinge of the letter, opening the high-priest section to chapter 10 | 14-16 | Chapter deep note `story` | Repository |
+| Sumpathēsai (suffer with); weaknesses frailties not sins; proserchomai of priests approaching; parrēsia; throne of grace may echo the mercy seat | 14-16 | verses/4.json (15, 16) | Repository |
+| Chalcedon ‘in all things like unto us, without sin’; a complete human nature | 14-16 | creeds/documents/chalcedonian-definition.json; verses/4.json (15) | Repository text |
+| Leviticus 16:2; Exodus 25:22; Psalm 103:13-14; Isaiah 53:3 | 14-16 | BSB | BSB text |
