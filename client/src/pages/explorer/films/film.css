@@ -132,6 +132,15 @@
   width: 48px;
   padding: 0;
 }
+@media (max-width: 559px) {
+  .fp .fp-play {
+    min-width: 0;
+    padding: 0 16px;
+  }
+  .fp .fp-step {
+    padding: 0 12px;
+  }
+}
 .fp .btn:disabled {
   opacity: 0.4;
   cursor: default;
