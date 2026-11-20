@@ -12935,24 +12935,44 @@
       "application": "Name the fear plainly rather than letting it run unspoken in the dark. Take the next faithful step even while afraid, since courage is fear that has prayed and moved anyway. Surround yourself with people who steady you. And anchor your mind on the promise of God's presence rather than on the size of the threat, returning to it as often as the fear returns.",
       "verses": [
         {
-          "ref": "Joshua 1:9",
-          "text": "Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.”"
-        },
-        {
-          "ref": "Isaiah 41:10",
-          "text": "Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will surely help you; I will uphold you with My right hand of righteousness."
+          "ref": "Isaiah 43:1-2",
+          "text": "Now this is what the LORD says— He who created you, O Jacob, and He who formed you, O Israel: “Do not fear, for I have redeemed you; I have called you by your name; you are Mine! When you pass through the waters, I will be with you; and when you go through the rivers, they will not overwhelm you. When you walk through the fire, you will not be scorched; the flames will not set you ablaze."
         },
         {
           "ref": "Psalm 27:1",
-          "text": "Of David. The LORD is my light and my salvation— whom shall I fear? The LORD is the stronghold of my life— whom shall I dread?"
+          "text": "The LORD is my light and my salvation— whom shall I fear? The LORD is the stronghold of my life— whom shall I dread?"
         },
         {
-          "ref": "2 Timothy 1:7",
-          "text": "For God has not given us a spirit of fear, but of power, love, and self-control."
+          "ref": "Genesis 15:1",
+          "text": "After these events, the word of the LORD came to Abram in a vision: “Do not be afraid, Abram. I am your shield, your very great reward.”"
         },
         {
-          "ref": "Psalm 56:3",
-          "text": "When I am afraid, I put my trust in You."
+          "ref": "Exodus 14:13-14",
+          "text": "But Moses told the people, “Do not be afraid. Stand firm and you will see the LORD’s salvation, which He will accomplish for you today; for the Egyptians you see today, you will never see again. The LORD will fight for you; you need only to be still.”"
+        },
+        {
+          "ref": "Psalm 23:4",
+          "text": "Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me; Your rod and Your staff, they comfort me."
+        },
+        {
+          "ref": "Psalm 34:4",
+          "text": "I sought the LORD, and He answered me; He delivered me from all my fears."
+        },
+        {
+          "ref": "Matthew 10:29-31",
+          "text": "Are not two sparrows sold for a penny? Yet not one of them will fall to the ground apart from the will of your Father. And even the very hairs of your head are all numbered. So do not be afraid; you are worth more than many sparrows."
+        },
+        {
+          "ref": "Mark 6:48-50",
+          "text": "He could see that the disciples were straining to row, because the wind was against them. About the fourth watch of the night, Jesus went out to them, walking on the sea. He intended to pass by them, but when they saw Him walking on the sea, they cried out, thinking He was a ghost— for they all saw Him and were terrified. But Jesus spoke up at once: “Take courage! It is I. Do not be afraid.”"
+        },
+        {
+          "ref": "Mark 14:33-36",
+          "text": "He took with Him Peter, James, and John, and began to be deeply troubled and distressed. Then He said to them, “My soul is consumed with sorrow to the point of death. Stay here and keep watch.” Going a little farther, He fell to the ground and prayed that, if it were possible, the hour would pass from Him. “Abba, Father,” He said, “all things are possible for You. Take this cup from Me. Yet not what I will, but what You will.”"
+        },
+        {
+          "ref": "Revelation 1:17-18",
+          "text": "When I saw Him, I fell at His feet like a dead man. But He placed His right hand on me and said, “Do not be afraid. I am the First and the Last, the Living One. I was dead, and behold, now I am alive forever and ever! And I hold the keys of Death and of Hades."
         }
       ],
       "related": [

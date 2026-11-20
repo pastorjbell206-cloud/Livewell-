@@ -3011,6 +3011,26 @@
     "setting-boundaries",
     "wayward-child"
    ]
+  },
+  "fear-and-courage": {
+   "phrases": [
+    "scared all the time",
+    "afraid something bad will happen",
+    "panic attack",
+    "cant stop being afraid",
+    "fear is controlling my life",
+    "waiting for test results and scared",
+    "afraid to die",
+    "scared to death",
+    "terrified all the time",
+    "afraid of everything"
+   ],
+   "not": [],
+   "related": [
+    "courage",
+    "anxiety",
+    "fear-of-the-future"
+   ]
   }
  }
 }
