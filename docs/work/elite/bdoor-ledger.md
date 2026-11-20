@@ -9495,3 +9495,30 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | ‘Do not handle ...’ "may" quote the teachers' slogans | 20-23 | Standard commentaries | Stated as "may" |
 | Jesus fasted (Matthew 4:2); Paul disciplined his body (1 Corinthians 9:27); Isaiah 29:13 quoted by Jesus (Mark 7:6-7) | 20-23 | BSB | BSB text |
 | Isaiah 29:13; 58:6 | 20-23 | BSB | BSB text |
+
+## The plain notes on Colossians 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The turn at 3:1; the teaching's interest in visions of heaven | 1-4 | Repository `setting`; chapter 2 deep note | Repository |
+| Psalm 110:1; 73:25 | 1-4 | BSB | BSB text |
+| Sex outside marriage, especially for men, widely accepted; the vices common, not rare | 5-11 | Deep note `historical` | Repository |
+| Barbarians those who did not speak Greek; Scythians north of the Black Sea, thought the roughest | 5-11 | Deep note `historical` | Repository |
+| Clothing picture | 5-11 | Deep note `cultural` | Repository |
+| Genesis 1:27; Ezekiel 11:19; Deuteronomy 10:19 | 5-11 | BSB | BSB text |
+| Brabeuō, to act as umpire; thanks three times in three verses (15, 16, 17) | 12-17 | Standard lexicons; BSB | BSB text counted |
+| Forgiveness not trust or staying in danger; pointers to the Matthew 18 and Luke 17 notes; abuse care lines | 12-17 | matthew/plain/18.json; luke/plain/17.json; genesis/plain/16.json | Repository wording; care lines word for word |
+| Exodus 34:6; Leviticus 19:18; Psalm 95:1-2 | 12-17 | BSB | BSB text |
+| Roman household power; household writers; ‘in the Lord’; husbands not to be harsh | 18-19 | Deep note `cultural`; context guide household-codes-in-context | Repository |
+| What all agree; complementarian and egalitarian readings; no side; abuse care lines | 18-19 | Chapter note `hard`; ephesians/plain/5.json; genesis/plain/16.json; romans/plain/12.json | Repository wording; care lines word for word |
+| Genesis 1:27; Malachi 2:14; Proverbs 15:1 | 18-19 | BSB | BSB text |
+| Father's legal power; harsh discipline common | 20-21 | Ephesians 6 deep note `cultural` | Repository |
+| Athumeō, to lose heart | 20-21 | Standard lexicons | Standard |
+| Child-harm care lines | 20-21 | matthew/plain/18.json | Word for word, no phone number |
+| Exodus 20:12; Proverbs 1:8; Exodus 34:6 | 20-21 | BSB | BSB text |
+| Roman slavery: a large part of city populations; war, debt, birth, abandonment; not race-based; skilled posts, hope of freedom; legal power; a slave property, not an heir | 22-25 | Deep note `historical`; Ephesians 6 deep note | Repository. "Could not inherit anything" narrowed to "property, not an heir" |
+| Onesimus carried the letter (4:9); Philemon 16 | 22-25 | BSB | BSB text |
+| Paul does not command abolition; misuse in the Atlantic trade and the American South; wrong; not a rule for employment | 22-25 | Chapter note `hard`; ephesians/plain/6.json; context guide the-slavery-texts | Repository wording |
+| Leviticus 25:43; Deuteronomy 24:15; Job 31:15; Deuteronomy 10:17 | 22-25 | BSB | BSB text |
