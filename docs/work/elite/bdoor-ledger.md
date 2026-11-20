@@ -8908,3 +8908,286 @@ Cut: 1 Clement (deep note), not needed.
 ## 2 Corinthians complete (2026-11-20)
 
 All thirteen chapters in plain words. Twelve web searches for chapters 8 to 13, listed above.
+
+## Galatians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/galatians/intro.json`,
+field `teaching`. 7 searches, run on 2026-11-20. Views are paraphrased; scholars
+are named only where a ledger row already carries them. Scripture is the BSB in the
+repository, checked word for word by `scripts/validate-bible-notes.mjs` and a strict
+check that matches each quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul named (1:1; 5:2); almost no scholar doubts it; the seven undisputed letters; "all the brothers with me" (1:2) unnamed | BSB; repository `author` | Repository |
+| Scribes usually wrote letters; the sender's closing in his own hand; most think Paul took the pen at 6:11; reasons for large letters unknown (eyes, hands, emphasis) | Deep note on 6 `historical` | Repository. Stated as guesses |
+| Celtic tribes crossed into Asia Minor in the 200s BC and settled around Ancyra; Greeks called them Galatians; Rome made Galatia a province in 25 BC with Ancyra its chief city; the province reached south to Pisidian Antioch, Iconium, Lystra, Derbe | Reference works; repository `date`, `setting` | Search: en.wikipedia.org "Galatia (Roman province)", "History of Ankara"; livius.org "Ancyra (Ankara)" (metropolis of the new province, 25 BCE). "278 BC" not given; "the 200s BC" |
+| North Galatian view: the old tribal land; Acts 16:6; 18:23; common in the early church and among many scholars of the 1800s; mid-50s date | Repository `date` (names Lightfoot); scholarship | Search: newadvent.org Catholic Encyclopedia "Epistle to the Galatians"; gospelstudies.org.uk Bruce, "Galatian Problems 4"; jesuswalk.com introduction. Lightfoot and Ramsay not named |
+| South Galatian view: churches of Acts 13 and 14; Paul uses provincial names; Barnabas named in the letter and with Paul only on the first trip (Acts 15:39); many today hold it; allows an early or later date | Scholarship; BSB | Search: as above (the south view "has gained ground"; tied to the early date). Barnabas at 2:1, 9, 13 from BSB |
+| Galatians 2 and Acts: council, famine visit (Acts 11), or a private meeting; three views as on the Acts book page and the Acts 11 and 15 notes | acts/intro.json `letters`; acts/plain/11.json; acts/plain/15.json | Repository |
+| Jerusalem council about AD 48 to 50 | Reference works | Search: en.wikipedia.org "Council of Jerusalem" (c. 48 to 50); biblegateway.com Encyclopedia of the Bible "Council of Jerusalem" (48 or 49); christianitytoday.com "Dates to Debate" |
+| Galatians late 40s (south, before the council) or early to mid 50s (after, from Ephesus or Macedonia); Romans about AD 57 | Repository `date`; Romans book page ledger | Search as above (Bruce: the eve of the council; north view from Ephesus). Stated as two views, no side |
+| The teachers: Jewish believers in Jesus; circumcision (5:2-3; 6:12-13); holy days (4:10); may have charged Paul with pleasing people (1:10); their case from Genesis 17 | Repository `setting`; BSB | Repository. Stated in its holders' terms |
+| Antioch: Peter, Barnabas and Paul ate with Gentile believers; Acts 15:1; the Jerusalem leaders agreed (2:6-9) | BSB | BSB text |
+| Old Testament quotations: Genesis 15:6 (3:6); Genesis 12:3 (3:8); Deuteronomy 27:26 (3:10); Habakkuk 2:4 (3:11); Leviticus 18:5 (3:12); Deuteronomy 21:23 (3:13); Isaiah 54:1 (4:27); Genesis 21:10 (4:30); Leviticus 19:18 (5:14); Psalm 125:5 and 6:16 as an echo | BSB; deep notes | BSB text. Paul's following of the old Greek stated generally; each case in the chapter notes |
+| Romans 7:12; Romans 9:4 | BSB | BSB text |
+| Works of the law: traditional reading; Sanders 1977; Dunn 1982; Wright; no side | Romans book page ledger (bibleodyssey.com; Wikipedia "E. P. Sanders") | Ledger. Same wording as the Romans book page, shortened |
+| Pistis Christou; Hays 1983; no side | Romans book page ledger (crossway.org; bibleodyssey.com; thegospelcoalition.org) | Ledger |
+| Luther lectured on Galatians more than once (1516 to 1519; again in the early 1530s); a commentary from the later lectures published 1535; a table remark: his own epistle, to which he was betrothed, his Katie von Bora | Luther | Search: media.ctsfw.edu (lectures 1516-19 and later; remark dated 1531, name rendered Catherine); cph.org Pelikan preface PDF ("my epistle, to which I am betrothed. It is my Katie von Bora"); gutenberg.org 1549. Paraphrased; no date given for the remark |
+| Bunyan came on an old English copy of Luther's Galatians; Grace Abounding (1666): apart from the Bible he preferred it to all books he had seen, ‘most fit for a wounded conscience’; long feared he could not be saved | Bunyan | Search: wicketgate.co.uk "The Most Fit Book" (tattered copy, 1650s; English translation 1575); cambridge.org Renaissance Quarterly article titled with the phrase; donaldmacleod.org.uk "Luther on Galatians"; gutenberg.org 654. Earlier ledger (Mark 3) for 1666. Only the four-word phrase quoted |
+| Bunyan a tinker; later wrote The Pilgrim's Progress | Standard | Standard biographical facts; no year given |
+| 3:28 read in debates on slavery, race, men and women | Deep note on 3 `hard` | Repository, stated generally |
+| Contempt for Jews rejected; pointer to the Acts 2:22-28 note | acts/plain/2.json | Repository wording |
+| Christian nationalism and prosperity teaching named as errors without naming anyone | CLAUDE.md orthodoxy guardrails | No factual claim |
+| Map: Ancyra 39.92, 32.85 (Ankara city centre) | Gazetteers | Search: latlong.net, geodatos.net (39°55′11″N, 32°51′15″E). The ancient city lies under the modern centre |
+| Map: Pisidian Antioch, Iconium, Lystra, Derbe (site uncertain), Tarsus, Antioch in Syria, Damascus, Jerusalem | wmap-ledger; Acts map | Ledger. All inside the "mediterranean" frame |
+| Lystra stoning (Acts 14:19) and the marks of 6:17, "if" the letter went south | Deep note on 6 `historical` | Repository |
+
+Cut: Lightfoot and Ramsay by name; the year 278 BC; the date of Luther's table
+remark; the year Pilgrim's Progress appeared; Pessinus and Cybele (kept for the
+5:12 note if checked there).
+
+## The plain notes on Galatians 1 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter opening form; apostle "one sent"; resurrection named in the first sentence | 1-5 | Deep note `cultural`, `literary`; BSB | Repository |
+| ‘Grace and peace’: a Greek greeting word and the Jewish wish of peace joined | 1-5 | Standard; earlier ledger (Romans 1, 1 Corinthians 1) | Ledger |
+| Two ages, this age and the age to come, in Jewish thought; the new age broken in | 1-5 | Deep note `literary` | Repository |
+| Salvation God's own act through the cross, as confession | 1-5 | BSB 1:4; CLAUDE.md confessional floor | Stated as confession |
+| Numbers 6:25-26; Isaiah 53:12; Psalm 115:1 | 1-5 | BSB | BSB text |
+| No thanksgiving (only Titus besides); letters read aloud | 6-10 | Deep note `cultural` | Repository |
+| Metatithēmi used of changing sides, turning away | 6-10 | Standard lexicons | Stated generally |
+| Euangelion used for news of victory or a ruler's birth | 6-10 | Deep note `words` (G2098) | Repository |
+| Anathema, in the Greek Old Testament for what is handed over to God; Paul includes himself | 6-10 | Deep note `words` (G0331), `hard` | Repository |
+| Not a licence to curse or harm; pointer to the 1 Corinthians 16:22 note; Romans 14 | 6-10 | Deep note `hard`; 1-corinthians/plain/16.json | Repository wording |
+| Deuteronomy 13:2-3; Isaiah 52:7; 1 Samuel 16:7 | 6-10 | BSB | BSB text |
+| Pharisees a movement keeping the law and its traditions; Philippians 3:5 | 11-17 | Deep note `historical`; BSB | Repository |
+| Zeal recalling Phinehas (Numbers 25) | 11-17 | Deep note `words` (G2207), `cultural` | Repository. The Maccabees not named |
+| ‘Reveal His Son in me’ two senses; Acts 9 the outward story | 11-17 | Deep note `words` (G0602); BSB | Stated as readings |
+| Arabia most likely the Nabataean kingdom; Aretas (2 Corinthians 11:32); what Paul did there unknown | 11-17 | Deep note `historical`; Acts 9 ledger row on Aretas IV | Repository; ledger |
+| 1 Corinthians 15:3 and revelation: two different questions, "most readers" | 11-17 | Commentaries' standard harmonisation | Stated as most readers' view |
+| Jeremiah 1:5; Isaiah 49:1, 6; Numbers 25:11 | 11-17 | BSB | BSB text |
+| Cephas Aramaic for rock; Peter in Greek | 18-24 | Deep note `historical`; John 1:42 | Repository |
+| Three years possibly by inclusive counting | 18-24 | Deep note `historical` | Repository |
+| James the Lord's brother; John 7:5; 1 Corinthians 15:7; three readings of ‘brother’, pointer to the Mark 3:31-35 note | 18-24 | BSB; mark/plain/3.json | Repository |
+| Acts 9:26-30 differences (Barnabas; Tarsus); Paul's oath | 18-24 | BSB | BSB text |
+| Tarsus in Cilicia (Acts 22:3) | 18-24 | BSB | BSB text |
+| 1 Samuel 12:5; Isaiah 61:3 | 18-24 | BSB | BSB text |
+
+## The plain notes on Galatians 2 (2026-11-20)
+
+No new searches (the book page searches on the council and Galatians 2 are reused). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Fourteen years from the call or the first visit | 1-5 | Deep note `historical` | Repository |
+| Barnabas a Levite from Cyprus (Acts 4:36); brought Paul to the apostles (Acts 9:27); Titus a Greek, a test case | 1-5 | BSB; deep note `cultural` | Repository |
+| ‘Running in vain’ a race picture | 1-5 | Standard; 1 Corinthians 9:24-27 | Stated generally |
+| Galatians 2 and Acts 11 and 15: three views; pointers to the Acts 11:27-30 and 15:6-11 notes and the book page | 1-5 | acts/plain/11.json; acts/plain/15.json | Repository. No side |
+| Genesis 17:10; 15:6; 12:3; Isaiah 56:7 | 1-5 | BSB | BSB text |
+| Pillars; right hand of fellowship a public gesture of agreement; one gospel, two fields | 6-10 | Deep note `cultural`, `literary` | Repository |
+| The collection for Jerusalem (Romans 15:26; 2 Corinthians 8 and 9) | 6-10 | BSB; 2 Corinthians notes | Repository |
+| Deuteronomy 10:17; 15:11 | 6-10 | BSB | BSB text |
+| Antioch's church the first with many Gentile members (Acts 11:19-26); meals and belonging; food laws kept many Jews from ordinary meals with Gentiles; Acts 10:28 | 11-14 | Deep note `cultural`, `historical`; BSB | Repository |
+| Pressure in Judea on Jews seen to compromise with Gentiles in those years, "may" explain the fear | 11-14 | Deep note `historical` | Stated as a possibility |
+| Whether James sent the men with that message not known | 11-14 | BSB 2:12 | Stated as unknown |
+| Peter: Acts 10; Acts 15:11; 1 Corinthians 3:22; 15:5; 2 Peter 3:15; how the quarrel ended not told | 11-14 | BSB | BSB text |
+| Leviticus 19:17; Proverbs 27:6; 2 Samuel 12:7 | 11-14 | BSB | BSB text |
+| Where the speech to Peter ends is debated | 15-21 | Deep note `literary` | Repository |
+| ‘Gentile sinners’ common Jewish usage | 15-21 | Deep note `cultural` | Repository |
+| Dikaioō four times in verses 16 and 17 | 15-21 | Deep note `words` | Repository |
+| Psalm 143:2 echoed in 2:16 | 15-21 | Commentaries (cross-reference standard) | BSB text; stated as an echo |
+| Works of the law and pistis Christou readings | 15-21 | Book page; Romans book page ledger | Ledger. No side |
+| Genesis 15:6; Ezekiel 36:26 | 15-21 | BSB | BSB text |
+
+## The plain notes on Galatians 3 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Bewitched’ linked with the evil eye; ‘clearly portrayed’ used of a public notice | 1-5 | Deep note `cultural` | Repository |
+| ‘Suffered’ (verse 4) as suffering or as experience; Acts 14:22 | 1-5 | Standard lexicons (paschō); BSB | Stated as two readings |
+| Isaiah 44:3; Joel 2:28; Acts 10:44-48 | 1-5 | BSB | BSB text |
+| Abraham believed before circumcision (Genesis 15, then 17); ‘credited’ an accounting word | 6-9 | BSB; Romans 4 plain note | Repository |
+| Genesis 15:5-6; 12:3; 18:18 | 6-9 | BSB | BSB text |
+| Blessings and curses (Deuteronomy 27 and 28) | 10-14 | BSB | BSB text |
+| Deuteronomy 27:26 in Paul close to the old Greek ("everyone", "everything") | 10-14 | Deep note `literary`; comparison of 3:10 with the BSB's Hebrew-based text | Stated generally; the Greek version not quoted |
+| Habakkuk 2:4 setting; Leviticus 18:5; Deuteronomy 21:22-23; connected with crucifixion by Paul's day | 10-14 | Deep note `cultural`, `literary`; BSB | Repository |
+| Readings of the cross (substitution, victory, ransom); pointers to the Romans 3:21-26 and 2 Corinthians 5:18-21 notes; Nicene ‘for us’ | 10-14 | romans/plain/3.json; 2-corinthians/plain/5.json; creeds/documents/nicene-creed.json | Repository. No side |
+| Romans 7:12 against reading the law or Jews as cursed | 10-14 | BSB | BSB text |
+| Diathēkē covenant or will; 430 years (Exodus 12:40); the old Greek and Samaritan count from Canaan | 15-18 | Deep note `cultural`, `historical` | Repository. Samaritan Pentateuch not named |
+| ‘Seed’ collective or single; close word-by-word reading common among Jewish teachers | 15-18 | Deep note `literary` | Repository |
+| Genesis 13:15; 22:18; Exodus 12:40; 2 Samuel 7:12 | 15-18 | BSB | BSB text |
+| Paidagōgos a household slave guarding a boy until he came of age | 19-25 | Deep note `cultural` | Repository |
+| Angels at Sinai a Jewish tradition; Acts 7:53; Deuteronomy 33:2 | 19-25 | Deep note `historical` | Repository |
+| Verse 20 notoriously hard; the most common reading | 19-25 | Deep note `literary` | Repository |
+| Exodus 19:5; Psalm 14:3 | 19-25 | BSB | BSB text |
+| ‘No male and female’ the words of Genesis 1:27 in the old Greek | 26-29 | Deep note `hard` | Repository |
+| Paul still addresses Jews and Gentiles, slaves and masters, husbands and wives | 26-29 | Deep note `hard`; BSB | Repository |
+| Baptism views in holders' terms; pointer to the Acts 2:37-41 note | 26-29 | acts/plain/2.json | Repository. No side |
+| Christians drew on 3:28 against slavery | 26-29 | Deep note `hard` | Repository, stated generally |
+| Complementarian and egalitarian sentences in the Acts 18 form; pointer to the Acts 18:24-28 note | 26-29 | acts/plain/18.json | Repository wording. No side |
+| Genesis 1:27; Isaiah 61:10; Genesis 12:3 | 26-29 | BSB | BSB text |
+
+Cut: the Jewish prayer thanking God for not being made a Gentile, a slave or a woman (deep note "some scholars note"; not checked here, and not needed).
+
+## The plain notes on Galatians 4 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Heir under guardians and managers until a date the father set | 1-7 | Deep note `cultural` | Repository |
+| Stoicheia: letters, first lessons, elements; some later writers used it for spirits; readers differ | 1-7 | Deep note `words` (stoicheion) | Repository |
+| Same verb ‘sent’ for the Son and the Spirit (exapesteilen, 4:4 and 4:6) | 1-7 | Greek text in the repository | Read from the chapter file |
+| The Trinity stated as confession; Galatians within about twenty-five years of the cross (cross 30 or 33; letter late 40s to mid 50s) | 1-7 | Book page dates; Acts book page | Arithmetic over the site's dates |
+| Roman adoption: new father, name, full inheritance | 1-7 | Deep note `cultural`, `words` (huiothesia) | Repository |
+| Abba Aramaic, Mark 14:36, Romans 8:15 | 1-7 | Deep note `words`; BSB | Repository |
+| Hosea 11:1; Exodus 4:22; Jeremiah 3:19; Exodus 20:2 | 1-7 | BSB | BSB text |
+| Galatian towns' temples and festivals | 8-11 | Deep note `historical` (pagan calendars) | Stated generally |
+| Special days most likely the Jewish calendar; some think the wording also fits pagan calendars | 8-11 | Deep note `historical` | Repository |
+| Romans 14:5; Sunday, Easter, Christmas kept by most; some keep the seventh-day Sabbath; some Jewish believers in Jesus keep Israel's feasts | 8-11 | BSB; common practice | Stated generally, no group named |
+| Exodus 20:2-3 | 8-11 | BSB | BSB text |
+| Illness unknown; eyes and the thorn as guesses | 12-20 | Deep note `historical` | Repository |
+| Sickness sometimes read as divine displeasure | 12-20 | Deep note `cultural` | Repository |
+| Isaiah 66:9; Leviticus 19:34 | 12-20 | BSB | BSB text |
+| The law as the five books, including Genesis | 21-31 | Standard | Standard |
+| Allēgoreō in 4:24 | 21-31 | Deep note `literary` | Repository |
+| ‘The present-day Jerusalem’ as the teachers' movement and claims, "many readers" | 21-31 | Deep note `hard` | Repository |
+| Isaiah 54:1 first to Jerusalem in exile; follows Isaiah 53; ‘Rejoice’ the old Greek | 21-31 | Deep note `literary`; BSB comparison | Stated generally |
+| Genesis 16:2; 21:9-10; Psalm 87:5; Isaiah 2:3; Romans 11:1; 7:12 | 21-31 | BSB | BSB text |
+| Hagar not judged; Ishmael honoured by Muslims; pointer to the Genesis 16:13-16 note | 21-31 | genesis/plain/16.json | Repository |
+| Contempt for Jews rejected; pointer to the Acts 2:22-28 note | 21-31 | acts/plain/2.json | Repository wording |
+
+## The plain notes on Galatians 5 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Yoke a picture of servitude; Jewish writers spoke well of the yoke of the law; Matthew 11:29-30; Acts 15:10 | 1-6 | Deep note `cultural`; BSB | Repository |
+| Timothy circumcised (Acts 16:3); circumcision in itself nothing (5:6; 6:15) | 1-6 | BSB | BSB text |
+| 5:4 readings (Reformed and Baptist; Wesleyan, Arminian, Catholic); falling into law; Paul still says ‘brothers’ and is confident (5:10); pointers to the Romans 8:31-39 note and the Honest Answer ‘Can you lose your salvation?’; care line in the Romans 8 form | 1-6 | Deep note `hard`; romans/plain/8.json; client/src/data/answers.ts | Repository wording. No side |
+| Deuteronomy 30:6; Jeremiah 4:4 | 1-6 | BSB | BSB text |
+| Enkoptō "may picture" cutting in on a runner | 7-12 | Standard lexicons | Narrowed to "may" |
+| Leaven kept from the last batch; removed at Passover (Exodus 12:15); 1 Corinthians 5:6-8 | 7-12 | Deep note `cultural`; BSB | Repository |
+| Rumour that Paul preached circumcision; 1 Corinthians 9:20; Acts 16:3 | 7-12 | Deep note `historical` | Repository |
+| Cybele's chief shrine at Pessinus in Galatia; her priests (galli) castrated themselves; some read 5:12 as alluding to them, others doubt it | 7-12 | Deep note `historical`; reference works | Search: en.wikipedia.org "Galli" (Pessinus, self-castration); human.libretexts.org "Magna Mater and the Galli"; corpus-paul list archive (the debate on 5:12). Stated as "some readers think", the doubt stated |
+| Deuteronomy 23:1; Isaiah 56:3-5; Acts 8:38 | 7-12 | BSB | BSB text |
+| Aphormē a base of operations; douleuō to serve as a slave | 13-15 | Standard lexicons | Standard |
+| Leviticus 19:18; Mark 12:31; Micah 6:8 | 13-15 | BSB | BSB text |
+| Flesh not the body as bad | 16-21 | Deep note `words`; standard | Repository |
+| Fifteen acts; eight of them sins of community life; pharmakeia drugs and spells; ancient vice and virtue lists | 16-21 | Deep note `cultural`, `literary`; count of 5:19-21 | BSB text counted |
+| 1 Corinthians 6:11; care line in the Romans 7:14-25 form (doctor, pastor, counsellor, a group, Find Help) | 16-21 | BSB; romans/plain/7.json | Repository wording, no phone number |
+| Ezekiel 36:27; Jeremiah 31:33; Genesis 4:7 | 16-21 | BSB | BSB text |
+| Fruit singular, one harvest; stoicheō keeping in line | 22-26 | Deep note `literary`; standard lexicons | Repository |
+| Psalm 1:3; Isaiah 32:15, 17; Exodus 34:6 | 22-26 | BSB | BSB text |
+
+## The plain notes on Galatians 6 (2026-11-20)
+
+No new searches (the 6:16 search for the book page is reused). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Katartizō used of setting bones and mending nets | 1-5 | Earlier ledger (2 Corinthians 13: Mark 1:19); standard lexicons | Ledger |
+| ‘Law of Christ’ the way of love Christ taught and lived (5:14) | 1-5 | Deep note; standard | Repository |
+| Baros (burden) and phortion (load) | 1-5 | Greek text in the repository (6:2, 6:5) | Read from the chapter file |
+| Restoring a person not the same as restoring trust; crimes reported; pointer to the 1 Corinthians 5:1-5 note; care line (talk with someone outside the situation; Find Help) | 1-5 | 1-corinthians/plain/5.json | Repository wording, no phone number |
+| Leviticus 19:17; 2 Samuel 12:13; Psalm 68:19 | 1-5 | BSB | BSB text |
+| Support for teachers (1 Corinthians 9:14); sowing and reaping; households provided for their own | 6-10 | Deep note `cultural`; BSB | Repository |
+| Prosperity teaching named as an error, no one named; Job 42:7; care line (pressure to give; not financial advice; Find Help) in the 2 Corinthians 9:6-11 form | 6-10 | 2-corinthians/plain/9.json | Repository wording |
+| Proverbs 22:8; Hosea 8:7; Proverbs 11:25; Deuteronomy 25:4; 1 Corinthians 9:9 | 6-10 | BSB | BSB text |
+| Large letters, reasons unknown; scribe and closing in Paul's hand | 11-16 | Deep note `historical` | Repository |
+| Kanōn a measuring line, a standard | 11-16 | Standard lexicons | Standard |
+| 6:16 three readings; kai "even" (BSB) or "and" (many other English Bibles); Romans 11:26; pointer to the Romans 9 to 11 notes; no contempt for Jews | 11-16 | Deep note `hard`; book page search (bible-researcher.com; tips.translation.bible; preceptaustin.org) | Stated as readings, no side; no scholar named |
+| Psalm 125:5; 128:6; Isaiah 54:10; 65:17; Jeremiah 9:24 | 11-16 | BSB | BSB text |
+| Stigmata used for brands on slaves, sometimes soldiers and devotees; Lystra (Acts 14:19); 2 Corinthians 11:24-25 | 17-18 | Deep note `cultural`, `historical` | Repository |
+| ‘Brothers’ the last word before ‘Amen’ | 17-18 | BSB 6:18 | BSB text |
+| Isaiah 44:5; Numbers 6:24-25 | 17-18 | BSB | BSB text |
+
+Cut: "only here does Paul end a letter with ‘brothers’" (not checked).
+
+## Galatians complete (2026-11-20)
+
+All six chapters in plain words. Galatians searches: 7 for the book page, 1 for chapter 5.
+
+## Ephesians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/ephesians/intro.json`, field
+`teaching`. 2 searches, run on 2026-11-20. Views are paraphrased; no scholar is named.
+Scripture is the BSB in the repository, checked word for word by
+`scripts/validate-bible-notes.mjs` and the strict check.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul named (1:1; 3:1); received by the early church; known to second-century writers; almost no one doubted it until the modern period | Repository `author` | Repository |
+| The case against Paul's authorship (style, 1:3-14 one sentence, realized salvation, universal church, 2:20, Colossians parallels, distance) and the case for (subject, secretaries, Tychicus with both letters, a circular, the church's rejection of false writings); no side | Repository `author`; BSB 6:21-22, Colossians 4:7-8 | Repository. Each side stated in its own terms; "These notes do not choose" |
+| Ephesus the leading city of Asia, a port; temple of Artemis among the wonders; Acts 19 (two years, magic books, silversmiths' riot) | Repository `setting`; BSB | Repository |
+| ‘In Ephesus’ absent from P46 (about AD 200) and from Sinaiticus and Vaticanus as first written; Marcion's text ‘To the Laodiceans’ (Tertullian); circular-letter view; Colossians 4:16; the words in every early version (the case for originality) | Repository `setting`; textual commentaries | Search: bibleleaguetrust.org (citing Metzger's Textual Commentary); biblicalstudies.org.uk GTJ 2.1 (Black); cbtseminary.org (Arnold's case that the phrase is original, "the only reading found in all extant versions"). No side |
+| Prisoner (3:1; 4:1; 6:20); Rome about AD 60 to 62 (Acts 28:30) most often; Caesarea (Acts 23 to 26) or Ephesus by some; AD 80 to 100 on the later view; before the early 100s | Repository `date`; Acts book page timeline | Repository |
+| Caesarea about AD 57 to 59; Ephesus in the mid-50s (1 Corinthians book page: 1 Corinthians from Ephesus about 53 to 55) | Repository `date`; 1 Corinthians book page ledger | Ledger |
+| Miletus farewell (Acts 20:17-38), about AD 57 | BSB; Romans book page (Romans about 57, then the journey to Jerusalem) | Repository |
+| Roman household described by earlier writers as ruled by its male head; Paul speaks to the weaker first and asks more of the stronger | Context guide `household-codes-in-context` (Aristotle's form) | Repository. Aristotle not named on the book page |
+| Old Testament: Psalm 110:1 and Psalm 8:6 (1:20-22); Isaiah 57:19 (2:17); Psalm 68:18 (4:8); Zechariah 8:16 (4:25); Psalm 4:4 (4:26); Genesis 2:24 (5:31); the fifth commandment (6:2-3); Isaiah 59:17 (armour) | BSB; deep notes | BSB text. The old Greek stated generally |
+| Trinity, salvation by grace through the cross, Christ's resurrection: confession | CLAUDE.md confessional floor | No factual claim |
+| Contempt for Jews rejected, pointer to the Acts 2:22-28 note; the household passages give no one the right to control; prosperity and nationalist readings named as errors without naming anyone | acts/plain/2.json; CLAUDE.md guardrails | Repository wording |
+| Map: Ephesus, Caesarea, Rome | wmap-ledger | Ledger |
+| Map: Laodicea 37.836, 29.108 | Gazetteers | Search: topostext.org "Laodikea (Phrygia)" (37.836, 29.109); turkisharchaeonews.net (37.835854, 29.107891); Wikipedia "Laodicea on the Lycus" (37.83583, 29.10750) |
+
+Cut: Ignatius and Polycarp by name; the Laodicean letter identified as fact; the
+date of Paul's Ephesus stay given more closely than "the mid-50s".
+
+## The plain notes on Ephesians 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Saints’ for all believers; ‘grace and peace’ a Greek and a Jewish greeting joined | 1-2 | Standard; earlier ledger (Romans 1) | Ledger |
+| ‘In Ephesus’ missing in P46, Sinaiticus, Vaticanus; Marcion; two views; pointer to the book page | 1-2 | Book page ledger | Ledger. No side |
+| Leviticus 19:2; Deuteronomy 7:7; Daniel 7:18 | 1-2 | BSB | BSB text |
+| 1:3-14 one sentence in Greek; Jewish blessing form; the Father, Son and Spirit shape; three refrains | 3-14 | Deep note `literary`, `cultural` | Repository |
+| Adoption, redemption, seal, pledge from daily life | 3-14 | Deep note `cultural` | Repository |
+| Election readings (Reformed; Arminian and Wesleyan; corporate) in the Romans 8 and 9 notes' terms; John 6:37; 1 Timothy 2:4; Honest Answer pointer; care line in the Romans 9:19-29 form | 3-14 | romans/plain/8.json; romans/plain/9.json; client/src/data/answers.ts | Repository wording. No side |
+| Luke 1:68; Deuteronomy 7:6-8; Exodus 19:5; Ezekiel 36:27 | 3-14 | BSB | BSB text |
+| Heart as the centre of the person; ‘His inheritance in the saints’ two readings | 15-23 | Standard; deep note | Stated as readings |
+| Ephesus known for magic (Acts 19:19) | 15-23 | BSB; repository `setting` | Repository |
+| Psalm 110 read of Christ's rising and reign in Mark 12:36, Acts 2:34-36, Hebrews 1:13 | 15-23 | BSB | BSB text. "More than any other" cut (the Mark 12 run could not confirm it) |
+| Psalm 110:1; Psalm 8:6; Isaiah 11:2 | 15-23 | BSB | BSB text |
+
+## The plain notes on Ephesians 2 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Ruler of the power of the air’ the devil, pictured as ruling the unseen spaces | 1-10 | Deep note; standard commentaries | Stated generally |
+| The ‘with’ verbs (sunezōopoiēsen, sunēgeiren, sunekathisen) | 1-10 | Greek text in the repository (2:5-6) | Read from the chapter file |
+| Poiēma something made | 1-10 | Standard lexicons | Standard |
+| Protestant, Catholic and Orthodox accounts of grace and works, as on the Romans book page; Joint Declaration 1999, paragraph 15 quoted in part | 1-10 | Romans book page ledger; JDDJ | Search: firstthings.com "Two Languages of Salvation"; e-n.org.uk "JDDJ: By grace alone?"; ecumenism.net LWF text (paragraph 15). Quoted to "accepted by God" only |
+| Paul and James answer different questions, "many readers" | 1-10 | Standard harmonisation; Romans 3 plain note | Stated as many readers' view |
+| ‘This’ (touto) in 2:8 neuter, not matching faith or grace; two readings | 1-10 | Greek text in the repository; standard grammars | Stated as readings |
+| Ezekiel 37:14; Exodus 34:6; Deuteronomy 9:4; James 2:17 | 1-10 | BSB | BSB text |
+| Temple barrier notices in Greek and Latin; one found complete in 1871; Acts 21:28-29; whether Paul had it in mind left open | 11-22 | Earlier ledger (Mark 11; Luke 17; Acts 21; Jewish-life portrait) | Ledger |
+| Cornerstone the first stone setting the line | 11-22 | Standard | Standard |
+| ‘Abolishing’ readings (the law as a wall; the covenant fulfilled; moral heart stands); Romans 7:12; 11:1; 13:8-10; contempt for Jews rejected, pointer to the Acts 2:22-28 note | 11-22 | Deep note; acts/plain/2.json | Repository. No side |
+| Isaiah 57:19; 28:16; Psalm 118:22; Exodus 29:45 | 11-22 | BSB | BSB text |
+
+## The plain notes on Ephesians 3 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Arrest after the charge of bringing a Gentile into the temple (Acts 21:27-29) | 1-13 | Deep note `historical`; BSB | Repository |
+| Mystery cults kept secret rites; Paul uses the word as Daniel 2 does | 1-13 | Deep note `cultural` | Repository. Eleusis, Isis and Mithras not named |
+| Three ‘together’ words in 3:6 (sugklēronoma, sussōma, summetocha) | 1-13 | Greek text in the repository | Read from the chapter file |
+| Elachistoterō, a comparative added to a superlative | 1-13 | Greek text in the repository (3:8) | Read from the chapter file. "A word Paul made up" not claimed |
+| Genesis 12:3; Isaiah 49:6; Daniel 2:28 | 1-13 | BSB | BSB text |
+| Jews usually prayed standing; kneeling for earnestness | 14-21 | Deep note `cultural` (Luke 18:11, 13) | Repository |
+| Patēr and patria wordplay (3:14-15) | 14-21 | Greek text in the repository | Read from the chapter file |
+| 1 Kings 8:27; Psalm 103:11; 139:8 | 14-21 | BSB | BSB text |

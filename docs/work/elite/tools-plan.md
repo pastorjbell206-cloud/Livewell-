@@ -409,3 +409,28 @@ caring-for-aging-parents and caregiving still share one name (James to decide: m
 ### Not done in this run
 
 Pornography and batches 2 to 14 (182 topics). The holdout2 misses (control in a dating relationship, sex outside marriage, gossip about a coworker, care for the homeless, how much to give, infertility first) were left untuned so the number stays honest.
+
+---
+
+## 14. Build 3, as built (2026-11-20): pornography and batch 2
+
+Fourteen topics written in full to the standard of the first twenty-six, one commit each; 40 of 208 are now written in full. Ledger rows for every new claim: `docs/work/elite/tools-ledger.md`.
+
+- **The topics:** pornography (the last of batch 1), then losing-a-child, losing-a-parent, losing-a-spouse, sudden-loss, miscarriage, infertility, survivors-guilt, terminal-diagnosis, facing-death, serious-illness, chronic-pain, aging, heaven-and-eternity. when-life-is-unfair and the-problem-of-evil, the last two of batch 2, open the next run.
+- Each: ten or eleven passages, each "where it stands" written against that chapter's Study Bible note and plain note and agreeing with them; the often-misread layer where a verse on the subject really is commonly misread (Romans 7:19, Romans 8:28, Psalm 116:15, Matthew 22:30, 1 Corinthians 10:13, Exodus 23:26, Psalm 37:4, James 5:15, Isaiah 53:5, 2 Corinthians 4:17, 1 Corinthians 2:9; none on survivors-guilt, facing-death or aging, where none fits); the whole Bible's wisdom in four paragraphs; where Christians differ only on infertility (IVF and donation, as the Find Help page already sets it out), serious-illness (anointing and gifts of healing, as the notes on James 5 and 1 Corinthians 12 set it out) and heaven-and-eternity (the dead before the resurrection, as the notes on 2 Corinthians 5 and Luke 23 set it out); a question; a psalm; care lines word for word from the plain notes on every heavy page and on survivors-guilt and chronic-pain; the not-medical-advice line on infertility, terminal-diagnosis, serious-illness and chronic-pain.
+- Every heavy page opens its whole-Bible section with the path to help, names no means of self-harm, and gives no phone number of its own (the site's CrisisBlock carries those). No page says anything about the eternal state of a person who died by suicide; the loss pages do not raise the cause of a death at all. Matthew 5:27-30 is opened only to verse 28, so the page never quotes the eye and hand sayings. 2 Samuel 1 (the Amalekite's account of Saul's death) was left out of sudden-loss for the same reason, and John 21:18 was left out of aging because it is about Peter's martyrdom, not old age.
+- The medical not-advice line on the topic page now fits illness as well as sadness ("For your health and your treatment, or if worry or sadness is taking your sleep, your appetite or your days, talk to a doctor").
+
+### Matching
+
+Fifteen new sentences (`holdout3`) were written and committed before `matching.json` was touched. Before: cases 100% / 100% (74), holdout 100% / 100% (19), holdout2 65.0% / 80.0% (20), holdout3 53.3% / 73.3% (15) (top 1 / top 3). Then phrases and "not" phrases were added for the seven holdout2 misses named in section 13 (control in a dating relationship, hating the face in the mirror, sex outside marriage, gossip about a coworker, care for the homeless, how much to give, infertility under the marriage topics). After: cases 100% / 100%, holdout 100% / 100%, holdout2 100% / 100% (now tuned for; not a clean set), holdout3 53.3% / 73.3% (untouched; the honest number). holdout3's misses are known and were left alone so the number stays honest: "the doctor says I have maybe six months", "I was in the car crash and my friend didn't make it", "my teenage son was killed by a drunk driver", "my mother never told me she loved me and now she's gone" find nothing near; a miscarriage at eight weeks lands on Losing a Child first; chronic back pain and aging land second. A fourth holdout should be written before those are tuned.
+
+The finder cannot point to a Find Help page: it ranks wisdom topics only. That was not built. "Will my dog go to heaven" still lands on Heaven and Eternity, whose next steps now include the Find Help page "Will I see my pet again?".
+
+### The anchor on a topic page
+
+`/wisdom/money#misread` landed the heading 624px down a 390px phone screen (312px at 1440). Traced on the served build: `followHash` scrolled while the prerendered text was still held over the page (`lib/prerender-hold.ts`), and when the real page took its place the section sat 540px lower. `followHash` now waits until no held text remains. Measured after, on the served build at 390 and 1440: `/wisdom/money#misread`, `#differ`, `#sit`, `/wisdom/pornography#whole`, `/wisdom/miscarriage#misread` and `/wisdom/infertility#differ` all land at 84px, the sections' scroll margin, just below the sticky header. `lib/followHash.test.ts` holds it.
+
+### Not done in this run
+
+when-life-is-unfair, the-problem-of-evil and batches 3 to 14. The holdout3 misses. The two "Caring for Aging Parents" topics (James to decide). Nothing outside the repo was opened; the Catechism references in the ledger are described from knowledge, not quoted.

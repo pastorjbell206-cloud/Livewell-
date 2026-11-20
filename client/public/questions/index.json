@@ -139,8 +139,44 @@
       "planned": 20,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-census-of-quirinius",
+          "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+          "blurb": "What Luke says and what Josephus dates, the governors of Syria, Justin and Tertullian, the five proposed solutions with the weakness of each, and why the question is still open.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-two-genealogies",
+          "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+          "blurb": "Both lists set side by side, Julian's charge and Jerome's count, Africanus's levirate explanation in his own words with its weakness, Mary's line and the royal line, and what both lists affirm.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "how-did-judas-die",
+          "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+          "blurb": "The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about \"Jeremiah\" in Matthew 27:9, and the core the accounts share.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-day-of-the-crucifixion",
+          "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+          "blurb": "The Passover calendar from Exodus and Josephus, every time note in the four Gospels, the four solutions with their weaknesses, the hour, and the frame all four share.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "numbers-in-samuel-kings-and-chronicles",
+          "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
+          "blurb": "The differences set out from the English and the Hebrew, where the BSB has already chosen a reading, the Greek translation and the Dead Sea Scrolls, who killed Goliath, and what copying can and can't explain.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "jesus",
@@ -149,8 +185,44 @@
       "planned": 16,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "did-jesus-exist",
+          "question": "Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?",
+          "blurb": "Paul's meeting with Jesus' brother, Josephus and the disputed passage shown as it stands, Tacitus, Pliny and Suetonius, and the case that Jesus began as a heavenly figure, at its strongest.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-empty-tomb",
+          "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
+          "blurb": "Roman practice with the crucified, Jewish burial law, Yehohanan's tomb, Joseph of Arimathea, the women, and the earliest opponents' theft story.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-appearances-and-the-alternatives",
+          "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
+          "blurb": "The four natural explanations, each as its defenders put it, against the list Paul received, the persecutor and the unbelieving brother, and the word the witnesses chose.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-resurrection-accounts-disagree",
+          "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
+          "blurb": "Every difference set out, Tacitus and Suetonius on the fire of Rome as a test case, the conventions of ancient biography, and what all four agree on.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "can-historians-affirm-a-miracle",
+          "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+          "blurb": "What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of \"least probable,\" and where the question passes from history to the question of God.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "old-testament",
@@ -498,6 +570,186 @@
       "area": "authors",
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "Luke dated Jesus' birth by the census of Quirinius, which Josephus places in AD 6, a decade after Herod died, so Luke misdated it",
+      "proponent": "Raymond E. Brown",
+      "work": "The Birth of the Messiah",
+      "year": 1977,
+      "area": "contradictions",
+      "slug": "the-census-of-quirinius",
+      "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+      "live": false
+    },
+    {
+      "claim": "The census of Luke 2 is the famous census of AD 6, placed a decade too early",
+      "proponent": "Geza Vermes",
+      "work": "The Nativity: History and Legend",
+      "year": 2006,
+      "area": "contradictions",
+      "slug": "the-census-of-quirinius",
+      "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke give Joseph different fathers and Jesus different lines from David, so the genealogies contradict each other",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-two-genealogies",
+      "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+      "live": false
+    },
+    {
+      "claim": "The two genealogies cannot be fully harmonized; each evangelist shaped the traditions he had for theological ends",
+      "proponent": "Raymond E. Brown",
+      "work": "The Birth of the Messiah",
+      "year": 1977,
+      "area": "contradictions",
+      "slug": "the-two-genealogies",
+      "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+      "live": false
+    },
+    {
+      "claim": "Matthew says Judas hanged himself and Acts says he fell and burst open, so the two accounts of his death contradict each other",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "how-did-judas-die",
+      "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+      "live": false
+    },
+    {
+      "claim": "The Synoptic Gospels put the crucifixion on the day after the Passover meal and John on the day the lambs were killed, so they contradict each other on the day Jesus died",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-day-of-the-crucifixion",
+      "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+      "live": false
+    },
+    {
+      "claim": "John moved the day and hour of the crucifixion so that Jesus would die as the Passover lambs were slaughtered",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-day-of-the-crucifixion",
+      "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+      "live": false
+    },
+    {
+      "claim": "Comparing Kings and Chronicles with each other shows confusion and contradiction in the Bible",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795,
+      "area": "contradictions",
+      "slug": "numbers-in-samuel-kings-and-chronicles",
+      "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
+      "live": false
+    },
+    {
+      "claim": "The first Christians believed in a heavenly Jesus known through visions and Scripture; the Gospels later placed him in history",
+      "proponent": "Richard Carrier",
+      "work": "On the Historicity of Jesus",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "did-jesus-exist",
+      "question": "Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?",
+      "live": false
+    },
+    {
+      "claim": "There was no historical man behind the Christ of the Gospels",
+      "proponent": "Arthur Drews",
+      "work": "Die Christusmythe",
+      "year": 1909,
+      "area": "jesus",
+      "slug": "did-jesus-exist",
+      "question": "Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?",
+      "live": false
+    },
+    {
+      "claim": "Jesus was probably not given a decent burial in a known tomb, so the stories of an empty tomb arose later",
+      "proponent": "Bart D. Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "the-empty-tomb",
+      "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' body was probably dealt with as crucified bodies usually were, and the honorable burial by Joseph of Arimathea arose later",
+      "proponent": "John Dominic Crossan",
+      "work": "Jesus: A Revolutionary Biography",
+      "year": 1994,
+      "area": "jesus",
+      "slug": "the-empty-tomb",
+      "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' body decayed, and the appearances were visions born of grief and guilt, beginning with Peter's",
+      "proponent": "Gerd Lüdemann",
+      "work": "The Resurrection of Jesus: History, Experience, Theology",
+      "year": 1994,
+      "area": "jesus",
+      "slug": "the-appearances-and-the-alternatives",
+      "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
+      "live": false
+    },
+    {
+      "claim": "Some of Jesus' followers sincerely had visions of him, of the kind bereaved people have, and persuaded the others",
+      "proponent": "Bart D. Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "the-appearances-and-the-alternatives",
+      "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
+      "live": false
+    },
+    {
+      "claim": "The Gospels' accounts of the resurrection contradict one another, and harmonizing them only produces a story none of them tells",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "jesus",
+      "slug": "the-resurrection-accounts-disagree",
+      "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
+      "live": false
+    },
+    {
+      "claim": "The contradictions among the Easter stories show that they were invented",
+      "proponent": "Hermann Samuel Reimarus",
+      "work": "The fragments published by Gotthold Lessing",
+      "year": 1778,
+      "area": "jesus",
+      "slug": "the-resurrection-accounts-disagree",
+      "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
+      "live": false
+    },
+    {
+      "claim": "Historians can establish only what probably happened, and a miracle is by definition the least probable event, so a historian as a historian can never conclude that one occurred",
+      "proponent": "Bart D. Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "can-historians-affirm-a-miracle",
+      "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+      "live": false
+    },
+    {
+      "claim": "Historical method judges by probability, analogy and correlation, and so cannot affirm an event without analogy",
+      "proponent": "Ernst Troeltsch",
+      "work": "Über historische und dogmatische Methode",
+      "year": 1898,
+      "area": "jesus",
+      "slug": "can-historians-affirm-a-miracle",
+      "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
       "live": false
     },
     {

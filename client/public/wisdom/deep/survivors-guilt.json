@@ -1,0 +1,80 @@
+{
+  "id": "survivors-guilt",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "Acts 12:2",
+      "context": "Acts 12:1-7",
+      "where": "Herod has James the brother of John killed with the sword, then arrests Peter, and an angel leads Peter out of prison while the church prays. Luke tells James's death in one sentence and Peter's rescue at length, and gives no reason why one apostle died and the other lived. The site's note will not invent one, and it says plainly that the difference was not James's faith or the church's prayers."
+    },
+    {
+      "ref": "Ecclesiastes 9:11",
+      "context": "Ecclesiastes 9:11-12",
+      "where": "The Teacher has watched the race not go to the swift or the battle to the strong, nor bread to the wise. Time and chance happen to all. Who lives and who dies in a given hour is not handed out as a reward, and the one who came through is not thereby declared better than the one who did not."
+    },
+    {
+      "ref": "Luke 13:4",
+      "context": "Luke 13:1-5",
+      "where": "Jesus asks whether the eighteen killed when the tower of Siloam fell were worse than everyone else in Jerusalem, and answers no. If the dead were not worse, the living are not better. Survival is not a verdict on anyone's worth, in either direction."
+    },
+    {
+      "ref": "John 21:21-22",
+      "context": "John 21:20-23",
+      "where": "Jesus has just told Peter how he will one day die, and Peter turns, sees the beloved disciple, and asks what will happen to him. Jesus answers: if I want him to remain until I return, what is that to you? You follow me. Each life is held in Christ's own purpose, and the measure of one is not taken by comparing it to another."
+    },
+    {
+      "ref": "2 Samuel 18:33",
+      "context": "2 Samuel 18:31-33",
+      "where": "When David hears that Absalom is dead, he goes up to the room over the gate weeping and cries, if only I had died instead of you. The wish to have taken someone's place is as old as grief, and Scripture records it with full sympathy. It is love speaking, not a judgment God has made about who should have lived."
+    },
+    {
+      "ref": "Romans 8:1",
+      "context": "Romans 8:1-4",
+      "where": "After the struggle of chapter 7, Paul opens with the verdict: there is now no condemnation for those who are in Christ Jesus. The site's note stresses that this is not a reward for living well but God's own verdict, given because of what he has done in his Son. The condemnation a survivor feels is not the sentence God has passed."
+    },
+    {
+      "ref": "1 John 3:19-20",
+      "context": "1 John 3:18-20",
+      "where": "John writes to believers whose hearts accuse them. Even if our hearts condemn us, he says, God is greater than our hearts, and he knows all things. The heart is not the final judge of a person; God is, and he knows the whole story, including what could and could not have been done."
+    },
+    {
+      "ref": "2 Corinthians 7:10",
+      "context": "2 Corinthians 7:8-11",
+      "where": "Paul distinguishes two kinds of sorrow. Godly sorrow turns toward God, leads to repentance and ends in freedom without regret; worldly sorrow turns inward and ends in death. The site's note adds that guilt which keeps returning after confession is not proof that God has not forgiven, and that it sometimes needs a counselor or doctor as well as a pastor."
+    },
+    {
+      "ref": "Isaiah 43:1-2",
+      "context": "Isaiah 43:1-3",
+      "where": "God speaks to Israel in exile: do not fear, for I have redeemed you; I have called you by name; you are mine. When you pass through the waters and the fire, I will be with you. The promise is not that his people escape every disaster but that he goes through it with them, and that their life belongs to him."
+    },
+    {
+      "ref": "Psalm 116:8-9",
+      "context": "Psalm 116:7-9",
+      "where": "A man rescued from the edge of death tells his own soul to return to its rest, because God delivered him from death and tears. Then he says what he will do with the life he still has: walk before the LORD in the land of the living. Survival here becomes a calling to live before God, not a debt to be paid off."
+    }
+  ],
+  "whole": [
+    "If the guilt has grown heavy enough that you cannot rest, please share it with someone you trust, a friend, a pastor or a counselor, and if the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service; the Find Help page on this site lists places to turn. When others died and you lived, the heart often turns on itself. People who survived an accident, a disaster, a war, an illness that took others, or a loss in their own family describe the same things: replaying what they might have done, a sense that they do not deserve to be alive, guilt at laughing again, and sometimes a strange shame at having been spared at all. Some call it survivor's guilt. It is not a weakness, and it is often a sign of how much the person loved those who are gone.",
+    "Scripture speaks to this with a hard honesty. It does not explain why one lives and another dies. Luke tells of James killed by the sword and Peter led out of prison in the same chapter, and gives no reason. The Teacher of Ecclesiastes saw that time and chance happen to all. Jesus said the eighteen under the tower were no worse than anyone else, which means the ones who walked past it that day were no better. Survival is not a prize handed to the better person, and the deaths Jesus was asked about were not punishments. When Peter asked Jesus about another man's fate, Jesus told him that was not his to carry: you follow me.",
+    "That leaves two kinds of guilt to sort out, and wisdom needs both. Some guilt points to something real, a choice that did contribute to harm. That kind can be confessed, and God's answer to confessed sin is forgiveness, not an endless sentence. Much survivor's guilt is something else: love searching for a way it could have done more, or the mind replaying what no one could have known at the time. John says that even when our hearts condemn us, God is greater than our hearts and knows all things, including what you could not have known. A pastor or counselor can help you tell which is which. Guilt that keeps returning after it has been brought to God is not proof he has refused you, and needing help with it is not a failure of faith.",
+    "The life you still have is not a debt to the dead. Scripture never asks the living to earn their breath. It does invite them to live it before God: the psalmist delivered from death said he would walk before the LORD in the land of the living. Many survivors find, in time, that honoring the ones they lost means living well rather than living small, and remembering them by name. God's word to Israel is spoken to you as well: I have called you by name, you are mine. The condemnation you feel is not the verdict he has given, and for those in Christ there is now no condemnation at all."
+  ],
+  "sit": "If the person you lost could speak to you about your life now, what do you think they would want for you?",
+  "prayer": {
+    "ref": "Psalm 27:13-14",
+    "lead": "The last lines of Psalm 27 hold on to the goodness of God in the land of the living, and tell the soul to wait. Pray them as someone still learning to live in that land."
+  },
+  "next": [
+    { "kind": "Find Help", "label": "Someone I love has died", "href": "/help/grief" },
+    { "kind": "Reading", "label": "Shame and the Hiding Self", "href": "/life/shame-and-the-hiding-self" },
+    { "kind": "Study guide", "label": "Grief", "href": "/studyguides/grief" },
+    { "kind": "Study guide", "label": "Mental Health", "href": "/studyguides/mental-health" }
+  ],
+  "careLines": [
+    { "from": "acts/plain/12", "text": "Grief and confusion at such a loss are not a lack of faith." },
+    { "from": "2-corinthians/plain/7", "text": "Guilt that keeps coming back after you have confessed is not proof that God has not forgiven you." },
+    { "from": "acts/plain/12", "text": "If the weight of it is heavy, please share it with someone you trust: a friend, a pastor, a counsellor." },
+    { "from": "acts/plain/12", "text": "If the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service." },
+    { "from": "acts/plain/12", "text": "The Find Help page on this site lists places to turn." }
+  ]
+}
