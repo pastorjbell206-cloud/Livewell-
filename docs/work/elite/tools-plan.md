@@ -613,6 +613,25 @@ people-pleasing through when-someone-wont-change, and batches 5 to 14 (140 topic
 
 ---
 
+## 19. Build 8 (2026-11-20): the matcher, the whole sentences, twelve topics
+
+### The finder: the aim missed, and what would raise it
+
+holdout7 (thirty sentences, each aimed at a different topic written in full, committed before anything was touched) went from 66.7% first / 73.3% in the first three to 73.3% / 80.0% after the matcher changes (70.0% / 76.7% without the one safety rewrite, "better off without me", which is a holdout7 sentence's words and was added anyway because a person typing it must meet the help topic first). The aim was 70% / 90%: the first is met, the second is not.
+
+Why: the matcher counts words the library already holds. Six of the eight sentences still missed share no word with their topic's data at all ("the guy I'm seeing ... says religion is for weak people" has neither "dating" nor "believer"; "she ended things" has no "breakup"; "our youngest left for the army and I walk past his room" has no "empty" or "nest"; "my roommate parties every night" has no "college"; "a woman at work who flirts with me" has no "tempt"), and the other two land on a near neighbour (Anger at God before Doubt; Doubt before Revenge). Mending spelling, stems, concepts and related subjects all work on words that are there. Each new holdout finds new everyday words, and every build so far has tuned to the last holdout and then measured about 65% to 75% / 75% to 80% on the next. That is the ceiling of word overlap with hand-written lists, and more lists alone will keep landing there.
+
+What would raise it, without a server, a model call, an API procedure or a new dependency:
+
+1. **Score against everything the page says, not only the matching lists.** At build time, `build-wisdom-index.mjs` can weigh every word of each topic's own page (framing, the world it was written in, how the church has read it, what it means now, and for a topic written in full its "where it stands", whole-Bible and misread prose) with a standard term weighting (BM25: a word counts more when it is rare across the library and frequent in one topic), and ship one weight table in `finder.json`. The matcher adds that score at a low weight under the phrase score. It finds "roommate", "army", "flirt" wherever a page already uses them. Cost: perhaps 150 KB more in `finder.json` (it is fetched only by the finder); measured against holdout7 before it is trusted.
+2. **A bigger concept table, written once from the site's own pages.** The five concepts of this build were chosen from holdout6's misses. The same shape can hold the everyday words for each area of life (romance: boyfriend, girlfriend, seeing someone, dating, crush, ex; school: roommate, campus, dorm, freshman, semester; leaving home: moved out, deployed, army, left for; and so on), drawn from Find Help's forty needs and the Honest Answers' questions rather than from any holdout, then measured on a fresh holdout.
+3. **A short "Is it one of these?" step when the score is low or the first three are close**: three area chips and three topics, so a reader who is missed is one tap away rather than three screens. This raises what a reader finds, not the number.
+4. **Ask James before any of these:** an open word-vector table (public-domain or openly licensed vectors for the 20,000 commonest English words) would let "flirts" sit near "tempt" with no model call, but it is a 2 to 4 MB data file whose licence and weight are his decision.
+
+Every holdout so far was written by the same hand that wrote the phrasings. A holdout written by someone else (James, a staff member, or sentences a pastor has heard) would be the truest measure.
+
+---
+
 ## Decisions waiting on James
 
 Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.
