@@ -192,6 +192,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "What Christians believe happened on the third day, and what it means, in seven moving pictures: buried, raised in his body, never to die again, and the firstfruits of a harvest.",
     },
+    covenant: {
+      title: "Promises that build: the covenants: Bible Explorer",
+      description:
+        "The covenants through the whole Bible, in seven moving pictures: Noah's rainbow, Abraham's stars, Sinai, David's throne, the new covenant promised, the cup at the supper, and every promise kept in Christ.",
+    },
+    "the-lamb": {
+      title: "Sacrifice and the Lamb: Bible Explorer",
+      description:
+        "Sacrifice through the whole Bible, in seven moving pictures: a covering in the garden, the ram in Isaac's place, the Passover, the Day of Atonement, the Lamb of God, and the Lamb on the throne.",
+    },
+    "exile-and-home": {
+      title: "Exile and coming home: Bible Explorer",
+      description:
+        "Far from home and brought back, through the whole Bible in seven moving pictures: the garden, Egypt, Babylon, the return, Jesus, believers on the way, and the city whose gates are never shut.",
+    },
+    "kingdom-of-god": {
+      title: "The kingdom of God: Bible Explorer",
+      description:
+        "The kingdom of God in seven moving pictures, from a tiny seed to a great tree: God's rule, the kingdom come near in Jesus, its signs, not of this world, and already and not yet.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
