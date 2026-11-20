@@ -117,13 +117,17 @@ describe("the road", () => {
   it("chooses a part with a radio button; Egypt is named as Genesis names it", async () => {
     open();
     await screen.findByText(/Step 1 of/);
-    fireEvent.click(screen.getByRole("radio", { name: /Down to Egypt and back/ }));
+    fireEvent.click(
+      screen.getByRole("radio", { name: /Down to Egypt and back/ })
+    );
     expect(card().textContent).toContain("Bethel");
     fireEvent.click(screen.getByRole("button", { name: "Egypt" }));
     expect(card().textContent).toContain("Step 2 of");
     expect(card().textContent).toContain("Genesis does not say where in Egypt");
     expect(card().querySelector("h3")!.textContent).toBe("Egypt");
-    fireEvent.click(screen.getByRole("radio", { name: /Hebron, Beersheba and Moriah/ }));
+    fireEvent.click(
+      screen.getByRole("radio", { name: /Hebron, Beersheba and Moriah/ })
+    );
     fireEvent.click(screen.getByRole("button", { name: "The land of Moriah" }));
     expect(card().textContent).toContain("The LORD Will Provide");
     expect(

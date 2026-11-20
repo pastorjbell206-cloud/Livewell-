@@ -101,7 +101,11 @@ export function boxFor(frame: Frame, list: MapPlace[]): Box {
 }
 
 /** Where a name sits: its anchor point and alignment, in the frame's units. */
-export type NameAt = { x: number; y: number; anchor: "start" | "end" | "middle" };
+export type NameAt = {
+  x: number;
+  y: number;
+  anchor: "start" | "end" | "middle";
+};
 type Rect = { x: number; y: number; w: number; h: number };
 /** A placed name; `room` is false where it could only sit on another mark or name. */
 export type PlacedName = { at: NameAt; r: Rect; room: boolean };
@@ -412,7 +416,10 @@ export function Mark({
           cx={cx}
           cy={cy}
           r={2.2 * u}
-          style={{ strokeWidth: 0.25 * u, strokeDasharray: `${0.6 * u} ${0.5 * u}` }}
+          style={{
+            strokeWidth: 0.25 * u,
+            strokeDasharray: `${0.6 * u} ${0.5 * u}`,
+          }}
         />
       )}
       <rect

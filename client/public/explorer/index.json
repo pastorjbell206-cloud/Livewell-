@@ -1213,19 +1213,55 @@
       "slug": "image-of-god",
       "title": "Creation and the image of God",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God made everything out of nothing, and he made people in his own image. Seven pictures of what that means for every person.",
+        "older": "Creation out of nothing, a world called very good, and people made in God's image: what that means, why it is a gift, and what Christians leave open. In seven pictures."
+      },
+      "mark": "creation",
+      "frames": 7,
+      "stops": [
+        "creation"
+      ],
+      "cards": [
+        "image"
+      ]
     },
     {
       "slug": "what-sin-is",
       "title": "What sin is",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "What sin is, what it breaks, and what God does about it, in six pictures.",
+        "older": "Sin at its root, the four things it breaks, why it touches everyone, and the God who comes looking. In six pictures."
+      },
+      "mark": "fall",
+      "frames": 6,
+      "stops": [
+        "fall"
+      ],
+      "cards": [
+        "sin"
+      ]
     },
     {
       "slug": "who-jesus-is",
       "title": "Who Jesus is",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Jesus is God the Son, who became a real man. Seven pictures of who he is, and why it matters.",
+        "older": "The Word with God from the beginning, born as a man, fully God and fully man in one person, and the question he asked his friends. In seven pictures."
+      },
+      "mark": "jesus",
+      "frames": 7,
+      "stops": [
+        "jesus"
+      ],
+      "cards": [
+        "jesus"
+      ]
     },
     {
       "slug": "why-jesus-died",
