@@ -10412,3 +10412,25 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | First use of ‘high priest’; hilaskomai | 14-18 | Chapter deep note `story`, `words` | Repository |
 | Genesis 3:15; Isaiah 25:8; Hosea 13:14; Leviticus 16:17; 1 Corinthians 15:26; John 11:35 | 14-18 | BSB | BSB text |
 | Death an enemy; victory won, full result to come; care lines on grief and self-harm | 14-18 | 2-timothy/plain/4.json (6-8); 2-timothy/plain/1.json (8-12) | Word for word |
+
+## The plain notes on Hebrews 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Only place Jesus called apostle; ‘whom we confess’ perhaps a confession at baptism | 1-6 | Chapter deep note `words`; verses/3.json (1) | Repository |
+| Moses revered in Jewish tradition; comparison respectful; both faithful | 1-6 | Chapter deep note `story`, `historical` | Repository |
+| House as building and household; therapōn an honoured attendant, not doulos | 1-6 | Chapter deep note `cultural`; verses/3.json (5) | Repository |
+| Numbers 12:7; Deuteronomy 34:10; 18:15 | 1-6 | BSB | BSB text |
+| Misuse named and rejected; Acts 2:22-28 pointer | 1-6 | acts/plain/2.json (22-28); hebrews/8.json `hard` | Repository wording |
+| ‘As the Holy Spirit says’ present tense | 7-11 | verses/3.json (7-8) | Repository |
+| Skleruno used of Pharaoh's heart | 7-11 | Chapter deep note `words` | Repository |
+| Massah ‘testing’, Meribah ‘quarrelling’; Exodus 17:7; the Greek translates the names | 7-11 | psalms/plain/95.json (7-11); verses/3.json (7-8) | Repository; BSB |
+| Forty years attached to seeing in Hebrews, to anger in the psalm; verse 17 returns to the psalm's order | 7-11 | verses/3.json (9, 17) | Repository |
+| Numbers 14:11, 22-23, 29-31; Joshua 21:44; 1 Corinthians 10:11; Psalm 95:1 | 7-11; 16-19 | BSB | BSB text |
+| Community in homes; mutual exhortation; ‘Today’ as the present age; sin a deceiver | 12-15 | Chapter deep note `cultural`; verses/3.json (13) | Repository |
+| Readings of verse 14 (Reformed evidence; Arminian and Wesleyan face value; means) | 12-15 | Chapter deep note `hard`; verses/3.json (14) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | 12-15 | galatians/plain/5.json (1-6) | Word for word |
+| Exodus 7:3; 17:3; Proverbs 27:17; Psalm 106:24-25; Deuteronomy 12:9 | 12-15; 16-19 | BSB | BSB text |
+| The redeemed themselves rebelled; apeitheō disobey or refuse to believe | 16-19 | verses/3.json (16, 18-19) | Repository |
