@@ -8748,3 +8748,24 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Safety line: not to stay in danger; pointer to the 1 Corinthians 7:10-16 note; Find Help | 14-18 | 1 Corinthians 7 plain note | Repository wording |
 
 Cut: the Dead Sea Scrolls named for Belial (summarised as "some Jewish writings").
+
+## The plain notes on 2 Corinthians 7 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 closes 6:14-18; ‘make room’ answers 6:12; the three denials may answer charges; rivals took money (11:20) | 1-4 | Deep note `literary`; BSB | Repository; "may" |
+| Leviticus 11:44; Psalm 103:13; 51:10 | 1-4 | BSB | BSB text |
+| 7:5 resumes 2:13; joined letters or a turning aside; no side | 5-7 | Deep notes on 2 and 7; book page | Repository |
+| Titus a Greek (Galatians 2:3); carriers explained letters and brought reports | 5-7 | BSB; deep note `cultural` | Repository |
+| Isaiah 57:15; Psalm 34:18; 42:5; Proverbs 25:25 | 5-7 | BSB | BSB text |
+| Metanoia, a turning of the whole person; the two sorrows as the passage shows them | 8-12 | Deep note `words`, `doctrines` | Repository |
+| The one harmed: Paul or another member; not said | 8-12 | Deep note `historical` | Repository |
+| 2 Samuel 12:13; Psalm 51:12, 17; Joel 2:13; Luke 22:62; John 21:17 | 8-12 | BSB | BSB text |
+| Pointer to the Genesis 27:30-40 note on Hebrews 12:17 (which quotes 7:10) | 8-12 | genesis/plain/27.json | Repository |
+| Care line for the scrupulous (not the mark of one turned away; 1 John 1:9; John 6:37; anxiety and depression not a failure of faith; pastor, friend, counsellor, doctor; Find Help); no licence to wound | 8-12 | Romans 9 and 1 Corinthians 11 plain notes (the form) | Repository wording |
+| ‘Fear and trembling’ humble respect (Philippians 2:12); Psalm 2:11; Isaiah 66:2; Psalm 133:1 | 13-16 | Deep note `cultural`; BSB | BSB text |
+
+Cut: the ancient friendship formula behind ‘live and die together’ (not checked);
+Judas set against Peter (kept out for the care rule on self-harm).
