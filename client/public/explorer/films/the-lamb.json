@@ -1,0 +1,125 @@
+{
+  "slug": "the-lamb",
+  "title": "Sacrifice and the Lamb",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "the-lamb",
+  "line": {
+    "younger": "From the garden to the last page, God provides. Seven pictures follow a covering, a ram, the Passover lamb and the altar to Jesus, the Lamb of God, and the Lamb at the center of the throne.",
+    "older": "Sacrifice through the whole Bible in seven pictures: a covering, the ram in Isaac's place, the Passover, the Day of Atonement, the Lamb of God, one sacrifice for all time, and the Lamb on the throne."
+  },
+  "poster": "A small white lamb standing in a green field at first light, and far off on the horizon a low stone altar with no fire on it.",
+  "frames": [
+    {
+      "id": "covering",
+      "name": "A covering",
+      "still": "The edge of the garden: on the branch of a tree hang two plain garments, and on the ground below lie the leaves the man and woman had tried to cover themselves with.",
+      "younger": "After the first man and woman turned away from God, they felt ashamed and tried to cover themselves with leaves. But God came looking for them. He made them clothes himself and dressed them: a better covering than the one they had made.",
+      "older": "After the first sin the man and the woman sewed leaves together to cover their shame. Then God himself made garments of skin and clothed them: a better covering than the leaves they had sewn. In the same chapter that tells of judgment, he comes looking, he clothes, and he promises. Mercy is there before anyone leaves the garden.",
+      "verse": {
+        "ref": "Genesis 3:21",
+        "text": "And the LORD God made garments of skin for Adam and his wife, and He clothed them."
+      }
+    },
+    {
+      "id": "provide",
+      "name": "God will provide",
+      "still": "On a mountain a father and his son stand together beside a small pile of stones; behind them a ram is caught by its horns in a thicket.",
+      "younger": "Abraham and his son Isaac climbed a mountain. Isaac asked where the lamb was, and Abraham said, “God Himself will provide the lamb.” God stopped Abraham from hurting his son, and gave a ram instead. Abraham called the place The LORD Will Provide.",
+      "older": "This is one of the hardest stories in the Bible: God tested Abraham, and then God stopped him. Abraham had told Isaac, “God Himself will provide the lamb,” and Abraham offered a ram caught in a thicket “in place of his son.” The Bible's later law and prophets forbid ever offering a child. The place was named The LORD Will Provide, and Christians have long heard in it a promise God himself would keep.",
+      "verse": {
+        "ref": "Genesis 22:8",
+        "text": "Abraham answered, “God Himself will provide the lamb for the burnt offering, my son.”"
+      }
+    },
+    {
+      "id": "passover",
+      "name": "The Passover lamb",
+      "still": "A house at night with its door open and lamplight inside, a family seated at a meal; a small lamb stands by the doorway.",
+      "younger": "When God's people were slaves in Egypt, God told each family to choose a lamb for a special meal and to mark their door. On that night God passed over every marked house, and his people went free. They kept the Passover every year so their children would ask what it means.",
+      "older": "On the night of the first Passover each family chose a lamb, one for each household. Israel was not spared because its people were better. They were spared because a lamb died in their place, and their door was marked. That night was a night of great sadness in Egypt. The rescue was God's work from start to finish, and Israel kept the feast every year so that children would ask what it means.",
+      "verse": {
+        "ref": "Exodus 12:26-27",
+        "text": "When your children ask you, ‘What does this service mean to you?’ you are to reply, ‘It is the Passover sacrifice to the LORD, who passed over the houses of the Israelites in Egypt"
+      }
+    },
+    {
+      "id": "atonement",
+      "name": "The altar and the goat",
+      "still": "The courtyard of the tent of meeting with its altar, smoke rising thin from it; on the right a goat walks away along a path toward the empty wilderness.",
+      "younger": "At the tent of meeting, God gave his people offerings to show that sin is serious and that he makes a way to come near. Once a year, on the Day of Atonement, the high priest laid the people's wrongs on a goat, and it carried them far away into the wilderness.",
+      "older": "Leviticus shows how a holy God and a sinful people can live close together: priests, offerings, and once a year the Day of Atonement. The high priest laid the people's wrongs on a goat, which carried them away into the wilderness. The offerings were repeated year after year, and David learned that God wants more than offerings: “The sacrifices of God are a broken spirit.”",
+      "verse": {
+        "ref": "Leviticus 16:22",
+        "text": "The goat will carry on itself all their iniquities into a solitary place, and the man will release it into the wilderness."
+      }
+    },
+    {
+      "id": "lamb-of-god",
+      "name": "The Lamb of God",
+      "still": "A river with reeds; on the near bank a man points across the water, and on the far bank another man walks along the river toward him.",
+      "younger": "The prophet Isaiah spoke of a servant who would be led like a lamb and would not say a word. Hundreds of years later, John the Baptist saw Jesus coming and called out, “Look, the Lamb of God, who takes away the sin of the world!”",
+      "older": "Isaiah spoke of a servant who “was led like a lamb to the slaughter.” Christians, from the first church on, read that servant as Jesus; many Jewish readers read him as the people of Israel. In John's Gospel, John the Baptist points at Jesus and names him with the whole story behind him: the ram God provided, the Passover lamb, the offering for sin.",
+      "verse": {
+        "ref": "John 1:29",
+        "text": "The next day John saw Jesus coming toward him and said, “Look, the Lamb of God, who takes away the sin of the world!"
+      }
+    },
+    {
+      "id": "once",
+      "name": "Once for all",
+      "still": "An empty cross on a hill at first light, and below it, small and cold, an altar with no smoke and no fire.",
+      "younger": "Jesus died at Passover time. He gave his life freely, for our sins, and nobody forced him. The Bible says he offered one sacrifice for all time, so no more are needed. And on the third day God raised him from the dead.",
+      "older": "Jesus died at Passover, and Paul writes, “Christ, our Passover lamb, has been sacrificed.” Hebrews says the old offerings were repeated year after year, but Jesus “offered for all time one sacrifice for sins” and sat down, his work done. This is not an angry Father against an unwilling Son: the Son gave his life of his own accord. And the cross is not the end of the story. On the third day the tomb was empty.",
+      "verse": {
+        "ref": "Hebrews 10:12",
+        "text": "But when this Priest had offered for all time one sacrifice for sins, He sat down at the right hand of God."
+      }
+    },
+    {
+      "id": "throne",
+      "name": "The Lamb on the throne",
+      "still": "A throne high on a hill with the gold lamb standing alive before it, a river running down from the throne, and people from every side gathered by the water.",
+      "younger": "At the very end of the Bible, John saw the Lamb alive, standing at the center of God's throne. The Lamb who gave his life is the shepherd of his people. He leads them to springs of living water, and God wipes away every tear.",
+      "older": "In Revelation, John sees a Lamb standing at the center of the throne, alive, and all creation worships God and the Lamb together. The marks of the cross are not erased by the resurrection: the risen Christ reigns as the Lamb who gave himself. And the Lamb is a shepherd: “He will lead them to springs of living water.”",
+      "verse": {
+        "ref": "Revelation 7:17",
+        "text": "For the Lamb in the center of the throne will be their shepherd. ‘He will lead them to springs of living water,’ and ‘God will wipe away every tear from their eyes.’"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Again and again in the story, God provides what people cannot. Where do you see him doing that in this moving picture?",
+    "older": "Why might the Bible need so many pictures, a covering, a ram, a lamb, an altar, before it says “the Lamb of God”? What does each one add?"
+  },
+  "read": [
+    { "label": "Genesis 3", "href": "/study/bible/genesis/3" },
+    { "label": "Genesis 22", "href": "/study/bible/genesis/22" },
+    { "label": "Exodus 12", "href": "/study/bible/exodus/12" },
+    { "label": "Leviticus 16", "href": "/study/bible/leviticus/16" },
+    { "label": "Psalm 51", "href": "/study/bible/psalms/51" },
+    { "label": "Isaiah 53", "href": "/study/bible/isaiah/53" },
+    { "label": "John 1", "href": "/study/bible/john/1" },
+    { "label": "1 Corinthians 5", "href": "/study/bible/1-corinthians/5" },
+    { "label": "Hebrews 10", "href": "/study/bible/hebrews/10" },
+    { "label": "Revelation 5", "href": "/study/bible/revelation/5" },
+    { "label": "Revelation 7", "href": "/study/bible/revelation/7" }
+  ],
+  "stops": ["fall", "abraham", "rescue", "sinai", "jesus", "cross", "new-creation"],
+  "cards": ["cross"],
+  "differ": {
+    "text": "All Christians confess that Christ died for our sins and was raised, and that the cross is God's own act of love. They explain how the cross saves in more than one way, and the church has never chosen one picture and discarded the rest. Isaiah's servant is read by Christians as Jesus and by many Jewish readers as the people of Israel. This moving picture does not choose between the ways of explaining the cross. They are set out in",
+    "links": [
+      { "label": "the Study Bible's study of atonement", "href": "/study/bible/doctrines/atonement" },
+      { "label": "its note on Isaiah 53", "href": "/study/bible/isaiah/53" }
+    ]
+  },
+  "care": "This moving picture tells of a real death, and of our sin. If it brings up fear, sadness or guilt, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Why did Jesus die? (a moving picture)", "href": "/study/explorer/watch/why-jesus-died" },
+    { "label": "Atonement: what the Bible teaches, and where Christians differ", "href": "/study/bible/doctrines/atonement" },
+    { "label": "Follow the lamb thread through every stop on the map", "href": "/study/explorer?thread=lamb" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "covering", "text": "After the first man and woman turned away from God, they felt ashamed and tried to cover themselves with leaves. But God came looking for them. He made them clothes himself and dressed them: a better covering than the one they had made.", "verse": false}, {"id": "provide", "verse": false}, {"id": "passover", "text": "When God's people were slaves in Egypt, God told each family to choose a lamb for a special meal and to mark their door. On that night God passed over every marked house, and his people went free.", "verse": false}, {"id": "atonement", "text": "Once a year, on the Day of Atonement, the high priest laid the people's wrongs on a goat, and it carried them far away into the wilderness.", "verse": false}, {"id": "lamb-of-god", "verse": true}, {"id": "once", "verse": false}, {"id": "throne", "verse": false}]},
+  "end": { "label": "Go to the stop: The Cross and the Empty Tomb", "href": "/study/explorer/cross" }
+}
