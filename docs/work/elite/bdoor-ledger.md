@@ -10528,3 +10528,23 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Oath; enguos, guarantor; first use of ‘covenant’; aparabatos; intercession continues; priest and offering one | 20-28 | verses/7.json (20-22, 23-25, 27); chapter deep note `words` | Repository |
 | Leviticus 16:6, 15; Isaiah 53:12; Psalm 110:4 | 20-28 | BSB | BSB text |
 | Chalcedon wording | 20-28 | creeds/documents/chalcedonian-definition.json | Repository text |
+
+## The plain notes on Hebrews 8 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Kephalaion main point or summary; ‘the Majesty’ a reverent name; true = real or original | 1-6 | verses/8.json (1-2) | Repository |
+| Verse 3 does not yet name the offering (9:14; 10:10) | 1-6 | verses/8.json (3) | Repository |
+| Copy and shadow; tupos; ancient temples as copies of heavenly ones; Plato and Jewish apocalyptic both suggested; thinking historical as well as spatial | 1-6 | Chapter deep note `cultural`, `words`; verses/8.json (4-5) | Repository (Philo not named) |
+| Mesitēs, used of Moses (Galatians 3:19) | 1-6 | verses/8.json (6) | Repository |
+| Exodus 25:8-9, 40; Psalm 110:1 | 1-6 | BSB | BSB text |
+| Longest Old Testament quotation in the New Testament | 7-13 | Chapter deep note `historical`; verses/8.json (8) | Repository |
+| God found fault with the people, not the law's holiness | 7-13 | Chapter deep note `literary`; verses/8.json (8) | Repository |
+| Four promises; God's ‘remembering’ is action | 7-13 | Chapter deep note `literary`; verses/8.json (12) | Repository |
+| Jeremiah late 600s and early 500s BC; destruction 587 or 586 BC; Book of Consolation (not named) | 7-13 | Chapter deep note `historical` | Repository |
+| Jeremiah 31:31-34 BSB; Greek ‘did not abide ... I disregarded them’ for Hebrew ‘they broke, though I was a husband’; ‘laws’ plural for ‘law’ | 7-13 | verses/8.json (9, 10); BSB | Repository; BSB text |
+| Ezekiel 36:26; Luke 22:20; Romans 11:1, 28-29 | 7-13 | BSB | BSB text |
+| Views on Israel's place; misuse named and rejected; Acts 2:22-28 pointer; churches since the Holocaust | 7-13 | romans/plain/11.json (11-16); acts/plain/2.json (22-28); hebrews/8.json `hard` | Repository wording, no side |
+| ‘Soon disappear’ read of the temple standing, or from Jeremiah's day | 7-13 | verses/8.json (13); hebrews/intro.json `date` | Repository, no side |
