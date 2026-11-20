@@ -10974,3 +10974,33 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 Cut before publishing: the four verbs as pictures of mending (the notes say only that they build a fitting close).
 
 ## 1 Peter complete (2026-11-20)
+
+## 2 Peter: the book page (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| A farewell testament (1:14-15); three movements; about ten minutes aloud | In a minute; How it is built; How to read | 2-peter/intro.json `overview`, `reading`; 2-peter/1.json `literary` | Repository; reading time an estimate |
+| The letter's claims (1:1, 14, 16-18; 3:1, 15); John 21:18-19 | Who wrote it | 2-peter/intro.json `author` | Repository; BSB |
+| Eusebius: disputed; Jerome: style unlike 1 Peter; Calvin doubted but accepted | Who wrote it; timeline | 2-peter/intro.json `author`; bible/guides/canon.json | Repository |
+| Pseudonymity now a large majority of critical scholarship; five reasons; first readers may have recognised the form | Who wrote it | 2-peter/intro.json `author` | Repository, no side |
+| The replies (another helper, a real farewell, early collection of Paul, the patriarchs, the church's discernment); Athanasius 367; nearly all churches since | Who wrote it; timeline | 2-peter/intro.json `author` | Repository, no side |
+| Dates: 64 to 68 if Peter; 80 to 130 if later; P72 of the 200s or 300s with 1 Peter and Jude | When | 2-peter/intro.json `date` | Repository, no side |
+| Readers perhaps those of 1 Peter; knew Paul's letters; Greek moral vocabulary; Epicurean-like denial of judgment | When | 2-peter/intro.json `setting`; 2-peter/1.json `cultural`; 2-peter/2.json `cultural` | Repository |
+| Theosis and Western readings; not God in essence; the chain of virtues; nearsighted | Divine nature | 2-peter/1.json `words` (G5449), `literary`, `doctrines` | Repository, no side |
+| 1:10 read in line with the election and apostasy readings | Divine nature | 2-peter/1.json `doctrines`; 2-peter/2.json `hard`; 1-peter/1.json `hard` | Repository, no side |
+| Myths (muthoi); eyewitness; pherō of a ship (Acts 27:15, 17); two readings of 1:20 with Catholic, Orthodox and Protestant emphases; Paul with the Scriptures | Scripture | 2-peter/1.json `cultural`, `words`, `hard`; 2-peter/3.json `historical` | Repository, no side |
+| ‘Our God and Savior’ grammar; doxology to Christ; transfiguration in the Gospels; Tabor and Hermon; the Master who bought them | Jesus | 2-peter/1.json `christ`, `historical`; 2-peter/3.json `christ`; 2-peter/2.json `words` (G1203) | Repository |
+| Tartaroō, Tartarus in Greek myth and Jewish use; most likely Genesis 6:1-4 as read in tradition; holding before judgment, not the final state | False teachers | 2-peter/2.json `cultural`, `words` (G5020) | Repository |
+| Judgment paired with rescue (Noah, Lot); 2:9 | False teachers | 2-peter/2.json `literary`, `doctrines` | Repository |
+| Jude overlap; most think 2 Peter used Jude; 1 Enoch and Moses' body omitted; other views | False teachers | 2-peter/intro.json `reading`; 2-peter/2.json `historical` | Repository, no side |
+| Care line ‘If you have been harmed by a controlling leader or church ...’ | False teachers | 2-corinthians/plain/11.json (16-21 `hard`) | Word for word |
+| Four answers to the scoffers; Psalm 90:4; a thousand years about patience, not dates | Day | 2-peter/3.json `literary`; 2-peter/intro.json `reading` | Repository |
+| 3:9: sincere desire; a narrower Reformed reading as with 1 Timothy 2:4; all read as sincere | Day | 1-timothy/plain/2.json (1-7 `hard`); doctrines (election, hope) wording ‘Traditions explain these texts differently, but all of them read them as sincere’ | Repository, no side |
+| 3:10: later manuscripts ‘burned up’, early ‘found’, BSB ‘laid bare’; destroyed or renewed; Romans 8:19-23 | Day | 2-peter/3.json `hard` | Repository, no side |
+| No position on the age of the earth or the flood's extent | Day; What it is not | Instruction for this run | Stated, no claim |
+| Noah, Lot, Balaam (Numbers 22), Proverbs 26:11, Psalm 90:4, Isaiah 65:17 | Old Testament | 2-peter/intro.json `story`; 2-peter/2.json `literary`; 2-peter/3.json `cultural`; BSB | Repository; BSB text |
+| Key words: epignōsis, eusebeia, phusis, aretē, epoptēs, pherō, despotēs, Tartarus, eleutheria, parousia, makrothumeō, stoicheia | Key words | 2-peter/1.json to 3.json `words`, `cultural` | Repository |
+| Map: Sodom and Gomorrah as one rough region at the Genesis map's Sodom point (31.2 N, 35.49 E), on the ‘canaan’ frame (the ‘israel’ frame stops at 31.6 N); the holy mountain not named, so not drawn | Map | genesis/intro.json teaching map | Repository |
+| Deeper links: revelation, canon, union, election, angels, return, new-creation, judgment | Go deeper | bible/doctrines.json | Repository |
