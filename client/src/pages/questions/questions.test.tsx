@@ -78,7 +78,7 @@ describe("the questions library's data", () => {
     expect(contradictions.pieces.length).toBe(5);
     expect(contradictions.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
     expect(oldTestament.live).toBe(false);
-    expect(oldTestament.pieces.length).toBe(5);
+    expect(oldTestament.pieces.length).toBe(10);
     expect(oldTestament.pieces.every((p) => !p.live && p.status === "pending")).toBe(true);
     expect(evil.live).toBe(false);
     expect(evil.pieces.length).toBe(5);
