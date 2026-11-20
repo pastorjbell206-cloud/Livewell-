@@ -24,6 +24,13 @@
           "blurb": "Mill's father and Russell, Dawkins's gambit, what the arguments actually claim, God's simplicity, the burden of proof and the teapot.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-ontological-argument",
+          "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
+          "blurb": "Anselm's prayer and argument, Gaunilo's island, Aquinas and Kant, the modern modal version and its symmetry, and why God's existence, if real, is necessary.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -467,6 +474,26 @@
       "area": "god",
       "slug": "who-made-god",
       "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
+      "live": false
+    },
+    {
+      "claim": "Existence is not a real predicate, so no argument from the idea of God can show that God exists",
+      "proponent": "Immanuel Kant",
+      "work": "Critique of Pure Reason",
+      "year": 1781,
+      "area": "god",
+      "slug": "the-ontological-argument",
+      "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
+      "live": false
+    },
+    {
+      "claim": "The same reasoning would prove that a perfect lost island exists",
+      "proponent": "Gaunilo",
+      "work": "In Behalf of the Fool",
+      "year": 1078,
+      "area": "god",
+      "slug": "the-ontological-argument",
+      "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
       "live": false
     },
     {
