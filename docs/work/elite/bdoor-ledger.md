@@ -9654,3 +9654,33 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Verb ‘direct’ singular with Father and Son | 11-13 | Chapter deep note `christ` | Repository |
 | Zechariah 14:5 behind 3:13; ‘holy ones’ angels, believers or both | 11-13 | Chapter deep note `christ` | Repository. No side |
 | Psalm 89:7; Daniel 7:18; Psalm 37:23 (first clause only) | 11-13 | BSB | BSB text |
+
+## The plain notes on 1 Thessalonians 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Finally’ marks the turn to the second half (3:10) | 1-8 | Chapter deep note `story` | Repository |
+| Porneia broad; Greek and Roman sexual standards (wives faithful; men with slaves, prostitutes; some festivals); Paul's call for men and women alike | 1-8 | Chapter deep note `cultural` | Repository |
+| Skeuos ‘vessel’; body or wife | 1-8 | lex/G/18.json (Abbott-Smith, G4632 and ktaomai) | Repository lexicon. No side |
+| What Christians across the traditions agree on about the body and sex; differences pointed to the wisdom topic | 1-8 | wisdom/deep/sexual-purity.json `differ.share` | Repository wording, paraphrased. No side |
+| Shame line (opening sentence); assault care lines | 1-8 | 1-corinthians/plain/6.json; genesis/plain/34.json | Word for word, the second without its sentence about ‘this story’ |
+| Leviticus 20:7; 18:3; Exodus 20:14; Proverbs 5:18, 21; Ezekiel 36:27 | 1-8 | BSB | BSB text |
+| Philadelphia, love within a family, used of believers | 9-12 | Standard lexicons | Standard |
+| Living quietly against the pursuit of public honour | 9-12 | Standard; earlier ledger (Philippians 2, honour pursued openly) | Ledger |
+| Some stopped working; causes debated (excitement about the coming, patrons, idleness); worse by 2 Thessalonians 3:6-12 | 9-12 | Chapter deep note `historical` | Repository |
+| Help the weak (5:14) | 9-12 | BSB | BSB text |
+| Isaiah 54:13; Jeremiah 31:34; Leviticus 19:18; Psalm 128:2; Proverbs 14:23; Jeremiah 29:7 | 9-12 | BSB | BSB text |
+| Fear for the dead; perhaps died in persecution | 13-14 | Chapter deep note `historical` | Repository |
+| Koimaō a gentle word for death; Jesus ‘died’ (verse 14) | 13-14 | Chapter deep note `words` (G2837) | Repository |
+| Epitaphs of the period resigned or final; philosophers' consolation acceptance | 13-14 | Chapter deep note `cultural` | Repository |
+| Intermediate state: most aware and at rest with Christ; some sleep; no side; doctrine study pointer | 13-14 | 2-corinthians/plain/5.json; doctrines/intermediate | Repository wording |
+| Grief care lines | 13-14 | 2-corinthians/plain/5.json | Word for word |
+| Grieving one without clear faith | 13-14 | john/plain/3.json | First two sentences word for word; the third fitted |
+| Job 19:25-26; Isaiah 26:19; Daniel 12:2; Isaiah 25:8; 2 Corinthians 5:8 | 13-14 | BSB | BSB text |
+| ‘Word of the Lord’: unrecorded saying, summary (Matthew 24:30-31), or prophecy | 15-18 | Chapter deep note `christ` | Repository. No side |
+| Harpazō; Vulgate rapiemur gives ‘rapture’; apantēsis a civic welcome | 15-18 | Chapter deep note `words` (G0726, G0529), `cultural` | Repository |
+| Rapture readings and confession | 15-18 | Chapter deep note `hard`; studyguides/end-times.json | Repository wording. No side; no dates; no events named |
+| Paul ‘we who are alive’: hoped, or spoke as one of the living; Philippians 1:21-23 | 15-18 | BSB; stated as readers' views | BSB text. No side |
+| Exodus 19:16; Psalm 47:5; Isaiah 27:13; Daniel 7:13; Psalm 16:11 | 15-18 | BSB | BSB text |
