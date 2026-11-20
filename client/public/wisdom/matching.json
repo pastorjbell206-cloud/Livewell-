@@ -2639,6 +2639,36 @@
     "apologizing-well",
     "conflict-with-others"
    ]
+  },
+  "conflict-with-others": {
+   "phrases": [
+    "argument with my friend",
+    "fight with my neighbor",
+    "neighbor dispute",
+    "hard conversation",
+    "how do i confront",
+    "confront someone",
+    "we keep arguing",
+    "tension at church",
+    "people at church fighting",
+    "disagreement with",
+    "cant get along with",
+    "clash with",
+    "family group chat",
+    "argument got out of hand"
+   ],
+   "not": [
+    "husband",
+    "wife",
+    "boss",
+    "coworker"
+   ],
+   "related": [
+    "reconciliation",
+    "conflict-at-work",
+    "anger",
+    "gossip-and-the-tongue"
+   ]
   }
  }
 }
