@@ -11915,3 +11915,37 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Ezekiel 39:17; Genesis 19:24; Matthew 25:31 | 17-21 | BSB | BSB text |
 
 Cut before publishing: ‘Blessed are those who are invited’ quoted only in part, as in chapters 14 and 16; ‘the mountains of Israel’ in Ezekiel 39:17 (the quotation stops before it, so that no place in the modern world is brought into view).
+
+## The plain notes on Revelation 20 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last and oldest enemy; ‘ancient serpent’ to Genesis 3 | 1-3 | revelation/20.json `story` | Repository |
+| A single angel; the key of 9:1 and 1:18; deceiving the nations the one thing stopped; dei, ‘must’; no initiative of the dragon's own | 1-3 | revelation/verses/20.json (1, 2-3) | Repository |
+| Deō and the strong man (Mark 3:27; Matthew 12:28-29); readings point to 4-6 | 1-3 | revelation/20.json `words` (G1210), `christ`; revelation/verses/20.json (2-3 `theology`) | Repository, no side |
+| Rebel angels bound in earlier Jewish writings; 2 Peter 2:4; Jude 6; Isaiah 24:21-22 behind the pattern | 1-3 | revelation/verses/20.json (1 `history`, `ot`) | Repository |
+| Isaiah 24:21-22; Genesis 3:15 | 1-3 | BSB | BSB text |
+| Beheading a Roman method; Paul by tradition; the verdict of Roman courts reversed; Daniel's thrones; the souls of 6:9 | 4-6 | revelation/20.json `historical`; revelation/verses/20.json (4) | Repository |
+| ‘A thousand years’ six times; mille and annus; only here in the Bible | 4-6 | revelation/20.json `historical`, `literary` | Repository |
+| Ezēsan; 2:8; the consistency argument and its answer (Alford and Kline, named in the ledger only) | 4-6 | revelation/verses/20.json (4, 5 `grammar`) | Repository, no side |
+| Priests of God and of Christ (1:6; 5:10; Exodus 19:6); vocation; the second death four times (2:11; 20:6, 14; 21:8) | 4-6 | revelation/verses/20.json (6) | Repository |
+| The four millennial views as the book page gives them, each with its holders' grounds and names; not dividing the creeds; what all confess; no side | 4-6 | revelation/intro.json `teaching` (millennium); bible/doctrines/return.json `differ` | Repository, no side |
+| Daniel 7:9, 22; Exodus 19:6 | 4-6 | BSB | BSB text |
+| The nations still follow the deceiver; the heart made new | 7-10 | revelation/verses/20.json (7-8 `theology`) | Repository |
+| Gog of the land of Magog, a northern king, in Ezekiel 38 to 39; in Revelation all nations; no nation named | 7-10 | revelation/20.json `cultural`; revelation/verses/20.json (7-8) | Repository |
+| Parembolē, Israel's camp; no battle; God acts (Ezekiel 38:22; 39:6) | 7-10 | revelation/verses/20.json (9) | Repository |
+| One battle told twice, or a later battle (R. Fowler White's argument, in the ledger only); no side | 7-10 | revelation/20.json `literary`; revelation/verses/20.json (7-8 `grammar`) | Repository, no side |
+| The lake of fire: the traditional view, conditional immortality (the beast and false prophet as powers; ‘the second death’), universal restoration not generally affirmed; no side; what is confessed | 7-10 | client/src/data/answers.ts (is-hell-forever-or-does-it-end); bible/doctrines/hell.json `differ`; revelation/verses/20.json (10, 15) | Repository, no side |
+| Ezekiel 38:2, 22; 39:6; Matthew 25:46; 10:28 | 7-10 | BSB | BSB text |
+| Megas and leukos; the throne unnamed, read as God's shared with the Lamb (22:1; John 5:22) | 11-15 | revelation/verses/20.json (11) | Repository |
+| Great and small; the sea's dead and the ancient fear of no grave; the general resurrection in the creeds | 11-15 | revelation/20.json `cultural`; revelation/verses/20.json (12, 13) | Repository |
+| Books of deeds and the Book of Life (21:27; 13:8); works and grace side by side (Romans 2:6; 3:23-24) | 11-15 | revelation/verses/20.json (12 `theology`); revelation/20.json `doctrines` (salvation) | Repository |
+| Death and Hades thrown away; 1 Corinthians 15:26 | 11-15 | revelation/verses/20.json (14); revelation/20.json `christ` | Repository |
+| Nothing of any person's eternal state; the Book of Life meant to steady (13:8) | 11-15 | revelation/plain/13.json (5-8); revelation/plain/14.json (9-13) | Repository |
+| Grief line ‘If you are grieving someone who died without clear faith ...’ | 11-15 | 1-thessalonians/plain/4.json (13-14 `hard`) | Word for word |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 11-15 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Daniel 7:10; 12:1, 2; Ezekiel 33:11 | 11-15 | BSB | BSB text |
+
+Cut before publishing: Josephus's identification of Magog with the Scythians (so that Gog and Magog are tied to no people at all); ‘Blessed and holy are those’ quoted only in part, as in chapters 14, 16 and 19; the scholars on each side of the ezēsan and one-battle debates, kept to the verse notes.
