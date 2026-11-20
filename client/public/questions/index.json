@@ -139,8 +139,44 @@
       "planned": 20,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-census-of-quirinius",
+          "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+          "blurb": "What Luke says and what Josephus dates, the governors of Syria, Justin and Tertullian, the five proposed solutions with the weakness of each, and why the question is still open.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-two-genealogies",
+          "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+          "blurb": "Both lists set side by side, Julian's charge and Jerome's count, Africanus's levirate explanation in his own words with its weakness, Mary's line and the royal line, and what both lists affirm.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "how-did-judas-die",
+          "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+          "blurb": "The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about \"Jeremiah\" in Matthew 27:9, and the core the accounts share.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-day-of-the-crucifixion",
+          "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+          "blurb": "The Passover calendar from Exodus and Josephus, every time note in the four Gospels, the four solutions with their weaknesses, the hour, and the frame all four share.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "numbers-in-samuel-kings-and-chronicles",
+          "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
+          "blurb": "The differences set out from the English and the Hebrew, where the BSB has already chosen a reading, the Greek translation and the Dead Sea Scrolls, who killed Goliath, and what copying can and can't explain.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "jesus",
@@ -534,6 +570,86 @@
       "area": "authors",
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "Luke dated Jesus' birth by the census of Quirinius, which Josephus places in AD 6, a decade after Herod died, so Luke misdated it",
+      "proponent": "Raymond E. Brown",
+      "work": "The Birth of the Messiah",
+      "year": 1977,
+      "area": "contradictions",
+      "slug": "the-census-of-quirinius",
+      "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+      "live": false
+    },
+    {
+      "claim": "The census of Luke 2 is the famous census of AD 6, placed a decade too early",
+      "proponent": "Geza Vermes",
+      "work": "The Nativity: History and Legend",
+      "year": 2006,
+      "area": "contradictions",
+      "slug": "the-census-of-quirinius",
+      "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke give Joseph different fathers and Jesus different lines from David, so the genealogies contradict each other",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-two-genealogies",
+      "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+      "live": false
+    },
+    {
+      "claim": "The two genealogies cannot be fully harmonized; each evangelist shaped the traditions he had for theological ends",
+      "proponent": "Raymond E. Brown",
+      "work": "The Birth of the Messiah",
+      "year": 1977,
+      "area": "contradictions",
+      "slug": "the-two-genealogies",
+      "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+      "live": false
+    },
+    {
+      "claim": "Matthew says Judas hanged himself and Acts says he fell and burst open, so the two accounts of his death contradict each other",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "how-did-judas-die",
+      "question": "Matthew says Judas hanged himself; Acts says he fell headlong and burst open in a field he had bought. Can both be true?",
+      "live": false
+    },
+    {
+      "claim": "The Synoptic Gospels put the crucifixion on the day after the Passover meal and John on the day the lambs were killed, so they contradict each other on the day Jesus died",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-day-of-the-crucifixion",
+      "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+      "live": false
+    },
+    {
+      "claim": "John moved the day and hour of the crucifixion so that Jesus would die as the Passover lambs were slaughtered",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "contradictions",
+      "slug": "the-day-of-the-crucifixion",
+      "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+      "live": false
+    },
+    {
+      "claim": "Comparing Kings and Chronicles with each other shows confusion and contradiction in the Bible",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795,
+      "area": "contradictions",
+      "slug": "numbers-in-samuel-kings-and-chronicles",
+      "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
       "live": false
     },
     {
