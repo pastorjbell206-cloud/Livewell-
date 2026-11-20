@@ -1,0 +1,91 @@
+---
+area: can-we-trust-the-text
+slug: copies-of-copies
+status: pending (not on the site; for James to read first)
+question: "We don't have the originals, only copies of copies. Isn't it a telephone game?"
+ledger: docs/work/elite/apol-ledger.md, "Tenth run: the pilot area"
+---
+
+# We don't have the originals, only copies of copies. Isn't it a telephone game?
+
+## The short answer
+
+We don't have the originals, and nobody should pretend otherwise. What we have are handwritten copies, the earliest of them fragments whose dates are argued over, the fullest of them from the fourth century. But the telephone game is the wrong picture of how those copies were made. In the game one fragile message passes down a single line, each hearer destroys what he heard, and no one can check. The New Testament was written, not whispered. It was copied in many places at once, the older copies weren't destroyed when new ones were made, and early Christians compared copies and argued about differences. That is why scholars can find most of the mistakes. The telephone picture does get two things right: errors pile up over time, and the earliest stretch of copying is the part we see least. Those are the honest limits, and they are smaller than the picture suggests.
+
+## The objection at its strongest
+
+The objection is old. In the second century the pagan philosopher Celsus charged that some believers had reworked the Gospel three and four and many times over, so they could answer their critics. Origen, answering him in the third century in *Against Celsus*, didn't deny that the text had been tampered with. He said the people he knew of who had done it were heretical groups, the followers of Marcion and Valentinus, and that the fault was theirs, not the faith's.
+
+The modern form belongs to Bart Ehrman. In *Misquoting Jesus* (2005) he put the plain fact plainly: "we don't actually have the original writings of the New Testament." What we have, he wrote, "are copies of these writings, made years later," in most cases many years later, and copies of copies after that. He has argued that the copyists of the first centuries were mostly not trained professionals but ordinary literate believers, and that the early scribes made more mistakes than the later ones. Kim Haines-Eitzen's study *Guardians of Letters* (2000) supports part of that picture: the people who copied early Christian books were usually readers of those books, working in private networks, not workers in a trained guild.
+
+So the objection runs: if the first copies were made by amateurs, if they were copied again and again for centuries before the copies we have, and if we can't see the first hundred years at all, then calling the result "the word of God" is like trusting the last child in a telephone game to tell you what the first child said.
+
+## What is true in it
+
+A good deal of it is true. No autograph of any New Testament book survives. The earliest pieces we have are small. The oldest is usually thought to be P52, a scrap of John 18 in Manchester, which C. H. Roberts dated to the first half of the second century. Later papyrologists have argued for a wider range, and Brent Nongbri has argued that the evidence allows a date as late as the early third century. The larger papyri, P66 with much of John and P75 with much of Luke and John, have usually been dated around 200, and Nongbri has argued for the fourth century for both. Other papyrologists dispute his dates. A careful reader should hold all these dates loosely.
+
+Christians have sometimes made it worse by claiming more than the evidence gives. In 2012, in a public debate with Ehrman, the evangelical scholar Daniel Wallace announced that a fragment of Mark had been dated to the first century. When it was published in 2018 as part of the Oxyrhynchus papyri, the editors dated it to the late second or early third century, and Wallace publicly apologized. He did the right thing, and the episode is a warning to the whole side. The same goes for a story apologists still repeat, that the entire New Testament could be rebuilt from the quotations of the early church writers except for eleven verses. It traces to a secondhand report about a Scottish judge in the nineteenth century, and *Myths and Mistakes in New Testament Textual Criticism* (2019), a book by evangelical scholars written to correct claims of this kind on their own side, gives the church fathers a chapter of its own. A quotation in a sermon can be a paraphrase or a memory, and it takes work to know which.
+
+And the telephone picture is right that errors accumulate. A mistake copied is a mistake kept until someone notices it.
+
+## How copying actually worked
+
+Here is where the picture breaks down, at four points.
+
+First, it was writing, not speech. A copyist had his exemplar open in front of him and could look back at it. Most of his mistakes were the kind writing produces and other copyists can spot: a letter misread, a line skipped because two lines ended with the same word, a word written twice.
+
+Second, the copying branched. The telephone game runs in single file. The New Testament spread like a family tree. By around 180 Irenaeus, in Lyon in Gaul, could treat four Gospels as settled, and copies were being made in Egypt, Syria and Italy by people who never met. A mistake made in one branch is passed down that branch and nowhere else. Set the branches side by side and the mistake stands out.
+
+Third, the older copies weren't destroyed. In the game, once you've whispered the message it's gone. A manuscript, though, could be used for generations, and copies could be checked against older ones. Some were. P75, a copy of Luke and John usually dated around 200, shows signs of long use and repair in antiquity, and its text agrees closely with Codex Vaticanus, copied in the fourth century: one study put the agreement at about 85 percent in wording, order and omissions. That is not a message drifting from mouth to mouth. It's a line of careful copying across, on the usual dating, more than a century.
+
+Fourth, the early church compared copies and argued about them in the open. Irenaeus, writing around 180, knew that some copies of Revelation gave the number of the beast as 616 and said 666 stood in the most approved and ancient copies. Origen in the third century complained about differences among manuscripts of the Gospels, blaming both careless copyists and those who added or removed words as they pleased. Eusebius in the fourth century told a correspondent named Marinus that almost all copies of Mark he knew ended at 16:8, and Jerome later repeated it. These are people checking, not people whispering.
+
+Then there are the great codices. Codex Sinaiticus is the oldest complete New Testament, copied in the middle of the fourth century. Codex Vaticanus, in the Vatican Library, is of the same century and probably a little older. Codex Alexandrinus, also in the British Library, comes from the fifth. They don't agree with one another everywhere, and that is exactly what makes them useful. Where they and the earlier papyri agree, a scholar has good reason to think he's looking at a reading older than any of them. Where they differ, he can see both sides.
+
+## The argument, laid out
+
+This is an argument from how copying works to what we can know. It doesn't claim certainty about every word.
+
+1. A copying process that is written, branching, and leaves older copies in use produces errors that differ from branch to branch.
+2. Errors that differ from branch to branch can usually be found by comparing the branches, and the reading they share can usually be traced back toward a common source.
+3. The New Testament was copied in that way, in many regions, from the second century on, and the early church itself compared copies and argued about differences.
+4. Where our earliest copies can be compared with the later ones, they carry substantially the same text.
+
+So: the text we read can be traced back with good confidence to the text that was circulating in the second century, and the telephone game, which has none of those features, is the wrong picture of how we got it.
+
+The weight sits on the fourth step, because it is the one that tests the others against the evidence. It rests on a limited number of early papyri, and their dates are argued over. A reader who doubts it can compare P75 with Vaticanus in any good edition and see.
+
+## The strongest reply, and an answer
+
+The strongest reply concedes nearly all of this and moves the question back. Very well, it says, you can reconstruct the text that was circulating around the year 200. But the books were written between about the 50s and the end of the first century. That leaves a hundred years or more that no manuscript reaches, and those were the years when copies were fewest, copyists least trained and controversies sharpest. A change made then and copied everywhere would be invisible to your method. You can trace the branches back to the trunk. You can't see the root.
+
+That is true, and it is the right place to press. No method can prove what happened in a period that left no copies. But two things can be said. The first is that the books had spread very widely by the second century, as Irenaeus and the Egyptian papyri show, so a change would have had to be made very early, before the branches separated, or it would have had to reach every branch and erase the older reading in all of them. The variants we can see show how hard that was. Even the corrections early copyists made on purpose, such as dropping "nor the Son" from Matthew 24:36, survive alongside the older reading, which is how we know about them. The second is that the earliest Christian writings we have, Paul's letters from the 50s, can be checked against the Gospels on the main lines of the story, and they agree on what matters most: that Jesus was crucified, buried, raised and seen (1 Corinthians 15:3-7). Paul says he was passing on what he himself had "received," and he named witnesses, "most of whom are still alive" (1 Corinthians 15:6), people who could be asked.
+
+None of that proves the first copies were perfect. It does mean the skeptic's alternative needs a change that was very early, very fast, everywhere at once, and left no trace in any branch. That is possible. It isn't the most likely account of the evidence we have.
+
+## What remains unresolved
+
+The dates of the earliest papyri are unsettled, and the honest range for some of them is wide. The first century of copying is not directly visible to anyone. Scholars also disagree about what to call the goal of their work: some speak of recovering the original text, while D. C. Parker argued in *The Living Text of the Gospels* (1997) that the Gospels lived and changed in the church's use, and that the search for one original form misreads that history. A Christian should be able to say all of this without alarm.
+
+## Where Christians differ
+
+Faithful Christians differ on how to weigh the manuscripts. Most modern scholars give special weight to the oldest witnesses. Others hold that the reading of the great majority of manuscripts usually preserves the original, or keep to the Greek text behind the King James Version as the one the church received and used. Christians also differ on whether to say that inspiration belongs strictly to the original writings or that God also kept the text through its copying. This page doesn't settle those questions. The evidence above is common ground for all of them.
+
+## Read the other side
+
+- Bart D. Ehrman, *Misquoting Jesus* (2005).
+- Kim Haines-Eitzen, *Guardians of Letters: Literacy, Power, and the Transmitters of Early Christian Literature* (2000).
+- Brent Nongbri, *God's Library: The Archaeology of the Earliest Christian Manuscripts* (2018). Not written against Christianity, but the strongest case for holding early dates loosely.
+- D. C. Parker, *The Living Text of the Gospels* (1997).
+
+## Read further
+
+- Bruce M. Metzger and Bart D. Ehrman, *The Text of the New Testament*, 4th ed. (2005).
+- Larry W. Hurtado, *The Earliest Christian Artifacts: Manuscripts and Christian Origins* (2006).
+- Elijah Hixson and Peter J. Gurry, eds., *Myths and Mistakes in New Testament Textual Criticism* (2019).
+- Robert B. Stewart, ed., *The Reliability of the New Testament: Bart D. Ehrman and Daniel B. Wallace in Dialogue* (2011).
+
+## On the site
+
+- "There are more differences among the manuscripts than words in the New Testament" (this area), on the number and kinds of variants.
+- The short answer "The Gospels are copies of copies. How is that trustworthy?" in /theology/questions, which this page agrees with. Two lines there should be corrected to match the evidence here: it dates the Manchester fragment to "the first half of the second century" without the dating debate, and it says the variants are flagged "in the footnotes of any modern Bible", which holds for the largest passages but not for every meaningful variant.

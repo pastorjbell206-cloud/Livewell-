@@ -1,0 +1,86 @@
+---
+area: can-we-trust-the-text
+slug: more-variants-than-words
+status: pending (not on the site; for James to read first)
+question: "There are more differences among the manuscripts than words in the New Testament. So how can anyone trust it?"
+ledger: docs/work/elite/apol-ledger.md, "Tenth run: the pilot area"
+---
+
+# There are more differences among the manuscripts than words in the New Testament. So how can anyone trust it?
+
+## The short answer
+
+The figure is true, and Christians shouldn't flinch from it. Scholars estimate the differences among the Greek manuscripts in the hundreds of thousands, against about 138,000 words in the Greek New Testament. But the count is high for a reason that cuts the other way: we have thousands of copies, and every slip in every copy counts. Most of the differences are spelling, word order and accidents that change nothing a reader would notice, and the places where the wording is really in doubt and also changes the sense are a small share, known, and marked in every modern Bible. Even the scholar who made the figure famous has said that the essential Christian beliefs don't depend on a disputed reading. What the number shows is that we know a great deal about how the text was copied, including where we can't be sure.
+
+## The objection at its strongest
+
+The line comes from Bart Ehrman, who teaches at the University of North Carolina and is among the best-known textual critics alive. He studied under Bruce Metzger at Princeton Theological Seminary, he knows the manuscripts better than most of the Bible's defenders, and he left the faith. In *Misquoting Jesus* (2005), a surprise bestseller, he wrote that "there are more variations among our manuscripts than there are words in the New Testament." He reported scholarly estimates of the number of variants running from about 200,000 to 400,000. Since then the estimates have gone up, not down. In 2016 Peter Gurry, an evangelical scholar, published a careful estimate in *New Testament Studies* of about 500,000 differences among the Greek manuscripts, not counting spelling, and he said himself that it was higher than earlier figures. Eldon Epp has suggested a figure as high as 750,000.
+
+Put at full strength, the objection goes like this. Christians say the Bible is God's word, and many say it is without error. But the Bible they read isn't any single manuscript. It's a text that scholars have put together by choosing among hundreds of thousands of differences. If the copies disagree that often, how can anyone say with confidence what Paul or Mark wrote, let alone build a life on it? And the manuscripts themselves are mostly late. Of the 5,838 Greek manuscripts Daniel Wallace's center counted in 2013, 2,926 were minuscules and 2,462 were lectionaries, kinds of manuscripts copied mostly from the eighth and ninth centuries onward, many centuries after the books were written. The early ones are few, and most of those are fragments. A skeptic who hears "thousands of manuscripts" and then learns that most of them are medieval can fairly feel that he has been sold something.
+
+## What is true in it
+
+All of the numbers above are true, or are honest estimates by people who know the field. The estimates differ because what counts as one variant is itself a choice, and that should make everyone, believer and skeptic alike, careful with any single figure. The variants outnumber the words, and nobody serious disputes it. The manuscripts are mostly late. The early ones are mostly small. Some of the differences matter. A few long passages that many Christians grew up reading were not in the earliest copies. And there are places where the best scholars, believers among them, still can't say with confidence which reading came first.
+
+Some Christians have answered all this with slogans that don't hold up, and they should stop. "Thousands of manuscripts" said without "most of them medieval" misleads. So does any claim that the text has come down to us without change. The case for trusting the text has to be made with the hard facts in view, or it isn't worth making.
+
+## The evidence
+
+Start with why the number is so large. The New Testament was copied by hand until the first printed Greek New Testament appeared in 1516, in Greek and in early translations such as Latin, Syriac and Coptic, and more of those copies survive than for any other book of the ancient world. Daniel Wallace has reported more than 10,000 Latin manuscripts and as many as 5,000 in other ancient languages, beside the Greek. Every copyist made mistakes, so the more copies survive, the more mistakes survive with them. A text that survives in one copy has no variants at all. That doesn't make it more reliable. It makes its errors invisible. The first six books of Tacitus's *Annals*, one of our main sources for the emperor Tiberius, survive in a single medieval manuscript. Classicists don't conclude that we can't know what Tacitus said. They work from that copy and mark what they can't settle. The New Testament gives scholars the same task with vastly more to check against.
+
+Then look at what kinds of differences they are. Wallace and his co-authors, in *Reinventing Jesus* (2006), sorted them into four kinds, and most textual critics would recognize the sorting even when they argue about the shares. By far the largest group is spelling and plain slips: a word misspelled, a letter dropped, a line skipped because two lines ended alike. The next is differences that don't change the sense or can't be seen in English, such as Greek word order, which is far freer than English, or whether an article stands before a name. Then come differences that do change the sense but have almost no chance of being original, because one late manuscript stands against the whole tradition. Last come the readings that both change the sense and have a real claim to be original. Wallace's estimate is that this last group is less than one percent of all variants, and he says that no central belief is at stake in them, though some do change what a particular passage says. He has given lower figures elsewhere, and others would put the share differently. The order of size is what matters, and on that the field broadly agrees.
+
+Here is what that last group looks like, because it is fair to see the hard cases and not only the easy ones. In Mark 1:41, most manuscripts say Jesus was "moved with compassion" when a leper begged him for healing. A few, Codex Bezae and some Old Latin copies, say he was "angry." Ehrman has argued that "angry" is original and that scribes softened it, since it is easier to see why a copyist would change anger to compassion than the reverse. Others reply that the evidence for anger is thin. In Matthew 24:36 Jesus says that no one knows the day or the hour, not even the angels, "nor the Son," but only the Father. The oldest manuscripts have "nor the Son." The majority of Matthew's manuscripts, including the later Byzantine ones, leave it out. Bruce Metzger, an ordained Presbyterian minister, judged that the words were original and that scribes dropped them because of the doctrinal difficulty. In Revelation 13:18 some early manuscripts give the number of the beast as 616 instead of 666, and Irenaeus already knew both readings around 180. Then there are the long passages: the ending of Mark and the story of the woman caught in adultery, which have their own page in this area. These are real questions. None of them is hidden, and none of them is the kind of thing a reader is told nothing about. Open a modern Bible and the notes are there.
+
+The manuscripts also have to be compared honestly. Most are late, but not all. The oldest piece of the New Testament is usually thought to be a small scrap of John's Gospel in Manchester, called P52, commonly dated to the second century, though some papyrologists argue it could be later. More than 140 New Testament papyri are now known, most of them fragments. A few substantial ones, such as P66 and P75 with large parts of Luke and John, have traditionally been dated around 200, though some scholars now argue for later dates. The oldest complete New Testament, Codex Sinaiticus, was copied in the fourth century, and Codex Vaticanus, almost complete, comes from the same century. So the gap between the books and our fullest copies is real. But where the early papyri can be compared with the fourth-century codices, they carry substantially the same text. P75 and Vaticanus, for instance, agree closely enough that one study put their agreement at about 85 percent in wording, order and omissions, which on the usual dating shows a careful line of copying across more than a century. That is the opposite of what we would expect if the text had been drifting freely.
+
+Last, there is the claim many defenders make, that no essential Christian belief rests on a disputed reading. It should be stated as a claim, with its defenders and its critics. Its defenders include Metzger and Wallace, and also, strikingly, Ehrman himself. In a question-and-answer appendix to *Misquoting Jesus* he said his position did not stand at odds with Metzger's, that "essential Christian beliefs are not affected by textual variants in the manuscript tradition of the New Testament." The claim also has critics. Ehrman's fuller point is that some variants do change how whole passages, and sometimes a book's emphasis, can be read, and that the meaning of Scripture can't be separated from its wording. D. C. Parker, a leading British textual critic, argued in *The Living Text of the Gospels* (1997) that the search for one original text misunderstands how the early church handed on its traditions. Those are serious points. Neither of them, as stated, says that the creeds rest on a reading in doubt.
+
+## The argument, laid out
+
+This is an argument from the evidence to the most reasonable conclusion. It can't prove that we have every word the authors wrote, and it doesn't try.
+
+1. The number of variants in a text's copies grows with the number of copies that survive, so a large count is what we should expect of a text copied very often.
+2. A text copied very often, in many places, gives scholars more ways to find and correct a mistake than a text copied rarely, because a slip in one line of copies can be checked against others.
+3. Of the New Testament's variants, the great majority change nothing a reader would notice, and those that both change the sense and have a real claim to be original are a small share, by any of the estimates on offer.
+4. Those uncertain places are known, studied and marked in modern Bibles, and none of them is the only ground for a belief the historic creeds confess.
+
+So: the number of variants is not evidence that the text is lost. The New Testament's wording is known with high confidence in nearly every place, and in the places where it isn't, we know that we don't know.
+
+The weight sits on the third step, because that is where the large number has to be broken down. A reader can check it. Pick any page of a Greek New Testament with its notes, or the notes in an English Bible, and see what kind of difference most of them record.
+
+## The strongest reply, and an answer
+
+The strongest reply doesn't argue about percentages. It says that the variants we can count all come from copies we have, and the copies we have mostly come from after the year 200. What happened before that, while the books were being copied by ordinary believers, not trained scribes, is the stretch we can see least. Ehrman has pressed exactly this: the copies were made years later, in most cases many years later, and the early period is when changes were most likely. A count of later variants tells you nothing about changes made before the surviving copies were made.
+
+That is the right question, and it can't be fully answered, because no evidence reaches back to the first decades. But it can be partly answered. By the end of the second century the books had already spread across the Roman world, from Egypt to Gaul. A change made early in one place would have had to replace the older reading in every other place too, or we would expect to find traces of the older reading somewhere. Where the earliest papyri overlap with the later codices, they agree substantially, which is evidence that the copying line was steady and not wild. And when early copyists did change the text on purpose, as in Matthew 24:36, the older reading usually survives in other copies, which is how we know about the change at all. The next page in this area takes up the early period in full. For now it is enough to say that the gap is real and that the evidence on either side of it points the same way.
+
+The second reply is sharper. If even one passage was changed, how do you know anything is right? But that sets a standard no ancient text meets and no historian applies. The question is never whether a text was copied perfectly. It's whether we can tell where it wasn't. On that question the New Testament is better placed than any other book of its age.
+
+## What remains unresolved
+
+Some places really are open. Mark 1:41 is one. Hebrews 2:9, where a few manuscripts and some early writers say Jesus tasted death "apart from God" and most say "by the grace of God," is another. The ending of Mark is the largest. Scholars who share the same evidence and the same method disagree about these, and anyone who tells you otherwise hasn't read them. The deeper question Parker raises also stays open: what exactly we mean by "the original text" of a book that may have been revised or circulated in more than one form before our earliest copies. These questions don't touch whether Jesus was crucified, whether his followers proclaimed him risen, or what the creeds confess about him. They do mean that a Christian should be slow to build anything on a single disputed reading.
+
+## Where Christians differ
+
+Faithful Christians differ here, and this page takes no side. Most modern scholars, including most evangelicals, work by weighing each variant on its merits with special weight on the oldest manuscripts. Others hold that the reading of the great majority of manuscripts, the Byzantine text, is usually original. Still others keep to the Greek text behind the King James Version as the one the church received. Christians also differ on how to state the trustworthiness of Scripture: many evangelical churches confess that it is without error as first written, while others who also confess it as the word of God put that conviction in other words. Those are family arguments. They aren't the same question as whether the New Testament's text is known well enough to be read and tested, and on that question these traditions largely agree.
+
+## Read the other side
+
+- Bart D. Ehrman, *Misquoting Jesus* (2005). The best popular case that the copying of the text should unsettle readers.
+- Bart D. Ehrman, *The Orthodox Corruption of Scripture* (1993; 2nd ed., 2011). The scholarly case behind it.
+- D. C. Parker, *The Living Text of the Gospels* (1997). A different challenge: whether "the original text" is the right goal at all.
+
+## Read further
+
+- Bruce M. Metzger and Bart D. Ehrman, *The Text of the New Testament*, 4th ed. (2005). The standard introduction, written by a believer and a skeptic together.
+- Kurt Aland and Barbara Aland, *The Text of the New Testament* (English 1987; 2nd ed., 1989).
+- Elijah Hixson and Peter J. Gurry, eds., *Myths and Mistakes in New Testament Textual Criticism* (2019). Evangelical scholars correcting the bad arguments on their own side.
+- Peter J. Gurry, "The Number of Variants in the Greek New Testament: A Proposed Estimate," *New Testament Studies* 62 (2016).
+- Robert B. Stewart, ed., *The Reliability of the New Testament: Bart D. Ehrman and Daniel B. Wallace in Dialogue* (2011).
+- J. Ed Komoszewski, M. James Sawyer and Daniel B. Wallace, *Reinventing Jesus* (2006).
+
+## On the site
+
+- The argued answer "Why would anyone trust the Bible?" (/answers/why-would-anyone-trust-the-bible), which this page agrees with and goes further than.
+- The Study Bible's text notes on Mark 1, Mark 16, John 8, Luke 22 and 1 John 5, which set out the evidence for the hardest variants verse by verse.
