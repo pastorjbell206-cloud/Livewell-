@@ -9949,3 +9949,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Public reading from the synagogue; few owned copies; reading, exhortation, teaching | 11-16 | Chapter deep note `cultural` | Repository |
 | Laying on of hands (Numbers 27:18-23; Acts 6:6; 13:3) | 11-16 | Chapter deep note `cultural` | Repository; BSB text |
 | Jeremiah 1:6-7; Psalm 119:9; Deuteronomy 31:11; Nehemiah 8:8; Numbers 27:18 | 11-16 | BSB | BSB text |
+
+## The plain notes on 1 Timothy 5 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The church as God's household (3:15); members as family (5:1-2) | 1-2 | Repository `themes` | Repository |
+| Leviticus 19:32; Exodus 20:12; Ruth 1:16 | 1-2 | BSB | BSB text |
+| Widow's dowry; family expected to take her in; destitution without family; pagan society expected children to care | 3-8 | Chapter deep note `cultural` | Repository |
+| Care for widows in Israel's law (Deuteronomy 14:28-29; 24:19-21; Isaiah 1:17); Acts 6:1; an enrolled list | 3-8 | Chapter deep note `historical` | Repository; BSB text |
+| Anna (Luke 2:36-37) | 3-8 | BSB | BSB text |
+| Psalm 68:5; Deuteronomy 14:29; Isaiah 1:17 | 3-8 | BSB | BSB text |
+| Enrolled widows with duties of prayer and service; qualifications like chapter 3 | 9-16 | Chapter deep note `historical` | Repository |
+| Foot-washing a servant's welcome; John 13 | 9-16 | Standard; BSB | BSB text |
+| A pledge of service (seems); idleness and gossip; some followed the false teachers; marriage the remedy; Augustus's law encouraging widows of childbearing age to remarry; 1 Corinthians 7:39-40; most read verse 14 as counsel for a situation | 9-16 | Chapter deep note `cultural`, `hard` | Repository |
+| Grief care lines | 9-16 | 2-corinthians/plain/5.json | Last two sentences word for word |
+| Proverbs 31:20; Psalm 146:9; Deuteronomy 24:17 | 9-16 | BSB | BSB text |
+| Double honour; Deuteronomy 25:4 and Luke 10:7 under ‘Scripture’; scholars discuss what that shows | 17-22 | Chapter deep note `historical` | Repository |
+| Accusations and witnesses; public rebuke; no partiality; never a reason to dismiss a report | 17-22 | BSB verses 19-21 | BSB text |
+| Discipline misuse; police (Romans 13:4); word to the hurt | 17-22 | 1-corinthians/plain/5.json | Word for word, with ‘This passage, like others about discipline,’ for ‘This passage’ |
+| Deuteronomy 25:4; Numbers 18:31; Deuteronomy 19:15; Leviticus 19:15; Exodus 23:2 | 17-22 | BSB | BSB text |
+| Wine in ancient medicine; water often unsafe; Timothy perhaps abstaining as self-denial | 23-25 | Chapter deep note `cultural` | Repository |
+| Abstinence and moderation; what all agree; the drinking care line | 23-25 | ephesians/plain/5.json (15-20); wisdom/deep/alcohol-and-drinking.json | Word for word; ‘not medical advice’ added |
+| Psalm 104:15; Proverbs 20:1; Jeremiah 35:6; Ecclesiastes 12:14; Proverbs 28:13 | 23-25 | BSB | BSB text |
