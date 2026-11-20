@@ -1,5 +1,5 @@
 {
-  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build) and holdout3 (third build) were each written and committed before matching.json was touched; holdout2 has since been tuned for, so holdout3 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
+  "about": "Plain sentences a real person might type into the Wisdom Finder, each with the topic ids that would be a right answer (any one of them counts). Written before the matcher was tuned. The holdout set was written at the same time and not looked at while the curated phrases were written; the test reports both. holdout2 (second build), holdout3 (third build) and holdout4 (fourth build) were each written and committed before matching.json was touched; holdout2 and holdout3 have since been tuned for, so holdout4 is the clean set. Read by client/src/lib/wisdom-match.test.ts.",
   "cases": [
     { "q": "my son walked away from the faith", "expect": ["wayward-child"] },
     { "q": "passed over for promotion and bitter", "expect": ["envy-and-comparison", "jealousy", "anger", "success-and-failure", "conflict-at-work", "when-life-is-unfair"] },
@@ -136,5 +136,22 @@
     { "q": "my coworker keeps taking credit for my work", "expect": ["conflict-at-work", "status-and-recognition"] },
     { "q": "I can't stop scrolling my phone at night", "expect": ["technology-and-distraction", "social-media", "self-control"] },
     { "q": "my mother never told me she loved me and now she's gone", "expect": ["losing-a-parent", "grief", "regret"] }
+  ],
+  "holdout4": [
+    { "q": "I lost my job on Friday and I haven't told my wife yet", "expect": ["job-loss", "financial-hardship"] },
+    { "q": "my best friend stopped returning my calls and I don't know why", "expect": ["deep-friendship", "loneliness", "betrayal"] },
+    { "q": "our church just split over the new pastor", "expect": ["division-in-the-church", "church-hurt"] },
+    { "q": "I can't forgive my dad for leaving us", "expect": ["forgiveness", "difficult-family"] },
+    { "q": "I want to believe but I keep thinking it's all made up", "expect": ["doubt"] },
+    { "q": "my daughter is moving across the country for college", "expect": ["going-to-college", "empty-nest"] },
+    { "q": "we fight about money every single week", "expect": ["marriage-conflict", "money"] },
+    { "q": "I said yes to everything and now I'm drowning", "expect": ["busyness-and-overwhelm", "saying-no", "people-pleasing"] },
+    { "q": "my mom has dementia and doesn't recognize me anymore", "expect": ["caring-for-aging-parents", "caregiving"] },
+    { "q": "I feel like God stopped listening to my prayers", "expect": ["prayer-struggles", "feeling-far-from-god", "spiritual-dryness"] },
+    { "q": "I'm so jealous of my sister's life", "expect": ["jealousy", "envy-and-comparison", "sibling-conflict"] },
+    { "q": "I gambled away our savings", "expect": ["gambling", "financial-hardship"] },
+    { "q": "my husband cheated and I don't know if I should stay", "expect": ["marriage-after-an-affair", "cheating", "betrayal"] },
+    { "q": "I keep putting off the things I need to do", "expect": ["procrastination-and-laziness"] },
+    { "q": "we just moved to a new town and I don't know anyone", "expect": ["relocation", "loneliness"] }
   ]
 }
