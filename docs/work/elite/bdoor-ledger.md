@@ -8614,3 +8614,30 @@ quotation to the verse it cites.
 
 Cut: the deep note's scholar names (Baur, Barrett, Betz); "most personal" kept as
 a description, not a claim about scholars; the date of the Damascus escape.
+
+## The plain notes on 2 Corinthians 1 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter form; Achaia the province of southern Greece | 1-7 | 1 Corinthians 1 plain note; deep note | Repository |
+| ‘Comfort’ ten times in verses 3 to 7 (noun and verb) | 1-7 | Greek text (G3874, G3870) | Script count |
+| Paraklēsis from "call to one's side"; Paraclete in John | 1-7 | Deep note `words`; standard lexicons | Repository |
+| Thlipsis, pressure | 1-7 | Deep note `words` | Repository |
+| Israel's prayers bless God (Psalm 41:13; 72:18) | 1-7 | BSB | BSB text. "Synagogue prayers" (deep note) not used |
+| Exodus 34:6; Isaiah 40:1; 51:12; 66:13; Psalm 119:50; 94:19; 23:4; John 11:35 | 1-7 | BSB | BSB text |
+| Care line: suffering not called good; Find Help | 1-7 | Site form (Romans 8:28 note) | Repository wording |
+| The hardship in Asia unknown; the Ephesus riot most often suggested; objections ("Asia", not "Ephesus"; Acts does not show his life in danger); illness, imprisonment | 8-11 | Commentaries | Search: biblehub.com and openbible.com commentaries on 1:8; studylight.org; ccel.org Barnes. Stated as guesses, "no one knows" |
+| Exaporeomai at 1:8 and 4:8 only | 8-11 | Greek text (G1820) | Script count |
+| 1 Samuel 2:6; Deuteronomy 32:39; Psalm 116:3, 8; Jonah 2:2; Isaiah 38:1; 1 Kings 19:4; Psalm 31:22 | 8-11 | BSB | BSB text |
+| Care line on 1:8-9: pointer to the 1 Corinthians 10:13 note; the Psalms 88 despair form; 7:6 | 8-11 | Repository | Repository wording, no phone number |
+| Plans of 1 Corinthians 16:5; honour and a man's word | 12-24 | BSB; deep note `cultural` | Repository |
+| Amen, Hebrew "it is true", "so be it" | 12-24 | Standard lexicons | Standard |
+| Anointing shares a root with Christ; seal marks ownership and genuineness | 12-24 | Deep note `cultural` | Repository |
+| Arrabōn a business word for a down payment, common in the papyri; Hebrew ʿērābôn of Genesis 38:17-18 | 12-24 | Lexicons (Thayer, LSJ, Frisk) | Search: lsj.gr; biblehub.com Strong's 728; biblestudytools lexicon. Phoenician route not used |
+| Silvanus a fuller Latin form of Silas; most identify him with Paul's companion | 12-24 | Reference works | Book page search (biblicaltraining.org; blueletterbible.org) |
+| Deuteronomy 7:9; Numbers 23:19; Matthew 5:37; James 5:12; 1 Samuel 16:13; Genesis 38:17; Joel 2:28; 12:7-9 | 12-24 | BSB | BSB text |
+
+Cut: the deep note's "synagogue prayers that open with blessing God" (not checked);
+the riot named as fact.
