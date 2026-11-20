@@ -8034,3 +8034,27 @@ needed); Calvin by name for the "whole people of God" reading.
 
 Cut: the Roman fable of the belly and the members (not checked); masks in
 the ancient theatre; inns; early Christian writers on the coals (not checked).
+
+## The plain notes on Romans 13 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| About AD 57; Nero emperor 54-68, early in his reign; fire and killing of Christians July 64; tradition that Paul died in Rome under Nero | 1-7 | Book page; earlier ledger (Tacitus, Annals 15.44; Eusebius 2.25; 1 Clement 5) | Ledgers |
+| Claudius's expulsion of Jews "perhaps around AD 49" (disputed); Prisca and Aquila | 1-7 | wrom-ledger (Suetonius; Orosius) | Ledger |
+| Tacitus, Annals 13.50: the people's repeated complaints of the tax collectors' greed; Nero considered abolishing the indirect taxes; his advisers checked him; "around this time" (no year stated) | 1-7 | Tacitus | Search: sacred-texts.com Annals 13.50 (English and Latin); poetryintranslation.com Annals 13. Paraphrased |
+| Phoros (direct tax) and telos (tolls, customs) "most likely" | 1-7 | Repository deep note (`historical`) | Repository |
+| Mark 12:17; Daniel 2:21; Proverbs 8:15; Jeremiah 29:7; Exodus 1:17; Daniel 3:18; 6:10; Acts 5:29; Revelation 13 | 1-7 | BSB | BSB text |
+| 1850 sermons urging a religious duty to obey the law requiring the return of people who escaped slavery (e.g. Ichabod Spencer, "The Religious Duty of Obedience to Law", Brooklyn, 24 November 1850), answered by "God's laws paramount" (Nathaniel Colver, 1850) | 1-7 | Sermons | Search: gutenberg.org 13988; archive.org; library catalogues. Stated generally, no preacher, nation or law named; not claimed that each cited Romans 13 |
+| Kairos Document (1985) names Romans 13:1-7 as the first example of "State Theology" and rejects its use to give the apartheid state absolute, divine authority | 1-7 | Kairos Document, chapter 2 | Search: sahistory.org.za (document text); Wikipedia "Kairos Document". Paraphrased; no nation named |
+| Pacifist, just war (Augustine to Aquinas) sentences | 1-7 | Luke 6 plain note (and ledger line on Aquinas, Summa II-II q. 40) | Repository wording |
+| Death penalty: two views, no side; "Romans does not tell anyone which party or ruler to support" | 1-7 | Book page ("What Romans is not") | Repository |
+| Exodus 20:13-15, 17; Leviticus 19:18 in its chapter; Mark 12:31 | 8-10 | BSB | BSB text |
+| Augustine, 386, Milan garden, "take up and read", Romans 13:13-14 | 11-14 | Book page; earlier ledger (Confessions 8.12) | Repository wording |
+| Galatians 3:27; Isaiah 60:1; 59:17; Ephesians 6 | 11-14 | BSB | BSB text |
+| Nearness of the day read two ways | 11-14 | Standard readings | Stated as readings, no side |
+
+Cut: the "quinquennium" of Nero's good years (not checked); debt in Rome;
+Luther and Calvin on obedience; the Confessing Church (in the deep note, not
+needed); the year AD 58 for Annals 13.50 (said "around this time").
