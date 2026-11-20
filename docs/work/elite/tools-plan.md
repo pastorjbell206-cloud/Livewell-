@@ -677,6 +677,52 @@ The proposal above. numbness onward (128 topics). Job in the explorer. Any retir
 
 ---
 
+## 20. Build 9 (2026-11-20): a measure written by someone else, the finder proposal's first three parts, twelve topics
+
+Retires, renames, merges and re-lists nothing; `toolsList.ts`, `siteCatalog.ts` and the menus are untouched. Ledger rows: `docs/work/elite/tools-ledger.md`, "Ninth build". Screenshots: `/home/user/elite-shots/tools/run9-*`.
+
+### holdout8, and a safety defect it found
+
+Twenty-four sentences written by the run's coordinator, who had not seen the phrasings, each set to the topic written in full that its description names, were committed alone (`668351e7`) before anything was touched. A twenty-fifth (a church split and distrust of pastors) was dropped: Church Hurt is not yet written in full. Baseline: 45.8% first, 62.5% in the first three. holdout8 is never tuned to.
+
+Its self-harm sentence, "sometimes i think everyone would be fine if i just disappeared", put Anxiety first: a safety defect. Fixed at once with general rewrites (wishing to disappear, "fine without me", "everyone would be better off if i", and "want to die", which had not put the help topic first) and tested in five other wordings. Its control sentence, "my husband checks my phone and wont let me see my friends", already put the help topic first, but only by score; other wordings did not. A new `safetyPairs` entry in `matching.json` reads a control word ("checks my phone", "wont let me see", "controls the money", "isolates me" and the like) as danger when a partner word (husband, wife, boyfriend, girlfriend, partner, fiance, spouse) comes before it, so "my dad wont let me see my boyfriend" is not read as abuse. Five other wordings tested; the validator checks every pair. Both sentences now land on the help topic first with Find Help under it, at baseline and after (the control one by score at baseline, by safety now).
+
+### The finder: the proposal's first three parts (the word-vector file was not built)
+
+1. **Each written topic weighed against its own page.** `build-wisdom-index.mjs` weighs every word of each topic written in full (title three times, phrasings twice, every passage's where it stands, the misread layer, the whole-Bible section) with BM25 and writes each topic's 160 strongest words into `finder.json` as `weights`. The matcher adds them at `PAGE_WEIGHT` 0.5, the highest weight that cost nothing on the tuning sets (cases to holdout6; 0, 0.25 and 0.5 tied there, 0.75 and 1 lost). `scripts/lib/wisdom-words.mjs` mirrors the browser's normalize and stem; the test fails if the two disagree on any word. `finder.json` is fetched only by the finder: 227,543 bytes before, 378,574 after the twelve topics (+151 KB raw; 66,868 to 117,200 gzipped).
+2. **A concept table from the site's own lists**: doubt and unbelief, recovery, divorce, waiting for a child, questions of conscience, losing work, why the world suffers, and burnout, hustle and sabbatical added to work and rest, every word taken from Find Help's `askedAs` lists or the Honest Answers' questions, none from a holdout.
+3. **"Is it one of these?"** When the best score is under 12 (`UNSURE_SCORE`), or another topic is as close, and the words met two areas or more, the finder offers up to six areas the words met as plain buttons (44px, `aria-pressed`, in a labelled group); one narrows the subjects to that area (`findInArea`, never empty), and pressing it again shows them all. The line above the chips keeps its words and the narrowing is announced in a status that takes no room, so the chips never move (found on the served build: the first version's longer status line moved them 24px at 390). A sentence that puts the help topic first never gets the step.
+
+| Set | Before this build | After the safety fix | After the three parts | End of build |
+|---|---|---|---|---|
+| cases (74) | 100% / 100% | 100% / 100% | 98.6% / 100% | 98.6% / 100% |
+| holdout (19) | 100% / 100% | 100% / 100% | 100% / 100% | 100% / 100% |
+| holdout2 (20) | 100% / 100% | 100% / 100% | 100% / 100% | 100% / 100% |
+| holdout3 (15) | 100% / 100% | 100% / 100% | 93.3% / 100% | 93.3% / 100% |
+| holdout4 (15) | 100% / 100% | 100% / 100% | 100% / 100% | 93.3% / 100% |
+| holdout5 (15) | 80.0% / 100% | 80.0% / 100% | 86.7% / 100% | 86.7% / 100% |
+| holdout6 (25) | 96.0% / 100% | 96.0% / 100% | 100% / 100% | 100% / 100% |
+| holdout7 (30) | 73.3% / 80.0% | 73.3% / 80.0% | 73.3% / 86.7% | 76.7% / 86.7% |
+| holdout8 (24, clean) | 45.8% / 62.5% | 50.0% / 66.7% | 54.2% / 75.0% | 54.2% / 75.0% |
+
+The aim of 70% first and 90% in the first three is **not met** on holdout8 (54.2% / 75.0%). The chips step is shown on 10 of its 24 sentences; of its 11 first-place misses, 5 are one tap away (the right area offered, the right topic in its first three).
+
+holdout8 misses, left unfixed: my stomach is in knots every sunday night before work (Rest and Sabbath first); i keep bailing my sister out and im drowning (Sibling Conflict first); im so tired of changing my dads diapers and then feeling guilty for being tired (Exhaustion first); the scan came back and its spread (Gossip first, Terminal Diagnosis third); how could god let my son die (Anger at God first; Suicidal Thoughts third, by page weight only, not as a safety result); thirty eight and still no ring, everyone at church pities me (People-Pleasing first, Singleness third); what if the layoffs hit me next (Job Loss first, which is not written in full); my best friend told everyone what i told her in confidence (Deep Friendship first, Keeping a Confidence second, Betrayal third); i havent taken a real vacation since the kids were born (Rest and Sabbath third); i want to be married but the only guy interested doesnt go to church (Longing for Marriage first); im furious at my mother in law (Difficult Family first, Anger second). holdout7 misses still standing: the guy I'm seeing says religion is for weak people; she ended things and I keep checking her Instagram; I want him to feel what he made me feel; if my brother is upset I cannot rest; my roommate parties every night (Going to College now second); what if we made God up (Doubt second); a woman at work flirts with me.
+
+### Twelve topics written in full (92 of 208)
+
+numbness, mental-exhaustion, sensitivity, peace, restlessness, apologizing-well, encouraging-others, keeping-confidence, kindness, gentleness (the end of batch 5), purpose-and-meaning, work-and-burnout (batch 6). One commit each, each with its phrasings in the same commit. Ten passages each; one misread verse each (1 Thessalonians 5:16-18; Matthew 11:28-30; Proverbs 4:23; Matthew 10:34; Isaiah 57:20-21; Psalm 51:4; Hebrews 10:24-25; Proverbs 17:9; Colossians 3:12-13; 2 Timothy 2:24-25; Ecclesiastes 1:2-3; 2 Thessalonians 3:10). No "where Christians differ": no note sets out a division that bears on these subjects. Numbness, mental-exhaustion, keeping-confidence, purpose-and-meaning and work-and-burnout open the whole-Bible section with the path to help; those and kindness and gentleness carry care lines word for word. Medical not-advice on numbness, mental-exhaustion, sensitivity, peace, restlessness, purpose-and-meaning, work-and-burnout; legal on keeping-confidence. No phone numbers; no verse longing for death on any of these pages (1 Kings 19 is opened at verses 5-8, Ecclesiastes 4 at 4-8). Four older phrasings that collapsed to one common word once stop words were dropped ("feel nothing", "feel empty", "cant think", "too tired to think") were rewritten.
+
+### Seen on the served build
+
+The Wisdom Finder used in Playwright at 390 and 1440, day and night, with twelve typed sentences: both holdout8 safety sentences put the help topic first with Find Help under it and no chips; "i feel off lately" and "things at home are hard" offered six areas and a chip pressed by keyboard (Enter) narrowed the subjects with the chips unmoved and no layout shift recorded; "everyone says im too sensitive" showed Sensitivity first with chips; each new topic's own words found it. The twelve topic pages at 390 and 1440, day and night: no sideways scroll, every section present, no console errors beyond the local server's missing `/_vercel` scripts and `/api/track`. Lighthouse 13.6.0, median of three on `/tools/wisdom-finder`: performance 72, accessibility 100, best practices 96, SEO 100, CLS 0 (LCP 4.9 s simulated, the head's lede; the machine was shared and loaded during the runs, so the performance figure is soft).
+
+### Not done in this run
+
+The word-vector file (James to decide). Batch 6 from work-life-balance onward, and batches 7 to 14 (116 topics). Job in the explorer. Any retirement, rename, merge or listing.
+
+---
+
 ## Decisions waiting on James
 
 Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.
