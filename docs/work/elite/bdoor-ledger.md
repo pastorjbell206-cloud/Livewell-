@@ -12268,3 +12268,26 @@ Cut before publishing: Jochebed's name as ‘the LORD is glory’; Moberly and W
 | John 2:11 as an echo John does not draw | 20-25 | exodus/7.json `christ`; BSB | Repository |
 
 Cut before publishing: the reading of Pharaoh's morning walk as a rite (said only that the text does not say).
+
+## The plain notes on Exodus 8 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| English 8:1-4 is Hebrew 7:26-29 | 1-7 | exodus/8.json `literary` | Repository |
+| Frogs as the flood went down; Heqet; fertility turned to a curse | 1-7 | exodus/8.json `cultural` | Repository |
+| Psalm 105:30; 78:45; Revelation 16:13 | 1-7 | BSB | BSB text |
+| ‘You may have the honor’ as a courtly idiom ruling out chance; ‘Tomorrow’ | 8-15 | exodus/8.json `cultural` | Repository |
+| First request for prayer; first time Pharaoh hardens his own heart, with kaved | 8-15 | exodus/8.json `literary` | Repository |
+| 1 Samuel 6:6; Matthew 5:44 (a theme, not a prediction) | 8-15 | BSB; exodus/8.json `christ` | BSB text |
+| The gnats: lice, gnats or mosquitoes; the magicians fail and confess | 16-19 | exodus/8.json `cultural`, `literary` | Repository |
+| Exodus 31:18; Luke 11:20; Matthew 12:28 | 16-19 | BSB; exodus/8.json `christ` | BSB text |
+| Arov: dog-fly in the Septuagint, wild animals in some Jewish readings, flies in most English | 20-24 | exodus/8.json `cultural` | Repository |
+| Goshen in the eastern Delta, around the Wadi Tumilat; the plagues discriminate | 20-24 | exodus/8.json `historical` | Repository |
+| Exodus 12:13; 19:5; 1 Peter 2:9 | 20-24 | BSB | BSB text |
+| Pharaoh's offers; ‘detestable’ sacrifices; Genesis 43:32 and 46:34; Apis and Amun's rams | 25-32 | exodus/8.json `historical` | Repository |
+| Natural chain (Greta Hort, late 1950s), direct acts, or the middle view; no side | 25-32 | exodus/8.json `hard` | Repository; no side |
+| Genesis 43:32; Hebrews 3:15 | 25-32 | BSB | BSB text |
+
+Cut before publishing: nothing beyond the deep note's wording.
