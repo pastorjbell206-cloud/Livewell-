@@ -11949,3 +11949,33 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Daniel 7:10; 12:1, 2; Ezekiel 33:11 | 11-15 | BSB | BSB text |
 
 Cut before publishing: Josephus's identification of Magog with the Scythians (so that Gog and Magog are tied to no people at all); ‘Blessed and holy are those’ quoted only in part, as in chapters 14, 16 and 19; the scholars on each side of the ezēsan and one-battle debates, kept to the verse notes.
+
+## The plain notes on Revelation 21 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everything heading here; Genesis 1:1 to a new heaven and earth; Isaiah 65:17 | 1-4 | revelation/21.json `story`; isaiah/65.json | Repository |
+| Kainos, new in kind or quality; the word alone cannot settle it | 1-4 | revelation/21.json `words` (G2537) | Repository |
+| The sea as chaos and the beast's source (Daniel 7:3; 13:1), and Patmos's separation | 1-4 | revelation/21.json `cultural` | Repository |
+| Skēnē, tent; the tabernacle; John 1:14; the covenant formula (Leviticus 26:12; Ezekiel 37:27) | 1-4 | revelation/21.json `cultural`, `words` (G4633) | Repository |
+| Suffering real, ended and answered; the resurrection of the body and the life of the world to come; not an escape of souls | 1-4 | revelation/21.json `doctrines` (hope, creation), `hard`; the Nicene Creed as the site quotes it | Repository |
+| Renewal or replacement (Romans 8:21; 2 Peter 3); both confess a physical new creation; no side | 1-4 | revelation/21.json `hard`, `doctrines` (creation); bible/doctrines/new-creation.json `differ` | Repository, no side |
+| Grief line ‘If you are grieving someone who has died, these verses do not ask you to stop grieving ...’ | 1-4 | 1-thessalonians/plain/4.json (13-14 `hard`) | Word for word |
+| Isaiah 65:17, 19; 25:8; 35:10; 62:5; Leviticus 26:12; Ezekiel 37:27; Genesis 1:1; John 1:14; Romans 8:21 | 1-4 | BSB; isaiah/65.json, 35.json, 62.json (Revelation 21 named) | BSB text |
+| The One on the throne speaks; ‘all things new’, not ‘new things’; ‘It is done!’ (16:17); Alpha and Omega (22:13) | 5-8 | revelation/21.json `literary`, `christ`; bible/doctrines/new-creation.json `differ` | Repository |
+| The water given freely (Isaiah 55:1; 22:17) | 5-8 | isaiah/55.json | Repository |
+| ‘The cowardly’ as the fearful, beside the one who overcomes; those outside ‘practice’ (21:27; 22:15) | 5-8 | BSB; bible/lex (deilos) | BSB text; lexicon |
+| Nothing of any person's eternal state; Peter restored (John 21:17); care line ‘If you are afraid that you have fallen away from God ...’ | 5-8 | hebrews/plain/6.json (4-8 `hard`); BSB | Word for word; BSB text |
+| ‘Come, I will show you’ (17:1 and 21:9); wilderness and mountain; the bride a people; jasper (4:3); tribes and apostles one city | 9-14 | revelation/21.json `literary`, `cultural`, `words` (G3565), `doctrines` (church) | Repository |
+| Ezekiel 48:31; Isaiah 54:11-12 | 9-14 | BSB; isaiah/54.json (Revelation 21:19-21 named); revelation/21.json `cultural` | BSB text |
+| The cube and the Most Holy Place (1 Kings 6:20); stadion about 185 m, 12,000 stadia about 2,200 km or 1,400 miles; 144 cubits about 65 m, height or thickness not said; twelves | 15-21 | revelation/21.json `historical`, `cultural`, `literary` | Repository |
+| The breastpiece (Exodus 28:17-21); ancient stone names uncertain | 15-21 | revelation/21.json `cultural` | Repository |
+| A literal city or a picture of the people of God, or both; the hope bodily and shared; no side | 15-21 | revelation/21.json `hard` | Repository, no side |
+| 1 Kings 6:20; Exodus 28:21 | 15-21 | BSB | BSB text |
+| No naos; God and the Lamb the temple; the Lamb the lamp (18:23); kings bring their glory; culture cleansed (Mouw's reading, in the ledger only) | 22-27 | revelation/21.json `words` (G3485), `christ`, `questions`; isaiah/60.json | Repository |
+| Nothing unclean (Isaiah 52:1); the Lamb's Book of Life | 22-27 | isaiah/verses/52.json; revelation/21.json `christ` | Repository |
+| Isaiah 60:19, 11, 3; 52:1 | 22-27 | BSB | BSB text |
+
+Cut before publishing: 2 Samuel 7:14 behind ‘he will be My son’ (no repository note makes the link); a reading of ‘the cowardly’ as those who denied Christ under pressure (narrowed to the word and its place beside ‘the one who overcomes’); ‘an ancient city shut its gates at night for fear of enemies’ (no repository source); a line that the list in verse 8 describes lives that go on without turning (replaced by the BSB's own ‘practices’ in 21:27 and 22:15).
