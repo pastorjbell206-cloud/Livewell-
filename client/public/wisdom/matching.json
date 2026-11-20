@@ -3360,6 +3360,25 @@
     "forgiveness",
     "guilt-and-conscience"
    ]
+  },
+  "encouraging-others": {
+   "phrases": [
+    "encourage a friend",
+    "what to say to someone struggling",
+    "cheer someone up",
+    "build people up",
+    "how to support someone",
+    "lift someone up",
+    "say something kind",
+    "my friend is discouraged",
+    "help a friend through a hard time"
+   ],
+   "not": [],
+   "related": [
+    "deep-friendship",
+    "kindness",
+    "loneliness"
+   ]
   }
  }
 }
