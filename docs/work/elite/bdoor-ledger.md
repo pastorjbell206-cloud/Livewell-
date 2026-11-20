@@ -11077,3 +11077,433 @@ Cut before publishing: an account of how believers ‘hasten’ the day (the let
 |---|---|---|---|
 | 1 Peter: Galatia moved to 38.95 N, 32.4 E so its mark no longer covers the drawing's GALATIA label; still ‘placed roughly’ | Map | Screenshot of the served build at 1440 | Looked at |
 | 2 Peter: the Sodom and Gomorrah label set to the west of its point, since at 390 it ran off the right edge | Map | Screenshot of the served build at 390 | Looked at |
+
+## A repair to four map notes (2026-11-20)
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| The map notes of Hebrews, James, 1 Peter and 2 Peter began with a stray ‘| ’ that showed on the page; removed, wording unchanged | Map note | The authoring script's own fault (it kept the field separator) | Data read; validator |
+
+
+## 1 John: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| No greeting, writer, readers or farewell; a sermon written down; ‘little children’; about twenty minutes aloud | In a minute; How to read | 1-john/intro.json `overview`, `reading` | Repository; reading time an estimate |
+| The split (2:19); the teaching denied Christ come in the flesh; three marks: belief, obedience, love | In a minute; Three marks | 1-john/intro.json `overview`, `setting`, `purpose` | Repository |
+| The writer an eyewitness among a group (1:1-3); older leader's authority | Who wrote it | 1-john/intro.json `author` | Repository; BSB |
+| Second-century attribution to John son of Zebedee; Irenaeus about 180 quotes it as John's; vocabulary close to the Gospel; same circle, many think same hand | Who wrote it; timeline | 1-john/intro.json `author` | Repository |
+| Papias names the apostle John and ‘the elder John’; survives in Eusebius (Church History 3.39); Eusebius read two men | Who wrote it; timeline | 1-john/intro.json `author`; john/intro.json `teaching` (who) | Repository |
+| 2 and 3 John open ‘The elder’; the elder the apostle, another John, or a circle; no side | Who wrote it | 2-john/intro.json `author`; 3-john/intro.json `author` | Repository; BSB |
+| By about 200 the four Gospels, Acts, Paul, 1 Peter and 1 John agreed across the churches | Who wrote it; timeline | bible/guides/canon.json (section 5) | Repository |
+| Date about 85 to 100; a minority in the 60s; Ephesus tradition; house churches | When | 1-john/intro.json `date`, `setting` | Repository |
+| Docetism (dokeō, to seem); Irenaeus on Cerinthus | When | 1-john/intro.json `setting`; 1-john/1.json `historical` | Repository |
+| The ‘If we say’ claims (1:6, 8, 10) and ‘whoever says’ (2:4, 6, 9; 4:20) | How it is built | 1-john/1.json, 2.json `literary`; BSB | Repository; BSB |
+| 1:8-10 beside 3:6-9: present tense (BSB ‘keeps on sinning’); a particular sin or lawlessness; the ideal; Wesleyan freedom from willful sin; no side | Sin | 1-john/3.json `hard` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | Sin; Chapter 5 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| ‘Antichrist’ only in John's letters (2:18, 22; 4:3; 2 John 7); many antichrists; ‘anti’ against or in place of; Mark 13:22; 2 Thessalonians 2:3 | Antichrists | 1-john/2.json `historical`, `words` (G0500) | Repository; BSB |
+| Identifications with a pope, a sultan, an emperor or a dictator have been made; these notes make none | Antichrists | bible/guides/reading-apocalyptic.json (Reading Daniel and Revelation well); 2-thessalonians/plain/2.json (3-8 `hard`) | Repository; instruction for this run |
+| 2:19 and perseverance: Reformed; Arminian and Wesleyan; Lutheran; Catholic | Antichrists | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| ‘God is love’ not ‘love is God’; love defined by sending the Son; no public welfare in Rome; love and judgment not rivals | God is love | 1-john/4.json `cultural`, `hard`; 1-john/3.json `cultural` | Repository |
+| Water and blood: baptism and death, against Cerinthus' teaching; John 19:34; the sacraments | Jesus | 1-john/5.json `historical` | Repository |
+| 2:2 ‘the whole world’: not universalism (5:12); Arminian, Lutheran, evangelical; definite atonement (John 11:52); sufficient for all, effective for believers | Jesus | 1-john/2.json `hard` | Repository, no side |
+| 5:20 ‘the true God’: the Son or the Father debated; many read it of Christ | Jesus | 1-john/5.json `christ`; 1-john/intro.json `christ` | Repository |
+| Nicene Creed wording | Jesus | creeds/documents/nicene-creed.json `text` | Repository, exact phrases |
+| Assurance: Reformed, Wesleyan, Lutheran, Catholic (Trent's ‘without a special revelation’) | ‘So that you may know’ | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Care line ‘If you are a person whose conscience never rests ...’ | ‘So that you may know’ | colossians/plain/1.json (21-23 `hard`) | Word for word |
+| 5:7-8: Latin origin; a handful of late Greek manuscripts, some in the margin; Erasmus 1516, third edition 1522; King James; fourth-century Greek theologians did not quote it; most modern translations leave it out | Chapter 5; timeline | questions/text/passages-not-in-the-earliest-bibles.json (section 3); 1-john/5.json `historical` | Repository (live page's wording) |
+| Textus Receptus holders defend it from the Latin tradition and providence | Chapter 5 | theology/textual-criticism.json `biblicalEvidence` (1 John 5:7-8) | Repository |
+| Trinity confessed at Nicaea (325) and Constantinople (381) without it | Chapter 5; timeline | bible/guides/how-we-got-the-new-testament.json (section 6) | Repository |
+| Sin that leads to death: bodily death (Acts 5; 1 Corinthians 11:30); final rejection; blasphemy against the Spirit; Numbers 15:30; John does not forbid prayer | Chapter 5 | 1-john/5.json `hard` | Repository, no side |
+| Nothing about any person's state; no illness or death as judgment; John 9:3 | Chapter 5 | Instruction for this run; BSB | Stated, no claim |
+| Psalm 27:1; Leviticus 16:21; Psalm 32:5; Genesis 4:8; Leviticus 19:18; John 13:34; Jeremiah 31:33; Deuteronomy 19:15; Exodus 20:3 | Old Testament | 1-john/1.json, 3.json, 5.json `cultural`, `historical`; BSB | BSB text |
+| Anointing: kings, priests, prophets; most read the Spirit, some the gospel | Old Testament; key words | 1-john/2.json `cultural` | Repository |
+| Key words: koinōnia, homologeō, paraklētos, hilasmos, menō, antichristos, chrisma, anomia, agapē, marturia, eidōlon | Key words | 1-john/1.json to 5.json `words`; 2.json `cultural` | Repository |
+| Map: Ephesus at the point used on the Pauline maps; the letter names no place | Map | ephesians/intro.json `teaching.map`; 1-john/intro.json `setting` | Repository |
+
+Cut before publishing: a Wesleyan gloss on ‘faults and failings’ (not in the repository); ‘most readers’ on water and blood (now ‘many’, with the other readings); a link to the Questions page on missing passages (the guide is linked instead, to keep one name per page).
+
+## The plain notes on 1 John 1 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The opening echoes John's Gospel; one long Greek sentence before ‘we proclaim’; pselaphaō ‘touched’ as in Luke 24:39 | 1-4 | 1-john/1.json `literary`, `words` (G5584) | Repository |
+| Against teaching that Christ only seemed to have a body (docetism; Cerinthus) | 1-4 | 1-john/1.json `historical` | Repository |
+| Koinōnia as partnership, used of business partners and friends | 1-4 | 1-john/1.json `cultural`, `words` (G2842) | Repository |
+| Genesis 1:1; Psalm 36:9; Exodus 29:45; John 1:1, 14 | 1-4 | BSB | BSB text |
+| Light in Greek thought; the Dead Sea Scrolls' sons of light and darkness; light in the Old Testament; moral edge | 5-7 | 1-john/1.json `cultural` | Repository |
+| Psalm 27:1; Isaiah 60:19; Genesis 1:3; Leviticus 16:30 | 5-7 | BSB | BSB text |
+| Homologeō ‘to say the same thing’; forgiveness just because it rests on Christ's sacrifice | 8-10 | 1-john/1.json `words` (G3670), `doctrines` | Repository |
+| Why keep confessing: standing and relationship; the ongoing character of the Christian life | 8-10 | 1-john/1.json `hard` | Repository |
+| Leviticus 16:21; Psalm 32:5; Proverbs 28:13; Psalm 130:3-4; Romans 5:1 | 8-10 | BSB | BSB text |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 8-10 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+
+## The plain notes on 1 John 2 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Paraklētos in legal settings; John 14:16 | 1-2 | 1-john/2.json `cultural` | Repository; BSB |
+| Hilasmos: Dodd (expiation), Morris (propitiation), many see both | 1-2 | 1-john/2.json `words` (G2434) | Repository |
+| ‘The whole world’: not universalism (5:12); Arminian, Lutheran, evangelical; definite atonement (John 11:52); sufficient and effective | 1-2 | 1-john/2.json `hard` | Repository, no side |
+| Leviticus 16:16; Isaiah 53:12; Job 16:19 | 1-2 | BSB | BSB text |
+| Three tested claims (4, 6, 9); old and new commandment | 3-11 | 1-john/2.json `literary` | Repository |
+| Leviticus 19:17-18; Jeremiah 22:16; Isaiah 9:2; John 13:34 | 3-11 | BSB | BSB text |
+| Six parallel lines; three readings of children, fathers, young men | 12-14 | 1-john/2.json `cultural`, `literary` | Repository, no side |
+| Joel 1:3; Psalm 119:9, 11 | 12-14 | BSB | BSB text |
+| ‘The world’ as a way of life without God; three desires compared with Eden (Genesis 3:6) | 15-17 | 1-john/2.json `literary`, `doctrines` (idolatry) | Repository |
+| Isaiah 40:8; Psalm 119:37; John 3:16 | 15-17 | BSB | BSB text |
+| The schism (2:19); denial of Jesus as the Christ likely not a Jewish denial; Cerinthus; Mark 13:22; 2 Thessalonians 2:3 | 18-23 | 1-john/2.json `historical` | Repository |
+| Anointing: kings, priests, prophets; most read the Spirit, some the gospel | 18-23; 24-27 | 1-john/2.json `cultural` | Repository |
+| Identifications (pope, sultan, emperor, dictator) made; these notes make none; they frightened believers and divided Christians | 18-23 | bible/guides/reading-apocalyptic.json; 2-thessalonians/plain/2.json (3-8 `hard`) | Repository; instruction for this run |
+| 2:19 and perseverance: Reformed; Arminian and Wesleyan; Lutheran; Catholic | 18-23 | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Deuteronomy 13:3; 1 Samuel 16:13; Isaiah 61:1; Psalm 2:2 | 18-23 | BSB | BSB text |
+| Menō eleven times in the chapter; the faithful remain | 24-27 | 1-john/2.json `words` (G3306) | Repository |
+| Jeremiah 31:34; Joel 2:28; Isaiah 54:13; Ephesians 4:11 | 24-27 | BSB | BSB text |
+| Parousia as a ruler's arrival | 28-29 | 2-peter/intro.json `teaching.words` (Coming) | Repository |
+| Psalm 34:5; Psalm 11:7 | 28-29 | BSB | BSB text |
+
+## The plain notes on 1 John 3 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A father's name, place, inheritance and likeness; teknon for believers, huios for Jesus | 1-3 | 1-john/3.json `cultural`, `words` (G5043) | Repository |
+| Deuteronomy 14:1; Hosea 11:1; Psalm 17:15 | 1-3 | BSB | BSB text |
+| Later groups who held the body unimportant or the spiritual beyond sin; not to be read back | 4-10 | 1-john/3.json `historical` | Repository |
+| Anomia, and its tie to the last days' rebellion; sperma three readings | 4-10 | 1-john/3.json `words` (G0458, G4690H) | Repository |
+| 1:8-10 beside 3:6-9: present tense; a particular sin or lawlessness; the ideal; Wesleyan; no side | 4-10 | 1-john/3.json `hard` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 4-10 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Genesis 3:4, 15; Ezekiel 36:26-27; Psalm 51:10 | 4-10 | BSB | BSB text |
+| Cain the only Old Testament story named; Cain as the model of envy in Jewish tradition | 11-15 | 1-john/3.json `historical` | Repository |
+| Matthew 5:21-22; Ephesians 4:26 | 11-15 | BSB | BSB text |
+| Care lines ‘Where a crime has been done ...’ to ‘... places to turn.’ | 11-15 | 2-timothy/plain/4.json (14-18 `hard`), its last four sentences | Word for word |
+| Genesis 4:7-8; Leviticus 19:17; Proverbs 10:12 | 11-15 | BSB | BSB text |
+| No public welfare; churches known for caring for their poor; ‘compassion’ as the inner organs | 16-18 | 1-john/3.json `cultural` | Repository |
+| Care line ‘Nothing in this passage asks anyone to stay ...’ | 16-18 | 1-thessalonians/plain/3.json (1-5 `hard`), from its third sentence | Word for word |
+| Deuteronomy 15:7; Isaiah 58:7 | 16-18 | BSB | BSB text |
+| Care lines ‘Sometimes guilt that will not lift ...’ (first three sentences) and ‘If you are a person whose conscience never rests ...’ | 19-24 | 2-corinthians/plain/7.json (8-12 `hard`); colossians/plain/1.json (21-23 `hard`) | Word for word |
+| Psalm 139:23; Psalm 103:12, 14; Psalm 145:18 | 19-24 | BSB | BSB text |
+
+## The plain notes on 1 John 4 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Travelling prophets; the Didache's later tests; oracles in the Greek world; dokimazō for testing metals | 1-6 | 1-john/4.json `historical`, `cultural`, `words` (G1381) | Repository |
+| Ignatius of Antioch warned churches in the region (Smyrna, Tralles) against teachers who said Christ only seemed to suffer | 1-6 | 1-john/4.json `historical` | Repository |
+| Churches differ on prophecy and gifts today; all hold the apostles' witness above any claim | 1-6 | bible/doctrines/gifts.json (continuationist and cessationist views) | Repository, no side |
+| Deuteronomy 13:3; Jeremiah 14:14; 2 Kings 6:16; 1 Thessalonians 5:20-21 | 1-6 | BSB | BSB text |
+| ‘God is love’ unusual to ancient ears; not ‘love is God’; monogenēs ‘unique’; verse 9 and John 3:16 | 7-12 | 1-john/4.json `cultural`, `words` (G3439) | Repository |
+| Exodus 34:6; Jeremiah 31:3; Deuteronomy 7:7-8 | 7-12 | BSB | BSB text |
+| Isaiah 43:11; Leviticus 26:11-12 | 13-16 | BSB | BSB text |
+| Love and judgment not rivals; the cross shows both; judgment no longer dreaded | 17-21 | 1-john/4.json `hard` | Repository |
+| Care line ‘This passage is not a rebuke of people who live with an anxiety disorder ...’ and ‘The Find Help page on this site lists places to turn.’ | 17-21 | philippians/plain/4.json (4-9 `hard`) | Word for word |
+| Deuteronomy 6:5; Leviticus 19:18; Psalm 130:3-4 | 17-21 | BSB | BSB text |
+
+## The plain notes on 1 John 5 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The three marks tied in one chain; nikaō and Nikē | 1-5 | 1-john/5.json `literary`, `words` (G3528) | Repository |
+| Deuteronomy 30:11; Psalm 40:8; Matthew 11:30 | 1-5 | BSB | BSB text |
+| Water and blood against Cerinthus' teaching; John 19:34; the sacraments | 6-12 | 1-john/5.json `historical` | Repository |
+| Marturia as legal testimony; two or three witnesses | 6-12 | 1-john/5.json `cultural`, `words` (G3141) | Repository |
+| 5:7-8: the King James wording; Latin origin, late 300s; a handful of late Greek manuscripts; Erasmus 1516 and 1522; the fourth-century theologians; most modern translations | 6-12 | questions/text/passages-not-in-the-earliest-bibles.json; 1-john/5.json `historical` | Repository (live page's wording) |
+| Textus Receptus holders defend it; Trinity confessed in 325 and 381 without it; Matthew 28:19 and 2 Corinthians 13:14 | 6-12 | theology/textual-criticism.json; bible/guides/how-we-got-the-new-testament.json | Repository |
+| Deuteronomy 19:15; Psalm 36:9; Deuteronomy 30:19 | 6-12 | BSB | BSB text |
+| Purpose sentence beside John 20:31; prayer ‘according to His will’ | 13-15 | 1-john/5.json `story`, `doctrines` (prayer) | Repository |
+| Assurance: Reformed, Wesleyan, Lutheran, Catholic | 13-15 | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Care line ‘If you have prayed for someone to be rescued ...’ with the sentence about James left out, since it belongs to Acts 12 | 13-15 | acts/plain/12.json (1-5 `hard`) | Word for word, one sentence omitted |
+| Psalm 34:15; Psalm 16:11; Matthew 26:39; Daniel 3:18 | 13-15 | BSB | BSB text |
+| Sin that leads to death: bodily death (Acts 5; 1 Corinthians 11:30); final rejection; blasphemy against the Spirit (Mark 3:28-29); Numbers 15; many think the setting points to the second; John does not forbid prayer | 16-17 | 1-john/5.json `hard` | Repository, no side |
+| ‘A long pastoral tradition answers that the fear itself is a sign that the heart has not turned hard in this way.’ | 16-17 | mark/plain/3.json (22-30 `hard`) | Word for word |
+| Nothing about any person's state; no illness or death as judgment; John 9:3 | 16-17 | Instruction for this run; BSB | Stated, no claim |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 16-17 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Numbers 15:27-28, 30; Psalm 19:12-13 | 16-17 | BSB | BSB text |
+| Three ‘we know’ sentences; ‘the One who was born of God’ most likely Christ; 5:20 the Son or the Father | 18-21 | 1-john/5.json `literary`, `christ` | Repository |
+| Ephesus' temple of Artemis; images and guild meals; idols may include the false Christ | 18-21 | 1-john/5.json `cultural` | Repository |
+| Nicene Creed wording | 18-21 | creeds/documents/nicene-creed.json | Repository, exact phrases |
+| Exodus 20:3; Isaiah 44:9; Jeremiah 10:10; John 1:1; John 20:28 | 18-21 | BSB | BSB text |
+
+## 1 John complete (2026-11-20)
+
+## 2 John: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Thirteen verses; one papyrus sheet; about two minutes aloud | In a minute | 2-john/intro.json `overview`; bible/guides/reading-letters.json | Repository; reading time an estimate |
+| Presbuteros, older man or leader; a title needing no explaining | Who wrote it | 2-john/intro.json `author` | Repository |
+| Tradition named the apostle; vocabulary matches 1 John; one writer or circle; Papias' ‘elder John’ | Who wrote it | 2-john/intro.json `author`; john/intro.json `teaching` | Repository, no side |
+| Eusebius: 2 and 3 John disputed but widely known; the Peshitta lacks them; 367 Athanasius | Who wrote it; timeline | bible/guides/canon.json (section 5) | Repository |
+| The lady a church (her elect sister another church) or a real woman; kuria also a name | The chosen lady | 2-john/intro.json `setting`; 2-john/1.json `cultural` | Repository, no side |
+| Galatians 4:26; Revelation 21:2; Acts 16:15; Colossians 4:15 | The chosen lady | BSB | BSB text |
+| Date about 85 to 100, close to 1 John; order uncertain | When | 2-john/intro.json `date` | Repository |
+| Travelling teachers relied on hospitality; inns few and disreputable | When | 2-john/intro.json `setting`; 3-john/intro.json `setting` | Repository |
+| The deceivers the same movement as 1 John 2:19; docetism; ‘run ahead’ as a more advanced faith | When; Deceivers | 2-john/intro.json `setting`; 2-john/1.json `historical` | Repository |
+| ‘Truth’ five times in the first four verses; love and commands in a loop | How it is built; Truth and love | 2-john/1.json `literary`; 2-john/intro.json `themes` | Repository |
+| Identifications made; these notes make none | Deceivers | bible/guides/reading-apocalyptic.json; 2-thessalonians/plain/2.json | Repository; instruction for this run |
+| ‘The teaching of Christ’: about Christ or given by him | Deceivers; key words | 2-john/1.json `words` (G1322) | Repository |
+| 10-11: house church platform; the greeting as formal welcome and blessing; the readings of how far it extends | ‘Do not receive him’ | 2-john/1.json `cultural`, `hard`; 2-john/intro.json `reading` | Repository, no side |
+| ‘Jesus ate with tax collectors and sinners. Believers are to be friends, neighbours, coworkers and good citizens with people of every faith and none. Nothing here gives anyone a reason to look down on unbelievers.’ | ‘Do not receive him’ | 2-corinthians/plain/6.json (14-18 `hard`) | Word for word |
+| Care line ‘A word to anyone who has been hurt by a church's discipline ...’, with the sentence naming Paul left out | ‘Do not receive him’ | 1-corinthians/plain/5.json (1-5 `hard`) | Word for word, one sentence omitted |
+| Nicene Creed wording | Jesus | creeds/documents/nicene-creed.json | Repository, exact phrases |
+| Psalm 119:30; Leviticus 19:18; Deuteronomy 13:3; Jeremiah 23:16; Genesis 18:3; Psalm 34:18 | Old Testament; ‘Do not receive him’ | BSB | BSB text |
+| Key words: presbuteros, kuria, alētheia, agapē, planos, antichrist, didachē | Key words | 2-john/1.json `words`; 2-john/intro.json | Repository |
+| Map: Ephesus at the Pauline maps' point; the letter names no place | Map | ephesians/intro.json `teaching.map`; 2-john/1.json `historical` | Repository |
+
+Cut before publishing: the claim that the letter moves between singular and plural ‘you’ (not in the repository's notes); the Greek eklektē (not checked in the lexicon); Psalm 26:3, to keep ‘your truth’ out even inside Scripture.
+
+## The plain notes on 2 John (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The elder's title; tradition's John; the lady a church or a woman; kuria as a name | 1-3 | 2-john/intro.json `author`, `setting`; 2-john/1.json `cultural` | Repository, no side |
+| ‘Truth’ five times in the first four verses; truth abiding | 1-3 | 2-john/1.json `literary`, `words` (G0225) | Repository |
+| Galatians 4:26; Revelation 21:2; Acts 16:15; Colossians 4:15; Numbers 6:24-26; Psalm 117:2 | 1-3 | BSB | BSB text |
+| Love defined as walking in his commands, and the command as walking in love | 4-6 | 2-john/1.json `literary`, `doctrines` (law) | Repository |
+| Leviticus 19:18; Deuteronomy 11:1; Psalm 119:35 | 4-6 | BSB | BSB text |
+| Deceivers the same as 1 John 2:19, travelling; planos; docetism; ‘run ahead’ as more advanced faith; didachē two senses | 7-9 | 2-john/1.json `historical`, `words` (G4108, G1322); 2-john/intro.json `setting` | Repository |
+| Antichrist in John's letters; other readings; identifications made, none made here | 7-9 | 1-john/2.json `historical`; 2-thessalonians/plain/2.json; bible/guides/reading-apocalyptic.json | Repository; instruction for this run |
+| Deuteronomy 13:3; Jeremiah 23:16; Jeremiah 6:16 | 7-9 | BSB | BSB text |
+| House churches; travelling teachers; the greeting as formal welcome and blessing | 10-11 | 2-john/1.json `cultural` | Repository |
+| How far the principle extends; few think it forbids kindness to unbelievers | 10-11 | 2-john/1.json `hard` | Repository, no side |
+| ‘Jesus ate with tax collectors and sinners. Believers are to be friends ... Nothing here gives anyone a reason to look down on unbelievers.’ | 10-11 | 2-corinthians/plain/6.json (14-18 `hard`) | Word for word |
+| Care line ‘A word to anyone who has been hurt by a church's discipline ...’, without the sentence naming Paul | 10-11 | 1-corinthians/plain/5.json (1-5 `hard`) | Word for word, one sentence omitted |
+| Genesis 18:3; Deuteronomy 10:19; Psalm 34:18 | 10-11 | BSB | BSB text |
+| Face to face as a common wish in ancient letters; papyrus, reed pens and ink | 12-13 | 2-john/1.json `cultural` | Repository |
+| Exodus 33:11; Psalm 133:1; 1 John 1:4 | 12-13 | BSB | BSB text |
+
+Cut before publishing: ‘face to face’ as literally ‘mouth to mouth’ (not checked in the lexicon); Psalm 119:1 (to keep ‘blessed’ out).
+
+## 2 John complete (2026-11-20)
+
+## 3 John: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Shortest book of the New Testament by word count; fourteen verses in the BSB; one papyrus sheet; about two minutes aloud | In a minute | 3-john/intro.json `overview`; BSB | Repository; reading time an estimate |
+| The elder; tradition's John; shared vocabulary; Papias' ‘elder John’; no side | Who wrote it | 3-john/intro.json `author` | Repository, no side |
+| The elder's standing over several churches; workers reporting back; a local leader resisting | Who wrote it | 3-john/intro.json `author`; 3-john/1.json `historical` | Repository |
+| Eusebius: disputed but widely known; the Peshitta; 367 | Who wrote it; timeline | bible/guides/canon.json | Repository |
+| Gaius a common name (Macedonia, Derbe, Corinth); Diotrephes ‘nourished by Zeus’; three readings of the quarrel; Demetrius and letters of recommendation | Gaius, Diotrephes and Demetrius | 3-john/1.json `historical`, `cultural`; 3-john/intro.json `setting` | Repository, no side |
+| Date 85 to 100, region of Ephesus; no doctrinal dispute | When | 3-john/intro.json `date`; 3-john/1.json `historical` | Repository |
+| Inns; networks; ‘send on’ as a duty (Romans 15:24; Titus 3:13); nothing from the Gentiles; the Didache | When; timeline | 3-john/1.json `cultural`; 3-john/intro.json `setting` | Repository |
+| The ordinary letter form; Gaius praised, Diotrephes rebuked, Demetrius commended; ‘Beloved’ four times | How it is built | 3-john/1.json `literary` | Repository |
+| Health wishes in papyrus letters; euodoō ‘good road’, not money; a friend's prayer, not a promise | ‘That you may prosper’ | 3-john/1.json `hard`, `cultural`; 3-john/intro.json `reading` | Repository |
+| ‘This is often called prosperity teaching, or the prosperity gospel. It is one of the things this site does not teach as true. Many who teach it are sincere, and many who believe it are hoping for help in hard times. They deserve care, not scorn. But it is a mistake’ | ‘That you may prosper’ | 1-timothy/plain/6.json (3-10 `hard`) | Word for word |
+| Care line ‘It needs to be said plainly. The Bible does not teach that sickness comes from too little faith ...’ | ‘That you may prosper’ | 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| Care line ‘If you gave money because you were pressed or frightened ...’ | ‘That you may prosper’ | 1-timothy/plain/6.json (3-10 `hard`) | Word for word |
+| Synergos as Paul's word for co-workers; propempō | Fellow workers; key words | 3-john/1.json `words` (G4904, G4311) | Repository |
+| Philoprōteuō only here; Diotrephes' acts; the lost letter, perhaps 2 John | The leader who loves to be first | 3-john/1.json `words` (G5383), `historical` | Repository |
+| Care line ‘If you have been harmed by a controlling leader or church ...’ | The leader who loves to be first | 2-corinthians/plain/11.json (16-21 `hard`) | Word for word |
+| ‘The Name’ as Jesus | Jesus | 3-john/1.json `christ` | Repository |
+| Genesis 18:2; 1 Kings 17; Deuteronomy 10:19; Psalm 1:3; Proverbs 22:1; Numbers 16; Proverbs 16:18; Mark 9:35; John 13:20 | Old Testament and elsewhere | BSB | BSB text |
+| Map: Ephesus at the Pauline maps' point; the letter names no place | Map | ephesians/intro.json `teaching.map`; 3-john/1.json `historical` | Repository |
+
+## The plain notes on 3 John (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gaius a common name, not identified; health wishes in papyrus letters; euodoō | 1-4 | 3-john/1.json `historical`, `cultural`, `hard` | Repository |
+| Prosperity teaching sentences and the illness care line | 1-4 | 1-timothy/plain/6.json (3-10 `hard`); 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| 1 Samuel 20:42; Psalm 1:3; Proverbs 3:7-8 | 1-4 | BSB | BSB text |
+| Travel, inns, networks; ‘send on’ (Romans 15:24; Titus 3:13); nothing from the Gentiles; wandering teachers on public gifts; synergos | 5-8 | 3-john/1.json `cultural`, `words` (G4311, G4904) | Repository |
+| Genesis 18:2; Deuteronomy 10:19; Deuteronomy 14:27 | 5-8 | BSB | BSB text |
+| The earlier letter, perhaps 2 John; Diotrephes' name; three readings of the quarrel; philoprōteuō | 9-10 | 3-john/1.json `historical`, `words` (G5383) | Repository, no side |
+| Care line ‘If you have been harmed by a controlling leader or church ...’ | 9-10 | 2-corinthians/plain/11.json (16-21 `hard`) | Word for word |
+| Numbers 16:3; Ezekiel 34:2; Proverbs 16:18; Mark 9:35 | 9-10 | BSB | BSB text |
+| Verse 11 as the moral between the two men; verse 12 a letter of recommendation; Demetrius the carrier | 11-12 | 3-john/1.json `literary`, `cultural` | Repository |
+| Amos 5:14; Psalm 34:14; Proverbs 22:1 | 11-12 | BSB | BSB text |
+| The ending parallels 2 John; shalom | 13-14 | 3-john/1.json `literary`; lexicon H7965 | Repository |
+| Numbers 6:26; Isaiah 43:1 | 13-14 | BSB | BSB text |
+
+## 3 John complete (2026-11-20)
+
+## Jude: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Meant to write of salvation, wrote an alarm; intruders; examples; nature pictures; two traditions; mercy and praise; about five minutes aloud | In a minute | jude/intro.json `overview` | Repository; reading time an estimate |
+| Jude the Greek form of Judah; James the Lord's brother (Galatians 1:19); Mark 6:3; John 7:5; servant, not brother | Who wrote it | jude/intro.json `author`; jude/1.json `historical` | Repository; BSB |
+| Hegesippus via Eusebius on Jude's grandsons before Domitian | Who wrote it; timeline | jude/intro.json `author`; jude/1.json `historical` | Repository |
+| Pseudonymity case (Greek, verse 17) and replies; no side | Who wrote it | jude/intro.json `author` | Repository, no side |
+| Jerome: many rejected it over Enoch; Tertullian valued Enoch; Eusebius disputed; Peshitta lacks Jude; Muratorian list includes it | Who wrote it; Enoch; timeline | jude/1.json `hard`; bible/guides/canon.json | Repository |
+| Date 50 to 80, or later if pseudonymous; readers Jewish or used to Jewish reading; love feasts; dreamers | When | jude/intro.json `date`, `setting`; jude/1.json `cultural` | Repository |
+| Fond of threes; ‘these men’; framed by keeping | How it is built | jude/1.json `literary`, `words` (G5083I) | Repository |
+| Epagōnizomai only here; the faith a deposit; despotēs used of God | Contend | jude/1.json `words` (G1864), `christ`, `doctrines` | Repository |
+| Verse 5: ‘Jesus’ in several early manuscripts, the BSB follows; others ‘the Lord’ or ‘God’ | Examples; Jesus | jude/1.json `christ`; jude/intro.json `christ` | Repository |
+| Angels of verse 6 as Genesis 6 read in 1 Enoch; Seth and rulers readings; no side | Examples | jude/1.json `cultural`; genesis/plain/6.json (1-4 `hard`); 2-peter/plain/2.json (4-10 `hard`) | Repository, no side |
+| Verse 7: what all agree; the traditional reading; the hospitality reading; ‘other flesh’ read by some as the angels; no side; no contempt | Examples | genesis/plain/19.json (4-11 `hard`) | Repository, no side; flagged in the run report |
+| Care line ‘If you are gay, or love someone who is ...’ | Examples | romans/plain/1.json (24-32 `hard`) | Word for word |
+| Michael and Moses' body; Origen: the Assumption of Moses; the Testament of Moses' lost ending | Enoch | jude/intro.json `setting`; jude/1.json `historical` | Repository |
+| 1 Enoch 1:9; composed over the last centuries before Christ; Aramaic fragments at Qumran; Ethiopian Bible | Enoch; timeline | jude/intro.json `setting`; bible/guides/reading-apocalyptic.json | Repository |
+| Quoting not endorsing: Acts 17:28; Titus 1:12; 2 Timothy 3:8; common ground; the Ethiopian church | Enoch | jude/1.json `hard`; jude/intro.json `reading` | Repository |
+| Overlap with 2 Peter 2:1 to 3:3; most think 2 Peter used Jude; others; no side; borrowing would not trouble ancient readers | Jude and 2 Peter | 2-peter/intro.json `teaching` (false-teachers) | Repository, as the 2 Peter page states it |
+| P72 holds 1 Peter, 2 Peter and Jude | Jude and 2 Peter; timeline | 2-peter/intro.json `teaching` (when) | Repository |
+| Three groups to show mercy to; God keeps and believers keep | Build, pray, keep | jude/1.json `literary`; jude/intro.json `themes` | Repository |
+| Daniel 10:13; Zechariah 3:2; Deuteronomy 34:6; Numbers 14:29; Genesis 19:24; Numbers 22:7; Numbers 16; Genesis 5:24; Deuteronomy 33:2; Zechariah 14:5; Genesis 19:1 | Old Testament; Enoch | BSB | BSB text |
+| Key words: epagōnizomai, despotēs, tēreō, spilas; wandering stars and sailors | Key words | jude/1.json `words`, `cultural` | Repository |
+| Map: Sodom and Gomorrah at the Genesis and 2 Peter maps' point, as a region; Egypt beyond the frame | Map | 2-peter/intro.json `teaching.map`; genesis/intro.json `teaching.map` | Repository |
+
+Cut before publishing: a claim that the copies of verses 22-23 differ between two and three groups (not in the repository's notes).
+
+## The plain notes on Jude (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jude as Judah; brother of James and of Jesus (Mark 6:3; John 7:5); servant, not brother; called, loved, kept; threes | 1-2 | jude/1.json `historical`, `literary`; jude/intro.json `author` | Repository |
+| Isaiah 43:1; Jeremiah 31:3; Psalm 121:8 | 1-2 | BSB | BSB text |
+| Epagōnizomai only here; the faith a deposit; grace into licence; despotēs | 3-4 | jude/1.json `words` (G1864), `doctrines`, `christ` | Repository |
+| Jeremiah 6:14; Isaiah 5:20 | 3-4 | BSB | BSB text |
+| Verse 5 manuscripts; angels as Genesis 6 read in 1 Enoch; Seth and rulers; Sodom readings; no side; care line | 5-7 | jude/1.json `christ`, `cultural`; genesis/plain/6.json; genesis/plain/19.json; romans/plain/1.json (care line) | Repository, no side; care line word for word |
+| Numbers 14:11, 29; Genesis 6:2; Genesis 19:1, 24; Amos 4:11; Leviticus 18:22 | 5-7 | BSB | BSB text |
+| Dreamers; Michael and Moses (Origen; Assumption and Testament of Moses); Cain, Balaam, Korah as stock examples; love feasts; spilas; wandering stars and sailors | 8-13 | jude/1.json `historical`, `cultural`, `words` (G4694); jude/intro.json `setting` | Repository |
+| Quoting a tradition is not calling it Scripture (Acts 17:28; Titus 1:12; 2 Timothy 3:8) | 8-13; 14-16 | jude/1.json `hard` | Repository |
+| Genesis 4:5; Numbers 22:7; Numbers 16:1-2; Daniel 10:13; Zechariah 3:2; Deuteronomy 34:6; Ezekiel 34:2; Isaiah 57:20; Proverbs 25:14 | 8-13 | BSB | BSB text |
+| 1 Enoch 1:9; composed over the last centuries before Christ; Qumran fragments; Jerome; Tertullian; the readings; the Ethiopian Bible | 14-16 | jude/1.json `historical`, `hard`; jude/intro.json `setting` | Repository |
+| Genesis 5:24; Deuteronomy 33:2; Zechariah 14:5; Numbers 14:29 | 14-16 | BSB | BSB text |
+| Verse 17 as a reason some give for a later date | 17-23 | jude/intro.json `author` | Repository |
+| Three groups to show mercy to; God keeps and believers keep | 17-23 | jude/1.json `literary`; jude/intro.json `themes` | Repository |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 17-23 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Zechariah 3:2, 4; Psalm 73:28 | 17-23 | BSB | BSB text |
+| The doxology prayed in churches since | 24-25 | jude/intro.json `overview` | Repository |
+| Psalm 121:3; Psalm 66:9; Isaiah 43:11; Psalm 16:11 | 24-25 | BSB | BSB text |
+
+Cut before publishing: a reading of verse 17 as simply the apostles' teaching (not in the repository's notes).
+
+## Jude complete (2026-11-20)
+
+## Revelation: the book page (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Apokalupsis, its first word; the course of the visions; real churches under pressure; read in many ways and used to set dates that passed | In a minute | revelation/intro.json `overview` | Repository; reading time an estimate |
+| No scheme, no date, no identification of any modern nation, leader, church or event | In a minute; Four ways; What it is not | Instruction for this run | Stated, no claim |
+| John named four times; servant, brother, prophet; not an apostle by claim; Justin, Irenaeus; Dionysius of Alexandria; John the seer; defenders; links with the Gospel | Who wrote it; timeline | revelation/intro.json `author`; bible/guides/reading-apocalyptic.json (setting and date) | Repository, no side |
+| Muratorian list includes Revelation; doubted in parts of the Greek East; Eusebius undecided; the Peshitta lacks it; not read in the Orthodox liturgy | Who wrote it; timeline | bible/guides/canon.json (sections 4, 5); bible/doctrines/canon.json `history` | Repository |
+| Domitian 81 to 96, about 95, Irenaeus about 180; 2:4; the late-60s case (chapter 11, 17:9-11, 666 as ‘Nero Caesar’ in Hebrew) | When; timeline | revelation/intro.json `date` | Repository, no side |
+| Seven cities in a loop from the coast; imperial cult; guild banquets; local pressures; Antipas | When | revelation/intro.json `setting`; revelation/1.json `cultural` | Repository |
+| Apocalypse, prophecy, letter; the genre's span (250 BC to AD 250); Daniel 7 to 12; several hundred allusions; numbers as qualities; hear-and-see; sealed and unsealed (Daniel 12:4; 22:10) | What kind of book | revelation/intro.json `reading`; bible/guides/reading-apocalyptic.json | Repository |
+| The structure; series of sevens successive or recapitulating | How it is built | revelation/intro.json `structure`; bible/guides/reading-apocalyptic.json | Repository |
+| Preterist (partial and full; Latin ‘past’); historicist (dominant Protestant reading to the 1800s, still held); futurist (Justin, Irenaeus; Darby; Ladd); idealist (Tyconius, Augustine); combined readings | Four ways | bible/guides/reading-apocalyptic.json (Four ways of reading Revelation); revelation/intro.json `reading` | Repository, no side |
+| Identifications of beasts and horns with rulers of each generation have come and gone | Four ways | bible/guides/reading-apocalyptic.json (Reading Daniel and Revelation well) | Repository |
+| Amillennial, postmillennial, historic premillennial, dispensational premillennial, each as its holders put it; second-order; Matthew 12:29; 13:31-33 | The thousand years | bible/doctrines/return.json `differ`; bible/guides/reading-apocalyptic.json (The thousand years) | Repository, no side |
+| Nicene Creed: ‘shall come again, with glory, to judge both the quick and the dead’ | The thousand years | creeds/documents/nicene-creed.json | Repository, exact phrase |
+| The Lion and the Lamb; titles; worship; the conflict over worship | The Lamb | revelation/intro.json `christ`, `themes` | Repository; BSB |
+| The pattern of the seven messages; Smyrna and Philadelphia unrebuked; Nicolaitans unknown; Jezebel from Kings; 3:10 and the rapture | The seven churches | revelation/2.json, 3.json `literary`, `cultural`, `hard`; revelation/3.json `story` | Repository |
+| Martus and martyr; 2:9-10; 2:13; 6:10; 21:4 | Suffering | revelation/1.json `words` (G3144); revelation/intro.json `themes` | Repository; BSB |
+| Care line ‘Not every hardship comes from following Jesus ...’ | Suffering | acts/plain/14.json (21-28 `hard`) | Word for word |
+| Judgment pictures from the plagues and prophets; the sword from his mouth (1:16; 19:15); new creation; the tree of life | Judgment | revelation/intro.json `story`, `themes`; bible/guides/reading-apocalyptic.json | Repository; BSB |
+| Daniel 7:13; Isaiah 6:3; Exodus 19:6; Zechariah 12:10; Isaiah 65:17; Isaiah 25:8; Daniel 2:44; Matthew 24:36 | Old Testament; Four ways | BSB | BSB text |
+| Timeline: 29 BC Pergamum's temple; AD 17 earthquake (Sardis, Philadelphia); about 60 Laodicea; 64; 70; Domitian; Polycarp at Smyrna mid-second century | Timeline | revelation/2.json, 3.json `historical`; revelation/intro.json `date` | Repository |
+| Map: Ephesus and Laodicea only, at the points used on the Pauline maps; the other five cities and Patmos described in words, not drawn | Map | ephesians/intro.json `teaching.map`; revelation/2.json, 3.json `historical`; revelation/1.json `historical` | Repository; no new points |
+
+Cut before publishing: ‘widely read in the West from early on’; ‘echoes ... in nearly every verse’ (now ‘several hundred allusions’, the guide's figure); ‘most who hold it today are partial preterists’; a paragraph naming the question each reading faces (the guide gives no such question for the preterist reading, so all four were cut to keep the readings even).
+
+## The plain notes on Revelation 1 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Apokalupsis as unveiling; not a riddle; reading aloud; three kinds of writing | 1-3 | revelation/1.json `words` (G0602), `cultural`, `literary` | Repository |
+| ‘Soon’ and ‘near’: preterist, futurist (2 Peter 3:8), idealist readings; all agree the book was urgent for its first readers | 1-3 | revelation/1.json `hard` | Repository, no side |
+| Amos 3:7; Daniel 2:22, 28 | 1-3 | BSB | BSB text |
+| ‘Who is and was and is to come’ reworks Exodus 3:14; three titles; Exodus 19:6; Daniel 7:13 and Zechariah 12:10 combined in verse 7 | 4-8 | revelation/1.json `literary`, `christ`, `doctrines` | Repository |
+| Seven Spirits: the Holy Spirit in fullness (Isaiah 11:2; Zechariah 4) or seven angelic beings; no side | 4-8 | revelation/1.json `doctrines` (trinity); bible/guides/reading-apocalyptic.json | Repository, no side |
+| Exodus 3:14; Exodus 19:6; Daniel 7:13; Zechariah 12:10; Isaiah 44:6 | 4-8 | BSB | BSB text |
+| Patmos southwest of Ephesus; exile as a Roman punishment; tradition of release; the Lord's day; kuriakos used of the emperor's things; the cities in a loop on a road | 9-11 | revelation/1.json `historical`, `cultural`, `words` (G2960) | Repository |
+| Suffering from faithfulness, not punishment | 9-11 | revelation/1.json `historical`; instruction for this run | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 9-11 | acts/plain/14.json (21-28 `hard`) | Word for word |
+| Ezekiel 11:1; Exodus 19:16 | 9-11 | BSB | BSB text |
+| Daniel 7 and 10; Ancient of Days' white hair given to the Son of Man; robe and sash of priest or king; Ezekiel 43:2; lampstands from tabernacle and Zechariah 4 | 12-16 | revelation/1.json `cultural`, `christ` | Repository |
+| Daniel 7:9, 13; Daniel 10:6; Ezekiel 43:2; Exodus 25:31; Zechariah 4:2 | 12-16 | BSB | BSB text |
+| ‘Do not be afraid’ the first word; the First and the Last (Isaiah 44:6); keys of Death and Hades; verse 19 as an outline, readers differ | 17-20 | revelation/1.json `christ`, `literary` | Repository |
+| The angels of the churches read four ways (messenger, bishop, guardian angel, the church itself) | 17-20 | lexicon G0032 (Rev 1:20 entry) | Repository, no side |
+| Isaiah 44:6; Ezekiel 1:28; Daniel 10:9-10; 1 Samuel 2:6 | 17-20 | BSB | BSB text |
+
+## The plain notes on Revelation 2 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The pattern of the seven messages; the refrain; its place before or after the promise | 1-7 | revelation/2.json `literary` | Repository |
+| Ephesus: port, temple of Artemis, imperial temples; Paul (Acts 19); John's link; the silting harbour as some commentators' echo | 1-7 | revelation/2.json `historical` | Repository |
+| Nicolaitans otherwise unknown; Irenaeus about 180 linked them with Nicolas (Acts 6:5); many doubt it | 1-7 | revelation/2.json `cultural`; acts plain note on 6:1-7 | Repository |
+| Genesis 2:9; 3:22-24; Jeremiah 2:2 | 1-7 | BSB | BSB text |
+| Smyrna: port north of Ephesus; temple to Roma 195 BC; to Tiberius AD 26; destroyed about 600 BC and refounded; Polycarp | 8-11 | revelation/2.json `historical` | Repository |
+| Ten as limited fullness; stephanos the victor's wreath; Smyrna's games | 8-11 | bible/guides/reading-apocalyptic.json (Numbers and time); revelation/2.json `words` (G4735), `doctrines` | Repository |
+| ‘Synagogue of Satan’: a local conflict in Smyrna; slander perhaps to the authorities; loss of Judaism's legal protection; Satan as accuser; Romans 2:28-29; John a Jew; the twelve tribes on the city (21:12); later misuse confessed | 8-11 | revelation/2.json `hard`, `cultural` | Repository |
+| ‘That reading is false. This site rejects it, and the note on Acts 2:22-28 sets out why.’ | 8-11 | hebrews/intro.json `teaching` (covenant part, as repaired in the last run) | Word for word |
+| Isaiah 41:10; Daniel 1:12; Isaiah 44:6; Romans 2:29; Revelation 21:12 | 8-11 | BSB | BSB text |
+| Pergamum: Attalid capital, bequeathed 133 BC; altar of Zeus; Asclepius; first temple to Augustus and Roma 29 BC; the governor's power; guild banquets; Balaam at Peor; white stones | 12-17 | revelation/2.json `historical`, `cultural`, `christ` | Repository |
+| Four explanations of ‘the throne of Satan’; no side | 12-17 | revelation/2.json `cultural` | Repository, no side |
+| Numbers 25:1-2; Numbers 31:16; Exodus 16:31; Isaiah 62:2 | 12-17 | BSB | BSB text |
+| Thyatira: trade guilds; Lydia (Acts 16:14); Jezebel from Ahab's queen (1 Kings 16, 21); time to repent | 18-29 | revelation/2.json `historical`, `cultural`, `doctrines` | Repository |
+| Jezebel is Christ's name for her; nothing else is known; not a label for any woman or group today | 18-29 | revelation/2.json; instruction for this run | Repository; stated, no claim |
+| Not a rule for illness; John 9:3; the illness care line | 18-29 | 2-corinthians/plain/12.json (7-10 `hard`) | Word for word |
+| 1 Kings 21:25; Jeremiah 17:10; Psalm 2:8-9; Revelation 22:16 | 18-29 | BSB | BSB text |
+
+Cut before publishing: Antipas as the only martyr named in the book (not checked in the repository); ‘ten days most likely means a short time’ (now the guide's ‘limited fullness’).
+
+## The plain notes on Revelation 3 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sardis: Lydia's capital, Croesus, early coins; citadel taken by Cyrus about 546 BC and Antiochus III in 214 BC; earthquake AD 17 and Tiberius' help; ‘wake up’ and ‘like a thief’ heard against that history | 1-6 | revelation/3.json `historical` | Repository |
+| White robes at festivals and victories; the book of life and citizen registers | 1-6 | revelation/3.json `cultural` | Repository |
+| Perseverance readings: Reformed, Arminian and Wesleyan, Lutheran, Catholic | 1-6 | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 1-6 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Exodus 32:32; Psalm 69:28; Daniel 12:1; Isaiah 61:10 | 1-6 | BSB | BSB text |
+| Philadelphia: youngest city, founded by the kings of Pergamum, named for Attalus II and his brother; earthquake AD 17; Strabo on people living outside; Neocaesarea and Flavia; the pillar and the new name read against that | 7-9; 10-13 | revelation/3.json `historical` | Repository |
+| Key of David from Isaiah 22:22 (Eliakim); the open door as witness or entrance; no rebuke | 7-9 | revelation/3.json `cultural`, `words` (G2374), `literary` | Repository |
+| 3:9 as at 2:9: local conflict; Romans 2:29; misuse named; ‘That reading is false. This site rejects it, and the note on Acts 2:22-28 sets out why.’ | 7-9 | revelation/2.json `hard`; hebrews/intro.json `teaching` | Repository; pointer word for word |
+| Isaiah 22:22; Isaiah 60:14; Isaiah 43:4 | 7-9 | BSB | BSB text |
+| 3:10: pretribulation, posttribulation (John 17:15), amillennial and preterist readings; each held by faithful Christians | 10-13 | revelation/3.json `hard` | Repository, no side |
+| No date; no modern event identified | 10-13 | 1-thessalonians/plain/4.json (15-18 `hard`); instruction for this run | Repository |
+| Ezekiel 48:35; Isaiah 62:2; 1 Thessalonians 4:17 | 10-13 | BSB | BSB text |
+| Laodicea: Lycus valley, about a hundred miles east of Ephesus; banking, black wool, medicine, Phrygian powder; AD 60 earthquake and Tacitus; Colossians 4:13-16 | 14-19 | revelation/3.json `historical` | Repository |
+| ‘Amen’ used of God in Isaiah 65:16 (Hebrew amen, lexicon H0543 lists the verse); arche as source or ruler | 14-19 | revelation/3.json `christ`, `words` (G0746); lexicon H0543 | Repository |
+| The water supply; Hierapolis hot, Colossae cold; two readings of hot and cold; no side | 14-19 | revelation/3.json `cultural`, `words` (G5513) | Repository, no side |
+| Gold, white garments, eye salve against the city's prides; ‘Those I love, I rebuke’ | 14-19 | revelation/3.json `cultural`, `literary` | Repository |
+| Isaiah 65:16; Hosea 12:8; Proverbs 3:12 | 14-19 | BSB | BSB text |
+| 3:20 spoken to a church; the meal as fellowship; the door into chapter 4 | 20-22 | revelation/3.json `christ`, `literary`, `words` (G2374) | Repository |
+| Song of Solomon 5:2; Psalm 23:5; Revelation 4:1 | 20-22 | BSB | BSB text |
+| Book page: the pointer for 3:10 changed to ‘the note on 3:10-13’ | Book page | This chapter's passages | Data read |
+
+Cut before publishing: a reading of how the Reformed and Arminian traditions each take 3:5 in particular (the repository's doctrine study does not discuss the verse; the general views are given instead).
+
+## Stopped here: Revelation 1 to 3 complete (2026-11-20)
+
+## Map labels after looking (2026-11-20)
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| 1, 2 and 3 John: the Ephesus label moved to the west of its point (as on the Ephesians and Revelation maps), since at 390 it crowded the drawing's ASIA label | Map | Screenshots of the served build at 390 and 1440 | Looked at |

@@ -1344,19 +1344,67 @@
       "slug": "covenant",
       "title": "Promises that build: the covenants",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God makes promises and keeps them. Seven pictures follow the covenants, from Noah's rainbow to the cup Jesus shared, each one laid on the one before like the stones of an arch.",
+        "older": "The covenants through the whole Bible in seven pictures: Noah, Abraham, Sinai, David, the new covenant promised, the cup at the supper, and every promise kept in Christ."
+      },
+      "mark": "covenant",
+      "frames": 7,
+      "stops": [
+        "fall",
+        "abraham",
+        "sinai",
+        "kingdom",
+        "exile",
+        "cross"
+      ],
+      "cards": []
     },
     {
       "slug": "the-lamb",
       "title": "Sacrifice and the Lamb",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "From the garden to the last page, God provides. Seven pictures follow a covering, a ram, the Passover lamb and the altar to Jesus, the Lamb of God, and the Lamb at the center of the throne.",
+        "older": "Sacrifice through the whole Bible in seven pictures: a covering, the ram in Isaac's place, the Passover, the Day of Atonement, the Lamb of God, one sacrifice for all time, and the Lamb on the throne."
+      },
+      "mark": "the-lamb",
+      "frames": 7,
+      "stops": [
+        "fall",
+        "abraham",
+        "rescue",
+        "sinai",
+        "jesus",
+        "cross",
+        "new-creation"
+      ],
+      "cards": [
+        "cross"
+      ]
     },
     {
       "slug": "exile-and-home",
       "title": "Exile and coming home",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Again and again in the Bible, God's people are far from home, and again and again God brings them back. Seven pictures follow one road, from the garden gate to a city whose gates are never shut.",
+        "older": "Exile and homecoming through the whole Bible in seven pictures: the garden, Egypt, Babylon, the return, Jesus, believers as foreigners on the way, and the city at the end."
+      },
+      "mark": "exile-and-home",
+      "frames": 7,
+      "stops": [
+        "fall",
+        "rescue",
+        "exile",
+        "return",
+        "jesus",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "all-nations",
@@ -1368,7 +1416,19 @@
       "slug": "kingdom-of-god",
       "title": "The kingdom of God",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Jesus said the kingdom of God is like a tiny seed that grows into a great tree. Seven pictures watch it grow, from God's rule over all to the day it comes in full.",
+        "older": "The kingdom of God in seven pictures: God's rule over all, the kingdom come near in Jesus, its signs, the mustard seed, the order turned upside down, a kingdom not of this world, and already and not yet."
+      },
+      "mark": "kingdom-of-god",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "kingdom",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "light-and-darkness",
