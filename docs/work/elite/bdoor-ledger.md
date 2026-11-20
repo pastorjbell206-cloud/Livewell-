@@ -8348,3 +8348,29 @@ No new search. Scripture is the BSB in the repository.
 | Leviticus 19:14; Numbers 25:2; Exodus 34:15; Daniel 1:8; Matthew 18:6; Romans 14:21; Galatians 2:3-5 | 7-13 | BSB | BSB text |
 
 Also in this commit: 3:10-15 `happening`, a colon before a quotation that starts in lower case (no change of words).
+
+## The plain notes on 1 Corinthians 9 (2026-11-20)
+
+One search (the Isthmian crown). Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Doubts about Paul's apostleship tied to money; 2 Corinthians 11:7, 9 | 1-12 | Deep note `historical`; BSB | BSB text |
+| Teachers lived by fees, a patron, begging or a trade; a patron's client owed loyalty; hand work looked down on | 1-12 | Deep note `cultural`; chapter 4 row (Roman-world portrait, work) | Repository; ledger. Stated generally |
+| Tentmaking (Acts 18:3); Peter married (Mark 1:30); the Lord's brothers, James later leading in Jerusalem; Barnabas on the first mission (Acts 13 and 14) | 1-12 | BSB; deep note `historical` | BSB text |
+| Exousia six times in the chapter, the word of 8:9 | 1-12 | Repository Greek (G1849 at 9:4, 5, 6, 12, 12, 18) | Script |
+| Deuteronomy 25:4 and the surrounding laws (25:1-3); threshing by oxen | 1-12 | BSB | BSB text |
+| 1 Timothy 5:18; Luke 10:7; Matthew 10:10; 1 Peter 5:2 | 1-12, 13-18 | BSB | BSB text |
+| Paying ministers: no rule beyond the text, no licence to demand money, nothing against paid pastors | 1-12 | BSB 9:14-15 | Stated as what the text does and does not say |
+| Temple servants eat from the offerings; Deuteronomy 18:1; Numbers 18:31 | 13-18 | BSB | BSB text |
+| Oikonomia in 9:17 | 13-18 | Repository Greek (oikonomian pepisteumai) | Script |
+| Jeremiah 20:9; Amos 3:8 (quoted after the BSB's dash) | 13-18 | BSB | BSB text |
+| Kerdainō five times in 9:19-22 | 19-23 | Repository Greek (G2770) | Script |
+| Timothy circumcised (Acts 16:3); the four men with a vow (Acts 21:23-26); Galatians 2:14; 1:10; 6:2; Mark 10:45; Philippians 2:7; Isaiah 53:12 | 19-23 | BSB | BSB text |
+| Isthmian Games every two years at Corinth | 24-27 | Book page ledger | Ledger |
+| Isthmian crown of celery or pine at different times | 24-27 | Isthmian Games | Search: en.wikipedia.org "Isthmian Games" and "Wreaths and crowns in antiquity" (celery earlier, later pine). Stated as "at different times"; no dates given |
+| Stephanos the victor's wreath; hypōpiazō a blow; adokimos (also 2 Corinthians 13:5) | 24-27 | Repository Greek (G4735, 9:27 hupōpiazō, G0096); deep note `words` | Script |
+| Falling away: Reformed and Baptist; Wesleyan, Arminian and Catholic; no side | 24-27 | Romans 8 plain note form | Repository |
+| Isaiah 40:31; Psalm 119:32; Philippians 3:14; 2 Timothy 4:7; John 10:28; Hebrews 6:4-6 | 24-27 | BSB | BSB text |
+
+Cut: the number of months athletes trained (deep note; not checked); the Isthmian crown's dates.
