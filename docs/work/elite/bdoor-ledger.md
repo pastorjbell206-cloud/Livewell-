@@ -9522,3 +9522,25 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Onesimus carried the letter (4:9); Philemon 16 | 22-25 | BSB | BSB text |
 | Paul does not command abolition; misuse in the Atlantic trade and the American South; wrong; not a rule for employment | 22-25 | Chapter note `hard`; ephesians/plain/6.json; context guide the-slavery-texts | Repository wording |
 | Leviticus 25:43; Deuteronomy 24:15; Job 31:15; Deuteronomy 10:17 | 22-25 | BSB | BSB text |
+
+## The plain notes on Colossians 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 completes the household code | 1-6 | Deep note `literary` | Repository |
+| ‘Seasoned with salt’ described witty, pleasing, well-chosen speech; salt preserved and flavoured | 1-6 | Deep note `cultural` | Repository |
+| Deuteronomy 24:14; Job 31:13-15; Isaiah 22:22; Leviticus 2:13; Proverbs 25:11; Psalm 141:3 | 1-6 | BSB | BSB text |
+| No public post for private letters; carriers added news; Tychicus from Asia (Acts 20:4), also carried Ephesians (6:21-22) | 7-9 | Deep note `cultural`, `historical` | Repository |
+| Onesimus a slave of Philemon; ran away (most) or sought Paul's help in a dispute (some); Philemon's household in Colossae | 7-9 | Deep note `historical` | Repository. No side |
+| Deuteronomy 24:14; Ruth 1:16 | 7-9 | BSB | BSB text |
+| Mark (Acts 13:13; 15:37-39); Aristarchus (Acts 19:29; 27:2); Luke a physician, most think a Gentile; Demas (2 Timothy 4:10) | 10-18 | Deep note `historical`; BSB | Repository |
+| Nympha; some later copies Nymphas; the feminine well supported | 10-18 | Deep note `cultural` | Repository |
+| The letter from Laodicea lost, or Ephesians (some) | 10-18 | Deep note `historical` | Repository. No side |
+| Paul dictated and signed in his own hand (Romans 16:22) | 10-18 | Deep note `cultural` | Repository |
+| Numbers 6:25; Proverbs 27:17 | 10-18 | BSB | BSB text |
+
+## Colossians complete (2026-11-20)
+
+All four chapters in plain words. Colossians searches: 3 for the book page.
