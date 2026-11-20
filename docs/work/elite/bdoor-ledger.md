@@ -13080,3 +13080,27 @@ Cut before publishing: ‘the most holy object goes to the craftsman God called 
 | Numbers 1:46; 2 Corinthians 8:21; Luke 16:10 | 21-31 | BSB | BSB text |
 
 Cut before publishing: nothing was drafted beyond the notes here; Mendenhall's name is left to the deep note.
+
+## The plain notes on Exodus 39 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The garments of chapter 28 made; gold thread from hammered sheets, a known technique | 1-21 | exodus/39.json `story`, `historical` | Repository |
+| The ephod as apron or vest; the names on shoulders and heart; engraved like a seal, a mark of identity and ownership | 1-21 | exodus/39.json `historical`, `cultural` | Repository |
+| The stones uncertain; translations differ | 1-21 | exodus/39.json `historical` | Repository |
+| Memorial: to remember is to act for someone | 1-21 | exodus/39.json `words` (H2146); exodus/plain/28.json | Repository |
+| The Urim and Thummim not mentioned, perhaps because not crafted | 1-21 | exodus/39.json `literary` | Repository |
+| The refrain seven times in the account of the garments | 1-21 | exodus/39.json `literary` | Repository |
+| Revelation 21:19; Hebrews 4:14; 7:25 | 1-21 | BSB; exodus/39.json `christ` | BSB text |
+| A shadow is real | 1-21 | hebrews/plain/8.json (1-6 `hard`) | Repository |
+| The bells and 28:35; the pomegranate as fruitfulness and on Solomon's pillars (1 Kings 7:18-20) | 22-31 | exodus/39.json `cultural`; BSB | Repository |
+| The plate: tsits, a flower; the holy crown; 28:38 | 22-31 | exodus/39.json `words` (H6731A), `cultural` | Repository |
+| Aaron the calf-maker and the garments designed for him | 22-31 | exodus/28.json `story`; exodus/plain/28.json (1-5) | Repository |
+| Zechariah 14:20; 1 Peter 2:9; Revelation 1:13 | 22-31 | BSB; exodus/39.json `cultural`, `christ` | BSB text |
+| The refrain three more times; restoration; the echoes of Genesis (completed, saw, blessed); a new creation | 32-43 | exodus/39.json `story`, `literary` | Repository |
+| The broken tablets (32:19) beside the blessing | 32-43 | BSB | BSB text |
+| Genesis 2:1, 3; 1:31; Psalm 90:17 (‘A prayer of Moses’ in its heading) | 32-43 | BSB | BSB text |
+
+Cut before publishing: that the robe was worn ‘under’ the ephod (the text says only ‘the robe of the ephod’); the stones of Ezekiel 28:13 (in the deep note).
