@@ -41,14 +41,54 @@ const stopFile = (slug: string): Stop =>
     fs.readFileSync(path.join(PUBLIC, `explorer/stops/${slug}.json`), "utf8")
   );
 const FINISHED = INDEX.stops.filter(s => s.status === "finished");
-const DRAWING = INDEX.stops.filter(s => s.status !== "finished");
+const ROAD = [
+  "creation",
+  "fall",
+  "abraham",
+  "rescue",
+  "sinai",
+  "land",
+  "kingdom",
+  "exile",
+  "return",
+  "jesus",
+  "cross",
+  "church",
+  "new-creation",
+];
 
-function serve() {
+/** Serve the real files; `drawing` marks one stop as still being drawn, to keep that code path tested now that every stop is finished. */
+function serve(drawing?: string) {
   const base = offlineFetch();
   vi.stubGlobal(
     "fetch",
     vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
       const name = String(input).replace(/^\//, "");
+      if (drawing && name === "explorer/index.json")
+        return new Response(
+          JSON.stringify({
+            ...INDEX,
+            stops: INDEX.stops.map(s =>
+              s.slug === drawing ? { ...s, status: "drawing" } : s
+            ),
+          }),
+          { status: 200, headers: { "Content-Type": "application/json" } }
+        );
+      if (drawing && name === `explorer/stops/${drawing}.json`) {
+        const { slug, n, act, title, range, summary } = stopFile(drawing);
+        return new Response(
+          JSON.stringify({
+            slug,
+            n,
+            act,
+            title,
+            range,
+            summary,
+            status: "drawing",
+          }),
+          { status: 200, headers: { "Content-Type": "application/json" } }
+        );
+      }
       if (
         name.startsWith("explorer/") &&
         fs.existsSync(path.join(PUBLIC, name))
@@ -86,21 +126,10 @@ afterEach(() => {
 });
 
 describe("the data", () => {
-  it("has every act of the Bible's story, numbered without a gap, ten stops finished", () => {
+  it("has every act of the Bible's story, numbered without a gap, all thirteen stops finished", () => {
     expect(INDEX.stops.map(s => s.n)).toEqual(INDEX.stops.map((_, i) => i + 1));
     expect(new Set(INDEX.stops.map(s => s.act)).size).toBe(11);
-    expect(FINISHED.map(s => s.slug)).toEqual([
-      "creation",
-      "fall",
-      "abraham",
-      "rescue",
-      "sinai",
-      "land",
-      "kingdom",
-      "exile",
-      "jesus",
-      "cross",
-    ]);
+    expect(FINISHED.map(s => s.slug)).toEqual(ROAD);
     for (const s of INDEX.stops) {
       expect(s.summary.younger.length, s.slug).toBeGreaterThan(20);
       expect(s.summary.older.length, s.slug).toBeGreaterThan(20);
@@ -117,14 +146,17 @@ describe("the data", () => {
       "cycle",
       "choose",
       "match",
+      "order",
       "walk",
       "reveal",
+      "walk",
+      "match",
     ]);
   });
 });
 
 describe("the map", () => {
-  it("shows every stop; only finished stops are links, and a stop being drawn says so", async () => {
+  it("shows every stop as a link; no stop says it is being drawn", async () => {
     renderAt("/study/explorer");
     await screen.findByRole("heading", { name: "Creation" });
     for (const s of FINISHED) {
@@ -133,7 +165,18 @@ describe("the map", () => {
         within(h).getByRole("link", { name: s.title }).getAttribute("href")
       ).toBe(`/study/explorer/${s.slug}`);
     }
-    for (const s of DRAWING) {
+    expect(document.body.textContent).not.toContain(
+      "This stop is being drawn."
+    );
+  });
+
+  it("a stop still being drawn has no link and says so (the code path stays for new rooms)", async () => {
+    cleanup();
+    vi.unstubAllGlobals();
+    serve("church");
+    renderAt("/study/explorer");
+    await screen.findByRole("heading", { name: "Creation" });
+    for (const s of INDEX.stops.filter(x => x.slug === "church")) {
       const item = document.getElementById(`stop-${s.slug}`)!;
       expect(item, s.slug).toBeTruthy();
       expect(
@@ -146,6 +189,17 @@ describe("the map", () => {
       ).toBeNull();
       expect(item.textContent).toContain("This stop is being drawn.");
     }
+    cleanup();
+    // Next skips a stop being drawn: the Cross leads on to the New Creation.
+    renderAt("/study/explorer/cross");
+    await screen.findByRole("heading", {
+      level: 1,
+      name: "The Cross and the Empty Tomb",
+    });
+    expect(screen.getByRole("link", { name: /^Next stop: / })).toHaveAttribute(
+      "href",
+      "/study/explorer/new-creation"
+    );
   });
 
   it("switches the reading level in one tap and keeps it on this device", async () => {
@@ -229,7 +283,9 @@ describe("a stop", () => {
   });
 
   it("a stop still being drawn answers with its summary and no activity", async () => {
-    const s = DRAWING[0];
+    vi.unstubAllGlobals();
+    serve("church");
+    const s = INDEX.stops.find(x => x.slug === "church")!;
     renderAt(`/study/explorer/${s.slug}`);
     await screen.findByRole("heading", { level: 1, name: s.title });
     expect(screen.getByText(/This stop is being drawn\./)).toBeInTheDocument();
@@ -328,10 +384,14 @@ describe("a stop", () => {
           : "Round again";
       fireEvent.click(screen.getByRole("button", { name: next }));
     });
-    expect(screen.getByText(act.again.text, { exact: false })).toBeInTheDocument();
+    expect(
+      screen.getByText(act.again.text, { exact: false })
+    ).toBeInTheDocument();
     expect(items()[0]).toHaveAttribute("aria-current", "step");
     expect(stored()?.done ?? []).not.toContain("land");
-    fireEvent.click(screen.getByRole("button", { name: "Where does it lead?" }));
+    fireEvent.click(
+      screen.getByRole("button", { name: "Where does it lead?" })
+    );
     expect(
       screen.getByRole("heading", { level: 3, name: act.end.title })
     ).toBeInTheDocument();
@@ -347,12 +407,16 @@ describe("a stop", () => {
       .getAllByRole("group")
       .filter(g => g.classList.contains("ex-choose__options"));
     expect(groups).toHaveLength(act.moments.length);
-    expect(screen.getByText(`0 of ${act.moments.length} chosen.`)).toBeInTheDocument();
+    expect(
+      screen.getByText(`0 of ${act.moments.length} chosen.`)
+    ).toBeInTheDocument();
     // The first one wrong on purpose, then put right; the rest right.
     act.moments.forEach((m, i) => {
       const wrong = m.answer === "trust" ? "grasp" : "trust";
       const pick = i === 0 ? wrong : m.answer;
-      const b = within(groups[i]).getByRole("button", { name: act.options[pick] });
+      const b = within(groups[i]).getByRole("button", {
+        name: act.options[pick],
+      });
       fireEvent.click(b);
       expect(b).toHaveAttribute("aria-pressed", "true");
       const li = groups[i].closest("li")!;
@@ -360,7 +424,9 @@ describe("a stop", () => {
       expect(li.textContent).toContain(i === 0 ? "Not quite." : "Yes.");
     });
     fireEvent.click(
-      within(groups[0]).getByRole("button", { name: act.options[act.moments[0].answer] })
+      within(groups[0]).getByRole("button", {
+        name: act.options[act.moments[0].answer],
+      })
     );
     expect(
       screen.getByText(
@@ -485,7 +551,9 @@ describe("a stop", () => {
           screen.getByRole("button", { name: `Next: ${act.steps[i + 1].name}` })
         );
     });
-    expect(screen.getByRole("button", { name: act.restart! })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: act.restart! })
+    ).toBeInTheDocument();
     expect(screen.getByText(act.finish)).toBeInTheDocument();
     expect(act.finish).toContain("You are the Christ");
     await waitFor(() => expect(stored().done).toContain("jesus"));
@@ -530,8 +598,7 @@ describe("a stop", () => {
       expect(screen.getByText(v.text)).toBeInTheDocument();
   });
 
-  it("Next walks every finished stop in order and never links a stop still being drawn", async () => {
-    const drawing = new Set(DRAWING.map(s => s.slug));
+  it("Next walks all thirteen stops from Creation to the New Creation, each saying Stop N of 13", async () => {
     const chain: string[] = [];
     let slug: string | null = FINISHED[0].slug;
     while (slug) {
@@ -539,43 +606,54 @@ describe("a stop", () => {
       renderAt(`/study/explorer/${slug}`);
       const title = INDEX.stops.find(s => s.slug === slug)!.title;
       await screen.findByRole("heading", { level: 1, name: title });
-      for (const a of Array.from(document.querySelectorAll("a[href]"))) {
-        const m = a.getAttribute("href")!.match(/^\/study\/explorer\/([a-z0-9-]+)/);
-        if (m) expect(drawing.has(m[1]), `${slug} links ${m[1]}`).toBe(false);
-      }
+      expect(
+        screen.getByText(new RegExp(`^Stop ${chain.length} of 13\\.`))
+      ).toBeInTheDocument();
       const next = screen.queryByRole("link", { name: /^Next stop: / });
       slug = next ? next.getAttribute("href")!.split("/").pop()! : null;
+      if (!slug) {
+        // The last stop leads back to the whole map and on to the cards.
+        expect(
+          screen.getByRole("link", { name: "The whole map" })
+        ).toHaveAttribute("href", "/study/explorer");
+        expect(
+          screen.getByRole("link", { name: "Why we believe" })
+        ).toHaveAttribute("href", "/study/explorer#ex-believe-title");
+      }
       cleanup();
     }
-    expect(chain).toEqual(FINISHED.map(s => s.slug));
-    // Unbroken from Creation to the Cross; the Return is still being drawn.
-    expect(chain).toEqual([
-      "creation",
-      "fall",
-      "abraham",
-      "rescue",
-      "sinai",
-      "land",
-      "kingdom",
-      "exile",
-      "jesus",
-      "cross",
-    ]);
+    expect(chain).toEqual(ROAD);
   });
 
   it("shows the older level's care line and question on the newer stops", async () => {
     window.localStorage.setItem(
       EXPLORER_PROGRESS_KEY,
-      JSON.stringify({ v: 1, level: "older", visited: [], done: [], last: null })
+      JSON.stringify({
+        v: 1,
+        level: "older",
+        visited: [],
+        done: [],
+        last: null,
+      })
     );
-    for (const slug of ["fall", "sinai", "land", "kingdom", "exile", "jesus"]) {
+    for (const slug of [
+      "fall",
+      "sinai",
+      "land",
+      "kingdom",
+      "exile",
+      "jesus",
+      "return",
+      "church",
+      "new-creation",
+    ]) {
       const s = stopFile(slug);
       renderAt(`/study/explorer/${slug}`);
       await screen.findByRole("heading", { name: "A question people ask" });
       expect(screen.getByText(s.question!.ask)).toBeInTheDocument();
-      expect(
-        Boolean(document.querySelector(".ex-care a[href='/help']"))
-      ).toBe(Boolean(s.care));
+      expect(Boolean(document.querySelector(".ex-care a[href='/help']"))).toBe(
+        Boolean(s.care)
+      );
       cleanup();
     }
   });
@@ -597,5 +675,167 @@ describe("a stop", () => {
         "Couldn't save to this browser — your work here will not survive a reload."
       )
     ).toBeInTheDocument();
+  });
+
+  it("from the decree to the voice: five events put in order, each showing its date and line once it is in place", async () => {
+    renderAt("/study/explorer/return");
+    const act = stopFile("return").activity!;
+    if (act.kind !== "order") throw new Error("return is an order activity");
+    await screen.findByRole("heading", { name: act.title });
+    const list = () =>
+      Array.from(document.querySelectorAll(".ex-order li")).map(
+        li => li.querySelector(".ex-order__text")!.textContent ?? ""
+      );
+    fireEvent.click(screen.getByRole("button", { name: "Check my order" }));
+    expect(screen.getByText(/^Not yet: \d of 5/)).toBeInTheDocument();
+    const want = act.items.map(x => x.text);
+    for (let target = 0; target < want.length; target++) {
+      let at = list().findIndex(t => t.includes(want[target]));
+      while (at > target) {
+        fireEvent.click(
+          screen.getByRole("button", { name: `Move up: ${want[target]}` })
+        );
+        at--;
+      }
+    }
+    fireEvent.click(screen.getByRole("button", { name: "Check my order" }));
+    expect(
+      screen.getByText("That is the order it happened.")
+    ).toBeInTheDocument();
+    act.items.forEach((it, i) => {
+      expect(list()[i]).toContain(`${it.when}. `);
+      expect(list()[i]).toContain(it.then!);
+    });
+    await waitFor(() => expect(stored().done).toContain("return"));
+  });
+
+  it("out to the ends of the earth: Next walks the five places of Acts 1:8 from the upper room to the ship", async () => {
+    renderAt("/study/explorer/church");
+    const act = stopFile("church").activity!;
+    if (act.kind !== "walk") throw new Error("church is a walk activity");
+    await screen.findByRole("heading", { name: act.title });
+    expect(screen.getByText(act.intro!)).toBeInTheDocument();
+    fireEvent.click(
+      screen.getByRole("button", { name: `Start: ${act.steps[0].name}` })
+    );
+    act.steps.forEach((st, i) => {
+      expect(
+        screen.getByRole("heading", { level: 3, name: st.name })
+      ).toBeInTheDocument();
+      expect(document.querySelector(".ex-walk__later")!.textContent).toContain(
+        act.laterLabel!
+      );
+      if (i < act.steps.length - 1)
+        fireEvent.click(
+          screen.getByRole("button", { name: `Next: ${act.steps[i + 1].name}` })
+        );
+    });
+    expect(
+      screen.getByRole("button", { name: act.restart! })
+    ).toBeInTheDocument();
+    expect(screen.getByText(act.finish)).toBeInTheDocument();
+    await waitFor(() => expect(stored().done).toContain("church"));
+  });
+
+  it("the end of the road: four pictures from Genesis matched to Revelation, named as pictures, not promises", async () => {
+    renderAt("/study/explorer/new-creation");
+    const act = stopFile("new-creation").activity!;
+    if (act.kind !== "match")
+      throw new Error("new-creation is a match activity");
+    await screen.findByRole("heading", { name: act.title });
+    fireEvent.click(screen.getByRole("button", { name: "Check my answers" }));
+    expect(
+      screen.getByText(/Choose an answer for every picture first/)
+    ).toBeInTheDocument();
+    const groups = screen
+      .getAllByRole("group")
+      .filter(
+        g => g.tagName === "FIELDSET" && /^Picture \d/.test(g.textContent ?? "")
+      );
+    expect(groups).toHaveLength(4);
+    act.pairs.forEach((p, i) =>
+      fireEvent.click(within(groups[i]).getByRole("radio", { name: p.kept }))
+    );
+    fireEvent.click(screen.getByRole("button", { name: "Check my answers" }));
+    expect(screen.getByText(act.finish!)).toBeInTheDocument();
+    await waitFor(() => expect(stored().done).toContain("new-creation"));
+  });
+
+  it("the older level shows where churches differ, and the end-times differences, with no side taken", async () => {
+    window.localStorage.setItem(
+      EXPLORER_PROGRESS_KEY,
+      JSON.stringify({
+        v: 1,
+        level: "older",
+        visited: [],
+        done: [],
+        last: null,
+      })
+    );
+    for (const slug of ["church", "new-creation"]) {
+      const s = stopFile(slug);
+      renderAt(`/study/explorer/${slug}`);
+      await screen.findByRole("heading", { name: "A question people ask" });
+      expect(document.body.textContent).toContain(s.differ!.text);
+      expect(s.differ!.text).toMatch(/does not choose between them/);
+      cleanup();
+    }
+  });
+});
+
+describe("the king thread", () => {
+  it("lights all thirteen stops, drawn broken where the king is waited for, with its own key", async () => {
+    const king = INDEX.threads.find(t => t.id === "king")!;
+    expect(king.status).toBe("finished");
+    expect(threadStops(king, INDEX.stops).map(x => x.slug)).toEqual(ROAD);
+    renderAt("/study/explorer");
+    await screen.findByRole("heading", { name: "Creation" });
+    fireEvent.click(screen.getByRole("button", { name: king.name }));
+    const lit = Array.from(document.querySelectorAll("[data-lit]"));
+    expect(lit.map(el => el.id.replace(/^stop-/, ""))).toEqual(ROAD);
+    for (const means of Object.values(king.key!))
+      expect(screen.getByText(means)).toBeInTheDocument();
+    for (const slug of ROAD) {
+      const row = document.getElementById(`stop-${slug}`)!;
+      expect(row.textContent).toContain(king.stops![slug].line);
+      const broken = king.stops![slug].state === "waited";
+      expect(row.getAttribute("data-lit")).toBe(king.stops![slug].state);
+      expect(Boolean(row.querySelector(".ex-road__lit--apart")), slug).toBe(
+        broken
+      );
+    }
+    // The dwelling thread still draws near solid and apart broken.
+    fireEvent.click(
+      screen.getByRole("button", { name: "God with his people" })
+    );
+    expect(
+      Boolean(
+        document
+          .getElementById("stop-exile")!
+          .querySelector(".ex-road__lit--apart")
+      )
+    ).toBe(true);
+    expect(
+      Boolean(
+        document
+          .getElementById("stop-kingdom")!
+          .querySelector(".ex-road__lit--apart")
+      )
+    ).toBe(false);
+  });
+
+  it("each stop names the king thread with its line and verse", async () => {
+    const king = INDEX.threads.find(t => t.id === "king")!;
+    renderAt("/study/explorer/land");
+    await screen.findByRole("heading", {
+      level: 1,
+      name: "The Land and the Judges",
+    });
+    expect(document.body.textContent).toContain(king.stops!.land.line);
+    expect(
+      screen
+        .getAllByRole("link", { name: "Follow it on the map" })
+        .map(a => a.getAttribute("href"))
+    ).toContain("/study/explorer?thread=king");
   });
 });
