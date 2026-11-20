@@ -10,7 +10,7 @@ ledger: docs/work/elite/apol-ledger.md, "Seventeenth run", key "ai"
 
 ## The short answer
 
-This page weighs an argument; for someone who is hurting now, the pages on suffering (/wisdom/suffering) and on losing a child (/wisdom/losing-a-child), and Find Help (/help), are the better place to start. In 1955 the philosopher J. L. Mackie argued that God's power, God's goodness and the existence of evil can't all be true together. The answer that met his argument, the free-will defence that Alvin Plantinga set out in 1974, needed only to show that a good God could have a reason to permit evil, and Mackie himself later granted that his charge of contradiction did not stand. That is a real result, and a narrow one. It explains no one's suffering, it doesn't by itself reach earthquakes or disease, and it rests on a view of freedom some Christians don't hold. What Christians confess is larger than the defence: evil is a real enemy, and God has met it in the cross and will end it.
+This page weighs an argument; for someone who is hurting now, the pages on suffering (/wisdom/suffering) and on losing a child (/wisdom/losing-a-child), and Find Help (/help), are the better place to start. In 1955 the philosopher J. L. Mackie argued that God's power, God's goodness and the existence of evil can't all be true together. The answer that met his argument, the free-will defence that Alvin Plantinga set out in 1974, needed only to show that a good God could have a reason to permit evil, and Mackie himself later granted that the problem of evil does not, after all, show the central doctrines of theism to be inconsistent, though he still asked whether the defence was a real solution. That is a real result, and a narrow one. It explains no one's suffering, it doesn't by itself reach earthquakes or disease, and it rests on a view of freedom some Christians don't hold. What Christians confess is larger than the defence: evil is a real enemy, and God has met it in the cross and will end it.
 
 ## The objection at its strongest
 
@@ -42,7 +42,7 @@ This is a defence, not a theodicy: it argues that a set of claims is consistent,
 
 1. A wholly good being permits an evil it could prevent only if it has a reason that justifies permitting it, such as a greater good that could not be had without the risk of that evil.
 2. A world of creatures significantly free to do right and wrong may be better than a world without such freedom, and it is possible that in any world God could create, some free creatures would freely do wrong.
-3. Not even an all-powerful being can cause creatures to freely do only what is right, since freedom of that kind is not something one person can cause in another.
+3. On the view of freedom the defence assumes, not even an all-powerful being can cause creatures to freely do only what is right, since freedom of that kind is not something one person can cause in another.
 
 So: it is possible that an all-powerful and wholly good God permits moral evil for the sake of free creatures, and the existence of God and the existence of evil are not shown to contradict each other.
 
