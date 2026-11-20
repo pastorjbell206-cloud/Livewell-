@@ -747,8 +747,19 @@ function wisdomBody(t) {
     sec("What Scripture says", verses),
     sec("The world it was written in", paras(t.cultural)),
     sec("How the church has understood it", paras(t.historical)),
-    sec("Living it now", paras(t.application)),
+    ...wisdomDeep(t.id, t.application),
   ]);
+}
+
+/** A topic written in full (client/public/wisdom/entry/<id>.json, deep): the whole Bible's wisdom, the often-misread verses, the prayer. */
+function wisdomDeep(id, application) {
+  const d = readJsonSafe(`client/public/wisdom/entry/${id}.json`)?.deep;
+  if (!d) return [sec("Living it now", paras(application))];
+  return [
+    sec("What the whole Bible says", (d.whole ?? []).map((p) => paras(p)).join("\n")),
+    sec("Often misread", (d.misread ?? []).map((m) => `<blockquote>${escapeHtml(m.text)} <strong>${escapeHtml(m.ref)}</strong></blockquote>\n${paras(m.says)}`).join("\n")),
+    sec("Pray", `<blockquote>${escapeHtml(d.prayer?.text ?? "")} <strong>${escapeHtml(d.prayer?.ref ?? "")}</strong></blockquote>`),
+  ];
 }
 
 /** A debated doctrine, step by step, as the page lays it out. */
