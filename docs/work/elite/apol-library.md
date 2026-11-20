@@ -552,3 +552,33 @@ The site takes no position on the age of the earth, evolution, a historical Adam
 ### What remains in the science area
 
 From the plan's sixteen: the mind and the soul, free will and neuroscience, near-death experiences, life on other planets, artificial intelligence (an answer exists), whether the great scientists were believers, and Adam and the genome as a page of its own. James's read of the five before the area goes live; each goes live by its `status` and the area's in `areas.json`.
+
+---
+
+## 11. Fourteenth run (2026-11-20): an editor's read of the science area, and the area on the historical Jesus and the resurrection
+
+### The editor's read of the five science pieces
+
+An independent read, first as a working scientist and historian of science hostile to apologetics, then as a young-earth, an old-earth and an evolutionary-creationist reader in turn. Seventeen changes, each in the record and the data (the record diff at 0), each with a before-and-after row in `apol-ledger.md` under "Fourteenth run". The flagged items were settled from primary texts reached through GitHub: Aquinas's two phrases are word for word in the English Dominican translation of the *Summa* (I q.2 a.3), so the piece now names that translation; the 1616 censure ("formally heretical", with "false and absurd in philosophy" and "expressly contradicts Holy Scripture") and the 1633 sentence ("vehemently suspected of heresy", corrected from "suspect") were read in Sturge's 1879 translation of von Gebler, which prints the Latin too. Plantinga, a living author quoted from reviews, is now paraphrased. Venema is narrowed to what reviews confirm (the genetics chapters of a book shared with McKnight; the population figure paraphrased; "Christian biologist" cut). Five sentences that leaned were made neutral: the area page stated the age of the earth in the site's own voice; the evolution page called young-earth teaching about the evidence "untrue", called some of its defenders "most candid", gave evolutionary creation a strongest point that ranked the others, and spoke of "denying the science". The fine-tuning page lost a hedge in its first line and two overstatements (Borde, Guth and Vilenkin's theorem, and "every alternative"). All five and the area stay pending.
+
+### Why this area next
+
+The plan's build order (section 4.5) puts area 4, contradictions, before area 5; both had no pieces. This run took area 5, as the lead's brief directed (its final report asks for the piece on the rival explanations and the handling of Josephus), and folded the contradictions in the resurrection accounts (plan item 4.6) into it. Area 4 remains the plan's next.
+
+### The area "jesus" (pending)
+
+Slug `jesus` (the plan's), title as in `areas.json`. Records in `docs/work/elite/apol-pilot/jesus/` (index.md and five pieces), data in `client/public/questions/jesus/`.
+
+| Piece | Address (pending) | Argued prose | Key |
+|---|---|---|---|
+| Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure? | /questions/jesus/did-jesus-exist | 2,356 | t |
+| Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend? | /questions/jesus/the-empty-tomb | 1,983 | u |
+| Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross? | /questions/jesus/the-appearances-and-the-alternatives | 2,156 | v |
+| The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted? | /questions/jesus/the-resurrection-accounts-disagree | 1,949 | w |
+| Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim? | /questions/jesus/can-historians-affirm-a-miracle | 1,967 | x |
+
+The ancient sources are quoted from public-domain translations read word for word in this run from GitHub clones: Josephus in Whiston (*Antiquities* 18.63-64 shown whole, with what is judged added and what may be original; 20.200; 4.219; *War* 4.317), Tacitus in Church and Brodribb (*Annals* 15.39-40, 15.44), Pliny in Melmoth (10.96), Suetonius in Thomson (*Claudius* 25, *Nero* 38), Origen and Celsus in Crombie (*Against Celsus* 1.47, 2.55). The Arabic version of Agapius is named, from search summaries, without any of its wording. Scripture is quoted from the site's BSB and checked by script. The pieces agree with the Honest Answer on the resurrection and with the Study Bible's notes on Matthew 27 and 28, Mark 15 and 16, Luke 23 and 24, John 19 to 21 and 1 Corinthians 15; where the trial and burial come up they follow the notes' wording (some Jerusalem authorities took part in handing Jesus over; the decision and the execution were Roman). No consensus is stated as a percentage or a head-count. No living author is quoted. The resurrection is stated as the church's confession, bodily and in history; the historical argument is offered with its limits.
+
+### What remains in the area
+
+From the plan's sixteen: how Jesus became God (Ehrman 2014), whether Jesus claimed to be God, the virgin birth, the failed-apocalyptic-prophet question (Schweitzer), whether the disciples died for their belief (narrowed), the Jesus Seminar and the quests, Jesus and Judaism, the Shroud and relics, and the pagan-myths question (the essay is pending on the shelf). James's read of the five before the area goes live; each goes live by its `status` and the area's in `areas.json`.
