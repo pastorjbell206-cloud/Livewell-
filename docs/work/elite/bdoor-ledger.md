@@ -9342,3 +9342,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Pressure on believers who would not honour the gods and the emperor, "probably" | 27-30 | Deep note `historical` | Repository wording |
 | Paul and Silas beaten and jailed in Philippi (Acts 16:22-24) | 27-30 | BSB | BSB text |
 | Psalm 27:1; Isaiah 41:10; Psalm 116:15 | 27-30 | BSB | BSB text |
+
+## The plain notes on Philippians 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. Creed wording from `client/public/creeds/documents/`.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘If’ clauses as ‘since’ | 1-4 | Standard grammars | Standard |
+| Humility not generally admired; honour pursued openly | 1-4 | Deep note `cultural` | Repository |
+| Euodia and Syntyche (4:2) | 1-4 | BSB | BSB text |
+| Proverbs 3:34; Leviticus 19:18; Micah 6:8 | 1-4 | BSB | BSB text |
+| 2:6-11 a hymn "many scholars", others Paul's own; two movements | 5-11 | Deep note `literary` | Repository |
+| Crucifixion for slaves, rebels, lowest criminals; citizens normally spared | 5-11 | Deep note `cultural` | Repository |
+| Emperors honoured with divine titles in the east, hailed as saviour | 5-11 | Deep note `historical`; chapter 3 deep note `cultural` | Repository. ‘Lord’ as an imperial title not claimed |
+| Isaiah 45:22-23 behind 2:10-11; Isaiah 52:13; 53:12; Adam's grasping (Genesis 3:5) "some readers" | 5-11 | Deep note `literary`, `hard` | Repository; BSB text |
+| Nicene Creed and Chalcedon quoted; emptying by addition; kenotic theories of the 1800s; many mean to keep the creeds; the reply that he kept but did not use his powers; Luke 2:52; Mark 13:32 | 5-11 | creeds/documents; chapter note `hard` | Read from the files; repository. No modern scholar named |
+| Katergazomai, to bring to full result | 12-18 | Standard lexicons | Standard |
+| Phōstēres, lights, also used of stars | 12-18 | Standard lexicons | Standard |
+| Grumbling and Deuteronomy 32:5; drink offering in Israel's and Greek and Roman worship (Numbers 28:7) | 12-18 | Deep note `cultural` | Repository |
+| Protestant, Catholic and Orthodox descriptions of grace and works; no side; pointers to the Ephesians 2:1-10 note and the Romans book page | 12-18 | ephesians/plain/2.json; Romans book page ledger | Repository wording |
+| Exodus 16:8; Deuteronomy 32:5; Psalm 2:11; Daniel 12:3; Numbers 28:7; Isaiah 26:12 | 12-18 | BSB | BSB text |
+| Timothy joined before the founding (Acts 16:1-3); Epaphroditus brought the gift and stayed | 19-30 | Deep note `historical` | Repository |
+| Paraboleuomai, a gambler's word | 19-30 | Standard lexicons | Standard |
+| Paul ‘less anxious’ (2:28) | 19-30 | BSB; wisdom/deep/anxiety.json | BSB text |
+| Proverbs 17:17; Isaiah 38:5; 50:6 | 19-30 | BSB | BSB text |
