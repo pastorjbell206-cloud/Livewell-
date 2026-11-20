@@ -237,9 +237,8 @@ export default function FilmExport({
           Watch it there, step through it, and read more:
         </p>
         <p className="fx-card__film">
-          {SITE}
-          <wbr />
-          {address.slice(SITE.length)}
+          <span>{SITE}</span>
+          <span>{address.slice(SITE.length)}</span>
         </p>
       </section>
     </main>

@@ -212,6 +212,9 @@
   font-size: calc(var(--fx-title) * 0.36);
   color: var(--ink-muted);
 }
+.fx-card__film span {
+  display: block;
+}
 .fx-card__film {
   max-width: 100%;
   margin: calc(var(--fx-title) * 0.12) 0 0;
