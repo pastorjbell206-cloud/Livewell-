@@ -169,8 +169,16 @@
       "planned": 16,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "has-science-made-god-unnecessary",
+          "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+          "blurb": "The track record of natural explanation, the god of the gaps, what science presupposes, and what kind of question it can settle.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "evil",
@@ -463,11 +471,42 @@
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
       "live": false
+    },
+    {
+      "claim": "Science and religion are incompatible in method: science can find out it is wrong, religion holds its claims by faith, scripture and authority",
+      "proponent": "Jerry A. Coyne",
+      "work": "Faith versus Fact",
+      "year": 2015,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Because a law like gravity exists, the universe can create itself from nothing, and no creator is needed",
+      "proponent": "Stephen Hawking and Leonard Mlodinow",
+      "work": "The Grand Design",
+      "year": 2010,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
+    },
+    {
+      "claim": "Darwin made it possible for an atheist to explain biological design, removing the strongest reason for belief",
+      "proponent": "Richard Dawkins",
+      "work": "The Blind Watchmaker",
+      "year": 1986,
+      "area": "science",
+      "slug": "has-science-made-god-unnecessary",
+      "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
+    "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
     "how-can-god-be-three-and-one": "How can God be three and one?"
   }
 }

@@ -1152,3 +1152,40 @@ Read twice: as a hostile, well-read skeptic, then as a careful conservative scho
 | n | Wilder: "early Christians had scruples that rule such a practice out" | "ancient writers, early Christians among them, had scruples about writing under another's name, which tells against it" | Twelfth run row: "had scruples about pseudonymity"; "rule out" overstated |
 
 Checked and left: every name, date, title and journal in the five against its twelfth-run row; each piece against the Study Bible introductions (Matthew, Mark, Luke, John, Acts, Colossians and the others it names: Ignatius around 110, Luke 75 to 90 majority, Dunn on Colossians "with Paul's approval", Davies and Allison on Matthew all agree) and the Honest Answers (no conflict found). No living author is quoted in the five. The objections were reread for their defenders' signature: Ehrman's case in j, k and n, Bultmann's in l and Bauer's and Ehrman's in m are stated in their own terms and kept.
+
+## The area "science" (pieces and keys)
+
+Pieces: `docs/work/elite/apol-pilot/science/` and `client/public/questions/science/`: the area page index.md; has-science-made-god-unnecessary.md, "o"; galileo-and-the-war.md, "p"; miracles-and-the-laws-of-nature.md, "q"; the-beginning-and-fine-tuning.md, "r"; evolution-and-genesis.md, "s". "Second run", "Fifth run", "Ninth run" and "God answer" mean the rows above (faith and science, /faq/can-science-and-faith-coexist, miracles, Genesis 1, "Does God actually exist?"). "Hume" means the Selby-Bigge text of *An Enquiry Concerning Human Understanding* (Project Gutenberg #9662), cloned again in this run from GITenberg on GitHub and searched with grep; every Hume quotation below was read there word for word. Scripture is quoted from the site's Berean Standard Bible (`client/public/bible/text/`), marked "BSB" in the text, and read in the file before it was quoted. The site takes no position on the age of the earth, evolution, a historical Adam's details or the flood's extent.
+
+### o. "Hasn't science made God unnecessary?" (has-science-made-god-unnecessary)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Darwin, *On the Origin of Species*, 1859 | Second run | Verified |
+| Dawkins, *The Blind Watchmaker* (1986): Darwin made it possible to be an intellectually fulfilled atheist; before Darwin atheism logically tenable but without an explanation of design | S: Skeptic magazine article, quote collections citing p. 6 | Verified (secondary), paraphrased; not quoted (a living author, primary text not seen) |
+| Coyne, *Faith versus Fact* (2015): not a strict logical contradiction; incompatibility of method; religion holds claims by faith, scripture and authority | Second run | Verified, paraphrased. "Evolutionary biologist": his own field, standard; his university not stated |
+| Hawking and Mlodinow, *The Grand Design* (2010): because there is a law like gravity the universe can create itself from nothing; no creator needed to set it going | S: Wikipedia "The Grand Design", Al Jazeera, Physics World, NBC reports | Verified (secondary), paraphrased (copies differ, "like" or "such as") |
+| Aquinas, *Summa Theologiae* I q.2 a.3, objection 2: natural things reduced to nature, voluntary things to human reason or will; "there is no need to suppose God's existence"; reply: "whatever is done by nature must needs be traced back to God, as to its first cause" | S: course copies of the English Dominican translation (Manchester, Godalming, UC), as quoted in the search results | Verified (secondary), the two phrases quoted "in a common English translation"; newadvent.org and ccel.org do not resolve from this machine |
+| Aquinas: God works through secondary causes, not in competition (I q.105 a.5) | Second run | Verified |
+| Bonhoeffer, May 1944: "We are to find God in what we know, not in what we don't know."; Coulson about a decade later (1955) | Second run | Verified, quoted |
+| Colossians 1:17; 1 Corinthians 15:17; Psalm 111:2 | Repo (BSB) | Quoted |
+| Einstein, "Physics and Reality" (1936), and Wigner (1960), quoted | Second run | Verified, quoted |
+| Harrison, *The Territories of Science and Religion* (University of Chicago Press, 2015), from his 2011 Gifford Lectures: "science" and "religion" as separate territories are modern categories; natural science as separate from religious and moral concerns dates from the nineteenth century | S: Gifford lecture abstract (Edinburgh), Reading Religion, World History Encyclopedia reviews | Verified (secondary), paraphrased |
+| Maxwell, Cavendish Laboratory in the 1870s, Psalm 111:2 in Latin on the doors by his wish | Second run | Verified |
+| Lemaître 1927, expanding universe; Catholic priest | Second run | Verified |
+| Laplace and Napoleon: no primary source | Second run ("Search: no primary source; the anecdote is likely embroidered") | Stated as unsourced, not used as fact |
+| Russell, 1948 BBC radio debate with Copleston, a Jesuit: "I should say that the universe is just there, and that's all." | God answer | Verified, quoted |
+| Plantinga, *Where the Conflict Really Lies* (2011), the two phrases | Second run | Verified, quoted |
+| Brooke, *Science and Religion: Some Historical Perspectives* (Cambridge, 1991) | S: Wikipedia, Cambridge record, Ian Ramsey Centre | Verified |
+
+Cut: Coyne's university (not checked); Coulson as a Methodist (not checked); Dawkins's sentence as a quotation (primary text not seen).
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Universe about 13.8 billion years, earth about 4.54 billion | Second run (/faq rows); S: Planck 2018, 13.787 ± 0.020 billion years | Verified, given as the mainstream estimate |
+| Draper 1874, White 1896; historians correcting the war story for about fifty years | Second run | Verified |
+| "God of the gaps" popularized by Coulson in the 1950s | Second run | Verified |
+| Secondary causes | Second run (Aquinas) | Verified |
+| Fine-tuning, multiverse | God answer (Rees, Lewis and Barnes) | Verified as descriptions |
