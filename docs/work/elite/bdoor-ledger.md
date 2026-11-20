@@ -7406,3 +7406,46 @@ No web search. Five passages, not 22.
 119:103 has an em-dash in the BSB and is quoted only before it. Cut: the Hebrew letter names as printed in Bibles (not checked against the BSB's own print); stanza-a-day reading as a custom (given as a suggestion only).
 
 Also in this commit: Psalm 116's hard part no longer says verse 15 "is often read at funerals" (a custom not checked); it now says the verse "can be a comfort to anyone who has lost someone who loved God."
+
+## The plain notes on Psalm 120 (2026-11-20)
+
+One web search. The Songs of Ascents' background is explained here once; 121 to 134 point back.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Three pilgrim feasts (Deuteronomy 16:16); "going up" to Jerusalem in the hills; Luke 2:42 | BSB; repository deep notes (120, 121) | BSB text |
+| The pilgrim reading likely, not certain | Book page ("Kinds of psalm") | Repository |
+| Mishnah (around AD 200): fifteen steps between the Court of Israel and the Court of the Women, matching the fifteen Songs of Ascents, where Levites stood with instruments at Tabernacles; it does not say they sang these psalms there | Mishnah Sukkah 5:4; Middot 2:5 | Search: sefaria.org sheets on Sukkah 5:3-6; chabad.org "The Fifteen Steps"; Booij, Biblica 91 (2010) 241-255 (bsw.org), for the caution. Courts not named on the page; Booij not named |
+| Ezra 7:9 uses ma'alah (H4609), the heading's word, for the return from Babylon | Repository word data | Script (Ezra 7:9 and Psalm 120:1) |
+| Meshech (Genesis 10:2) and Kedar (Genesis 25:13), far apart, read as pictures | Repository deep note (cultural); BSB | BSB text |
+| Broom tree coals burn hot; the tongue as arrow and fire | Repository deep note (cultural) | Site's own teaching |
+| James 3:6; Matthew 5:9; Romans 12:18 | BSB | BSB text |
+
+## The plain notes on Psalm 121 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Roads on foot, rough and dangerous (Luke 10:30) | 1-2 | Repository deep note (cultural); BSB | BSB text |
+| The hills as Jerusalem's hills or as the high places; both held | 1-2 | Repository deep note (cultural) | Stated as two readings |
+| "Maker of heaven and earth" also at 124:8 and 134:3 | 1-2 | BSB | BSB text |
+| shamar (H8104) six times (3, 4, 5, 7 twice, 8); BSB "Protector", "guard", "preserve", "watch over" | 3-8 | Repository word data; BSB | Script |
+| John 11:41; Hebrews 12:2; John 17:15; Matthew 10:29-31; Romans 8:35-39 | all | BSB | BSB text |
+| 121:7 not a promise of no harm; pointer to the Psalm 91 note; "all evil" as final ruin (some); nephesh as the whole self | 3-8 | Repository deep note (hard); Psalm 91 plain note | Stated as readings |
+
+Cut: sunstroke and 2 Kings 4; the moon as a cause of harm in ancient belief (not checked).
+
+## The plain notes on Psalm 122 (2026-11-20)
+
+No web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Of David": author or collection; many date it after the temple | 1-5 | Book page ("Who wrote them"); repository deep note (historical) | Stated as views |
+| "United together" as compact layout or united people | 1-5 | Repository deep note (cultural) | Stated as two readings |
+| Thrones of judgment; the king as final court | 1-5 | Repository deep note (cultural) | Site's own teaching |
+| shalom (H7965) at 6, 7, 8; Jerusalem's sound | 6-9 | Repository word data | Script |
+| Luke 2:41; Hebrews 12:22; Luke 19:42; Jeremiah 29:7; Matthew 5:9 | all | BSB | BSB text |
+| Applications held by Christians (the city; the heavenly Jerusalem; both) | 6-9 | Repository deep note (hard) | Stated as views, no side |
+| "These notes make no claim about any modern state, government, border or conflict, and nothing here is said against any people who live in that land." | 6-9 | Brief's rule; site's stance | Stated plainly |
