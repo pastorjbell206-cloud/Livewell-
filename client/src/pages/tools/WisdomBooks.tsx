@@ -190,7 +190,11 @@ export default function WisdomBooks() {
   const name = bookName(book);
   const total = bookChapters(book);
   const ref = refIn(book);
-  const [index, setIndex] = useState<WbIndex | null>(null);
+  // The index of the book shown; one loaded for another book is not shown.
+  const [loaded, setLoaded] = useState<{ book: WbBook; data: WbIndex } | null>(
+    null
+  );
+  const index = loaded?.book === book ? loaded.data : null;
   const [indexFailed, setIndexFailed] = useState(false);
   const [indexNonce, setIndexNonce] = useState(0);
   const [themeFile, setThemeFile] = useState<
@@ -214,9 +218,8 @@ export default function WisdomBooks() {
 
   useEffect(() => {
     let stale = false;
-    setIndex(null);
     fetchWbIndex(book)
-      .then(d => !stale && setIndex(d))
+      .then(d => !stale && setLoaded({ book, data: d }))
       .catch(() => !stale && setIndexFailed(true));
     return () => {
       stale = true;
