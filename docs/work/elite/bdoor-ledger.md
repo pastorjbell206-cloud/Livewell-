@@ -8908,3 +8908,41 @@ Cut: 1 Clement (deep note), not needed.
 ## 2 Corinthians complete (2026-11-20)
 
 All thirteen chapters in plain words. Twelve web searches for chapters 8 to 13, listed above.
+
+## Galatians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/galatians/intro.json`,
+field `teaching`. 7 searches, run on 2026-11-20. Views are paraphrased; scholars
+are named only where a ledger row already carries them. Scripture is the BSB in the
+repository, checked word for word by `scripts/validate-bible-notes.mjs` and a strict
+check that matches each quotation to the verse it cites.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Paul named (1:1; 5:2); almost no scholar doubts it; the seven undisputed letters; "all the brothers with me" (1:2) unnamed | BSB; repository `author` | Repository |
+| Scribes usually wrote letters; the sender's closing in his own hand; most think Paul took the pen at 6:11; reasons for large letters unknown (eyes, hands, emphasis) | Deep note on 6 `historical` | Repository. Stated as guesses |
+| Celtic tribes crossed into Asia Minor in the 200s BC and settled around Ancyra; Greeks called them Galatians; Rome made Galatia a province in 25 BC with Ancyra its chief city; the province reached south to Pisidian Antioch, Iconium, Lystra, Derbe | Reference works; repository `date`, `setting` | Search: en.wikipedia.org "Galatia (Roman province)", "History of Ankara"; livius.org "Ancyra (Ankara)" (metropolis of the new province, 25 BCE). "278 BC" not given; "the 200s BC" |
+| North Galatian view: the old tribal land; Acts 16:6; 18:23; common in the early church and among many scholars of the 1800s; mid-50s date | Repository `date` (names Lightfoot); scholarship | Search: newadvent.org Catholic Encyclopedia "Epistle to the Galatians"; gospelstudies.org.uk Bruce, "Galatian Problems 4"; jesuswalk.com introduction. Lightfoot and Ramsay not named |
+| South Galatian view: churches of Acts 13 and 14; Paul uses provincial names; Barnabas named in the letter and with Paul only on the first trip (Acts 15:39); many today hold it; allows an early or later date | Scholarship; BSB | Search: as above (the south view "has gained ground"; tied to the early date). Barnabas at 2:1, 9, 13 from BSB |
+| Galatians 2 and Acts: council, famine visit (Acts 11), or a private meeting; three views as on the Acts book page and the Acts 11 and 15 notes | acts/intro.json `letters`; acts/plain/11.json; acts/plain/15.json | Repository |
+| Jerusalem council about AD 48 to 50 | Reference works | Search: en.wikipedia.org "Council of Jerusalem" (c. 48 to 50); biblegateway.com Encyclopedia of the Bible "Council of Jerusalem" (48 or 49); christianitytoday.com "Dates to Debate" |
+| Galatians late 40s (south, before the council) or early to mid 50s (after, from Ephesus or Macedonia); Romans about AD 57 | Repository `date`; Romans book page ledger | Search as above (Bruce: the eve of the council; north view from Ephesus). Stated as two views, no side |
+| The teachers: Jewish believers in Jesus; circumcision (5:2-3; 6:12-13); holy days (4:10); may have charged Paul with pleasing people (1:10); their case from Genesis 17 | Repository `setting`; BSB | Repository. Stated in its holders' terms |
+| Antioch: Peter, Barnabas and Paul ate with Gentile believers; Acts 15:1; the Jerusalem leaders agreed (2:6-9) | BSB | BSB text |
+| Old Testament quotations: Genesis 15:6 (3:6); Genesis 12:3 (3:8); Deuteronomy 27:26 (3:10); Habakkuk 2:4 (3:11); Leviticus 18:5 (3:12); Deuteronomy 21:23 (3:13); Isaiah 54:1 (4:27); Genesis 21:10 (4:30); Leviticus 19:18 (5:14); Psalm 125:5 and 6:16 as an echo | BSB; deep notes | BSB text. Paul's following of the old Greek stated generally; each case in the chapter notes |
+| Romans 7:12; Romans 9:4 | BSB | BSB text |
+| Works of the law: traditional reading; Sanders 1977; Dunn 1982; Wright; no side | Romans book page ledger (bibleodyssey.com; Wikipedia "E. P. Sanders") | Ledger. Same wording as the Romans book page, shortened |
+| Pistis Christou; Hays 1983; no side | Romans book page ledger (crossway.org; bibleodyssey.com; thegospelcoalition.org) | Ledger |
+| Luther lectured on Galatians more than once (1516 to 1519; again in the early 1530s); a commentary from the later lectures published 1535; a table remark: his own epistle, to which he was betrothed, his Katie von Bora | Luther | Search: media.ctsfw.edu (lectures 1516-19 and later; remark dated 1531, name rendered Catherine); cph.org Pelikan preface PDF ("my epistle, to which I am betrothed. It is my Katie von Bora"); gutenberg.org 1549. Paraphrased; no date given for the remark |
+| Bunyan came on an old English copy of Luther's Galatians; Grace Abounding (1666): apart from the Bible he preferred it to all books he had seen, ‘most fit for a wounded conscience’; long feared he could not be saved | Bunyan | Search: wicketgate.co.uk "The Most Fit Book" (tattered copy, 1650s; English translation 1575); cambridge.org Renaissance Quarterly article titled with the phrase; donaldmacleod.org.uk "Luther on Galatians"; gutenberg.org 654. Earlier ledger (Mark 3) for 1666. Only the four-word phrase quoted |
+| Bunyan a tinker; later wrote The Pilgrim's Progress | Standard | Standard biographical facts; no year given |
+| 3:28 read in debates on slavery, race, men and women | Deep note on 3 `hard` | Repository, stated generally |
+| Contempt for Jews rejected; pointer to the Acts 2:22-28 note | acts/plain/2.json | Repository wording |
+| Christian nationalism and prosperity teaching named as errors without naming anyone | CLAUDE.md orthodoxy guardrails | No factual claim |
+| Map: Ancyra 39.92, 32.85 (Ankara city centre) | Gazetteers | Search: latlong.net, geodatos.net (39°55′11″N, 32°51′15″E). The ancient city lies under the modern centre |
+| Map: Pisidian Antioch, Iconium, Lystra, Derbe (site uncertain), Tarsus, Antioch in Syria, Damascus, Jerusalem | wmap-ledger; Acts map | Ledger. All inside the "mediterranean" frame |
+| Lystra stoning (Acts 14:19) and the marks of 6:17, "if" the letter went south | Deep note on 6 `historical` | Repository |
+
+Cut: Lightfoot and Ramsay by name; the year 278 BC; the date of Luther's table
+remark; the year Pilgrim's Progress appeared; Pessinus and Cybele (kept for the
+5:12 note if checked there).
