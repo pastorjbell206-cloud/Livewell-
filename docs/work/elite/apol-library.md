@@ -84,7 +84,7 @@ Counts: 10 areas, 152 questions and claims. Pieces already argued on the site ar
 4. "Orthodox corruption": scribes made Jesus more divine. (pilot) Ehrman, *The Orthodox Corruption of Scripture* (1993; 2nd ed. 2011) S.
 5. The Johannine Comma and the King James Bible (in pilot 3; deserves a short page of its own).
 6. Luke 22:43-44 (in pilot 3 and 4).
-7. Mark 1:41: an angry Jesus. Ehrman, "A Leper in the Hands of an Angry Jesus" (essay; title and year to verify before naming) and *Bible Review* 2005 S.
+7. Mark 1:41: an angry Jesus. Ehrman, "Did Jesus Get Angry or Agonize?", *Bible Review* (Winter 2005) S.
 8. Hebrews 2:9: "apart from God." (in pilot 4)
 9. "Was the original even a single text?" D. C. Parker, *The Living Text of the Gospels* (1997) S.
 10. "The earliest manuscripts are late and their dates are guesses." Brent Nongbri, *God's Library* (2018) S.
