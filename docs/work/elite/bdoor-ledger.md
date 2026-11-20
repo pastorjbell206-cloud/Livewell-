@@ -12393,3 +12393,25 @@ Cut before publishing: the identification of particular Egyptian princes with th
 | John 19:36 drawing on 12:46, Numbers 9:12 and Psalm 34:20; Revelation 5:9 and the foreigners of verse 48 | 43-51 | exodus/12.json `christ`; BSB | Repository |
 
 Cut before publishing: Josephus's count of lambs; Petrie by name (only Mendenhall and Humphreys are dated in the note); the Elephantine papyrus (on the book page); Rashi's question about where the Torah begins; the reading of Genesis 12:3 with ‘blessed’ (quoted only in part).
+
+## The plain notes on Exodus 13 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The claim on the firstborn follows the death of Egypt's; alive by mercy; child sacrifice refused | 1-2 | exodus/13.json `story`, `cultural`, `hard` | Repository |
+| Readings of the deaths in Egypt (just judgment; an ancient account in its idiom; both); seriousness, not triumph | 1-2 | exodus/13.json `hard` | Repository; no side |
+| Numbers 3:13; Luke 2:22-23 | 1-2 | BSB; exodus/13.json `christ` | BSB text |
+| Abib, ripening grain, later Nisan; the refrain as a short creed; ‘for me’ | 3-10 | exodus/13.json `cultural`, `literary` | Repository |
+| Tefillin; Dead Sea Scrolls examples; Matthew 23:5 | 3-10 | exodus/13.json `cultural` | Repository |
+| Deuteronomy 6:8; Matthew 23:5 | 3-10 | BSB | BSB text |
+| Redemption of sons; five shekels (Numbers 18:16); Levites in place of the firstborn; the donkey | 11-16 | exodus/13.json `cultural` | Repository |
+| Numbers 18:16; 1 Peter 1:18-19; Colossians 1:15 | 11-16 | BSB; exodus/13.json `christ` | BSB text |
+| The coast road guarded by Egyptian forts; the Philistines settled in the 1100s BC; two readings of the name | 17-19 | exodus/13.json `historical` | Repository; no side |
+| Yam suph; Joseph's bones and Genesis 50:24-25 | 17-19 | exodus/13.json `historical`, `story` | Repository |
+| Genesis 50:25; Hebrews 11:22; Joshua 24:32 | 17-19 | BSB | BSB text |
+| Succoth in the Wadi Tumilat; Etham unknown; the pillar | 20-22 | exodus/13.json `historical` | Repository |
+| Nehemiah 9:12; Psalm 78:14; Numbers 9:16; 1 Corinthians 10:1 | 20-22 | BSB | BSB text |
+
+Cut before publishing: ‘many Jews still wear them’ of tefillin (said only in the note's present tense, so cut); ‘four hundred years later’ of Joseph's bones (made ‘centuries later’).
