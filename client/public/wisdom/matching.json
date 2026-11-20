@@ -2456,12 +2456,22 @@
     "quit my job",
     "new career",
     "change careers",
-    "something meaningful"
+    "something meaningful",
+    "hate my job and want out",
+    "thinking of switching careers",
+    "go back to school for something new",
+    "start my own business",
+    "leave a good paying job",
+    "feel called to different work",
+    "stuck in the wrong career",
+    "too old to start over",
+    "offered a job in another city"
    ],
    "not": [],
    "related": [
     "calling-and-purpose",
-    "big-decisions"
+    "big-decisions",
+    "job-loss"
    ]
   },
   "the-news-and-fear": {
