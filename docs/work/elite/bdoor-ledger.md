@@ -11701,3 +11701,29 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Psalm 2:2, 6; Daniel 7:14; Jeremiah 3:16 | 15-19 | BSB | BSB text |
 
 Cut before publishing: seven thousand as an echo of Elijah's seven thousand (not in the repository's notes on this chapter); the cloud as Sinai's cloud (likewise); 2 Maccabees on the hidden ark (left out as not needed).
+
+## The plain notes on Revelation 12 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The deep story behind the churches' suffering; chapters 12 to 14 as the centre; sēmeion as a symbol | 1-6 | revelation/12.json `story`, `literary`, `words` (G4592) | Repository |
+| The woman's crown and Joseph's dream; Zion in labour; the dragon red like the second horse, its crowns, Daniel's horns; the child of Psalm 2:9; birth to ascension; Herod (Matthew 2:16) | 1-6 | revelation/12.json `cultural`, `christ`; revelation/verses/12.json (1, 2, 3-4, 5) | Repository |
+| The wilderness prepared in advance; manna and Elijah fed | 1-6 | revelation/verses/12.json (6) | Repository |
+| Leto, Python and Apollo, Ephesus' claim; Isis and Horus left out; emperors and Apollo | 1-6 | revelation/12.json `historical` | Repository |
+| The woman: Hippolytus (church), Oecumenius (Mary), the Assumption lectionary, Protestant and modern (Israel, then the church); layered; no side | 1-6 | revelation/verses/12.json (1 `history`); revelation/12.json `hard` | Repository, no side |
+| The flight to Pella (Eusebius, Church History 3.5.3) as one reading; the third of the stars and Milton (1667); Daniel 8:10 | 1-6 | revelation/verses/12.json (6, 3-4 `history`) | Repository, no side |
+| Genesis 37:9; Micah 4:10; Isaiah 66:7; Psalm 74:13-14; Isaiah 27:1; Ezekiel 29:3; Daniel 7:7; Daniel 8:10; Psalm 2:9; Genesis 3:15 | 1-6 | BSB | BSB text |
+| Michael (‘Who is like God?’) in Daniel; Michael not Christ fights; the titles; Genesis never calls the serpent Satan; ‘hurled’ three times | 7-9 | revelation/verses/12.json (7-8, 9) | Repository |
+| Diabolos as slanderous; Satan as adversary or accuser | 7-9 | lex G1228; revelation/12.json `cultural` | Repository |
+| The timing of Satan's fall: primordial (Isaiah 14; Ezekiel 28 in their setting), futurist, the cross and ascension (Luke 10:18; John 12:31); no side | 7-9 | revelation/12.json `hard` | Repository, no side |
+| Daniel 12:1; Zechariah 3:1; Genesis 3:15; Luke 10:18; John 12:31 | 7-9 | BSB | BSB text |
+| The hymn as the key; katēgōr; no court can condemn (Romans 8:33-34); nikaō redefined; the fury of a defeated enemy | 10-12 | revelation/12.json `literary`, `words` (G6051, G3528), `doctrines`; revelation/verses/12.json (10, 11, 12) | Repository |
+| 12:11 honoured without commending death; Mark 8:35 in paraphrase | 10-12 | revelation/verses/12.json (11 `refs`); instruction for this run | Repository |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 10-12 | revelation/intro.json `teaching` (suffering) | Word for word |
+| Zechariah 3:1, 4; Psalm 2:2; Psalm 96:11; Romans 8:33 | 10-12 | BSB | BSB text |
+| Pursued or persecuted; the eagle's wings (Exodus 19:4); protected in, not taken out; the earth helps (Numbers 16:32; Exodus 15:12); two marks; the seed of Genesis 3:15; the dragon on the shore | 13-17 | revelation/verses/12.json (13-14, 15-16, 17) | Repository |
+| Exodus 19:4; Numbers 16:32; Exodus 15:12; Exodus 16:35; 1 Kings 17:4 | 13-17 | BSB | BSB text |
+
+Cut before publishing: Isis and Horus (kept to the one myth the note ties to Asia); the Qumran hymn on labour; Ugarit's seven-headed serpent. No historicist account of the woman is offered, since the repository's notes give none.
