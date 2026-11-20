@@ -37,6 +37,12 @@ const NOT_ADVICE: Record<string, string> = {
   medicine: "This page is not medical advice. For your health and your treatment, or if worry or sadness is taking your sleep, your appetite or your days, talk to a doctor.",
 };
 
+/** The psalm a prayer is drawn from ("Psalm 130:5-7" is 130), for Pray the Psalms and the Study Bible. */
+function psalmNumber(ref: string): number | null {
+  const m = /^Psalms?\s+(\d+)/.exec(ref);
+  return m ? Number(m[1]) : null;
+}
+
 function Jump({ entry }: { entry: Entry }) {
   const d = entry.deep;
   if (!d) return null;
@@ -344,6 +350,20 @@ export default function WisdomTopic() {
                   <p>{d.prayer.text}</p>
                   <cite>{d.prayer.ref}</cite>
                 </blockquote>
+                {psalmNumber(d.prayer.ref) && (
+                  <ul className="wz-context__links no-print">
+                    <li>
+                      <Link href={`/tools/pray-the-psalms?psalm=${psalmNumber(d.prayer.ref)}`} className="wz-link">
+                        Pray Psalm {psalmNumber(d.prayer.ref)} slowly
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href={`/study/bible/psalms/${psalmNumber(d.prayer.ref)}`} className="wz-link">
+                        Read Psalm {psalmNumber(d.prayer.ref)} in the Study Bible
+                      </Link>
+                    </li>
+                  </ul>
+                )}
               </section>
 
               {d.careLines.length > 0 && (

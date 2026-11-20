@@ -10,8 +10,11 @@
  * hard questions the teaching panel shows), all copied word for word.
  *
  * Books: Proverbs (the panel: how to read a proverb, and the hard question on
- * 26:4-5) and Ecclesiastes (the panel: how to read the book, and the hard
- * questions on chapters 1 and 12, named in its source's teaching.hard).
+ * 26:4-5), Ecclesiastes (the panel: how to read the book, and the hard
+ * questions on chapters 1 and 12, named in its source's teaching.hard) and
+ * James (the panel: how to read the letter, and the hard questions on James 2
+ * and on Romans 4, faith and deeds with Paul; an entry of teaching.hard may
+ * name another book's chapter as { book, c }).
  *
  * Writes, under client/public/wisdom-books/<book>/:
  *   index.json          the themes (with counts and the notes they draw on),
@@ -36,7 +39,7 @@ const CHECK = process.argv.includes("--check");
 const readJson = (f) => JSON.parse(fs.readFileSync(f, "utf8"));
 
 /** The books the explorer reads, in the order it offers them. */
-export const BOOKS = ["proverbs", "ecclesiastes"];
+export const BOOKS = ["proverbs", "ecclesiastes", "james"];
 export const srcOf = (book) => path.join(ROOT, `client/public/wisdom-books/${book}.json`);
 export const outOf = (book) => path.join(ROOT, `client/public/wisdom-books/${book}`);
 export const notesOf = (book) => path.join(ROOT, `client/public/bible/notes/${book}`);
@@ -50,6 +53,21 @@ export function rangeOf(r) {
   const a = Number(m[1]);
   const b = m[2] ? Number(m[2]) : a;
   return Array.from({ length: b - a + 1 }, (_, i) => a + i);
+}
+
+/** A book's name as the Study Bible gives it ("romans" is Romans). */
+const bookTitle = (slug) => readJson(path.join(ROOT, "client/public/bible/books.json")).find((b) => b.slug === slug)?.name ?? slug;
+
+/**
+ * One hard question on the teaching panel: a chapter of the book itself (a
+ * number), or of another book ({ book, c }), whose name is then shown with it.
+ */
+export function hardOf(book, entry) {
+  const other = typeof entry === "object" && entry !== null;
+  const slug = other ? entry.book : book;
+  const c = other ? entry.c : entry;
+  const h = readJson(path.join(notesOf(slug), `${c}.json`)).hard;
+  return { c, h, from: other ? bookTitle(slug) : null };
 }
 
 export function build(book = "proverbs") {
@@ -112,9 +130,9 @@ export function build(book = "proverbs") {
   if (src.teaching?.hard) {
     teaching = {
       reading: intro.reading.split(/\n\n+/),
-      hard: src.teaching.hard.map((c) => {
-        const h = readJson(path.join(NOTES, `${c}.json`)).hard;
-        return { c, q: h.q, a: h.a.split(/\n\n+/) };
+      hard: src.teaching.hard.map((entry) => {
+        const { c, h, from } = hardOf(book, entry);
+        return { c, ...(from ? { book: from } : {}), q: h.q, a: h.a.split(/\n\n+/) };
       }),
     };
   } else {

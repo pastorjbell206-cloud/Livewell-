@@ -405,8 +405,44 @@
       "planned": 14,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "the-crusades",
+          "question": "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?",
+          "blurb": "Hume's verdict, the preaching at Clermont and the promise of forgiveness, the massacres of 1096 and 1099 and the sack of Constantinople, the conquests that came before, and the cross made a soldier's badge.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-inquisition",
+          "question": "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?",
+          "blurb": "Paine's charge, Augustine's turn and Aquinas's argument for death, the Spanish Inquisition and the *conversos*, the Protestant executions in Zurich and Geneva, the early church's refusal of force, and the case for liberty made from inside the faith.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "slavery-and-conquest",
+          "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
+          "blurb": "Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Baptists' founding in 1845 and their apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "abuse-and-cover-up",
+          "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
+          "blurb": "The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe. Find Help (/help) is at the top of the page and at its end.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "does-religion-poison-everything",
+          "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+          "blurb": "The New Atheists' charge and Paine's, the French wars of religion and the Thirty Years' War, what those wars were also about, Paine's own witness to the revolutionary tribunals, and idolatry under any banner.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     },
     {
       "slug": "religions",
@@ -1299,6 +1335,66 @@
       "slug": "hell-and-the-justice-of-god",
       "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
       "live": false
+    },
+    {
+      "claim": "The Crusades were the most signal and durable monument of human folly, made possible by a church that offered holy war as an atonement for every violation of justice",
+      "proponent": "David Hume",
+      "work": "The History of England",
+      "year": 1762,
+      "area": "morality",
+      "slug": "the-crusades",
+      "question": "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?",
+      "live": false
+    },
+    {
+      "claim": "As soon as Christians were powerful enough to use the sword they did, with the stake and faggot too, and the persecutions came from belief in revelation itself",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795,
+      "area": "morality",
+      "slug": "the-inquisition",
+      "question": "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?",
+      "live": false
+    },
+    {
+      "claim": "The Bible endorses slavery, and the slaveholders who quoted it were reading it, not misreading it",
+      "proponent": "Hector Avalos",
+      "work": "Slavery, Abolitionism, and the Ethics of Biblical Scholarship",
+      "year": 2011,
+      "area": "morality",
+      "slug": "slavery-and-conquest",
+      "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
+      "live": false
+    },
+    {
+      "claim": "Bishops turned their backs on victims and protected their priests",
+      "proponent": "National Review Board for the Protection of Children and Young People",
+      "work": "A Report on the Crisis in the Catholic Church in the United States",
+      "year": 2004,
+      "area": "morality",
+      "slug": "abuse-and-cover-up",
+      "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
+      "live": false
+    },
+    {
+      "claim": "Religion poisons everything, and its crimes, unlike those of atheist regimes, are committed in the name of God",
+      "proponent": "Christopher Hitchens",
+      "work": "God Is Not Great: How Religion Poisons Everything",
+      "year": 2007,
+      "area": "morality",
+      "slug": "does-religion-poison-everything",
+      "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+      "live": false
+    },
+    {
+      "claim": "The persecutions and religious wars that laid Europe in blood and ashes came from belief in revelation itself",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795,
+      "area": "morality",
+      "slug": "does-religion-poison-everything",
+      "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+      "live": false
     }
   ],
   "answers": {
@@ -1313,6 +1409,8 @@
     "is-faith-irrational": "Is believing anything on faith irrational?",
     "are-miracles-believable": "Are miracles believable?",
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
+    "why-didnt-the-bible-just-ban-slavery": "Why didn't the Bible just ban slavery?",
+    "what-did-the-new-atheists-get-right": "What did the New Atheists get right?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
     "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"

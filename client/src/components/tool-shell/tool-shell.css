@@ -31,7 +31,8 @@
 .ts-q__label{font-family:var(--U);font-size:16px;font-weight:500;line-height:1.35;color:var(--ink)}
 .ts-q__hint{font-family:var(--U);font-size:14px;line-height:1.45;color:var(--ink-muted)}
 .ts-q__keys{font-family:var(--U);font-size:12.5px;color:var(--ink-muted);margin:10px 0 0}
-@media (pointer:coarse){.ts-q__keys{display:none}}
+.ts-q__keys{display:none}
+@media (pointer:fine){.ts-q__keys{display:block}}
 
 /* ProgressLine. */
 .ts-progress{margin:0 0 var(--s-3)}
@@ -89,6 +90,8 @@
 .ts-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:var(--s-4) 0 0;padding-top:var(--s-3);border-top:1px solid var(--border)}
 .ts-nav .btn:disabled{background:var(--bone-warm);color:var(--ink-muted);border-color:var(--border);cursor:not-allowed}
 .ts-part__title:focus,.ts-r__title:focus,#safety-check-h:focus{outline:none;box-shadow:none}
+/* A heading the page moves focus to (a part, a result, the safety question, a psalm, the slow-reading title) is a landing place, not a control: instead of the site's boxed ring (brand-override.css, !important), a keyboard reader sees it marked the quiet way the site marks focused links, a mustard underline. Controls keep the full ring. */
+.ts-part__title:focus-visible,.ts-r__title:focus-visible,#safety-check-h:focus-visible,#pp-view-h:focus-visible,.pp-slow__title:focus-visible{outline:none!important;box-shadow:none!important;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:2px;text-underline-offset:.22em}
 #safety-check-h{scroll-margin-top:84px}
 .ts-r__prose .ts-r__score,.ts-r__score{font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink-muted);margin:0 0 10px}
 .ts-r__prose .ts-r__lead,.ts-r__lead{font-family:var(--F);font-size:clamp(1.25rem,1.1rem + .5vw,1.5rem);font-weight:500;line-height:1.4;color:var(--ink);margin:0 0 1em;max-width:var(--w-read)}

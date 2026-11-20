@@ -1,0 +1,106 @@
+{
+  "area": "morality",
+  "slug": "does-religion-poison-everything",
+  "status": "pending",
+  "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Nineteenth run (2026-11-20): an independent editor's read of the god area, and the area \"Morality, sexuality and the church's record\"",
+    "key": "aw"
+  },
+  "record": "docs/work/elite/apol-pilot/morality/does-religion-poison-everything.md",
+  "objectionSource": {
+    "author": "Christopher Hitchens",
+    "title": "God Is Not Great: How Religion Poisons Everything",
+    "year": 2007
+  },
+  "shortAnswer": "Religion has sanctified a great deal of cruelty, and Christianity has its full share: crusades, the stake, wars between Catholics and Protestants that emptied whole regions of Europe. Critics from Thomas Paine to Christopher Hitchens are right that belief in God can make violence feel holy, and Christians should be the first to say it. But the claim that religion is the main cause of war, or that removing it would remove the poison, doesn't survive the history. The wars called religious were also wars of crowns and states, and the same cruelty has been done for nation, revolution and reason. That correction lessens nothing Christians did. What it shows is that the poison is older than any creed, which is what Christianity itself teaches about the human heart, and that the Christian's own Scriptures condemn the violence done in Christ's name.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "Christopher Hitchens put the charge in the subtitle of *God Is Not Great: How Religion Poisons Everything* (2007). As the Internet Encyclopedia of Philosophy's article on the New Atheists sets out their case, Hitchens, Richard Dawkins and Sam Harris condemn religion on the ground that its beliefs and practices have had largely harmful consequences, and they list among them the Inquisition, wars fought in religion's name and witch hunts. They anticipate the reply that atheist regimes did worse, and they answer that the crimes of such regimes were not committed in the name of atheism, while the crimes of religion were committed in the name of God.\n\nThomas Paine had made the same charge in *The Age of Reason* (1795), tracing \"the bloody persecutions, and tortures unto death and religious wars, that since that time have laid Europe in blood and ashes\" to belief in revelation itself. At full strength the objection says that religion is uniquely dangerous because it adds something no other cause can add: the certainty that God commands the act, the promise of reward beyond death, and immunity from argument, since the believer's reasons come from revelation rather than evidence. A soldier fighting for land can be bargained with. A soldier fighting for God can't. And because Christianity claims to be the one true faith, it has every reason to fight those who deny it."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "The history the objection points to is real, and the church should not shrink it. In France Catholics and Protestants fought eight civil wars between 1562 and 1598, and in the St. Bartholomew's Day Massacre of August 1572 Catholics killed thousands of Huguenots in Paris, with massacres following in other towns; the number killed across France is not known. In 1685 Louis XIV abolished the legal recognition of Protestantism in France and forced the Huguenots to convert. The Thirty Years' War, which began in 1618 and ended with the Peace of Westphalia in 1648, devastated central Europe; estimates vary by region, but the population of the German states is generally thought to have fallen by a quarter to two fifths, and by more in some places, from war, famine and disease.\n\nIt is also true that religion can make violence worse in exactly the way the objection says. Jesus warned his disciples that \"anyone who kills you will think he is offering a service to God\" (John 16:2, BSB), and the Study Bible's note on that verse applies it to Christians, who \"have killed Jews and thought they served God\" and \"have killed other Christians and thought they served God.\" When a war is made holy, its enemies become God's enemies, and the limits that bind ordinary combatants fall away. The Crusades and the Inquisition, which this area treats on pages of their own, show it.\n\nChristians have also sometimes answered this objection badly, by changing the subject to the crimes of others. That answer is beside the point. A Christian who killed in Christ's name is judged by Christ, and no one else's crimes excuse him."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "The claim that religion is the main cause of war has to be weighed on the record, and the record is mixed. The wars of religion were also wars of states. The Peace of Augsburg had settled religion in the German lands by the rights of their rulers to choose, and quarrels over those rights fed the Thirty Years' War; in its later years Catholic France fought on the same side as Lutheran Sweden against the armies of the Catholic emperor. The St. Bartholomew's killings had political causes as well as religious ones, since some Huguenots were nobles who were building centers of power of their own. None of this makes the religious hatred less real. It shows that \"religion\" in these wars was bound up with crowns, land and power in ways no one can neatly separate.\n\nPaine himself saw what happened when the church's power was removed. He began *The Age of Reason* in France late in 1793, and in its preface he wrote that \"The intolerant spirit of church persecution had transferred itself into politics; the tribunals, stiled Revolutionary, supplied the place of an Inquisition.\" The revolution that had cast down the church set up tribunals of its own, and Paine saw his friends destroyed by them. This is stated here only to correct the claim that religion is the root of persecution, and it lessens nothing that the church did. But it is a witness from the objection's own side that the will to destroy enemies in the name of truth survives the loss of faith.\n\nThe earliest Christians, who had no armies, said that faith can't be imposed by force. Lactantius wrote in his *Divine Institutes* that \"religion is to be defended, not by putting to death, but by dying\" (book 5, chapter 20, in the Ante-Nicene Fathers). The killing in Christ's name came later, when the church had the ruler's sword, and that is the pattern the evidence keeps showing: certainty joined to power, under any banner, is what kills.\n\nThe Christian Scriptures say where that will lives. \"If anyone says, 'I love God,' but hates his brother, he is a liar\" (1 John 4:20, BSB). The prophets turned God's judgment first on his own people at prayer: \"Your hands are covered with blood\" (Isaiah 1:15, BSB). The faith does not teach that believers are cured of violence by believing. It teaches that the human heart is the source, and that God judges his own house first."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is an argument about what the history of religious violence shows, granting that Christians have done much of it.",
+      "steps": [
+        "Religious conviction, Christian conviction among it, has been used to sanctify war and persecution, and it can remove the limits that restrain violence.",
+        "The same violence has been done in the name of nation, dynasty, revolution and reason, and the wars called religious were also wars of states and crowns, so religion is not a single separable cause whose removal would remove the violence.",
+        "Christianity's founder forbids the violence done in his name, and its account of evil places the source in the human heart, which can make any cause, sacred or secular, into an idol that demands blood."
+      ],
+      "conclusion": "So: the history convicts the Christians who killed in Christ's name and warns that any absolute cause can sanctify cruelty; it does not show that religion poisons everything, and the Christian account of the human heart explains the record at least as well as the claim that religion itself is the poison.",
+      "after": "The weight sits on the second step. If religion, unlike every other cause, uniquely produces violence, so that the secular cases are rare or different in kind, the second step fails and the objection stands.",
+      "weightStep": 2
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply is that the secular cases are religion by another name. When revolutionary tribunals and the regimes of the twentieth century killed for their doctrines, the New Atheists reply, as the same encyclopedia article reports, that such regimes were evil because they were influenced by religion or were like a religion. So the comparison doesn't clear religion; it only shows how far its pattern reaches.\n\nThere is something right in this, and Christians should take it. A cause that claims absolute loyalty, promises a perfected future and treats its enemies as enemies of the good does behave like a religion, and Christian tradition has a name for it: idolatry. But the reply comes at a price. If every movement that kills for its beliefs counts as a religion, then \"religion poisons everything\" is true by definition and tells us nothing about belief in God. The question becomes whether human beings, believers or not, are prone to make some cause absolute and kill for it, and the record says they are. That is close to what the Christian doctrine of sin says, and it is a reason to distrust every claim to have found the cure in the removal of one kind of belief.\n\nThe reply's strongest point should still be kept. A claim to revelation can be used to put a belief beyond argument, and Christians have used it so. The answer is not to deny that, but to hold that the God Christians confess forbids his worshippers to enforce him, so that the believer who kills for him disobeys the very revelation he claims.\n\nThe same instrument has to cut both ways. When the cross is made the banner of a nation, a crown or a party, so that its enemies are counted God's enemies and the faith is enforced by the ruler's sword, that is the error this site names Christian nationalism, and the Peace of Augsburg's rule that a land's faith follows its ruler was an early form of it. When reason or revolution is made a god that demands its own heretics, that is the same idolatry under another name. Jesus refused both. He told Peter to put away his sword (Matthew 26:52) and said, \"My kingdom is not of this world\" (John 18:36, BSB)."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "How to weigh the harm and the good religion has done across history is not settled and may not be answerable, since no one can run history again without it. How far the wars of religion were driven by belief and how far by power is argued among historians, and the answer differs from war to war. Whether religious belief makes people more or less violent on average, now, is a question for careful study, and the claim that it makes them worse is one the New Atheists make; one of them, Daniel Dennett, was more hesitant to draw it until further study, as the same article notes. And why a faith whose founder refused the sword was so often carried by it is a question the church has to keep asking of itself."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ on whether force may ever be used: the peace churches say no, and the just-war traditions hold that a ruler may use it under strict limits, never to compel faith. They differ on how church and state should be related, from established churches to the strict separation Baptists and others have long held. What all can confess is that no one may be killed or compelled for his faith, that the church's warfare is not with \"the weapons of the world\" (2 Corinthians 10:4, BSB), and that \"judgment\" begins \"with the family of God\" (1 Peter 4:17, BSB)."
+    }
+  ],
+  "otherSide": [
+    "Christopher Hitchens, *God Is Not Great: How Religion Poisons Everything* (2007).",
+    "Thomas Paine, *The Age of Reason*, part 2 (1795)."
+  ],
+  "further": [
+    "Terry Eagleton, *Reason, Faith, and Revolution: Reflections on the God Debate* (2009), a reply to Hitchens and Dawkins by a Marxist literary critic.",
+    "Roger Williams, *The Bloudy Tenent of Persecution* (1644)."
+  ],
+  "onSite": [
+    "The argued answer \"What did the New Atheists get right?\" (/answers/what-did-the-new-atheists-get-right).",
+    "The Study Bible's notes on John 16 (/study/bible/john/16) and Matthew 26 (/study/bible/matthew/26).",
+    "\"What Christian Nationalism Is and Is Not\" (/writing/what-christian-nationalism-is-and-is-not).",
+    "Church history on this site (/theology/history)."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "john",
+        "chapter": 16
+      },
+      {
+        "book": "matthew",
+        "chapter": 26
+      }
+    ],
+    "answers": [
+      "what-did-the-new-atheists-get-right"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Religion poisons everything, and its crimes, unlike those of atheist regimes, are committed in the name of God",
+      "proponent": "Christopher Hitchens",
+      "work": "God Is Not Great: How Religion Poisons Everything",
+      "year": 2007
+    },
+    {
+      "claim": "The persecutions and religious wars that laid Europe in blood and ashes came from belief in revelation itself",
+      "proponent": "Thomas Paine",
+      "work": "The Age of Reason",
+      "year": 1795
+    }
+  ]
+}
