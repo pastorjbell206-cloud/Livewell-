@@ -10459,3 +10459,25 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Sumpathēsai (suffer with); weaknesses frailties not sins; proserchomai of priests approaching; parrēsia; throne of grace may echo the mercy seat | 14-16 | verses/4.json (15, 16) | Repository |
 | Chalcedon ‘in all things like unto us, without sin’; a complete human nature | 14-16 | creeds/documents/chalcedonian-definition.json; verses/4.json (15) | Repository text |
 | Leviticus 16:2; Exodus 25:22; Psalm 103:13-14; Isaiah 53:3 | 14-16 | BSB | BSB text |
+
+## The plain notes on Hebrews 5 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Three marks of a high priest; answered in reverse order | 1-4; 5-6 | Chapter deep note `literary` | Repository |
+| Day of Atonement: for his own sins first (Leviticus 16:6); Leviticus 9:7; Exodus 28:1; Korah (Numbers 16:40) | 1-4 | Chapter deep note `cultural`, `historical`; BSB | Repository; BSB text |
+| Kings from Judah, priests from Levi | 5-6 | psalms/plain/110.json (4) | Repository |
+| Psalm 110:4 in its setting; Genesis 14:18-20; Salem usually Jerusalem; most take Melchizedek as a real king | 5-6 | psalms/plain/110.json (4); genesis/plain/14.json (17-20) | Repository |
+| Melchizedek named in no other New Testament book; only Hebrews quotes Psalm 110:4 | 5-6 | Scan of the BSB text in the repository for ‘Melchizedek’ (Genesis 2, Psalms 1, Hebrews 11 verses) | Repository text |
+| Gethsemane most likely; perhaps the whole passion; prosenegkas a sacrificial verb; eulabeia reverence | 7-10 | Chapter deep note `historical`; verses/5.json (7) | Repository |
+| Mathein and pathein a Greek proverbial pair | 7-10 | verses/5.json (8) (Aeschylus, Herodotus; not named) | Repository |
+| Learning = experience of obeying at full cost, not from disobedience; teleioō used for ordaining priests in the Greek OT | 7-10 | verses/5.json (8, 9-10); chapter deep note `words` | Repository |
+| Three readings of ‘He was heard’ | 7-10 | Chapter deep note `hard` | Repository, no side |
+| Psalm 22:24; 116:1; Isaiah 50:5-6; Isaiah 45:17 (‘everlasting salvation’); Mark 14:36 | 7-10 | BSB; verses/5.json (9-10) | BSB text; repository |
+| Nicene Creed and Chalcedon wording | 7-10 | creeds/documents | Repository text |
+| Care line ‘please do not carry it alone. Tell someone you trust: a doctor, a pastor or a friend. The Find Help page ...’; psalms kept in God's book | 7-10 | psalms/plain/143.json (1-12); 2-corinthians/plain/4.json (13-18) | Word for word (opening clause adapted) |
+| Third warning begins; nōthros ‘you have become’; stoicheia; milk and solid food common image (1 Corinthians 3:1-2); gumnazō | 11-14 | verses/5.json (11, 12, 13-14); chapter deep note `cultural` | Repository |
+| ‘Oracles of God’ the phrase of Romans 3:2 | 11-14 | verses/5.json (12) | Repository; BSB |
+| 1 Kings 3:9; Psalm 34:8 | 11-14 | BSB | BSB text |
