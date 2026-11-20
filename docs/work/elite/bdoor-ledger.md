@@ -10932,3 +10932,23 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Genesis 6:5; 7:13; 8:1; 6:2; Psalm 110:1 | 18-22 | BSB | BSB text |
 
 Cut before publishing: ‘Ancient household codes rarely told the husband anything he owed’ (the notes say this of slaves, not husbands); ‘Peter does not forbid a woman to look nice’.
+
+## The plain notes on 1 Peter 4 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hoplizō, of soldiers arming; verse 2 explains verse 1 | 1-6 | lexicon G3695; BSB | Repository |
+| Vice list as town life: drinking parties, licence, festivals and guild banquets; converts looked disloyal; abuse | 1-6 | 1-peter/4.json `cultural` | Repository |
+| Judge of the living and the dead | 1-6 | 1-peter/4.json `christ` | Repository |
+| 4:6 two readings; ‘now’ in the BSB; caution about a second chance; nothing on anyone's state after death | 1-6 | 1-peter/4.json `hard` | Repository, no side |
+| Isaiah 5:11; Genesis 18:25 | 1-6 | BSB | BSB text |
+| ‘The end of all things is near’; no date; love covers (Proverbs 10:12); hospitality, inns, house churches; oikonomos; charisma speaking and serving; doxology closes 2:11 to 4:11 | 7-11 | 1-peter/4.json `literary`, `cultural`, `words`, `doctrines`; 1-peter/2.json `literary` | Repository |
+| Proverbs 10:12; Genesis 18:4-5; Deuteronomy 15:8 | 7-11 | BSB | BSB text |
+| Purōsis recalls 1:7; Christianos three times, probably coined by outsiders; Tacitus on Nero, AD 64; Pliny to Trajan 110 to 112; settings debated | 12-19 | 1-peter/4.json `words`, `historical` | Repository, no side |
+| Allotriepiskopos ‘meddles in things alien to his calling’ | 12-19 | lexicon G0244 | Repository |
+| Judgment beginning with God's family as refining; entrusting to a faithful Creator; not alone | 12-19 | 1-peter/4.json `doctrines` | Repository |
+| Proverbs 11:31 quoted in its Greek form; the BSB of Proverbs compared | 12-19 | 1-peter/4.json `literary`; BSB | Repository; BSB text |
+| Ezekiel 9:6; Malachi 3:2; Isaiah 11:2; Psalm 31:5 | 12-19 | BSB | BSB text |
+| Care line ‘Not every hardship comes from following Jesus ...’ | 12-19 | acts/plain/14.json (21-28 `hard`) | Word for word |
