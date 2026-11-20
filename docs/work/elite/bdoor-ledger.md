@@ -11581,3 +11581,25 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Joel 2:31; Isaiah 34:4; Isaiah 2:19; Hosea 10:8; Matthew 24:36 | 12-17 | BSB | BSB text |
 
 Cut before publishing: who the rider on the white horse is (the repository's notes give no readings, so none is offered); ‘the scales echo a city under siege’ (no echo in the repository's notes); per-reading accounts of the sixth seal (the notes give the four ways in general only); a line likening the sixth seal to Isaiah's oracles on nations in his own time.
+
+## The plain notes on Revelation 7 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The pause answers 6:17; four as the number of the world | 1-3 | revelation/7.json `story`; guides/reading-apocalyptic.json (numbers) | Repository |
+| Sphragizō; brands, soldiers' marks, devotees' signs; sealed on the forehead as open belonging; Ephesians 1:13; sealing does not exempt from suffering | 1-3 | revelation/7.json `historical`, `words` (G4972) | Repository |
+| Ezekiel 9 (the man with the writing case); Passover; the four winds of Zechariah 6:5 and Daniel 7:2 | 1-3 | revelation/7.json `cultural` | Repository |
+| Ezekiel 9:4; Exodus 12:13; Daniel 7:2; Zechariah 6:5 | 1-3 | BSB | BSB text |
+| 144,000 as twelve times twelve times a thousand, completeness; the list like a military census (Numbers 1) | 4-8 | revelation/7.json `literary` | Repository |
+| Judah first; Dan missing; Joseph for Ephraim; Levi included; idolatry suggested, not certain | 4-8 | revelation/7.json `cultural` | Repository |
+| Readings of the 144,000: dispensational futurist, Jewish Christians in the early church, one people seen two ways (Bauckham; Galatians 3:29; 14:1-5); no side | 4-8 | revelation/7.json `hard`; guides/reading-apocalyptic.json (symbols) | Repository, no side |
+| Numbers 1:2, 3; Galatians 3:29 | 4-8 | BSB | BSB text |
+| The multitude answers 6:17; every nation; Abraham's promise; palms at Tabernacles and victories; salvation belongs to God and the Lamb | 9-12 | revelation/7.json `cultural`, `literary`, `doctrines` | Repository |
+| Genesis 15:5; Leviticus 23:40 | 9-12 | BSB | BSB text |
+| The elder's question in the manner of Zechariah; thlipsis; robes white in blood; skēnoō and John 1:14; bodily hope; the Lamb as shepherd (John 10:11) | 13-17 | revelation/7.json `literary`, `words` (G2347, G4637, G4165), `doctrines`, `christ` | Repository |
+| ‘The great tribulation’: Daniel 12:1, Matthew 24:21; preterist, futurist and idealist readings (the deep note gives no historicist account, so none is offered); Acts 14:22 | 13-17 | revelation/7.json `historical`, `words` (G2347) | Repository, no side |
+| Isaiah 49:10; Isaiah 25:8; Daniel 12:1; Psalm 23:1; Matthew 24:21; Acts 14:22 | 13-17 | BSB | BSB text |
+
+Cut before publishing: Genesis 22:17-18 (swapped for Genesis 15:5 so that ‘blessed’ stays out even inside Scripture); any claim about which group today calls itself the 144,000.
