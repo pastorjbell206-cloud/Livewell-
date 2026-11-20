@@ -11470,3 +11470,34 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | 1 Kings 21:25; Jeremiah 17:10; Psalm 2:8-9; Revelation 22:16 | 18-29 | BSB | BSB text |
 
 Cut before publishing: Antipas as the only martyr named in the book (not checked in the repository); ‘ten days most likely means a short time’ (now the guide's ‘limited fullness’).
+
+## The plain notes on Revelation 3 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sardis: Lydia's capital, Croesus, early coins; citadel taken by Cyrus about 546 BC and Antiochus III in 214 BC; earthquake AD 17 and Tiberius' help; ‘wake up’ and ‘like a thief’ heard against that history | 1-6 | revelation/3.json `historical` | Repository |
+| White robes at festivals and victories; the book of life and citizen registers | 1-6 | revelation/3.json `cultural` | Repository |
+| Perseverance readings: Reformed, Arminian and Wesleyan, Lutheran, Catholic | 1-6 | bible/doctrines/perseverance.json `differ` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 1-6 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Exodus 32:32; Psalm 69:28; Daniel 12:1; Isaiah 61:10 | 1-6 | BSB | BSB text |
+| Philadelphia: youngest city, founded by the kings of Pergamum, named for Attalus II and his brother; earthquake AD 17; Strabo on people living outside; Neocaesarea and Flavia; the pillar and the new name read against that | 7-9; 10-13 | revelation/3.json `historical` | Repository |
+| Key of David from Isaiah 22:22 (Eliakim); the open door as witness or entrance; no rebuke | 7-9 | revelation/3.json `cultural`, `words` (G2374), `literary` | Repository |
+| 3:9 as at 2:9: local conflict; Romans 2:29; misuse named; ‘That reading is false. This site rejects it, and the note on Acts 2:22-28 sets out why.’ | 7-9 | revelation/2.json `hard`; hebrews/intro.json `teaching` | Repository; pointer word for word |
+| Isaiah 22:22; Isaiah 60:14; Isaiah 43:4 | 7-9 | BSB | BSB text |
+| 3:10: pretribulation, posttribulation (John 17:15), amillennial and preterist readings; each held by faithful Christians | 10-13 | revelation/3.json `hard` | Repository, no side |
+| No date; no modern event identified | 10-13 | 1-thessalonians/plain/4.json (15-18 `hard`); instruction for this run | Repository |
+| Ezekiel 48:35; Isaiah 62:2; 1 Thessalonians 4:17 | 10-13 | BSB | BSB text |
+| Laodicea: Lycus valley, about a hundred miles east of Ephesus; banking, black wool, medicine, Phrygian powder; AD 60 earthquake and Tacitus; Colossians 4:13-16 | 14-19 | revelation/3.json `historical` | Repository |
+| ‘Amen’ used of God in Isaiah 65:16 (Hebrew amen, lexicon H0543 lists the verse); arche as source or ruler | 14-19 | revelation/3.json `christ`, `words` (G0746); lexicon H0543 | Repository |
+| The water supply; Hierapolis hot, Colossae cold; two readings of hot and cold; no side | 14-19 | revelation/3.json `cultural`, `words` (G5513) | Repository, no side |
+| Gold, white garments, eye salve against the city's prides; ‘Those I love, I rebuke’ | 14-19 | revelation/3.json `cultural`, `literary` | Repository |
+| Isaiah 65:16; Hosea 12:8; Proverbs 3:12 | 14-19 | BSB | BSB text |
+| 3:20 spoken to a church; the meal as fellowship; the door into chapter 4 | 20-22 | revelation/3.json `christ`, `literary`, `words` (G2374) | Repository |
+| Song of Solomon 5:2; Psalm 23:5; Revelation 4:1 | 20-22 | BSB | BSB text |
+| Book page: the pointer for 3:10 changed to ‘the note on 3:10-13’ | Book page | This chapter's passages | Data read |
+
+Cut before publishing: a reading of how the Reformed and Arminian traditions each take 3:5 in particular (the repository's doctrine study does not discuss the verse; the general views are given instead).
+
+## Stopped here: Revelation 1 to 3 complete (2026-11-20)
