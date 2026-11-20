@@ -190,7 +190,7 @@
         {
           "slug": "did-constantine-decide-the-bible",
           "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
-          "blurb": "What Nicaea's surviving acts do and don't contain, Constantine's letter ordering Bibles, his own bishop's list of disputed books, the Muratorian fragment, Athanasius in 367 and the African councils, the novel's claim named as fiction, and the edges that still differ.",
+          "blurb": "What Nicaea's surviving acts do and don't contain, Constantine's letter ordering copies of the Scriptures, his own bishop's list of disputed books, the Muratorian fragment, Athanasius in 367 and the African councils, the novel's claim named as fiction, and the edges that still differ.",
           "status": "pending",
           "live": false
         },
@@ -963,7 +963,7 @@
       "live": false
     },
     {
-      "claim": "Matthew and Luke used Mark and a lost sayings source, so for the stories all three tell there is one witness, not three",
+      "claim": "Matthew and Luke each used Mark and a lost collection of sayings, Q, so where they follow Mark they are not independent of him",
       "proponent": "B. H. Streeter",
       "work": "The Four Gospels",
       "year": 1924,
@@ -1035,7 +1035,7 @@
     {
       "claim": "Paul was the second founder of Christianity",
       "proponent": "William Wrede",
-      "work": "Paul",
+      "work": "study of Paul",
       "year": 1904,
       "area": "authors",
       "slug": "did-paul-invent-christianity",
