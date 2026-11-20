@@ -7692,7 +7692,7 @@ All 150 psalms now have plain notes. Book Five (107 to 150) closed the book.
 ## Romans's book page (teaching introduction, 2026-11-20)
 
 Every historical claim in `client/public/bible/notes/romans/intro.json`, field
-`teaching`. 7 searches, run on 2026-11-20. Ancient and modern writers are
+`teaching`. 8 searches, run on 2026-11-20. Ancient and modern writers are
 paraphrased unless marked. Scripture is the BSB in the repository, checked
 word for word by `scripts/validate-bible-notes.mjs` and a strict check that
 matches each quotation to the verse it cites.
@@ -7739,3 +7739,35 @@ not checked); Wesley going "unwillingly" (not in the ledger, not searched);
 Calvin's "chief hinge" (not checked); the later churches that joined the
 Joint Declaration (not checked here); Karl Adam's "bombshell" line; the
 count of pistis Christou phrases; who founded the Roman church.
+
+## The plain notes on Romans 1 (2026-11-20)
+
+2 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letter opening: sender, receiver, "greetings" (chairein); grace and peace | 1-7 | wrom-ledger (papyrus letter form); repository deep note (`cultural`) | Ledger |
+| Doulos, slave; Moses the servant of the LORD (Joshua 1:1) | 1-7 | Repository deep note; BSB | Repository; BSB text |
+| Priene inscription, about 9 BC: Augustus's birthday the beginning of good news | 1-7 | Earlier ledger (Mark); wrom-ledger | Ledgers |
+| 1:3-4 possibly an early confession ("some scholars") | 1-7 | Repository deep note (`literary`) | Stated as "some scholars think" |
+| "Obedience that comes from faith" read two ways; same phrase at 16:26 | 1-7 | BSB; Greek hupakoēn pisteōs | Stated as readings |
+| 2 Samuel 7:12, 14; Psalm 2:7; Acts 13:33; Genesis 12:3; Jeremiah 1:5; Galatians 1:15 | 1-7 | BSB | BSB text |
+| Barbaroi, those who did not speak Greek; wise and foolish as educated and uneducated | 8-15 | Earlier ledger (Acts 28, barbaroi); repository deep note | Ledger; repository |
+| 15:20-22 the reason for delay | 8-15 | BSB | BSB text |
+| Isaiah 49:6 (Acts 13:47); Isaiah 52:7 (Romans 10:15); Psalm 126:5-6 | 8-15 | BSB | BSB text |
+| Crucifixion for slaves, bandits, rebels | 16-17 | wrom-ledger (Hengel via the site's guide) | Ledger |
+| "From start to finish" is ek pisteōs eis pistin, "from faith to faith"; three readings | 16-17 | Greek text in the repository | Script; stated as readings |
+| Habakkuk 1:6, 2:3, 2:4; 'emunah steadiness or faithfulness; Psalm 98:2; Isaiah 28:16 as quoted in Romans 10:11 | 16-17 | BSB; repository doctrine study | BSB text; repository. "Some readers hear" the echo |
+| Justification views in brief, pointing to the book page | 16-17 | Book page | Repository |
+| Statues of gods in human form in Rome; Egypt's animal gods | 18-23 | Repository deep note (`cultural`) | Repository |
+| Wisdom of Solomon 13-14: knowledge of the Maker from his works, idolatry folly and the root of moral ruin, idolatry and sexual sin linked; probably first century BC; in Catholic and Orthodox Bibles | 18-23, 24-32 | Wisdom of Solomon | Search: etsjets.org ("Idolatry and Sinfulness in Wisdom of Solomon and Romans"); hts.org.za (Punt: dated 220 BC to AD 30, after 30 BC generally preferred); intertextual.bible. Canon status as the earlier ledger's Sirach row. Wisdom 14 paraphrased |
+| Orgē; "is being revealed" present tense | 18-23 | Greek text (apokaluptetai) | Script |
+| "Exchanged" three times (23, 25, 26); "gave them over" three times; paradidōmi also at 4:25 and 8:32 | 18-23, 24-32 | Repository deep note (`literary`, `words`) | Repository; BSB text |
+| Psalm 19:1; Exodus 32:4; Psalm 106:20; Jeremiah 2:11; Deuteronomy 4:16-18; Genesis 1:26 | 18-23 | BSB | BSB text |
+| First Vatican Council (1870): God known with certainty by natural reason from created things; Belgic Confession Article 2: knowledge of God from creation and providence; Barth's "No!" to Brunner (1934) | 18-23 | Dei Filius; Belgic Confession; Barth | Search: christianitytoday.com "Reviewing Revelation" (1967); theologicalstudies.net (Smith on Brunner); people.bu.edu (Barth). Paraphrased; stated as views, no side |
+| Vice lists a common form in Jewish and Greek moral writing | 24-32 | Repository deep note (`cultural`) | Repository |
+| Psalm 81:12; Genesis 1:27; Leviticus 18:22; Leviticus 19:11-18; Exodus 20:12 | 24-32 | BSB | BSB text |
+| The two readings of 1:26-27 (historic and majority; excess and exploitation in Paul's world); the reply from creation | 24-32 | Repository deep note (`hard`) | Stated as readings; no scholars named (Hays, Gagnon, Brownson in the deep note not repeated) |
+| "Due penalty" read within Paul's argument, not as illness sent as punishment | 24-32 | Site's care rule | Pastoral line |
+
+Cut: Campbell's reading of 1:18-32 as a voiced opponent (deep note; not checked); whether 1:26 speaks of women with women or of other acts (stated as "most readers take in the same sense"); ancient same-sex practices described in detail (not checked, so the second reading is stated as its holders see Paul's world).
