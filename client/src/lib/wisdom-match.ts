@@ -37,6 +37,13 @@
  * When fewer than three topics score near the best, the best topic's related
  * subjects fill the second and third places, so a reader is never shown one
  * subject alone; `close` names those scoring nearly as high as the best.
+ * When the best is low or others are as close, `unsure` asks the page to
+ * offer the areas of life the words met ("Is it one of these?"), and
+ * findInArea narrows to the one the reader picks.
+ *
+ * Beside the phrase score, each topic written in full is weighed against its
+ * own page (finder.json "weights", BM25 built by build-wisdom-index.mjs), at
+ * PAGE_WEIGHT, so words a page already uses can find it.
  *
  * client/src/lib/wisdom-match.test.ts holds the hit rate on a fixture of plain
  * sentences (wisdom-match.fixture.json).
@@ -93,6 +100,11 @@ export interface FinderIndex {
   safetyPairs?: FinderSafetyPair[];
   areas: FinderArea[];
   topics: FinderTopic[];
+  /**
+   * Term weights (BM25) over each topic written in full's own page, by stem:
+   * "i w i w ...", i the topic's place in `topics`. Built at build time.
+   */
+  weights?: Record<string, string>;
 }
 
 export const isFinderIndex = (x: unknown): x is FinderIndex => {
@@ -150,6 +162,8 @@ export interface PreparedTopic {
   framing: Set<string>;
   phrases: { words: string[]; curated: boolean }[];
   not: string[][];
+  /** The topic's own page, weighed word by word (BM25), for a topic written in full. */
+  page: Map<string, number>;
 }
 
 export interface Prepared {
@@ -159,7 +173,12 @@ export interface Prepared {
 }
 
 export function prepare(index: FinderIndex): Prepared {
-  const topics = index.topics.map((t) => {
+  const pages = index.topics.map(() => new Map<string, number>());
+  for (const [w, list] of Object.entries(index.weights ?? {})) {
+    const parts = list.split(" ");
+    for (let k = 0; k + 1 < parts.length; k += 2) pages[Number(parts[k])]?.set(w, Number(parts[k + 1]));
+  }
+  const topics = index.topics.map((t, i) => {
     const phrases: PreparedTopic["phrases"] = [];
     const seen = new Set<string>();
     const add = (p: string, curated: boolean) => {
@@ -178,6 +197,7 @@ export function prepare(index: FinderIndex): Prepared {
       framing: new Set(contentWords(t.framing)),
       phrases,
       not: t.not.map((n) => contentWords(n)).filter((w) => w.length),
+      page: pages[i],
     };
   });
   return { index, topics, byId: new Map(index.topics.map((t) => [t.id, t])) };
@@ -381,6 +401,9 @@ export interface Match {
   safety?: boolean;
 }
 
+/** How much a word of a topic's own page (its BM25 weight) adds, beside the phrase score. */
+export const PAGE_WEIGHT = 0.5;
+
 /** A topic scoring at least this share of the best counts as just as close. */
 export const CLOSE_SHARE = 0.8;
 
@@ -404,7 +427,9 @@ export function scoreTopic(p: PreparedTopic, q: Set<string>): number {
     if (v === 0.5) framing += v;
     else words += v;
   }
-  let score = Math.min(phraseScore, 24) + words + Math.min(framing, 2);
+  let page = 0;
+  for (const w of Array.from(q)) page += p.page.get(w) ?? 0;
+  let score = Math.min(phraseScore, 24) + words + Math.min(framing, 2) + PAGE_WEIGHT * page;
   if (p.not.some((n) => n.every((w) => q.has(w)))) score -= 10;
   return score;
 }
@@ -414,12 +439,26 @@ export interface Found {
   confident: boolean;
   /** The topics after the first that scored nearly as high as it (CLOSE_SHARE). */
   close: Match[];
+  /**
+   * True when the finder should ask "Is it one of these?": the best score is
+   * low (under UNSURE_SCORE, or under MIN_SCORE), or others are just as close,
+   * and the words met topics in two areas of life or more. Never after a
+   * safety word: the help topic stands first, with nothing to choose.
+   */
+  unsure: boolean;
+  /** The areas of life the words met, strongest first, at most MAX_CHOICES (area ids). */
+  areas: string[];
 }
+
+/** Under this best score the finder offers the areas the words met. */
+export const UNSURE_SCORE = 12;
+/** At most this many areas are offered. */
+export const MAX_CHOICES = 6;
 
 /** Topics for a sentence, best first. `confident` is false when the best is under MIN_SCORE. */
 export function findTopics(prep: Prepared, sentence: string, limit = 6): Found {
   const q = queryWords(prep.index, sentence);
-  if (!q.size) return { matches: [], confident: false, close: [] };
+  if (!q.size) return { matches: [], confident: false, close: [], unsure: false, areas: [] };
   const scored: Match[] = prep.topics
     .map((p) => ({ topic: p.t, score: scoreTopic(p, q) }))
     .filter((m) => m.score >= 2)
@@ -460,5 +499,30 @@ export function findTopics(prep: Prepared, sentence: string, limit = 6): Found {
   }
   // A help topic put first for safety stands alone at the top; nothing is set beside it.
   const close = confident && !near[0].safety ? near.slice(1).filter((m) => !m.related && m.score >= top * CLOSE_SHARE) : [];
-  return { matches: near, confident, close };
+  const areas: string[] = [];
+  for (const m of scored) if (m.topic.area && !areas.includes(m.topic.area) && areas.length < MAX_CHOICES) areas.push(m.topic.area);
+  const unsure = !near[0]?.safety && areas.length >= 2 && (top < UNSURE_SCORE || close.length > 0);
+  return { matches: near, confident, close, unsure, areas: unsure ? areas : [] };
+}
+
+/**
+ * The topics of one area of life for a sentence, best first: every topic of
+ * the area the words met, then (when fewer than three met) the area's other
+ * topics by name, so a chosen area is never empty.
+ */
+export function findInArea(prep: Prepared, sentence: string, area: string, limit = 6): Match[] {
+  const q = queryWords(prep.index, sentence);
+  const inArea = prep.topics.filter((p) => p.t.area === area);
+  const met: Match[] = inArea
+    .map((p) => ({ topic: p.t, score: q.size ? scoreTopic(p, q) : 0 }))
+    .filter((m) => m.score >= 2)
+    .sort((a, b) => b.score - a.score || a.topic.label.localeCompare(b.topic.label));
+  if (met.length < 3) {
+    const have = new Set(met.map((m) => m.topic.id));
+    for (const p of inArea.slice().sort((a, b) => a.t.label.localeCompare(b.t.label))) {
+      if (met.length >= 3) break;
+      if (!have.has(p.t.id)) met.push({ topic: p.t, score: 0, related: true });
+    }
+  }
+  return met.slice(0, limit);
 }

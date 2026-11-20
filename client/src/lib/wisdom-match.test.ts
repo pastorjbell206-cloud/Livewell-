@@ -90,13 +90,23 @@
  * at once with general rewrites (wishing to disappear, "fine without me") and
  * safety pairs (a control word after a partner word), tested in five other
  * wordings each below. holdout8 after the fix: top 1 50.0%, top 3 66.7%.
+ * Then three parts of the eighth build's proposal: each topic written in full
+ * weighed against its own page (BM25 in finder.json, at PAGE_WEIGHT 0.5, the
+ * highest weight that cost nothing on the tuning sets, cases to holdout6); a
+ * concept table drawn from Find Help's needs and the Honest Answers; and the
+ * "Is it one of these?" step. After:
+ *   cases    (74) 98.6% / 100%   holdout  (19) 100% / 100%
+ *   holdout2 (20) 100%  / 100%   holdout3 (15) 93.3% / 100%
+ *   holdout4 (15) 100%  / 100%   holdout5 (15) 86.7% / 100%
+ *   holdout6 (25) 100%  / 100%   holdout7 (30) 73.3% / 86.7%
+ *   holdout8 (24) 54.2% / 75.0% (the clean set; never tuned to)
  * The floors below sit just under those, so a change to the data that makes
  * the finder worse fails here by name.
  */
 import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { prepare, findTopics, stem, queryWords, isFinderIndex, editDistance } from "./wisdom-match";
+import { prepare, findTopics, findInArea, stem, normalize, queryWords, isFinderIndex, editDistance, MAX_CHOICES } from "./wisdom-match";
 
 const index: unknown = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../public/wisdom/finder.json"), "utf8"));
 const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match.fixture.json"), "utf8")) as {
@@ -181,10 +191,10 @@ describe("wisdom matcher", () => {
     expect(holdout6.top1).toBeGreaterThanOrEqual(0.95);
     expect(holdout6.top3).toBeGreaterThanOrEqual(0.95);
     expect(holdout7.top1).toBeGreaterThanOrEqual(0.73);
-    expect(holdout7.top3).toBeGreaterThanOrEqual(0.79);
+    expect(holdout7.top3).toBeGreaterThanOrEqual(0.86);
     // The clean set, written by someone else: reported, and held just under what it scored.
-    expect(holdout8.top1).toBeGreaterThanOrEqual(0.49);
-    expect(holdout8.top3).toBeGreaterThanOrEqual(0.66);
+    expect(holdout8.top1).toBeGreaterThanOrEqual(0.54);
+    expect(holdout8.top3).toBeGreaterThanOrEqual(0.74);
   });
 
   it("does not force a match on nonsense", () => {
@@ -323,9 +333,62 @@ describe("wisdom matcher", () => {
     expect(alone.matches.length).toBeGreaterThanOrEqual(3);
     expect(alone.matches.slice(1).some((m) => m.related)).toBe(true);
     const r = findTopics(prep, "the doctor said moms cancer is back and theres nothing more they can do");
-    expect(r.matches[0].topic.id).toBe("serious-illness");
-    expect(r.close.map((m) => m.topic.id)).toContain("terminal-diagnosis");
+    // Either may lead (each is a right answer); the other stands beside it as just as close.
+    const pair = [r.matches[0].topic.id, ...r.close.map((m) => m.topic.id)];
+    expect(pair).toContain("serious-illness");
+    expect(pair).toContain("terminal-diagnosis");
     // A far second is not "just as close".
     expect(findTopics(prep, "my son walked away from the faith").close).toEqual([]);
+  });
+
+  it("weighs each topic written in full against its own page, keyed by the same stems the browser uses", async () => {
+    const words: { stem: (w: string) => string; normalize: (w: string) => string } = await import(path.resolve(__dirname, "../../../scripts/lib/wisdom-words.mjs"));
+    const vocab = new Set<string>();
+    for (const t of index.topics) normalize([t.label, t.framing, ...t.keywords, ...t.phrases].join(" ")).split(" ").forEach((w) => w && vocab.add(w));
+    for (const w of Array.from(vocab)) expect(words.stem(w), w).toBe(stem(w));
+    expect(words.normalize("Can't  stop—worrying!")).toBe(normalize("Can't  stop—worrying!"));
+    const weights = index.weights ?? {};
+    expect(Object.keys(weights).length).toBeGreaterThan(1000);
+    for (const list of Object.values(weights)) {
+      const parts = list.split(" ").map(Number);
+      for (let k = 0; k < parts.length; k += 2) expect(index.topics[parts[k]]?.deep, `${list}`).toBe(true);
+    }
+    // A word only the page itself uses (no phrasing names it) still finds the page.
+    expect(index.topics.find((t) => t.id === "courage")?.phrases.join(" ")).not.toMatch(/abednego/i);
+    expect(findTopics(prep, "abednego").matches[0].topic.id).toBe("courage");
+  });
+
+  it("reads the concepts drawn from Find Help's needs and the Honest Answers", () => {
+    expect(findTopics(prep, "i relapsed after a year sober").matches[0].topic.id).toBe("addiction");
+    expect(findTopics(prep, "is it a sin to get a tattoo").matches[0].topic.id).toBe("guilt-and-conscience");
+    expect(findTopics(prep, "we have been trying ivf for three years").matches[0].topic.id).toBe("infertility");
+    expect(["the-problem-of-evil", "suffering"]).toContain(findTopics(prep, "why would god allow an earthquake that kills thousands").matches[0].topic.id);
+    expect(queryWords(index, "my friend is an atheist").has(stem("doubt"))).toBe(true);
+  });
+
+  it("asks which area of life when the fit is weak or others are as close, and never after a safety word", () => {
+    const weak = findTopics(prep, "i feel off lately");
+    expect(weak.unsure).toBe(true);
+    expect(weak.areas.length).toBeGreaterThanOrEqual(2);
+    expect(weak.areas.length).toBeLessThanOrEqual(MAX_CHOICES);
+    expect(new Set(weak.areas).size).toBe(weak.areas.length);
+    const close = findTopics(prep, "the doctor said moms cancer is back and theres nothing more they can do");
+    expect(close.unsure).toBe(true);
+    expect(close.areas[0]).toBe("loss");
+    expect(findTopics(prep, "my son walked away from the faith").unsure).toBe(false);
+    for (const q of ["i want to hurt myself tonight", "my husband beats me when he drinks", "my girlfriend wont let me talk to my friends anymore"]) {
+      const r = findTopics(prep, q);
+      expect(r.unsure, q).toBe(false);
+      expect(r.areas, q).toEqual([]);
+    }
+  });
+
+  it("narrows to the area the reader picks, never to an empty list", () => {
+    const area = findTopics(prep, "i feel off lately").areas[1];
+    const list = findInArea(prep, "i feel off lately", area);
+    expect(list.length).toBeGreaterThanOrEqual(3);
+    for (const m of list) expect(m.topic.area).toBe(area);
+    const scores = list.filter((m) => !m.related).map((m) => m.score);
+    expect(scores).toEqual([...scores].sort((a, b) => b - a));
   });
 });

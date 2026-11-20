@@ -1,5 +1,5 @@
 {
- "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. concepts: groups of words (illness, family roles, work and rest, church and its leaders, housing and unfairness), each matched by stem, adding the library's own word for the thing. safety: a word the self-harm, abuse and danger rewrites add, and the help topic it puts first. safetyPairs: a control word (added by rewrites such as \"checks my phone\" and \"wont let me see\") said with a partner word adds a safety word, so control by a husband, wife, boyfriend or girlfriend puts the help topic first. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
+ "about": "Hand-written matching data for the Wisdom Finder (scripts/build-wisdom-index.mjs reads it). rewrites: multi-word phrasings turned into one word before matching. synonyms: a word that brings other words with it. concepts: groups of words (illness, family roles, work and rest, church and its leaders, housing and unfairness, and from Find Help's needs list and the Honest Answers' subjects: doubt and unbelief, recovery, divorce, waiting for a child, questions of conscience, losing work, why the world suffers), each matched by stem, adding the library's own word for the thing. safety: a word the self-harm, abuse and danger rewrites add, and the help topic it puts first. safetyPairs: a control word (added by rewrites such as \"checks my phone\" and \"wont let me see\") said with a partner word adds a safety word, so control by a husband, wife, boyfriend or girlfriend puts the help topic first. areas: the areas of life a reader can browse; every topic is in exactly one. topics: per topic, plain phrasings a person might type (phrases), what should push it down (not), and the topics close to it (related).",
  "rewrites": {
   "passed away": "died",
   "pass away": "die",
@@ -314,7 +314,10 @@
     "weekend",
     "overtime",
     "workaholic",
-    "overworked"
+    "overworked",
+    "hustle",
+    "sabbatical",
+    "burnout"
    ],
    "adds": "rest work"
   },
@@ -347,6 +350,86 @@
     "unaffordable"
    ],
    "adds": "poor justice"
+  },
+  {
+   "name": "doubt and unbelief",
+   "words": [
+    "unbelief",
+    "deconstruction",
+    "deconstruct",
+    "deconstructing",
+    "exvangelical",
+    "skeptic",
+    "skeptical",
+    "atheist"
+   ],
+   "adds": "doubt"
+  },
+  {
+   "name": "recovery",
+   "words": [
+    "sober",
+    "sobriety",
+    "relapse",
+    "relapsed",
+    "relapsing",
+    "recovery",
+    "opioid",
+    "alcoholism",
+    "alcoholic"
+   ],
+   "adds": "addiction"
+  },
+  {
+   "name": "divorce",
+   "words": [
+    "divorced",
+    "divorcing",
+    "remarriage",
+    "remarry",
+    "remarried",
+    "coparenting"
+   ],
+   "adds": "divorce"
+  },
+  {
+   "name": "waiting for a child",
+   "words": [
+    "ivf",
+    "conceive",
+    "conceiving",
+    "childless",
+    "adoption",
+    "adopt"
+   ],
+   "adds": "infertility"
+  },
+  {
+   "name": "questions of conscience",
+   "words": [
+    "tattoo",
+    "smoking",
+    "vaping",
+    "swearing",
+    "lottery"
+   ],
+   "adds": "conscience"
+  },
+  {
+   "name": "losing work",
+   "words": [
+    "unemployment",
+    "unemployed"
+   ],
+   "adds": "jobloss work"
+  },
+  {
+   "name": "why the world suffers",
+   "words": [
+    "earthquake",
+    "earthquakes"
+   ],
+   "adds": "suffering evil"
   }
  ],
  "safety": {
