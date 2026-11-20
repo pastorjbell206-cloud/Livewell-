@@ -9544,3 +9544,43 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 ## Colossians complete (2026-11-20)
 
 All four chapters in plain words. Colossians searches: 3 for the book page.
+
+## 1 Thessalonians's book page (teaching introduction, 2026-11-20)
+
+Every historical claim in `client/public/bible/notes/1-thessalonians/intro.json`, field
+`teaching`. No new searches: every claim below is carried by the repository's own deep
+notes (intro and chapter notes), the end-times study guide, or earlier ledger rows. No
+modern scholar is named. Scripture is the BSB in the repository, checked by the validator
+and the strict check.
+
+| Claim | Source | Checked by |
+|---|---|---|
+| Very likely Paul's earliest surviving letter, about AD 50, some twenty years after the resurrection; Galatians the one rival | Repository `overview`, `date` | Repository |
+| Silvanus the Latin form of Silas (Acts 15:22, 40); Timothy joined at Lystra (Acts 16:1-3); Paul speaks alone at 2:18 | Chapter 1 deep note `historical`; repository `author`; BSB | Repository; BSB text |
+| Authorship accepted by nearly all scholars; fit with Acts 17; in the earliest collections | Repository `author` | Repository |
+| Founded about 316 BC by Cassander, named for Thessalonike, Alexander's half-sister; harbour; Via Egnatia; capital when Macedonia became a province in the 140s BC; free city after 42 BC; politarchs (Acts 17:6) confirmed by inscriptions from the city | Repository `setting` | Repository |
+| Cults of Egyptian gods, Dionysus, Cabirus; a synagogue | Repository `setting`; chapter 1 deep note `cultural` | Repository |
+| Founding about AD 49 or 50 (Acts 17:1-10): three Sabbaths; Jews, God-fearing Greeks, leading women; opposition, a mob, Jason, ‘another king, named Jesus’; sent to Berea by night | Repository `setting`; BSB Acts 17:1-10 | BSB text |
+| Church mostly Gentile (1:9); Paul worked (2:9); help from Philippi more than once (Philippians 4:16); suffering from their own countrymen (2:14) | Repository `setting`; BSB | BSB text |
+| Paul to Athens; Timothy sent back (3:1-2); returned (3:6); Silas and Timothy reach Corinth (Acts 18:5); written from Corinth | Repository `date`; chapter 3 deep note `historical` | Repository; BSB text |
+| Gallio inscription at Delphi, about AD 51 to 52 (Acts 18:12) | Repository `date`; chapter 1 deep note `historical` | Repository |
+| Every chapter ends near the Lord's coming (1:10; 2:19; 3:13; 4:17; 5:23) | Repository `themes` | BSB text |
+| Some had died; fear the dead would miss the coming | Chapter 4 deep note `historical` | Repository |
+| Confession: Christ's return, the resurrection of the dead, the judgment | The Apostles' and Nicene Creeds (creeds/documents) | Stated as confession |
+| Rapture readings: pretribulation (caught up before a time of trouble often understood as seven years; 5:9 appealed to); midtribulation and prewrath; posttribulation (apantēsis, welcoming a ruler); no separate rapture (amillennial and postmillennial; Catholic, Orthodox, Lutheran, Reformed; the loud command and trumpet); no side | Chapter 4 deep note `hard`; studyguides/end-times.json session 3 | Repository wording, paraphrased. No side; no names |
+| ‘Caught up’ became ‘rapture’ by way of the Latin Bible (rapiemur) | Chapter 4 deep note `words` (G0726) | Repository |
+| 2:14-16: Paul, Jesus, the apostles and the Judean churches Jews; Paul once persecuted the Judean churches (Galatians 1:13, 22-23); persecutors compared with persecutors; Romans 9:3 and 11:1; centuries of misuse; pointer to the Acts 2:22-28 note | Chapter 2 deep note `hard`, `historical`; galatians/plain/4.json and philippians/plain/3.json pattern; BSB | Repository; BSB text |
+| Faith, love, hope (1:3; 5:8); turning from idols costly (family meals, guilds, festivals); suffering warned (3:4); holiness practical and God's work (5:23) | Repository `themes`; chapter 1 deep note `cultural` | Repository |
+| Parousia used of a ruler's official visit | Chapter 2 and 3 deep notes `words` (G3952) | Repository |
+| Orphaned (2:17); nursing mother and father (2:7, 11); ‘now we can go on living’ (3:8) | Chapter 2 deep note `literary`; repository `themes` | Repository; BSB text |
+| No word-for-word Old Testament quotation in the letter | BSB read through (all five chapters); chapter deep notes | BSB text read |
+| Jeremiah 10:10; Psalm 115:5; Leviticus 19:2; Isaiah 54:13 ("may be echoing"); Ezekiel 36:27; Exodus 19:16; Daniel 7:13; Isaiah 26:19; Amos 5:18; Jeremiah 6:14; Isaiah 59:17; Zechariah 14:5 with 3:13 | Chapter 1, 4 and 5 deep notes `cultural`, `literary`; chapter 3 deep note `christ`; BSB | BSB text |
+| ‘Peace and security’ heard against the false prophets (Jeremiah 6:14) | Chapter 5 deep note `cultural` | Repository (the Roman slogan reading left to the chapter note) |
+| Matthew 24:36; John 11:35 | BSB | BSB text |
+| Date-setting predictions have come and gone | studyguides/end-times.json summary | Repository, stated generally |
+| Map: Philippi, Thessalonica, Athens, Corinth | wmap-ledger | Ledger (Berea not drawn: the letter does not name it) |
+| Timeline: 2 Thessalonians soon after (many) or later (some) | 2-thessalonians/intro.json `date` | Repository |
+
+Cut: Malherbe and Dio Chrysostom by name; the expulsion of Jews from Rome under Claudius
+as a reading of 2:16; Darby and the Left Behind novels by name; the Roman ‘pax and
+securitas’ slogan (kept for the chapter).
