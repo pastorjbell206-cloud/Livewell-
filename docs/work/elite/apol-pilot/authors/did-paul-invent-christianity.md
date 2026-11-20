@@ -1,0 +1,78 @@
+---
+area: authors
+slug: did-paul-invent-christianity
+status: pending (not on the site; for James to read first)
+question: "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?"
+ledger: docs/work/elite/apol-ledger.md, "Twenty-second run", key "bl"
+---
+
+# Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?
+
+## The short answer
+
+The question has real force. Paul's letters are the earliest Christian writings we have, he quotes Jesus only a handful of times, he says his gospel came "by revelation" rather than from the apostles, and his teaching on the law reads very differently from Matthew's. Critics since William Wrede at the start of the twentieth century have called him Christianity's second founder. But Paul himself says he handed on what he had "received": that Christ died for our sins, was buried, was raised and appeared to Peter, James and others, and the words Jesus spoke over the bread and cup. He checked his gospel with Peter, James and John in Jerusalem, and they gave him "the right hand of fellowship." Even Bart Ehrman, a skeptical scholar, holds that Paul did not originate the message of the death and resurrection; it was what he had persecuted. Paul was a Jew, and he didn't invent the faith. He carried it to the nations.
+
+## The objection at its strongest
+
+Begin with the dates. Paul's undisputed letters were written in the 50s, a decade or more before the first Gospel, and they are full of theology, about Christ's death for sin, justification by faith, the church as Christ's body, the Spirit's life in believers, and nearly empty of Jesus' life. Paul never mentions a parable, an exorcism, the Sermon on the Mount, or a miracle. He quotes Jesus' teaching explicitly only a few times. And he insists that he didn't learn his gospel from anyone: "the gospel I preached was not devised by man. I did not receive it from any man, nor was I taught it; rather, I received it by revelation from Jesus Christ" (Galatians 1:11-12, BSB). A message that comes from a private vision, to a man who never followed Jesus in Galilee, and spreads through letters to Gentile cities, looks less like the teaching of a Jewish prophet than like a new religion built on his name.
+
+The case has a long history. William Wrede's study of Paul (1904), as the Study Bible's note on Luke 10 records, "famously called the apostle the second founder of Christianity," and early in the twentieth century the *Catholic Encyclopedia* could describe critics who made Paul "the creator of theology, the founder of the Church," opposed to "the religion of love and liberty which Christ came to announce." Bart Ehrman has given the modern form of one part of it. In *Jesus, Interrupted* (2009), in a passage read aloud in a public recording, he set Paul beside Matthew. For Paul, no one is justified by the works of the law, and believers who seek justification by keeping it are in danger of falling from grace (Galatians 5:4). For Matthew's Jesus, "not a single jot, not a stroke of a pen, will disappear from the Law," and whoever breaks the least commandment "will be called least in the kingdom of heaven" (Matthew 5:18-19, BSB). In Matthew's scene of the last judgment, the nations are judged by whether they fed the hungry and visited the prisoner, people who may never have heard of Jesus. Anyone who read Matthew and then Galatians, Ehrman writes, would never suspect a way to reconcile them. On this view Jesus preached the kingdom of God and the keeping of God's law, and Paul preached Jesus.
+
+## What is true in it
+
+A good deal, and it should be granted. Paul's letters are the earliest Christian writings. He seldom quotes Jesus by name: a ruling on divorce, "To the married I give this command (not I, but the Lord)" (1 Corinthians 7:10, BSB), a word about the support of preachers (1 Corinthians 9:14), the words at the Last Supper (1 Corinthians 11:23-25), and "the word of the Lord" about those who have died (1 Thessalonians 4:15, BSB). He says almost nothing of Jesus' miracles or parables. His emphasis is not the Gospels' emphasis: Jesus in the first three Gospels proclaims the kingdom of God; Paul proclaims Christ crucified and raised. And he did claim a revelation of his own, and fought for his reading of the law even against Peter, whom, he says, "I opposed ... to his face" (Galatians 2:11, BSB).
+
+It's also true that Christians have often read Paul against Judaism in ways that falsified both. The old picture of a Judaism of earning set against Paul's gospel of grace has been rightly questioned. E. P. Sanders, as the note on Luke 10 summarizes him, called the pattern of Judaism "covenantal nomism," in which the Torah is God's gracious gift to a people already his. Any answer that rescues Paul by caricaturing his own people isn't worth giving.
+
+## The evidence
+
+Start with what Paul says he received. Writing to Corinth around the mid-50s, he reminds them of the gospel he preached when he founded their church: "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures, and that He appeared to Cephas and then to the Twelve" (1 Corinthians 15:3-5, BSB), and then to more than five hundred, to James, and to all the apostles. "Received" and "passed on" are, as the Study Bible's note on that chapter says, the technical terms for transmitting tradition, and the formula uses the Aramaic name Cephas for Peter. The note adds that many scholars, "including many who do not share Christian faith, date his receipt of it to within a few years of the crucifixion." The core of what critics call Paul's religion, Christ's death for sins and his resurrection, is the part Paul says he didn't originate. He uses the same verbs of the Lord's Supper (1 Corinthians 11:23), whose wording, as the note on that chapter says, "closely matches Luke 22:19-20."
+
+Then read Galatians 1 and 2 as a whole, not just its first claim. The revelation Paul defends is his call to preach Christ to the Gentiles, and he immediately tells how he checked it. Three years after his conversion he went to Jerusalem "to confer with Cephas" and stayed fifteen days, seeing also "James, the Lord's brother" (Galatians 1:18-19, BSB). Fourteen years later he laid his gospel before the leaders there, and James, Cephas and John, whom he calls the reputed pillars, "gave me and Barnabas the right hand of fellowship, so that we should go to the Gentiles, and they to the circumcised" (Galatians 2:9, BSB). Their quarrel at Antioch was over whether Jewish believers could eat with Gentile believers, not over who Jesus was. Paul says outright that his preaching and theirs were the same: "Whether, then, it was I or they, this is what we preach, and this is what you believed" (1 Corinthians 15:11, BSB).
+
+A skeptical scholar agrees. In a 2021 interview, as an automatic transcript of it records, Ehrman said that Paul did not come up with the idea that Jesus died and was raised; people were already saying it, and that was why Paul was persecuting them. What Paul received in his vision, on Ehrman's account, was that Gentiles could be saved through Jesus' death and resurrection without becoming Jews. And the disagreement with James and Peter, he said, was not about Christology; all of them agreed that Jesus' death and resurrection puts a person right with God.
+
+Then notice what Paul shares with the Jesus of the Gospels. Both pray to God as "Abba" (Mark 14:36; Galatians 4:6). Both sum up the law in "Love your neighbor as yourself" (Mark 12:31; Galatians 5:14, BSB). Both forbid divorce, Paul citing the Lord's command (1 Corinthians 7:10-11; Mark 10:9). Paul speaks of the kingdom of God as Jesus did (Romans 14:17). And both are Jews speaking to Jews first. Paul calls himself "an Israelite myself, a descendant of Abraham, from the tribe of Benjamin" (Romans 11:1, BSB), says he would wish himself cut off for the sake of his own people (Romans 9:3), and describes Christ as "a servant of the circumcised on behalf of God's truth, to confirm the promises made to the patriarchs" (Romans 15:8, BSB). He never thought he had left the God of Israel. He thought the God of Israel had kept his promise.
+
+## The argument, laid out
+
+This is an argument about where the content of Paul's gospel came from.
+
+1. The center of Paul's gospel, Christ's death for sins, burial, resurrection and appearances, and the words of the Supper, he gives as tradition he received, in a formula with Aramaic features, likely received within a few years of the crucifixion.
+2. Paul checked his gospel with Peter, James and John, who accepted it, and he says that he and they preached the same message; their recorded quarrel was about table fellowship between Jews and Gentiles, not about Christ.
+3. Paul's distinctive emphases, the gospel for Gentiles and justification apart from the works of the law, are developments of that received message for a new audience, and on the main points of Jesus' teaching that Paul cites, he agrees with it.
+
+So: Paul did not invent Christianity; he received its central message from those who were believers before him and carried it, with emphases of his own, to the Gentiles, and the differences between his letters and the Gospels are differences of setting and emphasis, not of founder.
+
+The weight sits on the first step. If the formula of 1 Corinthians 15 and the words of the Supper were Paul's own compositions, then what he received would be only names and dates, and the content would be his.
+
+## The strongest reply, and an answer
+
+The strongest reply is Ehrman's contrast itself. Even granting that Paul received the death and resurrection, the reply says, the meaning he gave them, salvation by faith apart from the law, is not what Matthew's Jesus taught. Matthew's Jesus tells a rich man to keep the commandments and judges the nations by their mercy. Paul says no one is justified by the law. Received facts with a new meaning are still a new religion.
+
+That is the reply to take most seriously, and it's partly right. Paul's teaching on the law is not Matthew's in emphasis, and Christians have long argued over how the two fit. But the contrast is drawn too sharply on both sides. Paul too says the law is fulfilled in love of neighbor (Galatians 5:14), and that God will judge each person by what he has done (Romans 2:6); Matthew's Jesus, too, gives his life "as a ransom for many" (Matthew 20:28, BSB) and pours out his blood "for the forgiveness of sins" (Matthew 26:28, BSB). The dispute Paul fought was over whether Gentiles must become Jews, keeping circumcision and the food laws, to belong to God's people, which Matthew's Jesus never addresses, since in Matthew he is "sent only to the lost sheep of the house of Israel" (Matthew 15:24, BSB) and sends his disciples to "all nations" only after the resurrection (Matthew 28:19, BSB). And Paul's claim that God justifies sinners who trust him is not foreign to the Jesus who told of a tax collector who went home justified when a Pharisee did not (Luke 18:14). If two first-century Jews, one teaching in Galilee before the cross and one writing to Gentile churches after it, used different words for the mercy of the same God, that is what a historian should expect. A founder who disagreed with the apostles, or whom the apostles disowned, would have left a different record.
+
+## What remains unresolved
+
+How much of Jesus' teaching Paul knew, and why he cites so little of it, is still argued. How Paul's teaching on the law relates to Matthew's, and to the letter of James, is debated among Christians as well as critics. Whether 1 Corinthians 15 reached Paul in Damascus or in Jerusalem is uncertain. And Galatians and Acts tell the story of Paul's visits to Jerusalem differently enough that their relation is still worked out in more than one way.
+
+## Where Christians differ
+
+Christians differ on how to read Paul on the law and justification: older Protestant readings stress a contrast between faith and works; what is called the new perspective on Paul, with Sanders and others, stresses the place of Gentiles in God's people; Catholic and Orthodox readings join faith and the life of grace in other terms. This page takes no side among them. What the church confesses together is what Paul says he received: that Christ died for our sins according to the Scriptures, was buried and was raised on the third day, and that the gospel Paul carried to the nations was the faith of the apostles before him.
+
+## Read the other side
+
+- Bart D. Ehrman, *Jesus, Interrupted* (2009). Paul and Matthew on the law, among other contrasts.
+- William Wrede's study of Paul (German original 1904), the source of the phrase "the second founder of Christianity," as the Study Bible's note on Luke 10 records it.
+
+## Read further
+
+- E. P. Sanders, *Paul and Palestinian Judaism* (1977).
+- Richard Bauckham, *Jesus and the Eyewitnesses* (2006).
+
+## On the site
+
+- The Study Bible's notes on 1 Corinthians 15 (/study/bible/1-corinthians/15), 1 Corinthians 11 (/study/bible/1-corinthians/11), Galatians 1 (/study/bible/galatians/1) and Luke 10 (/study/bible/luke/10), which this page follows.
+- The argued answer "Did the resurrection actually happen?" (/answers/did-the-resurrection-actually-happen), on the tradition of 1 Corinthians 15.
+- "How did Jesus become God?" (/questions/jesus/how-did-jesus-become-god), on the worship of Jesus in Paul's letters, and "Judaism, Islam and Jesus" (/questions/religions/judaism-islam-and-jesus).
+- The other questions in this area (/questions/authors).
