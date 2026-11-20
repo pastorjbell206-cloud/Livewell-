@@ -12098,3 +12098,33 @@ Cut before publishing: ‘more than three thousand years’ of Passover (no repo
 | Acts 7:19; Matthew 2:16; Hebrews 11:23; 7:20; 14:28 | 22 | BSB | BSB text |
 
 Cut before publishing: Papyrus Brooklyn and the name Shiphrah; the debate over Tell el-Maskhuta or Tell er-Retabeh for Pithom; the habiru; the question in the deep note that points to patterns ‘today’ (no modern situation is named).
+
+## The plain notes on Exodus 2 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Amram and Jochebed (6:20); the sister as Miriam; Aaron older (7:7) | 1-4 | exodus/verses/2.json (1, 4) | Repository |
+| ‘She saw that he was good’ and the Genesis 1 refrain | 1-4 | exodus/verses/2.json (2) | Repository |
+| Tevah, the word for Noah's ark; bitumen and pitch; suf and the Yam Suf; papyrus in the Delta | 1-4 | exodus/verses/2.json (3); exodus/2.json `cultural` | Repository |
+| Hebrews 11:23; Acts 7:20; Genesis 6:14 | 1-4 | BSB | BSB text |
+| The princess's words; chamal; unnamed, no Egyptian source | 5-10 | exodus/verses/2.json (5-6) | Repository |
+| Wet nursing; weaning at two or three; the irony of the wages | 5-10 | exodus/2.json `cultural` | Repository |
+| Adoption language; the elite education; Moses an Egyptian name (Thutmose, Ramesses); mashah and the active participle | 5-10 | exodus/2.json `historical`; exodus/verses/2.json (10) | Repository |
+| The Legend of Sargon and the two scholarly views | 5-10 | exodus/2.json `historical` | Repository |
+| Acts 7:21-22; Psalm 18:16; Hebrews 11:24-25 | 5-10 | BSB | BSB text |
+| Forty years from Stephen (Acts 7:23); ‘his brothers’; looking with feeling; nakah for both blows; ‘this way and that’ | 11-15 | exodus/verses/2.json (11-12) | Repository |
+| Sar and shofet; re'a as in Leviticus 19:18 | 11-15 | exodus/verses/2.json (13-14) | Repository |
+| Midian east of the Gulf of Aqaba; Keturah (Genesis 25:1-2) | 11-15 | exodus/2.json `historical` | Repository |
+| Was Moses right: the just-defense reading and the warning reading | 11-15 | exodus/2.json `hard` | Repository; no side |
+| Judges appointed (18:13-26) | 11-15 | exodus/intro.json `structure` | Repository |
+| Acts 7:25, 35; Hebrews 11:25 | 11-15 | BSB | BSB text |
+| The well scenes of Genesis 24 and 29; Reuel, Jethro, Hobab and the three explanations | 16-22 | exodus/2.json `cultural` | Repository |
+| Yasha' first in Exodus (Joshua, Jesus); Reuel ‘friend of God’; Tsipporah ‘bird’; ger and Gershom | 16-22 | exodus/verses/2.json (16-17, 18-20, 21-22) | Repository |
+| Genesis 15:13; Exodus 22:21; Acts 7:29 | 16-22 | BSB | BSB text |
+| Three words of pain; za'aq; the cry not said to be addressed to God | 23-25 | exodus/verses/2.json (23) | Repository |
+| Four verbs with God as subject; zakar as with Noah (Genesis 8:1); ‘and God knew’; the Greek reading | 23-25 | exodus/2.json `literary`; exodus/verses/2.json (24-25) | Repository |
+| Exodus 3:7; 22:23; Luke 1:72 | 23-25 | BSB | BSB text |
+
+Cut before publishing: ‘used nowhere else in the Bible’ of tevah (not in the repository's note); the identification of the princess with Bithiah; ha'almah and Isaiah 7:14 (outside the chapter's point); the 120 years of Moses' life.
