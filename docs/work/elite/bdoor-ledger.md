@@ -11167,3 +11167,26 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Jeremiah 31:34; Joel 2:28; Isaiah 54:13; Ephesians 4:11 | 24-27 | BSB | BSB text |
 | Parousia as a ruler's arrival | 28-29 | 2-peter/intro.json `teaching.words` (Coming) | Repository |
 | Psalm 34:5; Psalm 11:7 | 28-29 | BSB | BSB text |
+
+## The plain notes on 1 John 3 (2026-11-20)
+
+No web searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A father's name, place, inheritance and likeness; teknon for believers, huios for Jesus | 1-3 | 1-john/3.json `cultural`, `words` (G5043) | Repository |
+| Deuteronomy 14:1; Hosea 11:1; Psalm 17:15 | 1-3 | BSB | BSB text |
+| Later groups who held the body unimportant or the spiritual beyond sin; not to be read back | 4-10 | 1-john/3.json `historical` | Repository |
+| Anomia, and its tie to the last days' rebellion; sperma three readings | 4-10 | 1-john/3.json `words` (G0458, G4690H) | Repository |
+| 1:8-10 beside 3:6-9: present tense; a particular sin or lawlessness; the ideal; Wesleyan; no side | 4-10 | 1-john/3.json `hard` | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away from God ...’ | 4-10 | hebrews/plain/6.json (4-8 `hard`) | Word for word |
+| Genesis 3:4, 15; Ezekiel 36:26-27; Psalm 51:10 | 4-10 | BSB | BSB text |
+| Cain the only Old Testament story named; Cain as the model of envy in Jewish tradition | 11-15 | 1-john/3.json `historical` | Repository |
+| Matthew 5:21-22; Ephesians 4:26 | 11-15 | BSB | BSB text |
+| Care lines ‘Where a crime has been done ...’ to ‘... places to turn.’ | 11-15 | 2-timothy/plain/4.json (14-18 `hard`), its last four sentences | Word for word |
+| Genesis 4:7-8; Leviticus 19:17; Proverbs 10:12 | 11-15 | BSB | BSB text |
+| No public welfare; churches known for caring for their poor; ‘compassion’ as the inner organs | 16-18 | 1-john/3.json `cultural` | Repository |
+| Care line ‘Nothing in this passage asks anyone to stay ...’ | 16-18 | 1-thessalonians/plain/3.json (1-5 `hard`), from its third sentence | Word for word |
+| Deuteronomy 15:7; Isaiah 58:7 | 16-18 | BSB | BSB text |
+| Care lines ‘Sometimes guilt that will not lift ...’ (first three sentences) and ‘If you are a person whose conscience never rests ...’ | 19-24 | 2-corinthians/plain/7.json (8-12 `hard`); colossians/plain/1.json (21-23 `hard`) | Word for word |
+| Psalm 139:23; Psalm 103:12, 14; Psalm 145:18 | 19-24 | BSB | BSB text |
