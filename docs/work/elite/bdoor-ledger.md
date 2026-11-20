@@ -8794,3 +8794,23 @@ One search. Scripture is the BSB in the repository, matched by the strict check.
 | Honest accounts in churches; not financial or legal advice | 16-24 | CLAUDE.md "Inform; do not pose as the professional" | Stated as principle |
 
 Cut: the Greek wording of 8:21 (the repository has the indicative pronooumen; not discussed); guesses at the brothers' names.
+
+## The plain notes on 2 Corinthians 9 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Achaia the province of southern Greece; honour and shame of a broken public promise | 1-5 | Book page; deep note `historical` | Repository |
+| Eulogia at 9:5, ‘a blessing’; ‘begrudgingly’ renders pleonexia, greed | 1-5 | Greek text (G2129, G4124) | Repository's Greek |
+| Exodus 36:6; Ecclesiastes 5:4-5 | 1-5 | BSB | BSB text |
+| Hilaros only at 9:7 in the New Testament | 6-11 | Greek text (G2431) | Script |
+| ‘God loves a cheerful giver’ close to a line the old Greek adds at Proverbs 22:8 (God blesses, or loves, a cheerful and generous man); not in the Hebrew or the BSB | 6-11 | Translation commentary; Brenton's LXX | Search: tips.translation.bible on 2 Corinthians 9:7; ebible.org BSB note ("Proverbs 22:8, LXX addition"); breakeveryyoke.com Brenton/LXX2012. Paraphrased |
+| Psalm 112:9 (lowercase ‘his’, the man who fears the LORD, 112:1); the BSB's capital ‘His’ at 2 Corinthians 9:9; readers differ | 6-11 | BSB | BSB text compared |
+| Isaiah 55:10; Hosea 10:12 "may echo"; Proverbs 11:24; 22:9; Luke 12:15; 6:10; 11:27; 8:2 | 6-11 | BSB | BSB text |
+| Prosperity teaching named an error; harvest of righteousness, not wealth | 6-11 | CLAUDE.md "Orthodoxy Guardrails"; deep note `hard`; book page ‘What the letter is not’ | Repository |
+| Tithe pointer to the Genesis 14:17-20 note; Honest Answer on money | 6-11 | genesis/plain/14.json; book page `deeper` | Repository |
+| Care line (gave under pressure or promised a return: not their failure; pastor, friend; not financial advice; Find Help) | 6-11 | Brief; site form | Repository wording, no phone number |
+| Leitourgia: public service paid by a rich citizen; priests' service in the old Greek; ‘liturgy’ | 12-15 | Deep note `words`, `cultural` | Repository |
+| Anekdiēgētos only here; most take the gift as Christ | 12-15 | Deep note `words`, `christ` | Repository; "most readers" |
+| 1 Chronicles 29:9; Psalm 106:2; Isaiah 60:5 ("some readers think"; Paul does not say so) | 12-15 | BSB | BSB text |
