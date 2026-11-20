@@ -34,7 +34,7 @@ import "./wisdom/wisdom.css";
 const NOT_ADVICE: Record<string, string> = {
   money: "This page is not financial or legal advice. For debts, bills and the choices in front of you, a nonprofit credit counselor or another qualified adviser can help you see your options.",
   law: "This page is not legal advice. For a legal question, talk to a lawyer.",
-  medicine: "This page is not medical advice. If worry or sadness is taking your sleep, your appetite or your days, tell a doctor.",
+  medicine: "This page is not medical advice. For your health and your treatment, or if worry or sadness is taking your sleep, your appetite or your days, talk to a doctor.",
 };
 
 function Jump({ entry }: { entry: Entry }) {
