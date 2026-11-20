@@ -19,6 +19,7 @@ On the age of the earth, evolution, the details of a historical Adam and the ext
 ## The questions
 
 1. **Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?** The track record of natural explanation, the god of the gaps, what science presupposes, and what kind of question it can settle.
+2. **The church condemned Galileo. Hasn't religion always been at war with science?** What happened in 1616 and 1633 and what Galileo was and wasn't sentenced to, where the church was wrong, and how the "war" was written in the nineteenth century and taken apart since.
 
 ## Words these pages use
 

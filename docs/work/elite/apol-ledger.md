@@ -1180,6 +1180,35 @@ Pieces: `docs/work/elite/apol-pilot/science/` and `client/public/questions/scien
 
 Cut: Coyne's university (not checked); Coulson as a Methodist (not checked); Dawkins's sentence as a quotation (primary text not seen).
 
+### p. "Hasn't religion always been at war with science?" (galileo-and-the-war)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Draper, *History of the Conflict between Religion and Science* (1874); Draper a scientist, physician and chemist, an early photographer of the moon (1840) | Second run (title, year); S: Linda Hall Library, Project Gutenberg, publisher listings | Verified (secondary) |
+| White, *A History of the Warfare of Science with Theology in Christendom* (1896), two volumes, astronomy and geology to medicine; first president of Cornell | Second run; S: *Nature* review (1896), Project Gutenberg, Wikipedia | Verified |
+| Critics of Galileo used Joshua 10 (the sun standing still); Galileo's letter to Castelli, 21 December 1613, and to Christina, 1615 | S: Wikipedia "Letter to Benedetto Castelli", Royal Society item, Scripta article | Verified (secondary) |
+| 24 February 1616: the consultors' unanimous report; the sun at the center absurd in philosophy and "formally heretical", contrary to Scripture; the earth's motion at least erroneous in faith; the punctuation of the Latin argued (Graney) | S: inters.org historical report, EB1911, Vatican Observatory posts | Verified (secondary); two words quoted, the rest paraphrased because translations differ |
+| 26 February 1616: Galileo before Bellarmine; the minute records a strict injunction, Bellarmine's certificate only a warning | S: Fordham documents, Vatican Observatory | Verified (secondary) |
+| 5 March 1616: Congregation of the Index; Copernicus's *De revolutionibus* suspended until corrected; Foscarini's book banned outright; Galileo not named | S: Popular Science Monthly excerpt, Fordham | Verified (secondary) |
+| Bellarmine to Foscarini, 12 April 1615: a true demonstration would require careful interpretation of contrary passages; he would not believe one existed until shown | S: inters.org text, Christian History Institute, Gingerich | Verified (secondary), paraphrased |
+| *Dialogue* 1632; trial 1633; 22 June 1633 "vehemently suspect of heresy"; abjuration kneeling; *Dialogue* prohibited; formal imprisonment changed the next day to house arrest; Arcetri until his death in 1642 | Second run ("vehemently suspect of heresy", house arrest); S: OSU "Documents in the Case of Galileo", Museo Galileo, EB1911 | Verified. The penitential psalms (one copy only) are not used |
+| 1758 general prohibition of heliocentric books dropped; Copernicus and the *Dialogue* off the Index in 1835 | S: Wikipedia index list, Casanatense exhibition, Catholic World Report | Verified (secondary) |
+| Galileo quoted Augustine in 1615, "a disgraceful and dangerous thing" | Second run | Verified, quoted |
+| The saying that Scripture teaches how one goes to heaven, not how heaven goes, credited by Galileo to an ecclesiastic of high rank | S: Wikipedia (Letter to Christina), Drake's translation as cited | Verified (secondary), paraphrased; Baronius not named (attribution uncertain) |
+| Telescope: Jupiter's moons (1610), Venus's phases; against Ptolemy, not proof of the earth's motion (consistent with Tycho's system) | S: Oxford History of Science Museum ("The phases of Venus, 1610-23"), Ohio State lecture, NYU lecture | Verified (secondary) |
+| Stellar parallax first measured convincingly by Bessel in 1838 (61 Cygni) | S: encyclopedia.com, Carnegie timeline, Popular Science Monthly | Verified (secondary) |
+| Finocchiaro in Numbers, ed., *Galileo Goes to Jail* (2009), myth 8: threatened with torture, no evidence he was tortured; apart from perhaps three days (21 to 24 June 1633) never in prison; the published documents long made imprisonment look likely | S: UNLV repository ("Prison and Torture as False but Well-Founded Myths"), reviews quoting the chapter | Verified (secondary), paraphrased |
+| Numbers 2009, "the greatest myth in the history of science and religion"; a reviewer called him a religious agnostic | Second run | Verified, quoted |
+| Russell, *Inventing the Flat Earth: Columbus and Modern Historians* (1991): educated medieval people knew the earth was round; Irving's life of Columbus (1828) and Letronne; the error flourished 1870 to 1920 with the fights over evolution | S: Powell's, First Things, MUSE review, Wikipedia "Myth of the flat Earth" | Verified (secondary), paraphrased |
+| Brooke 1991: no single thesis of conflict or harmony; complexity | S (row o) | Verified (secondary), paraphrased |
+| Harrison 2015 | Row o | Verified (secondary) |
+| Mendel, Augustinian friar and abbot; the founder of genetics | /faq ledger row (Britannica, Wikipedia, DNA Learning Center) | Verified |
+| Lemaître 1927 and 1931, primeval atom | Second run | Verified |
+| 31 October 1992: John Paul II addressed the Pontifical Academy of Sciences on receiving the commission's conclusions; read by newspapers as an apology | S: Vatican text (record), Astronomy.com, Christian History, McMullin (Vatican Observatory) | Verified (secondary); the phrase "tragic mutual incomprehension" not found, not used |
+| Joshua 10:13 "the sun stood still"; Proverbs 25:2 | Repo (BSB) | Quoted |
+
+Cut: Psalm 93:1 as a text used against Galileo (not confirmed); "most astronomers of the day" still held the old system (not checked); Urban VIII's anger as a cause (stated only as a question historians argue); "as the procedure required" of the threat of torture; the Jesuit astronomers he argued with (not checked); the seven penitential psalms; Giordano Bruno (not checked).
+
 ### The area page (index.md)
 
 | Claim | How verified | Result |
