@@ -10883,3 +10883,27 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Isaiah 40:8; Ezekiel 36:26 | 22-25 | BSB | BSB text |
 
 Cut before publishing: ‘deeply’ as a word for something stretched out (the lexicon gives ‘fervently, earnestly’).
+
+## The plain notes on 1 Peter 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Five vices; newborns and milk; milk most likely the word (1:23-25) | 1-3 | 1-peter/2.json `literary`, `summary` | Repository |
+| Psalm 34:8 applied to Jesus; Psalm 34 again at 3:10-12 | 1-3 | BSB; 1-peter/3.json `literary` | BSB text |
+| Lithos five times; living stone; cornerstone; temple as God's house; hierateuma from Exodus 19:6; only Aaron's line in Israel; priesthood of all believers | 4-10 | 1-peter/2.json `words`, `cultural`, `doctrines` | Repository |
+| Three stone texts read together by early Christians; Isaiah 43:20-21; Hosea's names reversed | 4-10 | 1-peter/2.json `cultural`, `literary`, `story` | Repository |
+| ‘Put to shame’ versus ‘shaken’ in Isaiah 28:16 (the BSB of each); Peter usually follows the Greek | 4-10 | BSB; 1-peter/intro.json `author` (‘use of the Greek Old Testament’) | BSB text; no claim about the Greek wording itself |
+| ‘To this they were appointed’ left to the readings at 1:1-2 | 4-10 | 1-peter/1.json `hard` | Repository, no side |
+| Views on Israel; Romans 11:29; misuse rejected; Acts 2:22-28 pointer | 4-10 | romans/plain/11.json (11-16 `hard`); acts/plain/2.json (22-28 `hard`) | Repository wording, no side |
+| Isaiah 28:16; Psalm 118:22; Isaiah 8:14; Exodus 19:6; Isaiah 43:21; Hosea 2:23 | 4-10 | BSB | BSB text |
+| ‘Beloved, I urge you’ opens a section to 4:11; paroikos and parepidēmos; slander of Christians (festivals, banquets, private meetings); ‘the day He visits us’ an Old Testament phrase | 11-17 | 1-peter/2.json `literary`, `cultural`, `words` | Repository |
+| Emperor called king (basileus); governors; Nero if early 60s; honour not worship, fear for God alone; Acts 5:29 | 11-17 | 1-peter/2.json `historical` | Repository; BSB |
+| Romans 13 notes pointed to; no political party | 11-17 | romans/plain/13.json | Repository |
+| Jeremiah 29:7; Proverbs 24:21; Daniel 6:10 | 11-17 | BSB | BSB text |
+| Household slaves (oiketai), their work, few protections, many converts; household rules rarely addressed slaves | 18-25 | 1-peter/2.json `historical`, `hard` | Repository |
+| Hupogrammos a model of letters to trace; example and substitute; Mark 8:31-33 | 18-25 | 1-peter/2.json `words`, `christ` | Repository |
+| The slavery hard part (not softened; powerless movement; revolts crushed; 1 Corinthians 7:21 ‘most common reading’; Galatians 3:28; Atlantic misuse; Christians who opposed slavery; record mixed) | 18-25 | ephesians/plain/6.json (5-9 `hard`); 1-timothy/plain/6.json (1-2 `hard`) | Repository wording |
+| Care lines ‘It is never a reason to tell someone who is being hurt ...’ and ‘A word for anyone who is being held, owned or forced to work today ...’ | 18-25 | 1-thessalonians/plain/3.json (1-5 `hard`); 1-corinthians/plain/7.json (17-24 `hard`) | Word for word |
+| Isaiah 53:5, 6, 7, 9, 12; Exodus 21:16; Job 31:15; Isaiah 40:11 | 18-25 | BSB | BSB text |
