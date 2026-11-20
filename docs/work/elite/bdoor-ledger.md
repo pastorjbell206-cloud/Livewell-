@@ -8010,3 +8010,27 @@ Cut: the date of the confession "Jesus is Lord" as earliest (stated only as
 
 Cut: Columella by name; the 2015 Vatican document on 11:29 (found, not
 needed); Calvin by name for the "whole people of God" reading.
+
+## The plain notes on Romans 12 (2026-11-20)
+
+1 web search.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| "Therefore" turns from God's mercy to the life that follows; 11:32 | 1-2 | BSB; repository deep note | BSB text |
+| Metamorphoō: used of Christ's transfiguration (Matthew 17:2; Mark 9:2) and of Christians (Romans 12:2) | 1-2 | Abbott-Smith lexicon in the repository (G3339) | Script over `lex/G` |
+| Psalm 51:17; Hosea 6:6; Psalm 50:14 | 1-2 | BSB | BSB text |
+| Body picture as in 1 Corinthians 12; prophecy "in proportion to his faith" read two ways | 3-8 | BSB; standard | BSB text; stated as readings |
+| Proverbs 3:7; Exodus 31:3; Numbers 11:29; Joel 2:28 | 3-8 | BSB | BSB text |
+| Gifts today (continuationist, cessationist, in between); pointer to Acts 2:1-4 | 3-8 | Acts 2 plain note | Repository; no side |
+| Anupokritos, unfeigned; built from hupokritēs, a stage actor | 9-13 | Abbott-Smith lexicon in the repository (G0505, G5273) | Script over `lex/G` |
+| Paul staying with Gaius (16:23); Phoebe "very likely" the carrier | 9-13 | BSB; book page | Repository |
+| Amos 5:15; Genesis 18:1-8; Deuteronomy 10:19; 15:7 | 9-13 | BSB | BSB text |
+| Matthew 5:44; Nero and the Christians of Rome a few years later | 14-21 | BSB; earlier ledger (Tacitus, Annals 15.44) | Ledger |
+| Deuteronomy 32:35; Leviticus 19:18; Proverbs 25:21-22; Paul follows the Greek | 14-21 | BSB | BSB text |
+| The Psalms book page's part on the cursing psalms, quoting Romans 12:19 | 14-21 | Psalms intro (`teaching`) | Repository |
+| Burning coals: shame leading to repentance (the reading many hold); judgment; an Egyptian penitence rite with a dish of burning coals, thinly attested and later | 14-21 | Commentaries; NTS article "Coals of Fire: Sign of Repentance or Revenge?" | Search: cambridge.org NTS abstract; biblegateway Reformation Study Bible note on Proverbs 25:22; tmcdaniel.palmerseminary.edu. No scholar named |
+| Safety lines ("Nothing in this passage asks anyone to stay where they or their children are in danger ... The Find Help page on this site lists places to turn.") | 14-21 | Genesis 16 plain note | Repository wording, word for word |
+
+Cut: the Roman fable of the belly and the members (not checked); masks in
+the ancient theatre; inns; early Christian writers on the coals (not checked).
