@@ -63,6 +63,12 @@ export interface FinderTopic {
   deep?: boolean;
   /** True on the heavy subjects that carry the help lines. */
   care?: boolean;
+  /**
+   * True when the topic's own page puts the path to help first (a heavy
+   * subject, or a whole-Bible section that opens with Find Help); derived by
+   * build-wisdom-index.mjs. The finder shows the Find Help line under it.
+   */
+  help?: boolean;
 }
 
 export interface FinderArea {

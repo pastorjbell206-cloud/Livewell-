@@ -279,7 +279,8 @@ export default function WisdomFinder() {
                       Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
                     </span>
                   </Link>
-                  {best.safety && (
+                  {/* The same line under a safety result and under a topic whose own page opens with the path to help. */}
+                  {(best.safety || best.topic.help) && (
                     <p className="wf-safety">
                       If you are in danger or thinking of hurting yourself,{" "}
                       <Link href="/help" className="wf-inline">

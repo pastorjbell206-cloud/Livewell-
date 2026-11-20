@@ -91,6 +91,40 @@ describe("WisdomFinder", () => {
     expect(screen.queryByText("Just as close")).toBeNull();
   });
 
+  it("shows the Find Help line under a first result whose own page opens with the path to help", async () => {
+    render(
+      <TestProviders>
+        <WisdomFinder />
+      </TestProviders>,
+    );
+    await waitFor(() => expect(screen.getByText("Browse by area of life")).toBeInTheDocument());
+    const box = screen.getByRole("searchbox", { name: "What are you facing?" });
+    fireEvent.change(box, { target: { value: "im completely burned out at work" } });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    await waitFor(() => expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/work-and-burnout"));
+    expect(document.querySelector('.wf-safety a[href="/help"]')).not.toBeNull();
+    // A topic whose page does not open with the path to help gets no such line.
+    fireEvent.change(box, { target: { value: "i cant say no to anyone" } });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    await waitFor(() => expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/saying-no"));
+    expect(document.querySelector(".wf-safety")).toBeNull();
+  });
+
+  it("marks for the help line every heavy subject and every page that opens with Find Help, from the data", () => {
+    const sensitive = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../data/sensitive-pages.json"), "utf8")).wisdom;
+    const heavy = new Set([...Object.keys(sensitive.lead), ...Object.keys(sensitive.end)]);
+    const help = new Set(finder.topics.filter((t) => t.help).map((t) => t.id));
+    for (const id of heavy) expect(help.has(id), id).toBe(true);
+    for (const id of ["numbness", "mental-exhaustion", "work-and-burnout", "purpose-and-meaning"]) expect(help.has(id), id).toBe(true);
+    for (const id of help) {
+      if (heavy.has(id)) continue;
+      const deep = JSON.parse(fs.readFileSync(path.join(PUBLIC, "wisdom/deep", `${id}.json`), "utf8")) as { whole: string[] };
+      expect(deep.whole[0].split(/(?<=[.?])\s+/).slice(0, 3).join(" "), id).toContain("Find Help");
+    }
+    expect(help.has("saying-no")).toBe(false);
+    expect(help.has("kindness")).toBe(false);
+  });
+
   it("lists an area's subjects when an area is chosen", async () => {
     render(
       <TestProviders>
