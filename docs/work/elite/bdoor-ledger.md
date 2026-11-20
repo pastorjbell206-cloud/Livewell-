@@ -13059,3 +13059,24 @@ Cut before publishing: a reason for building the house before the furniture (‘
 | Psalm 141:2; Revelation 8:3 | 25-29 | BSB | BSB text |
 
 Cut before publishing: ‘the most holy object goes to the craftsman God called by name’ (no source); ‘the people who lived by God's gift of bread were kept always before him’ (a meaning the text does not give); the echo of two angels in the tomb (John 20:12), which the deep note itself calls only suggestive; the menorah in a modern state's emblem (no modern state is in view in these notes).
+
+## The plain notes on Exodus 38 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The work moves out to the courtyard; the altar first inside the gate; no one reaches God's presence without passing it | 1-8 | exodus/38.json `story` | Repository |
+| The altar's size; hollow and portable; the Tel Beersheba altar, found 1973 | 1-8 | exodus/38.json `historical` | Repository |
+| Bronze mirrors, prized; the women mentioned again only in 1 Samuel 2:22; the verb of their service; what they did is not explained | 1-8 | exodus/38.json `cultural`, `words` (H6633) | Repository |
+| 1 Samuel 2:22; Hebrews 13:10 | 1-8 | BSB; exodus/38.json `christ` | BSB text |
+| The courtyard's size and height; one gate on the east in the veil's colors; ordinary life outside | 9-20 | exodus/38.json `cultural` | Repository |
+| The metals descend outward | 9-20 | exodus/38.json `literary` | Repository |
+| Psalm 84:10; John 10:9 (a sheepfold; a link of theme) | 9-20 | BSB; exodus/38.json `christ` | BSB text |
+| An accounting report; Ithamar, Aaron's youngest son; Bezalel and Oholiab named ‘as if signing’ | 21-31 | exodus/38.json `literary`, `historical` | Repository |
+| The arithmetic (301,775 shekels; a talent of 3,000); about a ton of gold, over three of silver, over two of bronze | 21-31 | exodus/38.json `historical` | Repository |
+| The ransom silver and the hundred bases; the beka weights found in and around Jerusalem | 21-31 | BSB (38:25-28); exodus/38.json `cultural`, `words` (H1235) | Repository |
+| The 603,550: as written; elef as clan or unit and its difficulty; symbolic or a later census; the text means thousands | 21-31 | exodus/38.json `hard`; exodus/intro.json `teaching` (‘The sea, the road and the mountain’) | Repository; no side |
+| Numbers 1:46; 2 Corinthians 8:21; Luke 16:10 | 21-31 | BSB | BSB text |
+
+Cut before publishing: nothing was drafted beyond the notes here; Mendenhall's name is left to the deep note.
