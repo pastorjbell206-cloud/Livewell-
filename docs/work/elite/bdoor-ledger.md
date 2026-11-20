@@ -10548,3 +10548,30 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Ezekiel 36:26; Luke 22:20; Romans 11:1, 28-29 | 7-13 | BSB | BSB text |
 | Views on Israel's place; misuse named and rejected; Acts 2:22-28 pointer; churches since the Holocaust | 7-13 | romans/plain/11.json (11-16); acts/plain/2.json (22-28); hebrews/8.json `hard` | Repository wording, no side |
 | ‘Soon disappear’ read of the temple standing, or from Jeremiah's day | 7-13 | verses/8.json (13); hebrews/intro.json `date` | Repository, no side |
+
+## The plain notes on Hebrews 9 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tabernacle's two rooms and furnishings; twelve loaves renewed each Sabbath; the wilderness tent, not the temple | 1-10 | Chapter deep note `historical`; verses/9.json (2) | Repository |
+| Day of Atonement: bull for himself, goat for the people, scapegoat | 1-10 | Chapter deep note `historical`; Leviticus 16 | Repository; BSB |
+| Layout read as the Spirit's ‘not yet’; parabolē; external regulations | 1-10 | verses/9.json (8, 9-10) | Repository |
+| Exodus 26:33; Leviticus 16:2, 21, 30; Leviticus 4:20; Psalm 103:12; Exodus 30:6 | 1-10 | BSB | BSB text |
+| Saints of the old covenant forgiven on the credit of the sacrifice to come; Romans 3:25 | 1-10 | verses/9.json (15 `theology`) | Repository; BSB |
+| Misuse named and rejected; Acts 2:22-28 pointer | 1-10 | acts/plain/2.json (22-28) | Repository wording |
+| Incense altar puzzle: censer, or belonging in use; ‘we cannot discuss these things in detail’ | 1-10 | Chapter deep note `hard` | Repository |
+| ‘By his own blood’ the ground of entry, not carrying blood; eternal redemption; lutrōsis | 11-14 | verses/9.json (12); chapter deep note `words` | Repository |
+| Red heifer ashes for corpse impurity; lesser to greater; ‘eternal Spirit’ most often the Holy Spirit, some Christ's divine spirit; amōmos | 11-14 | Chapter deep note `cultural`; verses/9.json (13-14) | Repository |
+| Numbers 19:9; Psalm 51:10, 17; Isaiah 1:11; Micah 6:6-8 | 11-14 | BSB | BSB text |
+| Christ's death reaches back to transgressions under the first covenant | 15-22 | verses/9.json (15) | Repository |
+| Diathēkē covenant and will; BSB reads ‘will’; covenant reading and the curse | 15-22 | Chapter deep note `cultural`; verses/9.json (16-17) | Repository, no side |
+| Exodus 24:7-8; Hebrews adds water, scarlet wool, hyssop from other rites (Leviticus 14:4; Numbers 19:6) | 15-22 | Chapter deep note `historical`; BSB | Repository; BSB text |
+| ‘Almost’: flour for the poor (Leviticus 5:11); fire and water | 15-22 | verses/9.json (21-22) | Repository; BSB |
+| Leviticus 17:11; Genesis 22:8 | 15-22 | BSB | BSB text |
+| Ways of describing the atonement (penal substitution, not an angry Father against an unwilling Son; Christus Victor; love shown) | 15-22 | doctrines/atonement.json `differ` | Repository, no side |
+| Purifying heavenly things: readings; incense cloud ‘so that he will not die’ (Leviticus 16:13); appears openly | 23-28 | verses/9.json (23, 24) | Repository; BSB |
+| Once at the end of the ages; Isaiah 53:12; Ecclesiastes 12:14 | 23-28 | verses/9.json (25-26, 27-28); BSB | Repository; BSB text |
+| Verse 27 rules out repeated lives (‘many readers’); intermediate state views pointed to | 23-28 | verses/9.json (27-28 `theology`); 2-timothy/plain/4.json (6-8) | Repository |
+| Grief care line | 23-28 | 2-timothy/plain/1.json (8-12) | Word for word |
