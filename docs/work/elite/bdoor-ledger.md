@@ -10386,3 +10386,29 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Psalm 110:1 most quoted or echoed; Matthew 22:42-45 | 10-14 | psalms/plain/110.json (1-3 `later`) | Repository; BSB |
 | Psalm 34:7; Philippians 2:10-11 takes up Isaiah; John 1:3 | 10-14 | Chapter deep note `hard`; BSB | Repository; BSB |
 | Angels continually sent to serve believers | 10-14 | verses/1.json (14) | Repository |
+
+## The plain notes on Hebrews 2 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| First of five warnings; pararreō (boat slipping past harbour, ring off a finger); slow drift | 1-4 | Chapter deep note `story`, `words` | Repository |
+| Argument from lesser to greater, a standard Jewish pattern | 1-4 | Chapter deep note `literary` | Repository |
+| Law through angels: not in Exodus, widespread tradition; Greek Deuteronomy 33:2; Acts 7:53; Galatians 3:19 | 1-4 | Chapter deep note `historical` | Repository; BSB |
+| Second generation (verse 3); signs as Acts describes | 1-4 | Chapter deep note `historical` | Repository |
+| Deuteronomy 33:2; 30:15; 26:8; Psalm 95:7-8 | 1-4 | BSB | BSB text |
+| Warning readings (Reformed and Baptist; Wesleyan, Arminian and Catholic); Romans 8:31-39 note; Honest Answer | 1-4 | romans/plain/8.json (31-39); 2-timothy/plain/2.json (11-13) | Repository, no side |
+| Care line ‘If you are afraid that you have fallen away ...’ | 1-4 | galatians/plain/5.json (1-6) | Word for word |
+| Psalm 8:4-6 in its setting; Genesis 1:26; elohim; Greek ‘angels’ | 5-9 | psalms/plain/8.json (3-9); BSB | Repository; BSB text |
+| ‘A little’ in degree or for a little while; ‘taste death’ an idiom for dying; huper pantos | 5-9 | verses/2.json (7, 9) | Repository |
+| Extent of the atonement: all without exception; particular or definite; middle view; not universalism | 5-9 | 1-john/2.json `hard`; 2-peter/2.json `hard` | Repository wording, no side |
+| Archēgos, pioneer; family duties (kinsman-redeemer); not ashamed | 10-13 | Chapter deep note `cultural`, `words` | Repository |
+| Psalm 22:1, 22; Isaiah 8:17-18; Leviticus 25:48 | 10-13 | BSB | BSB text |
+| ‘Made perfect’ = completion; Greek OT word group for consecrating priests; 4:15; 7:26; Luke 2:52 | 10-13 | Chapter deep note `hard`, `words` | Repository; BSB |
+| Chalcedon wording | 10-13 | creeds/documents/chalcedonian-definition.json | Repository text |
+| Fear of death in the ancient world; funeral inscriptions; philosophers | 14-18 | Chapter deep note `cultural` | Repository |
+| Epilambanetai, to take by the hand; seed of Abraham Israel or all with Abraham's faith (Galatians 3:29) | 14-18 | verses/2.json (16) | Repository |
+| First use of ‘high priest’; hilaskomai | 14-18 | Chapter deep note `story`, `words` | Repository |
+| Genesis 3:15; Isaiah 25:8; Hosea 13:14; Leviticus 16:17; 1 Corinthians 15:26; John 11:35 | 14-18 | BSB | BSB text |
+| Death an enemy; victory won, full result to come; care lines on grief and self-harm | 14-18 | 2-timothy/plain/4.json (6-8); 2-timothy/plain/1.json (8-12) | Word for word |
