@@ -7600,3 +7600,26 @@ No web search.
 | Psalm 26:2; 1 Corinthians 4:4; Matthew 5:44; Romans 12:9 | 139 | BSB | BSB text |
 
 Cut: the Aramaic-like words in 139 and the dating debate (not needed); the Septuagint heading for 138; C. S. Lewis (deep note).
+
+## The plain notes on Psalms 140 to 143 (2026-11-20)
+
+No web search.
+
+| Claim | Psalm | Source | Checked by |
+|---|---|---|---|
+| 140:3 quoted in Romans 3:13 | 140 | BSB | BSB text compared |
+| Snares, nets, lures from hunting; head shielded as a helmet | 140 | Repository deep note (cultural) | Site's own teaching |
+| Selah three times (3, 5, 8) | 140 | BSB | BSB text |
+| Proverbs 25:21-22 quoted in Romans 12:20 | 140 | BSB | BSB text |
+| Incense morning and evening (Exodus 30:7-8); the evening offering | 141 | BSB; repository deep note | BSB text |
+| 141:5-7 among the hardest to translate; text may be damaged; versions differ | 141 | Repository deep note (historical, hard) | Stated as uncertain |
+| Revelation 8:3; James 3:2; Proverbs 27:6; Matthew 26:41 | 141 | BSB | BSB text |
+| The caves: Adullam (1 Samuel 22:1-2) and En-gedi (1 Samuel 24); the heading does not say which; Psalm 57's heading | 142 | Repository deep note (historical); BSB | BSB text |
+| The right hand as the defender's place | 142 | BSB (109:31; 110:5; 16:8) | BSB text |
+| Matthew 26:56; John 16:32; 2 Timothy 4:16-17 | 142 | BSB | BSB text |
+| Care line for the lonely (a pastor, a friend, a neighbour; despair or thoughts of self-harm: speak to someone today; Find Help) | 142 | Site's care rule | Stated plainly |
+| 143 the last of the seven penitential psalms (pointer to the Psalm 130 row) | 143 | Earlier row (Psalm 130 search) | Earlier ledger |
+| 143:2 echoed in Romans 3:20 and Galatians 2:16 | 143 | BSB | BSB text |
+| Care line on 143:4; 143:12 pointed to the book page's cursing psalms | 143 | Site's care rule; book page | Repository |
+
+Cut: the Septuagint's Absalom note on 143 (not checked); David's life settings for 140 and 141.
