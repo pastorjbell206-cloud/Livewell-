@@ -8662,3 +8662,23 @@ Three searches. Scripture is the BSB in the repository, matched by the strict ch
 | Exodus 29:18; Genesis 8:21; Ezekiel 20:41; Deuteronomy 30:15; Exodus 4:10; Isaiah 1:22 | 12-17 | BSB | BSB text |
 
 Cut: Titus as the bearer of the tearful letter stated as fact; prisoners "executed at the end" as a rule.
+
+## The plain notes on 2 Corinthians 3 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Letters of recommendation ordinary; many survive on papyrus; usually praise the bearer, then a request; tied to patronage and status | 1-3 | Papyrology | Search: tyche.univie.ac.at (Blumell, letters of introduction); berlpap.smb.museum "Letter of Recommendation"; jgrchj.net 12 (Yoon); nec.ro (Tamas, patronage). Deep note `cultural` |
+| Acts 18:27; Romans 16:1-2; Exodus 31:18; Jeremiah 31:31-34; Ezekiel 36:26-27 | 1-3, 4-11 | BSB | BSB text |
+| Gramma, something written; Romans 7:12; Romans 3:31; Luke 22:20 | 4-11 | BSB; deep note `words` | Repository |
+| "The letter kills" taken by some as a rule for hidden meanings; most think not | 4-11 | Deep note `doctrines` | Stated generally, no names |
+| Lesser-to-greater argument a Jewish form | 4-11 | Deep note `literary` | Repository; worded "often argued" |
+| Katargeō: fade, be brought to an end, be set aside; Exodus does not say the shine faded | 4-11 | Greek text (G2673 at 3:7, 11, 13, 14); Exodus 34:29-35 BSB; deep note `cultural` | Repository |
+| Deuteronomy 30:6; Psalm 19:7 | 4-11 | BSB | BSB text |
+| Moses read every Sabbath (Acts 15:21); Paul a Pharisee (Philippians 3:5) | 12-18 | BSB | BSB text |
+| 3:16 echoes Exodus 34:34 | 12-18 | BSB comparison; deep note `literary` | BSB text |
+| ‘The Lord is the Spirit’: two readings, neither erasing the distinction | 12-18 | Deep note `doctrines` | Repository; no side |
+| Katoptrizomai, reflect or behold as in a mirror; metamorphoō as at Matthew 17:2; ‘from glory into glory’ word for word | 12-18 | Greek text (G2734, G3339; apo doxēs eis doxan) | Script over the repository's Greek |
+| Contempt for Jews rejected in the site's wording; Romans 9:2; 10:1; 11:1; Luke 24:27 | 12-18 | Acts 2 and Romans 11 plain notes; BSB | Repository wording |
+| Exodus 34:33-34; 33:18, 20; Deuteronomy 29:4; Psalm 119:18; Isaiah 61:1; Genesis 1:27; Galatians 5:13 | 12-18 | BSB | BSB text |
