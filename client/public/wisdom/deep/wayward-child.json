@@ -76,7 +76,7 @@
       },
       {
         "name": "Faith that can be lost",
-        "body": "Wesleyan, Methodist and many Pentecostal churches, and the Catholic and Orthodox churches in their own terms, teach that a real believer can turn away from Christ and be lost. Parents in these churches pray for a child to come back to a faith that was real."
+        "body": "Wesleyan, Methodist and many Pentecostal churches, and the Catholic Church in its own terms, teach that a real believer can turn away from Christ and be lost. Parents in these churches pray for a child to come back to a faith that was real."
       }
     ],
     "after": "Both pray the same prayer and hand the child to the same God. The Honest Answer “Can you lose your salvation?” sets out the question at more length."
@@ -87,15 +87,43 @@
     "lead": "Psalm 130 was prayed by someone still waiting when it ended. Pray it slowly, and put your child's name where the psalm says Israel."
   },
   "next": [
-    { "kind": "Honest Answer", "label": "What do I do when my teenager says they don't believe?", "href": "/answers/when-your-teenager-says-they-dont-believe" },
-    { "kind": "Honest Answer", "label": "Can you lose your salvation?", "href": "/answers/can-you-lose-your-salvation" },
-    { "kind": "Reading", "label": "The Wayward Child", "href": "/life/the-wayward-child" },
-    { "kind": "Find Help", "label": "Parenting", "href": "/help/parenting" }
+    {
+      "kind": "Honest Answer",
+      "label": "What do I do when my teenager says they don't believe?",
+      "href": "/answers/when-your-teenager-says-they-dont-believe"
+    },
+    {
+      "kind": "Honest Answer",
+      "label": "Can you lose your salvation?",
+      "href": "/answers/can-you-lose-your-salvation"
+    },
+    {
+      "kind": "Reading",
+      "label": "The Wayward Child",
+      "href": "/life/the-wayward-child"
+    },
+    {
+      "kind": "Find Help",
+      "label": "Parenting",
+      "href": "/help/parenting"
+    }
   ],
   "careLines": [
-    { "from": "psalms/plain/130", "text": "Waiting is not a failure of faith." },
-    { "from": "psalms/plain/130", "text": "Tell someone you trust: a doctor, a pastor or a friend." },
-    { "from": "psalms/plain/130", "text": "If you have thoughts of hurting yourself, speak to someone today." },
-    { "from": "psalms/plain/130", "text": "The Find Help page on this site lists places to turn." }
+    {
+      "from": "psalms/plain/130",
+      "text": "Waiting is not a failure of faith."
+    },
+    {
+      "from": "psalms/plain/130",
+      "text": "Tell someone you trust: a doctor, a pastor or a friend."
+    },
+    {
+      "from": "psalms/plain/130",
+      "text": "If you have thoughts of hurting yourself, speak to someone today."
+    },
+    {
+      "from": "psalms/plain/130",
+      "text": "The Find Help page on this site lists places to turn."
+    }
   ]
 }
