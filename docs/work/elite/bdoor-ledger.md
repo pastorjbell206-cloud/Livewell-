@@ -12778,3 +12778,29 @@ Cut before publishing: nothing beyond the wording of the idiom (single quotation
 | Leviticus 24:2; Matthew 5:14; Revelation 2:5 | 20-21 | BSB; exodus/27.json `christ` | BSB text |
 
 Cut before publishing: nothing.
+
+## The plain notes on Exodus 28 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Who can come near: a priesthood as mediators; Aaron below making the calf | 1-5 | exodus/28.json `story` | Repository |
+| Costly materials; royal purple from sea snails | 1-5 | exodus/28.json `historical` | Repository |
+| Hebrews 4:14-15; 1 Peter 2:5 | 1-5 | BSB; exodus/28.json `christ` | BSB text |
+| The ephod as apron or vest; Samuel's linen ephod | 6-14 | exodus/28.json `words` (H0646) | Repository |
+| Names engraved like seals; a seal stood for its owner; carried on shoulders and over the heart | 6-14, 15-30 | exodus/28.json `cultural` | Repository |
+| Zikkaron: not that God forgets | 6-14 | exodus/28.json `words` (H2146) | Repository |
+| 1 Samuel 2:18; Isaiah 49:16; Hebrews 7:25 | 6-14 | BSB; exodus/28.json `christ` | BSB text |
+| The stones uncertain; choshen of judgment; Urim and Thummim undescribed, used to learn God's will, meaning debated | 15-30 | exodus/28.json `cultural`, `words` (H2833) | Repository |
+| Numbers 27:21; Ezra 2:63; Song of Songs 8:6; Revelation 21:19 | 15-30 | BSB; exodus/28.json `cultural`, `christ` | BSB text |
+| The bells: two readings; the text says only ‘so that he will not die’ | 31-38 | exodus/28.json `hard` | Repository; no side |
+| The plate bears the iniquity of the holy things; nasa as bear and forgive; 34:7 | 31-38 | exodus/28.json `words` (H5375J) | Repository |
+| Why the detail and the warnings; holiness dangerous to the unholy; Nadab and Abihu | 31-38 | exodus/28.json `hard` | Repository |
+| Leviticus 10:2; Zechariah 14:20; Hebrews 7:27 | 31-38 | BSB; exodus/28.json `christ` | BSB text |
+| To ordain is to fill the hand; portions in the priests' hands in chapter 29 | 39-43 | exodus/29.json; leviticus/8.json | Repository |
+| Undergarments for modesty (20:26); perhaps against rites with nakedness | 39-43 | exodus/28.json `cultural` | Repository |
+| Josephus on the high priest's dress; AD 70; Jewish life carried the law forward through study and interpretation | 39-43 | exodus/28.json `historical`; guides/reading-law.json | Repository |
+| 1 Peter 2:9; Revelation 1:13; a pattern, not a hidden prediction | 39-43 | BSB; exodus/28.json `christ`; hebrews/plain/8.json | BSB text |
+
+Cut before publishing: a guess that the hand was filled with the first portion of offerings (the notes give the idiom as installing in office); that Jewish worship continued in prayer (the guide says study and interpretation). Also cut: ‘carried with strength and with love’ (a meaning the text does not give the shoulders and the heart).
