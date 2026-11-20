@@ -120,7 +120,14 @@
   "controls me": "coercion",
   "isolates me": "coercion",
   "takes my phone": "coercion",
-  "took my phone": "coercion"
+  "took my phone": "coercion",
+  "am i saved": "saved salvation",
+  "really saved": "saved salvation",
+  "im saved": "saved salvation",
+  "be saved": "saved salvation",
+  "get saved": "saved salvation",
+  "being saved": "saved salvation",
+  "truly saved": "saved salvation"
  },
  "synonyms": {
   "son": "child",
@@ -3576,7 +3583,9 @@
     "online shopping every night",
     "save for a rainy day"
    ],
-   "not": [],
+   "not": [
+    "salvation"
+   ],
    "related": [
     "money",
     "greed",
@@ -3620,6 +3629,24 @@
     "giving-to-the-church",
     "greed",
     "justice-and-the-poor"
+   ]
+  },
+  "consumerism-and-stuff": {
+   "phrases": [
+    "shopping makes me feel better",
+    "too much stuff in my house",
+    "cant stop buying things",
+    "retail therapy",
+    "keeping up with the neighbors",
+    "always want the newest phone",
+    "house full of clutter",
+    "amazon packages every day"
+   ],
+   "not": [],
+   "related": [
+    "contentment",
+    "greed",
+    "saving-and-spending"
    ]
   }
  }

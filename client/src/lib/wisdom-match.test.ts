@@ -214,6 +214,18 @@ describe("wisdom matcher", () => {
     expect(promo).not.toContain("grief");
   });
 
+  it("never files a question of salvation under Saving and Spending, and still finds money saved", () => {
+    // "saved" and "saving" share a stem; once Saving and Spending was written in full its name and page outscored
+    // assurance for "am I really saved" (tenth build). Rewrites now add "salvation" to the ways people ask it.
+    for (const q of ["am I really saved", "how do i know im saved", "will i be saved"]) {
+      const ids = findTopics(prep, q).matches.map((m) => m.topic.id);
+      expect(ids[0], q).toBe("assurance-of-faith");
+      expect(ids.slice(0, 3), q).not.toContain("saving-and-spending");
+    }
+    const money = findTopics(prep, "i saved money for a car").matches.map((m) => m.topic.id);
+    expect(money.slice(0, 3)).toContain("saving-and-spending");
+  });
+
   it("stems plain word forms together", () => {
     expect(stem("worrying")).toBe(stem("worried"));
     expect(stem("worries")).toBe(stem("worry"));
