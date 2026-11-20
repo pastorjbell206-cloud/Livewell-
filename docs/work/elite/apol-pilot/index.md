@@ -21,6 +21,7 @@ The case these pages make is a modest one, and it is meant to be. They don't cla
 3. **Two famous passages were not in the earliest Bibles: the ending of Mark and the woman caught in adultery. What else was added?** The passages one by one, and the hard question they leave.
 4. **Did scribes change the text to make Jesus look more divine?** The "orthodox corruption" case at full strength, where it is right, and what the earliest letters show.
 5. **Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?** The famous comparison with corrected figures, and the one question it answers.
+6. **Who decides what the Greek New Testament says, and was there ever a single original to find?** How a critical edition is made, step by step, and the serious question about the word "original".
 
 ## Words these pages use
 

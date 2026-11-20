@@ -55,6 +55,13 @@
           "blurb": "The famous comparison with corrected figures, and the one question it answers.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "who-decides-what-the-text-says",
+          "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
+          "blurb": "How a critical edition is made, step by step, and the serious question about the word \"original\".",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -228,6 +235,26 @@
       "area": "text",
       "slug": "compared-with-other-ancient-books",
       "question": "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?",
+      "live": false
+    },
+    {
+      "claim": "The search for one original text of the Gospels misunderstands how the early church handed them on",
+      "proponent": "D. C. Parker",
+      "work": "The Living Text of the Gospels",
+      "year": 1997,
+      "area": "text",
+      "slug": "who-decides-what-the-text-says",
+      "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
+      "live": false
+    },
+    {
+      "claim": "\"Original text\" has several meanings, and the field has rarely said which it means",
+      "proponent": "Eldon Jay Epp",
+      "work": "The Multivalence of the Term 'Original Text' in New Testament Textual Criticism",
+      "year": 1999,
+      "area": "text",
+      "slug": "who-decides-what-the-text-says",
+      "question": "Who decides what the Greek New Testament says, and was there ever a single original to find?",
       "live": false
     }
   ],
