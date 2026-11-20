@@ -106,7 +106,9 @@ const current = () => {
 };
 const live = () => screen.getByTestId("fp-live").textContent ?? "";
 const visibleCaption = () =>
-  document.querySelector(".fp-cap.is-on .fp-cap__text")?.textContent ?? "";
+  document.querySelector(
+    ".fp-cap.is-on .fp-cap__text, .fp-cap.is-on .fp-cap__lede"
+  )?.textContent ?? "";
 const advance = (ms: number) =>
   act(() => {
     vi.advanceTimersByTime(ms);
@@ -130,6 +132,13 @@ describe("the player's contract", () => {
     render(player());
     expect(current()).toBe(0);
     expect(visibleCaption()).toBe(FILM.line.younger);
+    // Before Play, the caption panel lists the film's pictures in order.
+    expect(
+      Array.from(
+        document.querySelectorAll(".fp-cap.is-on .fp-cap__list li"),
+        li => li.textContent
+      )
+    ).toEqual(FILM.frames.map(f => f.name));
     expect(screen.getByRole("button", { name: "Play" })).toBeTruthy();
     expect(screen.getByText(FILM.title)).toBeTruthy();
     advance(60_000);
@@ -256,7 +265,7 @@ describe("the player's contract", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the three finished films", () => {
+  it("lists the four groups and the seven finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -266,6 +275,10 @@ describe("the data", () => {
     expect(READY.map(f => f.slug)).toEqual([
       "bible-two-minutes",
       "holy-spirit",
+      "god-with-his-people",
+      "who-god-is",
+      "why-jesus-died",
+      "how-salvation-works",
       "who-made-god",
     ]);
   });
@@ -302,6 +315,45 @@ describe("the data", () => {
         fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
         f.slug
       ).toBe(false);
+  });
+
+  it("tells how salvation works without pressure, and names where churches differ", () => {
+    const film = filmFile("how-salvation-works");
+    const all = JSON.stringify(film);
+    expect(film.differ?.text).toContain(
+      "This moving picture does not choose between them."
+    );
+    expect(film.differ?.text).toContain("baptism");
+    expect(film.differ?.links.map(l => l.href)).toEqual([
+      "/study/bible/acts/2",
+      "/answers/does-god-choose-us-or-do-we-choose-him",
+      "/answers/can-you-lose-your-salvation",
+    ]);
+    expect(all).not.toMatch(
+      /pray this prayer|pray after me|right now|before it is too late/i
+    );
+    for (const l of ["younger", "older"] as const)
+      expect(film.think[l]).toMatch(/a parent, a pastor or a leader/);
+    expect(film.care).toMatch(/or look at Find Help\.$/);
+  });
+
+  it("names the broken pictures of the Trinity, and the old errors only at the older level", () => {
+    const frame = filmFile("who-god-is").frames.find(f => f.id === "pictures")!;
+    expect(frame.younger).not.toMatch(/modalism|tritheism/i);
+    expect(frame.older).toContain("modalism");
+    expect(frame.older).toContain("tritheism");
+    expect(frame.still).toMatch(/crossed out/);
+  });
+
+  it("never blames the Jewish people for the cross, and points on to the empty tomb", () => {
+    const film = filmFile("why-jesus-died");
+    expect(film.frames[0].older).toContain(
+      "blaming the Jewish people for his death is a lie that Christians must reject plainly"
+    );
+    const last = film.frames[film.frames.length - 1];
+    for (const l of ["younger", "older"] as const)
+      expect(last[l]).toContain("the cross is not the end of the story");
+    expect(film.end.href).toBe("/study/explorer/cross");
   });
 
   it("says the Holy Spirit is God, a person, not a force", () => {
@@ -366,7 +418,7 @@ describe("the pages", () => {
     ).toBe("/study/bible/acts/8");
     await waitFor(() =>
       expect(
-        screen.getByRole("link", { name: /Next to watch: Who made God\?/ })
+        screen.getByRole("link", { name: /Next to watch: God with his people/ })
       ).toBeTruthy()
     );
   });

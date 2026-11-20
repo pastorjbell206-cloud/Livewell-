@@ -206,6 +206,39 @@ const film: FilmDrawing = {
           </Fade>
         </Travel>
 
+        {/* Poster: the whole row at once, running off the page into a question. */}
+        <Fade frame={frame} on={-1} off={0}>
+          <path className="pl-f" strokeDasharray="2 6" d={`M96,${Y}H130`} />
+          <path className="pl-l" d={joint(120)} />
+          <Link x={180}>
+            <Sun x={180} />
+          </Link>
+          <path className="pl-l" d={joint(240)} />
+          <Link x={300}>
+            <Earth x={300} hatch={h.h2} />
+          </Link>
+          <path className="pl-l" d={joint(360)} />
+          <Link x={420}>
+            <Tree x={420} />
+          </Link>
+          <path className="pl-l" d={joint(480)} />
+          <Link x={540}>
+            <Seed x={540} />
+          </Link>
+          <path className="pl-o" d={ring(56, Y, 34)} />
+          <path className="pl-l" strokeDasharray="4 5" d={ring(56, Y, 34)} />
+          <path
+            className="pl-l"
+            style={{ strokeWidth: 5 }}
+            d={`M44,${Y - 12}c0,-14 24,-14 24,0c0,10 -12,10 -12,22`}
+          />
+          <path className="pl-k" d={ring(56, Y + 20, 3.5)} />
+          <path
+            className="pl-f"
+            d="M0,420C120,404 240,430 380,414S640,400 800,418"
+          />
+        </Fade>
+
         {/* 2 on: the frame round the whole row. */}
         <Draw frame={frame} on={2} delay={700} d="M160,214H640V318H160Z" />
         <Draw
