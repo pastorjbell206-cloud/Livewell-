@@ -10003,3 +10003,38 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 ## 1 Timothy complete (2026-11-20)
 
 All six chapters in plain words. No web searches for this book.
+
+## 2 Timothy: the book page (2026-11-20)
+
+One web search this run (for Titus's Nicopolis, below); none for this page. Scripture is the BSB in the repository, matched by the strict check and the validator.
+
+| Claim | Part | Source | Checked by |
+|---|---|---|---|
+| Personal details: Lois, Eunice, the cloak with Carpus at Troas, Trophimus at Miletus | Who wrote it | BSB 1:5; 4:13; 4:20 | BSB text |
+| Received as Paul's early; in the Muratorian list (late second century) | Who wrote it | 2-timothy/intro.json `author` | Repository |
+| Authorship case pointed to the 1 Timothy page, not restated | Who wrote it | 1-timothy/intro.json `teaching` ‘Who wrote it: the Pastoral Letters’ | Repository |
+| Some count 2 Timothy the strongest claim of the three; Luke proposed as secretary (‘some have suggested’) | Who wrote it | 2-timothy/intro.json `author` | Repository wording, narrowed |
+| Rome, chains, Onesiphorus searching, first defense; harsher than Acts 28 | Where Paul was | BSB 1:8, 16-17; 2:9; 4:16; Acts 28:30-31; chapter 1 deep note `historical` | BSB text; repository |
+| Acts ends about AD 60 to 62 | Where Paul was | acts/intro.json `teaching` timeline | Repository |
+| Clement of Rome about AD 96, ‘the limit of the west’; Eusebius in the 300s on release and second imprisonment | Where Paul was | 1-timothy/intro.json `teaching` (‘When it was written’), earlier ledger rows; 2-timothy/intro.json `date` | Repository |
+| Tradition: executed in Rome under Nero; beheaded as a citizen; Nero died AD 68 | Where Paul was; timeline | Chapter 4 deep note `historical`; 2-timothy/intro.json `date` | Repository, stated as tradition |
+| Fire of July 64; Nero blamed Christians (Tacitus) | Where Paul was; timeline | acts/intro.json timeline; 2-timothy/intro.json `setting` | Repository |
+| Dates: AD 64 to 67 if Paul; a few earlier; AD 80 to 110 on the other view | Where Paul was | 2-timothy/intro.json `date` | Repository |
+| Timothy from Lystra; Jewish believing mother, Greek father; Mark turned back (Acts 13:13) | Timothy | BSB Acts 16:1; 13:13; 2 Timothy 4:11 | BSB text |
+| Prison a public disgrace shared by friends | Suffering without shame | Chapter 1 deep note `cultural` | Repository |
+| Persecutions at Antioch, Iconium, Lystra (Acts 13:50; 14:5; 14:19) | Suffering; map | Chapter 3 deep note `historical`; BSB | BSB text |
+| Theopneustos rare, one of its earliest uses; breathed out (Psalm 33:6); Scriptures then the Old Testament; 2 Peter 3:15-16 | Scripture | Chapter 3 deep note `words` (G2315), `historical` | Repository; BSB |
+| What all confess; not dictation; 2 Peter 1:21 | Scripture | Chapter 3 deep note `hard` | Repository wording; BSB |
+| Inerrancy and infallibility, each in its holders' terms; no side | Scripture | bible/doctrines/revelation.json `differ` (Detailed inerrancy; Infallibility); chapter 3 deep note `hard` | Repository wording, paraphrased; no names carried over. No side |
+| Farewell form: Moses, Joshua 23-24, Acts 20 | Paul's farewell | 2-timothy/intro.json `reading` | Repository |
+| Crown a victor's wreath; analusis, untying a boat or striking a tent; drink offering (Numbers 15) | Paul's farewell; words | Chapter 4 deep note `cultural`, `words` | Repository; BSB |
+| Care line ‘you do not have to carry it alone’; Find Help | Suffering; farewell | 1-corinthians/plain/15.json (50-58) | Phrase word for word |
+| Jannes and Jambres unnamed in the Old Testament; named in Jewish tradition | Old Testament | Chapter 3 deep note `cultural` | Repository (Targums and the Damascus Document not named here) |
+| 2:19 sayings from Numbers 16:5 | Old Testament | Chapter 2 deep note `doctrines` | Repository; BSB |
+| ‘Last days’ the whole time between Christ's comings | What it is not; words | Chapter 3 deep note `story` | Repository |
+| ‘Vulnerable women’ particular people, not women in general | What it is not | Chapter 3 deep note `cultural` | Repository |
+| Psalm 22:21; Psalm 62:12 (deep note); Psalm 22 prayed by Jesus (Mark 15:34) | Old Testament | Chapter 4 deep note `historical`, `hard`; BSB | BSB text |
+| Irenaeus (late second century) names Linus first leader in Rome; takes him to be the Linus of 4:21 | Timeline | Chapter 4 deep note `historical` | Repository |
+| Map points: Rome, Ephesus, Troas, Miletus, Corinth, Thessalonica, Lystra, Iconium, Pisidian Antioch | Map | Coordinates already used on the acts, galatians and 2 Corinthians maps | Repository |
+
+Cut: "around the world today many believers know what that verse means" (no source here); "the call to turn from evil found across the prophets" narrowed to "the many calls in the Old Testament".
