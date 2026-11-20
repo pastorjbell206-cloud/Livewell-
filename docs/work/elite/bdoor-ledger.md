@@ -9002,3 +9002,35 @@ No new searches (the book page searches on the council and Galatians 2 are reuse
 | Psalm 143:2 echoed in 2:16 | 15-21 | Commentaries (cross-reference standard) | BSB text; stated as an echo |
 | Works of the law and pistis Christou readings | 15-21 | Book page; Romans book page ledger | Ledger. No side |
 | Genesis 15:6; Ezekiel 36:26 | 15-21 | BSB | BSB text |
+
+## The plain notes on Galatians 3 (2026-11-20)
+
+No searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Bewitched’ linked with the evil eye; ‘clearly portrayed’ used of a public notice | 1-5 | Deep note `cultural` | Repository |
+| ‘Suffered’ (verse 4) as suffering or as experience; Acts 14:22 | 1-5 | Standard lexicons (paschō); BSB | Stated as two readings |
+| Isaiah 44:3; Joel 2:28; Acts 10:44-48 | 1-5 | BSB | BSB text |
+| Abraham believed before circumcision (Genesis 15, then 17); ‘credited’ an accounting word | 6-9 | BSB; Romans 4 plain note | Repository |
+| Genesis 15:5-6; 12:3; 18:18 | 6-9 | BSB | BSB text |
+| Blessings and curses (Deuteronomy 27 and 28) | 10-14 | BSB | BSB text |
+| Deuteronomy 27:26 in Paul close to the old Greek ("everyone", "everything") | 10-14 | Deep note `literary`; comparison of 3:10 with the BSB's Hebrew-based text | Stated generally; the Greek version not quoted |
+| Habakkuk 2:4 setting; Leviticus 18:5; Deuteronomy 21:22-23; connected with crucifixion by Paul's day | 10-14 | Deep note `cultural`, `literary`; BSB | Repository |
+| Readings of the cross (substitution, victory, ransom); pointers to the Romans 3:21-26 and 2 Corinthians 5:18-21 notes; Nicene ‘for us’ | 10-14 | romans/plain/3.json; 2-corinthians/plain/5.json; creeds/documents/nicene-creed.json | Repository. No side |
+| Romans 7:12 against reading the law or Jews as cursed | 10-14 | BSB | BSB text |
+| Diathēkē covenant or will; 430 years (Exodus 12:40); the old Greek and Samaritan count from Canaan | 15-18 | Deep note `cultural`, `historical` | Repository. Samaritan Pentateuch not named |
+| ‘Seed’ collective or single; close word-by-word reading common among Jewish teachers | 15-18 | Deep note `literary` | Repository |
+| Genesis 13:15; 22:18; Exodus 12:40; 2 Samuel 7:12 | 15-18 | BSB | BSB text |
+| Paidagōgos a household slave guarding a boy until he came of age | 19-25 | Deep note `cultural` | Repository |
+| Angels at Sinai a Jewish tradition; Acts 7:53; Deuteronomy 33:2 | 19-25 | Deep note `historical` | Repository |
+| Verse 20 notoriously hard; the most common reading | 19-25 | Deep note `literary` | Repository |
+| Exodus 19:5; Psalm 14:3 | 19-25 | BSB | BSB text |
+| ‘No male and female’ the words of Genesis 1:27 in the old Greek | 26-29 | Deep note `hard` | Repository |
+| Paul still addresses Jews and Gentiles, slaves and masters, husbands and wives | 26-29 | Deep note `hard`; BSB | Repository |
+| Baptism views in holders' terms; pointer to the Acts 2:37-41 note | 26-29 | acts/plain/2.json | Repository. No side |
+| Christians drew on 3:28 against slavery | 26-29 | Deep note `hard` | Repository, stated generally |
+| Complementarian and egalitarian sentences in the Acts 18 form; pointer to the Acts 18:24-28 note | 26-29 | acts/plain/18.json | Repository wording. No side |
+| Genesis 1:27; Isaiah 61:10; Genesis 12:3 | 26-29 | BSB | BSB text |
+
+Cut: the Jewish prayer thanking God for not being made a Gentile, a slave or a woman (deep note "some scholars note"; not checked here, and not needed).
