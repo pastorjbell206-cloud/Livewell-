@@ -12462,3 +12462,25 @@ Cut before publishing: chariot wheels said to lie on the sea floor (only in a pe
 | Psalm 23:2-3; Numbers 33:9 | 27 | BSB | BSB text |
 
 Cut before publishing: ‘Marah means bitter’ kept only as the text's own explanation (15:23).
+
+## The plain notes on Exodus 16 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The date one month after the exodus; the Desert of Sin a place name; its place depends on Sinai | 1-3 | exodus/16.json `historical` | Repository |
+| Slaves fed rations; slavery looking like security | 1-3 | exodus/16.json `cultural`, `story` | Repository |
+| Numbers 11:5; 1 Corinthians 10:5-6 | 1-3 | BSB | BSB text |
+| Bread before rebuke; the test of verse 4; glory in the cloud | 4-12 | exodus/16.json `story`, `literary` | Repository |
+| Psalm 78:24-25; John 6:31-32 | 4-12 | BSB; exodus/16.json `christ` | BSB text |
+| Man hu; the omer about two litres | 13-21 | exodus/16.json `literary`, `cultural` | Repository |
+| Quail migration; tamarisk secretion called man; three readings; no side | 13-21 | exodus/16.json `historical`, `hard` | Repository; no side |
+| Deuteronomy 8:3; Matthew 4:4; 2 Corinthians 8:15; Matthew 6:11 | 13-21 | BSB; exodus/16.json `christ` | BSB text |
+| The first Sabbath command; Genesis 2:2-3; rest for former slaves unusual | 22-30 | exodus/16.json `cultural` | Repository |
+| Sabbath today: seventh-day, Reformed (Westminster 1646), Catholic and Lutheran, dispensational and New Covenant; no side | 22-30 | exodus/20.json `hard`; guides/calendar-and-festivals.json | Repository; no side |
+| Mark 2:27; Hebrews 4:9; Colossians 2:16-17; Romans 14:5 | 22-30 | BSB | BSB text |
+| Coriander; ‘the Testimony’ looking ahead; the closing verses written for later readers | 31-36 | exodus/16.json `cultural`, `literary` | Repository |
+| Joshua 5:12; Hebrews 9:4; John 6:49-51 | 31-36 | BSB | BSB text |
+
+Cut before publishing: nothing beyond the deep note's wording.
