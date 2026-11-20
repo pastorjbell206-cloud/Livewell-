@@ -10907,3 +10907,28 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | The slavery hard part (not softened; powerless movement; revolts crushed; 1 Corinthians 7:21 ‘most common reading’; Galatians 3:28; Atlantic misuse; Christians who opposed slavery; record mixed) | 18-25 | ephesians/plain/6.json (5-9 `hard`); 1-timothy/plain/6.json (1-2 `hard`) | Repository wording |
 | Care lines ‘It is never a reason to tell someone who is being hurt ...’ and ‘A word for anyone who is being held, owned or forced to work today ...’ | 18-25 | 1-thessalonians/plain/3.json (1-5 `hard`); 1-corinthians/plain/7.json (17-24 `hard`) | Word for word |
 | Isaiah 53:5, 6, 7, 9, 12; Exodus 21:16; Job 31:15; Isaiah 40:11 | 18-25 | BSB | BSB text |
+
+## The plain notes on 1 Peter 3 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘In the same way’ links to 2:21-25; household code from 2:13 | 1-7 | 1-peter/3.json `literary` | Repository |
+| A wife expected to share her husband's religion; a Greek moralist's advice (Plutarch, not named); believing wife seen as disloyal | 1-7 | 1-peter/3.json `historical` | Repository |
+| Braided hair and gold a fashion of wealthy women; moralists criticised display; Sarah's ‘lord’ a respectful term; ‘delicate vessel’ strength and legal place; fellow heirs; prayers hindered | 1-7 | 1-peter/3.json `cultural` | Repository |
+| Adoni in Genesis 18:12 (H0113) | 1-7 | Hebrew text of Genesis 18:12 | Repository text |
+| The hard part: what is agreed; complementarian and egalitarian readings; no side | 1-7 | 1-peter/3.json `cultural`, `doctrines`; titus/plain/2.json (1-5 `hard`); ephesians/plain/5.json (21-33 `hard`) | Repository wording, no side |
+| Care lines ‘Nothing here licenses harshness or abuse ...’, ‘Abuse and other crimes ...’, ‘If you are being hurt in some other place ...’ | 1-7 | titus/plain/2.json (1-5 `hard`); existing plain-note wording; ephesians/plain/5.json | Word for word |
+| Genesis 18:12; Proverbs 31:30; Malachi 2:14 | 1-7 | BSB | BSB text |
+| ‘Finally’ and the virtues for all; Psalm 34:12-16 frames the rest | 8-12 | 1-peter/3.json `literary` | Repository |
+| Psalm 34:13-15; Proverbs 20:22 | 8-12 | BSB | BSB text |
+| Isaiah 8:12-13 applied to Christ, a confession of his deity; apologia a law-court defence, root of ‘apologetics’; gentleness and respect | 13-17 | 1-peter/3.json `christ`, `words` (G0627), `literary` | Repository |
+| Isaiah 8:12-13; Proverbs 3:7 | 13-17 | BSB | BSB text |
+| Once for all, substitutionary, to bring to God; a hymn or confession; the sequence of verbs; poreutheis in 19 and 22 | 18-22 | 1-peter/3.json `doctrines`, `literary` | Repository |
+| Genesis 6:1-4 and 1 Enoch's imprisoned angels; whether Peter draws on it debated | 18-22 | 1-peter/3.json `historical` | Repository |
+| Three readings of 3:19-20 (Augustine; descent to the dead in three forms; fallen angels); the Apostles' Creed wording and its older sense | 18-22 | 1-peter/3.json `hard`; creeds/documents/apostles-creed.json | Repository, no side |
+| Baptism readings; eperōtēma ‘pledge’ debated | 18-22 | 1-peter/3.json `doctrines`, `words` (G1906); titus/plain/3.json (3-8 `hard`) | Repository, no side |
+| Genesis 6:5; 7:13; 8:1; 6:2; Psalm 110:1 | 18-22 | BSB | BSB text |
+
+Cut before publishing: ‘Ancient household codes rarely told the husband anything he owed’ (the notes say this of slaves, not husbands); ‘Peter does not forbid a woman to look nice’.
