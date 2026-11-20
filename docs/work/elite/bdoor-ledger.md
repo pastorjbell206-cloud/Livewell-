@@ -12009,3 +12009,61 @@ No web searches. Scripture is the BSB in the repository, matched by the strict c
 | Deuteronomy 4:2; 12:32 | 18-21 | BSB | BSB text |
 
 Cut before publishing: Amos 3:7, Proverbs 24:12 and Psalm 17:15 as Old Testament echoes (no repository note links them to this chapter); ‘Blessed is the one who keeps’ and ‘Blessed are those who wash their robes’ quoted only in part, as in chapters 14, 16, 19 and 20; a reading of 22:11 as fixing what people are becoming (narrowed to the plain words).
+
+## Exodus's book page (teaching introduction, 2026-11-20)
+
+Every claim in `client/public/bible/notes/exodus/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and lexicon, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seventy went down (1:5); 1:1, 1:7, 2:24; Genesis 1:28; 40:34 | in-a-minute, torah | BSB | BSB text |
+| Shemot, ‘Names’, from the opening phrase | torah, words | genesis/verses/46.json (`grammar`, ‘In Jewish tradition the book of Exodus is called Shemot’) | Repository |
+| The English name from Greek exodos, ‘a way out, departure’ | torah, words | luke/9.json `words` (exodos ‘the same word that gave the book of Exodus its name’) | Repository |
+| Avad: slavery and worship one root | in-a-minute, words | exodus/intro.json `themes` | Repository |
+| Leviticus from the tent; Numbers to the edge of Canaan | torah | exodus/intro.json `story` | Repository |
+| No author named; 17:14, 24:4, 34:27; Mark 12:26; conservative view with later editing; Wellhausen, J E D P, priestly material dated to the exile or after; priestly and non-priestly; dates of writing | who | exodus/intro.json `author`, `date` | Repository; no side |
+| 1 Kings 6:1, 480 years; Solomon's fourth year about 966 BC; about 1446 BC; Ramesses II about 1279 to 1213 BC; Rameses (1:11); new villages around 1200 BC; 480 as twelve generations; Merneptah about 1208 BC; doubters, a smaller group; no Egyptian record; royal inscriptions rarely record defeats | when | exodus/intro.json `date` | Repository; no side |
+| Thutmose III or Amenhotep II on the early date | when, timeline | exodus/3.json `historical` | Repository |
+| Rameses as an updated name, as in Genesis 47:11; a later national epic (Finkelstein and Silberman, not named on the page) | when | exodus/12.json `historical` | Repository |
+| Egyptian names in Levi's family; Phinehas ‘the Nubian’ | when | exodus/verses/6.json | Repository |
+| Delta, Goshen, Pharaoh as son of the sun god and Horus; conscripted and foreign labor; Semitic peoples in the Delta; the Hyksos driven out about 1550 BC and the new king | egypt, timeline | exodus/intro.json `setting` | Repository |
+| 1:8-10; 2:6; 9:20; 11:3; 12:38; Deuteronomy 23:7; Isaiah 19:21 | egypt | BSB | BSB text |
+| The midwives left out of the Egypt paragraph: their nationality is debated | egypt | exodus/1.json, verses/1.json | Repository |
+| Three movements; the tabernacle report repeats the instructions; repeated phrases; 5:2; 7:5; 6:7 | built | exodus/intro.json `reading`, `structure` | Repository |
+| Ehyeh asher ehyeh; present and future; ehyeh in 3:12; self-existence, freedom, presence | name, words | exodus/3.json `words` (H1961) | Repository |
+| YHWH, Yahweh, Adonai, LORD in small capitals | name, words | exodus/6.json `words` (H3068G) | Repository |
+| 6:3: three answers (sources; knowing by experience; the narrator's usage) | name | exodus/6.json `hard` | Repository; no side |
+| 12:12; Hapi, Re and Son of Re, sacred cattle | plagues | BSB; exodus/7.json `cultural`; exodus/10.json `cultural`; exodus/9.json `cultural` | Repository |
+| Hardening in three ways (4:21; 7:13; 8:15; 9:12); not said of God in the first five plagues; Reformed and Arminian readings; the strengthening reading; Pharaoh never a victim; a second-order question | plagues, words | exodus/9.json `hard`; exodus/14.json `hard` | Repository; no side |
+| Three verbs: chazaq, kaved, qashah; chazaq at 4:21, kaved at 7:14 | words | exodus/verses/4.json; exodus/verses/7.json | Repository |
+| Romans 9:18 | plagues | BSB | BSB text |
+| The firstborn after 1:22, 4:22-23 and nine plagues; the Talmud's silencing of the angels; some Christians trust what they cannot see | plagues | exodus/12.json `hard` | Repository |
+| The care line ‘If you have lost a child, or carry a grief like hers ...’ | plagues | john/plain/19.json (23-27 `hard`), word for word; Find Help sentence used across the notes | Repository |
+| Pesach from the verb to pass over; firstborn spared under the blood, not for being better | passover, words | exodus/12.json `words` (H6453, H6452A), `pastoral` | Repository |
+| AD 70; the Seder (m. Pesachim 10): four cups, the child's questions, shame to praise; the roasted bone; the Haggadah's four sons | passover, timeline | exodus/12.json `cultural` (the Seder, the bone), `literary` (the four sons) | Repository |
+| Mark 14:24; 1 Corinthians 5:7; John 19:36 and Exodus 12:46 | passover | BSB; exodus/intro.json `christ` | BSB text |
+| Yam suph, Gulf of Suez and of Aqaba (1 Kings 9:26), marshy lakes; the proposed crossing sites; 14:2 unlocated; the range of views | sea | exodus/14.json `historical` | Repository; no side |
+| The coast road guarded by forts; Succoth in the Wadi Tumilat; Etham unknown; Marah, Elim and Rephidim not located with certainty | sea | exodus/13.json, 15.json, 17.json `historical` | Repository |
+| Sinai not confirmed; Jebel Musa since at least the fourth century; the monastery; northern Sinai and northwest Arabia; Galatians 4:25 and the loose use of ‘Arabia’ | sea | exodus/19.json `historical` | Repository; no side |
+| 600,000 (12:37); agreement with Numbers; elef as clan or unit (Judges 6:15) | sea, words | exodus/12.json `historical`; BSB | Repository; no side |
+| Nineteen chapters of rescue before the first commandment; law follows grace | law | guides/reading-law.json | Repository (the site's own guide) |
+| Covenant defined; 19:4-6 | law | exodus/intro.json `overview`; BSB | Repository |
+| The ten words (34:28); Jewish, Catholic and Lutheran (Augustine), Orthodox and Reformed (Philo, Josephus) numberings | law | exodus/20.json `literary` | Repository; no side |
+| Slaveholders and preachers in the Atlantic slave trade and the American South used such texts to defend slavery as biblical | law | ephesians/plain/6.json and colossians/plain/3.json wording | Repository |
+| 25:8; mishkan from shakan; the calf and the gold; 33:15; 34:6; 40:34; the words of 34:6 quoted often | tent, words | exodus/intro.json `themes`; exodus/3.json; exodus/19.json `words` (H4908); BSB | Repository |
+| John 1:14, 17; skēnoō and the tent; 1 Corinthians 10:1-11; Hebrews 3:5-6; 8:5; 9:12; Luke 9:31; John 6:32-35 | new-testament | BSB; exodus/intro.json `christ` | BSB text |
+| Contempt for Jews rejected, pointing to the Acts 2:22-28 note | new-testament | the pointer sentence used in ephesians/plain/2.json and other notes | Repository |
+| The Decalogue recited daily with the Shema (m. Tamid 5:1); Shavuot and the gift of the Torah | readers | exodus/20.json `historical`; exodus/19.json `historical` | Repository |
+| Elephantine, about 419 BC, the festival of unleavened bread 15 to 21 Nisan, leaven out of houses | readers, timeline | exodus/12.json `historical` | Repository |
+| Gregory of Nyssa's Life of Moses; Origen and Augustine on the Egyptian gold; Easter's name from pesach | readers | exodus/3.json `interpretation` and exodus/34.json (Gregory); exodus/verses/12.json (the gold); guides/calendar-and-festivals.json | Repository |
+| Go Down, Moses, first published 1861 | readers, timeline | exodus/3.json `interpretation` | Repository |
+| 22:21; Deuteronomy 5:15 | readers | BSB | BSB text |
+| Soleb, Amenhotep III, the Shasu of Yhw | timeline | exodus/3.json `historical` | Repository |
+| 19:1; 40:17 | timeline | BSB | BSB text |
+| The Torah in Greek from the 200s BC | timeline | genesis/intro.json `teaching` (timeline, from its ledger) | Repository |
+| Nash Papyrus, second or first century BC | timeline | exodus/20.json `historical` | Repository |
+| Egeria, early 380s; Justinian 548 to 565 | timeline | exodus/3.json `historical` | Repository |
+| Naville at Tell el-Maskhuta, 1883 | timeline | exodus/12.json `historical` | Repository |
+| Map: Goshen and Canaan only, at the points Genesis's map already uses, each drawn roughly | map | genesis/intro.json `teaching.map` | Repository (no new point) |
+
+Cut before publishing: ‘more than three thousand years’ of Passover (no repository source); nomads leaving little behind (only in a pending question); powerful nations claiming the story for themselves (no repository source; replaced with 22:21 and Deuteronomy 5:15); the midwives among the Egyptians who acted well (their nationality is debated); every place for which the repository has no point (Rameses, Pithom, Succoth, the sea, Sinai, Midian) left off the map; no route drawn.
