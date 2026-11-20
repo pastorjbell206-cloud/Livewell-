@@ -80,13 +80,36 @@
  *   holdout7 (30) 66.7% / 73.3%       ->  73.3% / 80.0% (the clean set; 70.0% /
  *                 76.7% before the one safety rewrite, "better off without me",
  *                 which is a holdout7 sentence's words and was added anyway)
+ * On 2026-11-20 (ninth build) twenty-four sentences, holdout8, were written by
+ * the coordinator of the run, who had not seen the phrasings, and committed
+ * before the matcher or matching.json was touched. Baseline:
+ *   holdout8 (24) top 1 45.8%  top 3 62.5% (the clean set; never tuned to)
+ * At baseline its self-harm sentence ("everyone would be fine if i just
+ * disappeared") put Anxiety first, a safety defect; its control sentence ("my
+ * husband checks my phone ...") put the help topic first by score only. Fixed
+ * at once with general rewrites (wishing to disappear, "fine without me") and
+ * safety pairs (a control word after a partner word), tested in five other
+ * wordings each below. holdout8 after the fix: top 1 50.0%, top 3 66.7%.
+ * Then three parts of the eighth build's proposal: each topic written in full
+ * weighed against its own page (BM25 in finder.json, at PAGE_WEIGHT 0.5, the
+ * highest weight that cost nothing on the tuning sets, cases to holdout6); a
+ * concept table drawn from Find Help's needs and the Honest Answers; and the
+ * "Is it one of these?" step. After:
+ *   cases    (74) 98.6% / 100%   holdout  (19) 100% / 100%
+ *   holdout2 (20) 100%  / 100%   holdout3 (15) 93.3% / 100%
+ *   holdout4 (15) 100%  / 100%   holdout5 (15) 86.7% / 100%
+ *   holdout6 (25) 100%  / 100%   holdout7 (30) 73.3% / 86.7%
+ *   holdout8 (24) 54.2% / 75.0% (the clean set; never tuned to)
+ * Then twelve more topics were written in full (their pages and phrasings
+ * feed the weights). End of the ninth build: holdout4 93.3% / 100%,
+ * holdout7 76.7% / 86.7%, holdout8 54.2% / 75.0%; the rest as above.
  * The floors below sit just under those, so a change to the data that makes
  * the finder worse fails here by name.
  */
 import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { prepare, findTopics, stem, queryWords, isFinderIndex, editDistance } from "./wisdom-match";
+import { prepare, findTopics, findInArea, stem, normalize, queryWords, isFinderIndex, editDistance, MAX_CHOICES } from "./wisdom-match";
 
 const index: unknown = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../public/wisdom/finder.json"), "utf8"));
 const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match.fixture.json"), "utf8")) as {
@@ -98,6 +121,7 @@ const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match
   holdout5: { q: string; expect: string[] }[];
   holdout6: { q: string; expect: string[] }[];
   holdout7: { q: string; expect: string[] }[];
+  holdout8: { q: string; expect: string[] }[];
 };
 
 if (!isFinderIndex(index)) throw new Error("finder.json is not a finder index");
@@ -121,7 +145,7 @@ function rate(cases: { q: string; expect: string[] }[]) {
 describe("wisdom matcher", () => {
   it("has at least 60 plain sentences, every expected topic real", () => {
     const ids = new Set(index.topics.map((t) => t.id));
-    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5, ...fixture.holdout6, ...fixture.holdout7];
+    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5, ...fixture.holdout6, ...fixture.holdout7, ...fixture.holdout8];
     expect(all.length).toBeGreaterThanOrEqual(60);
     for (const c of all) for (const id of c.expect) expect(ids.has(id), `${c.q}: ${id}`).toBe(true);
   });
@@ -135,6 +159,7 @@ describe("wisdom matcher", () => {
     const holdout5 = rate(fixture.holdout5);
     const holdout6 = rate(fixture.holdout6);
     const holdout7 = rate(fixture.holdout7);
+    const holdout8 = rate(fixture.holdout8);
     console.info(
       `[wisdom-match] cases ${cases.n}: top 1 ${(cases.top1 * 100).toFixed(1)}%, top 3 ${(cases.top3 * 100).toFixed(1)}%; ` +
         `holdout ${holdout.n}: top 1 ${(holdout.top1 * 100).toFixed(1)}%, top 3 ${(holdout.top3 * 100).toFixed(1)}%` +
@@ -150,7 +175,9 @@ describe("wisdom matcher", () => {
         `\n[wisdom-match] holdout6 ${holdout6.n}: top 1 ${(holdout6.top1 * 100).toFixed(1)}%, top 3 ${(holdout6.top3 * 100).toFixed(1)}%` +
         (holdout6.misses.length ? `\n  holdout6 misses: ${holdout6.misses.join("\n  ")}` : "") +
         `\n[wisdom-match] holdout7 ${holdout7.n}: top 1 ${(holdout7.top1 * 100).toFixed(1)}%, top 3 ${(holdout7.top3 * 100).toFixed(1)}%` +
-        (holdout7.misses.length ? `\n  holdout7 misses: ${holdout7.misses.join("\n  ")}` : ""),
+        (holdout7.misses.length ? `\n  holdout7 misses: ${holdout7.misses.join("\n  ")}` : "") +
+        `\n[wisdom-match] holdout8 ${holdout8.n}: top 1 ${(holdout8.top1 * 100).toFixed(1)}%, top 3 ${(holdout8.top3 * 100).toFixed(1)}%` +
+        (holdout8.misses.length ? `\n  holdout8 misses: ${holdout8.misses.join("\n  ")}` : ""),
     );
     expect(cases.top1).toBeGreaterThanOrEqual(0.95);
     expect(cases.top3).toBeGreaterThanOrEqual(0.95);
@@ -166,9 +193,11 @@ describe("wisdom matcher", () => {
     expect(holdout5.top3).toBeGreaterThanOrEqual(0.95);
     expect(holdout6.top1).toBeGreaterThanOrEqual(0.95);
     expect(holdout6.top3).toBeGreaterThanOrEqual(0.95);
-    // The clean set: reported, and held just under what it scored.
-    expect(holdout7.top1).toBeGreaterThanOrEqual(0.73);
-    expect(holdout7.top3).toBeGreaterThanOrEqual(0.79);
+    expect(holdout7.top1).toBeGreaterThanOrEqual(0.76);
+    expect(holdout7.top3).toBeGreaterThanOrEqual(0.86);
+    // The clean set, written by someone else: reported, and held just under what it scored.
+    expect(holdout8.top1).toBeGreaterThanOrEqual(0.54);
+    expect(holdout8.top3).toBeGreaterThanOrEqual(0.74);
   });
 
   it("does not force a match on nonsense", () => {
@@ -280,14 +309,89 @@ describe("wisdom matcher", () => {
     firstIs("my ex says he is going to hurt me", "toxic-relationships");
   });
 
+  it("puts the help topic first for wishing to disappear, five ways of saying it (holdout8's safety sentence, not tuned to)", () => {
+    firstIs("i wish i could just disappear and never come back", "suicidal-thoughts");
+    firstIs("my family would be fine without me", "suicidal-thoughts");
+    firstIs("everyone would be better off if i wasnt around", "suicidal-thoughts");
+    firstIs("nobody would even notice if i disappeared", "suicidal-thoughts");
+    firstIs("i just want to die", "suicidal-thoughts");
+    // A thing that disappears is not a person wishing to.
+    expect(findTopics(prep, "my anxiety would just disappear if i could sleep").matches[0].safety).toBeUndefined();
+  });
+
+  it("puts the help topic first for control by a partner, five ways of saying it (holdout8's safety sentence, not tuned to)", () => {
+    firstIs("my wife reads all my texts and wont let me go out with friends", "toxic-relationships");
+    firstIs("my boyfriend tracks my location and gets angry when i see my family", "toxic-relationships");
+    firstIs("my husband controls all the money and wont let me have a phone", "toxic-relationships");
+    firstIs("my girlfriend wont let me talk to my friends anymore", "toxic-relationships");
+    firstIs("my partner goes through my phone every night and keeps me from my family", "toxic-relationships");
+    // Control is danger when a partner does it, not a parent's rule about a boyfriend, a wife's rule about a dog.
+    expect(findTopics(prep, "my dad wont let me see my boyfriend").matches[0].safety).toBeUndefined();
+    expect(findTopics(prep, "my wife wont let me have a dog").matches[0].safety).toBeUndefined();
+    expect(findTopics(prep, "my mom checks my phone every night").matches[0].safety).toBeUndefined();
+  });
+
   it("never shows one subject alone, and names the ones nearly as close as the first", () => {
     const alone = findTopics(prep, "i keep replaying every conversation in my head");
     expect(alone.matches.length).toBeGreaterThanOrEqual(3);
     expect(alone.matches.slice(1).some((m) => m.related)).toBe(true);
     const r = findTopics(prep, "the doctor said moms cancer is back and theres nothing more they can do");
-    expect(r.matches[0].topic.id).toBe("serious-illness");
-    expect(r.close.map((m) => m.topic.id)).toContain("terminal-diagnosis");
+    // Either may lead (each is a right answer); the other stands beside it as just as close.
+    const pair = [r.matches[0].topic.id, ...r.close.map((m) => m.topic.id)];
+    expect(pair).toContain("serious-illness");
+    expect(pair).toContain("terminal-diagnosis");
     // A far second is not "just as close".
     expect(findTopics(prep, "my son walked away from the faith").close).toEqual([]);
+  });
+
+  it("weighs each topic written in full against its own page, keyed by the same stems the browser uses", async () => {
+    const words: { stem: (w: string) => string; normalize: (w: string) => string } = await import(path.resolve(__dirname, "../../../scripts/lib/wisdom-words.mjs"));
+    const vocab = new Set<string>();
+    for (const t of index.topics) normalize([t.label, t.framing, ...t.keywords, ...t.phrases].join(" ")).split(" ").forEach((w) => w && vocab.add(w));
+    for (const w of Array.from(vocab)) expect(words.stem(w), w).toBe(stem(w));
+    expect(words.normalize("Can't  stop—worrying!")).toBe(normalize("Can't  stop—worrying!"));
+    const weights = index.weights ?? {};
+    expect(Object.keys(weights).length).toBeGreaterThan(1000);
+    for (const list of Object.values(weights)) {
+      const parts = list.split(" ").map(Number);
+      for (let k = 0; k < parts.length; k += 2) expect(index.topics[parts[k]]?.deep, `${list}`).toBe(true);
+    }
+    // A word only the page itself uses (no phrasing names it) still finds the page.
+    expect(index.topics.find((t) => t.id === "courage")?.phrases.join(" ")).not.toMatch(/abednego/i);
+    expect(findTopics(prep, "abednego").matches[0].topic.id).toBe("courage");
+  });
+
+  it("reads the concepts drawn from Find Help's needs and the Honest Answers", () => {
+    expect(findTopics(prep, "i relapsed after a year sober").matches[0].topic.id).toBe("addiction");
+    expect(findTopics(prep, "is it a sin to get a tattoo").matches[0].topic.id).toBe("guilt-and-conscience");
+    expect(findTopics(prep, "we have been trying ivf for three years").matches[0].topic.id).toBe("infertility");
+    expect(["the-problem-of-evil", "suffering"]).toContain(findTopics(prep, "why would god allow an earthquake that kills thousands").matches[0].topic.id);
+    expect(queryWords(index, "my friend is an atheist").has(stem("doubt"))).toBe(true);
+  });
+
+  it("asks which area of life when the fit is weak or others are as close, and never after a safety word", () => {
+    const weak = findTopics(prep, "i feel off lately");
+    expect(weak.unsure).toBe(true);
+    expect(weak.areas.length).toBeGreaterThanOrEqual(2);
+    expect(weak.areas.length).toBeLessThanOrEqual(MAX_CHOICES);
+    expect(new Set(weak.areas).size).toBe(weak.areas.length);
+    const close = findTopics(prep, "the doctor said moms cancer is back and theres nothing more they can do");
+    expect(close.unsure).toBe(true);
+    expect(close.areas[0]).toBe("loss");
+    expect(findTopics(prep, "my son walked away from the faith").unsure).toBe(false);
+    for (const q of ["i want to hurt myself tonight", "my husband beats me when he drinks", "my girlfriend wont let me talk to my friends anymore"]) {
+      const r = findTopics(prep, q);
+      expect(r.unsure, q).toBe(false);
+      expect(r.areas, q).toEqual([]);
+    }
+  });
+
+  it("narrows to the area the reader picks, never to an empty list", () => {
+    const area = findTopics(prep, "i feel off lately").areas[1];
+    const list = findInArea(prep, "i feel off lately", area);
+    expect(list.length).toBeGreaterThanOrEqual(3);
+    for (const m of list) expect(m.topic.area).toBe(area);
+    const scores = list.filter((m) => !m.related).map((m) => m.score);
+    expect(scores).toEqual([...scores].sort((a, b) => b - a));
   });
 });

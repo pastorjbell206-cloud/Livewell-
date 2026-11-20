@@ -165,6 +165,41 @@
           "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "what-kind-of-writing-are-the-gospels",
+          "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+          "blurb": "The form critics' \"folk literature\" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's \"memoirs\" and Luke's preface, and what the genre does and doesn't establish.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-synoptic-problem",
+          "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+          "blurb": "The Synoptic problem set out fairly, Mark's priority, Q and the main alternatives with no side taken, what copying shows and what it doesn't, the sources skeptics themselves count, and the witnesses outside the problem.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "is-john-history-or-theology",
+          "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+          "blurb": "Every difference from the first three Gospels conceded, Strauss, Ehrman and Clement's \"spiritual Gospel\", John's own account of how he wrote, what in John fits Jerusalem before AD 70, and why theology and history are not alternatives.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-constantine-decide-the-bible",
+          "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+          "blurb": "What Nicaea's surviving acts do and don't contain, Constantine's letter ordering copies of the Scriptures, his own bishop's list of disputed books, the Muratorian fragment, Athanasius in 367 and the African councils, the novel's claim named as fiction, and the edges that still differ.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-paul-invent-christianity",
+          "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+          "blurb": "Wrede's \"second founder\" and Ehrman's contrast of Paul and Matthew at full strength, what Paul says he received, his meetings with Peter, James and John, what he shares with the Jesus of the Gospels, and Paul the Jew.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -261,14 +296,14 @@
         {
           "slug": "how-did-jesus-become-god",
           "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
-          "blurb": "Ehrman's case and the texts it rests on, Paul's letters as the earliest layer, exaltation and pre-existence side by side, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
+          "blurb": "Ehrman's case in his own words and the texts it rests on, his reading of Paul's pre-existent Christ as a being below God and the angel of the Lord, Paul's letters as the earliest layer, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
           "status": "pending",
           "live": false
         },
         {
           "slug": "did-jesus-claim-to-be-god",
           "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
-          "blurb": "What Jesus does not say, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
+          "blurb": "What Jesus does not say, Ehrman's tests of the sayings, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
           "status": "pending",
           "live": false
         },
@@ -336,6 +371,41 @@
           "slug": "the-flood-and-babylon",
           "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
           "blurb": "George Smith's tablets, Atrahasis and Gilgamesh quoted from the British Museum's translation, Delitzsch and Finkel, what a shared story can and can't show, the differences that make Genesis an answer, and the readings of the flood's extent.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "who-wrote-the-first-five-books",
+          "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
+          "blurb": "Spinoza's seams, Astruc's names and Wellhausen's four sources at full strength, the theory's later revisions, what Jesus and the apostles say of Moses, and the range of Christian views.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-god-of-the-old-testament",
+          "question": "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?",
+          "blurb": "Marcion in Irenaeus's and Tertullian's report, Dawkins and Harnack, Exodus 34 and its echoes, judgment in Jesus' own teaching, and why the contrast is false and has fed contempt for Jews.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "which-old-testament-laws",
+          "question": "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?",
+          "blurb": "Leviticus 19 and Trypho's question at full strength, what the law says it was for, Acts 15, Mark 7 and Hebrews, love as the fulfillment of the law, and the threefold division, new covenant readings and law and gospel, each with its difficulty.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "abraham-and-isaac",
+          "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
+          "blurb": "Genesis 22 read closely, Kant's objection at full strength, the Akedah as Jewish prayer remembers it, the law's and the prophets' horror of child sacrifice, what the story does and doesn't teach, and why it is never a model for harming anyone.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "what-archaeology-shows",
+          "question": "Archaeologists have found no trace of the exodus, a Jericho without walls, and little sign of a great kingdom under David and Solomon. Does archaeology confirm the Old Testament, or undermine it?",
+          "blurb": "The house of David at Tel Dan, Omri on Mesha's stone, Ahab and Jehu in Assyria's records, Sennacherib's prism and Hezekiah's tunnel quoted from an older translation, the debate over David and Solomon, and the limits of archaeology in both directions.",
           "status": "pending",
           "live": false
         }
@@ -918,6 +988,96 @@
       "live": false
     },
     {
+      "claim": "The Gospels are not biographies but folk literature, units of community tradition strung together by editors",
+      "proponent": "Rudolf Bultmann",
+      "work": "The History of the Synoptic Tradition",
+      "year": 1921,
+      "area": "authors",
+      "slug": "what-kind-of-writing-are-the-gospels",
+      "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke each used Mark and a lost collection of sayings, Q, so where they follow Mark they are not independent of him",
+      "proponent": "B. H. Streeter",
+      "work": "The Four Gospels",
+      "year": 1924,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "live": false
+    },
+    {
+      "claim": "There was no Q: Luke used Matthew as well as Mark",
+      "proponent": "Mark Goodacre",
+      "work": "The Case Against Q",
+      "year": 2002,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' divine claims in John belong to John's distinctive theology, not to the historical record of what Jesus said",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "authors",
+      "slug": "is-john-history-or-theology",
+      "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+      "live": false
+    },
+    {
+      "claim": "John's Gospel is largely myth",
+      "proponent": "David Friedrich Strauss",
+      "work": "Life of Jesus",
+      "year": 1835,
+      "area": "authors",
+      "slug": "is-john-history-or-theology",
+      "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+      "live": false
+    },
+    {
+      "claim": "The emperor Constantine had a new Bible made and left out the gospels that showed Jesus as a mortal man",
+      "proponent": "Dan Brown",
+      "work": "The Da Vinci Code",
+      "year": 2003,
+      "area": "authors",
+      "slug": "did-constantine-decide-the-bible",
+      "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+      "live": false
+    },
+    {
+      "claim": "The party that won compiled the canonical books and told the story of its victory",
+      "proponent": "Bart D. Ehrman",
+      "work": "Lost Christianities",
+      "year": 2003,
+      "area": "authors",
+      "slug": "did-constantine-decide-the-bible",
+      "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+      "live": false
+    },
+    {
+      "claim": "Paul's teaching that no one is justified by the law cannot be reconciled with Matthew's Jesus on the law and the judgment",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+      "live": false
+    },
+    {
+      "claim": "Paul was the second founder of Christianity",
+      "proponent": "William Wrede",
+      "work": "study of Paul",
+      "year": 1904,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+      "live": false
+    },
+    {
       "claim": "Luke dated Jesus' birth by the census of Quirinius, which Josephus places in AD 6, a decade after Herod died, so Luke misdated it",
       "proponent": "Raymond E. Brown",
       "work": "The Birth of the Messiah",
@@ -1305,6 +1465,96 @@
       "area": "old-testament",
       "slug": "the-flood-and-babylon",
       "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
+      "live": false
+    },
+    {
+      "claim": "The five books were woven from sources written centuries after Moses, and the priestly law came last, not first",
+      "proponent": "Julius Wellhausen",
+      "work": "Prolegomena to the History of Israel",
+      "year": 1883,
+      "area": "old-testament",
+      "slug": "who-wrote-the-first-five-books",
+      "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
+      "live": false
+    },
+    {
+      "claim": "The five books were written by someone who lived long after Moses",
+      "proponent": "Baruch Spinoza",
+      "work": "Theological-Political Treatise",
+      "year": 1670,
+      "area": "old-testament",
+      "slug": "who-wrote-the-first-five-books",
+      "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
+      "live": false
+    },
+    {
+      "claim": "The God of the Old Testament is the most unpleasant character in all fiction, petty, unjust and unforgiving",
+      "proponent": "Richard Dawkins",
+      "work": "The God Delusion",
+      "year": 2006,
+      "area": "old-testament",
+      "slug": "the-god-of-the-old-testament",
+      "question": "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?",
+      "live": false
+    },
+    {
+      "claim": "Keeping the Old Testament as canonical Scripture in nineteenth-century Protestantism was the result of religious and churchly inertia",
+      "proponent": "Adolf von Harnack",
+      "work": "Marcion: Das Evangelium vom fremden Gott",
+      "year": 1921,
+      "area": "old-testament",
+      "slug": "the-god-of-the-old-testament",
+      "question": "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?",
+      "live": false
+    },
+    {
+      "claim": "Christians claim God's covenant but keep neither sabbaths, festivals nor circumcision, and so do not obey his commandments",
+      "proponent": "Trypho, as Justin Martyr presents him",
+      "work": "Dialogue with Trypho (Ante-Nicene Fathers translation)",
+      "year": 1885,
+      "area": "old-testament",
+      "slug": "which-old-testament-laws",
+      "question": "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?",
+      "live": false
+    },
+    {
+      "claim": "Mark's Jesus kept the food laws, and 'all foods' means all foods the Torah permits",
+      "proponent": "Daniel Boyarin",
+      "work": "The Jewish Gospels",
+      "year": 2012,
+      "area": "old-testament",
+      "slug": "which-old-testament-laws",
+      "question": "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?",
+      "live": false
+    },
+    {
+      "claim": "Abraham should have answered that he was certain he ought not to kill his son, but could never be certain that the voice was God's",
+      "proponent": "Immanuel Kant",
+      "work": "The Conflict of the Faculties",
+      "year": 1798,
+      "area": "old-testament",
+      "slug": "abraham-and-isaac",
+      "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
+      "live": false
+    },
+    {
+      "claim": "The binding of Isaac has taught three faiths to honor a father's willingness to sacrifice his child, and should no longer be held up as a model",
+      "proponent": "Carol Delaney",
+      "work": "Abraham on Trial",
+      "year": 1998,
+      "area": "old-testament",
+      "slug": "abraham-and-isaac",
+      "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
+      "live": false
+    },
+    {
+      "claim": "Tenth-century Judah was a thinly settled highland chiefdom, and the Bible's picture of a kingdom under David and Solomon was magnified later",
+      "proponent": "Israel Finkelstein and Neil Asher Silberman",
+      "work": "David and Solomon",
+      "year": 2006,
+      "area": "old-testament",
+      "slug": "what-archaeology-shows",
+      "question": "Archaeologists have found no trace of the exodus, a Jericho without walls, and little sign of a great kingdom under David and Solomon. Does archaeology confirm the Old Testament, or undermine it?",
       "live": false
     },
     {

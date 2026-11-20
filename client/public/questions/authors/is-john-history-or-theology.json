@@ -1,0 +1,115 @@
+{
+  "area": "authors",
+  "slug": "is-john-history-or-theology",
+  "status": "pending",
+  "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Twenty-second run (2026-11-20): an independent editor's read of the five newest jesus pieces, and five more pieces in the area \"Who wrote the Gospels, when, and who chose the books\"",
+    "key": "bj"
+  },
+  "record": "docs/work/elite/apol-pilot/authors/is-john-history-or-theology.md",
+  "objectionSource": {
+    "author": "Bart Ehrman",
+    "title": "How Jesus Became God",
+    "year": 2014
+  },
+  "shortAnswer": "John is theology, and he says so: he wrote \"so that you may believe.\" The differences from the first three Gospels are real and large. There are no parables of their kind, no exorcisms, long discourses in John's own idiom, a ministry centered on Jerusalem, three Passovers, the temple cleared at the start rather than the end, and the crucifixion on the day before the Passover meal. Scholars who believe what John says still differ over how much of the discourses gives Jesus' own words. But \"theology or history\" is a false choice. John tells us how he wrote: the disciples understood Jesus' words only after the resurrection, and he writes as they came to understand them. And his Gospel knows Jerusalem as it was before the Romans destroyed it in 70, in details a writer far from it would be unlikely to get right: the pool with five colonnades by the Sheep Gate, the stepped pool of Siloam, stone jars for purification. John interprets history. He doesn't replace it.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "Read John straight after Mark and you seem to meet a different man. Mark's Jesus teaches in short sayings and parables about the kingdom of God, casts out demons, tells people to keep his identity quiet, and goes up to Jerusalem once, to die. John's Jesus tells no parables of that kind and casts out no demons. He speaks in long, circling discourses about himself, \"I am the bread of life\" (John 6:35, BSB) and \"I am the resurrection and the life\" (John 11:25, BSB), in the same style as the narrator, so that interpreters disagree, as the Study Bible's note on John 3 says, about \"where Jesus' words end and the evangelist's reflection begins.\" His ministry is set mostly in Judea and runs through three Passovers. He clears the temple at the start of his ministry, not in its last week. He dies on the day of Preparation, as the Passover lambs are being killed, while in the other three the Last Supper is the Passover meal.\n\nThe case was made in the early modern age. David Friedrich Strauss, in his *Life of Jesus* (1835), treated John as largely mythical, and Ferdinand Christian Baur dated it to around 170, as the Study Bible's introduction to John records. Bart Ehrman makes the modern case with care in *How Jesus Became God* (2014). The great claims Jesus makes about himself in John, he argues, appear only in this, the latest Gospel; they express exactly the view of Jesus its author held; no source earlier than John has Jesus say such things; and so they belong to John's distinctive theology, not to the historical record of what Jesus said, as a reading of that section of the book records his argument. Even the early church seemed to concede the point. Clement of Alexandria, around 200, said that John, \"perceiving that the external facts had been made plain in the Gospel,\" \"composed a spiritual Gospel\" (Eusebius, *Church History* 6.14.7, in McGiffert's translation). On this view John is a meditation on Jesus, not a source for him."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "Nearly all of the description is true, and it should be granted without flinching. The Study Bible's guide to reading the Gospels lists the same differences: no parables of the Synoptic kind, no exorcisms, no transfiguration, no institution of the Lord's Supper at the Last Supper, where John tells instead of the washing of feet; long discourses; the \"I am\" sayings with images; a ministry largely in Jerusalem; three Passovers; the temple cleared at the start; the crucifixion on the day of Preparation. John's language for Jesus and his own narration are often the same language. And scholars who believe what John says about Jesus still differ over how much of the wording of the discourses is Jesus' own and how much is John's rendering of it, as the page on Jesus' claims in this library says. No honest answer can claim that every sentence of the discourses is a verbatim record.\n\nIt is also true that John wrote to persuade, and says so: \"these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name\" (John 20:31, BSB). Some of the differences may be his arrangement for a theological purpose; the guide grants that one proposed explanation of the different day of the crucifixion is that \"one writer arranged the chronology for theological reasons,\" so that Jesus dies as the lambs are slaughtered."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Begin with what John says about his own method, since it is the first thing the objection leaves out. After Jesus' riddle about destroying the temple and raising it in three days, John writes: \"After He was raised from the dead, His disciples remembered that He had said this. Then they believed the Scripture and the word that Jesus had spoken\" (John 2:22, BSB). Later Jesus promises that the Spirit \"will remind you of everything I have told you\" (John 14:26, BSB). As the Study Bible's note on John 2 puts it, the verses \"give the Gospel's own account of how it was written\": memory, understood after Easter. That is a claim about history and theology together. It says the words were remembered, not invented, and that their meaning was grasped later.\n\nThen look at what John knows. He places a pool \"near the Sheep Gate ... with five covered colonnades, which in Hebrew is called Bethesda\" (John 5:2, BSB). As the note on John 5 records, excavations at the Church of St. Anne in Jerusalem, from the late nineteenth century to the 1960s, uncovered two large rock-cut reservoirs divided by a rock partition, which gives a natural sense to five colonnades, and a scroll from Qumran written before AD 68 names a place called Beth Eshdatayin, \"the house of the two pools,\" which many scholars take to be the same pool. He sends a blind man to \"the Pool of Siloam\" (John 9:7, BSB); in 2004, as the note on John 9 records, workers on a sewer line uncovered the steps of a large stepped pool of the Second Temple period, which most archaeologists identify with the pool of Jesus' day. At Cana he notes \"six stone water jars ... set there for the Jewish rites of purification\" (John 2:6, BSB); stone vessels, the note on John 2 says, are among the commonest finds in first-century Jewish Galilee and Judea, tied to a purity rule, and they \"decline sharply after AD 70.\" He calls Caiaphas \"high priest that year\" (John 11:49, BSB), and in 1990 a family tomb south of Jerusalem yielded an ossuary inscribed \"Joseph son of Caiaphas,\" which many scholars, though not all, connect with his family, as the note on John 11 records. His temple has taken \"forty-six years to build\" (John 2:20, BSB), a figure that fits, on the note's reckoning, the late 20s AD. None of this proves that any discourse is verbatim. It shows that the Gospel rests on someone who knew Jerusalem before the Romans destroyed it in 70.\n\nNext, the critics' dates. Baur's date of around 170 can no longer be held. Irenaeus, writing around 180, already defends a fourfold Gospel with John as one of its pillars, as the Study Bible's introduction to John records, and a papyrus scrap of John 18, P52, published in 1935, is usually dated to the first half of the second century, though the introduction warns that the dating of such fragments is debated. And on the relation to the other Gospels, C. H. Dodd, in *Historical Tradition in the Fourth Gospel* (1963), argued that John drew on an independent tradition, sometimes of high historical value, while others hold that John knew Mark or all three, as the guide summarizes the debate. If Dodd is right, John is a further witness, not a commentary on the others.\n\nLast, Clement. Read whole, his sentence doesn't say that John abandoned the facts. It says that John, knowing that \"the external facts had been made plain\" already, and \"being urged by his friends, and inspired by the Spirit,\" gave the inner meaning. That is a judgment about emphasis, made by a man who believed John's Gospel true."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is an argument about what kind of witness John's Gospel is.",
+      "steps": [
+        "John says he writes as the disciples remembered Jesus' words after the resurrection, so his Gospel claims to interpret remembered history, not to replace it.",
+        "His Gospel shows knowledge of Jerusalem and Judea before AD 70 (Bethesda's double pool, the pool of Siloam, stone purification jars, Caiaphas, the temple's forty-six years), in details that excavation and other sources confirm or, for Bethesda and Caiaphas, make likely.",
+        "A writer who interprets also reports: the meaning John draws out is drawn out of events he presents as having happened, and his differences from the other Gospels are mostly of selection, order, setting and idiom."
+      ],
+      "conclusion": "So: John is theology and history together, a believer's interpretation of remembered events, resting on tradition that knew Judea before 70; the differences from the Synoptics are real but don't show invention, and how close the discourses stand to Jesus' own wording remains a question to be weighed case by case.",
+      "after": "The weight sits on the third step. If John's interpretive freedom reached to inventing events and the claims Jesus makes, then his accurate geography would show only that he knew the city, not that he reported Jesus faithfully.",
+      "weightStep": 3
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply is exactly that. Knowing where the pools were proves local knowledge, not faithful reporting; a novelist can set a fiction in a real city. And the problem with John isn't its setting but its Jesus. The great self-claims, Ehrman's point, have no earlier support, and the discourses sound like the narrator. A writer who could put his own idiom into Jesus' mouth for whole chapters could put his own theology there too.\n\nThat reply is fair about what the archaeology proves, and the page has claimed no more for it. But the reply proves less than it seems. First, the claims in John are not without earlier support; they are without earlier wording. The page on Jesus' claims in this library sets out how Mark and the sayings Matthew and Luke share show Jesus forgiving sins, calling himself lord of the Sabbath and the Son who alone knows the Father, so that John, as that page puts it, \"states openly what Mark shows in action.\" Second, idiom is not invention. Every Gospel gives Jesus' Aramaic words in Greek, and every ancient writer of a Life gave speeches in his own words, as Thucydides said he did while \"adhering as closely as possible to the general sense\" (1.22, in Crawley's translation). That John's Jesus speaks John's Greek tells us John translated and shaped; it doesn't tell us he made up the substance. Third, John himself marks the line. He tells his readers when the disciples misunderstood and when they understood later, and he claims a witness: \"The one who saw it has testified to this, and his testimony is true\" (John 19:35, BSB). A writer careless of the difference between what happened and what it meant would not bother to say which was which."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "How much of the discourses is close to Jesus' words is unresolved, and believing scholars answer differently. Whether John knew the other Gospels is still argued. How to reconcile the day of the crucifixion and the timing of the temple clearing is open, and this library's page on the day of the crucifixion sets out the solutions. And who the beloved disciple was, John son of Zebedee or another disciple, is debated, as the guide records."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ on how to read John's discourses as history: some hold that they give Jesus' words closely, others that they give his teaching faithfully in John's own idiom, distilled over a lifetime of preaching. They differ on whether there were one or two temple clearings, and on the calendar of the passion week. This page takes no side. What the church confesses, and what John's Gospel exists to say, is that \"The Word became flesh and made His dwelling among us\" (John 1:14, BSB), and that the one whose glory the witnesses saw was a man in history, crucified under Pontius Pilate."
+    }
+  ],
+  "otherSide": [
+    "Bart Ehrman, *How Jesus Became God* (2014). The divine claims in John as John's theology, not Jesus' words.",
+    "David Friedrich Strauss, *Life of Jesus* (German original 1835). The classic case that John is largely myth."
+  ],
+  "further": [
+    "C. H. Dodd, *Historical Tradition in the Fourth Gospel* (1963).",
+    "Richard Bauckham, *Jesus and the Eyewitnesses* (2006). On the beloved disciple and the Gospel's claim to testimony.",
+    "Raymond E. Brown, *The Gospel According to John* (Anchor Bible, 1966 and 1970)."
+  ],
+  "onSite": [
+    "The Study Bible's introduction to John (/study/bible/john) and its notes on John 2 (/study/bible/john/2), John 5 (/study/bible/john/5), John 9 (/study/bible/john/9) and John 11 (/study/bible/john/11), which this page follows.",
+    "The Study Bible's guide to reading the Gospels (/study/bible/guides/reading-gospels), on how John differs.",
+    "\"Did Jesus claim to be God?\" (/questions/jesus/did-jesus-claim-to-be-god) and \"The day of the crucifixion\" (/questions/contradictions/the-day-of-the-crucifixion).",
+    "The other questions in this area (/questions/authors)."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "john",
+        "chapter": 2
+      },
+      {
+        "book": "john",
+        "chapter": 5
+      },
+      {
+        "book": "john",
+        "chapter": 9
+      },
+      {
+        "book": "john",
+        "chapter": 11
+      }
+    ],
+    "answers": [
+      "why-would-anyone-trust-the-bible"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Jesus' divine claims in John belong to John's distinctive theology, not to the historical record of what Jesus said",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014
+    },
+    {
+      "claim": "John's Gospel is largely myth",
+      "proponent": "David Friedrich Strauss",
+      "work": "Life of Jesus",
+      "year": 1835
+    }
+  ]
+}
