@@ -12554,3 +12554,36 @@ Cut before publishing: a gloss on the meaning of Eliezer (not in the repository'
 | Leviticus 10:1-2; Hebrews 12:28-29 | 20-25 | BSB | BSB text |
 
 Cut before publishing: a guess about who the ‘priests’ of verses 22 and 24 were before the priesthood was set up (not in the repository's notes).
+
+## The plain notes on Exodus 20 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The only words spoken to the whole people; grace before demand | 1-2 | exodus/20.json `story`; exodus/verses/20.json (1, 2) | Repository |
+| The treaty comparison (Mendenhall 1954, unnamed) | 1-2 | exodus/20.json `historical` | Repository |
+| The ten words (34:28); Jewish, Catholic and Lutheran (Augustine), Orthodox and Reformed (Philo, Josephus, Origen) numberings; the two tables (Philo, Augustine, Calvin) | 1-2 | exodus/20.json `literary`; exodus/verses/20.json (4 `text`) | Repository; no side |
+| Deuteronomy 5:22; Matthew 5:17 | 1-2 | BSB | BSB text |
+| No other gods as loyalty, not an argument; the three zones of creation | 3-6 | exodus/verses/20.json (3, 4) | Repository |
+| Mīs pî and images in Mesopotamia; Deuteronomy 4:12 | 3-6 | exodus/20.json `cultural` | Repository |
+| Pillar figurines of the 700s and 600s BC | 3-6 | exodus/20.json `historical` | Repository |
+| Nicaea II (787) and the Reformed churches (Heidelberg 96-98) on images | 3-6 | exodus/20.json `interpretation` | Repository; no side |
+| Jealousy as a husband's rightful passion | 3-6 | exodus/20.json `hard` | Repository |
+| Visiting iniquity: Deuteronomy 24:16; Ezekiel 18; Targum Onqelos and Berakhot 7a (unnamed); ‘those who hate Me’; the household of three or four generations; thousands of generations | 3-6 | exodus/20.json `hard` | Repository |
+| Never a curse on any family | 3-6 | The brief's rule, stated in the notes' own words | Repository |
+| Colossians 1:15; John 1:18; Ezekiel 18:20 | 3-6 | BSB; exodus/20.json `christ` | BSB text |
+| Lashshav, names in oaths and magic; courts relying on oaths | 7-11 | exodus/20.json `cultural` | Repository |
+| ‘Remember’; the Sabbath already given (16:23-30); the long list of those who rest | 7-11 | exodus/verses/20.json (8, 9-10); exodus/20.json `cultural` | Repository |
+| Creation and Deuteronomy's exodus reason complementary | 7-11 | exodus/verses/20.json (11 `text`) | Repository |
+| Deuteronomy 5:15; Mark 2:27; Hebrews 4:9 | 7-11 | BSB | BSB text |
+| The fifth as the hinge with a promise; kabbed from kaved; honor for adults (Mark 7) | 12-17 | exodus/verses/20.json (12); exodus/20.json `cultural`, `words` (H3513G) | Repository |
+| Three two-word commands; adultery defined; stealing as kidnapping (Sanhedrin 86a, Rashi) or breadth; false witness at the gate | 12-17 | exodus/20.json `literary`, `cultural` | Repository |
+| The care lines ‘These words must never be used against a child who is being harmed ...’ and ‘Abuse of a child is a crime ...’ | 12-17 | ephesians/plain/6.json (1-4 `hard`), word for word | Repository |
+| Matthew 5:27-28; Romans 13:9; Ephesians 6:1-2 | 12-17 | BSB | BSB text |
+| The people's request and the mediator; two kinds of fear; the thick darkness; Gregory of Nyssa | 18-21 | exodus/verses/20.json (19, 20, 21) | Repository |
+| Deuteronomy 18:16, 18; Acts 3:22; 1 Timothy 2:5; 1 Kings 8:12 | 18-21 | BSB; exodus/20.json `christ` | BSB text |
+| The Book of the Covenant begins (24:7); earth and uncut stones; no steps; several altars and Deuteronomy 12, two readings | 22-26 | exodus/verses/20.json (22-23, 24, 25-26); exodus/20.json `cultural` | Repository; no side |
+| Joshua 8:31; John 4:23 | 22-26 | BSB | BSB text |
+
+Cut before publishing: the Genesis 19 care line (its wording speaks of ‘this story’ and could not be used whole); Kuntillet Ajrud; the Nash Papyrus (on the book page's timeline); Dawkins and Marcion by name; Maimonides on the first commandment.
