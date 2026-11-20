@@ -48,6 +48,13 @@
           "blurb": "The \"orthodox corruption\" case at full strength, where it is right, and what the earliest letters show.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "compared-with-other-ancient-books",
+          "question": "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?",
+          "blurb": "The famous comparison with corrected figures, and the one question it answers.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -211,6 +218,16 @@
       "area": "text",
       "slug": "did-scribes-make-jesus-more-divine",
       "question": "Did scribes change the text to make Jesus look more divine?",
+      "live": false
+    },
+    {
+      "claim": "Having more manuscripts than any other ancient book doesn't show what the originals said, still less that they are true",
+      "proponent": "Bart D. Ehrman",
+      "work": "The New Testament: A Historical Introduction to the Early Christian Writings",
+      "year": 2016,
+      "area": "text",
+      "slug": "compared-with-other-ancient-books",
+      "question": "Christians say the New Testament is better preserved than Homer or Caesar. Is that true, and what does it prove?",
       "live": false
     }
   ],
