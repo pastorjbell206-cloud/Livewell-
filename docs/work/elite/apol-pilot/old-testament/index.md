@@ -17,12 +17,14 @@ Christians differ on many of these questions: the date of the exodus, how to rea
 1. **No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?** What Egypt's silence does and doesn't show, the Delta, Rameses and Moses' Egyptian name, Merneptah's Israel, the date and the large numbers, and what remains open.
 2. **Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?** Kenyon's Jericho and the radiocarbon dates, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.
 3. **Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?** The command and the ban in their setting, the limits the books set on it, Kant's question about knowing a command is God's, the main Christian readings and what each must carry, and why none licenses violence today.
+4. **Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?** Porphyry's case in Jerome's report, the modern case from chapter 11, the loanwords and Darius the Mede, Belshazzar, the Qumran copies, 1 Maccabees and Ben Sira, what the date turns on and what it doesn't decide.
 
 ## Words these pages use
 
 - **Late Bronze Age**: in the archaeology of Canaan, roughly 1550 to 1200 BC, the period in which most scholars place the exodus and the entry into Canaan, whichever date they hold.
 - **Merneptah Stele**: an Egyptian victory inscription of about 1208 BC, the earliest known mention of Israel outside the Bible, naming Israel as a people in Canaan.
 - **Herem**: the ban, in which a city and its people were devoted wholly to a god, with no plunder for the victors; Israel's neighbors practiced it too.
+- **Apocalyptic**: a kind of Jewish writing of the last centuries BC, full of visions and symbols, often set in the mouth of a figure from the past; scholars disagree about how much of Daniel belongs to it.
 - **Tell**: a mound built up by a town rebuilt again and again on its own ruins; Tell es-Sultan is ancient Jericho.
 - **Elef**: the Hebrew word usually translated "thousand," which can also name a clan or a military unit.
 

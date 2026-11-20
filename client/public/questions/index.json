@@ -253,6 +253,13 @@
           "blurb": "The command and the ban in their setting, the limits the books set on it, Kant's question about knowing a command is God's, the main Christian readings and what each must carry, and why none licenses violence today.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "when-was-daniel-written",
+          "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
+          "blurb": "Porphyry's case in Jerome's report, the modern case from chapter 11, the loanwords and Darius the Mede, Belshazzar, the Qumran copies, 1 Maccabees and Ben Sira, what the date turns on and what it doesn't decide.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -832,6 +839,26 @@
       "area": "old-testament",
       "slug": "the-command-to-destroy-the-canaanites",
       "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
+      "live": false
+    },
+    {
+      "claim": "Daniel was written by someone living under Antiochus Epiphanes, who related the past rather than foretelling the future",
+      "proponent": "Porphyry, as reported by Jerome",
+      "work": "Jerome, Commentary on Daniel, in Gleason L. Archer's translation",
+      "year": 1958,
+      "area": "old-testament",
+      "slug": "when-was-daniel-written",
+      "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
+      "live": false
+    },
+    {
+      "claim": "Daniel was completed between 167 and 164 BC: its prophecy of the Greek kings is exact down to Antiochus IV and wrong about his death",
+      "proponent": "John J. Collins",
+      "work": "Daniel",
+      "year": 1993,
+      "area": "old-testament",
+      "slug": "when-was-daniel-written",
+      "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
       "live": false
     },
     {
