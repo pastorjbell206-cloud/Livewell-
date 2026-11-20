@@ -5945,3 +5945,149 @@ Server stopped by PID, dist/ deleted, no lh-*.json. No code changed.
 
 The Psalms are complete. The next book in the lighter shape is whichever
 James names next.
+
+## Romans: the book page and Romans 1 to 8 (2026-11-20)
+
+James on 2026-11-19: "finish the psalms and the rest of the bible doing that". The
+Psalms were finished; Romans is the first of the New Testament letters.
+
+### The book page (`/study/bible/romans`, same address)
+
+Data only, in `client/public/bible/notes/romans/intro.json`, field `teaching`
+(the rest of the file untouched; the field appended). Fourteen headed parts:
+Romans in a minute; Who wrote it (Paul; Tertius, 16:22; Phoebe "very likely"
+the carrier, 16:1-2; diakonos read two ways; the form of chapter 16); When
+and where (Corinth, about AD 57); The churches in Rome (house churches; the
+names of chapter 16; Claudius "about AD 49, disputed"; the return after 54 as
+"a reconstruction and not something the letter says"); Why Paul wrote (his
+own reasons, then the views); The argument in one page; Romans and the Old
+Testament (Habakkuk 2:4 in its place; Abraham; Adam); Key words, plainly
+(faith, grace, law, flesh, sin, the Spirit); Righteousness and ‘justified’
+(Lutheran and Reformed, Catholic in Trent's words, Orthodox, the 1999 Joint
+Declaration; no side); ‘Works of the law’: two readings (traditional; the new
+perspective: Sanders 1977, Dunn's 1982 lecture, Wright; no side); ‘Faith in
+Christ’ or ‘the faithfulness of Christ’ (Hays 1983; no side); Romans in the
+church's history (Augustine 386, Luther 1515-16 and 1545, Wesley 24 May
+1738, Barth 1919/1922, Sanders 1977, the Joint Declaration 1999); What
+Romans is not (not only a private road to heaven; not against the Jewish
+people; not a political programme; not loose verses); How to read Romans.
+Then 12 hard passages (1:18, 1:26, 2:14, 3:25, 5:12, 7:14, 8:28, 9:13, 9:18,
+11:26, 13:1, 16:7), 14 key words, a timeline of 14 entries, one map on the
+"mediterranean" frame (Corinth, Rome, Jerusalem), a `mapNote` (Spain beyond
+the west edge; Illyricum mostly beyond the top edge), and six Go deeper pages.
+
+Words: 4,759 in the fourteen parts.
+
+**Code.** None in the app. `client/src/pages/study-bible/teaching.test.tsx`:
+Romans added to the list of books with a teaching page, and one line letting
+Romans's map use the "mediterranean" frame. Nothing else.
+
+### Romans 1 to 8 in plain words
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Romans 1 | 5 (Paul, servant and apostle: the gospel about God's Son; ‘I long to see you’; ‘I am not ashamed of the gospel’; the truth pushed away, and glory exchanged; ‘God gave them over’) | 3,978 |
+| Romans 2 | 5 (‘You who pass judgment’; ‘According to his deeds’; the law written on the heart; ‘You who teach others’; circumcision of the heart) | 3,178 |
+| Romans 3 | 4 (‘Much in every way’: God stays faithful; ‘There is no one righteous’; ‘But now’: righteousness from God, and the cross; no boasting, one God, the law upheld) | 2,911 |
+| Romans 4 | 4 (Abraham believed, and David's blessing; before circumcision: the father of all who believe; the promise rests on grace; ‘Against all hope’: raised for our justification) | 2,585 |
+| Romans 5 | 4 (peace with God, and hope that does not disappoint; ‘While we were still sinners’; sin and death through one man; the gift is not like the trespass) | 2,724 |
+| Romans 6 | 3 (‘Shall we continue in sin?’ baptized into his death; dead to sin, alive to God; slaves of righteousness, and the gift of God) | 2,005 |
+| Romans 7 | 3 (free from the law, joined to Christ; is the law sin?; ‘I do not do what I want’) | 2,197 |
+| Romans 8 | 5 (‘No condemnation’; ‘Abba, Father’: children and heirs; creation groans, and the Spirit helps; ‘All things work together for good’; ‘Who shall separate us?’) | 3,559 |
+| Total | 33 | 23,137 |
+
+Every passage has a `hard` part but Romans 1:8-15. Every Old Testament
+quotation is named by book and verse and read in its own place (the chain of
+3:10-18 one by one). After each chapter every passage was printed field by
+field: all 33 sit under their right headings. Each chapter note gained only
+`"plain": true`. One commit per chapter, with its ledger rows.
+
+### Sources
+
+All in `bdoor-ledger.md` under "Romans's book page" and "The plain notes on
+Romans 1" to "8". 20 web searches: 8 for the book page, then 2, 1, 2, 1, 1,
+0, 3 and 2. Reused: the Roman-world and Jewish-life portraits and wrom-ledger
+(Claudius, Erastus, prostatis, Phoebe, slavery, Priene), facts-ledger (Wesley),
+apol-ledger (Wesley's "General Deliverance"), the justification doctrine
+study, the Acts 2 and 13 notes, the Genesis 15 and 50 notes, the Psalm 103
+note, and the Honest Answers. A strict quotation check matched every
+double-quoted Scripture to the verse it cites, exact in case and punctuation.
+
+### Cut or narrowed
+
+Cut: Rome's population; Wesley going "unwillingly"; Calvin's "chief hinge";
+the later signers of the Joint Declaration; Karl Adam's line on Barth;
+Campbell's reading of 1:18-32; ancient same-sex practices described in
+detail; Josephus on the AD 19 expulsion; the Amidah's "gives life to the
+dead"; rabbinic Abraham keeping the whole law; Anselm and Abelard by name;
+Ambrosiaster, Gregory of Nyssa, Kümmel, Stowers, Jeremias by name; Wesley on
+Romans 7 (the search did not confirm his reading, so he is not named there);
+the mystery religions; height and depth as star-words; Augustus's adoption.
+Narrowed: Phoebe "very likely"; 1:26 "which most readers take in the same
+sense"; the Shema "recited", not "daily"; the 8:28 manuscripts stated
+generally (the repository's Greek lacks theos; the BSB has "God works").
+
+### Contested matters, and how they are stated
+
+Authorship (agreed); date (about 57); the Roman setting (a reconstruction);
+purpose (views); natural knowledge of God (Vatican I 1870, Belgic Confession,
+Barth 1934; no side); 1:26-27 (below); who 2:1 addresses; judgment by works
+(three readings); the Gentiles of 2:14 and those who never heard (Honest
+Answer); "true Jew" in 2:28-29; how deep sin reaches; 3:25 and the atonement
+(below); "uphold the law"; Paul and James; baptism (what all share; the Acts
+2:37-41 note for the differences); original sin and 5:12 (below); "all" in
+5:18 (universalist, Reformed, Arminian; no side); continuing sin (Reformed,
+Lutheran, Wesleyan); the law's continuing use; the "I" of Romans 7 (below);
+Abba; 8:28-30 and perseverance (below). "Justified" in the three traditions
+and the works-of-the-law and pistis Christou readings on the book page; each
+says "These notes do not choose".
+
+### Care lines
+
+1:24-32 (gay readers and those who love them); 5:1-5 (suffering, the Genesis
+50 form, Find Help, the suffering Honest Answer); 7:14-25 (repeated failure
+and addiction: doctor, pastor, counsellor, a group, Find Help); 8:12-17 (an
+absent or harmful father, the Psalm 103 form); 8:28-30 (fresh grief, harm,
+danger, Find Help); 8:31-39 (afraid of having lost God's love). 2:17-24
+carries the Acts 2 sentences rejecting the use of such texts against the
+Jewish people. No phone numbers.
+
+### What was run, and what passed (watched)
+
+After each chapter: the strict quotation check and `validate-bible-notes`
+(romans), exit 0. At the end, all 38 content-gate commands of ci.yml, one at
+a time: exit 0 each (validate-bible-notes: 325 chapters in plain words;
+search index 733 entries up to date; passage index 623 files match;
+verify-sources 22 texts intact). `pnpm check`: clean. `pnpm test`: 147 files
+passed, 7 skipped; 1,708 tests passed, 73 skipped. ESLint on the changed
+test: clean. `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` (3,042
+pages), `pnpm run audit:canonicals`: exit 0.
+
+Served with `scripts/serve-like-vercel.mjs` on port 4602 (no stray servers
+on 4600 to 4699 before or after) and looked with Playwright
+(deviceScaleFactor 1; /api/trpc, /api/track and /_vercel stubbed). Book page
+at 390 and 1440: 14 of 14 parts as headings, 14 of 14 timeline entries, one
+map on the "mediterranean" frame, the map note shown, no place name over
+another name, a mark or the frame's region names, no sideways scroll, no
+console or page errors. Romans 1 to 8 at 390: every passage heading, its
+part headings in order and the first 60 characters under each matched the
+data (1: 24 of 24 fields; 2: 25; 3: 20; 4: 20; 5: 20; 6: 15; 7: 15; 8: 25), no
+sideways scroll, no errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/romans-*` (book page top, contents, the
+justified part, timeline, map, at both widths) and `romans1-390-*`,
+`romans8-390-*`. Lighthouse (ci.yml command, three runs, on
+`/study/bible/romans`, after prerender): performance 88, accessibility 100,
+best practices 96, SEO 100, CLS 0.000. (A first run before prerender scored
+performance 55 and CLS 0.918, because the page was not yet prerendered; the
+ci job prerenders first.) Server stopped by PID, dist/ deleted, no
+lh-*.json.
+
+### Still unverified
+
+The exact words of every ancient and modern writer (all paraphrased, apart
+from Wesley's "heart strangely warmed" and Trent's phrase); the BSB footnote
+at 3:25 seen only through a Bible site; Orthodox teaching stated generally.
+
+### Next
+
+Romans 9 in plain words, then 10 to 16.
