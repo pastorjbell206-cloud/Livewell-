@@ -434,6 +434,50 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path fill={h} d="M0,94H100V100H0Z" />
     </>
   ),
+  /* Prayer: a window at evening, and one thin line rising. */
+  prayer: h => (
+    <>
+      <Shape d="M52,22H86V62H52Z" tone="b" off={1.5} />
+      <path fill={h} d="M56,26H82V58H56Z" />
+      <path className="pl-l" d="M69,26V58M56,42H82" />
+      <Shape d="M18,86C18,72 26,66 34,66C42,66 50,72 50,86Z" tone="c" off={1} />
+      <path className="pl-o" d="M27,56a7,7 0 1,0 14,0a7,7 0 1,0 -14,0Z" />
+      <path className="pl-l" d="M27,56a7,7 0 1,0 14,0a7,7 0 1,0 -14,0Z" />
+      <path className="pl-f" d="M34,44C40,38 28,32 34,26C40,20 28,14 34,8" />
+      <path className="pl-l" d="M10,86H90" />
+    </>
+  ),
+  /* Baptism and the Lord's Supper: water, and the bread and the cup. */
+  "baptism-and-supper": h => (
+    <>
+      <Shape d="M18,52a14,9 0 0 1 28,0Z" tone="c" off={1} />
+      <Shape d="M58,24h24c0,14 -4,20 -12,21v8h7v4h-14v-4h7v-8c-8,-1 -12,-7 -12,-21Z" tone="b" off={1} />
+      <path className="pl-l" d="M10,58H90" />
+      <Shape d="M6,68C30,64 70,72 94,68V90H6Z" tone="b" off={1.5} />
+      <path fill={h} d="M6,78C30,74 70,82 94,78V90H6Z" />
+    </>
+  ),
+  /* The life to come: a seed in the soil, and a stalk of wheat above it. */
+  "life-to-come": h => (
+    <>
+      <path className="pl-l" d="M8,62H92" />
+      <path fill={h} d="M8,66H92V92H8Z" />
+      <path className="pl-o" d="M42,78a8,5 -20 1,0 16,0a8,5 -20 1,0 -16,0Z" />
+      <path className="pl-c" d="M42,78a8,5 -20 1,0 16,0a8,5 -20 1,0 -16,0Z" transform="translate(1,0.8)" />
+      <path className="pl-l" d="M42,78a8,5 -20 1,0 16,0a8,5 -20 1,0 -16,0Z" />
+      <path className="pl-l" d="M50,74C51,56 49,40 50,22" />
+      <Shape d="M49,34c-7,-1 -10,-7 -8,-11c6,1 9,5 8,11ZM49,26c-7,-1 -10,-7 -8,-11c6,1 9,5 8,11ZM51,30c7,-1 10,-7 8,-11c-6,1 -9,5 -8,11ZM51,22c7,-1 10,-7 8,-11c-6,1 -9,5 -8,11Z" tone="c" off={0.8} />
+    </>
+  ),
+  /* Why are there so many churches?: one tree, many branches, one root. */
+  "so-many-churches": h => (
+    <>
+      <path className="pl-l" d="M8,70H92" />
+      <path fill={h} d="M8,74H92V92H8Z" />
+      <path className="pl-l" d="M50,74C48,80 42,84 36,88M50,74C52,80 58,84 64,88" />
+      <path className="pl-l" d="M50,70V44M50,46C42,38 34,32 26,22M50,46C58,38 66,32 74,22M36,32C34,24 34,18 36,12M64,32C66,24 66,18 64,12M50,52C44,48 38,46 30,44M50,50C56,46 62,44 70,42" style={{ strokeWidth: 3 }} />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */

@@ -1469,7 +1469,19 @@
       "slug": "baptism-and-supper",
       "title": "Baptism and the Lord's Supper",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Jesus gave his church two things to do: baptism with water, and a meal of bread and a cup. Seven pictures of what Christians share, and where churches do them differently.",
+        "older": "The two signs Jesus gave his church, in seven pictures: what every church shares in baptism and the Lord's Supper, and the questions on which faithful churches differ, set out without taking a side."
+      },
+      "mark": "baptism-and-supper",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [
+        "church"
+      ]
     },
     {
       "slug": "the-bible",
@@ -1481,13 +1493,36 @@
       "slug": "prayer",
       "title": "Prayer",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Prayer is talking with God, who is our Father. Seven pictures of what prayer is, and what to do when an answer is slow to come.",
+        "older": "What prayer is, in seven pictures: talking with God as Father, the prayer Jesus taught, thanks, asking, saying sorry, waiting, and the Spirit's help when words run out."
+      },
+      "mark": "prayer",
+      "frames": 7,
+      "stops": [
+        "jesus"
+      ],
+      "cards": []
     },
     {
       "slug": "life-to-come",
       "title": "The life to come",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "What Christians believe about dying, and about what God will do at the end. Seven gentle pictures, from a seed in the ground to a world made new.",
+        "older": "The Christian hope in seven pictures: death named honestly, the time between death and resurrection as Christians read it, the body raised, a just judgment, and all things made new."
+      },
+      "mark": "life-to-come",
+      "frames": 7,
+      "stops": [
+        "new-creation",
+        "cross"
+      ],
+      "cards": [
+        "life-to-come"
+      ]
     },
     {
       "slug": "who-made-god",
@@ -1598,7 +1633,19 @@
       "slug": "so-many-churches",
       "title": "Why are there so many churches?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "There are so many different churches on so many signs. Seven pictures of how one church became many, and the one root they still share.",
+        "older": "How one church became many, in seven pictures: one company in Jerusalem, East and West, the Reformation, the many branches since, and the shared root under them all, told without taking a side."
+      },
+      "mark": "so-many-churches",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [
+        "church"
+      ]
     },
     {
       "slug": "never-heard",

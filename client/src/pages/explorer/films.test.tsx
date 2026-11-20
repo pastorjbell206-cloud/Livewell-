@@ -492,7 +492,7 @@ describe("Listen", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the nineteen finished films", () => {
+  it("lists the four groups and the twenty-three finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -514,11 +514,15 @@ describe("the data", () => {
       "gospel-in-a-minute",
       "spirit-in-a-believer",
       "the-church",
+      "baptism-and-supper",
+      "prayer",
+      "life-to-come",
       "who-made-god",
       "does-god-exist",
       "why-bad-things-happen",
       "is-the-bible-true",
       "did-jesus-come-back-to-life",
+      "so-many-churches",
     ]);
   });
 
@@ -918,6 +922,64 @@ describe("the three belief films of 2026-11-20 night (image, sin, Jesus)", () =>
 
   it("each runs past two minutes at the older level and so has a share cut", () => {
     for (const slug of ["image-of-god", "what-sin-is", "who-jesus-is"])
+      expect(filmFile(slug).share?.level, slug).toBe("younger");
+  });
+});
+
+describe("the four films of 2026-11-20 (late): prayer, the two signs, the life to come, the churches", () => {
+  const words = (slug: string) => JSON.stringify(filmFile(slug));
+
+  it("Prayer promises no outcome and keeps a trusted adult in view", () => {
+    const film = filmFile("prayer");
+    const all = words("prayer");
+    expect(all).toMatch(/Prayer is not a promise that we will get what we ask/);
+    expect(all).toMatch(/sometimes it is wait, and sometimes it is no/);
+    expect(all).not.toMatch(/always get|guarantee|enough faith,? (you|and)|pray this prayer/i);
+    expect(film.care).toMatch(/not because you prayed wrongly/);
+    expect(film.care).toMatch(/or look at Find Help\.$/);
+  });
+
+  it("Baptism and the Supper says what all share, then each reading, and takes no side", () => {
+    const film = filmFile("baptism-and-supper");
+    const older = film.frames.map(f => f.older).join(" ");
+    for (const view of [
+      /Roman Catholic teaching holds that the bread and wine become Christ's body and blood/,
+      /Lutherans confess Christ's true body and blood present in, with and under the bread and wine/,
+      /Reformed churches teach a real spiritual feeding on Christ by faith/,
+      /Many Baptist and free churches stress a memorial meal/,
+    ])
+      expect(older).toMatch(view);
+    expect(older).toMatch(/All agree that the meal proclaims the Lord's death until he comes/);
+    expect(older).toMatch(/this moving picture does not choose between them/);
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+    // No form of the rite, and no church, is called the right one.
+    expect(words("baptism-and-supper")).not.toMatch(/\b(correct|right) (way|view|church)\b|the true church|you should be baptized/i);
+  });
+
+  it("The life to come is gentle: two readings of the time between, a care line, nothing on any one person's end", () => {
+    const film = filmFile("life-to-come");
+    const all = words("life-to-come");
+    expect(all).toMatch(/Most Christian traditions read/);
+    expect(all).toMatch(/Others hold that the dead sleep until the resurrection/);
+    expect(all).toMatch(/Christians still differ on how to describe that time/);
+    expect(all).not.toMatch(/suicide|took (his|her|their) own life|grave ?stone|skeleton|fire|burn|torment|rapture|antichrist|\b\d{4}\b/i);
+    expect(film.care).toMatch(/a parent, a pastor or another adult you trust, or look at Find Help\.$/);
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+  });
+
+  it("Why are there so many churches? grieves the divisions, takes no side, and keeps to the site's dates", () => {
+    const film = filmFile("so-many-churches");
+    const all = words("so-many-churches");
+    expect(all).toMatch(/1054/);
+    expect(all).toMatch(/1517/);
+    expect(all).toMatch(/That is a grief, not a joke/);
+    expect(all).toMatch(/This moving picture does not choose between the churches/);
+    expect(all).not.toMatch(/the true church|the right church|false church|heretic/i);
+    expect(film.differ?.links.map(l => l.href)).toContain("/theology/traditions");
+  });
+
+  it("each runs past two minutes at both levels and so has a share cut under two minutes", () => {
+    for (const slug of ["prayer", "baptism-and-supper", "life-to-come", "so-many-churches"])
       expect(filmFile(slug).share?.level, slug).toBe("younger");
   });
 });

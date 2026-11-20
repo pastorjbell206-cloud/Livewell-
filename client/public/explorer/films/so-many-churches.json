@@ -1,0 +1,106 @@
+{
+  "slug": "so-many-churches",
+  "title": "Why are there so many churches?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "so-many-churches",
+  "line": {
+    "younger": "There are so many different churches on so many signs. Seven pictures of how one church became many, and the one root they still share.",
+    "older": "How one church became many, in seven pictures: one company in Jerusalem, East and West, the Reformation, the many branches since, and the shared root under them all, told without taking a side."
+  },
+  "poster": "A great tree with many branches spreads over the ground, all of them growing from one trunk and one root.",
+  "frames": [
+    {
+      "id": "one",
+      "name": "One church",
+      "still": "A young tree with one trunk stands on the ground, its root drawn in a cut through the soil.",
+      "younger": "At the beginning there was one church: Jesus' friends in Jerusalem, who met together to learn from the apostles, to pray and to share bread.",
+      "older": "The church began as one company in Jerusalem, gathered by the Spirit at Pentecost and devoted to the apostles' teaching, the fellowship, the breaking of bread and prayer.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      }
+    },
+    {
+      "id": "spread",
+      "name": "Many lands",
+      "still": "The tree grows taller and puts out branches to both sides.",
+      "younger": "The good news went out into many countries and many languages. Christians in different places began to worship in different ways, while they believed the same things.",
+      "older": "From Jerusalem the message went to Samaria, to Antioch, where the disciples were first called Christians, to Rome and far beyond. Worship took different shapes in different places and languages, while the churches confessed one faith, later written down in the creeds.",
+      "verse": {
+        "ref": "Acts 1:8",
+        "text": "and you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
+      }
+    },
+    {
+      "id": "east-west",
+      "name": "East and West",
+      "still": "The trunk divides into two great limbs, one leaning left and one leaning right.",
+      "younger": "Over hundreds of years the churches of the East and the West grew apart, over who should lead the church and how to worship. In the year 1054 they split. Today they are the Orthodox and the Catholic churches.",
+      "older": "The Greek-speaking East and the Latin-speaking West drifted apart over centuries: language, authority, and a clause added to the creed. In 1054 the break became formal, and in 1965 the pope and the patriarch lifted the old excommunications. The site's history course says there was no hero and no villain, ‘only two faithful traditions that loved the same Lord and lost the ability to love each other’."
+    },
+    {
+      "id": "reformation",
+      "name": "1517",
+      "still": "From the left-hand limb a new branch grows out and divides again.",
+      "younger": "Nearly five hundred years later, in 1517, a monk named Martin Luther spoke out against wrongs he saw in the church in the West, and he taught that we are made right with God by grace through faith. The churches that came from that time are called Protestant.",
+      "older": "In 1517 Martin Luther posted ninety-five theses against the sale of indulgences. He had found in Romans that the righteousness God requires is the righteousness God gives, received by faith. He meant to start a debate; instead the Western church divided, into the Roman Catholic Church and the Protestant churches. The history course is honest about both the recovery and the violence and division that followed.",
+      "verse": {
+        "ref": "Romans 1:17",
+        "text": "For the gospel reveals the righteousness of God that comes by faith from start to finish"
+      }
+    },
+    {
+      "id": "branches",
+      "name": "Many branches",
+      "still": "The branches divide again and again until the tree is full of them, each a little different.",
+      "younger": "Protestant churches divided again, over things like how to baptize, what the Lord's Supper means, and how a church should be led. That is why there are so many different names on church signs.",
+      "older": "Protestant churches divided further, into Reformed and Presbyterian, Anglican, Baptist, Methodist, Pentecostal and many more, often over baptism, the Lord's Supper, and who holds authority and how. Some divisions were over things that matter. Some were not worth what they cost, and Christians have at times treated one another cruelly. That is a grief, not a joke."
+    },
+    {
+      "id": "root",
+      "name": "One root",
+      "still": "Under the ground the one root of the tree is drawn in gold, and every branch above grows from it.",
+      "younger": "But most churches share the same root. They believe in one God, the Father, the Son and the Holy Spirit; in Jesus, who died and rose again and will come back; and that being saved is God's gift. They say the same old creeds.",
+      "older": "The site's guide to the traditions puts it plainly: ‘Most of these churches confess the same God, the same Christ, the same empty tomb, and they recite the same ancient creeds that were written long before any of the divisions you see today.’ What separates them is real, but it sits on a shared foundation far larger than the parts that divide."
+    },
+    {
+      "id": "be-one",
+      "name": "That they may be one",
+      "still": "The whole tree stands in the morning light, and a few people of different sizes stand together under its branches.",
+      "younger": "Jesus prayed that everyone who believes in him would be one. Christians from different churches can pray together, help each other and learn from each other, because they belong to one Lord.",
+      "older": "On the night before he died, Jesus prayed for everyone who would believe through his disciples' message, that all of them may be one, so that the world may believe. The divisions are real, and so is the unity under them. This moving picture does not choose between the churches.",
+      "verse": {
+        "ref": "John 17:21",
+        "text": "that all of them may be one, as You, Father, are in Me, and I am in You. May they also be in Us, so that the world may believe that You sent Me."
+      }
+    }
+  ],
+  "think": {
+    "younger": "What is one thing your church shares with a church that does things differently?",
+    "older": "Paul begged the church in Corinth to have no divisions. Which differences between churches do you think are worth disagreeing over, and which are not?"
+  },
+  "read": [
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "Acts 11", "href": "/study/bible/acts/11" },
+    { "label": "1 Corinthians 1", "href": "/study/bible/1-corinthians/1" },
+    { "label": "Ephesians 4", "href": "/study/bible/ephesians/4" },
+    { "label": "John 17", "href": "/study/bible/john/17" }
+  ],
+  "stops": ["church"],
+  "cards": ["church"],
+  "differ": {
+    "text": "Most churches confess the same God, the same Christ and the same ancient creeds. They differ on baptism, on the Lord's Supper, on who holds authority and how, and on the shape of worship. This moving picture does not choose between them. Each tradition is described the way its own people would describe it, its gift first and its honest caution after, in",
+    "links": [
+      { "label": "the guide to the traditions", "href": "/theology/traditions" }
+    ]
+  },
+  "care": "If you have been hurt in a church, or by someone at church, what was done to you was wrong, and it was not your fault. You do not have to keep it to yourself. Talk with a parent or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Why the Catholic and Orthodox Churches Split in 1054", "href": "/theology/history/the-east-west-schism" },
+    { "label": "The Reformation", "href": "/theology/history/the-reformation" },
+    { "label": "Can you be a Christian without going to church?", "href": "/answers/can-you-be-a-christian-without-church" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "one", "verse": true}, {"id": "spread", "verse": true}, {"id": "east-west", "verse": false}, {"id": "reformation", "verse": true}, {"id": "branches", "verse": false}, {"id": "root", "verse": false}, {"id": "be-one", "verse": false}]},
+  "end": { "label": "Go to the stop: The Church and the Spirit", "href": "/study/explorer/church" }
+}

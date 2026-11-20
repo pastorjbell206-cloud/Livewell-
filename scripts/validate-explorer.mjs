@@ -548,7 +548,7 @@ for (const c of cards) {
       fail(w, "is finished but has no file in films/");
       continue;
     }
-    if (!scenesSrc.includes(`"${f.slug}": () => import(`))
+    if (!scenesSrc.includes(`"${f.slug}": () => import(`) && !scenesSrc.includes(`\n  ${f.slug}: () => import(`))
       fail(w, "has no drawing listed in films/scenes/index.ts");
     const film = read(file);
     const fw = `films/${f.slug}.json`;
