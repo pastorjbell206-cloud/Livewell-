@@ -12943,3 +12943,48 @@ Cut before publishing: Jeroboam's sons' names beside Aaron's (true to the deep n
 | 1 Kings 19:13 (Elijah at Horeb, 19:8-11); John 1:18, 14; 2 Corinthians 4:6; Romans 9:15; Revelation 22:4 | 18-23 | BSB; exodus/33.json `christ` | BSB text |
 
 Cut before publishing: that Joshua ‘is learning where a leader's strength comes from’ (no source); the counts of ‘know’ and ‘favor’ (seven and five in the Hebrew, which the English does not show).
+
+## The plain notes on Exodus 34 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The same words again; the terms not lowered; Moses supplies the stone, God the writing | 1-4 | exodus/verses/34.json (verse 1) | Repository |
+| ‘Chisel’ (pasal) as the root of the word for a carved image; ‘which you broke’ without reproach | 1-4 | exodus/verses/34.json (verse 1) | Repository |
+| Stricter limits than chapter 24; one mediator | 1-4 | exodus/verses/34.json (verses 2-3) | Repository |
+| Rising early answers 32:6; details that answer chapter 32 | 1-4 | exodus/34.json `literary`; exodus/verses/34.json (verse 4) | Repository |
+| Deuteronomy 10:2; Jeremiah 31:33 | 1-4 | BSB | BSB text |
+| The glory shown as character, heard more than seen; the most quoted description of God; Israel's creed; the calf story ends with God saying who he is | 5-9 | exodus/34.json `story`, `literary`; exodus/verses/34.json (verse 6) | Repository |
+| Rachum and the womb, used of God in all but one place; channun; ‘long of nostrils’; chesed; emet and amen | 5-9 | exodus/34.json `words` (H7349, H2587, H2617A, H0571G); exodus/verses/34.json (verse 6) | Repository |
+| Forgiving as lifting or carrying; three words for wrong (guilt, rebellion, failure) | 5-9 | exodus/34.json `words` (H5375I); exodus/verses/34.json (verse 7) | Repository |
+| The balance of mercies and justice; a thousand against three or four; the order of 20:5-6 reversed | 5-9 | exodus/34.json `literary`; exodus/verses/34.json (verse 7) | Repository |
+| Moses names the people stiff-necked and pleads on that basis | 5-9 | exodus/34.json `doctrines` (covenant) | Repository |
+| The Thirteen Attributes of Mercy; Selichot and the High Holy Days; the Talmud on the name said twice | 5-9 | exodus/verses/34.json (verse 6 `history`) | Repository |
+| Later uses: Numbers 14:18-20; Psalm 103:8; Joel 2:13; Nahum 1:3; Jonah 4:2, each choosing what it needs | 5-9 | exodus/34.json `literary`; BSB | BSB text |
+| John 1:14 and the pair chesed and emet (‘most likely’); Romans 3:26 | 5-9 | exodus/34.json `words` (H0571G), `christ` | Repository |
+| Children and parents' sins: Deuteronomy 24:16; Ezekiel 18:20; the critical reading; the Targum and Talmud; the household of three or four generations; the corporate reading; the proportion; John 9:3 | 5-9 | exodus/34.json `hard`; exodus/plain/20.json (3-6 `hard`) | Repository; no side |
+| ‘So this verse is never a curse on any family ... find his loving devotion.’ | 5-9 | exodus/plain/20.json (3-6 `hard`), word for word | Repository |
+| The renewal rests on God's character; the commands repeat chapters 20 to 23; ‘molten gods’ and the molten calf | 10-17 | exodus/34.json `doctrines` (covenant), `historical`, `literary` | Repository |
+| Asherah at Ugarit, her pole; Kuntillet Ajrud, about 800 BC, ‘the LORD and his asherah’ | 10-17 | exodus/34.json `historical` | Repository |
+| Treaties of great kings forbade other alliances | 10-17 | exodus/34.json `historical` | Repository |
+| Verse 16 names the pull to other gods; Rahab and Ruth | 10-17 | exodus/34.json `doctrines` (idolatry); BSB (Joshua 6:25; Ruth 1:16) | BSB text |
+| Jealous: the objection; zeal and jealousy; a covenant partner; set inside compassion and grace | 10-17 | exodus/34.json `hard`, `words` (H7067G); exodus/plain/20.json (3-6) | Repository |
+| The shrines: Israel's own worship in its own land, not a charter for coercing other peoples | 10-17 | exodus/34.json `hard` | Repository |
+| ‘These notes say nothing against any people, ancient or modern ... or to claim any land.’ | 10-17 | exodus/plain/23.json (27-33 `hard`), word for word | Repository |
+| Deuteronomy 7:4; 1 Kings 11:4; Ruth 1:16 | 10-17 | BSB | BSB text |
+| The parallel with 23:12-19; Abib and Nisan; rest in plowing and harvest; the trust of verse 24 | 18-28 | exodus/34.json `historical`, `cultural` | Repository |
+| The firstborn and 13:14-15; pidyon haben at a month old | 18-28 | BSB; exodus/34.json `cultural` | Repository |
+| What was on the tablets: most readers, and the ‘ritual’ ten since Goethe (1773), with no agreed list | 18-28 | exodus/34.json `historical` | Repository; no side |
+| Deuteronomy 10:4; Matthew 4:2 (a link of theme); Luke 2:23 | 18-28 | BSB; exodus/34.json `christ` | BSB text |
+| The face reflects, unknown to Moses; the fear answered as at 20:19 | 29-35 | exodus/verses/34.json (verses 29-30, 31-32) | Repository |
+| The order: he speaks unveiled and veils afterward; the regular practice; the word for the veil found only here | 29-35 | exodus/verses/34.json (verses 33, 34-35); exodus/34.json `cultural` | Repository |
+| ‘Shine’ and the word for horn; the Vulgate's ‘horned’; Michelangelo's statue in Rome | 29-35 | exodus/34.json `cultural`, `words` (H7160) | Repository |
+| Numbers 6:25; Matthew 17:2, 5; 2 Corinthians 3:7, 16, 18 | 29-35 | BSB; exodus/34.json `christ` | BSB text |
+| Paul's ‘fading’: not in Exodus; katargeo; ‘the glory of Sinai was real, but it was not meant to be the last word’; how he reached it (the repeated veiling, or a shield for a stiff-necked people) | 29-35 | 2-corinthians/plain/3.json (4-11 `hearers`), wording reused; exodus/34.json `christ` | Repository; no side |
+| The veil as a picture; Paul had read Moses that way himself; taken away for any reader | 29-35 | 2-corinthians/plain/3.json (12-18 `hearers`, `hard`), wording reused | Repository |
+| ‘For centuries some Christians used ‘the veil’ to look down on Jewish people, to mock them as blind, and to justify contempt and worse. That reading is false, and this site rejects it.’ | 29-35 | 2-corinthians/plain/3.json (12-18 `hard`), word for word | Repository |
+| ‘The note on Acts 2:22-28 sets out why.’ | 29-35 | exodus/intro.json `teaching`, word for word | Repository |
+| Romans 11:1 | 29-35 | BSB | BSB text |
+
+Cut before publishing: ‘sealed at their altars with their sacrifices’ of the treaties (verse 15 speaks of an invitation, no more); ‘its only weapons against false worship are words, prayer and a changed life’ (no source); the quoted phrase of the Kuntillet Ajrud inscription (not Scripture, so the quotation marks were removed); Trible, Heschel, Maimonides, Dawkins, Mellinkoff and Hafemann by name (in the deep note for the reader who wants them).
