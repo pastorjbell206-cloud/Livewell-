@@ -12338,3 +12338,24 @@ Cut before publishing: nothing beyond the deep note's wording.
 | Romans 12:1; Hebrews 11:27 | 24-29 | BSB | BSB text |
 
 Cut before publishing: Isaiah 19:25 (its wording would bring ‘Blessed’ into the prose; 19:22 makes the same point).
+
+## The plain notes on Exodus 11 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hinge chapter; verses 1-3 a parenthesis, 4-8 the end of the last audience | 1-3 | exodus/11.json `story`, `literary` | Repository |
+| Sha'al ‘ask’, not ‘borrow’; favor from God; overdue wages; Deuteronomy 15:13-15 | 1-3 | exodus/11.json `cultural` | Repository |
+| The gold in the tabernacle (35:22) and the calf (32:2-4) | 1-3 | exodus/11.json `historical` | Repository |
+| Genesis 15:14; Deuteronomy 15:13, 15 | 1-3 | BSB | BSB text |
+| The firstborn as heir; Pharaoh's heir; the hand mill and figurines of grinding women | 4-8 | exodus/11.json `historical`, `cultural` | Repository |
+| Tse'aqah, the same cry as Israel's (3:7, 9); ‘not a dog will sharpen its tongue’; the last ‘distinction’ | 4-8 | exodus/11.json `literary`, `cultural` | Repository |
+| Ezekiel 18:23; Deuteronomy 32:39; Colossians 1:18; Romans 8:32 (echoing Abraham and Isaac) | 4-8 | BSB; exodus/11.json `christ` | BSB text |
+| The just God and the firstborn: crime answered, God's authority over life, Israel spared only under the blood, God gives his Son | 4-8 | exodus/11.json `hard`; exodus/12.json `hard` | Repository |
+| The Talmud's silencing of the angels; some Christians trust what they cannot see | 4-8 | exodus/12.json `hard` | Repository |
+| The care line ‘If you have lost a child, or carry a grief like hers ...’ and the Find Help sentence | 4-8 | john/plain/19.json (23-27 `hard`), word for word | Repository |
+| 9-10 echo 7:3-4 | 9-10 | exodus/11.json `literary` | Repository |
+| Exodus 7:3-4; Romans 9:18; 11:33 | 9-10 | BSB | BSB text |
+
+Cut before publishing: the identification of particular Egyptian princes with the firstborn (speculation, per the note).
