@@ -3570,6 +3570,26 @@
     "greed",
     "financial-hardship"
    ]
+  },
+  "greed": {
+   "phrases": [
+    "cant stop wanting things",
+    "jealous of their money",
+    "obsessed with money",
+    "more stuff never satisfies",
+    "greedy for money",
+    "money hungry",
+    "wanting what others own",
+    "covet my neighbors house",
+    "chasing money at any cost",
+    "never satisfied with my income"
+   ],
+   "not": [],
+   "related": [
+    "generosity-and-giving",
+    "contentment",
+    "money"
+   ]
   }
  }
 }
