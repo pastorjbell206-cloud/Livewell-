@@ -135,7 +135,8 @@ export const useWide = () =>
  * Places every name beside its mark where it covers no other mark, no other
  * name and as little of the route as it can, and stays inside the view.
  * Each name tries eight spots round its mark (right first, then left, the
- * corners, above and below); the names are placed in the order given and
+ * corners, above and below; with lines to avoid, two more farther above and
+ * below); the names are placed in the order given and
  * then each is placed again against all the others, three times over. The
  * result depends only on the places, the view and the size, never on the
  * step, so no name moves while the reader steps.
@@ -148,7 +149,9 @@ export function placeNames(
   wide: boolean,
   routes: MapPlace[][],
   extra: { x: number; y: number; w: number; h: number }[] = [],
-  nameOf: NameOf = ownName
+  nameOf: NameOf = ownName,
+  /** Lines drawn by the frame (a coast, a lake) that a name should not cross. */
+  avoid: [number, number][][] = []
 ): Map<string, PlacedName> {
   const fs = nameSize(wide) * u;
   type R = { x: number; y: number; w: number; h: number };
@@ -174,6 +177,22 @@ export function placeNames(
           y: a.y + ((b.y - a.y) * k) / n,
         });
     }
+  // The frame's own lines to keep off, as points a little closer than a name's height.
+  const shore: { x: number; y: number }[] = [];
+  for (const line of avoid)
+    for (let i = 1; i < line.length; i++) {
+      const a = { x: frame.x(line[i - 1][1]), y: frame.y(line[i - 1][0]) };
+      const b = { x: frame.x(line[i][1]), y: frame.y(line[i][0]) };
+      const n = Math.max(
+        1,
+        Math.ceil(Math.hypot(b.x - a.x, b.y - a.y) / (0.5 * u))
+      );
+      for (let k = 0; k <= n; k++)
+        shore.push({
+          x: a.x + ((b.x - a.x) * k) / n,
+          y: a.y + ((b.y - a.y) * k) / n,
+        });
+    }
   const spots = (p: MapPlace, w: number) => {
     const c = pt(p);
     const asc = 0.74 * fs; // from the baseline to the top of a capital
@@ -189,6 +208,14 @@ export function placeNames(
       [0.9, { x: c.x - diag, y: c.y + diag + asc, anchor: "end" }],
       [1.1, { x: c.x, y: c.y - vert, anchor: "middle" }],
       [1.1, { x: c.x, y: c.y + vert + asc, anchor: "middle" }],
+      // On a map with the frame's lines to keep off (Abraham's road), two
+      // spots farther off, for a name hemmed in by a coast and a lake.
+      ...(avoid.length
+        ? ([
+            [6, { x: c.x, y: c.y - 2 * vert, anchor: "middle" }],
+            [6, { x: c.x, y: c.y + 2 * vert + asc, anchor: "middle" }],
+          ] as [number, NameAt][])
+        : []),
     ];
     return all.map(([cost, at]) => {
       const left =
@@ -244,6 +271,16 @@ export function placeNames(
     for (const d of dots)
       if (d.x > r.x && d.x < r.x + r.w && d.y > r.y && d.y < r.y + r.h)
         s += 0.8;
+    // With a little room round the name, so it does not touch a line either.
+    const m = 0.6 * u;
+    for (const d of shore)
+      if (
+        d.x > r.x - m &&
+        d.x < r.x + r.w + m &&
+        d.y > r.y - m &&
+        d.y < r.y + r.h + m
+      )
+        s += 8;
     return s;
   };
   const clashes = (i: number, r: R) => {
@@ -477,6 +514,7 @@ export function TripMap({
   book,
   nameOf = ownName,
   listLabel,
+  avoid,
 }: {
   frame: Frame;
   trip: Trip;
@@ -487,6 +525,8 @@ export function TripMap({
   nameOf?: NameOf;
   /** The name of the numbered list of places (default: "The places on <the trip>"). */
   listLabel?: string;
+  /** The frame's lines the names keep off (see placeNames). */
+  avoid?: [number, number][][];
 }) {
   const [at, setAt] = useState(0);
   const steps = trip.steps;
@@ -501,8 +541,23 @@ export function TripMap({
   );
   const box = useMemo<Box>(
     () =>
-      trip.whole ? { x: 0, y: 0, w: frame.W, h: frame.H } : boxFor(frame, all),
-    [frame, all, trip.whole]
+      trip.whole
+        ? { x: 0, y: 0, w: frame.W, h: frame.H }
+        : boxFor(frame, [
+            ...all,
+            ...(trip.reach ?? []).map(
+              ([lat, lon], i) =>
+                ({
+                  id: `reach-${i}`,
+                  name: "",
+                  lat,
+                  lon,
+                  refs: [],
+                  line: "",
+                }) satisfies MapPlace
+            ),
+          ]),
+    [frame, all, trip.whole, trip.reach]
   );
   const maskId = useId().replace(/[^a-zA-Z0-9]/g, "");
   const wide = useWide();
@@ -511,8 +566,18 @@ export function TripMap({
       .flatMap(s => [...(s.via ?? []), s.place])
       .map(id => places.get(id))
       .filter((p): p is MapPlace => !!p);
-    return placeNames(frame, all, box, box.w / 100, wide, [route], [], nameOf);
-  }, [frame, all, box, wide, steps, places, nameOf]);
+    return placeNames(
+      frame,
+      all,
+      box,
+      box.w / 100,
+      wide,
+      [route],
+      [],
+      nameOf,
+      avoid
+    );
+  }, [frame, all, box, wide, steps, places, nameOf, avoid]);
 
   const legs = steps.map((s, i) => {
     if (i === 0) return null;

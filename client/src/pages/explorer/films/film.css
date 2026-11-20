@@ -428,6 +428,20 @@
   stroke-width: 4;
   stroke-linejoin: miter;
 }
+/* A light in the dark (Who Jesus is, picture 1). By day the dark is a dense
+   hatch round a light left as paper. By night the paper is the dark and the
+   ink is pale, so the hatch would read as light round a dark hole: the dark
+   is plain night paper instead, and the light takes the pale ink's tone. */
+html.dark .fp-screen .fp-dark {
+  fill: var(--art-paper);
+}
+html.dark .fp-screen .fp-light {
+  fill: var(--art-ink);
+}
+/* Lines drawn on that light stay dark, as by day. */
+html.dark .fp-screen .fp-on-light {
+  stroke: var(--art-paper);
+}
 .fp-screen .mv-road {
   stroke-dasharray: 1 1;
   transition: stroke-dashoffset 2s var(--motion-ease);

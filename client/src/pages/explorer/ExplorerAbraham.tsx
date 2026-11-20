@@ -34,6 +34,8 @@ import "./explorer.css";
 type Loaded = { road: AbrahamsRoad; places: Places };
 
 const FRAME = frameFor("fertile-crescent");
+/** The Genesis book page's close-up of Canaan, for a part that stays inside it. */
+const CLOSE = frameFor("canaan");
 const GENESIS = { slug: "genesis", name: "Genesis" };
 
 /**
@@ -198,11 +200,12 @@ function RoadPage({ road, places }: Loaded) {
         />
         <TripMap
           key={part.id}
-          frame={FRAME}
+          frame={part.frame === "canaan" ? CLOSE : FRAME}
           trip={part}
           places={places}
           note={road.routeNote}
           book={GENESIS}
+          avoid={road.avoid}
           listLabel={`The places in this part: ${part.name}`}
         />
       </div>
