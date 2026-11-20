@@ -7985,3 +7985,28 @@ No web searches; everything below rests on the BSB, the repository and earlier l
 
 Cut: the date of the confession "Jesus is Lord" as earliest (stated only as
 "one of the oldest"); Deissmann's papyri on Nero as lord (not reached).
+
+## The plain notes on Romans 11 (2026-11-20)
+
+3 web searches.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1 Kings 19:10, 18 (Elijah, Jezebel); Deuteronomy 29:4; Isaiah 29:10; Psalm 69:22-23 | 1-10 | BSB | BSB text |
+| The Psalm 69 note's paragraph on Romans 11:9-10 | 1-10 | Psalms 69 plain note | Repository wording, word for word |
+| "Foreknew" as in 8:29; hardening readings as at 9:18 | 1-10 | Romans 8 and 9 plain notes | Repository |
+| First dough offered (Numbers 15:20); root as the patriarchs ("many readers"); Deuteronomy 32:21; Isaiah 42:6 | 11-16 | BSB; repository deep note | BSB text |
+| Supersessionism (replacement; harsher and milder "fulfilment" forms); covenant theology (one people); dispensational (distinct future for ethnic Israel); two-covenant (Jews in covenant through Moses apart from Christ, held by some, not most churches) | 11-16 | Overviews | Search: 1517.org "Did the church replace Israel"; learn.ligonier.org "The Church and Israel"; ethosinstitute.sg. Each stated in its holders' terms, no names, no side |
+| Vatican II, Nostra Aetate 4 (1965), citing Romans 11:28-29: God holds the Jews most dear for the sake of their fathers | 11-16 | Nostra Aetate 4 | Search: christianunity.va (Nostra Aetate 4); notredamedesion.org; cbcew.org.uk. Paraphrased |
+| "That reading is false, and this site rejects it"; no claim about any modern state | 11-16, 25-29 | Book page; Acts 2 and 28 plain notes | Repository wording |
+| Usual grafting: cultivated shoot onto wild stock; Paul's picture the reverse ("contrary to nature"); whether he had a farming practice in mind debated | 17-24 | Commentaries | Search: biblehub.com commentaries on 11:24; Columella not named (his text not reached) |
+| Jeremiah 11:16; Hosea 14:6 | 17-24 | BSB | BSB text |
+| Perseverance views on 11:20-22 (Reformed and Baptist; Wesleyan, Arminian and Catholic); the Honest Answer | 17-24 | `answers.ts`; Romans 8 plain note | Stated as views, no side |
+| "Mystery" as something hidden now revealed | 25-29 | Standard Pauline usage | Stated generally |
+| Isaiah 59:20-21 (BSB Hebrew-based "to Zion"; Paul follows the Greek "from Zion"); Isaiah 27:9; Jeremiah 31:34; Deuteronomy 7:8; Galatians 6:16 | 25-29 | BSB; repository deep note | BSB text |
+| Three readings of "all Israel"; "And so" two ways | 25-29 | Acts 28 plain note; repository deep note (`hard`) | Repository; no side |
+| "Consigned" (shut up together); universalist, two-groups, Reformed and Arminian readings of "everyone" | 30-36 | Romans 5 plain note (5:18) | Repository; no side |
+| Isaiah 40:13; Job 41:11 | 30-36 | BSB | BSB text |
+
+Cut: Columella by name; the 2015 Vatican document on 11:29 (found, not
+needed); Calvin by name for the "whole people of God" reading.
