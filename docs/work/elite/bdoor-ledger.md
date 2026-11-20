@@ -8058,3 +8058,17 @@ the ancient theatre; inns; early Christian writers on the coals (not checked).
 Cut: the "quinquennium" of Nero's good years (not checked); debt in Rome;
 Luther and Calvin on obedience; the Confessing Church (in the deep note, not
 needed); the year AD 58 for Annals 13.50 (said "around this time").
+
+## The plain notes on Romans 14 (2026-11-20)
+
+No web searches; the BSB, the repository and earlier ledgers.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Weak and strong most likely Jewish and Gentile believers over food laws, Sabbath and feasts ("most readers"); market meat from temples; avoiding meat as Daniel did; wider idol-meat scruples possible | 1-12 | Repository deep note (`historical`, `cultural`); book page (Rome reconstruction) | Repository; stated as the usual reading |
+| Jewish families keep food laws and Sabbath today | 1-12 | General knowledge | Stated generally, with respect |
+| Leviticus 11:44; Exodus 20:8; Daniel 1:8, 12; Isaiah 45:23; 49:18 | 1-12 | BSB | BSB text |
+| Galatians 5:2; Romans 16:17; "things indifferent" (adiaphora); creeds as a line for some, more for others | 1-12 | BSB; repository deep note (`hard`) | Stated as views, no side |
+| Koinos the ordinary Jewish word for ritually impure food | 13-23 | Repository deep note (`cultural`) | Repository |
+| Leviticus 19:14; Isaiah 52:7; Psalm 104:15; Mark 7:19; Acts 10:15 | 13-23 | BSB | BSB text |
+| Two readings of the food laws for believers (not binding; Jewish believers may keep them); "weak" as a wounded conscience, weighed differently | 13-23 | Standard readings | Stated as readings, no side |
