@@ -12882,3 +12882,37 @@ Cut before publishing: a paraphrase of verse 34 that had been set in quotation m
 | Deuteronomy 9:10; Luke 11:20; 2 Corinthians 3:3; Jeremiah 31:33 | 18 | BSB; exodus/31.json `christ` | BSB text |
 
 Cut before publishing: that the tablets are called the Testimony ‘because they bear witness’ (no source for the gloss).
+
+## The plain notes on Exodus 32 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Forty days; the covenant broken within weeks; the first two commandments; Israel's fall, like Genesis 3 | 1-6 | exodus/32.json `story` | Repository |
+| Apis at Memphis; El called Bull and Baal at Ugarit; the silver-plated calf of Ashkelon, found 1990 | 1-6 | exodus/32.json `historical` | Repository |
+| An image made a god present and portable; the calf as a stand-in or pedestal for the LORD; ‘a feast to the LORD’ | 1-6 | exodus/32.json `historical`, `cultural` | Repository |
+| Idolatry as worship of the true God on our own terms | 1-6 | exodus/32.json `doctrines` (idolatry) | Repository |
+| The earrings, the gifts of Egypt, and the gifts asked for the tabernacle | 1-6 | exodus/32.json `cultural` | Repository |
+| ‘Revelry’: to laugh or play; two readings | 1-6 | exodus/32.json `words` (H6711) | Repository; no side |
+| 1 Kings 12:28; Psalm 106:19-20; 1 Corinthians 10:6-7 | 1-6 | BSB; exodus/32.json `historical` | BSB text |
+| Israel's own Scripture telling its own sin; Paul's warning is to the church; Psalm 106 says ‘we’ (106:6) | 1-6 | 1-corinthians/plain/10.json; exodus/intro.json `teaching` (‘How the New Testament reads Exodus’); BSB | Repository |
+| ‘For centuries some Christians used the New Testament to justify contempt for Jews. That reading is false, and this site rejects it. The note on Acts 2:22-28 sets out why.’ | 1-6 | exodus/intro.json `teaching`, word for word | Repository |
+| ‘Your people’ handed back; the two reasons of Moses' prayer | 7-14 | exodus/32.json `literary`, `doctrines` (prayer) | Repository |
+| Stiff-necked: an ox that will not bend to the yoke | 7-14 | exodus deep notes (found by search: ‘like an ox that will not bend its neck to the yoke’) | Repository |
+| ‘I will make you into a great nation’ and Abraham | 7-14 | BSB (Genesis 12:2, the same words) | BSB text |
+| Nacham: relent, be sorry, comfort | 7-14 | exodus/32.json `words` (H5162H) | Repository |
+| Relenting: classical theology and open theists; ‘leave Me alone’ as invitation; both agree prayer matters | 7-14 | exodus/32.json `hard` | Repository; no side |
+| Psalm 106:23; Deuteronomy 9:18-19; Jeremiah 18:8; Hebrews 7:25; Numbers 23:19 | 7-14 | BSB | BSB text |
+| Breaking a treaty tablet as voiding it; burning, grinding and scattering as total destruction; the drinking and Numbers 5; idolatry as adultery | 15-24 | exodus/32.json `cultural` | Repository |
+| Aaron's excuse against the narrator's ‘engraving tool’ | 15-24 | exodus/32.json `literary` | Repository |
+| Deuteronomy 9:20; Acts 7:41; Genesis 3:12 | 15-24 | BSB | BSB text |
+| ‘Ordained’ as to fill the hand | 25-29 | exodus/32.json `cultural` | Repository |
+| The killing: covenant judgment where God was king; rebellion out of control; the call first; critical reading (the Levites' office); troubling, and not to be dismissed; not a pattern for the church (John 18:36; 1 Corinthians 5) | 25-29 | exodus/32.json `hard` | Repository |
+| ‘A place where they must trust what they cannot fully see’ | 25-29 | exodus/intro.json `teaching` (‘The plagues’), wording reused | Repository |
+| Deuteronomy 33:9; John 18:36; Matthew 26:52 | 25-29 | BSB | BSB text |
+| ‘A great sin’ three times; machah, to wipe a dish or erase writing; the book of the living | 30-35 | exodus/32.json `literary`, `words` (H4229A) | Repository |
+| God declines; Moses cannot atone; judgment restrained; the promise stands | 30-35 | exodus/32.json `christ`, `doctrines` (judgment) | Repository |
+| Romans 9:3; Revelation 3:5; Galatians 3:13 | 30-35 | BSB; exodus/32.json `christ`; romans/plain/9.json | BSB text |
+
+Cut before publishing: Jeroboam's sons' names beside Aaron's (true to the deep note, but it leads a new reader away from the chapter); the Ugaritic poem of Anat and Mot (the same).
