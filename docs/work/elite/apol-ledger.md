@@ -945,3 +945,174 @@ Cut or not used: full-Bible counts (756, 779; undated); Nida's employer; "decade
 | The harder-reading rule since the eighteenth century | Row f (Bengel) | Verified |
 
 Cut or not used: a 1999 Baylor dissertation by M. A. Proctor for the angry reading, and earlier commentators (Kilpatrick, Turner, Taylor, Manson) said to have adopted it (met only in secondary summaries); Metzger's explanation that verse 43 prompted the change (reported secondhand, so the piece gives the argument without his name); Bill Mounce's remarks on the NIV footnote; a Syriac explanation of the change (not found). No living author is quoted in this piece; the titles of Ehrman's essay and article are given as titles.
+
+# Twelfth run (2026-11-20): the editor's read of the text area's five, and the area "Who wrote the Gospels, when, and the canon"
+
+Method words as in the eleventh run. "S" is a WebSearch run in this run; the search tool returns summaries of pages, so "verified (secondary)" means a search summary of an encyclopedia, a publisher, a review, a catalogue, a journal record or a blog, not the primary text. "Tenth run" and "Eleventh run" mean rows in the sections above; "Repo" means a file in this repository. No book or primary text was read from this machine.
+
+## The editor's read of the five (changed facts and wording)
+
+| Piece | Change | Why, and how verified | Result |
+|---|---|---|---|
+| e | "For about half a century" becomes "For decades" (how long apologists have used the comparison) | The eleventh run cut the McDowell date (no result), so no length of time was verified | Softened; no new fact |
+| f | Step 3: the earliest text reached is the text circulating "in the second and third centuries", not "in the second century" | Tenth run rows: P66 and P75 around 200 on the usual dating and later on Nongbri's; P52 debated. "Second century" alone overclaimed | Corrected |
+| g | Step 1 rewritten: words have been taken out of God's word only if they belonged to the text as first written (the old step said a verse is "missing from a modern Bible only if" it was original, which does not follow) | Logic, no new fact | Corrected |
+| g | Majority-text editors (Robinson and Pierpont) are no longer counted among those who "keep to the King James"; the sentence now names those who defend the King James, its Greek text or the reading of most manuscripts | Eleventh run row g (their edition follows the majority, not the Textus Receptus) | Corrected |
+| h | Alter taken out of the list of translators who agree "on what Jesus did and said": he translated the Hebrew Bible, not the New Testament. Hart is now said to have translated the New Testament | Eleventh run row h (Alter has translated the Hebrew Bible; Hart, *The New Testament: A Translation*, 2017) | Corrected |
+| h | Modern versions translate from "scholarly editions of the Hebrew and Greek made from the manuscripts" (not "critical editions ... built on the earliest manuscripts", which does not describe the standard Hebrew edition) | General description, narrowed; "as other pages in this area describe for the Greek" | Narrowed |
+| h | Link restored: the shelf essay "How the Bible Gets Translated by the Room You're In" (/writing/how-the-bible-gets-translated-by) | Repo: `client/src/lib/shelf.json` lists it with status "live"; it is in `client/public/sitemap.xml`; `validate-links.mjs` counts shelf essays as pages. `scripts/lib/site-routes.mjs` did not read the shelf, so the eleventh run's validator could not resolve it; the resolver now counts public shelf essays (test: `server/site-routes-shelf.test.ts`) | Restored |
+| i | "anyone who says the question is closed hasn't read them" becomes "the question is best left open" | Tone (a jab at unnamed readers) | Softened |
+| i | "the church has always read four Gospels side by side, not one harmony" becomes "the church kept four Gospels side by side" | A Gospel harmony (Tatian's) was read in some Syriac churches for a time, so "always read" overclaimed; the narrower sentence needs no new fact | Narrowed |
+| a, e | "Bart Ehrman, who teaches at the University of North Carolina" becomes "who taught for many years at the University of North Carolina at Chapel Hill" | `docs/work/essays/ledgers/who-decided-what-books-are-in-the-bible.md` line 125 (final read, 2026-10-28): his own biography says he taught there from 1988 until his retirement in 2025 | Corrected in both (a is live; the correction is a fact, not a change of argument) |
+
+## The area "authors" (pieces and keys)
+
+Pieces: `docs/work/elite/apol-pilot/authors/` and `client/public/questions/authors/`: the area page index.md; the-gospels-are-anonymous.md, "j"; written-decades-later.md, "k"; stories-changed-in-the-telling.md, "l"; four-gospels-and-the-rest.md, "m"; forgeries-in-the-new-testament.md, "n". "WDC ledger" means `docs/work/essays/ledgers/who-decided-what-books-are-in-the-bible.md` (whose verifier read Eusebius, Irenaeus, Justin, the Muratorian fragment and Athanasius in the ANF and NPNF texts from a cloned library); "Nicaea ledger" means `docs/work/essays/ledgers/the-council-of-nicaea-what-was-decided-in-325.md`; "HJ ledger" means `docs/work/essays/ledgers/the-historical-jesus.md`; "Bdoor" means `docs/work/elite/bdoor-ledger.md` (the Study Bible's verified rows); "Note" means a Study Bible introduction or chapter note in `client/public/bible/notes/` that the piece agrees with. bkv.unifr.ch does not resolve from this machine (tried for Justin, *Dialogue* 103), so no patristic text was read in this run.
+
+### j. "The Gospels are anonymous" (the-gospels-are-anonymous)
+
+| Claim | How verified | Result |
+|---|---|---|
+| No Gospel names its author in its text; titles "According to ..." | Note (Matthew, Mark, Luke, John intros) | Verified (repo) |
+| Luke 1:1-4: carefully investigated what eyewitnesses handed down; John 21:24: the beloved disciple as the witness, "we know" | Repo (BSB) | Described, not quoted (ESV wording not confirmed) |
+| Acts 4:13: Peter and John "unschooled, ordinary men" (Greek *agrammatoi*); Ehrman in *Forged* reads it as illiterate and stresses Aramaic; a *Themelios* review answers that it contrasts them with the scribes' formal training | S: The Gospel Coalition (*Themelios* review of *Forged*), ehrmanblog.org, Witherington's critique, as summarized; Repo (BSB) | Verified (secondary), paraphrased |
+| Ehrman: Justin calls the Gospels "memoirs of the apostles" and doesn't say which apostles; Irenaeus about thirty years later first names all four; the names attached in the second century for authority | S: ehrmanblog.org ("When did the Gospels get their names?"), critics' summaries; WDC ledger lines 66 to 69 (Justin, *First Apology* 66 and 67; Irenaeus about thirty years after Justin) | Verified (secondary), paraphrased |
+| Ehrman, *Jesus, Interrupted* (2009); *Forged* (2011) | Tenth run | Verified |
+| Justin in the 150s, in Rome | WDC ledger line 65 (151 to 157; settled in Rome) | Verified |
+| Irenaeus around 180; four zones of the world and four winds; four and only four | WDC ledger lines 68 to 70 | Verified |
+| Irenaeus, *Against Heresies* 3.1.1: Matthew among the Hebrews, Mark Peter's interpreter, Luke Paul's companion, John who leaned on his breast at Ephesus | Bdoor rows 24, 555, 1786, 2464 | Verified, paraphrased |
+| Irenaeus saw Polycarp as a boy in Asia; claimed a link to the apostles' generation through him | WDC ledger line 71 (Eusebius 5.20.5); Note (John intro) | Verified for the boyhood sight; "claimed a link" follows the note |
+| Papias early in the second century, perhaps 110 to 130; preserved by Eusebius; Mark Peter's interpreter, from the elder, accurately though not in order (3.39.15); Matthew arranged the logia in the Hebrew dialect, each translated as he could (3.39.16); terms disputed | Bdoor rows 22, 23, 554 | Verified, paraphrased |
+| Greek Matthew doesn't read like a translation and follows Mark's Greek | Bdoor row 556; Note (Matthew) | Verified |
+| Davies and Allison: an unnamed Jewish-Christian author, the apostle's name attached because some tradition went back to him | Note (Matthew intro) | Repo; Allison a Christian: the resurrection essay ledger ("Dale Allison, a New Testament scholar and a Christian") |
+| Hengel, *Studies in the Gospel of Mark* (Fortress, 1985), pp. 64-84: titles early, before the end of the first century, to tell Gospels apart; anonymous only at the literary level; later a longer study of the four Gospels (German original; English translation by John Bowden) | S: billmounce.com (Zondervan Academic, "Are the Gospels truly anonymous?"), a review of *Die vier Evangelien*, as summarized | Verified (secondary). The English title's year was not confirmed, so it is not given |
+| Koester rejects an early full title; Stanton supports Hengel | S: the same review, as summarized | Verified (secondary) |
+| Kruger: second- and third-century Gospel manuscripts with title pages all carry the traditional titles (P66, P4/P64/P67, P75); Evans: no anonymous copies and none under other names | S: michaeljkruger.com ("10 misconceptions about the NT canon, 9"); Mounce quoting Evans | Verified (secondary). The exact title wording of each papyrus was not seen (two searches), so none is quoted |
+| P66, P75 around 200 on the usual dating; Nongbri later | Tenth run | Verified |
+| Gathercole, "The Alleged Anonymity of the Canonical Gospels," *JTS* 69.2 (2018) 447-476: absence of self-reference doesn't make a text anonymous; second-century literature consistently names the four | S: Cambridge repository abstract, Wikipedia, REF record | Verified (secondary) |
+| Mark in Acts: turned back partway through the first mission; cause of a sharp split between Paul and Barnabas (Acts 13:13, 15:37-39) | Note (Mark intro); Repo | Verified |
+| Luke named in three greetings (Colossians 4:14, Philemon 24, 2 Timothy 4:11) | Note (Luke intro) | Verified |
+| A gospel under Peter's name; Serapion of Antioch (bishop 191 to 211) read it, found much sound and some things added | WDC ledger line 120 | Verified, paraphrased |
+| Clement of Alexandria: a tradition of the elders on the order of the Gospels; Mark at Peter's hearers' request; John last | WDC ledger line 133; Bdoor rows 25, 1809 | Verified |
+| Muratorian fragment: Luke the third Gospel, John the fourth; traditionally late second century, in or near Rome; Sundberg and Hahneman argue for the fourth century | WDC ledger lines 109, 115, 116 | Verified |
+| Origen on Hebrews: the thoughts Paul's, the diction someone else's; "But who wrote the epistle, in truth, God knows." | WDC ledger lines 95, 96 (ANF, Eusebius 6.25.13-14) | Quoted |
+| Kok, *The Gospel on the Margins* (2015); Bauckham, *Jesus and the Eyewitnesses* (2006) | Bdoor rows 26, 27; Tenth run | Verified |
+
+Cut: Justin, *Dialogue* 103 ("composed by his apostles and those who followed them"): the exact words were not found and bkv.unifr.ch does not resolve; the specific title wording of P66 and P75 (not confirmed); the date of Hengel's English *The Four Gospels*; a claim that ancient anonymous books tended to collect several names (not verified, so it was cut in the editor's pass); Polycarp as a hearer of John (only the note's "claimed a link"). No living author is quoted.
+
+### k. "Weren't the Gospels written decades after Jesus by people who never met him?" (written-decades-later)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Crucifixion around 30 or 33 | Tenth run | Verified |
+| Most date Mark late 60s to early 70s; chapter 13 the crux, both readings; Matthew about 80 to 95 (majority); Luke about 75 to 90 (majority); John the 90s | Note (Mark, Matthew, Luke, John intros); Bdoor rows 559, 1790, 2472; WDC ledger line 135; HJ ledger line 52 (Mark around 70) | Verified |
+| Matthew 22:7 (the burned city) and Luke 21:20 and 19:43 read as looking back on 70; answers: stock judgment imagery, siege oracles, genuine prediction | Note (Matthew, Luke intros); Repo (BSB Luke 21:20, 19:43; Mark 13:2) | Verified (repo) |
+| Ignatius and the Didache appear to know Matthew; Marcion used a form of Luke by about 144; P52 usually first half of second century, debated | Note (Matthew, Luke, John intros); Tenth run (P52); Tenth run (Ignatius traditionally under Trajan, later dates argued) | Verified; "on the usual dating" kept for Ignatius |
+| Papias knew of writings by Mark and Matthew; Papias reports Mark had not heard the Lord | Bdoor rows 22, 554 | Verified |
+| Harnack (1911), Robinson, *Redating the New Testament* (1976), Hemer (1989): Acts in the early 60s; ends with Paul in Rome about 60 to 62 | Note (Luke and Acts intros); Bdoor rows 1790, 2472 (Robinson 1976); Repo (Acts 28:30-31) | Verified (Robinson by search in Bdoor; Harnack and Hemer rest on the note) |
+| James G. Crossley, *The Date of Mark's Gospel: Insight from the Law in Earliest Christianity* (T&T Clark, 2004): late 30s to early 40s, from Mark's assumption that Jesus fully kept the law; chapter 13 read against other settings, the Caligula crisis among them | S: publisher and library records, reviews, as summarized | Verified (secondary), paraphrased. "His statue in the temple" describes the Caligula crisis (general history, AD 40, not separately searched) |
+| Pervo, *Dating Acts* (Polebridge, 2006): about AD 115 | Bdoor row 4786 | Verified |
+| 1 Thessalonians about 49 to 51; 1 Corinthians mid-50s | WDC ledger line 136; Tenth run | Verified |
+| 1 Corinthians 15:3-7 summary received and handed on; 15:6 ESV "most of whom are still alive"; most scholars, including many with no stake in Christianity, think it took shape within a few years | Pagan-myths essay ledger line 248 (ESV); resurrection essay ledger line 122; Note on 1 Corinthians 15 | Quoted (four words); verified |
+| Galatians 1:18-19: three years, Cephas, fifteen days, James; 2:9 James, Cephas and John, pillars | Repo (BSB) | Described |
+| "Within about twenty-five years": 1 Corinthians in the mid-50s against a crucifixion around 30 or 33 | Arithmetic from the rows above | Verified |
+| Ehrman, *Jesus Before the Gospels* (2016): the evangelists neither witnessed Jesus' life nor had contact with eyewitnesses; uses cognitive psychology, sociology, anthropology | S: National Catholic Reporter review, Historical Jesus Research serial review, TGC review, as summarized; Tenth run (title and year) | Verified (secondary), paraphrased |
+| Arrian wrote about four centuries after Alexander's campaigns, chiefly from Ptolemy and Aristobulus, who served with Alexander; A. B. Bosworth judged him unreliable | S: Wikipedia "Anabasis of Alexander", Iranica, UBC blog, as summarized | Verified (secondary) |
+| Bauckham, *Jesus and the Eyewitnesses* (2006); second edition (Eerdmans, 2017) answering critics | Tenth run; S (Wikipedia, publisher ISBN) | Verified |
+| Bauckham: Simon of Cyrene, father of Alexander and Rufus (Mark 15:21), named as people readers knew; Matthew 27:32 and Luke 23:26 omit the sons; named minor figures as possible sources; the Gospel names fit Tal Ilan's lexicon of Palestinian Jewish names | S: TGC article on inconspicuous evidence, arXiv 2403.14883 (Wilson), NTS 2022 "Name Recall in the Synoptic Gospels", as summarized; Repo (BSB) | Verified (secondary), paraphrased |
+| The name statistics challenged (Wilson 2024 and others) | S: same | Verified (secondary); no critic is named in the piece |
+| Samuel Byrskog, "The Eyewitnesses as Interpreters of the Past: Reflections on Richard Bauckham's *Jesus and the Eyewitnesses*," *JSHJ* 6 (2008) 157-168 | S: Lund University record | Verified. The piece describes the article by its title's point |
+| Bauckham (2015 blog post and an interview): eyewitness memory can be very unreliable; his arguments don't guarantee the accuracy of everything in the Gospels | S: historicaljesusresearch.blogspot.com (2015), as quoted | Verified (secondary), paraphrased (no quotation of a living author) |
+
+Cut: Kloppenborg, "*Evocatio deorum* and the Date of Mark," *JBL* 124 (2005): the citation was confirmed (S) but not its argument, so it isn't used; that Robinson "was not a conservative" (not searched); "the fullest surviving account" of Alexander (not confirmed; "one of the main surviving accounts"); that Peter, James and John were prominent "for decades" (Galatians shows them in the years Paul describes); Byrskog as "broadly sympathetic" (not confirmed); Bauckham's own sentences (paraphrased). No living author is quoted.
+
+### l. "Isn't that a game of telephone?" (stories-changed-in-the-telling)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Dibelius, *Die Formgeschichte des Evangeliums* (1919), the name "form criticism", preaching as the setting; Bultmann, *History of the Synoptic Tradition* (1921), a wider setting, many units community creations; the tradition shows more of the church than of Jesus | S: virtualreligion.net, encyclopedia.com, historicaljesusresearch blog, gospelstudies.org.uk, as summarized | Verified (secondary), paraphrased |
+| Ehrman, *Jesus Before the Gospels* (2016): memory reconstructive, eyewitness and collective memory distort; draws on cognitive psychology; grants "gist" memories almost certainly accurate (a review quotes p. 144) | S: NCR, Historical Jesus Research and TGC reviews; Free Inquiry review reprinted at debunking-christianity.com | Verified (secondary), paraphrased; not quoted |
+| Mark 5:23 near death, 5:35 news of death; Matthew 9:18 "has just died"; Mark 10:46 Bartimaeus, Matthew 20:30 two blind men; Luke 18:35 approaching Jericho; Mark 15:39 "Son of God", Luke 23:47 "righteous man"; four wordings of the charge (Mark 15:26, Matthew 27:37, Luke 23:38, John 19:19) | Repo (BSB); Note on Matthew 20 (two men; Luke's approach) | Verified |
+| Lord's Prayer: Luke's shorter form | Repo (BSB Matthew 6:9-13, Luke 11:2-4); Eleventh run row f | Verified |
+| Last Supper: Mark and Matthew in one form; Luke 22:19-20 and 1 Corinthians 11:24-25 close to each other; "This is my body" (ESV and BSB alike); 1 Corinthians 11 about 53 to 55, "received" and "passed on" as technical terms (also 15:3) | Repo (BSB); Note on 1 Corinthians 11 and 15 | Verified; four words quoted |
+| *Talitha koum* (Mark 5:41), *Abba* (Mark 14:36), *Marana tha* (1 Corinthians 16:22) | Repo (BSB); Eleventh run row h; Tenth run (*Marana tha*) | Verified |
+| Bauckham concedes eyewitness memory can be very unreliable | Row k | Verified (secondary), paraphrased |
+| Gerhardsson, *Memory and Manuscript* (1961; 2nd ed. Eerdmans 1998): rabbinic memorization model; Ehrman's objection that it reads the Mishnah and Talmud back into the first century | S: ehrmanblog.org ("Didn't the disciples memorize Jesus' teachings?"), as summarized | Verified (secondary) |
+| Bailey, "Informal Controlled Oral Tradition and the Synoptic Gospels," *Asia Journal of Theology* 5 (1991) 34-54, reprinted *Themelios* 20 (1995); three models: Bultmann "informal uncontrolled", Riesenfeld and Gerhardsson "formal controlled", his own "informal controlled"; traditions gathered first-hand in the Middle East; community and senior members control the core | S: TGC (Themelios text as quoted), Wikipedia "Kenneth E. Bailey", as summarized | Verified (secondary). Riesenfeld's first name not confirmed, not given |
+| Weeden, "Kenneth Bailey's Theory of Oral Tradition: A Theory Contested by Its Evidence," *JSHJ* 7 (2009) 3-43; Dunn, "Critiquing Theodore Weeden's Critique," *JSHJ* 7 (2009) 44-62: Weeden misunderstood Bailey and oral tradition; Keener, *JGRChJ* 13 (2017): some of Bailey's examples weaker, Weeden disproved less than he thought | S: Wikipedia, jgrchj.net (Keener PDF), craigkeener.com, as summarized | Verified (secondary). "Same volume" (not "issue") |
+| Dunn, *Jesus Remembered* (Eerdmans, 2003): oral tradition, Bailey's model, stable words and adapted point; earliest transmission predominantly by word of mouth; differences a mix of literary editing and oral tradition | S: Denver Journal review, Catholic Books Review, Durham repository (NTS 2003 "Altering the default setting") | Verified (secondary), paraphrased |
+| McIver, *Memory, Jesus, and the Synoptic Gospels* (SBL, 2011): emotionally significant event memories last; collective memory forms within about five years; trustworthy in main contours | S: DTS Voice review, Themelios review, Stahl's review, as summarized | Verified (secondary), paraphrased ("according to his reviewers") |
+| Two-source view with Q, majority | Bdoor row 574; Note (Mark intro) | Verified |
+| Scholars debate whether John knew the other Gospels | Note (John intro) | Verified (repo) |
+| John's Gospel tells of the Baptist, the feeding, the entry, Pilate, the crucifixion and the empty tomb | Repo (BSB John 1, 6, 12, 18-20) | Verified |
+
+Cut: Bailey's sorting of which kinds of material are fixed and which flexible (not found in two searches); "over decades" of Bailey's observation; McIver on details varying "as memory always does" (not in the reviews); Bartlett's memory experiments (not searched); the Latin terms for Jesus' exact words and his voice; a named harmonizer of the two blind men (the Matthew 20 note names one; the page gives the view unattributed). No living author is quoted.
+
+### m. "Didn't the church pick four and suppress the rest?" (four-gospels-and-the-rest)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Full text of Thomas found near Nag Hammadi in December 1945; Greek fragments from Oxyrhynchus recognized only afterward | WDC ledger line 130 | Verified. "A farmer" and "a jar" were cut (not checked) |
+| Thomas: 114 sayings; no narrative, no death and resurrection; scholars divided on whether it is Gnostic; "Gnosticism" as a category questioned | S: Biblical Archaeology Society, Bible Odyssey ("Was the Gospel of Thomas Gnostic?"), ehrmanblog.org overview, as summarized | Verified (secondary) |
+| Most scholars date Thomas to the second century; some earlier | WDC ledger line 135 (Wikipedia "Gospel of Thomas") | Verified |
+| Gospel of Peter: fragment found at Akhmim, winter 1886-87, in a much later copy (fifth or eighth to ninth century, sources differ); death and resurrection; Paul Foster's 2010 commentary prefers the second half of the second century | S: Wikipedia "Gospel of Peter", a dissertation record, as summarized | Verified (secondary). Foster's book title not confirmed, so it is not listed; "the risen Jesus emerging from the tomb" cut |
+| Serapion around 200: allowed it, learned of its use for heresy, read it, much sound and some things added | WDC ledger line 120 | Verified |
+| Gospel of Judas: Codex Tchacos; English translation published early 2006 by the National Geographic Society; radiocarbon 220 to 340; Irenaeus around 180 mentions a Gospel of Judas (Book 1, ch. 31), identity with the Coptic text probable, not certain; composed in the second century | S: Wikipedia, National Geographic, Christian Century review, New World Encyclopedia, as summarized | Verified (secondary); "probably" kept twice |
+| Gospel of Mary: Coptic in a fifth-century codex (Berlin) found or bought in 1896, published by Till in 1955; Greek fragments P.Rylands 463 (early third century) and P.Oxy. 3525 (third century); King, early second century; Tuckett, first half; Mary Magdalene the central figure (King) | S: New World Encyclopedia, Wikipedia, earlychristianwritings.com, as summarized | Verified (secondary). King's 2003 book not confirmed and not listed |
+| Four Gospels first century (Mark around 70, John 90s), others second | WDC ledger line 135; row k | Verified |
+| Justin, 150s: "the memoirs of the apostles or the writings of the prophets are read, as long as time permits"; memoirs "which are called Gospels" | WDC ledger lines 65 to 67 (*First Apology* 66, 67, ANF) | Quoted |
+| Irenaeus around 180: "It is not possible that the Gospels can be either more or fewer in number than they are."; four zones, four winds | WDC ledger lines 69, 70 (*Against Heresies* 3.11.8, ANF) | Quoted |
+| Tatian's Diatessaron: a harmony composed shortly after 172, the title understood as "through the four"; preeminent in Syrian churches for centuries; Theodoret replaced more than two hundred copies with the four Gospels in the fifth century | S: Gorgias Encyclopedic Dictionary of the Syriac Heritage, Catholic Encyclopedia (New Advent), as summarized | Verified (secondary). (Also supports the editor's change to piece i) |
+| Charles E. Hill, *Who Chose the Gospels? Probing the Great Gospel Conspiracy* (OUP, 2010): acceptance widespread; no one chose them | S: catalog records, Denver Journal (Blomberg), TGC review, WTJ review, as summarized | Verified (secondary), paraphrased ("concluded in effect"); not quoted |
+| Constantine called Nicaea in 325; a few hundred bishops; Arius and the creed; the Melitian schism; the date of Easter; twenty canons; nothing on Scripture's canon | Nicaea ledger lines 11, 26 (via WDC), 65, 105; WDC ledger lines 23 to 26 | Verified |
+| Athanasius, Festal Letter 39 (367): the first extant list of exactly the twenty-seven; no mention of Nicaea where he sets out the list | WDC ledger lines 4, 11, 14 | Verified |
+| Constantine ordered "fifty copies of the sacred Scriptures" for Constantinople (Eusebius, *Life of Constantine* 4.36) | WDC ledger lines 31, 32 | Quoted |
+| Bauer 1934 (English 1971); Ehrman, *Lost Christianities* (2003): Ebionites, Marcionites, Gnostic groups, proto-orthodox who compiled the canon and won; Eusebius's history | WDC ledger lines 126 to 128 | Verified, paraphrased |
+| The church's tests (apostolic origin, use across churches, rule of faith); the rule of faith confessed at baptism; Ehrman: correct theology the leading criterion | WDC ledger lines 117, 119, 127a | Verified |
+| Gospel of the Ebionites known only from brief quotations in Epiphanius | WDC ledger line 129 | Verified; "fourth-century" for Epiphanius is general knowledge, not searched |
+| Eusebius's disputed books (James, Jude, 2 Peter, 2 and 3 John); Cyril of Jerusalem around 350 without Revelation | WDC ledger lines 89, 100 | Verified |
+| Marcion: around 144; edited Luke, ten letters of Paul; Harnack's thesis and its critics | WDC ledger lines 75, 79, 82, 83 | Verified |
+| Muratorian fragment: traditionally late second century; Hahneman (1992) fourth century | WDC ledger lines 115, 116 | Verified |
+| Pagels, *The Gnostic Gospels* (1979) | Tenth run | Verified |
+| Köstenberger and Kruger, *The Heresy of Orthodoxy* (Crossway, 2010): a reply to the Bauer thesis and Ehrman; addresses Bauer on Edessa | S: publisher listings, apocryphicity.ca review, as summarized | Verified (secondary) |
+| Galatians 1:8-9 (another gospel); 2:2, 2:9 (set before the leaders; James, Cephas, John, right hand of fellowship); 1 Corinthians 15:11 | Repo (BSB) | Described |
+| First Vatican Council (1870): sacred because written under inspiration, not because approved afterward; Anglican Article VI: received "as they are commonly received" | WDC ledger lines 138, 139 | Verified, paraphrased |
+| Twenty-seven books held by nearly every church, the Ethiopian narrow canon included | WDC ledger line 55 | Verified |
+
+Cut: Thomas Robinson, *The Bauer Thesis Examined* (not found); Michael Williams, *Rethinking "Gnosticism"* (the thesis was not confirmed); Foster's title; King's 2003 book; Pagels's thesis as a claim line (not confirmed in her words); that the Gnostic teaching "has no first-century witness" (narrowed: no clear witness of its own, with the debate over New Testament letters named); "Constantine's one recorded act concerning Scripture" (not checked; now "Eusebius records"); the Orthodox churches' account of the canon (not checked). No living author is quoted.
+
+### n. "Weren't some New Testament letters forged?" (forgeries-in-the-new-testament)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman, *Forged* (2011); *Forgery and Counterforgery: The Use of Literary Deceit in Early Christian Polemics* (OUP; copyright 2013, released November 2012): ancient pagan, Jewish and Christian critics treated false authorial claims as deceit; forgery defined as a false claim to be a known figure | S: library and bookseller records, Wikipedia, reviews (paleojudaica, Interpreter), as summarized; Tenth run (*Forged*) | Verified (secondary). The year is given as 2013, the copyright and catalogue year |
+| Armin Baum, reviewing it in *Novum Testamentum*: accepted that ancient readers condemned pseudepigraphy as deceit, questioned other claims | S: same results | Verified (secondary), paraphrased |
+| Ehrman: Peter and John *agrammatoi* (Acts 4:13); Aramaic; 1 and 2 Peter in literate Greek; neither by Peter | S: TGC *Themelios* review, ehrmanblog.org ("You don't think Peter wrote 1 and 2 Peter"), as summarized; row j | Verified (secondary) |
+| Seven undisputed letters (Romans, 1 and 2 Corinthians, Galatians, Philippians, 1 Thessalonians, Philemon); opinion divided on Ephesians, Colossians and 2 Thessalonians; Pastorals doubted by most critical scholars | S: Wikipedia "Authorship of the Pauline epistles", SATS blog, as summarized; Note (1 Timothy, Titus: "Evangelical scholarship largely holds to Paul's authorship; a majority of critical scholars do not") | Verified |
+| Pastorals: godliness, sound teaching; overseers, deacons, enrolled widows; travels hard to fit Acts; replies: subject and recipients, simple order with no single bishop, release after Rome (Clement of Rome around 96, Eusebius); P. N. Harrison 1921; Marcion lacked them; Polycarp appears to echo 1 Timothy; Irenaeus quotes it as Paul's | Note (1 Timothy, Titus intros) | Verified (repo). Harrison not named in the piece |
+| Ephesians: 1:3-14 one sentence; salvation as completed; universal church; 2:20; parallels with Colossians; replies: style and subject, secretary, Tychicus (6:21-22; Colossians 4:7-8); well attested in the second century; since the nineteenth century | Note (Ephesians intro) | Verified (repo) |
+| Colossians: style; already raised (2:12; 3:1) against Romans 6; Philemon's names (Onesimus, Archippus and others); Dunn: Timothy composed it in Paul's lifetime | Note (Colossians intro) | Verified (repo) |
+| 2 Thessalonians: follows 1 Thessalonians closely; end-time teaching; 2:2 a letter "seeming to be from us"; 3:17 the signature | Note (2 Thessalonians intro); Repo (BSB) | Verified |
+| 2 Peter: ornate Greek unlike 1 Peter; uses Jude; Paul's letters with "the other Scriptures" (3:15-16); the fathers have died (3:4); testament form; Eusebius listed it as disputed; Jerome on its style; Athanasius's list of 367 | Note (2 Peter intro); WDC ledger lines 89, 131, 132; Repo (BSB 3:15-16) | Verified; Jerome rests on the note |
+| Tertullian, *On Baptism* 17 (about 200): a presbyter in Asia wrote the Acts of Paul, said he did it for love of Paul, and was removed from office | S: earlychristianwritings.com, tertullian.org (Evans's edition), Harland's blog, as summarized | Verified (secondary), paraphrased |
+| Muratorian fragment rejects letters to the Laodiceans and Alexandrians forged in Paul's name (in connection with Marcion) | S: earlychristianwritings.com text, Tregelles's edition (gospelstudies.org.uk), as summarized | Verified (secondary), paraphrased |
+| Romans 16:22 Tertius; Colossians 1:1 and 4:18; 2 Thessalonians 1:1 and 3:17; 1 Peter 5:12 "Through Silvanus" | Repo (BSB); Note (Romans, 1 Peter intros) | Verified |
+| E. Randolph Richards, *The Secretary in the Letters of Paul* (Mohr Siebeck, WUNT 2/42, 1991): secretaries in the Roman world; draws on Cicero and his secretaries; a critic: the stylistic shifts documented are far smaller than Ephesians or Colossians would need; an NTS article (2018) appraising the secretary hypothesis critically | S: Mohr Siebeck PDF, Scot McKnight's Substack, Cambridge (NTS) record, as summarized | Verified (secondary). The NTS article's author was not seen, so it is not named |
+| Anthony Kenny, *A Stylometric Study of the New Testament* (Clarendon, 1986): no reason to reject the hypothesis that twelve Pauline letters share one author | S: NTS article ("Positional stylometry reassessed") describing Kenny's conclusion; credohouse; bookwire listing, as summarized | Verified (secondary). Which letter stands apart is reported differently by sources, so the piece doesn't say |
+| Jermo van Nes, *Pauline Language and the Pastoral Epistles: A Study of Linguistic Variation in the Corpus Paulinum* (Brill, Linguistic Biblical Studies 16; dated December 2017 online, 2018 in catalogues): only a minority of the Pastorals' major lexical and syntactic peculiarities differ significantly | S: catalogues, Tyndale Bulletin review, SEA review, as summarized | Verified (secondary); the catalogue year 2018 is given |
+| I. Howard Marshall: "allonymity", someone close to Paul continuing to write as he would have, perhaps completing works Paul began, without intent to deceive (with Philip Towner) | S: Scot McKnight's Substack, pastoralepistles.com quoting Marshall, as summarized | Verified (secondary), paraphrased. His ICC commentary's title and year were not confirmed and it isn't listed; "an evangelical" was cut (not checked) |
+| Terry L. Wilder, "New Testament Pseudonymity and Deception," *Tyndale Bulletin* 50.1 (1999): ancient writers, early Christians among them, had scruples about pseudonymity | S: Galaxie record and snippet | Verified (secondary) |
+| Carson and Moo (2005) on pseudonymity and deception | S: a blog excerpt | Not used (secondary excerpt only) |
+
+Cut: a claim that Ehrman counts the seven (the count is the scholarly consensus, not attributed to him); Ehrman's count of forged books in the New Testament (a news headline only); Harrison's 1921 thesis by name; Marshall's commentary in the reading list; Carson and Moo; "no serious scholar" (now "almost universally accepted"). No living author is quoted.
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman's *Jesus, Interrupted*, *Forged* and *Lost Christianities* | Tenth run | Verified |
+| The four chosen "long before any emperor took an interest" | WDC ledger line 134 | Verified |
+| Synoptic Gospels: Mark first and used by the others (most scholars) | Note (Mark intro) | Verified |
+| Papias (bishop of Hierapolis, early second century, quoted by Eusebius) | Bdoor rows 22, 23 | Verified |
+| "Canon" from a Greek word for a measuring rule | Repo: the site's glossary (`client/public/theology/theology-glossary.json`, "Canon": from a word meaning measuring rod) | Agrees with the site |
+| Pastoral Letters: 1 and 2 Timothy and Titus | Note (1 Timothy, Titus) | Verified |

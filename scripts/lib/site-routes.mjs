@@ -13,6 +13,7 @@
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { builtFrom } from "./built-files.mjs";
 import { liveQuestionPaths } from "./questions.mjs";
+import { loadEssayShelf } from "./shelf.mjs";
 import { join } from "node:path";
 
 const ROOT = new URL("../..", import.meta.url).pathname;
@@ -37,6 +38,11 @@ function essaySlugs() {
   // essay the database has no post for yet (client/src/lib/shelf.ts).
   const rewrites = join(ROOT, "client/public/essays");
   if (existsSync(rewrites)) for (const f of readdirSync(rewrites)) if (f.endsWith(".json")) out.add(f.slice(0, -5));
+  // A public essay on the shelf (client/src/lib/shelf.json) is a page even
+  // when its text lives only in the database (James's Substack chapters), as
+  // validate-links.mjs and the sitemap already count it.
+  const shelf = loadEssayShelf();
+  for (const e of shelf.data?.essays || []) if (e?.slug && shelf.visibility(e.slug) === "shelf") out.add(e.slug);
   return out;
 }
 
