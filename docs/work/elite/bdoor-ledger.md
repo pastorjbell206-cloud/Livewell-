@@ -12484,3 +12484,25 @@ Cut before publishing: ‘Marah means bitter’ kept only as the text's own expl
 | Joshua 5:12; Hebrews 9:4; John 6:49-51 | 31-36 | BSB | BSB text |
 
 Cut before publishing: nothing beyond the deep note's wording.
+
+## The plain notes on Exodus 17 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Rephidim not located; Wadi Feiran suggested on the Jebel Musa view | 1-3 | exodus/17.json `historical` | Repository; no side |
+| Real thirst; ‘contend’ a lawcourt verb; testing the LORD | 1-3 | exodus/17.json `cultural` | Repository |
+| Psalm 95:8-9; Deuteronomy 6:16; Matthew 4:7 | 1-3 | BSB | BSB text |
+| Stoning as the community's act; the staff that struck the Nile; Horeb as Sinai | 4-7 | exodus/17.json `cultural`, `historical` | Repository |
+| Massah and Meribah | 4-7 | exodus/17.json `literary` | Repository |
+| 1 Corinthians 10:4, 9 and the usual reading; John 4:14; Hebrews 3:8 | 4-7 | BSB; exodus/17.json `christ` | BSB text |
+| Amalek in the Negev and Sinai; Genesis 36:12; not attested outside the Bible | 8-13 | exodus/17.json `historical` | Repository |
+| Joshua's first appearance; the staff seen; the Mishnah's reading; emunah ‘steady’ | 8-13 | exodus/17.json `story`, `cultural`, `literary` | Repository |
+| Hebrews 4:8; Justin Martyr's reading as later and devotional | 8-13 | exodus/17.json `christ` | Repository |
+| Romans 15:30 | 8-13 | BSB | BSB text |
+| The first command to write; nes ‘signal pole’; kes read as ‘banner’ or ‘throne’ | 14-16 | exodus/17.json `cultural`, `literary` | Repository |
+| The oath against Amalek: reasons, ancient warfare (Mesha about 840 BC), Jewish and Christian readings; no side | 14-16 | exodus/17.json `hard` | Repository; no side |
+| Deuteronomy 25:17-18; Leviticus 19:34 | 14-16 | BSB | BSB text |
+
+Added by the brief: no people living today is Amalek, and the passage permits no hatred or harm of any people.
