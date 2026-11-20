@@ -434,3 +434,49 @@ The finder cannot point to a Find Help page: it ranks wisdom topics only. That w
 ### Not done in this run
 
 when-life-is-unfair, the-problem-of-evil and batches 3 to 14. The holdout3 misses. The two "Caring for Aging Parents" topics (James to decide). Nothing outside the repo was opened; the Catechism references in the ledger are described from knowledge, not quoted.
+
+---
+
+## 15. Build 4, as built (2026-11-20): three checks on the shell, the Wisdom Books Explorer, holdout4
+
+Retires, renames, merges and re-lists nothing; `toolsList.ts`, `siteCatalog.ts` and the menus are untouched. Ledger rows: `docs/work/elite/tools-ledger.md`, "Fourth build".
+
+### Three kept tools on the shell
+
+The first tools in the build order marked KEEP with no decision waiting on James and no excluded part: the Life Check's own parts, in the order of 7.5. The Whole-Life Assessment (`/life/assessment`), the Emotional Health Self-Check (`/tools/emotional-health`) and the Financial Health Self-Check (`/tools/financial-health`). Not taken: the Wisdom Books Explorer and Pray the Psalms (rebuilds that replace their tools rather than move them; the first is built below as a new page), Where Are You With God? (its merge waits on James, section 8), the Marriage check (its send-to-server part), the Theology Quiz, Which Lens, "Which view" and Misused Bible Verses.
+
+- **The shell grew one part:** `CheckPart` (`components/tool-shell/CheckPart.tsx`), one part of a self-check at a time: `ProgressLine` ("Part 2 of 5", "Domain 2 of 5") with the answered count, the part's heading and line, a `QuestionCard` per statement, and Back and Continue (Continue waits for the part's answers). Focus moves to a part's heading when the reader moves to it, never on a fresh load. `focusResultTop` brings a result in at its safety question. `ResultReading` takes an `id` so its heading can take focus. The shell's CSS gained the page band and column, the resume line, an area block, a verse block and steps.
+- **What changed for a reader:** each check's top is `ToolHead` with the tool's one name from `toolsList.ts`, its time, and what it keeps; the not-a-diagnosis line (and on money, the not-advice line) sits there once. The Emotional check moved from fifteen statements on one screen to five parts of three. Answers are radio buttons in a fieldset (Tab, arrows, Space, number keys 1 to 5). The result opens on the safety question, then the reading with the score and band as its lead, the areas as a `ScoreChart` (ink bars, mustard only on the lowest area, "Start here"), "Since the last time", the band's next step, the area-by-area readings with their verse, steps and next pages, Find Help as `ResultNext`, and `ResultActions` (Change my answers keeps every answer; Print; Start over asks first and leaves past results alone; Send to my phone). The Financial check's traffic-light colours (ok, strain, alert) are gone; its levels are words. The Whole-Life Assessment keeps its own printed record, its rule of life with the weeks, the statement-by-statement drilldown and the year-over-year view; its mustard verdict box and mustard bars are now the shell's reading and chart, and "Copy this rule" uses `lib/clipboard.ts`.
+- **What did not change:** every statement, answer label, score, band, reading, step, verse and link. The data and scoring sections of each file are identical line for line to the version before the move (checked with `diff`); the only edits above each component are the imports and the Whole-Life page's progress loader, which became the guard `useToolProgress` reads with. Saved answers: all three already kept their place under `livewell-progress-<tool>`, the shell's own key, so there was no older key to move; the shapes were kept as they were (`{ answers, step, savedAt }`, and the Whole-Life page's `{ answers, screen, savedAt, runDate? }`), and a save written by the old pages opens on the new ones (tested, and seeded and loaded on the served build). History keys (`lw-whole-life`, `lw-whole-life-rule`, the self-check history) are untouched.
+- **Tests:** the Whole-Life page's contract test passes unchanged. `pages/tools/self-checks-shell.test.tsx` adds ten: resume from a pre-move save for each tool, resume on the part reached, the result and Change my answers, the storage refusal sentence, and Tab, arrows, Space and number keys.
+- **Found and left alone (wording):** the Whole-Life introduction says "about eight minutes" while `toolsList.ts` says 15 minutes (the head shows the list's time); the Emotional and Financial lines say "a few minutes" while the list says 10 and 8. The Emotional check names its lowest level "Critical". Neither was changed.
+
+### The Wisdom Books Explorer (`/tools/wisdom-books`), Proverbs in full
+
+The first new tool in the build order (7.2), its first part: Proverbs. Ecclesiastes, Job and James are not built yet.
+
+- **Data:** `client/public/wisdom-books/proverbs.json`, written by hand: twenty themes (the fear of the LORD; wisdom and her call; the two ways; the LORD who sees and directs; listening, correction and counsel; the fool, the mocker and the simple; words and the tongue; anger, quarrels and peace; pride and humility; the heart; friends, neighbors and companions; parents and children; marriage and faithfulness; work and the slacker; wealth, poverty and generosity; kindness and faithfulness; honest dealing; justice, rulers and the king; envy and revenge; wine, appetite and self-control), each with one line, the introduction theme it draws on where there is one, and the wisdom topics that go deeper; and every one of the 915 verses tagged with one or more themes (eleven heading verses marked). No verse text is typed: `scripts/build-wisdom-books-index.mjs` (with `--check`, in CI) fills it from the BSB and copies the Study Bible's notes word for word into `client/public/wisdom-books/proverbs/` (an index, 31 chapter files, 20 theme files). `scripts/validate-wisdom-books.mjs` (in CI) holds every verse tagged, every tag and range real, every theme ten verses or more, every verse and note word for word, every theme file exactly its verses in order, and the prose rules.
+- **The page:** on the shell (`ToolHead`, `QuestionCard` for the way in and the theme, `useToolProgress` under `livewell-progress-wisdom-books`, `ResultSection`, `ResultNext`, `ResultActions`). Three ways in: today's chapter (the day of the month), by theme (every verse in book order, each opening to the two verses either side, with "Read all of Proverbs N here" and the chapter's notes), and chapter by chapter (a grid of 31; each chapter under the Study Bible's own outline, title and summary; each verse with its themes as buttons into the theme and "Keep this line"; "I have read Proverbs N"). Lines kept and chapters read stay on the device. A fixed panel teaches how to read a proverb in the notes' own words, with 26:4-5 side by side. Prints the chosen chapter or theme.
+- **Where it is:** registered in `App.tsx` (the route smoke test covers it), prerendered with its own head and `noindex`, in the site search (`MAIN_PAGES`), and linked from the Wisdom Finder's "More ways in". Not in `toolsList.ts`, `siteCatalog.ts`, any menu, or the sitemap: the canonical audit fails any sitemap URL that says noindex, so it joins the sitemap when James names it and the noindex comes off. "The Wisdom Books Explorer" is the plan's working name. `/tools/proverbs-31` is unchanged.
+
+### Matching
+
+Fifteen new sentences (`holdout4`) were written and committed before `matching.json` was touched. Then the seven holdout3 misses named in section 14 were fixed by data only (phrases and "not" phrases; three topics gained related subjects). Before and after (top 1 / top 3):
+
+| Set | Before | After |
+|---|---|---|
+| cases (74) | 100% / 100% | 100% / 100% |
+| holdout (19) | 100% / 100% | 100% / 100% |
+| holdout2 (20) | 100% / 100% | 100% / 100% |
+| holdout3 (15) | 53.3% / 73.3% | 100% / 100% (now tuned for) |
+| holdout4 (15) | 86.7% / 100% | 86.7% / 100% (untouched; the clean set) |
+
+holdout4's misses, left alone: "I want to believe but I keep thinking it's all made up" puts Assurance of Faith before Doubt; "I said yes to everything and now I'm drowning" puts Setting Boundaries before Saying No.
+
+### Checked on the served build
+
+At 390 and 1440, day and night: each of the three checks taken from the first question to the result by keyboard only (Tab, an arrow, a number key, Enter on Continue) and by tap; resume after a reload; Change my answers keeps every answer (30 of 30, 15 of 15, 12 of 12); a save written by the old pages seeded and opened (3 of 30, 3 of 15, 4 of 12, the right answers checked); print preview; no sideways scroll; no console errors beyond the local server's missing Vercel analytics scripts and /api/track. The explorer end to end at both widths, day and night, and by keyboard (number key and arrow), and the Wisdom Finder's link to it. Lighthouse median (13.6.0): /tools/wisdom-books performance 88, accessibility 100, best practices 96, SEO 66 (the page is noindex on purpose), CLS 0; /tools/emotional-health performance 85, accessibility 100, best practices 96, SEO 100, CLS 0. Screenshots: `docs/work/elite/tools-shots/run4-*`.
+
+### Not done in this run
+
+Ecclesiastes, Job and James in the explorer; Pray the Psalms; the other Life Check parts (Spiritual Gifts, Marriage, the short form); the 168 wisdom topics still in their first form; any retirement or listing.

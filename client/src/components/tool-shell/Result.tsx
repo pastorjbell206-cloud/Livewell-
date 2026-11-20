@@ -18,7 +18,7 @@ import { TakeItWithYou } from "@/components/TakeItWithYou";
 export function ResultSection({ title, id, children, className }: { title: string; id?: string; children: ReactNode; className?: string }) {
   return (
     <section className={`ts-r${className ? ` ${className}` : ""}`} aria-labelledby={id ? `${id}-h` : undefined}>
-      <h2 className="ts-r__title" id={id ? `${id}-h` : undefined}>
+      <h2 className="ts-r__title" id={id ? `${id}-h` : undefined} tabIndex={id ? -1 : undefined}>
         {title}
       </h2>
       {children}
@@ -26,10 +26,28 @@ export function ResultSection({ title, id, children, className }: { title: strin
   );
 }
 
-/** The plain reading: what the answers suggest, in paragraphs. */
-export function ResultReading({ title = "What this suggests", children }: { title?: string; children: ReactNode }) {
+/**
+ * Bring the reader to the top of a result as it appears: the safety question
+ * first when the page has one (components/SafetyCheck, "#safety-check-h"),
+ * else the reading's heading (`<id>-h`). Focus moves there too, so a screen
+ * reader starts where the eye does.
+ */
+export function focusResultTop(readingId: string) {
+  const h = document.getElementById("safety-check-h") ?? document.getElementById(`${readingId}-h`);
+  if (!h) return;
+  if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "-1");
+  h.scrollIntoView?.({ block: "start" });
+  h.focus({ preventScroll: true });
+}
+
+/**
+ * The plain reading: what the answers suggest, in paragraphs. With an `id`,
+ * its heading is `<id>-h` and can take focus, so a tool can move the reader
+ * there when the result appears.
+ */
+export function ResultReading({ title = "What this suggests", id, children }: { title?: string; id?: string; children: ReactNode }) {
   return (
-    <ResultSection title={title} className="ts-r--reading">
+    <ResultSection title={title} id={id} className="ts-r--reading">
       <div className="ts-r__prose">{children}</div>
     </ResultSection>
   );

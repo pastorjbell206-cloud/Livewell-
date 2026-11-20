@@ -518,7 +518,11 @@
     "death in the family",
     "grandmother died",
     "grandfather died",
-    "friend died"
+    "friend died",
+    "now she's gone",
+    "now he's gone",
+    "she's gone",
+    "he's gone"
    ],
    "not": [],
    "related": [
@@ -884,7 +888,9 @@
     "drinking problem",
     "need a drink"
    ],
-   "not": [],
+   "not": [
+    "drunk driver"
+   ],
    "related": [
     "addiction",
     "self-control"
@@ -914,7 +920,11 @@
     "lost the pregnancy",
     "pregnancy loss",
     "stillborn",
-    "stillbirth"
+    "stillbirth",
+    "pregnant",
+    "weeks pregnant",
+    "knew i was pregnant",
+    "baby died at"
    ],
    "not": [],
    "related": [
@@ -1089,7 +1099,10 @@
     "teenage son",
     "teenage daughter"
    ],
-   "not": [],
+   "not": [
+    "was killed",
+    "died"
+   ],
    "related": [
     "wayward-child",
     "parenting-struggles"
@@ -1224,7 +1237,11 @@
     "suddenly died",
     "no goodbye",
     "accident",
-    "overdose"
+    "overdose",
+    "car crash",
+    "crash",
+    "drunk driver",
+    "killed"
    ],
    "not": [],
    "related": [
@@ -1241,9 +1258,16 @@
     "our daughter died",
     "lost my son",
     "lost my daughter",
-    "lost our son"
+    "lost our son",
+    "son was killed",
+    "daughter was killed",
+    "teenage son died",
+    "teenage daughter died"
    ],
-   "not": [],
+   "not": [
+    "pregnant",
+    "weeks pregnant"
+   ],
    "related": [
     "grief",
     "miscarriage"
@@ -1599,7 +1623,13 @@
     "chronic pain",
     "back pain",
     "pain every day",
-    "constant pain"
+    "constant pain",
+    "back hurts",
+    "back has hurt",
+    "hurts every day",
+    "hurt every day",
+    "hurt every single day",
+    "pain for years"
    ],
    "not": [],
    "related": [
@@ -1900,6 +1930,57 @@
     "cant have children"
    ],
    "related": []
+  },
+  "terminal-diagnosis": {
+   "phrases": [
+    "months to live",
+    "months left",
+    "six months",
+    "weeks to live",
+    "not much time left",
+    "prognosis",
+    "stage four",
+    "hospice"
+   ],
+   "not": [
+    "clean",
+    "sober",
+    "relapsed"
+   ],
+   "related": [
+    "facing-death",
+    "serious-illness"
+   ]
+  },
+  "survivors-guilt": {
+   "phrases": [
+    "didn't make it",
+    "didnt make it",
+    "why did i survive",
+    "should have been me",
+    "i survived",
+    "only one who survived"
+   ],
+   "not": [],
+   "related": [
+    "sudden-loss",
+    "grief"
+   ]
+  },
+  "aging": {
+   "phrases": [
+    "getting old",
+    "getting older",
+    "growing old",
+    "old age",
+    "body can't do",
+    "body cant do"
+   ],
+   "not": [],
+   "related": [
+    "retirement",
+    "chronic-pain"
+   ]
   }
  }
 }
