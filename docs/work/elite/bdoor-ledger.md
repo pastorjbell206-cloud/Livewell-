@@ -12988,3 +12988,27 @@ Cut before publishing: that Joshua ‘is learning where a leader's strength come
 | Romans 11:1 | 29-35 | BSB | BSB text |
 
 Cut before publishing: ‘sealed at their altars with their sacrifices’ of the treaties (verse 15 speaks of an invitation, no more); ‘its only weapons against false worship are words, prayer and a changed life’ (no source); the quoted phrase of the Kuntillet Ajrud inscription (not Scripture, so the quotation marks were removed); Trible, Heschel, Maimonides, Dawkins, Mellinkoff and Hafemann by name (in the deep note for the reader who wants them).
+
+## The plain notes on Exodus 35 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The plans carried out; the Sabbath closed the plans and opens the building | 1-3 | exodus/35.json `story`, `literary` | Repository |
+| The penalty as in chapter 31 | 1-3 | exodus/plain/31.json (12-17 `hard`) | Repository |
+| Verse 3 new; fire as work in the wilderness; rabbinic and Karaite practice | 1-3 | exodus/35.json `cultural` | Repository |
+| Exodus 16:23; Luke 23:56 | 1-3 | BSB | BSB text |
+| Terumah, from a verb to lift up | 4-19 | exodus/35.json `words` (H8641) | Repository |
+| Temple-building accounts; Gudea of Lagash about 2100 BC; a whole people, not conscripts | 4-19 | exodus/35.json `historical` | Repository |
+| 1 Chronicles 29:9, 14; 2 Corinthians 9:7 | 4-19 | BSB; exodus/35.json `christ` | BSB text |
+| The contrast with the gold of chapter 32 | 20-29 | exodus/35.json `story`, `words` (H5068) | Repository |
+| The heart (lev) as will and thought; the freewill offering beyond what the law required | 20-29 | exodus/35.json `words` (H3820A, H5068) | Repository |
+| Women named four times; spinning as skilled work; the same word for wisdom | 20-29 | exodus/35.json `cultural`, `doctrines` (wisdom, church) | Repository |
+| The wave offering as lifting or moving a gift before the LORD | 20-29 | exodus/35.json `cultural` | Repository |
+| Luke 8:3; Ephesians 4:16; 1 Peter 4:10; Mark 12:43 | 20-29 | BSB; exodus/35.json `christ` | BSB text |
+| 31:1-6 repeated; the ability to teach added; yarah and torah; gifts spread | 30-35 | exodus/35.json `literary`, `words` (H3384B), `doctrines` (spirit) | Repository |
+| Why the repetition: ancient building accounts; the match after the calf; reading aloud; the Septuagint's different order | 30-35 | exodus/35.json `hard` | Repository |
+| 2 Timothy 2:2; Ephesians 2:22 | 30-35 | BSB; exodus/35.json `christ` | BSB text |
+
+Cut before publishing: ‘under the whip’ of the building for Pharaoh (the book says the foremen were beaten, 5:14; ‘as slaves’ says no more than the text).
