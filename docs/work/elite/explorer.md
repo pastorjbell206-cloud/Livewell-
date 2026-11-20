@@ -228,7 +228,7 @@ Each film, done to the pilot's standard, is about a day and a half: half a day t
 
 ### What narration would need
 
-The films have no sound by design in this stage, and every word is on the page. Narration would need: (1) a script per film at one reading level (the captions are written to be read aloud, but the older level is long for listening; a spoken script would be the younger level, or a third, spoken one); (2) a voice: **James's own voice**, recorded, or another person's, or a synthesised voice; this is his call (see the questions below), and a synthesised voice should be named as such on the page; (3) one audio file per frame (small, Opus or AAC, about 20 to 60 KB each), so Back, Next and the frame buttons keep working and each frame's sound starts with its frame; (4) a mute button, sound off by default and never playing without a tap, captions kept visible; (5) the timer would follow the audio's length, not the caption's word count; (6) a transcript is already there (the captions), so access is met. Recording one film is about an hour of a reader's time plus an hour to cut and check it; synthesis is faster but needs a decision on whose voice, and on whether a made voice is acceptable for Scripture.
+(Superseded on 2026-11-20 by Listen and the voice slot in the video export, below; kept as the record.) The films have no sound by design in this stage, and every word is on the page. Narration would need: (1) a script per film at one reading level (the captions are written to be read aloud, but the older level is long for listening; a spoken script would be the younger level, or a third, spoken one); (2) a voice: **James's own voice**, recorded, or another person's, or a synthesised voice; this is his call (see the questions below), and a synthesised voice should be named as such on the page; (3) one audio file per frame (small, Opus or AAC, about 20 to 60 KB each), so Back, Next and the frame buttons keep working and each frame's sound starts with its frame; (4) a mute button, sound off by default and never playing without a tap, captions kept visible; (5) the timer would follow the audio's length, not the caption's word count; (6) a transcript is already there (the captions), so access is met. Recording one film is about an hour of a reader's time plus an hour to cut and check it; synthesis is faster but needs a decision on whose voice, and on whether a made voice is acceptable for Scripture.
 
 ### What was run for Watch and learn (2026-11-20)
 
@@ -274,6 +274,83 @@ Shared code touched only where needed: `FilmPlayer.tsx` (the intro panel), `film
 
 (5) *The resurrection*, (6) *Why do bad things happen?*, (7) *Is the Bible true?*, (8) *How the 66 books fit together*, then as planned above.
 
+## Listen, video files to share, and three films cut for sharing (2026-11-20)
+
+James (2026-11-20): "I want you to add sound to those short videos. Maybe voice that talks, that explains it, that reads it as it plays ... And I want you to make more of those videos about overview of the Bible, the gospel ... something that we could share on Facebook in like a minute or two."
+
+### Listen: the device's own voice
+
+- A **Listen** toggle under every film's controls (off by default; the choice is kept on the device, `livewell-explorer-listen-v1`, through `lib/storage.ts`), with one line under it: "Read aloud by your device's voice." It is the browser's built-in speech synthesis, the same approach as the essays' Listen and the catechism's "Read it to me": nothing is recorded or sent, and it is not narration by a person.
+- **What it says** (`client/src/lib/film-voice.ts`): each frame's `say` text at the reader's level, or the caption where there is none, then the frame's verse with its reference in words ("First Corinthians chapter 15, verses 3 and 4: that Christ died ..."), skipped where the caption already quotes it. 35 caption-and-level pairs whose captions carried a reference got a `say` with the bracketed reference left to the caption (two by hand: Ezekiel 10:18 and 11:23, and the Romans 8:15 inside a bracket); nothing else in any wording changed. The validator now fails any spoken line that still holds a reference in figures, and holds its quotations to the BSB as it does the captions'.
+- **How it plays**: with Listen on, Play says the frame and moves on only when the voice says the sentence has ended (then a 0.7 second breath); if the end never comes, it moves on after a wait of 600 ms a word plus 4 seconds (at least 8). Pause stops the voice; Play on says the frame again from its start (Android's own pause does not resume reliably, as the essays' Listen found). Back, Next and the frame buttons stop the voice and say the new frame; a playing film keeps playing from there, a paused one stays put after saying it. Leaving the page, scrolling the player out of view or hiding the tab stops the voice. With reduced motion there is no Play, and each step by hand is read. Where the device has no voice, or the voice reports an error, the film falls back to its timed captions and the line under the toggle says "Sound is not available on this device, so the captions carry the words."
+- **Screen readers**: with Listen on, the polite live region that announces a step by hand is left empty, so a screen reader user does not hear the device voice and the screen reader at once; with Listen off it announces as before. Captions always stay on screen.
+
+### Video files for sharing
+
+- `scripts/export-film-video.mjs` renders a film to MP4 on a machine with Playwright's Chromium and ffmpeg, against the built site served by `scripts/serve-like-vercel.mjs`. It is a hand tool: not in the build, the tests or CI, and the site never runs ffmpeg.
+- **The export view** (`films/FilmExport.tsx`, `film-export.css`) is the film's address with `?export=square|vertical|wide` (and `&level=`, `&cut=share`): noindex, linked from nowhere, not in the sitemap (a query on an existing address). It is the stage and the caption only: a thin rule with "LiveWell" and the film's title, the drawing in the art kit's frame, and the caption burned in (the frame's name and number in Cormorant, the caption in the reading face, the verse in italic with its reference), set as large as its box allows and never below 72% of the shape's size (40px square, 54px vertical, 46px wide). An opening card (the film's emblem in its roundel, "Bible Explorer", the title in Cormorant, the film's line) and a closing card ("LiveWell by James Bell", www.livewellbyjamesbell.co over a mustard rule, and the film's own address). No other logos.
+- **Capture**: frame by frame through `window.__lwExport.show(k)`, then every running CSS transition is paused and set to each moment 1/30 s apart and photographed (JPEG, quality 94), so the motion is smooth and exactly timed however slowly the machine works; then one picture held for the rest of the frame. ffmpeg's concat demuxer takes the pictures with their durations and writes H.264 (high profile, CRF 23, `-tune animation`), yuv420p, 30 fps, `+faststart`, with an AAC track (silent, 48 kHz stereo, or the recordings). Chosen over Playwright's own video recording, which records in real time at whatever rate the machine manages and drops frames under load.
+- **Timing**: the opening card 3.5 s, the closing card 5 s, and each frame its caption and verse at 180 words a minute plus a second to settle, never under 4 s (or the length of its motion plus half a second, if longer).
+- **Which words**: the older level if the film fits in two minutes there, else the younger, else the film's `share` cut. Six films run past two minutes at both levels, so each got a share cut at the younger level (`films/<slug>.json` "share"): the same frames, most without their verse, and for ten frames in four films a shorter caption made only of sentences the frame's caption already has (the validator checks every sentence). The three new films and Who made God? need none.
+- **Posters**: `client/public/explorer/video/<slug>-poster.jpg`, 1200 by 630, the opening card; committed for all ten. The film page's prerendered head (`prerender-heads.mjs`) and its SEOMeta use it as `og:image`, so a pasted link unfurls as the film: its title "<film>: Bible Explorer", its one line, and its own card.
+- **Share on the page**: under the player, "Share" copies the film's address with `lib/clipboard.ts` ("Link copied. Paste it anywhere to share this moving picture.", or the address written out if the browser will not copy). A "Download the video" link appears only where a film's data names a committed file (`video` in the film's JSON); none does yet (see below).
+- **A voice later**: `--voice <dir>` takes recordings named `<dir>/<slug>/<nn>-<frame id>.<wav|mp3|m4a>` (`nn` the frame's place in the video, from 01), and optionally `00-title.*` and `99-end.*`. A frame with a recording holds until it has finished, plus a breath; each recording starts 0.3 s into its frame, and the track is muxed with the picture. `--script` prints the words to read. Tested with generated tones in place of a voice (below).
+
+#### What James would record
+
+One file per line below, read at an ordinary pace, in a quiet room, as WAV or M4A, named as the line begins (for example `gospel-in-a-minute/05-died-rose.m4a`). Run `node scripts/export-film-video.mjs --script <slug>` for any film; the lines follow the level or cut its video uses. The gospel in a minute, as a sample:
+
+- `00-title`: The gospel in a minute.
+- `01-made`: The story starts with a gift, not a problem. God made human beings in his own image, to know him and to love him for ever. Nothing stood between people and God.
+- `02-turned`: People turned from God to their own way, and every one of us has followed. Sin is a break: with God, with each other, inside ourselves.
+- `03-cannot`: Every age builds its towers: be good enough, try harder, earn your way back. The gap is too wide for us to cross.
+- `04-comes`: Then God crosses the gap from his own side. The Father sends the Son because he loves the world, and the Son becomes one of us, fully God and fully man.
+- `05-died-rose`: At the cross the break is mended, and God is the one who mends it. Jesus died for our sins, and on the third day he was raised, in his body. First Corinthians chapter 15, verses 3 and 4: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures
+- `06-gift`: The gift is received, not earned: turn around, and trust him. Faith is not a work that pays for anything. It is empty hands taking what is given.
+- `07-for-ever`: Those who belong to Christ are forgiven, made God's children and given new life, now and in the life to come. Read more at LiveWell by James Bell dot co, or talk it over with a pastor or someone you trust.
+- `99-end`: LiveWell by James Bell. www.livewellbyjamesbell.co.
+
+### The three films cut for sharing
+
+All three stand alone for someone who has never seen the site, end by pointing to it, and press for nothing. Each has captions at both levels, a `still` for every frame, a `say` where needed, "Think about it", "Where the Bible says it", deeper links, its own emblem in `art.tsx`, a page (prerendered, in the sitemap, the search index and llms.txt), and ledger rows.
+
+1. **The gospel in a minute** (What we believe, 7 frames, about 96 seconds as a video). Drawn with How salvation works' own scene: each frame is one of that film's frames (0, 1, 2, 3, 5, 6, 8), so the two can never tell it differently. Its sentences are that film's, shortened. One verse, at the centre: 1 Corinthians 15:3-4. The last caption, at both levels, invites the reader to read more at www.livewellbyjamesbell.co or to talk it over with a pastor; no prayer to repeat, no countdown, no fear. The salvation film's "Where churches differ" note and care line, unchanged.
+2. **The Bible in a minute** (The big story, 8 frames). Drawn with the two-minute film's road and roundels (its frames 0 to 6 and 8); the captions are its own, shortened; one verse, Revelation 21:5.
+3. **Does God exist?** (Good questions, 6 frames). Built only from the Honest Answer "Does God actually exist?": the argument from contingency in its own terms (Leibniz's question of 1714; everything could have been different or not been at all; a chain that went back for ever would still need explaining; every account has to stop somewhere), what it does not show (not a proof in the mathematician's sense, not yet Christianity; it shows belief in God is reasonable; the rest rests on whether Jesus was raised), the case against (Russell's "just there, and that's all", the step where an honest person can disagree), and the answer's address. The answer speaks as James in the first person; the film never does. Drawn with Who made God?'s scene plus two marks in ink, a level balance and an open book.
+
+### The videos made on 2026-11-20
+
+All twenty: H.264, yuv420p, 30 fps, with an AAC track (silent), `+faststart`; square 1080 by 1080 and vertical 1080 by 1920 (each read back with ffprobe). Together about 80 MB, over the 60 MB this run allowed in the repository, so they are **not committed**: they are in `/home/user/elite-shots/explorer/video/` on the build machine (`<slug>-square.mp4`, `<slug>-vertical.mp4`). Keeping them on the site is James's decision (question 11). Wide (1920 by 1080) works (`--shapes wide`) but was not made.
+
+| Film | Words | Seconds | Square MB | Vertical MB |
+|---|---|---|---|---|
+| The gospel in a minute | older level | 93.2 | 2.72 | 3.88 |
+| The Bible in a minute | older level | 84.5 | 2.62 | 3.53 |
+| Does God exist? | older level | 116.2 | 2.84 | 4.18 |
+| The whole Bible in two minutes | share cut | 116.8 | 3.42 | 5.04 |
+| The Holy Spirit through the Bible | share cut | 114.8 | 4.58 | 6.47 |
+| God with his people | share cut | 111.8 | 3.56 | 4.88 |
+| Who God is | share cut | 107.8 | 4.18 | 5.97 |
+| Why did Jesus die? | share cut | 112.2 | 4.57 | 6.45 |
+| How salvation works | share cut | 114.5 | 3.23 | 4.63 |
+| Who made God? | younger level | 99.8 | 2.63 | 3.63 |
+
+Looked at a frame every 5 seconds of every video (contact sheets read one by one). Fixed after the first look: the verse under a caption in the square shape shrank to about 20px (a site rule sets every blockquote's size; the export now sets its own), the closing card's address was small and, in the square shape, broke inside a film's slug ("bible-in-a-" / "minute"; the site and the path now sit on two lines), and the vertical shape left a third of the frame empty under the caption (the picture and caption now sit together in the middle, at 58px). Seen right after the fixes: every caption whole and readable, nothing cut off, the opening card with the film's emblem, title and line, the closing card with the site's name and both addresses. Stills: `explorer-shots/video-square-*.jpg` (the gospel film at 2, 50 and 90 seconds), `video-vertical-*.jpg` (Does God exist? at 2, 40 and 112 seconds).
+
+The voice slot was tested with nine generated tones standing in for recordings (`--voice`, the gospel film, square): the video ran 103.0 s instead of 93.2 s because the 20-second "recording" for frame 1 held its frame, and ffmpeg's silence detection put each tone 0.3 s into its frame. No voice has been recorded.
+
+### What was run for this (2026-11-20)
+
+- `pnpm check` clean; ESLint on every changed client file clean; Prettier on new and changed files.
+- All 38 commands of the content-gates step in `.github/workflows/ci.yml`: exit 0, each read directly. `validate-explorer.mjs` now checks spoken text and share cuts; three planted faults (a spoken "John 3:16", a share sentence the caption never had, a misquoted verse in a `say`) were each caught.
+- `pnpm test`: 148 files passed, 7 skipped (1,748 tests passed, 73 skipped). `films.test.tsx` has 40 tests, among them twelve for Listen with speechSynthesis stubbed (off never speaks; on speaks each frame in order and moves only on the end event; the timeout; Pause; Back, Next and the frame buttons while playing and while paused; reduced motion; no voice; a failing voice; the choice kept; stopping when the player goes; references in words), the export view and its driver, the share cuts, Share, the posters, and the three new films.
+- `pnpm build`, `pnpm run sitemap` (ten film addresses, no `?export=`), `pnpm run prerender` (10 film pages; the new ones' heads carry their own title, description and poster as og:image, 1200 by 630), `pnpm run audit:canonicals`: every audited page canonicalises to itself.
+- On the served build (`scripts/serve-like-vercel.mjs`, port 4620): each new film, poster and every frame, at 390 and 1440, day and night, both levels (192 shots in `/home/user/elite-shots/explorer/films7/`), no sideways scroll, no console errors; keyboard (the picture takes focus with a 2px ring, the arrows step and announce, Space plays); reduced motion (no Play, the stage still); layout shift 0.000 on load and while playing on all three at both widths.
+- Listen on the served build at 390 and 1440, with `window.speechSynthesis` replaced by a spy (a headless browser cannot be heard): the toggle presses, Play speaks the first frame once, ending that sentence moves the film to picture 2 and speaks it, without an end it waits, Pause cancels the voice, Next while paused speaks picture 3, the live region stays empty, the choice is stored and is still on after a reload, no page errors. **No one has listened to it**: the device voice's sound, pace and its handling of each spoken line are unheard.
+- Lighthouse (`scripts/lighthouse-median.mjs`, median of three) on `/study/explorer/watch/gospel-in-a-minute`: performance 92, accessibility 100, best practices 96, SEO 100, CLS 0.000.
+- Record shots in `docs/work/elite/explorer-shots/`: `film-gospel-minute.png`, `film-bible-minute.png`, `film-does-god-exist.png`, `listen-control-390.png`, and the video stills above.
+- Not verified: Listen by ear on any device; a screen reader with Listen on; the videos uploaded to Facebook (no upload was made); a real phone. No dependency added; ffmpeg is used only by the hand script.
+
 ## Questions only James can answer
 
 1. Is "Bible Explorer" the name he wants, everywhere?
@@ -285,6 +362,10 @@ Shared code touched only where needed: `FilmPlayer.tsx` (the intro panel), `film
 7. Narration: should the films have a voice, and whose: his own, recorded; another reader's; or a synthesised voice (named as such)?
 8. How salvation works is built and waits for his reading before he wants it public: is its central picture (one land broken in two and mended from God's side), its "Where churches differ" note and its ending what he wants?
 9. Who God is crosses out three common pictures of the Trinity; is he content to show them at all, crossed out, for this age?
+10. Listen uses the device's own voice. Does he want to record the films in his own voice (the scripts and file names are above), or have someone else read them? Is a synthesised voice acceptable for Scripture at all?
+11. The twenty video files (about 60 MB together) are not in the repository. Should they be kept on the site (in the repository, or on a file host) so each film page offers "Download the video", or will he post them from his own copies?
+12. The three short films: are "The gospel in a minute", "The Bible in a minute" and "Does God exist?" the titles he wants, and is the gospel film's last line (read more on the site, or talk it over with a pastor) the ending he wants on Facebook?
+13. Does God exist? uses one of the Honest Answer's three arguments. Should a second short film carry the fine-tuning or the moral argument?
 
 ## What was run for the second three (2026-11-19)
 
