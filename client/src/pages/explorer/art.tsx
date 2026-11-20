@@ -9,7 +9,8 @@
  *   Abraham, walls of water for the rescue.
  * - Roundel: the ring an emblem sits in, on the map and at the top of a stop.
  * - HeadArt: the road from a garden to a city, for the top of the map.
- * - Manger: the picture on the "Jesus, God and man" card.
+ * - The "Why we believe" cards' pictures (CardArt): the manger, the tomb,
+ *   the table, the Jordan, the garden, the hiding, the cross on the hill.
  *
  * Mustard is kept for the map's one mark (where you are), so no emblem uses it.
  */
@@ -672,20 +673,261 @@ export const CHURCH_TABLE: Drawing = {
   ),
 };
 
-export function TombArt({ label }: { label?: string }) {
-  return (
-    <PlateSvg drawing={label ? { ...EMPTY_TOMB, label } : EMPTY_TOMB} />
-  );
-}
-export function ChurchTableArt({ label }: { label?: string }) {
-  return (
-    <PlateSvg drawing={label ? { ...CHURCH_TABLE, label } : CHURCH_TABLE} />
-  );
+/** A dove in the hand, drawn round (0, 0): two wings and a body. */
+const DOVE =
+  "M0,-4C-8,-12 -18,-12 -24,-6C-16,-4 -10,-2 -2,2ZM0,-4C8,-12 18,-12 24,-6C16,-4 10,-2 2,2ZM-2,-4C-2,-8 2,-8 2,-4L1,8L0,12L-1,8Z";
+
+/**
+ * The "God" card: the river Jordan at Jesus' baptism (Mark 1:9-11), the one
+ * place the Bible shows the Father, the Son and the Spirit together. The Son
+ * stands in the water (no face); the Spirit comes down like a dove (the one
+ * mustard mark); the Father is shown only as light from beyond the picture's
+ * edge, as the Who God is film shows him. No analogy is drawn.
+ */
+export const JORDAN: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "The river Jordan between low hills: a figure stands in the water, a dove comes down through an opening in the sky, and light falls from beyond the top of the picture.",
+  draw: h => (
+    <>
+      <path
+        className="pl-f"
+        d="M200,0V50M176,0L188,48M224,0L212,48M150,0L178,46M250,0L222,46M124,0L168,44M276,0L232,44"
+      />
+      <path
+        className="pl-l"
+        d="M20,58C60,44 104,62 146,48C160,44 172,46 182,54M380,58C340,44 296,62 254,48C240,44 228,46 218,54"
+      />
+      <path className="pl-f" d="M48,70C80,62 110,72 140,64M352,70C320,62 290,72 260,64" />
+      <Shape
+        d="M0,176C34,140 80,128 126,150C156,134 186,138 212,152C258,122 330,126 400,160V196H0Z"
+        tone="g"
+        off={4}
+      />
+      <path fill={h.h1} d="M212,152C258,122 330,126 400,160V196H212Z" />
+      <Shape d="M0,196H400V240H0Z" tone="b" off={3} />
+      <path fill={h.hh} d="M0,214H400V240H0Z" />
+      <path
+        className="pl-f"
+        d="M22,206c10,-4 20,4 30,0M84,210c10,-4 20,4 30,0M276,206c10,-4 20,4 30,0M338,212c10,-4 20,4 30,0"
+      />
+      <Shape
+        d="M184,212L188,168C190,158 210,158 212,168L216,212Z"
+        tone="c"
+        off={2}
+      />
+      <path className="pl-o" d="M189,148a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M189,148a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M168,212c10,8 54,8 64,0" />
+      <path className="pl-f" d="M156,220c14,8 74,8 88,0" />
+      <g transform="translate(200,96) scale(1.5)">
+        <path className="pl-m" d={DOVE} />
+        <path className="pl-l" d={DOVE} style={{ strokeWidth: 1.5 }} />
+      </g>
+      <path className="pl-f" strokeDasharray="3 5" d="M200,118V136" />
+      <Shape
+        d="M0,300V248C60,238 120,242 170,254C230,242 320,238 400,250V300Z"
+        tone="g"
+        off={3}
+      />
+      <path fill={h.h2} d="M0,276C80,268 300,266 400,274V300H0Z" />
+      <path
+        className="pl-l"
+        d="M38,252V222M46,252V212M54,254V226M350,250V218M358,250V208M366,250V222"
+      />
+    </>
+  ),
+};
+
+/**
+ * "People made in God's image": a man and a woman in a garden at morning,
+ * one planting a young tree and the other carrying water, with a still pool
+ * between them that gives back the light (the one mustard mark): made to
+ * show what God is like, and to care for his world.
+ */
+export const IMAGE_GARDEN: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "A man and a woman in a garden at morning: one plants a young tree, the other carries a jar of water, and a still pool between them gives back the light.",
+  draw: h => (
+    <>
+      <path
+        className="pl-f"
+        d="M0,30L120,96M0,70L110,110M40,0L136,90M90,0L156,86M150,0L176,84"
+      />
+      <path fill={h.h1} d="M0,196C80,176 150,184 200,190C260,178 330,172 400,184V200H0Z" />
+      <path className="pl-l" d="M0,196C80,176 150,184 200,190C260,178 330,172 400,184" />
+      <Shape d="M0,300V200H400V300Z" tone="g" off={3} />
+      <path fill={h.h2} d="M0,272C120,264 280,262 400,270V300H0Z" />
+      <Shape d="M312,196V160h8v36Z" tone="c" off={2} />
+      <Shape
+        d="M290,150a26,22 0 1,0 52,0a26,22 0 1,0 -52,0Z"
+        tone="g"
+        off={3}
+      />
+      <path fill={h.h2} d="M316,128a26,22 0 0 1 0,44Z" />
+      <Shape d="M262,226L266,232H274L278,226Z" tone="c" off={1.5} />
+      <path className="pl-l" d="M270,226V206M270,214l-8,-6M270,210l8,-7" />
+      <path className="pl-l" d="M232,234L250,196M246,190h10" />
+      <Shape
+        d="M200,234L204,176C206,164 226,164 228,176L232,234Z"
+        tone="c"
+        off={2}
+      />
+      <path className="pl-o" d="M205,152a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M205,152a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <Shape
+        d="M76,238L82,178C84,166 104,166 106,178L114,238Z"
+        tone="b"
+        off={2}
+      />
+      <path className="pl-o" d="M83,154a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <path className="pl-l" d="M83,154a11,11 0 1,0 22,0a11,11 0 1,0 -22,0Z" />
+      <Shape
+        d="M110,196C104,196 102,206 106,214C108,222 124,222 126,214C130,206 128,196 122,196V190H112Z"
+        tone="c"
+        off={1.5}
+      />
+      <Shape
+        d="M128,258a32,9 0 1,0 64,0a32,9 0 1,0 -64,0Z"
+        tone="b"
+        off={1.5}
+      />
+      <path className="pl-f" d="M138,258h12M168,256h14" />
+      <path className="pl-m" d="M160,250l3,6l6,2l-6,2l-3,6l-3,-6l-6,-2l6,-2Z" />
+      <path className="pl-l" d="M160,250l3,6l6,2l-6,2l-3,6l-3,-6l-6,-2l6,-2Z" style={{ strokeWidth: 1.25 }} />
+      <Shape
+        d="M340,240C336,232 342,226 348,228C350,222 360,222 362,228C368,226 374,232 370,240C372,246 364,250 358,246C352,250 342,248 340,240Z"
+        tone="b"
+        off={1.5}
+      />
+      <path className="pl-l" d="M346,246V256M364,246V256" />
+      <Shape d="M366,228a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" tone="b" off={1} />
+    </>
+  ),
+};
+
+/**
+ * "Sin": the garden in the breeze of the day (Genesis 3:8-9). Two people
+ * hide among the bushes; thorns grow at the edge of the path; a light (the
+ * one mustard mark, never a figure) comes along the path toward them, as
+ * God came looking and called, "Where are you?"
+ */
+export const HIDING: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "A garden in the evening breeze: two people hide among the bushes, thorns grow at the edge of the path, and a light comes along the path toward them.",
+  draw: h => (
+    <>
+      <path fill={h.h1} d="M0,0H400V150H0Z" />
+      <path className="pl-f" d="M20,40c20,-6 40,6 60,0M260,30c20,-6 40,6 60,0" />
+      <Shape d="M0,300V150C100,140 300,140 400,150V300Z" tone="g" off={3} />
+      <path fill={h.h2} d="M0,262H400V300H0Z" />
+      <path className="pl-o" d="M400,176C330,186 290,196 250,214C210,232 170,248 120,300H200C230,262 270,236 400,206Z" />
+      <path className="pl-l" d="M400,176C330,186 290,196 250,214C210,232 170,248 120,300M200,300C230,262 270,236 400,206" />
+      <Shape d="M52,170V100h10v70Z" tone="c" off={2} />
+      <Shape
+        d="M14,90C14,58 42,44 58,48C76,40 104,56 100,86C108,104 88,122 64,116C40,124 10,114 14,90Z"
+        tone="g"
+        off={3}
+      />
+      <path fill={h.h2} d="M60,48C76,40 104,56 100,86C108,104 88,122 64,116Z" />
+      <Shape d="M146,160V112h8v48Z" tone="c" off={2} />
+      <Shape
+        d="M120,106C118,80 140,68 152,72C168,66 184,80 182,100C188,116 170,128 150,124C132,130 116,122 120,106Z"
+        tone="g"
+        off={3}
+      />
+      <path className="pl-o" d="M84,186a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M84,186a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-o" d="M110,192a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M110,192a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <Shape
+        d="M40,244C30,214 54,190 78,198C92,184 120,186 130,200C150,190 176,206 172,228C184,240 172,258 152,254C130,266 70,264 40,244Z"
+        tone="g"
+        off={3}
+      />
+      <path fill={h.h1} d="M40,244C30,214 54,190 78,198C92,184 120,186 130,200L120,254C90,262 62,258 40,244Z" />
+      <path
+        className="pl-l"
+        d="M230,300L246,270l6,8l4,-12l6,10l6,-14l4,10l8,-6M300,300l10,-20l4,8l6,-12l6,10l8,-10M180,300l8,-16l6,6l4,-10"
+      />
+      <path className="pl-f" d="M318,170l14,-8M318,182l18,0M326,196l14,6M296,162l-6,-12M286,190l-12,6" />
+      <path className="pl-m" d="M308,182a12,12 0 1,0 24,0a12,12 0 1,0 -24,0Z" />
+      <path className="pl-l" d="M308,182a12,12 0 1,0 24,0a12,12 0 1,0 -24,0Z" />
+      <path className="pl-f" strokeDasharray="3 5" d="M300,190C280,198 260,206 240,214" />
+    </>
+  ),
+};
+
+/**
+ * "The cross": an empty cross on a hill at first light, a path leading up to
+ * it from the foot of the picture. The cross stands empty: the card speaks of
+ * the death and points on to the third day. The one mustard mark: the sun
+ * rising behind the far hill.
+ */
+export const CROSS_HILL: Drawing = {
+  w: 400,
+  h: 300,
+  label:
+    "An empty cross on a hill at first light, with a path from the foot of the picture leading up to it and the sun rising behind the far hills.",
+  draw: h => (
+    <>
+      <path
+        className="pl-f"
+        d="M312,150l-24,-40M330,146l-4,-48M348,148l18,-42M364,156l34,-30M298,158l-40,-20"
+      />
+      <path className="pl-m" d="M296,172a38,38 0 0 1 76,0Z" />
+      <path className="pl-l" d="M296,172a38,38 0 0 1 76,0" />
+      <path className="pl-l" d="M220,172C280,160 340,158 400,166" />
+      <path fill={h.h1} d="M0,172C60,158 140,156 220,172H0Z" />
+      <path className="pl-l" d="M0,172C60,158 140,156 220,172" />
+      <Shape
+        d="M0,300V214C40,176 90,150 140,148C190,150 240,176 290,214C330,236 370,248 400,252V300Z"
+        tone="g"
+        off={4}
+      />
+      <path fill={h.h2} d="M140,148C190,150 240,176 290,214C330,236 370,248 400,252V300H200C190,240 170,180 140,148Z" />
+      <path className="pl-k" d="M134,150V62h12V150ZM110,84H170v11H110Z" />
+      <path
+        className="pl-o"
+        d="M146,150C160,170 176,186 190,206C210,236 236,262 262,300H300C276,260 248,226 222,198C204,178 180,162 154,150Z"
+      />
+      <path
+        className="pl-l"
+        d="M146,150C160,170 176,186 190,206C210,236 236,262 262,300M154,150C180,162 204,178 222,198C248,226 276,260 300,300"
+      />
+      <path
+        className="pl-l"
+        d="M40,262l4,-12l4,12M60,270l4,-14l4,14M90,256l4,-10l4,10M340,274l4,-12l4,12M366,282l4,-14l4,14"
+      />
+    </>
+  ),
+};
+
+const CARD_ART: Record<string, Drawing> = {
+  manger: MANGER,
+  tomb: EMPTY_TOMB,
+  table: CHURCH_TABLE,
+  jordan: JORDAN,
+  image: IMAGE_GARDEN,
+  hiding: HIDING,
+  cross: CROSS_HILL,
+};
+
+/** The pictures a "Why we believe" card can show, besides the book (scripts/validate-explorer.mjs reads this list). */
+export const CARD_PICTURES = Object.keys(CARD_ART);
+
+/** A "Why we believe" card's drawing, by the picture its data names; null for one this file does not draw. */
+export function CardArt({ picture, label }: { picture: string; label?: string }) {
+  const d = CARD_ART[picture];
+  if (!d) return null;
+  return <PlateSvg drawing={label ? { ...d, label } : d} />;
 }
 
 export function HeadArt() {
   return <PlateSvg drawing={HEAD_ART} decorative />;
-}
-export function MangerArt({ label }: { label?: string }) {
-  return <PlateSvg drawing={label ? { ...MANGER, label } : MANGER} />;
 }

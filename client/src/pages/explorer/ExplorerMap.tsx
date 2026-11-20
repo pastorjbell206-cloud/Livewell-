@@ -44,7 +44,7 @@ import {
   type Thread,
   type ThreadStop,
 } from "@/lib/explorer";
-import { ChurchTableArt, HeadArt, MangerArt, Roundel, TombArt } from "./art";
+import { CardArt, CARD_PICTURES, HeadArt, Roundel } from "./art";
 import { LevelSwitch, ThreadIcon } from "./parts";
 import { Watch, WatchLinks } from "./Watch";
 import "./explorer.css";
@@ -546,12 +546,8 @@ function Believe({
             >
               <div className="ex-card__art">
                 <PlateFrame ratio={null}>
-                  {c.picture === "manger" ? (
-                    <MangerArt label={c.pictureLabel} />
-                  ) : c.picture === "tomb" ? (
-                    <TombArt label={c.pictureLabel} />
-                  ) : c.picture === "table" ? (
-                    <ChurchTableArt label={c.pictureLabel} />
+                  {c.picture && CARD_PICTURES.includes(c.picture) ? (
+                    <CardArt picture={c.picture} label={c.pictureLabel} />
                   ) : (
                     <Plate name="book" />
                   )}

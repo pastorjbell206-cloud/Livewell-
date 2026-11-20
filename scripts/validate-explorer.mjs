@@ -457,6 +457,11 @@ if (threads.filter(t => t.status === "finished").length < 1)
 
 // ── Cards ─────────────────────────────────────────────────────────────────
 const { cards } = read(path.join(DIR, "cards.json"));
+const cardArtSrc = fs.readFileSync(path.join(ROOT, "client/src/pages/explorer/art.tsx"), "utf8");
+const cardPictures = [
+  "book",
+  ...[...(cardArtSrc.match(/const CARD_ART[^{]*\{([^}]*)\}/)?.[1] ?? "").matchAll(/^\s*([a-z-]+):/gm)].map(m => m[1]),
+];
 textRules("cards.json", cards);
 const cardIds = new Set();
 for (const c of cards) {
@@ -477,9 +482,9 @@ for (const c of cards) {
   }
   if (!c.picture || !c.pictureLabel)
     fail(w, "needs a picture and what it shows");
-  // The pictures a card can show (ExplorerMap's Believe, art.tsx).
-  if (c.picture && !["book", "manger", "tomb", "table"].includes(c.picture))
-    fail(w, `picture "${c.picture}" is not one the page draws (book, manger, tomb, table)`);
+  // The pictures a card can show: the book, or one drawn in art.tsx's CARD_ART.
+  if (c.picture && !cardPictures.includes(c.picture))
+    fail(w, `picture "${c.picture}" is not one the page draws (${cardPictures.join(", ")})`);
   levelPair(`${w} statement`, c.statement);
   verseRule(`${w} quote`, c.quote ?? {});
   if (!Array.isArray(c.rests) || c.rests.length < 2)
