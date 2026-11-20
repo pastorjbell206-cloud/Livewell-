@@ -8241,3 +8241,24 @@ No new search. Scripture is the BSB in the repository.
 | Timothy: 2 Corinthians 1:19; Acts 16:1; Acts 19:22 | 14-21 | BSB | BSB text |
 | Proverbs 3:12; Deuteronomy 8:5; Proverbs 13:24; Psalm 2:9; 11:1 | 14-21 | BSB | BSB text |
 | Care line for readers with an absent or harmful father (Psalm 27:10; Find Help) | 14-21 | Romans 8 plain note form | Repository |
+
+## The plain notes on 1 Corinthians 5 (2026-11-20)
+
+No new search. Scripture is the BSB in the repository.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘His father's wife’ almost certainly the stepmother; the woman not addressed, so many think not a member | 1-5 | Deep note `cultural` | Repository; stated as "many readers" |
+| Why the church did nothing: a patron few would challenge, or bodily conduct thought not to matter | 1-5 | Deep note `cultural` | Stated as two readings |
+| Leviticus 18:8, 24; Deuteronomy 22:30; 17:7 | 1-5 | BSB | BSB text |
+| ‘Hand over to Satan’: exclusion from the fellowship (most readers), or bodily suffering as well (11:30); purpose ‘that his spirit may be saved’ | 1-5 | Deep note `hard`, `words` | Stated as readings |
+| 1 Timothy 1:20; 2 Corinthians 2:7; the identification with 2 Corinthians 2:5-11 uncertain | 1-5 | BSB; deep note `historical` | BSB text |
+| Church practice of discipline (Communion withheld; elders; the congregation; pastoral care); reporting abuse and crimes to the police (Romans 13:4) | 1-5 | Matthew 18 plain note, word for word or nearly | Repository |
+| Care line for those harmed by discipline or shunning (Psalm 34:18; Find Help) | 1-5 | Romans 8 plain note form | Repository |
+| Leaven a lump of old fermented dough; Passover clearing of leaven | 6-8 | Deep note `cultural`, `words`; Exodus 12:15 | Repository; BSB text |
+| Exodus 12:13, 15; John 1:29; 1 Peter 1:19; Matthew 13:33; Mark 8:15; all four Gospels place the death at Passover | 6-8 | BSB; deep note `words` | BSB text |
+| Earlier letter lost (verse 9), misread as withdrawal from the whole city | 9-13 | Deep note `historical` | Repository |
+| Eating together a sign of acceptance; the shared meal with the Lord's Supper | 9-13 | Deep note `cultural` | Repository |
+| Deuteronomy 17:7; 13:5; 19:19; 22:21; 24:7 (refrain); John 17:15; Matthew 9:12; 2 Thessalonians 3:15 | 9-13 | BSB | BSB text |
+
+Cut: any claim about Roman law on stepmothers beyond Paul's own words (not checked).
