@@ -3999,24 +3999,48 @@
       "application": "Ask before you speak whether it is true, whether it is kind, and whether it is yours to tell. Take the matter to the person rather than about them, which is the harder and the only honest road. Refuse to receive gossip as well as to spread it, since the listener funds the trade. And remember you will answer for the careless word, which should make all of us, the writer included, far slower to speak.",
       "verses": [
         {
+          "ref": "Proverbs 18:8",
+          "text": "The words of a gossip are like choice morsels that go down into the inmost being."
+        },
+        {
           "ref": "Proverbs 16:28",
           "text": "A perverse man spreads dissension, and a gossip divides close friends."
+        },
+        {
+          "ref": "Proverbs 26:20",
+          "text": "Without wood, a fire goes out; without gossip, a conflict ceases."
+        },
+        {
+          "ref": "Leviticus 19:16",
+          "text": "You must not go about spreading slander among your people. You must not endanger the life of your neighbor. I am the LORD."
+        },
+        {
+          "ref": "Psalm 15:2-3",
+          "text": "He who walks with integrity and practices righteousness, who speaks the truth from his heart, who has no slander on his tongue, who does no harm to his neighbor, who casts no scorn on his friend,"
+        },
+        {
+          "ref": "James 3:5-6",
+          "text": "In the same way, the tongue is a small part of the body, but it boasts of great things. Consider how small a spark sets a great forest ablaze. The tongue also is a fire, a world of wickedness among the parts of the body. It pollutes the whole person, sets the course of his life on fire, and is itself set on fire by hell."
         },
         {
           "ref": "James 1:26",
           "text": "If anyone considers himself religious and yet does not bridle his tongue, he deceives his heart and his religion is worthless."
         },
         {
-          "ref": "Ephesians 4:29",
-          "text": "Let no unwholesome talk come out of your mouths, but only what is helpful for building up the one in need and bringing grace to those who listen."
+          "ref": "Matthew 12:34",
+          "text": "You brood of vipers, how can you who are evil say anything good? For out of the overflow of the heart, the mouth speaks."
         },
         {
-          "ref": "Proverbs 11:13",
-          "text": "A gossip reveals a secret, but a trustworthy person keeps a confidence."
+          "ref": "Ephesians 4:25",
+          "text": "Therefore each of you must put off falsehood and speak truthfully to his neighbor, for we are all members of one another."
         },
         {
-          "ref": "Matthew 12:36",
-          "text": "But I tell you that men will give an account on the day of judgment for every careless word they have spoken."
+          "ref": "Colossians 4:6",
+          "text": "Let your speech always be gracious, seasoned with salt, so that you may know how to answer everyone."
+        },
+        {
+          "ref": "Proverbs 12:18",
+          "text": "Speaking rashly is like a piercing sword, but the tongue of the wise brings healing."
         }
       ],
       "related": [
