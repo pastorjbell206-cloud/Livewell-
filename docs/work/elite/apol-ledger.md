@@ -2493,3 +2493,37 @@ Checked and left. Every Qur'an verse on the five pages (112:3, 4:171, 4:157, 4:1
 Care, as read this run. The page on those who never heard has the care sentence first in its short answer and the care paragraph at its end; no sentence names, hints at or guesses any person's fate; universal restoration is stated without contempt and now as historians can support it. The Judaism and Islam page names the church's wrongs against Jews down to the Shoah and the 1994 repudiation of Luther's writings, says rabbinic Judaism is a living faith in its own right, quotes 4:171 and 4:158 so that Islam's honour to Jesus stands beside its denial, takes no side on Israel's place or on whether Christians and Muslims worship the same God, and says nothing of any modern state or conflict.
 
 Not reached, and therefore cut or not used as primary: Lawson on the readings of 4:157; any source for Loftus's biography; Newbigin's own use of the elephant parable; the content of Hick's 1997 reply beyond its title; the Sanders, Fackre and Nash volume.
+
+## The area "jesus": five more pieces (pieces and keys)
+
+Pieces: `docs/work/elite/apol-pilot/jesus/` and `client/public/questions/jesus/`: how-did-jesus-become-god.md, "bc"; did-jesus-claim-to-be-god.md, "bd"; the-virgin-birth.md, "be"; did-jesus-predict-the-end-within-a-generation.md, "bf"; did-the-disciples-die-for-their-belief.md, "bg". From section 19's unwritten list for the area (the plan's items 5.5, 5.6, 5.11, 5.12 and 5.13). The area page lists them and gains two words.
+
+Living scholars are paraphrased only from the Study Bible's notes (named, with the chapter) or, where marked, from a Wikipedia copy (tertiary), never quoted; Ehrman's books were not reached, and his case is given in the words the notes give it. Scripture is quoted from the BSB and checked by script; quotations with an ellipsis, and the Psalms, by hand. No consensus is given as a percentage or head-count.
+
+### bc. "Didn't the church turn a Jewish preacher into God?" (how-did-jesus-become-god)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman, *How Jesus Became God* (2014): early Christians first thought Jesus exalted to divine sonship at his resurrection, then pushed the moment back to the baptism (as Mark does), later to his birth and before creation | Note (Mark 1, "hard" section, read this run) | Paraphrased as the note gives it, and said to be the note's summary |
+| Ehrman: John's high view of Jesus a late development, not what Jesus or his first followers believed | Note (John 1, "hard") | Paraphrased, attributed to the note |
+| Ehrman: the disciples sincerely had visions; the empty tomb stories later | Note (John 20, "hard") | Paraphrased, attributed |
+| Ehrman: the exaltation ("adoptionist") and incarnation ways of speaking "existed alongside each other" | WP "Adoptionism" (`kirito-0512/data`, tertiary, no reference list in the copy) | Paraphrased and marked as Wikipedia's report |
+| "Son of God" in the Hebrew Bible a royal and covenant title that never implied divinity (Jewish scholars); Theodotus in Rome, excommunicated by Bishop Victor | Note (Mark 1) | Paraphrased |
+| Romans 1:3-4: "the terse parallelism sounds like a formula"; "His Son" before the declaration; installed as Son-of-God-in-power, "the reading of C. E. B. Cranfield (ICC, 1975) and most commentators" | Note (Romans 1, verse notes) | Paraphrased |
+| Acts 13:33 applies Psalm 2:7, the king addressed as son "on the day of his installation", to the resurrection | Note (Psalm 110) | Paraphrased |
+| Philippians 2:6-11 taken by many scholars as a hymn older than the letter; Dunn, *Christology in the Making* (1980), an Adam contrast that need not imply pre-existence; most interpreters grant the echo but keep pre-existence; Wright and Fee: "being made in human likeness" only makes sense if the subject was not human before | Note (Philippians 2) | Paraphrased |
+| Bauckham, *God Crucified* (1998), and Hurtado, *Lord Jesus Christ* (2003): the Isaiah language "not a borrowing of language for a lesser figure"; "while the confession still ends 'to the glory of God the Father'" | Note (Philippians 2) | Quoted from the note, as the note's words |
+| Hurtado argues from the worship of Jesus in the earliest churches that a high view of him was early, not late | Note (Mark 1) | Paraphrased |
+| *Maranatha*: Aramaic, an early prayer passed from Aramaic-speaking believers to Gentile churches | Note (1 Corinthians 16) | Paraphrased |
+| 1 Corinthians 8:6 reworks the Shema, Jesus inside it | Note (1 Corinthians 8) | Agrees |
+| Boyarin, *The Jewish Gospels* (2012): a second divine figure beside the Ancient of Days, at home in Judaism before Jesus | Note (Daniel 7) | Paraphrased (living author) |
+| The rabbis later condemned belief in "two powers in heaven"; Segal (1977) | Note (John 1) | Quoted from the note |
+| Justin, *First Apology* 21: "the emperors who die among yourselves, whom you deem worthy of deification" | ANF 1 (`anf01-46.htm`), read this run | Quoted; no date given (the introduction read gives none) |
+| Pliny, *Letters* 10.96: "addressed a form of prayer to Christ, as to a divinity"; about 112 | Pliny in Melmoth's translation (GITenberg `Letters-of-Pliny_2811`, read this run); the date from the Note on Philippians 2 ("about AD 112") | Quoted |
+| Nicene Creed: "being of one substance with the Father"; "the only-begotten Son of God, begotten of his Father before all worlds, God of God, Light of Light, very God of very God, begotten, not made" | Repo (`client/public/creeds/documents/nicene-creed.json`) | Quoted |
+| Hengel, *Studies in Early Christology* (1995) | Note (Psalm 110) | Listed |
+| Paul's undisputed letters in the 50s, about twenty to twenty-five years after the crucifixion | The authors area's verified rows; the Honest Answer "Was Jesus just a good teacher?" | Agrees |
+| Galatians 2:11 (Paul opposed Cephas to his face) | Repo (BSB) | Referenced |
+| Romans 1:3-4; Acts 2:36; Acts 13:33; John 1:1; John 8:58; Galatians 4:4; Philippians 2:6-7, 9, 10; 1 Corinthians 16:22; Acts 7:59; Joel 2:32; Romans 10:13; Deuteronomy 6:4; 1 Corinthians 8:6; Isaiah 45:22, 23 | Repo (BSB; script, and by hand for the combined Philippians quotation) | Quoted |
+
+Agreement: the Honest Answer "Was Jesus just a good teacher?" makes the same argument from Paul's Aramaic prayer, 1 Corinthians 8:6, Philippians 2:10 and Hurtado; this page goes further on Ehrman's texts, Romans 10:13 and Joel, and the Jewish ideas of a second power. The notes on Philippians 2, Romans 1, 1 Corinthians 8 and 16, Mark 1, John 1 and Daniel 7 agree. Cut or not used: Ehrman's biography (his university and his description of himself, which rested on earlier rows from search summaries); Bousset's *Kyrios Christos* (a Wikipedia copy only); any claim that "most scholars" date the high christology early (the Wikipedia copy says "a majority", unsourced in the copy); Ehrman's reading of Paul's Christ as an angel (not in any source read).

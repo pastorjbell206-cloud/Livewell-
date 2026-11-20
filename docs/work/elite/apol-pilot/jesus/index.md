@@ -19,12 +19,14 @@ The pages also say what history can't do. It can establish that Jesus lived, tha
 3. **Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?** The four natural explanations, each as its defenders put it, against the list Paul received, the persecutor and the unbelieving brother, and the word the witnesses chose.
 4. **The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?** Every difference set out, Tacitus and Suetonius on the fire of Rome as a test case, the conventions of ancient biography, and what all four agree on.
 5. **Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?** What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of "least probable," and where the question passes from history to the question of God.
+6. **Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?** Ehrman's case and the texts it rests on, Paul's letters as the earliest layer, exaltation and pre-existence side by side, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.
 
 ## Words these pages use
 
 - **Testimonium Flavianum**: the paragraph about Jesus in Josephus's *Antiquities of the Jews* (18.63-64), "the testimony of Flavius" Josephus, which Christian copyists expanded.
 - **Mythicism**: the view that there was no historical Jesus, and that the Christian story began with a heavenly figure later placed in history.
 - **Inference to the best explanation**: the way historians argue, by asking which account explains the most of the agreed evidence with the least strain.
+- **Christology**: what Christians believe and teach about who Jesus is; an exaltation christology speaks of God raising Jesus to a high place, an incarnation christology of a Son who existed before he became human.
 - **Criterion of embarrassment**: the historians' rule that a detail awkward for the people who told it, such as a crucifixion or women as the first witnesses, is unlikely to have been invented by them.
 
 ## Where else to look

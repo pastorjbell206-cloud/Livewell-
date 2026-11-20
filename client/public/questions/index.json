@@ -257,6 +257,13 @@
           "blurb": "What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of \"least probable,\" and where the question passes from history to the question of God.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "how-did-jesus-become-god",
+          "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+          "blurb": "Ehrman's case and the texts it rests on, Paul's letters as the earliest layer, exaltation and pre-existence side by side, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1060,6 +1067,26 @@
       "area": "jesus",
       "slug": "can-historians-affirm-a-miracle",
       "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' first followers believed God had exalted a man at the resurrection; the belief that he was God from before creation came later",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "how-did-jesus-become-god",
+      "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+      "live": false
+    },
+    {
+      "claim": "Philippians 2 contrasts Christ with Adam and need not speak of a life before his birth",
+      "proponent": "James Dunn",
+      "work": "Christology in the Making",
+      "year": 1980,
+      "area": "jesus",
+      "slug": "how-did-jesus-become-god",
+      "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
       "live": false
     },
     {
