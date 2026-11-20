@@ -172,6 +172,46 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "How one church became many, in seven moving pictures of one tree: East and West, the Reformation, the many branches since, and the one root they still share.",
     },
+    "the-bible": {
+      title: "The Bible: how we got it: Bible Explorer",
+      description:
+        "How the Bible came to us, in seven moving pictures: many writers over many centuries, words spoken and written down, scrolls copied by hand, the first books, and translation.",
+    },
+    "the-king": {
+      title: "The king: Bible Explorer",
+      description:
+        "The king through the whole Bible, in seven moving pictures: God's rule, the shepherd king, the promise to David, the empty throne, the son of David, the King on a cross, and the kingdom.",
+    },
+    "love-when-i-do-wrong": {
+      title: "Does God still love me when I do wrong?: Bible Explorer",
+      description:
+        "An honest question for children and teenagers, answered with Jesus' story of the lost son in seven moving pictures: grace that runs ahead, and wrong that still matters.",
+    },
+    "the-resurrection": {
+      title: "The resurrection: Bible Explorer",
+      description:
+        "What Christians believe happened on the third day, and what it means, in seven moving pictures: buried, raised in his body, never to die again, and the firstfruits of a harvest.",
+    },
+    covenant: {
+      title: "Promises that build: the covenants: Bible Explorer",
+      description:
+        "The covenants through the whole Bible, in seven moving pictures: Noah's rainbow, Abraham's stars, Sinai, David's throne, the new covenant promised, the cup at the supper, and every promise kept in Christ.",
+    },
+    "the-lamb": {
+      title: "Sacrifice and the Lamb: Bible Explorer",
+      description:
+        "Sacrifice through the whole Bible, in seven moving pictures: a covering in the garden, the ram in Isaac's place, the Passover, the Day of Atonement, the Lamb of God, and the Lamb on the throne.",
+    },
+    "exile-and-home": {
+      title: "Exile and coming home: Bible Explorer",
+      description:
+        "Far from home and brought back, through the whole Bible in seven moving pictures: the garden, Egypt, Babylon, the return, Jesus, believers on the way, and the city whose gates are never shut.",
+    },
+    "kingdom-of-god": {
+      title: "The kingdom of God: Bible Explorer",
+      description:
+        "The kingdom of God in seven moving pictures, from a tiny seed to a great tree: God's rule, the kingdom come near in Jesus, its signs, not of this world, and already and not yet.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

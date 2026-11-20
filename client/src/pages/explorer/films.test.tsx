@@ -492,7 +492,7 @@ describe("Listen", () => {
 });
 
 describe("the data", () => {
-  it("lists the four groups and the twenty-three finished films", () => {
+  it("lists the four groups and the thirty-one finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "ideas",
@@ -505,16 +505,23 @@ describe("the data", () => {
       "sixty-six-books",
       "holy-spirit",
       "god-with-his-people",
+      "the-king",
+      "covenant",
+      "the-lamb",
+      "exile-and-home",
+      "kingdom-of-god",
       "who-god-is",
       "image-of-god",
       "what-sin-is",
       "who-jesus-is",
       "why-jesus-died",
+      "the-resurrection",
       "how-salvation-works",
       "gospel-in-a-minute",
       "spirit-in-a-believer",
       "the-church",
       "baptism-and-supper",
+      "the-bible",
       "prayer",
       "life-to-come",
       "who-made-god",
@@ -523,6 +530,7 @@ describe("the data", () => {
       "is-the-bible-true",
       "did-jesus-come-back-to-life",
       "so-many-churches",
+      "love-when-i-do-wrong",
     ]);
   });
 
@@ -598,7 +606,7 @@ describe("the data", () => {
   });
 
   it("has no file for a film not made yet", () => {
-    expect(COMING.length).toBeGreaterThan(15);
+    expect(COMING.length).toBeGreaterThan(5);
     for (const f of COMING)
       expect(
         fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
@@ -1006,5 +1014,211 @@ describe("the four films of 2026-11-20 (late): prayer, the two signs, the life t
       "so-many-churches",
     ])
       expect(filmFile(slug).share?.level, slug).toBe("younger");
+  });
+});
+
+describe("the four films of 2026-11-20 (fifth run): the resurrection, the Bible, the king, Does God still love me?", () => {
+  const words = (slug: string) => JSON.stringify(filmFile(slug));
+
+  it("The resurrection teaches what it is and means, and leaves the case for it to the other film", () => {
+    const film = filmFile("the-resurrection");
+    const all = words("the-resurrection");
+    expect(all).toMatch(
+      /God raised the same body that had been buried, now made new/
+    );
+    expect(all).toMatch(/firstfruits/);
+    expect(all).toMatch(/Jesus was not a ghost/);
+    // Not the evidence film again: no Tacitus, no vision theory, no women's testimony argument.
+    expect(all).not.toMatch(
+      /Tacitus|vision|hallucinat|testimony|court|historian/i
+    );
+    expect(film.deeper?.map(d => d.href)).toContain(
+      "/study/explorer/watch/did-jesus-come-back-to-life"
+    );
+    expect(film.care).toMatch(/or look at Find Help\.$/);
+  });
+
+  it("The Bible: how we got it gives no dating to argue over and claims no more than the guides", () => {
+    const all = words("the-bible");
+    expect(all).not.toMatch(
+      /\b(AD|BC) ?\d|\b\d{3,4}\b|thousand years|manuscripts? (prove|show it is accurate)|perfectly preserved|without error/i
+    );
+    expect(all).toMatch(
+      /every hand-made copy differs from every other in small ways/
+    );
+    expect(filmFile("the-bible").differ?.text).toMatch(
+      /does not choose between them/
+    );
+  });
+
+  it("The king puts no modern state in view and never sets the crown on anyone", () => {
+    const all = words("the-king");
+    expect(all).not.toMatch(
+      /\b(Israeli|America|United States|flag|nation-state|today's|modern)\b/i
+    );
+    expect(all).toMatch(/My kingdom is not of this world/);
+    expect(all).toMatch(/not a country with borders and soldiers/);
+    expect(filmFile("the-king").differ?.text).toMatch(
+      /does not choose between them/
+    );
+  });
+
+  it("Does God still love me? rests on Luke 15 and the Study Bible, keeps sin serious, and presses no fear", () => {
+    const film = filmFile("love-when-i-do-wrong");
+    const all = words("love-when-i-do-wrong");
+    expect(film.end.href).toBe("/study/bible/luke/15");
+    expect(film.deeper?.map(d => d.href)).toEqual(
+      expect.arrayContaining([
+        "/study/bible/luke/15",
+        "/study/bible/doctrines/love",
+      ])
+    );
+    expect(all).toMatch(/the father's love is moved before any confession/);
+    expect(all).toMatch(
+      /restoration comes as a gift before the son can bargain for it/
+    );
+    expect(all).toMatch(
+      /Sin is serious, and it grieves God; that is why the cross was needed/
+    );
+    expect(all).not.toMatch(
+      /punish|hell|afraid of God|you are bad|pray this prayer/i
+    );
+    expect(film.care).toBe(filmFile("what-sin-is").care);
+  });
+
+  it("each has seven frames and a share cut at the younger level", () => {
+    for (const slug of [
+      "the-resurrection",
+      "the-bible",
+      "the-king",
+      "love-when-i-do-wrong",
+    ]) {
+      const film = filmFile(slug);
+      expect(film.frames.length, slug).toBe(7);
+      expect(film.share?.level, slug).toBe("younger");
+    }
+  });
+});
+
+describe("the four films of 2026-11-20 (sixth run): the covenants, the Lamb, exile and home, the kingdom of God", () => {
+  const words = (slug: string) => JSON.stringify(filmFile(slug));
+
+  it("The covenants never tell the new covenant as God rejecting the Jewish people, and take no side on how the covenants relate", () => {
+    const film = filmFile("covenant");
+    const all = words("covenant");
+    // The Hebrews book page's own words on that point.
+    expect(all).toMatch(
+      /these words are not a verdict that God has rejected the Jewish people/
+    );
+    expect(all).toMatch(/did God reject His people\? Certainly not!/);
+    expect(all).not.toMatch(/replaced|replacement|cast off|rejected Israel/i);
+    expect(film.differ?.text).toMatch(
+      /covenant theology, dispensational readings, progressive covenantalism and new covenant theology/
+    );
+    expect(film.differ?.text).toMatch(/does not choose between them/);
+    expect(film.differ?.text).toMatch(
+      /None of them teaches that God has abandoned the Jewish people/
+    );
+    expect(film.differ?.links.map(l => l.href)).toContain(
+      "/study/bible/hebrews"
+    );
+    // ...and that page still says it, so the film reuses live wording.
+    expect(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/hebrews/intro.json"),
+        "utf8"
+      )
+    ).toContain(
+      "These words are not a verdict that God has rejected the Jewish people"
+    );
+    expect(film.frames.map(f => f.id)).toEqual([
+      "noah",
+      "abraham",
+      "sinai",
+      "david",
+      "new",
+      "cup",
+      "yes",
+    ]);
+  });
+
+  it("Sacrifice and the Lamb is gentle, agrees with Why did Jesus die?, and chooses no atonement theory", () => {
+    const film = filmFile("the-lamb");
+    const all = words("the-lamb");
+    expect(all).toMatch(
+      /Look, the Lamb of God, who takes away the sin of the world!/
+    );
+    expect(all).toMatch(/not an angry Father against an unwilling Son/);
+    expect(all).toMatch(/God stopped Abraham/);
+    expect(all).not.toMatch(
+      /penal|satisfaction|Christus Victor|moral influence|governmental|wrath/i
+    );
+    expect(film.differ?.text).toMatch(
+      /does not choose between the ways of explaining the cross/
+    );
+    expect(film.differ?.text).toMatch(/the people of Israel/);
+    expect(film.care).toBe(filmFile("why-jesus-died").care);
+    expect(film.cards).toContain("cross");
+    expect(film.end.href).toBe("/study/explorer/cross");
+  });
+
+  it("Exile and coming home keeps every modern state out of view, blames no people, and reuses existing care words", () => {
+    const film = filmFile("exile-and-home");
+    const all = words("exile-and-home");
+    expect(all).not.toMatch(
+      /\b(Israeli|Zionis\w*|Palestin\w*|1948|modern|today's|refugee camp|Iraq|Iran)\b/i
+    );
+    expect(all).not.toMatch(
+      /the Babylonians were|the Egyptians were|wicked nation/i
+    );
+    // The care line is three sentences already on the site: the Exile stop's
+    // and the Wisdom page "Feeling far from God".
+    expect(film.care).toBe(
+      "If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone. Feeling far from God is not the same as being far from him. Talk with a parent or a leader you trust, or look at Find Help."
+    );
+    const exileStop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/exile.json"), "utf8")
+    );
+    expect(exileStop.care).toContain(
+      "If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone."
+    );
+    expect(exileStop.care).toMatch(
+      /Talk with a parent or a leader you trust, or look at Find Help\.$/
+    );
+    expect(
+      fs.readFileSync(
+        path.join(PUBLIC, "wisdom/entry/feeling-far-from-god.json"),
+        "utf8"
+      )
+    ).toContain("Feeling far from God is not the same as being far from him.");
+    expect(film.deeper?.map(d => d.href)).toContain(
+      "/wisdom/feeling-far-from-god"
+    );
+  });
+
+  it("The kingdom of God is no country, party or nation, said both ways, and gives no end-times scheme", () => {
+    const film = filmFile("kingdom-of-god");
+    const all = words("kingdom-of-god");
+    expect(all).toMatch(/not a country, a party or a nation/);
+    expect(all).toMatch(/whichever way that program leans/);
+    expect(all).toMatch(/shrinks the kingdom to a private feeling/);
+    expect(all).toMatch(/My kingdom is not of this world/);
+    expect(all).not.toMatch(
+      /millenni|rapture|tribulation|antichrist|\bflag\b|America|Republican|Democrat|left-wing|right-wing/i
+    );
+    expect(film.differ?.text).toBe(filmFile("the-king").differ?.text);
+  });
+
+  it("each has seven frames and a share cut at the younger level", () => {
+    for (const slug of [
+      "covenant",
+      "the-lamb",
+      "exile-and-home",
+      "kingdom-of-god",
+    ]) {
+      const film = filmFile(slug);
+      expect(film.frames.length, slug).toBe(7);
+      expect(film.share?.level, slug).toBe("younger");
+    }
   });
 });

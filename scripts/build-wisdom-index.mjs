@@ -23,7 +23,9 @@
  *                                        read it); a deep topic's verses are
  *                                        its passages
  *   client/public/wisdom/finder.json     what the finder needs to match and
- *                                        list (no verse text): small
+ *                                        list (no verse text), with term
+ *                                        weights for the topics written in
+ *                                        full; fetched only by the finder
  *   client/public/wisdom/entry/<id>.json one file per topic page: everything
  *                                        the page shows, Scripture filled in
  *                                        from the Berean Standard Bible
@@ -42,6 +44,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { passage, readingText, readRef } from "./lib/bsb.mjs";
+import { contentWords } from "./lib/wisdom-words.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const W = path.join(ROOT, "client/public/wisdom");
@@ -229,12 +232,61 @@ for (const t of topics) {
   }
 }
 
+/**
+ * Term weights for the topics written in full (BM25 over each topic's own
+ * page): its title (counted three times), its everyday phrasings (twice), and
+ * once each the "where it stands" of every passage, the often-misread layer
+ * and the whole-Bible section. A word counts more when it is frequent in one
+ * topic and rare across the others. The finder adds this, at a low weight, to
+ * its phrase score, so a word a page already uses ("roommate", "army") can
+ * find the page though no phrasing names it. Each topic keeps its strongest
+ * TERMS_PER_TOPIC words; weights are rounded to tenths. Shape: { stem: "i w
+ * i w ..." }, i the topic's place in finder.topics.
+ */
+const BM25 = { k1: 1.2, b: 0.75 };
+const TERMS_PER_TOPIC = 160;
+function termWeights(list) {
+  const docs = [];
+  list.forEach((ft, i) => {
+    const d = deep.get(ft.id);
+    if (!d) return;
+    const tf = new Map();
+    const count = (text, w) => contentWords(text).forEach((x) => tf.set(x, (tf.get(x) ?? 0) + w));
+    count(ft.label, 3);
+    (matching.topics[ft.id]?.phrases ?? []).forEach((p) => count(p, 2));
+    d.passages.forEach((p) => count(p.where ?? "", 1));
+    (d.misread ?? []).forEach((m) => count(`${m.taken ?? ""} ${m.says ?? ""}`, 1));
+    (d.whole ?? []).forEach((para) => count(para, 1));
+    docs.push({ i, tf, len: Array.from(tf.values()).reduce((a, b) => a + b, 0) });
+  });
+  const n = docs.length;
+  const avg = docs.reduce((a, d) => a + d.len, 0) / (n || 1);
+  const df = new Map();
+  for (const d of docs) for (const t of d.tf.keys()) df.set(t, (df.get(t) ?? 0) + 1);
+  const out = new Map();
+  for (const d of docs) {
+    const w = [];
+    for (const [t, f] of d.tf) {
+      const idf = Math.log(1 + (n - df.get(t) + 0.5) / (df.get(t) + 0.5));
+      const v = (idf * f * (BM25.k1 + 1)) / (f + BM25.k1 * (1 - BM25.b + (BM25.b * d.len) / avg));
+      if (v >= 0.5 && t.length > 1) w.push([t, Math.round(v * 10) / 10]);
+    }
+    w.sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1));
+    for (const [t, v] of w.slice(0, TERMS_PER_TOPIC)) out.set(t, [...(out.get(t) ?? []), d.i, v]);
+  }
+  return Object.fromEntries(Array.from(out.keys()).sort().map((t) => [t, out.get(t).join(" ")]));
+}
+
 const finder = {
   about: "Built by scripts/build-wisdom-index.mjs from topics/*.json, deep/*.json and matching.json. Do not edit by hand.",
   rewrites: matching.rewrites,
   synonyms: matching.synonyms,
+  concepts: matching.concepts ?? [],
+  safety: matching.safety ?? {},
+  safetyPairs: matching.safetyPairs ?? [],
   areas: matching.areas,
   topics: finderTopics,
+  weights: termWeights(finderTopics),
   daily,
 };
 

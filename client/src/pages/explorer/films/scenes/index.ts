@@ -31,6 +31,14 @@ export const FILM_SCENES: Record<
   "baptism-and-supper": () => import("./baptism-and-supper"),
   "life-to-come": () => import("./life-to-come"),
   "so-many-churches": () => import("./so-many-churches"),
+  "the-resurrection": () => import("./the-resurrection"),
+  "the-bible": () => import("./the-bible"),
+  "the-king": () => import("./the-king"),
+  "love-when-i-do-wrong": () => import("./love-when-i-do-wrong"),
+  covenant: () => import("./covenant"),
+  "the-lamb": () => import("./the-lamb"),
+  "exile-and-home": () => import("./exile-and-home"),
+  "kingdom-of-god": () => import("./kingdom-of-god"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

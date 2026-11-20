@@ -10,6 +10,11 @@
  * (sessionStorage, through the tool shell's useToolProgress); saved topics
  * and verses live in the stores My Library reads (lib/wisdom.ts).
  *
+ * When the best fit is weak or others are as close, the page asks "Is it one
+ * of these?" with the areas of life the words met, as plain buttons; picking
+ * one narrows the subjects to that area. A sentence that puts the help topic
+ * first for safety never gets this step.
+ *
  * Built on the tool shell (components/tool-shell): ToolHead, QuestionCard
  * (the areas), useToolProgress, ResultActions.
  */
@@ -20,7 +25,7 @@ import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolHead, QuestionCard, ResultActions, useToolProgress, SAVE_FAILED } from "@/components/tool-shell";
-import { prepare, findTopics, type FinderTopic } from "@/lib/wisdom-match";
+import { prepare, findTopics, findInArea, type FinderTopic } from "@/lib/wisdom-match";
 import { fetchFinder, readSavedTopics, verseForToday, type FinderFile } from "@/lib/wisdom";
 import { toolById } from "@/lib/toolsList";
 import "../wisdom/wisdom.css";
@@ -68,6 +73,8 @@ export default function WisdomFinder() {
   const [draft, setDraft] = useState(() => urlQ || place.value.q);
   const [asked, setAsked] = useState(urlQ);
   const [filter, setFilter] = useState("");
+  // "Is it one of these?": the area of life the reader picked for this sentence, if any.
+  const [chosen, setChosen] = useState<{ q: string; area: string } | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsRef = useRef<HTMLHeadingElement>(null);
   const [saved] = useState<string[]>(() => readSavedTopics());
@@ -117,12 +124,19 @@ export default function WisdomFinder() {
     });
   };
 
-  const confident = result?.confident ?? false;
-  const matches = result?.matches ?? [];
+  const choices = useMemo(() => (data && result?.unsure ? result.areas.map((id) => data.areas.find((a) => a.id === id)).filter((a): a is NonNullable<typeof a> => !!a) : []), [data, result]);
+  const picked = chosen && chosen.q === asked ? (choices.find((a) => a.id === chosen.area) ?? null) : null;
+  const narrowed = useMemo(() => (prep && picked ? findInArea(prep, asked, picked.id) : null), [prep, picked, asked]);
+  const confident = narrowed ? narrowed.length > 0 : (result?.confident ?? false);
+  const matches = narrowed ?? result?.matches ?? [];
   const best = confident ? matches[0] : null;
   // Two topics share a name (caregiving, caring-for-aging-parents): list a name once.
   const seenLabels = new Set<string>(best ? [best.topic.label] : []);
+  // Topics scoring nearly as high as the first are shown beside it, not under it.
+  const close = (narrowed ? [] : (result?.close ?? [])).filter((m) => !seenLabels.has(m.topic.label) && seenLabels.add(m.topic.label)).slice(0, 2);
+  const closeIds = new Set(close.map((m) => m.topic.id));
   const rest = (confident ? matches.slice(1) : matches.filter((m) => m.score >= 4))
+    .filter((m) => !closeIds.has(m.topic.id))
     .filter((m) => !seenLabels.has(m.topic.label) && seenLabels.add(m.topic.label))
     .slice(0, confident ? 5 : 3);
 
@@ -228,20 +242,73 @@ export default function WisdomFinder() {
                   ? ""
                   : !data
                     ? "Opening the library…"
-                    : confident
-                      ? `${matches.length} ${matches.length === 1 ? "subject fits" : "subjects fit"} what you wrote, closest first.`
+                    : (result?.confident ?? false)
+                      ? `${result?.matches.length} ${result?.matches.length === 1 ? "subject fits" : "subjects fit"} what you wrote, closest first.`
                       : "Nothing in the library fits that well."}
               </p>
+              {data && asked && choices.length > 0 && (
+                <div className="wf-choose" role="group" aria-labelledby="wf-choose-q">
+                  <p id="wf-choose-q" className="wf-choose__q">
+                    Is it one of these?
+                  </p>
+                  <ul className="wf-chips">
+                    {choices.map((a) => (
+                      <li key={a.id}>
+                        <button type="button" aria-pressed={picked?.id === a.id} onClick={() => setChosen(picked?.id === a.id ? null : { q: asked, area: a.id })}>
+                          {a.name}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                  {/* Announced, and takes no room, so the chips never move when one is picked. */}
+                  <p className="sr-only" role="status" aria-live="polite">
+                    {picked ? `Showing ${matches.length} ${matches.length === 1 ? "subject" : "subjects"} in ${picked.name}, closest first. Choose it again to see them all.` : ""}
+                  </p>
+                </div>
+              )}
               {data && asked && best && (
                 <>
                   <Link href={`/wisdom/${best.topic.id}`} className="wf-best">
-                    <p className="wf-best__kicker">Closest to what you wrote{best.topic.deep ? " · written in full" : ""}</p>
+                    <p className="wf-best__kicker">
+                      {picked ? `Closest in ${picked.name}` : close.length ? "Close to what you wrote" : "Closest to what you wrote"}
+                      {best.topic.deep ? " · written in full" : ""}
+                    </p>
                     <h3 className="wf-best__title">{best.topic.label}</h3>
                     <p className="wf-best__line">{best.topic.line}</p>
                     <span className="wf-best__go">
                       Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
                     </span>
                   </Link>
+                  {best.safety && (
+                    <p className="wf-safety">
+                      If you are in danger or thinking of hurting yourself,{" "}
+                      <Link href="/help" className="wf-inline">
+                        Find Help
+                      </Link>{" "}
+                      lists places to turn now.
+                    </p>
+                  )}
+                  {close.length > 0 && (
+                    <>
+                      <h3 className="wz-sec__kicker" style={{ marginTop: "var(--s-3)" }}>
+                        Just as close
+                      </h3>
+                      <ul className="wf-close">
+                        {close.map((m) => (
+                          <li key={m.topic.id}>
+                            <Link href={`/wisdom/${m.topic.id}`} className="wf-best wf-best--close">
+                              <p className="wf-best__kicker">Also close to what you wrote{m.topic.deep ? " · written in full" : ""}</p>
+                              <h4 className="wf-best__title">{m.topic.label}</h4>
+                              <p className="wf-best__line">{m.topic.line}</p>
+                              <span className="wf-best__go">
+                                Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
                   {rest.length > 0 && (
                     <>
                       <h3 className="wz-sec__kicker" style={{ marginTop: "var(--s-3)" }}>

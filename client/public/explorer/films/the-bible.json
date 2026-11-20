@@ -1,0 +1,118 @@
+{
+  "slug": "the-bible",
+  "title": "The Bible: how we got it",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "the-bible",
+  "line": {
+    "younger": "How the Bible came to us, in seven pictures: many writers, words spoken and written down, scrolls and ink, copies made by hand, a new kind of book, and every language.",
+    "older": "How the Bible reached us, in seven pictures: many writers over many centuries, dictation and scrolls, copying by hand, the codex, the books received as Scripture, and translation."
+  },
+  "poster": "A long shelf runs across the picture holding scrolls of many sizes, and at its end an open book lies under a small light.",
+  "frames": [
+    {
+      "id": "many",
+      "name": "Many writers",
+      "still": "A long shelf runs across the picture from left to right, and scrolls of many sizes are set on it one after another.",
+      "younger": "The Bible was not written all at once. God gave it through many writers over a very long time: kings and prophets, priests and fishermen, a doctor and a tax collector. Many of its books do not say who wrote them.",
+      "older": "The Bible's books were written over many centuries, in palaces and in exile, in prison cells and on the road. Their writers include kings, priests, prophets, court officials, a tax collector, a physician, fishermen and a former Pharisee; many books name no author at all. Christians believe God was at work in the whole of it.",
+      "verse": {
+        "ref": "Hebrews 1:1",
+        "text": "On many past occasions and in many different ways, God spoke to our fathers through the prophets."
+      }
+    },
+    {
+      "id": "spoken",
+      "name": "Spoken and written down",
+      "still": "One person speaks while another sits beside them writing on a scroll with a reed pen, an ink pot at hand.",
+      "younger": "Sometimes the words were spoken first and then written down. The prophet Jeremiah spoke God's words, and his helper Baruch wrote them on a scroll. Paul often spoke his letters while a helper wrote them, and then added a greeting in his own hand.",
+      "older": "Prophets spoke and helpers wrote. Baruch wrote on a scroll all the words Jeremiah dictated, and when the king burned that scroll, Jeremiah dictated it again. Paul usually dictated his letters to a secretary and added a greeting in his own hand; one of those secretaries signs his own name in Romans.",
+      "verse": {
+        "ref": "Romans 16:22",
+        "text": "I, Tertius, who wrote down this letter, greet you in the Lord."
+      }
+    },
+    {
+      "id": "scrolls",
+      "name": "Scrolls and ink",
+      "still": "A scroll lies unrolled across a table beside a reed pen and an ink pot, its lines drawn as plain strokes, and two more scrolls lie rolled up beside it.",
+      "younger": "There was no paper like ours and no printing. The words were written by hand, in ink, on long rolls called scrolls, made from papyrus reeds or from animal skin. The Bible was written in three languages: Hebrew, a little Aramaic, and Greek.",
+      "older": "Books were written on scrolls of papyrus or of prepared animal skin, in ink, with a reed pen. The Old Testament is in Hebrew, with a small part in Aramaic, a related language; the New Testament is in Greek. Paul once asked a friend to bring him his scrolls, “especially the parchments.”",
+      "verse": {
+        "ref": "2 Timothy 4:13",
+        "text": "When you come, bring the cloak that I left with Carpus at Troas, and my scrolls, especially the parchments."
+      }
+    },
+    {
+      "id": "copied",
+      "name": "Copied by hand",
+      "still": "One scroll lies open, and its lines are written out again, line by line, on a second scroll beside it, and then on a third.",
+      "younger": "Scrolls wore out, and every church wanted its own copy, so people copied the words out by hand, line by line. For many hundreds of years, every Bible was copied by hand, until printing was invented.",
+      "older": "Copies were made almost at once: Paul asked one church to pass its letter on to another and to read the one sent there. Every copy was made by hand until printing came, and every hand-made copy differs from every other in small ways. That is why scholars compare the copies, and the Study Bible's guides set out what they find.",
+      "verse": {
+        "ref": "Colossians 4:16",
+        "text": "After this letter has been read among you, make sure that it is also read in the church of the Laodiceans, and that you in turn read the letter from Laodicea."
+      }
+    },
+    {
+      "id": "codex",
+      "name": "From scroll to book",
+      "still": "On a table a book with folded pages and a stitched spine lies open, and a rolled scroll lies set aside at its end.",
+      "younger": "The first Christians liked a new kind of book, with pages folded and sewn at the spine, like the books we have now. One book like that could hold all four Gospels, and it was easy to carry.",
+      "older": "From very early on, Christians preferred the codex, a book of folded sheets stitched at the spine, to the scroll. It was cheaper, since it used both sides of the sheet, easier to carry and to search, and it could hold all four Gospels or all of Paul's letters in one volume. Nearly all early Christian copies are books of this kind.",
+      "verse": {
+        "ref": "John 20:31",
+        "text": "But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."
+      }
+    },
+    {
+      "id": "received",
+      "name": "Received as Scripture",
+      "still": "Books are set side by side on one shelf and gathered together under a small light.",
+      "younger": "Over time, churches everywhere came to agree which books belonged in the Bible. They asked: does this book come from the apostles and those close to them? Does it teach the faith they handed on? Is it read in churches everywhere?",
+      "older": "The churches received as Scripture the books that came from the apostles and their circle, taught the faith handed on in all the churches, and were read in worship across the Christian world. Behind those tests was the conviction that the church was recognizing books that had already proved themselves. Christians of different traditions account for this differently, and Catholic and Orthodox Bibles include further books in the Old Testament."
+    },
+    {
+      "id": "translated",
+      "name": "In every language",
+      "still": "One open book stands in the middle, and around it many books of different shapes, each with its lines in a different pattern, spread out to the edges of the picture.",
+      "younger": "Most people cannot read Hebrew or Greek, so the Bible has been translated into language after language, so that people can read God's word in their own. That is how it came to you.",
+      "older": "Translation is part of the Bible's own story: the New Testament itself puts some of Jesus' Aramaic words into Greek. Jews made the Greek translation of the Hebrew Scriptures that the first churches outside Judea read, and the New Testament was in Latin, Syriac and Coptic by the third century. Every translation is a set of decisions, which is why it helps to read more than one.",
+      "verse": {
+        "ref": "2 Timothy 3:16",
+        "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Who would you most like to meet in the long line that brought the Bible to you: a writer, a copier or a translator? Why?",
+    "older": "Every translation is a set of decisions. Pick a verse and read it in two translations: what is different, and why might it be?"
+  },
+  "read": [
+    { "label": "Hebrews 1", "href": "/study/bible/hebrews/1" },
+    { "label": "Jeremiah 36", "href": "/study/bible/jeremiah/36" },
+    { "label": "Romans 16", "href": "/study/bible/romans/16" },
+    { "label": "Colossians 4", "href": "/study/bible/colossians/4" },
+    { "label": "2 Timothy 3", "href": "/study/bible/2-timothy/3" },
+    { "label": "2 Timothy 4", "href": "/study/bible/2-timothy/4" },
+    { "label": "John 20", "href": "/study/bible/john/20" }
+  ],
+  "stops": ["sinai", "return", "church"],
+  "cards": ["bible"],
+  "differ": {
+    "text": "Catholic and Orthodox Bibles include further books in the Old Testament that Protestant Bibles do not, and the traditions give different accounts of why the list of books can be trusted. This moving picture does not choose between them. The history is set out in",
+    "links": [
+      { "label": "the Study Bible's guide to how the books were chosen", "href": "/study/bible/guides/canon" }
+    ]
+  },
+  "deeper": [
+    { "label": "What the Bible is (a Study Bible guide)", "href": "/study/bible/guides/what-is-the-bible" },
+    { "label": "How we got the Old Testament", "href": "/study/bible/guides/how-we-got-the-old-testament" },
+    { "label": "How we got the New Testament", "href": "/study/bible/guides/how-we-got-the-new-testament" },
+    { "label": "Why translations differ", "href": "/study/bible/guides/translations" },
+    { "label": "Is the Bible true? (a moving picture)", "href": "/study/explorer/watch/is-the-bible-true" },
+    { "label": "Why would anyone trust the Bible?", "href": "/answers/why-would-anyone-trust-the-bible" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "many", "verse": true}, {"id": "spoken", "text": "Sometimes the words were spoken first and then written down. The prophet Jeremiah spoke God's words, and his helper Baruch wrote them on a scroll.", "verse": false}, {"id": "scrolls", "verse": false}, {"id": "copied", "text": "Scrolls wore out, and every church wanted its own copy, so people copied the words out by hand, line by line.", "verse": false}, {"id": "codex", "verse": false}, {"id": "received", "verse": false}, {"id": "translated", "verse": true}]},
+  "end": { "label": "Watch next: Is the Bible true?", "href": "/study/explorer/watch/is-the-bible-true" }
+}

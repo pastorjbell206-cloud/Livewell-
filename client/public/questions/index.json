@@ -165,6 +165,41 @@
           "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "what-kind-of-writing-are-the-gospels",
+          "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+          "blurb": "The form critics' \"folk literature\" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's \"memoirs\" and Luke's preface, and what the genre does and doesn't establish.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-synoptic-problem",
+          "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+          "blurb": "The Synoptic problem set out fairly, Mark's priority, Q and the main alternatives with no side taken, what copying shows and what it doesn't, the sources skeptics themselves count, and the witnesses outside the problem.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "is-john-history-or-theology",
+          "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+          "blurb": "Every difference from the first three Gospels conceded, Strauss, Ehrman and Clement's \"spiritual Gospel\", John's own account of how he wrote, what in John fits Jerusalem before AD 70, and why theology and history are not alternatives.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-constantine-decide-the-bible",
+          "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+          "blurb": "What Nicaea's surviving acts do and don't contain, Constantine's letter ordering Bibles, his own bishop's list of disputed books, the Muratorian fragment, Athanasius in 367 and the African councils, the novel's claim named as fiction, and the edges that still differ.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-paul-invent-christianity",
+          "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+          "blurb": "Wrede's \"second founder\" and Ehrman's contrast of Paul and Matthew at full strength, what Paul says he received, his meetings with Peter, James and John, what he shares with the Jesus of the Gospels, and Paul the Jew.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -255,6 +290,41 @@
           "slug": "can-historians-affirm-a-miracle",
           "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
           "blurb": "What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of \"least probable,\" and where the question passes from history to the question of God.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "how-did-jesus-become-god",
+          "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+          "blurb": "Ehrman's case in his own words and the texts it rests on, his reading of Paul's pre-existent Christ as a being below God and the angel of the Lord, Paul's letters as the earliest layer, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-jesus-claim-to-be-god",
+          "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+          "blurb": "What Jesus does not say, Ehrman's tests of the sayings, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "the-virgin-birth",
+          "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+          "blurb": "*Almah* and *parthenos* handled honestly, what Matthew does with Isaiah and with Hosea, the two accounts from Joseph's side and Mary's, Trypho and Celsus, the stories of Danaë and Augustus read and compared, and the confession of the creeds.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-jesus-predict-the-end-within-a-generation",
+          "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+          "blurb": "Schweitzer's prophet and Russell's lecture at full strength, the temple's fall in AD 70, Daniel's Son of Man coming to God, the transfiguration, Matthew 10:23, the confession that the Son does not know the day, and the main Christian readings with no scheme of the end chosen.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "did-the-disciples-die-for-their-belief",
+          "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
+          "blurb": "Gibbon's doubt at full strength, how thin the evidence is for most of the Twelve, what is well attested for Peter, Paul and the two Jameses with the sources named, and why the argument shows sincerity, not truth.",
           "status": "pending",
           "live": false
         }
@@ -424,14 +494,14 @@
         {
           "slug": "slavery-and-conquest",
           "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
-          "blurb": "Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Baptists' founding in 1845 and their apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.",
+          "blurb": "Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Southern Baptist Convention's founding in 1845 and its apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.",
           "status": "pending",
           "live": false
         },
         {
           "slug": "abuse-and-cover-up",
           "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
-          "blurb": "The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe. Find Help (/help) is at the top of the page and at its end.",
+          "blurb": "The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe; it gives no legal advice and asks no one to trust, return or forgive. Find Help (/help) and the police are at the top of the page and at its end.",
           "status": "pending",
           "live": false
         },
@@ -451,8 +521,44 @@
       "planned": 10,
       "status": "pending",
       "live": false,
-      "hasPage": false,
-      "pieces": []
+      "hasPage": true,
+      "pieces": [
+        {
+          "slug": "are-all-religions-the-same",
+          "question": "Aren't all religions basically the same, different paths up one mountain to the same God?",
+          "blurb": "Hick's pluralism at full strength, the parable of the elephant and what it assumes, what the religions actually say about God, Jesus and salvation, and why pluralism is one more particular view.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
+          "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
+          "blurb": "John 14:6 and Acts 4:12 where they stand, why every view of the religions excludes others, the difference between a claim and the way it is held, and the church's sins in carrying it.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "those-who-never-heard",
+          "question": "What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?",
+          "blurb": "The moral argument, what Scripture says and doesn't say, the main Christian answers in their holders' terms, each with its hardest question and no side taken, and a word for anyone grieving.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "judaism-islam-and-jesus",
+          "question": "Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?",
+          "blurb": "Judaism and Islam described from their own sources, what Christianity shares with each and where it truly differs, the church's wrongs against Jews named and rejected, the views of Israel's place set out without choosing, and the earliest Christians' Shema.",
+          "status": "pending",
+          "live": false
+        },
+        {
+          "slug": "only-a-christian-because-of-where-you-were-born",
+          "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
+          "blurb": "Mill, Hick and the outsider's test, the genetic fallacy and its subtler cousin, a faith that began among converts, and why birthplace is a reason to examine a belief, not to dismiss it.",
+          "status": "pending",
+          "live": false
+        }
+      ]
     }
   ],
   "claims": [
@@ -847,6 +953,96 @@
       "live": false
     },
     {
+      "claim": "The Gospels are not biographies but folk literature, units of community tradition strung together by editors",
+      "proponent": "Rudolf Bultmann",
+      "work": "The History of the Synoptic Tradition",
+      "year": 1921,
+      "area": "authors",
+      "slug": "what-kind-of-writing-are-the-gospels",
+      "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke used Mark and a lost sayings source, so for the stories all three tell there is one witness, not three",
+      "proponent": "B. H. Streeter",
+      "work": "The Four Gospels",
+      "year": 1924,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "live": false
+    },
+    {
+      "claim": "There was no Q: Luke used Matthew as well as Mark",
+      "proponent": "Mark Goodacre",
+      "work": "The Case Against Q",
+      "year": 2002,
+      "area": "authors",
+      "slug": "the-synoptic-problem",
+      "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' divine claims in John belong to John's distinctive theology, not to the historical record of what Jesus said",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "authors",
+      "slug": "is-john-history-or-theology",
+      "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+      "live": false
+    },
+    {
+      "claim": "John's Gospel is largely myth",
+      "proponent": "David Friedrich Strauss",
+      "work": "Life of Jesus",
+      "year": 1835,
+      "area": "authors",
+      "slug": "is-john-history-or-theology",
+      "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
+      "live": false
+    },
+    {
+      "claim": "The emperor Constantine had a new Bible made and left out the gospels that showed Jesus as a mortal man",
+      "proponent": "Dan Brown",
+      "work": "The Da Vinci Code",
+      "year": 2003,
+      "area": "authors",
+      "slug": "did-constantine-decide-the-bible",
+      "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+      "live": false
+    },
+    {
+      "claim": "The party that won compiled the canonical books and told the story of its victory",
+      "proponent": "Bart D. Ehrman",
+      "work": "Lost Christianities",
+      "year": 2003,
+      "area": "authors",
+      "slug": "did-constantine-decide-the-bible",
+      "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+      "live": false
+    },
+    {
+      "claim": "Paul's teaching that no one is justified by the law cannot be reconciled with Matthew's Jesus on the law and the judgment",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+      "live": false
+    },
+    {
+      "claim": "Paul was the second founder of Christianity",
+      "proponent": "William Wrede",
+      "work": "Paul",
+      "year": 1904,
+      "area": "authors",
+      "slug": "did-paul-invent-christianity",
+      "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
+      "live": false
+    },
+    {
       "claim": "Luke dated Jesus' birth by the census of Quirinius, which Josephus places in AD 6, a decade after Herod died, so Luke misdated it",
       "proponent": "Raymond E. Brown",
       "work": "The Birth of the Messiah",
@@ -1024,6 +1220,116 @@
       "area": "jesus",
       "slug": "can-historians-affirm-a-miracle",
       "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
+      "live": false
+    },
+    {
+      "claim": "Jesus' first followers believed God had exalted a man at the resurrection; the belief that he was God from before creation came later",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "how-did-jesus-become-god",
+      "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+      "live": false
+    },
+    {
+      "claim": "Philippians 2 contrasts Christ with Adam and need not speak of a life before his birth",
+      "proponent": "James Dunn",
+      "work": "Christology in the Making",
+      "year": 1980,
+      "area": "jesus",
+      "slug": "how-did-jesus-become-god",
+      "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+      "live": false
+    },
+    {
+      "claim": "Jesus did not claim to be God; John's high view of him is a late development",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "\"Son of Man\" in Jesus' Aramaic could be a modest way of saying \"I\", not a claim to Daniel's figure",
+      "proponent": "Geza Vermes",
+      "work": "Jesus the Jew",
+      "year": 1973,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "Jesus used \"son of man\" in its ordinary Aramaic sense, and the references to Daniel were added by the early church",
+      "proponent": "Maurice Casey",
+      "work": "Son of Man",
+      "year": 1979,
+      "area": "jesus",
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "live": false
+    },
+    {
+      "claim": "Jesus was conceived in the ordinary way, possibly outside marriage, and the virgin birth arose later",
+      "proponent": "Gerd Lüdemann",
+      "work": "Virgin Birth?",
+      "year": 1998,
+      "area": "jesus",
+      "slug": "the-virgin-birth",
+      "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+      "live": false
+    },
+    {
+      "claim": "Matthew and Luke inherited a tradition of an illegitimate conception",
+      "proponent": "Jane Schaberg",
+      "work": "The Illegitimacy of Jesus",
+      "year": 1987,
+      "area": "jesus",
+      "slug": "the-virgin-birth",
+      "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+      "live": false
+    },
+    {
+      "claim": "Jesus expected the Son of Man to come before the Twelve returned from their mission, and the prediction was not fulfilled",
+      "proponent": "Albert Schweitzer",
+      "work": "The Quest of the Historical Jesus",
+      "year": 1906,
+      "area": "jesus",
+      "slug": "did-jesus-predict-the-end-within-a-generation",
+      "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+      "live": false
+    },
+    {
+      "claim": "Jesus thought his second coming would occur before the death of all the people living at the time, and so was not superlatively wise",
+      "proponent": "Bertrand Russell",
+      "work": "Why I Am Not a Christian",
+      "year": 1927,
+      "area": "jesus",
+      "slug": "did-jesus-predict-the-end-within-a-generation",
+      "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+      "live": false
+    },
+    {
+      "claim": "The stories of the apostles' deaths are legends of a credulous antiquity; martyrdom was gradually bestowed on apostles beyond Peter, Paul and James",
+      "proponent": "Edward Gibbon",
+      "work": "The History of the Decline and Fall of the Roman Empire",
+      "year": 1776,
+      "area": "jesus",
+      "slug": "did-the-disciples-die-for-their-belief",
+      "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
+      "live": false
+    },
+    {
+      "claim": "The disciples sincerely had visions of Jesus after his death, so their sincerity shows nothing about whether he rose",
+      "proponent": "Bart Ehrman",
+      "work": "How Jesus Became God",
+      "year": 2014,
+      "area": "jesus",
+      "slug": "did-the-disciples-die-for-their-belief",
+      "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
       "live": false
     },
     {
@@ -1395,11 +1701,82 @@
       "slug": "does-religion-poison-everything",
       "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
       "live": false
+    },
+    {
+      "claim": "The great religions are different culturally shaped responses to one ultimate Real, each a valid context of salvation and none the one and only",
+      "proponent": "John Hick",
+      "work": "An Interpretation of Religion",
+      "year": 1989,
+      "area": "religions",
+      "slug": "are-all-religions-the-same",
+      "question": "Aren't all religions basically the same, different paths up one mountain to the same God?",
+      "live": false
+    },
+    {
+      "claim": "Those who hold that their own religion alone is true often show arbitrariness or arrogance",
+      "proponent": "John Hick",
+      "work": "An Interpretation of Religion",
+      "year": 1989,
+      "area": "religions",
+      "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
+      "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
+      "live": false
+    },
+    {
+      "claim": "Religious exclusivism is presumptuous and morally objectionable",
+      "proponent": "Joseph Runzo",
+      "work": "God, Commitment, and Other Faiths: Pluralism vs. Relativism",
+      "year": 1988,
+      "area": "religions",
+      "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
+      "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
+      "live": false
+    },
+    {
+      "claim": "A just God would not deny salvation to devout people of other faiths, who are not to blame for their beliefs",
+      "proponent": "Kenneth Himma",
+      "work": "Finding a High Road: The Moral Case for Salvific Pluralism",
+      "year": 2002,
+      "area": "religions",
+      "slug": "those-who-never-heard",
+      "question": "What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?",
+      "live": false
+    },
+    {
+      "claim": "The unity of God is the keystone of Judaism, and God's word that there is no God beside him means that he has no son",
+      "proponent": "Solomon Schechter",
+      "work": "Studies in Judaism",
+      "year": 1896,
+      "area": "religions",
+      "slug": "judaism-islam-and-jesus",
+      "question": "Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?",
+      "live": false
+    },
+    {
+      "claim": "The same causes that make a man a Churchman in London would have made him a Buddhist or a Confucian in Peking",
+      "proponent": "John Stuart Mill",
+      "work": "On Liberty",
+      "year": 1859,
+      "area": "religions",
+      "slug": "only-a-christian-because-of-where-you-were-born",
+      "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
+      "live": false
+    },
+    {
+      "claim": "The religion a person holds depends in the great majority of cases on where he was born",
+      "proponent": "John Hick",
+      "work": "God Has Many Names",
+      "year": 1980,
+      "area": "religions",
+      "slug": "only-a-christian-because-of-where-you-were-born",
+      "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
+      "live": false
     }
   ],
   "answers": {
     "why-would-anyone-trust-the-bible": "Why would anyone trust the Bible?",
     "if-god-is-good-why-suffering": "If God is good, why is there so much suffering?",
+    "what-if-christianity-is-wrong": "What if Christianity is wrong?",
     "was-jesus-just-a-good-teacher": "Was Jesus just a good teacher?",
     "do-i-have-to-choose-between-faith-and-science": "Do I have to choose between faith and science?",
     "is-it-okay-to-be-angry-at-god": "Is it okay to be angry at God?",
@@ -1411,6 +1788,7 @@
     "did-god-command-genocide": "Did God command genocide in the Old Testament?",
     "why-didnt-the-bible-just-ban-slavery": "Why didn't the Bible just ban slavery?",
     "what-did-the-new-atheists-get-right": "What did the New Atheists get right?",
+    "christianity-and-islam-differences": "What do Christianity and Islam actually dispute?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
     "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"

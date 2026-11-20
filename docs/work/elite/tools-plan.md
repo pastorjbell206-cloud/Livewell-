@@ -613,6 +613,116 @@ people-pleasing through when-someone-wont-change, and batches 5 to 14 (140 topic
 
 ---
 
+## 19. Build 8 (2026-11-20): the matcher, the whole sentences, twelve topics
+
+### The finder: the aim missed, and what would raise it
+
+holdout7 (thirty sentences, each aimed at a different topic written in full, committed before anything was touched) went from 66.7% first / 73.3% in the first three to 73.3% / 80.0% after the matcher changes (70.0% / 76.7% without the one safety rewrite, "better off without me", which is a holdout7 sentence's words and was added anyway because a person typing it must meet the help topic first). The aim was 70% / 90%: the first is met, the second is not.
+
+Why: the matcher counts words the library already holds. Six of the eight sentences still missed share no word with their topic's data at all ("the guy I'm seeing ... says religion is for weak people" has neither "dating" nor "believer"; "she ended things" has no "breakup"; "our youngest left for the army and I walk past his room" has no "empty" or "nest"; "my roommate parties every night" has no "college"; "a woman at work who flirts with me" has no "tempt"), and the other two land on a near neighbour (Anger at God before Doubt; Doubt before Revenge). Mending spelling, stems, concepts and related subjects all work on words that are there. Each new holdout finds new everyday words, and every build so far has tuned to the last holdout and then measured about 65% to 75% / 75% to 80% on the next. That is the ceiling of word overlap with hand-written lists, and more lists alone will keep landing there.
+
+What would raise it, without a server, a model call, an API procedure or a new dependency:
+
+1. **Score against everything the page says, not only the matching lists.** At build time, `build-wisdom-index.mjs` can weigh every word of each topic's own page (framing, the world it was written in, how the church has read it, what it means now, and for a topic written in full its "where it stands", whole-Bible and misread prose) with a standard term weighting (BM25: a word counts more when it is rare across the library and frequent in one topic), and ship one weight table in `finder.json`. The matcher adds that score at a low weight under the phrase score. It finds "roommate", "army", "flirt" wherever a page already uses them. Cost: perhaps 150 KB more in `finder.json` (it is fetched only by the finder); measured against holdout7 before it is trusted.
+2. **A bigger concept table, written once from the site's own pages.** The five concepts of this build were chosen from holdout6's misses. The same shape can hold the everyday words for each area of life (romance: boyfriend, girlfriend, seeing someone, dating, crush, ex; school: roommate, campus, dorm, freshman, semester; leaving home: moved out, deployed, army, left for; and so on), drawn from Find Help's forty needs and the Honest Answers' questions rather than from any holdout, then measured on a fresh holdout.
+3. **A short "Is it one of these?" step when the score is low or the first three are close**: three area chips and three topics, so a reader who is missed is one tap away rather than three screens. This raises what a reader finds, not the number.
+4. **Ask James before any of these:** an open word-vector table (public-domain or openly licensed vectors for the 20,000 commonest English words) would let "flirts" sit near "tempt" with no model call, but it is a 2 to 4 MB data file whose licence and weight are his decision.
+
+Every holdout so far was written by the same hand that wrote the phrasings. A holdout written by someone else (James, a staff member, or sentences a pastor has heard) would be the truest measure.
+
+### The matcher, as changed
+
+Every change is in `client/src/lib/wisdom-match.ts` (data in `matching.json`) and has a test in `wisdom-match.test.ts` or `WisdomFinder.test.tsx`.
+
+- **Misspellings.** A word of five letters or more that the library does not know (as typed or by stem) is mended to the one matching word nearest it: one edit (a swap of two neighbouring letters counts as one), two for words of ten letters or more, and only when one word is nearest. Short words are never touched, and words known only from framing prose are never a target, so "greif", "anxeity", "freinds" and "lonley" are mended while "made", "across" and "sun" are not.
+- **Rewrites meet a long word typed one letter off** when the rewrite has two words or more and one of them is exact: "pasted away" now reads as "passed away".
+- **Synonyms by stem**, only through a plain inflection ("pastors", "yelled"), so "made" no longer reaches the synonym for "mad".
+- **A concept table** (`concepts` in `matching.json`): illness words, family roles, work and rest, church and its leaders, housing and unfairness, each matched by stem and adding the library's own word. "housing" was left out because it stems to "house" (losing a house is not a question of justice), and the church concept adds "leader" only (adding "church" lifted Submitting to Leaders over a church split).
+- **Safety first.** The rewrites for self-harm, abuse and danger add a safety word (`safety` in `matching.json`); a sentence carrying one puts the help topic first whatever else scores, its related subjects next, Find Help directly under it, and nothing beside it as "just as close". Tested with five new phrasings each of self-harm, abuse and danger. Hitting is read as abuse when a person hits the reader ("my husband hits me"); grief that "still hits me" and a toddler who hits are not.
+- **Never one subject alone; close ones beside the first.** When fewer than three topics score near the best, its related subjects fill the first three. Topics scoring at least 80% of the best are shown beside it as "Just as close", in the same card, instead of in the list under it.
+- **Data:** phrases for holdout6's nine misses (now a tuning set), a church split (holdout4), the credit taken (holdout5), and one safety rewrite ("better off without me") that is a holdout7 sentence's words, added on purpose.
+
+| Set | Before this build | After |
+|---|---|---|
+| cases (74) | 98.6% / 100% | 100% / 100% |
+| holdout (19) | 100% / 100% | 100% / 100% |
+| holdout2 (20) | 100% / 100% | 100% / 100% |
+| holdout3 (15) | 100% / 100% | 100% / 100% |
+| holdout4 (15) | 100% / 100% | 100% / 100% |
+| holdout5 (15) | 73.3% / 93.3% | 80.0% / 100% |
+| holdout6 (25, now tuned for) | 64.0% / 76.0% | 96.0% / 100% |
+| holdout7 (30, the clean set) | 66.7% / 73.3% | 73.3% / 80.0% (70.0% / 76.7% without the safety rewrite) |
+
+holdout7 misses still standing, left unfixed: the guy I'm seeing says religion is for weak people (People-Pleasing first); she ended things and I keep checking her Instagram (Social Media first); I want him to feel what he made me feel (Revenge not in the first three); if my brother is upset I can't rest until I've fixed it (The Need for Control first, Codependency not shown); our youngest left for the army (nothing near Empty Nest); my roommate parties every night (nothing near Going to College); a woman at work flirts with me (nothing near Temptation); what if we made God up (Anger at God before Doubt).
+
+### Whole sentences
+
+Forty-four passages that began or ended mid-sentence now show the BSB sentence they sit in: thirty-seven passages in the first fifty-six topics, three of the seventh build's (Ruth 1:9; Numbers 5:6-7; Ephesians 2:14), and four misread verses (John 2:10 to 2:8-10, Luke 14:26 to 14:25-26, Ephesians 4:26 to 4:26-27, Matthew 5:39 to 5:39-41). Psalm 92:14 is now 92:14-15 on Aging and on Empty Nest. Acts 9:24-25 on Toxic Relationships is narrowed to 9:25 rather than widened to 9:23, whose words about a plot would sit badly on that page. Job 3:20-21 on Suicidal Thoughts had to become 3:20-22, which adds the line about those who rejoice to find the grave; the passage's own framing (lament, and a book that does not end in chapter 3) is unchanged, but James may want to see it. Left: Ecclesiastes 3:4 in Grief's misread layer (its sentence is the whole poem) and John 5:5 (the verse before it is empty in the BSB). A verse ending on a colon or "Selah" is counted whole.
+
+### Twelve topics written in full (80 of 208)
+
+people-pleasing, setting-boundaries, saying-no, loving-your-enemies, when-someone-wont-change (the end of batch 4), then overthinking, fear-and-courage, fear-of-the-future, the-news-and-fear, information-overload, courage, need-for-control (batch 5 in the plan's order). One commit each, each with at least eight everyday phrasings. numbness, mental-exhaustion, sensitivity, peace and restlessness, the rest of batch 5, open the next run.
+
+- Ten or eleven passages each, every "where it stands" written against the chapter's note or plain note; one or two misread verses each (1 Corinthians 10:32-33 and Romans 12:18; Philippians 2:3-4 and Luke 6:30; Luke 10:41-42; Luke 6:27-28 and Romans 12:20; 1 Corinthians 13:7; 2 Corinthians 10:5; 2 Timothy 1:7; Proverbs 16:3; Mark 13:7; Matthew 6:22; Philippians 4:13; Luke 12:18-19).
+- Where Christians differ only on Loving Your Enemies (pacifist, Luther's two kinds of duty, just war, as the plain notes on Luke 6 and Matthew 5 give them, no side taken).
+- Setting Boundaries, Loving Your Enemies and When Someone Won't Change touch abuse or addiction: their whole-Bible sections open with the path to help and they carry care lines word for word; no passage about love, forgiveness, peace or the other cheek is applied to staying in danger. People-Pleasing and The Need for Control keep Find Help in reach. Overthinking, When You Are Afraid and Fear of the Future carry the medical not-advice line; Setting Boundaries the legal one. No phone numbers; nothing on the eternal state of anyone.
+
+### Seen on the served build
+
+The Wisdom Finder used by hand at 390 with ten typed sentences (`/home/user/elite-shots/tools/run8-finder-*`): "my wife says I'm a control freak" shows Marriage Trouble with Talking with Your Spouse and The Need for Control beside it as just as close; the mother's cancer shows Facing a Terminal Diagnosis beside When You Are Seriously Ill; self-harm and abuse sentences put the help topic first with Find Help under it. Two faults found and fixed with tests: grief that "still hits me" set Toxic and Harmful Relationships beside Grief, and a self-harm sentence listed Crude and Cutting Talk under the help topic. The twelve new topic pages at 390 and 1440, day and night: no sideways scroll, every section present, no console errors beyond the local server's missing `/_vercel` scripts and `/api/track`.
+
+### Not done in this run
+
+The proposal above. numbness onward (128 topics). Job in the explorer. Any retirement, rename, merge or listing.
+
+---
+
+## 20. Build 9 (2026-11-20): a measure written by someone else, the finder proposal's first three parts, twelve topics
+
+Retires, renames, merges and re-lists nothing; `toolsList.ts`, `siteCatalog.ts` and the menus are untouched. Ledger rows: `docs/work/elite/tools-ledger.md`, "Ninth build". Screenshots: `/home/user/elite-shots/tools/run9-*`.
+
+### holdout8, and a safety defect it found
+
+Twenty-four sentences written by the run's coordinator, who had not seen the phrasings, each set to the topic written in full that its description names, were committed alone (`668351e7`) before anything was touched. A twenty-fifth (a church split and distrust of pastors) was dropped: Church Hurt is not yet written in full. Baseline: 45.8% first, 62.5% in the first three. holdout8 is never tuned to.
+
+Its self-harm sentence, "sometimes i think everyone would be fine if i just disappeared", put Anxiety first: a safety defect. Fixed at once with general rewrites (wishing to disappear, "fine without me", "everyone would be better off if i", and "want to die", which had not put the help topic first) and tested in five other wordings. Its control sentence, "my husband checks my phone and wont let me see my friends", already put the help topic first, but only by score; other wordings did not. A new `safetyPairs` entry in `matching.json` reads a control word ("checks my phone", "wont let me see", "controls the money", "isolates me" and the like) as danger when a partner word (husband, wife, boyfriend, girlfriend, partner, fiance, spouse) comes before it, so "my dad wont let me see my boyfriend" is not read as abuse. Five other wordings tested; the validator checks every pair. Both sentences now land on the help topic first with Find Help under it, at baseline and after (the control one by score at baseline, by safety now).
+
+### The finder: the proposal's first three parts (the word-vector file was not built)
+
+1. **Each written topic weighed against its own page.** `build-wisdom-index.mjs` weighs every word of each topic written in full (title three times, phrasings twice, every passage's where it stands, the misread layer, the whole-Bible section) with BM25 and writes each topic's 160 strongest words into `finder.json` as `weights`. The matcher adds them at `PAGE_WEIGHT` 0.5, the highest weight that cost nothing on the tuning sets (cases to holdout6; 0, 0.25 and 0.5 tied there, 0.75 and 1 lost). `scripts/lib/wisdom-words.mjs` mirrors the browser's normalize and stem; the test fails if the two disagree on any word. `finder.json` is fetched only by the finder: 227,543 bytes before, 378,574 after the twelve topics (+151 KB raw; 66,868 to 117,200 gzipped).
+2. **A concept table from the site's own lists**: doubt and unbelief, recovery, divorce, waiting for a child, questions of conscience, losing work, why the world suffers, and burnout, hustle and sabbatical added to work and rest, every word taken from Find Help's `askedAs` lists or the Honest Answers' questions, none from a holdout.
+3. **"Is it one of these?"** When the best score is under 12 (`UNSURE_SCORE`), or another topic is as close, and the words met two areas or more, the finder offers up to six areas the words met as plain buttons (44px, `aria-pressed`, in a labelled group); one narrows the subjects to that area (`findInArea`, never empty), and pressing it again shows them all. The line above the chips keeps its words and the narrowing is announced in a status that takes no room, so the chips never move (found on the served build: the first version's longer status line moved them 24px at 390). A sentence that puts the help topic first never gets the step.
+
+| Set | Before this build | After the safety fix | After the three parts | End of build |
+|---|---|---|---|---|
+| cases (74) | 100% / 100% | 100% / 100% | 98.6% / 100% | 98.6% / 100% |
+| holdout (19) | 100% / 100% | 100% / 100% | 100% / 100% | 100% / 100% |
+| holdout2 (20) | 100% / 100% | 100% / 100% | 100% / 100% | 100% / 100% |
+| holdout3 (15) | 100% / 100% | 100% / 100% | 93.3% / 100% | 93.3% / 100% |
+| holdout4 (15) | 100% / 100% | 100% / 100% | 100% / 100% | 93.3% / 100% |
+| holdout5 (15) | 80.0% / 100% | 80.0% / 100% | 86.7% / 100% | 86.7% / 100% |
+| holdout6 (25) | 96.0% / 100% | 96.0% / 100% | 100% / 100% | 100% / 100% |
+| holdout7 (30) | 73.3% / 80.0% | 73.3% / 80.0% | 73.3% / 86.7% | 76.7% / 86.7% |
+| holdout8 (24, clean) | 45.8% / 62.5% | 50.0% / 66.7% | 54.2% / 75.0% | 54.2% / 75.0% |
+
+The aim of 70% first and 90% in the first three is **not met** on holdout8 (54.2% / 75.0%). The chips step is shown on 10 of its 24 sentences; of its 11 first-place misses, 5 are one tap away (the right area offered, the right topic in its first three).
+
+holdout8 misses, left unfixed: my stomach is in knots every sunday night before work (Rest and Sabbath first); i keep bailing my sister out and im drowning (Sibling Conflict first); im so tired of changing my dads diapers and then feeling guilty for being tired (Exhaustion first); the scan came back and its spread (Gossip first, Terminal Diagnosis third); how could god let my son die (Anger at God first; Suicidal Thoughts third, by page weight only, not as a safety result); thirty eight and still no ring, everyone at church pities me (People-Pleasing first, Singleness third); what if the layoffs hit me next (Job Loss first, which is not written in full); my best friend told everyone what i told her in confidence (Deep Friendship first, Keeping a Confidence second, Betrayal third); i havent taken a real vacation since the kids were born (Rest and Sabbath third); i want to be married but the only guy interested doesnt go to church (Longing for Marriage first); im furious at my mother in law (Difficult Family first, Anger second). holdout7 misses still standing: the guy I'm seeing says religion is for weak people; she ended things and I keep checking her Instagram; I want him to feel what he made me feel; if my brother is upset I cannot rest; my roommate parties every night (Going to College now second); what if we made God up (Doubt second); a woman at work flirts with me.
+
+### Twelve topics written in full (92 of 208)
+
+numbness, mental-exhaustion, sensitivity, peace, restlessness, apologizing-well, encouraging-others, keeping-confidence, kindness, gentleness (the end of batch 5), purpose-and-meaning, work-and-burnout (batch 6). One commit each, each with its phrasings in the same commit. Ten passages each; one misread verse each (1 Thessalonians 5:16-18; Matthew 11:28-30; Proverbs 4:23; Matthew 10:34; Isaiah 57:20-21; Psalm 51:4; Hebrews 10:24-25; Proverbs 17:9; Colossians 3:12-13; 2 Timothy 2:24-25; Ecclesiastes 1:2-3; 2 Thessalonians 3:10). No "where Christians differ": no note sets out a division that bears on these subjects. Numbness, mental-exhaustion, keeping-confidence, purpose-and-meaning and work-and-burnout open the whole-Bible section with the path to help; those and kindness and gentleness carry care lines word for word. Medical not-advice on numbness, mental-exhaustion, sensitivity, peace, restlessness, purpose-and-meaning, work-and-burnout; legal on keeping-confidence. No phone numbers; no verse longing for death on any of these pages (1 Kings 19 is opened at verses 5-8, Ecclesiastes 4 at 4-8). Four older phrasings that collapsed to one common word once stop words were dropped ("feel nothing", "feel empty", "cant think", "too tired to think") were rewritten.
+
+### Seen on the served build
+
+The Wisdom Finder used in Playwright at 390 and 1440, day and night, with twelve typed sentences: both holdout8 safety sentences put the help topic first with Find Help under it and no chips; "i feel off lately" and "things at home are hard" offered six areas and a chip pressed by keyboard (Enter) narrowed the subjects with the chips unmoved and no layout shift recorded; "everyone says im too sensitive" showed Sensitivity first with chips; each new topic's own words found it. The twelve topic pages at 390 and 1440, day and night: no sideways scroll, every section present, no console errors beyond the local server's missing `/_vercel` scripts and `/api/track`. Lighthouse 13.6.0, median of three on `/tools/wisdom-finder`: performance 72, accessibility 100, best practices 96, SEO 100, CLS 0 (LCP 4.9 s simulated, the head's lede; the machine was shared and loaded during the runs, so the performance figure is soft).
+
+### Not done in this run
+
+The word-vector file (James to decide). Batch 6 from work-life-balance onward, and batches 7 to 14 (116 topics). Job in the explorer. Any retirement, rename, merge or listing.
+
+---
+
 ## Decisions waiting on James
 
 Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.

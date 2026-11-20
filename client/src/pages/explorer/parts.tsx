@@ -24,6 +24,7 @@ import {
   Rainbow,
   RotateCcw,
   Tent,
+  Users,
   X,
 } from "lucide-react";
 import PlateFrame from "@/components/art/PlateFrame";
@@ -87,7 +88,9 @@ export function ThreadIcon({ id }: { id?: string }) {
         ? Flame
         : id === "promise"
           ? Rainbow
-          : Tent;
+          : id === "nations"
+            ? Users
+            : Tent;
   return <Icon size={18} strokeWidth={1.75} aria-hidden="true" />;
 }
 

@@ -59,9 +59,9 @@ describe("Go deeper", () => {
     expect(requested).not.toContain("/index/chapters/genesis/36.json");
   });
 
-  it("asks for no file for Matthew 8, 14 or 17, which the list leaves out (no 404 in the console)", async () => {
+  it("asks for no file for Matthew 8 or 17, which the list leaves out (no 404 in the console)", async () => {
     const list: Record<string, number[]> = JSON.parse(fs.readFileSync(path.join(PUBLIC, "index/chapters.json"), "utf8"));
-    for (const n of [8, 14, 17]) {
+    for (const n of [8, 17]) {
       expect(list.matthew).not.toContain(n);
       const { container, unmount } = render(<GoDeeper slug="matthew" chapter={n} label={`Matthew ${n}`} />);
       await waitFor(() => expect(container.innerHTML).toBe(""));

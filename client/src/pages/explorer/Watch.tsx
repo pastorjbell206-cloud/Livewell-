@@ -39,6 +39,40 @@ export function FilmMark({
 
 export const WATCH_ID = "watch";
 
+/**
+ * The maps that move, in the order "Watch and learn" lists them. Their count
+ * on the page and in "What the Explorer holds" is this list's length.
+ */
+export const MOVING_MAPS: {
+  href: string;
+  mark: string;
+  title: string;
+  line: Record<Level, string>;
+}[] = [
+  {
+    href: ABRAHAMS_ROAD_PATH,
+    mark: "abraham",
+    title: "Abraham's road",
+    line: {
+      younger:
+        "Follow Abraham from his home in Ur to the land God promised, one place at a time.",
+      older:
+        "From Ur to Haran and into Canaan, down to Egypt and back, to Hebron, Beersheba and the land of Moriah, place by place.",
+    },
+  },
+  {
+    href: TRAVELS_PATH,
+    mark: "church",
+    title: "Paul's travels",
+    line: {
+      younger:
+        "Follow Paul across the sea, one place at a time, and see the churches that began.",
+      older:
+        "Paul's three trips and the voyage to Rome, place by place, and the churches begun and the letters written to them.",
+    },
+  },
+];
+
 export function Watch({
   index,
   level,
@@ -113,48 +147,28 @@ export function Watch({
           <li>
             <h3 className="wl-group__name ex-anchor" id="wl-g-maps">
               Maps that move
-              <Count n={2} what="maps" />
+              <Count n={MOVING_MAPS.length} what="maps" />
             </h3>
             <p className="wl-group__line">
               The places of the Bible, drawn on the map as the story goes.
             </p>
             <ul className="wl-films">
-              <li>
-                <Link href={ABRAHAMS_ROAD_PATH} className="wl-film">
-                  <span className="wl-film__thumb" aria-hidden="true">
-                    <FilmMark mark="abraham" className="ex-roundel" />
-                    <span className="wl-film__play">
-                      <MapPin size={13} strokeWidth={2} />
+              {MOVING_MAPS.map(m => (
+                <li key={m.href}>
+                  <Link href={m.href} className="wl-film">
+                    <span className="wl-film__thumb" aria-hidden="true">
+                      <FilmMark mark={m.mark} className="ex-roundel" />
+                      <span className="wl-film__play">
+                        <MapPin size={13} strokeWidth={2} />
+                      </span>
                     </span>
-                  </span>
-                  <span>
-                    <span className="wl-film__title">Abraham&apos;s road</span>
-                    <span className="wl-film__line">
-                      {level === "older"
-                        ? "From Ur to Haran and into Canaan, down to Egypt and back, to Hebron, Beersheba and the land of Moriah, place by place."
-                        : "Follow Abraham from his home in Ur to the land God promised, one place at a time."}
+                    <span>
+                      <span className="wl-film__title">{m.title}</span>
+                      <span className="wl-film__line">{m.line[level]}</span>
                     </span>
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link href={TRAVELS_PATH} className="wl-film">
-                  <span className="wl-film__thumb" aria-hidden="true">
-                    <FilmMark mark="church" className="ex-roundel" />
-                    <span className="wl-film__play">
-                      <MapPin size={13} strokeWidth={2} />
-                    </span>
-                  </span>
-                  <span>
-                    <span className="wl-film__title">Paul&apos;s travels</span>
-                    <span className="wl-film__line">
-                      {level === "older"
-                        ? "Paul's three trips and the voyage to Rome, place by place, and the churches begun and the letters written to them."
-                        : "Follow Paul across the sea, one place at a time, and see the churches that began."}
-                    </span>
-                  </span>
-                </Link>
-              </li>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </li>
         </ul>

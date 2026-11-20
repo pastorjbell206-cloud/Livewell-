@@ -419,8 +419,10 @@ export interface AbrahamsRoad {
   routeNote: string;
   /** The map's own name for a place, where the book page's name is not the one Genesis uses here (Goshen drawn for Egypt). */
   names?: Record<string, string>;
-  /** Lines the place names keep off ([latitude, longitude] points): the coast, the Jordan and the Dead Sea as the frame draws them. */
+  /** Lines the place names keep off ([latitude, longitude] points): the coast and the Dead Sea as the frame draws them, each with its shadow. */
   avoid?: [number, number][][];
+  /** Rivers the place names keep off, drawn with no shadow: the Jordan. */
+  rivers?: [number, number][][];
   parts: Trip[];
 }
 

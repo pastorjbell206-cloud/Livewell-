@@ -29,6 +29,7 @@ import {
 } from "@/lib/explorer";
 import ExplorerMap from "./ExplorerMap";
 import ExplorerStop from "./ExplorerStop";
+import { MOVING_MAPS } from "./Watch";
 
 vi.mock("@vercel/analytics", () => ({ track: vi.fn() }));
 
@@ -357,6 +358,12 @@ describe("the map", () => {
     expect(within(holds).getByText(`${cards.length} cards`)).toBeTruthy();
     expect(within(holds).getByText(`${threads.length} threads`)).toBeTruthy();
     expect(within(holds).getByText(`${INDEX.stops.length} stops`)).toBeTruthy();
+    // The moving maps are counted from their list, not typed.
+    expect(within(holds).getByText(`${MOVING_MAPS.length} maps`)).toBeTruthy();
+    expect(MOVING_MAPS.map(m => m.title)).toEqual([
+      "Abraham's road",
+      "Paul's travels",
+    ]);
     // Tap two: every film and both maps are links in Watch and learn; every
     // card has a link in the list at the top of Why we believe; every thread
     // is a button in the threads panel.
@@ -1006,6 +1013,7 @@ describe("the Holy Spirit, promise and lamb threads", () => {
     { id: "spirit", broken: "promised", skip: ["fall"] },
     { id: "promise", broken: "waited", skip: ["creation"] },
     { id: "lamb", broken: "points", skip: ["creation"] },
+    { id: "nations", broken: "promised", skip: [] as string[] },
   ];
   for (const c of cases)
     it(`${c.id}: lights the stops it names, broken where its key says, with each line`, async () => {
@@ -1032,6 +1040,20 @@ describe("the Holy Spirit, promise and lamb threads", () => {
         );
       }
     });
+
+  it("a blessing for every nation runs from Genesis 12:3 to Revelation 7:9, with no modern state and no contempt", () => {
+    const t = INDEX.threads.find(x => x.id === "nations")!;
+    expect(t.stops!.abraham.ref).toBe("Genesis 12:3");
+    expect(t.stops!.abraham.line).toContain(
+      "all the families of the earth will be blessed through you"
+    );
+    expect(t.stops!["new-creation"].ref).toContain("Revelation 7:9");
+    const text = JSON.stringify(t);
+    expect(text).not.toMatch(
+      /\b(Israeli|Palestin|Iraq|Iran|Syria|Egyptian state|Jordan(ian)? state|today's|modern)\b/i
+    );
+    expect(text).not.toMatch(/\b(pagan|heathen|wicked nation|godless)\b/i);
+  });
 
   it("the lamb thread gives both readings of Isaiah's servant, and no thread blames a people", () => {
     const lamb = INDEX.threads.find(x => x.id === "lamb")!;

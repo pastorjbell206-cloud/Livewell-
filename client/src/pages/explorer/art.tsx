@@ -478,6 +478,108 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M50,70V44M50,46C42,38 34,32 26,22M50,46C58,38 66,32 74,22M36,32C34,24 34,18 36,12M64,32C66,24 66,18 64,12M50,52C44,48 38,46 30,44M50,50C56,46 62,44 70,42" style={{ strokeWidth: 3 }} />
     </>
   ),
+  /* The Bible, how we got it: a rolled scroll, and an open book with a stitched spine. */
+  "the-bible": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M12,72H50a4,8 0 0 1 0,16H12Z" tone="c" off={1} />
+      <path className="pl-o" d="M12,72a4,8 0 1,0 0,16a4,8 0 1,0 0,-16Z" />
+      <path className="pl-l" d="M12,72a4,8 0 1,0 0,16a4,8 0 1,0 0,-16Z" />
+      <Shape d="M44,66V30C54,26 64,28 70,34C76,28 86,26 96,30V66C86,62 76,64 70,70C64,64 54,62 44,66Z" tone="b" off={1} />
+      <path className="pl-l" d="M70,34V70" />
+      <path className="pl-f" d="M50,40C56,38 62,38 66,42M50,48C56,46 62,46 66,50M50,56C56,54 62,54 66,58M74,42C78,38 84,38 90,40M74,50C78,46 84,46 90,48M74,58C78,54 84,54 90,56" />
+    </>
+  ),
+  /* The king: a crown resting on a shepherd's crook. */
+  "the-king": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M58,84V40C58,28 70,24 74,34" style={{ strokeWidth: 3 }} />
+      <path className="pl-o" d="M30,46V30L38,38L46,24L54,38L62,30V46Z" />
+      <path className="pl-m" d="M30,46V30L38,38L46,24L54,38L62,30V46Z" />
+      <path className="pl-l" d="M30,46V30L38,38L46,24L54,38L62,30V46Z" />
+      <Shape d="M14,76c0,-8 22,-8 22,0c0,7 -22,7 -22,0Z" tone="c" off={0.8} />
+    </>
+  ),
+  /* Does God still love me when I do wrong?: a house with a lit window, and the road home. */
+  "love-when-i-do-wrong": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M54,62V40H86V62Z" tone="c" off={1} />
+      <Shape d="M50,42L70,26L90,42Z" tone="b" off={1} />
+      <path className="pl-o" d="M74,46h8v8h-8Z" />
+      <path className="pl-m" d="M74,46h8v8h-8Z" />
+      <path className="pl-l" d="M74,46h8v8h-8Z" />
+      <path className="pl-l" d="M60,62V52h8v10" />
+      <path className="pl-f" d="M64,64C56,72 40,74 30,78C22,81 14,82 8,84M70,64C64,74 48,78 38,82" />
+    </>
+  ),
+  /* The resurrection: the open door of the tomb with light inside, and the first sheaf. */
+  "the-resurrection": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84V54C26,34 54,30 66,40V84Z" tone="b" off={1.5} />
+      <path className="pl-m" d="M28,84V62a10,10 0 0 1 20,0V84Z" />
+      <path className="pl-l" d="M28,84V62a10,10 0 0 1 20,0V84Z" />
+      <path className="pl-l" d="M76,84C76,66 74,50 72,34M80,84C80,66 80,50 80,32M84,84C84,66 86,50 88,34" />
+      <path className="pl-l" d="M74,64H86" style={{ strokeWidth: 3 }} />
+      <Shape d="M72,36c-3,-5 -3,-12 0,-18c3,6 3,13 0,18ZM80,34c-3,-5 -3,-12 0,-18c3,6 3,13 0,18ZM88,36c-3,-5 -3,-12 0,-18c3,6 3,13 0,18Z" tone="c" off={0.8} />
+    </>
+  ),
+  /* Promises that build: an arch of five stones, its keystone gold. */
+  covenant: h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M32,84L14,84L20.5,63.4L35.2,73.7Z" tone="c" off={0.8} />
+      <Shape d="M35.7,73.1L21.3,62.3L38.2,50L44.1,67Z" tone="c" off={0.8} />
+      <Shape d="M55.9,67L61.8,50L78.7,62.3L64.3,73.1Z" tone="c" off={0.8} />
+      <Shape d="M64.8,73.7L79.5,63.4L86,84L68,84Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M44.8,66.8L39.6,49.5L60.4,49.5L55.2,66.8Z" />
+      <path className="pl-l" d="M44.8,66.8L39.6,49.5L60.4,49.5L55.2,66.8Z" />
+      <path className="pl-f" d="M28,34a22,22 0 0 1 44,0M34,34a16,16 0 0 1 32,0" />
+    </>
+  ),
+  /* Sacrifice and the Lamb: a lamb standing, gold. */
+  "the-lamb": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M30,70V84M40,72V84M56,72V84M64,70V84" />
+      <path className="pl-m" d="M26,58C20,46 34,38 44,40C52,34 66,38 68,48C76,52 74,66 66,68C60,74 32,74 28,68C20,66 18,60 26,58Z" />
+      <path className="pl-l" d="M26,58C20,46 34,38 44,40C52,34 66,38 68,48C76,52 74,66 66,68C60,74 32,74 28,68C20,66 18,60 26,58Z" />
+      <path className="pl-m" d="M66,46C68,36 82,34 84,44C84,50 78,54 72,52C68,51 66,49 66,46Z" />
+      <path className="pl-l" d="M66,46C68,36 82,34 84,44C84,50 78,54 72,52C68,51 66,49 66,46ZM70,40l-6,-5" />
+    </>
+  ),
+  /* Exile and coming home: a road over the hills to a city with its gate open and lit. */
+  "exile-and-home": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M48,62V38h6v-4h5v4h10v-4h5v4h10v-4h5v4h3V62Z" tone="c" off={1} />
+      <path className="pl-m" d="M64,62V52a6,6 0 0 1 12,0V62Z" />
+      <path className="pl-l" d="M64,62V52a6,6 0 0 1 12,0V62Z" />
+      <path className="pl-f" d="M70,62C60,70 36,76 8,82M72,62C66,72 44,80 20,86" />
+      <path className="pl-l" d="M14,66c2,-4 4,-4 6,0M22,70c2,-4 4,-4 6,0" />
+    </>
+  ),
+  /* The kingdom of God: a tree grown from a mustard seed, birds in its branches. */
+  "kingdom-of-god": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M56,84C57,72 57,62 55,54H63C61,62 61,72 62,84Z" tone="c" off={0.8} />
+      <Shape d="M30,52C26,36 42,24 56,28C66,16 86,22 86,36C94,42 90,56 80,56C72,62 44,62 38,58C30,60 26,56 30,52Z" tone="g" off={1} />
+      <path className="pl-l" d="M40,40C42,36 46,36 48,40M70,34C72,30 76,30 78,34" />
+      <path className="pl-m" d="M18,82C18,78 28,78 28,82C28,85 18,85 18,82Z" />
+      <path className="pl-l" d="M18,82C18,78 28,78 28,82C28,85 18,85 18,82Z" />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */

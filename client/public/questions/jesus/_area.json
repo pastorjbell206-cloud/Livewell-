@@ -2,7 +2,7 @@
   "slug": "jesus",
   "title": "The historical Jesus and the resurrection",
   "record": "docs/work/elite/apol-pilot/jesus/index.md",
-  "intro": "Christianity is not a philosophy that happens to have a founder. It stands on claims about a man who lived in Galilee and Judea under Roman rule, who was crucified when Pontius Pilate governed Judea, and who, his followers said within weeks, had been raised from the dead. Paul put the stakes plainly: if Christ has not been raised, the preaching is worthless and so is the faith. That makes the questions in this area different from most. They are questions of history, and they can be argued with the tools historians use on any ancient life: the dates of the sources, who wrote them and why, what outsiders said, and which explanation best accounts for what all sides grant.\n\nThe pages take the hardest forms of the doubts. Some skeptics hold that Jesus never lived at all. Many more grant that he lived and died but doubt that he was buried in a known tomb, and explain the first Christians' conviction that they had seen him alive by grief, by legend or by fraud. Others point to the differences among the four Easter accounts. And some of the most careful, Bart Ehrman among them, argue that whatever happened, a historian working as a historian can never conclude that a miracle took place. Each objection is stated in the form its defenders would sign, with what is true in it granted first.\n\nThe pages also say what history can't do. It can establish that Jesus lived, that he was crucified, and that his followers were soon and sincerely convinced that God had raised him. It can weigh the explanations of those facts. It can't compel faith, and it can't settle by itself whether there is a God who could raise the dead. The church confesses the resurrection of Jesus as an event, bodily and in history, not as a symbol. These pages argue that the confession is reasonable; they don't pretend that argument can take the place of trust.",
+  "intro": "Christianity is not a philosophy that happens to have a founder. It stands on claims about a man who lived in Galilee and Judea under Roman rule, who was crucified when Pontius Pilate governed Judea, and who, his followers said within weeks, had been raised from the dead. Paul put the stakes plainly: if Christ has not been raised, the preaching is worthless and so is the faith. That makes the questions in this area different from most. They are questions of history, and they can be argued with the tools historians use on any ancient life: the dates of the sources, who wrote them and why, what outsiders said, and which explanation best accounts for what all sides grant.\n\nThe pages take the hardest forms of the doubts. Some skeptics hold that Jesus never lived at all. Many more grant that he lived and died but doubt that he was buried in a known tomb, and explain the first Christians' conviction that they had seen him alive by grief, by legend or by fraud. Others point to the differences among the four Easter accounts. And some of the most careful, Bart Ehrman among them, argue that whatever happened, a historian working as a historian can never conclude that a miracle took place. Others ask about Jesus himself: whether the church turned a Jewish preacher into God, whether he ever claimed to be God, whether the virgin birth is a legend, whether he wrongly predicted the end within a generation, and whether the apostles really died for what they said they had seen. Each objection is stated in the form its defenders would sign, with what is true in it granted first.\n\nThe pages also say what history can't do. It can establish that Jesus lived, that he was crucified, and that his followers were soon and sincerely convinced that God had raised him. It can weigh the explanations of those facts. It can't compel faith, and it can't settle by itself whether there is a God who could raise the dead. The church confesses the resurrection of Jesus as an event, bodily and in history, not as a symbol. These pages argue that the confession is reasonable; they don't pretend that argument can take the place of trust.",
   "pieces": [
     {
       "slug": "did-jesus-exist",
@@ -28,6 +28,31 @@
       "slug": "can-historians-affirm-a-miracle",
       "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
       "blurb": "What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of \"least probable,\" and where the question passes from history to the question of God."
+    },
+    {
+      "slug": "how-did-jesus-become-god",
+      "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
+      "blurb": "Ehrman's case in his own words and the texts it rests on, his reading of Paul's pre-existent Christ as a being below God and the angel of the Lord, Paul's letters as the earliest layer, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure."
+    },
+    {
+      "slug": "did-jesus-claim-to-be-god",
+      "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
+      "blurb": "What Jesus does not say, Ehrman's tests of the sayings, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it."
+    },
+    {
+      "slug": "the-virgin-birth",
+      "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
+      "blurb": "*Almah* and *parthenos* handled honestly, what Matthew does with Isaiah and with Hosea, the two accounts from Joseph's side and Mary's, Trypho and Celsus, the stories of Danaë and Augustus read and compared, and the confession of the creeds."
+    },
+    {
+      "slug": "did-jesus-predict-the-end-within-a-generation",
+      "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
+      "blurb": "Schweitzer's prophet and Russell's lecture at full strength, the temple's fall in AD 70, Daniel's Son of Man coming to God, the transfiguration, Matthew 10:23, the confession that the Son does not know the day, and the main Christian readings with no scheme of the end chosen."
+    },
+    {
+      "slug": "did-the-disciples-die-for-their-belief",
+      "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
+      "blurb": "Gibbon's doubt at full strength, how thin the evidence is for most of the Twelve, what is well attested for Peter, Paul and the two Jameses with the sources named, and why the argument shows sincerity, not truth."
     }
   ],
   "words": [
@@ -42,6 +67,14 @@
     {
       "term": "Inference to the best explanation",
       "meaning": "the way historians argue, by asking which account explains the most of the agreed evidence with the least strain."
+    },
+    {
+      "term": "Christology",
+      "meaning": "what Christians believe and teach about who Jesus is; an exaltation christology speaks of God raising Jesus to a high place, an incarnation christology of a Son who existed before he became human."
+    },
+    {
+      "term": "Son of Man",
+      "meaning": "the phrase Jesus uses of himself in all four Gospels; in Aramaic it can mean simply a human being, and in Daniel 7:13-14 it names the figure who comes with the clouds and receives everlasting dominion."
     },
     {
       "term": "Criterion of embarrassment",
