@@ -1241,3 +1241,391 @@ h3.ex-panel__title,
   padding-top: 8px;
   border-top: 1px solid var(--border);
 }
+
+/* ── Paul's travels (/study/explorer/pauls-travels) ──────────────────────
+   The Acts book page's "mediterranean" frame (BookMap's FrameArt), cropped
+   to each trip. The frame's own lines keep their width at any crop
+   (non-scaling); the route, the marks and the names are sized in --tv-u, a
+   hundredth of the view's width, so a trip looks the same however close in
+   the view sits. Mustard is the one mark of where the reader is. */
+.tv-views {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1.5px solid var(--ink);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin: 0 0 var(--s-3);
+  max-width: 100%;
+}
+.tv-views button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 0;
+  background: var(--card);
+  color: var(--ink);
+  font-family: var(--U);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.tv-views button + button {
+  border-left: 1.5px solid var(--ink);
+}
+.tv-views button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bone);
+}
+.tv-views button:focus-visible {
+  outline: 2px solid var(--mustard);
+  outline-offset: -5px;
+}
+.tv-trips {
+  border: 0;
+  margin: 0 0 var(--s-3);
+  padding: 0;
+  min-width: 0;
+}
+.tv-trips__options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+@media (min-width: 900px) {
+  .tv-trips__options {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.tv-trips__opt {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.tv-trips__opt input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.tv-trips__opt span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 56px;
+  padding: 6px 12px;
+  border: 1.5px solid var(--art-ink);
+  background: var(--card);
+  color: var(--ink);
+  font-family: var(--U);
+  line-height: 1.3;
+}
+.tv-trips__opt strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+.tv-trips__opt small {
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+.tv-trips__opt input:checked + span {
+  background: var(--ink);
+  color: var(--bone);
+}
+.tv-trips__opt input:checked + span small {
+  color: var(--bone);
+}
+.tv-trips__opt input:focus-visible + span {
+  outline: 3px solid var(--mustard);
+  outline-offset: 2px;
+}
+.tv-tripline {
+  font-family: var(--B);
+  font-size: 16.5px;
+  line-height: 1.55;
+  max-width: 70ch;
+  margin: 0 0 var(--s-3);
+}
+.tv-grid {
+  display: grid;
+  gap: var(--s-4);
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .tv-grid {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+}
+.tv-fig {
+  margin: 0;
+  min-width: 0;
+}
+.tv-fig__frame {
+  border: 1.5px solid var(--art-ink);
+  padding: 5px;
+  background: var(--art-paper);
+}
+.tv-fig__frame:focus-visible {
+  outline: 3px solid var(--mustard);
+  outline-offset: 2px;
+}
+.tv-fig svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 523 / 292;
+  border: 0.75px solid var(--art-ink);
+}
+.tv-fig figcaption {
+  margin: 8px 2px 0;
+  font-family: var(--U);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  max-width: 70ch;
+}
+.tv-frame :is(path, polygon, polyline, line, rect, circle) {
+  vector-effect: non-scaling-stroke;
+}
+.tv-frame .bk-map__region {
+  font-family: var(--U);
+  font-size: calc(var(--tv-u) * 1.5px);
+  letter-spacing: 0.18em;
+  fill: var(--ink-muted);
+  paint-order: stroke;
+  stroke: var(--art-paper);
+  stroke-width: calc(var(--tv-u) * 0.5px);
+}
+.tv-frame .bk-map__river {
+  fill: none;
+  stroke: var(--art-ink);
+  stroke-width: 1.2;
+}
+.tv-leg {
+  fill: none;
+  stroke: var(--art-ink);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.tv-leg--ahead {
+  opacity: 0.35;
+}
+.tv-reveal {
+  fill: none;
+  stroke: white; /* a mask: white is what shows, not a colour on the page */
+  stroke-linecap: round;
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 1;
+}
+.tv-reveal.is-on {
+  stroke-dashoffset: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .tv-reveal {
+    transition: stroke-dashoffset 1.1s var(--motion-ease);
+  }
+  .tv-ring {
+    transition: opacity 0.4s var(--motion-ease);
+  }
+}
+.tv-place,
+.tv-church {
+  cursor: pointer;
+}
+.tv-place[data-state="ahead"] rect {
+  opacity: 0.6;
+}
+.tv-ring {
+  fill: none;
+  stroke: var(--mustard);
+}
+.tv-name {
+  font-family: var(--U);
+  font-size: calc(var(--tv-u) * 3.1px);
+  font-weight: 500;
+  fill: var(--art-ink);
+  paint-order: stroke;
+  stroke: var(--art-paper);
+  stroke-width: calc(var(--tv-u) * 0.7px);
+  stroke-linejoin: round;
+}
+@media (min-width: 900px) {
+  .tv-name {
+    font-size: calc(var(--tv-u) * 2.2px);
+  }
+}
+.tv-place[data-state="ahead"] .tv-name {
+  fill: var(--ink-muted);
+}
+.tv-place[data-state="here"] .tv-name {
+  font-weight: 700;
+}
+.tv-side {
+  display: grid;
+  gap: var(--s-3);
+  min-width: 0;
+}
+.tv-card {
+  padding: var(--s-3);
+  background: var(--card);
+  border: 1.5px solid var(--art-ink);
+  box-shadow: 4px 4px 0 var(--art-clay);
+  min-height: 15rem;
+}
+.tv-card h3 {
+  margin: 0 0 6px;
+  font-family: var(--F);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.tv-count {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  margin: 0 0 6px;
+  font-family: var(--U);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.tv-tag {
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 2px 8px;
+  border: 1px solid var(--borderdk);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+}
+.tv-text {
+  margin: 0 0 8px;
+  font-family: var(--font-reading);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.tv-refs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 18px;
+  margin: 0;
+  font-family: var(--U);
+  font-size: 15px;
+}
+.tv-refs > a,
+.tv-refs .st-verseref {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--mustard);
+  text-underline-offset: 3px;
+}
+.tv-letters {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 8px;
+}
+.tv-letters a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-family: var(--U);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--mustard);
+  text-underline-offset: 3px;
+}
+.tv-letters__note {
+  display: block;
+  font-family: var(--B);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+.tv-noletter {
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-family: var(--U);
+  font-size: 14px;
+  color: var(--ink-muted);
+}
+.tv-step {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tv-step .btn {
+  min-height: 48px;
+  gap: 8px;
+}
+.tv-step .btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.tv-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+.tv-list button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  padding: 4px 10px;
+  border: 1.5px solid var(--art-ink);
+  background: var(--card);
+  color: var(--ink);
+  font-family: var(--U);
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: left;
+  cursor: pointer;
+}
+.tv-list button[data-past] {
+  background: var(--bone-warm);
+}
+.tv-list button[aria-current="step"] {
+  background: var(--ink);
+  color: var(--bone);
+}
+.tv-list button:focus-visible {
+  outline: 3px solid var(--mustard);
+  outline-offset: 2px;
+}
+.tv-list__n {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -576,7 +576,20 @@
       "slug": "sixty-six-books",
       "title": "How the 66 books fit together",
       "group": "story",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "The Bible is a whole library. Watch the books find their shelves, and see how they tell one story.",
+        "older": "The Bible as a library of sixty-six books in seven pictures: two testaments, the kinds of writing on each shelf, and the one story that runs through them all."
+      },
+      "mark": "sixty-six-books",
+      "frames": 7,
+      "stops": [
+        "creation",
+        "new-creation"
+      ],
+      "cards": [
+        "bible"
+      ]
     },
     {
       "slug": "holy-spirit",
@@ -777,7 +790,19 @@
       "slug": "the-church",
       "title": "What the church is",
       "group": "beliefs",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "The church is not first a building. It is people, gathered by God's Spirit around Jesus. Seven pictures of what that means.",
+        "older": "What the church is, in seven pictures: a people, one body, living stones, a family, gathered and sent, and what churches share where they differ."
+      },
+      "mark": "the-church",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [
+        "church"
+      ]
     },
     {
       "slug": "baptism-and-supper",
@@ -861,7 +886,19 @@
       "slug": "did-jesus-come-back-to-life",
       "title": "Did Jesus really come back to life?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Christians say Jesus died and came back to life. Is it true? An honest look at what happened, in seven pictures.",
+        "older": "The historical case for the resurrection in seven pictures: the facts nearly every historian grants, the other explanations, and what history can and cannot show."
+      },
+      "mark": "did-jesus-come-back-to-life",
+      "frames": 7,
+      "stops": [
+        "cross"
+      ],
+      "cards": [
+        "resurrection"
+      ]
     },
     {
       "slug": "when-we-die",

@@ -26,6 +26,7 @@ import InnerHead from "@/components/art/InnerHead";
 import { ResultActions, ResultNext } from "@/components/tool-shell";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { useFavorites } from "@/hooks/useFavorites";
+import { followHash } from "@/lib/followHash";
 import { fetchEntry, readSavedTopics, toggleSavedTopic, verseFavoriteId, SAVED_VERSES_KEY, chapterName, AREA_NAMES, type Entry, type EntryVerse } from "@/lib/wisdom";
 import VerseCard from "./wisdom/VerseCard";
 import "./wisdom/wisdom.css";
@@ -89,6 +90,13 @@ export default function WisdomTopic() {
       stale = true;
     };
   }, [id, validId, nonce]);
+
+  // A search result can open a section of the page (/wisdom/<id>#misread); the entry loads after the
+  // browser has looked for that section, so bring it into view once the page is there.
+  const ready = entry !== null && entry !== "missing";
+  useEffect(() => {
+    if (ready && window.location.hash) followHash(window.location.hash);
+  }, [ready, id]);
 
   if (failed) {
     return (

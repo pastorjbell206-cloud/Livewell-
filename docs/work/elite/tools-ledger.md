@@ -1,6 +1,6 @@
 # Tools ledger: the claims in the rebuilt Wisdom Finder
 
-Every factual claim the 2026-11-20 build added (the twelve topics written in full in `client/public/wisdom/deep/`, the finder and topic pages), with where it was checked. Scripture is not listed: every verse and prayer is filled from the BSB in `client/public/bible/ch/` by reference at build time, and `scripts/validate-wisdom.mjs` holds every verse and every quotation of three words or more in the prose to the BSB word for word. "Note" means the site's own Study Bible note for that chapter (`client/public/bible/notes/<book>/<n>.json`, its `verses/` and `plain/` files); where a note exists for a passage, the topic's sentence about the passage was written to agree with it.
+Every factual claim the 2026-11-20 builds added (the twenty-six topics written in full in `client/public/wisdom/deep/`, the finder and topic pages), with where it was checked. Scripture is not listed: every verse and prayer is filled from the BSB in `client/public/bible/ch/` by reference at build time, and `scripts/validate-wisdom.mjs` holds every verse and every quotation of three words or more in the prose to the BSB word for word. "Note" means the site's own Study Bible note for that chapter (`client/public/bible/notes/<book>/<n>.json`, its `verses/` and `plain/` files); where a note exists for a passage, the topic's sentence about the passage was written to agree with it.
 
 | Topic | Claim | Checked against |
 |---|---|---|
@@ -77,7 +77,103 @@ Every factual claim the 2026-11-20 build added (the twelve topics written in ful
 | suffering | Romans 8:28: "all things" include the sufferings named; the good is conformity to Christ | note romans/8 "hard" answer and verse notes 28-29 |
 | suffering | Psalm 13 asks "How long" four times | Psalm 13:1-2 (BSB) |
 | suffering | The Reformed tradition teaches God ordains all that happens without being the author of evil | Westminster Confession III.1 |
+| money | Matthew 6:19-24 turns from religious practice to possessions; money as a master demanding loyalty | note matthew/6 verse notes 19, 24 |
+| money | Luke 12: an inheritance dispute leads to the rich fool | Luke 12:13-21; note luke/12 verse 15 |
+| money | Deuteronomy 8 warns that plenty, not poverty, makes Israel forget | note deuteronomy/8 summary |
+| money | Ecclesiastes 5: officials exploit the poor; the lover of money is never satisfied; naked we depart | note ecclesiastes/5 summary; Ecclesiastes 5:8-15 |
+| money | 1 Timothy 6: teachers treating religion as gain; autarkeia among Stoics and Cynics; Ephesian benefactors funding buildings for honor | note 1-timothy/6 cultural |
+| money | 1 Timothy 6:10: philarguria, the love of money, a root of every kind of evil, not money itself | note 1-timothy/6 words (G5365) |
+| money | Mark 10: Jesus loves the rich man before naming the one thing lacking | note mark/10 verse 21 |
+| money | Zacchaeus repays fourfold; Jesus invites himself first | note luke/19 verse 8; Luke 19:5 |
+| money | 2 Corinthians 9: the collection for Jerusalem; the harvest is capacity for generosity, not wealth | note 2-corinthians/9 summary and "hard" |
+| money | Malachi 3:10: tithes fed Levites and the poor; blessing is rain and harvest; no prosperity reading | note malachi/3 cultural and "hard" |
+| money | Proverbs are generalizations; 13:23 names injustice | note proverbs/10 "hard"; Proverbs 13:23 |
+| money | Monastic vows of poverty; Anabaptist simple living | general knowledge of the traditions, described not quoted |
+| parenting-struggles | Psalm 127: "house" means household; song of ascents | note psalms/127 cultural; heading |
+| parenting-struggles | Deuteronomy 6: words on the heart first | note deuteronomy/6 verse 6 |
+| parenting-struggles | Roman fathers held legal power; Paul's limit on provoking children | note ephesians/6 cultural |
+| parenting-struggles | Household codes address children directly | note colossians/3 cultural |
+| parenting-struggles | Isaac and Rebekah's favorites lead to Genesis 27 | note genesis/25 verse 28 |
+| parenting-struggles | Mary and Joseph a day's travel before missing Jesus; three days searching | Luke 2:44-46; note luke/2 verse 48 |
+| parenting-struggles | Jesus "indignant" only here in the Gospels | note mark/10 verse 14 |
+| parenting-struggles | Proverbs 13:24: shevet as staff and scepter; used of adult fools; both views on physical discipline; no license for injury | note proverbs/13 "hard" and words (H7626) |
+| parenting-struggles | "Spare the rod, spoil the child" is not a Bible sentence | BSB search of the repo text |
+| parenting-struggles | Psalm 127:3-5: heritage, the city gate, grown sons as protection; no measure of faith by number | note psalms/127 cultural and "hard"; psalms/plain/127 |
+| parenting-struggles | Infant baptism in Catholic, Orthodox, Lutheran, Anglican, Methodist and Reformed churches; dedication and believer's baptism in Baptist churches | general knowledge of church practice, described not quoted |
+| sexual-purity | Genesis 2 ends naked and unashamed; shame enters in 3:7 | note genesis/2 verse 25 |
+| sexual-purity | Song of Songs read as allegory and as human love; Akiva's view | note song-of-solomon/1 "hard" (not repeated on the page) |
+| sexual-purity | Greco-Roman double standard; Paul's equal standard | note 1-thessalonians/4 cultural |
+| sexual-purity | Corinthian slogans; slave market; Strabo doubted | note 1-corinthians/6 cultural; 1-corinthians/plain/6 |
+| sexual-purity | 1 Corinthians 7: every obligation mutual, unusual in ancient writing | note 1-corinthians/7 literary |
+| sexual-purity | John 7:53-8:11 missing from the earliest manuscripts | note john/8 historical |
+| sexual-purity | Matthew 5:28: a look with a purpose; responsibility on the one who looks; temptation not sin | matthew/plain/5 27-30 |
+| sexual-purity | Historic and majority reading; affirming reading of 1 Corinthians 6:9 | note 1-corinthians/6 "hard" |
+| sexual-purity | Catholic teaching rejects artificial contraception and permits natural family planning | general knowledge (Humanae Vitae, 1968, not opened or quoted) |
+| justice-and-the-poor | Micah 6 as covenant lawsuit; false weights in the market | note micah/6 cultural |
+| justice-and-the-poor | The city gate as village court in Amos | note amos/5 cultural |
+| justice-and-the-poor | Isaiah 58: fasting while exploiting workers | note isaiah/58 summary |
+| justice-and-the-poor | Leviticus 19: gleaning; impartiality in both directions | note leviticus/19 cultural |
+| justice-and-the-poor | Jehoiakim's palace built with unpaid labor; Josiah | note jeremiah/22 summary |
+| justice-and-the-poor | Luke 4 as Jesus' own mission statement | note luke/4 verse 18 |
+| justice-and-the-poor | The rich man never acts at the gate | note luke/16 verse 20 |
+| justice-and-the-poor | Matthew 26:11 is about timing; echoes Deuteronomy 15:11 | note matthew/26 verse 11; Deuteronomy 15:11 compared |
+| justice-and-the-poor | Two readings of "the least of these" | note matthew/25 "hard" |
+| submitting-to-leaders | Hebrews 13:17 is cooperative trust, not blind submission; leaders who harm are not protected | note hebrews/13 "hard" |
+| submitting-to-leaders | 1 Peter 5: Peter as fellow elder | note 1-peter/5 summary |
+| submitting-to-leaders | Ezekiel 34's shepherds are Israel's rulers | note ezekiel/34 summary |
+| submitting-to-leaders | Accusations against elders need witnesses; those who persist rebuked publicly | 1 Timothy 5:19-21 |
+| submitting-to-leaders | Paul opposed Peter at Antioch | note galatians/2 verse 11 |
+| submitting-to-leaders | Romans 13 read as the site's note reads it | note romans/13 "hard" |
+| submitting-to-leaders | Psalm 105:15's anointed are the wandering patriarchs | psalms/plain/105 1-15 |
+| submitting-to-leaders | Church order: bishops, elders, congregation; Catholic and Orthodox apostolic succession | note hebrews/13 "hard" (structures named); general knowledge of polity, described not quoted |
+| rest-and-sabbath | The Sabbath list covers servants and foreigners | note exodus/20 verse 10 |
+| rest-and-sabbath | Deuteronomy gives the exodus as the reason | Deuteronomy 5:15 |
+| rest-and-sabbath | The seventh day is the first thing Scripture calls holy | BSB Genesis 1-2 read through |
+| rest-and-sabbath | Psalm 46:10: harpu, let go; set in war | psalms/plain/46 8-11 |
+| rest-and-sabbath | Mark 2:27: the Sabbath a gift for human good | note mark/2 verse 27 |
+| rest-and-sabbath | Three views on the Sabbath; Westminster Confession 1646 | note hebrews/4 "hard" |
+| gossip-and-the-tongue | Proverbs 18:8 repeated at 26:22 | BSB text compared |
+| gossip-and-the-tongue | James' images (bit, rudder, fire) from daily life | note james/3 cultural |
+| gossip-and-the-tongue | Matthew 12: the Pharisees' slander about Beelzebul | note matthew/12 verse 34 |
+| gossip-and-the-tongue | Clothing imagery in Ephesians 4 | note ephesians/4 cultural |
+| suicidal-thoughts | Elijah: rest and food before words; not criticized | note 1-kings/19 "hard" |
+| suicidal-thoughts | Job 3 not condemned; book does not end there | note job/3 "hard" |
+| suicidal-thoughts | Psalm 88 never turns to confidence; still calls God "my salvation" | note psalms/88 "hard" |
+| suicidal-thoughts | Matthew 12:18-21 quotes Isaiah 42:1-4 | BSB text compared |
+| depression | Psalm 42: loves God and still low | psalms/plain/42 "hard" |
+| depression | Psalm 102 heading and symptoms | psalms/plain/102 |
+| depression | Jeremiah 20: beaten, stocks, curses birth | note jeremiah/20 summary |
+| depression | Titus' arrival comforted Paul | note 2-corinthians/7 summary |
+| depression | Nehemiah 8: weeping at the law; feast day; portions to those without | note nehemiah/8 cultural and literary |
+| depression | Biblical counseling and integrated care as two approaches | general knowledge, described without names or quotation |
+| despair-and-hope | Ezekiel 37 answers a proverb of despair | note ezekiel/37 verse 11 |
+| despair-and-hope | Emmaus "we were hoping" | note luke/24 verse 21 |
+| despair-and-hope | Abraham's hope, Genesis 15:5 | note romans/4 verse 18 |
+| despair-and-hope | Hebrews 6: anchor behind the curtain | note hebrews/6 verse 19 |
+| self-hatred | Genesis 1:27 breaks into poetry; both sexes bear the image | note genesis/1 verse 27 |
+| self-hatred | Romans 8:1 "no condemnation" a law-court word; not a reward | romans/plain/8 |
+| self-hatred | Godly and worldly sorrow | 2-corinthians/plain/7 8-12 |
+| self-hatred | Only Luke records the look; Jesus prayed for Peter | note luke/22 verse 61; Luke 22:32 |
+| self-hatred | Three denials answered by three confessions | note john/21 verse 17 |
+| self-hatred | Three readings of the "I" of Romans 7 | romans/plain/7 14-25 "hard" |
+| toxic-relationships | Hagar: harm told not approved; the command to return is not for anyone today | genesis/plain/16 1-6, 7-12 |
+| toxic-relationships | "Turn the other cheek" is about revenge, not abuse; John 18:23; Acts 22:25 | matthew/plain/5 38-42 "hard" |
+| toxic-relationships | Romans 12:18: peace takes two; no call to stay in danger | romans/plain/12 14-21 |
+| toxic-relationships | Divorce views: Catholic, Orthodox, Protestant; abuse counted by many | matthew/plain/19; 1-corinthians/plain/7 |
+| addiction | Proverbs 23's portrait of a man ruined by wine | note proverbs/23 summary |
+| addiction | John 8: slave and son | note john/8 verse 34 |
+| addiction | Romans 6: sin as a would-be king | note romans/6 verse 12 |
+| addiction | 2 Corinthians 5:17 in Greek; two senses of new creation | 2-corinthians/plain/5 11-17 |
+| alcohol-and-drinking | Wine, oil and bread the three crops | psalms/plain/104 10-23 |
+| alcohol-and-drinking | Dionysus and drinking parties in Ephesus | note ephesians/5 cultural |
+| alcohol-and-drinking | Wine in ancient medicine | note 1-timothy/5 cultural |
+| alcohol-and-drinking | Real wine at Cana; no approval of drunkenness; wine mixed with water | john/plain/2 1-5, 6-11 |
+| alcohol-and-drinking | Rechabites held up as faithful | note jeremiah/35 summary |
+| alcohol-and-drinking | Abstinence taught or encouraged in Baptist, Methodist, Holiness and Pentecostal churches; moderation in Catholic, Orthodox, Lutheran, Anglican, Reformed | general knowledge of church practice, described not quoted |
+| all fourteen | Care lines word for word from: psalms/plain/40, 69, 88, 102; 2-corinthians/plain/1; romans/plain/7, 12; genesis/plain/34; john/plain/2, 13; matthew/plain/18; 1-corinthians/plain/5 | `scripts/validate-wisdom.mjs` checks each line against its file |
 | all | Care lines on heavy subjects are word for word from the plain notes: psalms/plain/6, 88, 130; genesis/plain/16 | `scripts/validate-wisdom.mjs` checks each line against its source file |
 | finder | The Berean Standard Bible is in the public domain | as recorded in tools-plan.md section 1 (berean.bible, 30 April 2023) |
 
 Not checked outside the repo in this run: the Westminster, Baptist Faith and Message, Methodist and Catholic Catechism references were cited from knowledge of those documents and should be opened before any of them is quoted; the topic pages describe their positions and quote none of them.
+
+Second build (2026-11-20): the general-knowledge rows above (monastic and Anabaptist practice, baptism and church order by tradition, Catholic teaching on contraception, abstinence and moderation by tradition, the two counseling approaches) describe positions without quoting any document, and none was opened in this run.

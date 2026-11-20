@@ -12,6 +12,14 @@
  * holdout, not looked at while they were written, is the honest number):
  *   cases   (74)  top 1 100%   top 3 100%
  *   holdout (19)  top 1 84.2%  top 3 100%
+ * On 2026-11-20 (second build) twenty more sentences, holdout2, were written
+ * before matching.json was touched, and measured: top 1 65.0%, top 3 80.0%.
+ * Then four phrases were added for known misses, three of them holdout
+ * sentences ("best friend lied", "cheat on my diet", "just retired and feel
+ * useless") and one outside it ("boss humiliated me"). After that:
+ *   holdout (19)  top 1 100%  top 3 100% (no longer a clean holdout: three of
+ *                 its sentences were tuned for)
+ *   holdout2 (20) top 1 65.0% top 3 80.0% (untouched; the honest number)
  * The floors below sit under those, so a change to the data that makes the
  * finder worse fails here by name.
  */
@@ -24,6 +32,7 @@ const index: unknown = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../..
 const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match.fixture.json"), "utf8")) as {
   cases: { q: string; expect: string[] }[];
   holdout: { q: string; expect: string[] }[];
+  holdout2: { q: string; expect: string[] }[];
 };
 
 if (!isFinderIndex(index)) throw new Error("finder.json is not a finder index");
@@ -47,7 +56,7 @@ function rate(cases: { q: string; expect: string[] }[]) {
 describe("wisdom matcher", () => {
   it("has at least 60 plain sentences, every expected topic real", () => {
     const ids = new Set(index.topics.map((t) => t.id));
-    const all = [...fixture.cases, ...fixture.holdout];
+    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2];
     expect(all.length).toBeGreaterThanOrEqual(60);
     for (const c of all) for (const id of c.expect) expect(ids.has(id), `${c.q}: ${id}`).toBe(true);
   });
@@ -55,15 +64,20 @@ describe("wisdom matcher", () => {
   it("puts the right topic first and in the first three (reported)", () => {
     const cases = rate(fixture.cases);
     const holdout = rate(fixture.holdout);
+    const holdout2 = rate(fixture.holdout2);
     console.info(
       `[wisdom-match] cases ${cases.n}: top 1 ${(cases.top1 * 100).toFixed(1)}%, top 3 ${(cases.top3 * 100).toFixed(1)}%; ` +
         `holdout ${holdout.n}: top 1 ${(holdout.top1 * 100).toFixed(1)}%, top 3 ${(holdout.top3 * 100).toFixed(1)}%` +
-        (holdout.misses.length ? `\n  holdout misses: ${holdout.misses.join("\n  ")}` : ""),
+        (holdout.misses.length ? `\n  holdout misses: ${holdout.misses.join("\n  ")}` : "") +
+        `\n[wisdom-match] holdout2 ${holdout2.n}: top 1 ${(holdout2.top1 * 100).toFixed(1)}%, top 3 ${(holdout2.top3 * 100).toFixed(1)}%` +
+        (holdout2.misses.length ? `\n  holdout2 misses: ${holdout2.misses.join("\n  ")}` : ""),
     );
     expect(cases.top1).toBeGreaterThanOrEqual(0.9);
     expect(cases.top3).toBeGreaterThanOrEqual(0.95);
     expect(holdout.top1).toBeGreaterThanOrEqual(0.75);
     expect(holdout.top3).toBeGreaterThanOrEqual(0.9);
+    expect(holdout2.top1).toBeGreaterThanOrEqual(0.6);
+    expect(holdout2.top3).toBeGreaterThanOrEqual(0.75);
   });
 
   it("does not force a match on nonsense", () => {

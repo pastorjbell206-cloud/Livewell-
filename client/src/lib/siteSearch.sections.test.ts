@@ -64,3 +64,17 @@ describe("search finds the site's own main things", () => {
     for (const h of heresies) expect(h.blurb).toMatch(/^A teaching the church answered and rejected/);
   });
 });
+
+describe("search reaches the Wisdom Finder's deep sections", () => {
+  it.each([
+    ["spare the rod", "/wisdom/parenting-struggles#misread"],
+    ["touch not my anointed", "/wisdom/submitting-to-leaders#misread"],
+    ["the poor you will always have with you", "/wisdom/justice-and-the-poor#misread"],
+  ])("%s opens %s first", (query, href) => {
+    expect(first(query)).toBe(href);
+  });
+
+  it("still opens a topic itself before its sections", () => {
+    expect(first("wayward child")).toBe("/wisdom/wayward-child");
+  });
+});
