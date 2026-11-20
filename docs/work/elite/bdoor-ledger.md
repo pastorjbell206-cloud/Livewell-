@@ -10481,3 +10481,26 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Third warning begins; nōthros ‘you have become’; stoicheia; milk and solid food common image (1 Corinthians 3:1-2); gumnazō | 11-14 | verses/5.json (11, 12, 13-14); chapter deep note `cultural` | Repository |
 | ‘Oracles of God’ the phrase of Romans 3:2 | 11-14 | verses/5.json (12) | Repository; BSB |
 | 1 Kings 3:9; Psalm 34:8 | 11-14 | BSB | BSB text |
+
+## The plain notes on Hebrews 6 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Leaving’ like a builder leaving a foundation; three pairs; pherōmetha ‘let us be carried’; ‘if God permits’ | 1-3 | verses/6.json (1-2, 3) | Repository |
+| Foundations rooted in Judaism (washings, laying on of hands, resurrection, judgment); ‘baptisms’ plural, not the usual word | 1-3 | Chapter deep note `historical` | Repository |
+| Ezekiel 18:30; Genesis 15:6; Leviticus 1:4; Numbers 27:23; Daniel 12:2 | 1-3 | BSB | BSB text |
+| One group described five ways; ‘enlightened’ used of the readers (10:32); powers = miracles (2:4); parapiptō only here | 4-8 | verses/6.json (4, 5, 6); chapter deep note `words` | Repository |
+| Burning a worthless field; thorns and thistles (Genesis 3:17-18) | 4-8 | Chapter deep note `cultural`; BSB | Repository; BSB text |
+| Tertullian-era use: serious sins after baptism unforgivable (Tertullian not named) | 4-8 | Chapter deep note `historical` | Repository |
+| Readings: never regenerated; means of perseverance; hypothetical; Arminian and Wesleyan (final deliberate apostasy); Catholic and Orthodox (grace lost and restored); ‘while they are crucifying’ | 4-8 | Chapter deep note `hard`; verses/6.json (6) | Repository, no side (scholars not named; Free Grace view omitted for length) |
+| Turning against Christ himself, not everyday failure; concern a sign of tenderness | 4-8 | Chapter deep note `hard` | Repository |
+| Care line ‘If you are afraid that you have fallen away ...’ | 4-8 | galatians/plain/5.json (1-6) | Word for word |
+| Isaiah 5:2; Psalm 34:8 | 4-8 | BSB | BSB text |
+| ‘Beloved’ only here in Hebrews; perfect ‘we are persuaded’; Reformed and Arminian readings of verse 9 | 9-12 | verses/6.json (9) | Repository, no side |
+| Serving and still serving; nōthros repeats 5:11 | 9-12 | verses/6.json (10, 11-12) | Repository |
+| Deuteronomy 32:4; Proverbs 19:17; Psalm 27:14 | 9-12 | BSB | BSB text |
+| Oaths in the ancient world; God swore by himself; anchor an early Christian symbol in the catacombs; curtain; prodromos | 13-20 | Chapter deep note `cultural`; verses/6.json (16-18, 19-20) | Repository |
+| Genesis 22:16-17; Numbers 35:11; Leviticus 16:12; Psalm 110:4 | 13-20 | BSB | BSB text |
+| Oaths: Jesus' teaching on two levels of truth; Anabaptists of the 1500s; most churches; Hebrews 6:17 cited | 13-20 | matthew/plain/5.json (33-37 `hearers`, `hard`) | Repository, no side |
