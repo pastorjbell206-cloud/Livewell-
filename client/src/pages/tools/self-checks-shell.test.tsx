@@ -7,6 +7,7 @@
  * a statement's answers, the arrow keys move between them, Space picks, and
  * the number keys pick the answer with that number.
  */
+import type { ComponentType } from "react";
 import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
 import { render, screen, fireEvent, cleanup, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
@@ -17,7 +18,7 @@ import EmotionalHealth from "./EmotionalHealth";
 import FinancialHealth from "./FinancialHealth";
 import WholeLifeAssessment from "../life/WholeLifeAssessment";
 
-function show(path: string, Page: () => JSX.Element) {
+function show(path: string, Page: ComponentType) {
   const { hook } = memoryLocation({ path });
   return render(
     <TestProviders>

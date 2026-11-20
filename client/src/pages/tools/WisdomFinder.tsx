@@ -364,6 +364,15 @@ export default function WisdomFinder() {
                   </p>
                 </div>
               )}
+              <div className="wz-sec">
+                <h3 className="wz-sec__kicker">Proverbs by theme</h3>
+                <p className="wf-results__count" style={{ margin: "0 0 8px" }}>
+                  All 915 verses of Proverbs gathered under twenty themes, a chapter for each day of the month, and the Study Bible's notes beside each chapter.
+                </p>
+                <Link href="/tools/wisdom-books" className="wz-link">
+                  Open the Wisdom Books Explorer
+                </Link>
+              </div>
               {data && (
                 <details className="wf-az wz-sec">
                   <summary>Every subject, A to Z ({data.topics.length})</summary>
