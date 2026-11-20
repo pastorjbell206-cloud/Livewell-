@@ -8769,3 +8769,142 @@ No new search. Scripture is the BSB in the repository, matched by the strict che
 
 Cut: the ancient friendship formula behind ‘live and die together’ (not checked);
 Judas set against Peter (kept out for the care rule on self-harm).
+
+## The plain notes on 2 Corinthians 8 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Macedonia the province of northern Greece; churches at Philippi, Thessalonica, Berea (Acts 16 and 17); their suffering (1 Thessalonians 1:6); gifts to Paul (Philippians 4:15-16) | 1-7 | BSB; book page | BSB text |
+| ‘Saints’ all God's people; Jerusalem's poor; famine under Claudius (Acts 11:28-30); Galatians 2:10; Romans 15:27 | 1-7 | BSB; deep note `historical` | BSB text |
+| Charis seven times in chapter 8 (verses 1, 4, 6, 7, 9, 16, 19); koinōnia at 8:4 | 1-7 | Greek text (G5485, G2842) | Script count over the repository's Greek |
+| Patronage: gifts brought honour and obligation | 1-7 | Deep note `cultural`; book page `deeper` (the site's context guide on patronage and grace) | Repository |
+| Deuteronomy 15:10; Exodus 25:2; 35:5; 1 Chronicles 29:14 | 1-7 | BSB | BSB text |
+| Ptōcheuō only at 8:9 in the New Testament | 8-15 | Greek text (G4433) | Script |
+| Pre-existence: Philippians 2:6-7; Matthew 8:20; the Nicene Creed's ‘for us men and for our salvation came down from heaven’ and ‘was made man’ | 8-15 | BSB; `client/public/creeds/documents/nicene-creed.json` | Repository wording |
+| Isotēs, equality or fairness | 8-15 | Deep note `words` | Repository |
+| Exodus 16:17-18, 20; Isaiah 53:12; Psalm 34:6; 1 Corinthians 1:5 | 8-15 | BSB | BSB text |
+| 8:9 not a promise of money; the book page's ‘What the letter is not’ | 8-15 | Book page; CLAUDE.md guardrail | Repository |
+| No political lesson drawn from 8:13-15 | 8-15 | Brief | Stated as the notes' choice |
+| The two brothers unnamed; no one knows who they were | 16-24 | BSB | Guesses (Luke, Barnabas and others) not given |
+| Apostoloi ekklēsiōn at 8:23 | 16-24 | Greek text | Repository |
+| 8:21 echoes Proverbs 3:4 in the old Greek ("provide things honest in the sight of the Lord, and of men", Brenton) | 16-24 | Translation commentary; LXX text | Search: tips.translation.bible on 2 Corinthians 8:21; blueletterbible.org LXX Proverbs 3; ccel.org Brenton Proverbs 3. Paraphrased |
+| 2 Kings 12:10; 1 Samuel 12:3 | 16-24 | BSB | BSB text |
+| Honest accounts in churches; not financial or legal advice | 16-24 | CLAUDE.md "Inform; do not pose as the professional" | Stated as principle |
+
+Cut: the Greek wording of 8:21 (the repository has the indicative pronooumen; not discussed); guesses at the brothers' names.
+
+## The plain notes on 2 Corinthians 9 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Achaia the province of southern Greece; honour and shame of a broken public promise | 1-5 | Book page; deep note `historical` | Repository |
+| Eulogia at 9:5, ‘a blessing’; ‘begrudgingly’ renders pleonexia, greed | 1-5 | Greek text (G2129, G4124) | Repository's Greek |
+| Exodus 36:6; Ecclesiastes 5:4-5 | 1-5 | BSB | BSB text |
+| Hilaros only at 9:7 in the New Testament | 6-11 | Greek text (G2431) | Script |
+| ‘God loves a cheerful giver’ close to a line the old Greek adds at Proverbs 22:8 (God blesses, or loves, a cheerful and generous man); not in the Hebrew or the BSB | 6-11 | Translation commentary; Brenton's LXX | Search: tips.translation.bible on 2 Corinthians 9:7; ebible.org BSB note ("Proverbs 22:8, LXX addition"); breakeveryyoke.com Brenton/LXX2012. Paraphrased |
+| Psalm 112:9 (lowercase ‘his’, the man who fears the LORD, 112:1); the BSB's capital ‘His’ at 2 Corinthians 9:9; readers differ | 6-11 | BSB | BSB text compared |
+| Isaiah 55:10; Hosea 10:12 "may echo"; Proverbs 11:24; 22:9; Luke 12:15; 6:10; 11:27; 8:2 | 6-11 | BSB | BSB text |
+| Prosperity teaching named an error; harvest of righteousness, not wealth | 6-11 | CLAUDE.md "Orthodoxy Guardrails"; deep note `hard`; book page ‘What the letter is not’ | Repository |
+| Tithe pointer to the Genesis 14:17-20 note; Honest Answer on money | 6-11 | genesis/plain/14.json; book page `deeper` | Repository |
+| Care line (gave under pressure or promised a return: not their failure; pastor, friend; not financial advice; Find Help) | 6-11 | Brief; site form | Repository wording, no phone number |
+| Leitourgia: public service paid by a rich citizen; priests' service in the old Greek; ‘liturgy’ | 12-15 | Deep note `words`, `cultural` | Repository |
+| Anekdiēgētos only here; most take the gift as Christ | 12-15 | Deep note `words`, `christ` | Repository; "most readers" |
+| 1 Chronicles 29:9; Psalm 106:2; Isaiah 60:5 ("some readers think"; Paul does not say so) | 12-15 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 10 (2026-11-20)
+
+One search. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Change of tone; the two views in one sentence, pointing to the book page | 1-6 | Book page ‘One letter or several?’ | Repository |
+| Siege warfare in a Roman colony; ochyrōma, stronghold; aichmalōtizō, capture with a spear; epieikeia, gentleness | 1-6 | Deep note `cultural`, `words` | Repository |
+| Matthew 11:29; Proverbs 21:22 ("some readers hear"); Zechariah 4:6; 1 Samuel 17:45; Jeremiah 23:29; Ephesians 6:12 | 1-6 | BSB | BSB text |
+| Not against persons; no licence for aggression or ‘spiritual warfare’ against persons | 1-6 | Brief; deep note `doctrines` | Stated plainly |
+| Unwanted intrusive thoughts: not chosen, not sin; can be part of anxiety or obsessive-compulsive disorder (scrupulosity a form of OCD); treatable; doctor, counsellor, pastor, friend, Find Help | 1-6 | Clinical overviews | Search: simplypsychology.org and psychcentral.com on scrupulosity; ocd.app. "Almost everyone has them" not found and not said |
+| Public speaking as art and show in Greek cities | 7-11 | Deep note `cultural` | Stated generally |
+| What Paul looked like or how he spoke not known | 7-11 | BSB | Guesses (weak voice, illness) not given |
+| Jeremiah 1:10; 1 Samuel 16:7; Exodus 4:10; 13:10 | 7-11 | BSB | BSB text |
+| Kanōn, measuring rod, rule, measured area | 12-18 | Deep note `cultural`, `words` | Repository |
+| Corinth founded by Paul (Acts 18); Spain (Romans 15:24) | 12-18 | BSB | BSB text |
+| Jeremiah 9:23-24 summed up at 10:17 and 1 Corinthians 1:31; Proverbs 27:2; 1 Samuel 2:3 | 12-18 | BSB | BSB text. The old Greek of 1 Samuel 2:10 not claimed |
+
+## The plain notes on 2 Corinthians 11 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jewish betrothal binding; Joseph ‘her husband’ before the wedding (Matthew 1:19); the father presents the bride | 1-6 | Deep note `cultural`; BSB | Repository |
+| Zēlos, godly jealousy; Exodus 34:14; Isaiah 54:5; Hosea 2:19; Genesis 3:1, 13 (pointer to the Genesis 3:1-7 note) | 1-6 | Deep note `words`; BSB | BSB text |
+| Idiōtēs ‘unpolished’ at 11:6 | 1-6 | Greek text | Repository |
+| Super-apostles: views and no side, pointing to the book page | 1-6, 7-15 | Book page ledger | Ledger |
+| Patronage and refusing support; Acts 18:3; Philippians 4:15-16; 1 Corinthians 9:14 | 7-15 | Deep note `cultural`; BSB | Repository |
+| Metaschēmatizō three times in 11:13-15 | 7-15 | Greek text; deep note `words` | Repository |
+| A Jewish retelling of Adam and Eve (date uncertain) has Satan take an angel's bright form to deceive Eve; whether Paul knew it not known | 7-15 | Reference works | Search: en.wikipedia.org "Life of Adam and Eve"; intertextual.bible (Life of Adam and Eve and 2 Corinthians 11:14); Word Biblical Commentary excerpt. Title and date not given |
+| Jeremiah 5:31; Ezekiel 34:2; Matthew 7:15-16; Job 1:6 | 7-15 | BSB | BSB text |
+| 11:20 Greek: katadouloō, katesthiō (devour), lambanō (take), epairō, derō eis prosōpon | 16-21 | Greek text | Repository |
+| Self-praise common and mocked as vulgar | 16-21 | Deep note `cultural` | Stated generally |
+| Spiritual abuse named; a leader who exploits, humiliates or controls not to be obeyed; care line (wrong, not your fault; free to step away; report crimes; pastor or counsellor outside that church; Find Help) | 16-21 | Brief; book page ‘What the letter is not’; 1 Corinthians 13:4-7 note form | Repository wording, no phone number |
+| Ezekiel 34:3-4; Matthew 20:25-26; 1 Peter 5:3; 4:5; 13:10 | 16-21 | BSB | BSB text |
+| Forty lashes: Deuteronomy 25:2-3; the Mishnah's thirty-nine, later | 22-29 | Earlier ledger (Matthew 10; Acts 5: Makkot 3:10) | Ledger |
+| Synagogue discipline of a member; Paul kept going to synagogues; Romans 9:3; not a charge against the Jewish people; pointer to the Acts 2:22-28 note | 22-29 | Deep note `historical`; Acts plain notes' wording | Repository wording |
+| Beaten with rods by Roman officials at Philippi (Acts 16:22, 37); stoned at Lystra (Acts 14:19); Acts 27 later than the letter | 22-29 | BSB | BSB text |
+| Kindynos eight times in 11:26 | 22-29 | Greek text (G2794) | Script count |
+| Jeremiah 20:2, 7, 9 | 22-29 | BSB | BSB text |
+| Aretas IV, Nabataeans, about 9 BC to AD 40; debated authority in Damascus; both dangers (Acts 9:23-25) | 30-33 | Earlier ledger (Acts 9) | Ledger |
+| The Roman wall crown (corona muralis) for the first soldier over an enemy wall; some read 11:32-33 as playing on it, others doubt the Corinthians would have known it | 30-33 | Scholarship | Search: cambridge.org NTS 68 (2022), Pawlak, "Paul's Escape from Damascus (2 Cor 11.32-3) and the corona muralis"; tobias-lib.uni-tuebingen.de record. No scholar named in the note |
+| Joshua 2:15; 1 Samuel 19:12 | 30-33 | BSB | BSB text |
+
+Cut: the deep note's Tübingen school, Baur and Barrett by name; the Life of Adam and Eve by title; "hunter catches prey" for lambanō.
+
+## The plain notes on 2 Corinthians 12 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The man is Paul himself (verse 7); "almost all readers" | 1-6 | Deep note `literary`; BSB | Repository |
+| Fourteen years from AD 55 to 56: the early 40s, "give or take"; Syria and Cilicia (Galatians 1:21); not the Damascus road | 1-6 | Deep note `historical`; book page date | Arithmetic over the book page's date |
+| Jewish writings count three or seven heavens; 2 Enoch (date debated) places paradise in the third heaven; most take third heaven and Paradise as one place; some as two stages | 1-6 | Reference works | Search: biblia.com FSB sidebar "Paul and the Third Heaven"; biblehub.com Q&A on 12:2; evidenceunseen.com; intertextual.bible (Testament of Levi, 2 Enoch). Testament of Levi not named |
+| Paradise: Persian word for an enclosed garden; Eden in the old Greek; Luke 23:43; paradeisos three times in the New Testament | 1-6 | Earlier ledger (Luke 23); Greek text (G3857) | Ledger; script |
+| Caution about claimed visits to heaven; Colossians 2:18 | 1-6 | Brief | Stated calmly; no person or book named |
+| Isaiah 6:1; Ezekiel 1:1; Genesis 2:8; Deuteronomy 29:29; Daniel 12:4 | 1-6 | BSB | BSB text |
+| Skolops only here; arkei present tense; episkēnoō ‘spread a tent over’; only words of the risen Jesus in the letter | 7-10 | Greek text (G4647; 12:9 parsing); deep note `words`, `literary` | Repository |
+| Thorn guesses: illness, eyes (Galatians 4:13, 15), speech (10:10), persecution or a person (Numbers 33:55), inner temptation in medieval readers; no one knows | 7-10 | Commentaries | Search: en.wikipedia.org "Thorn in the flesh"; samstorms.org; hprweb.com (Aquinas: passions); biblegateway Encyclopedia of the Bible. Malaria, epilepsy, migraine (deep note) not given |
+| Job 2:6; Genesis 50:20; Psalm 6:2; Isaiah 40:29; Matthew 26:39 (and 26:44, three times); Colossians 4:14 | 7-10 | BSB | BSB text |
+| Not a rule that God will not heal; not a reason to refuse treatment; care line in the Matthew 8 and Acts 3 form; chronic illness or disability not a failure of faith; Find Help | 7-10 | matthew/plain/8.json; acts/plain/3.json | Repository wording, no phone number |
+| Signs not in Acts' Corinth account; Romans 15:19 | 11-13 | Deep note `historical`; BSB | Repository |
+| Deuteronomy 34:10-11; Numbers 12:3 | 11-13 | BSB | BSB text |
+| Third visit implies the painful visit (2:1); parents save for children; 1 Corinthians 4:15; the trickery charge tied to the collection ("seems") | 14-18 | Deep note `historical`, `cultural`; BSB | Repository |
+| Proverbs 13:22; 1 Samuel 12:3 | 14-18 | BSB | BSB text |
+| 1 Corinthians 1:11; Jeremiah 9:1; 3:22 | 19-21 | BSB | BSB text |
+
+## The plain notes on 2 Corinthians 13 (2026-11-20)
+
+Two searches. Scripture is the BSB in the repository, matched by the strict check.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two earlier visits (Acts 18; 2:1) | 1-4 | BSB; book page | Repository |
+| Deuteronomy 19:15; Matthew 18:16; two readings of the witnesses (visits as witnesses; fair evidence); Isaiah 53:3 | 1-4 | Deep note `cultural`; BSB | Stated as readings, no side |
+| Dokimazō of testing metal; adokimos three times (13:5-7); katartisis only at 13:9; katartizō of mending nets (Mark 1:19) and at 13:11 | 5-10 | Deep note `words`; Greek text (G1381, G0096, G2676, G2675) | Script |
+| Lamentations 3:40; Psalm 139:23-24; Proverbs 17:3; Jeremiah 1:10 | 5-10 | BSB | BSB text |
+| Assurance: God's promises; a changed life; the Spirit's witness (Romans 8:16); falling away disputed; no side; pointers to the Romans 8:31-39 note and the Honest Answer ‘Can you lose your salvation?’ | 5-10 | Deep note `hard`; romans/plain/8.json | Repository |
+| Care line for the scrupulous: 1 John 3:20; pointer to the 7:8-12 note; anxiety not a failure of faith; pastor, friend, counsellor, doctor; Find Help | 5-10 | 2 Corinthians 7 plain note form | Repository wording |
+| Holy kiss a family greeting; Romans 16:16; 1 Corinthians 16:20; Justin in Rome, about a hundred years later, describes the kiss after the prayers (First Apology 65, about AD 150 to 155) | 11-14 | Deep note `cultural`; Justin | Search: bkv.unifr.ch First Apology 65 ("Having ended the prayers, we salute one another with a kiss"); wordonfire.org. Paraphrased; the work not named |
+| Some Bibles join 12 and 13 so that the blessing is 13:13 (Vulgate, Douay-Rheims, Jerusalem Bible) | 11-14 | Versification | Search: en.wikipedia.org "2 Corinthians 13"; biblia.com ESV 13:13-14. Bibles not named |
+| Koinōnia at 13:14 and 8:4; two senses | 11-14 | Deep note `words` | Repository |
+| Numbers 6:24-26; Exodus 34:6; Psalm 133:1; Matthew 28:19 | 11-14 | BSB | BSB text |
+| The Trinity as confession; Nicene Creed ‘very God of very God’ and ‘the Lord and Giver of Life’; about twenty-five years after the cross (cross AD 30 or 33, letter 55 to 56) | 11-14 | `client/public/creeds/documents/nicene-creed.json`; book page dates; Gospel book pages' dates | Repository |
+| Honest Answer ‘How can God be three and one?’; the Explorer film ‘Who God is’ | 11-14 | client/src/data/answers.ts; client/public/explorer/films/who-god-is.json | Repository |
+
+Cut: 1 Clement (deep note), not needed.
+
+## 2 Corinthians complete (2026-11-20)
+
+All thirteen chapters in plain words. Twelve web searches for chapters 8 to 13, listed above.

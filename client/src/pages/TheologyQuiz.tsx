@@ -314,7 +314,7 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                               <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>{article.pillar}</div>
                               <h4 style={{ fontSize: "15px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px", lineHeight: "1.4" }}>{article.title}</h4>
                               <p style={{ fontSize: "13px", color: "var(--ink3)", lineHeight: "1.6", marginBottom: "12px" }}>{article.excerpt}</p>
-                              <span style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600" }}>{article.readTime} min read →</span>
+                              <span style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600" }}>{/min/i.test(String(article.readTime)) ? article.readTime : `${article.readTime} min read`} →</span>
                             </div>
                           </Link>
                         ))}

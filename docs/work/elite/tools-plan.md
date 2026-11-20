@@ -331,3 +331,54 @@ Not checked: all 208 "how the church has read it" paragraphs (five sampled); the
 5. The Life Check (4 runs), Test the Case and the Doubt Map (4 runs), Memorize Scripture and the Reading Planner (4 runs), Rule of Life and the Decision Walk-Through (4 runs), the Examen (1 run), the Companion (2 runs), the kept tools in the shell (1 run), and the door's six rooms in `siteCatalog.ts` (1 run).
 
 Every retirement keeps `site-structure.test.ts`, `siteCatalog.test.ts`, `toolsList.test.tsx` and the route smoke test green, adds a Decision Log line in CLAUDE.md with James's words of 2026-11-20, and leaves the page file in the repo.
+
+---
+
+## 12. Build 1, as built (2026-11-20): the tool shell and the Wisdom Finder
+
+Retires nothing and changes no menu or catalogue. Ledger of every new claim: `docs/work/elite/tools-ledger.md`. Screenshots: `docs/work/elite/tools-shots/` (finder-390, finder-results-390, topic-wayward-child-390 and -1440, topic-misread-390, topic-print).
+
+### The shell (`client/src/components/tool-shell/`)
+
+- `ToolHead`: PageHead at the inner size with the tool's one name (from `toolsList.ts`), one line, "How long" and "What this keeps", and an optional not-a-diagnosis line.
+- `QuestionCard`: one question as a fieldset and legend; answers are real radio buttons (or checkboxes with `multiple`) styled as full-width choices at least 56px tall; Tab, arrows and Space as the browser gives them, and the number keys 1 to 9.
+- `useToolProgress(tool, guard, start, "local" | "session")` keeps the place under `livewell-progress-<tool>` through `lib/storage.ts`; `ProgressLine` shows "Question 7 of 30 · section", Back, a thin bar, and the site's save-failure sentence.
+- `ResultReading`, `ScoreChart` (ink bars on cream, mustard only on the one "Start here" row, read as words by a screen reader), `ResultNext`, and `ResultActions` (Change my answers, Print, Start over with an inline confirm, and Send to my phone through `TakeItWithYou`, which sends the page's address only).
+- `tool-shell.css` carries the one print sheet. `tool-shell.test.tsx` holds the contract.
+- How a later tool adopts it: the four steps in `components/tool-shell/index.ts`. The Wisdom Finder and the topic pages are the first users; no other tool was converted.
+
+### Matching
+
+Data, not code: `client/public/wisdom/matching.json` (rewrites such as "passed away" and "laid off", synonyms, per-topic phrasings, "not" phrases, related topics, and eleven areas of life holding all 208 topics). `scripts/build-wisdom-index.mjs` merges it into `finder.json`; `client/src/lib/wisdom-match.ts` stems, weighs phrases above name words above keyword words above framing words, subtracts for "not" phrases, and reports "nothing fits that well" under a floor. Fixture: `client/src/lib/wisdom-match.fixture.json`, 74 cases and 19 holdout sentences plus one nonsense line. Old matcher: cases 62.2% top 1, 83.8% top 3; holdout 57.9% and 78.9%. New: cases 100% and 100% (the phrases were written with these in view); holdout 84.2% and 100% (not looked at while writing them). `wisdom-match.test.ts` holds floors under those numbers.
+
+### The data
+
+`build-wisdom-index.mjs` (with `--check`, in CI) now writes `topics.json` unchanged in shape, `finder.json` (match data, areas, one whole-sentence verse per topic for the verse of the day), and `entry/<id>.json` per topic, the only file a topic page loads (it loaded the whole 700 KB library before). A topic written in full lives in `client/public/wisdom/deep/<id>.json`; its Scripture is a reference, filled from the BSB at build time. `scripts/validate-wisdom.mjs` (in CI) checks every verse word for word (1,099 now), every Study Bible chapter linked, the areas, the deep shape, the misread layer on the old Misused Bible Verses topics, care lines word for word against the plain notes they name, and the prose rules.
+
+### Twelve topics written in full
+
+wayward-child, anxiety, grief, anger, financial-hardship, forgiveness, doubt, loneliness, marriage-conflict, calling-and-purpose, temptation, suffering. Nine of them carry the Misused Bible Verses material, rewritten and corrected (thirteen misread verses in all).
+
+### The other 196, in batches
+
+One run each, about sixteen topics, in this order (heaviest need first; each batch closes with the validator, the passage index rebuild and a look at three pages):
+
+1. The rest of the misread layer and the gravest subjects: money, parenting-struggles, sexual-purity, justice-and-the-poor, submitting-to-leaders, rest-and-sabbath, gossip-and-the-tongue (after these the Misused Bible Verses tool is redundant and can be retired when James agrees); suicidal-thoughts, depression, despair-and-hope, self-hatred, toxic-relationships, addiction, alcohol-and-drinking, pornography.
+2. Loss: losing-a-child, losing-a-parent, losing-a-spouse, sudden-loss, miscarriage, infertility, survivors-guilt, terminal-diagnosis, facing-death, serious-illness, chronic-pain, aging, heaven-and-eternity, when-life-is-unfair, the-problem-of-evil.
+3. Marriage and family: marriage-communication, marriage-intimacy, marriage-after-an-affair, cheating, parenting-young-children, raising-teenagers, parenting-adult-children, new-parenthood, empty-nest, going-to-college, caring-for-aging-parents and caregiving (two topics with one name today: merge or rename, James to see), difficult-family, sibling-conflict, estrangement.
+4. Love and singleness, and people: dating, dating-a-nonbeliever, breakup, longing-for-marriage, singleness, revenge, betrayal, reconciliation, conflict-with-others, deep-friendship, codependency, people-pleasing, setting-boundaries, saying-no, loving-your-enemies, when-someone-wont-change.
+5. The mind: overthinking, fear-and-courage, fear-of-the-future, the-news-and-fear, information-overload, courage, need-for-control, numbness, mental-exhaustion, sensitivity, peace, restlessness, apologizing-well, encouraging-others, keeping-confidence, kindness, gentleness.
+6. Work and money: purpose-and-meaning, work-and-burnout, work-life-balance, job-loss, career-change, conflict-at-work, success-and-failure, status-and-recognition, retirement, saving-and-spending, greed, generosity-and-giving, giving-to-the-church, consumerism-and-stuff, stewardship, gambling.
+7. and 8. Habits (26 topics, two runs): lust through hardness-of-heart.
+9. and 10. Faith (28 topics, two runs): anger-at-god through being-discipled.
+11. Who I am (15).
+12. and 13. Pace (26, two runs).
+14. Church and the world (13).
+
+### Bugs fixed
+
+The Misused Bible Verses heading (its literal escape) now shows the tool's one name, and its fifteen emoji are line icons; "12 min min read" in the theology quiz; "--" as a dash in the conflict guide and the parenting guide (the one left is inside a Song of Songs quotation, Scripture wording the tool's later BSB pass will replace); emoji in the prayer and verse share lines; the folded glossary's off-palette category colours.
+
+### Not done in this run
+
+No tool besides the Wisdom Finder moved into the shell. No retirements, redirects, menu or catalogue changes. The 196 topics keep their five verses and old prose. The deep layer is not yet in the site search index (the topic pages are). The Westminster, Baptist Faith and Message, Methodist and Catholic Catechism references in the ledger were cited from knowledge and not opened.

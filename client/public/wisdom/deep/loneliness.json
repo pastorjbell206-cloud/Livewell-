@@ -1,0 +1,80 @@
+{
+  "id": "loneliness",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "Psalm 25:16",
+      "context": "Psalm 25:16-21",
+      "where": "David prays as someone lonely and afflicted, with troubles multiplying and enemies around him. He says the word plainly to God. Loneliness is something a person can pray about by name."
+    },
+    {
+      "ref": "Psalm 88:18",
+      "context": "Psalm 88:13-18",
+      "where": "The darkest psalm ends here, with friends and loved ones taken away and darkness for company. It does not end with a turn to praise. It is still a prayer, addressed to the LORD, and Israel kept it in its worship."
+    },
+    {
+      "ref": "Matthew 26:38",
+      "context": "Matthew 26:36-46",
+      "where": "In Gethsemane Jesus asks his closest friends to stay awake with him, and three times finds them asleep. He knew what it is to want company in the worst hour and not have it."
+    },
+    {
+      "ref": "2 Timothy 4:16-17",
+      "context": "2 Timothy 4:16-18",
+      "where": "Near the end of his life, in prison, Paul writes that at his first hearing everyone deserted him. He asks that it not be held against them, and says the Lord stood by him."
+    },
+    {
+      "ref": "Psalm 68:6",
+      "context": "Psalm 68:4-6",
+      "where": "A song praising God as father of the fatherless and defender of widows. Among the things this God does: he settles the lonely in families. God's answer to loneliness is often people."
+    },
+    {
+      "ref": "Ecclesiastes 4:9-10",
+      "context": "Ecclesiastes 4:7-12",
+      "where": "The Teacher has just described a man with no son or brother who works endlessly for no one. Two are better than one, he says, because someone can lift you when you fall. Companionship is treated as practical wisdom, not a luxury."
+    },
+    {
+      "ref": "Mark 10:29-30",
+      "context": "Mark 10:28-31",
+      "where": "Peter says the disciples have left everything. Jesus promises that those who lose family for his sake will receive brothers, sisters, mothers and children in this age, along with persecutions. The church is meant to be a family for people who have none."
+    },
+    {
+      "ref": "John 15:15",
+      "context": "John 15:12-17",
+      "where": "On the night before he died, Jesus tells his disciples he calls them friends, not servants, and commands them to love one another as he has loved them."
+    },
+    {
+      "ref": "Hebrews 10:24-25",
+      "context": "Hebrews 10:19-25",
+      "where": "Written to Christians tempted to drift from the church under pressure. Some had stopped meeting. The writer urges them to keep gathering and to encourage one another, because faith is not meant to be kept alone."
+    },
+    {
+      "ref": "Proverbs 18:24",
+      "context": "Proverbs 18:22-24",
+      "where": "A saying that sets many shallow companions against one true friend. Loneliness is not cured by numbers. One faithful friend can stand closer than family."
+    }
+  ],
+  "misread": [
+    {
+      "ref": "Genesis 2:18",
+      "context": "Genesis 2:18-25",
+      "taken": "This verse is sometimes used as if marriage were the only real answer to loneliness, so that a single person is left feeling that their life is the thing God called “not good.”",
+      "says": "In Genesis 2 solitude is the first thing God calls not good, and the answer in that story is the woman, the first marriage. It tells us that human beings were made for relationship. The rest of the Bible widens the answer: friendship like David and Jonathan's, the household of faith, the family Jesus promises in Mark 10. Jesus and Paul were both unmarried, and Paul commends the single life as a gift (1 Corinthians 7:7-8). Marriage is one good answer to being alone. It is not the only one, and it does not cure every loneliness."
+    }
+  ],
+  "whole": [
+    "Loneliness can be felt in an empty apartment and in a full house, in a crowd at church and in a long marriage. It often comes after a change: a move, a death, a divorce, children leaving, a job ending. It can be quietly shaming, as if being alone meant being unwanted. And it can feed itself, because a lonely person stops reaching out, and then has more reason to feel alone.",
+    "The Bible takes loneliness seriously from its second chapter, where the first thing called not good is a man alone. Its people know it: David hunted and isolated, the psalmist with darkness for company, Paul deserted at his trial, Jesus asking his friends to stay awake. Scripture does not blame the lonely. But it does refuse the idea that people were made to get through life alone. God made human beings for him and for each other, and much of the loneliness in the modern world comes from lives built to need no one.",
+    "So the Bible's wisdom points two ways. Upward: loneliness can be prayed, word for word, to a God who stays when others leave. And outward: God settles the lonely in families, and the church is meant to be one. That means taking small steps toward people, even when it feels risky. Go back to the same table, the same group, the same few people, long enough to be known. Look for someone else who is alone. Friendship usually grows slowly, through ordinary time together, more than through a single great conversation."
+  ],
+  "sit": "Who is one person you could see again this week, not to fix your loneliness but to begin to be known?",
+  "prayer": {
+    "ref": "Psalm 142:4-5",
+    "lead": "Psalm 142 is a prayer from a cave, from someone who felt no one cared. It ends by calling God a refuge and a portion."
+  },
+  "next": [
+    { "kind": "Find Help", "label": "Loneliness", "href": "/help/loneliness" },
+    { "kind": "Study guide", "label": "Friendship", "href": "/studyguides/friendship" },
+    { "kind": "Study guide", "label": "Alone in a crowded church", "href": "/studyguides/alone-in-a-crowded-church" },
+    { "kind": "Reading", "label": "Friendship Against Isolation", "href": "/life/friendship-against-isolation" }
+  ]
+}
