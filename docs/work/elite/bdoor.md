@@ -5565,3 +5565,37 @@ places to turn"). 55:12-23 (the betrayed, with the Find Help page). 58:6-11
 (a parent who lost a baby). 68:1-18 (the fatherless and the lonely). 69:1-12
 (the sinking and the shame, with the Find Help page). 71 (the old, those who
 care for them, and an old person low in spirit). No phone number anywhere.
+
+### What was run, and what passed (watched)
+
+After every commit: `node scripts/validate-bible-notes.mjs psalms` and the
+strict quotation script, and every passage printed field by field and read;
+all 47 passages sit under their right headings. One slip: the Psalm 70 commit
+(ca0fda48) went in while the validator flagged "Aha, aha!" in single marks
+(the check's output was piped and its exit code hidden); it was fixed in the
+Psalm 72 commit, and the validator has passed with exit 0 since. The strict
+script's last run over 42 to 72 flags only reviewed false positives: the `!`
+of quoted Scripture in three titles (55, 69:13-21, 70), "Your truth" in 43's
+Scripture title, and "be blessed" as a verb inside Scripture (72).
+
+At the end, one at a time: all 38 content-gate commands in ci.yml, exit 0
+each (validate-bible-notes: 66 introductions, 1,189 chapter notes, 239
+chapters in plain words; no-emdash 260 files, 0; search index 733 entries up
+to date; passage index 623 files match; explorer index current; verify-sources
+22 texts intact). `pnpm check`: exit 0. `pnpm test`: 147 files passed, 7
+skipped; 1,693 tests passed, 73 skipped. `pnpm build`: exit 0.
+
+Rendered check: served with `scripts/serve-like-vercel.mjs` on port 4601;
+Playwright at 390 wide, deviceScaleFactor 1, with `/api/trpc`, `/api/track` and
+`/_vercel/*` stubbed. Psalms 42 to 72: 47 passages, 208 parts. Each passage's
+heading and each part's heading and first 60 characters matched the data. The
+27 passages without `hard` show no "The hard verse" heading. No sideways
+scroll, no console or page errors. Screenshots looked at:
+`/home/user/elite-shots/bdoor/ps51-390-p0.png` to `p2.png` and
+`ps69-390-p0.png` to `p2.png`. Server stopped by PID, dist/ deleted, no
+lh-*.json. No code changed.
+
+### Next
+
+Psalm 73, the start of Book Three (73 to 89), in the same shape. Book Two took
+about 23,400 words: lighter psalms about 480 words, major ones 1,000 to 1,900.
