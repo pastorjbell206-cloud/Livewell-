@@ -11004,3 +11004,23 @@ No new searches. Scripture is the BSB in the repository, matched by the strict c
 | Key words: epignōsis, eusebeia, phusis, aretē, epoptēs, pherō, despotēs, Tartarus, eleutheria, parousia, makrothumeō, stoicheia | Key words | 2-peter/1.json to 3.json `words`, `cultural` | Repository |
 | Map: Sodom and Gomorrah as one rough region at the Genesis map's Sodom point (31.2 N, 35.49 E), on the ‘canaan’ frame (the ‘israel’ frame stops at 31.6 N); the holy mountain not named, so not drawn | Map | genesis/intro.json teaching map | Repository |
 | Deeper links: revelation, canon, union, election, angels, return, new-creation, judgment | Go deeper | bible/doctrines.json | Repository |
+
+## The plain notes on 2 Peter 1 (2026-11-20)
+
+No new searches. Scripture is the BSB in the repository, matched by the strict check. 2 Peter has no verse notes; these rest on the chapter deep note, the intro, the canon guide and the lexicon.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Our God and Savior’: grammar most naturally applies both titles to Jesus; epignōsis personal knowledge; teachers may have claimed special knowledge | 1-2 | 2-peter/1.json `christ`, `words` (G1922) | Repository |
+| Isaiah 43:3; Numbers 6:25-26 | 1-2 | BSB | BSB text |
+| Greek religious echoes, Peter's meaning shaped by promises; virtue lists in Greek moral teaching; the climax form (Romans 5:3-5); faith to love; nearsighted; a lavish welcome | 3-11 | 2-peter/1.json `cultural`, `literary`, `doctrines` | Repository |
+| Theosis and Western readings; not God in essence | 3-11 | 2-peter/1.json `words` (G5449) | Repository, no side |
+| 1:10 readings (confirming, not earning; persevering in a calling that can be abandoned) | 3-11 | 2-peter/1.json `doctrines`; 2-peter/2.json `hard` | Repository, no side |
+| Care line ‘If you are afraid that you are not chosen ...’ | 3-11 | ephesians/plain/1.json (3-14 `hard`) | Word for word |
+| Genesis 1:26; Psalm 1:3; Proverbs 4:18 | 3-11 | BSB | BSB text |
+| Remind words repeated; tent and Mark 9:5; John 21:18-19; testament form; both views | 12-15 | 2-peter/1.json `literary`, `cultural`, `historical` | Repository, no side |
+| Pseudonymity and honesty: a known form perhaps recognised; personal claims; the church rejected the Gospel of Peter and received this letter | 12-15 | 2-peter/intro.json `author`; bible/guides/canon.json (Eusebius's categories) | Repository, no side |
+| Deuteronomy 31:14; Joshua 23:14; Leviticus 23:42 | 12-15 | BSB | BSB text |
+| Muthoi as myths of the gods; eyewitness evidence in law and history; transfiguration in the Gospels; Tabor and Hermon; morning star probably Christ; pherō of a ship (Acts 27:15, 17) | 16-21 | 2-peter/1.json `cultural`, `historical`, `christ`, `words` (G5342) | Repository |
+| Two readings of 1:20; Catholic, Orthodox and Protestant emphases; 3:16 | 16-21 | 2-peter/1.json `hard` | Repository, no side |
+| Psalm 2:7; Isaiah 42:1; Numbers 24:17; Psalm 119:105; 2 Samuel 23:2; Jeremiah 23:16 | 16-21 | BSB | BSB text |
