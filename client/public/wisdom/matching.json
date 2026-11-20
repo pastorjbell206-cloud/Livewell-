@@ -3435,6 +3435,25 @@
     "anger",
     "pride"
    ]
+  },
+  "purpose-and-meaning": {
+   "phrases": [
+    "whats the point of my life",
+    "nothing i do matters",
+    "life feels pointless",
+    "life has no meaning",
+    "feel lost in life",
+    "does my life matter",
+    "searching for meaning",
+    "what is my purpose",
+    "going through life on autopilot"
+   ],
+   "not": [],
+   "related": [
+    "calling-and-purpose",
+    "identity-and-worth",
+    "despair-and-hope"
+   ]
   }
  }
 }
