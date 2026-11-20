@@ -122,6 +122,13 @@
           "blurb": "The other gospels and their dates, how the four were received, what Nicaea did and didn't do, and what is true in \"the winners write history\".",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "forgeries-in-the-new-testament",
+          "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+          "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -435,6 +442,26 @@
       "area": "authors",
       "slug": "four-gospels-and-the-rest",
       "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
+      "live": false
+    },
+    {
+      "claim": "Several New Testament letters under the names of Paul and Peter were written by others who claimed to be them, and are forgeries",
+      "proponent": "Bart D. Ehrman",
+      "work": "Forged",
+      "year": 2011,
+      "area": "authors",
+      "slug": "forgeries-in-the-new-testament",
+      "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "live": false
+    },
+    {
+      "claim": "Ancient pagan, Jewish and Christian writers treated a false claim of authorship as deceit, not as an accepted convention",
+      "proponent": "Bart D. Ehrman",
+      "work": "Forgery and Counterforgery",
+      "year": 2013,
+      "area": "authors",
+      "slug": "forgeries-in-the-new-testament",
+      "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
       "live": false
     }
   ],

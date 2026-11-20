@@ -23,6 +23,11 @@
       "slug": "four-gospels-and-the-rest",
       "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
       "blurb": "The other gospels and their dates, how the four were received, what Nicaea did and didn't do, and what is true in \"the winners write history\"."
+    },
+    {
+      "slug": "forgeries-in-the-new-testament",
+      "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
+      "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake."
     }
   ],
   "words": [
@@ -37,6 +42,14 @@
     {
       "term": "Canon",
       "meaning": "the list of books a church receives as Scripture, from a Greek word for a measuring rule."
+    },
+    {
+      "term": "Pseudepigraphy",
+      "meaning": "writing under the name of someone who did not write the work. Whether a given case was a deception or an accepted convention is debated."
+    },
+    {
+      "term": "Pastoral Letters",
+      "meaning": "1 and 2 Timothy and Titus, Paul's letters to two coworkers, so called because they deal with the care of churches."
     }
   ],
   "elsewhere": [

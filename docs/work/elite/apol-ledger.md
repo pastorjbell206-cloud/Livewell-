@@ -1080,3 +1080,39 @@ Cut: Bailey's sorting of which kinds of material are fixed and which flexible (n
 | Twenty-seven books held by nearly every church, the Ethiopian narrow canon included | WDC ledger line 55 | Verified |
 
 Cut: Thomas Robinson, *The Bauer Thesis Examined* (not found); Michael Williams, *Rethinking "Gnosticism"* (the thesis was not confirmed); Foster's title; King's 2003 book; Pagels's thesis as a claim line (not confirmed in her words); that the Gnostic teaching "has no first-century witness" (narrowed: no clear witness of its own, with the debate over New Testament letters named); "Constantine's one recorded act concerning Scripture" (not checked; now "Eusebius records"); the Orthodox churches' account of the canon (not checked). No living author is quoted.
+
+### n. "Weren't some New Testament letters forged?" (forgeries-in-the-new-testament)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman, *Forged* (2011); *Forgery and Counterforgery: The Use of Literary Deceit in Early Christian Polemics* (OUP; copyright 2013, released November 2012): ancient pagan, Jewish and Christian critics treated false authorial claims as deceit; forgery defined as a false claim to be a known figure | S: library and bookseller records, Wikipedia, reviews (paleojudaica, Interpreter), as summarized; Tenth run (*Forged*) | Verified (secondary). The year is given as 2013, the copyright and catalogue year |
+| Armin Baum, reviewing it in *Novum Testamentum*: accepted that ancient readers condemned pseudepigraphy as deceit, questioned other claims | S: same results | Verified (secondary), paraphrased |
+| Ehrman: Peter and John *agrammatoi* (Acts 4:13); Aramaic; 1 and 2 Peter in literate Greek; neither by Peter | S: TGC *Themelios* review, ehrmanblog.org ("You don't think Peter wrote 1 and 2 Peter"), as summarized; row j | Verified (secondary) |
+| Seven undisputed letters (Romans, 1 and 2 Corinthians, Galatians, Philippians, 1 Thessalonians, Philemon); opinion divided on Ephesians, Colossians and 2 Thessalonians; Pastorals doubted by most critical scholars | S: Wikipedia "Authorship of the Pauline epistles", SATS blog, as summarized; Note (1 Timothy, Titus: "Evangelical scholarship largely holds to Paul's authorship; a majority of critical scholars do not") | Verified |
+| Pastorals: godliness, sound teaching; overseers, deacons, enrolled widows; travels hard to fit Acts; replies: subject and recipients, simple order with no single bishop, release after Rome (Clement of Rome around 96, Eusebius); P. N. Harrison 1921; Marcion lacked them; Polycarp appears to echo 1 Timothy; Irenaeus quotes it as Paul's | Note (1 Timothy, Titus intros) | Verified (repo). Harrison not named in the piece |
+| Ephesians: 1:3-14 one sentence; salvation as completed; universal church; 2:20; parallels with Colossians; replies: style and subject, secretary, Tychicus (6:21-22; Colossians 4:7-8); well attested in the second century; since the nineteenth century | Note (Ephesians intro) | Verified (repo) |
+| Colossians: style; already raised (2:12; 3:1) against Romans 6; Philemon's names (Onesimus, Archippus and others); Dunn: Timothy composed it in Paul's lifetime | Note (Colossians intro) | Verified (repo) |
+| 2 Thessalonians: follows 1 Thessalonians closely; end-time teaching; 2:2 a letter "seeming to be from us"; 3:17 the signature | Note (2 Thessalonians intro); Repo (BSB) | Verified |
+| 2 Peter: ornate Greek unlike 1 Peter; uses Jude; Paul's letters with "the other Scriptures" (3:15-16); the fathers have died (3:4); testament form; Eusebius listed it as disputed; Jerome on its style; Athanasius's list of 367 | Note (2 Peter intro); WDC ledger lines 89, 131, 132; Repo (BSB 3:15-16) | Verified; Jerome rests on the note |
+| Tertullian, *On Baptism* 17 (about 200): a presbyter in Asia wrote the Acts of Paul, said he did it for love of Paul, and was removed from office | S: earlychristianwritings.com, tertullian.org (Evans's edition), Harland's blog, as summarized | Verified (secondary), paraphrased |
+| Muratorian fragment rejects letters to the Laodiceans and Alexandrians forged in Paul's name (in connection with Marcion) | S: earlychristianwritings.com text, Tregelles's edition (gospelstudies.org.uk), as summarized | Verified (secondary), paraphrased |
+| Romans 16:22 Tertius; Colossians 1:1 and 4:18; 2 Thessalonians 1:1 and 3:17; 1 Peter 5:12 "Through Silvanus" | Repo (BSB); Note (Romans, 1 Peter intros) | Verified |
+| E. Randolph Richards, *The Secretary in the Letters of Paul* (Mohr Siebeck, WUNT 2/42, 1991): secretaries in the Roman world; draws on Cicero and his secretaries; a critic: the stylistic shifts documented are far smaller than Ephesians or Colossians would need; an NTS article (2018) appraising the secretary hypothesis critically | S: Mohr Siebeck PDF, Scot McKnight's Substack, Cambridge (NTS) record, as summarized | Verified (secondary). The NTS article's author was not seen, so it is not named |
+| Anthony Kenny, *A Stylometric Study of the New Testament* (Clarendon, 1986): no reason to reject the hypothesis that twelve Pauline letters share one author | S: NTS article ("Positional stylometry reassessed") describing Kenny's conclusion; credohouse; bookwire listing, as summarized | Verified (secondary). Which letter stands apart is reported differently by sources, so the piece doesn't say |
+| Jermo van Nes, *Pauline Language and the Pastoral Epistles: A Study of Linguistic Variation in the Corpus Paulinum* (Brill, Linguistic Biblical Studies 16; dated December 2017 online, 2018 in catalogues): only a minority of the Pastorals' major lexical and syntactic peculiarities differ significantly | S: catalogues, Tyndale Bulletin review, SEA review, as summarized | Verified (secondary); the catalogue year 2018 is given |
+| I. Howard Marshall: "allonymity", someone close to Paul continuing to write as he would have, perhaps completing works Paul began, without intent to deceive (with Philip Towner) | S: Scot McKnight's Substack, pastoralepistles.com quoting Marshall, as summarized | Verified (secondary), paraphrased. His ICC commentary's title and year were not confirmed and it isn't listed; "an evangelical" was cut (not checked) |
+| Terry L. Wilder, "New Testament Pseudonymity and Deception," *Tyndale Bulletin* 50.1 (1999): ancient writers, early Christians among them, had scruples about pseudonymity | S: Galaxie record and snippet | Verified (secondary) |
+| Carson and Moo (2005) on pseudonymity and deception | S: a blog excerpt | Not used (secondary excerpt only) |
+
+Cut: a claim that Ehrman counts the seven (the count is the scholarly consensus, not attributed to him); Ehrman's count of forged books in the New Testament (a news headline only); Harrison's 1921 thesis by name; Marshall's commentary in the reading list; Carson and Moo; "no serious scholar" (now "almost universally accepted"). No living author is quoted.
+
+### The area page (index.md)
+
+| Claim | How verified | Result |
+|---|---|---|
+| Ehrman's *Jesus, Interrupted*, *Forged* and *Lost Christianities* | Tenth run | Verified |
+| The four chosen "long before any emperor took an interest" | WDC ledger line 134 | Verified |
+| Synoptic Gospels: Mark first and used by the others (most scholars) | Note (Mark intro) | Verified |
+| Papias (bishop of Hierapolis, early second century, quoted by Eusebius) | Bdoor rows 22, 23 | Verified |
+| "Canon" from a Greek word for a measuring rule | Repo: the site's glossary (`client/public/theology/theology-glossary.json`, "Canon": from a word meaning measuring rod) | Agrees with the site |
+| Pastoral Letters: 1 and 2 Timothy and Titus | Note (1 Timothy, Titus) | Verified |

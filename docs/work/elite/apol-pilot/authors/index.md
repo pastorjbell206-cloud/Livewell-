@@ -20,12 +20,15 @@ What the pages argue is narrower than either a skeptic or an anxious believer mi
 2. **Weren't the Gospels written decades after Jesus by people who never met him?** The usual dates and the reasons for them, the case for earlier dates, Paul's letters from before the Gospels, and what a gap of a lifetime allows.
 3. **Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?** Form criticism, memory research, the debate over controlled tradition, and what changed and what stayed across the Gospels.
 4. **There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?** The other gospels and their dates, how the four were received, what Nicaea did and didn't do, and what is true in "the winners write history".
+5. **Weren't some New Testament letters forged in the names of Paul and Peter?** The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.
 
 ## Words these pages use
 
 - **Synoptic Gospels**: Matthew, Mark and Luke, so called because they can be set side by side and seen together. Most scholars think Mark was written first and used by the other two.
 - **Papias**: a bishop of Hierapolis in Asia Minor early in the second century, whose reports about Mark and Matthew survive in quotations by the historian Eusebius.
 - **Canon**: the list of books a church receives as Scripture, from a Greek word for a measuring rule.
+- **Pseudepigraphy**: writing under the name of someone who did not write the work. Whether a given case was a deception or an accepted convention is debated.
+- **Pastoral Letters**: 1 and 2 Timothy and Titus, Paul's letters to two coworkers, so called because they deal with the care of churches.
 
 ## Where else to look
 
