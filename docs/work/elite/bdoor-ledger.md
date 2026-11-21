@@ -13823,3 +13823,38 @@ Cut before publishing: the Esarhaddon treaties of 672 BC by name and date; the d
 | ‘If you gave money because you were pressed or frightened ... places to turn.’ | 26-34 | 1-timothy/plain/6.json (3-10 `hard`), word for word | Repository |
 
 Cut before publishing: Jephthah's vow (Judges 11), a hard story of its own that this note could not treat with care in a sentence; that coins came into use in the Persian period.
+
+## Numbers's book page (teaching introduction, 2026-11-21)
+
+Every claim in `client/public/bible/notes/numbers/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Fourth book, 36 chapters; a trip of weeks that took about forty years; two generations; God staying with a people who keep failing | in-a-minute | bible/books.json; numbers/intro.json `tagline`, `overview`, `purpose` | Repository |
+| The story so far; 1:1; nineteen days to 10:11; eleven days (Deuteronomy 1:2); thirty-eight years (Deuteronomy 2:14); 33:38; 36:13; the three places | story, timeline | numbers/intro.json `story`, `date`, `setting`, `structure`; BSB | Repository; BSB text |
+| Arithmoi through Latin from the Septuagint; Bemidbar, ‘in the wilderness’; the two counts; 26:64-65; Deuteronomy 8:2; the wilderness not only punishment | names, words | numbers/intro.json `overview`, `reading`; BSB | Repository; BSB text |
+| Authorship: tradition and Moses; 33:2; 12:3 as another's comment; the Book of the Wars of the LORD (21:14); the priestly source and the Persian period; the two dates for the exodus (1 Kings 6:1; Exodus 1:11) | who, timeline | numbers/intro.json `author`, `date`; numbers/12.json `historical` | Repository; no side |
+| Ketef Hinnom (1979, about 600 BC); Tell Deir Alla (1967, about the eighth century BC, ink on plaster, Balaam son of Beor) | who, timeline, camp | numbers/intro.json `date`; numbers/6.json `historical`; numbers/22.json `historical`; leviticus/intro.json timeline (‘About 600 BC’) | Repository |
+| The mix of kinds of writing; laws placed to answer stories; 15:2 after chapter 14; the seven sections; Dennis Olson (1985) | built, timeline | numbers/intro.json `reading`, `structure` | Repository |
+| The camp around the tent (2:2); the Levites nearest | camp, words | numbers/intro.json `themes`; BSB | Repository; BSB text |
+| 603,550 (1:46); two million or more; the readings of elef, Judges 6:15, Mendenhall (1958); each reading's difficulty; no side | camp, hard, words, timeline | exodus/intro.json teaching (‘How many left?’); exodus/plain/12.json 37-42 `hard`; numbers/1.json `hard` | Repository; worded as the Exodus notes set it out; no side |
+| 5:3; the test of 5:11-31 and the Nazirite named; the blessing 6:24-27 as God's gift; ‘one of the oldest and best-loved blessings’; 9:23 | camp | numbers/intro.json `keyChapters`; numbers/6.json `historical`; BSB | Repository; BSB text |
+| The pattern of complaint, anger, prayer; 11:5, 11:14; seventy elders; quail and plague; Miriam and Aaron; the misuse of chapter 12 named | complaints | numbers/intro.json `reading`, `themes`; numbers/12.json `hard` | Repository |
+| Kadesh: forty days, the fruit, ten and two; 13:31; 14:4, 11, 18, 20, 31-34; pardon and consequence; whether Moses changed God's mind left open | complaints, hard | numbers/14.json `hard`; BSB | Repository; BSB text; no side |
+| Korah, Dathan, Abiram and the 250 (16:1-3, 35); 16:48; no leader may call a critic a Korah | rebellion | numbers/intro.json `christ`, `keyChapters`; BSB | Repository; BSB text; the last clause is a caution, not a claim |
+| Chapters 17 to 19 in a line each; the rock (20:10-12); the proposals for Moses' fault; Aaron's death | rebellion | numbers/intro.json `structure`; numbers/20.json `hard`; BSB | Repository; BSB text |
+| The snake (21:8); John 3:14-15; Sihon and Og; Balaam, the donkey, 23:19, 24:17; Jewish readers before Jesus and Christians | road | numbers/intro.json `christ`, `reading`; numbers/24.json `historical`; john/plain/3.json | Repository; BSB text |
+| Peor (25:1-3); twenty-four thousand (25:9); Phinehas; later readers and the New Testament | road, hard | numbers/25.json `hard`, `historical`; BSB | Repository |
+| 601,730 (26:51); the daughters of Zelophehad (27:7), named three times; the ruling inside its system | new-generation | numbers/27.json `hard`; BSB | Repository; BSB text |
+| 27:17 and Joshua; the vows of chapter 30 set in their world | new-generation | numbers/intro.json `christ`; BSB | Repository |
+| Chapter 31 stated without softening; no one may use it | new-generation, hard | numbers/31.json `summary`, `hard`; BSB 31:1-18 | Repository; BSB text |
+| Chapters 32 to 35 in a line each; 35:33-34 | new-generation | numbers/intro.json `structure`; BSB | Repository; BSB text |
+| The readings of the wars (as they stand; the idiom of ancient war and Mesha; accommodation, with its objection); what holds on every reading; 33:56; Luke 9:54-55; Genesis 18:25 | violence | numbers/21.json `hard`, `historical`; numbers/31.json `hard`; context/guides/the-violence-of-the-old-testament.json; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
+| John 3:14-15; 1 Corinthians 10:4, 11, 12, written to the church; Hebrews 3:19 and 4:9 with Psalm 95; Mark 6:34; Jude 1:11; 2 Peter 2:15; Matthew 4:1-2; Psalms 78 and 106; never a reason to blame the Jewish people | new-testament | numbers/intro.json `christ`, `story`; numbers/14.json `christ`; 1-corinthians/plain/10.json; john/plain/3.json; jude/plain/1.json; BSB | Repository; BSB text |
+| The tassels (15:37-41) as the third paragraph of the Shema, still worn; Paul's grace and peace echoing the blessing | readers | numbers/15.json `cultural`; the plain notes that quote Numbers 6:24-26 beside Paul's greetings | Repository |
+| Key words: Levites (1:50-53), Nazirite (6:1-21), the cloud (9:15-23), manna (11:4-9), Kadesh (13:26; 20:1), Meribah (20:13), Nehushtan (2 Kings 18:4), Baal of Peor (25:3), go'el and the avenger (35:12), city of refuge (35:11) | words | numbers/35.json `cultural`; numbers/25.json `historical`; BSB | Repository; BSB text |
+| Timeline: Mari; Hammurabi (about 1750 BC) and the river ordeal; Mesha (ninth century BC, Dhiban, 1868); Mattathias (1 Maccabees 2:26); Bar Kokhba (AD 132); the Mishnah's tractate and the rite given up in the first century | timeline | numbers/1.json, 5.json, 21.json, 24.json, 25.json `historical` | Repository |
+| Map: Hebron, Jericho, the Jordan, Gilead, each with a point already used on the site (Genesis, Mark, Psalms); Kadesh often placed at Ain el-Qudeirat; nothing else drawn, no route | map, mapNote | genesis/intro.json, mark/intro.json, psalms/intro.json maps; numbers/13.json, 33.json `historical` | Repository |
+| Go deeper: ten pages, all live | deeper | App.tsx routes; guides/, doctrines.json, context/guides/, questions/old-testament/ (status live), answers.ts | Repository |
+
+Cut for want of a source in the repository: that the priests' blessing is still spoken in synagogues and at the end of church services; that no Israelite dies for rebellion after the second count.

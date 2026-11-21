@@ -34,5 +34,449 @@
     { "ch": 21, "why": "The bronze serpent lifted on a pole, which Jesus used to explain his own death in John 3." },
     { "ch": 24, "why": "Balaam's last oracles, including the star from Jacob and the scepter from Israel, later read as a promise of the Messiah." },
     { "ch": 26, "why": "The second census: none of the first generation is left except Caleb and Joshua, and a new generation stands ready." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Numbers in a minute",
+        "body": "Numbers is the fourth book of the Bible. It has 36 chapters. It tells how Israel traveled from Mount Sinai to the edge of the land God had promised, and why a trip of a few weeks took about forty years.\n\nThe book begins with a people counted, ordered and ready. God lives in a tent in the middle of their camp. A cloud leads them by day and fire by night. Then the march begins, and almost at once the people begin to complain: about the food, about Moses, and at last about the promised land itself. When they stand at its border and refuse to go in, God tells them that they will die in the wilderness and that their children will enter instead.\n\nThat is the shape of the whole book. One generation comes out of Egypt and dies in the desert. A second generation grows up there and stands at the end of the book on the plains of Moab, across the Jordan River from Jericho, ready to go in.\n\nNumbers is honest about what can happen after a rescue. Freedom from Egypt did not make Israel trusting or grateful. But the book is just as honest about God. He judges, and some of his judgments are hard to read. He also feeds this people every day for forty years, forgives them when Moses pleads, turns a hired curse into a blessing, and brings their children to the border as he said he would. Numbers is about God staying with a people who keep failing."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Numbers is the fourth of the five books of Moses, which Jews call the Torah. In Genesis, God promised Abraham a family, a land, and good for all nations through him. In Exodus, God rescued that family, now a people, from slavery in Egypt, made a covenant with them at Mount Sinai, and had them build a tent, the tabernacle, so that he could live among them. Leviticus gave the laws of offering, priesthood and holiness that let a holy God live in the middle of an unholy people.\n\nNumbers begins one month after the tabernacle was set up. “On the first day of the second month of the second year after the Israelites had come out of the land of Egypt, the LORD spoke to Moses in the Tent of Meeting in the Wilderness of Sinai” (1:1). Israel had been camped at the mountain for about a year. Nineteen days later the cloud lifted and the camp moved out (10:11).\n\nThe road was not long. Deuteronomy says in passing that it takes eleven days to go from Horeb, another name for Sinai, to Kadesh-barnea on the southern edge of Canaan (Deuteronomy 1:2). Israel reached Kadesh, sent scouts into the land, and refused to follow them in. After that the book passes over most of the wilderness years in near silence. Deuteronomy counts thirty-eight years from Kadesh to the crossing of the Brook of Zered (Deuteronomy 2:14). The story picks up again in the fortieth year, when Aaron dies on Mount Hor (33:38), and it ends ‘on the plains of Moab by the Jordan across from Jericho’ (36:13).\n\nSo the book moves through three places: the Wilderness of Sinai (1:1 to 10:10), the dry country between Sinai and Canaan with Kadesh as its base (10:11 to 20:21), and the road around Edom to the plains of Moab (20:22 to 36:13). The next book, Deuteronomy, is set on those same plains. It holds Moses' last words to the new generation before he dies. Joshua then tells of the crossing of the Jordan."
+      },
+      {
+        "id": "names",
+        "h": "Why it is called Numbers, and ‘In the wilderness’",
+        "body": "The book has two names, and each tells part of the truth about it.\n\nThe English name comes through Latin from the old Greek translation of the Old Testament, the Septuagint, which called the book Arithmoi, ‘numbers’. The name points to the two great counts of the people. In chapter 1 Moses counts the men of fighting age in the generation that left Egypt. In chapter 26 he counts again, on the plains of Moab, and not one man from the first list is left except Caleb and Joshua (26:64-65). The two lists frame the book: one generation gone and another in its place.\n\nThe Hebrew name is Bemidbar, ‘in the wilderness’, taken from the book's first sentence. That is where nearly everything happens. The wilderness in Numbers is a real place, dry and dangerous. It is also a time of testing. Moses later told the children of that generation, “Remember that these forty years the LORD your God led you all the way in the wilderness, so that He might humble you and test you in order to know what was in your heart” (Deuteronomy 8:2).\n\nA new reader should know that the wilderness is not only a place of punishment. The manna fell every morning of those years. Water came from rock. The cloud never left. The same pages that record Israel's failures record God's daily care."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "Numbers names no author. Jewish and Christian tradition has long credited Moses with the five books of the Torah. The book itself says that Moses wrote down the stages of the march at the LORD's command (33:2), and most of it is presented as God's speech to Moses. Readers who hold that Moses is the source of the book's substance generally allow for some later editing. The remark that Moses was ‘a very humble man, more so than any man on the face of the earth’ (12:3) reads more naturally as someone else's comment. The book also quotes older writings, among them a poem from ‘the Book of the Wars of the LORD’ (21:14), which is now lost.\n\nSince the nineteenth century most critical scholars have held that the first five books were woven together from several written strands over a long time. On that view much of Numbers, with its lists and priestly laws, belongs to a priestly source often dated to the exile in Babylon or after it, joined to older stories of the wilderness. These scholars usually date the finished book to the Persian period, after 539 BC, while granting that it holds much older poems, lists and traditions.\n\nWhen the events took place depends on the date of the exodus, which is debated. An earlier date, about 1446 BC, rests largely on 1 Kings 6:1. A later date, in the thirteenth century BC, rests on the mention of the city Rameses in Exodus 1:11 and on the archaeology of Canaan. Some scholars doubt that the wilderness years can be dated at all.\n\nTwo finds bear on the age of the book's material without settling these questions. Two tiny silver scrolls found at Ketef Hinnom in Jerusalem in 1979, dated to about 600 BC, carry a form of the priests' blessing of 6:24-26. And an inscription in ink on a plastered wall at Tell Deir Alla in the Jordan Valley, found in 1967 and usually dated to about the eighth century BC, tells of a seer named Balaam son of Beor, the same name as the prophet of chapters 22 to 24. Christians who confess the Bible as God's word hold more than one view of how the book came to be. These notes do not settle the question."
+      },
+      {
+        "id": "built",
+        "h": "How Numbers is built",
+        "body": "Numbers mixes more kinds of writing than any other book of the Torah: lists of names, laws, stories, travel records and poems. A new reader is tempted to skip the lists and laws and read only the stories. It helps to see how the book is laid out, and to notice that the laws are often placed where they answer the story around them.\n\nChapters 1 to 10 are set at Sinai. The people are counted. The tribes are given their places around the tent, with the Levites nearest. Laws keep the camp fit for God's presence. The priests are given the words of blessing, the leaders bring gifts, the Passover is kept a second time, and silver trumpets are made to signal the march.\n\nChapters 10 to 12 tell of the first days on the road and the first complaints. Chapters 13 and 14 are the turning point: the scouts, the refusal, and the sentence of forty years.\n\nChapters 15 to 19 hold more laws and the revolt of Korah. Chapter 15 begins with the words ‘After you enter the land that I am giving you as a home’ (15:2). They come straight after the sentence of death in the desert, and they are a quiet promise that Israel still has a future.\n\nChapters 20 and 21 carry the people toward Moab. Miriam and Aaron die. Moses himself fails at the rock. Chapters 22 to 25 tell of Balaam, who is hired to curse Israel and can only bless, and then of Israel's fall into idolatry at Peor.\n\nChapters 26 to 36 belong to the new generation. They are counted, they are given a new leader in Joshua, and they receive laws for a land they do not yet hold. The scholar Dennis Olson, in a study published in 1985, showed how the two counts divide the book into the death of the old generation and the birth of the new."
+      },
+      {
+        "id": "camp",
+        "h": "God in the middle of the camp",
+        "body": "The first ten chapters can seem dry, but they make one point with great care. Israel is arranged around God. “The Israelites are to camp around the Tent of Meeting at a distance from it, each man under his standard, with the banners of his family” (2:2). Three tribes camp on each side. The Levites camp between the tribes and the tent and carry it when the camp moves. God is at the center of the map, and everything else takes its place from him.\n\nThe census total is 603,550 men of twenty years and older (1:46). With women and children that would mean two million people or more, and readers have long asked how such a number fits the Sinai desert. Christians read the figure in more than one way. Some take the number as it stands. They note that the tribal totals add up exactly and that God's power is not limited by what seems likely. Others point out that the Hebrew word elef, usually ‘thousand’, can also mean a clan or a military unit, as in Judges 6:15, and that read this way the company would be far smaller. George Mendenhall proposed a form of this reading in 1958. Each reading has its difficulty. The first must explain how so great a number fits what is known of the land. The second must explain why the lists add up as if they were thousands. Christians who hold Scripture as God's word are found on both sides, and these notes take no side. The note on Exodus 12:37 says more.\n\nBecause God lives in the camp, the camp must be kept clean (5:3). Chapters 5 and 6 hold laws that follow from this. One of them, the test for a wife whose husband suspects her of adultery (5:11-31), is among the hardest passages in the book for a modern reader, and the chapter note faces it honestly. Another is the vow of the Nazirite, by which an ordinary man or woman could be set apart to God for a time.\n\nThen comes one of the best-loved passages in the Bible. The priests are to bless the people with these words: ‘May the LORD bless you and keep you; may the LORD cause His face to shine upon you and be gracious to you; may the LORD lift up His countenance toward you and give you peace’ (6:24-26). God adds, “So they shall put My name on the Israelites, and I will bless them” (6:27). The blessing is God's own gift. The priests only speak it. It is one of the oldest and best-loved blessings in the Bible, and the silver scrolls from Ketef Hinnom show that it was treasured in Jerusalem before the exile.\n\nThe section ends with the cloud. When it lifted, the people set out. When it settled, they camped, whether for two days or a month or longer. “They camped at the LORD’s command, and they set out at the LORD’s command” (9:23)."
+      },
+      {
+        "id": "complaints",
+        "h": "The complaints, and the refusal at Kadesh",
+        "body": "Soon after the camp leaves Sinai the complaining begins, and it follows a pattern that repeats through the middle of the book. The people complain. God's anger burns. Moses prays. The judgment is stopped or softened. Then it happens again.\n\nIn chapter 11 the people weep for the food of Egypt: ‘We remember the fish we ate freely in Egypt’ (11:5). The memory is false. In Egypt they were slaves. Moses breaks under the weight and asks to die: “I cannot carry all these people by myself; it is too burdensome for me” (11:14). God does not rebuke him. He gives him seventy elders to share the load. He also sends quail, and then a plague among those who craved it. In chapter 12 Moses' own sister and brother, Miriam and Aaron, speak against him, and Miriam is struck with a skin disease and kept outside the camp for seven days. That story has sometimes been misused to say things about skin or race or illness. The chapter says none of them, and the note on chapter 12 sets this out.\n\nThen comes Kadesh. Twelve scouts spend forty days in Canaan and come back carrying its fruit. All twelve agree that the land is good. Ten of them say it cannot be taken: “We cannot go up against the people, for they are stronger than we are!” (13:31). Two, Caleb and Joshua, say that it can, because God is with Israel. The people believe the ten. They weep all night and say, “Let us appoint a leader and return to Egypt” (14:4).\n\nGod's question shows what the refusal was: “How long will they refuse to believe in Me, despite all the signs I have performed among them?” (14:11). The people had not miscounted the enemy. They had decided that God could not be trusted. Moses pleads for them by quoting God's own description of himself, ‘slow to anger and abounding in loving devotion’ (14:18), and God answers, “I have pardoned them as you requested” (14:20). The nation is not destroyed, and the promise stands. But the adults who refused the land will not enter it. They will wander forty years, a year for each day the scouts were gone, and their children, the very children they said would be carried off, will go in (14:31-34).\n\nPardon and consequence stand side by side here. God forgave, and the refusal still shaped the lives of those who made it. Whether Moses' prayer changed God's mind, or was itself part of God's purpose, is a question Christians answer in different ways, and the chapter note sets them out."
+      },
+      {
+        "id": "rebellion",
+        "h": "Rebellion, priests, and Moses at the rock",
+        "body": "The years after Kadesh hold the book's sharpest conflicts over who may lead and who may come near to God.\n\nIn chapter 16 a Levite named Korah, with Dathan, Abiram and 250 leaders, rises against Moses and Aaron. Their claim sounds fair: the whole congregation is holy, so why should Moses and Aaron stand above it? The story treats the claim as a grab for the priesthood. The ground opens under the rebels, and fire burns up the 250. The next day the people blame Moses for the deaths, and a plague breaks out. Aaron takes a censer of incense and runs into the middle of the dying. “He stood between the living and the dead, and the plague was halted” (16:48). The priest the rebels wanted removed is the one who saves them.\n\nThese are severe pages, and a reader should feel that. They are told as events at a particular moment in Israel's beginning. They are not offered as a picture of how God deals with every doubt or question, and they give no leader today the right to call a critic a Korah.\n\nChapter 17 confirms Aaron's priesthood with a sign of life, a dead staff that buds and bears almonds. Chapter 18 sets out the duties and support of priests and Levites. Chapter 19 gives the rite of the red heifer, by which a person made unclean by touching the dead could be made clean again. In a book where a whole generation is dying, that law is a mercy.\n\nIn chapter 20 the first generation's leaders reach their end. Miriam dies. The people cry out for water, and God tells Moses to speak to a rock. Moses says, “Listen now, you rebels, must we bring you water out of this rock?” and strikes it twice (20:10-11). Water pours out. But God says to Moses and Aaron, ‘Because you did not trust Me to show My holiness in the sight of the Israelites, you will not bring this assembly into the land’ (20:12). Readers have long discussed exactly what the fault was: the striking, the angry words, or the ‘we’. God's own verdict names a failure of trust. Before the chapter ends Aaron dies on Mount Hor, and his son Eleazar wears his robes.\n\nEven Moses is not above the book's judgment. And even so, God does not cast him off. He leads the people to the end."
+      },
+      {
+        "id": "road",
+        "h": "The road to Moab: the snake, the wars, Balaam and Peor",
+        "body": "Chapter 21 opens with the last complaint of the wilderness and one of the strangest cures in the Bible. The people speak against God and Moses. Venomous snakes come among them, and many die. The people confess, Moses prays, and God says, “Make a fiery serpent and mount it on a pole. When anyone who is bitten looks at it, he will live” (21:8). The snakes are not taken away. A way to live is given, and it works by looking. Jesus later used this very scene to explain his own death (John 3:14-15).\n\nThen Israel fights its first wars east of the Jordan. Sihon, an Amorite king, refuses passage and attacks, and Og of Bashan does the same. Israel defeats both and takes their land. These accounts, and the vow against Arad at the start of the chapter, use the language of total destruction. They belong with the wider question of the conquest, which is taken up below.\n\nBalak, king of Moab, watches all this in fear and hires a famous seer, Balaam, to curse Israel (chapters 22 to 24). The story has humor in it. The seer cannot see the angel that his own donkey sees. Four times Balaam opens his mouth to curse, and four times he blesses. “God is not a man, that He should lie, or a son of man, that He should change His mind” (23:19). In his last oracle he looks far ahead: “I see him, but not now; I behold him, but not near. A star will come forth from Jacob, and a scepter will arise from Israel” (24:17). Jewish readers before the time of Jesus read this as a promise of a coming king, and Christians have read it of Christ. The note on chapter 24 sets out both.\n\nAll this time Israel knows nothing of it. The people are camped in the valley while their future is fought over on the heights above them, and God guards them without their knowing.\n\nThe next chapter is the bitter turn. What a curse could not do from outside, Israel does to itself. At Shittim the men of Israel fall into sexual sin with women of Moab and bow down to their gods, joining in the worship of Baal of Peor (25:1-3). A plague kills twenty-four thousand. It stops when the priest Phinehas kills an Israelite leader and a Midianite woman with a spear. The text praises his zeal. Later readers sometimes took the story as a pattern for violence in God's name, and the New Testament does not. No one may use it that way today."
+      },
+      {
+        "id": "new-generation",
+        "h": "The new generation",
+        "body": "After the plague comes the second count (chapter 26). The total, 601,730, is almost what it was at Sinai. The promise to Abraham has outlived the people who refused it.\n\nThe chapters that follow are full of confidence that Israel will soon live in the land. Five sisters, the daughters of Zelophehad, come before Moses and the whole assembly. Their father died with no son, and by custom his name and land would be lost. They ask for his share. Moses brings their case to God, and God answers, “The daughters of Zelophehad speak correctly” (27:7). Their request becomes law for all Israel. The ruling works inside a system in which land passed through sons, and it does not overturn that system. But the book names all five women, three times, and it ends with their story (chapter 36).\n\nMoses, told that he will soon die, asks for one thing: a leader, ‘so that the congregation of the LORD will not be like sheep without a shepherd’ (27:17). God gives Joshua. Chapters 28 to 30 set out the offerings of the year and the rules for vows. The rules about the vows of wives and daughters belong to the households of their world. They are not a rule for any husband's or father's control today.\n\nChapter 31 is one of the hardest chapters in the Bible. God commands war on Midian for the plot at Peor. The army kills the men. Moses then orders the death of the boys and of every woman who has slept with a man, and the girls are kept alive for the Israelites. That is in the text. It should not be softened, and these notes do not defend what cannot be defended. The chapter note sets out how Christians have read it, and it says what must be said: no one may use this chapter to justify violence against any person or people.\n\nThe last chapters look across the river. Two and a half tribes ask to settle east of the Jordan and promise to fight beside their brothers first (chapter 32). The stages of the forty years are listed (chapter 33). The borders are drawn (chapter 34). Towns are set aside for the Levites, and six of them are cities of refuge, where a person who has killed someone by accident can flee and be heard before anyone takes revenge (chapter 35). The reason given shows how much a human life is worth in this book: ‘bloodshed pollutes the land’ (35:33), and God says, “For I, the LORD, dwell among the Israelites” (35:34)."
+      },
+      {
+        "id": "violence",
+        "h": "The wars and judgments in the book",
+        "body": "Numbers has more hard pages than most books of the Bible, and a new reader deserves a plain word about them.\n\nSome are judgments of God on Israel itself: fire at the edge of the camp, plague, the earth opening under Korah, the snakes. Some are wars: against Arad, against Sihon and Og, and against Midian. And near the end God commands Israel to drive out the people of Canaan and destroy their idols (33:50-56).\n\nChristians who receive these books as God's word read the wars in more than one way, as the site's pages on the conquest set out. Some take the accounts as they stand: God, who gives every life, judged particular peoples at one moment in history, after long patience, and never gave this as a general rule. Some note that ancient reports of war, such as the Moabite king Mesha's inscription of the ninth century BC, used sweeping language of total destruction as a common way of describing victory, and read the Bible's language in that light. Some read these texts as God meeting an ancient people within the limits of their world, to be read in the light of Christ; others object that this weakens the authority of Scripture. Each reading has a cost, and the site takes no side among them.\n\nSeveral things hold on every reading. The book judges Israel by the same standard, and more often. It warns that if Israel takes up the ways of the nations, ‘I will do to you what I had planned to do to them’ (33:56). The commands were tied to one land and one time. They name no modern nation, people or conflict. The New Testament never renews them. Jesus rebuked disciples who wanted to call down fire on a village (Luke 9:54-55). And no one may use any page of this book as a reason for violence against anyone.\n\nA reader who finds these chapters painful is reading them with a conscience the Bible itself formed. Abraham asked God, “Will not the Judge of all the earth do what is right?” (Genesis 18:25), and he was not rebuked for asking."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads Numbers",
+        "body": "The New Testament returns to Numbers often, and it draws its own lines from the book.\n\nJesus draws one himself. Speaking of his death, he said, “Just as Moses lifted up the snake in the wilderness, so the Son of Man must be lifted up, that everyone who believes in Him may have eternal life” (John 3:14-15). The people in the desert were dying, God provided the cure, it was lifted up where all could see, and it worked by looking in trust.\n\nPaul retells the wilderness story to the church at Corinth. All Israel had the cloud, the sea, the food and the drink, ‘and that rock was Christ’ (1 Corinthians 10:4). Yet most of them fell. “Now these things happened to them as examples and were written down as warnings for us” (1 Corinthians 10:11). Paul's warnings are written to the church. He is not telling Christians to look down on Israel. He is telling people who feel safe to look at themselves: “So the one who thinks he is standing firm should be careful not to fall” (1 Corinthians 10:12).\n\nThe letter to the Hebrews builds a long warning on Kadesh, using Psalm 95. “So we see that it was because of their unbelief that they were unable to enter” (Hebrews 3:19). Then it turns the story into a promise: “There remains, then, a Sabbath rest for the people of God” (Hebrews 4:9). The rest Israel refused is still held out. Hebrews, too, is addressed to believers, and its concern is their own hearts.\n\nOther echoes are quieter. Mark says that Jesus saw the crowds ‘like sheep without a shepherd’ (Mark 6:34), the words of Moses' prayer in 27:17. Jude and Peter name Balaam and Korah as warnings to teachers who serve themselves (Jude 1:11; 2 Peter 2:15). And where Israel failed its tests over forty years in the wilderness, the Gospels show Jesus tested for forty days in the wilderness and remaining faithful (Matthew 4:1-2).\n\nOne thing must be said plainly. The Bible's own writers, Israelites themselves, recorded these failures for Israel's good, and psalms such as Psalm 78 and Psalm 106 sing of them in worship. The wilderness story is never a reason to blame or despise the Jewish people. The New Testament reads it as a mirror for the church."
+      },
+      {
+        "id": "readers",
+        "h": "How to read Numbers",
+        "body": "Numbers is Israel's Scripture first, and its words are woven into Jewish life. The command to wear tassels on the corners of a garment (15:37-41) became the third paragraph of the Shema, the confession recited morning and evening in Jewish prayer, and Jewish men still wear the tassels. Christians have heard the priests' blessing echoed in the grace and peace with which Paul opens and closes his letters.\n\nA few habits will help a new reader.\n\nRead the stories and the laws together. A law often answers the story beside it, as chapter 15 answers chapter 14.\n\nWatch the two generations. Ask of any chapter which generation is on stage, and compare the first count with the second.\n\nWatch Moses pray. Again and again one person stands between a guilty people and what they deserve, and God listens.\n\nDo not make the wilderness smaller than it was. The book does not hide Israel's fear, Moses' exhaustion or the grief of the judgments. It also does not hide the manna on the ground each morning.\n\nAnd read it as the New Testament does, as a book for people who have been rescued and are not yet home. It asks every generation the question it asked at Kadesh. The land was good, and all twelve scouts said so. The only matter in doubt was whether God could be trusted with what lay ahead."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 46,
+        "ref": "1:46",
+        "line": "603,550 men of fighting age: the readings of the census totals, set out with no side taken."
+      },
+      {
+        "ch": 5,
+        "v": 14,
+        "ref": "5:11-31",
+        "line": "The test for a wife suspected of adultery: what it permitted, what it restrained, and why it is no warrant for suspicion or control of any woman."
+      },
+      {
+        "ch": 11,
+        "v": 33,
+        "ref": "11:31-34",
+        "line": "Quail, then a plague: the craving for Egypt and the judgment that followed."
+      },
+      {
+        "ch": 12,
+        "v": 10,
+        "ref": "12:1-15",
+        "line": "Miriam is struck with a skin disease. Why this is never a statement about skin, race or illness."
+      },
+      {
+        "ch": 14,
+        "v": 20,
+        "ref": "14:11-35",
+        "line": "Pardoned, and still barred from the land. Did Moses change God's mind?"
+      },
+      {
+        "ch": 15,
+        "v": 35,
+        "ref": "15:32-36",
+        "line": "A man is put to death for gathering sticks on the Sabbath. What the passage says and what it does not license."
+      },
+      {
+        "ch": 16,
+        "v": 32,
+        "ref": "16:1-35",
+        "line": "Korah's revolt and the earth that opened: a judgment at Israel's beginning, and no weapon against a critic today."
+      },
+      {
+        "ch": 20,
+        "v": 12,
+        "ref": "20:2-13",
+        "line": "Moses strikes the rock and is barred from the land. What was the fault?"
+      },
+      {
+        "ch": 21,
+        "v": 8,
+        "ref": "21:4-9",
+        "line": "A bronze snake on a pole, and how Jesus reads it in John 3:14-15."
+      },
+      {
+        "ch": 21,
+        "v": 35,
+        "ref": "21:21-35",
+        "line": "The wars with Sihon and Og, and how Christians read the language of total destruction."
+      },
+      {
+        "ch": 22,
+        "v": 22,
+        "ref": "22:20-35",
+        "line": "God tells Balaam to go and is then angry that he goes; and a donkey speaks."
+      },
+      {
+        "ch": 24,
+        "v": 17,
+        "ref": "24:17",
+        "line": "A star from Jacob: how Jewish and Christian readers have understood Balaam's oracle."
+      },
+      {
+        "ch": 25,
+        "v": 8,
+        "ref": "25:6-13",
+        "line": "Phinehas and the spear: why his zeal is no warrant for violence today."
+      },
+      {
+        "ch": 30,
+        "v": 5,
+        "ref": "30:3-16",
+        "line": "A father or husband may cancel a woman's vow: a law of its world, not a rule for control today."
+      },
+      {
+        "ch": 31,
+        "v": 17,
+        "ref": "31:13-18",
+        "line": "The command against Midian, the killing of captives and the keeping of the girls: one of the hardest chapters in the Bible, faced without softening."
+      },
+      {
+        "ch": 33,
+        "v": 52,
+        "ref": "33:50-56",
+        "line": "Driving out the people of the land: read with the site's pages on the conquest, with no modern nation or conflict in view."
+      },
+      {
+        "ch": 35,
+        "v": 31,
+        "ref": "35:9-34",
+        "line": "The cities of refuge, the avenger of blood, and the value the law sets on a human life."
+      }
+    ],
+    "words": [
+      {
+        "word": "Bemidbar",
+        "line": "‘In the wilderness’, the Hebrew name of the book, from its first sentence (1:1)."
+      },
+      {
+        "word": "Arithmoi",
+        "line": "‘Numbers’, the name given to the book in the old Greek translation, after the two counts of the people (chapters 1 and 26)."
+      },
+      {
+        "word": "Elef",
+        "line": "Hebrew for ‘thousand’. It can also mean a clan or a military unit, which is why the census totals are read in more than one way (1:46)."
+      },
+      {
+        "word": "Tent of Meeting",
+        "line": "The tabernacle, the tent at the center of the camp where God lived among his people and spoke with Moses (1:1; 2:2)."
+      },
+      {
+        "word": "Levites",
+        "line": "The tribe set apart to carry and guard the tabernacle. They camped between the tent and the other tribes (1:50-53)."
+      },
+      {
+        "word": "Nazirite",
+        "line": "A man or woman set apart to God for a time by a vow: no wine, no cutting of the hair, no contact with the dead (6:1-21)."
+      },
+      {
+        "word": "The cloud",
+        "line": "The sign of God's presence over the tabernacle, cloud by day and the look of fire by night. Israel moved only when it lifted (9:15-23)."
+      },
+      {
+        "word": "Manna",
+        "line": "The bread God gave each morning in the wilderness. The people grew tired of it and longed for the food of Egypt (11:4-9)."
+      },
+      {
+        "word": "Kadesh",
+        "line": "The oasis on the southern edge of Canaan where the scouts reported, the people refused the land, and Miriam died (13:26; 20:1)."
+      },
+      {
+        "word": "Meribah",
+        "line": "‘Quarreling’, the name given to the waters where Israel quarreled with the LORD and Moses struck the rock (20:13)."
+      },
+      {
+        "word": "Nehushtan",
+        "line": "The name later given to the bronze snake Moses made. It had become an idol, and King Hezekiah broke it up (21:9; 2 Kings 18:4)."
+      },
+      {
+        "word": "Baal of Peor",
+        "line": "The god worshiped at Peor, on the heights above the plains of Moab, where Israel fell into idolatry (25:3)."
+      },
+      {
+        "word": "Go'el",
+        "line": "The redeemer, the nearest relative. In chapter 35 he is the ‘avenger of blood’, and the cities of refuge restrain him (35:12)."
+      },
+      {
+        "word": "City of refuge",
+        "line": "One of six towns where a person who had killed someone by accident could flee and be heard before anyone took revenge (35:11)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "The eighteenth century BC",
+        "what": "Texts from Mari in Syria describe the mustering of tribal groups for military service, as the census of chapter 1 does.",
+        "kind": "world"
+      },
+      {
+        "when": "About 1750 BC",
+        "what": "The Code of Hammurabi in Babylon sends a wife accused by others to the river ordeal, in which an innocent woman could drown. The rite of Numbers 5 uses nothing that could harm.",
+        "kind": "world"
+      },
+      {
+        "when": "About 1446 BC, or the 1200s BC",
+        "what": "The two main dates proposed for the exodus. The wilderness years follow whichever is right.",
+        "kind": "world"
+      },
+      {
+        "when": "The second year, second month, first day",
+        "what": "At Sinai, a year after leaving Egypt, the LORD commands the first count of the people (1:1).",
+        "kind": "story"
+      },
+      {
+        "when": "The second year, second month, twentieth day",
+        "what": "The cloud lifts from the tabernacle and Israel sets out from Sinai (10:11).",
+        "kind": "story"
+      },
+      {
+        "when": "Soon after",
+        "what": "At Kadesh the scouts return after forty days. The people refuse the land and are sentenced to forty years in the wilderness (13:25; 14:34).",
+        "kind": "story"
+      },
+      {
+        "when": "About thirty-eight years",
+        "what": "The years of wandering, passed over almost in silence. Deuteronomy counts thirty-eight years from Kadesh to the Brook of Zered (Deuteronomy 2:14).",
+        "kind": "story"
+      },
+      {
+        "when": "The fortieth year, fifth month, first day",
+        "what": "Aaron dies on Mount Hor, one of the few exact dates in the book (33:38).",
+        "kind": "story"
+      },
+      {
+        "when": "The fortieth year",
+        "what": "Israel camps on the plains of Moab across from Jericho. Balaam blesses, Israel falls at Peor, and the new generation is counted (22:1; 26:63).",
+        "kind": "story"
+      },
+      {
+        "when": "The ninth century BC",
+        "what": "Mesha, king of Moab, sets up an inscription crediting his god Chemosh with victories over Israel. It names towns that appear in Numbers 21. It was found at Dhiban in 1868.",
+        "kind": "world"
+      },
+      {
+        "when": "About the eighth century BC",
+        "what": "An inscription on a plastered wall at Tell Deir Alla in the Jordan Valley tells of a seer named Balaam son of Beor. It was found in 1967.",
+        "kind": "world"
+      },
+      {
+        "when": "About 600 BC",
+        "what": "Two small silver scrolls from Ketef Hinnom in Jerusalem carry a form of the priests' blessing of 6:24-26. They were found in 1979.",
+        "kind": "world"
+      },
+      {
+        "when": "The second century BC",
+        "what": "In the Maccabean revolt the priest Mattathias is compared to Phinehas for his zeal (1 Maccabees 2:26).",
+        "kind": "book"
+      },
+      {
+        "when": "AD 132",
+        "what": "Simon bar Kosiba, leader of the second Jewish revolt against Rome, is hailed as Bar Kokhba, which means son of the star, after the oracle of 24:17.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 200",
+        "what": "The Mishnah is compiled. It holds a whole tractate on the rite of Numbers 5 and records that the rite had been given up in the first century.",
+        "kind": "book"
+      },
+      {
+        "when": "1958",
+        "what": "George Mendenhall proposes that elef in the census lists means a military unit, not a thousand.",
+        "kind": "book"
+      },
+      {
+        "when": "1985",
+        "what": "Dennis Olson publishes The Death of the Old and the Birth of the New, on the two generations that shape the book.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The land the scouts saw, and where the book ends",
+        "places": [
+          {
+            "id": "hebron",
+            "name": "Hebron",
+            "lat": 31.525,
+            "lon": 35.102,
+            "refs": [
+              "13:22"
+            ],
+            "line": "The scouts ‘went up through the Negev and came to Hebron’ (13:22), where Abraham had lived. They saw strong people there and lost heart."
+          },
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "22:1",
+              "26:63",
+              "36:13"
+            ],
+            "line": "The book ends with Israel camped ‘in the plains of Moab near the Jordan, across from Jericho’ (22:1). The plains lay east of the river; the town is across it, in Canaan.",
+            "label": {
+              "dx": -8,
+              "dy": -6,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "22:1",
+              "35:10"
+            ],
+            "line": "The river between the camp and the land. The last laws of the book begin, ‘When you cross the Jordan into the land of Canaan’ (35:10).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "32:1",
+              "32:29"
+            ],
+            "line": "The hill country east of the Jordan. The tribes of Reuben and Gad saw that it was good for livestock and asked to settle there (32:1). Drawn roughly.",
+            "region": true
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only four places are drawn, each one placed elsewhere on this site. Mount Sinai, Kadesh, Mount Hor and most of the camps of chapter 33 are left off, because where they lay is debated or unknown, and no route is drawn, because the way Israel went is not known. Kadesh is often placed at the springs of Ain el-Qudeirat in the northeast of the Sinai Peninsula, south of this map.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-law",
+        "name": "Reading the Law",
+        "line": "How the laws sit inside the story, and how Jews and Christians have related them to life",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-narrative",
+        "name": "Reading the Stories",
+        "line": "How the Bible tells its stories, and why its heroes are rarely models",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/offerings-and-purity",
+        "name": "Offerings, Priests, and Purity",
+        "line": "The offerings, the priests and Levites, and clean and unclean",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/holiness",
+        "name": "Holiness",
+        "line": "Behind the camp arranged around the tent",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/faith",
+        "name": "Faith and Faithfulness",
+        "line": "Behind the refusal at Kadesh (chapters 13 and 14)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/judgment",
+        "name": "Judgment and Justice",
+        "line": "Behind the judgments of the wilderness",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/providence",
+        "name": "Providence",
+        "line": "Behind the cloud, the manna and Balaam's blessings",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/the-violence-of-the-old-testament",
+        "name": "Why Is the Old Testament So Violent? An Honest Look",
+        "line": "Behind the wars of chapters 21 and 31",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/old-testament/the-command-to-destroy-the-canaanites",
+        "name": "The command to destroy the Canaanites",
+        "line": "The objection at its strongest, and how Christians read these commands",
+        "icon": "people"
+      },
+      {
+        "href": "/answers/did-god-command-genocide",
+        "name": "Did God command genocide in the Old Testament?",
+        "line": "An Honest Answer on the hardest question the conquest raises",
+        "icon": "people"
+      }
+    ]
+  }
 }
