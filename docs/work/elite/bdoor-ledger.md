@@ -14142,3 +14142,25 @@ Cut: Job and Jeremiah as others who asked to die, which no note in the repositor
 | Psalm 16:5; Psalm 73:26; Nehemiah 13:10 | 20-32 | numbers/18.json `christ`; BSB | BSB text |
 | Tithing: the two Christian answers; no side | 20-32 | numbers/18.json `hard` | Repository; no side |
 | Care paragraph on money pressed out of people | 20-32 | leviticus/plain/27.json 26-34 `hard`; 1-timothy/plain/6.json 3-10 `hard` | Reused whole, word for word |
+
+## The plain notes on Numbers 16 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The crisis turns inward; two complaints woven, and how scholars read that; Kohathites and Reubenites on the south side; ‘milk and honey’ said of Egypt; the repeated phrases; ‘congregation’ nineteen times | 1-15 | numbers/16.json `story`, `historical`, `literary`, `cultural`, `words` (H5712) | Repository; no side |
+| Psalm 106:16; Hebrews 5:4-5; 2 Timothy 2:19 | 1-15 | numbers/16.json `christ`; BSB | BSB text |
+| Was Korah right: Exodus 19:6; 11:29; 1 Peter 2:9; verse 10; Galatians 2:11 | 1-15 | BSB | BSB text |
+| The misuse of the chapter against critics, named and rejected | 1-15 | The run's content rule | A caution of these notes |
+| Care paragraph: nothing here shields a leader who does harm | 1-15 | 1-timothy/plain/3.json 1-7 `hard` | Reused whole, word for word |
+| The test of the censers and Leviticus 10; the line drawn in answer to the prayer; Sheol | 16-35 | numbers/16.json `cultural`, `words` (H7585) | Repository |
+| Deuteronomy 24:16; 26:11; the sons of Korah and Psalm 84:10; Jude 1:11 | 16-35 | numbers/16.json `hard`, `christ`; BSB | Repository; BSB text |
+| The households: corporate identity, the warning, not a rule; Ezekiel 18; the sons of Korah; Genesis 18:25 | 16-35 | numbers/16.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository |
+| Care paragraph against reading a death as God's punishment | 16-35 | acts/plain/5.json 1-6 `hard` | Reused whole, word for word |
+| The censers holy, hammered onto the altar as a sign | 36-40 | numbers/16.json `cultural` | Repository |
+| Exodus 38:2; 1 Corinthians 10:11, written to the church | 36-40 | BSB | BSB text |
+| Aaron's run; the censer of presumption become the means of rescue; the chapter ends with intercession | 41-50 | numbers/16.json `christ`, `literary`, `words` (H4289) | Repository |
+| Psalm 106:23; Hebrews 7:25, a pattern | 41-50 | numbers/16.json `christ`; BSB | BSB text |
+
+Cut: a reason why Eleazar and not Aaron handled the censers, which no note in the repository gives.
