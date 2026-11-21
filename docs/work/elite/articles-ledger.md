@@ -158,3 +158,50 @@ Written to agree with the live Honest Answer `what-does-the-bible-say-about-mone
 | Scripture (ESV): Mark 10:21-22, 10:25-27; Luke 6:24, 8:3, 19:9; Matthew 6:21, 6:24, 27:57; Acts 4:32, 4:34, 5:4; 1 Timothy 6:5, 6:9-10, 6:17-18; James 2:2-3 (cited), 5:1, 5:4; Philippians 4:12; 2 Corinthians 8:9; John 12:6; Proverbs 30:8-9 | ESV copy, by script | Words verified |
 
 Cut or held back: Basil's own sermons to the rich and on the barns (no printed public-domain translation could be opened; he appears only through Gregory's oration, which could); the better-known modern wording of Chrysostom ("theft from the poor"), which is from a translation still in copyright that could not be opened; Wesley's later sermons on the danger of riches; any name or date for the prosperity teaching's founders; any figure for world income.
+
+---
+
+# Second run (2026-11-21)
+
+Five more essays. What the run could reach was the same as before: this repository and public GitHub repositories. Sources opened in this run, beyond those listed at the top:
+
+- **Evans-TCP**: Text-Creation-Partnership/Evans-TCP, the Text Creation Partnership's transcriptions of early American printed books (Evans Early American Imprints), `evans/XML/`. N20688 = Absalom Jones and Richard Allen, *A Narrative of the Proceedings of the Black People, during the late Awful Calamity in Philadelphia* (Philadelphia, 1794), with its "Address to those who keep Slaves". N18125 = John Leland, *The Rights of Conscience Inalienable* (1791). N09952 = Isaac Backus, *An Appeal to the Public for Religious Liberty* (Boston, 1773). N16494 = Samuel Langdon, *The Republic of the Israelites an Example to the American States* (election sermon, Concord, New Hampshire, 5 June 1788). N14363 = Ezra Stiles, *The United States Elevated to Glory and Honor* (election sermon, Hartford, 1783). N15010 = Samuel Hopkins, *A Dialogue concerning the Slavery of the Africans* (1776; the 1785 reprint). N16207 = the Northwest Ordinance as printed in 1787. Titles, authors and years are from the partnership's catalogue (textcreationpartnership/Texts, `TCP.csv`). The transcriptions mark a line-end hyphen with a bar; words are quoted joined.
+- **PG (GITenberg)**: 23 = Douglass, *Narrative* (1845), with its Appendix. 28148 = *Cotton Is King, and Pro-Slavery Arguments*, ed. E. N. Elliott (Augusta, Georgia: Pritchard, Abbott and Loomis, 1860; title page read), holding Thornton Stringfellow's "The Bible Argument: or, Slavery in the Light of Divine Revelation". 28054 = Dostoevsky, *The Brothers Karamazov*, translated by Constance Garnett. 65739 = Roger Williams, *The Bloudy Tenent of Persecution* (1644), in Edward Bean Underhill's edition.
+- **Mishnah**: kidaa/Sefaria-Export (a copy of Sefaria's export), `json/Mishnah/Seder Nashim/Mishnah Gittin/English/merged.json`, whose English is credited there to the Sefaria Community Translation and *Eighteen Treatises from the Mishnah*.
+- **Trent**: BenjaminPoole/ecumenical-christian-library, `councils/trent-1545/session-xxiv.html`, marked "adapted from Hanover Historical Texts" (the nineteenth-century English translation).
+- **Madison**: jeffpar/lonedissent, `sources/loc/volumes/text/301-400/330/330us001.txt`, a scan of volume 330 of the *United States Reports*, whose appendix reprints the *Memorial and Remonstrance* whole. The scan has stray marks from the machine reading; only clean clauses are quoted.
+- **Douglass 1852**: siznax/blacklivesmatter, `douglass-1850-july-fourth.md`, an abridged copy of the Rochester speech of 5 July 1852.
+- **WD** (the same commit as before): Didache; Tertullian, *On Baptism*; Cyprian, Epistle 58 (to Fidus); Gregory of Nazianzus, Oration 40; Shepherd of Hermas, Commandment 4; Augustine, *On the Good of Marriage*; Basil, Letter 188.
+
+Every Scripture quotation was compared with the ESV copy by the same script.
+
+## 6. what-the-church-got-wrong-about-race
+
+No party, candidate, law of our own day, court case or movement slogan is named. The three people in the opening paragraph are types. The essay agrees with the live essay `why-didnt-the-bible-ban-slavery` and does not repeat its argument from Leviticus and Exodus.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| English colonists in the 1600s were uneasy about holding fellow Christians as slaves; in 1667 the Virginia assembly declared that baptism did not change whether a person was slave or free | Not opened this run | Reference knowledge; check first |
+| Methodist General Conference of 1844; Bishop James O. Andrew of Georgia had come to own slaves and was asked to stop exercising his office; the Southern conferences organized the Methodist Episcopal Church, South, in 1845 | Repo, history course `the-american-experiment` | Site's own |
+| The Boston mission board would not appoint a slaveholder; Baptists of the slaveholding states met in Augusta, Georgia, in May 1845 and founded their own convention | Repo, `the-american-experiment`; live essay `why-didnt-the-bible-ban-slavery` | Site's own |
+| These were among the largest Protestant bodies in the country | Repo, `the-american-experiment` ("the two largest evangelical bodies in America") | Site's own |
+| A proslavery volume published in Augusta in 1860 included an essay by Thornton Stringfellow | PG 28148, title page and section head | Verified |
+| Stringfellow a Baptist minister in Virginia | Repo, live essay `why-didnt-the-bible-ban-slavery` | Site's own |
+| Stringfellow began with Noah; "God decreed slavery"; "tokens of good-will to the master"; "the Canaanites or Africans, who descended from Ham"; then Abraham, Moses and Paul | PG 28148, Stringfellow's essay, opening pages (the source italicizes "decreed slavery") | Verbatim |
+| Genesis 9: the curse is on Canaan, spoken by Noah, not by God; the Canaanites lived in Canaan, not Africa; nothing about color | ESV copy, Genesis 9:24-27, 10:6; Repo, Study Bible notes, `client/public/bible/notes/genesis/9.json` | Verified |
+| After the war white churches accepted the color line; the curse of Ham was preached in defense of segregation | Repo, `client/public/justice/topics/race-and-image.json`, `justice/timeline.json` | Site's own, older library |
+| Congregations seated Black visitors in the balcony or turned them away at the door | Not opened this run | Reference knowledge, stated generally |
+| Richard Allen born enslaved in 1760, converted under Methodist preaching, bought his freedom; around 1787 he, Absalom Jones and others were pulled from their knees in the gallery by white trustees and walked out; Bethel dedicated 1794; the African Methodist Episcopal Church organized in 1816 with Allen its first bishop | Repo, `the-american-experiment` ("In Allen's own telling"). Allen's memoir could not be opened, so nothing from it is in quotation marks | Site's own |
+| King, a Baptist preacher, wrote from jail in Birmingham in April 1963 to white clergymen who had urged him to wait; his sharpest disappointment was with white moderates | Repo, `justice/timeline.json`, `justice/topics/race-and-image.json`, `justice/witnesses.json`; the month not opened. The letter is in copyright and could not lawfully be opened here, so it is described without quotation | Site's own; "April" reference knowledge |
+| In 1995 the convention founded in Augusta confessed that its founding was bound up with the defense of slavery and that it had defended segregation | Repo, `the-american-experiment` | Site's own |
+| Athens told the story that its people had sprung from its own soil | Not opened this run | Reference knowledge |
+| The modern idea of race grew up in the centuries of the Atlantic slave trade | Not opened this run | Reference knowledge, stated generally |
+| Jones and Allen, 1794: "We wish you to consider, that God himself was the first pleader of the cause of slaves." | Evans-TCP N20688, "An Address to those who keep Slaves, and approve the practice" | Verbatim |
+| Jones and Allen: "children of one father, who made of one blood all the nations of the earth" (said of white friends who "are not ashamed to call the most abject of our race, brethren") | Evans-TCP N20688, the closing address to the friends of the enslaved | Verbatim |
+| The King James Version of Acts 17:26 reads close to this ("hath made of one blood all nations of men") | Not opened in a KJV file this run | Reference knowledge; the essay says "nearly" |
+| Douglass, 1845, seven years out of slavery: "between the Christianity of this land, and the Christianity of Christ, I recognize the widest possible difference" | PG 23, Appendix; "seven years" from the live essay `why-didnt-the-bible-ban-slavery` | Verbatim |
+| Enslaved Christians heard the Exodus as their own story | Repo, live essay `why-didnt-the-bible-ban-slavery` | Site's own |
+| Black Christians differ among themselves over multiethnic congregations and the historic Black churches | Not opened this run | Reference knowledge, stated generally |
+| Scripture (ESV): Genesis 1:27, 9:25, 10:6 (cited); Acts 17:26; Galatians 2:11, 2:14, 3:28; Ephesians 2:14; Revelation 7:9; Matthew 23:30; Ezekiel 18:20; Daniel 9:8; Nehemiah 1:6; Luke 19:8, 19:9; James 2:9 | ESV copy, by script | Words verified |
+
+Cut or held back: any sentence of King's letter and any sentence of the eight clergymen's statement (copyright; not opened); any sentence of Allen's memoir; the second Ham passage in the 1860 volume ("the children of Ham were to be a servile race", by Samuel Cartwright, a physician, not a preacher); the 1807 abridged Bible made for enslaved people; James Henley Thornwell, Benjamin Palmer and the Presbyterian division; any named sermon in defense of segregation (none could be opened); every figure for churches or members.
