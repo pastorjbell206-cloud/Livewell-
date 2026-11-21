@@ -14333,3 +14333,16 @@ Cut for want of a source in the repository: a contrast between ‘hand’ and �
 | Isaiah 66:23; Colossians 2:16-17 | 9-15 | BSB | BSB text |
 | Nisan; the Feast of Weeks at the end of the grain harvest; Pentecost; a goat for atonement at each feast (verse 22) | 16-31 | numbers/28.json `historical`, `christ`; BSB | Repository; BSB text |
 | 1 Corinthians 5:7; Acts 2:1; Hebrews 10:11-12; Passover and Shavuot kept today | 16-31 | numbers/28.json `christ`; guides/calendar-and-festivals.json; leviticus/plain/23.json | Repository; BSB text |
+
+## The plain notes on Numbers 29 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tishri and the end of the farming year; teruah; the shofar in Jewish practice; Rosh Hashanah; the Day of Atonement (Leviticus 16); ‘afflict their souls’; Yom Kippur | 1-11 | numbers/29.json `historical`, `cultural`, `words` (H8643, H6031B) | Repository |
+| Nehemiah 8:2; Hebrews 9:12; ‘a shadow is real’ | 1-11 | numbers/29.json `historical`, `christ`; hebrews/plain/8.json; BSB | Repository; BSB text |
+| Booths and the wilderness (Leviticus 23:42-43); the falling count of bulls; seventy, fourteen and ninety-eight; the Talmud and the seventy nations, not stated in Numbers; seventy-one bulls in eight days; Shemini Atzeret; Sukkot | 12-38 | numbers/29.json `cultural`, `literary`, `historical`, `words` (H6116); guides/calendar-and-festivals.json | Repository |
+| 1 Kings 8:2; Zechariah 14:16; John 7:37 | 12-38 | numbers/29.json `historical`, `christ`; BSB | BSB text |
+| Verses 39-40 close both chapters; public offerings beside vows and freewill gifts; the prophets on sacrifice without justice | 39-40 | numbers/29.json `literary`, `story`; leviticus/intro.json teaching (‘The offerings’) | Repository |
+| Amos 5:21, 24; 2 Corinthians 9:7 | 39-40 | BSB | BSB text |
