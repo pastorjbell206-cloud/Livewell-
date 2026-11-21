@@ -18,7 +18,7 @@ Rules kept in all five: no memory, anecdote, conversation or first-person experi
 
 ## How to take one down
 
-Delete its line from `client/src/lib/shelf.json` and its file from `client/public/essays/`, then run `node scripts/build-essays-index.mjs`. (Changing `"live"` to `"pending"` is not enough while the file is there: a pending essay with a file is public.) The address then answers with the retired notice. Two essays are linked from nowhere else; nothing else needs to change.
+Delete its line from `client/src/lib/shelf.json` and its file from `client/public/essays/`, then run `node scripts/build-essays-index.mjs`. (Changing `"live"` to `"pending"` is not enough while the file is there: a pending essay with a file is public.) The address then answers with the retired notice. Then run `pnpm exec tsx scripts/build-passage-index.mjs` (the chapter pages' "Go deeper" lists name the essay) and lower the counts in `client/src/lib/shelf.test.ts` by one. No other page links to any of the five by hand.
 
 ## The Revision Pass (CLAUDE.md), one line per pass
 
@@ -47,3 +47,11 @@ Not written in this run, from James's list of 2026-11-20:
 2. The shelf has older pending slots on neighboring subjects: "Can Women Be Pastors?" (`women-and-leadership-church`) and "What's Wrong with the Prosperity Gospel?" (`prosperity-gospel-is-not-the-gospel`). Should those slots be dropped now that these essays exist, or rewritten as companions?
 3. The ledger marks some dates and facts "not opened this run" (this machine could reach only GitHub). They are well-known ones, but a second reader with a library should check them, starting with the Catholic Church never having declared any individual to be in hell, and the 1607 end of the Roman hearings on grace.
 4. Scripture wording was checked against a public GitHub copy of the ESV that carries no inner quotation marks. Your ESV API key would settle the punctuation.
+
+## Gates (2026-11-21, after merging the target branch)
+
+In the order run: `pnpm check` passed. The 46 commands of the CI content-gates step: 45 passed on the first run and the passage-index drift check failed, because the new essays cite chapters; the index was rebuilt (54 chapter files) and the check passed. `pnpm test`: first run 5 failures, all in the two tests that hold the shelf's shape (65 essays, 15 live, the family section empty); the counts were updated to 70 and 20 and the empty-section case moved to the American Church section, and the suite then passed (1,938 tests). `pnpm check` again, `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` and `pnpm run audit:canonicals` passed (0 canonical failures; the prerender wrote all five essays from the shelf).
+
+On the served build (`scripts/serve-like-vercel.mjs`, port 4655) at 390 and 1440: each essay's page shows its title as the H1 and its last paragraph, with no sideways scroll; all five are listed on /writing and found by /search; the only failed requests were the local server's missing `/_vercel` scripts and `/api/track`. Night could not be checked: the site's dark mode is switched off for every visitor (the note in `client/src/App.tsx` beside `ThemeProvider`), so the second pass rendered the same light page. Screenshots are in `/home/user/elite-shots/articles/`.
+
+The "Marriage, Family and Ordinary Faithfulness" section now shows on /writing for the first time, with one essay in it.
