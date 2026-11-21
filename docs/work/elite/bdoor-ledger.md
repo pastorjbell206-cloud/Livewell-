@@ -13394,3 +13394,27 @@ Cut before publishing: ‘seven is the number of completeness’ (not in the rep
 | Numbers 6:24-26; 2 Chronicles 7:1; 1 Kings 18:38; Luke 24:50 (‘many readers’; a link of theme) | 22-24 | leviticus/9.json `historical`, `christ`; BSB | BSB text |
 
 Cut before publishing: the Ketef Hinnom scrolls (on the book page's timeline already); Zechariah's silence in Luke 1 and Hebrews 9:24, 28 (true to the deep note, left there).
+
+## The plain notes on Leviticus 10 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The same day as chapter 9; the wording of 9:24 returns in 10:2 | 1-7 | leviticus/10.json `story`, `literary` | Repository |
+| Aaron's eldest sons; they went up Sinai and saw God (Exodus 24:9-11) | 1-7 | leviticus/10.json `story`; BSB | BSB text |
+| The censer; zarah, strange or unauthorized; ‘which he had not commanded them’ against the refrain of chapters 8 and 9 | 1-7 | leviticus/10.json `cultural`, `words` (H2114A), `literary` | Repository |
+| The saying of verse 3 interprets the event; holiness shown in those nearest | 1-7 | leviticus/10.json `literary`, `doctrines` (holiness, judgment) | Repository |
+| New beginnings followed by failure (the garden, the calf, Ananias and Sapphira) | 1-7 | leviticus/10.json `story` | Repository |
+| The signs of mourning; the priests under the anointing; the grief carried by the people | 1-7 | leviticus/10.json `cultural` | Repository |
+| Aaron's silence: the verb, and the three ways it has been read | 1-7 | leviticus/10.json `words` (H1826H) | Repository; no side |
+| Numbers 3:4; Leviticus 16:1; Hebrews 12:28-29; 4:16 | 1-7 | leviticus/10.json `historical`, `christ`; BSB | BSB text |
+| Why they died: the one explanation; the four proposals; the details left open; the founding moment; Uzzah, Ananias and Sapphira; rare, never God's normal way; the offerings of chapters 4 and 5; the grief not made small | 1-7 | leviticus/10.json `hard` | Repository; no side |
+| Elisheba their mother (Exodus 6:23); ‘If you have lost a child, or carry a grief like hers ... places to turn.’ | 1-7 | leviticus/10.json `historical`; exodus/plain/11.json (4-8 `hard`), word for word | Repository |
+| God speaks to Aaron alone, one of the few such speeches | 8-11 | leviticus/10.json `literary` | Repository |
+| The wine rule tied to the two tasks; badal and Genesis 1; chapters 11 to 15 as the content; priests as teachers | 8-11 | leviticus/10.json `cultural`, `words` (H0914), `doctrines` (law); leviticus/11.json `story` | Repository |
+| Ezekiel 44:21, 23; Malachi 2:7; 1 Timothy 3:2-3 | 8-11 | leviticus/10.json `cultural`; BSB | BSB text |
+| The priests' portions still given; the goat that should have been eaten (6:26, 30); Moses angry, Aaron answers, Moses accepts, ‘unusually’ | 12-20 | leviticus/10.json `literary`; leviticus/6.json | Repository |
+| Hosea 6:6; Hebrews 5:2 | 12-20 | BSB | BSB text |
+
+Cut before publishing: the cousins' names and the family tree; Korah's 250 men and King Uzziah (true to the deep note, left there); 1 Peter 4:17. The note says in its own words that the story is not a threat held over ordinary worshipers; that sentence rests on the deep note's ‘never presented as God's normal way with his people’.
