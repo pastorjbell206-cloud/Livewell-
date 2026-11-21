@@ -15053,3 +15053,18 @@ Cut in chapter 31: a sentence that a king who turned his face away had stopped l
 | Why Moses was kept out: the readings (the public act; the people's account; the softening; Hebrews and the law's limits); not chosen among; not a rule about any person's losses | 48-52 | deuteronomy/34.json `hard` | Repository; no side |
 
 Cut in chapter 32: that the Old Testament seldom calls God Father; that ‘the apple of the eye’ is the pupil; the meaning of the Hebrew word behind ‘idle’; a gloss on ‘gathered to your people’ (none of these is in the repository's notes).
+
+## The plain notes on Deuteronomy 33 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A father's last blessing in the ancient world; Genesis 48 to 49; ‘the man of God’ as a prophet's title; the opening hymn; Jeshurun used with honor | 1-5 | deuteronomy/33.json `cultural`, `literary`, `words` (H1293, H3484) | Repository |
+| Genesis 49:28; Psalm 90:1; Psalm 33:12 | 1-5 | deuteronomy/33.json `words`; BSB | Repository; BSB text |
+| The sayings' lengths and animal pictures; Levi and the golden calf, teaching first; Urim and Thummim; Joseph as two tribes and the richness of the land; Simeon absent (Joshua 19:1-9); sayings that seem to assume settlement, the two views | 6-25 | deuteronomy/33.json `historical`, `cultural`, `literary` | Repository; no side |
+| Genesis 49:10; Hebrews 7:14; Exodus 32:26; Malachi 2:7 | 6-25 | deuteronomy/33.json `christ`, `cultural`; BSB | Repository; BSB text |
+| The closing hymn; meonah, a refuge or den, and Psalm 90; yasha and the names Joshua and Jesus; the enemies and the pointer to chapter 7; ‘Who is like you’ no boast | 26-29 | deuteronomy/33.json `literary`, `words` (H4585, H3467), `christ`; deuteronomy/plain/7.json | Repository |
+| Psalm 90:1; Isaiah 46:4; Romans 8:39 | 26-29 | BSB | BSB text |
+
+Cut in chapter 33: that the burning bush is mentioned nowhere else in the Old Testament outside Exodus; that the mountains of verse 2 lie along the road from Sinai; a picture of a child on a parent's shoulders for verse 12 (none is in the repository's notes).
