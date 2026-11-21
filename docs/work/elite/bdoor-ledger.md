@@ -13517,3 +13517,26 @@ Cut before publishing: that cloth was costly and hand-woven (not in the reposito
 | ‘No one should be told that their illness or disability is a punishment.’ | 33-57 | luke/plain/5.json (17-26 `hard`), word for word | Repository |
 
 Cut before publishing: that no one else in the law is marked on ear, thumb and toe (not stated in the repository); that the healed person was ‘more likely than most to be poor’ (narrowed); the modern sizes of the ephah and the log; the resemblance of the two birds to the gospel, which the deep note calls a resemblance and not a prediction.
+
+## The plain notes on Leviticus 15 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last of the clean and unclean chapters; frank and without shame | 1-15 | leviticus/15.json `story`, `doctrines` (humanity) | Repository |
+| Unclean not sinful; a temporary status; the laws apply to men and women alike | 1-15 | leviticus/15.json `cultural` | Repository |
+| The symmetry: long-term, ordinary, both together, ordinary, long-term; the same waiting and offering for both long-term cases | 1-15 | leviticus/15.json `literary` | Repository |
+| Zov, probably an infection; ‘evening’ fifteen times | 1-15 | leviticus/15.json `words` (H2101, H6153) | Repository |
+| Numbers 5:2-3; Ezekiel 36:25 | 1-15 | BSB | BSB text |
+| Husband and wife unclean until evening though marriage is a gift; no offering | 16-18 | leviticus/15.json `cultural`, `literary` | Repository |
+| The logic of life-fluids and mortality (‘many scholars’); separation from sexual rites, with the debate noted | 16-18 | leviticus/15.json `cultural` | Repository; no side |
+| Genesis 2:25; Exodus 19:15; Hebrews 13:4 | 16-18 | BSB | BSB text |
+| Niddah: a natural state without blame; the prophets' later use (Ezekiel 36:17) | 19-24 | leviticus/15.json `words` (H5079) | Repository |
+| Whether the chapter shames women: its structure; a status, not a verdict; uneven effects; later traditions; verse 31 as the stated reason; the woman in the Gospels | 19-24 | leviticus/15.json `hard` | Repository; no side |
+| ‘A word for anyone who has been made to feel unclean ... places to turn.’ | 19-24 | leviticus/intro.json `teaching` (clean-and-unclean), word for word | Repository |
+| The long-term case matches the man's; the purification offering implies no sin | 25-33 | leviticus/15.json `literary`, `doctrines` (atonement) | Repository |
+| Verse 31 as the key to chapters 11 to 15; chapter 16 as the yearly remedy, including what the laws could not catch | 25-33 | leviticus/15.json `story`, `doctrines` (holiness) | Repository |
+| Mark 5:25, 29, 34 and uncleanness not passing to Jesus; Hebrews 10:22 | 25-33 | leviticus/15.json `christ`; BSB | BSB text |
+
+Cut before publishing: the later immersion pool (mikveh), which the deep note says belongs to a later time than the text; purity rules in Egyptian, Mesopotamian and Hittite temples.
