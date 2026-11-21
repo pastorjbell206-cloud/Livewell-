@@ -14178,3 +14178,18 @@ Cut: a reason why Eleazar and not Aaron handled the censers, which no note in th
 | Hebrews 9:13-14; Luke 7:14; Psalm 51:7 | 11-22 | numbers/19.json `christ`; BSB | BSB text |
 | The paradox of the water: three explanations; later Jewish teachers on a decree whose reasons are hidden | 11-22 | numbers/19.json `hard`, `words` (H2708) | Repository; no side |
 | John 11:35; care lines for grief | 11-22 | leviticus/plain/26.json 14-39 `hard`; 1-timothy/plain/5.json 9-16 `hard` | Reused whole, word for word |
+
+## The plain notes on Numbers 20 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The silent decades; the fortieth year from 33:38, and the other view; Miriam (Exodus 15:20-21); the echo of Exodus 17:1-7 and the new command; the wordplay on Meribah and Kadesh; ‘rebel’ in verses 10 and 24 | 1-13 | numbers/20.json `story`, `historical`, `literary`, `words` (H4809H, H6942G, H4784) | Repository |
+| God shows no anger at the people in this scene | 1-13 | BSB (verses 6-8); numbers/20.json `hard` | BSB text |
+| Psalm 106:32-33; Deuteronomy 3:26; 1 Corinthians 10:4 | 1-13 | numbers/20.json `christ`, `hard`; 1-corinthians/plain/10.json; BSB | Repository; BSB text |
+| Moses' fault: the act, the words, the anger, God's verdict; leaders judged more strictly (James 3:1); not cast off (Deuteronomy 34; Matthew 17:3); the rock struck once as a later reflection (Hebrews 9:28) | 1-13 | numbers/20.json `hard`, `christ` | Repository; no side |
+| Edom and Esau (Genesis 36); the King's Highway; the form of the message; water and wells; later prophets; the debate about Edom's organization | 14-21 | numbers/20.json `historical`, `cultural` | Repository |
+| Deuteronomy 2:5; 23:7; Obadiah 1:10 | 14-21 | BSB | BSB text |
+| The garments as succession (Exodus 28); ‘gathered to his people’ in Genesis; thirty days (Deuteronomy 34:8); where Mount Hor was | 22-29 | numbers/20.json `cultural`, `historical`; BSB (Genesis 25:8; 35:29; 49:33) | Repository; BSB text |
+| Hebrews 7:23-24 | 22-29 | numbers/20.json `christ`; BSB | BSB text |
