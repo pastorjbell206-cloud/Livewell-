@@ -13128,3 +13128,65 @@ Cut before publishing: that the robe was worn ‘under’ the ephod (the text sa
 | Leviticus 1:1; Numbers 9:18; 1 Kings 8:11; Ezekiel 10 and 43:5; John 1:14; Luke 9:35; 1 Corinthians 6:19; Revelation 21:3 | 34-38 | BSB; exodus/40.json `historical`, `christ` | BSB text |
 
 Cut before publishing: the BSB's ‘journey’ and ‘journeys’ in verses 36 and 38 (paraphrased, and verse 38 quoted only as far as ‘the house of Israel’); a three-word stack of fragments in the last passage (rewritten as a sentence); that a statue ‘was carried’ into other temples (the deep note says only that the god entered his house).
+
+## Leviticus's book page (teaching introduction, 2026-11-21)
+
+Every claim in `client/public/bible/notes/leviticus/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and lexicon, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Third book, 27 chapters; readers stall here; the manual after the stories | in-a-minute | bible/books.json; guides/offerings-and-purity.json (‘Why Leviticus matters’); guides/reading-law.json | Repository |
+| The question: how a holy God lives among an unholy people; Exodus 40:35; 19:2; 19:18; Matthew 22:39-40 | in-a-minute, question | leviticus/intro.json `overview`; guides/offerings-and-purity.json; BSB | Repository; BSB text |
+| Middle of the five books; Vayikra, ‘and he called’, from its first word | story, words | leviticus/intro.json `story`; leviticus/1.json `literary` | Repository |
+| Torat Kohanim, the instruction of the priests | story | leviticus/intro.json `purpose` | Repository |
+| The story so far (Eden, Egypt, Sinai, the calf, the tent); Exodus 40:17, 35; Leviticus 1:1 | story | leviticus/intro.json `story`, `setting`; BSB | Repository; BSB text |
+| About one month at Sinai (Exodus 40:17 to Numbers 1:1); two short narratives (8 to 10; 24:10-23) | story, timeline | leviticus/intro.json `date`, `reading` | Repository |
+| Law after rescue; 11:45 | story | leviticus/intro.json `reading`; guides/reading-law.json (‘Law follows grace’) | Repository |
+| Exodus 25:8; the presence as gift and danger; 10:1-2; God provides the way; 17:11 | question | leviticus/intro.json `themes`; leviticus/1.json `doctrines` (god); BSB | Repository |
+| Ugarit's offering terms; Egyptian temples; no image; God not fed; Psalm 50:13; child sacrifice refused (18:21) | question | leviticus/intro.json `setting`; guides/offerings-and-purity.json | Repository |
+| 26:12 as the goal; the verb of Genesis 3:8 | question | leviticus/intro.json `purpose`; leviticus/26.json | Repository |
+| No author named; 27:34; Mark 1:44 and Leviticus 14; Wenham; the priestly source; the Holiness Code; Wellhausen; Kaufmann and Milgrom; the wilderness camp and the tent | who | leviticus/intro.json `author`, `date` | Repository; no side |
+| Six parts; the offerings told twice; chapter 16 at the center; ‘Speak to the Israelites’; ‘I am the LORD’ | built | leviticus/intro.json `structure`, `purpose`, `keyChapters`; guides/offerings-and-purity.json | Repository |
+| Qorban; the common pattern of an animal offering; the worshiper kills, the priest handles the blood | offerings, words | guides/offerings-and-purity.json (‘The five offerings’, ‘What the rituals meant’); leviticus/1.json `cultural`, `words` | Repository |
+| The five offerings and what each was for; morning and evening; restitution and a fifth; the purification offering | offerings, words | guides/offerings-and-purity.json (table); leviticus/4.json, 5.json `words` | Repository |
+| Graded by means (5:7, 11); Mary and Joseph's birds (Luke 2:24) | offerings | guides/offerings-and-purity.json; BSB | Repository |
+| 17:11; readings of the laying on of the hand; 4:31 | offerings | guides/offerings-and-purity.json; leviticus/1.json `words` (H5564); BSB | Repository; no side |
+| Sacrifice not feeding or buying God; the prophets and Hosea 6:6 | offerings | leviticus/1.json `hard`; guides/offerings-and-purity.json (‘The prophets and the sacrifices’) | Repository |
+| The priests' work (10:10-11); skin diseases, hard cases, the blessing | priests | guides/offerings-and-purity.json (‘Priests and Levites’) | Repository |
+| Aaron and the calf; the sin offering at his ordination; 9:8; Hebrews 5:2 | priests | leviticus/8.json `hard`; BSB | Repository |
+| Nadab and Abihu: the one explanation given; the four proposals; rare judgments at founding moments; the grief not made small; 9:24; 10:1-2, 6 | priests | leviticus/10.json `hard`; BSB | Repository; no side |
+| Holy, common, clean, unclean; unclean not sinful; childbirth, 15:18, Numbers 19:11; temporary; the wrong is to ignore it (15:31) | clean-and-unclean, words | guides/offerings-and-purity.json (‘Holy and common, clean and unclean’); leviticus/intro.json `reading`, `themes`; leviticus/11.json, 13.json `words` | Repository |
+| Maimonides; Mary Douglas, Purity and Danger (1966); Milgrom and Wenham on death; partial views of one conviction | clean-and-unclean, timeline | guides/offerings-and-purity.json; leviticus/intro.json `reading` | Repository; no side |
+| Moral defilement (18:24-25); Klawans on the two kinds | clean-and-unclean | guides/offerings-and-purity.json | Repository |
+| ‘Your worth to God does not rise or fall with your body. If the weight of it is heavy ... places to turn.’ | clean-and-unclean | acts/plain/3.json (1-10 `hard`), word for word. The two sentences before it (the address and ‘That is not what this book says of you’) are new, written for this page and reused whole in the chapters | Repository |
+| Kipper: covering, wiping clean, ransom; both at once | atonement, words | guides/offerings-and-purity.json (Sklar, not named on the page); leviticus/16.json `words` | Repository |
+| Atonement wider than forgiveness of guilt; for places as well as people | atonement | leviticus/14.json `hard`; leviticus/16.json `words` | Repository |
+| The Day: the tenth of the seventh month, linen, the bull, incense, the mercy seat, two goats; 16:21, 22, 30; inward and outward | atonement, words | guides/offerings-and-purity.json (‘The Day of Atonement’); BSB | Repository |
+| Azazel: three readings; nothing offered to anyone but the LORD | atonement, words | leviticus/16.json `hard`, `words` | Repository; no side |
+| Yom Kippur the holiest day of the Jewish year; after AD 70 prayer, fasting, confession; the service still recited; repentance with the day, and the neighbor first (m. Yoma 8:8-9) | atonement, timeline | leviticus/16.json (`historical`, `hard` and its closing notes); guides/offerings-and-purity.json | Repository |
+| Hebrews 9:12; 10:1-4; Jews and Christians differ over where the way is found since AD 70 | atonement | guides/offerings-and-purity.json (last section); BSB | Repository |
+| Chapter 19's commands; 19:18; 19:34; the neighbor a fellow Israelite and the love extended to the foreigner; Hillel and Akiva | holiness, words | leviticus/19.json `historical`, `words` (H7453, H1616); BSB | Repository |
+| Chapter 18 and Molech as the killing of children; chapter 20's penalties as Israel's civil law, not carried into the church | holiness | leviticus/18.json `historical`; leviticus/20.json `hard` | Repository |
+| 18:22 and 20:13: read in more than one way; no side; ‘nothing here gives anyone a reason for contempt toward any person’ | holiness | romans/plain/1.json (24-32 `hard`); 1-corinthians/plain/6.json (9-11 `hard`) | Repository; no side |
+| 21:16-23: the priest still eats the holy food; ‘Every person, with any disability or illness, is made by God and is precious to him.’ | holiness | leviticus/21.json `hard`; psalms/plain/139.json (13-18), word for word | Repository |
+| The feasts of chapter 23; booths; kept by Jewish communities; Colossians 2:16-17, Romans 14:5-6; Easter and Pentecost | time | leviticus/23.json `hard`, `words`, `historical` | Repository; no side |
+| Sabbath year, Jubilee, 25:10, 25:23; no clear record of a Jubilee | time, words | leviticus/25.json `historical`, `words`; BSB | Repository |
+| 25:44-46: ‘That is in the text, and it cannot be explained away’; the misuse in the Atlantic trade and the American South | time | exodus/plain/21.json (1-6 `hard`); exodus/intro.json `teaching` (law); guides/reading-law.json | Repository |
+| Chapter 26 addressed to the nation; not a verdict on a person; John 9:3; 26:44 | time | leviticus/26.json `hard`; BSB | Repository |
+| Matthew 5:17; Romans 7:12; Mark 7:19; Acts 10:15; Hebrews 10:1 | christians-and-the-law | guides/reading-law.json (‘Christ and the Law’); BSB | BSB text |
+| The threefold division (Aquinas, Calvin, Westminster 1646); law and gospel; dispensational and New Covenant readers and ‘the law of Christ’; theonomy and its rejection by most Reformed churches | christians-and-the-law | guides/reading-law.json; exodus/plain/21.json (1-6 `hearers`) | Repository; no side |
+| Seventh-day Adventists; Jewish believers in Jesus; Romans 14 | christians-and-the-law | leviticus/11.json `hard`; leviticus/23.json `hard`; acts/plain/10.json (9-16 `hard`) | Repository |
+| Jewish tradition: commands binding on Jews, a gift studied and loved; many kept only while the temple stood | christians-and-the-law | guides/reading-law.json (first section); leviticus/19.json `hard` | Repository |
+| Hebrews 10:12; 1 Peter 1:16; Romans 13:10 | christians-and-the-law | BSB | BSB text |
+| Hebrews 8:5, 9:12, 13:12; Romans 3:25 and the mercy seat; Ephesians 5:2 and the pleasing aroma; 1 Peter 1:19 | new-testament | leviticus/intro.json `christ`; leviticus/1.json `christ`; leviticus/16.json `words` (H3727); BSB | Repository |
+| Jesus and the unclean (Mark 1:41, 44; 5:27, 41) | new-testament | guides/offerings-and-purity.json (‘Purity in the time of Jesus’) | Repository |
+| Mark 12:31; Galatians 5:14; James 2:8; 2 Corinthians 6:16; Revelation 21:3 | new-testament | BSB | BSB text |
+| ‘A shadow is real’; contempt for Jews rejected, with the pointer to Acts 2:22-28 | new-testament | hebrews/plain/8.json (1-6 `hard`); exodus/intro.json `teaching` (new-testament) | Repository |
+| Antiochus IV about 167 BC and the books of Maccabees; Yohanan ben Zakkai and Hosea 6:6; prayer, study and kindness; Minchah | readers, timeline | leviticus/11.json `historical`; guides/offerings-and-purity.json; leviticus/2.json `historical` | Repository |
+| The second of February; the thanksgiving of a mother; the Liberty Bell; slavery's defenders and opponents | readers | leviticus/12.json `historical`; leviticus/25.json `historical`, `hard` | Repository |
+| Douglas; Milgrom's three volumes (1991 to 2001), the standard work; ‘choose life’ | readers, timeline | guides/offerings-and-purity.json; leviticus/intro.json `reading` | Repository |
+| Timeline: Ebla; Ugarit; the Gezer tablet (found 1908); Ketef Hinnom; 587 or 586 BC and 2 Chronicles 36:21; Ezekiel 44; Malachi 1:8; the Mishnah and Yoma; Tyndale 1530; 1873; Klostermann 1877 | timeline | leviticus/16.json, 23.json, 26.json, 21.json, 22.json, 13.json, 17.json `historical`; guides/offerings-and-purity.json | Repository |
+| Map: Goshen and Canaan as regions, at the points Genesis and Exodus already use; 18:3, 25:38, 26:13 | map | genesis/intro.json and exodus/intro.json `teaching.map`; BSB | Repository |
+| Go deeper: three Study Bible guides, five doctrine studies, two context guides | deeper | bible/guides/*.json; bible/doctrines.json; context/guides/*.json; routes in App.tsx | Repository |
+
+Cut or narrowed before publishing: the origin of the English name Leviticus (not in the repository); that chapter 16 is the center ‘of the five books’ (the repository says only the center of the book); ‘the most solemn day’ (the deep note's word is ‘holiest’); that Tyndale coined ‘scapegoat’ while translating the Torah (the guide gives only the name and the year); a description of Milgrom not found in the repository; ‘tahor’ (the lexicon notes give the verb taher); Mount Sinai on the map (no verified point). Length: 6,194 words in fourteen parts, longer than Exodus's page, because this book needed its own parts on clean and unclean and on how Christians relate to its laws.
