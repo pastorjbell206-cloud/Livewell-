@@ -13589,3 +13589,30 @@ Cut before publishing: that the two goats were chosen to look alike (a later tra
 | Acts 15:29 and the two Christian answers | 10-16 | leviticus/3.json `hard`; acts/plain/15.json (12-21 `hard`) | Repository; no side |
 
 Cut before publishing: ‘the Hebrew says, word for word, by the life’ (the verse note gives two readings, and both are now stated). Nothing was claimed about any church's teaching on medical treatment; the note says only that the verse was not written about modern medicine and is not medical advice.
+
+## The plain notes on Leviticus 18 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| From the altar to the household; Egypt behind, Canaan ahead; the frame ‘I am the LORD your God’ and the Ten Commandments; chapter 20 adds penalties | 1-5 | leviticus/18.json `story`, `literary` | Repository |
+| Statutes as the path of life | 1-5 | leviticus/18.json `doctrines` (law) | Repository |
+| Ezekiel 20:11; Romans 10:5 and Galatians 3:12, ‘on the common reading’ | 1-5 | leviticus/18.json `christ`; BSB | BSB text |
+| Large, close households; the laws protect those living in them; addressed mainly to men as heads of households | 6-18 | leviticus/18.json `cultural`, `doctrines` (family) | Repository |
+| ‘To uncover the nakedness’; ervah twenty-four times, with its sense of shame and exposure | 6-18 | leviticus/18.json `cultural`, `words` (H6172) | Repository |
+| Abraham and his half-sister; Jacob and two sisters; a break with what was once tolerated | 6-18 | leviticus/18.json `cultural` | Repository |
+| Mark 6:18; 1 Corinthians 5:1 | 6-18 | leviticus/18.json `cultural`; BSB | BSB text |
+| ‘A word for anyone who has been sexually assaulted ... places to turn.’ | 6-18 | 1-thessalonians/plain/4.json (1-8 `hard`), word for word | Repository |
+| Molech: the Ammonites; Topheth in the Valley of Hinnom; a god or a kind of sacrifice (Eissfeldt, not named); the ritual killing of children | 19-23 | leviticus/18.json `historical` | Repository; no side |
+| To'evah used of the whole list (verses 26-30) and elsewhere of idolatry, dishonest scales and pride | 19-23 | leviticus/18.json `words` (H8441) | Repository |
+| Jeremiah 7:31; 2 Kings 23:10; Romans 2:1 | 19-23 | BSB; romans/plain/1.json (24-32) | BSB text |
+| Verse 22: stated plainly; the historic reading and its grounds; the other reading and its grounds; the reply; no side | 19-23 | leviticus/18.json `hard`; romans/plain/1.json (24-32 `hard`); 1-corinthians/plain/6.json (9-11 `hard`) | Repository; no side |
+| ‘Three things are plain on any reading’; 1 Corinthians 6:11; ‘nothing here gives anyone a reason for contempt toward any person’ | 19-23 | romans/plain/1.json; 1-corinthians/plain/6.json | Repository |
+| ‘If you are gay, or love someone who is ... places to turn.’ | 19-23 | romans/plain/1.json (24-32 `hard`), word for word | Repository |
+| The land as a body; moral defilement that washing does not remove; one standard for the nations and for Israel | 24-30 | leviticus/18.json `words` (H6958), `doctrines` (judgment); guides/offerings-and-purity.json (Klawans) | Repository |
+| Later writers read the exile in these terms (Ezra 9:11; Ezekiel 36:17-19) | 24-30 | leviticus/18.json `historical` | Repository |
+| ‘These notes say nothing against any people, ancient or modern ... or to claim any land.’ | 24-30 | exodus/plain/23.json (27-33 `hard`), word for word | Repository |
+| Genesis 15:16; Ezra 9:11; Psalm 106:38 | 24-30 | BSB | BSB text |
+
+Cut or narrowed before publishing: a number for the commandment against adultery (traditions count differently); a third position named in the deep note (that the texts forbid all such relations but should be weighed differently today), left in the deep note so that this note keeps the two-reading shape of the Romans 1 and 1 Corinthians 6 notes; any claim about how the verse has been used in history (the note says only that any such use is a misuse); Henry VIII; the derivation of Paul's Greek word, which the 1 Corinthians 6 note already gives. The sentence ‘No one may use this verse to harm or shame any person’ is new, required for this passage. Flagged for James: the site's own view on these verses is an open decision.
