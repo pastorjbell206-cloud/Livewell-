@@ -7819,3 +7819,114 @@ the end on the merged tree. The final gates and the served-build check are in th
 
 Exodus 21 onward: the Book of the Covenant (the slavery laws, ‘eye for eye’, 21:22-25, 22:18), then the
 covenant meal, the tabernacle, the calf and the renewal.
+
+## Continuation: Exodus 21 to 40 (2026-11-20)
+
+Exodus is now whole: forty chapters in plain words. The shape is unchanged from chapters 1 to 20: each
+passage's third part is `later`; each chapter note gained only `"plain": true` at its end; one commit
+per chapter, each with its ledger rows and only that chapter's files.
+
+### How this stretch was written
+
+Chapters 21 to 23 were written and committed in an earlier sitting. That sitting was cut off with
+chapter 24 installed but not committed, and with drafts and ledger rows for chapters 25 to 30 in the
+scratch folder. In this sitting chapters 21 to 23 were read once against the rules and checked again
+(no change was needed); chapters 24 to 30 were read against the Bible text and the deep notes, trimmed
+where a sentence went past its source, then checked and committed one by one; chapters 31 to 40 were
+written fresh.
+
+### Chapters 21 to 40 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words |
+|---|---|---|
+| Exodus 21 | 6 | 4,148 |
+| Exodus 22 | 6 | 2,723 |
+| Exodus 23 | 5 | 2,598 |
+| Exodus 24 | 4 | 1,823 |
+| Exodus 25 | 4 | 1,904 |
+| Exodus 26 | 3 | 1,451 |
+| Exodus 27 | 3 | 1,295 |
+| Exodus 28 | 5 | 2,040 |
+| Exodus 29 | 5 | 2,072 |
+| Exodus 30 | 5 | 2,030 |
+| Exodus 31 | 3 | 1,894 |
+| Exodus 32 | 5 | 3,145 |
+| Exodus 33 | 4 | 2,225 |
+| Exodus 34 | 5 | 3,977 |
+| Exodus 35 | 4 | 1,780 |
+| Exodus 36 | 4 | 1,733 |
+| Exodus 37 | 4 | 1,550 |
+| Exodus 38 | 3 | 1,463 |
+| Exodus 39 | 3 | 1,379 |
+| Exodus 40 | 3 | 1,795 |
+| **Total** | **84** | **43,025** |
+
+With chapters 1 to 20 (96 passages, 48,035 words), Exodus has 180 passages and 91,060 plain words.
+
+### The hard places, and how they are stated
+
+The Book of the Covenant (21 to 23): case law for an ancient people, with the Christian readings of the
+law (moral, ceremonial and civil; law and gospel; dispensational and New Covenant) and no side. The
+slavery laws: what they permit and what they limit, each said plainly; 21:7-11 and 21:21 not softened;
+the misuse of these texts in the Atlantic slave trade and the American South named as wrong; the word
+for anyone held or forced to work today, from the 1 Peter 2 note, word for word. ‘Eye for eye’ as a
+limit on courts, with Matthew 5. 21:22-25: the two readings of the Hebrew, no side, no policy argument,
+and the care line from the Psalm 139 note word for word. 22:18: the witch trials named as a misuse and
+rejected. The capital laws stated soberly and never as a pattern. The conquest promises (23, 34) with
+the wording of the Genesis 15 note: no people today is in view.
+
+The tabernacle (25 to 31, 35 to 40): a picture a new reader can follow, with meaning only where
+Scripture draws it (Hebrews 8 to 10, John 1:14, Romans 3:25) and each link of theme marked as such; no
+meaning found in every board and peg; ‘a shadow is real’, from the Hebrews 8 note, wherever Hebrews is
+quoted, so that Israel's worship is never slighted. Whether the tabernacle was built in the wilderness
+(Wellhausen; the Egyptian parallels; a middle view): no side. The altar of 27 beside 20:24-25, the
+‘cut off’ penalty, the bells, the tent of 33:7-11, what was on the second tablets, the 603,550, and the
+incense altar beside Hebrews 9:4: each with its readings and no side. The Sabbath (31, 35): the death
+penalty faced, never a pattern; the Christian views as the Exodus 16 note gives them, no side.
+
+The calf (32 to 34): the chapter as Israel's own Scripture confessing Israel's own sin, never a charge
+against the Jewish people, with the sentence from the book page and the pointer to the Acts 2:22-28
+note. God's relenting (classical theology and open theists): no side. The Levites' sword (32:25-29)
+faced without making it small, and said to be no pattern for anyone. 34:6-7 as the Old Testament's own
+creed, with the reading and the closing words of the Exodus 20:5-6 note. ‘Jealous’ as the Exodus 20
+note reads it, with the objection heard. The veil (34:29-35): what Exodus says and does not say; Paul
+in 2 Corinthians 3 as the site's note on that chapter reads him; the misuse of ‘the veil’ against
+Jewish people named in that note's own words and rejected, with the pointer to the Acts 2:22-28 note.
+
+### Care lines, each word for word
+
+The word for anyone held or forced to work, and the sentences for anyone being hurt, from the 1 Peter 2
+note (21); the pregnancy-loss line from the Psalm 139 note (21, 23); the line for anyone sexually
+assaulted from the 1 Thessalonians 4 note (22). Each ends with the Find Help sentence. No phone numbers.
+
+### Cut or narrowed
+
+Each is in the ledger under its chapter. From the drafts of 24 to 30: ‘the writer seems to look down,
+not up’ (24); ‘one loaf for each tribe’ (25); a comparison of the tent's plain outside with Christ's
+human life (26); ‘carried with strength and with love’ of the shoulders and the heart (28); ‘they
+shared one fragrance’ (30). From the new chapters: a gloss on ‘the Testimony’ (31); Jeroboam's sons and
+the Ugaritic poem, true to the deep note but a detour for a new reader (32); a guess about Joshua (33);
+‘sealed at their altars’, a sentence on the church's ‘only weapons’, and six scholars' names left to
+the deep note (34); ‘under the whip’ (35); a reason for the order of building (36); two meanings the
+text does not give, the echo of the angels in the tomb, and the menorah in a modern state's emblem (37);
+that the robe was worn ‘under’ the ephod (39); the BSB's ‘journey’ in 40:36 and 40:38, paraphrased.
+
+### Sources
+
+All in `bdoor-ledger.md`, one table per chapter. No web searches.
+
+### What was run
+
+After each chapter: validate-bible-notes, the strict quotation check and the single-quote check (0
+problems each), the forbidden-word scan, no-emdash, validate-politics, and the search-index and
+passage-index checks, each exit 0. After chapter 30: all 46 content-gate commands (46 of 46) and
+`pnpm check` (exit 0). `pnpm test` then failed on its first run because the shared machine's disk
+filled while it ran (‘no space left on device’ in 28 places, none in these notes); run again once space
+returned, it passed (162 files, 1,929 tests). The final gates on the merged tree and the served-build
+check are in the report to the lead.
+
+### Next
+
+Leviticus: the book page, then the chapters. It was not begun in this sitting.
