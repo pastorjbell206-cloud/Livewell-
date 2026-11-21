@@ -13569,3 +13569,23 @@ Cut before publishing: the later immersion pool (mikveh), which the deep note sa
 | Leviticus 23:27; Isaiah 58:6 and the synagogue reading; Acts 27:9; Hebrews 10:3, 12 | 29-34 | leviticus/16.json `historical`, `interpretation`, `christ`; BSB | BSB text |
 
 Cut before publishing: that the two goats were chosen to look alike (a later tradition not in the repository); the blue of the high priest's robe; the Mishnah's five abstentions, the ravine of m. Yoma 6:6, the Temple Scroll, Philo and Josephus (true to the deep note, left there); the early Christian reading of the two goats as Christ suffering and returning, which the deep note says should not be pressed.
+
+## The plain notes on Leviticus 17 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 17 to 26 as the Holiness Code; Klostermann, 1877 | 1-9 | leviticus/17.json `historical`; guides/reading-law.json | Repository |
+| Meat not everyday food; every killing made a peace offering eaten before God | 1-9 | leviticus/17.json `cultural` | Repository |
+| The ‘goat demons’: spirits of desert and open country; an animal killed in a field could become an offering to them | 1-9 | leviticus/17.json `historical` | Repository |
+| Deuteronomy 12:15-16; 2 Chronicles 11:15; 1 Corinthians 10:20 | 1-9 | leviticus/17.json `historical`, `hard`; BSB | BSB text |
+| Leviticus 17 beside Deuteronomy 12: the three explanations; what both agree on | 1-9 | leviticus/17.json `hard` | Repository; no side |
+| Verse 11 at the center, in the first person; blood as life; atonement by life given; God's gift, not Israel's bribe | 10-16 | leviticus/17.json `literary`; guides/offerings-and-purity.json (‘What the rituals meant’) | Repository |
+| The two readings of the last clause (by means of the life; in exchange for the life) | 10-16 | leviticus/verses/17.json (verse 11 `grammar`) | Repository; no side |
+| Older than Israel (Genesis 9:4); the foreigner named repeatedly; the hunter's game; Jewish slaughter and salting | 10-16 | leviticus/17.json `cultural` | Repository |
+| Hebrews 9:22; Ephesians 1:7; John 6:53 and the differing views of the Lord's Supper | 10-16 | leviticus/17.json `christ`; BSB | BSB text; no side |
+| Why blood: pointer to Hebrews 9:15-22 (‘never a way of buying off an angry god’) | 10-16 | hebrews/plain/9.json (15-22 `hard`) | Repository |
+| Acts 15:29 and the two Christian answers | 10-16 | leviticus/3.json `hard`; acts/plain/15.json (12-21 `hard`) | Repository; no side |
+
+Cut before publishing: ‘the Hebrew says, word for word, by the life’ (the verse note gives two readings, and both are now stated). Nothing was claimed about any church's teaching on medical treatment; the note says only that the verse was not written about modern medicine and is not medical advice.
