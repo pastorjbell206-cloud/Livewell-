@@ -13666,3 +13666,24 @@ Cut or narrowed before publishing: that ‘as yourself’ is not a command to lo
 | 1 Peter 2:9; Acts 10:28; Ezekiel 18:32 | 22-27 | leviticus/20.json `christ`; BSB | BSB text |
 
 Cut or narrowed before publishing: the burning of verse 14 (interpreters differ, and the deep note carries it); the levirate law beside verse 21; ‘most churches reject’ the minority view (narrowed to what the Reading the Law guide says of Reformed churches). Flagged for James with chapter 18: the site's own view on 18:22 and 20:13 is an open decision.
+
+## The plain notes on Leviticus 21 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Corpse uncleanness normal for families, a bar to a priest's work; the closest relatives; the mourning customs of verse 5 (19:27-28) | 1-9 | leviticus/21.json `cultural` | Repository |
+| The priest's household and its reputation; verse 9 and the father's office | 1-9 | leviticus/21.json `cultural` | Repository |
+| ‘The food of their God’: not that God eats; the altar as his table | 1-9 | leviticus/21.json `literary` | Repository |
+| Ezekiel 44:25; Mark 5:41; John 11:35 | 1-9 | leviticus/21.json `historical`, `christ`; BSB | BSB text |
+| The high priest's stricter rule; 10:6-7; ‘I am the LORD who sanctifies’ closes each part; holiness from God before it is demanded | 10-15 | leviticus/21.json `cultural`, `literary` | Repository |
+| Hebrews 7:26; 4:15 | 10-15 | leviticus/21.json `christ`; BSB | BSB text |
+| One office: not excluded from Israel, worship or the priesthood; he eats the most holy food; barred only from the altar and the veil | 16-24 | leviticus/21.json `hard`, `cultural` | Repository |
+| Parallel with unblemished animals (22:17-25); the rule as a sign of wholeness (‘most interpreters’); ancient courts | 16-24 | leviticus/21.json `hard`, `historical` | Repository |
+| Isaiah 56:5; Matthew 21:14; Luke 14:13; 1 Corinthians 12:22 | 16-24 | leviticus/21.json `hard`, `christ`; BSB | BSB text |
+| ‘Disability is not punishment for sin, the person's own or anyone else's. Every person, with any disability or illness, is made by God and is precious to him. No one is a mistake.’ | 16-24 | exodus/plain/4.json (10-17 `hearers`), word for word | Repository |
+| A temporary system pointing beyond itself; in Christ these restrictions fulfilled; disability no barrier to any service in the church | 16-24 | leviticus/21.json `hard` | Repository |
+| ‘If you live with chronic illness, pain or disability ... places to turn.’ | 16-24 | 2-corinthians/plain/12.json (7-10 `hard`), its last four sentences, word for word | Repository |
+
+Cut before publishing: the meaning of the burning in verse 9 (interpreters differ; the chapter 20 deep note carries it); Daniel 1:4. The eunuchs of Isaiah 56 are said to be shut out ‘by another law’ (Deuteronomy 23:1) without quoting it. The sentence that a church cannot appeal to this chapter to keep disabled people from its life or leadership is new; it rests on the deep note's ‘disability is no barrier to any service in the church’.
