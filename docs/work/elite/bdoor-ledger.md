@@ -14948,3 +14948,18 @@ Cut in chapter 25: the reason for thirty-nine lashes (‘a miscount’); that th
 | Verse 14 and pride: narrow and specific; after a confession of gift; ending in prayer; contempt as the danger | 12-15 | deuteronomy/26.json `hard` | Repository |
 | The two ‘today’ declarations mirroring a covenant; segullah; the Shema's words; honor above the nations read with chapters 7 and 9, no claim for any nation today | 16-19 | deuteronomy/26.json `literary`, `words` (H5459); deuteronomy/plain/7.json 6-11; deuteronomy/plain/9.json 1-6 | Repository |
 | Exodus 19:5; Jeremiah 31:33; 1 Peter 2:9 with the pointer to the 1 Peter 2 note | 16-19 | deuteronomy/26.json `christ`; 1-peter/plain/2.json `hard`; BSB | Repository; BSB text; no side |
+
+## The plain notes on Deuteronomy 27 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ebal and Gerizim at Shechem, the place of the first promise; writing on plastered stone; royal monuments and this one; the altar of uncut stones and the two reasons proposed; ‘this day’ | 1-10 | deuteronomy/27.json `historical`, `cultural`, `literary`, `words` (H4196) | Repository |
+| Joshua 8:30, 32; Exodus 20:25; Jeremiah 31:33 | 1-10 | deuteronomy/27.json `cultural`; BSB | Repository; BSB text |
+| A curse as a declaration of God's judgment; ‘cursed’ twelve times, perhaps one for each tribe; acts done in secret beyond any court; Amen and its root; whom the list protects; the summary curse | 11-26 | deuteronomy/27.json `cultural`, `literary`, `words` (H0779, H0543) | Repository |
+| The care line reused whole | 11-26 | existing plain notes (‘If you are being hurt, at home, at work or in a church...’) | Repository; word for word |
+| Joshua 8:34; Leviticus 19:14; Galatians 3:10, 13; Romans 2:16 | 11-26 | deuteronomy/27.json `christ`, `hard`; BSB | Repository; BSB text |
+| Only curses recorded: the two explanations; Joshua 8; not words to speak over anyone today | 11-26 | deuteronomy/27.json `hard`; leviticus/plain/26.json `hard` | Repository |
+
+Cut in chapter 27: two new sentences addressed to anyone harmed in secret (not an existing care line; the existing line is used alone); the Samaritan reading of verse 4 and the structure Adam Zertal excavated on Mount Ebal are left to the deep note.
