@@ -7930,3 +7930,142 @@ check are in the report to the lead.
 ### Next
 
 Leviticus: the book page, then the chapters. It was not begun in this sitting.
+
+## Leviticus: the book page and every chapter (2026-11-21)
+
+Leviticus is whole: a teaching introduction on the book page and all 27 chapters in plain words. The
+shape is the one Genesis and Exodus use: each passage's third part is `later`; each chapter note gained
+only `"plain": true` at its end; one commit for the book page and one per chapter, each with its ledger
+rows and only that chapter's files.
+
+### The book page (`/study/bible/leviticus`, same address)
+
+Data only, in `client/public/bible/notes/leviticus/intro.json`, field `teaching`, added at the end of
+the file. Fourteen parts (6,194 words): Leviticus in a minute; Where it sits in the story; The question
+the book answers; Who wrote it, and when; How Leviticus is built; The offerings; The priests, and Nadab
+and Abihu; Holy, clean and unclean; Atonement, and the Day of Atonement; Holiness in all of life;
+Feasts, the Jubilee, and the covenant; How Christians relate to these laws; How the New Testament reads
+Leviticus; How Jews and Christians have read it. Then 17 hard passages, 16 key words, a timeline of 18
+entries, one map, and ten Go deeper pages (three Study Bible guides, five doctrine studies, two context
+guides; all live).
+
+It is longer than Exodus's page (4,934 words). This book needed two parts Exodus did not: one on what
+‘holy’, ‘clean’, ‘unclean’ and ‘atonement’ mean in the book's own terms, and one on how Christians
+relate to its laws (the threefold division; law and gospel; dispensational and New Covenant readers;
+theonomy and its rejection by most Reformed churches; those who keep parts of the law by choice; Jewish
+tradition), with no side taken.
+
+The map draws only what the repository already places: Goshen, in Egypt, and Canaan, each as a region,
+on the frame Exodus uses. The map note: ‘Leviticus names almost no places. Every word of it is given at
+Mount Sinai, and where that mountain lay is debated, so it is not drawn. The map shows only the two
+lands the book itself names: Egypt, which Israel had left, and Canaan, which it had not yet reached.
+Both are drawn roughly.’ `teaching.test.tsx` now lists Leviticus among the books with a teaching guide,
+and its frame test names Leviticus's frame (`fertile-crescent`). No other code changed.
+
+### Chapters 1 to 27 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| Leviticus 1 | 4 | 2,025 | Leviticus 15 | 4 | 2,204 |
+| Leviticus 2 | 3 | 1,516 | Leviticus 16 | 6 | 3,643 |
+| Leviticus 3 | 3 | 1,450 | Leviticus 17 | 2 | 1,411 |
+| Leviticus 4 | 4 | 2,116 | Leviticus 18 | 4 | 2,269 |
+| Leviticus 5 | 3 | 1,718 | Leviticus 19 | 4 | 2,954 |
+| Leviticus 6 | 4 | 1,890 | Leviticus 20 | 3 | 2,125 |
+| Leviticus 7 | 4 | 2,039 | Leviticus 21 | 3 | 1,761 |
+| Leviticus 8 | 4 | 1,938 | Leviticus 22 | 3 | 1,521 |
+| Leviticus 9 | 3 | 1,333 | Leviticus 23 | 4 | 2,034 |
+| Leviticus 10 | 3 | 2,092 | Leviticus 24 | 3 | 1,613 |
+| Leviticus 11 | 4 | 2,323 | Leviticus 25 | 6 | 3,159 |
+| Leviticus 12 | 2 | 1,470 | Leviticus 26 | 3 | 1,912 |
+| Leviticus 13 | 4 | 2,204 | Leviticus 27 | 3 | 1,956 |
+| Leviticus 14 | 4 | 2,001 | **Total** | **97** | **54,677** |
+
+### The hard places, and how they are stated
+
+Sacrifice (1 to 7): described plainly and soberly; never as feeding or buying God; Christ and the
+offerings only where the New Testament draws the line (Hebrews; Romans 3:25 and 8:3; Ephesians 5:2;
+1 Peter 1:19), each time with ‘a shadow is real’ so that Israel's worship is not slighted; what Jewish
+practice became after AD 70 only as the repository's notes say it (prayer, study, acts of kindness; the
+afternoon prayer called Minchah). Nadab and Abihu (10): the one explanation the text gives, the four
+proposals, the details left open, the grief not made small, and the story said plainly to be no threat
+held over ordinary worshipers. The food laws (11): unclean animals are God's creatures; ‘unclean for
+you’; the main explanations, no side; Mark 7 and Acts 10 as the existing notes read them; Jewish
+families who keep the laws honored. Childbirth (12), skin disease (13 to 14) and bodily discharges
+(15): uncleanness is not sin and not shame, said in each chapter; the doubled period after a daughter
+with its readings and no side; the sick never pictured as cursed, with Miriam and Uzziah named honestly
+as particular stories; the uneven weight of chapter 15 on women admitted. The Day of Atonement (16):
+the rite told step by step; Azazel in its readings, open; the old objection that guilt cannot be
+carried by another heard; the Jewish and Christian readings each in its own terms, with the
+disagreement called real; Yom Kippur as the holiest day of the Jewish year, a living observance.
+Blood (17): the two readings of the last clause of 17:11; Acts 15 with no side; not medical advice.
+
+Chapter 18: the incest laws as protection of the household's weaker members; Molech as the killing of
+children; 18:22 stated plainly and set out exactly as the notes on Romans 1 and 1 Corinthians 6 do, the
+historic reading and the other in their holders' terms, no side, ‘nothing here gives anyone a reason
+for contempt toward any person’, and, new for this passage, ‘No one may use this verse to harm or shame
+any person’. Chapter 20: the penalties stated soberly with the Exodus 21 wording, never a pattern; the
+penalty of 20:13 said to be no part of the church's teaching or practice and no warrant for any person
+or government; the witch trials named as a misuse with the Exodus 22 wording. **James has an open
+decision here: the site's own view on 18:22 and 20:13.** Chapter 19: ‘love your neighbor as yourself’
+and the foreigner (19:18, 33-34) given the most room in the book, with Hillel and Akiva, the Samaritan,
+and no rule drawn for any government or party. Chapter 21: the priest with a defect still a priest who
+eats the holiest food; a rule about a sign at the altar, never a statement of anyone's worth, with the
+site's existing sentences on disability. Chapter 24: blasphemy as Israel's civil law, not a model for
+church or state; ‘eye for eye’ in the Exodus 21 wording. Chapter 25: the Jubilee; 25:44-46 faced with
+the Exodus 21 wording (‘That is in the text, and it cannot be explained away’), never a defence of
+slavery. Chapter 26: addressed to a nation, never God's verdict on any person's illness or loss; the
+reading of such chapters as a lasting curse on the Jewish people named and rejected. Chapter 27: the
+valuations as a measure of labor, not of worth; tithing with no side.
+
+### Care lines
+
+Reused whole, word for word: the lost-child line from the John 19 and Exodus 11 notes (10); the lines
+for anyone sexually assaulted from the 1 Thessalonians 4 note (18); the respect line from the Romans 1
+note (18, 20); the lines for anyone being hurt and for anyone held or forced to work from the Exodus 21
+notes (20, 25); the disability sentences from the Exodus 4, Psalm 139, Luke 5 and 2 Corinthians 12
+notes (13, 14, 21, 26); the Hebrews 10 line on fear of having fallen away (4); the 2 Corinthians 13
+line on a conscience that never rests (5), with the book's name added to its pointer; the 1 Timothy 5
+grief sentences (26); the 1 Timothy 6 line on money pressed out of people (27). No phone numbers; Find
+Help named each time.
+
+One care paragraph is new in part. No existing note had a line for anyone made to feel unclean by an
+illness, a body or a past. The paragraph on the book page opens with two new sentences (‘A word for
+anyone who has been made to feel unclean, by an illness, by your body or by your past. That is not what
+this book says of you.’) and continues with three sentences word for word from the Acts 3 note. It is
+reused whole in chapters 12, 13 and 15.
+
+### Cut or narrowed
+
+Each is in the ledger under its chapter. Among them: the origin of the English name Leviticus; a reason
+for the north side of the altar (1); how leaven was made (2); a reason why no birds are named for the
+peace offering (3); 2 Corinthians 5:21 (4); that the priests kept alive ‘what God had lit’ (6); the
+1 Corinthians 5 care line, which names Paul and could not be used whole (7); ‘seven is the number of
+completeness’ (8); that locusts are still eaten, and the pig bones at Iron Age sites (11); a question
+to mothers about the day of a birth (12); that cloth was costly (13); that no one else in the law is
+marked on ear, thumb and toe (14); that the two goats were chosen to look alike (16); ‘the Hebrew says,
+word for word, by the life’, corrected to the verse note's two readings (17); a number for the
+commandment against adultery, and a third position on 18:22 left in the deep note (18); four unsourced
+sentences in chapter 19; ‘most churches reject’ theonomy, narrowed to Reformed churches (20); the
+Exodus 21 sentence that Atlantic slavery was ‘very different from the debt service of these verses’,
+which is not true of 25:44-46 and was not reused there (25); the fall of Jerusalem in AD 70 as a
+fulfillment of chapter 26; Jephthah's vow (27). The BSB's ‘blessed’ appears only as a verb inside
+quoted Scripture; no forbidden word is used.
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for the book page and for each chapter. No web searches.
+
+### What was run
+
+After each chapter: validate-bible-notes, the strict quotation check and the single-quote check (0
+problems each), the forbidden-word scan, no-emdash, validate-politics, and the search-index and
+passage-index checks, each exit 0. After chapters 5, 10, 15, 20 and 25: all 46 content-gate commands
+(46 of 46 each time), `pnpm check` (exit 0) and `pnpm test` (162 files, 1,938 tests passed each time).
+The final gates on the merged tree and the served-build check are in the report to the lead.
+
+### Next
+
+Numbers: the book page, then the chapters. It was not begun in this sitting.

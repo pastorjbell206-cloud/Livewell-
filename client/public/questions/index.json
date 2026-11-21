@@ -421,7 +421,7 @@
       "slug": "science",
       "n": 7,
       "title": "Science",
-      "line": "Galileo, miracles, the beginning of the universe, evolution, and what science can and can't settle.",
+      "line": "Galileo, miracles, the beginning of the universe, evolution, the age of the earth, Adam, the mind and the brain, free will and near-death experiences.",
       "planned": 16,
       "status": "live",
       "live": true,
@@ -466,36 +466,36 @@
           "slug": "how-old-is-the-earth",
           "question": "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?",
           "blurb": "What the sciences measure and how, what the text and its ancient copies say, the readings of the days each in its holders' terms with its hardest difficulty, and what all of them confess.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "adam-eve-and-human-origins",
           "question": "Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?",
           "blurb": "The fossil and genetic evidence as standard reference works state it, what it rules out and what it doesn't, the Christian views of Adam from a recent first pair to a figure for every human, each with what it must explain in Romans 5 and 1 Corinthians 15, and why what the doctrine of sin requires is itself where Christians differ.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "is-the-mind-just-the-brain",
           "question": "Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?",
           "blurb": "What neuroscience shows and what it doesn't, the argument from causal closure at its strongest, the hard problem, and the three Christian views of the person, each with its hardest difficulty, under one hope of the resurrection of the body.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "neuroscience-and-free-will",
           "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
           "blurb": "Libet's experiments and what has become of their interpretation, determinism, compatibilism and libertarian freedom, the Reformed and Arminian accounts each in its own terms, and why responsibility before God is confessed by both.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "near-death-experiences",
           "question": "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?",
           "blurb": "What is reported and how researchers explain it, as a reference work sets out both sides, why the evidence is at an impasse, and why Christian hope rests on the resurrection of Jesus, not on reports from the edge of death; with a word for the grieving and for anyone thinking of death.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -550,7 +550,7 @@
       "slug": "morality",
       "n": 9,
       "title": "Morality, sexuality and the church's record",
-      "line": "The Crusades, the Inquisition, slavery and conquest, abuse and its cover-up, and the charge that religion poisons everything.",
+      "line": "The Crusades, the Inquisition, slavery, abuse and its cover-up, women, abortion in the early church, Christian nationalism, and whether morality is only culture.",
       "planned": 14,
       "status": "live",
       "live": true,
@@ -601,30 +601,30 @@
         {
           "slug": "the-first-christians-on-abortion-and-exposure",
           "question": "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?",
-          "blurb": "Exposure and abortion in the Roman world, the Jewish refusal, the Didache, Barnabas, Athenagoras, Tertullian and Basil in their own words, Exodus 21:22 in both readings, and how Catholic, Orthodox and Protestant Christians have reasoned; history and theology, not an argument about any law. It opens and closes with a word of gentleness for anyone carrying grief or guilt, and names Find Help.",
-          "status": "pending",
-          "live": false
+          "blurb": "Exposure and abortion in the Roman world, the Jewish refusal, the Didache, Barnabas, Athenagoras, Tertullian and Basil in their own words, Exodus 21:22 in both readings, how Catholic, Orthodox and Protestant Christians have reasoned, and where the author of this site lands; history and theology, not an argument about any law. It opens and closes with a word of gentleness for anyone carrying grief or guilt, and names Find Help.",
+          "status": "live",
+          "live": true
         },
         {
           "slug": "is-christianity-bad-for-women",
           "question": "The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?",
-          "blurb": "Stanton's charge and the texts behind it, Tertullian and Aquinas in their own words, what Jesus and the first churches did, the household codes read whole, the complementarian and egalitarian readings without a side taken, and the misuse of submission named and refused; Find Help is named for anyone being hurt.",
-          "status": "pending",
-          "live": false
+          "blurb": "Stanton's charge and the texts behind it, Tertullian and Aquinas in their own words, what Jesus and the first churches did, the household codes read whole, the complementarian and egalitarian readings as their holders state them, where the author of this site lands, and the misuse of submission named and refused; Find Help is named for anyone being hurt.",
+          "status": "live",
+          "live": true
         },
         {
           "slug": "is-christian-nationalism-christian",
           "question": "Every nation's laws rest on somebody's morals. Why shouldn't a Christian people want a Christian nation? Is Christian nationalism Christian?",
           "blurb": "The case for a Christian nation in its defenders' terms, what is true in it, what Jesus did with power, the church under Constantine and after, the wars of religion, the dissenters who argued for liberty of conscience, and the same test applied to any cause that drafts the cross.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "is-christian-morality-a-product-of-its-culture",
           "question": "Morals differ from one culture to the next, and Nietzsche traced Christian values to the resentment of the weak. Isn't Christian morality just the product of its culture?",
           "blurb": "Relativism and Nietzsche's genealogy at full strength, where Christian ethics cut against the world that first heard it (unwanted infants, the poor, human rank, enemies) and later against Christian societies on slavery, with the church's guilt admitted, and what an argument from history can and can't show.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -1775,7 +1775,7 @@
       "area": "science",
       "slug": "how-old-is-the-earth",
       "question": "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The plain sense of Genesis is six ordinary days a few thousand years ago, and any other reading bends Scripture to fit science",
@@ -1785,7 +1785,7 @@
       "area": "science",
       "slug": "how-old-is-the-earth",
       "question": "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Human genetic diversity shows that our ancestral population never fell below several thousand, which rules out all humans descending from a single recent couple",
@@ -1795,7 +1795,7 @@
       "area": "science",
       "slug": "adam-eve-and-human-origins",
       "question": "Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Paul's use of Adam reflects the assumptions of his time and need not bind modern readers",
@@ -1805,7 +1805,7 @@
       "area": "science",
       "slug": "adam-eve-and-human-origins",
       "question": "Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The present gaps in explaining conscious experience reflect only the early stage of inquiry, not a barrier in reality",
@@ -1815,7 +1815,7 @@
       "area": "science",
       "slug": "is-the-mind-just-the-brain",
       "question": "Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The experience of consciously willing an action is an illusion",
@@ -1825,7 +1825,7 @@
       "area": "science",
       "slug": "neuroscience-and-free-will",
       "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The conscious intention to move cannot be the true cause of an action, because it comes after the brain's readiness potential",
@@ -1835,7 +1835,7 @@
       "area": "science",
       "slug": "neuroscience-and-free-will",
       "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Accurate perceptions reported during near-death experiences, which the senses could not have supplied, are evidence that a person can survive the body",
@@ -1845,7 +1845,7 @@
       "area": "science",
       "slug": "near-death-experiences",
       "question": "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?",
-      "live": false
+      "live": true
     },
     {
       "claim": "God's omnipotence, God's goodness and the existence of evil cannot all be true, so belief in God is positively irrational",
@@ -2005,7 +2005,7 @@
       "area": "morality",
       "slug": "the-first-christians-on-abortion-and-exposure",
       "question": "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Bible teaches that woman brought sin into the world and is to live in silence and subjection",
@@ -2015,7 +2015,7 @@
       "area": "morality",
       "slug": "is-christianity-bad-for-women",
       "question": "The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?",
-      "live": false
+      "live": true
     },
     {
       "claim": "A Christian people should order its laws and customs as a Christian nation, for its earthly and heavenly good",
@@ -2025,7 +2025,7 @@
       "area": "morality",
       "slug": "is-christian-nationalism-christian",
       "question": "Every nation's laws rest on somebody's morals. Why shouldn't a Christian people want a Christian nation? Is Christian nationalism Christian?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Christian values are the resentment of the weak turned into a morality",
@@ -2035,7 +2035,7 @@
       "area": "morality",
       "slug": "is-christian-morality-a-product-of-its-culture",
       "question": "Morals differ from one culture to the next, and Nietzsche traced Christian values to the resentment of the weak. Isn't Christian morality just the product of its culture?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The great religions are different culturally shaped responses to one ultimate Real, each a valid context of salvation and none the one and only",
