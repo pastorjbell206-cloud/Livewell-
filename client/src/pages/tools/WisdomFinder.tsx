@@ -13,7 +13,13 @@
  * When the best fit is weak or others are as close, the page asks "Is it one
  * of these?" with the areas of life the words met, as plain buttons; picking
  * one narrows the subjects to that area. A sentence that puts the help topic
- * first for safety never gets this step.
+ * first for safety never gets this step. When the first subject's own page
+ * opens with the path to help (finder.json "help"), the Find Help line a
+ * safety result carries is shown under it too.
+ *
+ * Beside the search, "Or look by subject" (collapsed) lists the same areas,
+ * each opening its subjects written in full, for words the finder does not
+ * meet.
  *
  * Built on the tool shell (components/tool-shell): ToolHead, QuestionCard
  * (the areas), useToolProgress, ResultActions.
@@ -75,6 +81,9 @@ export default function WisdomFinder() {
   const [filter, setFilter] = useState("");
   // "Is it one of these?": the area of life the reader picked for this sentence, if any.
   const [chosen, setChosen] = useState<{ q: string; area: string } | null>(null);
+  // "Or look by subject": the one area opened in the browse list beside the search.
+  const [browse, setBrowse] = useState<string | null>(null);
+  const areasRef = useRef<HTMLHeadingElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsRef = useRef<HTMLHeadingElement>(null);
   const [saved] = useState<string[]>(() => readSavedTopics());
@@ -112,6 +121,21 @@ export default function WisdomFinder() {
     const q = filter.trim().toLowerCase();
     return (data?.topics ?? []).filter((t) => !q || t.label.toLowerCase().includes(q) || t.keywords.some((k) => k.toLowerCase().includes(q)));
   }, [data, filter]);
+  // The topics written in full in each area, for the browse list beside the search.
+  const written = useMemo(
+    () =>
+      new Map(
+        (data?.areas ?? []).map((a) => [
+          a.id,
+          a.topics
+            .map((id) => byId.get(id))
+            .filter((t): t is FinderTopic => !!t && !!t.deep)
+            .sort((x, y) => x.label.localeCompare(y.label)),
+        ]),
+      ),
+    [data, byId],
+  );
+  const writtenCount = Array.from(written.values()).reduce((n, list) => n + list.length, 0);
   const savedTopics = saved.map((id) => byId.get(id)).filter((t): t is FinderTopic => !!t);
 
   const ask = (q: string) => {
@@ -205,6 +229,63 @@ export default function WisdomFinder() {
               </ul>
             </>
           )}
+          {/* For words the finder does not meet: every area, each opening its subjects written in full. Collapsed, so the first paint does not change. */}
+          <details className="wf-browse">
+            <summary>Or look by subject</summary>
+            {!data ? (
+              <p className="wf-ask__help" role="status">
+                Opening the library…
+              </p>
+            ) : (
+              <>
+                <p className="wf-ask__help">
+                  {writtenCount} of the {data.topics.length} subjects are written in full, in {data.areas.length} areas of life. Open an area to see its subjects.
+                </p>
+                <ul className="wf-browse__areas">
+                  {data.areas.map((a) => {
+                    const list = written.get(a.id) ?? [];
+                    const open = browse === a.id;
+                    return (
+                      <li key={a.id}>
+                        <button type="button" className="wf-browse__area" aria-expanded={open} aria-controls={`wf-browse-${a.id}`} onClick={() => setBrowse(open ? null : a.id)}>
+                          <span className="wf-browse__name">{a.name}</span>
+                          {/* So a screen reader says "name, 16 written in full of 16", not the two run together. */}
+                          <span className="sr-only">, </span>
+                          <span className="wf-browse__count">
+                            {list.length} written in full of {a.topics.length}
+                          </span>
+                        </button>
+                        <div id={`wf-browse-${a.id}`} className="wf-browse__panel" hidden={!open}>
+                          {list.length > 0 && (
+                            <ul className="wf-browse__topics" aria-label={`Subjects written in full in ${a.name}`}>
+                              {list.map((t) => (
+                                <li key={t.id}>
+                                  <Link href={`/wisdom/${t.id}`}>{t.label}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                          <button
+                            type="button"
+                            className="wf-browse__all"
+                            onClick={() => {
+                              place.set((p) => ({ ...p, area: a.id }));
+                              requestAnimationFrame(() => {
+                                areasRef.current?.focus({ preventScroll: true });
+                                areasRef.current?.scrollIntoView({ block: "start" });
+                              });
+                            }}
+                          >
+                            All {a.topics.length} subjects in this area
+                          </button>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
+            )}
+          </details>
           {place.resumed && !asked && place.value.q && (
             <p className="wf-resume">
               Earlier in this tab you asked about &ldquo;{place.value.q}&rdquo;.
@@ -279,7 +360,8 @@ export default function WisdomFinder() {
                       Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
                     </span>
                   </Link>
-                  {best.safety && (
+                  {/* The same line under a safety result and under a topic whose own page opens with the path to help. */}
+                  {(best.safety || best.topic.help) && (
                     <p className="wf-safety">
                       If you are in danger or thinking of hurting yourself,{" "}
                       <Link href="/help" className="wf-inline">
@@ -370,7 +452,7 @@ export default function WisdomFinder() {
 
           <section className="wz-band wz-band--warm" aria-labelledby="wf-areas-h">
             <div className="wz-col">
-              <h2 id="wf-areas-h" className="wz-sec__title">
+              <h2 id="wf-areas-h" className="wz-sec__title" tabIndex={-1} ref={areasRef} style={{ scrollMarginTop: "84px" }}>
                 Browse by area of life
               </h2>
               {!data ? (

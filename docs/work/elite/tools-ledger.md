@@ -1191,3 +1191,166 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | work-and-burnout | Psalm 116:7 words for a restless mind | plain psalms/116 1-11 asks |
 
 No new claim outside Scripture and the notes: no statistic, study, scholar or date was added. The term weights, the concept table (drawn from Find Help's `askedAs` lists and the Honest Answers' questions) and the safety pairs are matching data, not content shown to a reader.
+
+## Tenth build (2026-11-20): two finder changes, twelve topics
+
+Every claim below was written against the site's own notes; "note" is `client/public/bible/notes/<book>/<n>.json` and its `verses/` file, "plain" its `plain/` file. Nothing outside the repo was opened. The care lines are checked word for word by `validate-wisdom.mjs`. The two finder changes add no claim shown to a reader: the Find Help line is the safety result's existing sentence, and the browse list shows the areas' existing names and topic titles.
+
+| Topic | Claim | Checked against |
+|---|---|---|
+| work-life-balance | Psalm 127 does not tell you to stop working; worry not the same as work; sleep a gift, rest as trust | plain psalms/127 1-2 asks |
+| work-life-balance | Twin of Psalm 127; ordinary life made good; ends as a prayer, gifts not wages; a home without spouse or children not less blessed | plain psalms/128 1-6 hard and asks; note psalms/128 summary |
+| work-life-balance | Because of death the Teacher urges eat, drink, love his wife, work with all his might | note ecclesiastes/9 summary |
+| work-life-balance | Newly married man exempt from war for a year, listed beside laws protecting the poor; the same exemption recalled | note deuteronomy/24 summary; note luke/14 verses 19-20 history |
+| work-life-balance | Rest even in plowing and harvest; the seasons when every hour counted; harvest depended on God | note exodus/34 verse 21 |
+| work-life-balance | Martha's hospitality good and needed; served anxious and resentful; not scolding, inviting her to sit down | note luke/10 verse 40; plain luke/10 38-42 hard |
+| work-life-balance | Faithful work does not require silence about injustice; wealth on God's presence; God saw his affliction and work | note genesis/31 verses 38-40, 41-42; plain genesis/31 36-42 asks |
+| work-life-balance | Field, oxen, marriage good gifts, none sinful; good things become reasons not to come; your polite excuse | note luke/14 verses 19-20; plain luke/14 15-24 asks |
+| work-life-balance | Two better-than sayings prize a little with love over plenty with turmoil | note proverbs/15 summary |
+| work-life-balance | Jesus indignant, the only place the Gospels use the word of him; who deserves Jesus' time; who slows down the important work | note mark/10 verses 13-14; plain mark/10 13-16 asks |
+| work-life-balance | 1 Timothy 5:8: people who could care for widowed mothers and would not; not the poor, sick, out of work; never a reason to shame | plain 1-timothy/5 3-8 hard |
+| work-life-balance | Psalm 4: joy not depending on the harvest; pray verse 8 slowly | plain psalms/4 6-8 asks |
+| job-loss | The owner keeps going out and calls those no one chose; the story may touch unemployment, being the one no one picks; it does not blame them | note matthew/20 verses 6-7; note matthew/20 teach pastoral |
+| job-loss | The cupbearer forgets; Joseph did everything right and was left in prison; an ordinary human failing; the Bible does not pretend delays do not hurt; someone forgot you | note genesis/40 verse 23; plain genesis/40 16-23 asks |
+| job-loss | Manasseh and Ephraim; healing the memory of suffering, not erasing it; fruitful where you never wanted to be | note genesis/41 verses 50-51, 52; plain genesis/41 47-57 asks |
+| job-loss | Time and chance happen to all; the poor wise man forgotten | note ecclesiastes/9 summary |
+| job-loss | Trembling, he resolves to wait quietly; though every crop and flock fails he will rejoice | note habakkuk/3 summary |
+| job-loss | Ruth gleans in Boaz's field; Boaz protects, feeds, leaves extra grain; the law leaving the forgotten sheaf for foreigner, fatherless, widow | note ruth/1 summary; note ruth/2 summary; note deuteronomy/24 summary |
+| job-loss | Bread the most ordinary need brought to the Father; the out of work should not hear verses 25-34 as their fault; the community answers the petition | note matthew/6 verse 11; note matthew/6 teach pastoral |
+| job-loss | Paul paid his way with a trade; Aquila and Priscilla driven out opened their home | plain acts/18 1-4 asks |
+| job-loss | The Servant: labor seems wasted, trusts God for vindication; restoring Israel too small a task | note isaiah/49 summary |
+| job-loss | Philippians 4:13: strength to be content; a person who has lost a job can still say it; Christ's strength, not a change of circumstance | plain philippians/4 10-14 hard |
+| job-loss | Psalm 37:25: the righteous do sometimes go hungry; Naomi, Lazarus; three readings; never used to say the poor are not righteous; the open hand | plain psalms/37 12-26 hard and asks |
+| job-loss | Psalm 31:15 for days out of control; not in your boss's hands | plain psalms/31 1-24 asks |
+| job-loss | Care lines: dark place, seeking help, thoughts of hurting yourself, Find Help | plain 2-corinthians/4 |
+| career-change | Etsah covers human counsel and the LORD's purpose; take both seriously | note proverbs/19 words H6098 |
+| career-change | Densest group of LORD sayings: people plan and weigh motives, the LORD weighs hearts, establishes steps | note proverbs/16 summary |
+| career-change | The command names no destination; act on God's word alone; Abram went at seventy-five | note genesis/12 verses 1, 4 |
+| career-change | Amos answers that he was a herdsman whom the LORD called | note amos/7 summary |
+| career-change | Jesus did not ask them to stop being who they were; skills of ordinary work; nets to leave | plain matthew/4 18-22 asks |
+| career-change | God answers inadequacy with his presence; Gideon and Jeremiah; Moses tending his father-in-law's flock | note exodus/3 verses 11-12; note exodus/3 summary |
+| career-change | Nehemiah's silent prayer; asks to be sent; the king grants leave, letters, timber, escort | note nehemiah/2 summary |
+| career-change | Plans blocked twice; a closed door a not yet; decided by talking together | plain acts/16 6-10 asks |
+| career-change | James rebukes planning business as if tomorrow were theirs; is God in your plans | note james/4 summary; plain james/4 13-17 asks |
+| career-change | Peter went back to what he knew after failure; Jesus met him in his ordinary work and fed him | plain john/21 1-14 asks; note john/21 verse 3 |
+| career-change | 1 Corinthians 7:20: not changing station to be acceptable to God; where you have freedom to change; two readings of verse 21, the notes do not choose | plain 1-corinthians/7 17-24 hard and asks |
+| career-change | Psalm 143 asks to be taught; pick one short prayer | plain psalms/143 1-12 asks |
+| conflict-at-work | Daniel rises so high that jealous officials plot against him | note daniel/6 summary |
+| conflict-at-work | Joseph said no again and again to someone with power; a word to anyone pressured by a boss: not to blame, saying no is right; thrown into prison | plain genesis/39 7-10 asks, 11-18 hard; note genesis/39 summary |
+| conflict-at-work | Problem not hostility but abundance; Abram appeals to kinship, not rank | note genesis/13 verses 5-6, 8, 9 |
+| conflict-at-work | Luke does not hide the quarrel; God kept working through both | plain acts/15 36-41 asks |
+| conflict-at-work | Paul names the quarrel, takes no side; the true yokefellow | plain philippians/4 1-3 asks |
+| conflict-at-work | Fools promoted while the capable are passed over | note ecclesiastes/10 summary |
+| conflict-at-work | The song turns Saul's admiration to jealousy; twice tries to spear him | note 1-samuel/18 summary |
+| conflict-at-work | Go to the person, not everyone about the person; steps for roughly equal ground, not where one has power or someone is afraid; crimes to the authorities | plain matthew/18 15-17 hard and asks; note matthew/18 verse 15 |
+| conflict-at-work | John does not tell soldiers to leave service but to stop abusing its power; each trade's temptation named | note luke/3 verse 14 |
+| conflict-at-work | A worker is not property, a boss not an owner; treat workers without threats; no silence about mistreatment at work; threats open or quiet | plain ephesians/6 5-9 hard and asks |
+| conflict-at-work | 1 Peter 2:18: slaves with no way out; calls unjust treatment unjust; never a reason to tell someone hurt to stay and bear it; nothing asks anyone to stay in danger | plain 1-peter/2 18-25 hard |
+| conflict-at-work | Psalm 120: the ascents begin in lies and conflict; lets you say so to God | plain psalms/120 1-7 asks |
+| conflict-at-work | Care lines | plain 1-peter/2; plain genesis/39; plain ephesians/6 |
+| success-and-failure | Only Luke records the look; tears after the look; a failure you stopped believing God could forgive; tears the beginning of turning | note luke/22 verses 61-62; plain luke/22 54-62 hard and asks |
+| success-and-failure | Three questions answer three denials; the one who failed most publicly given the flock; leadership rests on grace, not a record without failure; one question, then work | note john/21 verses 15, 17; plain john/21 15-17 asks |
+| success-and-failure | A man who left, a man who stayed, a man who came back; someone written off; Mark turned back | plain 2-timothy/4 9-13 asks; plain acts/15 36-41 asks |
+| success-and-failure | Simon doubts the plan, obeys the person; not a promise of business success; the catch left on the beach | note luke/5 verses 4-5; plain luke/5 1-11 hard |
+| success-and-failure | Two-talent servant praised word for word as five; faithfulness not quantity; relieves comparison; the one who failed was afraid | note matthew/25 verses 20-23; plain matthew/25 14-30 asks |
+| success-and-failure | Whose verdict matters most; a clear conscience does not clear him; warning to leaders first | plain 1-corinthians/4 1-5 hard and asks |
+| success-and-failure | No boasting in wisdom, strength, wealth, only in knowing God | note jeremiah/9 summary |
+| success-and-failure | The king boasts over Babylon, the sentence falls; when sanity returns he praises the King of heaven | note daniel/4 summary |
+| success-and-failure | One man's honest witness that God sometimes answers with grace to bear it; grace enough for today | plain 2-corinthians/12 7-10 hard and asks |
+| success-and-failure | Make your own list; lean on to feel right with God; counted loss because he is better | plain philippians/3 4-11 asks |
+| success-and-failure | Proverbs 24:16 a proverb not a promise; seven a number of fullness; resilience; Job, Ecclesiastes, laments; final rising in the resurrection | note proverbs/24 hard |
+| success-and-failure | Psalm 73 ends by giving him God; pray verse 25 slowly | plain psalms/73 21-28 asks |
+| success-and-failure | Care lines | plain 2-corinthians/4 |
+| status-and-recognition | Every place a person can be seen; love of rank a temptation for every religious leader; lands first on those who lead today | note matthew/23 verses 6-7; plain matthew/23 1-12 asks |
+| status-and-recognition | Not a clever way to honor; honor God's to give; stopped keeping score; humility not worthlessness; Friend | plain luke/14 7-11 hard and asks |
+| status-and-recognition | Leadership defined against political power; serve unnoticed | note mark/10 verses 41-44; plain mark/10 35-45 asks |
+| status-and-recognition | Babel: a name and security of their own making; God promises Abram a great name; where you build a name, what you fear | note genesis/11 verse 4; plain genesis/11 1-4 asks |
+| status-and-recognition | Diotrephes loves to be first; name the wrong, no slander for slander; no one asked to stay under a controlling leader; kept someone out for control | note 3-john/1 summary; plain 3-john/1 9-10 hard and asks |
+| status-and-recognition | Haman assumes he is the man; ordered to honor Mordecai | note esther/6 summary |
+| status-and-recognition | God tearing down what he built; not success but survival | note jeremiah/45 summary |
+| status-and-recognition | Compares himself to no one, brings no achievements; quickest way to become the Pharisee; speaks first to the church | note luke/18 verse 13; plain luke/18 9-14 hard |
+| status-and-recognition | Does not give up his titles but shows what they mean; an unseen, unthanked task | note john/13 verses 12-15; plain john/13 12-20 asks |
+| status-and-recognition | What he set aside was clinging to honor and rights; what you hold tightly; so the church treats one another so | plain philippians/2 5-11 hard and asks |
+| status-and-recognition | Matthew 5:16 beside 6:1: the difference is the goal; who gets the glory | plain matthew/5 13-16 hard; note matthew/5 verses 14-16 |
+| status-and-recognition | The disciples argue who is greatest at the Last Supper | note luke/14 verse 7 history |
+| status-and-recognition | Psalm 115:1 asks whose glory; say it slowly and often | plain psalms/115 1-8 asks |
+| retirement | Levite service twenty-five to fifty; older Levites assist, not the heavy work; changing roles as we age | note numbers/8 summary and questions |
+| retirement | Caleb at eighty-five, promise forty-five years before; a hard task rather than a comfortable retirement from faithfulness | note joshua/14 summary and questions |
+| retirement | A life called empty, old, widowed, alone can be full before God; years of waiting made her ready; God has not finished with you | plain luke/2 36-40 hard and asks |
+| retirement | Barzillai content to go home and let a younger man receive the reward | note 2-samuel/19 summary and questions |
+| retirement | Older women given real teaching work; older teach younger by word and life | plain titus/2 1-5 hard and asks |
+| retirement | Babylon's gods hauled on weary animals; the LORD carries his people into old age | note isaiah/46 summary and questions |
+| retirement | Gray hair among the chapter's famous sayings | note proverbs/16 summary |
+| retirement | Rehoboam rejects the elders' counsel; ten tribes reject the house of David; whose counsel you seek | note 1-kings/12 summary and questions |
+| retirement | Jacob blesses Pharaoh; faith does not require calling a hard life easy; two blessings frame the talk; few and hard, still a blessing | note genesis/47 verses 7, 8-9, 10; plain genesis/47 7-12 asks |
+| retirement | The book turns a family story into Israel's history; Naomi called herself bitter | note ruth/4 summary and questions; note ruth/1 summary |
+| retirement | Luke 12: not against saving or planning; Joseph and the ant; greed, rich toward God; one beneficiary | plain luke/12 13-21 hard and asks; note luke/12 verse 21 |
+| retirement | Psalm 71: your prayer if old; afraid of being set aside; verse 18 work to do | plain psalms/71 1-24 asks |
+| retirement | Care lines | plain psalms/71 |
+| saving-and-spending | Urges the lazy to learn from the ant | note proverbs/6 summary |
+| saving-and-spending | Warns against haste, pleasure and greed | note proverbs/21 summary |
+| saving-and-spending | Wealth gained slowly or dishonestly; inheritance to grandchildren | note proverbs/13 summary |
+| saving-and-spending | Joseph trusted God's word and made a careful plan; trusting and planning not opposites; preparation, not worry | plain genesis/41 25-36 asks |
+| saving-and-spending | Know the condition of flocks; wealth and crowns do not last; faithful work provides | note proverbs/27 summary |
+| saving-and-spending | Bold, generous action in an uncertain future; no one knows which effort succeeds | note ecclesiastes/11 summary |
+| saving-and-spending | Only John records the order; not to waste treats God's gift as precious | note john/6 verses 12-13 |
+| saving-and-spending | Not setting devotion against care for the poor; those who say think of the poor not always thinking of the poor | note mark/14 verses 6-7; plain mark/14 1-11 asks |
+| saving-and-spending | Money relativized, very little and another's; how you used money last week, whom it served | note luke/16 verses 10-12; plain luke/16 10-13 asks |
+| saving-and-spending | Luke says only he lived wastefully; loss of property follows loss of relationship | note luke/15 verse 13 |
+| saving-and-spending | Matthew 6:34: not told to stop working; the birds do not farm, humans do; one day at a time; not borrowing tomorrow's trouble; food and clothes, not wealth | note matthew/6 verses 26-27, 33, 34; plain matthew/6 25-34 hard |
+| saving-and-spending | A man who built bigger barns and spoke only to himself | note luke/12 verses 16-17 |
+| saving-and-spending | Psalm 16: your portion; what you would most hate to lose | plain psalms/16 1-6 asks |
+| greed | The tenth command reaches from acts to desire; no court could enforce it; the root of the other offenses | note exodus/20 verse 17 |
+| greed | The list puts attitudes beside acts; no one can count himself clean; easier to look out there than in here | note mark/7 verses 20-23; plain mark/7 14-23 asks |
+| greed | Achan secretly takes devoted things and confesses | note joshua/7 summary |
+| greed | Ahab wants Naboth's vineyard; Jezebel's false witnesses; Naboth stoned so Ahab can take the land | note 1-kings/21 summary |
+| greed | Gehazi secretly takes some of the gifts | note 2-kings/5 summary |
+| greed | Six woes, the first against land-grabbing | note isaiah/5 summary |
+| greed | Powerful men lie awake plotting to seize fields and houses | note micah/2 summary |
+| greed | Love of money never satisfies; riches hoarded or lost; naked as they came | note ecclesiastes/5 summary |
+| greed | First time the Gospel gives Judas a character; talked about the poor, loved money; which voice is louder | note john/12 verses 4-6; plain john/12 1-8 asks |
+| greed | Which list you excuse; put to death one habit; greed idolatry, looks to possessions for what only God gives, the most respectable idol | plain colossians/3 5-11 asks; note luke/12 verse 15 |
+| greed | Matthew 25:29: the parable not about making money; not a promise of riches; not wealth as favour; not about bank balances; Jesus among the hungry next | plain matthew/25 14-30 hard |
+| greed | Psalm 62:10: leaning your heart on what weighs less than a breath | plain psalms/62 1-12 asks |
+| generosity-and-giving | Generosity that seems to lose ends up gaining; hoarding ends up cursed | note proverbs/11 summary |
+| generosity-and-giving | Paul's last lesson his own hands for the weak; do you believe it in spending and time | plain acts/20 32-38 asks |
+| generosity-and-giving | Macedonians gave out of deep poverty, begged to give, gave themselves first to the Lord; privilege not loss | note 2-corinthians/8 summary; plain 2-corinthians/8 1-7 asks |
+| generosity-and-giving | 8:9: the riches not money; forgiveness, family, Spirit, future; Paul reminds them of Jesus | plain 2-corinthians/8 8-15 hard and asks |
+| generosity-and-giving | Whom you know in need; love that costs; freely given, not taken by force or fear | plain 1-john/3 16-18 hard and asks |
+| generosity-and-giving | God places himself in the borrower's position on behalf of the poor | note proverbs/19 words H3867B |
+| generosity-and-giving | Assumes they give, attacks only the advertising; the poor not props; reward the Father's notice | note matthew/6 verse 2; plain matthew/6 1-4 hard |
+| generosity-and-giving | Every command grounded in God's character; love of neighbour at the centre | note leviticus/19 summary |
+| generosity-and-giving | The danger is being repaid; generosity expecting return a transaction; real meals; a table too small | note luke/14 verse 12; plain luke/14 12-14 hard and asks |
+| generosity-and-giving | Tabitha remembered by what she made; small faithful kindness not small to God | plain acts/9 36-43 asks |
+| generosity-and-giving | 2 Corinthians 9:6: all you need, not all you want; harvest of righteousness; poor who stay poor; the return is capacity for more generosity; not your failure, the promise was wrong | plain 2-corinthians/9 6-11 hard; note 2-corinthians/9 hard |
+| generosity-and-giving | Paul asks for giving that is regular, planned and in proportion | plain 1-corinthians/16 hard |
+| generosity-and-giving | Psalm 112: generosity part of fearing the LORD; pattern, not a promise of riches | plain psalms/112 1-10 hard and asks |
+| giving-to-the-church | The Bible's first tithe, given freely before any law; spoils from God; give gladly | note genesis/14 verse 20; plain genesis/14 17-20 asks |
+| giving-to-the-church | Tithe eaten in joy; every third year a food bank for those with no land | note deuteronomy/14 summary and cultural |
+| giving-to-the-church | Heaps for four months; first and best, support ministers, handle faithfully; faithful Levites distribute fairly | note 2-chronicles/31 summary and hard |
+| giving-to-the-church | Offerings kept coming until Moses told the camp to stop | note exodus/36 summary |
+| giving-to-the-church | Praise or lament (Addison Wright, 1982); many hold both; not that the poor must give what they need to live, nor favour bought | plain mark/12 41-44 hard |
+| giving-to-the-church | No rule of amount; regular, planned, proportionate; 2 Corinthians 8:12 quoted; planned or left to the moment | plain 1-corinthians/16 1-4 hard and asks |
+| giving-to-the-church | Most churches pay ministers; may choose not to use the right; no licence to demand money or grow rich; are those who serve you cared for | plain 1-corinthians/9 1-12 hard and asks |
+| giving-to-the-church | Given out of poverty, not as an investment; an offering to God; trusted adviser; not your failure, the promise was wrong | plain philippians/4 15-23 hard and asks |
+| giving-to-the-church | Small obedience commended, not as substitute for the great; your mint and dill | note matthew/23 verse 23; plain matthew/23 23-28 asks |
+| giving-to-the-church | Luke 6:38 not money for money; mercy, forgiveness, lending without return; the measure is mercy, not a payout | plain luke/6 37-42 hard |
+| giving-to-the-church | Prosperity teaching an error; turns grace into a transaction | plain galatians/6 6-10 hard |
+| giving-to-the-church | Where Christians differ on the tithe: shared ground, a tenth as the standard (Abram, Jacob, Matthew 23:23), proportionate giving without a fixed percentage; second-order | note genesis/14 hard; note 2-chronicles/31 hard; note malachi/3 hard; plain 1-corinthians/16 hard |
+| giving-to-the-church | Christ though rich became poor; riches not money | plain 2-corinthians/8 8-15 hard |
+| giving-to-the-church | Psalm 96: what people treat as gods, money among them; invitation to worship | plain psalms/96 1-9 asks |
+| consumerism-and-stuff | Sin works through goods rightly made; seizing them against his word; is God holding out on you | note genesis/3 verse 6; plain genesis/3 1-7 asks |
+| consumerism-and-stuff | The world a way of life against God, not creation; appetite, envy, pride in God's place; building on what passes | plain 1-john/2 15-17 hard and asks |
+| consumerism-and-stuff | Sayings on the restless human appetite | note proverbs/27 summary |
+| consumerism-and-stuff | A man with riches and honor who cannot enjoy them; appetite never satisfied | note ecclesiastes/6 summary |
+| consumerism-and-stuff | Not rich and poor; understanding about what you own; hold it as something you will leave | plain psalms/49 13-20 asks |
+| consumerism-and-stuff | Not feasting as such; luxury gained through injustice, complacency; unable to see or feel what happens to others | note amos/6 hard |
+| consumerism-and-stuff | Rich landowners hoarded, withheld wages; how the people who make what you buy are paid | note james/5 summary; plain james/5 1-6 asks |
+| consumerism-and-stuff | Riches supply the security the kingdom asks to give up; camel hyperbole, not a gate or rope; what you trust; all things possible | note mark/10 verses 23-25; plain mark/10 23-31 hard and asks |
+| consumerism-and-stuff | Panelled houses, temple in ruins; not every hardship a simple spiritual cause; consider your ways | note haggai/1 summary and hard |
+| consumerism-and-stuff | Rich fool anxious to secure too much, disciples enough; heart follows treasure | note luke/12 verses 22-23; plain luke/12 22-34 asks |
+| consumerism-and-stuff | John 10:10: abundance not wealth or comfort but relationship with God; voices that take, Jesus came to give | note john/10 verse 10; plain john/10 7-10 asks |
+| consumerism-and-stuff | God set eternity in human hearts | note ecclesiastes/3 summary |
+| consumerism-and-stuff | Taste and see an invitation, not an argument | plain psalms/34 1-10 asks |
+
+No new claim outside Scripture and the notes: no statistic, study, scholar or date was added. Addison Wright (1982) on Mark 12 is named because the plain note on Mark 12 names him. The salvation rewrites in `matching.json` are matching data, not content shown to a reader.

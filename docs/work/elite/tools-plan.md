@@ -723,6 +723,48 @@ The word-vector file (James to decide). Batch 6 from work-life-balance onward, a
 
 ---
 
+## 21. Build 10 (2026-11-20): two finder changes, twelve topics
+
+Retires, renames, merges and re-lists nothing; `toolsList.ts`, `siteCatalog.ts` and the menus are untouched; no API procedure, no dependency. Ledger rows: `docs/work/elite/tools-ledger.md`, "Tenth build". The word-vector file was not built (James to decide).
+
+### The finder
+
+1. **The Find Help line under a first result whose own page puts help first.** `build-wisdom-index.mjs` marks a topic `help` in `finder.json` when it is a heavy subject in `sensitive-pages.json`, or when it is written in full and its whole-Bible section names Find Help in its opening three sentences. When such a topic comes first, the finder shows the same line a safety result shows ("If you are in danger or thinking of hurting yourself, Find Help lists places to turn now."). Forty-four topics carried the flag at the start (numbness, mental exhaustion, work and burnout and purpose and meaning among them); Job Loss, Conflict at Work and Success and Failure joined them this build. Tests: burnout sentence shows the line, saying-no does not; every heavy subject and every flagged page is checked from the data.
+2. **"Or look by subject" beside the search.** The finder already had "Browse by area of life" further down the page, a set of radio choices listing every subject in an area. It was kept, and the new list was added in the search band itself, collapsed (a `details` element whose summary is static, so first paint does not wait on the data): one button per area of life (the areas the chips use), each `aria-expanded` with `aria-controls`, at least 48px tall, showing "N written in full of M" counted from `finder.json`; opening one lists that area's subjects written in full as links (44px), with "All M subjects in this area", which selects the area in the list below and moves focus there. Test: collapsed by default, inside the search band, one button per area, counts and links from the data, the all-subjects button opens the area below.
+
+| Set | Start of build | End of build |
+|---|---|---|
+| cases (74) | 98.6% / 100% | 98.6% / 100% |
+| holdout (19) | 100% / 100% | 100% / 100% |
+| holdout2 (20) | 100% / 100% | 100% / 100% |
+| holdout3 (15) | 93.3% / 100% | 93.3% / 100% |
+| holdout4 (15) | 93.3% / 100% | 100% / 100% |
+| holdout5 (15) | 86.7% / 100% | 86.7% / 100% |
+| holdout6 (25) | 100% / 100% | 100% / 100% |
+| holdout7 (30) | 76.7% / 86.7% | 76.7% / 86.7% |
+| holdout8 (24) | 54.2% / 75.0% | 54.2% / 75.0% |
+
+Neither change touches matching, so neither moved a rate. Two topic pages did, and both were mended as data defects, not tuned to a holdout: Success and Failure's page weights put it third for holdout8's broken-confidence sentence (70.8% in the first three) through an older phrasing, "let everyone down", that collapses to the one word "everyone"; it was rewritten and holdout8 returned to 75.0%. Saving and Spending put itself ahead of Assurance of Faith for "am I really saved" (a cases sentence; "saved" and "saving" share a stem); rewrites now add "salvation" to the common ways of asking, Saving and Spending is pushed down by it, and a test holds both directions. The holdout7 and holdout8 misses listed in section 20 still stand, unfixed.
+
+### Twelve topics written in full (104 of 208)
+
+work-life-balance, job-loss, career-change, conflict-at-work, success-and-failure, status-and-recognition, retirement, saving-and-spending, greed, generosity-and-giving, giving-to-the-church, consumerism-and-stuff (batch 6 in the plan's order). One commit each, each with at least eight everyday phrasings in the same commit. stewardship and gambling, the rest of batch 6, open the next run.
+
+- Ten passages each, every "where it stands" written against a chapter note, verse note or plain note; one misread verse each (1 Timothy 5:8; Psalm 37:25; 1 Corinthians 7:20; 1 Peter 2:18-19; Proverbs 24:16; Matthew 5:16; Luke 12:19-20; Matthew 6:34; Matthew 25:29; 2 Corinthians 9:6; Luke 6:38; John 10:10).
+- **Where Christians differ** only on Giving to the Church: whether a tenth is still the standard, set out from the notes on Genesis 14, 2 Chronicles 31, Malachi 3 and 1 Corinthians 16, shared ground first, no side taken.
+- **Heavy:** Job Loss (its reading page is in `sensitive-pages.json`), Conflict at Work (harassment and threats at work) and Success and Failure (despair after failure) open the whole-Bible section with the path to help and carry care lines word for word (2 Corinthians 4, 1 Peter 2, Genesis 39 and Ephesians 6 plain notes); Retirement carries the Psalm 71 care lines. No phone numbers; Find Help named; no verse longing for or welcoming death on the crisis-facing pages (Barzillai's request to die in his own city, 2 Samuel 19:37, was left out of Retirement for the same reason). Nothing on the eternal state of anyone; Acts 5 and Philippians 3:19 were not used for that reason, and Titus 2:5 was left out so that a contested verse would not stand without the views the notes set out.
+- **Not advice:** money on Job Loss, Retirement, Saving and Spending and Giving to the Church; law on Conflict at Work; medicine on Success and Failure.
+
+### Seen on the served build
+
+The Wisdom Finder in Playwright at 390 and 1440, day and night (`node scripts/serve-like-vercel.mjs`, screenshots `/home/user/elite-shots/tools/run10-*`): "Or look by subject" collapsed at first paint inside the search band (summary 44px), opened with Enter, the first area button reached with Tab and opened with Enter (`aria-expanded` true, 48px, read as "Fear, worry and the heavy mind, 16 written in full of 16"), Tab to its first subject link (44px), and "All 16 subjects in this area" selecting the area below and moving focus to its heading; burnout, numbness and a job-loss sentence each showed the Find Help line under the first result; two self-harm sentences put Suicidal Thoughts first with the line and no chips and nothing beside it; "i cant say no to anyone" showed no line; "i feel off lately" offered six chips. Layout shift 0 on load and through the typed sentences, at every width and mode. One fault found and fixed with a test: an area button's name and count ran together for a screen reader ("mind16"); a spoken separator now sits between them. The twelve new topic pages at 390 and 1440, day and night: no sideways scroll, every section present, no console errors beyond the local server's missing `/_vercel/insights/script.js`, `/_vercel/speed-insights/script.js` and `/api/track` (404s). Lighthouse 13.6.0, median of three on `/tools/wisdom-finder`: performance 69, accessibility 100, best practices 96, SEO 100, CLS 0, LCP 4.2 s (a shared, loaded machine).
+
+### Not done in this run
+
+stewardship and gambling, and batches 7 to 14 (104 topics). Job in the explorer. The word-vector file. Any retirement, rename, merge or listing.
+
+---
+
 ## Decisions waiting on James
 
 Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.

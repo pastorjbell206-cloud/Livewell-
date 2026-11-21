@@ -125,7 +125,7 @@ const film: FilmDrawing = {
         </Fade>
       ))}
 
-      {/* 2. A child under the vine, looking up to the light beyond the edge. */}
+      {/* 2. A child under the vine, and the light from beyond the edge. */}
       <Fade frame={frame} on={2} off={3}>
         <path className="pl-f" d="M120,0L170,110M180,0L210,100M60,0L130,120" />
       </Fade>
