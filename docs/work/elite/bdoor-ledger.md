@@ -13493,3 +13493,27 @@ Cut before publishing: ‘for many centuries’ of the churches' service (the de
 | Leviticus 14:33-53; Jude 1:23 | 47-59 | BSB | BSB text |
 
 Cut before publishing: that cloth was costly and hand-woven (not in the repository); a sentence on how fear could turn on anyone with a mark (narrowed to the deep note's ‘hasty judgment’); nothing else. Miriam and King Uzziah, whose disease the Bible does present as a judgment, are named in the hard part, with the plain statement that this chapter makes no such link (leviticus/14.json `hard`; leviticus/10.json `historical`).
+
+## The plain notes on Leviticus 14 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The road back; a whole chapter for bringing home the excluded; the priest goes out | 1-9 | leviticus/14.json `story`, `cultural` | Repository |
+| The priest does not heal (13: ‘not a physician’); the rite marks a healing already there | 1-9 | leviticus/13.json `cultural`; leviticus/14.json `christ` | Repository |
+| Living water, hyssop and the first Passover; one bird killed and one freed; the two goats of chapter 16; shaving as a fresh start; three stages | 1-9 | leviticus/14.json `cultural`, `literary`, `words` (H6833) | Repository |
+| Exodus 12:22; Psalm 51:7; Mark 1:44 | 1-9 | leviticus/14.json `christ`; BSB | BSB text |
+| The marks repeat the ordination of the priests (8:23-24); a rite that echoes the priests' own | 10-20 | leviticus/14.json `cultural`; leviticus/8.json `cultural` | Repository |
+| Why a guilt offering: the two explanations | 10-20 | leviticus/14.json `words` (H0817) | Repository; no side |
+| Atonement where no sin is named; ‘clean’ nineteen times | 10-20 | leviticus/14.json `doctrines` (atonement), `words` (H2891) | Repository |
+| Leviticus 8:23; Hebrews 9:14; ‘a shadow is real’ | 10-20 | leviticus/14.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| The cost lowered; the full rite repeated; the third such provision (5:7; 12:8) | 21-32 | leviticus/14.json `cultural`, `historical`, `doctrines` (salvation) | Repository |
+| Matthew 11:5; Luke 17:17 | 21-32 | BSB | BSB text |
+| Houses of stone or mudbrick with plaster and beams; damp and mold; the same pattern as chapter 13 | 33-57 | leviticus/14.json `historical`, `literary` | Repository |
+| The house emptied first (verse 36); atonement for a house | 33-57 | BSB; leviticus/14.json `words` (H3722A) | BSB text |
+| Matthew 7:24; Psalm 127:1 | 33-57 | BSB | BSB text |
+| Verse 34: God's rule without punishment implied; the link some make with judgment and slander; ‘the text itself makes no such connection’ | 33-57 | leviticus/14.json `hard` | Repository; no side |
+| ‘No one should be told that their illness or disability is a punishment.’ | 33-57 | luke/plain/5.json (17-26 `hard`), word for word | Repository |
+
+Cut before publishing: that no one else in the law is marked on ear, thumb and toe (not stated in the repository); that the healed person was ‘more likely than most to be poor’ (narrowed); the modern sizes of the ephah and the log; the resemblance of the two birds to the gospel, which the deep note calls a resemblance and not a prediction.
