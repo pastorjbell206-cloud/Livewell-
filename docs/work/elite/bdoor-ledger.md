@@ -14670,3 +14670,19 @@ Cut in chapter 7: a sentence that in Canaanite religion the crops were the gifts
 | Micah 6:8; Jeremiah 4:4; 30:6; Romans 2:29; Acts 10:34-35; Leviticus 19:34; Matthew 25:35 | 12-22 | deuteronomy/10.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 10: a remark on the Hebrew wording behind ‘showing no partiality’ (not in the repository's notes on this chapter).
+
+## The plain notes on Deuteronomy 11 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hearers young at the exodus, eyewitnesses; the two kinds of events; Dathan and Abiram (Numbers 16); discipline and chapter 8 | 1-7 | deuteronomy/11.json `historical`; deuteronomy/8.json `cultural` | Repository |
+| Numbers 16:32; Psalm 78:4; Judges 2:10 | 1-7 | BSB | BSB text |
+| Egypt's river and channels worked by hand and foot; Canaan's two rains; Baal the storm god as the temptation | 8-17 | deuteronomy/11.json `cultural`, `words` (H4306) | Repository |
+| 1 Kings 17:1; Jeremiah 14:22; Matthew 5:45; Acts 14:17 | 8-17 | deuteronomy/11.json `christ`, `words`; BSB | Repository; BSB text |
+| Prosperity teaching rejected by most interpreters; a nation's covenant and land; Job, the psalms, Ecclesiastes; Luke 13:4-5; what the chapter still teaches | 8-17 | deuteronomy/11.json `hard`; leviticus/plain/26.json `hard` | Repository |
+| Verses 18-21 repeat 6:6-9 and frame chapters 6 to 11; the three paragraphs of the Shema; the mezuzah holding 6:4-9 and 11:13-21; the borders nearest under David and Solomon; no border or conflict today | 18-25 | deuteronomy/11.json `historical`, `literary`; deuteronomy/6.json `literary`, `cultural` | Repository |
+| Joshua 1:3; 1 Kings 4:21; Proverbs 3:3 | 18-25 | deuteronomy/11.json `historical`; BSB | Repository; BSB text |
+| Blessing and curse as God's favor given and withdrawn; the treaty ending; Gerizim and Ebal at Shechem; the Oak of Moreh and Genesis 12:6-7; the choice made visible; chapters 27, 28 and 30 | 26-32 | deuteronomy/11.json `historical`, `cultural`, `literary`, `words` (H1293, H7045) | Repository |
+| Joshua 8:33; Genesis 12:6; John 4:20-21; Galatians 3:13-14 | 26-32 | deuteronomy/11.json `historical`, `christ`; BSB | Repository; BSB text |
