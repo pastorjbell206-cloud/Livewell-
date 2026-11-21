@@ -13858,3 +13858,19 @@ Every claim in `client/public/bible/notes/numbers/intro.json`, field `teaching`.
 | Go deeper: ten pages, all live | deeper | App.tsx routes; guides/, doctrines.json, context/guides/, questions/old-testament/ (status live), answers.ts | Repository |
 
 Cut for want of a source in the repository: that the priests' blessing is still spoken in synagogues and at the end of church services; that no Israelite dies for rebellion after the second count.
+
+## The plain notes on Numbers 1 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| One month after the tabernacle (Exodus 40:17); a crowd made an ordered people; the census for the army; Mari | 1-19 | numbers/1.json `story`, `historical`, `cultural` | Repository |
+| Household, clan, tribe; each man named; paqad | 1-19 | numbers/1.json `cultural`, `words` (H6485A) | Repository |
+| The leaders' names built on El and Shaddai, none on Yahweh; the two views; Nahshon (Ruth 4:20; Matthew 1:4) | 1-19 | numbers/1.json `historical`, `christ` | Repository; no side |
+| Genesis 15:5; Isaiah 43:1; John 10:3 | 1-19 | numbers/1.json `christ`; BSB | BSB text |
+| The repeated formula; Reuben first; Ephraim and Manasseh (Genesis 48:5); Judah largest (verse 27), Manasseh smallest (verse 35); the two counts | 20-46 | numbers/1.json `literary`, `cultural`, `story`; BSB | Repository; BSB text |
+| Exodus 38:26; Deuteronomy 7:7; Revelation 7:4-8 | 20-46 | numbers/1.json `hard`, `christ`; BSB | BSB text |
+| The readings of the total: as written; elef as clan or unit (verse 16; Judges 6:15; Mendenhall 1958; Humphreys 1998); symbolic or later; each difficulty; no side | 20-46 | exodus/plain/12.json 37-42 `hard`; numbers/1.json `hard`, `words` (H0505G) | Repository; worded as the Exodus 12 note; no side |
+| The Levites' task; the ‘outsider’ a non-Levite; the Levites' camp as a guard; Leviticus 10:1-2; the chapter framed by obedience | 47-54 | numbers/1.json `cultural`, `literary`; leviticus/plain/10.json | Repository |
+| 2 Samuel 6:6-7; Ephesians 2:13, a link of theme | 47-54 | numbers/1.json `christ`; BSB | BSB text |
