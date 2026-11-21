@@ -14915,3 +14915,22 @@ Cut in chapter 23: that treaties between kings required runaways to be returned;
 | 2 Kings 14:6; Ezekiel 18:4; Ruth 2:2, 16 | 16-22 | deuteronomy/24.json `historical`, `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 24: a remark on the Hebrew wording of verse 15; the pointer to the Honest Answer on divorce at the end of the care paragraph (the paragraph is used in its other existing form, which ends at Find Help).
+
+## The plain notes on Deuteronomy 25 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Fairness and dignity as the chapter's thread; the three limits on a beating; ‘your brother’, not degraded; forty less one; threshing and the muzzle | 1-4 | deuteronomy/25.json `cultural`, `literary`, `christ` | Repository |
+| 2 Corinthians 11:24 with the pointer, no charge against the Jewish people; 1 Corinthians 9:9 and the two readings of Paul's use | 1-4 | 2-corinthians/plain/11.json `hard`; guides/reading-law.json (‘Two ways of giving law’); BSB | Repository; BSB text |
+| Levirate marriage, the name, parallels elsewhere; name and land through sons; the widow's support; yabam as a duty; the refusal, the sandal, the shame; the law's world | 5-10 | deuteronomy/25.json `historical`, `cultural`, `words` (H2993, H5275) | Repository |
+| Genesis 38:8; Ruth 4:7, 10; Matthew 1:3, 5; Matthew 22:30 | 5-10 | deuteronomy/25.json `christ`, `historical`; BSB | Repository; BSB text |
+| Weights as stones in a bag, ‘a stone and a stone’; measures; the fraud; ‘detestable’ | 11-16 | deuteronomy/25.json `cultural`, `words` (H0068H) | Repository |
+| Amos 8:5; Proverbs 11:1 | 11-16 | deuteronomy/25.json `cultural`, `words`; BSB | Repository; BSB text |
+| Verses 11-12: the only penalty of its kind; the offense and the name; the rabbinic reading as payment and the literal reading; not settled; no warrant to harm anyone | 11-16 | deuteronomy/25.json `hard` | Repository; harshness admitted |
+| Amalek: a people of the southern desert; Exodus 17; the stragglers; remember and blot out, the two-word command; the Jewish reading of the command as a charge to resist cruelty | 17-19 | deuteronomy/25.json `historical`, `literary`, `words` (H6002G), `hard` | Repository |
+| Exodus 17:14; 1 Samuel 15; Esther 3:1 and Agag | 17-19 | deuteronomy/25.json `historical`; BSB | Repository; BSB text |
+| How the command is read: the readings of the conquest with the pointers to chapters 7 and 20; no side; no people today is Amalek; no warrant for violence or contempt | 17-19 | deuteronomy/25.json `hard`; deuteronomy/plain/7.json 1-5; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
+
+Cut in chapter 25: the reason for thirty-nine lashes (‘a miscount’); that the name Amalek was later used of enemies to justify killing, and that the Amalekites ‘vanished long ago’ (neither is in the repository's notes); that Tamar was wronged ‘by the whole family’.
