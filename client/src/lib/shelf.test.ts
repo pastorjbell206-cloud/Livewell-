@@ -61,10 +61,10 @@ describe("shelf.json", () => {
     }
   });
 
-  it("holds the 65 planned essays: 15 live, 50 pending, each filed to a real section", () => {
-    expect(SHELF_ESSAYS).toHaveLength(65);
-    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(65);
-    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(15);
+  it("holds the 70 shelf essays: 20 live, 50 pending, each filed to a real section", () => {
+    expect(SHELF_ESSAYS).toHaveLength(70);
+    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(70);
+    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(20);
     expect(SHELF_ESSAYS.filter((e) => e.status === "pending")).toHaveLength(50);
     const sections = new Set(SHELF_SECTIONS.map((s) => s.slug));
     for (const e of SHELF_ESSAYS) {
@@ -157,7 +157,7 @@ describe("essay visibility", () => {
 
   it("orders the live shelf by section, then shelf order", () => {
     const live = liveShelfEssays();
-    expect(live).toHaveLength(40);
+    expect(live).toHaveLength(45);
     expect(live[0].slug).toBe("every-generation-was-sure-it-was");
     const ranks = live.map((e) => SHELF_SECTIONS.findIndex((s) => s.slug === e.section));
     expect([...ranks].sort((a, b) => a - b)).toEqual(ranks);
@@ -171,6 +171,7 @@ describe("essay visibility", () => {
       "ancient-church",
       "bible-in-its-world",
       "doubt",
+      "ordinary-faithfulness",
     ]);
   });
 });
@@ -181,9 +182,9 @@ describe("nearest section", () => {
   });
 
   it("never points at a section with nothing in it", () => {
-    // Marriage, Family and Ordinary Faithfulness has no public essay yet.
-    expect(nearestSection("covenant-vs-contract-what-marriage-is")).toBeNull();
-    expect(nearestSection(RETIRED, "marriage")).toBeNull();
+    // The American Church: History and Reckoning has no public essay yet.
+    expect(nearestSection("doctrine-of-discovery")).toBeNull();
+    expect(nearestSection(RETIRED, "prophetic-justice")).toBeNull();
   });
 
   it("routes a retired essay by its track", () => {
