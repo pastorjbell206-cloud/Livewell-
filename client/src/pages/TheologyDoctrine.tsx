@@ -9,6 +9,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import MoreOnThis from "@/components/MoreOnThis";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
@@ -84,9 +85,7 @@ export default function TheologyDoctrine() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <span><Link href="/topics" style={{ color: "inherit" }}>Questions</Link> · Doctrine</span>
-          </div>
+          <Place path={`/theology/doctrine/${doc.slug}`} dark style={{ marginBottom: "16px" }} />
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.5vw, 60px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             {doc.title}
           </h1>

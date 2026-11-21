@@ -7,6 +7,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import MoreOnThis from "@/components/MoreOnThis";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
@@ -75,10 +76,7 @@ export default function ContextGuide() {
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/resources/context" style={{ color: "inherit" }}>Reading Scripture in Context</Link>
-            {data?.kicker ? ` · ${data.kicker}` : ""}
-          </div>
+          <Place path={`/resources/context/${slug ?? ""}`} after={data?.kicker} dark style={{ marginBottom: "16px" }} />
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.04, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "Not found" : "Loading…")}</h1>
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>{data.subtitle}</p>}
           {world && (

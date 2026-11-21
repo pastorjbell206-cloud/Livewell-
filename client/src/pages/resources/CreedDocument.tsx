@@ -6,6 +6,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import { Prose } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageEndNav from "@/components/PageEndNav";
@@ -43,10 +44,7 @@ export default function CreedDocument() {
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/resources/creeds" style={{ color: "inherit" }}>Creeds, Confessions, and Classics</Link>
-            {data?.date ? ` · ${data.date}` : ""}
-          </div>
+          <Place path={`/resources/creeds/${slug ?? ""}`} after={data?.date} dark style={{ marginBottom: "16px" }} />
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "14px" }}>{data?.title ?? (missing ? "Not found" : "Loading…")}</h1>
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)" }}>{data.subtitle}</p>}
         </div>

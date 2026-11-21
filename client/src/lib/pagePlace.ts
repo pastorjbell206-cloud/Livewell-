@@ -10,7 +10,7 @@
  * not have to load the whole tools list before it paints; pagePlace.test.ts
  * fails if the copy and the list ever disagree.
  */
-import { DOORS, type CatalogEntry } from "./siteCatalog";
+import { DOORS, HELP_ENTRY, START_LINK, type CatalogEntry } from "./siteCatalog";
 
 /** Each tool's address and its group in lib/toolsList.ts (checked by pagePlace.test.ts). */
 export const TOOL_GROUPS_BY_HREF: Record<string, string> = {
@@ -104,6 +104,58 @@ export function placeFor(path: string): PagePlace | undefined {
       }
     }
     return { door: doorPart("tools")! };
+  }
+  return undefined;
+}
+
+/**
+ * Hubs whose address is not the start of their pages' addresses: the longer
+ * doctrine studies are listed on "Where Christians differ", and a topic
+ * pathway's own hub folded into the essays (vercel.json sends /pathways to
+ * /writing), so the essays are where its trail leads.
+ */
+const HUB_OF: [prefix: string, hub: string][] = [
+  ["/theology/doctrine/", "/theology/compare"],
+  ["/pathways/", "/writing"],
+  ["/group-guide/", "/studyguides"],
+];
+
+/** The pages beside the doors that hold pages of their own (Find Help's care pages, the start road's quiz). */
+const BESIDE: CatalogEntry[] = [HELP_ENTRY, START_LINK];
+
+/** A hub's own place plus the hub itself: where a page inside it sits. */
+function insideHub(hub: string): PagePlace | undefined {
+  for (const d of DOORS) {
+    const door = { name: d.name, href: d.page.href };
+    if (base(d.page.href) === hub) return { door };
+    for (const r of d.rooms) {
+      if (r.href === hub) return { door, room: { name: r.name, href: r.href } };
+      const inner = (r.inside ?? []).find((i) => !i.external && i.href === hub);
+      if (inner) return { door, room: { name: inner.name, href: inner.href } };
+    }
+  }
+  const beside = BESIDE.find((e) => e.href === hub);
+  return beside ? { door: { name: beside.name, href: beside.href } } : undefined;
+}
+
+/**
+ * The trail for any address, for the one line that says where a page sits:
+ * its own place when the catalogue lists it (placeFor), otherwise the nearest
+ * page above it that the catalogue does list. /plans/grief reads "Tools ·
+ * Eight-week plans"; /wisdom/anxiety reads "Questions · What the Bible says,
+ * by subject"; /help/grief reads "Find Help". Every part is a real link under
+ * its catalogue name. Undefined for a page with nothing above it but Home.
+ */
+export function trailFor(path: string): PagePlace | undefined {
+  const p = base(path).replace(/(.)\/$/, "$1");
+  const own = placeFor(p);
+  if (own) return own;
+  const named = HUB_OF.find(([prefix]) => p.startsWith(prefix));
+  if (named) return insideHub(named[1]);
+  const parts = p.split("/").filter(Boolean);
+  for (let n = parts.length - 1; n >= 1; n--) {
+    const hit = insideHub(`/${parts.slice(0, n).join("/")}`);
+    if (hit) return hit;
   }
   return undefined;
 }

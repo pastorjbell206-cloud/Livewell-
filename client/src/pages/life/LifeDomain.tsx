@@ -9,6 +9,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import MoreOnThis from "@/components/MoreOnThis";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { LIFE_TOPICS, SENSITIVE_LIFE } from "@/lib/needs";
@@ -62,10 +63,7 @@ export default function LifeDomain() {
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/life" style={{ color: "inherit" }}>Integrated Life</Link>
-            {data?.pillar ? ` · ${data.pillar}` : ""}
-          </div>
+          <Place path={`/life/${slug ?? ""}`} after={data?.pillar} dark style={{ marginBottom: "16px" }} />
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "24ch" }}>{data?.title ?? (missing ? "That page is not here yet." : "Loading the page…")}</h1>
           {missing && (
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
