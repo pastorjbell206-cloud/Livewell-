@@ -23,6 +23,7 @@
     {"slug": "how-christian-nationalism-rewrites", "section": "faith-and-power", "status": "live", "title": "How Christian Nationalism Rewrites Doctrine", "blurb": "The most dangerous heresies are not the ones that contradict the faith openly. They are the ones that rearrange it subtly"},
     {"slug": "when-fear-rewrites-theology", "section": "faith-and-power", "status": "live", "title": "When Fear Rewrites Theology", "blurb": "How sincere Christians justified what they never thought they would."},
     {"slug": "strongman-theology", "section": "faith-and-power", "status": "live", "title": "Why a Frightened Church Wants a King", "blurb": "A frightened church always asks for a king. Israel did it first — give us a king like the other nations — and a prophet told them exactly what fear would cost them. We are praying the same prayer."},
+    {"slug": "why-jesus-wont-fit-in-either-party", "section": "faith-and-power", "status": "live", "title": "Why Jesus Won't Fit in Either Party"},
     {"slug": "what-christian-nationalism-is-and-is-not", "section": "faith-and-power", "status": "pending", "title": "What Christian Nationalism Is, and What It Is Not"},
     {"slug": "when-god-bless-america-replaces-thy-kingdom-come", "section": "faith-and-power", "status": "pending", "title": "When God Bless America Replaces Thy Kingdom Come"},
     {"slug": "what-render-unto-caesar-actually-means", "section": "faith-and-power", "status": "pending", "title": "What Did Jesus Mean by \"Render Unto Caesar\"?"},
@@ -56,6 +57,7 @@
     {"slug": "how-the-bible-gets-translated-by", "section": "bible-in-its-world", "status": "live", "title": "How the Bible Gets Translated by the Room You’re In", "blurb": "No one simply reads the Bible. Every reader arrives with a community’s pre-translation already in place. The question is not whether your reading is shaped by your community — it is."},
     {"slug": "how-american-individualism-distorts", "section": "bible-in-its-world", "status": "live", "title": "How American Individualism Distorts the Bible", "blurb": "Why the New Testament church is more than personal faith"},
     {"slug": "the-bible-assumes-you-will-be-wrong", "section": "bible-in-its-world", "status": "live", "title": "The Bible Assumes You Will Be Wrong", "blurb": ""},
+    {"slug": "should-women-preach", "section": "bible-in-its-world", "status": "live", "title": "Should Women Preach?"},
     {"slug": "what-the-original-audience-heard", "section": "bible-in-its-world", "status": "pending", "title": "What the First Readers of the Bible Actually Heard"},
     {"slug": "church-megaproject-widow-mite", "section": "bible-in-its-world", "status": "pending", "title": "What Does the Widow's Mite Really Mean?"},
     {"slug": "why-didnt-the-bible-ban-slavery", "section": "bible-in-its-world", "status": "pending", "title": "Why Didn't the Bible Just Ban Slavery?"},
@@ -73,10 +75,13 @@
     {"slug": "did-god-command-genocide", "section": "doubt", "status": "pending", "title": "Did God Command Genocide?"},
     {"slug": "doubt-after-church-abuse", "section": "doubt", "status": "pending", "title": "Doubt After Being Abused by a Church Leader"},
     {"slug": "did-christianity-copy-pagan-myths", "section": "doubt", "status": "pending", "title": "Did Christianity Copy Pagan Myths?"},
+    {"slug": "did-god-choose-me-or-did-i-choose-god", "section": "doubt", "status": "live", "title": "Did God Choose Me, or Did I Choose God?"},
+    {"slug": "is-hell-real-and-is-it-forever", "section": "doubt", "status": "live", "title": "Is Hell Real, and Is It Forever?"},
     {"slug": "covenant-vs-contract-what-marriage-is", "section": "ordinary-faithfulness", "status": "pending", "title": "Is Marriage a Covenant or a Contract?"},
     {"slug": "what-the-bible-says-about-submission", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Submission in Marriage?"},
     {"slug": "what-fatherhood-requires", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Being a Father?"},
     {"slug": "the-machine-that-forms-you", "section": "ordinary-faithfulness", "status": "pending", "title": "What Is Your Phone Doing to Your Soul?"},
-    {"slug": "the-theology-of-saturday", "section": "ordinary-faithfulness", "status": "pending", "title": "What Holy Saturday Teaches About Grief"}
+    {"slug": "the-theology-of-saturday", "section": "ordinary-faithfulness", "status": "pending", "title": "What Holy Saturday Teaches About Grief"},
+    {"slug": "can-a-christian-be-rich", "section": "ordinary-faithfulness", "status": "live", "title": "Can a Christian Be Rich?"}
   ]
 }
