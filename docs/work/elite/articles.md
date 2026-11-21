@@ -119,3 +119,61 @@ In the order run, every one read by its own exit code: `pnpm check` passed. The 
 On the served build (`scripts/serve-like-vercel.mjs`, port 4655) at 390 and 1440: each essay's page shows its title as the H1 and its last paragraph, with no sideways scroll; all five are listed on /writing and found by /search; the only failed requests were the local server's missing `/_vercel` scripts and `/api/track`. Night was not checked: the site's dark mode is switched off for every visitor. Screenshots are in `/home/user/elite-shots/articles/`.
 
 Before the full run, the two tests that hold the shelf's shape were updated for the new counts (75 essays, 25 live, eight sections shown). On their first run one assertion failed: the page's empty-section message, which no track link reaches now that every section holds an essay. That test was rewritten to check that the old link lands on the section, and both files passed.
+
+---
+
+# Five more essays for the shelf, third run (2026-11-21)
+
+James, 2026-11-20 and 21: "I want you to continue, especially the articles. I want them to be a lot more controversial and dealing with very difficult issues in a very balanced, intellectual, academic, historical, biblical way that is very easy to understand, easy to read, normal, common language that is semi-professional, that's in my tone style that you've been writing like." "keep going and publish when ready."
+
+## What was written
+
+| Essay | Address | Shelf section |
+|---|---|---|
+| Should Christians Ever Go to War? | /writing/should-christians-ever-go-to-war | Faith and Power |
+| Can a Christian Lose Their Salvation? | /writing/can-a-christian-lose-their-salvation | Doubt and Hard Questions |
+| Do the Gifts of the Spirit Still Happen? | /writing/do-the-gifts-of-the-spirit-still-happen | Reading the Bible in Its World |
+| What Happens to People Who Never Hear the Gospel? | /writing/what-happens-to-people-who-never-hear-the-gospel | Doubt and Hard Questions |
+| Is Christianity a White Man's Religion? | /writing/christianity-was-never-western | The Ancient Church |
+
+Four were landed the way the first ten were: a file in `client/public/essays/`, a `"live"` line in `client/src/lib/shelf.json`, a filing line in `client/src/lib/pillar-assignments.ts`, the essays index and the passage index rebuilt. No database row.
+
+**The fifth uses a slot the shelf already had.** "Is Christianity a White Man's Religion?" has been a pending line on the shelf, under the slug `christianity-was-never-western`, with no rewrite behind it. A second line with the same title would have duplicated it, so the essay was written into that slot: the file carries the old slug, the shelf line now reads "live", and a filing line was added (the slug had none). The address is therefore /writing/christianity-was-never-western. The shelf now holds 79 essays, 30 of them live and 49 pending; 55 are public. The counts in `client/src/lib/shelf.test.ts` say so.
+
+To take one of the four down: delete its line from `shelf.json` and its file, run `node scripts/build-essays-index.mjs` and `pnpm exec tsx scripts/build-passage-index.mjs`, and lower the test's counts by one. To take the fifth down, delete its file and set its line back to "pending" (the line itself stays), rebuild the two indexes, and change the test's counts to one fewer live, one more pending and one fewer public.
+
+Rules kept in all five: no memory, anecdote, conversation, feeling or first-person experience is given to James (there is no "I" outside quoted text); no church body is named or implied as his; on each second-order question the positions are set out and none is stated as his (none of the five touched the three positions he gave on 2026-11-21, and none is stated); the confessional floor is stated as confession; no present war, state, party, policy, movement or living person is named; each crisis-adjacent passage keeps a path to help and reuses an existing care line whole (the 988 line in the war essay; the Honest Answer's and the Hebrews note's lines in the salvation essay; the terminal-diagnosis wording in the gifts essay; the /questions page's grief line in the fourth). Every claim and quotation has a row in `docs/work/elite/articles-ledger.md` under "Third run".
+
+## The Revision Pass (CLAUDE.md), one line per pass
+
+**should-christians-ever-go-to-war.** Structure: opens on three people who hear the word differently and grants the skeptic's charge; the 988 line stands before the argument; Jesus and Paul first, with Romans 12 and 13 read as one passage; the first three centuries with what complicates them; Augustine and Aquinas as a restraint; Schleitheim in its own words; each side's hard question; the crusade as the corruption neither side owns, turned on "we"; ends in Gethsemane with the promise of Isaiah 2:4 unkept. Rhythm: cut from 3,348 words to 2,999; the two "In its own terms" paragraphs built alike on purpose and nowhere else. Words: forbidden list clean by literal search; a wrong order of Celsus and Origen corrected; "the first Gentile baptized" corrected (the Ethiopian comes first); three unsourced sentences cut (see the ledger).
+
+**can-a-christian-lose-their-salvation.** Structure: opens on three frightened or grieving readers and the skeptic's "fine print"; the care lines before the argument; the promises and the warnings each read in place, then the places where one sentence holds both; the question's history from the lapsed of 250 through Augustine; four accounts each in its own confessional words; what each fears and what all agree on; the church's two failures; a section for the one who is afraid; ends on two sentences of Scripture that are not reconciled. Rhythm: one hedge ("perhaps two hundred times") removed. Words: "my own hold" changed so no first person stands outside a quotation; the Hebrews note's care sentence restored to its exact wording; a reference to "the tradition described above" removed.
+
+**do-the-gifts-of-the-spirit-still-happen.** Structure: opens on three people hurt from three directions and the skeptic's either-or; the care wording before the argument; 1 Corinthians 12 to 14 read in order with chapter 13 as the hinge; the history told so that it hands the argument to no one (Irenaeus, Montanus, Chrysostom, Augustine both ways, Westminster, Azusa Street); three positions and a fourth, each with its fear and its hard question; the abuses and the opposite failure, both under "we"; ends on Paul's "Now I know in part". Rhythm: one hedge removed. Words: "its own best pastors" softened; the prosperity sentence tied to the site's history course; Justin's sentence on prophecy cut because of where it stands.
+
+**what-happens-to-people-who-never-hear-the-gospel.** Structure: opens on a granddaughter, a missionary and a fifteen-year-old, and the charge about geography; the grief line before the argument; the question shown to be as old as Justin; the texts read closely, with Acts 17:26 to 27 set against the charge; the four answers in outline with the site's page linked for the rest; the hunter's question and what it does to the mission; Carey in his own words, including the painful ones; a word to the missionary with no pressure to hurry; the mirror turned on the reader who has heard; ends with the question open. Rhythm: the Jonah quotation recast so its question mark is not moved. Words: the gate's word "verdict" changed to "judgment"; a misquotation of John 14:5 caught by the script and corrected; "the court that had condemned Jesus" changed to "the council in Jerusalem".
+
+**christianity-was-never-western.** Structure: opens on a grandson, a picture and a history student; the charge given a section to itself and its facts granted; the New Testament's own map; the first thousand years, with Aksum from Socrates and Athanasius; a caution against drafting Augustine into a modern race; how the faith came to look white, under "we"; who carried it, in Douglass's words; the church's first ruling (Acts 15) as the standard the missionaries broke; ends with the picture coming down and the northern peoples placed among the nations sent for late. Rhythm: one "perhaps" removed. Words: "blessed the theft" changed (the literal search is clean); "Europe appears once" corrected for Crete; a line that would have given the author an ancestry removed.
+
+Final read as the skeptic, all five: each grants the strongest objection in its first movement, names the church's guilt in plain sentences with "we", says what history or argument cannot show, and ends without asking for a decision. The fourth does not answer its title and says so.
+
+## Topics for a next run
+
+- "Can I Trust My Feelings About God?" (this run's reserve; not needed).
+- "Is Christianity Good for Women?" (history both ways; pairs with `should-women-preach`).
+- "What Does the Bible Say About Sexuality, and Why Do Churches Now Disagree?" (James gave his position on 2026-11-21; it still needs his decision on scope and his own words).
+- "When Does Life Begin, and What Do Christians Owe the Unborn and Their Mothers?" (his position is given; the history from the Didache on is in sources this machine can open).
+- "Is the Bible Reliable Enough to Build a Life On?" (a distinct angle from `why-trust-the-bible`).
+- "What Is the Lord's Supper?" (memorial, spiritual presence, real presence; the companion to the baptism essay).
+- "Does Prayer Change Anything?" and "Why Are There So Many Denominations?"
+
+## Questions for James
+
+1. The fifth essay took the shelf's existing slot, so its address is /writing/christianity-was-never-western. Is that the address you want, or should it have a new one that matches its title (the old one would then be dropped from the shelf)?
+2. War: the essay sets just war and Christian pacifism side by side and does not choose. Do you want your own view stated? It also honors the conscientious objector and the chaplain together and names no war.
+3. Salvation: the essay does not say which account you hold. The Honest Answer on the site does not either. Is that what you want?
+4. Gifts: the essay takes no side among cessationist, continuationist and Pentecostal readings, and nothing in it says what your church practices. If you want that said, it should be in your words.
+5. Those who never heard: the essay keeps the page's four answers and takes no side. It says the missionary's sleeplessness "was never yours to carry". Please read that paragraph as a pastor: is it the comfort you would give?
+6. The fifth essay uses "we" for the churches of Europe and America that pictured Christ as one of themselves. It says nothing about your own background. Is that "we" yours to say?
+7. The ledger's "check first" rows (this machine could reach only GitHub): Warfield's 1918 argument, the Lutheran placing of assurance, and the seventh-century loss of the eastern and African churches. Each is standard and none was read in a source this run.

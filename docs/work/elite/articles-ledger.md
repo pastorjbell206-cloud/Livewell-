@@ -333,3 +333,150 @@ No side is taken and nothing in the essay says which practice the author's churc
 | Scripture (ESV): Matthew 28:19; Romans 4:11, 6:4; Acts 2:38-39, 2:41, 8:12, 16:15, 16:33, 16:34; 1 Corinthians 1:16; Colossians 2:11-12; 1 Peter 3:21; John 3:5, 16:2; Genesis 17:7; Mark 10:14; Jeremiah 31:34; Galatians 3:27, 3:29; Ephesians 4:5 | ESV copy, by script | Words verified |
 
 Cut or held back: Origen's statement that the church received infant baptism from the apostles and Irenaeus's earlier allusion (neither could be opened); the *Apostolic Tradition*; the Augsburg Confession's and Belgic Confession's condemnations of the Anabaptists (the first not in the collection, the second there only in a modern translation); the Zurich council's decrees and the manner of Manz's death beyond drowning; any number for the Anabaptist dead; Balthasar Hubmaier; the whipping of Baptists in New England; any sentence of Luther, Zwingli, Calvin or Menno Simons.
+
+---
+
+# Third run (2026-11-21)
+
+Five more essays. What the run could reach was the same as before: this repository and public GitHub repositories (raw files and GitHub code search). Sources opened in this run, beyond those listed above:
+
+- **WD** (HistoricalChristianFaith/Writings-Database at 922f4b3, the printed nineteenth-century translations): Tertullian, *On Idolatry*, *The Chaplet (De Corona)* and *The Apology*; Origen, *Against Celsus*, Book 8; Sulpicius Severus, *On the Life of St. Martin*; Augustine, *Reply to Faustus*, Book 22, *The City of God*, Books 19 and 22, *Letters* (Letter 189), *Treatise on Rebuke and Grace*, *Ten Homilies on the First Epistle of John*, Homily 6; Irenaeus, *Against Heresies*, Books 2 and 5; Chrysostom, *Homilies on 1 Corinthians*, Homily 29; Justin Martyr, *First Apology*; Socrates Scholasticus, *Ecclesiastical History*, Book 1; Athanasius, *Defence Before Constantius*; Basil, Letter 188 (already cached). Footnote numbers in these files sometimes stand inside a sentence; a quotation was read by eye where the script could not match across one. Lactantius, *Divine Institutes* 6.20 was looked for and not found in the file, and is not used. Justin's *Dialogue with Trypho* 82 was opened and not used, because the sentence sits in an argument against the Jewish people.
+- **Summa**: GITenberg, Project Gutenberg 18755, *Summa Theologica, Part II-II (Secunda Secundae)*, translated by the Fathers of the English Dominican Province; question 40, article 1.
+- **Schleitheim**: OpenChristianData/open-christian-data, `data/doctrinal-documents/schleitheim-confession-1527.json` (its note: the Rod and Staff Publishers English text, adopted 24 February 1527, drafted by Michael Sattler). The site's own summary is `client/public/creeds/documents/schleitheim-confession-summary.json`.
+- **Augsburg**: pmachapman/Confessions, `augsburg-confession.html`, Articles 12 and 16.
+- **Trent 6**: BenjaminPoole/ecumenical-christian-library, `councils/trent-1545/session-vi.part-1.html` (the same nineteenth-century translation as before): chapters 12 to 15 and canons 14 to 24.
+- **Creeds.json** (as before): Canons of Dort, First and Fifth Heads; Westminster Confession 1.1, 10.3, 10.4, 17.1, 17.3, 18.3, 18.4, 23.2.
+- **PG**: 68320 (Wesley's *Works*, vol. 4, already cached), Sermon XLVIII, "Self-Denial". 23 (Douglass, *Narrative*, Appendix). 11449 = William Carey, *An Enquiry into the Obligations of Christians to Use Means for the Conversion of the Heathens* (Leicester, 1792), read in OpenChristianData/open-christian-data, `data/structured-text/carey-enquiry.json`, which gives the Gutenberg text as its source.
+- **Repo**: the history course (`the-missionary-century`, `the-global-church`, `apostolic-and-persecuted`, `the-age-of-martyrs`, `councils-and-creeds`, `the-church-that-outlived-rome`, `the-long-middle`, `the-medieval-west`, `the-desert-and-the-rule`, `reformation-and-its-wars`, `the-constantinian-turn`, `after-christendom-era`, `the-attractional-era`); the Study Bible's notes on Hebrews 6 and 10, John 10, 15 and 16, 2 Peter 2 and 1 Corinthians 12; the Honest Answers "Can you lose your salvation?" and "What about those who never heard of Jesus?"; the /questions page `religions/those-who-never-heard`; the wisdom entry `terminal-diagnosis`.
+
+Every Scripture quotation was compared with the ESV copy by the same script (`chk.mjs`); every other quotation was compared with the cached sources by a second script (`srcchk.mjs`) and the few it could not match across a footnote number were read by eye.
+
+## 11. should-christians-ever-go-to-war
+
+No present or recent war, state, party, policy or person is named. The people in the opening are types.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Tertullian, in Carthage, around 200: "But how will a Christian man war, nay, how will he serve even in peace, without a sword, which the Lord has taken away?" | WD, *On Idolatry*, ch. 19 | Verbatim. The next clause ("in disarming Peter, unbelted every soldier") is damaged in the file and is not quoted. The date and place are reference knowledge |
+| Tertullian: "Shall it be held lawful to make an occupation of the sword, when the Lord proclaims that he who uses the sword shall perish by the sword?" | WD, *The Chaplet*, ch. 11 | Verbatim |
+| Tertullian: "We sail with you, and fight with you, and till the ground with you" | WD, *The Apology*, ch. 42 (a footnote number stands after "fight with you") | Verbatim, read by eye |
+| Part of his objection to the army was its idolatry | WD, *On Idolatry* 19 ("the divine and the human sacrament ... One soul cannot be due to two masters") | Paraphrase |
+| Celsus urged Christians to fight for the emperor; Origen: "We do not indeed fight under him, although he require it; but we fight on his behalf"; "those who are fighting in a righteous cause" | WD, *Against Celsus* 8.73 (and 8.74, "if Celsus would have us to lead armies") | Verbatim; the first is split at its semicolon. Origen "of the third century": reference knowledge |
+| Historians still dispute how far the early refusal was about bloodshed and how far about idolatry | Not opened this run | Reference knowledge |
+| Martin, a soldier in Gaul, later bishop of Tours: "I am the soldier of Christ" and "it is not lawful for me to fight"; asked for discharge the day before a battle; offered to stand unarmed before the line | WD, Sulpicius Severus, *Life of St. Martin*, ch. 4 (the file has no stop between the two clauses, so they are quoted apart). Fourth century: the text sets it under "Julian Caesar"; the site's course has Martin in the 380s | Verbatim |
+| Constantine won the West in 312 | Repo, history course | Site's own |
+| Rome sacked in 410; Augustine bishop of Hippo in North Africa | Repo, `councils-and-creeds` | Site's own |
+| Augustine to Boniface, 418: "Do not think that it is impossible for any one to please God while engaged in active military service."; "Peace should be the object of your desire; war should be waged only as a necessity"; Boniface fighting "the barbarians" | WD, Augustine, *Letters*, Letter CLXXXIX, headed "(A.D. 418.) TO BONIFACE", sections 4 to 6 | Verbatim |
+| Augustine: "The real evils in war are love of violence, revengeful cruelty, fierce and implacable enmity, wild resistance, and the lust of power" | WD, *Reply to Faustus* 22.74 | Verbatim |
+| Augustine: "As if he would not all the rather lament the necessity of just wars, if he remembers that he is a man" | WD, *The City of God* 19.7 | Verbatim |
+| Aquinas: "In order for a war to be just, three things are necessary."; "the authority of the sovereign"; "a just cause"; "a rightful intention"; "declared by the legitimate authority, and for a just cause"; "through a wicked intention" | Summa, II-II q.40 a.1 | Verbatim. "Thirteenth century": reference knowledge |
+| Later teachers added last resort, proportion and the protection of those not fighting | Not opened this run | Reference knowledge, paraphrase |
+| The Lutheran confession of 1530: Christians may "engage in just wars" and "serve as soldiers"; "They condemn the Anabaptists who forbid these civil offices to Christians." | Augsburg, Article 16 | Verbatim. The year 1530 is reference knowledge |
+| Anabaptists in Zurich from 1525; Schleitheim 1527, drafted around Michael Sattler, a former prior; Sattler tortured and burned within months; hunted for a century by Catholic and Protestant governments | Repo, `reformation-and-its-wars`; Schleitheim metadata (24 February 1527) | Site's own. "On the Swiss border" and "southern Germany": reference knowledge |
+| "The sword is ordained of God outside the perfection of Christ. It punishes and puts to death the wicked, and guards and protects the good." | Schleitheim, Article VI | Verbatim (the translator is not named in the copy, so the essay names none) |
+| Mennonites and Amish descend from them | Schleitheim metadata ("shaped Mennonite and Amish theology") | Verified |
+| Urban II at Clermont in 1095, remission of penance, "God wills it"; Rhineland massacres at Worms and Mainz, 1096; Jerusalem 1099; Constantinople 1204 | Repo, `the-long-middle`, `the-medieval-west` | Site's own |
+| Basil: killing in war not counted as murder by the fathers; soldiers "whose hands are not clean" to "abstain from communion for three years" | WD, Basil, Letter 188, canon XIII | Verbatim. "Seven centuries before Urban" rests on the 370s date the second run's ledger gives |
+| Scripture (ESV): Matthew 5:9, 5:38-39, 5:44-45, 8:10, 26:52; Luke 3:14, 22:51; John 18:36 (first two sentences only); Romans 12:19, 13:4; Acts 10:2; Revelation 5:5, 5:6, 12:11, 19:13, 19:15; Isaiah 2:4 | ESV copy, by script | Words verified |
+
+Cut or held back: Lactantius on killing (not found in the file); the Westminster Confession's sentence on war (opened in Creeds.json 23.2, cut for length); a sentence that soldiers were still given penance "a century before Urban" (not opened, cut); the claim that no Christian writer before Constantine approved of killing in war (too broad to source; the essay says only what Tertullian and Origen wrote); Maximilian the conscript, the *Apostolic Tradition* and the Council of Arles (none opened); Luther's and Calvin's own writings on soldiers; the Quakers and the Brethren (cut for length); "the greatest Christian city in the world" (an unsourced superlative); Boniface as the one who wrote first (the letter does not say so).
+
+## 12. can-a-christian-lose-their-salvation
+
+Agrees with the Honest Answer "Can you lose your salvation?" and with the Study Bible's notes on Hebrews 6 and 10, John 10 and 15 and 2 Peter 2; none is contradicted. No position is stated as the author's.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Care lines, reused whole: "If you are lying awake afraid you have fallen away, that fear is not usually the mark of someone who has. The settled apostate does not agonize." and "Don't settle your anxiety by picking the doctrine that soothes it. Go back to the one who said he would not let go." | Repo, `client/src/data/answers.ts`, "Can you lose your salvation?" | Reused whole, without quotation marks, as the site's own words |
+| Care line, reused whole: "A person worried that they have committed such a sin shows, by that very concern, the tenderness toward God that the passage describes as absent." | Repo, Study Bible note on Hebrews 6 (hard question) | Reused whole |
+| Hebrews written to a congregation under pressure, close to walking away; the warning concerns deliberate renunciation, not doubt or ordinary sin | Repo, notes on Hebrews 6 and 10 | Site's own |
+| Decius, 250; thousands sacrificed; rigorists said never; Cyprian and the larger church: return through real repentance | Repo, `apostolic-and-persecuted`, `the-age-of-martyrs` | Site's own |
+| Tertullian used Hebrews 6 against forgiving grave sin after baptism | Repo, note on Hebrews 6 | Site's own |
+| Augustine in the 420s: perseverance is God's gift; some truly reborn do not receive it; "I think that equally with me you are ignorant why one man should receive this gift and another should not receive it" | WD, *Treatise on Rebuke and Grace* (ch. 11 heading, "They Who Have Not Received the Gift of Perseverance"; the quotation from ch. 17). The decade from the note on John 15 ("about 429" for *On the Gift of Perseverance*) | Verbatim; date reference knowledge |
+| Trent, 1547: justification lost "not only by infidelity" but "by any other mortal sin whatever"; a chapter on "the fallen, and their restoration"; "let no one herein promise himself any thing as certain with an absolute certainty; though all ought to place and repose a most firm hope in God's help." | Trent 6, chapters 13, 14 (title) and 15; the year from the note on John 15 | Verbatim |
+| Augsburg, 1530: condemns those "who deny that those once justified can lose the Holy Ghost" | Augsburg, Article 12 | Verbatim |
+| Lutherans direct the troubled to the promise, baptism and the Supper and not to self-examination | Not opened this run | Reference knowledge, paraphrase. Check first |
+| Dort, 1619: "is not only possible, but would undoubtedly happen"; "not in consequence of their own merits, or strength, but of God's free mercy"; believers can fall into grievous sin | Creeds.json, `canons_of_dort.json`, Fifth Head, arts. 4 and 8 | Verbatim |
+| Westminster, 1646: "can neither totally nor finally fall away from the state of grace"; believers may "fall into grievous sins"; assurance "shaken, diminished, and intermitted" | Creeds.json, WCF 17.1, 17.3, 18.4; the year as the note on John 10 gives it | Verbatim |
+| The Reformed read Hebrews 6 of people with every outward gift who were never reborn | Repo, note on Hebrews 6 | Site's own |
+| The Remonstrants left the question open in 1610 and later held that a believer can fall; Wesley taught the same with a real assurance | Repo, note on John 10 | Site's own |
+| Wesley: a man who "did receive the heavenly gift" and "made shipwreck of the faith" | PG 68320, Sermon XLVIII, "Self-Denial", II.5 (the first phrase is in the case Wesley states and then explains) | Verbatim |
+| The warnings as God's means of keeping believers; the reading that they concern reward or discipline | Repo, notes on Hebrews 6 and John 15 (Schreiner and Caneday; the Free Grace reading) | Site's own; no names given in the essay |
+| The question has divided churches since the fifth century | Repo, note on John 15 | Site's own |
+| Scripture (ESV): John 6:37, 6:39, 10:27-29, 15:2, 15:6; Romans 8:30, 8:39; Philippians 1:6, 2:12-13; Hebrews 6:4-6, 6:9 (to the comma before the dash), 6:19, 10:26, 10:29; 2 Peter 2:20-21; Colossians 1:23; Jude 21, 24; 1 John 2:19, 3:20; Luke 15:20, 22:31-32; Mark 9:24; Matthew 12:20; 1 Corinthians 10:12 | ESV copy, by script | Words verified |
+
+Cut or held back: any sentence of Arminius, the Remonstrance or Luther in quotation marks (none opened); Novatian's name; Wesley's *Serious Thoughts upon the Perseverance of the Saints* (not found); 2 Timothy 2:13 (the ESV sets a dash in it).
+
+## 13. do-the-gifts-of-the-spirit-still-happen
+
+Agrees with the Study Bible's note on 1 Corinthians 12 (three positions and an open-but-cautious fourth) and with the note on John 16 (Montanus). No position is stated as the author's.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Care wording, quoted whole: "None of these readings sets prayer against medical care, and none makes an unhealed believer guilty of too little faith. Paul prayed three times and was not healed, and no one in Scripture blames him." | Repo, `client/public/wisdom/entry/terminal-diagnosis.json` | Quoted whole, as the site's own |
+| The Greek of 1 Corinthians 12:30 expects the answer no | Not opened this run | Reference knowledge |
+| Irenaeus, bishop in Gaul, late second century: "we do also hear many brethren in the Church, who possess prophetic gifts, and who through the Spirit speak all kinds of languages"; "see visions, and utter prophetic expressions"; "Others still, heal the sick by laying their hands upon them, and they are made whole." | WD, *Against Heresies* 5.6.1 and 2.32.4 (a footnote number stands after "hear") | Verbatim. "Around 180" and Gaul are reference knowledge |
+| Montanus and two prophetesses in Asia Minor (Phrygia) announced a New Prophecy; the wider church rejected it | Repo, note on John 16 | Site's own |
+| Chrysostom: "This whole place is very obscure"; "our ignorance of the facts referred to and by their cessation, being such as then used to occur but now no longer take place" | WD, *Homilies on 1 Corinthians*, Homily 29 | Verbatim. "At Antioch": reference knowledge |
+| Augustine: the tongues "were signs adapted to the time"; the sign "passed away" | WD, *Homilies on 1 John* 6.10 | Verbatim |
+| Augustine: "even now miracles are wrought in the name of Christ"; they are scarcely known where they happen | WD, *The City of God* 22.8 | Verbatim; the second is paraphrase |
+| The Reformers answered Rome's appeal to miracles and the radicals' revelations with the completeness of Scripture | Not opened this run | Reference knowledge, paraphrase |
+| Westminster, 1646: "wholly unto writing"; "those former ways of God's revealing his will unto his people being now ceased" | Creeds.json, WCF 1.1 | Verbatim |
+| B. B. Warfield of Princeton, 1918: miracles as the apostles' credentials, ending with those on whom they laid hands | Not opened this run (*Counterfeit Miracles*) | Reference knowledge, paraphrase. Check first |
+| Azusa Street, April 1906; William Seymour, blind in one eye, son of freed slaves; a former stable; newspapers mocked; Black, white and immigrant believers together; over half a billion by common estimates | Repo, `the-global-church` | Site's own |
+| The same experiences in the older churches, Catholic and Protestant, from the 1960s | Not opened this run | Reference knowledge |
+| Classical Pentecostal teaching: a baptism in the Spirit distinct from conversion, with tongues as its first sign; charismatics usually do not insist on the sign | The note on 1 Corinthians 12 names the question; the detail not opened | Reference knowledge, paraphrase |
+| The prosperity teaching grew from the healing revivals joined to the creed of upward mobility; giving in order to get | Repo, `the-attractional-era` (which also names New Thought; the essay does not) | Site's own |
+| Corinth: parties, lawsuits, drunkenness at the table | 1 Corinthians 1, 6 and 11 (paraphrase) | Scripture |
+| Scripture (ESV): 1 Corinthians 1:7, 12:3, 12:7, 12:9-11, 12:30, 13:1, 13:2, 13:8-10, 13:12, 14:1, 14:18-19, 14:29, 14:39-40; Acts 2:4, 2:6, 2:17; Hebrews 1:2, 2:3-4; Ephesians 2:20; 1 Thessalonians 5:19-21; 2 Corinthians 12:9; 1 Timothy 5:23; 2 Timothy 4:20; James 5:14; 1 John 4:1; Romans 8:9 | ESV copy, by script | Words verified |
+
+Cut or held back: Justin's "the prophetical gifts remain with us" (see above); Charles Parham and Topeka; the Assemblies of God statement; any living teacher's name; the book title in the course's account of the prosperity teaching.
+
+## 14. what-happens-to-people-who-never-hear-the-gospel
+
+Agrees with the /questions page "What about the people who never heard of Jesus?" and the Honest Answer of the same name; links the first and does not repeat it. Nothing is said about any person's fate.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Grief line, reused whole: "No page, preacher or tradition knows another person's heart at the end, and this one will not guess. Judgment belongs to Christ, who wept at a friend's grave." | Repo, `client/public/questions/religions/those-who-never-heard.json` | Reused whole |
+| Justin, mid second century, to the emperor: the objection that those born before Christ were not answerable; "those who lived reasonably are Christians, even though they have been thought atheists; as, among the Greeks, Socrates and Heraclitus, and men like them" | WD, *First Apology*, ch. 46 (the text itself says Christ was born "one hundred and fifty years ago"; a footnote number stands after "reasonably") | Verbatim, read by eye |
+| Westminster, 1646: "not professing the Christian religion"; "be saved in any other way whatsoever, be they never so diligent to frame their lives according to the light of nature"; "all other elect persons who are incapable of being outwardly called by the ministry of the Word"; "who worketh when, and where, and how he pleaseth" | Creeds.json, WCF 10.4 and 10.3 | Verbatim |
+| The four answers and their hardest questions; Origen and Gregory of Nyssa; councils and confessions have generally not received the fourth | Repo, the /questions page | Site's own |
+| Annie Dillard's story of the hunter and the priest | Repo, the Honest Answer (which cites *Pilgrim at Tinker Creek*, 1974); the book itself not opened | Site's own, as paraphrase |
+| Carey a shoemaker and village pastor; the older minister's reply, "as the story has come down"; sailed 1793 and never came home | Repo, `the-missionary-century` | Site's own |
+| Carey, 1792: "they appear to be as capable of knowledge as we are"; "the accursed Slave-Trade"; "the barbarous Germans and Gauls, and still more barbarous Britons" | PG 11449 (carey-enquiry.json); section numbers not noted | Verbatim (the last stops before his exclamation mark) |
+| The Opium War treaties wrote toleration of missions into the settlement; missionaries shared the era's contempt | Repo, `the-missionary-century` | Site's own |
+| Abraham asks six times | Genesis 18:24-32 | Scripture |
+| Scripture (ESV): John 10:16, 14:5, 14:6; Acts 4:12, 10:2, 10:35, 11:14, 17:22-23, 17:26-27, 17:30; Romans 1:20, 1:21, 2:12, 2:15-16, 3:23, 9:2, 10:13-14, 15:20, 15:21; Matthew 28:19; Revelation 5:9; Jonah 4:11; Luke 12:48; 1 Timothy 2:4, 2:5; Deuteronomy 29:29; Genesis 18:25 (the last sentence only) | ESV copy, by script | Words verified |
+
+Cut or held back: *Lumen Gentium* (the page gives it; cut for length); Hick, Himma, Craig and every modern name but Dillard's; Zwingli on Socrates; any count of the unreached.
+
+## 15. christianity-was-never-western ("Is Christianity a White Man's Religion?")
+
+Landed in the shelf's own pending slot of that title, which had no rewrite; the line now reads "live". The earlier essay `what-the-church-got-wrong-about-race` is linked and not repeated. No movement, party or slogan is named; the title's phrase is the shelf's.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Crowther: freed slave, led the Yoruba translation, first African Anglican bishop (1864), undone by younger Englishmen in the 1880s, white successor; "Africans could be converts but never leaders" | Repo, `the-missionary-century` | Site's own (the last as paraphrase) |
+| Douglass, 1845: "We have men-stealers for ministers, women-whippers for missionaries, and cradle-plunderers for church members."; "I love the pure, peaceable, and impartial Christianity of Christ: I therefore hate the corrupt, slaveholding, women-whipping, cradle-plundering, partial and hypocritical Christianity of this land." | PG 23, Appendix | Verbatim |
+| Cyrene a city of North Africa (Libya) | Acts 2:10 | Scripture |
+| The Ethiopian's kingdom lay on the Nile south of Egypt | Not opened this run | Reference knowledge |
+| "Niger" is the Latin word for black | Not opened this run | Reference knowledge |
+| Tertullian the first great Christian writer in Latin; Carthage in what is now Tunisia | Not opened this run | Reference knowledge |
+| Perpetua, Carthage, 203; Cyprian beheaded 258; Antony about 270 and the monastic movement; monks copied Scripture | Repo, `apostolic-and-persecuted`, `the-age-of-martyrs`, `the-desert-and-the-rule`, `the-long-middle` | Site's own |
+| Athanasius bishop of Alexandria from 328, exiled five times | Repo, `councils-and-creeds` | Site's own |
+| Augustine born in North Africa, bishop of an African port, died there | Repo, `councils-and-creeds` (the port); birth and death not opened | Partly reference knowledge |
+| "for centuries the theological engine room of the whole church" | Repo, `after-christendom-era` | Verbatim, the site's own |
+| Frumentius: captive, manager of the kingdom, gathered Christians; Athanasius "requested Frumentius himself to accept the bishopric" | WD, Socrates, *Ecclesiastical History* 1.19 (Socrates, following Rufinus, calls the country India; the fifth-century date is reference knowledge) | Verbatim |
+| Constantius's letter to "Aezanes and Sazanes" demanding "Frumentius, Bishop of Auxumis" | WD, Athanasius, *Defence Before Constantius* 29 and 31, headed "Letter of Constantius to the Ethiopians" (a footnote number stands after "Frumentius") | Verbatim, read by eye. "Middle of the fourth century": reference knowledge |
+| The churches of Ethiopia, Egypt and the Thomas Christians of India are ancient and continuing | Repo, `the-missionary-century` | Site's own |
+| Syriac is a form of Aramaic | Repo, `after-christendom-era` ("prayed in Aramaic and Greek and Syriac"); the relation not opened | Reference knowledge |
+| Patrick, mid fifth century; the Frankish king baptized about 496; the English mission of 597 and the slave-market story; Boniface in the eighth century | Repo, `the-church-that-outlived-rome`, `the-long-middle` | Site's own |
+| Carey: "the barbarous Germans and Gauls, and still more barbarous Britons" | PG 11449 | Verbatim |
+| From the seventh century Syria, Egypt and North Africa came under Muslim rule and their churches shrank; by 1500 the largest body of Christians was in Europe | Repo, `after-christendom-era` (North Africa a remnant for more than a thousand years); the rest not opened | Reference knowledge. Check first |
+| "moved on imperial rails"; some missionaries fought the empire's crimes and some approved them; local believers did most of the preaching: "They were the engine." | Repo, `the-missionary-century` | Verbatim, the site's own |
+| About ten million African Christians in 1900, more than three hundred million by the century's end; the balance tipped around 1980; African pastors in Europe's capitals; the southern churches not a finished thing | Repo, `the-global-church` (its "standard estimates") | Site's own; no other figure is given |
+| The enslaved heard the Exodus as their own story | Repo, the essay `what-the-church-got-wrong-about-race` | Site's own |
+| Scripture (ESV): Matthew 2:14-15; Mark 15:21; Acts 2:9-11, 8:27, 8:39, 11:20, 11:26, 13:1, 15:19, 16:9, 17:26; Galatians 2:11; Colossians 3:11; Revelation 7:9, 21:24, 21:26; Psalm 68:31 | ESV copy, by script | Words verified |
+
+Cut or held back: any modern voice of the charge by name (none could be opened); the secret night meetings of the enslaved (not on the site, not opened); Armenia, Nubia and the Church of the East in China (not opened); any claim about the appearance of Augustine or Athanasius; Jenkins's and Walls's names; a line that placed the author among "those of us descended from the barbarians of the north" (it would have given him a biography).
