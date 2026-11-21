@@ -13890,3 +13890,17 @@ Cut for want of a source in the repository: that the priests' blessing is still 
 | 22,300 and 22,000: a copying slip (three and six), the Talmud and Rashi, round figures | 14-39 | numbers/3.json `hard` | Repository |
 | The arithmetic; paduy, ransomed, and the exodus; the shekel a weight of eleven or twelve grams; Leviticus 27:6; 18:16; the ceremony Jewish families still keep | 40-51 | numbers/3.json `words` (H6302), `cultural` | Repository |
 | Exodus 13:15; 1 Peter 1:18-19; a pattern, not a prediction | 40-51 | numbers/3.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 2 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| How many, then where; the camp shaped around God's presence; standards and banners, no designs given | 1-17 | numbers/2.json `story`, `cultural`, `words` (H1714) | Repository |
+| Ramesses II's camp at Kadesh (about 1274 BC); no human king in the middle | 1-17 | numbers/2.json `historical` | Repository |
+| The east as the side of honor (Exodus 27:13-16; 3:38); Judah, not Reuben (Genesis 49); verse 17 between the camps | 1-17 | numbers/2.json `cultural`, `literary` | Repository |
+| Genesis 49:10; Ruth 4:20; Matthew 1:4; Exodus 29:45; John 1:14 and the verb ‘to pitch a tent’ | 1-17 | numbers/2.json `christ`; BSB | BSB text |
+| The four mothers and the four sides; the order on the march; the refrain of obedience; 24:2 | 18-34 | numbers/2.json `cultural`, `literary`, `story` | Repository |
+| Song of Songs 2:4; Revelation 21:3, 13, a link of theme | 18-34 | numbers/2.json `words`, `christ`; BSB | BSB text |
+| The size of the camp: as written; elef (Judges 6:15), Mendenhall 1958 and the objection; symbolic; no side | 18-34 | numbers/2.json `hard`, `words` (H0505G) | Repository; no side |
