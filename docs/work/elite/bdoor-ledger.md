@@ -14405,3 +14405,19 @@ Cut for want of a source in the repository: a reason for the killing of the boys
 | Joshua 1:16; 22:1-6; Galatians 6:2 | 16-32 | numbers/32.json `story`, `christ`; BSB | BSB text |
 | Dibon and the Moabite Stone (1868, about 840 BC), Ataroth, Nebo and the men of Gad; the renamed towns; the altar of Joshua 22; Tiglath-pileser III (about 733 to 732 BC) | 33-42 | numbers/32.json `historical`, `cultural`, `story` | Repository |
 | 1 Chronicles 5:26; Genesis 17:8 and achuzzah | 33-42 | numbers/32.json `words` (H0272); BSB | BSB text |
+
+## The plain notes on Numbers 33 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each). The BSB's word in verses 1 and 2 is not quoted; the stages are described in other words.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Forty years in one chapter; Assyrian and Egyptian itineraries; Moses said to write; massa, to pull up tent pegs; each move began with the cloud (9:17-23); the names as stories | 1-49 | numbers/33.json `story`, `cultural`, `historical`, `words` (H4550) | Repository |
+| What the list leaves out and what its notes recall; a record of God's leading | 1-49 | numbers/33.json `literary` | Repository |
+| What is known and not known of the route: Rameses, Succoth, Ezion-geber, Kadesh at Ain el-Qudeirat, Punon at Feinan, verses 18-35, Mount Sinai debated; no route drawn | 1-49 | numbers/33.json `historical`, `hard`; exodus/intro.json teaching | Repository; no route claimed |
+| Deuteronomy 8:2; 1 Corinthians 10:11; Hebrews 11:16 | 1-49 | numbers/33.json `christ`; BSB | BSB text |
+| The differences from other accounts; Moserah (Deuteronomy 10:6) and Mount Hor; the three explanations | 1-49 | numbers/33.json `hard` | Repository; no side |
+| Images, idols and high places; the lesson of Peor; yarash, to possess and to put out; the passage speaks of driving out; verse 56 and the exile | 50-56 | numbers/33.json `cultural`, `words` (H3423H, H1116); BSB | Repository; BSB text |
+| Judges 2:3; Deuteronomy 9:5; Leviticus 18:28 | 50-56 | numbers/33.json `cultural`; questions/old-testament/the-command-to-destroy-the-canaanites.json; BSB | Repository; BSB text |
+| The readings of the conquest (judgment after patience, Genesis 15:16; the idiom of ancient war, Exodus 23:30, survivors in Joshua and Judges; accommodation and its critics); what holds under all; Luke 9:54-55 | 50-56 | questions/old-testament/the-command-to-destroy-the-canaanites.json; context/guides/the-violence-of-the-old-testament.json; numbers/21.json `hard` | Repository; no side |
+| No modern nation, people, border or conflict in view; the Crusades and the colonies named as misuse | 50-56 | context/guides/the-violence-of-the-old-testament.json (‘What No One May Do With These Texts’); the run's content rule | Repository; a caution of these notes |
