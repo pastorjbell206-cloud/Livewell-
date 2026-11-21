@@ -14720,3 +14720,21 @@ Cut in chapter 12: that a newcomer to a land would ask how its gods were served;
 | Judges 20:13; 2 Corinthians 10:4; John 18:36 | 12-18 | BSB | BSB text |
 
 Cut in chapter 13: a sentence that the prophets wept over Jerusalem under this law's judgment (no reference, and not in the repository's notes); that Judges tells the war with Benjamin ‘as a disaster’, narrowed to what Judges reports.
+
+## The plain notes on Deuteronomy 14 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Mourning rites of the ancient world, tied to the cult of the dead or to appeasing gods; Mount Carmel; Israel to grieve but not so; qadosh, holy by God's choice | 1-2 | deuteronomy/14.json `cultural`, `words` (H6918G) | Repository; the rites not described in detail |
+| Leviticus 19:28; 1 Kings 18:28; 1 Thessalonians 4:13; John 11:35 | 1-2 | BSB | BSB text |
+| The grief and crisis paragraph reused whole | 1-2 | an existing plain note's paragraph, whole (‘If your grief is so heavy that you cannot carry it, or you feel you do not want to go on ... The Find Help page on this site lists places to turn’) | Repository; word for word |
+| The shorter list for households; uncertain bird names; ‘unclean’ not sinful or dirty; verse 21 and the foreigner; the explanations (health, pagan rites, Douglas 1966, boundary); pig bones on the coast and in the hills; the young goat, Maimonides, compassion, meat and dairy | 3-21 | deuteronomy/14.json `historical`, `cultural`, `words` (H2931), `hard`; questions/old-testament/which-old-testament-laws.json (`evidence`) | Repository; no side |
+| ‘None of this treats the food laws as foolish...’; the Christians who keep them; Romans 14:3 | 3-21 | leviticus/plain/11.json 41-47 `hard` (the same sentences) | Repository; word for word |
+| Leviticus 11:44; Mark 7:18-19 with the pointer; Acts 10:15, 28; Romans 14:17 | 3-21 | deuteronomy/14.json `christ`; BSB | Repository; BSB text |
+| The tithe as a common payment; a family feast; the allowance for distance; the third-year tithe for those without land; Numbers 18's different stress | 22-29 | deuteronomy/14.json `cultural`, `literary`, `words` (H4643) | Repository |
+| Genesis 14:20; 28:22; Matthew 23:23; 2 Corinthians 9:7 | 22-29 | deuteronomy/14.json `words`, `christ`; BSB | Repository; BSB text |
+| Must Christians tithe: the two views, no side | 22-29 | leviticus/plain/27.json 26-34 `hard` (the same wording) | Repository; no side |
+
+Cut in chapter 14: that later Jewish practice counted separate tithes (not in the repository's notes); the wording of 1 Kings 18:28 beyond three words, so that the rite is not described.
