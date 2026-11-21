@@ -13190,3 +13190,29 @@ Every claim in `client/public/bible/notes/leviticus/intro.json`, field `teaching
 | Go deeper: three Study Bible guides, five doctrine studies, two context guides | deeper | bible/guides/*.json; bible/doctrines.json; context/guides/*.json; routes in App.tsx | Repository |
 
 Cut or narrowed before publishing: the origin of the English name Leviticus (not in the repository); that chapter 16 is the center ‘of the five books’ (the repository says only the center of the book); ‘the most solemn day’ (the deep note's word is ‘holiest’); that Tyndale coined ‘scapegoat’ while translating the Torah (the guide gives only the name and the year); a description of Milgrom not found in the repository; ‘tahor’ (the lexicon notes give the verb taher); Mount Sinai on the map (no verified point). Length: 6,194 words in fourteen parts, longer than Exodus's page, because this book needed its own parts on clean and unclean and on how Christians relate to its laws.
+
+## The plain notes on Leviticus 1 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Leviticus opens where Exodus 40:35 ends; God takes the first step; Vayikra | 1-2 | leviticus/1.json `story`, `literary`, `doctrines` (god) | Repository |
+| Qorban, from ‘to come near’; Corban in Mark 7:11 | 1-2 | leviticus/1.json `words` (H7133A) | Repository |
+| The laws follow the rescue | 1-2 | leviticus/intro.json `reading` | Repository |
+| Exodus 40:34; Hebrews 10:22 | 1-2 | BSB | BSB text |
+| The whole animal burned; the hide to the priest (7:8); olah from ‘to go up’; the worshiper's own work; the priests' part | 3-9 | leviticus/1.json `cultural`, `words` (H5930A) | Repository |
+| Tamim, whole; nothing flawed or left over | 3-9 | leviticus/1.json `words` (H8549G) | Repository |
+| The laying on of the hand: ownership, or the animal in the worshiper's place | 3-9 | leviticus/1.json `words` (H5564) | Repository; no side |
+| The pleasing aroma as acceptance, not hunger; the Babylonian flood stories | 3-9 | leviticus/1.json `cultural` | Repository |
+| Noah and Job; morning and evening at the temple until AD 70 | 3-9 | leviticus/1.json `historical` | Repository |
+| Genesis 8:20-21; Psalm 50:13; Malachi 1:8; Ephesians 5:2; 1 Peter 1:19 | 3-9 | leviticus/1.json `christ`, `words`; BSB | BSB text |
+| ‘A shadow is real’ | 3-9 | hebrews/plain/8.json (1-6 `hard`) | Repository |
+| Why sacrifice: what the text does not say; gift, substitution, communion; the prophets; Christians and Hebrews 10; Judaism since AD 70 | 3-9 | leviticus/1.json `hard` | Repository; no side |
+| Romans 12:1 | 3-9 | leviticus/1.json `christ`; BSB | BSB text |
+| The same order and the same refrain for each case; a bull costly, a sheep or goat less so | 10-13 | leviticus/1.json `literary`, `cultural` | Repository |
+| Genesis 22:8, 13; John 1:29 | 10-13 | leviticus/1.json `christ`; BSB | BSB text |
+| A bird within reach of almost anyone; the provision for the poor made explicit in 5:7 and 12:8; Luke 2:24 | 14-17 | leviticus/1.json `cultural` | Repository |
+| Mark 12:43 | 14-17 | BSB | BSB text |
+
+Cut before publishing: a reason for the north side of the altar (the text gives none, and the note says so); the Greek name of the offering and the English word that comes from it (true to the deep note, but a detour for a new reader).
