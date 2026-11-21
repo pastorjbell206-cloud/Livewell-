@@ -205,3 +205,29 @@ No party, candidate, law of our own day, court case or movement slogan is named.
 | Scripture (ESV): Genesis 1:27, 9:25, 10:6 (cited); Acts 17:26; Galatians 2:11, 2:14, 3:28; Ephesians 2:14; Revelation 7:9; Matthew 23:30; Ezekiel 18:20; Daniel 9:8; Nehemiah 1:6; Luke 19:8, 19:9; James 2:9 | ESV copy, by script | Words verified |
 
 Cut or held back: any sentence of King's letter and any sentence of the eight clergymen's statement (copyright; not opened); any sentence of Allen's memoir; the second Ham passage in the 1860 volume ("the children of Ham were to be a servile race", by Samuel Cartwright, a physician, not a preacher); the 1807 abridged Bible made for enslaved people; James Henley Thornwell, Benjamin Palmer and the Presbyterian division; any named sermon in defense of segregation (none could be opened); every figure for churches or members.
+
+## 7. why-does-god-let-children-suffer
+
+Written to agree with the live essay `why-does-god-allow-suffering` and the Honest Answer `if-god-is-good-why-suffering`: no explanation of any particular suffering is offered; the classic answers are given their strength and their limits; the argument that the skeptic "borrows" a moral standard is not used as a rebuttal (the Honest Answer says it fails as one), only the narrower point that the protest needs somewhere to stand; the weight rests on the cross and the resurrection. Nothing is said about any child's fate or anyone's. The places in the opening paragraph are types, not memories.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Dostoevsky finished *The Brothers Karamazov* in 1880 | Repo, `client/public/needs/suffering.json` | Site's own |
+| Dostoevsky's son Alyosha (Alexei) died in 1878, not yet three | Not opened this run | Reference knowledge; check first |
+| Alyosha is the believing brother, a novice; Ivan collects his stories from newspapers and keeps to children because adults "have eaten the apple" | PG 28054, Book V, ch. 4 ("Rebellion"), read | Verified; paraphrase |
+| "If all must suffer to pay for the eternal harmony, what have children to do with it, tell me, please?" | PG 28054, "Rebellion" (Garnett's translation) | Verbatim |
+| Ivan grants the final harmony, even the mother embracing her child's killer, and refuses it: "I renounce the higher harmony altogether." | Same (the sentence begins "and so I renounce") | Verbatim |
+| "too high a price is asked for harmony; it's beyond our means to pay so much to enter on it." | Same (the sentence begins "Besides,") | Verbatim |
+| "even if I were wrong" | Same (italic in the source) | Verbatim |
+| The architect question, in paraphrase; Alyosha: "No, I wouldn't consent" | Same | Paraphrase; the answer verbatim |
+| Ivan asks whether any being has the right to forgive; Alyosha: "But there is a Being and He can forgive everything, all and for all, because He gave His innocent blood for all and everything." | Same | Verbatim |
+| The free-will, soul-making, sovereignty and limited-sight answers | Repo, live essay `why-does-god-allow-suffering` and the Honest Answer (Plantinga, Irenaeus and Lewis, the Reformed and Wesleyan accounts, Wykstra), none named or quoted here | Site's own, paraphrase |
+| "God needed another angel" as a thing said at funerals | Repo, live essay `why-does-god-allow-suffering` | Site's own |
+| Children were harmed inside churches and the institution was protected | Repo, live essay `doubt-after-church-abuse` | Site's own, stated generally |
+| Care paragraph ("If you're grieving as you read this ... a page for grief.") | Repo, live essay `why-does-god-allow-suffering`, reused whole | Site's own |
+| Care line: "If you need someone sooner, [Find Help](/help) lists hotlines for abuse and sexual assault." | Repo, live essay `doubt-after-church-abuse`, reused whole | Site's own |
+| Care lines: "The death of a child breaks the order of things, and no sentence makes it make sense, so be wary of anyone who offers one." "Find other parents who have buried a child; they can sit with you as others can't." "If this question has turned toward your own life, please call or text 988 now." | Repo, `client/public/needs/grief.json`, each reused whole | Site's own |
+| Jesus raised Jairus's daughter and the widow's son and not every child who died | ESV copy, Mark 5:22-43; Luke 7:11-15 | Verified; the limit is the essay's own observation |
+| Scripture (ESV): Genesis 50:20; Job 1:19, 42:7; John 9:2; Exodus 1:22 (cited); Lamentations 2:11-12; Jeremiah 31:15; Matthew 2:18 (cited), 18:6 (cited), 27:46; Psalm 13:1; Habakkuk 1:3; Mark 5:41, 10:14; Luke 2:35; Romans 8:32; Isaiah 65:20; Revelation 6:10, 21:4; Deuteronomy 29:29 | ESV copy, by script | Words verified |
+
+Cut or held back: Ivan's own stories of cruelty (not retold; the live essay names two); the sentence with the returned ticket (quoted in the live essay and the Honest Answer); every sentence of Ivan's with an exclamation point; Matthew 18:14 (in context it speaks of a disciple going astray, not of a child's suffering); 2 Samuel 12:23 and every text or teaching about what becomes of children who die; Augustine on unbaptized infants; any figure for child mortality.
