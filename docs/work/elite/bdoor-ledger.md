@@ -14193,3 +14193,22 @@ Cut: a reason why Eleazar and not Aaron handled the censers, which no note in th
 | Deuteronomy 2:5; 23:7; Obadiah 1:10 | 14-21 | BSB | BSB text |
 | The garments as succession (Exodus 28); ‘gathered to his people’ in Genesis; thirty days (Deuteronomy 34:8); where Mount Hor was | 22-29 | numbers/20.json `cultural`, `historical`; BSB (Genesis 25:8; 35:29; 49:33) | Repository; BSB text |
 | Hebrews 7:23-24 | 22-29 | numbers/20.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 21 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A new era; the reversal of 14:45 at Hormah; the king of Arad attacked first; charam and the name Hormah; Mesha's inscription describing the same practice | 1-3 | numbers/21.json `story`, `cultural`, `words` (H2763A) | Repository |
+| Tel Arad and the range of scholarly answers; not settled | 1-3 | numbers/21.json `historical` | Repository; no side |
+| Judges 1:17; Deuteronomy 20:16-18 | 1-3 | questions/old-testament/the-command-to-destroy-the-canaanites.json; BSB | Repository; BSB text |
+| The last complaint story; ‘against God’; the first ‘We have sinned’; saraph; the snakes not removed; nachash and nechoshet; the Genesis 3 echo noted, not pressed | 4-9 | numbers/21.json `literary`, `cultural`, `words` (H5175, H8314A, H5178A) | Repository |
+| The copper snake from Timna; the cobra in Egypt | 4-9 | numbers/21.json `cultural` | Repository |
+| 2 Kings 18:4; the Wisdom of Solomon 16:7; the Mishnah; John 3:14-15 | 4-9 | john/plain/3.json 9-15 `ot`; BSB | Repository; BSB text |
+| How Jesus reads the story: the points of comparison; ‘lifted up’ (John 12:32-33); the likeness (Romans 8:3); the line is Jesus' own | 4-9 | numbers/21.json `christ`; john/plain/3.json 9-15 `hearers` | Repository; BSB text |
+| The stages; the Zered and the Arnon; the Book of the Wars of the LORD; the contrast with Meribah; the first song since Exodus 15 | 10-20 | numbers/21.json `historical`, `literary`; BSB | Repository; the last is an observation from the text |
+| Isaiah 12:3; John 4:14 | 10-20 | BSB | BSB text |
+| The request to Sihon as to Edom; Sihon attacks; Heshbon, Dibon, Medeba and the Mesha inscription (Dhiban, 1868); the taunt song; Chemosh; the digs at sites proposed for Heshbon | 21-35 | numbers/21.json `historical`, `cultural`, `story` | Repository; no side |
+| Psalm 136:19-20; Deuteronomy 2:26; Ephesians 6:12 | 21-35 | numbers/21.json `hard`; BSB | BSB text |
+| The three readings of the wars, each with its cost; what holds on any reading; no warrant for violence; no nation or conflict today in view | 21-35 | numbers/21.json `hard`; context/guides/the-violence-of-the-old-testament.json; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
