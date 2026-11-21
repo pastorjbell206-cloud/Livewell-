@@ -108,11 +108,11 @@ Smallest change first, tokens only, the existing parts (PageHead, .eyebrow, .btn
 
 The door pages /study and /topics now read their room cards from the catalogue (so /topics shows The case for the faith), and /study, /topics and /tools list every page inside their rooms through one part, `components/art/DoorInside.tsx`.
 
-**d. Everything on LiveWell.** /explore was already drawn from the catalogue, the tools list and the essay shelf. It now also lists the case for the faith's live areas from `client/public/questions/index.json`, so an area appears the day it is published. The footer reads the same catalogue and needed no change beyond the 44px fix.
+**d. Everything on LiveWell.** /explore was already drawn from the catalogue, the tools list and the essay shelf. It now also lists the case for the faith's live areas from `client/public/questions/index.json`, so an area appears the day it is published. The Questions door's own page does the same. The footer reads the same catalogue and needed no change beyond the 44px fix.
 
 **e. Start here.** Every step of the five roads is checked against the site's own data by `start.test.tsx` (it passes: each leads to a live, public page), and the walks opened the new steps. The family road gained a step, Bible Explorer. "What next" on the road for someone new gained two lines: a chapter in plain words (Mark 1, passage by passage) and the page of Bible reading plans. The six steps for someone new are word for word as they were.
 
-**f. Search.** `scripts/build-search-index.mjs` adds every page the catalogue lists to the hubs, under its menu name. `lib/searchMend.ts`, loaded by /search alone, gives a search that found nothing two more tries: a misspelled word mended (the Wisdom Finder's own edit distance), then the nearest pages. A tool is found by its short name ("wisdom finder"). A search with no match at all offers Find Help, the seven doors, the start road and /explore. First results on the served build: "how do i pray" is the care page "I don't know how to pray"; "is the bible true" is the film of that name, then the catechism's answer and the care page; "my marriage is falling apart" is the care page of that name; "bible for kids" is the guide "How to Read the Bible With Young Children".
+**f. Search.** `scripts/build-search-index.mjs` adds every page the catalogue lists to the hubs, under its menu name. `lib/searchMend.ts`, loaded by /search alone, gives a search that found nothing two more tries: a misspelled word mended (by the Wisdom Finder's rule for a misspelling), then the nearest pages. A tool is found by its short name ("wisdom finder"). A search with no match at all offers Find Help, the seven doors, the start road and /explore. First results on the served build: "how do i pray" is the care page "I don't know how to pray"; "is the bible true" is the film of that name, then the catechism's answer and the care page; "my marriage is falling apart" is the care page of that name; "bible for kids" is the guide "How to Read the Bible With Young Children".
 
 **g. Pathways and plans.** See the next section for how they stand. /study/plans opens with "Pick up where you left off" on a device that has begun a plan (the year plan at its next day, a family plan at today's day, the Bible's story), read through `lib/storage.ts`. A topic pathway offers "Continue" at its first unread step. Each day of the year plan and of the family plans already linked its chapter in the Study Bible, where the plain-words notes are; that was checked, not built.
 
@@ -148,10 +148,14 @@ Lighthouse 13.6.0, the median of three runs each, phone profile, on the served b
 
 | Page | Before: performance / accessibility / CLS | After: performance / accessibility / CLS |
 |---|---|---|
-| / | 99 / 100 / 0.000 | LH_HOME |
-| /study/bible/romans/8 | 89 / 100 / 0.000 | LH_CHAPTER |
-| /explore | 90 / 100 / 0.000 | LH_EXPLORE |
-| /questions | 93 / 100 / 0.000 | LH_QUESTIONS |
+| / | 99 / 100 / 0.000 | 100 / 100 / 0.000 |
+| /study/bible/romans/8 | 89 / 100 / 0.000 | 90 / 100 / 0.000 |
+| /explore | 90 / 100 / 0.000 | 90 / 100 / 0.000 |
+| /questions | 93 / 100 / 0.000 | 94 / 100 / 0.000 |
+
+Best practices 96 and SEO 100 on all four, before and after. "Before" was measured on this unit's starting point; the branch it merges into, built without this unit on 2026-11-21, measured 99, 87, 90 and 93.
+
+One thing was caught by these numbers and put right. /explore first read 88 to 89 after the change, because the page had begun to ask for the questions manifest (over 100 KB) as it loaded. The manifest is now read by a file of its own, only when the Questions listing nears the screen and the browser is idle (`useLiveAreas` in `lib/siteNav.ts`, `lib/liveAreas.ts`), and /explore's own files are what they were. The search's spelling test carries its own copy of the Wisdom Finder's edit distance (a test holds the two together), so the finder's matcher stays in the finder's own file.
 
 Sideways scroll: none, on 58 key pages at 390 and at 1440 on the final build, and on every step of every walk. Console errors: none beyond the local server's missing /_vercel scripts and /api/track.
 

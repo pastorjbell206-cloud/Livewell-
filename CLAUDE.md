@@ -789,8 +789,9 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   `InnerHead` draws it, and a page with a top of its own uses `<Place path>`.
   `components/TurnNav.tsx` is previous and next for anything read in order.
   `components/art/DoorInside.tsx` lists every page inside a door's rooms on
-  the door's own page, so "Everything in <door>" is complete; /explore lists
-  the case for the faith's live areas from its manifest. /search mends a
+  the door's own page, so "Everything in <door>" is complete; it and /explore
+  list the case for the faith's live areas from the library's manifest
+  (`useLiveAreas` in `lib/siteNav.ts`), never from a typed list. /search mends a
   misspelling and never ends on nothing (`lib/searchMend.ts`), and
   `build-search-index.mjs` indexes every catalogue page. Bible's third room
   is How to study the Bible, as his map has it. `docs/work/elite/nav-audit.md`
