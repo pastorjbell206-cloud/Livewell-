@@ -604,6 +604,13 @@
           "blurb": "Exposure and abortion in the Roman world, the Jewish refusal, the Didache, Barnabas, Athenagoras, Tertullian and Basil in their own words, Exodus 21:22 in both readings, and how Catholic, Orthodox and Protestant Christians have reasoned; history and theology, not an argument about any law. It opens and closes with a word of gentleness for anyone carrying grief or guilt, and names Find Help.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "is-christianity-bad-for-women",
+          "question": "The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?",
+          "blurb": "Stanton's charge and the texts behind it, Tertullian and Aquinas in their own words, what Jesus and the first churches did, the household codes read whole, the complementarian and egalitarian readings without a side taken, and the misuse of submission named and refused; Find Help is named for anyone being hurt.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1984,6 +1991,16 @@
       "area": "morality",
       "slug": "the-first-christians-on-abortion-and-exposure",
       "question": "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?",
+      "live": false
+    },
+    {
+      "claim": "The Bible teaches that woman brought sin into the world and is to live in silence and subjection",
+      "proponent": "Elizabeth Cady Stanton",
+      "work": "The Woman's Bible",
+      "year": 1895,
+      "area": "morality",
+      "slug": "is-christianity-bad-for-women",
+      "question": "The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?",
       "live": false
     },
     {
