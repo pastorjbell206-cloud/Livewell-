@@ -13641,3 +13641,28 @@ Cut or narrowed before publishing: a number for the commandment against adultery
 | Deuteronomy 10:18-19; Exodus 22:21; Proverbs 11:1 and to'evah; Matthew 25:35; 1 Peter 1:17 | 33-37 | leviticus/18.json `words` (H8441); BSB | BSB text |
 
 Cut or narrowed before publishing: that ‘as yourself’ is not a command to love oneself first; that a poor household might put a daughter to use for money; that verse 28's marks belong to mourning rites, and that Christians differ about tattoos (narrowed to what the chapter's setting shows); that the command about the foreigner is repeated ‘more often than almost any other’; that Hebrew has other words for other kinds of outsider. None of these could be found in the repository. The note on verses 33-37 says in its own words that it draws no rule for any government or party today.
+
+## The plain notes on Leviticus 20 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The enforcement chapter; it begins and ends with other spiritual powers; Molech placed first | 1-8 | leviticus/20.json `story`, `historical` | Repository |
+| ‘The people of the land’; shared enforcement; God acts if the community looks away | 1-8 | leviticus/20.json `cultural` | Repository |
+| 2 Kings 21:6; kings never punished under this law; the prophets and the exile; Deuteronomy 18:10-11; Matthew 18:5 | 1-8 | leviticus/20.json `historical`; BSB | BSB text |
+| Case law; graded penalties; ‘their blood is upon them’ | 9-21 | leviticus/20.json `literary`, `cultural` | Repository |
+| ‘These verses should be read soberly ... a child who disobeys’; cursing a parent as rejecting them or calling down harm | 9-21 | exodus/plain/21.json (12-17 `hearers`), the wording reused | Repository |
+| How often carried out: David; Numbers 35:31 and commutation (‘some scholars’); the Mishnah's safeguards and Makkot 1:10 | 9-21 | leviticus/20.json `historical`, `hard` | Repository |
+| Israel's neighbors and what this chapter counts most serious | 9-21 | leviticus/20.json `historical` | Repository |
+| Deuteronomy 17:6; 2 Samuel 12:13; John 8:7, 11 (missing from many early copies); 1 Corinthians 5:13 as church discipline | 9-21 | leviticus/20.json `christ`; BSB | BSB text |
+| The penalties today: given to Israel as a nation; the wrongs remain wrong, the penalties not carried into the church; the minority view and its rejection | 9-21 | leviticus/20.json `hard`; guides/reading-law.json | Repository |
+| Verse 13: pointer to the note on 18:19-23; the penalty no part of the church's teaching or practice; no one may use these verses to harm or shame any person | 9-21 | leviticus/18 plain note; leviticus/20.json `hard`, `christ` | Repository; no side |
+| ‘If you are gay, or love someone who is ... places to turn.’ | 9-21 | romans/plain/1.json (24-32 `hard`), word for word | Repository |
+| ‘If you are being hurt, at home, at work or in a church ... places to turn.’ | 9-21 | exodus/plain/21.json (18-21 `hard`), word for word | Repository |
+| The frame; verses 24-26 tie holiness to the food laws; ‘to be My own’ | 22-27 | leviticus/20.json `literary` | Repository |
+| ‘These notes say nothing against any people, ancient or modern ... or to claim any land.’ | 22-27 | exodus/plain/23.json (27-33 `hard`), word for word | Repository |
+| The witch trials, Salem 1692, ‘a misuse of Scripture, and it was wrong’; ‘No one may use this verse to accuse, harm or drive out any person.’ | 22-27 | exodus/plain/22.json (18-20 `hard`), the wording reused, with ‘a verse like it in Exodus’ in place of ‘this verse’ | Repository |
+| 1 Peter 2:9; Acts 10:28; Ezekiel 18:32 | 22-27 | leviticus/20.json `christ`; BSB | BSB text |
+
+Cut or narrowed before publishing: the burning of verse 14 (interpreters differ, and the deep note carries it); the levirate law beside verse 21; ‘most churches reject’ the minority view (narrowed to what the Reading the Law guide says of Reformed churches). Flagged for James with chapter 18: the site's own view on 18:22 and 20:13 is an open decision.
