@@ -14801,3 +14801,19 @@ Cut in chapter 17: a statement that the Hebrew word behind ‘countrymen’ is �
 | The prophet as God's answer; the request at Horeb (chapter 5); the definition in verse 18; ‘from among your brothers’ and 17:15; the two old Jewish readings; verse 20 as Israel's covenant law, no church or state; the negative test and its partner in chapter 13 | 15-22 | deuteronomy/verses/18.json (verses 15 to 22); deuteronomy/18.json `christ`, `hard` | Repository |
 | 34:10; Jeremiah 28:15; John 1:21; 6:14; Acts 3:22; Matthew 17:5 | 15-22 | deuteronomy/18.json `christ`; acts/plain/3.json 22-26; BSB | Repository; BSB text |
 | Who is the prophet: the Jewish reading (the offices, Rashi, Ibn Ezra, Maimonides, the objection); the Christian answer (34:10; 1 Maccabees, Qumran, the Samaritans; Acts 3 and 7); both held together; the Muslim reading and the reply from 17:15; the disagreement real | 15-22 | deuteronomy/18.json `hard` (first question) | Repository; each in its holders' terms |
+
+## The plain notes on Deuteronomy 19 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Blood vengeance where there was no police; the avenger surrounded with process; the axe as a case study; go'el; innocent blood; ‘show no pity’ as protection of the victim | 1-13 | deuteronomy/19.json `historical`, `literary`, `words` (H1350H, H5355A) | Repository |
+| Numbers 35:25; Joshua 20:7-8; Hebrews 6:18, the image not pressed; the pointer to the Numbers 35 note; no revenge today | 1-13 | deuteronomy/19.json `christ`, `historical`; numbers/plain/35.json | Repository; BSB text |
+| Boundary stones; Babylonian stones with curses; the land as God's allotment; gevul in verses 8 and 14 | 14 | deuteronomy/19.json `cultural`, `words` (H1366G) | Repository |
+| Proverbs 23:10-11; Hosea 5:10 | 14 | deuteronomy/19.json `cultural`; BSB | Repository; BSB text |
+| The rule widened from 17:6; the court before God; the false witness bears what he intended | 15-21 | deuteronomy/19.json `cultural`, `literary` | Repository |
+| 1 Kings 21:13; Mark 14:56; Matthew 5:39; Romans 12:19 | 15-21 | deuteronomy/19.json `christ`; BSB | Repository; BSB text |
+| ‘Eye for eye’: a rule for judges and a limit; Hammurabi and rank; Exodus 21:26-27; the Mishnah and payment; Matthew 5; Christians differ on criminal justice | 15-21 | deuteronomy/19.json `hard`, `historical`; guides/reading-law.json (‘Reading the laws that trouble modern readers’) | Repository; no side |
+
+Cut in chapter 19: ‘the ninth of the Ten Commandments’ (traditions number the ten differently, as the chapter 5 note says); that fields in Israel were not fenced.
