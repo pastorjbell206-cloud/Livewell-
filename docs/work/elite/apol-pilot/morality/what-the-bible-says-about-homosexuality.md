@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: what-the-bible-says-about-homosexuality
-status: pending (not on the site; for James to read first)
+status: pending (second read done in the twenty-sixth run; waits for James's word on whether the page states where he lands)
 question: "What does the Bible say about homosexuality, and why do Christians disagree?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fifth run", key "bw"
 ---

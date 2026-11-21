@@ -1,7 +1,7 @@
 ---
 area: science
 slug: is-the-mind-just-the-brain
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "bt"
 ---

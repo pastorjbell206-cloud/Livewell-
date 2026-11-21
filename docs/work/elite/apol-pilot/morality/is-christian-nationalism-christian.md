@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: is-christian-nationalism-christian
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "Every nation's laws rest on somebody's morals. Why shouldn't a Christian people want a Christian nation? Is Christian nationalism Christian?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fifth run", key "bz"
 ---

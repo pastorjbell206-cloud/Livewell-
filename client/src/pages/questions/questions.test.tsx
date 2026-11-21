@@ -4,8 +4,8 @@
  * the data loads in the shapes the pages expect; the room lists the plan's ten
  * areas, each linked, with its one line and its number of live pieces, and is
  * live (James, 2026-11-20: "publish all of this when ready"); every piece that
- * has had its second read is live, and the pieces still waiting for one (the
- * five newest in science and in morality) are pending; a live piece renders
+ * has had its second read is live, and the one piece still waiting (the
+ * morality page on homosexuality, which waits for James's word) is pending; a live piece renders
  * word for word with no review line and no noindex, its argument as a numbered
  * list with the weight-bearing step marked; a pending piece keeps noindex and
  * the review line and is listed on no live page; and nothing outside the
@@ -60,17 +60,16 @@ const evil = index.areas.find((a) => a.slug === "evil")!;
 const god = index.areas.find((a) => a.slug === "god")!;
 const morality = index.areas.find((a) => a.slug === "morality")!;
 const religions = index.areas.find((a) => a.slug === "religions")!;
-/** The morality pieces written after the area went live, pending until their second read. */
-const MORALITY_PENDING: string[] = ["what-the-bible-says-about-homosexuality", "the-first-christians-on-abortion-and-exposure", "is-christianity-bad-for-women", "is-christian-nationalism-christian", "is-christian-morality-a-product-of-its-culture"];
+/** The one morality piece still pending: read twice, it waits for James's word on what it states. */
+const MORALITY_PENDING: string[] = ["what-the-bible-says-about-homosexuality"];
 
 describe("the questions library's data", () => {
   const PENDING: Record<string, string[]> = {
-    science: ["how-old-is-the-earth", "adam-eve-and-human-origins", "is-the-mind-just-the-brain", "neuroscience-and-free-will", "near-death-experiences"],
     morality: MORALITY_PENDING,
   };
-  const LIVE_COUNT: Record<string, number> = { god: 5, text: 9, authors: 10, contradictions: 5, jesus: 10, "old-testament": 10, science: 5, evil: 5, morality: 5, religions: 5 };
+  const LIVE_COUNT: Record<string, number> = { god: 5, text: 9, authors: 10, contradictions: 5, jesus: 10, "old-testament": 10, science: 10, evil: 5, morality: 9, religions: 5 };
 
-  it("lists the plan's ten areas, all live, each with its line; only the pieces still waiting for a second read are pending", () => {
+  it("lists the plan's ten areas, all live, each with its line; only the one piece still waiting is pending", () => {
     expect(index.areas.map((a) => a.n)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(index.roomLive).toBe(true);
     expect(index.areas.map((a) => a.slug)).toEqual(["god", "text", "authors", "contradictions", "jesus", "old-testament", "science", "evil", "morality", "religions"]);
@@ -133,13 +132,14 @@ describe("the area", () => {
   });
 });
 
-describe("an area with pieces still waiting for a second read", () => {
+describe("an area with a piece still pending", () => {
   it("lists its live pieces and none of the pending ones", async () => {
-    at("/questions/science", <QuestionsArea />);
-    expect(await screen.findByRole("heading", { level: 1, name: "Science" })).toBeInTheDocument();
-    await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(5));
+    at("/questions/morality", <QuestionsArea />);
+    expect(await screen.findByRole("heading", { level: 1, name: morality.title })).toBeInTheDocument();
+    await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(9));
     const listed = Array.from(document.querySelectorAll(".qx-pieces a")).map((a) => a.getAttribute("href"));
-    expect(listed).toEqual(science.pieces.filter((p) => p.live).map((p) => `/questions/science/${p.slug}`));
+    expect(listed).toEqual(morality.pieces.filter((p) => p.live).map((p) => `/questions/morality/${p.slug}`));
+    for (const slug of MORALITY_PENDING) expect(listed).not.toContain(`/questions/morality/${slug}`);
     expect(screen.queryByText(REVIEW_LINE)).toBeNull();
     expect(robots()).not.toContain("noindex");
   });
@@ -172,8 +172,8 @@ describe("a piece", () => {
   });
 
   it("pending: says noindex and carries the review line", async () => {
-    const pending = science.pieces.find((p) => !p.live)!;
-    at(`/questions/science/${pending.slug}`, <QuestionPiece />);
+    const pending = morality.pieces.find((p) => !p.live)!;
+    at(`/questions/morality/${pending.slug}`, <QuestionPiece />);
     expect(await screen.findByRole("heading", { level: 1, name: pending.question })).toBeInTheDocument();
     expect(await screen.findByText(REVIEW_LINE)).toBeInTheDocument();
     await waitFor(() => expect(robots()).toContain("noindex"));

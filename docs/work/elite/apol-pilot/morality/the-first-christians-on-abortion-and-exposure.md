@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: the-first-christians-on-abortion-and-exposure
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fifth run", key "by"
 ---

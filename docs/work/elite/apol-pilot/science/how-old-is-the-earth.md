@@ -1,7 +1,7 @@
 ---
 area: science
 slug: how-old-is-the-earth
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "br"
 ---

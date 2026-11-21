@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: is-christianity-bad-for-women
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fifth run", key "bx"
 ---

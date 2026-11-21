@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: is-christian-morality-a-product-of-its-culture
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "Morals differ from one culture to the next, and Nietzsche traced Christian values to the resentment of the weak. Isn't Christian morality just the product of its culture?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fifth run", key "ca"
 ---

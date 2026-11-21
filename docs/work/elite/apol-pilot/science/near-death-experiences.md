@@ -1,7 +1,7 @@
 ---
 area: science
 slug: near-death-experiences
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "bv"
 ---

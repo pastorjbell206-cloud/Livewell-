@@ -1,7 +1,7 @@
 ---
 area: science
 slug: adam-eve-and-human-origins
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "bs"
 ---
