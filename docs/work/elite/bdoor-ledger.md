@@ -14520,3 +14520,17 @@ Cut or narrowed on the book page: that Deuteronomy is among the books most quote
 | Hosea 11:3; Isaiah 46:4; Hebrews 3:19, written to the church | 19-33 | deuteronomy/1.json `christ`; numbers/plain/14.json (the same statement); BSB | Repository; BSB text |
 | The oath answers the people's words (Numbers 14:3); the second rebellion, marah in verses 26 and 43; Psalm 95:7-8; Hebrews 4:1 | 34-46 | deuteronomy/1.json `words` (H4784), `christ`; BSB | Repository; BSB text |
 | ‘On your account’ and Numbers 20:12: the three explanations; 32:51; no side | 34-46 | deuteronomy/1.json `hard` | Repository; no side |
+
+## The plain notes on Deuteronomy 2 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Edom as Esau's descendants, south of the Dead Sea; yerushah used of Seir as of Israel's land; paying for passage; garah, do not provoke | 1-8 | deuteronomy/2.json `historical`, `cultural`, `words` (H3425, H1624) | Repository |
+| Genesis 36:8; Deuteronomy 23:7; Nehemiah 9:21; Acts 17:26 | 1-8 | deuteronomy/2.json `christ`; BSB | Repository; BSB text |
+| Moab and Ammon from Lot; where they lay; the Zered as border; the parenthetical notes, the Rephaim, Caphtor as Crete, ‘to this day’ as a later standpoint; thirty-eight years | 9-23 | deuteronomy/2.json `historical`, `cultural`, `literary` | Repository |
+| Genesis 19:37; Ruth of Moab, great-grandmother of David (Ruth 4:17); Amos 9:7 | 9-23 | deuteronomy/2.json `cultural`; BSB | Repository; BSB text |
+| Sihon north of the Arnon; the pattern broken; the offer of peace and 20:10; refusing passage as hostile; qashah and Pharaoh; charam, the ban | 24-37 | deuteronomy/2.json `historical`, `cultural`, `literary`, `words` (H2763A, H7185) | Repository |
+| Numbers 21:23; Psalm 136:19; Ephesians 6:12 | 24-37 | numbers/plain/21.json 21-35; deuteronomy/2.json `christ`; BSB | Repository; BSB text |
+| The readings of verse 34 and of the hardening; Genesis 15:16; the Mesha inscription; no side; no warrant for violence, no nation or conflict today | 24-37 | deuteronomy/2.json `hard`; numbers/plain/21.json 21-35 `hard` (the same wording); questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; worded as the Numbers 21 note; no side |
