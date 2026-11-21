@@ -14817,3 +14817,19 @@ Cut in chapter 17: a statement that the Hebrew word behind ‘countrymen’ is �
 | ‘Eye for eye’: a rule for judges and a limit; Hammurabi and rank; Exodus 21:26-27; the Mishnah and payment; Matthew 5; Christians differ on criminal justice | 15-21 | deuteronomy/19.json `hard`, `historical`; guides/reading-law.json (‘Reading the laws that trouble modern readers’) | Repository; no side |
 
 Cut in chapter 19: ‘the ninth of the Ten Commandments’ (traditions number the ten differently, as the chapter 5 note says); that fields in Israel were not fenced.
+
+## The plain notes on Deuteronomy 20 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No standing army; the priest's speech opens with the Shema's words; the exemptions and the years a vineyard takes; fear spreads; Gideon | 1-9 | deuteronomy/20.json `historical`, `cultural`, `literary`, `words` (H3372G) | Repository |
+| Judges 7:3; Psalm 20:7; 2 Corinthians 10:4; Colossians 2:15 | 1-9 | deuteronomy/20.json `christ`; BSB | Repository; BSB text |
+| Assyrian inscriptions; shalom and the offer of peace, 2:26; forced labor, the killing of the men, women and children as plunder, stated and not defended; herem and Mesha's monument; Jericho and Ai, Rahab, Gibeon, Canaanites remaining | 10-18 | deuteronomy/20.json `historical`, `cultural`, `words` (H2763A, H7965G), `hard`; exodus/plain/21.json (‘That is in the text, and it cannot be explained away’) | Repository; not defended |
+| Joshua 10:40; 9:15; Isaiah 2:4; Matthew 26:52 | 10-18 | questions/old-testament/the-command-to-destroy-the-canaanites.json; deuteronomy/20.json `christ`; BSB | Repository; BSB text |
+| The readings of the command; the Bible's own limits; the rules for distant cities as the warfare of their age, no model; no warrant for violence, no nation, state or conflict today; the crusading and colonial misuse | 10-18 | deuteronomy/20.json `hard`; deuteronomy/plain/7.json 1-5 `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json; context/guides/the-violence-of-the-old-testament.json | Repository; handled as the site's live pages handle it; no side |
+| Orchards cut down in ancient war, the Assyrian reliefs; the law as a question; the trees that feed people | 19-20 | deuteronomy/20.json `historical`, `literary`, `words` (H6086H) | Repository |
+| Genesis 2:15; Micah 4:4 | 19-20 | BSB | BSB text |
+
+Cut in chapter 20: that Israel had few horses and chariots (not in the repository's notes).
