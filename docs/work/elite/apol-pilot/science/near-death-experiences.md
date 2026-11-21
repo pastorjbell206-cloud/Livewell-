@@ -1,7 +1,7 @@
 ---
 area: science
 slug: near-death-experiences
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "bv"
 ---
@@ -10,7 +10,7 @@ ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "bv"
 
 ## The short answer
 
-They do not. If you are thinking about your own death or about ending your life, please don't carry it alone: the site's Find Help page (/help) lists places to turn now. Near-death experiences are real experiences, reported by many people in many times and places, and they deserve to be taken seriously. But what they show is argued, and the careful reference works conclude that the evidence is at an impasse: the reports vary with culture, similar experiences come to people who only believed they were dying, and the most striking cases are disputed. Christians should not rest their hope on them, and the faith never has. Christian hope rests on something of another kind: the claim that Jesus of Nazareth died, was buried and was raised, a claim about history that can be examined, and a promise that death itself, the enemy, will be undone.
+They do not. If you are thinking about your own death or about ending your life, please don't carry it alone: the site's Find Help page (/help) lists places to turn now. Near-death experiences are real experiences, reported by many people in many times and places, and they deserve to be taken seriously. But what they show is argued, and the reference work this page follows concludes that the evidence is close to an impasse: the reports vary with culture, similar experiences come to people who only believed they were dying, and the most striking cases are disputed. Christians should not rest their hope on them, and the faith never has. Christian hope rests on something of another kind: the claim that Jesus of Nazareth died, was buried and was raised, a claim about history that can be examined, and a promise that death itself, the enemy, will be undone.
 
 ## The objection at its strongest
 

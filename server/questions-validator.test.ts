@@ -77,8 +77,8 @@ describe("validate-questions.mjs", () => {
       const areas = JSON.parse(fs.readFileSync(path.join(d, "areas.json"), "utf8"));
       areas.areas.find((a: Json) => a.slug === "text").status = "live";
       fs.writeFileSync(path.join(d, "areas.json"), JSON.stringify(areas));
-      e(PIECE, (j) => { j.status = "live"; j.onSite.push("The next page (/questions/science/near-death-experiences)."); });
-    }, /is live and links the pending page \/questions\/science\/near-death-experiences/],
+      e(PIECE, (j) => { j.status = "live"; j.onSite.push("The next page (/questions/morality/what-the-bible-says-about-homosexuality)."); });
+    }, /is live and links the pending page \/questions\/morality\/what-the-bible-says-about-homosexuality/],
     ["a live area with no line for the room", (d) => {
       const areas = JSON.parse(fs.readFileSync(path.join(d, "areas.json"), "utf8"));
       delete areas.areas.find((a: Json) => a.slug === "text").line;
@@ -92,11 +92,11 @@ describe("validate-questions.mjs", () => {
       fs.writeFileSync(path.join(d, "areas.json"), JSON.stringify(areas));
     }, /lists 9 areas, not the plan's ten/],
     ["a pending page linked from a page outside the library", () => {
-      fs.writeFileSync(path.join(tmp, "outside.tsx"), `export const x = <a href="/questions/science/near-death-experiences">Read</a>;\n`);
-    }, /outside\.tsx: links the pending page \/questions\/science\/near-death-experiences/, { QUESTIONS_SCAN: "" }],
+      fs.writeFileSync(path.join(tmp, "outside.tsx"), `export const x = <a href="/questions/morality/what-the-bible-says-about-homosexuality">Read</a>;\n`);
+    }, /outside\.tsx: links the pending page \/questions\/morality\/what-the-bible-says-about-homosexuality/, { QUESTIONS_SCAN: "" }],
     ["a pending page in the sitemap", () => {
-      fs.writeFileSync(path.join(tmp, "outside.tsx"), `<url><loc>https://www.livewellbyjamesbell.co/questions/science/near-death-experiences</loc></url>\n`);
-    }, /outside\.tsx: links the pending page \/questions\/science\/near-death-experiences/, { QUESTIONS_SCAN: "" }],
+      fs.writeFileSync(path.join(tmp, "outside.tsx"), `<url><loc>https://www.livewellbyjamesbell.co/questions/morality/what-the-bible-says-about-homosexuality</loc></url>\n`);
+    }, /outside\.tsx: links the pending page \/questions\/morality\/what-the-bible-says-about-homosexuality/, { QUESTIONS_SCAN: "" }],
   ];
 
   for (const [name, change, want, env] of faults) {

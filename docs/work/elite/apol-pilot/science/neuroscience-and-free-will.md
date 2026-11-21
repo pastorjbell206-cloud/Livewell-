@@ -1,7 +1,7 @@
 ---
 area: science
 slug: neuroscience-and-free-will
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
 question: "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "bu"
 ---

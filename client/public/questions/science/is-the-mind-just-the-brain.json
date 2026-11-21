@@ -1,7 +1,7 @@
 {
   "area": "science",
   "slug": "is-the-mind-just-the-brain",
-  "status": "pending",
+  "status": "live",
   "question": "Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?",
   "ledger": {
     "file": "docs/work/elite/apol-ledger.md",
@@ -19,7 +19,7 @@
     {
       "role": "objection",
       "heading": "The objection at its strongest",
-      "body": "Every year the case grows. Injury to particular regions of the brain changes memory, speech, judgment and personality; drugs alter mood and perception; stimulation of the cortex can produce sensations and urges. The Stanford Encyclopedia's entry on the neuroscience of consciousness begins from the fact on which all of this rests: \"Conscious experience in humans depends on brain activity.\" If everything the mind does can be changed by changing the brain, the objection asks, what is left for a soul to do?\n\nThe philosophers give the case its argued form. The Stanford Encyclopedia's entry on physicalism sets out what it calls \"perhaps the dominant argument for physicalism in the literature today,\" the argument from causal closure: every event that has a cause has a physical cause; mental events, such as wanting to raise your arm, cause physical events, such as the arm rising; and an event is not caused twice over by independent causes. If all three are true, the mind's causes must be physical, or must rest wholly on the physical. Daniel Dennett argued in *Consciousness Explained* (1991), as the encyclopedia's entry on consciousness summarizes him, that the present gaps in explaining experience reflect only the early stage of inquiry and the limits of present theory, not a barrier in reality. At full strength the objection says that the soul was a guess made before anyone could look inside the head, and that now we can."
+      "body": "Every year the case grows. Injury to particular regions of the brain changes memory, speech, judgment and personality, and drugs alter mood and perception. The Stanford Encyclopedia's entry on the neuroscience of consciousness records what brain lesions take away and what electrical stimulation of the cortex can produce, hallucinations among them, and it begins from the fact on which all of this rests: \"Conscious experience in humans depends on brain activity.\" If everything the mind does can be changed by changing the brain, the objection asks, what is left for a soul to do?\n\nThe philosophers give the case its argued form. The Stanford Encyclopedia's entry on physicalism sets out what it calls \"perhaps the dominant argument for physicalism in the literature today,\" the argument from causal closure: every event that has a cause has a physical cause; mental events, such as wanting to raise your arm, cause physical events, such as the arm rising; and an event is not caused twice over by independent causes. If all three are true, the mind's causes must be physical, or must rest wholly on the physical. Daniel Dennett argued in *Consciousness Explained* (1991), as the encyclopedia's entry on consciousness summarizes him, that the present gaps in explaining experience reflect only the early stage of inquiry and the limits of present theory, not a barrier in reality. At full strength the objection says that the soul was a guess made before anyone could look inside the head, and that now we can."
     },
     {
       "role": "concessions",
