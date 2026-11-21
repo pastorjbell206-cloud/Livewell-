@@ -1,0 +1,116 @@
+{
+  "slug": "when-we-die",
+  "title": "What happens when we die?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "when-we-die",
+  "line": {
+    "younger": "A gentle answer to a big question, in seven pictures: what the Bible says happens when someone who belongs to Jesus dies, and why Christians can be sad and hopeful at once.",
+    "older": "The question most people first ask beside a loss, answered plainly in seven pictures from the family catechism and the Study Bible, with the honest limits of what Christians know."
+  },
+  "poster": "A garden bench under a tree in the evening, and a path running up the hill behind it to a house whose door stands open, light inside.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "A big question",
+      "still": "A grown-up and a child sit together on a bench under a tree in the evening. Up the path behind them, a house stands on the hill with its door shut.",
+      "younger": "What happens when we die? It is one of the biggest questions there is. People often ask it when someone they love has died, and it is good to ask it out loud.",
+      "older": "What happens when we die? Most people ask it first when death comes close to someone they love, and the question can be hard to say out loud. The Bible does not tell us everything, but it tells us enough to hope."
+    },
+    {
+      "id": "sad",
+      "name": "Real, and sad",
+      "still": "Clouds have come over the garden and a soft rain falls. The two on the bench sit close together.",
+      "younger": "When someone dies, their body stops, and that is real and sad. It is right to cry. Christians cry too, but Paul says they do not need to be sad like people who have no hope.",
+      "older": "Death is real, and the Bible never pretends otherwise. Paul did not tell grieving Christians to stop being sad. He wrote so that they would not grieve “like the rest, who are without hope.”",
+      "verse": {
+        "ref": "1 Thessalonians 4:13",
+        "text": "Brothers, we do not want you to be uninformed about those who sleep in death, so that you will not grieve like the rest, who are without hope."
+      }
+    },
+    {
+      "id": "place",
+      "name": "Not the end",
+      "still": "The rain has stopped. Up the path the house on the hill has a light in its window and its door stands open; the two still sit on the bench.",
+      "younger": "For people who belong to Jesus, death is not the end. On the night before he died, Jesus told his worried friends that his Father's house has many rooms, and that he was going to get a place ready for them.",
+      "older": "The family catechism says it plainly: when we die our bodies stop, but we do not stop existing. On the night before he died, Jesus comforted his frightened friends with a promise of a place. The Study Bible notes that the rooms mean belonging and presence: the goal is to be where Jesus is, “so that you also may be where I am.”",
+      "verse": {
+        "ref": "John 14:2",
+        "text": "In My Father’s house are many rooms."
+      }
+    },
+    {
+      "id": "with-him",
+      "name": "With Jesus",
+      "still": "Light from the open door runs down the path toward the garden, where the two sit on the bench.",
+      "younger": "The Bible says that people who trust Jesus go to be with him when they die. Paul said he would rather be at home with the Lord. Christians do not all describe that time the same way, but they all trust Jesus with it.",
+      "older": "What happens between death and the resurrection? Most Christian traditions read Paul's wish to be “away from the body and at home with the Lord”, with Jesus' promise of Paradise in Luke 23, as being with Christ straight after death. Others hold that the dead sleep until the resurrection. Christians still differ on how to describe that time, and this moving picture does not choose.",
+      "say": {
+        "older": "What happens between death and the resurrection? Most Christian traditions read Paul's wish to be “away from the body and at home with the Lord”, with Jesus' promise of Paradise in Luke's Gospel, as being with Christ straight after death. Others hold that the dead sleep until the resurrection. Christians still differ on how to describe that time, and this moving picture does not choose."
+      },
+      "verse": {
+        "ref": "2 Corinthians 5:8",
+        "text": "We are confident, then, and would prefer to be away from the body and at home with the Lord."
+      }
+    },
+    {
+      "id": "morning",
+      "name": "Waiting for the morning",
+      "still": "Night over the garden and the house: stars overhead, the door and the window still lit, a first pale band of morning low in the sky, and the two still on the bench.",
+      "younger": "And that is not all. One day Jesus will come back and raise the bodies of his people, new and whole. Paul says that because Jesus died and rose again, God will bring with Jesus those who have died.",
+      "older": "The final hope is not the waiting but the morning after it. The Study Bible says that Christians who differ about the time between can agree that the dead in Christ are waiting for the same morning. The catechism's word for death, for those who belong to Jesus, is a door: a door into being with him.",
+      "verse": {
+        "ref": "1 Thessalonians 4:14",
+        "text": "For since we believe that Jesus died and rose again, we also believe that God will bring with Jesus those who have fallen asleep in Him."
+      }
+    },
+    {
+      "id": "both",
+      "name": "Sad and hopeful",
+      "still": "Morning: the clouds have gone, light comes over the hill from beyond the top of the picture, and the two stand together beside the bench.",
+      "younger": "So Christians can be sad and hopeful at the same time. They miss the person very much, and they trust God with them. Paul wrote that whether we live or die, we belong to the Lord.",
+      "older": "Christian hope lets two things be true at once. The Study Bible says of Christians who grieve that grief is not faithlessness, because the separation is real, and comfort is not denial. God holds both sides of death.",
+      "verse": {
+        "ref": "Romans 14:8",
+        "text": "If we live, we live to the Lord, and if we die, we die to the Lord. So whether we live or die, we belong to the Lord."
+      }
+    },
+    {
+      "id": "talk",
+      "name": "You are not alone",
+      "still": "The grown-up and the child sit on the bench in the morning light, the house on the hill bright behind them.",
+      "younger": "If someone you love has died, or thinking about death makes you afraid, you do not have to carry that alone. Tell a parent or another grown-up you trust how you feel. You can tell God too. A psalm says to him, “You are with me.”",
+      "older": "If a death has hit you hard, or the thought of dying makes you afraid, it is right to say so. Talk with a parent, a pastor or another adult you trust, or look at Find Help. The psalm gives words for the dark valley: “Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me.”"
+    }
+  ],
+  "think": {
+    "younger": "Who could you talk to if you feel sad or worried about someone dying? What would you like to tell God about it?",
+    "older": "Paul says Christians grieve, but not without hope. What does it look like to be truly sad and truly hopeful at the same time?"
+  },
+  "read": [
+    { "label": "John 14", "href": "/study/bible/john/14" },
+    { "label": "1 Thessalonians 4", "href": "/study/bible/1-thessalonians/4" },
+    { "label": "2 Corinthians 5", "href": "/study/bible/2-corinthians/5" },
+    { "label": "Luke 23", "href": "/study/bible/luke/23" },
+    { "label": "Romans 14", "href": "/study/bible/romans/14" },
+    { "label": "Psalm 23", "href": "/study/bible/psalms/23" }
+  ],
+  "stops": ["new-creation", "cross"],
+  "cards": ["life-to-come"],
+  "differ": {
+    "text": "Christians all confess that Christ will come again and raise the dead, and that the resurrection, not the time before it, is the final hope. They differ on what the time between death and the resurrection is like: most traditions hold that believers are with Christ straight after death, and others hold that the dead sleep until the resurrection. This moving picture does not choose between them. The readings are set out in",
+    "links": [
+      { "label": "the Study Bible's study of the time between death and the resurrection", "href": "/study/bible/doctrines/intermediate" },
+      { "label": "its notes on Luke 23", "href": "/study/bible/luke/23" }
+    ]
+  },
+  "care": "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "The family catechism: what happens when we die?", "href": "/family/catechism#q70" },
+    { "label": "The life to come (a moving picture)", "href": "/study/explorer/watch/life-to-come" },
+    { "label": "John 14 in the Study Bible: many rooms", "href": "/study/bible/john/14" },
+    { "label": "Find Help, when grief or fear is heavy", "href": "/help" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "question", "verse": false}, {"id": "sad", "verse": false}, {"id": "place", "verse": true}, {"id": "with-him", "verse": false}, {"id": "morning", "verse": false}, {"id": "both", "verse": true}, {"id": "talk", "verse": false}]},
+  "end": { "label": "Watch next: The life to come", "href": "/study/explorer/watch/life-to-come" }
+}

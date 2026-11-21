@@ -791,7 +791,7 @@ describe("a stop", () => {
       cleanup();
     }
     expect(chain).toEqual(ROAD);
-  });
+  }, 20000); // thirteen stops rendered in turn: allow for a loaded machine
 
   it("shows the older level's care line and question on the newer stops", async () => {
     window.localStorage.setItem(

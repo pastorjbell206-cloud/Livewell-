@@ -91,6 +91,84 @@ describe("WisdomFinder", () => {
     expect(screen.queryByText("Just as close")).toBeNull();
   });
 
+  it("shows the Find Help line under a first result whose own page opens with the path to help", async () => {
+    render(
+      <TestProviders>
+        <WisdomFinder />
+      </TestProviders>,
+    );
+    await waitFor(() => expect(screen.getByText("Browse by area of life")).toBeInTheDocument());
+    const box = screen.getByRole("searchbox", { name: "What are you facing?" });
+    fireEvent.change(box, { target: { value: "im completely burned out at work" } });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    await waitFor(() => expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/work-and-burnout"));
+    expect(document.querySelector('.wf-safety a[href="/help"]')).not.toBeNull();
+    // A topic whose page does not open with the path to help gets no such line.
+    fireEvent.change(box, { target: { value: "i cant say no to anyone" } });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    await waitFor(() => expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/saying-no"));
+    expect(document.querySelector(".wf-safety")).toBeNull();
+  });
+
+  it("marks for the help line every heavy subject and every page that opens with Find Help, from the data", () => {
+    const sensitive = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../data/sensitive-pages.json"), "utf8")).wisdom;
+    const heavyIds = [...Object.keys(sensitive.lead), ...Object.keys(sensitive.end)];
+    const heavy = new Set(heavyIds);
+    const helpIds = finder.topics.filter((t) => t.help).map((t) => t.id);
+    const help = new Set(helpIds);
+    for (const id of heavyIds) expect(help.has(id), id).toBe(true);
+    for (const id of ["numbness", "mental-exhaustion", "work-and-burnout", "purpose-and-meaning"]) expect(help.has(id), id).toBe(true);
+    for (const id of helpIds) {
+      if (heavy.has(id)) continue;
+      const deep = JSON.parse(fs.readFileSync(path.join(PUBLIC, "wisdom/deep", `${id}.json`), "utf8")) as { whole: string[] };
+      expect(deep.whole[0].split(/(?<=[.?])\s+/).slice(0, 3).join(" "), id).toContain("Find Help");
+    }
+    expect(help.has("saying-no")).toBe(false);
+    expect(help.has("kindness")).toBe(false);
+  });
+
+  it("offers \"Or look by subject\" beside the search, collapsed, each area opening its subjects written in full", async () => {
+    render(
+      <TestProviders>
+        <WisdomFinder />
+      </TestProviders>,
+    );
+    await waitFor(() => expect(screen.getByText("Browse by area of life")).toBeInTheDocument());
+    const details = document.querySelector("details.wf-browse") as HTMLDetailsElement;
+    expect(details).not.toBeNull();
+    // Collapsed by default, inside the search band.
+    expect(details.open).toBe(false);
+    expect(details.closest(".wf-ask")).not.toBeNull();
+    expect(details.querySelector("summary")?.textContent).toBe("Or look by subject");
+    details.open = true;
+    const byId = new Map(finder.topics.map((t) => [t.id, t]));
+    // The areas arrive with the finder data, a moment after the page's own text.
+    await waitFor(() => expect(details.querySelectorAll("button.wf-browse__area").length).toBeGreaterThan(0));
+    const buttons = Array.from(details.querySelectorAll<HTMLButtonElement>("button.wf-browse__area"));
+    // One button per area, the same areas the chips use, counted from the data.
+    expect(buttons.length).toBe(finder.areas.length);
+    const area = finder.areas.find((a) => a.id === "mind")!;
+    const deep = area.topics.filter((id) => byId.get(id)?.deep);
+    const btn = screen.getByRole("button", { name: new RegExp(`^${area.name}`) });
+    expect(btn.textContent).toContain(`${deep.length} written in full of ${area.topics.length}`);
+    // Name and count are read as two phrases, not run together.
+    expect(btn.textContent).toContain(`${area.name}, ${deep.length}`);
+    expect(btn.getAttribute("aria-expanded")).toBe("false");
+    const panel = document.getElementById(btn.getAttribute("aria-controls") ?? "")!;
+    expect(panel.hidden).toBe(true);
+    fireEvent.click(btn);
+    expect(btn.getAttribute("aria-expanded")).toBe("true");
+    expect(panel.hidden).toBe(false);
+    const links = Array.from(panel.querySelectorAll("a")).map((a) => a.getAttribute("href"));
+    expect(links.length).toBe(deep.length);
+    for (const id of deep) expect(links).toContain(`/wisdom/${id}`);
+    // Every subject in the area is one press away, in the area list below.
+    fireEvent.click(screen.getByRole("button", { name: `All ${area.topics.length} subjects in this area` }));
+    expect(await screen.findByText(new RegExp(`${area.topics.length} subjects in ${area.name}`))).toBeInTheDocument();
+    fireEvent.click(btn);
+    expect(panel.hidden).toBe(true);
+  });
+
   it("lists an area's subjects when an area is chosen", async () => {
     render(
       <TestProviders>

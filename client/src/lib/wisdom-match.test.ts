@@ -103,6 +103,15 @@
  * Then twelve more topics were written in full (their pages and phrasings
  * feed the weights). End of the ninth build: holdout4 93.3% / 100%,
  * holdout7 76.7% / 86.7%, holdout8 54.2% / 75.0%; the rest as above.
+ * On 2026-11-20 (tenth build) the finder's matcher was not changed; twelve
+ * more topics were written in full (work and money). Writing Saving and
+ * Spending in full put it ahead of Assurance of Faith for "am I really
+ * saved" (a shared stem); rewrites now add "salvation" there (test below).
+ * Writing Success and Failure dropped holdout8's first three to 70.8%, by an
+ * older phrasing ("let everyone down") that had collapsed to one common word;
+ * it was rewritten, and holdout8 returned to 75.0%. End of the tenth build:
+ * cases 98.6% / 100%, holdout4 100% / 100%, holdout7 76.7% / 86.7%,
+ * holdout8 54.2% / 75.0%; the rest unchanged.
  * The floors below sit just under those, so a change to the data that makes
  * the finder worse fails here by name.
  */
@@ -212,6 +221,18 @@ describe("wisdom matcher", () => {
     const promo = findTopics(prep, "I was passed over for promotion and I am bitter").matches.map((m) => m.topic.id);
     expect(promo[0]).not.toBe("self-pity");
     expect(promo).not.toContain("grief");
+  });
+
+  it("never files a question of salvation under Saving and Spending, and still finds money saved", () => {
+    // "saved" and "saving" share a stem; once Saving and Spending was written in full its name and page outscored
+    // assurance for "am I really saved" (tenth build). Rewrites now add "salvation" to the ways people ask it.
+    for (const q of ["am I really saved", "how do i know im saved", "will i be saved"]) {
+      const ids = findTopics(prep, q).matches.map((m) => m.topic.id);
+      expect(ids[0], q).toBe("assurance-of-faith");
+      expect(ids.slice(0, 3), q).not.toContain("saving-and-spending");
+    }
+    const money = findTopics(prep, "i saved money for a car").matches.map((m) => m.topic.id);
+    expect(money.slice(0, 3)).toContain("saving-and-spending");
   });
 
   it("stems plain word forms together", () => {

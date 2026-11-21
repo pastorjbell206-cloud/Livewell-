@@ -39,6 +39,10 @@ export const FILM_SCENES: Record<
   "the-lamb": () => import("./the-lamb"),
   "exile-and-home": () => import("./exile-and-home"),
   "kingdom-of-god": () => import("./kingdom-of-god"),
+  "why-cant-i-see-god": () => import("./why-cant-i-see-god"),
+  "when-we-die": () => import("./when-we-die"),
+  "god-silent": () => import("./god-silent"),
+  "science-and-the-bible": () => import("./science-and-the-bible"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

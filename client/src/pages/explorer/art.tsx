@@ -13,7 +13,8 @@
  *   the table, the Jordan, the garden, the hiding, the cross on the hill,
  *   the hillside in the wind, the seed and the harvest.
  *
- * Mustard is kept for the map's one mark (where you are), so no emblem uses it.
+ * Mustard is kept for the map's one mark (where you are), so no stop's emblem
+ * uses it; a film's own emblem may carry one gold mark, as its drawing does.
  */
 import { useId, type ReactNode } from "react";
 import { PlateSvg, type Drawing } from "@/components/art/PlateSvg";
@@ -578,6 +579,54 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M40,40C42,36 46,36 48,40M70,34C72,30 76,30 78,34" />
       <path className="pl-m" d="M18,82C18,78 28,78 28,82C28,85 18,85 18,82Z" />
       <path className="pl-l" d="M18,82C18,78 28,78 28,82C28,85 18,85 18,82Z" />
+    </>
+  ),
+  /* Why can't I see God?: a tree bending in a wind that is not drawn, a leaf blown past. */
+  "why-cant-i-see-god": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M46,84C47,72 50,62 56,54H62C56,62 53,72 53,84Z" tone="c" off={0.8} />
+      <Shape d="M40,48C40,34 56,28 66,32C78,28 90,38 86,48C90,56 80,62 70,58C60,64 44,60 40,48Z" tone="g" off={1} />
+      <path className="pl-f" d="M10,40C18,38 24,42 32,40M14,56C22,54 28,58 36,56M10,70C20,68 28,72 38,70" />
+      <path className="pl-m" d="M20,26C26,20 34,22 34,22C30,28 24,30 20,26Z" />
+      <path className="pl-l" d="M20,26C26,20 34,22 34,22C30,28 24,30 20,26Z" />
+    </>
+  ),
+  /* What happens when we die?: a house on a hill with its door open and light within, a path up to it. */
+  "when-we-die": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M8,84C30,70 46,62 68,60C80,59 90,64 92,70V84Z" tone="g" off={1} />
+      <Shape d="M54,62V40H84V62Z" tone="c" off={1} />
+      <Shape d="M50,42L69,26L88,42Z" tone="b" off={1} />
+      <path className="pl-m" d="M63,62V48h12v14Z" />
+      <path className="pl-l" d="M63,62V48h12v14Z" />
+      <path className="pl-f" d="M66,62C52,70 34,76 14,84M72,62C62,72 46,80 30,86" />
+    </>
+  ),
+  /* Why does God seem silent sometimes?: hills at night, stars above, the first gold line of morning along them. */
+  "god-silent": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M8,64C30,58 70,58 92,64V68C70,62 30,62 8,68Z" />
+      <Shape d="M8,84V70C24,60 40,62 54,70C66,62 82,62 92,68V84Z" tone="g" off={1} />
+      <path className="pl-l" d="M24,22l2,5l5,2l-5,2l-2,5l-2,-5l-5,-2l5,-2ZM56,14l1.5,4l4,1.5l-4,1.5l-1.5,4l-1.5,-4l-4,-1.5l4,-1.5ZM78,30l1.5,4l4,1.5l-4,1.5l-1.5,4l-1.5,-4l-4,-1.5l4,-1.5Z" />
+    </>
+  ),
+  /* Are science and the Bible enemies?: an open book and a small telescope, one gold star. */
+  "science-and-the-bible": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M12,82C20,76 30,76 38,80C46,76 56,76 64,82V70C56,64 46,64 38,68C30,64 20,64 12,70Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M38,68V80" />
+      <Shape d="M62,52L86,36L90,42L66,58Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M72,54L66,82M74,54L84,82" />
+      <path className="pl-m" d="M30,18l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
+      <path className="pl-l" d="M30,18l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
     </>
   ),
 };
