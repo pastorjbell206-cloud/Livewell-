@@ -13104,3 +13104,27 @@ Cut before publishing: nothing was drafted beyond the notes here; Mendenhall's n
 | Genesis 2:1, 3; 1:31; Psalm 90:17 (‘A prayer of Moses’ in its heading) | 32-43 | BSB | BSB text |
 
 Cut before publishing: that the robe was worn ‘under’ the ephod (the text says only ‘the robe of the ephod’); the stones of Ezekiel 28:13 (in the deep note).
+
+## The plain notes on Exodus 40 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| New Year's Day; Genesis 8:13; almost a year after the exodus, about nine months after reaching Sinai | 1-16 | exodus/40.json `historical`; BSB | Repository |
+| From the inside out; anointing sets apart; holiness prepared for, not presumed | 1-16 | exodus/40.json `cultural`, `doctrines` (holiness) | Repository |
+| The priests' ordination carried out in Leviticus 8; Leviticus 8:30 | 1-16 | exodus/40.json `cultural`; BSB | Repository |
+| The refrain seven times after verse 16, as in chapter 39 | 17-33 | exodus/40.json `literary` | Repository |
+| Moses performs priestly acts because Aaron's sons are not yet ordained | 17-33 | exodus/40.json `cultural` | Repository |
+| The second tablets in the ark, under the mercy seat | 17-33 | BSB (34:1, 28; 40:20) | BSB text |
+| ‘So Moses finished the work’ and Genesis 2:2 | 17-33 | exodus/40.json `literary`, `words` (H3615G) | Repository |
+| Genesis 2:2; 1 Kings 8:10; John 17:4 | 17-33 | BSB | BSB text |
+| The incense altar and Hebrews 9:3-4: the censer reading; belonging to the inner room in use (1 Kings 6:22); a tradition; Hebrews 9:5 | 17-33 | exodus/40.json `hard`; hebrews/plain/9.json (1-10 `hard`) | Repository; no side |
+| From slaves building for Pharaoh to a dwelling for God; the last verses are God's action; not Israel's achievement but God's arrival | 34-38 | exodus/40.json `story`, `literary`, `doctrines` (god) | Repository |
+| Kavod and 24:16-17; shakan and mishkan; ‘filled’ as of Bezalel (31:3) | 34-38 | exodus/40.json `words` (H7931, H4390); exodus/24.json `words` | Repository |
+| Other temple dedications and the god's entry; no statue here | 34-38 | exodus/40.json `historical` | Repository |
+| Moses cannot enter; obedience alone does not close the distance; where Leviticus begins | 34-38 | exodus/40.json `story`, `doctrines` (holiness) | Repository |
+| The cloud since 13:21-22; shade and warmth; guidance as a presence followed day by day | 34-38 | exodus/40.json `cultural`, `doctrines` (providence) | Repository |
+| Leviticus 1:1; Numbers 9:18; 1 Kings 8:11; Ezekiel 10 and 43:5; John 1:14; Luke 9:35; 1 Corinthians 6:19; Revelation 21:3 | 34-38 | BSB; exodus/40.json `historical`, `christ` | BSB text |
+
+Cut before publishing: the BSB's ‘journey’ and ‘journeys’ in verses 36 and 38 (paraphrased, and verse 38 quoted only as far as ‘the house of Israel’); a three-word stack of fragments in the last passage (rewritten as a sentence); that a statue ‘was carried’ into other temples (the deep note says only that the god entered his house).
