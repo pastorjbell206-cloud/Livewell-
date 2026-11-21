@@ -14587,3 +14587,22 @@ Cut in chapter 4: a remark on the Hebrew wording of verse 39 and a sentence that
 | 18:15; Exodus 20:19; Ezekiel 36:26; 1 Timothy 2:5 | 22-33 | deuteronomy/5.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 5: two sentences on households and on a world without written records, replaced by the wording of the Exodus 20 note; a care sentence about parents written new, replaced by the Exodus 20 paragraphs and an existing care line, each whole.
+
+## The plain notes on Deuteronomy 6 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The singular ‘commandment’ as a heading; lelammed and talmid; fear as reverent loyalty; three generations; milk and honey, date and fig syrup; Exodus 3:8; Proverbs 1:7 | 1-3 | deuteronomy/verses/6.json (verses 1, 2, 3); deuteronomy/6.json `literary`, `words` (H3372H) | Repository; BSB text |
+| Shema, to hear is to heed; six Hebrew words, the groupings; the two stresses; Kuntillet Ajrud, about 800 BC; heart, soul, me'od and wealth; love as loyalty in treaties, grounded in God's prior love; shanan, to sharpen; the merisms; the gates | 4-9 | deuteronomy/verses/6.json (verses 4 to 9); deuteronomy/6.json `historical`, `cultural`, `words` (H8085G, H0259, H0157G, H3966, H8150) | Repository |
+| Jewish practice: recited evening and morning for more than two thousand years; the Mishnah (about AD 200) opening with its rules and ‘the yoke of the kingdom of heaven’ (m. Berakhot 2:2); tefillin and mezuzah; tefillin at Qumran; Karaite and Christian figurative readings; Rabbi Akiva (Berakhot 61b) | 4-9 | deuteronomy/verses/6.json (verses 4, 7, 8, 9); deuteronomy/6.json `cultural`, `historical`; mark/plain/12.json 28-34 | Repository; as a living practice |
+| 2 Kings 23:25; Proverbs 3:3; Mark 12:29-30; Matthew 22:40; 1 Corinthians 8:6; James 2:19 | 4-9 | deuteronomy/6.json `historical`, `christ`; BSB | Repository; BSB text |
+| The Shema and the Trinity: the Jewish objection (Maimonides, medieval disputations), Islam; the answers from history (Hurtado, Bauckham), the creeds (325, 381), and echad, called weak by many Christian scholars; the disagreement real | 4-9 | deuteronomy/6.json `hard` (first question), `christ`, `words` (H0259) | Repository; each in its holders' terms |
+| One long sentence; cisterns and olive trees; forgetting as a failure of loyalty; the oath; ‘Him’ first; Massah, the wordplay, testing as trust made to depend on proof | 10-19 | deuteronomy/verses/6.json (verses 10-11, 12, 13, 16); deuteronomy/6.json `literary`, `cultural`, `words` (H7911) | Repository |
+| Exodus 17:7; Jesus' answers (Matthew 4:7, 10); forty years and forty days, a line the Gospels draw | 10-19 | deuteronomy/6.json `christ`; matthew/plain/4.json; BSB | Repository; BSB text |
+| The catechism; the story before the rules; ‘we’; the Haggadah, the wise son and ‘We were slaves’ | 20-25 | deuteronomy/verses/6.json (verses 20, 21-23, 24); deuteronomy/6.json `literary` | Repository |
+| Exodus 13:14; Joshua 4:6; Ephesians 6:4 | 20-25 | deuteronomy/verses/6.json (verse 20); BSB | Repository; BSB text |
+| Verse 25 and earning: the two readings; 24:13; Romans 3:20; Sanders (1977); Lutheran and Reformed replies; Romans 10:6-8; no side | 20-25 | deuteronomy/6.json `hard` (second question) | Repository; no side |
+
+Cut in chapter 6: that the Shema is ‘the first prayer of childhood and the last words of life’ (not in the repository's notes); a quotation of another translation's wording of verse 4, which the quotation check does not allow, given in paraphrase.
