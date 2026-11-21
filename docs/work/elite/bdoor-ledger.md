@@ -13964,3 +13964,17 @@ Cut: a sentence saying the words for thigh and belly ‘have often been understo
 | Psalm 67:1; 2 Corinthians 4:6; Paul's grace and peace; Luke 24:50 | 22-27 | numbers/6.json `christ`, `words`; the plain notes on Paul's greetings | Repository; BSB text |
 
 Cut for want of a source in the repository: that the ‘you’ of the blessing is singular; a comparison of God's name on the people to an owner's mark; a shepherd simile for ‘keep’.
+
+## The plain notes on Numbers 7 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The step back a month (Exodus 40:17); why the chapter is placed here; the carts by load; none for Kohath | 1-11 | numbers/7.json `story`, `cultural` | Repository |
+| 2 Samuel 6:3-7; 1 Chronicles 15:13-15; qorban and Corban (Mark 7:11) | 1-11 | numbers/7.json `cultural`, `words` (H7133A) | Repository |
+| 89 verses, the longest chapter in the five books; six verses repeated twelve times; no tribe outdoes another; Jewish interpreters on the honor to each leader | 12-83 | numbers/7.json `literary`, `hard` | Repository |
+| The archival style; 130 shekels perhaps three pounds; the kinds of offering | 12-83 | numbers/7.json `historical`, `cultural` | Repository |
+| 1 Kings 8:63; chanukkah, Hanukkah and 164 BC; John 10:22; Hebrews 10:12 | 12-83 | numbers/7.json `historical`, `words` (H2598), `christ`; BSB | Repository; BSB text |
+| Verse 89 as the goal; the ark, the cherubim, kapporet and the Day of Atonement | 84-89 | numbers/7.json `literary`, `words` (H3727) | Repository |
+| Exodus 25:22; hilasterion and Romans 3:25; Hebrews 1:2 | 84-89 | numbers/7.json `words`, `christ`; BSB | Repository; BSB text |
