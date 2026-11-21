@@ -20,7 +20,7 @@ Andrew Dickson White gave this history its classic polemical form in *A History 
 
 ## What is true in it
 
-Much of the history is true. Nearly every Christian writer before the modern age who reckoned the matter at all put creation within a few thousand years of Christ. Even Augustine, who read the days of Genesis 1 in a sense of his own, wrote that "it is not yet six thousand years since the first man, who is called Adam" (*City of God* 18.40, in the *Nicene and Post-Nicene Fathers* translation). The fathers who doubted that the days were ordinary days did not thereby hold an old earth; the question of deep time was not before them.
+Much of the history is true. Nearly every Christian writer before the modern age who reckoned the matter at all put creation within a few thousand years of Christ. Even Augustine, who read the days of Genesis 1 in a sense of his own, wrote that "it is not yet six thousand years since the first man, who is called Adam" (*City of God* 18.40, in the *Nicene and Post-Nicene Fathers* translation). The fathers who doubted that the days were ordinary days didn't hold an old earth on that account; the question of deep time was not before them.
 
 It is also true that some readings of Genesis have been urged under the pressure of the sciences, and a reader who suspects that some Christians reread Genesis to make peace with the sciences is not imagining it. And Christians have sometimes defended a date with more confidence than the text supplies, treating a sum Ussher made as if it were a verse.
 
@@ -40,7 +40,7 @@ This is a deductive argument about what the Bible's text settles and what the cr
 2. Whether that inference is right depends on what kind of text Genesis 1 is and what the genealogies were written to do, questions faithful readers have answered differently since before the age of the earth was a scientific question.
 3. The creeds confess God the Father Almighty, "Maker of heaven and earth," and say nothing of when.
 
-So: the age of the earth is a question of interpretation within the faith, not a test of it; whatever its answer, the sciences' figure of about four and a half billion years can refute particular readings of Genesis, but not the confession that God made all things.
+So: the age of the earth is a question of interpretation within the faith, not a test of it; whatever its answer, the sciences' figure of about four and a half billion years bears on particular readings of Genesis, and not on the confession that God made all things.
 
 The weight sits on the second step. If the only honest reading of Genesis 1 and the genealogies were six ordinary days and an unbroken chronology, then the Bible would state a young earth after all, and the conflict with the sciences would be real. Young-earth Christians hold that it is, and challenge the science; that is a coherent position, and it is set out below. The argument claims only that the text leaves room for more than one faithful reading.
 
