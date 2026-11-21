@@ -14786,3 +14786,18 @@ Cut in chapter 16: that ‘Pentecost’ comes from the Greek word for fifty (not
 | 1 Samuel 8:5; 1 Kings 10:26-28; 11:3, and Kings written with this chapter in view; Zechariah 9:9 and Matthew 21:5 as a pattern, not a prediction; Mark 10:43 | 14-20 | deuteronomy/17.json `historical`, `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 17: a statement that the Hebrew word behind ‘countrymen’ is ‘brothers’ (not in the repository's notes; verse 15's ‘brothers’ is cited in its place).
+
+## The plain notes on Deuteronomy 18 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Levi without land; the portions as a right; nachalah, the LORD as inheritance; bachar as election to service; the country Levites protected; ‘the Levitical priests’ and the two views | 1-8 | deuteronomy/verses/18.json (verses 1 to 7); deuteronomy/18.json `cultural` | Repository; no side |
+| Psalm 16:5; 1 Corinthians 9:14 | 1-8 | deuteronomy/18.json `cultural`; BSB | Repository; BSB text |
+| The catalogue of divination, sorcery and consulting the dead; livers, lots, arrows, a learned profession in Mesopotamia; rites for the dead across the region; child sacrifice at the head of the list; what unites the list; tamim | 9-14 | deuteronomy/18.json `cultural`; deuteronomy/verses/18.json (verses 10, 11, 12-13) | Repository |
+| No warrant to harm anyone; the witch trials as a misuse | 9-14 | exodus/plain/22.json (the note on 22:18); leviticus/plain/20.json | Repository |
+| 1 Samuel 28:7; Isaiah 8:19; Acts 16:16 | 9-14 | deuteronomy/verses/18.json (verse 11); BSB | Repository; BSB text |
+| The prophet as God's answer; the request at Horeb (chapter 5); the definition in verse 18; ‘from among your brothers’ and 17:15; the two old Jewish readings; verse 20 as Israel's covenant law, no church or state; the negative test and its partner in chapter 13 | 15-22 | deuteronomy/verses/18.json (verses 15 to 22); deuteronomy/18.json `christ`, `hard` | Repository |
+| 34:10; Jeremiah 28:15; John 1:21; 6:14; Acts 3:22; Matthew 17:5 | 15-22 | deuteronomy/18.json `christ`; acts/plain/3.json 22-26; BSB | Repository; BSB text |
+| Who is the prophet: the Jewish reading (the offices, Rashi, Ibn Ezra, Maimonides, the objection); the Christian answer (34:10; 1 Maccabees, Qumran, the Samaritans; Acts 3 and 7); both held together; the Muslim reading and the reply from 17:15; the disagreement real | 15-22 | deuteronomy/18.json `hard` (first question) | Repository; each in its holders' terms |
