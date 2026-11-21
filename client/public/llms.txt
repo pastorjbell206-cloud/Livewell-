@@ -43,6 +43,11 @@ books). One page lists everything the site holds.
 - How to study the Bible (seven steps that work on any chapter, and a guided
   study that walks a reader through them on one chapter, one screen at a
   time): https://www.livewellbyjamesbell.co/study/how-to-study
+- Tracks (a few short sessions in order, about ten minutes each; every
+  session opens a page or tool on the site and ends with one question, one
+  thing to do and one verse to keep, with a guide for a group; the first track
+  is twelve sessions for someone new to faith or coming back):
+  https://www.livewellbyjamesbell.co/tracks
 - Bible Explorer (the whole Bible as one story on one illustrated map, for
   ages 7 to 16, written at two reading levels, with a drawn scene, verses and
   an activity at each finished stop, six themes traced through the stops (God

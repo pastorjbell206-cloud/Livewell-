@@ -15,6 +15,7 @@
  *   Christ and the Nation client/public/nation/<slug>.json     -> /nation/<slug>
  *   Main pages           MAIN_PAGES below                      -> the hubs, by their plain names
  *   The Study Bible      bible/books.json + notes/<book>/intro.json, bible/guides, the story's acts
+ *   Tracks               client/public/tracks/index.json       -> /tracks/<slug>, /tracks/<slug>/<n>
  *   Doctrine             bible/doctrines.json                  -> /study/bible/doctrines/<id>
  *   Compare the Views    theology/index.json                   -> /theology/doctrine/<slug>
  *   Church History       theology/church-history-*.json        -> /theology/history#<person-, council-, heresy-><name>
@@ -215,6 +216,7 @@ const MAIN_PAGES = [
   { title: "Guides to reading the Bible", href: "/study/bible/guides", blurb: "Short guides to what the Bible is, how it came to us, and how to read it.", keywords: "how to read the bible who wrote the bible canon translations" },
   { title: "Read the whole story in 2027", href: "/study/bible/guides/whole-story-2027", blurb: "A plan for reading through the Bible's story in a year.", keywords: "reading plan bible in a year daily" },
   { title: "Bible reading plans", href: "/study/plans", blurb: "Every reading plan in one place, by length and by who is reading.", keywords: "reading plan reading plans bible in a year new testament psalms daily family devotional schedule" },
+  { title: "Tracks", href: "/tracks", blurb: "Short sessions in order, about ten minutes each, with your place kept. The first is for someone new to faith or coming back.", keywords: "tracks track discipleship pathway pathways steps step by step sessions lessons course new believer new christian first steps follow jesus group guide" },
   { title: "How to study the Bible", href: "/study/how-to-study", blurb: "Seven steps that work on any chapter, and a guided study that takes you through them one screen at a time.", keywords: "how to study the bible bible study method steps inductive observe interpret apply guided study" },
   { title: "Church history", href: "/theology/history", blurb: "The story of the church from the apostles to now: its eras, its people, its councils, and the false teachings it answered.", keywords: "history of the church christian history timeline early church fathers reformation councils" },
   { title: "Compare the views", href: "/theology/compare", blurb: "The doctrines Christians debate, with each view set side by side.", keywords: "doctrine comparison debated views positions denominations differences" },
@@ -331,6 +333,22 @@ function studyBible() {
     return l ? [{ title: `${str(l.act)}: ${str(l.title)}`, blurb: clip(l.summary), facet: "The story of the Bible", keywords: str(l.range), href: `/study/bible/story/${a.id}` }] : [];
   });
   return [...books, ...guides, ...acts];
+}
+
+/** Each track and each of its sessions, from the tracks index (scripts/build-tracks-index.mjs). */
+function tracks() {
+  const file = "tracks/index.json";
+  if (!fs.existsSync(path.join(PUB, file))) return [];
+  return readJson(file).tracks.flatMap((t) => [
+    { title: str(t.title), blurb: clip(t.subtitle), facet: "Tracks", keywords: `${str(t.for)} track discipleship steps sessions`, href: `/tracks/${t.slug}` },
+    ...t.sessions.map((x) => ({
+      title: `${str(x.title)} (session ${x.n})`,
+      blurb: clip(`${str(t.title)}, session ${x.n} of ${t.sessions.length}. About ${x.minutes} minutes. Opens: ${str(x.opens)}.`),
+      facet: "Tracks",
+      keywords: "track session",
+      href: `/tracks/${t.slug}/${x.n}`,
+    })),
+  ]);
 }
 
 function doctrines() {
@@ -470,6 +488,7 @@ export function buildSearchIndex() {
       source("Honest Answers", "/answers", answers()),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),
+      ...(tracks().length ? [source("Tracks", "/tracks", tracks())] : []),
       source("Doctrine", "/study/bible/doctrines", doctrines()),
       source("Compare the Views", "/theology/compare", debatedDoctrines()),
       source("Church History", "/theology/history", history()),
