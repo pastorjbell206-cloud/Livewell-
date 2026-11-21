@@ -14876,3 +14876,23 @@ Cut in chapter 21: that the captive woman's parents were ‘probably dead’; th
 | The care line reused whole | 22-30 | exodus/plain/22.json 16-17 and others (‘A word for anyone who has been sexually assaulted...’) | Repository; word for word |
 
 Cut in chapter 22: a reason for letting the mother bird go (the verse gives none, and the repository's notes give none); 2 Corinthians 6:14 as an echo of the ox and the donkey (not in the repository's notes); any account of what verse 5 had in view in its own world (the repository's notes give none); a new sentence about a person's worth, which was not an existing care line.
+
+## The plain notes on Deuteronomy 23 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The assembly (qahal) as the gathered body, not the population; exclusion not expulsion; verse 1 and the two explanations; the uncertain word of verse 2 and Jewish tradition; Balaam (Numbers 22 to 24); Ammon and Moab through Lot, Edom through Esau; chapter 2 on their lands | 1-8 | deuteronomy/23.json `historical`, `cultural`, `words` (H6951); deuteronomy/2.json | Repository; nothing contemptuous of any people |
+| Ruth 1:16; 4:17; Matthew 1:5; Nehemiah 13:3; Isaiah 56:3, 5, 7; Acts 8:36 | 1-8 | deuteronomy/23.json `christ`, `hard`; BSB | Repository; BSB text |
+| Ruth and verse 3: the three answers (the Mishnah; assembly and not marriage; a counterpoint); Nehemiah and Ruth both held | 1-8 | deuteronomy/23.json `hard` | Repository; no side |
+| Verses 1 and 2 beside Isaiah 56; ‘Every person, with any disability or illness, is made by God and is precious to him. No one is a mistake.’ | 1-8 | leviticus/plain/21.json 16-24 `hard` (the same two sentences); deuteronomy/23.json `christ` | Repository; word for word |
+| The camp laws; uncleanness of Leviticus 15, not sin or shame; ‘the LORD your God walks throughout your camp’ as the one reason | 9-14 | deuteronomy/23.json `literary`; leviticus/plain/15.json | Repository |
+| Leviticus 26:12; 2 Corinthians 6:16; Genesis 3:8 | 9-14 | BSB | BSB text |
+| The escaped slave: ancient law on the owner's side, Hammurabi; foreign masters, on most readings | 15-16 | deuteronomy/23.json `historical`; exodus/plain/21.json 1-6 `hard`; guides/reading-law.json | Repository |
+| 5:15; Philemon 1:16 | 15-16 | BSB | BSB text |
+| Servitude limited and not abolished; the care line reused whole | 15-16 | exodus/plain/21.json and leviticus/plain/25.json (‘A word for anyone who is being held, owned or forced to work today...’) | Repository; word for word |
+| Qedeshah and the root ‘holy’, the debate about sacred prostitution; neshek, ‘to bite’, loans of desperation, the foreigner as trader; vows free but binding; permission and limit in the field | 17-25 | deuteronomy/23.json `cultural`, `literary`, `words` (H5392, H5087, H6948) | Repository |
+| Psalm 15:5; Ecclesiastes 5:5; Matthew 5:37; Mark 2:23 | 17-25 | deuteronomy/23.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 23: that treaties between kings required runaways to be returned; a sentence on how defenders and opponents of slavery later used verses 15-16; that Edom refused Israel passage (chapter 2 of this book tells it differently); that the verb ‘walk’ is the same Hebrew word as in Genesis 3 (narrowed to what the verses say); ‘runaway’ of Onesimus.
