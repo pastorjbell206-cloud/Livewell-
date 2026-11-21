@@ -15068,3 +15068,20 @@ Cut in chapter 32: that the Old Testament seldom calls God Father; that ‘the a
 | Psalm 90:1; Isaiah 46:4; Romans 8:39 | 26-29 | BSB | BSB text |
 
 Cut in chapter 33: that the burning bush is mentioned nowhere else in the Old Testament outside Exodus; that the mountains of verse 2 lie along the road from Sinai; a picture of a child on a parent's shoulders for verse 12 (none is in the repository's notes).
+
+## The plain notes on Deuteronomy 34 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each). With this chapter the plain notes cover all five books of Moses.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nebo's traditional place, the view toward Jericho; Pisgah; the circle of places; the sight as given by God; the promise sworn to the fathers | 1-4 | deuteronomy/34.json `historical` | Repository |
+| Genesis 12:7; Hebrews 11:13 | 1-4 | BSB | BSB text |
+| ‘The servant of the LORD’ (eved); God buries him; burial in the ancient world and the cave of the fathers; no shrine; thirty days, as for Aaron | 5-8 | deuteronomy/34.json `cultural`, `literary`, `words` (H5650) | Repository |
+| Joshua 1:2; Hebrews 3:5; Luke 9:30-31 | 5-8 | deuteronomy/34.json `christ`; BSB | Repository; BSB text |
+| The grief line reused whole | 5-8 | leviticus/plain/26.json 14-39 `hard` (‘Grief is not a lack of faith...’) | Repository; word for word |
+| The laying on of hands (samakh); wisdom (chokhmah); ‘face to face’ (panim), Exodus 33:11 and 33:20, Numbers 12:6-8; ‘since that time’ as a backward look; 18:15 left open | 9-12 | deuteronomy/34.json `cultural`, `literary`, `words` (H5564, H2451, H6440H), `christ` | Repository |
+| Exodus 33:11; Numbers 27:18; John 6:14; Acts 3:22 with the pointer to chapter 18; Hebrews 3:5-6 | 9-12 | deuteronomy/34.json `christ`; deuteronomy/plain/18.json 15-22; BSB | Repository; BSB text |
+| Who wrote of the death of Moses: the Talmud and the last eight verses; a later editor; ‘to this day’; most readers, including many who hold to Moses' authorship; the wider question left open with the pointers | 9-12 | deuteronomy/34.json `historical`; deuteronomy/intro.json `author`; questions/old-testament/who-wrote-the-first-five-books.json | Repository; no side |
+
+Cut in chapter 34: a remark on the Hebrew wording of verse 5 (‘at the mouth of the LORD’) and that no one else was present at the burial (neither is in the repository's notes); Jude 1:9 and the dispute over the body of Moses are left to the deep note.
