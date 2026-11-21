@@ -14754,3 +14754,19 @@ Cut in chapter 14: that later Jewish practice counted separate tithes (not in th
 | The care line reused whole | 12-18 | exodus/plain/21.json and leviticus/plain/25.json (‘A word for anyone who is being held, owned or forced to work today...’) | Repository; word for word |
 | The firstborn as God's, from the exodus; not worked or shorn; eaten at the sanctuary; the blemished animal | 19-23 | deuteronomy/15.json `cultural` | Repository |
 | Exodus 13:2; Malachi 1:8 | 19-23 | BSB | BSB text |
+
+## The plain notes on Deuteronomy 16 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Abib, March or April, the barley ears, Nisan; Exodus 12; leaven and the bread of affliction; the feasts and their seasons against other peoples' festivals; the Seder after AD 70, kept to this day | 1-8 | deuteronomy/16.json `historical`, `cultural`, `hard`, `words` (H6453) | Repository |
+| Exodus 12:11; Luke 2:41; 22:15; 1 Corinthians 5:7 | 1-8 | deuteronomy/16.json `christ`; BSB | Repository; BSB text |
+| Passover at home and at the sanctuary: the two readings, Josiah and 2 Kings 23:22, Numbers 9; the practice in the time of Jesus; no side | 1-8 | deuteronomy/16.json `hard` | Repository; no side |
+| The three feasts and the farming year; the Gezer Calendar, tenth century BC; Pentecost as the Greek name; booths and the wilderness, built today; joy commanded; the guest list; gifts in proportion | 9-17 | deuteronomy/16.json `historical`, `cultural`, `literary`, `words` (H2282, H5521), `christ` | Repository |
+| Leviticus 23:43; Acts 2:1; John 7:37 | 9-17 | deuteronomy/16.json `christ`; BSB | Repository; BSB text |
+| Chapters 16 to 18 on those in authority; the gate; bribes; tsedeq doubled; pole and pillar beside the altar, justice and worship together | 18-22 | deuteronomy/16.json `cultural`, `literary`, `words` (H6664G); deuteronomy/verses/18.json (verse 1) | Repository |
+| Exodus 23:8; Amos 5:12, 24; Micah 3:11 | 18-22 | deuteronomy/16.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 16: that ‘Pentecost’ comes from the Greek word for fifty (not checked in the repository's notes).
