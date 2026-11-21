@@ -14606,3 +14606,23 @@ Cut in chapter 5: two sentences on households and on a world without written rec
 | Verse 25 and earning: the two readings; 24:13; Romans 3:20; Sanders (1977); Lutheran and Reformed replies; Romans 10:6-8; no side | 20-25 | deuteronomy/6.json `hard` (second question) | Repository; no side |
 
 Cut in chapter 6: that the Shema is ‘the first prayer of childhood and the last words of life’ (not in the repository's notes); a quotation of another translation's wording of verse 4, which the quotation check does not allow, given in paraphrase.
+
+## The plain notes on Deuteronomy 7 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The seven nations, seven as completeness; herem, no plunder, Mesha about 840 BC and the same word; treaties and marriage assume the peoples remain; ‘little by little’; the reason religious and not ethnic; marriage and household gods; Rahab and Ruth in David's line; pillars and Asherah poles | 1-5 | deuteronomy/7.json `historical`, `cultural`, `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`) | Repository |
+| Joshua 6:25; Exodus 23:30; Joshua 13:1; Matthew 5:44; Luke 9:55 | 1-5 | questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`, `reply`); BSB | Repository; BSB text |
+| The command stated at its weight; 24:16 and Genesis 18:25; the four readings (war idiom; judgment after long patience, Genesis 15:16, 9:5, 12:31; God's right over life, Augustine and Aquinas; accommodation), each with its cost; no side | 1-5 | questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`, `evidence`, `reply`, `differ`); context/guides/the-violence-of-the-old-testament.json; /answers/did-god-command-genocide as those pages cite it; deuteronomy/7.json `hard` | Repository; handled as the site's live pages handle it; no side; shortened to fit the 3,000-character field |
+| What holds on every reading: one land and one moment; not about race (9:4-6; verse 26; 13:12-18); never renewed; no warrant for violence against any person or people; no nation, state, land or conflict today; the later misuse named as the church's sin; Ezekiel 18:23 | 1-5 | the same question page (`evidence`, `reply`, `differ`); context guide (‘What No One May Do With These Texts’) | Repository |
+| Holy as set apart; segullah, the Akkadian word and 1 Chronicles 29:3; not for numbers, and chapter 9 on righteousness; bachar; chosen for a purpose (Genesis 12:3), held to account, no contempt (10:19), no claim for any nation today; chesed | 6-11 | deuteronomy/7.json `cultural`, `words` (H5459, H0977, H2617A); deuteronomy/verses/18.json (verses 4-5); deuteronomy/intro.json `themes`, `reading` | Repository |
+| Exodus 19:5; Amos 3:2; Romans 11:28-29; 1 Peter 2:9 with the pointer to the 1 Peter 2 note, no side; 1 John 4:19 | 6-11 | deuteronomy/7.json `christ`; 1-peter/plain/2.json `hard`; BSB | Repository; BSB text; no side |
+| The promises as a nation's; grain, new wine and oil as the three staple crops, and Hosea 2:8; ‘a snare’ | 12-16 | hosea/2.json (`summary`, verse note on 2:8); leviticus/plain/26.json `hard` | Repository |
+| Genesis 12:2; Job 1:8; John 9:3; Sarah, Rebekah, Rachel and Hannah | 12-16 | leviticus/plain/26.json `hard`; BSB (Genesis 11:30; 25:21; 29:31; 1 Samuel 1:2) | Repository; BSB text |
+| Two sentences and the grief line reused whole | 12-16 | leviticus/plain/26.json 14-39 `hard` (‘So this chapter is never God's verdict...’; ‘Grief is not a lack of faith...’) | Repository; word for word |
+| The fear of Kadesh; memory as the answer; the hornet's three readings; ‘little by little’; cherem turned on Israel, Achan | 17-26 | deuteronomy/7.json `literary`, `cultural`, `words` (H2764A) | Repository |
+| Joshua 7:1; Judges 1:28; Matthew 28:19 | 17-26 | deuteronomy/7.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 7: a sentence that in Canaanite religion the crops were the gifts of Baal and ‘the gods of the soil’, narrowed to what the Hosea 2 note says; a remark built on the word ‘Instead’ in verse 5, narrowed to what the verse lists.
