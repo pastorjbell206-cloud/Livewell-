@@ -7,6 +7,7 @@ import { nanoid } from "nanoid";
 import { storagePut } from "./storage";
 import { syncAllFeeds } from "./rss-service";
 import { stripeRouter } from "./stripe-router";
+import { givingRouter } from "./giving-router";
 import { syndicationRouter } from "./syndication-router";
 import { searchRouter } from "./search-router";
 import { communityRouter } from "./community-router";
@@ -46,6 +47,7 @@ const substackLatest = createSubstackCache();
 export const appRouter = router({
   system: systemRouter,
   stripe: stripeRouter,
+  giving: givingRouter,
   email: emailRouter,
   syndication: syndicationRouter,
   search: searchRouter,
