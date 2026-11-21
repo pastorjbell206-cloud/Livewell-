@@ -609,3 +609,33 @@ The shelf already holds two public essays on neighboring ground, `why-trust-the-
 | Scripture (ESV): 1 Corinthians 15:3-5, 15:6, 15:17; Luke 1:2-4; John 5:39-40, 6:68, 7:17; Matthew 7:24 | ESV copy, by script | Words verified |
 
 Cut or held back: every living scholar's name; the under-one-percent estimate; P52, P66 and P75 and the 85 percent agreement with Vaticanus (on the linked pages; cut for length); Mark 2:26 and the story that opens `why-trust-the-bible` (it names a living person); "a claim that can't be shrunk into a legend" (an overclaim); "a far better text of Homer than they once did" (not opened); James 2:19 and John 19:35 (the ESV sets dashes in both); the Muratorian fragment and Athanasius by name (in the linked essay).
+
+## 19. does-prayer-change-anything
+
+No study of prayer is cited or alluded to. A GitHub repository search for the best-known ones found no copy of any paper that could be opened, so by the run's rule the subject is left out altogether. The essay never blames an unhealed person's faith and never sets prayer against medical care; the existing care wording is reused whole. No position on how God's sovereignty and real asking fit together is stated as the author's. It agrees with the Study Bible's notes on James 5, 2 Corinthians 12, Exodus 32 and 2 Kings 20, with the wisdom entry `terminal-diagnosis`, and with the site's study `client/public/theology/divine-foreknowledge.json`. The people in the opening are types. New sources opened:
+
+- **Summa II-II** (already cached, PG 18755): question 83, article 2, "Whether It Is Becoming to Pray?"
+- **Calvin**: GITenberg, Project Gutenberg 64392, *Institutes of the Christian Religion*, Vol. 2 of 2, translated by John Allen; Book 3, chapter 20, section 3.
+- **Creeds.json**: Westminster Confession 5.3; Heidelberg Catechism 116; Westminster Shorter Catechism 98 (read, not quoted).
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Care wording, quoted whole: "None of these readings sets prayer against medical care, and none makes an unhealed believer guilty of too little faith. Paul prayed three times and was not healed, and no one in Scripture blames him." | Repo, `client/public/wisdom/entry/terminal-diagnosis.json` (the same wording the third run reused) | Quoted whole |
+| Care wording, quoted whole: "Anyone who is sick, in pain, or in despair should call on both the church and qualified medical help, and anyone thinking of harming themselves should reach out immediately to a trusted person or to emergency services." | Repo, the Study Bible note on James 5 (hard question) | Quoted whole |
+| "What the passage does not teach is that illness that persists is a sign of weak faith or hidden sin."; oil was itself a medicine in James's day | Same note | Verbatim, the site's own |
+| The replies "yes, no, or wait", "not enough faith", "not his will" | Common sayings, given as sayings without quotation marks | Not a quotation |
+| Aquinas, thirteenth century, states the objection against himself: prayer seems meant to inform God, who knows; "God's mind is unchangeable and inflexible." | Summa II-II, q.83 a.2, objections 1 and 2 | Verbatim; the either-or that follows is the essay's own summary |
+| Aquinas's answer: providence disposes effects and their causes; human acts among the causes; "For we pray not that we may change the Divine disposition, but that we may impetrate that which God has disposed to be fulfilled by our prayers." | Summa II-II, q.83 a.2, the answer (the sentence continues after a comma) | Verbatim. The farmer is the essay's illustration of his "natural causes", not his |
+| Westminster: "God, in his ordinary providence, maketh use of means." | Creeds.json, WCF 5.3 (the sentence continues) | Verbatim |
+| Calvin: God "has appointed it not so much for his own sake as for ours" | Calvin, *Institutes* 3.20.3 (Allen's translation) | Verbatim |
+| Heidelberg, 1563: God gives grace and the Spirit "only to those who constantly and with heartfelt longing ask Him for these gifts." | Creeds.json, Heidelberg 116 (a modern English version) | Verbatim |
+| Many in the Wesleyan and Arminian traditions stress that God has made some outcomes depend on asking | Not opened this run | Reference knowledge, paraphrase. Check first |
+| The open view: "the texts where he relents mean exactly what they say."; the middle-knowledge view; the hard question for each; second-order | Repo, `divine-foreknowledge.json` (the views' one-line statements and triage note) | Verbatim / site's own |
+| "Both views agree that prayer is not a formality and that God's purposes include the prayers of his people." | Repo, the Study Bible note on 2 Kings 20 (said there of two readings of Hezekiah's story, and the essay says so) | Verbatim |
+| "It is an honest testimony that God sometimes answers prayer for relief with grace to endure, and that such an answer is not a sign of his absence."; it is no rule that God never heals | Repo, the Study Bible note on 2 Corinthians 12 | Verbatim |
+| Psalm 88 never turns to praise, unlike nearly every other lament | Not opened this run; the psalm itself read in the ESV copy | Reference knowledge |
+| David's child; Hezekiah turned his face to the wall; a son asking a father for bread; Timothy's stomach; a physician among Paul's companions; Job's friends | 2 Samuel 12:16-23; 2 Kings 20:2; Matthew 7:9; 1 Timothy 5:23; Colossians 4:14; Job (paraphrase) | Scripture |
+| The preaching that promises health and money to faith | Named as an error in CLAUDE.md's guardrails and in the course `the-attractional-era`; not named in the essay | Site's own |
+| Scripture (ESV): Matthew 6:8, 7:7, 27:46; Mark 11:24, 14:35, 14:36; John 14:14; 1 John 5:14; James 4:2, 4:3; 2 Corinthians 12:8, 12:9; Habakkuk 1:2; Psalm 88:14, 88:18; Exodus 32:14; 2 Kings 20:5; Hebrews 5:7; Daniel 3:17-18; Job 42:7; Philippians 4:7; Romans 8:26; Luke 18:1, 18:8 | ESV copy, by script | Words verified |
+
+Cut or held back: every study of intercessory prayer and Galton's essay of 1872 (none could be opened); Luke 22:44 (the site's page on disputed passages calls the arguments over Luke 22:43-44 close, so Mark 14:35 is quoted in its place); Matthew 7:11 and Luke 11:13 in quotation (each ends in an exclamation mark; allowed in Scripture, not needed); the saying "prayer doesn't change things, it changes us" in quotation marks (no source opened; given as a saying); Wesley's sentence that God does nothing but in answer to prayer (not found in the cached volume); Augustine's letter to Proba (not found in the cached file); C. S. Lewis (not open to this run); "the ten that were followed by a funeral" (an invented figure, changed).

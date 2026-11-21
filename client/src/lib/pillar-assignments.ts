@@ -1758,5 +1758,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 5,
     "subThemes": [],
     "confidence": "high"
+  },
+  "does-prayer-change-anything": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
