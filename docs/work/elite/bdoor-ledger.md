@@ -14391,3 +14391,17 @@ Cut for want of a source in the repository: a note on the Hebrew verb for ‘bre
 | Ephesians 6:12; 1 Peter 2:24 | 48-54 | numbers/31.json `christ`; BSB | BSB text |
 
 Cut for want of a source in the repository: a reason for the killing of the boys (‘a common practice in ancient war’); a statement that the girls given to the priest became sanctuary servants; ‘some connect’ the atonement of verse 50 with the census law, narrowed to an observation from the text.
+
+## The plain notes on Numbers 32 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The plateau as pasture; a practical request; the echo of Kadesh; ‘discouraging’ in verses 7 and 9; leaving allies to fight alone as betrayal; Moses' speech as the book in small | 1-15 | numbers/32.json `story`, `cultural`, `literary`; numbers/30.json `words` (H5106) | Repository |
+| Hebrews 3:12-13; 1 Corinthians 12:26 | 1-15 | numbers/32.json `christ`; BSB | BSB text |
+| A negotiation in rounds; ‘armed before the LORD’; a conditional agreement before witnesses; ‘find’ in verses 5 and 23 | 16-32 | numbers/32.json `literary`, `cultural`, `words` (H4672) | Repository |
+| Verse 23 in its setting, not a threat to an anxious conscience; the order of children and flocks in verses 16 and 24 | 16-32 | BSB | BSB text; observations from the text |
+| Joshua 1:16; 22:1-6; Galatians 6:2 | 16-32 | numbers/32.json `story`, `christ`; BSB | BSB text |
+| Dibon and the Moabite Stone (1868, about 840 BC), Ataroth, Nebo and the men of Gad; the renamed towns; the altar of Joshua 22; Tiglath-pileser III (about 733 to 732 BC) | 33-42 | numbers/32.json `historical`, `cultural`, `story` | Repository |
+| 1 Chronicles 5:26; Genesis 17:8 and achuzzah | 33-42 | numbers/32.json `words` (H0272); BSB | BSB text |
