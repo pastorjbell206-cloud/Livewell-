@@ -14981,3 +14981,20 @@ Cut in chapter 27: two new sentences addressed to anyone harmed in secret (not a
 | Lamentations 3:22-23; Deuteronomy 30:3; Luke 19:41 | 47-68 | deuteronomy/28.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 28: the Roman destruction of Jerusalem in AD 70 and Josephus's report of captives sent to Egypt, as fulfillments of this chapter (left out, as in Leviticus 26, so that the chapter is not read as a prediction of later Jewish suffering); a sentence that the false reading was used to excuse expulsion and violence (the Acts 2 note says this of another charge; the pointer is given in its place); the details of verses 53-57.
+
+## The plain notes on Deuteronomy 29 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The covenant of Horeb renewed in Moab; the historical prologue as in treaties; verse 4 as a confession of need; lev; 30:6 | 1-9 | deuteronomy/29.json `literary`, `words` (H1285, H3820A), `hard` | Repository |
+| Mark 8:18; Romans 11:8 with 11:1 and the pointer to the Romans 11 note; Ezekiel 36:26 | 1-9 | deuteronomy/29.json `christ`; BSB | Repository; BSB text |
+| Verse 4 and blame: the Reformed and the Wesleyan and Arminian readings; the confession of need; no side | 1-9 | deuteronomy/29.json `hard` | Repository; no side |
+| Covenant-making as a public oath; the list from leaders to woodcutters; ‘today’; those not here as later generations | 10-15 | deuteronomy/29.json `cultural`, `literary` | Repository |
+| Joshua 9:21; Acts 2:39; Luke 22:20 | 10-15 | deuteronomy/29.json `christ`; BSB | Repository; BSB text |
+| The root and the bitter plant; the man who blesses himself; the imagined dialogue; the two datings of verses 22-28; how such passages may be used | 16-28 | deuteronomy/29.json `historical`, `cultural`, `literary`; deuteronomy/plain/28.json 15-46 `hard` | Repository; no side on the date |
+| Jeremiah 22:8; 7:10; Hebrews 12:15 | 16-28 | deuteronomy/29.json `christ`; BSB | Repository; BSB text |
+| Verse 20: settled defiance and not a person who wants to return; 30:1-3; 4:29; the care line reused whole | 16-28 | hebrews/plain/3.json 12-15 and numbers/plain/14.json 26-38 (‘If you are afraid that you have fallen away from God...’); BSB | Repository; word for word |
+| The secret things (satar) and the things revealed; inquiry not forbidden; the dots in the Hebrew manuscripts | 29 | deuteronomy/29.json `cultural`, `literary`, `words` (H5641) | Repository |
+| Isaiah 55:9; Romans 11:33; Psalm 131:1 | 29 | BSB | BSB text |
