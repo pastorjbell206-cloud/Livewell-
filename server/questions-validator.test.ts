@@ -77,8 +77,13 @@ describe("validate-questions.mjs", () => {
       const areas = JSON.parse(fs.readFileSync(path.join(d, "areas.json"), "utf8"));
       areas.areas.find((a: Json) => a.slug === "text").status = "live";
       fs.writeFileSync(path.join(d, "areas.json"), JSON.stringify(areas));
-      e(PIECE, (j) => { j.status = "live"; j.onSite.push("The next page (/questions/authors/the-gospels-are-anonymous)."); });
-    }, /is live and links the pending page \/questions\/authors\/the-gospels-are-anonymous/],
+      e(PIECE, (j) => { j.status = "live"; j.onSite.push("The next page (/questions/science/near-death-experiences)."); });
+    }, /is live and links the pending page \/questions\/science\/near-death-experiences/],
+    ["a live area with no line for the room", (d) => {
+      const areas = JSON.parse(fs.readFileSync(path.join(d, "areas.json"), "utf8"));
+      delete areas.areas.find((a: Json) => a.slug === "text").line;
+      fs.writeFileSync(path.join(d, "areas.json"), JSON.stringify(areas));
+    }, /areas\.json text: is live with no one-line description/],
     ["an area page that leaves out a piece", (_d, e) => e("text/_area.json", (j) => { j.pieces = j.pieces.slice(1); }), /does not list its piece more-variants-than-words/],
     ["a stale manifest", (_d, e) => e(PIECE, (j) => { j.question = "A new question?"; }), /index\.json: is out of date/],
     ["nine areas", (d) => {
@@ -87,11 +92,11 @@ describe("validate-questions.mjs", () => {
       fs.writeFileSync(path.join(d, "areas.json"), JSON.stringify(areas));
     }, /lists 9 areas, not the plan's ten/],
     ["a pending page linked from a page outside the library", () => {
-      fs.writeFileSync(path.join(tmp, "outside.tsx"), `export const x = <a href="/questions/authors/the-gospels-are-anonymous">Read</a>;\n`);
-    }, /outside\.tsx: links the pending page \/questions\/authors\/the-gospels-are-anonymous/, { QUESTIONS_SCAN: "" }],
+      fs.writeFileSync(path.join(tmp, "outside.tsx"), `export const x = <a href="/questions/science/near-death-experiences">Read</a>;\n`);
+    }, /outside\.tsx: links the pending page \/questions\/science\/near-death-experiences/, { QUESTIONS_SCAN: "" }],
     ["a pending page in the sitemap", () => {
-      fs.writeFileSync(path.join(tmp, "outside.tsx"), `<url><loc>https://www.livewellbyjamesbell.co/questions/authors/the-gospels-are-anonymous</loc></url>\n`);
-    }, /outside\.tsx: links the pending page \/questions\/authors\/the-gospels-are-anonymous/, { QUESTIONS_SCAN: "" }],
+      fs.writeFileSync(path.join(tmp, "outside.tsx"), `<url><loc>https://www.livewellbyjamesbell.co/questions/science/near-death-experiences</loc></url>\n`);
+    }, /outside\.tsx: links the pending page \/questions\/science\/near-death-experiences/, { QUESTIONS_SCAN: "" }],
   ];
 
   for (const [name, change, want, env] of faults) {

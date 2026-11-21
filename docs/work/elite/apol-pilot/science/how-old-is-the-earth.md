@@ -1,0 +1,92 @@
+---
+area: science
+slug: how-old-is-the-earth
+status: pending (not on the site; for James to read first)
+question: "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?"
+ledger: docs/work/elite/apol-ledger.md, "Twenty-fourth run", key "br"
+---
+
+# The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?
+
+## The short answer
+
+The sciences that measure it say about four and a half billion years, and they say why: radioactive elements decay at measured rates, and meteorites and rocks from the moon and the earth give ages that agree. The Bible gives no date for creation. A date can be reached only by reading the six days as ordinary days and adding up the ages in the genealogies, and the ancient copies of those figures disagree. Christians who confess the same creeds read Genesis in several ways: as six ordinary days not long ago, as long ages, as a literary frame, as God's workweek told by analogy, or as the inauguration of a cosmic temple. This site takes no side among them. What all of them confess is that God made the heavens and the earth, and the creeds say nothing of when.
+
+## The objection at its strongest
+
+For most of Christian history, the objection says, the church knew how old the world was, and knew it from the Bible. Genesis gives six days of creation, framed by "there was evening, and there was morning," and the Sabbath command ties Israel's week to them: "For in six days the LORD made the heavens and the earth and the sea and all that is in them, but on the seventh day He rested" (Exodus 20:11, BSB). Genesis 5 and 11 then give the age of each father at the birth of his son, so that the years from Adam to Abraham can be added. Archbishop James Ussher did the sum in the seventeenth century and placed creation in 4004 BC, a date the Study Bible's note on Genesis 5 records was once printed in the margins of many English Bibles.
+
+Andrew Dickson White gave this history its classic polemical form in *A History of the Warfare of Science with Theology in Christendom* (1896). The early fathers, he wrote, found in the Bible "a biblical chronology--full, consecutive, and definite," and "it may be broadly stated that in the early Church, 'always, everywhere, and by all,' it was held as certain, upon the absolute warrant of Scripture, that man was created from four to six thousand years before the Christian era." Then geology came, and the warrant failed. At full strength the objection says that the Bible did state the age of the world, that the statement was wrong by a factor of hundreds of thousands, and that every newer reading of Genesis is a retreat made only after the rocks had spoken.
+
+## What is true in it
+
+Much of the history is true. Nearly every Christian writer before the modern age who reckoned the matter at all put creation within a few thousand years of Christ. Even Augustine, who read the days of Genesis 1 in a sense of his own, wrote that "it is not yet six thousand years since the first man, who is called Adam" (*City of God* 18.40, in the *Nicene and Post-Nicene Fathers* translation). The fathers who doubted that the days were ordinary days did not thereby hold an old earth; the question of deep time was not before them.
+
+It is also true that some readings of Genesis have been urged under the pressure of the sciences, and a reader who suspects that some Christians reread Genesis to make peace with the sciences is not imagining it. And Christians have sometimes defended a date with more confidence than the text supplies, treating a sum Ussher made as if it were a verse.
+
+## The evidence
+
+Begin with what the sciences say and why. OpenStax's textbook *Astronomy 2e* explains the method. Radioactive elements decay into other elements at rates measured in the laboratory, so that "by comparing how much of a radioactive parent element is left in a rock to how much of its daughter products have accumulated, we can learn how long the decay process has been going on and hence how long ago the rock formed." Several such clocks are used, with half-lives from about a billion years (potassium to argon) to more than a hundred billion (samarium to neodymium). Applied to meteorites, the oldest material available for study, they give ages that cluster tightly: "Almost all meteorites have radioactive ages between 4.50 and 4.56 billion years." Applied to rocks brought back from the moon from 1969 on, and to the earth, they give the same answer: earth and moon "each was formed about 4.5 billion years ago." The same textbook dates the expansion of the universe to about 13.8 billion years ago from independent evidence. The figure is not one measurement but the agreement of many, made by different methods on different materials, and it is the working consensus of the sciences that study it.
+
+Then what the Bible says, read closely. Genesis 1 numbers its days and gives each an evening and a morning. It also has light and evenings for three days before the sun and moon appear on the fourth, which Origen noticed in the third century, as the Study Bible's note on Genesis 1 records. The next chapter calls the whole work "the day that the LORD God made them" (Genesis 2:4, BSB), using the word for day of a span of time. The genealogies give exact ages, but the ancient witnesses disagree about them: the note on Genesis 5 records that the standard Hebrew text gives 1,656 years from Adam to the flood, while the Greek Septuagint gives more than two thousand and the Samaritan Pentateuch fewer. The same note records that "became the father of" can mean "became the ancestor of" in Hebrew usage, that Matthew's genealogy passes over three kings (Matthew 1:8), and that whether Genesis 5 has gaps is debated, since its precise ages seem to link each name to the next. Scripture also speaks of time from God's side: "With the Lord a day is like a thousand years, and a thousand years are like a day" (2 Peter 3:8, BSB). Nowhere does Scripture itself state the age of the earth.
+
+Then the history of reading, which is older than geology. The note on Genesis 1 records that Origen read the days figuratively, that Augustine argued in *The Literal Meaning of Genesis* (401 to 415) that God created all things at once, that Basil of Caesarea, in his homilies of 378, and Ephrem the Syrian took the days as ordinary days, that Luther's lectures defended six ordinary days, and that Calvin's commentary of 1554 argued that Moses accommodated his language to ordinary people. The disagreement about what kind of days these are is nearly as old as Christian commentary on the chapter.
+
+## The argument, laid out
+
+This is a deductive argument about what the Bible's text settles and what the creeds bind.
+
+1. Scripture nowhere states the age of the earth; a date can be reached only by inference, by reading the days as ordinary days and adding the genealogies' figures, and the ancient witnesses to those figures differ.
+2. Whether that inference is right depends on what kind of text Genesis 1 is and what the genealogies were written to do, questions faithful readers have answered differently since before the age of the earth was a scientific question.
+3. The creeds confess God the Father Almighty, "Maker of heaven and earth," and say nothing of when.
+
+So: the age of the earth is a question of interpretation within the faith, not a test of it; whatever its answer, the sciences' figure of about four and a half billion years can refute particular readings of Genesis, but not the confession that God made all things.
+
+The weight sits on the second step. If the only honest reading of Genesis 1 and the genealogies were six ordinary days and an unbroken chronology, then the Bible would state a young earth after all, and the conflict with the sciences would be real. Young-earth Christians hold that it is, and challenge the science; that is a coherent position, and it is set out below. The argument claims only that the text leaves room for more than one faithful reading.
+
+## The strongest reply, and an answer
+
+The strongest reply comes from two directions at once. The skeptic says that step 2 is the retreat White described: Christians held one reading for seventeen centuries and found others only when geology left them no choice. The young-earth Christian says the same thing for the opposite reason: the plain sense of numbered days with evenings and mornings, confirmed by Exodus 20:11, is the meaning, and readings invented to fit the sciences bend Scripture to fit the rocks.
+
+Both deserve a real answer. Part of the charge is true, as conceded above: some readings took their modern form after geology, and the early church held a young world. But two things limit what follows from that. First, the disagreement about the days is not new. Origen and Augustine doubted that the days were ordinary days centuries before anyone dated a rock, and their reasons came from the text, light and evenings before the sun, not from the sciences. They held a young world because nothing they knew suggested otherwise, not because they read Genesis 1 as a timetable. Second, rereading a text in the light of what is learned about the world is not always a retreat. Galileo's opponents answered him with the day the sun stood still in Joshua, as this area's page on Galileo sets out, and Christians who now read it otherwise have not abandoned Scripture. Whether Genesis 1 is a case of that kind is exactly what Christians dispute. Young-earth readers answer that it is not: Genesis 1 is narrative, its days are numbered, Exodus grounds the Sabbath in them, and any other sense, on their reading, as the note on Genesis 1 records it, bends Scripture to fit the sciences. That answer is serious, and so is the other.
+
+So the reply shows less than it claims. It shows that the history of the question is mixed and that motives can be suspected on every side. It doesn't show that only one reading is honest.
+
+## What remains unresolved
+
+What kind of days Genesis 1 describes is unresolved among Christians, and so is what the genealogies were written to do, whether to supply a continuous chronology or to trace a line of blessing that may skip generations. Which of the ancient witnesses preserves the original figures in Genesis 5 and 11 is argued. Among the sciences that measure it, the age of the earth is not in serious dispute; the young-earth case is made against that consensus, not within it.
+
+## Where Christians differ
+
+Here are the main readings, each as its holders state it, as the Study Bible's note on Genesis 1 and the argued answer "How should a Christian read Genesis 1?" set them out, with its hardest difficulty. This site takes no side among them.
+
+Young-earth creation holds that God made the world in six ordinary days a few thousand years ago, and that the flood of Noah was global. Its modern form, the Stanford Encyclopedia's entry on creationism records, drew on the Seventh-day Adventist George McCready Price early in the twentieth century and was revived by John Whitcomb and Henry Morris in *The Genesis Flood* (1961). Its strongest point is the text: numbered days, evening and morning, and the Sabbath command of Exodus 20:11. Its hardest difficulty is the agreement of the dating methods described above.
+
+The day-age reading, defended among others by the astronomer Hugh Ross, as the note records his *A Matter of Days* (2004), takes each day as a long age, since the Hebrew word can mean a span of time, as in Genesis 2:4. Its strongest point is that it accepts the age of the world while keeping the days in order. Its hardest difficulty is the order itself, plants on the third day before the sun on the fourth, and the evenings and mornings, which sound like days.
+
+The framework reading, proposed by Arie Noordtzij in 1924 and developed by Meredith Kline and Henri Blocher, holds that the days are a literary frame: days one to three form realms and days four to six fill them with their rulers. Its strongest point is that the pattern is plainly deliberate. Its hardest difficulty is that the chapter reads like a sequence, and Exodus 20:11 seems to take it as one.
+
+The analogical-day reading of C. John Collins, as the note summarizes his *Genesis 1-4* (2006), holds that the days are God's workdays, like ours but not identical to them, told so that Israel's week could mirror its maker's. Its hardest difficulty is to say what the days correspond to in the world.
+
+The cosmic-temple reading of John Walton, as the note summarizes *The Lost World of Genesis One* (2009), holds that the seven days describe God establishing the cosmos as his temple, assigning functions rather than recounting material origins. Its hardest difficulty, pressed by its critics, is whether ancient readers separated function from matter so sharply.
+
+All of them confess what the creeds confess: "In the beginning God created the heavens and the earth" (Genesis 1:1, BSB), and "By faith we understand that the universe was formed at God's command" (Hebrews 11:3, BSB). The question of the earth's age belongs, as the argued answer on Genesis 1 puts it, among those where faithful Christians differ without dividing the faith. A young believer who learns that the earth is old has not learned that God did not make it, and a young believer who holds that it is young has not chosen ignorance. The chapter's question was never only how long. It was whose world this is.
+
+## Read the other side
+
+- Andrew Dickson White, *A History of the Warfare of Science with Theology in Christendom* (1896), the chapters "From Genesis to Geology" and "The Antiquity of Man, Egyptology, and Assyriology".
+- John C. Whitcomb and Henry M. Morris, *The Genesis Flood* (1961), the case that Scripture teaches a young earth and a global flood.
+
+## Read further
+
+- Hugh Ross, *A Matter of Days* (2004), the day-age case.
+- C. John Collins, *Genesis 1-4* (2006).
+- John H. Walton, *The Lost World of Genesis One* (2009).
+- Henri Blocher, *In the Beginning* (1984).
+
+## On the site
+
+- The argued answer "How should a Christian read Genesis 1?" (/answers/how-should-a-christian-read-genesis-1), which this page agrees with, and "Do I have to choose between faith and science?" (/answers/do-i-have-to-choose-between-faith-and-science).
+- The Study Bible's notes on Genesis 1 (/study/bible/genesis/1) and Genesis 5 (/study/bible/genesis/5), which set out the readings of the days and the genealogies without taking a side.
+- "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?" (/questions/science/evolution-and-genesis) and "The church condemned Galileo. Hasn't religion always been at war with science?" (/questions/science/galileo-and-the-war).
+- The other questions in this area (/questions/science).

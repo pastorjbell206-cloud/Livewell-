@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: slavery-and-conquest
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?"
 ledger: docs/work/elite/apol-ledger.md, "Nineteenth run", key "au"
 ---

@@ -6,6 +6,7 @@
  * only its live pieces.
  */
 import { Link, useRoute } from "wouter";
+import { ArrowDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
@@ -51,11 +52,17 @@ export default function QuestionsArea() {
       ) : a && entry ? (
         <section className="qx-sec">
           <div className="qx-read">
+            {/* The opening runs to several paragraphs; on a phone the list is a long way down. */}
+            <p style={{ margin: "0 0 var(--s-3)" }}>
+              <a href="#the-questions" className="qx-back">
+                <ArrowDown aria-hidden="true" size={14} strokeWidth={1.75} /> Go to the {pieces.length} questions
+              </a>
+            </p>
             <div className="qx-prose">
               <QMd>{a.intro}</QMd>
             </div>
 
-            <h2 className="qx-h2" style={{ marginTop: "var(--s-5)" }}>The questions</h2>
+            <h2 id="the-questions" className="qx-h2" style={{ marginTop: "var(--s-5)", scrollMarginTop: 96 }}>The questions</h2>
             <ol className="qx-pieces">
               {pieces.map((p) => (
                 <li key={p.slug}>

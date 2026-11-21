@@ -1,7 +1,7 @@
 ---
 area: religions
 slug: judaism-islam-and-jesus
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?"
 ledger: docs/work/elite/apol-ledger.md, "Twentieth run", key "ba"
 ---

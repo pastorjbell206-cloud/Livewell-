@@ -1,6 +1,6 @@
 ---
 area: morality
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 ledger: docs/work/elite/apol-ledger.md, "Nineteenth run"
 ---
 
@@ -21,6 +21,11 @@ Pages on morality itself and on sexuality, which the plan also places in this ar
 3. **Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?** Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Southern Baptist Convention's founding in 1845 and its apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.
 4. **Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?** The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe; it gives no legal advice and asks no one to trust, return or forgive. Find Help (/help) and the police are at the top of the page and at its end.
 5. **Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?** The New Atheists' charge and Paine's, the French wars of religion and the Thirty Years' War, what those wars were also about, Paine's own witness to the revolutionary tribunals, and idolatry under any banner.
+6. **What does the Bible say about homosexuality, and why do Christians disagree?** The six passages read closely with their debated words, the historic teaching of the church and the newer reading, each in its holders' terms, where each side says the other goes wrong, and what all should confess; the page takes no side, and Find Help is named at its start and its end.
+7. **The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?** Exposure and abortion in the Roman world, the Jewish refusal, the Didache, Barnabas, Athenagoras, Tertullian and Basil in their own words, Exodus 21:22 in both readings, and how Catholic, Orthodox and Protestant Christians have reasoned; history and theology, not an argument about any law. It opens and closes with a word of gentleness for anyone carrying grief or guilt, and names Find Help.
+8. **The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?** Stanton's charge and the texts behind it, Tertullian and Aquinas in their own words, what Jesus and the first churches did, the household codes read whole, the complementarian and egalitarian readings without a side taken, and the misuse of submission named and refused; Find Help is named for anyone being hurt.
+9. **Every nation's laws rest on somebody's morals. Why shouldn't a Christian people want a Christian nation? Is Christian nationalism Christian?** The case for a Christian nation in its defenders' terms, what is true in it, what Jesus did with power, the church under Constantine and after, the wars of religion, the dissenters who argued for liberty of conscience, and the same test applied to any cause that drafts the cross.
+10. **Morals differ from one culture to the next, and Nietzsche traced Christian values to the resentment of the weak. Isn't Christian morality just the product of its culture?** Relativism and Nietzsche's genealogy at full strength, where Christian ethics cut against the world that first heard it (unwanted infants, the poor, human rank, enemies) and later against Christian societies on slavery, with the church's guilt admitted, and what an argument from history can and can't show.
 
 ## Words these pages use
 

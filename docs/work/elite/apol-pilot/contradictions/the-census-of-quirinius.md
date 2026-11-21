@@ -1,7 +1,7 @@
 ---
 area: contradictions
 slug: the-census-of-quirinius
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?"
 ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "y"
 ---
