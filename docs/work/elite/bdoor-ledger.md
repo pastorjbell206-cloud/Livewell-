@@ -13349,3 +13349,26 @@ Cut before publishing: that the priests kept alive ‘what God had lit’ (the o
 | Exodus 29:26-28; Deuteronomy 18:3 and the two explanations; ‘the text does not explain it’ | 28-38 | leviticus/7.json `historical`; BSB | Repository; no side |
 
 Cut before publishing: the care line from the 1 Corinthians 5 note (it names Paul and could not be used whole here); Proverbs 7:14 (true to the deep note, a detour); the Greek word behind ‘Eucharist’.
+
+## The plain notes on Leviticus 8 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Law becomes story; Exodus 29 carried out; command and fulfillment as with the tabernacle | 1-13 | leviticus/8.json `story` | Repository |
+| Aaron and the calf; Deuteronomy 9:20; the office begins in mercy | 1-13 | leviticus/8.json `story`, `hard` | Repository |
+| Washing, clothing, anointing as changes of status; the breastpiece and the names over his heart (Exodus 28:29) | 1-13 | leviticus/8.json `cultural` | Repository |
+| Urim and Thummim: hard cases, probably a sacred lot, appearance not described | 1-13 | leviticus/8.json `historical` | Repository |
+| Mashach, mashiach, Christos | 1-13 | leviticus/8.json `words` (H4886), `doctrines` (messiah) | Repository |
+| Holiness given, not achieved; the refrain six times (verses 4, 9, 13, 17, 21, 29) | 1-13 | leviticus/8.json `doctrines` (holiness), `literary` | Repository |
+| Exodus 29:9; Psalm 133:2; Hebrews 5:4-5 | 1-13 | leviticus/8.json `cultural`, `christ`; BSB | BSB text |
+| Why Aaron: Exodus 32:24; God's choice before the calf; Moses' prayer; the sin offering; Hebrews 5:2 | 1-13 | leviticus/8.json `hard` | Repository |
+| Atonement for the priests first; the altar purified; Moses as priest, to install and not to hold the office | 14-21 | leviticus/8.json `doctrines` (atonement), `literary` | Repository |
+| Hebrews 5:3; 7:27; ‘a shadow is real’ | 14-21 | leviticus/8.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| Ordination as ‘filling the hand’; ear, thumb and toe: the whole person, the right side, hearing, doing, walking (‘the chapter does not say it’); the same marks on the cleansed person (14:14) | 22-30 | leviticus/8.json `cultural`, `words` (H4394) | Repository |
+| 1 Peter 2:9; Catholic and Orthodox, and Protestant, use of ‘priest’ | 22-30 | leviticus/8.json `christ`; guides/offerings-and-purity.json (‘Priests and Levites’) | Repository; no side |
+| Seven times and seven days | 31-36 | leviticus/8.json `literary` | Repository |
+| Numbers 20:28; Hebrews 7:25 | 31-36 | leviticus/8.json `story`; BSB | BSB text |
+
+Cut before publishing: ‘seven is the number of completeness’ (not in the repository's notes on this chapter); the later history of the high priesthood (Eleazar, Zadok, AD 70), left to the deep note.
