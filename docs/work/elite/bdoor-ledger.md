@@ -14626,3 +14626,17 @@ Cut in chapter 6: that the Shema is ‘the first prayer of childhood and the las
 | Joshua 7:1; Judges 1:28; Matthew 28:19 | 17-26 | deuteronomy/7.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 7: a sentence that in Canaanite religion the crops were the gifts of Baal and ‘the gods of the soil’, narrowed to what the Hosea 2 note says; a remark built on the word ‘Instead’ in verse 5, narrowed to what the verse lists.
+
+## The plain notes on Deuteronomy 8 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Anah and nasah; bread as life and as all food; manna, its name, that it could not be stored; a father's discipline in the ancient household | 1-6 | deuteronomy/8.json `cultural`, `words` (H6031B, H5254G, H4478A); BSB (Exodus 16:15-24) | Repository; BSB text |
+| Exodus 16:15; Matthew 4:4, forty years and forty days, Israel as God's son; John 6:35; Hebrews 12:6 | 1-6 | deuteronomy/8.json `christ`; deuteronomy/6.json `christ`; matthew/plain/4.json 1-4; BSB | Repository; BSB text |
+| ‘To know what was in your heart’: the three readings, the third not accepted by the wider tradition; verse 16 | 1-6 | deuteronomy/8.json `hard` | Repository |
+| Springs and not a great river; the seven species; date syrup; copper in the Arabah; the grace after meals | 7-10 | deuteronomy/8.json `historical`, `cultural` | Repository |
+| Matthew 14:19; 1 Timothy 6:17 | 7-10 | BSB | BSB text |
+| Remember and forget; the mirror shape; forgetting as a failure of loyalty; verse 17 as the pivot and verse 18 the answer | 11-20 | deuteronomy/8.json `literary`, `words` (H7911) | Repository |
+| Hosea 13:6; 1 Corinthians 4:7; Luke 12:20 | 11-20 | BSB | BSB text |
