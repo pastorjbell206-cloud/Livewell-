@@ -1718,5 +1718,30 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 3,
     "subThemes": [],
     "confidence": "high"
+  },
+  "should-christians-ever-go-to-war": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "can-a-christian-lose-their-salvation": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "do-the-gifts-of-the-spirit-still-happen": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-happens-to-people-who-never-hear-the-gospel": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "christianity-was-never-western": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
   }
 };

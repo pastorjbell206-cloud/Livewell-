@@ -16,6 +16,7 @@ import { act, fireEvent, screen, within } from "@testing-library/react";
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { HELP_LINK, LIBRARY_LINK, SEARCH_SHORTCUTS, SITE_NAV_GROUPS, headerLinks, soleHeaderLink } from "./siteNav";
 import { DOORS, EVERYTHING_ENTRY, START_LINK } from "./siteCatalog";
+import { GIVING, supportRooms } from "./giving";
 import { BOOK_SHELF, isShelfBookHref } from "./bookShelf";
 import { START_WITH, SHELF_ESSAYS, isPublicEssay } from "./shelf";
 import { HOME_HEADLINE, HOME_LINE, HOME_LINKED_HREF, HOME_LINKED_WORD, HOME_WHY } from "./positioning";
@@ -89,7 +90,8 @@ describe("the nav map", () => {
   });
 
   it("keeps Books, Speaking, Find James, Contact and Subscribe under About, and no link to the pastors' network", () => {
-    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/connect", "/contact", "/subscribe"]);
+    // Support this work follows Subscribe only once giving is open (lib/giving.json).
+    expect(headerLinks(group("About")).map((l) => l.href)).toEqual(["/about", "/books", "/speaking", "/connect", "/contact", "/subscribe", ...supportRooms(GIVING.open).map((r) => r.href)]);
     // James, 2026-11-17: the Pastors Connection Network stays outside this site.
     expect(SITE_NAV_GROUPS.flatMap((g) => g.links).some((l) => /pastorsconnection/i.test(l.href + l.label.replace(/\s/g, "")))).toBe(false);
   });

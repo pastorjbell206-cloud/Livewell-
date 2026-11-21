@@ -3,6 +3,7 @@ import { eq } from "drizzle-orm";
 import { createBookPurchase, updateBookPurchaseStatus } from "./db-email-books";
 import { getDb } from "./db";
 import { books } from "../drizzle/schema";
+import { GIVING_CLOSED_MESSAGE, giftCheckoutParams, type Gift } from "@shared/giving";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "sk_test_placeholder");
 
@@ -119,6 +120,19 @@ export async function createMembershipCheckoutSession(
     cancel_url: `${origin}/membership`,
   });
   return { sessionUrl: session.url || "", sessionId: session.id };
+}
+
+/**
+ * Start a gift on Stripe's hosted checkout (/support). The gift has already
+ * passed checkGift; the request is built by giftCheckoutParams, the same
+ * function the production runtime uses (api/index.ts, "giving.createCheckout").
+ * Nothing is written to the database and nothing about the giver is logged:
+ * Stripe holds the record.
+ */
+export async function createGiftCheckoutSession(gift: Gift, origin: string): Promise<{ sessionUrl: string }> {
+  if (!isStripeConfigured()) throw new Error(GIVING_CLOSED_MESSAGE);
+  const session = await stripe.checkout.sessions.create(giftCheckoutParams(gift, origin));
+  return { sessionUrl: session.url || "" };
 }
 
 /**

@@ -43,6 +43,7 @@ import { fileURLToPath } from "node:url";
 import { devotionsIn } from "./lib/family-devotion-file.mjs";
 import { STRANDS } from "./lib/family-index.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
+import { supportSearchPages } from "./lib/giving.mjs";
 
 import { ANSWERS } from "../client/src/data/answers.ts";
 
@@ -305,7 +306,8 @@ export function catalogEntries() {
 function mainPages() {
   const catalog = catalogNames();
   const tools = toolNames();
-  const typed = MAIN_PAGES.map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
+  // Support this work is a main page only once giving is open (client/src/lib/giving.json).
+  const typed = [...MAIN_PAGES, ...supportSearchPages()].map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
   const have = new Set(typed.map((p) => p.href.split("#")[0]));
   const rest = catalogEntries().filter((e) => !have.has(e.href) && !tools.has(e.href));
   return [...typed, ...rest];

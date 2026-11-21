@@ -12,14 +12,17 @@
  * rooms and everything inside them from this file (components/art/DoorInside),
  * so "Everything in <door>" is complete without a second typed list.
  *
- * Kept static and free of imports beyond types, so the header paints in full
- * before any API call answers (the first-paint contract in CLAUDE.md).
+ * Kept static and free of imports beyond types and the one giving switch
+ * (lib/giving.ts, a few lines), so the header paints in full before any API
+ * call answers (the first-paint contract in CLAUDE.md).
  *
  * Every entry is written on one line in the order id, name, line, href:
  * scripts/prerender-heads.mjs and scripts/site-audit-manifest.mjs read this
  * file as text. Counts are checked against the repo's own data by
  * siteCatalog.test.ts.
  */
+
+import { GIVING, supportRooms } from "./giving";
 
 export type DoorId = "bible" | "history" | "questions" | "family" | "tools" | "essays" | "about";
 
@@ -322,6 +325,8 @@ export const DOORS: Door[] = [
       },
       { id: "about.contact", name: "Contact", line: "Write to James.", href: "/contact", icon: "Mail" },
       { id: "about.subscribe", name: "Subscribe", line: "Get new essays by email.", href: "/subscribe", icon: "Send" },
+      // Support this work joins here, beside Subscribe, the day giving opens (the one switch in lib/giving.json). Held, this adds nothing.
+      ...supportRooms(GIVING.open),
     ],
   },
 ];

@@ -13,6 +13,7 @@ import fs from "node:fs";
 import dotenv from "dotenv";
 import { essayDate, loadEssayShelf, loadTakenDown } from "./lib/shelf.mjs";
 import { liveQuestionPaths } from "./lib/questions.mjs";
+import { supportSitemapPages } from "./lib/giving.mjs";
 
 dotenv.config();
 
@@ -245,6 +246,8 @@ const STATIC_PAGES = [
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },
   { url: "/subscribe", priority: "0.7", changefreq: "monthly" },
+  // Support this work: listed only once giving is open (client/src/lib/giving.json). Held, this adds nothing.
+  ...supportSitemapPages(),
   { url: "/resources/hard-issues-series", priority: "0.75", changefreq: "monthly" },
   // Legal
   { url: "/privacy", priority: "0.3", changefreq: "monthly" },
