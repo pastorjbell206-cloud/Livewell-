@@ -13616,3 +13616,28 @@ Cut before publishing: ‘the Hebrew says, word for word, by the life’ (the ve
 | Genesis 15:16; Ezra 9:11; Psalm 106:38 | 24-30 | BSB | BSB text |
 
 Cut or narrowed before publishing: a number for the commandment against adultery (traditions count differently); a third position named in the deep note (that the texts forbid all such relations but should be weighed differently today), left in the deep note so that this note keeps the two-reading shape of the Romans 1 and 1 Corinthians 6 notes; any claim about how the verse has been used in history (the note says only that any such use is a misuse); Henry VIII; the derivation of Paul's Greek word, which the 1 Corinthians 6 note already gives. The sentence ‘No one may use this verse to harm or shame any person’ is new, required for this passage. Flagged for James: the site's own view on these verses is an open decision.
+
+## The plain notes on Leviticus 19 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The heart of the book; holiness shown in justice and kindness as much as in ritual | 1-8 | leviticus/19.json `words` (H6918G); leviticus/intro.json `keyChapters`, `themes` | Repository |
+| ‘I am the LORD’ about fifteen times, a signature; the echo of the Ten Commandments; ritual and ethical commands mixed | 1-8 | leviticus/19.json `literary` | Repository |
+| Exodus 20:8, 12; 1 Peter 1:15-16 | 1-8 | leviticus/19.json `christ`; BSB | BSB text |
+| Gleaning as welfare built into ownership; day laborers; the deaf and blind as easy targets; impartial courts | 9-18 | leviticus/19.json `cultural` | Repository |
+| Verses 17-18 govern the heart; love as loyal, practical commitment | 9-18 | leviticus/19.json `words` (H0157G) | Repository |
+| Hillel and Rabbi Akiva | 9-18 | leviticus/19.json `historical` | Repository |
+| Ruth 2:2; James 5:4; Mark 12:31; Galatians 5:14; James 2:8 | 9-18 | leviticus/19.json `historical`, `christ`; BSB | BSB text |
+| The neighbor as a fellow Israelite; verse 34 extends the same love to the foreigner; the pair | 9-18 | leviticus/19.json `words` (H7453), `literary` | Repository |
+| Luke 10:29, 37 and the Samaritan; Matthew 5:44 | 9-18 | leviticus/19.json `christ`; BSB | BSB text |
+| Mixtures and Genesis 1; the young tree; cutting in grief; mediums and Endor; honor for the old | 19-32 | leviticus/19.json `cultural`, `historical` | Repository |
+| Verses 20-22: the slavery of the ancient world; spared the death penalty ‘because she had not been freed’; the guilt offering | 19-32 | leviticus/19.json `cultural` | Repository |
+| 1 Samuel 28:7; Isaiah 8:19; Deuteronomy 22:11 and observant Jews today; 1 Timothy 5:1 | 19-32 | leviticus/19.json `hard`; BSB | BSB text |
+| Which laws still apply: the threefold division (Aquinas, Calvin, the confessions); the law fulfilled as a whole in Christ; Jewish tradition; what all agree on | 19-32 | leviticus/19.json `hard` | Repository; no side |
+| Ger: without land, family ties or legal standing; named with the poor; loved as oneself; the reason is memory | 33-37 | leviticus/19.json `words` (H1616), `literary` | Repository |
+| Two sets of weights | 33-37 | leviticus/19.json `cultural` | Repository |
+| Deuteronomy 10:18-19; Exodus 22:21; Proverbs 11:1 and to'evah; Matthew 25:35; 1 Peter 1:17 | 33-37 | leviticus/18.json `words` (H8441); BSB | BSB text |
+
+Cut or narrowed before publishing: that ‘as yourself’ is not a command to love oneself first; that a poor household might put a daughter to use for money; that verse 28's marks belong to mourning rites, and that Christians differ about tattoos (narrowed to what the chapter's setting shows); that the command about the foreigner is repeated ‘more often than almost any other’; that Hebrew has other words for other kinds of outsider. None of these could be found in the repository. The note on verses 33-37 says in its own words that it draws no rule for any government or party today.
