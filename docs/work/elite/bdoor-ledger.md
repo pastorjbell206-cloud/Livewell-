@@ -15085,3 +15085,5 @@ Cut in chapter 33: that the burning bush is mentioned nowhere else in the Old Te
 | Who wrote of the death of Moses: the Talmud and the last eight verses; a later editor; ‘to this day’; most readers, including many who hold to Moses' authorship; the wider question left open with the pointers | 9-12 | deuteronomy/34.json `historical`; deuteronomy/intro.json `author`; questions/old-testament/who-wrote-the-first-five-books.json | Repository; no side |
 
 Cut in chapter 34: a remark on the Hebrew wording of verse 5 (‘at the mouth of the LORD’) and that no one else was present at the burial (neither is in the repository's notes); Jude 1:9 and the dispute over the body of Moses are left to the deep note.
+
+Reworded after commit in chapter 21 (2026-11-21): two sentences that began ‘Here is what the law’ in the hard note on 21:10-14 now read ‘The law permits a great deal.’ and ‘The law also sets limits.’, since that opening counts as signposting.
