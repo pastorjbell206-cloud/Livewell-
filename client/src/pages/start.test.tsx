@@ -13,6 +13,7 @@ import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { ROADS, START_ROADS_KEY, readRoadProgress } from "@/lib/startRoads";
+import { TRACKS_KEY } from "@/lib/tracks";
 import { isPublicEssayHref } from "@/lib/shelf";
 import { ROAD_CHIPS } from "./home/roadChips";
 import Start, { START_NEXT, START_STEPS } from "./Start";
@@ -114,6 +115,38 @@ describe("/start: the five roads", () => {
     expect(screen.getByRole("link", { name: "the page for people hurt by a church" }).getAttribute("href")).toBe("/help/church-hurt");
     expect(screen.getByRole("link", { name: "Answer three questions" }).getAttribute("href")).toBe("/start/quiz");
     expect(window.location.hash).toBe("#new");
+  });
+
+  it("offers the track as the main action of the road for someone new, with the six steps kept under it", () => {
+    vi.stubGlobal("fetch", offlineFetch());
+    window.history.replaceState(null, "", "/start#new");
+    renderWithProviders(<Start />);
+    const road = screen.getByRole("heading", { level: 2, name: "New to faith, or coming back" }).closest("section") as HTMLElement;
+    expect(within(road).getByText(/This road is now a track: 12 short sessions in order/)).toBeInTheDocument();
+    expect(within(road).getByRole("link", { name: "Start the track" }).getAttribute("href")).toBe("/tracks/new-to-this/1");
+    expect(within(road).getByRole("link", { name: "See the 12 sessions" }).getAttribute("href")).toBe("/tracks/new-to-this");
+    expect(within(road).getByRole("heading", { level: 3, name: "Or take the 6 first steps on their own" })).toBeInTheDocument();
+    // The track is the one filled button; the steps are all still there, as plain links.
+    expect(Array.from(road.querySelectorAll("a.btn:not(.btn--quiet)")).map((a) => a.textContent)).toEqual(["Start the track"]);
+    expect(within(within(road).getAllByRole("list")[0]).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(START_STEPS.map((s) => s.href));
+    // A road with no track yet is as it was: its next step is the button.
+    fireEvent.click(screen.getByRole("link", { name: /I'm skeptical/ }));
+    const other = screen.getByRole("heading", { level: 2, name: "If you're skeptical" }).closest("section") as HTMLElement;
+    expect(within(other).queryByText(/This road is now a track/)).toBeNull();
+    expect(other.querySelectorAll("a.btn").length).toBe(1);
+  });
+
+  it("continues a track begun on this device, on the road and above the five choices", () => {
+    vi.stubGlobal("fetch", offlineFetch());
+    window.localStorage.setItem(TRACKS_KEY, JSON.stringify({ v: 1, tracks: { "new-to-this": { title: "New to faith, or coming back", total: 12, done: [1, 2, 3], notes: {}, at: "2026-11-20T10:00:00.000Z" } } }));
+    const first = renderWithProviders(<Start />);
+    const line = screen.getByTestId("start-track-continue");
+    expect(line).toHaveTextContent("Continue your track: New to faith, or coming back, session 4 of 12");
+    expect(within(line).getByRole("link").getAttribute("href")).toBe("/tracks/new-to-this/4");
+    first.unmount();
+    window.history.replaceState(null, "", "/start#new");
+    renderWithProviders(<Start />);
+    expect(screen.getByRole("link", { name: "Continue the track at session 4" }).getAttribute("href")).toBe("/tracks/new-to-this/4");
   });
 
   it("remembers a ticked step through a reload, and offers to pick up where you left off", () => {

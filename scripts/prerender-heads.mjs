@@ -25,6 +25,7 @@ import dotenv from "dotenv";
 import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
+import { SUPPORT_HEAD, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
 
 dotenv.config();
 
@@ -493,6 +494,7 @@ const SECTION_BY_ROUTE = {
   "/studyguides/": { name: "Study Guides", path: "/studyguides" },
   "/how-tos/": { name: "How-To Library", path: "/how-tos" },
   "/plans/": { name: "Care Plans", path: "/plans" },
+  "/tracks/": { name: "Tracks", path: "/tracks" },
   "/theology/doctrine/": { name: "Theology", path: "/theology" },
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
@@ -528,9 +530,20 @@ const HUB_LISTINGS = {
   "/start": { label: "Start where you are", cap: 40, load: () => {
     const d = readJsonSafe("client/src/lib/startRoad.json") || {};
     return [
-      ...(d.roads || []).flatMap((r) => (r.steps || []).map((x) => ({ title: `${r.chip}: ${x.title}`, href: x.href, blurb: x.line }))),
+      ...(d.roads || []).flatMap((r) => [
+        ...(r.track ? [{ title: `${r.chip}: the track, in ${r.track.sessions} sessions`, href: `/tracks/${r.track.slug}`, blurb: "Short sessions in order, about ten minutes each, with your place kept." }] : []),
+        ...(r.steps || []).map((x) => ({ title: `${r.chip}: ${x.title}`, href: x.href, blurb: x.line })),
+      ]),
       ...(d.next || []).map((x) => ({ title: x.link, href: x.href, blurb: x.lead })),
     ];
+  } },
+  // Every track on /tracks and each of its sessions, from the tracks index (scripts/build-tracks-index.mjs).
+  "/tracks": { label: "Tracks", cap: 120, load: () => {
+    const d = readJsonSafe("client/public/tracks/index.json") || {};
+    return (d.tracks || []).flatMap((t) => [
+      { title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle },
+      ...t.sessions.map((x) => ({ title: `Session ${x.n}: ${x.title}`, href: `/tracks/${t.slug}/${x.n}`, blurb: `About ${x.minutes} minutes. Opens: ${x.opens}.` })),
+    ]);
   } },
   // Every reading plan on /study/plans, opening the plan itself.
   "/study/plans": { label: "Bible reading plans", cap: 20, load: () => {
@@ -1541,7 +1554,10 @@ async function main() {
   let wrote = 0;
 
   // Static pages
-  for (const page of STATIC_PAGES) {
+  // Support this work (/support) is written beside the curated pages, since
+  // its noindex follows the giving switch (scripts/lib/giving.mjs) and a
+  // conditional noindex cannot be read from the page's own SEOMeta.
+  for (const page of [...STATIC_PAGES, SUPPORT_HEAD]) {
     const url = `${SITE_URL}${page.path}`;
     // The Christ-and-the-Nation pages (the flagship and the nation essays) get a
     // branded per-title Open Graph card, so a shared link unfurls as itself
@@ -1559,7 +1575,7 @@ async function main() {
       schemas: [...(page.schemas || []), ...(own?.schemas ?? [])],
       // The skeptic track says noindex while any stop is off the public shelf
       // (SKEPTIC_TRACK_LIVE in client/src/lib/skepticTrack.ts), as its page does.
-      noindex: page.path === "/skeptic-track" && !skepticTrackLive(),
+      noindex: (page.path === "/skeptic-track" && !skepticTrackLive()) || (page.path === SUPPORT_HEAD.path && supportNoindex()),
     });
     writeRoute(template, page, head, own?.html || hubListingHtml(page.path));
     wrote++;
@@ -1772,6 +1788,77 @@ async function main() {
     console.log(`[prerender] wrote ${answers.length} Honest Answer pages`);
   }
 
+  // The tracks (/tracks/:slug and /tracks/:slug/:n), from client/public/tracks.
+  // A track's head is its own title and subtitle, and its body the sessions
+  // in order. A session's body is the session as the page shows it: the
+  // teaching, the page it opens, the question, the thing to do, the verse,
+  // any care line, and the group guide.
+  {
+    const index = readJsonSafe("client/public/tracks/index.json");
+    let n = 0;
+    const linkLi = (l) => `<li><a href="${escapeHtml(l.href)}">${escapeHtml(l.label)}</a>: ${escapeHtml(l.why)}</li>`;
+    for (const brief of index?.tracks || []) {
+      const t = readJsonSafe(`client/public/tracks/${brief.slug}.json`);
+      if (!t) continue;
+      const total = t.sessions.length;
+      const route = `/tracks/${t.slug}`;
+      const crumbs = [{ name: "Home", path: "" }, SECTION_BY_ROUTE["/tracks/"], { name: t.title, path: route }];
+      // The page's one data file, asked for with the page (the same request its fetch makes).
+      const data = `\n    <link rel="preload" as="fetch" crossorigin="anonymous" href="/tracks/${t.slug}.json">`;
+      const title = `${t.title}: A Track in ${total} Sessions`;
+      writeRoute(
+        template,
+        { path: route },
+        buildHead({ title, description: t.subtitle, url: `${SITE_URL}${route}`, image: ogImageUrl(t.title), type: "article", schemas: [breadcrumbSchema(crumbs)] }) + data,
+        article([
+          `<p class="pre-eyebrow"><a href="/tracks">Tracks</a></p>`,
+          `<h1>${escapeHtml(t.title)}</h1>`,
+          `<p class="pre-subtitle">${escapeHtml(t.subtitle)}</p>`,
+          t.intro.map((x) => `<p>${escapeHtml(x)}</p>`).join("\n"),
+          sec(`The ${total} sessions`, `<ol>\n${t.sessions.map((x) => `<li><a href="${route}/${x.n}">${escapeHtml(x.title)}</a>: about ${x.minutes} minutes. Opens: ${escapeHtml(x.open.label)}.</li>`).join("\n")}\n</ol>`),
+        ]),
+      );
+      n++;
+      for (const x of t.sessions) {
+        const sRoute = `${route}/${x.n}`;
+        const sTitle = `${x.title}, Session ${x.n} of ${total}`;
+        const prev = t.sessions[x.n - 2];
+        const next = t.sessions[x.n];
+        writeRoute(
+          template,
+          { path: sRoute },
+          buildHead({
+            title: sTitle,
+            description: x.teaching[0].split(/(?<=[.?])\s/).slice(0, 2).join(" "),
+            url: `${SITE_URL}${sRoute}`,
+            image: ogImageUrl(x.title),
+            type: "article",
+            schemas: [breadcrumbSchema([...crumbs, { name: x.title, path: sRoute }])],
+          }) + data,
+          article([
+            `<p class="pre-eyebrow"><a href="${route}">${escapeHtml(t.title)}</a>, session ${x.n} of ${total}</p>`,
+            `<h1>${escapeHtml(x.title)}</h1>`,
+            x.teaching.map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+            (x.care || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+            sec("Then open this", `<ul>\n${[x.open, ...(x.also || [])].map(linkLi).join("\n")}\n</ul>`),
+            sec("One question", `<p>${escapeHtml(x.question)}</p>`),
+            sec("One thing to do", `<p>${escapeHtml(x.do)}</p>`),
+            sec("One verse to keep", `<blockquote><p>${escapeHtml(x.verse.text)}</p><p>${escapeHtml(x.verse.ref)}, Berean Standard Bible</p></blockquote>`),
+            sec("With a group", [`<p>${escapeHtml(x.group.open)}</p>`, `<ol>\n${x.group.discuss.map((q) => `<li>${escapeHtml(q)}</li>`).join("\n")}\n</ol>`, `<p>${escapeHtml(x.group.pray)}</p>`].join("\n")),
+            `<nav aria-label="Previous and next session"><ul>`,
+            prev ? `<li><a href="${route}/${prev.n}">Session ${prev.n}: ${escapeHtml(prev.title)}</a></li>` : "",
+            next ? `<li><a href="${route}/${next.n}">Session ${next.n}: ${escapeHtml(next.title)}</a></li>` : "",
+            `<li><a href="${route}">All ${total} sessions</a></li>`,
+            `</ul></nav>`,
+          ]),
+        );
+        n++;
+      }
+    }
+    wrote += n;
+    console.log(`[prerender] wrote ${n} track and session pages`);
+  }
+
   // A page per finished stop of the Bible Explorer (/study/explorer/:slug).
   // The head is the stop's own (its title, its line for older readers); the
   // body is the story at both reading levels, the verses, and the chapters.
@@ -1864,7 +1951,7 @@ async function main() {
   // head built from its own copy — the prerendered head is exactly what the
   // SPA renders client-side. Param routes, admin, thank-you flows, and
   // noindex pages are skipped; curated STATIC_PAGES above win on conflict.
-  const written = new Set(STATIC_PAGES.map((p) => p.path));
+  const written = new Set([...STATIC_PAGES, SUPPORT_HEAD].map((p) => p.path));
   const appSrc = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
   const importMap = {};
   // Two lazy forms are in use: the one-liner `lazy(() => import("./pages/X"))`
@@ -2190,6 +2277,8 @@ async function main() {
   if (shelfWrote) console.log(`[prerender] shelf: ${shelfWrote} essays written from the shelf (no database or static row)`);
 
   console.log(`[prerender] wrote ${wrote} per-route HTML files into ${DIST_DIR}`);
+  // llms.txt names the Support page only once giving is open; the committed file never does.
+  if (writeBuiltLlms(DIST_DIR)) console.log("[prerender] added the Support page to llms.txt (giving is open)");
 }
 
 /**

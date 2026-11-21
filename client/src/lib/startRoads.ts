@@ -31,6 +31,8 @@ export interface Road {
   /** One short line on the card. */
   note: string;
   plate: PlateName;
+  /** The track this road has become (client/public/tracks/<slug>.json), when it has one. */
+  track?: { slug: string; sessions: number };
   steps: RoadStep[];
 }
 

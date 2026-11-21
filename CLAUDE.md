@@ -721,14 +721,24 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   nav), /help, and every tool, all still registered in /tools.
   `client/src/lib/site-structure.test.ts` holds this shape. `taxonomy.ts` and
   `pillar-assignments.ts` still file content but no longer drive navigation.
-  No giving or Support page until James names who receives gifts.
+  The Support page is built and held (see "Support this work" below).
 - **Payments**: no membership (James, 2026-11-17). /membership redirects to
   /subscribe; the Stripe membership procedures and settings remain in the
-  code, unused by any page. No giving link anywhere. **Ebooks free (James,
+  code, unused by any page. No giving link anywhere while /support is held.
+  **Ebooks free (James,
   2026-11-18: "Everything free"; the seven naming the network "Hold them
   back")**: no ebook is sold; a free book's old thank-you address 301s to
   /downloads, the Stripe ebook code stays unused (checkout refuses), and a
   past buyer of a held book still downloads it after the Stripe check.
+- **Support this work, built and held (James, 2026-11-21: "let's do the
+  Bible Project way"; "gifts go to keep the work going"; "gifts go to me
+  personally")**: `/support` takes a one-time or monthly gift through Stripe
+  Checkout (`giving.status`, `giving.createCheckout` in both runtimes; one
+  check in `shared/giving.ts`; nothing stored). Gifts go to James personally
+  and are not tax-deductible, and the page says so. It is held, unlinked and
+  noindex, until `STRIPE_SECRET_KEY` is set in Vercel; then one switch opens
+  it, `open` in `client/src/lib/giving.json`, followed by
+  `pnpm run search:index`. `docs/work/elite/giving.md` has the steps.
 - **Outside the site (James, 2026-11-17)**: the Pastors Connection Network
   has no link, ask, or redirect here; `site-structure.test.ts` fails on a
   path redirect that leaves the site. No title or book count is stated
@@ -796,6 +806,20 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   `build-search-index.mjs` indexes every catalogue page. Bible's third room
   is How to study the Bible, as his map has it. `docs/work/elite/nav-audit.md`
   holds the audit and the ideas that wait for him.
+- **Tracks (2026-11-21; James, of the tools: "I want to make sure that
+  they're used ... tracks or like steps of discipleship")**: a track is a few numbered
+  sessions of about ten minutes (`client/public/tracks/<slug>.json`, index by
+  `build-tracks-index.mjs`, gate `validate-tracks.mjs`, rules in
+  `scripts/lib/tracks.mjs`). A session has its own short teaching, opens one
+  page the site already has, and ends with one question, one thing to do and
+  one verse, plus a group guide; it never copies the page it uses. That page
+  shows "Back to session 3 of 12" (`components/TrackReturnBar.tsx`, fixed in a
+  corner, kept for the sitting). Progress and answers stay on the device
+  (`livewell-progress-tracks-v1`). A road on /start that has become a track
+  names it in `startRoad.json` and offers it first; its steps stay. The first
+  is "New to faith, or coming back"; the other four roads and the book study
+  ("Deep in one") are listed on /tracks as not written.
+  `docs/work/elite/tracks.md` says how to write the next.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.

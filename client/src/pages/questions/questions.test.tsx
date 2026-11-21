@@ -4,8 +4,9 @@
  * the data loads in the shapes the pages expect; the room lists the plan's ten
  * areas, each linked, with its one line and its number of live pieces, and is
  * live (James, 2026-11-20: "publish all of this when ready"); every piece that
- * has had its second read is live, and the one piece still waiting (the
- * morality page on homosexuality, which waits for James's word) is pending; a live piece renders
+ * has had its second read is live, and since 2026-11-21 nothing in the
+ * committed library is pending (the pending cases below make their own
+ * pending piece by serving a changed manifest); a live piece renders
  * word for word with no review line and no noindex, its argument as a numbered
  * list with the weight-bearing step marked; a pending piece keeps noindex and
  * the review line and is listed on no live page; and nothing outside the
@@ -29,17 +30,21 @@ const PUBLIC = path.resolve(__dirname, "../../../public");
 const SRC = path.resolve(__dirname, "../..");
 const read = <T,>(rel: string) => JSON.parse(fs.readFileSync(path.join(PUBLIC, rel), "utf8")) as T;
 
-const diskFetch = (async (input: RequestInfo | URL) => {
+/** Serves the committed files; `manifest`, when given, stands in for index.json. */
+const diskFetch = (manifest?: QIndex) => (async (input: RequestInfo | URL) => {
   const url = new URL(String(input instanceof Request ? input.url : input), "http://localhost");
   const file = path.join(PUBLIC, decodeURIComponent(url.pathname));
+  if (manifest && url.pathname === "/questions/index.json") {
+    return new Response(JSON.stringify(manifest), { status: 200, headers: { "Content-Type": "application/json" } });
+  }
   if (url.pathname.startsWith("/questions/") && file.startsWith(PUBLIC) && fs.existsSync(file)) {
     return new Response(fs.readFileSync(file, "utf8"), { status: 200, headers: { "Content-Type": "application/json" } });
   }
   return new Response("{}", { status: 404, headers: { "Content-Type": "application/json" } });
 }) as typeof fetch;
 
-function at(address: string, ui: React.ReactNode) {
-  vi.stubGlobal("fetch", diskFetch);
+function at(address: string, ui: React.ReactNode, manifest?: QIndex) {
+  vi.stubGlobal("fetch", diskFetch(manifest));
   const { hook } = memoryLocation({ path: address, static: true });
   return renderWithProviders(<Router hook={hook}>{ui}</Router>);
 }
@@ -60,16 +65,22 @@ const evil = index.areas.find((a) => a.slug === "evil")!;
 const god = index.areas.find((a) => a.slug === "god")!;
 const morality = index.areas.find((a) => a.slug === "morality")!;
 const religions = index.areas.find((a) => a.slug === "religions")!;
-/** The one morality piece still pending: read twice, it waits for James's word on what it states. */
-const MORALITY_PENDING: string[] = ["what-the-bible-says-about-homosexuality"];
+/**
+ * No committed piece is pending (the last, the morality page on homosexuality,
+ * went live on James's word of 2026-11-21: "state my position on the page").
+ * The pending cases set one piece pending in a copy of the manifest.
+ */
+const SEEDED_PENDING = "is-christian-morality-a-product-of-its-culture";
+const withPending: QIndex = {
+  ...index,
+  areas: index.areas.map((a) => (a.slug !== "morality" ? a : { ...a, pieces: a.pieces.map((p) => (p.slug !== SEEDED_PENDING ? p : { ...p, status: "pending" as const, live: false })) })),
+};
 
 describe("the questions library's data", () => {
-  const PENDING: Record<string, string[]> = {
-    morality: MORALITY_PENDING,
-  };
-  const LIVE_COUNT: Record<string, number> = { god: 5, text: 9, authors: 10, contradictions: 5, jesus: 10, "old-testament": 10, science: 10, evil: 5, morality: 9, religions: 5 };
+  const PENDING: Record<string, string[]> = {};
+  const LIVE_COUNT: Record<string, number> = { god: 5, text: 9, authors: 10, contradictions: 5, jesus: 10, "old-testament": 10, science: 10, evil: 5, morality: 10, religions: 5 };
 
-  it("lists the plan's ten areas, all live, each with its line; only the one piece still waiting is pending", () => {
+  it("lists the plan's ten areas, all live, each with its line; all 79 pieces are live", () => {
     expect(index.areas.map((a) => a.n)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(index.roomLive).toBe(true);
     expect(index.areas.map((a) => a.slug)).toEqual(["god", "text", "authors", "contradictions", "jesus", "old-testament", "science", "evil", "morality", "religions"]);
@@ -81,6 +92,8 @@ describe("the questions library's data", () => {
       expect(a.pieces.filter((p) => p.live).length, a.slug).toBe(LIVE_COUNT[a.slug]);
       for (const p of a.pieces) expect(p.live, p.slug).toBe(p.status === "live");
     }
+    expect(index.areas.flatMap((a) => a.pieces).length).toBe(79);
+    expect(index.areas.flatMap((a) => a.pieces).filter((p) => p.live).length).toBe(79);
     expect(text.pieces.map((p) => p.slug)).toEqual(["more-variants-than-words", "copies-of-copies", "passages-not-in-the-earliest-bibles", "did-scribes-make-jesus-more-divine", "compared-with-other-ancient-books", "who-decides-what-the-text-says", "king-james-and-the-missing-verses", "lost-in-translation", "an-angry-jesus-mark-1-41"]);
   });
 
@@ -132,14 +145,27 @@ describe("the area", () => {
   });
 });
 
-describe("an area with a piece still pending", () => {
-  it("lists its live pieces and none of the pending ones", async () => {
+describe("the morality area", () => {
+  it("lists all ten of its pieces, the page on homosexuality among them", async () => {
     at("/questions/morality", <QuestionsArea />);
+    expect(await screen.findByRole("heading", { level: 1, name: morality.title })).toBeInTheDocument();
+    await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(10));
+    const listed = Array.from(document.querySelectorAll(".qx-pieces a")).map((a) => a.getAttribute("href"));
+    expect(listed).toEqual(morality.pieces.map((p) => `/questions/morality/${p.slug}`));
+    expect(listed).toContain("/questions/morality/what-the-bible-says-about-homosexuality");
+    expect(screen.queryByText(REVIEW_LINE)).toBeNull();
+    expect(robots()).not.toContain("noindex");
+  });
+});
+
+describe("an area with a piece still pending (seeded)", () => {
+  it("lists its live pieces and none of the pending ones", async () => {
+    at("/questions/morality", <QuestionsArea />, withPending);
     expect(await screen.findByRole("heading", { level: 1, name: morality.title })).toBeInTheDocument();
     await waitFor(() => expect(document.querySelectorAll(".qx-pieces a")).toHaveLength(9));
     const listed = Array.from(document.querySelectorAll(".qx-pieces a")).map((a) => a.getAttribute("href"));
-    expect(listed).toEqual(morality.pieces.filter((p) => p.live).map((p) => `/questions/morality/${p.slug}`));
-    for (const slug of MORALITY_PENDING) expect(listed).not.toContain(`/questions/morality/${slug}`);
+    expect(listed).toEqual(morality.pieces.filter((p) => p.slug !== SEEDED_PENDING).map((p) => `/questions/morality/${p.slug}`));
+    expect(listed).not.toContain(`/questions/morality/${SEEDED_PENDING}`);
     expect(screen.queryByText(REVIEW_LINE)).toBeNull();
     expect(robots()).not.toContain("noindex");
   });
@@ -171,9 +197,28 @@ describe("a piece", () => {
     expect(screen.getAllByRole("link", { name: /Mark 16/ }).map((a) => a.getAttribute("href"))).toContain("/study/bible/mark/16");
   });
 
-  it("pending: says noindex and carries the review line", async () => {
-    const pending = morality.pieces.find((p) => !p.live)!;
-    at(`/questions/morality/${pending.slug}`, <QuestionPiece />);
+  it("the page on homosexuality is live: no review line, no noindex, where the author lands before the closing care passage", async () => {
+    const slug = "what-the-bible-says-about-homosexuality";
+    const piece = read<QPiece>(`questions/morality/${slug}.json`);
+    at(`/questions/morality/${slug}`, <QuestionPiece />);
+    expect(await screen.findByRole("heading", { level: 1, name: piece.question })).toBeInTheDocument();
+    await waitFor(() => expect(document.querySelector(".qx-short")).not.toBeNull());
+    expect(screen.queryByText(REVIEW_LINE)).toBeNull();
+    expect(robots()).not.toContain("noindex");
+    const care = "If you are gay, or love someone who is, you are met with respect here.";
+    expect(piece.shortAnswer.startsWith(care)).toBe(true);
+    const differ = piece.sections.find((s) => s.role === "differ")!;
+    if (!("body" in differ)) throw new Error("no body");
+    const paras = differ.body.split("\n\n");
+    expect(paras[paras.length - 2].startsWith("The author of this site holds the historic teaching")).toBe(true);
+    expect(paras[paras.length - 1]).toContain(care);
+    expect(JSON.stringify(piece)).not.toMatch(/page takes no side|This page does the same/);
+  });
+
+  it("pending (seeded): says noindex and carries the review line", async () => {
+    const pending = withPending.areas.find((a) => a.slug === "morality")!.pieces.find((p) => !p.live)!;
+    expect(pending.slug).toBe(SEEDED_PENDING);
+    at(`/questions/morality/${pending.slug}`, <QuestionPiece />, withPending);
     expect(await screen.findByRole("heading", { level: 1, name: pending.question })).toBeInTheDocument();
     expect(await screen.findByText(REVIEW_LINE)).toBeInTheDocument();
     await waitFor(() => expect(robots()).toContain("noindex"));

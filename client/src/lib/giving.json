@@ -1,0 +1,6 @@
+{
+  "_about": "THE FACTS OF THE SUPPORT PAGE (/support). `open` is the one switch: false keeps the page held (unlinked, noindex, no gift can start); true publishes it. Turn it only after the Stripe key is set in Vercel. recipientLine and taxLine are James's answer of 2026-11-21 (\"gifts go to me personally\"). docs/work/elite/giving.md has the steps.",
+  "open": false,
+  "recipientLine": "Gifts go to James Bell personally, to keep the work of LiveWell going.",
+  "taxLine": "A gift is not tax-deductible."
+}

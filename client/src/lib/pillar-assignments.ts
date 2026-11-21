@@ -1718,5 +1718,55 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 3,
     "subThemes": [],
     "confidence": "high"
+  },
+  "should-christians-ever-go-to-war": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "can-a-christian-lose-their-salvation": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "do-the-gifts-of-the-spirit-still-happen": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-happens-to-people-who-never-hear-the-gospel": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "christianity-was-never-western": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-christianity-good-for-women": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-is-the-lords-supper": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-the-bible-reliable-enough-to-build-a-life-on": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-prayer-change-anything": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-are-there-so-many-denominations": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
   }
 };

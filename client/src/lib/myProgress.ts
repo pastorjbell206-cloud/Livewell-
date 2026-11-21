@@ -12,6 +12,7 @@ import { readMarks, readWalks } from "@/lib/bible-desk";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
 import { PLAN_PATH, readPlanDays, readerPlace } from "@/lib/storyPlan";
 import { toolById } from "@/lib/toolsList";
+import { nextSession, readTracks, sessionHref, trackHref, trackToContinue } from "@/lib/tracks";
 
 export interface ProgressRow {
   href: string;
@@ -190,6 +191,18 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
     rows.push({ href: r.href, title: r.label, kind: "Bible study", detail: parts.join(", "), when: r.when });
   }
 
+  // Tracks (lib/tracks, key livewell-progress-tracks-v1): the session the reader is on.
+  for (const [slug, t] of Object.entries(readTracks().tracks)) {
+    const next = nextSession(t);
+    rows.push({
+      href: next === null ? trackHref(slug) : sessionHref(slug, next),
+      title: t.title,
+      kind: "Track",
+      detail: next === null ? `All ${t.total} sessions done` : `Session ${next} of ${t.total} is next`,
+      when: t.at,
+    });
+  }
+
   // Read the whole story in 2027 (lib/storyPlan): the reader's place, never a count behind.
   const planDays = readPlanDays();
   if (planDays.size) {
@@ -239,7 +252,7 @@ const draftKey = (d: Draft) =>
 
 /**
  * The one thing on this device to continue, for Home: an eight-week plan not
- * yet walked through, or a self-check left part-way (answers saved after its
+ * yet walked through, a track not yet finished, or a self-check left part-way (answers saved after its
  * last finished result, or never finished). A self-check whose saved answers
  * are the ones its last result was taken from is finished, however recently
  * they were saved: opening the results again, or "Change my answers" and
@@ -267,6 +280,10 @@ export function continueHere(): ContinueItem | null {
     const finished = !!last && (last.date >= draft.savedAt || last.key === draftKey(draft));
     if (!finished) items.push({ href: SELF_CHECKS[id].href, label: continueLabel(SELF_CHECKS[id].title), when: draft.savedAt });
   }
+
+  // A track not yet finished (lib/tracks): its next session.
+  const track = trackToContinue();
+  if (track) items.push({ href: track.href, label: `your track at session ${track.n} of ${track.total}`, when: track.at });
 
   return items.sort((a, b) => b.when.localeCompare(a.when))[0] ?? null;
 }
