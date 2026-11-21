@@ -132,3 +132,29 @@ Written to agree with the live Honest Answer `is-hell-forever-or-does-it-end` (`
 | Scripture (ESV): Hebrews 9:27; Genesis 18:25; Jeremiah 7:31 (cited); Matthew 7:22-23, 10:28, 25:41, 25:46; Mark 9:48, 15:33; Revelation 14:11; 1 Timothy 2:4; 1 Corinthians 15:22, 15:28; Romans 6:23, 8:1; John 3:16; Jude 7; Colossians 1:20; Luke 16:26, 19:41, 23:34, 23:43 | ESV copy, by script | Words verified |
 
 Cut or held back: C. S. Lewis's two sentences and Volf's sentence (quoted in the Honest Answer; the books could not be opened here, so the essay leaves them to that page); Aquinas; any line of Edwards's sermon; any figure for what Christians today believe.
+
+## 5. can-a-christian-be-rich
+
+Written to agree with the live Honest Answer `what-does-the-bible-say-about-money` (wealth a real good, a serious danger, and a rival god; the prosperity teaching named as a distortion; the opposite pride named too). The three people in the opening paragraph are types.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| No ancient source mentions a Jerusalem gate called the Needle's Eye | Repo, Study Bible notes, `client/public/bible/notes/mark/10.json` | Site's own |
+| The rich fool's pronouns (my crops, my barns, my grain, my goods, my soul); nothing is charged against him or against the rich man of Luke 16 but keeping | ESV copy, Luke 12:16-20; 16:19-25 | Verified |
+| Zacchaeus gave half; women of means paid for Jesus' work; Joseph of Arimathea rich and a disciple | ESV copy, Luke 19:8-9; 8:3; Matthew 27:57 | Verified |
+| Acts 4:34 echoes the law of Moses | ESV copy, Deuteronomy 15:4 ("But there will be no poor among you") | Verified |
+| Clement of Alexandria, about 200, wrote for wealthy Christians troubled by Mark 10; the target is attachment | WD, Clement of Alexandria, *Who Is the Rich Man That Shall Be Saved?* (the ANF text, William Wilson's translation as the series prints it); the date not opened | Read; date reference knowledge |
+| "Riches, then, which benefit also our neighbours, are not to be thrown away" and "Such an instrument is wealth." | Same, ch. 14 | Verbatim |
+| Wesley told Methodists to gain all they can by honest industry and save all they can; "Having first gained all you can, and secondly saved all you can, then give all you can." | PG 68320, the sermon on the use of money, III.1 | Verbatim; the first two rules paraphrased from the same sermon |
+| Antony, around 270, rich by village standards, heard the rich man's story read and took it as spoken to him; monasticism followed | Repo, history course `the-desert-and-the-rule` | Site's own |
+| Chrysostom on the rich man and Lazarus: "that not to share our own riches with the poor is a robbery of the poor ... but also theirs." | WD, Chrysostom, *Four Discourses, Chiefly on the Parable of the Rich Man and Lazarus*, Discourse 2, translated by F. Allen (London: Longmans, 1869; title page read in the translator's introduction) | Verbatim |
+| The discourses were preached in Antioch in the fourth century | Not opened this run beyond the translator's preface | Reference knowledge |
+| Basil fed the starving in a famine and built a complex for the sick and poor outside Caesarea | WD, Gregory of Nazianzus, Oration 43, sections 34-36 and 63 (the NPNF text) | Verified |
+| Gregory: "Go forth a little way from the city, and behold the new city ... in consequence of his exhortations." | Same, section 63 | Verbatim (the sentence continues after "exhortations") |
+| The prosperity teaching arose in the last century; what it teaches | Not opened this run; described generally, no teacher or ministry named | Reference knowledge |
+| The apostles died poor | Not opened this run | Reference knowledge, stated generally |
+| John 12:6: the objection about the ointment came "not because he cared about the poor" | ESV copy | Verified |
+| Greed stands on the same lists as adultery | ESV copy, 1 Corinthians 6:9-10; Ephesians 5:5 (not quoted) | Verified |
+| Scripture (ESV): Mark 10:21-22, 10:25-27; Luke 6:24, 8:3, 19:9; Matthew 6:21, 6:24, 27:57; Acts 4:32, 4:34, 5:4; 1 Timothy 6:5, 6:9-10, 6:17-18; James 2:2-3 (cited), 5:1, 5:4; Philippians 4:12; 2 Corinthians 8:9; John 12:6; Proverbs 30:8-9 | ESV copy, by script | Words verified |
+
+Cut or held back: Basil's own sermons to the rich and on the barns (no printed public-domain translation could be opened; he appears only through Gregory's oration, which could); the better-known modern wording of Chrysostom ("theft from the poor"), which is from a translation still in copyright that could not be opened; Wesley's later sermons on the danger of riches; any name or date for the prosperity teaching's founders; any figure for world income.

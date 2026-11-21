@@ -12,6 +12,7 @@ export interface EssayOverrideMeta {
 }
 
 export const ESSAY_OVERRIDES: EssayOverrideMeta[] = [
+  {"slug":"can-a-christian-be-rich","title":"Can a Christian Be Rich?","excerpt":"Jesus said harder things about wealth than most churches repeat, the church has never agreed on how far those words reach, and both the prosperity preacher and his proudest critic have something to answer for.","updated":"2026-11-20T00:00:00.000Z"},
   {"slug":"can-you-be-good-without-god","title":"Can You Be Good Without God?","excerpt":"Unbelievers can be good, and the harder question is what makes anything good at all.","updated":"2026-11-17T00:00:00.000Z"},
   {"slug":"did-christianity-copy-pagan-myths","title":"Did Christianity Copy Pagan Myths?","excerpt":"The claim that the story of Jesus was copied from Horus, Mithras and other pagan gods is older than the internet, and it can be checked against the ancient sources it seldom cites.","updated":"2026-11-17T00:00:00.000Z"},
   {"slug":"did-god-choose-me-or-did-i-choose-god","title":"Did God Choose Me, or Did I Choose God?","excerpt":"Christians have argued for sixteen centuries over whether God chooses who will be saved or people freely choose him, and the churches that disagree about it still confess the same gospel.","updated":"2026-11-20T00:00:00.000Z"},
