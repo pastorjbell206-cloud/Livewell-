@@ -14006,3 +14006,18 @@ Cut for want of a source in the repository: that the ‘you’ of the blessing i
 | ‘Cut off’: three views, Milgrom, Leviticus 20:3; the warning falls on contempt | 1-14 | numbers/9.json `hard` | Repository; no side; the last sentence is a caution of these notes |
 | The cloud known from Exodus; the word eleven times, ‘at the LORD's command’ seven times; waiting as obedience (verse 19) | 15-23 | numbers/9.json `historical`, `literary`, `words` (H6051) | Repository |
 | Exodus 13:21; Nehemiah 9:19; Luke 9:35 | 15-23 | numbers/9.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 10 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Straight silver trumpets, not the shofar; Tutankhamun's trumpets; only priests blow them; God's remembering; teruah and Rosh Hashanah (29:1) | 1-10 | numbers/10.json `cultural`, `historical`, `words` (H2689, H8643, H2142) | Repository |
+| 2 Chronicles 5:12; 1 Thessalonians 4:16 | 1-10 | numbers/10.json `words`, `christ`; BSB | BSB text |
+| The hinge of the book; nearly a year at Sinai (Exodus 19:1); nineteen days after 1:1; Paran; the Levites in two groups | 11-28 | numbers/10.json `story`, `historical`, `literary` | Repository |
+| Deuteronomy 1:6 | 11-28 | BSB | BSB text |
+| Hobab: desert guides; the puzzle of Reuel, Jethro and Hobab (Exodus 2:18; 3:1; Judges 4:11; 1:16); the answer unrecorded | 29-36 | numbers/10.json `historical`, `cultural` | Repository |
+| The Song of the Ark and the scribes' marks; menuchah | 29-36 | numbers/10.json `literary`, `words` (H4496H) | Repository |
+| Psalm 68:1; Ephesians 4:8; Psalm 95:11; Hebrews 4:9; Matthew 11:28 | 29-36 | numbers/10.json `christ`; BSB | BSB text |
+| Why ask Hobab: two readings; the text does not criticize Moses | 29-36 | numbers/10.json `hard` | Repository; no side |
