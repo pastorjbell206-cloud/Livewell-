@@ -14738,3 +14738,19 @@ Cut in chapter 13: a sentence that the prophets wept over Jerusalem under this l
 | Must Christians tithe: the two views, no side | 22-29 | leviticus/plain/27.json 26-34 `hard` (the same wording) | Repository; no side |
 
 Cut in chapter 14: that later Jewish practice counted separate tithes (not in the repository's notes); the wording of 1 Kings 18:28 beyond three words, so that the rite is not described.
+
+## The plain notes on Deuteronomy 15 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Debt as the road into poverty; the royal decrees of Mesopotamia, the Babylonian edict of the seventeenth century BC; release fixed by law; shemittah, forgiven or suspended; the foreigner of verse 3; the heart and the hand; evyon six times; Hillel's prosbul | 1-11 | deuteronomy/15.json `historical`, `cultural`, `literary`, `words` (H8059, H0034, H6605A) | Repository |
+| Nehemiah 10:31; Luke 4:18-19; Acts 4:34; 1 John 3:17 | 1-11 | deuteronomy/15.json `historical`, `christ`; BSB | Repository; BSB text |
+| Verse 4 and verse 11 together; verse 11 as the reason for generosity; Matthew 26:11 and Mark 14:7; never an excuse for neglect | 1-11 | deuteronomy/15.json `hard`, `christ`; BSB | Repository; BSB text |
+| Exodus 21:2-6 and what Deuteronomy adds; the provision at release; Exodus 12:35-36; the pierced ear; chophshi | 12-18 | deuteronomy/15.json `cultural`, `words` (H2670); BSB | Repository; BSB text |
+| Exodus 21:2; Jeremiah 34:16; Leviticus 25:10 | 12-18 | deuteronomy/15.json `historical`; BSB | Repository; BSB text |
+| Servitude faced: what the law permitted (Leviticus 25:44-46, ‘That is in the text, and it cannot be explained away’), what it limited, the critics' answer; the pointer to the Exodus 21 note | 12-18 | exodus/plain/21.json 1-6 `hard` (the same sentences); deuteronomy/15.json `hard`; guides/reading-law.json | Repository; not defended |
+| The care line reused whole | 12-18 | exodus/plain/21.json and leviticus/plain/25.json (‘A word for anyone who is being held, owned or forced to work today...’) | Repository; word for word |
+| The firstborn as God's, from the exodus; not worked or shorn; eaten at the sanctuary; the blemished animal | 19-23 | deuteronomy/15.json `cultural` | Repository |
+| Exodus 13:2; Malachi 1:8 | 19-23 | BSB | BSB text |
