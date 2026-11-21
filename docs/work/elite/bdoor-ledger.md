@@ -13978,3 +13978,17 @@ Cut for want of a source in the repository: that the ‘you’ of the blessing i
 | 1 Kings 8:63; chanukkah, Hanukkah and 164 BC; John 10:22; Hebrews 10:12 | 12-83 | numbers/7.json `historical`, `words` (H2598), `christ`; BSB | Repository; BSB text |
 | Verse 89 as the goal; the ark, the cherubim, kapporet and the Day of Atonement | 84-89 | numbers/7.json `literary`, `words` (H3727) | Repository |
 | Exodus 25:22; hilasterion and Romans 3:25; Hebrews 1:2 | 84-89 | numbers/7.json `words`, `christ`; BSB | Repository; BSB text |
+
+## The plain notes on Numbers 8 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Why the lampstand comes first; one piece of hammered gold, almond blossoms (Exodus 25:31-40); the only light in a room without windows | 1-4 | numbers/8.json `story`, `historical`, `words` (H4501) | Repository |
+| The menorah as the sign of the Jewish people; AD 70 and the Arch of Titus | 1-4 | numbers/8.json `historical` | Repository |
+| 1 Kings 7:49; John 8:12; Revelation 1:12-13, 20 | 1-4 | numbers/8.json `christ`; BSB | BSB text |
+| The cleansing like that of Leviticus 14:8-9; hands laid on the Levites (Leviticus 1:4); the wave offering, unique for people; cleansed, not anointed (Leviticus 8:12) | 5-22 | numbers/8.json `cultural`, `words` (H8573, H5564, H2891) | Repository |
+| Romans 12:1; Acts 6:6 | 5-22 | numbers/8.json `christ`; BSB | BSB text |
+| The ages: twenty-five here, thirty in chapter 4, twenty under David (1 Chronicles 23:24-27); the two explanations | 23-26 | numbers/8.json `historical` | Repository; no side |
+| Psalm 71:9; Psalm 92:14 | 23-26 | BSB | BSB text |
