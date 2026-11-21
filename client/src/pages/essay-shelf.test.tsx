@@ -74,8 +74,8 @@ describe("/writing", () => {
     expect(screen.getByText("Start with this one")).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "The Mirror: How Sincere Believers Go Wrong" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 2, name: "Faith and Power: Christian Nationalism and Politics" })).toBeInTheDocument();
-    // Sections with nothing public yet stay hidden.
-    expect(screen.queryByRole("heading", { name: "The American Church: History and Reckoning" })).not.toBeInTheDocument();
+    // Every section now holds a public essay, so each one is shown.
+    expect(screen.getByRole("heading", { level: 2, name: "The American Church: History and Reckoning" })).toBeInTheDocument();
     // Pending essays are not listed.
     expect(screen.queryByText("What Christian Nationalism Is and What It Is Not")).not.toBeInTheDocument();
     expect(screen.getAllByText("When the Church Married Empire").length).toBeGreaterThan(0);
@@ -162,16 +162,18 @@ describe("/writing", () => {
     expect(screen.getByRole("link", { name: "All essays" })).toHaveAttribute("href", "/writing");
   });
 
-  it("lands old track links on the matching section, or says plainly when it is empty", () => {
+  it("lands old track links on the matching section", () => {
     vi.stubGlobal("fetch", vi.fn(offlineFetch()));
     at("/writing?track=politics");
     const first = renderWithProviders(<Writing />);
     expect(screen.getByRole("heading", { level: 1, name: "Faith and Power: Christian Nationalism and Politics" })).toBeInTheDocument();
     first.unmount();
 
+    // Every section now holds a public essay, so no track lands on an empty one.
     at("/writing?track=prophetic-justice");
     renderWithProviders(<Writing />);
-    expect(screen.getByText("Nothing on this part of the shelf yet.")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "The American Church: History and Reckoning" })).toBeInTheDocument();
+    expect(screen.queryByText("Nothing on this part of the shelf yet.")).not.toBeInTheDocument();
   });
 
   it("searches only the public shelf with ?q=", () => {

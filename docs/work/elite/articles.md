@@ -55,3 +55,67 @@ In the order run: `pnpm check` passed. The 46 commands of the CI content-gates s
 On the served build (`scripts/serve-like-vercel.mjs`, port 4655) at 390 and 1440: each essay's page shows its title as the H1 and its last paragraph, with no sideways scroll; all five are listed on /writing and found by /search; the only failed requests were the local server's missing `/_vercel` scripts and `/api/track`. Night could not be checked: the site's dark mode is switched off for every visitor (the note in `client/src/App.tsx` beside `ThemeProvider`), so the second pass rendered the same light page. Screenshots are in `/home/user/elite-shots/articles/`.
 
 The "Marriage, Family and Ordinary Faithfulness" section now shows on /writing for the first time, with one essay in it.
+
+---
+
+# Five more essays for the shelf (2026-11-21)
+
+James, 2026-11-20 and 21: "I want you to continue, especially the articles. I want them to be a lot more controversial and dealing with very difficult issues in a very balanced, intellectual, academic, historical, biblical way that is very easy to understand, easy to read, normal, common language that is semi-professional, that's in my tone style that you've been writing like." "keep going and publish when ready."
+
+## What was written
+
+| Essay | Address | Shelf section |
+|---|---|---|
+| What the Church Got Wrong About Race, and What Scripture Said All Along | /writing/what-the-church-got-wrong-about-race | The American Church: History and Reckoning |
+| Why Does God Let Children Suffer? | /writing/why-does-god-let-children-suffer | Doubt and Hard Questions |
+| Divorce, Remarriage and the Church | /writing/divorce-remarriage-and-the-church | Marriage, Family and Ordinary Faithfulness |
+| Can a Nation Be Christian? | /writing/can-a-nation-be-christian | Faith and Power |
+| Babies or Believers? Why Christians Baptize Differently | /writing/babies-or-believers-why-christians-baptize-differently | Reading the Bible in Its World |
+
+They were landed the way the first five were: a file in `client/public/essays/`, a `"live"` line in `client/src/lib/shelf.json`, a filing line in `client/src/lib/pillar-assignments.ts`, the essays index and the passage index rebuilt. No database row. Taking one down is the same four steps as before, with the counts in `client/src/lib/shelf.test.ts` lowered by one.
+
+**The fourth essay is not the one asked for by name.** "Was America Founded as a Christian Nation?" has been public on the shelf since 2026-11-17 under that exact title. A second essay with the same name would have duplicated it, so this run wrote its companion, "Can a Nation Be Christian?", which takes the parts of the brief the earlier essay treats briefly or not at all (the claim in its defenders' best form, the Puritan covenant idea and the election sermons, Roger Williams and the Baptist dissenters in their own printed words, slavery and the treatment of native peoples as the test, what Scripture means by a holy nation) and links to the earlier essay for the founding documents. The ledger says the same at the head of its section 9.
+
+**Every shelf section now shows on /writing.** The race essay is the first public essay in "The American Church: History and Reckoning", which was the last hidden section. The two tests that hold the shelf's shape used that section as their example of an empty one; they now count 75 essays and 25 live, list all eight sections, and check that an old `?track=prophetic-justice` link lands on the section. The page's "Nothing on this part of the shelf yet." line is still in the code and no longer has a real case to show it.
+
+Rules kept in all five: no memory, anecdote, conversation, feeling or first-person experience is given to James (there is no "I" outside quoted text); no church body is named or implied as his (in the baptism essay nothing says which practice his church keeps); on each second-order question the positions are set out and none is stated as his; the confessional floor is stated as confession; no party, candidate, modern law, court case or movement slogan is named; a crisis-adjacent passage keeps a path to help and reuses an existing care line whole. Older shelf essays do speak in the first person and name his tradition ("I pastor a Baptist church" in `why-didnt-the-bible-ban-slavery`; "Baptists, my own tradition" in `why-does-god-allow-suffering`); those were not touched.
+
+## The Revision Pass (CLAUDE.md), one line per pass
+
+**what-the-church-got-wrong-about-race.** Structure: opens on three readers who each hear the word differently and grants each what is true; reaches back past the 1840s to 1667, when baptism was ruled not to free a slave; gives the proslavery reading in its author's own words before taking Genesis 9 apart; two accounts of repair, each with its texts and its fear of the other; ends on the crowd of Revelation 7:9 and an open question. Rhythm: one sharp antithesis recast ("Its sharpest disappointment is kept for"); the short paragraph on the Black churches left as the one hard hinge of its movement. Words: forbidden list clean by literal search; Allen's walkout trimmed to what the site's history course says; the letter from Birmingham described and not quoted; "most of the white church" softened to "a great many white churches"; every quotation re-read against its source.
+
+**why-does-god-let-children-suffer.** Structure: opens in three places and not on any particular child; the care paragraph stands before any argument; Ivan's speech is given first and at its strength, and the believing brother is shown conceding the premise; five answers, each with the place it stops; what the Bible does not say comes before what it does; the limit of the Gospel raisings is stated; the church's own guilt toward children; the care lines again before the close; ends on a question Scripture leaves open. Rhythm: four "is not X. It is Y." pairs merged into single sentences, the architect line kept as the one verdict. Words: the gate caught "verdict" (rulebook leakage), changed to "ruling"; Matthew 18:14 cut as out of context; "a boy of three" corrected to "not yet three"; nothing is said about any child's fate.
+
+**divorce-remarriage-and-the-church.** Structure: opens on four people in one row and the skeptic's fair charge of inconsistency; safety lines before the argument; Deuteronomy and the two schools before Jesus, so that his answer is heard against Hillel's question; Catholic, Orthodox and Protestant readings each in its holders' terms, then what each fears; Basil's sentence about the beaten wife quoted so that it can be refused; the church's guilt in both directions; ends on God as the husband who was left. Rhythm: two antitheses merged; the abuse section keeps its one hard line ("Whether it is her sin to leave is not"). Words: "blessed" removed though used as a verb, so the literal search is clean; "deacon board" changed to "leadership" so no church order is implied; "headship" replaced with plain words; a sentence of advice to remarried readers cut.
+
+**can-a-nation-be-christian.** Structure: opens on the argument at the table and names the question under it, with three meanings of the phrase; the claim in the form its holders give it, from Winthrop through two election sermons, with their texts; the Christian dissenters in their own printed words; the test of fruits applied by Christians of the time (Hopkins, Jones and Allen, Douglass), the defenders' reply granted, then Amos 3:2; what Scripture calls a holy nation; ends on the hill as the church's and not the country's. Rhythm: "a stricter Calvinist than the men who banished him" (an overclaim and a flourish) replaced. Words: Washington's Newport letter cut because only quotation lists could be opened; John 18:36 quoted only in its first sentence; the Gnadenhutten count given as "some ninety" and flagged.
+
+**babies-or-believers-why-christians-baptize-differently.** Structure: opens on four people and shows how narrow the disputed ground is before the dispute; the texts with both readings beside each; the first four centuries, where each side finds itself; Zurich and the drownings as the church's guilt; the two cases at equal length, each with texts, a governing conviction and one confession; what each fears, in the reverse order; ends on Ephesians 4:5, which neither side can read comfortably. Rhythm: the two announcing sentences ("In its best form, in the words its own teachers use") replaced with plain ones. Words: "seventeen centuries" corrected to "eighteen"; details of Manz's death not on the site removed; the closing text changed so that no dash stands in it and neither side's favorite verse closes the essay.
+
+Final read as the skeptic, all five: each grants the strongest objection in its first movement, names the church's guilt in plain sentences with "we", and ends without asking for a decision. The second essay does not answer its title and says so.
+
+## Topics for a next run
+
+- "Is the Bible Reliable Enough to Build a Life On?" (the brief's reserve topic; the shelf already holds `why-trust-the-bible`, so it would need a distinct angle, such as the text's transmission and what a changed life can and cannot prove).
+- "What Happens to People Who Never Hear the Gospel?" (a live Honest Answer exists to agree with).
+- "Is Christianity Good for Women?" (history both ways; pairs with `should-women-preach`).
+- "Should Christians Ever Go to War?" (just war and Christian pacifism, each at strength; the first three centuries, Augustine, the Anabaptists).
+- "What Does the Bible Say About Sexuality, and Why Do Churches Now Disagree?" (the hardest of the list to do to this standard; it would need James's own decision on scope first).
+- "Can a Christian Lose Their Salvation?" and "Speaking in Tongues: Gift, Past or Present?" (second-order questions with a long documented history).
+
+## Questions for James
+
+1. The fourth essay: is the companion what you wanted, or do you want the existing "Was America Founded as a Christian Nation?" rewritten instead? If rewritten, should its first-person lines ("Preachers, and I'm one of them") stay?
+2. Race: the essay sets two accounts of what repair requires side by side and does not choose. Do you want your own view stated? And the shelf still holds two pending slots beside it (`where-church-was-silent-history-injustice-reckoning`, `black-church-prophetic-justice`): drop them, or write them as companions?
+3. Divorce: the essay does not say which grounds you hold or what you would tell a remarried reader. If you want either said, it should be in your words.
+4. Baptism: the essay takes no side and gives no hint of your church's practice. Older pages on the site do say it. Is the essay's silence what you want here?
+5. Children's suffering: the essay says nothing about what becomes of children who die. Many parents will come to it with exactly that question. If you want it addressed, it needs your own pastoral judgment.
+6. The ledger's "check first" rows (this machine could reach only GitHub): the 1667 Virginia law on baptism and slavery; the death of Dostoevsky's son in 1878; the Orthodox account of second marriages; the Gnadenhutten killings of 1782 and the Cherokee removal of 1838. Each is standard history, and none was read in a source this run.
+
+## Gates (2026-11-21, after merging the target branch)
+
+In the order run, every one read by its own exit code: `pnpm check` passed. The 46 commands of the CI content-gates step all passed on the first run (the passage index had been rebuilt before the merge: 60 chapter files written). `pnpm test` passed (1,940 tests; 73 skipped as the suite marks them). `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` and `pnpm run audit:canonicals` passed (0 canonical failures; the prerender wrote each of the five essays with its own title).
+
+On the served build (`scripts/serve-like-vercel.mjs`, port 4655) at 390 and 1440: each essay's page shows its title as the H1 and its last paragraph, with no sideways scroll; all five are listed on /writing and found by /search; the only failed requests were the local server's missing `/_vercel` scripts and `/api/track`. Night was not checked: the site's dark mode is switched off for every visitor. Screenshots are in `/home/user/elite-shots/articles/`.
+
+Before the full run, the two tests that hold the shelf's shape were updated for the new counts (75 essays, 25 live, eight sections shown). On their first run one assertion failed: the page's empty-section message, which no track link reaches now that every section holds an essay. That test was rewritten to check that the old link lands on the section, and both files passed.
