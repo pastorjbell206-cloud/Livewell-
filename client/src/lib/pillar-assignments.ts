@@ -1708,5 +1708,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "marriage-covenant"
     ],
     "confidence": "high"
+  },
+  "can-a-nation-be-christian": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
