@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: the-virgin-birth
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-first run", key "be"
 ---

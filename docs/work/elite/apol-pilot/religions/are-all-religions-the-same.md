@@ -1,7 +1,7 @@
 ---
 area: religions
 slug: are-all-religions-the-same
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Aren't all religions basically the same, different paths up one mountain to the same God?"
 ledger: docs/work/elite/apol-ledger.md, "Twentieth run", key "ax"
 ---

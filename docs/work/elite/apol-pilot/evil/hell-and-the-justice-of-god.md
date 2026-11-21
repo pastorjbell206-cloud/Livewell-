@@ -1,7 +1,7 @@
 ---
 area: evil
 slug: hell-and-the-justice-of-god
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?"
 ledger: docs/work/elite/apol-ledger.md, "Seventeenth run", key "am"
 ---

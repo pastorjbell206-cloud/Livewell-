@@ -1,6 +1,6 @@
 ---
 area: evil
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 ledger: docs/work/elite/apol-ledger.md, "Seventeenth run"
 ---
 

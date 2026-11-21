@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: abuse-and-cover-up
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?"
 ledger: docs/work/elite/apol-ledger.md, "Nineteenth run", key "av"
 ---

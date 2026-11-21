@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: authors
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 title: "Who wrote the Gospels and the New Testament, when, and who chose the books"
 proposed address: /questions/authors
 ---

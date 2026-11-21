@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: the-appearances-and-the-alternatives
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?"
 ledger: docs/work/elite/apol-ledger.md, "Fourteenth run", key "v"
 ---

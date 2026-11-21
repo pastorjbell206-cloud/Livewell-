@@ -1,6 +1,7 @@
 /**
  * /questions: the apologetics library's room (docs/work/elite/apol-library.md,
- * section 4). The plan's ten areas, each with the number of its pieces; an
+ * section 4). The plan's ten areas, each with one line saying what it holds
+ * and the number of its pieces; an
  * area with no piece to show is named as "being written", with no link.
  *
  * While no area is live the room itself is pending: it says noindex, carries
@@ -57,6 +58,7 @@ export default function QuestionsRoom() {
                   <>
                     <span className="qx-area__n">Area {a.n}</span>
                     <h3 className="qx-area__title">{a.title}</h3>
+                    {a.line && <p className="qx-area__line">{a.line}</p>}
                   </>
                 );
                 return (

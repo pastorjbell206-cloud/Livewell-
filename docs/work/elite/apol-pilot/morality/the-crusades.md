@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: the-crusades
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?"
 ledger: docs/work/elite/apol-ledger.md, "Nineteenth run", key "as"
 ---

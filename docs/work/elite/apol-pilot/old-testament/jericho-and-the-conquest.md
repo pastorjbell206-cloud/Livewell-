@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: jericho-and-the-conquest
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?"
 ledger: docs/work/elite/apol-ledger.md, "Sixteenth run", key "ae"
 ---

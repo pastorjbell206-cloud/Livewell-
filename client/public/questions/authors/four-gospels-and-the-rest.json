@@ -1,7 +1,7 @@
 {
   "area": "authors",
   "slug": "four-gospels-and-the-rest",
-  "status": "pending",
+  "status": "live",
   "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
   "ledger": {
     "file": "docs/work/elite/apol-ledger.md",

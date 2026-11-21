@@ -150,14 +150,16 @@ function answers() {
 
 /** The questions library's live pieces (scripts/lib/questions.mjs); a pending piece is never searched. */
 function questions() {
-  return loadQuestions(ROOT).areas.flatMap((a) =>
-    a.pieces.filter((p) => p.live).map((p) => ({
+  return loadQuestions(ROOT).areas.flatMap((a) => [
+    // A live area's own page, by its title and the line the room shows.
+    ...(a.live && a.page ? [{ title: str(a.title), blurb: str(a.line || ""), keywords: "case for the faith apologetics", href: `/questions/${a.slug}` }] : []),
+    ...a.pieces.filter((p) => p.live).map((p) => ({
       title: str(p.question),
       blurb: clip(p.shortAnswer),
       keywords: `${str(a.title)} ${(p.claims || []).map((c) => str(c.claim)).join(" ")}`.trim(),
       href: `/questions/${a.slug}/${p.slug}`,
-    }))
-  );
+    })),
+  ]);
 }
 
 /**
@@ -466,13 +468,15 @@ export function buildSearchIndex() {
     sources: [
       source("Main Pages", "/", [...mainPages(), ...worlds()]),
       source("Honest Answers", "/answers", answers()),
-      // Only once a piece is live, so a pending library leaves the index as it was.
-      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),
       source("Doctrine", "/study/bible/doctrines", doctrines()),
       source("Compare the Views", "/theology/compare", debatedDoctrines()),
       source("Church History", "/theology/history", history()),
+      // The library's live areas and pieces (a pending one is never indexed). After
+      // the nation essays and church history, so that on a tie a search for a
+      // council or for the Christian-nation question still opens the page it did.
+      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Family Devotions", "/family/devotions", [...devotions(), ...seasonal()]),
       source("Family Catechism", "/family/catechism", catechism()),
       source("What the Bible Says", "/wisdom", [...wisdom(), ...wisdomDeep()]),

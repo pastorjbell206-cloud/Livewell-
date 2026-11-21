@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: four-gospels-and-the-rest
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?"
 ledger: docs/work/elite/apol-ledger.md, "Twelfth run", key "m"
 ---

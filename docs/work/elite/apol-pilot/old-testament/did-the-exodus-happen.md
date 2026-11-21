@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: did-the-exodus-happen
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?"
 ledger: docs/work/elite/apol-ledger.md, "Sixteenth run", key "ad"
 ---

@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: did-jesus-predict-the-end-within-a-generation
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-first run", key "bf"
 ---

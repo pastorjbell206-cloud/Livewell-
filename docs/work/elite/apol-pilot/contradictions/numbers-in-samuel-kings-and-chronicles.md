@@ -1,7 +1,7 @@
 ---
 area: contradictions
 slug: numbers-in-samuel-kings-and-chronicles
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?"
 ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "ac"
 ---
