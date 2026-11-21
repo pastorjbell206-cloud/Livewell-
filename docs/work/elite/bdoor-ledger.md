@@ -14319,3 +14319,17 @@ Cut for want of a source in the repository: that ‘How lovely are your tents’
 | Deuteronomy 34:9; 1 Timothy 4:14; Hebrews 4:8 | 18-23 | numbers/27.json `christ`, `words`; BSB | BSB text |
 
 Cut for want of a source in the repository: a contrast between ‘hand’ and ‘hands’ in the Hebrew of verses 18 and 23.
+
+## The plain notes on Numbers 28 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| One calendar in two chapters; what the priests offer for the nation; an act of hope; the Tamid; the burnt offering burned whole | 1-8 | numbers/28.json `story`, `literary`, `words` (H8548, H5930A) | Repository |
+| Meals for the gods in Mesopotamia and Egypt; no image in Israel; Psalm 50:12; the language of fellowship | 1-8 | numbers/28.json `cultural`; leviticus/intro.json teaching | Repository |
+| Psalm 141:2; Genesis 8:21; Ephesians 5:2; AD 70 and Jewish worship reshaped around prayer | 1-8 | numbers/28.json `historical`, `words` (H5207); BSB | Repository; BSB text |
+| ‘In addition to the regular burnt offering’; the layers of the calendar; lunar months; trumpets at the new moon (10:10); amounts scaled to the animal | 9-15 | numbers/28.json `literary`, `historical`, `cultural` | Repository |
+| Isaiah 66:23; Colossians 2:16-17 | 9-15 | BSB | BSB text |
+| Nisan; the Feast of Weeks at the end of the grain harvest; Pentecost; a goat for atonement at each feast (verse 22) | 16-31 | numbers/28.json `historical`, `christ`; BSB | Repository; BSB text |
+| 1 Corinthians 5:7; Acts 2:1; Hebrews 10:11-12; Passover and Shavuot kept today | 16-31 | numbers/28.json `christ`; guides/calendar-and-festivals.json; leviticus/plain/23.json | Repository; BSB text |
