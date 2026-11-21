@@ -13707,3 +13707,28 @@ Cut before publishing: the meaning of the burning in verse 9 (interpreters diffe
 | Deuteronomy 22:7; Proverbs 12:10; Ezekiel 36:23; Matthew 6:9 | 26-33 | leviticus/22.json `cultural`, `christ`; BSB | BSB text |
 
 Cut before publishing: nothing of substance. The slave of verse 11 is named plainly, with the statement that these notes do not defend slavery and a pointer to chapter 25.
+
+## The plain notes on Leviticus 23 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Mo'ed, appointed time, related to the Tent of Meeting; God's appointments; ‘sacred assembly’ eleven times | 1-8 | leviticus/23.json `words` (H4150H, H4744) | Repository |
+| The Sabbath first; the number seven through the chapter; lunar months; the first month in March or April | 1-8 | leviticus/23.json `literary`, `historical` | Repository |
+| Passover and unleavened bread join memory and harvest | 1-8 | leviticus/23.json `cultural` | Repository |
+| The Sabbath today: pointer to Exodus 16:22-30 | 1-8 | exodus/plain/16.json | Repository; no side |
+| Exodus 12:14; Mark 2:27; 1 Corinthians 5:7; Passover the Jewish people's own remembrance | 1-8 | exodus/intro.json `teaching` (passover); BSB | BSB text |
+| The first sheaf and trust for the rest; two leavened loaves as daily bread; Pentecost, ‘fiftieth’ | 9-22 | leviticus/23.json `cultural`, `words` (H1061) | Repository |
+| Verse 22 repeats the gleaning law so that the feast does not forget the poor | 9-22 | leviticus/23.json `cultural` | Repository |
+| Pharisees and Sadducees on ‘the day after the Sabbath’ | 9-22 | leviticus/23.json `historical` | Repository; no side |
+| Shavuot later linked with the giving of the law | 9-22 | exodus/intro.json `teaching` (readers) | Repository |
+| Ruth 2:15; Acts 2:1; 1 Corinthians 15:20 and the first sheaf, a link the Gospels do not draw | 9-22 | leviticus/23.json `christ`; BSB | BSB text |
+| The seventh month, September or October; the first day later Rosh Hashanah, though the text says only rest and trumpets | 23-32 | leviticus/23.json `historical` | Repository |
+| The people's part on the Day of Atonement; fasting; evening to evening; Yom Kippur kept still | 23-32 | leviticus/16.json `cultural`, `story` | Repository |
+| Leviticus 16:30; Hebrews 4:9; the trumpets and Christ's return as a link of theme only | 23-32 | leviticus/23.json `christ`; BSB | BSB text |
+| Booths: sukkah, Sukkot; barns full, flimsy shelter, the wilderness remembered; the citron, palm, myrtle and willow | 33-44 | leviticus/23.json `cultural`, `words` (H5521) | Repository |
+| Whether Christians keep the feasts: most churches; Easter and Pentecost; those who keep them, not as a condition of acceptance | 33-44 | leviticus/23.json `hard` | Repository; no side |
+| Nehemiah 8:17; Deuteronomy 16:14; John 7:37; Colossians 2:17 and ‘a shadow is real’ | 33-44 | leviticus/23.json `historical`, `christ`; colossians/plain/2.json (16-19); BSB | BSB text |
+
+Cut before publishing: the Gezer tablet (on the book page's timeline); a statement that Jewish families build booths ‘every year to this day’ rests on the deep note's ‘Jewish communities, of course, continue to keep these feasts’.
