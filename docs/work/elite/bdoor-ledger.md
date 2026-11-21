@@ -14434,3 +14434,20 @@ Cut for want of a source in the repository: a reason for the killing of the boys
 | 1 Kings 8:65; Deuteronomy 19:14; Romans 4:13; Hebrews 11:16 | 1-15 | numbers/34.json `historical`, `cultural`, `christ`; BSB | BSB text |
 | Priest and leader at the head; one leader from each tribe; a new generation, with Caleb alone from the old; names with el; the order from south to north | 16-29 | numbers/34.json `cultural`, `literary`, `story` | Repository |
 | Joshua 14:1; Matthew 5:5 | 16-29 | numbers/34.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 35 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Levites counted apart (26:62); towns from every tribe in proportion; scattered by design; the two measurements; Joshua 21 and the debate about its date | 1-8 | numbers/35.json `story`, `historical`, `literary` | Repository |
+| Genesis 49:7; Deuteronomy 33:10; Joshua 21:3 | 1-8 | BSB | BSB text |
+| No police; the avenger of blood, the go'el; the cities limit the system; no one dies before trial; the foreigner covered; the six named (Joshua 20:7-8), all Levite towns; miqlat | 9-15 | numbers/35.json `historical`, `cultural`, `words` (H4733, H1350H); BSB | Repository; BSB text |
+| Exodus 21:13; Psalm 46:1; Hebrews 6:18; the cities as a picture of Christ only as a later likeness | 9-15 | numbers/35.json `story`, `christ`; BSB | Repository; BSB text |
+| Ratsach in both senses; the evidence weighed (weapon, hostility, intent); the assembly decides; the stay until the high priest's death and how interpreters read it | 16-29 | numbers/35.json `cultural`, `literary`, `words` (H7523) | Repository |
+| Deuteronomy 19:5; Hebrews 6:20 | 16-29 | BSB | BSB text |
+| The death penalty: Israel's law with its protections; the two Christian positions (Genesis 9:6; Romans 13:4; Genesis 4:15); no side | 16-29 | genesis/plain/9.json 1-7 `hard` | Repository; worded as the Genesis 9 note; no side |
+| No revenge permitted to any family or person today | 16-29 | The run's content rule | A caution of these notes |
+| More than one witness; no ransom, against the Hittite laws; life in God's image (Genesis 9:6); chanaph, to pollute; ‘where I dwell’ and chapter 5 | 30-34 | numbers/35.json `cultural`, `literary`, `words` (H2610) | Repository |
+| Genesis 4:10; Matthew 5:22; Hebrews 12:24 | 30-34 | numbers/35.json `christ`; BSB | BSB text |
