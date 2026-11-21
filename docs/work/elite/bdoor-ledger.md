@@ -14096,3 +14096,22 @@ Cut: Job and Jeremiah as others who asked to die, which no note in the repositor
 | Care lines for anyone afraid of having fallen away | 26-38 | hebrews/plain/3.json 12-15 `hard`; galatians/plain/5.json 1-6 `hard` | Reused whole, word for word |
 | The last reversal; verse 25 against verse 40; the ark did not move; Amorites (Deuteronomy 1:44); Amalekites (Exodus 17:8); Hormah | 39-45 | numbers/14.json `literary`, `historical` | Repository |
 | Deuteronomy 1:44-45; 2 Corinthians 7:10 | 39-45 | BSB | BSB text |
+
+## The plain notes on Numbers 15 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘After you enter the land’ as a promise after chapter 14; grain, oil and wine as Canaan's crops; ‘for the generations to come’; the foreigner four times | 1-21 | numbers/15.json `story`, `historical`, `literary` | Repository |
+| Romans 11:16; Ephesians 2:19 | 1-21 | numbers/15.json `christ`; BSB | BSB text |
+| Shegagah, seven times; forgiveness promised three times; the raised hand as settled contempt; ‘cut off’ and its readings | 22-31 | numbers/15.json `cultural`, `words` (H7684, H5545) | Repository |
+| Kadesh as defiance, and the pardon of 14:20 beside this law | 22-31 | numbers/14.json; BSB | BSB text; stated as an observation from the text |
+| Hebrews 5:2; 10:26; Acts 3:17 | 22-31 | numbers/15.json `christ`; BSB | BSB text |
+| A knowing sin is not beyond forgiveness: David (Psalm 51:16; 2 Samuel 12:13); Peter | 22-31 | BSB | BSB text |
+| Care lines for a conscience that never rests | 22-31 | ephesians/plain/5.json 1-7 `hard` | Reused whole, word for word |
+| The Sabbath-breaker: placement after the law on defiance; Exodus 16; 31:13-15; 35:3; the covenant sign; the restraint; still hard | 32-36 | numbers/15.json `hard`, `cultural`, `literary` | Repository |
+| Mark 2:27-28; Colossians 2:16-17 | 32-36 | numbers/15.json `hard`; BSB | BSB text |
+| Israel's penalties not carried into the church (1 Corinthians 5); the Christian views of the Sabbath; no pattern for punishment | 32-36 | numbers/15.json `hard`; doctrines/sabbath.json `differ` | Repository; no side |
+| Hems and identity (1 Samuel 24); the blue of the sanctuary and the sea-snail dye; tur and the scouts; tzitzit; the third paragraph of the Shema | 37-41 | numbers/15.json `cultural`, `words` (H8446, H6734) | Repository |
+| Matthew 9:20; 23:5 | 37-41 | numbers/15.json `christ`; BSB | BSB text |
