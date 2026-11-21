@@ -32,9 +32,9 @@ function vocabulary(items: Searchable[]): Map<string, number> {
   if (cached) return cached;
   const vocab = new Map<string, number>();
   for (const it of items) {
-    for (const w of new Set(normalizeText(`${it.title} ${it.keywords ?? ""}`).split(" "))) {
+    new Set(normalizeText(`${it.title} ${it.keywords ?? ""}`).split(" ")).forEach((w) => {
       if (w.length >= 4 && !/\d/.test(w)) vocab.set(w, (vocab.get(w) ?? 0) + 1);
-    }
+    });
   }
   vocabOf.set(items, vocab);
   return vocab;
@@ -47,15 +47,15 @@ function mendWord(w: string, vocab: Map<string, number>): string {
   let best = w;
   let bestD = max + 1;
   let bestN = 0;
-  for (const [cand, n] of vocab) {
-    if (Math.abs(cand.length - w.length) > max || cand[0] !== w[0]) continue;
+  vocab.forEach((n, cand) => {
+    if (Math.abs(cand.length - w.length) > max || cand[0] !== w[0]) return;
     const d = editDistance(w, cand, max);
     if (d < bestD || (d === bestD && n > bestN)) {
       best = cand;
       bestD = d;
       bestN = n;
     }
-  }
+  });
   return bestD <= max ? best : w;
 }
 

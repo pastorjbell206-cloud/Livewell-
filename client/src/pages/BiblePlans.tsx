@@ -26,8 +26,10 @@ import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import SectionHead from "@/components/art/SectionHead";
+import IconTile from "@/components/art/IconTile";
 import { readStoredJSON, isArrayOf } from "@/lib/storage";
-import { readPlanStarts } from "@/lib/familyPlans";
+import { planDayOn, readPlanStarts } from "@/lib/familyPlans";
+import { PLAN_DAYS, PLAN_PATH, readPlanDays, readerPlace } from "@/lib/storyPlan";
 import READING from "@/data/bible-reading-plans.json";
 import "./home/home.css";
 import "./plans.css";
@@ -176,10 +178,54 @@ function useStarted(): Record<string, string> {
   }, []);
 }
 
+/** Today on the reader's own calendar, as YYYY-MM-DD (the form lib/familyPlans keeps a plan's start in). */
+function localISODate(d: Date = new Date()): string {
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
+
+/** A plan begun on this device: where the reader is in it, and the address that opens on that day. */
+export interface PlanGoing {
+  id: string;
+  title: string;
+  /** "Day 12 of 30", "Day 40 is next, 39 of 365 read": the place, never a count of days missed. */
+  place: string;
+  href: string;
+}
+
+/**
+ * The plans this device has begun, each with the reader's place, read from
+ * what the plans themselves keep (lib/storyPlan, lib/familyPlans, the Study
+ * Bible's own list of chapters read) through lib/storage. Nothing is written
+ * here and nothing leaves the device.
+ */
+export function plansGoing(today: string = localISODate()): PlanGoing[] {
+  const out: PlanGoing[] = [];
+  const year = readPlanDays();
+  if (year.size) {
+    const next = readerPlace(year);
+    out.push({
+      id: "whole-story-2027",
+      title: "The Bible in a year, 2027",
+      place: next ? `Day ${next} is next, ${year.size} of ${PLAN_DAYS} read` : `All ${PLAN_DAYS} days read`,
+      href: next ? `${PLAN_PATH}?day=${next}` : PLAN_PATH,
+    });
+  }
+  const starts = readPlanStarts().starts;
+  for (const p of FAMILY_PLANS) {
+    const at = starts[p.id] ? planDayOn(starts[p.id], today, p.days) : null;
+    if (at) out.push({ id: p.id, title: p.title, place: at.finished ? `All ${p.days} days` : `Day ${at.day} of ${p.days}`, href: "/family/reading-plans" });
+  }
+  const chapters = readStoredJSON<string[]>("livewell-progress-bible", isArrayOf((x): x is string => typeof x === "string"), []);
+  if (chapters.length) out.push({ id: "story", title: "The Bible's story", place: `${chapters.length} ${chapters.length === 1 ? "chapter" : "chapters"} read`, href: "/study/bible/story" });
+  return out;
+}
+
 export default function BiblePlans() {
   const [who, setWho] = useState<Who | null>(null);
   const [size, setSize] = useState<Size | null>(null);
   const started = useStarted();
+  const going = useMemo(() => plansGoing(), []);
   const shown = PLANS.filter((p) => (who === null || p.who === who) && (size === null || sizeOf(p) === size));
 
   return (
@@ -197,6 +243,22 @@ export default function BiblePlans() {
         line="Pick one by how long you have and who is reading."
         plate="sundial"
       />
+
+      {/* PICK UP WHERE YOU LEFT OFF: only when this device has begun a plan. */}
+      {going.length > 0 && (
+        <section className="home-sec bp-sec" aria-labelledby="bp-going-title">
+          <div className="home-wrap">
+            <SectionHead icon={CalendarDays} label="On this device" title="Pick up where you left off." id="bp-going-title" />
+            <ul className="lw-tiles">
+              {going.map((g) => (
+                <li key={g.id}>
+                  <IconTile href={g.href} icon={ArrowRight} name={`Continue: ${g.title}`} line={g.place} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <section className="home-sec home-sec--warm bp-sec" aria-labelledby="bp-title">
         <div className="home-wrap">
