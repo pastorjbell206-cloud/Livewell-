@@ -13286,3 +13286,25 @@ Cut before publishing: a reason why birds are not listed (the deep note gives no
 | Psalm 32:5; Psalm 130:3-4; Romans 8:3 and the Greek phrase | 27-35 | leviticus/4.json `christ`; BSB | BSB text |
 
 Cut before publishing: the horned altar found at Beersheba and the fugitive at the altar (true to the deep note, a detour here); 2 Corinthians 5:21, on which the deep note says interpreters differ; a newly worded care sentence, replaced by the Hebrews 10 line used whole.
+
+## The plain notes on Leviticus 5 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The same offering, now by situation; the public curse on a silent witness; Judges 17:2; village justice | 1-6 | leviticus/5.json `story`, `historical` | Repository |
+| Uncleanness from a carcass not sinful in itself; the fault is neglect (11:24-28) | 1-6 | guides/offerings-and-purity.json (‘What was sinful was to ignore it’); BSB | Repository |
+| Confession required; the offering follows the admission; yadah as confess and praise | 1-6 | leviticus/5.json `doctrines` (repentance), `words` (H3034) | Repository |
+| Proverbs 29:24; 28:13; Psalm 32:3; 1 John 1:9 | 1-6 | leviticus/5.json `historical`, `christ`; BSB | BSB text |
+| The sliding scale and real poverty; cheap birds; a tenth of an ephah, about two liters; no oil or frankincense; burned on top of the other offerings | 7-13 | leviticus/5.json `cultural` | Repository |
+| The same promise at each level; atonement not a privilege of the wealthy | 7-13 | leviticus/5.json `literary`, `doctrines` (atonement) | Repository |
+| Luke 2:24; Hebrews 9:22 and ‘nearly’; Luke 21:3 | 7-13 | leviticus/5.json `christ`; guides/offerings-and-purity.json; BSB | BSB text |
+| Asham: guilt, penalty, offering; the reparation offering | 14-19 | leviticus/5.json `words` (H0817) | Repository |
+| The holy things; a breach of trust; maal used of marital unfaithfulness; repayment plus a fifth; forgiveness through repayment | 14-19 | leviticus/5.json `cultural`, `words` (H4604) | Repository |
+| The shekel a weight, not a coin; the sanctuary's standard weight | 14-19 | leviticus/5.json `historical` | Repository |
+| Isaiah 53:10; Mark 10:45 (‘many scholars hear an echo’); Malachi 3:8 | 14-19 | leviticus/5.json `christ`; BSB | BSB text |
+| Guilt without knowledge: liability; the driver and the fence; the two readings (objective guilt; Milgrom, ‘feels guilty’) | 14-19 | leviticus/5.json `hard` | Repository; no side |
+| ‘If you are a person whose conscience never rests ... places to turn.’ | 14-19 | 2-corinthians/plain/13.json (5-10 `hard`), word for word, with the book's name added to its pointer (‘The note on 2 Corinthians 7:8-12’) so that the pointer stays true outside that letter | Repository |
+
+Cut before publishing: the Philistines' guilt offering of gold (1 Samuel 6:3) and the date of the first coins (true to the deep note, detours here); a lead-in sentence to the care line.
