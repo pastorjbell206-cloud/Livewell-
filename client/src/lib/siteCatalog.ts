@@ -8,7 +8,9 @@
  * section): seven doors, six rooms or fewer in each. A room is listed only
  * when its page exists; where a planned room has no page yet it points at the
  * best page there is, under a name that is true of that page
- * (docs/work/elite/map.md lists each choice).
+ * (docs/work/elite/map.md lists each choice). A door's own page lists its
+ * rooms and everything inside them from this file (components/art/DoorInside),
+ * so "Everything in <door>" is complete without a second typed list.
  *
  * Kept static and free of imports beyond types, so the header paints in full
  * before any API call answers (the first-paint contract in CLAUDE.md).
@@ -64,7 +66,8 @@ export type IconName =
   | "LayoutGrid"
   | "FileText"
   | "Globe"
-  | "Smartphone";
+  | "Smartphone"
+  | "Clapperboard";
 
 export interface CatalogCount {
   n: number;
@@ -119,15 +122,18 @@ export const DOORS: Door[] = [
       },
       { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },
       {
-        id: "bible.guides", name: "Guides to reading the Bible", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" },
+        id: "bible.how-to-study", name: "How to study the Bible", line: "Seven steps for studying a passage, in order.", href: "/study/how-to-study", icon: "Milestone",
         inside: [
-          { id: "bible.how-to-study", name: "How to study the Bible", line: "Seven steps for studying a passage, in order.", href: "/study/how-to-study", icon: "Search" },
+          { id: "bible.guides", name: "Guides to reading the Bible", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" } },
         ],
       },
       {
         id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" },
         inside: [
           { id: "bible.explorer", name: "Bible Explorer", line: "The Bible's story on one illustrated map, for ages 7 to 16.", href: "/study/explorer", icon: "Map" },
+          { id: "bible.explorer-watch", name: "Watch and learn", line: "Short moving pictures on the Bible's story, its big ideas and good questions.", href: "/study/explorer#watch", icon: "Clapperboard" },
+          { id: "bible.abrahams-road", name: "Abraham's road", line: "A map of Genesis that draws itself, place by place.", href: "/study/explorer/abrahams-road", icon: "Route" },
+          { id: "bible.pauls-travels", name: "Paul's travels", line: "A map of Acts that draws itself: three trips and the voyage to Rome.", href: "/study/explorer/pauls-travels", icon: "Route" },
         ],
       },
       { id: "bible.background", name: "Bible background", line: "The world the Bible was written in: its places, peoples and customs.", href: "/resources/context", icon: "Map", count: { n: 41, of: "guides" } },
