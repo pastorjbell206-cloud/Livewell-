@@ -142,6 +142,8 @@ describe("WisdomFinder", () => {
     expect(details.querySelector("summary")?.textContent).toBe("Or look by subject");
     details.open = true;
     const byId = new Map(finder.topics.map((t) => [t.id, t]));
+    // The areas arrive with the finder data, a moment after the page's own text.
+    await waitFor(() => expect(details.querySelectorAll("button.wf-browse__area").length).toBeGreaterThan(0));
     const buttons = Array.from(details.querySelectorAll<HTMLButtonElement>("button.wf-browse__area"));
     // One button per area, the same areas the chips use, counted from the data.
     expect(buttons.length).toBe(finder.areas.length);
