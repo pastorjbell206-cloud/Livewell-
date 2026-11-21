@@ -13751,3 +13751,30 @@ Cut before publishing: the Gezer tablet (on the book page's timeline); a stateme
 | The three places; Deuteronomy 19:18; Matthew 5:38-39 and what Jesus does with it | 17-23 | exodus/plain/21.json (22-27 `later`), the wording reused; BSB | BSB text |
 
 Cut before publishing: the Arch of Titus; the mother's name and tribe. The sentence that no one may use this passage to justify harming a person for what they say or believe about God is new; it rests on the deep note's ‘not a model for the church or for modern states’.
+
+## The plain notes on Leviticus 25 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Six years and a seventh; an act of trust (verses 20-22); the yield for all alike; the land God's | 1-7 | leviticus/25.json `literary`; BSB | Repository |
+| Exodus 23:11; 2 Chronicles 36:21 | 1-7 | leviticus/25.json `historical`; BSB | BSB text |
+| Yovel, the ram's horn; deror and the Akkadian release; royal releases at the start of a reign; Israel's release fixed in the calendar | 8-22 | leviticus/25.json `words` (H3104, H1865), `historical` | Repository |
+| The Jubilee begins on the Day of Atonement; land leased by harvests, not sold | 8-22 | leviticus/25.json `words`, `cultural` | Repository |
+| Whether the Jubilee was kept: no clear record; the two scholarly views; the Liberty Bell | 8-22 | leviticus/25.json `historical` | Repository; no side |
+| Isaiah 61:1-2; Luke 4:21; Jeremiah 34:17 | 8-22 | leviticus/25.json `christ`, `historical`; BSB | BSB text |
+| The land God's and Israel his tenants; land as life; three lines of defense; ga'al and the go'el; walled cities, villages, Levites | 23-34 | leviticus/25.json `cultural`, `words` (H1350A) | Repository |
+| Ruth 4:9; Isaiah's Redeemer; Galatians 4:4-5, a link of theme | 23-34 | leviticus/25.json `words`, `christ`; BSB | BSB text |
+| The steps of increasing poverty; help so that he lives ‘among you’; no interest or profit; the exodus as the reason | 35-38 | leviticus/25.json `literary`; BSB | Repository |
+| Deuteronomy 15:4; Nehemiah 5:5, 11; Acts 4:34 | 35-38 | BSB | BSB text |
+| An Israelite treated as a hired worker, released at the Jubilee, because Israel belongs to God; foreigners could be bought and held permanently | 39-46 | leviticus/25.json `cultural`, `words` (H5650) | Repository |
+| Exodus 21:2; Job 31:15; Philemon 1:16 | 39-46 | exodus/plain/21.json; BSB | BSB text |
+| Verses 44-46 faced: ‘That is in the text, and it cannot be explained away’; what the law limits; Christopher Wright and Matthew 19:8; the critics' answer; ‘Both things are true to the text’ | 39-46 | exodus/plain/21.json (1-6 `hard`), the wording reused; guides/reading-law.json | Repository |
+| The chapter's own logic points beyond its line; Galatians 3:28; 1 Timothy 1:10 | 39-46 | leviticus/25.json `hard` | Repository |
+| The misuse in the Atlantic trade and the American South; Christians who opposed slavery; the mixed record | 39-46 | exodus/plain/21.json (1-6 `hard`), the wording reused; leviticus/25.json `hard`; context/guides/the-slavery-texts.json | Repository |
+| ‘A word for anyone who is being held, owned or forced to work today ... places to turn.’ | 39-46 | exodus/plain/21.json (7-11 `hard`), word for word | Repository |
+| The relative who redeems a person; ‘in your sight’; released at the Jubilee if no one comes; eved as slave, official and worshiper | 47-55 | leviticus/25.json `cultural`, `words` (H5650) | Repository |
+| 1 Peter 1:18-19; 1 Corinthians 7:23 | 47-55 | BSB | BSB text |
+
+Cut or narrowed before publishing: the Exodus 21 sentence that Atlantic slavery was ‘very different from the debt service of these verses’ could not be reused here, because verses 44-46 are not debt service; the note says only that Atlantic slavery was built on race and on kidnapping, which the law punished with death. Also cut: that ‘rule harshly’ is the word used of Egypt's treatment of Israel; that loans in that world went mostly to the needy (neither found in the repository); the Edict of Ammi-saduqa by name; 1 Maccabees. The note on verses 35-38 says that it is not legal or financial advice.
