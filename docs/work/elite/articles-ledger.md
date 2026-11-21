@@ -198,7 +198,7 @@ No party, candidate, law of our own day, court case or movement slogan is named.
 | The modern idea of race grew up in the centuries of the Atlantic slave trade | Not opened this run | Reference knowledge, stated generally |
 | Jones and Allen, 1794: "We wish you to consider, that God himself was the first pleader of the cause of slaves." | Evans-TCP N20688, "An Address to those who keep Slaves, and approve the practice" | Verbatim |
 | Jones and Allen: "children of one father, who made of one blood all the nations of the earth" (said of white friends who "are not ashamed to call the most abject of our race, brethren") | Evans-TCP N20688, the closing address to the friends of the enslaved | Verbatim |
-| The King James Version of Acts 17:26 reads close to this ("hath made of one blood all nations of men") | Not opened in a KJV file this run | Reference knowledge; the essay says "nearly" |
+| The King James Version of Acts 17:26 reads close to this ("And hath made of one blood all nations of men") | aruljohn/Bible-kjv, `Acts.json` | Verified; the essay says "nearly" |
 | Douglass, 1845, seven years out of slavery: "between the Christianity of this land, and the Christianity of Christ, I recognize the widest possible difference" | PG 23, Appendix; "seven years" from the live essay `why-didnt-the-bible-ban-slavery` | Verbatim |
 | Enslaved Christians heard the Exodus as their own story | Repo, live essay `why-didnt-the-bible-ban-slavery` | Site's own |
 | Black Christians differ among themselves over multiethnic congregations and the historic Black churches | Not opened this run | Reference knowledge, stated generally |
@@ -231,3 +231,38 @@ Written to agree with the live essay `why-does-god-allow-suffering` and the Hone
 | Scripture (ESV): Genesis 50:20; Job 1:19, 42:7; John 9:2; Exodus 1:22 (cited); Lamentations 2:11-12; Jeremiah 31:15; Matthew 2:18 (cited), 18:6 (cited), 27:46; Psalm 13:1; Habakkuk 1:3; Mark 5:41, 10:14; Luke 2:35; Romans 8:32; Isaiah 65:20; Revelation 6:10, 21:4; Deuteronomy 29:29 | ESV copy, by script | Words verified |
 
 Cut or held back: Ivan's own stories of cruelty (not retold; the live essay names two); the sentence with the returned ticket (quoted in the live essay and the Honest Answer); every sentence of Ivan's with an exclamation point; Matthew 18:14 (in context it speaks of a disciple going astray, not of a child's suffering); 2 Samuel 12:23 and every text or teaching about what becomes of children who die; Augustine on unbaptized infants; any figure for child mortality.
+
+## 8. divorce-remarriage-and-the-church
+
+Written to agree with the Honest Answer `what-does-the-bible-say-about-divorce-and-remarriage` and the help page `client/public/needs/divorce.json` (permanence first; Matthew's and Paul's exceptions; Christians differ on how far they reach; safety before theology; the divorced are not second-class). No position on the grounds for divorce or on remarriage is stated as James's. No ruling on anyone's marriage is given. The four people in the opening paragraph are types.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Care lines: "If you are in danger, get safe first and sort the theology after." and "If you are grieving a marriage that ended, you are not a second-class Christian. Grace is not the reward for a clean history." | Repo, the Honest Answer, each reused whole | Site's own |
+| Care lines: "If you're in immediate danger, call 911." and "None of these passages tells you to stay in danger." | Repo, `client/public/needs/divorce.json`, each reused whole | Site's own |
+| Care line: "If you need someone sooner, [Find Help](/help) lists hotlines for abuse and sexual assault." | Repo, live essay `doubt-after-church-abuse`, reused whole | Site's own |
+| Deuteronomy 24 assumes divorce and rules only on the return to the first husband; the certificate was the woman's proof that she was free to marry | ESV copy; Repo, Study Bible notes, `client/public/bible/notes/mark/10.json` | Verified / site's own |
+| The Mishnah was written down around 200 | Not opened this run | Reference knowledge |
+| Shammai: no divorce unless the husband found unchaste behavior; Hillel: "even if she spoiled his food"; Akiva: even if he found another woman more attractive; the argument is over the words of Deuteronomy 24:1 | Mishnah, Gittin 9:10 (the copy capitalizes "Even"); Akiva's words given in paraphrase | Verbatim (Hillel); paraphrase (the others) |
+| Akiva a generation after Jesus; only the husband could issue a divorce | Repo, Study Bible notes, `mark/10.json` | Site's own |
+| Malachi wrote around the fifth century before Christ | Not opened this run | Reference knowledge |
+| King James Version, Malachi 2:16: "that he hateth putting away" | aruljohn/Bible-kjv, `Malachi.json` | Verbatim |
+| Many modern Bibles have God say he hates divorce | Not opened this run | Reference knowledge, no version quoted |
+| Adultery in Jewish law was an offense against the husband; "against her" was new | Repo, Study Bible notes, `mark/10.json` | Site's own |
+| The Shepherd of Hermas, a Roman Christian writing of the second century | Not opened beyond the text | Reference knowledge |
+| Hermas: "The husband should put her away, and remain by himself. But if he put his wife away and marry another, he also commits adultery."; he stays unmarried so that she may repent and return; "In this matter man and woman are to be treated exactly in the same way." | WD, Shepherd of Hermas, Commandment 4, ch. 1 (the ANF text) | Verbatim |
+| Augustine, around 401: "that the compact of marriage is not done away by divorce intervening" | WD, Augustine, *On the Good of Marriage*, section 7 (the NPNF text; the sentence begins "Seeing that"); the date not opened | Verbatim; date reference knowledge |
+| The Catholic position: a valid, consummated marriage of two baptized people cannot be dissolved; separation for serious cause; an annulment finds that no true marriage came to be | Trent for the first two; the account of annulment not opened | Paraphrase; partly reference knowledge |
+| Trent, November 1563: "a separation may take place between husband and wife"; "for many causes"; "that the bond of matrimony cannot be dissolved on account of the adultery of one of the married parties" | Trent, session 24 (11 November 1563), canons 8 and 7 | Verbatim |
+| The Orthodox account: marriage meant to be one; a marriage can die; a second marriage permitted by economy, with a penitential service | Not opened this run | Reference knowledge, paraphrase; check first |
+| Basil, in the 370s, assigns penance to those who marry a second time | WD, Basil, Letter 188 (to Amphilochius), canon 4 ("one year for digamy"); the date not opened | Verified; date reference knowledge |
+| Erasmus argued in the 1510s that Matthew's exception allowed the innocent spouse to remarry | Not opened this run | Reference knowledge, paraphrase |
+| Westminster Confession, 1647: "nothing but adultery, or such wilful desertion ... dissolving the bond of marriage" and "marry another, as if the offending party were dead" | Creeds.json, `westminster_confession_of_faith.json`, 24.6 and 24.5 (the file's metadata gives 1647) | Verbatim |
+| Some evangelical scholars hold separation without remarriage; others argue from Exodus 21:10-11 and 1 Corinthians 7:15 that abuse and neglect break the covenant | Repo, Study Bible notes, `mark/10.json` (Heth and Wenham, 1984; Instone-Brewer, 2002), neither named in the essay | Site's own |
+| Basil: "In the case of her being beaten, and refusing to submit, it would be better for her to endure than to be separated from her husband."; the Lord's words apply "to men and women alike"; custom was harder on wives | WD, Basil, Letter 188, canon 9 (the NPNF text) | Verbatim |
+| No tradition requires anyone to remain under the same roof with a person harming them | Trent canon 8 and 1 Corinthians 7:11 for the Catholic and biblical ground; the rest not opened | Partly verified |
+| Around 1970 American states rewrote their divorce laws so that no wrong need be proved | Not opened this run | Reference knowledge, stated generally |
+| The Samaritan woman told her town | ESV copy, John 4:28-30, 4:39 | Verified |
+| Scripture (ESV): Deuteronomy 24:1, 24:4 (cited); Malachi 2:14, 2:16; Matthew 5:32 (cited), 19:3, 19:6, 19:8, 19:9, 19:10; Mark 10:11; 1 Corinthians 7:10-11, 7:15; Exodus 21:10-11 (cited); Ephesians 5:25; John 4:18 (cited); Jeremiah 3:8; Isaiah 54:6; Psalm 34:18 | ESV copy, by script | Words verified |
+
+Cut or held back: any sentence of Erasmus, Luther or Calvin; the Council of Elvira; Justin and Athenagoras; any Orthodox canon or service text in quotation marks; the help page's sentence that quotes 1 Corinthians 7:15 from another translation; every divorce statistic; any counsel to a reader who has remarried beyond taking the question to a pastor who knows the facts (that sentence was itself cut as advice the essay should not give).
