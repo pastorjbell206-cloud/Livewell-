@@ -14934,3 +14934,17 @@ Cut in chapter 24: a remark on the Hebrew wording of verse 15; the pointer to th
 | How the command is read: the readings of the conquest with the pointers to chapters 7 and 20; no side; no people today is Amalek; no warrant for violence or contempt | 17-19 | deuteronomy/25.json `hard`; deuteronomy/plain/7.json 1-5; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
 
 Cut in chapter 25: the reason for thirty-nine lashes (‘a miscount’); that the name Amalek was later used of enemies to justify killing, and that the Amalekites ‘vanished long ago’ (neither is in the repository's notes); that Tamar was wronged ‘by the whole family’.
+
+## The plain notes on Deuteronomy 26 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Firstfruits and the spoken confession; the story as a compact confession, its age questioned; the wandering Aramean as Jacob, ‘wandering’ or ‘perishing’; the pronouns; the shared joy | 1-11 | deuteronomy/26.json `historical`, `cultural`, `literary`, `words` (H7225G, H0761J); deuteronomy/6.json `literary` (von Rad) | Repository |
+| Exodus 2:24; Proverbs 3:9; 1 Corinthians 15:20 | 1-11 | deuteronomy/26.json `christ`; BSB | Repository; BSB text |
+| The third-year tithe (14:28-29); ‘the sacred portion’; the three denials and food for the dead in the ancient world; the prayer | 12-15 | deuteronomy/26.json `cultural`, `literary`, `words` (H4643) | Repository |
+| Psalm 26; Luke 18:11-12 | 12-15 | deuteronomy/26.json `hard`; BSB | Repository; BSB text |
+| Verse 14 and pride: narrow and specific; after a confession of gift; ending in prayer; contempt as the danger | 12-15 | deuteronomy/26.json `hard` | Repository |
+| The two ‘today’ declarations mirroring a covenant; segullah; the Shema's words; honor above the nations read with chapters 7 and 9, no claim for any nation today | 16-19 | deuteronomy/26.json `literary`, `words` (H5459); deuteronomy/plain/7.json 6-11; deuteronomy/plain/9.json 1-6 | Repository |
+| Exodus 19:5; Jeremiah 31:33; 1 Peter 2:9 with the pointer to the 1 Peter 2 note | 16-19 | deuteronomy/26.json `christ`; 1-peter/plain/2.json `hard`; BSB | Repository; BSB text; no side |
