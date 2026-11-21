@@ -13992,3 +13992,17 @@ Cut for want of a source in the repository: that the ‘you’ of the blessing i
 | Romans 12:1; Acts 6:6 | 5-22 | numbers/8.json `christ`; BSB | BSB text |
 | The ages: twenty-five here, thirty in chapter 4, twenty under David (1 Chronicles 23:24-27); the two explanations | 23-26 | numbers/8.json `historical` | Repository; no side |
 | Psalm 71:9; Psalm 92:14 | 23-26 | BSB | BSB text |
+
+## The plain notes on Numbers 9 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The step back before 1:1; the first anniversary; the meal (Exodus 12); cleanness and the dead; a case story, law as living instruction | 1-14 | numbers/9.json `story`, `cultural`, `literary` | Repository |
+| Hezekiah (2 Chronicles 30:2); Pesach Sheni; the only wilderness Passover recorded; Joshua 5:10 | 1-14 | numbers/9.json `historical` | Repository |
+| The ger and the one statute; religion tied to birth and nation | 1-14 | numbers/9.json `cultural`, `words` (H1616) | Repository |
+| John 19:36; 1 Corinthians 5:7; Ephesians 2:19 | 1-14 | numbers/9.json `christ`; BSB | BSB text |
+| ‘Cut off’: three views, Milgrom, Leviticus 20:3; the warning falls on contempt | 1-14 | numbers/9.json `hard` | Repository; no side; the last sentence is a caution of these notes |
+| The cloud known from Exodus; the word eleven times, ‘at the LORD's command’ seven times; waiting as obedience (verse 19) | 15-23 | numbers/9.json `historical`, `literary`, `words` (H6051) | Repository |
+| Exodus 13:21; Nehemiah 9:19; Luke 9:35 | 15-23 | numbers/9.json `christ`; BSB | BSB text |
