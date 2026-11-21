@@ -29,6 +29,7 @@
     {"slug": "what-render-unto-caesar-actually-means", "section": "faith-and-power", "status": "pending", "title": "What Did Jesus Mean by \"Render Unto Caesar\"?"},
     {"slug": "when-the-pulpit-became-a-precinct", "section": "faith-and-power", "status": "pending", "title": "When Your Church Becomes a Voting Bloc"},
     {"slug": "was-america-founded-as-a-christian-nation", "section": "faith-and-power", "status": "pending", "title": "Was America Founded as a Christian Nation?"},
+    {"slug": "can-a-nation-be-christian", "section": "faith-and-power", "status": "live", "title": "Can a Nation Be Christian?"},
     {"slug": "what-romans-13-says", "section": "faith-and-power", "status": "pending", "title": "What Does Romans 13 Say About Obeying the Government?"},
     {"slug": "is-it-wrong-to-love-your-country", "section": "faith-and-power", "status": "pending", "title": "Is It Wrong to Love Your Country?"},
     {"slug": "when-the-church-married-empire", "section": "after-christendom", "status": "live", "title": "When the Church Married Empire", "blurb": "Why the church’s alliance with empire began long before the modern culture wars."},
@@ -44,6 +45,7 @@
     {"slug": "doctrine-of-discovery", "section": "american-church", "status": "pending", "title": "What Is the Doctrine of Discovery?"},
     {"slug": "black-church-prophetic-justice", "section": "american-church", "status": "pending", "title": "The Black Church and Prophetic Justice"},
     {"slug": "prosperity-gospel-is-not-the-gospel", "section": "american-church", "status": "pending", "title": "What's Wrong with the Prosperity Gospel?"},
+    {"slug": "what-the-church-got-wrong-about-race", "section": "american-church", "status": "live", "title": "What the Church Got Wrong About Race, and What Scripture Said All Along"},
     {"slug": "the-early-church-under-rome", "section": "ancient-church", "status": "pending", "title": "When the Church Had Nothing to Lose"},
     {"slug": "the-first-christians-died-for-this", "section": "ancient-church", "status": "pending", "title": "Why Were the Early Christian Martyrs Willing to Die?"},
     {"slug": "the-council-of-nicaea-what-was-decided-in-325", "section": "ancient-church", "status": "pending", "title": "What Was Decided at the Council of Nicaea?"},
@@ -58,6 +60,7 @@
     {"slug": "how-american-individualism-distorts", "section": "bible-in-its-world", "status": "live", "title": "How American Individualism Distorts the Bible", "blurb": "Why the New Testament church is more than personal faith"},
     {"slug": "the-bible-assumes-you-will-be-wrong", "section": "bible-in-its-world", "status": "live", "title": "The Bible Assumes You Will Be Wrong", "blurb": ""},
     {"slug": "should-women-preach", "section": "bible-in-its-world", "status": "live", "title": "Should Women Preach?"},
+    {"slug": "babies-or-believers-why-christians-baptize-differently", "section": "bible-in-its-world", "status": "live", "title": "Babies or Believers? Why Christians Baptize Differently"},
     {"slug": "what-the-original-audience-heard", "section": "bible-in-its-world", "status": "pending", "title": "What the First Readers of the Bible Actually Heard"},
     {"slug": "church-megaproject-widow-mite", "section": "bible-in-its-world", "status": "pending", "title": "What Does the Widow's Mite Really Mean?"},
     {"slug": "why-didnt-the-bible-ban-slavery", "section": "bible-in-its-world", "status": "pending", "title": "Why Didn't the Bible Just Ban Slavery?"},
@@ -77,11 +80,13 @@
     {"slug": "did-christianity-copy-pagan-myths", "section": "doubt", "status": "pending", "title": "Did Christianity Copy Pagan Myths?"},
     {"slug": "did-god-choose-me-or-did-i-choose-god", "section": "doubt", "status": "live", "title": "Did God Choose Me, or Did I Choose God?"},
     {"slug": "is-hell-real-and-is-it-forever", "section": "doubt", "status": "live", "title": "Is Hell Real, and Is It Forever?"},
+    {"slug": "why-does-god-let-children-suffer", "section": "doubt", "status": "live", "title": "Why Does God Let Children Suffer?"},
     {"slug": "covenant-vs-contract-what-marriage-is", "section": "ordinary-faithfulness", "status": "pending", "title": "Is Marriage a Covenant or a Contract?"},
     {"slug": "what-the-bible-says-about-submission", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Submission in Marriage?"},
     {"slug": "what-fatherhood-requires", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Being a Father?"},
     {"slug": "the-machine-that-forms-you", "section": "ordinary-faithfulness", "status": "pending", "title": "What Is Your Phone Doing to Your Soul?"},
     {"slug": "the-theology-of-saturday", "section": "ordinary-faithfulness", "status": "pending", "title": "What Holy Saturday Teaches About Grief"},
-    {"slug": "can-a-christian-be-rich", "section": "ordinary-faithfulness", "status": "live", "title": "Can a Christian Be Rich?"}
+    {"slug": "can-a-christian-be-rich", "section": "ordinary-faithfulness", "status": "live", "title": "Can a Christian Be Rich?"},
+    {"slug": "divorce-remarriage-and-the-church", "section": "ordinary-faithfulness", "status": "live", "title": "Divorce, Remarriage and the Church"}
   ]
 }

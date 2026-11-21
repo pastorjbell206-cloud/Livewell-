@@ -122,7 +122,7 @@ Written to agree with the live Honest Answer `is-hell-forever-or-does-it-end` (`
 | Origen (third century) and Gregory of Nyssa (fourth) taught a final restoration; Gregory never condemned | Repo, the live Honest Answer for Gregory; WD, Augustine, *City of God* 21.17 for Origen; "never condemned" not opened | Partly verified |
 | Augustine, *City of God* 21.17: "I must now, I see, enter the lists of amicable controversy with those tender-hearted Christians ... shall suffer eternally." | WD, Augustine, *The City of God*, Book 21 (Dods's translation as the NPNF prints it) | Verbatim |
 | The last books of *The City of God* date from the 420s | Not opened this run | Reference knowledge |
-| Origen's teaching condemned in 553 under Justinian | WD, same file, editor's note 37 (the Fifth Ecumenical Council, Justinian); the year 553 not printed there | Partly verified |
+| Origen's teaching anathematized at Constantinople in the sixth century under Justinian; historians dispute whether that sentence belongs to the acts of the general council of 553 (reworded 2026-11-21 from "In 553 Origen's teaching was condemned") | WD, same file, editor's note 37 (the Fifth Ecumenical Council, Justinian); the dispute as the site's other pages state it; the year 553 not printed in the note | Partly verified; site's own for the dispute |
 | Athanasian Creed: "they that have done evil" go "into everlasting fire" | Creeds.json, `athanasian_creed.json` | Verbatim |
 | Westminster Confession: "shall be cast into eternal torments" | Creeds.json, `westminster_confession_of_faith.json`, 33.2 | Verbatim |
 | Edwards preached "Sinners in the Hands of an Angry God" at Enfield in July 1741, from a manuscript in a level voice; the most famous sermon in American history | Repo, history course `awakenings-and-enlightenment` | Site's own |
@@ -158,3 +158,178 @@ Written to agree with the live Honest Answer `what-does-the-bible-say-about-mone
 | Scripture (ESV): Mark 10:21-22, 10:25-27; Luke 6:24, 8:3, 19:9; Matthew 6:21, 6:24, 27:57; Acts 4:32, 4:34, 5:4; 1 Timothy 6:5, 6:9-10, 6:17-18; James 2:2-3 (cited), 5:1, 5:4; Philippians 4:12; 2 Corinthians 8:9; John 12:6; Proverbs 30:8-9 | ESV copy, by script | Words verified |
 
 Cut or held back: Basil's own sermons to the rich and on the barns (no printed public-domain translation could be opened; he appears only through Gregory's oration, which could); the better-known modern wording of Chrysostom ("theft from the poor"), which is from a translation still in copyright that could not be opened; Wesley's later sermons on the danger of riches; any name or date for the prosperity teaching's founders; any figure for world income.
+
+---
+
+# Second run (2026-11-21)
+
+Five more essays. What the run could reach was the same as before: this repository and public GitHub repositories. Sources opened in this run, beyond those listed at the top:
+
+- **Evans-TCP**: Text-Creation-Partnership/Evans-TCP, the Text Creation Partnership's transcriptions of early American printed books (Evans Early American Imprints), `evans/XML/`. N20688 = Absalom Jones and Richard Allen, *A Narrative of the Proceedings of the Black People, during the late Awful Calamity in Philadelphia* (Philadelphia, 1794), with its "Address to those who keep Slaves". N18125 = John Leland, *The Rights of Conscience Inalienable* (1791). N09952 = Isaac Backus, *An Appeal to the Public for Religious Liberty* (Boston, 1773). N16494 = Samuel Langdon, *The Republic of the Israelites an Example to the American States* (election sermon, Concord, New Hampshire, 5 June 1788). N14363 = Ezra Stiles, *The United States Elevated to Glory and Honor* (election sermon, Hartford, 1783). N15010 = Samuel Hopkins, *A Dialogue concerning the Slavery of the Africans* (1776; the 1785 reprint). N16207 = the Northwest Ordinance as printed in 1787. Titles, authors and years are from the partnership's catalogue (textcreationpartnership/Texts, `TCP.csv`). The transcriptions mark a line-end hyphen with a bar; words are quoted joined.
+- **PG (GITenberg)**: 23 = Douglass, *Narrative* (1845), with its Appendix. 28148 = *Cotton Is King, and Pro-Slavery Arguments*, ed. E. N. Elliott (Augusta, Georgia: Pritchard, Abbott and Loomis, 1860; title page read), holding Thornton Stringfellow's "The Bible Argument: or, Slavery in the Light of Divine Revelation". 28054 = Dostoevsky, *The Brothers Karamazov*, translated by Constance Garnett. 65739 = Roger Williams, *The Bloudy Tenent of Persecution* (1644), in Edward Bean Underhill's edition.
+- **Mishnah**: kidaa/Sefaria-Export (a copy of Sefaria's export), `json/Mishnah/Seder Nashim/Mishnah Gittin/English/merged.json`, whose English is credited there to the Sefaria Community Translation and *Eighteen Treatises from the Mishnah*.
+- **Trent**: BenjaminPoole/ecumenical-christian-library, `councils/trent-1545/session-xxiv.html`, marked "adapted from Hanover Historical Texts" (the nineteenth-century English translation).
+- **Madison**: jeffpar/lonedissent, `sources/loc/volumes/text/301-400/330/330us001.txt`, a scan of volume 330 of the *United States Reports*, whose appendix reprints the *Memorial and Remonstrance* whole. The scan has stray marks from the machine reading; only clean clauses are quoted.
+- **Douglass 1852**: siznax/blacklivesmatter, `douglass-1850-july-fourth.md`, an abridged copy of the Rochester speech of 5 July 1852.
+- **WD** (the same commit as before): Didache; Tertullian, *On Baptism*; Cyprian, Epistle 58 (to Fidus); Gregory of Nazianzus, Oration 40; Shepherd of Hermas, Commandment 4; Augustine, *On the Good of Marriage*; Basil, Letter 188.
+
+Every Scripture quotation was compared with the ESV copy by the same script.
+
+## 6. what-the-church-got-wrong-about-race
+
+No party, candidate, law of our own day, court case or movement slogan is named. The three people in the opening paragraph are types. The essay agrees with the live essay `why-didnt-the-bible-ban-slavery` and does not repeat its argument from Leviticus and Exodus.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| English colonists in the 1600s were uneasy about holding fellow Christians as slaves; in 1667 the Virginia assembly declared that baptism did not change whether a person was slave or free | Not opened this run | Reference knowledge; check first |
+| Methodist General Conference of 1844; Bishop James O. Andrew of Georgia had come to own slaves and was asked to stop exercising his office; the Southern conferences organized the Methodist Episcopal Church, South, in 1845 | Repo, history course `the-american-experiment` | Site's own |
+| The Boston mission board would not appoint a slaveholder; Baptists of the slaveholding states met in Augusta, Georgia, in May 1845 and founded their own convention | Repo, `the-american-experiment`; live essay `why-didnt-the-bible-ban-slavery` | Site's own |
+| These were among the largest Protestant bodies in the country | Repo, `the-american-experiment` ("the two largest evangelical bodies in America") | Site's own |
+| A proslavery volume published in Augusta in 1860 included an essay by Thornton Stringfellow | PG 28148, title page and section head | Verified |
+| Stringfellow a Baptist minister in Virginia | Repo, live essay `why-didnt-the-bible-ban-slavery` | Site's own |
+| Stringfellow began with Noah; "God decreed slavery"; "tokens of good-will to the master"; "the Canaanites or Africans, who descended from Ham"; then Abraham, Moses and Paul | PG 28148, Stringfellow's essay, opening pages (the source italicizes "decreed slavery") | Verbatim |
+| Genesis 9: the curse is on Canaan, spoken by Noah, not by God; the Canaanites lived in Canaan, not Africa; nothing about color | ESV copy, Genesis 9:24-27, 10:6; Repo, Study Bible notes, `client/public/bible/notes/genesis/9.json` | Verified |
+| After the war white churches accepted the color line; the curse of Ham was preached in defense of segregation | Repo, `client/public/justice/topics/race-and-image.json`, `justice/timeline.json` | Site's own, older library |
+| Congregations seated Black visitors in the balcony or turned them away at the door | Not opened this run | Reference knowledge, stated generally |
+| Richard Allen born enslaved in 1760, converted under Methodist preaching, bought his freedom; around 1787 he, Absalom Jones and others were pulled from their knees in the gallery by white trustees and walked out; Bethel dedicated 1794; the African Methodist Episcopal Church organized in 1816 with Allen its first bishop | Repo, `the-american-experiment` ("In Allen's own telling"). Allen's memoir could not be opened, so nothing from it is in quotation marks | Site's own |
+| King, a Baptist preacher, wrote from jail in Birmingham in April 1963 to white clergymen who had urged him to wait; his sharpest disappointment was with white moderates | Repo, `justice/timeline.json`, `justice/topics/race-and-image.json`, `justice/witnesses.json`; the month not opened. The letter is in copyright and could not lawfully be opened here, so it is described without quotation | Site's own; "April" reference knowledge |
+| In 1995 the convention founded in Augusta confessed that its founding was bound up with the defense of slavery and that it had defended segregation | Repo, `the-american-experiment` | Site's own |
+| Athens told the story that its people had sprung from its own soil | Not opened this run | Reference knowledge |
+| The modern idea of race grew up in the centuries of the Atlantic slave trade | Not opened this run | Reference knowledge, stated generally |
+| Jones and Allen, 1794: "We wish you to consider, that God himself was the first pleader of the cause of slaves." | Evans-TCP N20688, "An Address to those who keep Slaves, and approve the practice" | Verbatim |
+| Jones and Allen: "children of one father, who made of one blood all the nations of the earth" (said of white friends who "are not ashamed to call the most abject of our race, brethren") | Evans-TCP N20688, the closing address to the friends of the enslaved | Verbatim |
+| The King James Version of Acts 17:26 reads close to this ("And hath made of one blood all nations of men") | aruljohn/Bible-kjv, `Acts.json` | Verified; the essay says "nearly" |
+| Douglass, 1845, seven years out of slavery: "between the Christianity of this land, and the Christianity of Christ, I recognize the widest possible difference" | PG 23, Appendix; "seven years" from the live essay `why-didnt-the-bible-ban-slavery` | Verbatim |
+| Enslaved Christians heard the Exodus as their own story | Repo, live essay `why-didnt-the-bible-ban-slavery` | Site's own |
+| Black Christians differ among themselves over multiethnic congregations and the historic Black churches | Not opened this run | Reference knowledge, stated generally |
+| Scripture (ESV): Genesis 1:27, 9:25, 10:6 (cited); Acts 17:26; Galatians 2:11, 2:14, 3:28; Ephesians 2:14; Revelation 7:9; Matthew 23:30; Ezekiel 18:20; Daniel 9:8; Nehemiah 1:6; Luke 19:8, 19:9; James 2:9 | ESV copy, by script | Words verified |
+
+Cut or held back: any sentence of King's letter and any sentence of the eight clergymen's statement (copyright; not opened); any sentence of Allen's memoir; the second Ham passage in the 1860 volume ("the children of Ham were to be a servile race", by Samuel Cartwright, a physician, not a preacher); the 1807 abridged Bible made for enslaved people; James Henley Thornwell, Benjamin Palmer and the Presbyterian division; any named sermon in defense of segregation (none could be opened); every figure for churches or members.
+
+## 7. why-does-god-let-children-suffer
+
+Written to agree with the live essay `why-does-god-allow-suffering` and the Honest Answer `if-god-is-good-why-suffering`: no explanation of any particular suffering is offered; the classic answers are given their strength and their limits; the argument that the skeptic "borrows" a moral standard is not used as a rebuttal (the Honest Answer says it fails as one), only the narrower point that the protest needs somewhere to stand; the weight rests on the cross and the resurrection. Nothing is said about any child's fate or anyone's. The places in the opening paragraph are types, not memories.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Dostoevsky finished *The Brothers Karamazov* in 1880 | Repo, `client/public/needs/suffering.json` | Site's own |
+| Dostoevsky's son Alyosha (Alexei) died in 1878, not yet three | Not opened this run | Reference knowledge; check first |
+| Alyosha is the believing brother, a novice; Ivan collects his stories from newspapers and keeps to children because adults "have eaten the apple" | PG 28054, Book V, ch. 4 ("Rebellion"), read | Verified; paraphrase |
+| "If all must suffer to pay for the eternal harmony, what have children to do with it, tell me, please?" | PG 28054, "Rebellion" (Garnett's translation) | Verbatim |
+| Ivan grants the final harmony, even the mother embracing her child's killer, and refuses it: "I renounce the higher harmony altogether." | Same (the sentence begins "and so I renounce") | Verbatim |
+| "too high a price is asked for harmony; it's beyond our means to pay so much to enter on it." | Same (the sentence begins "Besides,") | Verbatim |
+| "even if I were wrong" | Same (italic in the source) | Verbatim |
+| The architect question, in paraphrase; Alyosha: "No, I wouldn't consent" | Same | Paraphrase; the answer verbatim |
+| Ivan asks whether any being has the right to forgive; Alyosha: "But there is a Being and He can forgive everything, all and for all, because He gave His innocent blood for all and everything." | Same | Verbatim |
+| The free-will, soul-making, sovereignty and limited-sight answers | Repo, live essay `why-does-god-allow-suffering` and the Honest Answer (Plantinga, Irenaeus and Lewis, the Reformed and Wesleyan accounts, Wykstra), none named or quoted here | Site's own, paraphrase |
+| "God needed another angel" as a thing said at funerals | Repo, live essay `why-does-god-allow-suffering` | Site's own |
+| Children were harmed inside churches and the institution was protected | Repo, live essay `doubt-after-church-abuse` | Site's own, stated generally |
+| Care paragraph ("If you're grieving as you read this ... a page for grief.") | Repo, live essay `why-does-god-allow-suffering`, reused whole | Site's own |
+| Care line: "If you need someone sooner, [Find Help](/help) lists hotlines for abuse and sexual assault." | Repo, live essay `doubt-after-church-abuse`, reused whole | Site's own |
+| Care lines: "The death of a child breaks the order of things, and no sentence makes it make sense, so be wary of anyone who offers one." "Find other parents who have buried a child; they can sit with you as others can't." "If this question has turned toward your own life, please call or text 988 now." | Repo, `client/public/needs/grief.json`, each reused whole | Site's own |
+| Jesus raised Jairus's daughter and the widow's son and not every child who died | ESV copy, Mark 5:22-43; Luke 7:11-15 | Verified; the limit is the essay's own observation |
+| Scripture (ESV): Genesis 50:20; Job 1:19, 42:7; John 9:2; Exodus 1:22 (cited); Lamentations 2:11-12; Jeremiah 31:15; Matthew 2:18 (cited), 18:6 (cited), 27:46; Psalm 13:1; Habakkuk 1:3; Mark 5:41, 10:14; Luke 2:35; Romans 8:32; Isaiah 65:20; Revelation 6:10, 21:4; Deuteronomy 29:29 | ESV copy, by script | Words verified |
+
+Cut or held back: Ivan's own stories of cruelty (not retold; the live essay names two); the sentence with the returned ticket (quoted in the live essay and the Honest Answer); every sentence of Ivan's with an exclamation point; Matthew 18:14 (in context it speaks of a disciple going astray, not of a child's suffering); 2 Samuel 12:23 and every text or teaching about what becomes of children who die; Augustine on unbaptized infants; any figure for child mortality.
+
+## 8. divorce-remarriage-and-the-church
+
+Written to agree with the Honest Answer `what-does-the-bible-say-about-divorce-and-remarriage` and the help page `client/public/needs/divorce.json` (permanence first; Matthew's and Paul's exceptions; Christians differ on how far they reach; safety before theology; the divorced are not second-class). No position on the grounds for divorce or on remarriage is stated as James's. No ruling on anyone's marriage is given. The four people in the opening paragraph are types.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Care lines: "If you are in danger, get safe first and sort the theology after." and "If you are grieving a marriage that ended, you are not a second-class Christian. Grace is not the reward for a clean history." | Repo, the Honest Answer, each reused whole | Site's own |
+| Care lines: "If you're in immediate danger, call 911." and "None of these passages tells you to stay in danger." | Repo, `client/public/needs/divorce.json`, each reused whole | Site's own |
+| Care line: "If you need someone sooner, [Find Help](/help) lists hotlines for abuse and sexual assault." | Repo, live essay `doubt-after-church-abuse`, reused whole | Site's own |
+| Deuteronomy 24 assumes divorce and rules only on the return to the first husband; the certificate was the woman's proof that she was free to marry | ESV copy; Repo, Study Bible notes, `client/public/bible/notes/mark/10.json` | Verified / site's own |
+| The Mishnah was written down around 200 | Not opened this run | Reference knowledge |
+| Shammai: no divorce unless the husband found unchaste behavior; Hillel: "even if she spoiled his food"; Akiva: even if he found another woman more attractive; the argument is over the words of Deuteronomy 24:1 | Mishnah, Gittin 9:10 (the copy capitalizes "Even"); Akiva's words given in paraphrase | Verbatim (Hillel); paraphrase (the others) |
+| Akiva a generation after Jesus; only the husband could issue a divorce | Repo, Study Bible notes, `mark/10.json` | Site's own |
+| Malachi wrote around the fifth century before Christ | Not opened this run | Reference knowledge |
+| King James Version, Malachi 2:16: "that he hateth putting away" | aruljohn/Bible-kjv, `Malachi.json` | Verbatim |
+| Many modern Bibles have God say he hates divorce | Not opened this run | Reference knowledge, no version quoted |
+| Adultery in Jewish law was an offense against the husband; "against her" was new | Repo, Study Bible notes, `mark/10.json` | Site's own |
+| The Shepherd of Hermas, a Roman Christian writing of the second century | Not opened beyond the text | Reference knowledge |
+| Hermas: "The husband should put her away, and remain by himself. But if he put his wife away and marry another, he also commits adultery."; he stays unmarried so that she may repent and return; "In this matter man and woman are to be treated exactly in the same way." | WD, Shepherd of Hermas, Commandment 4, ch. 1 (the ANF text) | Verbatim |
+| Augustine, around 401: "that the compact of marriage is not done away by divorce intervening" | WD, Augustine, *On the Good of Marriage*, section 7 (the NPNF text; the sentence begins "Seeing that"); the date not opened | Verbatim; date reference knowledge |
+| The Catholic position: a valid, consummated marriage of two baptized people cannot be dissolved; separation for serious cause; an annulment finds that no true marriage came to be | Trent for the first two; the account of annulment not opened | Paraphrase; partly reference knowledge |
+| Trent, November 1563: "a separation may take place between husband and wife"; "for many causes"; "that the bond of matrimony cannot be dissolved on account of the adultery of one of the married parties" | Trent, session 24 (11 November 1563), canons 8 and 7 | Verbatim |
+| The Orthodox account: marriage meant to be one; a marriage can die; a second marriage permitted by economy, with a penitential service | Not opened this run | Reference knowledge, paraphrase; check first |
+| Basil, in the 370s, assigns penance to those who marry a second time | WD, Basil, Letter 188 (to Amphilochius), canon 4 ("one year for digamy"); the date not opened | Verified; date reference knowledge |
+| Erasmus argued in the 1510s that Matthew's exception allowed the innocent spouse to remarry | Not opened this run | Reference knowledge, paraphrase |
+| Westminster Confession, 1647: "nothing but adultery, or such wilful desertion ... dissolving the bond of marriage" and "marry another, as if the offending party were dead" | Creeds.json, `westminster_confession_of_faith.json`, 24.6 and 24.5 (the file's metadata gives 1647) | Verbatim |
+| Some evangelical scholars hold separation without remarriage; others argue from Exodus 21:10-11 and 1 Corinthians 7:15 that abuse and neglect break the covenant | Repo, Study Bible notes, `mark/10.json` (Heth and Wenham, 1984; Instone-Brewer, 2002), neither named in the essay | Site's own |
+| Basil: "In the case of her being beaten, and refusing to submit, it would be better for her to endure than to be separated from her husband."; the Lord's words apply "to men and women alike"; custom was harder on wives | WD, Basil, Letter 188, canon 9 (the NPNF text) | Verbatim |
+| No tradition requires anyone to remain under the same roof with a person harming them | Trent canon 8 and 1 Corinthians 7:11 for the Catholic and biblical ground; the rest not opened | Partly verified |
+| Around 1970 American states rewrote their divorce laws so that no wrong need be proved | Not opened this run | Reference knowledge, stated generally |
+| The Samaritan woman told her town | ESV copy, John 4:28-30, 4:39 | Verified |
+| Scripture (ESV): Deuteronomy 24:1, 24:4 (cited); Malachi 2:14, 2:16; Matthew 5:32 (cited), 19:3, 19:6, 19:8, 19:9, 19:10; Mark 10:11; 1 Corinthians 7:10-11, 7:15; Exodus 21:10-11 (cited); Ephesians 5:25; John 4:18 (cited); Jeremiah 3:8; Isaiah 54:6; Psalm 34:18 | ESV copy, by script | Words verified |
+
+Cut or held back: any sentence of Erasmus, Luther or Calvin; the Council of Elvira; Justin and Athenagoras; any Orthodox canon or service text in quotation marks; the help page's sentence that quotes 1 Corinthians 7:15 from another translation; every divorce statistic; any counsel to a reader who has remarried beyond taking the question to a pastor who knows the facts (that sentence was itself cut as advice the essay should not give).
+
+## 9. can-a-nation-be-christian
+
+**Why this title and not the one asked for.** The brief asked for "Was America Founded as a Christian Nation?" An essay with that title and slug has been public on the shelf since 2026-11-17 (`was-america-founded-as-a-christian-nation`, about 3,700 words: the Declaration, Article VI, the First Amendment, the Treaty of Tripoli, the Danbury letter, the founders' varied beliefs, the Baptists, 1 Peter 2:9). A second essay under the same name would have duplicated it, and replacing a public essay was outside this run's brief. This essay is the companion the brief's other items describe: the claim in its defenders' best form, the Puritan covenant idea, sermons of the period, the dissenters, slavery and the treatment of native peoples as the test, and what Scripture says of nations and of the church. It links to the earlier essay for the documents and repeats none of its quotations except Winthrop's five words and the three Scripture texts the brief names.
+
+No modern party, candidate, court case, law or movement is named. The people in the opening paragraph are types. Whether a state should establish a church is described as a second-order question and no position on it is stated as James's; that no country stands in Israel's place, and that a teaching which fuses cross and flag is an error, are stated as the confessional floor (CLAUDE.md, Orthodoxy Guardrails).
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| The Puritans sailed for Massachusetts Bay in 1630; Winthrop told them they would be "as a city upon a hill"; in early Massachusetts only church members could vote | Repo, live essay `was-america-founded-as-a-christian-nation`. Winthrop's sermon could not be opened, so only the five words already on the site are quoted | Site's own |
+| New England governments had a minister preach at the yearly election | Evans-TCP N16494 and N14363, both titled as election sermons before a governor or legislature; the custom at large not opened | Partly verified |
+| Ezra Stiles, president of Yale, preached to the governor and assembly of Connecticut in 1783 on "God's American Israel" | Evans-TCP N14363, title page and opening section; "president of Yale" from the live essay | Verbatim |
+| Samuel Langdon preached to the New Hampshire legislature on 5 June 1788 from Deuteronomy (4:5-8): "instead of the twelve tribes of Israel, we may substitute the thirteen States of the American union"; the sermon warns that Israel forfeited its blessings | Evans-TCP N16494, title page and the application | Verbatim |
+| The modern defenders' case (no people is neutral; law rests on an account of the human being; Scripture speaks to nations; rights need a giver) | Not opened this run; no writer named or quoted | Paraphrase of a position |
+| Roger Williams, driven out of Massachusetts, founded Rhode Island; wrote in 1644 | Repo, live essay `was-america-founded-as-a-christian-nation`; PG 65739 title | Site's own / verified |
+| Williams: Israel alone was a nation in covenant, a type; the church is its fulfilment: "these are only the holy nation" | PG 65739 (Underhill's edition, Hanserd Knollys Society, 1848), the section headed "Who are now the true seed of Abraham" | Verbatim; the surrounding argument paraphrased |
+| Williams: "the Christian world (so called) hath swallowed up Christianity" | PG 65739, the passage with the side-note "The Christian world hath swallowed up Christianity" | Verbatim |
+| Baptists were taxed in New England for Congregational ministers and jailed in Virginia for preaching without a license | Evans-TCP N09952 for the first; Repo, live essay, for the second | Verified / site's own |
+| Isaac Backus, a Baptist pastor in Massachusetts, 1773: "because you are taxed where you are not represented; and is it not really so with us?" | Evans-TCP N09952 (the sentence begins "You tell us you cannot,"); "Baptist pastor" from the catalogue's subject headings and reference knowledge | Verbatim |
+| John Leland, Baptist preacher, 1791: "These establishments, metamorphise the church into a creature, and religion into a principle of state"; "Pagan, Turk, Jew or Christian" eligible to any post | Evans-TCP N18125 (spelling as printed) | Verbatim |
+| Madison, 1785, against a Virginia tax for Christian teachers: "for every page of it disavows a dependence on the powers of this world" | Madison, section 6 (the scan prints "page.of"); the occasion from the live essay | Verbatim |
+| Samuel Hopkins addressed the Continental Congress in 1776: "inconsistence with ourselves, in holding so many hundreds of thousands of blacks in slavery ... our children's liberty"; reprinted 1785 | Evans-TCP N15010, the dedication (Norwich, 1776; New York, reprinted 1785, both on the title page) | Verbatim |
+| Hopkins a Congregational minister in Newport, Rhode Island | Not opened this run | Reference knowledge |
+| The Constitution kept Congress from ending the slave trade before 1808; the 1790 census counted nearly 700,000 enslaved people | Repo, live essay `was-america-founded-as-a-christian-nation` | Site's own |
+| Jones and Allen, formerly enslaved, 1794: "If you love your children, if you love your country, if you love the God of love, clear your hands from slaves" | Evans-TCP N20688, "An Address to those who keep Slaves" ("having been ourselves slaves" is in the next address) | Verbatim |
+| Douglass, Rochester, 5 July 1852: "This Fourth of July is yours, not mine. You may rejoice, I must mourn." | Douglass 1852 (an abridged copy) | Verbatim |
+| The Northwest Ordinance, July 1787, third article: "The utmost good faith shall always be observed towards the Indians; their lands and property shall never be taken from them without their consent" | Evans-TCP N16207; the month and the Congress from the live essay | Verbatim |
+| In 1782 a Pennsylvania militia killed some ninety unarmed Christian Delaware at the Moravian village of Gnadenhutten in Ohio | Not opened this run (the usual count is ninety-six, in March 1782) | Reference knowledge; check first |
+| In 1838 the Cherokee, many of them Christians taught by missionaries, were driven west from the Southeast and thousands died | Not opened this run | Reference knowledge; check first |
+| Lincoln, March 1865: both sides read the same Bible and prayed to the same God; the war as the cost of two and a half centuries of unpaid labor | Repo, history course `the-american-experiment`; given in paraphrase | Site's own |
+| Peter wrote to congregations in what is now Turkey; Philippi a Roman colony | ESV copy, 1 Peter 1:1; Acts 16:12 | Verified |
+| Anglicans, Lutherans, Catholics and New England Puritans kept established churches; Baptists and Quakers opposed them | Repo, live essay, for New England and the Baptists; the rest not opened | Partly site's own; reference knowledge |
+| Scripture (ESV): Proverbs 14:34; Jeremiah 18:7; Psalm 2:10; Matthew 5:14, 7:16, 28:19; Amos 3:2; Exodus 19:6; 1 Peter 2:9, 2:11; John 18:36 (first sentence only); Philippians 3:20; Revelation 7:9, 21:24 (cited); Acts 17:26 (cited); 1 Timothy 2:2 | ESV copy, by script | Words verified |
+
+Cut or held back: Washington's 1790 letter to the Hebrew Congregation at Newport (only quotation collections and encyclopedia copies could be opened, no copy of the letter itself, so it is not used); any more of Winthrop's sermon (the same); the Declaration, Article VI, the First Amendment, the Treaty of Tripoli and the Danbury letter (all quoted in the earlier essay and not repeated); the remainder of John 18:36 (so that no line could be read as blaming the Jewish people); the missionaries jailed in Georgia and the court case that followed; John Eliot's praying towns and Deer Island; Jefferson's sentence about trembling for his country (only quotation lists could be opened).
+
+## 10. babies-or-believers-why-christians-baptize-differently
+
+No side is taken and nothing in the essay says which practice the author's church keeps. The two cases are given the same length and the same kinds of support (texts, a governing conviction, one confession quoted). The people in the opening paragraph are types.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Churches that baptize infants baptize adult converts on a profession of faith | Creeds.json, Westminster 28.4 ("those that do actually profess faith") | Verified |
+| The New Testament records no baptism of a baby, no prohibition of one, and no believer's child baptized later | The essay's own observation from the texts; the site's library `client/public/theology/sacraments.json` makes the same point about the household passages | Site's own |
+| The Didache, usually dated around 100; it expects fasting, prefers running water, allows pouring, and does not mention infants | WD, Didache, ch. 7; Repo, `theology/sacraments.json` (dated "between roughly AD 50 and 120") | Verified / site's own |
+| Didache: "thou shalt order the baptized to fast one or two days before" | WD, Didache 7.4 (the text printed in the Ante-Nicene Fathers; the file names no translator) | Verbatim |
+| Tertullian, around 200, the first to discuss the baptism of small children directly; advises delay for children and for the unmarried because of sin after baptism | WD, Tertullian, *On Baptism*, ch. 18 ("Translated by the Rev. S. Thelwall"); "first" and the date not opened | Verified; date and "first" reference knowledge |
+| Tertullian: "let them become Christians when they have become able to know Christ" | Same | Verbatim |
+| Cyprian and sixty-six bishops answered Fidus, who would have waited for the eighth day: "we all rather judge that the mercy and grace of God is not to be refused to any one born of man" | WD, Cyprian, Epistle 58 (the Ante-Nicene Fathers numbering), sections 1-2 | Verbatim |
+| The letter dates from about fifty years after Tertullian | Not opened this run (usually dated 253); the site says infant baptism was established "by the middle of the third century" | Reference knowledge / site's own |
+| Gregory of Nazianzus, late fourth century, in Constantinople: baptize at once if in danger; otherwise "to wait till the end of the third year, or a little more or less" | WD, Gregory of Nazianzus, Oration 40, section 28 (the NPNF text); the place and date not opened | Verbatim; place and date reference knowledge |
+| Augustine's mother devout; as a sick boy he was nearly baptized; "my cleansing was deferred" | WD, Augustine, *Confessions* 1.11 (the sentence begins "So my cleansing") | Verbatim |
+| Augustine was baptized as a grown man and later defended infant baptism | WD holds his *On the Merits and Forgiveness of Sins, and on the Baptism of Infants* (title seen); the year of his baptism (387) not opened | Partly verified |
+| From the fifth century to the sixteenth nearly every Christian was baptized as an infant | Not opened this run | Reference knowledge, stated generally |
+| Zurich, 1525: students of Zwingli concluded that baptism follows faith and baptized one another; "Anabaptist" meant rebaptizer and was an insult | Repo, history course `reformation-and-its-wars`, `the-reformation` | Site's own |
+| Nearly every government, Catholic and Protestant, treated rebaptism as a crime | Repo, `the-reformation` ("drowned, burned, and beheaded across Europe"); the laws themselves not opened | Site's own, stated generally |
+| The Protestant authorities of Zurich drowned Felix Manz in 1527; the executioners called drowning the third baptism | Repo, Study Bible notes, `client/public/bible/notes/john/plain/16.json`; `reformation-and-its-wars` | Site's own |
+| Manz was one of Zwingli's students | Not opened this run | Reference knowledge |
+| Michael Sattler shaped the Schleitheim Confession of 1527 and was tortured and burned within months | Repo, `reformation-and-its-wars` | Site's own |
+| The uprising at Münster (1530s) was used to justify killing the peaceful majority | Repo, `the-reformation`; the decade not opened | Site's own; decade reference knowledge |
+| Westminster Confession, 1647: "Not only those that do actually profess faith in and obedience unto Christ, but also the infants of one or both believing parents are to be baptized." | Creeds.json, `westminster_confession_of_faith.json`, 28.4 | Verbatim |
+| Catholic, Orthodox and Lutheran Christians hold that God gives the new birth in baptism | Not opened this run | Reference knowledge, paraphrase |
+| The Baptist confession written in London in 1677: "Those who do actually professe repentance towards God, faith in, and obedience, to our Lord Jesus, are the only proper subjects of this ordinance."; it requires immersion | Creeds.json, `london_baptist_1689.json`, 29.2 and 29.4 (metadata year 1677; spelling as printed) | Verbatim |
+| The baptism question has never been in the creeds | Creeds.json, Apostles' and Nicene Creeds (the Nicene confesses "one baptism for the remission of sins" and says nothing of who or how) | Verified |
+| Scripture (ESV): Matthew 28:19; Romans 4:11, 6:4; Acts 2:38-39, 2:41, 8:12, 16:15, 16:33, 16:34; 1 Corinthians 1:16; Colossians 2:11-12; 1 Peter 3:21; John 3:5, 16:2; Genesis 17:7; Mark 10:14; Jeremiah 31:34; Galatians 3:27, 3:29; Ephesians 4:5 | ESV copy, by script | Words verified |
+
+Cut or held back: Origen's statement that the church received infant baptism from the apostles and Irenaeus's earlier allusion (neither could be opened); the *Apostolic Tradition*; the Augsburg Confession's and Belgic Confession's condemnations of the Anabaptists (the first not in the collection, the second there only in a modern translation); the Zurich council's decrees and the manner of Manz's death beyond drowning; any number for the Anabaptist dead; Balthasar Hubmaier; the whipping of Baptists in New England; any sentence of Luther, Zwingli, Calvin or Menno Simons.
