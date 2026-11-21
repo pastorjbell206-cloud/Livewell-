@@ -15032,3 +15032,24 @@ Cut in chapter 30: that the will of the gods ‘was never certain’ in ancient 
 | 2 Kings 22:11; John 5:46 | 24-30 | questions/old-testament/who-wrote-the-first-five-books.json (`evidence`); BSB | Repository; BSB text |
 
 Cut in chapter 31: a sentence that a king who turned his face away had stopped listening (not in the repository's notes).
+
+## The plain notes on Deuteronomy 32 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Parallel lines; songs as memory; the covenant lawsuit shape, used by the prophets; the Rock (tsur) five times; verses 8-9 and the differing copies | 1-14 | deuteronomy/32.json `cultural`, `literary`, `words` (H6697H); deuteronomy/plain/4.json 15-31 `hard` | Repository |
+| Exodus 19:4; Psalm 18:2; 17:8; Isaiah 1:2 | 1-14 | deuteronomy/32.json `cultural`, `words`; BSB | Repository; BSB text |
+| Jeshurun, ‘upright’, used with irony; fullness as the danger (chapter 8); the judgments fall on Israel; the turn at verses 26-27 and Moses' own plea (9:28); verse 21 and the nations; Israel's own Scripture, no ground for contempt | 15-33 | deuteronomy/32.json `literary`, `words` (H3484, H7065), `hard`; deuteronomy/plain/28.json 15-46 `hard` | Repository |
+| Hosea 13:6; Romans 10:19 with 11:1; Philippians 2:15 | 15-33 | deuteronomy/32.json `christ`; BSB | Repository; BSB text |
+| Compassion when strength is gone; verse 39; naqam as a judge's act, kept for God; the nations called to rejoice; the longer form of verse 43 in a Dead Sea Scroll and the Greek | 34-43 | deuteronomy/32.json `literary`, `words` (H5359), `christ` | Repository |
+| 1 Samuel 2:6; Romans 12:19; 15:10; Revelation 15:3 | 34-43 | deuteronomy/32.json `christ`; BSB | Repository; BSB text |
+| The violent imagery: poetry; judgment on Israel itself; vengeance taken out of human hands; the compassionate ending; the two emphases; no license for violence | 34-43 | deuteronomy/32.json `hard` | Repository |
+| Moses and Joshua together; ‘take to heart’ and chapter 6; the words as life (30:20) | 44-47 | deuteronomy/32.json `literary`; BSB | Repository; BSB text |
+| 8:3; John 6:63 | 44-47 | BSB | BSB text |
+| Meribah (Numbers 20); ‘on account of you’ three times (1:37; 3:26; 4:21) and verse 51; Aaron on Mount Hor; Nebo across from Jericho; what softens the scene | 48-52 | deuteronomy/32.json `historical`; deuteronomy/1.json `hard`; deuteronomy/34.json `hard` | Repository |
+| Numbers 20:12; Psalm 106:32-33; 99:8; Matthew 17:3 | 48-52 | deuteronomy/3.json `christ`; BSB | Repository; BSB text |
+| Why Moses was kept out: the readings (the public act; the people's account; the softening; Hebrews and the law's limits); not chosen among; not a rule about any person's losses | 48-52 | deuteronomy/34.json `hard` | Repository; no side |
+
+Cut in chapter 32: that the Old Testament seldom calls God Father; that ‘the apple of the eye’ is the pupil; the meaning of the Hebrew word behind ‘idle’; a gloss on ‘gathered to your people’ (none of these is in the repository's notes).
