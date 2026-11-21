@@ -301,3 +301,35 @@ No modern party, candidate, court case, law or movement is named. The people in 
 | Scripture (ESV): Proverbs 14:34; Jeremiah 18:7; Psalm 2:10; Matthew 5:14, 7:16, 28:19; Amos 3:2; Exodus 19:6; 1 Peter 2:9, 2:11; John 18:36 (first sentence only); Philippians 3:20; Revelation 7:9, 21:24 (cited); Acts 17:26 (cited); 1 Timothy 2:2 | ESV copy, by script | Words verified |
 
 Cut or held back: Washington's 1790 letter to the Hebrew Congregation at Newport (only quotation collections and encyclopedia copies could be opened, no copy of the letter itself, so it is not used); any more of Winthrop's sermon (the same); the Declaration, Article VI, the First Amendment, the Treaty of Tripoli and the Danbury letter (all quoted in the earlier essay and not repeated); the remainder of John 18:36 (so that no line could be read as blaming the Jewish people); the missionaries jailed in Georgia and the court case that followed; John Eliot's praying towns and Deer Island; Jefferson's sentence about trembling for his country (only quotation lists could be opened).
+
+## 10. babies-or-believers-why-christians-baptize-differently
+
+No side is taken and nothing in the essay says which practice the author's church keeps. The two cases are given the same length and the same kinds of support (texts, a governing conviction, one confession quoted). The people in the opening paragraph are types.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Churches that baptize infants baptize adult converts on a profession of faith | Creeds.json, Westminster 28.4 ("those that do actually profess faith") | Verified |
+| The New Testament records no baptism of a baby, no prohibition of one, and no believer's child baptized later | The essay's own observation from the texts; the site's library `client/public/theology/sacraments.json` makes the same point about the household passages | Site's own |
+| The Didache, usually dated around 100; it expects fasting, prefers running water, allows pouring, and does not mention infants | WD, Didache, ch. 7; Repo, `theology/sacraments.json` (dated "between roughly AD 50 and 120") | Verified / site's own |
+| Didache: "thou shalt order the baptized to fast one or two days before" | WD, Didache 7.4 (the text printed in the Ante-Nicene Fathers; the file names no translator) | Verbatim |
+| Tertullian, around 200, the first to discuss the baptism of small children directly; advises delay for children and for the unmarried because of sin after baptism | WD, Tertullian, *On Baptism*, ch. 18 ("Translated by the Rev. S. Thelwall"); "first" and the date not opened | Verified; date and "first" reference knowledge |
+| Tertullian: "let them become Christians when they have become able to know Christ" | Same | Verbatim |
+| Cyprian and sixty-six bishops answered Fidus, who would have waited for the eighth day: "we all rather judge that the mercy and grace of God is not to be refused to any one born of man" | WD, Cyprian, Epistle 58 (the Ante-Nicene Fathers numbering), sections 1-2 | Verbatim |
+| The letter dates from about fifty years after Tertullian | Not opened this run (usually dated 253); the site says infant baptism was established "by the middle of the third century" | Reference knowledge / site's own |
+| Gregory of Nazianzus, late fourth century, in Constantinople: baptize at once if in danger; otherwise "to wait till the end of the third year, or a little more or less" | WD, Gregory of Nazianzus, Oration 40, section 28 (the NPNF text); the place and date not opened | Verbatim; place and date reference knowledge |
+| Augustine's mother devout; as a sick boy he was nearly baptized; "my cleansing was deferred" | WD, Augustine, *Confessions* 1.11 (the sentence begins "So my cleansing") | Verbatim |
+| Augustine was baptized as a grown man and later defended infant baptism | WD holds his *On the Merits and Forgiveness of Sins, and on the Baptism of Infants* (title seen); the year of his baptism (387) not opened | Partly verified |
+| From the fifth century to the sixteenth nearly every Christian was baptized as an infant | Not opened this run | Reference knowledge, stated generally |
+| Zurich, 1525: students of Zwingli concluded that baptism follows faith and baptized one another; "Anabaptist" meant rebaptizer and was an insult | Repo, history course `reformation-and-its-wars`, `the-reformation` | Site's own |
+| Nearly every government, Catholic and Protestant, treated rebaptism as a crime | Repo, `the-reformation` ("drowned, burned, and beheaded across Europe"); the laws themselves not opened | Site's own, stated generally |
+| The Protestant authorities of Zurich drowned Felix Manz in 1527; the executioners called drowning the third baptism | Repo, Study Bible notes, `client/public/bible/notes/john/plain/16.json`; `reformation-and-its-wars` | Site's own |
+| Manz was one of Zwingli's students | Not opened this run | Reference knowledge |
+| Michael Sattler shaped the Schleitheim Confession of 1527 and was tortured and burned within months | Repo, `reformation-and-its-wars` | Site's own |
+| The uprising at Münster (1530s) was used to justify killing the peaceful majority | Repo, `the-reformation`; the decade not opened | Site's own; decade reference knowledge |
+| Westminster Confession, 1647: "Not only those that do actually profess faith in and obedience unto Christ, but also the infants of one or both believing parents are to be baptized." | Creeds.json, `westminster_confession_of_faith.json`, 28.4 | Verbatim |
+| Catholic, Orthodox and Lutheran Christians hold that God gives the new birth in baptism | Not opened this run | Reference knowledge, paraphrase |
+| The Baptist confession written in London in 1677: "Those who do actually professe repentance towards God, faith in, and obedience, to our Lord Jesus, are the only proper subjects of this ordinance."; it requires immersion | Creeds.json, `london_baptist_1689.json`, 29.2 and 29.4 (metadata year 1677; spelling as printed) | Verbatim |
+| The baptism question has never been in the creeds | Creeds.json, Apostles' and Nicene Creeds (the Nicene confesses "one baptism for the remission of sins" and says nothing of who or how) | Verified |
+| Scripture (ESV): Matthew 28:19; Romans 4:11, 6:4; Acts 2:38-39, 2:41, 8:12, 16:15, 16:33, 16:34; 1 Corinthians 1:16; Colossians 2:11-12; 1 Peter 3:21; John 3:5, 16:2; Genesis 17:7; Mark 10:14; Jeremiah 31:34; Galatians 3:27, 3:29; Ephesians 4:5 | ESV copy, by script | Words verified |
+
+Cut or held back: Origen's statement that the church received infant baptism from the apostles and Irenaeus's earlier allusion (neither could be opened); the *Apostolic Tradition*; the Augsburg Confession's and Belgic Confession's condemnations of the Anabaptists (the first not in the collection, the second there only in a modern translation); the Zurich council's decrees and the manner of Manz's death beyond drowning; any number for the Anabaptist dead; Balthasar Hubmaier; the whipping of Baptists in New England; any sentence of Luther, Zwingli, Calvin or Menno Simons.

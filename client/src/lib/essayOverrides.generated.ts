@@ -12,6 +12,7 @@ export interface EssayOverrideMeta {
 }
 
 export const ESSAY_OVERRIDES: EssayOverrideMeta[] = [
+  {"slug":"babies-or-believers-why-christians-baptize-differently","title":"Babies or Believers? Why Christians Baptize Differently","excerpt":"Christians agree that Christ commanded baptism and disagree about whether the children of believers should receive it. The disagreement is eighteen centuries old, each side has real texts, and it was once settled by drowning people.","updated":"2026-11-21T00:00:00.000Z"},
   {"slug":"can-a-christian-be-rich","title":"Can a Christian Be Rich?","excerpt":"Jesus said harder things about wealth than most churches repeat, the church has never agreed on how far those words reach, and both the prosperity preacher and his proudest critic have something to answer for.","updated":"2026-11-20T00:00:00.000Z"},
   {"slug":"can-a-nation-be-christian","title":"Can a Nation Be Christian?","excerpt":"The argument over whether America was founded as a Christian nation usually skips the question underneath it, which is what the Bible would mean by the phrase and whether any country has ever passed the test.","updated":"2026-11-21T00:00:00.000Z"},
   {"slug":"can-you-be-good-without-god","title":"Can You Be Good Without God?","excerpt":"Unbelievers can be good, and the harder question is what makes anything good at all.","updated":"2026-11-17T00:00:00.000Z"},
