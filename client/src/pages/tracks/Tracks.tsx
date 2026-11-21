@@ -1,0 +1,162 @@
+/**
+ * /tracks: the tracks. A track is a few numbered sessions of about ten
+ * minutes, in order, each one using a page or tool the site already has and
+ * ending by asking something of the reader (lib/tracks.ts; the data is
+ * client/public/tracks/, listed in its index.json).
+ *
+ * The page lists the tracks that are written, each with who it is for, how
+ * many sessions it has, and "Start" or "Continue"; then, plainly, the ones
+ * that are not written yet: the other roads of /start (lib/startRoads) and
+ * "Deep in one", a book studied chapter by chapter. A road with no track yet
+ * links to its steps on /start, which stay as they are.
+ */
+import { Link } from "wouter";
+import { ArrowRight, LifeBuoy, Lock, Milestone, Users } from "lucide-react";
+
+import Layout from "@/components/Layout";
+import LoadFailed from "@/components/LoadFailed";
+import { SEOMeta } from "@/components/SEOMeta";
+import { SAVE_FAILED } from "@/components/TakeItWithYou";
+import InnerHead from "@/components/art/InnerHead";
+import { ROADS, roadHref } from "@/lib/startRoads";
+import { fetchTrackIndex, nextSession, sessionHref, trackHref, trackToContinue, type TrackBrief, type TrackProgress } from "@/lib/tracks";
+import { ContinueLine, ProgressBar, useLoad, useTracksProgress } from "./parts";
+import "./tracks.css";
+
+/** The book study that is planned and not written: said plainly, with nothing to open yet. */
+export const DEEP_IN_ONE = {
+  name: "Deep in one: the Gospel of Mark",
+  line: "One book, studied a chapter at a time in the same step shape. Not written yet.",
+};
+
+function TrackCard({ t, entry }: { t: TrackBrief; entry?: TrackProgress }) {
+  const total = t.sessions.length;
+  const next = nextSession(entry, total);
+  const started = !!entry;
+  return (
+    <li className="tk-track">
+      <div>
+        <p className="eyebrow tk-track__for">{t.for}</p>
+        <h3 className="tk-track__title">
+          <Link href={trackHref(t.slug)}>{t.title}</Link>
+        </h3>
+        <p className="tk-track__dek">{t.subtitle}</p>
+        <p className="tk-track__facts">
+          {total} sessions, about {t.minutes} minutes each
+          {started && next !== null ? `. You are on session ${next}.` : started ? ". You have done them all." : ""}
+        </p>
+        {started && <ProgressBar total={total} entry={entry} now={next} />}
+      </div>
+      <div className="tk-track__acts">
+        <Link href={next === null ? trackHref(t.slug) : sessionHref(t.slug, next)} className="btn">
+          {!started ? "Start" : next === null ? "See the sessions" : `Continue at session ${next}`}
+        </Link>
+        <Link href={trackHref(t.slug)} className="btn btn--quiet">
+          All {total} sessions
+        </Link>
+      </div>
+    </li>
+  );
+}
+
+export default function Tracks() {
+  const { data, retry } = useLoad("index", fetchTrackIndex);
+  const { progress, kept } = useTracksProgress();
+  const next = trackToContinue(progress);
+  const written = new Set((data?.tracks ?? []).map((t) => t.road));
+  const coming = ROADS.filter((r) => !written.has(r.id));
+
+  return (
+    <Layout>
+      <SEOMeta
+        title="Tracks: Follow Jesus Step by Step"
+        description="Short sessions in order for someone new to faith, about ten minutes each. Every session uses a page or tool on LiveWell and ends with one question, one thing to do and one verse."
+        url="https://www.livewellbyjamesbell.co/tracks"
+      />
+      <div className="tk-page">
+        <InnerHead
+          path="/tracks"
+          title="Tracks"
+          line="A track is a few short sessions, in order. Each one opens something on this site, then asks one thing of you."
+          plate="tree"
+        />
+
+        <section className="tk-sec" aria-labelledby="tk-ready">
+          <div className="tk-in">
+            {next && <ContinueLine next={next} />}
+            <p className="tk-label">
+              <Milestone aria-hidden="true" size={18} strokeWidth={1.75} />
+              Ready now
+            </p>
+            <h2 id="tk-ready" className="tk-h2">
+              Choose a track
+            </h2>
+            {data === undefined && <div className="tk-wait" data-lw-loading aria-busy="true" />}
+            {data === null && <LoadFailed what="The list of tracks" onRetry={retry} backHref="/start" backLabel="Start here" />}
+            {data && (
+              <ul className="tk-tracks">
+                {data.tracks.map((t) => (
+                  <TrackCard key={t.slug} t={t} entry={progress.tracks[t.slug]} />
+                ))}
+              </ul>
+            )}
+            <p className="tk-note">
+              <Lock aria-hidden="true" size={18} strokeWidth={1.75} />
+              <span>Your place and your answers are kept on this device only. There is no account, and nothing is sent anywhere.</span>
+            </p>
+            {!kept && <p className="tk-note tk-note--alert">{SAVE_FAILED}</p>}
+          </div>
+        </section>
+
+        {data && (
+          <section className="tk-sec tk-sec--warm" aria-labelledby="tk-coming">
+            <div className="tk-in">
+              <h2 id="tk-coming" className="tk-h2">
+                Coming
+              </h2>
+              <p className="tk-p">These are not written yet. Until each one is, its road on the Start page is the place to begin.</p>
+              <ul className="tk-coming">
+                {coming.map((r) => (
+                  <li key={r.id}>
+                    <span>
+                      <span className="tk-coming__name">{r.chip}</span>
+                      <span className="tk-coming__line">{r.title}. Not written yet.</span>
+                    </span>
+                    <Link href={roadHref(r.id)}>
+                      The road for now <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <span>
+                    <span className="tk-coming__name">{DEEP_IN_ONE.name}</span>
+                    <span className="tk-coming__line">{DEEP_IN_ONE.line}</span>
+                  </span>
+                  <Link href="/study/bible/mark">
+                    Read Mark for now <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </section>
+        )}
+
+        <section className="tk-sec" aria-label="With a group, and help">
+          <div className="tk-in">
+            <p className="tk-label">
+              <Users aria-hidden="true" size={18} strokeWidth={1.75} />
+              With a group
+            </p>
+            <p className="tk-p">Every session ends with a guide for a group: a question to open with, three to talk over, and something to pray about. It prints on one sheet.</p>
+            <p className="lw-newline">
+              <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.75} />
+              <span>
+                In a hard season right now? <Link href="/help">Find help for what you are facing</Link>.
+              </span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </Layout>
+  );
+}

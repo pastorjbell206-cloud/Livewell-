@@ -1,0 +1,584 @@
+{
+  "slug": "new-to-this",
+  "title": "New to faith, or coming back",
+  "for": "I'm new to this",
+  "road": "new",
+  "subtitle": "Twelve short sessions for someone who has just come to faith, or is coming back to the start: who Jesus is, how to read and pray, the church, and what to do when you fail or doubt.",
+  "intro": [
+    "This track is for an adult who has just begun to follow Jesus, or who is coming back after years away and wants to start again from the beginning. It has twelve sessions. Each one takes about ten minutes, and you can take them a day apart or a week apart. Nothing here is timed, and nothing counts the days you miss.",
+    "Every session works the same way. You read a few short paragraphs, then open one page or tool on this site and use it, then come back. At the end there's one question to answer, one thing to do, and one verse to keep. If you can, go through it with one other person. Each session has a guide for a group at the bottom."
+  ],
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Who Jesus is",
+      "minutes": 10,
+      "teaching": [
+        "The Christian faith begins with a person. Before it asks anything of you, it asks you to look at Jesus, and the plainest way to do that is to read a Gospel for yourself. Mark is the shortest of the four, and he wastes no time. In his first chapter Jesus is baptized, calls four fishermen to follow him, drives out an unclean spirit, heals the sick, and touches a man with leprosy whom everyone else kept at a distance. The crowd is left asking, “What is this? A new teaching with authority!” (Mark 1:27).",
+        "Mark has already told you the answer in his first line, where he calls Jesus the Christ, the Son of God. Christians confess that Jesus is fully God and fully man in one person. That sentence took the church centuries to say with care, and you don't have to master it this week. Start where the first followers started, by watching what he does and listening to what he says. His first words in Mark ask for two things: repent, which means turn around, and believe, which means trust the news."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Mark 1, passage by passage",
+        "href": "/study/bible/mark/1#plain",
+        "why": "Mark is the shortest Gospel, and here each passage of his first chapter is explained in plain words under the text."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Who Jesus is",
+          "href": "/study/explorer/watch/who-jesus-is",
+          "why": "Seven short pictures of who Christians confess Jesus to be, and the question he asked his friends."
+        },
+        {
+          "kind": "chapter",
+          "label": "Mark 2, passage by passage",
+          "href": "/study/bible/mark/2#plain",
+          "why": "Four friends lower a man through a roof, and Jesus says something nobody in the room expects."
+        }
+      ],
+      "question": "Which moment in Mark 1 would you most like to have seen, and what does it tell you about who Jesus is?",
+      "do": "Read Mark 2 and Mark 3 before the next session, a chapter at a sitting, with the plain-words notes open under the text. Write down one thing Jesus says or does that surprises you.",
+      "verse": {
+        "ref": "Mark 1:15",
+        "text": "“The time is fulfilled,” He said, “and the kingdom of God is near. Repent and believe in the gospel!”"
+      },
+      "group": {
+        "open": "When you first heard about Jesus, what did you think he was like?",
+        "discuss": [
+          "In Mark 1, who seems to know who Jesus is, and who is still asking?",
+          "Jesus calls four fishermen and they leave their nets at once. What would have made that hard for them?",
+          "Jesus touches the man with leprosy before he heals him. What does that show you about Jesus?"
+        ],
+        "pray": "Thank God in your own words for one thing you saw in Jesus in this chapter, and ask him to help each person in the group see Jesus more clearly this week."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Why he died and rose",
+      "minutes": 10,
+      "teaching": [
+        "Every Gospel slows down when it reaches the last week of Jesus' life, because the writers knew it was the centre of the story. Jesus was crucified under the Roman governor Pontius Pilate. Christians confess that he died for us, and the Bible reaches for more than one picture to say how: a lamb at Passover, a ransom that sets a prisoner free, a servant who carries what others deserved, a victory over death itself. No one picture says it all. What they share is that God himself acted, out of love. The earliest summary of the faith puts it in one line: “Christ died for our sins according to the Scriptures” (1 Corinthians 15:3).",
+        "And the cross is not the end of the story. Christians confess that on the third day God raised Jesus in his body, the same body that had been buried, now made new. Paul says plainly that everything rests on it: if Christ has not been raised, faith is futile. Because he was raised, the forgiveness won at the cross is sealed, and death is not the final word over anyone who belongs to him. The resurrection does not take away grief. It gives grief a hope."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Why did Jesus die?",
+        "href": "/study/explorer/watch/why-jesus-died",
+        "why": "It sets out six pictures the Bible itself uses for what the cross did, held together, without choosing one over the rest."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The resurrection",
+          "href": "/study/explorer/watch/the-resurrection",
+          "why": "What Christians believe happened on the third day, and why it matters, in seven pictures."
+        },
+        {
+          "kind": "answer",
+          "label": "Did the resurrection actually happen?",
+          "href": "/answers/did-the-resurrection-actually-happen",
+          "why": "Christians say their faith stands or falls on this event, so it is the claim to test."
+        }
+      ],
+      "question": "Which of the Bible's pictures of the cross is easiest for you to take in, and which is hardest?",
+      "do": "Read Mark 15 and Mark 16 in one sitting, slowly, as if you had never heard how it ends. Then tell one person what you read.",
+      "verse": {
+        "ref": "Romans 5:8",
+        "text": "But God proves His love for us in this: While we were still sinners, Christ died for us."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn.",
+        "If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What did you think the cross was about before you began to read the Bible for yourself?",
+        "discuss": [
+          "The film shows six pictures of what the cross did. Which one was new to you?",
+          "Paul says God proves his love at the cross. How is that different from a God who has to be talked into loving people?",
+          "Why do you think Paul stakes everything on the resurrection being a real event, and not only a teaching?"
+        ],
+        "pray": "Give thanks, each in a sentence or two, for what Jesus did, and pray by name for anyone in the group who is grieving or afraid of death."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Trusting him: grace and faith",
+      "minutes": 10,
+      "teaching": [
+        "Most people assume that religion is a ladder: be good enough, try harder, earn your way up. The Bible says plainly that the gap is too wide for that, and then it says something better. God crossed the gap from his own side. Paul writes, “For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast” (Ephesians 2:8-9). Grace is the free and undeserved favor of God. That is hard news for anyone who likes to earn things, and good news for anyone who knows they cannot.",
+        "Faith is how the gift is received. It isn't a work that pays for anything. It is empty hands taking what is given, which means trusting Jesus himself and resting on what he has done, and not on your own record. Then Paul adds a line people often miss: we are “created in Christ Jesus to do good works” (Ephesians 2:10). The good works come after. You are not saved by them, but you are saved for them. Churches describe the link between faith and works in different words, and the notes on this chapter set those out without choosing. On the gift itself they speak together."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Ephesians 2, passage by passage",
+        "href": "/study/bible/ephesians/2#plain",
+        "why": "Paul tells every Christian's story in ten verses: where we were, what God did, and what it means."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "How salvation works",
+          "href": "/study/explorer/watch/how-salvation-works",
+          "why": "The same good news in nine pictures, from the first gift to the gift received."
+        },
+        {
+          "kind": "catechism",
+          "label": "What is grace? (the family catechism)",
+          "href": "/family/catechism#q35",
+          "why": "The catechism answers what grace, faith and repentance are in one sentence each."
+        }
+      ],
+      "question": "Where do you still act as if God's love has to be earned?",
+      "do": "Read Ephesians 2:1-10 aloud once a day for three days. On the third day, write one sentence that says in your own words what God has done.",
+      "verse": {
+        "ref": "Ephesians 2:8-9",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast."
+      },
+      "group": {
+        "open": "What is the best gift anyone ever gave you that you could never repay?",
+        "discuss": [
+          "Paul says the rescue had to be God's from start to finish. Why does that matter so much to him?",
+          "What is the difference between working for God's love and working because you already have it?",
+          "Verse 10 says God prepared good works for his people. What might one of those look like for you this week?"
+        ],
+        "pray": "Thank God for the gift in plain words, and ask him to show each person one place where they are still trying to earn what has already been given."
+      }
+    },
+    {
+      "n": 4,
+      "title": "How to read the Bible",
+      "minutes": 10,
+      "teaching": [
+        "The Bible is a library of sixty-six books written over many centuries, and it tells one story: how God made us, how we went wrong, and how Jesus came to save us. Nobody understands all of it at once, and nobody is asked to. Begin with a Gospel, and read a whole chapter before you ask what any one verse means. Go slowly, and let it say what it says. Then ask the questions a careful reader asks of any page: who is speaking, to whom, what comes back again, and what surprises you.",
+        "You will meet parts you don't follow yet. That is normal, and it isn't a sign that you are reading badly. The Study Bible on this site puts notes beside every chapter, and for many chapters it explains each passage in plain words. A good habit for a new reader is one chapter a day of the Gospel of John, which takes three weeks. Short and steady is better than long and rare. The psalmist calls God's word a lamp, and a lamp lights the next few steps, which is as much as you need today."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "How to study the Bible",
+        "href": "/study/how-to-study",
+        "why": "Seven steps that work on any chapter. Learn them there, then try them on a real one."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "The guided study of John 3",
+          "href": "/study/bible/john/3?study=walk",
+          "why": "The same seven steps on one chapter, one screen at a time. It keeps your place if you stop."
+        },
+        {
+          "kind": "book",
+          "label": "Open John in the Study Bible",
+          "href": "/study/bible/john",
+          "why": "John has twenty-one chapters, so a chapter a day takes three weeks, with notes on every one of them."
+        }
+      ],
+      "question": "What has kept you from reading the Bible before now, and what would make a chapter a day possible?",
+      "do": "Choose a time and a place for reading, and tell one person what you chose. Then read John 1 today with the notes beside it.",
+      "verse": {
+        "ref": "Psalm 119:105",
+        "text": "Your word is a lamp to my feet and a light to my path."
+      },
+      "group": {
+        "open": "What is one book, of any kind, that you have read more than once, and why?",
+        "discuss": [
+          "Which of the seven steps do you already do without thinking, and which is new to you?",
+          "Read John 3:1-8 aloud together. Who is speaking, who is listening, and what surprises you?",
+          "What do you do when you reach a part of the Bible you can't make sense of?"
+        ],
+        "pray": "Ask God, in your own words, to make each person hungry to read, and pray for the time and the place each one has chosen."
+      }
+    },
+    {
+      "n": 5,
+      "title": "How to pray",
+      "minutes": 10,
+      "teaching": [
+        "Prayer is talking with God, who is our Father. You bring him worship, thanks, confession and requests, and you trust that he hears because of Jesus. It isn't a way of getting things out of God, and it doesn't depend on finding the right words. When his disciples asked him to teach them, Jesus gave them a pattern that Christians all over the world still pray. It begins, “Our Father in heaven, hallowed be Your name” (Matthew 6:9).",
+        "If nobody ever taught you how to pray, begin with five minutes a day. Say the Lord's Prayer slowly, one line at a time, and stop where a line catches on something in your own life. Then borrow a psalm. The psalms are full of praise and thanks, and they are just as full of people asking God how long their trouble will last. Some prayers are not answered the way we longed for, and that hurts. The Bible doesn't hide it, and it doesn't say that it happens because of too little faith."
+      ],
+      "open": {
+        "kind": "psalms",
+        "label": "Pray Psalm 23 slowly",
+        "href": "/tools/pray-the-psalms?psalm=23",
+        "why": "The psalms are the Bible's own book of prayers. Choose ‘Pray it slowly’ and it shows one part at a time, with no timer."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Prayer",
+          "href": "/study/explorer/watch/prayer",
+          "why": "What prayer is, in seven pictures, and what to do when an answer is slow to come."
+        },
+        {
+          "kind": "plan",
+          "label": "Eight Weeks of Learning to Pray",
+          "href": "/plans/prayer",
+          "why": "Five minutes a day and the prayer Jesus gave his followers, one line at a time."
+        },
+        {
+          "kind": "tool",
+          "label": "The Prayer Planner",
+          "href": "/tools/prayer-planner",
+          "why": "A place to keep a prayer list, so the names you promised to pray for are in front of you."
+        }
+      ],
+      "question": "Which is hardest for you: thanking, asking, saying sorry, or waiting?",
+      "do": "Set aside five minutes a day this week. Pray the Lord's Prayer slowly, then tell God one thing you are thankful for and one thing you need.",
+      "verse": {
+        "ref": "Psalm 23:1",
+        "text": "The LORD is my shepherd; I shall not want."
+      },
+      "group": {
+        "open": "Did anyone teach you to pray when you were young? What was it like?",
+        "discuss": [
+          "Jesus tells his followers to call God Father. What does that change about how a person prays?",
+          "Which line of the Lord's Prayer do you find easiest to mean, and which is hardest?",
+          "Some prayers are not answered as we hoped. How have you seen people keep praying anyway?"
+        ],
+        "pray": "Go around the group: each person thanks God for one thing and asks for one thing, in a sentence each. Nobody has to pray aloud who would rather not."
+      }
+    },
+    {
+      "n": 6,
+      "title": "The Holy Spirit",
+      "minutes": 10,
+      "teaching": [
+        "The Holy Spirit is God himself, the third person of the Trinity, living in his people. He is neither a force nor a feeling. Christians agree that the Spirit gives new life, lives in every believer, and joins each one to Christ. Jesus' own picture is a vine and its branches: the branch lives because it is joined to the vine. Paul adds a family picture. Those who belong to Christ have been adopted, and “The Spirit Himself testifies with our spirit that we are God’s children” (Romans 8:16).",
+        "The Spirit also changes people, and he does it slowly. Paul names nine kinds of fruit, beginning with love, joy and peace, and fruit takes a season to grow, so don't measure yourself after a week. The Spirit gives gifts as well, to each believer, for the good of all. Churches differ on whether some gifts, such as tongues, prophecy and healing, continue as they did in Acts, and on whether the baptism of the Spirit is a distinct experience after a person first believes. Your own church can tell you how it reads those passages. All of them confess that the Spirit is help for the weak, and never a reward for the strong."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The Holy Spirit in a believer",
+        "href": "/study/explorer/watch/spirit-in-a-believer",
+        "why": "Seven pictures of what Christians everywhere confess about the Spirit, with one on where churches differ."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Romans 8, passage by passage",
+          "href": "/study/bible/romans/8#plain",
+          "why": "Paul's great chapter on life in the Spirit, explained in plain words under the text."
+        },
+        {
+          "kind": "self-check",
+          "label": "Spiritual Gifts Self-Check",
+          "href": "/tools/spiritual-gifts",
+          "why": "Ten minutes on what you may have to give your church. It suggests, and it doesn't grade you."
+        }
+      ],
+      "question": "Which of the nine kinds of fruit would you most like to see grow in you this year?",
+      "do": "Read Romans 8:1-17 and count every place the Spirit is named. Then ask an older Christian how they have seen the Spirit at work in their own life.",
+      "verse": {
+        "ref": "Galatians 5:22-23",
+        "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law."
+      },
+      "group": {
+        "open": "Who is the most patient or the kindest person you know, and how do you think they came to be that way?",
+        "discuss": [
+          "Why does it matter that the Holy Spirit is a person, and not a force or a feeling?",
+          "Paul says the Spirit tells believers that they are God's children. How does a person come to believe that about themselves?",
+          "Churches differ on some of the Spirit's gifts. What does your church teach, and what questions do you still have?"
+        ],
+        "pray": "Ask the Spirit to grow one named fruit in each person, and thank him that he helps people who don't know how to pray."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The church, and why it matters",
+      "minutes": 10,
+      "teaching": [
+        "This faith was never meant to be lived alone. The church is the whole company of God's people, gathered by the Spirit around Christ, and a building is only where some of them meet. God saves people into a family. Paul's picture is a body with many parts, where no part can say it does not need the others. The first Christians in Jerusalem “devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer” (Acts 2:42), and Christians still gather for the same four things.",
+        "So look for a faithful church, which isn't the same thing as a perfect one, and go more than once before you decide. Look first for a church where the Scriptures are preached as true and the gospel of grace is clear. Then stay long enough to be known. Some people hear all this with a knot in the stomach, because a church is where they were hurt. If that is you, it matters, and nobody here will hurry you past it. There's a page on this site written for people hurt by a church, and it's worth reading before you visit anywhere."
+      ],
+      "open": {
+        "kind": "wisdom",
+        "label": "Finding a Church",
+        "href": "/wisdom/finding-a-church",
+        "why": "What to look for in a church and what not to, with five passages on why Christians gather."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "What the church is",
+          "href": "/study/explorer/watch/the-church",
+          "why": "Seven pictures of the church as a people, one body, living stones and a family."
+        },
+        {
+          "kind": "answer",
+          "label": "Can you be a Christian without going to church?",
+          "href": "/answers/can-you-be-a-christian-without-church",
+          "why": "A short, straight answer to a question many people are quietly asking."
+        },
+        {
+          "kind": "help",
+          "label": "The church hurt me",
+          "href": "/help/church-hurt",
+          "why": "If a church is part of why you stayed away, start with the page written for that."
+        }
+      ],
+      "question": "What do you hope a church would be for you, and what do you worry it might be?",
+      "do": "Visit a church this month, or go back to the one you have been visiting, and stay ten minutes after the service to meet one person. If you already belong to a church, ask someone there how you can serve.",
+      "verse": {
+        "ref": "Hebrews 10:24-25",
+        "text": "And let us consider how to spur one another on to love and good deeds. Let us not neglect meeting together, as some have made a habit, but let us encourage one another, and all the more as you see the Day approaching."
+      },
+      "care": [
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What was church like for you growing up, if you went at all?",
+        "discuss": [
+          "Acts 2:42 names four things the first church gave itself to. Which of them does your church do well?",
+          "Paul says no part of the body can say it does not need the others. Where is that hard to believe?",
+          "How can a group like this one be a safe place for someone a church has hurt?"
+        ],
+        "pray": "Pray for each person's church by name, or for the search for one, and pray gently for anyone carrying a wound from a church."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Baptism and the Lord's Supper",
+      "minutes": 10,
+      "teaching": [
+        "Jesus gave his church two things to do with ordinary stuff: water, and a meal of bread and a cup. His last command to his disciples included baptism, in the name of the Father, the Son and the Holy Spirit. On the night he was betrayed he took bread, gave thanks, broke it, and told his friends to do this in remembrance of him. Both signs point away from the person taking part and toward what Jesus did at the cross and the empty tomb. Paul sums up what holds Christians together in a few words: “one Lord, one faith, one baptism” (Ephesians 4:5).",
+        "Churches share those commands, and they differ on some of what follows. Some baptize the children of believers, and others baptize only those who confess faith for themselves. Some pour or sprinkle water, and others take a person under it and up again. Churches also describe in different words what baptism does and what happens in the Supper. Faithful Christians have read the same chapters with care and landed in different places, and this track doesn't choose between them. If you haven't been baptized, or you aren't sure whether to come to the Lord's Supper, ask your pastor how your church practices both, and why."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Baptism and the Lord's Supper",
+        "href": "/study/explorer/watch/baptism-and-supper",
+        "why": "What every church shares in the two signs, and where faithful churches differ, set out without taking a side."
+      },
+      "also": [
+        {
+          "kind": "catechism",
+          "label": "The family catechism",
+          "href": "/family/catechism",
+          "why": "The faith in seventy-six short questions and answers, each with an answer for an adult and a shorter one for a child."
+        },
+        {
+          "kind": "compare",
+          "label": "Christian traditions",
+          "href": "/theology/traditions",
+          "why": "Why there are so many churches, and where each of them came from."
+        }
+      ],
+      "question": "What questions do you have about baptism or the Lord's Supper that you have never asked anyone?",
+      "do": "Ask your pastor, or a leader at the church you are visiting, how that church practices baptism and the Lord's Supper, and what your own next step would be.",
+      "verse": {
+        "ref": "Ephesians 4:4-6",
+        "text": "There is one body and one Spirit, just as you were called to one hope when you were called; one Lord, one faith, one baptism; one God and Father of all, who is over all and through all and in all."
+      },
+      "group": {
+        "open": "Have you seen a baptism or shared the Lord's Supper? What do you remember about it?",
+        "discuss": [
+          "Why do you think Jesus gave his church things to do with water, bread and a cup, and not only words?",
+          "What do all churches share in baptism and the Supper, whatever else they differ on?",
+          "How can Christians who differ on these questions still treat one another as family?"
+        ],
+        "pray": "Thank God for the two signs Jesus gave, and pray for anyone in the group who is thinking about baptism or about coming to the Lord's Supper."
+      }
+    },
+    {
+      "n": 9,
+      "title": "When you fail",
+      "minutes": 10,
+      "teaching": [
+        "You will fail. Sometimes it will be an old habit that comes back, and sometimes a new wrong you didn't think you were capable of. The question that follows is a heavy one: has God turned away? John wrote to Christians, and he assumed they would need this sentence: “If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness” (1 John 1:9). To confess is to agree with God about your sin, to call it what he calls it. The way out isn't to deny it, and it isn't to despair over it. It is to bring it into the light.",
+        "Notice the two words John chooses. Faithful means God keeps his word. Just is more surprising, because you might expect a just God to punish. But God's forgiveness rests on the cross, and not on pretending that sin is small. Grace does not make sin small, and sin does not make grace run out. In the story Jesus told, the father sees his son far off and runs to him before the son can finish his speech. So when you fail, don't hide, and don't wait until you feel clean enough. Confess it to God, turn from it, and where you have wronged someone, go and put it right."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "1 John 1, passage by passage",
+        "href": "/study/bible/1-john/1#plain",
+        "why": "Three short passages on walking in the light, with a promise for the day you fail."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Does God still love me when I do wrong?",
+          "href": "/study/explorer/watch/love-when-i-do-wrong",
+          "why": "Jesus' own story of a son who ran away and a father who ran too, in seven pictures."
+        },
+        {
+          "kind": "chapter",
+          "label": "Luke 15, passage by passage",
+          "href": "/study/bible/luke/15#plain",
+          "why": "The whole story of the lost son, with what its first hearers would have noticed."
+        },
+        {
+          "kind": "answer",
+          "label": "Can you lose your salvation?",
+          "href": "/answers/can-you-lose-your-salvation",
+          "why": "Faithful churches answer this differently. The page gives each side its case and then speaks to the person who is afraid."
+        }
+      ],
+      "question": "Is there something you have been hiding from God, or from someone you wronged, that it is time to bring into the light?",
+      "do": "Take five quiet minutes today. Name one sin to God plainly, without excuses, and then read 1 John 1:9 aloud as his answer to you.",
+      "verse": {
+        "ref": "1 John 1:9",
+        "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+      },
+      "care": [
+        "If you are afraid that you have fallen away from God, that fear is not usually the mark of someone who has. Read Romans 8:38-39 slowly. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When you were a child and did something wrong, what did you expect would happen when you were found out?",
+        "discuss": [
+          "John says God is faithful and just to forgive. Why is ‘just’ a surprising word there?",
+          "In Jesus' story the father runs before the son finishes his speech. What does that say about God?",
+          "What is the difference between guilt that leads a person home and guilt that only crushes?"
+        ],
+        "pray": "Leave a minute of silence for each person to confess privately to God, then have one person thank God aloud that he is faithful and just to forgive."
+      }
+    },
+    {
+      "n": 10,
+      "title": "When you doubt",
+      "minutes": 10,
+      "teaching": [
+        "Having questions doesn't mean your faith was never real. The Bible shows people who believed and struggled at once, and it tells the church to “have mercy on those who doubt” (Jude 22). A father once brought his suffering son to Jesus and cried out, “I do believe; help my unbelief!” (Mark 9:24). Jesus did not send him away to get his certainty in order first. He helped the boy.",
+        "So don't bury a doubt, and don't feed it in secret either. Say it to God, and then to a Christian you trust. Then look for the question in its strongest form and for the strongest answer, because a doubt is easier to weigh once it has been stated plainly. This site was built with that in mind. The Honest Answers take the hard questions one at a time, and the longer library called the case for the faith puts each objection at full strength before it replies. Christianity makes claims about real events, above all that Jesus rose, and it tells you where to check."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "What if Christianity is wrong?",
+        "href": "/answers/what-if-christianity-is-wrong",
+        "why": "It puts the case against believing at full strength before it answers, which is what an honest question is owed."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "The empty tomb",
+          "href": "/questions/jesus/the-empty-tomb",
+          "why": "Was Jesus buried in a known tomb, and was it found empty? The most disputed part of the case, with the doubts stated first."
+        },
+        {
+          "kind": "film",
+          "label": "Why does God seem silent sometimes?",
+          "href": "/study/explorer/watch/god-silent",
+          "why": "The felt silence of God in seven pictures: the psalms of lament, Elijah at the mountain, and the cry of Jesus from the cross."
+        }
+      ],
+      "question": "What is the question about the faith you would most like answered, and who could you ask?",
+      "do": "Write your hardest question down in one sentence. Then look for it among the Honest Answers or in the case for the faith, read what is there, and note where you would push back.",
+      "verse": {
+        "ref": "Mark 9:24",
+        "text": "Immediately the boy’s father cried out, “I do believe; help my unbelief!”"
+      },
+      "care": [
+        "If you are a person whose conscience never rests, who keeps checking whether you have really believed, hear John's words: “Even if our hearts condemn us, God is greater than our hearts, and He knows all things” (1 John 3:20). Such fear can be part of anxiety or a habit of the mind, and that is not a failure of faith. Talk with a pastor or a friend you trust, and if the fear will not let you rest, a counsellor or a doctor can help too. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What is something you used to be sure of and later changed your mind about?",
+        "discuss": [
+          "The father in Mark 9 believed and doubted in the same breath. Have you ever prayed like that?",
+          "Which question about Christianity do the people around you ask most often?",
+          "How should a church treat someone who says their doubts out loud?"
+        ],
+        "pray": "Invite each person to name one doubt or question before God without anyone answering it, then ask God together for mercy and for light."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Living it on a Tuesday",
+      "minutes": 10,
+      "teaching": [
+        "Faith is lived on ordinary days. Most of following Jesus happens at work, at a kitchen table, in traffic, and in the way you speak to the person who irritates you. The Bible has a great deal to say about those places: money, anger, work, rest, marriage, friendship, worry. Paul's rule covers all of it: “And whatever you do, in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through Him” (Colossians 3:17).",
+        "That can sound like a demand to fix everything by Friday. It isn't. Take one thing. Ask what you are facing this week, find what Scripture says about it, and do the next faithful thing in that one place. Wisdom in the Bible is seldom a rule for every case. It is a way of seeing your situation with God in it, and it is learned slowly, mostly by practice, and often in the company of people further along than you. Good works don't earn God's love. They are what a life looks like when it already has it."
+      ],
+      "open": {
+        "kind": "wisdom-finder",
+        "label": "What Does the Bible Say About What I Am Facing?",
+        "href": "/tools/wisdom-finder",
+        "why": "Say what you are facing in your own words, and it finds the subject and the passages that bear on it."
+      },
+      "also": [
+        {
+          "kind": "self-check",
+          "label": "Where Are You With God? A Self-Check",
+          "href": "/diagnostic",
+          "why": "Five minutes for an honest read on where you are. It keeps your past results on this device."
+        },
+        {
+          "kind": "tool",
+          "label": "Build a Weekly Rhythm of Prayer and Rest (a Rule of Life)",
+          "href": "/tools/rule-of-life",
+          "why": "Fifteen minutes to set a weekly rhythm of prayer and rest that you can keep."
+        },
+        {
+          "kind": "devotion",
+          "label": "Tonight's devotion",
+          "href": "/family/tonight",
+          "why": "If you share a table with anyone, start there tonight: a passage, a question to talk about, and a prayer."
+        }
+      ],
+      "question": "What is the one ordinary situation this week where you most need to know how to follow Jesus?",
+      "do": "Type that situation into the tool, read one of the passages it gives you, and decide on one thing you will do differently before Sunday.",
+      "verse": {
+        "ref": "Colossians 3:17",
+        "text": "And whatever you do, in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through Him."
+      },
+      "group": {
+        "open": "What does an ordinary Tuesday look like for you, hour by hour?",
+        "discuss": [
+          "Where is it hardest to remember God in your week: at work, at home, or somewhere else?",
+          "What did the tool bring up for the situation you typed in, and did anything surprise you?",
+          "Who do you know that lives their faith well in ordinary things? What do they do?"
+        ],
+        "pray": "Have each person name one ordinary place they will be this week, and pray for one another to be faithful there."
+      }
+    },
+    {
+      "n": 12,
+      "title": "What next",
+      "minutes": 10,
+      "teaching": [
+        "Twelve sessions don't make anyone a finished Christian, and no one becomes one in this life. What you have now is a start. You have looked at Jesus, heard the good news of the cross and the empty tomb, and begun to read, to pray, and to gather with his people. Paul wrote to a young church that he was sure of one thing: “He who began a good work in you will carry it on to completion until the day of Christ Jesus” (Philippians 1:6). The work is God's, and he is patient with it.",
+        "So keep going in small, steady ways. Stay in a Gospel until you finish it. Keep the five minutes of prayer. Belong to a church, and let a few people there know you well enough to ask how you really are. Then choose one next thing, and only one. The eight-week plan for a new Christian takes these same beginnings further, a week at a time. The study guide lets you go over the first steps with a friend or a pastor. And when you have finished Mark, you can read it again more slowly, a chapter at a time."
+      ],
+      "open": {
+        "kind": "plan",
+        "label": "Eight Weeks for a New Christian",
+        "href": "/plans/new-believer",
+        "why": "Each week has one focus, one small daily practice and one thing to read, and it gets to baptism, the old habits, and the doubts that come back."
+      },
+      "also": [
+        {
+          "kind": "guide",
+          "label": "New Believers: the study guide",
+          "href": "/studyguides/new-believer",
+          "why": "A five-session study with a leader's guide, so you can ask a friend or a pastor to sit down and do it with you."
+        },
+        {
+          "kind": "tool",
+          "label": "Memorize Scripture: 40 Key Verses",
+          "href": "/tools/scripture-memory",
+          "why": "Keep a few verses where you can reach them without a book, ten minutes a day."
+        },
+        {
+          "kind": "book",
+          "label": "Open Mark in the Study Bible",
+          "href": "/study/bible/mark",
+          "why": "Read one Gospel straight through, with notes on every chapter beside the text."
+        }
+      ],
+      "question": "Looking back over these sessions, what has changed in what you believe or in how you live?",
+      "do": "Choose one next step from this page and begin it this week. Then tell the person who has gone through this track with you what you chose.",
+      "verse": {
+        "ref": "Philippians 1:6",
+        "text": "He who began a good work in you will carry it on to completion until the day of Christ Jesus."
+      },
+      "group": {
+        "open": "What do you remember most from these twelve sessions?",
+        "discuss": [
+          "What habit from this track do you most want to keep, and what would help you keep it?",
+          "Paul says God will finish what he began. How does that change the way you think about your slow days?",
+          "What will this group do next: a study guide, an eight-week plan, or a book of the Bible?"
+        ],
+        "pray": "Thank God by name for each person in the group, and ask him to carry on in each one what he has begun."
+      }
+    }
+  ]
+}

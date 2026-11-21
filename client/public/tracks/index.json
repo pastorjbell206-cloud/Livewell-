@@ -1,0 +1,117 @@
+{
+  "tracks": [
+    {
+      "slug": "new-to-this",
+      "title": "New to faith, or coming back",
+      "for": "I'm new to this",
+      "road": "new",
+      "subtitle": "Twelve short sessions for someone who has just come to faith, or is coming back to the start: who Jesus is, how to read and pray, the church, and what to do when you fail or doubt.",
+      "minutes": 10,
+      "kinds": [
+        "answer",
+        "book",
+        "case",
+        "catechism",
+        "chapter",
+        "compare",
+        "devotion",
+        "film",
+        "guide",
+        "help",
+        "plan",
+        "psalms",
+        "self-check",
+        "study",
+        "tool",
+        "wisdom",
+        "wisdom-finder"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Who Jesus is",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Mark 1, passage by passage"
+        },
+        {
+          "n": 2,
+          "title": "Why he died and rose",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "Why did Jesus die?"
+        },
+        {
+          "n": 3,
+          "title": "Trusting him: grace and faith",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Ephesians 2, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "How to read the Bible",
+          "minutes": 10,
+          "kind": "study",
+          "opens": "How to study the Bible"
+        },
+        {
+          "n": 5,
+          "title": "How to pray",
+          "minutes": 10,
+          "kind": "psalms",
+          "opens": "Pray Psalm 23 slowly"
+        },
+        {
+          "n": 6,
+          "title": "The Holy Spirit",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "The Holy Spirit in a believer"
+        },
+        {
+          "n": 7,
+          "title": "The church, and why it matters",
+          "minutes": 10,
+          "kind": "wisdom",
+          "opens": "Finding a Church"
+        },
+        {
+          "n": 8,
+          "title": "Baptism and the Lord's Supper",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "Baptism and the Lord's Supper"
+        },
+        {
+          "n": 9,
+          "title": "When you fail",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "1 John 1, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "When you doubt",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "What if Christianity is wrong?"
+        },
+        {
+          "n": 11,
+          "title": "Living it on a Tuesday",
+          "minutes": 10,
+          "kind": "wisdom-finder",
+          "opens": "What Does the Bible Say About What I Am Facing?"
+        },
+        {
+          "n": 12,
+          "title": "What next",
+          "minutes": 10,
+          "kind": "plan",
+          "opens": "Eight Weeks for a New Christian"
+        }
+      ]
+    }
+  ]
+}
