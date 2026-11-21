@@ -14021,3 +14021,22 @@ Cut for want of a source in the repository: that the ‘you’ of the blessing i
 | The Song of the Ark and the scribes' marks; menuchah | 29-36 | numbers/10.json `literary`, `words` (H4496H) | Repository |
 | Psalm 68:1; Ephesians 4:8; Psalm 95:11; Hebrews 4:9; Matthew 11:28 | 29-36 | numbers/10.json `christ`; BSB | BSB text |
 | Why ask Hobab: two readings; the text does not criticize Moses | 29-36 | numbers/10.json `hard` | Repository; no side |
+
+## The plain notes on Numbers 12 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Miriam the prophetess (Exodus 15:20), Aaron the high priest, the older siblings | 1-9 | numbers/12.json `story`, `cultural` | Repository |
+| Cush and the two readings of the wife (a Nubian woman; Zipporah, with Habakkuk 3:7); not settled | 1-9 | numbers/12.json `historical`, `words` (H3569G) | Repository; no side |
+| The real issue in verse 2; visions and dreams against ‘mouth to mouth’; the steward; anav; verse 3 as another's comment; the feminine verb | 1-9 | numbers/12.json `literary`, `words` (H6035, H0539), `historical` | Repository |
+| Micah 6:4; Hebrews 3:5-6; John 1:18 | 1-9 | numbers/12.json `cultural`, `christ`; BSB | BSB text |
+| God does not criticize the marriage; the complaint read as ethnic or as a pretext | 1-9 | numbers/12.json `hard`, `words` | Repository; no side |
+| The misuse of the Bible to rank people by skin color and to forbid marriages between peoples, named and rejected | 1-9 | The run's content rule; Genesis 1:27 | A rejection stated by these notes |
+| The disease of Leviticus 13; the reversal; ‘My lord’; the five-word prayer; honor and shame; seven days (Leviticus 13:4-5); the camp waits | 10-16 | numbers/12.json `cultural`, `literary`; leviticus/plain/13.json 45-46 | Repository |
+| Why Miriam and not Aaron: three suggestions, unexplained | 10-16 | numbers/12.json `hard` | Repository |
+| Deuteronomy 24:9; Matthew 5:44 | 10-16 | numbers/12.json `christ`; BSB | BSB text |
+| Not a rule about illness; Leviticus 13 makes no such link; John 9:3 | 10-16 | leviticus/plain/13.json 45-46 `hard` | Repository |
+| ‘White as snow’ of diseased skin (Exodus 4:6; 2 Kings 5:27); the irony some readers note; no statement about skin or race | 10-16 | exodus/plain/4.json 1-9 `later`; numbers/12.json `hard`; BSB | Repository; BSB text |
+| Care paragraph on sickness and faith | 10-16 | 2-corinthians/plain/12.json 7-10 `hard` | Reused whole, word for word |
