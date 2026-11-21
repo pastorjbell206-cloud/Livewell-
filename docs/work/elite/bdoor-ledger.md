@@ -13328,3 +13328,24 @@ Cut before publishing: the Philistines' guilt offering of gold (1 Samuel 6:3) an
 | Leviticus 10:17; Hebrews 13:11-12 | 24-30 | leviticus/4.json `christ`; BSB | BSB text |
 
 Cut before publishing: that the priests kept alive ‘what God had lit’ (the order of chapters 8 and 9 does not allow it to be said so simply); the Laws of Hammurabi on deposits and Egyptian priests' linen (true to the deep note, detours here); the different verse numbers of the Hebrew Bible.
+
+## The plain notes on Leviticus 7 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The guilt offering handled like the sin offering; which priest keeps what | 1-10 | leviticus/7.json `literary`; BSB | Repository |
+| Priests without land living from the altar; Eli's sons (1 Samuel 2:12-17) | 1-10 | leviticus/7.json `historical`, `doctrines` (church); leviticus/3.json `historical` | Repository |
+| Numbers 18:20; 1 Corinthians 9:14 | 1-10 | BSB | BSB text |
+| Three kinds of peace offering; the thanksgiving feast and the psalms; vows paid with a feast | 11-21 | leviticus/7.json `historical`, `words` (H8426), `doctrines` (prayer) | Repository |
+| The time limits pushed the giver to invite others; leavened loaves eaten, not burned | 11-21 | leviticus/7.json `cultural` | Repository |
+| Holy food and clean eaters | 11-21 | leviticus/7.json `doctrines` (holiness) | Repository |
+| Psalm 116:17-18; Psalm 107:22; Jeremiah 33:11; Hebrews 13:15; Luke 22:19; the two views of the background of the Lord's Supper | 11-21 | leviticus/7.json `historical`, `christ`; BSB | BSB text; no side |
+| ‘Cut off’: four times here; execution, expulsion, or a penalty carried out by God; 20:3-5; offenses out of sight | 11-21 | leviticus/7.json `hard` | Repository; no side |
+| Addressed to all Israel; the fat of the three sacrificial animals; blood forbidden more widely; 17:11; Genesis 9:4 | 22-27 | leviticus/7.json `literary`; leviticus/3.json `hard`, `doctrines` | Repository |
+| ‘With his own hands’; the wave offering as a lifting up; food that passed through God's hands | 28-38 | leviticus/7.json `cultural`, `words` (H8573) | Repository |
+| The summary; the ordination offering not yet described, and chapter 8 | 28-38 | leviticus/7.json `story` | Repository |
+| Exodus 29:26-28; Deuteronomy 18:3 and the two explanations; ‘the text does not explain it’ | 28-38 | leviticus/7.json `historical`; BSB | Repository; no side |
+
+Cut before publishing: the care line from the 1 Corinthians 5 note (it names Paul and could not be used whole here); Proverbs 7:14 (true to the deep note, a detour); the Greek word behind ‘Eucharist’.
