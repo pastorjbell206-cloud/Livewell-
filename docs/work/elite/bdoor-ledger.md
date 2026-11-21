@@ -14534,3 +14534,19 @@ Cut or narrowed on the book page: that Deuteronomy is among the books most quote
 | Sihon north of the Arnon; the pattern broken; the offer of peace and 20:10; refusing passage as hostile; qashah and Pharaoh; charam, the ban | 24-37 | deuteronomy/2.json `historical`, `cultural`, `literary`, `words` (H2763A, H7185) | Repository |
 | Numbers 21:23; Psalm 136:19; Ephesians 6:12 | 24-37 | numbers/plain/21.json 21-35; deuteronomy/2.json `christ`; BSB | Repository; BSB text |
 | The readings of verse 34 and of the hardening; Genesis 15:16; the Mesha inscription; no side; no warrant for violence, no nation or conflict today | 24-37 | deuteronomy/2.json `hard`; numbers/plain/21.json 21-35 `hard` (the same wording); questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; worded as the Numbers 21 note; no side |
+
+## The plain notes on Deuteronomy 3 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Bashan, its cattle and oaks; Edrei as Daraa; the walled cities against the fear of Kadesh; the Rephaim; the bed, the cubit, the two readings; ‘still in Rabbah’ as a later note; the ban and Mesha in the ninth century BC | 1-11 | deuteronomy/3.json `historical`, `cultural`, `words` (H2763A, H7497B) | Repository |
+| Numbers 21:34; Psalm 135:11; Romans 12:21 | 1-11 | deuteronomy/3.json `hard`; BSB | Repository; BSB text |
+| The readings of verse 6; Genesis 15:16; chapter 20's limit; Joshua and Judges; no side; no warrant for violence, no nation or conflict today | 1-11 | deuteronomy/3.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
+| Numbers 32 behind the grant; land held by clans, Jair; the condition; ‘rest’ (nuach); the charge to Joshua | 12-22 | deuteronomy/3.json `historical`, `cultural`, `words` (H5117); numbers/plain/32.json | Repository |
+| Joshua 22:4; Hebrews 4:8-9 | 12-22 | deuteronomy/3.json `christ`; BSB | Repository; BSB text |
+| The narrowing of the chapter; ‘cross over’ and ‘see’; chazaq and ‘be strong and courageous’; ‘on account of you’ with the pointer to the chapter 1 note; Beth-peor | 23-29 | deuteronomy/3.json `literary`, `words` (H2388G); deuteronomy/1.json `hard`; BSB (4:3) | Repository |
+| 34:4; 2 Corinthians 12:8-9; Matthew 26:39; Matthew 17:3 | 23-29 | deuteronomy/3.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 3: a sentence that the gods of the ancient world could be worn down with gifts (no source in the repository).
