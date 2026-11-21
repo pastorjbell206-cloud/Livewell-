@@ -1,7 +1,7 @@
 ---
 area: religions
 slug: only-a-christian-because-of-where-you-were-born
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?"
 ledger: docs/work/elite/apol-ledger.md, "Twentieth run", key "bb"
 ---

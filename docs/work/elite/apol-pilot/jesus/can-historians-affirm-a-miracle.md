@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: can-historians-affirm-a-miracle
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?"
 ledger: docs/work/elite/apol-ledger.md, "Fourteenth run", key "x"
 ---

@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: the-command-to-destroy-the-canaanites
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?"
 ledger: docs/work/elite/apol-ledger.md, "Sixteenth run", key "af"
 ---

@@ -1,7 +1,7 @@
 ---
 area: evil
 slug: natural-evil-and-animal-suffering
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?"
 ledger: docs/work/elite/apol-ledger.md, "Seventeenth run", key "ak"
 ---

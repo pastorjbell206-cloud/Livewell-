@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: written-decades-later
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Weren't the Gospels written decades after Jesus by people who never met him?"
 ledger: docs/work/elite/apol-ledger.md, "Twelfth run", key "k"
 ---

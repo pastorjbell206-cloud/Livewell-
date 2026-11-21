@@ -1,7 +1,7 @@
 ---
 area: science
 slug: evolution-and-genesis
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?"
 ledger: docs/work/elite/apol-ledger.md, "Thirteenth run", key "s"
 ---

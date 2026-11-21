@@ -1,7 +1,7 @@
 ---
 area: evil
 slug: the-evidential-problem-of-evil
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?"
 ledger: docs/work/elite/apol-ledger.md, "Seventeenth run", key "aj"
 ---

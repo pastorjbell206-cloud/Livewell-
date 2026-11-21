@@ -1,7 +1,7 @@
 ---
 area: god
 slug: the-argument-from-reason
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?"
 ledger: docs/work/elite/apol-ledger.md, "Eighteenth run", key "ar"
 ---

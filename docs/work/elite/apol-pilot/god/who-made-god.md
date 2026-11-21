@@ -1,7 +1,7 @@
 ---
 area: god
 slug: who-made-god
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?"
 ledger: docs/work/elite/apol-ledger.md, "Eighteenth run", key "ao"
 ---

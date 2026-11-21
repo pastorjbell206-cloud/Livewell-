@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: forgeries-in-the-new-testament
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Weren't some New Testament letters forged in the names of Paul and Peter?"
 ledger: docs/work/elite/apol-ledger.md, "Twelfth run", key "n"
 ---

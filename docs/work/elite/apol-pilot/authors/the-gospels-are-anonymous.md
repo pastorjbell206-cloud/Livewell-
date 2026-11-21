@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: the-gospels-are-anonymous
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?"
 ledger: docs/work/elite/apol-ledger.md, "Twelfth run", key "j"
 ---

@@ -1,7 +1,7 @@
 ---
 area: god
 slug: the-moral-argument-and-euthyphro
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?"
 ledger: docs/work/elite/apol-ledger.md, "Eighteenth run", key "aq"
 ---

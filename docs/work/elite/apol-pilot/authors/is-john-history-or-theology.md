@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: is-john-history-or-theology
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-second run", key "bj"
 ---

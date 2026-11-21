@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: did-jesus-claim-to-be-god
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-first run", key "bd"
 ---

@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: stories-changed-in-the-telling
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?"
 ledger: docs/work/elite/apol-ledger.md, "Twelfth run", key "l"
 ---

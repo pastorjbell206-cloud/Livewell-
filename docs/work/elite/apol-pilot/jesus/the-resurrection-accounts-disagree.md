@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: the-resurrection-accounts-disagree
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?"
 ledger: docs/work/elite/apol-ledger.md, "Fourteenth run", key "w"
 ---
