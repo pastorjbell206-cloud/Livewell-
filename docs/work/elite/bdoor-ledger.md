@@ -13904,3 +13904,21 @@ Cut for want of a source in the repository: that the priests' blessing is still 
 | The four mothers and the four sides; the order on the march; the refrain of obedience; 24:2 | 18-34 | numbers/2.json `cultural`, `literary`, `story` | Repository |
 | Song of Songs 2:4; Revelation 21:3, 13, a link of theme | 18-34 | numbers/2.json `words`, `christ`; BSB | BSB text |
 | The size of the camp: as written; elef (Judges 6:15), Mendenhall 1958 and the objection; symbolic; no side | 18-34 | numbers/2.json `hard`, `words` (H0505G) | Repository; no side |
+
+## The plain notes on Numbers 4 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A plan for moving day; carried shrines in Egypt and the chest from Tutankhamun's tomb (1922); no image, the ark covered | 1-20 | numbers/4.json `story`, `historical` | Repository |
+| The dyes and what they marked; the ark's blue cloth outside; tachash uncertain | 1-20 | numbers/4.json `cultural`, `words` (H8476) | Repository |
+| The lines of contact; the two warnings, the second framed as mercy (verses 18-19) | 1-20 | numbers/4.json `cultural`, `literary` | Repository |
+| Uzzah (2 Samuel 6:6-7); 1 Chronicles 15:13, 15; Matthew 27:51; Hebrews 10:19-20 | 1-20 | numbers/4.json `story`, `christ`; BSB | BSB text |
+| Why death for touching or looking: contagious holiness, or the danger of God's presence, the laws a protection; 1 Samuel 6:19 | 1-20 | numbers/4.json `hard` | Repository |
+| Tsava for the Levites' duty; loads assigned by name; the ages (8:24; the old Jewish explanation; 1 Chronicles 23:26) | 21-33 | numbers/4.json `words` (H6635I), `cultural`, `historical` | Repository |
+| 1 Chronicles 23 to 26; 1 Corinthians 12:22 | 21-33 | BSB | BSB text |
+| The totals; chapter 10 follows the plan; massa, burden, and the prophets' word | 34-49 | numbers/4.json `outline`, `story`, `words` (H4853A) | Repository |
+| Matthew 11:30, not a prediction | 34-49 | numbers/4.json `christ`; BSB | BSB text |
+
+The sentence that the passage ‘is no reason for anyone to be afraid to pray’ is a caution of these notes, not a claim from a source.
