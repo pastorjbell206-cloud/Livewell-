@@ -13687,3 +13687,23 @@ Cut or narrowed before publishing: the burning of verse 14 (interpreters differ,
 | ‘If you live with chronic illness, pain or disability ... places to turn.’ | 16-24 | 2-corinthians/plain/12.json (7-10 `hard`), its last four sentences, word for word | Repository |
 
 Cut before publishing: the meaning of the burning in verse 9 (interpreters differ; the chapter 20 deep note carries it); Daniel 1:4. The eunuchs of Isaiah 56 are said to be shut out ‘by another law’ (Deuteronomy 23:1) without quoting it. The sentence that a church cannot appeal to this chapter to keep disabled people from its life or leadership is new; it rests on the deep note's ‘disability is no barrier to any service in the church’.
+
+## The plain notes on Leviticus 22 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Priests without farmland, living on offerings and tithes; the holy food as daily bread | 1-16 | leviticus/22.json `historical` | Repository |
+| Uncleanness normal and not sin; wait, bathe, eat | 1-16 | leviticus/22.json `cultural` | Repository |
+| The household of that world: the slave, the hired worker, the guest, the daughter who returns | 1-16 | leviticus/22.json `cultural` | Repository |
+| Numbers 18:20; 1 Samuel 21:6; Mark 2:25 | 1-16 | leviticus/24.json `historical`; BSB | BSB text |
+| The temptation to give God the leftover; contempt, not poverty | 17-25 | leviticus/22.json `historical` | Repository |
+| The list parallel to 21:17-23; a sign at the altar | 17-25 | leviticus/21.json `hard`, `cultural` | Repository |
+| The stunted limb: allowed as a freewill gift, not for a vow | 17-25 | leviticus/22.json `cultural` | Repository |
+| Malachi 1:8; 2 Samuel 24:24; Hebrews 9:14; Romans 12:1 | 17-25 | leviticus/22.json `historical`, `christ`; BSB | BSB text |
+| Mother and young: compassion toward animals, or the boundary of life and death; no reason given | 26-33 | leviticus/22.json `cultural` | Repository; no side |
+| Verses 31-33 gather the section from chapter 17 | 26-33 | leviticus/22.json `literary` | Repository |
+| Deuteronomy 22:7; Proverbs 12:10; Ezekiel 36:23; Matthew 6:9 | 26-33 | leviticus/22.json `cultural`, `christ`; BSB | BSB text |
+
+Cut before publishing: nothing of substance. The slave of verse 11 is named plainly, with the statement that these notes do not defend slavery and a pointer to chapter 25.
