@@ -14855,3 +14855,24 @@ Cut in chapter 20: that Israel had few horses and chariots (not in the repositor
 | Joshua 8:29; John 19:31; Acts 5:30 with the pointer to the Acts 2:22-28 note; Galatians 3:13-14 as the New Testament's own reading | 22-23 | deuteronomy/21.json `christ`, `historical`; deuteronomy/intro.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 21: that the captive woman's parents were ‘probably dead’; that the Hebrew verb in verse 14 is ‘a strong one’; that the rebellious son was ‘wasting the family's living’; that the soldier ‘may not touch her on the battlefield’ (narrowed to ‘He must wait a full month’).
+
+## The plain notes on Deuteronomy 22 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘You must not ignore it’ as ‘you shall not hide yourself’ (alam); the three repetitions; the village world of small farms | 1-4 | deuteronomy/22.json `historical`, `literary`, `words` (H5956) | Repository |
+| Exodus 23:4; Luke 10:31-32; 15:4 | 1-4 | deuteronomy/22.json `words`, `christ`; BSB | Repository; BSB text |
+| Flat roofs and their uses; ma'aqeh only here; the mixtures and the two explanations, the ox and donkey; the tassels and Numbers 15, worn today | 5-12 | deuteronomy/22.json `historical`, `cultural`, `words` (H4624); guides/reading-law.json (the roof railing) | Repository |
+| Verse 5: set among the laws of distinct kinds; no reason given in the verse; no application argued; ‘nothing here gives anyone a reason for contempt toward any person’ | 5-12 | BSB (the verse itself); deuteronomy/22.json `cultural` (the laws of kinds); romans/plain/1.json (the respect sentence) | Repository; no modern application argued |
+| Numbers 15:39; Matthew 9:20; Matthew 10:29 | 5-12 | deuteronomy/22.json `christ`; BSB | Repository; BSB text |
+| The slandered bride: the cloth kept by the family; the hundred shekels, double the bride-price; the bar on divorce as protection; the hearing at the gate | 13-21 | deuteronomy/22.json `cultural`, `hard` | Repository |
+| Matthew 1:19; John 8:11 | 13-21 | BSB | BSB text |
+| Verses 20-21 faced: uneven, severe, beside a protection; Israel's national law, not the church's; no warrant to shame or harm; the care line reused whole | 13-21 | deuteronomy/22.json `hard`; existing plain notes (‘If you are being hurt, at home, at work or in a church...’) | Repository; word for word |
+| Betrothal as binding; the woman in the field held innocent, the comparison with murder, the benefit of the doubt, tsa'aq; other ancient law collections; nevalah and Tamar | 22-30 | deuteronomy/22.json `historical`, `words` (H6817, H5039) | Repository |
+| 2 Samuel 13:12, 14, 20; Psalm 72:12; Psalm 34:18 | 22-30 | deuteronomy/22.json `words`, `christ`; BSB | Repository; BSB text |
+| Verses 28-29: what readers have said (the woman's future and the man's cost; Exodus 22:17 and the father's refusal; the verb debated against verse 25); the difficulty not removed; nothing here asks any victim to marry, stay with or return to anyone | 22-30 | deuteronomy/22.json `hard`; exodus/plain/22.json 16-17 `hard` (‘These verses must never be used to press anyone into marrying a person who has harmed them’) | Repository; not explained away |
+| The care line reused whole | 22-30 | exodus/plain/22.json 16-17 and others (‘A word for anyone who has been sexually assaulted...’) | Repository; word for word |
+
+Cut in chapter 22: a reason for letting the mother bird go (the verse gives none, and the repository's notes give none); 2 Corinthians 6:14 as an echo of the ox and the donkey (not in the repository's notes); any account of what verse 5 had in view in its own world (the repository's notes give none); a new sentence about a person's worth, which was not an existing care line.
