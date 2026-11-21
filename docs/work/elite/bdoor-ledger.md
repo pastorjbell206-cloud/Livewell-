@@ -14770,3 +14770,19 @@ Cut in chapter 14: that later Jewish practice counted separate tithes (not in th
 | Exodus 23:8; Amos 5:12, 24; Micah 3:11 | 18-22 | deuteronomy/16.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 16: that ‘Pentecost’ comes from the Greek word for fifty (not checked in the repository's notes).
+
+## The plain notes on Deuteronomy 17 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The gate as courthouse; investigation; two or three witnesses; the witnesses' hands first; the rabbis' safeguards | 1-7 | deuteronomy/17.json `cultural`, `words` (H5707), `hard` | Repository |
+| 19:15; Matthew 18:16; 1 Timothy 5:19; John 8:7 | 1-7 | deuteronomy/17.json `christ`; BSB | Repository; BSB text |
+| The death penalty for worshiping other gods: Israel's covenant and treason; the safeguards; most traditions and the theonomists, rejected by most Reformed churches; no church or state may use it; the misuse named | 1-7 | deuteronomy/17.json `hard`; guides/reading-law.json (theonomy); deuteronomy/13.json `hard`; deuteronomy/plain/13.json 1-5 | Repository; set in Israel's covenant |
+| The higher court of priests and judge; the office and not a person; ‘presumptuously’; the right and the left in verses 11 and 20 | 8-13 | deuteronomy/17.json `literary`; BSB (5:32; 18:22) | Repository; BSB text |
+| 2 Chronicles 19:8 | 8-13 | BSB | BSB text |
+| Kingship in the ancient world; the king receives the law; horses, wives, silver and gold and what each meant; the copy written before the priests; the Greek rendering and the book's name | 14-20 | deuteronomy/17.json `historical`, `cultural`, `words` (H4428G, H8451); deuteronomy/intro.json `overview` | Repository |
+| 1 Samuel 8:5; 1 Kings 10:26-28; 11:3, and Kings written with this chapter in view; Zechariah 9:9 and Matthew 21:5 as a pattern, not a prediction; Mark 10:43 | 14-20 | deuteronomy/17.json `historical`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 17: a statement that the Hebrew word behind ‘countrymen’ is ‘brothers’ (not in the repository's notes; verse 15's ‘brothers’ is cited in its place).
