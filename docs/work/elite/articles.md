@@ -111,3 +111,11 @@ Final read as the skeptic, all five: each grants the strongest objection in its 
 4. Baptism: the essay takes no side and gives no hint of your church's practice. Older pages on the site do say it. Is the essay's silence what you want here?
 5. Children's suffering: the essay says nothing about what becomes of children who die. Many parents will come to it with exactly that question. If you want it addressed, it needs your own pastoral judgment.
 6. The ledger's "check first" rows (this machine could reach only GitHub): the 1667 Virginia law on baptism and slavery; the death of Dostoevsky's son in 1878; the Orthodox account of second marriages; the Gnadenhutten killings of 1782 and the Cherokee removal of 1838. Each is standard history, and none was read in a source this run.
+
+## Gates (2026-11-21, after merging the target branch)
+
+In the order run, every one read by its own exit code: `pnpm check` passed. The 46 commands of the CI content-gates step all passed on the first run (the passage index had been rebuilt before the merge: 60 chapter files written). `pnpm test` passed (1,940 tests; 73 skipped as the suite marks them). `pnpm build`, `pnpm run sitemap`, `pnpm run prerender` and `pnpm run audit:canonicals` passed (0 canonical failures; the prerender wrote each of the five essays with its own title).
+
+On the served build (`scripts/serve-like-vercel.mjs`, port 4655) at 390 and 1440: each essay's page shows its title as the H1 and its last paragraph, with no sideways scroll; all five are listed on /writing and found by /search; the only failed requests were the local server's missing `/_vercel` scripts and `/api/track`. Night was not checked: the site's dark mode is switched off for every visitor. Screenshots are in `/home/user/elite-shots/articles/`.
+
+Before the full run, the two tests that hold the shelf's shape failed once, as expected, on the new counts and on the section that is no longer empty; they were updated (75 essays, 25 live, eight sections shown) and passed.
