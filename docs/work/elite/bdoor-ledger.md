@@ -14421,3 +14421,16 @@ Cut for want of a source in the repository: a reason for the killing of the boys
 | Judges 2:3; Deuteronomy 9:5; Leviticus 18:28 | 50-56 | numbers/33.json `cultural`; questions/old-testament/the-command-to-destroy-the-canaanites.json; BSB | Repository; BSB text |
 | The readings of the conquest (judgment after patience, Genesis 15:16; the idiom of ancient war, Exodus 23:30, survivors in Joshua and Judges; accommodation and its critics); what holds under all; Luke 9:54-55 | 50-56 | questions/old-testament/the-command-to-destroy-the-canaanites.json; context/guides/the-violence-of-the-old-testament.json; numbers/21.json `hard` | Repository; no side |
 | No modern nation, people, border or conflict in view; the Crusades and the colonies named as misuse | 50-56 | context/guides/the-violence-of-the-old-testament.json (‘What No One May Do With These Texts’); the run's content rule | Repository; a caution of these notes |
+
+## The plain notes on Numbers 34 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The promise to Abraham given edges (Genesis 12:7); the clockwise list; the seas and the Brook of Egypt; uncertain northern points; boundary lists in treaties and grants; ‘inheritance’ | 1-15 | numbers/34.json `story`, `historical`, `cultural`, `literary`, `words` (H1366G, H5157) | Repository |
+| The likeness to Egypt's province of Canaan; never fully held under the judges; David and Solomon; Genesis 15:18 and Ezekiel 47 draw the lines differently | 1-15 | numbers/34.json `historical`; BSB | Repository; BSB text |
+| Not a title deed for any map today; no modern nation, border or conflict in view; Christians differ about the land | 1-15 | The run's content rule | A caution of these notes; no side |
+| 1 Kings 8:65; Deuteronomy 19:14; Romans 4:13; Hebrews 11:16 | 1-15 | numbers/34.json `historical`, `cultural`, `christ`; BSB | BSB text |
+| Priest and leader at the head; one leader from each tribe; a new generation, with Caleb alone from the old; names with el; the order from south to north | 16-29 | numbers/34.json `cultural`, `literary`, `story` | Repository |
+| Joshua 14:1; Matthew 5:5 | 16-29 | numbers/34.json `christ`; BSB | BSB text |
