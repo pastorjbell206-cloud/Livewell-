@@ -22,7 +22,7 @@ The second form is Friedrich Nietzsche's, in *The Genealogy of Morals* (1887). H
 
 ## What is true in it
 
-A good deal. Moral codes do differ, and Christians have often mistaken their own customs for God's commands. Rules about dress, class and race have been preached as gospel. Missionaries carried the manners of Europe along with the faith, and sometimes couldn't tell the two apart.
+A good deal. Moral codes do differ, and Christians have often mistaken their own customs for God's commands. Rules about dress, class and race have been preached as gospel.
 
 Christian ethics does have a history. It grew in Israel, it learned to speak Greek, and every generation since has read it through its own eyes. No Christian stands outside culture, and one who thinks he does is the most captive of all.
 
@@ -36,7 +36,7 @@ Take the test the objection itself sets. If Christian morality were the product 
 
 Unwanted children. Aristotle, the most admired moral teacher of the Greek world, wrote: "let there be a law that no deformed child shall live." In Roman Egypt in 1 BC a working man wrote home to the woman expecting his child that if it was a girl she should "cast it out." The first Christians, following Jewish teaching, refused the practice in their earliest writings, as this library's page on abortion and infant exposure sets out.
 
-The poor. In 362 the emperor Julian, who was trying to bring back the old gods, wrote to one of his pagan priests in frustration. In W. C. Wright's translation: "it is disgraceful that, when no Jew ever has to beg, and the impious Galilaeans support not only their own poor but ours as well, all men see that our people lack aid from us." "Galilaeans" was his name for Christians. He ordered his priests to copy them. An emperor doesn't order his own religion to imitate a habit it already has.
+The poor. In 362 the emperor Julian, who was trying to bring back the old gods, wrote to one of his pagan priests in frustration. In W. C. Wright's translation: "it is disgraceful that, when no Jew ever has to beg, and the impious Galilaeans support not only their own poor but ours as well, all men see that our people lack aid from us." "Galilaeans" was his name for Christians. He ordered hostels set up in every city and food given to strangers and beggars, and told his priest to teach that this had been the Greeks' practice of old. His own letter shows it wasn't their practice in his day.
 
 Human rank. Aristotle taught that "from the hour of their birth, some are marked out for subjection, others for rule," and called a slave "a living possession." Paul wrote to his churches: "There is neither Jew nor Greek, slave nor free, male nor female, for you are all one in Christ Jesus" (Galatians 3:28, BSB). He told the Corinthians that "God chose the weak things of the world to shame the strong" (1 Corinthians 1:27, BSB). And the church worshiped a man who had been crucified, one who, as Paul put it, "emptied Himself, taking the form of a servant" (Philippians 2:7, BSB).
 
@@ -44,7 +44,7 @@ Enemies. "Love your enemies, do good to those who hate you" (Luke 6:27, BSB). Wh
 
 Slavery, where the story is long and the church's guilt is part of it. Christians held slaves and defended slavery from the Bible for centuries. But the sustained case against it, as this library's page tells it, was made inside the church and from its own texts, by Bartolomé de las Casas and the Dominicans of Santo Domingo, by William Wilberforce, by Frederick Douglass, "alongside others who argued from other grounds." Here the faith cut against Christian culture itself. It took far too long.
 
-Last, call Nietzsche as a witness. He doesn't say Christianity fitted the ancient world. He calls it a "transvaluation of all values" and writes of "that awful paradox of a 'god on the cross.'" He hated it because it reversed what the ancient world admired. On the facts, he agrees with the Christians.
+Last, call Nietzsche as a witness. He doesn't say Christianity fitted the ancient world. He writes of a "transvaluation of all values" that triumphed under the sign of the cross, and of "that awful paradox of a 'god on the cross.'" He hated it because it reversed what the ancient world admired. On the facts, he agrees with the Christians.
 
 ## The argument, laid out
 
@@ -64,15 +64,15 @@ The strongest reply is Nietzsche's own. Grant every example, he would say. Of co
 
 Part of that should be granted. No one judges from nowhere. Readers formed by centuries of Christian teaching will find mercy obvious, and that proves nothing. And people do believe what suits them.
 
-But the reply has three weaknesses. First, it explains too much. If a morality is discredited by serving its holders' interests, the morality of the strong is discredited in the same way, since nothing suits the powerful better than believing that power is its own warrant. Nietzsche's method cuts every way, his own contempt for pity included. That is step 3 again: showing why someone holds a belief doesn't show the belief false. The weak have every reason to hope that the strong may not crush them. It doesn't follow that the strong may.
+But the reply has three weaknesses. First, it explains too much. If a morality is discredited by serving its holders' interests, the morality of the strong is discredited in the same way, since nothing suits the powerful better than believing that power is its own warrant. Nietzsche's method cuts every way, his own contempt for pity included. That is step 3 again: showing why someone holds a belief doesn't show the belief false. Nietzsche knew that. His real question, in his preface, is whether these values have "hindered or advanced human well-being." But to answer it he needs a measure of well-being, and his history can't supply one; it assumes the measure of the strong. The weak have every reason to hope that the strong may not crush them. It doesn't follow that the strong may.
 
 Second, it doesn't fit what the teaching asks. A code invented by resentment would bless revenge. This one forbids it, and forbids it to the injured: "love your enemies and pray for those who persecute you" (Matthew 5:44, BSB). Nietzsche answers that this is revenge postponed and handed to God. Perhaps, in some hearts. But a morality that tells its own holders they will be judged by how they treated "the least of these" (Matthew 25:40, BSB) is a strange tool for self-flattery.
 
-Third, relativism costs its user more than it costs the church. If right and wrong are only what a culture approves, then the slave trade was wrong for us and right for the traders, and the strongest objections in this part of the library, the Crusades, the Inquisition, the cover-up of abuse, turn into reports of changing taste. The critic who says those things were truly wrong is right. But he has stopped being a relativist.
+Third, relativism costs its user more than it costs the church. If right and wrong are only what a culture approves, then the slave trade was wrong for us and right for the traders. A relativist can still condemn it by his own culture's lights; what he can't say is that the traders, by theirs, were mistaken. And the strongest objections in this part of the library, the Crusades, the Inquisition, the cover-up of abuse, turn into reports of changing taste. The critic who says those things were truly wrong is right. But he has stopped being a relativist.
 
 ## What remains unresolved
 
-Whether there are moral truths that hold for every culture is one of philosophy's open questions, and this page hasn't settled it; the library's page on the moral argument takes it further. How much of the change in the treatment of children, the poor and the enslaved belongs to Christian conviction and how much to other causes is argued by historians. And Christians can't always tell, in themselves, creed from custom. Every generation of the church has found that some of what it called Christian morality was its own culture, and ours will too.
+Whether there are moral truths that hold for every culture is one of philosophy's open questions, and this page hasn't settled it; the library's page on the moral argument takes it further. How much of the change in the treatment of children, the poor and the enslaved belongs to Christian conviction and how much to other causes is argued by historians. Much of what set the first Christians apart was Jewish before it was Christian, and the church has never said otherwise; that moves the question back to why Israel stood out among its neighbors, and doesn't answer it. And Christians can't always tell, in themselves, creed from custom. Every generation of the church has found that some of what it called Christian morality was its own culture, and ours will too.
 
 ## Where Christians differ
 
