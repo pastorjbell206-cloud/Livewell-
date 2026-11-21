@@ -14655,3 +14655,18 @@ Cut in chapter 7: a sentence that in Canaanite religion the crops were the gifts
 | Taberah, Massah, Kibroth-hattaavah, Kadesh; the frame of verses 7 and 24; the three grounds of the prayer; ‘your people’ and ‘Your people’ | 22-29 | deuteronomy/9.json `historical`, `literary`, `words` (H6419); BSB | Repository; BSB text |
 | Exodus 32:14, 32; Hebrews 7:25 as a pattern the New Testament draws | 22-29 | deuteronomy/9.json `christ`; numbers/plain/14.json 11-25; BSB | Repository; BSB text |
 | Did the prayer change God's mind: the three views; Jeremiah 18:8; no side | 22-29 | deuteronomy/9.json `hard` | Repository; no side |
+
+## The plain notes on Deuteronomy 10 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The new tablets as the answer to the prayer; the ark, treaties kept in holy places, the footstool; verses 6-7 as a parenthesis and their purpose; the Levites without land | 1-11 | deuteronomy/10.json `historical`, `cultural`, `literary`, `hard`; deuteronomy/verses/18.json (verses 1, 2) | Repository |
+| Exodus 34:1; 1 Kings 8:9; Numbers 18:20 | 1-11 | deuteronomy/10.json `historical`; BSB | Repository; BSB text |
+| Moserah and Mount Hor: the three explanations; not settled | 1-11 | deuteronomy/10.json `hard` | Repository; no side |
+| ‘And now’; description then command; circumcision of the heart; the three vulnerable groups; kings who boasted of protecting widows and orphans, and how Deuteronomy goes further; ger; davaq and Genesis 2:24; seventy and the stars | 12-22 | deuteronomy/10.json `cultural`, `literary`, `words` (H4135A, H1616, H1692); deuteronomy/1.json `cultural` (bribes) | Repository |
+| The command about the foreigner as a command to Israel, no rule for any government or party, what it asks of every reader | 12-22 | leviticus/plain/19.json 33-37 `hearers` (the same sentences) | Repository; worded as the Leviticus 19 note |
+| Micah 6:8; Jeremiah 4:4; 30:6; Romans 2:29; Acts 10:34-35; Leviticus 19:34; Matthew 25:35 | 12-22 | deuteronomy/10.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 10: a remark on the Hebrew wording behind ‘showing no partiality’ (not in the repository's notes on this chapter).
