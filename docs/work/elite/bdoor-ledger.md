@@ -14248,3 +14248,23 @@ Cut for want of a source in the repository: a meaning for the name Bamoth-baal; 
 | Nacham used both ways (Exodus 32:14; Jonah 3:10; 14:20); the classical view; conditional warnings (Jeremiah 18:8); the further view and its critics; the setting as the key | 13-26 | numbers/23.json `hard`, `words` (H5162H) | Repository; no side |
 | The pattern a third time; forty-two animals; the three heights on the plateau's edge; Pisgah (Deuteronomy 34:1); Peor and chapter 25 | 27-30 | numbers/23.json `literary`, `historical`; BSB | Repository; BSB text |
 | Hosea 9:10 | 27-30 | numbers/25.json `historical`; BSB | BSB text |
+
+## The plain notes on Numbers 24 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No omens this time; the Spirit; ‘eyes open’; the pictures of water; the echoes of Genesis 49:9 and 12:3 | 1-9 | numbers/24.json `cultural`, `literary`, `story` | Repository |
+| Agag and Saul (1 Samuel 15); the two ways of dating the oracles | 1-9 | numbers/24.json `historical` | Repository; no side |
+| The fourth oracle unasked; star and scepter as royal signs; shevet and Genesis 49:10; David (2 Samuel 8:2, 14); ‘sons of Sheth’ obscure | 10-19 | numbers/24.json `cultural`, `words` (H3556, H7626G), `historical` | Repository |
+| Ruth the Moabite as David's great-grandmother (Ruth 4:13-17); Matthew 1:5; no contempt for Moabites or Edomites | 10-19 | BSB | BSB text; a caution of these notes |
+| Matthew 2:2, not a quotation; Revelation 22:16 | 10-19 | numbers/24.json `christ`; BSB | Repository; BSB text |
+| The star: David first; Jewish readers before Jesus, the Dead Sea Scrolls, Bar Kokhba (132; the revolt ended in 135); the Christian reading inherited from Judaism; where the two differ | 10-19 | numbers/24.json `historical`, `christ`; numbers/intro.json `christ`; guides/between-the-testaments.json or empires.json (132 to 135) | Repository; each reading stated in its own terms |
+| John 18:36; Matthew 5:44; no warrant for violence | 10-19 | BSB | BSB text; a caution of these notes |
+| Amalek (Exodus 17:8-13); the Kenites (Judges 1:16); Asshur; Kittim; Balaam's end (31:8, 16) | 20-25 | numbers/24.json `historical`; BSB | Repository; BSB text |
+| Daniel 2:21; Revelation 2:14, addressed to Christians | 20-25 | numbers/24.json `hard`; BSB | BSB text |
+| How a faithless seer could prophesy: the gift rests in God; Caiaphas (John 11:51); Matthew 7:22-23 | 20-25 | numbers/24.json `hard` | Repository |
+| Care lines for a conscience that never rests | 20-25 | ephesians/plain/5.json 1-7 `hard` | Reused whole, word for word |
+
+Cut for want of a source in the repository: that ‘How lovely are your tents’ became part of Jewish worship.
