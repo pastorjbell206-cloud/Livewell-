@@ -60,6 +60,7 @@
 .qx-area{flex:1;display:flex;flex-direction:column;gap:8px;padding:clamp(18px,2.2vw,26px);border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--bone-warm)}
 .qx-area__n{font-family:var(--U);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted)}
 .qx-area__title{font-family:var(--F);font-size:clamp(1.3rem,1.15rem + .4vw,1.5rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0}
+.qx-area__line{margin:0;font-family:var(--B);font-size:15px;line-height:1.55;color:var(--ink-muted)}
 .qx-area__count{margin-top:auto;padding-top:6px;font-family:var(--U);font-size:13.5px;color:var(--ink-muted)}
 a.qx-area{background:var(--card);color:inherit;text-decoration:none}
 a.qx-area .qx-area__count{color:var(--ink);font-weight:600;display:flex;align-items:center;gap:6px}

@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: the-inquisition
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?"
 ledger: docs/work/elite/apol-ledger.md, "Nineteenth run", key "at"
 ---

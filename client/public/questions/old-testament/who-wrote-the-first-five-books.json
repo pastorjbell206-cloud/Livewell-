@@ -1,7 +1,7 @@
 {
   "area": "old-testament",
   "slug": "who-wrote-the-first-five-books",
-  "status": "pending",
+  "status": "live",
   "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
   "ledger": {
     "file": "docs/work/elite/apol-ledger.md",
@@ -48,7 +48,7 @@
     {
       "role": "reply",
       "heading": "The strongest reply, and an answer",
-      "body": "The strongest reply comes from both sides at once. The critic says that step 4 is special pleading, a way to keep \"Moses wrote\" while emptying it. The traditional believer says the same thing for the opposite reason: the *Catholic Encyclopedia* argued that when Jesus said Moses \"wrote about Me,\" he could not \"expressly endorse the popular belief, if it was erroneous.\"\n\nThat reply deserves respect, and it is the real question, not a side issue. But it proves less than either party wants. When Jesus says \"Moses wrote this commandment for you because of your hardness of heart\" (Mark 10:5, BSB), he is speaking of a law, and the law is in Deuteronomy, which on every view contains Mosaic material. When he cites \"the Book of Moses\" for the burning bush, he names the scroll by its customary title, as Paul says \"Moses writes\" when he quotes Leviticus (Romans 10:5, BSB). None of these sayings addresses the death notice, the kings of Edom or the date of the priestly code, and nothing in them requires a believer to deny what the text itself shows. The traditionalist is right that the New Testament ties the books' authority to Moses; the critic is right that it doesn't settle the editing. What it settles is that the books are God's word through Moses, and that \"he wrote about Me.\" Christians on every side of this question confess both.\n\nThe critic's own view has a debt to pay as well. Wellhausen's reconstruction rested on reading the history of Israel's worship as a straight line from many altars to one, and the decades since have not agreed on what replaces it. A theory that its own field has been revising for fifty years is a reason for modesty on all sides, not a verdict."
+      "body": "The strongest reply comes from both sides at once. The critic says that step 4 is special pleading, a way to keep \"Moses wrote\" while emptying it. The traditional believer says the same thing for the opposite reason: the *Catholic Encyclopedia* argued that when Jesus said Moses \"wrote about Me,\" he could not \"expressly endorse the popular belief, if it was erroneous.\"\n\nThat reply deserves respect, and it is the real question, not a side issue. But it proves less than either party wants. When Jesus says \"Moses wrote this commandment for you because of your hardness of heart\" (Mark 10:5, BSB), he is speaking of a law, and the law is in Deuteronomy, which on every view contains Mosaic material. When he cites \"the Book of Moses\" for the burning bush, he names the scroll by its customary title, as Paul says \"Moses writes\" when he quotes Leviticus (Romans 10:5, BSB). None of these sayings addresses the death notice, the kings of Edom or the date of the priestly code, and nothing in them requires a believer to deny what the text itself shows. The traditionalist is right that the New Testament ties the books' authority to Moses; the critic is right that it doesn't settle the editing. What it settles is that the books are God's word through Moses, and that \"he wrote about Me.\" Christians on every side of this question confess both.\n\nThe critic's view has open questions of its own. Wellhausen's reconstruction rested on reading the history of Israel's worship as a line from many altars to one, and the decades since have not agreed on what replaces it. But it should be said fairly that the revisions have not moved the field toward Moses: they questioned the old theory, as the Study Bible's introduction to Genesis records, \"especially its early date for the J source.\" What they show is that the sources and their dates are still argued, which is a reason for modesty about any reconstruction, not a verdict for either side."
     },
     {
       "role": "unresolved",
@@ -63,7 +63,7 @@
   ],
   "otherSide": [
     "Julius Wellhausen, *Prolegomena to the History of Israel* (1883), the classic form of the documentary hypothesis.",
-    "Baruch Spinoza, *Theological-Political Treatise* (1670), chapter 8, the first full argument against Moses' authorship of the whole."
+    "Baruch Spinoza, *Theological-Political Treatise* (1670), chapter 8, an early full argument against Moses' authorship of the whole."
   ],
   "further": [
     "Umberto Cassuto, *The Documentary Hypothesis and the Composition of the Pentateuch* (English 1961), a Jewish scholar's critique of the theory.",

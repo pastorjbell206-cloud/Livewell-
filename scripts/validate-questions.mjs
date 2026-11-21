@@ -27,7 +27,8 @@
  * And the library's own rules: every internal link in the prose, and every
  * Study Bible note, Honest Answer and Bible Explorer link, reaches a live page
  * (scripts/lib/site-routes.mjs); a live page never links a pending one; an
- * area's page lists exactly its pieces, under the same questions; the
+ * area's page lists exactly its pieces, under the same questions; a live area
+ * has the one line the room shows under its title; the
  * manifest (index.json) is current; and nothing pending is linked from a page
  * outside the library, the site catalogue (menus), the sitemap, the search
  * index or llms.txt.
@@ -107,6 +108,9 @@ for (const a of q.areas) {
   if (!["pending", "live"].includes(a.status)) fail(where, `status "${a.status}" is not pending or live`);
   if (a.live && !a.pieces.some((p) => p.live)) fail(where, "is live with no live piece");
   if (a.live && !a.page) fail(where, "is live with no area page (_area.json)");
+  // The room lists each live area with one line saying what it holds.
+  if (a.live && !String(a.line || "").trim()) fail(where, "is live with no one-line description (line)");
+  if (a.line) houseRules(where, a.line);
   if (a.pieces.length && !a.page) fail(where, "has pieces but no area page (_area.json)");
   if (!a.page) continue;
   const pw = `${a.slug}/_area.json`;

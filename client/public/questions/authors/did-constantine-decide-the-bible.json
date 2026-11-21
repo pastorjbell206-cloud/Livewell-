@@ -1,7 +1,7 @@
 {
   "area": "authors",
   "slug": "did-constantine-decide-the-bible",
-  "status": "pending",
+  "status": "live",
   "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
   "ledger": {
     "file": "docs/work/elite/apol-ledger.md",

@@ -1,7 +1,7 @@
 ---
 area: evil
 slug: the-hiddenness-of-god
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?"
 ledger: docs/work/elite/apol-ledger.md, "Seventeenth run", key "al"
 ---

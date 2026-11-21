@@ -1,7 +1,7 @@
 ---
 area: contradictions
 slug: the-day-of-the-crucifixion
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?"
 ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "ab"
 ---

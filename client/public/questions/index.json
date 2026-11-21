@@ -6,45 +6,46 @@
       "slug": "god",
       "n": 1,
       "title": "God, faith and reason",
+      "line": "The arguments for God's existence, set out step by step, with their strongest critics.",
       "planned": 16,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "the-cosmological-argument",
           "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
           "blurb": "Leibniz's argument from contingency and the kalam, each in its premises; Hume's three objections, Russell's brute fact and Kant's charge of borrowing; quantum events and the \"universe from nothing\"; and what a necessary being would and wouldn't be.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "who-made-god",
           "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
           "blurb": "Mill's father and Russell, Dawkins's gambit, what the arguments actually claim, God's simplicity, the burden of proof and the teapot.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-ontological-argument",
           "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
           "blurb": "Anselm's prayer and argument, Gaunilo's island, Aquinas and Kant, the modern modal version and its symmetry, and why God's existence, if real, is necessary.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-moral-argument-and-euthyphro",
           "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
           "blurb": "The argument from moral obligation, Wielenberg's godless realism, Mackie and Street, the Euthyphro dilemma and the classical answer, and what the argument shows.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-argument-from-reason",
           "question": "If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?",
           "blurb": "Darwin's \"horrid doubt,\" Plantinga's argument and its critics, the hard problem of consciousness and the naturalist answers to it, and whether this is a god of the gaps.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -52,6 +53,7 @@
       "slug": "text",
       "n": 2,
       "title": "Can we trust the text of the New Testament?",
+      "line": "Manuscripts, variants and disputed passages, and what the evidence shows.",
       "planned": 14,
       "status": "live",
       "live": true,
@@ -126,80 +128,81 @@
       "slug": "authors",
       "n": 3,
       "title": "Who wrote the Gospels and the New Testament, when, and who chose the books",
+      "line": "Who wrote the Gospels and the letters, when, and how the church came to its list of books.",
       "planned": 16,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "the-gospels-are-anonymous",
           "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
           "blurb": "What the titles and the earliest witnesses show, and what \"anonymous\" does and doesn't mean.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "written-decades-later",
           "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
           "blurb": "The usual dates and the reasons for them, the case for earlier dates, Paul's letters from before the Gospels, and what a gap of a lifetime allows.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "stories-changed-in-the-telling",
           "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
           "blurb": "Form criticism, memory research, the debate over controlled tradition, and what changed and what stayed across the Gospels.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "four-gospels-and-the-rest",
           "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
           "blurb": "The other gospels and their dates, how the four were received, what Nicaea did and didn't do, and what is true in \"the winners write history\".",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "forgeries-in-the-new-testament",
           "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
           "blurb": "The disputed letters, the case against them at full strength, the replies, what the ancients thought of forgery, and what is and isn't at stake.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "what-kind-of-writing-are-the-gospels",
           "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
           "blurb": "The form critics' \"folk literature\" and the turn to ancient biography, Plutarch, Suetonius and Thucydides on what their kind of writing allowed, Justin's \"memoirs\" and Luke's preface, and what the genre does and doesn't establish.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-synoptic-problem",
           "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
           "blurb": "The Synoptic problem set out fairly, Mark's priority, Q and the main alternatives with no side taken, what copying shows and what it doesn't, the sources skeptics themselves count, and the witnesses outside the problem.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "is-john-history-or-theology",
           "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
           "blurb": "Every difference from the first three Gospels conceded, Strauss, Ehrman and Clement's \"spiritual Gospel\", John's own account of how he wrote, what in John fits Jerusalem before AD 70, and why theology and history are not alternatives.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "did-constantine-decide-the-bible",
           "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
           "blurb": "What Nicaea's surviving acts do and don't contain, Constantine's letter ordering copies of the Scriptures, his own bishop's list of disputed books, the Muratorian fragment, Athanasius in 367 and the African councils, the novel's claim named as fiction, and the edges that still differ.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "did-paul-invent-christianity",
           "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
           "blurb": "Wrede's \"second founder\" and Ehrman's contrast of Paul and Matthew at full strength, what Paul says he received, his meetings with Peter, James and John, what he shares with the Jesus of the Gospels, and Paul the Jew.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -207,45 +210,46 @@
       "slug": "contradictions",
       "n": 4,
       "title": "Contradictions and hard passages",
+      "line": "The census, the two genealogies, the death of Judas, the day of the crucifixion and the numbers in Kings and Chronicles.",
       "planned": 20,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "the-census-of-quirinius",
           "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
           "blurb": "What Luke says and what Josephus dates, the governors of Syria, Justin and Tertullian, the five proposed solutions with the weakness of each, and why the question is still open.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-two-genealogies",
           "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
           "blurb": "Both lists set side by side, Julian's charge and Jerome's count, Africanus's levirate explanation in his own words with its weakness, Mary's line and the royal line, and what both lists affirm.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "how-did-judas-die",
           "question": "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?",
           "blurb": "The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about \"Jeremiah\" in Matthew 27:9, and the core the accounts share.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-day-of-the-crucifixion",
           "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
           "blurb": "The Passover calendar from Exodus and Josephus, every time note in the four Gospels, the four solutions with their weaknesses, the hour, and the frame all four share.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "numbers-in-samuel-kings-and-chronicles",
           "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
           "blurb": "The differences set out from the English and the Hebrew, where the BSB has already chosen a reading, the Greek translation and the Dead Sea Scrolls, who killed Goliath, and what copying can and can't explain.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -253,80 +257,81 @@
       "slug": "jesus",
       "n": 5,
       "title": "The historical Jesus and the resurrection",
+      "line": "Whether Jesus lived, what he claimed, the empty tomb, the appearances and the virgin birth.",
       "planned": 16,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "did-jesus-exist",
           "question": "Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?",
           "blurb": "Paul's meeting with Jesus' brother, Josephus and the disputed passage shown as it stands, Tacitus, Pliny and Suetonius, and the case that Jesus began as a heavenly figure, at its strongest.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-empty-tomb",
           "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
           "blurb": "Roman practice with the crucified, Jewish burial law, Yehohanan's tomb, Joseph of Arimathea, the women, and the earliest opponents' theft story.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-appearances-and-the-alternatives",
           "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
           "blurb": "The four natural explanations, each as its defenders put it, against the list Paul received, the persecutor and the unbelieving brother, and the word the witnesses chose.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-resurrection-accounts-disagree",
           "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
           "blurb": "Every difference set out, Tacitus and Suetonius on the fire of Rome as a test case, the conventions of ancient biography, and what all four agree on.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "can-historians-affirm-a-miracle",
           "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
           "blurb": "What history can and can't decide, Ehrman's argument and Troeltsch's principles at full strength, the two senses of \"least probable,\" and where the question passes from history to the question of God.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "how-did-jesus-become-god",
           "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
           "blurb": "Ehrman's case in his own words and the texts it rests on, his reading of Paul's pre-existent Christ as a being below God and the angel of the Lord, Paul's letters as the earliest layer, prayer and worship given to Jesus by Jews who confessed the Shema, and the Jewish ideas of a second divine figure.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "did-jesus-claim-to-be-god",
           "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
           "blurb": "What Jesus does not say, Ehrman's tests of the sayings, and why scholars differ on John, then the earliest Gospels on their own: forgiving sins, the lord of the Sabbath, \"But I tell you,\" the Son who alone knows the Father, and Daniel's Son of Man at the trial, with the trial framed as the Study Bible frames it.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-virgin-birth",
           "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
           "blurb": "*Almah* and *parthenos* handled honestly, what Matthew does with Isaiah and with Hosea, the two accounts from Joseph's side and Mary's, Trypho and Celsus, the stories of Danaë and Augustus read and compared, and the confession of the creeds.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "did-jesus-predict-the-end-within-a-generation",
           "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
           "blurb": "Schweitzer's prophet and Russell's lecture at full strength, the temple's fall in AD 70, Daniel's Son of Man coming to God, the transfiguration, Matthew 10:23, the confession that the Son does not know the day, and the main Christian readings with no scheme of the end chosen.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "did-the-disciples-die-for-their-belief",
           "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
           "blurb": "Gibbon's doubt at full strength, how thin the evidence is for most of the Twelve, what is well attested for Peter, Paul and the two Jameses with the sources named, and why the argument shows sincerity, not truth.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -334,80 +339,81 @@
       "slug": "old-testament",
       "n": 6,
       "title": "The Old Testament: history, archaeology, violence and law",
+      "line": "The exodus, the conquest, Daniel, the flood, the law and the charge of an angry God.",
       "planned": 18,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "did-the-exodus-happen",
           "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
           "blurb": "What Egypt's silence does and doesn't show, the Delta, Rameses and Moses' Egyptian name, Merneptah's Israel, the date and the large numbers, and what remains open.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "jericho-and-the-conquest",
           "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
           "blurb": "Kenyon's Jericho, Wood's challenge, et-Tell and the search for Ai, Hazor's burning, what the book of Joshua itself says about the land left unconquered, and the main ways the narratives are read as history.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-command-to-destroy-the-canaanites",
           "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
           "blurb": "The command and the ban in their setting, the limits the books set on it, Kant's question about knowing a command is God's, the main Christian readings and what each must carry, and why none licenses violence today.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "when-was-daniel-written",
           "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
           "blurb": "Porphyry's case in Jerome's report, the modern case from chapter 11, the loanwords and Darius the Mede, Belshazzar, the Qumran copies, 1 Maccabees and Ben Sira, what the date turns on and what it doesn't decide.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-flood-and-babylon",
           "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
           "blurb": "George Smith's tablets, Atrahasis and Gilgamesh quoted from the British Museum's translation, Delitzsch and Finkel, what a shared story can and can't show, the differences that make Genesis an answer, and the readings of the flood's extent.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "who-wrote-the-first-five-books",
           "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
           "blurb": "Spinoza's seams, Astruc's names and Wellhausen's four sources at full strength, the theory's later revisions, what Jesus and the apostles say of Moses, and the range of Christian views.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-god-of-the-old-testament",
           "question": "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?",
           "blurb": "Marcion in Irenaeus's and Tertullian's report, Dawkins and Harnack, Exodus 34 and its echoes, judgment in Jesus' own teaching, and why the contrast is false and has fed contempt for Jews.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "which-old-testament-laws",
           "question": "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?",
           "blurb": "Leviticus 19 and Trypho's question at full strength, what the law says it was for, Acts 15, Mark 7 and Hebrews, love as the fulfillment of the law, and the threefold division, new covenant readings and law and gospel, each with its difficulty.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "abraham-and-isaac",
           "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
           "blurb": "Genesis 22 read closely, Kant's objection at full strength, the Akedah as Jewish prayer remembers it, the law's and the prophets' horror of child sacrifice, what the story does and doesn't teach, and why it is never a model for harming anyone.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "what-archaeology-shows",
           "question": "Archaeologists have found no trace of the exodus, a Jericho without walls, and little sign of a great kingdom under David and Solomon. Does archaeology confirm the Old Testament, or undermine it?",
           "blurb": "The house of David at Tel Dan, Omri on Mesha's stone, Ahab and Jehu in Assyria's records, Sennacherib's prism and Hezekiah's tunnel quoted from an older translation, the debate over David and Solomon, and the limits of archaeology in both directions.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -415,45 +421,81 @@
       "slug": "science",
       "n": 7,
       "title": "Science",
+      "line": "Galileo, miracles, the beginning of the universe, evolution, the age of the earth, Adam, the mind and the brain, free will and near-death experiences.",
       "planned": 16,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "has-science-made-god-unnecessary",
           "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
           "blurb": "The track record of natural explanation, the god of the gaps, what science presupposes, and what kind of question it can settle.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "galileo-and-the-war",
           "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
           "blurb": "What happened in 1616 and 1633 and what Galileo was and wasn't sentenced to, where the church was wrong, and how the \"war\" was written in the nineteenth century and taken apart since.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "miracles-and-the-laws-of-nature",
           "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
           "blurb": "Hume's argument in his own words, what he granted, the replies from Lewis to Earman, and what the question of miracles finally turns on.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-beginning-and-fine-tuning",
           "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
           "blurb": "What the beginning of the universe and fine-tuning can and can't show, the multiverse at full strength, and why neither is a proof.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "evolution-and-genesis",
           "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
           "blurb": "The evidence for evolution at its strength, the main Christian readings of Genesis each in its defenders' terms with its hardest difficulty, the questions of death and Adam, and what every reading confesses together.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "how-old-is-the-earth",
+          "question": "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?",
+          "blurb": "What the sciences measure and how, what the text and its ancient copies say, the readings of the days each in its holders' terms with its hardest difficulty, and what all of them confess.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "adam-eve-and-human-origins",
+          "question": "Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?",
+          "blurb": "The fossil and genetic evidence as standard reference works state it, what it rules out and what it doesn't, the Christian views of Adam from a recent first pair to a figure for every human, each with what it must explain in Romans 5 and 1 Corinthians 15, and why what the doctrine of sin requires is itself where Christians differ.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "is-the-mind-just-the-brain",
+          "question": "Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?",
+          "blurb": "What neuroscience shows and what it doesn't, the argument from causal closure at its strongest, the hard problem, and the three Christian views of the person, each with its hardest difficulty, under one hope of the resurrection of the body.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "neuroscience-and-free-will",
+          "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+          "blurb": "Libet's experiments and what has become of their interpretation, determinism, compatibilism and libertarian freedom, the Reformed and Arminian accounts each in its own terms, and why responsibility before God is confessed by both.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "near-death-experiences",
+          "question": "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?",
+          "blurb": "What is reported and how researchers explain it, as a reference work sets out both sides, why the evidence is at an impasse, and why Christian hope rests on the resurrection of Jesus, not on reports from the edge of death; with a word for the grieving and for anyone thinking of death.",
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -461,45 +503,46 @@
       "slug": "evil",
       "n": 8,
       "title": "Evil, suffering and judgment",
+      "line": "The problem of evil in its logical and evidential forms, natural evil, God's hiddenness and hell.",
       "planned": 12,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "the-logical-problem-of-evil",
           "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
           "blurb": "Mackie's argument and its two hidden premises, Plantinga's free-will defence, Mackie's own later concession, the objection from heaven, and what a defence can and can't do.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-evidential-problem-of-evil",
           "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
           "blurb": "Rowe's fawn and his argument, the inference from what we can't see, Wykstra's reply and skeptical theism, what it costs, Rowe's question about why God gives sufferers no assurance, and the answer Christians give in the cross.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "natural-evil-and-animal-suffering",
           "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
           "blurb": "Hume's Philo and Darwin's wasps, Draper's hypothesis of indifference, why free will doesn't reach it, the answers from law, growth, long processes and a fallen creation with the cost of each, and the hope of Romans 8.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-hiddenness-of-god",
           "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
           "blurb": "Schellenberg's argument from nonresistant nonbelief, the hiddenness the psalms already pray, Pascal's light and obscurity, the reasons Christian philosophers give and their limits, and God found in the cross.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "hell-and-the-justice-of-god",
           "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
           "blurb": "Russell, Adams and Ivan Karamazov on proportion, what all Christians confess about judgment, eternal conscious punishment, conditional immortality and the hope of restoration each in its holders' words with its hardest difficulty, and a word for anyone afraid.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -507,45 +550,81 @@
       "slug": "morality",
       "n": 9,
       "title": "Morality, sexuality and the church's record",
+      "line": "The Crusades, the Inquisition, slavery, abuse and its cover-up, women, abortion in the early church, Christian nationalism, and whether morality is only culture.",
       "planned": 14,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "the-crusades",
           "question": "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?",
           "blurb": "Hume's verdict, the preaching at Clermont and the promise of forgiveness, the massacres of 1096 and 1099 and the sack of Constantinople, the conquests that came before, and the cross made a soldier's badge.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-inquisition",
           "question": "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?",
           "blurb": "Paine's charge, Augustine's turn and Aquinas's argument for death, the Spanish Inquisition and the *conversos*, the Protestant executions in Zurich and Geneva, the early church's refusal of force, and the case for liberty made from inside the faith.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "slavery-and-conquest",
           "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
           "blurb": "Douglass and Las Casas as witnesses, the papal grants of conquest and enslavement, the Southern Baptist Convention's founding in 1845 and its apology in 1995, what the Bible says of kidnapping and of one human family, and who first resisted.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "abuse-and-cover-up",
           "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
           "blurb": "The Catholic studies of 2004 and the Southern Baptist report of 2022, the pattern of the cover-up, what Scripture says of shepherds who feed on the flock, why abuse is reported to the police, and what makes a church safe; it gives no legal advice and asks no one to trust, return or forgive. Find Help (/help) and the police are at the top of the page and at its end.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "does-religion-poison-everything",
           "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
           "blurb": "The New Atheists' charge and Paine's, the French wars of religion and the Thirty Years' War, what those wars were also about, Paine's own witness to the revolutionary tribunals, and idolatry under any banner.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "what-the-bible-says-about-homosexuality",
+          "question": "What does the Bible say about homosexuality, and why do Christians disagree?",
+          "blurb": "The six passages read closely with their debated words, the historic teaching of the church and the newer reading, each in its holders' terms, where each side says the other goes wrong, and what all should confess; the page takes no side, and Find Help is named at its start and its end.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-first-christians-on-abortion-and-exposure",
+          "question": "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?",
+          "blurb": "Exposure and abortion in the Roman world, the Jewish refusal, the Didache, Barnabas, Athenagoras, Tertullian and Basil in their own words, Exodus 21:22 in both readings, how Catholic, Orthodox and Protestant Christians have reasoned, and where the author of this site lands; history and theology, not an argument about any law. It opens and closes with a word of gentleness for anyone carrying grief or guilt, and names Find Help.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "is-christianity-bad-for-women",
+          "question": "The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?",
+          "blurb": "Stanton's charge and the texts behind it, Tertullian and Aquinas in their own words, what Jesus and the first churches did, the household codes read whole, the complementarian and egalitarian readings as their holders state them, where the author of this site lands, and the misuse of submission named and refused; Find Help is named for anyone being hurt.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "is-christian-nationalism-christian",
+          "question": "Every nation's laws rest on somebody's morals. Why shouldn't a Christian people want a Christian nation? Is Christian nationalism Christian?",
+          "blurb": "The case for a Christian nation in its defenders' terms, what is true in it, what Jesus did with power, the church under Constantine and after, the wars of religion, the dissenters who argued for liberty of conscience, and the same test applied to any cause that drafts the cross.",
+          "status": "live",
+          "live": true
+        },
+        {
+          "slug": "is-christian-morality-a-product-of-its-culture",
+          "question": "Morals differ from one culture to the next, and Nietzsche traced Christian values to the resentment of the weak. Isn't Christian morality just the product of its culture?",
+          "blurb": "Relativism and Nietzsche's genealogy at full strength, where Christian ethics cut against the world that first heard it (unwanted infants, the poor, human rank, enemies) and later against Christian societies on slavery, with the church's guilt admitted, and what an argument from history can and can't show.",
+          "status": "live",
+          "live": true
         }
       ]
     },
@@ -553,45 +632,46 @@
       "slug": "religions",
       "n": 10,
       "title": "Other religions, and those who never heard",
+      "line": "Whether all religions say the same thing, Jesus as the only way, and those who never heard.",
       "planned": 10,
-      "status": "pending",
-      "live": false,
+      "status": "live",
+      "live": true,
       "hasPage": true,
       "pieces": [
         {
           "slug": "are-all-religions-the-same",
           "question": "Aren't all religions basically the same, different paths up one mountain to the same God?",
           "blurb": "Hick's pluralism at full strength, the parable of the elephant and what it assumes, what the religions actually say about God, Jesus and salvation, and why pluralism is one more particular view.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
           "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
           "blurb": "John 14:6 and Acts 4:12 where they stand, why every view of the religions excludes others, the difference between a claim and the way it is held, and the church's sins in carrying it.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "those-who-never-heard",
           "question": "What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?",
           "blurb": "The moral argument, what Scripture says and doesn't say, the main Christian answers in their holders' terms, each with its hardest question and no side taken, and a word for anyone grieving.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "judaism-islam-and-jesus",
           "question": "Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?",
           "blurb": "Judaism and Islam described from their own sources, what Christianity shares with each and where it truly differs, the church's wrongs against Jews named and rejected, the views of Israel's place set out without choosing, and the earliest Christians' Shema.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         },
         {
           "slug": "only-a-christian-because-of-where-you-were-born",
           "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
           "blurb": "Mill, Hick and the outsider's test, the genetic fallacy and its subtler cousin, a faith that began among converts, and why birthplace is a reason to examine a belief, not to dismiss it.",
-          "status": "pending",
-          "live": false
+          "status": "live",
+          "live": true
         }
       ]
     }
@@ -605,7 +685,7 @@
       "area": "god",
       "slug": "the-cosmological-argument",
       "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The universe is just there, and that's all; it needs no explanation outside itself",
@@ -615,7 +695,7 @@
       "area": "god",
       "slug": "the-cosmological-argument",
       "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The cosmological argument depends on the ontological argument for its whole strength",
@@ -625,7 +705,7 @@
       "area": "god",
       "slug": "the-cosmological-argument",
       "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Physical law can account for a universe coming to be from nothing, without a creator",
@@ -635,7 +715,7 @@
       "area": "god",
       "slug": "the-cosmological-argument",
       "question": "Why is there something rather than nothing? Couldn't the universe simply exist without God, or come from nothing by the laws of physics?",
-      "live": false
+      "live": true
     },
     {
       "claim": "If everything must have a cause, then God must have a cause; and if anything can be without a cause, it may as well be the world as God",
@@ -645,7 +725,7 @@
       "area": "god",
       "slug": "who-made-god",
       "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "A God able to design a universe would be at least as complex and improbable as the universe, so he explains nothing",
@@ -655,7 +735,7 @@
       "area": "god",
       "slug": "who-made-god",
       "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The burden of proof lies on whoever affirms that God exists, and the reasonable starting point is not to believe",
@@ -665,7 +745,7 @@
       "area": "god",
       "slug": "who-made-god",
       "question": "If everything needs a cause, who made God? And isn't it the believer's job to prove that God exists, not the unbeliever's job to disprove him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Existence is not a real predicate, so no argument from the idea of God can show that God exists",
@@ -675,7 +755,7 @@
       "area": "god",
       "slug": "the-ontological-argument",
       "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The same reasoning would prove that a perfect lost island exists",
@@ -685,7 +765,7 @@
       "area": "god",
       "slug": "the-ontological-argument",
       "question": "Can anyone prove that God exists just by thinking about the idea of God? What is wrong with the ontological argument, and is anything right about it?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The basic moral truths are necessary and need no foundation in God or anything else",
@@ -695,7 +775,7 @@
       "area": "god",
       "slug": "the-moral-argument-and-euthyphro",
       "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Objective moral values would be strange things unlike anything else in the world, so there are none; morality is invented",
@@ -705,7 +785,7 @@
       "area": "god",
       "slug": "the-moral-argument-and-euthyphro",
       "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
-      "live": false
+      "live": true
     },
     {
       "claim": "If evolution shaped our moral judgments, it would be luck if they matched objective moral truths",
@@ -715,7 +795,7 @@
       "area": "god",
       "slug": "the-moral-argument-and-euthyphro",
       "question": "Isn't morality just evolved instinct or social agreement? And doesn't Plato's Euthyphro show that goodness can't depend on God anyway?",
-      "live": false
+      "live": true
     },
     {
       "claim": "There is no inner theater where experience is shown to a self, and nothing in consciousness beyond the brain's own processing",
@@ -725,7 +805,7 @@
       "area": "god",
       "slug": "the-argument-from-reason",
       "question": "If our minds are products of unguided evolution, can we trust them? And isn't consciousness simply what brains do?",
-      "live": false
+      "live": true
     },
     {
       "claim": "More variants than words; 200,000 to 400,000 (later estimates higher)",
@@ -885,7 +965,7 @@
       "area": "authors",
       "slug": "the-gospels-are-anonymous",
       "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The disciples were unlettered Aramaic speakers who could not have written the Greek Gospels",
@@ -895,7 +975,7 @@
       "area": "authors",
       "slug": "the-gospels-are-anonymous",
       "question": "The Gospels are anonymous. Weren't the names Matthew, Mark, Luke and John added later?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Gospel writers were far removed from the events, never saw Jesus and had no contact with eyewitnesses",
@@ -905,7 +985,7 @@
       "area": "authors",
       "slug": "written-decades-later",
       "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Acts, and so Luke, was written in the early second century",
@@ -915,7 +995,7 @@
       "area": "authors",
       "slug": "written-decades-later",
       "question": "Weren't the Gospels written decades after Jesus by people who never met him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Memory is reconstructive, and the stories about Jesus were reshaped in each retelling before the Gospels were written",
@@ -925,7 +1005,7 @@
       "area": "authors",
       "slug": "stories-changed-in-the-telling",
       "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Many Gospel stories and sayings were created by the early communities that used them",
@@ -935,7 +1015,7 @@
       "area": "authors",
       "slug": "stories-changed-in-the-telling",
       "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Kenneth Bailey's model of informally controlled oral tradition is not supported by his own evidence",
@@ -945,7 +1025,7 @@
       "area": "authors",
       "slug": "stories-changed-in-the-telling",
       "question": "Before anything was written, the stories about Jesus were passed by word of mouth for decades. Isn't that a game of telephone?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The proto-orthodox party won the struggles of the second and third centuries, compiled the New Testament and wrote the history of its own victory",
@@ -955,7 +1035,7 @@
       "area": "authors",
       "slug": "four-gospels-and-the-rest",
       "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
-      "live": false
+      "live": true
     },
     {
       "claim": "In some regions of the early church what was later called heresy came first",
@@ -965,7 +1045,7 @@
       "area": "authors",
       "slug": "four-gospels-and-the-rest",
       "question": "There were other gospels: Thomas, Peter, Judas, Mary. Didn't the church pick four and suppress the rest?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Several New Testament letters under the names of Paul and Peter were written by others who claimed to be them, and are forgeries",
@@ -975,7 +1055,7 @@
       "area": "authors",
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Ancient pagan, Jewish and Christian writers treated a false claim of authorship as deceit, not as an accepted convention",
@@ -985,7 +1065,7 @@
       "area": "authors",
       "slug": "forgeries-in-the-new-testament",
       "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Gospels are not biographies but folk literature, units of community tradition strung together by editors",
@@ -995,7 +1075,7 @@
       "area": "authors",
       "slug": "what-kind-of-writing-are-the-gospels",
       "question": "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Matthew and Luke each used Mark and a lost collection of sayings, Q, so where they follow Mark they are not independent of him",
@@ -1005,7 +1085,7 @@
       "area": "authors",
       "slug": "the-synoptic-problem",
       "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
-      "live": false
+      "live": true
     },
     {
       "claim": "There was no Q: Luke used Matthew as well as Mark",
@@ -1015,7 +1095,7 @@
       "area": "authors",
       "slug": "the-synoptic-problem",
       "question": "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus' divine claims in John belong to John's distinctive theology, not to the historical record of what Jesus said",
@@ -1025,7 +1105,7 @@
       "area": "authors",
       "slug": "is-john-history-or-theology",
       "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
-      "live": false
+      "live": true
     },
     {
       "claim": "John's Gospel is largely myth",
@@ -1035,7 +1115,7 @@
       "area": "authors",
       "slug": "is-john-history-or-theology",
       "question": "John's Gospel is so unlike the other three, with no parables, long speeches and a different calendar. Isn't it theology rather than history?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The emperor Constantine had a new Bible made and left out the gospels that showed Jesus as a mortal man",
@@ -1045,7 +1125,7 @@
       "area": "authors",
       "slug": "did-constantine-decide-the-bible",
       "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The party that won compiled the canonical books and told the story of its victory",
@@ -1055,7 +1135,7 @@
       "area": "authors",
       "slug": "did-constantine-decide-the-bible",
       "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Paul's teaching that no one is justified by the law cannot be reconciled with Matthew's Jesus on the law and the judgment",
@@ -1065,7 +1145,7 @@
       "area": "authors",
       "slug": "did-paul-invent-christianity",
       "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Paul was the second founder of Christianity",
@@ -1075,7 +1155,7 @@
       "area": "authors",
       "slug": "did-paul-invent-christianity",
       "question": "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Luke dated Jesus' birth by the census of Quirinius, which Josephus places in AD 6, a decade after Herod died, so Luke misdated it",
@@ -1085,7 +1165,7 @@
       "area": "contradictions",
       "slug": "the-census-of-quirinius",
       "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The census of Luke 2 is the famous census of AD 6, placed a decade too early",
@@ -1095,7 +1175,7 @@
       "area": "contradictions",
       "slug": "the-census-of-quirinius",
       "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Matthew and Luke give Joseph different fathers and Jesus different lines from David, so the genealogies contradict each other",
@@ -1105,7 +1185,7 @@
       "area": "contradictions",
       "slug": "the-two-genealogies",
       "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The two genealogies cannot be fully harmonized; each evangelist shaped the traditions he had for theological ends",
@@ -1115,7 +1195,7 @@
       "area": "contradictions",
       "slug": "the-two-genealogies",
       "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Matthew and Acts give two incompatible accounts of how Judas died, so the two contradict each other",
@@ -1125,7 +1205,7 @@
       "area": "contradictions",
       "slug": "how-did-judas-die",
       "question": "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Synoptic Gospels put the crucifixion on the day after the Passover meal and John on the day the lambs were killed, so they contradict each other on the day Jesus died",
@@ -1135,7 +1215,7 @@
       "area": "contradictions",
       "slug": "the-day-of-the-crucifixion",
       "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
-      "live": false
+      "live": true
     },
     {
       "claim": "John moved the day and hour of the crucifixion so that Jesus would die as the Passover lambs were slaughtered",
@@ -1145,7 +1225,7 @@
       "area": "contradictions",
       "slug": "the-day-of-the-crucifixion",
       "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Comparing Kings and Chronicles with each other shows confusion and contradiction in the Bible",
@@ -1155,7 +1235,7 @@
       "area": "contradictions",
       "slug": "numbers-in-samuel-kings-and-chronicles",
       "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The first Christians believed in a heavenly Jesus known through visions and Scripture; the Gospels later placed him in history",
@@ -1165,7 +1245,7 @@
       "area": "jesus",
       "slug": "did-jesus-exist",
       "question": "Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?",
-      "live": false
+      "live": true
     },
     {
       "claim": "There was no historical man behind the Christ of the Gospels",
@@ -1175,7 +1255,7 @@
       "area": "jesus",
       "slug": "did-jesus-exist",
       "question": "Did Jesus even exist? Isn't the evidence outside the Bible too thin to be sure?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus was probably not given a decent burial in a known tomb, so the stories of an empty tomb arose later",
@@ -1185,7 +1265,7 @@
       "area": "jesus",
       "slug": "the-empty-tomb",
       "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus' body was probably dealt with as crucified bodies usually were, and the honorable burial by Joseph of Arimathea arose later",
@@ -1195,7 +1275,7 @@
       "area": "jesus",
       "slug": "the-empty-tomb",
       "question": "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus' body decayed, and the appearances were visions born of grief and guilt, beginning with Peter's",
@@ -1205,7 +1285,7 @@
       "area": "jesus",
       "slug": "the-appearances-and-the-alternatives",
       "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Some of Jesus' followers sincerely had visions of him, of the kind bereaved people have, and persuaded the others",
@@ -1215,7 +1295,7 @@
       "area": "jesus",
       "slug": "the-appearances-and-the-alternatives",
       "question": "Couldn't the disciples' Easter experiences be explained by grief, legend or fraud, or by Jesus surviving the cross?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Gospels' accounts of the resurrection contradict one another, and harmonizing them only produces a story none of them tells",
@@ -1225,7 +1305,7 @@
       "area": "jesus",
       "slug": "the-resurrection-accounts-disagree",
       "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The contradictions among the Easter stories show that they were invented",
@@ -1235,7 +1315,7 @@
       "area": "jesus",
       "slug": "the-resurrection-accounts-disagree",
       "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Historians can establish only what probably happened, and a miracle is by definition the least probable event, so a historian as a historian can never conclude that one occurred",
@@ -1245,7 +1325,7 @@
       "area": "jesus",
       "slug": "can-historians-affirm-a-miracle",
       "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Historical method judges by probability, analogy and correlation, and so cannot affirm an event without analogy",
@@ -1255,7 +1335,7 @@
       "area": "jesus",
       "slug": "can-historians-affirm-a-miracle",
       "question": "Bart Ehrman says historians can't conclude that a miracle happened. Doesn't that mean the resurrection can never be a historical claim?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus' first followers believed God had exalted a man at the resurrection; the belief that he was God from before creation came later",
@@ -1265,7 +1345,7 @@
       "area": "jesus",
       "slug": "how-did-jesus-become-god",
       "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Philippians 2 contrasts Christ with Adam and need not speak of a life before his birth",
@@ -1275,7 +1355,7 @@
       "area": "jesus",
       "slug": "how-did-jesus-become-god",
       "question": "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus did not claim to be God; John's high view of him is a late development",
@@ -1285,7 +1365,7 @@
       "area": "jesus",
       "slug": "did-jesus-claim-to-be-god",
       "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
-      "live": false
+      "live": true
     },
     {
       "claim": "\"Son of Man\" in Jesus' Aramaic could be a modest way of saying \"I\", not a claim to Daniel's figure",
@@ -1295,7 +1375,7 @@
       "area": "jesus",
       "slug": "did-jesus-claim-to-be-god",
       "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus used \"son of man\" in its ordinary Aramaic sense, and the references to Daniel were added by the early church",
@@ -1305,7 +1385,7 @@
       "area": "jesus",
       "slug": "did-jesus-claim-to-be-god",
       "question": "In Matthew, Mark and Luke, Jesus never says \"I am God.\" Isn't the claim that he did a product of John's Gospel, written decades later?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus was conceived in the ordinary way, possibly outside marriage, and the virgin birth arose later",
@@ -1315,7 +1395,7 @@
       "area": "jesus",
       "slug": "the-virgin-birth",
       "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Matthew and Luke inherited a tradition of an illegitimate conception",
@@ -1325,7 +1405,7 @@
       "area": "jesus",
       "slug": "the-virgin-birth",
       "question": "Isn't the virgin birth a legend, built on a mistranslation of Isaiah and borrowed from pagan stories of gods who fathered heroes?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus expected the Son of Man to come before the Twelve returned from their mission, and the prediction was not fulfilled",
@@ -1335,7 +1415,7 @@
       "area": "jesus",
       "slug": "did-jesus-predict-the-end-within-a-generation",
       "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jesus thought his second coming would occur before the death of all the people living at the time, and so was not superlatively wise",
@@ -1345,7 +1425,7 @@
       "area": "jesus",
       "slug": "did-jesus-predict-the-end-within-a-generation",
       "question": "Jesus said \"this generation will not pass away until all these things have happened.\" Didn't he wrongly predict that the world would end within his hearers' lifetime?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The stories of the apostles' deaths are legends of a credulous antiquity; martyrdom was gradually bestowed on apostles beyond Peter, Paul and James",
@@ -1355,7 +1435,7 @@
       "area": "jesus",
       "slug": "did-the-disciples-die-for-their-belief",
       "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The disciples sincerely had visions of Jesus after his death, so their sincerity shows nothing about whether he rose",
@@ -1365,7 +1445,7 @@
       "area": "jesus",
       "slug": "did-the-disciples-die-for-their-belief",
       "question": "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Archaeology has found no trace of the exodus in Egypt or Sinai, and the story is best read as a later national epic",
@@ -1375,7 +1455,7 @@
       "area": "old-testament",
       "slug": "did-the-exodus-happen",
       "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Two million Israelites wandering forty years would have left remains in Sinai, and none have been found",
@@ -1385,7 +1465,7 @@
       "area": "old-testament",
       "slug": "did-the-exodus-happen",
       "question": "No Egyptian record mentions the exodus, and archaeologists have found no trace of two million people in the Sinai desert. Did it happen at all?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Jericho's last walled city fell in the sixteenth century BC, and there was little or nothing there for Joshua to conquer",
@@ -1395,7 +1475,7 @@
       "area": "old-testament",
       "slug": "jericho-and-the-conquest",
       "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Israel emerged gradually from within Canaan, and the conquest stories are later legend",
@@ -1405,7 +1485,7 @@
       "area": "old-testament",
       "slug": "jericho-and-the-conquest",
       "question": "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?",
-      "live": false
+      "live": true
     },
     {
       "claim": "A perfectly good God would not command the killing of children, so either God is not good or the Bible is wrong that he commanded it",
@@ -1415,7 +1495,7 @@
       "area": "old-testament",
       "slug": "the-command-to-destroy-the-canaanites",
       "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
-      "live": false
+      "live": true
     },
     {
       "claim": "No one can be as certain that a voice is God's as that killing an innocent child is wrong",
@@ -1425,7 +1505,7 @@
       "area": "old-testament",
       "slug": "the-command-to-destroy-the-canaanites",
       "question": "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Daniel was written by someone living under Antiochus Epiphanes, who related the past rather than foretelling the future",
@@ -1435,7 +1515,7 @@
       "area": "old-testament",
       "slug": "when-was-daniel-written",
       "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Daniel was completed between 167 and 164 BC: its prophecy of the Greek kings is exact down to Antiochus IV and wrong about his death",
@@ -1445,7 +1525,7 @@
       "area": "old-testament",
       "slug": "when-was-daniel-written",
       "question": "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Much of the Old Testament, its flood story among it, came from Babylon",
@@ -1455,7 +1535,7 @@
       "area": "old-testament",
       "slug": "the-flood-and-babylon",
       "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The flood story came into the Bible from Babylon",
@@ -1465,7 +1545,7 @@
       "area": "old-testament",
       "slug": "the-flood-and-babylon",
       "question": "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The five books were woven from sources written centuries after Moses, and the priestly law came last, not first",
@@ -1475,7 +1555,7 @@
       "area": "old-testament",
       "slug": "who-wrote-the-first-five-books",
       "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The five books were written by someone who lived long after Moses",
@@ -1485,7 +1565,7 @@
       "area": "old-testament",
       "slug": "who-wrote-the-first-five-books",
       "question": "The last chapter of Deuteronomy tells of Moses' death and burial, God is called by different names in different stories, and some events are told twice. Weren't the first five books written by many hands, centuries after Moses?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The God of the Old Testament is the most unpleasant character in all fiction, petty, unjust and unforgiving",
@@ -1495,7 +1575,7 @@
       "area": "old-testament",
       "slug": "the-god-of-the-old-testament",
       "question": "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Keeping the Old Testament as canonical Scripture in nineteenth-century Protestantism was the result of religious and churchly inertia",
@@ -1505,7 +1585,7 @@
       "area": "old-testament",
       "slug": "the-god-of-the-old-testament",
       "question": "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Christians claim God's covenant but keep neither sabbaths, festivals nor circumcision, and so do not obey his commandments",
@@ -1515,7 +1595,7 @@
       "area": "old-testament",
       "slug": "which-old-testament-laws",
       "question": "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Mark's Jesus kept the food laws, and 'all foods' means all foods the Torah permits",
@@ -1525,7 +1605,7 @@
       "area": "old-testament",
       "slug": "which-old-testament-laws",
       "question": "Leviticus forbids eating shellfish and wearing clothing made of two kinds of material, and Christians ignore those laws while quoting others from the same chapters. Why do Christians keep some Old Testament laws and not others?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Abraham should have answered that he was certain he ought not to kill his son, but could never be certain that the voice was God's",
@@ -1535,7 +1615,7 @@
       "area": "old-testament",
       "slug": "abraham-and-isaac",
       "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The binding of Isaac has taught three faiths to honor a father's willingness to sacrifice his child, and should no longer be held up as a model",
@@ -1545,7 +1625,7 @@
       "area": "old-testament",
       "slug": "abraham-and-isaac",
       "question": "God told Abraham to offer his son Isaac as a burnt offering, and Abraham set out to do it. Did God really command a father to kill his child, and how can a story like that be praised?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Tenth-century Judah was a thinly settled highland chiefdom, and the Bible's picture of a kingdom under David and Solomon was magnified later",
@@ -1555,7 +1635,7 @@
       "area": "old-testament",
       "slug": "what-archaeology-shows",
       "question": "Archaeologists have found no trace of the exodus, a Jericho without walls, and little sign of a great kingdom under David and Solomon. Does archaeology confirm the Old Testament, or undermine it?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Science and religion are incompatible in method: science can find out it is wrong, religion holds its claims by faith, scripture and authority",
@@ -1565,7 +1645,7 @@
       "area": "science",
       "slug": "has-science-made-god-unnecessary",
       "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Because a law like gravity exists, the universe can create itself from nothing, and no creator is needed",
@@ -1575,7 +1655,7 @@
       "area": "science",
       "slug": "has-science-made-god-unnecessary",
       "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Darwin made it possible for an atheist to explain biological design, removing the strongest reason for belief",
@@ -1585,7 +1665,7 @@
       "area": "science",
       "slug": "has-science-made-god-unnecessary",
       "question": "Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Religion and science have been in conflict throughout history, with the church holding back the advance of knowledge",
@@ -1595,7 +1675,7 @@
       "area": "science",
       "slug": "galileo-and-the-war",
       "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The history of science is a history of warfare with dogmatic theology",
@@ -1605,7 +1685,7 @@
       "area": "science",
       "slug": "galileo-and-the-war",
       "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
-      "live": false
+      "live": true
     },
     {
       "claim": "No testimony is sufficient to establish a miracle unless its falsehood would be more miraculous than the fact it reports",
@@ -1615,7 +1695,7 @@
       "area": "science",
       "slug": "miracles-and-the-laws-of-nature",
       "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
-      "live": false
+      "live": true
     },
     {
       "claim": "No human testimony can prove a miracle so as to make it a just foundation for a system of religion",
@@ -1625,7 +1705,7 @@
       "area": "science",
       "slug": "miracles-and-the-laws-of-nature",
       "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Hume's argument against miracles, rightly read, still stands against its modern critics",
@@ -1635,7 +1715,7 @@
       "area": "science",
       "slug": "miracles-and-the-laws-of-nature",
       "question": "A miracle would break the laws of nature. Didn't David Hume show that no one can reasonably believe in one?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Physics shows how a universe can arise from nothing, so the Big Bang needs no creator",
@@ -1645,7 +1725,7 @@
       "area": "science",
       "slug": "the-beginning-and-fine-tuning",
       "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Fine-tuning may be explained by a multiverse of universes with different constants, of which we observe one that permits life",
@@ -1655,7 +1735,7 @@
       "area": "science",
       "slug": "the-beginning-and-fine-tuning",
       "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "A designer would be at least as improbable as the design it is offered to explain",
@@ -1665,7 +1745,7 @@
       "area": "science",
       "slug": "the-beginning-and-fine-tuning",
       "question": "Christians say the Big Bang and the fine-tuning of physics point to God. Can't physics explain both without him?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The evidence of fossils, biogeography and shared genes shows the common descent of living things, humans included",
@@ -1675,7 +1755,7 @@
       "area": "science",
       "slug": "evolution-and-genesis",
       "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Darwin removed the strongest reason to believe in a designer",
@@ -1685,7 +1765,87 @@
       "area": "science",
       "slug": "evolution-and-genesis",
       "question": "Hasn't evolution disproved Genesis, and with it the Christian story of creation and the fall?",
-      "live": false
+      "live": true
+    },
+    {
+      "claim": "The Bible gave the church a full and definite chronology, and geology proved it wrong",
+      "proponent": "Andrew Dickson White",
+      "work": "A History of the Warfare of Science with Theology in Christendom",
+      "year": 1896,
+      "area": "science",
+      "slug": "how-old-is-the-earth",
+      "question": "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?",
+      "live": true
+    },
+    {
+      "claim": "The plain sense of Genesis is six ordinary days a few thousand years ago, and any other reading bends Scripture to fit science",
+      "proponent": "John C. Whitcomb and Henry M. Morris",
+      "work": "The Genesis Flood",
+      "year": 1961,
+      "area": "science",
+      "slug": "how-old-is-the-earth",
+      "question": "The sciences say the earth is about four and a half billion years old, and Bible chronologies put creation a few thousand years ago. How old is the earth, and does the Bible say?",
+      "live": true
+    },
+    {
+      "claim": "Human genetic diversity shows that our ancestral population never fell below several thousand, which rules out all humans descending from a single recent couple",
+      "proponent": "Dennis R. Venema",
+      "work": "Adam and the Genome",
+      "year": 2017,
+      "area": "science",
+      "slug": "adam-eve-and-human-origins",
+      "question": "Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?",
+      "live": true
+    },
+    {
+      "claim": "Paul's use of Adam reflects the assumptions of his time and need not bind modern readers",
+      "proponent": "Peter Enns",
+      "work": "The Evolution of Adam",
+      "year": 2012,
+      "area": "science",
+      "slug": "adam-eve-and-human-origins",
+      "question": "Fossils and genetics trace human beings back through a long history in Africa, from a population that was never only two people. Doesn't that rule out Adam and Eve, and with them the fall and the need for a Savior?",
+      "live": true
+    },
+    {
+      "claim": "The present gaps in explaining conscious experience reflect only the early stage of inquiry, not a barrier in reality",
+      "proponent": "Daniel C. Dennett",
+      "work": "Consciousness Explained",
+      "year": 1991,
+      "area": "science",
+      "slug": "is-the-mind-just-the-brain",
+      "question": "Damage to the brain changes memory, character and even the sense of self, and neuroscience ties more of mental life to the brain every year. Hasn't science shown that the mind is just the brain, and that there is no soul?",
+      "live": true
+    },
+    {
+      "claim": "The experience of consciously willing an action is an illusion",
+      "proponent": "Daniel M. Wegner",
+      "work": "The Illusion of Conscious Will",
+      "year": 2002,
+      "area": "science",
+      "slug": "neuroscience-and-free-will",
+      "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+      "live": true
+    },
+    {
+      "claim": "The conscious intention to move cannot be the true cause of an action, because it comes after the brain's readiness potential",
+      "proponent": "Benjamin Libet",
+      "work": "Unconscious Cerebral Initiative and the Role of Conscious Will in Voluntary Action",
+      "year": 1985,
+      "area": "science",
+      "slug": "neuroscience-and-free-will",
+      "question": "Experiments show the brain preparing an action before a person is aware of deciding to act. Hasn't neuroscience shown that free will is an illusion, and with it moral responsibility?",
+      "live": true
+    },
+    {
+      "claim": "Accurate perceptions reported during near-death experiences, which the senses could not have supplied, are evidence that a person can survive the body",
+      "proponent": "J. P. Moreland and Gary Habermas",
+      "work": "Beyond Death",
+      "year": 1998,
+      "area": "science",
+      "slug": "near-death-experiences",
+      "question": "People revived after their hearts stopped report leaving their bodies, a light, and meeting relatives who had died. Do near-death experiences prove that there is life after death?",
+      "live": true
     },
     {
       "claim": "God's omnipotence, God's goodness and the existence of evil cannot all be true, so belief in God is positively irrational",
@@ -1695,7 +1855,7 @@
       "area": "evil",
       "slug": "the-logical-problem-of-evil",
       "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
-      "live": false
+      "live": true
     },
     {
       "claim": "An all-powerful God could have made free people who always in fact choose the good, so the appeal to free will fails",
@@ -1705,7 +1865,7 @@
       "area": "evil",
       "slug": "the-logical-problem-of-evil",
       "question": "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?",
-      "live": false
+      "live": true
     },
     {
       "claim": "There is intense suffering, like a fawn's slow death in a forest fire, that an all-powerful, all-knowing being could have prevented without losing any greater good, so probably there is no such being",
@@ -1715,7 +1875,7 @@
       "area": "evil",
       "slug": "the-evidential-problem-of-evil",
       "question": "Even if God and evil don't contradict each other, doesn't so much suffering that serves no purpose anyone can see make God unlikely?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The pattern of pain and pleasure in nature is what we would expect if nothing behind nature cared about its creatures, and much less what we would expect if a good God made it",
@@ -1725,7 +1885,7 @@
       "area": "evil",
       "slug": "natural-evil-and-animal-suffering",
       "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
-      "live": false
+      "live": true
     },
     {
       "claim": "No good and all-powerful God would have designed wasps whose young feed inside living caterpillars",
@@ -1735,7 +1895,7 @@
       "area": "evil",
       "slug": "natural-evil-and-animal-suffering",
       "question": "Earthquakes, cancer and the suffering of animals over ages before there were any people aren't caused by anyone's choice. How can a good God allow them?",
-      "live": false
+      "live": true
     },
     {
       "claim": "A perfectly loving God would make a relationship with himself possible for everyone capable of it who does not resist, so the existence of nonresistant unbelievers shows there is no such God",
@@ -1745,7 +1905,7 @@
       "area": "evil",
       "slug": "the-hiddenness-of-god",
       "question": "If a loving God existed, wouldn't he make himself known to everyone who is open to him? Don't sincere unbelievers show that there is no such God?",
-      "live": false
+      "live": true
     },
     {
       "claim": "No one who is really profoundly humane can believe in everlasting punishment, so Christ's belief in hell is a defect in his moral character",
@@ -1755,7 +1915,7 @@
       "area": "evil",
       "slug": "hell-and-the-justice-of-god",
       "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
-      "live": false
+      "live": true
     },
     {
       "claim": "No sin committed by a finite creature in a life of ambiguity and ignorance could deserve an infinite penalty",
@@ -1765,7 +1925,7 @@
       "area": "evil",
       "slug": "hell-and-the-justice-of-god",
       "question": "How could a good God punish anyone forever? Isn't the doctrine of hell itself the worst problem of evil?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Crusades were the most signal and durable monument of human folly, made possible by a church that offered holy war as an atonement for every violation of justice",
@@ -1775,7 +1935,7 @@
       "area": "morality",
       "slug": "the-crusades",
       "question": "Weren't the Crusades a holy war of conquest, and don't they show what Christianity does when it has power?",
-      "live": false
+      "live": true
     },
     {
       "claim": "As soon as Christians were powerful enough to use the sword they did, with the stake and faggot too, and the persecutions came from belief in revelation itself",
@@ -1785,7 +1945,7 @@
       "area": "morality",
       "slug": "the-inquisition",
       "question": "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The Bible endorses slavery, and the slaveholders who quoted it were reading it, not misreading it",
@@ -1795,7 +1955,7 @@
       "area": "morality",
       "slug": "slavery-and-conquest",
       "question": "Christian nations conquered the Americas and built the Atlantic slave trade, and their churches blessed both. Doesn't that discredit the faith they claimed?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Bishops turned their backs on victims and protected their priests",
@@ -1805,7 +1965,7 @@
       "area": "morality",
       "slug": "abuse-and-cover-up",
       "question": "Church leaders hid the sexual abuse of children and protected the abusers. How can anyone trust a church, or the faith it preaches, after that?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Religion poisons everything, and its crimes, unlike those of atheist regimes, are committed in the name of God",
@@ -1815,7 +1975,7 @@
       "area": "morality",
       "slug": "does-religion-poison-everything",
       "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The persecutions and religious wars that laid Europe in blood and ashes came from belief in revelation itself",
@@ -1825,7 +1985,57 @@
       "area": "morality",
       "slug": "does-religion-poison-everything",
       "question": "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?",
+      "live": true
+    },
+    {
+      "claim": "The Bible's passages on same-sex acts had exploitation and excess in view, and do not address faithful, committed same-sex relationships",
+      "proponent": "James V. Brownson",
+      "work": "Bible, Gender, Sexuality",
+      "year": 2013,
+      "area": "morality",
+      "slug": "what-the-bible-says-about-homosexuality",
+      "question": "What does the Bible say about homosexuality, and why do Christians disagree?",
       "live": false
+    },
+    {
+      "claim": "An abortion before sense and life have begun harms no one, and the Bible itself never forbids it",
+      "proponent": "Aristotle",
+      "work": "Politics",
+      "year": 1885,
+      "area": "morality",
+      "slug": "the-first-christians-on-abortion-and-exposure",
+      "question": "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?",
+      "live": true
+    },
+    {
+      "claim": "The Bible teaches that woman brought sin into the world and is to live in silence and subjection",
+      "proponent": "Elizabeth Cady Stanton",
+      "work": "The Woman's Bible",
+      "year": 1895,
+      "area": "morality",
+      "slug": "is-christianity-bad-for-women",
+      "question": "The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women?",
+      "live": true
+    },
+    {
+      "claim": "A Christian people should order its laws and customs as a Christian nation, for its earthly and heavenly good",
+      "proponent": "Stephen Wolfe",
+      "work": "The Case for Christian Nationalism",
+      "year": 2022,
+      "area": "morality",
+      "slug": "is-christian-nationalism-christian",
+      "question": "Every nation's laws rest on somebody's morals. Why shouldn't a Christian people want a Christian nation? Is Christian nationalism Christian?",
+      "live": true
+    },
+    {
+      "claim": "Christian values are the resentment of the weak turned into a morality",
+      "proponent": "Friedrich Nietzsche",
+      "work": "The Genealogy of Morals",
+      "year": 1887,
+      "area": "morality",
+      "slug": "is-christian-morality-a-product-of-its-culture",
+      "question": "Morals differ from one culture to the next, and Nietzsche traced Christian values to the resentment of the weak. Isn't Christian morality just the product of its culture?",
+      "live": true
     },
     {
       "claim": "The great religions are different culturally shaped responses to one ultimate Real, each a valid context of salvation and none the one and only",
@@ -1835,7 +2045,7 @@
       "area": "religions",
       "slug": "are-all-religions-the-same",
       "question": "Aren't all religions basically the same, different paths up one mountain to the same God?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Those who hold that their own religion alone is true often show arbitrariness or arrogance",
@@ -1845,7 +2055,7 @@
       "area": "religions",
       "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
       "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
-      "live": false
+      "live": true
     },
     {
       "claim": "Religious exclusivism is presumptuous and morally objectionable",
@@ -1855,7 +2065,7 @@
       "area": "religions",
       "slug": "is-it-arrogant-to-say-jesus-is-the-only-way",
       "question": "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?",
-      "live": false
+      "live": true
     },
     {
       "claim": "A just God would not deny salvation to devout people of other faiths, who are not to blame for their beliefs",
@@ -1865,7 +2075,7 @@
       "area": "religions",
       "slug": "those-who-never-heard",
       "question": "What about the people who never heard of Jesus? Would a just God condemn them for being born in the wrong place?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The unity of God is the keystone of Judaism, and God's word that there is no God beside him means that he has no son",
@@ -1875,7 +2085,7 @@
       "area": "religions",
       "slug": "judaism-islam-and-jesus",
       "question": "Jews and Muslims both confess one God and refuse to worship Jesus. Isn't Christianity the faith that strayed from the God of Abraham?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The same causes that make a man a Churchman in London would have made him a Buddhist or a Confucian in Peking",
@@ -1885,7 +2095,7 @@
       "area": "religions",
       "slug": "only-a-christian-because-of-where-you-were-born",
       "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
-      "live": false
+      "live": true
     },
     {
       "claim": "The religion a person holds depends in the great majority of cases on where he was born",
@@ -1895,7 +2105,7 @@
       "area": "religions",
       "slug": "only-a-christian-because-of-where-you-were-born",
       "question": "Aren't you only a Christian because of where you were born? If you'd grown up in another country, wouldn't you hold its religion instead?",
-      "live": false
+      "live": true
     }
   ],
   "answers": {
@@ -1914,6 +2124,7 @@
     "why-didnt-the-bible-just-ban-slavery": "Why didn't the Bible just ban slavery?",
     "what-did-the-new-atheists-get-right": "What did the New Atheists get right?",
     "christianity-and-islam-differences": "What do Christianity and Islam actually dispute?",
+    "does-god-choose-us-or-do-we-choose-him": "Does God choose us, or do we choose him?",
     "how-should-a-christian-read-genesis-1": "How should a Christian read Genesis 1?",
     "why-does-god-allow-natural-disasters": "Why does God allow earthquakes, cancer, and animal suffering?",
     "what-makes-us-human-in-the-age-of-ai": "What makes us human in the age of AI?"

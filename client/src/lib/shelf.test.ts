@@ -61,10 +61,10 @@ describe("shelf.json", () => {
     }
   });
 
-  it("holds the 65 planned essays: 15 live, 50 pending, each filed to a real section", () => {
-    expect(SHELF_ESSAYS).toHaveLength(65);
-    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(65);
-    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(15);
+  it("holds the 75 shelf essays: 25 live, 50 pending, each filed to a real section", () => {
+    expect(SHELF_ESSAYS).toHaveLength(75);
+    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(75);
+    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(25);
     expect(SHELF_ESSAYS.filter((e) => e.status === "pending")).toHaveLength(50);
     const sections = new Set(SHELF_SECTIONS.map((s) => s.slug));
     for (const e of SHELF_ESSAYS) {
@@ -157,7 +157,7 @@ describe("essay visibility", () => {
 
   it("orders the live shelf by section, then shelf order", () => {
     const live = liveShelfEssays();
-    expect(live).toHaveLength(40);
+    expect(live).toHaveLength(50);
     expect(live[0].slug).toBe("every-generation-was-sure-it-was");
     const ranks = live.map((e) => SHELF_SECTIONS.findIndex((s) => s.slug === e.section));
     expect([...ranks].sort((a, b) => a - b)).toEqual(ranks);
@@ -168,9 +168,11 @@ describe("essay visibility", () => {
       "the-mirror",
       "faith-and-power",
       "after-christendom",
+      "american-church",
       "ancient-church",
       "bible-in-its-world",
       "doubt",
+      "ordinary-faithfulness",
     ]);
   });
 });
@@ -180,10 +182,11 @@ describe("nearest section", () => {
     expect(nearestSection(PENDING)?.slug).toBe("faith-and-power");
   });
 
-  it("never points at a section with nothing in it", () => {
-    // Marriage, Family and Ordinary Faithfulness has no public essay yet.
-    expect(nearestSection("covenant-vs-contract-what-marriage-is")).toBeNull();
-    expect(nearestSection(RETIRED, "marriage")).toBeNull();
+  it("points at a section once it holds a public essay, and never at a track with no section", () => {
+    // Every section now holds a public essay; The American Church was the last to get one.
+    expect(nearestSection("doctrine-of-discovery")?.slug).toBe("american-church");
+    expect(nearestSection(RETIRED, "prophetic-justice")?.slug).toBe("american-church");
+    expect(nearestSection(RETIRED, "pastoral-ministry")).toBeNull();
   });
 
   it("routes a retired essay by its track", () => {

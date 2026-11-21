@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: the-synoptic-problem
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "If Matthew and Luke copied Mark, aren't the first three Gospels really one witness rather than three?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-second run", key "bi"
 ---

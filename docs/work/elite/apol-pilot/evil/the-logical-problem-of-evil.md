@@ -1,7 +1,7 @@
 ---
 area: evil
 slug: the-logical-problem-of-evil
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "If God is all-powerful and wholly good, why is there evil at all? Didn't J. L. Mackie show that the two can't both be true?"
 ledger: docs/work/elite/apol-ledger.md, "Seventeenth run", key "ai"
 ---

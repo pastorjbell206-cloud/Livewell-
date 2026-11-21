@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: did-paul-invent-christianity
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Paul never followed Jesus in his lifetime, rarely quotes him, and wrote before any Gospel. Didn't Paul, rather than Jesus, invent Christianity?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-second run", key "bl"
 ---

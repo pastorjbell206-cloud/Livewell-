@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: did-the-disciples-die-for-their-belief
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Christians say the apostles died for their testimony, and that no one dies for a lie. How much do we actually know about how they died, and what would it prove?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-first run", key "bg"
 ---
