@@ -14212,3 +14212,23 @@ Cut: a reason why Eleazar and not Aaron handled the censers, which no note in th
 | The request to Sihon as to Edom; Sihon attacks; Heshbon, Dibon, Medeba and the Mesha inscription (Dhiban, 1868); the taunt song; Chemosh; the digs at sites proposed for Heshbon | 21-35 | numbers/21.json `historical`, `cultural`, `story` | Repository; no side |
 | Psalm 136:19-20; Deuteronomy 2:26; Ephesians 6:12 | 21-35 | numbers/21.json `hard`; BSB | BSB text |
 | The three readings of the wars, each with its cost; what holds on any reading; no warrant for violence; no nation or conflict today in view | 21-35 | numbers/21.json `hard`; context/guides/the-violence-of-the-old-testament.json; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
+
+## The plain notes on Numbers 22 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last camp; Israel offstage; seers, curses as weapons, a paid profession; divination forbidden (Deuteronomy 18:10) | 1-21 | numbers/22.json `story`, `cultural`, `words` (H7081) | Repository |
+| Tell Deir Alla (1967, ink on plaster, about the eighth century BC, ‘Balaam son of Beor’); it does not describe these events | 1-21 | numbers/22.json `historical`; numbers/intro.json `date` | Repository |
+| ‘They are blessed’ and Genesis 12:3 | 1-21 | numbers/22.json `words` (H1288), `christ`; BSB | Repository; BSB text |
+| 2 Peter 2:15; Jude 1:11, warnings to the church; Deuteronomy 23:5 | 1-21 | numbers/22.json `christ`; jude/plain/1.json; BSB | Repository; BSB text |
+| The humor of the blind seer; the pattern of threes and the narrowing road; satan as a common noun; the donkey as companion | 22-35 | numbers/22.json `cultural`, `literary`, `words` (H7854) | Repository |
+| The angel of the LORD: two Christian readings, unsettled | 22-35 | numbers/22.json `christ` | Repository; no side |
+| 2 Peter 2:16; Proverbs 12:10 | 22-35 | BSB | BSB text |
+| Why God permits and is then angry: three explanations; the New Testament's verdict | 22-35 | numbers/22.json `hard` | Repository; no side |
+| Whether the donkey spoke: taken as history, or as a story told with humor | 22-35 | exodus/intro.json teaching (the range of views on the sea, as a model); numbers/22.json `cultural` | No side; stated as two ways Christians read it |
+| The key line three times (verses 20, 35, 38); Bamoth-baal a height on the plateau's edge | 36-41 | numbers/22.json `literary`; numbers/23.json `historical` | Repository |
+| Micah 6:5; Psalm 121:4 | 36-41 | BSB | BSB text |
+
+Cut for want of a source in the repository: a meaning for the name Bamoth-baal; that a curse was thought to work better in sight of its target.
