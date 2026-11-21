@@ -26,3 +26,26 @@ describe("DoorInside", () => {
     for (const d of DOORS) expect(doorRooms(d.id).length).toBeLessThanOrEqual(6);
   });
 });
+
+describe("DoorInside on the Questions door", () => {
+  it("lists the case for the faith's live areas from the library's manifest, ahead of Look up a claim", async () => {
+    const { vi } = await import("vitest");
+    const { screen } = await import("@testing-library/react");
+    const index = {
+      roomLive: true,
+      claims: [],
+      answers: {},
+      areas: [
+        { slug: "god", n: 1, title: "God, faith and reason", planned: 5, status: "live", live: true, hasPage: true, pieces: [{ slug: "a", question: "A?", status: "live", live: true }] },
+        { slug: "evil", n: 8, title: "Evil and suffering", planned: 5, status: "pending", live: false, hasPage: true, pieces: [] },
+      ],
+    };
+    vi.stubGlobal("fetch", vi.fn(async () => new Response(JSON.stringify(index), { status: 200, headers: { "content-type": "application/json" } })));
+    const { container } = renderWithProviders(<DoorInside door="questions" />);
+    const live = await screen.findByRole("link", { name: /God, faith and reason/ }, { timeout: 8000 });
+    expect(live.getAttribute("href")).toBe("/questions/god");
+    const hrefs = Array.from(container.querySelectorAll("a.lw-tile[href^='/questions/']")).map((a) => a.getAttribute("href"));
+    expect(hrefs).toEqual(["/questions/god", "/questions/claims"]);
+    vi.unstubAllGlobals();
+  });
+});

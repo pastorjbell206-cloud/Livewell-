@@ -11,7 +11,7 @@
  * has the same name here as in the header, the footer and search, and the
  * page cannot fall behind the site.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "wouter";
 import { Search } from "lucide-react";
 
@@ -26,7 +26,7 @@ import { FAMILY_GROUP, FAMILY_TOOLS, TOOL_GROUPS } from "@/lib/toolsList";
 import { liveSections, sectionHref } from "@/lib/shelf";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { followHash } from "@/lib/followHash";
-import { areaHref, fetchQuestionsIndex, QUESTIONS_CLAIMS, QUESTIONS_ROOM } from "@/lib/questions";
+import { useLiveAreas, withLiveAreas } from "@/lib/liveAreas";
 import "./explore.css";
 
 /** The tools, each once, in the tools page's groups and then the family's, under their one name (lib/toolsList.ts). */
@@ -105,44 +105,6 @@ function essayRooms(): Room[] {
     href: sectionHref(s),
     icon: "Feather" as const,
   }));
-}
-
-/**
- * The case for the faith's areas that are live today, read from the library's
- * own manifest (client/public/questions/index.json), so an area appears here
- * the day it is published and never before. Until the manifest answers, and
- * if it does not, the catalogue's own list stands.
- */
-function useLiveAreas(): CatalogEntry[] | null {
-  const [areas, setAreas] = useState<CatalogEntry[] | null>(null);
-  useEffect(() => {
-    let stale = false;
-    fetchQuestionsIndex()
-      .then((d) => {
-        if (stale) return;
-        setAreas(
-          d.areas
-            .filter((a) => a.live && a.hasPage)
-            .map((a) => {
-              const n = a.pieces.filter((p) => p.live).length;
-              return { id: `questions.${a.slug}`, name: a.title, line: `${n} ${n === 1 ? "question" : "questions"}, each answered in full.`, href: areaHref(a.slug), icon: "Library" as const };
-            }),
-        );
-      })
-      .catch(() => {});
-    return () => {
-      stale = true;
-    };
-  }, []);
-  return areas;
-}
-
-/** A room as the catalogue lists it, with the case's areas taken from the live manifest. */
-function withLiveAreas(room: Room, areas: CatalogEntry[] | null): Room {
-  if (room.href !== QUESTIONS_ROOM || !areas?.length) return room;
-  // The catalogue's own area entries give way to the live list; its other pages (Look up a claim) stay.
-  const others = (room.inside ?? []).filter((i) => i.href === QUESTIONS_CLAIMS || !/^\/questions\/[a-z-]+$/.test(i.href));
-  return { ...room, inside: [...areas, ...others] };
 }
 
 function DoorSection({ door, words, index, areas }: { door: Door; words: string[]; index: number; areas: CatalogEntry[] | null }) {

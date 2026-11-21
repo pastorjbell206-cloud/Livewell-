@@ -208,7 +208,7 @@ export const DOORS: Door[] = [
       {
         id: "questions.case", name: "The case for the faith", line: "The hard objections at full strength, with the evidence and the argument.", href: "/questions", icon: "Library",
         inside: [
-          { id: "questions.text", name: "Can we trust the text of the New Testament?", line: "Manuscripts, variants and what the evidence shows.", href: "/questions/text", icon: "Library" },
+          // The library's areas are not typed here: they are listed from its own manifest of what is live (lib/liveAreas.ts).
           { id: "questions.claims", name: "Look up a claim", line: "Each claim the library answers, with the page that answers it.", href: "/questions/claims", icon: "Search" },
         ],
       },

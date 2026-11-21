@@ -5,6 +5,9 @@
  * shows six rooms or fewer; this is where the rest of a door is found, so it
  * is drawn from the same list and can never fall behind it.
  *
+ * The case for the faith's areas are the one thing not typed in the catalogue:
+ * they come from the library's manifest of what is live (lib/liveAreas.ts).
+ *
  * Each entry is an IconTile under its one name. A room with nothing inside
  * adds nothing; a door with nothing inside any room draws nothing at all.
  */
@@ -14,6 +17,7 @@ import { DOORS, type DoorId } from "@/lib/siteCatalog";
 import { ICONS } from "@/lib/siteIcons";
 import { Link } from "wouter";
 import { followHash } from "@/lib/followHash";
+import { useLiveAreas, withLiveAreas } from "@/lib/liveAreas";
 
 /** The rooms of a door, as the catalogue lists them: the page's picture cards read their names and addresses here. */
 export function doorRooms(id: DoorId) {
@@ -22,7 +26,12 @@ export function doorRooms(id: DoorId) {
 
 export default function DoorInside({ door, warm, title = "One step further in." }: { door: DoorId; warm?: boolean; title?: string }) {
   const d = DOORS.find((x) => x.id === door);
-  const groups = (d?.rooms ?? []).map((r) => ({ room: r, inside: (r.inside ?? []).filter((i) => !i.external) })).filter((g) => g.inside.length > 0);
+  // The Questions door's library publishes area by area: its live areas come from its own manifest.
+  const areas = useLiveAreas(door === "questions");
+  const groups = (d?.rooms ?? [])
+    .map((r) => withLiveAreas(r, areas))
+    .map((r) => ({ room: r, inside: (r.inside ?? []).filter((i) => !i.external) }))
+    .filter((g) => g.inside.length > 0);
   if (!d || !groups.length) return null;
   const id = `door-inside-${door}`;
   return (
