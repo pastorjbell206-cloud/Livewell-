@@ -15087,3 +15087,5 @@ Cut in chapter 33: that the burning bush is mentioned nowhere else in the Old Te
 Cut in chapter 34: a remark on the Hebrew wording of verse 5 (‘at the mouth of the LORD’) and that no one else was present at the burial (neither is in the repository's notes); Jude 1:9 and the dispute over the body of Moses are left to the deep note.
 
 Reworded after commit in chapter 21 (2026-11-21): two sentences that began ‘Here is what the law’ in the hard note on 21:10-14 now read ‘The law permits a great deal.’ and ‘The law also sets limits.’, since that opening counts as signposting.
+
+Reworded after commit in chapter 6 (2026-11-21): a word-for-word gloss of 6:4 that contained ‘our’ and an imagined speech in the first person were removed, so that the first-person scan over the whole book reads 0.
