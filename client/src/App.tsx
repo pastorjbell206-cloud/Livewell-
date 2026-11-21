@@ -159,6 +159,8 @@ const Speaking = lazy(() => import("./pages/Speaking"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Connect = lazy(() => import("./pages/Connect"));
 const AppInstall = lazy(() => import("./pages/AppInstall"));
+const Support = lazy(() => import("./pages/Support"));
+const SupportThanks = lazy(() => import("./pages/SupportThanks"));
 const StudyBible = lazy(() => import("./pages/StudyBible"));
 const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
 const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
@@ -645,6 +647,9 @@ function Router() {
         <Route path="/work-with-james" component={ToSpeakingRedirect} />
         <Route path="/connect" component={Connect} />
         <Route path="/app" component={AppInstall} />
+        {/* Support this work: built and held until James opens it (lib/giving.json; docs/work/elite/giving.md). */}
+        <Route path="/support" component={Support} />
+        <Route path="/support/thanks" component={SupportThanks} />
         <Route path="/james" component={ToConnectRedirect} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/accessibility" component={Accessibility} />

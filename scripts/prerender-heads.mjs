@@ -25,6 +25,7 @@ import dotenv from "dotenv";
 import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
+import { SUPPORT_HEAD, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
 
 dotenv.config();
 
@@ -1541,7 +1542,10 @@ async function main() {
   let wrote = 0;
 
   // Static pages
-  for (const page of STATIC_PAGES) {
+  // Support this work (/support) is written beside the curated pages, since
+  // its noindex follows the giving switch (scripts/lib/giving.mjs) and a
+  // conditional noindex cannot be read from the page's own SEOMeta.
+  for (const page of [...STATIC_PAGES, SUPPORT_HEAD]) {
     const url = `${SITE_URL}${page.path}`;
     // The Christ-and-the-Nation pages (the flagship and the nation essays) get a
     // branded per-title Open Graph card, so a shared link unfurls as itself
@@ -1559,7 +1563,7 @@ async function main() {
       schemas: [...(page.schemas || []), ...(own?.schemas ?? [])],
       // The skeptic track says noindex while any stop is off the public shelf
       // (SKEPTIC_TRACK_LIVE in client/src/lib/skepticTrack.ts), as its page does.
-      noindex: page.path === "/skeptic-track" && !skepticTrackLive(),
+      noindex: (page.path === "/skeptic-track" && !skepticTrackLive()) || (page.path === SUPPORT_HEAD.path && supportNoindex()),
     });
     writeRoute(template, page, head, own?.html || hubListingHtml(page.path));
     wrote++;
@@ -1864,7 +1868,7 @@ async function main() {
   // head built from its own copy — the prerendered head is exactly what the
   // SPA renders client-side. Param routes, admin, thank-you flows, and
   // noindex pages are skipped; curated STATIC_PAGES above win on conflict.
-  const written = new Set(STATIC_PAGES.map((p) => p.path));
+  const written = new Set([...STATIC_PAGES, SUPPORT_HEAD].map((p) => p.path));
   const appSrc = fs.readFileSync(path.join(REPO_ROOT, "client/src/App.tsx"), "utf8");
   const importMap = {};
   // Two lazy forms are in use: the one-liner `lazy(() => import("./pages/X"))`
@@ -2190,6 +2194,8 @@ async function main() {
   if (shelfWrote) console.log(`[prerender] shelf: ${shelfWrote} essays written from the shelf (no database or static row)`);
 
   console.log(`[prerender] wrote ${wrote} per-route HTML files into ${DIST_DIR}`);
+  // llms.txt names the Support page only once giving is open; the committed file never does.
+  if (writeBuiltLlms(DIST_DIR)) console.log("[prerender] added the Support page to llms.txt (giving is open)");
 }
 
 /**
