@@ -14451,3 +14451,17 @@ Cut for want of a source in the repository: a reason for the killing of the boys
 | No revenge permitted to any family or person today | 16-29 | The run's content rule | A caution of these notes |
 | More than one witness; no ransom, against the Hittite laws; life in God's image (Genesis 9:6); chanaph, to pollute; ‘where I dwell’ and chapter 5 | 30-34 | numbers/35.json `cultural`, `literary`, `words` (H2610) | Repository |
 | Genesis 4:10; Matthew 5:22; Hebrews 12:24 | 30-34 | numbers/35.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 36 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The book ends with the daughters; land as a family's living and name; marriage and property; the Jubilee (Leviticus 25) reverses sales, not inheritance; how the elders raise the case; the last of the case stories | 1-4 | numbers/36.json `story`, `historical`, `cultural` | Repository |
+| Leviticus 25:23; Naboth (1 Kings 21:3) | 1-4 | numbers/36.json `historical`; BSB | BSB text |
+| ‘Speaks correctly’ said of both sides; ‘anyone they please’ within the tribe; cousin marriage; ‘inheritance’ seventeen times; davaq (Genesis 2:24; Deuteronomy 10:20); the closing note and 22:1 | 5-13 | numbers/36.json `literary`, `cultural`, `words` (H5159, H1692) | Repository |
+| The last scene as obedience after forty years of revolt; the sisters' trust set beside Kadesh | 5-13 | numbers/36.json `story`; BSB | Repository; the comparison is an observation of these notes |
+| Joshua 17:4; 1 Peter 1:4; Romans 8:17; Ephesians 3:6 | 5-13 | numbers/36.json `christ`; BSB | BSB text |
+| Is the limit fair: what it protects, what it narrows; not a rule about marriage today | 5-13 | numbers/27.json `hard`; the run's content rule | Repository; a caution of these notes |
+| Care line for anyone being hurt | 5-13 | exodus/plain/21.json 18-21 `hard` | Reused whole, word for word |
