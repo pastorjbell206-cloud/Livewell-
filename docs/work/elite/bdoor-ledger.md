@@ -14076,3 +14076,23 @@ Cut: Job and Jeremiah as others who asked to die, which no note in the repositor
 | Milk and honey; Canaanite walls and ramparts; ‘Nevertheless’; the report growing darker; dibbah, slander | 26-33 | numbers/13.json `cultural`, `historical`, `literary`, `words` (H1681) | Repository |
 | Rahab (Joshua 2:9-11); Deuteronomy 1:28; Hebrews 3:19, written to the church | 26-33 | numbers/14.json `christ`; BSB | BSB text |
 | The Nephilim: the scouts' own claim; a general word; Genesis 6:4 ‘and afterward as well’; a regional flood; Caleb at Hebron | 26-33 | numbers/13.json `hard`, `words` (H5303) | Repository; no side |
+
+## The plain notes on Numbers 14 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The turning point; a new head and a return to Egypt as renouncing the exodus; the gestures; ‘bread’ and ‘shade’; stoning aimed at the two truth-tellers | 1-10 | numbers/14.json `story`, `cultural` | Repository |
+| Exodus 14:12; Nehemiah 9:17; Acts 7:39 | 1-10 | numbers/14.json `literary`, `historical`; BSB | BSB text |
+| ‘Believe’ and Genesis 15:6; the offer of Exodus 32:10; Moses quotes Exodus 34:6-7; chesed; salach only of God | 11-25 | numbers/14.json `words` (H0539, H2617A, H5545), `literary` | Repository |
+| Exodus 34:6, the description of God most often quoted in the Old Testament; Hebrews 7:25, a pattern | 11-25 | exodus/plain/34.json; numbers/14.json `christ`; BSB | Repository; BSB text |
+| Did Moses change God's mind: the classical view (23:19), the other view; no side | 11-25 | numbers/14.json `hard` | Repository; no side |
+| The sentence built from the people's words; forty years including time spent; Deuteronomy 2:14; the census of chapter 1; lun, grumbling | 26-38 | numbers/14.json `literary`, `historical`, `words` (H3885B) | Repository |
+| Psalm 95:7-8; Hebrews 3:17; 4:1; 1 Corinthians 10:5; Jude 1:5, each addressed to the church | 26-38 | numbers/14.json `christ`; 1-corinthians/plain/10.json; jude/plain/1.json; BSB | Repository; BSB text |
+| What the pardon meant and did not mean | 26-38 | numbers/14.json `hard` | Repository |
+| The text speaks of the land, not of each person's final state; Moses also died outside the land | 26-38 | BSB (verses 29-35; 20:12); numbers/20.json `hard` | BSB text; stated as the limit of what the chapter says |
+| Never a charge against the Jewish people; not a description of a troubled doubter | 26-38 | The run's content rule; Psalm 95; Psalm 106 | Cautions of these notes |
+| Care lines for anyone afraid of having fallen away | 26-38 | hebrews/plain/3.json 12-15 `hard`; galatians/plain/5.json 1-6 `hard` | Reused whole, word for word |
+| The last reversal; verse 25 against verse 40; the ark did not move; Amorites (Deuteronomy 1:44); Amalekites (Exodus 17:8); Hormah | 39-45 | numbers/14.json `literary`, `historical` | Repository |
+| Deuteronomy 1:44-45; 2 Corinthians 7:10 | 39-45 | BSB | BSB text |
