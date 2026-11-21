@@ -13259,3 +13259,30 @@ Cut before publishing: how leaven was made from old dough (not in the repository
 | Acts 15:20; Mark 7:19; the two Christian answers | 17 | leviticus/3.json `hard`; acts/plain/15.json (12-21 `hard`) | Repository; no side |
 
 Cut before publishing: a reason why birds are not listed (the deep note gives none); Elkanah's shares at Shiloh (left to the deep note).
+
+## The plain notes on Leviticus 4 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A new subject after the freely given offerings; the ordinary, unplanned wrong; guilt real before it is known | 1-12 | leviticus/4.json `story`, `doctrines` (sin); leviticus/5.json `hard` | Repository |
+| Chatta't: sin, and to purify; the purification offering; brought after childbirth | 1-12 | leviticus/4.json `words` (H2403H) | Repository |
+| Arranged by rank; the anointed priest later called the high priest; his sin brings guilt on the people | 1-12 | leviticus/4.json `historical`, `literary` | Repository |
+| Where the blood goes; the horns of the altar | 1-12 | leviticus/4.json `cultural` | Repository |
+| Milgrom: sin pollutes the sanctuary; Gane: the offender cleansed and the sanctuary purged yearly; sin not private | 1-12 | leviticus/4.json `cultural` | Repository; no side |
+| The priest's case lacks the forgiveness line; no agreed reason | 1-12 | leviticus/4.json `literary` | Repository |
+| Hebrews 13:11-12; 5:3; 7:27; ‘a shadow is real’ | 1-12 | leviticus/4.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| The elders act for all; the same bull and the same places; priest and people together | 13-21 | leviticus/4.json `historical`, `literary` | Repository |
+| Salach: only God forgives; the priest acts, God forgives | 13-21 | leviticus/4.json `words` (H5545) | Repository |
+| Mesopotamian prayers for unknown sins; a different world | 13-21 | leviticus/4.json `historical` | Repository |
+| Numbers 15:30; Leviticus 16:16; Psalm 19:12 | 13-21 | BSB | BSB text |
+| Deliberate sin: 6:1-7; the Day of Atonement; David and Psalm 51:17; the defiant sin set apart; the rabbinic saying; 1 John 1:9 | 13-21 | leviticus/4.json `hard`; BSB | Repository |
+| ‘If you are afraid that you have fallen away from God ... places to turn.’ | 13-21 | hebrews/plain/10.json (26-31 `hard`), word for word | Repository |
+| The leader as nasi, a tribal head; Ezekiel 45:22; a smaller offering, blood at the courtyard altar; rank raises the stakes | 22-26 | leviticus/4.json `historical`, `cultural`, `doctrines` (holiness) | Repository |
+| The rabbinic comment on asher and ashrei | 22-26 | leviticus/4.json `literary` | Repository |
+| Luke 12:48; James 3:1 | 22-26 | BSB | BSB text |
+| ‘The people of the land’; the cost shrinks, the result does not; the refrain | 27-35 | leviticus/4.json `historical`, `literary` | Repository |
+| Psalm 32:5; Psalm 130:3-4; Romans 8:3 and the Greek phrase | 27-35 | leviticus/4.json `christ`; BSB | BSB text |
+
+Cut before publishing: the horned altar found at Beersheba and the fugitive at the altar (true to the deep note, a detour here); 2 Corinthians 5:21, on which the deep note says interpreters differ; a newly worded care sentence, replaced by the Hebrews 10 line used whole.
