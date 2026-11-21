@@ -14567,3 +14567,23 @@ Cut in chapter 3: a sentence that the gods of the ancient world could be worn do
 | The three cities in the lands of chapter 3; blood vengeance and refuge; 19:5; verses 44-49 as a heading; Numbers 35:12; Joshua 20:7-8 | 41-49 | deuteronomy/4.json `historical`, `cultural`, `literary`; BSB | Repository; BSB text |
 
 Cut in chapter 4: a remark on the Hebrew wording of verse 39 and a sentence that the old custom made no difference between murder and accident (neither is in the repository's notes).
+
+## The plain notes on Deuteronomy 5 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Berit; the covenant made ‘with us’ as preaching; ‘today’; face to face beside ‘no form’; the treaty likeness with the pointer to the book page | 1-5 | deuteronomy/5.json `words` (H1285), `historical`, `literary`; deuteronomy/verses/6.json (verse 6) | Repository |
+| Exodus 24:7; Jeremiah 31:33; Hebrews 12:24 | 1-5 | deuteronomy/5.json `christ`; BSB | Repository; BSB text |
+| The ten words; rescue before command; the three ways of numbering; qanna; the name lifted ‘for emptiness’; the Sabbath's two reasons; rest as the privilege of the powerful; who is included | 6-15 | deuteronomy/5.json `cultural`, `literary`, `words` (H7067H, H7676); exodus/plain/20.json 7-11; guides/reading-law.json (‘The Ten Commandments and their numbering’) | Repository |
+| The Christian views of the Sabbath, no side | 6-15 | numbers/plain/15.json `hard` (the same sentence) | Repository; no side |
+| Exodus 20:11; Mark 2:27; Colossians 2:16 | 6-15 | BSB | BSB text |
+| Verse 9 and 24:16, Ezekiel 18:20; the three readings; verse 10 | 6-15 | deuteronomy/5.json `hard` | Repository; no side |
+| ‘Honor’ from ‘heavy’, care in old age; Ephesians 6:2; two Hebrew words each, joined by ‘and’; false witness at the gate; chamad, the two views; desire no court can convict; the differences from Exodus 20:17 | 16-21 | exodus/plain/20.json 12-17; deuteronomy/5.json `cultural`, `literary`, `words` (H2530A) | Repository |
+| Matthew 5:22; Romans 13:9; Romans 7:7 | 16-21 | deuteronomy/5.json `christ`; BSB | Repository; BSB text |
+| Honor and harm: two paragraphs reused whole from the Exodus 20 note; the care line reused whole | 16-21 | exodus/plain/20.json 12-17 `hard`; 1-corinthians/plain/13.json and others (‘If you are being hurt, at home, at work or in a church’) | Repository; word for word |
+| Why the rest of the book came through Moses; ‘If only’; the heart, 10:16 and 30:6; the straight road | 22-33 | deuteronomy/5.json `literary`, `christ` | Repository |
+| 18:15; Exodus 20:19; Ezekiel 36:26; 1 Timothy 2:5 | 22-33 | deuteronomy/5.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 5: two sentences on households and on a world without written records, replaced by the wording of the Exodus 20 note; a care sentence about parents written new, replaced by the Exodus 20 paragraphs and an existing care line, each whole.
