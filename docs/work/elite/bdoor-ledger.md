@@ -13922,3 +13922,25 @@ Cut for want of a source in the repository: that the priests' blessing is still 
 | Matthew 11:30, not a prediction | 34-49 | numbers/4.json `christ`; BSB | BSB text |
 
 The sentence that the passage ‘is no reason for anyone to be afraid to pray’ is a caution of these notes, not a claim from a source.
+
+## The plain notes on Numbers 5 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| From the camp's shape to its condition; the three conditions of Leviticus 13 to 15; tsara'at; none a sin; exclusion usually temporary; shakan, mishkan, Shekinah | 1-4 | numbers/5.json `story`, `cultural`, `words` (H7931); leviticus/intro.json teaching (‘Holy, clean and unclean’) | Repository |
+| Mark 1:41; 5:25-29; 5:41; Hebrews 13:12 | 1-4 | numbers/5.json `christ`; BSB | BSB text |
+| Care paragraph for anyone made to feel unclean | 1-4 | leviticus/intro.json teaching; leviticus/plain/12.json, 13.json, 15.json | Reused whole, word for word |
+| Ma'al; Leviticus 6:1-7 restated; confession required; the fifth; the case of a victim with no relative | 5-10 | numbers/5.json `historical`, `literary`, `words` (H4603) | Repository |
+| Matthew 5:24; Luke 19:8 | 5-10 | numbers/5.json `christ`; BSB | BSB text |
+| The husband's legal authority; no witness, no trial; Leviticus 20:10; the danger of private violence | 11-31 | numbers/5.json `cultural`, `hard` | Repository |
+| Hammurabi (about 1750 BC) and the river ordeal; the rite's differences; the husband may be wrong (verse 14) | 11-31 | numbers/5.json `historical`, `hard` | Repository |
+| The loosened hair; the barley offering (Leviticus 5:11); the curse washed into the cup; the Mishnah's tractate, the rite given up in the first century | 11-31 | numbers/5.json `cultural`, `historical` | Repository |
+| The curse's meaning uncertain; verse 28 suggests it touched childbearing | 11-31 | BSB (verses 21-28) | BSB text; stated as an inference |
+| Hosea 2:14; John 8:7 and the oldest copies | 11-31 | john/plain/8.json; BSB | Repository; BSB text |
+| The unfairness admitted; the reading of the rite as a husband's control; the reading of it as a restraint; Matthew 19:8; no side | 11-31 | numbers/5.json `hard`; leviticus/plain/25.json 39-46 `hard` (the Matthew 19:8 comparison) | Repository; no side |
+| No warrant today for testing, watching or controlling any woman | 11-31 | The run's content rule | A caution of these notes, not a claim from a source |
+| Care lines for anyone in an abusive marriage | 11-31 | 1-corinthians/plain/7.json 10-16 `hard`; hebrews/plain/13.json 1-6 `hard` | Reused whole, word for word |
+
+Cut: a sentence saying the words for thigh and belly ‘have often been understood’ as barrenness, which no note in the repository states.
