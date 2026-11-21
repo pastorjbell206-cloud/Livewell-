@@ -14040,3 +14040,25 @@ Cut for want of a source in the repository: that the ‘you’ of the blessing i
 | Not a rule about illness; Leviticus 13 makes no such link; John 9:3 | 10-16 | leviticus/plain/13.json 45-46 `hard` | Repository |
 | ‘White as snow’ of diseased skin (Exodus 4:6; 2 Kings 5:27); the irony some readers note; no statement about skin or race | 10-16 | exodus/plain/4.json 1-9 `later`; numbers/12.json `hard`; BSB | Repository; BSB text |
 | Care paragraph on sickness and faith | 10-16 | 2-corinthians/plain/12.json 7-10 `hard` | Reused whole, word for word |
+
+## The plain notes on Numbers 11 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The contrast with chapter 10; the pattern of complaint, judgment, prayer and a name, through chapter 21; Taberah, burning | 1-3 | numbers/11.json `story`, `literary` | Repository |
+| Deuteronomy 9:22; Philippians 2:14 and its echo of the wilderness | 1-3 | philippians/plain/2.json `ot`; BSB | Repository; BSB text |
+| The rabble and the mixed multitude (Exodus 12:38); the foods of the Nile valley; the memory leaves out the slavery; the manna | 4-15 | numbers/11.json `cultural`, `historical`, `literary` | Repository |
+| Moses' picture of mother and nurse; ‘burden’ from chapter 4 | 4-15 | numbers/11.json `cultural`, `words` (H4853A) | Repository |
+| Elijah (1 Kings 19:4); John 6:35; 1 Corinthians 10:6 | 4-15 | john/plain/13.json `ot`; numbers/11.json `christ`, `words`; BSB | Repository; BSB text |
+| Moses' prayer not rebuked; God's answer is people | 4-15 | BSB (verses 16-17) | BSB text |
+| Care lines for a life that is more than one can carry | 4-15 | 1-corinthians/plain/10.json 6-13 `hard` | Reused whole, word for word |
+| The two stories woven; elders; the complaint as rejection of God (verse 20); the arm too short; Eldad and Medad; ‘never did so again’ | 16-30 | numbers/11.json `literary`, `cultural`; BSB | Repository; BSB text |
+| Joel 2:28; Acts 2:17; Mark 9:38-39; Mark 8:4 | 16-30 | numbers/11.json `christ`; BSB | BSB text |
+| Quail migration over the Sinai in spring; ruach as wind and Spirit; the homer a large dry measure; Kibroth-hattaavah | 31-35 | numbers/11.json `historical`, `words` (H7307G, H8378); guides/weights-measures-money.json | Repository |
+| Psalm 106:15; Psalm 78:26-31 | 31-35 | numbers/11.json `hard`; BSB | BSB text |
+| The plague: contempt, not hunger; the proposed natural cause; the Psalms' warning | 31-35 | numbers/11.json `hard` | Repository |
+| Care paragraph against reading a death as God's punishment | 31-35 | acts/plain/5.json 1-6 `hard` | Reused whole, word for word |
+
+Cut: Job and Jeremiah as others who asked to die, which no note in the repository states in those words.
