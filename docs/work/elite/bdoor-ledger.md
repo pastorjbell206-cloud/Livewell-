@@ -14550,3 +14550,20 @@ Cut or narrowed on the book page: that Deuteronomy is among the books most quote
 | 34:4; 2 Corinthians 12:8-9; Matthew 26:39; Matthew 17:3 | 23-29 | deuteronomy/3.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 3: a sentence that the gods of the ancient world could be worn down with gifts (no source in the repository).
+
+## The plain notes on Deuteronomy 4 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Hear’; Baal-peor and Numbers 25; the nations and Israel's wisdom; the memory handed on; ‘form’ (temunah) five times | 1-14 | deuteronomy/4.json `literary`, `words` (H8544); deuteronomy/6.json `cultural`; BSB (3:29; Numbers 25) | Repository; BSB text |
+| Numbers 25:3; 1 Kings 8:23; John 1:18 | 1-14 | deuteronomy/4.json `christ`; BSB | Repository; BSB text |
+| Statues in Mesopotamia, the mouth-opening rite, fed and carried; no created shape can stand for God; astral worship in Judah (2 Kings 21; 23); qanna used only of God; heaven and earth as witnesses; shuv; 722 BC and 587 or 586 BC; the two datings of the passage | 15-31 | deuteronomy/4.json `historical`, `cultural`, `words` (H7067H, H7725G) | Repository; no side on the date |
+| Exodus 20:4; Psalm 115:5; Jeremiah 29:13; Hebrews 12:29; Colossians 1:15 | 15-31 | deuteronomy/4.json `christ`; BSB | Repository; BSB text |
+| Verse 19: the three readings; Acts 14:16; 32:8 (the BSB's ‘sons of God’); verse 39; not a license | 15-31 | deuteronomy/4.json `hard`; BSB | Repository; no side |
+| The rhetorical questions; ‘there is no other’ twice; love as the reason (verse 37); knowing before doing | 32-40 | deuteronomy/4.json `literary`; deuteronomy/intro.json `themes` | Repository |
+| Isaiah 45:5; Mark 12:32 | 32-40 | BSB | BSB text |
+| The three cities in the lands of chapter 3; blood vengeance and refuge; 19:5; verses 44-49 as a heading; Numbers 35:12; Joshua 20:7-8 | 41-49 | deuteronomy/4.json `historical`, `cultural`, `literary`; BSB | Repository; BSB text |
+
+Cut in chapter 4: a remark on the Hebrew wording of verse 39 and a sentence that the old custom made no difference between murder and accident (neither is in the repository's notes).
