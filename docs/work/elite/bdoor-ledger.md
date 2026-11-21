@@ -14164,3 +14164,17 @@ Cut: Job and Jeremiah as others who asked to die, which no note in the repositor
 | Psalm 106:23; Hebrews 7:25, a pattern | 41-50 | numbers/16.json `christ`; BSB | BSB text |
 
 Cut: a reason why Eleazar and not Aaron handled the censers, which no note in the repository gives.
+
+## The plain notes on Numbers 19 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The chapters of death before it; a standing remedy for forty years of funerals; the heifer red, unblemished, never yoked; red and blood; cedar, scarlet, hyssop; burned whole outside the camp; a stored purification offering | 1-10 | numbers/19.json `story`, `cultural`, `words` (H6510) | Repository |
+| Why Eleazar and not Aaron: the likely reason | 1-10 | numbers/19.json `historical` | Repository |
+| Hebrews 13:11-12; the Mishnah's tractate Parah (about AD 200) | 1-10 | numbers/19.json `christ`, `historical`; BSB | Repository; BSB text |
+| Uncleanness from the dead not sin; seven days the longest period; not a rule about germs (verse 15); the neighbors' rites for the dead; ‘living water’; the warning given twice | 11-22 | numbers/19.json `cultural`, `literary` | Repository |
+| Hebrews 9:13-14; Luke 7:14; Psalm 51:7 | 11-22 | numbers/19.json `christ`; BSB | BSB text |
+| The paradox of the water: three explanations; later Jewish teachers on a decree whose reasons are hidden | 11-22 | numbers/19.json `hard`, `words` (H2708) | Repository; no side |
+| John 11:35; care lines for grief | 11-22 | leviticus/plain/26.json 14-39 `hard`; 1-timothy/plain/5.json 9-16 `hard` | Reused whole, word for word |
