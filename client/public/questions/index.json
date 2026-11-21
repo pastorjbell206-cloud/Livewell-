@@ -597,6 +597,13 @@
           "blurb": "The six passages read closely with their debated words, the historic teaching of the church and the newer reading, each in its holders' terms, where each side says the other goes wrong, and what all should confess; the page takes no side, and Find Help is named at its start and its end.",
           "status": "pending",
           "live": false
+        },
+        {
+          "slug": "the-first-christians-on-abortion-and-exposure",
+          "question": "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?",
+          "blurb": "Exposure and abortion in the Roman world, the Jewish refusal, the Didache, Barnabas, Athenagoras, Tertullian and Basil in their own words, Exodus 21:22 in both readings, and how Catholic, Orthodox and Protestant Christians have reasoned; history and theology, not an argument about any law. It opens and closes with a word of gentleness for anyone carrying grief or guilt, and names Find Help.",
+          "status": "pending",
+          "live": false
         }
       ]
     },
@@ -1967,6 +1974,16 @@
       "area": "morality",
       "slug": "what-the-bible-says-about-homosexuality",
       "question": "What does the Bible say about homosexuality, and why do Christians disagree?",
+      "live": false
+    },
+    {
+      "claim": "An abortion before sense and life have begun harms no one, and the Bible itself never forbids it",
+      "proponent": "Aristotle",
+      "work": "Politics",
+      "year": 1885,
+      "area": "morality",
+      "slug": "the-first-christians-on-abortion-and-exposure",
+      "question": "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?",
       "live": false
     },
     {
