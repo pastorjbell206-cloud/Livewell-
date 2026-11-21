@@ -35,4 +35,22 @@ describe("Search", () => {
     searchFor("Deuteronomy");
     expect(screen.queryByRole("heading", { name: "If you need help now" })).toBeNull();
   });
+
+  it("ends a search that found nothing on Find Help, the seven doors, the start road and the whole site, never a dead end", async () => {
+    // The server answers (with no essays), as it does on the live site; the libraries are empty here.
+    window.history.replaceState({}, "", "/search?q=zzqqxx");
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: RequestInfo | URL) =>
+        String(url).includes("/api/trpc")
+          ? new Response(JSON.stringify([{ result: { data: { json: { results: [] } } } }]), { status: 200, headers: { "content-type": "application/json" } })
+          : new Response("{}", { status: 404 }),
+      ),
+    );
+    renderWithProviders(<Search />);
+    const list = await screen.findByRole("list", { name: "Places to start" }, { timeout: 8000 });
+    const hrefs = Array.from(list.querySelectorAll("a")).map((a) => a.getAttribute("href"));
+    expect(hrefs).toEqual(["/help", "/study", "/theology/history", "/topics", "/family", "/tools", "/writing", "/about", "/start", "/explore"]);
+    expect(screen.getByRole("status").textContent).toContain('Nothing here for "zzqqxx"');
+  });
 });

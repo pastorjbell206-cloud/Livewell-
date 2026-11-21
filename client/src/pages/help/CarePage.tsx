@@ -18,6 +18,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { Markdown } from "@/components/Markdown";
 import ScriptureNote from "@/components/ScriptureNote";
@@ -168,9 +169,7 @@ export default function CarePage() {
       <Layout>
         <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
           <div style={wrap}>
-            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
-              <Link href="/help" style={{ color: "inherit" }}>Find help</Link>
-            </div>
+            <Place path="/help/page" dark />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.025em", margin: 0, maxWidth: "22ch" }}>
               {current?.missing ? "That page is not here yet." : current?.failed ? "This page didn't load." : "Loading…"}
             </h1>
@@ -238,9 +237,7 @@ export default function CarePage() {
               <a href="#help-now" style={{ color: "var(--mustard)", fontWeight: 600 }}>More help below</a>
             </p>
           )}
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>
-            <Link href="/help" style={{ color: "inherit" }}>Find help</Link>
-          </div>
+          <Place path="/help/page" dark />
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 6vw, 58px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 var(--s-3)", maxWidth: "20ch" }}>
             {data.title}
           </h1>

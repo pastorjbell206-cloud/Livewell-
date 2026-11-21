@@ -35,6 +35,8 @@ export default function FollowRow({
     display: "inline-flex",
     alignItems: "center",
     minHeight: "44px",
+    // A short word ("RSS") still gets a full 44px target.
+    minWidth: "44px",
   };
   return (
     <p

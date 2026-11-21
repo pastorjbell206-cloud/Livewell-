@@ -276,10 +276,37 @@ export function catalogNames() {
   return names;
 }
 
+/**
+ * Every door's, room's and page's own entry in the catalogue (name, line,
+ * address), in the file's order: a page on this site, not a tab of one
+ * (/tools#study) and not another site.
+ */
+export function catalogEntries() {
+  const src = fs.readFileSync(path.join(ROOT, "client/src/lib/siteCatalog.ts"), "utf8");
+  const seen = new Set();
+  const out = [];
+  for (const m of src.matchAll(/\{\s*id: "[^"]+", name: "([^"]+)", line: "([^"]*)", href: "(\/[^"#]*)"/g)) {
+    if (seen.has(m[3])) continue;
+    seen.add(m[3]);
+    out.push({ title: m[1], blurb: m[2], href: m[3] });
+  }
+  return out;
+}
+
+/**
+ * The hubs: MAIN_PAGES, each under its catalogue or tool name, and then every
+ * page the catalogue lists that MAIN_PAGES and the tools list do not (the
+ * tools are searched from their own registry), under its catalogue name and
+ * line. So a door, a room or a page inside one is found by its name the day
+ * it joins the menus, with no second list to keep.
+ */
 function mainPages() {
   const catalog = catalogNames();
   const tools = toolNames();
-  return MAIN_PAGES.map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
+  const typed = MAIN_PAGES.map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
+  const have = new Set(typed.map((p) => p.href.split("#")[0]));
+  const rest = catalogEntries().filter((e) => !have.has(e.href) && !tools.has(e.href));
+  return [...typed, ...rest];
 }
 
 /** The Study Bible beyond its chapters: each book's introduction, the reading guides, the acts of the story. */

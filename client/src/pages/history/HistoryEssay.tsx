@@ -227,7 +227,7 @@ export default function HistoryEssay() {
       </section>
 
       {data && slug && <MoreOnThis href={`/theology/history/${slug}`} />}
-      {data && <PageEndNav back={{ href: "/theology/history", label: "Church History" }} />}
+      {data && <PageEndNav back={{ href: "/theology/history" }} />}
     </Layout>
   );
 }

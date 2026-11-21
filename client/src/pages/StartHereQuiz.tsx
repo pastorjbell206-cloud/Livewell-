@@ -3,6 +3,7 @@ import { toolName } from "@/lib/toolsList";
 import { useEffect, useState } from "react";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
+import Place from "@/components/art/Place";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CrisisBlock } from "@/components/CrisisBlock";
@@ -274,9 +275,10 @@ export default function StartHereQuiz() {
         type="webpage"
       />
 
+      <a href="#main" className="skip-link">Skip to content</a>
       <MinimalNav />
 
-      <section style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
+      <main id="main" style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
         {!isComplete ? (
           <>
             {/* QUICK PATHS — for the visitor who already knows what they need
@@ -303,6 +305,7 @@ export default function StartHereQuiz() {
               </div>
             </div>
 
+            <Place path="/start/quiz" />
             {/* PROGRESS BAR */}
             <div style={{ marginBottom: "40px" }}>
               <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>
@@ -508,7 +511,7 @@ export default function StartHereQuiz() {
             </div>
           </>
         )}
-      </section>
+      </main>
 
       <Footer />
     </div>

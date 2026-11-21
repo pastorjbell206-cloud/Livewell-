@@ -17,11 +17,14 @@ import {
   libraryEntries,
   loadPassageParser,
   passageFor,
-  rankEntries,
   type SearchEntry,
 } from "@/lib/siteSearch";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { TOOLS, foldedInto } from "@/lib/toolsList";
+import IconTile from "@/components/art/IconTile";
+import { DOORS, EVERYTHING_ENTRY, HELP_ENTRY, START_LINK, type CatalogEntry } from "@/lib/siteCatalog";
+import { ICONS } from "@/lib/siteIcons";
+import { findEntries, type Found } from "@/lib/searchMend";
 
 // The verses that hold the words typed ("born again"). The Bible's words are
 // a large download, so the code and the text both wait for a query.
@@ -36,12 +39,16 @@ const BibleMatchesPreview = lazy(() => import("@/pages/study-bible/BibleSearchRe
 
 const LIBRARY_RESULT_CAP = 16;
 
+/** Where a search that found nothing can go on from: Find Help first, then the seven doors, the start road, and the whole site on one page. */
+const NO_RESULT_PLACES: CatalogEntry[] = [HELP_ENTRY, ...DOORS.map((d) => ({ ...d.page, icon: d.icon })), START_LINK, EVERYTHING_ENTRY];
+
 // The tools, from the /tools registry, so "worry journal" finds the Worry Journal.
 // A folded tool is found under the tool that took it in (its old name is a keyword).
 const TOOL_ENTRIES: SearchEntry[] = TOOLS.map((t) => ({
   title: t.name,
   blurb: t.job,
-  keywords: foldedInto(t.id).map((f) => f.name).join(" "),
+  // Its short name too (the id: "wisdom finder", "test the case"), which is what people call it.
+  keywords: [t.id.replace(/-/g, " "), ...foldedInto(t.id).map((f) => f.name)].join(" "),
   facet: "Tool",
   sourceLabel: "Tools",
   href: t.href,
@@ -114,10 +121,11 @@ export default function SearchPage() {
   }, [query]);
   const bibleQuery = settledQuery.length >= 3 && settledQuery === query.trim() && parser && !passage ? settledQuery : "";
 
-  const libraryMatches = useMemo(() => {
-    if (query.trim().length === 0) return [];
-    return rankEntries(entries, query);
-  }, [entries, query]);
+  // The words as typed; failing that, a misspelling mended; failing that, the
+  // nearest pages (lib/searchMend.ts), so a search does not end on nothing
+  // because of one letter.
+  const found = useMemo<Found<SearchEntry>>(() => (query.trim().length === 0 ? { items: [] } : findEntries(entries, query)), [entries, query]);
+  const libraryMatches = found.items;
 
   const visibleLibraryMatches = libraryMatches.slice(0, LIBRARY_RESULT_CAP);
   // A reader who types their trouble here ("I want to die") sees how to reach
@@ -300,6 +308,13 @@ export default function SearchPage() {
               {/* Library results from the static JSON manifests */}
               {visibleLibraryMatches.length > 0 && (
                 <div className="mb-12">
+                  {(found.mended || found.nearest) && (
+                    <p role="status" className="text-base mb-6" style={{ color: "var(--ink)" }}>
+                      {found.nearest
+                        ? `No page holds every word of "${query.trim()}". These are the closest.`
+                        : `Nothing for "${query.trim()}". Showing "${found.mended}".`}
+                    </p>
+                  )}
                   <p
                     className="font-ui text-xs font-medium uppercase mb-6"
                     style={{ color: "var(--mustard-text)", letterSpacing: "0.18em" }}
@@ -373,32 +388,23 @@ export default function SearchPage() {
                       backLabel="Browse the essays instead"
                     />
                   ) : (
-                  <div className="text-center py-12" style={{ color: "var(--ink-muted)" }}>
+                  <div className="py-12">
                     {libraryLoaded ? (
                       <>
-                        <p className="text-lg">Nothing here for "{query}".</p>
-                        <p className="text-sm mt-2">
-                          Try another word — or start in the{" "}
-                          <Link
-                            href="/writing"
-                            className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--mustard-text)" }}
-                          >
-                            essays
-                          </Link>{" "}
-                          or the{" "}
-                          <Link
-                            href="/tools"
-                            className="font-ui font-medium hover:opacity-70 transition-opacity"
-                            style={{ color: "var(--mustard-text)" }}
-                          >
-                            tools
-                          </Link>
-                          .
+                        <p role="status" className="text-lg" style={{ color: "var(--ink)" }}>Nothing here for "{query}".</p>
+                        <p className="text-base mt-2" style={{ color: "var(--ink-muted)" }}>
+                          Try another word, or start from one of these.
                         </p>
+                        <ul className="lw-tiles" style={{ marginTop: "var(--s-3)" }} aria-label="Places to start">
+                          {NO_RESULT_PLACES.map((e) => (
+                            <li key={e.id}>
+                              <IconTile href={e.href} icon={ICONS[e.icon]} name={e.name} line={e.line} />
+                            </li>
+                          ))}
+                        </ul>
                       </>
                     ) : (
-                      <p className="text-lg">Searching…</p>
+                      <p className="text-lg text-center" style={{ color: "var(--ink-muted)" }}>Searching…</p>
                     )}
                   </div>
                   )

@@ -268,7 +268,7 @@ export default function ContextWorld() {
             </a>
           </div>
 
-          <PageEndNav back={{ href: "/resources/context", label: "The world the Bible was written in" }} />
+          <PageEndNav back={{ href: "/resources/context" }} />
         </>
       )}
     </Layout>

@@ -5,6 +5,7 @@
  * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
 import { FreeEbookButtons } from "@/components/FreeEbookButtons";
@@ -56,7 +57,7 @@ export default function WhenGodBlessAmerica() {
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }}
           />
           <div>
-            <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Free Ebook</div>
+            <Place path="/books/when-god-bless-america" after="Free ebook" dark style={{ margin: 0 }} />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               When God Bless America Replaces Thy Kingdom Come
             </h1>

@@ -35,3 +35,33 @@ describe("followHash", () => {
     expect(scroll).toHaveBeenCalledTimes(1);
   });
 });
+
+describe("holdInView", () => {
+  it("puts a part back at the top when the page grows above it, and lets go when the reader scrolls", async () => {
+    const { holdInView } = await import("./followHash");
+    vi.useFakeTimers();
+    const el = document.createElement("div");
+    el.id = "plain";
+    document.body.appendChild(el);
+    let top = 2000;
+    el.getBoundingClientRect = () => ({ top, bottom: top, left: 0, right: 0, width: 0, height: 0, x: 0, y: top, toJSON: () => ({}) });
+    const scrolled = vi.fn(() => {
+      top = 0;
+    });
+    el.scrollIntoView = scrolled;
+    holdInView("plain");
+    vi.advanceTimersByTime(700);
+    expect(scrolled).toHaveBeenCalledTimes(1);
+    // More arrives above it: it is brought back once more.
+    top = 900;
+    vi.advanceTimersByTime(300);
+    expect(scrolled).toHaveBeenCalledTimes(2);
+    // The reader takes over: nothing moves again.
+    window.dispatchEvent(new Event("wheel"));
+    top = 500;
+    vi.advanceTimersByTime(2000);
+    expect(scrolled).toHaveBeenCalledTimes(2);
+    vi.useRealTimers();
+    el.remove();
+  });
+});

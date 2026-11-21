@@ -331,7 +331,8 @@ describe("the hubs", () => {
     renderWithProviders(<Study />);
     expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Study the Bible");
     const h2s = screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent);
-    expect(h2s).toEqual(["Pick a book to open.", "Where to study.", "Go deeper."]);
+    // Between the rooms and "Go deeper": everything else in the door, from the catalogue (components/art/DoorInside).
+    expect(h2s).toEqual(["Pick a book to open.", "Where to study.", "One step further in.", "Go deeper."]);
     // The rooms are picture cards, no more than six (PROJECT-PROMPT, the map).
     const rooms = document.querySelectorAll(".lw-rooms > li");
     expect(rooms.length).toBeGreaterThan(0);
@@ -340,6 +341,12 @@ describe("the hubs", () => {
     expect(hrefs.filter((h) => !isRoute(h))).toEqual([]);
     for (const h of ["/study/bible", "/study/bible/search", "/study/bible/story", "/study/bible/doctrines", "/study/bible/guides", "/theology/history", "/resources/creeds", "/resources/context", "/studyguides", "/tools", "/start"]) {
       expect(hrefs, h).toContain(h);
+    }
+    // "Everything in Bible" is complete: every room and every page inside a room, as the catalogue lists them.
+    const bible = DOORS.find((d) => d.id === "bible")!;
+    for (const r of bible.rooms) {
+      expect(hrefs, r.href).toContain(r.href);
+      for (const i of r.inside ?? []) expect(hrefs, i.href).toContain(i.href);
     }
   });
 
