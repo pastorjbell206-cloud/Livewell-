@@ -13372,3 +13372,25 @@ Cut before publishing: the care line from the 1 Corinthians 5 note (it names Pau
 | Numbers 20:28; Hebrews 7:25 | 31-36 | leviticus/8.json `story`; BSB | BSB text |
 
 Cut before publishing: ‘seven is the number of completeness’ (not in the repository's notes on this chapter); the later history of the high priesthood (Eleazar, Zadok, AD 70), left to the deep note.
+
+## The plain notes on Leviticus 9 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everything since Exodus 40 leads here; the promise made twice (verses 4, 6) | 1-7 | leviticus/9.json `story`, `literary` | Repository |
+| The eighth day as a new beginning (12:3; 14:10) | 1-7 | leviticus/9.json `words` (H8066) | Repository |
+| Aaron's calf and the later Jewish reading | 1-7 | leviticus/9.json `cultural` | Repository |
+| Kavod, heavy or weighty; God's visible presence; Exodus 40:34; John 1:14 | 1-7 | leviticus/9.json `words` (H3519), `christ`; BSB | BSB text |
+| Aaron acts as priest for the first time; the priest atoned for first | 8-21 | leviticus/9.json `literary`, `doctrines` (atonement) | Repository |
+| The order: sin offering, burnt offering, peace offering (‘many interpreters have noticed’) | 8-21 | leviticus/9.json `cultural`; guides/offerings-and-purity.json (Rainey, not named) | Repository |
+| ‘As the LORD had commanded Moses’; ‘according to the ordinance’ | 8-21 | leviticus/9.json `literary` | Repository |
+| Hebrews 5:1; 2 Chronicles 7:1 | 8-21 | BSB | BSB text |
+| The high point of the first half; the fire as acceptance and welcome | 22-24 | leviticus/9.json `story`, `doctrines` (god) | Repository |
+| The lifted hands; a blessing as a spoken act; the words not given here; some synagogues today | 22-24 | leviticus/9.json `cultural`, `historical` | Repository |
+| The ringing cry and the prostration; awe with gladness | 22-24 | leviticus/9.json `cultural` | Repository |
+| The wording returns in 10:2; the same day | 22-24 | leviticus/9.json `literary`, `story` | Repository |
+| Numbers 6:24-26; 2 Chronicles 7:1; 1 Kings 18:38; Luke 24:50 (‘many readers’; a link of theme) | 22-24 | leviticus/9.json `historical`, `christ`; BSB | BSB text |
+
+Cut before publishing: the Ketef Hinnom scrolls (on the book page's timeline already); Zechariah's silence in Luke 1 and Hebrews 9:24, 28 (true to the deep note, left there).
