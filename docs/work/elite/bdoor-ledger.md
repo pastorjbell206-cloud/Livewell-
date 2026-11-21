@@ -13238,3 +13238,24 @@ Cut before publishing: a reason for the north side of the altar (the text gives 
 | Numbers 18:19; 2 Chronicles 13:5; Luke 12:1; 1 Corinthians 5:8; Matthew 5:13 | 11-16 | leviticus/2.json `words` (H2557A), `christ`; BSB | BSB text |
 
 Cut before publishing: how leaven was made from old dough (not in the repository).
+
+## The plain notes on Leviticus 3 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The one sacrifice the worshiper ate; how it was shared (7:31-34); the meal described before the remedy for failure | 1-5 | leviticus/3.json `story` | Repository |
+| Meat not everyday food; flocks as wealth | 1-5 | leviticus/3.json `cultural` | Repository |
+| Shelamim and shalom; the three translations; a celebration, not a payment | 1-5 | leviticus/3.json `words` (H8002) | Repository |
+| The fat: suet round the organs, the richest part, ‘the best of anything’ | 1-5 | leviticus/3.json `cultural`, `words` (H2459) | Repository |
+| Male or female; no provision for birds | 1-5 | leviticus/3.json `literary` | Repository |
+| Exodus 24:5, 11; Deuteronomy 12:7; Ephesians 2:14; 1 Corinthians 10:18; the links are of theme | 1-5 | leviticus/3.json `doctrines` (covenant), `christ`; BSB | BSB text |
+| Three like paragraphs; the same footing; the fat-tailed sheep | 6-16 | leviticus/3.json `literary`, `cultural` | Repository |
+| ‘Food’ as shared vocabulary without the belief; Psalm 50:12 | 6-16 | leviticus/3.json `cultural` | Repository |
+| Liver divination; clay models in Mesopotamia and at Hazor; ‘some scholars suggest’; no reason given | 6-16 | leviticus/3.json `cultural` | Repository |
+| Eli's sons (1 Samuel 2:16-17) | 6-16 | leviticus/3.json `historical`; BSB | BSB text |
+| The rule reaches every home; the two roots (Genesis 9:4; 17:11; 7:23-25); Jewish practice keeps both | 17 | leviticus/3.json `hard`, `doctrines` (holiness, law), `words` (H2459) | Repository |
+| Acts 15:20; Mark 7:19; the two Christian answers | 17 | leviticus/3.json `hard`; acts/plain/15.json (12-21 `hard`) | Repository; no side |
+
+Cut before publishing: a reason why birds are not listed (the deep note gives none); Elkanah's shares at Shiloh (left to the deep note).
