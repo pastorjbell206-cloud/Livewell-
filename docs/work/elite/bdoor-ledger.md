@@ -13732,3 +13732,22 @@ Cut before publishing: nothing of substance. The slave of verse 11 is named plai
 | Nehemiah 8:17; Deuteronomy 16:14; John 7:37; Colossians 2:17 and ‘a shadow is real’ | 33-44 | leviticus/23.json `historical`, `christ`; colossians/plain/2.json (16-19); BSB | BSB text |
 
 Cut before publishing: the Gezer tablet (on the book page's timeline); a statement that Jewish families build booths ‘every year to this day’ rests on the deep note's ‘Jewish communities, of course, continue to keep these feasts’.
+
+## The plain notes on Leviticus 24 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Olive oil and clay lamps; the finest oil; a house where the host is present; twelve loaves for twelve tribes; ‘continually’ | 1-9 | leviticus/24.json `cultural`, `literary` | Repository |
+| Exodus 25:30; Matthew 12:4; John 8:12 and 6:35, rooted more directly in other feasts and the manna | 1-9 | leviticus/24.json `historical`, `christ`; BSB | BSB text |
+| One of two narratives in the book | 10-16 | leviticus/intro.json `reading` | Repository |
+| A name as character and presence; cursing it as treason against the covenant; the mixed family and one law; custody, witnesses, the laying on of hands (‘most likely’) | 10-16 | leviticus/24.json `cultural`, `hard` | Repository |
+| Later Jewish teaching on pronouncing the name; ‘the Name’ | 10-16 | leviticus/24.json `cultural` | Repository |
+| Exodus 20:7 (‘on most counts’ the third); Matthew 26:65; Acts 6:11; 7:60 | 10-16 | leviticus/24.json `christ`; guides/reading-law.json (numbering); BSB | BSB text |
+| Why the penalty: the reasons given; Israel's civil law, not a model for the church or for states; Jesus and Stephen | 10-16 | leviticus/24.json `hard` | Repository |
+| The mirrored shape of verses 13-23 with ‘eye for eye’ at the center | 17-23 | leviticus/24.json `literary` | Repository |
+| ‘Eye for eye’ as a limit given to judges; Hammurabi's ranks; one standard; the Mishnah and Talmud on payment | 17-23 | exodus/plain/21.json (22-27 `hearers`), the wording reused; leviticus/24.json `historical` | Repository |
+| The three places; Deuteronomy 19:18; Matthew 5:38-39 and what Jesus does with it | 17-23 | exodus/plain/21.json (22-27 `later`), the wording reused; BSB | BSB text |
+
+Cut before publishing: the Arch of Titus; the mother's name and tribe. The sentence that no one may use this passage to justify harming a person for what they say or believe about God is new; it rests on the deep note's ‘not a model for the church or for modern states’.
