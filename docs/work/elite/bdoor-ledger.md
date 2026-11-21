@@ -13308,3 +13308,23 @@ Cut before publishing: the horned altar found at Beersheba and the fugitive at t
 | ‘If you are a person whose conscience never rests ... places to turn.’ | 14-19 | 2-corinthians/plain/13.json (5-10 `hard`), word for word, with the book's name added to its pointer (‘The note on 2 Corinthians 7:8-12’) so that the pointer stays true outside that letter | Repository |
 
 Cut before publishing: the Philistines' guilt offering of gold (1 Samuel 6:3) and the date of the first coins (true to the deep note, detours here); a lead-in sentence to the care line.
+
+## The plain notes on Leviticus 6 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Deposits in a world without banks; the oath before the LORD (Exodus 22:11); the man no court has caught | 1-7 | leviticus/6.json `historical` | Repository |
+| Cheating a neighbor is unfaithfulness against the LORD; repayment first, then the altar; a deliberate sin with a way back | 1-7 | leviticus/6.json `story`, `doctrines` (law, repentance); leviticus/4.json `hard` | Repository |
+| Numbers 5:7; Matthew 5:24; Luke 19:8-9 | 1-7 | leviticus/6.json `christ`; BSB | BSB text |
+| The audience changes at verse 8; ‘this is the law of’; torah as instruction | 8-13 | leviticus/6.json `story`, `literary`, `words` (H8451) | Repository |
+| The fire named three times; linen for the ashes, then a change of clothes | 8-13 | leviticus/6.json `literary`, `cultural` | Repository |
+| Leviticus 9:24; Hebrews 7:25, a link of theme only; the fire sometimes allegorized | 8-13 | leviticus/6.json `christ`; BSB | BSB text |
+| How the priests eat the grain offering; priests without farmland; the priest's own offering burned whole, morning and evening | 14-23 | leviticus/6.json `cultural`, `literary`; leviticus/2.json `cultural` | Repository |
+| Holiness as a state that passes by touch; the readings (statement, warning, mainly objects) | 14-23 | leviticus/6.json `hard`, `doctrines` (holiness) | Repository; no side |
+| Haggai 2:12-13; Ezekiel 44:19; 1 Corinthians 9:13 | 14-23 | leviticus/6.json `hard`, `historical`; BSB | BSB text |
+| The sin offering most holy; the garment, the clay pot and the bronze pot; offerings whose blood entered the tent are burned | 24-30 | leviticus/6.json `cultural`; leviticus/4.json `cultural` | Repository |
+| Leviticus 10:17; Hebrews 13:11-12 | 24-30 | leviticus/4.json `christ`; BSB | BSB text |
+
+Cut before publishing: that the priests kept alive ‘what God had lit’ (the order of chapters 8 and 9 does not allow it to be said so simply); the Laws of Hammurabi on deposits and Egyptian priests' linen (true to the deep note, detours here); the different verse numbers of the Hebrew Bible.
