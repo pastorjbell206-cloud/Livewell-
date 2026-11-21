@@ -14505,3 +14505,18 @@ Every claim in `client/public/bible/notes/deuteronomy/intro.json`, field `teachi
 | Go deeper: twelve pages | deeper | guides/reading-law.json, guides/calendar-and-festivals.json; bible/doctrines.json (love, covenant, election, idolatry, justice-poor); the three questions pieces (status live); context guide; /answers/did-god-command-genocide | Repository; all live |
 
 Cut or narrowed on the book page: that Deuteronomy is among the books most quoted in the New Testament (not in the repository's notes); that the law for the king is unlike any other royal law of its world (narrowed to ‘even the king is put under the law’); that Jewish men wear tefillin daily (narrowed to what the verse notes say of tefillin and the mezuzah); a date within the fortieth year for the death of Moses; the exclamation in 3:25 and 2 Kings 22:8 left outside the quoted words. The BSB's word in 1:2 and 2:7 is not quoted.
+
+## The plain notes on Deuteronomy 1 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The narrator's frame (verses 1-5); Horeb as Sinai; the children of the first generation; eleven days against forty years; the uncertain place names; ‘explain’ | 1-8 | deuteronomy/1.json `story`, `historical`, `literary`; deuteronomy/intro.json `author` | Repository |
+| Genesis 15:18; Numbers 36:13 | 1-8 | BSB | BSB text |
+| Jethro and Exodus 18; thousands to tens for war and judgment; bribes and partiality; the foreign resident; ‘judgment belongs to God’; shaphat as setting right; the stars and the promise to Abraham | 9-18 | deuteronomy/1.json `cultural`, `words` (H8199); BSB (Genesis 15:5) | Repository; BSB text |
+| Exodus 18:21; 2 Chronicles 19:6; James 2:1 | 9-18 | BSB | BSB text |
+| Moses preaches with ‘you’; the scouts in Numbers 13 and here, both held true by many; the walls as the language of dread; the Anakim; nasa in verses 9 and 31; aman and Genesis 15:6, amen | 19-33 | deuteronomy/1.json `literary`, `cultural`, `words` (H5375H, H0539), `hard` | Repository |
+| Hosea 11:3; Isaiah 46:4; Hebrews 3:19, written to the church | 19-33 | deuteronomy/1.json `christ`; numbers/plain/14.json (the same statement); BSB | Repository; BSB text |
+| The oath answers the people's words (Numbers 14:3); the second rebellion, marah in verses 26 and 43; Psalm 95:7-8; Hebrews 4:1 | 34-46 | deuteronomy/1.json `words` (H4784), `christ`; BSB | Repository; BSB text |
+| ‘On your account’ and Numbers 20:12: the three explanations; 32:51; no side | 34-46 | deuteronomy/1.json `hard` | Repository; no side |
