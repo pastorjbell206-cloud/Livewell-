@@ -14286,3 +14286,17 @@ Cut for want of a source in the repository: that ‘How lovely are your tents’
 | 24,000 and Paul's 23,000 | 6-13 | 1-corinthians/plain/10.json 6-13 `ot`; numbers/25.json `hard` | Repository |
 | The names held back; Zimri a leader, Cozbi a chief's daughter; 31:16; who the Midianites were; Jethro | 14-18 | numbers/25.json `cultural`, `literary`; numbers/31.json `historical` | Repository |
 | Revelation 2:14; Exodus 18:11 | 14-18 | numbers/25.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 26 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The turn from the old generation to the new; Eleazar for Aaron; the totals 603,550 and 601,730; Simeon and Manasseh, and the link many draw with 25:14; the clans from Genesis 46; a list of heirs; the pauses in the list | 1-51 | numbers/26.json `story`, `historical`, `cultural`, `literary`, `words` (H4940) | Repository |
+| Genesis 46:8-27; 15:5; Deuteronomy 1:10 | 1-51 | BSB | BSB text |
+| The numbers: as written; elef and its difficulty; symbolic; a later count; no side | 1-51 | numbers/26.json `hard`, `historical`; exodus/plain/12.json 37-42 `hard` | Repository; no side |
+| Size by need, place by lot; the lot as God's decision; nachalah | 52-56 | numbers/26.json `cultural`, `words` (H5159, H1486) | Repository |
+| Proverbs 16:33; Joshua 18:10; Galatians 3:29; 1 Peter 1:4 | 52-56 | numbers/26.json `cultural`, `christ`; BSB | BSB text |
+| The Levites apart; Moses' family named; not one left but Caleb and Joshua | 57-65 | numbers/26.json `literary`, `story`; BSB | Repository; BSB text |
+| Joshua 14:10; Hebrews 3:19; 4:9, written to Christians | 57-65 | numbers/26.json `christ`; BSB | BSB text |
