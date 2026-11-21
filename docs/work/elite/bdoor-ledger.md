@@ -14115,3 +14115,15 @@ Cut: Job and Jeremiah as others who asked to die, which no note in the repositor
 | Israel's penalties not carried into the church (1 Corinthians 5); the Christian views of the Sabbath; no pattern for punishment | 32-36 | numbers/15.json `hard`; doctrines/sabbath.json `differ` | Repository; no side |
 | Hems and identity (1 Samuel 24); the blue of the sanctuary and the sea-snail dye; tur and the scouts; tzitzit; the third paragraph of the Shema | 37-41 | numbers/15.json `cultural`, `words` (H8446, H6734) | Repository |
 | Matthew 9:20; 23:5 | 37-41 | numbers/15.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 17 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A sign of life after the judgments; the staff as a sign of authority (Genesis 38:18); matteh, staff and tribe, sixteen times; the Testimony | 1-7 | numbers/17.json `story`, `cultural`, `historical`, `words` (H4294G, H5715) | Repository |
+| Jeremiah 1:11-12 and the wordplay; Hebrews 5:4 | 1-7 | numbers/17.json `cultural`, `christ`; BSB | BSB text |
+| The four verbs; the almond and the lampstand (Exodus 25:33-34); the contrast with the censers; the sign meant to prevent deaths; the cry as a bridge to chapter 18 | 8-13 | numbers/17.json `literary`, `cultural`, `story` | Repository |
+| Hebrews 9:4; 1 Kings 8:9; the staff's fate unknown; the resurrection only as an echo; Hebrews 10:22 | 8-13 | numbers/17.json `historical`, `christ`; BSB | Repository; BSB text |
+| The people's fear: right and overshooting; 18:5; two ways of hearing it | 8-13 | numbers/17.json `hard` | Repository; no side |
