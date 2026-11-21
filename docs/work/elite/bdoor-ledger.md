@@ -14346,3 +14346,20 @@ Cut for want of a source in the repository: a contrast between ‘hand’ and �
 | 1 Kings 8:2; Zechariah 14:16; John 7:37 | 12-38 | numbers/29.json `historical`, `christ`; BSB | BSB text |
 | Verses 39-40 close both chapters; public offerings beside vows and freewill gifts; the prophets on sacrifice without justice | 39-40 | numbers/29.json `literary`, `story`; leviticus/intro.json teaching (‘The offerings’) | Repository |
 | Amos 5:21, 24; 2 Corinthians 9:7 | 39-40 | BSB | BSB text |
+
+## The plain notes on Numbers 30 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Vows in the ancient world; Jacob (Genesis 28:20-22); Hannah (1 Samuel 1:11); neder and issar; the heads of the tribes | 1-2 | numbers/30.json `story`, `historical`, `words` (H5088, H0632) | Repository |
+| Ecclesiastes 5:4-5; Proverbs 20:25; Matthew 5:37 | 1-2 | numbers/30.json `historical`, `christ`; BSB | BSB text |
+| The household and its head; vows and property; the four limits (at once; silence as consent; the woman absolved; the man bears the guilt); the widow and divorced woman (verse 9) | 3-16 | numbers/30.json `cultural`, `literary`, `hard` | Repository |
+| Women vowed for themselves; Hannah and Elkanah (1 Samuel 1:10-11, 23) | 3-16 | numbers/30.json `historical`; BSB | Repository; BSB text |
+| Galatians 3:28 | 3-16 | numbers/30.json `hard`; BSB | BSB text |
+| Why the difference: the readings Christians hold; no side | 3-16 | numbers/30.json `hard` | Repository; no side |
+| Not a rule for any husband's or father's control today | 3-16 | The run's content rule | A caution of these notes |
+| Care lines for anyone pressured or forced in a marriage | 3-16 | 1-corinthians/plain/7.json 1-7 `hard` | Reused whole, word for word |
+
+Cut for want of a source in the repository: a note on the Hebrew verb for ‘break’ in verse 2.
