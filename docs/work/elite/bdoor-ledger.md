@@ -13445,3 +13445,25 @@ Cut before publishing: the cousins' names and the family tree; Korah's 250 men a
 | Christian practice: most churches; whether Jesus himself set the laws aside (pointer to Mark 7:14-23); Acts 10 first about people; Adventists; Jewish believers in Jesus; Romans 14:3; the laws not foolish | 41-47 | leviticus/11.json `hard`; mark/plain/7.json (14-23 `hard`); acts/plain/10.json (9-16 `hard`) | Repository; no side |
 
 Cut before publishing: that locusts are still eaten in some places (not in the repository); pig bones at Iron Age sites (the deep note says archaeologists debate what the pattern shows); Ephesians 2:15 and Colossians 2:17 (left to the deep note, since the book page already gives the Christian accounts); the later Jewish law built on verse 38.
+
+## The plain notes on Leviticus 12 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first purity law about the body; birth never shameful; Genesis 1:28; Psalm 127:3 | 1-5 | leviticus/12.json `story`; BSB | Repository |
+| Milgrom's common thread: life-fluids and the nearness of death; birth on that boundary; the danger of childbirth; Rachel (Genesis 35:17-18) | 1-5 | leviticus/12.json `hard`, `historical` | Repository |
+| Two stages; the second without passing uncleanness to others (‘most interpreters’); ‘days of her purification’ looks forward | 1-5 | leviticus/12.json `cultural`, `words` (H2892A) | Repository |
+| Forty days and the weeks of bleeding; a rest from public worship; traditional cultures | 1-5 | leviticus/12.json `cultural` | Repository |
+| Circumcision on the eighth day as the covenant sign (Genesis 17:12) | 1-5 | leviticus/12.json `doctrines` (covenant); BSB | BSB text |
+| Luke 2:21-22; Galatians 4:4 | 1-5 | leviticus/12.json `christ`; BSB | BSB text |
+| Uncleanness not sin, with 15:18 and Numbers 19:11 as like cases | 1-5 | leviticus/12.json `hard`; guides/offerings-and-purity.json; leviticus/intro.json `teaching` (clean-and-unclean) | Repository |
+| The doubled period: no stated reason; the three suggestions; the same offering for a daughter | 1-5 | leviticus/12.json `hard` | Repository; no side |
+| The service of thanksgiving for a mother | 1-5 | leviticus/12.json `historical` | Repository |
+| ‘A word for anyone who has been made to feel unclean ... places to turn.’ | 1-5 | leviticus/intro.json `teaching` (clean-and-unclean), word for word; its last three sentences are from acts/plain/3.json (1-10 `hard`) | Repository |
+| The offerings as her return; the purification offering implies no sin; atonement wider than moral wrong | 6-8 | leviticus/12.json `cultural`, `doctrines` (atonement) | Repository |
+| The same offering for son and daughter; the provision for the poor repeats 5:7 | 6-8 | leviticus/12.json `cultural`, `doctrines` (family) | Repository |
+| Luke 2:24 and a household that could not afford a lamb; 1 Samuel 1:24 | 6-8 | leviticus/12.json `christ`; BSB | BSB text |
+
+Cut before publishing: ‘for many centuries’ of the churches' service (the deep note gives no span); the date of Candlemas (on the book page already); a question addressed to mothers about the day of a birth, which could wound a reader whose child died or whose labor was traumatic.
