@@ -14363,3 +14363,31 @@ Cut for want of a source in the repository: a contrast between ‘hand’ and �
 | Care lines for anyone pressured or forced in a marriage | 3-16 | 1-corinthians/plain/7.json 1-7 `hard` | Reused whole, word for word |
 
 Cut for want of a source in the repository: a note on the Hebrew verb for ‘break’ in verse 2.
+
+## The plain notes on Numbers 31 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| One of the hardest chapters in the Bible; it completes chapter 25 (25:16-18); neqamah, vengeance as God's (Deuteronomy 32:35) | 1-12 | numbers/31.json `story`, `hard`, `words` (H5360) | Repository |
+| The Midianites: Genesis 25:2; Moses' years among them, Zipporah and Jethro; the group allied with Moab; the five chiefs (Joshua 13:21); Zur the father of Cozbi; Midian not ended (Judges 6:1-2); a limited action | 1-12 | numbers/31.json `historical`; BSB | Repository; BSB text |
+| Balaam's death and 23:10; a priest with the army; death defiles even in a commanded war | 1-12 | numbers/31.json `cultural`, `story`; numbers/23.json `christ` | Repository |
+| Romans 12:19, 21 | 1-12 | numbers/31.json `words`, `christ`; BSB | BSB text |
+| What Moses orders, stated as it stands; 32,000 (verse 35); the stated reason (verse 16) covers the women, not the boys; Deuteronomy 24:16 | 13-18 | BSB (verses 13-18, 35); numbers/31.json `hard` | BSB text |
+| The order is given as Moses' words; no rebuke is recorded; God's instruction in verse 25 follows; no easy way out offered | 13-18 | BSB (verses 2, 15-18, 25-30) | BSB text; stated as what the text does and does not say |
+| The girls: the text does not say what became of them; Deuteronomy 21:10-14 and its limits; the taking not called right | 13-18 | numbers/31.json `hard` (the laws of war); BSB | Repository; BSB text |
+| Ezekiel 18:20; Luke 9:55; Matthew 5:44 | 13-18 | questions/old-testament/the-command-to-destroy-the-canaanites.json; BSB | Repository; BSB text |
+| How Christians have understood it: the setting and God's right to judge (Assyria and Babylon); the limits; the customs of ancient war and the teaching of Christ, with the objection; many hold these together; no side; Genesis 18:25 | 13-18 | numbers/31.json `hard`; numbers/21.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json; context/guides/the-violence-of-the-old-testament.json | Repository; no side |
+| No warrant for violence against any person or people; no nation or conflict today in view | 13-18 | numbers/31.json `hard` (last sentence); the run's content rule | Repository; a caution of these notes |
+| Care lines for anyone sexually assaulted | 13-18 | 1-thessalonians/plain/4.json 1-8 `hard`; exodus/plain/22.json 16-17 `hard` | Reused whole, word for word |
+| Seven days outside the camp; the water of chapter 19; metals by fire and water; killing not treated as clean | 19-24 | numbers/31.json `cultural` | Repository |
+| 1 Chronicles 28:3; Isaiah 2:4 | 19-24 | BSB | BSB text |
+| Half and half (1 Samuel 30:24-25); mekhes; the large figures; one in five hundred (32) and one in fifty (320) | 25-47 | numbers/31.json `cultural`, `words` (H4371); BSB (verses 40, 46-47) | Repository; BSB text; 320 is arithmetic from verses 46-47 |
+| People counted beside animals, named for what it was; Job 31:15; 1 Timothy 1:10 | 25-47 | leviticus/plain/25.json 39-46; BSB | Repository; BSB text |
+| The girls given to the priest: not sacrifice (Deuteronomy 12:31); handed over as the animals were (verse 29); Genesis 1:27; Exodus 21:16; Leviticus 19:34 | 25-47 | BSB | BSB text |
+| Care lines for anyone sold, traded or forced | 25-47 | acts/plain/16.json 16-18 `hard` | Reused whole, word for word |
+| Not one missing; an unordered offering ‘to make atonement’; the census ransom (Exodus 30:12) as a possible background; zikkaron, a memorial | 48-54 | numbers/31.json `literary`, `words` (H2146); BSB | Repository; BSB text; the link to Exodus 30:12 is offered as a possibility |
+| Ephesians 6:12; 1 Peter 2:24 | 48-54 | numbers/31.json `christ`; BSB | BSB text |
+
+Cut for want of a source in the repository: a reason for the killing of the boys (‘a common practice in ancient war’); a statement that the girls given to the priest became sanctuary servants; ‘some connect’ the atonement of verse 50 with the census law, narrowed to an observation from the text.
