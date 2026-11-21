@@ -13467,3 +13467,29 @@ Cut before publishing: that locusts are still eaten in some places (not in the r
 | Luke 2:24 and a household that could not afford a lamb; 1 Samuel 1:24 | 6-8 | leviticus/12.json `christ`; BSB | BSB text |
 
 Cut before publishing: ‘for many centuries’ of the churches' service (the deep note gives no span); the date of Candlemas (on the book page already); a question addressed to mothers about the day of a birth, which could wound a reader whose child died or whose labor was traumatic.
+
+## The plain notes on Leviticus 13 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| God in the camp and the practical question | 1-17 | leviticus/13.json `story` | Repository |
+| Tsara'at: ‘leprosy’ from the Greek translation; not Hansen's disease; the symptoms; several conditions; the same word for mildew | 1-17 | leviticus/13.json `historical`, `words` (H6883); mark/plain/1.json (40-45) | Repository |
+| The priest not a physician; the refrain of pronouncing; patience and waiting periods | 1-17 | leviticus/13.json `cultural`, `doctrines` (law) | Repository |
+| The chapter never calls the sick a sinner; unclean not sinful | 1-17 | leviticus/13.json `hard`, `cultural` | Repository |
+| Verses 12-13: the concern is raw, changing flesh | 1-17 | leviticus/13.json `cultural` | Repository |
+| 2 Kings 5:1; 7:3-9; Luke 17:12, 14 | 1-17 | leviticus/13.json `christ`; BSB | BSB text |
+| Case law as a priestly manual; the fixed order of verbs | 18-44 | leviticus/13.json `literary` | Repository |
+| Job 2:7 and his friends; John 9:2-3 | 18-44 | leviticus/26.json `hard`; john/plain/9.json (1-7); BSB | BSB text |
+| Torn clothes and loose hair as mourning; the covered mouth; separation from family, worship and work | 45-46 | leviticus/13.json `cultural` | Repository |
+| Tied to the condition, not the person; the next chapter the way back | 45-46 | leviticus/13.json `hard` | Repository |
+| The disease looked like death; Miriam and Numbers 12:12, 15 | 45-46 | guides/offerings-and-purity.json; BSB | Repository |
+| Mark 1:40-41 and cleanness passing the other way; Hebrews 13:12-13 | 45-46 | leviticus/13.json `christ`; BSB | BSB text |
+| Why the sick were sent out: public health; Milgrom and Wenham; Mary Douglas; what the chapter does not say; exclusion hardening into contempt | 45-46 | leviticus/13.json `hard` | Repository; no side |
+| ‘Every person, with any disability or illness, is made by God and is precious to him. No one is a mistake.’ | 45-46 | psalms/plain/139.json (13-18 `hearers`), word for word | Repository |
+| ‘A word for anyone who has been made to feel unclean ... places to turn.’ | 45-46 | leviticus/intro.json `teaching` (clean-and-unclean), word for word | Repository |
+| The same word for cloth and leather; look, wait, look again; torah as instruction | 47-59 | leviticus/13.json `historical`, `literary`, `doctrines` (law) | Repository |
+| Leviticus 14:33-53; Jude 1:23 | 47-59 | BSB | BSB text |
+
+Cut before publishing: that cloth was costly and hand-woven (not in the repository); a sentence on how fear could turn on anyone with a mark (narrowed to the deep note's ‘hasty judgment’); nothing else. Miriam and King Uzziah, whose disease the Bible does present as a judgment, are named in the hard part, with the plain statement that this chapter makes no such link (leviticus/14.json `hard`; leviticus/10.json `historical`).
