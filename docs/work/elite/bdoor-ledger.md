@@ -13540,3 +13540,32 @@ Cut before publishing: that no one else in the law is marked on ear, thumb and t
 | Mark 5:25, 29, 34 and uncleanness not passing to Jesus; Hebrews 10:22 | 25-33 | leviticus/15.json `christ`; BSB | BSB text |
 
 Cut before publishing: the later immersion pool (mikveh), which the deep note says belongs to a later time than the text; purity rules in Egyptian, Mesopotamian and Hittite temples.
+
+## The plain notes on Leviticus 16 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The chapter reaches back to chapter 10; it gathers what chapters 11 to 15 could not reach; the center and hinge of the book | 1-5 | leviticus/16.json `story` | Repository |
+| The tent as rooms of rising holiness; only the high priest, only this day; plain linen like a servant's dress | 1-5 | leviticus/16.json `cultural` | Repository |
+| Hebrews 9:7; 10:19-20 | 1-5 | leviticus/16.json `christ`; BSB | BSB text |
+| Summary before detail; the priest atoned for first; God chooses by lot; two goats, two movements, not to be merged | 6-10 | leviticus/16.json `literary`, `teach` (outline, pitfalls) | Repository |
+| Azazel only in this chapter; BSB ‘scapegoat’ | 6-10 | leviticus/16.json `words` (H5799), `text` | Repository |
+| Proverbs 16:33; Leviticus 14:4-7 | 6-10 | leviticus/14.json `cultural`; BSB | BSB text |
+| Azazel: the parallel in verse 8; 1 Enoch; 17:7; Milgrom; the Greek and Latin and Tyndale (1530); the Talmud and Rashi; ‘complete removal’; only the LORD receives sacrifice; the word emptied of power; open | 6-10 | leviticus/16.json `hard` (second question), `words` | Repository; no side |
+| The high priest alone; the cloud of incense; coals from the altar | 11-19 | leviticus/16.json `cultural`; leviticus/10.json `cultural` | Repository |
+| Kapporet and kipper; the gold cover with the cherubim | 11-19 | leviticus/16.json `words` (H3727) | Repository |
+| Sin and uncleanness stain the dwelling ‘the way smoke stains a house’; impurities and rebellious acts; deliberate rebellion not covered by the ordinary sin offerings; sixteen times | 11-19 | leviticus/16.json `cultural`, `literary`, `words` (H3722A, H2932) | Repository |
+| Romans 3:25 and the Greek word; Hebrews 9:24; Matthew 27:51; ‘a shadow is real’ | 11-19 | leviticus/16.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| Both hands and a spoken confession; the words for wrong gathered; the wilderness beyond the camp; ‘a land cut off’ | 20-22 | leviticus/16.json `cultural`, `literary`, `teach` (pastoral) | Repository |
+| Ebla and the Hittite rites; no incantations or demons; confessed sin, not disease | 20-22 | leviticus/16.json `historical` | Repository |
+| Psalm 103:12; Micah 7:19; Isaiah 53:6; John 1:29; the live goat not explicitly tied to Christ; a link of likeness | 20-22 | leviticus/16.json `christ`; BSB | BSB text |
+| How a goat could deal with guilt: Hebrews 10:4; the philosophers' objection (Kant and Socinus, not named); repentance and m. Yoma 8:8-9; 17:11; Milgrom; the Christian reading and Hebrews 9:26; the Jewish reading; the disagreement real | 20-22 | leviticus/16.json `hard` (first question) | Repository; no side |
+| Yom Kippur the holiest day of the Jewish year; the chapter read that morning; the Avodah; not to be presented as empty or merely legal; a searching word to Christians | 20-22 | leviticus/16.json `story`, `interpretation`, `teach` (pitfalls) | Repository |
+| The linen left behind; burnt offerings after cleansing; the two men wash; offerings whose blood entered are burned (6:30) | 23-28 | leviticus/16.json `teach` (outline); leviticus/6.json | Repository |
+| Hebrews 13:11-13 | 23-28 | leviticus/16.json `christ`; BSB | BSB text |
+| ‘Humble yourselves’ as fasting; the only fast required by the law; received at rest; shabbat shabbaton and the Sabbath of Sabbaths; the foreigner; ‘a permanent statute’ three times; the ending reverses the opening | 29-34 | leviticus/16.json `cultural`, `literary`, `words` (H6031B, H7677) | Repository |
+| Leviticus 23:27; Isaiah 58:6 and the synagogue reading; Acts 27:9; Hebrews 10:3, 12 | 29-34 | leviticus/16.json `historical`, `interpretation`, `christ`; BSB | BSB text |
+
+Cut before publishing: that the two goats were chosen to look alike (a later tradition not in the repository); the blue of the high priest's robe; the Mishnah's five abstentions, the ravine of m. Yoma 6:6, the Temple Scroll, Philo and Josephus (true to the deep note, left there); the early Christian reading of the two goats as Christ suffering and returning, which the deep note says should not be pressed.
