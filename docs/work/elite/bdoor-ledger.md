@@ -14686,3 +14686,20 @@ Cut in chapter 10: a remark on the Hebrew wording behind ‘showing no partialit
 | Joshua 1:3; 1 Kings 4:21; Proverbs 3:3 | 18-25 | deuteronomy/11.json `historical`; BSB | Repository; BSB text |
 | Blessing and curse as God's favor given and withdrawn; the treaty ending; Gerizim and Ebal at Shechem; the Oak of Moreh and Genesis 12:6-7; the choice made visible; chapters 27, 28 and 30 | 26-32 | deuteronomy/11.json `historical`, `cultural`, `literary`, `words` (H1293, H7045) | Repository |
 | Joshua 8:33; Genesis 12:6; John 4:20-21; Galatians 3:13-14 | 26-32 | deuteronomy/11.json `historical`, `christ`; BSB | Repository; BSB text |
+
+## The plain notes on Deuteronomy 12 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Local shrines on hills and under trees; one sanctuary chosen by God; verse 8; maqom nine times, never named; shakan and the tabernacle; worship as a feast, joy commanded three times | 1-14 | deuteronomy/12.json `cultural`, `literary`, `words` (H4725, H7931, H8055) | Repository |
+| The command about the shrines as a command to ancient Israel; no warrant to damage any place of worship or harm any person | 1-14 | deuteronomy/plain/7.json 1-5 `hard`; context/guides/the-violence-of-the-old-testament.json | Repository |
+| Jeremiah 7:12; 1 Kings 8:29; Judges 21:25; John 1:14; 2:21; 4:23 | 1-14 | deuteronomy/12.json `christ`; BSB | Repository; BSB text |
+| The date of the law: Hezekiah (2 Kings 18:4) and Josiah about 622 BC; the reply that Jerusalem is not named, Shiloh; the shrine at Arad, its dating debated; no side | 1-14 | deuteronomy/12.json `historical` | Repository; no side |
+| Meat and sacrifice in the ancient world; slaughter at home, gazelle and deer; the blood as the life; Genesis 9:4 and Leviticus 17 | 15-28 | deuteronomy/12.json `cultural`, `words` (H1818) | Repository |
+| Jewish practice of draining blood, kept today; the Christian readings and Acts 15:29 with no side; not medical advice | 15-28 | leviticus/plain/17.json (the same sentences); leviticus/17.json | Repository; no side |
+| The frame of verses 4 and 31; child sacrifice, Ahaz and Manasseh, the king of Moab; verse 32 and 4:2 | 29-32 | deuteronomy/12.json `historical`, `literary` | Repository |
+| 2 Kings 16:3; Jeremiah 7:31; Ephesians 2:22 | 29-32 | deuteronomy/12.json `historical`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 12: that a newcomer to a land would ask how its gods were served; that Shiloh was the first place the ark rested in the land (narrowed to Jeremiah's words); that pouring out the blood was a way of ‘giving the life back’ (narrowed to the wording of the deep note).
