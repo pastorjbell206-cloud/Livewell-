@@ -14833,3 +14833,25 @@ Cut in chapter 19: ‘the ninth of the Ten Commandments’ (traditions number th
 | Genesis 2:15; Micah 4:4 | 19-20 | BSB | BSB text |
 
 Cut in chapter 20: that Israel had few horses and chariots (not in the repository's notes).
+
+## The plain notes on Deuteronomy 21 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Unsolved killings in ancient law, Hammurabi; the town answerable before God; the elders' prayer; kipper | 1-9 | deuteronomy/21.json `historical`, `literary`, `words` (H3722A) | Repository |
+| Genesis 4:10; Numbers 35:33; Matthew 27:24 | 1-9 | BSB | BSB text |
+| The captive woman: women taken in war commonly raped or sold; the limits (the wait, the mourning, marriage, freedom, no sale); the signs of transition; ‘you have dishonored her’ | 10-14 | deuteronomy/21.json `cultural`, `hard` | Repository; not defended |
+| Genesis 1:27; Exodus 21:16; Matthew 19:8 | 10-14 | numbers/plain/31.json 25-47 `hard`; deuteronomy/21.json `hard`; BSB | Repository; BSB text |
+| What the law permits and what it limits; the two readings and the critics' answer; not a pattern; rape, forced marriage and the abuse of captives as grave evils | 10-14 | deuteronomy/21.json `hard`; numbers/plain/31.json 13-18 `hard` (‘Rape, forced marriage and the abuse of captives are grave evils’); exodus/plain/21.json 1-6 `hard` (the shape) | Repository; faced, not defended |
+| The care line reused whole | 10-14 | 1-thessalonians/plain/4.json, exodus/plain/22.json, numbers/plain/31.json (‘A word for anyone who has been sexually assaulted...’) | Repository; word for word |
+| Inheritance and the double share; polygamy permitted, never commanded; Jacob, Rachel and Leah | 15-17 | deuteronomy/21.json `cultural`, `words` (H1060) | Repository |
+| Genesis 29:30-31; 49:3 | 15-17 | BSB | BSB text |
+| The rebellious son: persistent defiance (sarar); a father's power in ancient societies taken from him; both parents, the elders, the gate; the Talmud's view (Sanhedrin 71a) that it was never carried out | 18-21 | deuteronomy/21.json `cultural`, `words` (H5637), `hard` | Repository |
+| Matthew 11:19, not connected by the New Testament itself; Luke 15:13, 20 | 18-21 | deuteronomy/21.json `christ`; BSB | Repository; BSB text |
+| No right to harm a child; the care line reused whole | 18-21 | deuteronomy/21.json `hard`; existing plain notes (‘If you are being hurt, at home, at work or in a church...’) | Repository; word for word |
+| Hanging as display of a body already dead; burial the same day; the Temple Scroll and crucifixion | 22-23 | deuteronomy/21.json `historical`, `words` (H7045) | Repository |
+| Joshua 8:29; John 19:31; Acts 5:30 with the pointer to the Acts 2:22-28 note; Galatians 3:13-14 as the New Testament's own reading | 22-23 | deuteronomy/21.json `christ`, `historical`; deuteronomy/intro.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 21: that the captive woman's parents were ‘probably dead’; that the Hebrew verb in verse 14 is ‘a strong one’; that the rebellious son was ‘wasting the family's living’; that the soldier ‘may not touch her on the battlefield’ (narrowed to ‘He must wait a full month’).
