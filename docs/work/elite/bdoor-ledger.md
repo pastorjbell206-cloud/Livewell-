@@ -13778,3 +13778,27 @@ Cut before publishing: the Arch of Titus; the mother's name and tribe. The sente
 | 1 Peter 1:18-19; 1 Corinthians 7:23 | 47-55 | BSB | BSB text |
 
 Cut or narrowed before publishing: the Exodus 21 sentence that Atlantic slavery was ‘very different from the debt service of these verses’ could not be reused here, because verses 44-46 are not debt service; the note says only that Atlantic slavery was built on race and on kidnapping, which the law punished with death. Also cut: that ‘rule harshly’ is the word used of Egypt's treatment of Israel; that loans in that world went mostly to the needy (neither found in the repository); the Edict of Ammi-saduqa by name; 1 Maccabees. The note on verses 35-38 says that it is not legal or financial advice.
+
+## The plain notes on Leviticus 26 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Treaties ending in blessings and curses (Hittite, Assyrian); the covenant partner is the LORD | 1-13 | leviticus/26.json `historical`; guides/reading-law.json | Repository |
+| Rain-fed farming; the overflowing harvests; the climax in God's presence; the verb of Genesis 3:8 | 1-13 | leviticus/26.json `cultural` | Repository |
+| ‘Walk upright’; the rescue as the ground | 1-13 | BSB (verse 13); leviticus/intro.json `reading` | BSB text |
+| Deuteronomy 28; Ezekiel 37:27; 2 Corinthians 6:16; Revelation 21:3 | 1-13 | leviticus/26.json `christ`; BSB | BSB text |
+| Five rising stages, each with a condition; the number seven; discipline (yasar) as a father's correction; ‘hostility’ (qeri) | 14-39 | leviticus/26.json `literary`, `words` (H3256, H7147) | Repository |
+| Verse 29 as what siege did, a warning set out in advance; Samaria and Jerusalem | 14-39 | leviticus/26.json `hard`, `historical` | Repository |
+| Addressed to the nation under the Sinai covenant; the long-term direction of its life | 14-39 | leviticus/26.json `hard` | Repository |
+| 2 Chronicles 36:21; Lamentations 4:10; Proverbs 3:12 | 14-39 | leviticus/26.json `historical`, `words`; BSB | BSB text |
+| Not a formula for individuals: Job; the psalms; Luke 13:4-5; John 9:3; hardship with God's presence | 14-39 | leviticus/26.json `hard`; BSB | Repository |
+| ‘No one should be told that their illness or disability is a punishment.’ | 14-39 | luke/plain/5.json (17-26 `hard`), word for word | Repository |
+| The misuse against the Jewish people named and rejected; the pointer to Acts 2:22-28; ‘These notes say nothing against any people, ancient or modern.’ | 14-39 | exodus/intro.json `teaching` (new-testament); exodus/plain/23.json (27-33 `hard`) | Repository |
+| ‘Grief is not a lack of faith. If your grief is so heavy ... places to turn.’ | 14-39 | 1-timothy/plain/5.json (9-16 `hard`), its last three sentences, word for word | Repository |
+| The turn to restoration; the uncircumcised heart; God's remembering as acting (Noah); the patriarchs named backward; Israel can break the covenant, God will not | 40-46 | leviticus/26.json `cultural`, `literary`, `words` (H2142, H1285) | Repository |
+| The chapter explained the exile and gave ground for hope | 40-46 | leviticus/26.json `historical`; leviticus/intro.json `purpose` | Repository |
+| Deuteronomy 30:3; Daniel 9:5; Romans 11:1, 29 | 40-46 | BSB; hebrews/plain/8.json (7-13 `hard`) | BSB text |
+
+Cut before publishing: the Esarhaddon treaties of 672 BC by name and date; the destruction of Jerusalem in AD 70 as a fulfillment of this chapter (the deep note mentions Jesus' warning; it is left there, so that no later suffering of Jewish people is read here as a verdict); Galatians 3:13.
