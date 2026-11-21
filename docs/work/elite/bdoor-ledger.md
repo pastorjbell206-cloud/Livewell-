@@ -15014,3 +15014,21 @@ Cut in chapter 28: the Roman destruction of Jerusalem in AD 70 and Josephus's re
 | Joshua 24:15; Isaiah 1:2; John 14:6; 10:10 | 15-20 | deuteronomy/30.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 30: that the will of the gods ‘was never certain’ in ancient religion, narrowed to what the chapter 18 note says; that Moses would be dead ‘within days’.
+
+## The plain notes on Deuteronomy 31 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The refrain three times and in Joshua 1; chazaq and amats; azav of God's promise and of Israel's turning; the public commissioning | 1-8 | deuteronomy/31.json `literary`, `words` (H2388G, H5800A) | Repository |
+| Joshua 1:5; Hebrews 13:5; Matthew 28:20 | 1-8 | deuteronomy/31.json `christ`; BSB | Repository; BSB text |
+| Treaties deposited and read at set times; the seventh year and the Feast of Tabernacles; the broad audience; public reading where few could read | 9-13 | deuteronomy/31.json `cultural` | Repository |
+| 2 Kings 22:8 and the identification many scholars make; Nehemiah 8:2-3; 1 Timothy 4:13 | 9-13 | deuteronomy/31.json `historical`; BSB | Repository; BSB text |
+| The marriage picture of verse 16; ‘hide My face’ as withdrawal of favor, about a nation's idolatry and not every believer's sense of distance; yetser; a song remembered where scrolls are lost; the song as witness | 14-23 | deuteronomy/31.json `cultural`, `literary`, `words` (H5707, H3336) | Repository |
+| Psalm 44:24; Acts 20:29 | 14-23 | BSB | BSB text |
+| If God knew: the two answers; both traditions; God's persistence as grace; no ground for contempt of the Jewish people | 14-23 | deuteronomy/31.json `hard`; numbers/intro.json teaching (‘How the New Testament reads Numbers’) | Repository; no side |
+| The ark and the book beside it; the two witnesses; Moses' bluntness as an Israelite to Israelites | 24-30 | deuteronomy/31.json `cultural`, `literary` | Repository |
+| 2 Kings 22:11; John 5:46 | 24-30 | questions/old-testament/who-wrote-the-first-five-books.json (`evidence`); BSB | Repository; BSB text |
+
+Cut in chapter 31: a sentence that a king who turned his face away had stopped listening (not in the repository's notes).
