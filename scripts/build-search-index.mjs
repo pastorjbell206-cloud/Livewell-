@@ -441,13 +441,15 @@ export function buildSearchIndex() {
     sources: [
       source("Main Pages", "/", [...mainPages(), ...worlds()]),
       source("Honest Answers", "/answers", answers()),
-      // Only once a piece is live, so a pending library leaves the index as it was.
-      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),
       source("Doctrine", "/study/bible/doctrines", doctrines()),
       source("Compare the Views", "/theology/compare", debatedDoctrines()),
       source("Church History", "/theology/history", history()),
+      // The library's live areas and pieces (a pending one is never indexed). After
+      // the nation essays and church history, so that on a tie a search for a
+      // council or for the Christian-nation question still opens the page it did.
+      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Family Devotions", "/family/devotions", [...devotions(), ...seasonal()]),
       source("Family Catechism", "/family/catechism", catechism()),
       source("What the Bible Says", "/wisdom", [...wisdom(), ...wisdomDeep()]),
