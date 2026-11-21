@@ -14268,3 +14268,21 @@ Cut for want of a source in the repository: a meaning for the name Bamoth-baal; 
 | Care lines for a conscience that never rests | 20-25 | ephesians/plain/5.json 1-7 `hard` | Reused whole, word for word |
 
 Cut for want of a source in the repository: that ‘How lovely are your tents’ became part of Jewish worship.
+
+## The plain notes on Numbers 25 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The contrast with chapters 22 to 24; Shittim (Joshua 2:1); feasts as sharing a god's worship; tsamad, to yoke; the two views of the sexual sin; the prophets on the two betrayals; Baal and Baal of Peor | 1-5 | numbers/25.json `story`, `cultural`, `historical`, `words` (H6775) | Repository; no side |
+| Not a judgment on the women of Moab or Midian, nor a rule against marrying a foreigner: Moses' Midianite wife; Ruth | 1-5 | BSB (Exodus 2:21; Ruth 4:13-17) | BSB text; a caution of these notes |
+| Deuteronomy 4:3-4; 1 Corinthians 10:8, written to Christians | 1-5 | numbers/25.json `historical`, `christ`; 1-corinthians/plain/10.json | Repository; BSB text |
+| The setting of Phinehas's act: plague, weeping, the order of verses 4-5, leaders acting publicly, a priest; qin'ah four times; the covenant of peace; the high priests' line (1 Chronicles 6:4-15); 24,000 the deadliest judgment | 6-13 | numbers/25.json `hard`, `cultural`, `literary`, `words` (H7068, H1285, H7965G) | Repository |
+| Psalm 106:30-31; Ezekiel 34:25; Ephesians 2:14, 16; wrath turned away by striking, and by bearing | 6-13 | numbers/25.json `christ`; BSB | Repository; BSB text |
+| A unique event, no leave for private violence; Mattathias (1 Maccabees 2:26); first-century revolutionaries; Christian misuse of the Old Testament's wars | 6-13 | numbers/25.json `hard`, `historical`; context/guides/the-violence-of-the-old-testament.json (‘What No One May Do With These Texts’) | Repository |
+| Philippians 3:6; Luke 9:55; Matthew 26:52; zeal no warrant for violence today | 6-13 | numbers/25.json `hard`; BSB | BSB text; a caution of these notes |
+| Care line for anyone being hurt | 6-13 | exodus/plain/21.json 18-21 `hard`; leviticus/plain/20.json 9-21 `hard` | Reused whole, word for word |
+| 24,000 and Paul's 23,000 | 6-13 | 1-corinthians/plain/10.json 6-13 `ot`; numbers/25.json `hard` | Repository |
+| The names held back; Zimri a leader, Cozbi a chief's daughter; 31:16; who the Midianites were; Jethro | 14-18 | numbers/25.json `cultural`, `literary`; numbers/31.json `historical` | Repository |
+| Revelation 2:14; Exodus 18:11 | 14-18 | numbers/25.json `christ`; BSB | BSB text |
