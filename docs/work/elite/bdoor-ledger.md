@@ -14232,3 +14232,19 @@ Cut: a reason why Eleazar and not Aaron handled the censers, which no note in th
 | Micah 6:5; Psalm 121:4 | 36-41 | BSB | BSB text |
 
 Cut for want of a source in the repository: a meaning for the name Bamoth-baal; that a curse was thought to work better in sight of its target.
+
+## The plain notes on Numbers 23 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Seven altars as a costly rite; omens and offered animals; mashal; paired lines; Jacob and Israel | 1-12 | numbers/23.json `cultural`, `literary`, `words` (H4912) | Repository |
+| The dust of Jacob and Genesis 13:16; Aram as the land of Abraham's family; Balaam's death (31:8) | 1-12 | numbers/23.json `historical`, `christ`; BSB | Repository; BSB text |
+| Romans 8:31, 33 | 1-12 | BSB | BSB text |
+| Balak's search for a better view; verse 19 against a god who can be pressed or paid; the shout of the King; the wild ox and the lion; Balak's growing desperation | 13-26 | numbers/23.json `historical`, `cultural`, `literary`, `words` (H8643) | Repository |
+| Verse 21 does not say Israel had not sinned | 13-26 | BSB (chapters 11 to 21) | Stated as a reading of the verse in its setting |
+| 1 Samuel 15:29; 2 Corinthians 1:20; Hebrews 6:18 | 13-26 | numbers/23.json `christ`, `hard`; BSB | BSB text |
+| Nacham used both ways (Exodus 32:14; Jonah 3:10; 14:20); the classical view; conditional warnings (Jeremiah 18:8); the further view and its critics; the setting as the key | 13-26 | numbers/23.json `hard`, `words` (H5162H) | Repository; no side |
+| The pattern a third time; forty-two animals; the three heights on the plateau's edge; Pisgah (Deuteronomy 34:1); Peor and chapter 25 | 27-30 | numbers/23.json `literary`, `historical`; BSB | Repository; BSB text |
+| Hosea 9:10 | 27-30 | numbers/25.json `historical`; BSB | BSB text |
