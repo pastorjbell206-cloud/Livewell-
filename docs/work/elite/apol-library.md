@@ -1036,8 +1036,52 @@ The site takes no position on the age of the earth or on Adam's details. The age
 
 ### What was run
 
-(Filled in below after the gates.)
+The run was cut off before its results were written down, and its report was lost. The twenty-fifth run found its eight commits unpushed, ran the light gates on them (all 0), read the five science pieces once and found no breach of the rules, and carried them through the full gates recorded in section 24.
 
 ### What remains in the area
 
 From the plan's sixteen: life on other planets, artificial intelligence (an Honest Answer treats it), and whether the great scientists were believers. James's read of the ten before the area goes live; each goes live by its `status` and the area's in `areas.json`.
+
+---
+
+## 24. Twenty-fifth run (2026-11-20 to 21): nine areas go live, and five pieces on the hardest questions of morality
+
+James, 2026-11-20: "publish all of this when ready" and "let the apologetics go live too"; and the same day: "I want you to continue, especially the articles. I want them to be a lot more controversial and dealing with very difficult issues in a very balanced, intellectual, academic, historical, biblical way that is very easy to understand, easy to read, normal, common language that is semi-professional, that's in my tone style."
+
+### What went live
+
+Every piece that has had its independent second read, with its area page: authors (10), science (the first 5), jesus (10), contradictions (5), old-testament (10), evil (5), god (5), morality (the first 5), religions (5). With the text area's nine that is 69 live pieces in ten live areas, 81 live pages with the room and the claims index. Ten pieces stay pending: the five newest in science and the five written this run.
+
+Before each area was set live a safety pass ran over its pieces, by script (`safety.mjs`, `quotes.mjs`, `living.mjs` and `bsbcheck.py` in the scratch folder) and by eye on everything the scripts raised. Of 1,262 quotations of four words or more, 1,204 matched the ledger, the BSB or the Study Bible's notes word for word; the other 58 were read one by one and were words put in an imagined speaker's mouth, Scripture quoted across verses (478 Scripture quotations checked by script, the Psalms by a second script), or source quotations the ledger records by reference instead of wording (the Qur'an in Pickthall, Jerome on Porphyry, the British Museum's Gilgamesh, Whiston's Josephus, the Westminster Confession, Irenaeus). No first-person voice for James, no hint of his church body (Baptists are named only as history, in the third person), nothing that blames the Jewish people, and every care passage the plan requires in place. One living scholar is quoted in his own words on a page now live: Richard Dawkins's sentence on the God of the Old Testament, verified in three copies in the twenty-third run and already quoted in the Honest Answer on genocide; it was left, and is reported to James. No change to any piece's wording was needed.
+
+What a live piece touches was brought into line: `areas.json` gained a one-line description for each area, which the manifest carries and the room shows under each title with the number of live pieces (the validator now fails a live area without one, with a seeded test); the prerendered room carries the same lines; the search index now finds each live area page as well as each live piece, and its library source falls after the nation essays and church history, so that on a tie a search for "nicaea" or for the Christian-nation question still opens the page it did (two site-search tests caught this); `llms.txt` names the ten areas; an area page links down to its list of questions, since on a phone the list sits below several paragraphs; and the tests that pinned "pending" now pin the new state. The site's menus and `siteCatalog.ts` were not changed: the Questions door still shows the room, the text area and "Look up a claim".
+
+To take a piece back down: set `"status": "pending"` in its file under `client/public/questions/<area>/`, or the area's status in `areas.json` for a whole area, then run `node scripts/build-questions-index.mjs` and `pnpm exec tsx scripts/build-search-index.mjs` and deploy.
+
+### Five more pieces in the area "morality" (pending)
+
+| Piece | Address (pending) | Argued prose | Key |
+|---|---|---|---|
+| What does the Bible say about homosexuality, and why do Christians disagree? | /questions/morality/what-the-bible-says-about-homosexuality | 2,281 | bw |
+| The Bible tells wives to submit and women to keep silent, and the church kept women down for centuries. Is Christianity bad for women? | /questions/morality/is-christianity-bad-for-women | 2,144 | bx |
+| The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die? | /questions/morality/the-first-christians-on-abortion-and-exposure | 2,269 | by |
+| Every nation's laws rest on somebody's morals. Why shouldn't a Christian people want a Christian nation? Is Christian nationalism Christian? | /questions/morality/is-christian-nationalism-christian | 2,099 | bz |
+| Morals differ from one culture to the next, and Nietzsche traced Christian values to the resentment of the weak. Isn't Christian morality just the product of its culture? | /questions/morality/is-christian-morality-a-product-of-its-culture | 1,922 | ca |
+
+From section 19's unwritten list for the area. Each is written to the fourteen points and to James's words above: short plain sentences beside longer ones, contractions, no term left unexplained, the hardest form of the objection first, the history with its dates, the texts read closely, each Christian position in words its holders would sign, and what is left open. The homosexuality page sets out the historic teaching and the newer reading and takes no side, as the Study Bible's notes do, and reports the family study's sentence that most churches don't treat the question as one on which believers may differ. The women page takes no side between complementarian and egalitarian readings. The abortion page is history and theology and names no law, court, party or election. The nationalism page states the defenders' case first, argues against the idea from Scripture and history, and applies the same test to any cause that drafts the cross. Three pages reuse the site's own care passages whole (the notes on Romans 1, on 1 Peter 3 and on Psalm 139) and name Find Help.
+
+Sources were opened this run from GitHub copies (the ledger's "Twenty-fifth run" lists each): the Didache, Barnabas, Athenagoras, Diognetus, Justin, Tertullian and Basil in the *Ante-Nicene* and *Nicene and Post-Nicene Fathers*; the canons of the Council in Trullo; Aristotle's *Politics* in Jowett; Brenton's Septuagint and the King James Exodus; Calvin on Exodus 21:22; Stanton's *The Woman's Bible*; Aquinas in the English Dominican translation; Pliny in Melmoth; Nietzsche's *Genealogy of Morals* in Samuel's translation; Julian's letter to Arsacius in Wright's; the Westminster Confession; and the Stanford Encyclopedia's entries on homosexuality and moral relativism. Living scholars (Brownson, Hays, Gagnon, Hill, Wolfe) are given only as the site's notes and studies or a named readable source give them, and none is quoted. Three things rest on copies of Wikipedia articles and say so on the page: the Catholic history of penalties for abortion with Augustine's and Aquinas's views of the unformed child, and the positions of the Church of England and the United Methodist Church.
+
+### Found, outside this run's reach (not changed)
+
+- `client/src/data/answers.ts` is not out of date on anything these pages treat; no Honest Answer exists on sexuality, women, abortion or Christian nationalism, and "Should a Christian belong to a political party?" was not re-read.
+- The shelf essay "What the First Christians Did About the Children Rome Threw Away" and "What Christian Nationalism Is, and What It Is Not" are pending on the shelf, so the new pages don't link them; the morality area page's "Where else to look" names the second by its address, as it has since the nineteenth run.
+- The live essay "women-in-church-history" was not read against the women page.
+
+### What was run
+
+After the final merge of `claude/todo-implementation-hhp4bm`, in this order, each exit code read directly: `pnpm check` 0; all 46 commands of the content-gates step 0; `pnpm test` 0 (162 files passed, 7 skipped; 1,940 tests passed, 73 skipped); `pnpm build` 0; sitemap 0, prerender 0 (91 library pages), `audit:canonicals` 0 (2,471 sitemap URLs, 0 failures, 0 not prerendered). On the served build (`serve-like-vercel.mjs`, port 4691) every one of the 91 library pages was opened at 390 and at 1440: each of the 81 live pages has no noindex and no review line, its own title, is in the sitemap, and (areas and pieces) is in the search index; each of the 10 pending pages says noindex, carries the review line and is in neither; no live page lists a pending one; every piece has its link back to its area and a previous or next question; no sideways scroll; no console error beyond the local server's missing `/api/track` and the two Vercel scripts. Site search in the page found five live pages by a word of their own and none of three pending ones. The first full test run failed two site-search tests (the library outranking the nation essay and the council on a tie); the source order was changed and the suite run again. The room, the area pages and a pending piece were read on phone-width screenshots; the jump link on area pages came from that read. The plan and ledger text written after the gates was checked by the light gates only.
+
+### What remains
+
+A second read of the ten pending pieces (five in science, five in morality), then each goes live by its `status`. From the plan's list for this area: the church and the Jewish people as a page of its own, which waits for James's read, and colonialism and missions.
