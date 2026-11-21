@@ -13944,3 +13944,23 @@ The sentence that the passage ‘is no reason for anyone to be afraid to pray’
 | Care lines for anyone in an abusive marriage | 11-31 | 1-corinthians/plain/7.json 10-16 `hard`; hebrews/plain/13.json 1-6 `hard` | Reused whole, word for word |
 
 Cut: a sentence saying the words for thigh and belly ‘have often been understood’ as barrenness, which no note in the repository states.
+
+## The plain notes on Numbers 6 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| An ordinary Israelite drawing nearer for a time; the vow already known; open to women; nezer | 1-8 | numbers/6.json `story`, `historical`, `words` (H5145G) | Repository |
+| The three rules as marks of the priests (Leviticus 10:9; 21:11; Exodus 29:6); visible and costly | 1-8 | numbers/6.json `cultural` | Repository |
+| Samson (Judges 13:5); Samuel (1 Samuel 1:11); Amos 2:12; John (Luke 1:15); Paul (Acts 18:18; 21:23-24); Jesus a Nazarene, not a Nazirite (Luke 7:34) | 1-8 | numbers/6.json `historical`, `christ`; BSB | Repository; BSB text |
+| Starting over; the peace offering as a shared meal; the hair burned; the return to wine | 9-21 | numbers/6.json `cultural`, `hard` | Repository |
+| Ecclesiastes 5:5; Acts 21:24 | 9-21 | BSB | BSB text |
+| The sin offering of verse 11: Milgrom's purification offering; the traditional name; no blame for a death witnessed | 9-21 | numbers/6.json `hard` | Repository; no side; the last sentence is a caution of these notes |
+| The blessing as a poem of three, five and seven words; the name three times; two verbs in each line | 22-27 | numbers/6.json `literary` | Repository |
+| Barakh; the shining and lifted face, the king and the petitioner; the hidden face; shalom | 22-27 | numbers/6.json `words` (H1288, H6440H, H7965G) | Repository |
+| Verse 27: the priests speak, God blesses | 22-27 | numbers/6.json `literary`, `story` | Repository |
+| Ketef Hinnom (1979, about 600 BC), probably amulets | 22-27 | numbers/6.json `historical`; numbers/intro.json `date` | Repository |
+| Psalm 67:1; 2 Corinthians 4:6; Paul's grace and peace; Luke 24:50 | 22-27 | numbers/6.json `christ`, `words`; the plain notes on Paul's greetings | Repository; BSB text |
+
+Cut for want of a source in the repository: that the ‘you’ of the blessing is singular; a comparison of God's name on the people to an owner's mark; a shepherd simile for ‘keep’.
