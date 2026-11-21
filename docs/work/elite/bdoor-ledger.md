@@ -14963,3 +14963,21 @@ Cut in chapter 25: the reason for thirty-nine lashes (‘a miscount’); that th
 | Only curses recorded: the two explanations; Joshua 8; not words to speak over anyone today | 11-26 | deuteronomy/27.json `hard`; leviticus/plain/26.json `hard` | Repository |
 
 Cut in chapter 27: two new sentences addressed to anyone harmed in secret (not an existing care line; the existing line is used alone); the Samaritan reading of verse 4 and the structure Adam Zertal excavated on Mount Ebal are left to the deep note.
+
+## The plain notes on Deuteronomy 28 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The treaty ending; the blessings as the whole of life; rain; head and tail; blessing as God's active favor; addressed to the nation; verse 10 and chapter 4; the three ‘if’s | 1-14 | deuteronomy/28.json `historical`, `cultural`, `literary`, `words` (H1293) | Repository |
+| Genesis 12:3; Matthew 5:3-4; Ephesians 1:3 | 1-14 | deuteronomy/28.json `christ`; BSB | Repository; BSB text |
+| Health and wealth: Job 42:7, Psalm 73, Ecclesiastes; the two Christian readings; the prosperity gospel refused; John 16:33 | 1-14 | deuteronomy/28.json `hard` | Repository |
+| Fifty-four verses and fourteen (counted); the curse as blessing reversed; bronze sky and iron earth, Esarhaddon 672 BC; Israel's story undone; 722 BC and 587 or 586 BC as Israel's own prophets and historians read them | 15-46 | deuteronomy/28.json `historical`, `cultural`, `literary`, `words` (H7045); BSB (verse count; 31:27-29) | Repository; BSB text |
+| 2 Kings 17:23; 25:21; Daniel 9:11; Leviticus 26:44; Galatians 3:13 | 15-46 | deuteronomy/28.json `christ`; BSB | Repository; BSB text |
+| The two misuses named and refused: never God's verdict on a person's illness, poverty or loss (Job 1:8; John 9:3; the Leviticus 26 sentences); never a prediction or explanation of the Jewish people's later sufferings, that reading false and rejected; 30:1-10; Romans 11:1; the pointer to the Acts 2:22-28 note | 15-46 | leviticus/plain/26.json 14-39 `hard` (the same sentences); acts/plain/2.json 22-28 `hard`; deuteronomy/28.json `hard` | Repository; word for word where reused |
+| The grief line reused whole | 15-46 | leviticus/plain/26.json 14-39 `hard` (‘Grief is not a lack of faith...’) | Repository; word for word |
+| Verse 47; siege (matsor); the eagle as Assyria and Babylon in the prophets; the story run backward; chapter 30 follows | 47-68 | deuteronomy/28.json `cultural`, `literary`, `words` (H4692) | Repository; the siege verses not dwelt on |
+| Lamentations 3:22-23; Deuteronomy 30:3; Luke 19:41 | 47-68 | deuteronomy/28.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 28: the Roman destruction of Jerusalem in AD 70 and Josephus's report of captives sent to Egypt, as fulfillments of this chapter (left out, as in Leviticus 26, so that the chapter is not read as a prediction of later Jewish suffering); a sentence that the false reading was used to excuse expulsion and violence (the Acts 2 note says this of another charge; the pointer is given in its place); the details of verses 53-57.
