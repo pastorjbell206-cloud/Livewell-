@@ -250,7 +250,7 @@ export default function TheologyDoctrine() {
       </section>
 
       {slug && <MoreOnThis href={`/theology/doctrine/${slug}`} />}
-      <PageEndNav back={{ href: "/study", label: "Study" }} />
+      <PageEndNav back={{ href: "/theology/compare" }} />
     </Layout>
   );
 }

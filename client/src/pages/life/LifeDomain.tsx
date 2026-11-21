@@ -68,7 +68,7 @@ export default function LifeDomain() {
           {missing && (
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
               It may have moved. Start from the{" "}
-              <Link href="/life" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Integrated Life index</Link>.
+              <Link href="/life" style={{ color: "var(--mustard)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Everyday life</Link> page.
             </p>
           )}
           {data?.subtitle && <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "62ch" }}>{data.subtitle}</p>}
@@ -152,7 +152,7 @@ export default function LifeDomain() {
       {data && (
         <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)" }}>
           <div style={{ ...wrap, display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
-            <Link href="/life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← All of Integrated Life</Link>
+            <Link href="/life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>← All of Everyday life</Link>
             <Link href="/life/assessment" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Take the Whole-Life Assessment</Link>
           </div>
         </section>
@@ -160,7 +160,7 @@ export default function LifeDomain() {
 
       {slug && SENSITIVE_LIFE.has(slug) && <CrisisBlock variant="compact" topics={["suicide", ...(LIFE_TOPICS[slug] ?? [])]} />}
       {slug && <MoreOnThis href={`/life/${slug}`} />}
-      <PageEndNav back={{ href: "/life", label: "The Integrated Life" }} />
+      <PageEndNav back={{ href: "/life" }} />
     </Layout>
   );
 }

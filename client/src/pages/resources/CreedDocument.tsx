@@ -89,7 +89,7 @@ export default function CreedDocument() {
             </div>
           </section>
 
-          <PageEndNav back={{ href: "/resources/creeds", label: "Creeds & Confessions" }} />
+          <PageEndNav back={{ href: "/resources/creeds" }} />
         </>
       )}
     </Layout>

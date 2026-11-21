@@ -154,7 +154,7 @@ export default function ContextGuide() {
       </section>
 
       {data && slug && <MoreOnThis href={`/resources/context/${slug}`} />}
-      {data && <PageEndNav back={{ href: "/resources/context", label: "Reading Scripture in Context" }} />}
+      {data && <PageEndNav back={{ href: "/resources/context" }} />}
     </Layout>
   );
 }
