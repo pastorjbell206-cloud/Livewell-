@@ -150,14 +150,16 @@ function answers() {
 
 /** The questions library's live pieces (scripts/lib/questions.mjs); a pending piece is never searched. */
 function questions() {
-  return loadQuestions(ROOT).areas.flatMap((a) =>
-    a.pieces.filter((p) => p.live).map((p) => ({
+  return loadQuestions(ROOT).areas.flatMap((a) => [
+    // A live area's own page, by its title and the line the room shows.
+    ...(a.live && a.page ? [{ title: str(a.title), blurb: str(a.line || ""), keywords: "case for the faith apologetics", href: `/questions/${a.slug}` }] : []),
+    ...a.pieces.filter((p) => p.live).map((p) => ({
       title: str(p.question),
       blurb: clip(p.shortAnswer),
       keywords: `${str(a.title)} ${(p.claims || []).map((c) => str(c.claim)).join(" ")}`.trim(),
       href: `/questions/${a.slug}/${p.slug}`,
-    }))
-  );
+    })),
+  ]);
 }
 
 /**
@@ -274,10 +276,37 @@ export function catalogNames() {
   return names;
 }
 
+/**
+ * Every door's, room's and page's own entry in the catalogue (name, line,
+ * address), in the file's order: a page on this site, not a tab of one
+ * (/tools#study) and not another site.
+ */
+export function catalogEntries() {
+  const src = fs.readFileSync(path.join(ROOT, "client/src/lib/siteCatalog.ts"), "utf8");
+  const seen = new Set();
+  const out = [];
+  for (const m of src.matchAll(/\{\s*id: "[^"]+", name: "([^"]+)", line: "([^"]*)", href: "(\/[^"#]*)"/g)) {
+    if (seen.has(m[3])) continue;
+    seen.add(m[3]);
+    out.push({ title: m[1], blurb: m[2], href: m[3] });
+  }
+  return out;
+}
+
+/**
+ * The hubs: MAIN_PAGES, each under its catalogue or tool name, and then every
+ * page the catalogue lists that MAIN_PAGES and the tools list do not (the
+ * tools are searched from their own registry), under its catalogue name and
+ * line. So a door, a room or a page inside one is found by its name the day
+ * it joins the menus, with no second list to keep.
+ */
 function mainPages() {
   const catalog = catalogNames();
   const tools = toolNames();
-  return MAIN_PAGES.map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
+  const typed = MAIN_PAGES.map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
+  const have = new Set(typed.map((p) => p.href.split("#")[0]));
+  const rest = catalogEntries().filter((e) => !have.has(e.href) && !tools.has(e.href));
+  return [...typed, ...rest];
 }
 
 /** The Study Bible beyond its chapters: each book's introduction, the reading guides, the acts of the story. */
@@ -439,13 +468,15 @@ export function buildSearchIndex() {
     sources: [
       source("Main Pages", "/", [...mainPages(), ...worlds()]),
       source("Honest Answers", "/answers", answers()),
-      // Only once a piece is live, so a pending library leaves the index as it was.
-      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),
       source("Doctrine", "/study/bible/doctrines", doctrines()),
       source("Compare the Views", "/theology/compare", debatedDoctrines()),
       source("Church History", "/theology/history", history()),
+      // The library's live areas and pieces (a pending one is never indexed). After
+      // the nation essays and church history, so that on a tie a search for a
+      // council or for the Christian-nation question still opens the page it did.
+      ...(questions().length ? [source("The case for the faith", "/questions", questions())] : []),
       source("Family Devotions", "/family/devotions", [...devotions(), ...seasonal()]),
       source("Family Catechism", "/family/catechism", catechism()),
       source("What the Bible Says", "/wisdom", [...wisdom(), ...wisdomDeep()]),

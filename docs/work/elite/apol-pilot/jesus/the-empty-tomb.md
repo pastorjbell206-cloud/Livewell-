@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: the-empty-tomb
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Was Jesus really buried in a known tomb, and was it found empty, or is that a later legend?"
 ledger: docs/work/elite/apol-ledger.md, "Fourteenth run", key "u"
 ---

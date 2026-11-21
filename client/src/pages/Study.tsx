@@ -18,10 +18,11 @@
  */
 import { lazy, Suspense } from "react";
 import { Link } from "wouter";
-import { BookMarked, BookOpenText, Compass, Landmark, Library, Map as MapIcon, ScrollText, Sprout, Users, Wrench } from "lucide-react";
+import { BookMarked, BookOpenText, Compass, Landmark, Library, ScrollText, Sprout, Users, Wrench } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import DoorInside, { doorRooms } from "@/components/art/DoorInside";
 import PageHead from "@/components/art/PageHead";
 import SectionHead from "@/components/art/SectionHead";
 import DoorCard from "@/components/art/DoorCard";
@@ -46,15 +47,23 @@ function Shelf() {
   );
 }
 
-/** The six rooms of the Bible door, in the map's order. */
-const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] = [
-  { title: "Read the Study Bible", note: "Notes on every chapter", href: "/study/bible", plate: "book" },
-  { title: "Search the Bible", note: "Any word or phrase", href: "/study/bible/search", plate: "lens" },
-  { title: "Guides to reading the Bible", note: "How to read each kind of book", href: "/study/bible/guides", plate: "compass" },
-  { title: "The Bible's story", note: "One story in eleven parts", href: "/study/bible/story", plate: "tree" },
-  { title: "Bible background", note: "The world it was written in", href: "/resources/context", plate: "jar" },
-  { title: "Reading plans", note: "Every plan, by length", href: "/study/plans", plate: "sundial" },
-];
+/** Each room's picture and the short note on its card, by its id in the site catalogue. */
+const ROOM_ART: Record<string, { note: string; plate: PlateName }> = {
+  "bible.read": { note: "Notes on every chapter", plate: "book" },
+  "bible.search": { note: "Any word or phrase", plate: "lens" },
+  "bible.how-to-study": { note: "Seven steps, in order", plate: "compass" },
+  "bible.story": { note: "One story in eleven parts", plate: "tree" },
+  "bible.background": { note: "The world it was written in", plate: "jar" },
+  "bible.plans": { note: "Every plan, by length", plate: "sundial" },
+};
+
+/** The rooms of the Bible door, read from the site catalogue so the page, the header and the footer agree. */
+const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] = doorRooms("bible").map((r) => ({
+  title: r.name,
+  note: ROOM_ART[r.id]?.note ?? r.line,
+  href: r.href,
+  plate: ROOM_ART[r.id]?.plate ?? "book",
+}));
 
 /** One step further in. */
 const FURTHER = [
@@ -110,8 +119,11 @@ export default function Study() {
         </div>
       </section>
 
+      {/* EVERYTHING ELSE IN THE DOOR, from the catalogue. */}
+      <DoorInside door="bible" warm />
+
       {/* FURTHER IN, and a line for someone new. */}
-      <section className="home-sec home-sec--warm" aria-labelledby="study-further-title">
+      <section className="home-sec" aria-labelledby="study-further-title">
         <div className="home-wrap">
           <SectionHead label="Further in" title="Go deeper." id="study-further-title" />
           <ul className="lw-tiles">
@@ -126,12 +138,6 @@ export default function Study() {
             <span>
               New to the Bible? Begin with <Link href="/study/bible/john">the Gospel of John</Link>, or{" "}
               <Link href="/start">start here</Link>.
-            </span>
-          </p>
-          <p className="lw-newline">
-            <MapIcon aria-hidden="true" size={22} strokeWidth={1.75} />
-            <span>
-              For ages 7 to 16: <Link href="/study/explorer">Bible Explorer</Link>, the Bible's story on one illustrated map.
             </span>
           </p>
         </div>

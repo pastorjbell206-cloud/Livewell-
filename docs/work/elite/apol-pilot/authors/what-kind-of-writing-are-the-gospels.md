@@ -1,7 +1,7 @@
 ---
 area: authors
 slug: what-kind-of-writing-are-the-gospels
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "The Gospels were written by believers to make believers. What kind of writing are they, and does their kind make them history, legend or something in between?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-second run", key "bh"
 ---

@@ -1,7 +1,7 @@
 {
   "area": "authors",
   "slug": "forgeries-in-the-new-testament",
-  "status": "pending",
+  "status": "live",
   "question": "Weren't some New Testament letters forged in the names of Paul and Peter?",
   "ledger": {
     "file": "docs/work/elite/apol-ledger.md",

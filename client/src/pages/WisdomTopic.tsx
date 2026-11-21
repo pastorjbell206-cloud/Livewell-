@@ -28,6 +28,7 @@ import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { useFavorites } from "@/hooks/useFavorites";
 import { followHash } from "@/lib/followHash";
 import { fetchEntry, readSavedTopics, toggleSavedTopic, verseFavoriteId, SAVED_VERSES_KEY, chapterName, AREA_NAMES, type Entry, type EntryVerse } from "@/lib/wisdom";
+import TurnNav from "@/components/TurnNav";
 import VerseCard from "./wisdom/VerseCard";
 import "./wisdom/wisdom.css";
 
@@ -196,7 +197,7 @@ export default function WisdomTopic() {
       <SEOMeta title={title} description={description} keywords={entry.keywords.join(", ")} url={canonical} structuredData={[articleSchema, breadcrumbSchema]} />
 
       <div className="wz-page">
-        <InnerHead path="/wisdom" title={entry.label} line={entry.framing} plate="book">
+        <InnerHead path={`/wisdom/${entry.id}`} title={entry.label} line={entry.framing} plate="book">
           <p className="wz-meta">
             {area && (
               <>
@@ -402,6 +403,11 @@ export default function WisdomTopic() {
                 </ul>
               </section>
             )}
+            <TurnNav
+              label={area ? `Previous and next subject in ${area}` : "Previous and next subject"}
+              prev={entry.turn?.prev ? { href: `/wisdom/${entry.turn.prev.id}`, title: entry.turn.prev.label } : null}
+              next={entry.turn?.next ? { href: `/wisdom/${entry.turn.next.id}`, title: entry.turn.next.label } : null}
+            />
             <ResultActions title={title} kind="Wisdom" summary={entry.framing} save={false} />
           </div>
         </div>

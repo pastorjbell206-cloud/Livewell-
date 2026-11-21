@@ -2235,7 +2235,7 @@ function prerenderQuestions(template) {
       review(roomPending),
       sec("Ten areas", `<ol>\n${q.areas.map((a) => {
         const k = shown(a, roomPending).length;
-        return k && a.page ? `<li><a href="/questions/${escapeHtml(a.slug)}">${escapeHtml(a.title)}</a> (${k} ${k === 1 ? "piece" : "pieces"})</li>` : `<li>${escapeHtml(a.title)} (being written)</li>`;
+        return k && a.page ? `<li><a href="/questions/${escapeHtml(a.slug)}">${escapeHtml(a.title)}</a> (${k} ${k === 1 ? "piece" : "pieces"})${a.line ? `. ${escapeHtml(a.line)}` : ""}</li>` : `<li>${escapeHtml(a.title)} (being written)</li>`;
       }).join("\n")}\n</ol>`),
     ]),
   });

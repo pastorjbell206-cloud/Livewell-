@@ -25,6 +25,8 @@ export interface QIndexArea {
   slug: string;
   n: number;
   title: string;
+  /** One line saying what the area holds, shown in the room. */
+  line?: string;
   planned: number;
   status: QStatus;
   live: boolean;

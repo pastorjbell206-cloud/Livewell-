@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: when-was-daniel-written
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Daniel's visions trace the Greek kings in detail down to Antiochus IV and then seem to go wrong about how he died. Wasn't the book written in the 160s BC, after the events it appears to predict?"
 ledger: docs/work/elite/apol-ledger.md, "Sixteenth run", key "ag"
 ---

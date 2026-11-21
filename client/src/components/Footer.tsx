@@ -18,7 +18,8 @@ const footerLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", fo
 // heading element to Cormorant 400 !important.
 const colTitle = { marginBottom: "16px" } as const;
 const colTitleText = { fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, color: "var(--charcoal-fg)", textTransform: "uppercase", letterSpacing: "0.18em" } as const;
-const legalLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", display: "inline-flex", alignItems: "center", minHeight: "44px" } as const;
+// minWidth: a short word ("Terms") still gets a full 44px target.
+const legalLink = { color: "rgba(255,255,255,0.75)", textDecoration: "none", display: "inline-flex", alignItems: "center", minHeight: "44px", minWidth: "44px" } as const;
 const col = { display: "flex", flexDirection: "column", gap: "0" } as const;
 
 /** True on a phone-width screen (and false where the browser cannot say). */

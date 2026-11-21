@@ -114,8 +114,19 @@ const matching = readJson(path.join(W, "matching.json"));
 const sensitive = readJson(SENSITIVE).wisdom;
 const careFor = (id) => sensitive.lead[id] ?? sensitive.end[id] ?? null;
 const careLead = (id) => Boolean(sensitive.lead[id]);
+/**
+ * A topic whose own page puts the path to help first: a heavy subject
+ * (sensitive-pages.json), or a topic written in full whose whole-Bible section
+ * names Find Help in its opening three sentences. The finder shows the Find
+ * Help line under such a topic when it comes first.
+ */
+const opensWithHelp = (d) => Boolean(d?.whole?.[0]?.split(/(?<=[.?])\s+/).slice(0, 3).some((s) => s.includes("Find Help")));
+const helpFirst = (id) => Boolean(careFor(id)) || opensWithHelp(deep.get(id));
 const areaOf = new Map();
 for (const a of matching.areas) for (const id of a.topics) areaOf.set(id, a.id);
+/** The topic before and the topic after, in its own area's order (matching.json "areas"): the page's "what's next". */
+const turnOf = new Map();
+for (const a of matching.areas) a.topics.forEach((id, i) => turnOf.set(id, { prev: a.topics[i - 1] ?? null, next: a.topics[i + 1] ?? null }));
 
 /** Where a reference sits: book slug, chapter, first and last verse in that chapter. */
 function place(ref) {
@@ -183,6 +194,7 @@ for (const t of topics) {
       framing: t.framing,
       ...(d ? { deep: true } : {}),
       ...(careFor(t.id) ? { care: true } : {}),
+      ...(helpFirst(t.id) ? { help: true } : {}),
     });
 
     const source = d ? d.passages : t.verses;
@@ -211,6 +223,10 @@ for (const t of topics) {
       related: (m.related ?? []).filter((id) => byId.has(id)).map((id) => ({ id, label: byId.get(id).label })),
       links: [...(t.related ?? []), ...(t.articles ?? [])],
       care: careFor(t.id) ? { topics: careFor(t.id), lead: careLead(t.id) } : null,
+      turn: {
+        prev: byId.has(turnOf.get(t.id)?.prev) ? { id: turnOf.get(t.id).prev, label: byId.get(turnOf.get(t.id).prev).label } : null,
+        next: byId.has(turnOf.get(t.id)?.next) ? { id: turnOf.get(t.id).next, label: byId.get(turnOf.get(t.id).next).label } : null,
+      },
     };
     if (d) {
       entry.deep = {

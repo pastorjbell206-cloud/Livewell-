@@ -1,7 +1,7 @@
 ---
 area: old-testament
 slug: the-flood-and-babylon
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Babylon told of a great flood, a boat, the birds and a sacrifice long before Genesis was written. Didn't Genesis simply borrow a Babylonian myth?"
 ledger: docs/work/elite/apol-ledger.md, "Sixteenth run", key "ah"
 ---

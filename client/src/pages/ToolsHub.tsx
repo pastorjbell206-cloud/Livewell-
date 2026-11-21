@@ -19,6 +19,7 @@
 import { lazy, Suspense } from "react";
 
 import Layout from "@/components/Layout";
+import DoorInside from "@/components/art/DoorInside";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import "./home/home.css";
@@ -59,6 +60,9 @@ export default function ToolsHub() {
       <Suspense fallback={<div className="home-sec home-sec--dark tl-find-band tl-hold" aria-hidden="true" />}>
         <ToolsBody />
       </Suspense>
+
+      {/* What sits inside the rooms the list above does not name, from the catalogue. */}
+      <DoorInside door="tools" title="Inside the rooms." />
     </Layout>
   );
 }

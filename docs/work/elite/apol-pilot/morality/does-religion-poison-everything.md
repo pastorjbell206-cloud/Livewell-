@@ -1,7 +1,7 @@
 ---
 area: morality
 slug: does-religion-poison-everything
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Christopher Hitchens said that religion poisons everything. Hasn't religion caused more wars and cruelty than anything else in history?"
 ledger: docs/work/elite/apol-ledger.md, "Nineteenth run", key "aw"
 ---

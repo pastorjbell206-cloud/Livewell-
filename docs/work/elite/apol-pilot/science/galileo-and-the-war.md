@@ -1,7 +1,7 @@
 ---
 area: science
 slug: galileo-and-the-war
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "The church condemned Galileo. Hasn't religion always been at war with science?"
 ledger: docs/work/elite/apol-ledger.md, "Thirteenth run", key "p"
 ---

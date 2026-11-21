@@ -12587,3 +12587,1239 @@ Cut before publishing: a guess about who the ‘priests’ of verses 22 and 24 w
 | Joshua 8:31; John 4:23 | 22-26 | BSB | BSB text |
 
 Cut before publishing: the Genesis 19 care line (its wording speaks of ‘this story’ and could not be used whole); Kuntillet Ajrud; the Nash Papyrus (on the book page's timeline); Dawkins and Marcion by name; Maimonides on the first commandment.
+
+## The plain notes on Exodus 21 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Book of the Covenant named from 24:7; principles of chapter 20 applied to village life | 1-6 | exodus/21.json `story`; guides/reading-law.json (table) | Repository |
+| Case law with ‘if’; typical cases for judges to reason from; mishpatim as rulings | 1-6 | guides/reading-law.json (‘Two ways of giving law’); exodus/21.json `literary`, `words` (H4941G) | Repository |
+| Hammurabi's stela, about 1750 BC, found at Susa in 1901; shared cases; penalties by rank; law as God's word, not a king's decree | 1-6, 22-27 | exodus/21.json `historical`; context/guides/torah-and-the-law-codes.json | Repository |
+| Christian readings of the law: Aquinas, Calvin and Westminster (moral, ceremonial, civil); Lutheran law and gospel; dispensational and New Covenant readings | 1-6 | guides/reading-law.json (‘Christ and the Law’) | Repository; no side |
+| Debt as the road into servitude; the seventh-year release and the Sabbath; the pierced ear at the doorpost | 1-6 | exodus/21.json `cultural`, `story` | Repository |
+| Leviticus 25:44-46 lifelong holding of foreigners; regulate, not endorse (Christopher Wright; Matthew 19:8); critics' reply; both true to the text | 1-6 | guides/reading-law.json (‘Reading the laws that trouble’); exodus/21.json `hard` | Repository; no side |
+| Hammurabi put to death the one who sheltered a runaway; Deuteronomy 23:15-16 | 1-6 | context/guides/the-slavery-texts.json | Repository |
+| The Atlantic slave trade misuse paragraph | 1-6 | ephesians/plain/6.json and 1-timothy/plain/6.json (5-9 and 1-2 `hard`), reused; intro `teaching` (‘Rescue first’) | Repository |
+| Deuteronomy 15:12-15; Leviticus 25:40, 43; Jeremiah 34:14, 16; 1 Timothy 1:10 | 1-6, 7-11 | BSB | BSB text |
+| The daughter sold usually meant as a wife for the master or his son; her protections | 7-11 | exodus/21.json `cultural` | Repository |
+| The care line ‘A word for anyone who is being held, owned or forced to work today ...’ | 7-11 | 1-peter/plain/2.json (18-25 `hard`), word for word | Repository |
+| No police; the avenger of blood; refuge, later the cities of refuge; no shelter at the altar for murder; cursing a parent as repudiation | 12-17 | exodus/21.json `cultural` | Repository |
+| Joab at the altar and Exodus 21:14 | 12-17 | 1-kings/2.json | Repository |
+| Numbers 35:11, 31; Matthew 15:4 | 12-17 | BSB | BSB text |
+| A slave's killing a crime to be avenged; verse 21 ‘his silver’; the difficulty of proving intent; the loss of work as penalty; later misuse in the American South | 18-21 | exodus/21.json `hard` | Repository |
+| The care sentences ‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page ...’ | 18-21 | 1-peter/plain/2.json (18-25 `hard`), word for word | Repository |
+| Job 31:13-15; Ephesians 6:9 | 18-21 | BSB | BSB text |
+| Eye for eye as a limit for judges; the same law for all (Leviticus 24:22); Hammurabi's silver for commoners and slaves | 22-27 | exodus/21.json `historical`, `literary`; leviticus/24.json `historical`; matthew/plain/5.json (38-42) | Repository |
+| The Mishnah and Talmud on payment, not maiming | 22-27 | guides/reading-law.json; leviticus/24.json `historical` | Repository |
+| The master who maims a slave loses him | 22-27 | exodus/21.json `literary` | Repository |
+| 21:22: ‘children come out’; premature live birth or miscarriage, each with its reading of verse 23; both readings defended; cited in abortion debates | 22-27 | exodus/21.json `literary` | Repository; no side |
+| The rare word for ‘serious injury’, elsewhere only in Genesis 42:4, 38 and 44:29 | 22-27 | genesis/verses/42.json | Repository |
+| ‘These notes take no political position and speak for no party or law’; the care line ‘If you carry grief or guilt about a pregnancy ...’ | 22-27 | psalms/plain/139.json (13-18 `hard`), word for word | Repository |
+| Leviticus 24:20, 22; Deuteronomy 19:18, 21; Matthew 5:38-39 | 22-27 | BSB | BSB text |
+| The goring ox in Eshnunna and Hammurabi; accident and negligence; verse 35 nearly Eshnunna's law | 28-36 | exodus/21.json `historical`; guides/reading-law.json | Repository |
+| Kopher, ransom; no ransom for a murderer; the ox stoned as a life not property (Genesis 9:5) | 28-36 | exodus/21.json `words` (H3724A); guides/reading-law.json | Repository |
+| Zechariah 11:12-13 and Matthew 26:15 with Exodus 21:32 | 28-36 | zechariah/11.json; matthew/plain/26.json | Repository |
+| Mark 10:45 and the ransom | 28-36 | exodus/21.json `christ` | Repository |
+
+Cut before publishing: ‘in much of the ancient world a master who killed his slave answered to no one’ (no source in the repository); a guess that the pierced ear stopped later claims of forced service; ‘on every view these laws are not a code for any nation’ (theonomists hold otherwise).
+
+## The plain notes on Exodus 22 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A farming and herding economy; no banks, insurers or police | 1-4, 5-15 | exodus/22.json `historical` | Repository |
+| Restitution as the aim; Hammurabi up to thirtyfold and death for a thief who could not pay; Israel's thief sold, not executed | 1-4 | exodus/22.json `historical`, `doctrines` | Repository |
+| The burglar at night unseen and possibly armed; after sunrise bloodshed | 1-4 | exodus/22.json `cultural` | Repository |
+| Luke 19:8; Ephesians 4:28 | 1-4 | BSB | BSB text |
+| Degrees of responsibility; elohim taken by the BSB as the judges; the oath; the torn carcass as proof; Amos 3:12 | 5-15 | exodus/22.json `literary`, `cultural` | Repository |
+| The bride-price (mohar); the man must pay and marry if the father agrees | 16-17 | exodus/22.json `cultural` | Repository |
+| The care line ‘A word for anyone who has been sexually assaulted ...’ | 16-17 | 1-thessalonians/plain/4.json, word for word | Repository |
+| 1 Thessalonians 4:4, 6; 1 Corinthians 6:18 | 16-17 | BSB | BSB text |
+| The change of voice at verse 18; God speaking in the first person | 18-20, 21-27 | exodus/22.json `literary`, `story` | Repository |
+| Sorcery as treason against the covenant King, beside verse 20 | 18-20 | exodus/22.json `hard` | Repository |
+| Herem, devoted wholly to God, often for destruction | 18-20 | joshua and deuteronomy deep notes on the ban (herem), found by search of the repository | Repository |
+| Witch trials in early modern Europe and colonial America, Salem 1692, mostly women, many innocent; the law's own safeguards; civil penalties not carried over (moral, ceremonial, civil); repentance at Ephesus | 18-20 | exodus/22.json `hard` | Repository |
+| Deuteronomy 18:10; Galatians 5:20; Acts 19:19 | 18-20 | BSB | BSB text |
+| The ger; memory turned into duty; measure for measure in verse 24; God defends the weak even against his own people | 21-27 | exodus/22.json `words` (H1616), `literary`, `doctrines` | Repository |
+| Interest normal in the ancient world; neshek forbidden to the poor | 21-27 | exodus/22.json `historical`, `words` (H5392) | Repository |
+| The cloak as blanket; the Mesad Hashavyahu letter, late seventh century BC | 21-27 | exodus/22.json `historical`, `cultural` | Repository |
+| Channun and 34:6 | 21-27 | exodus/22.json `words` (H2587) | Repository |
+| Leviticus 19:34; Deuteronomy 10:18; Matthew 25:35; Luke 6:35; James 1:27 | 21-27 | BSB; exodus/22.json `christ` | BSB text |
+| Firstborn redeemed (13:13); holiness from altar to table | 28-31 | exodus/22.json `christ`, `doctrines` | Repository |
+| Acts 23:5; Luke 2:23; 1 Peter 2:9 | 28-31 | BSB | BSB text |
+
+Cut before publishing: that a seduced woman could find it hard to marry (no source); that torn meat was undrained of blood (no source); Deuteronomy 22:28-29 (a different case, better left to its own chapter).
+
+## The plain notes on Exodus 23 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The village court at the gate; false report, crowd, bribe and sympathy; no favor to the poor (Leviticus 19:15) | 1-9 | exodus/23.json `cultural` | Repository |
+| The enemy's ox and donkey: justice carried into daily life where a feud becomes neglect | 1-9 | exodus/23.json `cultural` | Repository |
+| Verse 9 repeats 22:21; Israel knows the soul (nephesh) of the stranger | 1-9 | exodus/23.json `literary` | Repository |
+| Leviticus 19:15; Amos 5:12; Proverbs 25:21; Romans 12:20; Matthew 5:44 | 1-9 | BSB | BSB text |
+| The Sabbath year and day justified by what they give others | 10-13 | exodus/23.json `literary` | Repository |
+| ‘Refreshed’: a verb meaning to take breath | 10-13 | lex/H (H5314, ‘to take breath, refresh oneself’) | Repository |
+| Christians differ on the Sabbath; pointer to the Exodus 16 note | 10-13 | exodus/plain/16.json | Repository; no side |
+| Leviticus 25:4; Deuteronomy 15:1; Mark 2:27 | 10-13 | BSB | BSB text |
+| The three feasts and the farming year; Abib March to April and barley; Weeks (34:22) and Pentecost; Ingathering, Booths or Tabernacles | 14-19 | exodus/23.json `historical` | Repository |
+| The Gezer Calendar, about the tenth century BC, beginning with two months of ingathering | 14-19 | exodus/23.json `historical` | Repository |
+| Chag, a pilgrimage festival; harvest tied to memory | 14-19 | exodus/23.json `words` (H2282) | Repository |
+| The goat in its mother's milk: reason never stated; the Ugarit theory widely doubted; mother and young; life and death; rabbinic meat and dairy | 14-19 | exodus/23.json `cultural` | Repository; no side |
+| Deuteronomy 16:16; 14:21; Acts 2:1; John 7:37; 1 Corinthians 15:20; the feasts as the Gospels' calendar | 14-19 | BSB; exodus/23.json `christ` | BSB text |
+| Malakh as messenger; ‘My Name is in him’; the name as presence and character | 20-26 | exodus/23.json `words` (H4397H), `hard` | Repository |
+| Three readings of the angel (the Son before the incarnation; a created angel as ambassador; God's own presence, with 33:2-3, 14-15) | 20-26 | exodus/23.json `hard` | Repository; no side |
+| Judges 2:2; Malachi 3:1 and John the Baptist; Philippians 2:9 | 20-26 | BSB; exodus/23.json `words`, `christ` | BSB text |
+| Verse 26 not a verdict on any woman; John 9:3 | 20-26 | BSB; the brief's care rule | BSB text |
+| The care line ‘If you carry grief or guilt about a pregnancy ...’ | 20-26 | psalms/plain/139.json (13-18 `hard`), word for word | Repository |
+| The nations as Israel remembered them; Hittites in Canaan; little by little; the hornet (three places; literal or panic); ideal borders reached under Solomon; the gods as the real danger | 27-33 | exodus/23.json `historical`, `words` (H6880), `doctrines` | Repository |
+| The conquest faced: Genesis 15:16; not because Israel was better; Rahab; no people today | 27-33 | genesis/plain/15.json (12-16 `hard`) | Repository |
+| Joshua 24:12; 1 Kings 4:21; Deuteronomy 9:5; Joshua 6:25 | 27-33 | BSB | BSB text |
+
+Cut before publishing: that ‘refreshed’ is built on the word for soul (the lexicon gives ‘to take breath’); the suggestion that the hornet stood for Egypt (the deep note calls it speculative).
+
+## The plain notes on Exodus 24 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 19 offers, 20 to 23 set out, 24 seals; the prophets' covenant | 1-2 | exodus/24.json `story` | Repository |
+| The graded approach, later built into court, holy place and inner room | 1-2 | exodus/24.json `literary` | Repository |
+| Nadab and Abihu: nearness no guarantee of faithfulness; Leviticus 10:1 | 1-2 | exodus/24.json `historical`; BSB | Repository |
+| Hebrews 12:24 | 1-2 | BSB | BSB text |
+| Ancient covenant ritual: written terms, reading, witnesses, oath, sacrifice, meal; twelve stones | 3-8 | exodus/24.json `historical` | Repository |
+| The second answer adds ‘we will be obedient’, literally we will hear | 3-8 | exodus/24.json `literary` | Repository |
+| Blood as life given up in death; altar and people bound; Genesis 15 compared; cleansing reading | 3-8 | exodus/24.json `cultural`, `words` (H1818) | Repository; no side |
+| The promise sincere and short-lived (chapter 32) | 3-8 | exodus/24.json `story` | Repository |
+| Mark 14:24; Luke 22:20; Jeremiah 31:31; Hebrews 9:18, 20; Leviticus 17:11 | 3-8 | BSB; exodus/24.json `christ` | BSB text |
+| Nothing of God's form; the pavement probably lapis lazuli; the meal from the peace offerings; Jacob and Laban | 9-11 | exodus/24.json `cultural` | Repository |
+| Seeing God: 33:20 and John 1:18; mediated vision; the Son; the Septuagint's ‘the place where’ | 9-11 | exodus/24.json `hard` | Repository; no side |
+| Genesis 31:54; Isaiah 25:6; Revelation 19:9 | 9-11 | BSB; exodus/24.json `christ` | BSB text |
+| Joshua as attendant; Hur and 17:12 | 12-18 | exodus/24.json `historical` | Repository |
+| Kavod; shakan, mishkan and Shekinah | 12-18 | exodus/24.json `words` (H3519, H7931) | Repository |
+| Six days and the seventh echo creation; the glory and 40:34 | 12-18 | exodus/24.json `literary` | Repository |
+| Deuteronomy 31:11, the law read every seventh year | 3-8 | BSB; exodus/24.json `historical` | BSB text |
+| Matthew 4:2 (a link of theme); Hebrews 12:29 | 12-18 | BSB; exodus/24.json `christ` | BSB text |
+
+Cut before publishing: a single-quoted ‘we will hear’ (not the BSB's wording; now said without quotation marks). Also cut: ‘the writer seems to look down, not up’ (no source).
+
+## The plain notes on Exodus 25 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A building plan first; 25 to 31, 32 to 34, 35 to 40; the goal of the exodus is God dwelling among them | 1-9 | exodus/25.json `story` | Repository |
+| Mishkan as dwelling place | 1-9 | exodus/25.json `words` (H4908) | Repository |
+| Murex dye from Phoenicia; scarlet from an insect; acacia; tachash uncertain | 1-9 | exodus/25.json `cultural` | Repository |
+| Tavnit; what Moses saw not said | 1-9 | exodus/25.json `words` (H8403) | Repository |
+| Center outward, the order of holiness | 1-9 | exodus/25.json `literary` | Repository |
+| No allegory of every board and peg | 1-9 | The brief's rule | Repository |
+| Why a tent: 1 Kings 8:27; Acts 7:48; no image; real presence and accommodation fit together | 1-9 | exodus/25.json `hard` | Repository |
+| Hebrews 8:5 (a shadow is real); John 1:14 and the tent verb; 2 Corinthians 9:7 | 1-9 | BSB; hebrews/plain/8.json (1-6); exodus/25.json `christ` | BSB text |
+| The cubit and the ark's size; the poles | 10-22 | exodus/25.json `cultural` | Repository |
+| Kapporet and kipper; hilasterion and Romans 3:25 | 10-22 | exodus/25.json `words` (H3727), `christ` | Repository |
+| Ahiram's throne with winged sphinxes; Tutankhamun's gilded shrines on poles; no figure on the throne; the footstool | 10-22 | exodus/25.json `historical` | Repository |
+| The ark lost most likely in 587 or 586 BC; Jeremiah 3:16 | 10-22 | exodus/25.json `historical` | Repository |
+| Psalm 99:1; 1 Chronicles 28:2; Hebrews 9:4-5 | 10-22 | BSB | BSB text |
+| Twelve loaves renewed every Sabbath, eaten by the priests; meals before statues in other temples | 23-30 | exodus/25.json `cultural`; leviticus/24.json `cultural` | Repository |
+| Leviticus 24:8; John 6:35 (a link of theme) | 23-30 | BSB; exodus/25.json `christ` | BSB text |
+| The almond-tree lampstand; a talent about 75 pounds, varying | 31-40 | exodus/25.json `cultural` | Repository |
+| Echoes of Eden: gold and onyx, cherubim, a tree-shaped lamp | 31-40 | exodus/25.json `literary` | Repository |
+| Genesis 2:12; 3:24; Revelation 1:20; John 8:12 (a link of theme) | 31-40 | BSB; exodus/25.json `christ` | BSB text |
+
+Cut before publishing: ‘the tent had no windows’ (no source). Narrowed: ‘one loaf for each tribe’ and ‘the bread stood for the twelve tribes’ became twelve loaves, the number of the tribes, set out on behalf of the people (Leviticus 24:8 says no more).
+
+## The plain notes on Exodus 26 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Royal colors; cherubim as in a heavenly throne room, as at Eden | 1-14 | exodus/26.json `cultural` | Repository |
+| Goat hair as ordinary tent cloth; plain outside, splendid within | 1-14 | exodus/26.json `cultural` | Repository |
+| ‘A unit’; the idiom a woman to her sister | 1-14 | exodus/26.json `literary` | Repository |
+| 2 Samuel 7:6; Ezekiel 10:1; John 1:14 | 1-14 | BSB; exodus/26.json `christ` | BSB text |
+| About 30 by 10 cubits; instructions not a blueprint; frames solid or open; roof debated | 15-30 | exodus/26.json `historical`, `words` (H7175) | Repository |
+| Bronze, silver, gold inward; entrance east | 15-30 | exodus/26.json `cultural` | Repository |
+| Ezekiel 8:16 and a contrast with sun worship | 15-30 | exodus/26.json `cultural` | Repository |
+| Wellhausen (late nineteenth century); critical view; Ramesses II's Kadesh reliefs; Hetepheres' frame at Giza; differences from the temple; Shiloh and 2 Samuel 7:6 | 15-30 | exodus/26.json `hard`, `historical` | Repository; no side |
+| 1 Kings 6:20; Joshua 18:1 | 15-30 | BSB | BSB text |
+| The Most Holy Place as a cube in most reconstructions | 31-37 | exodus/26.json `historical` | Repository |
+| Paroket; it hid the ark and shielded the priests; once a year on the Day of Atonement | 31-37 | exodus/26.json `words` (H6532), `story` | Repository |
+| Leviticus 16:2; Hebrews 9:8; 10:20; Mark 15:38 | 31-37 | BSB; exodus/26.json `christ` | BSB text |
+| A shadow is real; God truly met his people | 31-37 | hebrews/plain/8.json (1-6 `hard`) | Repository |
+
+Cut before publishing: nothing beyond the wording of the idiom (single quotation marks removed, since it is not the BSB's wording).
+
+## The plain notes on Exodus 27 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The courtyard as the space ordinary Israelites entered; the altar between gate and tent | 1-8 | exodus/27.json `story` | Repository |
+| Size of the altar; mizbeach from zavach | 1-8 | exodus/27.json `historical`, `words` (H4196) | Repository |
+| The tools of fire and blood; a working hearth | 1-8 | exodus/27.json `cultural` | Repository |
+| Horns: blood of the sin offering; sanctuary; horned altars at Megiddo and Beersheba | 1-8 | exodus/27.json `historical`, `words` (H7161A) | Repository |
+| Earth or uncut stone (20:24-25) and the bronze altar: filled frame, local altars, different sources | 1-8 | exodus/27.json `hard` | Repository; no side |
+| Leviticus 4:25; 1 Kings 1:50; Hebrews 10:11-12; 13:10, 12; not a code in the boards | 1-8 | BSB; exodus/27.json `christ` | BSB text |
+| The surveyor's plan; about 150 by 75 feet; curtains about 7.5 feet; the pegs of a camp | 9-19 | exodus/27.json `literary`, `historical`, `cultural` | Repository |
+| Psalm 84:2; 100:4 | 9-19 | BSB | BSB text |
+| Beaten oil; from the whole people; tamid from evening until morning | 20-21 | exodus/27.json `cultural`, `words` (H8548) | Repository |
+| Aaron and his sons named; first use of ‘Tent of Meeting’ | 20-21 | exodus/27.json `literary` | Repository |
+| Leviticus 24:2; Matthew 5:14; Revelation 2:5 | 20-21 | BSB; exodus/27.json `christ` | BSB text |
+
+Cut before publishing: nothing.
+
+## The plain notes on Exodus 28 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Who can come near: a priesthood as mediators; Aaron below making the calf | 1-5 | exodus/28.json `story` | Repository |
+| Costly materials; royal purple from sea snails | 1-5 | exodus/28.json `historical` | Repository |
+| Hebrews 4:14-15; 1 Peter 2:5 | 1-5 | BSB; exodus/28.json `christ` | BSB text |
+| The ephod as apron or vest; Samuel's linen ephod | 6-14 | exodus/28.json `words` (H0646) | Repository |
+| Names engraved like seals; a seal stood for its owner; carried on shoulders and over the heart | 6-14, 15-30 | exodus/28.json `cultural` | Repository |
+| Zikkaron: not that God forgets | 6-14 | exodus/28.json `words` (H2146) | Repository |
+| 1 Samuel 2:18; Isaiah 49:16; Hebrews 7:25 | 6-14 | BSB; exodus/28.json `christ` | BSB text |
+| The stones uncertain; choshen of judgment; Urim and Thummim undescribed, used to learn God's will, meaning debated | 15-30 | exodus/28.json `cultural`, `words` (H2833) | Repository |
+| Numbers 27:21; Ezra 2:63; Song of Songs 8:6; Revelation 21:19 | 15-30 | BSB; exodus/28.json `cultural`, `christ` | BSB text |
+| The bells: two readings; the text says only ‘so that he will not die’ | 31-38 | exodus/28.json `hard` | Repository; no side |
+| The plate bears the iniquity of the holy things; nasa as bear and forgive; 34:7 | 31-38 | exodus/28.json `words` (H5375J) | Repository |
+| Why the detail and the warnings; holiness dangerous to the unholy; Nadab and Abihu | 31-38 | exodus/28.json `hard` | Repository |
+| Leviticus 10:2; Zechariah 14:20; Hebrews 7:27 | 31-38 | BSB; exodus/28.json `christ` | BSB text |
+| To ordain is to fill the hand; portions in the priests' hands in chapter 29 | 39-43 | exodus/29.json; leviticus/8.json | Repository |
+| Undergarments for modesty (20:26); perhaps against rites with nakedness | 39-43 | exodus/28.json `cultural` | Repository |
+| Josephus on the high priest's dress; AD 70; Jewish life carried the law forward through study and interpretation | 39-43 | exodus/28.json `historical`; guides/reading-law.json | Repository |
+| 1 Peter 2:9; Revelation 1:13; a pattern, not a hidden prediction | 39-43 | BSB; exodus/28.json `christ`; hebrews/plain/8.json | BSB text |
+
+Cut before publishing: a guess that the hand was filled with the first portion of offerings (the notes give the idiom as installing in office); that Jewish worship continued in prayer (the guide says study and interpretation). Also cut: ‘carried with strength and with love’ (a meaning the text does not give the shoulders and the heart).
+
+## The plain notes on Exodus 29 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The ceremony carried out in Leviticus 8 | 1-9 | exodus/29.json `story` | Repository |
+| Washing, anointing; the anointed one as the source of Messiah and Christ | 1-9 | exodus/29.json `cultural`, `christ` | Repository |
+| Hebrews 5:4; Leviticus 8:30 | 1-9 | BSB | BSB text |
+| Three sacrifices in order: sin, burnt, ordination meal | 10-18 | exodus/29.json `literary` | Repository |
+| Laying on of hands identifies the offerer with the offering | 10-18 | exodus/29.json `cultural` | Repository |
+| Sacrifice universal; not food for God, not bribes; God's provision; prophets on the heart; Christians and fulfilment; Jewish stress after AD 70 on prayer, Torah study and kindness | 10-18 | exodus/29.json `hard`, `historical` | Repository; no side |
+| Psalm 50:13; Hosea 6:6; Hebrews 13:12 | 10-18 | BSB | BSB text |
+| Blood on ear, thumb and toe, not explained; read as the whole person; the same in Leviticus 14:14 | 19-28 | exodus/29.json `cultural` | Repository |
+| To fill the hand; Moses fills their hands | 19-28 | exodus/29.json `cultural` | Repository |
+| Fat for God; breast and thigh for the priests; the fat tail of broad-tailed sheep | 19-28 | exodus/29.json `cultural` | Repository |
+| Leviticus 14:14; Romans 12:1 | 19-28 | BSB | BSB text |
+| The ordination meal; garments passed on; seven days; the altar made most holy | 29-37 | BSB text of verses 29-37; exodus/29.json `literary` | BSB text |
+| John 17:17; Luke 1:9 | 29-37 | BSB; exodus/29.json `historical` | BSB text |
+| The tamid offered for centuries; its loss a disaster (Daniel 8:11) | 38-46 | exodus/29.json `historical` | Repository |
+| God the subject of every verb; ‘know that I am the LORD’ turned from judgment to presence; the exodus so that God might dwell | 38-46 | exodus/29.json `literary`, `story` | Repository |
+| Hebrews 10:11-12; John 1:14; Revelation 21:3 | 38-46 | BSB; exodus/29.json `christ` | BSB text |
+
+Cut before publishing: ‘the time of creation’ for the seven days and ‘holiness almost like a force’ (neither in the notes).
+
+## The plain notes on Exodus 30 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| What keeps the sanctuary working; the calf below | 1-10 | exodus/30.json `story` | Repository |
+| Why here and not in chapter 25: a later supplement, or the priests' ongoing ministry | 1-10 | exodus/30.json `historical` | Repository; no side |
+| Small horned altars at Megiddo and Arad | 1-10 | exodus/30.json `historical` | Repository |
+| Leviticus 16:13; 2 Chronicles 26:16 (Uzziah); Psalm 141:2; Luke 1:11; Revelation 8:4 | 1-10 | BSB; exodus/30.json `historical`, `christ` | BSB text |
+| The shekel as a weight of about 11 to 12 grams; no coins | 11-16 | exodus/30.json `cultural` | Repository |
+| A census to muster or tax; twenty the age of service; counting as claiming; the ransom as confession | 11-16 | exodus/30.json `cultural`, `hard` | Repository |
+| The silver bases (38:25-28); the later temple tax (Matthew 17:24-27) | 11-16 | exodus/30.json `cultural` | Repository |
+| Counting not wrong in itself (Numbers); fear of counting debated | 11-16 | exodus/30.json `hard` | Repository; no side |
+| Exodus 38:26-27; 2 Samuel 24:10; Matthew 17:24; 1 Peter 1:18-19 | 11-16 | BSB | BSB text |
+| Psalm 24:4; Hebrews 10:22 | 17-21 | BSB | BSB text |
+| Myrrh and frankincense from southern Arabia and the Horn of Africa; cinnamon and cassia farther east; cane and onycha uncertain | 22-33, 34-38 | exodus/30.json `historical` | Repository |
+| Anointing as installing; why the recipe was protected | 22-33 | exodus/30.json `cultural`, `hard` | Repository |
+| ‘Cut off’: three readings | 22-33 | exodus/30.json `cultural` | Repository; no side |
+| Psalm 133:2; Luke 4:18 | 22-33 | BSB; exodus/30.json `christ` | BSB text |
+| Incense in ancient temples; ‘in front of the Testimony’ nearest the ark; the seven speeches and creation | 34-38 | exodus/30.json `cultural`, `literary` | Repository |
+| Revelation 8:3; 2 Corinthians 2:15 | 34-38 | BSB | BSB text |
+
+Cut before publishing: a paraphrase of verse 34 that had been set in quotation marks (now given as a list with only the BSB's words quoted).
+
+## The plain notes on Exodus 31 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The plans complete; God names the builders, then tells Israel when to stop | 1-11, 12-17 | exodus/31.json `story` | Repository |
+| Bezalel the first person said to be filled with the Spirit; the gift is craft | 1-11 | exodus/31.json `doctrines` (spirit) | Repository |
+| Chokhmah as practical skill; skill, ability and knowledge as in Proverbs 3:19-20 | 1-11 | exodus/31.json `words` (H2451), `doctrines` (wisdom) | Repository |
+| Former brickmakers; Egypt's craftsmen; the gifts of 12:35-36 | 1-11 | exodus/31.json `historical` | Repository |
+| Ugarit: a craftsman god builds Baal's palace; Exodus reverses it | 1-11 | exodus/31.json `cultural` | Repository |
+| Judah and Dan, the most honored and one of the lesser tribes; Hur possible, not stated | 1-11 | exodus/31.json `historical` | Repository |
+| Exodus 35:34; Proverbs 3:19-20; 1 Corinthians 12:4, 7; 3:16 | 1-11 | BSB; exodus/31.json `christ` | BSB text |
+| The seventh speech on the seventh day; the same word for work (melakhah) for the craft and for what must stop | 12-17 | exodus/31.json `literary`, `words` (H4399) | Repository |
+| The Sabbath as a sign, like the rainbow and circumcision; a sign in time | 12-17 | exodus/31.json `cultural`, `words` (H0226H) | Repository |
+| Israel's plainest difference from its neighbors | 12-17 | exodus/31.json `cultural` | Repository |
+| ‘Was refreshed’ related to the word for breath; the same verb in 23:12 | 12-17 | exodus/31.json `literary`; ch/exodus/23.json and 31.json (both H5314) | Repository |
+| The Mishnah (about AD 200), thirty-nine kinds of work, linked by the Talmud to the building of the tabernacle | 12-17 | exodus/31.json `cultural` | Repository |
+| The penalty: Numbers 15:32-36; the sign of the covenant, nearer treason; the Mishnah on a court that executed once in seven years; no Christian tradition applies it | 12-17 | exodus/31.json `hard` | Repository |
+| The Christian views of the Sabbath (seventh-day; Reformed and Puritan; Catholic, Lutheran and others; dispensational and New Covenant) | 12-17 | exodus/plain/16.json (22-30 `hard`), wording reused | Repository; no side |
+| Genesis 2:2; Ezekiel 20:12; Mark 2:27-28; Hebrews 4:9; Colossians 2:16 | 12-17 | BSB; exodus/31.json `christ` | BSB text |
+| The Testimony as the tablets of the covenant, kept in the ark (25:16) | 18 | exodus/16.json; exodus/37.json; BSB | Repository |
+| The finger of God: the magicians at 8:19 | 18 | BSB | BSB text |
+| Verse 18 as story turning toward chapter 32; God's design and the people's design | 18 | exodus/31.json `story`, `literary` | Repository |
+| Deuteronomy 9:10; Luke 11:20; 2 Corinthians 3:3; Jeremiah 31:33 | 18 | BSB; exodus/31.json `christ` | BSB text |
+
+Cut before publishing: that the tablets are called the Testimony ‘because they bear witness’ (no source for the gloss).
+
+## The plain notes on Exodus 32 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Forty days; the covenant broken within weeks; the first two commandments; Israel's fall, like Genesis 3 | 1-6 | exodus/32.json `story` | Repository |
+| Apis at Memphis; El called Bull and Baal at Ugarit; the silver-plated calf of Ashkelon, found 1990 | 1-6 | exodus/32.json `historical` | Repository |
+| An image made a god present and portable; the calf as a stand-in or pedestal for the LORD; ‘a feast to the LORD’ | 1-6 | exodus/32.json `historical`, `cultural` | Repository |
+| Idolatry as worship of the true God on our own terms | 1-6 | exodus/32.json `doctrines` (idolatry) | Repository |
+| The earrings, the gifts of Egypt, and the gifts asked for the tabernacle | 1-6 | exodus/32.json `cultural` | Repository |
+| ‘Revelry’: to laugh or play; two readings | 1-6 | exodus/32.json `words` (H6711) | Repository; no side |
+| 1 Kings 12:28; Psalm 106:19-20; 1 Corinthians 10:6-7 | 1-6 | BSB; exodus/32.json `historical` | BSB text |
+| Israel's own Scripture telling its own sin; Paul's warning is to the church; Psalm 106 says ‘we’ (106:6) | 1-6 | 1-corinthians/plain/10.json; exodus/intro.json `teaching` (‘How the New Testament reads Exodus’); BSB | Repository |
+| ‘For centuries some Christians used the New Testament to justify contempt for Jews. That reading is false, and this site rejects it. The note on Acts 2:22-28 sets out why.’ | 1-6 | exodus/intro.json `teaching`, word for word | Repository |
+| ‘Your people’ handed back; the two reasons of Moses' prayer | 7-14 | exodus/32.json `literary`, `doctrines` (prayer) | Repository |
+| Stiff-necked: an ox that will not bend to the yoke | 7-14 | exodus deep notes (found by search: ‘like an ox that will not bend its neck to the yoke’) | Repository |
+| ‘I will make you into a great nation’ and Abraham | 7-14 | BSB (Genesis 12:2, the same words) | BSB text |
+| Nacham: relent, be sorry, comfort | 7-14 | exodus/32.json `words` (H5162H) | Repository |
+| Relenting: classical theology and open theists; ‘leave Me alone’ as invitation; both agree prayer matters | 7-14 | exodus/32.json `hard` | Repository; no side |
+| Psalm 106:23; Deuteronomy 9:18-19; Jeremiah 18:8; Hebrews 7:25; Numbers 23:19 | 7-14 | BSB | BSB text |
+| Breaking a treaty tablet as voiding it; burning, grinding and scattering as total destruction; the drinking and Numbers 5; idolatry as adultery | 15-24 | exodus/32.json `cultural` | Repository |
+| Aaron's excuse against the narrator's ‘engraving tool’ | 15-24 | exodus/32.json `literary` | Repository |
+| Deuteronomy 9:20; Acts 7:41; Genesis 3:12 | 15-24 | BSB | BSB text |
+| ‘Ordained’ as to fill the hand | 25-29 | exodus/32.json `cultural` | Repository |
+| The killing: covenant judgment where God was king; rebellion out of control; the call first; critical reading (the Levites' office); troubling, and not to be dismissed; not a pattern for the church (John 18:36; 1 Corinthians 5) | 25-29 | exodus/32.json `hard` | Repository |
+| ‘A place where they must trust what they cannot fully see’ | 25-29 | exodus/intro.json `teaching` (‘The plagues’), wording reused | Repository |
+| Deuteronomy 33:9; John 18:36; Matthew 26:52 | 25-29 | BSB | BSB text |
+| ‘A great sin’ three times; machah, to wipe a dish or erase writing; the book of the living | 30-35 | exodus/32.json `literary`, `words` (H4229A) | Repository |
+| God declines; Moses cannot atone; judgment restrained; the promise stands | 30-35 | exodus/32.json `christ`, `doctrines` (judgment) | Repository |
+| Romans 9:3; Revelation 3:5; Galatians 3:13 | 30-35 | BSB; exodus/32.json `christ`; romans/plain/9.json | BSB text |
+
+Cut before publishing: Jeroboam's sons' names beside Aaron's (true to the deep note, but it leads a new reader away from the chapter); the Ugaritic poem of Anat and Mot (the same).
+
+## The plain notes on Exodus 33 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everything promised, without God himself; the tabernacle existed so that God could dwell among them (25:8) | 1-6 | exodus/33.json `story` | Repository |
+| Stiff-necked: an ox that will not bend its neck to the yoke | 1-6 | exodus deep notes (found by search) | Repository |
+| Jewelry taken off in mourning and repentance; the calf's ornaments; 35:22; the same gold | 1-6 | exodus/33.json `cultural` | Repository |
+| Horeb as Sinai; milk and honey; date or grape syrup; the Tel Rehov beehives, tenth or ninth century BC | 1-6 | exodus/33.json `historical` | Repository |
+| Genesis 35:4; Exodus 35:22 | 1-6 | BSB | BSB text |
+| The tent outside the camp: a temporary tent, or an older tradition; a regular practice | 7-11 | exodus/33.json `historical` | Repository; no side |
+| A people who now worship at a distance | 7-11 | exodus/33.json `cultural` | Repository |
+| Face to face as an idiom; a king's face as admission to his presence; Abraham the friend of God | 7-11 | exodus/33.json `cultural` | Repository |
+| Numbers 12:8; James 2:23; John 15:15 | 7-11 | BSB | BSB text |
+| Moses holds God to his words; bold prayer welcomed | 12-17 | exodus/33.json `doctrines` (prayer) | Repository |
+| Presence is the word for face (panim); know (yada) and favor (chen) | 12-17 | exodus/33.json `words` (H6440H, H3045, H2580), `literary` | Repository |
+| What sets Israel apart is that God goes with it | 12-17 | exodus/33.json `doctrines` (god) | Repository |
+| Matthew 1:23; 28:20; 11:28 | 12-17 | BSB; exodus/33.json `christ` | BSB text |
+| Three rising requests; kavod; God answers with goodness and his name | 18-23 | exodus/33.json `literary`, `words` (H3519) | Repository |
+| ‘I will have mercy’ in its setting: not a word about turning people away, but mercy as God's free gift to a people who deserved nothing | 18-23 | romans/plain/9.json (14-18 `ot`), wording reused | Repository |
+| Face to face and ‘no one can see Me and live’: the idiom; Numbers 12; the ‘back’ as what can be known from God's works; the Son before the incarnation, or not | 18-23 | exodus/33.json `hard` | Repository; no side |
+| Revealed truly, not fully | 18-23 | exodus/33.json `doctrines` (revelation) | Repository |
+| 1 Kings 19:13 (Elijah at Horeb, 19:8-11); John 1:18, 14; 2 Corinthians 4:6; Romans 9:15; Revelation 22:4 | 18-23 | BSB; exodus/33.json `christ` | BSB text |
+
+Cut before publishing: that Joshua ‘is learning where a leader's strength comes from’ (no source); the counts of ‘know’ and ‘favor’ (seven and five in the Hebrew, which the English does not show).
+
+## The plain notes on Exodus 34 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The same words again; the terms not lowered; Moses supplies the stone, God the writing | 1-4 | exodus/verses/34.json (verse 1) | Repository |
+| ‘Chisel’ (pasal) as the root of the word for a carved image; ‘which you broke’ without reproach | 1-4 | exodus/verses/34.json (verse 1) | Repository |
+| Stricter limits than chapter 24; one mediator | 1-4 | exodus/verses/34.json (verses 2-3) | Repository |
+| Rising early answers 32:6; details that answer chapter 32 | 1-4 | exodus/34.json `literary`; exodus/verses/34.json (verse 4) | Repository |
+| Deuteronomy 10:2; Jeremiah 31:33 | 1-4 | BSB | BSB text |
+| The glory shown as character, heard more than seen; the most quoted description of God; Israel's creed; the calf story ends with God saying who he is | 5-9 | exodus/34.json `story`, `literary`; exodus/verses/34.json (verse 6) | Repository |
+| Rachum and the womb, used of God in all but one place; channun; ‘long of nostrils’; chesed; emet and amen | 5-9 | exodus/34.json `words` (H7349, H2587, H2617A, H0571G); exodus/verses/34.json (verse 6) | Repository |
+| Forgiving as lifting or carrying; three words for wrong (guilt, rebellion, failure) | 5-9 | exodus/34.json `words` (H5375I); exodus/verses/34.json (verse 7) | Repository |
+| The balance of mercies and justice; a thousand against three or four; the order of 20:5-6 reversed | 5-9 | exodus/34.json `literary`; exodus/verses/34.json (verse 7) | Repository |
+| Moses names the people stiff-necked and pleads on that basis | 5-9 | exodus/34.json `doctrines` (covenant) | Repository |
+| The Thirteen Attributes of Mercy; Selichot and the High Holy Days; the Talmud on the name said twice | 5-9 | exodus/verses/34.json (verse 6 `history`) | Repository |
+| Later uses: Numbers 14:18-20; Psalm 103:8; Joel 2:13; Nahum 1:3; Jonah 4:2, each choosing what it needs | 5-9 | exodus/34.json `literary`; BSB | BSB text |
+| John 1:14 and the pair chesed and emet (‘most likely’); Romans 3:26 | 5-9 | exodus/34.json `words` (H0571G), `christ` | Repository |
+| Children and parents' sins: Deuteronomy 24:16; Ezekiel 18:20; the critical reading; the Targum and Talmud; the household of three or four generations; the corporate reading; the proportion; John 9:3 | 5-9 | exodus/34.json `hard`; exodus/plain/20.json (3-6 `hard`) | Repository; no side |
+| ‘So this verse is never a curse on any family ... find his loving devotion.’ | 5-9 | exodus/plain/20.json (3-6 `hard`), word for word | Repository |
+| The renewal rests on God's character; the commands repeat chapters 20 to 23; ‘molten gods’ and the molten calf | 10-17 | exodus/34.json `doctrines` (covenant), `historical`, `literary` | Repository |
+| Asherah at Ugarit, her pole; Kuntillet Ajrud, about 800 BC, ‘the LORD and his asherah’ | 10-17 | exodus/34.json `historical` | Repository |
+| Treaties of great kings forbade other alliances | 10-17 | exodus/34.json `historical` | Repository |
+| Verse 16 names the pull to other gods; Rahab and Ruth | 10-17 | exodus/34.json `doctrines` (idolatry); BSB (Joshua 6:25; Ruth 1:16) | BSB text |
+| Jealous: the objection; zeal and jealousy; a covenant partner; set inside compassion and grace | 10-17 | exodus/34.json `hard`, `words` (H7067G); exodus/plain/20.json (3-6) | Repository |
+| The shrines: Israel's own worship in its own land, not a charter for coercing other peoples | 10-17 | exodus/34.json `hard` | Repository |
+| ‘These notes say nothing against any people, ancient or modern ... or to claim any land.’ | 10-17 | exodus/plain/23.json (27-33 `hard`), word for word | Repository |
+| Deuteronomy 7:4; 1 Kings 11:4; Ruth 1:16 | 10-17 | BSB | BSB text |
+| The parallel with 23:12-19; Abib and Nisan; rest in plowing and harvest; the trust of verse 24 | 18-28 | exodus/34.json `historical`, `cultural` | Repository |
+| The firstborn and 13:14-15; pidyon haben at a month old | 18-28 | BSB; exodus/34.json `cultural` | Repository |
+| What was on the tablets: most readers, and the ‘ritual’ ten since Goethe (1773), with no agreed list | 18-28 | exodus/34.json `historical` | Repository; no side |
+| Deuteronomy 10:4; Matthew 4:2 (a link of theme); Luke 2:23 | 18-28 | BSB; exodus/34.json `christ` | BSB text |
+| The face reflects, unknown to Moses; the fear answered as at 20:19 | 29-35 | exodus/verses/34.json (verses 29-30, 31-32) | Repository |
+| The order: he speaks unveiled and veils afterward; the regular practice; the word for the veil found only here | 29-35 | exodus/verses/34.json (verses 33, 34-35); exodus/34.json `cultural` | Repository |
+| ‘Shine’ and the word for horn; the Vulgate's ‘horned’; Michelangelo's statue in Rome | 29-35 | exodus/34.json `cultural`, `words` (H7160) | Repository |
+| Numbers 6:25; Matthew 17:2, 5; 2 Corinthians 3:7, 16, 18 | 29-35 | BSB; exodus/34.json `christ` | BSB text |
+| Paul's ‘fading’: not in Exodus; katargeo; ‘the glory of Sinai was real, but it was not meant to be the last word’; how he reached it (the repeated veiling, or a shield for a stiff-necked people) | 29-35 | 2-corinthians/plain/3.json (4-11 `hearers`), wording reused; exodus/34.json `christ` | Repository; no side |
+| The veil as a picture; Paul had read Moses that way himself; taken away for any reader | 29-35 | 2-corinthians/plain/3.json (12-18 `hearers`, `hard`), wording reused | Repository |
+| ‘For centuries some Christians used ‘the veil’ to look down on Jewish people, to mock them as blind, and to justify contempt and worse. That reading is false, and this site rejects it.’ | 29-35 | 2-corinthians/plain/3.json (12-18 `hard`), word for word | Repository |
+| ‘The note on Acts 2:22-28 sets out why.’ | 29-35 | exodus/intro.json `teaching`, word for word | Repository |
+| Romans 11:1 | 29-35 | BSB | BSB text |
+
+Cut before publishing: ‘sealed at their altars with their sacrifices’ of the treaties (verse 15 speaks of an invitation, no more); ‘its only weapons against false worship are words, prayer and a changed life’ (no source); the quoted phrase of the Kuntillet Ajrud inscription (not Scripture, so the quotation marks were removed); Trible, Heschel, Maimonides, Dawkins, Mellinkoff and Hafemann by name (in the deep note for the reader who wants them).
+
+## The plain notes on Exodus 35 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The plans carried out; the Sabbath closed the plans and opens the building | 1-3 | exodus/35.json `story`, `literary` | Repository |
+| The penalty as in chapter 31 | 1-3 | exodus/plain/31.json (12-17 `hard`) | Repository |
+| Verse 3 new; fire as work in the wilderness; rabbinic and Karaite practice | 1-3 | exodus/35.json `cultural` | Repository |
+| Exodus 16:23; Luke 23:56 | 1-3 | BSB | BSB text |
+| Terumah, from a verb to lift up | 4-19 | exodus/35.json `words` (H8641) | Repository |
+| Temple-building accounts; Gudea of Lagash about 2100 BC; a whole people, not conscripts | 4-19 | exodus/35.json `historical` | Repository |
+| 1 Chronicles 29:9, 14; 2 Corinthians 9:7 | 4-19 | BSB; exodus/35.json `christ` | BSB text |
+| The contrast with the gold of chapter 32 | 20-29 | exodus/35.json `story`, `words` (H5068) | Repository |
+| The heart (lev) as will and thought; the freewill offering beyond what the law required | 20-29 | exodus/35.json `words` (H3820A, H5068) | Repository |
+| Women named four times; spinning as skilled work; the same word for wisdom | 20-29 | exodus/35.json `cultural`, `doctrines` (wisdom, church) | Repository |
+| The wave offering as lifting or moving a gift before the LORD | 20-29 | exodus/35.json `cultural` | Repository |
+| Luke 8:3; Ephesians 4:16; 1 Peter 4:10; Mark 12:43 | 20-29 | BSB; exodus/35.json `christ` | BSB text |
+| 31:1-6 repeated; the ability to teach added; yarah and torah; gifts spread | 30-35 | exodus/35.json `literary`, `words` (H3384B), `doctrines` (spirit) | Repository |
+| Why the repetition: ancient building accounts; the match after the calf; reading aloud; the Septuagint's different order | 30-35 | exodus/35.json `hard` | Repository |
+| 2 Timothy 2:2; Ephesians 2:22 | 30-35 | BSB; exodus/35.json `christ` | BSB text |
+
+Cut before publishing: ‘under the whip’ of the building for Pharaoh (the book says the foremen were beaten, 5:14; ‘as slaves’ says no more than the text).
+
+## The plain notes on Exodus 36 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A people told to stop giving; the same people who gave gold for the calf | 1-7 | exodus/36.json `story` | Repository |
+| ‘Enough’ (day) said twice; a rare moment | 1-7 | exodus/36.json `words` (H1767) | Repository |
+| The calf made on demand (32:1-2) | 1-7 | BSB; exodus/35.json `words` (H5068) | BSB text |
+| 2 Corinthians 8:3-4; Philippians 4:18 | 1-7 | BSB | BSB text |
+| Verses 8-38 follow 26:1-37; ‘he made’ with Bezalel implied; the house before the furniture; the numbers as exactness | 8-19 | exodus/36.json `literary` | Repository |
+| The layers, plain outside, cherubim within | 8-19 | exodus/36.json `cultural`; exodus/plain/26.json | Repository |
+| Hebrews 8:5; Ephesians 2:21 | 8-19 | BSB | BSB text |
+| The size of the tent; the cubit; frames or solid boards | 20-34 | exodus/36.json `historical` | Repository |
+| The rear to the west, the opening to the east; bronze, silver, gold | 20-34 | exodus/36.json `cultural` | Repository |
+| The silver bases cast from the census half shekel | 20-34 | BSB (30:11-16; 38:25-28); exodus/plain/30.json | BSB text |
+| Could it have been built: Wellhausen; Hetepheres' frame; Ramesses II's camp at Kadesh; 12:35-36; a middle view | 20-34 | exodus/36.json `hard`, `historical` | Repository; no side |
+| Exodus 38:27; 1 Peter 1:18-19 | 20-34 | BSB | BSB text |
+| Cherubim as guardians, not infants; beside thrones and doors; Eden's east and the tent's east; the veil and the Day of Atonement | 35-38 | exodus/36.json `cultural`, `words` (H3742, H6532) | Repository |
+| Genesis 3:24; Mark 15:38; Hebrews 10:19-20 | 35-38 | BSB; exodus/36.json `christ` | BSB text |
+| A shadow is real; God truly met his people | 35-38 | hebrews/plain/8.json (1-6 `hard`); exodus/plain/26.json | Repository |
+
+Cut before publishing: a reason for building the house before the furniture (‘the sensible order of building’; the deep note gives none); that Paul thanked the Philippians ‘in the words of this chapter’ (he does not quote it).
+
+## The plain notes on Exodus 37 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| From the innermost object outward; follows 25:10-40; the purpose lines left out, 25:22 not repeated | 1-9 | exodus/37.json `literary`, `story` | Repository |
+| Bezalel named at 37:1 | 1-9 | BSB; exodus/36.json `literary` | BSB text |
+| The ark's size; carried by four men; Egypt's chests with poles and winged figures; no image, only written words | 1-9 | exodus/37.json `historical` | Repository |
+| Thrones with winged guardians and footstools; the throne of an unseen King; the empty space | 1-9 | exodus/37.json `cultural` | Repository |
+| 1 Samuel 4:4; Psalm 132:7; 1 Kings 8:9; Romans 3:25 and hilasterion; Hebrews 9:5 | 1-9 | BSB; exodus/37.json `cultural`, `words` (H3727), `christ` | BSB text |
+| What happened to the ark: 1 Kings 8:6; 2 Chronicles 35:3; 587 or 586 BC and 2 Kings 25:13-17; 2 Maccabees; Aksum; no evidence for modern claims; Jeremiah 3:16; Revelation 11:19 | 1-9 | exodus/37.json `hard` | Repository |
+| Twelve loaves renewed each Sabbath; meals before statues elsewhere | 10-16 | exodus/37.json `cultural`; exodus/plain/25.json | Repository |
+| Leviticus 24:8; John 6:35 (a link of theme) | 10-16 | BSB; exodus/37.json `christ` | BSB text |
+| Menorah; an almond tree; the talent; the first tree to blossom; the tree of life (many interpreters) | 17-24 | exodus/37.json `cultural`, `words` (H4501) | Repository |
+| ‘Shaped like almond blossoms’ and the verb to watch; Jeremiah 1:11-12 | 17-24 | exodus/37.json `words` (H8246) | Repository |
+| A lasting sign of the Jewish people; the Arch of Titus and AD 70 | 17-24 | exodus/37.json `historical`, `words` (H4501) | Repository |
+| Zechariah 4:2; Revelation 1:12-13 | 17-24 | BSB; exodus/37.json `christ` | BSB text |
+| The incense altar placed with the golden furniture | 25-29 | exodus/37.json `literary` | Repository |
+| Psalm 141:2; Revelation 8:3 | 25-29 | BSB | BSB text |
+
+Cut before publishing: ‘the most holy object goes to the craftsman God called by name’ (no source); ‘the people who lived by God's gift of bread were kept always before him’ (a meaning the text does not give); the echo of two angels in the tomb (John 20:12), which the deep note itself calls only suggestive; the menorah in a modern state's emblem (no modern state is in view in these notes).
+
+## The plain notes on Exodus 38 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The work moves out to the courtyard; the altar first inside the gate; no one reaches God's presence without passing it | 1-8 | exodus/38.json `story` | Repository |
+| The altar's size; hollow and portable; the Tel Beersheba altar, found 1973 | 1-8 | exodus/38.json `historical` | Repository |
+| Bronze mirrors, prized; the women mentioned again only in 1 Samuel 2:22; the verb of their service; what they did is not explained | 1-8 | exodus/38.json `cultural`, `words` (H6633) | Repository |
+| 1 Samuel 2:22; Hebrews 13:10 | 1-8 | BSB; exodus/38.json `christ` | BSB text |
+| The courtyard's size and height; one gate on the east in the veil's colors; ordinary life outside | 9-20 | exodus/38.json `cultural` | Repository |
+| The metals descend outward | 9-20 | exodus/38.json `literary` | Repository |
+| Psalm 84:10; John 10:9 (a sheepfold; a link of theme) | 9-20 | BSB; exodus/38.json `christ` | BSB text |
+| An accounting report; Ithamar, Aaron's youngest son; Bezalel and Oholiab named ‘as if signing’ | 21-31 | exodus/38.json `literary`, `historical` | Repository |
+| The arithmetic (301,775 shekels; a talent of 3,000); about a ton of gold, over three of silver, over two of bronze | 21-31 | exodus/38.json `historical` | Repository |
+| The ransom silver and the hundred bases; the beka weights found in and around Jerusalem | 21-31 | BSB (38:25-28); exodus/38.json `cultural`, `words` (H1235) | Repository |
+| The 603,550: as written; elef as clan or unit and its difficulty; symbolic or a later census; the text means thousands | 21-31 | exodus/38.json `hard`; exodus/intro.json `teaching` (‘The sea, the road and the mountain’) | Repository; no side |
+| Numbers 1:46; 2 Corinthians 8:21; Luke 16:10 | 21-31 | BSB | BSB text |
+
+Cut before publishing: nothing was drafted beyond the notes here; Mendenhall's name is left to the deep note.
+
+## The plain notes on Exodus 39 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The garments of chapter 28 made; gold thread from hammered sheets, a known technique | 1-21 | exodus/39.json `story`, `historical` | Repository |
+| The ephod as apron or vest; the names on shoulders and heart; engraved like a seal, a mark of identity and ownership | 1-21 | exodus/39.json `historical`, `cultural` | Repository |
+| The stones uncertain; translations differ | 1-21 | exodus/39.json `historical` | Repository |
+| Memorial: to remember is to act for someone | 1-21 | exodus/39.json `words` (H2146); exodus/plain/28.json | Repository |
+| The Urim and Thummim not mentioned, perhaps because not crafted | 1-21 | exodus/39.json `literary` | Repository |
+| The refrain seven times in the account of the garments | 1-21 | exodus/39.json `literary` | Repository |
+| Revelation 21:19; Hebrews 4:14; 7:25 | 1-21 | BSB; exodus/39.json `christ` | BSB text |
+| A shadow is real | 1-21 | hebrews/plain/8.json (1-6 `hard`) | Repository |
+| The bells and 28:35; the pomegranate as fruitfulness and on Solomon's pillars (1 Kings 7:18-20) | 22-31 | exodus/39.json `cultural`; BSB | Repository |
+| The plate: tsits, a flower; the holy crown; 28:38 | 22-31 | exodus/39.json `words` (H6731A), `cultural` | Repository |
+| Aaron the calf-maker and the garments designed for him | 22-31 | exodus/28.json `story`; exodus/plain/28.json (1-5) | Repository |
+| Zechariah 14:20; 1 Peter 2:9; Revelation 1:13 | 22-31 | BSB; exodus/39.json `cultural`, `christ` | BSB text |
+| The refrain three more times; restoration; the echoes of Genesis (completed, saw, blessed); a new creation | 32-43 | exodus/39.json `story`, `literary` | Repository |
+| The broken tablets (32:19) beside the blessing | 32-43 | BSB | BSB text |
+| Genesis 2:1, 3; 1:31; Psalm 90:17 (‘A prayer of Moses’ in its heading) | 32-43 | BSB | BSB text |
+
+Cut before publishing: that the robe was worn ‘under’ the ephod (the text says only ‘the robe of the ephod’); the stones of Ezekiel 28:13 (in the deep note).
+
+## The plain notes on Exodus 40 (2026-11-20)
+
+`client/public/bible/notes/exodus/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| New Year's Day; Genesis 8:13; almost a year after the exodus, about nine months after reaching Sinai | 1-16 | exodus/40.json `historical`; BSB | Repository |
+| From the inside out; anointing sets apart; holiness prepared for, not presumed | 1-16 | exodus/40.json `cultural`, `doctrines` (holiness) | Repository |
+| The priests' ordination carried out in Leviticus 8; Leviticus 8:30 | 1-16 | exodus/40.json `cultural`; BSB | Repository |
+| The refrain seven times after verse 16, as in chapter 39 | 17-33 | exodus/40.json `literary` | Repository |
+| Moses performs priestly acts because Aaron's sons are not yet ordained | 17-33 | exodus/40.json `cultural` | Repository |
+| The second tablets in the ark, under the mercy seat | 17-33 | BSB (34:1, 28; 40:20) | BSB text |
+| ‘So Moses finished the work’ and Genesis 2:2 | 17-33 | exodus/40.json `literary`, `words` (H3615G) | Repository |
+| Genesis 2:2; 1 Kings 8:10; John 17:4 | 17-33 | BSB | BSB text |
+| The incense altar and Hebrews 9:3-4: the censer reading; belonging to the inner room in use (1 Kings 6:22); a tradition; Hebrews 9:5 | 17-33 | exodus/40.json `hard`; hebrews/plain/9.json (1-10 `hard`) | Repository; no side |
+| From slaves building for Pharaoh to a dwelling for God; the last verses are God's action; not Israel's achievement but God's arrival | 34-38 | exodus/40.json `story`, `literary`, `doctrines` (god) | Repository |
+| Kavod and 24:16-17; shakan and mishkan; ‘filled’ as of Bezalel (31:3) | 34-38 | exodus/40.json `words` (H7931, H4390); exodus/24.json `words` | Repository |
+| Other temple dedications and the god's entry; no statue here | 34-38 | exodus/40.json `historical` | Repository |
+| Moses cannot enter; obedience alone does not close the distance; where Leviticus begins | 34-38 | exodus/40.json `story`, `doctrines` (holiness) | Repository |
+| The cloud since 13:21-22; shade and warmth; guidance as a presence followed day by day | 34-38 | exodus/40.json `cultural`, `doctrines` (providence) | Repository |
+| Leviticus 1:1; Numbers 9:18; 1 Kings 8:11; Ezekiel 10 and 43:5; John 1:14; Luke 9:35; 1 Corinthians 6:19; Revelation 21:3 | 34-38 | BSB; exodus/40.json `historical`, `christ` | BSB text |
+
+Cut before publishing: the BSB's ‘journey’ and ‘journeys’ in verses 36 and 38 (paraphrased, and verse 38 quoted only as far as ‘the house of Israel’); a three-word stack of fragments in the last passage (rewritten as a sentence); that a statue ‘was carried’ into other temples (the deep note says only that the god entered his house).
+
+## Leviticus's book page (teaching introduction, 2026-11-21)
+
+Every claim in `client/public/bible/notes/leviticus/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and lexicon, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Third book, 27 chapters; readers stall here; the manual after the stories | in-a-minute | bible/books.json; guides/offerings-and-purity.json (‘Why Leviticus matters’); guides/reading-law.json | Repository |
+| The question: how a holy God lives among an unholy people; Exodus 40:35; 19:2; 19:18; Matthew 22:39-40 | in-a-minute, question | leviticus/intro.json `overview`; guides/offerings-and-purity.json; BSB | Repository; BSB text |
+| Middle of the five books; Vayikra, ‘and he called’, from its first word | story, words | leviticus/intro.json `story`; leviticus/1.json `literary` | Repository |
+| Torat Kohanim, the instruction of the priests | story | leviticus/intro.json `purpose` | Repository |
+| The story so far (Eden, Egypt, Sinai, the calf, the tent); Exodus 40:17, 35; Leviticus 1:1 | story | leviticus/intro.json `story`, `setting`; BSB | Repository; BSB text |
+| About one month at Sinai (Exodus 40:17 to Numbers 1:1); two short narratives (8 to 10; 24:10-23) | story, timeline | leviticus/intro.json `date`, `reading` | Repository |
+| Law after rescue; 11:45 | story | leviticus/intro.json `reading`; guides/reading-law.json (‘Law follows grace’) | Repository |
+| Exodus 25:8; the presence as gift and danger; 10:1-2; God provides the way; 17:11 | question | leviticus/intro.json `themes`; leviticus/1.json `doctrines` (god); BSB | Repository |
+| Ugarit's offering terms; Egyptian temples; no image; God not fed; Psalm 50:13; child sacrifice refused (18:21) | question | leviticus/intro.json `setting`; guides/offerings-and-purity.json | Repository |
+| 26:12 as the goal; the verb of Genesis 3:8 | question | leviticus/intro.json `purpose`; leviticus/26.json | Repository |
+| No author named; 27:34; Mark 1:44 and Leviticus 14; Wenham; the priestly source; the Holiness Code; Wellhausen; Kaufmann and Milgrom; the wilderness camp and the tent | who | leviticus/intro.json `author`, `date` | Repository; no side |
+| Six parts; the offerings told twice; chapter 16 at the center; ‘Speak to the Israelites’; ‘I am the LORD’ | built | leviticus/intro.json `structure`, `purpose`, `keyChapters`; guides/offerings-and-purity.json | Repository |
+| Qorban; the common pattern of an animal offering; the worshiper kills, the priest handles the blood | offerings, words | guides/offerings-and-purity.json (‘The five offerings’, ‘What the rituals meant’); leviticus/1.json `cultural`, `words` | Repository |
+| The five offerings and what each was for; morning and evening; restitution and a fifth; the purification offering | offerings, words | guides/offerings-and-purity.json (table); leviticus/4.json, 5.json `words` | Repository |
+| Graded by means (5:7, 11); Mary and Joseph's birds (Luke 2:24) | offerings | guides/offerings-and-purity.json; BSB | Repository |
+| 17:11; readings of the laying on of the hand; 4:31 | offerings | guides/offerings-and-purity.json; leviticus/1.json `words` (H5564); BSB | Repository; no side |
+| Sacrifice not feeding or buying God; the prophets and Hosea 6:6 | offerings | leviticus/1.json `hard`; guides/offerings-and-purity.json (‘The prophets and the sacrifices’) | Repository |
+| The priests' work (10:10-11); skin diseases, hard cases, the blessing | priests | guides/offerings-and-purity.json (‘Priests and Levites’) | Repository |
+| Aaron and the calf; the sin offering at his ordination; 9:8; Hebrews 5:2 | priests | leviticus/8.json `hard`; BSB | Repository |
+| Nadab and Abihu: the one explanation given; the four proposals; rare judgments at founding moments; the grief not made small; 9:24; 10:1-2, 6 | priests | leviticus/10.json `hard`; BSB | Repository; no side |
+| Holy, common, clean, unclean; unclean not sinful; childbirth, 15:18, Numbers 19:11; temporary; the wrong is to ignore it (15:31) | clean-and-unclean, words | guides/offerings-and-purity.json (‘Holy and common, clean and unclean’); leviticus/intro.json `reading`, `themes`; leviticus/11.json, 13.json `words` | Repository |
+| Maimonides; Mary Douglas, Purity and Danger (1966); Milgrom and Wenham on death; partial views of one conviction | clean-and-unclean, timeline | guides/offerings-and-purity.json; leviticus/intro.json `reading` | Repository; no side |
+| Moral defilement (18:24-25); Klawans on the two kinds | clean-and-unclean | guides/offerings-and-purity.json | Repository |
+| ‘Your worth to God does not rise or fall with your body. If the weight of it is heavy ... places to turn.’ | clean-and-unclean | acts/plain/3.json (1-10 `hard`), word for word. The two sentences before it (the address and ‘That is not what this book says of you’) are new, written for this page and reused whole in the chapters | Repository |
+| Kipper: covering, wiping clean, ransom; both at once | atonement, words | guides/offerings-and-purity.json (Sklar, not named on the page); leviticus/16.json `words` | Repository |
+| Atonement wider than forgiveness of guilt; for places as well as people | atonement | leviticus/14.json `hard`; leviticus/16.json `words` | Repository |
+| The Day: the tenth of the seventh month, linen, the bull, incense, the mercy seat, two goats; 16:21, 22, 30; inward and outward | atonement, words | guides/offerings-and-purity.json (‘The Day of Atonement’); BSB | Repository |
+| Azazel: three readings; nothing offered to anyone but the LORD | atonement, words | leviticus/16.json `hard`, `words` | Repository; no side |
+| Yom Kippur the holiest day of the Jewish year; after AD 70 prayer, fasting, confession; the service still recited; repentance with the day, and the neighbor first (m. Yoma 8:8-9) | atonement, timeline | leviticus/16.json (`historical`, `hard` and its closing notes); guides/offerings-and-purity.json | Repository |
+| Hebrews 9:12; 10:1-4; Jews and Christians differ over where the way is found since AD 70 | atonement | guides/offerings-and-purity.json (last section); BSB | Repository |
+| Chapter 19's commands; 19:18; 19:34; the neighbor a fellow Israelite and the love extended to the foreigner; Hillel and Akiva | holiness, words | leviticus/19.json `historical`, `words` (H7453, H1616); BSB | Repository |
+| Chapter 18 and Molech as the killing of children; chapter 20's penalties as Israel's civil law, not carried into the church | holiness | leviticus/18.json `historical`; leviticus/20.json `hard` | Repository |
+| 18:22 and 20:13: read in more than one way; no side; ‘nothing here gives anyone a reason for contempt toward any person’ | holiness | romans/plain/1.json (24-32 `hard`); 1-corinthians/plain/6.json (9-11 `hard`) | Repository; no side |
+| 21:16-23: the priest still eats the holy food; ‘Every person, with any disability or illness, is made by God and is precious to him.’ | holiness | leviticus/21.json `hard`; psalms/plain/139.json (13-18), word for word | Repository |
+| The feasts of chapter 23; booths; kept by Jewish communities; Colossians 2:16-17, Romans 14:5-6; Easter and Pentecost | time | leviticus/23.json `hard`, `words`, `historical` | Repository; no side |
+| Sabbath year, Jubilee, 25:10, 25:23; no clear record of a Jubilee | time, words | leviticus/25.json `historical`, `words`; BSB | Repository |
+| 25:44-46: ‘That is in the text, and it cannot be explained away’; the misuse in the Atlantic trade and the American South | time | exodus/plain/21.json (1-6 `hard`); exodus/intro.json `teaching` (law); guides/reading-law.json | Repository |
+| Chapter 26 addressed to the nation; not a verdict on a person; John 9:3; 26:44 | time | leviticus/26.json `hard`; BSB | Repository |
+| Matthew 5:17; Romans 7:12; Mark 7:19; Acts 10:15; Hebrews 10:1 | christians-and-the-law | guides/reading-law.json (‘Christ and the Law’); BSB | BSB text |
+| The threefold division (Aquinas, Calvin, Westminster 1646); law and gospel; dispensational and New Covenant readers and ‘the law of Christ’; theonomy and its rejection by most Reformed churches | christians-and-the-law | guides/reading-law.json; exodus/plain/21.json (1-6 `hearers`) | Repository; no side |
+| Seventh-day Adventists; Jewish believers in Jesus; Romans 14 | christians-and-the-law | leviticus/11.json `hard`; leviticus/23.json `hard`; acts/plain/10.json (9-16 `hard`) | Repository |
+| Jewish tradition: commands binding on Jews, a gift studied and loved; many kept only while the temple stood | christians-and-the-law | guides/reading-law.json (first section); leviticus/19.json `hard` | Repository |
+| Hebrews 10:12; 1 Peter 1:16; Romans 13:10 | christians-and-the-law | BSB | BSB text |
+| Hebrews 8:5, 9:12, 13:12; Romans 3:25 and the mercy seat; Ephesians 5:2 and the pleasing aroma; 1 Peter 1:19 | new-testament | leviticus/intro.json `christ`; leviticus/1.json `christ`; leviticus/16.json `words` (H3727); BSB | Repository |
+| Jesus and the unclean (Mark 1:41, 44; 5:27, 41) | new-testament | guides/offerings-and-purity.json (‘Purity in the time of Jesus’) | Repository |
+| Mark 12:31; Galatians 5:14; James 2:8; 2 Corinthians 6:16; Revelation 21:3 | new-testament | BSB | BSB text |
+| ‘A shadow is real’; contempt for Jews rejected, with the pointer to Acts 2:22-28 | new-testament | hebrews/plain/8.json (1-6 `hard`); exodus/intro.json `teaching` (new-testament) | Repository |
+| Antiochus IV about 167 BC and the books of Maccabees; Yohanan ben Zakkai and Hosea 6:6; prayer, study and kindness; Minchah | readers, timeline | leviticus/11.json `historical`; guides/offerings-and-purity.json; leviticus/2.json `historical` | Repository |
+| The second of February; the thanksgiving of a mother; the Liberty Bell; slavery's defenders and opponents | readers | leviticus/12.json `historical`; leviticus/25.json `historical`, `hard` | Repository |
+| Douglas; Milgrom's three volumes (1991 to 2001), the standard work; ‘choose life’ | readers, timeline | guides/offerings-and-purity.json; leviticus/intro.json `reading` | Repository |
+| Timeline: Ebla; Ugarit; the Gezer tablet (found 1908); Ketef Hinnom; 587 or 586 BC and 2 Chronicles 36:21; Ezekiel 44; Malachi 1:8; the Mishnah and Yoma; Tyndale 1530; 1873; Klostermann 1877 | timeline | leviticus/16.json, 23.json, 26.json, 21.json, 22.json, 13.json, 17.json `historical`; guides/offerings-and-purity.json | Repository |
+| Map: Goshen and Canaan as regions, at the points Genesis and Exodus already use; 18:3, 25:38, 26:13 | map | genesis/intro.json and exodus/intro.json `teaching.map`; BSB | Repository |
+| Go deeper: three Study Bible guides, five doctrine studies, two context guides | deeper | bible/guides/*.json; bible/doctrines.json; context/guides/*.json; routes in App.tsx | Repository |
+
+Cut or narrowed before publishing: the origin of the English name Leviticus (not in the repository); that chapter 16 is the center ‘of the five books’ (the repository says only the center of the book); ‘the most solemn day’ (the deep note's word is ‘holiest’); that Tyndale coined ‘scapegoat’ while translating the Torah (the guide gives only the name and the year); a description of Milgrom not found in the repository; ‘tahor’ (the lexicon notes give the verb taher); Mount Sinai on the map (no verified point). Length: 6,194 words in fourteen parts, longer than Exodus's page, because this book needed its own parts on clean and unclean and on how Christians relate to its laws.
+
+## The plain notes on Leviticus 1 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Leviticus opens where Exodus 40:35 ends; God takes the first step; Vayikra | 1-2 | leviticus/1.json `story`, `literary`, `doctrines` (god) | Repository |
+| Qorban, from ‘to come near’; Corban in Mark 7:11 | 1-2 | leviticus/1.json `words` (H7133A) | Repository |
+| The laws follow the rescue | 1-2 | leviticus/intro.json `reading` | Repository |
+| Exodus 40:34; Hebrews 10:22 | 1-2 | BSB | BSB text |
+| The whole animal burned; the hide to the priest (7:8); olah from ‘to go up’; the worshiper's own work; the priests' part | 3-9 | leviticus/1.json `cultural`, `words` (H5930A) | Repository |
+| Tamim, whole; nothing flawed or left over | 3-9 | leviticus/1.json `words` (H8549G) | Repository |
+| The laying on of the hand: ownership, or the animal in the worshiper's place | 3-9 | leviticus/1.json `words` (H5564) | Repository; no side |
+| The pleasing aroma as acceptance, not hunger; the Babylonian flood stories | 3-9 | leviticus/1.json `cultural` | Repository |
+| Noah and Job; morning and evening at the temple until AD 70 | 3-9 | leviticus/1.json `historical` | Repository |
+| Genesis 8:20-21; Psalm 50:13; Malachi 1:8; Ephesians 5:2; 1 Peter 1:19 | 3-9 | leviticus/1.json `christ`, `words`; BSB | BSB text |
+| ‘A shadow is real’ | 3-9 | hebrews/plain/8.json (1-6 `hard`) | Repository |
+| Why sacrifice: what the text does not say; gift, substitution, communion; the prophets; Christians and Hebrews 10; Judaism since AD 70 | 3-9 | leviticus/1.json `hard` | Repository; no side |
+| Romans 12:1 | 3-9 | leviticus/1.json `christ`; BSB | BSB text |
+| The same order and the same refrain for each case; a bull costly, a sheep or goat less so | 10-13 | leviticus/1.json `literary`, `cultural` | Repository |
+| Genesis 22:8, 13; John 1:29 | 10-13 | leviticus/1.json `christ`; BSB | BSB text |
+| A bird within reach of almost anyone; the provision for the poor made explicit in 5:7 and 12:8; Luke 2:24 | 14-17 | leviticus/1.json `cultural` | Repository |
+| Mark 12:43 | 14-17 | BSB | BSB text |
+
+Cut before publishing: a reason for the north side of the altar (the text gives none, and the note says so); the Greek name of the offering and the English word that comes from it (true to the deep note, but a detour for a new reader).
+
+## The plain notes on Leviticus 2 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No animal and no blood; the text never says it atones; a gift of the fruit of work | 1-3 | leviticus/2.json `story` | Repository |
+| Minchah as a present or tribute; Jacob's present to Esau; Cain's offering | 1-3 | leviticus/2.json `words` (H4503G) | Repository |
+| Fine flour; frankincense from southern Arabia and the Horn of Africa | 1-3 | leviticus/2.json `historical` | Repository |
+| The memorial portion, from ‘to remember’; the rest for the priests, eaten in the holy place (6:16); priests without land | 1-3 | leviticus/2.json `cultural`, `words` (H0234) | Repository |
+| Brought with the burnt and peace offerings; the evening offering; the afternoon prayer called Minchah | 1-3 | leviticus/2.json `story`, `historical` | Repository |
+| Genesis 4:3; Psalm 141:2; Acts 10:4 and the Greek word; 1 Corinthians 9:13 | 1-3 | leviticus/2.json `words`, `doctrines` (church); BSB | BSB text |
+| The oven, the griddle and the pan; a household's own bread | 4-10 | leviticus/2.json `cultural` | Repository |
+| Direct address; ‘it is a grain offering’; verses 8-10 repeat verses 2-3 | 4-10 | leviticus/2.json `literary` | Repository |
+| Deuteronomy 26:10; Philippians 4:18; Hebrews 13:16; the New Testament does not interpret the chapter directly | 4-10 | leviticus/2.json `christ`; BSB | BSB text |
+| Leaven and honey: perhaps fermentation and decay; allowed as firstfruits; the leavened loaves of 23:17 | 11-16 | leviticus/2.json `cultural` | Repository |
+| Salt as permanence and loyalty; shared salt; the salt of the covenant | 11-16 | leviticus/2.json `cultural`, `doctrines` (covenant), `words` (H4417M) | Repository |
+| Firstfruits as trust for the rest | 11-16 | leviticus/23.json `words` (H1061) | Repository |
+| Numbers 18:19; 2 Chronicles 13:5; Luke 12:1; 1 Corinthians 5:8; Matthew 5:13 | 11-16 | leviticus/2.json `words` (H2557A), `christ`; BSB | BSB text |
+
+Cut before publishing: how leaven was made from old dough (not in the repository).
+
+## The plain notes on Leviticus 3 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The one sacrifice the worshiper ate; how it was shared (7:31-34); the meal described before the remedy for failure | 1-5 | leviticus/3.json `story` | Repository |
+| Meat not everyday food; flocks as wealth | 1-5 | leviticus/3.json `cultural` | Repository |
+| Shelamim and shalom; the three translations; a celebration, not a payment | 1-5 | leviticus/3.json `words` (H8002) | Repository |
+| The fat: suet round the organs, the richest part, ‘the best of anything’ | 1-5 | leviticus/3.json `cultural`, `words` (H2459) | Repository |
+| Male or female; no provision for birds | 1-5 | leviticus/3.json `literary` | Repository |
+| Exodus 24:5, 11; Deuteronomy 12:7; Ephesians 2:14; 1 Corinthians 10:18; the links are of theme | 1-5 | leviticus/3.json `doctrines` (covenant), `christ`; BSB | BSB text |
+| Three like paragraphs; the same footing; the fat-tailed sheep | 6-16 | leviticus/3.json `literary`, `cultural` | Repository |
+| ‘Food’ as shared vocabulary without the belief; Psalm 50:12 | 6-16 | leviticus/3.json `cultural` | Repository |
+| Liver divination; clay models in Mesopotamia and at Hazor; ‘some scholars suggest’; no reason given | 6-16 | leviticus/3.json `cultural` | Repository |
+| Eli's sons (1 Samuel 2:16-17) | 6-16 | leviticus/3.json `historical`; BSB | BSB text |
+| The rule reaches every home; the two roots (Genesis 9:4; 17:11; 7:23-25); Jewish practice keeps both | 17 | leviticus/3.json `hard`, `doctrines` (holiness, law), `words` (H2459) | Repository |
+| Acts 15:20; Mark 7:19; the two Christian answers | 17 | leviticus/3.json `hard`; acts/plain/15.json (12-21 `hard`) | Repository; no side |
+
+Cut before publishing: a reason why birds are not listed (the deep note gives none); Elkanah's shares at Shiloh (left to the deep note).
+
+## The plain notes on Leviticus 4 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A new subject after the freely given offerings; the ordinary, unplanned wrong; guilt real before it is known | 1-12 | leviticus/4.json `story`, `doctrines` (sin); leviticus/5.json `hard` | Repository |
+| Chatta't: sin, and to purify; the purification offering; brought after childbirth | 1-12 | leviticus/4.json `words` (H2403H) | Repository |
+| Arranged by rank; the anointed priest later called the high priest; his sin brings guilt on the people | 1-12 | leviticus/4.json `historical`, `literary` | Repository |
+| Where the blood goes; the horns of the altar | 1-12 | leviticus/4.json `cultural` | Repository |
+| Milgrom: sin pollutes the sanctuary; Gane: the offender cleansed and the sanctuary purged yearly; sin not private | 1-12 | leviticus/4.json `cultural` | Repository; no side |
+| The priest's case lacks the forgiveness line; no agreed reason | 1-12 | leviticus/4.json `literary` | Repository |
+| Hebrews 13:11-12; 5:3; 7:27; ‘a shadow is real’ | 1-12 | leviticus/4.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| The elders act for all; the same bull and the same places; priest and people together | 13-21 | leviticus/4.json `historical`, `literary` | Repository |
+| Salach: only God forgives; the priest acts, God forgives | 13-21 | leviticus/4.json `words` (H5545) | Repository |
+| Mesopotamian prayers for unknown sins; a different world | 13-21 | leviticus/4.json `historical` | Repository |
+| Numbers 15:30; Leviticus 16:16; Psalm 19:12 | 13-21 | BSB | BSB text |
+| Deliberate sin: 6:1-7; the Day of Atonement; David and Psalm 51:17; the defiant sin set apart; the rabbinic saying; 1 John 1:9 | 13-21 | leviticus/4.json `hard`; BSB | Repository |
+| ‘If you are afraid that you have fallen away from God ... places to turn.’ | 13-21 | hebrews/plain/10.json (26-31 `hard`), word for word | Repository |
+| The leader as nasi, a tribal head; Ezekiel 45:22; a smaller offering, blood at the courtyard altar; rank raises the stakes | 22-26 | leviticus/4.json `historical`, `cultural`, `doctrines` (holiness) | Repository |
+| The rabbinic comment on asher and ashrei | 22-26 | leviticus/4.json `literary` | Repository |
+| Luke 12:48; James 3:1 | 22-26 | BSB | BSB text |
+| ‘The people of the land’; the cost shrinks, the result does not; the refrain | 27-35 | leviticus/4.json `historical`, `literary` | Repository |
+| Psalm 32:5; Psalm 130:3-4; Romans 8:3 and the Greek phrase | 27-35 | leviticus/4.json `christ`; BSB | BSB text |
+
+Cut before publishing: the horned altar found at Beersheba and the fugitive at the altar (true to the deep note, a detour here); 2 Corinthians 5:21, on which the deep note says interpreters differ; a newly worded care sentence, replaced by the Hebrews 10 line used whole.
+
+## The plain notes on Leviticus 5 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The same offering, now by situation; the public curse on a silent witness; Judges 17:2; village justice | 1-6 | leviticus/5.json `story`, `historical` | Repository |
+| Uncleanness from a carcass not sinful in itself; the fault is neglect (11:24-28) | 1-6 | guides/offerings-and-purity.json (‘What was sinful was to ignore it’); BSB | Repository |
+| Confession required; the offering follows the admission; yadah as confess and praise | 1-6 | leviticus/5.json `doctrines` (repentance), `words` (H3034) | Repository |
+| Proverbs 29:24; 28:13; Psalm 32:3; 1 John 1:9 | 1-6 | leviticus/5.json `historical`, `christ`; BSB | BSB text |
+| The sliding scale and real poverty; cheap birds; a tenth of an ephah, about two liters; no oil or frankincense; burned on top of the other offerings | 7-13 | leviticus/5.json `cultural` | Repository |
+| The same promise at each level; atonement not a privilege of the wealthy | 7-13 | leviticus/5.json `literary`, `doctrines` (atonement) | Repository |
+| Luke 2:24; Hebrews 9:22 and ‘nearly’; Luke 21:3 | 7-13 | leviticus/5.json `christ`; guides/offerings-and-purity.json; BSB | BSB text |
+| Asham: guilt, penalty, offering; the reparation offering | 14-19 | leviticus/5.json `words` (H0817) | Repository |
+| The holy things; a breach of trust; maal used of marital unfaithfulness; repayment plus a fifth; forgiveness through repayment | 14-19 | leviticus/5.json `cultural`, `words` (H4604) | Repository |
+| The shekel a weight, not a coin; the sanctuary's standard weight | 14-19 | leviticus/5.json `historical` | Repository |
+| Isaiah 53:10; Mark 10:45 (‘many scholars hear an echo’); Malachi 3:8 | 14-19 | leviticus/5.json `christ`; BSB | BSB text |
+| Guilt without knowledge: liability; the driver and the fence; the two readings (objective guilt; Milgrom, ‘feels guilty’) | 14-19 | leviticus/5.json `hard` | Repository; no side |
+| ‘If you are a person whose conscience never rests ... places to turn.’ | 14-19 | 2-corinthians/plain/13.json (5-10 `hard`), word for word, with the book's name added to its pointer (‘The note on 2 Corinthians 7:8-12’) so that the pointer stays true outside that letter | Repository |
+
+Cut before publishing: the Philistines' guilt offering of gold (1 Samuel 6:3) and the date of the first coins (true to the deep note, detours here); a lead-in sentence to the care line.
+
+## The plain notes on Leviticus 6 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Deposits in a world without banks; the oath before the LORD (Exodus 22:11); the man no court has caught | 1-7 | leviticus/6.json `historical` | Repository |
+| Cheating a neighbor is unfaithfulness against the LORD; repayment first, then the altar; a deliberate sin with a way back | 1-7 | leviticus/6.json `story`, `doctrines` (law, repentance); leviticus/4.json `hard` | Repository |
+| Numbers 5:7; Matthew 5:24; Luke 19:8-9 | 1-7 | leviticus/6.json `christ`; BSB | BSB text |
+| The audience changes at verse 8; ‘this is the law of’; torah as instruction | 8-13 | leviticus/6.json `story`, `literary`, `words` (H8451) | Repository |
+| The fire named three times; linen for the ashes, then a change of clothes | 8-13 | leviticus/6.json `literary`, `cultural` | Repository |
+| Leviticus 9:24; Hebrews 7:25, a link of theme only; the fire sometimes allegorized | 8-13 | leviticus/6.json `christ`; BSB | BSB text |
+| How the priests eat the grain offering; priests without farmland; the priest's own offering burned whole, morning and evening | 14-23 | leviticus/6.json `cultural`, `literary`; leviticus/2.json `cultural` | Repository |
+| Holiness as a state that passes by touch; the readings (statement, warning, mainly objects) | 14-23 | leviticus/6.json `hard`, `doctrines` (holiness) | Repository; no side |
+| Haggai 2:12-13; Ezekiel 44:19; 1 Corinthians 9:13 | 14-23 | leviticus/6.json `hard`, `historical`; BSB | BSB text |
+| The sin offering most holy; the garment, the clay pot and the bronze pot; offerings whose blood entered the tent are burned | 24-30 | leviticus/6.json `cultural`; leviticus/4.json `cultural` | Repository |
+| Leviticus 10:17; Hebrews 13:11-12 | 24-30 | leviticus/4.json `christ`; BSB | BSB text |
+
+Cut before publishing: that the priests kept alive ‘what God had lit’ (the order of chapters 8 and 9 does not allow it to be said so simply); the Laws of Hammurabi on deposits and Egyptian priests' linen (true to the deep note, detours here); the different verse numbers of the Hebrew Bible.
+
+## The plain notes on Leviticus 7 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The guilt offering handled like the sin offering; which priest keeps what | 1-10 | leviticus/7.json `literary`; BSB | Repository |
+| Priests without land living from the altar; Eli's sons (1 Samuel 2:12-17) | 1-10 | leviticus/7.json `historical`, `doctrines` (church); leviticus/3.json `historical` | Repository |
+| Numbers 18:20; 1 Corinthians 9:14 | 1-10 | BSB | BSB text |
+| Three kinds of peace offering; the thanksgiving feast and the psalms; vows paid with a feast | 11-21 | leviticus/7.json `historical`, `words` (H8426), `doctrines` (prayer) | Repository |
+| The time limits pushed the giver to invite others; leavened loaves eaten, not burned | 11-21 | leviticus/7.json `cultural` | Repository |
+| Holy food and clean eaters | 11-21 | leviticus/7.json `doctrines` (holiness) | Repository |
+| Psalm 116:17-18; Psalm 107:22; Jeremiah 33:11; Hebrews 13:15; Luke 22:19; the two views of the background of the Lord's Supper | 11-21 | leviticus/7.json `historical`, `christ`; BSB | BSB text; no side |
+| ‘Cut off’: four times here; execution, expulsion, or a penalty carried out by God; 20:3-5; offenses out of sight | 11-21 | leviticus/7.json `hard` | Repository; no side |
+| Addressed to all Israel; the fat of the three sacrificial animals; blood forbidden more widely; 17:11; Genesis 9:4 | 22-27 | leviticus/7.json `literary`; leviticus/3.json `hard`, `doctrines` | Repository |
+| ‘With his own hands’; the wave offering as a lifting up; food that passed through God's hands | 28-38 | leviticus/7.json `cultural`, `words` (H8573) | Repository |
+| The summary; the ordination offering not yet described, and chapter 8 | 28-38 | leviticus/7.json `story` | Repository |
+| Exodus 29:26-28; Deuteronomy 18:3 and the two explanations; ‘the text does not explain it’ | 28-38 | leviticus/7.json `historical`; BSB | Repository; no side |
+
+Cut before publishing: the care line from the 1 Corinthians 5 note (it names Paul and could not be used whole here); Proverbs 7:14 (true to the deep note, a detour); the Greek word behind ‘Eucharist’.
+
+## The plain notes on Leviticus 8 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Law becomes story; Exodus 29 carried out; command and fulfillment as with the tabernacle | 1-13 | leviticus/8.json `story` | Repository |
+| Aaron and the calf; Deuteronomy 9:20; the office begins in mercy | 1-13 | leviticus/8.json `story`, `hard` | Repository |
+| Washing, clothing, anointing as changes of status; the breastpiece and the names over his heart (Exodus 28:29) | 1-13 | leviticus/8.json `cultural` | Repository |
+| Urim and Thummim: hard cases, probably a sacred lot, appearance not described | 1-13 | leviticus/8.json `historical` | Repository |
+| Mashach, mashiach, Christos | 1-13 | leviticus/8.json `words` (H4886), `doctrines` (messiah) | Repository |
+| Holiness given, not achieved; the refrain six times (verses 4, 9, 13, 17, 21, 29) | 1-13 | leviticus/8.json `doctrines` (holiness), `literary` | Repository |
+| Exodus 29:9; Psalm 133:2; Hebrews 5:4-5 | 1-13 | leviticus/8.json `cultural`, `christ`; BSB | BSB text |
+| Why Aaron: Exodus 32:24; God's choice before the calf; Moses' prayer; the sin offering; Hebrews 5:2 | 1-13 | leviticus/8.json `hard` | Repository |
+| Atonement for the priests first; the altar purified; Moses as priest, to install and not to hold the office | 14-21 | leviticus/8.json `doctrines` (atonement), `literary` | Repository |
+| Hebrews 5:3; 7:27; ‘a shadow is real’ | 14-21 | leviticus/8.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| Ordination as ‘filling the hand’; ear, thumb and toe: the whole person, the right side, hearing, doing, walking (‘the chapter does not say it’); the same marks on the cleansed person (14:14) | 22-30 | leviticus/8.json `cultural`, `words` (H4394) | Repository |
+| 1 Peter 2:9; Catholic and Orthodox, and Protestant, use of ‘priest’ | 22-30 | leviticus/8.json `christ`; guides/offerings-and-purity.json (‘Priests and Levites’) | Repository; no side |
+| Seven times and seven days | 31-36 | leviticus/8.json `literary` | Repository |
+| Numbers 20:28; Hebrews 7:25 | 31-36 | leviticus/8.json `story`; BSB | BSB text |
+
+Cut before publishing: ‘seven is the number of completeness’ (not in the repository's notes on this chapter); the later history of the high priesthood (Eleazar, Zadok, AD 70), left to the deep note.
+
+## The plain notes on Leviticus 9 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everything since Exodus 40 leads here; the promise made twice (verses 4, 6) | 1-7 | leviticus/9.json `story`, `literary` | Repository |
+| The eighth day as a new beginning (12:3; 14:10) | 1-7 | leviticus/9.json `words` (H8066) | Repository |
+| Aaron's calf and the later Jewish reading | 1-7 | leviticus/9.json `cultural` | Repository |
+| Kavod, heavy or weighty; God's visible presence; Exodus 40:34; John 1:14 | 1-7 | leviticus/9.json `words` (H3519), `christ`; BSB | BSB text |
+| Aaron acts as priest for the first time; the priest atoned for first | 8-21 | leviticus/9.json `literary`, `doctrines` (atonement) | Repository |
+| The order: sin offering, burnt offering, peace offering (‘many interpreters have noticed’) | 8-21 | leviticus/9.json `cultural`; guides/offerings-and-purity.json (Rainey, not named) | Repository |
+| ‘As the LORD had commanded Moses’; ‘according to the ordinance’ | 8-21 | leviticus/9.json `literary` | Repository |
+| Hebrews 5:1; 2 Chronicles 7:1 | 8-21 | BSB | BSB text |
+| The high point of the first half; the fire as acceptance and welcome | 22-24 | leviticus/9.json `story`, `doctrines` (god) | Repository |
+| The lifted hands; a blessing as a spoken act; the words not given here; some synagogues today | 22-24 | leviticus/9.json `cultural`, `historical` | Repository |
+| The ringing cry and the prostration; awe with gladness | 22-24 | leviticus/9.json `cultural` | Repository |
+| The wording returns in 10:2; the same day | 22-24 | leviticus/9.json `literary`, `story` | Repository |
+| Numbers 6:24-26; 2 Chronicles 7:1; 1 Kings 18:38; Luke 24:50 (‘many readers’; a link of theme) | 22-24 | leviticus/9.json `historical`, `christ`; BSB | BSB text |
+
+Cut before publishing: the Ketef Hinnom scrolls (on the book page's timeline already); Zechariah's silence in Luke 1 and Hebrews 9:24, 28 (true to the deep note, left there).
+
+## The plain notes on Leviticus 10 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The same day as chapter 9; the wording of 9:24 returns in 10:2 | 1-7 | leviticus/10.json `story`, `literary` | Repository |
+| Aaron's eldest sons; they went up Sinai and saw God (Exodus 24:9-11) | 1-7 | leviticus/10.json `story`; BSB | BSB text |
+| The censer; zarah, strange or unauthorized; ‘which he had not commanded them’ against the refrain of chapters 8 and 9 | 1-7 | leviticus/10.json `cultural`, `words` (H2114A), `literary` | Repository |
+| The saying of verse 3 interprets the event; holiness shown in those nearest | 1-7 | leviticus/10.json `literary`, `doctrines` (holiness, judgment) | Repository |
+| New beginnings followed by failure (the garden, the calf, Ananias and Sapphira) | 1-7 | leviticus/10.json `story` | Repository |
+| The signs of mourning; the priests under the anointing; the grief carried by the people | 1-7 | leviticus/10.json `cultural` | Repository |
+| Aaron's silence: the verb, and the three ways it has been read | 1-7 | leviticus/10.json `words` (H1826H) | Repository; no side |
+| Numbers 3:4; Leviticus 16:1; Hebrews 12:28-29; 4:16 | 1-7 | leviticus/10.json `historical`, `christ`; BSB | BSB text |
+| Why they died: the one explanation; the four proposals; the details left open; the founding moment; Uzzah, Ananias and Sapphira; rare, never God's normal way; the offerings of chapters 4 and 5; the grief not made small | 1-7 | leviticus/10.json `hard` | Repository; no side |
+| Elisheba their mother (Exodus 6:23); ‘If you have lost a child, or carry a grief like hers ... places to turn.’ | 1-7 | leviticus/10.json `historical`; exodus/plain/11.json (4-8 `hard`), word for word | Repository |
+| God speaks to Aaron alone, one of the few such speeches | 8-11 | leviticus/10.json `literary` | Repository |
+| The wine rule tied to the two tasks; badal and Genesis 1; chapters 11 to 15 as the content; priests as teachers | 8-11 | leviticus/10.json `cultural`, `words` (H0914), `doctrines` (law); leviticus/11.json `story` | Repository |
+| Ezekiel 44:21, 23; Malachi 2:7; 1 Timothy 3:2-3 | 8-11 | leviticus/10.json `cultural`; BSB | BSB text |
+| The priests' portions still given; the goat that should have been eaten (6:26, 30); Moses angry, Aaron answers, Moses accepts, ‘unusually’ | 12-20 | leviticus/10.json `literary`; leviticus/6.json | Repository |
+| Hosea 6:6; Hebrews 5:2 | 12-20 | BSB | BSB text |
+
+Cut before publishing: the cousins' names and the family tree; Korah's 250 men and King Uzziah (true to the deep note, left there); 1 Peter 4:17. The note says in its own words that the story is not a threat held over ordinary worshipers; that sentence rests on the deep note's ‘never presented as God's normal way with his people’.
+
+## The plain notes on Leviticus 11 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 11 to 15 as the content of 10:10-11; food first as the most constant part of life | 1-8 | leviticus/11.json `story` | Repository |
+| Unclean animals are God's creatures, not evil; ‘unclean for you’; a foreigner could eat (Deuteronomy 14:21); a calling, not a universal diet | 1-8 | leviticus/11.json `doctrines` (creation), `hard` | Repository |
+| Sorted by what an observer could see; the hyrax and the hare | 1-8 | leviticus/11.json `cultural` | Repository |
+| Genesis 1:29; 9:3; Deuteronomy 14:3; Daniel 1:8 | 1-8 | leviticus/11.json `story`, `historical`; BSB | BSB text |
+| The three realms of Genesis 1; ‘any kind of’ and ‘according to their kinds’ | 9-23 | leviticus/11.json `literary` | Repository |
+| Uncertain bird names; birds of prey and carrion eaters; the bat | 9-23 | leviticus/11.json `cultural` | Repository |
+| ‘Detestable’ as the stronger word; a related word used for idols | 9-23 | leviticus/11.json `words` (H8263) | Repository |
+| Matthew 3:4; Matthew 23:24 (the gnat and the camel, Leviticus 11:4, 41); Luke 15:15-16 | 9-23 | matthew/plain/23.json (23-28 `ot`); BSB | BSB text |
+| Carcass uncleanness not sin, over by evening; pots, cloth, seed and water; the spring and cistern as a merciful exception | 24-40 | leviticus/11.json `cultural` | Repository |
+| Most sources of uncleanness linked with death | 24-40 | guides/offerings-and-purity.json (Milgrom and Wenham) | Repository |
+| Numbers 19:11; Mark 5:41; life passing the other way | 24-40 | guides/offerings-and-purity.json (‘Purity in the time of Jesus’); BSB | BSB text |
+| The first use of ‘be holy, because I am holy’; the motto of chapters 17 to 26; holiness at the kitchen table; the exodus as the ground | 41-47 | leviticus/11.json `literary`, `doctrines` (holiness) | Repository |
+| 20:26; the laws marked Israel off | 41-47 | leviticus/11.json `doctrines` (covenant); BSB | Repository |
+| Antiochus IV about 167 BC and the books of Maccabees | 41-47 | leviticus/11.json `historical` | Repository |
+| Jewish families keep these laws today ‘with love and care’ | 41-47 | acts/plain/10.json (9-16 `hearers`, `hard`) | Repository |
+| 1 Peter 1:15-16; Mark 7:18-19; Acts 10:15, 28 | 41-47 | leviticus/11.json `christ`; BSB | BSB text |
+| Why unclean: health (Maimonides) and its critics; pagan worship; Mary Douglas; Milgrom; the text's own reason | 41-47 | leviticus/11.json `hard` | Repository; no side |
+| Christian practice: most churches; whether Jesus himself set the laws aside (pointer to Mark 7:14-23); Acts 10 first about people; Adventists; Jewish believers in Jesus; Romans 14:3; the laws not foolish | 41-47 | leviticus/11.json `hard`; mark/plain/7.json (14-23 `hard`); acts/plain/10.json (9-16 `hard`) | Repository; no side |
+
+Cut before publishing: that locusts are still eaten in some places (not in the repository); pig bones at Iron Age sites (the deep note says archaeologists debate what the pattern shows); Ephesians 2:15 and Colossians 2:17 (left to the deep note, since the book page already gives the Christian accounts); the later Jewish law built on verse 38.
+
+## The plain notes on Leviticus 12 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first purity law about the body; birth never shameful; Genesis 1:28; Psalm 127:3 | 1-5 | leviticus/12.json `story`; BSB | Repository |
+| Milgrom's common thread: life-fluids and the nearness of death; birth on that boundary; the danger of childbirth; Rachel (Genesis 35:17-18) | 1-5 | leviticus/12.json `hard`, `historical` | Repository |
+| Two stages; the second without passing uncleanness to others (‘most interpreters’); ‘days of her purification’ looks forward | 1-5 | leviticus/12.json `cultural`, `words` (H2892A) | Repository |
+| Forty days and the weeks of bleeding; a rest from public worship; traditional cultures | 1-5 | leviticus/12.json `cultural` | Repository |
+| Circumcision on the eighth day as the covenant sign (Genesis 17:12) | 1-5 | leviticus/12.json `doctrines` (covenant); BSB | BSB text |
+| Luke 2:21-22; Galatians 4:4 | 1-5 | leviticus/12.json `christ`; BSB | BSB text |
+| Uncleanness not sin, with 15:18 and Numbers 19:11 as like cases | 1-5 | leviticus/12.json `hard`; guides/offerings-and-purity.json; leviticus/intro.json `teaching` (clean-and-unclean) | Repository |
+| The doubled period: no stated reason; the three suggestions; the same offering for a daughter | 1-5 | leviticus/12.json `hard` | Repository; no side |
+| The service of thanksgiving for a mother | 1-5 | leviticus/12.json `historical` | Repository |
+| ‘A word for anyone who has been made to feel unclean ... places to turn.’ | 1-5 | leviticus/intro.json `teaching` (clean-and-unclean), word for word; its last three sentences are from acts/plain/3.json (1-10 `hard`) | Repository |
+| The offerings as her return; the purification offering implies no sin; atonement wider than moral wrong | 6-8 | leviticus/12.json `cultural`, `doctrines` (atonement) | Repository |
+| The same offering for son and daughter; the provision for the poor repeats 5:7 | 6-8 | leviticus/12.json `cultural`, `doctrines` (family) | Repository |
+| Luke 2:24 and a household that could not afford a lamb; 1 Samuel 1:24 | 6-8 | leviticus/12.json `christ`; BSB | BSB text |
+
+Cut before publishing: ‘for many centuries’ of the churches' service (the deep note gives no span); the date of Candlemas (on the book page already); a question addressed to mothers about the day of a birth, which could wound a reader whose child died or whose labor was traumatic.
+
+## The plain notes on Leviticus 13 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| God in the camp and the practical question | 1-17 | leviticus/13.json `story` | Repository |
+| Tsara'at: ‘leprosy’ from the Greek translation; not Hansen's disease; the symptoms; several conditions; the same word for mildew | 1-17 | leviticus/13.json `historical`, `words` (H6883); mark/plain/1.json (40-45) | Repository |
+| The priest not a physician; the refrain of pronouncing; patience and waiting periods | 1-17 | leviticus/13.json `cultural`, `doctrines` (law) | Repository |
+| The chapter never calls the sick a sinner; unclean not sinful | 1-17 | leviticus/13.json `hard`, `cultural` | Repository |
+| Verses 12-13: the concern is raw, changing flesh | 1-17 | leviticus/13.json `cultural` | Repository |
+| 2 Kings 5:1; 7:3-9; Luke 17:12, 14 | 1-17 | leviticus/13.json `christ`; BSB | BSB text |
+| Case law as a priestly manual; the fixed order of verbs | 18-44 | leviticus/13.json `literary` | Repository |
+| Job 2:7 and his friends; John 9:2-3 | 18-44 | leviticus/26.json `hard`; john/plain/9.json (1-7); BSB | BSB text |
+| Torn clothes and loose hair as mourning; the covered mouth; separation from family, worship and work | 45-46 | leviticus/13.json `cultural` | Repository |
+| Tied to the condition, not the person; the next chapter the way back | 45-46 | leviticus/13.json `hard` | Repository |
+| The disease looked like death; Miriam and Numbers 12:12, 15 | 45-46 | guides/offerings-and-purity.json; BSB | Repository |
+| Mark 1:40-41 and cleanness passing the other way; Hebrews 13:12-13 | 45-46 | leviticus/13.json `christ`; BSB | BSB text |
+| Why the sick were sent out: public health; Milgrom and Wenham; Mary Douglas; what the chapter does not say; exclusion hardening into contempt | 45-46 | leviticus/13.json `hard` | Repository; no side |
+| ‘Every person, with any disability or illness, is made by God and is precious to him. No one is a mistake.’ | 45-46 | psalms/plain/139.json (13-18 `hearers`), word for word | Repository |
+| ‘A word for anyone who has been made to feel unclean ... places to turn.’ | 45-46 | leviticus/intro.json `teaching` (clean-and-unclean), word for word | Repository |
+| The same word for cloth and leather; look, wait, look again; torah as instruction | 47-59 | leviticus/13.json `historical`, `literary`, `doctrines` (law) | Repository |
+| Leviticus 14:33-53; Jude 1:23 | 47-59 | BSB | BSB text |
+
+Cut before publishing: that cloth was costly and hand-woven (not in the repository); a sentence on how fear could turn on anyone with a mark (narrowed to the deep note's ‘hasty judgment’); nothing else. Miriam and King Uzziah, whose disease the Bible does present as a judgment, are named in the hard part, with the plain statement that this chapter makes no such link (leviticus/14.json `hard`; leviticus/10.json `historical`).
+
+## The plain notes on Leviticus 14 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The road back; a whole chapter for bringing home the excluded; the priest goes out | 1-9 | leviticus/14.json `story`, `cultural` | Repository |
+| The priest does not heal (13: ‘not a physician’); the rite marks a healing already there | 1-9 | leviticus/13.json `cultural`; leviticus/14.json `christ` | Repository |
+| Living water, hyssop and the first Passover; one bird killed and one freed; the two goats of chapter 16; shaving as a fresh start; three stages | 1-9 | leviticus/14.json `cultural`, `literary`, `words` (H6833) | Repository |
+| Exodus 12:22; Psalm 51:7; Mark 1:44 | 1-9 | leviticus/14.json `christ`; BSB | BSB text |
+| The marks repeat the ordination of the priests (8:23-24); a rite that echoes the priests' own | 10-20 | leviticus/14.json `cultural`; leviticus/8.json `cultural` | Repository |
+| Why a guilt offering: the two explanations | 10-20 | leviticus/14.json `words` (H0817) | Repository; no side |
+| Atonement where no sin is named; ‘clean’ nineteen times | 10-20 | leviticus/14.json `doctrines` (atonement), `words` (H2891) | Repository |
+| Leviticus 8:23; Hebrews 9:14; ‘a shadow is real’ | 10-20 | leviticus/14.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| The cost lowered; the full rite repeated; the third such provision (5:7; 12:8) | 21-32 | leviticus/14.json `cultural`, `historical`, `doctrines` (salvation) | Repository |
+| Matthew 11:5; Luke 17:17 | 21-32 | BSB | BSB text |
+| Houses of stone or mudbrick with plaster and beams; damp and mold; the same pattern as chapter 13 | 33-57 | leviticus/14.json `historical`, `literary` | Repository |
+| The house emptied first (verse 36); atonement for a house | 33-57 | BSB; leviticus/14.json `words` (H3722A) | BSB text |
+| Matthew 7:24; Psalm 127:1 | 33-57 | BSB | BSB text |
+| Verse 34: God's rule without punishment implied; the link some make with judgment and slander; ‘the text itself makes no such connection’ | 33-57 | leviticus/14.json `hard` | Repository; no side |
+| ‘No one should be told that their illness or disability is a punishment.’ | 33-57 | luke/plain/5.json (17-26 `hard`), word for word | Repository |
+
+Cut before publishing: that no one else in the law is marked on ear, thumb and toe (not stated in the repository); that the healed person was ‘more likely than most to be poor’ (narrowed); the modern sizes of the ephah and the log; the resemblance of the two birds to the gospel, which the deep note calls a resemblance and not a prediction.
+
+## The plain notes on Leviticus 15 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last of the clean and unclean chapters; frank and without shame | 1-15 | leviticus/15.json `story`, `doctrines` (humanity) | Repository |
+| Unclean not sinful; a temporary status; the laws apply to men and women alike | 1-15 | leviticus/15.json `cultural` | Repository |
+| The symmetry: long-term, ordinary, both together, ordinary, long-term; the same waiting and offering for both long-term cases | 1-15 | leviticus/15.json `literary` | Repository |
+| Zov, probably an infection; ‘evening’ fifteen times | 1-15 | leviticus/15.json `words` (H2101, H6153) | Repository |
+| Numbers 5:2-3; Ezekiel 36:25 | 1-15 | BSB | BSB text |
+| Husband and wife unclean until evening though marriage is a gift; no offering | 16-18 | leviticus/15.json `cultural`, `literary` | Repository |
+| The logic of life-fluids and mortality (‘many scholars’); separation from sexual rites, with the debate noted | 16-18 | leviticus/15.json `cultural` | Repository; no side |
+| Genesis 2:25; Exodus 19:15; Hebrews 13:4 | 16-18 | BSB | BSB text |
+| Niddah: a natural state without blame; the prophets' later use (Ezekiel 36:17) | 19-24 | leviticus/15.json `words` (H5079) | Repository |
+| Whether the chapter shames women: its structure; a status, not a verdict; uneven effects; later traditions; verse 31 as the stated reason; the woman in the Gospels | 19-24 | leviticus/15.json `hard` | Repository; no side |
+| ‘A word for anyone who has been made to feel unclean ... places to turn.’ | 19-24 | leviticus/intro.json `teaching` (clean-and-unclean), word for word | Repository |
+| The long-term case matches the man's; the purification offering implies no sin | 25-33 | leviticus/15.json `literary`, `doctrines` (atonement) | Repository |
+| Verse 31 as the key to chapters 11 to 15; chapter 16 as the yearly remedy, including what the laws could not catch | 25-33 | leviticus/15.json `story`, `doctrines` (holiness) | Repository |
+| Mark 5:25, 29, 34 and uncleanness not passing to Jesus; Hebrews 10:22 | 25-33 | leviticus/15.json `christ`; BSB | BSB text |
+
+Cut before publishing: the later immersion pool (mikveh), which the deep note says belongs to a later time than the text; purity rules in Egyptian, Mesopotamian and Hittite temples.
+
+## The plain notes on Leviticus 16 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The chapter reaches back to chapter 10; it gathers what chapters 11 to 15 could not reach; the center and hinge of the book | 1-5 | leviticus/16.json `story` | Repository |
+| The tent as rooms of rising holiness; only the high priest, only this day; plain linen like a servant's dress | 1-5 | leviticus/16.json `cultural` | Repository |
+| Hebrews 9:7; 10:19-20 | 1-5 | leviticus/16.json `christ`; BSB | BSB text |
+| Summary before detail; the priest atoned for first; God chooses by lot; two goats, two movements, not to be merged | 6-10 | leviticus/16.json `literary`, `teach` (outline, pitfalls) | Repository |
+| Azazel only in this chapter; BSB ‘scapegoat’ | 6-10 | leviticus/16.json `words` (H5799), `text` | Repository |
+| Proverbs 16:33; Leviticus 14:4-7 | 6-10 | leviticus/14.json `cultural`; BSB | BSB text |
+| Azazel: the parallel in verse 8; 1 Enoch; 17:7; Milgrom; the Greek and Latin and Tyndale (1530); the Talmud and Rashi; ‘complete removal’; only the LORD receives sacrifice; the word emptied of power; open | 6-10 | leviticus/16.json `hard` (second question), `words` | Repository; no side |
+| The high priest alone; the cloud of incense; coals from the altar | 11-19 | leviticus/16.json `cultural`; leviticus/10.json `cultural` | Repository |
+| Kapporet and kipper; the gold cover with the cherubim | 11-19 | leviticus/16.json `words` (H3727) | Repository |
+| Sin and uncleanness stain the dwelling ‘the way smoke stains a house’; impurities and rebellious acts; deliberate rebellion not covered by the ordinary sin offerings; sixteen times | 11-19 | leviticus/16.json `cultural`, `literary`, `words` (H3722A, H2932) | Repository |
+| Romans 3:25 and the Greek word; Hebrews 9:24; Matthew 27:51; ‘a shadow is real’ | 11-19 | leviticus/16.json `christ`; hebrews/plain/8.json; BSB | BSB text |
+| Both hands and a spoken confession; the words for wrong gathered; the wilderness beyond the camp; ‘a land cut off’ | 20-22 | leviticus/16.json `cultural`, `literary`, `teach` (pastoral) | Repository |
+| Ebla and the Hittite rites; no incantations or demons; confessed sin, not disease | 20-22 | leviticus/16.json `historical` | Repository |
+| Psalm 103:12; Micah 7:19; Isaiah 53:6; John 1:29; the live goat not explicitly tied to Christ; a link of likeness | 20-22 | leviticus/16.json `christ`; BSB | BSB text |
+| How a goat could deal with guilt: Hebrews 10:4; the philosophers' objection (Kant and Socinus, not named); repentance and m. Yoma 8:8-9; 17:11; Milgrom; the Christian reading and Hebrews 9:26; the Jewish reading; the disagreement real | 20-22 | leviticus/16.json `hard` (first question) | Repository; no side |
+| Yom Kippur the holiest day of the Jewish year; the chapter read that morning; the Avodah; not to be presented as empty or merely legal; a searching word to Christians | 20-22 | leviticus/16.json `story`, `interpretation`, `teach` (pitfalls) | Repository |
+| The linen left behind; burnt offerings after cleansing; the two men wash; offerings whose blood entered are burned (6:30) | 23-28 | leviticus/16.json `teach` (outline); leviticus/6.json | Repository |
+| Hebrews 13:11-13 | 23-28 | leviticus/16.json `christ`; BSB | BSB text |
+| ‘Humble yourselves’ as fasting; the only fast required by the law; received at rest; shabbat shabbaton and the Sabbath of Sabbaths; the foreigner; ‘a permanent statute’ three times; the ending reverses the opening | 29-34 | leviticus/16.json `cultural`, `literary`, `words` (H6031B, H7677) | Repository |
+| Leviticus 23:27; Isaiah 58:6 and the synagogue reading; Acts 27:9; Hebrews 10:3, 12 | 29-34 | leviticus/16.json `historical`, `interpretation`, `christ`; BSB | BSB text |
+
+Cut before publishing: that the two goats were chosen to look alike (a later tradition not in the repository); the blue of the high priest's robe; the Mishnah's five abstentions, the ravine of m. Yoma 6:6, the Temple Scroll, Philo and Josephus (true to the deep note, left there); the early Christian reading of the two goats as Christ suffering and returning, which the deep note says should not be pressed.
+
+## The plain notes on Leviticus 17 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 17 to 26 as the Holiness Code; Klostermann, 1877 | 1-9 | leviticus/17.json `historical`; guides/reading-law.json | Repository |
+| Meat not everyday food; every killing made a peace offering eaten before God | 1-9 | leviticus/17.json `cultural` | Repository |
+| The ‘goat demons’: spirits of desert and open country; an animal killed in a field could become an offering to them | 1-9 | leviticus/17.json `historical` | Repository |
+| Deuteronomy 12:15-16; 2 Chronicles 11:15; 1 Corinthians 10:20 | 1-9 | leviticus/17.json `historical`, `hard`; BSB | BSB text |
+| Leviticus 17 beside Deuteronomy 12: the three explanations; what both agree on | 1-9 | leviticus/17.json `hard` | Repository; no side |
+| Verse 11 at the center, in the first person; blood as life; atonement by life given; God's gift, not Israel's bribe | 10-16 | leviticus/17.json `literary`; guides/offerings-and-purity.json (‘What the rituals meant’) | Repository |
+| The two readings of the last clause (by means of the life; in exchange for the life) | 10-16 | leviticus/verses/17.json (verse 11 `grammar`) | Repository; no side |
+| Older than Israel (Genesis 9:4); the foreigner named repeatedly; the hunter's game; Jewish slaughter and salting | 10-16 | leviticus/17.json `cultural` | Repository |
+| Hebrews 9:22; Ephesians 1:7; John 6:53 and the differing views of the Lord's Supper | 10-16 | leviticus/17.json `christ`; BSB | BSB text; no side |
+| Why blood: pointer to Hebrews 9:15-22 (‘never a way of buying off an angry god’) | 10-16 | hebrews/plain/9.json (15-22 `hard`) | Repository |
+| Acts 15:29 and the two Christian answers | 10-16 | leviticus/3.json `hard`; acts/plain/15.json (12-21 `hard`) | Repository; no side |
+
+Cut before publishing: ‘the Hebrew says, word for word, by the life’ (the verse note gives two readings, and both are now stated). Nothing was claimed about any church's teaching on medical treatment; the note says only that the verse was not written about modern medicine and is not medical advice.
+
+## The plain notes on Leviticus 18 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| From the altar to the household; Egypt behind, Canaan ahead; the frame ‘I am the LORD your God’ and the Ten Commandments; chapter 20 adds penalties | 1-5 | leviticus/18.json `story`, `literary` | Repository |
+| Statutes as the path of life | 1-5 | leviticus/18.json `doctrines` (law) | Repository |
+| Ezekiel 20:11; Romans 10:5 and Galatians 3:12, ‘on the common reading’ | 1-5 | leviticus/18.json `christ`; BSB | BSB text |
+| Large, close households; the laws protect those living in them; addressed mainly to men as heads of households | 6-18 | leviticus/18.json `cultural`, `doctrines` (family) | Repository |
+| ‘To uncover the nakedness’; ervah twenty-four times, with its sense of shame and exposure | 6-18 | leviticus/18.json `cultural`, `words` (H6172) | Repository |
+| Abraham and his half-sister; Jacob and two sisters; a break with what was once tolerated | 6-18 | leviticus/18.json `cultural` | Repository |
+| Mark 6:18; 1 Corinthians 5:1 | 6-18 | leviticus/18.json `cultural`; BSB | BSB text |
+| ‘A word for anyone who has been sexually assaulted ... places to turn.’ | 6-18 | 1-thessalonians/plain/4.json (1-8 `hard`), word for word | Repository |
+| Molech: the Ammonites; Topheth in the Valley of Hinnom; a god or a kind of sacrifice (Eissfeldt, not named); the ritual killing of children | 19-23 | leviticus/18.json `historical` | Repository; no side |
+| To'evah used of the whole list (verses 26-30) and elsewhere of idolatry, dishonest scales and pride | 19-23 | leviticus/18.json `words` (H8441) | Repository |
+| Jeremiah 7:31; 2 Kings 23:10; Romans 2:1 | 19-23 | BSB; romans/plain/1.json (24-32) | BSB text |
+| Verse 22: stated plainly; the historic reading and its grounds; the other reading and its grounds; the reply; no side | 19-23 | leviticus/18.json `hard`; romans/plain/1.json (24-32 `hard`); 1-corinthians/plain/6.json (9-11 `hard`) | Repository; no side |
+| ‘Three things are plain on any reading’; 1 Corinthians 6:11; ‘nothing here gives anyone a reason for contempt toward any person’ | 19-23 | romans/plain/1.json; 1-corinthians/plain/6.json | Repository |
+| ‘If you are gay, or love someone who is ... places to turn.’ | 19-23 | romans/plain/1.json (24-32 `hard`), word for word | Repository |
+| The land as a body; moral defilement that washing does not remove; one standard for the nations and for Israel | 24-30 | leviticus/18.json `words` (H6958), `doctrines` (judgment); guides/offerings-and-purity.json (Klawans) | Repository |
+| Later writers read the exile in these terms (Ezra 9:11; Ezekiel 36:17-19) | 24-30 | leviticus/18.json `historical` | Repository |
+| ‘These notes say nothing against any people, ancient or modern ... or to claim any land.’ | 24-30 | exodus/plain/23.json (27-33 `hard`), word for word | Repository |
+| Genesis 15:16; Ezra 9:11; Psalm 106:38 | 24-30 | BSB | BSB text |
+
+Cut or narrowed before publishing: a number for the commandment against adultery (traditions count differently); a third position named in the deep note (that the texts forbid all such relations but should be weighed differently today), left in the deep note so that this note keeps the two-reading shape of the Romans 1 and 1 Corinthians 6 notes; any claim about how the verse has been used in history (the note says only that any such use is a misuse); Henry VIII; the derivation of Paul's Greek word, which the 1 Corinthians 6 note already gives. The sentence ‘No one may use this verse to harm or shame any person’ is new, required for this passage. Flagged for James: the site's own view on these verses is an open decision.
+
+## The plain notes on Leviticus 19 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The heart of the book; holiness shown in justice and kindness as much as in ritual | 1-8 | leviticus/19.json `words` (H6918G); leviticus/intro.json `keyChapters`, `themes` | Repository |
+| ‘I am the LORD’ about fifteen times, a signature; the echo of the Ten Commandments; ritual and ethical commands mixed | 1-8 | leviticus/19.json `literary` | Repository |
+| Exodus 20:8, 12; 1 Peter 1:15-16 | 1-8 | leviticus/19.json `christ`; BSB | BSB text |
+| Gleaning as welfare built into ownership; day laborers; the deaf and blind as easy targets; impartial courts | 9-18 | leviticus/19.json `cultural` | Repository |
+| Verses 17-18 govern the heart; love as loyal, practical commitment | 9-18 | leviticus/19.json `words` (H0157G) | Repository |
+| Hillel and Rabbi Akiva | 9-18 | leviticus/19.json `historical` | Repository |
+| Ruth 2:2; James 5:4; Mark 12:31; Galatians 5:14; James 2:8 | 9-18 | leviticus/19.json `historical`, `christ`; BSB | BSB text |
+| The neighbor as a fellow Israelite; verse 34 extends the same love to the foreigner; the pair | 9-18 | leviticus/19.json `words` (H7453), `literary` | Repository |
+| Luke 10:29, 37 and the Samaritan; Matthew 5:44 | 9-18 | leviticus/19.json `christ`; BSB | BSB text |
+| Mixtures and Genesis 1; the young tree; cutting in grief; mediums and Endor; honor for the old | 19-32 | leviticus/19.json `cultural`, `historical` | Repository |
+| Verses 20-22: the slavery of the ancient world; spared the death penalty ‘because she had not been freed’; the guilt offering | 19-32 | leviticus/19.json `cultural` | Repository |
+| 1 Samuel 28:7; Isaiah 8:19; Deuteronomy 22:11 and observant Jews today; 1 Timothy 5:1 | 19-32 | leviticus/19.json `hard`; BSB | BSB text |
+| Which laws still apply: the threefold division (Aquinas, Calvin, the confessions); the law fulfilled as a whole in Christ; Jewish tradition; what all agree on | 19-32 | leviticus/19.json `hard` | Repository; no side |
+| Ger: without land, family ties or legal standing; named with the poor; loved as oneself; the reason is memory | 33-37 | leviticus/19.json `words` (H1616), `literary` | Repository |
+| Two sets of weights | 33-37 | leviticus/19.json `cultural` | Repository |
+| Deuteronomy 10:18-19; Exodus 22:21; Proverbs 11:1 and to'evah; Matthew 25:35; 1 Peter 1:17 | 33-37 | leviticus/18.json `words` (H8441); BSB | BSB text |
+
+Cut or narrowed before publishing: that ‘as yourself’ is not a command to love oneself first; that a poor household might put a daughter to use for money; that verse 28's marks belong to mourning rites, and that Christians differ about tattoos (narrowed to what the chapter's setting shows); that the command about the foreigner is repeated ‘more often than almost any other’; that Hebrew has other words for other kinds of outsider. None of these could be found in the repository. The note on verses 33-37 says in its own words that it draws no rule for any government or party today.
+
+## The plain notes on Leviticus 20 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The enforcement chapter; it begins and ends with other spiritual powers; Molech placed first | 1-8 | leviticus/20.json `story`, `historical` | Repository |
+| ‘The people of the land’; shared enforcement; God acts if the community looks away | 1-8 | leviticus/20.json `cultural` | Repository |
+| 2 Kings 21:6; kings never punished under this law; the prophets and the exile; Deuteronomy 18:10-11; Matthew 18:5 | 1-8 | leviticus/20.json `historical`; BSB | BSB text |
+| Case law; graded penalties; ‘their blood is upon them’ | 9-21 | leviticus/20.json `literary`, `cultural` | Repository |
+| ‘These verses should be read soberly ... a child who disobeys’; cursing a parent as rejecting them or calling down harm | 9-21 | exodus/plain/21.json (12-17 `hearers`), the wording reused | Repository |
+| How often carried out: David; Numbers 35:31 and commutation (‘some scholars’); the Mishnah's safeguards and Makkot 1:10 | 9-21 | leviticus/20.json `historical`, `hard` | Repository |
+| Israel's neighbors and what this chapter counts most serious | 9-21 | leviticus/20.json `historical` | Repository |
+| Deuteronomy 17:6; 2 Samuel 12:13; John 8:7, 11 (missing from many early copies); 1 Corinthians 5:13 as church discipline | 9-21 | leviticus/20.json `christ`; BSB | BSB text |
+| The penalties today: given to Israel as a nation; the wrongs remain wrong, the penalties not carried into the church; the minority view and its rejection | 9-21 | leviticus/20.json `hard`; guides/reading-law.json | Repository |
+| Verse 13: pointer to the note on 18:19-23; the penalty no part of the church's teaching or practice; no one may use these verses to harm or shame any person | 9-21 | leviticus/18 plain note; leviticus/20.json `hard`, `christ` | Repository; no side |
+| ‘If you are gay, or love someone who is ... places to turn.’ | 9-21 | romans/plain/1.json (24-32 `hard`), word for word | Repository |
+| ‘If you are being hurt, at home, at work or in a church ... places to turn.’ | 9-21 | exodus/plain/21.json (18-21 `hard`), word for word | Repository |
+| The frame; verses 24-26 tie holiness to the food laws; ‘to be My own’ | 22-27 | leviticus/20.json `literary` | Repository |
+| ‘These notes say nothing against any people, ancient or modern ... or to claim any land.’ | 22-27 | exodus/plain/23.json (27-33 `hard`), word for word | Repository |
+| The witch trials, Salem 1692, ‘a misuse of Scripture, and it was wrong’; ‘No one may use this verse to accuse, harm or drive out any person.’ | 22-27 | exodus/plain/22.json (18-20 `hard`), the wording reused, with ‘a verse like it in Exodus’ in place of ‘this verse’ | Repository |
+| 1 Peter 2:9; Acts 10:28; Ezekiel 18:32 | 22-27 | leviticus/20.json `christ`; BSB | BSB text |
+
+Cut or narrowed before publishing: the burning of verse 14 (interpreters differ, and the deep note carries it); the levirate law beside verse 21; ‘most churches reject’ the minority view (narrowed to what the Reading the Law guide says of Reformed churches). Flagged for James with chapter 18: the site's own view on 18:22 and 20:13 is an open decision.
+
+## The plain notes on Leviticus 21 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Corpse uncleanness normal for families, a bar to a priest's work; the closest relatives; the mourning customs of verse 5 (19:27-28) | 1-9 | leviticus/21.json `cultural` | Repository |
+| The priest's household and its reputation; verse 9 and the father's office | 1-9 | leviticus/21.json `cultural` | Repository |
+| ‘The food of their God’: not that God eats; the altar as his table | 1-9 | leviticus/21.json `literary` | Repository |
+| Ezekiel 44:25; Mark 5:41; John 11:35 | 1-9 | leviticus/21.json `historical`, `christ`; BSB | BSB text |
+| The high priest's stricter rule; 10:6-7; ‘I am the LORD who sanctifies’ closes each part; holiness from God before it is demanded | 10-15 | leviticus/21.json `cultural`, `literary` | Repository |
+| Hebrews 7:26; 4:15 | 10-15 | leviticus/21.json `christ`; BSB | BSB text |
+| One office: not excluded from Israel, worship or the priesthood; he eats the most holy food; barred only from the altar and the veil | 16-24 | leviticus/21.json `hard`, `cultural` | Repository |
+| Parallel with unblemished animals (22:17-25); the rule as a sign of wholeness (‘most interpreters’); ancient courts | 16-24 | leviticus/21.json `hard`, `historical` | Repository |
+| Isaiah 56:5; Matthew 21:14; Luke 14:13; 1 Corinthians 12:22 | 16-24 | leviticus/21.json `hard`, `christ`; BSB | BSB text |
+| ‘Disability is not punishment for sin, the person's own or anyone else's. Every person, with any disability or illness, is made by God and is precious to him. No one is a mistake.’ | 16-24 | exodus/plain/4.json (10-17 `hearers`), word for word | Repository |
+| A temporary system pointing beyond itself; in Christ these restrictions fulfilled; disability no barrier to any service in the church | 16-24 | leviticus/21.json `hard` | Repository |
+| ‘If you live with chronic illness, pain or disability ... places to turn.’ | 16-24 | 2-corinthians/plain/12.json (7-10 `hard`), its last four sentences, word for word | Repository |
+
+Cut before publishing: the meaning of the burning in verse 9 (interpreters differ; the chapter 20 deep note carries it); Daniel 1:4. The eunuchs of Isaiah 56 are said to be shut out ‘by another law’ (Deuteronomy 23:1) without quoting it. The sentence that a church cannot appeal to this chapter to keep disabled people from its life or leadership is new; it rests on the deep note's ‘disability is no barrier to any service in the church’.
+
+## The plain notes on Leviticus 22 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Priests without farmland, living on offerings and tithes; the holy food as daily bread | 1-16 | leviticus/22.json `historical` | Repository |
+| Uncleanness normal and not sin; wait, bathe, eat | 1-16 | leviticus/22.json `cultural` | Repository |
+| The household of that world: the slave, the hired worker, the guest, the daughter who returns | 1-16 | leviticus/22.json `cultural` | Repository |
+| Numbers 18:20; 1 Samuel 21:6; Mark 2:25 | 1-16 | leviticus/24.json `historical`; BSB | BSB text |
+| The temptation to give God the leftover; contempt, not poverty | 17-25 | leviticus/22.json `historical` | Repository |
+| The list parallel to 21:17-23; a sign at the altar | 17-25 | leviticus/21.json `hard`, `cultural` | Repository |
+| The stunted limb: allowed as a freewill gift, not for a vow | 17-25 | leviticus/22.json `cultural` | Repository |
+| Malachi 1:8; 2 Samuel 24:24; Hebrews 9:14; Romans 12:1 | 17-25 | leviticus/22.json `historical`, `christ`; BSB | BSB text |
+| Mother and young: compassion toward animals, or the boundary of life and death; no reason given | 26-33 | leviticus/22.json `cultural` | Repository; no side |
+| Verses 31-33 gather the section from chapter 17 | 26-33 | leviticus/22.json `literary` | Repository |
+| Deuteronomy 22:7; Proverbs 12:10; Ezekiel 36:23; Matthew 6:9 | 26-33 | leviticus/22.json `cultural`, `christ`; BSB | BSB text |
+
+Cut before publishing: nothing of substance. The slave of verse 11 is named plainly, with the statement that these notes do not defend slavery and a pointer to chapter 25.
+
+## The plain notes on Leviticus 23 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Mo'ed, appointed time, related to the Tent of Meeting; God's appointments; ‘sacred assembly’ eleven times | 1-8 | leviticus/23.json `words` (H4150H, H4744) | Repository |
+| The Sabbath first; the number seven through the chapter; lunar months; the first month in March or April | 1-8 | leviticus/23.json `literary`, `historical` | Repository |
+| Passover and unleavened bread join memory and harvest | 1-8 | leviticus/23.json `cultural` | Repository |
+| The Sabbath today: pointer to Exodus 16:22-30 | 1-8 | exodus/plain/16.json | Repository; no side |
+| Exodus 12:14; Mark 2:27; 1 Corinthians 5:7; Passover the Jewish people's own remembrance | 1-8 | exodus/intro.json `teaching` (passover); BSB | BSB text |
+| The first sheaf and trust for the rest; two leavened loaves as daily bread; Pentecost, ‘fiftieth’ | 9-22 | leviticus/23.json `cultural`, `words` (H1061) | Repository |
+| Verse 22 repeats the gleaning law so that the feast does not forget the poor | 9-22 | leviticus/23.json `cultural` | Repository |
+| Pharisees and Sadducees on ‘the day after the Sabbath’ | 9-22 | leviticus/23.json `historical` | Repository; no side |
+| Shavuot later linked with the giving of the law | 9-22 | exodus/intro.json `teaching` (readers) | Repository |
+| Ruth 2:15; Acts 2:1; 1 Corinthians 15:20 and the first sheaf, a link the Gospels do not draw | 9-22 | leviticus/23.json `christ`; BSB | BSB text |
+| The seventh month, September or October; the first day later Rosh Hashanah, though the text says only rest and trumpets | 23-32 | leviticus/23.json `historical` | Repository |
+| The people's part on the Day of Atonement; fasting; evening to evening; Yom Kippur kept still | 23-32 | leviticus/16.json `cultural`, `story` | Repository |
+| Leviticus 16:30; Hebrews 4:9; the trumpets and Christ's return as a link of theme only | 23-32 | leviticus/23.json `christ`; BSB | BSB text |
+| Booths: sukkah, Sukkot; barns full, flimsy shelter, the wilderness remembered; the citron, palm, myrtle and willow | 33-44 | leviticus/23.json `cultural`, `words` (H5521) | Repository |
+| Whether Christians keep the feasts: most churches; Easter and Pentecost; those who keep them, not as a condition of acceptance | 33-44 | leviticus/23.json `hard` | Repository; no side |
+| Nehemiah 8:17; Deuteronomy 16:14; John 7:37; Colossians 2:17 and ‘a shadow is real’ | 33-44 | leviticus/23.json `historical`, `christ`; colossians/plain/2.json (16-19); BSB | BSB text |
+
+Cut before publishing: the Gezer tablet (on the book page's timeline); a statement that Jewish families build booths ‘every year to this day’ rests on the deep note's ‘Jewish communities, of course, continue to keep these feasts’.
+
+## The plain notes on Leviticus 24 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Olive oil and clay lamps; the finest oil; a house where the host is present; twelve loaves for twelve tribes; ‘continually’ | 1-9 | leviticus/24.json `cultural`, `literary` | Repository |
+| Exodus 25:30; Matthew 12:4; John 8:12 and 6:35, rooted more directly in other feasts and the manna | 1-9 | leviticus/24.json `historical`, `christ`; BSB | BSB text |
+| One of two narratives in the book | 10-16 | leviticus/intro.json `reading` | Repository |
+| A name as character and presence; cursing it as treason against the covenant; the mixed family and one law; custody, witnesses, the laying on of hands (‘most likely’) | 10-16 | leviticus/24.json `cultural`, `hard` | Repository |
+| Later Jewish teaching on pronouncing the name; ‘the Name’ | 10-16 | leviticus/24.json `cultural` | Repository |
+| Exodus 20:7 (‘on most counts’ the third); Matthew 26:65; Acts 6:11; 7:60 | 10-16 | leviticus/24.json `christ`; guides/reading-law.json (numbering); BSB | BSB text |
+| Why the penalty: the reasons given; Israel's civil law, not a model for the church or for states; Jesus and Stephen | 10-16 | leviticus/24.json `hard` | Repository |
+| The mirrored shape of verses 13-23 with ‘eye for eye’ at the center | 17-23 | leviticus/24.json `literary` | Repository |
+| ‘Eye for eye’ as a limit given to judges; Hammurabi's ranks; one standard; the Mishnah and Talmud on payment | 17-23 | exodus/plain/21.json (22-27 `hearers`), the wording reused; leviticus/24.json `historical` | Repository |
+| The three places; Deuteronomy 19:18; Matthew 5:38-39 and what Jesus does with it | 17-23 | exodus/plain/21.json (22-27 `later`), the wording reused; BSB | BSB text |
+
+Cut before publishing: the Arch of Titus; the mother's name and tribe. The sentence that no one may use this passage to justify harming a person for what they say or believe about God is new; it rests on the deep note's ‘not a model for the church or for modern states’.
+
+## The plain notes on Leviticus 25 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Six years and a seventh; an act of trust (verses 20-22); the yield for all alike; the land God's | 1-7 | leviticus/25.json `literary`; BSB | Repository |
+| Exodus 23:11; 2 Chronicles 36:21 | 1-7 | leviticus/25.json `historical`; BSB | BSB text |
+| Yovel, the ram's horn; deror and the Akkadian release; royal releases at the start of a reign; Israel's release fixed in the calendar | 8-22 | leviticus/25.json `words` (H3104, H1865), `historical` | Repository |
+| The Jubilee begins on the Day of Atonement; land leased by harvests, not sold | 8-22 | leviticus/25.json `words`, `cultural` | Repository |
+| Whether the Jubilee was kept: no clear record; the two scholarly views; the Liberty Bell | 8-22 | leviticus/25.json `historical` | Repository; no side |
+| Isaiah 61:1-2; Luke 4:21; Jeremiah 34:17 | 8-22 | leviticus/25.json `christ`, `historical`; BSB | BSB text |
+| The land God's and Israel his tenants; land as life; three lines of defense; ga'al and the go'el; walled cities, villages, Levites | 23-34 | leviticus/25.json `cultural`, `words` (H1350A) | Repository |
+| Ruth 4:9; Isaiah's Redeemer; Galatians 4:4-5, a link of theme | 23-34 | leviticus/25.json `words`, `christ`; BSB | BSB text |
+| The steps of increasing poverty; help so that he lives ‘among you’; no interest or profit; the exodus as the reason | 35-38 | leviticus/25.json `literary`; BSB | Repository |
+| Deuteronomy 15:4; Nehemiah 5:5, 11; Acts 4:34 | 35-38 | BSB | BSB text |
+| An Israelite treated as a hired worker, released at the Jubilee, because Israel belongs to God; foreigners could be bought and held permanently | 39-46 | leviticus/25.json `cultural`, `words` (H5650) | Repository |
+| Exodus 21:2; Job 31:15; Philemon 1:16 | 39-46 | exodus/plain/21.json; BSB | BSB text |
+| Verses 44-46 faced: ‘That is in the text, and it cannot be explained away’; what the law limits; Christopher Wright and Matthew 19:8; the critics' answer; ‘Both things are true to the text’ | 39-46 | exodus/plain/21.json (1-6 `hard`), the wording reused; guides/reading-law.json | Repository |
+| The chapter's own logic points beyond its line; Galatians 3:28; 1 Timothy 1:10 | 39-46 | leviticus/25.json `hard` | Repository |
+| The misuse in the Atlantic trade and the American South; Christians who opposed slavery; the mixed record | 39-46 | exodus/plain/21.json (1-6 `hard`), the wording reused; leviticus/25.json `hard`; context/guides/the-slavery-texts.json | Repository |
+| ‘A word for anyone who is being held, owned or forced to work today ... places to turn.’ | 39-46 | exodus/plain/21.json (7-11 `hard`), word for word | Repository |
+| The relative who redeems a person; ‘in your sight’; released at the Jubilee if no one comes; eved as slave, official and worshiper | 47-55 | leviticus/25.json `cultural`, `words` (H5650) | Repository |
+| 1 Peter 1:18-19; 1 Corinthians 7:23 | 47-55 | BSB | BSB text |
+
+Cut or narrowed before publishing: the Exodus 21 sentence that Atlantic slavery was ‘very different from the debt service of these verses’ could not be reused here, because verses 44-46 are not debt service; the note says only that Atlantic slavery was built on race and on kidnapping, which the law punished with death. Also cut: that ‘rule harshly’ is the word used of Egypt's treatment of Israel; that loans in that world went mostly to the needy (neither found in the repository); the Edict of Ammi-saduqa by name; 1 Maccabees. The note on verses 35-38 says that it is not legal or financial advice.
+
+## The plain notes on Leviticus 26 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Treaties ending in blessings and curses (Hittite, Assyrian); the covenant partner is the LORD | 1-13 | leviticus/26.json `historical`; guides/reading-law.json | Repository |
+| Rain-fed farming; the overflowing harvests; the climax in God's presence; the verb of Genesis 3:8 | 1-13 | leviticus/26.json `cultural` | Repository |
+| ‘Walk upright’; the rescue as the ground | 1-13 | BSB (verse 13); leviticus/intro.json `reading` | BSB text |
+| Deuteronomy 28; Ezekiel 37:27; 2 Corinthians 6:16; Revelation 21:3 | 1-13 | leviticus/26.json `christ`; BSB | BSB text |
+| Five rising stages, each with a condition; the number seven; discipline (yasar) as a father's correction; ‘hostility’ (qeri) | 14-39 | leviticus/26.json `literary`, `words` (H3256, H7147) | Repository |
+| Verse 29 as what siege did, a warning set out in advance; Samaria and Jerusalem | 14-39 | leviticus/26.json `hard`, `historical` | Repository |
+| Addressed to the nation under the Sinai covenant; the long-term direction of its life | 14-39 | leviticus/26.json `hard` | Repository |
+| 2 Chronicles 36:21; Lamentations 4:10; Proverbs 3:12 | 14-39 | leviticus/26.json `historical`, `words`; BSB | BSB text |
+| Not a formula for individuals: Job; the psalms; Luke 13:4-5; John 9:3; hardship with God's presence | 14-39 | leviticus/26.json `hard`; BSB | Repository |
+| ‘No one should be told that their illness or disability is a punishment.’ | 14-39 | luke/plain/5.json (17-26 `hard`), word for word | Repository |
+| The misuse against the Jewish people named and rejected; the pointer to Acts 2:22-28; ‘These notes say nothing against any people, ancient or modern.’ | 14-39 | exodus/intro.json `teaching` (new-testament); exodus/plain/23.json (27-33 `hard`) | Repository |
+| ‘Grief is not a lack of faith. If your grief is so heavy ... places to turn.’ | 14-39 | 1-timothy/plain/5.json (9-16 `hard`), its last three sentences, word for word | Repository |
+| The turn to restoration; the uncircumcised heart; God's remembering as acting (Noah); the patriarchs named backward; Israel can break the covenant, God will not | 40-46 | leviticus/26.json `cultural`, `literary`, `words` (H2142, H1285) | Repository |
+| The chapter explained the exile and gave ground for hope | 40-46 | leviticus/26.json `historical`; leviticus/intro.json `purpose` | Repository |
+| Deuteronomy 30:3; Daniel 9:5; Romans 11:1, 29 | 40-46 | BSB; hebrews/plain/8.json (7-13 `hard`) | BSB text |
+
+Cut before publishing: the Esarhaddon treaties of 672 BC by name and date; the destruction of Jerusalem in AD 70 as a fulfillment of this chapter (the deep note mentions Jesus' warning; it is left there, so that no later suffering of Jewish people is read here as a verdict); Galatians 3:13.
+
+## The plain notes on Leviticus 27 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| An appendix after chapter 26's conclusion; vows as promises made in trouble or gratitude | 1-8 | leviticus/27.json `story`, `historical` | Repository |
+| A vowed person could not serve (only Levites); the vow kept by paying a value; large sums; Joseph's twenty shekels; the poor not shut out | 1-8 | leviticus/27.json `cultural`, `historical` | Repository |
+| 1 Samuel 1:11; Genesis 28:22; Ecclesiastes 5:5 | 1-8 | leviticus/27.json `historical`; BSB | BSB text |
+| The valuations as labor value, not worth before God; the man over sixty and the working woman; a world that undervalued women's work; Genesis 1:27; Galatians 3:28 | 1-8 | leviticus/27.json `hard` | Repository |
+| No substitution; the added fifth as a check on casual vows; the Jubilee and the value of a field; ‘valuation’ twenty-one times | 9-25 | leviticus/27.json `cultural`, `literary` | Repository |
+| Deuteronomy 23:22-23; Mark 7:13 and Corban; Matthew 5:37 | 9-25 | leviticus/27.json `historical`, `christ`; BSB | BSB text |
+| Firstborn and tithes already God's; the tenth animal under the staff, uninspected | 26-34 | leviticus/27.json `cultural` | Repository |
+| Cherem; verse 29 ‘most likely’ someone condemned under the law or in the wars of conquest | 26-34 | leviticus/27.json `cultural` | Repository |
+| The last verse frames the book as commandments given at Sinai | 26-34 | leviticus/27.json `literary`, `story` | Repository |
+| Exodus 13:2; Numbers 18:21; Matthew 23:23; 1 Corinthians 6:19-20 | 26-34 | leviticus/27.json `christ`; BSB | BSB text |
+| Whether Christians must tithe: the two views; 2 Corinthians 9:7 | 26-34 | doctrines/wealth.json; hebrews/plain/7.json (`hard`) | Repository; no side |
+| ‘If you gave money because you were pressed or frightened ... places to turn.’ | 26-34 | 1-timothy/plain/6.json (3-10 `hard`), word for word | Repository |
+
+Cut before publishing: Jephthah's vow (Judges 11), a hard story of its own that this note could not treat with care in a sentence; that coins came into use in the Persian period.

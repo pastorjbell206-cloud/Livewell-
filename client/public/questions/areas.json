@@ -5,13 +5,15 @@
       "slug": "god",
       "n": 1,
       "title": "God, faith and reason",
+      "line": "The arguments for God's existence, set out step by step, with their strongest critics.",
       "planned": 16,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "text",
       "n": 2,
       "title": "Can we trust the text of the New Testament?",
+      "line": "Manuscripts, variants and disputed passages, and what the evidence shows.",
       "planned": 14,
       "status": "live"
     },
@@ -19,57 +21,65 @@
       "slug": "authors",
       "n": 3,
       "title": "Who wrote the Gospels and the New Testament, when, and who chose the books",
+      "line": "Who wrote the Gospels and the letters, when, and how the church came to its list of books.",
       "planned": 16,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "contradictions",
       "n": 4,
       "title": "Contradictions and hard passages",
+      "line": "The census, the two genealogies, the death of Judas, the day of the crucifixion and the numbers in Kings and Chronicles.",
       "planned": 20,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "jesus",
       "n": 5,
       "title": "The historical Jesus and the resurrection",
+      "line": "Whether Jesus lived, what he claimed, the empty tomb, the appearances and the virgin birth.",
       "planned": 16,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "old-testament",
       "n": 6,
       "title": "The Old Testament: history, archaeology, violence and law",
+      "line": "The exodus, the conquest, Daniel, the flood, the law and the charge of an angry God.",
       "planned": 18,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "science",
       "n": 7,
       "title": "Science",
+      "line": "Galileo, miracles, the beginning of the universe, evolution, the age of the earth, Adam, the mind and the brain, free will and near-death experiences.",
       "planned": 16,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "evil",
       "n": 8,
       "title": "Evil, suffering and judgment",
+      "line": "The problem of evil in its logical and evidential forms, natural evil, God's hiddenness and hell.",
       "planned": 12,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "morality",
       "n": 9,
       "title": "Morality, sexuality and the church's record",
+      "line": "The Crusades, the Inquisition, slavery, abuse and its cover-up, women, abortion in the early church, Christian nationalism, and whether morality is only culture.",
       "planned": 14,
-      "status": "pending"
+      "status": "live"
     },
     {
       "slug": "religions",
       "n": 10,
       "title": "Other religions, and those who never heard",
+      "line": "Whether all religions say the same thing, Jesus as the only way, and those who never heard.",
       "planned": 10,
-      "status": "pending"
+      "status": "live"
     }
   ]
 }

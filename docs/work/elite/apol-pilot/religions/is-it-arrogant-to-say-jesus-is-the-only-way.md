@@ -1,7 +1,7 @@
 ---
 area: religions
 slug: is-it-arrogant-to-say-jesus-is-the-only-way
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Isn't it arrogant to say that Jesus is the only way to God, and that billions of sincere believers in other faiths are wrong?"
 ledger: docs/work/elite/apol-ledger.md, "Twentieth run", key "ay"
 ---

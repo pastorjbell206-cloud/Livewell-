@@ -340,6 +340,7 @@ function FilmPage({
   const films = (index.films ?? []).filter(f => f.status === "finished");
   const at = films.findIndex(f => f.slug === film.slug);
   const next = at >= 0 ? films[at + 1] : undefined;
+  const prev = at > 0 ? films[at - 1] : undefined;
   const stops = film.stops
     .map(s => index.stops.find(x => x.slug === s))
     .filter(s => s && s.status === "finished");
@@ -532,15 +533,35 @@ function FilmPage({
             </Link>
           )}
         </div>
-        {next && (
-          <div className="ex-wrap" style={{ marginTop: "var(--s-2)" }}>
-            <Link
-              href={`${EXPLORER_PATH}#${WATCH_ID}`}
-              className="ex-link"
-              style={{ fontFamily: "var(--U)", fontSize: 15 }}
-            >
-              Everything in Watch and learn
-            </Link>
+        {(next || prev) && (
+          <div
+            className="ex-wrap"
+            style={{
+              marginTop: "var(--s-2)",
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "4px 24px",
+            }}
+          >
+            {prev && (
+              <Link
+                href={filmHref(prev.slug)}
+                rel="prev"
+                className="ex-link"
+                style={{ fontFamily: "var(--U)", fontSize: 15 }}
+              >
+                Before this: {prev.title}
+              </Link>
+            )}
+            {next && (
+              <Link
+                href={`${EXPLORER_PATH}#${WATCH_ID}`}
+                className="ex-link"
+                style={{ fontFamily: "var(--U)", fontSize: 15 }}
+              >
+                Everything in Watch and learn
+              </Link>
+            )}
           </div>
         )}
       </nav>

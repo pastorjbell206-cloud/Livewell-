@@ -1,7 +1,7 @@
 ---
 area: jesus
 slug: how-did-jesus-become-god
-status: pending (not on the site; for James to read first)
+status: live (James, 2026-11-20: "publish all of this when ready")
 question: "Bart Ehrman argues that Jesus' first followers believed God had exalted a man to heaven, and only later that he had been God from the beginning. Didn't the church turn a Jewish preacher into God?"
 ledger: docs/work/elite/apol-ledger.md, "Twenty-first run", key "bc"
 ---

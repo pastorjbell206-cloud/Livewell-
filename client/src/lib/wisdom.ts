@@ -55,6 +55,8 @@ export interface Entry {
   related: { id: string; label: string }[];
   links: EntryLink[];
   care: { topics: ("suicide" | "abuse" | "sexual-assault" | "substance")[]; lead: boolean } | null;
+  /** The topic before and after this one in its area's order (build-wisdom-index.mjs). */
+  turn?: { prev: { id: string; label: string } | null; next: { id: string; label: string } | null };
   deep?: {
     updated: string;
     misread: Misread[];
