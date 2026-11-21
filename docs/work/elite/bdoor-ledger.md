@@ -14062,3 +14062,17 @@ Cut for want of a source in the repository: that the ‘you’ of the blessing i
 | Care paragraph against reading a death as God's punishment | 31-35 | acts/plain/5.json 1-6 `hard` | Reused whole, word for word |
 
 Cut: Job and Jeremiah as others who asked to die, which no note in the repository states in those words.
+
+## The plain notes on Numbers 13 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The edge of the promise; ‘which I am giving’; Deuteronomy 1:22-23 read beside it; different men from chapters 1 and 2 | 1-16 | numbers/13.json `story`, `historical`, `literary` | Repository |
+| Hoshea, Yehoshua, Iesous; Matthew 1:21; Hebrews 4:8 | 1-16 | numbers/13.json `words` (H3091G), `christ`; BSB | Repository; BSB text |
+| The paired questions; late summer; Eshcol, cluster; Hebron, Zoan and the patriarchs' graves; Kadesh at Ain el-Qudeirat and Ain Qadeis | 17-25 | numbers/13.json `literary`, `cultural`, `historical`, `story` | Repository |
+| Genesis 23:20; Caleb and Hebron (Joshua 14:12; 15:14) | 17-25 | numbers/13.json `hard`; BSB | BSB text |
+| Milk and honey; Canaanite walls and ramparts; ‘Nevertheless’; the report growing darker; dibbah, slander | 26-33 | numbers/13.json `cultural`, `historical`, `literary`, `words` (H1681) | Repository |
+| Rahab (Joshua 2:9-11); Deuteronomy 1:28; Hebrews 3:19, written to the church | 26-33 | numbers/14.json `christ`; BSB | BSB text |
+| The Nephilim: the scouts' own claim; a general word; Genesis 6:4 ‘and afterward as well’; a regional flood; Caleb at Hebron | 26-33 | numbers/13.json `hard`, `words` (H5303) | Repository; no side |
