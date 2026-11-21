@@ -14998,3 +14998,19 @@ Cut in chapter 28: the Roman destruction of Jerusalem in AD 70 and Josephus's re
 | Verse 20: settled defiance and not a person who wants to return; 30:1-3; 4:29; the care line reused whole | 16-28 | hebrews/plain/3.json 12-15 and numbers/plain/14.json 26-38 (‘If you are afraid that you have fallen away from God...’); BSB | Repository; word for word |
 | The secret things (satar) and the things revealed; inquiry not forbidden; the dots in the Hebrew manuscripts | 29 | deuteronomy/29.json `cultural`, `literary`, `words` (H5641) | Repository |
 | Isaiah 55:9; Romans 11:33; Psalm 131:1 | 29 | BSB | BSB text |
+
+## The plain notes on Deuteronomy 30 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘When’, not ‘if’; shuv of Israel and of God; the farthest horizon; 10:16 and 29:4 answered by verse 6; circumcision and the heart; exiled Jews read it as promise; the two views of when it was written | 1-10 | deuteronomy/30.json `historical`, `cultural`, `literary`, `words` (H7725G, H4135A) | Repository; no side on the date |
+| Nehemiah 1:9; Jeremiah 29:14; Romans 2:29; Luke 15:17, 20 | 1-10 | deuteronomy/30.json `christ`; BSB | Repository; BSB text |
+| The will of God not hidden; diviners and omens (chapter 18); ‘in your mouth’ and ‘in your heart’; qarov, near, not easy; the Jewish reading of the Torah as a gift that can be lived | 11-14 | deuteronomy/30.json `words` (H7138), `hard`; deuteronomy/18.json `cultural` | Repository |
+| 4:7; Romans 10:6-8, Paul reading the passage in the light of Christ | 11-14 | romans/plain/10.json 5-13 (`ot`, the same sentences); deuteronomy/30.json `christ`; BSB | Repository; as the existing Romans 10 note reads it |
+| 29:4 and 30:11: the readings; Paul's use, and whether he sets law against faith, with the pointer to the Romans 10 note; the Jewish reading and the real disagreement | 11-14 | deuteronomy/30.json `hard`; romans/plain/10.json 5-13 `hard` | Repository; no side |
+| Heaven and earth as witnesses; ‘choose life’; ‘He is your life’; davaq; bachar, God's choosing and Israel's; verse 6 and verse 19 held together | 15-20 | deuteronomy/30.json `cultural`, `literary`, `words` (H0977); deuteronomy/10.json `words` (H1692) | Repository |
+| Joshua 24:15; Isaiah 1:2; John 14:6; 10:10 | 15-20 | deuteronomy/30.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 30: that the will of the gods ‘was never certain’ in ancient religion, narrowed to what the chapter 18 note says; that Moses would be dead ‘within days’.
