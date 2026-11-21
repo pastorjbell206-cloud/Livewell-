@@ -13418,3 +13418,30 @@ Cut before publishing: the Ketef Hinnom scrolls (on the book page's timeline alr
 | Hosea 6:6; Hebrews 5:2 | 12-20 | BSB | BSB text |
 
 Cut before publishing: the cousins' names and the family tree; Korah's 250 men and King Uzziah (true to the deep note, left there); 1 Peter 4:17. The note says in its own words that the story is not a threat held over ordinary worshipers; that sentence rests on the deep note's ‘never presented as God's normal way with his people’.
+
+## The plain notes on Leviticus 11 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 11 to 15 as the content of 10:10-11; food first as the most constant part of life | 1-8 | leviticus/11.json `story` | Repository |
+| Unclean animals are God's creatures, not evil; ‘unclean for you’; a foreigner could eat (Deuteronomy 14:21); a calling, not a universal diet | 1-8 | leviticus/11.json `doctrines` (creation), `hard` | Repository |
+| Sorted by what an observer could see; the hyrax and the hare | 1-8 | leviticus/11.json `cultural` | Repository |
+| Genesis 1:29; 9:3; Deuteronomy 14:3; Daniel 1:8 | 1-8 | leviticus/11.json `story`, `historical`; BSB | BSB text |
+| The three realms of Genesis 1; ‘any kind of’ and ‘according to their kinds’ | 9-23 | leviticus/11.json `literary` | Repository |
+| Uncertain bird names; birds of prey and carrion eaters; the bat | 9-23 | leviticus/11.json `cultural` | Repository |
+| ‘Detestable’ as the stronger word; a related word used for idols | 9-23 | leviticus/11.json `words` (H8263) | Repository |
+| Matthew 3:4; Matthew 23:24 (the gnat and the camel, Leviticus 11:4, 41); Luke 15:15-16 | 9-23 | matthew/plain/23.json (23-28 `ot`); BSB | BSB text |
+| Carcass uncleanness not sin, over by evening; pots, cloth, seed and water; the spring and cistern as a merciful exception | 24-40 | leviticus/11.json `cultural` | Repository |
+| Most sources of uncleanness linked with death | 24-40 | guides/offerings-and-purity.json (Milgrom and Wenham) | Repository |
+| Numbers 19:11; Mark 5:41; life passing the other way | 24-40 | guides/offerings-and-purity.json (‘Purity in the time of Jesus’); BSB | BSB text |
+| The first use of ‘be holy, because I am holy’; the motto of chapters 17 to 26; holiness at the kitchen table; the exodus as the ground | 41-47 | leviticus/11.json `literary`, `doctrines` (holiness) | Repository |
+| 20:26; the laws marked Israel off | 41-47 | leviticus/11.json `doctrines` (covenant); BSB | Repository |
+| Antiochus IV about 167 BC and the books of Maccabees | 41-47 | leviticus/11.json `historical` | Repository |
+| Jewish families keep these laws today ‘with love and care’ | 41-47 | acts/plain/10.json (9-16 `hearers`, `hard`) | Repository |
+| 1 Peter 1:15-16; Mark 7:18-19; Acts 10:15, 28 | 41-47 | leviticus/11.json `christ`; BSB | BSB text |
+| Why unclean: health (Maimonides) and its critics; pagan worship; Mary Douglas; Milgrom; the text's own reason | 41-47 | leviticus/11.json `hard` | Repository; no side |
+| Christian practice: most churches; whether Jesus himself set the laws aside (pointer to Mark 7:14-23); Acts 10 first about people; Adventists; Jewish believers in Jesus; Romans 14:3; the laws not foolish | 41-47 | leviticus/11.json `hard`; mark/plain/7.json (14-23 `hard`); acts/plain/10.json (9-16 `hard`) | Repository; no side |
+
+Cut before publishing: that locusts are still eaten in some places (not in the repository); pig bones at Iron Age sites (the deep note says archaeologists debate what the pattern shows); Ephesians 2:15 and Colossians 2:17 (left to the deep note, since the book page already gives the Christian accounts); the later Jewish law built on verse 38.
