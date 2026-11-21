@@ -29,6 +29,7 @@ export default function DoorInside({ door, warm, title = "One step further in." 
     <section className={`home-sec${warm ? " home-sec--warm" : ""} lw-inside`} aria-labelledby={id}>
       <div className="home-wrap">
         <SectionHead label={`Also in ${d.name}`} title={title} id={id} />
+        <div className="lw-inside__groups">
         {groups.map(({ room, inside }) => (
           <div key={room.id} className="lw-inside__group">
             <h3 className="eyebrow lw-inside__room">
@@ -45,6 +46,7 @@ export default function DoorInside({ door, warm, title = "One step further in." 
             </ul>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );

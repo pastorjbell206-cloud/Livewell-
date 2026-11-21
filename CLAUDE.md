@@ -782,6 +782,19 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   writes one file per chapter under `client/public/index/chapters/`, read by
   "Go deeper" on a chapter and by the walk's last step. Rerun it after a
   library's references change; CI drift-checks it.
+- **Finding your way (2026-11-20; James: "make this website very easy to
+  navigate")**: three parts, each read from the catalogue or the page's own
+  data, never a typed list. `components/art/Place.tsx` is the one line that
+  says where a page sits (door, then room; `trailFor` in `lib/pagePlace.ts`):
+  `InnerHead` draws it, and a page with a top of its own uses `<Place path>`.
+  `components/TurnNav.tsx` is previous and next for anything read in order.
+  `components/art/DoorInside.tsx` lists every page inside a door's rooms on
+  the door's own page, so "Everything in <door>" is complete; /explore lists
+  the case for the faith's live areas from its manifest. /search mends a
+  misspelling and never ends on nothing (`lib/searchMend.ts`), and
+  `build-search-index.mjs` indexes every catalogue page. Bible's third room
+  is How to study the Bible, as his map has it. `docs/work/elite/nav-audit.md`
+  holds the audit and the ideas that wait for him.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.

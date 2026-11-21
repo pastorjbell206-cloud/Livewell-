@@ -14,15 +14,15 @@ import { Link } from "wouter";
 import { trailFor, type PagePlace } from "@/lib/pagePlace";
 
 export function PlaceLabel({ place }: { place: PagePlace }) {
+  // A trail too long for one line on a phone drops the door there (index.css): the room is the nearer way up.
+  const long = !!place.room && place.door.name.length + place.room.name.length > 28;
   return (
     <span>
-      <Link href={place.door.href}>{place.door.name}</Link>
-      {place.room && (
-        <>
-          {" · "}
-          <Link href={place.room.href}>{place.room.name}</Link>
-        </>
-      )}
+      <span className={long ? "lw-place__door lw-place__door--long" : "lw-place__door"}>
+        <Link href={place.door.href}>{place.door.name}</Link>
+        {place.room && " · "}
+      </span>
+      {place.room && <Link href={place.room.href}>{place.room.name}</Link>}
     </span>
   );
 }
