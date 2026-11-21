@@ -1799,11 +1799,13 @@ async function main() {
       const total = t.sessions.length;
       const route = `/tracks/${t.slug}`;
       const crumbs = [{ name: "Home", path: "" }, SECTION_BY_ROUTE["/tracks/"], { name: t.title, path: route }];
+      // The page's one data file, asked for with the page (the same request its fetch makes).
+      const data = `\n    <link rel="preload" as="fetch" crossorigin="anonymous" href="/tracks/${t.slug}.json">`;
       const title = `${t.title}: A Track in ${total} Sessions`;
       writeRoute(
         template,
         { path: route },
-        buildHead({ title, description: t.subtitle, url: `${SITE_URL}${route}`, image: ogImageUrl(t.title), type: "article", schemas: [breadcrumbSchema(crumbs)] }),
+        buildHead({ title, description: t.subtitle, url: `${SITE_URL}${route}`, image: ogImageUrl(t.title), type: "article", schemas: [breadcrumbSchema(crumbs)] }) + data,
         article([
           `<p class="pre-eyebrow"><a href="/tracks">Tracks</a></p>`,
           `<h1>${escapeHtml(t.title)}</h1>`,
@@ -1828,7 +1830,7 @@ async function main() {
             image: ogImageUrl(x.title),
             type: "article",
             schemas: [breadcrumbSchema([...crumbs, { name: x.title, path: sRoute }])],
-          }),
+          }) + data,
           article([
             `<p class="pre-eyebrow"><a href="${route}">${escapeHtml(t.title)}</a>, session ${x.n} of ${total}</p>`,
             `<h1>${escapeHtml(x.title)}</h1>`,

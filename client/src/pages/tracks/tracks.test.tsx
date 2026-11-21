@@ -75,10 +75,10 @@ afterEach(() => {
 });
 
 describe("/tracks", () => {
-  it("lists the track with Start, and says plainly what is not written yet", async () => {
+  it("lists the track with Start at session 1, and says plainly what is not written yet", async () => {
     renderAt("/tracks");
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Tracks");
-    const start = await screen.findByRole("link", { name: "Start" });
+    const start = await screen.findByRole("link", { name: "Start at session 1" });
     expect(start.getAttribute("href")).toBe("/tracks/new-to-this/1");
     expect(screen.getByRole("link", { name: FILE.title }).getAttribute("href")).toBe("/tracks/new-to-this");
     expect(screen.getByText(/12 sessions, about 10 minutes each/)).toBeInTheDocument();
@@ -237,7 +237,7 @@ describe("the way back", () => {
   it("does not show on the tracks' own pages", async () => {
     setReturn({ slug: "new-to-this", n: 2, total: 12, to: "/study/explorer/watch/why-jesus-died" });
     renderAt("/tracks");
-    await screen.findByRole("link", { name: "Start" });
+    await screen.findByRole("link", { name: "Start at session 1" });
     expect(screen.queryByTestId("track-return")).toBeNull();
   });
 });

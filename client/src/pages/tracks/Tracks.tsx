@@ -49,7 +49,7 @@ function TrackCard({ t, entry }: { t: TrackBrief; entry?: TrackProgress }) {
       </div>
       <div className="tk-track__acts">
         <Link href={next === null ? trackHref(t.slug) : sessionHref(t.slug, next)} className="btn">
-          {!started ? "Start" : next === null ? "See the sessions" : `Continue at session ${next}`}
+          {!started ? "Start at session 1" : next === null ? "See the sessions" : `Continue at session ${next}`}
         </Link>
         <Link href={trackHref(t.slug)} className="btn btn--quiet">
           All {total} sessions

@@ -210,3 +210,14 @@ Titles and the page each would open. Every address below is live today. No prose
 - A PDF of a track. A session and a group guide print from the browser.
 - Any account, sync between devices, or reminder.
 - A leader's page for a group beyond each session's guide.
+
+## What was run, and what passed (2026-11-21)
+
+- `pnpm check`: pass. All 48 commands of the content-gates step (now with `build-tracks-index.mjs --check` and `validate-tracks.mjs`): pass. `pnpm test`: 168 files passed, 7 skipped; 2,024 tests passed, 73 skipped. `pnpm build`, sitemap, prerender (13 track and session pages), `pnpm audit:canonicals`: pass.
+- On the served build (`scripts/serve-like-vercel.mjs`), by script at 390 and at 1440: from Home, the chip, /start, "Start the track", then all twelve sessions, out to every one of the 46 linked pages and back by the bar, an answer typed and kept each time, each session marked done. After session 6 the browser context was closed and reopened: Home said "Continue your track at session 7 of 12", /start and /tracks said the same, session 3 still held its answer and its tick, and Continue opened session 7. No sideways scroll, no console errors.
+- By keyboard on sessions 1, 5 and 9: the session's button is reached by Tab with a 2px focus ring; on the page it opens, the first Tab is "Back to session N of 12" (on Pray the Psalms the page moves focus to the open psalm, so the bar is Shift+Tab away); the answer, the tick and "Mark this session done" all work from the keyboard.
+- Print preview of session 9 and of its group guide: read, one column each.
+- Lighthouse 13.6.0, median of three, phone profile: /tracks 89 performance, 100 accessibility, CLS 0.000; the track's page 92, 100, 0.000; a session 84, 100, 0.000; Home 100, 100, 0.000. Best practices 96 and SEO 100 on all four.
+- Layout shift on a hard load with a track in progress and a way back set, at 390: 0 on /start, /tracks, the track, a session, a chapter and the Wisdom Finder. Home at 1440 measured 0.004 with nothing to continue and 0.008 with a track or an eight-week plan to continue: the Continue line shares the slot that line already had.
+
+Not verified: a real phone, Safari, a screen reader, or a printer. The session page's performance was measured on a busy shared machine and sits under the track page's because its first paragraph is set in the reading face.
