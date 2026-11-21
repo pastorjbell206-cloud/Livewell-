@@ -41,3 +41,33 @@ export function followHash(href: string): void {
   };
   window.setTimeout(tick, 0);
 }
+
+/**
+ * A jump inside a page whose sections are still arriving. A chapter's notes
+ * load as they near the screen and push what is below them down, so a plain
+ * #plain link landed two screens short of "Passage by passage" on a phone.
+ * This keeps the named part at the top (at its own scroll-margin) until the
+ * page stops growing, for a few seconds at most, and lets go the moment the
+ * reader scrolls, touches or presses a key.
+ */
+export function holdInView(id: string, ms = 4000): void {
+  if (typeof window === "undefined") return;
+  const started = Date.now();
+  let moved = false;
+  const stop = () => {
+    moved = true;
+  };
+  window.addEventListener("wheel", stop, { once: true, passive: true });
+  window.addEventListener("touchmove", stop, { once: true, passive: true });
+  window.addEventListener("keydown", stop, { once: true });
+  const tick = () => {
+    if (moved || Date.now() - started > ms) return;
+    const el = document.getElementById(id);
+    if (el) {
+      const want = parseFloat(window.getComputedStyle(el).scrollMarginTop) || 0;
+      if (Math.abs(el.getBoundingClientRect().top - want) > 24) el.scrollIntoView({ block: "start", behavior: "instant" as ScrollBehavior });
+    }
+    window.setTimeout(tick, 250);
+  };
+  window.setTimeout(tick, 600);
+}

@@ -5,6 +5,7 @@
  * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
 import { FreeEbookButtons } from "@/components/FreeEbookButtons";
@@ -13,11 +14,6 @@ import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
 const COVER = "/books/the-monster-in-the-mirror.jpg";
 const EBOOK = freeEbook("the-monster-in-the-mirror")!;
-
-const eyebrow: React.CSSProperties = {
-  fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase",
-  letterSpacing: "0.18em", color: "var(--mustard-text)",
-};
 
 export default function TheMonsterInTheMirror() {
   return (
@@ -36,7 +32,7 @@ export default function TheMonsterInTheMirror() {
           <img src={COVER} alt="Cover of The Monster in the Mirror" width={1600} height={2560}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
-            <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Free Ebook</div>
+            <Place path="/books/the-monster-in-the-mirror" after="Free ebook" dark style={{ margin: 0 }} />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               The Monster in the Mirror
             </h1>

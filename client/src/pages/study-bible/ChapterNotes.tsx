@@ -11,6 +11,7 @@
  */
 import { Suspense, lazy, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
+import { holdInView } from "@/lib/followHash";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 import { chapterBookName, chapterHref, type BibleBook, type BibleChapter, type BibleVerse } from "@/lib/bible";
@@ -93,10 +94,11 @@ export function ChapterHead({ note, place }: { note: ChapterNote | null | undefi
             {whole ? "Shorter summary" : "Whole summary"}
           </button>
         )}
-        {hard > 0 && <a href="#hard-question" style={jump}>{hard > 1 ? `${hard} hard questions` : "A hard question"}</a>}
-        {note.plain && <a href="#plain" style={jump}>Passage by passage</a>}
-        <a href="#questions" style={jump}>Study questions</a>
-        <a href="#notes" style={jump}>Study notes</a>
+        {/* The parts below are still arriving when one of these is tapped: holdInView keeps the jump on its target. */}
+        {hard > 0 && <a href="#hard-question" style={jump} onClick={() => holdInView("hard-question")}>{hard > 1 ? `${hard} hard questions` : "A hard question"}</a>}
+        {note.plain && <a href="#plain" style={jump} onClick={() => holdInView("plain")}>Passage by passage</a>}
+        <a href="#questions" style={jump} onClick={() => holdInView("questions")}>Study questions</a>
+        <a href="#notes" style={jump} onClick={() => holdInView("notes")}>Study notes</a>
       </p>
     </div>
   );

@@ -9,7 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
-import BiblePlans, { FAMILY_PLANS, PLANS } from "./BiblePlans";
+import BiblePlans, { FAMILY_PLANS, PLANS, plansGoing } from "./BiblePlans";
 
 const ROOT = path.resolve(__dirname, "../../..");
 const json = (file: string) => JSON.parse(fs.readFileSync(path.join(ROOT, file), "utf8"));
@@ -17,6 +17,11 @@ const APP = fs.readFileSync(path.join(ROOT, "client/src/App.tsx"), "utf8");
 const ROUTES = Array.from(APP.matchAll(/<Route\s+path="([^"]+)"/g), (m) => m[1]);
 
 afterEach(() => vi.unstubAllGlobals());
+
+function renderPage() {
+  vi.stubGlobal("fetch", offlineFetch());
+  return renderWithProviders(<BiblePlans />);
+}
 
 describe("/study/plans", () => {
   it("is a route of its own, in the sitemap and in llms.txt", () => {
@@ -53,5 +58,23 @@ describe("/study/plans", () => {
     expect(document.querySelectorAll(".bp-card")).toHaveLength(PLANS.length);
     fireEvent.click(screen.getByRole("button", { name: "A month or less" }));
     for (const c of Array.from(document.querySelectorAll(".bp-len"))) expect(Number(c.textContent!.match(/\d+/)![0])).toBeLessThanOrEqual(31);
+  });
+
+  it("offers no way back in on a device that has begun nothing", () => {
+    renderPage();
+    expect(screen.queryByRole("heading", { name: "Pick up where you left off." })).toBeNull();
+  });
+
+  it("picks up where the reader left off: the year plan at the next day, a family plan at today's day", () => {
+    window.localStorage.setItem("livewell-progress-story-2027", JSON.stringify([1, 2, 3]));
+    window.localStorage.setItem("livewell-progress-family-plan-starts-v1", JSON.stringify({ v: 1, starts: { "life-of-jesus": "2026-11-10" } }));
+    expect(plansGoing("2026-11-21")).toEqual([
+      { id: "whole-story-2027", title: "The Bible in a year, 2027", place: "Day 4 is next, 3 of 365 read", href: "/study/bible/guides/whole-story-2027?day=4" },
+      { id: "life-of-jesus", title: "The Life of Jesus", place: "Day 12 of 30", href: "/family/reading-plans" },
+    ]);
+    renderPage();
+    expect(screen.getByRole("heading", { name: "Pick up where you left off." })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Continue: The Bible in a year, 2027/ }).getAttribute("href")).toBe("/study/bible/guides/whole-story-2027?day=4");
+    window.localStorage.clear();
   });
 });

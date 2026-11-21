@@ -21,6 +21,7 @@ import { Compass, LifeBuoy, MessageCircleQuestion, Rows3 } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
+import DoorInside, { doorRooms } from "@/components/art/DoorInside";
 import SectionHead from "@/components/art/SectionHead";
 import DoorCard from "@/components/art/DoorCard";
 import type { PlateName } from "@/components/art/Plate";
@@ -53,14 +54,23 @@ function useTopicsIndex(): { state: State; retry: () => void } {
   return { state: state.nonce === nonce ? state.value : { status: "loading" }, retry };
 }
 
-/** The rooms of the Questions door, in the map's order. Every one is a page that exists. */
-const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] = [
-  { title: "Honest Answers", note: `${ANSWERS.length} questions, a page each`, href: "/answers", plate: "tomb" },
-  { title: "For skeptics", note: "Test the case yourself", href: "/skeptics", plate: "lens" },
-  { title: "What Christians believe", note: "Doctrine, topic by topic", href: "/study/bible/doctrines", plate: "books" },
-  { title: "Where Christians differ", note: "The views side by side", href: "/theology/compare", plate: "compass" },
-  { title: "Everyday life", note: "Home, work, money, body", href: "/life", plate: "table" },
-];
+/** Each room's picture and the short note on its card, by its id in the site catalogue. */
+const ROOM_ART: Record<string, { note: string; plate: PlateName }> = {
+  "questions.answers": { note: `${ANSWERS.length} questions, a page each`, plate: "tomb" },
+  "questions.skeptics": { note: "Test the case yourself", plate: "lens" },
+  "questions.case": { note: "The objections at full strength", plate: "arch" },
+  "questions.believe": { note: "Doctrine, topic by topic", plate: "books" },
+  "questions.differ": { note: "The views side by side", plate: "compass" },
+  "questions.life": { note: "Home, work, money, body", plate: "table" },
+};
+
+/** The rooms of the Questions door, read from the site catalogue so the page, the header and the footer agree. */
+const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] = doorRooms("questions").map((r) => ({
+  title: r.name,
+  note: ROOM_ART[r.id]?.note ?? r.line,
+  href: r.href,
+  plate: ROOM_ART[r.id]?.plate ?? "lantern",
+}));
 
 export default function Topics() {
   const { state, retry } = useTopicsIndex();
@@ -135,6 +145,9 @@ export default function Topics() {
           </p>
         </div>
       </section>
+
+      {/* EVERYTHING ELSE IN THE DOOR, from the catalogue. */}
+      <DoorInside door="questions" />
     </Layout>
   );
 }

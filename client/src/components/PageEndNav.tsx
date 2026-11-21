@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { nameForHref } from "@/lib/siteCatalog";
 
 /**
  * PageEndNav — a small "what next" block for the foot of a detail page so no
@@ -12,8 +13,12 @@ export interface OnwardLink {
 }
 
 interface PageEndNavProps {
-  /** The hub this page belongs to, e.g. { href: "/writing", label: "All essays" }. */
-  back: OnwardLink;
+  /**
+   * The hub this page belongs to. Give the address alone for a hub the site
+   * catalogue lists, and the link takes the hub's one name ("Bible
+   * background", "Everyday life"); give a label only for a hub it does not list.
+   */
+  back: { href: string; label?: string };
   /** Optional onward links ("read next"). */
   next?: OnwardLink[];
 }
@@ -44,7 +49,7 @@ export default function PageEndNav({ back, next }: PageEndNavProps) {
         }}
       >
         <ArrowLeft size={16} aria-hidden />
-        {back.label}
+        {nameForHref(back.href) ?? back.label ?? "Back"}
       </Link>
 
       {next && next.length > 0 && (

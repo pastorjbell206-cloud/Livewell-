@@ -1,5 +1,21 @@
 # Unit map: seven doors, one catalogue, and the Everything page
 
+## The site as it now is (2026-11-20, the navigation unit)
+
+James on 2026-11-20: "make this website very easy to navigate." The audit, the ten walks before and after, and the ideas that wait for him are in `nav-audit.md`. What changed in the map:
+
+- **Bible.** The third room is "How to study the Bible" (/study/how-to-study), as James's map has it; "Guides to reading the Bible" (24 guides) is one step inside it. Inside "The Bible's story": Bible Explorer, Watch and learn (/study/explorer#watch), Abraham's road and Paul's travels. Inside "Reading plans": The Bible in a year. Six rooms, as before.
+- **Questions.** No room changed. The door's own page (/topics) now shows all six rooms as cards, read from the catalogue (it had five: The case for the faith was missing).
+- **A door's own page is complete.** /study, /topics and /tools list every page inside their rooms, grouped under the room, through one part (`components/art/DoorInside.tsx`) that reads the catalogue. Add a page to a room's `inside` and it appears in the header's panel foot page, on /explore, in the search index and here, with no second list.
+- **/explore and /topics.** The case for the faith's areas are not typed in the catalogue. Both pages read them from `client/public/questions/index.json` when that part of the page nears the screen (`useLiveAreas` in `lib/siteNav.ts`, `lib/liveAreas.ts`): an area is listed the day it goes live.
+- **Where am I.** `components/art/Place.tsx` draws "door · room" from `trailFor` (`lib/pagePlace.ts`) for any address, a page inside a library included (/plans/grief reads "Tools · Eight-week plans"). `InnerHead` uses it; care plans, the three books, topic pathways, the longer doctrine studies, context guides, creeds, everyday-life guides, the nation essays, care pages and the start quiz draw it in place of a hand-typed label.
+- **What's next.** `components/TurnNav.tsx`: previous and next for the wisdom topics of one subject (written into each entry file by `build-wisdom-index.mjs`). An Explorer film links the film before it as well as the next. `PageEndNav` takes the hub's catalogue name.
+- **Search.** Every catalogue page is in the index (`build-search-index.mjs`, after MAIN_PAGES). A misspelling is mended and a search never ends on nothing (`lib/searchMend.ts`): Find Help, the seven doors, the start road and /explore are offered.
+- **Reading plans.** /study/plans opens with "Pick up where you left off" on a device that has begun a plan. A topic pathway offers "Continue" at the first step not yet read.
+- **Not listed, waiting for James:** The Wisdom Books Explorer (/tools/wisdom-books) and Pray the Psalms (/tools/pray-the-psalms) are in no menu, panel, /explore or tools list. Search finds them (they were in MAIN_PAGES before this unit) and each page now carries a "Tools" label over its title.
+
+The rest of this file is the record of the unit of 2026-11-18.
+
 Branch `elite/map`, from `origin/claude/todo-implementation-hhp4bm` at 3e4469fb. Date: 2026-11-18.
 
 James on 2026-11-18: "I want the tools to be easy to find. I feel like sometimes it gets buried under like long tabs, and it's hard to find or know what's fully on this website." This unit puts the map of PROJECT-PROMPT.md (last section) into the header, the phone menu, the footer, the search shortcuts, and one new page, /explore, "Everything on LiveWell".
@@ -19,13 +35,15 @@ James on 2026-11-18: "I want the tools to be easy to find. I feel like sometimes
 
 | Door | Its page | Rooms, in order (address) |
 |---|---|---|
-| Bible | Study the Bible (/study) | Read the Study Bible (/study/bible) · Search the Bible (/study/bible/search) · Guides to reading the Bible (/study/bible/guides) · The Bible's story (/study/bible/story) · Bible background (/resources/context) · Read the Bible in a year (/study/bible/guides/whole-story-2027) |
-| History | Church history (/theology/history) | The course (#course) · The timeline (#timeline) · The people (#people) · Creeds and confessions (/resources/creeds) · Christian traditions (/theology/traditions) |
-| Questions | Hard questions (/topics) | Honest Answers (/answers) · For skeptics (/skeptic-track) · What Christians believe (/study/bible/doctrines) · Where Christians differ (/theology/compare) · Everyday life (/life) |
+| Bible | Study the Bible (/study) | Read the Study Bible (/study/bible) · Search the Bible (/study/bible/search) · How to study the Bible (/study/how-to-study) · The Bible's story (/study/bible/story) · Bible background (/resources/context) · Reading plans (/study/plans) |
+| History | Church history (/theology/history) | The course (#course) · The timeline (#timeline) · The people (/theology/history/people) · Creeds and confessions (/resources/creeds) · Christian traditions (/theology/traditions) |
+| Questions | Hard questions (/topics) | Honest Answers (/answers) · For skeptics (/skeptics) · The case for the faith (/questions) · What Christians believe (/study/bible/doctrines) · Where Christians differ (/theology/compare) · Everyday life (/life) |
 | Family | Family (/family) | Tonight's devotion (/family/tonight) · All family devotions (/family/devotions) · The family catechism (/family/catechism) · Family reading plans (/family/reading-plans) |
-| Tools | Tools and resources (/tools) | Scripture and theology (/tools#scripture-and-theology) · Help for a decision or a hard day (/tools#help-for-a-decision-or-a-hard-day) · Self-checks (/assessments) · Eight-week plans (/plans) · Small group study guides (/studyguides) · Downloads (/downloads) |
+| Tools | Tools and resources (/tools) | Study (/tools#study) · Check yourself (/tools#check-yourself) · Pray and practise (/tools#pray-and-practise) · Eight-week plans (/plans) · Small group study guides (/studyguides) · Downloads (/downloads) |
 | Essays | Essays (/writing) | A plain link in the header. On /explore: the shelf's sections that have public essays (/writing?section=…) |
 | About | About James (/about) | Books (/books) · Speaking (/speaking) · Find James (/connect) · Contact (/contact) · Subscribe (/subscribe) |
+
+(The table above is the site as of 2026-11-20; `client/src/lib/siteCatalog.ts` is the source. The paragraphs below it are the record of 2026-11-18 and are kept as written.)
 
 One tap inside a room (shown on /explore): Read any verse in context (Bible › Read the Study Bible); The councils and The heresies (History › The course, tab hashes); Timeline of injustice (History › The timeline); the two witnesses pages (History › The people); The creeds in brief, /theology/creeds (History › Creeds); More questions, answered short (/theology/questions) and the ten /faq pages (Questions › Honest Answers); Theology glossary, How to use the doctrine studies, Search the doctrines, creeds and glossary (Questions › What Christians believe); Which view do I lean toward? and the six /compare pages (Questions › Where Christians differ); How-to guides, What the Bible says by subject (/wisdom), Christ and the nation (/nation) (Questions › Everyday life); the four reading paths and the elders' booklets (Tools › Small group study guides); All resources, on one page (Tools › Downloads); the three books (About › Books); the podcast and ENDS, outbound (About › Find James).
 
