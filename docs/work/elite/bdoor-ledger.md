@@ -14127,3 +14127,18 @@ Cut: Job and Jeremiah as others who asked to die, which no note in the repositor
 | The four verbs; the almond and the lampstand (Exodus 25:33-34); the contrast with the censers; the sign meant to prevent deaths; the cry as a bridge to chapter 18 | 8-13 | numbers/17.json `literary`, `cultural`, `story` | Repository |
 | Hebrews 9:4; 1 Kings 8:9; the staff's fate unknown; the resurrection only as an echo; Hebrews 10:22 | 8-13 | numbers/17.json `historical`, `christ`; BSB | Repository; BSB text |
 | The people's fear: right and overshooting; 18:5; two ways of hearing it | 8-13 | numbers/17.json `hard` | Repository; no side |
+
+## The plain notes on Numbers 18 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| God's answer to the cry of chapter 17; a guard, not a withdrawal; mishmeret as guard duty; God speaks to Aaron directly; the word ‘gift’ against Korah's grasping | 1-7 | numbers/18.json `story`, `literary`, `words` (H4931, H4979) | Repository |
+| 1 Peter 2:9; Hebrews 10:19 | 1-7 | numbers/18.json `christ`; BSB | BSB text |
+| Firstfruits and firstborn (Exodus 13); sons redeemed at five shekels; who may eat what; the covenant of salt (2 Chronicles 13:5) | 8-19 | numbers/18.json `cultural`, `historical` | Repository |
+| 1 Corinthians 9:13-14; Malachi 1:8 | 8-19 | numbers/18.json `christ`; leviticus/intro.json teaching timeline; BSB | Repository; BSB text |
+| Nachalah redefined; the tithe as the Levites' wages; Deuteronomy 14; later Jewish teachers; the tithe of the tithe; Joshua 21; Nehemiah 13 | 20-32 | numbers/18.json `words` (H5159, H4643), `cultural`, `historical` | Repository |
+| Psalm 16:5; Psalm 73:26; Nehemiah 13:10 | 20-32 | numbers/18.json `christ`; BSB | BSB text |
+| Tithing: the two Christian answers; no side | 20-32 | numbers/18.json `hard` | Repository; no side |
+| Care paragraph on money pressed out of people | 20-32 | leviticus/plain/27.json 26-34 `hard`; 1-timothy/plain/6.json 3-10 `hard` | Reused whole, word for word |
