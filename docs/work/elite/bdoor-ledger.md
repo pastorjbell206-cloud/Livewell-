@@ -13802,3 +13802,24 @@ Cut or narrowed before publishing: the Exodus 21 sentence that Atlantic slavery 
 | Deuteronomy 30:3; Daniel 9:5; Romans 11:1, 29 | 40-46 | BSB; hebrews/plain/8.json (7-13 `hard`) | BSB text |
 
 Cut before publishing: the Esarhaddon treaties of 672 BC by name and date; the destruction of Jerusalem in AD 70 as a fulfillment of this chapter (the deep note mentions Jesus' warning; it is left there, so that no later suffering of Jewish people is read here as a verdict); Galatians 3:13.
+
+## The plain notes on Leviticus 27 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| An appendix after chapter 26's conclusion; vows as promises made in trouble or gratitude | 1-8 | leviticus/27.json `story`, `historical` | Repository |
+| A vowed person could not serve (only Levites); the vow kept by paying a value; large sums; Joseph's twenty shekels; the poor not shut out | 1-8 | leviticus/27.json `cultural`, `historical` | Repository |
+| 1 Samuel 1:11; Genesis 28:22; Ecclesiastes 5:5 | 1-8 | leviticus/27.json `historical`; BSB | BSB text |
+| The valuations as labor value, not worth before God; the man over sixty and the working woman; a world that undervalued women's work; Genesis 1:27; Galatians 3:28 | 1-8 | leviticus/27.json `hard` | Repository |
+| No substitution; the added fifth as a check on casual vows; the Jubilee and the value of a field; ‘valuation’ twenty-one times | 9-25 | leviticus/27.json `cultural`, `literary` | Repository |
+| Deuteronomy 23:22-23; Mark 7:13 and Corban; Matthew 5:37 | 9-25 | leviticus/27.json `historical`, `christ`; BSB | BSB text |
+| Firstborn and tithes already God's; the tenth animal under the staff, uninspected | 26-34 | leviticus/27.json `cultural` | Repository |
+| Cherem; verse 29 ‘most likely’ someone condemned under the law or in the wars of conquest | 26-34 | leviticus/27.json `cultural` | Repository |
+| The last verse frames the book as commandments given at Sinai | 26-34 | leviticus/27.json `literary`, `story` | Repository |
+| Exodus 13:2; Numbers 18:21; Matthew 23:23; 1 Corinthians 6:19-20 | 26-34 | leviticus/27.json `christ`; BSB | BSB text |
+| Whether Christians must tithe: the two views; 2 Corinthians 9:7 | 26-34 | doctrines/wealth.json; hebrews/plain/7.json (`hard`) | Repository; no side |
+| ‘If you gave money because you were pressed or frightened ... places to turn.’ | 26-34 | 1-timothy/plain/6.json (3-10 `hard`), word for word | Repository |
+
+Cut before publishing: Jephthah's vow (Judges 11), a hard story of its own that this note could not treat with care in a sentence; that coins came into use in the Persian period.
