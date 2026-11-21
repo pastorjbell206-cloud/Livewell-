@@ -5,11 +5,13 @@
  * Tools, and the essay shelf's sections under Essays. A find box at the top
  * narrows the tiles as you type.
  *
- * Everything here reads from the site catalogue (lib/siteCatalog.ts) and the
- * tools list (lib/toolsList.ts), so a page has the same name here as in the
- * header, the footer and search.
+ * Everything here reads from the site catalogue (lib/siteCatalog.ts), the
+ * tools list (lib/toolsList.ts), the essay shelf (lib/shelf.ts) and, for the
+ * case for the faith, the library's own manifest of what is live, so a page
+ * has the same name here as in the header, the footer and search, and the
+ * page cannot fall behind the site.
  */
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { Search } from "lucide-react";
 
@@ -24,6 +26,7 @@ import { FAMILY_GROUP, FAMILY_TOOLS, TOOL_GROUPS } from "@/lib/toolsList";
 import { liveSections, sectionHref } from "@/lib/shelf";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { followHash } from "@/lib/followHash";
+import { areaHref, fetchQuestionsIndex, QUESTIONS_CLAIMS, QUESTIONS_ROOM } from "@/lib/questions";
 import "./explore.css";
 
 /** The tools, each once, in the tools page's groups and then the family's, under their one name (lib/toolsList.ts). */
@@ -104,8 +107,46 @@ function essayRooms(): Room[] {
   }));
 }
 
-function DoorSection({ door, words, index }: { door: Door; words: string[]; index: number }) {
-  const rooms = door.id === "essays" ? essayRooms() : door.rooms;
+/**
+ * The case for the faith's areas that are live today, read from the library's
+ * own manifest (client/public/questions/index.json), so an area appears here
+ * the day it is published and never before. Until the manifest answers, and
+ * if it does not, the catalogue's own list stands.
+ */
+function useLiveAreas(): CatalogEntry[] | null {
+  const [areas, setAreas] = useState<CatalogEntry[] | null>(null);
+  useEffect(() => {
+    let stale = false;
+    fetchQuestionsIndex()
+      .then((d) => {
+        if (stale) return;
+        setAreas(
+          d.areas
+            .filter((a) => a.live && a.hasPage)
+            .map((a) => {
+              const n = a.pieces.filter((p) => p.live).length;
+              return { id: `questions.${a.slug}`, name: a.title, line: `${n} ${n === 1 ? "question" : "questions"}, each answered in full.`, href: areaHref(a.slug), icon: "Library" as const };
+            }),
+        );
+      })
+      .catch(() => {});
+    return () => {
+      stale = true;
+    };
+  }, []);
+  return areas;
+}
+
+/** A room as the catalogue lists it, with the case's areas taken from the live manifest. */
+function withLiveAreas(room: Room, areas: CatalogEntry[] | null): Room {
+  if (room.href !== QUESTIONS_ROOM || !areas?.length) return room;
+  // The catalogue's own area entries give way to the live list; its other pages (Look up a claim) stay.
+  const others = (room.inside ?? []).filter((i) => i.href === QUESTIONS_CLAIMS || !/^\/questions\/[a-z-]+$/.test(i.href));
+  return { ...room, inside: [...areas, ...others] };
+}
+
+function DoorSection({ door, words, index, areas }: { door: Door; words: string[]; index: number; areas: CatalogEntry[] | null }) {
+  const rooms = door.id === "essays" ? essayRooms() : door.rooms.map((r) => withLiveAreas(r, areas));
   const shown = rooms.map((r) => matchRoom(r, words)).filter((x): x is { room: Room; inside: CatalogEntry[] } => x !== null);
   const pageHit = !words.length || hasWordStarts(`${door.name} ${textOf(door.page)}`, words);
   const tools =
@@ -179,6 +220,7 @@ export default function Everything() {
   const [query, setQuery] = useState(() => (typeof window === "undefined" ? "" : new URLSearchParams(window.location.search).get("q") ?? ""));
   const words = useMemo(() => queryWords(query), [query]);
   const searching = query.trim().length > 0;
+  const areas = useLiveAreas();
 
   // How many places a find turned up, counted the way the tiles show them.
   const found = useMemo(() => {
@@ -186,14 +228,14 @@ export default function Everything() {
     let n = 0;
     for (const door of DOORS) {
       if (hasWordStarts(`${door.name} ${textOf(door.page)}`, words)) n += 1;
-      for (const r of door.id === "essays" ? essayRooms() : door.rooms) {
+      for (const r of door.id === "essays" ? essayRooms() : door.rooms.map((x) => withLiveAreas(x, areas))) {
         const m = matchRoom(r, words);
         if (m) n += hasWordStarts(textOf(r), words) ? 1 : m.inside.length;
       }
       if (door.id === "tools") for (const g of TOOL_SHELVES) n += g.tools.filter((t) => hasWordStarts(`${t.name} ${t.line}`, words)).length;
     }
     return n;
-  }, [words]);
+  }, [words, areas]);
 
   const HelpIcon = ICONS[HELP_ENTRY.icon];
   const StartIcon = ICONS[START_LINK.icon];
@@ -268,7 +310,7 @@ export default function Everything() {
       </div>
 
       {DOORS.map((door, i) => (
-        <DoorSection key={door.id} door={door} words={words} index={i} />
+        <DoorSection key={door.id} door={door} words={words} index={i} areas={areas} />
       ))}
     </Layout>
   );

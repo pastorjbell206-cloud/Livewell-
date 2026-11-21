@@ -93,3 +93,32 @@ describe("/explore", () => {
     expect((screen.getByRole("searchbox", { name: "Find a page or a tool" }) as HTMLInputElement).value).toBe("prayer");
   });
 });
+
+describe("/explore and the case for the faith", () => {
+  it("lists the areas the library's own manifest says are live, and no pending one", async () => {
+    const index = {
+      roomLive: true,
+      claims: [],
+      answers: {},
+      areas: [
+        { slug: "text", n: 2, title: "Can we trust the text of the New Testament?", planned: 9, status: "live", live: true, hasPage: true, pieces: [{ slug: "a", question: "A?", status: "live", live: true }] },
+        { slug: "jesus", n: 3, title: "Jesus and the resurrection", planned: 10, status: "live", live: true, hasPage: true, pieces: [{ slug: "b", question: "B?", status: "live", live: true }, { slug: "c", question: "C?", status: "pending", live: false }] },
+        { slug: "god", n: 1, title: "Does God exist?", planned: 5, status: "pending", live: false, hasPage: true, pieces: [] },
+      ],
+    };
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: string) =>
+        String(url).includes("/questions/index.json")
+          ? new Response(JSON.stringify(index), { status: 200, headers: { "content-type": "application/json" } })
+          : new Response("{}", { status: 404 }),
+      ),
+    );
+    renderWithProviders(<Everything />);
+    const live = await screen.findByRole("link", { name: "Jesus and the resurrection" }, { timeout: 8000 });
+    expect(live.getAttribute("href")).toBe("/questions/jesus");
+    const questions = document.querySelector("section#questions")!;
+    const hrefs = Array.from(questions.querySelectorAll("a[href^='/questions/']")).map((a) => a.getAttribute("href"));
+    expect(hrefs).toEqual(["/questions/text", "/questions/jesus", "/questions/claims"]);
+  });
+});
