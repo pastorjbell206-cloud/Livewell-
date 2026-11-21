@@ -11,7 +11,7 @@
  * has the same name here as in the header, the footer and search, and the
  * page cannot fall behind the site.
  */
-import { useMemo, useState } from "react";
+import { useMemo, useState, type Ref } from "react";
 import { Link } from "wouter";
 import { Search } from "lucide-react";
 
@@ -20,13 +20,14 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { PageHead } from "@/components/editorial/PageHead";
 import Plate from "@/components/art/Plate";
 import PlateFrame from "@/components/art/PlateFrame";
+import { useNear } from "@/components/art/useNear";
 import { APP_ENTRY, DOORS, HELP_ENTRY, LIBRARY_ENTRY, START_LINK, type CatalogEntry, type Door, type Room } from "@/lib/siteCatalog";
 import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
 import { FAMILY_GROUP, FAMILY_TOOLS, TOOL_GROUPS } from "@/lib/toolsList";
 import { liveSections, sectionHref } from "@/lib/shelf";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { followHash } from "@/lib/followHash";
-import { useLiveAreas, withLiveAreas } from "@/lib/liveAreas";
+import { useLiveAreas } from "@/lib/siteNav";
 import "./explore.css";
 
 /** The tools, each once, in the tools page's groups and then the family's, under their one name (lib/toolsList.ts). */
@@ -107,8 +108,8 @@ function essayRooms(): Room[] {
   }));
 }
 
-function DoorSection({ door, words, index, areas }: { door: Door; words: string[]; index: number; areas: CatalogEntry[] | null }) {
-  const rooms = door.id === "essays" ? essayRooms() : door.rooms.map((r) => withLiveAreas(r, areas));
+function DoorSection({ door, words, index, areas, nearRef }: { door: Door; words: string[]; index: number; areas: ((room: Room) => Room) | null; nearRef?: Ref<HTMLElement> }) {
+  const rooms = door.id === "essays" ? essayRooms() : door.rooms.map((r) => (areas ? areas(r) : r));
   const shown = rooms.map((r) => matchRoom(r, words)).filter((x): x is { room: Room; inside: CatalogEntry[] } => x !== null);
   const pageHit = !words.length || hasWordStarts(`${door.name} ${textOf(door.page)}`, words);
   const tools =
@@ -119,7 +120,7 @@ function DoorSection({ door, words, index, areas }: { door: Door; words: string[
   if (!pageHit && !shown.length && !toolCount) return null;
   const DoorIcon = ICONS[door.icon];
   return (
-    <section id={door.id} className={`ex-door${index % 2 ? " ex-door--warm" : ""}`} aria-labelledby={`ex-door-${door.id}`}>
+    <section ref={nearRef} id={door.id} className={`ex-door${index % 2 ? " ex-door--warm" : ""}`} aria-labelledby={`ex-door-${door.id}`}>
       <div className="ex-wrap ex-door__grid">
         <div className="ex-door__head">
           <div>
@@ -182,7 +183,9 @@ export default function Everything() {
   const [query, setQuery] = useState(() => (typeof window === "undefined" ? "" : new URLSearchParams(window.location.search).get("q") ?? ""));
   const words = useMemo(() => queryWords(query), [query]);
   const searching = query.trim().length > 0;
-  const areas = useLiveAreas();
+  // The areas are asked for when the Questions door nears the screen, or a find is typed: never in the first screen's way.
+  const [questionsRef, questionsNear] = useNear<HTMLElement>("1200px 0px");
+  const areas = useLiveAreas(questionsNear || searching);
 
   // How many places a find turned up, counted the way the tiles show them.
   const found = useMemo(() => {
@@ -190,7 +193,7 @@ export default function Everything() {
     let n = 0;
     for (const door of DOORS) {
       if (hasWordStarts(`${door.name} ${textOf(door.page)}`, words)) n += 1;
-      for (const r of door.id === "essays" ? essayRooms() : door.rooms.map((x) => withLiveAreas(x, areas))) {
+      for (const r of door.id === "essays" ? essayRooms() : door.rooms.map((x) => (areas ? areas(x) : x))) {
         const m = matchRoom(r, words);
         if (m) n += hasWordStarts(textOf(r), words) ? 1 : m.inside.length;
       }
@@ -272,7 +275,7 @@ export default function Everything() {
       </div>
 
       {DOORS.map((door, i) => (
-        <DoorSection key={door.id} door={door} words={words} index={i} areas={areas} />
+        <DoorSection key={door.id} door={door} words={words} index={i} areas={areas} nearRef={door.id === "questions" ? questionsRef : undefined} />
       ))}
     </Layout>
   );

@@ -8,7 +8,8 @@ import { describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import { indexEntries, rankEntries } from "./siteSearch";
-import { findEntries } from "./searchMend";
+import { editDistance, findEntries } from "./searchMend";
+import { editDistance as finderDistance } from "./wisdom-match";
 
 const ENTRIES = indexEntries(JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../public/search-index.json"), "utf8")));
 
@@ -55,5 +56,12 @@ describe("findEntries", () => {
   it("returns nothing for nonsense, so the page can offer the doors", () => {
     expect(findEntries(ENTRIES, "zzqqxx")).toEqual({ items: [] });
     expect(findEntries(ENTRIES, "")).toEqual({ items: [] });
+  });
+});
+
+describe("editDistance", () => {
+  it("is the Wisdom Finder's rule, letter for letter", () => {
+    const words = ["forgivness", "forgiveness", "anxeity", "anxiety", "greif", "grief", "baptisim", "baptism", "prayer", "player", "marriage", "mariage", "a", ""];
+    for (const a of words) for (const b of words) for (const max of [1, 2]) expect(editDistance(a, b, max), `${a}/${b}/${max}`).toBe(finderDistance(a, b, max));
   });
 });

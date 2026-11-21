@@ -27,6 +27,19 @@ describe("DoorInside", () => {
   });
 });
 
+/** An observer that reports its element on screen at once, as it is when a reader scrolls to it. */
+class NearNow {
+  constructor(private cb: IntersectionObserverCallback) {}
+  observe(el: Element) {
+    this.cb([{ isIntersecting: true, target: el } as IntersectionObserverEntry], this as unknown as IntersectionObserver);
+  }
+  unobserve() {}
+  disconnect() {}
+  takeRecords() {
+    return [];
+  }
+}
+
 describe("DoorInside on the Questions door", () => {
   it("lists the case for the faith's live areas from the library's manifest, ahead of Look up a claim", async () => {
     const { vi } = await import("vitest");
@@ -41,11 +54,15 @@ describe("DoorInside on the Questions door", () => {
       ],
     };
     vi.stubGlobal("fetch", vi.fn(async () => new Response(JSON.stringify(index), { status: 200, headers: { "content-type": "application/json" } })));
+    // The manifest is asked for when this part of the page nears the screen.
+    const realObserver = window.IntersectionObserver;
+    window.IntersectionObserver = NearNow as unknown as typeof IntersectionObserver;
     const { container } = renderWithProviders(<DoorInside door="questions" />);
     const live = await screen.findByRole("link", { name: /God, faith and reason/ }, { timeout: 8000 });
     expect(live.getAttribute("href")).toBe("/questions/god");
     const hrefs = Array.from(container.querySelectorAll("a.lw-tile[href^='/questions/']")).map((a) => a.getAttribute("href"));
     expect(hrefs).toEqual(["/questions/god", "/questions/claims"]);
+    window.IntersectionObserver = realObserver;
     vi.unstubAllGlobals();
   });
 });

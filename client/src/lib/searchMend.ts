@@ -7,14 +7,41 @@
  *
  * It runs only after the plain search (lib/siteSearch.ts, rankEntries) comes
  * back empty, so a query that already works is never changed. The spelling
- * test is the Wisdom Finder's (lib/wisdom-match.ts, editDistance): a word of
+ * test is the Wisdom Finder's rule (lib/wisdom-match.ts, editDistance): a word of
  * five letters or more that no page uses, mended to the nearest word the
  * pages' titles and keywords do use, one letter away (two for a long word, a
  * swap of neighbours counts as one). This module is loaded by the search page
  * alone, never by the header.
  */
-import { editDistance } from "@/lib/wisdom-match";
 import { normalizeText, rankEntries, searchWords, type Searchable } from "@/lib/siteSearch";
+
+/**
+ * The number of single-letter edits (insert, delete, change, or two neighbours
+ * swapped) between two words, or max + 1 once it is over max. The same rule
+ * as the Wisdom Finder's (lib/wisdom-match.ts, editDistance), kept here as its
+ * own few lines so that the search page does not pull the finder's matcher
+ * out of the finder's own chunk; searchMend.test.ts holds the two together.
+ */
+export function editDistance(a: string, b: string, max: number): number {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  const rows: number[][] = [];
+  for (let i = 0; i <= a.length; i++) {
+    rows.push([i]);
+    let low = i;
+    for (let j = 1; j <= b.length; j++) {
+      if (i === 0) {
+        rows[0][j] = j;
+        continue;
+      }
+      let d = Math.min(rows[i - 1][j] + 1, rows[i][j - 1] + 1, rows[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) d = Math.min(d, rows[i - 2][j - 2] + 1);
+      rows[i][j] = d;
+      if (d < low) low = d;
+    }
+    if (i > 0 && low > max) return max + 1;
+  }
+  return Math.min(rows[a.length][b.length], max + 1);
+}
 
 export interface Found<T> {
   items: T[];

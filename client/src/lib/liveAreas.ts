@@ -6,41 +6,45 @@
  * door's own page) take the areas from the manifest: an area is listed the
  * day it goes live and never before, with no second list to keep.
  *
- * Until the manifest answers, and if it does not, a page shows the catalogue
- * as it stands.
+ * This module is a chunk of its own, asked for by useLiveAreas (lib/siteNav.ts)
+ * only once a page has loaded and the browser is idle, so it adds nothing to
+ * any page's first paint. It reads the manifest's few fields itself and does
+ * not import the questions pages' own module.
  */
-import { useEffect, useState } from "react";
 import type { CatalogEntry, Room } from "@/lib/siteCatalog";
-import { areaHref, fetchQuestionsIndex, QUESTIONS_ROOM } from "@/lib/questions";
+import { fetchJson } from "@/lib/fetch-json";
 
-export function useLiveAreas(on = true): CatalogEntry[] | null {
-  const [areas, setAreas] = useState<CatalogEntry[] | null>(null);
-  useEffect(() => {
-    if (!on) return;
-    let stale = false;
-    fetchQuestionsIndex()
-      .then((d) => {
-        if (stale) return;
-        setAreas(
-          d.areas
-            .filter((a) => a.live && a.hasPage)
-            .map((a) => {
-              const n = a.pieces.filter((p) => p.live).length;
-              return { id: `questions.${a.slug}`, name: a.title, line: `${n} ${n === 1 ? "question" : "questions"}, each answered in full.`, href: areaHref(a.slug), icon: "Library" as const };
-            }),
-        );
-      })
-      .catch(() => {});
-    return () => {
-      stale = true;
-    };
-  }, [on]);
-  return areas;
+const CASE_ROOM = "/questions";
+
+interface ManifestArea {
+  slug: string;
+  title: string;
+  live: boolean;
+  hasPage: boolean;
+  pieces: { live: boolean }[];
 }
 
+const isManifest = (x: unknown): x is { areas: ManifestArea[] } =>
+  !!x &&
+  typeof x === "object" &&
+  Array.isArray((x as { areas?: unknown }).areas) &&
+  (x as { areas: ManifestArea[] }).areas.every((a) => !!a && typeof a.slug === "string" && typeof a.title === "string" && Array.isArray(a.pieces));
+
 /** A room as the catalogue lists it, with the case's live areas ahead of whatever else is inside it. */
-export function withLiveAreas(room: Room, areas: CatalogEntry[] | null): Room {
-  if (room.href !== QUESTIONS_ROOM || !areas?.length) return room;
+export function withLiveAreas(room: Room, areas: CatalogEntry[]): Room {
+  if (room.href !== CASE_ROOM || !areas.length) return room;
   const live = new Set(areas.map((a) => a.href));
   return { ...room, inside: [...areas, ...(room.inside ?? []).filter((i) => !live.has(i.href))] };
+}
+
+/** Reads the manifest and answers with the one thing a listing needs: a room in, the same room with its live areas out. */
+export async function loadLiveAreas(): Promise<(room: Room) => Room> {
+  const d = await fetchJson("/questions/index.json", isManifest);
+  const areas: CatalogEntry[] = d.areas
+    .filter((a) => a.live && a.hasPage)
+    .map((a) => {
+      const n = a.pieces.filter((p) => p.live).length;
+      return { id: `questions.${a.slug}`, name: a.title, line: `${n} ${n === 1 ? "question" : "questions"}, each answered in full.`, href: `${CASE_ROOM}/${a.slug}`, icon: "Library" as const };
+    });
+  return (room) => withLiveAreas(room, areas);
 }

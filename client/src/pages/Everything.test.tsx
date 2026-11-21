@@ -94,6 +94,19 @@ describe("/explore", () => {
   });
 });
 
+/** An observer that reports its element on screen at once, as it is when a reader scrolls to it. */
+class NearNow {
+  constructor(private cb: IntersectionObserverCallback) {}
+  observe(el: Element) {
+    this.cb([{ isIntersecting: true, target: el } as IntersectionObserverEntry], this as unknown as IntersectionObserver);
+  }
+  unobserve() {}
+  disconnect() {}
+  takeRecords() {
+    return [];
+  }
+}
+
 describe("/explore and the case for the faith", () => {
   it("lists the areas the library's own manifest says are live, and no pending one", async () => {
     const index = {
@@ -114,11 +127,15 @@ describe("/explore and the case for the faith", () => {
           : new Response("{}", { status: 404 }),
       ),
     );
+    // The manifest is asked for when the Questions door nears the screen.
+    const realObserver = window.IntersectionObserver;
+    window.IntersectionObserver = NearNow as unknown as typeof IntersectionObserver;
     renderWithProviders(<Everything />);
     const live = await screen.findByRole("link", { name: "Jesus and the resurrection" }, { timeout: 8000 });
     expect(live.getAttribute("href")).toBe("/questions/jesus");
     const questions = document.querySelector("section#questions")!;
     const hrefs = Array.from(questions.querySelectorAll("a[href^='/questions/']")).map((a) => a.getAttribute("href"));
     expect(hrefs).toEqual(["/questions/text", "/questions/jesus", "/questions/claims"]);
+    window.IntersectionObserver = realObserver;
   });
 });
