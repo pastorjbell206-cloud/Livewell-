@@ -213,6 +213,12 @@
           "href": "/family/devotions"
         },
         {
+          "title": "Bible Explorer",
+          "line": "For a child between 7 and 16, the Explorer lays the whole Bible out as one story on a single illustrated map, with short moving pictures to watch together.",
+          "link": "Bible Explorer",
+          "href": "/study/explorer"
+        },
+        {
           "title": "For the parents",
           "line": "This study is for the grown-ups, on handing the faith to the children in your house.",
           "link": "Raising Believers: the study guide",
@@ -226,6 +232,11 @@
       "lead": "See how the whole Bible fits together as one story:",
       "link": "the story in eleven acts",
       "href": "/study/bible/story"
+    },
+    {
+      "lead": "Read a chapter with every passage explained in plain words:",
+      "link": "Mark 1, passage by passage",
+      "href": "/study/bible/mark/1#plain"
     },
     {
       "lead": "Read every chapter of the Bible in a year, beginning January 1, 2027:",
