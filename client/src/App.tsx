@@ -5,7 +5,7 @@ import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { Route, Router as WouterRouter, Switch, useLocation } from "wouter";
 import { useBrowserLocation } from "wouter/use-browser-location";
-import { Suspense, lazy, startTransition, useCallback, useEffect } from "react";
+import { Suspense, lazy, startTransition, useCallback, useEffect, useState } from "react";
 
 // The toaster is only ever fed by the admin pages (toast() calls live there),
 // so it loads lazily: sonner and next-themes leave the initial graph every
@@ -16,6 +16,7 @@ const Toaster = lazy(() =>
 );
 import { trackReturnReaderOnce } from "@/lib/telemetry";
 import { useStandalone } from "@/lib/install";
+import { RETURN_EVENT, readReturn } from "@/lib/trackReturn";
 import { DISRUPTION, JUSTICE } from "./lib/prophetic";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -169,6 +170,10 @@ const StudyBibleYear = lazy(() => import("./pages/StudyBibleYear"));
 const BiblePlans = lazy(() => import("./pages/BiblePlans"));
 const StudyBibleSearch = lazy(() => import("./pages/StudyBibleSearch"));
 const HowToStudy = lazy(() => import("./pages/HowToStudy"));
+// Tracks: a few numbered sessions in order, each using a page the site already has (lib/tracks.ts).
+const Tracks = lazy(() => import("./pages/tracks/Tracks"));
+const Track = lazy(() => import("./pages/tracks/Track"));
+const TrackSession = lazy(() => import("./pages/tracks/TrackSession"));
 const ExplorerMap = lazy(() => import("./pages/explorer/ExplorerMap"));
 const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
@@ -608,6 +613,9 @@ function Router() {
         <Route path="/study/bible/:book" component={StudyBible} />
         <Route path="/study/bible" component={StudyBible} />
         <Route path="/study/how-to-study" component={HowToStudy} />
+        <Route path="/tracks" component={Tracks} />
+        <Route path="/tracks/:slug" component={Track} />
+        <Route path="/tracks/:slug/:n" component={TrackSession} />
         <Route path="/study/explorer/watch/:slug" component={ExplorerFilm} />
         <Route path="/study/explorer/pauls-travels" component={ExplorerTravels} />
         <Route path="/study/explorer/abrahams-road" component={ExplorerAbraham} />
@@ -756,6 +764,29 @@ function StandaloneBar() {
   );
 }
 
+// "Back to session 3 of 12", on the page a track's session sent the reader
+// to. Its own chunk, fetched only once a session has set a way back
+// (lib/trackReturn.ts), and fixed in a corner so no page's content moves.
+const TrackReturnBar = lazy(() => import("./components/TrackReturnBar"));
+
+function TrackReturnSlot() {
+  const [wanted, setWanted] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      if (readReturn()) setWanted(true);
+    };
+    check();
+    window.addEventListener(RETURN_EVENT, check);
+    return () => window.removeEventListener(RETURN_EVENT, check);
+  }, []);
+  if (!wanted) return null;
+  return (
+    <Suspense fallback={null}>
+      <TrackReturnBar />
+    </Suspense>
+  );
+}
+
 function App() {
   // Depth telemetry (board rec #17 / Next-Ten #4): count returning readers once
   // per load. Best-effort, no PII, no cookie — forwards to Vercel Analytics.
@@ -784,6 +815,8 @@ function App() {
             <PageTracker />
             <WebVitalsBeacon />
             <ClientErrorReporter />
+            {/* Before the page in the document, so a keyboard reaches the way back first. */}
+            <TrackReturnSlot />
             <Router />
             <StandaloneBar />
           </WouterRouter>

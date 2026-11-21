@@ -241,6 +241,7 @@ const STATIC_PAGES = [
   { url: "/downloads", priority: "0.75", changefreq: "weekly" },
   { url: "/study/bible", priority: "0.9", changefreq: "monthly" },
   { url: "/study/plans", priority: "0.8", changefreq: "monthly" },
+  { url: "/tracks", priority: "0.8", changefreq: "monthly" },
   { url: "/wisdom", priority: "0.8", changefreq: "monthly" },
   { url: "/how-tos", priority: "0.75", changefreq: "monthly" },
   { url: "/studyguides", priority: "0.8", changefreq: "monthly" },
@@ -314,6 +315,15 @@ function manifestPages() {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
   }
+  // The tracks and their sessions (/tracks/:slug, /tracks/:slug/:n), from the
+  // tracks index (scripts/build-tracks-index.mjs).
+  if (fs.existsSync("client/public/tracks/index.json")) {
+    for (const t of JSON.parse(fs.readFileSync("client/public/tracks/index.json", "utf8")).tracks) {
+      pages.push({ url: `/tracks/${t.slug}`, priority: "0.8", changefreq: "monthly" });
+      for (const x of t.sessions) pages.push({ url: `/tracks/${t.slug}/${x.n}`, priority: "0.7", changefreq: "monthly" });
+    }
+  }
+
   // A page per Honest Answer (/answers/:slug). The answers are TypeScript
   // (client/src/data/answers.ts); their slugs are read from the source.
   try {

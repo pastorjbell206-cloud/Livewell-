@@ -806,6 +806,20 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   `build-search-index.mjs` indexes every catalogue page. Bible's third room
   is How to study the Bible, as his map has it. `docs/work/elite/nav-audit.md`
   holds the audit and the ideas that wait for him.
+- **Tracks (2026-11-21; James, of the tools: "I want to make sure that
+  they're used ... tracks or like steps of discipleship")**: a track is a few numbered
+  sessions of about ten minutes (`client/public/tracks/<slug>.json`, index by
+  `build-tracks-index.mjs`, gate `validate-tracks.mjs`, rules in
+  `scripts/lib/tracks.mjs`). A session has its own short teaching, opens one
+  page the site already has, and ends with one question, one thing to do and
+  one verse, plus a group guide; it never copies the page it uses. That page
+  shows "Back to session 3 of 12" (`components/TrackReturnBar.tsx`, fixed in a
+  corner, kept for the sitting). Progress and answers stay on the device
+  (`livewell-progress-tracks-v1`). A road on /start that has become a track
+  names it in `startRoad.json` and offers it first; its steps stay. The first
+  is "New to faith, or coming back"; the other four roads and the book study
+  ("Deep in one") are listed on /tracks as not written.
+  `docs/work/elite/tracks.md` says how to write the next.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.
