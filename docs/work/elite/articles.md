@@ -195,7 +195,7 @@ James, 2026-11-20 and 21: "I want you to continue, especially the articles. I wa
 | Is Christianity Good for Women? | /writing/is-christianity-good-for-women | Doubt and Hard Questions | 2,990 |
 | What Is the Lord's Supper? | /writing/what-is-the-lords-supper | Reading the Bible in Its World | 2,993 |
 | Is the Bible Reliable Enough to Build a Life On? | /writing/is-the-bible-reliable-enough-to-build-a-life-on | Doubt and Hard Questions | 2,993 |
-| Does Prayer Change Anything? | /writing/does-prayer-change-anything | Doubt and Hard Questions | 2,753 |
+| Does Prayer Change Anything? | /writing/does-prayer-change-anything | Doubt and Hard Questions | 2,755 |
 | Why Are There So Many Denominations? | /writing/why-are-there-so-many-denominations | The Ancient Church | 2,737 |
 
 All five were landed the way the first fourteen were: a file in `client/public/essays/`, a `"live"` line in `client/src/lib/shelf.json`, a filing line in `client/src/lib/pillar-assignments.ts`, the essays index and the passage index rebuilt. No database row. One commit each, with its ledger rows, and one more for the shelf test and the passage index.
