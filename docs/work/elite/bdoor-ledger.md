@@ -14300,3 +14300,22 @@ Cut for want of a source in the repository: that ‘How lovely are your tents’
 | Proverbs 16:33; Joshua 18:10; Galatians 3:29; 1 Peter 1:4 | 52-56 | numbers/26.json `cultural`, `christ`; BSB | BSB text |
 | The Levites apart; Moses' family named; not one left but Caleb and Joshua | 57-65 | numbers/26.json `literary`, `story`; BSB | Repository; BSB text |
 | Joshua 14:10; Hebrews 3:19; 4:9, written to Christians | 57-65 | numbers/26.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 27 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Land from father to son; a sonless man's name lost; the public place of judgment; the sisters' careful argument; a case brought to God; ‘speak correctly’; the widening order of heirs | 1-11 | numbers/27.json `cultural`, `literary`, `story` | Repository |
+| Named each time (26:33; 27:1; 36:11; Joshua 17:3); Mesopotamian parallels; the names as place names; Tirzah (1 Kings 15:33) | 1-11 | numbers/27.json `historical`, `cultural`; numbers/intro.json teaching; BSB | Repository; BSB text |
+| Joshua 17:4; Job 42:15; Galatians 3:28-29 | 1-11 | numbers/27.json `historical`; BSB | BSB text |
+| Is the law fair to women: what it assumes; the two emphases; no side | 1-11 | numbers/27.json `hard` | Repository; no side |
+| No ground for denying a woman her property, voice or standing | 1-11 | The run's content rule | A caution of these notes |
+| The Abarim range and Mount Nebo (Deuteronomy 32:49); ‘go out and come in’; kings as shepherds | 12-17 | numbers/27.json `historical`, `literary`, `words` (H7462B) | Repository |
+| Moses asks nothing for himself here (compare Deuteronomy 3:23-25); a shepherd in Midian (Exodus 3:1) | 12-17 | BSB | BSB text |
+| Ezekiel 34:23; Mark 6:34; John 10:11 | 12-17 | numbers/27.json `christ`; BSB | BSB text |
+| Joshua's record (Exodus 17; 11:28; 14:6); the laying on of hands before witnesses; ‘some’ of Moses' authority; the Urim, its working unknown | 18-23 | numbers/27.json `story`, `cultural`, `words` (H5564) | Repository |
+| Deuteronomy 34:9; 1 Timothy 4:14; Hebrews 4:8 | 18-23 | numbers/27.json `christ`, `words`; BSB | BSB text |
+
+Cut for want of a source in the repository: a contrast between ‘hand’ and ‘hands’ in the Hebrew of verses 18 and 23.
