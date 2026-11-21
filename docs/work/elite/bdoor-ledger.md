@@ -13874,3 +13874,19 @@ Cut for want of a source in the repository: that the priests' blessing is still 
 | The readings of the total: as written; elef as clan or unit (verse 16; Judges 6:15; Mendenhall 1958; Humphreys 1998); symbolic or later; each difficulty; no side | 20-46 | exodus/plain/12.json 37-42 `hard`; numbers/1.json `hard`, `words` (H0505G) | Repository; worded as the Exodus 12 note; no side |
 | The Levites' task; the ‘outsider’ a non-Levite; the Levites' camp as a guard; Leviticus 10:1-2; the chapter framed by obedience | 47-54 | numbers/1.json `cultural`, `literary`; leviticus/plain/10.json | Repository |
 | 2 Samuel 6:6-7; Ephesians 2:13, a link of theme | 47-54 | numbers/1.json `christ`; BSB | BSB text |
+
+## The plain notes on Numbers 3 (2026-11-21)
+
+`client/public/bible/notes/numbers/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Priests and Levites told apart; temple staffs in the ancient world; the word zar for the fire and the outsider | 1-13 | numbers/3.json `historical`, `words` (H2114A) | Repository |
+| The firstborn claimed on the night of the exodus (Exodus 13:13-15); the king of Moab (2 Kings 3:27); sons always bought back | 1-13 | numbers/3.json `story`, `cultural` | Repository |
+| Deuteronomy 18:1; Wellhausen and the reply; not settled | 1-13 | numbers/3.json `historical` | Repository; no side |
+| Exodus 4:22; Luke 2:23; Hebrews 7:14 | 1-13 | numbers/3.json `words` (H1060), `christ`; BSB | BSB text |
+| Counted from a month old; the same entry for each clan; the camp complete; Izhar and Korah (verse 27; 16:1) | 14-39 | numbers/3.json `literary`, `story`; BSB | Repository; BSB text |
+| 1 Chronicles 15:4-10; 1 Corinthians 12:18 | 14-39 | BSB | BSB text |
+| 22,300 and 22,000: a copying slip (three and six), the Talmud and Rashi, round figures | 14-39 | numbers/3.json `hard` | Repository |
+| The arithmetic; paduy, ransomed, and the exodus; the shekel a weight of eleven or twelve grams; Leviticus 27:6; 18:16; the ceremony Jewish families still keep | 40-51 | numbers/3.json `words` (H6302), `cultural` | Repository |
+| Exodus 13:15; 1 Peter 1:18-19; a pattern, not a prediction | 40-51 | numbers/3.json `christ`; BSB | BSB text |
