@@ -118,4 +118,4 @@ In the order run, every one read by its own exit code: `pnpm check` passed. The 
 
 On the served build (`scripts/serve-like-vercel.mjs`, port 4655) at 390 and 1440: each essay's page shows its title as the H1 and its last paragraph, with no sideways scroll; all five are listed on /writing and found by /search; the only failed requests were the local server's missing `/_vercel` scripts and `/api/track`. Night was not checked: the site's dark mode is switched off for every visitor. Screenshots are in `/home/user/elite-shots/articles/`.
 
-Before the full run, the two tests that hold the shelf's shape failed once, as expected, on the new counts and on the section that is no longer empty; they were updated (75 essays, 25 live, eight sections shown) and passed.
+Before the full run, the two tests that hold the shelf's shape were updated for the new counts (75 essays, 25 live, eight sections shown). On their first run one assertion failed: the page's empty-section message, which no track link reaches now that every section holds an essay. That test was rewritten to check that the old link lands on the section, and both files passed.
