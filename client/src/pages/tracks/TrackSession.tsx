@@ -290,7 +290,7 @@ export default function TrackSession() {
     <Layout>
       {track && s && (
         <SEOMeta
-          title={`${s.title}: Session ${s.n} of ${total}, ${track.title}`}
+          title={`${s.title}, Session ${s.n} of ${total}`}
           description={`${s.teaching[0].split(/(?<=[.?])\s/).slice(0, 2).join(" ")}`}
           url={`https://www.livewellbyjamesbell.co${sessionHref(slug, s.n)}`}
         />
@@ -304,7 +304,7 @@ export default function TrackSession() {
         )}
         {track && !s && (
           <>
-            <InnerHead path={trackHref(slug)} title="That session is not in this track" line={`${track.title} has ${total} sessions.`} />
+            <InnerHead width="46rem" path={trackHref(slug)} title="That session is not in this track" line={`${track.title} has ${total} sessions.`} />
             <section className="tk-sec">
               <div className="tk-col">
                 <Link href={trackHref(slug)} className="btn">
@@ -316,7 +316,7 @@ export default function TrackSession() {
         )}
         {track && s && (
           <>
-            <InnerHead path={sessionHref(slug, s.n)} title={s.title} />
+            <InnerHead width="46rem" path={sessionHref(slug, s.n)} title={s.title} />
             <SessionBody key={`${slug}/${s.n}`} track={track} s={s} />
           </>
         )}

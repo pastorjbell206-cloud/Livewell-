@@ -1815,7 +1815,7 @@ async function main() {
       n++;
       for (const x of t.sessions) {
         const sRoute = `${route}/${x.n}`;
-        const sTitle = `${x.title}: Session ${x.n} of ${total}, ${t.title}`;
+        const sTitle = `${x.title}, Session ${x.n} of ${total}`;
         const prev = t.sessions[x.n - 2];
         const next = t.sessions[x.n];
         writeRoute(

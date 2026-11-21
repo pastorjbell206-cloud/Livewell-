@@ -810,9 +810,10 @@ function App() {
             <PageTracker />
             <WebVitalsBeacon />
             <ClientErrorReporter />
+            {/* Before the page in the document, so a keyboard reaches the way back first. */}
+            <TrackReturnSlot />
             <Router />
             <StandaloneBar />
-            <TrackReturnSlot />
           </WouterRouter>
         </ToastProvider>
       </ThemeProvider>

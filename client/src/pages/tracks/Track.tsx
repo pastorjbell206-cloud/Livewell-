@@ -44,6 +44,7 @@ export default function Track() {
         {track && (
           <>
             <InnerHead
+              width="46rem"
               path={trackHref(slug)}
               title={track.title}
               line={track.subtitle}

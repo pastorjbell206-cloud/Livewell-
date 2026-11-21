@@ -63,7 +63,7 @@
 .tk-facts{font-family:var(--U);font-size:14.5px;line-height:1.5;color:var(--ink-muted);margin:0 0 var(--s-2)}
 .tk-part{padding:var(--s-4) 0 0;margin-top:var(--s-4);border-top:1px solid var(--borderdk)}
 .tk-part:first-of-type{margin-top:var(--s-3)}
-.tk-teach p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);max-width:var(--w-read);margin:0 0 var(--s-2)}
+.tk-teach>p:not(.tk-label){font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);max-width:var(--w-read);margin:0 0 var(--s-2)}
 .tk-open{padding:var(--s-3);background:var(--card);border:1px solid var(--border);border-left:3px solid var(--mustard);border-radius:var(--radius-sm)}
 .tk-open__kind{font-family:var(--U);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 6px}
 .tk-open__why{font-family:var(--B);font-size:16.5px;line-height:1.6;color:var(--ink);max-width:58ch;margin:0 0 var(--s-2)}
@@ -94,7 +94,7 @@
 .tk-group__q{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);max-width:var(--w-read);margin:0 0 var(--s-2)}
 .tk-group ol{margin:0 0 var(--s-2);padding-left:1.4em;font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);max-width:var(--w-read)}
 .tk-group li{margin-bottom:8px}
-.tk-group__head{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:var(--s-3) 0 6px}
+.tk-page .tk-group__head{font-family:var(--U);font-weight:500;line-height:1.5;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin:var(--s-3) 0 6px}
 .tk-prints{display:flex;flex-wrap:wrap;gap:12px;margin-top:var(--s-3)}
 .tk-prints .btn{gap:8px}
 .tk-print-only{display:none}
@@ -115,7 +115,7 @@
   .tk-sec{padding:0 !important;background:none !important}
   .tk-col{max-width:100%}
   .tk-part{padding-top:8pt;margin-top:8pt;break-inside:avoid}
-  .tk-teach p,.tk-ask__text,.tk-group__q,.tk-group ol{font-size:11pt;line-height:1.45;max-width:100%}
+  .tk-teach>p:not(.tk-label),.tk-ask__text,.tk-group__q,.tk-group ol{font-size:11pt;line-height:1.45;max-width:100%}
   .tk-verse p{font-size:12pt}
   .tk-open{border:1px solid var(--borderdk);padding:8pt}
   .tk-open .btn{background:none;color:var(--ink);border:0;padding:0;min-height:0;font-weight:600}
