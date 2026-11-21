@@ -105,3 +105,30 @@ The essay states no position as James's. The people in the opening paragraph are
 | Scripture (ESV): Judges 4:4-5; 2 Kings 22:14; John 20:18; Luke 24:11; Acts 2:17, 18:26, 21:9; 1 Corinthians 11:5, 12:7, 12:11, 13:12, 14:29, 14:34-35; Romans 16:1-3, 16:7; 1 Timothy 1:3, 2:11-14, 3:2; 2 Timothy 3:6; Philippians 4:3; Galatians 3:28; Matthew 20:26; Genesis 1:27-28 (cited) | ESV copy, by script | Words verified |
 
 Cut or held back: Margaret Fell's 1666 title, Catherine Booth, Phoebe Palmer, the 1956 Methodist and Presbyterian decisions, the 1987 and 1989 statements of the two modern camps, and the Catholic ruling of 1994 (none could be opened; none is needed for the argument); any named modern scholar.
+
+## 4. is-hell-real-and-is-it-forever
+
+Written to agree with the live Honest Answer `is-hell-forever-or-does-it-end` (`client/src/data/answers.ts`): final judgment and the possibility of final loss are confessed; what hell is and how long it lasts is left open between the first two views; the hope of restoration is described as a minority hope the church has generally not affirmed. Nothing is said about any person's fate, and no position is stated as James's.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Russell, lecture in London, 1927: "I do not myself feel that any person who is really profoundly humane can believe in everlasting punishment."; he counted belief in hell against Jesus and said the doctrine made the world crueler | Repo, the live Honest Answer, ledgered in `docs/work/elite/apol-ledger.md` (second run, hell) | Site's own; the lecture was not opened in this run |
+| Nicene Creed: "He shall come again, with glory, to judge the quick and the dead" | Creeds.json, `nicene_creed.json` | Verbatim |
+| Gehenna: twelve uses in the New Testament, eleven by Jesus; Paul never uses it | Not opened this run (the twelfth is James 3:6) | Reference knowledge |
+| Gehenna is the Valley of Hinnom, south and west of Jerusalem, where kings of Judah burned children; by Jesus' time a name for final punishment; the rubbish-dump explanation is first found in a medieval commentator around 1200 and has no ancient support | Repo, Study Bible notes, `client/public/bible/notes/mark/9.json` | Site's own |
+| Mark 9:48 draws on Isaiah 66:24, where worm and fire consume corpses | ESV copy | Verified |
+| Eternal conscious punishment the view of most of the church, East and West | Repo, the live Honest Answer ("held by most of the church through most of its history") | Site's own |
+| Conditional immortality: Fudge 1982; Stott 1988, tentatively | Repo, the live Honest Answer and its ledger | Site's own |
+| Origen (third century) and Gregory of Nyssa (fourth) taught a final restoration; Gregory never condemned | Repo, the live Honest Answer for Gregory; WD, Augustine, *City of God* 21.17 for Origen; "never condemned" not opened | Partly verified |
+| Augustine, *City of God* 21.17: "I must now, I see, enter the lists of amicable controversy with those tender-hearted Christians ... shall suffer eternally." | WD, Augustine, *The City of God*, Book 21 (Dods's translation as the NPNF prints it) | Verbatim |
+| The last books of *The City of God* date from the 420s | Not opened this run | Reference knowledge |
+| Origen's teaching condemned in 553 under Justinian | WD, same file, editor's note 37 (the Fifth Ecumenical Council, Justinian); the year 553 not printed there | Partly verified |
+| Athanasian Creed: "they that have done evil" go "into everlasting fire" | Creeds.json, `athanasian_creed.json` | Verbatim |
+| Westminster Confession: "shall be cast into eternal torments" | Creeds.json, `westminster_confession_of_faith.json`, 33.2 | Verbatim |
+| Edwards preached "Sinners in the Hands of an Angry God" at Enfield in July 1741, from a manuscript in a level voice; the most famous sermon in American history | Repo, history course `awakenings-and-enlightenment` | Site's own |
+| Popular pictures of hell owe much to medieval art and Dante; the devil is a prisoner in Scripture's hell | Revelation 20:10 (ESV copy) for the second; the first not opened | Reference knowledge |
+| The Catholic Church has never declared any individual to be in hell | Not opened this run | Reference knowledge; check first |
+| Care passage ("If you're grieving as you read this ... a page for grief.") | Repo, live essay `why-does-god-allow-suffering`, reused whole; a script confirmed the paragraph is identical | Site's own |
+| Scripture (ESV): Hebrews 9:27; Genesis 18:25; Jeremiah 7:31 (cited); Matthew 7:22-23, 10:28, 25:41, 25:46; Mark 9:48, 15:33; Revelation 14:11; 1 Timothy 2:4; 1 Corinthians 15:22, 15:28; Romans 6:23, 8:1; John 3:16; Jude 7; Colossians 1:20; Luke 16:26, 19:41, 23:34, 23:43 | ESV copy, by script | Words verified |
+
+Cut or held back: C. S. Lewis's two sentences and Volf's sentence (quoted in the Honest Answer; the books could not be opened here, so the essay leaves them to that page); Aquinas; any line of Edwards's sermon; any figure for what Christians today believe.
