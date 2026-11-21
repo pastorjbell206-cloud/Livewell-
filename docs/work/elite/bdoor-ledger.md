@@ -14896,3 +14896,22 @@ Cut in chapter 22: a reason for letting the mother bird go (the verse gives none
 | Psalm 15:5; Ecclesiastes 5:5; Matthew 5:37; Mark 2:23 | 17-25 | deuteronomy/23.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 23: that treaties between kings required runaways to be returned; a sentence on how defenders and opponents of slavery later used verses 15-16; that Edom refused Israel passage (chapter 2 of this book tells it differently); that the verb ‘walk’ is the same Hebrew word as in Genesis 3 (narrowed to what the verses say); ‘runaway’ of Onesimus.
+
+## The plain notes on Deuteronomy 24 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The law regulates one case and commands only verse 4; the certificate as protection, keritut; ‘some indecency’ (ervah), probably not adultery; Shammai and Hillel (m. Gittin 9:10); why the first husband may not take her back, the readings | 1-4 | deuteronomy/24.json `historical`, `words` (H6172, H3748), `hard`; matthew/plain/19.json 1-9 | Repository; no side |
+| Malachi 2:16; Matthew 19:6-8 | 1-4 | matthew/plain/19.json 1-9; BSB | Repository; BSB text |
+| Divorce and remarriage: the Catholic, Orthodox and Protestant positions; what all share; no decision | 1-4 | matthew/plain/19.json 1-9 `hard` (the same sentences) | Repository; as the existing note reads Matthew 19; no side |
+| The care paragraph reused whole | 1-4 | an existing plain note's paragraph, whole (‘Nothing in this passage asks anyone to stay where they or their children are in danger ... The Find Help page on this site lists places to turn’) | Repository; word for word |
+| The year at home; the hand mill; kidnapping and Exodus 21:16; Miriam (Numbers 12) as one story, not a rule about illness | 5-9 | deuteronomy/24.json `cultural`, `literary`; exodus/plain/21.json 1-6 `hard`; numbers/plain/12.json | Repository |
+| Exodus 21:16; 1 Timothy 1:10; Job 24:3 | 5-9 | BSB | BSB text |
+| Sunset in both laws; the lender outside the house; the cloak as a blanket; day laborers and their pay; avot | 10-15 | deuteronomy/24.json `cultural`, `literary`, `words` (H5667) | Repository |
+| Leviticus 19:13; James 5:4; Matthew 20:8-9 | 10-15 | deuteronomy/24.json `christ`; BSB | Repository; BSB text |
+| Verse 16 and the conscience it forms; the three groups named together; gleaning by the poor's own labor; the frame of verses 18 and 22 | 16-22 | deuteronomy/24.json `historical`, `cultural`, `literary`, `words` (H2142); questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`) | Repository |
+| 2 Kings 14:6; Ezekiel 18:4; Ruth 2:2, 16 | 16-22 | deuteronomy/24.json `historical`, `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 24: a remark on the Hebrew wording of verse 15; the pointer to the Honest Answer on divorce at the end of the care paragraph (the paragraph is used in its other existing form, which ends at Find Help).
