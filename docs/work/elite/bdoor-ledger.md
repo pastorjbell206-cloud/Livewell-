@@ -13216,3 +13216,25 @@ Cut or narrowed before publishing: the origin of the English name Leviticus (not
 | Mark 12:43 | 14-17 | BSB | BSB text |
 
 Cut before publishing: a reason for the north side of the altar (the text gives none, and the note says so); the Greek name of the offering and the English word that comes from it (true to the deep note, but a detour for a new reader).
+
+## The plain notes on Leviticus 2 (2026-11-21)
+
+`client/public/bible/notes/leviticus/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No animal and no blood; the text never says it atones; a gift of the fruit of work | 1-3 | leviticus/2.json `story` | Repository |
+| Minchah as a present or tribute; Jacob's present to Esau; Cain's offering | 1-3 | leviticus/2.json `words` (H4503G) | Repository |
+| Fine flour; frankincense from southern Arabia and the Horn of Africa | 1-3 | leviticus/2.json `historical` | Repository |
+| The memorial portion, from ‘to remember’; the rest for the priests, eaten in the holy place (6:16); priests without land | 1-3 | leviticus/2.json `cultural`, `words` (H0234) | Repository |
+| Brought with the burnt and peace offerings; the evening offering; the afternoon prayer called Minchah | 1-3 | leviticus/2.json `story`, `historical` | Repository |
+| Genesis 4:3; Psalm 141:2; Acts 10:4 and the Greek word; 1 Corinthians 9:13 | 1-3 | leviticus/2.json `words`, `doctrines` (church); BSB | BSB text |
+| The oven, the griddle and the pan; a household's own bread | 4-10 | leviticus/2.json `cultural` | Repository |
+| Direct address; ‘it is a grain offering’; verses 8-10 repeat verses 2-3 | 4-10 | leviticus/2.json `literary` | Repository |
+| Deuteronomy 26:10; Philippians 4:18; Hebrews 13:16; the New Testament does not interpret the chapter directly | 4-10 | leviticus/2.json `christ`; BSB | BSB text |
+| Leaven and honey: perhaps fermentation and decay; allowed as firstfruits; the leavened loaves of 23:17 | 11-16 | leviticus/2.json `cultural` | Repository |
+| Salt as permanence and loyalty; shared salt; the salt of the covenant | 11-16 | leviticus/2.json `cultural`, `doctrines` (covenant), `words` (H4417M) | Repository |
+| Firstfruits as trust for the rest | 11-16 | leviticus/23.json `words` (H1061) | Repository |
+| Numbers 18:19; 2 Chronicles 13:5; Luke 12:1; 1 Corinthians 5:8; Matthew 5:13 | 11-16 | leviticus/2.json `words` (H2557A), `christ`; BSB | BSB text |
+
+Cut before publishing: how leaven was made from old dough (not in the repository).
