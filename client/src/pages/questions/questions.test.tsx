@@ -61,7 +61,7 @@ const god = index.areas.find((a) => a.slug === "god")!;
 const morality = index.areas.find((a) => a.slug === "morality")!;
 const religions = index.areas.find((a) => a.slug === "religions")!;
 /** The morality pieces written after the area went live, pending until their second read. */
-const MORALITY_PENDING: string[] = ["what-the-bible-says-about-homosexuality", "the-first-christians-on-abortion-and-exposure", "is-christianity-bad-for-women"];
+const MORALITY_PENDING: string[] = ["what-the-bible-says-about-homosexuality", "the-first-christians-on-abortion-and-exposure", "is-christianity-bad-for-women", "is-christian-nationalism-christian"];
 
 describe("the questions library's data", () => {
   const PENDING: Record<string, string[]> = {
