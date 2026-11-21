@@ -33,5 +33,474 @@
     { "ch": 18, "why": "The promise of a prophet like Moses, which the New Testament applies to Jesus." },
     { "ch": 30, "why": "The promise of return after exile and of hearts circumcised by God, and the call to choose life." },
     { "ch": 34, "why": "Moses dies on Mount Nebo in sight of the land, and the Torah closes by saying no prophet like him has yet arisen." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Deuteronomy in a minute",
+        "body": "Deuteronomy is the fifth book of the Bible and the last of the five books of Moses. It has 34 chapters. Almost all of it is speech. Moses, at the end of his life, stands before Israel on the plains of Moab, east of the Jordan River, and preaches.\n\nThe people in front of him are not the people who left Egypt. That generation refused to enter the promised land and died in the wilderness, as the book of Numbers tells. These are their children. They were small, or not yet born, when God spoke at Mount Sinai. Now they are about to cross the river, and Moses is not going with them. So he tells them the story again, gives them the law again, and pleads with them to hold on to God when he is gone.\n\nThe whole book turns on one sentence: “And you shall love the LORD your God with all your heart and with all your soul and with all your strength” (6:5). Deuteronomy is law, but it is law preached by a man who loves his people and is about to leave them. It gives reasons. It remembers. It warns. And it keeps saying that God loved Israel first, before Israel had done anything to earn it.\n\nThe book ends on a mountain. Moses climbs Mount Nebo, looks across at a land he will not enter, and dies there. With his death the five books of Moses come to their close."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Deuteronomy closes the Torah, the five books that Jews call the Law of Moses. Genesis tells of creation and of God's promise to Abraham: a family, a land, and good for all nations through him. Exodus tells how God rescued that family from slavery in Egypt and made a covenant with them at Mount Sinai. Leviticus sets out how a holy God can live among a sinful people. Numbers tells of the wilderness years, when the first generation refused the land and died in the desert.\n\nDeuteronomy opens where Numbers ends, on the plains of Moab, the lowland east of the Jordan across from Jericho. It gives the day: “In the fortieth year, on the first day of the eleventh month, Moses proclaimed to the Israelites all that the LORD had commanded him concerning them” (1:3). Israel has just defeated two kings east of the river, Sihon and Og (1:4). The land promised to Abraham lies in sight on the other side.\n\nThe book says in passing how short the road should have been. Horeb, which is Deuteronomy's usual name for Mount Sinai, is eleven days from Kadesh-barnea on the edge of Canaan (1:2). It took Israel forty years. Moses wants the new generation to know why.\n\nVery little happens in Deuteronomy. No one travels, and no battle is fought while Moses speaks. An old man talks, a people listens, and at the end he dies. The next book, Joshua, takes up the story at once, with Israel crossing the Jordan under the leader Moses appointed. The books that follow, from Joshua to Kings, measure Israel's life in the land by what Moses says here."
+      },
+      {
+        "id": "names",
+        "h": "Why it is called Deuteronomy, and ‘These are the words’",
+        "body": "The book has two names.\n\nThe English name comes from the old Greek translation of the Old Testament, the Septuagint. In 17:18 the king of Israel is told to write out ‘a copy of this instruction’. The Greek translators rendered that phrase with a word meaning a second law, or a repetition of the law, and the word became the book's title. The name fits in one way. Much of what Moses says here was first said at Sinai, and the Ten Commandments of Exodus 20 are given again in chapter 5. But the name can mislead. Deuteronomy is not a second and different law. It is the same covenant, explained to new hearers who will live in a new place. The book's own way of putting it is better: “Moses began to explain this law” (1:5).\n\nThe Hebrew name is Devarim, ‘words’, taken from the opening line: ‘These are the words that Moses spoke to all Israel’ (1:1). That name tells a reader what kind of book this is. It is a book of spoken words, a preacher's words, meant to be heard."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "Deuteronomy presents itself as the words of Moses. It says that he spoke them on the plains of Moab and that he wrote them down: “So Moses wrote down this law and gave it to the priests” (31:9; see also 31:24). Jewish and Christian tradition has long held Moses to be its author, and Jesus and the New Testament writers cite its commands as the words of Moses.\n\nThe book also holds material that Moses did not write. The opening verses (1:1-5) speak about him as another person would. The last chapter tells of his death and burial and says that ‘no one to this day knows the location of his grave’ (34:6). A Jewish tradition recorded in the Talmud gave the last eight verses to Joshua. Readers who hold that Moses is the source of the book's substance generally grant that a later hand framed it and added the account of his death.\n\nMost critical scholars date the book, or its core in chapters 12 to 26, much later. In 2 Kings 22 a scroll is found in the temple during the reign of King Josiah. The high priest says, “I have found the Book of the Law in the house of the LORD” (2 Kings 22:8). The king tore his clothes when he heard it read, and he began a great reform, about 622 BC. In 1805 the German scholar W. M. L. de Wette argued that this scroll was an early form of Deuteronomy, and that became the leading view among critical scholars. Those who hold it note that Josiah ended worship outside Jerusalem, as chapter 12 requires, and that the curses of chapter 28 resemble a treaty the Assyrian king Esarhaddon laid on his subjects in 672 BC. On this view the book grew among people devoted to the covenant, perhaps Levites or prophets of the northern kingdom, was brought to Jerusalem, and was enlarged during and after the exile in Babylon.\n\nScholars who hold an earlier date reply that the shape of the whole book is closer to treaties of the Hittite kings of the late second millennium BC, and that its setting, with Israel not yet in the land, is kept from beginning to end. Some take a middle position: old material from Moses, preserved and preached for centuries, and given its final form later.\n\nWhen Moses lived depends on the date of the exodus, which is debated. An earlier date, in the fifteenth century BC, rests largely on 1 Kings 6:1. A later date falls in the thirteenth century BC.\n\nChristians who confess the Bible as God's word hold more than one of these views, as the site's page on who wrote the first five books sets out. These notes do not settle the question. On every view the book speaks as Moses' last words to Israel, and these notes read it as it presents itself."
+      },
+      {
+        "id": "built",
+        "h": "How Deuteronomy is built",
+        "body": "Deuteronomy is built from three addresses by Moses, followed by his last acts.\n\nThe first address (1:1 to 4:43) looks back. Moses retells the road from Horeb to Moab: the refusal at Kadesh, the long years of wandering, and the victories over Sihon and Og. Then he draws the lesson. At the mountain Israel heard God and saw nothing: “You heard the sound of the words, but saw no form; there was only a voice” (4:12). So Israel must never make an image of him.\n\nThe second address (4:44 to the end of chapter 28) is the longest and is the center of the book. It begins with the Ten Commandments (chapter 5) and the call to love the one LORD (chapter 6). Chapters 7 to 11 preach on that call. Israel must not forget God when life becomes easy, and must not think it earned the land. Chapters 12 to 26 set out laws for life in the land: worship, judges, kings, priests, prophets, war, family, and care for the poor. Chapters 27 and 28 close the address with the blessings that follow faithfulness and the curses that follow rebellion.\n\nThe third address (chapters 29 and 30) renews the covenant with the generation standing there and ends with the plea to ‘choose life’ (30:19).\n\nThe last four chapters are Moses' farewell. He hands leadership to Joshua and gives the written law to the priests (chapter 31). He teaches Israel a song (chapter 32). He blesses the tribes one by one (chapter 33). Then he climbs the mountain and dies (chapter 34).\n\nOne small word holds the book together: ‘today’. Moses says it again and again. “He did not make this covenant with our fathers, but with all of us who are alive here today” (5:3). Most of his hearers had not stood at Horeb. Moses speaks as though they had. Each generation that hears the book is meant to hear it as spoken to itself."
+      },
+      {
+        "id": "preached",
+        "h": "Preached law: sermons more than statutes",
+        "body": "A reader who expects a law code will be surprised by Deuteronomy. Moses speaks to ‘you’. He repeats himself, as preachers do. He explains, argues, remembers and pleads. The book is closer to a set of sermons on the law than to a list of statutes.\n\nThe Sabbath command shows the difference. In Exodus the reason for the day of rest is that God rested after making the world. In Deuteronomy Moses gives a reason from Israel's own history: “Remember that you were a slave in the land of Egypt, and that the LORD your God brought you out of there with a mighty hand and an outstretched arm” (5:15). People who were once worked without rest must give rest to those who work for them. The laws for the poor carry the same reason: “Remember that you were slaves in the land of Egypt. Therefore I am commanding you to do this” (24:22).\n\nSo the reasons matter as much as the rules. A new reader can watch for a handful of verbs that carry the preaching: hear, remember, do not forget, love, fear, keep, choose.\n\nMany of the laws are examples and not a complete list. “If you build a new house, you are to construct a railing around your roof, so that you do not bring bloodguilt on your house if someone falls from it” (22:8). Roofs in Israel were flat, and people lived on them. The law teaches that a person is responsible for the danger his property creates for others, and a judge was expected to reason from such a case to cases the law did not name. The site's guide Reading the Law says more.\n\nLaw in this book comes after rescue. Moses imagines a child asking what all the commands mean, and he gives the parent the answer. It begins with a story: ‘We were slaves of Pharaoh in Egypt, but the LORD brought us out of Egypt with a mighty hand’ (6:21). Obedience is the answer of a people already set free. It is not the price of their freedom.\n\nThe book also means to be repeated. Moses writes the law down and has it placed beside the ark (31:24-26). Every seven years it is to be read aloud to everyone, men, women, children and the foreigners living in Israel's towns, ‘so that they may listen and learn to fear the LORD your God’ (31:12). And it is to be taught at home, every day."
+      },
+      {
+        "id": "treaty",
+        "h": "A covenant, shaped like a treaty",
+        "body": "The laws of Deuteronomy are the terms of a covenant, a binding relationship between God and Israel. Moses says so directly: “The LORD our God made a covenant with us at Horeb” (5:2).\n\nIn 1954 the scholar George Mendenhall drew attention to a likeness between the Bible's covenant and the treaties that Hittite great kings made with lesser kings in the fourteenth and thirteenth centuries BC. Those treaties usually name the great king, recount his past kindness to the lesser king, set out what is required, provide for the treaty to be kept in a temple and read in public, call witnesses, and end with blessings for loyalty and curses for betrayal. Meredith Kline argued in 1963 that Deuteronomy as a whole follows this pattern. A reader can see the likeness: history in chapters 1 to 4, requirements in chapters 5 to 26, blessings and curses in chapters 27 and 28, and provision for keeping and reading the text in chapter 31. Moses even calls witnesses: “I call heaven and earth as witnesses against you today” (30:19).\n\nOther scholars, Moshe Weinfeld among them in 1972, have stressed how close the curses of chapter 28 are to the treaties of the Assyrian king Esarhaddon from 672 BC, and date the writing of the book to the seventh century. That debate about the date is real, as the part above explains. What both sides share is the basic point. The laws are covenant terms. They are set inside a history of God's kindness, and blessings and curses follow them.\n\nThe treaties also help with one word. In 1963 William Moran showed that in the treaties of the ancient world to ‘love’ a king meant to be loyal to him and to serve him alone. Deuteronomy uses that language for Israel and God. But it does something no treaty did. It roots Israel's love in God's love, which came first: “Because He loved your fathers, He chose their descendants after them and brought you out of Egypt by His presence and great power” (4:37)."
+      },
+      {
+        "id": "shema",
+        "h": "The Shema: one God, loved with everything",
+        "body": "The center of Deuteronomy is two verses. “Hear, O Israel: The LORD our God, the LORD is One. And you shall love the LORD your God with all your heart and with all your soul and with all your strength” (6:4-5).\n\nThe passage is called the Shema, from its first Hebrew word, ‘hear’. In Hebrew, to hear is also to heed. The same verb covers listening and obeying.\n\nThe first sentence is six words in Hebrew with no verb, and it can be read in more than one way. Some translations have ‘the LORD is one’, which stresses that God is not divided and has no equal. Others have ‘the LORD alone’, which stresses that Israel is to have no other god. Either way the sentence shuts out every rival. Israel's God is the only God, and he is wholly theirs.\n\nThe second sentence asks for the whole person. In Hebrew thought the heart is where a person thinks and chooses. The soul is the living self, one's very life. The word translated ‘strength’ is the ordinary Hebrew word for ‘very’ or ‘much’, used here as a noun: everything a person has. It may seem strange that love is commanded. But the love meant here is first a settled loyalty, shown in listening, remembering and obeying. It does not wait for a feeling. And it is warm all the same. The book speaks of God setting his affection on Israel's fathers (10:15), and it promises that God himself will one day change Israel's heart so that it can love him (30:6).\n\nThen the words are to fill ordinary life. “And you shall teach them diligently to your children and speak of them when you sit at home and when you walk along the road, when you lie down and when you get up” (6:7). They are to be tied on the hand, bound on the forehead, and written on the doorposts and the gates (6:8-9).\n\nThese verses are a living practice. Jews have recited the Shema evening and morning for more than two thousand years. Jewish tradition keeps verses 8 and 9 with tefillin, small leather cases that hold these words, and with the mezuzah, a small case holding them that is fixed to the doorframe of the home. The Talmud tells that Rabbi Akiva died under Roman torture reciting the Shema. A Christian reader meets these verses as a guest in a house where they have been kept for a very long time.\n\nJesus kept them at the center. Asked which commandment is the most important, he answered with the Shema, and joined to it the command to love one's neighbor (Mark 12:29-31). Christians confess that God is Father, Son and Holy Spirit, and they confess it as people who hold to the Shema: one God, and no other. Jewish readers have long heard the Shema as ruling that confession out. The disagreement is real, and the note on chapter 6 states it honestly."
+      },
+      {
+        "id": "chosen",
+        "h": "Chosen in love, and told to remember",
+        "body": "Why did God choose Israel? Deuteronomy answers the question twice, and both times it removes every ground for pride.\n\nIt was not Israel's size. “The LORD did not set His affection on you and choose you because you were more numerous than the other peoples, for you were the fewest of all peoples. But because the LORD loved you and kept the oath He swore to your fathers, He brought you out with a mighty hand” (7:7-8). The reason for God's love is God's love. Moses gives no other.\n\nIt was not Israel's goodness. “Understand, then, that it is not because of your righteousness that the LORD your God is giving you this good land to possess, for you are a stiff-necked people” (9:6). Moses then spends most of a chapter reminding them of the golden calf.\n\nThree things follow, and a reader should keep them together. To be chosen, in this book, is to be set apart for a task and held to a standard. It is never a license to look down on anyone. The same book says that God ‘loves the foreigner’ and commands, “So you also must love the foreigner, since you yourselves were foreigners in the land of Egypt” (10:18-19). And nothing here is a claim for any nation today. The words were spoken to Israel at the Jordan.\n\nBecause everything Israel has is a gift, the great duty of the book is to remember. “Remember that these forty years the LORD your God led you all the way in the wilderness, so that He might humble you and test you in order to know what was in your heart” (8:2). In the desert Israel learned that ‘man does not live on bread alone, but on every word that comes from the mouth of the LORD’ (8:3).\n\nThe danger Moses fears most is not hunger. It is plenty. Israel will soon live in houses it did not fill and drink from wells it did not dig (6:10-11). Then it will be tempted to say, ‘The power and strength of my hands have made this wealth for me’ (8:17). Moses answers, “But remember that it is the LORD your God who gives you the power to gain wealth” (8:18). Forgetting, in Deuteronomy, begins when life is going well."
+      },
+      {
+        "id": "laws",
+        "h": "Laws for life in the land",
+        "body": "Chapters 12 to 26 apply the love of God to a settled country. A few lines run through them.\n\nWorship is to be gathered. Israel must not worship wherever it likes, at the old shrines of Canaan. It must seek ‘the place the LORD your God will choose’ (12:5). The book never names the place.\n\nPower is to be limited. Judges must take no bribe: “Pursue justice, and justice alone” (16:20). No one may be condemned on the word of one witness (19:15). Even the king is put under the law. He must not pile up horses, wives, or silver and gold. He must write out his own copy of the law and read it all his life, so that ‘his heart will not be exalted above his countrymen’ (17:20).\n\nGod will go on speaking. Israel is not to seek guidance from fortune-tellers or the dead. Instead, “The LORD your God will raise up for you a prophet like me from among your brothers. You must listen to him” (18:15). Jewish and Christian readers have understood this promise in different ways, and the New Testament applies it to Jesus (Acts 3:22). The note on chapter 18 sets out each reading fairly.\n\nThe weak are to be protected. Debts are released every seventh year (15:1-2). A lender must not harden his heart as that year comes near: ‘you are to open your hand to him and freely loan him whatever he needs’ (15:8). A hired worker is to be paid each day before sunset, ‘because he is poor and depends on them’ (24:15). What is left of the harvest belongs to the foreigner, the fatherless and the widow (24:19-21). Weights and measures must be honest (25:13-15). A slave who escapes to Israel is not to be handed back (23:15-16). And guilt is not passed down a family: “Fathers shall not be put to death for their children, nor children for their fathers; each is to die for his own sin” (24:16).\n\nA reader should notice whose side these laws take. Again and again they name the people with no power of their own: the widow, the orphan, the foreigner, the Levite without land, the poor debtor, the worker. Moses says that God himself ‘executes justice for the fatherless and widow’ (10:18), and Israel's laws are to look like its God."
+      },
+      {
+        "id": "hard",
+        "h": "The hard pages",
+        "body": "Deuteronomy has pages that trouble careful readers, and a new reader deserves a plain word about them before meeting them.\n\nThe hardest is the command about the peoples of Canaan. Israel is told, ‘you must devote them to complete destruction. Make no treaty with them and show them no mercy’ (7:2). Chapter 20 repeats it for the cities of the land: ‘you must not leave alive anything that breathes’ (20:16). The reason given is the worship of those peoples, ‘so that they cannot teach you to do all the detestable things they do for their gods’ (20:18).\n\nChristians who receive these books as God's word read the command in more than one way, as the site's pages on the conquest set out. Some take it as it stands: God, who gives every life, judged particular peoples at one moment in history, after long patience, and never gave this as a general rule. Some read its sweeping language as the common idiom of ancient reports of war, which the same books qualify. The chapter that commands destruction also forbids marrying these peoples (7:3), which assumes they will still be there. Some read these texts as God meeting an ancient people within the limits of their world, to be read in the light of Christ; others object that this weakens the authority of Scripture. Each reading has a cost, and the site takes no side among them.\n\nSeveral things hold on every reading. The command was tied to one land and one time. It names no modern nation, people or conflict. Israel is told that it is no better than those it displaces (9:4-6), and it is threatened with the same judgment if it does the same things. The New Testament never renews the command. Jesus rebuked disciples who wanted to call down fire on a village (Luke 9:54-55). No one may use these chapters to justify violence against any person or people.\n\nOther hard pages are laws. Chapters 13 and 17 set death as the penalty for leading Israel to other gods. These were laws for ancient Israel under its covenant. They are not given to the church, and no church or state may use them against anyone. Chapters 21 and 22 hold laws about a woman captured in war and about rape and seduction. They limited some harms in their world and left others standing. The chapter notes say plainly what these laws say and do not defend what cannot be defended. Jesus said of another law in this book, the law about divorce, “Moses wrote this commandment for you because of your hardness of heart” (Mark 10:5). A law can restrain a wrong in a hard world without calling that world good.\n\nA reader who finds these pages painful is reading with a conscience the Bible itself formed. Abraham asked God, “Will not the Judge of all the earth do what is right?” (Genesis 18:25), and he was not rebuked for asking."
+      },
+      {
+        "id": "blessings",
+        "h": "Blessings, curses, and ‘choose life’",
+        "body": "The second address ends with a ceremony and a warning. Once Israel is in the land, the tribes are to stand on two mountains, Gerizim and Ebal, for the blessing and the curse (27:12-13). Chapter 28 then sets both out. Fourteen verses promise good to a faithful nation: rain, harvests, children, peace. Fifty-four verses warn what will come if the nation turns away: drought, disease, defeat, siege, and at last exile from the land.\n\nThis chapter has been badly misused, and two things must be said.\n\nFirst, it is addressed to a nation in a covenant about a land. It is not a rule for reading any one person's life. The Bible itself refuses that use. The book of Job is about a good man who suffers, and when Jesus was asked whose sin had made a man blind, he answered, “Neither this man nor his parents sinned” (John 9:3). No one's illness, poverty or loss may be read off this chapter as God's verdict on that person.\n\nSecond, Christians have sometimes pointed to these curses to explain the later sufferings of the Jewish people, as though persecution proved God's judgment. That reading is false, and it has done great harm. The note on Acts 2:22-28 says more about that history. The chapter was written by Israel's own teacher, for Israel's good, and it is followed at once by a promise.\n\nThe promise comes in the third address. Moses looks past the exile to a return. “The LORD your God will circumcise your hearts and the hearts of your descendants, and you will love Him with all your heart and with all your soul, so that you may live” (30:6). What the Shema commanded, God himself will make possible.\n\nMoses insists that what he asks is not out of reach. “But the word is very near you; it is in your mouth and in your heart, so that you may obey it” (30:14). Then he puts the choice as plainly as he can: “I have set before you life and death, blessing and cursing. Therefore choose life, so that you and your descendants may live” (30:19). To choose life, he says, is to love the LORD and hold fast to him, ‘for He is your life’ (30:20).\n\nOne sentence between the warning and the promise is worth keeping by itself. “The secret things belong to the LORD our God, but the things revealed belong to us and to our children forever” (29:29). Deuteronomy does not explain everything. It says what has been made known, and asks Israel to live by that."
+      },
+      {
+        "id": "moses",
+        "h": "The song, the blessing, and the death of Moses",
+        "body": "The last chapters belong to Moses the man.\n\nHe is 120 years old. He tells the people that he will not cross the Jordan, and he says to Joshua before them all, “The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you” (31:8).\n\nThen he teaches them a song (chapter 32). God calls it a witness (31:19): when Israel has forgotten everything else, the song will still be in its mouth. It begins with God: “He is the Rock, His work is perfect; all His ways are just” (32:4). It remembers how God found Israel in the desert and carried it as an eagle carries its young (32:10-11). It tells in advance of Israel's unfaithfulness, of judgment, and of God's mercy on the far side of judgment.\n\nThen he blesses the tribes, one by one (chapter 33). The blessing ends with one of the great sentences of the Old Testament: “The eternal God is your dwelling place, and underneath are the everlasting arms” (33:27).\n\nAll through the book a private grief has run under the preaching. Moses is not allowed to enter the land. He had asked: “Please let me cross over and see the good land beyond the Jordan” (3:25). God answered, “That is enough” (3:26). The book gives the reason in two ways. Moses tells the people that the LORD was angry with him on their account (1:37; 3:26). God tells Moses that at the waters of Meribah ‘both of you broke faith with Me’ (32:51), the event told in Numbers 20. Many readers put the two together: the people's quarreling was the occasion, and the failure was Moses' own. Others think Moses is shown sharing the fate of the generation he led.\n\nSo he climbs Mount Nebo, and God shows him the whole land. ‘I have let you see it with your own eyes, but you will not cross into it’ (34:4). “So Moses the servant of the LORD died there in the land of Moab, as the LORD had said” (34:5). God himself buries him, and no one knows the grave. Israel weeps for thirty days.\n\nThe book does not make this small, and a reader should not either. The greatest leader in Israel's story dies with his life's work unfinished, in sight of what he longed for. Yet he dies as ‘the servant of the LORD’, and the last words about him are praise: “Since that time, no prophet has risen in Israel like Moses, whom the LORD knew face to face” (34:10). The promise did not depend on Moses. It went over the river without him.\n\nThe Gospels add one more scene. On a mountain inside the land, Moses is seen again: “Suddenly Moses and Elijah appeared before them, talking with Jesus” (Matthew 17:3)."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads Deuteronomy",
+        "body": "Deuteronomy runs all through the New Testament, and the New Testament draws its own lines from the book.\n\nJesus lived by it. After his baptism he was tested in the wilderness for forty days, as Israel had been tested there for forty years. Three times the devil tempted him, and three times he answered from Deuteronomy. ‘Man shall not live on bread alone, but on every word that comes from the mouth of God’ (Matthew 4:4, from 8:3). ‘Do not put the Lord your God to the test’ (Matthew 4:7, from 6:16). ‘Worship the Lord your God and serve Him only’ (Matthew 4:10, from 6:13). All three come from Moses' preaching on the wilderness years. Where Israel had failed its test, Jesus kept faith.\n\nHe taught from it. Asked for the greatest commandment, he quoted the Shema and added the love of neighbor from Leviticus: “All the Law and the Prophets hang on these two commandments” (Matthew 22:40).\n\nThe apostles preached from it. Peter told a crowd in Jerusalem that Jesus is the prophet Moses promised: ‘The Lord your God will raise up for you a prophet like me from among your brothers’ (Acts 3:22). Paul, writing of the cross, took up a line from chapter 21 about a body hung on a tree: “Christ redeemed us from the curse of the law by becoming a curse for us” (Galatians 3:13). And when Paul wanted words for how near God has come in the message about Christ, he reached for chapter 30: ‘The word is near you; it is in your mouth and in your heart’ (Romans 10:8).\n\nPaul also reworks the Shema itself. For Christians, he says, ‘there is but one God, the Father’ and ‘there is but one Lord, Jesus Christ’ (1 Corinthians 8:6). The first Christians were Jews who went on confessing one God, and they named Jesus inside that confession.\n\nOne thing must be said plainly. Deuteronomy records Israel's failures because Israel's own teacher wanted his people to live. Its warnings are never a reason to blame or despise the Jewish people. When the New Testament quotes this book, it speaks to its own readers about their own hearts."
+      },
+      {
+        "id": "readers",
+        "h": "How to read Deuteronomy",
+        "body": "Deuteronomy is Israel's Scripture first, and it is woven into Jewish daily life. The Shema is recited evening and morning. The child's question in 6:20 has its place in the Passover meal. The words of chapter 6 are fixed to the doorframes of Jewish homes.\n\nA few habits will help a new reader.\n\nRead it as preaching. It was spoken aloud, and it reads best aloud. Let Moses repeat himself. The repetitions show what he cares about most.\n\nListen for ‘today’ and ‘remember’. The first puts the hearer at the edge of the Jordan. The second sends the hearer back to Egypt and the wilderness, to what God has already done.\n\nRead the reasons. When a law says ‘because’ or ‘so that’, the reason shows the heart of the law.\n\nKeep the order straight. In this book God's love comes first and obedience answers it. A reader who takes Deuteronomy as a way to earn God's favor has turned it upside down.\n\nDo not skip the hard pages, and do not read them alone. The chapter notes face them one at a time, with the main ways Christians have read them.\n\nAnd notice where the book places its hope. Moses knows this people. He expects them to fail, and says so. His hope does not rest on their resolve. It rests on a promise that God will one day change the heart itself. The book that asks for love with all the heart ends by saying that only God can make such a heart."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 2,
+        "v": 34,
+        "ref": "2:24 to 3:11",
+        "line": "The wars with Sihon and Og, and how Christians read the language of total destruction."
+      },
+      {
+        "ch": 6,
+        "v": 4,
+        "ref": "6:4-9",
+        "line": "The Shema: what ‘the LORD is One’ means, its place in Jewish prayer, and how Christians confess the Trinity and keep it."
+      },
+      {
+        "ch": 7,
+        "v": 2,
+        "ref": "7:1-5",
+        "line": "‘Devote them to complete destruction’: the readings Christians hold, and why no one may use the command to justify violence."
+      },
+      {
+        "ch": 7,
+        "v": 7,
+        "ref": "7:6-8",
+        "line": "Israel chosen, and not for its size or its goodness: what being chosen means here and what it does not."
+      },
+      {
+        "ch": 13,
+        "v": 5,
+        "ref": "13:1-18",
+        "line": "Death for the prophet, relative or town that leads Israel to other gods: a law of Israel's covenant, and no warrant for any church or state."
+      },
+      {
+        "ch": 15,
+        "v": 11,
+        "ref": "15:1-11",
+        "line": "‘There will never cease to be poor in the land’: a reason to open the hand, never an excuse to close it."
+      },
+      {
+        "ch": 18,
+        "v": 15,
+        "ref": "18:15-19",
+        "line": "The prophet like Moses: how Jewish and Christian readers have understood the promise."
+      },
+      {
+        "ch": 20,
+        "v": 16,
+        "ref": "20:10-18",
+        "line": "The rules of war and the cities of Canaan, read with the site's pages on the conquest."
+      },
+      {
+        "ch": 21,
+        "v": 11,
+        "ref": "21:10-14",
+        "line": "The woman captured in war: what the law restrained and what it still allowed, faced without defending it."
+      },
+      {
+        "ch": 21,
+        "v": 18,
+        "ref": "21:18-21",
+        "line": "The stubborn and rebellious son: what the law says, and why it gives no parent a right to harm a child."
+      },
+      {
+        "ch": 21,
+        "v": 23,
+        "ref": "21:22-23",
+        "line": "‘Anyone who is hung on a tree is under God's curse’, and how Paul reads it in Galatians 3:13."
+      },
+      {
+        "ch": 22,
+        "v": 28,
+        "ref": "22:23-29",
+        "line": "The laws on rape and seduction, among the hardest in the law. Nothing here asks any victim to marry or stay with anyone."
+      },
+      {
+        "ch": 23,
+        "v": 3,
+        "ref": "23:1-8",
+        "line": "Who may enter the assembly, read beside Ruth the Moabite and Isaiah 56."
+      },
+      {
+        "ch": 24,
+        "v": 1,
+        "ref": "24:1-4",
+        "line": "The certificate of divorce, and what Jesus says about it in Matthew 19."
+      },
+      {
+        "ch": 25,
+        "v": 19,
+        "ref": "25:17-19",
+        "line": "‘Blot out the memory of Amalek’: a command about one ancient people, with no people of today in view."
+      },
+      {
+        "ch": 28,
+        "v": 15,
+        "ref": "28:15-68",
+        "line": "The curses: addressed to a nation in covenant, never God's verdict on a person's illness or loss, and never a judgment on the Jewish people's later sufferings."
+      },
+      {
+        "ch": 30,
+        "v": 14,
+        "ref": "30:11-14",
+        "line": "‘The word is very near you’: what Moses meant, and how Paul uses it in Romans 10."
+      },
+      {
+        "ch": 32,
+        "v": 51,
+        "ref": "32:48-52",
+        "line": "Moses is forbidden the land. Why, and what his death in sight of it means."
+      },
+      {
+        "ch": 34,
+        "v": 6,
+        "ref": "34:5-12",
+        "line": "Who wrote of the death of Moses? What the last chapter shows about how the book was finished."
+      }
+    ],
+    "words": [
+      {
+        "word": "Devarim",
+        "line": "‘Words’, the Hebrew name of the book, from its first line: ‘These are the words that Moses spoke’ (1:1)."
+      },
+      {
+        "word": "Deuteronomy",
+        "line": "From a Greek word for a second law or a repetition of the law, taken from the old Greek translation of 17:18."
+      },
+      {
+        "word": "Horeb",
+        "line": "The name this book usually gives to Mount Sinai, where God spoke the Ten Commandments (1:2; 5:2)."
+      },
+      {
+        "word": "Torah",
+        "line": "Hebrew for instruction or teaching. It is the name Jews give to the five books of Moses."
+      },
+      {
+        "word": "Shema",
+        "line": "‘Hear’, the first Hebrew word of 6:4, and the name of the confession Jews recite evening and morning (6:4-9)."
+      },
+      {
+        "word": "Covenant",
+        "line": "A binding relationship with promises and duties. Deuteronomy sets out the covenant between the LORD and Israel (5:2; 29:1)."
+      },
+      {
+        "word": "Loving devotion",
+        "line": "The Berean Standard Bible's words for the Hebrew chesed, love that keeps its promises (7:9)."
+      },
+      {
+        "word": "Today",
+        "line": "A word Moses uses constantly. Every generation that hears the book is addressed as if it stood at the Jordan (5:3; 30:15)."
+      },
+      {
+        "word": "Remember",
+        "line": "The great duty of the book: to keep in mind the slavery in Egypt, the rescue, and the years in the wilderness (5:15; 8:2)."
+      },
+      {
+        "word": "Herem",
+        "line": "The Hebrew word behind ‘devote them to complete destruction’: a city and its people given over wholly, with no plunder kept (7:2; 20:17)."
+      },
+      {
+        "word": "The place the LORD will choose",
+        "line": "The phrase Deuteronomy uses for the one sanctuary where Israel is to worship. The book never names it (12:5)."
+      },
+      {
+        "word": "Year of release",
+        "line": "Every seventh year, when debts were cancelled and the law was read aloud to all Israel (15:1-2; 31:10-11)."
+      },
+      {
+        "word": "Tefillin and mezuzah",
+        "line": "The small cases, worn on the body or fixed to the doorframe, in which Jewish tradition keeps the words of 6:4-9."
+      },
+      {
+        "word": "Circumcised heart",
+        "line": "A picture of a heart changed toward God. Israel is told to do it (10:16), and God promises to do it for them (30:6)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "The fourteenth and thirteenth centuries BC",
+        "what": "Hittite great kings make treaties with lesser kings: history, requirements, witnesses, blessings and curses. Many scholars compare the shape of Deuteronomy with them.",
+        "kind": "world"
+      },
+      {
+        "when": "About 1446 BC, or the 1200s BC",
+        "what": "The two main dates proposed for the exodus. The last words of Moses come forty years after whichever is right.",
+        "kind": "world"
+      },
+      {
+        "when": "The fortieth year, eleventh month, first day",
+        "what": "On the plains of Moab, Moses begins to explain the law to the generation that grew up in the wilderness (1:3-5).",
+        "kind": "story"
+      },
+      {
+        "when": "The same days",
+        "what": "Moses hands leadership to Joshua, writes down the law, and teaches Israel his song (31:7-9; 31:22).",
+        "kind": "story"
+      },
+      {
+        "when": "The end of the book",
+        "what": "Moses dies on Mount Nebo at 120 years old, in sight of the land. Israel mourns him for thirty days (34:5-8).",
+        "kind": "story"
+      },
+      {
+        "when": "About 840 BC",
+        "what": "Mesha, king of Moab, records on his monument that he devoted an Israelite town to his god, using the same word Deuteronomy uses for the ban.",
+        "kind": "world"
+      },
+      {
+        "when": "672 BC",
+        "what": "The Assyrian king Esarhaddon binds his subjects by a treaty that commands them to love his heir. Its curses are often compared with chapter 28.",
+        "kind": "world"
+      },
+      {
+        "when": "About 622 BC",
+        "what": "In the reign of King Josiah the Book of the Law is found in the temple, and the king reforms the worship of Judah (2 Kings 22 and 23).",
+        "kind": "book"
+      },
+      {
+        "when": "The second or first century BC",
+        "what": "The Nash Papyrus, a single Hebrew sheet from Egypt, holds the Ten Commandments followed by the Shema. Tefillin were also found among the Dead Sea Scrolls at Qumran.",
+        "kind": "book"
+      },
+      {
+        "when": "The first century AD",
+        "what": "Jesus answers the tempter three times from Deuteronomy and names the Shema the most important commandment (Matthew 4:1-11; Mark 12:29-30).",
+        "kind": "book"
+      },
+      {
+        "when": "AD 132 to 135",
+        "what": "After the Bar Kokhba revolt, the Talmud tells, Rabbi Akiva dies under Roman torture reciting the Shema.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 200",
+        "what": "The Mishnah is compiled. It opens with the rules for reciting the Shema evening and morning.",
+        "kind": "book"
+      },
+      {
+        "when": "1805",
+        "what": "W. M. L. de Wette argues that the scroll found under Josiah was an early form of Deuteronomy.",
+        "kind": "book"
+      },
+      {
+        "when": "1954 and 1963",
+        "what": "George Mendenhall compares the covenant with Hittite treaties, and Meredith Kline argues that Deuteronomy as a whole follows their pattern.",
+        "kind": "book"
+      },
+      {
+        "when": "1972",
+        "what": "Moshe Weinfeld stresses the likeness between the curses of Deuteronomy and the Assyrian treaties of the seventh century BC.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The land Moses saw and did not enter",
+        "places": [
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "32:49",
+              "34:1",
+              "34:3"
+            ],
+            "line": "Moses spoke on the plains of Moab, east of the river. Mount Nebo, where he died, is ‘in the land of Moab across from Jericho’ (32:49). The town itself is in Canaan.",
+            "label": {
+              "dx": -8,
+              "dy": -6,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "3:27",
+              "31:2"
+            ],
+            "line": "The river Moses was not allowed to cross: ‘See the land with your own eyes, for you will not cross this Jordan’ (3:27).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "3:12",
+              "34:1"
+            ],
+            "line": "The hill country east of the Jordan, taken from Sihon and Og and given to Reuben, Gad and half of Manasseh (3:12-13). Drawn roughly.",
+            "region": true
+          },
+          {
+            "id": "shechem",
+            "name": "Shechem",
+            "lat": 32.213,
+            "lon": 35.282,
+            "refs": [
+              "11:29",
+              "27:12"
+            ],
+            "line": "Mount Gerizim and Mount Ebal stand on either side of the valley at Shechem. There the tribes were to stand for the blessing and the curse (11:29; 27:12-13)."
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only four places are drawn, each one placed elsewhere on this site. Mount Nebo, Horeb, Kadesh-barnea, Heshbon, Bashan and Beth-peor are left off, because where they lay is debated or is not placed in the records of this site. Mount Gerizim and Mount Ebal are shown by Shechem, the town between them. Nebo is traditionally placed on a ridge east of the Jordan, across from Jericho.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-law",
+        "name": "Reading the Law",
+        "line": "How the laws sit inside the story, the ancient treaties, and how Jews and Christians have related the law to life",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/calendar-and-festivals",
+        "name": "The Calendar and Festivals",
+        "line": "The three feasts of chapter 16 and the shape of the year in Israel",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/love",
+        "name": "Love of God and Neighbor",
+        "line": "Behind the Shema (6:4-5)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/covenant",
+        "name": "Covenant",
+        "line": "Behind the covenant at Horeb and in Moab",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/election",
+        "name": "Election and Calling",
+        "line": "Behind ‘the LORD loved you’ (7:7-8)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/idolatry",
+        "name": "Idolatry",
+        "line": "Behind the warnings against other gods",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/justice-poor",
+        "name": "Justice, the Poor, and the Stranger",
+        "line": "Behind the laws for the widow, the orphan and the foreigner",
+        "icon": "book"
+      },
+      {
+        "href": "/questions/old-testament/who-wrote-the-first-five-books",
+        "name": "Who wrote the first five books?",
+        "line": "Moses, later hands, and what Christians hold",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/old-testament/which-old-testament-laws",
+        "name": "Which Old Testament laws do Christians keep?",
+        "line": "The line the New Testament draws, and how Christians describe it",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/the-violence-of-the-old-testament",
+        "name": "Why Is the Old Testament So Violent? An Honest Look",
+        "line": "Behind chapters 7 and 20",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/old-testament/the-command-to-destroy-the-canaanites",
+        "name": "The command to destroy the Canaanites",
+        "line": "The objection at its strongest, and how Christians read these commands",
+        "icon": "people"
+      },
+      {
+        "href": "/answers/did-god-command-genocide",
+        "name": "Did God command genocide in the Old Testament?",
+        "line": "An Honest Answer on the hardest question the conquest raises",
+        "icon": "people"
+      }
+    ]
+  }
 }
