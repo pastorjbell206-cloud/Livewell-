@@ -14640,3 +14640,18 @@ Cut in chapter 7: a sentence that in Canaanite religion the crops were the gifts
 | Matthew 14:19; 1 Timothy 6:17 | 7-10 | BSB | BSB text |
 | Remember and forget; the mirror shape; forgetting as a failure of loyalty; verse 17 as the pivot and verse 18 the answer | 11-20 | deuteronomy/8.json `literary`, `words` (H7911) | Repository |
 | Hosea 13:6; 1 Corinthians 4:7; Luke 12:20 | 11-20 | BSB | BSB text |
+
+## The plain notes on Deuteronomy 9 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second proud thought; three denials; tsedaqah; ‘stiff-necked’ as an ox; the two reasons given; Israel no better (8:20); no ground for contempt; no claim or explanation for any nation today | 1-6 | deuteronomy/9.json `literary`, `words` (H6666, H6203); deuteronomy/intro.json `reading`; context/guides/the-violence-of-the-old-testament.json (‘A Judgment With a Four-Century Fuse’) | Repository |
+| Genesis 15:16; Romans 10:6 and 10:3; Romans 3:9; Titus 3:5; Luke 18:13-14 | 1-6 | deuteronomy/9.json `christ`; BSB | Repository; BSB text |
+| Exodus 32 to 34 behind the retelling; the bull in Canaan and Egypt; the calf as a stand or sign, Exodus 32:5; the smashed tablet as a voided treaty; burning, grinding, scattering; the offer to Moses; Aaron | 7-21 | deuteronomy/9.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 32:19; Psalm 106:19, 23; 1 Kings 12:28 and the root sin of the north | 7-21 | deuteronomy/9.json `historical`; BSB | Repository; BSB text |
+| Israel's own Scriptures confessing its own sin; not a charge against the Jewish people | 7-21 | numbers/intro.json teaching (‘How the New Testament reads Numbers’); leviticus/plain/26.json `hard` | Repository |
+| Taberah, Massah, Kibroth-hattaavah, Kadesh; the frame of verses 7 and 24; the three grounds of the prayer; ‘your people’ and ‘Your people’ | 22-29 | deuteronomy/9.json `historical`, `literary`, `words` (H6419); BSB | Repository; BSB text |
+| Exodus 32:14, 32; Hebrews 7:25 as a pattern the New Testament draws | 22-29 | deuteronomy/9.json `christ`; numbers/plain/14.json 11-25; BSB | Repository; BSB text |
+| Did the prayer change God's mind: the three views; Jeremiah 18:8; no side | 22-29 | deuteronomy/9.json `hard` | Repository; no side |
