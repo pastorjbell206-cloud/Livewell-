@@ -14703,3 +14703,20 @@ Cut in chapter 10: a remark on the Hebrew wording behind ‘showing no partialit
 | 2 Kings 16:3; Jeremiah 7:31; Ephesians 2:22 | 29-32 | deuteronomy/12.json `historical`, `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 12: that a newcomer to a land would ask how its gods were served; that Shiloh was the first place the ark rested in the land (narrowed to Jeremiah's words); that pouring out the blood was a way of ‘giving the life back’ (narrowed to the wording of the deep note).
+
+## The plain notes on Deuteronomy 13 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Prophets and dreamers in the ancient world, the Mari letters; a test beyond whether the sign works; the words of the Shema in verse 3; sarah, revolt, and treason against Israel's king; Esarhaddon's oath of 672 BC and the two datings; ba'ar | 1-5 | deuteronomy/13.json `historical`, `cultural`, `literary`, `words` (H5030, H5627, H1197I) | Repository; no side on the date |
+| 18:22; Matthew 24:24; 1 John 4:1; 1 Corinthians 5:13; John 7:12 | 1-5 | deuteronomy/13.json `christ`; BSB | Repository; BSB text |
+| The death penalty for leading others to other gods: the three points interpreters make; not given to the church; 2 Timothy 2:25; Matthew 13:30; no church or state may use it against anyone; the history of persecution named as a grave misreading | 1-5 | deuteronomy/13.json `hard`; guides/reading-law.json (‘Reading the laws that trouble modern readers’) | Repository; set in Israel's covenant |
+| The nearest ties; ‘secretly’; religion bound up with family and town; the accuser's hand first, against false charges, with 17:6 | 6-11 | deuteronomy/13.json `cultural`, `literary` | Repository |
+| Matthew 10:37; Luke 9:55; 1 Peter 3:1 | 6-11 | deuteronomy/13.json `christ`; BSB | Repository; BSB text |
+| No warrant to harm, shun or threaten a relative over belief; the care line reused whole | 6-11 | deuteronomy/13.json `hard`; 1-corinthians/plain/13.json and others (‘If you are being hurt, at home, at work or in a church’) | Repository; word for word |
+| The town is Israelite, the ban falling on Israel's own; inquiry and proof; nothing kept, so no profit; beliyya'al and 2 Corinthians 6:15; rarely carried out; Judges 19 to 21 | 12-18 | deuteronomy/13.json `cultural`, `words` (H1100G), `hard`; BSB (Judges 20:13; 21:3) | Repository; BSB text |
+| Judges 20:13; 2 Corinthians 10:4; John 18:36 | 12-18 | BSB | BSB text |
+
+Cut in chapter 13: a sentence that the prophets wept over Jerusalem under this law's judgment (no reference, and not in the repository's notes); that Judges tells the war with Benjamin ‘as a disaster’, narrowed to what Judges reports.
