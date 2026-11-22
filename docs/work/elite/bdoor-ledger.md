@@ -15273,3 +15273,22 @@ Cut in chapter 8: Adam Zertal's structure on Mount Ebal (left to the deep note, 
 | The care lines (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 16-27 `hard` | 1-corinthians/plain/7.json (17-24, `hard`); exodus/plain/21.json | Reused whole, word for word |
 
 Cut in chapter 9: Pritchard's excavation at el-Jib and what it found (left to the deep note); Gibeon as a Levite town and Solomon's sacrifice there; ‘four hundred years’ between Joshua and Saul (the notes say only ‘generations later’); Ephesians 2 and Hebrews 6 (the note calls the link a pattern and not one the New Testament draws). The BSB's words in verses 1 and 10 are not quoted because of their dashes.
+
+## The plain notes on Joshua 10 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The five towns as real places of the south; the Amarna letters (fourteenth century BC) and a ruler of Jerusalem; the kings march on Gibeon; the oath (9:15) treated as a bond; Gilgal in the valley and Gibeon in the hills; the victory credited to God; Beth-horon as the main road, fought over for centuries | 1-11 | joshua/10.json `historical`, `words` (lacham); joshua/9.json `historical` | Repository |
+| Exodus 14:14; 2 Samuel 21:1 | 1-11 | joshua/9.json `historical`; BSB | Repository; BSB text |
+| The lines as poetry from the Book of Jashar, a lost collection quoted again for David's lament (2 Samuel 1:18); the verb can mean be still, be silent or stop; the day unique because God listened to a man | 12-15 | joshua/10.json `cultural`, `words` (damam) | Repository |
+| Habakkuk 3:11; Judges 5:20 | 12-15 | joshua/10.json `hard`; BSB | Repository; BSB text |
+| The sun: a miracle in the sky (the earth's turning slowed, or a local miracle of light; the day called unique); poetry read as poetry (Judges 5:20); a request that sun and moon stop shining, the storm's darkness prolonged; the Mesopotamian omen texts; all credit the victory to God; no side | 12-15 `hard` | joshua/10.json `hard`, `words` | Repository; the readings as the notes give them; no side |
+| The foot on the neck as a common sign of victory, shown in Egyptian and Assyrian art, behind the footstool picture; Joshua gives his officers the words of chapter 1; the bodies and Deuteronomy 21:22-23, as at Ai; the cave as a memorial ‘to this day’; verse 20 and the survivors | 16-27 | joshua/10.json `cultural`, `hard` | Repository |
+| Psalm 110:1; 1 Corinthians 15:25-26 | 16-27 | joshua/10.json `christ`; BSB | Repository; BSB text; the line as the New Testament draws it |
+| The repeated report; the summary and the words of Deuteronomy 20:16; what the book sets beside it (verse 20; Hebron and Debir in 15:13-15; Jerusalem in 15:63; 13:1); the stock language of ancient war reports (Egypt, Assyria, Mesha of Moab); many scholars, evangelical among them, read the summaries so, others more literally | 28-43 | joshua/10.json `historical`, `cultural`, `words` (sarid), `hard`; questions/old-testament/jericho-and-the-conquest.json (`evidence`); context/guides/the-violence-of-the-old-testament.json | Repository; no side |
+| Deuteronomy 20:16; Joshua 13:1; 15:63; Isaiah 2:4 | 28-43 | deuteronomy/plain/20.json (10-18, `later`); BSB | Repository; BSB text |
+| ‘No survivors’: the historical question and the moral one; the readings in brief with the pointer to chapter 6; ‘No one of these answers satisfies every reader’; no warrant for violence; no nation, state, land or conflict today | 28-43 `hard` | joshua/10.json `hard`; joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; handled as the site's live pages handle it; no side |
+
+Cut in chapter 10: the name Adoni-zedek and Melchizedek; the Maccabees' victory at Beth-horon; that Gibeon lay east and Aijalon west of the battle, and that the road from Gilgal climbs steeply for many miles (the notes give only the valley, the road and the plateau); Origen's reading (named once, in chapter 6). The BSB's words in verses 1, 5, 23 and the first half of verse 40 are not quoted because of their dashes.
