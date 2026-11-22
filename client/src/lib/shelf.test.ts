@@ -61,10 +61,10 @@ describe("shelf.json", () => {
     }
   });
 
-  it("holds the 89 shelf essays: 40 live, 49 pending, each filed to a real section", () => {
-    expect(SHELF_ESSAYS).toHaveLength(89);
-    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(89);
-    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(40);
+  it("holds the 94 shelf essays: 45 live, 49 pending, each filed to a real section", () => {
+    expect(SHELF_ESSAYS).toHaveLength(94);
+    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(94);
+    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(45);
     expect(SHELF_ESSAYS.filter((e) => e.status === "pending")).toHaveLength(49);
     const sections = new Set(SHELF_SECTIONS.map((s) => s.slug));
     for (const e of SHELF_ESSAYS) {
@@ -157,7 +157,7 @@ describe("essay visibility", () => {
 
   it("orders the live shelf by section, then shelf order", () => {
     const live = liveShelfEssays();
-    expect(live).toHaveLength(65);
+    expect(live).toHaveLength(70);
     expect(live[0].slug).toBe("every-generation-was-sure-it-was");
     const ranks = live.map((e) => SHELF_SECTIONS.findIndex((s) => s.slug === e.section));
     expect([...ranks].sort((a, b) => a - b)).toEqual(ranks);
