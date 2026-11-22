@@ -1,0 +1,31 @@
+/* The bookshelf (components/BookCard.tsx; /downloads, /books). Tokens only.
+ * A cover is a picture of a printed book: it keeps its 2 by 3 shape at every
+ * width (the img carries its own width and height, so nothing moves when it
+ * arrives), and stands on a shelf line. */
+.bk-shelf{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:var(--s-3)}
+.bk-shelf--three{grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:var(--s-4)}
+.bk-shelf > li{display:flex}
+.bk-card{display:flex;flex-direction:column;gap:0;width:100%;padding:0;overflow:hidden}
+.bk-cover-link{display:block;padding:var(--s-3) var(--s-3) 0;background:var(--bone-warm);border-bottom:2px solid var(--ink)}
+.bk-cover{display:block;width:100%;max-width:230px;height:auto;aspect-ratio:2 / 3;margin:0 auto;border-radius:1px 3px 3px 1px;box-shadow:0 14px 28px -10px color-mix(in srgb,var(--charcoal) 55%,transparent),0 2px 4px color-mix(in srgb,var(--charcoal) 18%,transparent)}
+.bk-shelf--three .bk-cover{max-width:280px}
+.bk-body{display:flex;flex-direction:column;flex:1;padding:var(--s-3)}
+.bk-title{margin:0 0 6px;font-family:var(--F);font-size:26px;font-weight:500;line-height:1.12;letter-spacing:-.01em;color:var(--ink)}
+.bk-title a{color:inherit;text-decoration:none}
+.bk-title a:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.16em}
+.bk-sub{margin:0 0 12px;font-family:var(--F);font-size:18px;font-style:italic;line-height:1.3;color:var(--ink)}
+.bk-line{margin:0 0 12px;font-family:var(--B);font-size:15px;line-height:1.6;color:var(--ink-muted)}
+.bk-meta{margin:0 0 6px;font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted)}
+.bk-gift{margin:6px 0 0;font-family:var(--U);font-size:15px;font-weight:500;line-height:1.4;color:var(--ink)}
+.bk-body .ebook-actions{margin-top:auto;padding-top:14px}
+.bk-more{margin:10px 0 0}
+.bk-kicker{margin:0 0 8px;color:var(--mustard-text)}
+
+/* A short printable on /downloads: the card for its kind beside its files. */
+.pr-card{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:start;padding:16px 18px}
+.pr-thumb{display:block;width:56px;height:auto;aspect-ratio:400 / 518;border:1px solid var(--border)}
+.pr-title{margin:0 0 8px;font-family:var(--F);font-size:19px;font-weight:500;line-height:1.25;color:var(--ink)}
+.pr-files{display:flex;flex-wrap:wrap;align-items:center;column-gap:16px}
+.pr-sep{display:none}
+.pr-gift{margin:2px 0 0;font-family:var(--U);font-size:13px;color:var(--ink-muted)}
+.bk-note{max-width:64ch;margin:0 0 var(--s-4);font-family:var(--B);font-size:16px;line-height:1.65;color:var(--ink-muted)}

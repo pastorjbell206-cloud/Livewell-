@@ -1,7 +1,10 @@
 /**
- * Every ebook on the site, free to download (James, 2026-11-18: "give away for
- * free for people to download", everything free, nothing sold as an ebook).
- * Nine books here, and the three booklets for church leaders beside them.
+ * Every ebook on the site. None is sold and no one is blocked (James,
+ * 2026-11-18: "give away for free for people to download"); since 2026-11-22
+ * each download carries a suggested gift the reader can change or skip, once
+ * giving is open (shared/downloads.ts). Nine books here, and the three
+ * booklets for church leaders beside them. The two James renamed take their
+ * names from data/book-names.json through scripts/sync-book-names.mjs.
  *
  * Read by /downloads (the one page that shows them all), /books, each book's
  * own page, and the build-time catalogue (scripts/build-catalogue.mjs), so
@@ -9,7 +12,8 @@
  * data/booklets.ts and are shown beside these.
  *
  * Every line is the description the site already had for the book, from its
- * own page. Nothing here is new copy.
+ * own page. `sub` is the subtitle printed on the file's title page and `pages`
+ * the PDF's page count, both read from the files on 2026-11-22.
  *
  * HELD_EBOOKS are not served and not listed (content/held-downloads/README.md).
  * Seven name the Pastors Connection Network inside the file and wait for
@@ -25,13 +29,24 @@ export interface Ebook {
   group: EbookGroup;
   slug: string;
   title: string;
+  /** The subtitle: the one on the file's title page, or the newer one of a renamed book (data/book-names.json). */
+  sub: string;
   line: string;
-  /** Cover image (a webp where one exists). */
+  /** Pages in the PDF. */
+  pages: number;
+  /** The cover, 400 by 600 (client/public/covers/, drawn by scripts/build-covers.mjs; named by the book's folder under /ebook/). */
   cover: string;
   pdf: string;
   epub?: string;
   /** The book's own page, when it has one. */
   page?: string;
+  /**
+   * The title printed inside the file, when the site's title is newer than
+   * the file (James renamed two books on 2026-11-22; the PDFs and EPUBs are
+   * finished files and still say the old title). Shown as "Published earlier
+   * as ...". Remove it when his corrected file is in place.
+   */
+  formerly?: string;
 }
 
 /** Shelf headings on /downloads, in order. */
@@ -43,30 +58,38 @@ export const EBOOK_GROUPS: { id: EbookGroup; label: string }[] = [
 export const FREE_EBOOKS: Ebook[] = [
   {
     group: "james",
-    slug: "when-god-bless-america",
-    title: "When God Bless America Replaces Thy Kingdom Come",
+    slug: "a-higher-allegiance",
+    title: "A Higher Allegiance",
+    formerly: "When God Bless America Replaces Thy Kingdom Come",
+    sub: "Reclaiming Jesus from American Politics",
     line: "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary.",
-    cover: "/books/when-god-bless-america.webp",
+    pages: 495,
+    cover: "/covers/when-god-bless-america-400.webp",
     pdf: "/ebook/when-god-bless-america/When-God-Bless-America.pdf",
     epub: "/ebook/when-god-bless-america/When-God-Bless-America.epub",
-    page: "/books/when-god-bless-america",
+    page: "/books/a-higher-allegiance",
   },
   {
     group: "james",
-    slug: "the-monster-in-the-mirror",
-    title: "The Monster in the Mirror",
+    slug: "blind-spots",
+    title: "Blind Spots",
+    formerly: "The Monster in the Mirror",
+    sub: "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It",
     line: "Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots.",
-    cover: "/books/the-monster-in-the-mirror.webp",
+    pages: 274,
+    cover: "/covers/the-monster-in-the-mirror-400.webp",
     pdf: "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.pdf",
     epub: "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.epub",
-    page: "/books/the-monster-in-the-mirror",
+    page: "/books/blind-spots",
   },
   {
     group: "james",
     slug: "believe",
     title: "Believe: The Rational Case for Christian Faith",
+    sub: "The Rational Case for Christian Faith",
     line: "Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist.",
-    cover: "/books/believe.webp",
+    pages: 392,
+    cover: "/covers/believe-400.webp",
     pdf: "/ebook/believe/Believe.pdf",
     epub: "/ebook/believe/Believe.epub",
     page: "/books/believe",
@@ -75,8 +98,10 @@ export const FREE_EBOOKS: Ebook[] = [
     group: "questions",
     slug: "deconstruction-of-faith",
     title: "The Deconstruction of Faith",
+    sub: "Why People Are Leaving the Church, and What Comes After",
     line: "An honest reckoning with why people are leaving the church, what the church owes them, and where faith goes from here. Not a defense and not a surrender.",
-    cover: "/books/deconstruction-of-faith.webp",
+    pages: 391,
+    cover: "/covers/deconstruction-of-faith-400.webp",
     pdf: "/ebook/deconstruction-of-faith/The-Deconstruction-of-Faith.pdf",
     epub: "/ebook/deconstruction-of-faith/The-Deconstruction-of-Faith.epub",
     page: "/books/deconstruction-of-faith",
@@ -85,8 +110,10 @@ export const FREE_EBOOKS: Ebook[] = [
     group: "questions",
     slug: "the-reliability-of-scripture",
     title: "The Reliability of Scripture",
+    sub: "Why We Can Trust the Bible We Have",
     line: "Why we can trust the Bible we have — the manuscripts, the canon, the archaeology, and the difference between what inerrancy claims and what its critics attack.",
-    cover: "/books/the-reliability-of-scripture.webp",
+    pages: 261,
+    cover: "/covers/the-reliability-of-scripture-400.webp",
     pdf: "/ebook/the-reliability-of-scripture/The-Reliability-of-Scripture.pdf",
     epub: "/ebook/the-reliability-of-scripture/The-Reliability-of-Scripture.epub",
     page: "/books/the-reliability-of-scripture",
@@ -95,8 +122,10 @@ export const FREE_EBOOKS: Ebook[] = [
     group: "questions",
     slug: "bible-and-homosexuality",
     title: "What Does the Bible Really Say About Homosexuality?",
+    sub: "Scripture, Same-Sex Relationships, and the Church's Christ-Centered Response",
     line: "Scripture, same-sex relationships, and the church's Christ-centered response — a pastoral reading that refuses the false choice between truth and love.",
-    cover: "/books/bible-and-homosexuality.webp",
+    pages: 189,
+    cover: "/covers/bible-and-homosexuality-400.webp",
     pdf: "/ebook/bible-and-homosexuality/What-the-Bible-Says-About-Homosexuality.pdf",
     epub: "/ebook/bible-and-homosexuality/What-the-Bible-Says-About-Homosexuality.epub",
     page: "/books/bible-and-homosexuality",
@@ -105,8 +134,10 @@ export const FREE_EBOOKS: Ebook[] = [
     group: "questions",
     slug: "bible-and-transgender-identity",
     title: "What Does the Bible Say About Transgender Identity?",
+    sub: "Gender, the Body, and the Church's Christ-Centered Response",
     line: "Gender, the body, and the church's Christ-centered response — a pastoral reading where clarity and compassion occupy the same room.",
-    cover: "/books/bible-and-transgender-identity.webp",
+    pages: 201,
+    cover: "/covers/bible-and-transgender-identity-400.webp",
     pdf: "/ebook/bible-and-transgender-identity/What-the-Bible-Says-About-Transgender-Identity.pdf",
     epub: "/ebook/bible-and-transgender-identity/What-the-Bible-Says-About-Transgender-Identity.epub",
     page: "/books/bible-and-transgender-identity",
@@ -115,8 +146,10 @@ export const FREE_EBOOKS: Ebook[] = [
     group: "questions",
     slug: "critical-race-theory-biblical",
     title: "Is Critical Race Theory Biblical?",
+    sub: "Race, Justice, and What the Church Actually Owes the World",
     line: "Race, justice, and what the church actually owes the world — a Scripture-first reckoning that refuses both wholesale adoption and reflexive dismissal.",
-    cover: "/books/critical-race-theory-biblical.webp",
+    pages: 206,
+    cover: "/covers/critical-race-theory-biblical-400.webp",
     pdf: "/ebook/critical-race-theory-biblical/Is-Critical-Race-Theory-Biblical.pdf",
     epub: "/ebook/critical-race-theory-biblical/Is-Critical-Race-Theory-Biblical.epub",
     page: "/books/critical-race-theory-biblical",
@@ -125,8 +158,10 @@ export const FREE_EBOOKS: Ebook[] = [
     group: "questions",
     slug: "raising-believers",
     title: "Raising Believers: Christian Parenting in a Post-Christian World",
+    sub: "Christian Parenting and the Costly Work of Forming Faith in a Post-Christian World",
     line: "A pastor and father of five sons on what it actually takes to form faith in children — in the home, the church, and the long obedience of years.",
-    cover: "/books/raising-believers.webp",
+    pages: 357,
+    cover: "/covers/raising-believers-400.webp",
     pdf: "/ebook/raising-believers/Raising-Believers.pdf",
     epub: "/ebook/raising-believers/Raising-Believers.epub",
   },

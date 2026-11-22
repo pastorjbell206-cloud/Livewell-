@@ -9,9 +9,9 @@
 export interface ShelfBook {
   slug: string;
   href: string;
-  /** Large cover for the /books page. */
+  /** Large cover, 800 by 1200 (client/public/covers/, drawn by scripts/build-covers.mjs). */
   cover: string;
-  /** Small cover (webp) for cards and rows. */
+  /** Small cover, 400 by 600, for cards and rows. */
   thumb: string;
   title: string;
   /** The book's subtitle, as printed on its own page. */
@@ -22,22 +22,22 @@ export interface ShelfBook {
 
 export const BOOK_SHELF: ShelfBook[] = [
   {
-    slug: "when-god-bless-america",
-    href: "/books/when-god-bless-america",
-    cover: "/books/when-god-bless-america.jpg",
-    thumb: "/books/when-god-bless-america.webp",
-    title: "When God Bless America Replaces Thy Kingdom Come",
-    sub: "How Patriotism Became Our Practical Savior",
+    slug: "a-higher-allegiance",
+    href: "/books/a-higher-allegiance",
+    cover: "/covers/when-god-bless-america-800.webp",
+    thumb: "/covers/when-god-bless-america-400.webp",
+    title: "A Higher Allegiance",
+    sub: "Reclaiming Jesus from American Politics",
     kicker: "Politics and the church",
     blurb:
       "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Not a case for the other party. A case for the kingdom that does not run for office.",
   },
   {
-    slug: "the-monster-in-the-mirror",
-    href: "/books/the-monster-in-the-mirror",
-    cover: "/books/the-monster-in-the-mirror.jpg",
-    thumb: "/books/the-monster-in-the-mirror.webp",
-    title: "The Monster in the Mirror",
+    slug: "blind-spots",
+    href: "/books/blind-spots",
+    cover: "/covers/the-monster-in-the-mirror-800.webp",
+    thumb: "/covers/the-monster-in-the-mirror-400.webp",
+    title: "Blind Spots",
     sub: "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It",
     kicker: "Reading the Bible honestly",
     blurb:
@@ -46,8 +46,8 @@ export const BOOK_SHELF: ShelfBook[] = [
   {
     slug: "believe",
     href: "/books/believe",
-    cover: "/books/believe.jpg",
-    thumb: "/books/believe.webp",
+    cover: "/covers/believe-800.webp",
+    thumb: "/covers/believe-400.webp",
     title: "Believe",
     sub: "The Rational Case for Christian Faith",
     kicker: "For skeptics",
