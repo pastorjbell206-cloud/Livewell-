@@ -1,7 +1,10 @@
 /**
- * Every ebook on the site, free to download (James, 2026-11-18: "give away for
- * free for people to download", everything free, nothing sold as an ebook).
- * Nine books here, and the three booklets for church leaders beside them.
+ * Every ebook on the site. None is sold and no one is blocked (James,
+ * 2026-11-18: "give away for free for people to download"); since 2026-11-22
+ * each download carries a suggested gift the reader can change or skip, once
+ * giving is open (shared/downloads.ts). Nine books here, and the three
+ * booklets for church leaders beside them. The two James renamed take their
+ * names from data/book-names.json through scripts/sync-book-names.mjs.
  *
  * Read by /downloads (the one page that shows them all), /books, each book's
  * own page, and the build-time catalogue (scripts/build-catalogue.mjs), so
