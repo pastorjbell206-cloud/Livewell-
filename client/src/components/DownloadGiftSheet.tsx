@@ -104,7 +104,6 @@ export default function DownloadGiftSheet({ ask, onClose }: { ask: GiftAsk; onCl
                   value={other}
                   aria-describedby={error ? errorId : undefined}
                   aria-invalid={chosen === "other" && error ? true : undefined}
-                  onFocus={() => setChosen("other")}
                   onChange={(e) => { setOther(e.target.value); setChosen("other"); setError(""); }}
                 />
               </div>
