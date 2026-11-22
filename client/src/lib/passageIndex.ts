@@ -48,44 +48,30 @@ export const PASSAGE_KINDS: { k: PassageKind; name: string }[] = [
   { k: "tool", name: "Read any verse in context" },
 ];
 
-const KINDS = new Set<string>(PASSAGE_KINDS.map(x => x.k));
+const KINDS = new Set<string>(PASSAGE_KINDS.map((x) => x.k));
 
 export const isPassageRows = (x: unknown): x is PassageRow[] =>
   Array.isArray(x) &&
-  x.every(
-    r =>
-      r &&
-      typeof r === "object" &&
-      KINDS.has((r as PassageRow).k) &&
-      typeof (r as PassageRow).t === "string" &&
-      typeof (r as PassageRow).h === "string" &&
-      typeof (r as PassageRow).p === "string"
-  );
+  x.every((r) => r && typeof r === "object" && KINDS.has((r as PassageRow).k) && typeof (r as PassageRow).t === "string" && typeof (r as PassageRow).h === "string" && typeof (r as PassageRow).p === "string");
 
-export const chapterIndexUrl = (slug: string, chapter: number) =>
-  `/index/chapters/${slug}/${chapter}.json`;
+export const chapterIndexUrl = (slug: string, chapter: number) => `/index/chapters/${slug}/${chapter}.json`;
 
 export const CHAPTER_LIST_URL = "/index/chapters.json";
 
 const isChapterList = (x: unknown): x is Record<string, number[]> =>
-  !!x &&
-  typeof x === "object" &&
-  !Array.isArray(x) &&
-  Object.values(x).every(
-    n => Array.isArray(n) && n.every(c => typeof c === "number")
-  );
+  !!x && typeof x === "object" && !Array.isArray(x) && Object.values(x).every((n) => Array.isArray(n) && n.every((c) => typeof c === "number"));
 
 let list: Promise<Record<string, number[]> | null> | null = null;
 
 /** Which chapters have a file; null when the list cannot be read (then every chapter is asked for, as before). */
 function fetchChapterList(): Promise<Record<string, number[]> | null> {
   list ??= fetch(CHAPTER_LIST_URL)
-    .then(async res => {
+    .then(async (res) => {
       const data: unknown = res.ok ? await res.json() : null;
       return isChapterList(data) ? data : null;
     })
     .catch(() => null)
-    .then(got => {
+    .then((got) => {
       if (!got) list = null;
       return got;
     });
@@ -99,25 +85,21 @@ const cache = new Map<string, Promise<PassageRow[]>>();
  * file is not asked for; a chapter with no file (404) has none; any other
  * failure rejects, and is not cached, so a later visit tries again.
  */
-export function fetchChapterIndex(
-  slug: string,
-  chapter: number
-): Promise<PassageRow[]> {
+export function fetchChapterIndex(slug: string, chapter: number): Promise<PassageRow[]> {
   const url = chapterIndexUrl(slug, chapter);
   const hit = cache.get(url);
   if (hit) return hit;
   const p = fetchChapterList()
-    .then(have => (have && !have[slug]?.includes(chapter) ? null : fetch(url)))
-    .then(async res => {
+    .then((have) => (have && !have[slug]?.includes(chapter) ? null : fetch(url)))
+    .then(async (res) => {
       if (res === null) return [];
       if (res.status === 404) return [];
       if (!res.ok) throw new Error(`fetch ${url} → ${res.status}`);
       const data: unknown = await res.json();
-      if (!isPassageRows(data))
-        throw new Error(`fetch ${url} → unexpected shape`);
+      if (!isPassageRows(data)) throw new Error(`fetch ${url} → unexpected shape`);
       return data;
     })
-    .catch(err => {
+    .catch((err) => {
       cache.delete(url);
       throw err;
     });
@@ -126,12 +108,6 @@ export function fetchChapterIndex(
 }
 
 /** The rows grouped by kind, in the fixed kind order; kinds with nothing are left out. */
-export function groupRows(
-  rows: PassageRow[]
-): { k: PassageKind; name: string; rows: PassageRow[] }[] {
-  return PASSAGE_KINDS.map(({ k, name }) => ({
-    k,
-    name,
-    rows: rows.filter(r => r.k === k),
-  })).filter(g => g.rows.length > 0);
+export function groupRows(rows: PassageRow[]): { k: PassageKind; name: string; rows: PassageRow[] }[] {
+  return PASSAGE_KINDS.map(({ k, name }) => ({ k, name, rows: rows.filter((r) => r.k === k) })).filter((g) => g.rows.length > 0);
 }
