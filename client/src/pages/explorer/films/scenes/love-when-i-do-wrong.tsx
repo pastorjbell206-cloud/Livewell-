@@ -16,12 +16,16 @@
  *   6  Nothing can separate evening; father and son sit together at the door
  *
  * The one mustard mark: the lit window of the house. No face is drawn, and
- * God is never drawn: the father is the father in Jesus' story.
+ * God is never drawn: the father is the father in Jesus' story. The cast is
+ * the stage set's, and each person is drawn the same way in every picture:
+ * the son bare-headed in a clay robe (a plain new one at home), the father in
+ * blue with an olive cloak.
  */
 import type { ReactNode } from "react";
 import { Shape } from "../../art";
-import { Fade, type FilmDrawing } from "../motion";
-import { Seated, Standing } from "./figures";
+import { Cloud, Cypress, Olive, Person, Stars } from "@/components/art/stage";
+import { Ambient, Fade, type FilmDrawing } from "../motion";
+import { Robed, Seated } from "./figures";
 
 const ROAD =
   "M644,300C600,330 520,342 470,360C400,388 260,380 160,410C100,428 40,440 0,452";
@@ -38,9 +42,21 @@ function On({ to, children }: { to: [number, number]; children: ReactNode }) {
   );
 }
 
+const CAMERA: [number, number, number][] = [
+  [470, 300, 1.12],
+  [380, 350, 1.3],
+  [220, 400, 1.75],
+  [430, 345, 1.8],
+  [570, 320, 1.8],
+  [220, 310, 1.6],
+  [640, 295, 1.8],
+];
+
 const film: FilmDrawing = {
   w: 800,
   h: 500,
+  // The camera goes where the story is: the step, the road, the far country, the meeting, the feast, the hill, the door.
+  push: frame => CAMERA[frame] ?? null,
   draw: (h, frame) => {
     const evening = frame === -1 || frame === 0 || frame === 6;
     // The son leaving (1): from the door to the far edge of the road.
@@ -102,10 +118,43 @@ const film: FilmDrawing = {
         </g>
         <path className="pl-l" d="M670,256h18v16h-18ZM679,256v16M670,264h18" />
 
+        {/* By the house: an olive and two cypresses; clouds by day, stars at evening. */}
+        <Cypress x={742} y={300} s={0.62} hatch={h.hs} />
+        <Cypress x={768} y={308} s={0.76} hatch={h.hs} />
+        <Ambient frame={frame} on={-1} kind="sway">
+          <Olive x={540} y={316} s={0.72} hatch={h.h2} />
+        </Ambient>
+        <g className={`mv-fade mv-from-none${evening ? " is-on" : ""}`}>
+          <g className={`mv-amb mv-amb-twinkle${evening ? " is-on" : ""}`}>
+            <Stars
+              at={[
+                [90, 40, 5],
+                [230, 70, 4],
+                [380, 34, 5],
+                [520, 78, 4],
+                [690, 44, 5],
+              ]}
+            />
+          </g>
+        </g>
+        <g className={`mv-fade mv-from-none${evening ? "" : " is-on"}`}>
+          <g className={`mv-amb mv-amb-drift${evening ? "" : " is-on"}`}>
+            <Cloud x={420} y={70} s={1.2} />
+          </g>
+        </g>
+
         {/* 1. The younger son walks off down the road to the far edge, a bag on his back. */}
         <Fade frame={frame} on={1} off={2}>
           <On to={leaving}>
-            <Standing x={640} y={274} tone="c" s={0.7} />
+            <Robed
+              x={640}
+              y={274}
+              tone="c"
+              s={0.78}
+              head="bare"
+              face={-1}
+              pose="walk"
+            />
             <Shape
               d="M648,290c8,-2 12,4 10,12c-6,2 -10,0 -10,-12Z"
               tone="b"
@@ -136,32 +185,38 @@ const film: FilmDrawing = {
               <path className="pl-l" d={`M${x + 16},${y - 2}h6v6h-6`} />
             </g>
           ))}
-          <g transform="translate(300 400) scale(1.3) translate(-300 -400)">
-            <Seated x={300} y={372} tone="c" body={40} />
-          </g>
+          <Person x={296} y={422} s={0.9} pose="sit" head="bare" robe="c" />
         </Fade>
 
         {/* 3. The father runs down the road; the son comes up it; they meet. */}
         <Fade frame={frame} on={3} off={4}>
           <On to={father}>
-            <Standing x={640} y={272} tone="b" s={0.9} />
+            <Robed x={640} y={272} tone="b" cloak="g" s={0.95} face={-1} />
             <path className="pl-l" d="M628,292l-14,-10M652,292l14,-10" />
           </On>
           <On to={coming}>
-            <Standing x={404} y={340} tone="c" s={0.8} />
+            <Robed x={404} y={340} tone="c" s={0.86} head="bare" pose="walk" />
           </On>
         </Fade>
 
         {/* 4. Home: the son at the door in a new robe, a table set for a feast. */}
         <Fade frame={frame} on={4} off={5} from="up">
-          <Standing x={644} y={258} tone="b" s={0.7} />
+          <Robed x={644} y={258} tone="p" cloak="b" s={0.74} head="bare" />
           <Shape d="M480,348H600V358H480Z" tone="c" off={1.5} />
           <path className="pl-l" d="M492,358V380M588,358V380" />
           <Shape d="M500,348c0,-8 16,-8 16,0Z" tone="c" off={0.8} />
           <Shape d="M530,348c0,-10 22,-10 22,0Z" tone="b" off={0.8} />
           <Shape d="M566,348c0,-8 16,-8 16,0Z" tone="c" off={0.8} />
-          <Standing x={470} y={318} tone="g" s={0.8} />
-          <Standing x={612} y={318} tone="c" s={0.8} />
+          <Robed x={470} y={318} tone="g" s={0.84} head="veil" pose="reach" />
+          <Robed
+            x={612}
+            y={318}
+            tone="b"
+            cloak="g"
+            s={0.86}
+            face={-1}
+            pose="reach"
+          />
         </Fade>
 
         {/* 6. Evening: the father and the son sit together at the lit door. */}
@@ -181,9 +236,16 @@ const film: FilmDrawing = {
           <Shape d="M440,420V400H740V420Z" tone="b" off={2} />
           <path className="pl-l" d="M0,420H800" />
           <Shape d="M0,500V420H800V500Z" tone="g" off={2} />
-          <g transform="translate(470 400) scale(2.2) translate(-470 -400)">
-            <Seated x={470} y={364} tone="c" body={36} />
-          </g>
+          <Person
+            x={470}
+            y={402}
+            s={1.7}
+            child
+            pose="sit"
+            head="bare"
+            robe="c"
+            face={-1}
+          />
           <Shape d="M280,420l-8,-44h40l-4,20Z" tone="b" off={1.5} />
           <Shape d="M330,420l4,-28l28,-4l8,32Z" tone="b" off={1.5} />
           <path className="pl-f" d="M314,410l10,-8M318,420l12,0" />

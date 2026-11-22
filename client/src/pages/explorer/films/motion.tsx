@@ -25,9 +25,9 @@
  * - `slow` on Draw gives a line several seconds to draw.
  * - Ambient is a small motion that runs while its frame shows and then comes
  *   to rest: cloud drifting, a tree swaying, a flame, stars, a light.
- * - A drawing's `push` is where the stage slowly pushes in on each frame
- *   ([x, y] in the drawing's own units); the player eases in on one frame and
- *   back out on the next, so nothing ever jumps.
+ * - A drawing's `push` is where the stage slowly moves in on each frame
+ *   ([x, y, zoom] in the drawing's own units): a camera that glides from one
+ *   frame's view to the next, so nothing ever jumps.
  *
  * All of it is CSS on opacity and transform, and none of it runs with motion
  * turned off: the finished frame is the same picture.
@@ -39,8 +39,11 @@ export interface FilmDrawing {
   w: number;
   h: number;
   draw: (h: Hatch, frame: number) => ReactNode;
-  /** Where the stage slowly pushes in on a frame, in the drawing's units; none if absent. */
-  push?: (frame: number) => [number, number] | null;
+  /**
+   * Where the stage slowly moves in on a frame, in the drawing's units, and
+   * how far ([x, y, zoom]; zoom 1.06 if not given); the whole picture if null.
+   */
+  push?: (frame: number) => [number, number, number?] | null;
 }
 
 /** Is a part with this window showing at this frame? */
@@ -206,26 +209,29 @@ export function Travel({
 }
 
 /**
- * The stage's slow push for a frame: the attributes and style the screen
- * takes. It pushes in on every other frame, centred on that frame's subject,
- * and eases back out on the frames between (keeping the same centre, so the
- * picture never jumps). `pace` is 1 for a spoken frame; a silent one is short.
+ * The stage's slow camera for a frame: the attribute and style the screen
+ * takes. A drawing's `push` gives, for each frame, the point the picture
+ * moves in on and how far ([x, y, zoom], zoom 1.06 if not given); the screen
+ * glides from one frame's view to the next, never past the picture's edge.
+ * `pace` is 1 for a spoken frame; a silent one is short.
  */
 export function stageMotion(
   drawing: FilmDrawing | null,
   frame: number,
   pace: number
-): { "data-push"?: "in" | "out"; style: CSSProperties } {
+): { "data-push"?: "on"; style: CSSProperties } {
   const style = { "--mv-pace": String(pace) } as CSSProperties;
-  if (!drawing?.push || frame < 0) return { style };
-  const focus = drawing.push(frame - (frame % 2));
-  if (!focus) return { style };
+  if (!drawing?.push) return { style };
+  const focus = frame < 0 ? null : drawing.push(frame);
+  const [x, y, z = 1.06] = focus ?? [0, 0, 1];
+  const { w, h } = drawing;
+  const tx = Math.min(0, Math.max(w * (1 - z), w / 2 - x * z));
+  const ty = Math.min(0, Math.max(h * (1 - z), h / 2 - y * z));
   return {
-    "data-push": frame % 2 === 0 ? "in" : "out",
+    "data-push": "on",
     style: {
       ...style,
-      "--mv-fx": `${((focus[0] / drawing.w) * 100).toFixed(1)}%`,
-      "--mv-fy": `${((focus[1] / drawing.h) * 100).toFixed(1)}%`,
+      "--mv-cam": `translate(${tx.toFixed(1)}px, ${ty.toFixed(1)}px) scale(${z})`,
     } as CSSProperties,
   };
 }

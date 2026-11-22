@@ -415,6 +415,12 @@
   stroke: var(--mustard);
   stroke-width: 5;
 }
+/* The mark on a doorway (Sacrifice: why blood?): plain ink strokes, no more. */
+.fp-mark {
+  fill: none;
+  stroke: var(--art-ink);
+  stroke-width: 6;
+}
 /* A picture crossed out (Who God is: the pictures that break): one ink stroke. */
 .fp-strike {
   fill: none;
@@ -511,14 +517,12 @@ html.dark .fp-screen .fp-on-light {
   opacity: 1;
   transform: none;
 }
-/* The stage pushes in slowly on one frame and eases back on the next
-   (FilmPlayer sets data-push and where it centres), so it never jumps. */
+/* The stage's slow camera (motion.tsx stageMotion): it glides from one
+   frame's view to the next, so it never jumps. */
 .fp-screen[data-push] > svg > g {
-  transform-origin: var(--mv-fx, 50%) var(--mv-fy, 50%);
-  transition: transform 24s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-.fp-screen[data-push="in"] > svg > g {
-  transform: scale(1.06);
+  transform-origin: 0 0;
+  transform: var(--mv-cam, none);
+  transition: transform 14s cubic-bezier(0.3, 0.1, 0.3, 1);
 }
 /* Small motions that run while their frame shows, then rest (motion.tsx
    Ambient). Each ends where it began, so the finished frame is the same. */
