@@ -15454,3 +15454,19 @@ Cut in chapter 20: a reason for the tie to the high priest's death (the notes on
 | ‘All the land’ beside 13:1 and chapters 15 to 17: the three answers; no side; Israel's enjoyment of the gift tied to its faithfulness; no statement about any border, state or claim to land today | 43-45 `hard` | joshua/21.json `hard` | Repository; no side; no claim about any land today |
 
 Cut in chapter 21: the doubled Gath-rimmon as a copyist's slip; Abiathar at Anathoth; the measured extent of the pasturelands. The first words of 1 Kings 8:56 are left out of the quotation, and the BSB's words in verses 16, 18 and 27 are not quoted because of their dashes.
+
+## The plain notes on Joshua 22 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The promise of chapter 1 kept; the five verbs of verse 5 in the words of Deuteronomy; Shiloh west of the river and the lands beyond a deep valley, nearer other peoples; the spoil shared with those who stayed | 1-9 | joshua/22.json `historical`, `literary`; joshua/plain/1.json | Repository |
+| Deuteronomy 10:12; 1 Samuel 30:24 | 1-9 | BSB | BSB text |
+| The one place of sacrifice (Deuteronomy 12) and why a second altar looked like a rival; Peor (Numbers 25) and Achan (Joshua 7); war assembled before a question was asked; ‘breach of faith’ as Achan's word; the delegation of Phinehas and ten chiefs; the offer of verse 19; Phinehas at Peor | 10-20 | joshua/22.json `historical`, `cultural`, `words` (ma'al, marad), `hard`; numbers/plain/25.json | Repository |
+| Deuteronomy 12:13-14; Proverbs 18:17; Matthew 18:15 | 10-20 | joshua/22.json `cultural`; BSB | Repository; BSB text |
+| The double oath; the fear of being shut out, not far-fetched given the valley; ‘witness’ as an object that testifies; a copy not meant for offerings; the delegation satisfied; the Hebrew of verse 34 gives no plain name and translations supply ‘Witness’ | 21-34 | joshua/22.json `historical`, `cultural`, `literary`, `words` (ed, mizbeach) | Repository |
+| Judges 20:13; James 1:19; Ephesians 2:14 | 21-34 | joshua/22.json `hard`, `christ`; BSB | Repository; BSB text |
+| Were the western tribes wrong: they assembled but did not march; zeal praised, or suspicion warned against (Judges 20); many hold both; a civil war avoided by asking first; no support for force over a disagreement about worship | 21-34 `hard` | joshua/22.json `hard` | Repository; no side |
+
+Cut in chapter 22: Geliloth and its possible link with Gilgal; the word for ‘replica’ and the plan of the tabernacle; Hebrews 10 (the deep note's link by theme). The BSB's words in verses 14 and 30 are not quoted because of their dashes. ‘Joshua blessed them’ (verse 6) is paraphrased so that the word stands only inside quoted Scripture.
