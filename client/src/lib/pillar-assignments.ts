@@ -1778,5 +1778,12 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 3,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-divorce-ever-right-and-may-a-divorced-person-remarry": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant"
+    ],
+    "confidence": "high"
   }
 };
