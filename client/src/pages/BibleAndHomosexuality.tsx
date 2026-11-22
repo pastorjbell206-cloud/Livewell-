@@ -16,9 +16,11 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
 import { FreeEbookButtons } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
+import { EbookLabel, OfferLine, OfferMeta } from "@/components/BookOffer";
 import { SITE_URL } from "@/lib/site";
 
-const COVER = "/books/bible-and-homosexuality.jpg";
+const COVER = "/covers/bible-and-homosexuality-800.webp";
+const SHARE = "/covers/bible-and-homosexuality.jpg";
 const EBOOK = freeEbook("bible-and-homosexuality")!;
 
 const eyebrow: React.CSSProperties = {
@@ -32,7 +34,7 @@ export default function BibleAndHomosexuality() {
       <SEOMeta
         title="What Does the Bible Really Say About Homosexuality?"
         description="Scripture, same-sex relationships, and the church's Christ-centered response — a pastoral reading that refuses the false choice between truth and love."
-        image={`${SITE_URL}${COVER}`}
+        image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/bible-and-homosexuality`}
         type="book"
         noindex
@@ -41,10 +43,10 @@ export default function BibleAndHomosexuality() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img src={COVER} alt="What Does the Bible Really Say About Homosexuality? — cover" width={1600} height={2560}
+          <img src={COVER} alt="What Does the Bible Really Say About Homosexuality? — cover" width={800} height={1200}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
-            <div style={{ ...eyebrow, color: "var(--mustard)" }}>Free Ebook</div>
+            <div style={{ ...eyebrow, color: "var(--mustard)" }}><EbookLabel /></div>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               What Does the Bible Really Say About Homosexuality?
             </h1>
@@ -57,7 +59,7 @@ export default function BibleAndHomosexuality() {
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
               <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
-                Free · EPUB and PDF · no email asked
+                <OfferMeta pdf={EBOOK.pdf} />
               </span>
             </div>
           </div>
@@ -83,7 +85,7 @@ export default function BibleAndHomosexuality() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            Free to download: an EPUB for your e-reader and a PDF for everything else.
+            <OfferLine />
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
@@ -98,7 +100,7 @@ export default function BibleAndHomosexuality() {
         slug="bible-and-homosexuality"
         related={[
           { href: "/books/bible-and-transgender-identity", title: "What Does the Bible Say About Transgender Identity?" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
           { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
         ]}
       />

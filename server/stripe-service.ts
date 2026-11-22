@@ -4,6 +4,7 @@ import { createBookPurchase, updateBookPurchaseStatus } from "./db-email-books";
 import { getDb } from "./db";
 import { books } from "../drizzle/schema";
 import { GIVING_CLOSED_MESSAGE, giftCheckoutParams, type Gift } from "@shared/giving";
+import { downloadGiftCheckoutParams, type DownloadGift } from "@shared/downloads";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "sk_test_placeholder");
 
@@ -132,6 +133,13 @@ export async function createMembershipCheckoutSession(
 export async function createGiftCheckoutSession(gift: Gift, origin: string): Promise<{ sessionUrl: string }> {
   if (!isStripeConfigured()) throw new Error(GIVING_CLOSED_MESSAGE);
   const session = await stripe.checkout.sessions.create(giftCheckoutParams(gift, origin));
+  return { sessionUrl: session.url || "" };
+}
+
+/** A gift given with a download (shared/downloads.ts). Nothing is stored or logged. */
+export async function createDownloadGiftCheckoutSession(gift: DownloadGift, origin: string): Promise<{ sessionUrl: string }> {
+  if (!isStripeConfigured()) throw new Error(GIVING_CLOSED_MESSAGE);
+  const session = await stripe.checkout.sessions.create(downloadGiftCheckoutParams(gift, origin));
   return { sessionUrl: session.url || "" };
 }
 

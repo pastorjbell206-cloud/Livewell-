@@ -49,6 +49,9 @@ import { trackFamilyDevotionComplete } from "@/lib/telemetry";
 import TableMode, { TableFrame } from "./TableMode";
 import { PartBody, nightsOf, partsOf, type AskChoice } from "./DevotionParts";
 import { useDevotion, useFamilyBand, type Devotion } from "./useFamilyData";
+import { filmForDevotion, useFamilyFilms, type FamilyFilm } from "@/lib/familyFilms";
+import WatchFirst, { WatchFirstPrintLine } from "./WatchFirst";
+import { toolsOfferedAt } from "@/lib/toolOffers";
 
 const SITE = "https://www.livewellbyjamesbell.co";
 
@@ -76,6 +79,9 @@ export default function DevotionPage() {
   const [, navigate] = useLocation();
   const { state, retry } = useDevotion(id);
   const ask = useFamilyBand();
+  // "Watch first": the film this devotion offers, from the generated map; ?watch=1 opens it.
+  const film = filmForDevotion(useFamilyFilms(), id);
+  const watch = query.get("watch") === "1";
 
   // "Before this" and "Next" keep this page mounted and only change the id:
   // start the new devotion at its top, not at the bottom where the link was.
@@ -148,6 +154,7 @@ export default function DevotionPage() {
           catechism={catechism}
           own={own}
           ask={ask}
+          film={film}
           step={step}
           onStepChange={(i) => navigate(`${devotionHref(row.id)}?mode=table&step=${i + 1}`, { replace: true })}
           onFinish={finish}
@@ -160,7 +167,7 @@ export default function DevotionPage() {
   return (
     <Layout>
       {meta}
-      <DevotionView devotion={devotion} index={index} catechism={catechism} own={own} ask={ask} today={today} progress={progress} done={done} onFinish={finish} />
+      <DevotionView devotion={devotion} index={index} catechism={catechism} own={own} ask={ask} film={film} watch={watch} today={today} progress={progress} done={done} onFinish={finish} />
     </Layout>
   );
 }
@@ -171,6 +178,8 @@ function DevotionView({
   catechism,
   own,
   ask,
+  film,
+  watch,
   today,
   progress,
   done,
@@ -181,6 +190,10 @@ function DevotionView({
   catechism: CatechismLine | null;
   own: boolean;
   ask: AskChoice;
+  /** The Bible Explorer film this devotion offers, if any. */
+  film: FamilyFilm | null;
+  /** The link asked for the film (?watch=1): open it as the page arrives. */
+  watch: boolean;
   today: string;
   progress: FamilyProgress;
   done: { ok: boolean } | null;
@@ -198,6 +211,8 @@ function DevotionView({
   const parts = partsOf(devotion, catechism);
   // Three short nights suit a weekly devotion; a day of a daily set is already short.
   const nights = row.kind === "weekly" ? nightsOf(parts) : [];
+  // A tool for the parents where one does a job this devotion raises (data/tool-offers.json).
+  const tools = toolsOfferedAt("devotions", row.id);
 
   return (
     <div className="tb-page">
@@ -246,6 +261,12 @@ function DevotionView({
               .
             </p>
           )}
+          {film && (
+            <>
+              <WatchFirst key={film.slug} film={film} startOpen={watch} />
+              <WatchFirstPrintLine film={film} />
+            </>
+          )}
           {parts.map((part) => (
             <section key={part.id} className="tb-section" aria-labelledby={`tb-${part.id}`}>
               <h2 id={`tb-${part.id}`} className="tb-section__title">
@@ -264,6 +285,22 @@ function DevotionView({
               <Link href={row.grownups.href} className="tb-link">
                 {row.grownups.title}
               </Link>
+            </aside>
+          )}
+          {tools.length > 0 && (
+            <aside className="tb-grownups no-print" aria-labelledby="tb-tools">
+              <p id="tb-tools" className="tb-label">
+                For the grown-ups, a tool
+              </p>
+              {tools.map((t) => (
+                <p key={t.id} className="tb-grownups__line">
+                  <Link href={t.href} className="tb-link">
+                    {t.name}
+                  </Link>
+                  <br />
+                  {t.job}
+                </p>
+              ))}
             </aside>
           )}
           <div className="tb-done no-print">

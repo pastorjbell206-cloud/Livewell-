@@ -48,7 +48,8 @@ describe("answer companions", () => {
     const hrefs = companionsFor(ANSWERS.find((a) => a.slug === "does-god-choose-us-or-do-we-choose-him")!).map((c) => c.href);
     expect(hrefs).toContain("/theology/compare?doctrine=soteriology");
     expect(hrefs).toContain("/theology/which-view?topic=soteriology");
-    expect(companionsFor(ANSWERS.find((a) => a.slug === "what-does-the-bible-say-about-money")!)).toEqual([]);
+    // An answer with no case and no doctrine page still gets the tools that do its job (data/tool-offers.json).
+    expect(companionsFor(ANSWERS.find((a) => a.slug === "what-does-the-bible-say-about-money")!).map((c) => c.href)).toEqual(["/tools/financial-health", "/tools/wisdom-finder"]);
     expect(companionsFor({ slug: "", essaySlug: "no-such-essay" })).toEqual([]);
   });
 });

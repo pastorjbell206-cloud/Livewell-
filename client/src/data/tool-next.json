@@ -1,0 +1,57 @@
+{
+ "about": "Where a tool sends a reader next, chosen from what the reader picked or answered in it: two or three pages for each choice. A string is a tool's address (its name comes from lib/toolsList.ts). An object is another page, with the kind and the page's own name (toolNext.test.ts checks a wisdom topic's label against client/public/wisdom/topics.json and a family devotion's against client/public/family/index.json). \"default\" is used when the choice has no list of its own. lib/toolNext.ts reads this file.",
+ "tools": {
+  "conflict-guide": {
+   "communication": [{ "kind": "Wisdom", "label": "Talking with Your Spouse", "href": "/wisdom/marriage-communication" }, "/tools/marriage-assessment"],
+   "financial": ["/tools/financial-health", { "kind": "Wisdom", "label": "Money and Provision", "href": "/wisdom/money" }],
+   "parenting": ["/tools/parenting-guide", { "kind": "Wisdom", "label": "Parenting Struggles", "href": "/wisdom/parenting-struggles" }],
+   "intimacy": [{ "kind": "Wisdom", "label": "Closeness in Marriage", "href": "/wisdom/marriage-intimacy" }, "/tools/marriage-assessment"],
+   "inlaws": [{ "kind": "Wisdom", "label": "Setting Boundaries", "href": "/wisdom/setting-boundaries" }, "/tools/marriage-assessment"],
+   "labor": [{ "kind": "Wisdom", "label": "Work and Life Balance", "href": "/wisdom/work-life-balance" }, "/tools/rule-of-life"],
+   "spiritual": ["/tools/prayer-planner", { "kind": "Wisdom", "label": "Spiritual Growth", "href": "/wisdom/spiritual-growth" }],
+   "trust": [{ "kind": "Find Help", "label": "Find Help", "href": "/help" }, { "kind": "Wisdom", "label": "Mending What Broke", "href": "/wisdom/reconciliation" }],
+   "default": ["/tools/marriage-assessment", "/tools/prayer-planner"]
+  },
+  "parenting-guide": {
+   "toddler": [{ "kind": "Family", "label": "Family devotions", "href": "/family/devotions" }, { "kind": "Wisdom", "label": "Parenting Young Children", "href": "/wisdom/parenting-young-children" }],
+   "preschool": [{ "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }, { "kind": "Family", "label": "Family devotions", "href": "/family/devotions" }],
+   "elementary": [{ "kind": "Bible", "label": "Bible Explorer", "href": "/study/explorer" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "tween": [{ "kind": "Bible", "label": "Bible Explorer", "href": "/study/explorer" }, { "kind": "Wisdom", "label": "Parenting Struggles", "href": "/wisdom/parenting-struggles" }],
+   "teen": ["/tools/parent-teen-conversation", { "kind": "Wisdom", "label": "Raising Teenagers", "href": "/wisdom/raising-teenagers" }],
+   "young-adult": [{ "kind": "Wisdom", "label": "Parenting Adult Children", "href": "/wisdom/parenting-adult-children" }, { "kind": "Wisdom", "label": "The Empty Nest", "href": "/wisdom/empty-nest" }],
+   "default": [{ "kind": "Family", "label": "Family devotions", "href": "/family/devotions" }, "/tools/family-devotions"]
+  },
+  "prayer-generator": {
+   "Morning Prayer": ["/tools/prayer-planner", "/tools/rule-of-life"],
+   "Evening Prayer": ["/tools/worry-journal", "/tools/rule-of-life"],
+   "Prayer for Strength": [{ "kind": "Wisdom", "label": "Exhaustion and Burnout", "href": "/wisdom/exhaustion" }, "/tools/rule-of-life"],
+   "Prayer for Guidance": [{ "kind": "Wisdom", "label": "Decisions and Guidance", "href": "/wisdom/decisions-and-guidance" }, "/tools/prayer-planner"],
+   "Prayer of Gratitude": [{ "kind": "Wisdom", "label": "Gratitude and Thankfulness", "href": "/wisdom/gratitude" }, "/tools/prayer-planner"],
+   "Prayer for a Loved One": ["/tools/prayer-planner", { "kind": "Wisdom", "label": "When Prayer Is Hard", "href": "/wisdom/prayer-struggles" }],
+   "Prayer in Suffering": [{ "kind": "Wisdom", "label": "When You Are Suffering", "href": "/wisdom/suffering" }, { "kind": "Find Help", "label": "Find Help", "href": "/help" }],
+   "Prayer for Your Children": ["/tools/prayer-planner", { "kind": "Family", "label": "Family devotions", "href": "/family/devotions" }],
+   "Prayer Before a Hard Conversation": ["/tools/conflict-guide", { "kind": "Wisdom", "label": "Conflict With Others", "href": "/wisdom/conflict-with-others" }],
+   "Prayer for Financial Provision": [{ "kind": "Wisdom", "label": "Financial Hardship", "href": "/wisdom/financial-hardship" }, "/tools/worry-journal"],
+   "Prayer for the Church": [{ "kind": "Wisdom", "label": "Serving in the Church", "href": "/wisdom/serving-in-the-church" }, "/tools/prayer-planner"],
+   "default": ["/tools/prayer-planner", "/tools/rule-of-life"]
+  },
+  "family-devotions": {
+   "Gratitude": [{ "kind": "Family devotion", "label": "Counting What You Already Have", "href": "/family/devotions/gratitude" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "Courage": [{ "kind": "Family devotion", "label": "Brave Is Not Fearless", "href": "/family/devotions/courage" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "Forgiveness": [{ "kind": "Family devotion", "label": "The Weight You Put Down", "href": "/family/devotions/forgiveness" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "Honesty": [{ "kind": "Family devotion", "label": "Nothing to Hide", "href": "/family/devotions/honesty" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "Prayer": [{ "kind": "Family devotion", "label": "Talking with God", "href": "/family/devotions/prayer" }, "/tools/prayer-planner"],
+   "Generosity": [{ "kind": "Family devotion", "label": "Open Hands", "href": "/family/devotions/generosity" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "Patience": [{ "kind": "Family devotion", "label": "The Slow Growing Things", "href": "/family/devotions/patience" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "Identity in Christ": [{ "kind": "Family devotion", "label": "Made on Purpose", "href": "/family/devotions/identity" }, { "kind": "Bible", "label": "Bible Explorer", "href": "/study/explorer" }],
+   "Obedience": [{ "kind": "Family devotion", "label": "Why, Not Just What", "href": "/family/devotions/obedience" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "Hope": [{ "kind": "Family devotion", "label": "An Anchor in the Storm", "href": "/family/devotions/hope" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }],
+   "default": [{ "kind": "Family", "label": "Family devotions", "href": "/family/devotions" }, { "kind": "Family", "label": "The Family Catechism", "href": "/family/catechism" }]
+  },
+  "consistency": {
+   "one-standard": ["/tools/which-lens", { "kind": "Wisdom", "label": "Politics and Division", "href": "/wisdom/politics-and-division" }],
+   "two-standards": [{ "kind": "Wisdom", "label": "Hypocrisy and the Mask", "href": "/wisdom/hypocrisy" }, "/tools/which-lens", { "kind": "Wisdom", "label": "Self-Righteousness", "href": "/wisdom/self-righteousness" }],
+   "default": ["/tools/which-lens", { "kind": "Wisdom", "label": "Politics and Division", "href": "/wisdom/politics-and-division" }]
+  }
+ }
+}

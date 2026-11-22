@@ -1,0 +1,29 @@
+{
+  "_about": "THE COVERS. One entry per listed ebook and booklet, read by scripts/build-covers.mjs (which draws them) and by the pages (which show them). `id` is the book's folder under client/public/ebook/ and never changes; the files are /covers/<id>-400.webp, -800.webp and .jpg. `title` and `subtitle` are what the cover prints (the two books in client/src/data/book-names.json take theirs from there). `lines` breaks the title by hand, with * before the word or line set in the accent colour; it must spell the title, and may be left out (the title is then broken automatically). `ground` is the field (light or dark), `tone` the engraving's one colour block (blue, olive or clay), `art` the drawing in scripts/lib/cover-art.mjs, `alt` what the picture shows. TO USE A FINISHED COVER IMAGE instead of the drawn one, put the file in content/cover-uploads/ and add \"image\": \"content/cover-uploads/<file>\" to the entry: it is cropped to 2 by 3 and written at the same sizes. `kinds` are the lighter cards for the short printables. After any change run `node scripts/build-covers.mjs`.",
+  "books": [
+    { "id": "when-god-bless-america", "form": "book", "lines": [ "A Higher", "*Allegiance" ], "ground": "light", "tone": "blue", "art": "capitol", "alt": "A small white church on a horizon line; beneath the line, where its reflection would be, a capitol dome upside down." },
+    { "id": "the-monster-in-the-mirror", "form": "book", "lines": [ "Blind", "*Spots" ], "ground": "dark", "tone": "blue", "art": "spectacles", "alt": "A pair of spectacles on an open Bible, one lens blacked out." },
+    { "id": "believe", "form": "book", "title": "Believe", "subtitle": "The Rational Case for Christian Faith", "lines": [ "*Believe" ], "ground": "light", "tone": "olive", "art": "scales", "alt": "A balance scale, a stone in one pan and a small light in the other." },
+    { "id": "deconstruction-of-faith", "form": "book", "title": "The Deconstruction of Faith", "subtitle": "Why People Are Leaving the Church, and What Comes After", "lines": [ "The", "*Deconstruction", "of Faith" ], "ground": "dark", "tone": "clay", "art": "ruin", "alt": "A church front with stones taken down and stacked beside it, its round window still lit." },
+    { "id": "the-reliability-of-scripture", "form": "book", "title": "The Reliability of Scripture", "subtitle": "Why We Can Trust the Bible We Have", "lines": [ "The Reliability", "of *Scripture" ], "ground": "light", "tone": "clay", "art": "scrolljar", "alt": "A clay storage jar and an unrolled scroll, its first letter gilded." },
+    { "id": "bible-and-homosexuality", "form": "book", "title": "What Does the Bible Really Say About Homosexuality?", "subtitle": "Scripture, Same-Sex Relationships, and the Church's Christ-Centered Response", "lines": [ "What Does the Bible", "Really Say About", "*Homosexuality?" ], "ground": "light", "tone": "olive", "art": "longtable", "alt": "A long table set with bread and a cup under an arched window." },
+    { "id": "bible-and-transgender-identity", "form": "book", "title": "What Does the Bible Say About Transgender Identity?", "subtitle": "Gender, the Body, and the Church's Christ-Centered Response", "lines": [ "What Does the Bible", "Say About", "*Transgender Identity?" ], "ground": "dark", "tone": "blue", "art": "door", "alt": "A door standing open, light falling through it across the floor." },
+    { "id": "critical-race-theory-biblical", "form": "book", "title": "Is Critical Race Theory Biblical?", "subtitle": "Race, Justice, and What the Church Actually Owes the World", "lines": [ "Is Critical", "Race Theory", "*Biblical?" ], "ground": "light", "tone": "clay", "art": "plumbline", "alt": "A plumb line hanging between a wall built true and a wall that leans." },
+    { "id": "raising-believers", "form": "book", "title": "Raising Believers", "subtitle": "Christian Parenting and the Costly Work of Forming Faith in a Post-Christian World", "lines": [ "Raising", "*Believers" ], "ground": "dark", "tone": "olive", "art": "sapling", "alt": "A young tree tied to a stake beside a house, the sun above it." },
+    { "id": "deacon-qualifications", "form": "booklet", "title": "Deacon Qualifications and Selection", "subtitle": "Raising the Standard for Servant Leadership", "lines": [ "Deacon Qualifications", "and *Selection" ], "ground": "light", "tone": "blue", "art": "basin", "alt": "A basin, a pitcher and a towel." },
+    { "id": "church-governance", "form": "booklet", "title": "Church Governance That Works", "subtitle": "Polity, Structure, and Decision-Making for the Local Church", "lines": [ "Church Governance", "*That Works" ], "ground": "light", "tone": "clay", "art": "columns", "alt": "Three columns carrying a pediment with a round window." },
+    { "id": "change-without-casualties", "form": "booklet", "title": "Change Without Casualties", "subtitle": "A Playbook for Introducing Major Ministry Decisions", "lines": [ "Change Without", "*Casualties" ], "ground": "light", "tone": "olive", "art": "compass", "alt": "A compass rose, its north point gilded." }
+  ],
+  "kinds": [
+    { "id": "study-guide", "label": "Study Guide", "tone": "blue", "art": "openbook" },
+    { "id": "context-guide", "label": "Context Guide", "tone": "clay", "art": "lamp" },
+    { "id": "care-page", "label": "Find Help", "tone": "olive", "art": "lantern" },
+    { "id": "care-plan", "label": "Eight-Week Plan", "tone": "olive", "art": "road" },
+    { "id": "worksheet", "label": "Worksheet", "tone": "blue", "art": "quill" },
+    { "id": "workbook", "label": "Workbook", "tone": "clay", "art": "notebook" },
+    { "id": "card-set", "label": "Card Set", "tone": "clay", "art": "cards" },
+    { "id": "reading-plan", "label": "Reading Plan", "tone": "blue", "art": "calendar" },
+    { "id": "family", "label": "Family Booklet", "tone": "clay", "art": "home" },
+    { "id": "reading-path", "label": "Reading Path", "tone": "olive", "art": "signpost" }
+  ]
+}

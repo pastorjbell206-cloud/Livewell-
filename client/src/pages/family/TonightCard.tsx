@@ -16,11 +16,14 @@ import { localISODate } from "@/lib/familyYear";
 import { devotionHref, doneThisWeek, lastDone, nightLabel, placeOf, readFamilyProgress, tableHref, tonightOn, weekOfYear, whenSaid, type FamilyIndex } from "@/lib/familyTable";
 import DoneThisWeek from "./DoneThisWeek";
 import type { Loaded } from "./useFamilyData";
+import { aboutMinutes, filmForDevotion, useFamilyFilms } from "@/lib/familyFilms";
 
 export default function TonightCard({ index, retry }: { index: Loaded<FamilyIndex>; retry: () => void }) {
   const [today] = useState(() => localISODate());
   const [progress] = useState(() => readFamilyProgress());
   const tonight = tonightOn(today);
+  // "Watch first": the film tonight's devotion offers, from the generated map.
+  const film = filmForDevotion(useFamilyFilms(), tonight?.id ?? "");
 
   if (index.status === "failed") {
     return <LoadFailed what="Tonight's devotion" onRetry={retry} backHref="/family/devotions" backLabel="All family devotions" />;
@@ -80,6 +83,13 @@ export default function TonightCard({ index, retry }: { index: Loaded<FamilyInde
               Read it first
             </Link>
           </div>
+          {film && (
+            <p className="tb-line">
+              <Link href={`${devotionHref(row.id)}?watch=1`} className="tb-link">
+                Watch first ({aboutMinutes(film.minutes)}): {film.title}
+              </Link>
+            </p>
+          )}
         </>
       )}
     </section>
