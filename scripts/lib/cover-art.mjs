@@ -268,13 +268,14 @@ export const BOOK_ART = {
     });
     return [
       p.o(wall) + p.t(wall) + p.h("M318,64L364,68L340,300H300Z", "h1") + p.f(courses.join("")) + p.l(wall),
-      p.sh(rect(56, 36, 16, 264), rect(65, 36, 7, 264), "h2"),
-      p.sh(rect(56, 36, 180, 14)),
-      p.l("M72,86L112,50", 3),
-      p.l("M222,50V214", 1.6),
-      p.k(rect(214, 208, 16, 8)),
-      p.m("M206,216H238L222,262Z") + p.l("M206,216H238L222,262Z"),
-      p.f("M222,272V300"),
+      // A wall built true, and the line between them, held from a ring: no beam, no post.
+      p.sh("M52,300V84H140V300Z", "M108,84H140V300H108Z", "h2"),
+      p.f("M52,114H140M52,144H140M52,174H140M52,204H140M52,234H140M52,264H140M96,84V114M74,114V144M110,144V174M82,174V204M104,204V234M70,234V264M98,264V300"),
+      p.l(circle(196, 44, 9), 3),
+      p.l("M196,53V214", 1.6),
+      p.k(rect(188, 208, 16, 8)),
+      p.m("M180,216H212L196,262Z") + p.l("M180,216H212L196,262Z"),
+      p.f("M196,272V300"),
     ].join("");
   },
 
@@ -422,7 +423,7 @@ export const ART_META = {
   scrolljar: { box: [22, 78, 376, 300] },
   longtable: { box: [24, 20, 376, 300] },
   door: { box: [80, 54, 340, 340] },
-  plumbline: { box: [56, 34, 366, 300] },
+  plumbline: { box: [50, 32, 366, 300] },
   sapling: { box: [26, 12, 378, 300] },
   basin: { box: [42, 98, 316, 300] },
   columns: { box: [40, 28, 360, 300] },

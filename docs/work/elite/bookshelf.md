@@ -251,7 +251,7 @@ The type is the site's self-hosted fonts, set as outlines
 | The Reliability of Scripture | A clay storage jar and an unrolled scroll, its first letter gilded. |
 | What Does the Bible Really Say About Homosexuality? | A long table set with bread and a cup, under an arched window (the book's conclusion is "The Table Is Bigger Than the Argument"). |
 | What Does the Bible Say About Transgender Identity? | A door standing open, light falling through it across the floor. |
-| Is Critical Race Theory Biblical? | A plumb line hanging true beside a wall that leans. |
+| Is Critical Race Theory Biblical? | A plumb line hanging between a wall built true and a wall that leans. (A first drawing hung the line from a beam on a post; on this book that shape was wrong, and it was redrawn with no beam and no post.) |
 | Raising Believers | A young tree tied to a stake beside a house, the sun above it. |
 | Deacon Qualifications and Selection | A basin, a pitcher and a towel. |
 | Church Governance That Works | Three columns carrying a pediment. |
