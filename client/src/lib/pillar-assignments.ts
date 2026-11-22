@@ -1805,5 +1805,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 5,
     "subThemes": [],
     "confidence": "high"
+  },
+  "did-jesus-really-rise-from-the-dead": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
