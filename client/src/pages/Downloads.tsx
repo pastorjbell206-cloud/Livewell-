@@ -338,11 +338,11 @@ export default function Downloads() {
                       <div style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginBottom: "10px" }}>{r.summary}</div>
                     )}
                     {fileLines(r.files ?? []).map((line) => (
-                      <div key={line.name || "files"} style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
+                      <div key={line.name || "files"} className="pr-files" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", lineHeight: 1.4 }}>
                         {line.name && <span style={{ marginRight: "8px" }}>{line.name}:</span>}
                         {line.files.map(({ label, file }, i) => (
                           <span key={file.href}>
-                            {i > 0 && <span aria-hidden style={{ margin: "0 8px" }}>·</span>}
+                            {i > 0 && <span aria-hidden className="pr-sep" style={{ margin: "0 8px" }}>·</span>}
                             {/* Opens in the browser's viewer (which can save, share, or print it) instead of forcing a download. */}
                             <a
                               href={file.href}

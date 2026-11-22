@@ -36,10 +36,16 @@ export const SHELF_GROUPS: { id: ShelfGroup; label: string; line: string }[] = [
   { id: "leaders", label: "For church leaders", line: "Short booklets for elders, deacons and pastors on governing a local church." },
 ];
 
+/** "Believe: The Rational Case for Christian Faith" is shown as "Believe" where its subtitle stands beside it. */
+function shortTitle(title: string, subtitle: string): string {
+  const at = title.indexOf(": ");
+  return at > 0 && subtitle ? title.slice(0, at) : title;
+}
+
 export const SHELF_ITEMS: ShelfItem[] = [
   ...FREE_EBOOKS.map((b): ShelfItem => {
     const folder = ebookFolder(b.pdf);
-    return { group: b.group as ShelfGroup, id: `ebook:${folder}`, folder, title: b.title, subtitle: b.sub, line: b.line, pages: b.pages, pdf: b.pdf, epub: b.epub, page: b.page, formerly: b.formerly, cover: bookCover(folder) };
+    return { group: b.group as ShelfGroup, id: `ebook:${folder}`, folder, title: shortTitle(b.title, b.sub), subtitle: b.sub, line: b.line, pages: b.pages, pdf: b.pdf, epub: b.epub, page: b.page, formerly: b.formerly, cover: bookCover(folder) };
   }),
   ...BOOKLETS.map((b): ShelfItem => {
     const folder = ebookFolder(b.pdf);
