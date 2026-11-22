@@ -15396,3 +15396,16 @@ Cut in chapter 16: the Gezer Calendar; Jeroboam's calf at Bethel; Romans 9 and t
 | Why the tribes could not: a military report; Joshua's ‘you can’ and Judges 2:1-3; the book's frankness; not a rule about anyone's faith today | 14-18 `hard` | joshua/17.json `hard` | Repository; no side |
 
 Cut in chapter 17: Gideon and the clan of Abiezer; Saul's body at Beth-shean; the remark on the Hebrew verb for ‘clear’ (the note warns against building on it); Philippians 4:13.
+
+## The plain notes on Joshua 18 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Tent of Meeting set up at Shiloh in the hills of Ephraim, the place of worship through the time of the judges (Hannah, Samuel); the word for going slack; the survey as a rare scene of mapping, with a written record, such lists common in the ancient world; lots cast before the LORD as worship and as a binding decision; verse 7 on the Levites | 1-10 | joshua/18.json `historical`, `cultural`, `literary`, `words` (raphah, goral, katav) | Repository |
+| Jeremiah 7:12; John 1:14 and the Greek verb for pitching a tent | 1-10 | joshua/18.json `historical`, `christ`; BSB | Repository; BSB text |
+| Benjamin the youngest son and a small tribe between Judah and Joseph, its borders the others' borders; Jericho, Bethel and Gibeon within it; Gibeah, Ramah and Mizpeh later; Paul of this tribe; Jebus on the line, held by neither tribe until David (15:63; Judges 1:21); borders walked by landmarks | 11-28 | joshua/18.json `historical`, `literary`; joshua/15.json `cultural` | Repository |
+| Philippians 3:5; Deuteronomy 33:12 | 11-28 | joshua/18.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 18: the excavations at Khirbet Seilun and their debated destruction layer; the echo of Genesis 1:28 in ‘subdued’ (the deep note says only that it ‘suggests’ one). The BSB's words in verses 24 and 28 are quoted only in part because of their dashes.
