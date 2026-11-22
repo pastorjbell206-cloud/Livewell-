@@ -303,8 +303,8 @@ const ToSubscribeRedirect = redirectTo("/subscribe");
 // Every ebook is free (James, 2026-11-18): old sales and thank-you addresses land on the free ebooks.
 const ToDownloadsRedirect = redirectTo("/downloads");
 // RENAMED-BOOKS:CONSTS:START (written by scripts/sync-book-names.mjs from client/src/data/book-names.json)
-const RenamedBook0 = redirectTo("/books/a-higher-allegiance");
-const RenamedBook1 = redirectTo("/books/blind-spots");
+const RenamedBook0Redirect = redirectTo("/books/a-higher-allegiance");
+const RenamedBook1Redirect = redirectTo("/books/blind-spots");
 // RENAMED-BOOKS:CONSTS:END
 const ToSpeakingRedirect = redirectTo("/speaking");
 const ToLamentRedirect = redirectTo("/studyguides/lament");
@@ -567,8 +567,8 @@ function Router() {
         <Route path="/books/critical-race-theory-biblical/thank-you" component={ToDownloadsRedirect} />
         <Route path="/books/critical-race-theory-biblical" component={IsCriticalRaceTheoryBiblical} />
         {/* RENAMED-BOOKS:ROUTES:START (written by scripts/sync-book-names.mjs) */}
-        <Route path="/books/when-god-bless-america" component={RenamedBook0} />
-        <Route path="/books/the-monster-in-the-mirror" component={RenamedBook1} />
+        <Route path="/books/when-god-bless-america" component={RenamedBook0Redirect} />
+        <Route path="/books/the-monster-in-the-mirror" component={RenamedBook1Redirect} />
         {/* RENAMED-BOOKS:ROUTES:END */}
         <Route path="/books/:slug" component={BookDetail} />
         {/* Old thank-you pages. The twenty-three held ebooks keep their paid download for past buyers. */}

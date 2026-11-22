@@ -143,8 +143,8 @@ function between(text, start, end, body, rel) {
 }
 
 function appStubs(text) {
-  const consts = moves.map(([, to], i) => `const RenamedBook${i} = redirectTo(${JSON.stringify(to)});\n`).join("");
-  const routes = moves.map(([from], i) => `        <Route path=${JSON.stringify(from)} component={RenamedBook${i}} />\n`).join("");
+  const consts = moves.map(([, to], i) => `const RenamedBook${i}Redirect = redirectTo(${JSON.stringify(to)});\n`).join("");
+  const routes = moves.map(([from], i) => `        <Route path=${JSON.stringify(from)} component={RenamedBook${i}Redirect} />\n`).join("");
   let out = between(text, "// RENAMED-BOOKS:CONSTS:START", "// RENAMED-BOOKS:CONSTS:END", consts, "client/src/App.tsx");
   out = between(out, "{/* RENAMED-BOOKS:ROUTES:START", "{/* RENAMED-BOOKS:ROUTES:END", routes, "client/src/App.tsx");
   return out;

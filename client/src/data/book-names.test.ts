@@ -54,7 +54,7 @@ describe("the renamed books", () => {
     expect(RULES.some((r) => r.source === to)).toBe(false);
     // Nothing else on the site still redirects to the old address.
     expect(RULES.filter((r) => r.destination === from)).toHaveLength(0);
-    expect(APP).toMatch(new RegExp(`<Route path="${from}" component=\\{RenamedBook\\d+\\} />`));
+    expect(APP).toMatch(new RegExp(`<Route path="${from}" component=\\{RenamedBook\\d+Redirect\\} />`));
     expect(APP).toContain(`redirectTo("${to}")`);
   });
 
