@@ -15308,3 +15308,17 @@ Cut in chapter 10: the name Adoni-zedek and Melchizedek; the Maccabees' victory 
 | The hardening: Pharaoh (Exodus 9:12; 8:15); God's rule over the heart, or God confirming a stubbornness already there; the kings responsible; the way of peace open; no side; not to be said of anyone today | 16-23 `hard` | joshua/11.json `hard`; exodus/intro.json `teaching`; bible/doctrines/sovereignty.json | Repository; no side |
 
 Cut in chapter 11: the place names of the northern alliance; the Mari texts and the Amarna letters by name; the two kings named Jabin (Joshua 11 and Judges 4), left to the deep note and to the notes on Judges; Matthew 11:28 (used on the book page).
+
+## The plain notes on Joshua 12 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The list closes the first half; Sihon and Og defeated under Moses (Numbers 21; Deuteronomy 2 and 3) and remembered in worship; named by Rahab and the Gibeonites; the Arnon, the Jabbok and Hermon; ‘inheritance’ looks ahead | 1-6 | joshua/12.json `historical`, `words` (yerushah); joshua/2.json; joshua/9.json | Repository |
+| Psalm 136:19-20; the pointer to the notes on Numbers 21 and Deuteronomy 2 to 3 | 1-6 | joshua/12.json `historical`; BSB | Repository; BSB text |
+| Canaan as a patchwork of city-states, a ‘king’ the ruler of one walled town; conquest lists in the ancient world (the pharaohs' temple walls); the repeated ‘one’ as a count and a kind of worship; Megiddo and Tirzah; only three cities named as burned | 7-24 | joshua/12.json `historical`, `cultural`, `words` (echad, melek); joshua/plain/11.json | Repository |
+| Colossians 2:15; 1 Peter 1:4 | 7-24 | joshua/12.json `christ`; BSB | Repository; BSB text |
+| Defeated kings and cities still held (15:63; 16:10; 17:11-12; Judges 1:27): the three answers; 13:1; no side | 7-24 `hard` | joshua/12.json `hard` | Repository; no side |
+
+Cut in chapter 12: Thutmose III at Megiddo and the name Armageddon; Dor and Aphek; the differences in the Greek translation of the list; Og as one of the Rephaim. The BSB's words in verses 7 and 8 are not quoted because of the dash.
