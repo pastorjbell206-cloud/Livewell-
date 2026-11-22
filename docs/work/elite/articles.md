@@ -341,3 +341,77 @@ The full gates were run after this section was committed and after the target br
 `uptime` was run as a command of its own before each of these, and a command waited whenever the one-minute load stood at 6.00 or above, with three exceptions. For the 48 content gates it was run once before the script, which then read the load itself before each command and waited. Before the second `pnpm test` it was read at the end of the wait loop and not as a separate command. And the retake of the ten screenshots was started without a reading.
 
 **What the feed's limit means.** The essay feed (/rss.xml) lists the newest fifty items, and there are now exactly fifty essay files. The older live essays that have no file no longer appear in it, and the next essay file will push the oldest file out and fail the test that expects every essay file to be listed. Raising the limit is a change to the production API file, outside this run's brief; it is a question for James and the next run.
+
+---
+
+# Five more essays for the shelf, sixth run (2026-11-22)
+
+James, 2026-11-20 and 21: "I want you to continue, especially the articles. I want them to be a lot more controversial and dealing with very difficult issues in a very balanced, intellectual, academic, historical, biblical way that is very easy to understand, easy to read, normal, common language that is semi-professional, that's in my tone style that you've been writing like." "keep going and publish when ready."
+
+## What was written
+
+| Essay | Address | Shelf section | Words |
+|---|---|---|---|
+| Is Jesus the Only Way? | /writing/is-jesus-the-only-way | Doubt and Hard Questions | 2,992 |
+| Does Science Disprove God? | /writing/does-science-disprove-god | Doubt and Hard Questions | 2,803 |
+| Did Jesus Really Rise from the Dead? | /writing/did-jesus-really-rise-from-the-dead | Doubt and Hard Questions | 2,787 |
+| Should Christians Drink Alcohol? | /writing/should-christians-drink-alcohol | Marriage, Family and Ordinary Faithfulness | 2,654 |
+| Is Money the Root of All Evil? | /writing/is-money-the-root-of-all-evil | Marriage, Family and Ordinary Faithfulness | 2,803 |
+
+All five were landed the way the first twenty-five were: a file in `client/public/essays/`, a `"live"` line in `client/src/lib/shelf.json`, a filing line in `client/src/lib/pillar-assignments.ts`, the essays index and the passage index rebuilt. No database row. One commit each with its ledger rows, and one for the re-read, the shelf test and the passage index.
+
+**The feed fix came first, in a commit of its own.** The essay feed (/rss.xml) listed the newest 50 items and the shelf had 50 essay files, so the next file would have pushed one out and failed `server/rss-feed.test.ts`. The limit is now 100, in the item list (`rssItems`) and in the posts query, both in the production API file. The dev server has no feed route of its own, so there was nothing to change there; the feed exists only in the production file, and `scripts/serve-like-vercel.mjs` does not serve it either. The test call the fifth run changed is back to the default limit. The feed tests and `server/api-parity.test.ts` passed (7 tests). With 55 essay files the feed has room for 45 more before the same thing happens again.
+
+**The reserve topic was not used. Two of the five stand beside an essay the shelf already had**, and each was given a different job and links its neighbor:
+
+- "Did Jesus Really Rise from the Dead?" stands beside "Did the Resurrection Actually Happen?" (a pending shelf line with a file, so public, in the first person). That essay argues the case for. The new one gives the floor to the four alternatives the brief names (theft, the wrong tomb, visions, legend), each with its history, its strength and what it has to explain, and then says what history can and cannot establish.
+- "Is Money the Root of All Evil?" stands beside "Can a Christian Be Rich?" (first run), which is about how much a believer may keep. The new one reads 1 Timothy 6:10 where it stands and takes work and provision, debt, giving and enough, which the earlier essay leaves alone.
+- "Is Jesus the Only Way?" does not repeat "What Happens to People Who Never Hear the Gospel?", which it links: it takes the charge of arrogance and the three views of the religions, and leaves the fate of the unevangelized to that essay.
+
+The shelf now holds 94 essays, 45 of them live and 49 pending; 70 are public. The counts in `client/src/lib/shelf.test.ts` say so. To take one of the five down: delete its line from `shelf.json` and its file, run `node scripts/build-essays-index.mjs` and `pnpm exec tsx scripts/build-passage-index.mjs`, and lower the test's counts by one.
+
+Rules kept in all five: third-person teaching voice, with no "I" outside quoted text; no memory, feeling, habit, conversation or biography is given to James; no church body is named or implied as his (the alcohol essay lists the traditions on each side as the site's page lists them and says nothing of which is his); no position is stated as his. The first essay links the Honest Answer that states the confession in the first person and adds nothing to it. The science essay takes no position on the age of the earth, evolution, Adam or the flood: the views are listed and the four /questions pages linked. No present war, state, party, policy, movement or living person is named (the site's pages on religions, science and the resurrection name many living scholars; the essays that draw on them name none). Care lines are reused whole from existing pages and were checked byte for byte by script: the wisdom entry's three lines in the alcohol essay, with the help page and Find Help named and linked and no telephone number; the help page's two sentences in the money essay. The alcohol essay says it is not medical advice and the money essay says twice that it is not financial advice. Matthew 8 is not cited anywhere. Every claim and quotation has a row in `docs/work/elite/articles-ledger.md` under "Sixth run".
+
+## The Revision Pass (CLAUDE.md), one line per pass
+
+**is-jesus-the-only-way.** Structure: opens on a nurse, a father and a student, and gives the charge in a scholar's own sentence; shows the complaint is as old as Celsus and Symmachus, and that the power changed hands between Peter's cell and the emperor's court; grants the history (Charlemagne, under "we") and the goodness and light outside the church from the New Testament itself; reads John 14:6 and Acts 4:12 where they were spoken; three answers each in its holders' terms, then each one's worst difficulty; respect without pretending; ends on the secret that did not wait to be reached. Rhythm: cut from 3,543 words to 2,992. Words: forbidden list clean by literal search; Vivekananda's address cut because only quotation lists could be opened; "almost nobody who actually prays believes it" changed as an overclaim; six sentences that followed a site page rewritten.
+
+**does-science-disprove-god.** Structure: opens on a student, a physician and an engineer who share one picture; the charge in two forms, the war in Draper's sentence and the quieter one in Darwin's; Galileo with the facts granted first and the legend second; Darwin from his own book and letters, with the dates of his doubts; what a method for nature can and cannot rule on; the god of the gaps given up, with Aquinas stating the modern objection against himself; the unbeliever's best case and the believer's, each granted its limit; the views Christians hold, listed with no side taken; the church's guilt in both directions; ends on the telescope. Rhythm: one flat list of views built alike on purpose. Words: Darwin's reasons corrected to the ones his own account gives; "first proposed" softened; ten sentences that followed the site's pages rewritten.
+
+**did-jesus-really-rise-from-the-dead.** Structure: opens on a teacher, a woman with a hymnbook and a freshman with a list, and says it will prove nothing; shows the doubts inside the Gospels; four alternatives in order of age, each with its strength first and what it must explain second, and each given a fair reply; the combined theory and the principle it rests on; what historians grant and do not; what history can and cannot do, with the overselling under "we"; ends on Matthew's "but some doubted" and the three responses at Athens. Rhythm: the four sections built alike on purpose. Words: "every explanation" corrected to "nearly every"; the wrong-tomb theory marked in the ledger as reference knowledge; eleven sentences that followed the site's page rewritten.
+
+**should-christians-drink-alcohol.** Structure: opens on three people and the skeptic's fair comment; the care lines before the argument; the gift, the warning and the honored abstainer read together; moderation with Chrysostom, abstaining with Clement, Wesley, Rush and the women of 1873, each with its texts and its fear; Romans 14 read as two commands to two parties, with what "stumble" means; addiction with the help page's own warning; the church's failure from both sides under "we"; third-order, no side; ends on the cup Jesus said he would not drink until the kingdom. Rhythm: the two cases at like length. Words: two sentences that ruled on the two-wine argument changed; no telephone number; no figure for drinking or dependence.
+
+**is-money-the-root-of-all-evil.** Structure: opens on a businessman, a couple in debt and a widow who gave to a broadcaster, and the skeptic's misquotation; the verse in its older and newer wording and in its setting, aimed at wanting and first at teachers; money as tool and as rival, with the two rich men as a pair; the first churches in the Didache, Justin and Tertullian; the prosperity teaching named and grieved; the opposite error about work and provision; debt, with the law's concern for lenders and the help page's own sentences; contentment and giving; the church's record under "we"; ends on a love that goes wherever its owner goes. Rhythm: the first draft closed on three near-repeats; the last two paragraphs were rewritten. Words: nothing is said about which rendering is closer to the Greek; "the one created thing" softened; "passed a plate" corrected to "took a collection".
+
+Final read as the skeptic, all five: each gives the strongest objection near the top, in a named critic's own words where one could be opened (Smith, Celsus, Symmachus, Draper, Darwin, Russell), and grants most of it; each names the church's guilt in plain sentences with "we"; each says what its argument cannot show; none ends by asking for a decision. The resurrection essay says in its second paragraph that it will not prove the resurrection.
+
+## Rules broken in this run
+
+1. Before the feed tests, `uptime` was read at the end of the wait loop (5.54) and the tests were started without a separate `uptime` command first. After that it was run alone before each light-gate run and each heavier command, and the run waited whenever the one-minute load stood at 6.00 or above.
+2. Nothing else was found on the re-read. The closeness script was run after each essay and before its commit, as the fifth run's section asks; the ledger says what it found each time.
+
+## Topics for a next run
+
+- "Can I Trust My Feelings About God?" (the reserve since the third run; still unwritten).
+- "Who Runs the Church? Bishops, Elders and Congregations".
+- "Is the Old Testament God the Same God?" and "What Is the Gospel, in One Page?"
+- "Mary, the Saints and Prayer to the Dead: What Divides Catholic, Orthodox and Protestant".
+- "Should Christians Keep the Sabbath?" and "Is Gambling a Sin?" (third-order questions like this run's fourth).
+- "What Does the Bible Say About Sexuality, and Why Do Churches Now Disagree?" and "When Does Life Begin, and What Do Christians Owe the Unborn and Their Mothers?" (James has given his position on each; both still need his decision on scope and his own words).
+
+## Questions for James
+
+1. The only way: the essay states the creeds' confession that salvation is in Christ alone, says that confession excludes pluralism, and takes no side between the strict view (a person must hear and believe) and the wider one (Christ may save some who never heard). The Honest Answer it links says "I confess it with them." Do you want your own view on the second question stated?
+2. Science: the essay takes no position on the age of the earth, evolution, Adam or the flood. It does say that nearly all who work in the sciences read the evidence as showing an old earth and common descent, and that hinting scientists are hiding what they know "is a charge against real people and ought to come with evidence." Is that a sentence you would sign?
+3. The resurrection: there are now two essays, yours in the first person arguing the case and this one giving the alternatives the floor. Do you want both kept, or the two made into one? This one says "That God raised Jesus is not a finding of historical scholarship, and it could not be one." Would you say that?
+4. Alcohol: the essay takes no side and says nothing of what your church teaches or what you do. It says the best case for abstaining does not need the argument that Bible wine was unfermented. Please read the section "When It Is Not a Question of Freedom" as a pastor.
+5. Money: the essay says the widow who gave to a broadcaster "was sold something, in God's name, by people who profited from the sale, and the rest of us let it go on for decades without much protest." It leaves the tithe and the question of interest open. Do you want your own teaching on the tithe stated?
+6. The feed now carries 100 items. Is that the number you want?
+7. The ledger's "check first" rows (this machine could reach only GitHub): Kirsopp Lake's wrong-tomb theory of 1907, which no source opened here describes; the year 384 for Symmachus and 387 for Chrysostom's sermon; that the church forbade interest for centuries and later allowed it on business loans; that distilled spirits are a later invention than the Bible's wine; that the temperance movement began against spirits; national prohibition's thirteen years; Asa Gray's faith.
+
+## Gates (2026-11-22)
+
+Before the merge, after each essay: the seven light gates (`validate-essays`, `validate-content-integrity`, `validate-grow-voice`, `validate-no-emdash`, `validate-politics`, `validate-links`, `build-essays-index --check`), every one exit 0 on its first run for all five, and again after the re-read. After each essay and again after the re-read: every Scripture quotation matched the ESV copy by script (130 across the five), every other quotation was found in an opened source by the second script (58), each reused care line was found whole (four), and the closeness script was run. Before the merge, once: the passage index rebuilt (704 chapter files, 62 written, none new; Matthew 8 still has none), and the shelf test, the site-structure test and the feed test together (49 tests passed, after the counts were raised to 94 essays, 45 live and 70 public).
+
+The full gates were run after this section was committed and after the target branch was merged, in the order the brief sets. Their results are in the paragraphs below, which were added after they ran.
