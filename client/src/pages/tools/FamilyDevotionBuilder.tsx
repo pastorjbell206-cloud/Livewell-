@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from "react";
 import { Users, Copy, Check, RotateCcw, BookOpen, MessageCircle, Hand, HeartHandshake } from "lucide-react";
 import { Link } from "wouter";
 import { copyToClipboard } from "@/lib/clipboard";
-import { ResultNext } from "@/components/tool-shell/Result";
+import { ResultNext } from "@/components/tool-shell";
 import { nextPagesFor } from "@/lib/toolNext";
 
 type BandId = "young" | "elementary" | "teens" | "mixed";
@@ -916,6 +916,7 @@ export default function FamilyDevotionBuilder() {
     fontSize: "13px",
     fontWeight: 600,
     padding: "12px 18px",
+    minHeight: "44px",
     borderRadius: "999px",
     cursor: "pointer",
     border: `1px solid ${active ? "var(--mustard)" : "var(--border)"}`,
@@ -1317,14 +1318,14 @@ export default function FamilyDevotionBuilder() {
                   type="button"
                   onClick={handleCopy}
                   aria-live="polite"
-                  style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--mustard)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--charcoal)", cursor: "pointer" }}
+                  style={{ display: "flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 20px", background: "var(--mustard)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--charcoal)", cursor: "pointer" }}
                 >
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Devotion</>}
                 </button>
                 <button
                   type="button"
                   onClick={handleReset}
-                  style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "transparent", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
+                  style={{ display: "flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 20px", background: "transparent", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
                 >
                   <RotateCcw size={14} /> Pick Another
                 </button>

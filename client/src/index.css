@@ -1926,12 +1926,13 @@ html{-webkit-tap-highlight-color:transparent}
 .sm-practice{background:var(--card);border-bottom:1px solid var(--border);outline:none;scroll-margin-top:80px}
 .sm-practice__ref{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.1;color:var(--ink);margin:6px 0 var(--s-2)}
 .sm-verse{font-family:var(--font-reading);font-size:clamp(20px,1.1rem + .7vw,26px);line-height:1.9;color:var(--ink);margin:0 0 var(--s-2);max-width:34em}
-.sm-gap{font:inherit;color:var(--ink-muted);background:none;border:0;border-bottom:1px solid var(--borderdk);border-radius:0;letter-spacing:.05em;min-width:28px;padding:10px 2px;margin:-10px 0;cursor:pointer}
-.sm-gap:hover,.sm-gap:focus-visible{color:var(--ink);border-bottom-color:var(--mustard)}
+.sm-gap{font:inherit;color:var(--ink-muted);background:none;border:0;border-radius:0;letter-spacing:.05em;min-width:28px;padding:10px 2px;margin:-10px 0;cursor:pointer}
+.sm-gap:hover,.sm-gap:focus-visible{color:var(--mustard-text)}
 .sm-peeked{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 .sm-step{font-family:var(--U);font-size:16px;line-height:1.6;color:var(--ink);margin:var(--s-2) 0;max-width:62ch}
 .sm-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:var(--s-2) 0 0}
 .sm-actions .btn{display:inline-flex;align-items:center;gap:8px}
+.sm-result .ts-r{margin:var(--s-4) 0 0}
 .sm-alert{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink);margin:8px 0 0}
 .sm-alert:empty{display:none}
 .sm-list{list-style:none;margin:0;padding:0}

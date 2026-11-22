@@ -22,7 +22,7 @@ import LoadFailed from "@/components/LoadFailed";
 import NextStep from "@/components/NextStep";
 import ScriptureNote from "@/components/ScriptureNote";
 import { VerseRef } from "@/components/VerseRef";
-import { ResultNext } from "@/components/tool-shell/Result";
+import { ResultNext } from "@/components/tool-shell";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { fetchJson } from "@/lib/fetch-json";
 import type { SectionConfig } from "@/lib/prophetic";

@@ -27,7 +27,7 @@ import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import LoadFailed from "@/components/LoadFailed";
 import NextStep from "@/components/NextStep";
-import { ResultNext, type NextStep as NextPage } from "@/components/tool-shell/Result";
+import { ResultNext, type NextStep as NextPage } from "@/components/tool-shell";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { fetchJson } from "@/lib/fetch-json";
 import { parseScriptureRef } from "@/lib/scripture-ref";
@@ -215,7 +215,8 @@ export default function ScriptureMemory() {
             {v.ref} <Stage l={l} today={today} />
           </p>
           {note && <p className="sm-row__note">{note}</p>}
-          <p className="sm-row__text">{v.text}</p>
+          {/* The verse being said from memory is not printed in a list under it. */}
+          <p className="sm-row__text">{at?.ref === v.ref && !marked ? "The verse you are practicing, above." : v.text}</p>
         </div>
         <button type="button" className="btn btn--quiet sm-row__go" onClick={() => openVerse(v.ref, extra)}>
           {l ? (l.due <= today && l.stage > 0 ? "Review" : "Practice") : "Learn this verse"}

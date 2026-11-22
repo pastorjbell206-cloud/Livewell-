@@ -4,7 +4,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import InnerHead from "@/components/art/InnerHead";
 import { useState } from "react";
 import { ArrowLeft, Users, ChevronRight } from "lucide-react";
-import { ResultNext } from "@/components/tool-shell/Result";
+import { ResultNext } from "@/components/tool-shell";
 import { nextPagesFor } from "@/lib/toolNext";
 
 interface AgeGroup {

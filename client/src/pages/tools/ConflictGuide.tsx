@@ -7,7 +7,7 @@ import { Link } from "wouter";
 import { useEffect, useState } from "react";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer, AlertTriangle } from "lucide-react";
-import { ResultNext } from "@/components/tool-shell/Result";
+import { ResultNext } from "@/components/tool-shell";
 import { nextPagesFor } from "@/lib/toolNext";
 
 /* ── Types ─────────────────────────────────────────────────────── */

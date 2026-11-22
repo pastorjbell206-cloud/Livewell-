@@ -214,7 +214,7 @@ export default function FamilyCatechism() {
                     <>
                       {" "}
                       If you're learning these with a church or a group, you can{" "}
-                      <button type="button" onClick={() => move({ ...place, follow: "calendar" })} style={{ font: "inherit", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", padding: "10px 0", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "0.2em" }}>
+                      <button type="button" onClick={() => move({ ...place, follow: "calendar" })} style={{ font: "inherit", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", padding: "12px 0", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "0.2em" }}>
                         follow the calendar's question instead
                       </button>
                       {" "}(this week it's question {calendar.number}).
@@ -225,7 +225,7 @@ export default function FamilyCatechism() {
             ) : (
               <p className="no-print" style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-3) 0 0", maxWidth: "62ch" }} aria-live="polite">
                 {placeKept ? "You're following the calendar, one question a week, the same for every household." : SAVE_FAILED}{" "}
-                <button type="button" onClick={() => move({ ...place, follow: "own" })} style={{ font: "inherit", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", padding: "10px 0", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "0.2em" }}>
+                <button type="button" onClick={() => move({ ...place, follow: "own" })} style={{ font: "inherit", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", padding: "12px 0", cursor: "pointer", textDecoration: "underline", textUnderlineOffset: "0.2em" }}>
                   {place.at > 1 ? `Go back to your own place, question ${place.at}` : "Start at question 1 and go at your own pace"}
                 </button>
               </p>

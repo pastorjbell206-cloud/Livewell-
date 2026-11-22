@@ -6,7 +6,7 @@ import { Heart, Copy, Check, RefreshCw, Share2, Sun, Play, Pause, RotateCcw } fr
 import { useFavorites } from "@/hooks/useFavorites";
 import { copyToClipboard } from "@/lib/clipboard";
 import { Link } from "wouter";
-import { ResultNext } from "@/components/tool-shell/Result";
+import { ResultNext } from "@/components/tool-shell";
 import { nextPagesFor } from "@/lib/toolNext";
 
 const PRAYERS: Record<string, string[]> = {

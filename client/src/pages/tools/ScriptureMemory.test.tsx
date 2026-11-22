@@ -176,6 +176,10 @@ describe("the page", () => {
     const panel = screen.getByRole("heading", { name: FIRST.ref }).closest("section")!;
     expect(within(panel).getByText(/Step 1 of 5\./)).toBeInTheDocument();
     expect(panel.querySelectorAll(".sm-gap")).toHaveLength(0);
+    // While it is being practiced, the verse is not printed in the lists under it.
+    expect(screen.getAllByText("The verse you are practicing, above.").length).toBeGreaterThan(0);
+    expect(document.querySelectorAll(".sm-row__text").length).toBeGreaterThan(0);
+    for (const el of Array.from(document.querySelectorAll(".sm-row__text"))) expect(el.textContent).not.toBe(FIRST.text);
 
     const total = wordsOf(FIRST.text).length;
     for (let step = 1; step < HIDE_STEPS.length; step++) {
