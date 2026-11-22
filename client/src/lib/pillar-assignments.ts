@@ -1845,5 +1845,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 6,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-the-god-of-the-old-testament-the-god-of-jesus": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
