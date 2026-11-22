@@ -51,6 +51,7 @@ import { PartBody, nightsOf, partsOf, type AskChoice } from "./DevotionParts";
 import { useDevotion, useFamilyBand, type Devotion } from "./useFamilyData";
 import { filmForDevotion, useFamilyFilms, type FamilyFilm } from "@/lib/familyFilms";
 import WatchFirst, { WatchFirstPrintLine } from "./WatchFirst";
+import { toolsOfferedAt } from "@/lib/toolOffers";
 
 const SITE = "https://www.livewellbyjamesbell.co";
 
@@ -210,6 +211,8 @@ function DevotionView({
   const parts = partsOf(devotion, catechism);
   // Three short nights suit a weekly devotion; a day of a daily set is already short.
   const nights = row.kind === "weekly" ? nightsOf(parts) : [];
+  // A tool for the parents where one does a job this devotion raises (data/tool-offers.json).
+  const tools = toolsOfferedAt("devotions", row.id);
 
   return (
     <div className="tb-page">
@@ -282,6 +285,22 @@ function DevotionView({
               <Link href={row.grownups.href} className="tb-link">
                 {row.grownups.title}
               </Link>
+            </aside>
+          )}
+          {tools.length > 0 && (
+            <aside className="tb-grownups no-print" aria-labelledby="tb-tools">
+              <p id="tb-tools" className="tb-label">
+                For the grown-ups, a tool
+              </p>
+              {tools.map((t) => (
+                <p key={t.id} className="tb-grownups__line">
+                  <Link href={t.href} className="tb-link">
+                    {t.name}
+                  </Link>
+                  <br />
+                  {t.job}
+                </p>
+              ))}
             </aside>
           )}
           <div className="tb-done no-print">

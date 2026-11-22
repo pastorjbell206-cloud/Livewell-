@@ -1,0 +1,32 @@
+{
+ "about": "Where each tool is offered beside the page a reader is already on: a wisdom topic (/wisdom/<id>, under Where to go next), an Honest Answer (/answers/<slug>), a Study Bible chapter (Go deeper, through scripts/build-passage-index.mjs) and a family devotion (a line for the grown-ups). Only real fits: the tool does a job this page raises. No tool is offered on a wisdom topic the site marks as heavy (data/sensitive-pages.json): those pages keep the path to help and nothing beside it. The tool's name and its one-line job come from client/src/lib/toolsList.ts; nothing is worded here. lib/toolOffers.ts reads this file; toolOffers.test.ts checks every id, slug and passage. After changing a passage: pnpm exec tsx scripts/build-passage-index.mjs",
+ "offers": [
+  { "tool": "worry-journal", "topics": ["anxiety", "overthinking", "fear-of-the-future", "the-news-and-fear", "need-for-control"], "answers": ["what-does-the-bible-say-about-anxiety", "is-anxiety-a-spiritual-failure"], "passages": ["Matthew 6:25-34", "Philippians 4:6-7", "1 Peter 5:7"], "devotions": ["fear-and-anxiety", "peace"] },
+  { "tool": "prayer-planner", "topics": ["prayer-struggles", "caregiving", "encouraging-others"], "answers": [], "passages": ["1 Timothy 2:1", "Colossians 4:2-3", "Ephesians 6:18"], "devotions": ["why-we-pray", "prayer"] },
+  { "tool": "prayer-generator", "topics": ["spiritual-dryness", "feeling-far-from-god", "exhaustion"], "answers": [], "passages": ["Romans 8:26", "Psalm 13:1-2"], "devotions": [] },
+  { "tool": "rule-of-life", "topics": ["busyness-and-overwhelm", "hurry-and-rush", "rest-and-sabbath", "time-and-priorities", "work-life-balance", "spiritual-growth", "technology-and-distraction"], "answers": [], "passages": ["Exodus 20:8-11", "Mark 1:35", "Mark 6:31"], "devotions": ["rest-and-sabbath", "screens-and-attention"] },
+  { "tool": "connection-planner", "topics": ["loneliness", "relocation", "singleness"], "answers": [], "passages": ["Ecclesiastes 4:9-10", "Hebrews 10:24-25"], "devotions": ["friendship"] },
+  { "tool": "conflict-guide", "topics": ["marriage-communication", "defensiveness"], "answers": [], "passages": ["Ephesians 4:26", "James 1:19", "Matthew 5:23-24"], "devotions": [] },
+  { "tool": "marriage", "topics": ["marriage-intimacy", "marriage-communication"], "answers": [], "passages": ["Ephesians 5:21-33", "Genesis 2:24"], "devotions": [] },
+  { "tool": "emotional-health", "topics": ["mental-exhaustion", "setting-boundaries", "people-pleasing", "saying-no"], "answers": [], "passages": ["1 Kings 19:4-8"], "devotions": [] },
+  { "tool": "financial-health", "topics": ["money", "saving-and-spending", "greed", "contentment", "generosity-and-giving", "consumerism-and-stuff", "stewardship"], "answers": ["what-does-the-bible-say-about-money"], "passages": ["Matthew 6:19-21", "1 Timothy 6:6-10", "Luke 12:15"], "devotions": ["generosity", "contentment", "stewardship"] },
+  { "tool": "spiritual-gifts", "topics": ["serving-in-the-church", "calling-and-purpose", "serving-others"], "answers": [], "passages": ["1 Corinthians 12:4-7", "Romans 12:4-8", "1 Peter 4:10", "Ephesians 4:11-12"], "devotions": ["the-church", "serving-others"] },
+  { "tool": "diagnostic", "topics": ["lukewarm-faith", "spiritual-dryness", "backsliding", "returning-to-god", "feeling-far-from-god"], "answers": [], "passages": ["Revelation 2:4-5", "Revelation 3:15-16", "2 Corinthians 13:5"], "devotions": [] },
+  { "tool": "whole-life", "topics": ["feeling-stuck", "life-transitions", "starting-over", "time-and-priorities"], "answers": [], "passages": ["Psalm 90:12"], "devotions": [] },
+  { "tool": "which-lens", "topics": ["politics-and-division", "outrage-culture", "knowing-the-bible"], "answers": ["should-a-christian-follow-a-political-party"], "passages": ["Acts 17:11"], "devotions": [] },
+  { "tool": "consistency", "topics": ["politics-and-division", "hypocrisy", "self-righteousness", "outrage-culture"], "answers": ["should-a-christian-follow-a-political-party"], "passages": ["Matthew 7:3-5", "Romans 2:1", "2 Samuel 12:7"], "devotions": [] },
+  { "tool": "test-the-case", "topics": ["doubt", "the-resurrection", "why-follow-jesus"], "answers": [], "passages": ["1 Corinthians 15:3-8", "1 Peter 3:15"], "devotions": [] },
+  { "tool": "compare-views", "topics": ["division-in-the-church", "the-end-times", "gods-sovereignty"], "answers": [], "passages": ["Romans 14:1-5"], "devotions": [] },
+  { "tool": "which-view", "topics": ["the-end-times", "gods-sovereignty"], "answers": [], "passages": [], "devotions": [] },
+  { "tool": "party-scorecard", "topics": ["politics-and-division"], "answers": ["should-a-christian-follow-a-political-party"], "passages": [], "devotions": [] },
+  { "tool": "biblical-government", "topics": ["justice-and-the-poor"], "answers": [], "passages": ["Leviticus 25:10", "Deuteronomy 15:7-11", "1 Samuel 8:10-18"], "devotions": [] },
+  { "tool": "theology-quiz", "topics": ["being-discipled"], "answers": [], "passages": [], "devotions": [] },
+  { "tool": "scripture-memory", "topics": ["knowing-the-bible", "temptation", "spiritual-growth", "being-discipled"], "answers": [], "passages": ["Psalm 119:11", "Deuteronomy 6:6-7", "Colossians 3:16", "Joshua 1:8"], "devotions": ["the-bible"] },
+  { "tool": "proverbs-31", "topics": ["the-fear-of-the-lord", "decisions-and-guidance", "gossip-and-the-tongue"], "answers": [], "passages": ["Proverbs 1:1-7"], "devotions": ["wisdom"] },
+  { "tool": "bible-says", "topics": ["knowing-the-bible"], "answers": [], "passages": [], "devotions": [] },
+  { "tool": "wisdom-finder", "topics": [], "answers": ["what-does-the-bible-say-about-money", "what-does-the-bible-say-about-anxiety"], "passages": ["James 1:5", "Proverbs 2:1-6"], "devotions": [] },
+  { "tool": "family-devotions", "topics": ["parenting-young-children", "parenting-struggles"], "answers": [], "passages": ["Psalm 78:4"], "devotions": [] },
+  { "tool": "parent-teen", "topics": ["raising-teenagers"], "answers": ["when-your-teenager-says-they-dont-believe"], "passages": ["Ephesians 6:4", "Colossians 3:21"], "devotions": [] },
+  { "tool": "parenting-guide", "topics": ["parenting-young-children", "raising-teenagers", "new-parenthood", "parenting-struggles"], "answers": [], "passages": ["Proverbs 22:6"], "devotions": ["obedience"] }
+ ]
+}
