@@ -6,7 +6,9 @@
  *
  * The page opens with the five choices as picture cards. Choosing one opens
  * its road under them: four to six steps in order, each one sentence and one
- * link, every link a page that exists and is public today. A road has its own
+ * link, every link a page that exists and is public today. A road that has
+ * become a track (numbered sessions, lib/tracks.ts) offers the track first,
+ * as its main action, and keeps its steps under it. A road has its own
  * address (/start#skeptical), so Home's chips and any link can open it. The
  * device remembers the road and the steps the reader ticked (lib/startRoads,
  * through lib/storage): no account, no score, no streak. Coming back, the page
@@ -31,6 +33,7 @@ import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { scrollBehavior } from "@/lib/motion";
 import road from "@/lib/startRoad.json";
 import { toolByHref } from "@/lib/toolsList";
+import { nextSession, readTracks, sessionHref, trackHref, trackToContinue, type TracksProgress } from "@/lib/tracks";
 import {
   ROADS,
   nextStep,
@@ -78,7 +81,7 @@ function RoadCard({ r, open, onPick }: { r: Road; open: boolean; onPick: (id: Ro
   );
 }
 
-function Steps({ r, progress, onTick }: { r: Road; progress: RoadProgress; onTick: (href: string) => void }) {
+function Steps({ r, progress, onTick, quiet = false }: { r: Road; progress: RoadProgress; onTick: (href: string) => void; quiet?: boolean }) {
   const done = progress.done[r.id] ?? [];
   const next = nextStep(r, progress);
   return (
@@ -95,7 +98,7 @@ function Steps({ r, progress, onTick }: { r: Road; progress: RoadProgress; onTic
             <div className="st-step__body">
               <h3 className="st-step__title">{s.title}</h3>
               <p className="st-step__line">{s.line}</p>
-              <Link href={s.href} className={isNext ? "btn st-step__go" : "st-step__link"}>
+              <Link href={s.href} className={isNext && !quiet ? "btn st-step__go" : "st-step__link"}>
                 {s.link}
                 <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
               </Link>
@@ -104,6 +107,33 @@ function Steps({ r, progress, onTick }: { r: Road; progress: RoadProgress; onTic
         );
       })}
     </ol>
+  );
+}
+
+/**
+ * A road that has become a track (lib/startRoad.json, "track") offers the
+ * track as its main action: numbered sessions in order, with the reader's
+ * place kept (lib/tracks.ts). The road's own steps stay under it.
+ */
+function TrackOffer({ r, tracks }: { r: Road; tracks: TracksProgress }) {
+  if (!r.track) return null;
+  const entry = tracks.tracks[r.track.slug];
+  const next = nextSession(entry, r.track.sessions);
+  return (
+    <div className="st-track">
+      <p className="st-track__line">
+        This road is now a track: {r.track.sessions} short sessions in order, about ten minutes each. Each one opens something on this site, then asks one thing of you, and your place is kept.
+      </p>
+      <div className="st-track__acts">
+        <Link href={next === null ? trackHref(r.track.slug) : sessionHref(r.track.slug, next)} className="btn">
+          {!entry ? "Start the track" : next === null ? "See the track again" : `Continue the track at session ${next}`}
+          <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+        </Link>
+        <Link href={trackHref(r.track.slug)} className="btn btn--quiet">
+          See the {r.track.sessions} sessions
+        </Link>
+      </div>
+    </div>
   );
 }
 
@@ -134,6 +164,9 @@ export default function Start() {
   const [open, setOpen] = useState<Road | null>(() => hashRoad());
   const [progress, setProgress] = useState<RoadProgress>(() => readRoadProgress());
   const [kept, setKept] = useState(true);
+  // A track in progress on this device (lib/tracks.ts): read once, with the page.
+  const [tracks] = useState<TracksProgress>(() => readTracks());
+  const trackNext = trackToContinue(tracks);
   const panelRef = useRef<HTMLElement>(null);
   const wantScroll = useRef(false);
 
@@ -208,6 +241,14 @@ export default function Start() {
               </span>
             </p>
           )}
+          {trackNext && !open && (
+            <p className="st-resume" data-testid="start-track-continue">
+              <Milestone aria-hidden="true" size={20} strokeWidth={1.75} />
+              <span>
+                Continue your track: <Link href={trackNext.href}>{trackNext.title}, session {trackNext.n} of {trackNext.total}</Link>
+              </span>
+            </p>
+          )}
           <ul className="st-cards">
             {ROADS.map((r) => (
               <li key={r.id}>
@@ -228,8 +269,10 @@ export default function Start() {
             <h2 id="st-road-title" className="st-road__title">
               {open.title}
             </h2>
+            <TrackOffer r={open} tracks={tracks} />
+            {open.track && <h3 className="st-foot__title st-track__or">Or take the {open.steps.length} first steps on their own</h3>}
             <p className="st-road__how">Tick a step when it's done. This device remembers.</p>
-            <Steps r={open} progress={progress} onTick={tick} />
+            <Steps r={open} progress={progress} onTick={tick} quiet={!!open.track} />
             {!kept && <p className="st-road__how">{SAVE_FAILED}</p>}
             {open.id === "new" && <NewRoadFoot />}
           </div>

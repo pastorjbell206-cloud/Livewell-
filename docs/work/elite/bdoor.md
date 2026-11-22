@@ -8069,3 +8069,295 @@ The final gates on the merged tree and the served-build check are in the report 
 ### Next
 
 Numbers: the book page, then the chapters. It was not begun in this sitting.
+
+## Numbers: the book page and every chapter (2026-11-21)
+
+Numbers is whole: a teaching introduction on the book page and all 36 chapters in plain words. The shape
+is the one Genesis, Exodus and Leviticus use: each passage's third part is `later`; each chapter note
+gained only `"plain": true` at its end; one commit for the book page and one per chapter, each with its
+ledger rows and only that chapter's files.
+
+### The book page (`/study/bible/numbers`, same address)
+
+Data only, in `client/public/bible/notes/numbers/intro.json`, field `teaching`, added at the end of the
+file. Thirteen parts (4,705 words): Numbers in a minute; Where it sits in the story; Why it is called
+Numbers, and ‘In the wilderness’; Who wrote it, and when; How Numbers is built; God in the middle of the
+camp; The complaints, and the refusal at Kadesh; Rebellion, priests, and Moses at the rock; The road to
+Moab: the snake, the wars, Balaam and Peor; The new generation; The wars and judgments in the book; How
+the New Testament reads Numbers; How to read Numbers. Then 17 hard passages, 14 key words, a timeline of
+17 entries, one map, and ten Go deeper pages (three Study Bible guides, four doctrine studies, the context
+guide on the violence of the Old Testament, the question page on the command to destroy the Canaanites,
+and the Honest Answer on that question; all live).
+
+The census totals and the readings of elef are worded as the Exodus 12 note and the Exodus book page set
+them out, with no side taken. The map uses the `canaan` frame and draws four places, each with a point
+already used on the site: Hebron, Jericho, the Jordan, and Gilead as a region. The map note says that
+Mount Sinai, Kadesh, Mount Hor and most of the camps of chapter 33 are left off because where they lay
+is debated or unknown, that no route is drawn, and that Kadesh is often placed at Ain el-Qudeirat, south
+of the map. `teaching.test.tsx` now lists Numbers among the books with a teaching guide, and its frame
+test names Numbers's frame (`canaan`). No other code changed.
+
+### Chapters 1 to 36 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| Numbers 1 | 3 | 1,690 | Numbers 19 | 2 | 1,438 |
+| Numbers 2 | 2 | 1,145 | Numbers 20 | 3 | 2,009 |
+| Numbers 3 | 3 | 1,728 | Numbers 21 | 4 | 2,825 |
+| Numbers 4 | 3 | 1,612 | Numbers 22 | 3 | 2,120 |
+| Numbers 5 | 3 | 2,132 | Numbers 23 | 3 | 1,904 |
+| Numbers 6 | 3 | 1,844 | Numbers 24 | 3 | 2,298 |
+| Numbers 7 | 3 | 1,508 | Numbers 25 | 3 | 2,096 |
+| Numbers 8 | 3 | 1,223 | Numbers 26 | 3 | 1,763 |
+| Numbers 9 | 2 | 1,466 | Numbers 27 | 3 | 2,188 |
+| Numbers 10 | 3 | 1,529 | Numbers 28 | 3 | 1,487 |
+| Numbers 11 | 4 | 2,451 | Numbers 29 | 3 | 1,488 |
+| Numbers 12 | 2 | 1,742 | Numbers 30 | 2 | 1,476 |
+| Numbers 13 | 3 | 1,742 | Numbers 31 | 5 | 3,268 |
+| Numbers 14 | 4 | 3,020 | Numbers 32 | 3 | 1,640 |
+| Numbers 15 | 4 | 2,620 | Numbers 33 | 2 | 1,873 |
+| Numbers 16 | 4 | 2,745 | Numbers 34 | 2 | 1,158 |
+| Numbers 17 | 2 | 1,183 | Numbers 35 | 4 | 2,549 |
+| Numbers 18 | 3 | 1,784 | Numbers 36 | 2 | 1,450 |
+| | | | **Total** | **107** | **68,194** |
+
+### The hard places, and how they are stated
+
+The census (1, 2, 26): the readings of the totals with no side. The camp laws (5:1-4): uncleanness is
+not sin or shame, with the care paragraph from the Leviticus notes. The test for a suspected wife
+(5:11-31): the unfairness admitted; the reading of the rite as a husband's control and the reading of it
+as a restraint, no side; said plainly to be no warrant for testing, watching or controlling any woman;
+the site's abuse care lines whole. The Nazirite vow and the priests' blessing (6), the blessing given the
+longest passage of its chapter. Moses' prayer to die (11): not rebuked, answered with people. The quail
+and plague (11): contempt, not hunger; never turned on anyone who suffers today. Miriam (12): God does
+not criticize the marriage; the misuse of the Bible to rank people by skin color and to forbid marriages
+between peoples is named and rejected; ‘white as snow’ is diseased skin, said to have nothing to do with
+race; not a rule about illness. The scouts and the forty years (13 to 14): whether Moses changed God's
+mind, no side; what the pardon did and did not mean; the text speaks of the land and not of each person's
+final state; never a charge against the Jewish people, and every New Testament use is addressed to the
+church. The Sabbath-breaker (15:32-36): faced as hard; Israel's penalties not carried into the church;
+the Christian views of the Sabbath with no side. Korah (16): the claim's truth granted; the misuse of the
+chapter against critics named and rejected; the households, with Deuteronomy 24:16 and the sons of Korah.
+Moses at the rock (20): the proposals for the fault; not cast off. The bronze snake (21): the bronze had
+no power; the line to Christ as Jesus himself draws it in John 3:14-15. Arad, Sihon and Og (21) and
+33:50-56: the readings of the conquest as the site's live pages set them out, no side, no modern nation,
+people, border or conflict in view. Balaam (22 to 24): the donkey; the star of 24:17 as David first, as
+Jewish readers before Jesus and since have read it, and as Christians read it, each in its own terms.
+Phinehas (25): a single event in Israel's camp; its later misuse named; zeal no warrant for violence
+today. The daughters of Zelophehad (27, 36): given the longest passage of chapter 27; the limits of the
+ruling admitted. Vows of women (30): a law of its world with four limits on the man; not a rule for any
+husband's or father's control today. Midian (31): called one of the hardest chapters in the Bible; what
+Moses orders stated as it stands; the stated reason said not to cover the boys; the text said to offer
+no easy way out; the readings Christians hold, each with its cost; no warrant for violence against any
+person or people; the girls counted as plunder named for what it was. The cities of refuge (35): the
+death penalty with the Genesis 9 wording, no side; no revenge permitted to anyone today.
+
+### Care lines
+
+Reused whole, word for word: the paragraph for anyone made to feel unclean, from the Leviticus notes (5);
+the abusive-marriage lines from the 1 Corinthians 7 and Hebrews 13 notes (5, 30); the lines for a life
+more than one can carry, from the 1 Corinthians 10 note (11); the Acts 5 paragraph against reading a
+death as God's punishment (11, 16); the 2 Corinthians 12 paragraph on sickness and faith (12); the
+Hebrews 3 line on fear of having fallen away (14); the Ephesians 5 line on a conscience that never rests
+(15, 24); the 1 Timothy 3 paragraph that nothing shields a leader who does harm (16); the money
+paragraph from the Leviticus 27 and 1 Timothy 6 notes (18); the grief sentences from the 1 Timothy 5 and
+Leviticus 26 notes (19); the Exodus 21 line for anyone being hurt (25, 36); the lines for anyone
+sexually assaulted, from the 1 Thessalonians 4 and Exodus 22 notes (31); the Acts 16 lines for anyone
+sold, traded or forced (31). No phone numbers; Find Help named each time. No new care sentence was
+written.
+
+### Cut or narrowed
+
+Each is in the ledger under its chapter. Among them: that the priests' blessing is still spoken in
+synagogues and churches, and that no Israelite dies for rebellion after the second count (book page);
+that the words for thigh and belly ‘have often been understood’ as barrenness (5); that the ‘you’ of the
+blessing is singular (6); Job and Jeremiah as others who asked to die (11); a reason why Eleazar handled
+the censers (16); a meaning for the name Bamoth-baal, and that a curse was thought to work better in
+sight of its target (22); that ‘How lovely are your tents’ became part of Jewish worship (24); a contrast
+between ‘hand’ and ‘hands’ in chapter 27; a note on the Hebrew verb for ‘break’ (30); a reason for the
+killing of the boys, and that the girls given to the priest became sanctuary servants (31). The BSB's
+word in 33:1-2 is not quoted, and Deuteronomy 24:9 is quoted only in part for the same reason. The BSB's
+‘blessed’ appears only inside quoted Scripture; no forbidden word is used.
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for the book page and for each chapter. No web searches.
+
+### What was run
+
+After each chapter: validate-bible-notes, the strict quotation check and the single-quote check (0
+problems each), the forbidden-word scan, no-emdash, validate-politics, and the search-index and
+passage-index checks, each exit 0. After chapters 5, 10, 15, 20, 25, 30 and 35: all 46 content-gate
+commands (46 of 46 each time), `pnpm check` (exit 0) and `pnpm test` (162 files, 1,940 tests passed each
+time). At the end, on the tree merged with the shared branch: the 46 content gates (46 of 46), the
+strict and single-quote checks over the whole book (0 and 0), `pnpm check` (exit 0), `pnpm test` (165
+files, 1,968 tests passed), `pnpm build`, sitemap, prerender and `pnpm audit:canonicals` (each exit 0,
+0 canonical failures), and the served build at 390 and 1440: the book page (13 of 13 parts, 17 hard
+passages, 14 words, 17 timeline entries, the map and its note, no label overlap, no sideways scroll, no
+console errors) and all 36 chapters at both widths (72 of 72; 214 passages and 938 fields matched to the
+data).
+
+One slip: the chapter gates for chapter 31 ran while the sixth `pnpm test` was still running, so two
+heavy commands overlapped once.
+
+### Next
+
+Deuteronomy: the book page, then the chapters. It was not begun in this sitting.
+
+## Deuteronomy: the book page and every chapter (2026-11-21)
+
+Deuteronomy is whole: a teaching introduction on the book page and all 34 chapters in plain words. With
+chapter 34 the plain notes cover all five books of Moses, Genesis to Deuteronomy. The shape is the one
+Genesis, Exodus, Leviticus and Numbers use: each passage's third part is `later`; each chapter note gained
+only `"plain": true` at its end; one commit for the book page and one per chapter, each with its ledger
+rows and only that chapter's files.
+
+### The book page (`/study/bible/deuteronomy`, same address)
+
+Data only, in `client/public/bible/notes/deuteronomy/intro.json`, field `teaching`, added at the end of
+the file. Fifteen parts (5,544 words): Deuteronomy in a minute; Where it sits in the story; Why it is
+called Deuteronomy, and ‘These are the words’; Who wrote it, and when; How Deuteronomy is built; Preached
+law: sermons more than statutes; A covenant, shaped like a treaty; The Shema: one God, loved with
+everything; Chosen in love, and told to remember; Laws for life in the land; The hard pages; Blessings,
+curses, and ‘choose life’; The song, the blessing, and the death of Moses; How the New Testament reads
+Deuteronomy; How to read Deuteronomy. Then 19 hard passages, 14 key words, a timeline of 15 entries, one
+map, and twelve Go deeper pages (two Study Bible guides, five doctrine studies, the three live question
+pages on who wrote the first five books, which Old Testament laws Christians keep and the command to
+destroy the Canaanites, the context guide on the violence of the Old Testament, and the Honest Answer on
+that question; all live).
+
+It is longer than the 3,500 to 5,000 words asked for. The parts on the Shema, on being chosen, on the hard
+pages and on the blessings and curses each had to say what the book says and what it may not be used for.
+
+The likeness to ancient treaties is given only as the Reading the Law guide and the existing notes give
+it: Mendenhall (1954) and the Hittite treaties, Kline (1963), Weinfeld (1972) and the treaty of
+Esarhaddon (672 BC), Moran (1963) on ‘love’, with the debate about the date left open. Authorship is set
+out in each view's own terms (Moses, with a later hand for the frame and the account of his death; the
+view that links the book with Josiah's reform in 2 Kings 22; the reply from the older treaties; the
+middle position), with no side. The map uses the `canaan` frame and draws four places, each with a point
+already used on the site: Jericho, the Jordan, Gilead as a region, and Shechem, which stands for Mount
+Gerizim and Mount Ebal on either side of it. The map note says that Mount Nebo, Horeb, Kadesh-barnea,
+Heshbon, Bashan and Beth-peor are left off, because where they lay is debated or is not placed in the
+site's records. `teaching.test.tsx` now lists Deuteronomy among the books with a teaching guide, and its
+frame test names Deuteronomy's frame (`canaan`). No other code changed.
+
+### Chapters 1 to 34 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| Deuteronomy 1 | 4 | 2,544 | Deuteronomy 18 | 3 | 2,359 |
+| Deuteronomy 2 | 3 | 2,026 | Deuteronomy 19 | 3 | 1,842 |
+| Deuteronomy 3 | 3 | 2,054 | Deuteronomy 20 | 3 | 1,922 |
+| Deuteronomy 4 | 4 | 2,598 | Deuteronomy 21 | 5 | 2,912 |
+| Deuteronomy 5 | 4 | 2,688 | Deuteronomy 22 | 4 | 2,718 |
+| Deuteronomy 6 | 4 | 3,480 | Deuteronomy 23 | 4 | 2,535 |
+| Deuteronomy 7 | 4 | 3,101 | Deuteronomy 24 | 4 | 2,434 |
+| Deuteronomy 8 | 3 | 1,937 | Deuteronomy 25 | 4 | 2,358 |
+| Deuteronomy 9 | 3 | 2,321 | Deuteronomy 26 | 3 | 1,914 |
+| Deuteronomy 10 | 2 | 1,812 | Deuteronomy 27 | 2 | 1,561 |
+| Deuteronomy 11 | 4 | 2,439 | Deuteronomy 28 | 3 | 2,535 |
+| Deuteronomy 12 | 3 | 2,058 | Deuteronomy 29 | 4 | 2,417 |
+| Deuteronomy 13 | 3 | 2,407 | Deuteronomy 30 | 3 | 2,021 |
+| Deuteronomy 14 | 3 | 2,083 | Deuteronomy 31 | 4 | 2,409 |
+| Deuteronomy 15 | 3 | 2,337 | Deuteronomy 32 | 5 | 3,346 |
+| Deuteronomy 16 | 3 | 1,907 | Deuteronomy 33 | 3 | 1,674 |
+| Deuteronomy 17 | 3 | 1,996 | Deuteronomy 34 | 3 | 2,008 |
+| | | | **Total** | **116** | **78,753** |
+
+### The hard places, and how they are stated
+
+Sihon and Og (2 to 3): the killing stated as the text states it, the readings Christians hold, no side,
+no nation or conflict today. The Shema (6:4-9): given the longest passage in the book; the two ways the
+Hebrew is read; its place in Jewish prayer as a living practice (recited evening and morning, tefillin,
+the mezuzah, Rabbi Akiva); Jesus' use of it; the Trinity set beside it with the Jewish objection in its
+own terms and the disagreement called real. ‘Do not test the LORD’ and Jesus' three answers (6 and 8) as
+the Gospels themselves draw the line. ‘Devote them to complete destruction’ (7; 20:16-18): handled as the
+site's live pages handle it, four readings each with its cost, no side, what holds on every reading, and
+the plain statement that no one may use it to justify violence against any person or people, with no
+nation, state, land or conflict of today in view; the later misuse named as the church's sin. Chosen not
+for size or goodness (7:6-8; 9:4-6): chosen for a purpose and held to account, no ground for contempt, no
+claim for any nation today. The promises of health and children (7:12-16; 11; 28:1-14): a nation's
+covenant, never a verdict on a person; prosperity teaching refused. The false prophet and the death
+penalty for leading others to other gods (13; 17:2-7; 18:20): set in Israel's covenant as treason against
+its king; not given to the church; ‘No church and no state may use this chapter against anyone’; the
+history of persecution named as a grave misreading. The poor (15): verse 11 as the reason for the open
+hand, with Jesus' words in Mark 14:7, never an excuse for neglect. Servitude (15; 23:15-16): faced with
+the Exodus 21 wording, not defended. The prophet like Moses (18:15-19): the Jewish reading (the line of
+prophets; Rashi, Ibn Ezra, Maimonides; the objection that Christians turned an office into a prediction)
+and the Christian reading (34:10; the hope before Christianity; Acts 3 and 7), each in its own terms. The
+laws of war (20): what they restrained and what they still allowed, not defended. The captive woman
+(21:10-14): what the law limited, that her consent is not asked, ‘That is in the text’; no pattern for
+today. The rebellious son (21:18-21): a limit on fathers in its world; no right to harm a child. ‘Hung on
+a tree’ (21:22-23) with Galatians 3:13 as the New Testament's own reading. Clothing (22:5): set among the
+laws of distinct kinds; the verse gives no reason and the repository's notes give none, so none is given;
+no application argued. The slandered bride and the laws on rape and seduction (22:13-29): said plainly;
+the woman in the field held innocent and the case set beside murder; 22:28-29 said to trouble every
+careful reader, with what readers have said and the difficulty left standing; ‘Nothing here asks any
+victim to marry, stay with or return to a person who has harmed them’. The assembly (23) beside Ruth and
+Isaiah 56. Divorce (24:1-4) as the existing Matthew 19 note reads it, no side. Amalek (25:17-19): no
+people living today is Amalek. The blessings and curses (27 to 28): addressed to a nation; never God's
+verdict on a person's illness, poverty or loss; never a prediction or explanation of the Jewish people's
+later sufferings, that reading named and rejected, with the pointer to the Acts 2:22-28 note. ‘Choose
+life’ and the word that is near (30) with Romans 10 as the existing note reads it. The Song of Moses (32):
+its violent pictures as poetry in which judgment falls on Israel itself and vengeance is taken out of
+human hands. Moses forbidden the land and his death (32:48-52; 34): the readings, none chosen, the grief
+left standing.
+
+### Care lines
+
+Reused whole, word for word: the Exodus 20 paragraphs on honor and harm, and the line ‘If you are being
+hurt, at home, at work or in a church...’ (5, 13, 21, 22, 27); the Leviticus 26 sentences against reading
+suffering as a verdict, and its grief line (7, 28, 34); the paragraph for grief too heavy to carry, with
+its line for thoughts of self-harm (14); the line for anyone held, owned or forced to work, from the
+Exodus 21 and Leviticus 25 notes (15, 23); the lines for anyone sexually assaulted, from the
+1 Thessalonians 4, Exodus 22 and Numbers 31 notes (21, 22); the two sentences on disability from the
+Leviticus 21 note (23); the abusive-marriage paragraph in its existing form that ends at Find Help (24);
+the Hebrews 3 line on fear of having fallen away (29). No phone numbers; Find Help named each time. No new
+care sentence stands in the data. Three were drafted and removed before commit (in chapters 5, 22 and 27),
+and one stitched sentence was removed from chapter 14.
+
+### Cut or narrowed
+
+Each is in the ledger under its chapter. Among them: that Deuteronomy is among the books most quoted in
+the New Testament (book page); that the gods of the ancient world could be worn down with gifts (3); a
+remark on the Hebrew of 4:39; the Shema as ‘the first prayer of childhood and the last words of life’ (6);
+a sentence on Baal and ‘the gods of the soil’ (7); the Hebrew behind ‘showing no partiality’ (10); that a
+newcomer to a land would ask how its gods were served (12); that the prophets wept over Jerusalem under
+the law of chapter 13; that later Jewish practice counted separate tithes (14); that ‘Pentecost’ comes
+from the word for fifty (16); ‘the ninth of the Ten Commandments’ (19); that Israel had few horses and
+chariots (20); four inferences about the captive woman and the rebellious son (21); a reason for letting
+the mother bird go, an echo of the ox and donkey in 2 Corinthians 6:14, and any account of what 22:5 had
+in view in its own world (22); that treaties required runaway slaves to be returned, and how later ages
+used 23:15-16 (23); the reason for thirty-nine lashes, and that the name Amalek was later used to justify
+killing (25); the Roman destruction of Jerusalem in AD 70 and Josephus as fulfillments of chapter 28,
+left out so that the chapter is not read as a prediction of later Jewish suffering (28); that the will of
+the gods ‘was never certain’ (30); the meaning of four Hebrew words or phrases in chapters 31 to 34. The
+hard note on 7:1-5 was first written at about 4,700 characters and was shortened to fit the 3,000-character
+field; a quotation from Leviticus 18:28 went with the cut. The BSB's word in 1:2, 2:7 and 33:18 is not
+quoted. The BSB's ‘blessed’ appears only inside quoted Scripture; no forbidden word is used.
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for the book page and for each chapter. No web searches.
+
+### What was run
+
+After each chapter: validate-bible-notes, the strict quotation check and the single-quote check (0
+problems each), the forbidden-word scan, a first-person scan (0 each), no-emdash, validate-politics, and
+the search-index and passage-index checks, each exit 0. After chapters 5, 10, 15, 20, 25 and 30: all 46
+content-gate commands (46 of 46 each time), `pnpm check` (exit 0) and `pnpm test` (165 files and 1,968
+tests passed each time, with the 7 files and 73 tests the suite skips). The full test run after chapter 25 had one failure, a 5-second timeout under load in `WisdomTopic.test.tsx`, a file this work did not touch; that file passed alone (8 of 8) and the full suite was run again and passed before chapter 26 was gated. At the end, on the tree merged with the shared branch: the 48 content gates CI now lists (48 of 48), the strict and single-quote checks over the whole book (0 and 0), `pnpm check` (exit 0), `pnpm test` (173 files, 2,078 tests passed), `pnpm build`, sitemap, prerender and `pnpm audit:canonicals` (each exit 0, 0 canonical failures), and the served build at 390 and 1440: the book page (15 of 15 parts, 19 hard passages, 14 words, 15 timeline entries, the map and its note, no label overlap, no sideways scroll, no console errors) and all 34 chapters at both widths (68 of 68; 232 passages and 1,024 fields matched to the data).
+
+Two small rewordings were committed after their chapters: two sentences in chapter 21 that opened ‘Here is what the law’, and two first-person phrases in chapter 6 that the whole-book scan found after the final gates. The chapter 6 change was gated by the chapter gates only, and its data file was copied into the build that was served.
+
+Chapters were written ahead while gates for earlier chapters ran, and were then gated and committed in
+order, one heavy command at a time. The second full gate set, due after chapter 10, ran after chapter 12
+had been committed; the others ran at their chapter.
+
+### Next
+
+Joshua: the book page, then the chapters. It was not begun in this sitting.

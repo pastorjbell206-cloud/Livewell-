@@ -1775,6 +1775,12 @@ html{-webkit-tap-highlight-color:transparent}
 .st-step__go{gap:8px;margin-top:6px}
 .st-step__link{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-family:var(--U);font-size:16px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.22em}
 .st-step__link svg{color:var(--ink-muted)}
+/* A road that has become a track: the track first, as the road's main action (Start.tsx, TrackOffer). */
+.st-track{margin:var(--s-3) 0 0;padding:var(--s-3);background:var(--card);border:1px solid var(--border);border-left:3px solid var(--mustard);border-radius:var(--radius-sm)}
+.st-track__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);max-width:60ch;margin:0 0 var(--s-2)}
+.st-track__acts{display:flex;flex-wrap:wrap;gap:12px}
+.st-track__acts .btn{gap:8px}
+.st-track__or{margin-top:var(--s-5)}
 .st-foot{margin-top:var(--s-5)}
 .st-foot p,.st-next{font-family:var(--B);font-size:16px;line-height:1.6;color:var(--ink-muted);max-width:62ch}
 .st-foot a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em;padding:12px 0}

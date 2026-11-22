@@ -550,7 +550,7 @@
       "slug": "morality",
       "n": 9,
       "title": "Morality, sexuality and the church's record",
-      "line": "The Crusades, the Inquisition, slavery, abuse and its cover-up, women, abortion in the early church, Christian nationalism, and whether morality is only culture.",
+      "line": "The Crusades, the Inquisition, slavery, abuse and its cover-up, what the Bible says about homosexuality, women, abortion in the early church, Christian nationalism, and whether morality is only culture.",
       "planned": 14,
       "status": "live",
       "live": true,
@@ -594,9 +594,9 @@
         {
           "slug": "what-the-bible-says-about-homosexuality",
           "question": "What does the Bible say about homosexuality, and why do Christians disagree?",
-          "blurb": "The six passages read closely with their debated words, the historic teaching of the church and the newer reading, each in its holders' terms, where each side says the other goes wrong, and what all should confess; the page takes no side, and Find Help is named at its start and its end.",
-          "status": "pending",
-          "live": false
+          "blurb": "The six passages read closely with their debated words, the historic teaching of the church and the newer reading, each in its holders' terms, where each side says the other goes wrong, what all should confess, and where the author of this site lands; Find Help is named at its start and its end.",
+          "status": "live",
+          "live": true
         },
         {
           "slug": "the-first-christians-on-abortion-and-exposure",
@@ -1995,7 +1995,7 @@
       "area": "morality",
       "slug": "what-the-bible-says-about-homosexuality",
       "question": "What does the Bible say about homosexuality, and why do Christians disagree?",
-      "live": false
+      "live": true
     },
     {
       "claim": "An abortion before sense and life have begun harms no one, and the Bible itself never forbids it",

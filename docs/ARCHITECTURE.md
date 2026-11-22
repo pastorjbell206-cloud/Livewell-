@@ -346,7 +346,11 @@ Inter; cream/black with mustard as <8% punctuation. Contract in `CLAUDE.md`.
    auth) would help — ideally as part of resolving #1.
 3. **Stripe is config-driven, not necessarily on.** Checkout/membership go live
    only when `STRIPE_SECRET_KEY` and the `stripeMembershipPriceId` setting both
-   exist; otherwise the membership page falls back to a waitlist.
+   exist; otherwise the membership page falls back to a waitlist. Gifts
+   (`/support`, `giving.status` and `giving.createCheckout` in both runtimes,
+   one shared check in `shared/giving.ts`) need only `STRIPE_SECRET_KEY` and
+   the switch in `client/src/lib/giving.json`; the page is built and held
+   (`docs/work/elite/giving.md`).
 4. **Taxonomy migration is in flight.** `taxonomy.ts` runs a V2 six-pillar model
    with a legacy fallback map. Intentional, but worth finishing so the fallback
    can be retired.

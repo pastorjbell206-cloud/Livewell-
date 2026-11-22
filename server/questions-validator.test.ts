@@ -3,6 +3,9 @@
  * copies the committed library (client/public/questions) to a temporary
  * folder, seeds one fault, runs the validator on the copy (QUESTIONS_DIR), and
  * expects it to fail with that fault named. The clean copy passes.
+ *
+ * No committed piece is pending (since 2026-11-21), so the cases about a
+ * pending page first set PENDING_PIECE pending in the copy.
  */
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { spawnSync } from "node:child_process";
@@ -13,6 +16,9 @@ import path from "node:path";
 const ROOT = path.resolve(__dirname, "..");
 const DATA = path.join(ROOT, "client/public/questions");
 const PIECE = "text/passages-not-in-the-earliest-bibles.json";
+const PENDING_PIECE = "morality/is-christian-morality-a-product-of-its-culture.json";
+const PENDING_PATH = "/questions/morality/is-christian-morality-a-product-of-its-culture";
+const PENDING_RE = PENDING_PATH.replace(/\//g, "\\/");
 let tmp = "";
 
 type Json = Record<string, any>; // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -77,8 +83,9 @@ describe("validate-questions.mjs", () => {
       const areas = JSON.parse(fs.readFileSync(path.join(d, "areas.json"), "utf8"));
       areas.areas.find((a: Json) => a.slug === "text").status = "live";
       fs.writeFileSync(path.join(d, "areas.json"), JSON.stringify(areas));
-      e(PIECE, (j) => { j.status = "live"; j.onSite.push("The next page (/questions/morality/what-the-bible-says-about-homosexuality)."); });
-    }, /is live and links the pending page \/questions\/morality\/what-the-bible-says-about-homosexuality/],
+      e(PENDING_PIECE, (j) => { j.status = "pending"; });
+      e(PIECE, (j) => { j.status = "live"; j.onSite.push(`The next page (${PENDING_PATH}).`); });
+    }, new RegExp(`is live and links the pending page ${PENDING_RE}`)],
     ["a live area with no line for the room", (d) => {
       const areas = JSON.parse(fs.readFileSync(path.join(d, "areas.json"), "utf8"));
       delete areas.areas.find((a: Json) => a.slug === "text").line;
@@ -91,12 +98,14 @@ describe("validate-questions.mjs", () => {
       areas.areas = areas.areas.filter((a: Json) => a.slug !== "science");
       fs.writeFileSync(path.join(d, "areas.json"), JSON.stringify(areas));
     }, /lists 9 areas, not the plan's ten/],
-    ["a pending page linked from a page outside the library", () => {
-      fs.writeFileSync(path.join(tmp, "outside.tsx"), `export const x = <a href="/questions/morality/what-the-bible-says-about-homosexuality">Read</a>;\n`);
-    }, /outside\.tsx: links the pending page \/questions\/morality\/what-the-bible-says-about-homosexuality/, { QUESTIONS_SCAN: "" }],
-    ["a pending page in the sitemap", () => {
-      fs.writeFileSync(path.join(tmp, "outside.tsx"), `<url><loc>https://www.livewellbyjamesbell.co/questions/morality/what-the-bible-says-about-homosexuality</loc></url>\n`);
-    }, /outside\.tsx: links the pending page \/questions\/morality\/what-the-bible-says-about-homosexuality/, { QUESTIONS_SCAN: "" }],
+    ["a pending page linked from a page outside the library", (_d, e) => {
+      e(PENDING_PIECE, (j) => { j.status = "pending"; });
+      fs.writeFileSync(path.join(tmp, "outside.tsx"), `export const x = <a href="${PENDING_PATH}">Read</a>;\n`);
+    }, new RegExp(`outside\\.tsx: links the pending page ${PENDING_RE}`), { QUESTIONS_SCAN: "" }],
+    ["a pending page in the sitemap", (_d, e) => {
+      e(PENDING_PIECE, (j) => { j.status = "pending"; });
+      fs.writeFileSync(path.join(tmp, "outside.tsx"), `<url><loc>https://www.livewellbyjamesbell.co${PENDING_PATH}</loc></url>\n`);
+    }, new RegExp(`outside\\.tsx: links the pending page ${PENDING_RE}`), { QUESTIONS_SCAN: "" }],
   ];
 
   for (const [name, change, want, env] of faults) {
