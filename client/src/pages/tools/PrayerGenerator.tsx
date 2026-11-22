@@ -289,14 +289,14 @@ export default function PrayerGenerator() {
               <button
                 onClick={handleDailyCopy}
                 aria-live="polite"
-                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+                style={{ display: "flex", alignItems: "center", gap: "4px", minHeight: "44px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {dailyCopied ? <><Check size={12} /> Copied</> : <><Copy size={12} /> Copy</>}
               </button>
               <button
                 onClick={handleDailyShare}
                 aria-live="polite"
-                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
+                style={{ display: "flex", alignItems: "center", gap: "4px", minHeight: "44px", padding: "6px 14px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "4px", fontSize: "12px", fontFamily: "var(--U)", fontWeight: 600, color: "var(--ink3)", cursor: "pointer" }}
               >
                 {dailyShared ? <><Check size={12} /> Copied</> : <><Share2 size={12} /> Share</>}
               </button>
@@ -380,13 +380,13 @@ export default function PrayerGenerator() {
               )}
 
               <div style={{ display: "flex", gap: "12px", marginTop: "28px", flexWrap: "wrap" }}>
-                <button onClick={handleCopy} aria-live="polite" style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
+                <button onClick={handleCopy} aria-live="polite" style={{ display: "flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
                   {copied ? <><Check size={14} /> Copied</> : <><Copy size={14} /> Copy Prayer</>}
                 </button>
                 <button
                   onClick={handleShare}
                   aria-live="polite"
-                  style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
+                  style={{ display: "flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 20px", background: "var(--cream)", border: "1px solid var(--border)", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}
                 >
                   {shared ? <><Check size={14} /> Copied</> : <><Share2 size={14} /> Share Prayer</>}
                 </button>
@@ -395,7 +395,7 @@ export default function PrayerGenerator() {
                   aria-pressed={!!(currentPrayerId && isFavorite(currentPrayerId))}
                   style={{
                     display: "flex", alignItems: "center", gap: "6px",
-                    padding: "10px 20px",
+                    minHeight: "44px", padding: "10px 20px",
                     background: currentPrayerId && isFavorite(currentPrayerId) ? "var(--gold)" : "var(--cream)",
                     border: `1px solid ${currentPrayerId && isFavorite(currentPrayerId) ? "var(--gold)" : "var(--border)"}`,
                     borderRadius: "6px", fontSize: "13px", fontWeight: 600,
@@ -410,12 +410,12 @@ export default function PrayerGenerator() {
                 {!prayAlongActive && (
                   <button
                     onClick={startPrayAlong}
-                    style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--charcoal)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ivory)", cursor: "pointer" }}
+                    style={{ display: "flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 20px", background: "var(--charcoal)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ivory)", cursor: "pointer" }}
                   >
                     <Play size={14} /> Pray Along
                   </button>
                 )}
-                <button onClick={handleAnother} style={{ display: "flex", alignItems: "center", gap: "6px", padding: "10px 20px", background: "var(--gold)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
+                <button onClick={handleAnother} style={{ display: "flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 20px", background: "var(--gold)", border: "none", borderRadius: "6px", fontSize: "13px", fontWeight: 600, fontFamily: "var(--U)", color: "var(--ink)", cursor: "pointer" }}>
                   <RefreshCw size={14} /> Another Prayer
                 </button>
               </div>

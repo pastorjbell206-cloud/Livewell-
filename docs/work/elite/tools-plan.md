@@ -765,6 +765,37 @@ stewardship and gambling, and batches 7 to 14 (104 topics). Job in the explorer.
 
 ---
 
+## 22. Run of 2026-11-22: films in the devotions, the catechism at a table, the tools used
+
+James (2026-11-22): he likes the short Bible Explorer films and wants them in the family devotions; the tools expanded and improved; the family catechism improved. Retires, renames and re-lists nothing; `siteCatalog.ts` and the menus are untouched; no dependency, schema, auth or API change. The audit behind the tools work is `docs/work/elite/tools-audit-2.md`.
+
+### Films in the family devotions
+
+- **"Watch first (about 2 minutes)"** on a devotion's page, on its first screen in table mode, and as a line on tonight's card (`/family`, which opens the devotion with the film already open: `?watch=1`). The film plays in place in the Explorer's own player at the younger level (`pages/family/WatchFirst.tsx`; the player is used as it is, not edited); "Back to the devotion" closes it and returns focus to the button. The film's own care line is shown whole, with Find Help a link. Nothing of the film is fetched until the button is pressed.
+- **The match is data.** `scripts/build-family-films.mjs` writes `client/public/family/films.json` from the films' own verses and catechism links, the family index, the catechism, and the judgments in `client/public/family-film-picks.json` (rule in `scripts/lib/family-films.mjs`: a pick; the same name; for a question, the film that names it; else exactly one film that quotes a verse in the passage and shares a subject word; a whole-Bible film only by a pick; when unsure, none). `--check` is in the content gates. 29 of 112 devotions and 49 of 76 questions offer one of the 35 finished films; a film added upstream appears where the rule finds it when the map is rebuilt.
+- **Print.** The browser's printed card carries one 8pt line with the film's address. The pdfkit PDFs (`family-cards-*.pdf`, two cards to a page) were left alone: each card already carries a code to its devotion's page, where the film is offered, and a further line risks the two-up layout.
+
+### The family catechism
+
+- **Data, beside each answer and changing none:** `plainWords` (one sentence for a small child) and `talkAbout` (one thing for an older child) on all 76 questions; `validate-family.mjs` now requires both and holds them to one sentence of 30 words and 45 words. The four questions on baptism and the Supper add nothing that takes a side (`catechism-week.test.tsx` holds a word list).
+- **The week's question as a card** (`pages/family/CatechismWeek.tsx`): the question, both answers, plain words, the verse with its reference (BSB, as the data has it), "Talk about it", the prayer, the matching film, "For the grown-ups" behind a disclosure; three steps for the week ticked on the device (`livewell-progress-family-catechism-week-v1`, clean on the next question); "Print this card" prints the card alone; "Say this one aloud" takes the question to the practice card.
+- **Saying it aloud:** "We know this one" (the same ticks the list shows), "You know N of 76", "Pass over the ones we know" (kept), and the save-failed line when the browser will not keep a tick. The practice card now sits under the week's question.
+- **The list:** each question opens to plain words, the verse, "Talk about it" and its film.
+
+### The tools
+
+See `tools-audit-2.md` for the table. In brief: offers through `client/src/data/tool-offers.json` on wisdom topics, Honest Answers, Study Bible chapters (a "Tools" kind in the passage index) and family devotions; next pages by the reader's choice through `client/src/data/tool-next.json` in five tools; Memorize Scripture rebuilt on the BSB with hidden-word steps, spaced review, any verse, the catechism's verses and printed cards (`scripts/build-memory-verses.mjs`, `--check` in the gates); the conflict guide's forty verses made exact; the consistency check kept, read back with Scripture, printed, and given an error state; ten small controls raised to 44px. No new tool: the recommended one was built into the existing Memorize Scripture.
+
+### Gates
+
+Recorded at the end of the run, after the last merge (below, "Gates record, 2026-11-22").
+
+### Not done in this run
+
+A film line in the pdfkit PDFs. The quotes page's small controls, "Clear history", the Marriage check's dots, the passage tool's "Go". The Theology Quiz's dependence on the API for a fixed list. The folded tools' unverified Scripture. Next pages in Misused Verses, Proverbs in 31 Days, the two /nation tools and the Parent and Teen Conversation.
+
+---
+
 ## Decisions waiting on James
 
 Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.

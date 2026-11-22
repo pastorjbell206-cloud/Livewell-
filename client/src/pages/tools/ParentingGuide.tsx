@@ -405,6 +405,7 @@ export default function ParentingGuide() {
                 alignItems: "center",
                 gap: "6px",
                 padding: "8px 0",
+                minHeight: "44px",
                 background: "none",
                 border: "none",
                 fontSize: "14px",
