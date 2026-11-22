@@ -421,6 +421,13 @@
   stroke: var(--art-ink);
   stroke-width: 6;
 }
+/* The bronze snake on its pole (John 3:16 in its chapter): one clay line. */
+.fp-snake {
+  fill: none;
+  stroke: var(--art-clay);
+  stroke-width: 9;
+  stroke-linecap: round;
+}
 /* A picture crossed out (Who God is: the pictures that break): one ink stroke. */
 .fp-strike {
   fill: none;
