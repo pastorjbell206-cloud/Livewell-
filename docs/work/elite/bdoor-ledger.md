@@ -15258,3 +15258,18 @@ Cut in chapter 7: Beth-aven as ‘house of wickedness’; the Urim and Thummim a
 | The placement of the ceremony: twenty miles north of Ai; the Greek translation places it after 9:2; a Dead Sea Scrolls copy appears to place a similar account after the crossing; the three answers; no side | 30-35 `hard` | joshua/8.json `hard` | Repository; no side |
 
 Cut in chapter 8: Adam Zertal's structure on Mount Ebal (left to the deep note, since what it was is debated); the two figures for the ambush in verses 3 and 12 (the repository's notes do not discuss them); a guess that Rahab's family stood in the crowd; John 19:31. Deuteronomy 20:14 and the BSB's words in verses 25 and 34 are quoted only in part or not at all because of their dashes.
+
+## The plain notes on Joshua 9 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gibeon a few miles northwest of Jerusalem, head of a league of four towns in Israel's path; the disguise aimed at Deuteronomy 20:10-18; their words about God like Rahab's; ‘craftiness’ in a bad or a good sense; ‘We are your servants’ as the language of a weaker party; they did not ask the mouth of the LORD (Numbers 27:21); treaties sworn in a god's name | 1-15 | joshua/9.json `historical`, `cultural`, `words` (berit, shaba, ormah, shaal) | Repository |
+| Deuteronomy 20:10, 20:15; Numbers 27:21; Proverbs 3:5 | 1-15 | joshua/9.json `cultural`, `words`; BSB | Repository; BSB text |
+| The oath kept because sworn by the LORD; wood and water as the heaviest daily tasks, needed at the altar; spared, protected and bound to the house of God; Rahab and Gibeon beside the kings of verse 1 | 16-27 | joshua/9.json `cultural`, `christ`; joshua/11.json `hard` | Repository |
+| 2 Samuel 21:1; Psalm 15:4; Nehemiah 3:7 | 16-27 | joshua/9.json `historical`; BSB | Repository; BSB text |
+| Why the oath bound: the LORD's name (verse 20), confirmed by 2 Samuel 21:1-2; the two weighings of the leaders' mistake; the servitude as the commuting of a death sentence, accepted (verse 25), near the sanctuary, or as the hard world of its time reported without approval; no side; no warrant for forced labor today | 16-27 `hard` | joshua/9.json `hard` | Repository; an oath kept though won by a trick; no side |
+| The care lines (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 16-27 `hard` | 1-corinthians/plain/7.json (17-24, `hard`); exodus/plain/21.json | Reused whole, word for word |
+
+Cut in chapter 9: Pritchard's excavation at el-Jib and what it found (left to the deep note); Gibeon as a Levite town and Solomon's sacrifice there; ‘four hundred years’ between Joshua and Saul (the notes say only ‘generations later’); Ephesians 2 and Hebrews 6 (the note calls the link a pattern and not one the New Testament draws). The BSB's words in verses 1 and 10 are not quoted because of their dashes.
