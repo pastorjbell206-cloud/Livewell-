@@ -1795,5 +1795,30 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 5,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-jesus-the-only-way": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-science-disprove-god": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "did-jesus-really-rise-from-the-dead": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-drink-alcohol": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-money-the-root-of-all-evil": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
