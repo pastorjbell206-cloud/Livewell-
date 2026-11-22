@@ -19,30 +19,30 @@ import { clearPending, pendingFor, type PendingDownload } from "@/lib/downloadGi
 import { ADVICE_LINE } from "@/lib/giving";
 import "./support/support.css";
 
+/** What the address and this device say, read once as the page opens. */
+function arrival(): { pending: PendingDownload | null; cancelled: boolean } {
+  if (typeof window === "undefined") return { pending: null, cancelled: false };
+  const query = new URLSearchParams(window.location.search);
+  return { pending: pendingFor(query.get("item") ?? ""), cancelled: query.get("cancelled") === "1" };
+}
+
 export default function DownloadThanks() {
-  const [pending, setPending] = useState<PendingDownload | null>(null);
-  const [cancelled, setCancelled] = useState(false);
+  const [{ pending, cancelled }] = useState(arrival);
   const started = useRef(false);
 
   useEffect(() => {
-    const query = new URLSearchParams(window.location.search);
-    const wasCancelled = query.get("cancelled") === "1";
-    const found = pendingFor(query.get("item") ?? "");
-    setCancelled(wasCancelled);
-    setPending(found);
-    if (found && !wasCancelled && !started.current) {
-      // Start the download once; the link below stays for a browser that holds it back.
-      started.current = true;
-      clearPending();
-      const a = document.createElement("a");
-      a.href = found.href;
-      a.download = "";
-      a.dataset.giftSkip = "";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-    }
-  }, []);
+    if (!pending || cancelled || started.current) return;
+    // Start the download once; the link below stays for a browser that holds it back.
+    started.current = true;
+    clearPending();
+    const a = document.createElement("a");
+    a.href = pending.href;
+    a.download = "";
+    a.dataset.giftSkip = "";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }, [pending, cancelled]);
 
   return (
     <Layout>
