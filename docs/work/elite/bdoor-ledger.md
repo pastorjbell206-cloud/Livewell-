@@ -15380,3 +15380,19 @@ Cut in chapter 15: the Brook of Egypt and Wadi el-Arish; the Lachish letters; th
 | The care lines (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 5-10 `hard` | 1-corinthians/plain/7.json (17-24, `hard`) | Reused whole, word for word |
 
 Cut in chapter 16: the Gezer Calendar; Jeroboam's calf at Bethel; Romans 9 and the pattern of the younger son (the deep note's link by theme).
+
+## The plain notes on Joshua 17 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The daughters of Zelophehad and the ruling of Numbers 27, with the condition of Numbers 36; they appeal to God's command; all five named; the Samaria pottery inscriptions (eighth century BC) with the clan names and the districts Hoglah and Noah; the limits of the ruling | 1-6 | joshua/17.json `historical`, `cultural`; numbers/plain/27.json | Repository |
+| Numbers 27:7; Galatians 3:28-29 | 1-6 | joshua/17.json `christ`; BSB | Repository; BSB text |
+| Manasseh's share and the Jezreel Valley; the six strong cities, Megiddo and Taanach over the passes, Beth-shean a center of Egyptian rule; the third admission in a row (15:63; 16:10) | 7-13 | joshua/17.json `historical`, `literary` | Repository |
+| Judges 1:27; Judges 2:2 | 7-13 | questions/old-testament/jericho-and-the-conquest.json (`evidence`); BSB | Repository; BSB text |
+| Joshua an Ephraimite (Numbers 13:8; 19:50); the wooded hills and the work of clearing; iron chariots as chariots fitted with iron, strong on the plain and of little use in the hills; Joshua turns their words back on them | 14-18 | joshua/17.json `cultural`, `literary`, `words` (barzel, bara); BSB | Repository |
+| Judges 1:19; Joshua 19:50 | 14-18 | joshua/17.json `hard`; BSB | Repository; BSB text |
+| Why the tribes could not: a military report; Joshua's ‘you can’ and Judges 2:1-3; the book's frankness; not a rule about anyone's faith today | 14-18 `hard` | joshua/17.json `hard` | Repository; no side |
+
+Cut in chapter 17: Gideon and the clan of Abiezer; Saul's body at Beth-shean; the remark on the Hebrew verb for ‘clear’ (the note warns against building on it); Philippians 4:13.
