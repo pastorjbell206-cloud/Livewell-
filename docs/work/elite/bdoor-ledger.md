@@ -15139,3 +15139,20 @@ Cut from the book page: Caleb named among the outsiders (the notes give two read
 | Joshua 22:2; Hebrews 4:8; Matthew 11:28 | 10-18 | joshua/1.json `christ`; joshua/11.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 1: the Hittites as an empire in Anatolia (left to the deep note); that Jesus answered the tempter from Deuteronomy (the deep note's link, not one the New Testament draws to this chapter). The BSB's words in verse 4 are paraphrased because the verse has a dash.
+
+## The plain notes on Joshua 2 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jericho as an oasis town guarding the road into the hills, with its own king; the archaeology debated; the ordinary Hebrew word for a prostitute, kept by the New Testament; the innkeeper tradition; a house where strangers drew little notice; flat roofs, flax and the spring harvest; the irony of the search | 1-7 | joshua/2.json `historical`, `cultural`, `literary` | Repository |
+| Hebrews 11:31; James 2:25; the midwives (Exodus 1:17, 1:20) | 1-7 | joshua/2.json `christ`, `hard`; hebrews/plain/11.json (23-31, `hard`); BSB | Repository; BSB text |
+| Rahab's lie: reported without comment; what the New Testament praises; Augustine's view (always wrong, praised in spite of it, a new believer); the other view (deceiving those engaged in unjust killing, the midwives); the later question of hiding the hunted; no side | 1-7 `hard` | joshua/2.json `hard`; hebrews/plain/11.json (23-31, `hard`) | Repository; as readers have weighed it; no side |
+| The news on the trade roads; the whole city afraid; verse 11 and Deuteronomy 4:39; chesed as loyal love, most often God's love for Israel; oaths in a god's name | 8-14 | joshua/2.json `historical`, `cultural`, `literary`, `words` (hesed, masas) | Repository |
+| ‘The LORD’ in capitals for the personal name of God | 8-14 | bible/doctrines/names-of-god.json; exodus/intro.json `teaching` | Repository |
+| Exodus 15:14-15; Ruth 4:21; Matthew 1:5; Jesse the father of David | 8-14 | joshua/2.json `christ`; matthew/plain/1.json (1-6); BSB | Repository; BSB text |
+| Houses in the wall and double walls with rooms; the careful terms of the oath; the cord as a sign; the early Christian reading of its color named as later devotion, not the text's meaning; the word also meaning hope, not to be built on; the scouts report Rahab's words | 15-24 | joshua/2.json `cultural`, `literary`, `words` (tiqvah), `christ` | Repository |
+| Joshua 6:22, 6:25; Deuteronomy 7:2; Ephesians 2:13 | 15-24 | joshua/6.json `literary`; joshua/9.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 2: Tell es-Sultan and the age of the site (on the book page); the meaning of the name Rahab; the casemate wall named as a technical term; any reason the scouts chose her house beyond what the notes give.
