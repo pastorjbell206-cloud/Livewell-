@@ -73,6 +73,7 @@ jobs:
           node scripts/build-story-plan.mjs --check
           node scripts/build-explorer-index.mjs --check
           node scripts/validate-explorer.mjs
+          node scripts/build-family-films.mjs --check
           node scripts/build-tracks-index.mjs --check
           node scripts/validate-tracks.mjs
           node scripts/validate-bible-notes.mjs

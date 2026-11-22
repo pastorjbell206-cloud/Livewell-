@@ -984,6 +984,19 @@ img{display:block;max-width:100%}
 .tb-band input:focus-visible+span{outline:2px solid var(--ink);outline-offset:2px}
 .tb-bands__note{font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted);margin:8px 0 0}
 .tb-table .tb-bands__note{font-size:14px}
+/* Watch first: the Bible Explorer film a devotion or a catechism question offers (family/WatchFirst.tsx). */
+.tb-watch{margin:var(--s-2) 0 var(--s-3)}
+.tb-watch__open{display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.tb-watch__line{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink-muted);margin:8px 0 0}
+.tb-watch__panel{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:var(--s-3) 0;outline:none}
+.tb-watch__panel:focus-visible{outline:2px solid var(--mustard);outline-offset:4px}
+.tb-watch__care{display:flex;gap:10px;align-items:flex-start;font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink);margin:var(--s-3) 0 0;max-width:62ch}
+.tb-watch__care svg{flex-shrink:0;margin-top:3px;color:var(--mustard-text)}
+.tb-watch__help{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-underline-offset:.2em;display:inline-block;padding:12px 0;margin:-12px 0}
+.tb-watch__after{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:var(--s-3)}
+.tb-watch__print{display:none}
+.tb-table .tb-watch{margin-top:0}
+@media print{.tb-watch__print{display:block;font-family:var(--U);font-size:8pt;color:var(--ink-muted);margin:0 0 2pt}}
 .tb-nights{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:var(--s-2) 0 var(--s-1)}
 /* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them,
    drawn at the foot of the text (content-box), while the padding makes each night a 44px target

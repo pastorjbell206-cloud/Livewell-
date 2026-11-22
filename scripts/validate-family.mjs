@@ -84,6 +84,8 @@ const KINDS = {
   seasonal: { translation: "paraphrase", scriptureField: null },
   "reading-plans": { translation: null, scriptureField: null },
   "year-overrides": { translation: null, scriptureField: null },
+  // The judgments behind "Watch first" (scripts/lib/family-films.mjs checks each pick names a finished film).
+  "film-picks": { translation: null, scriptureField: null },
 };
 
 export function kindOf(name) {
@@ -92,6 +94,7 @@ export function kindOf(name) {
   if (name === "family-seasonal.json") return "seasonal";
   if (name === "family-reading-plans.json") return "reading-plans";
   if (name === "family-year-overrides.json") return "year-overrides";
+  if (name === "family-film-picks.json") return "film-picks";
   return null;
 }
 
