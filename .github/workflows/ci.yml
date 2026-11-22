@@ -78,6 +78,7 @@ jobs:
           node scripts/validate-bible-notes.mjs
           node scripts/verify-sources.mjs
           node scripts/sync-book-names.mjs --check
+          node scripts/build-covers.mjs --check
 
       - name: Test
         run: pnpm test

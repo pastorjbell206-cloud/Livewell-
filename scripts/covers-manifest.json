@@ -1,0 +1,27 @@
+{
+  "_about": "Written by scripts/build-covers.mjs: the fingerprint of each cover's drawing. `--check` compares these with what the data draws today.",
+  "covers": {
+    "when-god-bless-america": "531f00f3c7d30c9e6997fc14",
+    "the-monster-in-the-mirror": "b766a91ad1d9bd2b40c14e3f",
+    "believe": "f46c6fca205b5b962885dc77",
+    "deconstruction-of-faith": "fb1579ca904304bd8e2d4810",
+    "the-reliability-of-scripture": "65c2e9f49358510cddacf10f",
+    "bible-and-homosexuality": "d1153f571360d322be6949b9",
+    "bible-and-transgender-identity": "66efc417cd32efcf643947b6",
+    "critical-race-theory-biblical": "1760e6e03f07be1b31fd10a9",
+    "raising-believers": "619fe653432dc376d6ff6926",
+    "deacon-qualifications": "1c95e4e5e1a5cab75ea279b5",
+    "church-governance": "94509d1cad39ed2d4a5b9acc",
+    "change-without-casualties": "6359daf51f69e8d72713123c",
+    "kind-study-guide": "0f3b9c27953542655879e13f",
+    "kind-context-guide": "8c2974dafe1f1c1ee9294242",
+    "kind-care-page": "e7211477ada5c9e7a65f48b1",
+    "kind-care-plan": "c4b5a0c204ce0e23752378f2",
+    "kind-worksheet": "57a8f7250172e023d0e376c0",
+    "kind-workbook": "a278762e8decbd0c1b56adf3",
+    "kind-card-set": "2625d92e600d033374cad7c0",
+    "kind-reading-plan": "837b00889c92549427e65c11",
+    "kind-family": "2ea3806f3db2359f66637368",
+    "kind-reading-path": "8b43d1bd5a00f151c0b3baa5"
+  }
+}
