@@ -15424,3 +15424,17 @@ Cut in chapter 18: the excavations at Khirbet Seilun and their debated destructi
 | Joshua 24:30; Mark 10:43-45 | 40-51 | joshua/19.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 19: the Tel Dan inscription; Sharuhen and the pharaoh Ahmose; Cabul and Hiram of Tyre; a sentence calling the story of Judges 18 ‘a dark one’ ahead of the notes on Judges. The BSB's opening word of verse 47 (‘Later,’) is left out of the quotation so that it begins without the bracket.
+
+## The plain notes on Joshua 20 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A world with no police; the avenger of blood as the nearest male relative; the danger of feuds and of the innocent killed; murder told from accident and a hearing set before punishment; the city gate and the elders; ‘refuge’ as a place of being taken in; the verb of the commandment used of accidental killing; release at the high priest's death, the reason not given | 1-6 | joshua/20.json `cultural`, `literary`, `words` (miqlat, gaal, shegagah, ratsach); numbers/plain/35.json (16-29) | Repository |
+| No warrant for revenge today (‘The role of the avenger of blood belonged to a world without police or public courts. Nothing here permits any family or any person today to take revenge for a death.’) | 1-6 | numbers/plain/35.json (16-29, `hard`) | Repository; worded as the Numbers note words it |
+| Deuteronomy 19:5; Hebrews 6:18, 6:20; the New Testament does not call Christ a city of refuge | 1-6 | joshua/20.json `cultural`, `christ`; BSB | Repository; BSB text; no line drawn that the New Testament does not draw |
+| Three cities on each side of the river, north, middle and south, within reach of all; Shechem and Hebron old and honored; all six Levite towns; foreigners included (verse 9); no recorded case of their use; later Jewish discussion | 7-9 | joshua/20.json `historical`, `cultural`; joshua/21.json `historical` | Repository |
+| Deuteronomy 19:10; Leviticus 24:22 | 7-9 | BSB | BSB text |
+
+Cut in chapter 20: a reason for the tie to the high priest's death (the notes on Numbers 35 say the text gives none); the Mishnah by name and date; Ramoth-gilead and Ahab; the horns of the altar; the death penalty question (set out in the note on Numbers 35).
