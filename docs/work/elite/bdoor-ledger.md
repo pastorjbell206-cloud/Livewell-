@@ -15506,3 +15506,5 @@ Cut in chapter 23: a paragraph on believers already married to someone who does 
 | Genesis 50:25; Hebrews 11:22; Judges 2:10; Hebrews 4:8-9 | 29-33 | joshua/24.json `christ`; hebrews/plain/4.json; BSB | Repository; BSB text |
 
 Cut in chapter 24: George Mendenhall by name (on the Deuteronomy book page); the excavations at Tell Balata; that 110 years was an ideal life span in Egyptian texts; a new sentence addressed to a reader who fears being beyond forgiveness, replaced by the existing care lines from the Hebrews 3 note, reused whole.
+
+Changed on Joshua's book page after the first browser check (2026-11-22): the map labels for Jericho and Bethel were moved (Jericho above and to the right of its point, Bethel to the left of its point) so that the two names no longer overlap. No words changed.

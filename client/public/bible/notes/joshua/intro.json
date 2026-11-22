@@ -353,9 +353,9 @@
             ],
             "line": "The first city Israel came to after crossing the river. Rahab lived here, and here the wall fell (chapters 2 and 6).",
             "label": {
-              "dx": -8,
-              "dy": -6,
-              "anchor": "end"
+              "dx": 4,
+              "dy": -12,
+              "anchor": "start"
             }
           },
           {
@@ -383,7 +383,12 @@
               "7:2",
               "8:17"
             ],
-            "line": "Ai, where Israel was beaten and then won, lay ‘to the east of Bethel’ (7:2). Where Ai itself stood is debated."
+            "line": "Ai, where Israel was beaten and then won, lay ‘to the east of Bethel’ (7:2). Where Ai itself stood is debated.",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
           },
           {
             "id": "jerusalem",
