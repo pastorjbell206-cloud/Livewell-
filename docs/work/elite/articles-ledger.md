@@ -713,3 +713,43 @@ Agrees with the live /questions page `client/public/questions/evil/hell-and-the-
 | Scripture (ESV): Ezekiel 18:23, 18:25; Deuteronomy 25:2–3; Luke 12:47–48, 13:23, 13:24, 13:25, 16:26, 23:41; Matthew 10:28, 11:22, 12:32, 20:12, 20:15, 25:46; 1 Corinthians 15:28; 1 Timothy 2:1 (cited), 6:16; Romans 2:1, 2:7, 3:26, 5:18; 2 Thessalonians 1:9; Revelation 20:10, 20:12; Ecclesiastes 3:16–17; Psalm 130:3; 1 Peter 3:18; John 5:22 | ESV copy, by script | Words verified |
 
 Cut or held back: the two living writers the site's pages name on this subject; Anselm (no copy found); Edwards; Gregory the Great's *Dialogues*, which Aquinas cites (not opened); the Westminster and Athanasian sentences (in the earlier essay); the tower of Siloam (Luke 13:4–5), the older brother (Luke 15:29) and Philippians 2:11 (cut for length); a sentence that an eye for an eye was a limit (not opened); Matthew 11:21 and Luke 13:27 (each carries an exclamation); any figure for what Christians believe today.
+
+## 22. did-god-choose-who-would-be-saved
+
+The companion to `did-god-choose-me-or-did-i-choose-god`, which it links for the history. Agrees with the Honest Answer `does-god-choose-us-or-do-we-choose-him` (both cases laid out, none chosen) and with the Study Bible's notes on Romans 9 and 1 Timothy 2 (three readings of Romans 9; the question second-order). No position is stated as the author's, and no church body is named or implied as his. The three people in the opening are types. New sources opened:
+
+- **Summa I** (already cached, PG 17611): question 19, article 6 (reply to objection 1), and question 23, article 3.
+- **WD**: Augustine, *The Enchiridion*, chapters 97 and 103 (the NPNF text); John of Damascus, *An Exact Exposition of the Orthodox Faith*, Book 2, chapters 29 and 30; Chrysostom, *Homilies on Romans*, Homily 16, and *Homilies on 1 Timothy*, Homily 7 (read, not quoted).
+- **Formula of Concord**: Zyniker13/Denominations-and-Traditions, `confessions/lutheran/book-of-concord/formula-of-concord-epitome.md`, whose header gives its source as the *Concordia Triglotta* English translation (St. Louis, 1921); Epitome, article XI. The bracketed words in that translation are left out of the quotations by quoting around them.
+- **Remonstrance**: joshwkearney/reformedhistory, `src/ReformedHistory/Views/Content/Confessions/ArticlesOfRemonstrance.cshtml` (the five articles of 1610 in the usual English version; the file names no translator).
+- **Dositheus**: LukeSmithxyz/everything, `content/church/councils/dositheus.md` (the Confession of Dositheus, dated 1672 in the file's header; the file names no translator), Decree 3.
+- **Trent 6**: BenjaminPoole/ecumenical-christian-library, `councils/trent-1545/session-vi.part-1.html`, canons 4 and 17.
+- **Creeds.json** (as before): Westminster Confession 3.5 and 3.7; Canons of Dort, First Head, article 15.
+
+| Claim or quotation | Where read | Status |
+|---|---|---|
+| Pelagius and Augustine; Carthage 418, Ephesus 431 | Repo, history course `the-fathers-at-work` | Site's own |
+| Orange, 529: the first wish to believe is God's gift; a curse on teaching that God foreordains to evil | Creeds.json, `council_of_orange.json` (quoted in the first run's essay; paraphrased here) | Verified, paraphrase |
+| In Exodus the words to Moses come after the golden calf | ESV copy, Exodus 32 to 33:19 | Verified |
+| The difference in how Paul speaks of the two kinds of vessel | ESV copy, Romans 9:22–23; that readers "on every side" have noticed it is reference knowledge | Words verified; the remark reference knowledge |
+| Three readings of Romans 9 | Repo, the Study Bible note on Romans 9, named in the essay | Site's own |
+| Chrysostom, late fourth century: "a sign of foreknowledge,"; "does not mean that all is God's doing. Since if this were so, there were nothing to hinder all men from being saved." | WD, *Homilies on Romans*, Homily 16 (on 9:11 and 9:23). The date is reference knowledge | Verbatim |
+| The kings Paul asks prayer for were pagans | Repo, the Study Bible note on 1 Timothy 2 ("rulers who may persecute it") | Site's own |
+| Aquinas lists three readings of 1 Timothy 2:4 | Summa I, q.19 a.6, reply 1 | Verified |
+| Augustine, in a handbook late in life: "that no man is saved unless God wills his salvation: not that there is no man whose salvation He does not will, but that no man is saved apart from His will." He also offers "every sort of men" | WD, *Enchiridion* 103. "Late in his life" is reference knowledge | Verbatim |
+| Aquinas: "some men of every class and condition."; the judge who "antecedently" wills "all men to live; but consequently wills the murderer to be hanged." | Summa I, q.19 a.6, reply 1 (the second is one clause, quoted in two parts with "he wills" between) | Verbatim |
+| John of Damascus, eighth century: "God's original wish was that all should be saved and come to His Kingdom,"; the antecedent and the consequent will; "while God knows all things beforehand, yet He does not predetermine all things." | WD, *Exposition* 2.29 and 2.30 (a footnote number stands before and after each sentence) | Verbatim; century as the fourth run's ledger has it |
+| Many Reformed teachers say God desires what he has not decreed | Repo, the Study Bible note on 1 Timothy 2 ("Calvinists often distinguish God's revealed desire from his decree") | Site's own |
+| Westminster, 1646: "without any foresight of faith or good works,"; "his mere free grace and love."; "to pass by, and to ordain them to dishonor and wrath for their sin." | Creeds.json, WCF 3.5 and 3.7 | Verbatim |
+| Dort, 1619: "in the common misery into which they have wilfully plunged themselves,"; "by no means makes God the author of sin (the very thought of which is blasphemy)." | Creeds.json, Canons of Dort, First Head, article 15 | Verbatim |
+| The articles of 1610: "to save in Christ, for Christ's sake, and through Christ, those who, through the grace of the Holy Ghost, shall believe on this his son Jesus."; "can of and by himself neither think, will, nor do any thing that is truly good,"; "it is not irresistible." | Remonstrance, articles 1, 3 and 4 | Verbatim |
+| Wesley's heirs hold the Arminian answer in substance | Not opened this run | Reference knowledge |
+| The Lutheran confession of 1577: "extends only over the godly,"; "not to be investigated in the secret counsel of God, but to be sought in the Word of God."; it rejects "that God is unwilling that every one should be saved." and that there is "in us" a "cause of God's election."; election is to be learned from the gospel and not from reason | Formula of Concord, Epitome XI, theses 4, 5, 8 and 9, and the rejected errors 3 and 4 | Verbatim; the last is paraphrase |
+| Trent: "by the divine power, predestined unto evil."; "cannot refuse its consent, if it would." | Trent 6, canons 17 and 4 | Verbatim |
+| Aquinas: "God does reprobate some,"; "the will to permit a person to fall into sin, and to impose the punishment of damnation on account of that sin." | Summa I, q.23 a.3 | Verbatim |
+| Rome has allowed more than one school | The first run's ledger (the hearings ended in 1607), not opened | Reference knowledge |
+| Jerusalem, 1672, answering a Calvinist confession issued under a patriarch's name: "since He foreknew the one would make a right use of their free-will, and the other a wrong,"; grace given to all as a light; "equally wills the salvation of all, since there is no respect of persons with Him." | Dositheus, Decree 3 (the text names "Cyril's Confession"; that he was a patriarch is reference knowledge) | Verbatim |
+| The replies each tradition gives to its hard question | Not opened this run, beyond the confessions quoted | Reference knowledge, paraphrase. Check first |
+| Scripture (ESV): Romans 9:2–3, 9:11, 9:13, 9:15, 9:18, 9:19, 9:21, 9:22–23, 9:32, 10:21, 11:20, 11:23; 1 Timothy 2:1–2, 2:3–4, 2:5–6; Acts 18:10; 2 Timothy 2:10 | ESV copy, by script | Words verified |
+
+Cut or held back: Romans 9:14 and Matthew 23:37 (each carries an exclamation); Romans 9:1 and the whole of 9:11 and 9:23 (the ESV sets dashes in them); the sentence "nobody has added a fourth" reading (an overclaim); the line about each side's slander of the other (it stands in the earlier essay); Calvin, Luther, Arminius and Wesley in their own words (the earlier essay has Wesley and Whitefield; the others were not opened); the Catholic schools by name; any modern writer the site's study names.
