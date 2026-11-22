@@ -15470,3 +15470,19 @@ Cut in chapter 21: the doubled Gath-rimmon as a copyist's slip; Abiathar at Anat
 | Were the western tribes wrong: they assembled but did not march; zeal praised, or suspicion warned against (Judges 20); many hold both; a civil war avoided by asking first; no support for force over a disagreement about worship | 21-34 `hard` | joshua/22.json `hard` | Repository; no side |
 
 Cut in chapter 22: Geliloth and its possible link with Gilgal; the word for ‘replica’ and the plan of the tabernacle; Hebrews 10 (the deep note's link by theme). The BSB's words in verses 14 and 30 are not quoted because of their dashes. ‘Joshua blessed them’ (verse 6) is paraphrased so that the word stands only inside quoted Scripture.
+
+## The plain notes on Joshua 23 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A farewell speech like those of Moses, Samuel and David; the LORD named as the one who fought; the charge of chapter 1 handed on (1:7); peoples and their gods still in the land; the steps of verse 7 and what swearing by a god meant; ‘hold fast’ as the verb of Genesis 2:24 | 1-8 | joshua/23.json `historical`, `cultural`, `literary`, `words` (davaq) | Repository |
+| Joshua 1:7; Deuteronomy 10:20; Hebrews 10:23 | 1-8 | joshua/23.json `christ`; BSB | Repository; BSB text |
+| Verse 11 as the center, in the language of Deuteronomy; love as loyalty and more than duty; the one verb for clinging to the LORD and to the nations; the snare as a bird trap; the gift that could be lost | 9-13 | joshua/23.json `cultural`, `literary`, `words` (davaq, pach); deuteronomy/intro.json `teaching` (shema) | Repository |
+| Deuteronomy 7:3-4; Judges 2:3; Ruth 1:16 | 9-13 | joshua/23.json `cultural`, `words`; BSB | Repository; BSB text |
+| The warning against marriage: the reason is worship (Deuteronomy 7); marriage and household gods; Rahab and Ruth in the line of David and of Jesus; some find it tied to Israel's moment; most Christian readers find its lasting point in 1 Corinthians 7:39; the misuse to forbid marriages between peoples and to rank peoples named and rejected | 9-13 `hard` | joshua/23.json `cultural`, `hard`; numbers/plain/12.json; matthew/plain/1.json (1-6) | Repository; a matter of worship and not of birth |
+| ‘The way of all the earth’; not one word ‘fallen’; God's faithfulness cuts both ways; ‘this good land’ three times in verses 13 to 16; the covenant of Sinai and ‘transgress’ as crossing a boundary; not a rule for reading any person's troubles, and no ground for explaining the later sufferings of the Jewish people | 14-16 | joshua/23.json `literary`, `words` (naphal, berit); deuteronomy/intro.json `teaching` (blessings) | Repository; never a charge against the Jewish people |
+| 1 Kings 2:2; 2 Corinthians 1:20; Jeremiah 31:31 | 14-16 | joshua/23.json `literary`, `christ`; joshua/24.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 23: a paragraph on believers already married to someone who does not share their faith (1 Corinthians 7:12-14), cut because no existing care paragraph for an unsafe marriage could be set beside it whole in the room left; the likeness of the speech to ancient treaties (said once, in chapter 24).
