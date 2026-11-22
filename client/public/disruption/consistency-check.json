@@ -68,5 +68,22 @@
       "tell": "A conscience that files their failures in permanent ink and yours in pencil is not keeping an honest account. It is keeping a case for the prosecution."
     }
   ],
-  "closing": "You will not finish this clean. No one does. If you came through it certain you passed, go back, because the certainty is the symptom. The whole point of an examen is that it finds the false balance you have been carrying so long you stopped feeling its weight, the second standard you reach for without deciding to, the loyalty you mistook for conviction.\n\nSo here is the charge, and it is not comfortable. Tell the truth that costs you your own side. Defend the person you cannot stand when the accusation against them is false, and refuse to defend the person you love when the accusation against them is true. Do this and you will lose ground with your tribe, and you will gain something the tribe can never give, a justice that does not flinch and a witness no one can dismiss as merely partisan. The prophets paid for that ground. The cross is what it costs. Go and weigh honestly, beginning with yourself."
+  "closing": "You will not finish this clean. No one does. If you came through it certain you passed, go back, because the certainty is the symptom. The whole point of an examen is that it finds the false balance you have been carrying so long you stopped feeling its weight, the second standard you reach for without deciding to, the loyalty you mistook for conviction.\n\nSo here is the charge, and it is not comfortable. Tell the truth that costs you your own side. Defend the person you cannot stand when the accusation against them is false, and refuse to defend the person you love when the accusation against them is true. Do this and you will lose ground with your tribe, and you will gain something the tribe can never give, a justice that does not flinch and a witness no one can dismiss as merely partisan. The prophets paid for that ground. The cross is what it costs. Go and weigh honestly, beginning with yourself.",
+  "scripture": [
+    {
+      "ref": "Proverbs 11:1",
+      "text": "Dishonest scales are an abomination to the LORD, but an accurate weight is His delight.",
+      "line": "The law of Moses forbids a merchant to carry two weights in one bag, a heavy one and a light one (Deuteronomy 25:13). A standard that changes with who is standing on the scale is that second weight, and the proverb says plainly what God thinks of it."
+    },
+    {
+      "ref": "Leviticus 19:15",
+      "text": "You must not pervert justice; you must not show partiality to the poor or favoritism to the rich; you are to judge your neighbor fairly.",
+      "line": "The law does not let a judge lean toward the poor out of pity or toward the rich out of fear. Fairness is owed to the neighbor whoever the neighbor is: the one on your side, and the one you cannot stand."
+    },
+    {
+      "ref": "Psalm 139:23-24",
+      "text": "Search me, O God, and know my heart; test me and know my concerns. See if there is any offensive way in me; lead me in the way everlasting.",
+      "line": "An examen ends where David ends, asking God to do the searching. The marks you made are not a verdict on you. They are places to pray, and then one true thing to say aloud that costs your own side something."
+    }
+  ]
 }

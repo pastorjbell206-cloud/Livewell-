@@ -1479,6 +1479,7 @@ export default function BibleReference() {
                   color: "var(--ink-muted)",
                   marginBottom: "32px",
                   padding: 0,
+                  minHeight: "44px",
                 }}
               >
                 <ArrowLeft size={16} />

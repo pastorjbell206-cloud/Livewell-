@@ -297,10 +297,10 @@ export default function WhichLens() {
                 )}
               </div>
               <div style={{ display: "flex", gap: "1.8rem", flexWrap: "wrap" }}>
-                <button onClick={() => setReviewing(true)} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, textDecoration: "underline" }}>
+                <button onClick={() => setReviewing(true)} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, minHeight: "44px", textDecoration: "underline" }}>
                   Change my answers
                 </button>
-                <button onClick={restart} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, textDecoration: "underline" }}>
+                <button onClick={restart} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, minHeight: "44px", textDecoration: "underline" }}>
                   Start over
                 </button>
               </div>

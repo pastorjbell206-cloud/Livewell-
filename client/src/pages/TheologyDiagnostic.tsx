@@ -153,7 +153,7 @@ export default function TheologyDiagnostic() {
             <>
               <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline", gap: "10px", marginBottom: "var(--s-3)" }}>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, color: "var(--ink)" }}>{quiz.title}</h2>
-                <button type="button" onClick={() => setActiveSlug(null)} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", cursor: "pointer" }}>Pick another →</button>
+                <button type="button" onClick={() => setActiveSlug(null)} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", minHeight: "44px", cursor: "pointer" }}>Pick another →</button>
               </div>
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", fontStyle: "italic", maxWidth: "66ch", marginBottom: "var(--s-4)", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px" }}>{quiz.disclaimer}</p>
 
