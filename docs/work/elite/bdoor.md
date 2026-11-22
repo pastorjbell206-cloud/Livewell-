@@ -8361,3 +8361,134 @@ had been committed; the others ran at their chapter.
 ### Next
 
 Joshua: the book page, then the chapters. It was not begun in this sitting.
+
+## Joshua: the book page and every chapter (2026-11-22)
+
+Joshua is whole: a teaching introduction on the book page and all 24 chapters in plain words. The shape
+is the one the five books of Moses use: each passage's third part is `later`; each chapter note gained
+only `"plain": true` at its end; one commit for the book page and one per chapter, each with its ledger
+rows and only that chapter's files.
+
+### The book page (`/study/bible/joshua`, same address)
+
+Data only, in `client/public/bible/notes/joshua/intro.json`, field `teaching`, added at the end of the
+file. Thirteen parts (4,893 words, inside the 3,500 to 5,000 asked for): Joshua in a minute; Where it
+sits in the story; Joshua the man, and his name; Who wrote it, and when; How Joshua is built; Entering:
+Rahab, the river, and the man with the sword; The wars, and ‘devoted to destruction’; Archaeology, and
+how complete the conquest was; Rahab, Achan and Gibeon: who belongs; A land divided, and rest; The
+farewell, and the covenant at Shechem; How the New Testament reads Joshua; How to read Joshua. Then 16
+hard passages, 15 key words, a timeline of 15 entries, one map, and ten Go deeper pages (the guide
+Reading the Stories, four doctrine studies, the context guides on covenant and treaty and on the
+violence of the Old Testament, the two live question pages on Jericho and the conquest and on the
+command to destroy the Canaanites, and the Honest Answer on that question; all live).
+
+The conquest is stated as the site's live pages state it: the four readings (judgment after long
+patience; the stock idiom of ancient reports of war; God's right over life; accommodation read through
+Christ), each with its cost, no side, what holds on every reading, and the plain statement that no one
+may use these chapters to justify violence against any person or people, with no nation, state, land or
+conflict of today in view and no claim about who should hold any land. Date and authorship are given in
+each view's own terms (Joshua or someone close to the events; Martin Noth's single history from
+Deuteronomy to Kings; an entry about 1406 BC or in the thirteenth century; the Merneptah monument). The
+archaeology of Jericho, Ai and Hazor is given as the live question page and the existing notes give it
+(Garstang, Kenyon, Wood; et-Tell and the three responses; the burning of Hazor and who is proposed for
+it), with the book's own admissions (11:13; 13:1; 15:63; Judges 1; 24:13) and the sentence ‘So
+archaeology has not confirmed the conquest, and no one should say that it has.’ No side is taken.
+
+The map uses the `canaan` frame and draws seven places, each with a point already used on the site:
+Jericho, the Jordan, Bethel, Jerusalem, Hebron, Shechem, and Gilead as a region. The map note says that
+Gilgal, Ai, Gibeon, Shiloh, Hazor and the towns of the two campaigns are left off, that no tribal
+borders are drawn, and that the map makes no claim about any border today. `teaching.test.tsx` now lists
+Joshua among the books with a teaching guide, and its frame test names Joshua's frame (`canaan`). No
+other code changed.
+
+### Chapters 1 to 24 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| Joshua 1 | 2 | 1,511 | Joshua 13 | 3 | 1,690 |
+| Joshua 2 | 3 | 2,308 | Joshua 14 | 2 | 1,297 |
+| Joshua 3 | 3 | 1,997 | Joshua 15 | 3 | 1,682 |
+| Joshua 4 | 3 | 1,696 | Joshua 16 | 2 | 1,152 |
+| Joshua 5 | 3 | 2,106 | Joshua 17 | 3 | 1,779 |
+| Joshua 6 | 4 | 2,784 | Joshua 18 | 2 | 1,175 |
+| Joshua 7 | 3 | 2,411 | Joshua 19 | 3 | 1,480 |
+| Joshua 8 | 3 | 2,377 | Joshua 20 | 2 | 1,273 |
+| Joshua 9 | 2 | 1,618 | Joshua 21 | 3 | 1,822 |
+| Joshua 10 | 4 | 2,779 | Joshua 22 | 3 | 2,257 |
+| Joshua 11 | 3 | 2,030 | Joshua 23 | 3 | 2,186 |
+| Joshua 12 | 2 | 1,094 | Joshua 24 | 4 | 3,577 |
+| | | | **Total** | **68** | **46,081** |
+
+### The hard places, and how they are stated
+
+Rahab (2; 6:22-25): called what the text calls her; a Canaanite woman who makes Israel's own confession
+before Israel has done anything in her land; her lie weighed in the two ways readers have weighed it
+(Augustine; the Hebrew midwives), no side; taken in with her whole family; named in the line of Jesus as
+Matthew names her. The Jordan (3): the three ways the crossing is read, no side. The commander of the
+LORD's army (5:13-15): ‘Neither’ given the longest note of its chapter; the three views of who he is, no
+side; the meaning said to stand against every attempt to enlist God for a side. Jericho ‘devoted to
+destruction’ (6:17-21): the verse quoted and not lingered over; herem and Mesha's monument; the four
+readings each with its cost, no side; what holds on every reading; ‘No one may use this chapter to
+justify violence against any person or people’; no nation, state, land or conflict of today; the later
+misuse named as the church's sin; no contempt for the people of Jericho. Achan (7): told without
+pleasure; the four ways readers have understood the household's death, none chosen, with Ezekiel 18:20
+and the statement that the story gives no family, church or state a right to punish one person for
+another's act. Ai (8) and the towns of the south and north (10 to 11): the same question, pointed back
+to chapter 6 and never softened; the survivors and the unburned cities the book itself reports; the
+stock language of ancient war reports as many scholars read it, others more literally, no side. The
+altar on Ebal (8:30-35): the puzzle of its place, with the Greek translation and the Dead Sea Scrolls
+copy. Gibeon (9): an oath kept though won by a trick; the forced service not defended. The sun (10:12-14):
+a miracle in the sky, poetry read as poetry, a prolonged darkness, the omen texts; no side. The
+hardening (11:20): two readings, no side, and never to be said of anyone today. ‘Very much of the land
+remains’ (13:1) and ‘all the land’ (21:43-45): the ways readers relate them, no side, and no statement
+about any border, state or claim to land today. Forced labor at Gezer (16:10): a failure in the book's
+terms and a wrong in itself. The daughters of Zelophehad (17:3-6). The cities of refuge (20): a hearing
+set between a death and revenge; no revenge permitted to anyone today, in the words of the Numbers 35
+note. The altar by the Jordan (22): a civil war avoided by asking first; no party without fault. The
+warning against marriage with the nations (23): a matter of worship and not of birth; the misuse to
+forbid marriages between peoples named and rejected. ‘Choose for yourselves this day’ (24:14-15): set
+inside a covenant God had already made, and said to give no one a tool for pressure. ‘You are not able’
+(24:19): read with verse 20; never turned against the Jewish people.
+
+### Care lines
+
+Reused whole, word for word: the Acts 5 and Numbers 16 paragraph against reading a death as God's
+punishment (7); the lines for anyone held, owned or forced to work, from the 1 Corinthians 7 and Exodus
+21 notes (9, 16); the Hebrews 3 lines on fear of having fallen away (24). No phone numbers; Find Help
+named each time. No new care sentence stands in the data. Two were drafted and removed before commit: a
+sentence to a reader who fears being beyond forgiveness (24), replaced by the Hebrews 3 lines; and a
+paragraph on staying in a marriage with someone who does not share one's faith (23), cut because no
+existing paragraph for an unsafe marriage could be set beside it whole.
+
+### Cut or narrowed
+
+Each is in the ledger under its chapter. Among them: Caleb named among the outsiders, and Origen's
+reading among the main readings (book page); how ancient armies took walled towns, and that one of the
+seven days at Jericho must have been a Sabbath (6); the Urim and Thummim as the means of the lot, and a
+sentence saying Achan's confession came too late (7); Adam Zertal's structure on Mount Ebal, and a guess
+that Rahab's family stood in the crowd (8); ‘four hundred years’ between Joshua and Saul (9); that
+Gibeon lay east and Aijalon west of the battle (10); that Caleb buried his friends in the wilderness
+(14); a reason for the tie between the manslayer's release and the high priest's death (20). Verses with
+a dash in the BSB are quoted only in part or paraphrased (among them 1:4; 3:13; 5:4; 6:21; 8:25; 10:40;
+12:8). The BSB's ‘blessed’ and ‘blessing’ appear only inside quoted Scripture; no forbidden word is used.
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for the book page and for each chapter. No web searches.
+
+
+### What was run
+
+After the book page and after each chapter: validate-bible-notes, the strict quotation check and the single-quote check (0 problems each), the forbidden-word scan, the signposting scan and the first-person scan (0 each), no-emdash, the search-index and passage-index checks through `pnpm exec tsx`, and validate-politics, each exit 0. After chapters 5, 10, 15 and 20, at their chapter and before the next was gated: all 48 content-gate commands (48 of 48 each time), `pnpm check` (exit 0) and `pnpm test` (173 files and 2,078 tests passed, with the 7 files and 73 tests the suite skips). The full test run after chapter 10 first failed with three 5-second timeouts while the machine's load was above 12 (`WisdomTopic.test.tsx`, `fes.test.tsx`, `explorer.test.tsx`, none touched by this work); it was run again and passed before chapter 11 was gated.
+
+At the end, in this order: the whole-book first-person and signposting scans (0 and 0, nothing to fix); the merge of the shared branch (no conflict); then on the merged tree the 48 content gates (48 of 48), `pnpm check` (exit 0), `pnpm test`, `pnpm build`, sitemap, prerender and `pnpm audit:canonicals` (each exit 0, 0 canonical failures), and the served build at 390 and 1440. The full test run on the merged tree failed twice with one or two of the same 5-second timeouts under load from other work on the machine, and passed on the third run (173 files, 2,078 tests).
+
+The first browser check passed all 24 chapters at both widths and failed the book page on one point: the names Jericho and Bethel overlapped on the map. The two labels were moved (no words changed), the change was committed with a ledger note, and the whole end sequence was run again on that tree: the 48 content gates (48 of 48), `pnpm check` (exit 0), `pnpm test` (173 files, 2,078 tests passed), `pnpm build`, sitemap, prerender and `pnpm audit:canonicals` (each exit 0, 0 canonical failures), and the served build at 390 and 1440: the book page (13 of 13 parts, 16 hard passages, 15 words, 15 timeline entries, the map and its note, no label overlap, no sideways scroll, no console errors) and all 24 chapters at both widths (48 of 48; 136 passages and 582 fields matched to the data). The browser script answers the local server's missing `/_vercel` scripts and `/api/track` itself, so those do not count as errors.
+
+Chapters were written ahead while gates and tests for earlier chapters ran, and were then gated and committed in order, one heavy command at a time, each after its own load check.
+
+### Next
+
+Judges: the book page, then the chapters. It was not begun in this sitting.
