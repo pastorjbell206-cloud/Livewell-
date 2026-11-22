@@ -34,6 +34,7 @@ import {
   speechTimeoutMs,
   spokenText,
 } from "@/lib/film-voice";
+import { filmAudioUrl } from "@/lib/film-audio";
 import { FILM_SCENES } from "./films/scenes";
 import ExplorerMap from "./ExplorerMap";
 import ExplorerStop from "./ExplorerStop";
@@ -488,6 +489,225 @@ describe("Listen", () => {
           expect(spokenText(fr, l), `${f.slug} ${fr.id} ${l}`).not.toMatch(
             /\d:\d/
           );
+  });
+});
+
+/**
+ * Listen with the recorded files. jsdom cannot play sound, so window.Audio is
+ * replaced by a stand-in that records what was asked of it; each file's end
+ * (or failure) is fired by hand. No one has heard it here.
+ */
+class FakeAudio {
+  static all: FakeAudio[] = [];
+  src = "";
+  preload = "";
+  paused = true;
+  ended = false;
+  currentTime = 0;
+  dataset: Record<string, string> = {};
+  plays = 0;
+  onended: (() => void) | null = null;
+  onerror: (() => void) | null = null;
+  onplaying: (() => void) | null = null;
+  constructor() {
+    FakeAudio.all.push(this);
+  }
+  canPlayType() {
+    return "probably";
+  }
+  play() {
+    this.plays += 1;
+    this.paused = false;
+    return Promise.resolve();
+  }
+  pause() {
+    this.paused = true;
+  }
+}
+function installFiles() {
+  FakeAudio.all = [];
+  vi.stubGlobal("Audio", FakeAudio);
+  /** The one element the film plays through (the first made after the probe). */
+  const main = () => FakeAudio.all.filter(a => a.plays > 0)[0];
+  /** Every file asked for, in order. */
+  const asked = () => FakeAudio.all.map(a => a.src).filter(Boolean);
+  return { main, asked };
+}
+const fileOf = (k: number, level: "younger" | "older" = "younger") =>
+  filmAudioUrl(FILM.slug, level, k, FILM.frames[k].id);
+
+describe("Listen with the recorded files", () => {
+  it("is off by default, asks for no file until it is on, and never plays by itself", () => {
+    vi.useFakeTimers();
+    const { asked } = installFiles();
+    render(player());
+    expect(listenButton().getAttribute("aria-pressed")).toBe("false");
+    expect(
+      screen.getByText("Read aloud by a computer-made voice, not a person.")
+    ).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    for (let k = 0; k < FILM.frames.length; k++)
+      advance(frameMs(FILM.frames[k].younger));
+    expect(current()).toBe(FILM.frames.length);
+    expect(asked()).toEqual([]);
+    // Turning Listen on at the poster asks for nothing either: no frame is on.
+    cleanup();
+    render(player());
+    fireEvent.click(listenButton());
+    expect(asked()).toEqual([]);
+    expect(current()).toBe(0);
+  });
+
+  it("on, plays each frame's own file and moves on only when the file ends", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    const { synth } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    expect(current()).toBe(1);
+    expect(main().src).toBe(fileOf(0));
+    // The caption's own timer no longer moves it: it waits for the file.
+    advance(frameMs(FILM.frames[0].younger) + 1000);
+    expect(current()).toBe(1);
+    for (let k = 1; k < FILM.frames.length; k++) {
+      act(() => main().onended?.());
+      advance(700);
+      expect(current()).toBe(k + 1);
+      expect(main().src).toBe(fileOf(k));
+    }
+    act(() => main().onended?.());
+    advance(700);
+    expect(screen.getByRole("button", { name: "Play again" })).toBeTruthy();
+    // One element plays the whole film, and the device's voice stays silent.
+    expect(FakeAudio.all.filter(a => a.plays > 0).length).toBe(1);
+    expect(synth.speak).not.toHaveBeenCalled();
+    // Nothing is announced to a screen reader while the voice speaks.
+    expect(live()).toBe("");
+  });
+
+  it("plays the file for the reading level on screen", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player("older"));
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    expect(main().src).toBe(fileOf(0, "older"));
+  });
+
+  it("fetches the next frame's file ahead only once this one is playing", () => {
+    vi.useFakeTimers();
+    const { main, asked } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    expect(asked()).toEqual([fileOf(0)]);
+    act(() => main().onplaying?.());
+    expect(asked()).toEqual([fileOf(0), fileOf(1)]);
+  });
+
+  it("Pause holds the file and Play on goes on from where it stopped", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    const a = main();
+    a.currentTime = 4.2;
+    fireEvent.click(screen.getByRole("button", { name: "Pause" }));
+    expect(a.paused).toBe(true);
+    advance(60_000);
+    expect(current()).toBe(1);
+    const src = a.src;
+    a.src = `${src}#same`; // a new src would show as a change
+    fireEvent.click(screen.getByRole("button", { name: "Play on" }));
+    expect(a.paused).toBe(false);
+    expect(a.src).toBe(`${src}#same`);
+    expect(a.currentTime).toBe(4.2);
+  });
+
+  it("stepping by hand plays that frame's file from its start; a playing film plays on", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    // Paused, at the poster: Next says picture 1 and stays there.
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(main().src).toBe(fileOf(0));
+    act(() => main().onended?.());
+    advance(60_000);
+    expect(current()).toBe(1);
+    fireEvent.click(
+      screen.getByRole("button", { name: `Picture 4: ${FILM.frames[3].name}` })
+    );
+    expect(main().src).toBe(fileOf(3));
+    fireEvent.click(screen.getByRole("button", { name: /^Back/ }));
+    expect(main().src).toBe(fileOf(2));
+    // Playing: a step by hand keeps it playing from the new frame.
+    fireEvent.click(screen.getByRole("button", { name: "Play on" }));
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(current()).toBe(4);
+    expect(main().src).toBe(fileOf(3));
+    expect(screen.getByRole("button", { name: "Pause" })).toBeTruthy();
+    act(() => main().onended?.());
+    advance(700);
+    expect(current()).toBe(5);
+    expect(live()).toBe("");
+  });
+
+  it("works with reduced motion, stepping by hand", () => {
+    motion(true);
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: /^Start/ }));
+    expect(main().src).toBe(fileOf(0));
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(main().src).toBe(fileOf(1));
+  });
+
+  it("where a file is missing, the device's voice says that frame and the film goes on", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    const { synth, last } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    act(() => main().onerror?.());
+    expect(synth.speak).toHaveBeenCalledTimes(1);
+    expect(last().text).toBe(said(0));
+    act(() => last().onend?.());
+    advance(700);
+    // The next frame tries its own file again.
+    expect(current()).toBe(2);
+    expect(main().src).toBe(fileOf(1));
+    expect(synth.speak).toHaveBeenCalledTimes(1);
+  });
+
+  it("where a file is missing and the device has no voice, the caption's own time moves the film", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    act(() => main().onerror?.());
+    advance(frameMs(FILM.frames[0].younger) + 700);
+    expect(current()).toBe(2);
+  });
+
+  it("stops the file when Listen is turned off and when the player goes away", () => {
+    const { main } = installFiles();
+    const { unmount } = render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(main().paused).toBe(false);
+    fireEvent.click(listenButton());
+    expect(main().paused).toBe(true);
+    fireEvent.click(listenButton());
+    expect(main().paused).toBe(false);
+    unmount();
+    expect(main().paused).toBe(true);
   });
 });
 

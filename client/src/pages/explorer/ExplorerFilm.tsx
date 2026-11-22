@@ -244,6 +244,7 @@ function exportAsk(): {
   shape: ExportShape;
   level: Level;
   cut: boolean;
+  spoken: boolean;
 } | null {
   try {
     const q = new URLSearchParams(window.location.search);
@@ -254,6 +255,8 @@ function exportAsk(): {
       shape,
       level: q.get("level") === "older" ? "older" : "younger",
       cut: q.get("cut") === "share",
+      // A video with a voice: frames last as long as their words.
+      spoken: q.get("pace") === "spoken",
     };
   } catch {
     return null;

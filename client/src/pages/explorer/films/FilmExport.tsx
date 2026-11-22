@@ -21,7 +21,7 @@ import { PlateSvg } from "@/components/art/PlateSvg";
 import { SEOMeta } from "@/components/SEOMeta";
 import type { Film, Level } from "@/lib/explorer";
 import { Roundel } from "../art";
-import type { FilmDrawing } from "./motion";
+import { stageMotion, type FilmDrawing } from "./motion";
 import { FILM_SCENES } from "./scenes";
 import "./film.css";
 import "./film-export.css";
@@ -90,11 +90,14 @@ export default function FilmExport({
   shape,
   level,
   cut,
+  spoken = false,
 }: {
   film: Film;
   shape: ExportShape;
   level: Level;
   cut: boolean;
+  /** The video has a voice, so a frame's timed parts keep their spoken times. */
+  spoken?: boolean;
 }) {
   const shots = useMemo(
     () => exportShots(film, level, cut),
@@ -177,7 +180,11 @@ export default function FilmExport({
       </header>
 
       <div className="fx-stage lw-frame">
-        <div className="lw-frame__in fp-screen" data-frame={frame}>
+        <div
+          className="lw-frame__in fp-screen"
+          data-frame={frame}
+          {...stageMotion(drawing, shot ? frame : -1, spoken ? 1 : 0.28)}
+        >
           {drawing && (
             <PlateSvg
               drawing={{

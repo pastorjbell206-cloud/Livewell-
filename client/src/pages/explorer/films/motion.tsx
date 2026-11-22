@@ -13,6 +13,24 @@
  * - nothing here keeps a timer, so a paused film is simply still.
  *
  * Frame -1 is the poster, before Play.
+ *
+ * A picture that moves as the voice talks. A frame with Listen on lasts as
+ * long as its words, fifteen to thirty seconds, so its parts need not all
+ * arrive at once:
+ *
+ * - `at` (seconds) on Draw and Fade says when in the frame a part arrives: a
+ *   figure enters, a light comes up, a line draws itself. The times are
+ *   written for a spoken frame; the player sets `--mv-pace` to fit them into
+ *   a silent frame's few seconds. Going away is never delayed.
+ * - `slow` on Draw gives a line several seconds to draw.
+ * - Ambient is a small motion that runs while its frame shows and then comes
+ *   to rest: cloud drifting, a tree swaying, a flame, stars, a light.
+ * - A drawing's `push` is where the stage slowly pushes in on each frame
+ *   ([x, y] in the drawing's own units); the player eases in on one frame and
+ *   back out on the next, so nothing ever jumps.
+ *
+ * All of it is CSS on opacity and transform, and none of it runs with motion
+ * turned off: the finished frame is the same picture.
  */
 import type { CSSProperties, ReactNode } from "react";
 import type { Hatch } from "@/components/art/PlateSvg";
@@ -21,6 +39,8 @@ export interface FilmDrawing {
   w: number;
   h: number;
   draw: (h: Hatch, frame: number) => ReactNode;
+  /** Where the stage slowly pushes in on a frame, in the drawing's units; none if absent. */
+  push?: (frame: number) => [number, number] | null;
 }
 
 /** Is a part with this window showing at this frame? */
@@ -35,6 +55,12 @@ const delayStyle = (
     ? { ...style, ...(delay ? { transitionDelay: `${delay}ms` } : {}) }
     : undefined;
 
+/** The style and class of a part that arrives `at` seconds into its frame. */
+const timed = (at?: number, extra?: Record<string, string>) =>
+  at || extra
+    ? ({ ...(at ? { "--mv-at": `${at}s` } : {}), ...extra } as CSSProperties)
+    : undefined;
+
 /** A line that draws itself from its start to its end. */
 export function Draw({
   frame,
@@ -43,6 +69,8 @@ export function Draw({
   d,
   className = "pl-l",
   delay,
+  at,
+  slow,
 }: {
   frame: number;
   on: number;
@@ -50,13 +78,21 @@ export function Draw({
   d: string;
   className?: string;
   delay?: number;
+  /** Seconds into a spoken frame at which the line begins to draw. */
+  at?: number;
+  /** Seconds the line takes to draw (1.6 if not given). */
+  slow?: number;
 }) {
   return (
     <path
       d={d}
       pathLength={1}
-      className={`${className} mv-draw${shown(frame, on, off) ? " is-on" : ""}`}
-      style={delayStyle(delay)}
+      className={`${className} mv-draw${at ? " mv-timed" : ""}${shown(frame, on, off) ? " is-on" : ""}`}
+      style={
+        at || slow
+          ? timed(at, slow ? { "--mv-dur": `${slow}s` } : undefined)
+          : delayStyle(delay)
+      }
     />
   );
 }
@@ -68,19 +104,71 @@ export function Fade({
   off,
   from = "none",
   delay,
+  at,
   children,
 }: {
   frame: number;
   on: number;
   off?: number;
-  from?: "none" | "up" | "down" | "grow" | "left" | "right";
+  /** "walk-left" and "walk-right" bring a figure in from further off, slowly. */
+  from?:
+    | "none"
+    | "up"
+    | "down"
+    | "grow"
+    | "left"
+    | "right"
+    | "walk-left"
+    | "walk-right";
   delay?: number;
+  /** Seconds into a spoken frame at which the part arrives. */
+  at?: number;
   children: ReactNode;
 }) {
   return (
     <g
-      className={`mv-fade mv-from-${from}${shown(frame, on, off) ? " is-on" : ""}`}
-      style={delayStyle(delay)}
+      className={`mv-fade mv-from-${from}${at ? " mv-timed" : ""}${shown(frame, on, off) ? " is-on" : ""}`}
+      style={at ? timed(at) : delayStyle(delay)}
+    >
+      {children}
+    </g>
+  );
+}
+
+/**
+ * A small motion that runs while its frame shows, then rests: "drift" (cloud,
+ * a boat, birds: moves `dx` units across), "sway" (a tree, grain), "flicker"
+ * (a flame), "twinkle" (stars), "glow" (a light breathing), "bob" (water).
+ * `late` (seconds) staggers one against another. With motion off it is still.
+ */
+export function Ambient({
+  frame,
+  on,
+  off,
+  kind,
+  dx,
+  late,
+  children,
+}: {
+  frame: number;
+  on: number;
+  off?: number;
+  kind: "drift" | "sway" | "flicker" | "twinkle" | "glow" | "bob";
+  dx?: number;
+  late?: number;
+  children: ReactNode;
+}) {
+  return (
+    <g
+      className={`mv-amb mv-amb-${kind}${shown(frame, on, off) ? " is-on" : ""}`}
+      style={
+        dx !== undefined || late
+          ? ({
+              ...(dx !== undefined ? { "--mv-dx": `${dx}px` } : {}),
+              ...(late ? { animationDelay: `${late}s` } : {}),
+            } as CSSProperties)
+          : undefined
+      }
     >
       {children}
     </g>
@@ -115,4 +203,29 @@ export function Travel({
       {children}
     </g>
   );
+}
+
+/**
+ * The stage's slow push for a frame: the attributes and style the screen
+ * takes. It pushes in on every other frame, centred on that frame's subject,
+ * and eases back out on the frames between (keeping the same centre, so the
+ * picture never jumps). `pace` is 1 for a spoken frame; a silent one is short.
+ */
+export function stageMotion(
+  drawing: FilmDrawing | null,
+  frame: number,
+  pace: number
+): { "data-push"?: "in" | "out"; style: CSSProperties } {
+  const style = { "--mv-pace": String(pace) } as CSSProperties;
+  if (!drawing?.push || frame < 0) return { style };
+  const focus = drawing.push(frame - (frame % 2));
+  if (!focus) return { style };
+  return {
+    "data-push": frame % 2 === 0 ? "in" : "out",
+    style: {
+      ...style,
+      "--mv-fx": `${((focus[0] / drawing.w) * 100).toFixed(1)}%`,
+      "--mv-fy": `${((focus[1] / drawing.h) * 100).toFixed(1)}%`,
+    } as CSSProperties,
+  };
 }
