@@ -112,7 +112,6 @@ const ring = (x: number, y: number, r: number) =>
 // A two-part frame is two panels side by side. Each is drawn in a small
 // frame of its own, 252 wide and 226 tall, and enlarged to half the stage.
 const PW = 252;
-const PH = 460;
 const HALF = 400 / PW;
 
 /** One panel of a two-part frame: "a" on the left, "b" on the right. */
@@ -132,11 +131,6 @@ function Half({ side, children }: { side: "a" | "b"; children: ReactNode }) {
     </>
   );
 }
-
-/** A second panel was first drawn under the first: lift it into its own frame. */
-const Lower = ({ children }: { children: ReactNode }) => (
-  <g transform="translate(0 -234)">{children}</g>
-);
 
 /** The two tablets of the law. */
 const Tablets = ({ x, y }: { x: number; y: number }) => (

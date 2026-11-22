@@ -30,7 +30,6 @@ import {
   Stars,
   Sun,
   Table,
-  Tent,
 } from "@/components/art/stage";
 import { Ambient, Fade, type FilmDrawing } from "../motion";
 
