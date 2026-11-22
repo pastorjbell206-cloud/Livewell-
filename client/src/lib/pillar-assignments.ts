@@ -1855,5 +1855,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 6,
     "subThemes": [],
     "confidence": "high"
+  },
+  "does-god-have-a-plan-for-my-life": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
