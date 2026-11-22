@@ -1,0 +1,4863 @@
+{
+ "about": "The moving pictures' recorded voice (scripts/build-film-audio.mjs): for each film, its title and each frame at each level, with the file, its length in seconds, its size, and a hash of the exact words it speaks. A stock synthetic voice; not a recording of any person.",
+ "voice": "bm_lewis",
+ "speed": 0.829,
+ "films": {
+  "bible-two-minutes": {
+   "title": {
+    "file": "bible-two-minutes/title.mp3",
+    "hash": "00ee4e0153fdbc4d9dc7",
+    "seconds": 2.78,
+    "bytes": 17204
+   },
+   "younger": [
+    {
+     "id": "made",
+     "file": "bible-two-minutes/younger/01-made.mp3",
+     "hash": "6da68d50b86bea935cc2",
+     "seconds": 15.87,
+     "bytes": 95828
+    },
+    {
+     "id": "broken",
+     "file": "bible-two-minutes/younger/02-broken.mp3",
+     "hash": "6a3442ae93eb70cd2e9f",
+     "seconds": 10.35,
+     "bytes": 62708
+    },
+    {
+     "id": "promise",
+     "file": "bible-two-minutes/younger/03-promise.mp3",
+     "hash": "2a784b607d2668ecab1e",
+     "seconds": 16.78,
+     "bytes": 101300
+    },
+    {
+     "id": "rescued",
+     "file": "bible-two-minutes/younger/04-rescued.mp3",
+     "hash": "6f941a0c673cc7256803",
+     "seconds": 27.68,
+     "bytes": 166676
+    },
+    {
+     "id": "kingdom",
+     "file": "bible-two-minutes/younger/05-kingdom.mp3",
+     "hash": "ec36cf92f12ffec75642",
+     "seconds": 27.11,
+     "bytes": 163220
+    },
+    {
+     "id": "exile",
+     "file": "bible-two-minutes/younger/06-exile.mp3",
+     "hash": "a537cf92427104ab011a",
+     "seconds": 28.02,
+     "bytes": 168692
+    },
+    {
+     "id": "jesus",
+     "file": "bible-two-minutes/younger/07-jesus.mp3",
+     "hash": "d1ed6fef6da5ab1abe69",
+     "seconds": 34.31,
+     "bytes": 206420
+    },
+    {
+     "id": "church",
+     "file": "bible-two-minutes/younger/08-church.mp3",
+     "hash": "b329622f3b1a48a681a4",
+     "seconds": 20.48,
+     "bytes": 123476
+    },
+    {
+     "id": "new",
+     "file": "bible-two-minutes/younger/09-new.mp3",
+     "hash": "e5b4cd076550c67f573d",
+     "seconds": 16.34,
+     "bytes": 98708
+    }
+   ],
+   "older": [
+    {
+     "id": "made",
+     "file": "bible-two-minutes/older/01-made.mp3",
+     "hash": "8003aed8057df7b78f7a",
+     "seconds": 19.32,
+     "bytes": 116420
+    },
+    {
+     "id": "broken",
+     "file": "bible-two-minutes/older/02-broken.mp3",
+     "hash": "c6b0fd74f8c94b528d46",
+     "seconds": 14.08,
+     "bytes": 85028
+    },
+    {
+     "id": "promise",
+     "file": "bible-two-minutes/older/03-promise.mp3",
+     "hash": "7a7db0e027955e12c58c",
+     "seconds": 18.35,
+     "bytes": 110660
+    },
+    {
+     "id": "rescued",
+     "file": "bible-two-minutes/older/04-rescued.mp3",
+     "hash": "021b707d4de679e79228",
+     "seconds": 30.86,
+     "bytes": 185684
+    },
+    {
+     "id": "kingdom",
+     "file": "bible-two-minutes/older/05-kingdom.mp3",
+     "hash": "2367918b800a3c221ffe",
+     "seconds": 29.9,
+     "bytes": 179924
+    },
+    {
+     "id": "exile",
+     "file": "bible-two-minutes/older/06-exile.mp3",
+     "hash": "0b3decabb0294c233867",
+     "seconds": 37.2,
+     "bytes": 223844
+    },
+    {
+     "id": "jesus",
+     "file": "bible-two-minutes/older/07-jesus.mp3",
+     "hash": "14db4959bec99e01b447",
+     "seconds": 37.17,
+     "bytes": 223556
+    },
+    {
+     "id": "church",
+     "file": "bible-two-minutes/older/08-church.mp3",
+     "hash": "63157b16a0a92e19168f",
+     "seconds": 23.79,
+     "bytes": 143348
+    },
+    {
+     "id": "new",
+     "file": "bible-two-minutes/older/09-new.mp3",
+     "hash": "fbcdd9542444877f7319",
+     "seconds": 20.33,
+     "bytes": 122612
+    }
+   ]
+  },
+  "bible-in-a-minute": {
+   "title": {
+    "file": "bible-in-a-minute/title.mp3",
+    "hash": "f90d945c1773997ac934",
+    "seconds": 2.17,
+    "bytes": 13604
+   },
+   "younger": [
+    {
+     "id": "made",
+     "file": "bible-in-a-minute/younger/01-made.mp3",
+     "hash": "e599386579ab5b783a96",
+     "seconds": 7.99,
+     "bytes": 48596
+    },
+    {
+     "id": "broken",
+     "file": "bible-in-a-minute/younger/02-broken.mp3",
+     "hash": "b2d0886f3dfb1724c7df",
+     "seconds": 8.6,
+     "bytes": 52196
+    },
+    {
+     "id": "promise",
+     "file": "bible-in-a-minute/younger/03-promise.mp3",
+     "hash": "60553190fa4e0ec2b4c7",
+     "seconds": 7.9,
+     "bytes": 48020
+    },
+    {
+     "id": "rescue",
+     "file": "bible-in-a-minute/younger/04-rescue.mp3",
+     "hash": "a2749481d1f0299de2d1",
+     "seconds": 9.78,
+     "bytes": 59252
+    },
+    {
+     "id": "king",
+     "file": "bible-in-a-minute/younger/05-king.mp3",
+     "hash": "8678ebdf236cb034795d",
+     "seconds": 9.36,
+     "bytes": 56804
+    },
+    {
+     "id": "exile",
+     "file": "bible-in-a-minute/younger/06-exile.mp3",
+     "hash": "4c357425d169324af1a9",
+     "seconds": 8.42,
+     "bytes": 51188
+    },
+    {
+     "id": "jesus",
+     "file": "bible-in-a-minute/younger/07-jesus.mp3",
+     "hash": "3e9871f03cc926d93f01",
+     "seconds": 10.82,
+     "bytes": 65444
+    },
+    {
+     "id": "new",
+     "file": "bible-in-a-minute/younger/08-new.mp3",
+     "hash": "3f7013c82f5f2e8b82fa",
+     "seconds": 16.68,
+     "bytes": 100724
+    }
+   ],
+   "older": [
+    {
+     "id": "made",
+     "file": "bible-in-a-minute/older/01-made.mp3",
+     "hash": "44e0e8349674d489ff28",
+     "seconds": 9.68,
+     "bytes": 58676
+    },
+    {
+     "id": "broken",
+     "file": "bible-in-a-minute/older/02-broken.mp3",
+     "hash": "51b0a07045d99a780eab",
+     "seconds": 8.77,
+     "bytes": 53204
+    },
+    {
+     "id": "promise",
+     "file": "bible-in-a-minute/older/03-promise.mp3",
+     "hash": "e23ea3205413b68d8a92",
+     "seconds": 8.81,
+     "bytes": 53348
+    },
+    {
+     "id": "rescue",
+     "file": "bible-in-a-minute/older/04-rescue.mp3",
+     "hash": "3d1c86e77cf10dfa516f",
+     "seconds": 10.74,
+     "bytes": 65012
+    },
+    {
+     "id": "king",
+     "file": "bible-in-a-minute/older/05-king.mp3",
+     "hash": "cf22aa987f9ba867f701",
+     "seconds": 11.91,
+     "bytes": 72068
+    },
+    {
+     "id": "exile",
+     "file": "bible-in-a-minute/older/06-exile.mp3",
+     "hash": "7775d232475bb7539da3",
+     "seconds": 11.69,
+     "bytes": 70628
+    },
+    {
+     "id": "jesus",
+     "file": "bible-in-a-minute/older/07-jesus.mp3",
+     "hash": "6ebbb127bf60ba6ba501",
+     "seconds": 12.53,
+     "bytes": 75812
+    },
+    {
+     "id": "new",
+     "file": "bible-in-a-minute/older/08-new.mp3",
+     "hash": "f445d50af5bcc37e98e5",
+     "seconds": 17.27,
+     "bytes": 104180
+    }
+   ]
+  },
+  "sixty-six-books": {
+   "title": {
+    "file": "sixty-six-books/title.mp3",
+    "hash": "9f63303e3735c598e361",
+    "seconds": 3.03,
+    "bytes": 18788
+   },
+   "younger": [
+    {
+     "id": "library",
+     "file": "sixty-six-books/younger/01-library.mp3",
+     "hash": "ebffcc8105080ed88338",
+     "seconds": 11.41,
+     "bytes": 69044
+    },
+    {
+     "id": "two",
+     "file": "sixty-six-books/younger/02-two.mp3",
+     "hash": "6dc920f06b25061fc25d",
+     "seconds": 11.78,
+     "bytes": 71204
+    },
+    {
+     "id": "law-history",
+     "file": "sixty-six-books/younger/03-law-history.mp3",
+     "hash": "98d05730a22b1cab027c",
+     "seconds": 13.1,
+     "bytes": 79124
+    },
+    {
+     "id": "poetry-prophets",
+     "file": "sixty-six-books/younger/04-poetry-prophets.mp3",
+     "hash": "9e0c85445090376b0d11",
+     "seconds": 11.12,
+     "bytes": 67316
+    },
+    {
+     "id": "gospels-acts",
+     "file": "sixty-six-books/younger/05-gospels-acts.mp3",
+     "hash": "9f408eb1311817bc7fae",
+     "seconds": 12.27,
+     "bytes": 74228
+    },
+    {
+     "id": "letters",
+     "file": "sixty-six-books/younger/06-letters.mp3",
+     "hash": "ac4364e2ddc0aecb1438",
+     "seconds": 10.86,
+     "bytes": 65732
+    },
+    {
+     "id": "one-story",
+     "file": "sixty-six-books/younger/07-one-story.mp3",
+     "hash": "b8274cbd824ea10a432f",
+     "seconds": 25.66,
+     "bytes": 154580
+    }
+   ],
+   "older": [
+    {
+     "id": "library",
+     "file": "sixty-six-books/older/01-library.mp3",
+     "hash": "444cf8261a59c06a37eb",
+     "seconds": 19.17,
+     "bytes": 115556
+    },
+    {
+     "id": "two",
+     "file": "sixty-six-books/older/02-two.mp3",
+     "hash": "823703b88ee50f8b8754",
+     "seconds": 10.67,
+     "bytes": 64580
+    },
+    {
+     "id": "law-history",
+     "file": "sixty-six-books/older/03-law-history.mp3",
+     "hash": "751d73771f73a4d515f8",
+     "seconds": 10.89,
+     "bytes": 65876
+    },
+    {
+     "id": "poetry-prophets",
+     "file": "sixty-six-books/older/04-poetry-prophets.mp3",
+     "hash": "fa3a37113e4071e9c5c3",
+     "seconds": 18.64,
+     "bytes": 112388
+    },
+    {
+     "id": "gospels-acts",
+     "file": "sixty-six-books/older/05-gospels-acts.mp3",
+     "hash": "8fadfdbaa3f7877f8ad3",
+     "seconds": 12.3,
+     "bytes": 74372
+    },
+    {
+     "id": "letters",
+     "file": "sixty-six-books/older/06-letters.mp3",
+     "hash": "18b1e940ea48231a2d5b",
+     "seconds": 15.19,
+     "bytes": 91652
+    },
+    {
+     "id": "one-story",
+     "file": "sixty-six-books/older/07-one-story.mp3",
+     "hash": "18d44ad461dff293f2b6",
+     "seconds": 26.72,
+     "bytes": 160916
+    }
+   ]
+  },
+  "the-exodus": {
+   "title": {
+    "file": "the-exodus/title.mp3",
+    "hash": "89256e3fe35f73708c52",
+    "seconds": 2.7,
+    "bytes": 16772
+   },
+   "younger": [
+    {
+     "id": "slaves",
+     "file": "the-exodus/younger/01-slaves.mp3",
+     "hash": "6fe67ae81f72665e85fd",
+     "seconds": 30.16,
+     "bytes": 181508
+    },
+    {
+     "id": "bush",
+     "file": "the-exodus/younger/02-bush.mp3",
+     "hash": "24dccc2db0e37ad53796",
+     "seconds": 26.01,
+     "bytes": 156596
+    },
+    {
+     "id": "pharaoh",
+     "file": "the-exodus/younger/03-pharaoh.mp3",
+     "hash": "bba56af4d3776e3edf6f",
+     "seconds": 25.29,
+     "bytes": 152276
+    },
+    {
+     "id": "passover",
+     "file": "the-exodus/younger/04-passover.mp3",
+     "hash": "f38f270d02562eeecc23",
+     "seconds": 26.02,
+     "bytes": 156740
+    },
+    {
+     "id": "sea",
+     "file": "the-exodus/younger/05-sea.mp3",
+     "hash": "e6f8893a3be31d0fea1f",
+     "seconds": 25.52,
+     "bytes": 153716
+    },
+    {
+     "id": "song",
+     "file": "the-exodus/younger/06-song.mp3",
+     "hash": "1f6cbd6770049d229d36",
+     "seconds": 22.5,
+     "bytes": 135572
+    },
+    {
+     "id": "pattern",
+     "file": "the-exodus/younger/07-pattern.mp3",
+     "hash": "27c7f2f32cbd39d84f9b",
+     "seconds": 25.48,
+     "bytes": 153428
+    }
+   ],
+   "older": [
+    {
+     "id": "slaves",
+     "file": "the-exodus/older/01-slaves.mp3",
+     "hash": "559b88fa5a6fc5fe51e0",
+     "seconds": 27.12,
+     "bytes": 163364
+    },
+    {
+     "id": "bush",
+     "file": "the-exodus/older/02-bush.mp3",
+     "hash": "649ac20072d9acc1ba7b",
+     "seconds": 24.74,
+     "bytes": 148964
+    },
+    {
+     "id": "pharaoh",
+     "file": "the-exodus/older/03-pharaoh.mp3",
+     "hash": "fa219d44c03df18e5c00",
+     "seconds": 23.57,
+     "bytes": 141908
+    },
+    {
+     "id": "passover",
+     "file": "the-exodus/older/04-passover.mp3",
+     "hash": "e07eccf28b6fe7bb0bd4",
+     "seconds": 23.77,
+     "bytes": 143204
+    },
+    {
+     "id": "sea",
+     "file": "the-exodus/older/05-sea.mp3",
+     "hash": "b1db8b63ea194b9493fb",
+     "seconds": 26.2,
+     "bytes": 157748
+    },
+    {
+     "id": "song",
+     "file": "the-exodus/older/06-song.mp3",
+     "hash": "325b73f536a7b52a9a8d",
+     "seconds": 27.54,
+     "bytes": 165812
+    },
+    {
+     "id": "pattern",
+     "file": "the-exodus/older/07-pattern.mp3",
+     "hash": "6f25a5661844c0da4068",
+     "seconds": 29.81,
+     "bytes": 179348
+    }
+   ]
+  },
+  "david-and-goliath": {
+   "title": {
+    "file": "david-and-goliath/title.mp3",
+    "hash": "754c4b3170ea6c52490a",
+    "seconds": 2.14,
+    "bytes": 13460
+   },
+   "younger": [
+    {
+     "id": "valley",
+     "file": "david-and-goliath/younger/01-valley.mp3",
+     "hash": "b4a0eda43ffdc09e25ed",
+     "seconds": 16.9,
+     "bytes": 102020
+    },
+    {
+     "id": "giant",
+     "file": "david-and-goliath/younger/02-giant.mp3",
+     "hash": "c276c97a6c35d3fafdc8",
+     "seconds": 30.02,
+     "bytes": 180644
+    },
+    {
+     "id": "errand",
+     "file": "david-and-goliath/younger/03-errand.mp3",
+     "hash": "fe99065c2ca3f9d101c3",
+     "seconds": 26.05,
+     "bytes": 156884
+    },
+    {
+     "id": "armor",
+     "file": "david-and-goliath/younger/04-armor.mp3",
+     "hash": "aabd95b6c2586504edd7",
+     "seconds": 31.62,
+     "bytes": 190292
+    },
+    {
+     "id": "name",
+     "file": "david-and-goliath/younger/05-name.mp3",
+     "hash": "6be656c4615522889f32",
+     "seconds": 23.83,
+     "bytes": 143636
+    },
+    {
+     "id": "stone",
+     "file": "david-and-goliath/younger/06-stone.mp3",
+     "hash": "9497d799e1c9e55a559f",
+     "seconds": 24.08,
+     "bytes": 145076
+    },
+    {
+     "id": "who",
+     "file": "david-and-goliath/younger/07-who.mp3",
+     "hash": "528e0f036fae743e60f4",
+     "seconds": 20.29,
+     "bytes": 122324
+    }
+   ],
+   "older": [
+    {
+     "id": "valley",
+     "file": "david-and-goliath/older/01-valley.mp3",
+     "hash": "5db2abe0c6aad583c10a",
+     "seconds": 18.96,
+     "bytes": 114404
+    },
+    {
+     "id": "giant",
+     "file": "david-and-goliath/older/02-giant.mp3",
+     "hash": "bf91a9a3781d21079153",
+     "seconds": 28.12,
+     "bytes": 169268
+    },
+    {
+     "id": "errand",
+     "file": "david-and-goliath/older/03-errand.mp3",
+     "hash": "cd7442994cb6438a64e1",
+     "seconds": 26.67,
+     "bytes": 160628
+    },
+    {
+     "id": "armor",
+     "file": "david-and-goliath/older/04-armor.mp3",
+     "hash": "53cfd0e5ea7d531c7417",
+     "seconds": 31.08,
+     "bytes": 187124
+    },
+    {
+     "id": "name",
+     "file": "david-and-goliath/older/05-name.mp3",
+     "hash": "91baa82db4c3d3f557a4",
+     "seconds": 30.24,
+     "bytes": 181940
+    },
+    {
+     "id": "stone",
+     "file": "david-and-goliath/older/06-stone.mp3",
+     "hash": "ff340a6d0ca0953d32f6",
+     "seconds": 30.36,
+     "bytes": 182660
+    },
+    {
+     "id": "who",
+     "file": "david-and-goliath/older/07-who.mp3",
+     "hash": "b1558189e6d5ded33671",
+     "seconds": 23.45,
+     "bytes": 141332
+    }
+   ]
+  },
+  "holy-spirit": {
+   "title": {
+    "file": "holy-spirit/title.mp3",
+    "hash": "f82746d324db452c85c2",
+    "seconds": 2.89,
+    "bytes": 17924
+   },
+   "younger": [
+    {
+     "id": "waters",
+     "file": "holy-spirit/younger/01-waters.mp3",
+     "hash": "45ce31eb57c481bbbc3d",
+     "seconds": 22.42,
+     "bytes": 135140
+    },
+    {
+     "id": "few",
+     "file": "holy-spirit/younger/02-few.mp3",
+     "hash": "9de3108893fa3b4de366",
+     "seconds": 22.23,
+     "bytes": 133988
+    },
+    {
+     "id": "promise",
+     "file": "holy-spirit/younger/03-promise.mp3",
+     "hash": "4cdfe76f21589cba8ecd",
+     "seconds": 23.14,
+     "bytes": 139460
+    },
+    {
+     "id": "jordan",
+     "file": "holy-spirit/younger/04-jordan.mp3",
+     "hash": "0c87110d10c71bf067cf",
+     "seconds": 27.76,
+     "bytes": 167108
+    },
+    {
+     "id": "advocate",
+     "file": "holy-spirit/younger/05-advocate.mp3",
+     "hash": "376c3016162293ae4a0f",
+     "seconds": 27.8,
+     "bytes": 167396
+    },
+    {
+     "id": "pentecost",
+     "file": "holy-spirit/younger/06-pentecost.mp3",
+     "hash": "b181a836b320b285ea46",
+     "seconds": 31.23,
+     "bytes": 187988
+    },
+    {
+     "id": "temple",
+     "file": "holy-spirit/younger/07-temple.mp3",
+     "hash": "aedc12f1d286e84c1262",
+     "seconds": 21.4,
+     "bytes": 128948
+    },
+    {
+     "id": "come",
+     "file": "holy-spirit/younger/08-come.mp3",
+     "hash": "5690af998ba552786902",
+     "seconds": 27.35,
+     "bytes": 164660
+    }
+   ],
+   "older": [
+    {
+     "id": "waters",
+     "file": "holy-spirit/older/01-waters.mp3",
+     "hash": "456d530d100c40bd2652",
+     "seconds": 25.02,
+     "bytes": 150692
+    },
+    {
+     "id": "few",
+     "file": "holy-spirit/older/02-few.mp3",
+     "hash": "254ab8812885d7b7eaec",
+     "seconds": 27.82,
+     "bytes": 167540
+    },
+    {
+     "id": "promise",
+     "file": "holy-spirit/older/03-promise.mp3",
+     "hash": "a3854e33d0df95b06cf0",
+     "seconds": 26.96,
+     "bytes": 162356
+    },
+    {
+     "id": "jordan",
+     "file": "holy-spirit/older/04-jordan.mp3",
+     "hash": "f4f9a059e0561ee55638",
+     "seconds": 38.44,
+     "bytes": 231188
+    },
+    {
+     "id": "advocate",
+     "file": "holy-spirit/older/05-advocate.mp3",
+     "hash": "104a9355edd5a369525d",
+     "seconds": 29.9,
+     "bytes": 179924
+    },
+    {
+     "id": "pentecost",
+     "file": "holy-spirit/older/06-pentecost.mp3",
+     "hash": "f7b2faa7ea80cac1792d",
+     "seconds": 34.18,
+     "bytes": 205700
+    },
+    {
+     "id": "temple",
+     "file": "holy-spirit/older/07-temple.mp3",
+     "hash": "c16f91b6c1cfdcfe1719",
+     "seconds": 39.36,
+     "bytes": 236660
+    },
+    {
+     "id": "come",
+     "file": "holy-spirit/older/08-come.mp3",
+     "hash": "207449ef4da02779f573",
+     "seconds": 34.8,
+     "bytes": 209300
+    }
+   ]
+  },
+  "god-with-his-people": {
+   "title": {
+    "file": "god-with-his-people/title.mp3",
+    "hash": "11fd104dd39d1080c6a8",
+    "seconds": 2.05,
+    "bytes": 12884
+   },
+   "younger": [
+    {
+     "id": "garden",
+     "file": "god-with-his-people/younger/01-garden.mp3",
+     "hash": "a452bbc33ca813e1c90d",
+     "seconds": 17.36,
+     "bytes": 104756
+    },
+    {
+     "id": "shut",
+     "file": "god-with-his-people/younger/02-shut.mp3",
+     "hash": "07c3ac1dc144451144c8",
+     "seconds": 18.25,
+     "bytes": 110084
+    },
+    {
+     "id": "tent",
+     "file": "god-with-his-people/younger/03-tent.mp3",
+     "hash": "b17e78c92b219967c794",
+     "seconds": 22.36,
+     "bytes": 134708
+    },
+    {
+     "id": "temple",
+     "file": "god-with-his-people/younger/04-temple.mp3",
+     "hash": "8ea08db339dbca8dce06",
+     "seconds": 23.4,
+     "bytes": 141044
+    },
+    {
+     "id": "leaves",
+     "file": "god-with-his-people/younger/05-leaves.mp3",
+     "hash": "ae97d8d9538bd91a7408",
+     "seconds": 24.75,
+     "bytes": 149108
+    },
+    {
+     "id": "word",
+     "file": "god-with-his-people/younger/06-word.mp3",
+     "hash": "f32cb4081db90a3ed506",
+     "seconds": 25.41,
+     "bytes": 152996
+    },
+    {
+     "id": "curtain",
+     "file": "god-with-his-people/younger/07-curtain.mp3",
+     "hash": "a9b91b4e038e547ac5ec",
+     "seconds": 19.31,
+     "bytes": 116420
+    },
+    {
+     "id": "spirit",
+     "file": "god-with-his-people/younger/08-spirit.mp3",
+     "hash": "dd0d30f391f02f7dcfd4",
+     "seconds": 21.08,
+     "bytes": 127076
+    },
+    {
+     "id": "city",
+     "file": "god-with-his-people/younger/09-city.mp3",
+     "hash": "0c288845b62c0f1fc6e8",
+     "seconds": 25.29,
+     "bytes": 152276
+    }
+   ],
+   "older": [
+    {
+     "id": "garden",
+     "file": "god-with-his-people/older/01-garden.mp3",
+     "hash": "fd25f7109495d0213aa3",
+     "seconds": 25.36,
+     "bytes": 152708
+    },
+    {
+     "id": "shut",
+     "file": "god-with-his-people/older/02-shut.mp3",
+     "hash": "99a14b1e5004ad51dff4",
+     "seconds": 24.68,
+     "bytes": 148676
+    },
+    {
+     "id": "tent",
+     "file": "god-with-his-people/older/03-tent.mp3",
+     "hash": "eb46813d77357a4cc278",
+     "seconds": 29.57,
+     "bytes": 177908
+    },
+    {
+     "id": "temple",
+     "file": "god-with-his-people/older/04-temple.mp3",
+     "hash": "54e7a4a7653be9980799",
+     "seconds": 29.68,
+     "bytes": 178628
+    },
+    {
+     "id": "leaves",
+     "file": "god-with-his-people/older/05-leaves.mp3",
+     "hash": "d22df845ae873f12ca8b",
+     "seconds": 31.52,
+     "bytes": 189716
+    },
+    {
+     "id": "word",
+     "file": "god-with-his-people/older/06-word.mp3",
+     "hash": "0d54728031669695327e",
+     "seconds": 39.05,
+     "bytes": 234932
+    },
+    {
+     "id": "curtain",
+     "file": "god-with-his-people/older/07-curtain.mp3",
+     "hash": "f1aee376431745314d06",
+     "seconds": 28.07,
+     "bytes": 168980
+    },
+    {
+     "id": "spirit",
+     "file": "god-with-his-people/older/08-spirit.mp3",
+     "hash": "a7e2e720404fff84c6b5",
+     "seconds": 27.31,
+     "bytes": 164516
+    },
+    {
+     "id": "city",
+     "file": "god-with-his-people/older/09-city.mp3",
+     "hash": "75a05c1603f7b4b15a61",
+     "seconds": 33.84,
+     "bytes": 203684
+    }
+   ]
+  },
+  "the-king": {
+   "title": {
+    "file": "the-king/title.mp3",
+    "hash": "475d33eec8f267356f11",
+    "seconds": 1.27,
+    "bytes": 8276
+   },
+   "younger": [
+    {
+     "id": "god-king",
+     "file": "the-king/younger/01-god-king.mp3",
+     "hash": "6c41a6d897f7dfff5d47",
+     "seconds": 21.34,
+     "bytes": 128660
+    },
+    {
+     "id": "shepherd",
+     "file": "the-king/younger/02-shepherd.mp3",
+     "hash": "e8d904048e980f8950fe",
+     "seconds": 32.48,
+     "bytes": 195476
+    },
+    {
+     "id": "promise",
+     "file": "the-king/younger/03-promise.mp3",
+     "hash": "412843394936848ffbf0",
+     "seconds": 19.6,
+     "bytes": 118148
+    },
+    {
+     "id": "empty",
+     "file": "the-king/younger/04-empty.mp3",
+     "hash": "2fa7da6f2a3c31f11ae9",
+     "seconds": 37.1,
+     "bytes": 223124
+    },
+    {
+     "id": "son-of-david",
+     "file": "the-king/younger/05-son-of-david.mp3",
+     "hash": "0ff1cdbad4b4b955f2c5",
+     "seconds": 33.82,
+     "bytes": 203540
+    },
+    {
+     "id": "cross",
+     "file": "the-king/younger/06-cross.mp3",
+     "hash": "31cde9eff3065d0ed381",
+     "seconds": 29.43,
+     "bytes": 177188
+    },
+    {
+     "id": "kingdom",
+     "file": "the-king/younger/07-kingdom.mp3",
+     "hash": "54d376d21a1bb40e36b1",
+     "seconds": 29.61,
+     "bytes": 178196
+    }
+   ],
+   "older": [
+    {
+     "id": "god-king",
+     "file": "the-king/older/01-god-king.mp3",
+     "hash": "19c6dded3fa47f32047f",
+     "seconds": 27.79,
+     "bytes": 167396
+    },
+    {
+     "id": "shepherd",
+     "file": "the-king/older/02-shepherd.mp3",
+     "hash": "fa290faecce3fbfd0079",
+     "seconds": 40.82,
+     "bytes": 245444
+    },
+    {
+     "id": "promise",
+     "file": "the-king/older/03-promise.mp3",
+     "hash": "ba4b13c4f02f26beb5d3",
+     "seconds": 32.04,
+     "bytes": 192884
+    },
+    {
+     "id": "empty",
+     "file": "the-king/older/04-empty.mp3",
+     "hash": "11fbccf4ba7dabc5a6ea",
+     "seconds": 38.35,
+     "bytes": 230612
+    },
+    {
+     "id": "son-of-david",
+     "file": "the-king/older/05-son-of-david.mp3",
+     "hash": "a287b12851cf2a3c4932",
+     "seconds": 38.18,
+     "bytes": 229604
+    },
+    {
+     "id": "cross",
+     "file": "the-king/older/06-cross.mp3",
+     "hash": "a7c0e02237fd809de104",
+     "seconds": 32.71,
+     "bytes": 196772
+    },
+    {
+     "id": "kingdom",
+     "file": "the-king/older/07-kingdom.mp3",
+     "hash": "2aa41809bd227e08cc23",
+     "seconds": 37.13,
+     "bytes": 223412
+    }
+   ]
+  },
+  "covenant": {
+   "title": {
+    "file": "covenant/title.mp3",
+    "hash": "a0811eb05965a381596f",
+    "seconds": 3.03,
+    "bytes": 18788
+   },
+   "younger": [
+    {
+     "id": "noah",
+     "file": "covenant/younger/01-noah.mp3",
+     "hash": "34977597cd12539a50d8",
+     "seconds": 31.47,
+     "bytes": 189428
+    },
+    {
+     "id": "abraham",
+     "file": "covenant/younger/02-abraham.mp3",
+     "hash": "9c06ae8ae9a9e3569f56",
+     "seconds": 31.31,
+     "bytes": 188420
+    },
+    {
+     "id": "sinai",
+     "file": "covenant/younger/03-sinai.mp3",
+     "hash": "7d7e23741ab0b0f13587",
+     "seconds": 29.78,
+     "bytes": 179204
+    },
+    {
+     "id": "david",
+     "file": "covenant/younger/04-david.mp3",
+     "hash": "0a340c3e73d402357856",
+     "seconds": 20.08,
+     "bytes": 121028
+    },
+    {
+     "id": "new",
+     "file": "covenant/younger/05-new.mp3",
+     "hash": "9539b21ed94079f6426c",
+     "seconds": 29.55,
+     "bytes": 177908
+    },
+    {
+     "id": "cup",
+     "file": "covenant/younger/06-cup.mp3",
+     "hash": "9481a3b3634fb6beb6cc",
+     "seconds": 25.85,
+     "bytes": 155732
+    },
+    {
+     "id": "yes",
+     "file": "covenant/younger/07-yes.mp3",
+     "hash": "03c6413b1f485e8cedff",
+     "seconds": 30.46,
+     "bytes": 183380
+    }
+   ],
+   "older": [
+    {
+     "id": "noah",
+     "file": "covenant/older/01-noah.mp3",
+     "hash": "6ad013a2c97728d7eaf7",
+     "seconds": 40.25,
+     "bytes": 241988
+    },
+    {
+     "id": "abraham",
+     "file": "covenant/older/02-abraham.mp3",
+     "hash": "1200cb596856a80315a9",
+     "seconds": 44.55,
+     "bytes": 267908
+    },
+    {
+     "id": "sinai",
+     "file": "covenant/older/03-sinai.mp3",
+     "hash": "7b9830bb8fe68aeb9fac",
+     "seconds": 37.76,
+     "bytes": 227156
+    },
+    {
+     "id": "david",
+     "file": "covenant/older/04-david.mp3",
+     "hash": "c1dc51839afc9177cba1",
+     "seconds": 37.38,
+     "bytes": 224852
+    },
+    {
+     "id": "new",
+     "file": "covenant/older/05-new.mp3",
+     "hash": "0e08d83dae3e6ea08fb1",
+     "seconds": 38.42,
+     "bytes": 231044
+    },
+    {
+     "id": "cup",
+     "file": "covenant/older/06-cup.mp3",
+     "hash": "34ae0bdfa60aff825440",
+     "seconds": 36.77,
+     "bytes": 221252
+    },
+    {
+     "id": "yes",
+     "file": "covenant/older/07-yes.mp3",
+     "hash": "6eb4608514a0eafe3f02",
+     "seconds": 37.16,
+     "bytes": 223556
+    }
+   ]
+  },
+  "the-lamb": {
+   "title": {
+    "file": "the-lamb/title.mp3",
+    "hash": "1d34087ee4c4a8a5ae2b",
+    "seconds": 2.45,
+    "bytes": 15332
+   },
+   "younger": [
+    {
+     "id": "covering",
+     "file": "the-lamb/younger/01-covering.mp3",
+     "hash": "4bb17ec68ab22e76d348",
+     "seconds": 26.83,
+     "bytes": 161492
+    },
+    {
+     "id": "provide",
+     "file": "the-lamb/younger/02-provide.mp3",
+     "hash": "fb53bed45d4c7026e62b",
+     "seconds": 30.06,
+     "bytes": 180932
+    },
+    {
+     "id": "passover",
+     "file": "the-lamb/younger/03-passover.mp3",
+     "hash": "7ac0de1371708d0a8a89",
+     "seconds": 38.45,
+     "bytes": 231188
+    },
+    {
+     "id": "atonement",
+     "file": "the-lamb/younger/04-atonement.mp3",
+     "hash": "74ab16834ac5947cf871",
+     "seconds": 31.04,
+     "bytes": 186836
+    },
+    {
+     "id": "lamb-of-god",
+     "file": "the-lamb/younger/05-lamb-of-god.mp3",
+     "hash": "fdf0b48f2283b41a7939",
+     "seconds": 29.29,
+     "bytes": 176324
+    },
+    {
+     "id": "once",
+     "file": "the-lamb/younger/06-once.mp3",
+     "hash": "f08eed9465a2680a4c82",
+     "seconds": 28.79,
+     "bytes": 173300
+    },
+    {
+     "id": "throne",
+     "file": "the-lamb/younger/07-throne.mp3",
+     "hash": "d290620fef76d7b28265",
+     "seconds": 33.18,
+     "bytes": 199652
+    }
+   ],
+   "older": [
+    {
+     "id": "covering",
+     "file": "the-lamb/older/01-covering.mp3",
+     "hash": "ff7c3d85f689977bdb53",
+     "seconds": 35.1,
+     "bytes": 211172
+    },
+    {
+     "id": "provide",
+     "file": "the-lamb/older/02-provide.mp3",
+     "hash": "cc18582113a279035475",
+     "seconds": 41.51,
+     "bytes": 249620
+    },
+    {
+     "id": "passover",
+     "file": "the-lamb/older/03-passover.mp3",
+     "hash": "2391a3dd8a6b329b56d8",
+     "seconds": 47.78,
+     "bytes": 287204
+    },
+    {
+     "id": "atonement",
+     "file": "the-lamb/older/04-atonement.mp3",
+     "hash": "c844cfea3c8802d8039c",
+     "seconds": 40.82,
+     "bytes": 245444
+    },
+    {
+     "id": "lamb-of-god",
+     "file": "the-lamb/older/05-lamb-of-god.mp3",
+     "hash": "e870b40b9306c4a88281",
+     "seconds": 39.79,
+     "bytes": 239252
+    },
+    {
+     "id": "once",
+     "file": "the-lamb/older/06-once.mp3",
+     "hash": "b3c04a3032c12d6b77cd",
+     "seconds": 44.07,
+     "bytes": 265028
+    },
+    {
+     "id": "throne",
+     "file": "the-lamb/older/07-throne.mp3",
+     "hash": "abd782445be281cc4f86",
+     "seconds": 40.87,
+     "bytes": 245732
+    }
+   ]
+  },
+  "why-blood": {
+   "title": {
+    "file": "why-blood/title.mp3",
+    "hash": "142d9d515d6da7f92074",
+    "seconds": 2.49,
+    "bytes": 15476
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "why-blood/younger/01-question.mp3",
+     "hash": "a6ef2e6322caeb7ad1df",
+     "seconds": 18.19,
+     "bytes": 109652
+    },
+    {
+     "id": "life",
+     "file": "why-blood/younger/02-life.mp3",
+     "hash": "3c4d76002820655d70fe",
+     "seconds": 27.43,
+     "bytes": 165092
+    },
+    {
+     "id": "first",
+     "file": "why-blood/younger/03-first.mp3",
+     "hash": "a8f5db112020fcc0eebc",
+     "seconds": 26.82,
+     "bytes": 161492
+    },
+    {
+     "id": "door",
+     "file": "why-blood/younger/04-door.mp3",
+     "hash": "e9d140aa88faeaa3169f",
+     "seconds": 23.34,
+     "bytes": 140612
+    },
+    {
+     "id": "covenant",
+     "file": "why-blood/younger/05-covenant.mp3",
+     "hash": "40542090d5cab84efefc",
+     "seconds": 30.19,
+     "bytes": 181652
+    },
+    {
+     "id": "cup",
+     "file": "why-blood/younger/06-cup.mp3",
+     "hash": "a8c2dee62eb54a624e3a",
+     "seconds": 28.65,
+     "bytes": 172436
+    },
+    {
+     "id": "once",
+     "file": "why-blood/younger/07-once.mp3",
+     "hash": "e5d1e2ceee08bf482a79",
+     "seconds": 28.92,
+     "bytes": 174020
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "why-blood/older/01-question.mp3",
+     "hash": "5902f9104a1e28847c5b",
+     "seconds": 13.82,
+     "bytes": 83444
+    },
+    {
+     "id": "life",
+     "file": "why-blood/older/02-life.mp3",
+     "hash": "f958c09ef4f4d9b0503e",
+     "seconds": 30.98,
+     "bytes": 186548
+    },
+    {
+     "id": "first",
+     "file": "why-blood/older/03-first.mp3",
+     "hash": "c0c426efc1af09a718d5",
+     "seconds": 31.17,
+     "bytes": 187556
+    },
+    {
+     "id": "door",
+     "file": "why-blood/older/04-door.mp3",
+     "hash": "f3086017803b0129884d",
+     "seconds": 27.38,
+     "bytes": 164804
+    },
+    {
+     "id": "covenant",
+     "file": "why-blood/older/05-covenant.mp3",
+     "hash": "a5202b0224a367a7cd09",
+     "seconds": 26.16,
+     "bytes": 157460
+    },
+    {
+     "id": "cup",
+     "file": "why-blood/older/06-cup.mp3",
+     "hash": "3a73274c6dc95c1629eb",
+     "seconds": 30.13,
+     "bytes": 181364
+    },
+    {
+     "id": "once",
+     "file": "why-blood/older/07-once.mp3",
+     "hash": "028496b3f5124f212f73",
+     "seconds": 26.83,
+     "bytes": 161492
+    }
+   ]
+  },
+  "exile-and-home": {
+   "title": {
+    "file": "exile-and-home/title.mp3",
+    "hash": "8f81243f46af30559270",
+    "seconds": 2.57,
+    "bytes": 15908
+   },
+   "younger": [
+    {
+     "id": "garden",
+     "file": "exile-and-home/younger/01-garden.mp3",
+     "hash": "d73f30dceacec1b6590e",
+     "seconds": 33.36,
+     "bytes": 200660
+    },
+    {
+     "id": "egypt",
+     "file": "exile-and-home/younger/02-egypt.mp3",
+     "hash": "9f41ae9962c80886a750",
+     "seconds": 31.9,
+     "bytes": 192020
+    },
+    {
+     "id": "babylon",
+     "file": "exile-and-home/younger/03-babylon.mp3",
+     "hash": "772ae848b697d7bad55c",
+     "seconds": 29.72,
+     "bytes": 178916
+    },
+    {
+     "id": "return",
+     "file": "exile-and-home/younger/04-return.mp3",
+     "hash": "851efa4272f43f668658",
+     "seconds": 32.09,
+     "bytes": 193172
+    },
+    {
+     "id": "jesus",
+     "file": "exile-and-home/younger/05-jesus.mp3",
+     "hash": "5c20d7401048ac362a86",
+     "seconds": 30.99,
+     "bytes": 186548
+    },
+    {
+     "id": "strangers",
+     "file": "exile-and-home/younger/06-strangers.mp3",
+     "hash": "5ac8d1f05d050835b5c5",
+     "seconds": 25.28,
+     "bytes": 152276
+    },
+    {
+     "id": "city",
+     "file": "exile-and-home/younger/07-city.mp3",
+     "hash": "74bf919a22047e44da5d",
+     "seconds": 21.75,
+     "bytes": 131108
+    }
+   ],
+   "older": [
+    {
+     "id": "garden",
+     "file": "exile-and-home/older/01-garden.mp3",
+     "hash": "5cc7e03a8fcc51fc4bdd",
+     "seconds": 42.89,
+     "bytes": 257828
+    },
+    {
+     "id": "egypt",
+     "file": "exile-and-home/older/02-egypt.mp3",
+     "hash": "f1075b9c9f71a2f19e13",
+     "seconds": 38.54,
+     "bytes": 231764
+    },
+    {
+     "id": "babylon",
+     "file": "exile-and-home/older/03-babylon.mp3",
+     "hash": "9df3e91c585c217fbcca",
+     "seconds": 39.08,
+     "bytes": 235076
+    },
+    {
+     "id": "return",
+     "file": "exile-and-home/older/04-return.mp3",
+     "hash": "2995f28ebca4ed983e4d",
+     "seconds": 41.97,
+     "bytes": 252356
+    },
+    {
+     "id": "jesus",
+     "file": "exile-and-home/older/05-jesus.mp3",
+     "hash": "2482fe7c089086457b1f",
+     "seconds": 38.45,
+     "bytes": 231332
+    },
+    {
+     "id": "strangers",
+     "file": "exile-and-home/older/06-strangers.mp3",
+     "hash": "ad9107768ea4e6cba9e8",
+     "seconds": 41.28,
+     "bytes": 248180
+    },
+    {
+     "id": "city",
+     "file": "exile-and-home/older/07-city.mp3",
+     "hash": "10e86b9e4b9d5664bf07",
+     "seconds": 39.5,
+     "bytes": 237524
+    }
+   ]
+  },
+  "kingdom-of-god": {
+   "title": {
+    "file": "kingdom-of-god/title.mp3",
+    "hash": "fe3635f24c1d8a2dd62e",
+    "seconds": 2.22,
+    "bytes": 13892
+   },
+   "younger": [
+    {
+     "id": "rule",
+     "file": "kingdom-of-god/younger/01-rule.mp3",
+     "hash": "ff074e7dad75d3d6c566",
+     "seconds": 24,
+     "bytes": 144500
+    },
+    {
+     "id": "near",
+     "file": "kingdom-of-god/younger/02-near.mp3",
+     "hash": "d819de0327625ba6afa0",
+     "seconds": 22.38,
+     "bytes": 134852
+    },
+    {
+     "id": "signs",
+     "file": "kingdom-of-god/younger/03-signs.mp3",
+     "hash": "abceb4e5e6213edf1001",
+     "seconds": 25.73,
+     "bytes": 155012
+    },
+    {
+     "id": "seed",
+     "file": "kingdom-of-god/younger/04-seed.mp3",
+     "hash": "a87da2b2990747ebb9b8",
+     "seconds": 35.47,
+     "bytes": 213332
+    },
+    {
+     "id": "children",
+     "file": "kingdom-of-god/younger/05-children.mp3",
+     "hash": "a28ee8e6fc83218c9541",
+     "seconds": 27.46,
+     "bytes": 165380
+    },
+    {
+     "id": "not-of-this-world",
+     "file": "kingdom-of-god/younger/06-not-of-this-world.mp3",
+     "hash": "0927f043266770d21842",
+     "seconds": 24.97,
+     "bytes": 150404
+    },
+    {
+     "id": "already",
+     "file": "kingdom-of-god/younger/07-already.mp3",
+     "hash": "cf1d844f758f622db953",
+     "seconds": 27.11,
+     "bytes": 163220
+    }
+   ],
+   "older": [
+    {
+     "id": "rule",
+     "file": "kingdom-of-god/older/01-rule.mp3",
+     "hash": "9c9a5ffde6acf4cc9012",
+     "seconds": 38.05,
+     "bytes": 228884
+    },
+    {
+     "id": "near",
+     "file": "kingdom-of-god/older/02-near.mp3",
+     "hash": "2e0d2c72580eb4f97878",
+     "seconds": 32.6,
+     "bytes": 196196
+    },
+    {
+     "id": "signs",
+     "file": "kingdom-of-god/older/03-signs.mp3",
+     "hash": "a9b998b69f240fb6e277",
+     "seconds": 31.48,
+     "bytes": 189428
+    },
+    {
+     "id": "seed",
+     "file": "kingdom-of-god/older/04-seed.mp3",
+     "hash": "ea3b3ffa14b6773dc56f",
+     "seconds": 43.22,
+     "bytes": 259844
+    },
+    {
+     "id": "children",
+     "file": "kingdom-of-god/older/05-children.mp3",
+     "hash": "f65025e6cbd47d314ee0",
+     "seconds": 29.27,
+     "bytes": 176180
+    },
+    {
+     "id": "not-of-this-world",
+     "file": "kingdom-of-god/older/06-not-of-this-world.mp3",
+     "hash": "a3ecfc4d2a65b49a98d7",
+     "seconds": 34.06,
+     "bytes": 204980
+    },
+    {
+     "id": "already",
+     "file": "kingdom-of-god/older/07-already.mp3",
+     "hash": "450159bd1d192acb9431",
+     "seconds": 40.03,
+     "bytes": 240692
+    }
+   ]
+  },
+  "who-god-is": {
+   "title": {
+    "file": "who-god-is/title.mp3",
+    "hash": "639d097ba8c53404b357",
+    "seconds": 3.85,
+    "bytes": 23684
+   },
+   "younger": [
+    {
+     "id": "one",
+     "file": "who-god-is/younger/01-one.mp3",
+     "hash": "c02137b6480aaebd2591",
+     "seconds": 15.71,
+     "bytes": 94820
+    },
+    {
+     "id": "father",
+     "file": "who-god-is/younger/02-father.mp3",
+     "hash": "9646698118316ca4b108",
+     "seconds": 21.99,
+     "bytes": 132548
+    },
+    {
+     "id": "son",
+     "file": "who-god-is/younger/03-son.mp3",
+     "hash": "01fff7fb4a694cfba14a",
+     "seconds": 25.62,
+     "bytes": 154292
+    },
+    {
+     "id": "spirit",
+     "file": "who-god-is/younger/04-spirit.mp3",
+     "hash": "37335fe57f2e26465c27",
+     "seconds": 24.06,
+     "bytes": 144932
+    },
+    {
+     "id": "jordan",
+     "file": "who-god-is/younger/05-jordan.mp3",
+     "hash": "ff8955f4f85deabb98ba",
+     "seconds": 23.4,
+     "bytes": 141044
+    },
+    {
+     "id": "name",
+     "file": "who-god-is/younger/06-name.mp3",
+     "hash": "6a9463d68cdb8f4e4319",
+     "seconds": 31.12,
+     "bytes": 187268
+    },
+    {
+     "id": "pictures",
+     "file": "who-god-is/younger/07-pictures.mp3",
+     "hash": "82487d307ba98950e82d",
+     "seconds": 33.95,
+     "bytes": 204260
+    },
+    {
+     "id": "wonder",
+     "file": "who-god-is/younger/08-wonder.mp3",
+     "hash": "ccd99550e8a5c4eeeaf6",
+     "seconds": 33.06,
+     "bytes": 198932
+    }
+   ],
+   "older": [
+    {
+     "id": "one",
+     "file": "who-god-is/older/01-one.mp3",
+     "hash": "11e9cb929a16447b5aa4",
+     "seconds": 28.35,
+     "bytes": 170708
+    },
+    {
+     "id": "father",
+     "file": "who-god-is/older/02-father.mp3",
+     "hash": "e35c78a7f37e05f90fcb",
+     "seconds": 32.61,
+     "bytes": 196196
+    },
+    {
+     "id": "son",
+     "file": "who-god-is/older/03-son.mp3",
+     "hash": "2768ee8dfbed93ef1f5e",
+     "seconds": 22.51,
+     "bytes": 135572
+    },
+    {
+     "id": "spirit",
+     "file": "who-god-is/older/04-spirit.mp3",
+     "hash": "394103ed58e25d831470",
+     "seconds": 22.38,
+     "bytes": 134852
+    },
+    {
+     "id": "jordan",
+     "file": "who-god-is/older/05-jordan.mp3",
+     "hash": "54e0e405d058ce8c4eef",
+     "seconds": 30.65,
+     "bytes": 184532
+    },
+    {
+     "id": "name",
+     "file": "who-god-is/older/06-name.mp3",
+     "hash": "7e47a030f6d463f42855",
+     "seconds": 41.02,
+     "bytes": 246740
+    },
+    {
+     "id": "pictures",
+     "file": "who-god-is/older/07-pictures.mp3",
+     "hash": "6e1c48154ea654d48a6e",
+     "seconds": 38.71,
+     "bytes": 232772
+    },
+    {
+     "id": "wonder",
+     "file": "who-god-is/older/08-wonder.mp3",
+     "hash": "03198ab1bae10c698dc5",
+     "seconds": 41.08,
+     "bytes": 247028
+    }
+   ]
+  },
+  "image-of-god": {
+   "title": {
+    "file": "image-of-god/title.mp3",
+    "hash": "a3ca4398d2bb19e4e803",
+    "seconds": 2.98,
+    "bytes": 18500
+   },
+   "younger": [
+    {
+     "id": "nothing",
+     "file": "image-of-god/younger/01-nothing.mp3",
+     "hash": "a6d56b7305b4fb2b4a61",
+     "seconds": 19.98,
+     "bytes": 120452
+    },
+    {
+     "id": "good",
+     "file": "image-of-god/younger/02-good.mp3",
+     "hash": "8bc74edb8ddf3510ab4a",
+     "seconds": 20.79,
+     "bytes": 125348
+    },
+    {
+     "id": "image",
+     "file": "image-of-god/younger/03-image.mp3",
+     "hash": "da837b3183b84be1471a",
+     "seconds": 22.9,
+     "bytes": 138020
+    },
+    {
+     "id": "know",
+     "file": "image-of-god/younger/04-know.mp3",
+     "hash": "e13ee2985f92af184c67",
+     "seconds": 21.13,
+     "bytes": 127364
+    },
+    {
+     "id": "care",
+     "file": "image-of-god/younger/05-care.mp3",
+     "hash": "82fe7bb1bdb2fc10e528",
+     "seconds": 18.3,
+     "bytes": 110372
+    },
+    {
+     "id": "given",
+     "file": "image-of-god/younger/06-given.mp3",
+     "hash": "d201c7c60e6128bd3637",
+     "seconds": 29.29,
+     "bytes": 176324
+    },
+    {
+     "id": "open",
+     "file": "image-of-god/younger/07-open.mp3",
+     "hash": "4cd6cfc3d118726357a2",
+     "seconds": 16.72,
+     "bytes": 100868
+    }
+   ],
+   "older": [
+    {
+     "id": "nothing",
+     "file": "image-of-god/older/01-nothing.mp3",
+     "hash": "ebcc3fc16c04729bfd8e",
+     "seconds": 26.1,
+     "bytes": 157172
+    },
+    {
+     "id": "good",
+     "file": "image-of-god/older/02-good.mp3",
+     "hash": "9eda859e4ea84faa349e",
+     "seconds": 25.22,
+     "bytes": 151844
+    },
+    {
+     "id": "image",
+     "file": "image-of-god/older/03-image.mp3",
+     "hash": "457cc31629904533f2d6",
+     "seconds": 27.24,
+     "bytes": 163940
+    },
+    {
+     "id": "know",
+     "file": "image-of-god/older/04-know.mp3",
+     "hash": "74848b84c5fd990f0bbc",
+     "seconds": 26.38,
+     "bytes": 158900
+    },
+    {
+     "id": "care",
+     "file": "image-of-god/older/05-care.mp3",
+     "hash": "0948c6fecfabf3d3684f",
+     "seconds": 25.06,
+     "bytes": 150980
+    },
+    {
+     "id": "given",
+     "file": "image-of-god/older/06-given.mp3",
+     "hash": "727484740ee65d6b19a2",
+     "seconds": 35.26,
+     "bytes": 212180
+    },
+    {
+     "id": "open",
+     "file": "image-of-god/older/07-open.mp3",
+     "hash": "6705cc52d9c9aefd21ec",
+     "seconds": 25.82,
+     "bytes": 155444
+    }
+   ]
+  },
+  "what-sin-is": {
+   "title": {
+    "file": "what-sin-is/title.mp3",
+    "hash": "5b04d3b19168932707f8",
+    "seconds": 1.59,
+    "bytes": 10148
+   },
+   "younger": [
+    {
+     "id": "love",
+     "file": "what-sin-is/younger/01-love.mp3",
+     "hash": "4678e12ebc1e5dda10fc",
+     "seconds": 25.34,
+     "bytes": 152564
+    },
+    {
+     "id": "reach",
+     "file": "what-sin-is/younger/02-reach.mp3",
+     "hash": "0bcad86ff498e21a7d5f",
+     "seconds": 12.61,
+     "bytes": 76244
+    },
+    {
+     "id": "broken",
+     "file": "what-sin-is/younger/03-broken.mp3",
+     "hash": "799e72caae8b46a5a26e",
+     "seconds": 27.76,
+     "bytes": 167108
+    },
+    {
+     "id": "what",
+     "file": "what-sin-is/younger/04-what.mp3",
+     "hash": "31ff851868a4b3960190",
+     "seconds": 16.21,
+     "bytes": 97844
+    },
+    {
+     "id": "everyone",
+     "file": "what-sin-is/younger/05-everyone.mp3",
+     "hash": "c8b6b84d5ff6c5d13c6b",
+     "seconds": 28.29,
+     "bytes": 170276
+    },
+    {
+     "id": "looking",
+     "file": "what-sin-is/younger/06-looking.mp3",
+     "hash": "b47432519c8cc1d92aab",
+     "seconds": 25.29,
+     "bytes": 152276
+    }
+   ],
+   "older": [
+    {
+     "id": "love",
+     "file": "what-sin-is/older/01-love.mp3",
+     "hash": "1aa23a0e137e2ed55f78",
+     "seconds": 30.87,
+     "bytes": 185828
+    },
+    {
+     "id": "reach",
+     "file": "what-sin-is/older/02-reach.mp3",
+     "hash": "a8eca2c704825d344993",
+     "seconds": 20.13,
+     "bytes": 121316
+    },
+    {
+     "id": "broken",
+     "file": "what-sin-is/older/03-broken.mp3",
+     "hash": "0b9994a7943822bb8cc4",
+     "seconds": 29.38,
+     "bytes": 176756
+    },
+    {
+     "id": "what",
+     "file": "what-sin-is/older/04-what.mp3",
+     "hash": "ed938d8d5f7fb32b69ba",
+     "seconds": 19.08,
+     "bytes": 114980
+    },
+    {
+     "id": "everyone",
+     "file": "what-sin-is/older/05-everyone.mp3",
+     "hash": "3cfdf709bc1e612adc22",
+     "seconds": 32.75,
+     "bytes": 197060
+    },
+    {
+     "id": "looking",
+     "file": "what-sin-is/older/06-looking.mp3",
+     "hash": "df51ee533620f38c34f7",
+     "seconds": 30.37,
+     "bytes": 182804
+    }
+   ]
+  },
+  "who-jesus-is": {
+   "title": {
+    "file": "who-jesus-is/title.mp3",
+    "hash": "85e7d14a1688fd88108d",
+    "seconds": 1.95,
+    "bytes": 12308
+   },
+   "younger": [
+    {
+     "id": "word",
+     "file": "who-jesus-is/younger/01-word.mp3",
+     "hash": "43fc5030cd162700918f",
+     "seconds": 19.85,
+     "bytes": 119588
+    },
+    {
+     "id": "flesh",
+     "file": "who-jesus-is/younger/02-flesh.mp3",
+     "hash": "3f2c4cf133d77ecfbcb1",
+     "seconds": 24.69,
+     "bytes": 148676
+    },
+    {
+     "id": "man",
+     "file": "who-jesus-is/younger/03-man.mp3",
+     "hash": "d58b7906d7ce7dc004a5",
+     "seconds": 27.07,
+     "bytes": 162932
+    },
+    {
+     "id": "god",
+     "file": "who-jesus-is/younger/04-god.mp3",
+     "hash": "eeb30b2fc0897cd91a4d",
+     "seconds": 27.9,
+     "bytes": 167972
+    },
+    {
+     "id": "one",
+     "file": "who-jesus-is/younger/05-one.mp3",
+     "hash": "cfa2eeaed0cd72a6237d",
+     "seconds": 19.92,
+     "bytes": 120164
+    },
+    {
+     "id": "why",
+     "file": "who-jesus-is/younger/06-why.mp3",
+     "hash": "f5ad08fea3da848781d7",
+     "seconds": 28.52,
+     "bytes": 171716
+    },
+    {
+     "id": "peter",
+     "file": "who-jesus-is/younger/07-peter.mp3",
+     "hash": "dec9e9e13b5cd1b01a1a",
+     "seconds": 23.2,
+     "bytes": 139748
+    }
+   ],
+   "older": [
+    {
+     "id": "word",
+     "file": "who-jesus-is/older/01-word.mp3",
+     "hash": "c265063c86d3b13ed291",
+     "seconds": 14.77,
+     "bytes": 89204
+    },
+    {
+     "id": "flesh",
+     "file": "who-jesus-is/older/02-flesh.mp3",
+     "hash": "b0004c86e410b47d52ec",
+     "seconds": 30.13,
+     "bytes": 181364
+    },
+    {
+     "id": "man",
+     "file": "who-jesus-is/older/03-man.mp3",
+     "hash": "a54be01bac8eed1d743d",
+     "seconds": 30.55,
+     "bytes": 183812
+    },
+    {
+     "id": "god",
+     "file": "who-jesus-is/older/04-god.mp3",
+     "hash": "d377c4f16a1a37ef1dbb",
+     "seconds": 29.45,
+     "bytes": 177332
+    },
+    {
+     "id": "one",
+     "file": "who-jesus-is/older/05-one.mp3",
+     "hash": "efa975b09cee4f16ce6b",
+     "seconds": 32.49,
+     "bytes": 195476
+    },
+    {
+     "id": "why",
+     "file": "who-jesus-is/older/06-why.mp3",
+     "hash": "3066d7b4d3d7c933c732",
+     "seconds": 35.64,
+     "bytes": 214484
+    },
+    {
+     "id": "peter",
+     "file": "who-jesus-is/older/07-peter.mp3",
+     "hash": "b8bb20593d81e23ae1d4",
+     "seconds": 31.15,
+     "bytes": 187556
+    }
+   ]
+  },
+  "why-jesus-died": {
+   "title": {
+    "file": "why-jesus-died/title.mp3",
+    "hash": "95ab5507126a4b9c5c08",
+    "seconds": 2.14,
+    "bytes": 13460
+   },
+   "younger": [
+    {
+     "id": "happened",
+     "file": "why-jesus-died/younger/01-happened.mp3",
+     "hash": "835287e2aba17829c584",
+     "seconds": 27.93,
+     "bytes": 168116
+    },
+    {
+     "id": "lamb",
+     "file": "why-jesus-died/younger/02-lamb.mp3",
+     "hash": "56b0315cb5a19d5c2a79",
+     "seconds": 23.44,
+     "bytes": 141188
+    },
+    {
+     "id": "ransom",
+     "file": "why-jesus-died/younger/03-ransom.mp3",
+     "hash": "13ce98ac3697eeecf673",
+     "seconds": 26.63,
+     "bytes": 160340
+    },
+    {
+     "id": "place",
+     "file": "why-jesus-died/younger/04-place.mp3",
+     "hash": "b9f14fa95da6f014655b",
+     "seconds": 27.73,
+     "bytes": 166964
+    },
+    {
+     "id": "victory",
+     "file": "why-jesus-died/younger/05-victory.mp3",
+     "hash": "ad7b0a79141a1f685832",
+     "seconds": 24.15,
+     "bytes": 145508
+    },
+    {
+     "id": "love",
+     "file": "why-jesus-died/younger/06-love.mp3",
+     "hash": "15afc33ac31dd651df1d",
+     "seconds": 22.18,
+     "bytes": 133700
+    },
+    {
+     "id": "friends",
+     "file": "why-jesus-died/younger/07-friends.mp3",
+     "hash": "d0e3c709f10269fb1abb",
+     "seconds": 26.07,
+     "bytes": 157028
+    },
+    {
+     "id": "together",
+     "file": "why-jesus-died/younger/08-together.mp3",
+     "hash": "5562cd6a380afff3433b",
+     "seconds": 24.23,
+     "bytes": 145940
+    }
+   ],
+   "older": [
+    {
+     "id": "happened",
+     "file": "why-jesus-died/older/01-happened.mp3",
+     "hash": "57d35964f0b918fb509b",
+     "seconds": 40.01,
+     "bytes": 240692
+    },
+    {
+     "id": "lamb",
+     "file": "why-jesus-died/older/02-lamb.mp3",
+     "hash": "03cdada7451ead78ae4b",
+     "seconds": 31.59,
+     "bytes": 190148
+    },
+    {
+     "id": "ransom",
+     "file": "why-jesus-died/older/03-ransom.mp3",
+     "hash": "dc1c5cfe8fad462c9dd1",
+     "seconds": 33.45,
+     "bytes": 201236
+    },
+    {
+     "id": "place",
+     "file": "why-jesus-died/older/04-place.mp3",
+     "hash": "5fd7edc6978a7799aa48",
+     "seconds": 34.34,
+     "bytes": 206564
+    },
+    {
+     "id": "victory",
+     "file": "why-jesus-died/older/05-victory.mp3",
+     "hash": "cc048b3de9ab0928d216",
+     "seconds": 32.89,
+     "bytes": 197924
+    },
+    {
+     "id": "love",
+     "file": "why-jesus-died/older/06-love.mp3",
+     "hash": "0e1f7ed477fa22cd61d3",
+     "seconds": 28.67,
+     "bytes": 172580
+    },
+    {
+     "id": "friends",
+     "file": "why-jesus-died/older/07-friends.mp3",
+     "hash": "c85ee40fa4f0af4ce712",
+     "seconds": 34.21,
+     "bytes": 205844
+    },
+    {
+     "id": "together",
+     "file": "why-jesus-died/older/08-together.mp3",
+     "hash": "f0c4906f300b1bf3fa2c",
+     "seconds": 30.65,
+     "bytes": 184532
+    }
+   ]
+  },
+  "the-resurrection": {
+   "title": {
+    "file": "the-resurrection/title.mp3",
+    "hash": "38254bc1935ff1549d02",
+    "seconds": 1.66,
+    "bytes": 10580
+   },
+   "younger": [
+    {
+     "id": "buried",
+     "file": "the-resurrection/younger/01-buried.mp3",
+     "hash": "1c3c12a0f0b77a5b8d5a",
+     "seconds": 29.12,
+     "bytes": 175316
+    },
+    {
+     "id": "third-day",
+     "file": "the-resurrection/younger/02-third-day.mp3",
+     "hash": "ace83b05244104a335ce",
+     "seconds": 24.78,
+     "bytes": 149252
+    },
+    {
+     "id": "sent",
+     "file": "the-resurrection/younger/03-sent.mp3",
+     "hash": "20576509ca96120db127",
+     "seconds": 14.9,
+     "bytes": 89924
+    },
+    {
+     "id": "body",
+     "file": "the-resurrection/younger/04-body.mp3",
+     "hash": "0e7c5d04031e4121e010",
+     "seconds": 25.38,
+     "bytes": 152852
+    },
+    {
+     "id": "never-again",
+     "file": "the-resurrection/younger/05-never-again.mp3",
+     "hash": "6ae0efcab9da169db58b",
+     "seconds": 25.93,
+     "bytes": 156164
+    },
+    {
+     "id": "firstfruits",
+     "file": "the-resurrection/younger/06-firstfruits.mp3",
+     "hash": "5b1bfcd345a143d63905",
+     "seconds": 28.22,
+     "bytes": 169844
+    },
+    {
+     "id": "because",
+     "file": "the-resurrection/younger/07-because.mp3",
+     "hash": "70da8ba04024372d2fb3",
+     "seconds": 25.74,
+     "bytes": 155012
+    }
+   ],
+   "older": [
+    {
+     "id": "buried",
+     "file": "the-resurrection/older/01-buried.mp3",
+     "hash": "c2f4d74de4d1e5fe5044",
+     "seconds": 38.38,
+     "bytes": 230900
+    },
+    {
+     "id": "third-day",
+     "file": "the-resurrection/older/02-third-day.mp3",
+     "hash": "fe4dac3d1e1ec163262c",
+     "seconds": 30.25,
+     "bytes": 182084
+    },
+    {
+     "id": "sent",
+     "file": "the-resurrection/older/03-sent.mp3",
+     "hash": "8c20d39df391f01006d5",
+     "seconds": 21.42,
+     "bytes": 129092
+    },
+    {
+     "id": "body",
+     "file": "the-resurrection/older/04-body.mp3",
+     "hash": "1b0d570853cfb34139fc",
+     "seconds": 36.09,
+     "bytes": 217076
+    },
+    {
+     "id": "never-again",
+     "file": "the-resurrection/older/05-never-again.mp3",
+     "hash": "27a64c66680484d07fa4",
+     "seconds": 33.16,
+     "bytes": 199508
+    },
+    {
+     "id": "firstfruits",
+     "file": "the-resurrection/older/06-firstfruits.mp3",
+     "hash": "75f5af44fa3141cc7944",
+     "seconds": 36.09,
+     "bytes": 217076
+    },
+    {
+     "id": "because",
+     "file": "the-resurrection/older/07-because.mp3",
+     "hash": "c6a87446bdc8813c874c",
+     "seconds": 31.38,
+     "bytes": 188852
+    }
+   ]
+  },
+  "how-salvation-works": {
+   "title": {
+    "file": "how-salvation-works/title.mp3",
+    "hash": "1e0cfb3f3b2c4f658073",
+    "seconds": 2.07,
+    "bytes": 13028
+   },
+   "younger": [
+    {
+     "id": "made",
+     "file": "how-salvation-works/younger/01-made.mp3",
+     "hash": "f9c5acfdd973f17ae82a",
+     "seconds": 24.32,
+     "bytes": 146516
+    },
+    {
+     "id": "turned",
+     "file": "how-salvation-works/younger/02-turned.mp3",
+     "hash": "660ea0173fec0ca98f1a",
+     "seconds": 24.5,
+     "bytes": 147524
+    },
+    {
+     "id": "cannot",
+     "file": "how-salvation-works/younger/03-cannot.mp3",
+     "hash": "1849586bbcf8d070c0ef",
+     "seconds": 21.65,
+     "bytes": 130532
+    },
+    {
+     "id": "comes",
+     "file": "how-salvation-works/younger/04-comes.mp3",
+     "hash": "3acd6af45035ee397565",
+     "seconds": 30.92,
+     "bytes": 186116
+    },
+    {
+     "id": "cross",
+     "file": "how-salvation-works/younger/05-cross.mp3",
+     "hash": "f1ecf6a9329467501411",
+     "seconds": 28.88,
+     "bytes": 173876
+    },
+    {
+     "id": "tomb",
+     "file": "how-salvation-works/younger/06-tomb.mp3",
+     "hash": "0c74180e88d7c7af886d",
+     "seconds": 21.57,
+     "bytes": 129956
+    },
+    {
+     "id": "trust",
+     "file": "how-salvation-works/younger/07-trust.mp3",
+     "hash": "51eb3113aa996b7aa49b",
+     "seconds": 27.55,
+     "bytes": 165956
+    },
+    {
+     "id": "new-life",
+     "file": "how-salvation-works/younger/08-new-life.mp3",
+     "hash": "5cf49f8a67d2de6496b8",
+     "seconds": 29.29,
+     "bytes": 176324
+    },
+    {
+     "id": "to-come",
+     "file": "how-salvation-works/younger/09-to-come.mp3",
+     "hash": "ad304a3a12ab6b595ec4",
+     "seconds": 24.47,
+     "bytes": 147380
+    }
+   ],
+   "older": [
+    {
+     "id": "made",
+     "file": "how-salvation-works/older/01-made.mp3",
+     "hash": "f573c4f540429b039855",
+     "seconds": 32.35,
+     "bytes": 194612
+    },
+    {
+     "id": "turned",
+     "file": "how-salvation-works/older/02-turned.mp3",
+     "hash": "4621441dbc7854507b68",
+     "seconds": 26.87,
+     "bytes": 161780
+    },
+    {
+     "id": "cannot",
+     "file": "how-salvation-works/older/03-cannot.mp3",
+     "hash": "6d57c51ad1c64596f9a6",
+     "seconds": 24,
+     "bytes": 144644
+    },
+    {
+     "id": "comes",
+     "file": "how-salvation-works/older/04-comes.mp3",
+     "hash": "439aef31c10c54e3de10",
+     "seconds": 33.32,
+     "bytes": 200516
+    },
+    {
+     "id": "cross",
+     "file": "how-salvation-works/older/05-cross.mp3",
+     "hash": "42dcf7b26ae946f91a93",
+     "seconds": 34.71,
+     "bytes": 208868
+    },
+    {
+     "id": "tomb",
+     "file": "how-salvation-works/older/06-tomb.mp3",
+     "hash": "1f405fe3b9cd57cf8ece",
+     "seconds": 29.68,
+     "bytes": 178628
+    },
+    {
+     "id": "trust",
+     "file": "how-salvation-works/older/07-trust.mp3",
+     "hash": "03b8228ad952f8381f33",
+     "seconds": 32.93,
+     "bytes": 198068
+    },
+    {
+     "id": "new-life",
+     "file": "how-salvation-works/older/08-new-life.mp3",
+     "hash": "16bbc611d993dbceaf64",
+     "seconds": 37.39,
+     "bytes": 224852
+    },
+    {
+     "id": "to-come",
+     "file": "how-salvation-works/older/09-to-come.mp3",
+     "hash": "3ae9e0bfa1851b28e38c",
+     "seconds": 33.46,
+     "bytes": 201380
+    }
+   ]
+  },
+  "grace": {
+   "title": {
+    "file": "grace/title.mp3",
+    "hash": "6d70a067cf9a6d3439f0",
+    "seconds": 3,
+    "bytes": 18500
+   },
+   "younger": [
+    {
+     "id": "gift",
+     "file": "grace/younger/01-gift.mp3",
+     "hash": "32167e60b35903a7aaa9",
+     "seconds": 28.73,
+     "bytes": 173012
+    },
+    {
+     "id": "vineyard",
+     "file": "grace/younger/02-vineyard.mp3",
+     "hash": "97f559c5ccea7f28ec84",
+     "seconds": 28.23,
+     "bytes": 169988
+    },
+    {
+     "id": "while",
+     "file": "grace/younger/03-while.mp3",
+     "hash": "55c7d523b330e88baa7d",
+     "seconds": 22.1,
+     "bytes": 133124
+    },
+    {
+     "id": "hands",
+     "file": "grace/younger/04-hands.mp3",
+     "hash": "7f7c6718e2ef22372ec2",
+     "seconds": 28.6,
+     "bytes": 172148
+    },
+    {
+     "id": "new-way",
+     "file": "grace/younger/05-new-way.mp3",
+     "hash": "7f70ffa89e28f0d590d1",
+     "seconds": 22.71,
+     "bytes": 136868
+    },
+    {
+     "id": "enough",
+     "file": "grace/younger/06-enough.mp3",
+     "hash": "e1e5a828a2ec497befc6",
+     "seconds": 23.38,
+     "bytes": 140900
+    },
+    {
+     "id": "pass-on",
+     "file": "grace/younger/07-pass-on.mp3",
+     "hash": "a73f6d9f2ef2c6440319",
+     "seconds": 21.45,
+     "bytes": 129236
+    }
+   ],
+   "older": [
+    {
+     "id": "gift",
+     "file": "grace/older/01-gift.mp3",
+     "hash": "74815319c499e16383b3",
+     "seconds": 27.59,
+     "bytes": 166100
+    },
+    {
+     "id": "vineyard",
+     "file": "grace/older/02-vineyard.mp3",
+     "hash": "742d818441b021f26880",
+     "seconds": 23.57,
+     "bytes": 142052
+    },
+    {
+     "id": "while",
+     "file": "grace/older/03-while.mp3",
+     "hash": "c5c8b487fef2e2a14f43",
+     "seconds": 23.19,
+     "bytes": 139748
+    },
+    {
+     "id": "hands",
+     "file": "grace/older/04-hands.mp3",
+     "hash": "26b114b8f14f7ff1c33e",
+     "seconds": 29.41,
+     "bytes": 177044
+    },
+    {
+     "id": "new-way",
+     "file": "grace/older/05-new-way.mp3",
+     "hash": "0df7916fedb17ec0d022",
+     "seconds": 24.09,
+     "bytes": 145076
+    },
+    {
+     "id": "enough",
+     "file": "grace/older/06-enough.mp3",
+     "hash": "63cd5414d6a36c678875",
+     "seconds": 25.58,
+     "bytes": 154004
+    },
+    {
+     "id": "pass-on",
+     "file": "grace/older/07-pass-on.mp3",
+     "hash": "9fc19dc7d89d246564fd",
+     "seconds": 26.25,
+     "bytes": 158036
+    }
+   ]
+  },
+  "faith": {
+   "title": {
+    "file": "faith/title.mp3",
+    "hash": "7e6b9a8c7bdba07545da",
+    "seconds": 2.87,
+    "bytes": 17780
+   },
+   "younger": [
+    {
+     "id": "trust",
+     "file": "faith/younger/01-trust.mp3",
+     "hash": "92a7346f104c4257a752",
+     "seconds": 26.06,
+     "bytes": 156884
+    },
+    {
+     "id": "abraham",
+     "file": "faith/younger/02-abraham.mp3",
+     "hash": "5653c76b817abec0f804",
+     "seconds": 23,
+     "bytes": 138596
+    },
+    {
+     "id": "seed",
+     "file": "faith/younger/03-seed.mp3",
+     "hash": "62f039dd85fb813cd712",
+     "seconds": 24.26,
+     "bytes": 146084
+    },
+    {
+     "id": "help",
+     "file": "faith/younger/04-help.mp3",
+     "hash": "47a9d1d9fb4d414fb020",
+     "seconds": 20.94,
+     "bytes": 126212
+    },
+    {
+     "id": "hearing",
+     "file": "faith/younger/05-hearing.mp3",
+     "hash": "40036167a74da7a61a7b",
+     "seconds": 23.06,
+     "bytes": 138884
+    },
+    {
+     "id": "walks",
+     "file": "faith/younger/06-walks.mp3",
+     "hash": "430e8ef69306368aba0f",
+     "seconds": 22.87,
+     "bytes": 137732
+    },
+    {
+     "id": "unseen",
+     "file": "faith/younger/07-unseen.mp3",
+     "hash": "a0388ebd11d2ffaef6fc",
+     "seconds": 16.66,
+     "bytes": 100580
+    }
+   ],
+   "older": [
+    {
+     "id": "trust",
+     "file": "faith/older/01-trust.mp3",
+     "hash": "c783e2cc09cc3ffa0920",
+     "seconds": 27.75,
+     "bytes": 167108
+    },
+    {
+     "id": "abraham",
+     "file": "faith/older/02-abraham.mp3",
+     "hash": "725a5c4f7a9098f53d7b",
+     "seconds": 31.4,
+     "bytes": 188996
+    },
+    {
+     "id": "seed",
+     "file": "faith/older/03-seed.mp3",
+     "hash": "66fa01e2ed918270fb31",
+     "seconds": 25.38,
+     "bytes": 152852
+    },
+    {
+     "id": "help",
+     "file": "faith/older/04-help.mp3",
+     "hash": "1bbcdf6d7898f2b49fbf",
+     "seconds": 22.37,
+     "bytes": 134852
+    },
+    {
+     "id": "hearing",
+     "file": "faith/older/05-hearing.mp3",
+     "hash": "607c52ff3d1de9e2ce82",
+     "seconds": 25,
+     "bytes": 150548
+    },
+    {
+     "id": "walks",
+     "file": "faith/older/06-walks.mp3",
+     "hash": "168bbfd50e6b22c13c31",
+     "seconds": 29.67,
+     "bytes": 178628
+    },
+    {
+     "id": "unseen",
+     "file": "faith/older/07-unseen.mp3",
+     "hash": "b11f87ac097033b82dd9",
+     "seconds": 23.7,
+     "bytes": 142772
+    }
+   ]
+  },
+  "gospel-in-a-minute": {
+   "title": {
+    "file": "gospel-in-a-minute/title.mp3",
+    "hash": "c1d061d77d0c0be6940c",
+    "seconds": 2.17,
+    "bytes": 13604
+   },
+   "younger": [
+    {
+     "id": "made",
+     "file": "gospel-in-a-minute/younger/01-made.mp3",
+     "hash": "8f5da788742235e4ed66",
+     "seconds": 11.47,
+     "bytes": 69476
+    },
+    {
+     "id": "turned",
+     "file": "gospel-in-a-minute/younger/02-turned.mp3",
+     "hash": "69ab056b394bbe30a53f",
+     "seconds": 8.16,
+     "bytes": 49604
+    },
+    {
+     "id": "cannot",
+     "file": "gospel-in-a-minute/younger/03-cannot.mp3",
+     "hash": "53e794d259b3e190b935",
+     "seconds": 8.34,
+     "bytes": 50612
+    },
+    {
+     "id": "comes",
+     "file": "gospel-in-a-minute/younger/04-comes.mp3",
+     "hash": "3a355809b0910ffa9d29",
+     "seconds": 10.27,
+     "bytes": 62276
+    },
+    {
+     "id": "died-rose",
+     "file": "gospel-in-a-minute/younger/05-died-rose.mp3",
+     "hash": "7f2c07942a65e52c0758",
+     "seconds": 25.34,
+     "bytes": 152564
+    },
+    {
+     "id": "gift",
+     "file": "gospel-in-a-minute/younger/06-gift.mp3",
+     "hash": "2f82729bb2f233784f86",
+     "seconds": 9.14,
+     "bytes": 55364
+    },
+    {
+     "id": "for-ever",
+     "file": "gospel-in-a-minute/younger/07-for-ever.mp3",
+     "hash": "e8f22a9b89cfac7f8fb1",
+     "seconds": 15.79,
+     "bytes": 95252
+    }
+   ],
+   "older": [
+    {
+     "id": "made",
+     "file": "gospel-in-a-minute/older/01-made.mp3",
+     "hash": "f51776c5b37a4b6e909b",
+     "seconds": 12.87,
+     "bytes": 77828
+    },
+    {
+     "id": "turned",
+     "file": "gospel-in-a-minute/older/02-turned.mp3",
+     "hash": "30625f8e6ef97d628926",
+     "seconds": 10.43,
+     "bytes": 63140
+    },
+    {
+     "id": "cannot",
+     "file": "gospel-in-a-minute/older/03-cannot.mp3",
+     "hash": "ab795c4191186335732a",
+     "seconds": 9.25,
+     "bytes": 56084
+    },
+    {
+     "id": "comes",
+     "file": "gospel-in-a-minute/older/04-comes.mp3",
+     "hash": "793d6846b11c1973a163",
+     "seconds": 12.21,
+     "bytes": 73796
+    },
+    {
+     "id": "died-rose",
+     "file": "gospel-in-a-minute/older/05-died-rose.mp3",
+     "hash": "33df2cf914821ad43f8f",
+     "seconds": 25.42,
+     "bytes": 153140
+    },
+    {
+     "id": "gift",
+     "file": "gospel-in-a-minute/older/06-gift.mp3",
+     "hash": "33a00dca74324fe6ab28",
+     "seconds": 12.02,
+     "bytes": 72644
+    },
+    {
+     "id": "for-ever",
+     "file": "gospel-in-a-minute/older/07-for-ever.mp3",
+     "hash": "a47b57bdd7b6ddcf9368",
+     "seconds": 16.09,
+     "bytes": 97124
+    }
+   ]
+  },
+  "spirit-in-a-believer": {
+   "title": {
+    "file": "spirit-in-a-believer/title.mp3",
+    "hash": "002fc910b96883aee53c",
+    "seconds": 2.88,
+    "bytes": 17924
+   },
+   "younger": [
+    {
+     "id": "lives-in",
+     "file": "spirit-in-a-believer/younger/01-lives-in.mp3",
+     "hash": "292b14c0b2ba9f90bb14",
+     "seconds": 18.97,
+     "bytes": 114404
+    },
+    {
+     "id": "vine",
+     "file": "spirit-in-a-believer/younger/02-vine.mp3",
+     "hash": "5873bd8c817f18d26b35",
+     "seconds": 25.67,
+     "bytes": 154580
+    },
+    {
+     "id": "children",
+     "file": "spirit-in-a-believer/younger/03-children.mp3",
+     "hash": "bea2799d8ed894361e39",
+     "seconds": 18.61,
+     "bytes": 112244
+    },
+    {
+     "id": "fruit",
+     "file": "spirit-in-a-believer/younger/04-fruit.mp3",
+     "hash": "348e5aff61eaed704d48",
+     "seconds": 26.3,
+     "bytes": 158324
+    },
+    {
+     "id": "gifts",
+     "file": "spirit-in-a-believer/younger/05-gifts.mp3",
+     "hash": "4870dcc8b2686372a076",
+     "seconds": 18.99,
+     "bytes": 114548
+    },
+    {
+     "id": "differ",
+     "file": "spirit-in-a-believer/younger/06-differ.mp3",
+     "hash": "fc6b97880c43be6419b3",
+     "seconds": 17.77,
+     "bytes": 107204
+    },
+    {
+     "id": "pray",
+     "file": "spirit-in-a-believer/younger/07-pray.mp3",
+     "hash": "209b80eab50ccb03a414",
+     "seconds": 22.82,
+     "bytes": 137444
+    }
+   ],
+   "older": [
+    {
+     "id": "lives-in",
+     "file": "spirit-in-a-believer/older/01-lives-in.mp3",
+     "hash": "412790efa26e024a0b48",
+     "seconds": 26.61,
+     "bytes": 160196
+    },
+    {
+     "id": "vine",
+     "file": "spirit-in-a-believer/older/02-vine.mp3",
+     "hash": "2d142126357642e881eb",
+     "seconds": 28.81,
+     "bytes": 173444
+    },
+    {
+     "id": "children",
+     "file": "spirit-in-a-believer/older/03-children.mp3",
+     "hash": "4fe69738f2b9dd81d1e4",
+     "seconds": 27.94,
+     "bytes": 168260
+    },
+    {
+     "id": "fruit",
+     "file": "spirit-in-a-believer/older/04-fruit.mp3",
+     "hash": "74e9a3c398d85d0de5bd",
+     "seconds": 31.02,
+     "bytes": 186692
+    },
+    {
+     "id": "gifts",
+     "file": "spirit-in-a-believer/older/05-gifts.mp3",
+     "hash": "296b0512372539c15c66",
+     "seconds": 24.87,
+     "bytes": 149828
+    },
+    {
+     "id": "differ",
+     "file": "spirit-in-a-believer/older/06-differ.mp3",
+     "hash": "6f6bae89ed7c019bc3e6",
+     "seconds": 29.02,
+     "bytes": 174740
+    },
+    {
+     "id": "pray",
+     "file": "spirit-in-a-believer/older/07-pray.mp3",
+     "hash": "d825327998e34952f5ba",
+     "seconds": 27.67,
+     "bytes": 166676
+    }
+   ]
+  },
+  "the-church": {
+   "title": {
+    "file": "the-church/title.mp3",
+    "hash": "e9a350ae38e35b5b8996",
+    "seconds": 1.87,
+    "bytes": 11732
+   },
+   "younger": [
+    {
+     "id": "people",
+     "file": "the-church/younger/01-people.mp3",
+     "hash": "87870f8a67bdcd8ee9fb",
+     "seconds": 11.02,
+     "bytes": 66596
+    },
+    {
+     "id": "body",
+     "file": "the-church/younger/02-body.mp3",
+     "hash": "c28a5c5cac4b783fbad1",
+     "seconds": 28.44,
+     "bytes": 171140
+    },
+    {
+     "id": "stones",
+     "file": "the-church/younger/03-stones.mp3",
+     "hash": "2ad51729c6a3a98cdc46",
+     "seconds": 29.91,
+     "bytes": 180068
+    },
+    {
+     "id": "family",
+     "file": "the-church/younger/04-family.mp3",
+     "hash": "b1ea9b4f1a1a108ed5e4",
+     "seconds": 12.12,
+     "bytes": 73220
+    },
+    {
+     "id": "gathered",
+     "file": "the-church/younger/05-gathered.mp3",
+     "hash": "4a09faa21c8f512c672b",
+     "seconds": 19.67,
+     "bytes": 118580
+    },
+    {
+     "id": "sent",
+     "file": "the-church/younger/06-sent.mp3",
+     "hash": "a5a52df2f4387b4c5fea",
+     "seconds": 33.81,
+     "bytes": 203396
+    },
+    {
+     "id": "one-lord",
+     "file": "the-church/younger/07-one-lord.mp3",
+     "hash": "6dc8fe9a8a778a49e70d",
+     "seconds": 23.1,
+     "bytes": 139172
+    }
+   ],
+   "older": [
+    {
+     "id": "people",
+     "file": "the-church/older/01-people.mp3",
+     "hash": "214bb3d31f78d2def29c",
+     "seconds": 19.87,
+     "bytes": 119732
+    },
+    {
+     "id": "body",
+     "file": "the-church/older/02-body.mp3",
+     "hash": "cdecf406f2a261a1ea66",
+     "seconds": 25.57,
+     "bytes": 154004
+    },
+    {
+     "id": "stones",
+     "file": "the-church/older/03-stones.mp3",
+     "hash": "87dc8388c3c6c2e57b8a",
+     "seconds": 28.04,
+     "bytes": 168836
+    },
+    {
+     "id": "family",
+     "file": "the-church/older/04-family.mp3",
+     "hash": "0156db620e4743669d61",
+     "seconds": 14.58,
+     "bytes": 88052
+    },
+    {
+     "id": "gathered",
+     "file": "the-church/older/05-gathered.mp3",
+     "hash": "e8c2096f139dad0f267e",
+     "seconds": 26.38,
+     "bytes": 158900
+    },
+    {
+     "id": "sent",
+     "file": "the-church/older/06-sent.mp3",
+     "hash": "f51a9fce575075dbd0f6",
+     "seconds": 35.83,
+     "bytes": 215636
+    },
+    {
+     "id": "one-lord",
+     "file": "the-church/older/07-one-lord.mp3",
+     "hash": "75553ba3b30d5ee7a1cb",
+     "seconds": 36.77,
+     "bytes": 221252
+    }
+   ]
+  },
+  "baptism-and-supper": {
+   "title": {
+    "file": "baptism-and-supper/title.mp3",
+    "hash": "11ab4de12c60fc21ef2e",
+    "seconds": 2.77,
+    "bytes": 17204
+   },
+   "younger": [
+    {
+     "id": "water",
+     "file": "baptism-and-supper/younger/01-water.mp3",
+     "hash": "95352071bc969301a064",
+     "seconds": 29.42,
+     "bytes": 177044
+    },
+    {
+     "id": "bread-and-cup",
+     "file": "baptism-and-supper/younger/02-bread-and-cup.mp3",
+     "hash": "fa1f16b63ba9d8f458b5",
+     "seconds": 22.57,
+     "bytes": 136004
+    },
+    {
+     "id": "shared",
+     "file": "baptism-and-supper/younger/03-shared.mp3",
+     "hash": "bb486a4e734230a9e4d1",
+     "seconds": 33.56,
+     "bytes": 201956
+    },
+    {
+     "id": "who",
+     "file": "baptism-and-supper/younger/04-who.mp3",
+     "hash": "60727a460e6fb934a37c",
+     "seconds": 26.43,
+     "bytes": 159188
+    },
+    {
+     "id": "how",
+     "file": "baptism-and-supper/younger/05-how.mp3",
+     "hash": "5555e2bad34564a486ec",
+     "seconds": 16.79,
+     "bytes": 101300
+    },
+    {
+     "id": "supper",
+     "file": "baptism-and-supper/younger/06-supper.mp3",
+     "hash": "610204fcdfbbc0ae88b8",
+     "seconds": 19.11,
+     "bytes": 115268
+    },
+    {
+     "id": "one-lord",
+     "file": "baptism-and-supper/younger/07-one-lord.mp3",
+     "hash": "cc2b1ffb079371aa1193",
+     "seconds": 25.02,
+     "bytes": 150692
+    }
+   ],
+   "older": [
+    {
+     "id": "water",
+     "file": "baptism-and-supper/older/01-water.mp3",
+     "hash": "ad161cdfa09984e84490",
+     "seconds": 31.54,
+     "bytes": 189860
+    },
+    {
+     "id": "bread-and-cup",
+     "file": "baptism-and-supper/older/02-bread-and-cup.mp3",
+     "hash": "7bffd7a34c6a25db8613",
+     "seconds": 30.02,
+     "bytes": 180644
+    },
+    {
+     "id": "shared",
+     "file": "baptism-and-supper/older/03-shared.mp3",
+     "hash": "f5156903272c4271fbe8",
+     "seconds": 44.06,
+     "bytes": 264884
+    },
+    {
+     "id": "who",
+     "file": "baptism-and-supper/older/04-who.mp3",
+     "hash": "fcda916d303e0a153124",
+     "seconds": 32.18,
+     "bytes": 193604
+    },
+    {
+     "id": "how",
+     "file": "baptism-and-supper/older/05-how.mp3",
+     "hash": "ff25c3ffa8205f0026bd",
+     "seconds": 37.39,
+     "bytes": 224996
+    },
+    {
+     "id": "supper",
+     "file": "baptism-and-supper/older/06-supper.mp3",
+     "hash": "852ae565be873b77148a",
+     "seconds": 32.24,
+     "bytes": 194036
+    },
+    {
+     "id": "one-lord",
+     "file": "baptism-and-supper/older/07-one-lord.mp3",
+     "hash": "df2e24c7c916c96a61c7",
+     "seconds": 36.17,
+     "bytes": 217652
+    }
+   ]
+  },
+  "the-bible": {
+   "title": {
+    "file": "the-bible/title.mp3",
+    "hash": "e1c12f32b579127dec5c",
+    "seconds": 2.5,
+    "bytes": 15620
+   },
+   "younger": [
+    {
+     "id": "many",
+     "file": "the-bible/younger/01-many.mp3",
+     "hash": "64e01b9aa9a87e545895",
+     "seconds": 27.25,
+     "bytes": 164084
+    },
+    {
+     "id": "spoken",
+     "file": "the-bible/younger/02-spoken.mp3",
+     "hash": "1272df5970c50989d78d",
+     "seconds": 26.88,
+     "bytes": 161780
+    },
+    {
+     "id": "scrolls",
+     "file": "the-bible/younger/03-scrolls.mp3",
+     "hash": "cec695e10e0bc7b71aa2",
+     "seconds": 31.79,
+     "bytes": 191300
+    },
+    {
+     "id": "copied",
+     "file": "the-bible/younger/04-copied.mp3",
+     "hash": "a2633f8b46c820f00c61",
+     "seconds": 31.5,
+     "bytes": 189572
+    },
+    {
+     "id": "codex",
+     "file": "the-bible/younger/05-codex.mp3",
+     "hash": "5e7976082a8cdd3aec3b",
+     "seconds": 27.55,
+     "bytes": 165812
+    },
+    {
+     "id": "received",
+     "file": "the-bible/younger/06-received.mp3",
+     "hash": "ad99f06020304f918c1b",
+     "seconds": 18.32,
+     "bytes": 110516
+    },
+    {
+     "id": "translated",
+     "file": "the-bible/younger/07-translated.mp3",
+     "hash": "26a49b584693efab59ba",
+     "seconds": 26.4,
+     "bytes": 159044
+    }
+   ],
+   "older": [
+    {
+     "id": "many",
+     "file": "the-bible/older/01-many.mp3",
+     "hash": "c24d94f479cd28a866e1",
+     "seconds": 35.96,
+     "bytes": 216356
+    },
+    {
+     "id": "spoken",
+     "file": "the-bible/older/02-spoken.mp3",
+     "hash": "3cc95d25370fa73cfb79",
+     "seconds": 32.02,
+     "bytes": 192596
+    },
+    {
+     "id": "scrolls",
+     "file": "the-bible/older/03-scrolls.mp3",
+     "hash": "aefc3ef9ec5d1cb8fccd",
+     "seconds": 35.55,
+     "bytes": 213908
+    },
+    {
+     "id": "copied",
+     "file": "the-bible/older/04-copied.mp3",
+     "hash": "5d4b0ca6532a05ed7ea2",
+     "seconds": 40.04,
+     "bytes": 240836
+    },
+    {
+     "id": "codex",
+     "file": "the-bible/older/05-codex.mp3",
+     "hash": "97eb3b009a015490fd40",
+     "seconds": 38.08,
+     "bytes": 229028
+    },
+    {
+     "id": "received",
+     "file": "the-bible/older/06-received.mp3",
+     "hash": "aa2432b630dc6294dcaa",
+     "seconds": 31.74,
+     "bytes": 191012
+    },
+    {
+     "id": "translated",
+     "file": "the-bible/older/07-translated.mp3",
+     "hash": "b38df3b0c3c4e2e5fb33",
+     "seconds": 43.05,
+     "bytes": 258836
+    }
+   ]
+  },
+  "prayer": {
+   "title": {
+    "file": "prayer/title.mp3",
+    "hash": "e5f55a95a25392c28e6a",
+    "seconds": 1.14,
+    "bytes": 7412
+   },
+   "younger": [
+    {
+     "id": "talking",
+     "file": "prayer/younger/01-talking.mp3",
+     "hash": "dfc242628ace0dffe760",
+     "seconds": 13.41,
+     "bytes": 80996
+    },
+    {
+     "id": "our-father",
+     "file": "prayer/younger/02-our-father.mp3",
+     "hash": "438324ba7390aff48196",
+     "seconds": 25.26,
+     "bytes": 152132
+    },
+    {
+     "id": "thanks",
+     "file": "prayer/younger/03-thanks.mp3",
+     "hash": "e68a91a15bf0f769aa63",
+     "seconds": 18.97,
+     "bytes": 114404
+    },
+    {
+     "id": "asking",
+     "file": "prayer/younger/04-asking.mp3",
+     "hash": "2ac03132f9ed8c8153c9",
+     "seconds": 19.26,
+     "bytes": 116132
+    },
+    {
+     "id": "sorry",
+     "file": "prayer/younger/05-sorry.mp3",
+     "hash": "02de87023263ddaab1fd",
+     "seconds": 22.2,
+     "bytes": 133700
+    },
+    {
+     "id": "waiting",
+     "file": "prayer/younger/06-waiting.mp3",
+     "hash": "6516b428586de9c71cc2",
+     "seconds": 25.82,
+     "bytes": 155444
+    },
+    {
+     "id": "spirit-helps",
+     "file": "prayer/younger/07-spirit-helps.mp3",
+     "hash": "050941120f85d0b283b9",
+     "seconds": 22.94,
+     "bytes": 138164
+    }
+   ],
+   "older": [
+    {
+     "id": "talking",
+     "file": "prayer/older/01-talking.mp3",
+     "hash": "db7547d535f79dd9e283",
+     "seconds": 20,
+     "bytes": 120596
+    },
+    {
+     "id": "our-father",
+     "file": "prayer/older/02-our-father.mp3",
+     "hash": "c853ea9893950f6f9f37",
+     "seconds": 32.43,
+     "bytes": 195188
+    },
+    {
+     "id": "thanks",
+     "file": "prayer/older/03-thanks.mp3",
+     "hash": "0faa8705a6b31061e00b",
+     "seconds": 21.08,
+     "bytes": 127076
+    },
+    {
+     "id": "asking",
+     "file": "prayer/older/04-asking.mp3",
+     "hash": "fab650f14887247e96f2",
+     "seconds": 24.5,
+     "bytes": 147524
+    },
+    {
+     "id": "sorry",
+     "file": "prayer/older/05-sorry.mp3",
+     "hash": "066ee8cfe7d33239c281",
+     "seconds": 28.45,
+     "bytes": 171284
+    },
+    {
+     "id": "waiting",
+     "file": "prayer/older/06-waiting.mp3",
+     "hash": "35a171926d8a2a6288a3",
+     "seconds": 38.54,
+     "bytes": 231764
+    },
+    {
+     "id": "spirit-helps",
+     "file": "prayer/older/07-spirit-helps.mp3",
+     "hash": "1689087d3cd65eb3816b",
+     "seconds": 31.62,
+     "bytes": 190292
+    }
+   ]
+  },
+  "life-to-come": {
+   "title": {
+    "file": "life-to-come/title.mp3",
+    "hash": "62f5ca57ca239a7e779d",
+    "seconds": 1.97,
+    "bytes": 12308
+   },
+   "younger": [
+    {
+     "id": "real",
+     "file": "life-to-come/younger/01-real.mp3",
+     "hash": "c3eddc97a6ce44051a4f",
+     "seconds": 15.03,
+     "bytes": 90788
+    },
+    {
+     "id": "not-the-end",
+     "file": "life-to-come/younger/02-not-the-end.mp3",
+     "hash": "87b19bc01316bce11ff0",
+     "seconds": 20.1,
+     "bytes": 121172
+    },
+    {
+     "id": "with-christ",
+     "file": "life-to-come/younger/03-with-christ.mp3",
+     "hash": "670884eee5437e558ddc",
+     "seconds": 24.03,
+     "bytes": 144788
+    },
+    {
+     "id": "raised",
+     "file": "life-to-come/younger/04-raised.mp3",
+     "hash": "9c1136bef832a4da49a0",
+     "seconds": 24.45,
+     "bytes": 147236
+    },
+    {
+     "id": "put-right",
+     "file": "life-to-come/younger/05-put-right.mp3",
+     "hash": "be02f9e6b49e0a2516fa",
+     "seconds": 20.55,
+     "bytes": 123908
+    },
+    {
+     "id": "new",
+     "file": "life-to-come/younger/06-new.mp3",
+     "hash": "ba40d8de818a4ec28186",
+     "seconds": 22.4,
+     "bytes": 134996
+    },
+    {
+     "id": "tears",
+     "file": "life-to-come/younger/07-tears.mp3",
+     "hash": "446cc96b431fab970b63",
+     "seconds": 25.96,
+     "bytes": 156308
+    }
+   ],
+   "older": [
+    {
+     "id": "real",
+     "file": "life-to-come/older/01-real.mp3",
+     "hash": "77658b82572c181cd368",
+     "seconds": 15.74,
+     "bytes": 94964
+    },
+    {
+     "id": "not-the-end",
+     "file": "life-to-come/older/02-not-the-end.mp3",
+     "hash": "66a64cdb20d069654dad",
+     "seconds": 25.95,
+     "bytes": 156308
+    },
+    {
+     "id": "with-christ",
+     "file": "life-to-come/older/03-with-christ.mp3",
+     "hash": "e2a20438db8eb8c9e4a8",
+     "seconds": 34.68,
+     "bytes": 208580
+    },
+    {
+     "id": "raised",
+     "file": "life-to-come/older/04-raised.mp3",
+     "hash": "0a98abaff3fb211642f7",
+     "seconds": 32.15,
+     "bytes": 193460
+    },
+    {
+     "id": "put-right",
+     "file": "life-to-come/older/05-put-right.mp3",
+     "hash": "d5ab31ad48f8503a6c1d",
+     "seconds": 34.18,
+     "bytes": 205700
+    },
+    {
+     "id": "new",
+     "file": "life-to-come/older/06-new.mp3",
+     "hash": "51005fb755dbed6f0e42",
+     "seconds": 37.53,
+     "bytes": 225716
+    },
+    {
+     "id": "tears",
+     "file": "life-to-come/older/07-tears.mp3",
+     "hash": "329d87a18973fad7e2c1",
+     "seconds": 27.27,
+     "bytes": 164228
+    }
+   ]
+  },
+  "john-3-16": {
+   "title": {
+    "file": "john-3-16/title.mp3",
+    "hash": "f88c425eb4d30499c2dd",
+    "seconds": 3.52,
+    "bytes": 21668
+   },
+   "younger": [
+    {
+     "id": "night",
+     "file": "john-3-16/younger/01-night.mp3",
+     "hash": "95ec800751a9947be06f",
+     "seconds": 21.37,
+     "bytes": 128804
+    },
+    {
+     "id": "born",
+     "file": "john-3-16/younger/02-born.mp3",
+     "hash": "fa76cf2d5eab55e3496b",
+     "seconds": 26.01,
+     "bytes": 156596
+    },
+    {
+     "id": "lifted",
+     "file": "john-3-16/younger/03-lifted.mp3",
+     "hash": "7c05a7b94505981110e1",
+     "seconds": 34.09,
+     "bytes": 205124
+    },
+    {
+     "id": "loved",
+     "file": "john-3-16/younger/04-loved.mp3",
+     "hash": "a59a61aa2c7cf3cf1c4f",
+     "seconds": 26.29,
+     "bytes": 158324
+    },
+    {
+     "id": "believes",
+     "file": "john-3-16/younger/05-believes.mp3",
+     "hash": "c92fabd457e26c8c4ebe",
+     "seconds": 15.61,
+     "bytes": 94244
+    },
+    {
+     "id": "save",
+     "file": "john-3-16/younger/06-save.mp3",
+     "hash": "e320bbb214d1a2399eec",
+     "seconds": 21.14,
+     "bytes": 127364
+    },
+    {
+     "id": "daylight",
+     "file": "john-3-16/younger/07-daylight.mp3",
+     "hash": "cc746af636cc9f62393b",
+     "seconds": 24.26,
+     "bytes": 146084
+    }
+   ],
+   "older": [
+    {
+     "id": "night",
+     "file": "john-3-16/older/01-night.mp3",
+     "hash": "98d8a97881b0c098dfe8",
+     "seconds": 26.08,
+     "bytes": 157028
+    },
+    {
+     "id": "born",
+     "file": "john-3-16/older/02-born.mp3",
+     "hash": "ba8193ad8d4e0e8cf12f",
+     "seconds": 26.64,
+     "bytes": 160340
+    },
+    {
+     "id": "lifted",
+     "file": "john-3-16/older/03-lifted.mp3",
+     "hash": "51e6a0f5e2160a9ecb94",
+     "seconds": 31.17,
+     "bytes": 187556
+    },
+    {
+     "id": "loved",
+     "file": "john-3-16/older/04-loved.mp3",
+     "hash": "ea251fa3d103fa9ebdc3",
+     "seconds": 29.93,
+     "bytes": 180212
+    },
+    {
+     "id": "believes",
+     "file": "john-3-16/older/05-believes.mp3",
+     "hash": "01af82573102bc5343a5",
+     "seconds": 17.02,
+     "bytes": 102740
+    },
+    {
+     "id": "save",
+     "file": "john-3-16/older/06-save.mp3",
+     "hash": "54f42d8880599bfd5602",
+     "seconds": 23.23,
+     "bytes": 139892
+    },
+    {
+     "id": "daylight",
+     "file": "john-3-16/older/07-daylight.mp3",
+     "hash": "a3089f1ca2e8ce6cec18",
+     "seconds": 20.25,
+     "bytes": 122036
+    }
+   ]
+  },
+  "psalm-23": {
+   "title": {
+    "file": "psalm-23/title.mp3",
+    "hash": "a53c35a4fc15de20a33e",
+    "seconds": 3.73,
+    "bytes": 22964
+   },
+   "younger": [
+    {
+     "id": "shepherd",
+     "file": "psalm-23/younger/01-shepherd.mp3",
+     "hash": "5558eebcc1377bbd26c1",
+     "seconds": 21.03,
+     "bytes": 126788
+    },
+    {
+     "id": "pastures",
+     "file": "psalm-23/younger/02-pastures.mp3",
+     "hash": "c687065aeff34cb48ef4",
+     "seconds": 24.24,
+     "bytes": 146084
+    },
+    {
+     "id": "valley",
+     "file": "psalm-23/younger/03-valley.mp3",
+     "hash": "7c5679621884dc62ccdf",
+     "seconds": 26.72,
+     "bytes": 160916
+    },
+    {
+     "id": "rod",
+     "file": "psalm-23/younger/04-rod.mp3",
+     "hash": "191b0ceac37db6631332",
+     "seconds": 24.53,
+     "bytes": 147812
+    },
+    {
+     "id": "table",
+     "file": "psalm-23/younger/05-table.mp3",
+     "hash": "1266d98bd04cf67cceec",
+     "seconds": 27.17,
+     "bytes": 163652
+    },
+    {
+     "id": "house",
+     "file": "psalm-23/younger/06-house.mp3",
+     "hash": "bdac9f1326d9258d7be5",
+     "seconds": 24.61,
+     "bytes": 148244
+    },
+    {
+     "id": "good-shepherd",
+     "file": "psalm-23/younger/07-good-shepherd.mp3",
+     "hash": "b57369ec2458d2d27351",
+     "seconds": 20.39,
+     "bytes": 122900
+    }
+   ],
+   "older": [
+    {
+     "id": "shepherd",
+     "file": "psalm-23/older/01-shepherd.mp3",
+     "hash": "cad84c50a44c09a1618e",
+     "seconds": 19.63,
+     "bytes": 118436
+    },
+    {
+     "id": "pastures",
+     "file": "psalm-23/older/02-pastures.mp3",
+     "hash": "36b96a2873dec36f97cc",
+     "seconds": 24.97,
+     "bytes": 150404
+    },
+    {
+     "id": "valley",
+     "file": "psalm-23/older/03-valley.mp3",
+     "hash": "d5e96c90159e85a1255a",
+     "seconds": 25.86,
+     "bytes": 155732
+    },
+    {
+     "id": "rod",
+     "file": "psalm-23/older/04-rod.mp3",
+     "hash": "4a149905020b0b2e99c0",
+     "seconds": 23.46,
+     "bytes": 141332
+    },
+    {
+     "id": "table",
+     "file": "psalm-23/older/05-table.mp3",
+     "hash": "1de7f1c0b205b4757392",
+     "seconds": 30.26,
+     "bytes": 182084
+    },
+    {
+     "id": "house",
+     "file": "psalm-23/older/06-house.mp3",
+     "hash": "92ba1dfd4767462fb082",
+     "seconds": 26.12,
+     "bytes": 157316
+    },
+    {
+     "id": "good-shepherd",
+     "file": "psalm-23/older/07-good-shepherd.mp3",
+     "hash": "514df33cc334297a9823",
+     "seconds": 24.4,
+     "bytes": 146948
+    }
+   ]
+  },
+  "romans-8-28": {
+   "title": {
+    "file": "romans-8-28/title.mp3",
+    "hash": "8a160f7e5ae68f65b977",
+    "seconds": 5.33,
+    "bytes": 32612
+   },
+   "younger": [
+    {
+     "id": "verse",
+     "file": "romans-8-28/younger/01-verse.mp3",
+     "hash": "2dc1030c38dee96f7a74",
+     "seconds": 26.03,
+     "bytes": 156740
+    },
+    {
+     "id": "not-good",
+     "file": "romans-8-28/younger/02-not-good.mp3",
+     "hash": "79347176c48c3d1ab4dd",
+     "seconds": 27.04,
+     "bytes": 162788
+    },
+    {
+     "id": "not-fine",
+     "file": "romans-8-28/younger/03-not-fine.mp3",
+     "hash": "6d9d76f495b64cdfb0f3",
+     "seconds": 12.57,
+     "bytes": 75956
+    },
+    {
+     "id": "works",
+     "file": "romans-8-28/younger/04-works.mp3",
+     "hash": "4d2c7e4b32c14bcb4aba",
+     "seconds": 25.9,
+     "bytes": 156020
+    },
+    {
+     "id": "good",
+     "file": "romans-8-28/younger/05-good.mp3",
+     "hash": "a69aa8341053d502078b",
+     "seconds": 19.57,
+     "bytes": 118004
+    },
+    {
+     "id": "groans",
+     "file": "romans-8-28/younger/06-groans.mp3",
+     "hash": "6a0137e3d79438749225",
+     "seconds": 20.54,
+     "bytes": 123764
+    },
+    {
+     "id": "nothing",
+     "file": "romans-8-28/younger/07-nothing.mp3",
+     "hash": "afd560653b87b778f041",
+     "seconds": 28.48,
+     "bytes": 171428
+    }
+   ],
+   "older": [
+    {
+     "id": "verse",
+     "file": "romans-8-28/older/01-verse.mp3",
+     "hash": "0e374e12b132b1ee546b",
+     "seconds": 27.68,
+     "bytes": 166676
+    },
+    {
+     "id": "not-good",
+     "file": "romans-8-28/older/02-not-good.mp3",
+     "hash": "aa03ec05d42010472b37",
+     "seconds": 33.44,
+     "bytes": 201236
+    },
+    {
+     "id": "not-fine",
+     "file": "romans-8-28/older/03-not-fine.mp3",
+     "hash": "b6c909d222291df4b8c8",
+     "seconds": 19.27,
+     "bytes": 116132
+    },
+    {
+     "id": "works",
+     "file": "romans-8-28/older/04-works.mp3",
+     "hash": "7d47b3595ee3a34a6db0",
+     "seconds": 27.28,
+     "bytes": 164228
+    },
+    {
+     "id": "good",
+     "file": "romans-8-28/older/05-good.mp3",
+     "hash": "9b75994db971d4c680d0",
+     "seconds": 21.46,
+     "bytes": 129380
+    },
+    {
+     "id": "groans",
+     "file": "romans-8-28/older/06-groans.mp3",
+     "hash": "fbcd791ea28edd1e9677",
+     "seconds": 23.63,
+     "bytes": 142340
+    },
+    {
+     "id": "nothing",
+     "file": "romans-8-28/older/07-nothing.mp3",
+     "hash": "40b6235babc962ead424",
+     "seconds": 28.68,
+     "bytes": 172580
+    }
+   ]
+  },
+  "who-made-god": {
+   "title": {
+    "file": "who-made-god/title.mp3",
+    "hash": "34cd8aacc50f8c438727",
+    "seconds": 1.61,
+    "bytes": 10292
+   },
+   "younger": [
+    {
+     "id": "from-something",
+     "file": "who-made-god/younger/01-from-something.mp3",
+     "hash": "267fdd751faa6984541b",
+     "seconds": 10.33,
+     "bytes": 62564
+    },
+    {
+     "id": "back",
+     "file": "who-made-god/younger/02-back.mp3",
+     "hash": "48ffab31d4037b879e13",
+     "seconds": 15.52,
+     "bytes": 93668
+    },
+    {
+     "id": "why-anything",
+     "file": "who-made-god/younger/03-why-anything.mp3",
+     "hash": "380340752493b2f35a44",
+     "seconds": 11.73,
+     "bytes": 70916
+    },
+    {
+     "id": "not-a-link",
+     "file": "who-made-god/younger/04-not-a-link.mp3",
+     "hash": "9d4675c55b76c46c1351",
+     "seconds": 15.98,
+     "bytes": 96404
+    },
+    {
+     "id": "everlasting",
+     "file": "who-made-god/younger/05-everlasting.mp3",
+     "hash": "db044d0a05c2f844d944",
+     "seconds": 25.39,
+     "bytes": 152852
+    },
+    {
+     "id": "i-am",
+     "file": "who-made-god/younger/06-i-am.mp3",
+     "hash": "422ae3b255082237e275",
+     "seconds": 28.54,
+     "bytes": 171860
+    }
+   ],
+   "older": [
+    {
+     "id": "from-something",
+     "file": "who-made-god/older/01-from-something.mp3",
+     "hash": "cc69398ef346275139b4",
+     "seconds": 11.34,
+     "bytes": 68612
+    },
+    {
+     "id": "back",
+     "file": "who-made-god/older/02-back.mp3",
+     "hash": "b6b73adf37c2d54e2cf5",
+     "seconds": 12.58,
+     "bytes": 76100
+    },
+    {
+     "id": "why-anything",
+     "file": "who-made-god/older/03-why-anything.mp3",
+     "hash": "b806761ea83eb195ef0d",
+     "seconds": 27.41,
+     "bytes": 164948
+    },
+    {
+     "id": "not-a-link",
+     "file": "who-made-god/older/04-not-a-link.mp3",
+     "hash": "2484d0e835fefb5c462d",
+     "seconds": 25.75,
+     "bytes": 155012
+    },
+    {
+     "id": "everlasting",
+     "file": "who-made-god/older/05-everlasting.mp3",
+     "hash": "dc9ee47d3b6efc3354d4",
+     "seconds": 27.29,
+     "bytes": 164372
+    },
+    {
+     "id": "i-am",
+     "file": "who-made-god/older/06-i-am.mp3",
+     "hash": "33448b11d988f5eee657",
+     "seconds": 37.86,
+     "bytes": 227732
+    }
+   ]
+  },
+  "does-god-exist": {
+   "title": {
+    "file": "does-god-exist/title.mp3",
+    "hash": "134bf692ebcadc80f3e6",
+    "seconds": 2.01,
+    "bytes": 12596
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "does-god-exist/younger/01-question.mp3",
+     "hash": "804417d2f85fc0b67cd2",
+     "seconds": 13.07,
+     "bytes": 78980
+    },
+    {
+     "id": "something",
+     "file": "does-god-exist/younger/02-something.mp3",
+     "hash": "61a32d26aa6457a659f3",
+     "seconds": 11.85,
+     "bytes": 71636
+    },
+    {
+     "id": "more-chain",
+     "file": "does-god-exist/younger/03-more-chain.mp3",
+     "hash": "aaf2316a6d77f5162872",
+     "seconds": 9.43,
+     "bytes": 57236
+    },
+    {
+     "id": "what-god-means",
+     "file": "does-god-exist/younger/04-what-god-means.mp3",
+     "hash": "ef2188f1cbfb92934ae8",
+     "seconds": 21.77,
+     "bytes": 131252
+    },
+    {
+     "id": "shows",
+     "file": "does-god-exist/younger/05-shows.mp3",
+     "hash": "e4904f2ca5e27a7aa3ed",
+     "seconds": 11.27,
+     "bytes": 68180
+    },
+    {
+     "id": "weigh",
+     "file": "does-god-exist/younger/06-weigh.mp3",
+     "hash": "cf69a758e55288e97bc8",
+     "seconds": 15.52,
+     "bytes": 93668
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "does-god-exist/older/01-question.mp3",
+     "hash": "2efa2bef5caa7f533864",
+     "seconds": 15.87,
+     "bytes": 95828
+    },
+    {
+     "id": "something",
+     "file": "does-god-exist/older/02-something.mp3",
+     "hash": "2a1d8cb909c08f8de9d7",
+     "seconds": 20.02,
+     "bytes": 120740
+    },
+    {
+     "id": "more-chain",
+     "file": "does-god-exist/older/03-more-chain.mp3",
+     "hash": "d301a125ebc8c8621541",
+     "seconds": 15.76,
+     "bytes": 95108
+    },
+    {
+     "id": "what-god-means",
+     "file": "does-god-exist/older/04-what-god-means.mp3",
+     "hash": "a53d3d84a33302d03562",
+     "seconds": 31.65,
+     "bytes": 190436
+    },
+    {
+     "id": "shows",
+     "file": "does-god-exist/older/05-shows.mp3",
+     "hash": "6fc614c715b29f76fa64",
+     "seconds": 22.6,
+     "bytes": 136148
+    },
+    {
+     "id": "weigh",
+     "file": "does-god-exist/older/06-weigh.mp3",
+     "hash": "3175d52c0fd4204b50eb",
+     "seconds": 25.21,
+     "bytes": 151844
+    }
+   ]
+  },
+  "why-cant-i-see-god": {
+   "title": {
+    "file": "why-cant-i-see-god/title.mp3",
+    "hash": "9411455682c39b03b47c",
+    "seconds": 2.38,
+    "bytes": 14900
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "why-cant-i-see-god/younger/01-question.mp3",
+     "hash": "d7992ec97c3a07119474",
+     "seconds": 23.21,
+     "bytes": 139892
+    },
+    {
+     "id": "unseen",
+     "file": "why-cant-i-see-god/younger/02-unseen.mp3",
+     "hash": "08eaf5d3b60a9c1ed869",
+     "seconds": 12.27,
+     "bytes": 74228
+    },
+    {
+     "id": "made",
+     "file": "why-cant-i-see-god/younger/03-made.mp3",
+     "hash": "a9aa3a8d5dac9b05b015",
+     "seconds": 22.17,
+     "bytes": 133556
+    },
+    {
+     "id": "spoken",
+     "file": "why-cant-i-see-god/younger/04-spoken.mp3",
+     "hash": "37d55cd573edad89f85b",
+     "seconds": 15.33,
+     "bytes": 92516
+    },
+    {
+     "id": "jesus",
+     "file": "why-cant-i-see-god/younger/05-jesus.mp3",
+     "hash": "07ace5c1d3271b08626c",
+     "seconds": 28.66,
+     "bytes": 172580
+    },
+    {
+     "id": "light",
+     "file": "why-cant-i-see-god/younger/06-light.mp3",
+     "hash": "0d32bad4030cddb5b9a8",
+     "seconds": 27.24,
+     "bytes": 164084
+    },
+    {
+     "id": "face",
+     "file": "why-cant-i-see-god/younger/07-face.mp3",
+     "hash": "a2d1af0234455168bcb7",
+     "seconds": 23.67,
+     "bytes": 142628
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "why-cant-i-see-god/older/01-question.mp3",
+     "hash": "7b3567ceed3f6b912229",
+     "seconds": 31.06,
+     "bytes": 186980
+    },
+    {
+     "id": "unseen",
+     "file": "why-cant-i-see-god/older/02-unseen.mp3",
+     "hash": "4bfc0b6530d723d06a73",
+     "seconds": 14.24,
+     "bytes": 86036
+    },
+    {
+     "id": "made",
+     "file": "why-cant-i-see-god/older/03-made.mp3",
+     "hash": "778b5c1f858ca2048e2a",
+     "seconds": 36.65,
+     "bytes": 220532
+    },
+    {
+     "id": "spoken",
+     "file": "why-cant-i-see-god/older/04-spoken.mp3",
+     "hash": "f3dcbab95e2c5beb83b2",
+     "seconds": 24.4,
+     "bytes": 146948
+    },
+    {
+     "id": "jesus",
+     "file": "why-cant-i-see-god/older/05-jesus.mp3",
+     "hash": "de3b10364747c89ffdb9",
+     "seconds": 34.57,
+     "bytes": 208004
+    },
+    {
+     "id": "light",
+     "file": "why-cant-i-see-god/older/06-light.mp3",
+     "hash": "4bbe11d40abd28cab0a0",
+     "seconds": 44.85,
+     "bytes": 269636
+    },
+    {
+     "id": "face",
+     "file": "why-cant-i-see-god/older/07-face.mp3",
+     "hash": "eb05d21adf56848d6663",
+     "seconds": 34.45,
+     "bytes": 207284
+    }
+   ]
+  },
+  "why-bad-things-happen": {
+   "title": {
+    "file": "why-bad-things-happen/title.mp3",
+    "hash": "32aec7fabe7d88905059",
+    "seconds": 2.4,
+    "bytes": 15044
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "why-bad-things-happen/younger/01-question.mp3",
+     "hash": "431a436040b8d9978b11",
+     "seconds": 12.63,
+     "bytes": 76388
+    },
+    {
+     "id": "broken",
+     "file": "why-bad-things-happen/younger/02-broken.mp3",
+     "hash": "5999d3ca9cfdcf219e51",
+     "seconds": 13,
+     "bytes": 78548
+    },
+    {
+     "id": "not-a-punishment",
+     "file": "why-bad-things-happen/younger/03-not-a-punishment.mp3",
+     "hash": "0476497e88fc11b7fe13",
+     "seconds": 32.01,
+     "bytes": 192596
+    },
+    {
+     "id": "allowed-to-ask",
+     "file": "why-bad-things-happen/younger/04-allowed-to-ask.mp3",
+     "hash": "0e23a474467ad1305a94",
+     "seconds": 21.63,
+     "bytes": 130388
+    },
+    {
+     "id": "god-came",
+     "file": "why-bad-things-happen/younger/05-god-came.mp3",
+     "hash": "db47573e9c1d0f77b130",
+     "seconds": 19.93,
+     "bytes": 120164
+    },
+    {
+     "id": "mended",
+     "file": "why-bad-things-happen/younger/06-mended.mp3",
+     "hash": "0af44843369516f111ed",
+     "seconds": 20.38,
+     "bytes": 122900
+    },
+    {
+     "id": "all-new",
+     "file": "why-bad-things-happen/younger/07-all-new.mp3",
+     "hash": "75a580e30e2a1b577069",
+     "seconds": 22.4,
+     "bytes": 134996
+    },
+    {
+     "id": "not-alone",
+     "file": "why-bad-things-happen/younger/08-not-alone.mp3",
+     "hash": "c04a957487fe0e816bee",
+     "seconds": 13.06,
+     "bytes": 78980
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "why-bad-things-happen/older/01-question.mp3",
+     "hash": "cd6217119f7d68feb4f7",
+     "seconds": 11.67,
+     "bytes": 70628
+    },
+    {
+     "id": "broken",
+     "file": "why-bad-things-happen/older/02-broken.mp3",
+     "hash": "72487ea28f38b0fb3f43",
+     "seconds": 21.86,
+     "bytes": 131684
+    },
+    {
+     "id": "not-a-punishment",
+     "file": "why-bad-things-happen/older/03-not-a-punishment.mp3",
+     "hash": "2eec79f694f9c34b5ba9",
+     "seconds": 35.97,
+     "bytes": 216356
+    },
+    {
+     "id": "allowed-to-ask",
+     "file": "why-bad-things-happen/older/04-allowed-to-ask.mp3",
+     "hash": "9753b4eedfaa0dd8e1e6",
+     "seconds": 26.29,
+     "bytes": 158324
+    },
+    {
+     "id": "god-came",
+     "file": "why-bad-things-happen/older/05-god-came.mp3",
+     "hash": "99775f63b1c43571cf85",
+     "seconds": 24.23,
+     "bytes": 145940
+    },
+    {
+     "id": "mended",
+     "file": "why-bad-things-happen/older/06-mended.mp3",
+     "hash": "c9085aeb469267c46755",
+     "seconds": 20.71,
+     "bytes": 124916
+    },
+    {
+     "id": "all-new",
+     "file": "why-bad-things-happen/older/07-all-new.mp3",
+     "hash": "27c754443ef6e72b29fc",
+     "seconds": 28.62,
+     "bytes": 172292
+    },
+    {
+     "id": "not-alone",
+     "file": "why-bad-things-happen/older/08-not-alone.mp3",
+     "hash": "f6bb7cb761cf6e2c4f66",
+     "seconds": 17.26,
+     "bytes": 104036
+    }
+   ]
+  },
+  "is-the-bible-true": {
+   "title": {
+    "file": "is-the-bible-true/title.mp3",
+    "hash": "1f25f6adbe3cec60a3f0",
+    "seconds": 1.93,
+    "bytes": 12164
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "is-the-bible-true/younger/01-question.mp3",
+     "hash": "7b039d81e4712a51ea5c",
+     "seconds": 11.62,
+     "bytes": 70340
+    },
+    {
+     "id": "copies",
+     "file": "is-the-bible-true/younger/02-copies.mp3",
+     "hash": "5ebdfe252e1291517472",
+     "seconds": 10.16,
+     "bytes": 61556
+    },
+    {
+     "id": "not-a-whisper",
+     "file": "is-the-bible-true/younger/03-not-a-whisper.mp3",
+     "hash": "5fe3a9179d5543f8b716",
+     "seconds": 12.3,
+     "bytes": 74372
+    },
+    {
+     "id": "thousands",
+     "file": "is-the-bible-true/younger/04-thousands.mp3",
+     "hash": "0589463d2e6e3e758bc4",
+     "seconds": 13.3,
+     "bytes": 80420
+    },
+    {
+     "id": "caves",
+     "file": "is-the-bible-true/younger/05-caves.mp3",
+     "hash": "7d09e5d56c781fe72053",
+     "seconds": 24.17,
+     "bytes": 145652
+    },
+    {
+     "id": "checked",
+     "file": "is-the-bible-true/younger/06-checked.mp3",
+     "hash": "034a90680fff761780d8",
+     "seconds": 23.72,
+     "bytes": 142916
+    },
+    {
+     "id": "does-not-prove",
+     "file": "is-the-bible-true/younger/07-does-not-prove.mp3",
+     "hash": "8609fa0fe077e53a286f",
+     "seconds": 12.91,
+     "bytes": 77972
+    },
+    {
+     "id": "read-it",
+     "file": "is-the-bible-true/younger/08-read-it.mp3",
+     "hash": "fde1acd609dcecd62c46",
+     "seconds": 24.18,
+     "bytes": 145652
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "is-the-bible-true/older/01-question.mp3",
+     "hash": "07e81328d111d699b99d",
+     "seconds": 18.17,
+     "bytes": 109652
+    },
+    {
+     "id": "copies",
+     "file": "is-the-bible-true/older/02-copies.mp3",
+     "hash": "0677049a754a01fc4fe8",
+     "seconds": 12.5,
+     "bytes": 75524
+    },
+    {
+     "id": "not-a-whisper",
+     "file": "is-the-bible-true/older/03-not-a-whisper.mp3",
+     "hash": "2a1bf8e9fbe4a0cfa3a3",
+     "seconds": 22.64,
+     "bytes": 136436
+    },
+    {
+     "id": "thousands",
+     "file": "is-the-bible-true/older/04-thousands.mp3",
+     "hash": "2ed21f81c8f282e25f82",
+     "seconds": 23.1,
+     "bytes": 139172
+    },
+    {
+     "id": "caves",
+     "file": "is-the-bible-true/older/05-caves.mp3",
+     "hash": "001139f923c841113b84",
+     "seconds": 35.07,
+     "bytes": 211028
+    },
+    {
+     "id": "checked",
+     "file": "is-the-bible-true/older/06-checked.mp3",
+     "hash": "8adc36aadf11c8495395",
+     "seconds": 37.63,
+     "bytes": 226292
+    },
+    {
+     "id": "does-not-prove",
+     "file": "is-the-bible-true/older/07-does-not-prove.mp3",
+     "hash": "7f33976e9f1efefa4ad1",
+     "seconds": 19.91,
+     "bytes": 120020
+    },
+    {
+     "id": "read-it",
+     "file": "is-the-bible-true/older/08-read-it.mp3",
+     "hash": "763f3bd20e5409ce05d2",
+     "seconds": 30.53,
+     "bytes": 183812
+    }
+   ]
+  },
+  "did-jesus-come-back-to-life": {
+   "title": {
+    "file": "did-jesus-come-back-to-life/title.mp3",
+    "hash": "157b99f0445229d512ed",
+    "seconds": 3.31,
+    "bytes": 20372
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "did-jesus-come-back-to-life/younger/01-question.mp3",
+     "hash": "49da2523ab648493451c",
+     "seconds": 11.23,
+     "bytes": 67892
+    },
+    {
+     "id": "died",
+     "file": "did-jesus-come-back-to-life/younger/02-died.mp3",
+     "hash": "b57da3be3ce2f7fed032",
+     "seconds": 11.25,
+     "bytes": 68036
+    },
+    {
+     "id": "seen",
+     "file": "did-jesus-come-back-to-life/younger/03-seen.mp3",
+     "hash": "0d505c7a98f67f63da41",
+     "seconds": 30.44,
+     "bytes": 183236
+    },
+    {
+     "id": "changed",
+     "file": "did-jesus-come-back-to-life/younger/04-changed.mp3",
+     "hash": "e1b92624c992e55ad7d1",
+     "seconds": 18.51,
+     "bytes": 111668
+    },
+    {
+     "id": "city",
+     "file": "did-jesus-come-back-to-life/younger/05-city.mp3",
+     "hash": "0dd062e77ae419853a78",
+     "seconds": 9.88,
+     "bytes": 59828
+    },
+    {
+     "id": "explanations",
+     "file": "did-jesus-come-back-to-life/younger/06-explanations.mp3",
+     "hash": "9d3dbbbc50589136c891",
+     "seconds": 13.23,
+     "bytes": 79988
+    },
+    {
+     "id": "weigh",
+     "file": "did-jesus-come-back-to-life/younger/07-weigh.mp3",
+     "hash": "30c8e98489efe483a30f",
+     "seconds": 25.9,
+     "bytes": 156020
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "did-jesus-come-back-to-life/older/01-question.mp3",
+     "hash": "efb070b4cd7d5f0f5462",
+     "seconds": 18.11,
+     "bytes": 109220
+    },
+    {
+     "id": "died",
+     "file": "did-jesus-come-back-to-life/older/02-died.mp3",
+     "hash": "4cf4a396c15d1f68dc3e",
+     "seconds": 20.06,
+     "bytes": 121028
+    },
+    {
+     "id": "seen",
+     "file": "did-jesus-come-back-to-life/older/03-seen.mp3",
+     "hash": "4161e9d178184ea6eb69",
+     "seconds": 38.21,
+     "bytes": 229892
+    },
+    {
+     "id": "changed",
+     "file": "did-jesus-come-back-to-life/older/04-changed.mp3",
+     "hash": "7c0704ae1f26fbaa806c",
+     "seconds": 26.16,
+     "bytes": 157460
+    },
+    {
+     "id": "city",
+     "file": "did-jesus-come-back-to-life/older/05-city.mp3",
+     "hash": "e1a320e3406d0fb5e244",
+     "seconds": 24.63,
+     "bytes": 148388
+    },
+    {
+     "id": "explanations",
+     "file": "did-jesus-come-back-to-life/older/06-explanations.mp3",
+     "hash": "0470fa7780df617747c4",
+     "seconds": 23.29,
+     "bytes": 140324
+    },
+    {
+     "id": "weigh",
+     "file": "did-jesus-come-back-to-life/older/07-weigh.mp3",
+     "hash": "01d7d874ad97ad76a226",
+     "seconds": 36.21,
+     "bytes": 217796
+    }
+   ]
+  },
+  "when-we-die": {
+   "title": {
+    "file": "when-we-die/title.mp3",
+    "hash": "74a0cca5f28c682fefc5",
+    "seconds": 2.42,
+    "bytes": 15044
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "when-we-die/younger/01-question.mp3",
+     "hash": "8cee630ce73010bd3a04",
+     "seconds": 12.39,
+     "bytes": 74948
+    },
+    {
+     "id": "sad",
+     "file": "when-we-die/younger/02-sad.mp3",
+     "hash": "8601d9eb5fed2fa0f083",
+     "seconds": 27.55,
+     "bytes": 165812
+    },
+    {
+     "id": "place",
+     "file": "when-we-die/younger/03-place.mp3",
+     "hash": "00b13d98c9ff374eb5c4",
+     "seconds": 20.5,
+     "bytes": 123620
+    },
+    {
+     "id": "with-him",
+     "file": "when-we-die/younger/04-with-him.mp3",
+     "hash": "efc34df001bd1011fb13",
+     "seconds": 25.81,
+     "bytes": 155444
+    },
+    {
+     "id": "morning",
+     "file": "when-we-die/younger/05-morning.mp3",
+     "hash": "a47956a8ddb18df06738",
+     "seconds": 30.92,
+     "bytes": 186116
+    },
+    {
+     "id": "both",
+     "file": "when-we-die/younger/06-both.mp3",
+     "hash": "63494e2c7c8184893a20",
+     "seconds": 26.81,
+     "bytes": 161492
+    },
+    {
+     "id": "talk",
+     "file": "when-we-die/younger/07-talk.mp3",
+     "hash": "6adbc55b17b877af2c2d",
+     "seconds": 17.73,
+     "bytes": 106916
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "when-we-die/older/01-question.mp3",
+     "hash": "5482a566a245edf1e96f",
+     "seconds": 15.81,
+     "bytes": 95396
+    },
+    {
+     "id": "sad",
+     "file": "when-we-die/older/02-sad.mp3",
+     "hash": "d8e5f9b4eeac0716c5fc",
+     "seconds": 27.65,
+     "bytes": 166388
+    },
+    {
+     "id": "place",
+     "file": "when-we-die/older/03-place.mp3",
+     "hash": "9f86f769544308aa5a6f",
+     "seconds": 31.23,
+     "bytes": 187988
+    },
+    {
+     "id": "with-him",
+     "file": "when-we-die/older/04-with-him.mp3",
+     "hash": "d3c17b3b39028f55e35b",
+     "seconds": 38.78,
+     "bytes": 233204
+    },
+    {
+     "id": "morning",
+     "file": "when-we-die/older/05-morning.mp3",
+     "hash": "bcf07a8e592f92318f00",
+     "seconds": 36.72,
+     "bytes": 220964
+    },
+    {
+     "id": "both",
+     "file": "when-we-die/older/06-both.mp3",
+     "hash": "c31136cd185d266d2114",
+     "seconds": 29.91,
+     "bytes": 180068
+    },
+    {
+     "id": "talk",
+     "file": "when-we-die/older/07-talk.mp3",
+     "hash": "76494e696b32a42cf15b",
+     "seconds": 23.93,
+     "bytes": 144212
+    }
+   ]
+  },
+  "so-many-churches": {
+   "title": {
+    "file": "so-many-churches/title.mp3",
+    "hash": "41608aa0378472f1541c",
+    "seconds": 2.5,
+    "bytes": 15620
+   },
+   "younger": [
+    {
+     "id": "one",
+     "file": "so-many-churches/younger/01-one.mp3",
+     "hash": "255825c86f440e6095c4",
+     "seconds": 21.07,
+     "bytes": 126932
+    },
+    {
+     "id": "spread",
+     "file": "so-many-churches/younger/02-spread.mp3",
+     "hash": "b7c8f27bbb5f8d706fe1",
+     "seconds": 22.23,
+     "bytes": 133988
+    },
+    {
+     "id": "east-west",
+     "file": "so-many-churches/younger/03-east-west.mp3",
+     "hash": "dae41ffa82c8c7e6924b",
+     "seconds": 17.61,
+     "bytes": 106196
+    },
+    {
+     "id": "reformation",
+     "file": "so-many-churches/younger/04-reformation.mp3",
+     "hash": "e85879f7ebe8fb2c2c28",
+     "seconds": 30.87,
+     "bytes": 185828
+    },
+    {
+     "id": "branches",
+     "file": "so-many-churches/younger/05-branches.mp3",
+     "hash": "944045f843d67ac91ad5",
+     "seconds": 14.06,
+     "bytes": 84884
+    },
+    {
+     "id": "root",
+     "file": "so-many-churches/younger/06-root.mp3",
+     "hash": "3ea890898501a110aaae",
+     "seconds": 18.18,
+     "bytes": 109652
+    },
+    {
+     "id": "be-one",
+     "file": "so-many-churches/younger/07-be-one.mp3",
+     "hash": "3eaa4f17eb871f152119",
+     "seconds": 28.18,
+     "bytes": 169700
+    }
+   ],
+   "older": [
+    {
+     "id": "one",
+     "file": "so-many-churches/older/01-one.mp3",
+     "hash": "2021b2a235893a5acb1c",
+     "seconds": 23.36,
+     "bytes": 140756
+    },
+    {
+     "id": "spread",
+     "file": "so-many-churches/older/02-spread.mp3",
+     "hash": "ac42bcc5ae1a8c1e611e",
+     "seconds": 30.24,
+     "bytes": 182084
+    },
+    {
+     "id": "east-west",
+     "file": "so-many-churches/older/03-east-west.mp3",
+     "hash": "08573a1ae4f8dbf91a29",
+     "seconds": 34.56,
+     "bytes": 207860
+    },
+    {
+     "id": "reformation",
+     "file": "so-many-churches/older/04-reformation.mp3",
+     "hash": "200ed8d9ae2f17840b02",
+     "seconds": 45.41,
+     "bytes": 273092
+    },
+    {
+     "id": "branches",
+     "file": "so-many-churches/older/05-branches.mp3",
+     "hash": "c5d54a9c508e4473f503",
+     "seconds": 29.18,
+     "bytes": 175748
+    },
+    {
+     "id": "root",
+     "file": "so-many-churches/older/06-root.mp3",
+     "hash": "0171390adfc7db3ced1c",
+     "seconds": 25.58,
+     "bytes": 154004
+    },
+    {
+     "id": "be-one",
+     "file": "so-many-churches/older/07-be-one.mp3",
+     "hash": "2cbace251f3048c77b6d",
+     "seconds": 34.95,
+     "bytes": 210308
+    }
+   ]
+  },
+  "love-when-i-do-wrong": {
+   "title": {
+    "file": "love-when-i-do-wrong/title.mp3",
+    "hash": "cd40b90b38603399ceb9",
+    "seconds": 3.3,
+    "bytes": 20372
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "love-when-i-do-wrong/younger/01-question.mp3",
+     "hash": "7271612b6713a903b842",
+     "seconds": 22.26,
+     "bytes": 134132
+    },
+    {
+     "id": "left",
+     "file": "love-when-i-do-wrong/younger/02-left.mp3",
+     "hash": "54e775d0fd2b31f484f7",
+     "seconds": 11.53,
+     "bytes": 69764
+    },
+    {
+     "id": "senses",
+     "file": "love-when-i-do-wrong/younger/03-senses.mp3",
+     "hash": "89f1476a33b3b87ecb25",
+     "seconds": 16.23,
+     "bytes": 97988
+    },
+    {
+     "id": "ran",
+     "file": "love-when-i-do-wrong/younger/04-ran.mp3",
+     "hash": "e68522b1680cc8a609dd",
+     "seconds": 29.5,
+     "bytes": 177620
+    },
+    {
+     "id": "home",
+     "file": "love-when-i-do-wrong/younger/05-home.mp3",
+     "hash": "e4a9a8403cbe4e39d1a6",
+     "seconds": 14.27,
+     "bytes": 86180
+    },
+    {
+     "id": "matters",
+     "file": "love-when-i-do-wrong/younger/06-matters.mp3",
+     "hash": "512ebb5b988ae38516c8",
+     "seconds": 27.87,
+     "bytes": 167828
+    },
+    {
+     "id": "nothing",
+     "file": "love-when-i-do-wrong/younger/07-nothing.mp3",
+     "hash": "8ce2c17e5513b6ae6465",
+     "seconds": 26.8,
+     "bytes": 161348
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "love-when-i-do-wrong/older/01-question.mp3",
+     "hash": "e86309717d4cc13723bd",
+     "seconds": 26.02,
+     "bytes": 156596
+    },
+    {
+     "id": "left",
+     "file": "love-when-i-do-wrong/older/02-left.mp3",
+     "hash": "a0c8432911a5656574b4",
+     "seconds": 20,
+     "bytes": 120596
+    },
+    {
+     "id": "senses",
+     "file": "love-when-i-do-wrong/older/03-senses.mp3",
+     "hash": "4f85b6c694cf8be6c9ef",
+     "seconds": 21.09,
+     "bytes": 127076
+    },
+    {
+     "id": "ran",
+     "file": "love-when-i-do-wrong/older/04-ran.mp3",
+     "hash": "2a8193cda6588500913a",
+     "seconds": 32.97,
+     "bytes": 198356
+    },
+    {
+     "id": "home",
+     "file": "love-when-i-do-wrong/older/05-home.mp3",
+     "hash": "90a9a81b590a06ce4a65",
+     "seconds": 21.2,
+     "bytes": 127796
+    },
+    {
+     "id": "matters",
+     "file": "love-when-i-do-wrong/older/06-matters.mp3",
+     "hash": "653ffe360e6d74b919a4",
+     "seconds": 34.93,
+     "bytes": 210164
+    },
+    {
+     "id": "nothing",
+     "file": "love-when-i-do-wrong/older/07-nothing.mp3",
+     "hash": "b28c050dbf5731a419b5",
+     "seconds": 37.6,
+     "bytes": 226148
+    }
+   ]
+  },
+  "god-silent": {
+   "title": {
+    "file": "god-silent/title.mp3",
+    "hash": "ce09a0cb69bba7295848",
+    "seconds": 3.1,
+    "bytes": 19076
+   },
+   "younger": [
+    {
+     "id": "quiet",
+     "file": "god-silent/younger/01-quiet.mp3",
+     "hash": "66fefd70e6536e2b76f9",
+     "seconds": 16.25,
+     "bytes": 98132
+    },
+    {
+     "id": "how-long",
+     "file": "god-silent/younger/02-how-long.mp3",
+     "hash": "022906c0925cec4e7196",
+     "seconds": 13.69,
+     "bytes": 82724
+    },
+    {
+     "id": "trust",
+     "file": "god-silent/younger/03-trust.mp3",
+     "hash": "f7acabf0b7b1e8d75451",
+     "seconds": 20.41,
+     "bytes": 123044
+    },
+    {
+     "id": "elijah",
+     "file": "god-silent/younger/04-elijah.mp3",
+     "hash": "bd3cd66662d46f3f2bc8",
+     "seconds": 25.74,
+     "bytes": 155012
+    },
+    {
+     "id": "whisper",
+     "file": "god-silent/younger/05-whisper.mp3",
+     "hash": "6d4b136f442ec78888ad",
+     "seconds": 34.43,
+     "bytes": 207140
+    },
+    {
+     "id": "cross",
+     "file": "god-silent/younger/06-cross.mp3",
+     "hash": "e7f337ab45fb67356a32",
+     "seconds": 17.43,
+     "bytes": 105188
+    },
+    {
+     "id": "near",
+     "file": "god-silent/younger/07-near.mp3",
+     "hash": "6f8073765589f6073c9b",
+     "seconds": 20.98,
+     "bytes": 126500
+    }
+   ],
+   "older": [
+    {
+     "id": "quiet",
+     "file": "god-silent/older/01-quiet.mp3",
+     "hash": "7d9f0d53c980e9c5138e",
+     "seconds": 18.94,
+     "bytes": 114260
+    },
+    {
+     "id": "how-long",
+     "file": "god-silent/older/02-how-long.mp3",
+     "hash": "f87379f4cd2223397ea2",
+     "seconds": 26.73,
+     "bytes": 160916
+    },
+    {
+     "id": "trust",
+     "file": "god-silent/older/03-trust.mp3",
+     "hash": "65ff785907b780353f04",
+     "seconds": 33.23,
+     "bytes": 199940
+    },
+    {
+     "id": "elijah",
+     "file": "god-silent/older/04-elijah.mp3",
+     "hash": "8615d954f1c7127d0c03",
+     "seconds": 30.65,
+     "bytes": 184532
+    },
+    {
+     "id": "whisper",
+     "file": "god-silent/older/05-whisper.mp3",
+     "hash": "b1050a26cd21eb015b74",
+     "seconds": 38.42,
+     "bytes": 231044
+    },
+    {
+     "id": "cross",
+     "file": "god-silent/older/06-cross.mp3",
+     "hash": "de874be086246a0491d1",
+     "seconds": 34.18,
+     "bytes": 205556
+    },
+    {
+     "id": "near",
+     "file": "god-silent/older/07-near.mp3",
+     "hash": "58ce73b13ac93606fb08",
+     "seconds": 34.06,
+     "bytes": 204980
+    }
+   ]
+  },
+  "science-and-the-bible": {
+   "title": {
+    "file": "science-and-the-bible/title.mp3",
+    "hash": "14562c34ac89c0b41f19",
+    "seconds": 3.01,
+    "bytes": 18644
+   },
+   "younger": [
+    {
+     "id": "choose",
+     "file": "science-and-the-bible/younger/01-choose.mp3",
+     "hash": "7f0ecc4b0d2633e364de",
+     "seconds": 13.97,
+     "bytes": 84452
+    },
+    {
+     "id": "war",
+     "file": "science-and-the-bible/younger/02-war.mp3",
+     "hash": "dc0a95816506c7f7954d",
+     "seconds": 18.67,
+     "bytes": 112532
+    },
+    {
+     "id": "lab",
+     "file": "science-and-the-bible/younger/03-lab.mp3",
+     "hash": "7ad9a895124a5a11b82a",
+     "seconds": 22.3,
+     "bytes": 134420
+    },
+    {
+     "id": "kettle",
+     "file": "science-and-the-bible/younger/04-kettle.mp3",
+     "hash": "4b240b02e97d351fd7d7",
+     "seconds": 20.47,
+     "bytes": 123332
+    },
+    {
+     "id": "author",
+     "file": "science-and-the-bible/younger/05-author.mp3",
+     "hash": "3a81430c593daf66b4ca",
+     "seconds": 23.45,
+     "bytes": 141332
+    },
+    {
+     "id": "differ",
+     "file": "science-and-the-bible/younger/06-differ.mp3",
+     "hash": "6333b87c14b239bf1557",
+     "seconds": 21.75,
+     "bytes": 131108
+    },
+    {
+     "id": "search",
+     "file": "science-and-the-bible/younger/07-search.mp3",
+     "hash": "59a38f705a9e9c983e88",
+     "seconds": 24.76,
+     "bytes": 149108
+    }
+   ],
+   "older": [
+    {
+     "id": "choose",
+     "file": "science-and-the-bible/older/01-choose.mp3",
+     "hash": "1228ad2eef497629f178",
+     "seconds": 21.14,
+     "bytes": 127364
+    },
+    {
+     "id": "war",
+     "file": "science-and-the-bible/older/02-war.mp3",
+     "hash": "21b767c70c838ade6bdf",
+     "seconds": 38.17,
+     "bytes": 229604
+    },
+    {
+     "id": "lab",
+     "file": "science-and-the-bible/older/03-lab.mp3",
+     "hash": "2ae43c2404be734f05e7",
+     "seconds": 46.42,
+     "bytes": 278996
+    },
+    {
+     "id": "kettle",
+     "file": "science-and-the-bible/older/04-kettle.mp3",
+     "hash": "5009c9fa1c685de026d7",
+     "seconds": 25.66,
+     "bytes": 154580
+    },
+    {
+     "id": "author",
+     "file": "science-and-the-bible/older/05-author.mp3",
+     "hash": "c3aac5b208fb271a8893",
+     "seconds": 34.62,
+     "bytes": 208292
+    },
+    {
+     "id": "differ",
+     "file": "science-and-the-bible/older/06-differ.mp3",
+     "hash": "dca9d5abc6b09f302c71",
+     "seconds": 38.02,
+     "bytes": 228740
+    },
+    {
+     "id": "search",
+     "file": "science-and-the-bible/older/07-search.mp3",
+     "hash": "17ce17c69ec04dfc30e4",
+     "seconds": 35.26,
+     "bytes": 212180
+    }
+   ]
+  }
+ }
+}

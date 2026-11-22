@@ -626,6 +626,57 @@ Every finished film now has its two videos there (35 films, 70 files).
 - Machine rule: once, the shots of all 31 films for the still check were started in the same command that printed the load, which read 6.02. Every other heavy command waited for a reading under 6 first, read in its own command or by the waiting loop.
 - Not verified: a screen reader by ear; a real phone; Listen by ear on the new films; the videos uploaded anywhere.
 
+## A recorded voice, richer pictures, eight films, and films offered through the site (2026-11-22)
+
+James (2026-11-22), after hearing the narrated sample of "The whole Bible in two minutes": he likes it; keep adding these films; richer artwork that moves as the voice talks; two to three minutes each; verses, stories and doctrines (he named the Holy Spirit and sacrifice) and people's questions; several of them through the site. He has not named a voice by number. The sample he praised is the model's stock voice `bm_lewis`, so that one voice is used everywhere, as one setting.
+
+### The recorded voice
+
+- **What it is.** One small MP3 for each frame of each film at each reading level, under `client/public/explorer/audio/<slug>/<level>/<nn>-<frame id>.mp3`, and one for each title (`<slug>/title.mp3`, used only by a video). Mono, 24 kHz, 48 kbps; a film at one level is set to about -16 LUFS with a limiter under it. Each sentence is spoken on its own, so the pauses are exact: 0.5 s between sentences, 0.85 s between a caption and its verse, 0.5 s between a verse and its reference. A frame says its caption (or its `say`), then its verse, then the reference in words ("Genesis one, verse thirty-one").
+- **The voice is one setting**: `scripts/film-audio.config.json` (`voice`, `speed`, the pauses, the respellings given to the engine and never to the site). It is a stock synthetic voice of the Kokoro model, not a recording or a copy of any person's voice, and the page says so. Change the setting and run the script with `--all`: every hash changes, and the check fails until every file has been made again.
+- **Making the files** is `scripts/build-film-audio.mjs <slug ...|--all>`, run by hand on a machine that has the model (its Python helper is `scripts/lib/film-audio-synth.py`). It is not in the build, the tests or CI, and the model and its Python environment are never committed. The model files and their licences are listed in `/home/user/elite-shots/explorer/voice/README.md`.
+- **The check** is `node scripts/build-film-audio.mjs --check`, in the content-gates step of CI. It needs no model and no network: it works out what every finished film says now and fails by name when a film's words no longer match its file's hash (kept in `audio/manifest.json`), when a file is missing or empty, or when a file is left over. So the voice can never say something the page no longer says, and a film cannot be marked finished without its voice.
+- **The player.** Listen is where it was: visible, off by default, the choice kept on the device. With it on, a frame's file is asked for only when the frame is reached (the next one is fetched ahead once the current one is playing); nothing is fetched with the page. The film moves on when the file ends, after the same 0.7 s breath. Pause holds the file and Play goes on from where it stopped. Back, Next, the frame buttons and the arrow keys play that frame from its start. Where a file is missing or cannot be played, the device's own voice says that frame, as Listen did before; where there is no sound at all, the captions' own timing carries the film. One line under the control: "Read aloud by a computer-made voice, not a person." Captions and verses stay on screen; nothing is announced to a screen reader while the voice speaks; with reduced motion there is still no Play, and each step by hand is read.
+- **One order of words for both voices.** The device voice used to say the reference first; it now says the verse and then the reference, as the recorded voice does (`spokenParts` in `lib/film-voice.ts`).
+
+### Richer pictures
+
+- **The stage set** (`client/src/components/art/stage.tsx`, described in the art kit's README): a cast and a setting in the kit's engraved hand and tokens. `Person` is a robed figure of the ancient Near East, drawn with dignity and without a face: robe, cloak, head cloth or veil, nine poses, a staff or a crook, a child's build. Skin is the clay tone for every figure alike. The setting is sky, land, trees, buildings and animals. Mustard is never used by the set: a picture's one mark stays the drawing's choice.
+- **Motion that keeps going while the voice talks** (`films/motion.tsx`, `film.css`, CSS only): parts that arrive part-way through a spoken frame (`at`, in seconds, fitted to a silent frame's few seconds by `--mv-pace`), lines that take seconds to draw (`slow`), small motions that run and then rest (`Ambient`: drift, sway, flicker, twinkle, glow, bob), figures that walk in, and a slow camera (`push`) that glides from one frame's view to the next. With motion turned off none of it runs and the finished frame is the same picture.
+- **Films redrawn or enriched.** *The whole Bible in two minutes* is redrawn: the story's picture now fills the stage (two panels where a movement has two halves, the second arriving part-way through) and the road runs along the foot; *The Bible in a minute* shares it. *Prayer* is redrawn with the cast. *The Holy Spirit through the Bible*, *How salvation works* (and *The gospel in a minute*), *Why did Jesus die?* and *Does God still love me when I do wrong?* take the cast in place of their pin figures, more of the setting, and the camera. The older figures everywhere take the same skin tone, so the two casts agree. The `still` sentences and posters of the redrawn films were rewritten to match their new pictures.
+- **Not done**: *Who made God?* (the most linked film) is a diagram with no people in it and was left as it is.
+
+### Eight films
+
+Each has seven pictures drawn with the stage set, captions at both levels, a `still` for every frame, BSB verses, "Think about it", chapters, deeper links, its own emblem, a page (prerendered, in the sitemap, the search index and llms.txt), the recorded voice at both levels, and ledger rows. Two new groups were added to Watch and learn, so there are six: The big story, **Bible stories**, Big ideas, What we believe, **Verses to know**, Good questions.
+
+1. **Sacrifice: why blood?** (Big ideas). The Bible's own answer (Leviticus 17:11) from the first altars to the cross: a life given in place of another, and God the one who gives it. No blood is drawn; no theory of the atonement is chosen.
+2. **Grace: the gift no one earns** (What we believe). The catechism's answer, the late workers in the vineyard, the cross, empty hands, a changed life, grace for each day, grace passed on.
+3. **Faith: trusting the one who promised** (What we believe). The Study Bible's study of faith: Abraham, the mustard seed, "help my unbelief", faith by hearing, faith that acts, faith that walks on unseen.
+4. **The Exodus: out of Egypt** (Bible stories). The Rescue stop's telling, with no date and no route.
+5. **David and Goliath** (Bible stories). 1 Samuel 17 as the text tells it and the notes read it: the battle is the LORD's, and most readers are the soldiers on the hill.
+6. **John 3:16 in its chapter** (Verses to know). Nicodemus at night, the new birth, the bronze snake, the verse, and the man who came out of the dark.
+7. **Psalm 23: the LORD is my shepherd** (Verses to know). The psalm line by line, and the good shepherd.
+8. **Romans 8:28: what it promises, and what it does not** (Verses to know). The notes' own hard question: not that everything is good, not that it all works out; God at work in all things, and room to groan.
+
+Not made, and why (also in the ledger): the Holy Spirit, the Trinity, the kingdom of God, suffering, trusting the Bible and what happens when we die already have films; the prodigal son is told in *Does God still love me when I do wrong?*; Ruth was not reached.
+
+### Films offered through the site
+
+- **On Study Bible chapters.** The passage index has a new kind, `film`, first in the list: a finished film is offered under "Go deeper" on every chapter one of its pictures quotes and every chapter it sends the reader to (`scripts/lib/passage-index.mjs`; "Watch and learn: moving pictures" in `lib/passageIndex.ts`).
+- **On Honest Answers, /questions pieces, doctrine studies and wisdom topics.** `scripts/build-explorer-index.mjs` now also writes `client/public/explorer/film-links.json`: each film's own links (deeper, where churches differ, the end) turned round, so a page can show the films that point at it. `components/FilmsHere.tsx` takes a page's address and shows them, or nothing. It is on `AnswerPage`, `QuestionPiece`, the doctrine study page and `WisdomTopic`. No list of films is typed into any page: to offer a film on a page, add the page to the film's `deeper` links and rebuild the index.
+- **Not touched**: the family devotions and the catechism (another run is placing films there).
+
+### Gates record (2026-11-22)
+
+- **Audio.** 663 files for 43 films (a title and every frame at both levels): 266.3 minutes, 96.2 MB at 48 kbps mono, each film and level measured at -16.1 or -16.2 LUFS by ffmpeg. `node scripts/build-film-audio.mjs --check`: 0. The eight new films measured, with the player's breath between pictures (younger, older): Sacrifice: why blood? 3:07, 3:10; Grace 2:59, 3:03; Faith 2:41, 3:09; The Exodus 3:05, 3:06; David and Goliath 2:56, 3:13; John 3:16 2:52, 2:58; Psalm 23 2:52, 2:58; Romans 8:28 2:44, 3:05. Their older captions were shortened once after the first measurement ran past 3:15. The older films were not shortened: several run past three minutes at the older level, as they did before they had a voice.
+- **Before the merge**, each with the load read first and its exit code read directly: `pnpm check` 0; `validate-explorer` 0 (43 moving pictures); `build-explorer-index --check` 0; `build-passage-index` (706 chapter files, films on 162 of them); `validate-design` 0; `validate-no-emdash` 0; the films, film-audio, FilmsHere and passage-index tests: 107 passed; ESLint on the changed client files clean; `pnpm build`, `sitemap`, `prerender` 0 (3,215 pages).
+- **On the served build** (`scripts/serve-like-vercel.mjs`, port 4671), sixteen films (the eight new ones, and The whole Bible in two minutes, The Bible in a minute, Prayer, The Holy Spirit through the Bible, How salvation works, The gospel in a minute, Why did Jesus die?, Does God still love me when I do wrong?) were each played through with Listen on at 390 and at 1440, the files run at eight times their speed by the test only: every frame reached in order and the film stopped on "Play again"; every audio request answered 200 or 206; no audio was asked for before Listen was turned on; no sideways scroll; no console errors. Shots in `/home/user/elite-shots/explorer/run9/`. Seen in them and changed: the camera moved in too far on Does God still love me when I do wrong? (the line grew heavy at 1.8 times) and cropped the city gate on the last frame of The whole Bible in two minutes; both were eased.
+- **Lighthouse** (`scripts/lighthouse-median.mjs`, 13.6.0, three runs) on `/study/explorer/watch/bible-two-minutes`: before this run's changes, performance 43, 93, 100 (median 93), accessibility 100, best practices 96, SEO 100, CLS 0.000, LCP 3.3 s; after, performance 85, 91, 91 (median 91), accessibility 100, best practices 96, SEO 100, CLS 0.000, LCP 3.4 s. No audio file is among the page's requests until Listen is turned on.
+- **After the merge** the whole order was run again (every content-gates command, `pnpm check`, `pnpm lint`, `pnpm test`, `pnpm build`, sitemap, prerender, `audit:canonicals`, the play-through at both widths); those results are in the run's report, since this file is committed before them.
+- **Not verified.** No one has listened to any file: the voice's sound, its stress and its handling of names are unheard, and no file was transcribed by machine in this run. No real phone. A screen reader by ear. The films' pictures were read as finished frames; their motion was not watched.
+- No dependency added. The model, its Python environment and all scratch files stay outside the repository.
+
 ## Questions only James can answer
 
 1. Is "Bible Explorer" the name he wants, everywhere?
@@ -681,6 +732,15 @@ Every finished film now has its two videos there (35 films, 70 files).
 51. The science film says, at the older level and in the Honest Answer's own words, that the three views on the age of the earth and evolution are each "held by believers who take Scripture seriously". Is he content with the three named for ages 12 to 16, and with the younger level naming none?
 52. "Light and darkness" (Big ideas) is still coming, with "A blessing for all nations", "What about people who never heard?" and "Why did God let his temple be destroyed?". Which should come next?
 53. The film emblems now carry one gold mark each, as their drawings do; the map's stop emblems still keep gold for "You are here" alone. Is he content with that difference?
+
+54. The recorded voice is the model's stock voice `bm_lewis` (British, deep), the one in the sample he praised. Is that the voice he wants everywhere? No one has listened to the 663 files.
+55. The line under Listen says "Read aloud by a computer-made voice, not a person." Is that how he wants it said?
+56. Is he content for Scripture itself to be read by the computer-made voice, or should the voice read only the captions?
+57. The audio is 96 MB in the repository. Is that where it should live, or on a file host?
+58. People in the new pictures have the same warm clay skin tone, robes and head cloths, and no faces. Is that how he wants people of the Bible's world drawn?
+59. The older films run past three minutes at the older level with the voice. Should their older captions be shortened to fit two to three minutes, as the new films' were?
+60. Two new groups, "Bible stories" and "Verses to know": are those the names he wants?
+61. Films are now offered on Study Bible chapters, Honest Answers, /questions pieces, doctrine studies and wisdom topics. Is that too many places, or the right ones?
 
 ## What was run for the second three (2026-11-19)
 

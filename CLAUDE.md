@@ -489,14 +489,15 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (35
-commands: 25 validators: scripture, design, life, studyguides, pathways,
+On every PR, five blocking steps: `pnpm check` → the content-gates step (49
+commands, among them 25 validators: scripture, design, life, studyguides, pathways,
 theology, politics, no-emdash, essays, content-integrity, skeptic-track,
 answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
 workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
 bible-notes; the history-source verifier `verify-sources`; and the `--check`
 drift checks for the family year map, family index, topics index, search
-index, passage index, Bible text, Bible word search and the 2027 story plan) → `pnpm test` →
+index, passage index, Bible text, Bible word search, the 2027 story plan and
+the Bible Explorer films' recorded voice) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
 prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
 Lighthouse + axe against the built site. Keep all five blocking steps green.
@@ -820,6 +821,18 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   is "New to faith, or coming back"; the other four roads and the book study
   ("Deep in one") are listed on /tracks as not written.
   `docs/work/elite/tracks.md` says how to write the next.
+- **The films' recorded voice (2026-11-22; James: "continue to add these")**:
+  Listen on a Bible Explorer film plays one small MP3 a frame, a level
+  (`client/public/explorer/audio/`), fetched only once Listen is on, with the
+  device's voice where a file is missing; it never plays by itself. The voice
+  is one setting, `scripts/film-audio.config.json`: a stock synthetic voice,
+  never a copy of a real person's, and the page says it is computer-made.
+  `scripts/build-film-audio.mjs` makes the files by hand (the model is never
+  committed); its `--check`, in CI, fails by name when a film's words no
+  longer match its file's hash, so change a caption and make its audio again.
+  Films are drawn with the art kit's stage set (`components/art/stage.tsx`)
+  and offered on other pages only through their own data
+  (`film-links.json`, the passage index), never a typed list.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.

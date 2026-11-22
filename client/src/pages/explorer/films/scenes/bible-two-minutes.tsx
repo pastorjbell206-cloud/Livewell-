@@ -704,7 +704,7 @@ const film: FilmDrawing = {
   h: 500,
   // The camera keeps the road in view and moves in a little on the story.
   push: frame =>
-    TWO.has(frame) ? [400, 500, 1.03] : [400, 500, frame % 2 ? 1.1 : 1.07],
+    TWO.has(frame) ? [400, 500, 1.02] : [400, 500, frame % 2 ? 1.05 : 1.035],
   draw: (h, frame) => {
     const k = frame + 1;
     const inked = (REACH[k] - 14) / 772;
