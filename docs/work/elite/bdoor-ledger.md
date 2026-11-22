@@ -15409,3 +15409,18 @@ Cut in chapter 17: Gideon and the clan of Abiezer; Saul's body at Beth-shean; th
 | Philippians 3:5; Deuteronomy 33:12 | 11-28 | joshua/18.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 18: the excavations at Khirbet Seilun and their debated destruction layer; the echo of Genesis 1:28 in ‘subdued’ (the deep note says only that it ‘suggests’ one). The BSB's words in verses 24 and 28 are quoted only in part because of their dashes.
+
+## The plain notes on Joshua 19 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Simeon with towns inside Judah and no borders of its own; Jacob's words over Simeon and Levi after Shechem (Genesis 34; 49:5-7); Levi scattered in service, Simeon absorbed; Beersheba | 1-9 | joshua/19.json `historical`, `cultural`; genesis/intro.json `teaching` | Repository |
+| Genesis 49:7; Acts 4:34 | 1-9 | joshua/19.json `cultural`; BSB | Repository; BSB text |
+| The northern tribes and the later Galilee; the fixed pattern of each account; twelve, sixteen, twenty-two and nineteen towns (verses 15, 22, 30, 38); Shunem, Gath-hepher, the northern Bethlehem; Asher among the Canaanites of the coast (Judges 1:31-32) | 10-39 | joshua/19.json `historical`, `cultural`, `literary`; BSB | Repository |
+| Isaiah 9:1-2; Matthew 4:13-14 | 10-39 | joshua/19.json `christ`; BSB | Repository; BSB text; the line as Matthew draws it |
+| Dan beside the Philistines; verse 47 looks ahead to Judges 18 and shows the book was finished later; ‘from Dan to Beersheba’; Joshua's share last and at his own request, a town to rebuild; Caleb opens and Joshua closes the division; the frame with 14:1 | 40-51 | joshua/19.json `historical`, `cultural`, `literary`, `words` (Dan) | Repository |
+| Joshua 24:30; Mark 10:43-45 | 40-51 | joshua/19.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 19: the Tel Dan inscription; Sharuhen and the pharaoh Ahmose; Cabul and Hiram of Tyre; a sentence calling the story of Judges 18 ‘a dark one’ ahead of the notes on Judges. The BSB's opening word of verse 47 (‘Later,’) is left out of the quotation so that it begins without the bracket.
