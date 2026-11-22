@@ -15241,3 +15241,20 @@ Cut in chapter 6: how ancient armies took walled towns and how long a town could
 | The care paragraph (‘A word of care. This story must not be used to say...’ to ‘...lists places to turn.’) | 19-26 `hard` | acts/plain/5.json (1-6, `hard`); numbers/plain/16.json (16-35, `hard`) | Reused whole, word for word |
 
 Cut in chapter 7: Beth-aven as ‘house of wickedness’; the Urim and Thummim as the means of the lot (the note says ‘perhaps’); Acts 5 as a parallel (the note gives it as what ‘some readers notice’; the care paragraph from that note is reused); a sentence saying that Achan's confession came too late (the text does not say what he found with God).
+
+## The plain notes on Joshua 8 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The words of 1:9 repeated; the contrast with the first attack (7:2-4); ambush and pretended retreat as ordinary tactics, the plan given by God; not every city under the full ban, plunder allowed (Deuteronomy 20:14); the light this throws on Achan | 1-13 | joshua/8.json `cultural`, `literary`, `words` (arav); deuteronomy/plain/20.json (10-18) | Repository |
+| Proverbs 21:31 | 1-13 | BSB | BSB text |
+| The battle reverses chapter 7; the raised lance as signal and as an echo of Moses at the battle with Amalek (Exodus 17:11); the king's body and the law of Deuteronomy 21:22-23; the two heaps of stones (7:26; 8:29); Ai's site debated | 14-29 | joshua/8.json `cultural`, `literary`, `words` (kidon); joshua/7.json `historical` | Repository |
+| Deuteronomy 21:23; Galatians 3:13; Exodus 17:11 | 14-29 | joshua/8.json `christ`; joshua/intro.json `christ`; BSB | Repository; BSB text; the line to the cross as Paul draws it |
+| The dead of Ai: the same question as Jericho; the readings named in brief (judgment on Canaan's long sin; the sweeping style of ancient war reports; God's right over life; accommodation read in the light of Christ); many hold more than one; no side; one land and one moment; no warrant for violence against any person or people | 14-29 `hearers`, `hard` | joshua/8.json `cultural`; joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json (`differ`) | Repository; handled as the site's live pages handle it; no side |
+| Moses' command (Deuteronomy 27:2-8, 27:12-13); Ebal and Gerizim on either side of Shechem; Abraham's first altar there; uncut stones (Exodus 20:25); burnt and peace offerings; writing on stone as public record; women, children and foreigners named (Deuteronomy 31:12) | 30-35 | joshua/8.json `historical`, `cultural`, `literary`, `words` (mizbeach, qahal); leviticus/intro.json `teaching` | Repository |
+| Deuteronomy 27:4; 31:12; Nehemiah 8:3 | 30-35 | joshua/8.json `cultural`; BSB | Repository; BSB text |
+| The placement of the ceremony: twenty miles north of Ai; the Greek translation places it after 9:2; a Dead Sea Scrolls copy appears to place a similar account after the crossing; the three answers; no side | 30-35 `hard` | joshua/8.json `hard` | Repository; no side |
+
+Cut in chapter 8: Adam Zertal's structure on Mount Ebal (left to the deep note, since what it was is debated); the two figures for the ambush in verses 3 and 12 (the repository's notes do not discuss them); a guess that Rahab's family stood in the crowd; John 19:31. Deuteronomy 20:14 and the BSB's words in verses 25 and 34 are quoted only in part or not at all because of their dashes.
