@@ -15187,3 +15187,19 @@ Cut in chapter 3: the thirteenth-century AD landslide (the note says only ‘rep
 | Psalm 66:6; Matthew 28:19 | 19-24 | joshua/4.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 4: the prophets' later words against worship at Gilgal (left to the deep note); the twelve apostles as an echo of the twelve stones (the note says ‘many interpreters see’, and the New Testament does not draw the line to this chapter).
+
+## The plain notes on Joshua 5 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Circumcision as the sign of the covenant with Abraham, practiced by other peoples (Egyptians) with a different meaning; the lapse in the wilderness and the two suggested reasons; flint knives used long after metal; the men unable to fight (Genesis 34:25); the three readings of ‘the reproach of Egypt’; Gilgal and the verb ‘to roll’ | 1-9 | joshua/5.json `historical`, `cultural`, `words` (galal, cherpah) | Repository; no side on the reproach |
+| Genesis 17:11; Deuteronomy 30:6; Romans 2:29 | 1-9 | joshua/5.json `christ`; deuteronomy/intro.json `teaching`; BSB | Repository; BSB text |
+| Passover on the fourteenth day; no uncircumcised man may eat it (Exodus 12:48); roasted grain from the spring barley harvest; the manna six days in seven for forty years; the harder test of plenty (Deuteronomy 8) | 10-12 | joshua/5.json `historical`, `literary`; deuteronomy/intro.json `teaching` (chosen); BSB | Repository |
+| Exodus 16:35; Deuteronomy 8:3; John 6:35; 1 Corinthians 5:7 | 10-12 | joshua/5.json `historical`, `christ`; BSB | Repository; BSB text |
+| The soldier's question and the answer that refuses it; the LORD's army as the heavenly host; ‘commander’ used in Daniel for heavenly princes; the sandals and the burning bush; holy because of who is present; worship before the battle | 13-15 | joshua/5.json `cultural`, `literary`, `words` (sar, qodesh), `hard` | Repository |
+| Exodus 3:5; Numbers 22:31; 2 Kings 6:17 | 13-15 | joshua/5.json `cultural`; BSB | Repository; BSB text |
+| Who the commander is: the Son of God before the incarnation (many early Christian writers and later ones); the angel of the LORD who speaks as God; a created angel, perhaps Michael; 6:2 continuing with the LORD speaking; no side; the main point not in dispute | 13-15 `hard` | joshua/5.json `christ`, `hard` | Repository; each view in its holders' terms; no side |
+
+Cut in chapter 5: the meaning of the name Gibeath-haaraloth; the later tradition that priests served barefoot; Colossians 2:11-12. The BSB's words in verse 4 are not quoted because the verse has dashes.
