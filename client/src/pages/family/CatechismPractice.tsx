@@ -10,13 +10,20 @@
  * question, and once the card is turned, both answers. Where the browser has
  * no voice the button is not shown. Nothing is recorded or sent.
  *
+ * "We know this one" ticks the question as learned (the same ticks the list
+ * below shows), and "Pass over the ones we know" walks only the questions
+ * still to learn. Both are kept on this device; when the browser will not
+ * keep them the card says so.
+ *
  * The two faces share one grid cell, so the card is as tall as its taller
  * face and nothing moves when it turns; the turn is a CSS transition the
  * site's reduced-motion rule turns off.
  */
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, RefreshCw, Square, Volume2 } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight, RefreshCw, Square, Volume2 } from "lucide-react";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { SAVE_FAILED } from "@/components/TakeItWithYou";
+import { CATECHISM_PRACTICE_KEY, isPracticePlace, nextPractice, type PracticePlace } from "@/lib/familyCatechism";
 
 export interface PracticeEntry {
   number: number;
@@ -25,21 +32,40 @@ export interface PracticeEntry {
   kidsAnswer: string;
 }
 
-export const PRACTICE_KEY = "livewell-progress-family-catechism-practice-v1";
+export const PRACTICE_KEY = CATECHISM_PRACTICE_KEY;
 
-const isAt = (x: unknown): x is { v: 1; at: number } =>
-  !!x && typeof x === "object" && (x as { v?: unknown }).v === 1 && Number.isInteger((x as { at?: unknown }).at);
+/** What is kept: the question, and `skip` only once the family has asked for it. */
+const place = (at: number, skip: boolean): PracticePlace => (skip ? { v: 1, at, skip: true } : { v: 1, at });
 
 function canSpeak(): boolean {
   return typeof window !== "undefined" && "speechSynthesis" in window && typeof window.SpeechSynthesisUtterance === "function";
 }
 
-export default function CatechismPractice({ entries, startAt }: { entries: PracticeEntry[]; startAt: number }) {
+export default function CatechismPractice({
+  entries,
+  startAt,
+  openAt,
+  isKnown,
+  onToggleKnown,
+  knownCount = 0,
+  knownKept = true,
+}: {
+  entries: PracticeEntry[];
+  startAt: number;
+  /** Open on this question, whatever place was kept ("Say this one aloud" on the week's card; the page remounts the card with it). */
+  openAt?: number;
+  /** Whether the family has marked a question learned, and the way to mark it. */
+  isKnown?: (n: number) => boolean;
+  onToggleKnown?: (n: number) => void;
+  knownCount?: number;
+  /** False when the browser would not keep the last tick. */
+  knownKept?: boolean;
+}) {
   const count = entries.length;
-  const [at, setAt] = useState(() => {
-    const kept = readStoredJSON(PRACTICE_KEY, isAt, { v: 1 as const, at: startAt }).at;
-    return Math.min(Math.max(1, kept), count);
-  });
+  const [kept0] = useState<PracticePlace>(() => readStoredJSON<PracticePlace>(PRACTICE_KEY, isPracticePlace, { v: 1, at: startAt }));
+  const [at, setAt] = useState(() => Math.min(Math.max(1, openAt ?? kept0.at), count));
+  const [skip, setSkip] = useState(kept0.skip === true);
+  const [placeKept, setPlaceKept] = useState(true);
   const [turned, setTurned] = useState(false);
   const [voice] = useState(canSpeak);
   const [speaking, setSpeaking] = useState(false);
@@ -52,14 +78,21 @@ export default function CatechismPractice({ entries, startAt }: { entries: Pract
     };
   }, [at]);
 
-  if (!e) return null;
-
-  const go = (by: number) => {
-    const next = ((at - 1 + by + count) % count) + 1;
+  const show = (next: number, nextSkip = skip) => {
     setAt(next);
     setTurned(false);
     setSpeaking(false);
-    writeStoredJSON(PRACTICE_KEY, { v: 1, at: next });
+    setPlaceKept(writeStoredJSON(PRACTICE_KEY, place(next, nextSkip)));
+  };
+
+  if (!e) return null;
+
+  const known = (n: number) => isKnown?.(n) ?? false;
+  const go = (by: 1 | -1) => show(nextPractice(at, by, count, skip, known));
+  const toggleSkip = () => {
+    const next = !skip;
+    setSkip(next);
+    setPlaceKept(writeStoredJSON(PRACTICE_KEY, place(at, next)));
   };
 
   const read = () => {
@@ -120,7 +153,29 @@ export default function CatechismPractice({ entries, startAt }: { entries: Pract
             {speaking ? "Stop" : "Read it to me"}
           </button>
         )}
+        {onToggleKnown && (
+          <button type="button" className="btn btn--quiet cp-read cp-know" aria-pressed={known(e.number)} onClick={() => onToggleKnown(e.number)}>
+            <Check aria-hidden="true" size={18} strokeWidth={1.75} />
+            We know this one
+          </button>
+        )}
       </div>
+      {onToggleKnown && (
+        <div className="cp-known">
+          <p className="cp-known__count" aria-live="polite">
+            You know {knownCount} of {count}.
+          </p>
+          <label className="cp-skip">
+            <input type="checkbox" checked={skip} onChange={toggleSkip} />
+            <span>Pass over the ones we know</span>
+          </label>
+        </div>
+      )}
+      {(!placeKept || !knownKept) && (
+        <p className="cp-known__count" role="status">
+          {SAVE_FAILED}
+        </p>
+      )}
     </div>
   );
 }
