@@ -1800,5 +1800,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 5,
     "subThemes": [],
     "confidence": "high"
+  },
+  "does-science-disprove-god": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
