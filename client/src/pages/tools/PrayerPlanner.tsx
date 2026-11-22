@@ -69,7 +69,7 @@ const primary = {
   background: "var(--charcoal)", color: "var(--charcoal-fg)", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600,
 } as const;
 const pill = {
-  minHeight: "40px", padding: "8px 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-pill)", cursor: "pointer",
+  minHeight: "44px", padding: "8px 14px", border: "1px solid var(--border)", borderRadius: "var(--radius-pill)", cursor: "pointer",
   background: "transparent", color: "var(--ink)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 500,
 } as const;
 const linkBtn = { font: "inherit", fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", background: "none", border: 0, padding: 0, cursor: "pointer", textDecoration: "underline" } as const;

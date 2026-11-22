@@ -8,6 +8,7 @@
  * writes, and nothing leaves the device.
  */
 import { isArrayOf, readStoredJSON } from "@/lib/storage";
+import { MEMORY_KEY, OLD_MEMORY_KEY, isMemoryState, type MemoryState } from "./scriptureMemory";
 import { readMarks, readWalks } from "@/lib/bible-desk";
 import { isPublicEssay, shelfEntry } from "@/lib/shelf";
 import { PLAN_PATH, readPlanDays, readerPlace } from "@/lib/storyPlan";
@@ -127,8 +128,10 @@ export function collectProgress(planTitles: Record<string, string> = {}): Progre
   if (prayer.items.length) rows.push({ ...tool("prayer-planner"), kind: "Tool", detail: `${plural(prayer.items.length, "person or need", "people and needs")} you pray for`, when: "" });
   const connection = readStoredJSON("livewell-connection-planner", hasList("people"), { people: [] });
   if (connection.people.length) rows.push({ ...tool("connection-planner"), kind: "Tool", detail: `${plural(connection.people.length, "person", "people")} you're reaching toward`, when: "" });
-  const memorized = readStoredJSON("livewell-scripture-memorized", isList, []);
-  if (memorized.length) rows.push({ ...tool("scripture-memory"), kind: "Tool", detail: `${plural(memorized.length, "verse")} memorized`, when: "" });
+  // Memorize Scripture: the verses being learned (lib/scriptureMemory), or the first version's list.
+  const learning = readStoredJSON<MemoryState | null>(MEMORY_KEY, (x): x is MemoryState | null => x === null || isMemoryState(x), null);
+  const memorized = learning ? Object.keys(learning.verses) : readStoredJSON(OLD_MEMORY_KEY, isList, []);
+  if (memorized.length) rows.push({ ...tool("scripture-memory"), kind: "Tool", detail: learning ? `${plural(memorized.length, "verse")} you're learning` : `${plural(memorized.length, "verse")} memorized`, when: "" });
 
   // The four the library could not see before (TOOLS-PLAN unit 22).
   // A Whole-Life check left part-way (pages/life/WholeLifeAssessment).

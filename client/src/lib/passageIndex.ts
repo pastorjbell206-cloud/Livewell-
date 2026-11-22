@@ -20,6 +20,7 @@ export type PassageKind =
   | "plan"
   | "wisdom"
   | "essay"
+  | "practice"
   | "tool";
 
 /** One page that treats the chapter: kind, title, address, and the passage it names in this chapter. */
@@ -43,6 +44,7 @@ export const PASSAGE_KINDS: { k: PassageKind; name: string }[] = [
   { k: "plan", name: "Eight-week plans" },
   { k: "wisdom", name: "What the Bible says, by subject" },
   { k: "essay", name: "Essays" },
+  { k: "practice", name: "Tools" },
   { k: "tool", name: "Read any verse in context" },
 ];
 

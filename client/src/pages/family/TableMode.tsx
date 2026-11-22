@@ -16,6 +16,8 @@ import { devotionHref, type CatechismLine } from "@/lib/familyTable";
 import { useWakeLock } from "@/lib/useWakeLock";
 import { PartBody, partsOf, type AskChoice } from "./DevotionParts";
 import type { Devotion } from "./useFamilyData";
+import type { FamilyFilm } from "@/lib/familyFilms";
+import WatchFirst from "./WatchFirst";
 
 export function TableFrame({ title, leaveHref, children }: { title: string; leaveHref: string; children: ReactNode }) {
   return (
@@ -41,6 +43,7 @@ export default function TableMode({
   catechism,
   own,
   ask,
+  film,
   step,
   onStepChange,
   onFinish,
@@ -52,6 +55,8 @@ export default function TableMode({
   own?: boolean;
   /** Whose questions to ask, where the devotion has age bands (U21). */
   ask?: AskChoice;
+  /** The Bible Explorer film this devotion offers, shown on the first screen before the passage. */
+  film?: FamilyFilm | null;
   /** Zero-based. */
   step: number;
   onStepChange: (index: number) => void;
@@ -73,6 +78,7 @@ export default function TableMode({
     title: part.title,
     content: (
       <>
+        {part.id === "read" && film && <WatchFirst key={film.slug} film={film} backLabel="Back to the passage" />}
         <PartBody part={part} devotion={devotion} catechism={catechism} ask={ask} own={own} />
         {part.id === "read" && <ScriptureNote rendering={devotion.rendering === "bsb" ? "bsb" : "paraphrase"} />}
       </>

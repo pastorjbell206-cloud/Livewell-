@@ -180,7 +180,7 @@ export const TOOL_LIST: Tool[] = [
     name: "Do You Hold Both Sides to the Same Standard? A Self-Check",
     job: "I want to know if I am fair to the side I disagree with.",
     time: "10 minutes",
-    keeps: "Nothing",
+    keeps: "The ones you mark",
     group: "hard-questions",
     icon: Scale,
     href: "/disruption/consistency",
