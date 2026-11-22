@@ -15172,3 +15172,18 @@ Cut in chapter 2: Tell es-Sultan and the age of the site (on the book page); the
 | The three ways the miracle is read: a direct act; the landslides near Adam (1927) with the timing as the miracle; a retelling shaped to mirror the exodus, perhaps tied to worship at Gilgal; no side | 14-17 `hard` | joshua/3.json `historical`, `hard` | Repository; each in its holders' terms; no side |
 
 Cut in chapter 3: the thirteenth-century AD landslide (the note says only ‘reported’); a link between the verb ‘cross over’ and the word ‘Hebrew’ (the note calls it debated); 1 Corinthians 10:1-2 (Paul speaks of the sea, not the Jordan). The BSB's words in verse 13 are quoted only in part because the verse has dashes.
+
+## The plain notes on Joshua 4 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The chapter retells the crossing in overlapping layers; standing stones in the ancient world (Jacob at Bethel, Moses' twelve pillars); memory where few could read; one stone for each tribe, the eastern tribes included; the child's question as at Passover; ‘to this day’ as the later writer's voice | 1-9 | joshua/4.json `cultural`, `literary`, `words` (shevet); joshua/intro.json `author` | Repository |
+| Exodus 12:26-27; Luke 22:19 | 1-9 | joshua/4.json `cultural`, `christ`; BSB | Repository; BSB text |
+| The ark as the constant of the account; the eastern tribes keep their word; 40,000 and the two readings of the Hebrew word for thousand; Joshua exalted as 3:7 promised; ‘the ark of the Testimony’ | 10-18 | joshua/4.json `historical`, `cultural`, `literary`, `words` (gadal) | Repository; no side on the number |
+| Exodus 14:31; the ark no charm (1 Samuel 4) | 10-18 | joshua/3.json `words` (aron); BSB | Repository; BSB text |
+| The tenth day of the first month and the choosing of the lamb (Exodus 12:3); Gilgal between the river and Jericho, its site not found, Samuel's circuit, Saul confirmed there; ‘before us’; the two purposes of verse 24; the fear of the LORD as reverence | 19-24 | joshua/4.json `historical`, `literary`; bible/doctrines/fear-of-god.json | Repository |
+| Psalm 66:6; Matthew 28:19 | 19-24 | joshua/4.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 4: the prophets' later words against worship at Gilgal (left to the deep note); the twelve apostles as an echo of the twelve stones (the note says ‘many interpreters see’, and the New Testament does not draw the line to this chapter).
