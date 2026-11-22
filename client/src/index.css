@@ -1894,6 +1894,74 @@ html{-webkit-tap-highlight-color:transparent}
 .cp-known__count{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--charcoal-fg-muted);margin:0}
 .cp-skip{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:var(--U);font-size:14px;color:var(--charcoal-fg);cursor:pointer}
 .cp-skip input{width:20px;height:20px;accent-color:var(--mustard)}
+/* The Consistency Check (pages/prophetic/PropheticConsistency.tsx). */
+.pc-test{display:flex;gap:14px;align-items:flex-start;text-align:left;cursor:pointer;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:var(--s-4);min-height:44px;color:var(--ink)}
+.pc-test.is-on{border-color:var(--mustard)}
+.pc-test__mark{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:26px;height:26px;margin-top:2px;border-radius:50%;border:2px solid var(--borderdk);color:var(--charcoal)}
+.pc-test.is-on .pc-test__mark{border-color:var(--mustard);background:var(--mustard)}
+.pc-test__prompt{display:block;font-family:var(--F);font-size:19px;font-weight:500;line-height:1.35;color:var(--ink)}
+.pc-test__tell{display:block;font-family:var(--B);font-size:15px;line-height:1.65;color:var(--ink-muted);margin-top:8px}
+.pc-text{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0 0 var(--s-2);max-width:62ch}
+.pc-mine{margin:0 0 var(--s-3);padding-left:1.3em;max-width:68ch}
+.pc-mine li{margin:0 0 14px;font-family:var(--B);font-size:16px;line-height:1.6;color:var(--ink)}
+.pc-mine__prompt{display:block;font-weight:600}
+.pc-mine__tell{display:block;color:var(--ink-muted);margin-top:4px}
+.pc-verse{border-left:2px solid var(--mustard);padding-left:16px;margin:0 0 var(--s-3);max-width:66ch}
+.pc-verse__text{font-family:var(--font-reading);font-size:18px;line-height:1.6;font-style:italic;color:var(--ink);margin:0}
+.pc-verse__ref{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);margin:6px 0 8px}
+.pc-verse .pc-text{margin-bottom:0;color:var(--ink-muted)}
+.pc-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin-top:var(--s-3)}
+.pc-actions .btn{display:inline-flex;align-items:center;gap:8px}
+@media print{
+  .pc-page>:not(.pc-reading){display:none !important}
+  .pc-reading{background:none !important;padding:0 !important}
+}
+/* Memorize Scripture (pages/tools/ScriptureMemory.tsx). */
+.sm-sec{background:var(--bone);padding:var(--s-5) var(--gutter)}
+.sm-sec--warm{background:var(--bone-warm)}
+.sm-wrap{max-width:var(--w-default);margin:0 auto}
+.sm-h2{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.15;color:var(--ink);margin:0 0 8px}
+.sm-lede{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink-muted);margin:0 0 var(--s-3);max-width:62ch}
+.sm-lede a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sm-practice{background:var(--card);border-bottom:1px solid var(--border);outline:none;scroll-margin-top:80px}
+.sm-practice__ref{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.1;color:var(--ink);margin:6px 0 var(--s-2)}
+.sm-verse{font-family:var(--font-reading);font-size:clamp(20px,1.1rem + .7vw,26px);line-height:1.9;color:var(--ink);margin:0 0 var(--s-2);max-width:34em}
+.sm-gap{font:inherit;color:var(--ink-muted);background:none;border:0;border-bottom:1px solid var(--borderdk);border-radius:0;letter-spacing:.05em;min-width:28px;padding:10px 2px;margin:-10px 0;cursor:pointer}
+.sm-gap:hover,.sm-gap:focus-visible{color:var(--ink);border-bottom-color:var(--mustard)}
+.sm-peeked{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.sm-step{font-family:var(--U);font-size:16px;line-height:1.6;color:var(--ink);margin:var(--s-2) 0;max-width:62ch}
+.sm-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:var(--s-2) 0 0}
+.sm-actions .btn{display:inline-flex;align-items:center;gap:8px}
+.sm-alert{font-family:var(--U);font-size:14px;line-height:1.6;color:var(--ink);margin:8px 0 0}
+.sm-alert:empty{display:none}
+.sm-list{list-style:none;margin:0;padding:0}
+.sm-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;padding:14px 0;border-top:1px solid var(--border)}
+.sm-row__body{flex:1 1 260px;min-width:0}
+.sm-row__ref{font-family:var(--U);font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--ink);margin:0}
+.sm-row__note{font-family:var(--U);font-size:14px;color:var(--ink-muted);margin:2px 0 0}
+.sm-row__text{font-family:var(--font-reading);font-size:16px;line-height:1.6;color:var(--ink-muted);margin:4px 0 0}
+.sm-row__go{flex-shrink:0}
+.sm-stage{font-weight:500;color:var(--ink-muted);margin-left:8px}
+.sm-stage.is-due{color:var(--mustard-text)}
+.sm-set{border-top:1px solid var(--borderdk)}
+.sm-set:last-of-type{border-bottom:1px solid var(--borderdk)}
+.sm-set summary{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;min-height:56px;padding:6px 0;cursor:pointer}
+.sm-set__name{font-family:var(--F);font-size:22px;color:var(--ink)}
+.sm-set__count{font-family:var(--U);font-size:14px;color:var(--ink-muted)}
+.sm-own__label{display:block;font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.sm-own__row{display:flex;flex-wrap:wrap;gap:10px}
+.sm-own__row .btn{display:inline-flex;align-items:center;gap:8px}
+.sm-own__input{flex:1 1 220px;min-height:48px;padding:0 14px;font-family:var(--B);font-size:16px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm)}
+.sm-print{display:none}
+@media print{
+  .sm-page>:not(.sm-print){display:none !important}
+  .sm-print{display:block}
+  .sm-print__head{font-family:var(--U);font-size:8pt;letter-spacing:.08em;color:var(--ink-muted);margin:0 0 8pt}
+  .sm-cards{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+  .sm-card{border:1px solid var(--borderdk);padding:12pt;break-inside:avoid;min-height:120pt}
+  .sm-card__ref{font-family:var(--U);font-size:10pt;font-weight:600;margin:0 0 6pt}
+  .sm-card__text{font-family:var(--font-reading);font-size:12pt;line-height:1.5;margin:0}
+}
 /* This week's question, as a card for the table (family/CatechismWeek.tsx). */
 .cw-week>div{max-width:var(--w-default);margin:0 auto}
 .cw-label{margin:0 0 12px}

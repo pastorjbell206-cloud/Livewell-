@@ -6,6 +6,8 @@ import { Heart, Copy, Check, RefreshCw, Share2, Sun, Play, Pause, RotateCcw } fr
 import { useFavorites } from "@/hooks/useFavorites";
 import { copyToClipboard } from "@/lib/clipboard";
 import { Link } from "wouter";
+import { ResultNext } from "@/components/tool-shell/Result";
+import { nextPagesFor } from "@/lib/toolNext";
 
 const PRAYERS: Record<string, string[]> = {
   "Morning Prayer": [
@@ -424,6 +426,9 @@ export default function PrayerGenerator() {
               )}
             </div>
           )}
+
+          {/* Where to go next, from the kind of prayer chosen (data/tool-next.json). */}
+          {selected && !prayAlongActive && <ResultNext steps={nextPagesFor("prayer-generator", selected)} />}
 
           {!selected && (
             <div style={{ textAlign: "center", padding: "40px", color: "var(--ink3)" }}>

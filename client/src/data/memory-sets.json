@@ -1,0 +1,101 @@
+{
+ "about": "The sets of verses in Memorize Scripture (/tools/scripture-memory), by reference only. scripts/build-memory-verses.mjs reads each reference out of the Berean Standard Bible in client/public/bible and writes client/src/data/memory-verses.json, so no verse text is ever typed by hand. After changing a reference: node scripts/build-memory-verses.mjs Each set's `next` is the wisdom topic a reader goes on to; the builder reads the topic's own name from client/public/wisdom/topics.json.",
+ "sets": [
+  {
+   "id": "anxiety-and-peace",
+   "name": "Anxiety and peace",
+   "refs": [
+    "Philippians 4:6-7",
+    "Isaiah 26:3",
+    "1 Peter 5:7",
+    "John 14:27",
+    "Psalm 46:10"
+   ],
+   "next": "/wisdom/anxiety"
+  },
+  {
+   "id": "marriage-and-love",
+   "name": "Marriage and love",
+   "refs": [
+    "Ephesians 5:25",
+    "1 Corinthians 13:4-5",
+    "Genesis 2:24",
+    "Colossians 3:14",
+    "1 John 4:19"
+   ],
+   "next": "/wisdom/marriage-communication"
+  },
+  {
+   "id": "faith-and-trust",
+   "name": "Faith and trust",
+   "refs": [
+    "Hebrews 11:1",
+    "Proverbs 3:5-6",
+    "Mark 9:24",
+    "Romans 10:17",
+    "2 Corinthians 5:7"
+   ],
+   "next": "/wisdom/trusting-god"
+  },
+  {
+   "id": "identity-in-christ",
+   "name": "Identity in Christ",
+   "refs": [
+    "2 Corinthians 5:17",
+    "Ephesians 2:10",
+    "Galatians 2:20",
+    "1 Peter 2:9",
+    "Romans 8:1"
+   ],
+   "next": "/wisdom/identity-and-worth"
+  },
+  {
+   "id": "suffering-and-hope",
+   "name": "Suffering and hope",
+   "refs": [
+    "Romans 8:28",
+    "James 1:2-3",
+    "2 Corinthians 4:17",
+    "Psalm 34:18",
+    "Romans 5:3-4"
+   ],
+   "next": "/wisdom/suffering"
+  },
+  {
+   "id": "parenting-and-family",
+   "name": "Parenting and family",
+   "refs": [
+    "Proverbs 22:6",
+    "Deuteronomy 6:6-7",
+    "Psalm 127:3",
+    "Ephesians 6:4",
+    "3 John 1:4"
+   ],
+   "next": "/wisdom/parenting-struggles"
+  },
+  {
+   "id": "leadership-and-wisdom",
+   "name": "Leadership and wisdom",
+   "refs": [
+    "James 1:5",
+    "Proverbs 9:10",
+    "Mark 10:45",
+    "1 Timothy 4:12",
+    "Proverbs 11:14"
+   ],
+   "next": "/wisdom/decisions-and-guidance"
+  },
+  {
+   "id": "forgiveness-and-grace",
+   "name": "Forgiveness and grace",
+   "refs": [
+    "Ephesians 4:32",
+    "Romans 3:23-24",
+    "Colossians 3:13",
+    "Ephesians 2:8-9",
+    "Psalm 103:12"
+   ],
+   "next": "/wisdom/forgiveness"
+  }
+ ]
+}

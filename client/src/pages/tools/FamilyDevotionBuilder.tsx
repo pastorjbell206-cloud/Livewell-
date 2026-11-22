@@ -19,6 +19,8 @@ import { useEffect, useRef, useState } from "react";
 import { Users, Copy, Check, RotateCcw, BookOpen, MessageCircle, Hand, HeartHandshake } from "lucide-react";
 import { Link } from "wouter";
 import { copyToClipboard } from "@/lib/clipboard";
+import { ResultNext } from "@/components/tool-shell/Result";
+import { nextPagesFor } from "@/lib/toolNext";
 
 type BandId = "young" | "elementary" | "teens" | "mixed";
 
@@ -1332,6 +1334,11 @@ export default function FamilyDevotionBuilder() {
                   Copy failed — select and copy manually.
                 </p>
               )}
+
+              {/* Where to go next, from the theme chosen (data/tool-next.json). */}
+              <div className="no-print">
+                <ResultNext steps={nextPagesFor("family-devotions", theme)} />
+              </div>
 
               {/* THE INVITATION — offered after the first devotion, never before it. */}
               {!series && (
