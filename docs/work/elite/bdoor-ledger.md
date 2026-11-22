@@ -15322,3 +15322,18 @@ Cut in chapter 11: the place names of the northern alliance; the Mari texts and 
 | Defeated kings and cities still held (15:63; 16:10; 17:11-12; Judges 1:27): the three answers; 13:1; no side | 7-24 `hard` | joshua/12.json `hard` | Repository; no side |
 
 Cut in chapter 12: Thutmose III at Megiddo and the name Armageddon; Dor and Aphek; the differences in the Greek translation of the list; Og as one of the Rephaim. The BSB's words in verses 7 and 8 are not quoted because of the dash.
+
+## The plain notes on Joshua 13 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘The entire land’ (11:23) beside ‘very much of the land remains’; the regions left, mostly along the coast; the Philistines and their five cities; the Egyptian records of the early twelfth century BC and the peoples of the sea; early and late dates explain the mention differently; Sidon and Gebal (Byblos); land divided before it is held; no map for any border or dispute today | 1-7 | joshua/13.json `historical`, `words` (yarash); joshua/12.json `hard`; questions/old-testament/jericho-and-the-conquest.json (`evidence`) | Repository; no side; no claim about any land today |
+| Judges 1:28; Exodus 23:30; Hebrews 11:13 | 1-7 | questions/old-testament/jericho-and-the-conquest.json; joshua/14.json `christ`; BSB | Repository; BSB text |
+| Dibon and the Mesha monument (ninth century BC), Mesha's claims in the region and the men of Gad; Geshur later a kingdom, David's father-in-law its king; Levi set apart for the tent, living from the offerings and in scattered towns | 8-14 | joshua/13.json `historical`, `cultural` | Repository |
+| Numbers 18:20; Psalm 16:5 | 8-14 | joshua/13.json `christ`; BSB | Repository; BSB text |
+| The clans as the unit that received land; the land the LORD's and not to be sold for good (Leviticus 25:23); Balaam (Numbers 22 to 24; 31:8, 31:16) and the Deir Alla inscription (about the eighth century BC); verses 14 and 33 as one truth from two sides | 15-33 | joshua/13.json `historical`, `cultural`, `words` (nachalah, mishpachah); numbers/intro.json `teaching` | Repository |
+| Leviticus 25:23; 1 Peter 2:9 | 15-33 | joshua/13.json `cultural`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 13: Matthew 5:5 and Romans 8:17 (the deep note's links by theme); the names of the five chiefs of Midian. The BSB's words in verses 3, 11, 20 and 30 are not quoted because of their dashes.
