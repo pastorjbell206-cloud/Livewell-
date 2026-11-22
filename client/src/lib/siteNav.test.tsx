@@ -272,10 +272,10 @@ describe("book links", () => {
       const book = bookFor({ slug: e.slug, pillar: null });
       if (book) expect(isShelfBookHref(book.href), e.slug).toBe(true);
     }
-    expect(bookFor({ slug: "when-the-church-married-empire" })?.slug).toBe("when-god-bless-america");
-    expect(bookFor({ slug: "the-monster-is-never-the-one-in-the" })?.slug).toBe("the-monster-in-the-mirror");
+    expect(bookFor({ slug: "when-the-church-married-empire" })?.slug).toBe("a-higher-allegiance");
+    expect(bookFor({ slug: "the-monster-is-never-the-one-in-the" })?.slug).toBe("blind-spots");
     expect(bookFor({ slug: "does-god-actually-exist" })?.slug).toBe("believe");
-    expect(bookFor({ slug: "conscience-outsourced-to-party", pillar: "politics" })?.slug).toBe("when-god-bless-america");
+    expect(bookFor({ slug: "conscience-outsourced-to-party", pillar: "politics" })?.slug).toBe("a-higher-allegiance");
     expect(bookFor({ slug: "a-marriage-essay", pillar: "marriage" })).toBeNull();
     expect(bookFor({ slug: "some-essay", pillar: null })).toBeNull();
   });

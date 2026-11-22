@@ -336,7 +336,7 @@ export default function Home() {
             {BOOK_SHELF.map((b) => (
               <li key={b.slug}>
                 <Link href={b.href} className="home-book">
-                  <img src={b.thumb} alt={b.title} width={150} height={240} loading="lazy" decoding="async" className="home-book__cover" />
+                  <img src={b.thumb} alt={b.title} width={150} height={225} loading="lazy" decoding="async" className="home-book__cover" />
                 </Link>
               </li>
             ))}

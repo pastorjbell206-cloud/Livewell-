@@ -86,8 +86,10 @@ function BookletCard({ b }: { b: Booklet }) {
       }}
     >
       <img
-        src={`/books/${b.slug}.jpg`}
+        src={`/covers/${b.slug}-400.webp`}
         alt={`${b.title} — cover`}
+        width={400}
+        height={600}
         loading="lazy"
         style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 8px 24px rgba(0,0,0,.18)" }}
       />
@@ -132,7 +134,7 @@ export default function HardIssuesSeries() {
       <SEOMeta
         title="Free Booklets on Elders and Church Government"
         description="Free booklets for elders and church leaders on choosing deacons, church government, and bringing a major change to a church. PDF and EPUB."
-        image={`${SITE_URL}/books/${BOOKLETS[0].slug}.jpg`}
+        image={`${SITE_URL}/covers/${BOOKLETS[0].slug}.jpg`}
         url={`${SITE_URL}/resources/hard-issues-series`}
         structuredData={hardIssuesSchema}
       />

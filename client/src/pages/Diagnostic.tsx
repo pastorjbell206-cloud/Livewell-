@@ -187,7 +187,7 @@ const DIM_META: Record<Dim, DimMeta> = {
   relational: {
     label: "Relational",
     essay: { href: "/studyguides/sermon-on-the-mount", title: "The Sermon on the Mount: A Bible Study, whose third session is Love Your Enemies" },
-    book: { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+    book: { href: "/books/blind-spots", title: "Blind Spots" },
     levels: {
       thin: {
         reading:

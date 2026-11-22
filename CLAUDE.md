@@ -363,7 +363,7 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 ## Strategic Reminders
 
 - The Pastors Connection Network stays outside this site (James, 2026-11-17): no link to it, no ask to support it, no redirect that leaves for it. Pastors are still readers here (`/help/pastors`).
-- No membership fee (James, 2026-11-17). Everything is free, the ebooks too (James, 2026-11-18: "give away for free for people to download"): every ebook, the three shelf books included, is a plain download listed in `client/src/data/ebooks.ts` and shown on `/downloads`; the seven whose files name the Pastors Connection Network wait in `content/held-downloads/` for his corrected files. The sixteen older titles he took down to rewrite in his own hand stay there too, off the site and unlisted (James, 2026-11-18: "Keep them off for now").
+- No membership fee (James, 2026-11-17). No one is charged or blocked: every ebook, the three shelf books included, is a plain download listed in `client/src/data/ebooks.ts` and shown on `/downloads`. The ebooks and the printables are how the work is supported (James, 2026-11-22): each download carries a suggested gift the reader can change or skip ("Download without giving"), on everything downloadable except the Find Help printables and the care plans. The amounts are one data file, `shared/downloads.ts`; it is held behind the giving switch, so until that opens every download is the plain free link it was. Say "Suggested gift", never "price"; never call a download free beside the ask. The seven whose files name the Pastors Connection Network wait in `content/held-downloads/` for his corrected files. The sixteen older titles he took down to rewrite in his own hand stay there too, off the site and unlisted (James, 2026-11-18: "Keep them off for now").
 - The homepage is strong; inner pages need the same design system applied.
 - Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel, and is called Substack by name. Both are linked from `/connect`, never imported or embedded; the one list of outside channels is `client/src/lib/channels.ts`.
 - Contact forms save to `contact_messages` for James to read; nothing is emailed until a mail sender exists.
@@ -726,11 +726,25 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
 - **Payments**: no membership (James, 2026-11-17). /membership redirects to
   /subscribe; the Stripe membership procedures and settings remain in the
   code, unused by any page. No giving link anywhere while /support is held.
-  **Ebooks free (James,
-  2026-11-18: "Everything free"; the seven naming the network "Hold them
-  back")**: no ebook is sold; a free book's old thank-you address 301s to
-  /downloads, the Stripe ebook code stays unused (checkout refuses), and a
-  past buyer of a held book still downloads it after the Stripe check.
+  **No ebook is sold (James, 2026-11-18; the seven naming the network "Hold
+  them back")**: a book's old thank-you address 301s to /downloads, the
+  Stripe ebook code stays unused (checkout refuses), and a past buyer of a
+  held book still downloads it after the Stripe check.
+  **Suggested gifts on all downloads, which can be skipped (James,
+  2026-11-22: "like $8.99, or diversify the prices")**: with giving open, the
+  first click on a download raises a sheet (`DownloadGiftHost`, mounted once;
+  no page's links were changed) with the suggested amount filled in, other
+  amounts, and the plain link "Download without giving". The ladder runs
+  from $8.99 for a full book to $1.99 for anything short, in
+  `shared/downloads.ts`; a download is named by an id from
+  `shared/download-items.json`, never by a file path.
+  `giving.createDownloadCheckout` is in both runtimes and stores and logs
+  nothing; `/downloads/thanks` starts the file. The files keep their plain
+  addresses: no token, no account. It does not ask twice for one download in
+  a day, and small things ask once a day. The Find Help printables, the care
+  plans and the worksheets for grief and abuse never ask. Held behind the
+  same switch and key as `/support`: while either is off, nothing mounts.
+  `docs/work/elite/bookshelf.md` has the ladder, the wording and the steps.
 - **Support this work, built and held (James, 2026-11-21: "let's do the
   Bible Project way"; "gifts go to keep the work going"; "gifts go to me
   personally")**: `/support` takes a one-time or monthly gift through Stripe
@@ -740,6 +754,27 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   noindex, until `STRIPE_SECRET_KEY` is set in Vercel; then one switch opens
   it, `open` in `client/src/lib/giving.json`, followed by
   `pnpm run search:index`. `docs/work/elite/giving.md` has the steps.
+- **Two books renamed (James, 2026-11-22)**: The Monster in the Mirror is
+  **Blind Spots** (`/books/blind-spots`); When God Bless America Replaces
+  Thy Kingdom Come is **A Higher Allegiance**, subtitle "Reclaiming Jesus
+  from American Politics" (`/books/a-higher-allegiance`; "American Idols"
+  was dropped the same day). Each old address 301s once. The PDFs and EPUBs
+  are finished files and still carry the old titles, so each card and page
+  says "Published earlier as ..." until his corrected files come; the file
+  addresses under `/ebook/` did not change. A rename is one data change:
+  `client/src/data/book-names.json`, then `node scripts/sync-book-names.mjs`
+  (its `--check` is a content gate). No other title is changed until he
+  picks from the table in `docs/work/elite/bookshelf.md`.
+- **Covers are drawn by a script (2026-11-22)**: `scripts/build-covers.mjs`
+  draws every listed ebook's cover and a card for each kind of printable
+  from `client/src/data/covers.json`, in the site's engraved hand, the
+  tokens of `index.css` and the self-hosted fonts, into
+  `client/public/covers/` (named by the book's folder under `/ebook/`). One
+  family: the title large in capitals with one word in the accent colour,
+  an italic subtitle, a short rule, one picture, "JAMES BELL" at the foot.
+  A book can use a finished uploaded image instead (`"image"` in
+  `covers.json`). `--check` is a content gate: rerun the script after
+  changing the data, a drawing or a colour token. No held book has a cover.
 - **Outside the site (James, 2026-11-17)**: the Pastors Connection Network
   has no link, ask, or redirect here; `site-structure.test.ts` fails on a
   path redirect that leaves the site. No title or book count is stated

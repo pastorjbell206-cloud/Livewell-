@@ -1,19 +1,21 @@
 /**
  * When God Bless America: the book's own page, with its free download (James,
  * 2026-11-18: every ebook is free). The PDF and EPUB are static files under
- * /ebook/when-god-bless-america/, listed in data/ebooks.ts. The old Stripe link and its
+ * /ebook/when-god-bless-america/ (the file keeps its address), listed in data/ebooks.ts. The old Stripe link and its
  * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
 import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
-import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { FreeEbookButtons, formerlyLine } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
+import { OfferLine, OfferMeta, useEbookLabel } from "@/components/BookOffer";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
-const COVER = "/books/when-god-bless-america.jpg";
-const EBOOK = freeEbook("when-god-bless-america")!;
+const COVER = "/covers/when-god-bless-america-800.webp";
+const SHARE = "/covers/when-god-bless-america.jpg";
+const EBOOK = freeEbook("a-higher-allegiance")!;
 
 const CHAPTERS: [string, string][] = [
   ["Introduction", "Not Persecuted—Seduced"],
@@ -37,13 +39,14 @@ const eyebrow: React.CSSProperties = {
 };
 
 export default function WhenGodBlessAmerica() {
+  const ebookLabel = useEbookLabel();
   return (
     <Layout>
       <SEOMeta
-        title="When God Bless America Replaces Thy Kingdom Come"
+        title="A Higher Allegiance"
         description="A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Available now as an ebook."
-        image={`${SITE_URL}${COVER}`}
-        url={`${SITE_URL}/books/when-god-bless-america`}
+        image={`${SITE_URL}${SHARE}`}
+        url={`${SITE_URL}/books/a-higher-allegiance`}
         type="book"
       />
 
@@ -52,25 +55,28 @@ export default function WhenGodBlessAmerica() {
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
           <img
             src={COVER}
-            alt="Cover of When God Bless America Replaces Thy Kingdom Come"
-            width={1600} height={2416}
+            alt="Cover of A Higher Allegiance"
+            width={800} height={1200}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }}
           />
           <div>
-            <Place path="/books/when-god-bless-america" after="Free ebook" dark style={{ margin: 0 }} />
+            <Place path="/books/a-higher-allegiance" after={ebookLabel} dark style={{ margin: 0 }} />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
-              When God Bless America Replaces Thy Kingdom Come
+              A Higher Allegiance
             </h1>
             <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 8px" }}>
-              How Patriotism Became Our Practical Savior
+              Reclaiming Jesus from American Politics
             </p>
-            <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(245,240,230,.7)", margin: "0 0 28px" }}>
+            <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(245,240,230,.7)", margin: "0 0 12px" }}>
               James Bell
             </p>
+            {EBOOK.formerly && (
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--charcoal-fg-muted)", margin: "0 0 28px" }}>{formerlyLine(EBOOK.formerly)}</p>
+            )}
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
               <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
-                Free · EPUB and PDF · no email asked
+                <OfferMeta pdf={EBOOK.pdf} />
               </span>
             </div>
           </div>
@@ -88,7 +94,7 @@ export default function WhenGodBlessAmerica() {
               Many believers have quietly begun to place their practical trust in power, policy, and national strength rather than in Christ. The language of faith is still there, and so are the rituals and the worship, but the heart has moved.
             </p>
             <p style={{ margin: "0 0 1.2em" }}>
-              In <em>When God Bless America Replaces Thy Kingdom Come</em>, James Bell writes to the church in America as a pastor inside it, drawing on Scripture, church history, and what he has watched happen in his own sanctuary. He exposes how patriotism can become practical salvation, how fear can rewrite doctrine, and how the cross confronts every attempt to turn Jesus into a mascot for political power.
+              In <em>A Higher Allegiance</em>, James Bell writes to the church in America as a pastor inside it, drawing on Scripture, church history, and what he has watched happen in his own sanctuary. He exposes how patriotism can become practical salvation, how fear can rewrite doctrine, and how the cross confronts every attempt to turn Jesus into a mascot for political power.
             </p>
             <p style={{ margin: 0, fontWeight: 600 }}>
               This book won't tell you who to vote for. It asks who you worship.
@@ -124,7 +130,7 @@ export default function WhenGodBlessAmerica() {
             Read it now
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            Free to download: an EPUB for your e-reader and a PDF for everything else.
+            <OfferLine />
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
@@ -136,9 +142,9 @@ export default function WhenGodBlessAmerica() {
       </section>
 
       <BookNextSteps
-        slug="when-god-bless-america"
+        slug="a-higher-allegiance"
         related={[
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
           { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
           { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
         ]}

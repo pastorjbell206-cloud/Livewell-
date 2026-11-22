@@ -79,6 +79,9 @@ jobs:
           node scripts/validate-tracks.mjs
           node scripts/validate-bible-notes.mjs
           node scripts/verify-sources.mjs
+          node scripts/sync-book-names.mjs --check
+          node scripts/build-covers.mjs --check
+          pnpm exec tsx scripts/build-download-items.mjs --check
 
       - name: Test
         run: pnpm test

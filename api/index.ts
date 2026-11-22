@@ -26,6 +26,10 @@ import { createSubstackCache } from "../shared/substackLatest.js";
 // with the dev router (server/giving-router.ts); and the page's own switch.
 import { GIVING_CLOSED_MESSAGE, checkGift, giftCheckoutParams } from "../shared/giving.js";
 import GIVING_FACTS from "../client/src/lib/giving.json" with { type: "json" };
+// Suggested gifts on downloads: the amounts, the check and the Stripe request
+// (shared with the dev router), and the list of what can be downloaded.
+import { checkDownloadGift, downloadGiftCheckoutParams } from "../shared/downloads.js";
+import DOWNLOAD_ITEMS from "../shared/download-items.json" with { type: "json" };
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -1638,7 +1642,7 @@ const MUTATION_PROCS = new Set<string>([
   "feedSync.syncAll", "feedSync.syncSource",
   "adminNotifications.markAsRead",
   "stripe.createMembershipCheckout", "stripe.createCheckoutSession",
-  "giving.createCheckout",
+  "giving.createCheckout", "giving.createDownloadCheckout",
   "files.upload", "files.updateDescription", "files.delete",
 ]);
 
@@ -2411,6 +2415,29 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         try {
           // The site's own address comes from the request, never from the page's input.
           const session = await stripe.checkout.sessions.create(giftCheckoutParams(checked.gift, siteOrigin(req)));
+          sessionUrl = session.url || "";
+        } catch {
+          console.error("[giving] the checkout could not be started");
+        }
+        if (!sessionUrl) return trpcErr(res, "INTERNAL_SERVER_ERROR", "The gift could not be started. Nothing was charged.", 500);
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.setHeader("Cache-Control", "no-store");
+        return res.status(200).send(JSON.stringify([{ result: { data: superjson.serialize({ sessionUrl }) } }]));
+      }
+      // A gift given with a download. Mirrors server/giving-router.ts: the
+      // same two gates, the download looked up by id in
+      // shared/download-items.json (never a file path or a return address
+      // from the page), nothing stored and nothing logged.
+      case "giving.createDownloadCheckout": {
+        const stripe = getStripe();
+        if (GIVING_FACTS.open !== true || !stripe || !stripeConfigured()) {
+          return trpcErr(res, "BAD_REQUEST", GIVING_CLOSED_MESSAGE, 400);
+        }
+        const checked = checkDownloadGift(input, DOWNLOAD_ITEMS as Record<string, string>);
+        if (!checked.ok) return trpcErr(res, "BAD_REQUEST", checked.error, 400);
+        let sessionUrl = "";
+        try {
+          const session = await stripe.checkout.sessions.create(downloadGiftCheckoutParams(checked.gift, siteOrigin(req)));
           sessionUrl = session.url || "";
         } catch {
           console.error("[giving] the checkout could not be started");
