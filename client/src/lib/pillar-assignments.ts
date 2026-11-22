@@ -1820,5 +1820,30 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 6,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-the-church-responsible-for-antisemitism": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "are-catholics-and-protestants-both-christians": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-support-the-death-penalty": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-depression-a-spiritual-failure": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "do-i-have-to-go-to-church-to-be-a-christian": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
