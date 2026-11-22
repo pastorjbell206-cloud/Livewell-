@@ -1,0 +1,343 @@
+{
+ "about": "Written by scripts/build-explorer-index.mjs from each film's own links (films/<slug>.json: deeper, differ, end). The pages outside the Explorer on which each moving picture is offered. Do not edit by hand.",
+ "films": {
+  "the-exodus": {
+   "title": "The Exodus: out of Egypt",
+   "line": "God's people were slaves in Egypt, and God set them free. The story as the Bible tells it, in seven pictures, from the brick yards to the far side of the sea."
+  },
+  "david-and-goliath": {
+   "title": "David and Goliath",
+   "line": "A giant, a frightened army, and a shepherd boy with a sling. The story as the Bible tells it, in seven pictures, and what it is really about."
+  },
+  "holy-spirit": {
+   "title": "The Holy Spirit through the Bible",
+   "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
+  },
+  "the-king": {
+   "title": "The king",
+   "line": "God's people waited a long time for a good king. Seven pictures follow one crown, from a shepherd boy to a cross to a throne that lasts for ever."
+  },
+  "covenant": {
+   "title": "Promises that build: the covenants",
+   "line": "God makes promises and keeps them. Seven pictures follow the covenants, from Noah's rainbow to the cup Jesus shared, each one laid on the one before like the stones of an arch."
+  },
+  "the-lamb": {
+   "title": "Sacrifice and the Lamb",
+   "line": "From the garden to the last page, God provides. Seven pictures follow a covering, a ram, the Passover lamb and the altar to Jesus, the Lamb of God, and the Lamb at the center of the throne."
+  },
+  "why-blood": {
+   "title": "Sacrifice: why blood?",
+   "line": "The Bible talks about blood from its first pages to the cross. Seven pictures show why: blood means a life given, and God himself gives it."
+  },
+  "exile-and-home": {
+   "title": "Exile and coming home",
+   "line": "Again and again in the Bible, God's people are far from home, and again and again God brings them back. Seven pictures follow one road, from the garden gate to a city whose gates are never shut."
+  },
+  "kingdom-of-god": {
+   "title": "The kingdom of God",
+   "line": "Jesus said the kingdom of God is like a tiny seed that grows into a great tree. Seven pictures watch it grow, from God's rule over all to the day it comes in full."
+  },
+  "who-god-is": {
+   "title": "Who God is: Father, Son and Holy Spirit",
+   "line": "There is one God, the Father, the Son, and the Holy Spirit. Eight pictures of what the Bible shows, and why every other picture breaks."
+  },
+  "image-of-god": {
+   "title": "Creation and the image of God",
+   "line": "God made everything out of nothing, and he made people in his own image. Seven pictures of what that means for every person."
+  },
+  "what-sin-is": {
+   "title": "What sin is",
+   "line": "What sin is, what it breaks, and what God does about it, in six pictures."
+  },
+  "who-jesus-is": {
+   "title": "Who Jesus is",
+   "line": "Jesus is God the Son, who became a real man. Seven pictures of who he is, and why it matters."
+  },
+  "why-jesus-died": {
+   "title": "Why did Jesus die?",
+   "line": "What happened on the cross, and the Bible's own pictures of what it did for us, in eight pictures."
+  },
+  "the-resurrection": {
+   "title": "The resurrection",
+   "line": "What Christians believe happened on the third day, and why it matters, in seven pictures: a tomb, a breakfast, a stone split in two and the first sheaf of a harvest."
+  },
+  "how-salvation-works": {
+   "title": "How salvation works",
+   "line": "The good news of Jesus in nine pictures: what went wrong between people and God, what God did about it, and the new life he gives."
+  },
+  "grace": {
+   "title": "Grace: the gift no one earns",
+   "line": "Grace is God's love that we do not have to earn. Seven pictures show what it is, what it cost, and what it does in a person."
+  },
+  "faith": {
+   "title": "Faith: trusting the one who promised",
+   "line": "Faith is trusting God because he keeps his word. Seven pictures show what faith is, how it grows, and why even a little of it is enough."
+  },
+  "gospel-in-a-minute": {
+   "title": "The gospel in a minute",
+   "line": "The good news of Jesus, short enough to share, in seven pictures: what went wrong, what God did about it, and the gift he gives."
+  },
+  "spirit-in-a-believer": {
+   "title": "The Holy Spirit in a believer",
+   "line": "The Holy Spirit is God, and he lives in everyone who belongs to Jesus. Seven pictures of what he does there."
+  },
+  "the-church": {
+   "title": "What the church is",
+   "line": "The church is not first a building. It is people, gathered by God's Spirit around Jesus. Seven pictures of what that means."
+  },
+  "baptism-and-supper": {
+   "title": "Baptism and the Lord's Supper",
+   "line": "Jesus gave his church two things to do: baptism with water, and a meal of bread and a cup. Seven pictures of what Christians share, and where churches do them differently."
+  },
+  "the-bible": {
+   "title": "The Bible: how we got it",
+   "line": "How the Bible came to us, in seven pictures: many writers, words spoken and written down, scrolls and ink, copies made by hand, a new kind of book, and every language."
+  },
+  "prayer": {
+   "title": "Prayer",
+   "line": "Prayer is talking with God, who is our Father. Seven pictures of what prayer is, and what to do when an answer is slow to come."
+  },
+  "life-to-come": {
+   "title": "The life to come",
+   "line": "What Christians believe about dying, and about what God will do at the end. Seven gentle pictures, from a seed in the ground to a world made new."
+  },
+  "john-3-16": {
+   "title": "John 3:16 in its chapter",
+   "line": "One of the best-known verses in the Bible comes from a talk in the dark between Jesus and a teacher named Nicodemus. Seven pictures tell the whole of it."
+  },
+  "psalm-23": {
+   "title": "Psalm 23: the LORD is my shepherd",
+   "line": "One of the best-loved songs in the Bible, one line at a time: a shepherd, green grass, a dark valley, a feast, and a home at the end of the road."
+  },
+  "romans-8-28": {
+   "title": "Romans 8:28: what it promises, and what it does not",
+   "line": "A verse people say when something sad happens. Seven pictures look closely at what it promises, and at what it does not."
+  },
+  "who-made-god": {
+   "title": "Who made God?",
+   "line": "A real question, taken seriously, in six pictures: everything we know came from something, so where did God come from?"
+  },
+  "does-god-exist": {
+   "title": "Does God exist?",
+   "line": "One of the biggest questions there is, taken slowly and honestly in six pictures: why is there anything at all?"
+  },
+  "why-cant-i-see-god": {
+   "title": "Why can't I see God?",
+   "line": "An honest question, in seven pictures: why no one can see God with their eyes, and the ways he has made himself known, most of all in Jesus."
+  },
+  "why-bad-things-happen": {
+   "title": "Why do bad things happen?",
+   "line": "A hard and honest question, in eight pictures: what the Bible says about pain, what it does not explain, and who has the last word."
+  },
+  "is-the-bible-true": {
+   "title": "Is the Bible true?",
+   "line": "Can we trust a book so old, copied by hand for hundreds of years? An honest look in eight pictures."
+  },
+  "did-jesus-come-back-to-life": {
+   "title": "Did Jesus really come back to life?",
+   "line": "Christians say Jesus died and came back to life. Is it true? An honest look at what happened, in seven pictures."
+  },
+  "when-we-die": {
+   "title": "What happens when we die?",
+   "line": "A gentle answer to a big question, in seven pictures: what the Bible says happens when someone who belongs to Jesus dies, and why Christians can be sad and hopeful at once."
+  },
+  "so-many-churches": {
+   "title": "Why are there so many churches?",
+   "line": "There are so many different churches on so many signs. Seven pictures of how one church became many, and the one root they still share."
+  },
+  "love-when-i-do-wrong": {
+   "title": "Does God still love me when I do wrong?",
+   "line": "Everyone does wrong sometimes. Does God stop loving us then? Jesus answered with a story about a son who ran away and a father who ran too."
+  },
+  "god-silent": {
+   "title": "Why does God seem silent sometimes?",
+   "line": "When you pray and nothing seems to happen, you are in good company. Seven pictures of people in the Bible who felt it too, and what God did."
+  },
+  "science-and-the-bible": {
+   "title": "Are science and the Bible enemies?",
+   "line": "Do you have to choose between loving God and loving science? Seven pictures on why the answer is no, and on what Christians agree and disagree about."
+  }
+ },
+ "pages": {
+  "/answers/can-you-be-a-christian-without-church": [
+   "the-church",
+   "baptism-and-supper",
+   "so-many-churches"
+  ],
+  "/answers/can-you-lose-your-salvation": [
+   "how-salvation-works",
+   "gospel-in-a-minute"
+  ],
+  "/answers/did-the-resurrection-actually-happen": [
+   "why-jesus-died",
+   "the-resurrection",
+   "life-to-come",
+   "did-jesus-come-back-to-life"
+  ],
+  "/answers/do-i-have-to-choose-between-faith-and-science": [
+   "image-of-god",
+   "science-and-the-bible"
+  ],
+  "/answers/does-god-actually-exist": [
+   "who-made-god",
+   "does-god-exist",
+   "why-cant-i-see-god",
+   "did-jesus-come-back-to-life"
+  ],
+  "/answers/does-god-choose-us-or-do-we-choose-him": [
+   "how-salvation-works",
+   "gospel-in-a-minute"
+  ],
+  "/answers/done-with-church-but-not-jesus": [
+   "the-church"
+  ],
+  "/answers/how-can-god-be-three-and-one": [
+   "holy-spirit",
+   "who-god-is",
+   "spirit-in-a-believer"
+  ],
+  "/answers/how-should-a-christian-read-genesis-1": [
+   "image-of-god",
+   "science-and-the-bible"
+  ],
+  "/answers/if-god-is-good-why-suffering": [
+   "romans-8-28",
+   "why-bad-things-happen"
+  ],
+  "/answers/is-faith-irrational": [
+   "faith"
+  ],
+  "/answers/is-hell-forever-or-does-it-end": [
+   "life-to-come"
+  ],
+  "/answers/is-it-okay-to-be-angry-at-god": [
+   "prayer"
+  ],
+  "/answers/was-jesus-just-a-good-teacher": [
+   "who-jesus-is"
+  ],
+  "/answers/what-about-those-who-never-heard": [
+   "john-3-16"
+  ],
+  "/answers/what-does-the-bible-say-about-anxiety": [
+   "prayer"
+  ],
+  "/answers/what-makes-us-human-in-the-age-of-ai": [
+   "image-of-god"
+  ],
+  "/answers/why-does-god-allow-natural-disasters": [
+   "why-bad-things-happen"
+  ],
+  "/answers/why-would-anyone-trust-the-bible": [
+   "the-bible",
+   "is-the-bible-true"
+  ],
+  "/study/bible/doctrines/atonement": [
+   "the-lamb",
+   "why-blood"
+  ],
+  "/study/bible/doctrines/covenant": [
+   "covenant"
+  ],
+  "/study/bible/doctrines/election": [
+   "romans-8-28"
+  ],
+  "/study/bible/doctrines/exile": [
+   "exile-and-home"
+  ],
+  "/study/bible/doctrines/faith": [
+   "faith"
+  ],
+  "/study/bible/doctrines/intermediate": [
+   "when-we-die"
+  ],
+  "/study/bible/doctrines/kingdom": [
+   "the-king",
+   "kingdom-of-god"
+  ],
+  "/study/bible/doctrines/love": [
+   "john-3-16",
+   "love-when-i-do-wrong"
+  ],
+  "/study/bible/doctrines/messiah": [
+   "the-king"
+  ],
+  "/study/bible/doctrines/providence": [
+   "romans-8-28"
+  ],
+  "/study/bible/doctrines/resurrection": [
+   "the-resurrection"
+  ],
+  "/study/bible/doctrines/revelation": [
+   "why-cant-i-see-god"
+  ],
+  "/study/bible/doctrines/sacraments": [
+   "why-blood"
+  ],
+  "/study/bible/doctrines/salvation": [
+   "grace"
+  ],
+  "/study/bible/doctrines/sin": [
+   "what-sin-is"
+  ],
+  "/wisdom/assurance-of-faith": [
+   "faith"
+  ],
+  "/wisdom/courage": [
+   "david-and-goliath"
+  ],
+  "/wisdom/despair-and-hope": [
+   "the-exodus"
+  ],
+  "/wisdom/doubt": [
+   "faith"
+  ],
+  "/wisdom/facing-death": [
+   "psalm-23"
+  ],
+  "/wisdom/fear-and-courage": [
+   "david-and-goliath",
+   "psalm-23"
+  ],
+  "/wisdom/feeling-far-from-god": [
+   "exile-and-home",
+   "god-silent"
+  ],
+  "/wisdom/forgiveness": [
+   "grace"
+  ],
+  "/wisdom/gods-love": [
+   "john-3-16"
+  ],
+  "/wisdom/gods-sovereignty": [
+   "romans-8-28"
+  ],
+  "/wisdom/grace-and-works": [
+   "grace"
+  ],
+  "/wisdom/grief": [
+   "psalm-23"
+  ],
+  "/wisdom/guilt-and-conscience": [
+   "why-blood"
+  ],
+  "/wisdom/legalism": [
+   "grace"
+  ],
+  "/wisdom/peace": [
+   "psalm-23"
+  ],
+  "/wisdom/suffering": [
+   "romans-8-28"
+  ],
+  "/wisdom/trusting-god": [
+   "faith"
+  ],
+  "/wisdom/waiting-on-god": [
+   "the-exodus"
+  ],
+  "/wisdom/when-life-is-unfair": [
+   "romans-8-28"
+  ]
+ }
+}

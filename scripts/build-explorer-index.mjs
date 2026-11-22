@@ -70,7 +70,9 @@ export function buildIndex() {
     if (f.status !== "finished") return f;
     const file = path.join(DIR, "films", `${f.slug}.json`);
     if (!fs.existsSync(file))
-      throw new Error(`film ${f.slug} is finished but has no films/${f.slug}.json`);
+      throw new Error(
+        `film ${f.slug} is finished but has no films/${f.slug}.json`
+      );
     const film = read(file);
     return {
       ...f,
@@ -92,13 +94,56 @@ export function buildIndex() {
   };
 }
 
+/**
+ * Where each finished film is offered outside the Explorer: the pages a
+ * film's own data points to (its deeper links, where churches differ, and
+ * where it sends the reader at the end), turned round, so that an Honest
+ * Answer, a /questions piece, a doctrine study or a wisdom topic can show the
+ * films that belong on it (components FilmsHere). Study Bible chapters are
+ * left to the passage index, and the family pages to their own data.
+ */
+export function buildFilmLinks() {
+  const catalogue = read(path.join(DIR, "films.json"));
+  const films = {};
+  const pages = {};
+  for (const f of catalogue.films) {
+    if (f.status !== "finished") continue;
+    const film = read(path.join(DIR, "films", `${f.slug}.json`));
+    const hrefs = [
+      ...(film.deeper ?? []),
+      ...(film.differ?.links ?? []),
+      ...(film.end ? [film.end] : []),
+    ].map(l => String(l.href ?? "").replace(/[#?].*$/, ""));
+    let used = false;
+    for (const h of new Set(hrefs)) {
+      if (!OFFERED_ON.test(h)) continue;
+      (pages[h] ??= []).push(f.slug);
+      used = true;
+    }
+    if (used) films[f.slug] = { title: f.title, line: film.line.younger };
+  }
+  return {
+    about:
+      "Written by scripts/build-explorer-index.mjs from each film's own links (films/<slug>.json: deeper, differ, end). The pages outside the Explorer on which each moving picture is offered. Do not edit by hand.",
+    films,
+    pages: Object.fromEntries(
+      Object.entries(pages).sort(([a], [b]) => a.localeCompare(b))
+    ),
+  };
+}
+const OFFERED_ON =
+  /^\/(answers\/[a-z0-9-]+|questions\/[a-z0-9-]+\/[a-z0-9-]+|study\/bible\/doctrines\/[a-z0-9-]+|wisdom\/[a-z0-9-]+)$/;
+const LINKS_OUT = path.join(DIR, "film-links.json");
+
 const isMain =
   process.argv[1] &&
   path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isMain) {
   let text;
+  let links;
   try {
     text = JSON.stringify(buildIndex(), null, 2) + "\n";
+    links = JSON.stringify(buildFilmLinks(), null, 1) + "\n";
   } catch (err) {
     console.error(`[explorer-index] could not build: ${err.message}`);
     process.exit(1);
@@ -111,9 +156,21 @@ if (isMain) {
       );
       process.exit(1);
     }
-    console.log("[explorer-index] index.json is current.");
+    const linksNow = fs.existsSync(LINKS_OUT)
+      ? fs.readFileSync(LINKS_OUT, "utf8")
+      : "";
+    if (linksNow !== links) {
+      console.error(
+        "[explorer-index] client/public/explorer/film-links.json is stale. Run: node scripts/build-explorer-index.mjs"
+      );
+      process.exit(1);
+    }
+    console.log("[explorer-index] index.json and film-links.json are current.");
   } else {
     fs.writeFileSync(OUT, text);
-    console.log(`[explorer-index] wrote ${path.relative(ROOT, OUT)}`);
+    fs.writeFileSync(LINKS_OUT, links);
+    console.log(
+      `[explorer-index] wrote ${path.relative(ROOT, OUT)} and ${path.relative(ROOT, LINKS_OUT)}`
+    );
   }
 }
