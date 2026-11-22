@@ -1,47 +1,50 @@
 /**
- * The Monster in the Mirror: the book's own page, with its free download (James,
+ * Blind Spots (published earlier as The Monster in the Mirror): the book's own page, with its free download (James,
  * 2026-11-18: every ebook is free). The PDF and EPUB are static files under
- * /ebook/the-monster-in-the-mirror/, listed in data/ebooks.ts. The old Stripe link and its
+ * /ebook/the-monster-in-the-mirror/ (the file keeps its address), listed in data/ebooks.ts. The old Stripe link and its
  * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
 import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
-import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { FreeEbookButtons, formerlyLine } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
 const COVER = "/books/the-monster-in-the-mirror.jpg";
-const EBOOK = freeEbook("the-monster-in-the-mirror")!;
+const EBOOK = freeEbook("blind-spots")!;
 
-export default function TheMonsterInTheMirror() {
+export default function BlindSpots() {
   return (
     <Layout>
       <SEOMeta
-        title="The Monster in the Mirror — by James Bell"
+        title="Blind Spots by James Bell"
         description="Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots."
         image={`${SITE_URL}${COVER}`}
-        url={`${SITE_URL}/books/the-monster-in-the-mirror`}
+        url={`${SITE_URL}/books/blind-spots`}
         type="book"
       />
 
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img src={COVER} alt="Cover of The Monster in the Mirror" width={1600} height={2560}
+          <img src={COVER} alt="Cover of Blind Spots" width={1600} height={2560}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
-            <Place path="/books/the-monster-in-the-mirror" after="Free ebook" dark style={{ margin: 0 }} />
+            <Place path="/books/blind-spots" after="Free ebook" dark style={{ margin: 0 }} />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
-              The Monster in the Mirror
+              Blind Spots
             </h1>
             <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 8px" }}>
               Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It
             </p>
-            <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(245,240,230,.7)", margin: "0 0 28px" }}>
+            <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(245,240,230,.7)", margin: "0 0 12px" }}>
               James Bell
             </p>
+            {EBOOK.formerly && (
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--charcoal-fg-muted)", margin: "0 0 28px" }}>{formerlyLine(EBOOK.formerly)}</p>
+            )}
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
               <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
@@ -83,7 +86,7 @@ export default function TheMonsterInTheMirror() {
       </section>
 
       <BookNextSteps
-        slug="the-monster-in-the-mirror"
+        slug="blind-spots"
         related={[
           { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
           { href: "/books/when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come" },

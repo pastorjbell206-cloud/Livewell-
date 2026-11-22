@@ -251,7 +251,7 @@
     },
     {
       "source": "/writing/the-monster-in-the-mirror",
-      "destination": "/books/the-monster-in-the-mirror",
+      "destination": "/books/blind-spots",
       "permanent": true
     },
     {
@@ -937,6 +937,11 @@
     {
       "source": "/book-bundles",
       "destination": "/books",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-monster-in-the-mirror",
+      "destination": "/books/blind-spots",
       "permanent": true
     },
     {

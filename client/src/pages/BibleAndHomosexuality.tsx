@@ -98,7 +98,7 @@ export default function BibleAndHomosexuality() {
         slug="bible-and-homosexuality"
         related={[
           { href: "/books/bible-and-transgender-identity", title: "What Does the Bible Say About Transgender Identity?" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
           { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
         ]}
       />

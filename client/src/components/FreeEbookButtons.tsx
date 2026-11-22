@@ -43,6 +43,11 @@ export function FreeEbookButtons({
   );
 }
 
+/** The one honest line for a book whose file still carries its old title. */
+export function formerlyLine(formerly: string): string {
+  return `Published earlier as ${formerly}. The file still carries that title.`;
+}
+
 /** One free ebook as a card: cover, title (linked to its page when it has one), its line, the buttons. */
 export function EbookCard({ book, headingLevel = 4 }: { book: Ebook; headingLevel?: 3 | 4 }) {
   const H = headingLevel === 3 ? "h3" : "h4";
@@ -54,6 +59,7 @@ export function EbookCard({ book, headingLevel = 4 }: { book: Ebook; headingLeve
           {book.page ? <Link href={book.page}>{book.title}</Link> : book.title}
         </H>
         <p className="ebook-card__line">{book.line}</p>
+        {book.formerly && <p className="ebook-card__formerly">{formerlyLine(book.formerly)}</p>}
         <FreeEbookButtons title={book.title} pdf={book.pdf} epub={book.epub} size="sm" />
       </div>
     </article>

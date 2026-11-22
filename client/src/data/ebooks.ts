@@ -32,6 +32,13 @@ export interface Ebook {
   epub?: string;
   /** The book's own page, when it has one. */
   page?: string;
+  /**
+   * The title printed inside the file, when the site's title is newer than
+   * the file (James renamed two books on 2026-11-22; the PDFs and EPUBs are
+   * finished files and still say the old title). Shown as "Published earlier
+   * as ...". Remove it when his corrected file is in place.
+   */
+  formerly?: string;
 }
 
 /** Shelf headings on /downloads, in order. */
@@ -53,13 +60,14 @@ export const FREE_EBOOKS: Ebook[] = [
   },
   {
     group: "james",
-    slug: "the-monster-in-the-mirror",
-    title: "The Monster in the Mirror",
+    slug: "blind-spots",
+    title: "Blind Spots",
+    formerly: "The Monster in the Mirror",
     line: "Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots.",
     cover: "/books/the-monster-in-the-mirror.webp",
     pdf: "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.pdf",
     epub: "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.epub",
-    page: "/books/the-monster-in-the-mirror",
+    page: "/books/blind-spots",
   },
   {
     group: "james",

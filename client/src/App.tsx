@@ -53,7 +53,7 @@ const WhenGodBlessAmerica = lazy(() => import("./pages/WhenGodBlessAmerica"));
 const HeldEbook = lazy(() => import("./pages/HeldEbook"));
 const Believe = lazy(() => import("./pages/Believe"));
 const DeconstructionOfFaith = lazy(() => import("./pages/DeconstructionOfFaith"));
-const TheMonsterInTheMirror = lazy(() => import("./pages/TheMonsterInTheMirror"));
+const BlindSpots = lazy(() => import("./pages/BlindSpots"));
 const TheReliabilityOfScripture = lazy(() => import("./pages/TheReliabilityOfScripture"));
 const BibleAndHomosexuality = lazy(() => import("./pages/BibleAndHomosexuality"));
 const BibleAndTransgenderIdentity = lazy(() => import("./pages/BibleAndTransgenderIdentity"));
@@ -300,6 +300,9 @@ const ToAnswersRedirect = redirectTo("/answers");
 const ToSubscribeRedirect = redirectTo("/subscribe");
 // Every ebook is free (James, 2026-11-18): old sales and thank-you addresses land on the free ebooks.
 const ToDownloadsRedirect = redirectTo("/downloads");
+// RENAMED-BOOKS:CONSTS:START (written by scripts/sync-book-names.mjs from client/src/data/book-names.json)
+const RenamedBook0 = redirectTo("/books/blind-spots");
+// RENAMED-BOOKS:CONSTS:END
 const ToSpeakingRedirect = redirectTo("/speaking");
 const ToLamentRedirect = redirectTo("/studyguides/lament");
 // The no-decision cleanup (U06, 2026-10-26): the pre-elevation family and
@@ -550,7 +553,7 @@ function Router() {
         <Route path="/books/deconstruction-of-faith" component={DeconstructionOfFaith} />
         <Route path="/books/raising-believers/thank-you" component={ToDownloadsRedirect} />
         <Route path="/books/the-monster-in-the-mirror/thank-you" component={ToDownloadsRedirect} />
-        <Route path="/books/the-monster-in-the-mirror" component={TheMonsterInTheMirror} />
+        <Route path="/books/blind-spots" component={BlindSpots} />
         <Route path="/books/the-reliability-of-scripture/thank-you" component={ToDownloadsRedirect} />
         <Route path="/books/the-reliability-of-scripture" component={TheReliabilityOfScripture} />
         <Route path="/books/bible-and-homosexuality/thank-you" component={ToDownloadsRedirect} />
@@ -559,6 +562,9 @@ function Router() {
         <Route path="/books/bible-and-transgender-identity" component={BibleAndTransgenderIdentity} />
         <Route path="/books/critical-race-theory-biblical/thank-you" component={ToDownloadsRedirect} />
         <Route path="/books/critical-race-theory-biblical" component={IsCriticalRaceTheoryBiblical} />
+        {/* RENAMED-BOOKS:ROUTES:START (written by scripts/sync-book-names.mjs) */}
+        <Route path="/books/the-monster-in-the-mirror" component={RenamedBook0} />
+        {/* RENAMED-BOOKS:ROUTES:END */}
         <Route path="/books/:slug" component={BookDetail} />
         {/* Old thank-you pages. The twenty-three held ebooks keep their paid download for past buyers. */}
         <Route path="/consider-the-birds/thank-you" component={ConsiderTheBirdsThankYou} />

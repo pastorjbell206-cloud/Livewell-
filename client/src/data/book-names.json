@@ -1,0 +1,27 @@
+{
+  "_about": "THE NAMES OF THE BOOKS JAMES IS RENAMING. One record per book: `id` never changes (it is the book's folder under client/public/ebook/ and its cover's file name); `slug`, `title` and `subtitle` are the name in use; `was` lists each earlier name, oldest first. TO RENAME A BOOK: copy its current slug, title and subtitle into `was`, write the new ones, then run `node scripts/sync-book-names.mjs` (it rewrites every page, list, script, redirect and text file that carries the name), `node scripts/build-covers.mjs` and `pnpm run search:index`. `fileTitle` is the title printed inside the PDF and EPUB; while it differs from `title` the site says \"Published earlier as ...\". Change it when James's corrected files are in place. docs/work/elite/bookshelf.md has the whole procedure.",
+  "books": [
+    {
+      "id": "when-god-bless-america",
+      "slug": "when-god-bless-america",
+      "title": "When God Bless America Replaces Thy Kingdom Come",
+      "subtitle": "How Patriotism Became Our Practical Savior",
+      "fileTitle": "When God Bless America Replaces Thy Kingdom Come",
+      "was": []
+    },
+    {
+      "id": "the-monster-in-the-mirror",
+      "slug": "blind-spots",
+      "title": "Blind Spots",
+      "subtitle": "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It",
+      "fileTitle": "The Monster in the Mirror",
+      "was": [
+        {
+          "slug": "the-monster-in-the-mirror",
+          "title": "The Monster in the Mirror",
+          "subtitle": "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It"
+        }
+      ]
+    }
+  ]
+}

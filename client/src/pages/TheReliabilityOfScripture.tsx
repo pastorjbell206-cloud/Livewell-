@@ -97,7 +97,7 @@ export default function TheReliabilityOfScripture() {
         slug="the-reliability-of-scripture"
         related={[
           { href: "/books/believe", title: "Believe: The Rational Case for Christian Faith" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
           { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
         ]}
       />

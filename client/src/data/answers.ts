@@ -1413,8 +1413,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "why-didnt-the-bible-ban-slavery",
     essayTitle: "Why Didn't the Bible Just Ban Slavery?",
-    bookTitle: "The Monster in the Mirror",
-    bookHref: "/books/the-monster-in-the-mirror",
+    bookTitle: "Blind Spots",
+    bookHref: "/books/blind-spots",
   },
   {
     slug: "is-faith-just-wishful-thinking",

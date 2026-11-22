@@ -93,7 +93,7 @@ export const READING_PATHS = {
       { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
       { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" }
     ],
-    book: "The Monster in the Mirror"
+    book: "Blind Spots"
   },
   "parenting-crisis-articles": {
     title: "Parenting Through Uncertainty",
@@ -132,7 +132,7 @@ export const READING_PATHS = {
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
       { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" }
     ],
-    book: "The Monster in the Mirror"
+    book: "Blind Spots"
   },
   "default": {
     title: "Essential LiveWell Collection",
@@ -145,7 +145,7 @@ export const READING_PATHS = {
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],
-    book: "The Monster in the Mirror"
+    book: "Blind Spots"
   }
 };
 

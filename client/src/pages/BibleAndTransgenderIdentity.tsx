@@ -98,7 +98,7 @@ export default function BibleAndTransgenderIdentity() {
         slug="bible-and-transgender-identity"
         related={[
           { href: "/books/bible-and-homosexuality", title: "What Does the Bible Really Say About Homosexuality?" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
         ]}
       />
     </Layout>

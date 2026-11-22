@@ -97,7 +97,7 @@ export default function IsCriticalRaceTheoryBiblical() {
         slug="critical-race-theory-biblical"
         related={[
           { href: "/books/when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
           { href: "/books/bible-and-homosexuality", title: "What Does the Bible Really Say About Homosexuality?" },
         ]}
       />

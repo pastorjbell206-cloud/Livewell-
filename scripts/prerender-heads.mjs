@@ -82,7 +82,7 @@ const STATIC_PAGES = [
   {
     path: "/books",
     title: "Books by James Bell",
-    description: "The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, The Monster in the Mirror, and Believe. Each is a free ebook to download.",
+    description: "The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, Blind Spots, and Believe. Each is a free ebook to download.",
     type: "website",
     get image() { return ogImageUrl("Books by James Bell", "LiveWell"); },
   },
@@ -218,7 +218,7 @@ function ogImageUrl(title, pillar) {
 }
 
 /** The slugs on the /books shelf (client/src/lib/bookShelf.ts). */
-const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "the-monster-in-the-mirror", "believe"]);
+const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "blind-spots", "believe"]);
 
 function personSchema() {
   return {
@@ -523,7 +523,7 @@ const HUB_LISTINGS = {
   } },
   "/books": { label: "Books", cap: 10, load: () => [
     { title: "When God Bless America Replaces Thy Kingdom Come", href: "/books/when-god-bless-america", blurb: "A pastor's critique of political idolatry in the American church." },
-    { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
+    { title: "Blind Spots", href: "/books/blind-spots", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
   // The five roads on /start, each step by step, then where the road for someone new goes on.

@@ -17,7 +17,7 @@ interface PostLike {
 
 /** Slug-keyword rules: first match wins; most specific rules first. */
 const SLUG_BOOK_RULES: Array<{ keywords: string[]; book: string }> = [
-  { keywords: ["monster", "mirror", "blind-spot", "cultural-lens", "gets-the-bible-wrong", "every-generation"], book: "the-monster-in-the-mirror" },
+  { keywords: ["monster", "mirror", "blind-spot", "cultural-lens", "gets-the-bible-wrong", "every-generation"], book: "blind-spots" },
   { keywords: ["god-bless-america", "nationalis", "civil-religion", "patriot", "empire", "christendom"], book: "when-god-bless-america" },
   {
     keywords: [
@@ -40,13 +40,13 @@ export function bookFor(post: PostLike): ShelfBook | null {
 
   const track = resolveTrack(post.pillar ?? null)?.slug;
   if (track === "politics" || track === "after-christendom") return shelfBook("when-god-bless-america");
-  if (track === "american-church" || track === "theology") return shelfBook("the-monster-in-the-mirror");
+  if (track === "american-church" || track === "theology") return shelfBook("blind-spots");
   if (track === "doubt") return shelfBook("believe");
   if (track) return null;
 
   const id = pillarForPost(post)?.id;
   if (id === 1 || id === 2 || id === 4) return shelfBook("when-god-bless-america");
-  if (id === 3) return shelfBook("the-monster-in-the-mirror");
+  if (id === 3) return shelfBook("blind-spots");
   return null;
 }
 

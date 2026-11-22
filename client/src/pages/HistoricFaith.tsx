@@ -23,10 +23,10 @@ interface Item {
 // The lenses we read through without noticing, and the work that exposes each.
 const LENSES: Item[] = [
   {
-    title: "The Monster in the Mirror",
+    title: "Blind Spots",
     blurb:
       "Six American cultural lenses that quietly distort how we read the Bible, and what it looks like to read against our own assumptions.",
-    href: "/books/the-monster-in-the-mirror",
+    href: "/books/blind-spots",
   },
   {
     title: "When God Bless America Replaces Thy Kingdom Come",

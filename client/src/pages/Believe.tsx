@@ -127,7 +127,7 @@ export default function Believe() {
         related={[
           { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
           { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
         ]}
       />
     </Layout>

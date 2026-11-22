@@ -181,7 +181,7 @@ const STATIC_PAGES = [
   // The three books on the /books shelf (client/src/lib/bookShelf.ts). The
   // off-shelf book pages stay reachable but are noindex and not listed.
   { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/the-monster-in-the-mirror", priority: "0.8", changefreq: "monthly" },
+  { url: "/books/blind-spots", priority: "0.8", changefreq: "monthly" },
   { url: "/books/when-god-bless-america", priority: "0.8", changefreq: "monthly" },
   // Justice / Disruption / Nation hubs
   { url: "/disruption/consistency", priority: "0.7", changefreq: "monthly" },
@@ -387,7 +387,7 @@ function urlEntry(loc, lastmod, changefreq, priority) {
   return entry;
 }
 
-const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "the-monster-in-the-mirror", "believe"]);
+const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "blind-spots", "believe"]);
 
 function buildXml(staticPages, articles, books, readingPaths) {
   // De-duplicate by URL (a few study-guide slugs appear in both STATIC_PAGES and

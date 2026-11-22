@@ -1,14 +1,14 @@
 /**
  * When God Bless America: the book's own page, with its free download (James,
  * 2026-11-18: every ebook is free). The PDF and EPUB are static files under
- * /ebook/when-god-bless-america/, listed in data/ebooks.ts. The old Stripe link and its
+ * /ebook/when-god-bless-america/ (the file keeps its address), listed in data/ebooks.ts. The old Stripe link and its
  * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
 import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
-import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { FreeEbookButtons, formerlyLine } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
@@ -64,9 +64,12 @@ export default function WhenGodBlessAmerica() {
             <p style={{ fontFamily: "var(--F)", fontSize: "20px", fontStyle: "italic", color: "rgba(245,240,230,.82)", margin: "0 0 8px" }}>
               How Patriotism Became Our Practical Savior
             </p>
-            <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(245,240,230,.7)", margin: "0 0 28px" }}>
+            <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(245,240,230,.7)", margin: "0 0 12px" }}>
               James Bell
             </p>
+            {EBOOK.formerly && (
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--charcoal-fg-muted)", margin: "0 0 28px" }}>{formerlyLine(EBOOK.formerly)}</p>
+            )}
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
               <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
@@ -138,7 +141,7 @@ export default function WhenGodBlessAmerica() {
       <BookNextSteps
         slug="when-god-bless-america"
         related={[
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
           { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
           { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
         ]}

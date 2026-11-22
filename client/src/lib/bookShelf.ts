@@ -33,11 +33,11 @@ export const BOOK_SHELF: ShelfBook[] = [
       "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Not a case for the other party. A case for the kingdom that does not run for office.",
   },
   {
-    slug: "the-monster-in-the-mirror",
-    href: "/books/the-monster-in-the-mirror",
+    slug: "blind-spots",
+    href: "/books/blind-spots",
     cover: "/books/the-monster-in-the-mirror.jpg",
     thumb: "/books/the-monster-in-the-mirror.webp",
-    title: "The Monster in the Mirror",
+    title: "Blind Spots",
     sub: "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It",
     kicker: "Reading the Bible honestly",
     blurb:
