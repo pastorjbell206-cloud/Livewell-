@@ -15203,3 +15203,24 @@ Cut in chapter 4: the prophets' later words against worship at Gilgal (left to t
 | Who the commander is: the Son of God before the incarnation (many early Christian writers and later ones); the angel of the LORD who speaks as God; a created angel, perhaps Michael; 6:2 continuing with the LORD speaking; no side; the main point not in dispute | 13-15 `hard` | joshua/5.json `christ`, `hard` | Repository; each view in its holders' terms; no side |
 
 Cut in chapter 5: the meaning of the name Gibeath-haaraloth; the later tradition that priests served barefoot; Colossians 2:11-12. The BSB's words in verse 4 are not quoted because the verse has dashes.
+
+## The plain notes on Joshua 6 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shut city and its spring; a procession more like worship than a siege; the shofar as a signal horn; the number seven; the city given before anyone moves | 1-7 | joshua/6.json `cultural`, `literary`, `words` (shofar, sheva); joshua/2.json `historical` | Repository |
+| The archaeology of Jericho in one paragraph: dug several times; most hold that the last walled city fell before any date proposed for Joshua; others argue a later date; erosion; the book page for each view | 1-7 | joshua/6.json `historical`; questions/old-testament/jericho-and-the-conquest.json (`shortAnswer`, `evidence`) | Repository; no side; no overclaim |
+| Hebrews 11:30; Psalm 20:7 | 1-7 | joshua/6.json `christ`; deuteronomy/plain/20.json (1-9, `later`); BSB | Repository; BSB text |
+| The repeated order of march; the enforced silence; the shout as battle cry and as worship; ‘has given’ | 8-16 | joshua/6.json `literary`, `words` (rua) | Repository |
+| Psalm 100:1; 2 Corinthians 10:4-5, the strongholds not cities or people | 8-16 | joshua/6.json `christ`, `words`; BSB | Repository; BSB text |
+| Herem: given over wholly to God, the people killed, the goods destroyed or given to the sanctuary, no plunder; Mesha of Moab (ninth century BC) and the same word; the stated reason is worship (Deuteronomy 20:18; 12:31); the ban shuts out greed and falls on Israel if broken; the line not drawn by birth | 17-21 | joshua/6.json `cultural`, `words` (cherem), `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`) | Repository |
+| Origen and the reading of the wars as a picture of the fight against sin, set beside the other readings and not as an answer to what was done | 17-21 | joshua/6.json `hard`; joshua/8.json `cultural` | Repository |
+| Deuteronomy 20:16; Exodus 23:30; Joshua 13:1; Matthew 5:44; Luke 9:55 | 17-21 | questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`, `reply`); deuteronomy/plain/7.json (1-5, `later`); BSB | Repository; BSB text |
+| The hard question: Deuteronomy 24:16; the four readings (judgment after long patience; the stock idiom of ancient war; God's right over life, Augustine and Aquinas; accommodation seen through Christ), each with its cost; many hold more than one; no side | 17-21 `hard` | questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`, `reply`, `differ`); context/guides/the-violence-of-the-old-testament.json; deuteronomy/plain/7.json (1-5, `hard`) | Repository; handled as the site's live pages handle it; no side |
+| What holds on every reading: one land and one moment, never renewed; not about race (Rahab and Achan); no warrant for violence against any person or people; no nation, state, land or conflict today; the later misuse named as the church's sin; no contempt; Ezekiel 18:23; Genesis 18:25 | 17-21 `hard`, `asks` | the same pages; BSB | Repository; BSB text |
+| Rahab frames the fall; the oath kept by the men who swore it; ‘outside the camp’ and then ‘among the Israelites’; ‘to this day’; the curse as concerning a rebuilt walled city, the site not left empty; verse 27 answers 1:5 | 22-27 | joshua/6.json `historical`, `literary` | Repository |
+| 1 Kings 16:34; Matthew 1:5; Hebrews 11:31 | 22-27 | joshua/6.json `historical`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 6: how ancient armies took walled towns and how long a town could hold out; that one of the seven days must have been a Sabbath; that the people on the wall could have mocked Israel (none is in the repository's notes); Jericho as a military outpost (one proposal, left to the deep note); the trumpets of Revelation; the word ‘harem’. The BSB's words in verse 21 are quoted only up to the dash.
