@@ -15365,3 +15365,18 @@ Cut in chapter 14: that Caleb buried the friends of his youth in the wilderness 
 | Judges 1:21; 2 Samuel 5:7; Micah 5:2 and Matthew 2:6 | 20-63 | joshua/15.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 15: the Brook of Egypt and Wadi el-Arish; the Lachish letters; the Greek translation's extra towns after verse 59; Albrecht Alt by name. The BSB's words in verses 13 and 14 are quoted only in part because of their dashes. ‘Give me a blessing’ stands only inside quoted Scripture.
+
+## The plain notes on Joshua 16 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Joseph's two sons counted as tribes, the younger set first (Genesis 48); the central hills, better watered than Judah; the border along the road of chapter 10; Bethel and Jacob's dream; Ephraim as the leading tribe of the north, its name used by Hosea | 1-4 | joshua/16.json `historical`, `words` (Ephraim), `christ`; genesis/intro.json `teaching` | Repository |
+| Genesis 48:19; Genesis 28:17 | 1-4 | BSB | BSB text |
+| No town list; towns of one tribe inside another's land; Gezer on the road from the coast, its king defeated (10:33) and the city not taken; the Merneptah monument (about 1208 BC) lists Gezer; Gezer in Israel's hands in Solomon's time (1 Kings 9:16); forced labor; a failure in the book's terms and a wrong in itself | 5-10 | joshua/16.json `historical`, `cultural`, `literary`, `words` (mas), `hard` | Repository |
+| Judges 1:29; 1 Kings 12:4 | 5-10 | joshua/16.json `cultural`; BSB | Repository; BSB text |
+| A mercy, a failure or an injustice: the readings; a report and not approval; halfway obedience produced a second wrong | 5-10 `hard` | joshua/16.json `hard` | Repository |
+| The care lines (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 5-10 `hard` | 1-corinthians/plain/7.json (17-24, `hard`) | Reused whole, word for word |
+
+Cut in chapter 16: the Gezer Calendar; Jeroboam's calf at Bethel; Romans 9 and the pattern of the younger son (the deep note's link by theme).
