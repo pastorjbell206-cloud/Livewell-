@@ -15125,3 +15125,17 @@ Every claim in `client/public/bible/notes/joshua/intro.json`, field `teaching`. 
 | Go deeper: ten pages | deeper | bible/guides/reading-narrative.json; bible/doctrines/covenant.json, sabbath.json, faith.json, judgment.json; context/guides/covenant-and-treaty.json, the-violence-of-the-old-testament.json; questions/old-testament/jericho-and-the-conquest.json and the-command-to-destroy-the-canaanites.json (status live); /answers/did-god-command-genocide | Repository; every page live |
 
 Cut from the book page: Caleb named among the outsiders (the notes give two readings of ‘Kenizzite’ and take no side); Origen's reading of the wars as a picture of the struggle against sin (left to the chapter notes, since the live question page does not list it among the main readings); the scarlet cord as a picture of Christ's blood (the New Testament does not draw it); Jericho and Ai as military strongpoints (one writer's proposal in the context guide); the Habiru of the Amarna letters; any statement of what Israel's borders were or should be.
+
+## The plain notes on Joshua 1 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Joshua as Moses' assistant, already appointed (Numbers 27:18-23); the land as gift (‘giving’, ‘given’); the wide borders of verse 4 never held in Joshua's day, nearest under David and Solomon | 1-9 | joshua/1.json `historical`, `literary`, `words` (natan) | Repository |
+| The Book of the Law as Moses' written teaching; the king's copy (Deuteronomy 17:18-19); ‘meditate’ as murmuring (the lion and the dove); ‘prosper’ as acting wisely, not a formula for gain; courage resting on God's presence | 1-9 | joshua/1.json `cultural`, `words` (hagah, sakal, chazaq) | Repository |
+| Deuteronomy 31:8; Psalm 1:2; Hebrews 13:5; Matthew 28:20 | 1-9 | joshua/1.json `christ`, `words`; joshua/intro.json `christ`; BSB | Repository; BSB text |
+| The officers; provisions though the manna still fell; the eastern tribes and the condition Moses set (Numbers 32); ‘rest’; the pledge like an ancient oath of loyalty; the people give Joshua God's own words | 10-18 | joshua/1.json `historical`, `cultural`, `literary` | Repository |
+| Joshua 22:2; Hebrews 4:8; Matthew 11:28 | 10-18 | joshua/1.json `christ`; joshua/11.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 1: the Hittites as an empire in Anatolia (left to the deep note); that Jesus answered the tempter from Deuteronomy (the deep note's link, not one the New Testament draws to this chapter). The BSB's words in verse 4 are paraphrased because the verse has a dash.
