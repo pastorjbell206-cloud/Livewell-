@@ -29,10 +29,10 @@ const LENSES: Item[] = [
     href: "/books/blind-spots",
   },
   {
-    title: "When God Bless America Replaces Thy Kingdom Come",
+    title: "A Higher Allegiance",
     blurb:
       "How patriotism became a practical savior. Civil religion is idolatry with a flag for a shroud, and America is not Israel.",
-    href: "/books/when-god-bless-america",
+    href: "/books/a-higher-allegiance",
   },
   {
     title: "The Body You Left",

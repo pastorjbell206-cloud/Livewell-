@@ -24,7 +24,7 @@ export default function Books() {
     <Layout>
       <SEOMeta
         title="Books by James Bell"
-        description="The books James Bell wrote himself: When God Bless America Replaces Thy Kingdom Come, Blind Spots, and Believe. Each is a free ebook to download."
+        description="The books James Bell wrote himself: A Higher Allegiance, Blind Spots, and Believe. Each is a free ebook to download."
         image={ogImageUrl("Books by James Bell", "LiveWell")}
         url={`${SITE_URL}/books`}
       />

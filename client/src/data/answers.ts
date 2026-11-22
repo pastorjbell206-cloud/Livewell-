@@ -712,8 +712,8 @@ export const ANSWERS: Answer[] = [
     ],
     essaySlug: "conscience-outsourced-to-party",
     essayTitle: "Should a Christian Follow a Political Party?",
-    bookTitle: "When God Bless America Replaces Thy Kingdom Come",
-    bookHref: "/books/when-god-bless-america",
+    bookTitle: "A Higher Allegiance",
+    bookHref: "/books/a-higher-allegiance",
   },
   {
     slug: "what-does-the-bible-say-about-money",

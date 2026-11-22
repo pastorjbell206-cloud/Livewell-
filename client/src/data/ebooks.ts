@@ -50,13 +50,14 @@ export const EBOOK_GROUPS: { id: EbookGroup; label: string }[] = [
 export const FREE_EBOOKS: Ebook[] = [
   {
     group: "james",
-    slug: "when-god-bless-america",
-    title: "When God Bless America Replaces Thy Kingdom Come",
+    slug: "a-higher-allegiance",
+    title: "A Higher Allegiance",
+    formerly: "When God Bless America Replaces Thy Kingdom Come",
     line: "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary.",
     cover: "/books/when-god-bless-america.webp",
     pdf: "/ebook/when-god-bless-america/When-God-Bless-America.pdf",
     epub: "/ebook/when-god-bless-america/When-God-Bless-America.epub",
-    page: "/books/when-god-bless-america",
+    page: "/books/a-higher-allegiance",
   },
   {
     group: "james",

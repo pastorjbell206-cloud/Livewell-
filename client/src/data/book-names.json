@@ -3,11 +3,17 @@
   "books": [
     {
       "id": "when-god-bless-america",
-      "slug": "when-god-bless-america",
-      "title": "When God Bless America Replaces Thy Kingdom Come",
-      "subtitle": "How Patriotism Became Our Practical Savior",
+      "slug": "a-higher-allegiance",
+      "title": "A Higher Allegiance",
+      "subtitle": "Reclaiming Jesus from American Politics",
       "fileTitle": "When God Bless America Replaces Thy Kingdom Come",
-      "was": []
+      "was": [
+        {
+          "slug": "when-god-bless-america",
+          "title": "When God Bless America Replaces Thy Kingdom Come",
+          "subtitle": "How Patriotism Became Our Practical Savior"
+        }
+      ]
     },
     {
       "id": "the-monster-in-the-mirror",

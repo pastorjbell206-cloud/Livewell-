@@ -239,7 +239,7 @@ function essayItems(dbRows, staticRows) {
  * free (James, 2026-11-18), so each lists its PDF and EPUB from data/ebooks.ts.
  */
 export const BOOKS = [
-  ["when-god-bless-america", "When God Bless America Replaces Thy Kingdom Come", "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary."],
+  ["a-higher-allegiance", "A Higher Allegiance", "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary."],
   ["blind-spots", "Blind Spots", "Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots."],
   ["believe", "Believe: The Rational Case for Christian Faith", "Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."],
 ];

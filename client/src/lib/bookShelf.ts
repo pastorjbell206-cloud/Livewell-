@@ -22,12 +22,12 @@ export interface ShelfBook {
 
 export const BOOK_SHELF: ShelfBook[] = [
   {
-    slug: "when-god-bless-america",
-    href: "/books/when-god-bless-america",
+    slug: "a-higher-allegiance",
+    href: "/books/a-higher-allegiance",
     cover: "/books/when-god-bless-america.jpg",
     thumb: "/books/when-god-bless-america.webp",
-    title: "When God Bless America Replaces Thy Kingdom Come",
-    sub: "How Patriotism Became Our Practical Savior",
+    title: "A Higher Allegiance",
+    sub: "Reclaiming Jesus from American Politics",
     kicker: "Politics and the church",
     blurb:
       "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Not a case for the other party. A case for the kingdom that does not run for office.",

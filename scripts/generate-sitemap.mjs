@@ -182,7 +182,7 @@ const STATIC_PAGES = [
   // off-shelf book pages stay reachable but are noindex and not listed.
   { url: "/books/believe", priority: "0.8", changefreq: "monthly" },
   { url: "/books/blind-spots", priority: "0.8", changefreq: "monthly" },
-  { url: "/books/when-god-bless-america", priority: "0.8", changefreq: "monthly" },
+  { url: "/books/a-higher-allegiance", priority: "0.8", changefreq: "monthly" },
   // Justice / Disruption / Nation hubs
   { url: "/disruption/consistency", priority: "0.7", changefreq: "monthly" },
   // Church history James kept (linked from /study's church-history group).
@@ -387,7 +387,7 @@ function urlEntry(loc, lastmod, changefreq, priority) {
   return entry;
 }
 
-const SHELF_BOOK_SLUGS = new Set(["when-god-bless-america", "blind-spots", "believe"]);
+const SHELF_BOOK_SLUGS = new Set(["a-higher-allegiance", "blind-spots", "believe"]);
 
 function buildXml(staticPages, articles, books, readingPaths) {
   // De-duplicate by URL (a few study-guide slugs appear in both STATIC_PAGES and

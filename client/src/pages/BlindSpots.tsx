@@ -89,7 +89,7 @@ export default function BlindSpots() {
         slug="blind-spots"
         related={[
           { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
-          { href: "/books/when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come" },
+          { href: "/books/a-higher-allegiance", title: "A Higher Allegiance" },
           { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
         ]}
       />

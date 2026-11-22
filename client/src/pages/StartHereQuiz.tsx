@@ -106,7 +106,7 @@ export const READING_PATHS = {
       { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
-    book: "When God Bless America Replaces Thy Kingdom Come"
+    book: "A Higher Allegiance"
   },
   "doubt-crisis-articles": {
     title: "Finding Faith in the Questions",
