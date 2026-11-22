@@ -52,12 +52,18 @@ describe("rssItems", () => {
   });
 
   it("keeps live shelf rows, drops pending rows with no file and retired rows, and takes new posts after the cutoff", () => {
-    const items = rssItems([
-      { slug: live.slug, title: "Live", body: "b", publishedAt: "2025-01-01" },
-      { slug: pendingNoFile.slug, title: "Pending", body: "b", publishedAt: "2025-01-01" },
-      { slug: "a-retired-essay-not-on-the-shelf", title: "Retired", body: "b", publishedAt: "2025-01-01" },
-      { slug: "a-new-post-from-the-admin", title: "New", body: "b", publishedAt: "2099-01-01" },
-    ]);
+    // The limit is lifted here: this test is about which rows are kept, and the
+    // essay files alone now fill the feed's default fifty places.
+    const items = rssItems(
+      [
+        { slug: live.slug, title: "Live", body: "b", publishedAt: "2025-01-01" },
+        { slug: pendingNoFile.slug, title: "Pending", body: "b", publishedAt: "2025-01-01" },
+        { slug: "a-retired-essay-not-on-the-shelf", title: "Retired", body: "b", publishedAt: "2025-01-01" },
+        { slug: "a-new-post-from-the-admin", title: "New", body: "b", publishedAt: "2099-01-01" },
+      ],
+      undefined,
+      500,
+    );
     const slugs = items.map((i) => i.slug);
     expect(slugs).toContain(live.slug);
     expect(slugs).not.toContain(pendingNoFile.slug);
