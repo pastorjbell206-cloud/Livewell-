@@ -15337,3 +15337,16 @@ Cut in chapter 12: Thutmose III at Megiddo and the name Armageddon; Dor and Aphe
 | Leviticus 25:23; 1 Peter 2:9 | 15-33 | joshua/13.json `cultural`, `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 13: Matthew 5:5 and Romans 8:17 (the deep note's links by theme); the names of the five chiefs of Midian. The BSB's words in verses 3, 11, 20 and 30 are not quoted because of their dashes.
+
+## The plain notes on Joshua 14 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Priest, leader and heads of families share out the land; the lot as God's decision, guarding against the strong; the twelve shares with Levi set aside and Joseph counted twice; ‘inherited’ | 1-5 | joshua/14.json `cultural`, `words` (nachal); joshua/13.json `cultural` | Repository |
+| Numbers 26:55; Proverbs 16:33; Psalm 16:6 | 1-5 | joshua/14.json `cultural`; joshua/13.json `christ`; BSB | Repository; BSB text |
+| Caleb and Joshua the two faithful scouts (Numbers 13 and 14); forty-five years; the campaigns about seven years (Deuteronomy 2:14); he asks for the Anakim's hill country; ‘wholly followed’, word for word ‘filled up after’, said also in Numbers 14:24 and Deuteronomy 1:36; the Kenizzite, the two readings; Hebron and Abraham's burial cave, David made king there | 6-15 | joshua/14.json `historical`, `cultural`, `words` (male, koach) | Repository; no side on ‘Kenizzite’ |
+| Numbers 14:24; Joshua 15:14; Hebrews 11:13; 2 Corinthians 1:20 | 6-15 | joshua/14.json `christ`, `words`; BSB | Repository; BSB text |
+
+Cut in chapter 14: that Caleb buried the friends of his youth in the wilderness (not in the text or the notes); the meaning of the name Kiriath-arba; the idiom ‘going out and coming in’.
