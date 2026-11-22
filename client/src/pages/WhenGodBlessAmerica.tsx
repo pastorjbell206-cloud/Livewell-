@@ -10,9 +10,11 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
 import { FreeEbookButtons, formerlyLine } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
+import { OfferLine, OfferMeta, useEbookLabel } from "@/components/BookOffer";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 
-const COVER = "/books/when-god-bless-america.jpg";
+const COVER = "/covers/when-god-bless-america-800.webp";
+const SHARE = "/covers/when-god-bless-america.jpg";
 const EBOOK = freeEbook("a-higher-allegiance")!;
 
 const CHAPTERS: [string, string][] = [
@@ -37,12 +39,13 @@ const eyebrow: React.CSSProperties = {
 };
 
 export default function WhenGodBlessAmerica() {
+  const ebookLabel = useEbookLabel();
   return (
     <Layout>
       <SEOMeta
         title="A Higher Allegiance"
         description="A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Available now as an ebook."
-        image={`${SITE_URL}${COVER}`}
+        image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/a-higher-allegiance`}
         type="book"
       />
@@ -53,11 +56,11 @@ export default function WhenGodBlessAmerica() {
           <img
             src={COVER}
             alt="Cover of A Higher Allegiance"
-            width={1600} height={2416}
+            width={800} height={1200}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }}
           />
           <div>
-            <Place path="/books/a-higher-allegiance" after="Free ebook" dark style={{ margin: 0 }} />
+            <Place path="/books/a-higher-allegiance" after={ebookLabel} dark style={{ margin: 0 }} />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               A Higher Allegiance
             </h1>
@@ -73,7 +76,7 @@ export default function WhenGodBlessAmerica() {
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
               <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
-                Free · EPUB and PDF · no email asked
+                <OfferMeta pdf={EBOOK.pdf} />
               </span>
             </div>
           </div>
@@ -127,7 +130,7 @@ export default function WhenGodBlessAmerica() {
             Read it now
           </h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            Free to download: an EPUB for your e-reader and a PDF for everything else.
+            <OfferLine />
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />

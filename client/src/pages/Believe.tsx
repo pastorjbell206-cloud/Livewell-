@@ -10,9 +10,11 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
 import { FreeEbookButtons } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
+import { OfferLine, OfferMeta, useEbookLabel } from "@/components/BookOffer";
 import { SITE_URL } from "@/lib/site";
 
-const COVER = "/books/believe.jpg";
+const COVER = "/covers/believe-800.webp";
+const SHARE = "/covers/believe.jpg";
 const EBOOK = freeEbook("believe")!;
 
 const CHAPTERS: [string, string][] = [
@@ -36,12 +38,13 @@ const eyebrow: React.CSSProperties = {
 };
 
 export default function Believe() {
+  const ebookLabel = useEbookLabel();
   return (
     <Layout>
       <SEOMeta
         title="Believe: The Rational Case for Christian Faith"
         description="Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."
-        image={`${SITE_URL}${COVER}`}
+        image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/believe`}
         type="book"
       />
@@ -49,10 +52,10 @@ export default function Believe() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img src={COVER} alt="Cover of Believe" width={1600} height={2560}
+          <img src={COVER} alt="Cover of Believe" width={800} height={1200}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
-            <Place path="/books/believe" after="Free ebook" dark style={{ margin: 0 }} />
+            <Place path="/books/believe" after={ebookLabel} dark style={{ margin: 0 }} />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               Believe
             </h1>
@@ -65,7 +68,7 @@ export default function Believe() {
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
               <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
-                Free · EPUB and PDF · no email asked
+                <OfferMeta pdf={EBOOK.pdf} />
               </span>
             </div>
           </div>
@@ -111,7 +114,7 @@ export default function Believe() {
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            Free to download: an EPUB for your e-reader and a PDF for everything else.
+            <OfferLine />
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />

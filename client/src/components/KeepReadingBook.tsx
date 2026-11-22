@@ -122,7 +122,7 @@ export function KeepReadingBook({
           src={book.thumb}
           alt={`${book.title} cover`}
           width={120}
-          height={181}
+          height={180}
           style={{ width: "110px", height: "auto", borderRadius: "3px", boxShadow: "0 12px 32px rgba(0,0,0,.5)", flex: "0 0 auto" }}
         />
         <div style={{ flex: "1 1 320px" }}>

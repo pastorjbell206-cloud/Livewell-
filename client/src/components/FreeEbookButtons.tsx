@@ -1,12 +1,18 @@
 /**
- * "Download free": the two buttons every ebook gets (James, 2026-11-18: every
- * ebook is free). The PDF is the main button; the EPUB, where the book has
- * one, sits beside it as the quiet one. Plain links to the static files: no
- * email asked for, no checkout. One button family (`.btn`).
+ * The two buttons every ebook gets. The PDF is the main button; the EPUB,
+ * where the book has one, sits beside it as the quiet one. Plain links to the
+ * static files: no email asked for, no account. One button family (`.btn`).
+ *
+ * While giving is held the main button reads "Download free", as it has since
+ * 2026-11-18. When giving is open (James, 2026-11-22: a suggested gift on
+ * every download) it reads "Download", and the click raises the gift sheet
+ * (components/DownloadGiftHost.tsx), which always offers "Download without
+ * giving". The links themselves are the same in both states.
  */
 import { Download } from "lucide-react";
 import { Link } from "wouter";
 import type { Ebook } from "@/data/ebooks";
+import { useGivingOpen } from "@/lib/downloadGift";
 
 export function FreeEbookButtons({
   title,
@@ -27,15 +33,17 @@ export function FreeEbookButtons({
   const sm = size === "sm" ? " btn--sm" : "";
   const main = `btn${tone}${sm}`;
   const quiet = `btn btn--quiet${tone}${sm}`;
+  const giving = useGivingOpen();
+  const free = giving ? "" : " free";
   return (
     <div className="ebook-actions">
-      <a href={pdf} download className={main} aria-label={`Download ${title} free, as a PDF`}>
+      <a href={pdf} download className={main} aria-label={`Download ${title}${free}, as a PDF`}>
         <Download size={18} strokeWidth={1.75} aria-hidden="true" />
-        <span>Download free</span>
+        <span>{giving ? "Download" : "Download free"}</span>
         <span className="ebook-actions__fmt">PDF</span>
       </a>
       {epub && (
-        <a href={epub} download className={quiet} aria-label={`Download ${title} free, as an EPUB for e-readers`}>
+        <a href={epub} download className={quiet} aria-label={`Download ${title}${free}, as an EPUB for e-readers`}>
           <span>EPUB</span>
         </a>
       )}
