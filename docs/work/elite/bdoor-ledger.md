@@ -15350,3 +15350,18 @@ Cut in chapter 13: Matthew 5:5 and Romans 8:17 (the deep note's links by theme);
 | Numbers 14:24; Joshua 15:14; Hebrews 11:13; 2 Corinthians 1:20 | 6-15 | joshua/14.json `christ`, `words`; BSB | Repository; BSB text |
 
 Cut in chapter 14: that Caleb buried the friends of his youth in the wilderness (not in the text or the notes); the meaning of the name Kiriath-arba; the idiom ‘going out and coming in’.
+
+## The plain notes on Joshua 15 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Judah first and longest; borders drawn by landmarks; ‘border’ more than twenty times; the boundary stone (Deuteronomy 19:14); the mixed country of Judah; the Valley of Hinnom, later child sacrifice, Gehenna in the teaching of Jesus; no guide to any border today | 1-12 | joshua/15.json `historical`, `cultural`, `words` (gevul) | Repository; no claim about any land today |
+| Deuteronomy 19:14; Genesis 49:10 | 1-12 | joshua/15.json `words`, `christ`; BSB | Repository; BSB text |
+| Caleb does what he hoped (14:12); a daughter offered to a champion as honor in that world, no pattern; Othniel the later judge; land in the Negev worthless without springs; Acsah asks and receives; Debir taken again after chapter 10 | 13-19 | joshua/15.json `cultural`, `words` (yarash); joshua/10.json `historical` | Repository |
+| Judges 3:9; Matthew 7:11 | 13-19 | BSB | BSB text |
+| The town list as a register by region; ‘along with their villages’; totals that do not match; the debate over the list's origin (the districts of the later kingdom, or older tribal records updated); Ziklag, En-gedi, Lachish and Azekah later; verse 63 and David's capture of the city; ‘to this day’ | 20-63 | joshua/15.json `historical`, `cultural`, `literary`, `words` (chatser); joshua/intro.json `author` | Repository; no side on the list's origin |
+| Judges 1:21; 2 Samuel 5:7; Micah 5:2 and Matthew 2:6 | 20-63 | joshua/15.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 15: the Brook of Egypt and Wadi el-Arish; the Lachish letters; the Greek translation's extra towns after verse 59; Albrecht Alt by name. The BSB's words in verses 13 and 14 are quoted only in part because of their dashes. ‘Give me a blessing’ stands only inside quoted Scripture.
