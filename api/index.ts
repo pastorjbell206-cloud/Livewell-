@@ -3026,7 +3026,7 @@ type RssPostRow = RssRow & { title?: string | null; excerpt?: string | null; bod
 export function rssItems(
   rows: RssPostRow[],
   overrides: { slug: string; title: string; excerpt: string; updated: string }[] = ESSAY_OVERRIDES,
-  limit = 50,
+  limit = 100,
 ): RssItem[] {
   const files = overrides.filter((o) => RSS_SHELF_SLUGS.has(o.slug));
   const fromFiles = new Set(files.map((o) => o.slug));
@@ -3063,7 +3063,7 @@ async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
             WHERE published = true
               AND (${liveIn} OR COALESCE(publishedAt, createdAt) >= ?)
             ORDER BY COALESCE(publishedAt, createdAt) DESC, updatedAt DESC
-            LIMIT 50`,
+            LIMIT 100`,
           [...RSS_LIVE_SLUGS, RSS_LATEST_CUTOFF]
         );
         return Array.isArray(posts) ? posts : [];
