@@ -4,6 +4,8 @@ import { SEOMeta } from "@/components/SEOMeta";
 import InnerHead from "@/components/art/InnerHead";
 import { useState } from "react";
 import { ArrowLeft, Users, ChevronRight } from "lucide-react";
+import { ResultNext } from "@/components/tool-shell";
+import { nextPagesFor } from "@/lib/toolNext";
 
 interface AgeGroup {
   id: string;
@@ -403,6 +405,7 @@ export default function ParentingGuide() {
                 alignItems: "center",
                 gap: "6px",
                 padding: "8px 0",
+                minHeight: "44px",
                 background: "none",
                 border: "none",
                 fontSize: "14px",
@@ -839,6 +842,8 @@ export default function ParentingGuide() {
               </Link>
             </div>
           )}
+          {/* Where to go next, from the age the parent chose (data/tool-next.json). */}
+          {selectedId && <ResultNext steps={nextPagesFor("parenting-guide", selectedId)} />}
         </div>
       </section>
     </Layout>

@@ -1,1025 +1,512 @@
+/**
+ * Memorize Scripture (/tools/scripture-memory).
+ *
+ * A verse is learned by saying it aloud while its words are hidden a few more
+ * at each step, then said from memory and marked honestly ("I had it" or "Not
+ * yet"). A verse recalled comes back for review after 1, 3, 7, 14 and 30
+ * days; a verse missed comes back tomorrow (lib/scriptureMemory). Today's
+ * review is the first thing on the page once anything is being learned.
+ *
+ * Three sources, all the Berean Standard Bible word for word:
+ *   - the forty key verses in eight sets (data/memory-verses.json, written
+ *     by scripts/build-memory-verses.mjs from the site's Bible files);
+ *   - any verse the reader chooses by its reference, read from those files;
+ *   - for families, the verses the family catechism rests on, with the
+ *     question each one answers (client/public/family-catechism.json).
+ *
+ * Everything is kept on this device (lib/storage), the open verse and its
+ * step too, so a reload comes back to the same place. The verses being
+ * learned print as cards.
+ */
+import { useMemo, useRef, useState } from "react";
+import { Link } from "wouter";
+import { ArrowLeft, ArrowRight, Check, Eye, Plus, Printer, RotateCcw } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import InnerHead from "@/components/art/InnerHead";
-import { Link } from "wouter";
-import { useState, useCallback } from "react";
-import { BookOpen, Check, ChevronRight, Eye, EyeOff } from "lucide-react";
-import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
 import ScriptureNote from "@/components/ScriptureNote";
-
+import LoadFailed from "@/components/LoadFailed";
 import NextStep from "@/components/NextStep";
-/* ── Types ─────────────────────────────────────────────────────── */
+import { ResultNext, type NextStep as NextPage } from "@/components/tool-shell";
+import { SAVE_FAILED } from "@/components/TakeItWithYou";
+import { fetchJson } from "@/lib/fetch-json";
+import { parseScriptureRef } from "@/lib/scripture-ref";
+import {
+  HIDE_STEPS,
+  OWN_VERSE_MESSAGES,
+  OwnVerseError,
+  STEP_LINES,
+  blank,
+  dueToday,
+  fetchOwnVerse,
+  hiddenAt,
+  isKnown,
+  localDay,
+  missed,
+  readMemory,
+  recalled,
+  saveMemory,
+  started,
+  whenDue,
+  wordsOf,
+  type Learning,
+  type MemoryState,
+} from "@/lib/scriptureMemory";
+import data from "@/data/memory-verses.json";
 
-interface Verse {
+interface SetVerse {
   ref: string;
   text: string;
 }
-
-type MemoryMode = "full" | "firstLetter" | "fillBlank" | "recall";
-
-/* ── Data ──────────────────────────────────────────────────────── */
-
-const CATEGORIES: Record<string, Verse[]> = {
-  "Anxiety & Peace": [
-    {
-      ref: "Philippians 4:6-7",
-      text: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.",
-    },
-    {
-      ref: "Isaiah 26:3",
-      text: "You will keep in perfect peace those whose minds are steadfast, because they trust in you.",
-    },
-    {
-      ref: "1 Peter 5:7",
-      text: "Cast all your anxiety on him because he cares for you.",
-    },
-    {
-      ref: "John 14:27",
-      text: "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
-    },
-    {
-      ref: "Psalm 46:10",
-      text: "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth.",
-    },
-  ],
-  "Marriage & Love": [
-    {
-      ref: "Ephesians 5:25",
-      text: "Husbands, love your wives, just as Christ loved the church and gave himself up for her.",
-    },
-    {
-      ref: "1 Corinthians 13:4-5",
-      text: "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.",
-    },
-    {
-      ref: "Genesis 2:24",
-      text: "That is why a man leaves his father and mother and is united to his wife, and they become one flesh.",
-    },
-    {
-      ref: "Colossians 3:14",
-      text: "And over all these virtues put on love, which binds them all together in perfect unity.",
-    },
-    {
-      ref: "1 John 4:19",
-      text: "We love because he first loved us.",
-    },
-  ],
-  "Faith & Trust": [
-    {
-      ref: "Hebrews 11:1",
-      text: "Now faith is confidence in what we hope for and assurance about what we do not see.",
-    },
-    {
-      ref: "Proverbs 3:5-6",
-      text: "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.",
-    },
-    {
-      ref: "Mark 9:24",
-      text: "Immediately the boy's father exclaimed, I do believe; help me overcome my unbelief!",
-    },
-    {
-      ref: "Romans 10:17",
-      text: "Consequently, faith comes from hearing the message, and the message is heard through the word about Christ.",
-    },
-    {
-      ref: "2 Corinthians 5:7",
-      text: "For we live by faith, not by sight.",
-    },
-  ],
-  "Identity in Christ": [
-    {
-      ref: "2 Corinthians 5:17",
-      text: "Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!",
-    },
-    {
-      ref: "Ephesians 2:10",
-      text: "For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.",
-    },
-    {
-      ref: "Galatians 2:20",
-      text: "I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me.",
-    },
-    {
-      ref: "1 Peter 2:9",
-      text: "But you are a chosen people, a royal priesthood, a holy nation, God's special possession, that you may declare the praises of him who called you out of darkness into his wonderful light.",
-    },
-    {
-      ref: "Romans 8:1",
-      text: "Therefore, there is now no condemnation for those who are in Christ Jesus.",
-    },
-  ],
-  "Suffering & Hope": [
-    {
-      ref: "Romans 8:28",
-      text: "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
-    },
-    {
-      ref: "James 1:2-3",
-      text: "Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance.",
-    },
-    {
-      ref: "2 Corinthians 4:17",
-      text: "For our light and momentary troubles are achieving for us an eternal glory that far outweighs them all.",
-    },
-    {
-      ref: "Psalm 34:18",
-      text: "The Lord is close to the brokenhearted and saves those who are crushed in spirit.",
-    },
-    {
-      ref: "Romans 5:3-4",
-      text: "Not only so, but we also glory in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope.",
-    },
-  ],
-  "Parenting & Family": [
-    {
-      ref: "Proverbs 22:6",
-      text: "Start children off on the way they should go, and even when they are old they will not turn from it.",
-    },
-    {
-      ref: "Deuteronomy 6:6-7",
-      text: "These commandments that I give you today are to be on your hearts. Impress them on your children. Talk about them when you sit at home and when you walk along the road, when you lie down and when you get up.",
-    },
-    {
-      ref: "Psalm 127:3",
-      text: "Children are a heritage from the Lord, offspring a reward from him.",
-    },
-    {
-      ref: "Ephesians 6:4",
-      text: "Fathers, do not exasperate your children; instead, bring them up in the training and instruction of the Lord.",
-    },
-    {
-      ref: "3 John 1:4",
-      text: "I have no greater joy than to hear that my children are walking in the truth.",
-    },
-  ],
-  "Leadership & Wisdom": [
-    {
-      ref: "James 1:5",
-      text: "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
-    },
-    {
-      ref: "Proverbs 9:10",
-      text: "The fear of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding.",
-    },
-    {
-      ref: "Matthew 20:26-27",
-      text: "Not so with you. Instead, whoever wants to become great among you must be your servant, and whoever wants to be first must be your slave.",
-    },
-    {
-      ref: "1 Timothy 4:12",
-      text: "Don't let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.",
-    },
-    {
-      ref: "Proverbs 11:14",
-      text: "For lack of guidance a nation falls, but victory is won through many advisers.",
-    },
-  ],
-  "Forgiveness & Grace": [
-    {
-      ref: "Ephesians 4:32",
-      text: "Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.",
-    },
-    {
-      ref: "Romans 3:23-24",
-      text: "For all have sinned and fall short of the glory of God, and all are justified freely by his grace through the redemption that came by Christ Jesus.",
-    },
-    {
-      ref: "Colossians 3:13",
-      text: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
-    },
-    {
-      ref: "Ephesians 2:8-9",
-      text: "For it is by grace you have been saved, through faith -- and this is not from yourselves, it is the gift of God -- not by works, so that no one can boast.",
-    },
-    {
-      ref: "Psalm 103:12",
-      text: "As far as the east is from the west, so far has he removed our transgressions from us.",
-    },
-  ],
-};
-
-const CATEGORY_NAMES = Object.keys(CATEGORIES);
-
-const STORAGE_KEY = "livewell-scripture-memorized";
-
-/* ── Helpers ────────────────────────────────────────────────────── */
-
-function toFirstLetters(text: string): string {
-  return text
-    .split(" ")
-    .map((word) => {
-      if (!word) return "";
-      // Keep punctuation attached to the first letter
-      const first = word[0];
-      const trailing = word.slice(1).replace(/[a-zA-Z]/g, "_");
-      return first + trailing;
-    })
-    .join(" ");
+interface VerseSet {
+  id: string;
+  name: string;
+  next: NextPage | null;
+  verses: SetVerse[];
 }
 
-function toFillBlanks(text: string): string {
-  const words = text.split(" ");
-  // Hide approximately every 3rd important word (skip short words)
-  return words
-    .map((word, i) => {
-      const clean = word.replace(/[^a-zA-Z]/g, "");
-      if (clean.length <= 2) return word;
-      if (i % 3 === 2) {
-        const punctuation = word.replace(/[a-zA-Z]/g, "");
-        return "______" + punctuation;
-      }
-      return word;
-    })
-    .join(" ");
+const SETS: VerseSet[] = data.sets;
+const CORE = new Map(SETS.flatMap((s) => s.verses.map((v) => [v.ref, v.text] as const)));
+const CORE_REFS: ReadonlySet<string> = new Set(CORE.keys());
+const SET_OF = new Map(SETS.flatMap((s) => s.verses.map((v) => [v.ref, s] as const)));
+const LAST = HIDE_STEPS.length - 1;
+
+interface FamilyVerse extends SetVerse {
+  /** "Question 12: How has God spoken to us?" */
+  question: string;
 }
 
-/* ── Component ─────────────────────────────────────────────────── */
+function isCatechism(x: unknown): x is { number: number; question: string; scripture: string; scriptureText: string }[] {
+  return Array.isArray(x) && x.every((e) => typeof e?.number === "number" && typeof e?.question === "string" && typeof e?.scripture === "string" && typeof e?.scriptureText === "string");
+}
+
+/** The verse's place in the Study Bible. */
+function chapterHref(ref: string): string | null {
+  const r = parseScriptureRef(ref);
+  if (!r) return null;
+  const p = r.parts[0];
+  return `/study/bible/${r.book.slug}/${p.c1}#v${p.v1}`;
+}
+
+function Stage({ l, today }: { l: Learning | undefined; today: string }) {
+  if (!l) return null;
+  return <span className={`sm-stage${l.due <= today ? " is-due" : ""}`}>{isKnown(l) ? `Known. ${whenDue(l, today)}` : whenDue(l, today)}</span>;
+}
 
 export default function ScriptureMemory() {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [modes, setModes] = useState<Record<string, MemoryMode>>({});
-  const [recallInputs, setRecallInputs] = useState<Record<string, string>>({});
-  const [recallResults, setRecallResults] = useState<
-    Record<string, boolean | null>
-  >({});
-  // Load memorized state from localStorage in a lazy initializer (once, at
-  // mount, shape-guarded: refs only) rather than a synchronous setState effect.
-  const [memorized, setMemorized] = useState<Set<string>>(
-    () => new Set(readStoredJSON<string[]>(
-      STORAGE_KEY,
-      isArrayOf((x): x is string => typeof x === "string"),
-      []
-    ))
-  );
-  const [showAnswer, setShowAnswer] = useState<Record<string, boolean>>({});
-  const [saveFailed, setSaveFailed] = useState(false);
+  const [today] = useState(() => localDay());
+  const [memory, setMemory] = useState<MemoryState>(() => readMemory(today, CORE_REFS));
+  const [kept, setKept] = useState(true);
+  // The open verse: whether it has been shown at the last step, the words peeked at, and how it was marked.
+  const [shown, setShown] = useState(false);
+  const [peeked, setPeeked] = useState<ReadonlySet<number>>(new Set());
+  const [marked, setMarked] = useState<"had" | "not" | null>(null);
+  const [resumed, setResumed] = useState(() => !!memory.at);
+  const practiceRef = useRef<HTMLElement>(null);
 
-  // Save memorized state to localStorage
-  const persistMemorized = useCallback((next: Set<string>) => {
-    setMemorized(next);
-    setSaveFailed(!writeStoredJSON(STORAGE_KEY, Array.from(next)));
-  }, []);
-
-  const toggleMemorized = (ref: string) => {
-    const next = new Set(memorized);
-    if (next.has(ref)) {
-      next.delete(ref);
-    } else {
-      next.add(ref);
-    }
-    persistMemorized(next);
+  // The family catechism's verses, asked for only when a family opens them.
+  const [family, setFamily] = useState<{ status: "idle" | "loading" | "failed" } | { status: "ready"; verses: FamilyVerse[] }>({ status: "idle" });
+  const loadFamily = () => {
+    setFamily({ status: "loading" });
+    fetchJson("/family-catechism.json", isCatechism)
+      .then((list) => {
+        const seen = new Set<string>();
+        const verses: FamilyVerse[] = [];
+        for (const e of list) {
+          if (seen.has(e.scripture)) continue;
+          seen.add(e.scripture);
+          verses.push({ ref: e.scripture, text: e.scriptureText, question: `Question ${e.number}: ${e.question}` });
+        }
+        setFamily({ status: "ready", verses });
+      })
+      .catch(() => setFamily({ status: "failed" }));
   };
 
-  const totalVerses = CATEGORY_NAMES.reduce(
-    (sum, cat) => sum + CATEGORIES[cat].length,
-    0
-  );
-  const memorizedCount = memorized.size;
+  // A verse of the reader's own.
+  const [own, setOwn] = useState("");
+  const [ownError, setOwnError] = useState("");
+  const [ownBusy, setOwnBusy] = useState(false);
 
-  const getMode = (ref: string): MemoryMode => modes[ref] || "full";
-
-  const setMode = (ref: string, mode: MemoryMode) => {
-    setModes((prev) => ({ ...prev, [ref]: mode }));
-    // Reset recall state when switching modes
-    setRecallResults((prev) => ({ ...prev, [ref]: null }));
-    setShowAnswer((prev) => ({ ...prev, [ref]: false }));
+  const update = (next: MemoryState) => {
+    setMemory(next);
+    setKept(saveMemory(next));
   };
 
-  const handleRecallInput = (ref: string, value: string) => {
-    setRecallInputs((prev) => ({ ...prev, [ref]: value }));
-  };
+  const textOf = (ref: string): string | undefined => CORE.get(ref) ?? memory.verses[ref]?.text;
+  const due = useMemo(() => dueToday(memory, today), [memory, today]);
+  const learning = Object.keys(memory.verses);
+  const known = learning.filter((r) => isKnown(memory.verses[r])).length;
 
-  const checkRecall = (ref: string, original: string) => {
-    const input = (recallInputs[ref] || "").trim().toLowerCase();
-    const target = original.trim().toLowerCase();
-    // Simple similarity check: compare words
-    const inputWords = input.split(/\s+/).filter(Boolean);
-    const targetWords = target.split(/\s+/).filter(Boolean);
-    let matches = 0;
-    inputWords.forEach((w, i) => {
-      if (targetWords[i] && w === targetWords[i]) matches++;
+  const openVerse = (ref: string, extra: Pick<Learning, "text" | "from"> = {}) => {
+    const have = memory.verses[ref];
+    const l = have ?? started(today, CORE.has(ref) ? {} : extra);
+    // A verse already carried is reviewed from memory; a new one starts by reading.
+    const step = have && have.stage > 0 ? LAST : 0;
+    setShown(false);
+    setPeeked(new Set());
+    setMarked(null);
+    setResumed(false);
+    update({ ...memory, verses: { ...memory.verses, [ref]: l }, at: { ref, step } });
+    requestAnimationFrame(() => {
+      practiceRef.current?.scrollIntoView?.({ block: "start" });
+      practiceRef.current?.focus?.({ preventScroll: true });
     });
-    const accuracy = targetWords.length > 0 ? matches / targetWords.length : 0;
-    setRecallResults((prev) => ({ ...prev, [ref]: accuracy >= 0.75 }));
   };
 
-  const modeLabels: Record<MemoryMode, string> = {
-    full: "Full Text",
-    firstLetter: "First Letter",
-    fillBlank: "Fill in Blank",
-    recall: "Full Recall",
+  const at = memory.at && textOf(memory.at.ref) ? memory.at : null;
+  const goStep = (step: number) => {
+    if (!at) return;
+    setShown(false);
+    setPeeked(new Set());
+    setMarked(null);
+    update({ ...memory, at: { ref: at.ref, step: Math.min(Math.max(step, 0), LAST) } });
+  };
+  const mark = (how: "had" | "not") => {
+    if (!at) return;
+    const l = memory.verses[at.ref] ?? started(today);
+    setMarked(how);
+    update({ ...memory, verses: { ...memory.verses, [at.ref]: how === "had" ? recalled(l, today) : missed(l, today) } });
+  };
+  const closeVerse = () => {
+    setMarked(null);
+    update({ ...memory, at: null });
+  };
+  const stopLearning = (ref: string) => {
+    const verses = { ...memory.verses };
+    delete verses[ref];
+    update({ ...memory, verses, at: memory.at?.ref === ref ? null : memory.at });
+  };
+
+  const addOwn = async () => {
+    if (!own.trim() || ownBusy) return;
+    setOwnBusy(true);
+    setOwnError("");
+    try {
+      const verse = await fetchOwnVerse(own);
+      setOwn("");
+      openVerse(verse.ref, { text: verse.text, from: "own" });
+    } catch (e) {
+      setOwnError(OWN_VERSE_MESSAGES[e instanceof OwnVerseError ? e.kind : "failed"]);
+    } finally {
+      setOwnBusy(false);
+    }
+  };
+
+  const others = learning.filter((r) => !CORE.has(r));
+  const nextDue = due.find((r) => r !== at?.ref);
+
+  // Where to go next, from the verse the reader has just worked on.
+  const nextPages = (ref: string): NextPage[] => {
+    const pages: NextPage[] = [];
+    const chapter = chapterHref(ref);
+    if (chapter) pages.push({ kind: "Study Bible", label: `Read ${ref} in its chapter`, href: chapter });
+    const set = SET_OF.get(ref);
+    if (set?.next) pages.push(set.next);
+    if (memory.verses[ref]?.from === "family") pages.push({ kind: "Family", label: "The Family Catechism", href: "/family/catechism" });
+    return pages;
+  };
+
+  const row = (v: SetVerse, extra: Pick<Learning, "text" | "from"> = {}, note?: string) => {
+    const l = memory.verses[v.ref];
+    return (
+      <li key={v.ref} className="sm-row">
+        <div className="sm-row__body">
+          <p className="sm-row__ref">
+            {v.ref} <Stage l={l} today={today} />
+          </p>
+          {note && <p className="sm-row__note">{note}</p>}
+          {/* The verse being said from memory is not printed in a list under it. */}
+          <p className="sm-row__text">{at?.ref === v.ref && !marked ? "The verse you are practicing, above." : v.text}</p>
+        </div>
+        <button type="button" className="btn btn--quiet sm-row__go" onClick={() => openVerse(v.ref, extra)}>
+          {l ? (l.due <= today && l.stage > 0 ? "Review" : "Practice") : "Learn this verse"}
+          <span className="sr-only">: {v.ref}</span>
+        </button>
+      </li>
+    );
   };
 
   return (
     <Layout>
       <SEOMeta
         title="Memorize Bible Verses: 40 Verses, Step by Step"
-        description="Memorize 40 Bible verses across 8 categories with first-letter hints, fill-in-the-blank, and full recall. Track your progress."
+        description="Memorize Bible verses a few words at a time: forty key verses, any verse you choose, and the family catechism's verses, with review on spaced days kept on your device."
         keywords="scripture memory, Bible memorization, memorize Bible verses, scripture memory system, Bible memory techniques"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Scripture Memory System",
-          description:
-            "Memorize 40 Bible verses across 8 categories using first-letter hints, fill-in-the-blank, and full recall modes. Track your progress.",
+          name: "Memorize Scripture",
+          description: "Memorize Bible verses a few words at a time, with review on spaced days. Forty key verses, any verse you choose, and the family catechism's verses.",
           url: "https://www.livewellbyjamesbell.co/tools/scripture-memory",
           applicationCategory: "ReligiousApp",
           offers: { "@type": "Offer", price: "0" },
         }}
       />
+      <div className="sm-page">
+        <InnerHead
+          path="/tools/scripture-memory"
+          title="Memorize Scripture: 40 key verses"
+          line="Say a verse aloud while its words are hidden a few at a time, then from memory. A verse you carried comes back after a day, then three, then a week, until it stays. The aim is Scripture you can reach for at three in the morning without a phone in your hand."
+          plate="book"
+        />
 
-      {/* Hero */}
-      <InnerHead path="/tools/scripture-memory" title="Memorize Scripture: 40 key verses" line="Forty verses across eight categories, with four ways to work each one into memory. The aim is Scripture you can reach for at three in the morning without a phone in your hand." plate="book" />
-
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--bone)",
-          padding: "var(--s-4) var(--gutter)",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          {/* Progress bar */}
-          <div
-            style={{
-              marginTop: "28px",
-              maxWidth: "400px",
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginBottom: "8px",
-                fontSize: "13px",
-                fontFamily: "var(--U)",
-                fontWeight: 600,
-              }}
-            >
-              <span style={{ color: "var(--mustard)" }}>
-                {memorizedCount} of {totalVerses} memorized
-              </span>
-              <span style={{ opacity: 0.5 }}>
-                {totalVerses > 0
-                  ? Math.round((memorizedCount / totalVerses) * 100)
-                  : 0}
-                %
-              </span>
-            </div>
-            <div
-              style={{
-                height: "6px",
-                background: "rgba(255,255,255,0.1)",
-                borderRadius: "3px",
-                overflow: "hidden",
-              }}
-            >
-              <div
-                style={{
-                  height: "100%",
-                  width: `${totalVerses > 0 ? (memorizedCount / totalVerses) * 100 : 0}%`,
-                  background: "var(--mustard)",
-                  borderRadius: "3px",
-                  transition: "width 0.4s ease",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Content */}
-      <section style={{ padding: "48px 32px", background: "var(--bone)" }}>
-        <div className="wrap" style={{ maxWidth: "900px" }}>
-          {saveFailed && (
-            <p
-              style={{
-                fontFamily: "var(--U)",
-                fontSize: "13px",
-                color: "var(--ink-muted)",
-                margin: "0 0 24px",
-              }}
-            >
-              Couldn't save to this browser — your work here will not survive a reload.
-            </p>
-          )}
-          {/* Category Grid */}
-          {!selectedCategory && (
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-                gap: "16px",
-              }}
-            >
-              {CATEGORY_NAMES.map((cat) => {
-                const catVerses = CATEGORIES[cat];
-                const catMemorized = catVerses.filter((v) =>
-                  memorized.has(v.ref)
-                ).length;
-                return (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    style={{
-                      padding: "28px 20px",
-                      background: "var(--card)",
-                      border: "1px solid var(--border)",
-                      borderRadius: "8px",
-                      textAlign: "left",
-                      cursor: "pointer",
-                      transition: "all 0.2s",
-                      position: "relative",
-                      overflow: "hidden",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = "var(--mustard)";
-                      e.currentTarget.style.transform = "translateY(-2px)";
-                      e.currentTarget.style.boxShadow =
-                        "0 8px 24px rgba(0,0,0,0.06)";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = "var(--border)";
-                      e.currentTarget.style.transform = "none";
-                      e.currentTarget.style.boxShadow = "none";
-                    }}
-                  >
-                    <BookOpen
-                      size={20}
-                      style={{
-                        color: "var(--mustard-text)",
-                        marginBottom: "12px",
-                        opacity: 0.7,
-                      }}
-                    />
-                    <div
-                      style={{
-                        fontSize: "18px",
-                        fontWeight: 500,
-                        fontFamily: "var(--F)",
-                        color: "var(--ink)",
-                        marginBottom: "8px",
-                        lineHeight: 1.3,
-                      }}
-                    >
-                      {cat}
-                    </div>
-                    <div
-                      style={{
-                        fontSize: "12px",
-                        fontFamily: "var(--U)",
-                        color: "var(--ink2)",
-                        fontWeight: 600,
-                      }}
-                    >
-                      {catMemorized} / {catVerses.length} memorized
-                    </div>
-                    {/* Mini progress bar */}
-                    <div
-                      style={{
-                        marginTop: "12px",
-                        height: "3px",
-                        background: "var(--bone)",
-                        borderRadius: "2px",
-                        overflow: "hidden",
-                      }}
-                    >
-                      <div
-                        style={{
-                          height: "100%",
-                          width: `${catVerses.length > 0 ? (catMemorized / catVerses.length) * 100 : 0}%`,
-                          background: "var(--mustard)",
-                          borderRadius: "2px",
-                          transition: "width 0.4s ease",
-                        }}
-                      />
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-          )}
-
-          {/* Category Detail */}
-          {selectedCategory && CATEGORIES[selectedCategory] && (
-            <div>
-              {/* Back button */}
-              <button
-                onClick={() => {
-                  setSelectedCategory(null);
-                  setRecallInputs({});
-                  setRecallResults({});
-                  setShowAnswer({});
-                }}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "6px",
-                  padding: "8px 0",
-                  background: "none",
-                  border: "none",
-                  fontSize: "14px",
-                  fontWeight: 600,
-                  fontFamily: "var(--U)",
-                  color: "var(--ink)",
-                  cursor: "pointer",
-                  marginBottom: "24px",
-                  opacity: 0.7,
-                }}
-              >
-                <ChevronRight
-                  size={16}
-                  style={{ transform: "rotate(180deg)" }}
-                />
-                All Categories
-              </button>
-
-              <h2
-                style={{
-                  fontSize: "clamp(28px, 4vw, 40px)",
-                  fontWeight: 400,
-                  fontFamily: "var(--F)",
-                  color: "var(--ink)",
-                  marginBottom: "8px",
-                  letterSpacing: "-0.02em",
-                }}
-              >
-                {selectedCategory}
+        {/* THE OPEN VERSE */}
+        {at && (
+          <section ref={practiceRef} tabIndex={-1} className="sm-sec sm-practice" aria-labelledby="sm-practice-h">
+            <div className="sm-wrap">
+              <p className="eyebrow">{resumed && !marked ? "Picked up where you left off" : memory.verses[at.ref]?.from === "family" ? "A catechism verse" : SET_OF.get(at.ref)?.name ?? "Your own verse"}</p>
+              <h2 id="sm-practice-h" className="sm-practice__ref">
+                {at.ref}
               </h2>
-              <p
-                style={{
-                  fontSize: "14px",
-                  fontFamily: "var(--U)",
-                  color: "var(--ink2)",
-                  marginBottom: "32px",
-                  fontWeight: 600,
-                }}
-              >
-                {
-                  CATEGORIES[selectedCategory].filter((v) =>
-                    memorized.has(v.ref)
-                  ).length
-                }{" "}
-                of {CATEGORIES[selectedCategory].length} memorized in this
-                category
-              </p>
+              <Verse text={textOf(at.ref)!} step={shown || marked ? 0 : at.step} peeked={peeked} onPeek={(i) => setPeeked((p) => new Set(p).add(i))} />
+              <ScriptureNote rendering="bsb" />
 
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "20px",
-                }}
-              >
-                {CATEGORIES[selectedCategory].map((verse) => {
-                  const mode = getMode(verse.ref);
-                  const isMemorized = memorized.has(verse.ref);
-                  const recallResult = recallResults[verse.ref];
-                  const answerVisible = showAnswer[verse.ref] || false;
-
-                  return (
-                    <div
-                      key={verse.ref}
-                      style={{
-                        background: "var(--card)",
-                        borderRadius: "8px",
-                        padding: "32px",
-                        border: isMemorized
-                          ? "2px solid var(--mustard)"
-                          : "1px solid var(--border)",
-                        transition: "border-color 0.3s",
-                      }}
-                    >
-                      {/* Header */}
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "flex-start",
-                          marginBottom: "16px",
-                          flexWrap: "wrap",
-                          gap: "12px",
-                        }}
-                      >
-                        <Link
-                          href={`/theology/passage?ref=${encodeURIComponent(verse.ref)}`}
-                          style={{
-                            fontSize: "15px",
-                            fontWeight: 700,
-                            color: "var(--mustard-text)",
-                            fontFamily: "var(--U)",
-                            textDecoration: "none",
-                          }}
-                        >
-                          {verse.ref} →
-                        </Link>
-
-                        {/* Mark as memorized */}
-                        <button
-                          onClick={() => toggleMemorized(verse.ref)}
-                          aria-pressed={isMemorized}
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "6px",
-                            padding: "6px 14px",
-                            background: isMemorized
-                              ? "var(--mustard)"
-                              : "var(--bone)",
-                            color: isMemorized
-                              ? "var(--ink)"
-                              : "var(--ink2)",
-                            border: "none",
-                            borderRadius: "4px",
-                            fontSize: "12px",
-                            fontWeight: 600,
-                            fontFamily: "var(--U)",
-                            cursor: "pointer",
-                            transition: "all 0.2s",
-                          }}
-                        >
-                          <Check size={14} />
-                          {isMemorized ? "Memorized" : "Mark as Memorized"}
+              {!marked && (
+                <>
+                  <p className="sm-step" aria-live="polite">
+                    <strong>
+                      Step {at.step + 1} of {HIDE_STEPS.length}.
+                    </strong>{" "}
+                    {shown ? "Here is the verse. Did you have it, word for word?" : STEP_LINES[at.step]}
+                    {!shown && at.step > 0 && at.step < LAST && " Tap a line to look at a word you have lost."}
+                  </p>
+                  <div className="sm-actions">
+                    {at.step > 0 && !shown && (
+                      <button type="button" className="btn btn--quiet" onClick={() => goStep(at.step - 1)}>
+                        <ArrowLeft aria-hidden="true" size={16} strokeWidth={1.75} />
+                        Show more words
+                      </button>
+                    )}
+                    {at.step < LAST && (
+                      <button type="button" className="btn" onClick={() => goStep(at.step + 1)}>
+                        Hide more words
+                        <ArrowRight aria-hidden="true" size={16} strokeWidth={1.75} />
+                      </button>
+                    )}
+                    {at.step === LAST && !shown && (
+                      <button type="button" className="btn" onClick={() => setShown(true)}>
+                        <Eye aria-hidden="true" size={16} strokeWidth={1.75} />
+                        Show the verse
+                      </button>
+                    )}
+                    {at.step === LAST && shown && (
+                      <>
+                        <button type="button" className="btn" onClick={() => mark("had")}>
+                          <Check aria-hidden="true" size={16} strokeWidth={1.75} />I had it
                         </button>
-                      </div>
+                        <button type="button" className="btn btn--quiet" onClick={() => mark("not")}>
+                          Not yet
+                        </button>
+                      </>
+                    )}
+                    <button type="button" className="btn btn--text" onClick={closeVerse}>
+                      Back to the verses
+                    </button>
+                    <button type="button" className="btn btn--text" onClick={() => stopLearning(at.ref)}>
+                      Stop learning this verse
+                    </button>
+                  </div>
+                </>
+              )}
 
-                      {/* Mode selector */}
-                      <div
-                        style={{
-                          display: "flex",
-                          gap: "8px",
-                          marginBottom: "20px",
-                          flexWrap: "wrap",
-                        }}
-                      >
-                        {(
-                          [
-                            "full",
-                            "firstLetter",
-                            "fillBlank",
-                            "recall",
-                          ] as MemoryMode[]
-                        ).map((m) => (
-                          <button
-                            key={m}
-                            onClick={() => setMode(verse.ref, m)}
-                            aria-pressed={mode === m}
-                            style={{
-                              padding: "6px 14px",
-                              background:
-                                mode === m
-                                  ? "var(--charcoal)"
-                                  : "var(--bone)",
-                              color:
-                                mode === m
-                                  ? "var(--bone)"
-                                  : "var(--ink2)",
-                              border: "none",
-                              borderRadius: "4px",
-                              fontSize: "12px",
-                              fontWeight: 600,
-                              fontFamily: "var(--U)",
-                              cursor: "pointer",
-                              transition: "all 0.2s",
-                            }}
-                          >
-                            {modeLabels[m]}
-                          </button>
-                        ))}
-                      </div>
-
-                      {/* Verse display based on mode */}
-                      {mode === "full" && (
-                        <p
-                          style={{
-                            fontSize: "17px",
-                            lineHeight: 1.9,
-                            color: "var(--ink)",
-                            fontFamily: "var(--F)",
-                            fontStyle: "italic",
-                            maxWidth: "68ch",
-                            margin: 0,
-                          }}
-                        >
-                          {verse.text}
-                        </p>
-                      )}
-
-                      <ScriptureNote rendering="unverified" />
-
-                      {mode === "firstLetter" && (
-                        <div>
-                          <p
-                            style={{
-                              fontSize: "17px",
-                              lineHeight: 1.9,
-                              color: "var(--ink)",
-                              fontFamily: "var(--U)",
-                              maxWidth: "68ch",
-                              margin: 0,
-                              letterSpacing: "0.02em",
-                            }}
-                          >
-                            {toFirstLetters(verse.text)}
-                          </p>
-                          <div style={{ marginTop: "16px" }}>
-                            <button
-                              onClick={() =>
-                                setShowAnswer((prev) => ({
-                                  ...prev,
-                                  [verse.ref]: !prev[verse.ref],
-                                }))
-                              }
-                              aria-expanded={answerVisible}
-                              style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "6px",
-                                padding: "6px 14px",
-                                background: "var(--bone)",
-                                border: "none",
-                                borderRadius: "4px",
-                                fontSize: "12px",
-                                fontWeight: 600,
-                                fontFamily: "var(--U)",
-                                color: "var(--ink2)",
-                                cursor: "pointer",
-                              }}
-                            >
-                              {answerVisible ? (
-                                <EyeOff size={14} />
-                              ) : (
-                                <Eye size={14} />
-                              )}
-                              {answerVisible ? "Hide Answer" : "Show Answer"}
-                            </button>
-                            {answerVisible && (
-                              <p
-                                style={{
-                                  fontSize: "15px",
-                                  lineHeight: 1.8,
-                                  color: "var(--ink2)",
-                                  fontFamily: "var(--F)",
-                                  fontStyle: "italic",
-                                  maxWidth: "68ch",
-                                  marginTop: "12px",
-                                  marginBottom: 0,
-                                  padding: "16px",
-                                  background: "var(--bone)",
-                                  borderRadius: "6px",
-                                }}
-                              >
-                                {verse.text}
-                              </p>
-                            )}
-                          </div>
-                        </div>
-                      )}
-
-                      {mode === "fillBlank" && (
-                        <div>
-                          <p
-                            style={{
-                              fontSize: "17px",
-                              lineHeight: 1.9,
-                              color: "var(--ink)",
-                              fontFamily: "var(--F)",
-                              fontStyle: "italic",
-                              maxWidth: "68ch",
-                              margin: 0,
-                            }}
-                          >
-                            {toFillBlanks(verse.text)}
-                          </p>
-                          <div style={{ marginTop: "16px" }}>
-                            <button
-                              onClick={() =>
-                                setShowAnswer((prev) => ({
-                                  ...prev,
-                                  [verse.ref]: !prev[verse.ref],
-                                }))
-                              }
-                              aria-expanded={answerVisible}
-                              style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "6px",
-                                padding: "6px 14px",
-                                background: "var(--bone)",
-                                border: "none",
-                                borderRadius: "4px",
-                                fontSize: "12px",
-                                fontWeight: 600,
-                                fontFamily: "var(--U)",
-                                color: "var(--ink2)",
-                                cursor: "pointer",
-                              }}
-                            >
-                              {answerVisible ? (
-                                <EyeOff size={14} />
-                              ) : (
-                                <Eye size={14} />
-                              )}
-                              {answerVisible ? "Hide Answer" : "Show Answer"}
-                            </button>
-                            {answerVisible && (
-                              <p
-                                style={{
-                                  fontSize: "15px",
-                                  lineHeight: 1.8,
-                                  color: "var(--ink2)",
-                                  fontFamily: "var(--F)",
-                                  fontStyle: "italic",
-                                  maxWidth: "68ch",
-                                  marginTop: "12px",
-                                  marginBottom: 0,
-                                  padding: "16px",
-                                  background: "var(--bone)",
-                                  borderRadius: "6px",
-                                }}
-                              >
-                                {verse.text}
-                              </p>
-                            )}
-                          </div>
-                        </div>
-                      )}
-
-                      {mode === "recall" && (
-                        <div>
-                          <p
-                            style={{
-                              fontSize: "14px",
-                              lineHeight: 1.7,
-                              color: "var(--ink2)",
-                              fontFamily: "var(--U)",
-                              marginBottom: "12px",
-                            }}
-                          >
-                            Type the verse from memory:
-                          </p>
-                          <textarea
-                            value={recallInputs[verse.ref] || ""}
-                            onChange={(e) =>
-                              handleRecallInput(verse.ref, e.target.value)
-                            }
-                            placeholder="Type the verse here…"
-                            aria-label="Type the verse from memory"
-                            rows={4}
-                            style={{
-                              width: "100%",
-                              padding: "16px",
-                              fontSize: "16px",
-                              fontFamily: "var(--U)",
-                              color: "var(--ink)",
-                              background: "var(--bone)",
-                              border: "1px solid var(--border)",
-                              borderRadius: "6px",
-                              outline: "none",
-                              resize: "vertical",
-                              lineHeight: 1.7,
-                              boxSizing: "border-box",
-                            }}
-                          />
-                          <div
-                            style={{
-                              display: "flex",
-                              gap: "10px",
-                              marginTop: "12px",
-                              flexWrap: "wrap",
-                              alignItems: "center",
-                            }}
-                          >
-                            <button
-                              onClick={() =>
-                                checkRecall(verse.ref, verse.text)
-                              }
-                              style={{
-                                padding: "10px 20px",
-                                background: "var(--mustard)",
-                                color: "var(--ink)",
-                                border: "none",
-                                borderRadius: "6px",
-                                fontSize: "13px",
-                                fontWeight: 600,
-                                fontFamily: "var(--U)",
-                                cursor: "pointer",
-                              }}
-                            >
-                              Check
-                            </button>
-                            <button
-                              onClick={() =>
-                                setShowAnswer((prev) => ({
-                                  ...prev,
-                                  [verse.ref]: !prev[verse.ref],
-                                }))
-                              }
-                              aria-expanded={answerVisible}
-                              style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: "6px",
-                                padding: "10px 20px",
-                                background: "var(--bone)",
-                                border: "none",
-                                borderRadius: "6px",
-                                fontSize: "13px",
-                                fontWeight: 600,
-                                fontFamily: "var(--U)",
-                                color: "var(--ink2)",
-                                cursor: "pointer",
-                              }}
-                            >
-                              {answerVisible ? (
-                                <EyeOff size={14} />
-                              ) : (
-                                <Eye size={14} />
-                              )}
-                              {answerVisible
-                                ? "Hide Answer"
-                                : "Show Answer"}
-                            </button>
-                            {recallResult !== null &&
-                              recallResult !== undefined && (
-                                <span
-                                  aria-live="polite"
-                                  style={{
-                                    fontSize: "13px",
-                                    fontWeight: 700,
-                                    fontFamily: "var(--U)",
-                                    color: recallResult
-                                      ? "var(--mustard-text)"
-                                      : "var(--alert)",
-                                  }}
-                                >
-                                  {recallResult
-                                    ? "Well done. The word is taking root."
-                                    : "Not quite. Keep working at it."}
-                                </span>
-                              )}
-                          </div>
-                          {answerVisible && (
-                            <p
-                              style={{
-                                fontSize: "15px",
-                                lineHeight: 1.8,
-                                color: "var(--ink2)",
-                                fontFamily: "var(--F)",
-                                fontStyle: "italic",
-                                maxWidth: "68ch",
-                                marginTop: "12px",
-                                marginBottom: 0,
-                                padding: "16px",
-                                background: "var(--bone)",
-                                borderRadius: "6px",
-                              }}
-                            >
-                              {verse.text}
-                            </p>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+              {marked && (
+                <div className="sm-result" role="status">
+                  <p className="sm-step">
+                    {marked === "had" ? (
+                      <>
+                        <strong>Kept.</strong> {at.ref} comes back {whenDue(memory.verses[at.ref], today).replace(/^Back /, "").replace(/^Due today$/, "today")}. Each time you carry it, the gap grows: a day, three days, a week, two weeks, a month.
+                      </>
+                    ) : (
+                      <>
+                        <strong>Not yet is an honest answer.</strong> {at.ref} comes back tomorrow. Most verses take several days of saying aloud before they stay.
+                      </>
+                    )}
+                  </p>
+                  <div className="sm-actions">
+                    {marked === "not" && (
+                      <button type="button" className="btn" onClick={() => goStep(0)}>
+                        <RotateCcw aria-hidden="true" size={16} strokeWidth={1.75} />
+                        Go through the steps again
+                      </button>
+                    )}
+                    {nextDue && (
+                      <button type="button" className="btn" onClick={() => openVerse(nextDue)}>
+                        Next verse due: {nextDue}
+                      </button>
+                    )}
+                    <button type="button" className="btn btn--quiet" onClick={closeVerse}>
+                      Back to the verses
+                    </button>
+                  </div>
+                  <ResultNext steps={nextPages(at.ref)} />
+                </div>
+              )}
+              {!kept && (
+                <p className="sm-alert" role="status">
+                  {SAVE_FAILED}
+                </p>
+              )}
             </div>
-          )}
+          </section>
+        )}
 
-          {/* Empty state for category grid */}
-          {!selectedCategory && (
-            <div
-              style={{
-                textAlign: "center",
-                padding: "32px",
-                color: "var(--ink2)",
-                marginTop: "24px",
+        {/* TODAY */}
+        <section className="sm-sec sm-sec--warm" aria-labelledby="sm-today-h">
+          <div className="sm-wrap">
+            <h2 id="sm-today-h" className="sm-h2">
+              Today's review
+            </h2>
+            {learning.length === 0 ? (
+              <p className="sm-lede">Nothing yet. Choose one verse below and learn it today. One verse kept is worth more than ten begun.</p>
+            ) : due.length === 0 ? (
+              <p className="sm-lede">
+                Nothing is due today. You are learning {learning.length} {learning.length === 1 ? "verse" : "verses"}
+                {known > 0 ? `, and ${known} ${known === 1 ? "is" : "are"} known` : ""}. Each comes back on its day.
+              </p>
+            ) : (
+              <>
+                <p className="sm-lede">
+                  {due.length} {due.length === 1 ? "verse is" : "verses are"} due. Say each from memory before you look.
+                </p>
+                <ul className="sm-list">{due.map((ref) => row({ ref, text: textOf(ref) ?? "" }))}</ul>
+              </>
+            )}
+            {!at && !kept && (
+              <p className="sm-alert" role="status">
+                {SAVE_FAILED}
+              </p>
+            )}
+            {learning.length > 0 && (
+              <div className="sm-actions no-print">
+                <button type="button" className="btn btn--quiet" onClick={() => window.print()}>
+                  <Printer aria-hidden="true" size={16} strokeWidth={1.75} />
+                  Print my verses as cards
+                </button>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* THE FORTY, BY SET */}
+        <section className="sm-sec" aria-labelledby="sm-sets-h">
+          <div className="sm-wrap">
+            <h2 id="sm-sets-h" className="sm-h2">
+              Forty key verses
+            </h2>
+            <p className="sm-lede">Eight sets of five. Every verse is the Berean Standard Bible, word for word.</p>
+            {SETS.map((set) => (
+              <details key={set.id} className="sm-set">
+                <summary>
+                  <span className="sm-set__name">{set.name}</span>
+                  <span className="sm-set__count">
+                    {set.verses.filter((v) => memory.verses[v.ref]).length} of {set.verses.length} begun
+                  </span>
+                </summary>
+                <ul className="sm-list">{set.verses.map((v) => row(v))}</ul>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {/* A VERSE OF YOUR OWN */}
+        <section className="sm-sec sm-sec--warm" aria-labelledby="sm-own-h">
+          <div className="sm-wrap">
+            <h2 id="sm-own-h" className="sm-h2">
+              A verse of your own
+            </h2>
+            <p className="sm-lede">Type any reference, up to six verses in one chapter. The words are read from the Bible on this site, so they are always right.</p>
+            <form
+              className="sm-own"
+              onSubmit={(e) => {
+                e.preventDefault();
+                void addOwn();
               }}
             >
-              <p
-                style={{
-                  fontFamily: "var(--U)",
-                  fontSize: "15px",
-                  lineHeight: 1.7,
-                  maxWidth: "50ch",
-                  margin: "0 auto",
-                }}
-              >
-                Select a category to begin. Each contains five verses with four
-                practice modes: full text, first-letter hints, fill-in-the-blank,
-                and full recall from memory.
+              <label htmlFor="sm-own-ref" className="sm-own__label">
+                Reference
+              </label>
+              <div className="sm-own__row">
+                <input id="sm-own-ref" className="sm-own__input" type="text" value={own} onChange={(e) => setOwn(e.target.value)} placeholder="John 3:16" autoComplete="off" aria-describedby="sm-own-error" />
+                <button type="submit" className="btn" disabled={ownBusy || !own.trim()}>
+                  <Plus aria-hidden="true" size={16} strokeWidth={1.75} />
+                  {ownBusy ? "Finding it…" : "Learn it"}
+                </button>
+              </div>
+              <p id="sm-own-error" className="sm-alert" role="alert">
+                {ownError}
               </p>
-            </div>
-          )}
-        </div>
-      </section>
-      <div style={{ background: "var(--bone)", padding: "0 var(--s-4) var(--s-6)" }}>
-        <NextStep id="study-bible" line="Read each verse in its own chapter, with notes beside the text." />
+            </form>
+            {others.length > 0 && <ul className="sm-list">{others.map((ref) => row({ ref, text: memory.verses[ref].text ?? "" }, {}, memory.verses[ref].from === "family" ? "From the family catechism" : undefined))}</ul>}
+          </div>
+        </section>
+
+        {/* FOR FAMILIES */}
+        <section className="sm-sec" aria-labelledby="sm-family-h">
+          <div className="sm-wrap">
+            <h2 id="sm-family-h" className="sm-h2">
+              For families: the catechism's verses
+            </h2>
+            <p className="sm-lede">
+              Each question in <Link href="/family/catechism">the Family Catechism</Link> rests on a verse. Learn the verse with the question it answers: one person hides the words, everyone says it together.
+            </p>
+            {family.status === "idle" && (
+              <button type="button" className="btn btn--quiet" onClick={loadFamily}>
+                Show the catechism's verses
+              </button>
+            )}
+            {family.status === "loading" && (
+              <p role="status" className="sm-lede">
+                Loading the verses…
+              </p>
+            )}
+            {family.status === "failed" && <LoadFailed what="The catechism's verses" onRetry={loadFamily} backHref="/family/catechism" backLabel="The Family Catechism" />}
+            {family.status === "ready" && <ul className="sm-list">{family.verses.map((v) => row(v, { text: v.text, from: "family" }, v.question))}</ul>}
+          </div>
+        </section>
+
+        {/* THE CARDS, PRINTED */}
+        <section className="sm-print" aria-hidden="true">
+          <p className="sm-print__head">Memorize Scripture · livewellbyjamesbell.co/tools/scripture-memory · Berean Standard Bible</p>
+          <div className="sm-cards">
+            {learning.map((ref) => (
+              <div key={ref} className="sm-card">
+                <p className="sm-card__ref">{ref}</p>
+                <p className="sm-card__text">{textOf(ref)}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="sm-sec sm-sec--warm no-print">
+          <div className="sm-wrap">
+            <NextStep id="study-bible" line="Read each verse in its own chapter, with notes beside the text." />
+          </div>
+        </section>
       </div>
     </Layout>
+  );
+}
+
+/** The verse, with the words hidden at this step drawn as lines. A hidden word can be looked at once tapped. */
+function Verse({ text, step, peeked, onPeek }: { text: string; step: number; peeked: ReadonlySet<number>; onPeek: (i: number) => void }) {
+  const words = wordsOf(text);
+  const hidden = hiddenAt(text, step);
+  return (
+    <p className="sm-verse">
+      {words.map((w, i) => {
+        const hide = hidden[i] && !peeked.has(i);
+        return (
+          <span key={i}>
+            {hide ? (
+              <button type="button" className="sm-gap" onClick={() => onPeek(i)} aria-label="A hidden word. Show it.">
+                {blank(w)}
+              </button>
+            ) : (
+              <span className={hidden[i] ? "sm-peeked" : undefined}>{w}</span>
+            )}{" "}
+          </span>
+        );
+      })}
+    </p>
   );
 }

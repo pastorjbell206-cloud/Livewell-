@@ -75,3 +75,80 @@ export function nextPlace(place: CatechismPlace, count: number): CatechismPlace 
   const at = Math.min(Math.max(place.at, 1), count);
   return { ...place, follow: "own", at: at >= count ? 1 : at + 1 };
 }
+
+// A week with one question (TOOLS run of 2026-11-22).
+//
+// Three small things a family does with its question before saying it has
+// learned it: say it, read the verse, talk about it. The ticks are kept on
+// this device for the question they belong to, and start clean when the
+// family moves to another question.
+
+export const CATECHISM_WEEK_KEY = "livewell-progress-family-catechism-week-v1";
+
+export const WEEK_STEPS = [
+  { id: "say", label: "Say it together", line: "Read the question and both answers aloud, twice." },
+  { id: "read", label: "Read the verse", line: "Read the verse it rests on, then the line in plain words." },
+  { id: "talk", label: "Talk about it", line: "Ask the question below and let everyone answer." },
+] as const;
+
+export type WeekStepId = (typeof WEEK_STEPS)[number]["id"];
+
+export interface CatechismWeek {
+  v: 1;
+  /** The question these ticks belong to. */
+  q: number;
+  steps: WeekStepId[];
+}
+
+const STEP_IDS: readonly string[] = WEEK_STEPS.map((s) => s.id);
+
+export function isCatechismWeek(x: unknown): x is CatechismWeek {
+  if (!x || typeof x !== "object" || Array.isArray(x)) return false;
+  const w = x as Record<string, unknown>;
+  return w.v === 1 && typeof w.q === "number" && Number.isInteger(w.q) && w.q >= 1 && Array.isArray(w.steps) && w.steps.every((s) => typeof s === "string" && STEP_IDS.includes(s));
+}
+
+/** The steps ticked for question `q` on this device; none when the kept ticks are another question's. */
+export function readCatechismWeek(q: number): WeekStepId[] {
+  const kept = readStoredJSON<CatechismWeek>(CATECHISM_WEEK_KEY, isCatechismWeek, { v: 1, q, steps: [] });
+  return kept.q === q ? kept.steps : [];
+}
+
+/** Tick or untick one step for question `q`. Returns the steps now ticked and whether the browser kept them. */
+export function toggleWeekStep(q: number, steps: WeekStepId[], id: WeekStepId): { steps: WeekStepId[]; ok: boolean } {
+  const next = steps.includes(id) ? steps.filter((s) => s !== id) : [...steps, id];
+  return { steps: next, ok: writeStoredJSON(CATECHISM_WEEK_KEY, { v: 1, q, steps: next } satisfies CatechismWeek) };
+}
+
+// Saying it aloud: the practice card's place, and whether it passes over the
+// questions the family already knows.
+
+export const CATECHISM_PRACTICE_KEY = "livewell-progress-family-catechism-practice-v1";
+
+export interface PracticePlace {
+  v: 1;
+  at: number;
+  /** Pass over the questions marked learned. */
+  skip?: boolean;
+}
+
+export function isPracticePlace(x: unknown): x is PracticePlace {
+  if (!x || typeof x !== "object" || Array.isArray(x)) return false;
+  const p = x as Record<string, unknown>;
+  return p.v === 1 && Number.isInteger(p.at) && (p.skip === undefined || typeof p.skip === "boolean");
+}
+
+/**
+ * The next question to practice from `at`, going `by` (+1 or -1) round the
+ * list. With `skip`, questions the family knows are passed over; when every
+ * question is known there is nothing to pass over, so it steps by one.
+ */
+export function nextPractice(at: number, by: 1 | -1, count: number, skip: boolean, known: (n: number) => boolean): number {
+  if (count <= 0) return 1;
+  let n = at;
+  for (let i = 0; i < count; i++) {
+    n = ((n - 1 + by + count) % count) + 1;
+    if (!skip || !known(n)) return n;
+  }
+  return ((at - 1 + by + count) % count) + 1;
+}

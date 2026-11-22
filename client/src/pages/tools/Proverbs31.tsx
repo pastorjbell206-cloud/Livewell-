@@ -93,7 +93,7 @@ export default function Proverbs31() {
             <button
               onClick={() => setDay((d) => (d > 1 ? d - 1 : 31))}
               aria-label="Previous day"
-              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
+              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
             >
               <ChevronLeft size={16} /> Prev
             </button>
@@ -104,7 +104,7 @@ export default function Proverbs31() {
             <button
               onClick={() => setDay((d) => (d < 31 ? d + 1 : 1))}
               aria-label="Next day"
-              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
+              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
             >
               Next <ChevronRight size={16} />
             </button>

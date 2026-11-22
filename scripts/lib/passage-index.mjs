@@ -34,6 +34,11 @@
  *               committed static library.
  *   wisdom      Wisdom topics (client/public/wisdom/topics.json): the verses
  *               the topic prints in full (verses[]).
+ *   practice    The tools (client/src/data/tool-offers.json): the passages a
+ *               tool is offered beside, by hand and only where the tool does
+ *               a job the passage raises. The tool's name is the one in
+ *               client/src/lib/toolsList.ts, read as text; a tool folded into
+ *               another is left out.
  *   tool        "Read any verse in context" (/theology/passage): the chapters
  *               it has a passage guide for
  *               (bible/notes-index.json, "passages").
@@ -75,7 +80,7 @@ export const OUT_DIR = path.join(PUB, "index/chapters");
 export const LIST_FILE = path.join(PUB, "index/chapters.json");
 
 /** The kinds, in the order a chapter lists them. */
-export const KIND_ORDER = ["question", "doctrine", "history", "background", "guide", "devotion", "catechism", "care", "plan", "wisdom", "essay", "tool"];
+export const KIND_ORDER = ["question", "doctrine", "history", "background", "guide", "devotion", "catechism", "care", "plan", "wisdom", "essay", "practice", "tool"];
 
 /** A reference over more chapters than this names a book or a long stretch, not a passage. */
 export const MAX_SPAN = 4;
@@ -280,6 +285,28 @@ function passageGuides() {
   });
 }
 
+/** The listed tools by id, from toolsList.ts read as text (it imports icons a script cannot use). */
+export function listedTools() {
+  const src = fs.readFileSync(path.join(ROOT, "client/src/lib/toolsList.ts"), "utf8");
+  const tools = new Map();
+  const re = /id: "([^"]+)",\s*\n\s*name: "([^"]+)",[\s\S]*?href: "([^"]+)",(\s*\n\s*replacedBy: "[^"]+")?/g;
+  let m;
+  while ((m = re.exec(src))) if (!m[4]) tools.set(m[1], { name: m[2], href: m[3] });
+  return tools;
+}
+
+function toolOffers() {
+  const { offers } = JSON.parse(fs.readFileSync(path.join(ROOT, "client/src/data/tool-offers.json"), "utf8"));
+  const tools = listedTools();
+  const out = [];
+  for (const o of offers) {
+    const tool = tools.get(o.tool);
+    if (!tool) continue;
+    out.push({ kind: "practice", title: tool.name, href: tool.href, at: (o.passages ?? []).flatMap((ref) => fieldRefs(ref)) });
+  }
+  return out;
+}
+
 /** Every item from every library, with the chapters it treats. */
 export function collectItems() {
   return [
@@ -294,6 +321,7 @@ export function collectItems() {
     ...plans(),
     ...wisdom(),
     ...essays(),
+    ...toolOffers(),
     ...passageGuides(),
   ];
 }

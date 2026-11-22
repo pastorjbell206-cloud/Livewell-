@@ -5,6 +5,8 @@
  *   - Test the Case: matched by the essay itself. A published case built from
  *     the answer's essay (argumentCases.essaySlugs) is the same argument,
  *     worked one step at a time.
+ *   - A tool that does a job the question raises: client/src/data/tool-offers.json
+ *     (lib/toolOffers), at most two, named as lib/toolsList names them.
  *   - Compare the views and "Which View Am I?": matched by hand below, and
  *     only where the answer is about a question on which Christians hold the
  *     views that page lays out. A near miss is left off (the Trinity page
@@ -16,6 +18,7 @@
  */
 import { caseForEssay } from "./argumentCases";
 import { DOCTRINE_INDEX } from "@/lib/theology";
+import { toolsOfferedAt } from "@/lib/toolOffers";
 
 /** answer slug → the doctrine Compare opens on, and the quiz Which View opens on. */
 export const ANSWER_VIEWS: Record<string, { compare?: string; whichView?: string }> = {
@@ -50,6 +53,10 @@ export function companionsFor(answer: { slug: string; essaySlug: string }): Comp
   const doctrine = views?.compare ? DOCTRINE_INDEX.find((d) => d.slug === views.compare && d.ready) : undefined;
   if (doctrine) out.push({ lead: "See the views side by side:", label: `Compare the views, “${doctrine.title}”`, href: `/theology/compare?doctrine=${doctrine.slug}` });
   if (views?.whichView) out.push({ lead: "Find out where you lean:", label: "Which View Am I?", href: `/theology/which-view?topic=${views.whichView}` });
+  // A tool that does a job this question raises (data/tool-offers.json), by its one name.
+  for (const tool of toolsOfferedAt("answers", answer.slug)) {
+    if (!out.some((c) => c.href.split(/[?#]/)[0] === tool.href)) out.push({ lead: "A tool for this:", label: tool.name, href: tool.href });
+  }
   const care = ANSWER_CARE[answer.slug];
   if (care) out.push({ lead: "If you're living this right now:", label: `Find Help, “${care.label}”`, href: `/help/${care.slug}` });
   return out;

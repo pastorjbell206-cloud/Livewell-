@@ -84,6 +84,8 @@ const KINDS = {
   seasonal: { translation: "paraphrase", scriptureField: null },
   "reading-plans": { translation: null, scriptureField: null },
   "year-overrides": { translation: null, scriptureField: null },
+  // The judgments behind "Watch first" (scripts/lib/family-films.mjs checks each pick names a finished film).
+  "film-picks": { translation: null, scriptureField: null },
 };
 
 export function kindOf(name) {
@@ -92,6 +94,7 @@ export function kindOf(name) {
   if (name === "family-seasonal.json") return "seasonal";
   if (name === "family-reading-plans.json") return "reading-plans";
   if (name === "family-year-overrides.json") return "year-overrides";
+  if (name === "family-film-picks.json") return "film-picks";
   return null;
 }
 
@@ -133,7 +136,7 @@ const COPY_FILES = ["scripts/build-catalogue.mjs", "scripts/lib/help-printables.
 
 const RENDERINGS = new Set(["esv", "bsb", "kjv", "niv", "nasb", "unverified", "abridged", "paraphrase"]);
 const DEVOTION_FIELDS = ["id", "title", "theme", "passage", "passageText", "bigIdea", "reflection", "activity", "prayer"];
-const CATECHISM_FIELDS = ["part", "question", "answer", "kidsAnswer", "scripture", "scriptureText", "commentary"];
+const CATECHISM_FIELDS = ["part", "question", "answer", "kidsAnswer", "scripture", "scriptureText", "commentary", "plainWords", "talkAbout"];
 const SEASONAL_FIELDS = ["label", "title", "passage", "passageText", "reflection", "question", "prayer"];
 const BANDS = ["together", "younger", "older"];
 /** Each age band carries this many questions (MASTER-PLAN 5.2). */
@@ -347,6 +350,19 @@ export function checkFamily({
           const key = normalizeQuestion(e.question);
           if (!seen.has(key)) seen.set(key, []);
           seen.get(key).push(e.number);
+        }
+        // Beside each answer, for the table: one sentence in plain words for
+        // a small child, and one thing for an older child to talk about.
+        if (isText(e?.plainWords)) {
+          const words = e.plainWords.trim().split(/\s+/).length;
+          if (words > 30) errors.push(`${where}: plainWords is ${words} words; one short sentence for a small child (30 words at most)`);
+          if (!/\.$/.test(e.plainWords) || (e.plainWords.match(/[.?!](?=\s|$)/g) ?? []).length !== 1) errors.push(`${where}: plainWords is one sentence, ending in a period`);
+          if (isText(e?.kidsAnswer) && normalizeQuestion(e.plainWords) === normalizeQuestion(e.kidsAnswer)) errors.push(`${where}: plainWords repeats kidsAnswer; say it another way`);
+        }
+        if (isText(e?.talkAbout)) {
+          const words = e.talkAbout.trim().split(/\s+/).length;
+          if (words > 45) errors.push(`${where}: talkAbout is ${words} words; keep it to one thing to talk about (45 words at most)`);
+          if (!/[?.]$/.test(e.talkAbout)) errors.push(`${where}: talkAbout ends with a question mark or a period`);
         }
         if (isText(e?.scripture) && isText(e?.scriptureText)) {
           counts.passages++;

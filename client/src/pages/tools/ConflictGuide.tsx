@@ -7,6 +7,8 @@ import { Link } from "wouter";
 import { useEffect, useState } from "react";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer, AlertTriangle } from "lucide-react";
+import { ResultNext } from "@/components/tool-shell";
+import { nextPagesFor } from "@/lib/toolNext";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -51,7 +53,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "When did you first realize this was no longer a normal conversation?" },
         ],
         scripture: {
-          text: "Everyone should be quick to listen, slow to speak and slow to become angry.",
+          text: "My beloved brothers, understand this: Everyone should be quick to listen, slow to speak, and slow to anger...",
           reference: "James 1:19",
         },
         warning:
@@ -68,7 +70,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What is the emotion underneath the anger: is it fear, grief, loneliness, or something else?" },
         ],
         scripture: {
-          text: "Search me, God, and know my heart; test me and know my anxious thoughts.",
+          text: "Search me, O God, and know my heart; test me and know my concerns.",
           reference: "Psalm 139:23",
         },
         warning:
@@ -85,8 +87,8 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Is what you are asking for something your spouse can actually give?" },
         ],
         scripture: {
-          text: "You do not have because you do not ask God.",
-          reference: "James 4:2b",
+          text: "You do not have, because you do not ask.",
+          reference: "James 4:2",
         },
         warning:
           "Do not confuse a need with a verdict. 'I need you to acknowledge that you were wrong' is a demand for a confession dressed as a need. A need sounds like: 'I need ten minutes of your full attention when I get home.'",
@@ -102,7 +104,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What part of their perspective, even a small part, do you recognize as true?" },
         ],
         scripture: {
-          text: "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves.",
+          text: "Do nothing out of selfish ambition or empty pride, but in humility consider others more important than yourselves.",
           reference: "Philippians 2:3",
         },
         warning:
@@ -119,8 +121,8 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "If this step works, what would it look like in your daily life together?" },
         ],
         scripture: {
-          text: "Therefore, if you are offering your gift at the altar and there remember that your brother or sister has something against you, leave your gift there in front of the altar. First go and be reconciled to them.",
-          reference: "Matthew 5:23--24",
+          text: "So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar. First go and be reconciled to your brother; then come and offer your gift.",
+          reference: "Matthew 5:23-24",
         },
         warning:
           "Do not promise what you cannot deliver. 'I will never do that again' is a promise you will break. 'I will pause for ten seconds before I respond when I feel defensive' is a promise you can keep.",
@@ -164,7 +166,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Are you reacting to what happened, or to what you fear could happen?" },
         ],
         scripture: {
-          text: "Do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?",
+          text: "Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?",
           reference: "Matthew 6:25",
         },
         warning:
@@ -198,7 +200,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What financial stress is your spouse carrying that you may not know about?" },
         ],
         scripture: {
-          text: "Be completely humble and gentle; be patient, bearing with one another in love.",
+          text: "with all humility and gentleness, with patience, bearing with one another in love...",
           reference: "Ephesians 4:2",
         },
         warning:
@@ -215,7 +217,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Would a shared budgeting tool or app reduce the friction?" },
         ],
         scripture: {
-          text: "Suppose one of you wants to build a tower. Will you not first sit down and estimate the cost to see if you have enough money to complete it?",
+          text: "Which of you, wishing to build a tower, does not first sit down and count the cost to see if he has the resources to complete it?",
           reference: "Luke 14:28",
         },
         warning:
@@ -243,7 +245,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Is this conflict about a one-time event, or an ongoing pattern of disagreement?" },
         ],
         scripture: {
-          text: "Start children off on the way they should go, and even when they are old they will not turn from it.",
+          text: "Train up a child in the way he should go, and when he is old he will not depart from it.",
           reference: "Proverbs 22:6",
         },
         warning:
@@ -260,7 +262,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Are you afraid of a specific outcome for your child, or are you reacting to a loss of control?" },
         ],
         scripture: {
-          text: "Fathers, do not exasperate your children; instead, bring them up in the training and instruction of the Lord.",
+          text: "Fathers, do not provoke your children to wrath; instead, bring them up in the discipline and instruction of the Lord.",
           reference: "Ephesians 6:4",
         },
         warning:
@@ -277,7 +279,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What would it look like for you and your spouse to parent as allies rather than opponents?" },
         ],
         scripture: {
-          text: "How good and pleasant it is when God's people live together in unity!",
+          text: "Behold, how good and pleasant it is when brothers live together in harmony!",
           reference: "Psalm 133:1",
         },
         warning:
@@ -294,7 +296,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Is there a legitimate strength in their approach that you have dismissed because it is different from yours?" },
         ],
         scripture: {
-          text: "My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry.",
+          text: "My beloved brothers, understand this: Everyone should be quick to listen, slow to speak, and slow to anger...",
           reference: "James 1:19",
         },
         warning:
@@ -340,7 +342,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Has something changed in your life circumstances that may have contributed: stress, health, children, work?" },
         ],
         scripture: {
-          text: "Do not deprive each other except perhaps by mutual consent and for a time, so that you may devote yourselves to prayer.",
+          text: "Do not deprive each other, except by mutual consent and for a time, so you may devote yourselves to prayer. Then come together again, so that Satan will not tempt you through your lack of self-control.",
           reference: "1 Corinthians 7:5",
         },
         warning:
@@ -357,7 +359,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Are you confusing the desire for sex with the desire to be known? They overlap, but they are not the same." },
         ],
         scripture: {
-          text: "The Lord God said, 'It is not good for the man to be alone. I will make a helper suitable for him.'",
+          text: "The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.”",
           reference: "Genesis 2:18",
         },
         warning:
@@ -374,7 +376,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Do you need your spouse to initiate, or do you need them to be responsive when you do?" },
         ],
         scripture: {
-          text: "Let him kiss me with the kisses of his mouth -- for your love is more delightful than wine.",
+          text: "Let him kiss me with the kisses of his mouth! For your love is more delightful than wine.",
           reference: "Song of Solomon 1:2",
         },
         warning:
@@ -391,7 +393,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Is there something you are doing that unintentionally creates distance rather than closeness?" },
         ],
         scripture: {
-          text: "Husbands, love your wives, just as Christ loved the church and gave himself up for her.",
+          text: "Husbands, love your wives, just as Christ loved the church and gave Himself up for her...",
           reference: "Ephesians 5:25",
         },
         warning:
@@ -408,7 +410,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Would it help to schedule a date night, or does the word 'schedule' make intimacy feel like a task?" },
         ],
         scripture: {
-          text: "Place me like a seal over your heart, like a seal on your arm; for love is as strong as death.",
+          text: "Set me as a seal over your heart, as a seal upon your arm. For love is as strong as death, its jealousy as unrelenting as Sheol. Its sparks are fiery flames, the fiercest blaze of all.",
           reference: "Song of Solomon 8:6",
         },
         warning:
@@ -436,7 +438,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Does your spouse see it as a problem, or are they defending the behavior?" },
         ],
         scripture: {
-          text: "That is why a man leaves his father and mother and is united to his wife, and they become one flesh.",
+          text: "For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh.",
           reference: "Genesis 2:24",
         },
         warning:
@@ -453,7 +455,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Does this conflict make you feel like an outsider in your own marriage?" },
         ],
         scripture: {
-          text: "Above all, love each other deeply, because love covers over a multitude of sins.",
+          text: "Above all, love one another deeply, because love covers over a multitude of sins.",
           reference: "1 Peter 4:8",
         },
         warning:
@@ -470,7 +472,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What boundary, if honored, would allow you to have a healthy relationship with your in-laws?" },
         ],
         scripture: {
-          text: "Let your 'Yes' be 'Yes,' and your 'No,' 'No.'",
+          text: "Simply let your ‘Yes’ be ‘Yes,’ and your ‘No,’ ‘No.’ Anything more comes from the evil one.",
           reference: "Matthew 5:37",
         },
         warning:
@@ -487,7 +489,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What cultural or family expectations is your spouse carrying that you may not fully understand?" },
         ],
         scripture: {
-          text: "Honor your father and your mother.",
+          text: "Honor your father and mother, so that your days may be long in the land that the LORD your God is giving you.",
           reference: "Exodus 20:12",
         },
         warning:
@@ -504,7 +506,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What will you do together if the boundary is not respected?" },
         ],
         scripture: {
-          text: "If it is possible, as far as it depends on you, live at peace with everyone.",
+          text: "If it is possible on your part, live at peace with everyone.",
           reference: "Romans 12:18",
         },
         warning:
@@ -532,7 +534,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "If you listed every household task you do in a week, would your spouse be surprised by the length of the list?" },
         ],
         scripture: {
-          text: "Carry each other's burdens, and in this way you will fulfill the law of Christ.",
+          text: "Carry one another’s burdens, and in this way you will fulfill the law of Christ.",
           reference: "Galatians 6:2",
         },
         warning:
@@ -549,7 +551,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Do you feel like a partner in this home, or a servant in someone else's house?" },
         ],
         scripture: {
-          text: "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.",
+          text: "Whatever you do, work at it with your whole being, for the Lord and not for men...",
           reference: "Colossians 3:23",
         },
         warning:
@@ -566,8 +568,8 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Are you willing to accept your spouse's way of doing a task, even if it is different from yours?" },
         ],
         scripture: {
-          text: "Two are better than one, because they have a good return for their labor: If either of them falls down, one can help the other up.",
-          reference: "Ecclesiastes 4:9--10",
+          text: "Two are better than one, because they have a good return for their labor. For if one falls down, his companion can lift him up; but pity the one who falls without another to help him up!",
+          reference: "Ecclesiastes 4:9-10",
         },
         warning:
           "Do not assign tasks and then criticize how they are done. If you re-do what your spouse just did, you have taught them that their effort does not matter. A dish washed differently is still a dish washed.",
@@ -600,7 +602,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Can you agree to revisit this division in two weeks to see if it is working?" },
         ],
         scripture: {
-          text: "And let us consider how we may spur one another on toward love and good deeds.",
+          text: "And let us consider how to spur one another on to love and good deeds.",
           reference: "Hebrews 10:24",
         },
         warning:
@@ -628,7 +630,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Is this about belief, or about practice: what you do, or what you hold to be true?" },
         ],
         scripture: {
-          text: "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
+          text: "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him.",
           reference: "James 1:5",
         },
         warning:
@@ -645,7 +647,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Do you grieve the spiritual partnership you imagined but do not have?" },
         ],
         scripture: {
-          text: "My God, my God, why have you forsaken me? Why are you so far from saving me, so far from my cries of anguish?",
+          text: "My God, my God, why have You forsaken me? Why are You so far from saving me, so far from my words of groaning?",
           reference: "Psalm 22:1",
         },
         warning:
@@ -662,7 +664,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Can you distinguish between what you need from your spouse and what only God can give you?" },
         ],
         scripture: {
-          text: "But as for me and my household, we will serve the Lord.",
+          text: "As for me and my house, we will serve the LORD!",
           reference: "Joshua 24:15",
         },
         warning:
@@ -679,7 +681,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Are you willing to hear their honest questions without treating those questions as threats?" },
         ],
         scripture: {
-          text: "Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But do this with gentleness and respect.",
+          text: "But in your hearts sanctify Christ as Lord. Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you. But respond with gentleness and respect...",
           reference: "1 Peter 3:15",
         },
         warning:
@@ -696,7 +698,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Can you schedule a monthly conversation about faith that is not an argument but an exchange?" },
         ],
         scripture: {
-          text: "Be devoted to one another in love. Honor one another above yourselves.",
+          text: "Be devoted to one another in brotherly love. Outdo yourselves in honoring one another.",
           reference: "Romans 12:10",
         },
         warning:
@@ -724,7 +726,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Has the behavior stopped completely, or is it ongoing?" },
         ],
         scripture: {
-          text: "Therefore each of you must put off falsehood and speak truthfully to your neighbor, for we are all members of one body.",
+          text: "Therefore each of you must put off falsehood and speak truthfully to his neighbor, for we are all members of one another.",
           reference: "Ephesians 4:25",
         },
         warning:
@@ -741,7 +743,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Are either of you numb? Numbness is not the absence of feeling. It is feeling so much that the system shuts down." },
         ],
         scripture: {
-          text: "The Lord is close to the brokenhearted and saves those who are crushed in spirit.",
+          text: "The LORD is near to the brokenhearted; He saves the contrite in spirit.",
           reference: "Psalm 34:18",
         },
         warning:
@@ -758,7 +760,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What is the timeline expectation, and is it realistic? Trust repair measured in weeks is almost always too fast." },
         ],
         scripture: {
-          text: "Produce fruit in keeping with repentance.",
+          text: "Produce fruit, then, in keeping with repentance.",
           reference: "Matthew 3:8",
         },
         warning:
@@ -775,7 +777,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Is there a third party (a counselor, a pastor) who can facilitate this conversation if it is too volatile for the two of you alone?" },
         ],
         scripture: {
-          text: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
+          text: "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you.",
           reference: "Colossians 3:13",
         },
         warning:
@@ -792,7 +794,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Have you contacted a professional counselor? If not, can you make the call today?" },
         ],
         scripture: {
-          text: "See, I am doing a new thing! Now it springs up; do you not perceive it? I am making a way in the wilderness and streams in the wasteland.",
+          text: "Behold, I am about to do something new; even now it is coming. Do you not see it? Indeed, I will make a way in the wilderness and streams in the desert.",
           reference: "Isaiah 43:19",
         },
         warning:
@@ -1089,6 +1091,7 @@ export default function ConflictGuide() {
                   background: "none",
                   border: "none",
                   padding: 0,
+                  minHeight: "44px",
                 }}
               >
                 <ArrowLeft size={14} />
@@ -1266,7 +1269,7 @@ export default function ConflictGuide() {
                 >
                   {step.scripture.reference} — read the full passage
                 </Link>
-                <ScriptureNote rendering="unverified" />
+                <ScriptureNote rendering="bsb" />
               </div>
 
               {/* Warning */}
@@ -1342,6 +1345,7 @@ export default function ConflictGuide() {
                         : "var(--ink-muted)",
                     cursor: currentStep === 0 ? "default" : "pointer",
                     padding: "12px 0",
+                    minHeight: "44px",
                     background: "none",
                     border: "none",
                   }}
@@ -1459,6 +1463,12 @@ export default function ConflictGuide() {
                       />
                     </a>
                   ))}
+                </div>
+              )}
+              {/* Where to go next, from the kind of fight the couple chose (data/tool-next.json). */}
+              {isLastStep && (
+                <div className="no-print">
+                  <ResultNext steps={nextPagesFor("conflict-guide", conflict.id)} />
                 </div>
               )}
             </div>

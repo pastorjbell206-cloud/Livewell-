@@ -489,14 +489,15 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (35
-commands: 25 validators: scripture, design, life, studyguides, pathways,
+On every PR, five blocking steps: `pnpm check` → the content-gates step (50
+commands, the workflow file is the list; among them: 25 validators: scripture, design, life, studyguides, pathways,
 theology, politics, no-emdash, essays, content-integrity, skeptic-track,
 answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
 workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
 bible-notes; the history-source verifier `verify-sources`; and the `--check`
 drift checks for the family year map, family index, topics index, search
-index, passage index, Bible text, Bible word search and the 2027 story plan) → `pnpm test` →
+index, passage index, Bible text, Bible word search, the 2027 story plan,
+the family film map and the memory verses) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
 prerender + `audit:canonicals`). A separate, non-blocking `quality` job runs
 Lighthouse + axe against the built site. Keep all five blocking steps green.
@@ -820,6 +821,29 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   is "New to faith, or coming back"; the other four roads and the book study
   ("Deep in one") are listed on /tracks as not written.
   `docs/work/elite/tracks.md` says how to write the next.
+- **Films in the family devotions (James, 2026-11-22)**: a devotion or a
+  catechism question whose passage or subject has a finished Bible Explorer
+  film offers it as "Watch first", played in place at the younger level
+  (`pages/family/WatchFirst.tsx`; the Explorer's player is used, not edited).
+  The match is `client/public/family/films.json`, written by
+  `scripts/build-family-films.mjs` (drift-checked in CI) from the films' own
+  data and the judgments in `client/public/family-film-picks.json`. Only real
+  matches; when unsure, no film. Rebuild it after a film is added.
+- **The catechism at a table (2026-11-22)**: every question carries
+  `plainWords` and `talkAbout` beside its answer (no answer's wording
+  changes; nothing added takes a side on baptism or the Supper). The week's
+  question is a card that prints alone; its three steps, the practice card's
+  place and "We know this one" are kept on the device.
+- **Where a tool is offered, and where it sends a reader (2026-11-22)**:
+  `client/src/data/tool-offers.json` (a wisdom topic, an Honest Answer, a
+  chapter's Go deeper, a family devotion; never on a topic marked heavy) and
+  `client/src/data/tool-next.json` (two or three pages by the reader's own
+  choice). Names come from `toolsList.ts`. After changing a passage in the
+  first, rebuild the passage index.
+- **Memorize Scripture teaches the BSB (2026-11-22)**: its verses are read
+  from the Bible files by `scripts/build-memory-verses.mjs` (drift-checked),
+  never typed; a verse returns after 1, 3, 7, 14 and 30 days. No second
+  memorizing tool: the existing address was rebuilt.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.
