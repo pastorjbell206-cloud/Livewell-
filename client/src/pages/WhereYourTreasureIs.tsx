@@ -211,7 +211,7 @@ export default function WhereYourTreasureIs() {
         slug={SLUG}
         related={[
           { href: "/consider-the-birds", title: "Consider the Birds" },
-          { href: "/books/when-god-bless-america", title: "When God Bless America Replaces Thy Kingdom Come" },
+          { href: "/books/a-higher-allegiance", title: "A Higher Allegiance" },
           { href: "/books/raising-believers", title: "Raising Believers" },
         ]}
       />

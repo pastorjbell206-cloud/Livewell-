@@ -1354,3 +1354,26 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | consumerism-and-stuff | Taste and see an invitation, not an argument | plain psalms/34 1-10 asks |
 
 No new claim outside Scripture and the notes: no statistic, study, scholar or date was added. Addison Wright (1982) on Mark 12 is named because the plain note on Mark 12 names him. The salvation rewrites in `matching.json` are matching data, not content shown to a reader.
+
+## Run of 2026-11-22: films in the devotions, the catechism, three tools
+
+| Where | Claim | Checked against |
+|---|---|---|
+| family/films.json | Each devotion's and question's film | Built by `scripts/build-family-films.mjs`; every pick's reason is in `client/public/family-film-picks.json`; each pick was read against the film's own line and frame names and the devotion's description |
+| family-catechism.json, `plainWords` and `talkAbout` | Each line restates its own question's answer and adds no doctrine | Written against the answer, the child's answer and the proof text of the same question; nothing quoted, so nothing to misquote |
+| Q24 talkAbout | Paul called himself the worst of sinners | 1 Timothy 1:15, the question's own proof text |
+| Q29 talkAbout | The verse says Christ suffered to bring you to God | 1 Peter 3:18, the question's own proof text |
+| Q35 talkAbout | Christ died for us while we were still sinners | Romans 5:8, the question's own proof text |
+| Q39 talkAbout | Paul lists death, life, angels, the present and the future | Romans 8:38-39, the question's own proof text |
+| Q40 talkAbout | Jesus said he came so that people may have life in all its fullness (a paraphrase, not quoted) | John 10:10, the question's own proof text |
+| Q41 talkAbout | Jesus promised that the Spirit would teach his friends and remind them of what he had said | John 14:26, the question's own proof text |
+| Q57 plainWords and talkAbout | The commandments were given to a people already brought out of Egypt | Exodus 20:2, the question's own proof text |
+| Q61 talkAbout | Baptism is done in the name of the Father, the Son and the Holy Spirit | Matthew 28:19, the question's own proof text |
+| memory-verses.json | Forty verses, word for word | `scripts/build-memory-verses.mjs` reads each from `client/public/bible`; `ScriptureMemory.test.tsx` compares each to the Bible text files |
+| ScriptureMemory | A verse returns after 1, 3, 7, 14 and 30 days | This is the tool's own schedule (`INTERVALS`), not a claim about memory research; no study is cited |
+| ConflictGuide.tsx | Forty verses, exact BSB | Replaced by script from `scripts/lib/bsb.mjs` `readingText`; the two excerpts checked with `quotesPassage` |
+| consistency-check.json `scripture` | Proverbs 11:1, Leviticus 19:15, Psalm 139:23-24 | Filled from the BSB by script; `PropheticConsistency.test.tsx` compares each to the Bible text files |
+| consistency-check.json, the line on Proverbs 11:1 | The law forbids two weights in one bag, a heavy and a light | Deuteronomy 25:13 (BSB: "You shall not have two differing weights in your bag, one heavy and one light.") |
+| consistency-check.json, the line on Leviticus 19:15 | No partiality to the poor, no favoritism to the rich | The verse itself |
+
+No statistic, study, scholar or date was added in this run.

@@ -23,6 +23,8 @@ export interface Booklet {
   title: string;
   subtitle: string;
   note: string;
+  /** Pages in the PDF (public booklets only). */
+  pages?: number;
   pdf: string;
   epub: string;
 }
@@ -34,6 +36,7 @@ export const BOOKLETS: Booklet[] = [
     title: "Deacon Qualifications and Selection",
     subtitle: "Raising the Standard for Servant Leadership",
     note: "The men who serve set the tone of a church. Choosing them is not a formality.",
+    pages: 41,
     pdf: "/ebook/deacon-qualifications/Deacon-Qualifications-and-Selection.pdf",
     epub: "/ebook/deacon-qualifications/Deacon-Qualifications-and-Selection.epub",
   },
@@ -43,6 +46,7 @@ export const BOOKLETS: Booklet[] = [
     title: "Church Governance That Works",
     subtitle: "Polity, Structure, and Decision-Making for the Local Church",
     note: "Structure does not save a church. But the wrong structure can slowly bleed one dry.",
+    pages: 43,
     pdf: "/ebook/church-governance/Church-Governance-That-Works.pdf",
     epub: "/ebook/church-governance/Church-Governance-That-Works.epub",
   },
@@ -52,6 +56,7 @@ export const BOOKLETS: Booklet[] = [
     title: "Change Without Casualties",
     subtitle: "A Playbook for Introducing Major Ministry Decisions",
     note: "A good decision delivered badly still costs you people. Here is how to deliver it.",
+    pages: 37,
     pdf: "/ebook/change-without-casualties/Change-Without-Casualties.pdf",
     epub: "/ebook/change-without-casualties/Change-Without-Casualties.epub",
   },

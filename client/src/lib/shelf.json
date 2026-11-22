@@ -31,6 +31,7 @@
     {"slug": "was-america-founded-as-a-christian-nation", "section": "faith-and-power", "status": "pending", "title": "Was America Founded as a Christian Nation?"},
     {"slug": "can-a-nation-be-christian", "section": "faith-and-power", "status": "live", "title": "Can a Nation Be Christian?"},
     {"slug": "should-christians-ever-go-to-war", "section": "faith-and-power", "status": "live", "title": "Should Christians Ever Go to War?"},
+    {"slug": "should-the-church-stay-out-of-politics", "section": "faith-and-power", "status": "live", "title": "Should the Church Stay Out of Politics?"},
     {"slug": "what-romans-13-says", "section": "faith-and-power", "status": "pending", "title": "What Does Romans 13 Say About Obeying the Government?"},
     {"slug": "is-it-wrong-to-love-your-country", "section": "faith-and-power", "status": "pending", "title": "Is It Wrong to Love Your Country?"},
     {"slug": "when-the-church-married-empire", "section": "after-christendom", "status": "live", "title": "When the Church Married Empire", "blurb": "Why the church’s alliance with empire began long before the modern culture wars."},
@@ -90,12 +91,21 @@
     {"slug": "is-christianity-good-for-women", "section": "doubt", "status": "live", "title": "Is Christianity Good for Women?"},
     {"slug": "is-the-bible-reliable-enough-to-build-a-life-on", "section": "doubt", "status": "live", "title": "Is the Bible Reliable Enough to Build a Life On?"},
     {"slug": "does-prayer-change-anything", "section": "doubt", "status": "live", "title": "Does Prayer Change Anything?"},
+    {"slug": "is-hell-real-and-is-it-fair", "section": "doubt", "status": "live", "title": "Is Hell Real, and Is It Fair?"},
+    {"slug": "did-god-choose-who-would-be-saved", "section": "doubt", "status": "live", "title": "Did God Choose Who Would Be Saved?"},
+    {"slug": "why-does-god-allow-evil", "section": "doubt", "status": "live", "title": "Why Does God Allow Evil?"},
+    {"slug": "is-jesus-the-only-way", "section": "doubt", "status": "live", "title": "Is Jesus the Only Way?"},
+    {"slug": "does-science-disprove-god", "section": "doubt", "status": "live", "title": "Does Science Disprove God?"},
+    {"slug": "did-jesus-really-rise-from-the-dead", "section": "doubt", "status": "live", "title": "Did Jesus Really Rise from the Dead?"},
     {"slug": "covenant-vs-contract-what-marriage-is", "section": "ordinary-faithfulness", "status": "pending", "title": "Is Marriage a Covenant or a Contract?"},
     {"slug": "what-the-bible-says-about-submission", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Submission in Marriage?"},
     {"slug": "what-fatherhood-requires", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Being a Father?"},
     {"slug": "the-machine-that-forms-you", "section": "ordinary-faithfulness", "status": "pending", "title": "What Is Your Phone Doing to Your Soul?"},
     {"slug": "the-theology-of-saturday", "section": "ordinary-faithfulness", "status": "pending", "title": "What Holy Saturday Teaches About Grief"},
     {"slug": "can-a-christian-be-rich", "section": "ordinary-faithfulness", "status": "live", "title": "Can a Christian Be Rich?"},
-    {"slug": "divorce-remarriage-and-the-church", "section": "ordinary-faithfulness", "status": "live", "title": "Divorce, Remarriage and the Church"}
+    {"slug": "divorce-remarriage-and-the-church", "section": "ordinary-faithfulness", "status": "live", "title": "Divorce, Remarriage and the Church"},
+    {"slug": "is-divorce-ever-right-and-may-a-divorced-person-remarry", "section": "ordinary-faithfulness", "status": "live", "title": "Is Divorce Ever Right, and May a Divorced Person Remarry?"},
+    {"slug": "should-christians-drink-alcohol", "section": "ordinary-faithfulness", "status": "live", "title": "Should Christians Drink Alcohol?"},
+    {"slug": "is-money-the-root-of-all-evil", "section": "ordinary-faithfulness", "status": "live", "title": "Is Money the Root of All Evil?"}
   ]
 }

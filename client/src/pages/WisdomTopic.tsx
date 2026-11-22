@@ -32,6 +32,7 @@ import { fetchEntry, readSavedTopics, toggleSavedTopic, verseFavoriteId, SAVED_V
 import TurnNav from "@/components/TurnNav";
 import VerseCard from "./wisdom/VerseCard";
 import "./wisdom/wisdom.css";
+import { toolsOfferedAt } from "@/lib/toolOffers";
 
 const NOT_ADVICE: Record<string, string> = {
   money: "This page is not financial or legal advice. For debts, bills and the choices in front of you, a nonprofit credit counselor or another qualified adviser can help you see your options.",
@@ -190,7 +191,10 @@ export default function WisdomTopic() {
     else verses.addFavorite({ id: fid, type: "verse", content: { ref: v.ref, text: v.text, topic: entry.label } });
   };
   const own = d?.next ?? [];
-  const nextSteps = [...own, ...entry.links.filter((l) => !own.some((n) => n.href === l.href)).map((l) => ({ kind: "Reading", label: l.label, href: l.href }))];
+  const readings = [...own, ...entry.links.filter((l) => !own.some((n) => n.href === l.href)).map((l) => ({ kind: "Reading", label: l.label, href: l.href }))];
+  // The tools that do a job this subject raises (data/tool-offers.json), unless the topic already names them.
+  const offered = toolsOfferedAt("topics", entry.id).filter((t) => !readings.some((n) => n.href.split(/[?#]/)[0] === t.href));
+  const nextSteps = [...readings, ...offered.map((t) => ({ kind: "Tool", label: t.name, href: t.href }))];
   const area = AREA_NAMES[entry.area];
 
   return (

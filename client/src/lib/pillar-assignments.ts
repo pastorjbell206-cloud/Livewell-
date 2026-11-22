@@ -1768,5 +1768,57 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 3,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-hell-real-and-is-it-fair": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "did-god-choose-who-would-be-saved": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-divorce-ever-right-and-may-a-divorced-person-remarry": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant"
+    ],
+    "confidence": "high"
+  },
+  "should-the-church-stay-out-of-politics": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-does-god-allow-evil": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-jesus-the-only-way": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-science-disprove-god": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "did-jesus-really-rise-from-the-dead": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-drink-alcohol": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-money-the-root-of-all-evil": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
   }
 };

@@ -1,0 +1,253 @@
+{
+ "about": "Written by scripts/build-memory-verses.mjs from client/src/data/memory-sets.json and the Berean Standard Bible in client/public/bible. Do not edit by hand.",
+ "sets": [
+  {
+   "id": "anxiety-and-peace",
+   "name": "Anxiety and peace",
+   "next": {
+    "kind": "Wisdom",
+    "label": "Anxiety and Worry",
+    "href": "/wisdom/anxiety"
+   },
+   "verses": [
+    {
+     "ref": "Philippians 4:6-7",
+     "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+    },
+    {
+     "ref": "Isaiah 26:3",
+     "text": "You will keep in perfect peace the steadfast of mind, because he trusts in You."
+    },
+    {
+     "ref": "1 Peter 5:7",
+     "text": "Cast all your anxiety on Him, because He cares for you."
+    },
+    {
+     "ref": "John 14:27",
+     "text": "Peace I leave with you; My peace I give to you. I do not give to you as the world gives. Do not let your hearts be troubled; do not be afraid."
+    },
+    {
+     "ref": "Psalm 46:10",
+     "text": "“Be still and know that I am God; I will be exalted among the nations, I will be exalted over the earth.”"
+    }
+   ]
+  },
+  {
+   "id": "marriage-and-love",
+   "name": "Marriage and love",
+   "next": {
+    "kind": "Wisdom",
+    "label": "Talking with Your Spouse",
+    "href": "/wisdom/marriage-communication"
+   },
+   "verses": [
+    {
+     "ref": "Ephesians 5:25",
+     "text": "Husbands, love your wives, just as Christ loved the church and gave Himself up for her..."
+    },
+    {
+     "ref": "1 Corinthians 13:4-5",
+     "text": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no account of wrongs."
+    },
+    {
+     "ref": "Genesis 2:24",
+     "text": "For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh."
+    },
+    {
+     "ref": "Colossians 3:14",
+     "text": "And over all these virtues put on love, which is the bond of perfect unity."
+    },
+    {
+     "ref": "1 John 4:19",
+     "text": "We love because He first loved us."
+    }
+   ]
+  },
+  {
+   "id": "faith-and-trust",
+   "name": "Faith and trust",
+   "next": {
+    "kind": "Wisdom",
+    "label": "Learning to Trust God",
+    "href": "/wisdom/trusting-god"
+   },
+   "verses": [
+    {
+     "ref": "Hebrews 11:1",
+     "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see."
+    },
+    {
+     "ref": "Proverbs 3:5-6",
+     "text": "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He will make your paths straight."
+    },
+    {
+     "ref": "Mark 9:24",
+     "text": "Immediately the boy’s father cried out, “I do believe; help my unbelief!”"
+    },
+    {
+     "ref": "Romans 10:17",
+     "text": "Consequently, faith comes by hearing, and hearing by the word of Christ."
+    },
+    {
+     "ref": "2 Corinthians 5:7",
+     "text": "For we walk by faith, not by sight."
+    }
+   ]
+  },
+  {
+   "id": "identity-in-christ",
+   "name": "Identity in Christ",
+   "next": {
+    "kind": "Wisdom",
+    "label": "Identity and Worth",
+    "href": "/wisdom/identity-and-worth"
+   },
+   "verses": [
+    {
+     "ref": "2 Corinthians 5:17",
+     "text": "Therefore if anyone is in Christ, he is a new creation. The old has passed away. Behold, the new has come!"
+    },
+    {
+     "ref": "Ephesians 2:10",
+     "text": "For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance as our way of life."
+    },
+    {
+     "ref": "Galatians 2:20",
+     "text": "I have been crucified with Christ, and I no longer live, but Christ lives in me. The life I live in the body, I live by faith in the Son of God, who loved me and gave Himself up for me."
+    },
+    {
+     "ref": "1 Peter 2:9",
+     "text": "But you are a chosen people, a royal priesthood, a holy nation, a people for God’s own possession, to proclaim the virtues of Him who called you out of darkness into His marvelous light."
+    },
+    {
+     "ref": "Romans 8:1",
+     "text": "Therefore, there is now no condemnation for those who are in Christ Jesus."
+    }
+   ]
+  },
+  {
+   "id": "suffering-and-hope",
+   "name": "Suffering and hope",
+   "next": {
+    "kind": "Wisdom",
+    "label": "When You Are Suffering",
+    "href": "/wisdom/suffering"
+   },
+   "verses": [
+    {
+     "ref": "Romans 8:28",
+     "text": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose."
+    },
+    {
+     "ref": "James 1:2-3",
+     "text": "Consider it pure joy, my brothers, when you encounter trials of many kinds, because you know that the testing of your faith develops perseverance."
+    },
+    {
+     "ref": "2 Corinthians 4:17",
+     "text": "For our light and momentary affliction is producing for us an eternal weight of glory that is far beyond comparison."
+    },
+    {
+     "ref": "Psalm 34:18",
+     "text": "The LORD is near to the brokenhearted; He saves the contrite in spirit."
+    },
+    {
+     "ref": "Romans 5:3-4",
+     "text": "Not only that, but we also rejoice in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope."
+    }
+   ]
+  },
+  {
+   "id": "parenting-and-family",
+   "name": "Parenting and family",
+   "next": {
+    "kind": "Wisdom",
+    "label": "Parenting Struggles",
+    "href": "/wisdom/parenting-struggles"
+   },
+   "verses": [
+    {
+     "ref": "Proverbs 22:6",
+     "text": "Train up a child in the way he should go, and when he is old he will not depart from it."
+    },
+    {
+     "ref": "Deuteronomy 6:6-7",
+     "text": "These words I am commanding you today are to be upon your hearts. And you shall teach them diligently to your children and speak of them when you sit at home and when you walk along the road, when you lie down and when you get up."
+    },
+    {
+     "ref": "Psalm 127:3",
+     "text": "Children are indeed a heritage from the LORD, and the fruit of the womb is His reward."
+    },
+    {
+     "ref": "Ephesians 6:4",
+     "text": "Fathers, do not provoke your children to wrath; instead, bring them up in the discipline and instruction of the Lord."
+    },
+    {
+     "ref": "3 John 1:4",
+     "text": "I have no greater joy than to hear that my children are walking in the truth."
+    }
+   ]
+  },
+  {
+   "id": "leadership-and-wisdom",
+   "name": "Leadership and wisdom",
+   "next": {
+    "kind": "Wisdom",
+    "label": "Decisions and Guidance",
+    "href": "/wisdom/decisions-and-guidance"
+   },
+   "verses": [
+    {
+     "ref": "James 1:5",
+     "text": "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him."
+    },
+    {
+     "ref": "Proverbs 9:10",
+     "text": "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding."
+    },
+    {
+     "ref": "Mark 10:45",
+     "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+    },
+    {
+     "ref": "1 Timothy 4:12",
+     "text": "Let no one despise your youth, but set an example for the believers in speech, in conduct, in love, in faith, in purity."
+    },
+    {
+     "ref": "Proverbs 11:14",
+     "text": "For lack of guidance, a nation falls, but with many counselors comes deliverance."
+    }
+   ]
+  },
+  {
+   "id": "forgiveness-and-grace",
+   "name": "Forgiveness and grace",
+   "next": {
+    "kind": "Wisdom",
+    "label": "When You Cannot Forgive",
+    "href": "/wisdom/forgiveness"
+   },
+   "verses": [
+    {
+     "ref": "Ephesians 4:32",
+     "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
+    },
+    {
+     "ref": "Romans 3:23-24",
+     "text": "for all have sinned and fall short of the glory of God, and are justified freely by His grace through the redemption that is in Christ Jesus."
+    },
+    {
+     "ref": "Colossians 3:13",
+     "text": "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you."
+    },
+    {
+     "ref": "Ephesians 2:8-9",
+     "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast."
+    },
+    {
+     "ref": "Psalm 103:12",
+     "text": "As far as the east is from the west, so far has He removed our transgressions from us."
+    }
+   ]
+  }
+ ]
+}

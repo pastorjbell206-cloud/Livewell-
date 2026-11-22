@@ -11,7 +11,7 @@
  */
 import { useEffect, useId, useState } from "react";
 import { Link } from "wouter";
-import { BookMarked, Baby, ChevronDown, Feather, FileText, Landmark, LifeBuoy, Lightbulb, Map as MapIcon, MessageCircleQuestion, Milestone, Moon, Play, Users, type LucideIcon } from "lucide-react";
+import { BookMarked, Baby, ChevronDown, Feather, FileText, Hammer, Landmark, LifeBuoy, Lightbulb, Map as MapIcon, MessageCircleQuestion, Milestone, Moon, Play, Users, type LucideIcon } from "lucide-react";
 
 import { fetchChapterIndex, groupRows, type PassageKind, type PassageRow } from "@/lib/passageIndex";
 import "./go-deeper.css";
@@ -30,6 +30,7 @@ const ICONS: Record<PassageKind, LucideIcon> = {
   plan: Milestone,
   wisdom: BookMarked,
   essay: Feather,
+  practice: Hammer,
   tool: FileText,
 };
 

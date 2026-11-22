@@ -311,8 +311,8 @@ export const DOORS: Door[] = [
       {
         id: "about.books", name: "Books", line: "The books James wrote.", href: "/books", icon: "Library", count: { n: 3, of: "books" },
         inside: [
-          { id: "book.when-god-bless-america", name: "When God Bless America Replaces Thy Kingdom Come", line: "A book by James Bell.", href: "/books/when-god-bless-america", icon: "Library" },
-          { id: "book.monster", name: "The Monster in the Mirror", line: "A book by James Bell.", href: "/books/the-monster-in-the-mirror", icon: "Library" },
+          { id: "book.when-god-bless-america", name: "A Higher Allegiance", line: "A book by James Bell.", href: "/books/a-higher-allegiance", icon: "Library" },
+          { id: "book.blind-spots", name: "Blind Spots", line: "A book by James Bell.", href: "/books/blind-spots", icon: "Library" },
           { id: "book.believe", name: "Believe", line: "A book by James Bell.", href: "/books/believe", icon: "Library" },
         ],
       },

@@ -62,7 +62,8 @@ describe("free ebooks", () => {
 
   it("sends a free book's old thank-you address to /downloads", () => {
     for (const b of FREE_EBOOKS) {
-      const thanks = `/books/${b.slug}/thank-you`;
+      // The address a buyer was given, under the book's first name: its folder under /ebook/, which a rename never changes.
+      const thanks = `/books/${b.pdf.split("/")[2]}/thank-you`;
       expect(RULES.find((r) => r.source === thanks)?.destination, thanks).toBe("/downloads");
     }
   });
@@ -73,7 +74,7 @@ describe("free ebooks", () => {
       "client/src/pages/Downloads.tsx",
       "client/src/pages/Believe.tsx",
       "client/src/pages/WhenGodBlessAmerica.tsx",
-      "client/src/pages/TheMonsterInTheMirror.tsx",
+      "client/src/pages/BlindSpots.tsx",
       "client/src/pages/DeconstructionOfFaith.tsx",
       "client/src/pages/TheReliabilityOfScripture.tsx",
       "client/src/pages/BibleAndHomosexuality.tsx",

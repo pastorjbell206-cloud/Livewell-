@@ -17,8 +17,8 @@ interface PostLike {
 
 /** Slug-keyword rules: first match wins; most specific rules first. */
 const SLUG_BOOK_RULES: Array<{ keywords: string[]; book: string }> = [
-  { keywords: ["monster", "mirror", "blind-spot", "cultural-lens", "gets-the-bible-wrong", "every-generation"], book: "the-monster-in-the-mirror" },
-  { keywords: ["god-bless-america", "nationalis", "civil-religion", "patriot", "empire", "christendom"], book: "when-god-bless-america" },
+  { keywords: ["monster", "mirror", "blind-spot", "cultural-lens", "gets-the-bible-wrong", "every-generation"], book: "blind-spots" },
+  { keywords: ["god-bless-america", "nationalis", "civil-religion", "patriot", "empire", "christendom"], book: "a-higher-allegiance" },
   {
     keywords: [
       "atheis", "skeptic", "unbelie", "apologetic", "resurrection", "god-exist", "god-actually-exist",
@@ -39,14 +39,14 @@ export function bookFor(post: PostLike): ShelfBook | null {
   }
 
   const track = resolveTrack(post.pillar ?? null)?.slug;
-  if (track === "politics" || track === "after-christendom") return shelfBook("when-god-bless-america");
-  if (track === "american-church" || track === "theology") return shelfBook("the-monster-in-the-mirror");
+  if (track === "politics" || track === "after-christendom") return shelfBook("a-higher-allegiance");
+  if (track === "american-church" || track === "theology") return shelfBook("blind-spots");
   if (track === "doubt") return shelfBook("believe");
   if (track) return null;
 
   const id = pillarForPost(post)?.id;
-  if (id === 1 || id === 2 || id === 4) return shelfBook("when-god-bless-america");
-  if (id === 3) return shelfBook("the-monster-in-the-mirror");
+  if (id === 1 || id === 2 || id === 4) return shelfBook("a-higher-allegiance");
+  if (id === 3) return shelfBook("blind-spots");
   return null;
 }
 
@@ -122,7 +122,7 @@ export function KeepReadingBook({
           src={book.thumb}
           alt={`${book.title} cover`}
           width={120}
-          height={181}
+          height={180}
           style={{ width: "110px", height: "auto", borderRadius: "3px", boxShadow: "0 12px 32px rgba(0,0,0,.5)", flex: "0 0 auto" }}
         />
         <div style={{ flex: "1 1 320px" }}>
